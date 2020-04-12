@@ -26,7 +26,7 @@ const { primaryTextVariantId } = require('./variants.js');
 
 const person_mentions_dirty = new Set();
 
-const build_person_or_keyword_refs = collected => {
+const build_person_or_keyword_refs = (collected) => {
   let person_or_keyword_refs = globalForceReload
     ? new Map([])
     : new Map(loadCachedJSON('collected.person_or_keyword_refs') || []);
@@ -67,7 +67,7 @@ const build_person_or_keyword_refs = collected => {
         collection.mention.splice(mentionIndex, 1);
       }
       if (
-        !collection.translation.some(t => t.translationPoemId === fromPoemId)
+        !collection.translation.some((t) => t.translationPoemId === fromPoemId)
       ) {
         collection.translation.push({
           translationPoemId: fromPoemId,
@@ -81,7 +81,7 @@ const build_person_or_keyword_refs = collected => {
     person_mentions_dirty.add(toKey);
   };
   collected.workids.forEach((workIds, poetId) => {
-    workIds.forEach(workId => {
+    workIds.forEach((workId) => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
       if (!fileExists(filename)) {
         return;
@@ -92,12 +92,10 @@ const build_person_or_keyword_refs = collected => {
         found_changes = true;
       }
       let doc = loadXMLDoc(filename);
-      const texts = getElementsByTagNames(doc, [
-        'poem',
-        'prose',
-        'section',
-      ]).filter(s => safeGetAttr(s, 'id') != null);
-      texts.forEach(text => {
+      const texts = getElementsByTagNames(doc, ['text', 'section']).filter(
+        (s) => safeGetAttr(s, 'id') != null
+      );
+      texts.forEach((text) => {
         const fromId = safeGetAttr(text, 'id');
         const notes = getElementsByTagNames(text, [
           'note',
@@ -105,8 +103,8 @@ const build_person_or_keyword_refs = collected => {
           'footnote',
           'body',
         ]);
-        notes.forEach(note => {
-          regexps.forEach(rule => {
+        notes.forEach((note) => {
+          regexps.forEach((rule) => {
             while ((match = rule.regexp.exec(safeGetOuterXML(note))) != null) {
               const refType = match[1] || 'mention';
               if (rule.type === 'text') {
@@ -136,7 +134,7 @@ const build_person_or_keyword_refs = collected => {
         const head = getChildByTagName(text, 'head');
         const keywords = safeGetText(head, 'keywords') || '';
         if (keywords.trim().length > 0) {
-          keywords.split(',').forEach(keyword => {
+          keywords.split(',').forEach((keyword) => {
             register(filename, keyword, fromId, 'mention');
           });
         }
@@ -152,8 +150,8 @@ const build_person_or_keyword_refs = collected => {
   collected.person_or_keyword_refs = person_or_keyword_refs;
 };
 
-const build_mentions_json = collected => {
-  const build_html = poemId => {
+const build_mentions_json = (collected) => {
+  const build_html = (poemId) => {
     const meta = collected.texts.get(poemId);
     if (meta == null) {
       throw `Unknown poem ${poemId}`;
@@ -165,9 +163,9 @@ const build_mentions_json = collected => {
     const poet = poetName(poetObj);
     const work = collected.works.get(meta.poetId + '/' + meta.workId);
     if (work == null) {
-      throw `${poemId} references unknown work ${meta.poetId +
-        '/' +
-        meta.workId}`;
+      throw `${poemId} references unknown work ${
+        meta.poetId + '/' + meta.workId
+      }`;
     }
     const workNameFormattet =
       work.id === 'andre' ? '' : ` - ${workLinkName(work)}`;
@@ -201,14 +199,14 @@ const build_mentions_json = collected => {
     const refs = collected.person_or_keyword_refs.get(poetId);
     if (refs != null) {
       data.mentions = refs.mention
-        .filter(id => {
+        .filter((id) => {
           // Hvis en tekst har varianter som også henviser til denne,
           // vil vi kun vise den ældste variant.
           return primaryTextVariantId(id, collected) === id;
         })
         .map(build_html);
       data.translations = refs.translation
-        .filter(t => {
+        .filter((t) => {
           // Fjern oversættelser som ikke er den ældste variant
           const { translationPoemId, _ } = t;
           return (
@@ -216,7 +214,7 @@ const build_mentions_json = collected => {
             translationPoemId
           );
         })
-        .map(t => {
+        .map((t) => {
           const { translationPoemId, translatedPoemId } = t;
           const translationPoem = collected.texts.get(translationPoemId);
           let translatedPoem = null;
@@ -247,11 +245,11 @@ const build_mentions_json = collected => {
         });
     }
 
-    ['primary', 'secondary'].forEach(filename => {
+    ['primary', 'secondary'].forEach((filename) => {
       const biblioXmlPath = `fdirs/${poet.id}/bibliography-${filename}.xml`;
       const doc = loadXMLDoc(biblioXmlPath);
       if (doc != null) {
-        data[filename] = getElementsByTagName(doc, 'item').map(line => {
+        data[filename] = getElementsByTagName(doc, 'item').map((line) => {
           return htmlToXml(safeGetInnerXML(line), collected);
         });
       } else {

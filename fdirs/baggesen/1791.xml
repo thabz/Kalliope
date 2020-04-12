@@ -24,7 +24,7 @@
 </head>
 <content>
 
-<prose id="baggesen2003022001">
+<text id="baggesen2003022001" skip-index="true">
 <head>
     <title>Til Publicum</title>
     <toctitle>Til Publicum</toctitle>
@@ -32,6 +32,7 @@
     <source in="bd1" pages="iii-x" facsimile-pages="7-14" />
 </head>
 <body>
+<prose>
 Da jeg i Aaret 1788 udgav Subscriptionsplanerne paa <i>Bagateller i Vers og Prosa</i>, drømte jeg ikke om den Hovedforandring i min daværende Skiebne, som indtil nu har hindret og opholdt Udgaven af disse Smaaarbeider. En Reise til Badet i Pyrmont, som min yderlige Svaghed dengang giorde nødvendig, trak en længere Reise efter sig, og denne sysselsatte mig med saa megen anden Beskieftigelse, at jeg saae mig nødt til at opsætte Opfyldelsen af mit offentlige Løvte, for at efterkomme andre Pligter, der ikke mindre forbandt mig. Ved min Hiemkomst fandt jeg, i det jeg giennemsaae de til den lovede Udgave bestemte Stykker, at to Aars nærmere Bekiendtskab med mig selv og Verden ikke havde havt mindre Indflydelse paa den litterariske, end paa den øvrige Deel af mit Væsen. Jeg saae ikke blot, som før, Pletter i mine Stykker; men jeg saae Stykker, hvori alt var Plet, uagtet jeg dengang alt havde udvalgt, omarbeidet, forandret og forbedret dem.
     Fuldbestemt, aldrig for Fremtiden at levere Publicum noget Arbeide, uden forud at have givet det al den fuldendte Runding og Glathed, det staaer i min Magt at give det, foretog jeg mig en nye og meget strængere Mynstring af mine Ubetydeligheder; og gav mig til med den yderste Flid og Taalmodighed, at uddanne dem jeg valgte.
     Dette, tildeels meget kiedsomme Arbeide har kostet mig ulige mere Tid og Møie, end alt hvad der forhen (naar jeg undtager Oversættelsen af Niels Klim) under mit Navn har forladt Pressen. Faa af mine Læsere ville vide mig Tak for denne Umage, færre ville ved hurtig Giennembladen opdage den, de fleste ville maaskee henregne den til det man kalder Tidspilde - men alle disse Betragtninger fritoge mig ikke fra min Pligt: at giøre det jeg giorde, saa got, som det var mig mueligt, at giøre det.
@@ -39,10 +40,11 @@ Da jeg i Aaret 1788 udgav Subscriptionsplanerne paa <i>Bagateller i Vers og Pros
     Man vil formodentligen undre sig over, at jeg i denne Samling har udeladt adskillige Stykker, der med nogen Forandring maaskee vilde have været de fleeste Læsere mindre uvelkomne, end adskillige af de optagne. Rigtig nok havde jeg ogsaa samlet en Deel Elegier, deels trykte,
 deels utrykte, som de af mine Smaastykker, der udentvivl vare Lyset mindst uværdige; men disse vilde have udgiort allene et heelt Bind for sig. Af samme Aarsag findes heller ingen prosaiske Stykker indrykte. Modtagelsen af det nærværende vil bestemme, om dets Overskud skal forblive i min Pult eller ikke.
     Jeg haaber, at man vil tilgive mig, om eet eller andet Stykke skulde synes alt for langt fra det Maal, Guder, Mennesker, og jeg selv satte mig i det Øieblik det faldt mig ind at dyrke Muserne. Denne Dyrkelse har hidindtil været forbunden med saa megen Kummer, afbrudt af saa mange ubehagelige Tilfælde, forstyrret af saa megen Uroe - og min Tilstand overalt været saa modsat det otium, quod carmina scribentes quaerunt, at det ikke er at undre, om den Sielsudmattelse og Legemssvaghed, hvormed jeg meer i smertefuld Krampe end i rusende Begeistring har frembragt disse Smaating, her og der stikker frem, trods al den Umage jeg har giort mig for at skiule den.
-</body>
 </prose>
+</body>
+</text>
 
-<poem id="baggesen2003022002">
+<text id="baggesen2003022002">
 <head>
     <title>Til Charlotte, Grevinde af Schimmelmann</title>
     <toctitle>Til Charlotte, Grevinde af Schimmelmann</toctitle>
@@ -52,6 +54,7 @@ deels utrykte, som de af mine Smaastykker, der udentvivl vare Lyset mindst uvær
     <source in="bd1" pages="xi-xiv" facsimile-pages="15-18" />
 </head>
 <body>
+<poetry>
 Apollo ledte mig til Bredden af Castale,
     Hvor Gratierne mødte mig i Dands;
 Med frygtsomt Blik, med Stammen i min Tale,
@@ -81,10 +84,11 @@ Grevinde! (men min Tak kan Taushed eene male)
 Fortryllet, stum, fra Bredden af Castale,
 Med Følelser, som Gratier kun tale,
     Jeg saae dem række <i>Dem</i> min Krands.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2001102101">
+<text id="baggesen2001102101">
 <head>
     <title>Forfatterens Liv og Levnet, af hans Fætter</title>
     <subtitle>
@@ -102,6 +106,7 @@ Med Følelser, som Gratier kun tale,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><right><small>- At eo quid magis ridiculum? -</small></right></nonum>
 <nonum><right><i>Tanaqu. Fab. cap. IV. de futilitate poetices</i></right></nonum>
 
@@ -966,8 +971,9 @@ Som virksom stræber <i>at afhielpe dette Savn</i>,
 Og derved skabe Lys og Liv og Lyst i Norden!!!
 
 <nonum><center>Ende paa Biographien</center></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
 <section level="2">
 <head>
@@ -975,7 +981,7 @@ Og derved skabe Lys og Liv og Lyst i Norden!!!
 </head>
 <content>
 
-<poem id="baggesen2019080301" variant="baggesen2001060801a">
+<text id="baggesen2019080301" variant="baggesen2001060801a">
 <head>
     <title>Odins Reise til Dovre</title>
     <subtitle>
@@ -988,6 +994,7 @@ Og derved skabe Lys og Liv og Lyst i Norden!!!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Engang i denne Verdens unge Dage,
 En fem sex tusind Aar og fleer, ifald man vil,
 Før du, min Læser, eller jeg var til,
@@ -1859,10 +1866,11 @@ Nye Miød sprang frem i samme Øieblik.
 Det halve af den Miød den gavmild skienkte dig,
 Min ædle <b>Pram,</b> de Danske Musers Ære!
 Hvor vilde jeg da vis paa Digter-Krandsen være!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen200111108">
+<text id="baggesen200111108">
 <head>
     <title>Ja og Nei</title>
     <subtitle>
@@ -1878,6 +1886,7 @@ Hvor vilde jeg da vis paa Digter-Krandsen være!
     <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Man synger næstendeels om Alt paa Jorden
 I denne gyldne Tid,
 Da Digtergave her i Norden
@@ -2517,11 +2526,12 @@ Vil sikkerlig min Læser selv udfinde,
 Naar han og hun engang faar sligt i Sinde,
 Hvortil dem skienke Held den unge blinde,
 Bevingede, bekiendte lille Gud!
+</poetry>
 </body>
-</poem>
+</text>
 
 
-<poem id="baggesen2019080302" variant="baggesen2001121510">
+<text id="baggesen2019080302" variant="baggesen2001121510">
 <head>
     <title>Thomas Moore</title>
     <subtitle>
@@ -2533,6 +2543,7 @@ Bevingede, bekiendte lille Gud!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Vee! tretten Gange vee det Øieblik,
 Hvori jeg første Gang det Indfald fik,
 At rime!
@@ -2846,10 +2857,11 @@ Paa hendes hele Siel, saasnart han smiler,
 <b>Tid, Vane,</b> disse sande <b>Feer</b> eene
 Vor <b>Fanny</b> giorde snart til en <b>Helene,</b>
 Og <b>Moore</b> til den lykkeligste Mand.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2019080303">
+<text id="baggesen2019080303">
 <head>
     <title>Kallundborgs Krønike</title>
     <subtitle>
@@ -2861,6 +2873,7 @@ Og <b>Moore</b> til den lykkeligste Mand.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Den hele vide Verden veed —
 Ved hele Verden, Notabene!
 Poeter i Særdeleshed
@@ -3518,10 +3531,11 @@ Paa den Ruin, hvor Kundskab hungrig græder!
 At vi har Trykkefriehed her;
 For Resten seer jeg ikke paa min Ære!
 Hvad andet man af samme skulde lære.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2019080304" variant="baggesen2001100313">
+<text id="baggesen2019080304" variant="baggesen2001100313">
 <head>
     <title>Constance</title>
     <subtitle>
@@ -3533,6 +3547,7 @@ Hvad andet man af samme skulde lære.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Paa Yderdelen bør man ingen tro.
 Tit bærer Viisdom Dumheds Stempel,
 Tit, hvad man leder om i Folio,
@@ -4072,10 +4087,11 @@ Og, om han just ei giør det virkelig,
 Dog lader, som han kold foragter Eder,
 O! troer mig! Troer jer ivrigste Tilbeder:
 Blir <b>Amor</b> vred engang, han grusomt hævner sig!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2019080305" variant="baggesen2001121503">
+<text id="baggesen2019080305" variant="baggesen2001121503">
 <head>
     <title>Døden og Doctoren</title>
     <subtitle>
@@ -4087,6 +4103,7 @@ Blir <b>Amor</b> vred engang, han grusomt hævner sig!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Engang laae <b>Døden</b> (som sædvanlig bleg)
 Matgispende ved Roden af en Eeg,
 Hvorhen paa tynde Been, vor store Thessen lig,
@@ -4259,10 +4276,11 @@ Nys trued’ den tredobbelt frygtelig
 Det Liv, som lærte mig at elske mine Dage —
 Jeg skialv — men see den atter veeg tilbage,
 Og i min Skytsaand jeg genkiendte <b>Dig.</b>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2001121507">
+<text id="baggesen2001121507">
 <head>
     <title>Kirkegaarden i Sobradise</title>
     <firstline>Den hele Verden kiender Sobradise</firstline>
@@ -4273,6 +4291,7 @@ Og i min Skytsaand jeg genkiendte <b>Dig.</b>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Den hele Verden kiender <b>Sobradise:</b>
 I dette Land var og en Hovedstad,
 Og i den Hovedstad, var til andægtig Lise,
@@ -4394,8 +4413,9 @@ Hans egen Gravskrivt:
 <center>Her ligger endelig, trods al sit Overmod,</center>
 <center>I dette Selskab, for at giøre Bod,</center>
 <center>Min Fætter.</center>
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section> <!-- Fortællinger -->
@@ -4409,7 +4429,7 @@ Hans egen Gravskrivt:
 </head>
 <content>
 
-<prose id="baggesen2019080307">
+<text id="baggesen2019080307" skip-index="true">
 <head>
     <title>Forerindring</title>
     <source in="bd2" pages="iii-xii" facsimile-pages="7-16" />
@@ -4417,6 +4437,7 @@ Hans egen Gravskrivt:
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<prose>
 I en Samling af saa forskiællige Stykker, som de, nærverrende Bind indeholder, kan umueligen alt i alle Henseender være skrevet for alle. Forfatteren har vel overalt kun havt eet eeneste Hovedøiemeed, nemlig Opfyldelsen af Musernes Lov at nytte og moere; men dette Øiemeed deeler sig i mangfoldige underordnede Hensigter, hvoraf hin og denne henhører meer eller mindre enten til den første eller til den anden Tavle. Snart vender Musen sig til den rige Lediggænger, snart til den fattige Arbejder, snart for at vække, snart for at dysse, snart i bedrøvet og snart i muntert Lune. Nu er det en nyttig Sandhed, den vil anbringe, nu en Misbrug, den vil giøre opmærksom paa; stundom er det en Last den vil fremstille til Afskye, stundom en Fordom, den vil giøre latterlig; undertiden er det blot en Taare, undertiden blot et Smil, den vil aflokke — ofte, og alleroftest er det, som vor Holberg siger:
    "For Folk ei eene, men for Sproget at polere."
 Denne Forskiællighed i Hensigter, og deraf flydende Forskiæl i Maaden at efterstræbe deres Opnaaelse paa, maae naturligviis frembringe en Afvexling, der i Almindelighed har sin Behagelighed; men ogsaa foraarsager, at den enkelte Læser ved eet Stykke mindre end ved et andet, og ved nogle maaskee aldeles ikke, finder sin individuelle Smag og Følelse tilfredsstillet.
@@ -4425,8 +4446,9 @@ Denne Forskiællighed i Hensigter, og deraf flydende Forskiæl i Maaden at efter
    Det er derfor, at jeg i alle mine ubetydelige Forsøg meget mindre har seet paa <b>hvad</b> end paa <b>hvorledes</b> — mindre paa Materien end paa Indklædningen af det jeg vilde sige. Jeg aflægger med inderlig Fryd den oprigtige Tilstaaelse, at det er Sproget, man har at takke, hvis Samlingen af alle disse Stykker ikke skulde være uden al Værd - og maatte Følgen af deres Giennemlæsning blive den, at man blev ligegyldig mod deres Forfatter; men, uden at mærke det, varmere for det Sprog, han skriver, vilde jeg finde mig meer end lønnet for den Møie, hvormed jeg har udarbeidet dem.
    Maatte alle vore danske Skribentere, og især de Digtere, hvis Evner saa langt overgaae mine, besiæles af den Omhue for Sproget, som jeg eene skylder den Ære, een og anden Gang at vare bleven talt iblandt dem! Maatte de blive meer og meer opmærksomme paa den Skat, de besidde i deres Modersmaal, og maatte de efter Sange, som vor Thaarups Hymne, finde sig belønnede i dets Taknemmelighed!
    Man tilgive mig denne lille Udsvævelse af en virkelig Lidenskab, der aldrig — trods alle de uvenlige falste Beskyldninger man har giort mig — kiølnes i mit Hierte. Maaskee elsker jeg derfor ikke mindre mit Fædreneland, fordi jeg kun elsker det elskværdige deri, og finder at en dansk Mangel er ikke mindre en Mangel, fordi den er dansk. For i Korthed at aflægge min Troesbekiendelse i denne Materie, maae jeg tilstaae, at jeg holder Sproget for det reneste væsentlige, hvorved Naturen skiller een Nation fra en anden — og fra denne Naturside betragtet finder jeg mit Fødeland elskeligere end alle dets Naboeriger. Jeg holder Sproget for et Lands Siel, og finder derfor, at man aldrig noksom kan befordre dets Dyrkelse, saa meget mindre, da man derfra umueligen kan afsondre Indflydelsen paa alt det øvrige. Hvor let, hvor behagelig, hvor belønnende vilde denne Siels Dyrkelse blive hos os! O! naar man engang i alle Landets Skoler lærer Dansk! naar man engang lærer overalt at udtale det! naar almindelig Oplysning engang fremviser det i al dets Ynde! O! jeg er vis paa at Gratierne selv, hvis de af Europas levende Sprog skulde veelge sig eet til Morgendragt, efterat have speilet sig med alle de andre, da vilde beholde det Danske; og vor Schulzes Dom om dets musicalske Fortrin fuldender min Overbevisning, at alle Sanggudinder i det vilde vælge Ord til deres Melodier.
-</body>
 </prose>
+</body>
+</text>
 
 <section level="3" id="baggesen2019080360">
 <head>
@@ -4442,7 +4464,7 @@ Denne Forskiællighed i Hensigter, og deraf flydende Forskiæl i Maaden at efter
 </head>
 <content>
 
-<poem id="baggesen2019080308">
+<text id="baggesen2019080308">
 <head>
     <title><num>Første Sang</num>O! du, mit Haab, min Fryd, min Sang</title>
     <toctitle><num>Første Sang</num>O! du, mit Haab, min Fryd, min Sang</toctitle>
@@ -4453,6 +4475,7 @@ Denne Forskiællighed i Hensigter, og deraf flydende Forskiæl i Maaden at efter
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 O! du, mit Haab, min Fryd, min Sang,
 Min Siels tilbedede Veninde!
 Sig, kan min Harpes svage Klang
@@ -4738,10 +4761,11 @@ Han samler alt sit Mod engang,
 Han <b>Emma</b> ser i Haven ene.
 Men denne høitidsfulde Scene
 Fortiener for sig selv en Sang.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2019080309">
+<text id="baggesen2019080309">
 <head>
     <title><num>Anden Sang</num>Den lyse Dagens Konge gled</title>
     <toctitle><num>Anden Sang</num>Den lyse Dagens Konge gled</toctitle>
@@ -4752,6 +4776,7 @@ Fortiener for sig selv en Sang.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Den lyse Dagens Konge gled
 Igiennem gyldne Purpurskyer
 Sødt smilende bag Skoven ned;
@@ -4914,10 +4939,11 @@ Har ingen Harpes Strænge Lyd.
 Som <b>Isis,</b> Taushed af sin Ven;
 Til Lethe med den usle Sanger,
 Som vover, at afsløre den!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2019080310">
+<text id="baggesen2019080310">
 <head>
     <title><num>Tredje Sang</num>Du dobbelt skiøn, fordi din Ild</title>
     <toctitle><num>Tredje Sang</num>Du dobbelt skiøn, fordi din Ild</toctitle>
@@ -4928,6 +4954,7 @@ Som vover, at afsløre den!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Du dobbelt skiøn, fordi din Ild
 Sig giennem Savnets Mørke maler!
 Som, naar bag Skyen Solen daler
@@ -5112,10 +5139,11 @@ En Taare randt — "om alt forsvinder —
 Et uophørlig Nok hinanden,
 Men ak! de stode trygt paa Randen
 Af Livets alt for bratte Roe.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2019080311">
+<text id="baggesen2019080311">
 <head>
     <title><num>Fjerde Sang</num>Mens Vintrens seirende Tyran</title>
     <toctitle><num>Fjerde Sang</num>Mens Vintrens seirende Tyran</toctitle>
@@ -5126,6 +5154,7 @@ Af Livets alt for bratte Roe.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Mens Vintrens seirende Tyran
 Paa Livets blegnende Ruiner
 I Field og Skov og Dal og Strand,
@@ -5396,10 +5425,11 @@ At see paa dette skiønne Syn.
 Sin Ven til Havens Ende hen;
 Han over Muren frelst sig svinger,
 Og glad hun flyer hiem igien.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2019080312">
+<text id="baggesen2019080312">
 <head>
     <title><num>Femte Sang</num>Som Vandreren der mat af Sved</title>
     <toctitle><num>Femte Sang</num>Som Vandreren der mat af Sved</toctitle>
@@ -5410,6 +5440,7 @@ Og glad hun flyer hiem igien.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Som Vandreren, der mat af Sved
 Op over Alpe-Toppe higer,
 Troer, hvert et Bierg, hans Fod bestiger,
@@ -5606,8 +5637,9 @@ Og <b>Eginhart</b> og <b>Emma</b> leved'
 I Lykkens Skiød, i Glædens Slum,
 Til begges Siele sammensveved'
 Fra Jorden til Elysium.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section> <!-- Emma, et Digt i fem Sange -->
@@ -5618,7 +5650,7 @@ Fra Jorden til Elysium.
 </head>
 <content>
 
-<poem id="baggesen2001100301">
+<text id="baggesen2001100301">
 <head>
     <title>Drømmene</title>
     <firstline>Fortvivlelse! dig helliges min Sang</firstline>
@@ -5629,6 +5661,7 @@ Fra Jorden til Elysium.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Fortvivlelse! dig helliges min Sang,
 Og den, som hænger sig, og den, som hang,
 Og den, sig hænge vil, om han har Øre,
@@ -5729,10 +5762,11 @@ Men Himmerig med hende! dette var
 For meget. Kiære Læser, om du har,
 Og kan undvære den, og selv den bruger ikke,
 Saa laan Forfatteren en Strikke.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2002122401">
+<text id="baggesen2002122401">
 <head>
     <title>Den sovende Semire</title>
     <firstline>Den eensomme Skov</firstline>
@@ -5740,6 +5774,7 @@ Saa laan Forfatteren en Strikke.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Den eensomme Skov
 Gav Gienlyd af natlige Toner,
 Og Troeskabs og Kierligheds Lov,
@@ -5831,10 +5866,11 @@ Min Flaccus! og spil du nu om
 Dit Syn og den smukke <b>Semire!</b>
 Jeg vaagned' af Fryd — men med Blunden
 Var Liren og alting forsvunden.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2001102103">
+<text id="baggesen2001102103">
 <head>
     <title>Orpheus og Eurydice</title>
     <firstline>Herr Orphevs var en Spillemand</firstline>
@@ -5842,6 +5878,7 @@ Var Liren og alting forsvunden.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Herr <b>Orphevs</b> var en Spillemand,
 (Som hele vide Verden veed),
 Der, naar han paa Fiolen gned,
@@ -5918,10 +5955,11 @@ Og hist en Pebersvende-Flok)<note>Udgiverne af Baggesens <i>Danske Værker</i> r
 "Var det saa meget værdt? — den Nar!" -
 De Stakler Aarsag har at grine;
 <b>De fandt dem aldrig en Palmine.</b>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2019080316">
+<text id="baggesen2019080316">
 <head>
     <title>Lenardo og Blandine</title>
     <subtitle>(Efter Bürger)</subtitle>
@@ -5933,6 +5971,7 @@ De Stakler Aarsag har at grine;
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <b>Blandine</b> sad hisset, <b>Lenardo</b> stod her,
 Ungdommelig Munterhed straalte fra hver:
 Hun mellem Prindsesser en lysende Soel,
@@ -6342,10 +6381,11 @@ Den kronede Gamle nu Hænderne vred,
 Og trøstløs den blodige Gierning begræd —
 Han siden lod giøre en Kiste af Guld,
 I hvilken han giemte de Elskendes Muld.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2019080317" variant="baggesen2002031403">
+<text id="baggesen2019080317" variant="baggesen2002031403">
 <head>
     <title>Ludvigs Gienfærd</title>
     <subtitle>(Ideen af det Skotske.)</subtitle>
@@ -6354,6 +6394,7 @@ I hvilken han giemte de Elskendes Muld.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Marie foer af Sengen op,
    O! Jesu! frels mig arme!
 Koldt svedte hendes spæde Krop,
@@ -6455,10 +6496,11 @@ En blodig Taare, da det svandt;
 Det lyse Øie lukte sig —
 Kold, som en Steen, bleg som et Liig,
    Hun faldt omkuld og døde.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2019080318" variant="baggesen2002031404">
+<text id="baggesen2019080318" variant="baggesen2002031404">
 <head>
     <title>Alf og Lyna</title>
     <subtitle>(Af en utrykt Opera.)</subtitle>
@@ -6467,6 +6509,7 @@ Kold, som en Steen, bleg som et Liig,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Midnattens Maane gik Skyen forbi,
    De Stierner saa zittrende blinkte;
 Vestlige Smaalyn paa vildsomme Stie
@@ -6508,10 +6551,11 @@ Morderen kom: "Jeg har myrdet din Brud!”
 "Lev, hvis du kan! jeg vil følge min Brud!”
    Han død sank i Lynalilds Arme.
       Nu begge dandser i Himlen.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2019080319">
+<text id="baggesen2019080319">
 <head>
     <title>Forvandlingen</title>
     <subtitle>
@@ -6524,6 +6568,7 @@ Morderen kom: "Jeg har myrdet din Brud!”
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvilken salig Glands mit Blik omhyller?
    Fløi min Siel bag Solen i en Slum?
 Skiønne Straale, som min Aand fortryller,
@@ -6622,10 +6667,11 @@ Og jeg priste Gud, som lod ham blive
    Ædel, viis og god, og Danmarks Lyst,
 Og som ham en Broder vilde give
    Stor, som han, i alle Ædles Bryst.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2019080320" variant="baggesen2002092606">
+<text id="baggesen2019080320" variant="baggesen2002092606">
 <head>
     <title>Roserne</title>
     <firstline>Skiønne, kielne Roser visner ikke</firstline>
@@ -6633,6 +6679,7 @@ Og som ham en Broder vilde give
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center><small>Da jeg fik dem.</small></center></nonum>
 
 Skiønne, kielne Roser visner ikke!
@@ -6672,8 +6719,9 @@ Ogsaa dette Smil engang forsvinder -
    "Og af hendes Haand modtog os Du! -
 "Grumme! derfor falme vore Blade!
    "Grumme Sanger! derfor døe vi nu."
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section> <!-- Romancer og smaae Fortællinger -->
@@ -6684,7 +6732,7 @@ Ogsaa dette Smil engang forsvinder -
 </head>
 <content>
 
-<poem id="baggesen2019080321" variant="baggesen2002092501">
+<text id="baggesen2019080321" variant="baggesen2002092501">
 <head>
     <title>Digterviise</title>
     <subtitle>(Efter Horaz.)</subtitle>
@@ -6694,6 +6742,7 @@ Ogsaa dette Smil engang forsvinder -
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Mig, som en Ven af den rolige Muse,
 Flye du vanhellige Kummer og Frygt!
 Bort til dit Hiem, som Orcanerne bruse,
@@ -6753,10 +6802,11 @@ Men, naar du stemmer til Himmelens Toner
 Læbens og Harpens forenede Klang,
 Da skal han spille og Dans Millioner
 Lyttende høre med Vellyst hans Sang.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2019080322">
+<text id="baggesen2019080322">
 <head>
     <title>Hvad jeg synger og ikke synger</title>
     <firstline>Jeg synger ikke om Kamp og Krig</firstline>
@@ -6765,6 +6815,7 @@ Lyttende høre med Vellyst hans Sang.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg synger ikke om Kamp og Krig,
    Og Heltes Seire paa Stridens Enge;
 Min Muse blegner og skiuler sig,
@@ -6852,10 +6903,11 @@ Og alt gientoner, <b>Semire!</b> dig.
 <b>Semire:</b> gienlyde steile Fielde,
 <b>Semire:</b> gienrisle Kildevælde,
       <b>Dig</b> synger jeg.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2019080323" variant="baggesen2001082701">
+<text id="baggesen2019080323" variant="baggesen2001082701">
 <head>
     <title>Da jeg var lille</title>
     <firstline>Der var en Tid, da jeg var meget lille</firstline>
@@ -6863,6 +6915,7 @@ Og alt gientoner, <b>Semire!</b> dig.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Der var en Tid, da jeg var meget lille,
    Min hele Krop var kun en Alen lang;
 Sødt, naar jeg denne tænker, Taarer trille,
@@ -6907,10 +6960,11 @@ De svandt, de svandt de blide Barndoms Dage!
    Min Rolighed, min Fryd med dem svandt hen;
 Jeg kun Erindringen har nu tilbage:
    Gud lad mig aldrig, aldrig tabe den!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2019080324" variant="baggesen2002092002">
+<text id="baggesen2019080324" variant="baggesen2002092002">
 <head>
     <title>Morgensang</title>
     <subtitle>(Polyhymnias Yndling J. A. P. Schultz, helliget.)</subtitle>
@@ -6919,6 +6973,7 @@ Jeg kun Erindringen har nu tilbage:
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nu stiger Dagens lyse Gud
    I Østen over Jorden,
 Og spreder Liv og Vellyst ud
@@ -6998,10 +7053,11 @@ Lovpriset, takket evig vær!
    Fordi du gav mig Tunge,
 Hvis Lyd den Priis kan stamme her,
    Som Engle hisset siunge!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2019080325" variant="baggesen2002092804a">
+<text id="baggesen2019080325" variant="baggesen2002092804a">
 <head>
     <title>Helbredelsen</title>
     <firstline>Solen mig ei bragte Glæde</firstline>
@@ -7009,6 +7065,7 @@ Hvis Lyd den Priis kan stamme her,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Solen mig ei bragte Glæde;
 Maanen stedse saae mig græde;
    For mit Syn var alting sort.
@@ -7057,10 +7114,11 @@ Livets Bane med hverandre;
 Skulle, for igien at leve,
 Vore Siele sammensveve
    I de sidste Suk til Gud.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2019080326">
+<text id="baggesen2019080326">
 <head>
     <title>Den glade Lycas</title>
     <firstline>O! jeg Lyksalige! Lycilis elsker mig</firstline>
@@ -7068,6 +7126,7 @@ Vore Siele sammensveve
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 O! jeg Lyksalige! <b>Lycilis</b> elsker mig!
 Hvo er, som <b>Lycas,</b> usigelig lykkelig?
    Lycilis elsker kun mig!
@@ -7095,10 +7154,11 @@ Sønderknus Himle paa synkende Verdener!
 Intet kan skrække mig; roelig jeg slumrer der;
 Sødt under tusinde buldrende Tordener,
    Døer jeg i Lycilis Arm.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2019080327">
+<text id="baggesen2019080327">
 <head>
     <title>Den lille Landsbyepige</title>
     <firstline>Jeg har af alle Himlens gode Gaver</firstline>
@@ -7106,6 +7166,7 @@ Sødt under tusinde buldrende Tordener,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg har af alle Himlens gode Gaver
    De beste, Sundhed, Sørgløshed og Roe,
 Og tusind Glæder, hvilke den kun haver,
@@ -7135,10 +7196,11 @@ Og naar engang den endes med en bedre,
    Naar hendes Liv jeg her omlevet har,
 Da dette skiønne Sagn mit Minde hædre
    Hun var som hendes elskte Moder var.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2019080328">
+<text id="baggesen2019080328">
 <head>
     <title>Vivli</title>
     <subtitle>(Sang ved Solens Opgang paa sin Kones Fødselsdag.)</subtitle>
@@ -7147,6 +7209,7 @@ Da dette skiønne Sagn mit Minde hædre
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Velkommen, o Sol! hvis fortryllende Glands
    Oplyser og varmer og føder!
 Velkommen til Vaagen, til Arbeid og Dands,
@@ -7200,10 +7263,11 @@ Velkommen, o Sol! i din straalende Krands
 O straal til Hans Ære med hele din Glands
       Til Hans — o! til Hans,
 Hvis Godhed mig Vivli har givet!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2019080329" variant="baggesen2002092504">
+<text id="baggesen2019080329" variant="baggesen2002092504">
 <head>
     <title>Selvindbydelse</title>
     <subtitle>(Efter Horaz.)</subtitle>
@@ -7212,6 +7276,7 @@ Hvis Godhed mig Vivli har givet!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Du seer hvor grimt den kolde Vinter-Gud
    Har dannet om vor Jord;
 Alt Spor af Liv er slettet ud;
@@ -7246,10 +7311,11 @@ Som giør, at Purken dristig gaaer
    Paa Træskoe der, hvor Helten fandt sin Grav -
 Lad Ponsen tøe vor Krop og drukne Sorgen,
 Og Himlen raade for i Morgen!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2019080330">
+<text id="baggesen2019080330">
 <head>
     <title>Jordens Lethe</title>
     <subtitle>Drikkeviise</subtitle>
@@ -7259,6 +7325,7 @@ Og Himlen raade for i Morgen!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Naar, som vi daglig see desværre,
    Den Gode, Kloge lider Nød,
 Mens mangen dum og nedrig Herre
@@ -7303,10 +7370,11 @@ Høit lyder Undertryktes Stemme,
    Forførtes Skrig fra Syd til Nord —
 Op, Brødre! drikker, for at glemme
    Vor hele sørgelige Jord!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2019080331">
+<text id="baggesen2019080331">
 <head>
     <title>Skaal for den Elskede</title>
     <subtitle>Drikkeviise</subtitle>
@@ -7316,6 +7384,7 @@ Op, Brødre! drikker, for at glemme
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Fylde hver sit Glas til Randen,
    Bacchus elsker bredfuldt Maal;
 Klinker glade med hinanden,
@@ -7360,10 +7429,11 @@ Ud med Navnet! ingen svige
    Lev — — — lykkelig!
 Himlen give dig, min Pige,
    Den til Mand, jeg ønsker dig!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2001061401">
+<text id="baggesen2001061401">
 <head>
     <title>Den beste Verden</title>
     <subtitle>Drikkeviise</subtitle>
@@ -7373,6 +7443,7 @@ Himlen give dig, min Pige,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det gaaer saa herligt overalt,
       Hvor man sit Øie vender;
 Hver anden Verden ufortalt,
@@ -7435,10 +7506,11 @@ Min Sang er Glædens sande Lyd;
 Mit Bud er mild og munter Dyd;
 Mit Ønske: hele Verdens Fryd;
       Min Mening: Tossen græde!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2019080333">
+<text id="baggesen2019080333">
 <head>
     <title>De Skiønnes Skaal</title>
     <subtitle>Selskabs-Sang</subtitle>
@@ -7447,6 +7519,7 @@ Mit Ønske: hele Verdens Fryd;
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Skaberen skued' den nyskabte Klode,
    Ufødde Menneskers Skiæbner han saae
 Og, for disses Umildhed at bode.
@@ -7495,10 +7568,11 @@ Smilende Piger og kiærlige Koner
    Leve os alle til Held og til Trøst!
 Til Ære for Elskov alt Levendes Maal:
 I Koner! I Piger! I Skiønne! Jer Skaal!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2019080334">
+<text id="baggesen2019080334">
 <head>
     <title>Maadens Skaal</title>
     <subtitle>Drikkeviise</subtitle>
@@ -7508,6 +7582,7 @@ I Koner! I Piger! I Skiønne! Jer Skaal!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 En Daare sørger for i Morgen;
    Den Viise bruger glad sin Dag,
 Og Himlen overlader Sorgen;
@@ -7542,10 +7617,11 @@ O! vi vil elske, drikke, synge;
    Men for at naae vort skiønne Maal,
 Vi klinke høit i Venskabs Klynge:
    Vor Glædes Moders, <b>Maadens</b> Skaal!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2019080335">
+<text id="baggesen2019080335">
 <head>
     <title>Sang for Muserne</title>
     <firstline>Viisdom bød, og Himlen ynder</firstline>
@@ -7553,6 +7629,7 @@ Vi klinke høit i Venskabs Klynge:
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Viisdom bød, og Himlen ynder
    Mild og blid og munter Dyd;
 Rask og frie vor Sang forkynder
@@ -7639,10 +7716,11 @@ Skaal for hver, som Konsten ærer!
 Skaal for den, hvis Siel kan fatte
 Samlet Værd af Phoebi Skatte
    Skiønheds! Sandheds! Glædens Ven!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2019080336">
+<text id="baggesen2019080336">
 <head>
     <title>Selskabs-Sang</title>
     <subtitle>paa Kongens Fødselsdag</subtitle>
@@ -7651,6 +7729,7 @@ Samlet Værd af Phoebi Skatte
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Lad Herman von Bremerne kives
    Saa stærkt og saa længe de vil
 Om Staten er syg eller trives,
@@ -7749,10 +7828,11 @@ Vor Fader, Kong Christian, leve
    Til Trilling-Familiens<note>Danmark, Norge, Holsteen.</note> Held!
 Hver Fiende for Faderen bæve,
    Hvis Vellyst er Børnenes Vel!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2019080337" variant="baggesen2002092607">
+<text id="baggesen2019080337" variant="baggesen2002092607">
 <head>
     <title>Sang for Freden</title>
     <subtitle>(Ved Kronprindsens Hiemkomst fra Sverrig.)</subtitle>
@@ -7761,6 +7841,7 @@ Hver Fiende for Faderen bæve,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Lad Kampens Helt, i Vaabens Larm,
    Paa Brødres Lig,
 Sin dyre Krands med blodig Arm
@@ -7832,10 +7913,11 @@ Op! klinker! <b>Frederik</b> og Fred!
    Velkommen her!
 Og alle Hierter klinke med:
    Velkommen vær!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2001060801">
+<text id="baggesen2001060801">
 <head>
     <title>Dansk Tranqvebar-Viise</title>
     <subtitle>med mesopotamisk Omqvæd</subtitle>
@@ -7844,6 +7926,7 @@ Og alle Hierter klinke med:
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg lever, rolig og munter, her
    Saa luunt i Jordklodens anden Ende;
 Min Flaske halv kun uddrukken er,
@@ -7923,10 +8006,11 @@ Basiopo, dolski-o-basi
 Lemme basio podolski, lemme,
 Klemme basio podolske, klemme —
         <b>Ba-sio-po!</b><note>* "Det mesopotamiske Sprog er et underligt Sprog!" Ulysses hos Holberg.</note>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2019080339">
+<text id="baggesen2019080339">
 <head>
     <title>Sandserne</title>
     <subtitle>(Efter Catull.)</subtitle>
@@ -7935,6 +8019,7 @@ Klemme basio podolske, klemme —
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Naar jeg dig seer, <b>Serene,</b> o! da beder
    Din Elsker: gid jeg lutter Øie var!
 Og, naar du synger Elskovs Saligheder:
@@ -7959,10 +8044,11 @@ Kom! lad mig see dig, høre dig, Serene!
    Duft om mig! fayn mig! kys mig altid her!
 Saa beder jeg til evig Tid allene:
    Gid jeg maae stedse blive den jeg er!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2019080340">
+<text id="baggesen2019080340">
 <head>
     <title>Til Serene</title>
     <subtitle>(Efter Catull.)</subtitle>
@@ -7971,6 +8057,7 @@ Saa beder jeg til evig Tid allene:
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Giv mig, Serene! tusind Kys, og atter
    Ti Tusind, og saa Tusind nok Lgien;
 Derpaa ti Tusind, under Spøg og Latter,
@@ -7985,10 +8072,11 @@ Og ingen skal til andre kunne sige,
    Som ved den simple Maade mueligt var:
 Saa mange Gange kyste han sin Pige,
    Saa mange Gange hun ham kysset har.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2019080341" variant="baggesen2002092205">
+<text id="baggesen2019080341" variant="baggesen2002092205">
 <head>
     <title>Horaz og Lydia</title>
     <subtitle>(Efter Horaz.)</subtitle>
@@ -7997,6 +8085,7 @@ Saa mange Gange kyste han sin Pige,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center><b>Horaz.</b></center></nonum>
 Før, naar jeg henrykt ved dit Bryst
    Dig, Falske, hørte kielent sige,
@@ -8044,10 +8133,11 @@ Skiøndt Cephalus er Solen lig,
 Og Havets Skum i Falskhed lig;
    Jeg leve vil med dig, og paa dit Skjød
    Skal Døden selv din Elskte blive sød!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2019080342" variant="baggesen2002092506">
+<text id="baggesen2019080342" variant="baggesen2002092506">
 <head>
     <title>Til Venus</title>
     <firstline>Cyprens skiønne Herskerinde</firstline>
@@ -8055,6 +8145,7 @@ Og Havets Skum i Falskhed lig;
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Cyprens skiønne Herskerinde,
 Elskovs mægtige Gudinde!
    Min Seline kalder dig.
@@ -8110,10 +8201,11 @@ Kom med Amor, Skiemt og Latter,
 Ellers troer din Skald, Gudinde!
 At du frygter for at finde
    Meer end dig i hende der.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2019080343" variant="baggesen2002092511a">
+<text id="baggesen2019080343" variant="baggesen2002092511a">
 <head>
     <title>Seiladsen</title>
     <firstline>See, hun seiler bort! mit Øie følger</firstline>
@@ -8121,6 +8213,7 @@ At du frygter for at finde
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 See, hun seiler bort! mit Øie følger
    Zittrende den lykkelige Stavn -
 Triller sagte, muntre Bølger!
@@ -8150,10 +8243,11 @@ Men min Roe forlod mig med min Pige;
    Ene staaer jeg Arme her igien -
 Amor! bring den Elskelige
    Snart tilbage til sin ømme Ven.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2019080344" variant="baggesen1801a2">
+<text id="baggesen2019080344" variant="baggesen1801a2">
 <head>
     <title>Lydia</title>
     <firstline>Skiøn og kielen, som Cythere</firstline>
@@ -8161,6 +8255,7 @@ Amor! bring den Elskelige
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Skiøn og kielen, som Cythere,
    Hvid og mild, som Cynthia,
 Rund, som Hebe, rank, som Here,
@@ -8225,10 +8320,11 @@ Men een Feil har dog min Pige,
    Som det alt fordunkle vil:
 Ak! den Uforlignelige
    Er desværre - ikke til.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2019080345" variant="baggesen2002092512">
+<text id="baggesen2019080345" variant="baggesen2002092512">
 <head>
     <title>Trøsten</title>
     <firstline>Vis er Døden! Salig Slummer</firstline>
@@ -8237,6 +8333,7 @@ Ak! den Uforlignelige
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Vis er Døden! Salig Slummer
    Venter snarlig Sorgens Ven.
 Trøstesløse! glem din Kummer!
@@ -8301,10 +8398,11 @@ Hvor jeg mellem evig unge,
    Stedse nye Henrykkelser,
 Nyde skal hvad ingen Tunge,
    Ingen Ord mig tolke her!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2019080346" variant="baggesen2002092510">
+<text id="baggesen2019080346" variant="baggesen2002092510">
 <head>
     <title>Til Psycharion</title>
     <firstline>Munter iler du dit Maal imod</firstline>
@@ -8312,6 +8410,7 @@ Nyde skal hvad ingen Tunge,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Munter iler du dit Maal imod;
 Ingen Steen endnu din spæde Fod
    Paa dit Livs begyndte Bane hindrer;
@@ -8331,10 +8430,11 @@ Thi som Lam imellem Ulve gaae;
 Thi som Roser mellem Torne staae;
 Saa paa Livets glatte Bane gaae
    Evas Døttre mellem Adams Sønner!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2019080347" variant="baggesen2002092806">
+<text id="baggesen2019080347" variant="baggesen2002092806">
 <head>
     <title>Palmines Smil</title>
     <firstline>Elsk Dyden! lød en ukiendt Røst</firstline>
@@ -8342,6 +8442,7 @@ Saa paa Livets glatte Bane gaae
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 "Elsk Dyden!” lød en ukiendt Røst
 Alt tidlig i mit spæde Bryst -
    "Vær Dyden troe!"<note>"Vær Dyden troe!"] "Vær Dyden troe!</note> saa bød min Fader -
@@ -8397,10 +8498,11 @@ Du mig skal giøre lykkelig!
 Thi min <b>Palmines</b> lyse Smil,
 Som straaler af Din egen Ild,
    Jeg uophørlig skal tilbede.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2019080348">
+<text id="baggesen2019080348">
 <head>
     <title>Hymne til Smør</title>
     <subtitle>(Et Forsøg i den høiere Poesie)</subtitle>
@@ -8409,6 +8511,7 @@ Som straaler af Din egen Ild,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Som, naar fra Tordendækte Throner
 Tolv tretten tusind Millioner
    Ex-Seraphiner styrte ned
@@ -8520,10 +8623,11 @@ Som synge Hymner til Patroner,
 De giøre vel! de Landet hædre —
 Men mon de dog ei giorde bedre,
    Ifald de Hymner sang om Smør?
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2019080349">
+<text id="baggesen2019080349">
 <head>
     <title>Jubelsang til Ballademesteren</title>
     <firstline>Til Pindi stiernekronte Top</firstline>
@@ -8531,6 +8635,7 @@ Men mon de dog ei giorde bedre,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Til Pindi stiernekronte Top,
    Til Laurbærkrandsede Castale,
 Skal Sangens Jubler hvirvles op
@@ -8629,10 +8734,11 @@ O gid dog hver en Hungers Præst,
    For slig en Lovsang at fortiene,
 Gav Phoebus atter snart en Fest
    Ved at forlade Hippoerene!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2019080350" variant="baggesen2002100213">
+<text id="baggesen2019080350" variant="baggesen2002100213">
 <head>
     <title>Til Dydens Ven</title>
     <subtitle>ved <w>Bergers</w> Død</subtitle>
@@ -8641,6 +8747,7 @@ Gav Phoebus atter snart en Fest
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ei Lægen blot, som hans Exempel lærte,
    Som ledtes ved hans faderlige Raad;
 Men hver, som kiendte Mandens sieldne Hierte,
@@ -8675,10 +8782,11 @@ Aftør din Taare! Bergers Aand omsvæver
    Endnu sit elskede forladte Land:
 "Min <b>Callisen!</b>" saa sang Hygæa, "lever!"
    Som Berger længe — længe leve han!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2019080351">
+<text id="baggesen2019080351">
 <head>
     <title>Til Danmark</title>
     <subtitle>ved Gerners Liig</subtitle>
@@ -8687,14 +8795,16 @@ Aftør din Taare! Bergers Aand omsvæver
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Din Graad var bitter, naar en sielden Mand
    Fra dig til Lønnens lyse Tempel ilte;
 Meer lindrende den flød, mit Fødeland!
    Hvis og, imens han levede, du smilte.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesenandrea6">
+<text id="baggesenandrea6">
 <head>
     <title>Til Bogen</title>
     <firstline>Gaae lille Bog i Verden ud, og vandre</firstline>
@@ -8702,6 +8812,7 @@ Meer lindrende den flød, mit Fødeland!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Gaae lille Bog i Verden ud, og vandre
     Taalmodig om deri saa langt du kan!
 Og taber du dig snart blandt tusind andre —
@@ -8746,8 +8857,9 @@ Taal alt — det er den største Dyd herneden!
     Vær stolt af Ondes Had og Narres Spot!
 Vær munter! men for alting vær beskeden!
     Det klæder alle unge Bøger got.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section> <!-- Viiser og andre lyriske Stykker -->

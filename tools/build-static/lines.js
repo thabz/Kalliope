@@ -165,12 +165,17 @@ const build_poet_lines_json = collected => {
       if (doc == null) {
         console.log("Couldn't load", filename);
       }
-      getElementsByTagNames(doc, ['poem', 'section'])
+      getElementsByTagNames(doc, ['text', 'section'])
         .filter(part => safeGetAttr(part, 'id') != null)
         .forEach(part => {
           const textId = safeGetAttr(part, 'id');
           // Skip digte som ikke er ældste variant
           if (primaryTextVariantId(textId, collected) !== textId) {
+            return;
+          }
+          // Skip tekster markeret med skip-index
+          const skipIndex = safeGetAttr(part, 'skip-index');
+          if (skipIndex != null) {
             return;
           }
 
@@ -183,6 +188,7 @@ const build_poet_lines_json = collected => {
           }
           // Vi tillader manglende firstline, men så skal det markeres med et <nofirstline/> tag.
           // Dette bruges f.eks. til mottoer af andre forfattere.
+          /*
           if (
             tagName(part) === 'poem' &&
             firstline == null &&
@@ -190,6 +196,7 @@ const build_poet_lines_json = collected => {
           ) {
             throw `${textId} mangler firstline i ${poetId}/${workId}.xml`;
           }
+          */
           if (firstline != null && firstline.title.indexOf('<') > -1) {
             throw `${textId} har markup i førstelinjen i ${poetId}/${workId}.xml`;
           }

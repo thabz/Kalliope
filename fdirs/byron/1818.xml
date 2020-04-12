@@ -9,7 +9,7 @@
 </workhead>
 <workbody>
 
-<poem id="byron2003060601">
+<text id="byron2003060601">
 <head>
    <title>Beppo</title>
    <toctitle>Beppo</toctitle>
@@ -19,6 +19,7 @@
    <keywords>ottavarima</keywords>
 </head>
 <body>
+<poetry>
 
 <nonum><wrap><i>Rosalind:</i> Farewell, Monsieur Traveller: Look you lisp, and wear strange suits; disable all the benefits of your own country; be out of love with your Nativity, and almost chide God for making you that countenance you are; or I will scarce think that you have swam in a <i>Gondola. - As You Like It, Act IV., Scene i.</i></wrap></nonum>
 
@@ -1018,8 +1019,9 @@ My pen is at the bottom of a page,
 Which being finish'd, here the story ends;
 'Tis to be wish'd it had been sooner done,
 But stories somehow lengthen when begun.
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

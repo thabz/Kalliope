@@ -122,17 +122,12 @@ class KeywordLink extends React.Component<KeywordLinkProps> {
   }
 }
 
-type TextHeadingProps = { text: Text, lang: Lang, isProse: boolean };
+type TextHeadingProps = { text: Text };
 class TextHeading extends React.Component<TextHeadingProps> {
   render() {
-    const { text, lang, isProse } = this.props;
+    const { text } = this.props;
 
     let className = 'text-heading';
-    if (isProse) {
-      className += ' prose';
-    } else {
-      className += ' poem';
-    }
 
     const subtitles = (text.subtitles || []).map((t, i) => {
       return (
@@ -404,9 +399,7 @@ const TextPage = (props: TextComponentProps) => {
     );
     if (text.text_type === 'section') {
       heading = _('{varianter} af denne samling:', lang, { varianter });
-    } else if (text.text_type === 'poem') {
-      heading = _('{varianter} af dette digt:', lang, { varianter });
-    } else if (text.text_type === 'prose') {
+    } else if (text.text_type === 'text') {
       heading = _('{varianter} af denne tekst:', lang, { varianter });
     }
     renderedVariants = (
@@ -466,21 +459,26 @@ const TextPage = (props: TextComponentProps) => {
       }
       highlightInterval = { from, to };
     }
-    const options = {
-      isPoetry: !text.is_prose,
-      highlight: highlightInterval,
-    };
-    body = (
-      <div className="text-content">
+    const renderedBlocks = text.blocks.map((block, i) => {
+      const { type, lines, options } = block;
+      const blockOptions = {
+        isPoetry: type === 'poetry',
+        highlight: highlightInterval,
+        ...options,
+      };
+      return (
         <TextContent
-          contentHtml={text.content_html}
+          key={type + i}
+          contentHtml={lines}
           contentLang={text.content_lang}
           lang={lang}
-          options={options}
+          options={blockOptions}
+          type={type}
           keyPrefix={text.id}
         />
-      </div>
-    );
+      );
+    });
+    body = <div className="text-content">{renderedBlocks}</div>;
   }
 
   const ogTitle = _(`{poetName}: »{poemTitle}« fra {workTitle}`, lang, {
@@ -490,9 +488,23 @@ const TextPage = (props: TextComponentProps) => {
   });
 
   const ogDescription = OpenGraph.trimmedDescription(
-    text.content_html,
-    !text.is_prose
+    // Merge blocks
+    text.blocks
+      .filter((b) => b.type !== 'quote')
+      .map((b) => b.lines)
+      .reduce((result, lines) => {
+        return result.concat(lines);
+      }, [])
   );
+
+  // Titlen skal indentes hvis første ikke-quote block indeholder numre.
+  const firstNoneQuoteBlock = text.blocks.find((b) => b.type !== 'quote');
+  const shouldIndentTitle =
+    firstNoneQuoteBlock != null &&
+    firstNoneQuoteBlock.lines.find((l) => {
+      const lineOptions = l.length > 1 ? l[1] : {};
+      return lineOptions.displayNum != null || lineOptions.margin != null;
+    }) != null;
 
   return (
     <Page
@@ -513,8 +525,12 @@ const TextPage = (props: TextComponentProps) => {
             <article style={{ position: 'relative' }}>
               <Bladrer left target={prev} />
               <Bladrer right target={next} />
-              <div className="text-content">
-                <TextHeading text={text} lang={lang} isProse={text.is_prose} />
+              <div
+                className="text-content"
+                style={{
+                  marginLeft: shouldIndentTitle ? '1.5em' : 0,
+                }}>
+                <TextHeading text={text} />
               </div>
               <div>{body}</div>
               <style jsx>{`

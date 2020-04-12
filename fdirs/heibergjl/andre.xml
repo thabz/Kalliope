@@ -9,7 +9,7 @@
 </workhead>
 <workbody>
 
-<poem id="heibergjl2001042803">
+<text id="heibergjl2001042803">
 <head>
    <title>Adelaide Grevinde af Bombelles</title>
    <subtitle>født Brun.</subtitle>
@@ -29,6 +29,7 @@
    <keywords>ottavarima,baggesen,oehlenschlaeger,goethe</keywords>
 </head>
 <body>
+<poetry>
 De samle sig, lig underfulde Drømme,
 De rige Minder fra en svunden Vaar,
 Lig gyldne Skyer, som paa Himlen svømme,
@@ -100,10 +101,11 @@ Hvor Intet, som er ædelt, kan forsvinde,
 Og Intet, som stod præget for Din Sands,
 Hvor Natten, som for evigt nu Dig fjerner,
 Er Himlens Dyb med Evighedens Stjerner.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heibergjl2001061601">
+<text id="heibergjl2001061601">
 <head>
    <title>À l'Aarestrup</title>
    <subtitle>Udelukkende Kjærlighed. Amor exclusivus.</subtitle>
@@ -120,6 +122,7 @@ Er Himlens Dyb med Evighedens Stjerner.
    <keywords>aarestrup</keywords>
 </head>
 <body>
+<poetry>
 Gud give, jeg var en Hest!
 Da skulde jeg med min Hale,
 Alt som jeg kunde bedst,
@@ -128,10 +131,11 @@ Og vifte de mange Fluer
 Bort fra din Purpurkind,
 Og jage de andre Fruer
 Dem i Haarfrisuren ind.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heibergjl2001062401">
+<text id="heibergjl2001062401">
 <head>
    <title>Den yngre Digterskole</title>
    <subtitle>Ved Festen for Adam Oehlenschläger</subtitle>
@@ -145,6 +149,7 @@ Dem i Haarfrisuren ind.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 At Danmark er et lidet Land,
 Man tidt nok faaer at høre,
 Men fagert er ved Skov og Strand,
@@ -198,10 +203,11 @@ En Stammefader, end i Kraft,
 For ham vi tømme Glasset,
 Vi hilse ved dets ædle Saft
 Vor Adam paa Parnasset.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heiberg2001121501">
+<text id="heiberg2001121501">
 <head>
    <title>Gravskrift over kgl. Skuespiller N. P. Nielsen.</title>
    <toctitle>Gravskrift over kgl. Skuespiller N. P. Nielsen.</toctitle>
@@ -216,14 +222,16 @@ Vor Adam paa Parnasset.
    <keywords>gravskrift</keywords>
 </head>
 <body>
+<poetry>
 Som Helt for Melpomenes Dolk
 Man ofte saae Dig uskadt bløde;
 Men da Du kom blandt Skikkelige Folk
 Du følte fremmed Dig - - og døde!
+</poetry>
 </body>
-</poem>
+</text>
 
-<prose id="heibergjl2001121601">
+<text id="heibergjl2001121601" skip-index="true">
 <head>
    <title>Gravskrift over P. A. Heiberg</title>
    <toctitle>Gravskrift over P. A. Heiberg</toctitle>
@@ -237,11 +245,13 @@ Du følte fremmed Dig - - og døde!
    <keywords>gravskrift</keywords>
 </head>
 <body>
+<prose>
 Danske eller norske Vandrer, som besøger dette fremmede Sted, dvæl et Øieblik ved Din Landsmands Grav. Her hviler Peter Andreas Heiberg, født i Vordingborg den 16. November 1758, død i Paris den 30. April 1841. Hans Skiæbne er Dig bekiendt.
-</body>
 </prose>
+</body>
+</text>
 
-<poem id="heiberg2001123101">
+<text id="heiberg2001123101">
 <head>
    <title>Aftenvandring</title>
    <toctitle>Aftenvandring</toctitle>
@@ -255,6 +265,7 @@ Danske eller norske Vandrer, som besøger dette fremmede Sted, dvæl et Øieblik
    <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
+<poetry>
 Ei den høie Himmelbue
 Straaler meer ved gyldne Lue,
 Phøbus alt er dalet ned.
@@ -373,10 +384,11 @@ Men i lysen Maaneguld,
 Her hvor Skyggerne sig male,
 I de høie Bøgesale,
 Vil jeg vandre længselsfuld!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heiberg2001123102">
+<text id="heiberg2001123102">
 <head>
    <title>Den hellige Anders</title>
    <subtitle>Legende</subtitle>
@@ -391,6 +403,7 @@ Vil jeg vandre længselsfuld!
    <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
+<poetry>
                _______
 
      Naar Vandringsmanden mellem Mark og Enge
@@ -616,10 +629,11 @@ Deroppe med en Indskrift paa Latin,
 Som halv er slettet ud, men lød som saa:
 Til Minde om Sanct Anders, som i Joppe
 Indslumrede, men vaagnede heroppe.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heiberg2001123103">
+<text id="heiberg2001123103">
 <head>
    <title>Foraar om Vinteren</title>
    <toctitle>Foraar om Vinteren</toctitle>
@@ -633,6 +647,7 @@ Indslumrede, men vaagnede heroppe.
    <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
+<poetry>
 Hvad! kan jeg troe hvad jeg seer? Igaar omfygede Sneen,
 Og nu straaler idag varm den oplivende Sol,
 Deilige Foraarsdag! Har Chariten bragt dig fra Syden?
@@ -679,10 +694,11 @@ Og naar glade sig samle de muntre, fortrolige Venner,
 Om det forenende Bord spøgende sætte sig ned,
 Ak! da mærker jeg klart, at Vintren dvæler med Afsked;
 Og dog ønsker jeg da: Vinter, forlad os ei end!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heiberg2001123104">
+<text id="heiberg2001123104">
 <head>
    <title>Panisk Skræk</title>
    <toctitle>Panisk Skræk</toctitle>
@@ -696,6 +712,7 @@ Og dog ønsker jeg da: Vinter, forlad os ei end!
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
+<poetry>
 Høit alt monne Solen staae,
 Fast til Halm den Græsset brænder:
 Skyggerne blir ganske smaa,
@@ -835,10 +852,11 @@ Sangen vil sig bedre tee,
 Naar i Anelser den svømmer:
 Lad mit ydre Blik ei see
 Det hvorom min Tanke drømmer.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heiberg2001123105">
+<text id="heiberg2001123105">
 <head>
    <title>Til Lærken</title>
    <toctitle>Til Lærken</toctitle>
@@ -852,6 +870,7 @@ Det hvorom min Tanke drømmer.
    <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
+<poetry>
 Velkommen igjen,
 Du Vaarens Prophet!
 Min sjungende Ven
@@ -975,10 +994,11 @@ Jeg maa føle, hvad nu
 Min uvingede Læbe
 Forgjæves vil stræbe
 At tolke som du!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heibergjl2002010601">
+<text id="heibergjl2002010601">
 <head>
    <title>Til Johan Welhaven</title>
    <toctitle>Til Johan Welhaven</toctitle>
@@ -994,6 +1014,7 @@ At tolke som du!
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Høilig velsignet være <i>Cammermeyer,</i><note>I et Digt, som Hr. Welhaven kort iforveien havde sendt mig med et Exemplar af "Norges Dæmring," havde han erindret mig om, at han, formedelst sin Morfader, var min Fætter.</note>
 Fordi han ægtede min Faders Tante!
 I Norges Dæmring har han sat en Plante,
@@ -1011,10 +1032,11 @@ For hist omkring det unge Træ at dandse.
 Hvor Poesiens Lys de lange Nætter
 Forjog, der vil min Alfeskare standse,
 Og mindes stolt, at Træet er dens Fætter.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heibergjl2002010602">
+<text id="heibergjl2002010602">
 <head>
    <title>Eensomhed.</title>
    <subtitle>Efter Tieck i Genoveva. Til Musik af Weyse.</subtitle>
@@ -1030,6 +1052,7 @@ Og mindes stolt, at Træet er dens Fætter.
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hist i Kreds af nøgne Fjelde,
 Hvor de dunkle Pile staae,
 Hvor de stille Kilder vælde,
@@ -1050,10 +1073,11 @@ Hist i Kreds af nøgne Klipper,
 Hvor de dunkle Pile staae,
 I den kjølige, den fjerne Dal
 Find en Grav, og end dit Hjertes Qval!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heiberg2002011323">
+<text id="heiberg2002011323">
 <head>
    <title>Amor hos Bacchus</title>
    <toctitle>Amor hos Bacchus</toctitle>
@@ -1066,6 +1090,7 @@ Find en Grav, og end dit Hjertes Qval!
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
+<poetry>
           Bacchus.
 Tys! Hvo banker paa Døren? Hvad seer jeg? Amor sig nærmer
 Hid til min Arne? O vær hilset, uventede Gjæst!
@@ -1197,10 +1222,11 @@ Dog nu vil, naar Søvnen er endt, han trøste sig over,
 At han gjenkjender sig selv. Hvo som har Kjærlighed følt,
 Vil sin Livstid heller af haabløs Flamme fortæres,
 End een eneste Dag leve med Sundhed og fri.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heiberg2002011303">
+<text id="heiberg2002011303">
 <head>
    <title>Cantate</title>
    <subtitle>
@@ -1220,6 +1246,7 @@ End een eneste Dag leve med Sundhed og fri.
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
+<poetry>
                 I.
 
 Vær hilset, Lys fra Sandheds Væld,
@@ -1433,10 +1460,11 @@ Alle, som kæmpe for Musernes Krands!
 Kundskab, din Stamme
 Blomstrende staae,
 Evig, mens Tiderne vexlende gaae!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heiberg2002011306">
+<text id="heiberg2002011306">
 <head>
    <title>Det danske Flag</title>
    <subtitle>
@@ -1454,6 +1482,7 @@ Evig, mens Tiderne vexlende gaae!
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
+<poetry>
 Saa fik du mig dog fat! Din Haand mit Kors berørte,
 Den Haand, hvormed du svoer en hurtigt krænket Ed,
 Den Haand, hvoraf dit Sværd, som du med Skjælven førte,
@@ -1513,10 +1542,11 @@ Fortæller Sagnet da, naar Øiet meer ei blindes,
 Den stolte Hav-Ørns Fald for aadselgridske Ravn,
 Du, som var ellers glemt, i Krøniken skal mindes
                   Ved et foragtet Navn.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heiberg2002011308">
+<text id="heiberg2002011308">
 <head>
    <title>Efteraarsfølelse</title>
    <toctitle>Efteraarsfølelse</toctitle>
@@ -1530,6 +1560,7 @@ Du, som var ellers glemt, i Krøniken skal mindes
    <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
+<poetry>
 Hvor sørgelig dog Skoven bliver!
 Dens nylig rige Krone nøgen staaer;
 Man træder nu og gaaer
@@ -1592,10 +1623,11 @@ Bag Hjemmets brede Palmer,
 For Sønnen, som hun har saa kjær,
 Den blide, fredelige Skygge,
 Hvori alene han kan boe og bygge.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heiberg2002011309">
+<text id="heiberg2002011309">
 <head>
    <title>Himmelsk Kjærlighed</title>
    <toctitle>Himmelsk Kjærlighed</toctitle>
@@ -1608,6 +1640,7 @@ Hvori alene han kan boe og bygge.
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
+<poetry>
 Jord og Himmel ere skilt som tvende;
 Lad ei daarligt os forvexle dem!
 Himlens Lys de gyldne Straaler sende
@@ -1687,10 +1720,11 @@ Skjøndt os skiller tvende Rigers Kyst.
 Phantasiens Vinger skal mig bære
 Didhen, hvor min Aand skal evig være,
 Hvor mit Hjerte har sit rette Hjem!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heiberg2002011310">
+<text id="heiberg2002011310">
 <head>
    <title>Hjemkomst</title>
    <toctitle>Hjemkomst</toctitle>
@@ -1704,6 +1738,7 @@ Hvor mit Hjerte har sit rette Hjem!
    <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
+<poetry>
 Min Reisetid sig nærmer nu sin Ende,
 Den er forbi den alt for korte Lyst,
 Tilbage skal jeg til mit Danmark vende,
@@ -1811,10 +1846,11 @@ Du aabner atter dine milde Arme,
 Paa hvilke du saa tidt den Spæde bar.
 Modtag mig da! Lig Cirkelen jeg vender
 Til Punktet om, hvor jeg mit Udspring kjender.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heiberg2002011312">
+<text id="heiberg2002011312">
 <head>
    <title>I et Exemplar af min Psyche</title>
    <toctitle>I et Exemplar af min Psyche</toctitle>
@@ -1828,6 +1864,7 @@ Til Punktet om, hvor jeg mit Udspring kjender.
    <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
+<poetry>
 Nu, da snart, paa Floras Bud
 Vintren flyer for Vaar og Sommer,
 Nu, da hver en Trækfugl kommer,
@@ -1882,10 +1919,11 @@ Men lad Digtet bringe mig!
 I hver Klang af Psyches Længsel
 Hør et Suk, som fra mit Fængsel
 Vestenvinden bringer dig!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heiberg2002011316">
+<text id="heiberg2002011316">
 <head>
    <title>Til Lanterna-magica-Doublanten i Sorøe</title>
    <toctitle>Til Lanterna-magica-Doublanten i Sorøe</toctitle>
@@ -1899,6 +1937,7 @@ Vestenvinden bringer dig!
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
+<poetry>
 Fætter, hvad skal Enden blive,
 Farer du saaledes fort?
 Vil du flere Viser skrive?
@@ -2253,10 +2292,11 @@ Lad os stærkt hinanden klemme,
 Fast i Sadlen, rank til Hest,
 Men for Alting ikke glemme,
 Vor Turnering er en Fest!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heiberg2002011317">
+<text id="heiberg2002011317">
 <head>
    <title>Til Legationsraad Gierlew</title>
    <subtitle>
@@ -2274,6 +2314,7 @@ Vor Turnering er en Fest!
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
+<poetry>
              Kjøbenhavn, den 3die Juni 1825.
 
 Det tydske Sprog er ei min Sag,
@@ -2324,10 +2365,11 @@ Skriv Navnet rigtig paa Maitressen,
 Som tog min venstre Haand forsand,
 Og som mig knap til Enkemand
 Vil gjøre her i Tidens Pressen.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heiberg2002011318">
+<text id="heiberg2002011318">
 <head>
    <title>Tilegnelse af Elverhøi</title>
    <subtitle>Til Deres Kongelige Høiheder, Prinds Frederik Carl Christian og Prindsesse Vilhelmine Marie.</subtitle>
@@ -2341,6 +2383,7 @@ Vil gjøre her i Tidens Pressen.
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
+<poetry>
 Paa Engen hvile de Taager graae,
 En Vandrer stirrer med Skræk derpaa;
 Bleg skinner Maanen i Aftenstunden,
@@ -2370,10 +2413,11 @@ Maaskee det venlige Fyrstepar
 Vil smile til jer i Skjoldung-Hallen;
 Maaskee de Blomster, som Danmark bar,
 Tør offres Danmarks Haab af Skjalden.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heiberg2002011319">
+<text id="heiberg2002011319">
 <head>
    <title>Tjenstagtighed</title>
    <subtitle>En Fabel</subtitle>
@@ -2388,6 +2432,7 @@ Tør offres Danmarks Haab af Skjalden.
    <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
+<poetry>
 Tjenstagtighed det er en herlig Dyd;
 Ei sandt, Enhver er af den Mening? -
 At offre sin for Andres Fryd,
@@ -2480,10 +2525,11 @@ Den gode Mening, adskilt fra Forstand,
 Vist aldrig kommer i sit rette Hjørne.
 Moral: Saafremt du det undvære kan,
 Tag aldrig imod Tjenester - af Bjørne!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heiberg2002011320">
+<text id="heiberg2002011320">
 <head>
    <title>Vaaren og Freden</title>
    <toctitle>Vaaren og Freden</toctitle>
@@ -2497,6 +2543,7 @@ Tag aldrig imod Tjenester - af Bjørne!
    <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
+<poetry>
 Held os! Den Gamle med riimfrosne Lokker,
       Vinteren, flyer:
 Vaaren bekrandset med himmelblaae Klokker,
@@ -2568,10 +2615,11 @@ Nær i mit Hjerte den Flamme, du tænder!
       Lær mine Hænder
 Dobbelte Greb i din Stræng, naar den sender
       Pilens og Tonernes Klang!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heiberg2002011322">
+<text id="heiberg2002011322">
 <head>
    <title>Weyse</title>
    <subtitle>
@@ -2590,6 +2638,7 @@ Dobbelte Greb i din Stræng, naar den sender
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
+<poetry>
 Den femte Marts er kommen igjen,
 Men hvor er vor og Musernes Ven,
 Hvis Navn gav Dagen sit Minde?
@@ -2685,10 +2734,11 @@ Snart lytter det til hans Rhythmers Dands,
 Naar Teppet atter er lettet,
 Naar han binder sig selv sin bedste Krands,
 Af evige Toner flettet.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heibergjl2002012103">
+<text id="heibergjl2002012103">
 <head>
    <title>Epilog</title>
    <subtitle>
@@ -2707,6 +2757,7 @@ Af evige Toner flettet.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Som Tolk for de taknemmeligste Hjerter
 Fremtræder jeg i denne Kreds for Dem,
 Hvis Godhed tidt har lindret bittre Smerter,
@@ -2741,10 +2792,11 @@ Af <i>den</i> hans Efterladte troe vil slynge
 En simpel Krands omkring den faldnes Grav,
 Og mindes hjertelig, at denne Klynge
 Dem og et venligt Blad til Krandsen gav.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heiberg2002011802">
+<text id="heiberg2002011802">
 <head>
    <title>Den sidste Prøve</title>
    <subtitle>
@@ -2764,6 +2816,7 @@ Dem og et venligt Blad til Krandsen gav.
    <keywords>terziner</keywords>
 </head>
 <body>
+<poetry>
 Dengang fra Land til Land den arme Psyche
     Landflygtig vandrede, bleg som en Lillie,
     Forladt af alle, fulgt kun af sin Skygge,
@@ -2955,7 +3008,8 @@ Derfor mit Hjerte, skjøndt det mægtigt flammer,
 Selv naar jeg troer at gjætte, hvad betyder
     Min Gaade, er der dog et <i>Hvad</i> tilbage,<note>* Det græske τι</note>
     Som uopløst i mine Toner lyder.
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

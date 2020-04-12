@@ -8,7 +8,7 @@
 <workbody>
 
     
-<prose id="foscolo2020020601">
+<text id="foscolo2020020601" skip-index="true">
 <head>
     <title>A Napoleone Bonaparte liberatore [Brev]</title>
     <dates>
@@ -20,6 +20,7 @@
     </notes>
 </head>
 <body>
+<prose>
 Io ti dedicava questa Oda quando tu, vinte dodici giornate e venticinque combattimenti, espugnate dieci fortezze, conquistate otto provincie, riportate centocinquanta insegne, quattrocento cannoni e contomila prigionieri, annientati cinque eserciti, disarmato il re sardo, atterrito Ferdinando IV, umiliato Pio VI, rovesciate due antiche repubbliche, e forzato l'imperatore alla tregua, davi pace a' nemici, costituzione alla Italia, e onnipotenza al popolo francese.
 
 Ed ora pur te la dedico non per lusingarti col suono delle tue gesta, ma per mostrarti col paragone la miseria di questa Italia che giustamente aspetta restaurata la libertà da chi primo la fondò.
@@ -41,10 +42,11 @@ Anche negli infelicissimi tempi le grandi rivoluzioni destano feroci petti ed al
 <center>Genova 5 agghiacciatore anno VIII [27 novembre 1799].</center>
 
 <right><sc>Ugo Foscolo</sc></right>
-</body>
 </prose>
+</body>
+</text>
 
-<poem id="foscolo2020020602">
+<text id="foscolo2020020602">
 <head>
     <title>A Napoleone Bonaparte liberatore</title>
     <firstline>Dove tu, diva, de l'antica e forte</firstline>
@@ -53,6 +55,7 @@ Anche negli infelicissimi tempi le grandi rivoluzioni destano feroci petti ed al
     </notes>
 </head>
 <body>
+<poetry>
 Dove tu, diva, de l'antica e forte
 dominatrice libera del mondo
 felice a l'ombra di tue sacre penne,
@@ -295,16 +298,18 @@ sarete un dì a le età misero esempio:
 vi guata e freme il regnator vicino
 de l'Istro, e anela a farne orrido scempio;
 e un sol Liberator dievvi il destino.    
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="foscolo2020020603">
+<text id="foscolo2020020603">
 <head>
     <title>A Luigia Pallavicini</title>
     <subtitle>Caduta da Cavallo</subtitle>
     <firstline>I balsami beati</firstline>
 </head>
 <body>
+<poetry>
 I balsami beati
     Per te Grazie apprestino,
     Per te i lini odorati
@@ -430,8 +435,9 @@ Ma ben piansero il giorno
     Fra le devote vergini,
     E al ciel salìa più bella
     Di Febo la sorella.    
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

@@ -14,7 +14,7 @@
 </workhead>
 <workbody>
 
-<prose id="larsent2005050638">
+<text id="larsent2005050638" skip-index="true">
 <head>
    <title>Indledning</title>
    <notes>
@@ -23,6 +23,7 @@
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
+<prose>
 
 ,,Oldtidens Døtre sang af Himlens Naade,
 lo mod Gudinden, som var født af Fraade,
@@ -36,10 +37,11 @@ For ca. 2500 Aar siden fødtes i Byen <i>Mytilene</i> paa Østkysten af Øen <i>
    Omkring 596 f. K. maatte Sapfo, vistnok paa Grund af politiske Uroligheder, flygte til Sicilien, men sine sidste Aar tilbragte hun i sin Fødeby Mytilene, omgivet af en skare Veninder, deriblandt Digterinden Erinna. Det er sikkert en Fabel, at hun paa Grund af ulykkelig Kærlighed til en Yngling <i>Faôn</i> fra Mytilene skal have endt sine Dage ved at styrte sig i Havet fra den leukadiske Klippe.
    En særlig Art Vers kaldes efter hende ,,det sapfiske Vers''. Det er bl.a. anvendt i hendes to bekendteste Digte, de, som indleder efterfølgende Oversættelser. Oehlenschläger og nogle andre har modificeret det (,,Evig Naturen skænker sine Gaver'', Salmen ,,O stærke Kriste, Menighedens Herre''). Det er dog hos disse kun Slutlinjen, der er ren sapfisk. De følgende Oversættelser benytter det oprindelige Versemaal.
    Af Tekster har jeg væsentlig benyttet J. M. Edmondes ,,Lyra Graeca'' (London, New York, 1922) og P. Petersen ,,Græsk Anthologi til Skolebrug'' (Kbh. 1873). Til yderligere Sammenligning har jeg haft Jacob Stählin ,,Sapphus melê, Gedichte der Sappho'' (Leipzig 1734).
-</body>
 </prose>
+</body>
+</text>
 
-<poem id="larsent2005050639">
+<text id="larsent2005050639">
 <head>
    <firstline>Luftige er mine Ord, nyttige dog jeg dem tror</firstline>
    <notes>
@@ -48,11 +50,13 @@ For ca. 2500 Aar siden fødtes i Byen <i>Mytilene</i> paa Østkysten af Øen <i>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Luftige er mine Ord, nyttige dog jeg dem tror.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2005050501">
+<text id="larsent2005050501">
 <head>
    <title>Til Afrodite</title>
    <firstline>Elskovs-snilde, evige Afrodite</firstline>
@@ -62,6 +66,7 @@ Luftige er mine Ord, nyttige dog jeg dem tror.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Elskovs-snilde, evige Afrodite,
 Barn af Zeus paa vidunderfarvet Trone!
 Tæm i Sorg og Tynge min Længsel aldrig!
@@ -96,10 +101,11 @@ Kom som før og stil du min tunge Kummer!
 Hvad min Higen vilde den elskte volde,
 lad det Gengæld møde! giv Sejr i Kampen,
          staa ved min Side!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2005050502">
+<text id="larsent2005050502">
 <head>
    <title>Til en ung Pige</title>
    <firstline>Lykkerig, ja Guderne lig jeg finder</firstline>
@@ -109,6 +115,7 @@ lad det Gengæld møde! giv Sejr i Kampen,
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Lykkerig, ja Guderne lig jeg finder.
 ham, du giver lov til at sidde nær dig,
 vendt imod dig, lyttende til din Læbes
@@ -129,8 +136,9 @@ Kroppen ryster, og som et Græs jeg blegner.
 Alt mit Ydre falmer, som have Døden
          rørt ved mit Hjerte.
 - - -
+</poetry>
 </body>
-</poem>
+</text>
 
 <section level="1">
 <head>
@@ -139,7 +147,7 @@ Alt mit Ydre falmer, som have Døden
 <content>
 
 
-<poem id="larsent2005050602">
+<text id="larsent2005050602">
 <head>
    <title>I</title>
    <firstline>Alle Stjerner rundt om den skønne Maane</firstline>
@@ -150,14 +158,16 @@ Alt mit Ydre falmer, som have Døden
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Alle Stjerner rundt om den skønne Maane
 hyller ind de skinnende klare Aasyn,
 naar dens fulde sølverne Glød i Natten
          lyser paa Jorden.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2005050603">
+<text id="larsent2005050603">
 <head>
    <title>II</title>
    <firstline>Nu er baade maanens Skive</firstline>
@@ -167,14 +177,16 @@ naar dens fulde sølverne Glød i Natten
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nu er baade maanens Skive
 og de syv Plejader nede,
 det er Midnat, Tiden iler,
 og jeg ligger her alene.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2005050604">
+<text id="larsent2005050604">
 <head>
    <title>III</title>
    <firstline>Tit hun mindes, hvordan engang vi leved</firstline>
@@ -184,6 +196,7 @@ og jeg ligger her alene.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 [Tit hun mindes], hvordan engang vi leved,
 da Gudinden i <w>dig</w> hun saa,
 og hun valgte din Sang for alle Sange.
@@ -203,10 +216,11 @@ lægger Sorgen sin Byrde tungt i Barmen.
 Og hun raaber og højt os to hun kalder,
 Natten tværs over Havets dyb
 tusindøjet<note>* J. M. Edmonds kompletterer det molesterede <w>polyô</w> til <w>polyôs</w>, mangeøret. Jeg antager <w>polyôps</w>, mangeøjet.</note> vor fælles Viden synger.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2005050605">
+<text id="larsent2005050605">
 <head>
    <title>IV</title>
    <subtitle>Til Anaktoria</subtitle>
@@ -218,15 +232,17 @@ tusindøjet<note>* J. M. Edmonds kompletterer det molesterede <w>polyô</w> til 
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Spredt man siger: Skønnest paa sorten Jord er
 Hestfolk, Fodfolk eller en Hær paa Søen.
 Men for mig det ypperste er to aabne,
          elskede Øjne.
 - - - 	 
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2005050606">
+<text id="larsent2005050606">
 <head>
    <title>V</title>
    <firstline>Sapfo - nej sandelig, saadan kan jeg ikke</firstline>
@@ -236,6 +252,7 @@ Men for mig det ypperste er to aabne,
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 - - -
 Sapfo - nej sandelig, saadan kan jeg ikke
 elske dig. Vis os dig nu i din vante Kraft!
@@ -251,10 +268,11 @@ og over denne atter din Purpurdragt,
 yderst Kappen, og øverst en Blomsterkrans,
 være din Krone ...............................
 - - -
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2005050607">
+<text id="larsent2005050607">
 <head>
    <title>VI</title>
    <subtitle>Til Klaïs</subtitle>
@@ -265,6 +283,7 @@ være din Krone ...............................
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 1.
 Ej er man vant
          i et Hus, hvor Muserne dyrkes,
@@ -275,10 +294,11 @@ Klage at høre,
 O hvor dejligt er mit Barn, lig et Foraars gyldne Blomster,
 er det unge Legems Ynder, <i>Klaïs</i>, som jeg elsker.
 - - -
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2005050608">
+<text id="larsent2005050608">
 <head>
    <title>VII</title>
    <subtitle>Til Afrodite</subtitle>
@@ -289,6 +309,7 @@ er det unge Legems Ynder, <i>Klaïs</i>, som jeg elsker.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 1.
 ............................... kom, o Kypris,
 fyld med Nektar Skaalernes gyldne Buge,
@@ -319,10 +340,11 @@ Slaa jer for Brystet, Piger,
 
 5.
 Ve for Adonis.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2005050609">
+<text id="larsent2005050609">
 <head>
    <title>VIII</title>
    <firstline>Kypris! og han fandt dig end mere spydig</firstline>
@@ -333,15 +355,17 @@ Ve for Adonis.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 - - - 
 Kypris<note>Afrodite.</note>! og han<note>Kharaxos.</note> fandt dig [end mere spydig]
 og [de andre] brystede sig [og sagde]:
 ,,Saadan fik da <i>Dorikha</i> sig paany den
       [ønskede] Elskov.''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2005050610">
+<text id="larsent2005050610">
 <head>
    <title>IX</title>
    <subtitle>Til Atthis</subtitle>
@@ -352,6 +376,7 @@ og [de andre] brystede sig [og sagde]:
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 1.
 <i>Atthis</i>, jeg elskede dig engang
          fjernt i en svunden Tid,
@@ -372,10 +397,11 @@ Eros, Lammeren, atter berører mig.
 han, Uhyret, som bittersød bøjer mig,
 ak, men <i>Atthis</i>, du hader at mindes mig,
 mens du vender din Hu mod <i>Andromeda.</i>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2005050611">
+<text id="larsent2005050611">
 <head>
    <title>X</title>
    <firstline>Jeg elsker yppigt svulmende Liv</firstline>
@@ -385,13 +411,15 @@ mens du vender din Hu mod <i>Andromeda.</i>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 .................................. Jeg elsker
 yppigt svulmende Liv, og det skinnende skønne
 er for mig, at min Elskov er kommen i Solen.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2005050612">
+<text id="larsent2005050612">
 <head>
    <title>XI</title>
    <firstline>Du kom hid. Og hvor gjorde du vel deri!</firstline>
@@ -401,15 +429,17 @@ er for mig, at min Elskov er kommen i Solen.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Du kom hid. Og hvor gjorde du vel deri!
 Ej jeg glemte dig. Nu blusser Længslens Ild
 op i mit Hjerte paany.  Velkommen!
 Hvor vi dog i en lang lang Tid var skilt,
 du og jeg fra hinanden borte.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2005050613">
+<text id="larsent2005050613">
 <head>
    <title>XII</title>
    <firstline>Kære Ven [jeg dig raader]</firstline>
@@ -419,14 +449,16 @@ du og jeg fra hinanden borte.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Kære Ven [jeg dig raader]:
 sov en yngre i Armene,
 intet Samliv udholder jeg
 med en yngre, jeg aldrende.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2005050614">
+<text id="larsent2005050614">
 <head>
    <title>XIII</title>
    <subtitle>Hektors og Andromakhes Bryllup</subtitle>
@@ -437,6 +469,7 @@ med en yngre, jeg aldrende.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 - - - -
 Dejligt Budskab iled til Idafolkene
 ..........................................,
@@ -458,10 +491,11 @@ Flokken af ældre Kvinder et Skrig opløftede,
 Mændene hæved en tonende herlig Takkesang
 op mod den Pilen langt udslyngende Lyregud<note>Apollon.</note>
 priste guddommelig Hektor og hans Andromakhe.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2005050615">
+<text id="larsent2005050615">
 <head>
    <title>XIV</title>
    <firstline>Min sødeste Mor, jeg mægter</firstline>
@@ -471,14 +505,16 @@ priste guddommelig Hektor og hans Andromakhe.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Min sødeste Mor, jeg mægter
          ej mer at virke dig Væven,
 en smidig Ynglings Elskov
          omspænder mig Afrodite.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2005050616">
+<text id="larsent2005050616">
 <head>
    <title>XV</title>
    <subtitle>Om en Brud</subtitle>
@@ -489,6 +525,7 @@ en smidig Ynglings Elskov
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 - - -
 Hele din Skabning er dejlig.
 
@@ -499,10 +536,11 @@ over det skønne Aasyn.
 Særlige Gaver skænkede dig
 Afrodite ......
 - - -
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2005050617">
+<text id="larsent2005050617">
 <head>
    <title>XVI</title>
    <firstline>Jomfruværen, Jomfruværen</firstline>
@@ -512,14 +550,16 @@ Afrodite ......
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jomfruværen, Jomfruværen -
       hvor gaar du hen fra <i>mig</i> nu?
 Ikke længer og aldrig mer,
       Brud, jeg kommer til <i>dig.</i>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2005050618">
+<text id="larsent2005050618">
 <head>
    <title>XVII</title>
    <firstline>Kære Brudgom, ved hvad skal</firstline>
@@ -529,14 +569,16 @@ Ikke længer og aldrig mer,
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Kære Brudgom, ved hvad skal
          jeg helst dig ligne?
 helst ved en slank ung Spire
          vil jeg dig ligne.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2005050619">
+<text id="larsent2005050619">
 <head>
    <title>XVIII</title>
    <firstline>Op nu, op nu med Taget</firstline>
@@ -546,6 +588,7 @@ helst ved en slank ung Spire
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Op nu, op nu med Taget,
       i Hymens navn,
 hæv det, Tømmermænd, hæv det
@@ -558,10 +601,11 @@ og han rager som Digter
       [i Hymens navn],
 den lesbiske over hver fremmed
       [i Hymens navn].
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2005050620">
+<text id="larsent2005050620">
 <head>
    <title>XIX</title>
    <firstline>Salige Brudgom, der fik</firstline>
@@ -571,16 +615,18 @@ den lesbiske over hver fremmed
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Salige Brudgom, der fik
       Brylluppet, som du vilde,
 der desuden fik den,
       Pige, du vilde have.
 Se hendes Sødme lyser
       ud af det skønne Ansigt.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2005050621">
+<text id="larsent2005050621">
 <head>
    <title>XX</title>
    <firstline>Blandingsskaalen var nyligt</firstline>
@@ -590,6 +636,7 @@ Se hendes Sødme lyser
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Blandingsskaalen var nylig
       fyldt med Ambrosia,
 Hermes greb Læderflasken,
@@ -598,10 +645,11 @@ Alle Mand løfted Skaalen
       op til en Libation,
 alle ønsked den bedste
       Lykke Brudgommen til.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2005050622">
+<text id="larsent2005050622">
 <head>
    <title>XXI</title>
    <firstline>Ret som det sødeste Æble</firstline>
@@ -612,6 +660,7 @@ alle ønsked den bedste
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 ...............
 ret som det sødeste Æble,
       siddende yderst paa Grenen,
@@ -628,10 +677,11 @@ ret som en Bjerg-Hyacint, der,
 ligger paa Jorden og viser
       stadig sit blomstrende Purpur -
 ...............
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2005050623">
+<text id="larsent2005050623">
 <head>
    <title>XXII</title>
    <firstline>Langs det svale Vand</firstline>
@@ -641,14 +691,16 @@ ligger paa Jorden og viser
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 ...................... langs det svale
 Vand gaar Vinden syngende gennem svaje
 Æblegrene, under hvis Bladeviften
       Døsighed daler.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2005050624">
+<text id="larsent2005050624">
 <head>
    <title>XXIII</title>
    <subtitle>Til Aftenstjernen</subtitle>
@@ -659,6 +711,7 @@ Vand gaar Vinden syngende gennem svaje
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 1.
 Hesperos, alting du bringer,
 hvad Dagningen lysende spredte,
@@ -668,10 +721,11 @@ bringer Barnet igen til dets Moder.
 2.
 Stjernen, skønnest af alle Stjerner ....
 - - -
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2005050625">
+<text id="larsent2005050625">
 <head>
    <title>XXIV</title>
    <firstline>Nattergalen, som Vaaren saa lifligt bebuder</firstline>
@@ -681,11 +735,13 @@ Stjernen, skønnest af alle Stjerner ....
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nattergalen, som Vaaren saa lifligt bebuder ......
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2005050626">
+<text id="larsent2005050626">
 <head>
    <title>XXV</title>
    <firstline>Areus siger, at han kan styre Afaistos med Vold.</firstline>
@@ -695,11 +751,13 @@ Nattergalen, som Vaaren saa lifligt bebuder ......
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Areus<note>Ares</note> siger, at han kan styre Afaistos<note>Hefaistos</note> med Vold.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2005050627">
+<text id="larsent2005050627">
 <head>
    <title>XXVI</title>
    <firstline>Dørens Vogter har syv Favnes Fødder</firstline>
@@ -709,13 +767,15 @@ Areus<note>Ares</note> siger, at han kan styre Afaistos<note>Hefaistos</note> me
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Dørens Vogter har syv Favnes Fødder,
 hver Sandal af fem Høv'ders Huder,
 ti Mands Flid fik rimpet dem sammen.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2005050628">
+<text id="larsent2005050628">
 <head>
    <title>XXVII</title>
    <firstline>For Fisker Pelagon</firstline>
@@ -725,14 +785,16 @@ ti Mands Flid fik rimpet dem sammen.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 For Fisker <i>Pelagon</i>
        oprejste hans Fader <i>Meniskos</i>
 Ruse og Aareblad
        til Minde om usle Kaar.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2005050629">
+<text id="larsent2005050629">
 <head>
    <title>XXVIII</title>
    <firstline>Her ligger Timas begravet</firstline>
@@ -742,14 +804,16 @@ Ruse og Aareblad
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Her ligger <i>Timas</i> begravet. Inden sit Bryllup hun døde,
 blev af Persefone ført ind i det mørke Gemak.
 Alle den dødes Veninder, fælles med hende i Ungdom,
 mejed med nyhvæsset Kniv bort deres dejlige Haar.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2005050630">
+<text id="larsent2005050630">
 <head>
    <title>XXIX</title>
    <subtitle>Strøtanker</subtitle>
@@ -760,6 +824,7 @@ mejed med nyhvæsset Kniv bort deres dejlige Haar.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 1.
 Raser Lidenskab vildt i Brystet,
 Tungen glammer som Vogter forgæves.
@@ -775,10 +840,11 @@ Foruden <i>Retsind (?)</i> er <i>Rigdom</i>
 ofte en farlig Fælle,
 men følges de enige ad,
 de fører mod højeste Tind.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2005050631">
+<text id="larsent2005050631">
 <head>
    <title>XXX</title>
    <subtitle>Personlige Ytringer</subtitle>
@@ -789,6 +855,7 @@ de fører mod højeste Tind.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 1.
 Bort med Honning saa vel som Bier. <note>* Vist et Ordspil, idet <w>méli</w> baade kan betyde Honning og ,,sød Tale'', ,,Smiger'', og <w>mélissa</w> baade Bi, ,,digterinde'' og en slags Nymfe.</note>
 
@@ -804,10 +871,11 @@ tværtimod; jeg ejer et barnligt Sind.
 4.
 Ej jeg prøver at strække min toalens Krop til Himlen.
 
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2005050632">
+<text id="larsent2005050632">
 <head>
    <title>XXXI</title>
    <firstline>Jeg sagde helst dig noget</firstline>
@@ -818,6 +886,7 @@ Ej jeg prøver at strække min toalens Krop til Himlen.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <i>Alkaios</i>
 Jeg sagde helst dig noget, men Skamfuldhed
 forbød det ..............
@@ -827,10 +896,11 @@ I Fald du havde ædelt og skønt Begær
 og ej din Tunge brygged paa slette Ord,
 vist ej dit Ansigt røbed Blusel,
 men du kom frem med frimodig Tale.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2005050633">
+<text id="larsent2005050633">
 <head>
    <title>XXXII</title>
    <subtitle>[Om og til Khariterne (Gratierne)]</subtitle>
@@ -841,6 +911,7 @@ men du kom frem med frimodig Tale.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 1.
 En Krans til dit Haar, o <i>Dika</i>,
       - de dejligt udslaaede Lokker -,
@@ -854,10 +925,11 @@ bort deres Øjne de vender
 2.
 Rosenarm-fagre kyske Khariter,
       Zeus's Jomfruer, kom!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2005050634">
+<text id="larsent2005050634">
 <head>
    <title>XXXIII</title>
    <firstline>Naar du er død, vil ingen mere</firstline>
@@ -867,6 +939,7 @@ Rosenarm-fagre kyske Khariter,
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Naar du er død, vil ingen mere
       nogen Sinde dig mindes,
 thi af Pieriens Roser du fik
@@ -875,10 +948,11 @@ men usynlig du evig vil sværme
       mellem de andre døde
 dybt under Jorden i Hades' Hus,
       ænset af ingen Sjæl.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2005050635">
+<text id="larsent2005050635">
 <head>
    <title>XXXIV</title>
    <firstline>Fjernt i fordums Tid</firstline>
@@ -888,16 +962,18 @@ dybt under Jorden i Hades' Hus,
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Fjernt i fordums Tid
       dansede Kretas Piger
 fint paa taktfast Fod
       rundt om et herligt Alter.
 Græsset maatte der
       ofre de skønne Blomster.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="larsent2005050636">
+<text id="larsent2005050636">
 <head>
    <title>XXXV</title>
    <firstline>Dersom Zeus vilde give Blomsternes</firstline>
@@ -908,6 +984,7 @@ Græsset maatte der
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Dersom Zeus vilde give Blomsternes
 skønne Flok en Dronning, blev Rosen vel
 kronet til Blomsternes Herskerinde.
@@ -918,10 +995,11 @@ Elskov den aander, er Afrodites
 Ven, som dufter Pigen fra Haaret,
 Vellyst breder den, og gennem bladene
 aander Zefyr liflig og lattermild.
+</poetry>
 </body>
-</poem>
+</text>
 
-<prose id="larsent2005050637">
+<text id="larsent2005050637" skip-index="true">
 <head>
    <title>Efterskrift</title>
    <notes>
@@ -930,9 +1008,11 @@ aander Zefyr liflig og lattermild.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<prose>
 Denne Bog indeholder i alt væsentlig, hvad der er bevaret af Sapfos Digtning. Der findes derudover enkelte Brudstykker af tvivlsom Herkomst og en del saa molesterede, at de ingen sammenhængende Mening giver. Disse har kun til en vis Grad Interesse for Sprogforskningen.
-</body>
 </prose>
+</body>
+</text>
 
 </content>
 </section>

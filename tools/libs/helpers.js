@@ -83,7 +83,7 @@ const replaceDashes = (html) => {
   );
 };
 
-const htmlToXml = (html, collected, isPoetry = false) => {
+const htmlToXml = (html, collected, isPoetry) => {
   if (html == null) {
     return null;
   }
@@ -242,6 +242,7 @@ const htmlToXml = (html, collected, isPoetry = false) => {
       return [l];
     }
   });
+
   return lines;
 };
 

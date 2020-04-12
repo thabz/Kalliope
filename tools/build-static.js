@@ -38,6 +38,7 @@ const {
   getChildren,
   getChildByTagName,
   getChildrenByTagName,
+  getChildrenByTagNames,
   getElementByTagName,
   getElementsByTagNames,
   safeGetInnerXML,
@@ -335,7 +336,7 @@ const handle_text = async (
     // Dette er ikke nødvendigvis en fejl.
     console.log(`fdirs/${poetId}/${workId}: teksten ${textId} mangler source.`);
   }
-  let content_html = null;
+  let blocks = null;
   let has_footnotes = false;
   let toc = null;
   if (textType === 'section') {
@@ -348,10 +349,24 @@ const handle_text = async (
   } else {
     // prose or poem
     const body = getChildByTagName(text, 'body');
-    const rawBody = safeGetInnerXML(body);
-    content_html = htmlToXml(rawBody, collected, textType === 'poem');
-    has_footnotes =
-      rawBody.indexOf('<footnote') !== -1 || rawBody.indexOf('<note') !== -1;
+    blocks = getChildrenByTagNames(body, ['poetry', 'prose', 'quote']).map(
+      (block) => {
+        const type = tagName(block);
+        const rawBlock = safeGetInnerXML(block);
+        has_footnotes |=
+          rawBlock.indexOf('<footnote') !== -1 ||
+          rawBlock.indexOf('<note') !== -1;
+        const fontSize = safeGetAttr(block, 'font-size');
+        const marginLeft = safeGetAttr(block, 'margin-left');
+        const marginRight = safeGetAttr(block, 'margin-right');
+        const options = { fontSize, marginLeft, marginRight };
+        return {
+          type,
+          lines: htmlToXml(rawBlock, collected, type === 'poetry'),
+          options,
+        };
+      }
+    );
   }
   mkdirp.sync(foldername);
   const text_data = {
@@ -367,7 +382,6 @@ const handle_text = async (
       linktitle: replaceDashes(linktitle.title),
       subtitles,
       suptitles,
-      is_prose: tagName(text) === 'prose',
       text_type: textType,
       has_footnotes,
       notes: get_notes(head, collected),
@@ -382,7 +396,7 @@ const handle_text = async (
         collected
       ),
       content_lang: poet.lang,
-      content_html,
+      blocks,
       toc,
     },
   };
@@ -404,7 +418,7 @@ const handle_work = async (work) => {
     await Promise.all(
       getChildren(section).map(async (part) => {
         const partName = tagName(part);
-        if (partName === 'poem') {
+        if (partName === 'text') {
           const textId = safeGetAttr(part, 'id');
           const head = getChildByTagName(part, 'head');
           const firstline = extractTitle(head, 'firstline');
@@ -426,14 +440,17 @@ const handle_work = async (work) => {
           if (toctitle == null) {
             throw `${textId} mangler toctitle, firstline og title i ${poetId}/${workId}.xml`;
           }
-          lines.push({
-            id: textId,
-            work_id: workId,
-            lang: collected.poets.get(poetId).lang,
-            title: replaceDashes(indextitle.title),
-            firstline:
-              firstline == null ? null : replaceDashes(firstline.title),
-          });
+          if (firstline != null) {
+            // Kun digte skal indekseres
+            lines.push({
+              id: textId,
+              work_id: workId,
+              lang: collected.poets.get(poetId).lang,
+              title: replaceDashes(indextitle.title),
+              firstline:
+                firstline == null ? null : replaceDashes(firstline.title),
+            });
+          }
           toc.push({
             type: 'text',
             id: textId,
@@ -531,7 +548,7 @@ const handle_work = async (work) => {
 
   // Create function to resolve prev/next links in texts
   const resolve_prev_next = (function () {
-    const items = getElementsByTagNames(workbody, ['poem', 'prose', 'section'])
+    const items = getElementsByTagNames(workbody, ['text', 'section'])
       .filter((part) => safeGetAttr(part, 'id') != null)
       .map((part) => {
         const textId = safeGetAttr(part, 'id');
@@ -612,8 +629,7 @@ const works_first_pass = (collected) => {
         );
       }
       const workTexts = getElementsByTagNames(workBody, [
-        'poem',
-        'prose',
+        'text',
         'section',
         'subwork',
       ]);

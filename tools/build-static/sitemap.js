@@ -9,11 +9,11 @@ const {
   getChildByTagName,
 } = require('./xml.js');
 
-const build_sitemap_xml = collected => {
+const build_sitemap_xml = (collected) => {
   safeMkdir(`static/sitemaps`);
 
   const write_sitemap = (filename, urls) => {
-    let xmlUrls = urls.map(url => {
+    let xmlUrls = urls.map((url) => {
       return `  <url><loc>${url}</loc></url>`;
     });
     let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
@@ -24,7 +24,7 @@ const build_sitemap_xml = collected => {
   };
 
   let urls = [];
-  ['da', 'en'].forEach(lang => {
+  ['da', 'en'].forEach((lang) => {
     urls.push(`https://kalliope.org/${lang}/`);
     urls.push(`https://kalliope.org/${lang}/keywords`);
     collected.keywords.forEach((keyword, keywordId) => {
@@ -42,12 +42,12 @@ const build_sitemap_xml = collected => {
   collected.poets.forEach((poet, poetId) => {
     const filenames = collected.workids
       .get(poetId)
-      .map(workId => `fdirs/${poetId}/${workId}.xml`);
+      .map((workId) => `fdirs/${poetId}/${workId}.xml`);
     if (!isFileModified(...filenames)) {
       return;
     }
     const poet_text_urls = [];
-    ['da', 'en'].forEach(lang => {
+    ['da', 'en'].forEach((lang) => {
       if (poet.has_works || poet.has_artwork) {
         poet_text_urls.push(`https://kalliope.org/${lang}/works/${poetId}`);
       }
@@ -59,7 +59,7 @@ const build_sitemap_xml = collected => {
           `https://kalliope.org/${lang}/texts/${poetId}/first`
         );
       }
-      collected.workids.get(poetId).forEach(workId => {
+      collected.workids.get(poetId).forEach((workId) => {
         const work = collected.works.get(`${poetId}/${workId}`);
         if (work.has_content) {
           poet_text_urls.push(
@@ -74,16 +74,14 @@ const build_sitemap_xml = collected => {
           if (doc == null) {
             console.log("Couldn't load", filename);
           }
-          getElementsByTagNames(doc, ['poem', 'prose', 'section']).forEach(
-            part => {
-              const textId = safeGetAttr(part, 'id');
-              if (textId != null) {
-                poet_text_urls.push(
-                  `https://kalliope.org/${lang}/text/${textId}`
-                );
-              }
+          getElementsByTagNames(doc, ['text', 'section']).forEach((part) => {
+            const textId = safeGetAttr(part, 'id');
+            if (textId != null) {
+              poet_text_urls.push(
+                `https://kalliope.org/${lang}/text/${textId}`
+              );
             }
-          );
+          });
         }
       });
     });
@@ -91,11 +89,11 @@ const build_sitemap_xml = collected => {
   });
 
   const sitemaps_urls_xml = Array.from(collected.poets.values())
-    .filter(poet => poet.has_works || poet.has_artwork)
-    .map(poet => {
+    .filter((poet) => poet.has_works || poet.has_artwork)
+    .map((poet) => {
       return `https://kalliope.org/static/sitemaps/${poet.id}.xml`;
     })
-    .map(url => {
+    .map((url) => {
       return `  <sitemap><loc>${url}</loc></sitemap>`;
     });
   sitemaps_urls_xml.push(

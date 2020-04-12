@@ -33,12 +33,14 @@ const create_poet_square_thumb = (poetId, square_path) => {
 let _all_poet_ids = null;
 const all_poet_ids = () => {
   if (!_all_poet_ids) {
-    _all_poet_ids = fs.readdirSync('fdirs').filter(p => p.indexOf('.') === -1);
+    _all_poet_ids = fs
+      .readdirSync('fdirs')
+      .filter((p) => p.indexOf('.') === -1);
   }
   return _all_poet_ids;
 };
 
-const build_poets_json = collected => {
+const build_poets_json = (collected) => {
   // Returns {has_poems: bool, has_prose: bool,
   //  has_texts: bool, has_works: bool}
   const hasTexts = (poetId, workIds) => {
@@ -52,7 +54,7 @@ const build_poets_json = collected => {
         throw `fdirs/${poetId}/${workId}.xml kan ikke parses.`;
       }
       if (!has_poems) {
-        has_poems = getElementsByTagName(doc, 'poem').length > 0;
+        has_poems = getElementsByTagName(doc, 'poetry').length > 0;
       }
       if (!has_prose) {
         has_prose = getElementsByTagName(doc, 'prose').length > 0;
@@ -74,7 +76,7 @@ const build_poets_json = collected => {
     : new Map(loadCachedJSON('collected.poets') || []);
   const force_reload = collected_poets.size === 0;
   let found_changes = false;
-  all_poet_ids().forEach(id => {
+  all_poet_ids().forEach((id) => {
     const infoFilename = `fdirs/${id}/info.xml`;
     if (!fs.existsSync(infoFilename)) {
       throw new Error(`Missing info.xml in fdirs/${poetId}.`);
@@ -110,8 +112,8 @@ const build_poets_json = collected => {
     if (has_portraits) {
       const portraitsDoc = loadXMLDoc(`fdirs/${id}/portraits.xml`);
       const squares = getElementsByTagName(portraitsDoc, 'picture')
-        .map(p => safeGetAttr(p, 'square-src'))
-        .filter(s => s != null);
+        .map((p) => safeGetAttr(p, 'square-src'))
+        .filter((s) => s != null);
       if (squares.length > 0) {
         square_portrait = create_poet_square_thumb(id, squares[0]);
       }
@@ -213,10 +215,10 @@ const build_poets_json = collected => {
   return collected_poets;
 };
 
-const build_poets_by_country_json = collected => {
+const build_poets_by_country_json = (collected) => {
   let poetsByCountry = new Map();
   let hasChangesByCountry = new Map();
-  collected.poets.forEach(poet => {
+  collected.poets.forEach((poet) => {
     let list = poetsByCountry.get(poet.country) || [];
     list.push(poet);
     poetsByCountry.set(poet.country, list);
