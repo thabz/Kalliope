@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="birkedalu" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Uffe</firstname>
+    <lastname>Birkedal</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1852-06-17</date>
+      <place>Ryslinge</place>
+    </born>
+    <dead>
+      <date>1931-05-23</date>
+      <place>Ringe</place>
+    </dead>
+  </period>
+  
+  <works>1884,1891,1905,1906,1908,1909,1913</works>
+</person>
