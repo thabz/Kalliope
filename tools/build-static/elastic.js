@@ -58,10 +58,11 @@ const update_elasticsearch = collected => {
           }
           const head = getChildByTagName(text, 'head');
           const body = getChildByTagName(text, 'body');
-          const title =
+          const title = (
             safeGetText(head, 'linktitle') ||
             safeGetText(head, 'title') ||
-            safeGetText(head, 'firstline');
+            safeGetText(head, 'firstline')
+          ).replace(/<num>.*<\/num>/, '');
           const keywords = safeGetText(head, 'keywords');
           let subtitles = null;
           const subtitle = getChildByTagName(head, 'subtitle');
