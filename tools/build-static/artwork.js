@@ -1,4 +1,4 @@
-const { htmlToXml } = require('../libs/helpers.js');
+const { fileExists, htmlToXml } = require('../libs/helpers.js');
 const {
   isFileModified,
   loadCachedJSON,
@@ -34,8 +34,9 @@ const build_artwork = async collected => {
       const portraitsFile = `fdirs/${personId}/portraits.xml`;
 
       if (
-        personType === 'artist' &&
-        (force_reload || isFileModified(artworkFilename))
+        force_reload ||
+        fileExists(artworkFilename) ||
+        isFileModified(artworkFilename)
       ) {
         // Fjern eksisterende fra cache (i tilfælde af id er slettet)
         Array.from(collected_artwork.keys())
