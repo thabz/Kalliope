@@ -4,7 +4,7 @@ const {
   safeGetText,
   safeGetAttr,
   getChildByTagName,
-  getChildrenByTagNames,
+  getElementsByTagNames,
   getChildrenByTagName,
   getElementByTagName,
   safeGetInnerXML,
@@ -51,7 +51,7 @@ const update_elasticsearch = collected => {
         if (workBody == null) {
           return;
         }
-        getChildrenByTagNames(workBody, ['text', 'section']).forEach(text => {
+        getElementsByTagNames(workBody, ['text', 'section']).forEach(text => {
           const textId = safeGetAttr(text, 'id');
           if (tagName(text) === 'section' && textId == null) {
             return;
@@ -59,9 +59,9 @@ const update_elasticsearch = collected => {
           const head = getChildByTagName(text, 'head');
           const body = getChildByTagName(text, 'body');
           const title = (
-            safeGetText(head, 'linktitle') ||
-            safeGetText(head, 'title') ||
-            safeGetText(head, 'firstline')
+            safeGetInnerXML(getChildByTagName(head, 'linktitle')) ||
+            safeGetInnerXML(getChildByTagName(head, 'title')) ||
+            safeGetInnerXML(getChildByTagName(head, 'firstline'))
           ).replace(/<num>.*<\/num>/, '');
           const keywords = safeGetText(head, 'keywords');
           let subtitles = null;
@@ -103,6 +103,7 @@ const update_elasticsearch = collected => {
             work: workData,
             text: textData,
           };
+          //console.log(`Putting textId ${textId}: ${title}`);
           elasticSearchClient.create('kalliope', 'text', textId, data);
         });
       });
