@@ -8,7 +8,7 @@
 </workhead>
 <workbody>
 
-<poem id="grundtvig2002010101">
+<text id="grundtvig2002010101">
 <head>
    <title>Willemoes</title>
    <toctitle>Willemoes</toctitle>
@@ -25,6 +25,7 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Kommer hid, I Piger smaa!
 Strængen vil jeg røre,
 Taarer skal i Øiet staae,
@@ -104,11 +105,12 @@ i de stille Lunde;
 sjunger den ved breden Strand,
 naar hen over hviden Sand
 Voven sagte triller.
+</poetry>
 </body>
-</poem>
+</text>
 
 
-<poem id="grundtvig2019122905">
+<text id="grundtvig2019122905">
 <head>
     <title>Jørgen Sorterup</title>
     <firstline>O, Du gamle, kække Skjald!</firstline>
@@ -118,6 +120,7 @@ Voven sagte triller.
     <keywords>sorterup</keywords>
 </head>
 <body>
+<poetry>
 <nonum><right><small>Han haver sig baaret en Søn under Ø,</small></right></nonum>
 <nonum><right><small>Som haver den Skebne, han aldrig skal dø,</small></right></nonum>
 <nonum><right><small>Og aldrig sin Klædning opslide.</small></right></nonum>
@@ -194,8 +197,9 @@ Glæd Dig, Skjald! den Stund er nær
 Baal nedstyrtes, Herren vinder,
 Alt sig hvæsser Danmarks Sværd,
 Hjertet higer, Gud det finder.    
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

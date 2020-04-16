@@ -20,7 +20,7 @@
 </workhead>
 <workbody>
     
-<poem id="winther2018090301" variant="winther2018081118">
+<text id="winther2018090301" variant="winther2018081118">
 <head>
     <title>Den 18de Aug. 1842</title>
     <subtitle>(Med et lille Basrelief, en Sangerinde, hvem en Amorin støder en Piil i Brystet)</subtitle>
@@ -32,6 +32,7 @@
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Der sidder hun, og for en Stund
 Hun lader Lyren taus neddale,
 Mens med et Smiil omkring sin Mund
@@ -71,10 +72,11 @@ Lad da igjen fra denne Dag
 Din Sangfugl frit af Buret svæve,
 At den med kraftigt Vingeslag
 Dig maa fra Livets Taager hæve.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090302" variant="winther2018081119">
+<text id="winther2018090302" variant="winther2018081119">
 <head>
     <title>Tak for Blomsterne</title>
     <subtitle>Til Beppina</subtitle>
@@ -83,6 +85,7 @@ Dig maa fra Livets Taager hæve.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Naar her i By jeg sidder
 Som en Kylling i et Æg,
 Og hører Lærkens Qvidder
@@ -135,10 +138,11 @@ For Vandring gjennem Moserne,
 I Skov, ved Søens Bred,
 For ,,<w>Cachucha</w>'' og for Roserne
 Og al anden Venlighed!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090303" variant="winther2018081120">
+<text id="winther2018090303" variant="winther2018081120">
 <head>
     <title>Italiænsk Genrebillede</title>
     <subtitle>Efter Catels Maleri</subtitle>
@@ -148,6 +152,7 @@ Og al anden Venlighed!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Mildt en Sommerluftning svæver
 Op fra Havets mørke Blaa;
 Stolt Cypressens Taarn sig hæver,
@@ -252,10 +257,11 @@ Først en Hvisken lød, saa Latter
 Muntert op fra Stien klang; -
 Og jeg flytted Staven atter
 Paa min skjønne Pilgrimsgang.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090304" variant="winther2018081121">
+<text id="winther2018090304" variant="winther2018081121">
 <head>
     <title>For Studenter-Sangforeningen</title>
     <firstline>Lad Tonerne svinge</firstline>
@@ -263,6 +269,7 @@ Paa min skjønne Pilgrimsgang.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Lad Tonerne svinge
 Sig op mod det Blaae;
 Thi Sangen har Vinge
@@ -316,10 +323,11 @@ De sangrige Piger
 Os favne saa ømt,
 Og Qvalen bortviger,
 Som havde vi drømt.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090305" variant="winther2003030501">
+<text id="winther2018090305" variant="winther2003030501">
 <head>
    <title>Forord</title>
    <subtitle>(1848)</subtitle>
@@ -328,6 +336,7 @@ Som havde vi drømt.
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Alt længe disse Blade laae
 Hos mig, saa dybt i Gjemmet;
 Nu vil de ud i Verden gaae,
@@ -382,10 +391,11 @@ Da vaagner alle Fugle nok,
 Som laae i Vinterdvale
 Og da tør og min lille Flok
 Til Hjertet atter tale.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090306" variant="winther1999070726">
+<text id="winther2018090306" variant="winther1999070726">
 <head>
    <title>Til en Digter</title>
    <firstline>Hvis Du vil synge Dig til Glæde</firstline>
@@ -397,14 +407,18 @@ Til Hjertet atter tale.
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<nonum><right><small>,,Hvor Mænd i Atlashoser gaae,</small></right></nonum>
-<nonum><right><small>Er ei vor Plads.''</small></right></nonum>
+<quote margin-left="3rem" font-size="small">
+,,Hvor Mænd i Atlashoser gaae,
+Er ei vor Plads.''
 
-<nonum><right><small>,,Men det skal være Folkets Fryd og Taarer,</small></right></nonum>
-<nonum><right><small>Som klinger i den danske Digters Røst.''</small></right></nonum>
-<nonum><right><small><w>Poul Møller</w></small></right></nonum>
+,,Men det skal være Folkets Fryd og Taarer,
+Som klinger i den danske Digters Røst.''
+<right><w>Poul Møller</w></right>
+</quote>
 
+<poetry>
 ---
+
 Hvis Du vil synge Dig til Glæde,
 Og ærlig Tak for Sangen faae,
 Skal ikke Du i Hallen træde,
@@ -444,10 +458,11 @@ Som har berøvet mig Forstanden,
 Jeg først i Vuggegave fik,
 Men skjænket mig en bedre anden
 I Kjærlighedens Trolddoms-Drik.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090307" variant="winther2017100261">
+<text id="winther2018090307" variant="winther2017100261">
 <head>
    <title>Hilsener paa Nytaarsdag</title>
    <firstline>Som Janus, Ryg mod Ryg, vi maae</firstline>
@@ -455,6 +470,7 @@ I Kjærlighedens Trolddoms-Drik.
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center><b>Til en Fader</b></center></nonum>
 
 Som Janus, Ryg mod Ryg, vi maae
@@ -675,10 +691,11 @@ Et Forlag, som er ret pr. Kasse,
 Begeistrings Bæger, fyldt til Randen,
 Taalmodighed og Been i Panden
 Mod Recensenter og Hveranden.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090308" variant="winther1999070727">
+<text id="winther2018090308" variant="winther1999070727">
 <head>
    <title>Natten</title>
    <subtitle>(Thorvaldsens Basrelief)</subtitle>
@@ -691,6 +708,7 @@ Mod Recensenter og Hveranden.
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 End er det Nat! - i underlige Drømme
 Indhyllet og i Mørkets svale Slør
 Hun blidt og sagte - sagte sees at svømme
@@ -717,10 +735,11 @@ Den Anden vaagne skal og svæve
 Fortrøstningsfuld, og ingen anden Graad
 Der fødes skal, end Morgnens Perler klare,
 Som Dagens Roser friske skal bevare.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090309" variant="winther2017100278">
+<text id="winther2018090309" variant="winther2017100278">
 <head>
    <title>Til en dansk Bog</title>
    <firstline>Hav Tak, Du Krands af Tanker</firstline>
@@ -728,6 +747,7 @@ Som Dagens Roser friske skal bevare.
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hav Tak, du Krands af Tanker,
 Af Billeder og Ord,
 Af Klang og Blomsterranker,
@@ -772,10 +792,11 @@ Men hvad min Aand udspandt sig
 Af Dig, <w>det</w> nævnes ei;
 Jeg troer, ei Nogen fandt sig
 Det Samme <w>der</w>, som jeg.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090310" variant="winther2017100277">
+<text id="winther2018090310" variant="winther2017100277">
 <head>
    <title>Duetto</title>
    <firstline>Luften suser alt i Skoven</firstline>
@@ -783,6 +804,7 @@ Det Samme <w>der</w>, som jeg.
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center><b>Afsked</b></center></nonum>
 
 Luften suser alt i Skoven,
@@ -855,10 +877,11 @@ Jeg tør trodse hver Qval med Foragt!
 Hvert Secund, som Du skjænker mig, iler
 Som en Engel, der lytter og smiler
 Til vor Fryd og vor hellige Pagt!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090311" variant="winther2017100276">
+<text id="winther2018090311" variant="winther2017100276">
 <head>
    <title>Donizetti og Weyse</title>
    <firstline>Hvad vil den Strøm af Toner vel</firstline>
@@ -867,6 +890,7 @@ Til vor Fryd og vor hellige Pagt!
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvad vil den Strøm af Toner vel,
 Som ængster grufuldt her min Sjæl?
 Hvad har jeg gjort, at jeg har sænket
@@ -1043,10 +1067,11 @@ Saa rigt paa Trøst for Hjertets Trængsel,
 Har manet for vor Tanke frem
 Den søde Fred, som, fri fra Længsel, 
 Hans Sjæl nu har i Evighedens Hjem!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090312" variant="winther1999070728">
+<text id="winther2018090312" variant="winther1999070728">
 <head>
    <title>Sommerlyst</title>
    <firstline>Nu kan vi dandse!</firstline>
@@ -1054,6 +1079,7 @@ Hans Sjæl nu har i Evighedens Hjem!
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nu kan vi dandse!
 Lystigt i Sommerluft,
 Binde vi Krandse,
@@ -1080,10 +1106,11 @@ Yndige Sommer!
 Næppe du kommer,
 Smilende, rødmende, liflig men kort,
 Saa iler du bort!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090313" variant="winther1999070729">
+<text id="winther2018090313" variant="winther1999070729">
 <head>
    <title>En Moder til sin Søn</title>
    <firstline>Naar Natten ret er stille</firstline>
@@ -1091,6 +1118,7 @@ Saa iler du bort!
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Naar Natten ret er stille
 Og Alting er i Ro,
 Min Søn, min søde, lille,
@@ -1170,10 +1198,11 @@ Jeg folder mine Hænder
 For Dig, min Smertes Søn!
 For Dig til Gud jeg sender
 Hver Stund mit Hjertes Bøn!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090314" variant="winther2017100274">
+<text id="winther2018090314" variant="winther2017100274">
 <head>
    <title>Vintervisite</title>
    <firstline>Der var ingen Stjerner, førend</firstline>
@@ -1181,6 +1210,7 @@ Hver Stund mit Hjertes Bøn!
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Der var ingen Stjerner, førend
 Han naaede til Hendes Bo;
 Men knap fik Hun aabnet Døren,
@@ -1200,10 +1230,11 @@ Det var - det Gud sig forbarme! —
 Saa sørgeligt, koldt og saa raat;
 Men i Hendes favnende Arme
 Han fandt det saa yndigt og godt!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090315" variant="winther2017100273">
+<text id="winther2018090315" variant="winther2017100273">
 <head>
    <title>Under Krigen</title>
    <firstline>Saavidt som Himlens Stjerneloft sig hvælver</firstline>
@@ -1211,6 +1242,7 @@ Han fandt det saa yndigt og godt!
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Saavidt som Himlens Stjerneloft sig hvælver
 En skummel Tordensky sig vælter frem;
 Det Gamle brister og det Nye skjælver,
@@ -1231,10 +1263,11 @@ O, lad som frugtbar Regn dem dybt sig trænge,
 Hvor Folkets Hjerte banker, stærkt og fast;
 Da vandes Friheds Eeg og Fredens Palme,
 Hvis Stammer staae, hvis Løv skal aldrig falme!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090316" variant="winther2017100272">
+<text id="winther2018090316" variant="winther2017100272">
 <head>
    <title>En ny og lystelig Vise</title>
    <subtitle>
@@ -1247,6 +1280,7 @@ Hvis Stammer staae, hvis Løv skal aldrig falme!
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Saa Mange, som I er ombord,
     Sing, Sang, Singsaljera!
 Hør, Manne! her et sindigt Ord!
@@ -1314,10 +1348,11 @@ Saa taer vi vel mod Tydsken peent.
 
 Op, Kammerater! Skud paa Skud —
 For Land, for Konge og — med Gud!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090317" variant="winther1999070730">
+<text id="winther2018090317" variant="winther1999070730">
 <head>
    <title>Hun til Ham</title>
    <firstline>Som i en Sky indhyllet</firstline>
@@ -1325,6 +1360,7 @@ For Land, for Konge og — med Gud!
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Som i en Sky indhyllet, -
 Det er nu saa din Skik -
 Du drukner, taus fortryllet
@@ -1359,10 +1395,11 @@ O, giv den Stakkel Vinge,
 Lad Skyen skilles ad,
 Lad Ordets Due bringe
 <i>Min</i> Sjæl et Rosenblad!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090318" variant="winther1999070731">
+<text id="winther2018090318" variant="winther1999070731">
 <head>
    <title>Amor Rex</title>
    <firstline>Hvem er blandt alle Guder</firstline>
@@ -1370,6 +1407,7 @@ Lad Ordets Due bringe
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvem er blandt alle Guder,
 Den største vel i Magt?
 Hvis Vælde sig bebuder
@@ -1432,10 +1470,11 @@ Hvert Hjerte faaer han lænket,
 Hvor han sin Piil har skudt;
 Han hersker uindskrænket, -
 Hans Magt er absolut.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090319" variant="winther2017100269">
+<text id="winther2018090319" variant="winther2017100269">
 <head>
    <title>Laura Jensen</title>
    <subtitle>Fød Lytthans</subtitle>
@@ -1444,6 +1483,7 @@ Hans Magt er absolut.
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nu hviler hun i Høien hist,
 Hvor Linden end med nøgen Qvist
 Mod Himlens Bue peger;
@@ -1506,10 +1546,11 @@ Ved hendes Sovekammer;
 Den synger — ak, den ønsked kun
 At døve, for en flygtig Stund,
 O, Liv! din bittre Jammer!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090320" variant="winther2017100268">
+<text id="winther2018090320" variant="winther2017100268">
 <head>
    <title>Peter Oluf Brøndsted</title>
    <firstline>Mens Skovens Træer sig afklæde</firstline>
@@ -1523,6 +1564,7 @@ O, Liv! din bittre Jammer!
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Mens Skovens Træer sig afklæde
 Og dække Alt med deres Dragt,
 Jeg vil en stille Vandring træde
@@ -1585,10 +1627,11 @@ Og hun, som er saa rig paa Gave,
 Og her i Livet var Dig kjær,
 Har skjænket mig af Sangens Have
 Det Blad, jeg venligt lægger her!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090321" variant="winther2017100267">
+<text id="winther2018090321" variant="winther2017100267">
 <head>
    <title>Hanne Weidemann</title>
    <firstline>Lyksalige! Du svæved bort fra Mulmet</firstline>
@@ -1596,6 +1639,7 @@ Det Blad, jeg venligt lægger her!
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Lyksalige! Du svæved bort fra Mulmet
 Til Lysets evigklare Helligdom!
 I Engles bløde Favn din Qval er dulmet
@@ -1617,10 +1661,11 @@ O, deel med os! omsvæv med Trøst hvert Hjerte,
 Som ved din Engleslugt fra Jorden leed,
 Og lad, skjøndt bøiede i Smertens Daab,
 Din Aand os ane et kraftigt Haab!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090322" variant="winther2017100266">
+<text id="winther2018090322" variant="winther2017100266">
 <head>
    <title>Til Jomfru A. Zeuthen</title>
    <subtitle>
@@ -1635,6 +1680,7 @@ Din Aand os ane et kraftigt Haab!
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Her, hvor paa fromme Vandring, jubelkrandset,
 Tankefuld Du en Stund din Fod har standset,
 Samles om Dig, liig klare Høitidskerter
@@ -1664,10 +1710,11 @@ O, saa modtag da venligt, som Du pleier,
 Hvad ei Alverdens Skatte Dig opveier,
 Her fra vort Hjertes Dyb den evigsamme
                 Hellige Flamme!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090323" variant="winther2017100265">
+<text id="winther2018090323" variant="winther2017100265">
 <head>
    <title>Til en Bedstemoder</title>
    <subtitle>Fra Børnebørn</subtitle>
@@ -1676,6 +1723,7 @@ Her fra vort Hjertes Dyb den evigsamme
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 See, her vi samles til din Fødselsfest
 Med fromme Tanker og med Sange;
 Og skjøndt Veemodighed er ogsaa Gjæst,
@@ -1705,10 +1753,11 @@ Dog — i din Længsel — find blandt os dit Ly,
         Her i vort Bryst
         Boer, Dig til Trøst,
 En evig Kjærligbeds Skjærsommer!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090324" variant="winther2017100264">
+<text id="winther2018090324" variant="winther2017100264">
 <head>
    <title>Farvel</title>
    <subtitle>
@@ -1726,6 +1775,7 @@ En evig Kjærligbeds Skjærsommer!
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Saa Du vil drage fra vor gamle Stad
 Og slaae Paulun paa Lollands Vange?
 O, fyld dit Bæger, for vi skilles ad,
@@ -1765,10 +1815,11 @@ Sin stærke Skjerm om Eders Vandring slaae;
         Han lede frem
         Huldt alle Fem,
 Til Aftenstjernen mildt oprinder!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090325" variant="winther2017100263">
+<text id="winther2018090325" variant="winther2017100263">
 <head>
    <title>Til Kronprinsen</title>
    <subtitle>(1847)</subtitle>
@@ -1777,6 +1828,7 @@ Til Aftenstjernen mildt oprinder!
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Naar sig ved Bægret leired ret
 De stærke Mænd i Norden,
 At mindes Drotten og hans Æt
@@ -1821,10 +1873,11 @@ Her Festpokalen paa sin Gang
 I Kreds, som Himlens Kloder,
 Indvies Dig ved Jubelsang,
 Vor fyrstelige Broder!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090326" variant="winther2017100262">
+<text id="winther2018090326" variant="winther2017100262">
 <head>
    <title>Til Kong Frederik den Syvende</title>
    <firstline>Det var en Storm! — den vrede Havets Bølge</firstline>
@@ -1833,6 +1886,7 @@ Vor fyrstelige Broder!
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det var en Storm! — den vrede Havets Bølge
 Med Fraad og Skum slog over Dæk og Skands;
 Hver Stjerne klar, som Øiet skulde følge,
@@ -1877,10 +1931,11 @@ Saalænge skal den fjerne Fremtids Slægter,
 Hvem Du fik aabnet Fredens sikkre Havn,
 Velsigne Dig, som <w>Danmarks Livs</w>  Forfægter,
 Lovprise høit <w>Kong Fredriks</w> ædle Navn!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090327" variant="winther1999070732">
+<text id="winther2018090327" variant="winther1999070732">
 <head>
    <title>Efterklang</title>
    <firstline>Jeg seer med Veemod ei tilbage</firstline>
@@ -1888,6 +1943,7 @@ Lovprise høit <w>Kong Fredriks</w> ædle Navn!
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg seer med Veemod ei tilbage
 Til Vaarens stille Blomstertid;
 Mit Hjerte fører ingen Klage,
@@ -1904,10 +1960,11 @@ Naar da til Slummer Cithren hænges,
 Jeg aldrig siger den Farvel;
 Den vaagner brat, saasnart jeg længes,
 Og stemmer altid med min Sjæl.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090401">
+<text id="winther2018090401">
 <head>
     <title>Aarstiderne</title>
     <firstline>I Vaar, i Sommer og i Høst</firstline>
@@ -1915,6 +1972,7 @@ Og stemmer altid med min Sjæl.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I Vaar, i Sommer og i Høst
 Man sagtens leve kan og trives,
 Naar Himlen vækker Kraft og Lyst,
@@ -2069,10 +2127,11 @@ Og hvordan skal man da faae Hvile?
 Du Dig til Bøgerne maa vende;
 Paa Bøger er der sjelden Brøst,
 Har Du ei andre, tag saa <w>denne!</w>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090402">
+<text id="winther2018090402">
 <head>
     <title>Døgnet</title>
     <firstline>Morgenstund med Guld i Mund!</firstline>
@@ -2083,6 +2142,7 @@ Har Du ei andre, tag saa <w>denne!</w>
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
       Morgenstund
    Med Guld i Mund!
 Du reiser os af Dvalen.
@@ -2122,10 +2182,11 @@ Deler ud sin Kraft og Trøst
 Betænksom og forborgen;
 Haabet drømmer i hvert Bryst
 Alt om en deilig Morgen!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090328" variant="winther2018081201">
+<text id="winther2018090328" variant="winther2018081201">
 <head>
     <title>Det gamle Aar</title>
     <subtitle>(1850)</subtitle>
@@ -2134,6 +2195,7 @@ Alt om en deilig Morgen!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det gamle Aar har snart faaet Nok
 Af Slid og Slseb og Vandring;
 Det ryster alt sin hvide Lok,
@@ -2175,10 +2237,11 @@ Med Sorgens hvide Lilie
 Din sidste, korte Vei besaae,
 Min Urtekost jeg kaster paa
 Dit Mausoleums Tillie!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090329" variant="winther2018081213">
+<text id="winther2018090329" variant="winther2018081213">
 <head>
     <title>Brev fra en Flødekande</title>
     <firstline>Min Frue! Jeg haaber, at ikke</firstline>
@@ -2186,6 +2249,7 @@ Dit Mausoleums Tillie!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Min Frue! Jeg haaber, at ikke
 De til en Herre mig vil skikke.
 Jeg holder ei af at komme
@@ -2225,10 +2289,11 @@ De veed, naar De Dem tænker om.
 O, send mig ei til nogen Anden!
 Deres Tjenerinde
                     <w>Flødekanden.</w>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090330" variant="winther2018081214">
+<text id="winther2018090330" variant="winther2018081214">
 <head>
     <title>Til en Ven</title>
     <firstline>Jeg veed det, gode Carl! Du Livets Øster</firstline>
@@ -2237,6 +2302,7 @@ Deres Tjenerinde
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg veed det, gode Carl! Du Livets Øster
 Har aabnet heldigt, og hvorhen Du triner,
 Alt smiler Dig som stratzburgske Terriner,
@@ -2254,10 +2320,11 @@ Har, som vort Venskab, mange Aar paa Nakke.
 Jeg haaber, vi skal slide mange Støvler
 Paa trøstig Vandring op og ned ad Bakke,
 Mens <w>Du</w> paa Drenge, jeg paa Rimet høvler.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090331" variant="winther2018081215">
+<text id="winther2018090331" variant="winther2018081215">
 <head>
     <title>Med en Pen</title>
     <firstline>Det frygtelige Vaaben her</firstline>
@@ -2265,6 +2332,7 @@ Mens <w>Du</w> paa Drenge, jeg paa Rimet høvler.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det frygtelige Vaaben her,
 Meer stærkt det er end Spyd og Sværd,
 End Gift og Dolk og - Andet;
@@ -2285,10 +2353,11 @@ I Flok fortroligt sanke; -
 Men i din Haand, veed jeg forvist,
 Det tjener kun fra først til sidst
 For Skjønhed og for Tanke.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090332" variant="winther2018081216">
+<text id="winther2018090332" variant="winther2018081216">
 <head>
     <title>En Vifte</title>
     <firstline>Jeg er Dig en Ven, som aldrig svigter</firstline>
@@ -2296,6 +2365,7 @@ For Skjønhed og for Tanke.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg er Dig en Ven, som aldrig svigter;
 Jeg vifter Dig Kjølighed til din Kind,
 Jeg vifter Dig Grillerne fra dit Sind, -
@@ -2303,10 +2373,11 @@ Ak, har jeg ei venlige Pligter?
 Jeg dølger dit Øie, hvad ei det vil see,
 Jeg skjuler din Læbe, ifald den maa lee
 Ad et jammerligt Vers og - dets Digter
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090333" variant="winther2018081217">
+<text id="winther2018090333" variant="winther2018081217">
 <head>
     <title>Det Farlige</title>
     <firstline>Hvis mig Du vil lyde</firstline>
@@ -2314,16 +2385,18 @@ Ad et jammerligt Vers og - dets Digter
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvis mig Du vil lyde,
 Jeg raader Dig, ikke
 I Haven at gaae;
 Thi Træerne <w>skyde,</w>
 Solstraalerne <w>stikke</w>
 Og Lærkerne <w>slaae</w>.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090334" variant="winther2018081218">
+<text id="winther2018090334" variant="winther2018081218">
 <head>
     <title>Den 18de August 1843</title>
     <firstline>Nu paa sin Vandring Tiden kom</firstline>
@@ -2337,6 +2410,7 @@ Og Lærkerne <w>slaae</w>.
     <quality>korrektur1,korrektur2,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nu paa sin Vandring Tiden kom
 Til Grændseskjellet atter;
 Den vender sig veemodig om
@@ -2381,10 +2455,11 @@ Dog har Du faaet den hele Stads
 I Orden, min Veninde!
 Er der vel knap en lille Plads
 For mig og for mit Minde!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090335" variant="winther2018081219">
+<text id="winther2018090335" variant="winther2018081219">
 <head>
     <title>Den 18de August 1849</title>
     <firstline>Vi boe paa Deiligheden - det er sandt!</firstline>
@@ -2398,6 +2473,7 @@ For mig og for mit Minde!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Vi boe paa <w>Deiligheden</w><note>* <w>Deiligheden</w>, et Boelsted, beliggende ved en Vig af Isefjord.</note> - det er sandt!
 Hvorhen vi gaae, i Dal, paa Høie,
 I Skov, ved Sø, til hver en Kant
@@ -2437,10 +2513,11 @@ Fra <w>Hende</w> har jeg og en Hilsen, varm
 Som den fra Søsterhjertet strømmer,
 Og finder Gjenklang i en Søsters Barm,
 Hvor fælleds Ungdomsminder drømmer.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090336" variant="winther2018081220">
+<text id="winther2018090336" variant="winther2018081220">
 <head>
     <title>Til en Jubellærer</title>
     <firstline>De Dage svandt! - O, see Dig fro tilbage!</firstline>
@@ -2448,6 +2525,7 @@ Hvor fælleds Ungdomsminder drømmer.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 De Dage svandt! - O, see Dig fro tilbage!
 Dit Hjerte slaaer jo roligt i dit Bryst!
 Hiin store Sum af dine Vandringsdage
@@ -2492,10 +2570,11 @@ Og mangt et Øie, som blev lukt herneden,
 Og mangt et Hjerte, mangen venlig Mund
 Tilsmiler saligt Dig fra Himmelfreden,
 Velsignende med os din Høitidsstund.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090337" variant="winther2018081221">
+<text id="winther2018090337" variant="winther2018081221">
 <head>
     <title>Ved Bordet</title>
     <firstline>Doctor Morten hist i Sachsen</firstline>
@@ -2504,6 +2583,7 @@ Velsignende med os din Høitidsstund.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Doctor <w>Morten</w> hist i Sachsen,
 Naar han sad ved Dug og Disk,
 Raabte altid: ,,Drik paa Laxen
@@ -2557,10 +2637,11 @@ Vivat fra den hele Klynge
 Sønner, Døttre om dit Bord!
 Vivat alle Hjerter synge
 I et stærkt og enigt Chor!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090338" variant="winther2018081223">
+<text id="winther2018090338" variant="winther2018081223">
 <head>
     <title>Til en svensk Frivillig</title>
     <firstline>Hvor Granen kneiser, hvor Fjelde staaer</firstline>
@@ -2568,6 +2649,7 @@ I et stærkt og enigt Chor!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvor Granen kneiser, hvor Fjelde staaer,
 Hvor Malmen groer i Stenen haard
 Og smeddes ud til skarpe Sværde;
@@ -2602,10 +2684,11 @@ I vore Hjerters Dyb en Seier!
 Velsignet være den Moders Navn,
 Som fødte Dig, og i hvis Favn
 Du fik det Hjerte, som Du eier.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090339" variant="winther2018081224">
+<text id="winther2018090339" variant="winther2018081224">
 <head>
     <title>Til et ungt Ægtepar</title>
     <firstline>Livets Have fostrer mange</firstline>
@@ -2613,6 +2696,7 @@ Du fik det Hjerte, som Du eier.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Livets Have fostrer mange
 Blomster i sit Skjød;
 Men livsaligst see vi prange
@@ -2639,10 +2723,11 @@ Gaae I, Arm i Arm.
 Mens I vandre Livets Veie,
 At den huld og frisk kan møde
 Livets Aftenrøde!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090340" variant="winther2018081225">
+<text id="winther2018090340" variant="winther2018081225">
 <head>
     <title>Til en Digter</title>
     <firstline>Hæng Cithren bort! De bløde Strænge</firstline>
@@ -2650,6 +2735,7 @@ Livets Aftenrøde!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hæng Cithren bort! De bløde Strænge,
 Som Du har rørt saa tidt og længe,
 Er der ei flere Toner i;
@@ -2691,10 +2777,11 @@ Drag Ordets Sværd med Fynd og Klem;
 Hiin Stjerne, som i Østen blinked
 Og Kongerne til Krybben vinked,
 Skal trygt Dig lyse til et Hjem.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090341" variant="winther2018081231">
+<text id="winther2018090341" variant="winther2018081231">
 <head>
     <title>Det nye Aar</title>
     <subtitle>(1851)</subtitle>
@@ -2703,6 +2790,7 @@ Skal trygt Dig lyse til et Hjem.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvo kommer der saa let og glad,
 Med Kinden som en Rose?
 Ret som et Barn han bær sig ad,
@@ -2744,10 +2832,11 @@ Vort Sværd, vor Pen til Lykke,
 Da kan Du, mens Du er vor Gjæst,
 Med danske Mænd ved Fredens Fest
 Dit Navn et Tempel bygge.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090342" variant="winther2002120101">
+<text id="winther2018090342" variant="winther2002120101">
 <head>
    <title>Til Vinter-Lærken</title>
    <firstline>Hvi qviddrer du saa tidlig hist?</firstline>
@@ -2755,6 +2844,7 @@ Dit Navn et Tempel bygge.
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvi qviddrer du saa tidlig hist?
 Du troer maaskee, det snart er Sommer?
 At Solen pynter snart hver Qvist
@@ -2799,10 +2889,11 @@ I disses Barm er Grunden god
 For din Bedrift; vær ikke bange!
 Den Frugt, du høster, strax fuldmoed,
 Er Hjertesuk og Smiil og Sange!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090343" variant="winther2002120102">
+<text id="winther2018090343" variant="winther2002120102">
 <head>
    <title>En Hytte</title>
    <firstline>Her gad jeg boe og bygge</firstline>
@@ -2810,6 +2901,7 @@ Er Hjertesuk og Smiil og Sange!
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Her gad jeg boe og bygge,
 Til jeg var træt og skulde døe,
 Bag Lindetræets Skygge
@@ -2854,10 +2946,11 @@ Hvor eensomt og hvor stille!
 Hvor fjernt fra Verdens stygge Larm!
 Her kunde Sangens Trille
 Let svæve fra min Barm.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090344" variant="winther2002120103">
+<text id="winther2018090344" variant="winther2002120103">
 <head>
    <title>Til Storken</title>
    <firstline>Saa drager du ad fremmed Land</firstline>
@@ -2865,6 +2958,7 @@ Let svæve fra min Barm.
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Saa drager du ad fremmed Land,
 Du lange Mand,
 Med dine røde Hoser?
@@ -2927,10 +3021,11 @@ Har løst den bundne Bølge.
 Byg paa mit Tag din stille Bo,
 Man siger jo,
 Du har Guds Fred i Følge!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090345" variant="winther2002120104">
+<text id="winther2018090345" variant="winther2002120104">
 <head>
    <title>Vaaren</title>
    <firstline>Nu har sit lyse Banner</firstline>
@@ -2938,6 +3033,7 @@ Du har Guds Fred i Følge!
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nu har sit lyse Banner
 Alt Skoven foldet ud;
 Paa Kysten Vaaren lander
@@ -2982,10 +3078,11 @@ Her lad din Længsel ile
 Hen i det fjerne Blaae,
 Og lad dit Hjerte hvile, -
 Hvis det kan Hvile faae.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090346" variant="winther2002120105">
+<text id="winther2018090346" variant="winther2002120105">
 <head>
    <title>Til en Snegl</title>
    <firstline>Du være vil min Læremester</firstline>
@@ -2993,6 +3090,7 @@ Hvis det kan Hvile faae.
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Du være vil min Læremester,
 Som færdes her paa dette Træ,
 Og i dets sommerfriske Læ
@@ -3022,10 +3120,11 @@ Vær takket! men om end jeg vilde,
 Jeg kan ei følge nu dit Spor.
 Ja, havde jeg blot følt mig for
 I Tide! - Nu det er forsilde! -
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090347" variant="winther2018081948">
+<text id="winther2018090347" variant="winther2018081948">
 <head>
     <title>Fragmenter af Reinekes Memoirer</title>
     <firstline>En Dag, da Reinke laae og sov</firstline>
@@ -3033,6 +3132,7 @@ I Tide! - Nu det er forsilde! -
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><small><right>Cosi si da fortuna in questo mondo!</right></small></nonum>
 <nonum><small><right>Pignotti, Fuvole.</right></small></nonum>
 
@@ -3716,8 +3816,9 @@ See saa, Grimbart! let nu din Krop!
 Gak hjem og skriv nøiagtigt op,
 Hvad du har hørt. Det kan ei skade
 Mig nu, jeg sidder fast i Stade!''
+</poetry>
 </body>
-</poem>
+</text>
 
 <section level="2">
 <head>
@@ -3725,7 +3826,7 @@ Mig nu, jeg sidder fast i Stade!''
 </head>
 <content>
 
-<poem id="winther2018090403">
+<text id="winther2018090403">
 <head>
     <title>Bogen</title>
     <firstline>Det er saa koldt og mørkt derude</firstline>
@@ -3733,6 +3834,7 @@ Mig nu, jeg sidder fast i Stade!''
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det er saa koldt og mørkt derude,
 Høit Regnen rasler paa Tag og Rude
 Den Moder tager nu op paa Skjød
@@ -3746,10 +3848,11 @@ Alt hvad hun læser, det er fremstillet
 Paa alle Blade ved mangt et Billed.
 Hvis I nu ogsaa vil Bogen kjende,
 Behøve I blot hvert Blad at vende.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090404">
+<text id="winther2018090404">
 <head>
     <title><num>1.</num>Den Fangne og de Frie</title>
     <toctitle><num>1.</num>Den Fangne og de Frie</toctitle>
@@ -3760,6 +3863,7 @@ Behøve I blot hvert Blad at vende.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 ,,Jeg er en fornem Fugl, maae I troe!
 I saadan et stadseligt Buur at boe
 Det er en Ære, som ei er ringe.
@@ -3773,10 +3877,11 @@ Vorherre har bygget vor grønne Bo,
 Der kan vi leve saa frie og froe,
 Og juble og synge med lystig Hu
 Og gynge i Løvet - men hvad kan du?''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090405">
+<text id="winther2018090405">
 <head>
     <title><num>2.</num>Den døde Hund</title>
     <toctitle><num>2.</num>Den døde Hund</toctitle>
@@ -3787,6 +3892,7 @@ Og gynge i Løvet - men hvad kan du?''
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Den Mand har mistet en trofast Ven,
 Saa ærlig han finder knap een igjen.
 Den fulgte ham, hvor han gik og stod,
@@ -3800,10 +3906,11 @@ Det er jo saa tungt at miste det,
 Som man af Hjertet har elsket ret.
 Jeg tænker, han lader sin Ven begrave
 Et Sted ved en Busk i sin stille Have.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090406">
+<text id="winther2018090406">
 <head>
     <title><num>3.</num>Den Drukne</title>
     <toctitle><num>3.</num>Den Drukne</toctitle>
@@ -3814,6 +3921,7 @@ Et Sted ved en Busk i sin stille Have.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 ,,Var jeg blot vel over dette Bræt,
 Da blev mit Hjerte først rigtig let,
 Og jeg lod dem fløite og gjøre sig raske,
@@ -3827,10 +3935,11 @@ Hist seer Du Manden staae og kikke,
 Hos hvem han fik saameget at drikke,
 Saa han kan hverken gaae eller see,
 Sig selv og Andre til Spot og Spee.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090407">
+<text id="winther2018090407">
 <head>
     <title><num>4.</num>Æselet</title>
     <toctitle><num>4.</num>Æselet</toctitle>
@@ -3841,6 +3950,7 @@ Sig selv og Andre til Spot og Spee.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det er dog en sørgelig Lod at være
 Et Æsel, som altid maa trælle og bære!
 Fra Byen og Møllen kommer det ned
@@ -3854,10 +3964,11 @@ Thi er jeg paa høire Side træt,
 Jeg vender mig om paa den venstre let;
 Tilsidst jeg strækker mig heelt paa Ryggen
 Og slumrer saa deiligt ind i Skyggen.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090408">
+<text id="winther2018090408">
 <head>
     <title><num>5.</num>Rebslageren</title>
     <toctitle><num>5.</num>Rebslageren</toctitle>
@@ -3868,6 +3979,7 @@ Og slumrer saa deiligt ind i Skyggen.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Tro mig, det er ingen moersom Ting
 At sætte det store Hjul i Sving,
 Mens det surrer og snurrer og støier, -
@@ -3881,10 +3993,11 @@ En vigtig Mand i sit eget Begreb;
 Han slaaer de stærke Toug og Reb
 Til at binde Lam og Koer paa Enge
 Og Skibet i Havet og Tyven at hænge.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090409">
+<text id="winther2018090409">
 <head>
     <title><num>6.</num>Den tappre Helt</title>
     <toctitle><num>6.</num>Den tappre Helt</toctitle>
@@ -3895,6 +4008,7 @@ Og Skibet i Havet og Tyven at hænge.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Han vilde ligne de gamle Helte:
 Han bar en Hjelm og Trompet ved Belte.
 Han spanked stolt, og kjækt han sang,
@@ -3908,10 +4022,11 @@ Det kunde den gamle Gaas ei lide,
 Den tripped og hvæsed og vilde bide;
 Da flygted han ræd, den lille Skjelm,
 Og tabte sit Mod og tabte sin Hjelm.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090410">
+<text id="winther2018090410">
 <head>
     <title><num>7.</num>Hyrden og Hunden</title>
     <toctitle><num>7.</num>Hyrden og Hunden</toctitle>
@@ -3922,6 +4037,7 @@ Og tabte sit Mod og tabte sin Hjelm.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 En Sommervind over Søen gaaer,
 Paa Høien græsse de Lam og Faar,
 Mens Hyrden ligger paa Engen blød;
@@ -3935,10 +4051,11 @@ Nu snuser han til den lækkre Bid,
 Hvormed hans Herre ham lokked hid;
 Thi han vil vide, hvad det kan være,
 Før han det roligt tør fortære.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090411">
+<text id="winther2018090411">
 <head>
     <title><num>8.</num>Hundens Trug</title>
     <toctitle><num>8.</num>Hundens Trug</toctitle>
@@ -3949,6 +4066,7 @@ Før han det roligt tør fortære.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hector har af det runde Fad
 Ædt og slikket, saameget han gad;
 Nu faaer han sig en Middagsluur,
@@ -3962,10 +4080,11 @@ Han tog sig gjerne en Part i Grunden,
 Ifald han stoled paa Freden og Hunden:
 Jeg raader Dig, Skade! vaer dog Pelsen,
 Du kunde snart faae en alvorlig Hilsen.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090412">
+<text id="winther2018090412">
 <head>
     <title><num>9.</num>Fugle i Fangenskab</title>
     <toctitle><num>9.</num>Fugle i Fangenskab</toctitle>
@@ -3976,6 +4095,7 @@ Du kunde snart faae en alvorlig Hilsen.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Her er en Piben! her er en Qvidder!
 Hvor mangen Fugl her i Bure sidder,
 Der hist i Skovens grønne Slot,
@@ -3989,10 +4109,11 @@ Jeg veed nok, havde jeg bare Penge,
 Betænkte jeg mig slet ikke længe,
 Men kjøbte dem løs, og lod dem saa
 Alle flyve under Himlens Blaae.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090413">
+<text id="winther2018090413">
 <head>
     <title><num>10.</num>Lammet og Bukken</title>
     <toctitle><num>10.</num>Lammet og Bukken</toctitle>
@@ -4003,6 +4124,7 @@ Alle flyve under Himlens Blaae.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 L. ,,God Dag, Mads Gedebuk! hvad vil Du her?
 B. Maa jeg spørge, kommer jeg Dig for nær?
 L. ,,Du maa ei trampe her i vor Ager.''
@@ -4016,10 +4138,11 @@ B. Saa Du vil trodse en Karl, som jeg er?
    Hvad troer I, saa blev Enden paa Legen?
    Rask Bukken gjorde et vældigt Spring
    Og kjørte den lille Tosse i Ring.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090414">
+<text id="winther2018090414">
 <head>
     <title><num>11.</num>I Hønsegaarden</title>
     <toctitle><num>11.</num>I Hønsegaarden</toctitle>
@@ -4030,6 +4153,7 @@ B. Saa Du vil trodse en Karl, som jeg er?
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 ,,God Morgen, I Kyllinger, Høns og Ænder!
 Jeg veed det nok, I mig alle kjender.
 Naar med min Kurv jeg kommer i Gaard,
@@ -4043,10 +4167,11 @@ Hvert lille Korn, som til Jorden kom.
 Da Pigens Kurv saa var ganske tom,
 Og intet Gran de paa Steenbroen fandt,
 Saa spredtes de strax hver til sin Kant.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090415">
+<text id="winther2018090415">
 <head>
     <title><num>12.</num>Koen og Drengen</title>
     <toctitle><num>12.</num>Koen og Drengen</toctitle>
@@ -4057,6 +4182,7 @@ Saa spredtes de strax hver til sin Kant.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Du Ko der med dit Horn, det krumme,
 Hvi monne Du staae og gloe og brumme?
 Bliv Du kun indenfor dette Led,
@@ -4070,10 +4196,11 @@ Og mig, som staaer her i Ro og Mag?
 Men, seer Du, det er en anden Sag:
 Jeg gaaer paa To og har ingen Horn,
 Og æder hverken Kløver eller Korn.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090416">
+<text id="winther2018090416">
 <head>
     <title><num>13.</num>Soldaten paa Vandring</title>
     <toctitle><num>13.</num>Soldaten paa Vandring</toctitle>
@@ -4084,6 +4211,7 @@ Og æder hverken Kløver eller Korn.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ved Milepælen har han sig sat,
 Sin Pibe, den kjære, han har faaet fat.
 Han vilde nok kjørt med den første Vogn,
@@ -4097,10 +4225,11 @@ I Aften, før Sol gaaer ned, han naaer
 Med Hjertensfryd til sin Faders Gaard,
 Hvor Moderen venter med Længsel og Lyst,
 Og hvor han skal hjælpe i travle Høst.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090417">
+<text id="winther2018090417">
 <head>
     <title><num>14.</num>Hyrdehunden</title>
     <toctitle><num>14.</num>Hyrdehunden</toctitle>
@@ -4111,6 +4240,7 @@ Og hvor han skal hjælpe i travle Høst.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Solen staaer høit paa Himlens Loft,
 Og det er saa varmt paa Vang og Toft,
 Sagtelig røre sig Vinde milde;
@@ -4124,10 +4254,11 @@ Han speider og sporer og seer sig om;
 Strax gav han Hals, hvis Ulven kom.
 Men derfor kan ogsaa Hyrden og Geden
 Hvile saa trygt i Middagsheden.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090418">
+<text id="winther2018090418">
 <head>
     <title><num>15.</num>Koen ved Vanding</title>
     <toctitle><num>15.</num>Koen ved Vanding</toctitle>
@@ -4138,6 +4269,7 @@ Hvile saa trygt i Middagsheden.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 ,,Drik, Du Tosse! imens Du kan!
 Dyp din Mule i det kjølige Vand!
 Dagen er heed, og Du kan vist trænge;
@@ -4151,10 +4283,11 @@ Og da den saa siden kom paa Engen,
 Stod den igjen og saae paa Drengen.
 Det søde Kløver den ændsed kun lidt,
 Den havde reent mistet sin Appetit.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090419">
+<text id="winther2018090419">
 <head>
     <title><num>16.</num>Skorsteensfeierne</title>
     <toctitle><num>16.</num>Skorsteensfeierne</toctitle>
@@ -4165,6 +4298,7 @@ Den havde reent mistet sin Appetit.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ikke sandt, det er ret snurrigt at see
 De sorte Drenge paa den hvide Snee?
 Tro mig, de Fyre er raske og kjække.
@@ -4178,10 +4312,11 @@ De er saa sorte! - men toede rene,
 Med Søndagsklæder, hele og pene,
 Var de - det troer Du vel ikke nu? -
 Maaskee langt mere nette end Du.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090420">
+<text id="winther2018090420">
 <head>
     <title><num>17.</num>Fiskeren og Anden</title>
     <toctitle><num>17.</num>Fiskeren og Anden</toctitle>
@@ -4192,6 +4327,7 @@ Maaskee langt mere nette end Du.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvor Havet er roligt og Luften reen!
 Hist ligger Baaden ved Strandens Steen.
 Mens Nettet tørres, paa varme Sand
@@ -4205,10 +4341,11 @@ See kun, hvor de tigge! men forstaaer jeg ret,
 Saa sætter han Ormen nok helst paa Net.
 Seer Du ei nok, hvor han smidsker, Manden?
 Troer Du da ikke, han narrer Anden?
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090421">
+<text id="winther2018090421">
 <head>
     <title><num>18.</num>Moder og Søn</title>
     <toctitle><num>18.</num>Moder og Søn</toctitle>
@@ -4219,6 +4356,7 @@ Troer Du da ikke, han narrer Anden?
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 M. Nei, som jeg siger, Du skal ei tilsøes,
    Men blive hos mig, min egen Knøs!
    For Dig vil jeg kjæle, i Alt Dig føie!
@@ -4232,10 +4370,11 @@ S. Nei, Mutter! jeg skal og jeg maa afsted!
    Og tænk! naar jeg gaaer paa de Reiser lange,
    Jeg bringer Dig hjem fra fremmede Land
    Baade Gods og Penge, saameget jeg kan.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090422">
+<text id="winther2018090422">
 <head>
     <title><num>19.</num>Lodsen</title>
     <toctitle><num>19.</num>Lodsen</toctitle>
@@ -4246,6 +4385,7 @@ S. Nei, Mutter! jeg skal og jeg maa afsted!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Seer I den Mand med den lange Kikkert?
 Langt ude i Søen han øiner sikkert
 Et Skib, der strider med Storm og Vind
@@ -4259,10 +4399,11 @@ Den Mand vil skyde sin Baad fra Land,
 Han kjender Vei paa det falske Vand,
 Han fører det ængstede Skib forbi
 Hver farlig Grund og paa rette Sti.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090423">
+<text id="winther2018090423">
 <head>
     <title><num>20.</num>Konen ved Kramboden</title>
     <toctitle><num>20.</num>Konen ved Kramboden</toctitle>
@@ -4273,6 +4414,7 @@ Hver farlig Grund og paa rette Sti.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 For al den deilige Stads! Jo længer
 Jeg seer paa Alt, hvad i Boden hænger,
 Jo meer faaer jeg Længsel og Lyst at kjøbe;
@@ -4286,10 +4428,11 @@ Til mig saa et Forklæd, eet af de blaae,
 Til Stads, naar jeg vil i Kirke gaae;
 Tilsidst en Hue til min Lille derhjemme,
 Ham maa jeg sandelig ikke glemme.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090424">
+<text id="winther2018090424">
 <head>
     <title><num>21.</num>Under Æbletræet</title>
     <toctitle><num>21.</num>Under Æbletræet</toctitle>
@@ -4300,6 +4443,7 @@ Ham maa jeg sandelig ikke glemme.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Her er en Jubel! her er en Fest!
 Her gjælder det, hvo der kan sanke bedst.
 Om Træets Rødder jo allevegne
@@ -4313,10 +4457,11 @@ Han tænkte: ,,Lad kun de Andre støie,
 Lad dem paa deres Maneer sig fornøie!''
 Et vældigt Æble det løb han efter
 Og bider nu i det af alle Kræfter.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090425">
+<text id="winther2018090425">
 <head>
     <title><num>22.</num>Hesten i Landet</title>
     <toctitle><num>22.</num>Hesten i Landet</toctitle>
@@ -4327,6 +4472,7 @@ Og bider nu i det af alle Kræfter.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Herr Hest! hvor vil Du hen? - I Stranden?
 ,,Ja, seer Du ikke, der er den Anden?
 Min Kammerat maa jeg troligt følge,
@@ -4340,10 +4486,11 @@ Der svømme de om en lille Stund
 Og pruste med deres Næse og Mund.
 Men naar de nu atter paa Landet træde,
 De ryste og vrinske høit af Glæde.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090426">
+<text id="winther2018090426">
 <head>
     <title><num>23.</num>Manden med Dukker</title>
     <toctitle><num>23.</num>Manden med Dukker</toctitle>
@@ -4354,6 +4501,7 @@ De ryste og vrinske høit af Glæde.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvad bærer den Mand vel paa sit Bræt?
 Der ligger en Løve, seer jeg ret?
 En Mand med trekantet Hat og Frakke,
@@ -4367,10 +4515,11 @@ Jeg troer vist ikke, de kjøbe Noget, -
 Han taler, - men de forstaae ei Sproget.
 Han sætter vel Dukken paa Brættet op
 Og gaaer ned ad Gaden og raaber: Pop!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090427">
+<text id="winther2018090427">
 <head>
     <title><num>24.</num>Vægteren</title>
     <toctitle><num>24.</num>Vægteren</toctitle>
@@ -4381,6 +4530,7 @@ Og gaaer ned ad Gaden og raaber: Pop!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Himlen er klar og foruden Sky;
 Nu slumrer Alt i den store By,
 Kun Maanen er vaagen og jeg og Hunden,
@@ -4394,10 +4544,11 @@ Snart tager den af, snart tager den til,
 Og altid seer jeg det samme Spil;
 Snart stander den op, snart gaaer den ned,
 Og altid sin rette Stund den veed.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090428">
+<text id="winther2018090428">
 <head>
     <title><num>25.</num>En fattig Familie</title>
     <toctitle><num>25.</num>En fattig Familie</toctitle>
@@ -4408,6 +4559,7 @@ Og altid sin rette Stund den veed.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Den Moder sidder med Sorg i Sind;
 Paa Haanden hun støtter sin blege Kind;
 Ak, hendes Mand er just nylig død!
@@ -4421,13 +4573,14 @@ Vil naadigt og lade Trøsten komme;
 Han sender sin Engel til de Fromme,
 Der trofast bygge paa ham; ja, førend
 De ane det, træder den ind ad Døren.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section>
 
-<poem id="winther2018090429">
+<text id="winther2018090429">
 <head>
     <title>En Student og en Jomfru</title>
     <subtitle>Marionet-Comedie</subtitle>
@@ -4436,6 +4589,7 @@ De ane det, træder den ind ad Døren.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center><b>Personerne.</b></center></nonum>
 
 Prologus.
@@ -5676,8 +5830,9 @@ Men lister mig bort heel tyst og stille,
 Og blot Dem anmoder, ifald De ville,
 At klappe i Deres ærede Hænder, -
 Saa troer jeg, Alt med det Bedste ender!
+</poetry>
 </body>
-</poem>
+</text>
 
 
 <section>
@@ -5686,7 +5841,7 @@ Saa troer jeg, Alt med det Bedste ender!
 </head>
 <content>
 
-<poem id="winther2018090348" variant="winther2018081807">
+<text id="winther2018090348" variant="winther2018081807">
 <head>
     <title>Parabel af Fr. Rückert</title>
     <toctitle>Parabel af Fr. Rückert (oversat)</toctitle>
@@ -5698,6 +5853,7 @@ Saa troer jeg, Alt med det Bedste ender!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I Syrien, i Ørkens Sand,
 Der gik med sin Kameel en Mand,
 Da Dyrets vilde Færd forkynder
@@ -5785,8 +5941,9 @@ Saa du de Smaa dyr: Dag og Nat,
 I Sorgløshed forglemmer brat,
 Og kuns til Frugten staaer din Tanke,
 Som du paa Gravens Bred kan sanke.
+</poetry>
 </body>
-</poem>
+</text>
 
 <section level="3">
 <head>
@@ -5794,7 +5951,7 @@ Som du paa Gravens Bred kan sanke.
 </head>
 <content>
 
-<poem id="winther2018090349" variant="winther2018080710">
+<text id="winther2018090349" variant="winther2018080710">
 <head>
     <title><num>1.</num>Guldalderen</title>
     <firstline>Guldalderen er ei forsvundet</firstline>
@@ -5804,6 +5961,7 @@ Som du paa Gravens Bred kan sanke.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Guldalderen er ei forsvundet,
 Den straaler end i Ungdomspragt,
 Og nok af Guld kan vorde fundet,
@@ -5828,10 +5986,11 @@ Saa glem de Sorger, som jer trykke,
 Opfrisk jer Lyst med bedste Flid;
 Af hine gyldne Stoffer bygge
 Enhver sin egen gyldne Tid.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090350" variant="winther2018080711">
+<text id="winther2018090350" variant="winther2018080711">
 <head>
     <title><num>2.</num>Faunen</title>
     <firstline>Til Faun mig Himlen skabde</firstline>
@@ -5843,6 +6002,7 @@ Enhver sin egen gyldne Tid.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Til Faun mig Himlen skabte;
 Mit første Legetøi
 Var Bægret, Bacchus tabte, -
@@ -5882,13 +6042,14 @@ Som Monument paa Banken
 Skal Gudens Bæger staae,
 Og Vinens Ven af Ranken
 Sit Taareoffer faae.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section>
 
-<poem id="winther2018090351" variant="winther2018081025">
+<text id="winther2018090351" variant="winther2018081025">
 <head>
     <title>Vikingen</title>
     <subtitle>Efter Geijer</subtitle>
@@ -5900,6 +6061,7 @@ Sit Taareoffer faae.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Kun femten Aar gammel jeg Stuen fandt trang,
 Hvor jeg boede hos Moder min,
 Og Dagen hos Gederne blev mig saa lang,
@@ -6036,10 +6198,11 @@ Op sluge ham Havets Vande, -
 Og Bølgerne synge den gamle Sang,
 Og Vinden skifter ustadig sin Gang,
 Men den Tappres Minde - skal stande.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090352" variant="winther2018081026">
+<text id="winther2018090352" variant="winther2018081026">
 <head>
     <title>Vinteren i Norden</title>
     <subtitle>Efter J. E. Stagnelius</subtitle>
@@ -6051,6 +6214,7 @@ Men den Tappres Minde - skal stande.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Alt fra den Tid, naar Dagens Stjerne brænder
 Ved Sydens Pol, indtil den atter sender
 Fra Vædrens milde Himmel huldt sin Magt;
@@ -6148,10 +6312,11 @@ Snart Dagen over Bjerg og Dale gryer.
 Nyd, Menneske! din Vandrings korte Dage!
 Liig Kildens Vover, der bag Sivet klage,
 Fremglimter du paa Tidens Strøm og - flyer.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090353" variant="winther2018081027">
+<text id="winther2018090353" variant="winther2018081027">
 <head>
     <title>Til Frue K. M. Rahbek</title>
     <subtitle>Sonet af Cav. Orellana, oversat 1821</subtitle>
@@ -6161,6 +6326,7 @@ Fremglimter du paa Tidens Strøm og - flyer.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Naar fjernt min Fod en fremmed Jordbund trykker,
   Skal Taaren bittert mig om Timen minde,
   Der grusom bød mig gaae; jeg Nattens Vinde
@@ -6178,10 +6344,11 @@ I Friheds Morgengry og Foraarsglæde
 Et ærligt Hjerte, og min hulde, kloge Pige,
   Min <w>Manolita</w>, som mig aldrig svigter;
   Tilsidst, ifald du vil, - en daarlig Digter.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090354" variant="winther2018081028">
+<text id="winther2018090354" variant="winther2018081028">
 <head>
     <title>Hankattens Frieri</title>
     <subtitle>Efter Rückert</subtitle>
@@ -6193,6 +6360,7 @@ Et ærligt Hjerte, og min hulde, kloge Pige,
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hør nu, hvordan Hankatten, ført ved Rævens List,
 Den Viv, som var ham passeligst, dog fik tilsidst.
 
@@ -6246,10 +6414,11 @@ Hun over Musens Slægt jo hersker strengt med Kloen
 
 Da blev Hankatten flau og sagde: ja, det Bedste
 Er altsaa dog, at jeg maa Kattens Datter fæste.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090355" variant="winther2018081122">
+<text id="winther2018090355" variant="winther2018081122">
 <head>
     <title>Hun til Ham, paa Reisen</title>
     <subtitle>Efter Stollberg</subtitle>
@@ -6261,6 +6430,7 @@ Er altsaa dog, at jeg maa Kattens Datter fæste.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 See, Natten gryer,
 Hver Stjerne flyer,
 Bag Himlens Skyer,
@@ -6284,10 +6454,11 @@ Tør sammen boe,
 Jeg vandrer fro;
 Thi Elskovs Magt
 Har Nattevagt!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090356" variant="winther2018081123">
+<text id="winther2018090356" variant="winther2018081123">
 <head>
     <title>Smaadigte, efter H. Heine</title>
     <firstline>Af mine Taarer spirer</firstline>
@@ -6299,6 +6470,7 @@ Har Nattevagt!
     <keywords>heine</keywords>
 </head>
 <body>
+<poetry>
 <nonum><center>1.</center></nonum>
 
 Af mine Taarer spirer
@@ -6476,10 +6648,11 @@ Dybt brænde skal min Kjærlighed,
 Ind til min Død mon stunde;
 Da tager jeg i Graven med
 Den store Elskovs-Vunde.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090357" variant="winther2017100275">
+<text id="winther2018090357" variant="winther2017100275">
 <head>
    <title>Efter det Tydske</title>
    <firstline>Ingen Ild, ingen Brand</firstline>
@@ -6490,6 +6663,7 @@ Den store Elskovs-Vunde.
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ingen Ild, ingen Brand
 Kan flamme saa heed,
 Som hemmelig Elskov,
@@ -6504,10 +6678,11 @@ Ak, sæt kun et Glar
 For mit Hjertes Bo,
 At ret du kan stue,
 Hvor <w>jeg</w> er dig tro!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090430">
+<text id="winther2018090430">
 <head>
     <title>Dyrenes Skriftemaal</title>
     <firstline>Da Dyrene end talte</firstline>
@@ -6515,6 +6690,7 @@ Hvor <w>jeg</w> er dig tro!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Da Dyrene end talte,
 De og til Skrifte gik;
 De vare, som de troede,
@@ -6580,10 +6756,11 @@ Gak I kun roligt hjem;
 Hver Synd er Jer tilgivet,
 Jeg veed, at aldrig i Livet
 I meer vil øve dem.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090431">
+<text id="winther2018090431">
 <head>
     <title>Hanen Kykels Liigbegjærelse</title>
     <firstline>Hvem vog Hanen Kykel?</firstline>
@@ -6591,6 +6768,7 @@ I meer vil øve dem.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvem vog Hanen <w>Kykel?</w>
 Jeg, <w>Glenten</w> sagde,
 Jeg ham ødelagde,
@@ -6640,10 +6818,11 @@ Hver Fugl i Luft, paa Hav
 Til Graad og Klage rørtes,
 Da Sørgeklokken hørtes
 Ved Hanen <w>Kykels</w> Grav.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090432">
+<text id="winther2018090432">
 <head>
     <title>Musen i Besøg hos Frøen</title>
     <subtitle>Efter Rollenhagen</subtitle>
@@ -6652,6 +6831,7 @@ Ved Hanen <w>Kykels</w> Grav.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Engang blev <w>Krummetyv</w>, en Prinds
 Af Museslægten, saa til Sinds,
 At han en Reise vilde gjøre
@@ -6843,10 +7023,11 @@ Men da de havde reist sig Begge,
 Begyndte Alle igjen at qvække
 Og hilse Aftenen med Sang,
 Saa lydt det gjennem Skoven klang.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090433">
+<text id="winther2018090433">
 <head>
     <title>En Familiehistorie</title>
     <subtitle>Efter Rollenhagen</subtitle>
@@ -6855,6 +7036,7 @@ Saa lydt det gjennem Skoven klang.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Der var en Mand som var saa klog.
 At han forstod al Verdens Sprog;
 Ei blot, hvad Menneskernes Tunge
@@ -7105,10 +7287,11 @@ Men Manden, som bag Hækken laae
 Og kunde deres Sprog forstaae,
 Alt opskrev, hvad han kunde mindes
 Saaledes, som det her nu findes.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090434">
+<text id="winther2018090434">
 <head>
     <title>Min Gudinde</title>
     <subtitle>Efter Goethe</subtitle>
@@ -7120,6 +7303,7 @@ Saaledes, som det her nu findes.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvilken Gudinde
 Skjenkes den høieste Priis?
 For mig maae I vælge;
@@ -7207,10 +7391,11 @@ Naar Livslyset slukkes
 Maa vende sig fra mig,
 Den ædle Ansporende,
 Trøstende - Haabet!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2018090435">
+<text id="winther2018090435">
 <head>
     <title>Prometheus</title>
     <subtitle>Efter Goethe</subtitle>
@@ -7222,6 +7407,7 @@ Trøstende - Haabet!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Bedæk du kun din Himmel, Zeus!
 Med Taagesky,
 Og øv dig, liig den Pog,
@@ -7285,8 +7471,9 @@ I at lide, at græde,
 I at nyde, og at glæde sig
 Og dig at byde Trods,
 Som jeg!
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section> <!-- Oversættelser -->

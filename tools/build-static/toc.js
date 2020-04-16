@@ -19,14 +19,14 @@ const {
 
 // Rekursiv function som bruges til at bygge værkers indholdsfortegnelse,
 // men også del-indholdstegnelser til de linkbare sektioner som har en id.
-const build_section_toc = section => {
+const build_section_toc = (section) => {
   let poems = [];
   let proses = [];
   let toc = [];
 
-  getChildren(section).forEach(part => {
+  getChildren(section).forEach((part) => {
     const partName = tagName(part);
-    if (partName === 'poem') {
+    if (partName === 'text') {
       const textId = safeGetAttr(part, 'id');
       const head = getChildByTagName(part, 'head');
       const firstline = extractTitle(head, 'firstline');
@@ -53,27 +53,13 @@ const build_section_toc = section => {
         prefix: replaceDashes(toctitle.prefix),
         content: subtoc,
       });
-    } else if (partName === 'prose') {
-      const textId = safeGetAttr(part, 'id');
-      const head = getChildByTagName(part, 'head');
-      const title = extractTitle(head, 'title');
-      const toctitle = extractTitle(head, 'toctitle') || title;
-      if (toctitle == null) {
-        throw `${textId} mangler title og toctitle i ${poetId}/${workId}.xml`;
-      }
-      toc.push({
-        type: 'text',
-        id: textId,
-        title: htmlToXml(toctitle.title),
-        prefix: toctitle.prefix,
-      });
     }
   });
   return toc;
 };
 
 const extract_subworks = (poetId, workbody, collected) => {
-  return getChildrenByTagName(workbody, 'subwork').map(subworkNode => {
+  return getChildrenByTagName(workbody, 'subwork').map((subworkNode) => {
     const subworkId = safeGetAttr(subworkNode, 'ref');
     const subwork = collected.works.get(`${poetId}/${subworkId}`);
     if (subwork == null) {
@@ -83,9 +69,9 @@ const extract_subworks = (poetId, workbody, collected) => {
   });
 };
 
-const build_works_toc = async collected => {
+const build_works_toc = async (collected) => {
   // Returns {toc, subworks, notes, pictures}
-  const extract_work_data = async work => {
+  const extract_work_data = async (work) => {
     const type = safeGetAttr(work, 'type');
     const poetId = safeGetAttr(work, 'author');
     const workId = safeGetAttr(work, 'id');
@@ -116,12 +102,12 @@ const build_works_toc = async collected => {
   };
 
   return Promise.all(
-    Array.from(collected.poets.entries()).map(async entry => {
+    Array.from(collected.poets.entries()).map(async (entry) => {
       const [poetId, poet] = entry;
       safeMkdir(`static/api/${poetId}`);
 
       return Promise.all(
-        collected.workids.get(poetId).map(async workId => {
+        collected.workids.get(poetId).map(async (workId) => {
           const filename = `fdirs/${poetId}/${workId}.xml`;
           if (!fileExists(filename)) {
             return;

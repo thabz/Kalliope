@@ -19,7 +19,7 @@
 </workhead>
 <workbody>
 
-<prose id="rahbek2019092501">
+<text id="rahbek2019092501" skip-index="true">
 <head>
     <title>Forerindring</title>
     <source pages="VII-X" facsimile-pages="227-231" />
@@ -29,6 +29,7 @@
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<prose>
 Meget længe har jeg staaet i Beraad med mig selv, inden jeg bestemte mig til at udgive nærværende Samling. Ikke blot var den Modtagelse, dens ældre Broder, de i Aaret 1794 udkomne poetiske Forsøg første Deel, mødte, ikke meget fristende, hvortil maaskee i den daværende politiske Periode baade indvortes og udvortes Omstændigheder ikke lidet bidroge; men og blev Aaret derpaa ved Kiøbenhavns ulykkelige Ildebrand den største Deel af det tilbageblevne Oplag lagt i Aske; saa at et saare ubetydeligt Antal Exemplarer ere komne ud iblandt Publicum. Ikke desmindre synes Eierne af første Deel, at have et grundet Krav paa, at den lovede Fortsættelse ikke skulde udeblive; men paa den anden Side lod sig ikke for disse allene noget Oplag giøre; endelig faldt jeg da paa den Udvei at bestemme Samlingen tvende Titler, saa at den for dem, der eiede første Deel, blev en Fortsættelse, for andre Kiøbere derimod et selvstændigt Værk; at imidlertid min Ven Forlæggeren, hvis et nogenlunde antageligt Antal af de nye Kiøbere skulle yttre Lyst tillige at faae det første Bind, ikke vilde være uvillig til at oplægge det paa ny, behøver jeg neppe at tilføie.
     Var jeg saa ubestemt, inden jeg kunde beslutte mig til at udgive denne Samling, vil man lettelig kunne troe, at det ikke har været mig mindre vanskeligt, at afgiøre Valget af de Stykker, jeg vilde give Sted deri. Ikke altid er det sikkert at troe sin egen Følelse, der saa ofte ved Stykker af denne Natur lader sig bestikke ved noget gandske andet, end deres poetiske Værdie; ligesaalidet tør man i denne Henseelse tage den større eller mindre Overbærelse, hvormed de i deres Nyhed ere blevne optagne af Publicum, til Rettesnor, da, ikke at tale om, at Smagen ikke siælden forandres, stundum forfiines, stundum vel ogsaa forvanskes, Digte, som udgives samlede af den modnede Mand, betragtes som oftest med ganske andre Øine, end de enkelte Stykker, der nu og da undslippe Yndlingen; midlertid har jeg efter bedste Evne stræbt at udvælge det, jeg ansaae for det mindst ufuldkomne af, hvad Digte jeg paa min mere end tyveaarige Bane har bragt for Lyset; ligesom jeg og smiggrer mig, at man vil finde, at jeg, ved de tilforn bekendte Stykker i det mindste har stræbt, at lade dem her komme frem i en mindre ufuldkommen Gestalt. Til Undskyldning for, at en saa betydelig Deel af de her meddeelte Digte have været trykte tilforn, vil det, haaber jeg, tiene, deels at de, som sagt, ere — ikke siælden meget — forandrede, deels at den største Deel deraf findes i vore ældre periodiske Skrifter, der ere nuomstunder i saare faas Hænder og Minde.
     Den Modtagelse, dette Bind bliver værdiget, vil afgiøre, om jeg uden Ubeskedenhed tør vove at tænke paa et tredie, med hvilket formodenlig denne Samling vil sluttes, da de Stykker jeg af det svenske har oversat og efterlignet, ere bestemte, naar Omstændighederne tillade det, at udkomme for sig selv.
@@ -37,10 +38,11 @@ Meget længe har jeg staaet i Beraad med mig selv, inden jeg bestemte mig til at
     <small>Bakkehuset, den 18 September 1802.</small>
 
 <nonum><right>K. L. Rahbek.</right></nonum>
-</body>
 </prose>
+</body>
+</text>
 
-<poem id="rahbek2020010402">
+<text id="rahbek2020010402">
 <head>
     <title>Laurbærlunden</title>
     <subtitle>
@@ -56,6 +58,7 @@ Meget længe har jeg staaet i Beraad med mig selv, inden jeg bestemte mig til at
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><right>His saltem accumulem donis, et fungar inani Munere.</right></nonum>
 <nonum><right>Virg. Aeneid. vers 886. Lib. VI.</right></nonum>
 
@@ -171,8 +174,9 @@ Saa hun talte, og forsvandt. Jeg eder
 Bringer, hvad hun overdrog til mig,
 Iiler, iiler at opnaae den Hæder,
 Som for mig er uopnaaelig!
+</poetry>
 </body>
-</poem>
+</text>
 
 <section>
 <head>
@@ -180,7 +184,7 @@ Som for mig er uopnaaelig!
 </head>
 <content>
 
-<poem id="rahbek2020010403">
+<text id="rahbek2020010403">
 <head>
     <title>Hanna til Vilhelm</title>
     <subtitle>(Skrevet i den nordamerikanske Krig.)</subtitle>
@@ -191,6 +195,7 @@ Som for mig er uopnaaelig!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Min Vilhelm! kan dig Ordet min ei sige,
 Fra hvem du her faaer Brev! bedrog jeg mig,
 Ifald jeg troede, ingen anden Pige
@@ -411,10 +416,11 @@ Hvormeget havde jeg endnu at sige,
 Og jeg maae slutte nu; lev vel, min Ven!
 Lev stedse, stedse vel! og elsk din Pige!
 Lev vel, kom snart, kom lykkelig igien.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010404">
+<text id="rahbek2020010404">
 <head>
     <title>Anna Boleyn til Kong Hendrik den Ottende</title>
     <subtitle>fra hendes Fængsel i Tower.</subtitle>
@@ -423,6 +429,7 @@ Lev vel, kom snart, kom lykkelig igien.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center>Forerindring.</center></nonum>
 <nonum><small><wrap>(Hendrik den Ottende, Konge af England, som var af politiske Aarsager ung blevet gift med sin ældre Broder Arthurs efterladte Enke Catharina Infantinde af Arragonien, blev siden forelsket i Anna Boleyn, hendes Hoffrøken, lod sig derpaa under Paaskud af Samvittigheds Skrupler stille ved Catharina, og ægtede Anna; men blev faa Aar derefter igien forelsket i Jane Seimour, en af hendes Hofdamer, hørte nu villig efter Annas Tiender, der giorde hende Forbrydelser af adskillige ubetydelige Uforsigtigheder, og lod hende paa Grund af disse fængsle tillige med hendes formeente Yndlinger, dømme fra Livet, og henrette: hvorpaa han samme Dag ægtede Jane Seimour. Et Brev, Anna fra sit Fængsel skrev til sin Mand, og som findes aftrykt saavel i <i>Humes History of England</i>, 5 Bind Not. 9, som i den engelske Spectator 6 B. No. 397, og som i hendes egen Haandskrift bevares i den Cottonske Samling, ligger til Grund i efterfølgende Heroide, og er næsten bogstavelig fulgt.)</wrap></small></nonum>
 
@@ -530,8 +537,9 @@ Det være nok, at jeg uskyldig leed!
 Min Konge! — nei! min Hendrik! — nu lev vel!
 Hver Bøn, hver Tanke nu til Gud skal være
 For mig om Naade og for dig om Held.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section> <!-- Heroider -->
@@ -542,7 +550,7 @@ For mig om Naade og for dig om Held.
 </head>
 <content>
 
-<poem id="rahbek2020010405">
+<text id="rahbek2020010405">
 <head>
     <title>Elegie over Digteren J. Viibe</title>
     <subtitle>
@@ -555,6 +563,7 @@ For mig om Naade og for dig om Held.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Valborgs ædle Sanger! hæv din Stemme
 Danmarks Maro! klag for vor Catull!
 Sanggudindens Yndling! kan du glemme
@@ -587,10 +596,11 @@ Evigt bliver da hans elskte Minde;
 Som hans Aand hans Hierte hædres der,
 For den Ædle Ædles Graad skal rinde
 O! som Eder begge hellig er.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010406">
+<text id="rahbek2020010406">
 <head>
     <title>Til Vaaren</title>
     <firstline>Du nærmer dig! du troer at bringe Glæder</firstline>
@@ -598,6 +608,7 @@ O! som Eder begge hellig er.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Du nærmer dig! du troer at bringe Glæder,
 O! ei skal Lina nyde dig med mig,
 Ei meer indvie mig de Yndigheder,
@@ -658,10 +669,11 @@ O! tænk det Lina! og iil bort til Glæder!
 O! at jeg kunde skæbe dem for dig! - - -
 Held dig o Vaar! du Fryd om Lina spreder
 Hun være glad! — da er det nok for mig.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010407">
+<text id="rahbek2020010407">
 <head>
     <title>Efter Syngespillet Fiskerne</title>
     <firstline>Held mig! mit Ord var Spaadom! værdig toner</firstline>
@@ -669,6 +681,7 @@ Hun være glad! — da er det nok for mig.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Held mig! mit Ord var Spaadom! værdig toner
 Danbardens Sang om ædle Danskes Dyd;
 Ukiændte Følelser! ved <w>Gesners</w> Toner
@@ -717,10 +730,11 @@ O! siælden er den Skiald, som synger Dyder!
 Men siældnere, hvo saa udbreder dem.
 Vort Fædreland! o føel det Held, du nyder!
 Paaskiøn, du er den siældne Digters Hiem!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010408">
+<text id="rahbek2020010408">
 <head>
     <title>Elegie</title>
     <subtitle>ved en Bruds Død.</subtitle>
@@ -729,6 +743,7 @@ Paaskiøn, du er den siældne Digters Hiem!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
     Ei prøver jeg at male dig Veninde!
 Hvor skiøn, hvor god du var! det kan jeg ei!
 En bedre Digter reiste dig et Minde,
@@ -777,10 +792,11 @@ Vild du de Arme da mod Himlen rækker,
 Af vores Smerte, hvad den mistet har!
 O sørger! thi vor Sorg er hendes Ære,
         Som før vor Glæde var.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010409">
+<text id="rahbek2020010409">
 <head>
     <title>Mit Digterkald</title>
     <subtitle>Til Lina</subtitle>
@@ -790,6 +806,7 @@ O sørger! thi vor Sorg er hendes Ære,
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I Barndoms Aar var alt min Siæls Attraae
 En Digterkrands; en Ewalds Navn begiærte,
 Jeg stolt, hvis ei en Aristarchs at naae!
@@ -834,10 +851,11 @@ Nu tvivler jeg ei meer, at hun er til,
 Mit Hiertes Saar mig denne Tvivl forbyde;
 Men om hun Phøbi Løfte holde vil?
 Vil du! — hvor sødt skal da min Sang ei lyde.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010410">
+<text id="rahbek2020010410">
 <head>
     <title>Ved Skuespilleren Hortulans Død</title>
     <firstline>Op af din Slummer! Melpomene byder!</firstline>
@@ -845,6 +863,7 @@ Vil du! — hvor sødt skal da min Sang ei lyde.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
     ''Op af din Slummer! Melpomene byder!
 ''Grib den borthængte Luth, der fordum lød
 ''Til tabte Ædles Roes, og nu ei lyder
@@ -865,10 +884,11 @@ Det være lykkelige Skialders Ære
 Og Sandhed denne Gravskrift sætte ham:
 <i>Stor var han; stor endog ved Roses Side</i>,
         <i>Og Rose priiste ham</i>.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010411">
+<text id="rahbek2020010411">
 <head>
     <title>Den fortvivlende Elsker</title>
     <subtitle>(Efter Theocrits tre og tyvende Idylle.)</subtitle>
@@ -877,6 +897,7 @@ Og Sandhed denne Gravskrift sætte ham:
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
   Skiøn <w>Nais</w> var, som Kærligheds Gudinde,
 Men kold og stolt, liig Jupiters Gemahl;
 Utalte elsked hende dem til Qval,
@@ -953,10 +974,11 @@ Han lod den falde ned og knuse hende!
 Hver, som er hende liig, advare maae,
 Den Gud, hvis Hævn ei Skiønhed kan undgaae;
 Ved Grusomhed ei mod sig at bevæbne.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010412">
+<text id="rahbek2020010412">
 <head>
     <title>Hiemvee</title>
     <subtitle>
@@ -969,6 +991,7 @@ Ved Grusomhed ei mod sig at bevæbne.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
   Min Fædrestad! som giemmer al min Lyst,
 Dig denne Længselssang indviet være.
 Af syvfold Længsel svulmer nu mit Bryst,
@@ -1077,10 +1100,11 @@ Hvad om vi samles ei til Glæde meer!
 Om over dem din Skiæbne sig skal drage?
 O! var mig denne Marter hist bestemt!
 Her lad mig bortdøe ubegrædt og glemt!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010413">
+<text id="rahbek2020010413">
 <head>
     <title>Luises Minde</title>
     <firstline>De kom, de kom, de længe ønskte Dage</firstline>
@@ -1091,6 +1115,7 @@ Her lad mig bortdøe ubegrædt og glemt!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
   De kom, de kom, de længe ønskte Dage
 Med søde Taarer hilser jeg mit Hiem,
 Mig Venner, glade, som jeg selv modtage;
@@ -1171,10 +1196,11 @@ Og uforstyrrelig er deres Slummer,
 Hist er dens Hiem for dem, der ligne dig!
 Veninde! o! tilgiv os, at vi græde;
       Men ak! vi tabte dig.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010414">
+<text id="rahbek2020010414">
 <head>
     <title>Mit Ideal</title>
     <subtitle>(Som Sidestykke til Prof. Baggesens <w>Lydia</w>).</subtitle>
@@ -1186,6 +1212,7 @@ Veninde! o! tilgiv os, at vi græde;
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
   Min Laura stræng forskyder mine Suk,
 Hun grusom byder mig at glemme hende,
 O Laura! Laura! o hvorfor saa smuk?
@@ -1218,10 +1245,11 @@ Og jeg for dig ei skulde sukke meer! —
 Umuelighed maae Laura mig ei byde,
 Dig maae jeg elske! — men hav du mig kiær,
 O intet Suk skal strænge Forbud bryde.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010415">
+<text id="rahbek2020010415">
 <head>
     <suptitle>1785</suptitle>
     <title>En Elegie</title>
@@ -1231,6 +1259,7 @@ O intet Suk skal strænge Forbud bryde.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><right>It is the voice of years, that are gone</right></nonum>
 <nonum><right><i>Ossian.</i></right></nonum>
 
@@ -1326,10 +1355,11 @@ Ei meer jeg ønsker andres Grav at pryde,
 Kun til min egen staaer mit Haab og Hu!
 O maatte kun paa den <w>een</w> Taare flyde!
 Det er mit sidste Haab og Ønske nu!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010416">
+<text id="rahbek2020010416">
 <head>
     <title>Over Lydas Canariefugl</title>
     <subtitle>(Efter Catul.)</subtitle>
@@ -1338,6 +1368,7 @@ Det er mit sidste Haab og Ønske nu!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Græder Gratier! thi Lyda græder!
 Eders Søsters yndte Fugl er død,
 Den fortiener slige Taarers Hæder,
@@ -1370,10 +1401,11 @@ Løser snart de korte Glæder af.
 Maatte dog din Sanger arve dig!
 Eengang ved hans Gravhøi Taarer rinde,
 Som de Taarer, der blev offret dig.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010417">
+<text id="rahbek2020010417">
 <head>
     <title>Nancy</title>
     <firstline>Har Jorden ingen mere Fred for mig?</firstline>
@@ -1381,6 +1413,7 @@ Som de Taarer, der blev offret dig.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
   Har Jorden ingen mere Fred for mig?
 Hvor flyer jeg for at undflye Nancys Minde!
 Orest! dig martred ei din Qvalgudinde,
@@ -1453,10 +1486,11 @@ Et rædsomt sandt Symbol paa hver Charite,
 Hvis Koglesmiil kun lede til vor Grav;
 Da knuus, o Himmel! med mit piinte Bryst
 Hvert Marterminde af forsvunden Lyst!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010418">
+<text id="rahbek2020010418">
 <head>
     <title>Efter Tibull</title>
     <firstline>Lad, hvo der vil, kun Tønder Guld opdynge</firstline>
@@ -1464,6 +1498,7 @@ Hvert Marterminde af forsvunden Lyst!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Lad, hvo der vil, kun Tønder Guld opdynge,
 Jeg Mammons gyldne Trældom ei attraaer;
 Hans Trælhær mange svare Sorger tynge,
@@ -1584,10 +1619,11 @@ Dog, Laura! agt kun ikke paa min Smerte!
 Giør blot en værdig Elsker lykkelig,
 Der elsker, der forstaaer dit store Hierte!
 Og vær ham evig kiær, som du er mig.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010419">
+<text id="rahbek2020010419">
 <head>
     <title>Til en kiær Veninde</title>
     <firstline>Dag for Dag, og Aar for Aar henflyder</firstline>
@@ -1595,6 +1631,7 @@ Og vær ham evig kiær, som du er mig.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Dag for Dag, og Aar for Aar henflyder,
 Og urokkeligt vor Venskab stod,
 Tidens Kiæmpestrøm forgiæves bryder
@@ -1603,10 +1640,11 @@ Dette Venskab, er mit Held, min Ære,
 Tit i Mismods Stund det trøsted' mig,
 Det min sande Himmel vilde være,
 Hvis jeg stedse saae Dem lykkelig.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010420">
+<text id="rahbek2020010420">
 <head>
     <title>Til en Venindes Fødselsdag</title>
     <firstline>Ei evig man mig forekaste skal</firstline>
@@ -1614,6 +1652,7 @@ Hvis jeg stedse saae Dem lykkelig.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ei evig man mig forekaste skal,
 Min Luth indviet er til Kummer eene,
 Mit Øie hæftet paa hver Sorgers Scene,
@@ -1650,10 +1689,11 @@ Med Hiertets Ømhed smykker hun din Røst;
 <i>Den kommee ofte best, som kommer silde,</i>
 <i>I Dyder gav</i>, saa sagde hun, og smiilde,
 <i>Jeg lønner dem!</i> da gav hun dig min Ven.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010421">
+<text id="rahbek2020010421">
 <head>
     <title>C. P. Roses Minde</title>
     <firstline>Ei forgiæves lærte jeg at frygte</firstline>
@@ -1664,6 +1704,7 @@ Med Hiertets Ømhed smykker hun din Røst;
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ei forgiæves lærte jeg at frygte,
 Da landflygtig nys ved Pleissens Bred,
 Jeg, forfærdet ved din Fares Rygte,
@@ -1729,10 +1770,11 @@ Evig skal jeg elske, evig ære,
 Hver en kiær Admindelse fra dig,
 Og den Drøm min Vandrings Lise være
 At jeg sees, og elskes end af dig.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010422">
+<text id="rahbek2020010422">
 <head>
     <title>Til Kunstnerinden M. C. Biørn</title>
     <subtitle>(Efter Balletten den skinsyge Kone.)</subtitle>
@@ -1744,6 +1786,7 @@ At jeg sees, og elskes end af dig.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Gratie! nu undres jeg ei længer,
 At vi deelte Assas Lidelser,
 At Annettes Sorg os giennemtrænger,
@@ -1784,10 +1827,11 @@ Vær da længe, længe Scenens Smykke,
 Nyd hver Skiønners Priis, hver Muses Gunst,
 Og din Kunstnerhæder og din Lykke
 Blomstre skiøn som du, og som din Kunst!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010423">
+<text id="rahbek2020010423">
 <head>
     <title>Til min kiæreste Venindes Fødselsdag</title>
     <firstline>Min Stolthed er, at være Deres Ven</firstline>
@@ -1795,6 +1839,7 @@ Blomstre skiøn som du, og som din Kunst!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Min Stolthed er, at være Deres Ven,
 O! skulde jeg da ei med Sang modtage
 Den første mellem min Venindes Dage?
@@ -1847,10 +1892,11 @@ At Dyden er, selv ubelønnet, skiøn.
 Bliv engang lykkelig, som De fortiener,
 Og det istemme alle deres Venner:
 Hvad kan man ønske Dem og Dyden meer?
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010424">
+<text id="rahbek2020010424">
 <head>
     <title>P. Gierløvs Minde</title>
     <firstline>Klager Dydens fromme Sønner, klager!</firstline>
@@ -1858,6 +1904,7 @@ Hvad kan man ønske Dem og Dyden meer?
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Klager Dydens fromme Sønner, klager!
 I en ædel Broder mistet har,
 Alle Pieriders Venner! klager!
@@ -1886,10 +1933,11 @@ O gid slige Brødre, slige Venner,
 Evig dette Samfund pryde maae;
 Og gid hver af os, som det fortiener,
 Kiændes, mindes, elskes, savnes saa.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010425">
+<text id="rahbek2020010425">
 <head>
     <title>De Elskendes Salighed</title>
     <subtitle>Efter Hölty.</subtitle>
@@ -1901,6 +1949,7 @@ Kiændes, mindes, elskes, savnes saa.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 End er du ei til Himlen vendt tilbage,
   Du Paradisets reene Lyst,
 Dig kan endnu den Lykkelige smage -
@@ -1941,10 +1990,11 @@ Med Livet selv end deres Fryd ei endes,
   Den giennem Graven følger dem;
 Hun bliver evig hans, han evig hendes,
   I Kiærligheds og Glæders Hiem.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010426">
+<text id="rahbek2020010426">
 <head>
     <title>Madrigal</title>
     <subtitle>(Efter Qvinault.)</subtitle>
@@ -1956,16 +2006,18 @@ Hun bliver evig hans, han evig hendes,
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Før skal, saa svor du Chloe, Bølgen tage,
 Til Kildens første Værd sit Løb tilbage,
 Før jeg ophøre skal at elske dig,
 See! Bølgerne ad fordums Bane vandre,
 O Chloe! de ei deres Løb forandre,
 Og du! du har forandret dig.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010427">
+<text id="rahbek2020010427">
 <head>
     <title>Til Henriette Rosenstands Pleiedøttre</title>
     <firstline>Græder Jettas elskte Piger! græder!</firstline>
@@ -1973,6 +2025,7 @@ Og du! du har forandret dig.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Græder Jettas elskte Piger! græder!
 Strøer med Blomster vor Venindes Grav!
 Hvo kan dadle, eller trøste Eder?
@@ -2037,10 +2090,11 @@ Det er Dydens beste Løn paa Jorden,
 Hist en større Løn den tildeelt er;
 Ogsaa den er nu vor Jettas vorden,
 Bliver den, og Eders Jetta værd!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010428">
+<text id="rahbek2020010428">
 <head>
     <title>Til en kiær Venindes Fødselsdag</title>
     <firstline>Atter gleed et Aar af Deres Dage</firstline>
@@ -2048,6 +2102,7 @@ Bliver den, og Eders Jetta værd!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Atter gleed et Aar af Deres Dage,
 Ak ei huldt, og skiønt, som Deres Siæl;
 Tit det mørknedes ved bitter Klage
@@ -2088,10 +2143,11 @@ Nyde hver dets skyldfrie Fryd igien.
 Miskiænd ikke Deres eget Værd,
 Vore Kaar uddeeles ei i Blinde,
 Støvets Dyder lønnes ogsaa her.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010429">
+<text id="rahbek2020010429">
 <head>
     <title>Til G. Faye</title>
     <firstline>Vor Lod er Kummer; ingen Bøn bevæger</firstline>
@@ -2100,6 +2156,7 @@ Støvets Dyder lønnes ogsaa her.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Vor Lod er Kummer; ingen Bøn bevæger
 Den strænge Parce at formilde den;
 Dog rækker hun os stundum Glædens Bæger,
@@ -2112,10 +2169,11 @@ Og Glædens Skaaler vil jeg først see tomme,
 Før jeg og mine Venner skilles ad;
 Og kommer Sorgen siden, lad den komme,
 Saa var jeg dog, den Stund jeg kunde, glad.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010430">
+<text id="rahbek2020010430">
 <head>
     <title>Faarene</title>
     <subtitle>(Efter Mad. Deshoulieres)</subtitle>
@@ -2127,6 +2185,7 @@ Saa var jeg dog, den Stund jeg kunde, glad.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Uskyldige og muntre Faar!
 Hvor lykkelige ere Eders Kaar,
 I græsse i vor Eng for selvskabt Kummer frie;
@@ -2177,10 +2236,11 @@ O græsser frit, I sorgfrie Faar!
 Paaskiønner Eders gyldne Kaar,
 Trods det bedragelige Skin er I,
 Som lykkeligere, saa klogere, end vi.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010431">
+<text id="rahbek2020010431">
 <head>
     <title>Til et ungt Ægtepar</title>
     <firstline>Falsk og flygtig er al Jordens Glæde</firstline>
@@ -2188,6 +2248,7 @@ Som lykkeligere, saa klogere, end vi.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Falsk og flygtig er al Jordens Glæde,
 Vinterdagens korte Soelskin liig,
 Naar du tryg paa Roser troer at træde,
@@ -2220,10 +2281,11 @@ Eene Dyd kan nyde disse Glæder,
 Denne Lykke Daaren er for reen.
 Dyrebare! den blev skiænket Eder!
 Eier, nyder, og paaskiønner den.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010432">
+<text id="rahbek2020010432">
 <head>
     <title>Den attende December</title>
     <subtitle>1789.</subtitle>
@@ -2232,6 +2294,7 @@ Eier, nyder, og paaskiønner den.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Atter, atter kommer du tilbage,
 Dag, paa hvilken jeg til Sorg blev fød,
 Helligholder Eders Fødselsdage,
@@ -2256,10 +2319,11 @@ Vinterdagens leede Rædseler.
 Snart jeg slumre i din trygge Favn,
 Ingen, ingen ved min Urne klage,
 Døe med mig, mit Minde og mit Navn!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010433">
+<text id="rahbek2020010433">
 <head>
     <title>Til et landligt Ægtepar</title>
     <firstline>Den lykkelige, hvem den blide Himmel</firstline>
@@ -2267,6 +2331,7 @@ Døe med mig, mit Minde og mit Navn!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Den lykkelige, hvem den blide Himmel,
 Med Yndest, Dagens Lys at helse saae,
 Ham skiænkte den langt, langt fra Stæders Vrimmel,
@@ -2303,10 +2368,11 @@ Dem savner du endnu, men Tiden iler,
 Den eene savnte Fryd at bringe dig! —
 Naar spæde Glut paa Moderarmen smiler,
 Da, da er du tilfulde lykkelig.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010434">
+<text id="rahbek2020010434">
 <head>
     <title>Suk</title>
     <firstline>Lyksalig den, der langt fra Mennesker</firstline>
@@ -2314,6 +2380,7 @@ Da, da er du tilfulde lykkelig.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Lyksalig den, der langt fra Mennesker,
 Sit skiulte Liv i eensom Vraae hendrager,
 Der ingen Ven med sine Griller plager,
@@ -2322,10 +2389,11 @@ Hver Hiertets Drift kun skabtes til vor Smerte;
 Sit eget Græskar her hver <w>Jonas</w> har,
 Snart Venskab, og snart Kiærlighed det var,
 Og eene til vor Marter fik vi Hierte.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010435">
+<text id="rahbek2020010435">
 <head>
     <title>P. H. Aagaards Minde</title>
     <subtitle>Ostendent hunc terris tantum fata, neque ultra Esse sinent.</subtitle>
@@ -2334,6 +2402,7 @@ Og eene til vor Marter fik vi Hierte.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 For hvem er denne Klage, som gienlyder
 Fra Høiheds Borg og Ringheds mørke Vraa?
 Hvo er den tabte Værdige, der nyder
@@ -2386,10 +2455,11 @@ Og bedre Digtere dig skulle sætte,
 Et Minde, dine Dyder mere værd,
 Kun denne Roes skal aldrig nægtes dette:
 At Sandhed skrev hvert Ord, som findes her.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010436">
+<text id="rahbek2020010436">
 <head>
     <title>Krandsen</title>
     <subtitle>(Efter Prior.)</subtitle>
@@ -2401,6 +2471,7 @@ At Sandhed skrev hvert Ord, som findes her.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Af Vaarens faure Blomsterhær,
 De skiønneste, jeg kunde finde,
 Violer, Roser, Lilier,
@@ -2441,10 +2512,11 @@ Min Taare hendes Liig har vædet.
 I Morgen kan din Laura være!
 O! Ven! o dig dit Hierte lære,
 Hvorfor din Lauras Taare flød.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010437">
+<text id="rahbek2020010437">
 <head>
     <title>Afsked til J. Rein</title>
     <subtitle>kaldet til Sognepræst i Caudocheno.</subtitle>
@@ -2454,6 +2526,7 @@ Hvorfor din Lauras Taare flød.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Og du — min Rein! bortrives af mit Favn!
 Snart har jeg ingen, ingen Ven tilbage;
 Dog — klaged' jeg ved hvert af mine Savn,
@@ -2526,10 +2599,11 @@ Og lykkelig trods nogen Fyrste være.
 Din Ven skal høre det, og sig skal fryde;
 Den Fryd, som Venners Lykke skiænker mig,
 Er Alt, hvad Skiæbnen under mig at nyde,
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010438">
+<text id="rahbek2020010438">
 <head>
     <title>Anacreons Gravskrift</title>
     <subtitle>(Efter Anthologien.)</subtitle>
@@ -2538,6 +2612,7 @@ Er Alt, hvad Skiæbnen under mig at nyde,
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Alle Glæder dig til Hersker kaare,
 Du som Smerdias saa trofast var,
 Musers Yndling, som med Længsels Taare
@@ -2550,10 +2625,11 @@ Hos Proserpina i Dans du slynge
 Om din Euripyle kiærlig Haand!
 Ogsaa der du Glædens Sange synge,
 Liige dem, som her henrev vor Aand.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010439">
+<text id="rahbek2020010439">
 <head>
     <title>For en Ven til en ædel Piges Fødselsdag</title>
     <firstline>Er det den sande Lykke her paa Jorden</firstline>
@@ -2561,6 +2637,7 @@ Liige dem, som her henrev vor Aand.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Er det den sande Lykke her paa Jorden,
 At skabe milde Glæder rundt om sig,
 Veninde! din den skiønne Lod er vorden,
@@ -2593,10 +2670,11 @@ Mig være Borgen, han bønhører den.
 Du end ei har det mindste at begiære,
 Da tænk, at Himlen dig ei skiænkte mere,
 End du var værd, og end jeg ønskte dig.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010440">
+<text id="rahbek2020010440">
 <head>
     <title>J. C. Bernhofts Minde</title>
     <firstline>Og du, min Bernhoft! du ei heller meer</firstline>
@@ -2604,6 +2682,7 @@ End du var værd, og end jeg ønskte dig.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Og du, min Bernhoft! du ei heller meer,
 Nys iilte jeg saa freidig giennem Livet,
 Af ædle Venners muntre Kreds omgivet,
@@ -2632,10 +2711,11 @@ Og dette Held var nok, var Alt for dig.
 Din Grav skal mangen Ven, med sølvgraae Isse,
 Og disse Ord til yngre Broder vise,
 Han var min Ven, og ægte Norges Søn.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010441">
+<text id="rahbek2020010441">
 <head>
     <title>Saphos Fragment</title>
     <subtitle>(Oversat.)</subtitle>
@@ -2644,6 +2724,7 @@ Han var min Ven, og ægte Norges Søn.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Som Zeus lyksalig er den Mand,
 Der ved din Side sidde kan,
 Og see dit hulde Smiil, og høre,
@@ -2656,10 +2737,11 @@ Naar jeg dig hører, skimter, seer,
 Jeg aander, sandser neppe meer,
 Jeg gyser, bæver, blusser, blegner,
 Og halvdød for din Fod nedsegner.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010442">
+<text id="rahbek2020010442">
 <head>
     <title>Til Thalias Carolina</title>
     <subtitle>(I en Samling Poesier.)</subtitle>
@@ -2669,6 +2751,7 @@ Og halvdød for din Fod nedsegner.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Du her ei Evald, ei vor Viibe finder,
 Da du bortveeg for nedrig Avinds Sviig,
 Med Gratierne alle Sanggudinder
@@ -2685,10 +2768,11 @@ Dog qviddre vi saa godt, vi have lært,
 At tækkes Musers yndigste Veninde,
 O! er vort Qvad end ei dit Bifald værdt,
 Vor gode Villie dog din Yndest vinde.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010443">
+<text id="rahbek2020010443">
 <head>
     <suptitle>Efter</suptitle>
     <title>En Forestilling af Grevinde Almaviva</title>
@@ -2700,6 +2784,7 @@ Vor gode Villie dog din Yndest vinde.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Veninde! paa Parnas en hastig Trætte
 Nys mellem begge Scenens Muser var,
 Den var om dig; tro vil jeg den berette;
@@ -2716,10 +2801,11 @@ Omsider eentes begge, at de vilde
 Dig overlade Valget mellem sig,
 Men studsende de saae, de kom for silde;
 Alt havde Gratierne krandset dig.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010444">
+<text id="rahbek2020010444">
 <head>
     <title>Ved Fredrik Sneedorffs Død</title>
     <firstline>Han var saa god, som han var viis og lærd!</firstline>
@@ -2727,6 +2813,7 @@ Alt havde Gratierne krandset dig.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Han var saa god, som han var viis og lærd!
 Saa ved din Faders Grav lød alles, alles Klage,
 Vi ved din tomme Gravhøi den gientage,
@@ -2743,10 +2830,11 @@ Held den, en <w>Rothe</w>, den, en <w>Suhm</w> begræder.
 Som disses den dig ei kan hædre,
 Dit Værd de kiænde, og bedømme bedre,
 Men meer end jeg, de ikke elske dig.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010445">
+<text id="rahbek2020010445">
 <head>
     <title>For en Ven med en Rose</title>
     <subtitle>
@@ -2761,6 +2849,7 @@ Men meer end jeg, de ikke elske dig.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 En bedre Digter os fortalte,<note>* Vor <w><a poet="tode">Tode</a></w>, som nyelig i et Vers, der maaskee er den smukkeste Compliment, vi eie paa dansk, til <w>Mad. B; som tilkiændte Rosen Skjønhedspriis</w>, havde sagt:<br/>O! du behøver ei at sige,<br/>Du har den smukkeste blandt Blomster kiær,<br/>Vi veed jo: <w>Lige elsker Lige</w>.</note>
 At mellem alle Blomster du
 Dig til din Yndling Rosen valgte,
@@ -2781,10 +2870,11 @@ Den første mellem dine Dage,
 Huld denne Rose du modtage,
 O gid du vilde ynde den,
 Fordi den sendes af en Ven.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010446">
+<text id="rahbek2020010446">
 <head>
     <title>Bions Klagesang over Adonis</title>
     <firstline>For Adonis er min Klage</firstline>
@@ -2792,6 +2882,7 @@ Fordi den sendes af en Ven.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 For Adonis er min Klage;
 Den deilige Adonis er ei meer.
 Elskovsguderne gientage,
@@ -2939,10 +3030,11 @@ Ei giver Persephone ham igien.
 Hold eengang inde med din Klage,
 Naar Aaret bringer os hans Fest tilbage,
 For ham med dig vi jamre skal igien.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010447">
+<text id="rahbek2020010447">
 <head>
     <title>Afskeed til mit Fristed</title>
     <subtitle>1795</subtitle>
@@ -2951,6 +3043,7 @@ For ham med dig vi jamre skal igien.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Farvel! Farvel! Tak for hver Glimt af Glæde,
 Saa siældent det end var, jeg hos dig nød!
 Men dobbelt Tak, fordi du lod mig græde,
@@ -2959,10 +3052,11 @@ Maaskee, jeg aldrig, aldrig seer dig mere.
 Af idel Tab mit Liv en Kiæde er,
 Men evigt helligt skal det Fristed være,
 Jeg fandt i Livets værste Dage her!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010448">
+<text id="rahbek2020010448">
 <head>
     <title>Suk ved min Faders Grav</title>
     <firstline>Fader! lad mig komme dig ihu</firstline>
@@ -2970,14 +3064,16 @@ Jeg fandt i Livets værste Dage her!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Fader! lad mig komme dig ihu,
 Mindes, lære, arve dine Dyder,
 At naar Døden Timeglasset bryder,
 Jeg da kan henslumre blidt som du.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010449">
+<text id="rahbek2020010449">
 <head>
     <title>Til min ældste Vens, J. Kierulfs Bryllup</title>
     <firstline>Min Ven! som næsten i min Barndoms Dage</firstline>
@@ -2988,6 +3084,7 @@ Jeg da kan henslumre blidt som du.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Min Ven! som næsten i min Barndoms Dage
 Mig rakte broderkiærlig Haand,
 Veileded troe mit Hierte og min Aand,
@@ -3031,10 +3128,11 @@ Og vær da og hans ældste Vens Veninde!
 — For at indfatte Alt i eet —
 Saa reent et Held, som Dyd og Kærlighed fortiener,
 Og som jeg ønsker Eder det.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010450">
+<text id="rahbek2020010450">
 <head>
     <title>Mira</title>
     <subtitle>(Efter Waller.)</subtitle>
@@ -3047,6 +3145,7 @@ Og som jeg ønsker Eder det.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Om Aftenen blev Adam skabt,
 Strax stirred Hans henrykte Øie,
 I frydefuld Beundring tabt,
@@ -3063,10 +3162,11 @@ Tilbedende den Uforlignelige.
 Jeg før for andre Skiønne brændte,
 Jeg da som Adam intet større kiændte;
 Nu først jeg dig har seet, og elsker dig.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010451">
+<text id="rahbek2020010451">
 <head>
     <title>Melpomene</title>
     <subtitle>Ved Samsøes Sørgeminde.</subtitle>
@@ -3076,6 +3176,7 @@ Nu først jeg dig har seet, og elsker dig.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Mangen Taare paa min Krands er runden,
 Glædestaare, medens jeg den bandt,
 Ak! og da den var forgiæves bunden,
@@ -3104,10 +3205,11 @@ Elsk da dine Venner, dine Pligter,
 Krandsen, jeg paa Urnen sætter hen,
 Længe Melpomenes Taare rinde,
         For sin tabte Ven.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010452">
+<text id="rahbek2020010452">
 <head>
     <title>Til Digteren Falsen</title>
     <subtitle>(I et Exemplar af Samsøs Skrifter.)</subtitle>
@@ -3117,6 +3219,7 @@ Længe Melpomenes Taare rinde,
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ven, som fortolked Melpomenes Savn,
 Iil, iil! hun kalder dig, det at oprette,
 Og til din ædle Tinding vil hun flette
@@ -3129,10 +3232,11 @@ O! saa var og min Drøm i bedre Tid,
 — Saa mangen gylden Drøm med hine Dage flyede, —
 Dog synes mig min Aften mere blid,
 Naar jeg mig nægtet Krands seer Venners Tinding
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010453">
+<text id="rahbek2020010453">
 <head>
     <title>Den ædle Digters Minde</title>
     <subtitle>(Efter Littleton.)</subtitle>
@@ -3145,6 +3249,7 @@ Naar jeg mig nægtet Krands seer Venners Tinding
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ei kom jeg Eders Skaansel at begiære,
 For Scener ak! hvis Digter ei er mere,
 Nei de, som han, imens han vandred' her
@@ -3167,10 +3272,11 @@ Sin himmellærte Luth indvied hans Camene
 Til ædle milde Følelser allene,
 Og intet Ord undslap hans kydske Pen,
 Han kunde døende attraae udslukt igien.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010454">
+<text id="rahbek2020010454">
 <head>
     <title>Et Vaarsuk</title>
     <subtitle>(Efter det Franske.)</subtitle>
@@ -3180,6 +3286,7 @@ Han kunde døende attraae udslukt igien.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 O kom! kom snart tilbage, hulde Vaar!
 Hvi dvæle dine glæderige Dage?
 See taus, og død, og skaldet Lunden staaer,
@@ -3188,10 +3295,11 @@ Ak naar med tætte Løv du Lunden klæder,
 Da kan jeg Arme useet dølge der
 Den beedske Graad, jeg for min Falske græder,
 Til andet Gavn mig aldrig Skyggen er.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010455">
+<text id="rahbek2020010455">
 <head>
     <title>Til Samsøes of min sande Vendinde</title>
     <subtitle>
@@ -3203,6 +3311,7 @@ Til andet Gavn mig aldrig Skyggen er.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Taus hviler Laurbærlundens Philomele,
 Ak alt for kort dens skiønne Sommer var;
 Og ingen, ingen Sanger Lunden har,
@@ -3226,10 +3335,11 @@ Og hvis et flygtigt Bifalds Smiil du gav,
 Da vilde den — dog stille Daare! stille!
 O! see de heede tunge Taare trille,
 Og sæt dig taus ved Philomeles Grav.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010456">
+<text id="rahbek2020010456">
 <head>
     <title>Til en Ven</title>
     <subtitle>(I Nathan den Vise.)</subtitle>
@@ -3239,6 +3349,7 @@ Og sæt dig taus ved Philomeles Grav.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Med denne Vennegave lad mig, Ven!
 Min kiærlige Admindelse forbinde,
 At naar omsider jeg er slumret hen,
@@ -3255,10 +3366,11 @@ Det Venneminde trofast mig kan yde:
 ''Ei har jeg kiændt min tabte Ven deri;
 ''Men de, hvis Byrde jeg ham saae at drage,
 ''Gud være lovet, at de er forbi.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010457">
+<text id="rahbek2020010457">
 <head>
     <title>Den fortvivlende Elsker</title>
     <firstline>Nei bort med Sange, bort med Dands</firstline>
@@ -3266,6 +3378,7 @@ Det Venneminde trofast mig kan yde:
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nei bort med Sange, bort med Dands,
 Bort med Lyæi Vedbendkrands,
 Og bort, langt bort med alle Glæder.
@@ -3350,10 +3463,11 @@ I Glade, bort med Eders Glæde,
 Min Glæde tabtes med min Møe,
 Thi — til Gud under mig at døe,
 Ak! — under, under mig at græde.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010458">
+<text id="rahbek2020010458">
 <head>
     <title>Venskab</title>
     <subtitle>(Efter Gotter.)</subtitle>
@@ -3365,6 +3479,7 @@ Ak! — under, under mig at græde.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Om Dyd og Aand ei Skiebnen rører,
 Og ei dens Egensind formilde kan,
 Der snart os korte Gravvei fører
@@ -3467,10 +3582,11 @@ Vidt spredtes I! ad fierne Stier maae
 Jeg som et Spil for Lykken gaae,
 Mon paa den dunkle Huulvei, den mig leder,
 Jeg aldrig haabe tør at møde een af Eder?
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010459">
+<text id="rahbek2020010459">
 <head>
     <title>Ved Orpheus Schulzes Død</title>
     <firstline>Farvel! o Schultz! til hine bedre Kloder</firstline>
@@ -3478,14 +3594,16 @@ Jeg aldrig haabe tør at møde een af Eder?
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Farvel! o Schultz! til hine bedre Kloder,
 Der ingen Sorg, ei Sviig, ei Sygdom boer,
 Gienfind din Harmonie i Engles Chor,
 Og i hver Engel find dit Hiertes Broder!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010460">
+<text id="rahbek2020010460">
 <head>
     <title>Fragment</title>
     <subtitle>(Af Mad. Deshoulieres Idylle, Blomsterne.)</subtitle>
@@ -3497,6 +3615,7 @@ Og i hver Engel find dit Hiertes Broder!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Mon da saa stor en Lykke livet er,
 At vi os skulde ønske det tilbage,
 Og mindes, hvo det har saa kiær,
@@ -3505,10 +3624,11 @@ Det blot en Samling er af Frygt, af Smerte,
 Af Møie og Bekymringer;
 For den, der Støvets Lod at kiænde lærte,
 Ei Død det største Vanheld er.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010461">
+<text id="rahbek2020010461">
 <head>
     <title>Til min Camma,</title>
     <toctitle>Til min Camma</toctitle>
@@ -3523,6 +3643,7 @@ Ei Død det største Vanheld er.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I Fior paa denne Dag landflygtig, elskte Pige!
 Jeg neppe torde hviske Carl dit Navn,
 I Aar, i Dag, jeg ved dit elskte Favn,
@@ -3559,10 +3680,11 @@ Jeg dog hver Dag, jeg lever glad med dig,
 Skal bedre, ømmere, dig mere værdig blive,
 At jeg da ret maae see dig lykkelig,
 Os Himlen mange, mange Dage give!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010462">
+<text id="rahbek2020010462">
 <head>
     <title>Til Modgang</title>
     <subtitle>(Efter Gray.)</subtitle>
@@ -3574,6 +3696,7 @@ Os Himlen mange, mange Dage give!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Himlens Datter! uforsonlige!
 Du, som tæmmer Dødeliges Hierter,
 Du, hvis Jernriis med sin Tugtelse,
@@ -3622,10 +3745,11 @@ Du hver udslukt ædel Gnist oplive!
 Lære os at elske og tilgive!
 Lære hver af os sin Feil at see,
 Føle andres Værd, og sig som Menneske.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010463">
+<text id="rahbek2020010463">
 <head>
     <title>Til min Camma,</title>
     <toctitle>Til min Camma</toctitle>
@@ -3637,6 +3761,7 @@ Føle andres Værd, og sig som Menneske.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Lad andre tvistes længe nok om Tiden,
 Og naar det gamle Sekel endte sig;
 Mit nye er begyndt for længe siden,
@@ -3645,8 +3770,9 @@ O vilde Himlen Jubelaar <w>os</w> give,
 Som mangen Jubeldag den skiænket har;
 Vort Samlivs allersidste Dag vil blive
 Saa skiøn, saa glad, som allerførste var.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section> <!-- Elegiske og idylliske Digte -->
@@ -3657,7 +3783,7 @@ Saa skiøn, saa glad, som allerførste var.
 </head>
 <content>
 
-<poem id="rahbek2020010464">
+<text id="rahbek2020010464">
 <head>
     <title>Til Hds. K. H. Hertuginde Lovisa Augusta</title>
     <toctitle>Til H. K. H. Hertuginde Lovisa Augusta</toctitle>
@@ -3667,6 +3793,7 @@ Saa skiøn, saa glad, som allerførste var.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Da Huldgudinden i sin Yndighed
 Betraadde Cyprens lykkelige Bred;
 Alt Folket iilte hende froe imøde,
@@ -3699,10 +3826,11 @@ Og ingens Glæde som Hyrdindens var.
 Fyrstinde! min Camene nærmer sig;
 Hun ikkun Blomster har at byde dig;
 O! maae de tækkes Nordens Huldgudinde!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010465">
+<text id="rahbek2020010465">
 <head>
     <title>Til Digteren C. A. Lund</title>
     <toctitle>Til C. A. Lund i en Afskrift af hans Digte</toctitle>
@@ -3716,6 +3844,7 @@ O! maae de tækkes Nordens Huldgudinde!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Med Hyldest, Ven! modtag fra Vennehænder
 Af Danmarks Digterchor den eeneste,
 Du — ellers den saa strængt retfærdige —
@@ -3744,10 +3873,11 @@ O lyt! o hør, i Trylleharmonie
 Af fordums Sang den fierne Gienklang bæve!
 Her Strængene din elskte Haand at kræve,
 Kiænd Sanggudindens, Danas Kald deri.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010466">
+<text id="rahbek2020010466">
 <head>
     <title>Til Huldgudindens Digter J. Baggesen</title>
     <subtitle>(Tilegnelsen af Poesiesamlingen Charis 1797.)</subtitle>
@@ -3757,6 +3887,7 @@ Kiænd Sanggudindens, Danas Kald deri.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Afgudsdyrkelses og Blindheds Dage
 Man troede, at Chariterne var tre;
 Selv jeg og længe stod i liig Vilfarelse,
@@ -3773,10 +3904,11 @@ Thi hende denne Samling hellig være!
 Dog — vil den tækkes hende? - - Baggesen!
 Med riig og gavmild Haand du pryded den,
 For Huldgudinden du den selv frembære.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010467">
+<text id="rahbek2020010467">
 <head>
     <title>Til min Ven H. Laub</title>
     <toctitle>Til min Ven Pastor H. Laub med en Canariefugl</toctitle>
@@ -3786,6 +3918,7 @@ For Huldgudinden du den selv frembære.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 En lille Qviddrer kommer her,
 Som over Land og salten Bølge
 Din Velærværdighed vil følge
@@ -3810,10 +3943,11 @@ At enten mine Dage rinde
 I Sorger eller Glæder hen,
 Mig stedse kalder Alt i Minde
 Min Kummers, og min Glædes Ven.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2020010468">
+<text id="rahbek2020010468">
 <head>
     <title>Til mit Bakkehus i August 1802</title>
     <firstline>Omsider da! omsider mit du er</firstline>
@@ -3822,6 +3956,7 @@ Min Kummers, og min Glædes Ven.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><small><right>Mihi parva rura</right></small></nonum>
 <nonum><small><right>Et spiritum graiæ tenuem Camenæ,</right></small></nonum>
 <nonum><small><right>Parca non mendax dedit;</right></small></nonum>
@@ -3919,8 +4054,9 @@ Her Baucis og Philemon leve, døe
 Tilsammen i hinandens Arm af Ælde,
 Giengivne <w>Heiberg</w> Graad ved Graven fælde,
 Og <w>Monas Flaccus</w> den med Blomster strøe.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section> <!-- Epistler -->

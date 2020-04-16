@@ -9,7 +9,7 @@
 </workhead>
 <workbody>
 
-<poem id="carroll2002012701b">
+<text id="carroll2002012701b">
 <head>
    <title>Jabberwocky</title>
    <toctitle>Jabberwocky</toctitle>
@@ -23,6 +23,7 @@
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 'Twas brillig, and the slithy toves
    Did gyre and gimble in the wabe;
 All mimsy were the borogoves,
@@ -57,7 +58,8 @@ O frabjous day! Callooh! Callay!"
    Did gyre and gimble in the wabe;
 All mimsy were the borogoves,
    And the mome raths outgrabe.
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

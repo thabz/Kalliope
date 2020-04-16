@@ -30,7 +30,7 @@
 </head>
 <content>
 
-<poem id="ingemann2002050901">
+<text id="ingemann2002050901">
 <head>
     <title>Kong Valdemars Jagt</title>
     <subtitle>(Et sjællandsk Folkesagn.)</subtitle>
@@ -42,6 +42,7 @@
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Paa Sjølunds fagre Sletter
     Ved Østersøens Bred,
 Hvor Skoven Krandse fletter
@@ -167,10 +168,11 @@ Saalunde, mon man sige,
     Han bøde maa med Nag,
 Og vente paa Guds Rige,
     Og Dommens store Dag.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ingemann2001112501">
+<text id="ingemann2001112501">
 <head>
     <title>Til Dannebroge</title>
     <firstline>Vift stolt paa Codans Bølge!</firstline>
@@ -178,6 +180,7 @@ Og vente paa Guds Rige,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Vift stolt paa Codans Bølge!
     Blodrøde Dannebrog!
 Din Glands ei Nat skal dølge;
@@ -240,8 +243,9 @@ Uplettet skal du svinge
     Dig over Verdens Søe,
 Til Nordens Brynier springe
     Og Danmarks Hjerter døe.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section> <!-- Blandede Digte -->

@@ -28,7 +28,7 @@
 </head>
 <content>
 
-<prose id="riber2020032701">
+<text id="riber2020032701">
 <head>
     <title>Biographie og Carakteristik</title>
     <subtitle>
@@ -39,6 +39,7 @@
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<prose>
 Alle den danske Poesies Yndere ville uden Tvivl her med Fornöielse modtage en udvalgt Samling af H. W. Ribers bedste poetiske Arbeider; alle Skiönnere og Yndere af Menneskeværd og Menneskegodhed vilde sikkerlig med end større Glæde modtage dette eiegode og exemplariske Menneskes nøiagtige og fuldstændige Biographie, hvis denne var muelig at skrive. Men uagtet vi begge have den sande Ære at have været af den Afdødes allernøieste Venner, og den ene af os fra hans allerførste Fremskridt paa Litteraturens Bane, og indtil hans allersidste, var næsten uafbrudt hans trofaste Medvandrer; uagtet end ydermere faa Menneskers hele Siæl kunde ligge aabnere for Venskabs, ja for hele Verdens Øine, og mindre trænge enten til egen Frygtsomheds eller venskabelig Skaansomheds Slør end vor <i>Ribers</i>, erkiende vi dog begge, hvor høist ufuldkomment og ufyldestgjørende, det Udkast, vi til hans Biographie her kunne give, er, og nødvendig maae være. Ikke den blide, menneskekiærlige Viise, hvis velbrugte Liv hengled i stille Virksomhed for Brødres Vel, er det lykkeligste Æmne for Biographen, saalidet, som den venlige Strøm, der fredelig bugter sig mellem blomsterklædte Marker, som den giør frugtbare, er det for Landskabsmaleren: Maaskee torde man uden Usandhed sige, at det er Ribers Lovtale, at hans nøieste Venner have saalidet at sige i hans Biographie; havde hans Liv været rigere paa mærkelige Tildragelser, frapperende Scener, udmærkede Træk, en god og ypperlig Mand kunde han da vel have været, men neppe
 
     <i>den fromme</i> <sc>Riber</sc>, <i>alle Godes Ven;</i>
@@ -359,10 +360,11 @@ Ribers ædle Veninde og Velynderinde, hvem hans efterladte Skrifter ere helliged
 %
 veed f at der efter hain kun fandtes et meget ufuldkomment Portrait, hvorefter en af vore yngre Konstnere Hr. Flint var heldig nok til
 at forfærdige den Tegnings som vi her stuk­ ket af Mesterhaand kunne forelægge#
-</body>
 </prose>
+</body>
+</text>
 
-<poem id="riber2020032702">
+<text id="riber2020032702">
 <head>
     <title>Venne-følelser</title>
     <subtitle>Paa en Venindes Fødselsdag</subtitle>
@@ -371,6 +373,7 @@ at forfærdige den Tegnings som vi her stuk­ ket af Mesterhaand kunne forelægg
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Venskab! ja dig sendte Godheds Fader
   Os til Styrkning, os til Fryd, til Trøst!
 Froe dig hylde Himlens Myriader,
@@ -425,10 +428,11 @@ Held mig! <w>Hun</w> istemmer og min Bon:
 ,,Dyds og Viisdoms Bane, Haand i Haand!
 ,,Her forskiøn, o Venskab! hver vor Glæde!
 ,,Hist til større Daad opflam vor Aand!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032703">
+<text id="riber2020032703">
 <head>
     <title>Glædens Minde</title>
     <firstline>Iil, o Ven! fra Stadens skumle Mure</firstline>
@@ -436,6 +440,7 @@ Held mig! <w>Hun</w> istemmer og min Bon:
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Iil, o Ven! fra Stadens skumle Mure;
   Ved Naturens Barm du søge Trøst
 Imod Plagerne, som hisset lure;
@@ -471,10 +476,11 @@ Du, som døver mig med vranten Klage,
   Reis didhen, hvor Glæden favner dig.
 Kommer du da mørk og barsk tilbage;
   Vee dig, Ven! du er ulægelig.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032704">
+<text id="riber2020032704">
 <head>
     <title>Kierligheds Tempel</title>
     <firstline>Guds Vink det øde Mulm fordrev</firstline>
@@ -482,6 +488,7 @@ Kommer du da mørk og barsk tilbage;
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Guds Vink det øde Mulm fordrev,
   Den gamle Nat svandt hen;
 :,: Og Verdens Kreds et Tempel blev
@@ -546,10 +553,11 @@ Her vinde vi en Hæders Krands,
   Vor Gierning skal bestaae,
 :,: Og hist vi skal blandt Stiernersglands
   Til Fredens Tempel gaae. :,:
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032705">
+<text id="riber2020032705">
 <head>
     <title>Den gode Landmands Lykke</title>
     <firstline>Du Naturens ægte Søn!</firstline>
@@ -557,6 +565,7 @@ Her vinde vi en Hæders Krands,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Du Naturens ægte Søn!
 Du, hvis Arbeid' er din Løn,
   Du, som tryg i Hytten boer,
@@ -601,10 +610,11 @@ O! blandt Stadens Sværm og Pragt
 Aldrig man din Fryd har smagt.
   Hiertets sande, blide Fred
   Boer hos from Uskyldighed.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032706">
+<text id="riber2020032706">
 <head>
     <title>Vaar-Sang</title>
     <firstline>Den blide Vaar er kommen!</firstline>
@@ -612,6 +622,7 @@ Aldrig man din Fryd har smagt.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Den blide Vaar er kommen!
 Alt fyldes Lunden med Sange.
 Den blide Vaar er kommen!
@@ -646,10 +657,11 @@ Den blide Vaar er kommen!
 Og Elskov kom med den,
 Og Elskov kom med den,
 Og Elskov kom med den.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032707">
+<text id="riber2020032707">
 <head>
     <title>Mai-Sang</title>
     <firstline>O den skiønne, skiønne Mai!</firstline>
@@ -657,6 +669,7 @@ Og Elskov kom med den.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 O den skiønne, skiønne Mai!
 Træets spæde Blomster
 Pryde Dal og Høie.
@@ -698,10 +711,11 @@ Drømmeren hun vækker,
 Kysses - saa undseelig glad.
 O hvor smiler Pigens Blik!
 Herlig smiler Pigens Blik!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032708">
+<text id="riber2020032708">
 <head>
     <title>Det store Halleluja</title>
     <firstline>Før Verdens Alt blev skabt</firstline>
@@ -709,6 +723,7 @@ Herlig smiler Pigens Blik!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center><w>Accompagnement.</w></center></nonum>
 
 Før Verdens Alt blev skabt,
@@ -850,10 +865,11 @@ Alt, hvad som Aande har       - Love Herren!
 O store Gud! vi love dig,
 Dig prise vi evindelig.
 <nonum><center>Amen.</center></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032709">
+<text id="riber2020032709">
 <head>
     <title>Jesu Opstandelse</title>
     <subtitle>En Cantate</subtitle>
@@ -865,6 +881,7 @@ Dig prise vi evindelig.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center><i>Første Afdeling.</i></center></nonum>
 
 Græder, Adams Sønner! græder!
@@ -998,10 +1015,11 @@ O din Fryd er Christnes Glæde;
 Og i glade Evigheder
 Adams frelste Slægt tilbeder,
   Gud! din seierrige Søn.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032710">
+<text id="riber2020032710">
 <head>
     <title>Jesu Opstandelse</title>
     <firstline>Fuldendt er nu din store Daad</firstline>
@@ -1009,6 +1027,7 @@ Adams frelste Slægt tilbeder,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Fuldendt er nu din store Daad,
   Vi see vort Held imøde,
 Opfyldt er nu din Faders Raad,
@@ -1052,10 +1071,11 @@ Tilbedende mig fryder;
   Og da en bedre Jubelsang
 For dig, som Døden undertvang,
   Hver Himmel giennemlyder.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032711">
+<text id="riber2020032711">
 <head>
     <title>Hymne</title>
     <firstline>Alt hvad som Aande har love vor Gud</firstline>
@@ -1063,6 +1083,7 @@ For dig, som Døden undertvang,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Alt hvad som Aande har love vor Gud;
 Andagts den hellige Glæde opfylde
 Vore Sieles Inderste.
@@ -1082,10 +1103,11 @@ Ham hvis Godhed skabte os. -
 Bundne til Støvet vi elske dog ham,
 Verdeners Fader med Længselens Taarer
 Hisset han aftørrer dem.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032712">
+<text id="riber2020032712">
 <head>
     <title>Cantate</title>
     <subtitle>
@@ -1100,6 +1122,7 @@ Hisset han aftørrer dem.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center><w>For Talen.</w></center></nonum>
 
 <nonum><center>Chor.</center></nonum>
@@ -1172,8 +1195,9 @@ Hver, som Sandheds Vælde skiønner,
 Selv en ufødt Slægt I vise
 Vei til Held, og den skal prise
 <sc>Christians</sc> og eders Navn.
+</poetry>
 </body>
-</poem>
+</text>
 
 <section>
 <head>
@@ -1181,7 +1205,7 @@ Vei til Held, og den skal prise
 </head>
 <content>
 
-<poem id="riber2020032713">
+<text id="riber2020032713">
 <head>
     <title><num>I.</num>Den Mand, som Verdners vise Fader</title>
     <firstline>Den Mand, som Verdners vise Fader</firstline>
@@ -1189,6 +1213,7 @@ Vei til Held, og den skal prise
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Den Mand, som Verdners vise Fader
 Gav Magt at glæde Myriader,
   Hvis Røst er Fødelandets Røst,
@@ -1237,10 +1262,11 @@ Med ærlig, mandig nordisk Iver
 Vor Flid, vort Mod skal evig være
 En Borg om <sc>Christians</sc> Magt og Ære:
   Vor Eed, o Gud! den hørte du!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032714">
+<text id="riber2020032714">
 <head>
     <title><num>II.</num>Med Friheds Aand vi samles her</title>
     <firstline>Med Friheds Aand vi samles her</firstline>
@@ -1248,6 +1274,7 @@ En Borg om <sc>Christians</sc> Magt og Ære:
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Med Friheds Aand vi samles her,
     Til mandig Fryd;
 Thi vi kan føle Folke-Værd
@@ -1277,13 +1304,14 @@ Med Mod og Kraft at virke Gavn
 Og Folkevennens store Navn
     Vi dele skal.
 Vor elskede <sc>Christian</sc> leve!
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section> <!-- Selskabssange paa Kongens Fødselsdag -->
 
-<poem id="riber2020032715">
+<text id="riber2020032715">
 <head>
     <title>Sang</title>
     <toctitle>Ved Kronprindsens Confirmation</toctitle>
@@ -1300,6 +1328,7 @@ Vor elskede <sc>Christian</sc> leve!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Med glade, høie Jubeltoner
 Vi prise dig, som skiænkte Kroner
   Ei til vor Skræk, men til vort Held;
@@ -1348,10 +1377,11 @@ Som glad din Læres Vælde skiønner,
 Og stor og festlig skal ham være
 Den Dag, da Iver for dens Ære
   Du præged' dybt i <sc>Fredriks</sc> Siel.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032716">
+<text id="riber2020032716">
 <head>
     <title>Til Kronprindsen af Danmark</title>
     <firstline>Ei før min Harpe lød for den Mægtige</firstline>
@@ -1359,6 +1389,7 @@ Den Dag, da Iver for dens Ære
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ei før min Harpe lød for den Mægtige,
 Nei, aldrig, Yngling! Kun var den helliget
 Til Venner, Gud, og til den søde
@@ -1443,10 +1474,11 @@ Frihed, som grundes paa Ret og Viisdom!
 Men intet Maal for Glæden, som venter Dig,
 Bliv længe dine Millioners
 Broder! thi een er kun Alles Fader!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032717">
+<text id="riber2020032717">
 <head>
     <title>Selskabs-Sang</title>
     <subtitle>
@@ -1462,6 +1494,7 @@ Broder! thi een er kun Alles Fader!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Med Fryd, som egner Tænkeren,
     Vi saae din Færd,
 Da Du i Ledingstog drog hen
@@ -1491,10 +1524,11 @@ Glem ei, at Avind hvisler kun
 Din høie Priis af Folkets Mund
     Skal dræbe den.
 Gud signe vor elskede <sc>Fredrik</sc>!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032718">
+<text id="riber2020032718">
 <head>
     <title>Borger-Sang</title>
     <subtitle>
@@ -1512,6 +1546,7 @@ Gud signe vor elskede <sc>Fredrik</sc>!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Lad Kampens Helt, i Vaabens Larm,
     Paa Brødres Liig,
 Sin dyre Krands med blodig Arm
@@ -1589,10 +1624,11 @@ Op! klinker! <sc>Frederik</sc> og Fred!
 Og alle Hierter klinke med:
     Velkommen vær!
 Til Ære for Freden og <sc>Fredrik</sc>.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032719">
+<text id="riber2020032719">
 <head>
     <title>Sørgesange</title>
     <toctitle></toctitle>
@@ -1608,6 +1644,7 @@ Til Ære for Freden og <sc>Fredrik</sc>.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center><w>For Talen.</w></center></nonum>
 
 O Natur! du var vor Glæde,
@@ -1683,10 +1720,11 @@ Dydens Veninde; forklaret at nyde
 Snart vi med hende i klarere Lys
 See dig, og evig beundre og prise
     Dig, hvis Bud er Støvets Held!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032720">
+<text id="riber2020032720">
 <head>
     <title>Bernstorffs Minde</title>
     <firstline>Ei Kongers Smiil, som Avind saarer</firstline>
@@ -1694,6 +1732,7 @@ See dig, og evig beundre og prise
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ei Kongers Smiil, som Avind saarer,
 Ei Rigdom, tung af Armods Taarer,
   Ei stolte Slavers glatte Ord,
@@ -1742,10 +1781,11 @@ Din Daad med Hæderssang vi lønne;
 Og Børnebørn af os skal lære:
 Selv kronet Bøddel ei at ære,
   Men den, hvis Fryd er Brødres Lyst.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032721">
+<text id="riber2020032721">
 <head>
     <title>De Frigivne</title>
     <toctitle>De frigivne, efter Voss</toctitle>
@@ -1757,6 +1797,7 @@ Selv kronet Bøddel ei at ære,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Vi bringe dig med Sang og Dands
 Den skiønne, blanke Axekrands,
   Som Brudgom og som Brud.
@@ -1833,10 +1874,11 @@ Nu, Karle! frisk til Glædes Dands
 Vor Fader og hans kiere Slægt,
 Tag, Himmel! i din Varetægt!
 Giv dem de Godes Løn!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032722">
+<text id="riber2020032722">
 <head>
     <title>Seminarist Sang</title>
     <toctitle>Seminaristsang</toctitle>
@@ -1845,6 +1887,7 @@ Giv dem de Godes Løn!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hver ærlig Dansk med henrykt Siel
   Skal høit med os istemme,
 Sit hele Rigets sande Vel
@@ -1880,10 +1923,11 @@ Da bliver os vor Bane skiøn,
   Os Hiertets Fred skal trøste,
 Og engang sikkert vi til Løn
   Vor Møies Frugt skal høste.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber20020509">
+<text id="riber20020509">
 <head>
     <title>Den frie Mand</title>
     <toctitle>Den frie Mand, efter Pfeffel</toctitle>
@@ -1896,6 +1940,7 @@ Og engang sikkert vi til Løn
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvo er den frie Mand?
 Den Mand, hvis eget Tykke,
 Og ei Tyrannens Nykke
@@ -1955,10 +2000,11 @@ Hvo til sit Levnets Dage
 Paa Gravens Bred tilbage
 Med Kækhed skue kan,
 Han er den frie Mand.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032724">
+<text id="riber2020032724">
 <head>
     <title>Edvard Storms Minde</title>
     <firstline>Ei qvæde vi en Minde-Sang</firstline>
@@ -1967,6 +2013,7 @@ Han er den frie Mand.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ei qvæde vi en Minde-Sang
     I høien Chor
 Til Priis for den, som Æt og Rang
@@ -2016,10 +2063,11 @@ Og hver, som virker Borgergavn
 Ham kalde vi med Brodernavn;
     Han er som du.
 Da hædre vi værdigst dit Minde.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032725">
+<text id="riber2020032725">
 <head>
     <title>Til Hr. Professor Adler</title>
     <toctitle>Til Pr. Adler ved hans Søns Død</toctitle>
@@ -2032,6 +2080,7 @@ Da hædre vi værdigst dit Minde.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Sødt i Dødens fredelige Slummer
   Sank din Yndling ned.
 Verdens Flitter, Ondskab, Falskhed, Kummer
@@ -2046,10 +2095,11 @@ Du, som præger Dyden i hvert Hierte,
   Ømt og broderlig!
 Dydens Fader lindre skal din Smerte,
   Han skal trøste dig.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032726">
+<text id="riber2020032726">
 <head>
     <title>Ved Hr. General-Superintendent Adlers Bortreise</title>
     <toctitle>Ved Pr. Adlers Bortreise, for en Ven</toctitle>
@@ -2059,6 +2109,7 @@ Dydens Fader lindre skal din Smerte,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Glad du lød det Bud, vor fælleds Fader
   Gav os alle, - det: at virke Gavn;
 Derfor er blandt os, du nu forlader,
@@ -2078,10 +2129,11 @@ Paa den større Bane, du betræder,
   Skienke Gud dig Held! - du er det værd!
 Men, blandt nye Sysler, nye Glæder,
   Tænk paa os, som dig velsigne her!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032727">
+<text id="riber2020032727">
 <head>
     <title>Gravskrivt over P. Gierløf</title>
     <toctitle>P. Gierløvs Minde</toctitle>
@@ -2090,14 +2142,16 @@ Men, blandt nye Sysler, nye Glæder,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I! hvis Hierter nød den blide Glæde,
   Som Euterpes Yndling eder gav! -
 Dydens Venner! eders Taarer væde
   Eders Vens, den fromme <sc>Gierløfs</sc> Grav!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032728">
+<text id="riber2020032728">
 <head>
     <title>Trøst i mange slags Lidelser</title>
     <toctitle>Trøst i mange slags Lidelser, efter Overbeck</toctitle>
@@ -2109,6 +2163,7 @@ Dydens Venner! eders Taarer væde
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Mange bittre Taarer
   Fældes paa vor Jord;
 Qval, som Hiertet saarer,
@@ -2162,10 +2217,11 @@ Al sin Nød han glemmer,
   Iler glad herfra;
 Hisset han istemmer
   Et Halleluja.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032729">
+<text id="riber2020032729">
 <head>
     <title>Selskabssang</title>
     <toctitle>Selskabssang, efter Claudius</toctitle>
@@ -2177,6 +2233,7 @@ Hisset han istemmer
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center><i>(To Stemmer.)</i></center></nonum>
   Brødre op! drikker Viin!
   Thi kun for de Gode
@@ -2238,10 +2295,11 @@ Bør vi dog ei være rede?
 
 <nonum><center><i>(To Stemmer.)</i></center></nonum>
   Brødre op! drikker Viin!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032730">
+<text id="riber2020032730">
 <head>
     <title>Afskeedsang</title>
     <firstline>Afskedstimen, Brødre! snart fremtræder</firstline>
@@ -2249,6 +2307,7 @@ Bør vi dog ei være rede?
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Afskedstimen, Brødre! snart fremtræder,
 Og dens Vink bortfierner Ven fra Ven,
 Men om Taaren end vort Øie væder,
@@ -2272,10 +2331,11 @@ Dette Samfunds ædle Broder-Aand
 Fiernede vi skal dog Brødre være,
 Dog ei Tid, ei Død skal løsne
 Trofast Venskabs Baand.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032731">
+<text id="riber2020032731">
 <head>
     <title>Fra en Elsker</title>
     <toctitle>Fra en Elsker, paa et Livbaand</toctitle>
@@ -2284,6 +2344,7 @@ Trofast Venskabs Baand.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Herlig lønner du din varme Dyrker
   :,: Himlens blide Datter, Kierlighed! :,:
 Du hans Siel forædler, fryder, styrker,
@@ -2303,10 +2364,11 @@ Og i Dag mit Held jeg tifold smager;
   :,: Thi jeg nyder Alt, med frydfuld Aand, :,:
 Dette Smiil, hvormed den Ædle tager
   Denne Gave af sin Elskers Haand.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032732">
+<text id="riber2020032732">
 <head>
     <title>Sang</title>
     <subtitle>paa et Livbaand til en Veninde.</subtitle>
@@ -2315,6 +2377,7 @@ Dette Smiil, hvormed den Ædle tager
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Varig Fryd blev ei vort Lod i Livet,
   Sundhed, Rigdom, Hæder, alt forgaaer.
 Dog - har Himlen os ei Venskab givet
@@ -2334,10 +2397,11 @@ Strax enhver, som kiender Dem, vil finde,
   At jeg Dem, skiønt svagt, har skildret her;
 Dem maa Baandet sige det, Veninde!
   Kiender vel beskeden Dyd sit Værd?
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032733">
+<text id="riber2020032733">
 <head>
     <title>Til en Søster</title>
     <toctitle>Til en Søster, ligeledes</toctitle>
@@ -2346,6 +2410,7 @@ Dem maa Baandet sige det, Veninde!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Selv i Barndoms Aar, da Naturen tændte
   Venskabs Ild for dig i dette Bryst,
 Jeg dit sieldne Værd, gode Søster! kiendte,
@@ -2365,10 +2430,11 @@ Bliv i hver en Stand Kiønnets Lyst og Hæder,
   Giør en værdig Elsker lykkelig;
 Og han lønne dig for de sande Glæder,
   Som din Aand, dit Hierte skienkte mig!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032734">
+<text id="riber2020032734">
 <head>
     <title>Fra en Fader til sin Datter</title>
     <toctitle>Fra en Fader til sin Datter, ligeledes</toctitle>
@@ -2378,6 +2444,7 @@ Og han lønne dig for de sande Glæder,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Gartneren den spæde Plante freder,
   Og han poder, vander, snitter den;
 Haabet om den Fryd, han sig bereder,
@@ -2397,10 +2464,11 @@ Gartnerens det søde Haab jeg fatter,
   At min Plantes Frugt skal qvæge mig;
 Dette Baand forkynde dig, min Datter!
   Hvad din Fader lover sig af dig.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032735">
+<text id="riber2020032735">
 <head>
     <title>Fra en Mand til sin Kone</title>
     <toctitle>Fra en Mand til sin Kone, ligeledes</toctitle>
@@ -2410,6 +2478,7 @@ Dette Baand forkynde dig, min Datter!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Du, som Himlen sendte mig imøde,
   Da jeg eensom gik ad Banen hen:
 Og som blid har lovet at forsøde
@@ -2429,10 +2498,11 @@ Sødt for os skal Livets Dag henrinde,
   Som dens Morgenrøde klar og skiøn!
 Dette Baand erindre dig, Mandinde!
   Om vor fælleds Eed og Pligt og Løn.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032736">
+<text id="riber2020032736">
 <head>
     <title>Phidile</title>
     <toctitle>Phidile, efter Claudius</toctitle>
@@ -2444,6 +2514,7 @@ Dette Baand erindre dig, Mandinde!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg var i min Uskyldighed;
   De sexten Aar jeg endte;
 Og Mark og Skov og Blomsterbed
@@ -2488,10 +2559,11 @@ Jeg lod mig ikke mærke med
   Den allermindste Klage;
 Slet ikke, - og han fløi afsted;
   Gid han dog kom tilbage!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032737">
+<text id="riber2020032737">
 <head>
     <title>Phidile</title>
     <toctitle>Phidile, efter Brudevielsen, efter samme</toctitle>
@@ -2504,6 +2576,7 @@ Slet ikke, - og han fløi afsted;
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 O Præstemand! Gud signe dig!
   Af dig jeg ham har faaet;
 Mit Hierte - nei saa underlig
@@ -2533,10 +2606,11 @@ Og ingen skal! - o hør det, Gud!
   Jeg kræver dig til Minde.
 Faaer een afos da Dødens Bud,
   Skal vi os hisset finde.,
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032738">
+<text id="riber2020032738">
 <head>
     <title>En daglig Sang</title>
     <toctitle>En daglig Sang, efter samme</toctitle>
@@ -2548,6 +2622,7 @@ Faaer een afos da Dødens Bud,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Som Barnets Hierte glæder sig,
   Og kiender ingen Sorger,
 Jeg takker Gud, og glæder mig,
@@ -2592,10 +2667,11 @@ Opfyld, o Gud! min Trang i Dag!
   Giv Klæder, Mad og Drikke!
 Du føder Spurven paa mit Tag!
   Du glemmer mig vist ikke!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2001071501">
+<text id="riber2001071501">
 <head>
     <title>Klubsang</title>
     <firstline>Enhver, hvis Siel er stemt til jevne Glæder</firstline>
@@ -2606,6 +2682,7 @@ Du føder Spurven paa mit Tag!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Enhver, hvis Siel er stemt til jevne Glæder,
   Urørt af Ærens Flitter, Guldets Klang,
 Enhver, hvis Fryd er Klubbens sande Hæder,
@@ -2650,10 +2727,11 @@ O! længe, længe disse Glæder nydes!
   Vort Samfund blive os, som hidtil, kier!
 Og selv med sølvgraae Isse skal vi frydes
   Ved Mindet af den Lyst, vi nøde her.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2001071503">
+<text id="riber2001071503">
 <head>
     <title>Fostbrødre-Sang</title>
     <firstline>Som Mænd og Brødre vi samles her</firstline>
@@ -2664,6 +2742,7 @@ Og selv med sølvgraae Isse skal vi frydes
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Som Mænd og Brødre vi samles her,
   Og ædel, værdig og nordisk Glæde.
 Bør føles tidobbelt af enhver,
@@ -2695,8 +2774,9 @@ Og Avinds Piil ei vort Bryst skal naae;
 Og hver, hvis Fryd er vort Selskabs Ære,
 Det Hædersnavn han til Løn skal bære:
     Han er vor Ven!
+</poetry>
 </body>
-</poem>
+</text>
 
 <section>
 <head>
@@ -2704,7 +2784,7 @@ Det Hædersnavn han til Løn skal bære:
 </head>
 <content>
 
-<poem id="riber2020032741">
+<text id="riber2020032741">
 <head>
     <title><num>I.</num>Venskab! Venskab! Himlens skiønne Datter</title>
     <firstline>Venskab! Venskab! Himlens skiønne Datter</firstline>
@@ -2712,6 +2792,7 @@ Det Hædersnavn han til Løn skal bære:
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Venskab! Venskab! Himlens skiønne Datter,
   Du, hvis Smiil er Dødeliges Fryd;
 Salig Lyst, som Sandsers Træl ei fatter,
@@ -2761,10 +2842,11 @@ Held mig! denne sieldne, sande Glæde,
   Ædle Venskab! har du skiænket mig;
 Byg dig i mit Bryst et varigt Sæde!
   Ofte, som i Dag, jeg prise dig!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032742">
+<text id="riber2020032742">
 <head>
     <title><num>II.</num>Venskab! henrykt hører jeg din Stemme</title>
     <firstline>Venskab! henrykt hører jeg din Stemme</firstline>
@@ -2772,6 +2854,7 @@ Byg dig i mit Bryst et varigt Sæde!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Venskab! henrykt hører jeg din Stemme;
   Atter vækker du min Siel til Sang!
 Aldrig jeg dit høie Bud skal glemme,
@@ -2806,10 +2889,11 @@ O! nyd varigt Held med elskte Mage!
   Yndig Afkom arve fælles Dyd!
 Og, som Olding, see du glad tilbage
   Til den Dag, der skabte al din Fryd!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032743">
+<text id="riber2020032743">
 <head>
     <title><num>III.</num>Held den Mand, som Guld og borget Hæder</title>
     <firstline>Held den Mand, som Guld og borget Hæder</firstline>
@@ -2817,6 +2901,7 @@ Og, som Olding, see du glad tilbage
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Held den Mand, som Guld og borget Hæder
   Rolig overgav til Daarers Lyst,
 Men i Nøisomhed og jevne Sæder
@@ -2856,10 +2941,11 @@ Himlen mig, o Ven! at kiende lærte
   Din, den ædle, mandig faste Siel,
 Og i Dag mit venskabsfulde Hierte
   Spaaer, og veed, og frydes ved dit Held.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032744">
+<text id="riber2020032744">
 <head>
     <title><num>IV.</num>Held den Mand, Gud gav en dydig Qvinde!</title>
     <firstline>Held den Mand, Gud gav en dydig Qvinde!</firstline>
@@ -2867,6 +2953,7 @@ Og i Dag mit venskabsfulde Hierte
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Held den Mand, Gud gav en dydig Qvinde!
   Han fik meer end Indiernes Guld;
 Han fik Sielefryd hos en Veninde,
@@ -2906,13 +2993,14 @@ Eders Held I længe; længe nyde!
   Hiertets Bifald vorde eders Løn!
 Da skal Livets Dag saa blidt henflyde,
   Og dets Aften vorde rolig skiøn! -
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section> <!-- Hymenæer -->
 
-<poem id="riber2020032745">
+<text id="riber2020032745">
 <head>
     <title>Sang</title>
     <toctitle>Sang for det musicerende Selsk. paa Blaagaard</toctitle>
@@ -2928,6 +3016,7 @@ Da skal Livets Dag saa blidt henflyde,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ikke for at kildre blot vort Øre,
 Brødre! træde vi i Samfund her.
 Ei til Moerskab tomme Lyd at høre,
@@ -2969,10 +3058,11 @@ Paa vor fælleds Bane Haand i Haand!
 Og ved virket Held for os og andre
 Hædre Dagen, som har knyttet
 Dette Samfunds Baand!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032746">
+<text id="riber2020032746">
 <head>
     <title>Selskabssang</title>
     <firstline>O Venskab! du, hvis hulde Aand</firstline>
@@ -2980,6 +3070,7 @@ Dette Samfunds Baand!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 O Venskab! du, hvis hulde Aand
     Os kaldte hid;
 Vi her dig møde, Haand i Haand;
@@ -2999,8 +3090,9 @@ Det Held, han skabte for vort Land,
 Det hengav os hans Folk og han
     I Varetægt!
 Til Borger-Daad styrk os, o Venskab!
+</poetry>
 </body>
-</poem>
+</text>
 
 <section>
 <head>
@@ -3008,7 +3100,7 @@ Til Borger-Daad styrk os, o Venskab!
 </head>
 <content>
 
-<poem id="riber2020032747">
+<text id="riber2020032747">
 <head>
     <title><num>I.</num>O Held os! paa Blaagaard vi leve saa froe</title>
     <firstline>O Held os! paa Blaagaard vi leve saa froe</firstline>
@@ -3016,6 +3108,7 @@ Til Borger-Daad styrk os, o Venskab!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 O Held os! paa Blaagaard vi leve saa froe;
   Os Tiden Lensvinder saa fage;
 I Huus og i Hierte er blideste Roe;
@@ -3043,10 +3136,11 @@ Hvad Dag er os kier, er os festlig som den?
   Hvor kunde vor Glæde da tie?
 Vi ønske de Ædle, med Mund og med Siel,
 Al Sandheds og Dydens og Kierlighed Held.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032748">
+<text id="riber2020032748">
 <head>
     <title><num>II.</num>Bliv Lys! sagde Herren, og Mulmet adspredtes</title>
     <firstline>Bliv Lys! sagde Herren, og Mulmet adspredtes</firstline>
@@ -3054,6 +3148,7 @@ Al Sandheds og Dydens og Kierlighed Held.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Bliv Lys! sagde Herren, og Mulmet adspredtes
   Og Solen velgiørende signed’ vor Jord;
 Til Levendes Bolig et Chaos beredtes;
@@ -3074,13 +3169,14 @@ Dens svagere Venner du leder og styrker,
   At vandre dens tunge, men lønnende Vei.
 Din Dag er os hellig, du Sandhedens Ven!
 Gid ofte vi glade den hilse igien!
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section> <!-- Venne-Sange -->
 
-<poem id="riber2020032749">
+<text id="riber2020032749">
 <head>
     <sup>Til min Ven</sup>
     <title>Jacob Mandix</title>
@@ -3096,6 +3192,7 @@ Gid ofte vi glade den hilse igien!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Er Kierligheds den høie, blide Glæde
 Bestemt til Løn for Venskabs varme Dyrker,
 Da bier dig, o Ven! et sieldent Held!
@@ -3112,10 +3209,11 @@ Thi stort og aabent er dit ømme Hierte)
 Glem ei den Fryd, os Venskab tit har skiænket,
 Og elsk din Ven, som sønlig takker Himlen,
 Fordi han deelte denne Fryd med dig!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032750">
+<text id="riber2020032750">
 <head>
     <sup>Til min Ven</sup>
     <title>F. L. Zuschlag</title>
@@ -3131,6 +3229,7 @@ Fordi han deelte denne Fryd med dig!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ei er det Digteren, som synger her
 Om Hymens Haand, der sammenknytter
 Den Krands, som Amor og Chariterne dig fletted’.
@@ -3153,10 +3252,11 @@ Du føler, <sc>Zuschlag!</sc> at mit Ord er Sandhed,
 Naar jeg, med hellig Broderfryd, dig vidner,
 At til min sidste Stund jeg signer Dagen,
 Da Gud dig gav din Engel, din <sc>Lovise!</sc>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032751">
+<text id="riber2020032751">
 <head>
     <title>Til min Ven I. C. Seehusen</title>
     <toctitle>Til J. C. Seehusen</toctitle>
@@ -3169,6 +3269,7 @@ Da Gud dig gav din Engel, din <sc>Lovise!</sc>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Vor <sc>Claudius</sc> du elsker,
 Og <sc>Claudius</sc> du ligner,
 O Ven! kan da mit Hierte
@@ -3242,10 +3343,11 @@ Og vore rørte Hierter
 Skal prise Verdners Styrer,
 Som ogsaa her i Livet,
 Den Gode herlig lønner;
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032752">
+<text id="riber2020032752">
 <head>
     <title>Til min Ven F. H. Hohlenberg</title>
     <toctitle>Til F. H. Hohlenberg</toctitle>
@@ -3258,6 +3360,7 @@ Den Gode herlig lønner;
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Held den Mand, som Himlen gav et Hierte
   Varmt for Viisdom, Dyd og Fædreland!
 Ømt for Venskabs, Elskovs Fryd og Smerte!
@@ -3297,10 +3400,11 @@ Han i huslig Kreds en Fryd skal smage,
   <sc>Gerners</sc> Yndling! - alle Godes Ven!
 Og <sc>Elisas</sc> Mand! - o føl din Lykke!
   Længe, længe, længe nyd du den!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032753">
+<text id="riber2020032753">
 <head>
     <title>Til den 31 October 1790</title>
     <toctitle>Den 31 October 1790</toctitle>
@@ -3312,6 +3416,7 @@ Og <sc>Elisas</sc> Mand! - o føl din Lykke!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Naar Vid og Dyd og Venskab binde
 Den glade Mand til sin Mandinde,
   Da føles Ægtestandens Held
@@ -3332,10 +3437,11 @@ Gid begge længe glade kiende,
 Gid Venners Held dem ofte fryde,
 De Livets Dag, som hidtil, nyde,
   Dens Aften vorde blid og skiøn!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032754">
+<text id="riber2020032754">
 <head>
     <title>Venne-Sang</title>
     <toctitle>Vennesang paa F. H. Guldbergs Fødselsdag</toctitle>
@@ -3352,6 +3458,7 @@ De Livets Dag, som hidtil, nyde,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Held den, der søger ei sin Ære
   I arvet Skiold og Pergament,
 Men Broder vil blandt Brødre være,
@@ -3365,10 +3472,11 @@ Og dobbelt kier for Mand og Qvinde,
   Som kiende, fatte al hans Værd.
 Thi drikke vi, med bredfuldt Maal,
 Vor Vens, den ædle <sc>Guldbergs</sc>, Skaal.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032755">
+<text id="riber2020032755">
 <head>
     <title>Sang</title>
     <firstline>Skaber! Styrer! Herre! Fader!</firstline>
@@ -3376,6 +3484,7 @@ Vor Vens, den ædle <sc>Guldbergs</sc>, Skaal.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Skaber! Styrer! Herre! Fader!
 Alle Verdners Myriader
   Vidne om din Kierlighed.
@@ -3396,10 +3505,11 @@ Bød sin Broders Tarv at fremme!
 Dannerigets Held og Hæder,
 Bygt paa Flid og rene Sæder,
 Vorde deres Idræts Løn!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032756">
+<text id="riber2020032756">
 <head>
     <title>Ved Geheimeraadinde Løvenskiolds Grav</title>
     <firstline>I, som attraae Danneqvindens Hæder</firstline>
@@ -3407,6 +3517,7 @@ Vorde deres Idræts Løn!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I, som attraae Danneqvindens Hæder,
   I, som føle blide Dyders Værd!
 Dette Sted med stille Sorg betræder;
@@ -3441,10 +3552,11 @@ Ak! hun var! - men evig hendes Minde
   Boer hos dem, som hendes Aand forstod.
 Det besiele hver en Danneqvinde,
   Til, som hun, at vorde viis og god!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032757">
+<text id="riber2020032757">
 <head>
     <title>Afskedssang</title>
     <firstline>I Vilsdoms stille Sæde</firstline>
@@ -3452,6 +3564,7 @@ Det besiele hver en Danneqvinde,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I Vilsdoms stille Sæde
 Vi smagte her den Glæde,
   Natur og Venskab os tilbød.
@@ -3472,10 +3585,11 @@ Hans gode Børn at være,
 Alfader skal vi ligne,
 Os Brødre her skal signe,
   Og hist vi samles fro igien.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032758">
+<text id="riber2020032758">
 <head>
     <title>Sang</title>
     <toctitle>Sang paa en elsket Moders Fødselsdag</toctitle>
@@ -3485,6 +3599,7 @@ Os Brødre her skal signe,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><small>(Siunget af Børnene ved Foden af en Støtte, hvorpaa Moderens Navn i Transparent var anbragt, og omslynget af en Blomsterkrands.)</small></nonum>
 
 Ja Moder! stedse skal dit Navn
@@ -3519,10 +3634,11 @@ O længe I nyde den huuslige Glæde!
 Her qvæde vi alle med frydefuld Siel:
 Det sande, det største, det huuslige Held
 Udflyder af Viisdoms og Kierligheds Væld.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032759">
+<text id="riber2020032759">
 <head>
     <title>Til den 10 November 1796</title>
     <toctitle>Den 10 Nov. 1796, Digterens sidste Sang</toctitle>
@@ -3534,6 +3650,7 @@ Udflyder af Viisdoms og Kierligheds Væld.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Fro jeg hilser og din Dag, Veninde!
   Thi jeg føler trofast Venskabs Værd.
 De saa blidt henrundne Dages Minde
@@ -3553,10 +3670,11 @@ O som hidtil vi med Venne-Hierte
   Vandre skal vor fælles Bane frem.
 Fælles være her vor Fryd, vor Smerte!
   Fro vi samles hist i Fredens Hiem!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032760">
+<text id="riber2020032760">
 <head>
     <title>Foraarssang</title>
     <toctitle>En naadig Frøkens Foraarssang, efter Voss</toctitle>
@@ -3566,6 +3684,7 @@ Fælles være her vor Fryd, vor Smerte!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Naar skal den Brøndcuur Ende faae,
   Hvormed min Tante her sig plager?
 I denne Eensomhed man maae
@@ -3646,10 +3765,11 @@ Hist i det fierne Blaae - o see,
   Hvor stolt den skiønne Røg sig hæver!
 Og hver Dag nye Tilberedere -
   Ah! hvor mit ømme Hierte bæver!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032761">
+<text id="riber2020032761">
 <head>
     <title>Julesang for Dreiers Klub</title>
     <subtitle>for Dreiers Klub</subtitle>
@@ -3658,6 +3778,7 @@ Og hver Dag nye Tilberedere -
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Fra Arilds Tid har det været Skik,
   At smukke Børn til Julefesten
 Nu en, nu anden Foræring fik,
@@ -3689,10 +3810,11 @@ Vor Klubs, dens Stifters og Lemmers Skaal!
 Og gid vi længe med jevne Sæder
 Og Broderhierter vor Barndoms Glæder
     Maae nyde her!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2001071504">
+<text id="riber2001071504">
 <head>
     <title>Sang</title>
     <toctitle>Sang, efter Hagedorn</toctitle>
@@ -3707,6 +3829,7 @@ Og Broderhierter vor Barndoms Glæder
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Til Viindruens Priis
 Sang hver paa sin Viis,
   Druider og Barder og Magi.
@@ -3748,8 +3871,9 @@ Du muntre dit Sind,
 Sluk Sorgen kun ned,
 Naar Phyllis er vred,
   <i>Miserum si spernit amantem.</i><note>Stakkels den elskede, hvis hun forsmår ham</note>
+</poetry>
 </body>
-</poem>
+</text>
 
 <section>
 <head>
@@ -3757,7 +3881,7 @@ Naar Phyllis er vred,
 </head>
 <content>
 
-<poem id="riber2020032763">
+<text id="riber2020032763">
 <head>
     <title>Epistel til Phoebe</title>
     <toctitle>Epistel til Phæbe, efter Pheffel</toctitle>
@@ -3770,6 +3894,7 @@ Naar Phyllis er vred,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I Dag alt fiorten Aar! min kiere Datter!
 Hvor hastig svandt de hen! Jeg snarlig iler
 Fra Middags-Høiden ned til Skyggers Dal.
@@ -4091,10 +4216,11 @@ Og naar engang Guds Forsyn kalder eder
 Til eders Hiem, til Dydens Fødeland,
 Da giemme Sønnesønnen Eders Liig
 I min og i min kiere Doris’ Grav! -
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032764">
+<text id="riber2020032764">
 <head>
     <title>Raad til en ung Pige</title>
     <toctitle>Raad til en ung Pige, efter samme</toctitle>
@@ -4104,6 +4230,7 @@ I min og i min kiere Doris’ Grav! -
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 O hør af mig, Belinde! Vennens Raad,
 For strænge til at kildre Damers Øre,
 Ei smigrende, som henrykt Elskers Pen;
@@ -4253,10 +4380,11 @@ Hver blid Tillokkelse du færdig bruger,
 Hvert Haab, som smigrer, og hver Fryd, som tryller.
 Dit Snille føler jeg. Af dig jeg modtog
 De Regler for at tækkes, som jeg gav dig.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032765">
+<text id="riber2020032765">
 <head>
     <title>Braminen</title>
     <toctitle>Bramin, efter samme</toctitle>
@@ -4266,6 +4394,7 @@ De Regler for at tækkes, som jeg gav dig.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 En Brame listede sig ved sin Stav
 I Vischnus Tempel, at indvie sig
 Til Graven. Mens han knælte for sin Afgud;
@@ -4319,10 +4448,11 @@ Og nu, da han foer op paa Skyers Throne,
 Han sendte Oldingen, der uforfærdet
 I sød Tilbedelse henflød,
 Et Blik, som meer end Daab indvied’ ham.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032766">
+<text id="riber2020032766">
 <head>
     <title>Om Persiflage</title>
     <toctitle>Om Persiflage, efter L. Stolberg</toctitle>
@@ -4332,6 +4462,7 @@ Et Blik, som meer end Daab indvied’ ham.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 For Mennesket er ingen Ting saa hellig,
 At jo den frække Spotter det besudler.
 Umandig, skamløs, uden Aand og Hierte,
@@ -4394,10 +4525,11 @@ Har avlet og har født det stygge Afskum,
 Og ak! vi Daarer - vi opfostre det.
 Paa Dansk ei nævnes kan det Udyrs Navn;
 Thi Moderen har kaldt det Persiflage.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032767">
+<text id="riber2020032767">
 <head>
     <title>Afbigten</title>
     <toctitle>Afbigten, efter samme</toctitle>
@@ -4408,6 +4540,7 @@ Thi Moderen har kaldt det Persiflage.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><small><right><i>Ut mihi sæpe</i></right></small></nonum>
 <nonum><small><right><i>bilem, sæpe jocum vestri movere tumultus.</i></right></small></nonum>
 <nonum><right><i>Hor.</i></right></nonum>
@@ -4492,10 +4625,11 @@ Nu gabed' han og sov. Rask læste hiin,
 Og læste vist endnu, om Døden kierlig
 Ei havde reddet <sc>Lessing</sc>; thi end ikke
 Ved Nysekrud fordrives denne Galskab.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032768">
+<text id="riber2020032768">
 <head>
     <title>Kilden</title>
     <toctitle>Kilden, efter samme</toctitle>
@@ -4507,6 +4641,7 @@ Ved Nysekrud fordrives denne Galskab.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><small><right><i>Insanientis dum sepientæ</i></right></small></nonum>
 <nonum><small><right><i>Consultus erro nunc retrorsum</i></right></small></nonum>
 <nonum><small><right><i>Vela dare; atque iterare cursus</i></right></small></nonum>
@@ -4611,10 +4746,11 @@ Som Steen paa Steen er Slutning lagt paa Slutning,
 Ret trofast, om kun ei den løse Grund
 Vil glide ud, naar Lidenskabers Strøm
 Høit brusende slaaer op mod sandig Bred.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032769">
+<text id="riber2020032769">
 <head>
     <title>Spillesygen</title>
     <toctitle>Spillesygen, efter samme</toctitle>
@@ -4624,6 +4760,7 @@ Høit brusende slaaer op mod sandig Bred.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ja Daarlighed har mange, mange Biælder,
 Dens Fiærbusk brammer stolt med alle Farver,
 Dog hver en Alder elsker hver sin Klang,
@@ -4777,10 +4914,11 @@ Besøge! - Hvad? du gaber? kiedes alt
 Imens du hører paa mit Raad? - Velan!
 Saa gaae og skrant, og spil kun, indtil Døden
 Med sorte Tærning kaster om dit Liv!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032770">
+<text id="riber2020032770">
 <head>
     <title>Hr. Hielpsom</title>
     <toctitle>Hr. Hielpsom, en Fortælling</toctitle>
@@ -4790,6 +4928,7 @@ Med sorte Tærning kaster om dit Liv!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Du Mand, som Himlen skiænkte Kraft og Mod
 Til dine Brødre frem paa Lykkens Vei at føre.
 O skrækkes ei, om Næstens Kiød og Blod,
@@ -4869,8 +5008,9 @@ Jens iler til sit Hiem. Han med Forundring seer,
 Det er ei meer;
 Han angrer nu sin Daarskab paa dets Gruus,
 Og gaaer som lydig Hund, ind i sit eget Huus.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section> <!-- Didactiske Digte -->
@@ -4890,7 +5030,7 @@ Og gaaer som lydig Hund, ind i sit eget Huus.
 </head>
 <content>
 
-<poem id="riber2020032771">
+<text id="riber2020032771">
 <head>
     <title>De Vornede</title>
     <toctitle>De Vornede, efter Voss</toctitle>
@@ -4903,6 +5043,7 @@ Og gaaer som lydig Hund, ind i sit eget Huus.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center><sc>Mikkel.</sc></center></nonum>
 Pindsen bli’r klar. Der er ingen Rand om Maanen, der funkler
 Kun faa Stierner paa skyefri, blanke, mørkeblaa Himmel.
@@ -5094,10 +5235,11 @@ Nu har jeg Ild. Tænd ogsaa din Pibe, <sc>Mikkel</sc>! for Selskab.
 Hei! der slaaer Skimlen sig løs: ei, see dog hvor Plagen i Tøiret
 Vimsler og skaaer sig. - Du skal, kommer du i Junkerens Ager!
 Pots! Han prygler os krumme og lamme. Pasop! efter Skimlen!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032772">
+<text id="riber2020032772">
 <head>
     <title>De frigivne</title>
     <toctitle>De Frigivne, efter Voss</toctitle>
@@ -5109,6 +5251,7 @@ Pots! Han prygler os krumme og lamme. Pasop! efter Skimlen!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center><sc>Anders.</sc></center></nonum>
 See kun det hvide Spektakel, som rasler henne i Busken!
 Ih, Gud frels mig! hvad er det?
@@ -5331,10 +5474,11 @@ Luften køler sig af.
                 Ja, lad os dog kun staae op nu.
 Marken damper, og nu er det koldt og fugtigt om Aft'nen.
 Kom mig ikke, og syng, som vor hæse Degn synger Amen!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032773">
+<text id="riber2020032773">
 <head>
     <title>Den halvfierdsindstyvende Geburtsdag</title>
     <toctitle>Den 70 Geburtsdag, ligeledes</toctitle>
@@ -5346,6 +5490,7 @@ Kom mig ikke, og syng, som vor hæse Degn synger Amen!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Bøiet over Postillen, ved Ovnens varmende Side,
 Sad den ærlige <sc>Dam</sc>, nu fyrretyvende Vinter
 Byens Organist; i arvede Læhnestol sad han;
@@ -5485,8 +5630,9 @@ Aabnede Klinken sagte, og Børnene trined' i Stuen,
 Men den unge Kone med skiønne, smilende Ansigt
 Hopped’ hen, og kyssede Oldingens Kind, og forskrækket
 Saae han op, og han hang i hans Børns omfavnende Arme.
+</poetry>
 </body>
-</poem>
+</text>
 
 <section>
 <head>
@@ -5494,7 +5640,7 @@ Saae han op, og han hang i hans Børns omfavnende Arme.
 </head>
 <content>
 
-<poem id="riber2020032774">
+<text id="riber2020032774">
 <head>
     <title>Første Idylle</title>
     <toctitle>Første Idyl, Festen i Skoven</toctitle>
@@ -5506,6 +5652,7 @@ Saae han op, og han hang i hans Børns omfavnende Arme.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Under det tætte Skiul af to bredbladede Linde,
 Som mod Middagsheden beskygged’ den daglige Stue,
 Over Straataget susende hen, her sad i sin Slaaprok,
@@ -6134,10 +6281,11 @@ Og Forvalterens Karl, der til sin Høslet i Morgen
 Hvæssede klingende Lee med Hammer paa Ambolten. Uhret
 Pikked i Aftenens Stilhed, og Uglen tuded i Taarnet,
 Og ved Porten modtog dem Pakan med venlige Logren.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032775">
+<text id="riber2020032775">
 <head>
     <title>Anden Idylle</title>
     <toctitle>Anden Idyl, Besøget</toctitle>
@@ -6147,6 +6295,7 @@ Og ved Porten modtog dem Pakan med venlige Logren.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Roselig straaler paa Vindnet Majdags fremblussende Morgen
 Saa skiveformige Billed med Pferskenes vaiende Blade
 Blussed paa Væggen, oplyste Alkovens grønne Gardiner
@@ -6503,10 +6652,11 @@ Fast om de deilige Fødder, og iilte afsted, nedad Trappen
 Fløy hun bange af Længsel; og som hun aabnede Døren
 Gav hun et Skrig; thi hilset med Latter af ventend’ Veninde
 Sank hun, ak! hen i Favn paa usigelig salige Yngling.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032776">
+<text id="riber2020032776">
 <head>
     <title>Tredie Idylle</title>
     <toctitle>Tredie Idyl, Bryllupsaftenen</toctitle>
@@ -6516,6 +6666,7 @@ Sank hun, ak! hen i Favn paa usigelig salige Yngling.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvo som nys har besøgt vor Præst i Grøndal, han kjender
 Ogsaa hans store Stue, hvor før var knudrede Leergulv,
 Og den luftige, store Kamin, smaaerudede Vindver,
@@ -7440,8 +7591,9 @@ Og da Gige, Trompet og Valdhorn og brummende Basse
 Giennembrød med bedøvende Skrald; da iilte vor Brudgom
 Midt i denne buldrende Larm ud af Døren med Bruden.
 Efter de Flygtende lød' nu Fryderaab, Latter og Haandklap.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section> <!-- Luise, et landligt Digt i 3 Idyller -->
@@ -7452,7 +7604,7 @@ Efter de Flygtende lød' nu Fryderaab, Latter og Haandklap.
 </head>
 <content>
 
-<prose id="riber2020032777">
+<text id="riber2020032777">
 <head>
     <title>Til Læseren</title>
     <source in="bd2" pages="205-206"/>
@@ -7460,13 +7612,15 @@ Efter de Flygtende lød' nu Fryderaab, Latter og Haandklap.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<prose>
 Den Fornøielse, jeg fandt ved dette komiske Helte-Digts Læsning, bevægede mig til at forsøge en Oversættelse deraf. Jeg valgte den samme Verse-Art, som Forfatteren har betjent sig af, og stræbte at udtrykke min Original saa nøje som mueligt.  De Vanskeligheder som følge med Oversættelser paa rimede Vers, ville lettelig undskylde, om nogle Feil imod vor Danske Prosodie skulde, have indsneget sig, uagtet den Flid, hvormed jeg har søgt at iagttage dens Regler. Det skulde være mig kiært, om jeg herved maatte bidrage noget lidet til at opvække en større Lyst efter den Svenske Literatur, end hidindtil har været almindelig iblant os.
 
 <nonum><right>Oversætteren.</right></nonum>
-</body>
 </prose>
+</body>
+</text>
 
-<poem id="riber2020032778">
+<text id="riber2020032778">
 <head>
     <title>Første Sang</title>
     <toctitle>Boraasiaden, et comisk Heltedigt i 4 Sange oversat af det svenske</toctitle>
@@ -7477,6 +7631,7 @@ Den Fornøielse, jeg fandt ved dette komiske Helte-Digts Læsning, bevægede mig
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg synger om Boraas, og til den Heltes Ære,
 Som efter uhørt Slag fik Seierkrands at bære:
 Som tappert streed, men ej udøste Draabe Blod,
@@ -7674,10 +7829,11 @@ Men naar den blide Soel det tykke Mulm fordriver,
 Og Lys, og Liv og Fryd til hele Luften giver,
 Da sagtnes Bølgerne, da fængsles Veirets Magt,
 Og Himlen speiler sig i Vandets stille Pragt.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032779">
+<text id="riber2020032779">
 <head>
     <title>Anden Sang</title>
     <indextitle>Boraasiaden, anden Sang</indextitle>
@@ -7687,6 +7843,7 @@ Og Himlen speiler sig i Vandets stille Pragt.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Paa Stadens store Torv man allerede skuer
 Stridsfanen vaie, som bebuder Krigens Luer;
 Den spændte Trommes Larm et uvant Bulder giør,
@@ -7848,10 +8005,11 @@ Forvovne, sagde han, du skal til Straf befinde,
 At ei en Draabe Blod i denne Krig skal rinde,
 På andre store Slag i Marmor gravne staae,
 Skal dette blot sit Sted blandt Rendsteenskrige faae.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032780">
+<text id="riber2020032780">
 <head>
     <title>Tredie Sang</title>
     <indextitle>Boraasiaden, tredie Sang</indextitle>
@@ -7861,6 +8019,7 @@ Skal dette blot sit Sted blandt Rendsteenskrige faae.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Da Tvedragt, blodbestænkt, udspredte Raserie
 Blant Jordens forste Børn, saa skrøbelig’ som vi;
 Da søgtes Seiren kun ved Mængde, Jern og Styrke.
@@ -8077,10 +8236,11 @@ Saa langt dens Sving kan naae skeer Ødelæggelse,
 Alt viger for hans Arm forskrækket, bævende;
 Som naar en hungrig Biørn udi sin glubske Iver
 Blant Hiorden bryder ind, nedlægger og fordriver.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="riber2020032781">
+<text id="riber2020032781">
 <head>
     <title>Fjerde Sang</title>
     <indextitle>Boraasiaden, fjerde Sang</indextitle>
@@ -8090,6 +8250,7 @@ Blant Hiorden bryder ind, nedlægger og fordriver.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I Vester-Gothlands Favn ved Væners klare Vig,
 Det stolte Kinnekul mod Himlen reiser sig.
 Fra Dales mørke Skiød det gradevis opstiger,
@@ -8310,8 +8471,9 @@ I Aften Glædens Gud Jer Seirens Løn skal yde,
 Mit gamle stærke Øl i blanke Kander flyde,
 Det blive Krigens Rov: Forsamles i mit Huus,
 Da Himlen Seier gav, Jer <sc>Edbom</sc> gir en Ruus.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section> <!-- Boraasiade -->

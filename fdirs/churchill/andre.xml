@@ -6,7 +6,7 @@
 </workhead>
 <workbody>
 
-<poem id="churchill2019122901">
+<text id="churchill2019122901">
 <head>
    <title>Independence</title>
    <firstline>Happy the bard (though few such bards we find)</firstline>
@@ -16,6 +16,7 @@
    <!-- http://www.gutenberg.org/cache/epub/8592/pg8592.txt -->
 </head>
 <body>
+<poetry>
 Happy the bard (though few such bards we find)
 Who, 'bove controlment, dares to speak his mind;
 Dares, unabash'd, in every place appear,
@@ -616,8 +617,9 @@ Go forth—the champions of your native land,
 And may the battle prosper in your hand—
 It may, it must—ye cannot be withstood—
 Be your hearts honest, as your cause is good!
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

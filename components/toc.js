@@ -114,7 +114,7 @@ export default class extends React.Component<TocProps> {
             }
             :global(.toc) :global(h3.level-2) {
               font-weight: 300;
-              font-size: 26px;
+              font-size: 20px;
               padding: 0;
               margin: 0;
             }

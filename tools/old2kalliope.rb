@@ -58,7 +58,8 @@ end
 @written = nil;
 @performed = nil;
 @event = nil
-@type = 'poem'
+@initialtype = 'poetry'
+@type = 'poetry'
 @variant = nil
 @todos = []
 @credits = nil
@@ -128,7 +129,7 @@ def printPoem()
   if @facsimile and @page =~ /\d-$/
       abort "FEJL: Digtet »#{@title}« har kun halv sideangivelse: #{@page}"
   end
-  if @type == 'poem' and (@firstline.nil? || @firstline.strip.length == 0)
+  if @initialtype == 'poetry' and (@firstline.nil? || @firstline.strip.length == 0)
       abort "FEJL: Digtet »#{@title}« mangler førstelinje"
   end
   poemid = @poemid || "#{@poetid}#{@date}#{'%02d' % @poemcount}"
@@ -140,7 +141,7 @@ def printPoem()
       lang = " lang=\"#{@lang}\""
   end
 
-  puts "<#{@type} id=\"#{poemid}\"#{variant}#{lang}>"
+  puts "<text id=\"#{poemid}\"#{variant}#{lang}>"
   puts "<head>"
   if @title
       puts "    <title>#{@title}</title>"
@@ -163,7 +164,7 @@ def printPoem()
     }
     puts "    </subtitle>"
   end
-  if (@type != 'prose')
+  if not (@firstline.nil? || @firstline.strip.length == 0)
     puts "    <firstline>#{@firstline}</firstline>"
   end
   if @notes.length > 0 or @credits
@@ -209,10 +210,12 @@ def printPoem()
   puts "    <quality>korrektur1,kilde,side</quality>"
   puts "</head>"
   puts "<body>"
+  puts "<#{@initialtype}>"
   first_non_empty_line = @body.find_index { |line| line =~ /[^\s]/ }
   puts @body[first_non_empty_line,100000].join("\n").rstrip
-  puts "</body>"
   puts "</#{@type}>"
+  puts "</body>"
+  puts "</text>"
   puts ""
   @poemid = nil
   @firstline = nil
@@ -228,7 +231,8 @@ def printPoem()
   @written = nil
   @performed = nil
   @event = nil
-  @type = 'poem'
+  @initialtype = 'poetry'
+  @type = 'poetry'
   @variant = nil
   @lang = nil
   @todos = []
@@ -374,7 +378,7 @@ File.readlines(ARGV[0]).each do |line|
       print printStartSektion(sectionTitle, level)
       @state = 'NONE'
   end
-  if line.start_with?('SLUTSEKTION')
+  if line.start_with?('SLUTSEKTION') or line.start_with?('SEKTIONSLUT')
       if @state != 'NONE'
           printPoem();
       end
@@ -431,7 +435,8 @@ File.readlines(ARGV[0]).each do |line|
     elsif line.start_with?("TODO:")
       @todos.push(line[5..-1].strip)
     elsif line.start_with?("TYPE:")
-      @type = line[5..-1].strip == "prosa" ? "prose" : "poem"
+      @initialtype = line[5..-1].strip
+      @type = @initialtype
     elsif line =~ /^[A-Z]*:/
       abort "Unknown header-line: #{line}"
     else
@@ -439,7 +444,13 @@ File.readlines(ARGV[0]).each do |line|
     end
   end
   if @state == 'INBODY'
-      @body.push(line)
+      if line.start_with?("TYPE:")
+          @body.push("</#{@type}>")
+          @type = line[5..-1].strip
+          @body.push("<#{@type}>")
+      else 
+          @body.push(line)
+      end
       if line =~ /<note>.*\] .*<\/note>/
           @found_corrections = true
       end

@@ -95,14 +95,16 @@ if (@wantsAndreXml)
 </workhead>
 <workbody>
 
-<poem id="#{@poetId}#{today}01">
+<text id="#{@poetId}#{today}01">
 <head>
     <title></title>
     <firstline></firstline>
 </head>
 <body>
+<poetry>
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

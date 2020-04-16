@@ -9,7 +9,7 @@
 </workhead>
 <workbody>
 
-<poem id="winther2001121501">
+<text id="winther2001121501">
 <head>
    <title>Gravskrift over kgl. Skuespiller, Dr.med. J. C. Ryge</title>
    <toctitle>Gravskrift over kgl. Skuespiller, Dr.med. J. C. Ryge</toctitle>
@@ -24,16 +24,18 @@
    <keywords>gravskrift</keywords>
 </head>
 <body>
+<poetry>
 Han var en Drot i Kunstens Rige.
 Hans Herredom sig strakte lige
 Fra 'Hakon Jarl' og ned til 'Saft'.
 Lod han os le, lod han os græde,
 Da var det Kunst, vi saa fremtræde
 I Pagt med Sandhed, Vid og Kraft.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2001121601">
+<text id="winther2001121601">
 <head>
    <title>Digterens gravskrift over sig selv</title>
    <toctitle>Digterens gravskrift over sig selv</toctitle>
@@ -47,12 +49,14 @@ I Pagt med Sandhed, Vid og Kraft.
    <keywords>gravskrift</keywords>
 </head>
 <body>
+<poetry>
 Her ligger under grønne Tillie
 C. Winther, meget mod sin Villie!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2002011002" variant="winther2018082625"> 
+<text id="winther2002011002" variant="winther2018082625"> 
 <head>
    <title>Hvis en Telegraph man vidste</title>
    <toctitle>Hvis en Telegraph man vidste</toctitle>
@@ -65,6 +69,7 @@ C. Winther, meget mod sin Villie!
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvis en Telegraph man vidste,
 Som fra Hjertet kunde bringe
 Tanker, som sig ellers svinge
@@ -141,10 +146,11 @@ Nu lev vel! - Paa dine Hænder
 Trykker jeg, min søde Frue!
 Hede Læber! - deres Lue
 Kom fra Hjertet, - hvor det brænder!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="winther2002111201">
+<text id="winther2002111201">
 <head>
    <title>Den, som eier, hvad der klinger</title>
    <toctitle>Den, som eier, hvad der klinger</toctitle>
@@ -156,6 +162,7 @@ Kom fra Hjertet, - hvor det brænder!
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Den, som eier, hvad der klinger,
 Han faaer ogsaa det, der springer;
 Terne, Træl, som ellers krybe,
@@ -183,8 +190,9 @@ Da skal han med Aandens Klokke
 Hele Verden til sig lokke,
 Høi og Lav og Rig og Ringe
 For den smaa Christoffer springe.
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

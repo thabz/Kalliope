@@ -9,7 +9,7 @@
 </workhead>
 <workbody>
 
-<poem id="kleiste2018080101">
+<text id="kleiste2018080101">
 <head>
     <title>Liebslied an die Weinflasche</title>
     <firstline>O Flasche, voll vom Saft der rheinschen Traube</firstline>
@@ -20,6 +20,7 @@
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum>– – – – jocos</nonum>
 <nonum>Quid vetat innocuos? – –</nonum>
 <nonum><right><i>Vanierius</i>.</right></nonum>
@@ -59,15 +60,17 @@ Und schluchz betrübt:
 Hier ruhet der, der mich gekränkte Flasche
 Getreu geliebt.
 
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kleiste2019091801">
+<text id="kleiste2019091801">
 <head>
     <title>Idylle</title>
     <firstline>Sie fliehet fort! es ist um mich geschehen!</firstline>
 </head>
 <body>
+<poetry>
 Sie fliehet fort! es ist um mich geschehen! 
 Ein weiter Raum trennt Lalagen von mir. 
 Dort floh sie hin! komm, Luft, mich anzuwehen, 
@@ -92,8 +95,9 @@ So klagt' Amynt, die Augen voll von Thränen,
 Den Gegenden die Flucht der Lalage; 
 Sie schienen sich mit ihm nach ihr zu sehnen, 
 Und seufzten: Lalage!    
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

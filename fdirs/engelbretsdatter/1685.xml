@@ -13,7 +13,7 @@
 </workhead>
 <workbody>
 
-<poem id="engelbreths2001042001">
+<text id="engelbreths2001042001">
 <head>
    <title>Dedikation</title>
    <toctitle>Dedikation</toctitle>
@@ -22,6 +22,7 @@
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
+<poetry>
 <center>
 Dend
 Stormæctigste Høybaarne
@@ -91,10 +92,11 @@ og
 i dybest Ydmyghed
 Trohiertig Forbederinde
 Dorothe Engelbretz-Daatter.
+</poetry>
 </body>
-</poem>
+</text>
 
-<prose id="engelbreths2001042002">
+<text id="engelbreths2001042002" skip-index="true">
 <head>
    <title>Gud-Elskende Læser</title>
    <toctitle>Gud-Elskende Læser</toctitle>
@@ -102,6 +104,7 @@ Dorothe Engelbretz-Daatter.
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
+<prose>
 U-Anseet jeg kiendte mig forringe til, at giøre videre Forklaring paa Trøst- og Taare-Kilden, <i>Doct</i>. Møller, udvald herlig sammen skrev, om den bodfærdig Synderinde, satte jeg dog blant andet en Deel ud paa Vers for Materiens Yndelighed skyld, og mit eget Hierte til Fornøyelse i min bedrøffved Stand.  Før bød jeg Sang-Offer frem, som GUD skiød mig i Sinde, oc nu ved samme Raad-giver, Taare-Offer; saa ubestandig er Verdens Fryd. Naar Rosen falder aff, faar Stilcken en sørgelig Fasun. Men som jeg ved Troens Taarer haabis at græde mig ind i Himmelen oc see Frelseren med forklared Øyen, skal det i Jammer-Dalen være min Glæde at holde mig til ham. Tag derfor min enfoldig Gierning op i beste Maade, Qvindeligt er mit Arbeyd, Qvinde var hun Poenitentzen giorde, oc gick glad fra HErrens Ansict. Gid enhver hvis Retfærdighed er som et besmitted Klæde maa giøre ligesaa. Jeg slutter med den Bøn, oc ynsker hin Dydefuld Læser GUds Naade, Velstand i dette Liff og Salighed i det Tilkommende.
 
    Beed got for mig igien, giør det saa giør du vel,
@@ -109,10 +112,11 @@ U-Anseet jeg kiendte mig forringe til, at giøre videre Forklaring paa Trøst- o
 		
            Dorothe Engelbretz-Daatter.
         Salig <i>Ambrosii</i> Hardenbeks.
-</body>
 </prose>
+</body>
+</text>
 
-<poem id="engelbreths2001042003">
+<text id="engelbreths2001042003">
 <head>
    <title>Den Taare-gydende Synderinde.</title>
    <subtitle>Hun græd og fanged an at væde HErrens Beene.</subtitle>
@@ -122,6 +126,7 @@ U-Anseet jeg kiendte mig forringe til, at giøre videre Forklaring paa Trøst- o
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
+<poetry>
 ALt Nyt som sielden skeer! Her hid hvem da vil see
       Jt bood-fuld Creatur, der sig for Synden vree;
 Jt bedrings <i>Contrafej,</i> it Speil for Mand og Qvinde
@@ -959,10 +964,11 @@ Ynsk derfor hiertelig saa Taare-Haglen trilder,
       Men om den usel Jord man aldrig saadant spør.
 <i>Maria</i> grædendis gick begge Deele giennem
 <w>Guds Fødder vædet hun, og siden tørred dennem.</w>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="engelbreths2001042004">
+<text id="engelbreths2001042004">
 <head>
    <title>Den Food-tørrende Synderinde</title>
    <subtitle>Og tørred HErrens Been med hendis Hofved-Haar</subtitle>
@@ -972,6 +978,7 @@ Ynsk derfor hiertelig saa Taare-Haglen trilder,
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
+<poetry>
 AL Verdens Frelser-mand Regent i Himmelen,
       Der self giør Jorden tørr, saa Vandet sier hen,
 Lod sig godvilligen aff Synderinden tørre,
@@ -1471,10 +1478,11 @@ Giør derfor Poenitentz, oc følg din Forgangs Søster:
       Og meere Læberne, der siden kyste dem.
 <i>Maria</i> græd til gavns, og lod sig icke tysse,
 Før hun sin <w>Frelsers Been fik væde, tørre kysse.</w>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="engelbreths2001042005">
+<text id="engelbreths2001042005">
 <head>
    <title>Den kyssende Synderinde</title>
    <subtitle>
@@ -1487,6 +1495,7 @@ Før hun sin <w>Frelsers Been fik væde, tørre kysse.</w>
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
+<poetry>
 1.
 FRyd-Kyssen, søder en Sucker,
 Hin salte Taare-smag slucker,
@@ -1648,10 +1657,11 @@ Hans Fødder vaade oc taaret
 Hun siden tørred med Haaret,
       Da Kys var gangen i løbed,
       Hun salved dennem paa kiøbed.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="engelbreths2001042006">
+<text id="engelbreths2001042006">
 <head>
    <title>Den salvende Synderinde</title>
    <subtitle>
@@ -1664,6 +1674,7 @@ Hun siden tørred med Haaret,
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
+<poetry>
 1.
       See dette syndig Skrat,
 Hvis Udyd var ved Poenitentz forlat,
@@ -1839,7 +1850,8 @@ Sin egen Sek kun smuk til Møllen bær,
       Hand self kand vel bestaa,
 At icke fremmed Sorrig,
       Giør ham for hastig graa.
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

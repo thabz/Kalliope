@@ -14,11 +14,11 @@ const {
   getChildByTagName,
 } = require('./xml.js');
 
-const build_about_pages = async collected => {
+const build_about_pages = async (collected) => {
   safeMkdir(`static/api/about`);
   // Regenerate all about-pages if any work-file is modified, since our poem-counts then might be off
   const areAnyWorkModified = Array.from(collected.works.keys())
-    .filter(key => {
+    .filter((key) => {
       return isFileModified(`fdirs/${key}.xml`);
     })
     .reduce((result, b) => b || result, false);
@@ -26,15 +26,15 @@ const build_about_pages = async collected => {
   return Promise.all(
     fs
       .readdirSync(folder)
-      .filter(x => x.endsWith('.xml'))
-      .map(x => {
+      .filter((x) => x.endsWith('.xml'))
+      .map((x) => {
         return {
           xml: `${folder}/${x}`,
           json: `static/api/about/${x.replace(/.xml$/, '.json')}`,
         };
       })
-      .filter(paths => isFileModified(paths.xml) || areAnyWorkModified)
-      .map(async paths => {
+      .filter((paths) => isFileModified(paths.xml) || areAnyWorkModified)
+      .map(async (paths) => {
         let lang = 'da';
         const m = paths.xml.match(/_(..)\.xml$/);
         if (m) {
@@ -53,10 +53,10 @@ const build_about_pages = async collected => {
         );
         const author = safeGetText(head, 'author');
         const poemsNum = Array.from(collected.texts.values())
-          .map(t => (t.type === 'poem' ? 1 : 0))
+          .map((t) => (t.type === 'text' ? 1 : 0))
           .reduce((sum, v) => sum + v, 0);
         const poetsNum = Array.from(collected.poets.values())
-          .map(t => (t.type === 'poet' ? 1 : 0))
+          .map((t) => (t.type === 'poet' ? 1 : 0))
           .reduce((sum, v) => sum + v, 0);
         const notes = get_notes(head, collected, {
           poemsNum: poemsNum.toLocaleString(lang),

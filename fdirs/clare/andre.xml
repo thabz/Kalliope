@@ -7,13 +7,14 @@
 </workhead>
 <workbody>
 
-<poem id="clare2019072101">
+<text id="clare2019072101">
 <head>
    <title>A World for Love</title>
    <firstline>Oh, the world is all too rude for thee, with much ado and care</firstline>
    <!-- http://www.gutenberg.org/ebooks/52601 -->
 </head>
 <body>
+<poetry>
 Oh, the world is all too rude for thee, with much ado and care;
 Oh, this world is but a rude world, and hurts a thing so fair;
 Was there a nook in which the world had never been to sear,
@@ -38,15 +39,17 @@ Than thus to love and live with thee, thou beautiful delight!
 Than thus to live and love with thee the summer day and night!
 The Earth itself, where thou hadst rest, would surely smile to see
 Herself grow Eden once again, possest of Love and thee.    
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="clare2019100401">
+<text id="clare2019100401">
 <head>
     <title>My Early Home</title>
     <firstline>Here sparrows build upon the trees</firstline>
 </head>
 <body>
+<poetry>
 Here sparrows build upon the trees,
         And stockdove hides her nest;
 The leaves are winnowed by the breeze
@@ -73,8 +76,9 @@ The trees are here all green agen,
         Here bees the flowers still kiss,
 But flowers and trees seemed sweeter then:
         My early home was this.    
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

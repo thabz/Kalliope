@@ -9,7 +9,7 @@
 </workhead>
 <workbody>
 
-<poem id="gray2001122601">
+<text id="gray2001122601">
 <head>
    <title>Ode on the Spring</title>
    <toctitle>Ode on the Spring</toctitle>
@@ -18,6 +18,7 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Lo! where the rosy-bosom'd Hours,
     Fair Venus' train appear,
 Disclose the long-expecting flowers,
@@ -72,16 +73,18 @@ No hive hast thou of hoarded sweets,
 On hasty wings thy youth is flown;
 Thy sun is set, thy spring is gone—
     We frolic, while 'tis May.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="gray2019121101">
+<text id="gray2019121101">
 <head>
     <title>Ode to Adversity </title>
     <firstline>Daughter of Jove, relentless power</firstline>
     <!-- https://en.wikisource.org/wiki/Ode_to_Adversity -->
 </head>
 <body>
+<poetry>
 <sc>Daughter</sc> of Jove, relentless power,
     Thou tamer of the human breast,
   Whose iron scourge and torturing hour
@@ -135,15 +138,17 @@ Despair, and fell Disease, and ghastly Poverty;—
   Teach me to love and to forgive
   Exact my own defects to scan,
 What others are to feel, and know myself a Man.    
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="gray2019122601">
+<text id="gray2019122601">
 <head>
     <title>Elegy Written in a Country Churchyard</title>
     <firstline>The curfew tolls the knell of parting day</firstline>
 </head>
 <body>
+<poetry>
 The curfew tolls the knell of parting day,
     The lowing herd wind slowly o'er the lea,
 The plowman homeward plods his weary way,
@@ -305,8 +310,9 @@ Approach and read (for thou canst read) the lay,
     <i>Or draw his frailties from their dread abode,</i>
 <i>(There they alike in trembling hope repose)</i>
     <i>The bosom of his Father and his God.</i>
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>
