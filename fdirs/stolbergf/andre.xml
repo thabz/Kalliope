@@ -482,7 +482,7 @@ Bis mit Lächeln mein Haupt sanft in die Grube sinkt!
 </body>
 </text>
 
-<poem id="stolbergf2020012801">
+<text id="stolbergf2020012801">
 <head>
     <title>Die Quelle</title>
     <subtitle>1783.</subtitle>
@@ -492,12 +492,15 @@ Bis mit Lächeln mein Haupt sanft in die Grube sinkt!
     </notes>
 </head>
 <body>
-<nonum><right>Insanientis dum sapientiae</right></nonum>
-<nonum><right>Consultus erro, nunc retrorsum</right></nonum>
-<nonum><right>Vela dare, atque iterare cursus</right></nonum>
-<nonum><right>Cogor relictos.</right></nonum>
-<nonum><right><i>Horat. I. od. 34, v. 2-5</i></right></nonum>
+<quote font-size="small" margin-left="20%">
+Insanientis dum sapientiae</right></nonum>
+Consultus erro, nunc retrorsum</right></nonum>
+Vela dare, atque iterare cursus</right></nonum>
+Cogor relictos.</right></nonum>
+<right><i>Horat. I. od. 34, v. 2-5</i></right>
+</quote>
 
+<poetry>
 Wie im Gewimmel von der großen Stadt
 Diogenes bei hellem Sonnenschein
 Mit einer Leuchte in der Hand umher
@@ -595,10 +598,9 @@ Wo Schluß auf Schluß sich paßt, wie Stein auf Stein
 Sehr fest vielleicht, wofern der lockre Grund
 Nicht stürzte, wann der Leidenschaften Strom
 Hochschwellend an den Sand des Ufers braust.
-
-
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>
