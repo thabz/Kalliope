@@ -16,7 +16,6 @@
         <picture src="1803-p4.jpg">Dedikationen lyder ,,H. W. Ribers / ædle Veninde / og / Velynderinde / Frue Baronesse LÖVENSKIOLD, / hvis ærefulde Godhed / for ham / end ikke kiölnedes / ved hans Död // i hans Navn / ærbödigen og erkiendtligen / helliget / af hans Venner / og / Udgivere / L. C. Sander K. L. Rahbek.</picture>
         <picture src="1803-p2.jpg"></picture>
     </pictures>
-    <!-- TODO: Tjek titler op imod indholdsfortegnelse (PDF 61ff) -->
     <source id="bd1" facsimile="130023491509_color" facsimile-pages-num="286" facsimile-pages-offset="64">Hans Riber: <i>Samlede Digte</i>, Simon Poulsens Forlag, Kbh., 1803, bd. 1.</source>
     <source id="bd2" facsimile="130023491509_color" facsimile-pages-num="558" facsimile-pages-offset="286">Hans Riber: <i>Samlede Digte</i>, Simon Poulsens Forlag, Kbh., 1803, bd. 2.</source>
 </workhead>
@@ -3670,11 +3669,11 @@ Fælles være her vor Fryd, vor Smerte!
 
 <text id="riber2020032760">
 <head>
+    <suptitle>En naadig Frökens</suptitle>
     <title>Foraarssang</title>
     <toctitle>En naadig Frökens Foraarssang, efter Voss</toctitle>
     <firstline>Naar skal den Bröndcuur Ende faae</firstline>
     <source in="bd1" pages="155-158"/>
-    <!-- TODO: Suptitle "En naadog Frökens" -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3814,13 +3813,10 @@ Og Broderhierter vor Barndoms Glæder
     <toctitle>Sang, efter Hagedorn</toctitle>
     <firstline>Til Viindruens Priis</firstline>
     <notes>
-        <note unknown-original-by="hagedorn" />
+        <note>Gendigtning af Friedrich von Hagedorn: <xref type="translation" poem="hagedorn2020041701"/>.</note>
         <note type="credits">Teksten indtastet af Margit Ammentorp og oversættelserne af en flink anonym.<!-- Oprindeligt fra Digter-Krands - En Samling af udkaarede ældre og nyere Selskabssange, Odense, 1826. Trykker og udgiver er S. Hempel "Eier af Fyens Adressekontoir". --></note>
     </notes>
     <source in="bd1" pages="161-162"/>
-    <!-- TODO: Find originalen (Hagedorn) -->
-    <!-- TODO: https://archive.org/details/bub_gb_fak6AAAAcAAJ/page/n133/mode/2up/search/+magnus+Apollo -->
-    <!-- TODO: Findes ovenfor med titlen "Mischmasch" og förstelinjen "Der Weintrunk erhält, das Lehern die Welt" -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6005,7 +6001,7 @@ Sover, og vaagner styrket og mere forstandige Börn lille!
 Alle glædes vi da, naar Herrens Morgen har vakt os.
 Da erfare vi og, at Gud ei seer paa Personer.
 Men at hvo ham frygter og giör hvad Ret er, ham tækkes
-Iblandt alle Folk<note>* Petri Ord: Ap. G. 10, 34. 35.<!-- TODO: Link til Apostlenes Gerninger--></note>. O Gud! da glædes vi alle,
+Iblandt alle Folk<note>* Petri Ord: <a poem="bibelapostlene10,34-35">Ap. G. 10, 34. 35.</a></note>. O Gud! da glædes vi alle,
 Alle, som giorde Godt i Enfoldighed; glædes med <sc>Petrus</sc>,
 <sc>Moses</sc>, <sc>Confuts</sc>, og <sc>Homer</sc>, den elskende, og <sc>Zoroaster</sc>,
 Og ham der döde for Sandhed, med <sc>Sokrates</sc>, og med den ædle
@@ -7301,7 +7297,7 @@ Kiedsomhed, Sladder, Bagtalelse, plagende Trang med;
 Frydefuldt stemmer den Hiertet og hæver til modige Dyder
 Nu daj lad Glassene fyldes! Ved deres herlige Sölvklang
 Vil vi istemme en Bryllupssang af Voss<note><a poet="voss">Johann Heinrich Voß</a> (1751-1826).</note>, den Eutiner
-Som vor Broder Hiort<!-- TODO: Find Hiort og hans oprindelige tekst. --> paa Amager smukt har fordansket<note>* Denne Oversættelse findes i <i>Nyeste Samling af Selskabssange, især for blandede Selskaber</i>, S. 107. Da Visen egentlig er giort til denne Idyl, mener jeg, den og burde staae her. Jeg har betient mig af Hr. <sc>Hiorts</sc> Oversættelse, fordi jeg ikke troede at kunne levere en bedre. Den sidste Strophe har Hr. Oversætteren forandret, for at Visen kunne blive almindelig brugbar; her har jeg naturligvis fulgt Originalen. H. W . R.</note>
+Som vor Broder Hiort<!-- TODO: Find Hiort og hans oprindelige tekst. http://danskforfatterleksikon.dk/1850bib/HVKHjort.htm --> paa Amager smukt har fordansket<note>* Denne Oversættelse findes i <i>Nyeste Samling af Selskabssange, især for blandede Selskaber</i>, S. 107. Da Visen egentlig er giort til denne Idyl, mener jeg, den og burde staae her. Jeg har betient mig af Hr. <sc>Hiorts</sc> Oversættelse, fordi jeg ikke troede at kunne levere en bedre. Den sidste Strophe har Hr. Oversætteren forandret, for at Visen kunne blive almindelig brugbar; her har jeg naturligvis fulgt Originalen. H. W . R.</note>
 Rask til Klaveret <sc>Amalia</sc>! kommer saa han her til Vaaren
 Giv ham <sc>Luise</sc>, mit Barn! det betingede Kys og endnu eet!
   Saa talte fyrige Olding, og Moderen Glassene fyldte
@@ -7528,7 +7524,7 @@ Menneskets eget fortrolige Sprog, naar Ordene lyde.
 Spil mig da nu en Sang, til Forandring, enten af <sc>Händel</sc>,
 <sc>Reichardt</sc>, <sc>Gluck</sc> og <sc>Emanuel Bach</sc>, og vor herlige Mester
 <sc>Schulz</sc>, som <sc>Luther</sc> selv vist qvædede efter paa Orglet.
-Syng mig: ,,Som Barnets Hierte'' af <sc>Claudius</sc><!-- TODO: Link til sangen -->, eller vor Bordsang,
+Syng mig: ,,Som Barnets Hierte'' af <sc>Claudius</sc><note>Cf. <xref poem="riber2020032738"/></note>, eller vor Bordsang,
 Saa vor Olding böd, og villig fulgte de Andre.
 Men först reiste sig den gamle forstandige Husmoer.
 Og hun böied’ sit Hoved til Datterens blomstrende Kind, og
