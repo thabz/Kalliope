@@ -1,9 +1,10 @@
-const { htmlToXml } = require('../libs/helpers.js');
+const { fileExists, htmlToXml } = require('../libs/helpers.js');
 const {
   isFileModified,
   loadCachedJSON,
   writeCachedJSON,
   markFileDirty,
+  globalForceReload,
 } = require('../libs/caching.js');
 const { imageSizeSync } = require('./image.js');
 const {
@@ -18,7 +19,9 @@ const { get_picture } = require('./parsing.js');
 const { build_museum_url } = require('./museums.js');
 
 const build_artwork = async collected => {
-  let collected_artwork = new Map(loadCachedJSON('collected.artwork') || []);
+  let collected_artwork = globalForceReload
+    ? new Map()
+    : new Map(loadCachedJSON('collected.artwork') || []);
   const force_reload = collected_artwork.size == 0;
 
   const promises = [];
@@ -31,8 +34,9 @@ const build_artwork = async collected => {
       const portraitsFile = `fdirs/${personId}/portraits.xml`;
 
       if (
-        personType === 'artist' &&
-        (force_reload || isFileModified(artworkFilename))
+        force_reload ||
+        fileExists(artworkFilename) ||
+        isFileModified(artworkFilename)
       ) {
         // Fjern eksisterende fra cache (i tilfælde af id er slettet)
         Array.from(collected_artwork.keys())

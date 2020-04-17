@@ -40,6 +40,7 @@ const BiggerPicture = ({ picture }: { picture: PictureItem }) => {
   if (picture.clipPath != null) {
     clipPathStyle = {
       clipPath: picture.clipPath,
+      WebkitClipPath: picture.clipPath
     };
     clipPathDropShadowStyle = {
       filter: 'drop-shadow(4px 4px 12px #888)',

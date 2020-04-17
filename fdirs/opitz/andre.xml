@@ -9,7 +9,7 @@
 </workhead>
 <workbody>
 
-<poem id="opitz20000709">
+<text id="opitz20000709">
 <head>
    <title>Daß die Poeterey vnsterblich sey</title>
    <toctitle>Daß die Poeterey vnsterblich sey</toctitle>
@@ -18,6 +18,7 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Was wirffstu / schnöder Neid / mir für die Lust zu schreiben
 Von Venus / vnd mit jhr die Jugend zu vertreiben?
 Ich achte deiner nicht / du liebest Eitelkeit:
@@ -42,15 +43,17 @@ So daß er kaum das Roß vermochte zu regieren:
 So soll auch mich von euch kein andre Liebe führen /
 Biß mich der Letzte Todt hier vnversehens kriegt /
 Vnd Venus mich begräbt wo jhr Adonis liegt.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="opitz2020011001">
+<text id="opitz2020011001">
 <head>
     <title>Zlatna Oder Getichte von Ruhe dem Geküthes</title>
     <firstline>Wie wann die Nachtigal, vom Keficht außgerissen</firstline>
 </head>
 <body>
+<poetry>
 Wie wann die Nachtigal, vom Keficht außgerissen,
 Hin in die Lüfften kömpt und an den kalten Flüssen
 Mit Singen lustig ist, umb daß sie loß und frey
@@ -576,8 +579,9 @@ Und ihr, Herr Lisabon, bleibt, der ihr seydt gewesen,
 Mein werther lieber Freund; das was hier wird gelesen,
 Wie schlecht es immer ist, soll künfftig doch allein
 Bezeugen meine Treu, wann nichts von uns wird seyn.    
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

@@ -9,7 +9,7 @@ import LangSelect from '../components/langselect';
 import { poetMenu } from '../components/menu.js';
 import PoetName from '../components/poetname.js';
 import { poetNameString } from '../components/poetname-helpers.js';
-import TextContent from '../components/textcontent.js';
+import TextContent, { TextInline } from '../components/textcontent.js';
 import TwoColumns from '../components/twocolumns.js';
 import ErrorPage from './error.js';
 import * as Links from '../components/links';
@@ -55,7 +55,7 @@ const sectionTitle = (sectionType, lang) => {
   }
 };
 
-const Section = props => {
+const Section = (props) => {
   const { title, items } = props;
   return (
     <div className="list-section" style={{ marginBottom: '40px' }}>
@@ -75,7 +75,7 @@ const Section = props => {
   );
 };
 
-const Item = props => {
+const Item = (props) => {
   const { children } = props;
   return (
     <div
@@ -119,8 +119,8 @@ const TranslationsGroupedByTranslated = (props: TranslationsProps) => {
   const byTranslated = {};
   // Build byTranslated
   translations
-    .filter(t => t.translated != null)
-    .forEach(t => {
+    .filter((t) => t.translated != null)
+    .forEach((t) => {
       const { translated, translation } = t;
       const a = byTranslated[translated.poem.id] || {
         translated,
@@ -134,8 +134,8 @@ const TranslationsGroupedByTranslated = (props: TranslationsProps) => {
     .sort((a, b) => {
       return a.translated.poem.title < b.translated.poem.title ? -1 : 1;
     })
-    .map(a => {
-      const translations = a.translations.map(t => {
+    .map((a) => {
+      const translations = a.translations.map((t) => {
         return (
           <Fragment key={t.poem.id}>
             <PoetName poet={t.poet} />: <PoemLink poem={t.poem} lang={lang} />
@@ -151,8 +151,8 @@ const TranslationsGroupedByTranslated = (props: TranslationsProps) => {
     });
   return result.concat(
     translations
-      .filter(t => t.translated == null)
-      .map(a => {
+      .filter((t) => t.translated == null)
+      .map((a) => {
         return (
           <Item key={a.translation.poem.id}>
             {_('Et ukendt digt er oversat af', lang)}{' '}
@@ -169,7 +169,7 @@ const TranslationsGroupedByTranslator = (props: TranslationsProps) => {
 
   const byTranslator = {};
   // Build byTranslator
-  translations.forEach(t => {
+  translations.forEach((t) => {
     const { translated, translation } = t;
     const a = byTranslator[translation.poet.id] || {
       translator: translation.poet,
@@ -183,8 +183,8 @@ const TranslationsGroupedByTranslator = (props: TranslationsProps) => {
     .sort((a, b) => {
       return poetsByLastname(a.translator, b.translator);
     })
-    .map(a => {
-      const translations = a.translations.map(t => {
+    .map((a) => {
+      const translations = a.translations.map((t) => {
         if (t.translated != null) {
           return (
             <>
@@ -210,14 +210,14 @@ const TranslationsGroupedByTranslator = (props: TranslationsProps) => {
       );
     });
 };
-const TranslationsSection = props => {
+const TranslationsSection = (props) => {
   const { translations, lang } = props;
   const [groupBy, setGroupBy] = useState('by-translated');
 
   const groupByOptions = [
     { title: _('Efter titel', lang), value: 'by-translated' },
     { title: _('Efter oversætter', lang), value: 'by-translator' },
-  ].map(o => {
+  ].map((o) => {
     const selected = o.value === groupBy;
     const style = {
       marginLeft: '10px',
@@ -297,14 +297,14 @@ const MentionsPage = (props: MentionsProps) => {
         items: props[section].map((line, j) => {
           return (
             <Item key={j}>
-              <TextContent contentHtml={line} lang={lang} contentLang="da" />
+              <TextInline contentHtml={line} contentLang="da" />
             </Item>
           );
         }),
       };
     })
-    .filter(g => g.items.length > 0)
-    .map(g => {
+    .filter((g) => g.items.length > 0)
+    .map((g) => {
       return <Section title={g.title} items={g.items} key={g.title} />;
     });
 

@@ -4,6 +4,7 @@ import React from 'react';
 import 'isomorphic-fetch';
 import { Link, Router } from '../routes';
 import Page from '../components/page.js';
+import SubHeading from '../components/subheading.js';
 import { worksCrumbs } from '../components/breadcrumbs.js';
 import LangSelect from '../components/langselect';
 import { poetMenu } from '../components/menu.js';
@@ -11,6 +12,7 @@ import PoetName from '../components/poetname.js';
 import { poetNameString } from '../components/poetname-helpers.js';
 import PicturesGrid from '../components/picturesgrid.js';
 import WorksList from '../components/workslist.js';
+import Stack from '../components/stack.js';
 import * as Links from '../components/links';
 import * as Client from '../common/client.js';
 import ErrorPage from './error.js';
@@ -27,6 +29,10 @@ type ArtworkListProps = {
 class ArtworkList extends React.Component<ArtworkListProps> {
   render() {
     const { lang, poet, artwork } = this.props;
+
+    if (artwork.length === 0) {
+      return null;
+    }
 
     const sortArtworks = artwork => {
       return artwork.sort((a, b) => {
@@ -210,6 +216,40 @@ const WorksPage = (props: WorksProps) => {
     return null;
   }
 
+  const worksList = <WorksList lang={lang} poet={poet} works={works} />;
+  const artworksList = (
+    <PicturesGrid lang={lang} poet={poet} artwork={artwork} hideArtist={true} />
+  );
+  const worksTitle =
+    artwork.length === 0 || works.length === 0 ? null : (
+      <h3>{_('Litteratur', lang)}</h3>
+    );
+  const artworksTitle =
+    artwork.length === 0 || works.length === 0 ? null : (
+      <h3>{_('Kunst', lang)}</h3>
+    );
+
+  const stack = (
+    <>
+      <Stack spacing="40px">
+        {worksTitle}
+        {worksList}
+        {artworksTitle}
+        {artworksList}
+      </Stack>
+      <style jsx>{`
+        h3 {
+          font-weight: 300;
+          font-size: 22x;
+          line-height: 1.6;
+          padding-bottom: 1px;
+          border-bottom: 1px solid #888;
+          margin-bottom: 20px;
+        }
+      `}</style>
+    </>
+  );
+
   return (
     <Page
       headTitle={poetNameString(poet, false, false) + ' - Kalliope'}
@@ -224,13 +264,7 @@ const WorksPage = (props: WorksProps) => {
       poet={poet}
       selectedMenuItem="works">
       <div className="two-columns">
-        <WorksList lang={lang} poet={poet} works={works} />
-        <PicturesGrid
-          lang={lang}
-          poet={poet}
-          artwork={artwork}
-          hideArtist={true}
-        />
+        {stack}
         <style jsx>{`
           :global(.nodata) {
             padding: 30px 0;

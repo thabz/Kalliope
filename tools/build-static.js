@@ -8,6 +8,7 @@ const {
   isFileModified,
   markFileDirty,
   refreshFilesModifiedCache,
+  force_reload: globalForceReload,
   loadCachedJSON,
   writeCachedJSON,
 } = require('./libs/caching.js');
@@ -23,6 +24,7 @@ const {
 } = require('./libs/helpers.js');
 const {
   all_poet_ids,
+  build_poets_first_pass,
   build_poets_json,
   build_poets_by_country_json,
 } = require('./build-static/poets.js');
@@ -37,6 +39,7 @@ const {
   getChildren,
   getChildByTagName,
   getChildrenByTagName,
+  getChildrenByTagNames,
   getElementByTagName,
   getElementsByTagNames,
   safeGetInnerXML,
@@ -154,14 +157,16 @@ const build_bio_json = async collected => {
 };
 
 const build_poet_workids = () => {
-  let collected_workids = new Map(loadCachedJSON('collected.workids') || []);
+  let collected_workids = globalForceReload
+    ? new Map()
+    : new Map(loadCachedJSON('collected.workids') || []);
   let found_changes = false;
   all_poet_ids().forEach(poetId => {
     const infoFilename = `fdirs/${poetId}/info.xml`;
     if (!fs.existsSync(infoFilename)) {
       throw new Error(`Missing info.xml in fdirs/${poetId}.`);
     }
-    if (isFileModified(infoFilename)) {
+    if (globalForceReload || isFileModified(infoFilename)) {
       const doc = loadXMLDoc(infoFilename);
       const workIds = safeGetText(doc, 'works') || '';
       let items = workIds.split(',').filter(x => x.length > 0);
@@ -199,9 +204,6 @@ const handle_text = async (
   let linktitle = extractTitle(head, 'linktitle') || indextitle || title;
 
   const keywords = safeGetText(head, 'keywords');
-  const isBible = poetId === 'bibel';
-  const isFolkevise =
-    poetId === 'folkeviser' || (poetId === 'tasso' && workId === '1581');
 
   let subtitles = extractSubtitles(head, 'subtitle', collected);
   let suptitles = extractSubtitles(head, 'suptitle', collected);
@@ -335,7 +337,7 @@ const handle_text = async (
     // Dette er ikke nødvendigvis en fejl.
     console.log(`fdirs/${poetId}/${workId}: teksten ${textId} mangler source.`);
   }
-  let content_html = null;
+  let blocks = null;
   let has_footnotes = false;
   let toc = null;
   if (textType === 'section') {
@@ -348,16 +350,24 @@ const handle_text = async (
   } else {
     // prose or poem
     const body = getChildByTagName(text, 'body');
-    const rawBody = safeGetInnerXML(body);
-    content_html = htmlToXml(
-      rawBody,
-      collected,
-      textType === 'poem',
-      isBible,
-      isFolkevise
+    blocks = getChildrenByTagNames(body, ['poetry', 'prose', 'quote']).map(
+      block => {
+        const type = tagName(block);
+        const rawBlock = safeGetInnerXML(block);
+        has_footnotes |=
+          rawBlock.indexOf('<footnote') !== -1 ||
+          rawBlock.indexOf('<note') !== -1;
+        const fontSize = safeGetAttr(block, 'font-size');
+        const marginLeft = safeGetAttr(block, 'margin-left');
+        const marginRight = safeGetAttr(block, 'margin-right');
+        const options = { fontSize, marginLeft, marginRight };
+        return {
+          type,
+          lines: htmlToXml(rawBlock, collected, type === 'poetry'),
+          options,
+        };
+      }
     );
-    has_footnotes =
-      rawBody.indexOf('<footnote') !== -1 || rawBody.indexOf('<note') !== -1;
   }
   mkdirp.sync(foldername);
   const text_data = {
@@ -373,7 +383,6 @@ const handle_text = async (
       linktitle: replaceDashes(linktitle.title),
       subtitles,
       suptitles,
-      is_prose: tagName(text) === 'prose',
       text_type: textType,
       has_footnotes,
       notes: get_notes(head, collected),
@@ -388,7 +397,7 @@ const handle_text = async (
         collected
       ),
       content_lang: poet.lang,
-      content_html,
+      blocks,
       toc,
     },
   };
@@ -410,7 +419,7 @@ const handle_work = async work => {
     await Promise.all(
       getChildren(section).map(async part => {
         const partName = tagName(part);
-        if (partName === 'poem') {
+        if (partName === 'text') {
           const textId = safeGetAttr(part, 'id');
           const head = getChildByTagName(part, 'head');
           const firstline = extractTitle(head, 'firstline');
@@ -432,14 +441,17 @@ const handle_work = async work => {
           if (toctitle == null) {
             throw `${textId} mangler toctitle, firstline og title i ${poetId}/${workId}.xml`;
           }
-          lines.push({
-            id: textId,
-            work_id: workId,
-            lang: collected.poets.get(poetId).lang,
-            title: replaceDashes(indextitle.title),
-            firstline:
-              firstline == null ? null : replaceDashes(firstline.title),
-          });
+          if (firstline != null) {
+            // Kun digte skal indekseres
+            lines.push({
+              id: textId,
+              work_id: workId,
+              lang: collected.poets.get(poetId).lang,
+              title: replaceDashes(indextitle.title),
+              firstline:
+                firstline == null ? null : replaceDashes(firstline.title),
+            });
+          }
           toc.push({
             type: 'text',
             id: textId,
@@ -536,8 +548,8 @@ const handle_work = async work => {
   }
 
   // Create function to resolve prev/next links in texts
-  const resolve_prev_next = (function() {
-    const items = getElementsByTagNames(workbody, ['poem', 'prose', 'section'])
+  const resolve_prev_next = (function () {
+    const items = getElementsByTagNames(workbody, ['text', 'section'])
       .filter(part => safeGetAttr(part, 'id') != null)
       .map(part => {
         const textId = safeGetAttr(part, 'id');
@@ -568,8 +580,12 @@ const handle_work = async work => {
 // Constructs collected.works and collected.texts to
 // be used for resolving <xref poem="">, etc.
 const works_first_pass = collected => {
-  const texts = new Map(loadCachedJSON('collected.texts') || []);
-  const works = new Map(loadCachedJSON('collected.works') || []);
+  const texts = globalForceReload
+    ? new Map()
+    : new Map(loadCachedJSON('collected.texts') || []);
+  const works = globalForceReload
+    ? new Map()
+    : new Map(loadCachedJSON('collected.works') || []);
 
   let found_changes = false;
   const force_reload = texts.size === 0 || works.size === 0;
@@ -614,8 +630,7 @@ const works_first_pass = collected => {
         );
       }
       const workTexts = getElementsByTagNames(workBody, [
-        'poem',
-        'prose',
+        'text',
         'section',
         'subwork',
       ]);
@@ -879,6 +894,11 @@ const main = async () => {
   safeMkdir(`static/api`);
   collected.museums = await b('build_museums', build_museums, collected);
   collected.workids = await b('build_poet_workids', build_poet_workids);
+  collected.poets = await b(
+    'build_poets_first_pass',
+    build_poets_first_pass,
+    collected
+  );
   const { works, texts } = await b(
     'works_first_pass',
     works_first_pass,
@@ -886,12 +906,13 @@ const main = async () => {
   );
   collected.works = works;
   collected.texts = texts;
+  collected.artwork = await b('build_artwork', build_artwork, collected);
   await b(
     'build_person_or_keyword_refs',
     build_person_or_keyword_refs,
     collected
   );
-  collected.poets = await b('build_poets_json', build_poets_json, collected);
+  await b('build_poets_json', build_poets_json, collected);
   await b(
     'mark_ref_destinations_dirty',
     mark_ref_destinations_dirty,
@@ -902,7 +923,6 @@ const main = async () => {
     build_poets_by_country_json,
     collected
   );
-  collected.artwork = await b('build_artwork', build_artwork, collected);
   await b('build_museum_pages', build_museum_pages, collected);
   collected.variants = await b('build_variants', build_variants, collected);
   await b('build_mentions_json', build_mentions_json, collected);
