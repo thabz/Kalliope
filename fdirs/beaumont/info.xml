@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="beaumont" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Francis</firstname>
+    <lastname>Beaumont</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1584</date>
+      <place>Grace-Dieu, England</place>
+    </born>
+    <dead>
+      <date>1616-03-06</date>
+      <place>London</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>
