@@ -483,15 +483,17 @@ const TextPage = (props: TextComponentProps) => {
         ...options,
       };
       return (
-        <TextContent
-          key={type + i}
-          contentHtml={lines}
-          contentLang={text.content_lang}
-          lang={lang}
-          options={blockOptions}
-          type={type}
-          keyPrefix={text.id}
-        />
+        <div>
+          <TextContent
+            key={type + i}
+            contentHtml={lines}
+            contentLang={text.content_lang}
+            lang={lang}
+            options={blockOptions}
+            type={type}
+            keyPrefix={text.id}
+          />
+        </div>
       );
     });
     body = <div className="text-content">{renderedBlocks}</div>;
