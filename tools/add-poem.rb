@@ -65,14 +65,16 @@ if not contents.include?("<poem")
     prefix = "\n"
 end
 
-textxml = %{#{prefix}<poem id="#{poemId}">
+textxml = %{#{prefix}<text id="#{poemId}">
 <head>
     <title></title>
     <firstline></firstline>
 </head>
 <body>
+<poetry>
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>}
 

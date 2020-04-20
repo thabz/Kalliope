@@ -8,7 +8,7 @@
 </workhead>
 <workbody>
 
-<poem id="luetken2017092502">
+<text id="luetken2017092502">
 <head>
    <title>Elskov</title>
    <firstline>Jeg elsker dig!</firstline>
@@ -19,6 +19,7 @@
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg elsker dig!
 Jeg vidste det ikke før.
 Men jeg elsker dig nu.
@@ -66,10 +67,11 @@ Jeg er uværdig til din Naade!
 Omkring mig lurer Mørket.
 En sort Os af Mørke.
 Herre! Herre!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="luetken2017092511">
+<text id="luetken2017092511">
 <head>
    <title>Jeg gaar til Grunde nu -</title>
    <firstline>Jeg gaar til Grunde nu</firstline>
@@ -80,6 +82,7 @@ Herre! Herre!
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg gaar til Grunde nu -
 paa en ligegyldig Maade,
 med et Smil om Munden,
@@ -89,11 +92,12 @@ Mit urolige Hjerte -
 som hamrer alle Vegne ...
 Spørg Vinden, spørg Stjernerne,
 hvorfor mit Hjerte gaar til Grunde.
+</poetry>
 </body>
-</poem>
+</text>
 
 <!--
-<poem id="luetken2017092507">
+<text id="luetken2017092507">
 <head>
    <title></title>
    <firstline> </firstline>
@@ -103,8 +107,10 @@ hvorfor mit Hjerte gaar til Grunde.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
+</poetry>
 </body>
-</poem>
+</text>
 -->
 </workbody>
 </kalliopework>

@@ -37,31 +37,41 @@ const build_keywords = async collected => {
         const id = safeGetAttr(keyword, 'id');
         const is_draft = safeGetAttr(keyword, 'draft') === 'true';
         const title = safeGetText(head, 'title');
-        const pictures = await get_pictures(
-          head,
-          '/static/images/keywords',
-          path,
-          collected
-        );
-        const author = safeGetText(head, 'author');
-        const rawBody = safeGetInnerXML(body);
-        const content_html = htmlToXml(rawBody, collected);
-        const has_footnotes =
-          rawBody.indexOf('<footnote') !== -1 ||
-          rawBody.indexOf('<note') !== -1;
-        const data = {
+        const redirectURL = safeGetAttr(keyword, 'redirect-url');
+        let data = {
           id,
           title,
-          is_draft,
-          author,
-          pictures,
-          has_footnotes,
-          content_lang: 'da',
-          content_html,
         };
+        if (redirectURL != null) {
+          data.redirectURL = redirectURL;
+        } else {
+          const pictures = await get_pictures(
+            head,
+            '/static/images/keywords',
+            path,
+            collected
+          );
+          const author = safeGetText(head, 'author');
+          const rawBody = safeGetInnerXML(body) || '';
+          const content_html = htmlToXml(rawBody, collected);
+          const has_footnotes =
+            rawBody.indexOf('<footnote') !== -1 ||
+            rawBody.indexOf('<note') !== -1;
+          data = {
+            ...data,
+            is_draft,
+            author,
+            pictures,
+            has_footnotes,
+            content_lang: 'da',
+            content_html,
+          };
+        }
+
         keywords_toc.push({
           id,
           title,
+          redirectURL,
           is_draft,
         });
         const outFilename = `static/api/keywords/${id}.json`;

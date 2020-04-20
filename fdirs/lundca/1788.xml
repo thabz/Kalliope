@@ -16,13 +16,14 @@
 </workhead>
 <workbody>
 
-<prose id="lundca2019122601">
+<text id="lundca2019122601" skip-index="true">
 <head>
     <title>Forerindring</title>
     <source pages="1-4"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<prose>
 Neppe har Danmark i noget Fag af Digtekunsten saa mange Mesterstykker at fremvise, som i den beskrivende Poesie. - Selløe, - - - Horneelen, Sarpen, Heides Hytte, Fridriksborg, have fremkaldet Danmarks største Digtere; de herlige Sange om Junkerskilden, Jøndalen etc., ere udødelige som deres Forfatteres Navne. Da nærværende Digts Forfatter kiender sin Svaghed saa fuldkommen, som nogen anden kan sige ham den, vilde altsaa dette Stykke, som her forelægges Publikum, neppe blevet til, dersom ikke særdeles Omstændighed havde opmuntret Digteren - - I Aaret 1782 eller først i 1783 udsatte de skiønne Videnskabers SelSelskab en Præmie for en poetisk Beskrivelse over Lunden ved Jægerspriis. - Det hendte sig at jeg kom til at tilbringe en Deel af den følgende Sommer i denne skiønne Egn, og et forvovent Indfald bragte mig til at prøve paa at beskrive den. - I en Forfatning, som vist ikke er Muserne gunstig, fuldførte jeg mit Arbeid endnu inden Aarets Udgang, og uagtet jeg fuldkommen føelte at det ingenlunde fortiente Præmie, indleverte jeg Stykket til Selskabet, blot i det Haab at høre en upartisk Dom over mine Digter-Evner, som jeg den Gang endnu ikke havde vovet at lade Publikum bedømme. - Fra den Tid holdt Selskabet op at virke; jeg ventede lange paa den sædvanlige offentlige Bekiendtgiørelse fra samme, men da den udeblev, tiltog Ligegyldighed ved mit Stykkes Skiebne saaledes, ar jeg tilsidst ikke engang holdte det værdt at kræves tilbage. - Saaledes henlaae det i meer end 3 Aar inden jeg fik Lyst til igien at see et Stykke, som jeg ansaae for et fuldkomment Misfoster. - Nu begierte jeg det tilbage, og fandt tvertimod min Forventning, at man havde anmærkt de meest stødende Steder, og tillod mig at rette dem, og indsende Stykket paa ny. - Denne Behandling med det første af alle mine Arbeider, oversteeg saa langt mit Haab, at jeg aldrig mere levende end da, har føelt den Sandhed: at de største Kiendere ere tillige de mildeste Dommere. - Jeg besluttede strax at giøre mit Stykke værdigt til den Opmærksomhed, som Smagens Fædre i Danmark havde skienket det af uforskyldt Overbærelse; thi jeg ansaae det for Pligt, at vise mig taknemmelig paa denne Maade. - Jeg har benyttet mig af hver en Anmærkning, som man havde værdiget mig, og jeg har rettet meer end man havde anmærkt. - Men disse Rettelser, som jeg kun kunde foretage mig i enkelte Fritimer, have medtaget saa lang Tid, at jeg maatte frygte at misbruge Selskabets Godhed, om jeg nu vilde indlevere det. - Det er desuden langt fra at jeg troer, at det nu har naaet nogen Grad af Fuldkommenhed, nei endog Planen har Mangler, som jeg ikke formaaer at rette.
     Jeg har vovet, at lade dette Forsøg trykke især for at vise det Selskab, som fra først af ene har givet Anledning til dette Stykkes Tilværelse, at jeg har havt Lyst til at fortiene dets Godhed, og til at bruge dets Anviisning om end Evnen har manglet mig, og dernæst fordi jeg har Grund til at haabe, at mit Arbeid vil modtages med samme Skaansel, som det i en slettere Tilstand allerede har nydt; og endelig fordi det ikke meget vil smerte mig, om man end skulde mishandle disse Blade. - De Tider, som jeg kunde anvende til Musernes Omgang, synes nu at vare forbi, og den liden Digter-Ære, jeg maaskee kan have erhvervet mig, vil desuden falde af sig selv, naar jeg ikke kan forøge den; Frygten for at tabe den, er altsaa ikke stor; saameget mere da i vore Dage den meest nymodens Definition paa en Digter er: El Menneske som er ukyndig i alvorlige Videnskaber og uskikket til Forretninger i Livet.
     Dog tænke ingen, at jeg har været eller er ligegyldig ved andres Bifald, nei! at blive Digter har engang været den høieste Ære jeg ønskede at opnaae, og at gavne som Digter har varet min sødeste Drøm, men - -
@@ -31,10 +32,11 @@ Neppe har Danmark i noget Fag af Digtekunsten saa mange Mesterstykker at fremvis
     Det veed jeg, at jeg har søgt at give mit Digt al den Fuldkommenhed som stod i min Magt, og at giøre det paa nogen Maade dets store Gienstand værdigt; Horatzes gyldne Regel <i>nonum prematur in annum</i> har jeg i det mindste mere end halv efterlevet - og Læseren maae dømme hvorvidt den har frugtet.
 
 ---
-</body>
 </prose>
+</body>
+</text>
 
-<poem id="lundca2019122602">
+<text id="lundca2019122602">
 <head>
     <title>Lunden ved Jægerspriis</title>
     <firstline>Alt aander Fryd bag Dannerkongens Hegn</firstline>
@@ -46,6 +48,7 @@ Neppe har Danmark i noget Fag af Digtekunsten saa mange Mesterstykker at fremvis
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><small><right>Happy the man, who to the shades retires - -</right></small></nonum>
 <nonum><small><right>Who wand'ring thoughtful in the silent wood,</right></small></nonum>
 <nonum><small><right>Attends the duties of the wife and good.</right></small></nonum>
@@ -701,8 +704,9 @@ Og dette Land saavidt, som Øiet seer,
 De Danskes Land - mit Fødeland det er.
 Tie svage Cithar - intet Ord beskriver
 Den Tanke, som min hele Siel henriver.
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

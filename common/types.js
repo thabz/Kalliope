@@ -34,10 +34,10 @@ type TextContentLine = Array<string>; // TODO: Make this more precise
 export type TextContentType = Array<TextContentLine>;
 
 export type TextContentOptions = {
-  isBible?: boolean,
-  isFolkevise?: boolean,
   highlightBibleVerses?: ?{ from: number, to: number },
-  isPoetry?: boolean,
+  marginLeft?: string,
+  marginRight?: string,
+  fontSize?: string,
 };
 
 export type Poet = {
@@ -75,7 +75,9 @@ export type Poet = {
 
 export type Museum = {
   id: MuseumId,
-  name: string,
+  name: ?string,
+  sortName: ?string,
+  deepLink: ?string,
 };
 
 export type Work = {
@@ -149,6 +151,7 @@ export type PictureItem = {
   artist?: Poet,
   museum?: Museum,
   remoteUrl?: string,
+  clipPath?: string,
   content_lang?: TextLang,
   content_html?: TextContentType,
   note_html?: TextContentType,
@@ -171,7 +174,7 @@ export type Text = {
   title: string,
   title_prefix?: string,
   linkTitle: string,
-  text_type: 'prose' | 'poem' | 'section',
+  text_type: 'text' | 'section',
   toc?: Array<TocItem>,
   subtitles?: Array<TextContentType>,
   suptitles?: Array<TextContentType>,
@@ -179,11 +182,20 @@ export type Text = {
   refs: Array<TextContentType>,
   variants: Array<TextContentType>,
   pictures: Array<PictureItem>,
-  content_html: TextContentType,
+  blocks: [
+    {
+      lines: TextContentType,
+      type: 'poetry' | 'prose' | 'quote',
+      options: {
+        marginLeft?: string,
+        marginRight?: string,
+        fontSize?: string,
+      },
+    }
+  ],
   content_lang: TextLang,
   keywords: Array<KeywordRef>,
   has_footnotes: boolean,
-  is_prose: boolean,
   source?: TextSource,
   unknown_original?: {
     poetId: PoetId,
@@ -194,6 +206,7 @@ export type Text = {
 export type Keyword = {
   id: string,
   title: string,
+  redirectURL?: string,
   is_draft: boolean,
   author?: string,
   notes?: Array<NoteItem>,

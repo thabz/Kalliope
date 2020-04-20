@@ -131,6 +131,7 @@ const WorkPage = (props: WorkProps) => {
       pageTitle={<PoetName poet={poet} includePeriod />}
       pageSubtitle={_('Værker', lang)}
       menuItems={poetMenu(poet)}
+      poet={poet}
       selectedMenuItem="works">
       <SidebarSplit sidebar={sidebar}>
         <div>

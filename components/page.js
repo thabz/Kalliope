@@ -72,6 +72,7 @@ const Page = props => {
     crumbs = [],
     paging,
     country,
+    poet,
     menuItems,
     selectedMenuItem,
     query,
@@ -98,6 +99,7 @@ const Page = props => {
           selected={selectedMenuItem}
           country={country}
           query={query}
+          poet={poet}
           lang={lang}
         />
         {children}

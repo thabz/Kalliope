@@ -17,7 +17,7 @@
 </workhead>
 <workbody>
 
-<prose id="blom2019081301">
+<text id="blom2019081301" skip-index="true">
 <head>
     <title>Fortale</title>
     <source pages="III-XII" facsimile-pages="7-16"/>
@@ -25,6 +25,7 @@
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<prose>
 ,,Den Ligegyldighed, hvormed vor philosopherende Tidsalder begynder at see ned paa Musernes Lege, synes ikke at træffe nogen Art Poesi mere föleligt end den lyriske. Det selskabelige Livs Skikke tjene dog idetmindste til nogen Beskyttelse for den dramatiske Digtekunst, og den fortællendes friere Form tillader den mere at föie sig efter Verdenstonen og optage Tidsaanden i sig. Men æsthetiske Aarböger, Selskabssange og vore Damers Musiklibhaveri bygge kun en svag Dæmning mod den lyriske Digtekunsts Forfald. Og dog vilde det være en meget nedslaaende Tanke for en Ven af det Skjönne, om disse Aandens vaarlige Blomster maatte falde af i Frugttiden, om den modnere Cultur maatte tilkjöbes, var det endog kun med Tabet af een eneste Nydelse af det Skjönne. Meget mere lod sig vel ogsaa i vore upoetiske Dage fremhæve et værdigt Formaal for den lyriske Poesi ligesom for Digtekunsten i Almindelighed; det lod sig maaskee godtgjöre, at om den end paa den ene Side maa staae tilbage for höiere Aandssysler, er den paa den anden Side saameget desto nödvendigere. Ved den Adsplittelse og sondrede Virksomhed for vore Aandskræfter, som er bleven fornöden paa Grund af Kundskabsstoffets Forögelse og Kaldsforretningernes Adskillelse, er det næsten alene Digtekunsten, der igjen forbinder Sjælens adspredte Evner, der sysselsætter Hoved og Hjerte, Skarpsindighed og Vid, Fornuft og Indbildningskraft i harmonisk Samklang, der ligesom paany samler det hele Menneske sammen. Kun den alene formaaer at afværge den sörgeligste Skjæbne for den granskende Forstand: at gaae glip af Lönnen for sine Anstrængelser paa Grund af sin Flid til at forske, og i en abstract Fornuftverden at döe bort fra den virkeliges Glæder. Fra nok saa divergerende Baner vil Aanden finde sig tilrette bos Digtekunsten, og i dens foryngende Lys undgaae at stivne i en tidlig Alderdom. Poesien er den ungdommeligt blomstrende Hebe, som i Jupiters Sal betjener de udödelige Guder.”
 
    Disse Sætninger, hvormed Schiller indleder en Bedömmelse af Bürgers Digte, finde vistnok fuldstændig Anvendelse ogsaa nutildags, ogsaa paa vore Forhold; thi det er umiskjendeligt, at den danske Digtekunst ikke trives livligt for Öieblikket, idet dens Mestere tildeels have ophört at frembringe nye Arbeider, medens kun faa yngre Talenter levere Andet end meer eller mindre heldige Omskrivninger af deres Forbilleders Tanker og Stiil. Den store Hob i Læseverdenen tager sin Tilflugt deels til Bladenes Nyhedsposter, deels til bindstærke Feuilletonromaner ,,enten af originale Fyre eller af et Oversætteruhyre,” medens de mere Begavede söge deres litterære Sysselsætsættelse fornemmelig i specielle Studier. Vor Nationallitteraturs Udbytte spiller sjelden en betydningsfuld Rolle herved, og navnlig bliver den lyriske Digtekunst isærdeleshed tilsidesat, naar ikke en enkelt Gang et Mesterværk vækker Opmærksomhed ved sine Rhythmers klangfulde Tonefald, og altsaa fængsler mere ved sin ydre, formelle Afrundelse end ved sit egenlige, poetiske Indhold. Om Publikums Smag for lyrisk Poesi tör man dog ikke mistvivle, saalænge denne yttrer sig endog paa urette Steder som saa tit i Theatret; og det vilde desuden være besynderligt, om Folket, medens det maa værne om sin Nationalitets Bestaaen, skulde glemme, at samme har udpræget sig fuldstændigst i vor poetiske Litteratur, der ikke staaer tilbage for nogen og besidder Skatte, ikke mindre lyriske end dramatiske Digterværker, som vore Modstandere ikke have Lov til at ringeagte men vel til at misunde os.
@@ -36,10 +37,11 @@
    Paa denne Maade tör det maaskee være mere end et forfængeligt Haab, at disse Smaating ikke blot skulle blive den velvillige Læser en Gjenstand for billig Critik, men at de ogsaa ville gjöre ham deelagtig i nogen af den Glæde, som deres Frembringelse har skjænket.
 
 <right>Forfatteren.</right>
-</body>
 </prose>
+</body>
+</text>
 
-<poem id="blom2019081350">
+<text id="blom2019081350">
 <head>
     <title>Hvad er der at gjöre?</title>
     <subtitle>(Sestine.)</subtitle>
@@ -48,6 +50,7 @@
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Lær, Viismand, mig en Regel, jeg kan fölge,
 En sikker Rettesnor for hele Livet,
 Som hviler uden Tvivlsmaal, trygt i Aanden
@@ -89,10 +92,11 @@ Kun den Selvstændige kan let, med Glæde
 Sig give til en Anden hen af Kjærlighed.
 Bliv derfor aldrig falsk, forstilt i Aanden;
 Naturlighed er Reglen, man bör fölge.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="blom2019081302">
+<text id="blom2019081302">
 <head>
     <title>Skilleveien</title>
     <subtitle>(Sestine.)</subtitle>
@@ -101,6 +105,7 @@ Naturlighed er Reglen, man bör fölge.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Mit rosenkrandste Bæger Nectar fylde,
 Hvis fine Perleskum, för bort det dufter,
 Indsprudler mine Sandser Fyr og Flamme!
@@ -142,10 +147,11 @@ Og stige atter som et kjærligt Önske!
 Opbyggelse er Formen for at nyde,
 Naar Glæden straale skal med stadig Flamme,
 Og Tidens Frugt skal Evigheden fylde.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="blom2019081303">
+<text id="blom2019081303">
 <head>
     <title>Ungdommelighed</title>
     <firstline>Hvor skjönt at ryste Barnetant af Ærmet</firstline>
@@ -154,6 +160,7 @@ Og Tidens Frugt skal Evigheden fylde.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvor skjönt at ryste Barnetant af Ærmet,
 Hvor herligt er det dog at være ung!
 Naar Uskyld bliver gjenfödt og beskjærmet
@@ -216,10 +223,11 @@ Begeislret Nöisomhed kan Intet spilde,
 Thi hvad for tidligt födes vorder slet;
 I trofast Alvor vi vor Elskov gjemme,
 I Troen og i Haabet har den hjemme.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="blom2019081304">
+<text id="blom2019081304">
 <head>
     <title>Modersavn</title>
     <firstline>Den venlige Juul kalder Glæde frem</firstline>
@@ -227,6 +235,7 @@ I Troen og i Haabet har den hjemme.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Den venlige Juul kalder Glæde frem
 I den Riges Pallads, i den Fattiges Hjem,
 Den Vinterens Samliv kroner;
@@ -330,10 +339,11 @@ O Held mig, at naar du deler mit Navn,
 Naar fast vi sammen er bundet,
 Naar ömt du trykker min Sön i din Favn,
 Jeg atter en Moder har fundet.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="blom2019081305">
+<text id="blom2019081305">
 <head>
     <title>Hjemkjörsel</title>
     <firstline>Ballet er endt, Kehrausen har vi dandset</firstline>
@@ -342,6 +352,7 @@ Jeg atter en Moder har fundet.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ballet er endt, Kehrausen har vi dandset
 Baarne af Tonen, ak for sidste Gang;
 Glædeberuust fast Intet har jeg sandset,
@@ -440,10 +451,11 @@ Lykkelig den, som uskyldig og sund
 Trygt tör betroe sig til Forsynets Naade,
 Lykkelig den, som i Nydelsens Stund
 Ikke en Spire til Anger udsaaede!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="blom2019081306">
+<text id="blom2019081306">
 <head>
     <title>Kjærligheds Lykke</title>
     <firstline>Söstre ere Kjærlighed og Glæde</firstline>
@@ -451,6 +463,7 @@ Ikke en Spire til Anger udsaaede!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Söstre ere Kjærlighed og Glæde,
 Haand i Haand man seer dem fölges ad;
 Der, hvor Kjærligheden tager Sæde,
@@ -506,10 +519,11 @@ Og i Död og Kummer Livets Tröst!
 Jordens Barn, naar Kjærlighed besjæler
 Dig og over dine Tanker dvæler,
 Er du ogsaa Himlens ægte Barn.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="blom2019081307">
+<text id="blom2019081307">
 <head>
     <title>Til et Pigebarn</title>
     <firstline>Unge Pige! paa din Kind</firstline>
@@ -517,6 +531,7 @@ Er du ogsaa Himlens ægte Barn.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Unge Pige! paa din Kind
 Livels Morgenröde
 Udgydt har det Rosenskin,
@@ -552,10 +567,11 @@ Derfor Kjære, læs min Sang,
 Syng den endnu heller;
 Ak! du aner ei engang
 Hvem det er den gjælder!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="blom2019081308">
+<text id="blom2019081308">
 <head>
     <title>Deeltagelse</title>
     <firstline>Stakkels Pige, vel jeg seer du lider</firstline>
@@ -564,6 +580,7 @@ Hvem det er den gjælder!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Stakkels Pige, vel jeg seer du lider,
 Skjöndt du stræber det at holde skjuult;
 Din Arbeidsomhed til alle Tider
@@ -608,10 +625,11 @@ Taalmod skal med Tiden i Forening
 Læge Saaret i dit kjække Bryst;
 Hör blot, selv om ei du troer min Mening:
 Ingen ædel Sorg er uden Tröst.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="blom2019081309">
+<text id="blom2019081309">
 <head>
     <title>Fattige Dreng!</title>
     <firstline>Fattige Dreng fra dig Tagkammer-Hjem</firstline>
@@ -619,6 +637,7 @@ Ingen ædel Sorg er uden Tröst.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Fattige Dreng fra dit Tagkammer-Hjem,
 Ruder med Iisskorpe paa,
 Ormstukket Bohave, Dören en Lem,
@@ -718,10 +737,11 @@ Naar blot standhaftig du vil.
 Flöit kun med Tillid og Lyst;
 Iil saa fornöiet til fattige Hjem,
 Synk til din Moders Bryst!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="blom2019081310">
+<text id="blom2019081310">
 <head>
     <title>Et Udbrud</title>
     <firstline>Ikkun i Kampen den vilde</firstline>
@@ -729,6 +749,7 @@ Synk til din Moders Bryst!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ikkun i Kampen den vilde,
 Kun naar mit Liv staaer paa Spil,
 Föler jeg Livskraften spille,
@@ -748,10 +769,11 @@ Aner jeg Saligheds Lyst.
 Udtömt Pokalen saa söd,
 Og har jeg omfavnet hende -
 Vend da min Fakkel, o Död!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="blom2019081311">
+<text id="blom2019081311">
 <head>
     <title>Sönderknuselse</title>
     <firstline>Far Verden, farvel</firstline>
@@ -762,6 +784,7 @@ Vend da min Fakkel, o Död!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
       Far Verden, farvel!
 Du gjækked mig længe med Löfter om Held,
 Ei længer skal du mig behandle som Træl!
@@ -838,10 +861,11 @@ Et Fangetaarn er mig dit Luftcastel,
 Et mislykket Kunstværk, forladt af sin Mester,
 En Svamp paa en bedre Tilværelses Rester.
       Far Verden, farvel!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="blom2019081312">
+<text id="blom2019081312">
 <head>
     <title>Stille Liv</title>
     <firstline>Hidtil sværmed jeg i Haabets Sale</firstline>
@@ -850,6 +874,7 @@ En Svamp paa en bedre Tilværelses Rester.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hidtil sværmed jeg i Haabets Sale,
 Nu jeg flytter til Erindrings Bo,
 Hvor de klare Minders Alvorstale
@@ -912,10 +937,11 @@ Vente vil jeg uden Suk og Vaande
 Under Sorgens kolde, mörke Sky,
 Indtil Kjærlighedens milde Aande
 Kalder mig til freidigt Liv paany.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="blom2019081313">
+<text id="blom2019081313">
 <head>
     <title>Opfordring</title>
     <firstline>Kast afveien den livlöse Tanke</firstline>
@@ -924,6 +950,7 @@ Kalder mig til freidigt Liv paany.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Kast afveien den livlöse Tanke,
 Som kun Tvivl og Forvirring kan sanke
 Og om Sjælen sig snoer lig en Ranke,
@@ -977,10 +1004,11 @@ For dit Mandemod Skrankerne viger,
 Op paa Hæderens Bjergtop du stiger;
 Af sig selv de forelskede Piger
 Synke smægtende huldt i din Favn.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="blom2019081314">
+<text id="blom2019081314">
 <head>
     <title>Den fangne Fugl</title>
     <firstline>En Lærke sidder paa sin Pind og kvæder</firstline>
@@ -989,6 +1017,7 @@ Synke smægtende huldt i din Favn.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 En Lærke sidder paa sin Pind og kvæder,
 En Smule Grönsvær har den i sit Buur,
 Der hænger paa el faldefærdigt Skuur
@@ -1006,10 +1035,11 @@ Naar Smeden hamrer, kan man knap den mærke;
 Men ligefuldt sin Elskovs söde Klage
 Af fulde Bryst den synger, som den pleier. -
 O, hvis den tav, var Fuglen ingen Lærke!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="blom2019081315">
+<text id="blom2019081315">
 <head>
     <title>Forsoning</title>
     <firstline>En Foraarsdag ved Bredden af en Kilde</firstline>
@@ -1018,6 +1048,7 @@ O, hvis den tav, var Fuglen ingen Lærke!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 En Foraarsdag ved Bredden af en Kilde
 I Læ af friske, lysegrönne Böge
 Et oprömt Selskab hörtes freidigt spöge;
@@ -1035,10 +1066,11 @@ I Tanken kun et Lys, som Intet viste.
 Da fæsted du paa mig dit klare Öie,
 Der saae jeg Elskovs Ild og himmelsk Fromhed;
 Forenede vi Livets Skjönhed priste.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="blom2019081316">
+<text id="blom2019081316">
 <head>
     <title>Til en Ven</title>
     <firstline>Naar man min Aand har martret halvt tildöde</firstline>
@@ -1047,6 +1079,7 @@ Forenede vi Livets Skjönhed priste.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Naar man min Aand har martret halvt tildöde
 Med plump Fortrolighed, hoffærdig Kulde,
 Spidsfindighed, som sindrig være skulde,
@@ -1064,10 +1097,11 @@ Jeg glemmer ei hvad du paa Hjertet lægger.
 Dit Sind er ligt den solbeskinte Flade
 Af Havet, naar det i sin Storhed hviler;
 Sin Dybde med en venlig Glands det dækker.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="blom2019081317">
+<text id="blom2019081317">
 <head>
     <title>Hengivelse</title>
     <firstline>Du speilede din Skjönhed i mit Öie</firstline>
@@ -1076,6 +1110,7 @@ Sin Dybde med en venlig Glands det dækker.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Du speilede din Skjönhed i mit Öie,
 Din kjælne Stemme gjenlöd af min Glæde,
 Naar let jeg saared dig, du maatte græde,
@@ -1093,10 +1128,11 @@ Hvor strengt, hvis du min Kjærlighed kun frister!
 Din Villie skee, du for os Begge raade;
 Jeg vil dog altid lige trofast blive,
 Hvad enten Alt jeg vinder eller mister.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="blom2019081318">
+<text id="blom2019081318">
 <head>
     <title>I et Exemplar af Mérimées Dramer</title>
     <firstline>Dit Blik fra Hverdagslivet helst du vender</firstline>
@@ -1105,6 +1141,7 @@ Hvad enten Alt jeg vinder eller mister.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Dit Blik fra Hverdagslivet helst du vender,
 Din störste Glæde kan du deri finde,
 At sysle med de store Helles Minde,
@@ -1122,10 +1159,11 @@ Et uforkrænkeligt i Kunstens Verden.
 Du vil hos denne Digter fremfor alle
 Foruden paasat Glimmer see gjengivet
 Lyslevende henfarne Slægters Færden.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="blom2019081319">
+<text id="blom2019081319">
 <head>
     <title>I et Selskab</title>
     <firstline>Blandt snörte Damer, friserede Mænd</firstline>
@@ -1134,6 +1172,7 @@ Lyslevende henfarne Slægters Færden.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Blandt snörte Damer, friserede Mænd
 Paa Brüsseler-Tæpper jeg træder;
 Klart Speilene kaste tilbage igjen
@@ -1205,10 +1244,11 @@ Hold over hende en skjærmende Haand,
 Mod Synd og Sorg hende værner,
 Og hvile paa mig lad hendes Aand.
 Farvel! I funklende Stjerner.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="blom2019081320">
+<text id="blom2019081320">
 <head>
     <title>Aftenvandring</title>
     <firstline>Töveir er faldet paa, gjennem Sneevand jeg vader paa Gaden</firstline>
@@ -1217,6 +1257,7 @@ Farvel! I funklende Stjerner.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Töveir er faldet paa, gjennem Sneevand jeg vader paa Gaden,
 Eensformigt Tagrenders Dryp falder paa Fortoget ned;
 Möie det koster at undgaae Kareterne, som mig bestænke;
@@ -1284,10 +1325,11 @@ Hjem til mit raakolde Kammer, hvor Ingen mig savner og venter,
 Bort fra din livfulde Plads eensom nu vandre jeg maa
 Tænk dog en Smule paa ham, som med Længsel og Uro i Sjælen
 Drömmer bestandig om dig, selv om du ham har forglemt.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="blom2019081321">
+<text id="blom2019081321">
 <head>
     <title>Septembernatur</title>
     <firstline>Saasnart Naturen i September</firstline>
@@ -1295,6 +1337,7 @@ Drömmer bestandig om dig, selv om du ham har forglemt.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Saasnart Naturen i September
 Sin Skjönheds Ligevægt opnaaer,
 Sit eget Overmaal den dæmper;
@@ -1358,10 +1401,11 @@ Gid glade vi da skue kan
 En Tid af luttret Elskovs Reenhed,
 Af skjön, mangfoldig, frugtbar Eenhed,
 En Sommerdag paa Höstens Rand!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="blom2019081322">
+<text id="blom2019081322">
 <head>
     <title>Stjernehimlen</title>
     <firstline>Mödig jeg hviler</firstline>
@@ -1369,6 +1413,7 @@ En Sommerdag paa Höstens Rand!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Mödig jeg hviler
 Eensom ved Randen
 Af den nedludende Sandbrink paa Kyst.
@@ -1585,10 +1630,11 @@ Til mine ventende, kjærlige Faa;
 Men naar den röde
 Solglands oprinder,
 Söger jeg Livets den bredere Aa.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="blom2019081323">
+<text id="blom2019081323">
 <head>
     <title>Reveille</title>
     <firstline>Vaagner op!</firstline>
@@ -1596,6 +1642,7 @@ Söger jeg Livets den bredere Aa.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
       Vaagner op!
 Trommen skal hvirvle, tillive den kalde
 Fædrenelandets Forsvarere alle;
@@ -1632,8 +1679,9 @@ Skjæbnens Gudinde retfærdig belönner,
 Löfter den Kjække til Hæderens Top,
 Ryster da Sövnen af Aand og af Krop!
       Vaagner op!
+</poetry>
 </body>
-</poem>
+</text>
 
 <section level="3">
 <head>
@@ -1641,7 +1689,7 @@ Ryster da Sövnen af Aand og af Krop!
 </head>
 <content>
 
-<poem id="blom2019081324">
+<text id="blom2019081324">
 <head>
     <title>Hvad vi ville</title>
     <firstline>Den Mand, som binder Sværd ved Lænd</firstline>
@@ -1650,6 +1698,7 @@ Ryster da Sövnen af Aand og af Krop!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Den Mand, som binder Sværd ved Lænd,
 Men har ei Mod tillige,
 Som ei tör stole paa sin Ven
@@ -1689,10 +1738,11 @@ Samdrægtighed vor Lykke.
 Ved Aandens Lys med freidig Flid
 At skabe Evighed af Tid:
 Kan Noget tænkes bedre?
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="blom2019081325">
+<text id="blom2019081325">
 <head>
     <title>Ved Vintergildet</title>
     <firstline>Vintren ruger over Land og Stæder</firstline>
@@ -1701,6 +1751,7 @@ Kan Noget tænkes bedre?
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Vintren ruger over Land og Stæder,
 Lunden aflagt har sin grönne Dragt,
 Taagen paa Naturens Ligseng græder,
@@ -1745,13 +1796,14 @@ Kjækt til Önskets Land paa Vinens Vove
 Styre du din Kaas for fulde Seil;
 Der er idel Guld og grönne Skove,
 Og min Lyst din egen Glædes Speil.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section>
 
-<poem id="blom2019081326">
+<text id="blom2019081326">
 <head>
     <title>En Hverdagshistorie</title>
     <firstline>Ung Adolf paa Herregaarden</firstline>
@@ -1762,6 +1814,7 @@ Og min Lyst din egen Glædes Speil.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ung Adolf paa Herregaarden
 Som Huuslærer tjene maa;
 Han læser om Dagen med Herrens
@@ -1870,10 +1923,11 @@ Kun sjelden hans Læbe smiilte,
 Skjöndt Panden var höi og klog;
 Han törredes hen som Violen,
 Erindringstegn i en Bog.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="blom2019081327">
+<text id="blom2019081327">
 <head>
     <title>Et Möde</title>
     <firstline>Henad Stien vandrer jeg alene</firstline>
@@ -1881,6 +1935,7 @@ Erindringstegn i en Bog.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Henad Stien vandrer jeg alene,
 Over Skuldren er min Bösse slængt;
 Solens Bad forgylder Skovens Grene;
@@ -1988,10 +2043,11 @@ Han til Alle smiler honningsöd;
    Gratulanter glade
    Drikke Chocolade.
 - Tænker ikke Een paa Skyttens Död?
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="blom2019081328">
+<text id="blom2019081328">
 <head>
     <title>For höit Sigte</title>
     <firstline>Ud over Borgens Vindebro</firstline>
@@ -1999,6 +2055,7 @@ Han til Alle smiler honningsöd;
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ud over Borgens Vindebro
 I fornemt Optog, To og To,
    Borgherrens Hoffolk rede;
@@ -2303,10 +2360,11 @@ Er viet ind ved denne Daab
 Han kan selv i det Svage see
 Et Afpræg af en skjön Idee
 Og elske det af Hjerte.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="blom2019081329">
+<text id="blom2019081329">
 <head>
     <title>Fjölnir og Helga</title>
     <firstline>De smule Vande pladske foran Boven</firstline>
@@ -2315,6 +2373,7 @@ Og elske det af Hjerte.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 ,,De smule Vande pladske foran Boven,
 I Seilet blæser Vinden frisk og sund,
 Hösthimlens Stjerner speile sig i Voven,
@@ -2584,10 +2643,11 @@ Til sine Brödres Tarv han trofast tjente,
 Saa mangt et Slag den djærve Viking slog,
 Men allid Höimod hver hans Daad betegned;
 I Hjörungvig for Hakons Sværd han segned.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="blom2019081330">
+<text id="blom2019081330">
 <head>
     <title>Sören Norby</title>
     <firstline>Det stolte, bepandsrede Adelsvælde</firstline>
@@ -2595,6 +2655,7 @@ I Hjörungvig for Hakons Sværd han segned.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det stolte, bepandsrede Adelsvælde
 Kong Christjerns trefoldige Septer bröd;
 Forgjæves han vilde med Magt det fælde,
@@ -2759,10 +2820,11 @@ En Herskeraand
 Til Mund og til Haand,
 Som ei blot önsker men veed at ville.
 Gid vækkes den maa, för det er forsilde!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="blom2019081331">
+<text id="blom2019081331">
 <head>
     <title>Chevalier d'Assas</title>
     <firstline>I den stille Nattetimes Skygge</firstline>
@@ -2773,6 +2835,7 @@ Gid vækkes den maa, för det er forsilde!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 ,,I den stille Nattetimes Skygge
 Ene vandrer jeg i Skoven ind;
 Krigsmænd hist om Ilden slumre trygge,
@@ -2835,10 +2898,11 @@ Naar, idel han Heltedöden frister,
 Æren spirer paa hans Gravhöis Muld;
 Tidligt naaer han til sin Banes Meed,
 Finder der en jordisk Evighed.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="blom2019081332">
+<text id="blom2019081332">
 <head>
     <title>Junker Haralds Afskedssang</title>
     <subtitle>(Efter Byron.)</subtitle>
@@ -2850,6 +2914,7 @@ Finder der en jordisk Evighed.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Farvel, farvel! min Födestrand
 Snart heelt fra mig er skilt;
 Natvinden vifter ud fra Land,
@@ -2939,10 +3004,11 @@ Velkommen vær, sortladne Hav!
 Og har jeg dig forladt,
 Velkommen Örken, Livets Grav
 Mit Födeland, - Godnat!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="blom2019081333">
+<text id="blom2019081333">
 <head>
     <title>Skovveien</title>
     <firstline>Hvor Luftens Ström er rolig, klar og blid</firstline>
@@ -2950,6 +3016,7 @@ Mit Födeland, - Godnat!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvor Luftens Ström er rolig, klar og blid,
 Dens milde Bölger ikkun Köling vifter,
 Regnhimlen bliver meer og mere hvid,
@@ -3558,8 +3625,9 @@ Et ufortabeligt Eden!
    Livet bæver i smertefuld Lyst,
    Ubevidst Blanding af Sorg og Tröst, -
    Hvor er Forsoning at finde?
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

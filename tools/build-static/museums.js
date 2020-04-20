@@ -29,15 +29,22 @@ const build_museums = () => {
   getElementsByTagName(doc, 'museum').map(museum => {
     const id = safeGetAttr(museum, 'id');
     const name = safeGetText(museum, 'name');
+    const sortName = safeGetText(museum, 'sort-name') || name;
     const deepLink = safeGetText(museum, 'deep-link');
     const data = {
       id,
       name,
+      sortName,
       deepLink,
     };
     collected_museums.set(id, data);
   });
   writeCachedJSON('collected.museums', Array.from(collected_museums));
+
+  const path = `static/api/museums.json`;
+  console.log(path);
+  writeJSON(path, { museums: Array.from(collected_museums.values()) });
+
   return collected_museums;
 };
 

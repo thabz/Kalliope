@@ -9,7 +9,7 @@
 </workhead>
 <workbody>
 
-<prose id="pope2001061101">
+<text id="pope2001061101" skip-index="true">
 <head>
    <title>The Design</title>
    <toctitle>The Design</toctitle>
@@ -17,14 +17,16 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<prose>
 Having proposed to write some pieces on Human Life and Manners, such as (to use my Lord Bacon's expression) <i>come home to Men's Business and Bosoms,</i> I thought it more satisfactory to begin with considering <i>Man</i> in the abstract, his <i>Nature</i> and his <i>State:</i> since, to prove any moral duty, to enforce any moral precept, or to examine the perfection or imperfection of any creature whatsoever, it is necessary first to know what <i>condition</i> and <i>relation</i> it is placed in, and what is the proper <i>end</i> and <i>purpose</i> of its <i>being.</i>
      The science of Human Nature is, like all other sciences, reduced to a <i>few clear points:</i> There are not <i>many certain truths</i> in this world. It is therefore in the Anatomy of the Mind as in that of the Body; more good will accrue to mankind by attending to the large, open, and perceptible parts, than by studying too much such finer nerves and vessels, the conformations and uses of which will for ever escape our observation. The <i>disputes</i> are all upon these last, and, I will venture to say, they have less sharpened the <i>wits</i> than the <i>hearts</i> of men against each other, and have diminished the practice, more than advanced the theory, of Morality. If I could flatter myself that this Essay has any merit, it is in steering betwixt the extremes of doctrines seemingly opposite, in passing over terms utterly unintelligble, and in forming a <i>temperate</i> yet not <i>inconsistent,</i> and a <i>short</i> yet not <i>imperfect,</i> system of Ethics.
      This I might have done in prose; but I chose verse, and even rhyme, for two reasons. The one will appear obvious; that principles, maxims, or precepts so written, both strike the reader more strongly at first, and are more easily retained by him afterwards: the other may seem odd, but is true, I found I could express them more <i>shortly</i> this way than in prose itself; and nothing is more certain, than that much of the <i>force</i> as well as <i>grace</i> of arguments or instructions, depends on their <i>conciseness.</i> I was unable to treat this part of my subject more in detail, without becoming dry and tedious; or more <i>poetically,</i> without sacrificing perspicuity to ornament, without wandring from the precision, or breaking the chain of reasoning: If any man can unite all these without diminution of any of them, I freely confess he will compass a thing above my capacity.
     What is now published, is only to be considered as a <i>general Map</i> of MAN, marking out no more than the <i>greater parts,</i> their <i>extent,</i> their <i>limits,</i> and their <i>connection,</i> but leaving the particular to be more fully delineated in the charts which are to follow. Consequently, these Epistles in their progress (if I have health and leisure to make any progress) will be less dry, and more susceptible of poetical ornament. I am here only opening the <i>fountains,</i> and clearing the passage. To deduce the <i>rivers,</i> to follow them in their course, and to observe their effects, may be a task more agreeable.
-</body>
 </prose>
+</body>
+</text>
 
-<poem id="pope2001061102">
+<text id="pope2001061102">
 <head>
    <title>Epistle I</title>
    <toctitle>Epistle I</toctitle>
@@ -33,6 +35,7 @@ Having proposed to write some pieces on Human Life and Manners, such as (to use 
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 <nonum>ARGUMENT OF THE FIRST EPISTLE</nonum>
 
 <nonum><i>Of the Nature and State of Man, with respect to the</i> UNIVERSE. Of Man <i>in the abstract</i>.</nonum>
@@ -367,10 +370,11 @@ All Discord, Harmony, not understood;
 All partial Evil, universal Good:
 And spite of Pride, in erring Reason's spite,
 One truth is clear, "Whatever <i>is</i>, is <i>right</i>."
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="pope2001061901">
+<text id="pope2001061901">
 <head>
    <title>Epistle II</title>
    <toctitle>Epistle II</toctitle>
@@ -379,6 +383,7 @@ One truth is clear, "Whatever <i>is</i>, is <i>right</i>."
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 <nonum>ARGUMENT OF THE SECOND EPISTLE</nonum>
 
 <nonum><i>Of the Nature and State of</i> Man, <i>with respect to</i> Himself, <i>as an Individual.</i></nonum>
@@ -715,16 +720,18 @@ Ev'n mean Self-love becomes, by force divine,
 The scale to measure others wants by thine.
 See! and confess, one comfort still must rise,
 'Tis this, Tho' Man's a fool, yet God <i>is wise.</i>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="pope2018073101">
+<text id="pope2018073101">
 <head>
    <title>Epistle IV</title>
    <firstline>Oh Happiness! our being's end and aim!</firstline>
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 <nonum>ARGUMENT OF THE FOURTH EPISTLE</nonum>
 
 <nonum><i>Of the Nature and State of Man, With Respect to Happiness</i></nonum>
@@ -1154,8 +1161,9 @@ That true Self-love and Social are the same;
 That Virtue only makes our bliss below,
 And all our knowledge, <i>ourselves to know.</i>
 
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

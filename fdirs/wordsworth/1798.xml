@@ -10,7 +10,7 @@
 </workhead>
 <workbody>
 
-<poem id="wordsworth2002022501">
+<text id="wordsworth2002022501">
 <head>
    <title>We Are Seven</title>
    <toctitle>We Are Seven</toctitle>
@@ -23,6 +23,7 @@
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 A simple child, dear brother Jim,
 That lightly draws its breath,
 And feels its life in every limb,
@@ -108,15 +109,17 @@ Their spirits are in heaven!''
 'Twas throwing words away; for still
 The little Maid would have her will,
 And said, ,,Nay, we are seven!''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="wordsworth201908221">
+<text id="wordsworth201908221">
 <head>
     <title>She dwelt among the untrodden ways</title>
     <firstline>She dwelt among the untrodden ways</firstline>
 </head>
 <body>
+<poetry>
 She dwelt among the untrodden ways
 Beside the springs of Dove,
 A Maid whom there were none to praise
@@ -131,7 +134,8 @@ Is shining in the sky.
 When Lucy ceased to be;                                  
 But she is in her grave, and, oh,
 The difference to me!    
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

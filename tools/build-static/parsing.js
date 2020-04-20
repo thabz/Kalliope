@@ -56,18 +56,19 @@ const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
   const ref = safeGetAttr(pictureNode, 'ref');
   const year = safeGetAttr(pictureNode, 'year');
   const museumId = safeGetAttr(pictureNode, 'museum');
+  const clipPath = safeGetAttr(pictureNode, 'clip-path');
   const remoteUrl = build_museum_url(pictureNode, collected);
-  let description = null;
-  let note = null;
-  if (getChildByTagName(pictureNode, 'description') != null) {
-    description = safeGetInnerXML(
-      getChildByTagName(pictureNode, 'description')
-    );
-    note = safeGetInnerXML(getChildByTagName(pictureNode, 'picture-note'));
-  } else {
-    description = safeTrim(safeGetInnerXML(pictureNode));
-  }
   if (src != null) {
+    let description = null;
+    let note = null;
+    if (getChildByTagName(pictureNode, 'description') != null) {
+      description = safeGetInnerXML(
+        getChildByTagName(pictureNode, 'description')
+      );
+      note = safeGetInnerXML(getChildByTagName(pictureNode, 'picture-note'));
+    } else {
+      description = safeTrim(safeGetInnerXML(pictureNode));
+    }
     const lang = safeGetAttr(pictureNode, 'lang') || 'da';
     if (src.charAt(0) !== '/') {
       src = srcPrefix + '/' + src;
@@ -76,6 +77,7 @@ const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
       lang,
       src,
       year,
+      clipPath,
       size: await imageSizeSync(src.replace(/^\//, '')),
       remoteUrl,
       museum: collected.museums.get(museumId),
@@ -98,12 +100,13 @@ const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
       lang: artwork.lang,
       src: artwork.src,
       year,
+      clipPath,
       size: await imageSizeSync(artwork.src.replace(/^\//, '')),
       remoteUrl: artwork.remoteUrl,
       museum: artwork.museum,
       content_lang: artwork.content_lang,
-      content_html: htmlToXml(artwork.content_raw, collected),
-      note_html: htmlToXml(description, collected),
+      content_html: artwork.content_html,
+      note_html: artwork.note_html,
       primary,
     };
   }

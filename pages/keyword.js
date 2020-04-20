@@ -2,7 +2,7 @@
 
 import React from 'react';
 import type { Node } from 'react';
-import { Link } from '../routes';
+import { Link, Router } from '../routes';
 import Page from '../components/page.js';
 import { kalliopeCrumbs } from '../components/breadcrumbs.js';
 import SidebarSplit from '../components/sidebarsplit.js';
@@ -36,6 +36,7 @@ const KeywordPage = (props: KeywordComponentProps) => {
   if (error != null) {
     return <ErrorPage error={error} lang={lang} message="Ukendt nøgleord" />;
   }
+
   const requestPath = `/${lang}/keyword/${keyword.id}`;
 
   const pictures = keyword.pictures.map((p, i) => {

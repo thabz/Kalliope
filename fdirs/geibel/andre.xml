@@ -7,13 +7,14 @@
 </workhead>
 <workbody>
 
-<poem id="geibel2019051301">
+<text id="geibel2019051301">
 <head>
    <title>Die Sonnenblume</title>
    <firstline>O Rosen, die mit Ruhme</firstline>
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 O Rosen, die mit Ruhme
 Ihr prangt in Duft und Licht,
 Ich bin die Sonnenblume,
@@ -48,16 +49,18 @@ Drum blüht in eurem Ruhme,
 Ihr Rosen wonniglich!
 Ich bin die Sonnenblume,
 Und selig bin auch ich.    
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="geibel2019051302">
+<text id="geibel2019051302">
 <head>
    <title>Minnelied</title>
    <firstline>Es gibt wohl manches, was entzücket</firstline>
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Es gibt wohl manches, was entzücket,
 Es gibt wohl vieles, was gefällt;
 Der Mai, der sich mit Blumen schmücket,
@@ -145,11 +148,12 @@ Die rankend blühn am Fenster mir.
 O säuselt, säuselt fort, ihr Lüfte,
 Und tragt getaucht in Blumendüfte
 Dies Lied und meinen Gruß zu ihr!    
+</poetry>
 </body>
-</poem>
+</text>
 
 <!--
-<poem id="geibel2019051301">
+<text id="geibel2019051301">
 <head>
    <title></title>
    <toctitle></toctitle>
@@ -158,8 +162,10 @@ Dies Lied und meinen Gruß zu ihr!
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
+</poetry>
 </body>
-</poem>
+</text>
 -->
 
 </workbody>

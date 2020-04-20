@@ -8,13 +8,14 @@
 </workhead>
 <workbody>
 
-<poem id="grundtvig2019122902">
+<text id="grundtvig2019122902">
 <head>
     <title>Strandbakken ved Egeløkke</title>
     <firstline>Herlig, mangfoldige Syn</firstline>
     <!-- Fra http://www.grundtvigsværker.dk -->
 </head>
 <body>
+<poetry>
 Herlig, mangfoldige Syn,
 Ud over speilklare Flade!
 Thurø og Taasing og Fyn
@@ -157,16 +158,18 @@ Og dog – dog forlader jeg dig!
 Men græd ikke, Barn, thi jeg lover,
 At komme igen, før du sover,
 Og sige dig kærlig Godnat!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="grundtvig2019122901">
+<text id="grundtvig2019122901">
 <head>
     <title>Udby Have</title>
     <firstline>Have! du som vidt dig breder</firstline>
     <!-- Fra http://www.grundtvigsværker.dk -->
 </head>
 <body>
+<poetry>
 Have! du som vidt dig breder
 Rundt om gamle Præstegaard,
 Venligen du mig hjemleder
@@ -882,10 +885,11 @@ Som til den kan Øiet binde,
 Som det stille, glade Sind
 Til en ivrig Bøn kan røre,
 Og fra Jord til Himlen føre.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="grundtvig2019123001">
+<text id="grundtvig2019123001">
 <head>
     <title>Morten Borup</title>
     <firstline>Alt som det ringed til Aftensang</firstline>
@@ -895,6 +899,7 @@ Og fra Jord til Himlen føre.
     <keywords>boerup</keywords>
 </head>
 <body>
+<poetry>
 Alt som det ringed til Aftensang
     Saa sødt i Sky,
 Paa Gadestævne Hovhornet klang
@@ -1110,8 +1115,9 @@ De Lamper brænde saa sygt og mat
 O, mon de sig vil klare brat?
 O, monne en Luther der fødes i Nat?
 O monne en Borup det mærke?    
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

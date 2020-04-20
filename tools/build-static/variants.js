@@ -3,12 +3,16 @@ const {
   loadCachedJSON,
   writeCachedJSON,
   markFileDirty,
+  force_reload: globalForceReload,
 } = require('../libs/caching.js');
 const { fileExists } = require('../libs/helpers.js');
 const { loadXMLDoc, safeGetAttr, getElementsByTagNames } = require('./xml.js');
 
-const build_variants = collected => {
-  let variants_map = new Map(loadCachedJSON('collected.variants') || []);
+const build_variants = (collected) => {
+  let variants_map = globalForceReload
+    ? new Map()
+    : new Map(loadCachedJSON('collected.variants') || []);
+  const force_reload = variants_map.size === 0;
 
   register_variant = (from, to) => {
     let array = variants_map.get(from) || [];
@@ -19,22 +23,22 @@ const build_variants = collected => {
   };
 
   collected.poets.forEach((poet, poetId) => {
-    collected.workids.get(poetId).forEach(workId => {
+    collected.workids.get(poetId).forEach((workId) => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
       if (!fileExists(filename)) {
         return;
       }
-      if (!isFileModified(filename)) {
+      if (!force_reload && !isFileModified(filename)) {
         return;
       }
       let doc = loadXMLDoc(filename);
-      getElementsByTagNames(doc, ['poem', 'prose', 'section'])
-        .filter(e => {
+      getElementsByTagNames(doc, ['text', 'section'])
+        .filter((e) => {
           return (
             safeGetAttr(e, 'variant') != null && safeGetAttr(e, 'id') != null
           );
         })
-        .forEach(text => {
+        .forEach((text) => {
           const textId = safeGetAttr(text, 'id');
           const variantId = safeGetAttr(text, 'variant');
           if (textId == null || variantId == null) {
@@ -75,13 +79,13 @@ const resolve_variants = (poemId, collected) => {
 
   // Deep dive through variants-graph
   let seen_variants = new Set();
-  const recurse = variantId => {
+  const recurse = (variantId) => {
     if (seen_variants.has(variantId)) {
       return;
     } else {
       seen_variants.add(variantId);
       const variantIds = collected.variants.get(variantId);
-      variantIds.forEach(variantId => {
+      variantIds.forEach((variantId) => {
         recurse(variantId);
       });
     }

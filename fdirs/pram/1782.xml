@@ -16,13 +16,14 @@
 </workhead>
 <workbody>
 
-<prose id="pram2018071801">
+<text id="pram2018071801" skip-index="true">
 <head>
     <title>Til Læseren</title>
     <source pages="5-10"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<prose>
 Foragt og den hurtigste Forglemmelse er den Digters Lod, som aldrig har tordet fatte Haabet om Udödelighed for sine Sange. Emilias Kildes Digter har næret dette Haab i sin Barm, da han greb Harpen. Det Emne, han valgte sig at besynge, bekræfter hans Haab; og han tilegnede det en Mand, hvis Navn den sildigste Eftertid skal hædre.
 
 <i>Oh! while along the stream of Time thy name</i>
@@ -48,10 +49,11 @@ Foragt og den hurtigste Forglemmelse er den Digters Lod, som aldrig har tordet f
   Fölende sin Svaghed vilde han dog give sit Digt al den Skiönhed, det stod i hans Kræfter at give det. Han overgav det derfor til et Sælskab af sine Venner, som har bevist sin Ret til en Digters Fortroelighed.  Offentligen bevidner han det <i>Norske Salskab</i> herved fin Erkiendtlighed for den Anledning, det har givet ham, til at rette sit Arbeid, endskiöndt han ikke har troet, at burde rette sig efter alle de af samme givne Anmærkninger. - Han har indhentet andre fine kyndige Venners Domme over sit Arbeid, og stræbt at bringe sig deres Anmærkninger til Nytte. Sidst har han rettet efter tvende Mænds Anviisning, hvis Smag og Indsigt ere ham Borgen for deres Anmærkningers Rigtighed; han har med redelig Flid, efter Evne, stræbt, at fölge dem; og igientager herved sin Taksigelse for deres Velvillighed, til at ville veilede den fremtrædende Sanger. Har han kun ikke for uhældig benyttet sig af den givne Anviisning! Har ikke heller den særdeles Bevaagenhed, hvormed de beære Digteren, formildet deres Dom over hans Digt!
 
   Men Kunstdommere! En Fortieneste med alle sine Feil har min Sang: Dens Hensigt var <i>Emilias</i> Navns Udbredelse; og endnu een: Min höye Mæcen har hört den, og kun nægtet sit Biefald til de Stæder, som syntes talende til Hans Roes.
-</body>
 </prose>
+</body>
+</text>
 
-<prose id="pram2018071802">
+<text id="pram2018071802" skip-index="true">
 <head>
     <title>Indhold</title>
     <source pages="11-12"/>
@@ -59,11 +61,13 @@ Foragt og den hurtigste Forglemmelse er den Digters Lod, som aldrig har tordet f
     <quality>korrektur1,korrektur2,,kilde,side</quality>
 </head>
 <body>
+<prose>
 Nordens Digtere bebrejdes deres Taushed. Vore afdöde Skialde Tullin, Stenersen, Evald, Vibe erindres. De end levende Skialde opmuntres til at gribe Harpen, og besynge Emilias Kilde.  Anraabelse Almindelig Udsigt over Söelyst; over Höyen paa hvilken Söelyst er anlagt, og de omliggende Marker.  Udsigt til Bernstorf, Jægersborg, Dyrehaven, Kiöbenhavn, Öresund og Östersöen, Charlottenlund og Torbek. Söelyst, Haven og de tvende Höye. Engen og Söen med Öerne.  Den nær hos beliggende Lund. Lunden ved Kilden, Kildens Raslen, og et Blik tilbage til Emilia, som Hun forhen vandrede her med sin Elskede. Stolbergs Sang ved Hellebek<footnote>Se Friedrich Leopold Graf zu Stolberg: <xref poem="stolbergf2018073101"/>.</footnote> erindres.  Stedets forrige og nærværende Udseende.  Emilias Monument.  Aftensolen bestraaler Egnen, Söen, og den lige over for beliggende Svenske Kyst. Udsigt over Hveen. Videre Udsigt over Söen. Markarbejdernes Sange, som nu forlade deres Arbeyde; Glædens sande Lyd. Den yndede Emilia; Træk af den afdöde Emilias Caracter. Natten kommer: Sangeren seer Nayaden beskue sin Kilde og Monumentet. Billeder fra de henfarne Tider svære for hans Siæl.  Habors og Signes Kiærlighed og Död. Deres Aske hviler i en Höy strax oven for Kilden, som af disse Död har sin Oprindelse. Forsög til at male nogle af Schimmelmanns Fölelser ved dette Steds Beskuelse.
-</body>
 </prose>
+</body>
+</text>
 
-<poem id="pram2018071803">
+<text id="pram2018071803">
 <head>
     <title>Emilias Kilde</title>
     <firstline>Hvi lyder ey den gyldne Harpe meer?</firstline>
@@ -80,6 +84,7 @@ Nordens Digtere bebrejdes deres Taushed. Vore afdöde Skialde Tullin, Stenersen,
     <quality>korrektur1,korrektur2,,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><right><i>- Audire &amp; videor pios</i></right></nonum>
 <nonum><right><i>Errare per lucos, amoenæ</i></right></nonum>
 <nonum><right><i>Qvos &amp; aqvæ fubeunt &amp; auræ.</i></right></nonum>
@@ -602,8 +607,9 @@ Hvad Nordens Suada umistænkt skal tale
 Til end ufödte Slægt.
                       Og nu modtag,
 O <sc>Schimmelmann</sc>, min Sang med Velbehag.
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

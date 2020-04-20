@@ -116,6 +116,10 @@ export const museumURL = (lang: Lang = 'da', museumId: string): URLString => {
   return `/${lang}/museum/${museumId}`;
 };
 
+export const museumsURL = (lang: Lang = 'da'): URLString => {
+  return `/${lang}/museums`;
+};
+
 export const searchURL = (
   lang: Lang,
   query: string,

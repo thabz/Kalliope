@@ -16,7 +16,11 @@ import WorkName from '../components/workname.js';
 import Picture from '../components/picture.js';
 import TextContent from '../components/textcontent.js';
 import SplitWhenSmall from '../components/split-when-small.js';
-import FormattedDate, { parseDate } from '../components/formatteddate.js';
+import {
+  formattedDate,
+  parseDate,
+  extractYear,
+} from '../components/formatteddate.js';
 import TwoColumns from '../components/twocolumns.js';
 import ErrorPage from './error.js';
 import * as Links from '../components/links';
@@ -48,9 +52,7 @@ const dateAndPlace = (
   if (datePlace.date === '?') {
     result.push(_('Ukendt år', lang));
   } else {
-    result.push(
-      <FormattedDate key={datePlace.date} date={datePlace.date} lang={lang} />
-    );
+    result.push(formattedDate(datePlace.date));
   }
   if (datePlace.place != null) {
     result.push(<span key="place">{', ' + datePlace.place}</span>);
@@ -218,11 +220,14 @@ class Timeline extends React.Component<TimelineProps> {
     if (timeline.length === 0) {
       return null;
     }
-    let prevYear = null;
+    let prevYearNumeric = null;
     const items = timeline.map((item, i) => {
-      const curYear = item.date.substring(0, 4);
-      const year = curYear !== prevYear ? <div>{curYear}</div> : null;
-      prevYear = curYear;
+      const [curYearFormatted, curYearNumeric] = extractYear(item.date);
+      let year = null;
+      if (prevYearNumeric !== curYearNumeric) {
+        year = curYearFormatted;
+      }
+      prevYearNumeric = curYearNumeric;
 
       let html = null;
       if (item.type === 'image' && item.src != null) {
@@ -321,6 +326,7 @@ const BioPage = (props: BioProps) => {
       pageTitle={<PoetName poet={poet} includePeriod />}
       pageSubtitle={_('Biografi', lang)}
       menuItems={poetMenu(poet)}
+      poet={poet}
       selectedMenuItem="bio">
       <SidebarSplit sidebar={sidebarItems} sidebarOnTopWhenSplit={true}>
         <div style={{ lineHeight: '1.6' }}>

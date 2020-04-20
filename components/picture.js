@@ -1,7 +1,7 @@
 // @flow
 import React, { useContext, useState } from 'react';
 import type { PictureItem, Lang, TextLang } from '../common/types.js';
-import TextContent from './textcontent.js';
+import { TextInline } from './textcontent.js';
 import PictureOverlay from './pictureoverlay.js';
 import CommonData from '../common/commondata.js';
 import PoetName from './poetname.js';
@@ -57,7 +57,7 @@ const FigCaption = (props: FigCaptionProps) => {
   let noteRendered = null;
   if (picture.note_html != null) {
     noteRendered = (
-      <TextContent
+      <TextInline
         contentHtml={picture.note_html}
         contentLang={picture.content_lang || 'da'}
       />
@@ -69,7 +69,7 @@ const FigCaption = (props: FigCaptionProps) => {
       <Stack>
         <div>
           {artistRendered}
-          <TextContent
+          <TextInline
             inline={true}
             contentHtml={picture.content_html}
             contentLang={picture.content_lang || 'da'}
@@ -116,9 +116,9 @@ const Picture = ({
   });
   const sizes = '(max-width: 700px) 250px, 48vw';
   let srcsets = {};
-  const sources = CommonData.availableImageFormats.map(ext => {
+  const sources = CommonData.availableImageFormats.map((ext) => {
     const srcset = CommonData.availableImageWidths
-      .map(width => {
+      .map((width) => {
         const filename = src
           .replace(/.jpg$/, `-w${width}.${ext}`)
           .replace(/\/([^\/]+)$/, '/t/$1');
@@ -144,6 +144,18 @@ const Picture = ({
     pictureClassName += ' clickable';
   }
 
+  let clipPathStyle = {};
+  let clipPathDropShadowStyle = {};
+  if (picture.clipPath != null) {
+    clipPathStyle = {
+      clipPath: picture.clipPath,
+      WebkitClipPath: picture.clipPath,
+    };
+    clipPathDropShadowStyle = {
+      filter: 'drop-shadow(4px 4px 12px #888)',
+    };
+  }
+
   const onClick = () => {
     if (clickToZoom == true) {
       showOverlay(true);
@@ -167,12 +179,16 @@ const Picture = ({
   return (
     <div className="sidebar-picture">
       <figure>
-        <picture className={pictureClassName} onClick={onClick}>
+        <picture
+          className={pictureClassName}
+          onClick={onClick}
+          style={clipPathDropShadowStyle}>
           {sources}
           <img
             className={pictureClassName}
             src={fallbackSrc}
             width="100%"
+            style={clipPathStyle}
             alt={alt}
           />
         </picture>

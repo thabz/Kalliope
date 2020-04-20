@@ -8,12 +8,13 @@
 </workhead>
 <workbody>
 
-<poem id="beranger2001081901">
+<text id="beranger2001081901">
 <head>
    <title>Mon Habit</title>
    <firstline>Sois-moi fidèle, ô pauvre habit que j'aime!</firstline>
 </head>
 <body>
+<poetry>
 Sois-moi fidèle, ô pauvre habit que j'aime!
 Ensemble nous devenons vieux.
 Depuis dix ans, je te brosse moi-même,
@@ -58,10 +59,11 @@ Je dois bientôt, il me le semble,
 Mettre pour jamais habit bas.
 Attends un peu ; nous finirons ensemble:
 Mon vieil ami, ne nous séparons pas.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="beranger2018010301">
+<text id="beranger2018010301">
 <head>
   <title>Les Étoiles qui filent</title>
   <subtitle>Air du ballet des Pierrots</subtitle>
@@ -73,6 +75,7 @@ Mon vieil ami, ne nous séparons pas.
   <firstline>Berger, tu dis que notre étoile</firstline>
 </head>
 <body>
+<poetry>
 Berger, tu dis que notre étoile
 Règle nos jours et brille aux cieux.
 — Oui, mon enfant ; mais dans son voile
@@ -135,10 +138,11 @@ Si tu brillais sans être utile,
 À ton dernier jour on dirait :
 Ce n’est qu’une étoile qui file,
 Qui file, file, et disparaît.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="beranger2018010302">
+<text id="beranger2018010302">
 <head>
    <title>Mon Âme</title>
    <firstline>C’est à table, quand je m’enivre</firstline>
@@ -150,6 +154,7 @@ Qui file, file, et disparaît.
    </notes>
 </head>
 <body>
+<poetry>
   C’est à table, quand je m’enivre
   De gaîté, de vin et d’amour,
   Qu’incertain du temps qui va suivre,
@@ -209,11 +214,12 @@ De vrais amis viennent fermer mes yeux.
 Ah ! sans regret, mon âme, partez vite ;
 En souriant remontez dans les cieux.
   Remontez, remontez dans les cieux.
+</poetry>
 </body>
-</poem>
+</text>
 
 
-<poem id="beranger2018110601">
+<text id="beranger2018110601">
 <head>
    <title>Maudit printemps</title>
    <firstline>Je la voyais de ma fenêtre</firstline>
@@ -224,6 +230,7 @@ En souriant remontez dans les cieux.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
     Je la voyais de ma fenêtre
     À la sienne tout cet hiver :
     Nous nous aimions sans nous connaître ;
@@ -259,10 +266,11 @@ Maudit printemps ! reviendras-tu toujours ?
     Tes fleurs, tes zéphyrs, tes longs jours ?
     Je ne la verrai plus sourire.
 Maudit printemps ! reviendras-tu toujours ?
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="beranger2019022001">
+<text id="beranger2019022001">
 <head>
    <title>Le Violon Brisé</title>
    <firstline>Viens, mon chien, viens, ma pauvre bête</firstline>
@@ -274,6 +282,7 @@ Maudit printemps ! reviendras-tu toujours ?
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Viens, mon chien, viens, ma pauvre bête ;
 Mange malgré mon désespoir.
 Il me reste un gâteau de fête ;
@@ -338,10 +347,11 @@ Viens, mon chien, viens, ma pauvre bête ;
 Mange malgré mon désespoir.
 Il me reste un gâteau de fête ;
 Demain nous aurons du pain noir.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="beranger2019022002">
+<text id="beranger2019022002">
 <head>
    <title>Le Roi d’Yvetot</title>
    <firstline>Il était un roi d’Yvetot</firstline>
@@ -351,6 +361,7 @@ Demain nous aurons du pain noir.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Il était un roi d’Yvetot
         Peu connu dans l’histoire,
 Se levant tard, se couchant tôt,
@@ -416,10 +427,11 @@ La foule s’écrie en buvant
 Oh ! oh ! oh ! oh ! ah ! ah ! ah ! ah !
 Quel bon petit roi c’était là !
                         La, la.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="beranger2019120701">
+<text id="beranger2019120701">
 <head>
     <title>La Bonne Fille</title>
     <subtitle>
@@ -433,6 +445,7 @@ Quel bon petit roi c’était là !
     <!-- https://fr.wikisource.org/wiki/Œuvres_complètes_de_Béranger/La_Bonne_Fille,_ou_les_Mœurs_du_temps -->
 </head>
 <body>
+<poetry>
 Je sais fort bien que sur moi l’on babille,
         Que soi-disant
     J’ai le ton trop plaisant ;
@@ -504,10 +517,11 @@ Telle est ma vie ; et sur mainte vétille
     Mais les restrictions,
     Mais les précautions,
 Moi je m’en ris, tant je suis bonne fille.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="beranger2019120702">
+<text id="beranger2019120702">
 <head>
     <title>La Chatte</title>
     <firstline>Tu réveilles ta maîtresse</firstline>
@@ -516,6 +530,7 @@ Moi je m’en ris, tant je suis bonne fille.
     </notes>
 </head>
 <body>
+<poetry>
 Tu réveilles ta maîtresse, 
 Minette, par tes longs cris.
 Est-ce la faim qui te presse ?
@@ -560,10 +575,11 @@ Lorsqu’enfin mon cœur se prête
 Aux larcins de ce filou, 
 Mia-mia-ou ! que ma minette, 
 Mia-mia-ou ! trouve un matou.    
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="beranger2019120703">
+<text id="beranger2019120703">
 <head>
     <title>Le Docteur et ses Malades</title>
     <subtitle>
@@ -576,6 +592,7 @@ Mia-mia-ou ! trouve un matou.
     </notes>
 </head>
 <body>
+<poetry>
 Saluons de maintes rasades
 Ce docteur à qui je dois tant.
 Mais, pour visiter ses malades, 
@@ -611,10 +628,11 @@ Puisqu’enfin dans nos embrassades
 Il n’est point heureux à demi, 
 Mourez sans lui, mourez, malades ;
 Laissez-nous fêter notre ami.    
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="beranger2019120704">
+<text id="beranger2019120704">
 <head>
     <title>Jeannette</title>
     <firstline>Fi des coquettes maniérées</firstline>
@@ -623,6 +641,7 @@ Laissez-nous fêter notre ami.
     </notes>
 </head>
 <body>
+<poetry>
 Fi des coquettes maniérées !
 Fi des bégueules du grand ton !
 Je préfère à ces mijaurées
@@ -692,10 +711,11 @@ Fi des coquettes maniérées !
 Fi des bégueules du grand ton !
 Je préfère à ces mijaurées
 Ma Jeannette, ma Jeanneton.    
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="beranger2019120705">
+<text id="beranger2019120705">
 <head>
     <title>Ma République</title>
     <firstline>J’ai pris goût à la république</firstline>
@@ -704,6 +724,7 @@ Ma Jeannette, ma Jeanneton.
     </notes>
 </head>
 <body>
+<poetry>
 J’ai pris goût à la république
 Depuis que j’ai vu tant de rois.
 Je m’en fais une, et je m’applique
@@ -748,10 +769,11 @@ C’est Lisette qui nous rappelle
 Sous les lois de la volupté.
 Elle veut régner, elle est belle ;
 C’en est fait de la liberté.    
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="beranger2019120706">
+<text id="beranger2019120706">
 <head>
     <title>La Bonne Vieille</title>
     <firstline>Vous vieillirez, ô ma belle maîtresse !</firstline>
@@ -760,6 +782,7 @@ C’en est fait de la liberté.
     </notes>
 </head>
 <body>
+<poetry>
 Vous vieillirez, ô ma belle maîtresse !
 Vous vieillirez, et je ne serai plus.
 Pour moi le temps semble, dans sa vitesse, 
@@ -804,10 +827,11 @@ Levez les yeux vers ce monde invisible
 Où pour toujours nous nous réunissons ;
 Et bonne vieille, au coin d’un feu paisible, 
 De votre ami répétez les chansons.    
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="beranger2019120707">
+<text id="beranger2019120707">
 <head>
     <title>La Rêverie</title>
     <firstline>Loin d’une iris volage</firstline>
@@ -816,6 +840,7 @@ De votre ami répétez les chansons.
     </notes>
 </head>
 <body>
+<poetry>
 Loin d’une iris volage
       Qu’un seigneur m’enlevait, 
       Au printemps, sous l’ombrage, 
@@ -860,8 +885,9 @@ Venez, venez, venez, mes amours !
   Cette fille est si jolie !
       Ses jupons sont si courts !
 Venez, venez, venez, mes amours !    
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

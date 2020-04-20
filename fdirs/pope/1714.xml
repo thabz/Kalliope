@@ -13,13 +13,14 @@
 </workhead>
 <workbody>
 
-<prose id="pope2003091501">
+<text id="pope2003091501" skip-index="true">
 <head>
    <title>Epistle Dedicatory</title>
    <subtitle>To Mrs Arabella Fermor</subtitle>
    <toctitle>Epistle Dedicatory</toctitle>
 </head>
 <body>
+<prose>
 Madam, - It will be in vain to deny that I have some regard for this piece, since I dedicate it to you. Yet you may bear me witness it was intended only to divert a few young ladies, who have good sense and good humour enough to laugh not only at their sex's little unguarded follies, but at their own. But as it was communicated with the air of a secret, it soon found its way into the world. An imperfect copy having been offer'd to a bookseller, you had the good-nature for my sake, to consent to the publication of one more correct: this I was forced to, before I had executed half of my design, for the Machinery was entirely wanting to complete it.
 
 The Machinery, Madam, is a term invented by the critics, to signify that part which the Deities, Angels, or Dæmons, are made to act in a poem: for the ancient poets are in one respect like many modern ladies; let an action be never so trivial in itself, they always make it appear of the utmost importance. These Machines I determined to raise on a very new and odd foundation, the Rosicrucian doctrine of Spirits.
@@ -33,10 +34,11 @@ If this poem had as many graces as there are in your person or in you mind, yet 
 Your most obedient, humble servant,
 
 A. Pope.
-</body>
 </prose>
+</body>
+</text>
 
-<poem id="pope2003091502">
+<text id="pope2003091502">
 <head>
    <title>Canto I</title>
    <toctitle>Canto I</toctitle>
@@ -45,6 +47,7 @@ A. Pope.
    <firstline>What dire offence from am'rous causes springs</firstline>
 </head>
 <body>
+<poetry>
 What dire offence from am'rous causes springs,
 What mighty contests rise from trivial things,
 I sing--This verse to Caryll, muse! is due:
@@ -202,10 +205,11 @@ The busy Sylphs surround their darling care,
 These set the head, and those divide the hair,
 Some fold the sleeve, whilst others plait the gown;
 And Betty's prais'd for labours not her own.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="pope2003091503">
+<text id="pope2003091503">
 <head>
    <title>Canto II</title>
    <toctitle>Canto II</toctitle>
@@ -214,6 +218,7 @@ And Betty's prais'd for labours not her own.
    <firstline>Not with more glories, in th' ethereal plain</firstline>
 </head>
 <body>
+<poetry>
 Not with more glories, in th' ethereal plain,
 The sun first rises o'er the purpled main,
 Than, issuing forth, the rival of his beams
@@ -366,10 +371,11 @@ Some thread the mazy ringlets of her hair;
 Some hang upon the pendants of her ear;
 With beating hearts the dire event they wait,
 Anxious, and trembling for the birth of Fate.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="pope2003091504">
+<text id="pope2003091504">
 <head>
    <title>Canto III</title>
    <toctitle>Canto III</toctitle>
@@ -378,6 +384,7 @@ Anxious, and trembling for the birth of Fate.
    <firstline>Close by those meads, for ever crown'd with flowers</firstline>
 </head>
 <body>
+<poetry>
 Close by those meads, for ever crown'd with flowers,
 Where Thames with pride surveys his rising towers
 There stands a structure of majestic frame,
@@ -569,10 +576,11 @@ Steel could the works of mortal pride confound
 And hew triumphal arches to the ground.
 What wonder, then fair Nymph! thy hairs should feel
 The conquering force of unresisted steel?'
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="pope2003091505">
+<text id="pope2003091505">
 <head>
    <title>Canto IV</title>
    <toctitle>Canto IV</toctitle>
@@ -581,6 +589,7 @@ The conquering force of unresisted steel?'
    <firstline>But anxious cares the pensive nymph opprest</firstline>
 </head>
 <body>
+<poetry>
 But anxious cares the pensive nymph opprest,
 And secret passions labour'd in her breast.
 Not youthful kings in battle seiz'd alive,
@@ -768,10 +777,11 @@ Uncurl'd it hangs, the fatal shears demands,
 And tempts one more thy sacrilegious hands.
 O hadst thou, cruel! been content to seize
 Hairs less in sight, or any hairs but these!'
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="pope2003091506">
+<text id="pope2003091506">
 <head>
    <title>Canto V</title>
    <toctitle>Canto V</toctitle>
@@ -780,6 +790,7 @@ Hairs less in sight, or any hairs but these!'
    <firstline>She said: the pitying audience melt in tears</firstline>
 </head>
 <body>
+<poetry>
 She said: the pitying audience melt in tears;
 But Fate and Jove had stopp'd the Baron's ears.
 In vain Thalestris with reproach assails,
@@ -943,8 +954,9 @@ When those fair suns shall set, as set they must,
 And all those tresses shall be laid in dust,
 This Lock the Muse shall consecrate to fame,
 And 'midst the stars inscribe Belinda's name.
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

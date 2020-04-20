@@ -39,7 +39,7 @@ const MuseumPage = (props: MuseumProps) => {
   }
   const crumbs = [
     ...kalliopeCrumbs(lang),
-    { title: 'Museer' },
+    { url: Links.museumsURL(lang), title: _('Museer', lang) },
     { title: museum.name },
   ];
 
