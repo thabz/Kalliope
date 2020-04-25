@@ -380,14 +380,15 @@ const TextContent = (props: TextContentPropsType) => {
   }
 
   const showNums =
-    contentHtml.find(l => {
+    contentHtml.find((l) => {
       const lineOptions = l.length > 1 ? l[1] : {};
       return lineOptions.displayNum != null || lineOptions.margin != null;
     }) != null;
 
   if (options.highlight != null) {
+    const highlight = options.highlight;
     const lastLineNum = contentHtml
-      .map(l => {
+      .map((l) => {
         const lineOptions = l.length > 1 ? l[1] : {};
         const lineNum =
           lineOptions.num != null ? parseInt(lineOptions.num) : null;
@@ -397,8 +398,8 @@ const TextContent = (props: TextContentPropsType) => {
         return Math.max(lineNum, maxLineNum);
       }, -1);
     // Bound the values
-    options.highlight.from = Math.max(1, options.highlight.from);
-    options.highlight.to = Math.min(lastLineNum, options.highlight.to);
+    highlight.from = Math.max(1, highlight.from);
+    highlight.to = Math.min(lastLineNum, highlight.to);
   }
 
   let isHighlighting = false;
@@ -506,7 +507,7 @@ const TextContent = (props: TextContentPropsType) => {
     <div
       style={style}
       className={[className, smallClassName, quoteClassName]
-        .filter(a => a != null)
+        .filter((a) => a != null)
         .join(' ')}
       lang={contentLang}
       key={keyPrefix + 'outer'}>
@@ -621,10 +622,12 @@ const TextContent = (props: TextContentPropsType) => {
           padding-left: 10px;
         }
         :global(.blockquote) {
-          /*width: calc(100% - ${options.marginLeft} - ${options.marginRight});*/
-          margin-left: ${options.marginLeft};
-          margin-right: ${options.marginRight};
-          font-size: ${options.fontSize};
+          /*width: calc(100% - ${options.marginLeft} - ${
+        options.marginRight
+      });*/
+          margin-left: ${options.marginLeft ?? 0};
+          margin-right: ${options.marginRight ?? 0};
+          font-size: ${options.fontSize ?? 'inherit'};
         }
       `}</style>
     </div>
