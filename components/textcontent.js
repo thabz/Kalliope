@@ -622,12 +622,10 @@ const TextContent = (props: TextContentPropsType) => {
           padding-left: 10px;
         }
         :global(.blockquote) {
-          /*width: calc(100% - ${options.marginLeft} - ${
-        options.marginRight
-      });*/
-          margin-left: ${options.marginLeft ?? 0};
-          margin-right: ${options.marginRight ?? 0};
-          font-size: ${options.fontSize ?? 'inherit'};
+          /*width: calc(100% - ${options.marginLeft} - ${options.marginRight});*/
+          margin-left: ${options.marginLeft};
+          margin-right: ${options.marginRight};
+          font-size: ${options.fontSize};
         }
       `}</style>
     </div>
