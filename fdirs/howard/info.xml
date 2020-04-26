@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="howard" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Henry</firstname>
+    <lastname>Howard, Earl of Surrey</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1517</date>
+      <place>Hunsdon, Hertfordshire</place>
+    </born>
+    <dead>
+      <date>1547-01-13</date>
+      <place>London</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

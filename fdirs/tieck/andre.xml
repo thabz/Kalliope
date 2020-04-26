@@ -9,7 +9,7 @@
 </workhead>
 <workbody>
 
-<poem id="tieck2002010601">
+<text id="tieck2002010601">
 <head>
    <title>Aus 'Genoveva'</title>
    <toctitle>Aus 'Genoveva'</toctitle>
@@ -18,6 +18,7 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Dicht von Felsen eingeschlossen
 Wo die stillen Bächlein gehn,
 Wo die dunkeln Weiden sprossen
@@ -38,10 +39,11 @@ Dicht von Felsen eingeschlossen
 Wo die stillen Bächlein gehn,
 Hier im stillen einsam grünen Tal
 Such zum Troste dir ein Grab zumahl.
+</poetry>
 </body>
-</poem>
+</text>
 
-<prose id="tieck2002011001">
+<text id="tieck2002011001" skip-index="true">
 <head>
    <title>An H. C. Andersen</title>
    <subtitle>Dresden den 10ten Junius 1831</subtitle>
@@ -56,20 +58,23 @@ Such zum Troste dir ein Grab zumahl.
    <keywords>stambog</keywords>
 </head>
 <body>
+<prose>
 Gedenken Sie auch in der Ferne meiner, wandeln Sie wohl gemuth und heiter auf dem Wege der Poesie fort, den Sie so schön und muthig betreten haben. Verliehren Sie nich den Muth, wenn nüchterne Kritik Sie ärgern will. Grüßen Sie den theuren Ingemann und alle Befreundeten und kehren Sie uns bald einmahl frisch, gesund und reichbegabt von den Musen nach Deutschland zurück.
 
               Ihr wahrer Freund
                  Ludwig Tieck
-</body>
 </prose>
+</body>
+</text>
 
-<poem id="tieck2018042801">
+<text id="tieck2018042801">
 <head>
    <title>Der Wald</title>
    <firstline>Wandl' im Grünen</firstline>
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Wandl' im Grünen,
 Willst du die Blumen verstehn,
 Mußt du erst den Wald durchgehn.
@@ -90,8 +95,597 @@ Grün sind alle Blumenknospen
 Und die Blätter um die Blumen,
 Dann entspringt der Farbenglanz
 Aus dem mütterlichen Grün.
+</poetry>
 </body>
-</poem>
+</text>
+
+<text id="tieck2019042701">
+<head>
+   <title>Die Zeichen im Walde</title>
+   <subtitle>Romanze</subtitle>
+   <firstline>O mein Sohn, wie gräßlich heulend</firstline>
+   <quality>korrektur1</quality>
+   <notes>
+       <note>Teksten følger Ludwig Tieck: <i>Gedichte</i>, Heidelberg, 1967, bd. 1, pp. 21-50.<!-- http://www.zeno.org/nid/20005783844 --></note>
+   </notes>
+</head>
+<body>
+<poetry>
+O mein Sohn, wie gräßlich heulend
+Klagt herauf vom Moor die Unke!
+Hörst du wohl die Raben krächzen?
+Die Gespenster in dem Sturme? –
+
+Vater, laßt die Sorge fahren,
+Denn die Wolken ziehn hinunter;
+Bald wird sie der Mond bezwingen,
+Der zu scheinen schon begunnte.
+
+Durch die Thäler streift der Nebel,
+Schon erglänzen fern die Burgen,
+Schaut, schon leucht't das Crucifixe,
+Das Capellenbild da drunten. –
+
+Ach, du Crucifixe gütig,
+Laß vom Schatten dich verdunkeln!
+O Maria-Bild, sei gnädig,
+Bleib in Finsterniß verschlungen!
+
+Laßt ihn los, den alten Sünder,
+Fahren laßt den alten Wulfen:
+Tod und Sünde seine Freunde,
+Und die Hölle ihm verbunden!
+
+Wie die Nacht bald leucht't bald dämmert,
+Schauernd in dem Wolkenzuge,
+Ist es wie ein tiefes Auge,
+Da der Erbfeind herblickt dunkel.
+
+Wie die Wälder sausen, schallen,
+Rauschen ab die Felsenbrunnen,
+Hör' ich Wald, Thal, Berg und Klüfte
+Summen: Komm zu uns herunter. –
+
+Und es spricht sein Sohn ihm tröstend,
+Der ihn liebt, Sohn Sigismunde:
+Ach mein Vater, wär' vorüber
+Diese schreckenvolle Stunde!
+
+Soll ich nach dem Beicht'ger laufen?
+Nach dem Arzt, daß ihr gesundet?
+Soll ich beten? Geht zum Heiland,
+Tröstet euch an seinen Wunden.
+
+Wollt ihr sterben, alter Vater,
+Von Verzweifeln, Angst bezwungen?
+O wie faß' ich doch die Seele,
+Die sich Gott und Heil' entrungen?
+
+O besinnt euch auf die Güte,
+Auf die ew'ge, ew'ge Tugend,
+Die herab uns sprang, den Sündern,
+Von des Gottessohnes Blute.
+
+Denkt den Vater, denkt Marien,
+Unsrer ew'gen Liebe Mutter,
+Denkt den Geist, das unergründlich
+Heilig und dreyfaltig Wunder.
+
+Daß wir leben, sind wir Sünder,
+In dem Tod die Lilienblume;
+Reue kann uns Gott versöhnen,
+Auf macht er die Heiligthume.
+
+Unsre Angst klopft an die Pforten:
+Auf, o lieber Vater, thue!
+An dem Schlosse sitzt Erbarmen,
+Schiebt den Riegel bald zurucke.
+
+Ohne Schätzung ist der Himmel,
+Dennoch mag er Kauf erdulden;
+Unsre Thränen nimmt Sankt Peter,
+Schätzet sie als Münze gulden.
+
+Schnee und Regen gehn hernieder,
+Alle Ströme gehn bergunter,
+Jeder Stein, hinaufgeschleudert,
+Muß zur Erd' herab zur Stunde:
+
+Also zieht den Menschen Sünde,
+Niemals kann er ganz gesunden,
+Daß er aufrecht schaut zum Vater,
+Sind die himmlischen fünf Wunden.
+
+Da kam Himmelreich hernieder,
+Aus fünf Quellen wonnig blutend,
+Da erwuchs das Paradiese,
+Aus fünf Wunden göttlich blumend.
+
+Da erschrak die Erde freudig,
+Und zerborst in große Kluften,
+Und die Herzen wurden offen,
+Gottes Liebe faßte Wurzel.
+
+Blüht hinein in seinen Himmel,
+Wachst hinauf in seine Ruhe,
+Rankt hinan in schön Gebeten:
+Große Kraft hat Herz und Zunge.
+
+Ihr seid selbst ein Zweig vom Baume,
+Welcher steht in Gottes Grunde;
+Alle Zweig' und Laub sind Engel,
+All' formirt zu seinem Ruhme. –
+
+Abwärts wandte sich der Alte,
+Weil er keine Gnade wußte,
+Denn sein Ohr vernahm die Worte,
+Doch sein Herz war fern vom Muthe.
+
+Du mein einzig Kind, begann er,
+Niemals ward dir Schwester, Bruder;
+Als sie dich gebar, da schied sie,
+Deine treue fromme Mutter.
+
+
+Nur auf kurze Zeit geliehen
+War dem Frevler Kunigunde;
+Du warst fromm, mein Sohn, und heilig
+So wie ihre Todesstunde.
+
+Und so oft dein Blick geleuchtet,
+Sah ich immer diese Stunde;
+Und mein Herz zerriß die Sorge,
+Schnürte fester mich im Bunde.
+
+Darum war ein grimmer Wechsel
+Stets von Haß und Lieb' im Busen.
+Bei der Wiege stand ich lauernd,
+Und mein Arm den Dolch erhube.
+
+Aber dann die stillen Augen,
+Die sich aus einander schlugen,
+Brachten Furcht und Liebe wieder,
+Und die Angst ward wieder Ruhe.
+
+Also bist du mir erwachsen,
+Immer war mir fremd dein Thuen;
+Liebst du mich mit ganzer Seele,
+Kannst mir doch nicht stehn zum Schutze.
+
+Innerst recht in meiner Seele
+Sind die Kräfte, die da unten,
+Gottlos abgewandt vom Heile,
+In der Frevel Tiefe wuchern.
+
+Nicht ist mir der Christ gestorben;
+Andern Mächten, mit dem Blute,
+Das ich, trotzend ihm, vergossen,
+Bin ich eisenfest verbunden.
+
+Mir sind andre Paradiese,
+In dem Graus sind meine Blumen;
+Himmelsmächten widerstrebend
+Folg' ich meinem dunkeln Fluge. –
+
+Weinend nimmt der Sohn die Hände,
+Weinend spricht der Sigismunde:
+Vater, was ihr fehltet, gebt mir,
+Gebt mir, ach! die trübe Kunde.
+
+Daß uns Gott erlösen wollte
+Von dem allerschlimmsten Bunde,
+Drum gab er den Eingebohrnen:
+Himmel ist uns so gefunden.
+
+Jedem Sünder, der ihm traute,
+Ist Vergebung noch gelungen.
+Der Allmächt'ge kann vergeben,
+Und es will auch der Allgute.
+
+Nur nicht widerstrebt dem Geiste,
+Ohne Sühnung ein Verschulden;
+Diese Sünde thut ihr, Vater,
+Wenn Verzweiflung obgerungen.
+
+Leben, Blut und Herz und Glauben
+Will ich auf zum Werke rufen,
+Alle Kräfte sollen streiten,
+Siegen ob dem schlimmsten Truge. –
+
+Da erwacht der alte Vater,
+Sehnend wie aus einem Schlummer,
+Und es rinnen große Thränen
+Seinem trüben Aug' hinunter.
+
+Auf, so spricht er, was der Himmel
+Für Gewalt erleid', versuche;
+Ob so späte Reu im Sterben
+Wiederbring' verlohrne Tugend.
+
+Geh' hinunter nach dem Walde:
+Was die Zeichen dort im Grunde
+Aller Welt verbergen, hohle.
+Betend find' ich dann wohl Ruhe. –
+
+Und was sind denn diese Zeichen?
+Deine Reden sind mir dunkel.
+Wie soll ich in Nacht sie treffen?
+Wo im Walde soll ich suchen? –
+
+Kennst du nicht, fernab im Forste,
+Tief ein Thal, von Tannen dunkel,
+Wo ein Stein, bekreuzt mit Dolchen,
+Weiß dasteht auf trübem Grunde?
+
+Oftmals hast du mich gefraget,
+Wann wir jagten in der Runde,
+Was der Stein bezeichnen solle;
+Noch verschwieg ich dir die Kunde.
+
+Das ist nun das erste Zeichen,
+Mir ein Zeichen meines Kummers,
+Den erhebe, bringe zu mir,
+Was du finden wirst da drunten.
+
+Und zwey Dolche wirst du finden
+In der Erde wenig Schuhe.
+Ach, damit hab' ich erstochen
+Ihn, den Liebling meiner Jugend.
+
+An dem Platze war's geschehen,
+Und da setzt' ich meiner Tugend
+Dieses Zeichen, die gestorben
+In des liebsten Freundes Blute.
+
+Aufgekeimt wie junge Lämmer
+Spielten wir in jeder Stunde,
+Er bewohnte, die du jenseits
+Schimmern siehst, die alten Burgen.
+
+Mit dem Alter wuchs die Liebe,
+Und er hieß mich seinen Bruder,
+
+Und gelobte, wann er stürbe
+Mir zu geben seine Burgen.
+
+Nahm mich freundlich in die Arme,
+Und versprach mit einem Schwure,
+Eine Gattinn nie zu freyen,
+Nimmer um ein Weib zu buhlen.
+
+Also schrieb er selber nieder,
+Bald darauf erhielt ich Kunde,
+Daß er oft hinüber ritte
+Zu der schönen Kunigunde.
+
+Da erwacht' es wie ein Grausen
+Tief in meines Herzens Grunde,
+Geister rotten sich zusammen,
+Steigen aus dem finstern Schlunde.
+
+Diese Veste nur die meine,
+Sie die ärmste in der Runde,
+Und die Fremde als das schönste
+Weib in jedes Mannes Munde.
+
+Sie besucht' ich, sah sie selber,
+Fühlte bald die tiefe Wunde,
+Die mir Sinn und Leben raubte;
+Dachte sie nur jede Stunde.
+
+Alle Freundschaft ward vergessen,
+Was er that zu meinen Gunsten,
+Die Gestalt, sein lieblich Wesen,
+Kuß und Handdruck war verschwunden.
+
+Der Begierde Stachel fühlend,
+Der je scharf und schärfer wurde,
+Mied ich ihn, wo ich ihn schaute,
+Furchte mich vor seinem Gruße.
+
+Meine Liebe ward ihm fremde,
+Ihn gereute seine Jugend,
+Und er freite um die Schöne
+Bei den Eltern Kunigundens.
+
+Lieber war ich ihr geworden,
+Sie versprach mit einem Kusse
+Mein zu seyn, doch war ihr Vater
+Jenem hold, ob seinem Gute.
+
+Also traf ich ihn im Holze,
+Haß und Brunst in meinem Muthe,
+Daß ich ihn schnell ohn' Erbarmen
+Mit der Lanze niederschluge.
+
+Und die Dolche waren plötzlich
+In der Hand, ob ich nicht wußte
+Wie, woher; so eilt der Böse
+Daß in uns erstirbt das Gute.
+
+Seine Augen baten flehend,
+Zugeschlossen war mein Busen,
+Und das Herz, das mir geschlagen,
+Das zerstach ich, der Verfluchte.
+
+Trennte drauf das Haupt, das liebe,
+Mit dem Schwerdte von dem Rumpfe,
+Und verbarg es in der Erde,
+Weiter ab im dunkeln Grunde.
+
+Dieses ist das zweite Zeichen.
+Gehe hin, den Stein verrucke,
+Bringe den geliebten Schädel,
+Eh' ich zu die Augen drucke.
+
+Weiter ab, wo Wald zu Ende,
+Steht bei dem Wachholderbusche
+Endlich noch das dritte Zeichen.
+Ach, wo find' ich davor Ruhe?
+
+Also war mein Freund erblichen.
+Also starb der edle Kunze.
+Bald darauf ward ich vermählet
+Mit der schönen Kunigunde.
+
+Und die Freunde meines Freundes
+Forschten nach, wie er verblutet,
+Und von mir ward gleich das Schlimmste
+Von den Forschenden vermuthet.
+
+Angeklagt des schnöden Mordes
+Ließen mich die Richter rufen;
+Und ich fand den strengsten Richter
+Schon in meinem eignen Busen.
+
+Schwer im Wochenbett darnieder
+Lag die Gattin Kunigunde,
+Und es hatte sich der Kranken,
+Wie sie starb, ein Sohn entwunden.
+
+Alles Glück war abgeschlachtet,
+Meine Brust die Mördergrube:
+Ehre, Hoffnung, Liebe, Leben
+Ausgetilgt, und jedem Buben
+
+War mein Herz nun Preis gegeben;
+Um mich grinsten Höllenhunde,
+Und ich riß mit wüstem Streben
+Das, was mich an Gott gebunden.
+
+Mitternacht lag auf dem Lande,
+Da verließ ich dich im Schlummer,
+Und die Leiche meiner Gattin;
+Ging hinab die hohen Stufen.
+
+Wild zur Wildniß ging ich nieder,
+Sternen und dem Himmel fluchend:
+Nach der Nacht streckt' ich die Arme,
+Und der Mond ging trübe unter.
+
+Daß die Klüfte wiederschallten,
+Fing ich an so laut zu rufen.
+Eingeweiht zu tieferm Grausen
+Ward ich bald den finstern Zunften.
+
+Und der böse Feind erschiene
+Finster meinem bösen Muthe.
+Und er nahm ein Shreiben von mir,
+Das ich schrieb mit meinem Blute.
+
+Ihm zu eigen mich zu geben,
+Unter seinem grimmen Schutze
+Sicher sein mein Leib und Leben,
+Nur die Seele war verschuldet.
+
+Diese Schrift ward eingeschlossen,
+Daß ich's sah, in erzner Truhe,
+Unterm Steine eingegraben
+Dort im dunkelgrünen Grunde.
+
+Dieses ist das dritte Zeichen
+Dorten beim Wachholderbusche.
+Welche Macht kann es befreien,
+Bringen mir die Eisentruhe?
+
+Reichthum, Ehre ward verliehen
+Dem, der ab sich that dem Guten.
+Heute ist der Preis verfallen,
+Und ich fühl' der Hölle Ruthen.
+
+Kannst du mir die Zeichen bringen,
+Ist es dir, o Sohn, gelungen,
+O so möcht' es mir gerathen,
+Daß ich mich hinaufgeschwungen.
+
+Sieh, der Mond scheint hell und heller,
+Ach, so liebe Sterne lugen
+In den Grund hinab, und sanfte
+Herrscht im Thal und Wald die Ruhe.
+
+In sich klingt der Himmelsbogen,
+Regnen nieder Seegensfluthen,
+Ein Erbarmen winkt von oben:
+Eile denn zum Wald hinunter. –
+
+Wie der Sohn dem Vater anschaut,
+Will er ihm so fremd bedunken.
+Schaudernd wendet er sich von ihm,
+Geht hinab die Felsenstufen.
+
+Und er naht dem Crucifixe,
+Der Capelle dort im Grunde;
+Und er wirft sich knieend nieder,
+Betet da in tiefen Brunsten.
+
+Erd' und Himmel, Berg und Waldung,
+Blum' und alle Creaturen,
+Er sich selber, sind wie Fremdling,
+Findet nicht die vor'gen Fluren.
+
+Taumelnd tritt er in den Wald ein,
+Irrend sucht er wohl die Spuren
+Die ihn nach den Zeichen leiten,
+Die er sonst im Thal gefunden.
+
+Durch die Blätter geht ein Flüstern,
+Lichter gehn ihm vor dem Fuße,
+Da erblickt er mit den Dolchen,
+Weißen Stein auf dunklem Grunde.
+
+Mühsam wälzt er fort den Marmor,
+Und er gräbt nur wenig Schuhe:
+Sieh, da sind die beiden Dolche,
+Und er steckt sie in den Busen.
+
+Weiter geht er, bange sinnend,
+Jenes zweite Zeichen suchend;
+Fern ab jenem lenkt der Stein ihm
+Seine Schritte, wohl zweihundert.
+
+Schwerer ist der abzuwälzen,
+Nach dem Zeichen wächst sein Hunger,
+Sollten ihm die Sehnen reissen,
+Achtet's nicht; es ist gelungen.
+
+Aus dem Boden steigt ein Schädel,
+Und er hört fernab ein dumpfes
+Winseln, ob es Geister wären,
+Oder ein Geheul der Unken.
+
+Und der Wald ist schon zu Ende;
+Nahend dem Wachholderbusche
+Sieht er auf dem größten Steine
+Eine Menschenbildung ruhen.
+
+Fort da, Fremdling! Du mußt weichen,
+Diesen Ort muß ich durchsuchen,
+Denn da unten liegt ein Kleinod
+Von des Vaters Eigenthume.
+
+Wie so unhold? sagt der Fremde;
+Wohlbekannt ist deine Jugend;
+Sonst war mir ein Freund dein Vater,
+Denn ich heiß' mit Namen Kunze.
+
+Kunze ist dein Name, sprichst du?
+Ruft erschreckend aus der Junge;
+Der ist todt, so sagt mein Vater,
+Und begraben längst, der Gute.
+
+Wird noch stets sein Wahnsinn irren?
+Sprach der Mann mit dumpfer Zunge,
+
+Sollen wir uns nie versöhnen?
+Nimmer ist es mir gelungen.
+
+Zwietracht hielt uns lang' entfremdet,
+Und er wähnt, daß er erschluge
+Seinen treusten Freund und Liebsten,
+Seinen besten Waffenbruder.
+
+Freudenthränen weint der Jüngling,
+Da der diese Wort' anhube.
+O so kommt mit mir! mein Vater
+Ist schon nahe seiner Grube.
+
+Zeig' ihm jetzt dein Angesichte,
+Daß er Wähnen von sich thue,
+Daß er fröhlich möge sterben
+Und in Gottes Schooß dann ruhe.
+
+Ach, wie soll ich dir vergelten,
+Was du mir erzeigst so Gutes?
+Wiederum darf ich ihn lieben,
+Denn er ist ja rein vom Blute.
+
+Nebenher gehn Beide rückwärts,
+Große Schatten auf den Fluren,
+Und der Fremde dünkt so seltsam,
+Wie er schreitet, Sigismunden.
+
+Nachtgevögel schwärmt herüber,
+Und Geschrei erfüllt die Kluften.
+Sieh, da stehn sie vor dem Schlosse,
+Welches golden liegt im Dufte.
+
+Laß uns nicht den Umweg nehmen
+Vor dem Crucifix da drunten,
+Sagt der fremde Mann; hier oben
+Geht ein Fußpfad, den ich wußte,
+
+Als ich sonst mit deinem Vater
+Spiele trieb in diesen Schluften.
+Und der Jüngling folgt ihm gerne,
+Doch nimmt dieser Steig ihn Wunder,
+
+Denn so oft er hier gewandelt,
+Hat er nie den Weg gefunden.
+Um so bälder, sagt er freundlich,
+Bringen wir dem Alten Ruhe.
+
+Und sie gehn hinauf die Stiegen,
+Wendeltreppen, welche dunkel.
+Schon erglänzt aus dem Gemache
+Licht, das bei dem Alten funkelt.
+
+Und es öffnet sich die Thüre,
+Und sie treten in die Stube,
+Und der Alte fällt zurücke
+Sich entsetzend, aus dem Stuhle.
+
+O mein Sohn, sind dies die Zeichen,
+Dieses die versprochne Truhe?
+Du bringst mir an deiner Hand hier
+Selbst den Feind von meiner Ruhe?
+
+Ja, der Menschen Erbfeind ist es. –
+Kennst du mich? so fragt der Dunkle;
+Nimm hier, was du mir geschrieben,
+Deine Seel' nehm' ich hinunter.
+
+Wieder braust der Sturm und heulet
+Rasselnd her vom alten Thurme,
+Und die Raben krächzen lauter,
+Und es dröhnt der Ton der Unken.
+
+Winselnd windet sich der Alte,
+Und der Satan schlägt ihm Wunden,
+Todt liegt er in seinem Bette.
+Als der Morgen aufgedunkelt.
+
+Aber fremd sind alle Züge,
+Keine Miene kennt der junge,
+Nicht mehr weiß, ob's Traum gewesen
+Oder Wahrheit, Sigismunde.
+
+Er bestattet ihn zur Erden
+Wo die Zeichen stehn im Grunde,
+Macht sich selbst zum Eremiten,
+Traurend von derselben Stunde.
+
+Thut sich ab der Ritterkleider,
+Pönitenz und schwere Bußen
+Uebt er Tag wie Nacht, und singet
+Requiem dem todten Wulfen.
+
+Nun hört man das Glöcklein schallen
+Durch der Nächte stille Ruhe,
+Seine Stimme weint dazwischen,
+Daß er Gottesdienste thue.
+
+Keinen Menschen sieht er wieder,
+Nähret sich von Kraut und Wurzeln,
+Gott nur will er gern versühnen;
+Bald verfallen seine Burgen.
+
+Durch das Thal sieht man ihn schleichen,
+Gram verzehrt die frische Jugend.
+Bauern fanden seinen Leichnam,
+Legten ihn in's Grab zur Ruhe.
+</poetry>
+</body>
+</text>
 
 </workbody>
 </kalliopework>

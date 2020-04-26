@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="valloee" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Knud</firstname>
+    <lastname>Valløe</lastname>
+    <fullname>Knud Engelbrecht Valløe</fullname>
+    <pseudonym>Jens Birke Riis</pseudonym>
+    <pseudonym>-a-ø</pseudonym>
+    <pseudonym>Fg.</pseudonym>
+  </name>
+  <period>
+    <born>
+      <date>1833-02-05</date>
+      <place>Roskilde</place>
+    </born>
+    <dead>
+      <date>1877-05-17</date>
+      <place>Mentone, Provence</place>
+    </dead>
+  </period>
+  <works>1861,1862,1879</works>
+</person>

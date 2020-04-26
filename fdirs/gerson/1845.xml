@@ -1,23 +1,259 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
-<kalliopework id="1845" author="gerson" status="incomplete" type="poetry">
+<kalliopework id="1845" author="gerson" status="complete" type="poetry">
 <workhead>
-   <title>Digte for Børn</title>
-   <year>1845</year>
-   <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+    <title>Digte for Børn</title>
+    <year>1845</year>
+    <notes>
+        <note>Teksten følger Julius Christian Gerson: <i>Digte for Børn</i>, H.C. Klein, Kbh., 1845.</note>
+    </notes>
+    <pictures>
+        <picture src="1845-p1.jpg">Titelbladet til <i>Digte for Børn</i> (1845) lyder ,,Digte for børn / af / Julius. // Kjøbenhavn. / Forlagt af H. C. Klein. / Trykt hos Louis Klein. / 1845.''.</picture>
+    </pictures>
+    <source facsimile="11530805633B_color" facsimile-pages-num="72" facsimile-pages-offset="4">Julius Christian Gerson: <i>Digte for Børn</i>, H.C. Klein, Kbh., 1845.</source>
 </workhead>
 <workbody>
 
-<poem id="gerson1999031801">
+<text id="gerson2019121401">
 <head>
-   <title>Den største Mand</title>
-   <toctitle>Den største Mand</toctitle>
-   <indextitle>Den største Mand</indextitle>
-   <firstline>En lille Nisse reiste</firstline>
-   <quality>korrektur1</quality>
+    <title>Den trøstende Frelser</title>
+    <firstline>Da Frelseren vandrede synligt</firstline>
+    <source pages="5-6"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
+Da Frelseren vandrede synligt
+Blandt Menneskets Børn paa Jord,
+Og bragte de vildfarne Skarer
+Det Livet bringende Ord;
+
+Da saae han en Dag som han vandred
+Alene, hvor Kedron flød,
+Et grædende Barn, paa hvis Pande
+Man læste en tidlig Død.
+
+Han bøied sig ned over Barnet,
+Han løfted det op til sin Barm,
+Han kyssed dets kolde Læber
+Og aandede Kinden varm.
+
+Han talede Trøst i dets Øre,
+Han talede kjærlige Ord,
+Og den, som var nær ved Graven,
+Blev siden munter og stor. -
+
+Nu sees ingen Frelser paa Jorden;
+Men der, hvor et Barn lider Savn,
+Der er han usynligt tilstede
+Og trykker det mildt i sin Favn.
+</poetry>
+</body>
+</text>
+
+<text id="gerson2019121402">
+<head>
+    <title>Morgensang</title>
+    <firstline>Nu vaagne alle Blomster</firstline>
+    <source pages="7-8"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Nu vaagne alle Blomster,
+God Morgen og Guds Fred!
+Nu vaagne alle Blomster
+I Mark og Bed.
+
+De hilse paa vor Herre:
+Hav Tak for Fred og Ro!
+De hilse paa vor Herre
+Med ydmyg Tro.
+
+De aabne deres Hjerte
+For Solens milde Glands,
+De aabne deres Hjerte
+Og deres Sands.
+
+O, hør os, kjære Skaber,
+Vi Børn, vi gaae i Blomsters Sted,
+O, hør os, kjære Skaber,
+Vi bede med!
+</poetry>
+</body>
+</text>
+
+<text id="gerson2019121403">
+<head>
+    <title>Nattergalen</title>
+    <firstline>Hvor det klinger smukt fra Busken</firstline>
+    <source pages="9-10"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Hvor det klinger smukt fra Busken,
+Jeg vil lytte stille til!
+Hvilke Toner! Er det ikke
+Nattergalens Fløitespil?
+Tirrilli o. s. v.
+
+Jeg kan kjende alle Toner,
+Det er dem, som Moder sang,
+Naar hun kjærligt sad og vugged
+Mig i Søvn saa mangen Gang.
+Tirrilli o. s. v.
+
+Det er dem, jeg hørte lyde,
+Naar jeg leged og var fro;
+Gjerne dandsed jeg om Busken,
+Men jeg styrrer vel dens Ro.
+Tirrilli o. s. v.
+
+Siig mig, kjender Du den Søster,
+Som Dig hilser paa sin Gang,
+Kjære Nattergal i Busken,
+Saa fortæl det i Din Sang.
+Tirrilli o. s. v.
+</poetry>
+</body>
+</text>
+
+<text id="gerson2019121404">
+<head>
+    <title>Til Fuglen</title>
+    <firstline>Lille Fugl, som flagrer</firstline>
+    <source pages="11-12"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Lille Fugl, som flagrer
+Fløitende afsted,
+Vil Du ikke tage
+Mig paa Flugten med.
+
+Over Bjerg og Dale
+Og den store By,
+Flyve med mig opad
+Mod den lette Sky.
+
+Flyve med mig opad
+Fra den travle Jord,
+Flyve til de Steder,
+Hvor vor Herre døer.
+
+Lille Fugl, o frygt ei,
+At jeg ikke kan
+Flyve med Dig opad
+Over Bjerg og Strand.
+
+Har jeg end ei Vinger,
+Gaaer det op til Gud,
+Tro mig, kjære Fugl, saa
+Voxe de nok ud.
+</poetry>
+</body>
+</text>
+
+<text id="gerson2019121405">
+<head>
+    <title>Trompetblæseren</title>
+    <firstline>Imorges gik jeg ad Skoven til</firstline>
+    <source pages="13"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Imorges gik jeg ad Skoven til;
+Der skulde I kun have seet -
+Ved Skovhuset sad der en lille Dreng
+Og blæste i Trompet.
+
+Hans Trøie var lappet, hans Vest forslidt,
+Han havde bare Been,
+Han saae ret saa bleg, saa lidende ud,
+At det kunde røre en Steen.
+
+Det kunde man see ved det første Blik,
+Han havde lidt megen Nød,
+Og otte Aar kun, den stakkels Dreng,
+Han blæste Trompet for Brød.
+</poetry>
+</body>
+</text>
+
+<text id="gerson2011090701">
+<head>
+    <title>Manden i Maanen</title>
+    <firstline>Der boer en Mand i Maanen</firstline>
+    <notes>
+        <note type="credits">Bidrag fra Jannick Olsen.</note>
+    </notes>
+    <source pages="14"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Der boer en Mand i Maanen,
+En underlig, vanskabt Een,
+Han har et forskrækkeligt Hoved
+Og han har slet ingen Been.
+
+Hans Mund er saa stor, at en Kæmpe
+Kan ligge derinde gjemt,
+Men tale, det kan han ikke,
+Og det maa dog være slemt.
+
+Han stirrer de Nætter lange
+Paa Stjernernes gyldne Skin,
+Og stundom saa synes det næsten
+Som Taarer fugted hans Kind.
+
+Der boer en Mand i Maanen,
+Han klæder den slet ikke godt,
+Og dog kan man ei lade være
+At længes mod ham saa smaat.
+</poetry>
+</body>
+</text>
+
+<text id="gerson2019121407">
+<head>
+    <title>Løvfald</title>
+    <firstline>Svunden er den friske Sommer</firstline>
+    <source pages="15"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Svunden er den friske Sommer,
+Skydækt er den milde Luft,
+Løvet falder, Vintren kommer,
+Knuser Blomsten og dens Duft.
+
+Tung om Hjertet Skoven sukker.
+Over hvert et Blad, som døer,
+Og den kolde Grav sig lukker
+Over det, som smilte før.
+
+Jeg er ung som disse Blade,
+Og min Sommertid er kort; -
+Maatte jeg, min Gud, ei lade
+Den unyttet svinde bort!
+</poetry>
+</body>
+</text>
+
+<text id="gerson1999031801">
+<head>
+    <title>Den største Mand</title>
+    <firstline>En lille Nisse reiste</firstline>
+    <source pages="16"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 En lille Nisse reiste
 Med Extrapost fra Land til Land,
 Hans Agt det var at hilse
@@ -32,7 +268,974 @@ Da gik han hen til Havet,
 Og stirred i det klare Vand; -
 Han smilte, thi nu havde
 Han seet den største Mand.
+</poetry>
 </body>
-</poem>
+</text>
+
+<text id="gerson2019121409">
+<head>
+    <title>Manden med Træbenet</title>
+    <firstline>Fuldmaanen skinner saa deiligt</firstline>
+    <source pages="17"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Fuldmaanen skinner saa deiligt,
+Og Søen blinker som Guld,
+Der sidder en Mand med et Træbeen,
+Han seer paa sin Hattepul.
+
+Han seer paa dens hullede Kanter,
+Paa Kjolens pjaltede Flig,
+Han tænker: Hvor jeg dog er fattig
+Og Gud uendelig riig.
+
+Han tænker: Hvor jeg dog er fattig! -
+Men Du, saameget er Dit,
+Du Rige, ei sandt, Du kunde
+Dog gjerne hjelpe ham lidt!
+</poetry>
+</body>
+</text>
+
+<text id="gerson2019121410">
+<head>
+    <title>Faderkjærlighed</title>
+    <firstline>See! see! der er Storken paa grønne Vang</firstline>
+    <source pages="18-19"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+,,See! see! der er Storken paa grønne Vang;
+,,Velkommen, Herr Stork, tilbage!
+,,Kom nærmere kun og fortæl os engang:
+,,Hvor har Du gjort af Din Mage?''
+
+,,Min Mage, Herr Spørger, hun kommer nok,
+,,Og det førend Døgnet ender,
+,,Hun skulde først sige Farvel til en Flok
+,,Af Børn og andre Frænder.''
+
+,,Og er Du da selv reist den vide Vei
+,,Hen over Bjerg og Dale,
+,,Og har, før Du spredte Din Vinge, ei
+,,Først faa't Dine Børn i Tale?''
+
+,,At tale, min Ven, er ei Mandens Sag,
+,,Han elsker sit Barn i sin Tanke;
+,,Men føl paa mit Bryst, ikke sandt, dets Slag
+,,Fortælle, at det kan banke.''
+
+Saa talede Storken og knejsede stolt,
+Og fløi over Dal og Høie;
+Men Barnet studsed', og sagde koldt:
+,,Nei, hør kun hvor den kan støie!''
+</poetry>
+</body>
+</text>
+
+<text id="gerson2019121411">
+<head>
+    <title>Til vor Herre om Vinteren</title>
+    <firstline>Blomsten lukker sit Øie</firstline>
+    <source pages="20"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Blomsten lukker sit Øie,
+Sænkes taust i sin Grav; -
+Herre Gud i det Høie,
+Skjærm det Du holder af!
+
+Herre, Haanden Du holde
+Over Store og Smaae,
+Da vil den lange, kolde
+Vinter nok hurtigt gaae.
+
+Da skal Vinterens Møie
+Vel vorde stakket nok,
+Herre Gud i det Høie,
+Skjærm Din fattige Flok!
+</poetry>
+</body>
+</text>
+
+<text id="gerson2019121412">
+<head>
+    <title>Hinden</title>
+    <firstline>Moder, see dog bag Busken</firstline>
+    <source pages="21"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+,,Moder, see dog bag Busken
+,,Løber den lette Hind,
+,,See dog, hvordan den flyver
+,,Snart ud og snart ind.''
+
+,,See dog, hvorledes den leger
+,,Glad med de Roser smaae,
+,,Hvor den hopper og springer
+,,Snart saa og snart saa.''
+
+,,Moder, see dog bag Busken
+,,Løber den lette Hind;'' -
+,,Barn, den saae jeg alt længe,
+,,Det er Dit muntre Sind!''
+</poetry>
+</body>
+</text>
+
+<text id="gerson2019121413">
+<head>
+    <title>Drømmen</title>
+    <firstline>Paa Grønsværet sad jeg</firstline>
+    <source pages="22-23"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Paa Grønsværet sad jeg
+Og slumrede ind,
+De viftende Blade,
+De kjølte min Kind.
+
+Da saae jeg i Drømme,
+Vidunderligt nok,
+De dejligste Engle,
+En mageløs Flok.
+
+De sang, saa det klang
+Det dybeste Bryst,
+De spilled paa Harpe,
+Saa det var en Lyst.
+
+De dandsed omkring mig
+Og sagde: ''Kom med,
+,,Deroppe, der har vi
+,,Beredet Dig Sted.
+
+,,Deroppe der vorder
+,,Du Engel som vi,
+,,For hver Gang vi synge,
+,,Saa stemmer Du i.''
+
+Jeg vaagned af Drømmen
+Men nu er det Nat,
+Og jeg er saa syg, ak,
+Saa dødssyg, saa mat!
+</poetry>
+</body>
+</text>
+
+<text id="gerson2019121414">
+<head>
+    <title>Solnedgang</title>
+    <firstline>Solen gaaer saa deiligt ned</firstline>
+    <source pages="24"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Solen gaaer saa deiligt ned
+Bag den brune Hede,
+Storken flagrer langveis fra
+Hjemad til sin Rede;
+I den lille Lyngtops Skjul
+Synger der en een som Fugl,
+Synger nok saa deiligt
+
+Hjemme bag det høie Krat
+Staaer min Faders Hytte,
+Han, som boer i Himmelriig,
+Naadigt den beskytte!
+Maatte den i Dag og Aar
+Staae som den iaften staaer,
+Huse min Fader og Moder!
+</poetry>
+</body>
+</text>
+
+<text id="gerson2019121415">
+<head>
+    <title>Ønsket</title>
+    <firstline>Over Mark og Enge</firstline>
+    <source pages="25-26"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Over Mark og Enge
+Nattens Tæppe laae,
+Slumrende mit Øie
+Smukke Syner saae.
+
+Jordens Smaae og Store
+Vexlede og gik,
+Alle vare lige
+Store for mit Blik.
+
+Søde Frugter stilled
+Skabningens Begjær; -
+Himlens Engle fulgte
+Kjærligt med Enhver. -
+
+Natten gik tilende
+Trommen var forbi,
+Synerne dog fulgte
+Mig paa Vei og Sti.
+
+Følge Himlens Engle
+Virkeligt min Fod,
+Maatte de da lære
+Mig at vorde god!
+</poetry>
+</body>
+</text>
+
+<text id="gerson2019121416">
+<head>
+    <title>Alfredlille</title>
+    <firstline>Alfredlille sad i Skoven</firstline>
+    <source pages="27-28"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Alfredlille sad i Skoven
+Med sit Hoved mod et Træ,
+Alle Fugle sang foroven
+I det skyggefuldt Læ:
+,,Alfredlille, Du har Kummer,
+,,Vi vil dysse Dig i Slummer
+,,Alfredlille!
+
+,,Alfredlille, Du har mistet
+,,Den, som bar Dig ved sit Bryst,
+,,Men mod Smerten, Du har fristet
+,,Har vi Taarer, har vi Trøst;
+,,Kom og bred kun Dine Vinger,
+,,Til det Fjerne vi Dig bringer,
+,,Alfredlille!
+
+Alfredlille sad og drømte
+Som han aldrig drømte før,
+Og de gyldne Lokker strømte
+Over Øiet som et Slør;
+Og hans Øienlaag blev svære:
+,,Skal vi flyve nu, Du kjære
+,,Alfredlille?''
+
+Alfredlille lukte Øiet -
+Alle Fugle sang paa Ny,
+Alfredlille fløi fornøiet
+Til sin Moder over Sky;
+Men i Busk og Træ, fra Løvet,
+Lød det inderligt bedrøvet.
+,,Alfredlille!''
+</poetry>
+</body>
+</text>
+
+<text id="gerson2019121417">
+<head>
+    <title>Det eensomme Træ</title>
+    <firstline>Seer Du hist det lille Træ</firstline>
+    <source pages="29"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Seer Du hist det lille Træ
+Med de visne Grene,
+Paa den hele, øde Mark
+Staaer det der alene.
+
+Hør, hvordan den hule Storm
+Bruser hen i Løvet,
+See, hvordan det bøier sig
+Hjerteligt bedrøvet.
+
+Ak, det er som Fattigbarn, -
+Ly og Læ det fattes,
+Alle Vinde storme om
+Stedet, hvor det sattes.
+</poetry>
+</body>
+</text>
+
+<text id="gerson2019121418">
+<head>
+    <title>Sommeraften</title>
+    <firstline>Solen gaaer saa deiligt ned</firstline>
+    <source pages="30"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Solen gaaer saa deiligt ned,
+Mark og Enge dufte,
+Og fra Havets grønne Bred
+Svale Vinde lufte
+
+Over Dalens Blomsterkrands
+Lægger sig en Taage,
+Ret som over Øiets Glands
+Trætte Øienlaage.
+
+Hist og her en enkelt Fugl
+Slaaer endnu en Trille,
+Flyver derpaa fra sit Skjul
+Til sit Hjem, det stille.
+
+Alnaturen gaaer til Ro,
+Eet - ei følger efter;
+Det er Hjertets fromme Tro,
+Som faaer friske Kræfter.
+
+Som udfolder Vingen frit,
+Løst fra Dagens Færden,
+Som gjør Haabet kjækt til sit
+Om en bedre Verden.
+</poetry>
+</body>
+</text>
+
+<text id="gerson2019121419">
+<head>
+    <title>Moders Fødselsdag</title>
+    <firstline>Min Søster og jeg vi flette en Krands</firstline>
+    <source pages="32-33"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Min Søster og jeg vi flette en Krands
+Af Rosenblade,
+Den bringe vi Moder, det gjør os ret
+Saa hjerteglade.
+
+Hun pleier os kjærligt, hun bortrydder hvad
+Os kunde trykke,
+Hun vaager Natten med Dagen for
+Vor Liv og Lykke.
+
+Saa god! - Hun har til at sige Alt
+En egen Maade,
+Saa mild, om hun vil befale os
+Hvad eller raade.
+
+Imorgen bliver hun tredive Aar;
+Vor Herre give:
+Hun altid maatte som nu med os
+Fornøiet blive!
+</poetry>
+</body>
+</text>
+
+<text id="gerson2019121420">
+<head>
+    <title>Aftenbøn</title>
+    <firstline>Lyset slukkes, Alt er stille</firstline>
+    <source pages="34"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Lyset slukkes, Alt er stille,
+Hør i Naade, Gud, den Lille!
+
+Tak for Dagen, Tak for Livet,
+Tak for Alt, hvad Du har givet!
+
+Tak paa Faders, Moders Vegne,
+Ogsaa Tak paa mine egne!
+
+Vogt os kjærligt fra det Høie,
+Naar vi nu har lukt vort Øie!
+
+Giv os Styrke mens vi blunde,
+At mod Dag vi vaagne sunde!
+
+Gjør saa vore Sorger færre,
+Tilgiv os! God Nat, vor Herre!
+</poetry>
+</body>
+</text>
+
+<text id="gerson2019121421">
+<head>
+    <title>Morgenbøn</title>
+    <firstline>Natten er svundet, Mørket er endt</firstline>
+    <source pages="35"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Natten er svundet, Mørket er endt,
+Herre min Gud, Du har Lyset tændt.
+
+Alt hvad der lever og aander paa Jord,
+Vaagner og læser sit Fadervor.
+
+Haster til Arbeidet, tænkende paa,
+Dagen er kort og kan lidet forslaae.
+
+Led mig da, Fader, paa Vei og paa Sti,
+Staae til mit Arbeid mig troligen bi!
+
+Vogt den Umyndiges vaklende Fod,
+Lær mig at vorde ret flittig og god!
+
+Og bær saa over, om Alt er ei ret.
+Kjære Vorherre, gjør Dagen let!
+</poetry>
+</body>
+</text>
+
+<text id="gerson2019121422">
+<head>
+    <title>Rosentræet</title>
+    <firstline>Min Søster har et Rosentræ</firstline>
+    <source pages="36-37"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Min Søster har et Rosentræ
+Med smukke Roser paa,
+Hvor ofte har jeg ønsket at
+Jeg kunde Træet faae.
+
+Det holder sig bestandigt grønt,
+Det skaffer os saa tidt,
+Naar Vinduet er lukket op
+Smaafuglenes Visit.
+
+Det dufter saa velsignet som
+Det bedste Blomsterbed,
+Det hvisker tidt saa mange Ting,
+Som ingen Andre veed.
+
+Igaar, det blæste høstlig-koldt,
+Og Alt var mørkt og bart,
+Da tænkte jeg igjen: ak, var
+Det Dit, hvor det var rart.
+
+Men saa faldt det mig ind paa Ny,
+Det hjalp dog ikkun lidt.
+Saa sad min Søster jo som jeg
+Og ønskte det som sit!
+</poetry>
+</body>
+</text>
+
+<text id="gerson2019121423">
+<head>
+    <title>Nytaarsdagen</title>
+    <firstline>Hver Nytaarsdag, naar Solen døer i de sidste Flammer</firstline>
+    <source pages="38-39"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Hver Nytaarsdag, naar Solen døer i de sidste Flammer,
+Besøger os en Engel og dvæler i vort Kammer.
+
+Og sætter sig fortroligt og kjærligt ved vor Side,
+Og hører til vor Glæde, og spørger hvad vi lide.
+
+Og beder os fortælle hvad Godt vi har udrettet,
+Hvor redebon, hvor rask, hvor stadigt, hvor utrættet.
+
+Og regner han da sammen en Mængde af det Gode,
+Saa smiler han fornøiet og er saa veltilmode.
+
+Men er der intet Godt, han til Regningen kan føie,
+Saa gaaer han bort bedrøvet, med Taarer i sit Øie.
+</poetry>
+</body>
+</text>
+
+<text id="gerson2019121424">
+<head>
+    <title>Efteraar</title>
+    <firstline>Løvet dækker Græsset til</firstline>
+    <source pages="40-41"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Løvet dækker Græsset til,
+Nøgen Skoven staaer,
+Nattergalens Klokkespil
+Endes for iaar;
+Søen, der saa muntert flød,
+Under Stormens Klang sin Død
+Travl imøde gaaer.
+
+Der er Sorg i Mark og Lund,
+Bondens Børn, de smaae,
+De, som henad Aftenstund
+Der hverandre saae,
+Ingen af dem kommer meer;
+Bag den trange Væg af Leer
+De forknytte staae.
+
+Nu er det den Aarstid da,
+Røvet hver en Lyst,
+Fattigfolk ei veed hvorfra
+De skal hente Trøst,
+Da den hele Hær af Savn
+Hugger som en grusom Ravn
+Sønder deres Bryst.
+
+Ja, nu er det Efteraar!
+Herren mage det,
+Saa den Tid, som forestaaer,
+Dem maa vorde let!
+Da skal, naar engang paa Ny
+Fuglen stiger glad i Sky,
+Vi ham takke ret!
+</poetry>
+</body>
+</text>
+
+<text id="gerson2019121425">
+<head>
+    <title>Sælgekonen</title>
+    <firstline>Kan Du see den gamle Mutter</firstline>
+    <source pages="42-43"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Kan Du see den gamle Mutter,
+Hun med Klædet om sin Kind,
+Som ved Generalens Hjørne
+Sælger Jordbær paa en Pind.
+
+Ak, hvo skulde see paa hende,
+Saadan som hun sidder der,
+At hun, nogle Aar tilbage,
+Kneiset har i Fløiel og Fjer
+
+Ja, hvo skulde see paa hende,
+At hun var en adlig Frue,
+Der i hiint Palais paa Torvet
+Har beboet den smukke Stue.
+
+Hendes Mand var svag og daarlig,
+Sygdom endte snart hans Dage,
+Børnene, de riigt opdragne,
+Ødte hvad han lod tilbage.
+
+Længe sad den stakkels Enke,
+Sukkede i trange Kaar,
+Fattigdom og andre Plager
+Grebe om sig Aar for Aar.
+
+Snart var der kun Eet tilbage! -
+Det er Enken, Du har seet.
+Børnene - ih, see, der kjøre
+De i deres Stadskareth.
+</poetry>
+</body>
+</text>
+
+<text id="gerson2019121426">
+<head>
+    <title>Skibet i Storm</title>
+    <firstline>Regnen synker, Stormen fløiter</firstline>
+    <source pages="44-45"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Regnen synker, Stormen fløiter,
+Strandens Maager vildsomt flye;
+Havet koger, Bølger sprøiter
+Skummet mod den høie Sky.
+
+Uden Seil og uden Master,
+Om dets Boug de stolte Ræer,
+Tumles Skibet hen og haster
+Villieløst mod fjerne Skjær.
+
+Tæt ved Stavnens Bryst det kolde
+Staaer dets Fører uforsagt,
+Alle hans Matroser holde
+Uafbrudt, aarvaagent Vagt.
+
+Stakkels Folk, de vil desværrre
+Neppe naae det kjære Hjem! -
+Lad os bede til vor Herre,
+At han vil bevare dem.
+</poetry>
+</body>
+</text>
+
+<text id="gerson2019121427">
+<head>
+    <title>Pindse</title>
+    <firstline>Paa Mark og Enge Solen strøede</firstline>
+    <source pages="46"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Paa Mark og Enge Solen strøede
+I friske Stænk sin Morgenrøde.
+
+Den lette Dug som Perler laae
+Paa Vaarens første Blomst og Straa.
+
+Fra Lundens Busk og Træer klang
+Millioner Fugles Morgensang.
+
+Et lille Lam fra Stien kom,
+Og saae sig overrasket om.
+
+,,Hvi er dog Alt saa smukt idag?
+,,Hvi lyder dobbelt Lærkens Slag?
+
+,,Hvi mon de første Blomster glindse? -
+,,O, lød det trindt, det er jo Pindse.''
+</poetry>
+</body>
+</text>
+
+<text id="gerson2019121428">
+<head>
+    <title>Juul</title>
+    <firstline>Velkommen Guds Engle, med Blomster i Haar</firstline>
+    <source pages="47-48"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+,,Velkommen Guds Engle, med Blomster i Haar,
+,,I komme jo pynted' som Engen i Vaar.
+
+,,O siig, hvo har viist Eder Veien herhid
+,,Ad ujevne Stier ved Nattetid.
+
+,,Hvi komme I hid til den Fattiges Dør,
+,,Som Slud og som Storme besøgte kun før?
+
+,,Hvi komme I hid til den fattige Vraa,
+,,Hvor der ei er Stol, I kan sidde paa?''
+
+,,Vi komme i Guds, den Almægtiges Navn,
+,,Vi komme til hver, som har Sorg og Savn.
+
+,,Vi komme saa langveis fra fjerne Kyst,
+,,Hvor Frelseren fødtes til Menneskets Trøst.
+
+,,Vi komme til dem, Guds Søn har kjær,
+,,Og bringe en glædelig Juul til Enhver!''
+</poetry>
+</body>
+</text>
+
+<text id="gerson2019121429">
+<head>
+    <title>Mit Fædreland</title>
+    <firstline>Jeg holder af mit Fædreland</firstline>
+    <source pages="49-50"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Jeg holder af mit Fædreland,
+Det kan ei være andet,
+Dets Skov og Søe, dets Dal og Strand,
+De fængsle mig til Landet.
+
+Og i Historien læser jeg
+Saameget til dets Ære,
+Saameget, der kan glæde mig,
+Hvoraf jeg stolt kan være.
+
+Og saa - saa er, det føler jeg,
+Der Noget i det Hele,
+Der uvilkaarligt nærmer mig
+Hver enkelt af dets Dele.
+
+Og er endogsaa Alting smaat,
+Hvad Kortet mig kan lære,
+Man rummes jo dog der saa godt
+Med alle sine Kjære.
+
+Thi er mit lille Fædreland
+I Hjertet kjært mig vordet,
+Og naar jeg voxer op til Mand,
+Saa vil jeg kæmpe for det!
+</poetry>
+</body>
+</text>
+
+<text id="gerson2019121430">
+<head>
+    <title>Trolden</title>
+    <firstline>Der var engang en hæslig Trold</firstline>
+    <source pages="51-52"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Der var engang en hæslig Trold,
+Saa slem som han var lang,
+Han taalte ingen Munterhed
+Og ingen Spøg og Sang.
+
+Og hvor han paa sin Vandring fandt
+Et Huus, hvor der var Fred,
+Der pønsede han hurtigt paa
+At bringe det Fortræd.
+
+Og det var Gammel, det var Ung,
+Enhver, som han fik fat,
+Den piinte han fra Morgenstund
+Ind til den mørke Nat
+
+Saa kom han ogsaa seent engang,
+Som Solen just gik ned,
+Hen til et lille, landligt Huus
+Ved Søens stille Bred.
+
+Og som han treen i Stuen ind
+Med al sin Gift, sit Had,
+Han saae en lille femaars Dreng,
+Der laae paa Knæ og bad.
+
+Der folded sine Hænder smaae
+Og bad sit Fadervor,
+Som Moderen med Smiil om Mund
+Ham kjærligt læste for.
+
+Og Trolden saae og hørte til,
+Og glemte reent sin Harm,
+Og følte der for første Gang
+Hvordan hans Kind blev varm
+
+Og sank, han vidste knap det selv,
+Paa Knæ ved Hyttens Dør; -
+Fra den Tid af er han ei meer
+En Trold som han var før!
+</poetry>
+</body>
+</text>
+
+<text id="gerson2019121431">
+<head>
+    <title>De to Blade</title>
+    <firstline>Forleden Morgen gik min Gang jeg i det Grønne</firstline>
+    <source pages="54"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Forleden Morgen gik min Gang jeg i det Grønne,
+Og dvælede der taus ved meget af det Skjønne.
+
+Da faldt mit Øie paa to sammenslyngte Blade,
+Der eensomt paa en Qvist, fjernt fra de Andre sade.
+
+Det var som hvert et Pust, der ruskede i Løvet,
+Indjog dem heftig Skræk og gjorde dem bedrøvet.
+
+Saa frygtede de for, at næste Vindpust vilde,
+Hvad nu forenet var, grumt fra hinanden skille.
+
+Det var et yndigt Lyn, jeg veed kun eet dets Mage:
+Naar Sødskende staae Arm i Arm i Sorgens Dage.
+</poetry>
+</body>
+</text>
+
+<text id="gerson2019121432">
+<head>
+    <title>Solformørkelsen</title>
+    <firstline>Solen er formørket</firstline>
+    <source pages="55"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Solen er formørket,
+Dagen er som Nat
+Jeg gad vidst hvordan med
+Blomsten det er fat.
+
+Stakkels Blomst i Bedet,
+Hvor den savne maa
+Straalerne, der skinned
+Varmt paa Blad og Straa.
+
+Moder er bedrøvet,
+Hun er vred paa mig; -
+Jeg gad vidst, om Blomsten
+Har det ei som jeg?
+</poetry>
+</body>
+</text>
+
+<text id="gerson2019121433">
+<head>
+    <title>Skytten og Ørnen</title>
+    <firstline>Over Skovens visne Løv</firstline>
+    <source pages="56-57"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Over Skovens visne Løv
+Ligger Sneens hvide Støv.
+
+Bag det halv nedfaldne Skuur
+Staaer en Skytte taus paa Luur.
+
+Rimen fra den svundne Nat
+Ligger paa hans Vams og Hat.
+
+Over Skovens aabne Plet
+Flyver Ørnen stolt og let.
+
+Kredser derpaa sagte, stum
+Om det skovbekrandste Rum.
+
+Skytten smiler, i en Fart
+Ligger Bøssen ved hans Bart.
+
+,,Holdt, Herr Jæger, tæm Dit Mod,
+,,Sænk Din Bøsse, spar mit Blod.
+
+,,I det Træ, som støtter Dig
+,,Har jeg Børn, som savne mig.
+
+,,Har jeg Børn, som lide Nød,
+,,Hvis Dit Skud nu bli'er min Død.''
+
+Hurtigt skifter Skytten Sind,
+Bøssen synker fra hans Kind.
+
+,,Er det Dine, disse Børn,
+,,Saa vær fri, Du raske Ørn.
+
+,,Skille Barn og Moder ad.
+,,Det kan aldrig gjøre glad.
+
+,,Flyv til Reden kjækt og frit
+,,Dette Træ skal være Dit.''
+</poetry>
+</body>
+</text>
+
+<text id="gerson2019121434">
+<head>
+    <title>Lygtemanden</title>
+    <firstline>Søster, tag dig dog iagt</firstline>
+    <source pages="59-60"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+,,Søster, tag dig dog iagt,
+,,Det er vistnok Lygtemanden,
+,,Ham, der staaer og holder Vagt
+,,Nede hist ved Moseranden.
+
+,,See kun, hvor det glimter der
+,,Af og til imellem Krybet;
+,,Søster, kommer Du for nær,
+,,Trækker han Dig ud i Dybet.''
+
+,,Troer Du, lille Søster, o,
+,,Jeg er ingenlunde bange,
+,,Thi jeg har den faste Tro,
+,,At han ikke mig skal fange.
+
+,,Og desuden, Søster, kan
+,,Du vel Faders Ord erindre
+,,Der er ingen Lygtemand
+,,Uden i vort eget Indre.''
+</poetry>
+</body>
+</text>
+
+<text id="gerson2019121435">
+<head>
+    <title>Englen</title>
+    <firstline>Man siger, at Englen vaager</firstline>
+    <source pages="61-62"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Man siger, at Englen vaager
+Ved Leiet, naar vi sover,
+Og mildner alle Sorger
+Og dækker Blomster over.
+
+Forleden Morgen aabned
+Jeg endnu søvnig Øiet,
+Og løftede mit Hoved
+Lidt hen ad Siden bøiet.
+
+Da saae jeg foran Sengen,
+Med smukke, hvide Vinger
+En nydelig Guds Engel,
+Der kyssed paa sin Finger.
+
+Jeg kyssede til Gjengjeld -
+Da vakte mig min Moder,
+Og da, da saae jeg tydeligt
+Det var min egen Broder.
+
+Det var min egen Broder,
+Han, som igaar blev baaren
+Bort af den sorte Bærer
+Og lagt paa Kirkegaar'en.
+</poetry>
+</body>
+</text>
+
+<text id="gerson2019121436">
+<head>
+    <title>Modersmaalet</title>
+    <firstline>Dit Modersmaal, mit Barn, er smukt</firstline>
+    <source pages="63-64"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+,,Dit Modersmaal, mit Barn, er smukt,
+,,Saa smukt som intet andet,
+,,Det er en deilig, moden Frugt,
+,,Fremskudt i Fædrelandet.
+
+,,En Frugt af al den Blomsterflor,
+,,Som Barnehaanden sanker,
+,,Det er de første klare Ord
+,,For Barndomstidens Tanker.''
+
+Saa sagde mig min Lærer sidst,
+Da Sprog han sammenligned;
+Og han har Ret, thi det er vist
+Det klinger saa velsignet.
+
+Thi vil jeg lægge Kræfter til,
+For rigtigt det at kjende;
+Og naar jeg bliver stor, saa vil
+Jeg kæmpe med dets Fjende.
+</poetry>
+</body>
+</text>
+
 </workbody>
 </kalliopework>

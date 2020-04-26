@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="dickinson" country="us" lang="en" type="poet">
+  <name>
+    <firstname>Emily</firstname>
+    <lastname>Dickinson</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1830-12-10</date>
+      <place>Amherst, Mass., USA</place>
+    </born>
+    <dead>
+      <date>1886-05-15</date>
+      <place>Amherst, Mass., USA</place>
+    </dead>
+  </period>
+  <works>digte</works>
+</person>

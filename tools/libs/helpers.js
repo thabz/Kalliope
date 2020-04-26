@@ -1,12 +1,11 @@
 const fs = require('fs');
 const entities = require('entities');
-const libxml = require('libxmljs');
+const { DOMParser } = require('xmldom');
 const bible = require('./bible-abbr.js');
-const async = require('async');
 const path = require('path');
-const sharp = require('sharp');
-const CommonData = require('../../pages/helpers/commondata.js');
-const deasync = require('deasync');
+const plimit = require('p-limit');
+const jimp = require('jimp');
+const CommonData = require('../../common/commondata.js');
 
 const safeMkdir = dirname => {
   try {
@@ -59,39 +58,6 @@ const writeText = (filename, text) => {
   fs.writeFileSync(filename, text);
 };
 
-const loadXMLDoc = filename => {
-  const data = loadFile(filename);
-  if (data == null) {
-    return null;
-  }
-  try {
-    return libxml.parseXmlString(data);
-  } catch (err) {
-    console.log(`Problem with ${filename}`);
-    throw err;
-  }
-};
-
-const safeGetText = (element, child) => {
-  if (element) {
-    const childElement = element.get(child);
-    if (childElement) {
-      return childElement.text();
-    }
-  }
-  return null;
-};
-
-const safeGetAttr = (element, attrName) => {
-  if (element) {
-    const attrElement = element.attr(attrName);
-    if (attrElement) {
-      return attrElement.value();
-    }
-  }
-  return null;
-};
-
 const replaceDashes = html => {
   if (html == null) {
     return null;
@@ -113,19 +79,16 @@ const replaceDashes = html => {
       .replace(/ -$/gm, ' —')
       .replace(/ -([\!;\?\.»«,:\n])/g, / —$1/)
       .replace(/ \. \. \./gm, '&nbsp;.&nbsp;.&nbsp;.') // Undgå ombrydning af ". . ."
-      .replace(/ —/g,'&nbsp;—') // Undgå tankestreger som ombrydes til sin egen linje
+      .replace(/ —/g, '&nbsp;—') // Undgå tankestreger som ombrydes til sin egen linje
   );
 };
 
-const htmlToXml = (
-  html,
-  collected,
-  isPoetry = false,
-  isBible = false,
-  isFolkevise = false
-) => {
+const htmlToXml = (html, collected, isPoetry) => {
+  if (html == null) {
+    return null;
+  }
   const regexp = /<xref.*?(digt|poem|keyword|work|bibel|dict)=['"]([^'"]*)['"][^>]*>/;
-  if (isPoetry && !isBible && !isFolkevise) {
+  if (isPoetry) {
     // Marker strofe numre
     html = html
       .replace(/^(\d+\.?)\s*$/gm, '<versenum>$1</versenum>')
@@ -218,53 +181,9 @@ const htmlToXml = (
     });
   }
 
-  if (isBible) {
-    // Saml linjer som hører til samme vers.
-    const collectedLines = [];
-    let curLine = '';
-    decoded.split(/\n/).forEach(line => {
-      if (line.match(/^\s*$/)) {
-        if (curLine !== '') {
-          collectedLines.push(curLine);
-          curLine = '';
-        }
-        collectedLines.push(line);
-      } else if (line.match(/^\s*\d+,?\d*\.\s*/)) {
-        if (curLine !== '') {
-          collectedLines.push(curLine);
-        }
-        curLine = line;
-      } else {
-        curLine += line.replace(/\s+/, ' ');
-      }
-    });
-    collectedLines.push(curLine);
-    decoded = collectedLines.join('\n');
-  } else if (isFolkevise) {
-    // Flyt strofe-nummer fra egen linje ind i starten af strofens første linje.
-    let foundNum = null;
-    const collectedLines = [];
-    decoded.split(/\n/).forEach(line => {
-      const match = line.match(/^\s*(\d+)\.?\s*/);
-      if (match) {
-        // Linjen er et strofe-nummer, så gem det.
-        foundNum = match[1];
-        return;
-      } else {
-        if (foundNum != null) {
-          collectedLines.push(`<num>${foundNum}.</num>${line}`);
-        } else {
-          collectedLines.push(line);
-        }
-        foundNum = null;
-      }
-    });
-    decoded = collectedLines.join('\n');
-  }
-
-  // Hvis teksten har sine egne linjenummeringer (f.eks. til Aarestrups strofenumre eller margin-tekster)
-  // skal automatisk linjenummerering skippes.
-  const hasOwnNums =
+  // Hvis teksten har sine egne linjenummeringer (f.eks. til Aarestrups strofenumre,
+  // folkeviser, biblen eller margin-tekster) skal automatisk linjenummerering skippes.
+  const hasOwnDisplayNums =
     decoded.indexOf('<num>') > -1 || decoded.indexOf('<margin>') > -1;
 
   let lineNum = 1;
@@ -274,43 +193,22 @@ const htmlToXml = (
       lineNum = 1;
       l = l.replace('<resetnum/>', '');
     }
-    const hasNonum =
+    const skipNumForLine =
       l.indexOf('<versenum>') > -1 ||
       l.indexOf('<nonum>') > -1 ||
       l.indexOf('<asterism') > -1 ||
       l.indexOf('<wrap>') > -1 ||
       l.match(/^\s*$/) ||
       l.match(/^\s*<hr[^>]*>\s*$/);
-    if (!hasNonum) {
-      if (isPoetry && !isFolkevise) {
-        options.num = lineNum;
-      }
-      if (lineNum % 5 == 0 && !hasOwnNums) {
+    if (!skipNumForLine) {
+      options.num = lineNum;
+      if (isPoetry && lineNum % 5 == 0 && !hasOwnDisplayNums) {
         options.displayNum = lineNum;
       }
       lineNum += 1;
-    } else {
-      l = l.replace(/<nonum>/g, '').replace(/<\/nonum>/g, '');
     }
+    l = l.replace(/<nonum>/g, '').replace(/<\/nonum>/g, '');
 
-    if (isBible) {
-      const match = l.match(/^\s*(\d+,?\d*)\.\s*/);
-      if (match) {
-        options.num = match[1];
-        options.displayNum = match[1];
-        options.bible = true;
-        l = l.replace(/^\s*\d+,?\d*\.\s*/, '');
-      }
-    }
-    // if (isFolkevise) {
-    //   const match = l.match(/^\s*(\d+)\.?\s*/);
-    //   if (match) {
-    //     options.displayNum = match[1] + '.';
-    //     options.num = match[1];
-    //     options.folkevise = true;
-    //     l = l.replace(/^\s*\d+\.?\s*/, '');
-    //   }
-    // }
     if (l.indexOf('<num>') > -1) {
       options.displayNum = l.match(/<num>(.*)<\/num>/)[1];
       l = l.replace(/<num>(.*)<\/num>/, '');
@@ -344,42 +242,43 @@ const htmlToXml = (
       return [l];
     }
   });
+
   return lines;
 };
 
-const imageSizeAsync = (filename, callback) => {
-  if (!fileExists(filename)) {
-    const error = `image size failed for file: ${filename}`;
-    throw error;
-  }
-  sharp(filename)
-    .metadata()
-    .then(metadata => {
-      callback(null, { width: metadata.width, height: metadata.height });
-    });
-};
-
-const imageSizeSync = deasync(imageSizeAsync);
-
-let resizeImageQueue = async.queue((task, callback) => {
-  sharp(task.inputfile)
-    .resize(task.maxWidth, 10000)
-    .max()
-    .withoutEnlargement()
-    .toFile(task.outputfile, function(err) {
-      if (err != null) {
+const resizeImage = async (inputfile, outputfile, maxWidth) => {
+  return new Promise((resolve, reject) => {
+    const task = { inputfile, outputfile, maxWidth };
+    jimp
+      .read(task.inputfile)
+      .then(image => {
+        if (image.bitmap.width < maxWidth) {
+          image.writeAsync(task.outputfile).then(() => {
+            console.log(outputfile);
+            resolve(outputfile);
+          });
+        } else {
+          image
+            .resize(task.maxWidth, jimp.AUTO)
+            .writeAsync(task.outputfile)
+            .then(() => {
+              console.log(outputfile);
+              resolve(outputfile);
+            });
+        }
+      })
+      .catch(err => {
         console.log(err);
-      }
-      console.log(task.outputfile);
-      callback();
-    });
-}, 2);
-
-const resizeImage = (inputfile, outputfile, maxWidth) => {
-  resizeImageQueue.push({ inputfile, outputfile, maxWidth });
+        console.log(task.outputfile);
+        reject(err);
+      });
+  });
 };
 
-const buildThumbnails = (topFolder, isFileModified) => {
+const limit = plimit(5);
+
+const buildThumbnails = async (topFolder, isFileModifiedMethod) => {
+  const tasks = [];
   const pipeJoinedExts = CommonData.availableImageFormats.join('|');
   const skipRegExps = new RegExp(`-w\\d+\\.(${pipeJoinedExts})$`);
 
@@ -392,6 +291,9 @@ const buildThumbnails = (topFolder, isFileModified) => {
       return;
     }
     fs.readdirSync(dirname).forEach(filename => {
+      if (filename === 't') {
+        return;
+      }
       const fullFilename = path.join(dirname, filename);
       const stats = fs.statSync(fullFilename);
       if (stats.isDirectory()) {
@@ -401,17 +303,24 @@ const buildThumbnails = (topFolder, isFileModified) => {
         filename.endsWith('.jpg') &&
         !skipRegExps.test(filename)
       ) {
+        if (
+          isFileModifiedMethod != null &&
+          !isFileModifiedMethod(fullFilename)
+        ) {
+          return;
+        }
         CommonData.availableImageFormats.forEach((ext, i) => {
           CommonData.availableImageWidths.forEach(width => {
             const outputfile = fullFilename
               .replace(/\.jpg$/, `-w${width}.${ext}`)
               .replace(/\/([^\/]+)$/, '/t/$1');
             safeMkdir(outputfile.replace(/\/[^\/]+?$/, ''));
-            if (
-              (isFileModified != null && isFileModified(fullFilename)) ||
-              !fileExists(outputfile)
-            ) {
-              resizeImage(fullFilename, outputfile, width);
+            if (!fileExists(outputfile)) {
+              tasks.push(
+                limit(() => {
+                  return resizeImage(fullFilename, outputfile, width);
+                })
+              );
             }
           });
         });
@@ -420,6 +329,8 @@ const buildThumbnails = (topFolder, isFileModified) => {
   };
 
   handleDirRecursive(topFolder);
+
+  await Promise.all(tasks);
 };
 
 module.exports = {
@@ -431,12 +342,8 @@ module.exports = {
   loadFile,
   writeJSON,
   writeText,
-  loadXMLDoc,
   htmlToXml,
-  safeGetText,
-  safeGetAttr,
   replaceDashes,
-  imageSizeSync,
   buildThumbnails,
   resizeImage,
 };

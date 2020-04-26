@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="macpherson" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>James</firstname>
+    <lastname>MacPherson</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1736-10-27</date>
+      <place>Ruthven, Inverness, Skotland</place>
+    </born>
+    <dead>
+      <date>1796-02-17</date>
+      <place>Belville, Inverness, Skotland</place>
+    </dead>
+  </period>
+  <works>1758,1760,1761,1763,1765</works>
+</person>

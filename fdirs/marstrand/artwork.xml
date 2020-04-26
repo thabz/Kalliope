@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pictures>
   <picture id="don-quixote" museum="nivaagaard" objid="wilhelm-marstrand-6">
-      <i>Don Quixote</i>, u.å., olie på lærred, 47,5×34 cm. Nivaagaards Malerisamling.
+      <i>Don Quixote</i>, u.å., olie på lærred, 47,5×34 cm.
   </picture>
   <picture id="don-quixote-og-sancho-panza" museum="nivaagaard" objid="wilhelm-marstrand-8">
-      <i>Don Quixote og Sancho Panza ved en skillevej</i>, efter 1847, olie på lærred, 85×125 cm. Nivaagaards Malerisamling.
+      <i>Don Quixote og Sancho Panza ved en skillevej</i>, efter 1847, olie på lærred, 85×125 cm.
   </picture>
-  <picture id="thiele" subject="thiele">
-    <i>Portræt af Just Mathias Thiele</i>, ukendt år, olie på lærred, 87,3×70,5 cm. Thorvaldsens Museum. <!-- Inv. nr. B421 -->
+  <picture id="thiele" subject="thiele" museum="thorvaldsens" invnr="B421">
+    <i>Portræt af Just Mathias Thiele</i>, ukendt år, olie på lærred, 87,3×70,5 cm.
   </picture>
   <picture id="koebke-1839" subject="koebke" year="1839" museum="smk" invnr="KMS3615" >
-      <i>Maleren Christen Købke</i>, 1839, olie på lærred, 233×20cm. Statens Museum for Kunst.
+      <i>Maleren Christen Købke</i>, 1839, olie på lærred, 233×20cm.
   </picture>
   <picture id="christian8-1843" subject="christian8" year="1843">
     <i>Christian VIII - Det Dansk-Tyske Monarkis Konge</i>, 1843, olie på lærred. Rosenborg Slot.
   </picture>
-  <picture id="carstensen-1844" year="1844" museum="fnm" invnr="A 5694">
-    <i>Portræt af Georg Carstensen</i>, 1844, olie på lærred. Det Nationalhistoriske Museum, Frederiksborg Slot.
+  <picture id="carstensen-1844" year="1844" museum="fnm" invnr="a-5694">
+    <i>Portræt af Georg Carstensen</i>, 1844, olie på lærred.
   </picture>
   <picture id="piazza-barberini-1840erne" year="1845" museum="smk" invnr="KMS3770">
-      <i>En charlatan sælger blanksværte på Piazza Barberini i Rom</i>, 1840'erne, olie på lærred, 37×47,5cm. Statens Museum for Kunst. <!-- Omkr. dateringen skriver SMK: baseret på et fagligt skøn. Formodentlig malet under kunstnerens andet Rom-ophold 1845-48. -->
+      <i>En charlatan sælger blanksværte på Piazza Barberini i Rom</i>, 1840'erne, olie på lærred, 37×47,5cm. <!-- Omkr. dateringen skriver SMK: baseret på et fagligt skøn. Formodentlig malet under kunstnerens andet Rom-ophold 1845-48. -->
   </picture>
-  <picture id="heibergjohanne-1859" subject="heibergjohanne" year="1859" museum="fnm" invnr="A 251">
-    <i>Portræt af Johanne Louise Heiberg</i>, 1859, olie på lærred, 196×102cm. Det Nationalhistoriske Museum, Frederiksborg Slot.
+  <picture id="heibergjohanne-1859" subject="heibergjohanne" year="1859" museum="fnm" invnr="a-251">
+    <i>Portræt af Johanne Louise Heiberg</i>, 1859, olie på lærred, 196×102cm.
   </picture>
   <picture id="hansenc-1862" subject="hansenc" year="1862" museum="smk" invnr="KMS823">
-      <i>Maleren Constantin Hansen</i>, 1862, olie på lærred, 158×109cm. Statens Museum for Kunst.
+      <i>Maleren Constantin Hansen</i>, 1862, olie på lærred, 158×109cm.
   </picture>
-  <picture id="ewald-1864" subject="ewald" year="1864" museum="fnm" invnr="A 6615">
-    <i>Arendses sidste besøg hos Johannes Ewald</i>, 1864. Det Nationalhistoriske Museum, Frederiksborg Slot.
+  <picture id="ewald-1864" subject="ewald" year="1864" museum="fnm" invnr="a-6615">
+    <i>Arendses sidste besøg hos Johannes Ewald</i>, 1864.
   </picture>
   <picture id="ingemann-1860" subject="ingemann" year="1860">
       <i>B.S. Ingemann</i>, 1860, olie på lærred. Sorø Akademi.
@@ -37,8 +37,8 @@
   <picture id="grundtvig-1862" subject="grundtvig" year="1862">
       <i>Portræt af N.F.S. Grundtvig</i>, ca. 1862, olie på lærred. Københavns Rådhus.
   </picture>
-  <picture id="per-degn-1865" year="1865">
-      <i>Per Degn synger for en snaps</i>, 1865, olie på lærred,  35×30cm. Ny Carlsberg Glyptotek.
+  <picture id="per-degn-1865" year="1865" museum="glyptoteket">
+      <i>Per Degn synger for en snaps</i>, 1865, olie på lærred,  35×30cm.
       <!-- Scene fra Holbergs Erasmus Montanus, (1. akt, scene 4), hvor Per Degn får et glas brændevin af Jeppe Berg og Nille, hvorefter han bryder ud i sang. -->
   </picture>
   <picture id="christian4-1863" year="1863" subject="christian4">

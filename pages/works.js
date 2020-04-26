@@ -3,23 +3,23 @@
 import React from 'react';
 import 'isomorphic-fetch';
 import { Link, Router } from '../routes';
-import Head from '../components/head';
-import Main from '../components/main.js';
-import Nav, { worksCrumbs } from '../components/nav';
+import Page from '../components/page.js';
+import SubHeading from '../components/subheading.js';
+import { worksCrumbs } from '../components/breadcrumbs.js';
 import LangSelect from '../components/langselect';
-import { PoetTabs } from '../components/tabs.js';
-import Heading from '../components/heading.js';
+import { poetMenu } from '../components/menu.js';
 import PoetName from '../components/poetname.js';
 import { poetNameString } from '../components/poetname-helpers.js';
 import PicturesGrid from '../components/picturesgrid.js';
 import WorksList from '../components/workslist.js';
+import Stack from '../components/stack.js';
 import * as Links from '../components/links';
-import * as Client from './helpers/client.js';
+import * as Client from '../common/client.js';
 import ErrorPage from './error.js';
-import CommonData from './helpers/commondata.js';
-import type { Lang, Poet, Work, PictureItem, Error } from './helpers/types.js';
-import _ from '../pages/helpers/translations.js';
-import * as OpenGraph from './helpers/opengraph.js';
+import CommonData from '../common/commondata.js';
+import type { Lang, Poet, Work, PictureItem, Error } from '../common/types.js';
+import _ from '../common/translations.js';
+import * as OpenGraph from '../common/opengraph.js';
 
 type ArtworkListProps = {
   lang: Lang,
@@ -30,10 +30,14 @@ class ArtworkList extends React.Component<ArtworkListProps> {
   render() {
     const { lang, poet, artwork } = this.props;
 
+    if (artwork.length === 0) {
+      return null;
+    }
+
     const sortArtworks = artwork => {
       return artwork.sort((a, b) => {
-        const aKey = a.year + a.src;
-        const bKey = b.year + b.src;
+        const aKey = (a.year || '') + a.src;
+        const bKey = (b.year || '') + b.src;
         return aKey > bKey ? 1 : -1;
       });
     };
@@ -49,7 +53,7 @@ class ArtworkList extends React.Component<ArtworkListProps> {
     const rowHeight = items => {
       let height = 0;
       items.forEach(item => {
-        if (item.picture != null) {
+        if (item.picture != null && item.picture.size != null) {
           height =
             (item.picture.size.height / item.picture.size.width) * item.width;
         }
@@ -199,78 +203,92 @@ type WorksProps = {
   artwork: Array<PictureItem>,
   error: ?Error,
 };
-export default class extends React.Component<WorksProps> {
-  static async getInitialProps({
-    query: { lang, poetId },
-  }: {
-    query: { lang: Lang, poetId: string },
-  }) {
-    const json = await Client.works(poetId);
+const WorksPage = (props: WorksProps) => {
+  const { lang, poet, works, artwork, error } = props;
 
-    return {
-      lang,
-      poet: json.poet,
-      works: json.works,
-      artwork: json.artwork,
-      error: json.error,
-    };
+  if (error) {
+    return <ErrorPage error={error} lang={lang} message="Ukendt digter" />;
   }
 
-  render() {
-    const { lang, poet, works, artwork, error } = this.props;
+  if (works.length === 0 && artwork.length === 0) {
+    const bioURL = Links.bioURL(lang, poet.id);
+    Router.replaceRoute(bioURL);
+    return null;
+  }
 
-    if (error) {
-      return <ErrorPage error={error} lang={lang} message="Ukendt digter" />;
-    }
-    const requestPath = `/${lang}/works/${poet.id}`;
-
-    const noDataString = null;
-
-    if (works.length === 0 && artwork.length === 0) {
-      const bioURL = Links.bioURL(lang, poet.id);
-      Router.replaceRoute(bioURL);
-      return null;
-    }
-
-    const headTitle = poetNameString(poet, false, false) + ' - Kalliope';
-
-    const ogDescription = 'Værker';
-    const ogImage = OpenGraph.poetImage(poet);
-    const ogTitle = poetNameString(poet, false, false);
-
-    const title = <PoetName poet={poet} includePeriod />;
-
-    return (
-      <div>
-        <Head
-          headTitle={headTitle}
-          ogTitle={ogTitle}
-          ogImage={ogImage}
-          description={ogDescription}
-          requestPath={requestPath}
-        />
-        <Main>
-          <Nav lang={lang} crumbs={worksCrumbs(lang, poet)} />
-          <Heading title={title} subtitle={_('Værker', lang)} />
-          <PoetTabs lang={lang} poet={poet} selected="works" />
-          <div className="two-columns">
-            <WorksList lang={lang} poet={poet} works={works} />
-            <PicturesGrid
-              lang={lang}
-              poet={poet}
-              artwork={artwork}
-              hideArtist={true}
-            />
-            <style jsx>{`
-              :global(.nodata) {
-                padding: 30px 0;
-                font-weight: lighter;
-              }
-            `}</style>
-          </div>
-          <LangSelect lang={lang} path={requestPath} />
-        </Main>
-      </div>
+  const worksList = <WorksList lang={lang} poet={poet} works={works} />;
+  const artworksList = (
+    <PicturesGrid lang={lang} poet={poet} artwork={artwork} hideArtist={true} />
+  );
+  const worksTitle =
+    artwork.length === 0 || works.length === 0 ? null : (
+      <h3>{_('Litteratur', lang)}</h3>
     );
-  }
-}
+  const artworksTitle =
+    artwork.length === 0 || works.length === 0 ? null : (
+      <h3>{_('Kunst', lang)}</h3>
+    );
+
+  const stack = (
+    <>
+      <Stack spacing="40px">
+        {worksTitle}
+        {worksList}
+        {artworksTitle}
+        {artworksList}
+      </Stack>
+      <style jsx>{`
+        h3 {
+          font-weight: 300;
+          font-size: 22x;
+          line-height: 1.6;
+          padding-bottom: 1px;
+          border-bottom: 1px solid #888;
+          margin-bottom: 20px;
+        }
+      `}</style>
+    </>
+  );
+
+  return (
+    <Page
+      headTitle={poetNameString(poet, false, false) + ' - Kalliope'}
+      ogTitle={poetNameString(poet, false, false)}
+      ogImage={OpenGraph.poetImage(poet)}
+      ogDescription={'Værker'}
+      requestPath={`/${lang}/works/${poet.id}`}
+      crumbs={worksCrumbs(lang, poet)}
+      pageTitle={<PoetName poet={poet} includePeriod />}
+      pageSubtitle={_('Værker', lang)}
+      menuItems={poetMenu(poet)}
+      poet={poet}
+      selectedMenuItem="works">
+      <div className="two-columns">
+        {stack}
+        <style jsx>{`
+          :global(.nodata) {
+            padding: 30px 0;
+          }
+        `}</style>
+      </div>
+    </Page>
+  );
+};
+
+WorksPage.getInitialProps = async ({
+  query: { lang, poetId },
+}: {
+  query: { lang: Lang, poetId: string },
+}) => {
+  const json = await Client.works(poetId);
+
+  return {
+    lang,
+    poet: json.poet,
+    works: json.works,
+    artwork: json.artwork,
+    error: json.error,
+  };
+};
+
+export default WorksPage;

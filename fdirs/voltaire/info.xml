@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="voltaire" country="fr" lang="fr" type="poet">
+  <name>
+    <lastname>Voltaire</lastname>
+    <realname>François-Marie Arouet</realname>
+  </name>
+  <period>
+    <born>
+      <date>1694-11-21</date>
+      <place>Paris</place>
+    </born>
+    <dead>
+      <date>1778-05-30</date>
+      <place>Paris</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

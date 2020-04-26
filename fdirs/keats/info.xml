@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="keats" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>John</firstname>
+    <lastname>Keats</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1795-10-31</date>
+      <place>London</place>
+    </born>
+    <dead>
+      <date>1821-02-23</date>
+      <place>Rom</place>
+    </dead>
+  </period>
+  <works>1817,1818,1820,otho,king,post</works>
+</person>

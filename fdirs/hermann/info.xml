@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="hermann" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Aage</firstname>
+    <lastname>Hermann</lastname>
+    <pseudonym>Erik Haagensen</pseudonym>
+    <pseudonym>Julie Saabye</pseudonym>
+    <pseudonym>Max Wahl</pseudonym>
+  </name>
+  <period>
+    <born>
+      <date>1888-04-05</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1949-08-29</date>
+    </dead>
+  </period>
+  <works>1909,1912,1915,1919,1922,1928,1938,1938r,1942</works>
+</person>

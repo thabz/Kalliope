@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="jacobsen" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>J.P.</firstname>
+    <lastname>Jacobsen</lastname>
+    <fullname>Jens Peter Jacobsen</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1847-04-07</date>
+      <place>Thisted</place>
+    </born>
+    <dead>
+      <date>1885-04-30</date>
+      <place>Thisted</place>
+    </dead>
+  </period>
+  <works>1868,1871,andre,noveller</works>
+</person>

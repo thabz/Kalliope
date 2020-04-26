@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="roskilde" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Peder Jensen</firstname>
+    <lastname>Roskilde</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1575-04-06</date>
+      <place>Roskilde</place>
+    </born>
+    <dead>
+      <date>1641</date>
+    </dead>
+  </period>
+  <works>1627,1631</works>
+</person>

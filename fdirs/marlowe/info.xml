@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="marlowe" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Christopher</firstname>
+    <lastname>Marlowe</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1564-02-26</date>
+      <place>Canterbury, Kent</place>
+      <note>Dåbsdag</note>
+    </born>
+    <dead>
+      <date>1593-05-30</date>
+      <place>Deptford, nær London</place>
+    </dead>
+  </period>
+</person>

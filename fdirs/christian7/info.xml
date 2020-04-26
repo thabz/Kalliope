@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="christian7" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Christian 7.</firstname>
+  </name>
+  <period>
+    <born>
+      <date>1749-01-29</date>
+      <place inon="on">Christianborg Slot</place>
+    </born>
+    <coronation>
+      <date>1766-01-14</date>
+    </coronation>
+    <dead>
+      <date>1808-03-13</date>
+      <place>Rendsborg</place>
+    </dead>
+  </period>
+</person>

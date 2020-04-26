@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="wordsworth" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>William</firstname>
+    <lastname>Wordsworth</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1770-04-07</date>
+      <place>Cockermouth, Cumberland, England</place>
+    </born>
+    <dead>
+      <date>1850-04-23</date>
+      <place>Rydal Mount, Westmorland, England</place>
+    </dead>
+  </period>
+  <works>1798,1814,1815,1819,1820,1822,1835,1888,andre</works>
+</person>

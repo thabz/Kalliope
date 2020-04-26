@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="samain" country="fr" lang="fr" type="poet">
+  <name>
+    <firstname>Albert</firstname>
+    <lastname>Samain</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1858-04-03</date>
+      <place>Lille</place>
+    </born>
+    <dead>
+      <date>1900-08-18</date>
+      <place>Magny-les-Hameaux, Seine-et-Oise</place>
+    </dead>
+  </period>
+  <works>1893,1898,1901,andre</works>
+</person>

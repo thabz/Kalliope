@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="ewald" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Johannes</firstname>
+    <lastname>Ewald</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1743-11-18</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1781-03-17</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <works>1766,1769,1770,1771,1772,1779,andre,p1780</works>
+</person>

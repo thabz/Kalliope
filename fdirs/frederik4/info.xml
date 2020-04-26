@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="frederik4" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Frederik 4.</firstname>
+  </name>
+  <period>
+    <born>
+      <date>1671-10-11</date>
+      <place inon="on">Københavns Slot</place>
+    </born>
+    <coronation>
+      <date>1699-08-25</date>
+    </coronation>
+    <dead>
+      <date>1730-10-12</date>
+      <place inon="on">Odense Slot</place>
+    </dead>
+  </period>
+</person>

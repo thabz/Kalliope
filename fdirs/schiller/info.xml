@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="schiller" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Friedrich von</firstname>
+    <lastname>Schiller</lastname>
+    <fullname>Johann Christoph Friedrich von Schiller</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1759-11-10</date>
+      <place>Marbach, Württemberg</place>
+    </born>
+    <dead>
+      <date>1805-05-09</date>
+      <place>Weimar</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="hanseno" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Olaf</firstname>
+    <lastname>Hansen</lastname>
+    <fullname>Olaf Jonas Hansen</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1870-12-28</date>
+      <place>Nakskov</place>
+    </born>
+    <dead>
+      <date>1932-12-09</date>
+      <place>Århus</place>
+    </dead>
+  </period>
+  <works>1897,1899,1902,1904,1907,1912,1917,1918</works>
+</person>

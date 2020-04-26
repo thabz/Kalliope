@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="shelley" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Percy Bysshe</firstname>
+    <lastname>Shelley</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1792-08-04</date>
+      <place>Field Place, ved Horsham, Sussex, England</place>
+    </born>
+    <dead>
+      <date>1822-07-08</date>
+      <place>Livorno, Italien</place>
+    </dead>
+  </period>
+  <works>1810,1813,1816,1818,1819,1823,1824,ovs,andre</works>
+</person>

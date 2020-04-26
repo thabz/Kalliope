@@ -3,15 +3,9 @@
 import React, { Fragment } from 'react';
 import WorkName from '../components/workname.js';
 import { Link } from '../routes';
-import CommonData from '../pages/helpers/commondata.js';
-import _ from '../pages/helpers/translations.js';
-import type {
-  Lang,
-  Poet,
-  Work,
-  PictureItem,
-  Error,
-} from '../pages/helpers/types.js';
+import CommonData from '../common/commondata.js';
+import _ from '../common/translations.js';
+import type { Lang, Poet, Work, PictureItem, Error } from '../common/types.js';
 
 type WorksListProps = {
   lang: Lang,
@@ -31,6 +25,10 @@ const workNameTranslated = (work, lang): string => {
 export default class WorksList extends React.Component<WorksListProps> {
   render() {
     const { lang, poet, works } = this.props;
+
+    if (works.length === 0) {
+      return null;
+    }
 
     const sortWorks = works => {
       if (poet.id === 'bibel') {

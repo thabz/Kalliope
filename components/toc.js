@@ -4,7 +4,7 @@ import React from 'react';
 import { Link } from '../routes';
 import TextContent from './textcontent.js';
 import * as Links from './links';
-import CommonData from '../pages/helpers/commondata.js';
+import CommonData from '../common/commondata.js';
 
 import type {
   Lang,
@@ -16,7 +16,7 @@ import type {
   NoteItem,
   PictureItem,
   Error,
-} from '../pages/helpers/types.js';
+} from '../common/types.js';
 
 type TocProps = {
   toc: Array<TocItem>,
@@ -48,7 +48,7 @@ export default class extends React.Component<TocProps> {
           const className = `level-${item.level == null ? 1 : item.level}`;
           return (
             <tr key={i}>
-              <td />
+              <td className="num">{prefix}</td>
               <td>
                 <h3 className={className}>{shownTitle}</h3>
                 {renderItems(
@@ -106,21 +106,21 @@ export default class extends React.Component<TocProps> {
               margin-left: 0;
             }
             :global(.toc) :global(h3.level-1) {
-              font-weight: lighter;
-              font-size: 18px;
+              font-weight: 300;
+              font-size: 22px;
               padding: 0;
               margin: 0;
               margin-top: 10px;
             }
             :global(.toc) :global(h3.level-2) {
-              font-weight: lighter;
-              font-size: 16px;
+              font-weight: 300;
+              font-size: 20px;
               padding: 0;
               margin: 0;
             }
             :global(.toc) :global(h3.level-3) {
               font-weight: normal;
-              font-size: 14px;
+              font-size: 18px;
               padding: 0;
               margin: 0;
             }
@@ -137,7 +137,6 @@ export default class extends React.Component<TocProps> {
             }
             :global(.nodata) {
               padding: 30px 0;
-              font-weight: lighter;
             }
           `}</style>
         </div>

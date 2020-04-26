@@ -13,7 +13,7 @@
 </workhead>
 <workbody>
 
-<poem id="rahbek2019031601">
+<text id="rahbek2019031601">
 <head>
     <title>Til Asteria</title>
     <firstline>Fra fiern og fremmed Egn vi komme hid</firstline>
@@ -21,6 +21,7 @@
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Fra fiern og fremmed Egn vi komme hid,
 I Haab, man her os Vennely vil unde;
 Os ei Skiærsommer har fremelsket blid,
@@ -38,21 +39,25 @@ Ved din og hendes Gunst, trods Storm og Kuld,
 Vi fro ei savne moderlige Zone.
 
     December 1816.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019031602">
+<text id="rahbek2019031602">
 <head>
     <title>Ridder Helge</title>
     <subtitle>Originalen til Bürgers Romance die Entführung</subtitle>
     <toctitle>Ridder Helge, efter det Engelske</toctitle>
     <firstline>Der staaer en Borg paa Höien hist</firstline>
+    <notes>
+        <note>Se Thomas Percys <xref type="translation" poem="percy2019090802"/> og Bürgers <xref poem="burger2019090801"/>.</note>
+    </notes>
     <source pages="9-20"/>
-    <!-- TODO: Tilføj originalen, https://de.wikisource.org/wiki/Die_Entf%C3%BChrung_(B%C3%BCrger) Er Bürgers romance en gendigtning af Percy Bysshe Shelley? -->
     <keywords>romance</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center>Efter det Engelske af Percys Reliquer.</center></nonum>
 
 Der staaer en Borg paa Höien hist,
@@ -304,10 +309,11 @@ Som du er hende huld og tro,
    Saa Gud velsigne dig!
 Og nu, min elskte Ellenlild!
    Gaa, og vær lykkelig!''<note>*) A. W. Schlegel har i Caracteristiken und Critiken 2 Th. erindret, at Slutningen af denne Sang hörer til de Restaurationer, den engelske Udgiver har foretaget med denne skiönne Torso.</note>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019021101">
+<text id="rahbek2019021101">
 <head>
    <title>Indlednings Sonnet</title>
    <toctitle>Petrarca: Indlednings Sonnet</toctitle>
@@ -320,6 +326,7 @@ Og nu, min elskte Ellenlild!
    <source pages="21"/>
 </head>
 <body>
+<poetry>
 I, som i spredte Sange höre her
 En Gienlyd af de Suk, hvormed mit Hierte
 I förste Ungdoms Sværmeri sig nærte,
@@ -335,10 +342,11 @@ At over mig jeg blues i mit Bryst;
 Saa Skam til Frugt jeg af min Daarskab har,
 Og Ruelse, og klarlig at erkiende:
 En stakket Dröm kun er al jordisk Lyst.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019021102">
+<text id="rahbek2019021102">
 <head>
    <title>VI. Sonnet</title>
    <toctitle>—: VI. Sonnet</toctitle>
@@ -351,6 +359,7 @@ En stakket Dröm kun er al jordisk Lyst.
    <source pages="22"/>
 </head>
 <body>
+<poetry>
 Sövn, Fraadseri, og blöde Lediggang
 Saa bort fra Verden har al Dyd fordrevet,
 At vor Natur, som af sit Löb udrevet,
@@ -366,10 +375,11 @@ Saa taler lumpne, vindesyge Skare.
 Faa du til Fölge faaer ad dine Veie!
 Desmeer, dig, ædle Aand! jeg bede maa,
 Höimodig Idræt lad du ikke fare.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019021103">
+<text id="rahbek2019021103">
 <head>
    <title>XI. Sonnet</title>
    <toctitle>—: XI. Sonnet</toctitle>
@@ -382,6 +392,7 @@ Höimodig Idræt lad du ikke fare.
    <source pages="22-23"/>
 </head>
 <body>
+<poetry>
 Naar bort fra dem, der ellers skiönne ere,
 Til hendes Skiönhed Amor vender sig,
 Og blandt dem findes ingen hende lig,
@@ -397,20 +408,22 @@ Der agter föie, hvad enhver begiærte;
 Af hende muntre Fyrighed jeg lærte,
 Der styrer saa mid Himmelen mit Fied,
 At alt i Haab jeg stolt der tager Sted!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019031603">
+<text id="rahbek2019031603">
 <head>
     <title>Til Oversættere</title>
     <subtitle>Efter Le Brun</subtitle>
     <toctitle>Le Brun: Til Oversættere</toctitle>
     <firstline>Sög ei at give Ord for Ord</firstline>
     <source pages="24"/>
-    <!-- TODO: Find originalen. -->
+    <!-- TODO: Find originalen (Le Brun) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Sög ei at give Ord for Ord,
 Hvis du Horats og Smagen troer.
 Pedanten slet kun efteraber;
@@ -422,10 +435,11 @@ Thi troest er den Oversætter tidt,
 Der mindst os synes det at være,
 Naar den, der fölger Autor skridt for Skridt,
 Er en Lakei, der gaaer bag ved sin Herre.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019021201">
+<text id="rahbek2019021201">
 <head>
    <title>Jægerens Aftenvise</title>
    <toctitle>Goethe: Jægerens Aftenvise</toctitle>
@@ -438,6 +452,7 @@ Er en Lakei, der gaaer bag ved sin Herre.
    <source pages="25"/>
 </head>
 <body>
+<poetry>
 I Mark jeg sværmer stille vild,
   Opspændt min Riffel er;
 Din elskte Skygge blid og mild
@@ -457,21 +472,23 @@ Mig er det, tænker jeg paa dig,
   Som jeg i Maanen seer;
 Blid Fred neddaler over mig,
   Ei veed jeg, hvad mig skeer.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019031604">
+<text id="rahbek2019031604">
 <head>
     <title>Præsten i Drotnings sidste Ord</title>
     <subtitle>Romance efter Bonaventura (Schelling)</subtitle>
     <toctitle>Bonaventura (Schelling): Præsten i Drotnings sidste Ord</toctitle>
     <firstline>De matte Lemmer sig mod Jorden böie</firstline>
     <source pages="26-36"/>
-    <!-- TODO: Find originalen. -->
+    <!-- TODO: Find originalen (Schelling). -->
     <keywords>romance</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 De matte Lemmer sig mod Jorden böie
    Og snart min Taushed jeg ei meer kan bryde,
    For mig det staaer med taareblændet Öie,
@@ -680,20 +697,24 @@ Du skiulte Udaadsmand sin Lön betaler,
    Du höre og en Synders fromme Klager,
    At dette Skrift til fierne Fremtid taler,
 Og du i Fredens Hytte ham optager!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019031605">
+<text id="rahbek2019031605">
 <head>
     <title>Til Venskab</title>
     <subtitle>Efter det Svenske af Classon Horn</subtitle>
     <toctitle>Classon Horn: Til Venskab</toctitle>
     <firstline>Hel'ge Olie, som heler</firstline>
+    <notes>
+        <note unknown-original-by="hornc" />
+    </notes>
     <source pages="36-37"/>
-    <!-- TODO: Find originalen. -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hel'ge Olie, som heler
 Menneskehedens dybe Saar,
 Og hvor du ei meer formaaer
@@ -713,10 +734,11 @@ Som dig al sin Dyrkning gav!
 Bliv min sene Alders Stav!
 Balsom gyd i Livets Smerte
 Og en Taare paa min Grav!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019031606">
+<text id="rahbek2019031606">
 <head>
     <title>Beskedenheden</title>
     <toctitle>Beskedenheden, efter det Franske</toctitle>
@@ -727,6 +749,7 @@ Og en Taare paa min Grav!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Da Jupiter engang faldt paa
 Hver Dyd sin Rang hos Mennesket at give,
 Den, som det förste Sted vel burde tildeelt blive,
@@ -736,10 +759,11 @@ Og blev forglemt, da man den ikke saae.
 Til dig ei meer er egen Plads tilbge,
 Men du de andre Dyder skal ledsage,
    Forhöie og fordoble deres Værd.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019021206">
+<text id="rahbek2019021206">
 <head>
    <title>Thyrzas Minde</title>
    <toctitle>Byron: Thyrzas Minde</toctitle>
@@ -752,6 +776,7 @@ Men du de andre Dyder skal ledsage,
    <source pages="38-40"/>
 </head>
 <body>
+<poetry>
 O Sörgeqvad! lad mig i Ro!
 Forstummer Toner, för saa glade,
 Skal jeg ei dette Sted forlade!
@@ -787,38 +812,44 @@ Men han, som tunge Sti maa træde,
 Nu Himlen sig indhyller vred,
 Vil svundne Straale tidt begræde,
 Der paa hans Vei giöd Glæde ned.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019021203">
+<text id="rahbek2019021203">
 <head>
    <title>Naar Klaffertungerne dig stikke</title>
    <subtitle>Efter Bürger</subtitle>
    <toctitle>Bürger: Naar Klaffertungerne dig stikke</toctitle>
    <firstline>Naar Klaffertungerne dig stikke</firstline>
+   <notes>
+      <note unknown-original-by="burger" />
+   </notes>
    <quality>korrektur1,kilde,side</quality>
    <source pages="40"/>
-   <!-- TODO: Find Bürgers original -->
 </head>
 <body>
+<poetry>
 Naar Klaffertungerne dig stikke,
 Da til din Tröst du sige saa:
 De værste Frugter er det ikke,
 De Gedehamser söge paa.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019031607">
+<text id="rahbek2019031607">
 <head>
     <title>Hvor</title>
     <toctitle>Werner: Hvor</toctitle>
     <subtitle>Sang efter Werner</subtitle>
     <firstline>Jeg kommer hid fra Bierget af</firstline>
     <source pages="40-41"/>
-    <!-- TODO: Find originalen. -->
+    <!-- TODO: Find original (Werner) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg kommer hid fra Bierget af,
 Nu damper Dal, nu bölges Hav,
 Jeg stille uglad gaaer paa Jord,
@@ -843,20 +874,22 @@ Jeg stille uglad gaaer paa Jord,
 Og stedse Sukket spörger, hvor?
 Mig svarer Aanders Röst fra Field:
 Kun hvor du er ei, findes Held.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019031608">
+<text id="rahbek2019031608">
 <head>
     <title>Hvorfor klage, hvorfor græde</title>
     <toctitle>Imbert: Epigram</toctitle>
     <subtitle>Efter Imbert</subtitle>
     <firstline>Hvorfor klage, hvorfor græde</firstline>
     <source pages="42"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find original (Imbert) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvorfor klage, hvorfor græde
 Over Flugten af din Vaar?
 Har hver Alder ei sin Glæde,
@@ -865,10 +898,11 @@ Viis Naturen veed at binde
 Nydelser til hver dets Tid,
 Ungdom gav den Haabet blid,
 Alderdom har ömme Minde.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019021204">
+<text id="rahbek2019021204">
 <head>
    <title>Keiseren og Abbeden</title>
    <subtitle>Romance efter Bürger</subtitle>
@@ -881,6 +915,7 @@ Alderdom har ömme Minde.
    <source pages="42-52"/>
 </head>
 <body>
+<poetry>
 Et löierligt Eventur vil jeg fortælle:
 Engang bar en Keiser, en underlig Selle;
 Og var der en Abbed, en kostelig Mand,
@@ -1075,20 +1110,24 @@ Sanctgallenske Abbed tilkiende vi give,
 Hans Bendix ei mere hans Hyrde skal blive;
 Men Abbeden pleie ham, som vi det böd,
 For intet, og indtil hans salige Död.''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019031609">
+<text id="rahbek2019031609">
 <head>
     <title>Ridder St. Jörgen</title>
     <toctitle>Franzén: Ridder St. Jörgen</toctitle>
     <subtitle>Romance efter Franzên</subtitle>
     <firstline>De Dage, da Troldene end var istand</firstline>
+    <notes>
+       <note unknown-original-by="franzen" />
+    </notes>
     <source pages="53-59"/>
-    <!-- TODO: Find originalen. -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 De Dage, da Troldene end var istand,
    Den skiælvende Jord at bekrige,
 En Konge saae under sit Scepter sit Land
@@ -1238,20 +1277,22 @@ Endnu i en Samlig af hel'ge Tropheer
 Og ingen, som Dragen i Storkirken seer,
          Letsindig leer
 Ad Sagnet, som Klokkerne mindes.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019031610">
+<text id="rahbek2019031610">
 <head>
     <title>Hofnarren</title>
     <toctitle>Nivernois: Hofnarren</toctitle>
     <subtitle>Fabel efter Nivernois</subtitle>
     <firstline>En Konge havde sig engang en Nar</firstline>
     <source pages="60-61"/>
-    <!-- TODO: Find originalen. -->
+    <!-- TODO: Find originalen (Nivernois) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 En Konge havde sig engang en Nar,
 Som i de Dage Mode var,
 Den Mode har man nu ladt fare;
@@ -1282,10 +1323,11 @@ Og nu end eet, som muligt for mit Rige
 Saa lidt Betydenhed ei har;
 Saa mangen Sandhed sagde mig min Nar,
 Som mine Vise var for vise - til at sige.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019031611">
+<text id="rahbek2019031611">
 <head>
     <title>Gögleren og Bonden</title>
     <toctitle>Gyllenborg: Gögleren og Bonden</toctitle>
@@ -1296,6 +1338,7 @@ Som mine Vise var for vise - til at sige.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 At dömme Handlinger, Fortienester og Folk
 Kan Almeenheden ei betages,
 Men skiöndt vi hædre denne Guddomstolk
@@ -1388,10 +1431,11 @@ Han slaaer sin Kappe nu til Side,
 Og holder Grisen frem til Sku.
 ,,Höivise Publikum! du selv maa vide,
 Om slig en Lærdom ei var stundum god endnu.''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019021310">
+<text id="rahbek2019021310">
 <head>
    <title>Den döende Barde</title>
    <toctitle>Scott: Den döende Barde</toctitle>
@@ -1405,6 +1449,7 @@ Om slig en Lærdom ei var stundum god endnu.''
    <source pages="67-68"/>
 </head>
 <body>
+<poetry>
 O klag! Dinas Emlia! thi nær er den Stund,
 Forstummende Gienlud skal döe i din Lund.    
 Ei meer ak ved Teivi skal Cadwallon glad,
@@ -1434,20 +1479,22 @@ Farvel, Dinas Emlin! din Lund være grön!
 Din Krigerhob seirsæl, din Döttreflok skiön!
 Og du, hvis Klang tolker min Hendöd saa mat,
 Farvel, elskte Harpe! min eneste Skat!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019031612">
+<text id="rahbek2019031612">
 <head>
     <title>Maria af Scotlands Sörgesang</title>
     <toctitle>Florian: Maria af Scotlands Sörgesang</toctitle>
     <subtitle>Efter Florian</subtitle>
     <firstline>Forgiæves Fængslets Muur gientager</firstline>
     <source pages="69-70"/>
-    <!-- TODO: Find originalen. -->
+    <!-- TODO: Find original (Florian) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Forgiæves Fængslets Muur gientager
 Min tunge Smertes Klageskrig.
 Ak det foröger mine Plager,
@@ -1474,20 +1521,24 @@ Hör! Vinden tuder, Uglen skriger;
 Hör! hisset jamrer Klokken sig.
 Maria Stuart! Alt dig siger:
 Din sidste Time nærmer sig.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019031613">
+<text id="rahbek2019031613">
 <head>
     <title>Til Sövnen</title>
     <toctitle>Franzén: Til Sövnen</toctitle>
     <subtitle>Efter Franzén og Della Casa</subtitle>
     <firstline>O Slummer! du den stille sorrigblide</firstline>
+    <notes>
+       <note unknown-original-by="franzen" />
+    </notes>
     <source pages="70-71"/>
-    <!-- TODO: Find originalen. -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 O Slummer! du den stille sorrigblide!
 Velkommen Nattens Sön! du sidste Ven
 For Sottesengens Usling, og for den,
@@ -1502,10 +1553,11 @@ Hvor disse Drömme, den til Selskab eier?
 Forgiæves sukker mit fortærte Bryst
 Til eder, kolde Skygger, döve Leier!
 O lange Nat! o Venten uden Tröst!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019021312">
+<text id="rahbek2019021312">
 <head>
    <title>Det tilslörede Billede i Sais</title>
    <toctitle>Schiller: Det tilslörede Billede i Sais</toctitle>
@@ -1518,6 +1570,7 @@ O lange Nat! o Venten uden Tröst!
    <source pages="71-75"/>
 </head>
 <body>
+<poetry>
 En Yngling, hvem den hede Videtörst
 Til Sais i Ægypten drev, Lönviisdom
 Af Præsterne at læse, mangen Grad
@@ -1612,20 +1665,22 @@ Vee den! saa var hans varselsfulde Ord,
 Naar hæftig Spörgende ind paa ham trængte:
 Vee den, der gaaer til Sandhed giennem Bröde!
 Ham vil den aldrig være glædelig.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019031614">
+<text id="rahbek2019031614">
 <head>
     <title>Magdalenastiftelsen</title>
     <toctitle>Jerningham: Magdalenastiftelsen</toctitle>
     <subtitle>Efter Jerningham</subtitle>
     <firstline>Til Templet söger sorgfuld Hob i Bön</firstline>
     <source pages="76-82"/>
-    <!-- TODO: Find originalen. -->
+    <!-- TODO: Find original (Jerningham) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Til Templet söger sorgfuld Hob i Bön
 Ved Dydens Alter Angers Suk at drage;
 Sorg aarle bleger Ungdoms Kind saa skiön,
@@ -1765,20 +1820,24 @@ At lindre Kummers Lod er Dydens Kald,
 I Faldnes Kummer ynksom Deel at tage;
 Men dens Triumph: fra sörgelige Fald
 Med hielpsom Haand at bringe dem tilbage.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019031615">
+<text id="rahbek2019031615">
 <head>
     <title>Fader vor, paraphraseret</title>
     <toctitle>Classon Horn: Fader vor, paraphraseret</toctitle>
     <subtitle>Efter Clason Horn</subtitle>
     <firstline>Den Ild, o Gud! der om dig luer</firstline>
+    <notes>
+        <note unknown-original-by="hornc" />
+    </notes>
     <source pages="82-89"/>
-    <!-- TODO: Find originalen. -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center><i>Fader vor, du som er i Himmelen.</i></center></nonum>
 
 Den Ild, o Gud! der om dig luer,
@@ -1930,20 +1989,22 @@ Ja dette svage Hierte troer:
 <w>At alt til dig tilbagevender;</w>
 <w>Thi du har evig Magt i Hænder!</w>
 <w>Er evig god, og evig stor!</w>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019031616">
+<text id="rahbek2019031616">
 <head>
     <title>Fader vor</title>
     <toctitle>Mahlman: Fader vor</toctitle>
     <subtitle>Oratorium efter Mahlmann</subtitle>
     <firstline>Du har dine Stötter opbygget dig</firstline>
     <source pages="89-92"/>
-    <!-- TODO: Find originalen. -->
+    <!-- TODO: Find original (Mahlman) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
    Du har dine Stötter opbygget dig,
    Og dine Templer dig grundet,
    Hvor Öiet troende vendte sig,
@@ -2022,9 +2083,10 @@ Op til dit Lys vi med Længsel stunde,
       Og Magten og Æren.
          I Evighed
             Amen!
+</poetry>
 </body>
-</poem>
-<poem id="rahbek2019021311">
+</text>
+<text id="rahbek2019021311">
 <head>
    <title>Pillegrimen</title>
    <subtitle>Efter Walter Scott.</subtitle>
@@ -2037,6 +2099,7 @@ Op til dit Lys vi med Længsel stunde,
    <source pages="93-95"/>
 </head>
 <body>
+<poetry>
 O luk mig op, barmhiertig vær!
 Barsk tude Nordens Vinde;
 Den vide Dal et Snehav er,
@@ -2086,20 +2149,24 @@ Thi da af Morgentaagens Skiöd
 Frem næste Soel mon bryde,
 Man saae i Ettriks Vande död
 Den Pillegrim at flyde.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019031617">
+<text id="rahbek2019031617">
 <head>
     <title>Nu</title>
     <toctitle>Classon Horn: Nu</toctitle>
     <subtitle>Efter Clason Horn</subtitle>
     <firstline>Uendelige Væsen! du</firstline>
+    <notes>
+        <note unknown-original-by="hornc" />
+    </notes>
     <source pages="95-97"/>
-    <!-- TODO: Find originalen. -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Uendelige Væsen! du,
 For hvilken hele Evigheden
 Er kun et eenligt enkelt <w>Nu,</w>
@@ -2154,10 +2221,11 @@ Og du, som Verden til Behag
 End böiet gaaer i Udyds Lænker,
 Sværg Dyden Troskab end i Dag,
 Til Morgen Daaren sig betænker.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019021202">
+<text id="rahbek2019021202">
 <head>
    <title>Den Elskedes Nærhed</title>
    <subtitle>Efter Göthe</subtitle>
@@ -2170,6 +2238,7 @@ Til Morgen Daaren sig betænker.
    <source pages="98"/>
 </head>
 <body>
+<poetry>
 Dig tænker jeg, naar Solens Straaler spille
         Paa blanke Hav,
 I Kildens Sölv, naar Maanen blid og stille
@@ -2187,10 +2256,11 @@ Jeg er hos Dig! lad Sö og Field det hindre,
         Jeg er dig nær!
 See Solen daler, Stiernerne fremtindre,
         O var du her!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019021207">
+<text id="rahbek2019021207">
 <head>
    <title>Efter det Tyrkiske</title>
    <subtitle>Efterligning af Lord Byron</subtitle>
@@ -2203,6 +2273,7 @@ See Solen daler, Stiernerne fremtindre,
    <source pages="99-100"/>
 </head>
 <body>
+<poetry>
 Skiön Kiæden var, som jeg dig gav,
 Söd Luthen Klang, som med jeg sendte,
 Det Hierte tro, de skiænktes af,
@@ -2227,20 +2298,24 @@ Stum er nu Luthen, Kiæden brudt,
 Med dig de ændredes tillig!
 Farvel jeg dem og dig vil sige,
 Falsk Siæl, skiör Kiæde, maallös Luth!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019031618">
+<text id="rahbek2019031618">
 <head>
     <title>Savnet</title>
     <toctitle>Franzén: Savnet</toctitle>
     <subtitle>Efter Franzên</subtitle>
     <firstline>Din Sol, Natur! gaaer op saa skiön</firstline>
+    <notes>
+       <note unknown-original-by="franzen" />
+    </notes>
     <source pages="100-102"/>
-    <!-- TODO: Find originalen. -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Din Sol, Natur! gaaer op saa skiön,
    Og alle Taager flye,
 Hvert Kryb faaer Liv, hver Plet blir grön,
@@ -2289,10 +2364,11 @@ Er han kun driftig, hun kun huld,
    De sörge ei for Bo.
 Min Bo er Graven, selv ei den
    Besöges af min Ven.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019031619">
+<text id="rahbek2019031619">
 <head>
     <title>Forgiæt mig ei</title>
     <toctitle>Forgiæt mig ei, efter det Tydske</toctitle>
@@ -2301,6 +2377,7 @@ Min Bo er Graven, selv ei den
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Blandt Floras hulde Döttres Hær
 Du mangen maa i Skiönhed vige,
 For Hiertet er du uden Lige,
@@ -2336,10 +2413,11 @@ Selv naar paa Egennyttens Vei
 Den kolde Verden Alt vil glemme,
 Ved dig advarer Hiertets Stemme:
    <w>Forgiæt mig ei!</w>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019021301">
+<text id="rahbek2019021301">
 <head>
    <title>Sonnet XXXII</title>
    <toctitle>Shakespeare: Sonnet XXXII</toctitle>
@@ -2351,6 +2429,7 @@ Ved dig advarer Hiertets Stemme:
    <source pages="104-105"/>
 </head>
 <body>
+<poetry>
 Oplever du den Time, da din Ven
 Af Dödens Haand til Stöv er samlet blevet,
 Og du engang fremtager huld igien
@@ -2365,10 +2444,11 @@ Jeg kunde ventet af din Kiærlighed
 En Sang, som Strænghed maatte selv bifalde;
 Nu er du död, og de paa dig see ned,
 Dem læser jeg for Stiil, dig for din Kiærlighed.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019021302">
+<text id="rahbek2019021302">
 <head>
    <title>Sonnet XXV</title>
    <toctitle>—: Sonnet XXV</toctitle>
@@ -2380,6 +2460,7 @@ Dem læser jeg for Stiil, dig for din Kiærlighed.
    <source pages="105-106"/>
 </head>
 <body>
+<poetry>
 Hvo meer i Yndest hos sin Stierne staaer,
 Af Almeengunst og Titler sig ophöie,
 Jeg, hvem min Lykke slig en Seir afslaaer,
@@ -2394,10 +2475,11 @@ Af Ærens Bog aldeles slettet ud,
 Seer Alt, hvorfor han trællet har, forsvundet.
 Held mig, som falder ei, ei fældes der,
 Hvor, som jeg elsker mig selv, jeg elsket er!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019021303">
+<text id="rahbek2019021303">
 <head>
    <title>Sonnet XXIX</title>
    <toctitle>—: Sonnet XXIX</toctitle>
@@ -2409,6 +2491,7 @@ Hvor, som jeg elsker mig selv, jeg elsket er!
    <source pages="106"/>
 </head>
 <body>
+<poetry>
 Naar jeg hos Lykken, som hos Mennesker
 I Ugunst, mon forskudte Lov beklager,
 Min Skiæbne bander, naar paa mig jeg seer,
@@ -2423,10 +2506,11 @@ Som Lærken sig ved Daggry op mon svinge,
 Ved Himlens Porte jubler for sit Held.
 Din Ömheds Minde flux saa riig mig giör,
 At jeg med ingen Konge bytte tör.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019021304">
+<text id="rahbek2019021304">
 <head>
    <title>Sonnet XXX</title>
    <toctitle>—: Sonnet XXX</toctitle>
@@ -2438,6 +2522,7 @@ At jeg med ingen Konge bytte tör.
    <source pages="107"/>
 </head>
 <body>
+<poetry>
 Naar for den blide Tankes stille Dom
 Forgangne Tings Admindelse jeg drager,
 Og mangt feilslaget Id i Hu mig kom,
@@ -2452,10 +2537,11 @@ Og under dybe Sukke Regningen,
 Som den ei var betalt, paa ny betaler.
 Men blander da dit Minde sig deri,
 Alt Tab oprettet er, alt Sorg forbi.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019021305">
+<text id="rahbek2019021305">
 <head>
    <title>Sonnet XXXVII</title>
    <toctitle>—: Sonnet XXXVII</toctitle>
@@ -2467,6 +2553,7 @@ Alt Tab oprettet er, alt Sorg forbi.
    <source pages="107-108"/>
 </head>
 <body>
+<poetry>
 Som svag udlevet Fader glad mon skue
 Sit muntre Barn at öve Ungdomsfærd,
 Saa jeg, hvem Lykkens Had og Haan nedkue,
@@ -2481,10 +2568,11 @@ Din Overflod den meer end nok vil blive,
 Jeg lever ved en Deel blot af dit Værd.
 See, hvad er bedst; det bedste önskes dig;
 Mit Önske skeer, og jeg er lykkelig.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019021306">
+<text id="rahbek2019021306">
 <head>
    <title>Sonnet LXXIII</title>
    <toctitle>—: Sonnet LXXIII</toctitle>
@@ -2496,6 +2584,7 @@ Mit Önske skeer, og jeg er lykkelig.
    <source pages="108-109"/>
 </head>
 <body>
+<poetry>
 Hos mig du skuer nu den Aarsenstid,
 Da gule Löv, faa eller ingen, svæve
 Paa skaldet Qvist, der bævrer hid og did,
@@ -2510,10 +2599,11 @@ Den Sotteseng, hvor snart den bortdöe vil,
 Fortært af det, hvori den Næring finder.
 Lad det din Kiærlighed forstærke da,
 Alt elske ret, hvad snart du kaldes fra.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019021307">
+<text id="rahbek2019021307">
 <head>
    <title>Sonnet LXXIV</title>
    <toctitle>—: Sonnet LXXIV</toctitle>
@@ -2525,6 +2615,7 @@ Alt elske ret, hvad snart du kaldes fra.
    <source pages="109-110"/>
 </head>
 <body>
+<poetry>
 Dog tröstig vær, this naar det strænge Kald
 Mig uden Skaansel bort herfra skal drive,
 Paa dette Blad dog af mit Liv der skal
@@ -2539,20 +2630,22 @@ Et usselt Offer for hver Niddings Kniv,
 Ei værd, du ved dets Minde dig skal græmme.
 Dets Værd er kun den Siæl, det indeholder,
 Og det er denne, som du har beholder.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019031620">
+<text id="rahbek2019031620">
 <head>
     <title>Solen og Maanen</title>
     <toctitle>Fumars: Solen og Maanen</toctitle>
     <subtitle>Fabel efter Fumars</subtitle>
     <firstline>Nedstegen Phæbus er i Thetis Favn</firstline>
     <source pages="110"/>
-    <!-- TODO: Find originalen. -->
+    <!-- TODO: Find original (Fumars) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 ,,Nedstegen Phæbus er i Thetis Favn,
 Men tröster Eder, Dödelige!
 Erstattet er ved mig hans savn,''
@@ -2561,10 +2654,11 @@ Saa hörtes blege Phæbe sige:
 Den hele Phæbus I gienfinde her!''
 Slig Kunst er Eders, Oversættere!
 Höit Maanen vi, men aldrig Solen see.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019031621">
+<text id="rahbek2019031621">
 <head>
     <title>Hvilens Rede</title>
     <toctitle>Frue Fr. Bruun: Hvilens Rede</toctitle>
@@ -2574,10 +2668,11 @@ Höit Maanen vi, men aldrig Solen see.
         <note>* En Lövhytte i Toppen af en herlig Eeg i Kraagerup Hauge, hvis Eiers Kone, Fru Fr. Brun den yngre, Sangen er tilegnet.</note>
     </notes>
     <source pages="111-112"/>
-    <!-- TODO: Find originalen -->
+    <!-- TODO: Find original (Frue Fr. Brun)-->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center>Tilskrevet hendes Sönnekone.</center></nonum>
 
 Der gives en Plads i det kiölige Rum,
@@ -2611,20 +2706,22 @@ Skal eengang mit Öie der lukkes af dig,
 O Rede saa yndig i Konge-Eegs Top!
 Et daarende Haab du ei elske mig op!
    Tidt Haabet, ak! blomstrer forgiæves!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019031622">
+<text id="rahbek2019031622">
 <head>
     <title>Thorvald</title>
     <toctitle>Steenhammar: Thorvald</toctitle>
     <subtitle>Efter Steenhammars svenske Original</subtitle>
     <firstline>Storme vildt om Thorvalds Leie hviner</firstline>
     <source pages="113-121"/>
-    <!-- TODO: Find originalen. -->
+    <!-- TODO: Find original (Stenhammer) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Stormen vildt om Thorvalds Leie hviner,
 Haglen paa den brudte Rude slaaer,
 Maanen glimter frem iblandt Ruiner,
@@ -2814,20 +2911,24 @@ Giv mig da at döe, som denne Mand!
 Hun ham fölger til hans giæstfri Hiem;
 Anden Fader der i ham hun finder;
 Ofte Thorvald blev begrædt af dem.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019031623">
+<text id="rahbek2019031623">
 <head>
     <title>Beslutningen</title>
     <toctitle>Walter Scott: Beslutningen</toctitle>
     <subtitle>Af Walter Scott, efter en gammel engelsk Sang</subtitle>
     <firstline>Min tunge Lod jeg klage maa</firstline>
+    <notes>
+        <note unknown-original-by="scott" />
+    </notes>
     <source pages="122-124"/>
-    <!-- TODO: Find originalen. -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Min tunge Lod jeg klage maa,
 Skiöndt Klager spildte ere,
 Jeg elskte, og mig elsket saae,
@@ -2880,20 +2981,24 @@ Tro Turteldue Enke döer,
 Og Phönix lever ene;
 De elske ei; som de jeg giör;
 Jeg lever, döer allene.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019031624">
+<text id="rahbek2019031624">
 <head>
     <title>Harpespilleren og hans Hund, Tro</title>
     <toctitle>Th. Campbell: Harpespilleren og hans Hund, Tro</toctitle>
     <subtitle>Efter Thomas Campbells engelske Original</subtitle>
     <firstline>Paa Bredden af Shannon, da Sally var min</firstline>
+    <notes>
+        <note>Gendigtning af Thomas Campbell: <xref type="translation" poem="campbell2019090803"/>.</note>
+    </notes>
     <source pages="125-126"/>
-    <!-- TODO: Tilføj originalen, https://books.google.dk/books?id<w>XMBgAAAAcAAJ&pg</w>PA227&lpg<w>PA227&dq</w>thomas+campbell+The+Irish+Harper+and+His+Dog&source<w>bl&ots</w>LUCRIS1RtC&sig<w>ACfU3U2fjFXyyBoso0TaKkeFdf21yAFBMA&hl</w>en&sa<w>X&ved</w>2ahUKEwiK9am9pNvgAhVKMewKHefPCfsQ6AEwDnoECAEQAQ#v<w>onepage&q</w>thomas%20campbell%20The%20Irish%20Harper%20and%20His%20Dog&f=false -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Paa Bredden af Shannon, da Sally var min,
 Ei nogen irsk Knös var saa lystig i Sind,
 Ei Harpe som min kunde lyde saa fro,
@@ -2923,10 +3028,11 @@ Blind, fattig, forladt, hvorhen skal jeg nu gaae?
 Hvor skal jeg saa huld en Ledsager mig faae?
 Til elskede Födeby, Fædrenes Bo,
 Jeg kommer ei meer med min stakkels Hund, Tro.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019031625">
+<text id="rahbek2019031625">
 <head>
     <title>Til en Veninde paa hendes Födselsdag</title>
     <toctitle>Til en Veninde med en Ring, efter det Tydske</toctitle>
@@ -2941,6 +3047,7 @@ Jeg kommer ei meer med min stakkels Hund, Tro.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvor lykkelig var jeg den Ring at finde
 Med en Tyrkiis, om hvilken Sagnet gaaer,
 At den enhver Forgift modstaaer;
@@ -2960,10 +3067,11 @@ O men med end langt mere lette Baand
 Er ædelt Sind og Ömhed vel at binde;
 Thi sættes dristig Ringen paa din Haand,
 Din Gunst mig, Ædle! du unddrage ingensinde.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019031626">
+<text id="rahbek2019031626">
 <head>
     <title>Forsvar for mine to Uhre</title>
     <toctitle>Forsvar for mine to Uhre, efter det Franske</toctitle>
@@ -2977,14 +3085,16 @@ Din Gunst mig, Ædle! du unddrage ingensinde.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Til Overflod du intet af dem agte!
 Det ene gaaer for stærkt, det andet gaaer for sagte;
 Hin seer jeg paa, hvergang du venter mig;
 Og dette, naar jeg skal fra dig.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019031627">
+<text id="rahbek2019031627">
 <head>
     <title>Midalderen</title>
     <toctitle>Midalderen, efter det Svenske</toctitle>
@@ -2995,6 +3105,7 @@ Og dette, naar jeg skal fra dig.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 O Elskov! vil du, jeg skal drage
 Igien dit gyldne Tryllebaand,
 Giengiv mig mine Ungdomsdage,
@@ -3029,20 +3140,24 @@ Kom! Venskab böd: min Favn dig dölge
 Mod al din Skiæbnes Bitterhed!
 Jeg fulgte Venskab, men jeg græd,
 At ene ham jeg kunde fölge.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019031628">
+<text id="rahbek2019031628">
 <head>
     <title>Fædrehiemmets Ruiner</title>
     <toctitle>Th. Campbell: Fædrehiemmets Ruiner</toctitle>
     <subtitle>Efter Th. Campbell</subtitle>
     <firstline>I tiende Skumrings den tankefuld Stund</firstline>
+    <notes>
+        <note>Gendigtning af Thomas Campbell: <xref type="translation" poem="campbell2019090804"/>.</note>
+    </notes>
     <source pages="131-132"/>
-    <!-- TODO: Find originalen. -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I tiende Skumrings den tankefuld Stund
    Jeg vanked saa sorgfuld i Mod.
 Blandt vindslagne Buske i eensomme Lund,
@@ -3082,20 +3197,22 @@ Ei vexlende Farer, ei Haan, og ei Savn
 Ja end ei det fordum saa elskede Navn
 Et Mindelses Suk skal afpresse min Favn.
    Mod Skiæbnen den seired, der stod.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019031629">
+<text id="rahbek2019031629">
 <head>
     <title>Kiærlighed og Ære</title>
     <toctitle>Sidney Walker: Kiærlighed og Ære</toctitle>
     <subtitle>Efter Sidney Walker</subtitle>
     <firstline>Nei! min Maria! siig ei saa</firstline>
     <source pages="133-134"/>
-    <!-- TODO: Find originalen. -->
+    <!-- TODO: Find original (Walker) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nei! min Maria! siig ei saa!
    Nei! ganske er jeg din!
 Skiöndt du mig stundum knæle saae
@@ -3116,11 +3233,12 @@ Al min Forlængsel, alt mit Mod
    Staaer ene til min Mö!
 Lad mig kun denne Soel beboe!
 Jeg i dens Straalefavn döer fro.
+</poetry>
 </body>
-</poem>
+</text>
 
 
-<poem id="rahbek2019021308">
+<text id="rahbek2019021308">
 <head>
     <title>Lauenborgs Blomst</title>
     <toctitle>Tiedge: Lauenborgs Blomst</toctitle>
@@ -3133,6 +3251,7 @@ Jeg i dens Straalefavn döer fro.
     <source pages="134-140"/>
 </head>
 <body>
+<poetry>
    Hist Lauenborg det gamle staaer,
    Höit det paa Harzbierg skinner,
    Igiennem Udörk Veien gaaer
@@ -3265,10 +3384,11 @@ Liig döende Uskylds Aandedrag.
    Som Tiden ei kan fælde;
 Der blomstrer det Blomster ved Midnatstid,
 Og glimrer som blændende Lilje hvid.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019021309">
+<text id="rahbek2019021309">
 <head>
     <title>Klager</title>
     <toctitle>Vigée: Klager</toctitle>
@@ -3278,6 +3398,7 @@ Og glimrer som blændende Lilje hvid.
     <source pages="141-142"/>
 </head>
 <body>
+<poetry>
 Min Eensomheds bestandig tro Indbygger,
 O Gienlyd! hör! besvar ei meer min Sang,
 Gientag ei meer et Navn i disse Skygger,
@@ -3302,10 +3423,11 @@ O Tvillingtræer! der flette eders Grene,
 Vor fælles Gravhöi til et lövrigt Tag!
 O skilles, skilles ad! ak mig allene
 Skal denne Grav oplade sig i Dag.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rahbek2019021205">
+<text id="rahbek2019021205">
 <head>
    <title>Shakespeare: Vidie, Vidie, Vidie</title>
    <subtitle>Efter det Engelske</subtitle>
@@ -3317,6 +3439,7 @@ Skal denne Grav oplade sig i Dag.
    <source pages="142-144"/>
 </head>
 <body>
+<poetry>
 <nonum><center>(Desdemoras Sang i Othello 4 A. 3 Sc.)</center></nonum>
 
 En Sörgende sad under Hængebirkstræ,
@@ -3351,8 +3474,9 @@ Paa Falskhed I klage; min falskere er!
 Fra min Elskte mig sveeg, jeg Vidjekrands bær;
    O Vidje! Vidje! Vidje!
 Syng: o den grönne Vidje min Krands skal være!
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>
