@@ -8,6 +8,7 @@ const {
 } = require('../libs/caching.js');
 const {
   loadXMLDoc,
+  getChildByTagName,
   getElementsByTagNames,
   safeGetAttr,
   safeGetOuterXML,
@@ -37,27 +38,29 @@ const build_textrefs = collected => {
         found_changes = true;
       }
       let doc = loadXMLDoc(filename);
-      const texts = getElementsByTagNames(doc, [
-        'poem',
-        'prose',
-        'section',
-      ]).filter(e => safeGetAttr(e, 'id') != null);
-      texts.forEach(text => {
-        const notes = getElementsByTagNames(text, ['note', 'footnote']);
-        notes.forEach(note => {
-          regexps.forEach(regexp => {
-            while ((match = regexp.exec(safeGetOuterXML(note))) != null) {
-              const fromId = safeGetAttr(text, 'id');
-              const toId = match[1];
-              const array = textrefs.get(toId) || [];
-              if (array.indexOf(fromId) === -1) {
-                array.push(fromId);
+      const texts = getElementsByTagNames(doc, ['text', 'section'])
+        .filter(e => safeGetAttr(e, 'id') != null)
+        .forEach(text => {
+          const head = getChildByTagName(text, 'head');
+          const body = getChildByTagName(text, 'body');
+          const notes = [
+            ...getElementsByTagNames(head, ['note']),
+            ...getElementsByTagNames(body, ['note', 'footnote']),
+          ];
+          notes.forEach(note => {
+            regexps.forEach(regexp => {
+              while ((match = regexp.exec(safeGetOuterXML(note))) != null) {
+                const fromId = safeGetAttr(text, 'id');
+                const toId = match[1];
+                const array = textrefs.get(toId) || [];
+                if (array.indexOf(fromId) === -1) {
+                  array.push(fromId);
+                }
+                textrefs.set(toId, array);
               }
-              textrefs.set(toId, array);
-            }
+            });
           });
         });
-      });
     });
   });
   if (found_changes) {
@@ -88,26 +91,29 @@ const mark_ref_destinations_dirty = collected => {
         return;
       }
       let doc = loadXMLDoc(filename);
-      const texts = getElementsByTagNames(doc, [
-        'poem',
-        'prose',
-        'section',
-      ]).filter(e => safeGetAttr(e, 'id') != null);
-      texts.forEach(text => {
-        const notes = getElementsByTagNames(text, ['note', 'footnote']);
-        notes.forEach(note => {
-          regexps.forEach(regexp => {
-            while ((match = regexp.exec(safeGetOuterXML(note))) != null) {
-              const toId = match[1];
-              const t = collected.texts.get(toId);
-              if (t != null) {
-                const filename = `fdirs/${t.poetId}/${t.workId}.xml`;
-                destination_workfiles.push(filename);
+
+      getElementsByTagNames(doc, ['text', 'section'])
+        .filter(e => safeGetAttr(e, 'id') != null)
+        .forEach(text => {
+          const head = getChildByTagName(text, 'head');
+          const body = getChildByTagName(text, 'body');
+          const notes = [
+            ...getElementsByTagNames(head, ['note']),
+            ...getElementsByTagNames(body, ['note', 'footnote']),
+          ];
+          notes.forEach(note => {
+            regexps.forEach(regexp => {
+              while ((match = regexp.exec(safeGetOuterXML(note))) != null) {
+                const toId = match[1];
+                const t = collected.texts.get(toId);
+                if (t != null) {
+                  const filename = `fdirs/${t.poetId}/${t.workId}.xml`;
+                  destination_workfiles.push(filename);
+                }
               }
-            }
+            });
           });
         });
-      });
     });
   });
   //console.log('Dirty files are: ', destination_workfiles);

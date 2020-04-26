@@ -7,13 +7,14 @@
 </workhead>
 <workbody>
 
-<poem id="eliot2018021001">
+<text id="eliot2018021001">
 <head>
    <title>Sweet Endings Come and Go, Love</title>
    <firstline>Sweet evenings come and go, love</firstline>
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 <nonum><right><small>"La noche buena se viene,</small></right></nonum>
 <nonum><right><small>La noche buena se va,</small></right></nonum>
 <nonum><right><small>Y nosotros nos iremos</small></right></nonum>
@@ -39,16 +40,18 @@ A better time will come, love,
 And better souls be born: 
 I would not be the best, love, 
 To leave thee now forlorn.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="eliot2019072101">
+<text id="eliot2019072101">
 <head>
    <title>O May I Join the Choir Invisible</title>
    <firstline>O May I Join the Choir Invisible</firstline>
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 <nonum><right><small>Longum illud tempus, quum non ero, magis me movet quam hoc exiguum</small></right></nonum>
 <nonum><right><small>- Cicero, ad Att., xii. 18.</small></right></nonum>
 
@@ -99,8 +102,9 @@ So shall I join the choir invisible
 Whose music is the gladness of the world.
 
 <nonum><right>1867</right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

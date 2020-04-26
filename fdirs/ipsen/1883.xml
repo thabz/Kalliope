@@ -15,7 +15,7 @@
 </workhead>
 <workbody>
 
-<prose id="ipsen2017112401">
+<text id="ipsen2017112401" skip-index="true">
 <head>
     <title>[Forord]</title>
     <source pages="iii" facsimile-pages="11"/>
@@ -23,13 +23,15 @@
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<prose>
 Jeg anser det for rigtigst at forudskikke den Bemærkning, at disse Digte ere blevne til i Løbet at en Del Aar, og at de saaledes som Helhed afspejle en Udvikling. Man vil fra dette Synspunkt finde mere undskyldeligt, hvad Uoverensstemmelse de fremvise i Stil og Stemning, ja selv i Tankegang, hvis man maatte finde nogen saadan.
     For Hjælp med Udvalget af disse Digte bringer jeg Digteren <w>Chr. Richardt</w> min hedste Tak.
 <right><i>Forf.</i></right>
-</body>
 </prose>
+</body>
+</text>
 
-<poem id="ipsen2017112402">
+<text id="ipsen2017112402">
 <head>
     <title>Inspirationen</title>
     <firstline>Kender I Inspirationens Magt?</firstline>
@@ -37,6 +39,7 @@ Jeg anser det for rigtigst at forudskikke den Bemærkning, at disse Digte ere bl
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Kender I Inspirationens Magt?
 Venner, lyt til min Tale!
 Den er som Aftenhimmelens Pragt
@@ -91,10 +94,11 @@ men saa er Slottet forsvundet,
 og ingen kjender dets Sted,
 og ingen Vandrer har siden fundet
 en Sten til Erindring at tage med.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112403">
+<text id="ipsen2017112403">
 <head>
     <title>Reformationen</title>
     <firstline>Det var i den sidste Nattevagt</firstline>
@@ -102,6 +106,7 @@ en Sten til Erindring at tage med.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det var i den sidste Nattevagt,
 og det spøgede fælt imellem Gravene,
 Skikkelser i forunderlig Dragt
@@ -193,10 +198,11 @@ og føre Sceptret og klæde Tronen,
 bane sig Vej fra Land til Land
 til fjerneste Strand:
 Fra Cellen udgaar Reformationen.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112404">
+<text id="ipsen2017112404">
 <head>
     <title>Aarhundredets Reveille</title>
     <firstline>Et Aarhundred tilbage, det var i Marseille</firstline>
@@ -204,6 +210,7 @@ Fra Cellen udgaar Reformationen.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Et Aarhundred tilbage, det var i Marseille,
 dér stemtes det ny Aarhundreds Reveille.
 
@@ -275,10 +282,11 @@ da lyder Raabet paany: ,,Til Bastillen!''
 
 Da klinger igen den gamle Reveille,
 der stemmedes op af Folk fra Marseille.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112405">
+<text id="ipsen2017112405">
 <head>
     <title>En Sommernat</title>
     <firstline>Det var en af disse stille</firstline>
@@ -286,6 +294,7 @@ der stemmedes op af Folk fra Marseille.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det var en af disse stille,
 drømmesvangre, farveklare,
 duftberuste Sommernætter,
@@ -401,10 +410,11 @@ som alene Himlens Venner
 lærte ved at lytte til:
 Himlens klokkeklare Cymbler
 og Naturens Fløjtespil.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112406">
+<text id="ipsen2017112406">
 <head>
     <title>Lærken</title>
     <firstline>Naar Stedmorsblomstens Klynger</firstline>
@@ -412,6 +422,7 @@ og Naturens Fløjtespil.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Naar Stedmorsblomstens Klynger
 i Grøftekanten staa,
 da er det Du Dig gynger
@@ -474,10 +485,11 @@ skal vi for Sangerkorets
 Mangfoldighed ej glemme,
 hvem først der priste Sommer,
 at Du sang første Stemme.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112407">
+<text id="ipsen2017112407">
 <head>
     <title>Omskiftelse</title>
     <firstline>Der var en Tid, da Sangen var Gæst</firstline>
@@ -485,6 +497,7 @@ at Du sang første Stemme.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Der var en Tid, da Sangen var Gæst
 ved bugnende Herskabsborde,
 en Tid, da den flagred fra Fest til Fest,
@@ -538,10 +551,11 @@ og tære de Meniges Retter.
 Selv vil den vinde sig Magt og Rang,
 selv gøre sig tjent under Slagets Gang
 til de hædrende Epauletter.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112408">
+<text id="ipsen2017112408">
 <head>
     <title>Festivitas</title>
     <firstline>Naar Foraaret sætter sin Fod i vort Land</firstline>
@@ -549,6 +563,7 @@ til de hædrende Epauletter.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Naar Foraaret sætter sin Fod i vort Land,
 er Vinteren det første, som vi glemme,
 saa synge vi alle det bedste, vi kan,
@@ -584,10 +599,11 @@ Luk nu Butikken! I Skoven er der Dans.
 Nætterne er lyse omkring ved Sankte-Hans.
 Piger er der ogsaa, der bli’r vel en til Mands,
 med dem vil i Dansen vi os svinge!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112409">
+<text id="ipsen2017112409">
 <head>
     <title>Paa Koncerten</title>
     <firstline>Det summed i Salen</firstline>
@@ -595,6 +611,7 @@ med dem vil i Dansen vi os svinge!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det summed i Salen
 og Lamperne flammed,
 forventningsfuld sad man
@@ -763,10 +780,11 @@ Ti saadan er Livet,
 og Kunstens Tributter
 og Skønhedens Andagt
 er korte Minutter.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112410">
+<text id="ipsen2017112410">
 <head>
     <title>I en Vejgrøft</title>
     <firstline>Det er en kjendt Historie</firstline>
@@ -774,6 +792,7 @@ er korte Minutter.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det er en kjendt Historie,
 jeg kan den udenad,
 den lyseblaa Cikorie
@@ -872,10 +891,11 @@ til Solens varme Straale
 og den nynnende Vind
 og Fluernes Summen
 faar vugget mig ind.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112411">
+<text id="ipsen2017112411">
 <head>
     <title>I Forstaden</title>
     <firstline>Du, som kun kender til Trang og Nød</firstline>
@@ -883,6 +903,7 @@ faar vugget mig ind.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Du, som kun kender til Trang og Nød
 fra de mildt forskønnende Bøger,
 har Du Lyst med egne Øjne at se
@@ -942,10 +963,11 @@ Ja, Du som kender kun Trang og Nød
 fra de mildt forskønnende Bøger,
 har Du Lyst med egne Øjne at se,
 i Forstaden er, hvad Du'søger.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112412">
+<text id="ipsen2017112412">
 <head>
     <title>Naar Dødens Skygger mørkne -</title>
     <firstline>Naar Dødens Skygger mørkne</firstline>
@@ -953,6 +975,7 @@ i Forstaden er, hvad Du'søger.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Naar Dødens Skygger mørkne
 dit Øjes klare Vande,
 og denne Verden svinder
@@ -997,10 +1020,11 @@ da kom i Hu dit Løfte,
 at Du paa mig vil vente,
 til sammen vi kan gæste
 det store ubekendte.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112413">
+<text id="ipsen2017112413">
 <head>
     <title>I en Trætop</title>
     <firstline>Saa stod jeg da i Skoven</firstline>
@@ -1008,6 +1032,7 @@ det store ubekendte.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Saa stod jeg da i Skoven,
 det var, som om jeg vaagned brat
 jeg blev saa vel til Mode
@@ -1047,10 +1072,11 @@ At skulde træt af Livet
 jeg fristes til at drukne mig,
 da vil, Du gyldne Sommer,
 jeg drukne mig i Dig!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112414">
+<text id="ipsen2017112414">
 <head>
     <title>Ved Fuldmaane</title>
     <firstline>Og der var Fred, den dybe Midnats Fred</firstline>
@@ -1058,6 +1084,7 @@ jeg drukne mig i Dig!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Og der var Fred, den dybe Midnats Fred,
 kun Maanen fulgte vore tavse Fjed
 med sit højtidelige, tavse Øje.
@@ -1071,10 +1098,11 @@ det var som Verden evig skulde sove;
 vi sneg os sagte langsmed Skovens Søm
 som tvende Skygger i en sælsom Drøm,
 og intet Ord vor Læbe turde vove.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112415">
+<text id="ipsen2017112415">
 <head>
     <title>Lyrikken</title>
     <firstline>Man siger, Tiden føder ingen Digter</firstline>
@@ -1082,6 +1110,7 @@ og intet Ord vor Læbe turde vove.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Man siger, Tiden føder ingen Digter,
 at der er ingen Jordbund for Lyrikken,
 at Videnskaben styrted den fra Tronen,
@@ -1111,10 +1140,11 @@ Ja, mens endnu vi sukke og vi længes
 saa salig ungt paa denne Oldingklode,
 saa længe finder Sangen nye Veje,
 saa længe gaar Lyrikken ej af Mode.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112416">
+<text id="ipsen2017112416">
 <head>
     <title>Besøg ved Strandbredden</title>
     <firstline>De luntede sindigt med Paraplyer</firstline>
@@ -1122,6 +1152,7 @@ saa længe gaar Lyrikken ej af Mode.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 De luntede sindigt med Paraplyer,
 nogle saagar med Galoscher paa,
 ned mod den marehalmklædte Strand,
@@ -1157,10 +1188,11 @@ Mod Hjemmet vendte de deres Skridt
 for at nyde Maden i Ro;
 men Bølgen prajed: ,,Ohoj, bi lidt!''
 og rakte Tunge og lo.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112417">
+<text id="ipsen2017112417">
 <head>
     <title>Advarsel</title>
     <firstline>Det var i de gamle Dage</firstline>
@@ -1168,6 +1200,7 @@ og rakte Tunge og lo.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det var i de gamle Dage,
 at den unge Frøken Jord
 som en giftefærdig Jomfru
@@ -1207,10 +1240,11 @@ Ungersvende, lad jer vare!
 Vogt jer for de Skønnes Spor!
 Se, hvordan den stakkels Maane
 endnu danser om vor Jord.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112418">
+<text id="ipsen2017112418">
 <head>
     <title>I Galop</title>
     <firstline>Piskene knalde og Hestene fare</firstline>
@@ -1218,6 +1252,7 @@ endnu danser om vor Jord.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Piskene knalde og Hestene fare
 afsted i susende Trav,
 som Sommerens flygtige Brise fejer
@@ -1253,10 +1288,11 @@ Ja, falder nogen i Dag af Sadlen
 dem samle i Morgen vi op,
 i Dag er Løsnet paa hele Linien:
 afsted, afsted, i Galop!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112419">
+<text id="ipsen2017112419">
 <head>
     <title>Opmuntring</title>
     <firstline>En avant, min Bror, hvis Du véd, Du har Ret</firstline>
@@ -1264,6 +1300,7 @@ afsted, afsted, i Galop!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 En avant, min Bror, hvis Du véd, Du har Ret,
 naar din Sag den er prøvet og god,
 at have Ret er det første,
@@ -1273,10 +1310,11 @@ Ti Verden er but og Verden er tvær
 og glad ved sit sure Bryg,
 men Verden er ogsaa Vidskelæ’r,
 den giver sig for et Tryk.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112420">
+<text id="ipsen2017112420">
 <head>
     <title>Paa Skibsbroen</title>
     <firstline>Jeg sad paa Skibsbroen — stærk var Stimlen</firstline>
@@ -1284,6 +1322,7 @@ den giver sig for et Tryk.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg sad paa Skibsbroen — stærk var Stimlen
 og spejlklart Vandet og skyfri Himlen.
 
@@ -1325,10 +1364,11 @@ og hvor man ej kender i Dag fra i Gaar.
 
 Dog ind i det Land tør jeg ikke trænge,
 kun drømme om det stille og længe.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112421">
+<text id="ipsen2017112421">
 <head>
     <title>Til Vejrs</title>
     <firstline>Jeg gad entre op i et gyngende Mers</firstline>
@@ -1336,6 +1376,7 @@ kun drømme om det stille og længe.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg gad entre op i et gyngende Mers,
 hernede gaar alting saa sært paa Tværs.
 
@@ -1374,10 +1415,11 @@ en Klang fra fjerne Tider og Zoner.
 
 Et Kor af Harper, et Nyn af Aander,
 en Trøst for alt, der i Ve sig vaander.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112422">
+<text id="ipsen2017112422">
 <head>
     <title>En Stemning</title>
     <firstline>Under en lazurblaa Himmel</firstline>
@@ -1385,6 +1427,7 @@ en Trøst for alt, der i Ve sig vaander.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Under en lazurblaa Himmel
 hviler Havets matte Flade,
 og de tavse Skibe glide
@@ -1397,10 +1440,11 @@ Give Gud, jeg var ombord,
 under Sejl mod fjærne Strande,
 mod det fjærneste af Lande,
 mod det Land, hvor Lykken bòr.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112423">
+<text id="ipsen2017112423">
 <head>
     <title>Tidslen</title>
     <firstline>Tidslen er en ussel Blomst</firstline>
@@ -1408,6 +1452,7 @@ mod det Land, hvor Lykken bòr.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Tidslen er en ussel Blomst,
 den staar saa studs og stiv,
 den vilde aldrig bøje sig,
@@ -1422,10 +1467,11 @@ Den tænker: Hvorfor bøje sig
 det hjælper jo dog ej,
 naar Høstens Time kommer,
 gaa vi alle samme Vej.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112424">
+<text id="ipsen2017112424">
 <head>
     <title>I Overgangstiden</title>
     <firstline>Nu fejes Røret for sidste Gang</firstline>
@@ -1433,6 +1479,7 @@ gaa vi alle samme Vej.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nu fejes Røret for sidste Gang,
 og Gadedrengen, som kommer slingrende
 hen over Fliserne, fløjter i Fingrene
@@ -1468,10 +1515,11 @@ Kun Skorstensmanden med alt sit Kram
 lister afsted i sin sodede Robe.
 han hører dem juble alle tilhobe:
 men — det er jo ikke for ham.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112425">
+<text id="ipsen2017112425">
 <head>
     <title>Mod Dag</title>
     <firstline>For længe jeg sad i min Klostervraa</firstline>
@@ -1479,6 +1527,7 @@ men — det er jo ikke for ham.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 For længe jeg sad i min Klostervraa
 og ristede Runer med Snirkler smaa.
 
@@ -1505,10 +1554,11 @@ det er Livet, I Herrer, som kræver sin Ret.
 
 Nu laan mig, St. Georg, dit gode Sværd,
 til Kamp, til Kamp mod Tusmørkets Hær!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112426">
+<text id="ipsen2017112426">
 <head>
     <title>Med Nattoget</title>
     <firstline>Fremad med dundrende Stempelslag</firstline>
@@ -1516,6 +1566,7 @@ til Kamp, til Kamp mod Tusmørkets Hær!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Fremad med dundrende Stempelslag,
 fremad igennem det drømmende Land,
 indtil der rødmer i Østen en Dag,
@@ -1541,10 +1592,11 @@ en Hilsen vi ville den bringe.
 Vaagn nu, o Land, bag dit Taageslør,
 alt aabner Dagen sin gyldne Dør
 og Fuglestruberne klinge.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112427">
+<text id="ipsen2017112427">
 <head>
     <title>Fændrikkens Sang</title>
     <firstline>Jeg er ingen Lejesvend</firstline>
@@ -1552,6 +1604,7 @@ og Fuglestruberne klinge.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg er ingen Lejesvend,
 jeg tjener ej for Sold,
 jeg tjener den højeste Herre,
@@ -1578,10 +1631,11 @@ En Fændrik jeg er i den lille Armé,
 der træder ad Bjærgets Sti;
 jeg spejder mod Øst, er ej Dagen at se,
 da Verden bli’r solglad og fri?
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112428">
+<text id="ipsen2017112428">
 <head>
     <title>Er det nu en Tid for Vers?</title>
     <firstline>Er det nu en Tid for Vers?</firstline>
@@ -1589,6 +1643,7 @@ da Verden bli’r solglad og fri?
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Er det nu en Tid for Vers?
 Nu den halve Verden strider
 og den anden halve lider,
@@ -1602,10 +1657,11 @@ hvor det nye forberedes,
 hvor de tunge Hamre messe,
 til jeg henter dem som Staal
 ud af Tidens Smedeesse.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112429">
+<text id="ipsen2017112429">
 <head>
     <title>Foraarsluft</title>
     <firstline>Foraarets Luft den er saa stærk</firstline>
@@ -1613,6 +1669,7 @@ ud af Tidens Smedeesse.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Foraarets Luft den er saa stærk,
 I tage jer vel i Vare,
 det raader jeg baade Mø og Svend,
@@ -1636,10 +1693,11 @@ og drømt, hvad jeg aldrig kan glemme,
 nu færdes jeg her som i fremmed Land
 og haver ingensteds hjemme.
 Ti Foraarsluften er saa stærk.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112430">
+<text id="ipsen2017112430">
 <head>
     <title>Forgæves Søgen</title>
     <firstline>Jeg vandrer i Haven</firstline>
@@ -1647,6 +1705,7 @@ Ti Foraarsluften er saa stærk.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg vandrer i Haven,
 hvor Lavendlen er blaa,
 hvor duftende Levkøjer
@@ -1691,10 +1750,11 @@ at Elmetræet drysser
 sit Frø paa min Vej —
 jeg søger et Spor;
 men jeg tinder det ej.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112431">
+<text id="ipsen2017112431">
 <head>
     <title>Dæmringsfantasier</title>
     <firstline>Nu daler Solen hist bag Fyrrestammer</firstline>
@@ -1702,6 +1762,7 @@ men jeg tinder det ej.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nu daler Solen hist bag Fyrrestammer
 og planter Himlens Rand med gule Roser,
 et gyldent Hegn, hvor forudgangne Sjæle
@@ -1716,10 +1777,11 @@ Af Længsel imod det, der er ej mere,
 der sank i Tidens grænseløse Dybder,
 af disse underlige, blide Toner,
 der trænge op fra Evighedens Krypter.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112432">
+<text id="ipsen2017112432">
 <head>
     <title>Snefald</title>
     <firstline>Den drysser, den drysser den hvide Sne</firstline>
@@ -1727,6 +1789,7 @@ der trænge op fra Evighedens Krypter.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Den drysser, den drysser den hvide Sne
 for hver en Time, der gaar,
 den skjuler de Veje, din Fod har traadt,
@@ -1742,10 +1805,11 @@ skal ses ved Solen igen?
 Naar kommer den store Tøbrudsdag,
 der smelter Sneens det sidste Lag
 over Verden?
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112433">
+<text id="ipsen2017112433">
 <head>
     <title>I Roser</title>
     <firstline>I Roser, i Roser vil jeg køle min Pande</firstline>
@@ -1753,6 +1817,7 @@ over Verden?
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I Roser, i Roser vil jeg køle min Pande,
 naar Hjærnen af Tanker er udbrændt og hed,
 i Bladenes aarede, blaanende Rande
@@ -1764,10 +1829,11 @@ mit Hjerte vil glemme, hvad der saared og sved.
     men Roserne hvide
     vil jeg hviske min Kvide;
 ti i Roser, ja i Roser vil jeg køle min Sjæl.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112434">
+<text id="ipsen2017112434">
 <head>
     <title>Fiol og Klarinet</title>
     <firstline>Sommernætter! Sommernætter!</firstline>
@@ -1775,6 +1841,7 @@ ti i Roser, ja i Roser vil jeg køle min Sjæl.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Sommernætter! Sommernætter!
 Regn af knaldende Raketter!
 Stjerneskud i Mælkeluft!
@@ -1802,10 +1869,11 @@ bryd Dig ej om det, min Ven;
 disse Taarer er et Smykke
 for vor Ungdom, for vor Lykke,
 Solen tørrer dem igen!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112435">
+<text id="ipsen2017112435">
 <head>
     <title>Paakaldelse</title>
     <firstline>Dæmrende Aften, kom fra det blaa!</firstline>
@@ -1813,6 +1881,7 @@ Solen tørrer dem igen!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Dæmrende Aften, kom fra det blaa!
 Dæmrende Aften, Dig kalder jeg paa!
 Mød mig atter festlig og ene
@@ -1838,10 +1907,11 @@ Dæmrende Aften, stille og smuk,
 dæmrende Aften, med Smil og med Suk,
 dæmrende Aften, kom ned fra det blaa,
 dæmrende Aften, Dig kalder jeg paa!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112436">
+<text id="ipsen2017112436">
 <head>
     <title>Nokturne</title>
     <firstline>Det rusker ved min Rude</firstline>
@@ -1849,6 +1919,7 @@ dæmrende Aften, Dig kalder jeg paa!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det rusker ved min Rude,
 det blæser koldt derude.
 I Horisontens Fjerne
@@ -1876,10 +1947,11 @@ jeg dysses ind i Slummer,
 i Digt og Drøm fra før,
 ved Nattens Dør,
 hvor Livets Røst forstummer.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112437">
+<text id="ipsen2017112437">
 <head>
     <title>Sommerstykke</title>
     <firstline>Græskarret gulnes i min Moders Have</firstline>
@@ -1887,6 +1959,7 @@ hvor Livets Røst forstummer.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Græskarret gulnes i min Moders Have,
 Ribsene hænge alt i tunge Klaser,
 Stikkelsbær er der for en hungrig Mave,
@@ -1911,10 +1984,11 @@ hvor det er dumt at bo i Hovedstaden,
 fremmed for Livets rette quantum satis,
 naar man kan ligge her og ,,pleje Raden'',
 oven i Købet saa aldeles gratis.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112438">
+<text id="ipsen2017112438">
 <head>
     <title>Aften ved Søen</title>
     <firstline>Som et luftigt Rosenblad</firstline>
@@ -1922,6 +1996,7 @@ oven i Købet saa aldeles gratis.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Som et luftigt Rosenblad,
 kruset let med gyldne Flammer,
 som et kunstig drevet Fad
@@ -1939,10 +2014,11 @@ Tryllet af Farvernes Fyrværkeri
 vil jeg paa Brinken mig drømmende strække,
 ak, om et Øjeblik alt er forbi,
 Natten har udslukt os begge.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112439">
+<text id="ipsen2017112439">
 <head>
     <title>Efteraarsskov</title>
     <firstline>Nu ligger Søen blank som et Speil</firstline>
@@ -1950,6 +2026,7 @@ Natten har udslukt os begge.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nu ligger Søen blank som et Speil
 i Krans af rødgule Skove,
 og Solen maler foruden Fejl
@@ -1976,10 +2053,11 @@ Sov sødt, o Dronning, sov fast og trygt!
 Dit Smil har sagt mig, dit Hjærte er sygt;
 men er Hjærtet sygt, saa er Søvnen god
 i den kolde Strøm, i den dybe Flod.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112440">
+<text id="ipsen2017112440">
 <head>
     <title>Ved Havet</title>
     <firstline>Det stænked fra Søen, og Bølgen brød</firstline>
@@ -1987,6 +2065,7 @@ i den kolde Strøm, i den dybe Flod.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det stænked fra Søen, og Bølgen brød
 mod Strandens Sten med ensformig Klage,
 den klaged over, at Somren var død,
@@ -2031,10 +2110,11 @@ Og jeg kom til Dig med vekslende Sind,
 snart blussende højt af Forvisningens Flamme,
 snart hyllet i Mismodets snærende Spind;
 men Du var altid den samme.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112441">
+<text id="ipsen2017112441">
 <head>
     <title>November-Idyl</title>
     <firstline>Nu svinger Stormen sin Hundepisk</firstline>
@@ -2042,6 +2122,7 @@ men Du var altid den samme.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nu svinger Stormen sin Hundepisk,
 og Himlen vrider sin Skurevisk,
 og Blæsten boltrer sig som en Klown
@@ -2059,10 +2140,11 @@ En prægtig Musik, naar man véd for vist,
 at Solen er den, som har Magten tilsidst,
 og at dette Stormens brusende Spil
 er egenlig kun Ouverturen dertil.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112442">
+<text id="ipsen2017112442">
 <head>
     <title>Tilsnet Land</title>
     <firstline>Hvide Snebær, hvide Snebær</firstline>
@@ -2070,6 +2152,7 @@ er egenlig kun Ouverturen dertil.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvide Snebær, hvide Snebær,
 gulnet Græs og visne Straa,
 Rim paa Hækken, Is i Bækken,
@@ -2102,10 +2185,11 @@ atter spalte Luftens blaa,
 Blomsterduft og Brus af Kilder,
 Løb og Triller
 syngende mod Himlen slaa.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112443">
+<text id="ipsen2017112443">
 <head>
     <title>Klokken</title>
     <firstline>Nu fælder Skyen sin Taare</firstline>
@@ -2113,6 +2197,7 @@ syngende mod Himlen slaa.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nu fælder Skyen sin Taare
 ved Jordens tungsindige Bryst,
 og Klokken oppe i Taarnet
@@ -2157,10 +2242,11 @@ mens sitrende Stjerner smile
 gennem det visnende Løv:
 Hvil trygt i din dybe Slummer!
 Sov sødt, Du Menneskestøv!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112444">
+<text id="ipsen2017112444">
 <head>
     <title>Efter Døden</title>
     <firstline>Evighedens Tavshed hviler</firstline>
@@ -2168,6 +2254,7 @@ Sov sødt, Du Menneskestøv!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Evighedens Tavshed hviler
 om de lukte Øjelaage;
 paa de hvide Læber sove
@@ -2197,8 +2284,9 @@ Dagen titter gennem Ruden,
 der er Raab paa Livets Gader,
 ak, Imorgen spørger aldrig
 efter nogen Gaarsdags Døde.
+</poetry>
 </body>
-</poem>
+</text>
 
 <section>
 <head>
@@ -2206,7 +2294,7 @@ efter nogen Gaarsdags Døde.
 </head>
 <content>
 
-<poem id="ipsen2017112445">
+<text id="ipsen2017112445">
 <head>
     <title>Det gamle Hus</title>
     <firstline>Paa Bjælker hviler det gamle Hus</firstline>
@@ -2214,6 +2302,7 @@ efter nogen Gaarsdags Døde.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Paa Bjælker hviler det gamle Hus,
 Roser til Muren sig klynger,
 og i Rosens Top under Tagets Straa,
@@ -2248,10 +2337,11 @@ Det staar som i Drømme, det gamle Hus,
 Roser til Muren sig klynger,
 og højt under Taget i Rosens Top,
 dér sidder Svalen og synger.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112446">
+<text id="ipsen2017112446">
 <head>
     <title>I Klostersalen</title>
     <firstline>Jeg staar i det gamle Kloster</firstline>
@@ -2259,6 +2349,7 @@ dér sidder Svalen og synger.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg staar i det gamle Kloster
 og læser en gammel Bog,
 prentet med sirlige Snirkler
@@ -2303,13 +2394,14 @@ I Middagens lumre Stilhed
 en Lyd af Klokker mig naar.
 I Evighedsoceanet,
 hvad er nogle hundrede Aar?
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section>
 
-<poem id="ipsen2017112447">
+<text id="ipsen2017112447">
 <head>
     <title>Den gamle Klokke</title>
     <firstline>Højt over Verden</firstline>
@@ -2317,6 +2409,7 @@ hvad er nogle hundrede Aar?
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Højt over Verden
 i det højeste Taarn
 hænger en Klokke.
@@ -2342,10 +2435,11 @@ har lagt sig trygt
 i en lun Alkove,
 hvor alle Tider
 og Slægter sove.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112448">
+<text id="ipsen2017112448">
 <head>
     <title>Beruset</title>
     <firstline>Visselig er jeg beruset</firstline>
@@ -2353,6 +2447,7 @@ og Slægter sove.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Visselig er jeg beruset,
 o, men det er ikke Vinen,
 der har taaget denne Hjerne.
@@ -2364,10 +2459,11 @@ tidt i Kvælden til din Grotte;
 men jeg bad Dig ej om Druer,
 blot om én af dine Ranker
 til at svale Pandens Gløden.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112449">
+<text id="ipsen2017112449">
 <head>
     <title>Siesta</title>
     <firstline>I gyldengrønt og yppigt Græs</firstline>
@@ -2375,6 +2471,7 @@ til at svale Pandens Gløden.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I gyldengrønt og yppigt Græs
 jeg ligger blødt og strækker mig,
 Græshoppens Kastagnetter smaa
@@ -2389,10 +2486,11 @@ Kun Svalen kredser ganske lidt,
 en Kat langs Hegnet sniger sig,
 og hvad sig nærme nu for Skridt,
 for længst mit Hjærte siger mig.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112450">
+<text id="ipsen2017112450">
 <head>
     <title>Vinteraften</title>
     <firstline>Prægtigt! Prægtigt!</firstline>
@@ -2400,6 +2498,7 @@ for længst mit Hjærte siger mig.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Prægtigt! Prægtigt!
 Se hvor Solen synker,
 som en gyldenrød Kugle
@@ -2451,10 +2550,11 @@ lig et svævende Svanedun,
 mens en Vildgæsflok
 med langtrukkent Skrig
 flyver over den tilfrosne Sø.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112451">
+<text id="ipsen2017112451">
 <head>
     <title>Ved Aftentid</title>
     <firstline>Nu flammer Ilden i min Ovn</firstline>
@@ -2462,6 +2562,7 @@ flyver over den tilfrosne Sø.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nu flammer Ilden i min Ovn
 og Dagen synker i Vest
 og Himlen blinker som gylden Vin
@@ -2501,10 +2602,11 @@ vil holde Helligdag med eder,
 vil, som den tidt har gjort,
 glemme alle Verdens Bekymringer
 over en saadan tilbragt Time.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112452">
+<text id="ipsen2017112452">
 <head>
     <title>Foraarssymfoni I</title>
     <firstline>Mens vi ubekymrede</firstline>
@@ -2512,6 +2614,7 @@ over en saadan tilbragt Time.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Mens vi ubekymrede
 sorgløst drømmende
 vandre henad Vejen,
@@ -2565,10 +2668,11 @@ eller Bølgens perlende Drømme.
 Jeg har drømt en saadan,
 og i denne Drøm
 har min Sjæl fundet Hvile.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112453">
+<text id="ipsen2017112453">
 <head>
     <title>Foraarssymfoni II</title>
     <firstline>Nu blomstrer Orkideen i Skove</firstline>
@@ -2576,6 +2680,7 @@ har min Sjæl fundet Hvile.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nu blomstrer Orkideen i Skove,
 Guldstjernen vugger sig
 paa Bølgerne af det unge Græs.
@@ -2616,10 +2721,11 @@ vil jeg henrykt glemme,
 at Jorden har Vinter,
 alle de Skuffelser,
 Tiden bereder.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112454">
+<text id="ipsen2017112454">
 <head>
     <title>Kvietisme</title>
     <firstline>Tager bort Mangfoldighedens Prisme</firstline>
@@ -2627,6 +2733,7 @@ Tiden bereder.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Tager bort Mangfoldighedens Prisme,
 af Farvebrydninger er min Sjæl træt,
 i Beskuelsen af det evigt-ene
@@ -2659,10 +2766,11 @@ I Beskuelsen af det evigt-ene
 vil den sammenfolde sine Vinger,
 vil gemme sig i det fromme, hvide Lys,
 hvori alle Farver blunde.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112455">
+<text id="ipsen2017112455">
 <head>
     <title>Paa Altanen</title>
     <firstline>Dugvaad snoede</firstline>
@@ -2670,6 +2778,7 @@ hvori alle Farver blunde.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Dugvaad snoede
 den vilde Ranke
 sig om Altanen.
@@ -2725,10 +2834,11 @@ mens Stjernerne sluktes
 én efter anden,
 listed sig ind i
 Himlens Gemakker.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ipsen2017112456">
+<text id="ipsen2017112456">
 <head>
     <title>Til Friheden</title>
     <firstline>O Frihed, hellige Frihed</firstline>
@@ -2736,6 +2846,7 @@ Himlens Gemakker.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 O Frihed, hellige Frihed,
 forstødt i tusinde Aar,
 naar kommer Du vældig med Svøben
@@ -2805,8 +2916,9 @@ O Frihed, hellige Frihed,
 forskudt i tusinde Aar,
 sig, kommer Du snart med Svøben
 at rense din Tempelgaard?
+</poetry>
 </body>
-</poem>
+</text>
 
 
 </workbody>

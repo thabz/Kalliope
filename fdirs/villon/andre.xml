@@ -9,7 +9,7 @@
 </workhead>
 <workbody>
 
-<poem id="villon2002021701">
+<text id="villon2002021701">
 <head>
    <title>Ballade des Dames du Temps Jadis</title>
    <toctitle>Ballade des Dames du Temps Jadis</toctitle>
@@ -21,6 +21,7 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Dictes-moy où, n'en quel pays,
 Est Flora, la belle Rommaine;
 Archipiades, ne Thaïs,
@@ -54,16 +55,18 @@ Prince, n'enquérez de sepmaine
 Où elles sont, ne de cest an,
 Que ce reffrain ne vous remaine:
 Mais où sont les neiges d'antan!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="villon2017100701">
+<text id="villon2017100701">
 <head>
    <title>Ballade Villon</title>
    <firstline>Je meurs de soif auprès de la fontaine</firstline>
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Je meurs de soif auprès de la fontaine,
 Chauld comme feu, et tremble dent à dent,
 En mon païs suis en terre loingtaine ;
@@ -104,10 +107,11 @@ Que j’entens moult et n’ay sens ne sçavoir ;
 Parcial suis, à toutes lois commun.
 Que fais-je plus ? Quoy ? Les gaiges ravoir,
 Bien recueilly, debouté de chascun.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="villon2020010401">
+<text id="villon2020010401">
 <head>
     <title>Le Petit Testament</title>
     <firstline>Mil quatre cens cinquante six</firstline>
@@ -116,6 +120,7 @@ Bien recueilly, debouté de chascun.
     </notes>
 </head>
 <body>
+<poetry>
 I.
 
 Mil quatre cens cinquante six,
@@ -557,8 +562,9 @@ Et n’a mais q’un peu de billon,
 Qui sera tantost à fin mys.
 
 cy fine le testament Villon.
+</poetry>
 </body>
-</poem>
+</text>
 
 
 </workbody>

@@ -8,7 +8,7 @@
 </workhead>
 <workbody>
 
-<poem id="kellgren2018073101">
+<text id="kellgren2018073101">
 <head>
    <title>Varning till Zemir</title>
    <firstline>Zemir! hur länge tror du väl</firstline>
@@ -18,6 +18,7 @@
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
     Zemir! hur länge tror du väl 
     Naturens lagar strafflöst kränka? 
     Hur länge, spotsk i ditt befäl,
@@ -71,10 +72,11 @@ Zemir! allt, allt förgås. En natt... en kylig fläkt...
 »Natur! ack huru grym du i din delning är! 
 Vi skall du ömt begär, förutan ungdom giva? 
     Och ungdom, utan ömt begär?«
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kellgren2018073102">
+<text id="kellgren2018073102">
 <head>
    <title>Saknaden</title>
    <firstline>Ensam, i min hyddas famn</firstline>
@@ -84,6 +86,7 @@ Vi skall du ömt begär, förutan ungdom giva?
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ensam, i min hyddas famn, 
 Med min saknad innesluten, 
 Ögat skumt och rösten bruten, 
@@ -110,16 +113,18 @@ Jämte dig, jag ej förskräcktes
 För Tartarens gruvlighet;
 Utom dig, min ledsnad väcktes 
 Vid Serafers salighet.    
+</poetry>
 </body>
-</poem>
+</text>
 
 
-<poem id="kellgren2020013001">
+<text id="kellgren2020013001">
 <head>
     <title>Mina löjen</title>
     <firstline>Jag ler - o gudar, nöjets gudar!</firstline>
 </head>
 <body>
+<poetry>
 Jag ler - o gudar, nöjets gudar!
 Er anblick föder mig på nytt:
 I mina tankars klädnad bytt
@@ -474,8 +479,9 @@ Håll upp! - Jag nog min dårskap ser;
 Jag, som en ann, åt svaghet skattar,
 och då jag högt åt andra skrattar,
 jag åt mig själv i tysthet ler.    
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

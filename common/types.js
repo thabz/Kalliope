@@ -34,10 +34,11 @@ type TextContentLine = Array<string>; // TODO: Make this more precise
 export type TextContentType = Array<TextContentLine>;
 
 export type TextContentOptions = {
-  isBible?: boolean,
-  isFolkevise?: boolean,
   highlightBibleVerses?: ?{ from: number, to: number },
-  isPoetry?: boolean,
+  highlight?: { from: number, to: number },
+  marginLeft?: string,
+  marginRight?: string,
+  fontSize?: string,
 };
 
 export type Poet = {
@@ -173,8 +174,8 @@ export type Text = {
   id: string,
   title: string,
   title_prefix?: string,
-  linkTitle: string,
-  text_type: 'prose' | 'poem' | 'section',
+  linktitle: string,
+  text_type: 'text' | 'section',
   toc?: Array<TocItem>,
   subtitles?: Array<TextContentType>,
   suptitles?: Array<TextContentType>,
@@ -182,11 +183,20 @@ export type Text = {
   refs: Array<TextContentType>,
   variants: Array<TextContentType>,
   pictures: Array<PictureItem>,
-  content_html: TextContentType,
+  blocks: [
+    {
+      lines: TextContentType,
+      type: 'poetry' | 'prose' | 'quote',
+      options: {
+        marginLeft?: string,
+        marginRight?: string,
+        fontSize?: string,
+      },
+    }
+  ],
   content_lang: TextLang,
   keywords: Array<KeywordRef>,
   has_footnotes: boolean,
-  is_prose: boolean,
   source?: TextSource,
   unknown_original?: {
     poetId: PoetId,

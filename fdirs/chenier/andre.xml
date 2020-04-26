@@ -8,13 +8,14 @@
 </workhead>
 <workbody>
 
-<poem id="chenier2018083101">
+<text id="chenier2018083101">
 <head>
    <title>A la liberté</title>
    <firstline>Descends, ô liberté ! fille de la nature</firstline>
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Descends, ô liberté ! fille de la nature : 
 Le peuple a reconquis son pouvoir immortel ;
 Sur les pompeux débris de l'antique imposture
@@ -39,15 +40,17 @@ Au peuple souverain tous les rois font la guerre ;
 Qu'à tes pieds, ô déesse, ils tombent désormais ! 
 Bientôt sur les cercueils des tyrans de la terre 
 Les peuples vont jurer la paix.    
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="chenier2020011001">
+<text id="chenier2020011001">
 <head>
     <title>Le Chant du départ</title>
     <firstline>La victoire en chantant</firstline>
 </head>
 <body>
+<poetry>
 La victoire en chantant
 Nous ouvre la barrière.
 La Liberté guide nos pas.
@@ -110,8 +113,9 @@ Plongeant l'infâme royauté,
 Les Français donneront au monde
 Et la paix et la liberté.        
         
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

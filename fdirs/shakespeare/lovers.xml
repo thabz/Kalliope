@@ -14,7 +14,7 @@
 </workhead>
 <workbody>
 
-<poem id="shakespeare2000030701">
+<text id="shakespeare2000030701">
 <head>
    <title>A Lover's Complaint</title>
    <toctitle>A Lover's Complaint</toctitle>
@@ -23,6 +23,7 @@
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
+<poetry>
 From off a hill whose concave womb reworded
 A plaintful story from a sist'ring vale,
 My spirits t'attend this double voice accorded,
@@ -399,7 +400,8 @@ O, that sad breath his spongy lungs bestowed!
 O, all that borrow'd motion, seeming owed,
 Would yet again betray the fore-betray'd,
 And new pervert a reconciled maid."
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>
