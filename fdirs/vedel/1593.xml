@@ -1,16 +1,32 @@
-KILDE:Anders Sørensen Vedel: _Siu Gudelige Penitentze Psalmer_, Hans Stockelman, Kbh., 1593.
-DIGTER:vedel
-FACSIMILE:1593.pdf
-FACSIMILE-SIDER:61
-TITELBLAD:Siu Gudelige / Peniteentze / Psalmer // Som ere skreffne aff den høylærde oc naffnkundige / Francisco Petrarca Florentino, mere end for tu hundrede Aar / forleden // mit vdi Paffuedommet. / Nu nylige fordansket. // Anno / M. D. XCIII.
-NOTE:For læsbarhedens skyld benyttes indledende J i transkriptionen fra fraktur til latinsk.
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
+<kalliopework id="1593" author="vedel" status="complete" type="poetry">
+<workhead>
+    <title>Siu Gudelige Penitentze Psalmer</title>
+    <year>1593</year>
+    <notes>
+        <note>For læsbarhedens skyld benyttes indledende J i transkriptionen fra fraktur til latinsk.</note>
+        <note>Teksten følger Anders Sørensen Vedel: <i>Siu Gudelige Penitentze Psalmer</i>, Hans Stockelman, Kbh., 1593.</note>
+    </notes>
+    <pictures>
+        <picture src="1593-p1.jpg">Titelbladet til <i>Siu Gudelige Penitentze Psalmer</i> (1593) lyder ,,Siu Gudelige / Peniteentze / Psalmer // Som ere skreffne aff den høylærde oc naffnkundige / Francisco Petrarca Florentino, mere end for tu hundrede Aar / forleden // mit vdi Paffuedommet. / Nu nylige fordansket. // Anno / M. D. XCIII.''.</picture>
+    </pictures>
+    <source facsimile="1593.pdf" facsimile-pages-num="61" facsimile-pages-offset="10">Anders Sørensen Vedel: <i>Siu Gudelige Penitentze Psalmer</i>, Hans Stockelman, Kbh., 1593.</source>
+</workhead>
+<workbody>
 
-T:Den Første Psalme
-F:Ah ieg elendige Menniske, at ieg haffuer fortørnit min Frelsere
-SIDE:2-10
-TYPE:prose
+<text id="vedel2020042701">
+<head>
+    <title>Den Første Psalme</title>
+    <firstline>Ah ieg elendige Menniske, at ieg haffuer fortørnit min Frelsere</firstline>
+    <source pages="2-10"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<prose>
 Dette Første Psalme er en ydmyg bekiendelse / i huilcken hand bekiender for Gud / at hand aff egen fri villie oc vidskab er henfalden vdi Synd oc Ondskab / Oc der met førd sig selff baade vdi Liffs oc Siæls fare / Oc opuact Gud til Retferdig vrede oc heffn offuer sig. Huilcket hand ocsaa affbeder / oc begerer Barmhiertighed til Syndernis forladelse / oc hielp oc bistand til at afflegge Syndsens Aag / oc affskilies fra Syndsens forargelige væsen oc seduane.
-TYPE:prose
+</prose>
+<prose>
 <num>1.</num>AH ieg elendige Menniske / at ieg haffuer fortørnit min Frelsere / De traadselige foractit hans Bud.
 <num>2.</num>Met villie oc vidskab / haffuer ieg forlat den rette ven / oc er vijt oc bret omført paa den vildfarende vey.
 <num>3.</num>Allehaande wføre oc vanskelighed haffuer ieg igennem gaait / oc alleuegne møtte mig Arbeide oc Banghed.
@@ -38,15 +54,25 @@ TYPE:prose
 <num>25.</num>Jeg maa dø vdi mine Synder / vden saa skeer / at ieg fanger Vndsetning aff det Høye.
 <num>26.</num>Jeg bekiender vel / at ieg haffuer det icke forskylt / Men forbarme dig alligeuel offuer mig O HERRE / oc reck mig fortabte din naadige Haand.
 <num>27.</num>Tenck paa dine Foriettelser / oc frelss mig fra Helffuedis Affgrund.
-TYPE:prose
+</prose>
+<prose>
 Ære vere Gud Fade / Søn / oc hellig Aand / som verit haffuer aff begyndelsen / oc nu er / altid oc euindelig / Amen.
+</prose>
+</body>
+</text>
 
-T:Den Anden Psalme
-F:Jeg vil paakalde haanom, som ieg haffuer fortørnit tilforn
-SIDE:10-16
-TYPE:prose
+<text id="vedel2020042702">
+<head>
+    <title>Den Anden Psalme</title>
+    <firstline>Jeg vil paakalde haanom, som ieg haffuer fortørnit tilforn</firstline>
+    <source pages="10-16"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<prose>
 DEnne Psalme er en ydmyg oc alvorlig Bøn / vdi huilcken hand proser Guds Naade oc Almectighed / oc begierer at Gud vil aff sin godhed oc mact omuende hannom / at han maa rettelige begræde oc fortryde sine Synder / Trøste sig vdi God / oc bliffue vdi hans Bolig / i dette oc det evige Liff.
-TYPE:prose
+</prose>
+<prose>
 <num>1.</num>JEg vil paakalde haanom / som ieg haffuer fortørnit tilforn / oc icke frycte mig. Jeg vil kalde hannom tilbage / som ieg før foractede / oc icke bluis der ved.
 <num>2.</num>Jeg vil oprette mit haab oc mod / som vaar nedslagen / Oc dristelig opløffte mine Øyne / fra mørckhed til Himmelen.
 <num>3.</num>Der boer min Frelsere / som er mectig til at vdfri aff Helffuede.
@@ -65,16 +91,26 @@ TYPE:prose
 <num>16.</num>Mit Soffuekamer skal vere min Skærsild / oc min Seng skal vidne om min Graad.
 <num>17.</num>Jeg vil giøre Penitentz i dette Liff / før end ieg Hoffuitkulds henryckis til Helffuede.
 <num>18.</num>O HERRE forbarme dig offuer mig / Forbarme dig offuer mig / oc forlad icke din gierning / min Frelsere oc mit yderste Haab.
-TYPE:prose
+</prose>
+<prose>
 Ære vere Gud Fader / Søg / oc hellig Aand / som verit haffuer aff begyndelsen / oc nu er / altid oc euindelig / Amen.
+</prose>
+</body>
+</text>
 
-T:Den Tredie Psalme
-F:O HERRE forbarme dig offuer mig sorgfulde oc bedrøffude Syndere
-SIDE:16-21
-TODO:Prosa i mindre font.
-TYPE:prose
+<text id="vedel2020042703">
+<head>
+    <title>Den Tredie Psalme</title>
+    <firstline>O HERRE forbarme dig offuer mig sorgfulde oc bedrøffude Syndere</firstline>
+    <source pages="16-21"/>
+    <!-- TODO: Prosa i mindre font. -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<prose>
 DEnne Psalme er it klagemaal / vdi huilcket hand klager offuer all den Anfecting oc Fristelse / som hannom paakomer / baade vdi Sind oc Hierte. Thi beder Gud / at hand vil fri hannom fra Dieffuelens Tyranni / Oc kræfftelige føre haanom paa Salighedsens vey / oc vnde hanom at bliffue bestandig der paa / indtil det kommer met hannom til en god ende.
-TYPE:prose
+</prose>
+<prose>
 <num>1.</num>O HERRE forbarme dig offuer mig sorgfulde oc bedrøffude Syndere / Jeg er nu lenge nock / ia mere end nock omførd / oc foruisnet vdi mine Synders Pøle oc Slemhed.
 <num>2.</num>Huort skal ieg arme Menniske hen? Tider er wnyttelige spilt / Oc mit Leffnit er fortærit vdi lang beraad.
 <num>3.</num>Døden er for mine øyne. Graffuen min sidste Bolig / Ja Tendgnidsel oc Helffuedis hyldelse ere for mig.
@@ -87,16 +123,26 @@ TYPE:prose
 <num>10.</num>Før mig paa dine veye / før end Solen gaar ned. Thi det lacker imod Afftenen / oc Røffuere elske Nattens mørckhed.
 <num>11.</num>Er det icke nock / at du kalder mig / da tuving mig / Eller huorledis dig selff siunis gaat at vere / paa det at ieg io icke skal forfaris.
 <num>12.</num>O HERRE see dog til mig / forbarme dig offuer mig / Thi du allene forstaar dig best paa alle Menniskis elendighed.
-TYPE:prose
+</prose>
+<prose>
 Ære vere Gud Fader / Søn / oc hellig Aand / som verit haffuer af begyndelsen / oc nu er / altid oc euindelig / Amen.
+</prose>
+</body>
+</text>
 
-T:Den Fierde Psalme
-F:O Gud, Jeg vil betencke oc opregne dine Velgierninger
-SIDE:21-29
-TODO:Prosa i mindre font.
-TYPE:prose
+<text id="vedel2020042704">
+<head>
+    <title>Den Fierde Psalme</title>
+    <firstline>O Gud, Jeg vil betencke oc opregne dine Velgierninger</firstline>
+    <source pages="21-29"/>
+    <!-- TODO: Prosa i mindre font. -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<prose>
 DEnne Fierde Psalme / Er en Tacksigelse / for alle de mangfoldige Velgierninger / som Gud beuiser det gantske Menniskelige Kiøn / baade i almindelighed / oc huor serdelis vdi sin sted. Men effterdi største parten findis wtacknemmelig for saadanne Gaffuer oc Velgierninger / bør huer at bekiende sin wuærdighed oc forsømmelse / oc bee GUD om Naade oc Forladelse.
-TYPE:prose
+</prose>
+<prose>
 <num>1.</num>O Gud / Jeg vil betencke oc opregne dine Velgierninger / Paa det at ieg kand staa skam rød vdi mit Ansict.
 <num>2.</num>Jeg maatte end vere saa megit nærmere din Barmhiertighed / naar du formercker / at ieg haffuer icke end aldelis forgiæt / hues du runde HERRE haffuer beuist mig.
 <num>3.</num>Du haffuer skabt Himmelen oc Stiernerne / mig til gode / oc forordinerit Aarsens tider for min skyld. Thi huad haffde du saadant behoff.
@@ -116,19 +162,29 @@ TYPE:prose
 <num>17.</num>Du haffuer beskickit mig en tro Metfølgerer oc Ledsagere / som idelige skal vare paa mig. Du seer aff det Høye alle mine Gierninger / oc mercker mine vildfarelser.
 <num>18.</num>De drogst mig tilbage der ieg snublede. Du holt paa mig der ieg vaar paa fald. Du førde mig paa den rette vey / der ieg foer vild. Du halpst mig op / der ieg laa. Du opuacte mig / der ieg vaar død.
 <num>19.</num>Saa offte haffuer du forbarmet dig offuer mig vdi min Elendighed / Der som ieg dog megit mere haffde fortient din vrede / end din Barmhiertighed.
-<num>20.</num>Oc huad kunde min værdskyld eller fortieniste vere? At ieg wuærdige haffuer faait saadanne dyrebare oc wsigelige store Velgierninger aff dig? 
+<num>20.</num>Oc huad kunde min værdskyld eller fortieniste vere? At ieg wuærdige haffuer faait saadanne dyrebare oc wsigelige store Velgierninger aff dig?
 <num>21.</num>Du seer vel huad ieg haffuer beuist dig for disse dine gode gaffuer. Men forbarme dig dog endnu offuer mig / oc hielp mig. Thi der som du icke giør mig bestand / da er det vde met mig som met it Lius.
 <num>22.</num>Tenck icke ydermere paa min Wtacknemmelighed / men frels min Siæl / som veed sig nu aldelig ingen ydermere fortrøstning / vdi sin egen styrcke oc krafft.
-TYPE:prose
+</prose>
+<prose>
 Ære være Gud Fader / Søn / oc hellig Aand / som verit haffuer aff begyndelsen / oc nu er / altid oc euindelig / Amen.
+</prose>
+</body>
+</text>
 
-T:Den Femte Psalme
-F:Mine Nætter drager ieg igennom vdi idel bedrøffuelse
-SIDE:30-33
-TODO:Prosa i mindre font.
-TYPE:prose
+<text id="vedel2020042705">
+<head>
+    <title>Den Femte Psalme</title>
+    <firstline>Mine Nætter drager ieg igennom vdi idel bedrøffuelse</firstline>
+    <source pages="30-33"/>
+    <!-- TODO: Prosa i mindre font. -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<prose>
 DEnne Psalme er moxen eens met den Tredie. Thi han opregnes her / som tilforn / atskillige Fristelser / forhindring oc besuæring / som hannom paaføris aff sine egne Kiødelige begieringer / aff Verden / oc aff Dieffuelens grumme Tyrannni: Oc flyer derfaare til Gud allene / oc beder hannom / at hand vil snarlige komme hannom til hielp / oc endelige frelse hannom / for sin Barmhiertigheds skyld.
-TYPE:prose
+</prose>
+<prose>
 <num>1.</num>MIne Nætter drager ieg igennom vdi idel bedrøffuelse. Wtallige forskreckelser plage mig. Min samuittighed nagger mig / saa ieg kand icke soffue. Jeg er stedt vdi megen banghed.
 <num>2.</num>Min Søffn forstyris aff atskillige Spøgelse / som mig kommer saare / oc giøre mig stor møye / oc giffuer mig ingen ro. Det er mig it tegen til en gruelig offuerhengende vaade.
 <num>3.</num>HERRE kom mig til hielp / oc afsuend dette / Thi det betyder det betyder mig ellers it kaart Leffnit.
@@ -139,16 +195,26 @@ TYPE:prose
 <num>8.</num>Saa er ieg vdi min dube søffn oc tryghed wforuarendis offuerfalden i Nattens mørckhed.
 <num>9.</num>Jeg finder ingen Saligheds fortrøstning vdi mig selff / oc veed mig ingen vndsetning fra nogen sted at foruente / vden allene HERRE / at ieg haabet paa din Barmhiertighed.
 <num>10.</num>Vndset mig / Skynde dig / kom mig til hielp / oc forbarme dig offuer mig.
-TYPE:prose
+</prose>
+<prose>
 Ære være Gud Fader / Søn / oc hellig Aand / som verit haffuer aff begyndelsen / oc nu er / altid oc euindelig / Amen.
+</prose>
+</body>
+</text>
 
-T:Den Siette Psalme
-F:Mine Modstandere haffue slagit deris Vognborg omkring mig
-SIDE:33-38
-TODO:Prosa i mindre font.
-TYPE:prose
+<text id="vedel2020042706">
+<head>
+    <title>Den Siette Psalme</title>
+    <firstline>Mine Modstandere haffue slagit deris Vognborg omkring mig</firstline>
+    <source pages="33-38"/>
+    <!-- TODO: Prosa i mindre font. -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<prose>
 HAnd klager atter vdi denne Siette Psalme / offuer sin egen forseelse oc Naturs vanartighed / oc offuer Dieffuelens Mord oc Tyranni: Oc kiender derfaare HERREN for sin eniste Nødhielpere / oc beder hannom / at hand vil helbrede / beuare oc frelse hannom aff sine Fienders Haand.
-TYPE:prose
+</prose>
+<prose>
 <num>1.</num>MIne Modstandere haffue slagit deris Vognborg omkring mig / oc trenge ind paa mig / met atskillige Skud oc Vaaben paa alle sider.
 <num>2.</num>Jeg haffuer mist baade Mod oc maal / ligeruis som ieg skulde dø paa stand.
 <num>3.</num>Jeg haffuer icke giffuit act paa Solens opgang / oc foruentit mig hielp / deden som mig burde / oc ey heller verit saa stadig i mit Haab / som tilbørligt vaar.
@@ -161,16 +227,25 @@ TYPE:prose
 <num>10.</num>Thi du min kiere Frelsere leffuer / oc endog du saast alt dette aff den høye Himmel / saa taged du dog stille / oc lodst dit taal her til. Thi det vaar min fortiente løn.
 <num>11.</num>Maa vel ske / du haffuer end vel selff metynckoffuer mig / oc tilsteder dem icke / at de faa fremgang til at endeligen forderffue mig. Thi Døden lyder oc frycter ingen / vden dig / du Allmectige allene.
 <num>12.</num>Du skalt affuerie de de Blodgerige / som tørste effter min forderffuelse.Thi mit Haab er stort til dig. Du skalt frelse mig fra de wgudeligis Hender.
-TYPE:prose
+</prose>
+<prose>
 Ære være Gud Fader / Søn / oc hellig Aand / som verit haffuer aff begyndelsen / oc nu er / altid oc euindelig / Amen.
+</prose>
+</body>
+</text>
 
-T:Den Siuende Psalme
-F:
-SIDE:38-46
-TODO:Prosa i mindre font.
-TYPE:prose
+<text id="vedel2020042707">
+<head>
+    <title>Den Siuende Psalme</title>
+    <source pages="38-46"/>
+    <!-- TODO: Prosa i mindre font. -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<prose>
 VDi denne Siuende Psalme siger hand / huad Aarsag der haffuer verit til hans mangfoldige syndfald / som er / denne ene besynderlige for de andre / at hand haffuer fordristet for megit paa sin egen styrcke oc kloghed / oc forgiæt at tage Gud til hielp oc bistand. Thi bekiender hand sin skadelige vildfarelse / oc flyer til Christum om hielp / at hoffmodigheds Aand kand dempis i hannom / oc hand maa kiende sin egen wformuenhed / oc forlade sig paa Gud / oc bliffue bestandig indtil enden.
-TYPE:prose
+</prose>
+<prose>
 <num>1.</num>JEG tenckte at staa der ieg falt / vee mig / Thi ieg er ynckelige støt oc knusit.
 <num>2.</num>Jeg gruer for mig selff / oc beffrer saare / Naar ieg tencker paa den sted / fra huilcken ieg kom / oc til den som ieg er nu henfalden.
 <num>3.</num>Jeg fordristede paa min styrcke / oc forhaabede nogit synderligt om mig selff.
@@ -193,29 +268,40 @@ TYPE:prose
 <num>20.</num>Jeg er icke endnu kommen ret paa Benene igen / Men trengis aff wsigelig Genuordighed.
 <num>21.</num>Saa lenge velter oc smitter ieg mig vdi blodige Synder / oc ligger vdi mine wreene begieringers Pøle.
 <num>22.</num>Frels mig her aff / O kiere JESV CHRIste / styrck oc stercke mig naadelige / at ieg icke skal falde paa det yderste.
-TYPE:prose
+</prose>
+<prose>
 Ære være GUD Fader / Søn / oc hellig Aand / som verit haffuer aff begyndelsen / oc nu er / altid oc euindelig / Amen.
+</prose>
+</body>
+</text>
 
-T:En Gudelig Bøn
-U:til at bede Gud om Syndernis forladelse.
-F:O BArmhiertige Naadefulde trofaste Gud
-SIDE:47-50
-NOTE:Linjeskift indsat for læsebarhedens skyld.
-
+<text id="vedel2020042708">
+<head>
+    <title>En Gudelig Bøn</title>
+    <subtitle>til at bede Gud om Syndernis forladelse.</subtitle>
+    <firstline>O BArmhiertige Naadefulde trofaste Gud</firstline>
+    <notes>
+        <note>Linjeskift indsat for læsebarhedens skyld.</note>
+    </notes>
+    <source pages="47-50"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 O BArmhiertige Naadefulde trofaste Gud /
 Kiere himmelske Fader /
 Forbarme dig offuer off arme Syndere /
 Handle icke met oss effter vore synder /
-Betal oss icke effter core Misgierninger. 
+Betal oss icke effter core Misgierninger.
 Men handle met oss effter din grundløse Godhed /
 Naade oc Barmhiertighed /
-Forlad oss alle vore synder oc offuertrædelser / 
-Anamme oss til dit Venskab. / 
+Forlad oss alle vore synder oc offuertrædelser /
+Anamme oss til dit Venskab. /
 Metdele oss din værdige hellig Aand /
 som oss stedse oc altid kand styre oc regere /
 oc styrcke vdi Troen /
 En god Samvittighed /
-oc it Christeligt forset. 
+oc it Christeligt forset.
 Beuar oss i denne Dag oc huer Dag /
 fra Synd oc fra Sorrig /
 fra alle vore Fiernder oc Wuenner /
@@ -226,8 +312,14 @@ at wi arme Menniske skulle skillies fra denne Jammerlige Dal /
 Da giff oss en Christelig affsked /
 En glædelige Opstandelse paa en yderste Dommedag /
 Himmerige oc det euige Liff /
-Oc det for din elskelige 
-Eenbaarne Søns 
+Oc det for din elskelige
+Eenbaarne Søns
 Jesu Christi
 skyld /
 AMEN.
+</poetry>
+</body>
+</text>
+
+</workbody>
+</kalliopework>
