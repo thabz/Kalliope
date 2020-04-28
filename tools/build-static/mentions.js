@@ -252,7 +252,9 @@ const build_mentions_json = (collected) => {
         })
         .filter((id) => {
           const isAlsoTranslation = seenTranslations.has(id);
-          console.log(`Translation ${id} has superfluous mention.`);
+          if (isAlsoTranslation) {
+            console.log(`Translation ${id} has superfluous mention.`);
+          }
           return !isAlsoTranslation;
         })
         .map(build_html);
