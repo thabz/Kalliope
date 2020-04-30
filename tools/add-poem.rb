@@ -61,7 +61,7 @@ puts "Poem id #{poemId}"
 
 contents = File.read(workfilename)
 prefix = ""
-if not contents.include?("<poem")
+if not contents.include?("<text")
     prefix = "\n"
 end
 
