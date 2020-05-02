@@ -1243,7 +1243,9 @@ Og hvad vil du have meer?
     <subtitle>Frit efter Gotter</subtitle>
     <firstline>Jeg kiendte ei fordum til Kjerligheds Magt</firstline>
     <source pages="58"/>
-    <!-- TODO: Find Gotters original. -->
+    <notes>
+        <note unknown-original-by="gotter" />
+    </notes>
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3933,9 +3935,11 @@ Atter en Verden staae frem ved det besjælende Smil?
     <title>Det mindste Onde</title>
     <subtitle>Efter Göthe</subtitle>
     <firstline>Viger, o Sorger, fra mig, men ak, den støvklædte Pilgrim</firstline>
+    <notes>
+        <note unknown-original-by="goethe" />
+    </notes>
     <source pages="193" facsimile-pages="205" />
     <keywords>goethe</keywords>
-    <!-- TODO: Find Goethes original. -->
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
