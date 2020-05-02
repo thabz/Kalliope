@@ -18,69 +18,65 @@ const {
 const { get_picture } = require('./parsing.js');
 const { build_museum_url } = require('./museums.js');
 
-const readArtworkFile = async (personId, artworkFilename) => {
+const readArtworkFile = async (personId, artworkFilename, collected) => {
   const artworksDoc = loadXMLDoc(artworkFilename);
-  if (artworksDoc != null) {
-    return await Promise.all(
-      getElementsByTagName(artworksDoc, 'picture').map(
-        async (picture) => {
-          const pictureId = safeGetAttr(picture, 'id');
-          const subjectAttr = safeGetAttr(picture, 'subject');
-          let subjects =
-            subjectAttr != null ? subjectAttr.split(',') : [];
-          const year = safeGetAttr(picture, 'year');
-          if (pictureId == null) {
-            throw `fdirs/${personId}/artwork.xml har et billede uden id-attribut.`;
-          }
-          subjects.forEach((subjectId) => {
-            // Make sure we rebuild the affected bio page.
-            markFileDirty(`fdirs/${subjectId}/portraits.xml`);
-          });
-          let description = null;
-          let note = null;
-          if (getChildByTagName(picture, 'description') != null) {
-            description = safeGetInnerXML(
-              getChildByTagName(picture, 'description')
-            );
-            note = safeGetInnerXML(
-              getChildByTagName(picture, 'picture-note')
-            );
-          } else {
-            description = safeTrim(safeGetInnerXML(picture));
-          }
+  return await Promise.all(
+    getElementsByTagName(artworksDoc, 'picture').map(async (picture) => {
+      const pictureId = safeGetAttr(picture, 'id');
+      const subjectAttr = safeGetAttr(picture, 'subject');
+      let subjects = subjectAttr != null ? subjectAttr.split(',') : [];
+      const year = safeGetAttr(picture, 'year');
+      if (pictureId == null) {
+        throw `fdirs/${personId}/artwork.xml har et billede uden id-attribut.`;
+      }
+      subjects.forEach((subjectId) => {
+        // Make sure we rebuild the affected bio page.
+        markFileDirty(`fdirs/${subjectId}/portraits.xml`);
+      });
+      let description = null;
+      let note = null;
+      if (getChildByTagName(picture, 'description') != null) {
+        description = safeGetInnerXML(
+          getChildByTagName(picture, 'description')
+        );
+        note = safeGetInnerXML(getChildByTagName(picture, 'picture-note'));
+      } else {
+        description = safeTrim(safeGetInnerXML(picture));
+      }
 
-          const src = `/static/images/${personId}/${pictureId}.jpg`;
-          const size = await imageSizeSync(src.replace(/^\//, ''));
-          const remoteUrl = build_museum_url(picture, collected);
-          const museumId = safeGetAttr(picture, 'museum');
-          const clipPath = safeGetAttr(picture, 'clip-path');
-          const artworkId = `${personId}/${pictureId}`;
-          const artist = collected.poets.get(personId);
-          const content_raw = safeGetInnerXML(picture).trim();
-          const artworkJson = {
-            id: `${personId}/${pictureId}`,
-            artistId: personId,
-            artist,
-            museum: collected.museums.get(museumId),
-            remoteUrl,
-            lang: person.lang,
-            src,
-            size,
-            clipPath,
-            content_lang: 'da',
-            subjects,
-            year,
-            content_raw,
-            content_html: htmlToXml(description, collected),
-            note_html: htmlToXml(note, collected),
-          };
-          collected_artwork.set(artworkId, artworkJson);
-        }
-      )
-    );
-  }
-}
-}
+      const src = `/static/images/${personId}/${pictureId}.jpg`;
+      const size = await imageSizeSync(src.replace(/^\//, ''));
+      const remoteUrl = build_museum_url(picture, collected);
+      const museumId = safeGetAttr(picture, 'museum');
+      const clipPath = safeGetAttr(picture, 'clip-path');
+      const content_raw = safeGetInnerXML(picture).trim();
+      const result = {
+        id: `${personId}/${pictureId}`,
+        remoteUrl,
+        src,
+        size,
+        clipPath,
+        content_lang: 'da',
+        subjects,
+        year,
+        content_raw,
+        content_html: htmlToXml(description, collected),
+        note_html: htmlToXml(note, collected),
+      };
+      if (personId != 'kunst') {
+        result.artist = collected.poets.get(personId);
+        result.artistId = personId;
+      }
+      if (museumId != null) {
+        result.museum = collected.museums.get(museumId);
+      }
+      if (clipPath != null) {
+        result.clipPath = clipPath;
+      }
+      return result;
+    })
+  );
+};
 
 const build_artwork = async (collected) => {
   let collected_artwork = globalForceReload
@@ -109,9 +105,11 @@ const build_artwork = async (collected) => {
             collected_artwork.delete(k);
           });
 
-          readArtworkFile(personId, artworkFilename).forEach(artwork => {
+        (await readArtworkFile(personId, artworkFilename, collected)).forEach(
+          (artwork) => {
             collected_artwork.set(artwork.id, artwork);
-          })
+          }
+        );
       }
       if (force_reload || isFileModified(portraitsFile)) {
         // Fjern eksisterende portraits fra cache (i tilfælde af id er slettet)
@@ -156,64 +154,11 @@ const build_artwork = async (collected) => {
         }
       }
 
-      // From data/artwork.xml
-      const artworksDoc = loadXMLDoc('data/artwork.xml');
-      if (artworksDoc != null) {
-        await Promise.all(
-          getElementsByTagName(artworksDoc, 'picture').map(async (picture) => {
-            const pictureId = safeGetAttr(picture, 'id');
-            const subjectAttr = safeGetAttr(picture, 'subject');
-            let subjects = subjectAttr != null ? subjectAttr.split(',') : [];
-            const year = safeGetAttr(picture, 'year');
-            if (pictureId == null) {
-              throw `fdirs/${personId}/artwork.xml har et billede uden id-attribut.`;
-            }
-            subjects.forEach((subjectId) => {
-              // Make sure we rebuild the affected bio page.
-              markFileDirty(`fdirs/${subjectId}/portraits.xml`);
-            });
-            let description = null;
-            let note = null;
-            if (getChildByTagName(picture, 'description') != null) {
-              description = safeGetInnerXML(
-                getChildByTagName(picture, 'description')
-              );
-              note = safeGetInnerXML(
-                getChildByTagName(picture, 'picture-note')
-              );
-            } else {
-              description = safeTrim(safeGetInnerXML(picture));
-            }
-
-            const src = `/static/images/${personId}/${pictureId}.jpg`;
-            const size = await imageSizeSync(src.replace(/^\//, ''));
-            const remoteUrl = build_museum_url(picture, collected);
-            const museumId = safeGetAttr(picture, 'museum');
-            const clipPath = safeGetAttr(picture, 'clip-path');
-            const artworkId = `${personId}/${pictureId}`;
-            const artist = collected.poets.get(personId);
-            const content_raw = safeGetInnerXML(picture).trim();
-            const artworkJson = {
-              id: `${personId}/${pictureId}`,
-              artistId: personId,
-              artist,
-              museum: collected.museums.get(museumId),
-              remoteUrl,
-              lang: person.lang,
-              src,
-              size,
-              clipPath,
-              content_lang: 'da',
-              subjects,
-              year,
-              content_raw,
-              content_html: htmlToXml(description, collected),
-              note_html: htmlToXml(note, collected),
-            };
-            collected_artwork.set(artworkId, artworkJson);
-          })
-        );
-      }
+      (await readArtworkFile('kunst', 'data/artwork.xml', collected)).forEach(
+        (artwork) => {
+          collected_artwork.set(artwork.id, artwork);
+        }
+      );
 
       // From works
       await Promise.all(
