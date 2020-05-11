@@ -35,6 +35,7 @@ export type TextContentType = Array<TextContentLine>;
 
 export type TextContentOptions = {
   highlightBibleVerses?: ?{ from: number, to: number },
+  highlight?: { from: number, to: number },
   marginLeft?: string,
   marginRight?: string,
   fontSize?: string,
@@ -173,7 +174,7 @@ export type Text = {
   id: string,
   title: string,
   title_prefix?: string,
-  linkTitle: string,
+  linktitle: string,
   text_type: 'text' | 'section',
   toc?: Array<TocItem>,
   subtitles?: Array<TextContentType>,

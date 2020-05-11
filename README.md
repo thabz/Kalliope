@@ -14,6 +14,10 @@ Hvis alt lykkes, kan din egen kopi af Kalliope nu ses på http://localhost:3000/
 
 Hvis du nu retter i en XML-fil, f.eks. under `/fdirs/`, skal `npm run build-static` udføres igen, hvorefter ændringen kan ses i browseren. `npm run build-static` udføres meget hurtigt anden gang man kører den, da kun ændrede xml-filer behandles.
 
+### Faksimile generering
+
+Kræver `pdfimages` som er del af `poppler` pakken.
+
 ## Kalliope installation på server
 
 ### Install

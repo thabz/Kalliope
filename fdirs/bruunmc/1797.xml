@@ -1243,7 +1243,9 @@ Og hvad vil du have meer?
     <subtitle>Frit efter Gotter</subtitle>
     <firstline>Jeg kiendte ei fordum til Kjerligheds Magt</firstline>
     <source pages="58"/>
-    <!-- TODO: Find Gotters original. -->
+    <notes>
+        <note unknown-original-by="gotter" />
+    </notes>
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1407,7 +1409,6 @@ O, sødt, som Dands og Leeg, vil dette Syn dig glæde.
         <note>Oversættelse af Tasso: <xref type="translation" poem="tasso2018062204" /> fra <i>Gerusalemme liberata</i> (1581).</note>
     </notes>
     <source pages="65-69"/>
-    <keywords>tasso</keywords>
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3934,9 +3935,11 @@ Atter en Verden staae frem ved det besjælende Smil?
     <title>Det mindste Onde</title>
     <subtitle>Efter Göthe</subtitle>
     <firstline>Viger, o Sorger, fra mig, men ak, den støvklædte Pilgrim</firstline>
+    <notes>
+        <note unknown-original-by="goethe" />
+    </notes>
     <source pages="193" facsimile-pages="205" />
     <keywords>goethe</keywords>
-    <!-- TODO: Find Goethes original. -->
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4524,7 +4527,6 @@ Til evig Tid fordømme?
         <note>Oversættelse af Petrarcas <xref type="translation" poem="petrarca2018051201"/></note>
     </notes>
     <source pages="218-221" facsimile-pages="230-233" />
-    <keywords>petrarca</keywords>
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
