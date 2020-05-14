@@ -25,7 +25,7 @@ const ErrorPage = (props: ErrorProps) => {
       <SubHeading>{message}</SubHeading>
       <div style={{ lineHeight: 1.7 }}>
         Noget er gået helt galt. Hvis du har lyst, må du meget gerne skrive til{' '}
-        <a href="mailto:jesper@kalliope">jesper@kalliope.org</a> og forklare,
+        <a href="mailto:jesper@kalliope.org">jesper@kalliope.org</a> og forklare,
         hvordan du er endt på denne side. Så vil jeg sørge for at ingen andre
         får den oplevelse.
       </div>
