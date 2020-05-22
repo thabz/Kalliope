@@ -6,6 +6,7 @@
     <year>1873</year>
     <notes>
         <note>Teksten følger Martin Kok: <i>Øjeblikkets Børn</i>, P.G. Philipsens Forlag, Kbh., 1873.</note>
+      <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
     </notes>
     <pictures>
         <picture src="1873-p1.jpg">Titelbladet til <i>Øjeblikkets Børn</i> (1873) lyder ,,Øjeblikkets Børn. / Digte / af / Martin Kok. // Kjøbenhavn. / P. G. Philipsens Forlag. / 1873.''.</picture>
@@ -18,7 +19,7 @@
 <head>
     <title>Til mine Venner</title>
     <firstline>Som Markens Blomster vikle</firstline>
-    <source pages="ii-iii" facsimile-pages="10" />
+    <source pages="ii-iii" facsimile-pages="7-8" />
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -256,7 +257,7 @@ Du sværmer som en Syg i Febervanvid!
 Du kjælne Yngling med din milde Længsel,
 Du vaagner snarligt op af Elskovsrusen!
 
-Ja gransk og sværm og kjøb og elsk og drøm
+Ja gransk og sværm og kjøb og elsk og drøm,
 Ved det du aldrig naaer et Hanefjed
 Til Maalet nærmere, trods al din Stræben!
 Først da, naar Sjælen atter vender hjem,
@@ -510,7 +511,7 @@ Med fulde Blomsterklynger!
 For Marmorblokken kold og stiv
 Jeg altid gyste i mit Liv,
 Den er jo Dødens Mærke,
-Men Rosen, Kjærligheds Symbol.
+Men Rosen, Kjærligheds Symbol,
 Udspreder vidt fra Pol til Pol
 Sin Duft, den søde, stærke!
 
@@ -691,7 +692,7 @@ Du ved Rov vil Bytte samle.
 Skulde end din Tanke famle,
 Hør, hvordan du handle skal:
 
-Grih et Asenskjæbeben,
+Grib et Asenskjæbeben,
 Slaa til alt, hvad skjønt du finder,
 Styrt de gamle Stortidsminder,
 Skynd dig, knus dem, vær ej sen!
@@ -886,7 +887,7 @@ Som Nøkken kan drage den vejvilde ned
 Til Elven, udover den glasglatte Bred,
 Hvor ej han med Foden kan bunde,
 Saa drager din Lyres dæmoniske Klang
-Mig med, skjønt jeg føler, åt dybt i din Sang
+Mig med, skjønt jeg føler, at dybt i din Sang
 Principet er stedse det onde!
 </poetry>
 </body>
@@ -977,7 +978,7 @@ Dog, din Trøst, den stumme, kan husvale
 Mer end selv dit ædle Hjerte tror!
 
 Thi dit Blik mig siger, alle Dage
-Jeg i dig dog bar en trofast Ven,
+Jeg i dig dog har en trofast Ven,
 Som forstaar mit Hjertes stumme Klage
 Og i Tavshed med mig deler den!
 </poetry>
@@ -1186,7 +1187,7 @@ Alt Mennesket sover
 Stille og rolig!
 Foden er let og melodisk vor Røst,
 Barmen, den svulmende,
-Kjærligked dulmende,
+Kjærlighed dulmende,
 Røber vort Hjertes drømmende Lyst!
 
 
@@ -1471,7 +1472,7 @@ Faldt Farisæeren og brast i Graad:
     <title>Rafaels Engle</title>
     <firstline>Foran Altret i St. Markuskirken</firstline>
     <source pages="56-61"/>
-    <!-- TODO: Find billedet. Det findes vist allerede i Kalliope, så ophæv det til data/artwork.xml -->
+    <!-- TODO: Find billedet. -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1482,7 +1483,7 @@ Foran Altret i St. Markuskirken
 Mester Rafael stod med sænket Pensel,
 Under Kirkebuen nys han malte
 Helgenskarerne, de rene, hvide,
-Hvor de stod for Gud Jehovalis Aasyn,
+Hvor de stod for Gud Jehovahs Aasyn,
 Og omkring dem svæved Englevrimlen.
 End der mangled dog ved Herrens Fødder
 Tvende Børn, Uskyldighedens Genier.
@@ -1548,7 +1549,7 @@ Som end ikke Døden kunde røve !''
 
 ,,Uskyldssmilet!'' hvisked Mester Rafael,
 Og en Tanke foer ham gjennem Sjælen.
-,,Viis mig, Kvinde, Vej til eders Hytte,.
+,,Viis mig, Kvinde, Vej til eders Hytte,
 At og jeg kan skue Uskyldssmilet!''
 Og han fulgte Moderen til Hjemmet,
 Ind de traadte i det stille Kammer,
@@ -1715,7 +1716,7 @@ Forglemt var jeg blandt Jordens glade Børn,
 Mit Navn udvisket alt af Mindets Tavle;
 Og dog jeg syntes, nys jeg jordet var
 I Ungdomsaar - alt havde jeg forgjettet,
-Kun dig jeg hnsked, du stod for min Sjæl
+Kun dig jeg husked, du stod for min Sjæl
 Min elskte Brud, jeg husked, da du sad
 Hist ved min Side i min sidste Stund,
 Jeg husked grant din Jammer, da mit Dødssuk
@@ -1775,18 +1776,18 @@ Og Læben fremstammer et sagte ,,Tilgiv!''
 </text>
 
 <text id="kokm2020052136">
-<head>
+<head> 
+    <suptitle>†</suptitle> 
     <title>Kong Karl den Femtende</title>
     <firstline>Henover Nordens Lande nys Sørgebudet lød</firstline>
     <source pages="69-70"/>
-    <!-- TODO: <sup>†</sup> -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Henover Nordens Lande nys Sørgebudet lød:
 Den ædle svenske Konge, de Danskes Ven, er død!
-O danske Folk , velsign ham og tak ham i hans Grav,
+O danske Folk, velsign ham og tak ham i hans Grav,
 Sin elskelige Datter, sit bedste, han dig gav!
 
 Han elsked gamle Danmark i Lykke og i Sorg,
@@ -1814,10 +1815,10 @@ Til Kongesarkofagen hinsides Øresund!
 
 <text id="kokm2020052137">
 <head>
+    <suptitle>†</suptitle>
     <title>Nik. Fred. Sev. Grundtvig</title>
     <firstline>Din Stridsfærd er endt og Sejerens Fred</firstline>
     <source pages="71-72"/>
-    <!-- TODO: <sup>†</sup> -->
     <keywords>grundtvig</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2102,7 +2103,7 @@ Du fejrede Lillievand!
 Hvor kunde, jeg tro, at min simple Sang
 Var trængt i dit Hjerte ind,
 At du havde set gjennem Rhytmernes Slør,
-Hvad dyhest der laa i mit Sind!
+Hvad dybest der laa i mit Sind!
 
 Hvor kunde jeg tro dog, at Rigdommens Glands
 Du mægted at sige Farvel,
@@ -2207,7 +2208,7 @@ Dine muntre, skjelmske Blikke!
 <text id="kokm2020052145">
 <head>
     <title>Amors Hævn</title>
-    <subtitle>(Efter Opfordring i en Stambog.</subtitle>
+    <subtitle>(Efter Opfordring i en Stambog.)</subtitle>
     <firstline>Engang Skjelmen Amor vilde</firstline>
     <source pages="85"/>
     <quality>korrektur1,kilde,side</quality>
@@ -2220,7 +2221,7 @@ Som ham viste haanligt ud
 Fra de Voksnes Drikkegilde.
 
 Fire Dage i sit Kammer
-Slutted han sig hamfuld inde,
+Slutted han sig harmfuld<note>harmfuld] hamfuld</note> inde,
 At han kunde noget finde
 Digteren til Kval og Jammer.
 
