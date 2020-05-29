@@ -28,7 +28,7 @@ export default class Head extends React.Component<HeadProps> {
       requestPath,
     } = this.props;
 
-    const appleTouchIcons = [180, 152, 120, 76, 60].map(s => {
+    const appleTouchIcons = [180, 152, 120, 76, 60].map((s) => {
       const x = `${s}x${s}`;
       return (
         <link
@@ -40,12 +40,12 @@ export default class Head extends React.Component<HeadProps> {
       );
     });
     let ogImageAbsolute = ogImage != null ? ogImage : defaultOGImage;
-    if (!ogImageAbsolute.startsWith('http')) {
+    if (!ogImageAbsolute.indexOf('http') === 0) {
       ogImageAbsolute = `${urlPrefix}${ogImageAbsolute}`;
     }
     let hreflangs = [];
     if (requestPath != null) {
-      hreflangs = ['da', 'en'].map(lang => {
+      hreflangs = ['da', 'en'].map((lang) => {
         const alternatePath = requestPath.replace(/^\/../, '/' + lang);
         const alternateURL = urlPrefix + alternatePath;
         return (
