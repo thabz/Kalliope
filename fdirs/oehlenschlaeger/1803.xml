@@ -20,7 +20,7 @@
 </workhead>
 <workbody>
 
-<prose id="oehlen2001052901">
+<text id="oehlen2001052901" skip-index="true">
 <head>
    <title>Forerindring</title>
    <toctitle>Forerindring</toctitle>
@@ -29,13 +29,15 @@
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<prose>
 Otte Stykker, af denne Samling, have tilforn været trykte; en Stierne betegner dem i Indholdsregisteret, og selv een af disse er ganske omarbeidet. Romanzen Fridleif og Helga har kun Navn og Historie fælleds med den Gamle; Behandlingen er nye fra först til sidst.
 
     Dette anmærker jeg for at man ikke skal troe denne Bog er en Samling af mine adspredte Smaae-Ubetydeligheder, hvilke Ingen kan sætte ringere Priis paa end jeg. Det er et Bind <i>nye Digte</i>, som alle, paa de faa anförte nær, have deres Udspring af senere Forsög, og som her see Lyset förste Gang.
 
 <right>Adam Öhlenslæger</right>
-</body>
 </prose>
+</body>
+</text>
 
 <section level="1">
 <head>
@@ -43,7 +45,7 @@ Otte Stykker, af denne Samling, have tilforn været trykte; en Stierne betegner 
 </head>
 <content>
 
-<poem id="oehlenschlaeger2001052801">
+<text id="oehlenschlaeger2001052801">
 <head>
    <title>Biergtrolden</title>
    <toctitle>Biergtrolden</toctitle>
@@ -54,6 +56,7 @@ Otte Stykker, af denne Samling, have tilforn været trykte; en Stierne betegner 
    <keywords>romance</keywords>
 </head>
 <body>
+<poetry>
 See Nordlys lue
 med röde Flammer,
 paa sorten Bue.
@@ -347,10 +350,11 @@ Og armindslynget
 og favnopklynget,
 de til den landlige
 Hytte ile.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlenschlaeger1999062803">
+<text id="oehlenschlaeger1999062803">
 <head>
    <title>Hakon Jarls Död</title>
    <subtitle>Eller Christendommens Indförsel i Norge</subtitle>
@@ -362,6 +366,7 @@ Hytte ile.
    <keywords>romance</keywords>
 </head>
 <body>
+<poetry>
 De Nætter ruge saa lange og sorte.
 Syvstiernen skimter saa mat.
 Ud stormer Vinden fra Himmelens Porte,
@@ -493,10 +498,11 @@ Kun hist og her
 man fiern og nær
 en Höi og en opreist Kampesteen skuer,
 som minder om Oldtidens slukte Luer.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlenschlaeger2001052802">
+<text id="oehlenschlaeger2001052802">
 <head>
    <title>Sivald og Thora</title>
    <toctitle>Sivald og Thora*</toctitle>
@@ -507,6 +513,7 @@ som minder om Oldtidens slukte Luer.
    <keywords>romance</keywords>
 </head>
 <body>
+<poetry>
 Fra Thoras ömme elskovsfulde Bryst
 sleed Sivald sig med fæl og grusom Latter;
 forgieves qvalte Rædsel hendes Röst,
@@ -616,10 +623,11 @@ Forgieves kalker man den skumle Muur,
 Blodblomsten voxer stedse fra sin Kime.
 Ved Midnatstid det stygge Dödninguhr
 fælt minder Morderen om Hevnens Time.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlenschlaeger2001052803">
+<text id="oehlenschlaeger2001052803">
 <head>
    <title>Skattegraveren</title>
    <toctitle>Skattegraveren</toctitle>
@@ -630,6 +638,7 @@ fælt minder Morderen om Hevnens Time.
    <keywords>romance</keywords>
 </head>
 <body>
+<poetry>
 Mens Vintersneen fyger
 saa gnistrende og hvid,
 og medens Stormen stryger
@@ -737,10 +746,11 @@ See hvor den Arme bæver,
 kom hielper ham i Nöd!''
 De ham fra Kisten hæver
 han smilte og var död!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlenschlaeger1999062804">
+<text id="oehlenschlaeger1999062804">
 <head>
    <title>Löveridderen</title>
    <toctitle>Löveridderen</toctitle>
@@ -754,6 +764,7 @@ han smilte og var död!
    <keywords>folkevise,romance,ottavarima</keywords>
 </head>
 <body>
+<poetry>
 Mildt boltre sig de lune Sommervinde,
 fra klare Safirhvælving Maanen straaler
 igiennem duftopfyldte svale Linde
@@ -969,10 +980,11 @@ Taknemlighed er al den Fryd den kiender.
 Den glemmer Stolthed, Friehed, selve Sorgen
 at skilles fra sin Skov og fra sin Mage,
 den tiener Kongen alle sine Dage!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlenschlaeger2001052901">
+<text id="oehlenschlaeger2001052901">
 <head>
    <title>Fuglefængeren</title>
    <toctitle>Fuglefængeren</toctitle>
@@ -983,6 +995,7 @@ den tiener Kongen alle sine Dage!
    <keywords>romance</keywords>
 </head>
 <body>
+<poetry>
 Svagt suser Bækken hist.
 I Bladet Vinden gynger.
 Vemodigt Fuglen synger
@@ -1077,10 +1090,11 @@ Der glimted svage Lyn!
 Den gamle Gubbe stirred
 paa blodig Qvist forvirret.
 Han troede ei sit Syn.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlenschlaeger2001052902">
+<text id="oehlenschlaeger2001052902">
 <head>
    <title>Fiskeren</title>
    <subtitle>Efter Göthe</subtitle>
@@ -1095,6 +1109,7 @@ Han troede ei sit Syn.
    <keywords>romance</keywords>
 </head>
 <body>
+<poetry>
 Dybt Bölgen sank, höit Bölgen foer,
 og paa den kolde Strand
 sad rolig ved sin Medesnoer
@@ -1130,10 +1145,11 @@ Hun saae paa ham, hun sang til ham,
 bag Havet Döden leer.
 Halv trak hun ham - halv segned han!
 Man saae ham aldrig meer.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlenschlaeger2001052903">
+<text id="oehlenschlaeger2001052903">
 <head>
    <title>Kongen i Leire</title>
    <subtitle>Efter Göthe</subtitle>
@@ -1148,6 +1164,7 @@ Man saae ham aldrig meer.
    <keywords>romance</keywords>
 </head>
 <body>
+<poetry>
 Der var en Konning i Leire;
 heel trofast til sin Grav.
 Hans Fæstemöe hin feire
@@ -1177,10 +1194,11 @@ Igiennem dybe Taage
 han blank det synke seer.
 Da segned hans Öienlaage.
 Drak ei en Draabe meer!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlenschlaeger2001052904">
+<text id="oehlenschlaeger2001052904">
 <head>
    <title>Harald i Offerlunden</title>
    <toctitle>Harald i Offerlunden</toctitle>
@@ -1191,6 +1209,7 @@ Drak ei en Draabe meer!
    <keywords>romance</keywords>
 </head>
 <body>
+<poetry>
 Klar er Nattens Stiernehvælving.
 Höitidsfulde Midnatsscene!
 Veemodsfuld og tavs jeg vanker
@@ -1280,10 +1299,11 @@ Blomsten aabner sig saa venlig
 Duggen ned ad Espen glider,
 Harald gyser ved sin Dröm -
 önsker dog de gamle Tider!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlenschlaeger1999062805">
+<text id="oehlenschlaeger1999062805">
 <head>
    <title>Ellehöien</title>
    <toctitle>Ellehöien</toctitle>
@@ -1297,6 +1317,7 @@ Harald gyser ved sin Dröm -
    <keywords>folkevise,romance,terziner</keywords>
 </head>
 <body>
+<poetry>
 Paa hede Dag den svale Aften fulgte,
 der glimted Purpur bag de sorte Grene,<note>Grene,] Grene</note>
 den dunkle Landevei var heel beskygget.
@@ -1400,10 +1421,11 @@ mens Solen slukkede de mindre Sole.
 Vogt unge Kiempe dig for slige Höie,
 den lumske Död der Blomsterne beklæder,
 og Trolden suger Blodet af dit Öie.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlenschlaeger2001052905">
+<text id="oehlenschlaeger2001052905">
 <head>
    <title>Spilleren</title>
    <toctitle>Spilleren</toctitle>
@@ -1414,6 +1436,7 @@ og Trolden suger Blodet af dit Öie.
    <keywords>romance</keywords>
 </head>
 <body>
+<poetry>
 Skarp Stormen foer ved Midnatstid
 igiennem Krat og Hegn,
 kold gnistred Vintersneen hvid
@@ -1493,10 +1516,11 @@ Man fandt ham aarle Morgenstund,
 da alt endnu var tyst,
 med Smykket til den blege Mund,
 med Haanden paa sit Bryst.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlenschlaeger2001052906">
+<text id="oehlenschlaeger2001052906">
 <head>
    <title>Jura-Bierget</title>
    <toctitle>Jura-Bierget</toctitle>
@@ -1507,6 +1531,7 @@ med Haanden paa sit Bryst.
    <keywords>romance</keywords>
 </head>
 <body>
+<poetry>
 I Juras skiönne Egne,
 ved Biergets Kiempefod,
 der viser man en Klippe,<!-- vi&#383;er -->
@@ -1581,10 +1606,11 @@ I Juras skiönne Egne,
 ved Biergets Kiempefod,
 der viser man en Klippe,
 den er besprængt med Blod.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlenschlaeger2001052907">
+<text id="oehlenschlaeger2001052907">
 <head>
    <title>Fridleif og Helga</title>
    <toctitle>Fridleif og Helga</toctitle>
@@ -1595,6 +1621,7 @@ den er besprængt med Blod.
    <keywords>romance</keywords>
 </head>
 <body>
+<poetry>
 Alt Skoven saa prud udi Blomster staaer,
 vanked der liden Helga vel svöbt udi Maar.
 
@@ -1726,10 +1753,11 @@ og stirred ned i det levret Blod.
 
 Den tredie Nat - da skede et Raab!
 Herr Erik faldt ned i en Askehob.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlenschlaeger1803a0">
+<text id="oehlenschlaeger1803a0">
 <head>
    <title>Guldhornene</title>
    <toctitle>Guldhornene</toctitle>
@@ -1741,6 +1769,7 @@ Herr Erik faldt ned i en Askehob.
    <!-- Rettelser af Sören Mogensen, 15-8-2000, Sven Sörensen, 10-4-2001 og Brian Bentsen, 26-5-2001. -->
 </head>
 <body>
+<poetry>
 De higer og söger
 i gamle Böger,
 i oplukte Höie
@@ -1926,10 +1955,11 @@ Himlen sortner, Storme brage!
 Visse Time du er kommen.
 Hvad de gav de tog tilbage.
 Evig bortsvandt Helligdommen.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlenschlaeger2001052908">
+<text id="oehlenschlaeger2001052908">
 <head>
    <title>Violsamleren</title>
    <toctitle>Violsamleren</toctitle>
@@ -1940,6 +1970,7 @@ Evig bortsvandt Helligdommen.
    <keywords>romance</keywords>
 </head>
 <body>
+<poetry>
 Nattens blege Gienfærd lyste,
 Stormen dreied Kirkespiret.
 Emma ved min Side gyste,
@@ -2039,10 +2070,11 @@ Derfor sanker jeg Violer;
 de mit blege Liig skal klæde,
 naar i Nat de hvide Straaler
 vinke mig til evig Glæde.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlenschlaeger1999062806">
+<text id="oehlenschlaeger1999062806">
 <head>
    <title>Valravnen</title>
    <toctitle>Valravnen</toctitle>
@@ -2056,6 +2088,7 @@ vinke mig til evig Glæde.
    <keywords>folkevise,romance,ottavarima</keywords>
 </head>
 <body>
+<poetry>
 De gule Silkeseil, som Vinden fylder,
 hiemlede bugnende den lette Snekke.
 Mens Aftensolen ranke Mast forgylder
@@ -2487,10 +2520,11 @@ I Nattens Blaa sig Stiernen mat fremtrænger.
 En sölvklar Skye ved Maanen flyder ene.
 Det er Minona döende som svæver.
 Hun synker ei, hun sig til Himlen hæver!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlenschlaeger2001052909">
+<text id="oehlenschlaeger2001052909">
 <head>
    <title>Harpespilleren ved Posthuset</title>
    <toctitle>Harpespilleren ved Posthuset</toctitle>
@@ -2501,6 +2535,7 @@ Hun synker ei, hun sig til Himlen hæver!
    <keywords>romance</keywords>
 </head>
 <body>
+<poetry>
 Her vil jeg sidde og Harpen slaae,
 og synge en underlig Sang.
 Her ile hid baade Store og Smaa,
@@ -2653,10 +2688,11 @@ Ja Kierligheds Gnist saa mild
 skal tænde Oldtidens Guddomsild.
 Af det kolde, natlige Hav
 skal Solen staae frem af sin Grav!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlenschlaeger2001052910">
+<text id="oehlenschlaeger2001052910">
 <head>
    <title>Rosmer Havmand</title>
    <toctitle>Rosmer Havmand</toctitle>
@@ -2670,6 +2706,7 @@ skal Solen staae frem af sin Grav!
    <keywords>romance,ottavarima</keywords>
 </head>
 <body>
+<poetry>
 Konning Uller er sig i Hu saa mod,<note>mod] Mod</note>
 han sidder ved Midienat.
 Mens Maanen langsomt gaaer op i Blod
@@ -3036,8 +3073,9 @@ De aande i det rene Ætherblaae,
 de bade sig i Morgensolens Varme.
 Letsvævende de iler op fra Lunden.
 Alt synes dem en Dröm, som er forsvunden.
+</poetry>
 </body>
-</poem>
+</text>
 </content>
 </section>
 
@@ -3047,7 +3085,7 @@ Alt synes dem en Dröm, som er forsvunden.
 </head>
 <content>
 
-<poem id="oehlenschlaeger1999062807">
+<text id="oehlenschlaeger1999062807">
 <head>
    <title>Natur-Temperamenter</title>
    <toctitle>Natur-Temperamenter</toctitle>
@@ -3057,6 +3095,7 @@ Alt synes dem en Dröm, som er forsvunden.
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center>PHLEGMA.</center></nonum>
 
 Östens lange, blege Strimmel
@@ -3222,10 +3261,11 @@ skal en Nat
 blandt Blomsterkrat,
 mere klar, hvor ingen famle,
 blidelig os samle!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlenschlaeger1999062808">
+<text id="oehlenschlaeger1999062808">
 <head>
    <title>Den frembrydende Vaar</title>
    <toctitle>Den frembrydende Vaar</toctitle>
@@ -3238,6 +3278,7 @@ blidelig os samle!
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Engene grönnes og Skovenes Kroner
 nylig fremsprungne Smaragder bedække,
 Ætheren lunes og Sangeren toner
@@ -3327,10 +3368,11 @@ Lad den opglöde de frostige Strenge!
 Gyd i mit Bryst dine hellige Luer!
 Da skal mit Hierte i Harpen sig trænge,
 da skal jeg tolke hvad nu kun jeg skuer!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlenschlaeger2001052911">
+<text id="oehlenschlaeger2001052911">
 <head>
    <title>Den Forladte</title>
    <toctitle>Den Forladte*</toctitle>
@@ -3340,6 +3382,7 @@ da skal jeg tolke hvad nu kun jeg skuer!
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Naar Solen röd og langsom daler
 bag Horizontens Biergerad,
 naar Bonden glad fra Marken iler
@@ -3402,10 +3445,11 @@ Mat glimter Straalen i mit Öie.
 I smaa nedsiunkne Blomsterhöie!
 Jeg föler det, min Smerte dulmer!
 Snart synker jeg i Eders Favn!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlenschlaeger2001052912">
+<text id="oehlenschlaeger2001052912">
 <head>
    <title>Den Tillidsfulde</title>
    <subtitle>Efter Horaz</subtitle>
@@ -3417,6 +3461,7 @@ Snart synker jeg i Eders Favn!
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Den som er uden Synd og Last
 og föler Elskovs Lyst,
 han drager ei mod Ondskabs Vold
@@ -3479,10 +3524,11 @@ Et Eden blier mig hvert et Sted
 naar kun jeg har min Pige med.
 Min Pige med de söde Smil
 og med den söde Röst!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlenschlaeger2001052913">
+<text id="oehlenschlaeger2001052913">
 <head>
    <title>Den brustne Harpe</title>
    <toctitle>Den brustne Harpe</toctitle>
@@ -3492,6 +3538,7 @@ og med den söde Röst!
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Du, som blandt Skovens Kroner
 tolked saa helligt sörgelig,
 med de bævende Toner
@@ -3511,10 +3558,11 @@ O snart! snart er mit Hierte,
 som blöder saa mat og saa nedtrykt nu,
 overvældet af sin Smerte,
 taust og brustent Harpe, som du!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlenschlaeger2001052914">
+<text id="oehlenschlaeger2001052914">
 <head>
    <title>Himmel-Lysene</title>
    <toctitle>Himmel-Lysene</toctitle>
@@ -3524,6 +3572,7 @@ taust og brustent Harpe, som du!
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg skued <i>Stella</i>, hun var saa mild,
 som Stiernen klart hendes Öie straalte.
 Den Ild optændte en anden Ild.
@@ -3556,10 +3605,11 @@ Som naar i hellige Midnatstund
 de lyse Bölger i Maanskin rinde,
 saa salige nu mine Dage svinde.
 Hvad tryller mig Livet saa södt som hun?
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlenschlaeger2001052915">
+<text id="oehlenschlaeger2001052915">
 <head>
    <title>Wilhelm og Blomsterne</title>
    <toctitle>Wilhelm og Blomsterne*</toctitle>
@@ -3569,6 +3619,7 @@ Hvad tryller mig Livet saa södt som hun?
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center><sc>Wilhelm</sc></center></nonum>
 God Morgen I Skiönne!
 Hvor smukt i det Grönne
@@ -3652,13 +3703,14 @@ Intet er deiligt og södt som hun!
 Og I? <i>qvos ego!!</i>
 
 <nonum><center><sc>Blomsterne</sc></center></nonum>
-                                      <nonum>O pluk os kun!</nonum>
+<right><nonum>O pluk os kun!</nonum></right>
 Du slog os alt med din Philosophie,
 men mere endnu med din Poesie!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlenschlaeger2001052916">
+<text id="oehlenschlaeger2001052916">
 <head>
    <title>Drömmene</title>
    <toctitle>Drömmene</toctitle>
@@ -3668,6 +3720,7 @@ men mere endnu med din Poesie!
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg drömte jeg var en <i>Demant</i> og sad
 i hendes Lokker, saa blonde og blöde,
 som mildt over Panden skildte sig ad
@@ -3732,10 +3785,11 @@ Jeg drömte eengang lysvaagen at
 hun <i>elskede</i> mig! Men o bedragen
 jeg böder nu mangen sövnlös Nat,
 fordi jeg eengang har drömt om Dagen!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlenschlaeger2001052917">
+<text id="oehlenschlaeger2001052917">
 <head>
    <title>Til Rimer</title>
    <toctitle>Til Rimer</toctitle>
@@ -3745,6 +3799,7 @@ fordi jeg eengang har drömt om Dagen!
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Rimer! du maa takke mig,
 hvad de Vise nægte dig
 jeg beviser at du har.
@@ -3774,10 +3829,11 @@ Fölelse, Vid, Phantasie,
 Og Fornuft - det er Genie!
 Rimer, har du Mage seet?
 Du fikst <i>Genialitet!</i>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlenschlaeger1999062809">
+<text id="oehlenschlaeger1999062809">
 <head>
    <title>Oldingen ved Werthers Grav</title>
    <toctitle>Oldingen ved Werthers Grav</toctitle>
@@ -3790,6 +3846,7 @@ Du fikst <i>Genialitet!</i>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Aftenröden
 farver din Grav!
 De gamle Linde
@@ -3871,10 +3928,11 @@ vil de sige:
 Han var lykkelig.
 Ak hvo var lykkeligst!
 Du eller jeg?
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlenschlaeger2001052918">
+<text id="oehlenschlaeger2001052918">
 <head>
    <title>Rosen</title>
    <subtitle>Efter Steffens</subtitle>
@@ -3885,6 +3943,7 @@ Du eller jeg?
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ved gamle Borg<!-- OS har "Borg," -->
 i kolde Mose,
 stod taus i Sorg
@@ -3920,10 +3979,11 @@ O Dödens Haand,
 du söde, kolde!
 riv bort de Baand,
 som her mig holde.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlenschlaeger2001052919">
+<text id="oehlenschlaeger2001052919">
 <head>
    <title>Til Apol</title>
    <toctitle>Til Apol*</toctitle>
@@ -3933,6 +3993,7 @@ som her mig holde.
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Du lange, laurbærkrandste Dreng!
 som altid Lyren har i Hænde,
 og klimprer paa den gyldne Streng,
@@ -4077,10 +4138,11 @@ Dog raad dig selv. Bliv lav, bliv stor,
 naar hvad du <i>er</i> kun ei du bliver.
 Du trives ei paa denne Jord,
 hvis Lyren du ei sönderriver!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlenschlaeger2001052920">
+<text id="oehlenschlaeger2001052920">
 <head>
    <title>Anelsen</title>
    <toctitle>Anelsen</toctitle>
@@ -4090,6 +4152,7 @@ hvis Lyren du ei sönderriver!
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center><sc>Wilhelm</sc> <small><i>og</i></small> <sc>Ludvig</sc> <small><i>paa Valpladsen.</i></small></center></nonum>
 
 <nonum><center><sc>Wilhelm</sc></center></nonum>
@@ -4211,7 +4274,7 @@ Farvel Træer og Buske!
 Farvel Himmel og Jord!
 Farvel Wilhelm!
 Farvel Stella!
-                                   <nonum><small><i>Han döer.</i></small></nonum>
+<right><nonum><small><i>Han döer.</i></small></nonum></right>
 
 ---
 
@@ -4247,7 +4310,7 @@ Kom lad os gaae!
 
 <nonum><center><sc>Stella</sc></center></nonum>
 Det er Ludvig!
-                     <nonum><small><i>Hun synker i Afmagt</i></small></nonum>
+<center><nonum><small><i>Hun synker i Afmagt</i></small></nonum></center>
 
 <nonum><center><sc>Bölgerne</sc> <small><i>til</i></small> <sc>Busken.</sc></center></nonum>
 Hvorfor hvisler du saa underligt?
@@ -4256,10 +4319,11 @@ Hvorfor hvisler du saa underligt?
 Hvorfor risler I med Maaneblod?
 
 <center><sc>Nattergalen</sc> slaaer!</center>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlenschlaeger2001052921">
+<text id="oehlenschlaeger2001052921">
 <head>
    <title>Digteren i Leire-Lunden</title>
    <toctitle>Digteren i Leire-Lunden</toctitle>
@@ -4269,6 +4333,7 @@ Hvorfor risler I med Maaneblod?
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Phantasie! hvi river du mig
 til skiönne Erindringer hen?
 Gierne, gierne fulgte jeg dig,
@@ -4324,10 +4389,11 @@ Farvel du gamle, dunkle Lund!
 Under Hvælvingen nu min Harpe skal runge.
 Mellem Ridder og Hustru og Svend og Möe
 vil jeg synge og blusse og blegne og döe!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlenschlaeger2001053001">
+<text id="oehlenschlaeger2001053001">
 <head>
    <title>Cantate</title>
    <toctitle>Cantate</toctitle>
@@ -4341,6 +4407,7 @@ vil jeg synge og blusse og blegne og döe!
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center><sc>Chor</sc></center></nonum>
     Det er Danmarks Höitidsdag!
     Dandser I Piger!
@@ -4508,10 +4575,11 @@ Ved Thronens straalende Fod
 lönner den retfærdige Jehovah
 Kierlighed og Mod!
 Fred være med Eder Halleluja!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlenschlaeger2001053002">
+<text id="oehlenschlaeger2001053002">
 <head>
    <title>Den elskende Bondeknös</title>
    <toctitle>Den elskende Bondeknös*</toctitle>
@@ -4521,6 +4589,7 @@ Fred være med Eder Halleluja!
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 För var jeg saa froe,
 jeg spögte, sang og stöied og loe,
 foer omkring paa Ager og Enge;
@@ -4620,10 +4689,11 @@ Da vakler min Fod,
 da isner mit Blod
 og jeg blier saa mod,
 og mit Hierte skrækkeligt banker!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlenschlaeger1803a1">
+<text id="oehlenschlaeger1803a1">
 <head>
    <title>Födselsdagen</title>
    <toctitle>Födselsdagen</toctitle>
@@ -4633,6 +4703,7 @@ og mit Hierte skrækkeligt banker!
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg vaagnede ved Nattergalens Slag.
 Naturen rödmed, Natten var forsvunden.
 Med Harpen taus jeg traadde ud i Lunden.<note>Lunden.] Lunden</note>
@@ -4682,10 +4753,11 @@ Da gav jeg Glæden i mit Hierte Rum;
 da standsede min Taare med min Klage.
 Til Emmas Bryst jeg vendte taus tilbage
 og takked Gud, fordi jeg var saa stum!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlenschlaeger2001053003">
+<text id="oehlenschlaeger2001053003">
 <head>
    <title>Biergmands-Liv</title>
    <subtitle>Efter Novalis</subtitle>
@@ -4699,6 +4771,7 @@ og takked Gud, fordi jeg var saa stum!
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Den over Jorden byder,
 som maaler Jordens Bund,
 som ei Bekymring bryder,
@@ -4753,10 +4826,11 @@ Lad dem som Bödler hærge<note>hærge] hænge</note>
 for Penge, Land og Slot.
 Han blier i sine Bierge
 den glade Jordens Drot!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlenschlaeger2001053004">
+<text id="oehlenschlaeger2001053004">
 <head>
    <title>Hædersqvad</title>
    <subtitle>Til en gammel Skiald</subtitle>
@@ -4770,6 +4844,7 @@ den glade Jordens Drot!
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Vildt skingre vor Röst over breden Bord.
 Raaber höit I Frender tilsammen!
 Hele det gamle og trofaste Nord
@@ -4839,10 +4914,11 @@ Hæver da Hornet höit over Bord
 og siunger i Skye tilsammen.
 Hele det gamle og trofaste Nord
 skal drikke Herr Clemenz til Gammen!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlenschlaeger2001053005">
+<text id="oehlenschlaeger2001053005">
 <head>
    <title>Aarstiderne</title>
    <toctitle>Aarstiderne*</toctitle>
@@ -4852,6 +4928,7 @@ skal drikke Herr Clemenz til Gammen!
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Du aldrig vil elske? Til Stella jeg taled,
 en Morgen i Vaar, da jeg hos hende sad,
 mens Solen steeg over Hækken og maled
@@ -4887,10 +4964,11 @@ Du nægter mig altsaa den hellige Lyst
 at henvandre Livet med dig ved min Side,
 til Alderens Snee farver Lokkerne hvide?
 Hun sank til mit Bryst.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlenschlaeger2001053006">
+<text id="oehlenschlaeger2001053006">
 <head>
    <title>Sköitelöberen</title>
    <toctitle>Sköitelöberen</toctitle>
@@ -4900,6 +4978,7 @@ Hun sank til mit Bryst.
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Fra Træet Rimens Blade
 faldt ned for sagte Vind;
 over den glatte Flade
@@ -4944,8 +5023,9 @@ Derpaa han langsomt dukker.
 Over Issen Bölgen slaaer.
 Sig Lyset i Borgen slukker,
 en Skye for Maanen staaer!
+</poetry>
 </body>
-</poem>
+</text>
 </content>
 </section>
 
@@ -4956,13 +5036,13 @@ en Skye for Maanen staaer!
 </head>
 <content>
 
-<section level="2">
+<section level="3">
 <head>
    <toctitle>Prologer</toctitle>
 </head>
 <content>
 
-<poem id="oehl2002020301">
+<text id="oehl2002020301">
 <head>
    <title>Prologer</title>
    <toctitle>Prologer</toctitle>
@@ -4972,6 +5052,7 @@ en Skye for Maanen staaer!
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <wrap><small><i>En Vandringsmand triner op paa en gammel Gravhöi, der staaer ved Veien, og siger som <i>Prologus:</i></i></small></wrap>
 
 Velkommen! i den röde Morgenstund,
@@ -5125,21 +5206,22 @@ Her er vi i Huus hos en Borgermand.
 Men hillemænd! see der kommer han.
 Jeg faaer da vel at vige for Personen,
 for ei at forstyrre Illusionen.
-                                           <nonum><small><i>Gaaer.</i></small></nonum>
+<right><nonum><small><i>Gaaer.</i></small></nonum></right>
 
 ---
+</poetry>
 </body>
-</poem>
+</text>
 </content>
 </section>
 
-<section level="2">
+<section level="3">
 <head>
    <toctitle>I Byen</toctitle>
 </head>
 <content>
 
-<poem id="oehlen2002020302">
+<text id="oehlen2002020302">
 <head>
    <title>Manden og hans Kone</title>
    <toctitle>Manden og hans Kone</toctitle>
@@ -5149,6 +5231,7 @@ for ei at forstyrre Illusionen.
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <center><nonum><sc>En Mand</sc> <small><i>triner frem og siger:</i></small></nonum></center>
 Det er i Dag et deiligt Væ'r,
 Vinden vifter i Voldens Træer.
@@ -5202,11 +5285,12 @@ have godt af at komme ud i det Grönne.
 <center><nonum><sc>Mand.</sc></nonum></center>
 Der er hun! Lav os da alting til.
 Mine Sager imens jeg ordne vil.
-                                       <nonum><small><i>Gaaer.</i></small></nonum>
+<right><nonum><small><i>Gaaer.</i></small></nonum></right>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlen2001123101">
+<text id="oehlen2001123101">
 <head>
    <title>Teklas Sang</title>
    <toctitle>Teklas Sang</toctitle>
@@ -5219,6 +5303,7 @@ Mine Sager imens jeg ordne vil.
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <center><nonum><sc>Maria</sc></nonum></center>
 <center><wrap><small><i>kommer ind. Hun sætter sig ved Klaveret og synger:</i></small></wrap></center>
 Dybt Skoven bruser og Skyen gaaer.
@@ -5238,7 +5323,7 @@ Deres Stemme har dog en herlig Klang.
 Hvad hedder den Arie?
 
 <center><nonum><sc>Maria.</sc></nonum></center>
-                                        <nonum>Teklas Sang.</nonum>
+<right>Teklas Sang.</right>
 Den er oversat efter tydsk Poesie
 til <i>Weyses</i> deilige Melodie.
 
@@ -5268,7 +5353,7 @@ holde Dem. Hvad skal man sige dertil!
 Deres Moder -
 
 <center><nonum><sc>Maria.</sc></nonum></center>
-                              <nonum>Tal ikke om denne Sag.</nonum>
+<right>Tal ikke om denne Sag.</right>
 
 <center><nonum><sc>Konen.</sc></nonum></center>
 Saa kiöre vi da til Skoven idag.
@@ -5277,11 +5362,11 @@ til Kudsken, skal jeg lave alting til
 i Kiökkenet.
 
 <center><nonum><sc>Maria.</sc></nonum></center>
-                            <nonum>Ja, det vil jeg gierne.</nonum>
+<right>Ja, det vil jeg gierne.</right>
 
 <center><nonum><sc>Konen.</sc></nonum></center>
 Man skal have saa mange Ting i sin Hierne.
-                                                 <nonum><small><i>Gaaer.</i></small></nonum>
+<right><nonum><small><i>Gaaer.</i></small></nonum></right>
 
 <center><wrap><sc>Maria</sc> <small><i>sætter sig og skriver en lille Seddel, kalder saa paa Pigen:</i></small></wrap></center>
 Skynd dig til Hyrekudsken hen.
@@ -5293,10 +5378,10 @@ bring denne Seddel - du veed hvor han boer -
 Den smukke -
 
 <center><nonum><sc>Maria.</sc></nonum></center>
-                               <nonum>Tys!</nonum>
+<right>Tys!</right>
 
 <center><nonum><sc>Cathrine.</sc></nonum></center>
-                                                  <nonum>Ih, Fröken Marie!</nonum>
+<right><nonum>Ih, Fröken Marie!</nonum></right>
 De veed dog vel sagtens at jeg kan tie.
 
 <center><nonum><sc>Maria.</sc></nonum></center>
@@ -5330,13 +5415,14 @@ De trækker os Pengene ud af Landet,
 siger min Hosbond. Det er forbandet!
 Ja, du gode Gud, hvad skal man sige?
 Det morer dog altid en stakkels Pige.
-                                       <nonum><small><i>Gaaer.</i></small></nonum>
+<right><nonum><small><i>Gaaer.</i></small></nonum></right>
 
 ---
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlen2002020303">
+<text id="oehlen2002020303">
 <head>
    <title>Marias Canzone</title>
    <toctitle>Marias Canzone</toctitle>
@@ -5346,6 +5432,7 @@ Det morer dog altid en stakkels Pige.
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <center><nonum><sc>Maria</sc>,</nonum></center>
 <center><wrap><small><i>paa sit Kammer; med Ludvigs Billede i sin Haand.</i></small></wrap></center>
 Da jeg imorges aabnede mit Öie
@@ -5391,18 +5478,19 @@ Naar Tumlens Glædeskrig sig hisset hæve
 skal taust i Lunden tvende Hierter bæve.
 
 ---
+</poetry>
 </body>
-</poem>
+</text>
 </content>
 </section>
 
-<section level="2">
+<section level="3">
 <head>
    <toctitle>De Kiörende	</toctitle>
 </head>
 <content>
 
-<poem id="oehlen2002012301">
+<text id="oehlen2002012301">
 <head>
    <title>De Kiörende</title>
    <toctitle>De Kiörende</toctitle>
@@ -5412,6 +5500,7 @@ skal taust i Lunden tvende Hierter bæve.
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <center><nonum><sc>De Kiörende</sc></nonum></center>
 Fra qvalmfulde Mure!
 Til Marken saa huld!
@@ -5459,18 +5548,19 @@ Vi kiöre, vi ride,
 vi ile til Latter og Spög.
 
 ---
+</poetry>
 </body>
-</poem>
+</text>
 </content>
 </section>
 
-<section level="2">
+<section level="3">
 <head>
    <toctitle>Dyrehaven</toctitle>
 </head>
 <content>
 
-<poem id="oehlen2002020304">
+<text id="oehlen2002020304">
 <head>
    <title>Mödende Chor af alt</title>
    <toctitle>Mödende Chor af alt</toctitle>
@@ -5480,6 +5570,7 @@ vi ile til Latter og Spög.
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <center><nonum>DYREHAVEN</nonum></center>
 
 ---
@@ -5513,10 +5604,11 @@ en utallig Skare.
 Skynder Jer bare!
 Skiönne Rariteter, Löier og Spas!
 Allons! Allons! Courage! Courage! Courage!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlen2002020305">
+<text id="oehlen2002020305">
 <head>
    <title>Spadseregang</title>
    <toctitle>Spadseregang</toctitle>
@@ -5526,6 +5618,7 @@ Allons! Allons! Courage! Courage! Courage!
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <center><nonum>SPADSEREGANG</nonum></center>
 
 <center><nonum><sc>En Dame.</sc></nonum></center>
@@ -5533,7 +5626,7 @@ Ih hillemænd, skal vi træffes her?
 
 <center><nonum><sc>En Anden.</sc></nonum></center>
 Velkommen i det Grönne. Det er et deiligt Vær!
-                                          <nonum><small><i>De gaae hinanden forbi.</i></small></nonum>
+<right><nonum><small><i>De gaae hinanden forbi.</i></small></nonum></right>
 
 <center><nonum><sc>En Borger.</sc></nonum></center>
 Er du kommen herud, din gamle Biörn!
@@ -5549,10 +5642,10 @@ og nogle er gar pyntet fra Top til Taae!
 
 <center><nonum><sc>Anden.</sc></nonum></center>
 Er det solid tænkt?
-                                                <nonum><small><i>Gaaer rystende med Hovedet.</i></small></nonum>
+<right><nonum><small><i>Gaaer rystende med Hovedet.</i></small></nonum></right>
 
 <center><nonum><sc>Förste.</sc></nonum></center>
-                                       <nonum>Han er nu saa klog.</nonum>
+<right><nonum>Han er nu saa klog.</nonum></right>
 Den Bogbinder taler altid som en Bog.
 
 <center><nonum><sc>En ung Pige.</sc></nonum></center>
@@ -5578,18 +5671,18 @@ og siden spise med i Græsset hist,
 saa glæder det os.
 
 <center><nonum><sc>Maria</sc> <small><i>sagte.</i></small></nonum></center>
-                                         <nonum>O! hvilken List.</nonum>
+<right>O! hvilken List.</right>
 Det er Ludvig!
 
 <center><nonum><sc>Mand.</sc></nonum></center>
-                              <nonum>See, her seer de min Kone.</nonum>
+<right>See, her seer de min Kone.</right>
 Den smukke Pige, med Egelövskrone
 om Haaret, det er en Fröken vi har
 i Kost.
 
 <center><nonum><sc>Ludvig.</sc></nonum></center><!-- 1803 har "Luevig." -->
-                  <nonum>Deres Budskab jeg glad modtaer!</nonum>
-                                                           <nonum><small><i>De gaae videre.</i></small></nonum>
+<right>Deres Budskab jeg glad modtaer!</right>
+<right><nonum><small><i>De gaae videre.</i></small></nonum></right>
 
 <center><nonum><sc>Et ungt Menneske.</sc></nonum></center>
 O hvilken deilig Pige der gik.
@@ -5604,11 +5697,12 @@ Han er alt flöiten! Det er Fanden til Knös;
 han löber efter hver deilig Tös.
 Lad os tömme en Flaske midlertid.
 Den Fornöielse er mere solid.
-                                                   <nonum><small><i>De gaae.</i></small></nonum>
+<right><nonum><small><i>De gaae.</i></small></nonum></right>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlen2002020306">
+<text id="oehlen2002020306">
 <head>
    <title>Dandseren paa Voltigerlinien</title>
    <toctitle>Dandseren paa Voltigerlinien</toctitle>
@@ -5618,6 +5712,7 @@ Den Fornöielse er mere solid.
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <center><nonum><sc>Dandseren paa Voltigerlinien.</sc></nonum></center>
 I Cirkelbue,
 uden at grue,
@@ -5686,10 +5781,11 @@ Hvorfor blæser de i Trompeten der?
 
 <center><nonum><sc>Nogle Andre.</sc></nonum></center>
 Nu begynder nok deres Comedier.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlen2002020307">
+<text id="oehlen2002020307">
 <head>
    <title>En Jödedreng</title>
    <toctitle>En Jödedreng</toctitle>
@@ -5699,6 +5795,7 @@ Nu begynder nok deres Comedier.
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <center><nonum><sc>En Jödedreng.</sc></nonum></center>
 Deilige Pidskebaand! röde og blaae,
 gule, grönne, violette og graae.
@@ -5729,7 +5826,7 @@ Der har de jo faaet en smuk, frisk Amme.
 Hvad synes dem om min Glut?
 
 <center><nonum><sc>Den Förste.</sc></nonum></center>
-                                                          <nonum>Paa min Ære!</nonum>
+<right><nonum>Paa min Ære!</nonum></right>
 Hun ligner virkelig sin <i>cher pere</i>.
 
 <center><nonum><sc>Manden med Hunden.</sc></nonum></center>
@@ -5763,17 +5860,18 @@ Ved Comediehuset sig samler en Flok.
 Skal vi gaae derind?
 
 <center><nonum><sc>Kone.</sc></nonum></center>
-                                        <nonum>Som du vil, ja nok!</nonum>
+<right><nonum>Som du vil, ja nok!</nonum></right>
 
 <center><nonum><sc>Ludvig.</sc></nonum></center>
 Maa jeg byde Frökenen min Arm?
 
 <center><nonum><sc>Konen</sc> <small><i>til Maria.</i></small></nonum></center>
 Forkiöl Dem ikke, De er saa varm!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlen2002020308">
+<text id="oehlen2002020308">
 <head>
    <title>Marionetspillet</title>
    <toctitle>Marionetspillet</toctitle>
@@ -5783,6 +5881,7 @@ Forkiöl Dem ikke, De er saa varm!
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <center><nonum><sc>Marionetspilleren</sc> <small><i>triner frem og siger:</i></small></nonum></center>
 Höistærede Publikum! her vil
 vi före op et Skuespil.
@@ -6075,7 +6174,7 @@ Gid han kun ikke kaldte mig værre!
 Hvad er <i>Humor?</i>
 
 <center><nonum><sc>En Anden.</sc></nonum></center>
-                                      <nonum>Ikke andet</nonum>
+<right><nonum>Ikke andet</nonum></right>
 end Vædske! Nemlig hvad der er vandet!
 
 <center><nonum><sc>En Tredie.</sc></nonum></center>
@@ -6094,7 +6193,7 @@ En fornuftig Mand bör sidde paa Stoel!
 Den Hib var god!
 
 <center><nonum><sc>En Skrædder.</sc></nonum></center>
-                             <nonum>Kun som De troer.</nonum><note>troer] troe</note>
+<right>Kun som De troer.<note>troer] troe</note></right>
 En fornuftig Mand sidder tit paa Bord.
 
 <center><nonum><sc>Lapsen.</sc></nonum></center>
@@ -6165,7 +6264,7 @@ Standspersoner betale efter Behag.
 <center><nonum><sc>En Mand</sc> <small><i>giver ham en Toskilling.</i></small></nonum></center>
 Min kiere Ven! Kom hid! See der!
 Det Stykke er ærligt de Penge værd.
-                                                     <nonum><small><i>Folk gaaer bort.</i></small></nonum>
+<right><nonum><small><i>Folk gaaer bort.</i></small></nonum></right>
 
 <center><nonum><sc>Manden med Vognen.</sc></nonum></center>
 Laaner Öre! Laaner Öre!
@@ -6184,10 +6283,11 @@ Kommer hid! Kommer hid!
 Mekanisk Kunst;
 hvis det morer Jer ei
 maa I kiöre omsonst.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlen2002012302">
+<text id="oehlen2002012302">
 <head>
    <title>Manden ved Kilden</title>
    <toctitle>Manden ved Kilden</toctitle>
@@ -6197,6 +6297,7 @@ maa I kiöre omsonst.
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <center><nonum><sc>Manden ved Kilden.</sc></nonum></center>
 Det er saa lummert og saa tungt,
 det brænder stærkt deroppe.
@@ -6323,10 +6424,11 @@ Det brændte paa dig.
 
 <center><nonum><sc>Den Förste.</sc></nonum></center>
 Du vil nok narre mig!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlen2002012303">
+<text id="oehlen2002012303">
 <head>
    <title>Jöderne under Træet</title>
    <toctitle>Jöderne under Træet</toctitle>
@@ -6336,6 +6438,7 @@ Du vil nok narre mig!
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <center><nonum><sc>Jöderne under Træet.</sc></nonum></center>
     Es war ein alter Mann,
     der nahm ein junges Weibchen,
@@ -6383,10 +6486,11 @@ Du vil nok narre mig!
     Hast ja nicht Hörner an!
 
      <wrap><small><i>Folk, som har omringet Jöderne, opslaae en stor Skoggerlatter.</i></small></wrap>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlen2002020309">
+<text id="oehlen2002020309">
 <head>
    <title>Harlekin og Poppe</title>
    <toctitle>Harlekin og Poppe</toctitle>
@@ -6396,6 +6500,7 @@ Du vil nok narre mig!
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <center><nonum><sc>Harlekin</sc></nonum></center>
 <center><nonum><small><i>udenfor en Fielleboe, meget alvorlig og vigtig.</i></small></nonum></center>
 Mens Pöbelen hisset vildt sig fryder,
@@ -6572,10 +6677,11 @@ som de Tvende nylig, uden at prale.
 Skilles nu ad foruden Kiv
 og anvender Jer Forædling i det praktiske Liv.
 <center><nonum><small><i>Folk gaaer.</i></small></nonum></center>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlen2002012305">
+<text id="oehlen2002012305">
 <head>
    <title>Pigerne inde i Skoven</title>
    <toctitle>Pigerne inde i Skoven</toctitle>
@@ -6588,6 +6694,7 @@ og anvender Jer Forædling i det praktiske Liv.
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <center><nonum><sc>Pigerne inde i Skoven.</sc></nonum></center>
 I Skyggen vi vanke,
 blandt lysgrönne Straae,
@@ -6637,10 +6744,11 @@ Alle Mandfolk betragte Dem med et Suk.
 
 <center><nonum><sc>En Galning</sc> <small><i>som gaaer forbi:</i></small></nonum></center>
 Det kommer af det hun er saa smuk!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlen2002020310">
+<text id="oehlen2002020310">
 <head>
    <title>Den Blinde</title>
    <toctitle>Den Blinde</toctitle>
@@ -6650,6 +6758,7 @@ Det kommer af det hun er saa smuk!
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <center><nonum><sc>Maria.</sc></nonum></center>
 Hist sidder en gammel Mand, som er blind,
 med nedböiet Hoved, med nedböiet Sind.
@@ -6697,14 +6806,15 @@ ellers brister mit fulde Hierte.
 <center><nonum><small><i>lader sin lille Pengepung synke ned i hans Hat.</i></small></nonum></center>
 
 <center><nonum><sc>Ludvig.</sc></nonum></center>
-                                             Söde Pige!<note>Ludvigs ,,Söde Pige'' er indrykket og skal tilsyneladende afslutte en verselinje, men Marias forudgående replik er udfaldet i originalen.</note>
+<right>Söde Pige!<note>Ludvigs ,,Söde Pige'' er indrykket og skal tilsyneladende afslutte en verselinje, men Marias forudgående replik er udfaldet i originalen.</note></right>
 
 <center><nonum><sc>Maria.</sc></nonum></center>
 Mod den gamle Mand er vi lykkelige!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlenschlaeger2001071001">
+<text id="oehlenschlaeger2001071001">
 <head>
    <title>Sang fra Teltet</title>
    <toctitle>Sang fra Teltet</toctitle>
@@ -6714,6 +6824,7 @@ Mod den gamle Mand er vi lykkelige!
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <center><nonum><sc>En Herre.</sc></nonum></center>
 See hvor Folk staaer hist om Teltet i Klynger.
 Det er nogle unge Folk som synger.
@@ -6797,10 +6908,11 @@ saa er man saa genegen til at falde omkuld.
 Det kommer af Druesaften;
 og af Cen&nbsp;-&nbsp;tre&nbsp;-&nbsp;pedalkraften -
 og af det jeg har drukket for meget i Aften!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlen2002012306">
+<text id="oehlen2002012306">
 <head>
    <title>En gammel Mand med en Perspektivkasse</title>
    <toctitle>En gammel Mand med en Perspektivkasse</toctitle>
@@ -6810,6 +6922,7 @@ og af det jeg har drukket for meget i Aften!
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <center><nonum><sc>En gammel Mand</sc> <small><i>med en Perspektivkasse.</i></small></nonum></center>
 I kiere Venner! kommer hid.
 Her kan I for en ringe Hvid
@@ -6960,10 +7073,11 @@ kan tolke hvad han skue fik,
 saa vækker han, vemodig, blid,
 kun <i>Anelser</i> om dunkle Tid.
      <wrap><small><i>Alle stirre henrykte paa Maleriet. Den Gamle lader Laaget synke. Valdhornene blæse under Egetræet, ved Gyngen.</i></small></wrap>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlen2002020311">
+<text id="oehlen2002020311">
 <head>
    <title>Gyngesang</title>
    <toctitle>Gyngesang</toctitle>
@@ -6973,6 +7087,7 @@ kun <i>Anelser</i> om dunkle Tid.
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <center><nonum><sc>Gyngesang.</sc></nonum></center>
     Op og ned!
     Ned og op!
@@ -7031,10 +7146,11 @@ kun <i>Anelser</i> om dunkle Tid.
     Du Rosenknop!
 
 ---
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="oehlen2002020312">
+<text id="oehlen2002020312">
 <head>
    <title>Idyl</title>
    <toctitle>Idyl</toctitle>
@@ -7044,6 +7160,7 @@ kun <i>Anelser</i> om dunkle Tid.
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <center><nonum>IDYL.</nonum></center>
 
 Her, under Egenes Lye, hvor Vinden vifter saa kiöligt,
@@ -7125,21 +7242,13 @@ Adieu, adieu! Denne Dag var smuk.
 Sluk Lysene ud og Dören luk!
 
 ---
+</poetry>
 </body>
-</poem>
+</text>
 </content>
 </section>
 
-</content>
-</section> <!-- Her slutter Sanct Hansaften-Spil -->
-
-<section level="2">
-<head>
-   <toctitle>Natur-Mysterie</toctitle>
-</head>
-<content>
-
-<poem id="oehlen2002020313">
+<text id="oehlen2002020313">
 <head>
    <title>Natur-Mysterie</title>
    <toctitle>Natur-Mysterie</toctitle>
@@ -7152,6 +7261,7 @@ Sluk Lysene ud og Dören luk!
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Den vilde Stöi nu lyder ikke længer.
 Den store Sværm fremtrænger ei i Stövet.
 Ei længer under Lövet Kredsen sidder.
@@ -7387,7 +7497,7 @@ Hisset tælle vi ingen Aar,
         hvor Stiernen blinker.
 Hist vi evig paa Roser gaaer,
         naar Himlen vinker!
-                                         <nonum><small><i>De vil skilles ad.</i></small></nonum>
+<right><nonum><small><i>De vil skilles ad.</i></small></nonum></right>
 
 <center><nonum><sc>Kierligheds Genie</sc></nonum></center>
      <wrap><small><i>triner pludselig ud af Buskene med en Glorie om sit Hoved.</i></small></wrap>
@@ -7463,18 +7573,21 @@ til at hoppe frit,
 o da er vi saa froe!
 saa froe! saa froe!
 Qvirilit! Qvirilit!
+</poetry>
 </body>
-</poem>
-</content>
-</section>
+</text>
 
-<prose id="sven2002021001">
+</content>
+</section> <!-- Her slutter Sanct Hansaften-Spil -->
+
+<text id="sven2002021001" skip-index="true">
 <head>
    <title>[Kalliopes note til teksten]</title>
    <toctitle>[Kalliopes note til teksten]</toctitle>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<prose>
 <sc>Af Sven Sørensen</sc>
 
 <i>Digte 1803</i> virkede ved sin fremkomst afstikkende ved at være trykt med antikva-typer. Siden bogtrykkerkunstens indførelse var med få undtagelser benyttet fraktur ved trykning af dansk. Ganske vist var Videnskabernes Selskab netop i året 1800 gået over til antikva, men dets skrifter havde en begrænset læserkreds. Blandt almindelige læsere, som var vant til fraktur, var der megen modvilje mod antikvaen (man ville ikke "læse latin"), og den slog først rigtigt igennem efter 1850.
@@ -7487,7 +7600,8 @@ Man var i første halvdel af 1800-tallet langt mindre nøjeregnende med retskriv
 I digterens senere værker (herunder optryk af <i>Digte 1803</i>) blev disse ejendommeligheder omhyggeligt fjernet. Der benyttedes fraktur, og en konsekvent ortografi blev etableret. Kalliope har imidlertid ment at det ikke er uden interesse at have <i>Digte 1803</i> tilgængelig i den form som Oehlenschläger først gav den. Derfor er der kun rettet hvor der skønnes at foreligge en åbenbar fejl som blev overset af digteren, og dette er i hvert enkelt tilfælde nævnt i en note. Tidligere udgivere har undertiden foreslået 'bedre' læsemåder; nogle af disse er ligeledes anført i noterne. For et par steder hvor en linie allerede i 1803 kan være udfaldet, se noterne.
 
 <i>Sanct Hansaften-Spil</i> er trods sin længde ikke inddelt i akter eller scener. Af praktiske hensyn er der i Kalliope sket en opdeling i fem dele, som tilsammen udgør 20 'digte'. Dette er altså en rent editoriel foranstaltning, og det må understreges at de benyttede titler for 'digtene' ikke alle er oprindelige.
-</body>
 </prose>
+</body>
+</text>
 </workbody>
 </kalliopework>

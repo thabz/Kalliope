@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="soulary" country="fr" lang="fr" type="poet">
+  <name>
+    <firstname>Joséphin</firstname>
+    <lastname>Soulary</lastname>
+    <fullname>Joseph Marie Soulary</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1815-02-23</date>
+      <place>Lyon</place>
+    </born>
+    <dead>
+      <date>1891-03-28</date>
+      <place>Lyon</place>
+    </dead>
+  </period>
+  <works>1838,1839,1846,1857,1862,1870,1871,1876,1876-83,1877</works>
+</person>

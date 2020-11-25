@@ -8,23 +8,26 @@
 </workhead>
 <workbody>
 
-<prose id="holstein2017091001">
+<text id="holstein2017091001" skip-index="true">
 <head>
    <title>Forord</title>
 </head>
 <body>
+<prose>
 Det lille Hefte, som her udsendes, kun indeholdende tre Digte, udgør et naturligt Supplement til mine tidligere Digtsamlinger. Da jeg betragter min naturlyriske Digtning som væsenlig afsluttet med dem, har jeg ikke fundet det urimeligt at udgive dem paa denne maaske lidt usædvanlige Maade.
 
 L. H.
-</body>
 </prose>
+</body>
+</text>
 
-<poem id="holstein2017091002">
+<text id="holstein2017091002">
 <head>
    <title>Sanglærken</title>
    <firstline>Kvidrer med den svale Røst</firstline>
 </head>
 <body>
+<poetry>
 Kvidrer med den svale Røst, 
 er du vendt tilbage,
 Lysets tørstende til Trøst 
@@ -114,15 +117,17 @@ Veed jo, hvad du ikke veed,
 salige Uselviskhed.
 Ak, hvad skal en Synder sige 
 Du usvigelige!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="holstein2017091003">
+<text id="holstein2017091003">
 <head>
    <title>Jehi</title>
    <firstline>Sneen er Sne, og den sneer</firstline>
 </head>
 <body>
+<poetry>
 Sneen er Sne, og den sneer. 
 Hvorfor svarer du, Hjærte, 
 slet intet mer?
@@ -241,15 +246,17 @@ Bliv! Og alt lød.
 At du i Evighed kalder,
 kalder, mens Stjærner nedfalder, 
 Liv ud af Død!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="holstein2017091004">
+<text id="holstein2017091004">
 <head>
    <title>Træet</title>
    <firstline>Besku dit Træ og sku dig glad</firstline>
 </head>
 <body>
+<poetry>
 Besku dit Træ og sku dig glad, 
 du, som blandt Søskende paa Rad 
 er selv paa Livets Træ et Blad.
@@ -297,8 +304,9 @@ hvert evigt Nu sit Klædebon!
 Og se, hvor noget hverdagsligt, 
 kan være bundløst dybt og rigt! 
 Dit Træ er Evighedens Digt.
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

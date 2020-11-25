@@ -14,18 +14,20 @@
 </workhead>
 <workbody>
 
-<prose id="hansena2019091201">
+<text id="hansena2019091201" skip-index="true">
 <head>
     <title>Forord</title>
     <source pages="iii" facsimile-pages="11" />
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<prose>
     I denne lille Bog har jeg samlet de allerfleste af de Oversættelser af mindre engelske Digte, som jeg i Tidens Løb har offentliggjort paa forskellige Steder; desuden er der tilføjet nogle faa ikke tidligere trykte. Bogen gør intet Krav paa at være Antologi eller paa at repræsentere de fire engelske Digtere, af hvem den indeholder Arbejder. Det er kun en Samling af saadanne Digte, som under min Syslen med engelsk Poesi have forekommet mig at være gode eller smukke, og som jeg saa har søgt at give dansk Form.
 
 <nonum><right>Ad. H.</right></nonum>
-</body>
 </prose>
+</body>
+</text>
 
 <section>
 <head>
@@ -33,7 +35,7 @@
 </head>
 <content>
 
-<poem id="hansena2019091202">
+<text id="hansena2019091202">
 <head>
     <title>Ode til Vestenvinden</title>
     <firstline>O Vestenvind, du Høstens stærke Aande:</firstline>
@@ -44,6 +46,7 @@
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 O Vestenvind, du Høstens stærke Aande,
 du, for hvis Kraft de døde Blade farer,
 lig Genfærd, som for Trylleord sig vaande,
@@ -118,10 +121,11 @@ og hede Aske, ud blandt Slægtens Hær!
 Vær for vor dorske Jord den Magt, der støder
 i Spaadomsluren ved min Røst! Thi er
 det Vinter først, maa Vaaren være nær.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hansena2019091203">
+<text id="hansena2019091203">
 <head>
     <title>Skyen</title>
     <firstline>Et kvægende Bad til hvert tørstende Blad</firstline>
@@ -132,6 +136,7 @@ det Vinter først, maa Vaaren være nær.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Et kvægende Bad til hvert tørstende Blad
     jeg bringer fra Hav og fra Strømme;
 jeg svaler med Skygge de Blomster, der trygge
@@ -221,10 +226,11 @@ i Stilhed jeg ler, naar min Gravhal jeg ser, -
     og fra Regnbygens Skjulested
 gaar jeg frem, som en død fra Gravens Skød,
     og river det hele ned.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hansena2019091204">
+<text id="hansena2019091204">
 <head>
     <title>Til Natten</title>
     <firstline>Snelt over Vestens Bølger du svæve</firstline>
@@ -235,6 +241,7 @@ gaar jeg frem, som en død fra Gravens Skød,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Snelt over Vestens Bølger du svæve,
     hellige Nat!
 Fra Taagehulen i Øst du dig hæve,
@@ -274,10 +281,11 @@ Men Gaven, hvorefter jeg længes svart,
 kan du, o elskede Nat, kun bringe; -
 svæv nu let paa din ilende Vinge,
     kom snart, snart!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hansena2019091205">
+<text id="hansena2019091205">
 <head>
     <title>Strofer</title>
     <toctitle>Strofer skrevne i nedslaaet Stemning nær ved Neapel</toctitle>
@@ -292,6 +300,7 @@ svæv nu let paa din ilende Vinge,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
     Den varme Sol paa Himlen skinner,
     og Bølgen danser let og skær;
     blaa Øer og snebedækte Tinder
@@ -341,10 +350,11 @@ gled over Hjærnen med sin sidste, dybe Klang.
     mens der er mangen én, som tænker
     paa denne lyse, pletfri Dag,
 naar den er længst forbi, med dvælende Behag.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hansena2019091206">
+<text id="hansena2019091206">
 <head>
     <title>Døden</title>
     <firstline>De dø og komme ej igen. Ved Randen</firstline>
@@ -355,6 +365,7 @@ naar den er længst forbi, med dvælende Behag.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 De dø og komme ej igen. Ved Randen
 af Graven sidder Sorgen bleg og stirrer,
 skønt ung af Aar, med isgraat Haar om Panden.
@@ -372,10 +383,11 @@ naar mildt som nu den sank i Aftenstunden
 og nu er Issen graa og Haabet svunden.
     Kun disse Grave, Suk og Klage
     og Tomhed er tilbage.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hansena2019091207">
+<text id="hansena2019091207">
 <head>
     <title>De to Aander</title>
     <subtitle>(En Allegori.)</subtitle>
@@ -387,6 +399,7 @@ og nu er Issen graa og Haabet svunden.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center><i>Første Aand.</i></center></nonum>
 
 O vogt dig, du, som højt over Jord
@@ -453,8 +466,9 @@ og en Sølverform, som hans Ungdomselskede, svæver
 med skinnende Haar over Højder og Dale;
 og naar han fra Søvnen sit Øje hæver,
         er Nat blevet Dag.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section> <!-- Percy Bysshe Shelley (1792-1822) -->
@@ -465,7 +479,7 @@ og naar han fra Søvnen sit Øje hæver,
 </head>
 <content>
 
-<poem id="hansena2019091208">
+<text id="hansena2019091208">
 <head>
     <title>Lotos-Spiserne</title>
     <firstline>Mod! sagde han og peged ind mod Land</firstline>
@@ -478,6 +492,7 @@ og naar han fra Søvnen sit Øje hæver,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
   »Mod!« sagde han og peged ind mod Land,
   »snart vil mod Kysten Bølgens Ryg os bære.«
   Ved tidlig Kvældstid kom de til en Strand,
@@ -682,10 +697,11 @@ hvile deres Lemmer, medens Vinden lufter sval.
 Sikkert, sikkert, Slummer mere sød end Møje er,
 og Kysten mere blød end Kamp blandt Brændinger og Skær; -
 o, hvil jer, Kammerater, vi vil ikke vandre mer.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hansena2019091209">
+<text id="hansena2019091209">
 <head>
     <title>Landsby-Skoflikkeren</title>
     <firstline>Vent nu, til Sally kommer; du kan vistnok fortælle en Del</firstline>
@@ -697,6 +713,7 @@ o, hvil jer, Kammerater, vi vil ikke vandre mer.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center>I.</center></nonum>
 
 Vent nu, til Sally kommer; du kan vistnok fortælle en Del.
@@ -889,10 +906,11 @@ Her kommer Sally og Tommy, nu skal vi ha’ Middagsfo’r, -
 Flæsk og Kartofler og Budding og Vand kan du faa ved vort Bord;
 men vil du ha’ Grog, saa maa du til Kros, for jeg staar ved mit Ord:
 jeg ta’r ikke en Dryp af hans Blod, end ikke for Sallys Bro’r.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hansena2019091210">
+<text id="hansena2019091210">
 <head>
     <title>Rizpah</title>
     <subtitle>(17—.)</subtitle>
@@ -906,6 +924,7 @@ jeg ta’r ikke en Dryp af hans Blod, end ikke for Sallys Bro’r.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center>I.</center></nonum>
 
 Klagende suser Vinden hen over Hav og Vej, -
@@ -1058,8 +1077,9 @@ Sneen og Himlen er klar, - det var mørkt,  naar han kaldte før; -
 og nu kalder han paa mig fra Kirken og ikke fra Galgen, - hør!
 Nu kan du høre det selv, - det kommer, - mod Muren det gjalder.
 Maanen gik om bag en Sky. - God Nat. Nu gaar jeg. Han kalder.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section>
@@ -1070,7 +1090,7 @@ Maanen gik om bag en Sky. - God Nat. Nu gaar jeg. Han kalder.
 </head>
 <content>
 
-<poem id="hansena2019091211">
+<text id="hansena2019091211">
 <head>
     <title>Roligt Arbejde</title>
     <firstline>Sænk dybt, Natur, dybt i mit Væsens Kilde</firstline>
@@ -1082,6 +1102,7 @@ Maanen gik om bag en Sky. - God Nat. Nu gaar jeg. Han kalder.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Sænk dybt, Natur, dybt i mit Væsens Kilde
 en Lære, som du i hvert Vindstød gav,
 en Lære om to tæt fo rente Krav,
@@ -1099,10 +1120,11 @@ frem skrider dine tavse Tjenerskarer
 Og stille deres Hverv tilendebringer;
 ved fortsat Daad de gør vor Larm til Skamme;
 naar vi er borte, deres Virken varer.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hansena2019091212">
+<text id="hansena2019091212">
 <head>
     <title>Selv-Skuffelse</title>
     <firstline>Hvorfor raabe vi i al vor Gøren</firstline>
@@ -1113,6 +1135,7 @@ naar vi er borte, deres Virken varer.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvorfor raabe vi i al vor Gøren
 blindt paa Evner, som blev ej vor Del?
 - Vi vort Jordliv kende vel; men førend
@@ -1147,10 +1170,11 @@ Drøm om Evner falsk med Tanken leger,
 imod Måal, der gække os, vi gaa.
 Er der nogen Evne da, vi ejer?
 Er der noget Maal, som helt vi naa?
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hansena2019091213">
+<text id="hansena2019091213">
 <head>
     <title>Selv-Tiltro</title>
     <firstline>Syg i Sindet af at spørge evig</firstline>
@@ -1161,6 +1185,7 @@ Er der noget Maal, som helt vi naa?
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Syg i Sindet af at spørge evig,
 hvad jeg er og burde være, her
 jeg i Skudens Forstavn staar, som styrer
@@ -1200,10 +1225,11 @@ Luftfødte Stemme! i mit eget Bryst
 har før jeg hørt den samme strænge Røst:
 »Vær blot dig selv for Alvor: hvo, som lærte
 sig selv at finde, misted al sin Smerte.«
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hansena2019091214">
+<text id="hansena2019091214">
 <head>
     <title>Slægternes Gang</title>
     <firstline>Da Mennesket stod rede med sin Stav</firstline>
@@ -1214,6 +1240,7 @@ sig selv at finde, misted al sin Smerte.«
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Da Mennesket stod rede med sin Stav
 til Rejsen ned mod Jord fra Himlens Strande,
 Gud ham et Bogstavbundt i Haanden gav,
@@ -1238,10 +1265,11 @@ En Dag tilsidst, du siger, frem skal gaa
 det Ord, den Orden, som Guds Tanke tænkte.
 - Hin Dag vil kendes grant; thi Slægten saa
 skal aande frit, naar Hjærtets Baand er sprængte.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hansena2019091215">
+<text id="hansena2019091215">
 <head>
     <title>Guddommen</title>
     <firstline>Rist det i Malmen - lød Sankt Bernhards Bud</firstline>
@@ -1254,6 +1282,7 @@ skal aande frit, naar Hjærtets Baand er sprængte.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 »Rist det i Malmen« - lød Sankt Bernhards Bud -
 »med Demantpen, skriv det paa Klippen haard:
 Det er Gud selv, der bliver synlig, naar
@@ -1271,10 +1300,11 @@ dem vrangt, til Gud ej mere kender dem.
 Lærdom den mere simple Lære frem?
 Fra Helgen eller Kirke ej den lyder;
 i Ørknen, nu som fordum, er dens Hjem.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hansena2019091216">
+<text id="hansena2019091216">
 <head>
     <title>Verdens Triumfer</title>
     <firstline>Hvis Verdens Varsel jeg forstaar til dem</firstline>
@@ -1286,6 +1316,7 @@ i Ørknen, nu som fordum, er dens Hjem.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvis Verdens Varsel jeg forstaar til dem,
 der om vil forme den med dristig Haand,
 dens Ry for Kraft ej fra den selv sprang frem,
@@ -1303,10 +1334,11 @@ saa svag, - lad min da ikke tøve mer!
 
 »Har du saa skarp en Gift? - nu, saa vil jeg
 slaa løs, at ej du skal forgifte mig!«
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hansena2019091217">
+<text id="hansena2019091217">
 <head>
     <title>Det sidste Ord</title>
     <firstline>Kryb, kryb i dit snævre Gemme</firstline>
@@ -1317,6 +1349,7 @@ slaa løs, at ej du skal forgifte mig!«
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Kryb, kryb i dit snævre Gemme,
 hæv ej mer til Ord din Stemme!
 Alt staar fast! - det nytter ikke!
@@ -1336,10 +1369,11 @@ Fremad en Gang til! - Naar alle
 faste Dumhedsforter falde,
 lad de sejrende da finde
 dig som Lig ved Muren inde!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hansena2019091218">
+<text id="hansena2019091218">
 <head>
     <title>Visne Blade</title>
     <firstline>Tyst Baaden gaar langs stille Strømme</firstline>
@@ -1350,6 +1384,7 @@ dig som Lig ved Muren inde!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center><i>I. Floden.</i></center></nonum>
 
 Tyst Baaden gaar langs stille Strømme,
@@ -1472,17 +1507,22 @@ O kom til mig i Drømme, - saa
 skal Dagen atter rolig gaa;
 saa giver Natten Trøst og Fred
 for Længslen, jeg om Dagen led.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hansena2019091219">
+<text id="hansena2019091219">
 <head>
     <title>Den forladte Havmand</title>
     <firstline>Kom, kære Børn, nu maa vi afsted</firstline>
+    <notes>
+        <note>Gendigtning af Matthew Arnold: <xref type="translation" poem="arnold2019091209"/>.</note>
+    </notes>
     <source pages="62-69"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Kom, kære Børn, nu maa vi afsted,
 dybt under Bølgen ned!
 Fra Bugten kalder mine Brødres Røst,
@@ -1507,7 +1547,7 @@ denne Vej, denne Vej!
 Hestene stampe, til Flugt beredte!«-
 Margrethe! Margrethe!
 
-Kom, kære Børn,, kom, bort maa vi fly;’
+Kom, kære Børn, kom, bort maa vi fly;
 stands eders Røst!
 Ét sidste Blik paa den hvide By
 og den Kirke graa ved den stormslagne Kyst, -
@@ -1639,8 +1679,9 @@ til Havdybet fly, -
 sit Løfte hun brød;
 de ensomme Havkonger
 grumt hun forskød.«
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section> <!-- Matthew Arnold -->
@@ -1651,7 +1692,7 @@ grumt hun forskød.«
 </head>
 <content>
 
-<poem id="hansena2019091220">
+<text id="hansena2019091220">
 <head>
     <title>En Afsked</title>
     <firstline>Lad os gaa bort, mine Sange; hun hører os ej</firstline>
@@ -1662,6 +1703,7 @@ grumt hun forskød.«
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Lad os gaa bort, mine Sange; hun hører os ej.
 Kom, lad os rolig vandre vor ensomme Vej;
 vær stille nu, thi Sangens Tid har Ende,
@@ -1709,10 +1751,11 @@ saa vil hun sukkende bøje sig mod os en Kende;
 men vi, vi er borte, lod intet Spor tilbage.
 Og kunde jeg Medynk i alles Hjærter tænde
         det rørte ej hende.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hansena2019091221">
+<text id="hansena2019091221">
 <head>
     <title>Hymne til Proserpina</title>
     <subtitle>(Efter den kristne Tros Proklamering i Rom.)</subtitle>
@@ -1725,6 +1768,7 @@ Og kunde jeg Medynk i alles Hjærter tænde
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center><i>Vicisti, Galilæe.</i></center></nonum>
 
 Længe nok har jeg levet hernede, thi jeg saa al Kærlighed svinde;
@@ -1837,10 +1881,11 @@ Tidens Spejl, hvori Livet vi skue, saa let kan søndres og revne;
 kort ildner kun Sjælens Lue det Lig, vi et Menneske nævne:
 saa længe vil ufortrøden jeg glemme al Glæde og Kummer; -
 den stærkeste Gud er Døden, og Døden er rolig Slummer.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hansena2019091222">
+<text id="hansena2019091222">
 <head>
     <title>Pilgrimmene</title>
     <firstline>Hvem er det, som I elske, o I, der drage</firstline>
@@ -1851,6 +1896,7 @@ den stærkeste Gud er Døden, og Døden er rolig Slummer.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 »Hvem er det, som I elske, o I, der drage
 syngende hen? Og gælder jer sælsomme Klage
 det, som forgik, eller Fremtids-Haab, I har drømt?
@@ -1949,10 +1995,11 @@ O, Lys nok er det paa Livets korte Vej,
 at alle Mennesker dø, men Slægten ej:
 vor Død som Livets Sæd i Natten skal gives,
 at Slægten kan høste og leve, naar Dagen skinner.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hansena2019091223">
+<text id="hansena2019091223">
 <head>
     <title>Genesis</title>
     <firstline>I Kaos, førend denne Jord blev avlet</firstline>
@@ -1963,6 +2010,7 @@ at Slægten kan høste og leve, naar Dagen skinner.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I Kaos, førend denne Jord blev avlet,
 før Rum og Form af Dybets Afgrund fødtes,
 før Tidens første Stund af Ægget kravled,
@@ -2042,10 +2090,11 @@ Hvert Menneske og Aar, til Jorden lænket,
 skal flagre hid og did og suge Føde;
 og som det var, før Fødsel blev os skænket,
 saa skal vi atter synke blandt de døde.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hansena2019091224">
+<text id="hansena2019091224">
 <head>
     <title>Det sidste Orakel</title>
     <subtitle>(A. D. 361.)</subtitle>
@@ -2058,6 +2107,7 @@ saa skal vi atter synke blandt de døde.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Aar i Mulm steg frem, der atter døde ligge,
 Tider kom og svandt, som ej til dig har kendt,
 Verden søgte Lys ved Nat, men dit Lys ikke,
@@ -2207,10 +2257,11 @@ kalde dig, hvis Sang har Lægekræfter, hid.
     kast Lys gennem Mulmets Slør, -
     o Pæan Apollo, vor fælles Fader,
     Fordærver og Læge, hør!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hansena2019091225">
+<text id="hansena2019091225">
 <head>
     <title>En forladt Have</title>
     <firstline>I et Hjørne af Fjældet, hvor Højlandet slipper</firstline>
@@ -2221,6 +2272,7 @@ kalde dig, hvis Sang har Lægekræfter, hid.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I et Hjørne af Fjældet, hvor Højlandet slipper,
 mellem Læ og Luvart, ned mod Sandkysten lav,
 som en Ø paa Land mellem faste Klipper,
@@ -2310,10 +2362,11 @@ her Døden, hvor alt bær hans Sejers Stempel,
 strakt ud paa det Rov, han har spredt i sin Krig,
 som en selvdræbt Gud i sit eget Tempel,
         ligger Lig.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hansena2019091226">
+<text id="hansena2019091226">
 <head>
     <title>En Ballade om Drømmeland</title>
     <firstline>Jeg skjulte mit Hjærte i en Rosenrede</firstline>
@@ -2324,6 +2377,7 @@ som en selvdræbt Gud i sit eget Tempel,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg skjulte mit Hjærte i en Rosenrede,
 mod Solen gemt; paa en kølig Plet,
 mere blødt end det Leje, Sneflokke sprede,
@@ -2355,8 +2409,9 @@ I Drømmenes Land har jeg valgt mig en Plet
 til at slumre en Stund, uden Sans i mit Skjul
 for Kærlighed, tro eller løs og let,
 kun for en Sang af en lønlig Fugl.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section> <!-- Algernon Charles Swinburne -->

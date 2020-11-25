@@ -14,7 +14,7 @@
 </workhead>
 <workbody>
 
-<poem id="munch2019101201">
+<text id="munch2019101201">
 <head>
     <title>Enoch Arden</title>
     <firstline>I lange Klippestrand er der en Kløft</firstline>
@@ -26,6 +26,7 @@
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I lange Klippestrand er der en Kløft,
 Hvor Havets Skum paa gule Sandbund slaar
 Bag den en Klynge røde Tage om
@@ -1133,8 +1134,9 @@ Han faldt tilbage, talte ikke meer.
 Saa foer den stærke Heltesjæl da hen.
 Og da man ham begrov, den lille By
 Ei havde seet meer pragtfuld Jordefærd.
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

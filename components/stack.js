@@ -3,7 +3,7 @@
 import * as React from 'react';
 
 type StackProps = {
-  spacing: string,
+  spacing?: string,
   children: React.Node,
 };
 const Stack = (props: StackProps) => {

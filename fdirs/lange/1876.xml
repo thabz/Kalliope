@@ -22,7 +22,7 @@
 </head>
 <content>
 
-<poem id="lange2019101401">
+<text id="lange2019101401">
 <head>
     <title>Hymne</title>
     <firstline>Min Himmels Engleskarer!</firstline>
@@ -33,6 +33,7 @@
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Min Himmels Engleskarer!
 Knæl for min Søn saa dybt som for mig selv!
 
@@ -117,10 +118,11 @@ Din Pris kan aldrig svinde fra min Sjæl
 Og aldrig skilles fra din Faders Ære.
 
 <nonum><small><right>Efter John Miltons »Det tabte Paradis« 3die Sang.</right></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lange2019101402">
+<text id="lange2019101402">
 <head>
     <title>Barnebruden</title>
     <firstline>Dig, o Himmelens Søn! lyseste Guddom, Dig</firstline>
@@ -129,6 +131,7 @@ Og aldrig skilles fra din Faders Ære.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Dig, o Himmelens Søn! lyseste Guddom, Dig,
 Barndomselskovens Gud, hvem jeg har knælet for
     I min Tankes den rene,
@@ -160,20 +163,22 @@ Lægger Haand paa mit Bryst og slukker Faklen ud —
     O min Barnebrud, det er Dig!
 
 <nonum><small><right>Efter Johan Nervander.</right></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lange2019101403">
+<text id="lange2019101403">
 <head>
     <title>Chariterne</title>
     <firstline>Svæv, min Sang, paa din lette Flugt</firstline>
     <source pages="10-12"/>
     <notes>
-        <note unknown-original-by="stolbergf" />
+        <note>Gendigtning af Friedrich Leopold Graf zu Stolberg: <xref type="translation" poem="stolbergf2020011901"/>.</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
     Svæv, min Sang, paa din lette Flugt,
 Let som Vinden i Kvæld, let, som naar blidelig
     Kysset svæver fra Mund til Mund;
@@ -225,10 +230,11 @@ Mens den dejlige Sol her maa bestraale mig;
 Vil de hellige Tre synge min Vuggesang.
 
 <nonum><small><right>Efter Leopold Grev Stolberg.</right></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lange2019101404">
+<text id="lange2019101404">
 <head>
     <title>Mindet</title>
     <firstline>Sol for min Sjæl! Hil Dig, Du Mindets Gudinde!</firstline>
@@ -239,6 +245,7 @@ Vil de hellige Tre synge min Vuggesang.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Sol for min Sjæl! Hil Dig, Du Mindets Gudinde!
 Vemod, din Søster, sænker sit Øje mod Jord;
     Du kaster Sløret tilbage,
@@ -270,10 +277,11 @@ Kom, naar Du vil det, klædt i din straalende Dragt!
 Høje Veninde, Du er evindelig tro!
 
 <nonum><small><right>Efter Johan Friherre Salis.</right></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lange2019101405">
+<text id="lange2019101405">
 <head>
     <title>Amor og Psyche</title>
     <firstline>Tidt har paa Grave jeg seet to sammenslyngede Hænder</firstline>
@@ -284,6 +292,7 @@ Høje Veninde, Du er evindelig tro!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Tidt har paa Grave jeg seet to sammenslyngede Hænder,
     Amor gav Psyche sin Haand, Ingen kan skille dem mer.
 Boer der da Kjærlighed selv i en Grav? Har Urnen i Gjemme
@@ -294,10 +303,11 @@ Husk, at naar Du døer, at række din Haand til En, som du elsker.
     Døden, der bortkaster Alt, bærer din Kjærlighed med!
 
 <nonum><small><right>Efter Joh. v. Herder.</right></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lange2019101406">
+<text id="lange2019101406">
 <head>
     <title>Hyldest</title>
     <firstline>Blandt alle dem, dit Komme bringer Dagen</firstline>
@@ -308,6 +318,7 @@ Husk, at naar Du døer, at række din Haand til En, som du elsker.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Blandt alle dem, dit Komme bringer Dagen,
 Blandt alle dem, der tro, naar Du gaaer bort,
 At Solens Kreds er slettet ud af Himlen;
@@ -329,10 +340,11 @@ Min Tanke taler nu til en Forklaret!
 
 <nonum><small><right>Efter Edgard Poe.</right></small></nonum>
 <nonum><small><right>(Ungdomsdigte.)</right></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lange2019101407">
+<text id="lange2019101407">
 <head>
     <title>Lykken</title>
     <firstline>Salig er den, der, før han var født, blev Gudernes Yndling</firstline>
@@ -343,6 +355,7 @@ Min Tanke taler nu til en Forklaret!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Salig er den, der, før han var født, blev Gudernes Yndling,
 Salig er den, der som Barn vugtes af Venus i Blund,
 Salig, naar Phøbus har opladt hans Syn og Hermes hans Læber,
@@ -405,10 +418,11 @@ Og, som Athene blev født, udspringer af Tordnerens Hoved
 Rustet med Ægis ethvert straalende Visdommens Ord.
 
 <nonum><small><right>Efter Fr. v. Schiller.</right></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lange2019101408">
+<text id="lange2019101408">
 <head>
     <title>Havet</title>
     <firstline>Himmelafspejlende, maalløse Hav</firstline>
@@ -419,6 +433,7 @@ Rustet med Ægis ethvert straalende Visdommens Ord.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><small><right>Himlen ej, kun Himlens Billed</right></small></nonum>
 <nonum><small><right>Hviler i din dybe Favn.</right></small></nonum>
 <nonum><small><right><i>Hejberg</i>.</right></small></nonum>
@@ -453,10 +468,11 @@ Du stræber at ligne den rolige Himmel,
 Men ængstes for det, som Du aldrig kan naa.
 
 <nonum><small><right>Efter Wasilij Iwànowitsch Shjukòfskij.</right></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lange2019101409">
+<text id="lange2019101409">
 <head>
     <title>Idealet</title>
     <firstline>Vig er end ellers Kvinde for Mand — i det, som er højest</firstline>
@@ -467,6 +483,7 @@ Men ængstes for det, som Du aldrig kan naa.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Vig er end ellers Kvinde for Mand — i det, som er højest,
 Viger den mandigste Mand strax, naar en Kvinde staaer frem.
 Hvad er da højest af Alt? En rolig Sejerens Klarhed,
@@ -481,20 +498,22 @@ Her er den evige Vaar i rig, uvisnelig Ungdom,
 Her er forenet til Et: Blomst og den blussende Frugt!
 
 <nonum><small><right>Efter Fr. v. Schiller.</right></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lange2019101410">
+<text id="lange2019101410">
 <head>
     <title>Kvindens Skabelse</title>
     <firstline>Nu bringer jeg Dig, Adam, al din Glæde</firstline>
     <source pages="29-32"/>
     <notes>
-        <note unknown-original-by="milton" />
+        <note>Gendigtning af del af Miltons <xref type="translation" poem="milton1999063017,1086-1157"/> fra <i>Paradise Lost</i> (1667).</note>
     </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 »Nu bringer jeg Dig, Adam, al din Glæde,
 Din Lignelse, din Hjælp, dit andet Jeg —
 Et fuldendt Udtryk for dit Hjertes Ønske!«
@@ -570,8 +589,9 @@ I Sang bad Aftenstjernen haste op
 Paa Bjergets Tind at staa som Brudelampe.
 
 <nonum><small><right>Efter John Milton.</right></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section> <!-- A. Rimfri Kunstdigtning -->
@@ -582,7 +602,7 @@ Paa Bjergets Tind at staa som Brudelampe.
 </head>
 <content>
 
-<poem id="lange2019101411">
+<text id="lange2019101411">
 <head>
     <title>Romance</title>
     <firstline>Der skulde to Søstre til Kilden gaa</firstline>
@@ -590,6 +610,7 @@ Paa Bjergets Tind at staa som Brudelampe.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Der skulde to Søstre til Kilden gaa,
 Og Gai tog Krukken at bære paa,
 Imens Oriour paa Blomsterne saa.
@@ -623,10 +644,11 @@ Hun lod deres Bryllup med Ære bo.
     Og nu vil jeg kysse min Hjertenskjær!
 
 <nonum><small><right>Gammelfransk.</right></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lange2019101412">
+<text id="lange2019101412">
 <head>
     <title>Nu hilser jeg alle Jomfruer smaa!</title>
     <firstline>Der red en Svend over Heden ud</firstline>
@@ -634,6 +656,7 @@ Hun lod deres Bryllup med Ære bo.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Der red en Svend over Heden ud,
 Hans Fjender vare saa mange.
 De hug ham fra baade Sværd og Skjold
@@ -675,10 +698,11 @@ For hun har rettet mit unge Liv,
 Og hun er min Inderligkjære!
 
 <nonum><small><right>Efter det Flamske.</right></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lange2019101413">
+<text id="lange2019101413">
 <head>
     <title>Lord Lundies Datter</title>
     <firstline>Hr. William var en Ungersvend</firstline>
@@ -686,6 +710,7 @@ Og hun er min Inderligkjære!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hr. William var en Ungersvend,
 Han vilde Runer lære
 Alt hos Lord Lundies Datter væn,
@@ -762,10 +787,11 @@ Det Bryllup hued ham ilde:
 Saa nødig, som jeg det vilde!«
 
 <nonum><small><right>Efter det Skotske.</right></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lange2019101414">
+<text id="lange2019101414">
 <head>
     <title>Unge Pige, Du min hvide Blomst</title>
     <firstline>Unge Pige, Du min hvide Blomst</firstline>
@@ -773,6 +799,7 @@ Saa nødig, som jeg det vilde!«
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Unge Pige, Du min hvide Blomst!
 Hvorpaa saa Du, da Du voxed op,
 Sig mod hvilket var dit Øje vendt?
@@ -788,10 +815,11 @@ Da jeg voxed, blev jeg faur og fin,
 Faur og fin, fordi jeg saa paa <w>Dig!</w>
 
 <nonum><small><right>Serbisk (ovs. fra Russisk).</right></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lange2019101415">
+<text id="lange2019101415">
 <head>
     <title>Store Glæder vil jeg Dig fortælle!</title>
     <firstline>Fjernt paa Marken staaer den slanke Hvidbirk</firstline>
@@ -799,6 +827,7 @@ Faur og fin, fordi jeg saa paa <w>Dig!</w>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Fjernt paa Marken staaer den slanke Hvidbirk,
 Sneen smelter bort omkring dens Rødder,
 Ved dens Rødder ligger Græsset visnet.
@@ -815,10 +844,11 @@ Tsaren kalder Dig, han vil Dig ære;
 Hun, Du elsker, vil din Hustru være!
 
 <nonum><small><right>Efter det Russiske.</right></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lange2019101416">
+<text id="lange2019101416">
 <head>
     <title>Alt mit Liv paa Jord var at elske Dig</title>
     <firstline>Vent mig ikke, Skat, i den stille Kvæld</firstline>
@@ -826,6 +856,7 @@ Hun, Du elsker, vil din Hustru være!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 »Vent mig ikke, Skat, i den stille Kvæld,
 Hold nu aldrig mer klare Voxlys tændt;
 Sid ej oppe sent efter Midienat.
@@ -863,10 +894,11 @@ Men en Nat endnu er der Voxlys tændt,
 Og paa Bordet staaer hendes Kiste redt.
 
 <nonum><small><right>Efter det Russiske.</right></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lange2019101417">
+<text id="lange2019101417">
 <head>
     <title>Nu rid kun langt herfra til fjerne Lande</title>
     <firstline>Der sad en Brud og skjar sin Brudgom Klæder</firstline>
@@ -874,6 +906,7 @@ Og paa Bordet staaer hendes Kiste redt.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Der sad en Brud og skjar sin Brudgom Klæder
 Og syede Kappen ud med fine Sømme;
 Den første Søm var Solens blanke Skive,
@@ -891,10 +924,11 @@ Men heller paa Dig se for lange Tider,
 Saa det kan være nok, indtil Du kommer.
 
 <nonum><small><right>Efter det Russiske.</right></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lange2019101418">
+<text id="lange2019101418">
 <head>
     <title>Sig, naar jeg maa vente Dig</title>
     <firstline>Hørt jeg har, en Fader drev sin Søn fra Gaard</firstline>
@@ -902,6 +936,7 @@ Saa det kan være nok, indtil Du kommer.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hørt jeg har, en Fader drev sin Søn fra Gaard,
 Bød sin Førstefødte gaa til fremmed Land,
 Did, hvor Hylden aldrig staaer af Blomster hvid. —
@@ -918,10 +953,11 @@ Aldrig voxer Græsset over Tsarens Slot,
 Aldrig flyder Stenen op fra Flodens Bund!
 
 <nonum><small><right>Efter det Russiske.</right></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lange2019101419">
+<text id="lange2019101419">
 <head>
     <title>Skin, Du varme Sol, paa Rønnebærret!</title>
     <firstline>Skin, Du varme Sol, paa Rønnebærret!</firstline>
@@ -929,6 +965,7 @@ Aldrig flyder Stenen op fra Flodens Bund!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Skin, Du varme Sol, paa Rønnebærret,
 Uden Sol kan Bærret ikke modnes,
 Uden Ord kan Pigen ikke vindes.
@@ -943,10 +980,11 @@ Men den tredie seer derpaa og græder,
 For hans Hjerte havde sovet i ham.
 
 <nonum><small><right>Efter det Russiske.</right></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lange2019101420">
+<text id="lange2019101420">
 <head>
     <title>Jeg vil aldrig vredes paa min Hjertenskjære</title>
     <firstline>Alle tro Veninder, mine Plejemødre</firstline>
@@ -954,6 +992,7 @@ For hans Hjerte havde sovet i ham.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Alle tro Veninder, mine Plejemødre,
 Alle smukke Piger, mine Legesøstre!
 Hvad er snarest borte, hvad er hurtigst svundet,
@@ -982,10 +1021,11 @@ Alle smukke Piger, mine Legesøstre,
 Jeg vil aldrig vredes paa min Hjertenskjære!
 
 <nonum><small><right>Efter det Russiske.</right></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lange2019101421">
+<text id="lange2019101421">
 <head>
     <title>Allevegnefra trak der Taager op</title>
     <firstline>Allevegne trak der Taager op</firstline>
@@ -993,6 +1033,7 @@ Jeg vil aldrig vredes paa min Hjertenskjære!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Allevegne trak der Taager op,
 Først fra Nord og Syd, saa fra Øst og Vest,
 Og til sorte Skyer hver en Taage blev,
@@ -1019,10 +1060,11 @@ Og bed højt til Gud, første Kjærlighed,
 At hos mig paa Jord Du igjen maa bo!
 
 <nonum><small><right>Efter det Russiske.</right></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lange2019101422">
+<text id="lange2019101422">
 <head>
     <title>Sig mig kun, hvorfor Du sørger!</title>
     <firstline>Hampen staaer i lange Rækker</firstline>
@@ -1030,6 +1072,7 @@ At hos mig paa Jord Du igjen maa bo!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hampen staaer i lange Rækker
 I det tørre Bed i Haven;
 Fra den unge Piges Øjne
@@ -1051,10 +1094,11 @@ Og med den jeg synger for ham,
 Saa han troer Dig selv at høre!« -
 
 <nonum><small><right>Moldauisk (ovs. fra Russisk).</right></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lange2019101423">
+<text id="lange2019101423">
 <head>
     <title>Aldrig fik jeg Dig igjen</title>
     <firstline>Hvorfor staa de fjerne Bjerge sorte, som de bar en Sorg?</firstline>
@@ -1062,6 +1106,7 @@ Saa han troer Dig selv at høre!« -
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvorfor staa de fjerne Bjerge sorte, som de bar en Sorg?
 Mon den barske Regn dem pidsker, mon den vilde Vind dem slaaer?
 Ej den barske Regn dem pidsker, ej den vilde Vind dem slaaer,
@@ -1077,10 +1122,11 @@ Dersom Egnens Kvinder saa Dig, naar i Kvæld de hente Vand,
 Kom din Brud og tog Dig fra mig — aldrig fik jeg Dig igjen!««
 
 <nonum><small><right>Efter det Nygræske.</right></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lange2019101424">
+<text id="lange2019101424">
 <head>
     <title>Der rinder en Bæk under Lide</title>
     <firstline>Der rinder en Bæk under Lide</firstline>
@@ -1088,6 +1134,7 @@ Kom din Brud og tog Dig fra mig — aldrig fik jeg Dig igjen!««
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Der rinder en Bæk under Lide,
 Et Møllehjul løber deri;
 Det løber langt mere hastigt,
@@ -1104,10 +1151,11 @@ Gud glæde Dig, Hjertenskjære,
 Som jeg maatte aldrig faa.
 
 <nonum><small><right>Gammel tydsk Folkevise.</right></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lange2019101425">
+<text id="lange2019101425">
 <head>
     <title>Hr. Johnstone</title>
     <firstline>Hr. Johnstone og hans unge Maag</firstline>
@@ -1115,6 +1163,7 @@ Som jeg maatte aldrig faa.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hr. Johnstone og hans unge Maag
     De drikke den røde Vin:
 »Vel, at Du haver min Søster fæst,
@@ -1241,8 +1290,9 @@ Og hav Du aldrig Taare paa Kind,
     For Du er min Hjertenskjær!«
 
 <nonum><small><right>Efter det Skotske.</right></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section> <!-- B. Folkesange -->
@@ -1253,7 +1303,7 @@ Og hav Du aldrig Taare paa Kind,
 </head>
 <content>
 
-<poem id="lange2019101426">
+<text id="lange2019101426">
 <head>
     <title><num>I.</num>Du høje Helgenbilled i mit Sind!</title>
     <firstline>Du høje Helgenbilled i mit Sind!</firstline>
@@ -1265,6 +1315,7 @@ Og hav Du aldrig Taare paa Kind,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Du høje Helgenbilled i mit Sind!
 Du, hvem jeg tilbad, tilbad aldrig trættet,
 Du Sol, jeg saa, Du Sol. som aldrig plettet
@@ -1284,10 +1335,11 @@ For mig er Du det største, som jeg kjender;
 Kun et er større: hvor jeg var Dig tro!
 
 <nonum><small><right>Efter Ludovico Ariosto. † 1533.</right></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lange2019101427">
+<text id="lange2019101427">
 <head>
     <title><num>II.</num>Sæt mig, hvor Solen svider hvert et Straa</title>
     <firstline>Sæt mig, hvor Solen svider hvert et Straa</firstline>
@@ -1299,6 +1351,7 @@ Kun et er større: hvor jeg var Dig tro!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Sæt mig, hvor Solen svider hvert et Straa,
 Og der, hvor foraarsmildt dens Straaler spille,
 Og der, hvor ingen Straale kan mig naa,
@@ -1318,10 +1371,11 @@ O Du min Elskovs dyre Diamant!
 Du var min Tanke, hvor Du end mig fandt!
 
 <nonum><small><right>Efter Henry Howard, Jarl af Surrey. † 1547.</right></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lange2019101428">
+<text id="lange2019101428">
 <head>
     <title><num>III.</num>Nu har jeg ledt om hende allevegne</title>
     <firstline>Nu har jeg ledt om hende allevegne</firstline>
@@ -1333,6 +1387,7 @@ Du var min Tanke, hvor Du end mig fandt!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nu har jeg ledt om hende allevegne,
 Ret som en Kronhjort leder om sin Hind;
 Jeg gik tilbage til min Længsels Egne,
@@ -1352,10 +1407,11 @@ Nu, mine Øjne, bliv kun stille hjemme,
 Og lad min Sjæl det klare Billed gjemme.
 
 <nonum><small><right>Efter Edmond Spenser. † 1599.</right></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lange2019101429">
+<text id="lange2019101429">
 <head>
     <title><num>IV.</num>Betragt det Smil, hun har omkring sin Mund</title>
     <firstline>Betragt det Smil, hun har omkring sin Mund</firstline>
@@ -1367,6 +1423,7 @@ Og lad min Sjæl det klare Billed gjemme.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Betragt det Smil, hun har omkring sin Mund,
 Og sig mig sandt, om før I saa dets Lige,
 Saa tidt fra hendes Sjæls den dybe Bund
@@ -1386,10 +1443,11 @@ Saa blev mig Himlen stedse høj og blaa,
 Hvergang et Smil om hendes Mund jeg saa!
 
 <nonum><small><right>Efter Spenser.</right></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lange2019101430">
+<text id="lange2019101430">
 <head>
     <title><num>V.</num>Et herligt Syn, naar frit hun lader gynge</title>
     <firstline>Et herligt Syn, naar frit hun lader gynge</firstline>
@@ -1401,6 +1459,7 @@ Hvergang et Smil om hendes Mund jeg saa!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Et herligt Syn, naar frit hun lader gynge
 De løste Lokker for den viltre Vind;
 Et herligt Syn og herligt at besynge,
@@ -1420,10 +1479,11 @@ Og alt det andet kan en anden hædre!
 — Din Aand har løftet mig og gjort mig bedre!
 
 <nonum><small><right>Efter Spenser.</right></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lange2019101431">
+<text id="lange2019101431">
 <head>
     <title><num>VI.</num>Du kaldes skjøn, det maa Du sagtens tro</title>
     <firstline>Du kaldes skjøn, det maa Du sagtens tro</firstline>
@@ -1435,6 +1495,7 @@ Og alt det andet kan en anden hædre!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Du kaldes skjøn, det maa Du sagtens tro,
 Du ser det selv for hvert et Trin, Du træder!
 Men mere dog dit Væsens høje Ro,
@@ -1454,10 +1515,11 @@ Ham være Pris! Hans Billed skal bestaa,
 Naar hvert et jordisk Billed blegne maa!
 
 <nonum><small><right>Efter Spenser.</right></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lange2019101432">
+<text id="lange2019101432">
 <head>
     <title><num>VII.</num>Lad Tvang og Trængsel for min Lykke stænge</title>
     <firstline>Lad Tvang og Trængsel for min Lykke stænge</firstline>
@@ -1469,6 +1531,7 @@ Naar hvert et jordisk Billed blegne maa!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Lad Tvang og Trængsel for min Lykke stænge,
 Kun Du kan stænge for mit glade Sind!
 Hvert andet Baand forstaaer min Sjæl at sprænge,
@@ -1488,10 +1551,11 @@ Thi vist jeg véd, kun dér den kunde lære
 At synge, som den vilde, til din Ære!
 
 <nonum><small><right>Efter Spenser.</right></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lange2019101433">
+<text id="lange2019101433">
 <head>
     <title><num>VIII.</num>En Svane flyver under Himlens Hvælv</title>
     <firstline>En Svane flyver under Himlens Hvælv</firstline>
@@ -1503,6 +1567,7 @@ At synge, som den vilde, til din Ære!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 En Svane flyver under Himlens Hvælv,
 Fugl Phønix er den kaldet; Sagnet melder,
 At den er fast saa sjelden som Du selv,
@@ -1522,10 +1587,11 @@ Dér straaler Du, min Længsels hvide Brud!
 Naar Sol og alle Stjerner er brændt ud!
 
 <nonum><small><right>Efter Michel Drayton. † 1631.</right></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lange2019101434">
+<text id="lange2019101434">
 <head>
     <title><num>IX.</num>Du klare Strøm, hvor hun, min Helgeninde</title>
     <firstline>Du klare Strøm, hvor hun, min Helgeninde</firstline>
@@ -1537,6 +1603,7 @@ Naar Sol og alle Stjerner er brændt ud!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Du klare Strøm, hvor hun, min Helgeninde,
 Har viet med sin Fod det sølvgraa Sand,
 Hvor hvert et Bølgeblink har spejlet hende,
@@ -1556,10 +1623,11 @@ Saa rinde dine Vover stedse rene!
 Vær hilset, Du min Musas Hippocrene!
 
 <nonum><small><right>Efter Drayton.</right></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lange2019101435">
+<text id="lange2019101435">
 <head>
     <title><num>X.</num>Skal jeg Dig ligne ved en Sommerdag?</title>
     <firstline>Skal jeg Dig ligne ved en Sommerdag?</firstline>
@@ -1571,8 +1639,9 @@ Vær hilset, Du min Musas Hippocrene!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Skal jeg Dig ligne ved en Sommerdag?
-Nej mere lys og blid har D ig jeg fundet!
+Nej mere lys og blid har Dig jeg fundet!
 Thi Somrens Blæst kan tage haarde Tag,
 Og Somrens Ungdomstid er brat forsvundet.
 
@@ -1590,10 +1659,11 @@ Saalænge Nogen kjender Poesi,
 Saa lever den, og Du, som boer deri!
 
 <nonum><small><right>William Shakespeare. † 1616.</right></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lange2019101436">
+<text id="lange2019101436">
 <head>
     <title><num>XI.</num>Vel maa min Musa være prægtig smykket!</title>
     <firstline>Vel maa min Musa være prægtig smykket!</firstline>
@@ -1605,6 +1675,7 @@ Saa lever den, og Du, som boer deri!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Vel maa min Musa være prægtig smykket!
 Den fandt, for hver en Gang Du aanded blot,
 En Blomst, hvori dit gyldne Navn stod trykket,
@@ -1624,10 +1695,11 @@ Og sang jeg, saa det kunde røre Stene,
 Var Stemmen min — men Æren din alene!
 
 <nonum><small><right>Efter Shakespeare.</right></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lange2019101437">
+<text id="lange2019101437">
 <head>
     <title><num>XII.</num>Du rummer Alt, der er mig dyrebart!</title>
     <firstline>Du rummer Alt, der er mig dyrebart!</firstline>
@@ -1639,6 +1711,7 @@ Var Stemmen min — men Æren din alene!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Du rummer Alt, der er mig dyrebart!
 De mange Vennehjerter, jeg har vundet
 Kun for at skilles fra dem altfor snart,
@@ -1658,10 +1731,11 @@ Blandt mange Venner var mit Hjerte delt:
 Du er dem alle — tag mit Hjerte helt!
 
 <nonum><small><right>Efter Shakespeare.</right></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lange2019101438">
+<text id="lange2019101438">
 <head>
     <title><num>XIII.</num>I Fortids Rim jeg læste mange Gange</title>
     <firstline>I Fortids Rim jeg læste mange Gange</firstline>
@@ -1673,6 +1747,7 @@ Du er dem alle — tag mit Hjerte helt!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I Fortids Rim jeg læste mange Gange,
 Der stod om Dyd og Dejlighed fortalt;
 Og herligt formed sig de gamle Sange,
@@ -1692,10 +1767,11 @@ De aned den, men fik den ej talt ud.
 Beundre Dig — til mér er vi for svage.
 
 <nonum><small><right>Efter Shakespeare.</right></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lange2019101439">
+<text id="lange2019101439">
 <head>
     <title><num>XIV.</num>Min Musa var for svag, den bliver træt</title>
     <firstline>Min Musa var for svag, den bliver træt</firstline>
@@ -1707,6 +1783,7 @@ Beundre Dig — til mér er vi for svage.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Min Musa var for svag, den bliver træt;
 Den fik et pragtfuldt Navn at følge vide,
 Men ene flyver Navnet mere let,
@@ -1726,10 +1803,11 @@ Langt mer, end jeg kan sige Dig, langt mer
 Kan selv Du se, naar paa Dig selv Du seer!
 
 <nonum><small><right>Efter Shakespeare.</right></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="lange2019101440">
+<text id="lange2019101440">
 <head>
     <title><num>XV.</num>Jeg véd et Baand, der Sjæl til Sjæl kan føje</title>
     <firstline>Jeg véd et Baand, der Sjæl til Sjæl kan føje</firstline>
@@ -1741,6 +1819,7 @@ Kan selv Du se, naar paa Dig selv Du seer!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg véd et Baand, der Sjæl til Sjæl kan føje,
 Det brister aldrig, derpaa vil jeg tro!
 Thi ingen Magt kan Kjærligheden bøje,
@@ -1760,8 +1839,9 @@ Er det ej sandt, saa har jeg aldrig skrevet,
 Og ingen Elsker nogensinde levet!
 
 <nonum><small><right>William Shakespeare.</right></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section> <!-- C. Sonnetter -->

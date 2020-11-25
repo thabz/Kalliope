@@ -16,7 +16,7 @@
 </workhead>
 <workbody>
 
-<prose id="longfellow2019041301">
+<text id="longfellow2019041301" skip-index="true">
 <head>
     <title>Preface</title>
     <source pages="VII-XXV" facsimile-pages="13-31" />
@@ -24,6 +24,7 @@
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<prose>
    There is one poem in this volume, in reference to which a few introductory remarks may be useful It is <i>The Children of the Lord's Supper,</i> from the Swedish of Bishop Tegnér; a poem which enjoys no inconsiderable reputation in the North of Europe, and for its beauty and simplicity merits the attention of English readers. It is an Idyl, descriptive of scenes in a Swedish village; and belongs to the same class of poems, as the <i>Luise</i> of Voss and the <i>Hermann und Dorothea</i> of <a poet="goethe">Göthe</a>. But the Swedish Poet has been guided by a surer taste, than his German predecessors. His tone is pure and elevated; and he rarely, if ever, mistakes what is trivial for what is simple.
    There is something patriarchal still lingering about rural life in Sweden, which renders it a fit theme for song. Almost primeval simplicity reigns over that Northern land, — almost primeval solitude and stillness. You pass out from the gate of the city, and, as if by magic, the scene changes to a wild, woodland landscape. Around you are forests of fir. Over head hang the long, fan-like branches, trailing with moss, and heavy with red and blue cones. Under foot is a carpet of yellow leaves; and the air is warm and balmy. On a wooden bridge you cross a little silver stream; and anon come forth into a pleasant and sunny land of farms. Wooden fences divide the adjoining fields. Across the road are gates, which are opened by troops of children. The peasants take off their hats as you pass; you sneeze, and they cry, “God bless you.” The houses in the villages and smaller towns are all built of hewn timber, and for the most part painted red. The floors of the taverns are strewn with the fragrant tips of fir boughs. In many villages there are no taverns, and the peasants take turns in receiving travellers. The thrifty housewife shows you into the best chamber, the walls of which are hung round with rude pictures from the Bible; and brings you her heavy silver spoons, — an heirloom, — to dip the curdled milk from the pan. You have oaten cakes baked some months before; or bread with anise-seed and coriander in it, or perhaps a little pine bark.
    Meanwhile the sturdy husband has brought his horses from the plough, and harnessed them to your carriage. Solitary travellers come and go in uncouth one-horse chaises. Most of them have pipes in their mouths, and hanging around their necks in front, a leather wallet, in which they carry tobacco, and the great bank notes of the country, as large as your two hands. You meet, also, groups of Dalekarlian peasant women, travelling homeward or town-ward in pursuit of work. They walk barefoot, carrying in their hands their shoes, which have high heels under the hollow of the foot, and soles of birch bark.
@@ -45,8 +46,9 @@ From his swallow's nest in the belfry he can see the sun all night long; and far
    I trust that these remarks will not be deemed irrelevant to the poem, but will lead to a clearer understanding of it. The translation is literal, perhaps to a fault. In no instance have I done the author a wrong, by introducing into his work any supposed improvements or Embellishments of my own. I have preserved even the measure; that inexorable hexameter, in which, it must be confessed, the motions of the English Muse are not unlike those of a prisoner dancing to the music of his chains; and perhaps, as Dr. Johnson said of the dancing dog, “the wonder is not that she should do it so well, but that she should do it at all.”
    Esaias Tegnér, the author of this poem, was born in the parish of By in Wärmland, in the year 1782. In 1799 he entered the University of Lund, as a student; and in 1812 was appointed Professor of Greek in that institution.
 In 1824 he became Bishop of Wexiö, which office he still holds. He stands first among all the poets of Sweden, living or dead. His principal work is Frithiofs Saga; one of the most remarkable poems of the age. This modern Scald has written his name in immortal runes. He is the glory and boast of Sweden; a prophet, honored in his own country, and adding one more to the list of great names, that adorn her history.
-</body>
 </prose>
+</body>
+</text>
 
 <section>
 <head>
@@ -54,7 +56,7 @@ In 1824 he became Bishop of Wexiö, which office he still holds. He stands first
 </head>
 <content>
 
-<poem id="longfellow1999063010">
+<text id="longfellow1999063010">
 <head>
    <title>The Skeleton in Armour</title>
    <toctitle>The Skeleton in Armour</toctitle>
@@ -68,6 +70,7 @@ In 1824 he became Bishop of Wexiö, which office he still holds. He stands first
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 “Speak! speak! thou fearful guest
   Who, with thy hollow breast
   Still in rude armour drest,
@@ -246,10 +249,11 @@ Up to its native stars
 There from the flowing bowl
 Deep drinks the warrior's soul,
 <i>Skoal!</i> to the Northland! <i>skoal!</i>”<note>* In Scandanavia this is the customary salutation when drinking a health. I have slightly changed the orthography of the word, in order to preserve the correct pronunciation.</note>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="longfellow1999063011">
+<text id="longfellow1999063011">
 <head>
    <title>The Wreck of the Hesperus</title>
    <toctitle>The Wreck of the Hesperus</toctitle>
@@ -259,6 +263,7 @@ Deep drinks the warrior's soul,
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 It was the schooner Hesperus,
    That sailed the wintry sea;
 And the skipper had taken his little daughter,
@@ -369,11 +374,12 @@ Such was the wreck of the Hesperus,
    In the midnight and the snow!
 Christ save us all from a death like this,
    On the reef of Norman's Woe!
+</poetry>
 </body>
-</poem>
+</text>
 
 
-<poem id="longfellow2019041302">
+<text id="longfellow2019041302">
 <head>
     <title>The Luck of Edenhall</title>
     <subtitle>From the German of Uhland</subtitle>
@@ -386,6 +392,7 @@ Christ save us all from a death like this,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Of Edenhall, the youthful Lord
 Bids sound the festal trumpet's call;
 He rises at the banquet board,
@@ -451,10 +458,11 @@ Down must the stately columns fall;
 Glass is this earth's Luck and Pride;
 In atoms shall fall this earthly ball
 One day like the Luck of Edenhall!”
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="longfellow2019041303">
+<text id="longfellow2019041303">
 <head>
     <title>The Elected Knight</title>
     <firstline>Sir Oluf he rideth over the plain</firstline>
@@ -466,6 +474,7 @@ One day like the Luck of Edenhall!”
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Sir Oluf he rideth over the plain,
    Full seven miles broad and seven miles wide,
 But never, ah never can meet with the man
@@ -525,13 +534,14 @@ Now lie the lords upon the plain,
    And their blood runs unto death;
 Now sit the Maidens in the high tower,
    The youngest sorrows till death.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section> <!-- Ballads -->
 
-<poem id="longfellow2019041304">
+<text id="longfellow2019041304">
 <head>
     <title>The Children of the Lord's Supper</title>
     <subtitle>From the Swedish of Bishop Tegnér</subtitle>
@@ -542,6 +552,7 @@ Now sit the Maidens in the high tower,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Pentecost, day of rejoicing, had come. The church of the village
 Stood gleaming white in the morning's sheen. On the spire of the belfry.
 Tipped with a vane of metal, the friendly flames of the Spring-sun
@@ -899,8 +910,9 @@ Up rose the children all, and each bowed him, weeping full sorely,
 Downward to kiss that reverend hand, but all of them pressed he
 Moved to his bosom, and laid, with a prayer, his hands full of blessings.
 Now on the holy breast, and now on the innocent tresses.
+</poetry>
 </body>
-</poem>
+</text>
 
 <section>
 <head>
@@ -908,7 +920,7 @@ Now on the holy breast, and now on the innocent tresses.
 </head>
 <content>
 
-<poem id="longfellow1999063012">
+<text id="longfellow1999063012">
 <head>
    <title>The Village Blacksmith</title>
    <toctitle>The Village Blacksmith</toctitle>
@@ -918,6 +930,7 @@ Now on the holy breast, and now on the innocent tresses.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Under a spreading chestnut-tree
   The village smithy stands;
 The smith, a mighty man is he,
@@ -973,10 +986,11 @@ Thus at the flaming forge of life
   Our fortunes must be wrought;
 Thus on its sounding anvil shaped
   Each burning deed and thought.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="longfellow1999063013">
+<text id="longfellow1999063013">
 <head>
    <title>Endymion</title>
    <toctitle>Endymion</toctitle>
@@ -986,6 +1000,7 @@ Thus on its sounding anvil shaped
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 The rising moon has hid the stars;
 Her level rays, like golden bars,
    Lie on the landscape green,
@@ -1030,11 +1045,12 @@ Responds,—as if with unseen wings,
 An angel touched its quivering strings;
    And whispers, in its song,
    “'Where hast thou stayed so long?”
+</poetry>
 </body>
-</poem>
+</text>
 
 
-<poem id="longfellow2019041305">
+<text id="longfellow2019041305">
 <head>
     <title>The Two Locks of Hair</title>
     <subtitle>From the German of Pfizer</subtitle>
@@ -1044,6 +1060,7 @@ An angel touched its quivering strings;
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 A youth, light-hearted and content,
   I wander through the world;
 Here, Arab-like, is pitched my tent
@@ -1078,10 +1095,11 @@ And when I see that lock of gold,
   Pale grows the evening-red;
 And when the dark lock I behold,
   I wish that I were dead.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="longfellow1999063014">
+<text id="longfellow1999063014">
 <head>
    <title>It is not always May</title>
    <toctitle>It is not always May</toctitle>
@@ -1091,6 +1109,7 @@ And when the dark lock I behold,
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 <nonum><right><sc>no hay pájaros en los nidos de antaño.</sc></right></nonum>
 <nonum><right><small><i>Spanish Proverb.</i></small></right></nonum>
 
@@ -1123,10 +1142,11 @@ Enjoy the Spring of Love and Youth,
    To some good angel leave the rest;
 For Time will teach thee soon the truth,
   There are no birds in last year's nest!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="longfellow1999063015">
+<text id="longfellow1999063015">
 <head>
    <title>The Rainy Day</title>
    <toctitle>The Rainy Day</toctitle>
@@ -1136,6 +1156,7 @@ For Time will teach thee soon the truth,
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 The day is cold, and dark, and dreary
 It rains, and the wind is never weary;
 The vine still clings to the mouldering wall,
@@ -1153,10 +1174,11 @@ Behind the clouds is the sun still shining;
 Thy fate is the common fate of all,
 Into each life some rain must fall,
     Some days must be dark and dreary.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="longfellow1999063016">
+<text id="longfellow1999063016">
 <head>
    <title>God's-Acre</title>
    <toctitle>God's-Acre</toctitle>
@@ -1166,6 +1188,7 @@ Into each life some rain must fall,
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 I like that ancient Saxon phrase, which calls
   The burial-ground God's-Acre! It is just;
 It consecrates each grave within its walls,
@@ -1190,10 +1213,11 @@ With thy rude ploughshare, Death, turn up the sod,
   And spread the furrow for the seed we sow;
 This is the field and Acre of our God,
   This is the place where human harvests grow!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="longfellow1999063017">
+<text id="longfellow1999063017">
 <head>
    <title>To the River Charles</title>
    <toctitle>To the River Charles</toctitle>
@@ -1203,6 +1227,7 @@ This is the field and Acre of our God,
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 River! that in silence windest
   Through the meadows, bright and free,
 Till at length thy rest thou findest
@@ -1252,10 +1277,11 @@ When I fan the living embers
   That my spirit leans to thee;
 Thou hast been a generous giver,
   Take this idle song from me.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="longfellow1999063018">
+<text id="longfellow1999063018">
 <head>
    <title>Blind Bartimeus</title>
    <toctitle>Blind Bartimeus</toctitle>
@@ -1268,6 +1294,7 @@ Thou hast been a generous giver,
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Blind Bartimeus at the gates
 Of Jericho in darkness waits;
 He hears the crowd;—he hears a breath
@@ -1295,10 +1322,11 @@ Recall those mighty Voices Three,
 Ἰησοῦ, ἐλέησόν με!
 Θάρσει, ἔγειραι, ὕπαγε!
 Ἡ πίστις σου σέσωκέ σε!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="longfellow1999063019">
+<text id="longfellow1999063019">
 <head>
    <title>The Goblet of Life</title>
    <toctitle>The Goblet of Life</toctitle>
@@ -1308,6 +1336,7 @@ Recall those mighty Voices Three,
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Filled is Life's goblet to the brim;
 And though my eyes with tears are dim,
 I see its sparkling bubbles swim,
@@ -1379,10 +1408,11 @@ Where floats the fennel's bitter leaf!
 The Battle of our Life is briet
 The alarm,—the struggle,—the relief,
    Then sleep we side by side.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="longfellow1999063020">
+<text id="longfellow1999063020">
 <head>
    <title>Maidenhood</title>
    <toctitle>Maidenhood</toctitle>
@@ -1392,6 +1422,7 @@ The alarm,—the struggle,—the relief,
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Maiden! with the meek, brown eyes,
 In whose orbs a shadow lies
 Like the dusk in evening skies!
@@ -1455,10 +1486,11 @@ Even as sleep our eyes doth seal;
 And that smile, like sunshine, dart
 Into many a sunless heart,
 For a smile of God thou art.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="longfellow1999063021">
+<text id="longfellow1999063021">
 <head>
    <title>Excelsior</title>
    <toctitle>Excelsior</toctitle>
@@ -1468,6 +1500,7 @@ For a smile of God thou art.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 The shades of night were falling fast,
 As through an Alpine village passed
 A youth, who bore, 'mid snow and ice,
@@ -1521,8 +1554,9 @@ Lifeless, but beautiful, he lay,
 And from the sky, serene and far,
 A voice fell, like a falling star,
        Excelsior!
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section> <!-- Miscellaneous -->

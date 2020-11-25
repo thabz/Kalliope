@@ -8,13 +8,14 @@
 </workhead>
 <workbody>
 
-<poem id="musset2018080301">
+<text id="musset2018080301">
 <head>
    <title>Rappelle-toi</title>
    <firstline>Rappelle-toi, quand l'Aurore craintive</firstline>
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 <nonum><small><i>(Vergiss mein nicht)</i></small></nonum>
 <nonum><small><i>(Paroles faites sur la musique de Mozart)</i></small></nonum>
 
@@ -47,15 +48,17 @@ Reviendra près de toi comme une soeur fidèle.
 Ecoute, dans la nuit,
 Une voix qui gémit :
 Rappelle-toi.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="musset2020010501">
+<text id="musset2020010501">
 <head>
     <title>Ballade à la lune</title>
     <firstline>C'était, dans la nuit brune</firstline>
 </head>
 <body>
+<poetry>
 C'était, dans la nuit brune,
 Sur le clocher jauni,
 La lune
@@ -225,15 +228,17 @@ Et c'est, dans la nuit brune,
 Sur son clocher jauni,
 La lune
 Comme un point sur un i.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="musset2020010502">
+<text id="musset2020010502">
 <head>
     <title>À Ninon</title>
     <firstline>Avec tout votre esprit, la belle indifférente</firstline>
 </head>
 <body>
+<poetry>
 Avec tout votre esprit, la belle indifférente,
 Avec tous vos grands airs de rigueur nonchalante,
 Qui nous font tant de mal et qui vous vont si bien,
@@ -283,15 +288,17 @@ Je regarde le ciel, Ninon, et je vous vois ;
 Ne me l'arrachez pas quand j'en devrais mourir !
 Je me tais devant vous ; - quel mal fait ma folie ?
 Ne me plaignez jamais et laissez-moi souffrir.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="musset2020010503">
+<text id="musset2020010503">
 <head>
     <title>Lettre à M. de Lamartine</title>
     <firstline>Lorsque le grand Byron allait quitter Ravenne</firstline>
 </head>
 <body>
+<poetry>
 Lorsque le grand Byron allait quitter Ravenne,
 Et chercher sur les mers quelque plage lointaine
 Où finir en héros son immortel ennui,
@@ -585,15 +592,17 @@ Tes os dans le cercueil vont tomber en poussière
 Ta mémoire, ton nom, ta gloire vont périr,
 Mais non pas ton amour, si ton amour t'est chère :
 Ton âme est immortelle, et va s'en souvenir.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="musset2020010504">
+<text id="musset2020010504">
 <head>
     <title>La nuit de mai</title>
     <firstline>Poète, prends ton luth et me donne un baiser</firstline>
 </head>
 <body>
+<poetry>
 <nonum><center><i>La muse</i></center></nonum>
 
 Poète, prends ton luth et me donne un baiser ;
@@ -825,15 +834,17 @@ Mais j'ai souffert un dur martyre,
 Et le moins que j'en pourrais dire,
 Si je l'essayais sur ma lyre,
 La briserait comme un roseau.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="musset2020010505">
+<text id="musset2020010505">
 <head>
     <title>La nuit de décembre</title>
     <firstline>Du temps que j'étais écolier</firstline>
 </head>
 <body>
+<poetry>
 <nonum><center><i>Le poète.</i></center></nonum>
 
 Du temps que j'étais écolier,
@@ -1085,15 +1096,17 @@ Viens à moi sans inquiétude.
 Je te suivrai sur le chemin ;
 Mais je ne puis toucher ta main,
 Ami, je suis la Solitude.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="musset2020010506">
+<text id="musset2020010506">
 <head>
     <title>La nuit d'août</title>
     <firstline>Depuis que le soleil, dans l'horizon immense</firstline>
 </head>
 <body>
+<poetry>
 <nonum><center><i>La muse</i></center></nonum>
 
 Depuis que le soleil, dans l'horizon immense,
@@ -1259,15 +1272,17 @@ Coeur gonflé d'amertume et qui t'es cru fermé.
 Aime, et tu renaîtras ; fais-toi fleur pour éclore.
 Après avoir souffert, il faut souffrir encore ;
 Il faut aimer sans cesse, après avoir aimé.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="musset2020010507">
+<text id="musset2020010507">
 <head>
     <title>La nuit d'octobre</title>
     <firstline>Le mal dont j'ai souffert s'est enfui comme un rêve</firstline>
 </head>
 <body>
+<poetry>
 <nonum><center><i>Le poète</i></center></nonum>
 
 Le mal dont j'ai souffert s'est enfui comme un rêve.
@@ -1625,16 +1640,18 @@ Viens voir la nature immortelle
 Sortir des voiles du sommeil ;
 Nous allons renaître avec elle
 Au premier rayon du soleil !
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="musset2020010508">
+<text id="musset2020010508">
 <head>
     <title>À la Malibran</title>
     <subtitle>Stances</subtitle>
     <firstline>Sans doute il est trop tard pour parler encor d'elle</firstline>
 </head>
 <body>
+<poetry>
 I
 
 Sans doute il est trop tard pour parler encor d'elle ;
@@ -1877,11 +1894,12 @@ C'est le besoin d'aimer ; hors de là tout est vain.
 Et, puisque tôt ou tard l'amour humain s'oublie,
 Il est d'une grande âme et d'un heureux destin
 D'expirer comme toi pour un amour divin !
+</poetry>
 </body>
-</poem>
+</text>
 
 
-<poem id="musset2002021702">
+<text id="musset2002021702">
 <head>
    <title>Tristesse</title>
    <toctitle>Tristesse</toctitle>
@@ -1894,6 +1912,7 @@ D'expirer comme toi pour un amour divin !
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 J'ai perdu ma force et ma vie,
 Et mes amis et ma gaîté;
 J'ai perdu jusqu'à la fierté
@@ -1911,10 +1930,11 @@ Ici-bas ont tout ignoré.
 Dieu parle, il faut qu'on lui réponde.
 - Le seul bien qui me reste au monde
 Est d'avoir quelquefois pleuré.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="musset2002022501">
+<text id="musset2002022501">
 <head>
    <title>L'Andalouse</title>
    <toctitle>L'Andalouse</toctitle>
@@ -1923,6 +1943,7 @@ Est d'avoir quelquefois pleuré.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Avez-vous vu, dans Barcelone,
 Une Andalouse au sein bruni?
 Pâle comme un beau soir d'automne!
@@ -1970,16 +1991,18 @@ Allons! la belle nuit d'été!
 Je veux ce soir des sérénades
 A faire damner les alcades
 De Tolose au Guadalété.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="musset2018011001">
+<text id="musset2018011001">
 <head>
    <title>Madrid</title>
    <firstline>Madrid, princesse des Espagnes</firstline>
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Madrid, princesse des Espagnes,
 Il court par tes mille campagnes
 Bien des yeux bleus, bien des yeux noirs.
@@ -2028,8 +2051,9 @@ C'est l'allure de mon cheval,
 Un compliment sur sa mantille,
 Puis des bonbons à la vanille
 Par un beau soir de carnaval.
+</poetry>
 </body>
-</poem>
+</text>
 
 
 </workbody>

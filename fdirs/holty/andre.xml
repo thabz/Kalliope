@@ -9,7 +9,7 @@
 </workhead>
 <workbody>
 
-<poem id="holty2001122801">
+<text id="holty2001122801">
 <head>
    <title>Erntelied</title>
    <firstline>Sicheln schallen, Ähren fallen</firstline>
@@ -19,6 +19,7 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Sicheln schallen,
 Ähren fallen
 Unter Sichelschall;
@@ -46,10 +47,11 @@ Dann sein Liebelein.
 Nach geleerten Kannen
 Gehen sie vondannen,
 Singen und juchei'n!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="holty2018070701">
+<text id="holty2018070701">
 <head>
    <title>Aufmunterung zur Freude</title>
    <firstline>Wer wollte sich mit Grillen plagen</firstline>
@@ -59,6 +61,7 @@ Singen und juchei'n!
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Wer wollte sich mit Grillen plagen,
 Solang uns Lenz und Jugend blühn;
 Wer wollt in seinen Blütentagen
@@ -88,10 +91,11 @@ O wunderschön ist Gottes Erde
 Und wert, darauf vergnügt zu sein!
 Drum will ich, bis ich Asche werde,
 Mich dieser schönen Erde freun!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="holty2019020401">
+<text id="holty2019020401">
 <head>
    <title>Elegie auf ein Landmädchen</title>
    <firstline>Schwermuthsvoll und dumpfig hallt Geläute</firstline>
@@ -101,6 +105,7 @@ Mich dieser schönen Erde freun!
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Schwermuthsvoll und dumpfig hallt Geläute
 Vom bemooßten Kirchenthurm herab;
 Väter weinen, Kinder, Mütter, Bräute;
@@ -180,10 +185,11 @@ Weht, wie Harfenlispel, Abendwinde,
 Durch die Blumen, die ihr Grab gebar,
 Und im Wipfel dieser Kirchhoflinde
 Nist' ein Turteltaubenpaar.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="holty2019060401">
+<text id="holty2019060401">
 <head>
    <title>Maylied</title>
    <firstline>Tanzt dem schönen May entgegen</firstline>
@@ -193,6 +199,7 @@ Nist' ein Turteltaubenpaar.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Tanzt dem schönen May entgegen,
 Der des Waldes Haar verneut,
 Roth und weiße Farbenbögen
@@ -237,23 +244,73 @@ Gaukelt in der Kirschenblüthe,
 Zephyrn, eure Flügel matt,
 Haucht auf ihre Sonnenhüte
 Manches weiße Blüthenblatt.
+</poetry>
 </body>
-</poem>
+</text>
 
-<!--
-<poem id="holty2019060401">
+<text id="holty2019121101">
 <head>
-   <title></title>
-   <firstline> </firstline>
-   <notes>
-      <note></note>
-   </notes>
-   <quality>korrektur1</quality>
+    <title>Die Seligkeit der Liebenden</title>
+    <firstline>Beglückt, beglückt, wer die Geliebte findet</firstline>
+    <notes>
+        <note>Kilde er Ludwig Christoph Heinrich Hölty: <i>Sämtliche Werke</i>, Weimar 1914, bd. 1, pp. 210-212.<!-- http://www.zeno.org/nid/20005107741 --></note>
+    </notes>
+   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
+Beglückt, beglückt, wer die Geliebte findet,
+Die seinen Jugendtraum begrüßt;
+Wenn Arm um Arm, und Geist um Geist sich windet,
+Und Seel' in Seele sich ergießt!
+
+Die Liebe macht zum Goldpalast die Hütte,
+Streut auf die Wildniß Tanz und Spiel;
+Enthüllet uns der Gottheit leise Tritte,
+Giebt uns des Himmels Vorgefühl!
+
+Sie macht das Herz der Schwermuth frühlingsheiter;
+Sie bettet uns auf Rosenaun,
+Und hebet uns auf eine Himmelsleiter,
+Wo wir den Glanz der Gottheit schaun!
+
+Die Liebenden sind schon zu beßern Zonen
+Auf Flügeln ihrer Lieb' erhöht;
+Empfahen schon des Himmels goldne Kronen,
+Eh ihr Gewand von Staub verweht.
+
+Sie kümmern sich um keine Erdengüter,
+Sind sich die ganze weite Welt,
+Und spotten dein, du stolzer Weltgebieter,
+Vor dem der Erdkreis niederfällt!
+
+Sanfthingeschmiegt auf seidne Frühlingsrasen,
+Auf Blumen eines Quellenrands,
+Verlachen sie die bunten Seifenblasen
+Des lieben leeren Erdentands.
+
+Ein Druck der Hand, der durch das Leben schüttert,
+Und eines Blickes Trunkenheit,
+Ein Feuerkuß, der von der Lippe zittert,
+Giebt ihnen Engelseligkeit.
+
+Ein Blick der Lieb', aus dem die Seele blicket,
+In dem ein Engel sich verklärt,
+Ein süßer Wink, den die Geliebte nicket,
+Ist tausend dieser Erden werth.
+
+Ein Herzenskuß, den selber Engel neiden,
+Küßt ihren Morgenschlummer wach;
+Ein Reihentanz von ewigjungen Freuden
+Umschlingt den lieben langen Tag!
+
+Ein süßer Schlaf sinkt auf ihr keusches Bette,
+Wie auf die Lauben Edens sank!
+Kein Endlicher mißt ihrer Freuden Kette,
+Wer nicht den Kelch der Liebe trank!
+</poetry>
 </body>
-</poem>
--->
+</text>
 
 </workbody>
 </kalliopework>

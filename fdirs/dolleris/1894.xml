@@ -15,7 +15,7 @@
 </workhead>
 <workbody>
 
-<poem id="dolleris2018042801">
+<text id="dolleris2018042801">
 <head>
     <title>[Indledning]</title>
     <indextitle>Indledning</indextitle>
@@ -24,6 +24,7 @@
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Du straalende Dag,
                 livsalig i Fylde,
 med din Solkuppels Glød
@@ -104,8 +105,9 @@ vil jeg knæle for Lysets
                 umaalelige Alter
 og vies til din Tjener,
                 du straalende Dag!
+</poetry>
 </body>
-</poem>
+</text>
 
 <section>
 <head>
@@ -113,7 +115,7 @@ og vies til din Tjener,
 </head>
 <content>
 
-<poem id="dolleris2018042802">
+<text id="dolleris2018042802">
 <head>
     <title>Ludvig Bødtcher</title>
     <subtitle>Hundredaarsdagen for hans Fødsel, 22. April 1893</subtitle>
@@ -124,21 +126,25 @@ og vies til din Tjener,
     <dates>
         <event>1893-04-22</event>
     </dates>
-    <keywords>boedtcher,winter</keywords>
+    <keywords>boedtcher,winther</keywords>
     <source pages="11-14"/>
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
-<nonum><small><right>For tidlig bort fra din Lære</right></small></nonum>
-<nonum><small><right>mig hentede andre Kald,</right></small></nonum>
-<nonum><small><right>Hakkelse maatte jeg skjære</right></small></nonum>
-<nonum><small><right>i Døgnets Rejsestald,</right></small></nonum>
-<nonum><small><right>Stene maatte jeg bære</right></small></nonum>
-<nonum><small><right>til Tidens Murværk hen,</right></small></nonum>
-<nonum><small><right>og Du fik kun liden Ære</right></small></nonum>
-<nonum><small><right>af din halvfærdige Svend.</right></small></nonum>
-<nonum><small><right><i>C. Ploug</i>: Tilegnelse til Christian Winther.)</right></small></nonum>
+<quote margin-left="40%" font-size="small">
+For tidlig bort fra din Lære
+mig hentede andre Kald,
+Hakkelse maatte jeg skjære
+i Døgnets Rejsestald,
+Stene maatte jeg bære
+til Tidens Murværk hen,
+og Du fik kun liden Ære
+af din halvfærdige Svend.
+    <w>(C. Ploug</w>: Tilegnelse til 
+        Christian Winther.)
+</quote>
 
+<poetry>
 Helt sjelden spilled Solen i din Rude,
 mer sjelden den forlod dit Øjes Lindse, —
 og jog end Vinterstormen vildt derude,
@@ -203,10 +209,11 @@ og din Pokal »den ædleste Falerner«.<note>Bødtchers <xref poem="boedtcher187
     dit Epitafium værdigt blev dit Navn —
 
 blev <i>Christian Winthers Bøgetræ paa Graven!</i>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042803">
+<text id="dolleris2018042803">
 <head>
     <title>For Dagen og for Livet</title>
     <firstline>For Dagen og for Livet</firstline>
@@ -214,6 +221,7 @@ blev <i>Christian Winthers Bøgetræ paa Graven!</i>
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 For Dagen og for Livet — to Fugle i min Haand —
     jeg tænde vil min Alters høje Lue.
 For Natten og for Døden min fribaarne Aand
@@ -238,10 +246,11 @@ Fra Dagen og fra Livet vil Graverkarlens Stab
     engang mig til den mørke Rejse hente:
 — Velsignet mine Hænder, hvis, trods Nederlag og Tab,
     de Alterlysene tændte!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042804">
+<text id="dolleris2018042804">
 <head>
     <title>Lervognen</title>
     <firstline>Naar du flytter din Fod fra Vejle By</firstline>
@@ -249,6 +258,7 @@ Fra Dagen og fra Livet vil Graverkarlens Stab
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Naar du flytter din Fod fra Vejle By
 og ud i den milstrakte Dal,
 som Alle kjender af Navn og af Ry,
@@ -300,10 +310,11 @@ Da faar du i Hjertet saa bitterlig ondt;
 thi du øjner, dernede gaar Trældyret rundt —
 - - - - - - - - - - -
 for den æltende Lervogn - - evindelig rundt!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042805">
+<text id="dolleris2018042805">
 <head>
     <title>Om hundrede Aar -</title>
     <subtitle>[En Foraarsdag paa en Skrænt i Vejle Nørreskov, med Udsigt til Kirkegaarden]</subtitle>
@@ -312,6 +323,7 @@ for den æltende Lervogn - - evindelig rundt!
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Om hundrede Aar, naar denne Skov
     gik med Røgens Atomer i Sky,
 skal Fuglene synge Alskabningens Lov
@@ -367,10 +379,11 @@ Om hundrede Aar al Slægten er ny
     som de Træer i denne Skov!
 Men en Vaar, som idag, over Vejle By
 skal bære det Skabtes Lov!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042806">
+<text id="dolleris2018042806">
 <head>
     <title>† Christian Richardt</title>
     <indextitle>Christian Richardt</indextitle>
@@ -381,6 +394,7 @@ skal bære det Skabtes Lov!
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 »Ak, hvor Sangens Trækfuglskare har forladt os inden kort« —
 Folkets Sanger under Snefog fløj med Foraarslærken bort:
 Lærkelil, der kvad »ved Løvspring« med al Vaarens Fryd i Pagt,
@@ -410,10 +424,11 @@ ejed Sjælens dybe Alvor, Lunets fine Skjælmeri!
 har, midt i Kolumbusfesten, selv du naaet din Palmestrand?
 — Ren af Hjerte, god af Tanke — denne Sandhed er Dig sagt:
 Jeg min sidste Tak Dig bringer for den Haand, Du mig har rakt!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042807">
+<text id="dolleris2018042807">
 <head>
     <title>† Frederik Ludvig Erik Smith</title>
     <indextitle>Frederik Ludvig Erik Smith</indextitle>
@@ -422,6 +437,7 @@ Jeg min sidste Tak Dig bringer for den Haand, Du mig har rakt!
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Paa den uhyre Valplads,
       hvor Slægternes Hære
       har kæmpet og lidt
@@ -466,10 +482,11 @@ Og saa sænker jeg Fanen
       over din Kiste,
       og hylder dit Navn,
               thi dit Dagværk var godtl
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042808">
+<text id="dolleris2018042808">
 <head>
     <title>Akrobaten med Træben</title>
     <firstline>En Cirkus-Pyramide</firstline>
@@ -477,6 +494,7 @@ Og saa sænker jeg Fanen
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
         En Cirkus-Pyramide,
             med Linerne spændt,
             var hans Element,
@@ -566,10 +584,11 @@ og hæv din Pande i Dagens Strid!
 
 Thi den evige Sejer i Verden er din,
 om du rejser dit Selv paa dit Livs Ruin!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042809">
+<text id="dolleris2018042809">
 <head>
     <title>Trækfuglene drage</title>
     <firstline>Trækfuglene drage</firstline>
@@ -577,6 +596,7 @@ om du rejser dit Selv paa dit Livs Ruin!
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Trækfuglene drage
 i store, susende Skarer mod Syd;
 se dig tilbage:
@@ -596,10 +616,11 @@ aldrig min Vise,
 den skal dig synges imøde;
 thi jeg har hjemme i Somren, hvor Roserne gløde,
                 — ej hvor de døde!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042810">
+<text id="dolleris2018042810">
 <head>
     <title>Til Carl Ploug</title>
     <firstline>Naar Dagen, den slukker sin Lue</firstline>
@@ -614,6 +635,7 @@ thi jeg har hjemme i Somren, hvor Roserne gløde,
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Naar Dagen, den slukker sin Lue
     og hilser med Afskedsord
         den vældige Tjenerskare,
@@ -685,10 +707,11 @@ Nu, mens Dagen til Hvile ganger,
     vil Dig hædre dit gamle Land,
         Du Ordets højbaarne Ridder,
     Du Arbejdets haandgangne Mand!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042811">
+<text id="dolleris2018042811">
 <head>
     <title>Til J. P. E. Hartmann</title>
     <subtitle>Telegram, 12. Maj 1894.</subtitle>
@@ -700,10 +723,11 @@ Nu, mens Dagen til Hvile ganger,
     <dates>
         <written>1894-05-12</written>
     </dates>
-    <keywords>winter,blicher</keywords>
+    <keywords>winther,blicher</keywords>
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Fra Winthers Bøge
 til Blichers Hede,
 fra Furesøen
@@ -721,10 +745,11 @@ skal æres Hans Vaar,
 mer sjælden i Danmark
 end den, der holdt Indtog
       iaar paa dets Kyst.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042812">
+<text id="dolleris2018042812">
 <head>
     <title>Prolog paa Vejle Theater</title>
     <subtitle>Ved Forestillingen til Fordel for Vesterhavs-Fiskernes Efterladte, 1. December 1893.</subtitle>
@@ -736,6 +761,7 @@ end den, der holdt Indtog
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Deroppe, hvor Flyvesandet leger Tagfat, —
 hvor kun Marehalmen vidner om Slægternes Virken, —
 hvor det uhyre Hav over Revlerne gaar,
@@ -819,10 +845,11 @@ paa hans Hoved skal vi sanke de gloende Kul:
 
 <i>Da vi rejser, til Trods for hans Plyndring og Mord,</i>
 <i>for Menneskekjærlighed et Alter faa Jord!</i>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042813">
+<text id="dolleris2018042813">
 <head>
     <title>Den Vej, som fra Barnets Vugge gaar -</title>
     <firstline>Den Vej, som fra Barnets Vugge gaar</firstline>
@@ -830,6 +857,7 @@ paa hans Hoved skal vi sanke de gloende Kul:
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Den Vej, som fra Barnets Vugge gaar
 gjennem Arbejd og Strid til de hvide Aar, -
 den Vej skal vi Mennesker kjende.
@@ -845,10 +873,11 @@ Maa dens Veje vi lære at kjende!
 Da ejer vort Øje det lyse Syn
 endnu, naar Dagen lukker sit Bryn,
 og Aftnen skal Lysene tænde.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042814">
+<text id="dolleris2018042814">
 <head>
     <title>Mit Følge</title>
     <subtitle>[Til min Hustru]</subtitle>
@@ -857,6 +886,7 @@ og Aftnen skal Lysene tænde.
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Naar Dagens travle Værksted har lukket sin Dør
 og den rastløse Tummel sin Scene,
 da kommer tidt en Gjæst, jeg kjender fra før —
@@ -906,10 +936,11 @@ i hendes Sted min Elskede skal være!
 Og ved min anden Side: min lille Dreng ved Haand! —
 
 Og saa: Hurra for begge de Kjære!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042815">
+<text id="dolleris2018042815">
 <head>
     <title>Jeg tror paa Lykken -</title>
     <firstline>Jeg tror paa Lykken for det unge Mod</firstline>
@@ -917,6 +948,7 @@ Og saa: Hurra for begge de Kjære!
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Jeg tror paa Lykken for det unge Mod,
 det lægger nok en Verden for sin Fod.
 
@@ -947,8 +979,9 @@ er Tidens store Værksteds Hammerslag.
 
 — Og skal der digtes for vort Folk en Sang,
 maa Hammerslaget give Rhytmen Klang!
+</poetry>
 </body>
-</poem>
+</text>
 
 <section level="2">
 <head>
@@ -956,7 +989,7 @@ maa Hammerslaget give Rhytmen Klang!
 </head>
 <content>
 
-<poem id="dolleris2018042816">
+<text id="dolleris2018042816">
 <head>
     <title><num>I.</num>Efter Livets Storme -</title>
     <firstline>Efter Livets Storme, naar en</firstline>
@@ -964,6 +997,7 @@ maa Hammerslaget give Rhytmen Klang!
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Efter Livets Storme, naar en
 venlig Haand har lukt dit Øje,
 rulles du til Ormegaarden
@@ -978,10 +1012,11 @@ Thi før Kistens Laag er blevet
 til det Muld, hvoraf det voxte,
 i hin Jordebog er skrevet
 af Forraadnelsen dit Navn.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042817">
+<text id="dolleris2018042817">
 <head>
     <title><num>II.</num>Se, de flokkes</title>
     <firstline>Se, de flokkes, Skovens travle</firstline>
@@ -989,6 +1024,7 @@ af Forraadnelsen dit Navn.
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Se, de flokkes, Skovens travle
 Løvfaldsfugle! — Lyt til Sukket:
 Døden har paa Lovens Tavle
@@ -1003,10 +1039,11 @@ Dagen som dit Eje vinker —
 Solens Lyshav mod dig vælder!
 Snart dog Kassiopeja blinker:
 Nat er evig — Dag et Nu!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042818">
+<text id="dolleris2018042818">
 <head>
     <title><num>III.</num>Nattens Vaaning</title>
     <firstline>Nattens Vaaning til Facade</firstline>
@@ -1014,6 +1051,7 @@ Nat er evig — Dag et Nu!
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Nattens Vaaning til Facade
 har en Mur af Tvivl og Mørke;
 Dagens Tropper til Parade
@@ -1028,10 +1066,11 @@ om dig: — Se din Dags Bedrift!
 bær mig ind i dine Sale:
 Skriv for mig med Lysets Finger
 Livets store Æresskrift!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042819">
+<text id="dolleris2018042819">
 <head>
     <title><num>IV.</num>Op fra Skræntens brune Flade -</title>
     <firstline>Op fra Skræntens brune Flade</firstline>
@@ -1039,6 +1078,7 @@ Livets store Æresskrift!
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Op fra Skræntens brune Flade
 — den, jeg vier mine Drømme -
 nejer mod mit lune Stade
@@ -1053,13 +1093,14 @@ Men hvad Øjet stille nemmer
 end i denne Fredens Time, —
 først og sidst de milde Stemmer
 gjennemtoner alt mit Sind.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section> <!-- Triterner -->
 
-<poem id="dolleris2018042820">
+<text id="dolleris2018042820">
 <head>
     <title>Da jeg var i Ligfølget</title>
     <firstline>Jeg gik i et sildigt Efteraar</firstline>
@@ -1067,6 +1108,7 @@ gjennemtoner alt mit Sind.
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Jeg gik i et sildigt Efteraar
 i et Følge til hin Begravelsesgaard,
 der hæver sin overbefolkede Jord
@@ -1164,10 +1206,11 @@ Men den stiger dog gjenfødt hver Morgen paany
 og lyser til Dag for de Levendes Land.
 Og jeg raaber: Hurra for Morgenens Gry —
 for al Skabningens Sol i Fortærelsens Brand!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042821">
+<text id="dolleris2018042821">
 <head>
     <title>Der findes en gammel Vise</title>
     <subtitle>[Skrevet til Digteren Ernst v. d. Recke, medens han arbejdede paa sin store Metrik.]</subtitle>
@@ -1178,6 +1221,7 @@ for al Skabningens Sol i Fortærelsens Brand!
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Der findes en gammel Vise,
 jeg kjender saa godt, som Du:
 »Det haver saa nyligen regnet,
@@ -1237,10 +1281,11 @@ Da fly fra din Arbejdsstue,
 vær Digter fra Isse til Hæl:
 Og sluk ej den Ungdomslue,
 der flammer dybt i din Sjæl!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042822">
+<text id="dolleris2018042822">
 <head>
     <title>Foraarsdigt</title>
     <firstline>Jeg føler mig saa ung, saa glad</firstline>
@@ -1248,6 +1293,7 @@ der flammer dybt i din Sjæl!
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Jeg føler mig saa ung, saa glad:
 Nu kommer Vaaren atter
 med Lærkens Sang og Gjøgens Latter —
@@ -1274,10 +1320,11 @@ Og alle Spirer Arme strække,
 og Bukkarbunden raaber: Nyd!
 — Kom Neldeblad og Tusindfryd,
 jeg elsker eder begge!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042823">
+<text id="dolleris2018042823">
 <head>
     <title>For dine Ungdomskræfter</title>
     <firstline>For dine Ungdomskræfter</firstline>
@@ -1285,6 +1332,7 @@ jeg elsker eder begge!
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 For dine Ungdomskræfter
         og for dit friske Mod,
 for dine blanke Øjne
@@ -1319,10 +1367,11 @@ Da Rosentiden længes
         ved Arbejds-Uhrets Klang
 da fatter du og elsker
         den Sandhed, jeg besang.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042824">
+<text id="dolleris2018042824">
 <head>
     <title>»Ved Havelaagen«</title>
     <indextitle>Ved Havelaagen</indextitle>
@@ -1337,6 +1386,7 @@ da fatter du og elsker
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Paa den ene Side af Laagen, dér blusser en Rosengaard,
 der skjærmes den lyse Ungdom indtil de tyve Aar!
 
@@ -1350,10 +1400,11 @@ paa den anden Side har Kampen for Brødet sit Blivested.
 
 Der staar en Jomfru ved Stenten. Hun ser paa den aabne Mark:
 Saa flytter hun varsomt Foden fra Havens Rosenpark.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042825">
+<text id="dolleris2018042825">
 <head>
     <title>Ved Jernbaneledet</title>
     <firstline>Saa tidt har jeg staaet ved et Jernbaneled</firstline>
@@ -1361,6 +1412,7 @@ Saa flytter hun varsomt Foden fra Havens Rosenpark.
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Saa tidt har jeg staaet ved et Jernbaneled,
         før Exprestoget kom,
 og set paa de ilende Sjæle,
@@ -1385,10 +1437,11 @@ medens bort hvæste Dampens Uhyre:
 - - - - - - - - - - - - - - -
 Da saa’ jeg de Travle staa lænet og glo
         over Ledets den anden Side!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042826">
+<text id="dolleris2018042826">
 <head>
     <title>Gjensvar</title>
     <firstline>De raaber: Vend Deres Øje mod Øst</firstline>
@@ -1396,6 +1449,7 @@ Da saa’ jeg de Travle staa lænet og glo
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 De raaber: »Vend Deres Øje mod Øst,
 »fra Fredens- til Petersborg!
 »Og vend Deres Øre fra Skovens Røst
@@ -1465,10 +1519,11 @@ en Trang mig til Pennen drev.
 Ej dømmer jeg her nogen Nihilist, —
 nej Trangen, den bringer et »Tak for sidst!«
 og dikterede dette Brev!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042827">
+<text id="dolleris2018042827">
 <head>
     <title>Til Ferrara</title>
     <subtitle>Ved dets Universitets 500 Aars Fest, April 1892</subtitle>
@@ -1481,12 +1536,17 @@ og dikterede dette Brev!
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
-<nonum><small><right>- - - - - - - - - -</right></small></nonum>
-<nonum><small><right>Og dem, jeg elsker, men aldrig saa’, </right></small></nonum>
-<nonum><small><right>de henfarne Store, som nær Dig staa,</right></small></nonum>
-<nonum><small><right>med dem lad mig bo i dit høje Hus,</right></small></nonum>
-<nonum><small><right>naar Jordebygningen synker i Grus.</right></small></nonum>
-<nonum><small><right><i>Carl Bagger: Ønskerne.</i></right></small></nonum>
+<quote margin-left="30%" font-size="small">
+- - - - - - - - - -
+Og dem, jeg elsker, men aldrig saa’, 
+de henfarne Store, som nær Dig staa,
+med dem lad mig bo i dit høje Hus,
+naar Jordebygningen synker i Grus.
+<right><i>Carl Bagger: Ønskerne.</i></right>
+</quote>
+
+<poetry>
+---
 
 Fra Danmarks lyse Bøge
 ned til Italiens Pinje
@@ -1610,10 +1670,11 @@ Læg Klang i Folkets Tale
 og præg Du Slægtens Kaar
 — og din <i>Højskole</i> fylder
 med Hæder Tusind Aar!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042828">
+<text id="dolleris2018042828">
 <head>
     <title>Ej paa et kongeligt Domæne -</title>
     <firstline>Ej paa et kongeligt Domæne</firstline>
@@ -1621,6 +1682,7 @@ med Hæder Tusind Aar!
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Ej paa et kongeligt Domæne
 min Bolig er af Grunden stegen.
 Min Hytte rejstes paa en Plæne,
@@ -1640,8 +1702,9 @@ Jeg lyser ej med Andres Kjerte,
 min Sjæl, den har sin egen Lue.
 - - -O, gik min Sang Dig ret til Hjerte:
 velkommen i min Dagligstue!
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section> <!-- I. Dagen og Døden -->
@@ -1652,7 +1715,7 @@ velkommen i min Dagligstue!
 </head>
 <content>
 
-<poem id="dolleris2018042829">
+<text id="dolleris2018042829">
 <head>
     <title>Jens Christian Hostrup</title>
     <subtitle>Ved en Mindefest, 18. Februar 1893</subtitle>
@@ -1666,14 +1729,17 @@ velkommen i min Dagligstue!
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
-<nonum><small><right>Hans Saga naaer fra Studentens Bord </right></small></nonum>
-<nonum><small><right>til Bondens Stue paa Hedens Jord; </right></small></nonum>
-<nonum><small><right>fra et Bedehus ved en Kæmpehøj</right></small></nonum>
-<nonum><small><right>til Slottets glimrende Kirkefløj;</right></small></nonum>
-<nonum><small><right>fra den danske Scene, han rejste paany, </right></small></nonum>
-<nonum><small><right>til hint sildige Aandsglimt i Skolen ved Ry.</right></small></nonum>
-<nonum><small><right>[Med en Krands til hans Kiste.]</right></small></nonum>
+<quote margin-left="30%" font-size="small">
+Hans Saga naaer fra Studentens Bord 
+til Bondens Stue paa Hedens Jord; 
+fra et Bedehus ved en Kæmpehøj
+til Slottets glimrende Kirkefløj;
+fra den danske Scene, han rejste paany, 
+til hint sildige Aandsglimt i Skolen ved Ry.
+<right>[Med en Krands til hans Kiste.]</right>
+</quote>
 
+<poetry>
 Fra et Vidunder-Land, med et straalende Slot
 og med Flag over Tinderne hejst —
 det velsignede Land, med al Skjønhed til Drot:
@@ -1718,10 +1784,11 @@ Og for <i>den</i> blev han Danmarks mest sjælfulde Tolk
 thi den leved og døde han i!
 Derfor elskes hans Digtning af hele det Folk,
 der har Sands for sit Livs Poesi.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042830">
+<text id="dolleris2018042830">
 <head>
     <title>Alfarvej en Vej sig Trindtom Jorden spænder -</title>
     <subtitle>
@@ -1736,6 +1803,7 @@ der har Sands for sit Livs Poesi.
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Alfar en Vej sig trindtom Jorden spænder
         — sælsomt den snoes —.
 Hvor den har Udspring, hvor dens Spor, de ender,
@@ -1780,10 +1848,11 @@ Med Dig vor <i>Tak</i> for Dagens Virken mødes,
 Barneøjets Stjerner spille Dig imod, —
         være dine Vejes
         Lys for din Fod!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042831">
+<text id="dolleris2018042831">
 <head>
     <title>Dagens Epistel</title>
     <subtitle>Ved Boghandler-Medhjælper-Foreningens 10 Aars Stiftelsesfest, 4. Juni 1893.</subtitle>
@@ -1795,6 +1864,7 @@ Barneøjets Stjerner spille Dig imod, —
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Hver Dag, som hæver højt sin stolte Pande,
 har en Forjættelse til Slægtens Gavn:
     Som Himlen laaner Farve Havets Vande,
@@ -1839,10 +1909,11 @@ den viskes ud af nye Bølgers Trav.
 i Tidens store, end uskrevne Bog,
     lad det deri af Efterslægten kjendes,
     at <i>vi</i> var med i Livets Arbejdstog!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042832">
+<text id="dolleris2018042832">
 <head>
     <title>Lys over Landet</title>
     <subtitle>Ved Boghandlermødet i Roskilde, 1.—2. August 1893.</subtitle>
@@ -1854,6 +1925,7 @@ i Tidens store, end uskrevne Bog,
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Dér, hvor man fordum, med Rædsel for Livet,
 mødte de hylende Ulve paa Rov,
 piber nu gungrende Lokomotivet,
@@ -1898,10 +1970,11 @@ Spor af vort Arbejd for Nutidens Kuld!
 Præget af Aandens Erobring, og Viden, —
 da har vi grundlagt en Reformation,
 der skal staa Luthers ved Siden.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042833">
+<text id="dolleris2018042833">
 <head>
     <title>Morgenstrofer</title>
     <subtitle>Ved Dansk Skoleforenings Møde i Vejle, 15. August 1893.</subtitle>
@@ -1913,6 +1986,7 @@ der skal staa Luthers ved Siden.
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Den Morgensang, som Slægtens Vise sjunge,
 den lægges skal paa hver en Barnetunge:
 Den Sang er alle Fugles,
@@ -1962,10 +2036,11 @@ udbrændt forlængst i Øst:
 Husk den Text, mens du end har Kræfter!
 Brug din Dag — den, som følger efter,
         Ingen saa’!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042834">
+<text id="dolleris2018042834">
 <head>
     <title>Arnefredens Land</title>
     <subtitle>Bryllupsvise, 19. August 1893</subtitle>
@@ -1977,6 +2052,7 @@ Brug din Dag — den, som følger efter,
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Det anes af vor Tanke:
             Bag Horisontens Rand,
 der ligger solbeskinnet
@@ -2021,10 +2097,11 @@ Stræk Haanden ud mod Dagens Krav
             med lyst og ærligt Sind
 da gaar Jer Fremtids Arbejdsvej
             i Ungdomslandet ind!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042835">
+<text id="dolleris2018042835">
 <head>
     <title>Bryllup ved Kalø Vig</title>
     <subtitle>19. Oktober 1893</subtitle>
@@ -2036,6 +2113,7 @@ da gaar Jer Fremtids Arbejdsvej
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Sommerens Saga vi læste tilende,
 vide adspredes Alt, hvad den gav Væxt;
 Stormens Huroner dens Blade vil vende:
@@ -2080,10 +2158,11 @@ her, hvor som Barnet hun satte sin Fod,
 hvor hun blev baaret paa Hænderne bløde -
 her vil I begge To stævne imod, —
 Tanke og Tak holde Mødel
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042836">
+<text id="dolleris2018042836">
 <head>
     <title>Sønderjydernes Grundlovssang</title>
     <subtitle>Sønderjydsk Forening forVejle og Omegn, 5. Juni 1894</subtitle>
@@ -2095,6 +2174,7 @@ Tanke og Tak holde Mødel
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Det Land, hvis Rugmark bølger
                 fra Sli til Koldinghus,
 fra Christierns skumle Fangetaarn
@@ -2157,10 +2237,11 @@ da synger Alt, hvad Danmarks er,
                 hin Slesvigs Grundlovssang:
 »Vort Modersmaal er dejligt,
                 det har saa mild en Klang«.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042837">
+<text id="dolleris2018042837">
 <head>
     <title>Bryllupskantate</title>
     <subtitle>
@@ -2175,6 +2256,7 @@ da synger Alt, hvad Danmarks er,
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center>KOR.</center></nonum>
 
 Dag! du, som smykkes
@@ -2275,10 +2357,11 @@ Se, over Havegjærdet nejer Roserne ud,
 — snart den hvæssede Høstle vil skjære-,
 men endnu Skjærsommer sig pynter som Brud:
 Saa grib da al Sommerens Lære!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042838">
+<text id="dolleris2018042838">
 <head>
     <title>Danske Land</title>
     <subtitle>Aarhus-Skanderborg Amters Mejeristforenings Faneafsløring, 25. August 1894.</subtitle>
@@ -2287,6 +2370,7 @@ Saa grib da al Sommerens Lære!
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Danske Land!
             Hjemmets Hjem!
 med din Nytids store Sage:
@@ -2346,10 +2430,11 @@ Vaj for os til Styrkeprøve; —
 vær vor Gjernings Æresvagt, -
 saa vi øve
 Dagens Værk med dig i Pagt!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042839">
+<text id="dolleris2018042839">
 <head>
     <title>I Mænd, som Lys vil tænde</title>
     <firstline>Pris i en Højsang Dagen, som vi naaede</firstline>
@@ -2360,13 +2445,16 @@ Dagens Værk med dig i Pagt!
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
-<nonum><small><right>i Borgestuen her,</right></small></nonum>
-<nonum><small><right>o, lader Lyset brænde,</right></small></nonum>
-<nonum><small><right>saa det er Ilden værd!</right></small></nonum>
-<nonum><small><right><i>(N. F. S. Grundtvig.)</i></right></small></nonum>
+<quote margin-left="30%" font-size="small">
+i Borgestuen her,
+o, lader Lyset brænde,
+saa det er Ilden værd!
+<right><i>(N. F. S. Grundtvig.)</i></right>
+</quote>
 
+<poetry>
 <nonum><small><center>Askov Folkehøjskole, 8. September 1894.</center></small></nonum>
-
+---
 Pris i en Højsang Dagen, som vi naaede:
         Lyset, som blev! —
 grunder vi end paa Rune over Gaade,
@@ -2420,10 +2508,11 @@ At med en Grandskeraand vi skal regere
 Himlenes Fugle, Fiskene i Hav,
         og, skjøndt Slagne, bære
         Sejer til vor Grav!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042840">
+<text id="dolleris2018042840">
 <head>
     <title>Rejsesang</title>
     <subtitle>23. September 1894.</subtitle>
@@ -2435,6 +2524,7 @@ Himlenes Fugle, Fiskene i Hav,
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Ud vi rejser, naar vor Dag oprinder,
 imens Østen staar i gyldent Blod;
 ud med Rosens Blus paa vore Kinder,
@@ -2470,8 +2560,9 @@ Men i Rejsebogen tør Du skrive
 — som vort Hjerteslag — de milde Ord:
 Dig vor Tak vi med paa Rejsen give
 for vort Møde paa den lyse Jord!
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section> <!-- II. Dagen og Døden -->
@@ -2488,7 +2579,7 @@ for vort Møde paa den lyse Jord!
 </head>
 <content>
 
-<poem id="dolleris2018042841">
+<text id="dolleris2018042841">
 <head>
     <title></title>
     <toctitle><num>I.</num>Tilegnelse</toctitle>
@@ -2501,6 +2592,7 @@ for vort Møde paa den lyse Jord!
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Du helt fik Øre for hint Digter-Kor,
 det stolteste, vort Folk og Land beundred,
 der vaktes, da det nittende Aarhundred
@@ -2518,10 +2610,11 @@ saa grandt Du kjender Seklets Digter-Ring.
 Tør jeg Dig bringe mine Arbejds-Sange?
 — Jeg tror, de leve skal i mer end Bogform;
 thi de har Livet selv til Kildespring.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042842">
+<text id="dolleris2018042842">
 <head>
     <title>Erklæring</title>
     <toctitle><num>II.</num>Erklæring</toctitle>
@@ -2530,6 +2623,7 @@ thi de har Livet selv til Kildespring.
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Vel har jeg vugget mig i Drømmens Rige,
 i lyse Egne har min Aand mig baaret,
 og var jeg træt, og var min Fod end saaret,
@@ -2547,10 +2641,11 @@ og Øjeblikkets Genier om mig svæver —
 At jeg mit Selv, mit Hjertes Valgsprog glemmer:
 Forgjæt ej Livet over Drømmens Lue!
 Til Arbejd med din Aand og dine Næver!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042843">
+<text id="dolleris2018042843">
 <head>
     <title>Med et Rosentræ til en ung Piges Grav</title>
     <toctitle><num>III.</num>Med et Rosentræ til en ung Piges Grav</toctitle>
@@ -2559,6 +2654,7 @@ Til Arbejd med din Aand og dine Næver!
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Det lære skal hver Dødelig at stave,
 det er den Lektie, hvormed der begyndes —
 hin store Dom, der Slægt for Slægt forkyndes:
@@ -2576,10 +2672,11 @@ fra Morgentimen til den sene Dag:
 »Hvad her vi elske, ejes kun paa Borg«!
 Og vil du hædre dine kjære Døde, »
 da tag Parti for Livet og dets Sag!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042844">
+<text id="dolleris2018042844">
 <head>
     <title>Til Fru Orpheline Olsen</title>
     <toctitle><num>IV.</num>Til Fru Orpheline Olsen</toctitle>
@@ -2592,10 +2689,13 @@ da tag Parti for Livet og dets Sag!
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
-<nonum><small><right>Spil, saa stenen spruder gnister,</right></small></nonum>
-<nonum><small><right>spil, saa dyrehammen brister!</right></small></nonum>
-<nonum><small><right>Henrik Ibsen.</right></small></nonum>
+<quote margin-left="30%" font-size="small">
+Spil, saa stenen spruder gnister,
+spil, saa dyrehammen brister!
+<right>Henrik Ibsen.</right>
+</quote>
 
+<poetry>
 Ja, spil for dem, hvem Tonens Kunst kan røre:
 Skjøndt ældst, den ung er under alle Sole!
 — Jeg har en Saga læst i Livets Skole;
@@ -2613,10 +2713,11 @@ og Livet selv mer end al Kunst paa Jord —
 Idag min Røst et Ekko faar i Skoven:
 Min Frue! De, som nærer Skjønhedstrangen,
 Dem bygges en Sonet af Takkens Ord!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042845">
+<text id="dolleris2018042845">
 <head>
     <title>Vejle</title>
     <toctitle><num>V.</num>Vejle</toctitle>
@@ -2625,6 +2726,7 @@ Dem bygges en Sonet af Takkens Ord!
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Som Rosenknoppen, der i Mosset boer,
 saa Vejle ses fra Nørreskovens Flanke,
 mens Skyttehuset titter, som i Tanke,
@@ -2642,10 +2744,11 @@ gjæst ogsaa Jelling: læs dets Runesprog!
 Ved Randbøl ud du naaer til selve Ahlen.
 Og fandt til Slut du Lille Grundet Hulvej, —
 du bladet har i Vejles Skjønhedsbog.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042846">
+<text id="dolleris2018042846">
 <head>
     <title>Jeg bringer Dig en duftende Buket</title>
     <toctitle><num>VI.</num>Jeg bringer Dig en duftende Buket</toctitle>
@@ -2656,6 +2759,7 @@ du bladet har i Vejles Skjønhedsbog.
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Jeg bringer Dig en duftende Buket:
 den som Symbol dit Skrivebord vil smykke,
 med Væxter fra Orangelundens Skygge,
@@ -2673,10 +2777,11 @@ mens furet bli’er din Pande og din Kind —
 Tag denne lyse Jord til Fodefæste,
 lad Dag for Dag Dig Livets Sol forynge,
 som den forynget har hin Digters Sind!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042847">
+<text id="dolleris2018042847">
 <head>
     <title>Stilhed</title>
     <toctitle><num>VII.</num>Stilhed</toctitle>
@@ -2685,6 +2790,7 @@ som den forynget har hin Digters Sind!
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Jeg sidder her, fordybet i min Lykke:
 Der er kun En, kun En, paa hvem jeg tænker.
 Til denne Ene jeg min Higen lænker:
@@ -2702,10 +2808,11 @@ da skal min Lykkes Sprog faa Klang herinde:
 »Jeg elsker Dig, jeg elsker Dig, Du Søde!
 jeg elsker Dig af al mit Hjertes Varme —
 ja, højere idag end nogensinde!«
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042848">
+<text id="dolleris2018042848">
 <head>
     <title>Fattigbørns Veninde</title>
     <toctitle><num>VIII.</num>Fattigbørns Veninde</toctitle>
@@ -2716,6 +2823,7 @@ ja, højere idag end nogensinde!«
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Naar Luften bølger under Lærkesange,
 og naar Naturen bøder paa hvert Savn
 med al den Yppighed, vor Jord gav Navn, —
@@ -2733,10 +2841,11 @@ hvis Haand er aaben, og hvis Dør ej lukt
 Hun lydhør er, som selve Sneens Klokke;
 og møder jeg idag som hendes Digter,
 gi'er Barnehjerters Tak min Tanke Flugt.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042849">
+<text id="dolleris2018042849">
 <head>
     <title>Et Digt med Bølgerne</title>
     <toctitle><num>IX.</num>Et Digt med Bølgerne</toctitle>
@@ -2745,6 +2854,7 @@ gi'er Barnehjerters Tak min Tanke Flugt.
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Tilfældigt er det, hvor mit Digt skal strande,
 — afhængigt af den lunefulde Vind; —
 tilfældigt, om det træffer paa et Sind,
@@ -2762,10 +2872,11 @@ tilfældigt, hvor min Grav jeg faar i Verden?
 Med aabent Mod jeg hæve vil min Pande:
 Jeg <w>véd</w>, at Stjernen gaar i Ledebaand!
 Jeg <w>tror</w>, der er en Lov for Slægtens Færden!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042850">
+<text id="dolleris2018042850">
 <head>
     <title>Poul Martin Møller</title>
     <toctitle><num>X.</num>Poul Martin Møller</toctitle>
@@ -2777,6 +2888,7 @@ Jeg <w>tror</w>, der er en Lov for Slægtens Færden!
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Ja — havde han kun skrevet denne Sang:
 om »Danas Have«<note>Der henvises til P. M. Møllers <xref poem="moellerpm1999111401"/></note>, hvori Roser gløde -
 den vilde frelst ham fra en Plads blandt Døde
@@ -2794,13 +2906,14 @@ helt Vederhæftig — skjønt en halv Vulkan!
 Lær ham at kjende: sjælesund og sand, —
 og lige dansk: i Læ af Bøgens Stamme —
 paa Fjeldet — paa det store Ocean!
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section> <!-- Sonetter -->
 
-<poem id="dolleris2018042851">
+<text id="dolleris2018042851">
 <head>
     <title>Til Christian Richardt</title>
     <subtitle>
@@ -2813,6 +2926,7 @@ paa Fjeldet — paa det store Ocean!
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Du, som viet har de grønne Lunde
 Digterbønnens aabne Poesi:
 den, at skygge kjærligt, om Du kunde,
@@ -2857,10 +2971,11 @@ Dig og den skal aabnes hver en Dør!
 Lyst og Alvor — mødes med Honnør!
         Mød saa — graanet — os, med unge Kræfter!
         Tak til Nu — og Tak for Alt herefter!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042852">
+<text id="dolleris2018042852">
 <head>
     <title>En Sang om Løvfaldet</title>
     <subtitle>[Siciliana.]</subtitle>
@@ -2869,6 +2984,7 @@ Lyst og Alvor — mødes med Honnør!
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Den lyse Sommer har Farvellet sukket;
 snart Storm-Herolden i Trompet vil støde
 og højt forkynde: Paradis er lukket!
@@ -2895,10 +3011,11 @@ Og gaar jeg mellem alle Graves Tuer,
 da ser jeg — medens Lig paa Lig der dynges -
 en Livsens Vælde under Regnbrobuer:
 den skal tilbedes, æres og besynges!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042853">
+<text id="dolleris2018042853">
 <head>
     <title>11. August 1892.</title>
     <subtitle>[Spenserstrofer til min Hustru.]</subtitle>
@@ -2907,6 +3024,7 @@ den skal tilbedes, æres og besynges!
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Jeg kaldte Dig min Haves Tusindfryd;
 jeg sang om det, Du éngang <w>skulde blive</w>.
 Idag min Tone har en Takkens Lyd -
@@ -2946,10 +3064,11 @@ at selv hvert fattigt Hjem kan blive rigt.
 — Men skal vor egen Lykkes Flor jeg male,
 og skal jeg bringe Dig et Æres-Digt, —
 det bli’er min Rhytmes Takt: at øve Dagens Pligt!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042854">
+<text id="dolleris2018042854">
 <head>
     <title>Missionsprædiken</title>
     <subtitle>[Sestine.]</subtitle>
@@ -2958,6 +3077,7 @@ det bli’er min Rhytmes Takt: at øve Dagens Pligt!
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Hør, Dampen messer i hver Skorstenspibe,
 hør, Uhret præker det i Pendelgangen:
 Kjøb Tiden, mens belejligt den kan kjøbes!
@@ -3005,10 +3125,11 @@ før Aftentogets Afgangsfløjter pibe!
 Er Morgensangen Vagtsignalets Pibe,
 skal Tonegangen Aftenhymnen gribe:
 Mens frem der løbes, da skal Sejren kjøbes!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042855">
+<text id="dolleris2018042855">
 <head>
     <title>Til Henrik Ibsen</title>
     <subtitle>[Terziner.]</subtitle>
@@ -3018,6 +3139,7 @@ Mens frem der løbes, da skal Sejren kjøbes!
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Der til mit Øre naaer en sælsom Klang,
 det er, som om en Klokkes Dødning-Ringen,
 den lærte mig min egen Svanesang.
@@ -3055,10 +3177,11 @@ og vandt kun Land paa Maanekratrets Skive,
 saa vil Du sejre i din Styrkeprøve:
 
 Din Kamp er Jordens, — dens din Sejr skal blive!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042856">
+<text id="dolleris2018042856">
 <head>
     <title>Den Sommerdag med Roser paa sit Bord -</title>
     <subtitle>
@@ -3071,6 +3194,7 @@ Din Kamp er Jordens, — dens din Sejr skal blive!
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Den Sommerdag med Roser paa sit Bord,
 med Fuglesang fra alle Skovens Grene,
 med Sol og Skibe, spredt paa Vejle Fjord, —
@@ -3108,10 +3232,11 @@ da skjænk os venligt Sind og villigt Øre:
 Paa Deres Støtte maa det fuldt bero,
 
 Om Vej og Tanke skal til Maalet føre!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042857">
+<text id="dolleris2018042857">
 <head>
     <title>Vinterdagenes Texter</title>
     <subtitle>[Ritorneller.]</subtitle>
@@ -3120,6 +3245,7 @@ Om Vej og Tanke skal til Maalet føre!
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 Du, som de bløde Hynder har tilhuse
 i hver en Nische — se paa Gadens Hjørne
 staar Arbejdsmanden i sin tynde Bluse!
@@ -3165,10 +3291,11 @@ Lad Glæden spille i hvert Barneøje!
 I pæne Taler ønskes Andre Lykken;
 selv Tyendet er »med«, naar kjønt der skaales —
 ja <i>med</i> — i et brøstfældigt Kammer og — et Køkken!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="dolleris2018042858">
+<text id="dolleris2018042858">
 <head>
     <title>Kanzone</title>
     <subtitle>Til min Hustru, 11. August 1894.</subtitle>
@@ -3180,6 +3307,7 @@ ja <i>med</i> — i et brøstfældigt Kammer og — et Køkken!
     <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
+<poetry>
 I Hjemmet, tavs i Stuen,
 jeg lytter til Pendulet,
 der taktfast stævner mig til Skriftemaalet;
@@ -3224,8 +3352,9 @@ og for de Dage, som os ej behage.
 Til Dig har Tak jeg og kun Tak paa Munden,
 og vefyldt-glad igrunden
 ser jeg nu fremad, — tænker jeg tilbage!
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section> <!-- III. Italienske Strofer -->

@@ -1,26 +1,254 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
-<kalliopework id="1944" author="munk" status="incomplete" type="poetry">
+<kalliopework id="1944" author="munk" status="complete" type="poetry">
 <workhead>
-   <title>Sidste Digte</title>
-   <year>1944</year>
-   <pictures>
-      <picture type="titlepage" src="1944-p1.jpg">Titelbladet til Sidste Digte (1944). Kaj Munk's / Sidste Digte / Den Skæbne ej til os // Nordens Friheds Forlag - Frit Nordisk Forlag / København 1944</picture>
-   </pictures>
-   <quality>korrektur1,kilde</quality>
+    <title>Sidste Digte</title>
+    <year>1944</year>
+    <dates>
+        <published>1944-12-31</published><!-- Ikke korrekt dato, men skal være efter hans død samme år. -->
+    </dates>
+    <notes>
+        <note>Teksten følger Kaj Munk: <i>Sidste Digte</i>, Nordens Friheds Forlag - Frit Nordisk Forlag, Kbh., 1944.</note>
+        <note>Samlingen indeholder også digtet »Til Kaj Munk«, som er udeladt i Kalliopes udgave, da det ikke er skrevet af Munk.</note>
+        <note>Stavemåde og tegnsætning følger i øvrigt samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
+    </notes>
+    <pictures>
+        <picture src="1944-p1.jpg">Titelbladet til <i>Sidste Digte</i> (1944) lyder ,,Kaj Munk's / Sidste Digte / Den Skjæbne ej til os // Nordens Friheds Forlag - Frit Nordisk Forlag / København 1944''.</picture>
+    </pictures>
+    <source facsimile="1944" facsimile-pages-num="69" facsimile-pages-offset="3">Kaj Munk: <i>Sidste Digte</i>, Nordens Friheds Forlag - Frit Nordisk Forlag, Kbh., 1944.</source>
 </workhead>
 <workbody>
 
-<poem id="munk2017090202">
+<text id="munk2020011901" skip-index="true">
 <head>
-   <title>Danmark, vort Liv</title>
-   <firstline>Danmark, besudlet og bundet!</firstline>
-   <notes>
-      <note>Teksten følger Kaj Munk: <i>Sidste Digte</i>, Nordens Friheds Forlag - Frit Nordisk Forlag, København, 1944, p. 13.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Forord</title>
+    <source pages="5-6"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<prose>
+  KAJ MUNK er død - myrdet af Tyskerne og deres landsforræderiske »danske« Lakajer, faldet paa Valen som Danmarks trofaste Kæmper, skudt ned som Martyr for sit modige danske Sind.
+  Litteraturhistorien vil riste hans Runer som Danmarks største Dramatiker i lange Tider og iøvrigt skændes om, hvad i hans Digtning, der tilhørte Døgnet, og hvad der har Evighedsværdi.  (Som alle store, produktive Kunstnernaturer - som Grundtvig, Oehlenschläger og H. C. Andersen - var han ganske ukritisk; han skabte blot ud af sit frodige Jeg og lod saa andre kævles om, hvad der havde Værdi ud over Døgnets Kamp). Hans Menighed vil takke Gud for den varmtfølende, brændende Præst, Han skænkede dem. Vi, hans Venner Landet over - og vi er mange - vil mindes ham som det levende Menneske, der lige fra Studenterdagene til Døden med Ildhu og uden fjerneste Personsanseelse gik i Lag med de største Problemer, og som den trofaste Ven, for hvem Aarene aldrig betød Glemsel eller Fjernhed. Men hele Danmarks Folk vil huske ham som den dristige Forkæmper for alt, hvad der er dansk, under disse Ufærdsaar, som Helten, som Manden, hvis Mund og Pen uden Tanker for Konsekvenserne, siden 9. April, med Ildhu talte Danmarks og Frihedens Sag mod vore Undertrykkere og Fjender. Nu har han betalt Prisen derfor. Han gav sit Liv - og vi, der kendte ham, føler, at Martyrdøden var den mest rigtige for ham.
+  I Kaj Munks sidste Drama, »Niels Ebbesen«, lyder Slutningsreplikkerne: Den gamle Bonde Troels: For denne Dag vil Danmark takke Gud til alle Tider. Han lønne dig, Niels Ebbesen. Vi kan ikke. - Niels Ebbesen: Jeg har faaet Løn nok, Troels, den bedste af alle, at mine Børn kan vokse op og blive Danske.
+  Den Løn, Kaj Munk og Niels Ebbesen her ønsker sig, faar han. Det ved vi nu - og han har selv ydet sit store Bidrag dertil. At Gud vil lønne sin Præst, der nidkært tjente ham med Mund og Pen, tvivler jeg ikke om. Og jeg ved, at Tusinder og atter Tusinder af Danske vil takke Gud for Kaj Munk og den Indsats, han ydede i Danmarks mørkeste Tid.
+  Hans sidste Digte, som vi hermed udsender, viser os ham netop, som vi ønsker at mindes ham, som den flammende og funklende Forkæmper for Danmarks Frihed, som Manden, der udgød sit Hjerteblod for Danmark.
+  Og saadan vil han staa i Danmarks Historie til evig Tid!
+</prose>
+</body>
+</text>
+
+<text id="munk2020011902">
+<head>
+    <title>Tyrtaios: 4 Krigssange</title>
+    <subtitle>Fra det syvende Aarhundrede før Krigeren fra Nazareth.</subtitle>
+    <firstline>Spartas Sønner, gaa frem! gaa frem!</firstline>
+    <source pages="7-12"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+<nonum><center>1.</center></nonum>
+
+Spartas Sønner, gaa frem! gaa frem!
+til Kampen flyv som paa Vinger!
+Skjold for Brystet med Venstre Klem!
+Med Højre Spydet I svinger.
+Kun søge Livet at spare
+er Leveregel for Harer.
+Aldrig mellem Spartaner
+fandtes saadanne Vaner.
+Spartas Sønner, gaa frem; gaa frem!
+til Kampen flyv som paa Vinger!
+
+
+<nonum><center>2.</center></nonum>
+
+Hvem pylrer her om Overmagt?
+At ikke I jer skammer!
+Spartaner, <w>naar</w> var du forsagt?
+Husk paa, fra hvem du stammer!
+Og Retfærds Gud endnu er til.
+Tro ej, at Kastevindens Spil
+slaar Folk omkring som Rør og Siv.
+Nej, Herren over Død og Liv
+gi'r Prisen til den Tapre.
+
+Tæl ikke dine Fjender op,
+bær heller paa dem Vaaben!
+Dær, hvor de staar i tættest Trop,
+gør du en Plads dig aaben!
+og stil dig saa paa denne Plads,
+og indret dig det dær tilpas!
+Hvormange end vil myldre frem
+du boltre dig imellem dem
+som mellem Solens Straaler!
+
+Krigsluren ejer mangen Klang,
+Dem alle har vi prøvet.
+I Frem- som i Tilbagegang
+har vi os dygtigt øvet.
+Det sidste har saa godt vi lært,
+at det er ikke mere svært.
+Klem paa nu med en ny Taktik:
+Staa fast fra dette Øjeblik
+og gaa i Morgen fremad.
+
+Og da » Tilbage« nu er slut,
+ej mere Modet klikker.
+Nu falder færre af os, Gut,
+og Ryggen har vi sikker.
+Dæk Bryst og Ben bag Skjoldets Fort!
+stem Fødderne mod Jorden haardt!
+knib Munden til som syet med Sting!
+og saa det store Landsesving,
+som Dødsgudinden elsker!
+
+Men kommer Fjenden dig for nær,
+saa spring ham ind i Livet,
+slyng Lansen fra dig, lad dit Sværd
+ham et Velmødt faa givet!
+saa Fod mod Fod og fast ham kryst
+med Skjold mod Skjold, med Bryst mod Bryst,
+med Hjelmbusk først, saa Hjelm mod Hjelm,
+og slip, naar af den arme Skælm
+kun er et Lig tilbage!
+
+Men I, der staar bag Skjoldes Bundt
+med Kastespær og Slynge,
+nu tror jeg, det er Fjenden sundt
+lidt Sten at høre synge.
+Prik til ham med de lette Spyd,
+til han har glemt Forsigtens Dyd,
+og tirr ham rundt i Nord og Sør,
+til han er svedt og træt og mør!
+Saa kan vi avancere.
+
+
+<nonum><center>3.</center></nonum>
+
+Jeg ved et herligt Syn,
+at se den unge træde
+sin Skæbne under Bryn,
+at se ham gaa som Mand
+imellem Mænd med Glæde
+til Døden for sit Land.
+
+Men Ynk og Jammer stor,
+naar Mand med Børn og Kvinde
+maa fly fra Hjem og Jord,
+som fredløs Tigger gaa
+fra Sted til Sted - at finde
+lidt Læ for sine smaa.
+
+Og Skændsel uden Bund,
+om han blandt Venners Grave
+maa luske som en Hund
+og tuske sig til Fred.
+ved som sin Fjendes Slave
+at sælge ham sin Sved.
+
+Den Skæbne ej til os!
+Vi er Spartaner alle,
+vort Hjerte ene Trods.
+Kamp er den tapres Ly.
+Og bedre er at falde
+end gi' sig eller fly.
+
+Nuvel! her er vi mødt,
+en Haandfuld raske Drenge.
+Det Land, der har os født
+og fostred Krop og Hu
+med Kraft og Rankhed længe,
+det vil vi takke nu.
+
+Til Side, gamle Mænd,
+der hørte Lurens Tone
+og straks rev Sværd fra Lænd I
+Men Vaarens nye Skud
+i Fædrelandets Krone
+i Dag vil bryde ud.
+
+Ej sømmer sig at se
+paa hæderkronet Isse
+Blodluen æde Sne.
+Det er vi unges Tur
+med kaade Landsespidse
+at vælte Fjendens Mur.
+
+- Jeg ved et herligt Syn:
+i Kampens Torden svinger
+den unge Spydets Lyn.
+I Offerfestens Stund
+paa Alteret han bringer
+sig selv med Smil om Mund.
+
+
+<nonum><center>4.</center></nonum>
+
+Jeg regner dem for ingenting,
+Rekorderne i Sport -
+er du Bersærk i Boxering,
+og om mod dig i Løb og Spring
+selv Stormen kom til kort,
+er du en Gud i Talens Kunst,
+har Rytme i dit Blod,
+vandt Kongeros og Kvindegunst,
+jeg regner det for Røg og Dunst,
+saafremt du mangler Mod,
+det Mod at staa som ærlig Mand
+i Kamp for Folk og Fædreland.
+
+Hil den, der uden Hjertesting
+kan plukke Rædslens Frugt
+og ved: »her hænder alle Ting
+undtagen, at jeg gør omkring
+til fejg og skændig Flugt.«
+Den første i de førstes Trop
+han dristigt sætter ind
+sin unge Sjæl, sin unge Krop
+og ægger herligt Modet op
+i sine Fællers Sind.
+Kun et af to om Kampen gjaldt:
+han enten sejred eller faldt.
+
+Og segner forrest du blandt Mænd,
+smil i din sidste Stund!
+Thi ingen Død er skøn som den:
+for Fædres Jord at gi' sig hen,
+dø med dens Kys paa Mund.
+Ja, sank du i saa dyr en Favn,
+da er din Lykke gjort.
+Din Død er Daad - til Folkegavn.
+Og gennem Tiderne dit Navn
+skal bæres højt og stort.
+Fordi det største du os gav,
+gror Folkets Liv af Heltens Grav.
+
+Men stævner du med Sejr af Strid,
+da rækker vi dig Kranse;
+vi hædrer dig din Levetid,
+og Kvinders Smil og Skjaldes Vid
+omgærder dig med Glans.
+Hvor Fod du sætter, skal du saa
+en Sæd af Daad og Sang -
+og sent og savnet fra os gaa,
+naar du har lært de unge slaa,
+som selv du slog engang.
+For Ære, Frihed, Fremtid, Hjem
+gaa frem, gaa frem, gaa frem, gaa frem!
+</poetry>
+</body>
+</text>
+
+<text id="munk2017090202">
+<head>
+    <title>Danmark, vort Liv</title>
+    <firstline>Danmark, besudlet og bundet!</firstline>
+    <source pages="13"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Danmark, besudlet og bundet!
 vi har her svoret en Ed:
 aldrig at unde os Fred,
@@ -44,19 +272,19 @@ sværger vi tause vor Ed.
 Frem til den sejrrige Fred
 gennem vor Død vi dig bærer,
 Danmark, vort Liv.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="munk2017090203">
+<text id="munk2017090203">
 <head>
-   <title>Vort danske Kald</title>
-   <firstline>Nu kræver Danmark af os, vi er stærke</firstline>
-   <notes>
-      <note>Teksten følger Kaj Munk: <i>Sidste Digte</i>, Nordens Friheds Forlag - Frit Nordisk Forlag, København, 1944, p. 14.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Vort danske Kald</title>
+    <firstline>Nu kræver Danmark af os, vi er stærke</firstline>
+    <source pages="14"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nu kræver Danmark af os, vi er stærke,
 saa aldrig Frygt og Tvivl faar Overhaand.
 Alt, hvad der truer os, skal faa at mærke,
@@ -83,19 +311,463 @@ Vort dyre Land, vort stolte gamle Rige,
 i ny Tids Foraar bærer vi dig ind.
 Lad Stormen stinde sig og Havet stige!
 des mere ruster vi de danske Sind.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="munk2017090204">
+<text id="munk2020011905">
 <head>
-   <title>Den blaa Anemone</title>
-   <firstline>Hvad var det dog, der skete?</firstline>
-   <notes>
-      <note>Teksten følger Kaj Munk: <i>Sidste Digte</i>, Nordens Friheds Forlag - Frit Nordisk Forlag, København, 1944, pp. 29-30.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Af Vikingæt</title>
+    <firstline>Og der er sunget længe nok</firstline>
+    <source pages="15-16"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
+Og der er sunget længe nok
+og baade flinkt og net
+om Mor og hendes Spinderok,
+om Far og hans Kasket,
+om Spindelvæv paa Mark og Kær . . .
+som om vi har Museum her.
+Nu kræves der i Dannevang
+af os en anden Sang.
+
+Du Organist med Manke graa,
+vor Spillemand mod Vest,
+nu be'r vi dig dit Orgel slaa,
+som du formaar det bedst,
+ja, brus det over Danmarks Jord,
+vel er vi Børn af Bælt og Fjord,
+men er og bli'r fra Byss til Grav
+tillige Børn af Hav.
+
+Smaafinker har holdt Sommerfest
+i Natten lys og lun.
+Men vaagn nu op, du Storm fra Vest,
+og stød i din Basun!
+du var jo helt fra Hedenold
+vort unge frie Folks Herold
+og viste os, at Daaden stod,
+hvor Vinden er imod.
+
+Vort Land er kun et Slettebo
+foruden Bjerges Værn.
+Desmere højne sig vor Tro
+og Viljen vorde Jern!
+Bedst Fattigmand til Mod har Raad.
+Tit lidet Folk var stort i Daad.
+Vis nu, da vi i Kamp er stedt,
+vi er af Vikingæt!
+</poetry>
+</body>
+</text>
+
+<text id="munk2020011906">
+<head>
+    <title>Danmarkssang</title>
+    <firstline>Danmark, Land af Hav og Himmel</firstline>
+    <source pages="17-18"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Danmark, Land af Hav og Himmel,
+Blæst og Bygers Bo,
+dine Øers muntre Vrimmel,
+Jyllands mørke Ro!
+Gøded tusind Aar din Have
+med vort Blod, vor Graad -
+nu gror Korn paa Fædres Grave,
+Daad af deres Daad.
+
+Sangen stiger fri og fager.
+Tankens Baun staar tændt.
+Ven er Bonden med sin Ager,
+Sindet opadvendt.
+Havet helt til Verdens Ende
+fører fra din Dør
+ud til Togter dine Svende
+rask som aldrig før.
+
+Blæsten Dannebroge hæver,
+Friheds Aandedræt!
+rødt og hvidt vort Blod det kræver,
+jamen kun for Ret.
+Som med Sejr det stjerneblinked
+frem for Danskens Lejr,
+har det altid siden vinket
+os til Daad og Sejr.
+
+Dansk var Moders Røst, der byssed
+os for Stød og Rift,
+og den Pigemund, der kyssed
+frem os til Bedrift.
+Dansk hvert Ord, der Hjertet ildner
+og gør Synet klart,
+og den Bøn, som Sjælen stilner
+i før sidste Fart.
+
+Lidet Land. Men stort er Norden.
+Hil vor Fremtids Hjem.
+Fast paa fagrest Del af Jorden
+bor vi Brødre fem.
+Lang Tid skilt af Bagateller
+rækker vi nu Haand.
+Ud af Prøvelserne vælder
+Broderskabets Aand.
+
+Hvad vi virked, drømte, digted,
+Moder, alt er dit.
+Selv naar vi dig dybest svigted,
+tilgav du os blidt.
+Aldrig mer skal Sværd i Skede
+prisgi'e Fædres Stavn.
+Selv til Døden er vi rede,
+Danmark, for dit Navn.
+
+Løft mod Himlens Morgenrøde,
+I paa Mark og Hav!
+ja, og alle Danmarks døde,
+løft fra jeres Grav
+af vor Tak kærminderandet
+Bønnens Offerskaal:
+Gud bevare Fædrelandet,
+Folk og Modersmaal!
+</poetry>
+</body>
+</text>
+
+<text id="munk2020011907">
+<head>
+    <title>Flaget, der kun lever i sin Kiste</title>
+    <firstline>Hvorfor vil du hejse Flaget, naar du tror, det er en Klud?</firstline>
+    <source pages="19-20"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Hvorfor vil du hejse Flaget, naar du tror, det er en Klud?
+naar du skulker fra den Løftning, der er Flagets Bøn og Bud?
+
+Det at hejse Dannebroge, vogt dig, det er aldrig Spøg.
+Flaget hævner, hvis du regner det kun for et Legetøj.
+
+Se dets røde Farve svulmer i et Kald paa Offermod
+til at elske har du ret kun, er du rede med dit Blod,
+
+For dit Hjertes Skyld lad knuse, om det kræves, Hjertets Hvælv!
+thi, o Menneske, dit Hjerte det er mere end dig selv.
+
+Mærker ikke du det hvide drage mod Uskyldighed
+kræve Sindet blankt og svigløst, saa du slaar dit Øje ned?
+
+Du, som bærer tvende Tunger bag din Læbes glatte Hud,
+bid den ene af, men hurtigt, bid den af og spyt den ud!
+
+Staar du der og hejser Flaget, skønt dets Sjæl er lagt i Baand!
+Tror du blot, det er en Tøjstump? Ved du ej, et Flag er Aand
+
+Ydmyghed er Danmarks Mærke, ja, men ingen Debitors.
+Ej vort sunde Kort skal plantes hos et unaturligt Kors.
+
+Ej dets høje Dug skal bruges i et lavt Komediespil!
+stikkende os Blaar i Øjne, at vor Frihed end er til.
+
+Fri, kun fri skal Fanen vaje, 7 Aarhundreds Dannebrog!
+ikke af en andens Naade. Før forvar den under Laag!
+
+Del ej Flaget med en fremmed! Gem det ned, da er det dit!
+i dit Hjerte skal det flamme varmt og levende og frit.
+
+Kun naar der det vandt sin Sejr, offerrødt og uskyldshvidt,
+naas den Dag, det atter vajer over Folket højt og frit.
+</poetry>
+</body>
+</text>
+
+<text id="munk2020011908">
+<head>
+    <title>Jylland</title>
+    <firstline>Fjorde og Skoves</firstline>
+    <source pages="21"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Fjorde og Skoves
+smilende Magt,
+Agre langs Aases
+blaanende Pragt,
+Hedernes Alvor
+og Klitternes Vagt.
+Kender du mig?
+Jeg er Jylland.
+
+Krige har hærget,
+Vintre har bidt.
+Have og Storme
+hamret og slidt
+Styrke jeg vandt kun
+af, hvad jeg har lidt.
+Se, jeg er mig
+jeg er Jylland.
+
+Fribaaret Sind bag
+Fattigmandskoft.
+Blæsten og Lærken
+bor paa min Toft.
+Vidt er til Vægge
+og højt er til Loft
+hjemme hos mig
+her er Jylland.
+
+Syld for vort Riges
+ældgamle Gard
+grundfast i Havet
+stod jeg og staar.
+Bæres du skal i
+ny tusinde Aar,
+Danmark, mit Land,
+af dit Jylland.
+</poetry>
+</body>
+</text>
+
+<text id="munk2020011909">
+<head>
+    <title>Hvor mørkt, hvor stort</title>
+    <firstline>Hvor mørkt du ligger, du danske Kyst</firstline>
+    <source pages="22-24"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Hvor mørkt du ligger, du danske Kyst,
+mod skumhvidt Hav som i Trods du sortner!
+hvor lav, som krummer du dig til Dyst,
+mens Blæst og Bølge imod dig tordner.
+Foruden Bjærge
+til Skjoldehvælv
+du ved, at værge
+du maa dig selv.
+
+De jager frem i Erobrerjag,
+det glimter hvidt i de sortblaa Blikke.
+Du ryster under de haarde Slag,
+men viger ikke, men viger ikke.
+Med Verdner mod dig
+i Dødens Port
+du altid stod dig.
+Hvor stolt! hvor stort!
+
+Aartusinder har nu Havet kogt
+sin Sejd omkring dig af salthvid Fraade,
+og under Efteraarsstormens Togt
+laa plovskærssaarede, tungssindsvaade
+de lave Sletter
+og vented paa
+bag sorte Nætter
+en Dæmring graa.
+
+Vel har vi elsket din klare Nat
+med Bølgenynnen i Bælt og Sunde,
+med Maanesmilet i dugget Krat
+og Nattergale, der ler i Lunde.
+Naar Elskov tisker
+om Vraa og Slot,
+og Hjertet hvisker:
+Hvor er her godt!
+
+Dog mer du greb mig i Stormens Tegn
+din mørke Hede, de sorte Agre,
+din eftertænksomme, vrede Egn,
+en Grimhed fagrere end det fagre.
+Af Gud blev givet
+den Skænk til os
+at eje Livet
+i Tro og Trods.
+
+Den danske Sømand paa Vikingvagt
+og Bondens Krigsfærd mod Ahl og Hede,
+det Nordens Sind, der i Mørkets Magt
+til Kamp for Lyset var altid rede!
+hver Daad har videt
+vort Riges Port.
+et Folk saa lidet,
+hvor er det stort!
+
+Og de bar kaldt dig en Solskinskrog
+og klimpret kønt om din vege Ynde,
+Men den, der saa dig, hvor Bølgen slog,
+fik Trang til mere end blot at nynne.
+Der steg en Afklang
+ham dybt fra Bryst
+af Storm og Havgang
+om Danmarks Kyst.
+
+Saa hilser vi dig, vort Fædreland,
+som sejgt hold Stand mod Aartusinds Fjende!
+Og overskyller han end din Strand
+snart skal han atter tilbage rende.
+Mod Lyset spejder
+din mørke Kyst,
+beredt til Fejder,
+til evig Dyst.
+</poetry>
+</body>
+</text>
+
+<text id="munk2020011910">
+<head>
+    <title>Høfdebyggere</title>
+    <firstline>De bygger Høfder ved Vesterhavet</firstline>
+    <source pages="25-26"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+De bygger Høfder ved Vesterhavet,
+de lidettalende jydske Mænd.
+Saa meget Land har det Hav begravet,
+at de fik lært nu at slaa igen.
+De er kun smaa mod store Fjende,
+men ved, de tjener for Livets Sag,
+og derfor tør de mod En sig vende,
+hvis Sejrsvej randes af Ørk og Vrag.
+
+Han glatter efter med Silkeløfter
+og smisker venligt et Sommerdøgn.
+Men Jyllands Fiskere bygger Høfdør
+og stoler ikke paa Solskinsløgn.
+Da fnyser Afgrundens voldske Drage.
+Men hvad der byggedes holder Stand.
+Naar Havet trækker sig knust tilbage,
+vi har for Øje genvundet Land.
+
+Det lærte vi da i Sprøjt og Fraade,
+det er vort Forsvar at slaa igen.
+Vi lever ej paa Tyrannens Naade,
+for vi er fri og vaagne Mænd.
+Jo mere truende olmt han snøfter,
+des mer vi byder ham aaben Trods.
+Vi bygger Høfder, vi bygger Høfder
+og ta'r igen, hvad han tog fra os.
+</poetry>
+</body>
+</text>
+
+<text id="munk2020011911">
+<head>
+    <title>Blæsten og Regnen</title>
+    <firstline>I Danmark bor den stride Vind</firstline>
+    <source pages="26-28"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+I Danmark bor den stride Vind,
+vort Aar er gennemblødt af Regn.
+Hvem er det, der bar bildt os ind,
+vort Land er lagt i Solens Tegn?
+Monstro det er de ferme Fyre,
+der sørger for Hotelbrochure?
+Det er kun Dogme for Turister,
+at Blæst og Regnvejr altid trist er.
+
+For vi, der bor i dette Land
+og ikke er paa Rejse her,
+os staar det danske Klima an,
+vi elsker disse mange Vejr.
+De Dage er saa faa som favre,
+da Lokemanden saar sin Havre.
+Men skøn er ogsaa Stormens Sang
+og Regnens Læskekys i Vang.
+
+Se Bondens Tag om Plovens Greb
+i Foraarsblæst og Muldjords-em,
+hans Heste strakt i deres Reb
+med Skum for Muler, Sved fra Rem!
+Og se om Bord vor Fiskers gæve,
+bornhudede Bersærkernæve
+i Slagsmaal mod Nord vest, hans Bror,
+om Fiskegrejer, Sejl og Ror! -
+
+Og Regn slaar ned, saa Vand slaar op
+de Draaber styrter sig i Sø
+med Ringedans af Hop i Hop.
+Hvad andet ses saa festligt dø?
+Skovbækken leger Niagara.
+Saa løfter Regnbuen sin Tiara.
+Det dufter af titusind Haab
+fra Jorden under Himlens Daab.
+
+Her kom du frisk af Søens Bad,
+Smed Cyklen ved et Træ og lo.
+Din Mund et dugget Rosenblad,
+og dine Pigekinder to
+paa eengang kølige og varme
+af Regnens Kys og Blæstens Harme.
+Hvor kæk, naar du tilbageslaar
+med Nakkekast dit vaade Haar!
+
+Men inde i den store By
+der spurter de med Regnslag paa,
+Kulør af Solfald og af Gry
+opliver alle Gader graa.
+Den lille Havfrue paa Cykel
+et Eventur af Vand og Nikkel!
+En til! og to! tre, fire, fem,
+en Havfrustime lyner frem.
+
+Ved Aftenstid, i Lygteskær
+det funkler i Asfaltens Spejl.
+De røde Lysreklamer der
+er nok Vorherres eget Segl
+i Lak paa det, at i Værdier
+er selv en Storstad ej Forbier.
+For Skønhed, der er gaaet tabt,
+har Byen anden Skønhed skabt.
+
+Se, Morgenstund har Vand i Mund.
+Til Skole løber trip trip trip
+om Kap med deres Næsetip
+de smaa som om paa Havsens Bund
+og naar i Hus med Bæk paa Skulder
+og Kildespring i Smilehuller
+og ryster deres Haar og Klæ'r
+og synes, det er Mandfolkvejr.
+
+Men hvis et umedgørligt Slud
+gør alt for mange Dage graa,
+saa tørner Vestenvinden ud
+og fejer Himlen søndagsblaa.
+Flak over Styret Ka'le tramper
+sig hjem til Mor, hvor Kaffen damper.
+En Smag som af et ekstra Smil
+den faar af Modvind og af Mil.
+
+Naar Verden over vi har Lov
+for Pløjning har i Danmarks Egn,
+saa skyldes det, at for vor Plov
+gaar de to gode: Blæst og Regn.
+For vi er ingen Drivhusstamme,
+og det er evigt godt det samme.
+Hvem kender vel til bedre Hest,
+end Hoppen Regn, end Hingsten Blæst?
+</poetry>
+</body>
+</text>
+
+<text id="munk2017090204">
+<head>
+    <title>Den blaa Anemone</title>
+    <firstline>Hvad var det dog, der skete?</firstline>
+    <source pages="29-30"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Hvad var det dog, der skete?
 Mit vinterfrosne Hjertes Kvarts
 maa smeltes ved at se det
@@ -145,20 +817,283 @@ og stryger ømt dit Silkeflor,
 en Flig af Naadens Trone.
 Du lille Anemone,
 hvor er din Skaber stor!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="munk2017090207">
+<text id="munk2020011913">
 <head>
-   <title>»Vi har det jo godt«</title>
-   <indextitle>Vi har det jo godt</indextitle>
-   <firstline>Hvad rager det mig, det meste af Verden</firstline>
-   <notes>
-      <note>Teksten følger Kaj Munk: <i>Sidste Digte</i>, Nordens Friheds Forlag - Frit Nordisk Forlag, København, 1944, pp. 38-39.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Manden med Pincetten</title>
+    <firstline>Lidt ubetænksom pigeglad</firstline>
+    <source pages="31-32"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
+Lidt ubetænksom pigeglad
+som altid laa vor Hovedstad
+med Vintersolen i sin Favn
+- var bare København,
+da Dragen pludselig skød op
+sin skælbesatte Vingekrop:
+»Nu ikke længe lede!
+her fandt jeg mig en Rede.«
+
+Og Luften blev til Brag og Knug.
+Det drypped fra den fyldte Bug.
+Ruin, Lemlæstelse og Død
+Vej gennem alt sig brød.
+Bestandig faldt de, Æg paa Æg.
+Som Blodsprøjt imod Himlens Væg
+stod Ilden op fra Gaden,
+da Mørket sank om Staden.
+
+Da vrimlede en Bydel fuld
+fra Æggene et Øglekuld.
+Med Slanger gik da Mænd i Pagt
+og kæmped uforsagt.
+Hist et, her et laa helt og rundt.
+»Jeg venter paa et godt Sekund,«
+det lød foruden Læber,
+»saa revner jeg og dræber.«
+
+Da kom en Mand, der med - ja gæt!
+hvad tror De? - bare en Pincet,
+hvormed han prikked rundt omkring
+den lumske Helvedting
+- og fik til sidst den prikket tam.
+Folk Io og græd og spurgte ham:
+»Hvor turde De? hvor turde da
+De gøre det, De gjorde?
+
+»Ja, hvis jeg var Kirurg, min Far,
+og førte« - smilte han til Svar
+»en lille Smule fejl min Kniv,
+det gjalt en andens Liv.
+Men gør jeg her forkert mit Snit,
+saa koster det jo bare mit.
+<w>Det</w> kommer <w>mig</w> til Bedste.«
+- og gik saa til den næste.
+
+Se, gamle Danmark, tvivled du?
+se, du har Drenge her endnu.
+Det svælger, svælger i mit Bryst
+af Tak og hellig Lyst.
+Din Skjald - ja! ja! din Journalist
+han fik dog Daad at se til sidst
+og løfter paa Kasketten
+for Manden med Pincetten.
+</poetry>
+</body>
+</text>
+
+<text id="munk2020011914">
+<head>
+    <title>Tre Slags Landsmænd under Krig</title>
+    <firstline>Der er et gammelt Kærnesprog</firstline>
+    <source pages="33-34"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Der er et gammelt Kærnesprog,
+just ikke skabt for Harer:
+at mer end Livet gælder dog
+necesse navigare.
+Det Ord det er et Fingerkys
+til alle Mænd, der staar til Søs
+især i Krigens Farer.
+Den Kunst paa Dansk man godt formaar.
+Hvad gør de Mænd, der roligt <w>staar</w>,
+hvor alle Søer <w>stejler?</w>
+De sejler.
+
+Vi ogsaa har en anden Slags
+imellem os af Landsmænd.
+Gaar Svind i Ting, de er der straks
+som med en sjette Sans, men
+de bruger Sansen lovlig grov
+til deres eget Husbehov
+og regnes halvt for Ransmænd.
+Hvad laver <w>de</w>, der med et Bundt
+af lange Fingre snuser rundt
+om Diskene og pejler?
+De negler,
+
+Men sig mig den forvorpne Trop,
+der mangler Perspektivet
+<w>og</w> staar og løfter Haanden <w>op</w>,
+som var en Ordre givet,
+man til at afslaa er for fejg,
+hvorfor man overgiver sig
+for »Pengene og Livet!«
+<w>og</w> slipper pludselig et Brøl,
+der staar af Halsen som et Spøl,
+fortæl mig, hvad de fejler?
+</poetry>
+</body>
+</text>
+
+<text id="munk2020011915">
+<head>
+    <title>Den evige Forsigtighed</title>
+    <firstline>De gamle, syge Mænd blev ved at lalle</firstline>
+    <source pages="34"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+De gamle, syge Mænd blev ved at lalle:
+At bjærge Liv og Lemmer er det vigtige.
+Selv ind i Døden hørte vi dem ralle:
+»Aab, vær forsigtige! aah, vær forsigtige!«
+
+Enhver, der prøved at faa Fanen hejst ret
+for Sandhed, Mod, og Daad, ham bad de flytte sig.
+De vented at faa Ungdommen begejstret
+for dette høje Ideal at hytte sig.
+
+Den Kur de selv standhaftig praktisered
+mod alskens Sot med virkelig Oprigtighed.
+Og derfor er omsider de kreperet.
+Af hvad? selvfølgelig just af Forsigtighed.
+</poetry>
+</body>
+</text>
+
+<text id="munk2020011916">
+<head>
+    <title>Den Ringe og den Fattige</title>
+    <firstline>Bror Arbejdsmand, ja den er gal</firstline>
+    <source pages="35"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Bror Arbejdsmand, ja den er gal,
+du er jo ikke Greve,
+af dine Hænders Kapital
+jeg ved nok du skal leve.
+Betænk dog, om du kan og vil
+det Arbejd, man dig sætter til?
+
+Maaske har du en Søn blandt Mænd
+af Søens bramfri stolte.
+Du vil vel ikke være den,
+der Ulivssaar ham voldte.
+O tifoldt tungt dit Sønnetab,
+har selv du Del i Sønnens Drab!
+
+Og husk de store Fugles Flugt
+med Døden under Vingen!
+Den Dag de kommer her til Tugt,
+du ved de skaaner ingen.
+Din Sjælefred jeg tror det brød,
+blev du da Skyld i Landsmænds Død.
+
+Men De, min Herre Direktør,
+der vrager selv og vælger
+og Deres Sjæl med Tilbehør
+for Judaspenge sælger,
+hvad tror De Guld er ham til Gavn,
+der slæber paa Forrædernavn?
+</poetry>
+</body>
+</text>
+
+<text id="munk2020011917">
+<head>
+    <title>Devancement</title>
+    <firstline>Hvad er det for en Dobbeltmand</firstline>
+    <source pages="36-37"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Hvad er det for en Dobbeltmand,
+der kører rundt i dette Land
+og har en hel Del Herrer med,
+som ikke kommer Landet ved?
+
+Han er klædt paa - foruden Pral -
+saa flot, som var han General,
+og fører sig, ihvor han kør,
+som var han Rigets Direktør.
+
+Og Herrerne med denne Mand,
+de fører sig skam li' saadao.
+Vi andre tænker disse Ord:
+de skifted til det gale Spor.
+
+De kører<note>kører] hører</note> ned ad Bakke nu
+med Fart paa, saa det er en Gru.
+Saa ender dette Herredom
+med Bras imod en Spærrebom.
+
+Trods General og Direktør
+de sig til Pindebrænde kør.
+Da faar, hvad der var sammenrendt,
+den Skæbne, det har længst fortjent.
+
+Men hvad skal Danmark gøre ved
+det Slæng, der gjorde det Fortræd?
+»Naar<note>»Naar] «Naar</note> de er blevet til Ruin,
+saa hæld dem over med Benzin!«
+
+»Ja«, siger unge Folk, der duer,
+»Forræddere skal mod en Mur«,
+Ak var man egnet til Vulkan!
+Jeg er for gammel og human.
+
+Naar Danmarks Graatid er forbi,
+saa ansæt dem i Tivoli.
+Gør General og Direktør
+til Rutchebanekontrollør!
+</poetry>
+</body>
+</text>
+
+<text id="munk2020011918">
+<head>
+    <title>Kultur</title>
+    <firstline>En Herre med Doktorhat paa sit Haar</firstline>
+    <source pages="37"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+En Herre med Doktorhat paa sit Haar
+har gjort os den Ære at mase
+med Spørgsmaalet: Hvad er Kultur - og faar
+til Facit: Kultur er at smile, naar
+men helst vilde græde og rase. -
+
+Vor Jord gik i Knæ, da et Vilddyr slap fri.
+Det mødte til sidst dog sin Skæbne:
+et Folk, der i Stedet for Smilets Pil
+med Kvinders Taarer og Mænds Raseri
+sig voved mod det at væbne.
+
+Men <w>himmelske</w> Doktor, der ser til vort Folk,
+giv Danskerne Helse af Kuren!
+kasser den Recept fra Doktorernes Tolk,
+og es vor Fyldepen om til en Dolk!
+Formindsk hos os daglig Kulturen!
+</poetry>
+</body>
+</text>
+
+<text id="munk2017090207">
+<head>
+    <title>»Vi har det jo godt«</title>
+    <indextitle>Vi har det jo godt</indextitle>
+    <linktitle>Vi har det jo godt</linktitle>
+    <firstline>Hvad rager det mig, det meste af Verden</firstline>
+    <source pages="38-39"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Hvad rager det mig, det meste af Verden
 er blevet et Ligkapel?
 Jeg faar mine fire bajre om Dagen
@@ -179,7 +1114,7 @@ Hvabehar? Ikke ogsaa! baat baat!
 
 Møder jeg en, der har ondt i Tanden,
 saa gaar jeg strax min Vej,
-ja, for jeg ønsker, at alle ku' ha' det 
+ja, for jeg ønsker, at alle ku' ha' det
 ligesaa godt som nu mig.
 Men da jeg ved, at det ikke er muligt,
 saa er jeg ikke et Kvaj.
@@ -194,19 +1129,19 @@ Naa men saa glider jeg, Tak for Passiaren.
 Det var en Gang hyggelig Snak.
 Aah dog for Helvede, at man skal finde sig
 i denne Tang til Tobak.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="munk2017090208">
+<text id="munk2017090208">
 <head>
-   <title>Ogsaa han</title>
-   <firstline>Ogsaa han! Som Salt i Hjertets Vunde</firstline>
-   <notes>
-      <note>Teksten følger Kaj Munk: <i>Sidste Digte</i>, Nordens Friheds Forlag - Frit Nordisk Forlag, København, 1944, p. 39.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Ogsaa han</title>
+    <firstline>Ogsaa han! Som Salt i Hjertets Vunde</firstline>
+    <source pages="39"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ogsaa han! Som Salt i Hjertets Vunde,
 naar Avisen eller Radioen,
 gjort til Brikker i et udansk Spil,
@@ -224,19 +1159,76 @@ det, der hidtil snildt sin Rodevamp dulgte!
 lad kun Stormen gennem Skoven gaa!
 Naar det Raadne Livets Dødslov fulgte,
 skal des fastere det friske staa!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="munk2017090209">
+<text id="munk2020011921">
 <head>
-   <title>Brittens Dygtighed</title>
-   <firstline>Af Brittens Dygtighed, stod frem en Stat</firstline>
-   <notes>
-      <note>Teksten følger Kaj Munk: <i>Sidste Digte</i>, Nordens Friheds Forlag - Frit Nordisk Forlag, København, 1944, p. 41.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Aabent Brev til en Minister</title>
+    <firstline>Hvad de aldrig forstaar, Hr. Minister</firstline>
+    <source pages="40-41"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
+Hvad de aldrig forstaar, Hr. Minister,
+skønt hos Dem selv et Hjerte har Hvælv:
+at et Menneske heller mister
+sit Liv, end det mister sig selv.
+Ja, det regner De højst for en Frase,
+og De vender Dem iskold bort.
+Thi for Dem har kun Livet een Fase:
+at spille klogt sine Kort.
+
+Aa, I kloge, hvor er I dog dumme,
+saa Enfoldighed ad Jer maa le -
+som om Jorderig kun skulde rumme
+en macadimiseret Chaussé.
+Det slaar til paa det flade at regne,
+og det tamme kan klares med Kløgt.
+Men Vulkanernes trodsige Egne
+har Ministeren aldrig besøgt.
+
+Det er muligt, ar Panden kan bæres
+i en Luft, der er kølig som Sne.
+Jamen Hjertet er skabt til at næres
+af en Lue, (som ingen kan se),
+Til Kaptejn kan De selv Dem forfremme
+ved Sejlads paa et fersk Ocean.
+Men Gud naade Dem, gaar det i Glemme,
+at det ender en Dag med Orkan!
+
+Ja, smil De kun spodsk, Hr. Minister,
+og kald mig for Pøbel og Nar.
+For »Intilligens« jeg mig drister
+til at vælge mit Hjertes Barbar.
+Nar er De, vil De Livsilden kue,
+og saa mene, det aldrig kan ske
+at en Dag slaar Vulkanen sin Lue
+gennem alle Betænkelsers Sne.
+
+Ak, De faar det ret aldrig i Hodet
+ja, De kan vel slet ikke forstaa,
+at rødt er i Hjerter os Blodet,
+men Hjernens Celler kun graa.
+Og aldrig blev Samson Filister.
+Før sprænger han Templets Hvælv
+for Fjenden at knuse, Minister,
+om saa han skal knuse sig selv.
+</poetry>
+</body>
+</text>
+
+<text id="munk2017090209">
+<head>
+    <title>Brittens Dygtighed</title>
+    <firstline>Af Brittens Dygtighed, stod frem en Stat</firstline>
+    <source pages="41"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Af Brittens Dygtighed, stod frem en Stat,
 et Verdensrige, vældigt, uden Lige...
 vel skabt ved Vold imellem og Intrige...
@@ -248,19 +1240,304 @@ at ene en politisk Herostrat
 kan finde paa at sønderslaa det Rige.
 
 <nonum><small>(Af en Tale i den tyske Radio i April 1939 af Rigskansler Hitler)</small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="munk2017090210">
+<text id="munk2020011923">
 <head>
-   <title>De Faldne</title>
-   <firstline>Drenge, I Drenge, som døde</firstline>
-   <notes>
-      <note>Teksten følger Kaj Munk: <i>Sidste Digte</i>, Nordens Friheds Forlag - Frit Nordisk Forlag, København, 1944, p. 50.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Sandhed gror</title>
+    <firstline>Ængstelig og uden Ære</firstline>
+    <source pages="42-43"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
+Ængstelig og uden Ære
+har de overgivet Landet.
+Selv om ej vi havde Hære
+selv om ej vi havde andet,
+havde vi i hvert Fald <w>Nej</w>.
+Evnede vi ikke Haandens,
+maatte vi dog evne Aandens
+Sandhedsdyst paa Ærens Vej.
+
+Ængstelig og uden Ære
+har de overgivet Landet.
+Drenge, tag dem nu i Lære,
+sig dem, det er noget andet
+Danmarks Aand og Ungdom vil:
+ranke Mænd for Danmarks Alter,
+ikke Krøblinge, der halter
+i ynkværdigt Dobbeltspil.
+
+Ængstelig og uden Ære
+har de overgivet Landet.
+Der vil vi vor Medskyld bære,
+alle blev vi overmandet
+af den falske Trygbeds Ly.
+Ja, men fortsat at slaa Følge
+ad den Vej er blot at dølge
+gammel Synd og Skam med ny.
+
+Danske Folk, du maa dog ikke
+i den store Skæbnetime
+staa med udtryksløse Blikke
+i en uansvarlig Stime
+og agere døv og stum,
+uden Jubel, uden Skælvning
+i en underjordisk Hvælving
+som i et Akvarium.
+
+Du maa op, maa op i Dagen!
+Det er Død, naar nu der soves.
+Op til Vælgen og til Vragen!
+Liv kan kendes paa, der voves.
+For det Hjertets Jord.
+Lad dem true, arrestere,
+ærestjæle, deportere.
+Det er saadan, Sandhed gror.
+</poetry>
+</body>
+</text>
+
+<text id="munk2020011924">
+<head>
+    <title>Den skjulte Aand</title>
+    <firstline>Vi tror i Dag paa Danmarks skjulte Aand</firstline>
+    <source pages="44-45"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Vi tror i Dag paa Danmarks skjulte Aand.
+Alt det der viser sig for vore Blikk
+af Eftergivenhed, det tror vi ikke,
+men paa den Trods, der smiler under Baand.
+Vi tror i Dag paa Danmarks skjulte Aand.
+
+Regering, Rigsdag, Domstol, Politi,
+alt det, der just i Mørket skulde lyse
+men straks Iod i et Musehul sig kyse
+og staar de fremmede mod Landsmænd bi,
+er ikke Danmarks Aand til Stede i.
+
+Han snorker i sit Kronborgs Lejested,
+tror en. En anden ved sin Spot i Munden,
+at dengang Stauning solgte Undergrunden,
+gled Holger Danske tyst i Købet med:
+vort Folk begærer nu kun Slavefred.
+
+Men Holgers Venner ved, det er Bedrag.
+Vi lytter og vi spejder ind i Taagen:
+jo sandelig, nu er den gamle vaagen
+og færdes blandt os skjult. Ved Nat og Dag<note>Dag] Dag.</note>
+vi sporer hist og her hans Haandelag.
+
+Der er et Danmark, der skal gaa i Grav.
+Det Danmark, der for Livet blot at bjerge,
+gav hovedkulds sig hen i fremmed Værge
+og lader haant om Tro og Ærens Krav,
+Gud være priset, det skal gaa i Grav.
+
+Thi saa er Loven? naa til Maalet hen
+skal den, der løfter Blikket mod det fjerne
+og sætter Kursen efter Himlens Stjerne.
+I Sumpen, kun i Sumpen ender den,
+der løber efter Mosens Lygtemænd.
+
+Det Folk, der nu som gennem tusind Aar
+har Mod at sætte Livet ind for Livet
+og for sin Kærlighed sig selv har givet,
+det Danmark ved vi Gudskelov bestaar,
+saalænge Stjerner over Himlen gaar.
+</poetry>
+</body>
+</text>
+
+<text id="munk2020011925">
+<head>
+    <title>Avnerne</title>
+    <firstline>Satan vil sigte sin Hvede</firstline>
+    <source pages="45"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Satan vil sigte sin Hvede.
+Hør, hvor han ler paa sin Lo,
+rager til Side med Vrede
+alt, hvad der dur til at gro,
+Avnerne de er hans Hvede,
+der samler paa alt, som er goldt.
+Se hvor de længe sig teede
+iøjnestikkende stolt.
+
+Ja, de er rigtigt i Vinden,
+fyger til Vejrs for hans Skovl.
+Kort kun det varer, forinden
+de brændes i Helvedes Svovl.
+Himmelhøjt vilde de vejres,
+naar kun det modsatte Maal,
+fejes, naar Saatid fejres,
+ned i Forkastelsens Baal.
+</poetry>
+</body>
+</text>
+
+<text id="munk2020011926">
+<head>
+    <title>Alle Fronters Gud</title>
+    <firstline>Jeg er Herren. Ingen ydermere</firstline>
+    <source pages="46-47"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Jeg er Herren. Ingen ydermere.
+Løgn hver Magt, I ellers kommer ud for.
+Luften, Jorden, Havet er jeg Gud for.
+Jeg er Herren, alle Fronters Gud.
+Bild jer ind, jer er det, der regerer!
+Guddomsmagt har ene Kærligheden.
+Derfor, derfor er jeg Gud for Vreden,
+naar I haaner Kærlighedens Bud.
+
+Mod jer længes Dag og Nat mit Hjerte,
+mine Børn, mig alle dyrebare.
+Gerne vilde jeg jer om mig skare,
+vise Vej jer gennem al Fortræd.
+Men I spytter ad min Godheds Kerte,
+vil jer selv, og søger kun jert eget,
+har i onde Hjerters Mistbænk plejet
+uden Skam vor Fjendes Dragesæd.
+
+Trampes Kærligheden ned for Fode,
+<w>vil</w> I Livet til et Hel ved gøre
+for hverandre, <w>vil</w> I ikke høre,
+er jeg Gud for Nidkærhedens Harm.
+Triumfer en Tid! vær vel til Mode!
+Hvad du saar - du høste skal det samme.
+Grib til Sværd, og Sværdet skal dig ramme
+Langsom løfter jeg min tunge Arm.
+
+Værgløse Abessiniens Byer,
+I, der kvastes midt i Fredens Virke,
+mens jer Kejser knælte i sin Kirke,
+løfted Bønner mod det stumme Hvælv!
+de, der sendte jer de Bomber, flyer
+nu fra <w>deres</w> knuste Hjem og skriger.
+Han, der Fyrster jog fra deres Riger,
+er nu Flygtning hjemme hos sig selv.
+
+Jeg er Gud for Luften, Jorden, Havet;
+alle Fronters Gud. Jeg gi'er mig Stunder.
+Men jeg læger altid Retfærds Vunder,
+slaar med Knythaand Uret i dens Syn.
+Spot mig, dræb mig, faa mig vel begravet!
+Se, jeg staar her atter. Min er Dommen.
+Endnu er min Time altid kommen,
+med Gengældelsernes hvasse Lyn.
+</poetry>
+</body>
+</text>
+
+<text id="munk2020011927">
+<head>
+    <title>Hyldest til Norge</title>
+    <firstline>Ja, vi elsker dette Landet</firstline>
+    <source pages="48"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Ja, vi elsker dette Landet
+nu som aldrig før.
+Trodsigt stiger det af Vandet,
+lever, mens det dør.
+Just fordi det valgte modigt
+Undergangens Kaar,
+skal det gro og grønnes frodigt
+frem i tusind Aar.
+
+Vaabenløs du kæmped, Norge,
+stod, enskønt du faldt.
+Dine Hjerters Klippeborge
+har holdt Stand mod alt.
+Vi, der sad i dybe Dale,
+baade græd og lo
+ved din Tausheds høje Tale
+klippefast i Tro,
+
+Snart gør Vaarens Morgenrøde
+Vintrens Nat forbi.
+Se, da blomstrer op det øde,
+Fossen springer fri,
+Birkeløv og Flaget vajer
+over genrejst Jord,
+Og med Smil i Taarer nejer
+Danmark for sin Bror.
+</poetry>
+</body>
+</text>
+
+<text id="munk2020011928">
+<head>
+    <title>Danmark og Norden</title>
+    <firstline>Danmark, Land af Hav og Himmel</firstline>
+    <source pages="49-50"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Danmark, Land af Hav og Himmel,
+skabt til Front og Bro,
+dine Øers travle Vrimmel
+og dit Fastlands Ro!
+Fra hvor Ilden heder Jorden
+under Sydens Sol,
+er du Bindeled til Norden
+op imod dens Pol.
+
+Bro for hvad af stort der tænkes,
+for hver ædel Dont.
+Men hvis Ret og Frihed krænkes,
+se, da er du Front.
+Vi har tabt mod Overvælde,
+Men vi kæmped dog.
+Kaldte nogen os for Trælle,
+da var Kamp vor Lov.
+
+Ligger end du lavt i Havet,
+Himlen stod dig bi.
+Snart af Bølgerne begravet,
+blev du atter fri,
+løfter frit de gule Brinker
+med den grønne Top,
+Rød og hvid mod Blaaet vinker
+Fanen Folket op.
+
+Danmark, Nordens søndre Pille,
+skabt til Bro og Front!
+alt for tit blev du kaldt lille,
+stor er jo din Dont.
+Sot og Smitte skal du standse
+foran Nordens Fred,
+ja, men Lys i Straaler danse
+ad dig op og ned.
+</poetry>
+</body>
+</text>
+
+<text id="munk2017090210">
+<head>
+    <title>De faldne</title>
+    <firstline>Drenge, I Drenge, som døde</firstline>
+    <source pages="50"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Drenge, I Drenge<note>Drenge] drenge</note>, som døde,
 I tændte for Danmark i dybest Mulm,
 en lysende Morgenrøde.
@@ -280,24 +1557,281 @@ af de Vaaben, de selv har givet?
 Hil jer da, Vikingsønner!
 Ulydige danske Soldater, Tak!
 Gud jer det evigt lønner.
+</poetry>
 </body>
-</poem>
+</text>
 
-
-<!--
-<poem id="munk2017090201">
+<text id="munk2020011930">
 <head>
-   <title>Danmark, vort Liv</title>
-   <firstline> </firstline>
-   <notes>
-      <note>Teksten følger Kaj Munk: <i>Sidste Digte</i>, Nordens Friheds Forlag - Frit Nordisk Forlag, København, 1944, p. 14.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+    <title>Min unge elskede kaster op</title>
+    <firstline>Min unge elskede kaster op</firstline>
+    <source pages="51-52"/>
+    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
+Min unge elskede kaster op
+og stønner: »Gaa! hold dig borte fra mig!«
+Det gennemryster den myge Krop,
+Aah, kære du hvor jeg holder af dig.
+Den gule Sved paa din Pande staar,
+og glansløst klister mod den dit Haar,
+hvor ellers Lyset i Bølger gaar
+som af en Glorie fra dig.
+
+Fra første Gang da din Modstand brast,
+fordi du hørte mit Hjerte kalde,
+saa du i tøvende Terningkast
+lod dine Kys mig paa Munden falde,
+og til den Nat, da beslutsom kaad
+du drog mig ned i din Længsels Baad
+og sejled mig gennnem Fryd og Graad
+højt over Stjernerne alle,
+
+har dybt jeg elsked dig, Pige min.
+og stolt dig nævnet min lille Frue,
+for Tales Sølvklang og Tankes Vin,
+for Ansigts Ynde og Legems Lue,
+men aldrig brændte saa hedt min Hu
+af Ømhed for dig som nu, som nu
+da gustenbleget og grimet du
+mig jager ud af din Stue.
+
+Vor Lykkes levende Stjerne - fanget
+i Løn du under dit Bælte bærer.
+Med al din Kval, med din Blu og Angst
+en Evighed i dit Liv du nærer.
+Foruden Kampe og Nederlag
+skal ingen vinde sin Sejers Dag.
+O Krigerinde for Livets Sag!
+usigeligt jeg dig ærer.
+</poetry>
 </body>
-</poem>
+</text>
+
+<text id="munk2020011931">
+<head>
+    <title>Lov er Liv</title>
+    <firstline>I kaster mod mit Ansigt Ord af Syre</firstline>
+    <source pages="52-54"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+I kaster mod mit Ansigt Ord af Syre
+og trækker bange uden om Klør Knægt.
+»Din Tale er i Danmark uden Vægt,
+for du er fjendsk imod vort Folkestyre«.
+Ak, I tar fejl, grotesk, fantastisk fejl,
+nu er det jer, der svigter Folkestyret
+og flygter fra jer selv for fulde Sejl.
+og mig, der har det inderligt bedyret.
+
+Javist, før slog jeg til det med min Plejl
+for Korn at banke ud paa Ladebunden.
+Og skal jeg leve, opgaar atter Stunden
+- maaske - til haardt at hugge til dets Fejl.
+Men hvad vi før i Tiden kunne mene,
+I, Landsmænd! jeg! aah, stryg det med et Smil.
+Hvad nu maa spørges om er dette ene:
+Hvor blev du af den niende April?
+
+Vi kan for Tiden ikke gi' Komedie,
+om Folkestyre eller Diktatur
+er hensigtsmæssigts eller et helt tredje,
+Derom maa vi nu tie som en Mur,
+saalænge Natten slider vore Kræfter,
+og Rovdyr lurer paa en indre Splid,
+hvor de kan naa at hugge sig den Bid,
+de spilte Kløerne saa længe efter.
+
+Vi maa med Kærlighedens Tro og Trods
+- og Sandheds Aand skal gøre den forvoven
+kun holde fast ved det, der holder os,
+og, Landsmænd, det er Loven, Loven. Loven.
+Om god, om daarlig, gem den Sag til siden,
+naar ingen udefra er indenfor.
+Vort eget maa vi ordne selv. For Tiden
+er Loven god; thi den er dansk og vor.
+
+Saa staa da Vagt omkring den danske Mand,
+hold Synet klart og skarpt trods Taagedunster,
+og hæft Forrædernavnet haardt paa den,
+der vil med Loven drive Abekunster.
+Med den i Hjertet kan i Kamp vi gaa
+ej blot for først og sidst at redde Skuden.
+Vi vil - vi vil, at Danmark skal bestaa,
+Men: dø med Ære før end leve uden,
+
+At dø! Vi Kristne tror jo ej paa Døden,
+men paa det dybe Ord fra Nazareth,
+at vil du leve, da er det fornøden
+at sætte Livet ind paa Dødens Bræt.
+Vi tror, at Lov er Liv, og den, der svigter
+sin Livslov, han skal raadne indefra.
+Til Livet for vort Land det dybest sigter,
+naar Loven kompromiløst faar vort Ja.
+
+Men svarer I mig: »Du kan sagtens tale,
+du sidder jo behænde udenfor.
+En Kok paa Hjal har nemt nok for at gale,
+Men Døgnets trælse Mandedont er vor,
+Vi synes: faar vi blot det til at glide,
+har egentlig vi ganske godt det gjort.
+At handle. saa vi fejes brat til Side.
+er halsløs Gerning. Kan det gavne stort?«
+
+At ville Sejr og spare sig for Kampen
+er Gift for Folkets Sjæl og Daarespil.
+O blinde Danmark, tro mig dog, din Stampen
+mod Brodden fører ingen Steder til.
+Her staar du ved Damaskusportens Tilje,
+hvor Skæl fra Øjnene dig falde skal.
+Omvend dig da, giv Sandheden din Vilje!
+da blir din Fremtid stor og højt dit Kald.
+</poetry>
+</body>
+</text>
+
+<text id="munk2020011932" skip-index="true">
+<head>
+    <title>Kaj Munk</title>
+    <source pages="55-60"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<prose>
+  De Revolverskud, der dræbte Kaj Munk, slog en Ildstreg over alt, hvad der kan skille Danskerne i Bedømmelsen af ham. Naar en Mand mister Livet for sin Overbevisnings Skyld, ikke mindst naar han myrdes fejgt af en løgnagtig Overmagt, hører Diskussionen om ham op. De, der staar hans Holdning imod, kan blot bide sig i Læben og gaa tavse bort. Og de, der staar sammen med ham, ønsker ejheller et Ord fra de andre, blot at de holder sig væk. Kaj Munk havde den Gave, at i alt, hvad han gjorde og sagde af Betydning, var der noget, der fik alle Forhold til at forsvinde. Saaledes er det nu ved hans Død mere end nogensinde.
+  Han er den første af Aandslivets ypperlige Mænd i Danmarks Historie, som er blevet myrdet for sin Fædrelandskærligheds Skyld. Alle andre af vor Litteraturs store Patrioter fra Sakse til Henrik Pontoppidan, er døde bort, mætte af Dage i en Alderdommens Nedgangs-Bue. Kaj Munk blev dræbt paa Højden af sin Bane, endnu ung i en nyvunden Modenhed.
+  Hans Ære vilde ikke være mindre, hvis han havde været en simpel Soldat, falden i Frontlinjen. Han er gaaet ind i Rækken af de Faldne, de lydige danske Drenge fra forrige Aarhundreder, de ulydige fra Tysker-Besættelsens Dage, en iblandt mange.  Men for os er Tabet af ham næst efter Tabet af vor Selvstændighed og Rettens Magt i vort Samfund det største Offer vi hidtil har bragt. Han er den ypperste blandt Ligemænd i Fortid og Nutid, enestaaende midt i Fællesskabet.
+  Uræd for Døden, fortrolig med, at Mordere var ude efter ham, har han sørget for, at ogsaa efter hans Drab vilde han være midt iblandt os, digtende, manende, spottende, revsende, tilgivende, saadan som det var hans Kald som Digterpræst i den Guds Tjeneste, der er Dommer og Forsoner, Lovgiver og Livskraft. I de Digte, han her rækker sit Folk, holder han det Guds Bud op for os, der idag er det første i al vor Lov: Elsk Danmark, Guds Gave til os, som Ondskabens Mænd vil rane - de er Fjender af, hvad Guds Ord i vore Hjerter vidner er Sandhed og Ret. Men hvad disse vore Hadere elsker, det er Forræddemes Underdanighed, Skøgernes Ukyskhed, Løgnernes Løgn, de Fejges blakkede, svampede Hjerter. Det er ogsaa alt hvad de kan vinde ved deres Sejr. Og kan de ikke opnaa det, har de som Trumf og Hævn over de rene af Hjertet den Død, som de tror er et Hul af Intethed.
+  Mod dette forkynder Kaj Munk i disse Digte som Dansker og Kristen, at Helvedets Sejr er ingen Sejr, og den Død de Onde kan slaa os med, har ingen Braad. For denne Forkyndelses Skyld blev han myrdet - og den lever videre her. Hele hans patriotiske Digtning bæres af Overbevisningen om, at Livets Opofrelse for Sandhed og Ret er ingen Død. Naar dit Hjerte rummer Hengivenhed for Danmarks aandelige og borgerlige Liv, er dit Hjerte større end dig selv. I dit Liv kan du fordærve det, men sætter du din Død op imod Fordærvelsen, og bliver du dræbt paa dit Nej til Lokkemad og Trusler, saa vinder du for det i dig, der er mere end dig selv, et videre Liv hos Gud og i dit Folk.
+  Derfor synger Kaj Munk, at de kan true, arrestere, ærestjæle, deportere - saadan gror Sandheden. Undergangens Kaar i Kamp mod onde Tyranner er netop Grøde. Og det, der gaar til Grunde i vor nationale Kamp, bliver ikke det Danmark, der stod bag den fromme stolthed, men det der hovedkulds gav sig i de Fremmedes Vold. Kristendommens Historie og al Fædrelandskærligheds Saga vidner om, at Martyrernes Sæd har en Frugtbarhed, som Forfølgernes Grumhed og Mord ikke kuer.
+  Det er er Kærnen i Kaj Munks kristne Patrotisme, Kristendommen er en Tro, der stiller sit Nej mod en lang Række Grundtræk i, hvad Virkeligheden synes at være i Menneskers Øjne. Død er ikke Død - Synd er ikke Synd, men udsonet - Gud er ikke en upersonlig Sum af Naturlove i Verdensmekanismens Gang, men en Far. Og Gud er blevet Menneske - Gud er stærk i den svage - Frygt og Bæven, Angst og stille Fortvivlelse, dødelig Sygdom er altsammen ikke, hvad det er for den rationelle Realitetssans. Kristendommen - for nordiske Øjne tydeligst i den lutherske Protestantisme - er alle Tiders Nej til, hvad den menneskelige Selvtilstrækkelighed mener at formaa, og hvad den forsøger at overtale til med Fornuftens og Rimelighedens og Hensynsfuldhedens og saagar ogsaa Kærlighedens Stemmer, snart ærlige, snart forløjede.
+  Denne spændte Protestholdning fik for Kaj Munk den 9. April en ny Gyldighed, paa en Gang udvidet og ined ganske bestemt Sigte paa de Forhold, Tyskernes Voldtagelse af Danmark skabte. Hvad han havde dramatiseret i »Ordet« og »Smeltediglen«, hvad han havde bekendt og forkyndt i Artikler og Prædikener og Digte, det rykkedes nu sammen og modnedes til at danne en fast Enhed, og Kraften deri fik en ny Retningsbestemmelse imod Besættelsen og Kompromispolitiken.  Den heroiske Vilje til Ret, han havde dyrket i sine Dramers Digtning, hvis Verden da blot var Teatrets Brædder, den blev en praktisk moralsk Opgave i vort nationale Liv. I Forordet til hans Selvbiografi »Foraaret saa sagte kommer«, er der nogle Linjers hvide Tomrum; der skulde have staaet, at nu under Besættelsen var han afskaaret fra at skrive Skuespil og maatte meddele sig paa anden Maade til den store Offentlighed.  Helt slap han ikke Dramaet. Et Stykke Digter gik der vel tabt. Men der blev bevaret ikke blot et Menneske med fastere Tankegang og klarere Holdning - der opstod ogsaa en profetisk Agitator. Hans Kristendom og hans Patrotisme blev koncentriske, baade i Protestholdningen og i hans positive Budskab.
+  Kaj Munk har aldrig givet Udtryk for Tvivl om Guds Eksistens og Kristendommens Sandhed. Det var for ham det givne som Livet selv. Det givne paa samme upaatvivlelige Maade var Danmark hans Fædreland. For ham var Nationalitetstanken knæsat af Kristendommen i Paulus Ord paa Areopagos. Vi skal være nationale Danske fordi vi nationalt ikke kan være andet uden at hengive os til Løgn og Fordærv.  Det svarer til, Kaj Munk troede paa Juleevangeliet, fordi J1an ikke kunde lade være. At være Kristen er at være knyttet til Kristus uden at kunne give Grunde, hvorfor man er det, siger han i en af sine Prædikener. Saaledes er ogsaa det at være Dansk for os hjemmefødte i Danmark et Kald og en Lov. Og hvor glødende og haardtstemplende Doms-Ord han end maatte sige om den Maade, Tyskerne fik Lov at besætte Danmark paa, og vi indtil 29. August levede under deres Besættelse, saa maatte han dog udtale de Ord, fordi han var en kristen Mand, der forkyndte Kristendom.
+  Derfor blev han ogsaa en Nej-Mand overfor al Slags Eftergivenhed i Kompromis:ets Tegn, navnlig naar den fremtraadte i Klogskabens Klæder. Her i sine Digte erklærer han, at i Besættelses-Tidens Regering og Rigsdag og Domstol og Politi er Danmarks Sjæl ikke til Stede. Men den findes i, hvad han trefoldigt udraaber: Loven, Loven, Loven - vor Kristendoms aandelige Lov, der er den eneste ubrudte folkelige Aandsmagt i Danmarks Historie;<note>Historie] Kistorie</note> - vor moralske Lov, der fordømmer de Fremmedes Løgne- og Voldsfremfærd og de griskes og de fejges Underkastelse for Tyrranniet; - vor borgerlige Lov, der har bygget vort Land og betrygget hver Mand den Ret, at uvildige Domstole holder Haanden over de uskyldiges Frihed.  Den retfærdige Gud har givet Folkene deres Bestemmelse og Skæbne; men intet Folk er bestemt til med Løgn, Tyveri og Mord og alskens Voldtægt at være andre Folks Herre, som Tyskerne har givet sig til i Danmark og Norge og overalt, hvor Nazismen ellers er faret frem; og intet Folk har faaet den Skæbne tildelt at skulle opgive sig selv og blive de Ondes Trælle.
+  I disse Digte taler han Præstens Dommer-Ord til os om, at vi alle er medskyldige i, at Midlerne til at løse vor kristelige og nationale Opgave forfaldt, Troen og Moralen fordærvedes og Landets Forsvar smuldrede. Han forkynder Troen paa, at naar alle gode Gavers kærlige Gud afvises af haanlig Vantro, vendes Guds Vrede imod os. Han tror paa Straf over Tyrannerne; de der bombede værgeløse Abessinier, maa nu flygte fra deres knuste Hjem. Og han prædiker Omvendelse for Danmark; vort Land staar foran Damaskusporten! Han venter en ny Tid. og som Salmisten i Israel vil han synge en ny Sang. Det var meget yndigt med Lyriken om Mor og hendes Spinderok og Far og hans Sæk Rug; Aarstidernes Gang med Blomster og Fugleliv og Svømmepiger var visselig en dejlig Islæt, naar Danmarks Lyrikere vævede Vadmel. Men nu er vort Fædreland besudlet, og vor første Opgave er at bede Gud give os nye, rene Hjerter, hvor Styrke kan have til Huse. Fromhed betyder ikke, hvad de fredsnydende halvt med svage, halvt underfundige Sind vilde mene, Eftergivenhed og Sagtmodighed alene. De gamle Gudskæmpere anraabte den fromme, stærke Gud om Troens Kraft til Tapperhed mod Overmagten.
+  Men med Sjælen fuld af denne Bøn synger Kaj Munk ogsaa Digterens Sang om Danmark. Midt i Striden kan han høje sig bevæget ned til den lille Anemone, der skyder op i en umild Jord med Vesterhavsgusen om sin Blomst, en mild, ufortrøden Pige - og en Amazone. En anden Krigerinde kender han ogsaa, sin unge Elskede, engang den pure Yndes Skikkelse, nu svullen og gustenbleg af Kampen for at bringe et nyt Menneskeliv tli Verden. Ære være Poesien om vor yndige Flora, Kornet paa Markerne og himmelblaa Bælter mellem grønne Øer - større er dog Sangen om Menneskefødslernes Lidelser og Blodtab, Dommen over Eva og dog Naaden, der lader Liv og Lykke sejre gennem Kvalerne. Saaledes er ogsaa Danmark nu en fødsels-stridende Mor. Og Kaj Munk maner os til at staa hende bi som Mænd, der arbejder for at give det nye Liv Hus og Føde, Tro og Moral, Dygtighed for en bedre Fremtid. Derfor maler han et nyt Danmarkssyn med Billeder hentet fra den vestjydske Kyst-Natur, Regnens, Blæstens, Havbrændingens Danmark. Jylland, som lider mest under Besættelsen, gør han til Grundvolden for kommende Tiders Danmark.
+  Sin Humor, sin kjøbenhavnske rappe Munterhed har han ikke tabt. Replikken er der, selv om Smilet næsten helt er strammet væk af Ansigtet, og blot en hvas Haan er tilbage.  Han forfrisker den alvorlige Tale med Spot over Forrædderne og vor Ulykkes Profitmagere samt de dvaske Ha'-det-godt'ere.  Og til syvende og sidst kan han saamænd være med til en human Overbærenhed med de Ka'le - lad bare være med at skyde dem, naar deres Beskyttere engang er væk, det meget bedre at give dem Ansættelse som Kontrollører ved Rutsjebanen i Tivoli.
+  Saaledes er den store Tonefylde i Kaj Munks Testament som Præst og Digter. Han har her i sine sidste Vers villet være Forkynder og Sanger for et Kristent pratriotisk Budskab.  Den æstetiske Kender vil finde, at han uden falsk Blufærdighed tager givne Toner op til nyt Spil, Bjørnsonske Vendinger, Johs. V. Jensenske Versemaal, fordi han med Rette vidste, at han ikke behøvede at vare sig for Banaliteten. Uden kunstnerisk Særsind gaar han ind i kendte Rytmer, og han sætter sine manende Tanker i Folkesangens og Børnerimets klare smeldende Formler - »hvad tror du, Guld er ham til Gavn, der slæber paa Forræddernavn« - »to er de Sprog kun vi taler: Tavshed og Dansk.
+  Det stemmer med Kaj Munks hele Færd fra hans Ungdom til hans Manddom, at han døde en Offerdød for Morderes Pistoler, styrtet midt paa sin højt spændte Bane. Geniale Aanders Skæbne fylder deres Liv. Selv om vort Tab af ham er stort, vil hans Folk ikke undvære den Død, han fik. I Besættelsens Aar blev han, hvad »Ordet«, hans første Drama, der rev hele Danmark med sig, bebudede: sit Lands Digter og Prædikant. Og Troen paa, hvad han i »Ordet« har digtet om: at for den kristne er Døden ikke Død, beseglede han, da Danmarks Fjender dræbte ham som Patriot.
+</prose>
+</body>
+</text>
+
+<!--
+<text id="munk2020011933">
+<head>
+    <title>Til Kaj Munk</title>
+    <subtitle>Nattetanker</subtitle>
+    <firstline>Snart løber Dagens Timer bort</firstline>
+    <source pages="61-62"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Snart løber Dagens Timer bort. -
+- Som skræmte Faareflokke flygter.
+Naar Uvejr maler Horisonten sort
+og slukker Himlens stjernetændte Lygter,
+saa skal min Tanke svinde hen i Gru
+for Nattemørket i et kvalfuldt Nu.
+
+Vi er som Børn af Dag og Drøm,
+kun nødigt lærer vi vort Sværd at drage.
+Det tynger vore Hænder mod den Jord,
+som kræver Kampen i de lyse Dage,
+da leende vi lytted til den Røst,
+der raabte: Letsind er den danske Trøst.
+
+Kan Danskerætten svinge Sværd?
+Kan Uffe anden Gang mon vaagne?
+og skue i et Syn, hvad vi var værd,
+da Mænd blev kaldt fra Danske Sogne
+til Vaabenfærd for Moder Danmarks Røgt
+mod vore Fjender uden ussel Frygt. -
+
+Nu blev dit Dagværk endt - for brat;
+Din Esse vannes end af Gløder, -
+men Jernet, som du formede saa let,
+skal give Klang, naar det sin Modstand møder
+- af det saalænge gemte Skræp,
+der hugged bravt mod fremmed Jættestræb.
+
+Du brugte ikke Krudt og Staal,
+Din Pen var dig et bedre Vaaben,
+med stærke danske Ord Du tændte Baal
+hvis Ild blev Flammen over Daaben. -
+I mangen Karl og Piges unge Sind
+Du lukked Danmarks stolte Rige ind.
+
+Du kendte Lunets stille Skæmt
+og fandt det frem af Hverdags Gemmer
+og viste os, hvad der vi havde glemt.
+Vi ofte bedre nu med Tak fornemmer
+de Verdener af Skønhed, som vi fandt
+ved Dine Ord om Dagen jævnt og sandt.
+
+Det store Drama Du har set,
+Det Drama som staar aldrig stille
+om Gudesind i Leret støbt; -
+Det Drama sker, naar Manden bliver liUe, -
+hver Gang Herodes Sværdet lader staa
+og viger for to Barneøjne blaa.
+
+Det ringer fra et Kirkehus
+bag Klit og Hav der vesterude.
+Et Sogn i Sorg fornemmer Dødens Gus.
+- Saa tavse Folk vil dække deres Rude
+og saa i Tak gaa stille frem for Gud,
+som gennem Dig fik sendt Dem Julebud.
+
+
+Gud glæde Din Sjæl i Himmerig - Amen!
+</poetry>
+</body>
+</text>
 -->
+
+<text id="munk2020011934">
+<head>
+    <title>Hjælp mig at følge dig -</title>
+    <firstline>Mester med den tunge Tornekrone</firstline>
+    <source pages="64"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Mester med den tunge Tornekrone,
+jeg kan ikke følge efter dig,
+naar en Præstegaard, en venlig Kone
+og to raske Drenge lokker mig.
+
+Mester med den tunge Tornekrone,
+havde blot du været Jordens Gæst
+for at læge, frelse og forsone,
+var det ingen Sag at være Præst.
+
+Men nu naar den tunge Tornekrone
+og de mørke Blodspor til din Grav,
+og din Tales smertedybe Tone
+vidner, at du ogsaa stiller Krav.
+
+Mester med den tunge Tornekrone,
+følg mig! følg mig! var dit Bud, din Bøn.
+Jo, men se dog fra din Ærestrone,
+hvor din Faders skønne Jord er skøn.
+
+Mester med den tunge Tornekrone,
+»Hvo sit Liv vil bjerge, naar det ej.«
+Hjælp mig da, trods Præstegaard og Kone,
+ja selv Drengene, at følge dig.
+
+<nonum><small><right>Vedersø, den 29. December 1943.</right></small></nonum>
+</poetry>
+</body>
+</text>
 
 </workbody>
 </kalliopework>

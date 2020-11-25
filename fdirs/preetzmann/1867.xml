@@ -17,7 +17,7 @@
 </workhead>
 <workbody>
 
-<prose id="preetzmann2019082201">
+<text id="preetzmann2019082201" skip-index="true">
 <head>
     <title>Indledning</title>
     <source pages="iii-iv" facsimile-pages="23-24" />
@@ -31,14 +31,16 @@
 
 </head>
 <body>
+<prose>
 Hensigten med denne Digtsamling skulde være at give danske Læsere et for Alle tilgængeligt Udvalg af den engelske, derunder indbefattet den amerikanske Literaturs lyriske og lyrisk-episke Frembringelser i ældre og nyere Tid. Den Troskab, hvormed de enkelte Digte ere gjengivne, har ganske vist mange Grader, og det kan derom kun ialmindelighed bemærkes, at Udgiveren overalt har bestræbt sig for at lade Omsorgen for at bevare Originalens poetiske Ejendommelighed gaae Haand i Haand med Hensynet til Modersmaalets Fordringer. Stednavne og andre saadanne Betegnelser, der knytte sig til reent lokale Forhold, ere enten udeladte eller iførte dansk Dragt. Med Hensyn til Rythmus, Strophebygning og deslige, har jeg i de fleste Tilfælde ganske fulgt Originalen; kun i et Par af de byronske Digte ere Rimene udeladte, hvor jeg troede derved at opnaae mere end der tabtes, og Serenaden af samme Forfatter er det eneste, som er heelt omarbeidet. At jeg iøvrigt har benyttet mig af den Fordeel, som en større Rigdom paa qvindelige Riim yder vort Sprog fremfor det engelske, til at lade disse afvexle med de mandlige, og derved har søgt at forhøie den rythmiske Virkning, antager jeg ikke kan misbilliges. I Digtenes Orden har jeg alene stræbt efter Afvexling, da de tilføiede Henviisninger gjøre det let for Læseren at skaffe sig et samlet Overblik over hver enkelt Forfatter. Ved at ledsage Bogen med kortfattede biographiske Meddelelser, samt Portraiter af de fire Forfattere, der baade have leveret de fleste Bidrag, og tillige i Literaturen staae som fremragende Repræsentanter, hver for sin særskilte Nationalitet, haaber jeg at have givet den forøget Interesse.
     De vedføiede Anmærkninger ere fornemlig laante fra »Johnsons Lives of the British Poets«, completed by William Hazlitt, London 1854; "The Poetry and Poets ofBritain« by Daniel Scrymgeour, Edinburgh 1850, og »Biographical Sketches of Eminent British Poets«, Dublin 1851.
 
 <nonum><small><w>Kjøbenhavn,</w> September 1866.</small></nonum>
-</body>
 </prose>
+</body>
+</text>
 
-<poem id="preetzmann2019082202">
+<text id="preetzmann2019082202">
 <head>
     <title><num>1.</num>I Skumringen</title>
     <toctitle><num>1.</num>I Skumringen (H. W. Longfellow)</toctitle>
@@ -52,6 +54,7 @@ Hensigten med denne Digtsamling skulde være at give danske Læsere et for Alle 
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Dagen er endt, alt Mørket
   Fra Nattens Vinger gled,
 Som fra en Ørn i Flugten
@@ -108,10 +111,11 @@ Indpakke sit Telt, som Nomaden,
   Og stjæle sig taust afsted.
 
 <nonum><right><b>Henry W. Longfellow.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082203">
+<text id="preetzmann2019082203">
 <head>
     <title><num>2.</num>Elskov og Tiden</title>
     <toctitle><num>2.</num>Elskov og Tiden (Thomas Moore)</toctitle>
@@ -125,6 +129,7 @@ Indpakke sit Telt, som Nomaden,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Man siger - om det holder Stik,
   Hvem veed - det selsomt klinger -
 At Tid og Elskov ikkun fik
@@ -159,10 +164,11 @@ At Elskov knap af Vinger veed,
     Flyer afsted, hvorhen han vil.
 
 <nonum><right><b>Thomas Moore.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082204">
+<text id="preetzmann2019082204">
 <head>
     <title><num>3.</num>Den lyksalige Enkemand</title>
     <toctitle><num>3.</num>Den lyksalige Enkemand (Robert Burns)</toctitle>
@@ -176,6 +182,7 @@ At Elskov knap af Vinger veed,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Den trettende April jeg tog
   En Skjændegjæst til Mage,
 Hun ved sin Tungefærdighed
@@ -204,10 +211,11 @@ Det er, som hørte hendes Røst
   Jeg hvergang Tordnen ruller.
 
 <nonum><right><b>Robert Burns.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082205">
+<text id="preetzmann2019082205">
 <head>
     <title><num>4.</num>Lisbeth</title>
     <toctitle><num>4.</num>Lisbeth (William Wordsworth)</toctitle>
@@ -221,6 +229,7 @@ Det er, som hørte hendes Røst
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hun boede fjernt fra Verdens Larm,
   Hvor Kilden risler blaa,
 Ei smigret af en Moders Sjæl
@@ -237,10 +246,11 @@ Nu Lisbeth ligger i sin Grav -
   Min Gud! hvad tabte jeg!
 
 <nonum><right><b>Wm. Wordsworth.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082206">
+<text id="preetzmann2019082206">
 <head>
     <title><num>5.</num>Indisk Kjærlighed</title>
     <toctitle><num>5.</num>Indisk Kjærlighed (Barry Cornwall)</toctitle>
@@ -254,6 +264,7 @@ Nu Lisbeth ligger i sin Grav -
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Siig mig ei, at Du mig elsker,
   Jubler end min Sjæl derved:
 Som til Jorden Himlens Stjerner,
@@ -270,10 +281,11 @@ Jeg har høstet nok af Hæder -
   Du har engang elsket mig!
 
 <nonum><right><b>Barry Cornwall.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082207">
+<text id="preetzmann2019082207">
 <head>
     <title><num>6.</num>O, var Du i den kolde Blæst</title>
     <toctitle><num>6.</num>O, var Du i den kolde Blæst (Robert Burns)</toctitle>
@@ -287,6 +299,7 @@ Jeg har høstet nok af Hæder -
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 O! var Du i den kolde Blæst
     Paa Marken der,
 Min Kappe slog jeg om Dig mod
@@ -306,10 +319,11 @@ Min Krones skjønneste Juvel
     Min Dronning var.
 
 <nonum><right><b>Robert Burns.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082208">
+<text id="preetzmann2019082208">
 <head>
     <title><num>7.</num>Slavens Drøm</title>
     <toctitle><num>7.</num>Slavens Drøm (H. W. Longfellow)</toctitle>
@@ -323,6 +337,7 @@ Min Krones skjønneste Juvel
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ved en uhøstet Riismark laae
     Med Seglen i Haanden han;
 Hans Bryst var nøgent, hans filtede Haar
@@ -380,10 +395,11 @@ Der laae hans livløse Legeme slængt,
     En Lænke, som Sjælen brød!
 
 <nonum><right><b>Henry W. Longfellow.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082209">
+<text id="preetzmann2019082209">
 <head>
     <title><num>8.</num>Rask, før Tiden os henter</title>
     <toctitle><num>8.</num>Rask, før Tiden os henter (Thomas Moore)</toctitle>
@@ -395,6 +411,7 @@ Der laae hans livløse Legeme slængt,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Rask, før Tiden os henter,
   Skjænk i til Glassenes Bred -
 Den Knægt alt staaer og venter,
@@ -422,10 +439,11 @@ Den Knægt alt staaer og venter,
   Og vi maae afsted, afsted!
 
 <nonum><right><b>Thomas Moore.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082210">
+<text id="preetzmann2019082210">
 <head>
     <title><num>9.</num>Hvergang dit Blik jeg seer paany</title>
     <toctitle><num>9.</num>Hvergang dit Blik jeg seer paany (Samme)</toctitle>
@@ -439,6 +457,7 @@ Den Knægt alt staaer og venter,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvergang dit Blik jeg seer paany,
   Saa fuldt af Haab og Liv og Lyst,
 Som kunde aldrig nogen Sky
@@ -458,10 +477,11 @@ Men der, hvor Smertens Taare falder,
   Blier Sneen aldrig hvid paany.
 
 <nonum><right><b>Thomas Moore.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082211">
+<text id="preetzmann2019082211">
 <head>
     <title><num>10.</num>Da Amor var Barn</title>
     <toctitle><num>10.</num>Da Amor var Barn (Samme)</toctitle>
@@ -475,6 +495,7 @@ Men der, hvor Smertens Taare falder,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Da Amor var Barn og gik ørkesløs om
   Blandt Blomster fra Morgen til Aften,
 Engang til en Skovplet i Dalen han kom,
@@ -501,10 +522,11 @@ Dog endnu hvert Blad har beholdt en Smag
   Af Taarernes salte Kilde.
 
 <nonum><right><b>Thomas Moore.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082212">
+<text id="preetzmann2019082212">
 <head>
     <title><num>11.</num>Stanzer</title>
     <toctitle><num>11.</num>Ei Verden giver os igjen (Byron)</toctitle>
@@ -518,6 +540,7 @@ Dog endnu hvert Blad har beholdt en Smag
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ei Verden giver os igjen den Glæde, den har spildt,
 Naar Sjælens Morgenrød gaaer ned i dunkle Drifters Nat;
 Det er ei Kindens Rødme blot, der visner bort med den,
@@ -544,10 +567,11 @@ Som Kilder i det øde Sand, saa sød og liflig blev
 Her, midt i Livets visne Ork, den Taareflod for mig.
 
 <nonum><right><b>Byron.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082213">
+<text id="preetzmann2019082213">
 <head>
     <title><num>12.</num>Kjærlighedens Philosophi</title>
     <toctitle><num>12.</num>Kjærlighedens Philosophi (P. B. Shelley)</toctitle>
@@ -561,6 +585,7 @@ Her, midt i Livets visne Ork, den Taareflod for mig.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Med Havets brusende Vande
   Forener sig Skovbækkens Kluk,
 Og evig i Luften blande
@@ -580,10 +605,11 @@ Ak! hvortil dog al den Kyssen,
   Kysser Du ikke mig?
 
 <nonum><right><b>P. B. Shelley</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082214">
+<text id="preetzmann2019082214">
 <head>
     <title><num>13.</num>Høstmanden og Blomsterne</title>
     <toctitle><num>13.</num>Høstmanden og Blomsterne (H. W. Longfellow)</toctitle>
@@ -597,6 +623,7 @@ Ak! hvortil dog al den Kyssen,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Der er en Høstmand, hans Navn er Død,
     Med Leens skarpe Kant
 Meier han Kornets stride Skjæg
@@ -629,14 +656,15 @@ Hun vidste, bun kunde jo finde igjen
 
 Det var uden Vrede den Høstmand kom,
     Hans Hjerte var ikke haardt;
-Som Engel ban saae til den grønne Jord -
+Som Engel han saae til den grønne Jord -
     Og Blomsterne bar han bort.
 
 <nonum><right><b>H. W. Longfellow.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082215">
+<text id="preetzmann2019082215">
 <head>
     <title><num>14.</num>Serenade</title>
     <toctitle><num>14.</num>Serenade (J. J. Callanan)</toctitle>
@@ -650,6 +678,7 @@ Som Engel ban saae til den grønne Jord -
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 See! Luften er stille,
   Smaabølgerne gaae,
 Dugtaarerne trille
@@ -678,10 +707,11 @@ Godnat da, min Elskte,
   Min Mary, Godnat!
 
 <nonum><right><b>J. J. Callanan.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082216">
+<text id="preetzmann2019082216">
 <head>
     <title><num>15.</num>Et Tempel for Venskab</title>
     <toctitle><num>15.</num>Et Tempel for Venskab (Thomas Moore)</toctitle>
@@ -695,6 +725,7 @@ Godnat da, min Elskte,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 ,,Et Tempel for Venskab'' - udbrød Magdalene -
   ,,Jeg bygger i Haven, o! tænk, hvilken Fryd!''
 Og Templet blev bygget, nu savned hun ene
@@ -714,10 +745,11 @@ Og Handlen blev sluttet; sin Favn hun udbreder,
   ,,Tog Elskov, endskjøndt kun om Venskab de bad.''
 
 <nonum><right><b>Thomas Moore.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082217">
+<text id="preetzmann2019082217">
 <head>
     <title><num>16.</num>Mary</title>
     <toctitle><num>16.</num>Mary (Robert Burns)</toctitle>
@@ -731,6 +763,7 @@ Og Handlen blev sluttet; sin Favn hun udbreder,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Himlens Magter, I, som vaage
   Evig over Uskylds Fjed,
 Mens i fjerne Land jeg vandrer,
@@ -750,10 +783,11 @@ Og naar hjemløs jeg omtumles,
   Lad i hendes Barm mig boe!
 
 <nonum><right><b>Robert Burns.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082218">
+<text id="preetzmann2019082218">
 <head>
     <title><num>17.</num>Jeg erindrer, jeg erindrer</title>
     <toctitle><num>17.</num>Jeg erindrer, jeg erindrer (Thomas Hood)</toctitle>
@@ -767,6 +801,7 @@ Og naar hjemløs jeg omtumles,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg erindrer, jeg erindrer
   Mit stille Barndomshjem,
 Hvor Solen gjennem Ruden mildt
@@ -804,10 +839,11 @@ Langt nærmere jeg Himlen var
   Dengang, end jeg er nu.
 
 <nonum><right><b>Thomas Hood.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082219">
+<text id="preetzmann2019082219">
 <head>
     <title><num>18.</num>Naar Bægerne foran os funkle</title>
     <toctitle><num>18.</num>Naar Bægerne foran os funkle (Thomas Moore)</toctitle>
@@ -821,6 +857,7 @@ Langt nærmere jeg Himlen var
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Naar Bægerne foran os funkle,
   I en Kreds af de trofaste Faa,
 Gjennem Jordlivets Skygger saa dunkle
@@ -840,10 +877,11 @@ Voxer Druen kun frodig bag Hækken,
   Kaster Elskov paa Bølgen sit Skjær.
 
 <nonum><right><b>Thomas Moore.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082220">
+<text id="preetzmann2019082220">
 <head>
     <title><num>19.</num>Hyrdepigens Sang</title>
     <toctitle><num>19.</num>Hyrdepigens Sang (R. M. Milnes)</toctitle>
@@ -857,6 +895,7 @@ Voxer Druen kun frodig bag Hækken,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg gik langs Møllebækken
   I Dalen dyb og trang,
 Men Bækkens Løb var standset
@@ -894,10 +933,11 @@ Kun vore Hjerters Banken
   Vi hørte, Bryst mod Bryst.
 
 <nonum><right><b>R. M. Milnes.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082221">
+<text id="preetzmann2019082221">
 <head>
     <title><num>20.</num>En Psalme om Livet</title>
     <toctitle><num>20.</num>En Psalme om Livet (H. W. Longfellow)</toctitle>
@@ -911,6 +951,7 @@ Kun vore Hjerters Banken
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Lær mig ei i mørke Stunder,
   Livet er en Drøm ved Dag:
 Død er Sjælen, naar den blunder,
@@ -957,10 +998,11 @@ Lære virke, lære vente,
   Stille nærme os vort Maal!
 
 <nonum><right><b>H. W. Longfellow.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082222">
+<text id="preetzmann2019082222">
 <head>
     <title><num>21.</num>O, var jeg en Sommerfugl</title>
     <toctitle><num>21.</num>O, var jeg en Sommerfugl (Th. H. Bayley)</toctitle>
@@ -974,6 +1016,7 @@ Lære virke, lære vente,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 O! var jeg en Sommerfugl, født under Løvet,
   Hvor Lilien sig bader i Morgenens Dug,
 Blandt Blomster bestandig jeg sværmed og røved
@@ -1002,10 +1045,11 @@ En Sommerfugl leve jeg gad som en Sværmer,
   Og slumre med Blomsten og Skjønheden ind.
 
 <nonum><right><b>Th. H. Bayley.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082223">
+<text id="preetzmann2019082223">
 <head>
     <title><num>22.</num>O, var jeg end en sorgløs Dreng</title>
     <toctitle><num>22.</num>O, var jeg end en sorgløs Dreng (Byron)</toctitle>
@@ -1019,6 +1063,7 @@ En Sommerfugl leve jeg gad som en Sværmer,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 O! var jeg end en sorgløs Dreng
 Hist i mit Høilands Egn,
 Jeg tumled mig paa Bølgens Seng
@@ -1083,10 +1128,11 @@ Jeg skulde kløve Skyens Kam
 Og ile til mit Hjem!
 
 <nonum><right><b>Byron.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082224">
+<text id="preetzmann2019082224">
 <head>
     <title><num>23.</num>Sang</title>
     <toctitle><num>23.</num>Sang (W. C. Bryant)</toctitle>
@@ -1100,6 +1146,7 @@ Og ile til mit Hjem!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ønsker Du at vide, naar
   Bedst dit Suk sig lønner,
 Naar den Skjønne mindst modstaaer
@@ -1146,10 +1193,11 @@ Elskovs Hvisken, dobbelt sød,
   Vinder snarest Seier.
 
 <nonum><right><b>W. C. Bryant.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082225">
+<text id="preetzmann2019082225">
 <head>
     <title><num>24.</num>Amor og Fornuften</title>
     <toctitle><num>24.</num>Amor og Fornuften (Thomas Moore)</toctitle>
@@ -1163,6 +1211,7 @@ Elskovs Hvisken, dobbelt sød,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det var engang i faure Vaar,
   Da Hjertet fanger Blomsterduften,
 Da mødtes - selsomt tidt det gaaer -
@@ -1229,10 +1278,11 @@ Thi, ak! til Iis ham Blodet frøs -
   Forbi det var med Amors Drømme!
 
 <nonum><right><b>Thomas Moore.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082226">
+<text id="preetzmann2019082226">
 <head>
     <title><num>25.</num>Om jeg elske vil Dig?</title>
     <toctitle><num>25.</num>Om jeg elske vil Dig? (Samme)</toctitle>
@@ -1246,6 +1296,7 @@ Thi, ak! til Iis ham Blodet frøs -
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Om jeg elske vil Dig?
 Ja! ved Stjernens Øie hist,
 Som i Taarer til Dig
@@ -1267,10 +1318,11 @@ Men bortflye, Elskte, fra Dig -
 Nei, i Døden kun!
 
 <nonum><right><b>Thomas Moore.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082227">
+<text id="preetzmann2019082227">
 <head>
     <title><num>26.</num>Vagtskuddet</title>
     <toctitle><num>26.</num>Vagtskuddet (Samme)</toctitle>
@@ -1284,6 +1336,7 @@ Nei, i Døden kun!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 O! husker Du den Solnedgang
     Hiin sidste Aftenstund,
 Hvordan det fjerne Vagtskud klang
@@ -1303,10 +1356,11 @@ Med Graad fra Verdens Jammerdal
     Jeg ønsker døe, som den.
 
 <nonum><right><b>Thomas Moore.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082228">
+<text id="preetzmann2019082228">
 <head>
     <title><num>27.</num>Til Fanny</title>
     <toctitle><num>27.</num>Til Fanny (Samme)</toctitle>
@@ -1320,6 +1374,7 @@ Med Graad fra Verdens Jammerdal
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 ,,Hun er smuk, det er sandt, dog dit Hjerte bevar,
   ,,Hun er snild, men lad ikke Dig fange!''
 Saa præked Fornuften, men den er en Nar,
@@ -1335,10 +1390,11 @@ Ja, sødeste Fanny! det maa Du tilstaae,
   Den har bedre Forstand end Fornuften.
 
 <nonum><right><b>Thomas Moore.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082229">
+<text id="preetzmann2019082229">
 <head>
     <title><num>28.</num>Soldatens Jordefærd</title>
     <toctitle><num>28.</num>Soldatens Jordefærd (Charles Wolfe)</toctitle>
@@ -1352,6 +1408,7 @@ Ja, sødeste Fanny! det maa Du tilstaae,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ingen Tromme blev hørt, ei Basunernes Stød,
   Da med Liget til Skandsen vi ilte,
 Og til sidste Farvel ingen Salve der lød
@@ -1393,10 +1450,11 @@ Ingen Steen blev ham reist, ingen Gravskrift han fik
   Med hans Hæder vi lod ham alene!
 
 <nonum><right><b>Charles Wolfe.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082230">
+<text id="preetzmann2019082230">
 <head>
     <title><num>29.</num>Det var saa tyst</title>
     <toctitle><num>29.</num>Det var saa tyst (J. J. Callanan)</toctitle>
@@ -1410,6 +1468,7 @@ Ingen Steen blev ham reist, ingen Gravskrift han fik
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det var saa tyst, fra Birk og Lind
   Kun Duggens Taare trilled,
 Og Vinden sov paa ITavet ind,
@@ -1429,10 +1488,11 @@ Da raabte jeg: ,,O, tal! fortæl
   Du veed, hvor kjær Du er mig!''''
 
 <nonum><right><b>J. J. Callanan.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082231">
+<text id="preetzmann2019082231">
 <head>
     <title><num>30.</num>O, Nanna! vil Du følge mig?</title>
     <toctitle><num>30.</num>O, Nanna! vil Du følge mig? (Thomas Percy)</toctitle>
@@ -1446,6 +1506,7 @@ Da raabte jeg: ,,O, tal! fortæl
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 O, Nanna! vil Du følge mig
   Og langt fra Verden hos mig hygge?
 Kan Dalens Stilhed fængsle Dig,
@@ -1483,10 +1544,11 @@ Og glemme, Du var, ung og glad,
   Den Smukkeste iblandt de Smukke?
 
 <nonum><right><b>Thomas Percy.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082232">
+<text id="preetzmann2019082232">
 <head>
     <title><num>31.</num>Brug ei de Øine saa!</title>
     <toctitle><num>31.</num>Brug ei de Øine saa! (Ben Jonson)</toctitle>
@@ -1500,6 +1562,7 @@ Og glemme, Du var, ung og glad,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Brug ei de Øine saa! - jeg tør -
   Jeg taaler ei at see dem -
 Slaa dem dog ikke ned! nei før
@@ -1516,10 +1579,11 @@ Rul ei dem rundt i Vankelmod,
   Mens jeg gaaer op i Lue!
 
 <nonum><right><b>Ben Jonson.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082233">
+<text id="preetzmann2019082233">
 <head>
     <title><num>32.</num>Hun bar en Krands af Roser</title>
     <toctitle><num>32.</num>Hun bar en Krands af Roser (Th. H. Bayley)</toctitle>
@@ -1533,6 +1597,7 @@ Rul ei dem rundt i Vankelmod,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hun bar en Krands af Roser,
   Da først jeg hende saae,
 Om Kindens Smilehuller
@@ -1573,10 +1638,11 @@ I al sin Ungdomsfylde,
 Med Blomster i sit Haar.
 
 <nonum><right><b>Th. H. Bayley.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082234">
+<text id="preetzmann2019082234">
 <head>
     <title><num>33.</num>Kjærligheds lette Sommersky</title>
     <toctitle><num>33.</num>Kjærligheds lette Sommersky (Thomas Moore)</toctitle>
@@ -1590,6 +1656,7 @@ Med Blomster i sit Haar.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Sorger og Smerte skal flye, hvor vi bygge,
   Ungdom vil visne, men Elskov bestaae,
 Mørkne vor Vei skal alene den Skygge,
@@ -1617,10 +1684,11 @@ Let paa din Vei kun skal falde den Skygge,
   Kjærligheds Sommersky kaster derpaa.
 
 <nonum><right><b>Thomas Moore.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082235">
+<text id="preetzmann2019082235">
 <head>
     <title><num>34.</num>Min Sjæl er mørk</title>
     <toctitle><num>34.</num>Min Sjæl er mørk (Byron)</toctitle>
@@ -1634,6 +1702,7 @@ Let paa din Vei kun skal falde den Skygge,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Min Sjæl er mørk - nu, Sanger! flux
 Du Harpens Streng maa røre,
 Slyng saa i milde Bølgeslag
@@ -1653,10 +1722,11 @@ Og briste maa det nu, kan Sang
 Ei lulle det i Drømme.
 
 <nonum><right><b>Byron.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082236">
+<text id="preetzmann2019082236">
 <head>
     <title><num>35.</num>Salget af Elskovsguder</title>
     <toctitle><num>35.</num>Salget af Elskovsguder (Thomas Moore)</toctitle>
@@ -1670,6 +1740,7 @@ Ei lulle det i Drømme.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I Paphiske Lunde jeg drømte jeg gik,
   En Jagt jeg i Maanskin forsøgte,
 En Flok Amoriner i Garnet jeg fik,
@@ -1731,10 +1802,11 @@ Det vilde ha’e voldt Jer Gammen,
 Og siden opdrage ham sammen.
 
 <nonum><right><b>Thomas Moore.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082237">
+<text id="preetzmann2019082237">
 <head>
     <title><num>36.</num>Bryd! bryd! bryd!</title>
     <toctitle><num>36.</num>Bryd! bryd! bryd! (Alfred Tennyson)</toctitle>
@@ -1748,6 +1820,7 @@ Og siden opdrage ham sammen.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Bryd! bryd! bryd!
   Du Bølge, paa stenede Kyst!
 O! kunde min Tunge blot tolke
@@ -1769,10 +1842,11 @@ Men den milde Lyst fra en Tid, som forgik,
   Faaer jeg aldrig tilbage meer.
 
 <nonum><right><b>Alfred Tennyson.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082238">
+<text id="preetzmann2019082238">
 <head>
     <title><num>37.</num>En fugtig Bov, et Bølgeslag</title>
     <firstline>En fugtig Bov, et Bølgeslag</firstline>
@@ -1783,6 +1857,7 @@ Men den milde Lyst fra en Tid, som forgik,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 En fugtig Bov, et Bølgeslag,
   Et kraftigt Medbørskast,
 Der rasler i det hvide Seil
@@ -1811,10 +1886,11 @@ En bulet Eeg er vort Palads,
   Vor Arvepart vort Flag.
 
 <nonum><right><b>Allan Cunningham.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082239">
+<text id="preetzmann2019082239">
 <head>
     <title><num>38.</num>Den sidste Rose</title>
     <toctitle><num>38.</num>Den sidste Rose (Thomas Moore)</toctitle>
@@ -1828,6 +1904,7 @@ En bulet Eeg er vort Palads,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Seer Du Rosen, den sidste,
   Saa ene forladt!
 Alt dens yndige Søstre
@@ -1856,10 +1933,11 @@ Hvo vilde beboe meer
   En Verden saa bleg?
 
 <nonum><right><b>Thomas Moore.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082240">
+<text id="preetzmann2019082240">
 <head>
     <title><num>39.</num>Engletrin</title>
     <toctitle><num>39.</num>Engletrin (H. W. Longfellow)</toctitle>
@@ -1873,6 +1951,7 @@ Hvo vilde beboe meer
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Naar den lange Dag er omme,
   Og naar Nattens dybe Røst
 Vækker Sjælen, som har slumret,
@@ -1924,10 +2003,11 @@ Naar jeg mindes disse Kjære,
   Deres Liv og deres Død.
 
 <nonum><right><b>H. W. Longfellow.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082241">
+<text id="preetzmann2019082241">
 <head>
     <title><num>40.</num>Til Augusta</title>
     <toctitle><num>40.</num>Til Augusta (Byron)</toctitle>
@@ -1941,6 +2021,7 @@ Naar jeg mindes disse Kjære,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Skjøndt min Himmel forladt var af Solen,
 Og min Lykke som Stjernen gik ned,
 Ei dit Hjerte dog, ak, som saa Mange,
@@ -1996,10 +2077,11 @@ I min Ørken en Fugl slaaer sin Trille -
 I mit Øre den hvisker om Dig.
 
 <nonum><right><b>Byron.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082242">
+<text id="preetzmann2019082242">
 <head>
     <title><num>41.</num>Til Augusta</title>
     <toctitle><num>41.</num>Til Samme (Samme)</toctitle>
@@ -2013,6 +2095,7 @@ I mit Øre den hvisker om Dig.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Da Alt omkring mig blev saa mørkt,
 Og Aandens Lys var slukt,
 Da Haabet blev en Lygtemand
@@ -2069,10 +2152,11 @@ I al min Armod er jeg rig,
 Naar jeg beholder Dig.
 
 <nonum><right><b>Byron.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082243">
+<text id="preetzmann2019082243">
 <head>
     <title><num>42.</num>Krandsen</title>
     <toctitle><num>42.</num>Krandsen (Robert Burns)</toctitle>
@@ -2086,6 +2170,7 @@ Naar jeg beholder Dig.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Sig Elskov Veien baner
   Saa skjult for Dagens Lys,
 Den lister sig til Hjertet,
@@ -2132,10 +2217,11 @@ For Krandsen vil jeg binde
   Til min Hjertenskjær.
 
 <nonum><right><b>Robert Burns.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082244">
+<text id="preetzmann2019082244">
 <head>
     <title><num>43.</num>Den Landflygtige</title>
     <toctitle><num>43.</num>Den Landflygtige (Thomas Hood)</toctitle>
@@ -2149,6 +2235,7 @@ For Krandsen vil jeg binde
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Til Sommer vil Svalen
   Flye hen over Sund,
 Og Vinden besøge
@@ -2177,10 +2264,11 @@ I Himlen først mødes
   Vi, Elskte, paany!
 
 <nonum><right><b>Thomas Hood.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082245">
+<text id="preetzmann2019082245">
 <head>
     <title><num>44.</num>Hendes Slummer være sød</title>
     <toctitle><num>44.</num>Hendes Slummer være sød (Barry Cornwall)</toctitle>
@@ -2194,6 +2282,7 @@ I Himlen først mødes
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hendes Slummer være sød,
   Milde Død!
 Luk det trætte Øie til,
@@ -2214,10 +2303,11 @@ Opad steg dog hendes Suk;
 Op mod Evigheden!
 
 <nonum><right><b>Barry Cornwall.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082246">
+<text id="preetzmann2019082246">
 <head>
     <title><num>45.</num>Serenade</title>
     <toctitle><num>45.</num>Serenade (Byron)</toctitle>
@@ -2231,6 +2321,7 @@ Op mod Evigheden!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Af Maanestraaler Natten væver
   Et Sølverflor om Dybets Bræm,
 Og Havets Bryst sig sagte bæver,
@@ -2250,10 +2341,11 @@ Og mens paa Dig jeg henrykt tænker,
   Sig lægger Hjertets Storm og Flod
 Tilbedende min Sjæl sig sænker
   I taus Beskuen for din Fod.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082247">
+<text id="preetzmann2019082247">
 <head>
     <title><num>46.</num>Gaa kun, Glands at vinde</title>
     <toctitle><num>46.</num>Gaa kun, Glands at vinde (Thomas Moore)</toctitle>
@@ -2267,6 +2359,7 @@ Tilbedende min Sjæl sig sænker
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Gaa kun, Glands at vinde,
 Men paa Ærens Tinde,
   Glem blot ikke mig!
@@ -2310,10 +2403,11 @@ Sange, jeg har sungen -
 Tænk saa ømt paa mig!
 
 <nonum><right><b>Thomas Moore.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082248">
+<text id="preetzmann2019082248">
 <head>
     <title><num>47.</num>Til Erne</title>
     <toctitle><num>47.</num>Til Erne (Samme)</toctitle>
@@ -2327,6 +2421,7 @@ Tænk saa ømt paa mig!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Groer Sukket til din Læbe fast,
   Skjøndt det fik Vinger for at svæve,
 Gav Alt Du for et Øiekast,
@@ -2355,10 +2450,11 @@ Er det ei starblind Kjærlighed,
   Ja, saa er vi To Viismænd, Erne!
 
 <nonum><right><b>Thomas Moore.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082249">
+<text id="preetzmann2019082249">
 <head>
     <title><num>48.</num>Vort Liv er kun et Gjøglespil</title>
     <toctitle><num>48.</num>Vort Liv er kun et Gjøglespil (Samme)</toctitle>
@@ -2372,6 +2468,7 @@ Er det ei starblind Kjærlighed,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Vort Liv er kun et Gjøglespil,
   En Tidsfordriv for Vrimlen,
 Og Smertens Taare, Glædens Smil
@@ -2391,10 +2488,11 @@ Geniets Glimt og Aandens Lyn
 Der er kun Fred i Himlen!
 
 <nonum><right><b>Thomas Moore.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082250">
+<text id="preetzmann2019082250">
 <head>
     <title><num>49.</num>Il fremad med dit Bytte</title>
     <toctitle><num>49.</num>Il fremad med dit Bytte (Samme)</toctitle>
@@ -2408,6 +2506,7 @@ Der er kun Fred i Himlen!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Il fremad med dit Bytte,
   Du Bæk med sølvhvid Glands!
 Forbi Helenes Hytte -
@@ -2427,10 +2526,11 @@ Henslængt paa Livets øde Kyst,
   Skal visne bort som den!
 
 <nonum><right><b>Thomas Moore.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082251">
+<text id="preetzmann2019082251">
 <head>
     <title><num>50.</num>Vandrerne</title>
     <toctitle><num>50.</num>Vandrerne (P. B. Shelley)</toctitle>
@@ -2444,6 +2544,7 @@ Henslængt paa Livets øde Kyst,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Klare Stjerne! Du som foer,
 Svøbt i Luftens lette Flor
 Gjennem Natten, siig mig, hvor
@@ -2460,10 +2561,11 @@ Har Du ingen Helligdom
     I de dybe Dale?
 
 <nonum><right><b>P. B. Shelley.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082252">
+<text id="preetzmann2019082252">
 <head>
     <title><num>51.</num>Excelsior</title>
     <toctitle><num>51.</num>Excelsior (H. W. Longfellow)</toctitle>
@@ -2477,6 +2579,7 @@ Har Du ingen Helligdom
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Alt Natten dybe Skygger slog,
 Da gjennem Alpeflækken drog
 En Ungersvend; heel selsom var
@@ -2532,10 +2635,11 @@ Faldt som et Stjerneskud i Høst:
     Excelsior!
 
 <nonum><right><b>H. W. Longfellow.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082253">
+<text id="preetzmann2019082253">
 <head>
     <title><num>52.</num>Soldatens Taare</title>
     <toctitle><num>52.</num>Soldatens Taare (Th. H. Bayley)</toctitle>
@@ -2549,6 +2653,7 @@ Faldt som et Stjerneskud i Høst:
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Paa Høien end engang
   Til Afsked han sig vendte,
 Og Hytten hist i Dalens Skjød
@@ -2577,10 +2682,11 @@ Pas paa! den Haand, som djærvest slaaer,
   Har visket bort en Taare.
 
 <nonum><right><b>Th. H. Bayley.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082254">
+<text id="preetzmann2019082254">
 <head>
     <title><num>53.</num>Sukkenes Bro</title>
     <toctitle><num>53.</num>Sukkenes Bro (Thomas Hood)</toctitle>
@@ -2594,6 +2700,7 @@ Pas paa! den Haand, som djærvest slaaer,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Atter en Stakkel har
 Her fundet Fred,
 Døden sin Fakkel har
@@ -2721,10 +2828,11 @@ Ham, som maa raade for
 Liv og for Død!
 
 <nonum><right><b>Thomas Hood.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082255">
+<text id="preetzmann2019082255">
 <head>
     <title><num>54.</num>Ak, nei! hun nævnes aldrig meer</title>
     <toctitle><num>54.</num>Ak, nei! hun nævnes aldrig meer (Th. H. Bayley)</toctitle>
@@ -2738,6 +2846,7 @@ Liv og for Død!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ak, nei! hun nævnes aldrig meer,
   Glemt er selv Navnets Klang,
 Bag mine Læber gjemt det Ord,
@@ -2766,10 +2875,11 @@ Men elsker hun som jeg, da vil
   Hun aldrig faae den slukt.
 
 <nonum><right><b>Th. H. Bayley.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082256">
+<text id="preetzmann2019082256">
 <head>
     <title><num>55.</num>Farvel</title>
     <toctitle><num>55.</num>Farvel (Byron)</toctitle>
@@ -2783,6 +2893,7 @@ Men elsker hun som jeg, da vil
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Farvel! Farvel! af Hjemmets Kyst
   Jeg seer kun end en Flig,
 Til Natte vindens Klagerøst
@@ -2874,10 +2985,11 @@ Velkommen da, du vilde Ork! -
   Mit Fødeland - Godnat!
 
 <nonum><right><b>Byron.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082257">
+<text id="preetzmann2019082257">
 <head>
     <title><num>56.</num>Den fattige, men brave Soldat</title>
     <toctitle><num>56.</num>Den fattige, men brave Soldat (Robert Burns)</toctitle>
@@ -2891,6 +3003,7 @@ Velkommen da, du vilde Ork! -
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Da Krigens Storm sig havde lagt,
   Og Fred var vendt tilbage
 Med mange faderløse Smaae
@@ -2964,10 +3077,11 @@ Husk paa, i Farens Stund sit Land
   Han laaner Arm og Klinge.
 
 <nonum><right><b>Robert Burns.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082258">
+<text id="preetzmann2019082258">
 <head>
     <title><num>57.</num>Til en Muus</title>
     <toctitle><num>57.</num>Til en Muus (Samme)</toctitle>
@@ -2982,6 +3096,7 @@ Husk paa, i Farens Stund sit Land
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Du lille Kræ, saa vims og snu,
 Hvi banker saa dit Hjerte nu?
 Ei har Du nødig strax at sætte
@@ -3039,10 +3154,11 @@ Og Taagen over Fremtids Dage
         Det Værste spaaer.
 
 <nonum><right><b>Robert Burns.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082259">
+<text id="preetzmann2019082259">
 <head>
     <title><num>58.</num>Tag Jer iagt for Anna</title>
     <toctitle><num>58.</num>Tag Jer iagt for Anna (Samme)</toctitle>
@@ -3056,6 +3172,7 @@ Og Taagen over Fremtids Dage
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I Knøse! tag, det raader jeg,
   For Anna Jer iagt!
 Hun har - omkring sin Mund et Smiil,
@@ -3075,10 +3192,11 @@ I Knøse! tag, det raader jeg,
   For Anna Jer iagt!
 
 <nonum><right><b>Robert Burns.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082260">
+<text id="preetzmann2019082260">
 <head>
     <title><num>59.</num>Naar Aftnens Skjær sig sænker</title>
     <toctitle><num>59.</num>Naar Aftnens Skjær sig sænker (Thomas Moore)</toctitle>
@@ -3092,6 +3210,7 @@ I Knøse! tag, det raader jeg,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Naar Aftnens Skjær sig sænker blidt,
   Og Søen hviler rolig,
 Jeg seer paa Stjernen, som saa tidt
@@ -3111,10 +3230,11 @@ Skal see den Graad, vi fælded her,
   Slaae om til Smiil i Himlen.
 
 <nonum><right><b>Thomas Moore.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082261">
+<text id="preetzmann2019082261">
 <head>
     <title><num>60.</num>Hun sang om Elskov</title>
     <toctitle><num>60.</num>Hun sang om Elskov (Samme)</toctitle>
@@ -3128,6 +3248,7 @@ Skal see den Graad, vi fælded her,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hun sang om Elskov, Aftenrøde
   Som Roser faldt paa Harpens Snor,
 Som vilde Flammen gjennemgløde
@@ -3156,10 +3277,11 @@ Skal som en Blomst Du visne bort,
   Skal som et Solglimt Du forsvinde!
 
 <nonum><right><b>Thomas Moore.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082262">
+<text id="preetzmann2019082262">
 <head>
     <title><num>61.</num>Skovbækken</title>
     <toctitle><num>61.</num>Skovbækken (Robert Burns)</toctitle>
@@ -3173,6 +3295,7 @@ Skal som en Blomst Du visne bort,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Flyd sagtelig, Skovbæk, blandt Buskenes Riis!
 Flyd mildt, mens jeg synger en Sang til din Priis!
 Min Mary Du lulled i Blund ved din Strøm,
@@ -3204,10 +3327,11 @@ Min Mary Du lulied i Blund ved din Strøm,
 Flyd sagte, forstyr ikke, Bæk, hendes Drøm!
 
 <nonum><right><b>Robert Burns.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082263">
+<text id="preetzmann2019082263">
 <head>
     <title><num>62.</num>Vaage maa jeg, ak!</title>
     <toctitle><num>62.</num>Vaage maa jeg, ak! (Samme)</toctitle>
@@ -3221,6 +3345,7 @@ Flyd sagte, forstyr ikke, Bæk, hendes Drøm!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Somren er saa smuk,
   Blomster frem sig vinde,
 Kilden risler klar -
@@ -3245,10 +3370,11 @@ Graad i Øiet staaer,
       Kun Dig min Tanke rummer.
 
 <nonum><right><b>Robert Burns.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082264">
+<text id="preetzmann2019082264">
 <head>
     <title><num>63.</num>Stjernelys</title>
     <toctitle><num>63.</num>Stjernelys (H. W. Longfellow)</toctitle>
@@ -3262,6 +3388,7 @@ Graad i Øiet staaer,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Sig Natten nærmer Skridt for Skridt,
     Og see! det klare Ny
 Saa taust og tyst, saa sagtelig
@@ -3308,10 +3435,11 @@ Hvad det er for en herlig Ting,
     I Modgang at staae fast.
 
 <nonum><right><b>H. W. Longfellow.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082265">
+<text id="preetzmann2019082265">
 <head>
     <title><num>64.</num>Da jeg sværmed i Høilandet</title>
     <toctitle><num>64.</num>Da jeg sværmed i Høilandet (Byron)</toctitle>
@@ -3325,6 +3453,7 @@ Hvad det er for en herlig Ting,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Da jeg sværmed i Høilandets Egne paa Heden
   Og klavred til Toppen paa Bjerge af Snee,
 At stirre paa Fossen, der buldred forneden,
@@ -3380,10 +3509,11 @@ Ingen Arne jeg har, naar mig Træthed vil bøie -
   Ak, Mary! hvad Hjem kunde havt jeg med Dig!
 
 <nonum><right><b>Byron.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082266">
+<text id="preetzmann2019082266">
 <head>
     <title><num>65.</num>Tidt i den stille Nat</title>
     <toctitle><num>65.</num>Tidt i den stille Nat (Thomas Moore)</toctitle>
@@ -3397,6 +3527,7 @@ Ingen Arne jeg har, naar mig Træthed vil bøie -
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Tidt i den stille Nat,
 Før Søvnens Arm mig lænker,
 Erindrings Straale brat
@@ -3428,10 +3559,11 @@ Erindrings Straale mat
 Sig over mig nedsænker.
 
 <nonum><right><b>Thomas Moore.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082267">
+<text id="preetzmann2019082267">
 <head>
     <title><num>66.</num>Sang</title>
     <toctitle><num>66.</num>Sang (Thomas Hood)</toctitle>
@@ -3445,6 +3577,7 @@ Sig over mig nedsænker.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvor Vandringsmanden styrer hen,
     Ham Stjernerne maa følge,
 Alvorlig Maanen gaaer sin Gang,
@@ -3464,10 +3597,11 @@ Det trænger ei til Dagens Lys,
     Og trodser Nattens Skygger!
 
 <nonum><right><b>Thomas Hood.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082268">
+<text id="preetzmann2019082268">
 <head>
     <title><num>67.</num>Ved Afskeden</title>
     <toctitle><num>67.</num>Ved Afskeden (Byron)</toctitle>
@@ -3481,6 +3615,7 @@ Det trænger ei til Dagens Lys,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det Afskedskys, mig gav din Mund,
     Skal gjemme tro din Ven,
 Indtil Du i en salig Stund
@@ -3507,10 +3642,11 @@ Skal Ingen dog min Smerte see
     I Taarer paa min Kind.
 
 <nonum><right><b>Byron.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082269">
+<text id="preetzmann2019082269">
 <head>
     <title><num>68.</num>Stjernen</title>
     <toctitle><num>68.</num>Stjernen (Samme)</toctitle>
@@ -3524,6 +3660,7 @@ Skal Ingen dog min Smerte see
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Søvnløses Sol, Du melankolske Stjerne!
 Hvis taarefyldte Blikke fra det Fjerne
 Med Skjælven over Nattens Bue gaae: -
@@ -3534,10 +3671,11 @@ En Sorgens Lampe staaer Du, bleg og gold,
 Skjøndt fjern, saa klar, skjøndt blank - dog, ak! saa kold.
 
 <nonum><right><b>Byron.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082270">
+<text id="preetzmann2019082270">
 <head>
     <title><num>69.</num>Hist over Bølge</title>
     <toctitle><num>69.</num>Hist over Bølge (Thomas Moore)</toctitle>
@@ -3551,6 +3689,7 @@ Skjøndt fjern, saa klar, skjøndt blank - dog, ak! saa kold.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
         Hist over Bølge,
         Glut! Du mig følge,
   Regnen med Solskin vexler ihast;
@@ -3582,10 +3721,11 @@ Men rundt om os hvælver sig Himlen, den høie.
   Staaer i de rullende Tider saa fast!
 
 <nonum><right><b>Thomas Moore.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082271">
+<text id="preetzmann2019082271">
 <head>
     <title><num>70.</num>Stormvinden Havet reiser</title>
     <toctitle><num>70.</num>Stormvinden Havet reiser (John Gay)</toctitle>
@@ -3599,6 +3739,7 @@ Men rundt om os hvælver sig Himlen, den høie.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Stormvinden Havet reiser,
   Skumhvide Bølger gaae -
 Lænet imod en Klippe
@@ -3645,10 +3786,11 @@ Sit Hoved som en Lilie
   Hun bøied - og var død.
 
 <nonum><right><b>John Gay.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082272">
+<text id="preetzmann2019082272">
 <head>
     <title><num>71.</num>Jørgen</title>
     <toctitle><num>71.</num>Jørgen (Thomas Campbell)</toctitle>
@@ -3662,6 +3804,7 @@ Sit Hoved som en Lilie
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Den skjæbnesvangre Stund er nær,
   Som skiller grumt os ad:
 Jeg hører Trommens dumpe Lyd,
@@ -3713,10 +3856,11 @@ Imens Du smuldrer der til Støv,
   Sukker jeg Hjertet bort.
 
 <nonum><right><b>Thomas Campbell.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082273">
+<text id="preetzmann2019082273">
 <head>
     <title><num>72.</num>Vi skiltes i Taushed</title>
     <toctitle><num>72.</num>Vi skiltes i Taushed (Ch. F. Hoffman)</toctitle>
@@ -3730,6 +3874,7 @@ Imens Du smuldrer der til Støv,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Vi skiltes i Taushed, men sørgede saare;
   Ei Haabet blev nævnet - ak! nu en Ruin;
 Hun sænked sit Blik, og en eneste Taare
@@ -3748,10 +3893,11 @@ Og Duggen, der bæver paa Blomsternes Vrimmel,
   Mig minde om Taaren, som gav det sin Daab.
 
 <nonum><right><b>Ch. F. Hoffman.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082274">
+<text id="preetzmann2019082274">
 <head>
     <title><num>73.</num>Din Tro vil aldrig briste</title>
     <toctitle><num>73.</num>Din Tro vil aldrig briste (Th. H. Bayley)</toctitle>
@@ -3765,6 +3911,7 @@ Og Duggen, der bæver paa Blomsternes Vrimmel,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 For ungt er, siger man, vort Blod,
   For vildt til sig at mage,
 Vor Elskov spotter man, vor Eed
@@ -3802,10 +3949,11 @@ Du troer paa ham, som veed forvist,
   Din Tro vil aldrig briste.
 
 <nonum><right><b>Th. H. Bayley.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082275">
+<text id="preetzmann2019082275">
 <head>
     <title><num>74.</num>Tænk ikke paa Fremtiden!</title>
     <toctitle><num>74.</num>Tænk ikke paa Fremtiden (Samme)</toctitle>
@@ -3819,6 +3967,7 @@ Du troer paa ham, som veed forvist,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ei til Fremtids Syner Lid Du sætte,
   Lev i Nuet, før dets Glæder flye!
 Den, som Tidens dunkle Slør vil lette,
@@ -3840,10 +3989,11 @@ Er end Somren flygtig, bort med Klage!
   Lev i Nuet, før dets Glæder flye!
 
 <nonum><right><b>Th. H. Bayley.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082276">
+<text id="preetzmann2019082276">
 <head>
     <title><num>75.</num>Serenade</title>
     <toctitle><num>75.</num>Serenade (P. B. Shelley)</toctitle>
@@ -3857,6 +4007,7 @@ Er end Somren flygtig, bort med Klage!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg fra en Drøm om Dig staaer op
   I Nattens første Blund,
 Saa svagt gaaer Vindens Aandedræt,
@@ -3885,10 +4036,11 @@ Tryk det til dit, saa tæt, saa tæt,
   Indtil det Hvile faaer!
 
 <nonum><right><b>P. B. Shelley.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082277">
+<text id="preetzmann2019082277">
 <head>
     <title><num>76.</num>Den skibbrudne Eneboers Sang</title>
     <toctitle><num>76.</num>Den skibbrudne Eneboers Sang (H. K. White)</toctitle>
@@ -3903,6 +4055,7 @@ Tryk det til dit, saa tæt, saa tæt,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Du, Stjernenattens Kæmpeaand!
 Mens fra dit Vagttaarns høie Spiir
 Du styrer Skibets øde Vei,
@@ -3964,10 +4117,11 @@ Jeg hører end den dumpe Lyd
     Og finder kun mig selv.
 
 <nonum><right><b>H. K. White.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082278">
+<text id="preetzmann2019082278">
 <head>
     <title><num>77.</num>Pilen og Sangen</title>
     <toctitle><num>77.</num>Pilen og Sangen (H. W. Longfellow)</toctitle>
@@ -3981,6 +4135,7 @@ Jeg hører end den dumpe Lyd
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg skød en Piil i Luften,
     Den faldt til Jord,
     Jeg saae ei hvor;
@@ -4000,10 +4155,11 @@ Men Sangen fandt hos en Ven jeg -
     Han nynned endnu derpaa.
 
 <nonum><right><b>H. W. Longfellow.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082279">
+<text id="preetzmann2019082279">
 <head>
     <title><num>78.</num>Saa henrykt vi mødtes</title>
     <toctitle><num>78.</num>Saa henrykt vi mødtes (Thomas Moore)</toctitle>
@@ -4017,6 +4173,7 @@ Men Sangen fandt hos en Ven jeg -
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Saa henrykt vi mødtes, vi skiltes saa kjærligt,
   At hvad der var sødest, jeg veed ikke ret,
 Det Ildblik, hun sendte til Velkomst mig herligt,
@@ -4036,10 +4193,11 @@ Men Afskedens Skumring gav Haab om en Morgen,
   Der bragte os Gjensynets Glæde igjen.
 
 <nonum><right><b>Thomas Moore.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082280">
+<text id="preetzmann2019082280">
 <head>
     <title><num>79.</num>Jens Bygkorn</title>
     <toctitle><num>79.</num>Jens Bygkorn (Robert Burns)</toctitle>
@@ -4054,6 +4212,7 @@ Men Afskedens Skumring gav Haab om en Morgen,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det var tre Konger i Østerland,
   De stolteste under Ø,
 De havde svoret høit og dyrt.
@@ -4130,10 +4289,11 @@ Gid altid trives i vort Land
   Hans Afkom og hans Aand!
 
 <nonum><right><b>Robert Burns.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082281">
+<text id="preetzmann2019082281">
 <head>
     <title><num>80.</num>Canzonet</title>
     <toctitle><num>80.</num>Canzonet (H. K. White)</toctitle>
@@ -4147,6 +4307,7 @@ Gid altid trives i vort Land
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Qvinde! svøb din Kaabe om Dig,
   Regnen slaaer imod dit Bryst,
 Truer Verdens Straffedom Dig,
@@ -4164,10 +4325,11 @@ Troløs var Dig Kjærligheden,
 Din Slummer bliver dobbelt sød.
 
 <nonum><right><b>H. K. White.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082282">
+<text id="preetzmann2019082282">
 <head>
     <title><num>81.</num>Mit Hjerte og min Lyra</title>
     <toctitle><num>81.</num>Mit Hjerte og min Lyra (Thomas Moore)</toctitle>
@@ -4181,6 +4343,7 @@ Din Slummer bliver dobbelt sød.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Alt lægger for din Fod jeg ned,
   Skjøndt fattig, som Du seer,
 Mit Hjerte og min Strengeleg -
@@ -4200,10 +4363,11 @@ Paa Elskovs Bud den smelter hen
   I salig Harmoni.
 
 <nonum><right><b>Thomas Moore.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082283">
+<text id="preetzmann2019082283">
 <head>
     <title><num>82.</num>Landsbysmeden</title>
     <toctitle><num>82.</num>Landsbysmeden (H. W. Longfellow)</toctitle>
@@ -4217,6 +4381,7 @@ Paa Elskovs Bud den smelter hen
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Under et mægtigt Kastanietræ
   Landsbysmedien man kjender;
 Den Smed er en saare kraftig Mand,
@@ -4274,10 +4439,11 @@ Kun paa dets klingende Ambolt kan
   En brændende Tanke fødes!
 
 <nonum><right><b>H. W. Longfellow.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082284">
+<text id="preetzmann2019082284">
 <head>
     <title><num>83.</num>Vee mig! Vee!</title>
     <toctitle><num>83.</num>Vee mig! Vee! (Thomas Campbell)</toctitle>
@@ -4291,6 +4457,7 @@ Kun paa dets klingende Ambolt kan
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ak! hvor sjeldent Held, at finde
 Just den Ene, netop Hende;
   Fandt vi hende saa maaskee,
@@ -4306,10 +4473,11 @@ Dog - hvor sødt, selv naar med Taarer
   Vi maae sukke: Vee mig! Vee!
 
 <nonum><right><b>Thomas Campbell.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082285">
+<text id="preetzmann2019082285">
 <head>
     <title><num>84.</num>John Anderson</title>
     <toctitle><num>84.</num>John Anderson (Robert Burns)</toctitle>
@@ -4323,6 +4491,7 @@ Dog - hvor sødt, selv naar med Taarer
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 John Anderson, Du Kjære!
   Da vi blev først bekjendt,
 Din Lok var sort som Ravnen,
@@ -4342,10 +4511,11 @@ Og sove sammen ved dens Fod.
   John Anderson! i Fred.
 
 <nonum><right><b>Robert Burns.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082286">
+<text id="preetzmann2019082286">
 <head>
     <title><num>85.</num>I et Album</title>
     <toctitle><num>85.</num>I et Album (Byron)</toctitle>
@@ -4359,6 +4529,7 @@ Og sove sammen ved dens Fod.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Blandt kolde Graves Marmorstene
   Tidt standser Vandringsmandens Fjed,
 Et Navn, halv glemt, han læser ene,
@@ -4369,10 +4540,11 @@ Tænk da paa mig, som paa den Døde -
   Mit Hjerte hviler i min Sang.
 
 <nonum><right><b>Byron.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082287">
+<text id="preetzmann2019082287">
 <head>
     <title><num>86.</num>End et Kys -</title>
     <toctitle><num>86.</num>End et Kys (Robert Burns)</toctitle>
@@ -4386,6 +4558,7 @@ Tænk da paa mig, som paa den Døde -
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 End et Kys, da maa det briste!
 Et Farvel endnu, det sidste!
 Hede Taarer fælde vil jeg,
@@ -4414,10 +4587,11 @@ Hede Taarer fælde vil jeg,
 Vie min Sjæl i Sukke til Dig!
 
 <nonum><right><b>Robert Burns.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082288">
+<text id="preetzmann2019082288">
 <head>
     <title><num>87.</num>Sukkene</title>
     <toctitle><num>87.</num>Sukkene (H. W. Longfellow)</toctitle>
@@ -4431,6 +4605,7 @@ Vie min Sjæl i Sukke til Dig!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Tag dem, o Død! ak, Intet meer
 Du som din Arvepart tør tage;
 Dit Billed, præget her i Leer,
@@ -4447,10 +4622,11 @@ Der bøier Træets Grene ned
 Og slynger Blomsterne i Støvet!
 
 <nonum><right><b>H. W. Longfellow.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082289">
+<text id="preetzmann2019082289">
 <head>
     <title><num>88.</num>Soldatens Drøm</title>
     <toctitle><num>88.</num>Soldatens Drøm (Thomas Campbell)</toctitle>
@@ -4464,6 +4640,7 @@ Og slynger Blomsterne i Støvet!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det mørkned. - Til Hvile gav Hornet Signal,
   Og Stjerner holdt Vagt paa en Himmel saa rød;
 Men Tusinder dækked den blodige Val,
@@ -4495,10 +4672,11 @@ Men Sorgen med Daggry sig meldte paany,
   Og den lokkende Røst i min Drøm smelted hen.
 
 <nonum><right><b>Thomas Campbell.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082290">
+<text id="preetzmann2019082290">
 <head>
     <title><num>89.</num>Har Sorg paa din Ungdom kastet</title>
     <toctitle><num>89.</num>Har Sorg paa din Ungdom kastet (Thomas Moore)</toctitle>
@@ -4512,6 +4690,7 @@ Men Sorgen med Daggry sig meldte paany,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Har Sorg paa din Ungdom kastet
   Sin dæmrende Sky iløn,
 Er Ungdomstiden borthastet,
@@ -4549,10 +4728,11 @@ Kom, Ulykkens Barn! jeg vil græde
   Taare for Taare med Dig.
 
 <nonum><right><b>Thomas Moore.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082291">
+<text id="preetzmann2019082291">
 <head>
     <title><num>90.</num>Til mit Hjertes Dronning</title>
     <toctitle><num>90.</num>Til mit Hjertes Dronning (P. B. Shelley)</toctitle>
@@ -4566,6 +4746,7 @@ Kom, Ulykkens Barn! jeg vil græde
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Skal vi vandre en Stund
 I den dæmrende Lund,
   Mens Fuldmaanen hist holder Vagt?
@@ -4609,10 +4790,11 @@ I den kølige Nat,
   Hvad jeg aldrig ved Dagen fik sagt.
 
 <nonum><right><b>P. B. Shelley.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082292">
+<text id="preetzmann2019082292">
 <head>
     <title><num>91.</num>Amor og Hymen</title>
     <toctitle><num>91.</num>Amor og Hymen (Thomas Moore)</toctitle>
@@ -4626,6 +4808,7 @@ I den kølige Nat,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I Feber laae Amor. Den lange Nat
   Ingen Søvn paa hans Øine vil dale,
 Skjøndt Himmelen veed, han var lige parat,
@@ -4647,10 +4830,11 @@ Før Amor, der nylig var søvnløs, den Strik!
   Alt snorked, saa Gud sig forbarme.
 
 <nonum><right><b>Thomas Moore.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082293">
+<text id="preetzmann2019082293">
 <head>
     <title><num>92.</num>Amor og Døden</title>
     <toctitle><num>92.</num>Amor og Døden (Alfred Tennyson)</toctitle>
@@ -4664,6 +4848,7 @@ Før Amor, der nylig var søvnløs, den Strik!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Klart lyste Maanen i sin fulde Glands,
 Og rundt i Paradisets Urtegaard
 Gik Elskovsguden om med Straaleblikke.
@@ -4682,10 +4867,11 @@ Dog - Skyggen vige maa, hvor Træet faldt,
 Men jeg skal herske evig overalt.''
 
 <nonum><right><b>Alfred Tennyson.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082294">
+<text id="preetzmann2019082294">
 <head>
     <title><num>93.</num>Morgensang</title>
     <firstline>O, kom! see paa Marken</firstline>
@@ -4696,6 +4882,7 @@ Men jeg skal herske evig overalt.''
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 O, kom! see paa Marken
   Staaer Lilien saa klar,
 Skovduerne flokkes
@@ -4736,10 +4923,11 @@ Kom os bland da ved Solskin
   I Glæden din Røst!
 
 <nonum><right><b>Allan Cunningham.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082295">
+<text id="preetzmann2019082295">
 <head>
     <title><num>94.</num>Sommerfuglen</title>
     <toctitle><num>94.</num>Sommerfuglen (?)</toctitle>
@@ -4751,6 +4939,7 @@ Kom os bland da ved Solskin
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Den Sommerfugl var en stolt Kavaleer,
   Men hans Rygte var ikke det bedste,
 Han sværmed i Solskin den udslagne Dag
@@ -4779,10 +4968,11 @@ Naar i Mørke I staaer, vil I angre for seent,
   At I Lampen forsømte derhjemme.
 
 <nonum><right><b>?</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082296">
+<text id="preetzmann2019082296">
 <head>
     <title><num>95.</num>Hymne til Natten</title>
     <toctitle><num>95.</num>Hymne til Natten (H. W. Longfellow)</toctitle>
@@ -4796,6 +4986,7 @@ Naar i Mørke I staaer, vil I angre for seent,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg hørte Natten skride med sit Slæb
     I Marmorhaller frem!
 Om sorte Skrud som Fryndser Lyset hang
@@ -4827,10 +5018,11 @@ Hil! trefold hil Dig! mine Længslers Maal,
     Du dyrebare Nat!
 
 <nonum><right><b>H. W. Longfellow.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082297">
+<text id="preetzmann2019082297">
 <head>
     <title><num>96.</num>Elskov er en Gaade</title>
     <toctitle><num>96.</num>Elskov er en Gaade (Harry Carey)</toctitle>
@@ -4843,6 +5035,7 @@ Hil! trefold hil Dig! mine Længslers Maal,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Sig Elskovs Flamme lægger,
   Naar Dagens Lys den seer.
 Men prøv, naar Du den stækker -
@@ -4853,10 +5046,11 @@ Men Modstand gjør den modig,
   Og Farer gjør den sød.
 
 <nonum><right><b>Harry Carey.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082298">
+<text id="preetzmann2019082298">
 <head>
     <title><num>97.</num>En Kjærlighedssang</title>
     <toctitle><num>97.</num>En Kjærlighedssang (Eliza Cook)</toctitle>
@@ -4870,6 +5064,7 @@ Men Modstand gjør den modig,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ei Suk og Eder jeg forstaaer,
   Min Emma! som saamangen Anden;
 Men skjøndt jeg mangler fagre Ord,
@@ -4907,10 +5102,11 @@ Min Tunge mangler søde Ord,
   Men ei mit Bryst om Falskhed drømmer.
 
 <nonum><right><b>Eliza Cook.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann2019082299">
+<text id="preetzmann2019082299">
 <head>
     <title><num>98.</num>Min Sang er Smertens Røst</title>
     <toctitle><num>98.</num>Min Sang er Smertens Røst (Th. H. Bayley)</toctitle>
@@ -4924,6 +5120,7 @@ Min Tunge mangler søde Ord,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Du troer vel, at mit Sind er let,
   Fordi min Sang er fro -
 Ak, nei! af tabte Venner jeg
@@ -4952,10 +5149,11 @@ Den, som mig hører, aner ei -
   Min Sang er Smertens Røst!
 
 <nonum><right><b>Th. H. Bayley.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann20190822100">
+<text id="preetzmann20190822100">
 <head>
     <title><num>99.</num>Et Solglimt</title>
     <toctitle><num>99.</num>Et Solglimt (H. W. Longfellow)</toctitle>
@@ -4969,6 +5167,7 @@ Den, som mig hører, aner ei -
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Her Stedet er. Min Ganger, stands!
   Lad Mindet mig fornye,
 Og mane blege Syner frem
@@ -5040,10 +5239,11 @@ Os skjuler Solen, mens vi see
   Paa fjerne Egn dens Skjær.
 
 <nonum><right><b>H. W. Longfellow.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="preetzmann20190822101">
+<text id="preetzmann20190822101">
 <head>
     <title><num>100.</num>Harpesneglen</title>
     <toctitle><num>100.</num>Harpesneglen (Bernard Barton)</toctitle>
@@ -5057,6 +5257,7 @@ Os skjuler Solen, mens vi see
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Har Du hørt om en Snekke - i Tangen begravet,
 Den dølger et Eccho paa perleklar Bund,
 Af Tonerne, som, da den gynged paa Havet,
@@ -5078,16 +5279,18 @@ Mod den gjenløste Aand fra det Fjerne der bæver
 En dæmpet Akkord af de Saliges Chor.
 
 <nonum><right><b>Bernard Barton.</b></right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<prose id="preetzmann20190822102">
+<text id="preetzmann20190822102" skip-index="true">
 <head>
     <title>Biographiske Notitser</title>
     <source pages="185-203"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<prose>
     <b>Barton, Bernard</b>, f. 31. Januar 1784, d, 19. Febr. 1849. Hans Dage henrandt temmelig eensformigt, deelte mellem Forretningslivet og Literaturen. Han var ikke noget fremragende Geni; imidlertid bleve flere af hans Muses Frembringelser optagne med Bifald, og »Poems by an Amateur«, som udkom i London, Aar 1818, opnaaede fire Oplag. - Nr. 100.
 
     <b>Bayley,</b> (eller Bayly?) <b>Thomas Haynes</b>, f. i Nærheden af Bath 1797, d. i Cheltenham 22. April 1839. Udsprungen af en rig og fornem Familie, erholdt han en omhyggelig Opdragelse, og levede i landlig Indgetogenhed indtil Aaret 1831, da uforskyldte økonomiske Forlegenheder tvang ham til at søge sit Erhverv ved literair Virksomhed. Næst Thomas Moore er Bayley Englands populæreste Sangdigter (song-writer) i dette Aarhundrede. Hans Digte ere samlede og udgivne af hans Enke, Aar 1845. - Nr. 21, 32 52, 54, 73, 74, 98.
@@ -5135,8 +5338,9 @@ En dæmpet Akkord af de Saliges Chor.
     <b>Wolfe, Charles,</b> f. i Dublin 14. Decbr. 1791, d. som Præst i Nærheden af Cork d. 21. Febr. 1823, har i sin korte Levetid ikke skrevet meget, men Kritiken giver ham det Vidnesbyrd, at han ved det ene Digt »Soldatens Jordefærd« (28), der er helliget Mindet om General John Moore, som faldt i Slaget ved Corunna mod Franskmændene, Aar 1809, har sikkret sig et udødeligt Navn i den engelske Literatur. Dette Digt, der udkom anonymt, blev i Begyndelsen tillagt Byron, og findes optaget i enkelte Udgaver af dennes Værker. - Nr. 28.
 
     <b>Wordsworth, William,</b> f. 7. April 1770 i Cockermouth i Cumberland, d. 23. April 1850, erholdt sin videnskabelige Uddannelse ved Universitetet i Cambridge, gjorde derefter en Fodreise gjennem Frankrig, Schweitz og Italien, og tog ved sin Hjemkomst blivende Opholdssted ved Søen Rydal i det romantiske Westmoreland. Hans Liv var udelukkende helliget Digtekonsten, som han søgte at føre tilbage til større Simpelhed og Naturlighed i Stof og Form, hvorved han dog ikke sjelden henfaldt til en vis Brede og Hverdagsagtighed. Han var Stifteren af den saakaldte <w>Lake-School.</w> Hans Hovedværker ere: »Lyrical Ballads«, 1798 og 1807, »The Recluse«, »Sonnets on the River Dudden« etc. - Nr. 4.
-</body>
 </prose>
+</body>
+</text>
 
 </workbody>
 </kalliopework>

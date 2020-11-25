@@ -16,15 +16,15 @@ module.exports.availableImageWidths = [
 
 // Det er vigtigt at webp kommer før jpg, da Chrome vælger den første source
 // den kender.
-module.exports.availableImageFormats = ['webp', 'jpg'];
+module.exports.availableImageFormats = ['jpg'];
 
 module.exports.fallbackImagePostfix = '-w800.jpg';
 
 const countries = [
-//const countries: Array<{
-//  code: Country,
-//  adjective: { da: string, en: string },
-//}> = [
+  //const countries: Array<{
+  //  code: Country,
+  //  adjective: { da: string, en: string },
+  //}> = [
   {
     code: 'dk',
     adjective: {
