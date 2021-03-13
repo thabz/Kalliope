@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="hoffmeyers" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Svend</firstname>
+    <lastname>Hoffmeyer</lastname>
+    <!-- Læge -->
+  </name>
+  <period>
+    <born>
+      <date>1886-02-25</date>
+      <place>Grenå</place>
+    </born>
+    <dead>
+      <date>1951-09-28</date>
+    </dead>
+  </period>
+  <works>1946</works>
+</person>
