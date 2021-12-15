@@ -148,7 +148,7 @@ app.prepare().then(() => {
       (pathname.indexOf('.xml') > -1 && pathname.indexOf('/work/') > -1)
     ) {
       let done = false;
-      redirects.forEach(descr => {
+      redirects.forEach((descr) => {
         const m = descr.from.exec(pathname);
         if (!done && m != null) {
           let missingParams = false;
@@ -183,12 +183,12 @@ app.prepare().then(() => {
           query.query,
           query.page || 0
         )
-        .then(result => {
+        .then((result) => {
           res.writeHead(200, { 'Content-Type': 'application/json' });
           res.write(result);
           res.end();
         })
-        .catch(err => {
+        .catch((err) => {
           res.writeHead(500, { 'Content-Type': 'application/json' });
           res.write(JSON.stringify({ error: err }));
           res.end();
@@ -204,7 +204,7 @@ app.prepare().then(() => {
       //      }
       handler(req, res);
     }
-  }).listen(3000, err => {
+  }).listen(3000, (err) => {
     if (err) throw err;
     console.log('> Ready on http://localhost:3000');
   });
