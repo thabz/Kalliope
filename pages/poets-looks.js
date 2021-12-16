@@ -14,19 +14,8 @@ import * as Sorting from '../common/sorting.js';
 import * as Strings from '../common/strings.js';
 import CommonData from '../common/commondata.js';
 import { createURL } from '../common/client.js';
-import type {
-  Lang,
-  Country,
-  Section,
-  Poet,
-  SortReturn,
-  SectionForRendering,
-  PictureItem,
-} from '../common/types.js';
 
-type GroupBy = 'name' | 'year';
-
-function joinWithCommaAndOr(items: Array<string | Node>, andOrWord) {
+function joinWithCommaAndOr(items, andOrWord) {
   const result = [];
   items.forEach((item, i) => {
     result.push(item);
@@ -43,16 +32,10 @@ function joinWithCommaAndOr(items: Array<string | Node>, andOrWord) {
   return result;
 }
 
-type CountryPickerProps = {
-  lang: Lang,
-  selectedCountry: Country,
-  selectedGroupBy: GroupBy,
-  style: any,
-};
-class CountryPicker extends React.Component<CountryPickerProps> {
+class CountryPicker extends React.Component {
   render() {
     const { lang, selectedCountry, selectedGroupBy, style } = this.props;
-    const items = CommonData.countries.map(country => {
+    const items = CommonData.countries.map((country) => {
       const url = Links.poetsURL(lang, selectedGroupBy, country.code);
       const adj = country.adjective[lang] + ' ';
       if (country.code === selectedCountry) {
@@ -74,11 +57,7 @@ class CountryPicker extends React.Component<CountryPickerProps> {
   }
 }
 
-type MissingPortraitProps = {
-  poet: Poet,
-  lang: Lang,
-};
-class MissingPortrait extends React.Component<MissingPortraitProps> {
+class MissingPortrait extends React.Component {
   render() {
     const { lang, poet } = this.props;
     const style = {
@@ -98,13 +77,7 @@ class MissingPortrait extends React.Component<MissingPortraitProps> {
   }
 }
 
-type PoetLooksProps = {
-  lang: Lang,
-  country: Country,
-  poets: Array<Poet>,
-  groupBy: GroupBy,
-};
-const PoetLooksPage = (props: PoetLooksProps) => {
+const PoetLooksPage = (props) => {
   const { lang, country, poets, groupBy } = props;
 
   const tabs = [
@@ -137,7 +110,7 @@ const PoetLooksPage = (props: PoetLooksProps) => {
         false,
         true
       )}</a>`;
-      const picture: PictureItem = {
+      const picture = {
         src: poet.portrait,
         content_html: [[name, { html: true }]],
         content_lang: 'da',
@@ -177,7 +150,7 @@ const PoetLooksPage = (props: PoetLooksProps) => {
   const requestPath = `/${lang}/poets/${country}/looks}`;
 
   if (country !== 'dk') {
-    const cn = CommonData.countries.filter(c => {
+    const cn = CommonData.countries.filter((c) => {
       return c.code === country;
     })[0];
     pageTitle = Strings.toTitleCase(cn.adjective[lang]) + ' ' + ' digtere';
@@ -190,7 +163,8 @@ const PoetLooksPage = (props: PoetLooksProps) => {
       requestPath={requestPath}
       pageTitle={pageTitle}
       menuItems={tabs}
-      selectedMenuItem="looks">
+      selectedMenuItem="looks"
+    >
       <div className="picture-container">{renderedPortraits}</div>
       <CountryPicker
         style={{ marginTop: '40px' }}
@@ -212,13 +186,11 @@ const PoetLooksPage = (props: PoetLooksProps) => {
 
 PoetLooksPage.getInitialProps = async ({
   query: { lang, country, groupBy },
-}: {
-  query: { lang: Lang, country: Country, groupBy: GroupBy },
 }) => {
   const url = `/static/api/poets-${country}.json`;
   const res = await fetch(createURL(url));
   const json = await res.json();
-  const poets: Array<Poet> = json.poets;
+  const poets = json.poets;
   return { lang, country, groupBy, poets };
 };
 

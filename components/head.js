@@ -3,30 +3,16 @@
 import React from 'react';
 import NextHead from 'next/head';
 
-const urlPrefix: string = 'https://kalliope.org';
+const urlPrefix = 'https://kalliope.org';
 const defaultDescription =
   'Kalliope er en database indeholdende ældre dansk lyrik samt biografiske oplysninger om danske digtere. Målet er intet mindre end at samle hele den ældre danske lyrik, men indtil videre indeholder Kalliope et forhåbentligt repræsentativt, og stadigt voksende, udvalg af den danske digtning.';
 const defaultOGURL = urlPrefix;
 const defaultOGImage = `${urlPrefix}/static/touch-icon.png`;
 
-type HeadProps = {
-  headTitle?: string,
-  ogTitle?: string,
-  description?: ?string,
-  url?: string,
-  ogImage?: ?string,
-  requestPath?: string,
-};
-export default class Head extends React.Component<HeadProps> {
+export default class Head extends React.Component {
   render() {
-    const {
-      ogTitle,
-      headTitle,
-      description,
-      url,
-      ogImage,
-      requestPath,
-    } = this.props;
+    const { ogTitle, headTitle, description, url, ogImage, requestPath } =
+      this.props;
 
     const appleTouchIcons = [180, 152, 120, 76, 60].map((s) => {
       const x = `${s}x${s}`;

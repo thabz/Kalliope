@@ -1,6 +1,5 @@
 // @flow
 import React from 'react';
-import type { Lang } from './types.js';
 
-const LangContext = React.createContext<Lang>('da');
+const LangContext = React.createContext('da');
 export default LangContext;

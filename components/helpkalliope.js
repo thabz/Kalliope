@@ -1,22 +1,17 @@
 // @flow
 
 import React from 'react';
-import type { Node } from 'react';
-import type { Poet } from '../common/types.js';
 import { poetNameString } from './poetname-helpers.js';
 
 const Popup = () => {
   return null;
 };
 
-const Label = (props: { children: Node }) => {
+const Label = (props) => {
   return <div>{props.children}</div>;
 };
 
-type HelpKalliopeProps = {
-  unknownOriginalBy?: Poet,
-};
-const HelpKalliope = (props: HelpKalliopeProps) => {
+const HelpKalliope = (props) => {
   const { unknownOriginalBy } = props;
   if (unknownOriginalBy != null) {
     const poet = unknownOriginalBy;

@@ -3,18 +3,17 @@ import React, { useState, useEffect, useContext } from 'react';
 import CommonData from '../common/commondata.js';
 import TextContent from './textcontent.js';
 import { CloseButton, LeftArrow, RightArrow } from './icons.js';
-import type { PictureItem } from '../common/types.js';
 import { FigCaption } from './picture.js';
 
-const BiggerPicture = ({ picture }: { picture: PictureItem }) => {
+const BiggerPicture = ({ picture }) => {
   const src = picture.src;
   const fallbackSrc = src.replace(/\/([^\/]+).jpg$/, (m, p1) => {
     return '/t/' + p1 + CommonData.fallbackImagePostfix;
   });
   const srcSet = CommonData.availableImageFormats
-    .map(ext => {
+    .map((ext) => {
       return CommonData.availableImageWidths
-        .map(width => {
+        .map((width) => {
           const filename = src
             .replace(/.jpg$/, `-w${width}.${ext}`)
             .replace(/\/([^\/]+)$/, '/t/$1');
@@ -40,7 +39,7 @@ const BiggerPicture = ({ picture }: { picture: PictureItem }) => {
   if (picture.clipPath != null) {
     clipPathStyle = {
       clipPath: picture.clipPath,
-      WebkitClipPath: picture.clipPath
+      WebkitClipPath: picture.clipPath,
     };
     clipPathDropShadowStyle = {
       filter: 'drop-shadow(4px 4px 12px #888)',
@@ -74,34 +73,29 @@ const BiggerPicture = ({ picture }: { picture: PictureItem }) => {
   );
 };
 
-type Props = {
-  pictures: Array<PictureItem>,
-  startIndex: number,
-  closeCallback: () => void,
-};
-const PictureOverlay = ({ pictures, startIndex, closeCallback }: Props) => {
+const PictureOverlay = ({ pictures, startIndex, closeCallback }) => {
   const [currentIndex, setCurrentIndex] = useState(startIndex);
 
-  const hideOverlay = (e: Event) => {
+  const hideOverlay = (e) => {
     e.preventDefault();
     closeCallback();
   };
 
-  const onRightClick = (e: Event) => {
+  const onRightClick = (e) => {
     if (currentIndex < pictures.length - 1) {
       setCurrentIndex(currentIndex + 1);
     }
     e.stopPropagation();
   };
 
-  const onLeftClick = (e: Event) => {
+  const onLeftClick = (e) => {
     if (currentIndex > 0) {
       setCurrentIndex(currentIndex - 1);
     }
     e.stopPropagation();
   };
 
-  const onKeyUp = (e: KeyboardEvent) => {
+  const onKeyUp = (e) => {
     if (e.keyCode === 27) {
       hideOverlay(e);
     } else if (e.keyCode === 37) {
@@ -113,7 +107,7 @@ const PictureOverlay = ({ pictures, startIndex, closeCallback }: Props) => {
     }
   };
 
-  const eatClick = (e: MouseEvent) => {
+  const eatClick = (e) => {
     e.stopPropagation();
   };
 

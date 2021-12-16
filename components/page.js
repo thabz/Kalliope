@@ -10,10 +10,7 @@ import LangContext from '../common/LangContext.js';
 import LangSelect from './langselect.js';
 import CommonData from '../common/commondata.js';
 
-type HeadingProps = {
-  title: Node | string,
-};
-const Heading = (props: HeadingProps) => {
+const Heading = (props) => {
   const { title } = props;
   return (
     <div className="heading">
@@ -59,7 +56,7 @@ const Heading = (props: HeadingProps) => {
   );
 };
 
-const Page = props => {
+const Page = (props) => {
   const {
     children,
     headTitle,

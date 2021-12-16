@@ -1,15 +1,9 @@
 // @flow
 
 import React from 'react';
-import type { Poet, Lang } from '../common/types.js';
 import { poetNameParts } from './poetname-helpers.js';
 
-type PoetNameProps = {
-  poet: Poet,
-  lastNameFirst?: boolean,
-  includePeriod?: boolean,
-};
-const PoetName = (props: PoetNameProps) => {
+const PoetName = (props) => {
   const { poet, lastNameFirst, includePeriod } = props;
   let pp = null;
   const p = poetNameParts(poet, lastNameFirst, includePeriod);

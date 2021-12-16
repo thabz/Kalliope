@@ -22,8 +22,8 @@ module.exports.fallbackImagePostfix = '-w800.jpg';
 
 const countries = [
   //const countries: Array<{
-  //  code: Country,
-  //  adjective: { da: string, en: string },
+  //  code,
+  //  adjective: { da, en },
   //}> = [
   {
     code: 'dk',

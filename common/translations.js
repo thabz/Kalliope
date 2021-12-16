@@ -1,8 +1,6 @@
 // @flow
 
-import type { Lang } from './types.js';
-
-const translations: { [string]: string } = {
+const translations = {
   'en*Digtere': 'Poets',
   'en*Personer': 'Persons',
   'en*Kunstnere': 'Artists',
@@ -58,15 +56,10 @@ const translations: { [string]: string } = {
   'en*{varianter} af denne samling:': '{varianter} of this collection:',
 };
 
-const _ = (
-  danishString: string,
-  lang: Lang,
-  keys?: { [string]: string }
-): string => {
-  var translated: string =
-    translations[lang + '*' + danishString] || danishString;
+const _ = (danishString, lang, keys) => {
+  var translated = translations[lang + '*' + danishString] || danishString;
   if (keys != null) {
-    for (var key: string in keys) {
+    for (var key in keys) {
       if (keys.hasOwnProperty(key)) {
         translated = translated.replace('{' + key + '}', keys[key]);
       }
