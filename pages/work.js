@@ -26,29 +26,8 @@ import CommonData from '../common/commondata.js';
 import _ from '../common/translations.js';
 import { request } from 'http';
 import WorksList from '../components/workslist';
-import type {
-  Lang,
-  Poet,
-  PoetId,
-  WorkId,
-  Work,
-  TocItem,
-  NoteItem,
-  PictureItem,
-  Error,
-} from '../common/types.js';
 
-type WorkProps = {
-  lang: Lang,
-  poet: Poet,
-  work: Work,
-  toc: Array<TocItem>,
-  subworks: Array<Work>,
-  notes: Array<NoteItem>,
-  pictures: Array<PictureItem>,
-  error: ?Error,
-};
-const WorkPage = (props: WorkProps) => {
+const WorkPage = (props) => {
   const { lang, poet, work, notes, pictures, toc, subworks, error } = props;
 
   if (error) {
@@ -109,9 +88,9 @@ const WorkPage = (props: WorkProps) => {
   }
   let ogDescription = null;
   if (toc != null && toc.length > 0) {
-    ogDescription = toc.map(part => part.title).join(', ');
+    ogDescription = toc.map((part) => part.title).join(', ');
   } else if (subworks != null && subworks.length > 0) {
-    ogDescription = subworks.map(part => part.toctitle).join(', ');
+    ogDescription = subworks.map((part) => part.toctitle).join(', ');
   }
 
   let sectixonTitles = null;
@@ -132,7 +111,8 @@ const WorkPage = (props: WorkProps) => {
       pageSubtitle={_('Værker', lang)}
       menuItems={poetMenu(poet)}
       poet={poet}
-      selectedMenuItem="works">
+      selectedMenuItem="works"
+    >
       <SidebarSplit sidebar={sidebar}>
         <div>
           <SubHeading>
@@ -151,11 +131,7 @@ const WorkPage = (props: WorkProps) => {
   );
 };
 
-WorkPage.getInitialProps = async ({
-  query: { lang, poetId, workId },
-}: {
-  query: { lang: Lang, poetId: PoetId, workId: WorkId },
-}) => {
+WorkPage.getInitialProps = async ({ query: { lang, poetId, workId } }) => {
   const json = await Client.work(poetId, workId);
   return {
     lang,

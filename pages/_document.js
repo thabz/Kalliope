@@ -1,6 +1,6 @@
 // ./pages/_document.js
 import Document, { Head, Main, NextScript } from 'next/document';
-import flush from 'styled-jsx/server';
+// import flush from 'styled-jsx/server';
 
 export default class MyDocument extends Document {
   static getInitialProps({ renderPage, asPath }) {
@@ -13,7 +13,7 @@ export default class MyDocument extends Document {
       lang = 'en';
     }
 
-    const styles = flush();
+    const styles = {}; //flush();
     return { lang, html, head, errorHtml, chunks, styles };
   }
 

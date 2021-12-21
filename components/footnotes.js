@@ -1,31 +1,28 @@
 // @flow
 import React, { useContext, useEffect, useState } from 'react';
-import type { Node } from 'react';
 
 class Footnotes {
-  _footnotes = [];
-
-  number = (footnote: Footnote) => {
+  constructor() {
+    this._footnotes = [];
+  }
+  number(footnote) {
     return this._footnotes.length;
-  };
-  registrer = (footnote: Footnote, text: Node) => {
+  }
+  registrer(footnote, text) {
     this._footnotes.push({ footnote, text });
     return this._footnotes.length;
-  };
-  unregister = (footnote: Footnote) => {
-    this._footnotes = this._footnotes.filter(x => x.footnote !== footnote);
-  };
-  footnotes = () => {
+  }
+  unregister(footnote) {
+    this._footnotes = this._footnotes.filter((x) => x.footnote !== footnote);
+  }
+  footnotes() {
     return this._footnotes;
-  };
+  }
 }
 
 const FootnoteContext = React.createContext();
 
-type FootnoteProps = {
-  text: Node,
-};
-const Footnote = ({ text }: FootnoteProps) => {
+const Footnote = ({ text }) => {
   const footnotes = useContext(FootnoteContext);
 
   useEffect(() => {
@@ -90,10 +87,7 @@ const FootnoteList = () => {
   );
 };
 
-type FootnoteContainerProps = {
-  children: Node,
-};
-const FootnoteContainer = (props: FootnoteContainerProps) => {
+const FootnoteContainer = (props) => {
   const [footnotes] = useState(new Footnotes());
   return (
     <FootnoteContext.Provider value={footnotes}>

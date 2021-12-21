@@ -4,7 +4,7 @@ import React from 'react';
 import { Link } from '../routes';
 import * as Links from './links.js';
 
-const LangSelect = ({ path }: { path: string }) => {
+const LangSelect = ({ path }) => {
   return <div style={{ paddingBottom: '70px' }} />;
   /*
     return (

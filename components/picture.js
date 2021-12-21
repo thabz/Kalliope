@@ -1,6 +1,5 @@
 // @flow
 import React, { useContext, useState } from 'react';
-import type { PictureItem, Lang, TextLang } from '../common/types.js';
 import { TextInline } from './textcontent.js';
 import PictureOverlay from './pictureoverlay.js';
 import CommonData from '../common/commondata.js';
@@ -11,13 +10,7 @@ import * as Strings from '../common/strings.js';
 import LangContext from '../common/LangContext.js';
 import { Link } from '../routes';
 
-type FigCaptionProps = {
-  picture: PictureItem,
-  className?: string,
-  hideArtist?: boolean,
-  hideMuseum?: boolean,
-};
-const FigCaption = (props: FigCaptionProps) => {
+const FigCaption = (props) => {
   const { picture, hideArtist = false, hideMuseum = false } = props;
   const lang = useContext(LangContext);
 
@@ -90,15 +83,6 @@ const FigCaption = (props: FigCaptionProps) => {
   );
 };
 
-type PictureProps = {
-  pictures: Array<PictureItem>,
-  hideArtist?: boolean,
-  hideMuseum?: boolean,
-  startIndex?: number,
-  showDropShadow?: boolean,
-  clickToZoom?: boolean,
-  contentLang: TextLang,
-};
 const Picture = ({
   pictures,
   contentLang,
@@ -107,7 +91,7 @@ const Picture = ({
   showDropShadow = true,
   clickToZoom = true,
   startIndex = 0,
-}: PictureProps) => {
+}) => {
   const [overlayShown, showOverlay] = useState(false);
   const picture = pictures[startIndex];
   const src = picture.src;
@@ -182,7 +166,8 @@ const Picture = ({
         <picture
           className={pictureClassName}
           onClick={onClick}
-          style={clipPathDropShadowStyle}>
+          style={clipPathDropShadowStyle}
+        >
           {sources}
           <img
             className={pictureClassName}

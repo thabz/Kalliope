@@ -1,7 +1,6 @@
 // @flow
 
 import React, { useEffect, useContext } from 'react';
-import type { Element, Node } from 'react';
 import { Link, Router } from '../routes';
 import Page from '../components/page.js';
 import Main from '../components/main.js';
@@ -33,31 +32,15 @@ import ErrorPage from './error.js';
 import HelpKalliope from '../components/helpkalliope.js';
 import { pluralize } from '../common/strings.js';
 import LangContext from '../common/LangContext.js';
-import type {
-  Lang,
-  Poet,
-  Work,
-  Text,
-  TextSource,
-  PictureItem,
-  KeywordRef,
-  PrevNextText,
-  Error,
-} from '../common/types.js';
 
-type BladrerProps = {
-  target: ?PrevNextText,
-  left?: boolean,
-  right?: boolean,
-};
-const Bladrer = (props: BladrerProps) => {
+const Bladrer = (props) => {
   const { target, left, right } = props;
   const lang = useContext(LangContext);
 
   if (target == null) {
     return null;
   }
-  const onClick = e => {
+  const onClick = (e) => {
     const url = Links.textURL(lang, target.id);
     Router.pushRoute(url);
     window.scrollTo(0, 0);
@@ -86,8 +69,7 @@ const Bladrer = (props: BladrerProps) => {
   );
 };
 
-type KeywordLinkProps = { keyword: KeywordRef, lang: Lang };
-class KeywordLink extends React.Component<KeywordLinkProps> {
+class KeywordLink extends React.Component {
   render() {
     const { keyword, lang } = this.props;
     let url = null;
@@ -122,8 +104,7 @@ class KeywordLink extends React.Component<KeywordLinkProps> {
   }
 }
 
-type TextHeadingProps = { text: Text };
-class TextHeading extends React.Component<TextHeadingProps> {
+class TextHeading extends React.Component {
   render() {
     const { text } = this.props;
 
@@ -181,18 +162,7 @@ class TextHeading extends React.Component<TextHeadingProps> {
   }
 }
 
-type TextComponentProps = {
-  lang: Lang,
-  highlight: string,
-  poet: Poet,
-  work: Work,
-  text: Text,
-  section_titles: ?Array<{ title: string, id: ?string }>,
-  prev?: PrevNextText,
-  next?: PrevNextText,
-  error: ?Error,
-};
-const TextPage = (props: TextComponentProps) => {
+const TextPage = (props) => {
   useEffect(() => {
     if (typeof location !== undefined) {
       const hash = location.hash;
@@ -232,8 +202,8 @@ const TextPage = (props: TextComponentProps) => {
     };
   }
 
-  const notes: Array<Node> = text.notes
-    .filter(note => note.type !== 'unknown-original')
+  const notes = text.notes
+    .filter((note) => note.type !== 'unknown-original')
     .map((note, i) => {
       return (
         <Note key={'note' + i} type={note.type}>
@@ -247,7 +217,8 @@ const TextPage = (props: TextComponentProps) => {
 
   text.notes
     .filter(
-      note => note.type === 'unknown-original' && note.unknownOriginalBy != null
+      (note) =>
+        note.type === 'unknown-original' && note.unknownOriginalBy != null
     )
     .map((note, i) => {
       const poet = note.unknownOriginalBy;
@@ -274,14 +245,14 @@ const TextPage = (props: TextComponentProps) => {
         </Note>
       );
     })
-    .filter((x: ?Node) => x != null)
-    .forEach((element: Node) => {
+    .filter((x) => x != null)
+    .forEach((element) => {
       notes.push(element);
     });
 
   let sourceText = '';
   if (text.source != null) {
-    const source: TextSource = text.source;
+    const sourceSource = text.source;
     sourceText = 'Teksten følger ';
     sourceText += source.source.replace(/\.?$/, ', ');
     if (source.pages.indexOf('-') > -1) {
@@ -322,7 +293,7 @@ const TextPage = (props: TextComponentProps) => {
       return s;
     }
     const firstPageNumber = text.source.facsimilePages[0];
-    let facsimilePictures: Array<PictureItem> = [];
+    let facsimilePictures = [];
     const srcPrefix = `https://kalliope.org/static/facsimiles/${poet.id}/${text.source.facsimile}`;
     for (let i = 0; i < text.source.facsimilePageCount; i++) {
       facsimilePictures.push({
@@ -366,7 +337,7 @@ const TextPage = (props: TextComponentProps) => {
 
   let renderedKeywords = null;
   if (text.keywords.length > 0) {
-    const list = text.keywords.map(k => {
+    const list = text.keywords.map((k) => {
       return <KeywordLink keyword={k} lang={lang} key={k.id} />;
     });
     renderedKeywords = <div style={{ marginTop: '30px' }}>{list}</div>;
@@ -458,11 +429,11 @@ const TextPage = (props: TextComponentProps) => {
   if (text.text_type === 'section' && text.toc != null) {
     body = <TOC toc={text.toc} lang={lang} indent={1} />;
   } else {
-    let highlightInterval: { from: number, to: number };
+    let highlightInterval;
     if (highlight != null) {
       let m = null;
-      let from: number = -1,
-        to: number = -1;
+      let from = -1,
+        to = -1;
       if ((m = highlight.match(/(\d+)-(\d+)/))) {
         from = parseInt(m[1]);
         to = parseInt(m[2]);
@@ -501,18 +472,18 @@ const TextPage = (props: TextComponentProps) => {
     ogDescription = OpenGraph.trimmedDescription(
       // Merge blocks
       text.blocks
-        .filter(b => b.type !== 'quote')
-        .map(b => b.lines)
+        .filter((b) => b.type !== 'quote')
+        .map((b) => b.lines)
         .reduce((result, lines) => {
           return result.concat(lines);
         }, [])
     );
 
     // Titlen skal indentes hvis første ikke-quote block indeholder numre.
-    const firstNoneQuoteBlock = text.blocks.find(b => b.type !== 'quote');
+    const firstNoneQuoteBlock = text.blocks.find((b) => b.type !== 'quote');
     shouldIndentTitle =
       firstNoneQuoteBlock != null &&
-      firstNoneQuoteBlock.lines.find(l => {
+      firstNoneQuoteBlock.lines.find((l) => {
         const lineOptions = l.length > 1 ? l[1] : {};
         return lineOptions.displayNum != null || lineOptions.margin != null;
       }) != null;
@@ -530,7 +501,8 @@ const TextPage = (props: TextComponentProps) => {
       pageTitle={<PoetName poet={poet} includePeriod />}
       pageSubtitle={_('Værker', lang)}
       menuItems={poetMenu(poet)}
-      selectedMenuItem="works">
+      selectedMenuItem="works"
+    >
       <FootnoteContainer key={text.id}>
         <SidebarSplit sidebar={sidebar}>
           <div>
@@ -541,7 +513,8 @@ const TextPage = (props: TextComponentProps) => {
                 className="text-content"
                 style={{
                   marginLeft: shouldIndentTitle ? '1.5em' : 0,
-                }}>
+                }}
+              >
                 <TextHeading text={text} />
               </div>
               <div>{body}</div>
@@ -556,8 +529,10 @@ const TextPage = (props: TextComponentProps) => {
                   font-family: 'Alegreya SC';
                 }
                 @media print {
-                  font-size: 8pt;
-                  line-height: 1.5;
+                  body {
+                    font-size: 8pt;
+                    line-height: 1.5;
+                  }
                 }
               `}</style>
             </article>
@@ -568,11 +543,7 @@ const TextPage = (props: TextComponentProps) => {
   );
 };
 
-TextPage.getInitialProps = async ({
-  query: { lang, textId, highlight },
-}: {
-  query: { lang: Lang, textId: string, highlight: string },
-}) => {
+TextPage.getInitialProps = async ({ query: { lang, textId, highlight } }) => {
   const json = await Client.text(textId);
   return {
     lang,

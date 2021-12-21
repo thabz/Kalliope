@@ -1,7 +1,4 @@
-// @flow
-
 import React from 'react';
-import type { Node } from 'react';
 import { Link, Router } from '../routes';
 import Page from '../components/page.js';
 import { kalliopeCrumbs } from '../components/breadcrumbs.js';
@@ -17,20 +14,15 @@ import Picture from '../components/picture.js';
 import { FootnoteContainer, FootnoteList } from '../components/footnotes.js';
 import Note from '../components/note.js';
 import * as Links from '../components/links';
-import type { Lang, Keyword, Error } from '../common/types.js';
 import * as Paths from '../common/paths.js';
 import * as Client from '../common/client.js';
 import { createURL } from '../common/client.js';
 import * as OpenGraph from '../common/opengraph.js';
 import ErrorPage from './error.js';
 import _ from '../common/translations.js';
+import 'regenerator-runtime';
 
-type KeywordComponentProps = {
-  lang: Lang,
-  keyword: Keyword,
-  error?: Error,
-};
-const KeywordPage = (props: KeywordComponentProps) => {
+const KeywordPage = (props) => {
   const { lang, keyword, error } = props;
 
   if (error != null) {
@@ -51,7 +43,7 @@ const KeywordPage = (props: KeywordComponentProps) => {
   });
   const renderedPictures = <SidebarPictures>{pictures}</SidebarPictures>;
 
-  let sidebar: Array<Node> = [];
+  let sidebar = [];
 
   if (keyword.has_footnotes || keyword.pictures.length > 0) {
     if (keyword.has_footnotes) {
@@ -89,7 +81,8 @@ const KeywordPage = (props: KeywordComponentProps) => {
       crumbs={crumbs}
       pageTitle={title}
       menuItems={kalliopeMenu()}
-      selectedMenuItem="keywords">
+      selectedMenuItem="keywords"
+    >
       <FootnoteContainer key={keyword.id}>
         <SidebarSplit sidebar={sidebar}>
           <div key="content">
@@ -111,11 +104,7 @@ const KeywordPage = (props: KeywordComponentProps) => {
   );
 };
 
-KeywordPage.getInitialProps = async ({
-  query: { lang, keywordId },
-}: {
-  query: { lang: Lang, keywordId: string },
-}) => {
+KeywordPage.getInitialProps = async ({ query: { lang, keywordId } }) => {
   const json = await Client.keyword(keywordId);
   if (json == null) {
     return { lang, error: 'Ikke fundet', keyword: null };

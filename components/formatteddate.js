@@ -1,21 +1,15 @@
 // @flow
 
-type parseDateReturnType = {
-  day: ?number,
-  month: ?number,
-  year: ?number,
-  prefix: ?string,
-};
-export const parseDate = (date: ?string): ?parseDateReturnType => {
+export const parseDate = (date) => {
   if (date == null) {
     return null;
   }
-  let prefix: ?string = null,
-    day: ?number = null,
-    month: ?number = null,
-    year: ?number = null;
+  let prefix = null,
+    day = null,
+    month = null,
+    year = null;
 
-  let m: ?Array<string>;
+  let m;
   if ((m = date.match(/ca/i))) {
     prefix = 'c.';
   }
@@ -33,11 +27,11 @@ export const parseDate = (date: ?string): ?parseDateReturnType => {
   return { prefix, year, month, day };
 };
 
-export const formattedDate = (date: ?string) => {
+export const formattedDate = (date) => {
   let m = null;
-  let day: ?number = null,
-    month: ?number = null,
-    year: ?number = null;
+  let day = null,
+    month = null,
+    year = null;
   let prefix = '';
   if (date == null) {
     return null;
@@ -69,7 +63,7 @@ export const formattedDate = (date: ?string) => {
   return `${prefix}${result}`;
 };
 
-export const extractYear = (date: string) => {
+export const extractYear = (date) => {
   let m = null,
     numericYear = null,
     prefix = '';
@@ -87,22 +81,16 @@ export const extractYear = (date: string) => {
   return [`${prefix}${numericYear}`, numericYear, prefix !== ''];
 };
 
-export const formattedYear = (date: string) => {
+export const formattedYear = (date) => {
   const [formatted] = extractYear(date);
   return formatted;
 };
 
-export const formattedYearRange = (born: string, dead: string) => {
-  const [
-    bornYearFormatted,
-    bornYearNumeric,
-    bornYearApproximated,
-  ] = extractYear(born);
-  const [
-    deadYearFormatted,
-    deadYearNumeric,
-    deadYearApproximated,
-  ] = extractYear(dead);
+export const formattedYearRange = (born, dead) => {
+  const [bornYearFormatted, bornYearNumeric, bornYearApproximated] =
+    extractYear(born);
+  const [deadYearFormatted, deadYearNumeric, deadYearApproximated] =
+    extractYear(dead);
   if (bornYearNumeric == null && deadYearNumeric == null) {
     return '(Ukendt levetid)';
   } else {

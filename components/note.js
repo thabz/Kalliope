@@ -1,17 +1,9 @@
 // @flow
 
 import React from 'react';
-import type { Node } from 'react';
-import type { NoteType, Lang } from '../common/types.js';
 import TextContent from './textcontent.js';
 
-type NoteProps = {
-  type?: NoteType,
-  className?: string,
-  children?: Node,
-};
-
-const Note = (props: NoteProps) => {
+const Note = (props) => {
   const { className, type, children } = props;
   let finalClassName = (className || '') + ' sidebar-note';
   if (type === 'credits') {

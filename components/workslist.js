@@ -5,15 +5,8 @@ import WorkName from '../components/workname.js';
 import { Link } from '../routes';
 import CommonData from '../common/commondata.js';
 import _ from '../common/translations.js';
-import type { Lang, Poet, Work, PictureItem, Error } from '../common/types.js';
 
-type WorksListProps = {
-  lang: Lang,
-  poet: Poet,
-  works: Array<Work>,
-};
-
-const workNameTranslated = (work, lang): string => {
+const workNameTranslated = (work, lang) => {
   let result = work.toctitle;
   if (work.id == 'andre') {
     return _('Andre digte', lang);
@@ -22,7 +15,7 @@ const workNameTranslated = (work, lang): string => {
   }
 };
 
-export default class WorksList extends React.Component<WorksListProps> {
+export default class WorksList extends React.Component {
   render() {
     const { lang, poet, works } = this.props;
 
@@ -30,7 +23,7 @@ export default class WorksList extends React.Component<WorksListProps> {
       return null;
     }
 
-    const sortWorks = works => {
+    const sortWorks = (works) => {
       if (poet.id === 'bibel') {
         return works;
       } else {
@@ -51,7 +44,7 @@ export default class WorksList extends React.Component<WorksListProps> {
     };
 
     const anyPrefixes =
-      works.filter(work => work.toctitle.prefix != null).length > 0;
+      works.filter((work) => work.toctitle.prefix != null).length > 0;
 
     const rows = sortWorks(works).map((work, i) => {
       const workName = workNameTranslated(work, lang);

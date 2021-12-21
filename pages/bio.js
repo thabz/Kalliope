@@ -28,23 +28,9 @@ import * as Client from '../common/client.js';
 import * as OpenGraph from '../common/opengraph.js';
 import _ from '../common/translations.js';
 
-import type {
-  Lang,
-  Poet,
-  DateWithPlace,
-  PictureItem,
-  TimelineItem,
-  TextContentType,
-  TextLang,
-  Error,
-} from '../common/types.js';
 import { createURL } from '../common/client.js';
 
-const dateAndPlace = (
-  datePlace: ?DateWithPlace,
-  lang: Lang,
-  age?: ?number
-): Array<?React$Element<*> | string> | string => {
+const dateAndPlace = (datePlace, lang, age) => {
   if (datePlace == null) {
     return _('Ukendt år', lang);
   }
@@ -63,11 +49,7 @@ const dateAndPlace = (
   return result;
 };
 
-type PersonMetaLineProps = {
-  label: string,
-  value: ?string | ?React$Element<*> | ?Array<?React$Element<*> | string>,
-};
-class PersonMetaLine extends React.Component<PersonMetaLineProps> {
+class PersonMetaLine extends React.Component {
   render() {
     const { label, value } = this.props;
     if (value == null) {
@@ -91,11 +73,7 @@ class PersonMetaLine extends React.Component<PersonMetaLineProps> {
   }
 }
 
-type PersonMetaProps = {
-  poet: Poet,
-  lang: Lang,
-};
-class PersonMeta extends React.Component<PersonMetaProps> {
+class PersonMeta extends React.Component {
   render() {
     const { poet, lang } = this.props;
     if (poet.type === 'collection') {
@@ -129,7 +107,7 @@ class PersonMeta extends React.Component<PersonMetaProps> {
         if (deadBeforeBirthday) {
           yearDiff -= 1;
         }
-        let ca: string = '';
+        let ca = '';
         if (
           born.prefix != null ||
           dead.prefix != null ||
@@ -182,12 +160,7 @@ class PersonMeta extends React.Component<PersonMetaProps> {
   }
 }
 
-type PersonPortraitProps = {
-  poet: Poet,
-  lang: Lang,
-  portraits?: Array<PictureItem>,
-};
-class PersonPortrait extends React.Component<PersonPortraitProps> {
+class PersonPortrait extends React.Component {
   render() {
     const { portraits, poet, lang } = this.props;
     if (!poet.has_portraits || portraits == null) {
@@ -210,11 +183,8 @@ class PersonPortrait extends React.Component<PersonPortraitProps> {
     );
   }
 }
-type TimelineProps = {
-  timeline: Array<TimelineItem>,
-  lang: Lang,
-};
-class Timeline extends React.Component<TimelineProps> {
+
+class Timeline extends React.Component {
   render() {
     const { timeline, lang } = this.props;
     if (timeline.length === 0) {
@@ -231,7 +201,7 @@ class Timeline extends React.Component<TimelineProps> {
 
       let html = null;
       if (item.type === 'image' && item.src != null) {
-        const picture: PictureItem = {
+        const picture = {
           src: item.src,
           lang: lang,
           content_lang: item.content_lang,
@@ -263,14 +233,16 @@ class Timeline extends React.Component<TimelineProps> {
             marginBottom: '10px',
             breakInside: 'avoid',
             lineHeight: '22px',
-          }}>
+          }}
+        >
           <div style={{ float: 'left', fontSize: '15px' }}>{year}</div>
           <div
             style={{
               marginLeft: '50px',
               fontSize: '16px',
               color: item.is_history_item ? '#666' : 'black',
-            }}>
+            }}
+          >
             {html}
           </div>
         </div>
@@ -283,25 +255,10 @@ class Timeline extends React.Component<TimelineProps> {
     );
   }
 }
-type BioProps = {
-  lang: Lang,
-  portraits?: Array<PictureItem>,
-  poet: Poet,
-  timeline: Array<TimelineItem>,
-  content_html: TextContentType,
-  content_lang: TextLang,
-  error: ?Error,
-};
-const BioPage = (props: BioProps) => {
-  const {
-    lang,
-    poet,
-    portraits,
-    content_html,
-    content_lang,
-    timeline,
-    error,
-  } = props;
+
+const BioPage = (props) => {
+  const { lang, poet, portraits, content_html, content_lang, timeline, error } =
+    props;
 
   if (error) {
     return <ErrorPage error={error} lang={lang} message="Ukendt person" />;
@@ -327,7 +284,8 @@ const BioPage = (props: BioProps) => {
       pageSubtitle={_('Biografi', lang)}
       menuItems={poetMenu(poet)}
       poet={poet}
-      selectedMenuItem="bio">
+      selectedMenuItem="bio"
+    >
       <SidebarSplit sidebar={sidebarItems} sidebarOnTopWhenSplit={true}>
         <div style={{ lineHeight: '1.6' }}>
           <TextContent
@@ -353,11 +311,7 @@ const BioPage = (props: BioProps) => {
   );
 };
 
-BioPage.getInitialProps = async ({
-  query: { lang, poetId },
-}: {
-  query: { lang: Lang, poetId: string },
-}) => {
+BioPage.getInitialProps = async ({ query: { lang, poetId } }) => {
   const json = await Client.bio(poetId);
   return {
     lang,

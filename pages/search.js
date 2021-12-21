@@ -21,16 +21,15 @@ import * as Strings from '../common/strings.js';
 import CommonData from '../common/commondata.js';
 import ErrorPage from './error.js';
 import * as Client from '../common/client.js';
-import type { Lang, Country, Poet, PoetId, Error } from '../common/types.js';
 import _ from '../common/translations.js';
 import LangContext from '../common/LangContext.js';
 
-const RenderedHits = (props: { hits: [] }) => {
+const RenderedHits = (props) => {
   const { hits } = props;
   const lang = useContext(LangContext);
 
   return hits
-    .filter(x => x._source.text != null)
+    .filter((x) => x._source.text != null)
     .map((hit, i) => {
       const { poet, work, text } = hit._source;
       const { highlight } = hit;
@@ -99,7 +98,7 @@ const RenderedHits = (props: { hits: [] }) => {
               margin-bottom: 20px;
             }
             .result-item::before {
-              content: "${i + 1}"
+              content: '${i + 1}';
             }
           `}</style>
         </div>
@@ -107,13 +106,7 @@ const RenderedHits = (props: { hits: [] }) => {
     });
 };
 
-type SearchProps = {
-  lang: Lang,
-  poet: ?Poet,
-  country: Country,
-  query: string,
-};
-const SearchPage = (props: SearchProps) => {
+const SearchPage = (props) => {
   const { lang, poet, country, query } = props;
   const [error, setError] = useState(null);
   const [hits, setHits] = useState([]);
@@ -218,7 +211,7 @@ const SearchPage = (props: SearchProps) => {
       </Link>
     );
   } else if (country != 'dk') {
-    const countryData = CommonData.countries.filter(x => x.code === country);
+    const countryData = CommonData.countries.filter((x) => x.code === country);
     if (countryData.length > 0) {
       const adjective = countryData[0].adjective[lang];
       resultaterBeskrivelse += ` i den ${adjective} samling.`;
@@ -258,7 +251,8 @@ const SearchPage = (props: SearchProps) => {
       country={country}
       menuItems={tabs}
       poet={poet}
-      selectedMenuItem="search">
+      selectedMenuItem="search"
+    >
       <div className="result-items">
         <div className="result-count">
           {resultaterBeskrivelse} {linkToFullSearch}
@@ -281,8 +275,6 @@ const SearchPage = (props: SearchProps) => {
 
 SearchPage.getInitialProps = async ({
   query: { lang, country, poetId, query },
-}: {
-  query: { lang: Lang, country: Country, poetId?: PoetId, query: string },
 }) => {
   const poet = await Client.poet(poetId);
   return {

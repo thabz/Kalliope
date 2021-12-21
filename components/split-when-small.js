@@ -1,12 +1,8 @@
 // @flow
 
 import React from 'react';
-import type { Node } from 'react';
 
-type SplitWhenSmallProps = {
-  children: Node,
-};
-export default class SplitWhenSmall extends React.Component<SplitWhenSmallProps> {
+export default class SplitWhenSmall extends React.Component {
   render() {
     return (
       <div className="horizontal-on-small">

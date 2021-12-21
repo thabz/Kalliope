@@ -1,15 +1,8 @@
 // @flow
 
 import React from 'react';
-import type { Node } from 'react';
 
-type SidebarSplitProps = {
-  sidebar: Node | Array<Node> | null,
-  children?: Node,
-  sidebarOnTopWhenSplit?: boolean,
-  style?: {},
-};
-export default class SidebarSplit extends React.Component<SidebarSplitProps> {
+export default class SidebarSplit extends React.Component {
   render() {
     const { sidebar, sidebarOnTopWhenSplit, style = {} } = this.props;
     let className =
