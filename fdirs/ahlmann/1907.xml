@@ -10,7 +10,7 @@
     <pictures>
         <picture src="1907-p1.jpg">Titelbladet til <i>Ungdoms Legende</i> (1907) lyder ,,Hans Ahlmann / Ungdoms / Legende // København - Kristiania / Gyldendalske Boghandel, Nordisk Forlag / 1907''.</picture>
     </pictures>
-    <source facsimile="115308038478_color" facsimile-pages-num="91" facsimile-pages-offset="10">Hans Ahlmann: <i>Ungdoms Legende</i>, Gyldendalske Boghandel. Nordisk Forlag, København, 1907</source>
+    <source facsimile="115308038478_color" facsimile-pages-num="91" facsimile-pages-offset="6">Hans Ahlmann: <i>Ungdoms Legende</i>, Gyldendalske Boghandel. Nordisk Forlag, København, 1907</source>
 </workhead>
 <workbody>
 
@@ -946,7 +946,9 @@ Hellere glemt — end en bitter Dag
     <title>Mona Lisa</title>
     <firstline>Dit Smil er som en Sejersfærd</firstline>
     <source pages="51"/>
-    <!-- TODO: Indsæt maleriet -->
+    <pictures>
+        <picture src="ahlmann2022051823-p1.jpg">Leonardo da Vinci: <i>Ritratto di Monna Lisa del Giocondo</i>, 1503-06, olie på panel, 77x53cm. Louvre.</picture>
+    </pictures>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1017,7 +1019,9 @@ og ser os selv, vort Liv bestemt
     <linktitle>Med Stuckenbergs Sne</linktitle>
     <firstline>Disse Sange, som jeg her har sendt dig</firstline>
     <source pages="55"/>
-    <!-- TODO: Link til værket -->
+    <notes>
+        <note>Cf. Stuckenbergs <a work="stuckenberg/1901"><i>Sne</i> (1901)</a></note>.
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1061,6 +1065,7 @@ ser en Stjernehimmel i dit Indre.
     <firstline>End ligger din Have i Solskinnet svøbt</firstline>
     <source pages="56-57"/>
     <quality>korrektur1,kilde,side</quality>
+    <!-- TODO: Indsæt citatet fra Otto Roquette: Noch ist die blühende, goldene Zeit Noch sind die Tage der Rosen -->
 </head>
 <body>
 <poetry>
