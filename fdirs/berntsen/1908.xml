@@ -10,7 +10,7 @@
     <pictures>
         <picture src="1908-p1.jpg">Titelbladet til <i>Digte</i> (1908) lyder ,,Aage Berntsen / Digte // Gyldendalske Boghandel / Nordisk Forlag / MDCCCCVIII''.</picture>
     </pictures>
-    <source facsimile="115308043530-color" facsimile-pages-num="109" facsimile-pages-offset="10">Aage Berntsen: <i>Digte</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1908.</source>
+    <source facsimile="115308043530-color" facsimile-pages-num="109" facsimile-pages-offset="6">Aage Berntsen: <i>Digte</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1908.</source>
 </workhead>
 <workbody>
 
@@ -187,7 +187,10 @@ og Livets onde Skygge.
     <title>E. Munch: Vaar</title>
     <firstline>Alle Fugle synge</firstline>
     <source pages="14-15"/>
-    <!-- TODO: Indsæt billedet https://www.nasjonalmuseet.no/samlingen/objekt/NG.M.00498 -->
+    <pictures>
+        <picture src="berntsen2022052104-p1.jpg" museum="digitalmuseum.no" objid="0110495978">Edvard Munch: <i>Vår</i>, 1889, olie på lærred, 169,5 x 264,2 cm, Nasjonalmuseet for kunst, arkitektur og design, Oslo.</picture>
+        <!-- https://www.nasjonalmuseet.no/samlingen/objekt/NG.M.00498 -->
+    </pictures>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -302,7 +305,7 @@ som Dine Øjne blinde -.
 </head>
 <body>
 <poetry>
-Det kolde, gustne Morgenlys
+<sc>Det</sc> kolde, gustne Morgenlys
 glider gennem Ruden
 over et Pigeansigt
 fortrukket i Smerte.
@@ -1314,7 +1317,7 @@ af Støvet under Tue.
 </head>
 <body>
 <poetry>
-<sc>Kidmeon</sc> synger for Kong Salomon
+<sc>Kidmeon</sc> synger for Kong Salomon -
 hans smalle brune Hænder
 fravrister
 den guldstrængede Harpe
