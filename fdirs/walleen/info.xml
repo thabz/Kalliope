@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="walleen" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Alphonse</firstname>
+    <lastname>Walleen</lastname>
+    <fullname>Carl Alphonse Walleen-Bornemann</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1863-04-06</date>
+      <place>Gränna, Sverige</place>
+    </born>
+    <dead>
+      <date>1941-11-28</date>
+      <place>København</place>
+    </dead>
+  </period>
+  
+  <works>1893,1894</works>
+</person>

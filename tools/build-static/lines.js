@@ -2,13 +2,19 @@ const { isFileModified } = require('../libs/caching.js');
 const {
   safeMkdir,
   writeJSON,
-  loadXMLDoc,
   replaceDashes,
   fileExists,
 } = require('../libs/helpers.js');
 const { primaryTextVariantId } = require('./variants.js');
 const { extractTitle } = require('./parsing.js');
 const { poetName, workName } = require('./formatting.js');
+const {
+  getChildByTagName,
+  getElementsByTagNames,
+  loadXMLDoc,
+  safeGetAttr,
+  tagName,
+} = require('./xml.js');
 
 const build_global_lines_json = collected => {
   safeMkdir('static/api/alltexts');
@@ -18,7 +24,7 @@ const build_global_lines_json = collected => {
     workIds.forEach(workId => {
       const workFilename = `fdirs/${poetId}/${workId}.xml`;
       if (!fileExists(workFilename)) {
-          return
+        return;
       }
       if (!isFileModified(workFilename)) {
         return;
@@ -51,8 +57,10 @@ const build_global_lines_json = collected => {
           if (line != null) {
             // firstline is null for prose texts
             let indexableLine = line
+              .trim()
               .replace(',', '')
               .replace('!', '')
+              .replace('?', '')
               .replace(/^\[/, '')
               .replace(/^\(/, '')
               .toUpperCase()
@@ -66,9 +74,9 @@ const build_global_lines_json = collected => {
                 .replace(/^Ö/, 'Ø')
                 .replace(/^AA/, 'Å');
             }
-            let firstletter = indexableLine[0];
-            if (firstletter >= '0' && firstletter <= '9') {
-              firstletter = '_'; // Vises som "Tegn"
+            let firstletter = (indexableLine || '_')[0];
+            if (!firstletter.match(/^[A-ZÆØÅÄÖÜ_]$/)) {
+              firstletter = '_';
             }
             const work = collected.works.get(
               textMeta.poetId + '/' + textMeta.workId
@@ -151,49 +159,59 @@ const build_poet_lines_json = collected => {
     collected.workids.get(poetId).forEach(workId => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
       if (!fileExists(filename)) {
-          return
+        return;
       }
       let doc = loadXMLDoc(filename);
       if (doc == null) {
         console.log("Couldn't load", filename);
       }
-      doc.find('//poem|//section[@id]').forEach(part => {
-        const textId = part.attr('id').value();
-        // Skip digte som ikke er ældste variant
-        if (primaryTextVariantId(textId, collected) !== textId) {
-          return;
-        }
+      getElementsByTagNames(doc, ['text', 'section'])
+        .filter(part => safeGetAttr(part, 'id') != null)
+        .forEach(part => {
+          const textId = safeGetAttr(part, 'id');
+          // Skip digte som ikke er ældste variant
+          if (primaryTextVariantId(textId, collected) !== textId) {
+            return;
+          }
+          // Skip tekster markeret med skip-index
+          const skipIndex = safeGetAttr(part, 'skip-index');
+          if (skipIndex != null) {
+            return;
+          }
 
-        const head = part.get('head');
-        const firstline = extractTitle(head, 'firstline');
-        const title = extractTitle(head, 'title') || firstline;
-        const indextitle = extractTitle(head, 'indextitle') || title;
-        if (indextitle == null) {
-          throw `${textId} mangler førstelinje, indextitle og title i ${poetId}/${workId}.xml`;
-        }
-        // Vi tillader manglende firstline, men så skal det markeres med et <nofirstline/> tag.
-        // Dette bruges f.eks. til mottoer af andre forfattere.
-        if (
-          part.name() === 'poem' &&
-          firstline == null &&
-          head.get('nofirstline') == null
-        ) {
-          throw `${textId} mangler firstline i ${poetId}/${workId}.xml`;
-        }
-        if (firstline != null && firstline.title.indexOf('<') > -1) {
-          throw `${textId} har markup i førstelinjen i ${poetId}/${workId}.xml`;
-        }
-        if (indextitle.title.indexOf('>') > -1) {
-          throw `${textId} har markup i titlen i ${poetId}/${workId}.xml`;
-        }
-        collectedLines.push({
-          id: textId,
-          work_id: workId,
-          lang: poet.lang,
-          title: replaceDashes(indextitle.title),
-          firstline: firstline == null ? null : replaceDashes(firstline.title),
+          const head = getChildByTagName(part, 'head');
+          const firstline = extractTitle(head, 'firstline');
+          const title = extractTitle(head, 'title') || firstline;
+          const indextitle = extractTitle(head, 'indextitle') || title;
+          if (indextitle == null) {
+            throw `${textId} mangler førstelinje, indextitle og title i ${poetId}/${workId}.xml`;
+          }
+          // Vi tillader manglende firstline, men så skal det markeres med et <nofirstline/> tag.
+          // Dette bruges f.eks. til mottoer af andre forfattere.
+          /*
+          if (
+            tagName(part) === 'poem' &&
+            firstline == null &&
+            getChildByTagName(head, 'nofirstline') == null
+          ) {
+            throw `${textId} mangler firstline i ${poetId}/${workId}.xml`;
+          }
+          */
+          if (firstline != null && firstline.title.indexOf('<') > -1) {
+            throw `${textId} har markup i førstelinjen i ${poetId}/${workId}.xml`;
+          }
+          if (indextitle.title.indexOf('>') > -1) {
+            throw `${textId} har markup i titlen i ${poetId}/${workId}.xml`;
+          }
+          collectedLines.push({
+            id: textId,
+            work_id: workId,
+            lang: poet.lang,
+            title: replaceDashes(indextitle.title),
+            firstline:
+              firstline == null ? null : replaceDashes(firstline.title),
+          });
         });
-      });
     });
     // Detect firstlines and titles that are shared between multiple
     // poems. Mark these with non_unique_firstline and non_unique_indextitle.

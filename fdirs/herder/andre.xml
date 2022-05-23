@@ -9,7 +9,7 @@
 </workhead>
 <workbody>
 
-<poem id="herder2001082501">
+<text id="herder2001082501">
 <head>
    <title>Der Mond</title>
    <toctitle>Der Mond</toctitle>
@@ -18,16 +18,18 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Und grämt dich, Edler, noch ein Wort
 Der kleinen Neidgesellen?
 Der hohe Mond, er leuchtet dort,
 Und läßt die Hunde bellen
 Und schweigt und wandelt ruhig fort,
 Was Nacht ist, aufzuhellen.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="herder2001082502">
+<text id="herder2001082502">
 <head>
    <title>Die Fahrt zur Geliebten</title>
    <subtitle>Lappländisch</subtitle>
@@ -37,6 +39,7 @@ Was Nacht ist, aufzuhellen.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Sonne, wirf den hellesten Strahl auf den Orra-See!
 Ich möchte steigen auf jeden Fichtengipfel,
 Wüßt ich nur, ich sähe den Orra-See.
@@ -72,10 +75,11 @@ Ich irrte ab vom Wege, dem rechten Wege.
 
 Einen Schluß hab ich, dem will ich folgen,
 So weiß ich, ich finde den rechten Weg.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="herder2001082503">
+<text id="herder2001082503">
 <head>
    <title>Verklärung</title>
    <toctitle>Verklärung</toctitle>
@@ -84,6 +88,7 @@ So weiß ich, ich finde den rechten Weg.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Lebensfunke, vom Himmel entglüht,
 Der sich loszuwinden müht!
 Zitternd, kühn, vor Sehnen leidend,
@@ -108,18 +113,21 @@ Leiht, o leiht mir eure Schwingen;
 Ihr Brüder-Geister, helft mir singen:
 »O Grab, wo ist dein Sieg?
 Wo ist dein Pfeil, o Tod?«
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="herder2001082504">
+<text id="herder2001082504">
 <head>
    <title>Herr Oluf</title>
-   <toctitle>Herr Oluf</toctitle>
-   <indextitle>Herr Oluf</indextitle>
    <firstline>Herr Oluf reitet spät und weit</firstline>
+   <notes>
+       <note>Cf. folkevisen <xref poem="folke2001042101"/>.</note>
+   </notes>
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Herr Oluf reitet spät und weit,
 Zu bieten auf seine Hochzeitleut'.
 Du tanzen die Elfen auf grünem Strand,
@@ -168,10 +176,11 @@ Sie schenkten Met, sie schenkten Wein:
 Zu proben allda sein Roß und Hund."
 Die Braut hob auf den Scharlach rot,
 Da lag Herr Oluf und war tot.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="herder2001082505">
+<text id="herder2001082505">
 <head>
    <title>Ännchen von Tharau</title>
    <subtitle>Das samländische Original wurde übertragen von Johann Gottfried Herder</subtitle>
@@ -181,6 +190,7 @@ Da lag Herr Oluf und war tot.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Ännchen von Tharau ist, die mir gefällt,
 Sie ist mein Leben, mein Gut und mein Geld.
 
@@ -231,10 +241,11 @@ Ein Leib und Seele wird aus Ich und Du.
 
 Dies macht das Leben zum himmlischen Reich,
 Durch Zanken wird es der Hölle gleich.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="herder2001082506">
+<text id="herder2001082506">
 <head>
    <title>In Mitte der Ewigkeit</title>
    <toctitle>In Mitte der Ewigkeit</toctitle>
@@ -243,6 +254,7 @@ Durch Zanken wird es der Hölle gleich.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Ein Traum, ein Traum ist unser Leben
 auf Erden hier.
 Wie Schatten auf den Wegen schweben
@@ -251,10 +263,11 @@ Und messen unsre trägen Tritte
 nach Raum und Zeit;
 und sind (und wissen's nicht) in Mitte
 der Ewigkeit ...
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="herder2001082507">
+<text id="herder2001082507">
 <head>
    <title>Dein Schwert, wie ist's von Blut so rot</title>
    <subtitle>Schottisch</subtitle>
@@ -264,6 +277,7 @@ der Ewigkeit ...
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Dein Schwert, wie ist's von Blut so rot?
 Edward, Edward!
 Dein Schwert, wie ist's von Blut so rot?
@@ -333,10 +347,11 @@ Der Fluch der Hölle soll auf euch ruhn,
 Mutter, Mutter!
 Der Fluch der Hölle soll auf euch ruhn,
 Denn ihr, ihr rietet's mir! O!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="herder2001102203">
+<text id="herder2001102203">
 <head>
    <title>Erlkönigs Tochter</title>
    <toctitle>Erlkönigs Tochter</toctitle>
@@ -345,6 +360,7 @@ Denn ihr, ihr rietet's mir! O!
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Herr Oluf reitet spät und weit,
 Zu bieten auf seine Hochzeitsleut;
 
@@ -407,10 +423,11 @@ Er probt allda sein Pferd und Hund.«
 
 Die Braut hob auf den Scharlach rot,
 Da lag Herr Oluf, und er war tot.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="herder2001102205">
+<text id="herder2001102205">
 <head>
    <title>Bruchstücke</title>
    <toctitle>Bruchstücke</toctitle>
@@ -422,6 +439,7 @@ Da lag Herr Oluf, und er war tot.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Ach, die gliederlösende böse Liebe quält mich,
 lieblichbitter singt der untreffbare Vogel.
 Liebster Artis, du warst mir einst so spröde,
@@ -452,10 +470,11 @@ Unscheinbar wirst du müssen
 in Todes Wohnung gehen,
 und niemand wird dich ansehn
 im Heer der dunklen Schatten.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="herder2002011301">
+<text id="herder2002011301">
 <head>
    <title>Vereinigung der Lebensalter</title>
    <toctitle>Vereinigung der Lebensalter</toctitle>
@@ -474,6 +493,7 @@ im Heer der dunklen Schatten.
    <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
+<poetry>
      <i>Der Jüngling.</i>
 Am Morgenroth, im Lenz des süssen Lebens
 Erwach ich noch zu täglichneuem Glück.
@@ -502,7 +522,8 @@ Denn, Kinder, wisst. Den Anfang krönt das Ende;
 Der Ausgang ist der langen Laufbahn Preis. -"
 Sie gaben der Natur sich in die Hände;
 Sie misschte glücklich, u. es ward ein <i>Greis.</i>
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="waller" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Edmund</firstname>
+    <lastname>Waller</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1606-03-03</date>
+      <place>Coleshill, Buckinghamshire</place>
+    </born>
+    <dead>
+      <date>1687-10-21</date>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

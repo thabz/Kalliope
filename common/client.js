@@ -83,6 +83,14 @@ export const dictItem = async (dictItemId: string): FetchDictItemResult => {
   return fetchJSON(`/static/api/dict/${dictItemId}.json`);
 };
 
+type FetchMuseumsItemResult = Promise<{
+  museums: Array<Museum>,
+  error: ?Error,
+}>;
+export const museums = async (): FetchMuseumsItemResult => {
+  return fetchJSON(`/static/api/museums.json`);
+};
+
 export type FetchWorkResult = {
   poet: Poet,
   work: Work,
@@ -174,7 +182,8 @@ export const text = async (textId: string): FetchTextResult => {
 };
 
 type FetchSearchResult = Promise<{
-  hits: any,
+  hits: { hits: [], total: number },
+  error: ?Error,
 }>;
 export const search = async (
   poetId: string = '',
@@ -188,4 +197,14 @@ export const search = async (
   }
   const res = await fetch(createURL(URL));
   return (await res.json(): FetchSearchResult);
+};
+
+type FetchTextsResult = Promise<{
+  poet: Poet,
+  lines: Object,
+}>;
+
+export const texts = async (poetId: PoetId): FetchTextsResult => {
+  const json: FetchTextsResult = fetchJSON(`/static/api/${poetId}/texts.json`);
+  return json;
 };

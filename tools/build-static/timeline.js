@@ -1,11 +1,12 @@
-const {
-  safeMkdir,
-  writeJSON,
-  loadXMLDoc,
-  htmlToXml,
-} = require('../libs/helpers.js');
+const { safeMkdir, writeJSON, htmlToXml } = require('../libs/helpers.js');
 const { isFileModified } = require('../libs/caching.js');
-const { safeGetAttr } = require('./xml.js');
+const {
+  safeGetAttr,
+  safeGetInnerXML,
+  getChildByTagName,
+  loadXMLDoc,
+  getElementsByTagName,
+} = require('./xml.js');
 const { get_picture } = require('./parsing.js');
 
 // Accepterer YYYY, YYYY-MM, YYYY-MM-DD og returnerer altid YYYY-MM-DD
@@ -32,54 +33,54 @@ const sorted_timeline = timeline => {
   });
 };
 
-const load_timeline = (filename, collected) => {
+const load_timeline = async (filename, collected) => {
   let doc = loadXMLDoc(filename);
   if (doc == null) {
     return [];
   }
-  return doc.find('//events/entry').map(event => {
-    const type = event.attr('type').value();
-    const date = event.attr('date').value();
-    let data = {
-      date,
-      type,
-      is_history_item: true,
-    };
-    if (type === 'image') {
-      const onError = message => {
-        throw `${filename}: ${message}`;
+  return Promise.all(
+    getElementsByTagName(doc, 'entry').map(async event => {
+      const type = safeGetAttr(event, 'type');
+      const date = safeGetAttr(event, 'date');
+      let data = {
+        date,
+        type,
+        is_history_item: true,
       };
-      const pictureNode = event.get('picture');
-      if (pictureNode == null) {
-        onError('indeholder event med type image uden <picture>');
+      if (type === 'image') {
+        const onError = message => {
+          throw `${filename}: ${message}`;
+        };
+        const pictureNode = getChildByTagName(event, 'picture');
+        if (pictureNode == null) {
+          onError('indeholder event med type image uden <picture>');
+        }
+        const picture = await get_picture(
+          pictureNode,
+          '/static',
+          collected,
+          onError
+        );
+        data.src = picture.src;
+        data.content_lang = picture.content_lang;
+        data.lang = picture.lang;
+        data.content_html = picture.content_html;
+      } else {
+        data.content_lang = 'da';
+        data.lang = 'da';
+        const html = getChildByTagName(event, 'html');
+        data.content_html = htmlToXml(safeGetInnerXML(html).trim(), collected);
       }
-      const picture = get_picture(pictureNode, '/static', collected, onError);
-      data.src = picture.src;
-      data.content_lang = picture.content_lang;
-      data.lang = picture.lang;
-      data.content_html = picture.content_html;
-    } else {
-      data.content_lang = 'da';
-      data.lang = 'da';
-      const html = event.get('html');
-      data.content_html = htmlToXml(
-        html
-          .toString()
-          .replace('<html>', '')
-          .replace('</html>', '')
-          .trim(),
-        collected
-      );
-    }
-    return data;
-  });
+      return data;
+    })
+  );
 };
 
-const build_global_timeline = collected => {
+const build_global_timeline = async collected => {
   return load_timeline('data/events.xml', collected);
 };
 
-const build_poet_timeline_json = (poet, collected) => {
+const build_poet_timeline_json = async (poet, collected) => {
   const inonToString = (inon, lang) => {
     const translations = {
       'da*in': 'i',
@@ -157,9 +158,8 @@ const build_poet_timeline_json = (poet, collected) => {
         ],
       });
     }
-    let poet_events = load_timeline(
-      `fdirs/${poet.id}/events.xml`,
-      collected
+    let poet_events = (
+      await load_timeline(`fdirs/${poet.id}/events.xml`, collected)
     ).map(e => {
       e.is_history_item = false;
       return e;

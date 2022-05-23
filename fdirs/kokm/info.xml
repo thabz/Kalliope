@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="oehlenschlaeger" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Martin</firstname>
+    <lastname>Kok</lastname>
+    <christened>Johan Martin Koch</christened>
+    <pseudonym>August Birch, Povl Bunck, Ove Krag</pseudonym>
+  </name>
+  <period>
+    <born>
+      <date>1850-12-15</date>
+      <place>Århus</place>
+    </born>
+    <dead>
+      <date>1942-01-26</date>
+    </dead>
+  </period>
+  <works>1873,1879,1879s,1880,1881,1881n,1883,1884,1886,1888,1909</works>
+</person>

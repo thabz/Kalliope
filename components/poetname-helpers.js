@@ -1,6 +1,7 @@
 // @flow
 
 import type { Poet, Lang } from '../common/types.js';
+import { formattedYearRange } from './formatteddate.js';
 
 const nvl = <T>(x: ?T, v: T): T => {
   return x == null ? v : x;
@@ -33,27 +34,7 @@ export function poetNameParts(
 
   if (includePeriod && poet.period != null) {
     const { born, dead } = poet.period;
-    if (
-      born != null &&
-      born.date === '?' &&
-      dead != null &&
-      dead.date === '?'
-    ) {
-      periodPart = '(Ukendt levetid)';
-    } else {
-      let bornYear =
-        born == null || born.date === '?'
-          ? 'Ukendt år'
-          : born.date.substring(0, 4);
-      let deadYear =
-        dead == null || dead.date === '?'
-          ? 'ukendt år'
-          : dead.date.substring(0, 4);
-      if (deadYear.substring(0, 2) === bornYear.substring(0, 2)) {
-        deadYear = deadYear.substring(2, 4);
-      }
-      periodPart = `(${bornYear}–${deadYear})`;
-    }
+    periodPart = formattedYearRange(nvl(born, {}).date, nvl(dead, {}).date);
   }
   return [namePart, periodPart];
 }

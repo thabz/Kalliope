@@ -3,12 +3,17 @@ const {
   loadCachedJSON,
   writeCachedJSON,
 } = require('../libs/caching.js');
+const { safeMkdir, writeJSON, htmlToXml } = require('../libs/helpers.js');
 const {
-  safeMkdir,
+  safeGetAttr,
+  safeGetText,
+  getElementsByTagName,
+  getChildByTagName,
+  getChildrenByTagName,
+  tagName,
+  safeGetInnerXML,
   loadXMLDoc,
-  writeJSON,
-  htmlToXml,
-} = require('../libs/helpers.js');
+} = require('./xml.js');
 
 const build_dict_first_pass = collected => {
   const path = `data/dict.xml`;
@@ -19,21 +24,15 @@ const build_dict_first_pass = collected => {
 
   safeMkdir('static/api/dict');
   const doc = loadXMLDoc(path);
-  doc
-    .get('//entries')
-    .childNodes()
-    .forEach(item => {
-      if (item.name() !== 'entry') {
-        return;
-      }
-      const id = item.attr('id').value();
-      const title = item.get('ord').text();
-      const simpleData = {
-        id,
-        title,
-      };
-      collected.dict.set(id, simpleData);
-    });
+  getElementsByTagName(doc, 'entry').forEach(item => {
+    const id = safeGetAttr(item, 'id');
+    const title = safeGetText(item, 'ord');
+    const simpleData = {
+      id,
+      title,
+    };
+    collected.dict.set(id, simpleData);
+  });
   writeCachedJSON('collected.dict', Array.from(collected.dict));
 };
 
@@ -48,13 +47,7 @@ const build_dict_second_pass = collected => {
   let items = new Array();
 
   const createItem = (id, title, phrase, variants, body, collected) => {
-    const content_html = htmlToXml(
-      body
-        .toString()
-        .replace('<forkl>', '')
-        .replace('</forkl>', ''),
-      collected
-    );
+    const content_html = htmlToXml(safeGetInnerXML(body), collected);
     const has_footnotes =
       content_html.indexOf('<footnote') !== -1 ||
       content_html.indexOf('<note') !== -1;
@@ -77,33 +70,27 @@ const build_dict_second_pass = collected => {
   };
 
   const doc = loadXMLDoc(path);
-  doc
-    .get('//entries')
-    .childNodes()
-    .forEach(item => {
-      if (item.name() !== 'entry') {
-        return;
-      }
-      const id = item.attr('id').value();
-      const body = item.get('forkl');
-      const title = item.get('ord').text();
-      let phrase = null;
-      if (item.get('frase')) {
-        phrase = item.get('frase').text();
-      }
-      const variants = item.find('var').map(varItem => varItem.text());
-      variants.forEach(variant => {
-        createItem(
-          variant,
-          variant,
-          null,
-          null,
-          `<b>${variant}</b>: se <a dict="${id}">${title}</a>.`,
-          collected
-        );
-      });
-      createItem(id, title, phrase, variants, body, collected);
+
+  getElementsByTagName(doc, 'entry').forEach(item => {
+    const id = safeGetAttr(item, 'id');
+    const body = getChildByTagName(item, 'forkl');
+    const title = safeGetText(item, 'ord');
+    const phrase = safeGetText(item, 'frase');
+    const variants = getChildrenByTagName(item, 'var').map(varItem =>
+      safeGetText(varItem)
+    );
+    variants.forEach(variant => {
+      createItem(
+        variant,
+        variant,
+        null,
+        null,
+        `<b>${variant}</b>: se <a dict="${id}">${title}</a>.`,
+        collected
+      );
     });
+    createItem(id, title, phrase, variants, body, collected);
+  });
   writeJSON(`static/api/dict.json`, items);
 };
 

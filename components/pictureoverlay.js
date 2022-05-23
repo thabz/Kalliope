@@ -4,6 +4,7 @@ import CommonData from '../common/commondata.js';
 import TextContent from './textcontent.js';
 import { CloseButton, LeftArrow, RightArrow } from './icons.js';
 import type { PictureItem } from '../common/types.js';
+import { FigCaption } from './picture.js';
 
 const BiggerPicture = ({ picture }: { picture: PictureItem }) => {
   const src = picture.src;
@@ -33,19 +34,31 @@ const BiggerPicture = ({ picture }: { picture: PictureItem }) => {
     pictureClassName += ' oval-mask';
     imgClassName += ' oval-mask';
   }
+
+  let clipPathStyle = {};
+  let clipPathDropShadowStyle = {};
+  if (picture.clipPath != null) {
+    clipPathStyle = {
+      clipPath: picture.clipPath,
+      WebkitClipPath: picture.clipPath
+    };
+    clipPathDropShadowStyle = {
+      filter: 'drop-shadow(4px 4px 12px #888)',
+    };
+  }
+
   return (
-    <figure className="overlay-figure">
-      <img src={fallbackSrc} className={imgClassName} alt={alt} />
-      <figcaption>
-        <TextContent contentHtml={picture.content_html} contentLang="da" />
-      </figcaption>
+    <figure className="overlay-figure" style={clipPathDropShadowStyle}>
+      <img
+        src={fallbackSrc}
+        className={imgClassName}
+        alt={alt}
+        style={clipPathStyle}
+      />
+      <FigCaption picture={picture} />
       <style jsx>{`
         figure {
           margin: 0;
-        }
-        figcaption {
-          margin-top: 16px;
-          line-height: 1.5;
         }
         .oval-mask {
           border-radius: 50%;
@@ -122,7 +135,7 @@ const PictureOverlay = ({ pictures, startIndex, closeCallback }: Props) => {
     };
   });
 
-  let buttons = [<CloseButton onClick={hideOverlay} />];
+  let buttons = [<CloseButton onClick={hideOverlay} key="close" />];
   if (pictures.length > 1) {
     buttons.push(
       <RightArrow

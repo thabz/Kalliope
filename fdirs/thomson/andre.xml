@@ -9,7 +9,7 @@
 </workhead>
 <workbody>
 
-<poem id="thomson2000091902">
+<text id="thomson2000091902">
 <head>
    <title>Hymn on Solitude</title>
    <toctitle>Hymn on Solitude</toctitle>
@@ -18,6 +18,7 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
        Hail, mildly pleasing solitude,
 Companion of the wise and good;
 But, from whose holy, piercing eye,
@@ -70,16 +71,18 @@ I just may cast my careless eyes
 Where London's spiry turrets rise,
 Think of its crimes, its cares, its pain,
 Then shield me in the woods again.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="thomson2018070101">
+<text id="thomson2018070101">
 <head>
    <title>A Hymn on the Seasons</title>
    <firstline>These, as they change, Almighty Father!</firstline>
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 These, as they change, Almighty Father! these
 Are but the varied God. The rolling year
 Is full of Thee. Forth in the pleasing Spring
@@ -201,8 +204,9 @@ And better thence again, and better still,
 In infinite progression. But I lose
 Myself in Him, in Light ineffable!
 Come then, expressive Silence, muse His praise.
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

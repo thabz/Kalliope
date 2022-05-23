@@ -16,7 +16,7 @@
 </workhead>
 <workbody>
 
-<prose id="staffeldt2002041001">
+<text id="staffeldt2002041001" skip-index="true">
 <head>
    <title>[Anmærkning]</title>
    <toctitle>[Anmærkning]</toctitle>
@@ -28,9 +28,11 @@
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<prose>
     Forhen trykte Stykker ere ikke optagne i dette förste Bind, og kun sex, nemlig <i>Indvielsen</i>, <i>Ynglingen fra Megæra</i>, <i>Prometheus</i>, <i>Digterne</i>, <i>Blomsten</i> og <i>Digterbekiendelse</i> ere udarbeidede siden Aaret 1800. Nogle af Digterens Venner, der have troet, at den maurisk-spanske Romanze <i>Tilbagekomsten</i>, <i>Kongen af Tyrus</i> og et Par Stykker endnu, vare Efterligninger, foranledige her den Anmærkning, at Alt, om hvilket det Modsatte ikke udtrykkelig her tilstaaes, er originalt og Digterens Eiendom.
-</body>
 </prose>
+</body>
+</text>
 
 <section level="1">
 <head>
@@ -38,7 +40,7 @@
 </head>
 <content>
 
-<poem id="staffeldt1804a1">
+<text id="staffeldt1804a1">
 <head>
    <title>Indvielsen</title>
    <toctitle>Indvielsen</toctitle>
@@ -48,6 +50,7 @@
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg sad paa Pynten ved Sundets Bred,
         Himlene smilte,
 Og saae med Længsel i Dybet ned,
@@ -75,10 +78,11 @@ Vel lindrer ved Anelse, Dröm og Sang
         Hiertet sin Længsel,
 Dog brænder mig Kysset, jeg kiender ei Fred
 Förend jeg drager Himlene ned!<!-- ned. -->
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2001082101">
+<text id="staffeldt2001082101">
 <head>
    <title>Troubadouren</title>
    <toctitle>Troubadouren</toctitle>
@@ -88,6 +92,7 @@ Förend jeg drager Himlene ned!<!-- ned. -->
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I Greven af Toulouses Gaard
 En fremmed Harpespiller staaer
     Og veed ei hvor han træder.
@@ -157,10 +162,11 @@ Med Harpen over Mark og Vang
 Da vaagned' Dagen höit i Skye,
 Natur i Lys og Dug stod nye
    Og rödmende ham favned.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2001082102">
+<text id="staffeldt2001082102">
 <head>
    <title>Emmelina</title>
    <toctitle>Emmelina</toctitle>
@@ -175,6 +181,7 @@ Natur i Lys og Dug stod nye
    <keywords>romance</keywords>
 </head>
 <body>
+<poetry>
 ,,Op, mine Mænd, til Ledingsfærd!
     Op! Kamp og Bytte vinker,
 Ombelter eders vante Sværd
@@ -525,10 +532,11 @@ En Gru igiennemfarer hver
 En Vanderer som vanker her,
     Og under bange Bönner
     Han haster frem og stönner.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2001082103">
+<text id="staffeldt2001082103">
 <head>
    <title>Jagten</title>
    <toctitle>Jagten</toctitle>
@@ -541,6 +549,7 @@ En Vanderer som vanker her,
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 En Jæger blæser i krummede Horn,
     Tolv Dödssaar i Kogg'ret han bær,
 Saa vader han igiennem Klever og Korn
@@ -580,10 +589,11 @@ Da vendte hun sig og standsede brat,
     Paa Lillien stod hun saa fast,
 Men neppe han Beltefligen greb fat
     För Jorden under ham brast.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2001082401">
+<text id="staffeldt2001082401">
 <head>
    <title>Jertegnet</title>
    <toctitle>Jertegnet</toctitle>
@@ -593,6 +603,7 @@ Men neppe han Beltefligen greb fat
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Paa de höie Apenniner,
     Ved et skyefödt Kildevæld,
 I en Ridderborgs Ruiner
@@ -667,10 +678,11 @@ Og da hun tilbageilte,
     Saliganende, hun saae
 Moderen som freidigt smilte,
     Legende med sine Smaae.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2001082402">
+<text id="staffeldt2001082402">
 <head>
    <title>Et Aar i Padua</title>
    <toctitle>Et Aar i Padua</toctitle>
@@ -680,6 +692,7 @@ Moderen som freidigt smilte,
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det var den hellige Antons Fest
         Udi Padua,
 Hvortil saa mangen en fremmet Giest
@@ -804,10 +817,11 @@ Men ikke rasled' ved Siden af mig<!-- Sielen (for "Siden") -->
         Den fromme Möe,
 Thi bad jeg: St. Anton, vær naaderig
         Og lad mig döe!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2001082403">
+<text id="staffeldt2001082403">
 <head>
    <title>Agnar og Aslaug</title>
    <toctitle>Agnar og Aslaug</toctitle>
@@ -820,6 +834,7 @@ Thi bad jeg: St. Anton, vær naaderig
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ung Agnar tiener i Konningens Gaard,
     Han er sig ei Hovmand og Ridder,
 Naar fyldte Miödhorn ad Bordet gaaer
@@ -979,10 +994,11 @@ Liden Hofdreng en Aften for Konningen traad
     Alt med det Abild hiint röde:
 Det var Dankonning, da han det aad
     Saa sorrigfuld blev han og döde.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2001082404">
+<text id="staffeldt2001082404">
 <head>
    <title>Den grædske Blomsterpige</title>
    <toctitle>Den grædske Blomsterpige</toctitle>
@@ -995,6 +1011,7 @@ Det var Dankonning, da han det aad
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
     Lytter, Vise! til mit Qvad
 Skiöndt jeg ikkun Krandse sælger,
     Ikkun Qvist og Blomst og Blad
@@ -1050,10 +1067,11 @@ Skiöndt jeg Krandse kun bereder,
 Om Nödvendighedens Kieder:
     Skiebnen lig, med alle Kaar
     I min Kurv jeg roelig gaaer.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2001082405">
+<text id="staffeldt2001082405">
 <head>
    <title>Havmanden og Fiskerinden</title>
    <toctitle>Havmanden og Fiskerinden</toctitle>
@@ -1063,6 +1081,7 @@ Om Nödvendighedens Kieder:
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Den höie Bölge bæver
   Og löftes ved et Stöd,
 Tangkrandset Havmand hæver
@@ -1137,10 +1156,11 @@ Da rinder mangen Taare,
     Hvert Ansigt bliver hvidt,
 Frygt dreier Rokken saare
     Og Traaden brister tidt.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2001082801">
+<text id="staffeldt2001082801">
 <head>
    <title>Harpespilleren i Kong Erik Eiegods Leir</title>
    <toctitle>Harpespilleren i Kong Erik Eiegods Leir</toctitle>
@@ -1153,6 +1173,7 @@ Frygt dreier Rokken saare
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
     Kong Erik Eiegod med sine Mænd
 I Purpurteltet sad og rundtom saae
 Med Hævnens Fryd sin vidtopslagne Leir,
@@ -1309,10 +1330,11 @@ Iiskold han i Kredsen stod.
 I Haanden Brand og Sværd,
 I Spidsen af hvinende Skarer,
 Og ak! Iulin er ikke meer.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2001082802">
+<text id="staffeldt2001082802">
 <head>
    <title>Tilbagekomst</title>
    <toctitle>Tilbagekomst</toctitle>
@@ -1322,6 +1344,7 @@ Og ak! Iulin er ikke meer.
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Selindaja! Selindaja!
     Stiernefuldt er Nattens Rund,
 Gaden er saa tyst og stille
@@ -1391,10 +1414,11 @@ Hiertet har jeg ei bortgivet,
     Allah höre mine Ord!
 Almoralif det har taget,
     Og hvad kunde jeg derfor?
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2001082901">
+<text id="staffeldt2001082901">
 <head>
    <title>Barden</title>
    <toctitle>Barden</toctitle>
@@ -1404,6 +1428,7 @@ Almoralif det har taget,
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
     Stormvinde suse
 Om Fieldenes Top,
 Fosser nedbruse
@@ -1503,10 +1528,11 @@ Det er den Ædles mægtige Aand
 Som sled sig af Jordens kuende Baand
 Og nu med Fædrenes Skarer
 I Vinden henfarer.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2001082406">
+<text id="staffeldt2001082406">
 <head>
    <title>Ephemeren</title>
    <toctitle>Ephemeren</toctitle>
@@ -1520,6 +1546,7 @@ I Vinden henfarer.
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ikke veed jeg hvad jeg vil,
 Thi mit Liv er Spög og Spil,
 Intet jeg paa Jorden söger,
@@ -1573,10 +1600,11 @@ O saa er da Döden söd!
 Seer mig, Væsner, og misunder!
 Thi jeg döer i det jeg blunder
 Henrykt bort i Elskovs Skiöd.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2001082902">
+<text id="staffeldt2001082902">
 <head>
    <title>Ved Emmas Dödsseng</title>
    <subtitle>Af en ufuldendt Selvmordercharakteristik</subtitle>
@@ -1587,6 +1615,7 @@ Henrykt bort i Elskovs Skiöd.
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Emma lider - tusind Helvedsqvaler -
     Dödens Budskab i hver Aare slaaer -
 Og dog reiser Solen sig og daler,
@@ -1641,10 +1670,11 @@ Flye, Fornuft, flye til en anden Sfære!
     Luk for evig, Dag, din gyldne Port!
 Mulm og Vanvid, Jorden I regiere!
     Gud fra den sit Aasyn vendte bort!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2001092101">
+<text id="staffeldt2001092101">
 <head>
    <title>Harpen</title>
    <toctitle>Harpen</toctitle>
@@ -1654,6 +1684,7 @@ Mulm og Vanvid, Jorden I regiere!
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
     Nattens Kiæmpe naaer
     Fra Jorden til Himlen
     I Stiernevrimlen.
@@ -1886,10 +1917,11 @@ Du selv din Brudeseng og Elskovs Glæde.
         Harpen holdt fast,
         Öiet brast,
         Han opgav Aanden.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2001092102">
+<text id="staffeldt2001092102">
 <head>
    <title>Den hellige Therese</title>
    <toctitle>Den hellige Therese</toctitle>
@@ -1905,6 +1937,7 @@ Du selv din Brudeseng og Elskovs Glæde.
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Violerne dufte, Natvindene gaae,
 De Stierner fremtindre i Æterens Blaae,
 Det Himmelske kommer i Anelser ned,
@@ -1979,10 +2012,11 @@ Og end, et Under!<!-- Under, --> af Lilliens Skiöd,
 I Blomsten en Blomst, en Rose frembröd:<note>frembröd] <i>nogle eksemplarer af <biblio>1804</biblio> har</i> fremskiöd</note>
 Og det er den Elskov, saa himmelsk og from,
 Som af den reeneste Uskyld opkom.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2001092601">
+<text id="staffeldt2001092601">
 <head>
    <title>Havfruen og Kongen</title>
    <toctitle>Havfruen og Kongen</toctitle>
@@ -1995,6 +2029,7 @@ Som af den reeneste Uskyld opkom.
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Paa Skierene skiön Havfru sad,
     Af Fiorden gaaer en Snække,
 Hun jevner Bölgen ved sit Qvad,<!-- Quad, -->
@@ -2127,10 +2162,11 @@ Den blide Siel hun suger lös,
     Og ned i Havet dykker;
 Det stormer, Snækken gaaer i Qvag,
 Og Hvalen leger med dens Vrag.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt1999030407">
+<text id="staffeldt1999030407">
 <head>
    <title>Naturdatteren</title>
    <toctitle>Naturdatteren</toctitle>
@@ -2140,6 +2176,7 @@ Og Hvalen leger med dens Vrag.
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg sad under duftende Hyldetræ'r
   Da Solen gik ned,
 Og vilde tælle hvert Stjerneskjær,
@@ -2189,10 +2226,11 @@ Da stod jeg siden ved Pigernes Brönd
   En Aften seen,
 Og fik at vide, at det var en Synd,
   Hvorfor er det een?
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2001100401">
+<text id="staffeldt2001100401">
 <head>
    <title>Kong Frode og Gubben</title>
    <toctitle>Kong Frode og Gubben</toctitle>
@@ -2205,6 +2243,7 @@ Og fik at vide, at det var en Synd,
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Kong Frode höit ved Gilde sad,
     Kong Frode, diærv og snild,
 Ved gammel Miöd og Skialdeqvad
@@ -2264,10 +2303,11 @@ Nei ikke er du uden Daad,
     Kom hid, kom hid! thi den
 Som styrer Kongens onde Raad
     Er Kongens bedste Ven.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2001100402">
+<text id="staffeldt2001100402">
 <head>
    <title>Jægeren</title>
    <toctitle>Jægeren</toctitle>
@@ -2277,6 +2317,7 @@ Som styrer Kongens onde Raad
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Der er en fredlös, en angrende Siel
     Som Lise og Roe ei mon finde,
 Thi lyde for den i hiint Helgen-Capel
@@ -2356,10 +2397,11 @@ Der er en fredlös, en angrende Siel
     Som Lise og Roe ei mon finde,
 Thi lyde for den i hiint Helgencapel
     De Bönner fra Klippernes Tinde.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2001100403">
+<text id="staffeldt2001100403">
 <head>
    <title>Fugleapotheose</title>
    <toctitle>Fugleapotheose</toctitle>
@@ -2369,6 +2411,7 @@ Thi lyde for den i hiint Helgencapel
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Paa Unger sidder
     En kiærlig Hun,
 Ved Hannens Qvidder
@@ -2453,10 +2496,11 @@ Med Reden prydes
     Idunas Træ,
 Nu Himlen frydes
     Ved Jordens Kræ.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2001102101">
+<text id="staffeldt2001102101">
 <head>
    <title>Trende Nætter</title>
    <toctitle>Trende Nætter</toctitle>
@@ -2466,6 +2510,7 @@ Nu Himlen frydes
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <i>Den förste Nat</i> var det Stierneblaae
       Foruden Skye,
 Sölvmaanen igiennem Grenene saae
@@ -2575,10 +2620,11 @@ Og i det samme hun styrtede sig
       Fra oven ned.
 I den aabne Kiste laae tvende Lig,
       Nu har de Fred.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2001122501">
+<text id="staffeldt2001122501">
 <head>
    <title>Forfædrene</title>
    <toctitle>Forfædrene</toctitle>
@@ -2588,6 +2634,7 @@ I den aabne Kiste laae tvende Lig,
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Paa eensom Hede,
 Blant Lyng og Krat,
 Hvor Drager frede
@@ -2902,10 +2949,11 @@ Til Graven ringer
 Den Nattens Tog,
 Og sagte klinger
 Hvert Kistelaag.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2002090801">
+<text id="staffeldt2002090801">
 <head>
    <title>Snedkeren og hans Drenge,</title>
    <subtitle>i Pestens Tid</subtitle>
@@ -2919,6 +2967,7 @@ Hvert Kistelaag.
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Sauger, hövler, hamrer brav!
     Tænker ei paa Nöden!
 Ved hver Spaan vi hövler af,
@@ -3022,10 +3071,11 @@ Ikke i min sidste Stund.
             Staaer mig bi i Nöden!
         Ved hver Spaan I hövler af,
             Ral - ler - jeg - i - Dö - den.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2002090802">
+<text id="staffeldt2002090802">
 <head>
    <title>Den ottende Sön</title>
    <toctitle>Den ottende Sön</toctitle>
@@ -3035,6 +3085,7 @@ Ikke i min sidste Stund.
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Den Hane slog ud sin Vinge og gol,
 Ung Thora alt sad ved Væverstol.
 
@@ -3154,10 +3205,11 @@ Og visned' som Liljen paa grönnen Eng,
 
 Men han slog sine syv Brödre ihiel
 Og blev til en Trold, saa fuul og saa fæl.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2002090803">
+<text id="staffeldt2002090803">
 <head>
    <title>Ruinens Indvaaner</title>
    <toctitle>Ruinens Indvaaner</toctitle>
@@ -3167,6 +3219,7 @@ Og blev til en Trold, saa fuul og saa fæl.
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Paa Apenniners Spidse jeg kom
     Til en Klosterruin,
 Rundt smuldrede Guddommens Helligdom
@@ -3431,10 +3484,11 @@ Og naar da min Marter forkynder sig
     I Hyl og i Hvin,
 De troe at Vindene före Krig
     I den brustne Ruin.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2002090804">
+<text id="staffeldt2002090804">
 <head>
    <title>Juuledöd</title>
    <toctitle>Juuledöd</toctitle>
@@ -3444,6 +3498,7 @@ De troe at Vindene före Krig
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ved Juuletid haster en Fader frem,
     Han bærer den Lille paa Arm,
 Saa lader han staae til sit fierne Hiem
@@ -3503,10 +3558,11 @@ For seen! thi den Lille var kold og stiv,
     Her Christ tog hans Siel til sig.
 Paa Tærskelen stod den segnende Viv,
     Da Faderen kom med hans Lig.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2002090805">
+<text id="staffeldt2002090805">
 <head>
    <title>Kongen af Tyrus og Tiggersken</title>
    <toctitle>Kongen af Tyrus og Tiggersken</toctitle>
@@ -3516,6 +3572,7 @@ Paa Tærskelen stod den segnende Viv,
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Kong Bechtabar af Tyrus fik
     Ei Livets Fryd at smage,
 Thi ikke efter gammel Skik
@@ -3690,10 +3747,11 @@ Hver Dag med en Obol igien
     Han taus for det hentræder,
 Og lægger den i Posen hen
     Og gaaer derfra og græder.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2002090806">
+<text id="staffeldt2002090806">
 <head>
    <title>Elverpigerne og Börnene</title>
    <toctitle>Elverpigerne og Börnene</toctitle>
@@ -3703,6 +3761,7 @@ Og lægger den i Posen hen
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Tre Smaaebörn lege paa blommede Eng,
                 Det lider ad Qvel,
 Der hiemme den Moder opreder der' Seng,
@@ -3756,10 +3815,11 @@ Dine Smaaebörn Elverhöisjomfruer tog,
                 Ved Hov'det, en Steen
                 Ved hvilende Been,
     Og det er de Biergmöers Gave.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2002090504">
+<text id="staffeldt2002090504">
 <head>
    <title>Melancholie</title>
    <subtitle>Af en ufuldendt Selvmordercharakteristik</subtitle>
@@ -3770,6 +3830,7 @@ Dine Smaaebörn Elverhöisjomfruer tog,
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg gisper saa ængstligt af knusede Bryst
     Og furer med Graad mine Kinder,
 Jeg trygler hvert brændende Alter om Tröst,
@@ -3824,10 +3885,11 @@ Men ak! den forsvandt - o saa kast dig, min Siel,
     I Lethes dorskrindende Bölge,
 Thi kun hvor der hverken er Qval eller Hæld,
     Din Böddel dig ikke tör fölge!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2002090807">
+<text id="staffeldt2002090807">
 <head>
    <title>Ederduunsankerne</title>
    <toctitle>Ederduunsankerne</toctitle>
@@ -3837,6 +3899,7 @@ Thi kun hvor der hverken er Qval eller Hæld,
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 De Qvinder med Perler vil rustes til Kamp,
     Brat Dykkre i Havet neddukke;
 Paa Duun vil de hvile, som om det var Damp,
@@ -3901,10 +3964,11 @@ O Skiebne! jeg takker for Bænk og for Straae,
     De andre om Ederduun tigge,
 Jeg ændser den ikke, saa sandt som jeg maae
     Med Freden i Favnen der ligge.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt1804a0">
+<text id="staffeldt1804a0">
 <head>
    <title>Den Vanvittige</title>
    <toctitle>Den Vanvittige</toctitle>
@@ -3914,6 +3978,7 @@ Jeg ændser den ikke, saa sandt som jeg maae
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Og i min Hierne
 Et Möllehiul gaaer,
 De surrende Qværne
@@ -3996,10 +4061,11 @@ For den gamle Evighed - -
     Naar faaer du Roe?
     Paa en Græstörvpude
     I Dödningens Boe!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2002090808">
+<text id="staffeldt2002090808">
 <head>
    <title>Rigsdagen i Helvede</title>
    <toctitle>Rigsdagen i Helvede</toctitle>
@@ -4009,6 +4075,7 @@ For den gamle Evighed - -
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
     En Dag - dog nei! jeg burde sige
 En Nat, thi hvilken Skoledreng ei veed
 At ingen Sol gaaer op og ned
@@ -4188,10 +4255,11 @@ Som Misvæxt, Krig og Pest bebuder,
 Han svæved' foran Helveds Guder
 Samt det gemeene Diævlechor
 Og dalede paa vor forladte Jord.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2002090901">
+<text id="staffeldt2002090901">
 <head>
    <title>Kampen mellem Havmanden og Biergtrolden</title>
    <toctitle>Kampen mellem Havmanden og Biergtrolden</toctitle>
@@ -4204,6 +4272,7 @@ Og dalede paa vor forladte Jord.
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
     Vellugtende Linde,
     Hvor Sangersker boe!
     I Kilder, som rinde
@@ -4446,10 +4515,11 @@ Du trygt i dette Oldtidstempel hviler.
     Den frelsede Pige
     Til Lysets Rige
     Og Elskerens Barm.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2002090902">
+<text id="staffeldt2002090902">
 <head>
    <title>Den nye Öe</title>
    <toctitle>Den nye Öe</toctitle>
@@ -4462,6 +4532,7 @@ Du trygt i dette Oldtidstempel hviler.
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center><i>Gnomer</i></center></nonum>
 
 Dybt under Havet,
@@ -4608,10 +4679,11 @@ Ved Overflod sig Lykkens Sönner fryde,
     Med Seierskrandse alle Kunster gaae;
 Hist Geometere med Stavens Spidse
 I Strandens hvide Sand Figurer ridse.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2002091001a">
+<text id="staffeldt2002091001a">
 <head>
    <title>Ynglingen fra Megæra</title>
    <toctitle>Ynglingen fra Megæra</toctitle>
@@ -4621,6 +4693,7 @@ I Strandens hvide Sand Figurer ridse.
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Til Corinthus fra Megæra iler
     Flink en Yngling i sin Blomstertid,
 I hans Barm end Tvivlens Opstand hviler,
@@ -4800,8 +4873,9 @@ Kan du ikke mig saa södt bedrage,
 O saa giv mig mit Phantom tilbage!
     Lad mig döe med södtforgiftet Bryst,
         O saa döer jeg dog i Lyst!
+</poetry>
 </body>
-</poem>
+</text>
 </content>
 </section>
 
@@ -4811,7 +4885,7 @@ O saa giv mig mit Phantom tilbage!
 </head>
 <content>
 
-<poem id="staffeldtandrea0">
+<text id="staffeldtandrea0">
 <head>
    <title>Kunstnerlængsel</title>
    <toctitle>Kunstnerlængsel</toctitle>
@@ -4821,6 +4895,7 @@ O saa giv mig mit Phantom tilbage!
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvad er det, som fra Jorden her,
 Saa mægtigt drager mit Begær
   Og dybt mit Hjerte saarer?
@@ -4862,10 +4937,11 @@ Thi Alting sukker: ak! det var
 Selv Himmelen, med lysblaa Grund
 Og Stjerneguld, mig synes kun
   En grænselös Kærminde.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2018011901">
+<text id="staffeldt2018011901">
 <head>
     <title>Prometheus</title>
     <firstline>Prometheus fra sit Klippesæde</firstline>
@@ -4873,6 +4949,7 @@ Og Stjerneguld, mig synes kun
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
    <w>Prometheus</w> fra sit Klippesæde
 Stirrede langs ad Tingenes Kiæde;
 Imellem Dyr og Gud
@@ -5391,10 +5468,11 @@ Fortvivlet, Prometheus Staven svang,
 Men Skiebnen Slaget vendte,
 Den Sönnen i Favnen tager,
 Fra Caucasus lyder Faderens Klager.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2002090503">
+<text id="staffeldt2002090503">
 <head>
    <title>Genien</title>
    <toctitle>Genien</toctitle>
@@ -5405,6 +5483,7 @@ Fra Caucasus lyder Faderens Klager.
 <!--  Dappet efter DSL. -->
 </head>
 <body>
+<poetry>
 Hen i Poseidons Stad med Menneskevrimlen jeg skrider
    Og som et bölgende Hav, stöder mig Trængselen frem.
 Lig Melodier, omsmiggre italiske Toner mit Öre,
@@ -5479,10 +5558,11 @@ Poesie er den dybe den alnærværende Alaand
    Hvor han udtrykker sig meest, Verdenens Öie den er;
 Poesie er indskrænket Evighed, <i>Alt</i> i det <i>Eene,</i>
    Guddommen er Poesie, Tiden Indfatningen er.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2002090501">
+<text id="staffeldt2002090501">
 <head>
    <title>Paa Toppen af Mont-Cenis</title>
    <toctitle>Paa Toppen af Mont-Cenis</toctitle>
@@ -5493,6 +5573,7 @@ Poesie er indskrænket Evighed, <i>Alt</i> i det <i>Eene,</i>
 <!--  Dappet efter DSL. -->
 </head>
 <body>
+<poetry>
 Hvilket Uveir! Storm og Torden döve,
    Eegens Rod omfavnes af dens Top,
 Skoven styrter; Söer, Floder stöve
@@ -5547,10 +5628,11 @@ Denne Tryghed ved Naturens Gruen,
    Denne Fasthed midt i Altings Fald,
 Denne Fryd ved Undergangs Beskuen
    Vidner om mit grændselöse Kald.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt1804a3">
+<text id="staffeldt1804a3">
 <head>
    <title>I Hösten</title>
    <toctitle>I Hösten</toctitle>
@@ -5560,6 +5642,7 @@ Denne Fryd ved Undergangs Beskuen
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Vinden hvirvler Lundens faldne Blade
 Hvinende, hen over Markens Straae,
 Fuglen giæster Fyldens aabne Lade
@@ -5580,10 +5663,11 @@ Lad mig Löv paa tusind Greene nære
 Og afkaste en beundret Vaar:
 Ved min Fod da Vandrern skue skal
 Sorrigfuld, mit rige Forlivs Fald.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2018011902">
+<text id="staffeldt2018011902">
 <head>
     <title>Lillas Minde</title>
     <firstline>Velsignet vær, o Dag! som lued'</firstline>
@@ -5591,6 +5675,7 @@ Sorrigfuld, mit rige Forlivs Fald.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center>I.</center></nonum>
 
 Velsignet vær, o Dag! som lued'
@@ -6271,10 +6356,11 @@ Ha! Luft! kun Luft til Suk og Klage!
    Kun Graad til sielden Lise giv!
 Gid da ved hver en lindret Plage
    En Fryd opblomstre i dit Liv!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2018011903">
+<text id="staffeldt2018011903">
 <head>
     <title>Ganimed</title>
     <firstline>Bortviger du, o söde Sövn</firstline>
@@ -6282,6 +6368,7 @@ Gid da ved hver en lindret Plage
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center><i>Ganimed</i></center></nonum>
 <nonum><small><center><i>ved Solens Opgang vaagnende paa Bierget Ida.</i></center></small></nonum>
 
@@ -6663,10 +6750,11 @@ Rummet er din Fryds bundlöse Bæger,
 <nonum><center><i>Alle.</i></center></nonum>
 O guddommelige Ganimed,
 Smiil i Naade til vort Offer ned!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2018011904">
+<text id="staffeldt2018011904">
 <head>
     <title>Heltedyrkelse</title>
     <firstline>Dagens Vogn bag hiine Fielderader</firstline>
@@ -6674,6 +6762,7 @@ Smiil i Naade til vort Offer ned!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Dagens Vogn bag hiine Fielderader
    Dölger Banens dristigt trukne Sving,
 Mens de stille, duggende Hyader
@@ -6778,10 +6867,11 @@ Giennem fierne Tider kun udförer
    Mit begyndte Heltelevnet sig,
 Mennesk'hedens döende Velgiörer,
    Mig din skiönne Martyrkrone! mig!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt1999080701">
+<text id="staffeldt1999080701">
 <head>
    <title>Under Lillas Vinduer</title>
    <toctitle>Under Lillas Vinduer</toctitle>
@@ -6791,6 +6881,7 @@ Mennesk'hedens döende Velgiörer,
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
     Hellige Jordens Havblik!
 Hvor stille rundt!
 Guitarrens sidste
@@ -6899,10 +6990,11 @@ Fra Nonnernes hellige Læber!
 Yndige Undseelse,
 Usmittede Savn,
 Ledsager mig tilbage!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2001052750">
+<text id="staffeldt2001052750">
 <head>
    <title>Til Naturkraften</title>
    <toctitle>Til Naturkraften</toctitle>
@@ -6915,6 +7007,7 @@ Ledsager mig tilbage!
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 O du, som i Skabningens rystede Rum
 Forvandlingens knusende Hjul dreier om,
      Saa Sekler, lig Draaber, henstænke;
@@ -7175,10 +7268,11 @@ De Dage og Aar og Aarhundreder i
      Henrykkelsens Runddands sig svinge,
          Og du Pæaner uden Tal
          I Hjertets Slag fornemme skal.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2002091003">
+<text id="staffeldt2002091003">
 <head>
    <title>Ved en döende Sommerfugl</title>
    <toctitle>Ved en döende Sommerfugl</toctitle>
@@ -7188,6 +7282,7 @@ De Dage og Aar og Aarhundreder i
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
    Skiönne Blomst af Ormeknop!
 Lethenflyvende og spæde
    Lilje, som med Sölverkrop
@@ -7235,10 +7330,11 @@ Iild med skiönfornyet Vinge
    Til den ædle Plato hen,
 Blid en Hilsen ham at bringe
    Fra hans haabefulde Ven!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt1999080301">
+<text id="staffeldt1999080301">
 <head>
    <title>Aftenhöitid</title>
    <toctitle>Aftenhöitid</toctitle>
@@ -7248,6 +7344,7 @@ Blid en Hilsen ham at bringe
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Solen daler, Natten aander Taage
   Ud fra Östen over Vang og Vig;
 Alting hviler, selv fredlöse Maage
@@ -7317,10 +7414,11 @@ Svarer mig, Forklarte! Möder eder
   Ikke hisset min Gestalt, lig dem
 Natten her fra Dödens Grotter leder
   Tidt igjen til deres elskte Hjem?
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2018011905">
+<text id="staffeldt2018011905">
 <head>
     <title>Digterne</title>
     <firstline>Gyldne Tider det vare, da Skialde fra Himlen nedsteege</firstline>
@@ -7329,6 +7427,7 @@ Natten her fra Dödens Grotter leder
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Gyldne Tider det vare, da Skialde fra Himlen nedsteege
    Og til Himlen igien bares af Hörernes Chor,
 Da den <i>levende</i> Sang den digtriske Verden regierte
@@ -7399,10 +7498,11 @@ Nævner ei Saga endnu syv prisede Stæder, som strede
    Om den store Homer, Digternes Fader og Gud?
 Saa skal du nævnes fordi, et uhyre, sörgende Minde
    Du ved Klopstoks Grav stod og indhylle dig!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt1999080601">
+<text id="staffeldt1999080601">
 <head>
    <title>Blomsten</title>
    <toctitle>Blomsten</toctitle>
@@ -7412,6 +7512,7 @@ Saa skal du nævnes fordi, et uhyre, sörgende Minde
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Naar jeg i det dybe Fjerne
   Blidtveemodigt stirrer hen,
 Naar om Aftnen hver Stjerne
@@ -7515,10 +7616,11 @@ Lyset er til Blade vorden,
 Stövet svinder i <i>Forklaring,</i>
 Livet i Guds <i>Aabenbaring,</i>
   Lys og Guddom er vort Hjem!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt1804a2">
+<text id="staffeldt1804a2">
 <head>
    <title>I Canova's Værksted</title>
    <firstline>Styrted' en Marmorklippe sammen?</firstline>
@@ -7526,6 +7628,7 @@ Livet i Guds <i>Aabenbaring,</i>
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Styrted' en Marmorklippe sammen?
 Er det Vrag af den faldne Fortid?
 Lig uhyre Liljeknopper,
@@ -7629,10 +7732,11 @@ Salige Andagt!
 Samler mig i det Heele!
 Styrter mig ned i den salige Afgrund,
 I det eene, uendelige Selv!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt1804a4">
+<text id="staffeldt1804a4">
 <head>
    <title>Ved Söen</title>
    <toctitle>Ved Söen</toctitle>
@@ -7642,6 +7746,7 @@ I det eene, uendelige Selv!
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 - Og medens de Bölger fare afsted,
 Mig synes at ogsaa jeg skulde med,
 Og stirrende ned i billedfuld Söe,
@@ -7661,10 +7766,11 @@ Da blir jeg saa underlig bange og öm,
 Min Aand sig lösner til meere end Dröm:
 Mig synes at Guder og Mennesker gaae
 Omfavnede, dybt i det reene Blaae.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2002091002">
+<text id="staffeldt2002091002">
 <head>
    <title>Digterphantasie</title>
    <subtitle>Om Vinteren</subtitle>
@@ -7676,6 +7782,7 @@ Omfavnede, dybt i det reene Blaae.
 <!--  Dappet efter DSL -->
 </head>
 <body>
+<poetry>
    Naturen dig, min Aand, ei kuer,
 Lig Zeus, du vældig er og fri:
 I Ætnas röde Helvedluer
@@ -7788,10 +7895,11 @@ Frem i Altings Undergang.
 Höit af rædsom Vellyst hviner,
 Og paa sidsthensmuldrende Ruiner
 Triumpherende forgaaer i Sang!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2002091001">
+<text id="staffeldt2002091001">
 <head>
    <title>Drömmene</title>
    <toctitle>Drömmene</toctitle>
@@ -7802,6 +7910,7 @@ Triumpherende forgaaer i Sang!
 <!--  Dappet efter DSL -->
 </head>
 <body>
+<poetry>
 Jeg drömte jeg var en Harpe af Guld,
 Og Lilla leged' i mine Strænge,
 Hver Melodie blev saa blöd og fuld,
@@ -7861,10 +7970,11 @@ Dog luer Ömhed i hendes Blik
 Og Kys fra Læben i Luften udbrænde -
 O signede Phantasos! endelig
 Hvad Skiebnen nægted', forundte du mig!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2001082903">
+<text id="staffeldt2001082903">
 <head>
    <title>Dativen</title>
    <toctitle>Dativen</toctitle>
@@ -7878,6 +7988,7 @@ Hvad Skiebnen nægted', forundte du mig!
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum>v - v - v - vv -,</nonum>
 <nonum>vv - v - v - vv -,</nonum>
 <nonum>- v -, - vv -, - v -,</nonum>
@@ -7907,10 +8018,11 @@ O Dativ, raaber Sprogenes Tolk,
 O du Flygtling! pryd vor Arne paa nye!
 Sorrigfuldt Söstrenes Chor sidder der,
 Lykkes dem nu Phrasernes Dands?
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2018011906">
+<text id="staffeldt2018011906">
 <head>
     <title>Til Phantasien</title>
     <firstline>Du, mit Livs velsignede Gudinde!</firstline>
@@ -7918,6 +8030,7 @@ Lykkes dem nu Phrasernes Dands?
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><small><right>Quel ch'altri lungi vede, lascio al tergo,</right></small></nonum>
 <nonum><small><right>- fendo i' cieli, e a l'infinito m'ergo.</right></small></nonum>
 <nonum><right>Giordano Bruno.</right></nonum>
@@ -8016,10 +8129,11 @@ Hold mig her blant dine sidste Himle,
    Phantasie, her paa din Almagts Rand!
 Heller lad mig, Gud i Gud, nedsvimle
    I det eene Allivsocean!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2002090502">
+<text id="staffeldt2002090502">
 <head>
    <title>Det Uopnaaelige</title>
    <toctitle>Det Uopnaaelige</toctitle>
@@ -8030,6 +8144,7 @@ Heller lad mig, Gud i Gud, nedsvimle
 <!--  Dappet efter DSL. -->
 </head>
 <body>
+<poetry>
    Orme skiælve! Uforsagt
    Föle du, o Siel! din Magt
 Og ved medfödt Vinge herligt stige!
@@ -8069,10 +8184,11 @@ Lyset er Naturens Sagn og Minde,
 Ak! men Verdensaldre glemte svinde,
 Oceaner ned fra Fielde rinde,
    Tidens Vaar dog stedse er kun nær!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="staffeldt2002090903">
+<text id="staffeldt2002090903">
 <head>
    <title>Digterbekjendelse</title>
    <toctitle>Digterbekjendelse</toctitle>
@@ -8084,6 +8200,7 @@ Oceaner ned fra Fielde rinde,
 <!--  Dappet efter DSL. -->
 </head>
 <body>
+<poetry>
 Jeg kan, jeg vil, jeg tör mig ikke lempe,
    O Venner! efter Tidens usle Bud,
 En himmelsk Ild, som ingen Magt kan dæmpe,
@@ -8254,8 +8371,9 @@ Op, Digtre! alt det Jordiske bortfierner,
    Da skal I snart det Himmelske opnaae,
 Thi Kunsten er lig Troens skiönne Rige,
 Kun ubesmittet Frahold did tör stige.
+</poetry>
 </body>
-</poem>
+</text>
 </content>
 </section>
 </workbody>

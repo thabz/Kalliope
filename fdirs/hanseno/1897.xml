@@ -15,7 +15,7 @@
 </workhead>
 <workbody>
 
-<poem id="hanseno2017111801">
+<text id="hanseno2017111801">
 <head>
     <title>Prolog</title>
     <firstline>Hvis nogen skulde spørge, Barn og Bog</firstline>
@@ -23,6 +23,7 @@
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvis nogen skulde spørge, Barn og Bog,
 derude: »Hvad er egentlig din Fader?«
 Saa svar, at han er aldrig rigtig klog
@@ -37,10 +38,11 @@ Skulde da en forbavset sige: »Hæ!
 hør, lille Ven, din Mening ej jeg fatter,«
 saa frygt kun ikke for at svare: »Fæ,«
 og jeg skal le en sund, fornuftig Latter.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hanseno2017111802">
+<text id="hanseno2017111802">
 <head>
     <title>Tilegnelse</title>
     <subtitle>Amicus amico</subtitle>
@@ -49,6 +51,7 @@ og jeg skal le en sund, fornuftig Latter.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 De gamle Breve med blegede Træk
 stundom fra Skuffen jeg tager,
 jeg læser og ler — læser atter væk,
@@ -138,8 +141,9 @@ Jeg ved, han hører til dem, der er Mænd,
 hans Tanke har faste Steder,
 og selv er jeg endnu en Æventyrsvend,
 en Konge for Muligheder.
+</poetry>
 </body>
-</poem>
+</text>
 
 <section>
 <head>
@@ -147,7 +151,7 @@ en Konge for Muligheder.
 </head>
 <content>
 
-<prose id="hanseno2017111803">
+<text id="hanseno2017111803" skip-index="true">
 <head>
     <title>I</title>
     <firstline>Ja, jeg vil gaa, som Solen gaar, tilbage</firstline>
@@ -155,6 +159,7 @@ en Konge for Muligheder.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<prose>
     Tubalkain var bleven hundrede Aar, og hans unge Broder Jubal gik ham til Haande i Smedjen, hvor han var ham til megen Nytte; men naar Jubal arbejdede alene, faldt han tit saa dybt i Tanker, at han lod Ilden gaa ud.
     Men ingen vidste, hvorpaa Jubal tænkte.
     En Aften, da Solen var gaaet ned, stod Jubal længe og saa mod det Sted, hvor den var forsvunden. Ilden paa Essen var slukket; han havde lænet Hammeren mod Ambolten og sin Kind mod Hammerens Jærn, og han sagde til sig selv:
@@ -267,10 +272,11 @@ og naar jeg takker varmt for Drømmens Gave,
 da føler jeg, Gud Herren er mig nær.
 
     Næste Morgen drog Jubal ud for at opsøge Eden.
-</body>
 </prose>
+</body>
+</text>
 
-<prose id="hanseno2017111804">
+<text id="hanseno2017111804" skip-index="true">
 <head>
     <title>II</title>
     <firstline>Saavist som Saalen paa Sandalen flænges</firstline>
@@ -278,6 +284,7 @@ da føler jeg, Gud Herren er mig nær.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<prose>
     Jubal vandrede længe fremad, men han kunde intetsteds finde Landet, han søgte. Han kom til en Skov, hvor mange Fugle sang, og han sagde:
 
 Saavist som Saalen paa Sandalen flænges
@@ -305,10 +312,11 @@ men jeg maa gaa den lange Vej tilbage
 til svundne Tiders og til Livsens Jord.
 
     Jubal sad længe og grundede; derpaa sagde han: »Jeg vil tage Fuglens Stemme og blive lykkelig som den.« Og han greb en Sten og dræbte Fuglen og dannede sig en Fløjte efter dens Strubes Lignelse.
-</body>
 </prose>
+</body>
+</text>
 
-<prose id="hanseno2017111805">
+<text id="hanseno2017111805" skip-index="true">
 <head>
     <title>III</title>
     <firstline>Er Fred da Løgn? Jeg saa den jo med Øjet</firstline>
@@ -316,6 +324,7 @@ til svundne Tiders og til Livsens Jord.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<prose>
     En Dag kom Jubal til en stor Flod, og han stillede sin Tørst ved dens Vand og tvættede sine Fødder. Dernæst tog han sin Fløjte frem og spillede alle Skovens og Markens Melodier — og Edens Fred var i hans Hjerte. Men da han havde endt sit Spil, brast han i Graad, og han hulkede længe og sagde:
 
 Er Fred da Løgn? Jeg saa den jo med Øjet
@@ -337,10 +346,11 @@ og at den dog ej mere tror derpaa.
 
     Derpaa greb han atter sin Fløjte og spillede derpaa, som om Fløjten var Længselen selv.
     Men da kom en ung Kvinde gaaende, hvem Tonerne drog; og da hun saa Jubal, stansede hun og spurgte: »Hvem er Du?« Han svarede: »Jeg er Jubal, Lamechs Søn i Landet Nod.« Da blev Pigen bleg og veg bort fra ham; men da han saa, at hun frygtede, spurgte han: »Hvorfor ræddes Du for mig?« Hun svarede: »Fordi Kain slog Abel ihjæl.« Da blev Jubal bedrøvet, og han udbrød: »Hvad kan vel jeg derfor, og hvad ved vel jeg derom?« Hun svarede: »Er Du fra Landet Nod, da er Du visselig af Kains Slægt, og det, at Kain dræbte Abel, er det værste, der er sket blandt Menneskene, siden Gud udjog dem af Edens Have.« »Det maa være hændet for længe siden.« »Ja,« sagde hun, »det er længe siden.« Men Jubal undredes og sagde: »Hvem er da Du og af hvad Slægt, siden Du mindes saa langt.« Hun svarede: Jeg er Noomi og er af Seths Slægt; men denne Søn gav Gud Eva, fordi Kain havde dræbt Abel; men hvorfor kommer Du her?« »Jeg søger tilbage til Eden ; ved Du, hvor det ligger?« Hun svarede: »Der er et Sted, hvor een Flod spredes i fire; der begynder Landet; men her sidder Du ved Pisons Bred, som er en af de fire; og gaar Du mod dens Vande, kommer du derhen.« Men Jubal svarede: »Jeg vil ikke til Eden nu, men før mig til din Faders Hus og lær mig din Slægts Visdom.« Og Kvinden førte ham til sin Faders Hus.
-</body>
 </prose>
+</body>
+</text>
 
-<prose id="hanseno2017111806">
+<text id="hanseno2017111806" skip-index="true">
 <head>
     <title>IV</title>
     <firstline>Se, Jorden var mig mørk og tom og øde</firstline>
@@ -348,6 +358,7 @@ og at den dog ej mere tror derpaa.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<prose>
     Dér blev Jubal længe, og Noomi fortalte ham om Verdens Skabelse, Menneskets Fald og Kains Brodermord og at der skulde komme en Mand, som var Herren, og Jubal frydede sig over hendes Visdom og sagde til hende:
 
 Se, Jorden var mig mørk og tom og øde,
@@ -401,10 +412,11 @@ til Kains Børn og gøre Hjærtet blødt.
 
     Og Jubal tog Noomis Haand, og han tog hendes Faders og Brødres Hænder og bød dem Farvel. Derpaa gik han bort til Landet Nod.
     Men Noomi blev blegere Dag for Dag.
-</body>
 </prose>
+</body>
+</text>
 
-<prose id="hanseno2017111807">
+<text id="hanseno2017111807" skip-index="true">
 <head>
     <title>V</title>
     <firstline>Hør mig, I Sønner af Kain</firstline>
@@ -412,6 +424,7 @@ til Kains Børn og gøre Hjærtet blødt.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<prose>
     Da Jubal kom hjem, undredes Folket saare, og alle vilde vide, hvad han havde set. Han viste dem Fløjten og sagde: »Se, denne har jeg fundet,« og han spillede paa den, tænkende paa Noomi og hendes Ord, og sagde: »Se, dette har jeg hørt« — og de gik forundrede hver til sit.
     Derpaa gik Jubal til Tubalkains, sin Broders, Smedje og dannede sin Fløjte i Metal — og hver Dag gik han til Smedjen og udførte, hvad hans Broder paalagde ham.
     Men en Dag, da mange vare til Stede og glædede sig ved hans Spil, sagde Tubalkain til ham': »Var Du i Eden?« og Jubal svarede: »Nej, for Keruben staar ved Indgangen og spærrer Vejen med sit Sværd,« og han fortalte dem alle Noomis Ord. Og Tubalkain sagde: »Jeg vidste vel, at derhen fører der ingen Vej«; men da rejste Jubal sig:
@@ -492,8 +505,9 @@ Du har ej Høst at bringe ind derunder
 og fletter Svøber for Dig selv at slaa.
 
     Jubal blev en gammel Mand, og den, han ventede, kom ikke i hans Dage, og han fik aldrig Edens Land at se. Men da han lukkede sine Øjne i Døden, sagde han: »Dog var Eden min Lykke.«
-</body>
 </prose>
+</body>
+</text>
 
 </content>
 </section>
@@ -504,7 +518,7 @@ og fletter Svøber for Dig selv at slaa.
 </head>
 <content>
 
-<poem id="hanseno2017111808">
+<text id="hanseno2017111808">
 <head>
     <title>I</title>
     <toctitle><num>I</num>Stum Sorgen sad i Seerlæbens Viger</toctitle>
@@ -515,6 +529,7 @@ og fletter Svøber for Dig selv at slaa.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Stum Sorgen sad i Seerlæbens Viger,
 men Øjet talte mer end mange Ord;
 med sagte Trin gik Tjenere og Piger,
@@ -539,10 +554,11 @@ Han vented — og han hørte Herrens Stemme:
 »Lad af at sørge! Se! Saul faar sin Løn.
 Staa op, gaa hen, hvor nu min Aand har hjemme,
 salv Isais, Bethlehemitens, Søn.«
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hanseno2017111809">
+<text id="hanseno2017111809">
 <head>
     <title>II</title>
     <toctitle><num>II</num>Tung Vreden hang — og mørk — paa Kongens Pande</toctitle>
@@ -553,6 +569,7 @@ salv Isais, Bethlehemitens, Søn.«
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Tung Vreden hang — og mørk — paa Kongens Pande
 og trykked Brynet over Øjet ned,
 og let en Skælven for fra Mand til Mande,
@@ -585,10 +602,11 @@ Og Kongen hævede den tunge Pande,
 læste i Blikket hele Folkets Bøn.
 »Saa lad ham komme hid til disse Lande
 hent Isais, Bethlehemitens, Søn.«
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hanseno2017111810">
+<text id="hanseno2017111810">
 <head>
     <title>III</title>
     <toctitle><num>III</num>Om Kongens Mund der laa et Smil og drømte</toctitle>
@@ -599,6 +617,7 @@ hent Isais, Bethlehemitens, Søn.«
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Om Kongens Mund der laa et Smil og drømte,
 og Blikket var saa mildt som aldrig før;
 man saa og følte, at den Fred, der rømte,
@@ -635,10 +654,11 @@ vild var hans Tale, og hans Sjæl var Nat.
 som ene bag den kaarnes Pande bor?
 En Dreng, der leger og har brune Kinder?«
 og vredt hans Næve til hans Værge for.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hanseno2017111811">
+<text id="hanseno2017111811">
 <head>
     <title>IV</title>
     <toctitle><num>IV</num>Der fløj et Rygte indtil Rigets Grænse</toctitle>
@@ -649,6 +669,7 @@ og vredt hans Næve til hans Værge for.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Der fløj et Rygte indtil Rigets Grænse:
 »Filisteren faldt og Israel er frelst.«
 Uvist der spurgtes: »Bør vi dette ændse?«
@@ -691,8 +712,9 @@ og for sig selv han mumled disse Ord:
 Han har dem selv — han kaaret er af Gud,«
 og Spydet fløj og spalted Væggens Planker,
 men ridsed ingen Rift i Davids Hud.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section>
@@ -703,7 +725,7 @@ men ridsed ingen Rift i Davids Hud.
 </head>
 <content>
 
-<poem id="hanseno2017111812">
+<text id="hanseno2017111812">
 <head>
     <title>I</title>
     <toctitle><num>I</num>Judas og hans Moder</toctitle>
@@ -715,6 +737,7 @@ men ridsed ingen Rift i Davids Hud.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center><w>Moderen.</w></center></nonum>
 Søn, hvor Du er bleven gammel,
 siden sidst jeg her Dig saa.
@@ -799,10 +822,11 @@ og et Sønnenavn annam.
 <nonum><center><w>Judas.</w></center></nonum>
 Aa jeg hader, aa jeg hader
 ham.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hanseno2017111813">
+<text id="hanseno2017111813">
 <head>
     <title>II</title>
     <toctitle><num>II</num>Judas og Caiphas</toctitle>
@@ -814,6 +838,7 @@ ham.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center><w>Caiphas.</w></center></nonum>
 Er Du endnu hos den Mester,
 der kan drive Djævle ud?
@@ -859,10 +884,11 @@ ham, som kun bespotter Gud.
 <nonum><center><w>Judas.</w></center></nonum>
 Folket fabler; hil Dig, vise!
 Djævle driver han ej ud.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hanseno2017111814">
+<text id="hanseno2017111814">
 <head>
     <title>III</title>
     <toctitle><num>III</num>Judas</toctitle>
@@ -874,6 +900,7 @@ Djævle driver han ej ud.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center><w>Judas.</w></center></nonum>
 Simon Peter, Simon Peter,
 jeg har vidst det førend Du.
@@ -919,10 +946,11 @@ Dette har Du selv ej fundet,
 dette er ej Kødet klart,
 dette har Du ej udgrundet,
 dette er Dig aabenbart.«
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hanseno2017111815">
+<text id="hanseno2017111815">
 <head>
     <title>IV</title>
     <toctitle><num>IV</num>Judas</toctitle>
@@ -934,6 +962,7 @@ dette er Dig aabenbart.«
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center><w>Judas.</w></center></nonum>
 Bylder slaa den unge Kvinde,
 at hun kom til Simons Hus,
@@ -987,10 +1016,11 @@ Og det Blik, paa mig han fæster,
 saa sørgmodigt, end jeg ser.
 Du har Ret som altid, Mester,
 Du skal aldrig salves mer.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hanseno2017111816">
+<text id="hanseno2017111816">
 <head>
     <title>V</title>
     <toctitle><num>V</num>Judas og Caiphas</toctitle>
@@ -1002,6 +1032,7 @@ Du skal aldrig salves mer.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center><w>Caiphas.</w></center></nonum>
 Skal Du holde Paaskehøjtid,
 som Du altid før den holdt.
@@ -1064,10 +1095,11 @@ I Gethsemane.
 
 <nonum><center><w>Caiphas</w> <small>(gaar).</small></center></nonum>
         Guds Fred.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hanseno2017111817">
+<text id="hanseno2017111817">
 <head>
     <title>VI</title>
     <toctitle><num>VI</num>Judas og hans Moder</toctitle>
@@ -1079,6 +1111,7 @@ I Gethsemane.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center><w>Moderen.</w></center></nonum>
 Søn, Du lider.
 
@@ -1143,13 +1176,14 @@ Ingen fler — ti han forbød det.
 
 <nonum><center><w>Moderen.</w></center></nonum>
 Judas, kys mig aldrig mer.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section>
 
-<poem id="hanseno2017111818">
+<text id="hanseno2017111818">
 <head>
     <title>Epilog</title>
     <firstline>Ved Aakandesøen laa jeg</firstline>
@@ -1157,6 +1191,7 @@ Judas, kys mig aldrig mer.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ved Aakandesøen laa jeg,
 mens Timerne stille stod,
 med Skyggen omkring mit Hoved
@@ -1171,8 +1206,9 @@ Og er jeg træt, saa bær mig,
 Du kølige Moder Jord.
 Jeg ligger jo ganske stille,
 og paa mig selv jeg tror.
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

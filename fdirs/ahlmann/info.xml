@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="ahlmann" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Hans</firstname>
+    <lastname>Ahlmann</lastname>
+    <fullname>Hans Christian Vilhelm Ahlmann</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1881-10-29</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>13-05-1952</date>
+    </dead>
+  </period>
+  
+  <works>1907,1910,1913,1918,1920,1924,1929,1935</works>
+</person>

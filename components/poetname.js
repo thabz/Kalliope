@@ -19,9 +19,11 @@ const PoetName = (props: PoetNameProps) => {
         {p[0]}
       </span>
     ) : null;
+  // nowrap herunder, da det ser bedst ud i overskrifter, at parentesen
+  // med leveår ikke knækker over.
   const p1 =
     p[1] != null ? (
-      <span key={1} className="lighter">
+      <span key={1} className="lighter" style={{ whiteSpace: 'nowrap' }}>
         {' '}
         {p[1]}
       </span>
