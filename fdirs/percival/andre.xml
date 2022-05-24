@@ -7,13 +7,14 @@
 </workhead>
 <workbody>
 
-<poem id="percival201908251">
+<text id="percival201908251">
 <head>
     <title>Poetry</title>
     <firstline>The world is full of Poetry—the air</firstline>
     <!-- https://quod.lib.umich.edu/a/amverse/BAD9482.0001.001/1:6?rgn=div1;view=fulltext -->
 </head>
 <body>
+<poetry>
 The world is full of Poetry—the air
 Is living with its spirit; and the waves
 Dance to the music of its melodies,
@@ -179,8 +180,9 @@ Rich with the wealth of ancient bards, and stored
 With all the patriarchs of British song
 Hallowed and rendered glorious, cannot tell
 Those feelings, which have died, to live no more.    
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

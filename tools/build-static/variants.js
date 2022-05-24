@@ -2,13 +2,17 @@ const {
   isFileModified,
   loadCachedJSON,
   writeCachedJSON,
-  markFileDirty,  
+  markFileDirty,
+  force_reload: globalForceReload,
 } = require('../libs/caching.js');
-const { loadXMLDoc, fileExists } = require('../libs/helpers.js');
-const { safeGetAttr } = require('./xml.js');
+const { fileExists } = require('../libs/helpers.js');
+const { loadXMLDoc, safeGetAttr, getElementsByTagNames } = require('./xml.js');
 
-const build_variants = collected => {
-  let variants_map = new Map(loadCachedJSON('collected.variants') || []);
+const build_variants = (collected) => {
+  let variants_map = globalForceReload
+    ? new Map()
+    : new Map(loadCachedJSON('collected.variants') || []);
+  const force_reload = variants_map.size === 0;
 
   register_variant = (from, to) => {
     let array = variants_map.get(from) || [];
@@ -19,20 +23,29 @@ const build_variants = collected => {
   };
 
   collected.poets.forEach((poet, poetId) => {
-    collected.workids.get(poetId).forEach(workId => {
+    collected.workids.get(poetId).forEach((workId) => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
       if (!fileExists(filename)) {
-          return
+        return;
       }
-      if (!isFileModified(filename)) {
+      if (!force_reload && !isFileModified(filename)) {
         return;
       }
       let doc = loadXMLDoc(filename);
-      doc
-        .find('//poem[@variant]|//prose[@variant]|//section[@variant]')
-        .forEach(text => {
+      getElementsByTagNames(doc, ['text', 'section'])
+        .filter((e) => {
+          return (
+            safeGetAttr(e, 'variant') != null && safeGetAttr(e, 'id') != null
+          );
+        })
+        .forEach((text) => {
           const textId = safeGetAttr(text, 'id');
           const variantId = safeGetAttr(text, 'variant');
+          if (textId == null || variantId == null) {
+            throw new Error(
+              `Text in ${poetId}/${workId} ${textId} is listed as a variant of ${variantId}.`
+            );
+          }
           register_variant(textId, variantId);
           register_variant(variantId, textId);
           // Mark work containing variantId dirty
@@ -51,6 +64,10 @@ const build_variants = collected => {
 
 const resolve_variants_cache = {};
 const resolve_variants = (poemId, collected) => {
+  if (poemId == null) {
+    throw new Error(`function resolve_variants called with null poemId.`);
+  }
+
   const variantIds = collected.variants.get(poemId);
   if (variantIds == null || variantIds.length == 0) {
     return null;
@@ -62,13 +79,13 @@ const resolve_variants = (poemId, collected) => {
 
   // Deep dive through variants-graph
   let seen_variants = new Set();
-  const recurse = variantId => {
+  const recurse = (variantId) => {
     if (seen_variants.has(variantId)) {
       return;
     } else {
       seen_variants.add(variantId);
       const variantIds = collected.variants.get(variantId);
-      variantIds.forEach(variantId => {
+      variantIds.forEach((variantId) => {
         recurse(variantId);
       });
     }
@@ -81,12 +98,12 @@ const resolve_variants = (poemId, collected) => {
     const metaB = collected.texts.get(b);
     if (metaA == null) {
       throw new Error(
-        `The unknown text ${a} is listed as a variant of ${poemId}.`
+        `The unknown text "${a}" is listed as a variant of "${poemId}".`
       );
     }
     if (metaB == null) {
       throw new Error(
-        `The unknown text ${b} is listed as a variant ${poemId}.`
+        `The unknown text "${b}" is listed as a variant of "${poemId}".`
       );
     }
     const workA = collected.works.get(metaA.poetId + '/' + metaA.workId);
@@ -98,6 +115,11 @@ const resolve_variants = (poemId, collected) => {
 };
 
 const primaryTextVariantId = (textId, collected) => {
+  if (textId == null) {
+    throw new Error(
+      `function primaryTextVariantId called with textId "${textId}".`
+    );
+  }
   const variants = resolve_variants(textId, collected);
   if (variants != null && variants.length > 0) {
     return variants[0];

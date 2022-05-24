@@ -26,6 +26,10 @@ export default class WorksList extends React.Component<WorksListProps> {
   render() {
     const { lang, poet, works } = this.props;
 
+    if (works.length === 0) {
+      return null;
+    }
+
     const sortWorks = works => {
       if (poet.id === 'bibel') {
         return works;

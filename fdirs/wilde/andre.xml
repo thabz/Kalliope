@@ -9,7 +9,7 @@
 </workhead>
 <workbody>
 
-<poem id="wilde2001062408">
+<text id="wilde2001062408">
 <head>
    <title>To My Wife</title>
    <subtitle>With A Copy Of My Poems</subtitle>
@@ -19,6 +19,7 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 I can write no stately proem
 As a prelude to my lay;
 From a poet to a poem
@@ -33,10 +34,11 @@ And when wind and winter harden
 All the loveless land,
 It will whisper of the garden,
 You will understand.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="wilde2001070701">
+<text id="wilde2001070701">
 <head>
    <title>The Ballad of the Reading Gaol</title>
    <toctitle>The Ballad of the Reading Gaol</toctitle>
@@ -45,6 +47,7 @@ You will understand.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 I
 
 He did not wear his scarlet coat,
@@ -819,7 +822,8 @@ Some do it with a bitter look,
 Some with a flattering word,
 The coward does it with a kiss,
 The brave man with a sword!
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

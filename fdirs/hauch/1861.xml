@@ -21,18 +21,19 @@
 </head>
 <content>
 
-<poem id="hauch2005052801">
+<text id="hauch2005052801">
 <head>
     <title>Frederiksborg</title>
     <firstline>Deilige Slot med de glimtende Fløie</firstline>
     <!-- Carsten Hauch: <i>Udvalgte Skrifter</i>, I-III, Poul Schjærf (red.), Holbergselskabet, Kbh., 1926-29, bd. III, pp. 245-247. -->
     <pictures>
-      <picture src="frederiksborg-slotsbrand.jpg">Joachim Ferdinand Richardt: <i>Frederiksborg Slots Brand</i>, 1859. Det Nationalhistoriske Museum, Frederiksborg Slot.</picture>
+      <picture src="frederiksborg-slotsbrand.jpg" museum="fnm">Joachim Ferdinand Richardt: <i>Frederiksborg Slots Brand</i>, 1859.</picture>
     </pictures>
     <source pages="1-3"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Deilige Slot med de glimtende Fløie,
 Aldrig i Norden Din Lige man saae,
 Issen Du strakte mod Himlen den høie,
@@ -104,10 +105,11 @@ Vogted Du trolig bag Bøgenes Krands.
   Ingen Frygt vort Mod skal binde,
   Selv i Sorgen Kraft vi finde
   For at frelse Danmarks Ø.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2002050902">
+<text id="hauch2002050902">
 <head>
     <title>Fædrelandssang</title>
     <firstline>Morgendug, der sagte bæver i den lune Vind</firstline>
@@ -119,6 +121,7 @@ Vogted Du trolig bag Bøgenes Krands.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Morgendug, der sagte bæver i den lune Vind,
 Blomsterduft, der langsomt svæver fra den gamle Lind,
 Alfeleg bag Skovens Sale,
@@ -146,10 +149,11 @@ Stærke, som vor Oldtids Minder,
 Fuld af Kraft mod Danmarks Fjender,
 Troe som Guld mod Drot og Rige,
 Dem vi aldrig svige.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032903">
+<text id="hauch2018032903">
 <head>
     <title>Sang for de Danske Studenter</title>
     <toctitle>Sang for de Danske Studenter (paa Upsalatoget)</toctitle>
@@ -159,6 +163,7 @@ Dem vi aldrig svige.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Naar Linden grønnes, og naar Gjøgen kommer,
 Naar Engen blomstrer i den friske Vaar,
 Naar Kilden risler i den unge Sommer,
@@ -212,10 +217,11 @@ Thi vil de unge Slægter did vi sanke,
 Og der de vies skal ved Mindets Daab,
 Og der de styrkes skal i Sjæl og Tanke,
 Til Kamp for Nordens Fremtid og dens Haab.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032904">
+<text id="hauch2018032904">
 <head>
     <title>Sang ved Kongens Ankomst i Theatret</title>
     <firstline>Kjærlighed, Ungdom og Lykke forsvinder</firstline>
@@ -223,6 +229,7 @@ Til Kamp for Nordens Fremtid og dens Haab.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Kjærlighed, Ungdom og Lykke forsvinder,
 Tiden bortvifter den jordiske Glands;
 Kunsten dog griber de flygtende Minder,
@@ -247,10 +254,11 @@ Vel da den Drot, som i Sorg og i Glæde,
 Lytted til Retfærds og Frihedens Kald,
 Kommende Sagn skal erindre hans Hæder,
 Seent skal han glemmes i Kunsternes Hal.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032905">
+<text id="hauch2018032905">
 <head>
     <title>Til Hendes Majestæt Dronning Karoline Amalia</title>
     <toctitle>Sang til Karoline Amalia</toctitle>
@@ -260,6 +268,7 @@ Seent skal han glemmes i Kunsternes Hal.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Saalænge Danmarks Hjerte for Mildhed end kan slaae,
 Vist aldrig det ganger af Minde,
 Hvad stille Du har virket, mens Tiderne gaae,
@@ -294,10 +303,11 @@ Derfor, naar vi samles med Dannerkongen her,
 Hvis Daad ham til Folket mon binde,
 Vi mindes ogsaa Dig, der ham stander saa nær,
 Du Dronning ved de blomstrende Linde!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032906">
+<text id="hauch2018032906">
 <head>
     <title>Til Samme</title>
     <firstline>Mangen Leg af Lykkens Luner maatte Danmark see</firstline>
@@ -305,6 +315,7 @@ Du Dronning ved de blomstrende Linde!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Mangen Leg af Lykkens Luner maatte Danmark see,
 Hulde Dronning trolig deler Du dets Vel og Vee,
 Vender Sorgen om til Glæde,
@@ -325,10 +336,11 @@ Hist, hvorhen Din Længsel higer,
 Hist, hvor Sorg og Smerte viger,
 Og hvor Jordens Glands forsvinder,
 Der Din Løn Du finder.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2005052802">
+<text id="hauch2005052802">
 <head>
     <title>Ved Prof. Christian Lütkens Død</title>
     <toctitle>Ved Prof. Chr. Lütkens Død</toctitle>
@@ -339,6 +351,7 @@ Der Din Løn Du finder.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Aand, som Intet kunde bøie,
 Ingen Sygdom, intet Savn,
 Høie Sjæl, som Faa kun kjendte,
@@ -373,10 +386,11 @@ Skjøndt besløret her Du vandred,
 Bøiet længst mod Gravens Rand:
 Skal Du hist dog mægtig straale,
 Som en Sol i Aanders Land.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2005052803">
+<text id="hauch2005052803">
 <head>
     <title>Sang ved Naturforskermødet i Kjøbenhavn</title>
     <toctitle>Sang ved Naturforskermødet i Kjøbenhavn 1860</toctitle>
@@ -387,6 +401,7 @@ Som en Sol i Aanders Land.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Naturens ædle Dyrker begjerer ei den Krands,
 Der falmer i Tidernes Vande,
 Han agter kun og ønsker og søger den Glands,
@@ -421,10 +436,11 @@ De Tanker, der flyve som Svaner over Sø,
 Til Under for de fjerneste Lande,
 Og aldrig kan ældes og aldrig kan døe,
 Og sænkes i Glemselens Vande.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2002050903">
+<text id="hauch2002050903">
 <head>
     <title>Vossevangen</title>
     <subtitle>En Bondekarls Sang af et utrykt Lystspil</subtitle>
@@ -437,6 +453,7 @@ Og sænkes i Glemselens Vande.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Paa Vossevangen der vil jeg boe,
 Der voxer Kløver over Høie,
 Der gaaer hver Ungkarl med blanke Skoe
@@ -466,10 +483,11 @@ Og Huldren synger, mens Elven gaaer;
 Ja, tro Du mig,
 Jeg siger Dig,
 Der er det fagert at leve.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2002092908">
+<text id="hauch2002092908">
 <head>
     <title>Den Forladte</title>
     <subtitle>En ung piges Sang af et utrykt Lystspil</subtitle>
@@ -479,6 +497,7 @@ Der er det fagert at leve.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 De Bølger de skylle, de skylle mod Land,
 Under Lide,
 De Tanker de færdes saavidt over Vand,
@@ -493,10 +512,11 @@ Ak vidste, ja vidste jeg, hvor nu han mon gaae
 Under Lide,
 Hvo Kjærlighed ei kjender, han kan mig ei forstaae,
 Mig tvinger den lønlige Qvide.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch1861a2">
+<text id="hauch1861a2">
 <head>
     <title>Vaaren</title>
     <firstline>Kun en eneste Gang, mens de lethenglidende Timer</firstline>
@@ -505,6 +525,7 @@ Mig tvinger den lønlige Qvide.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Kun en eneste Gang, mens de lethenglidende Timer
 Med ustandselig Iil fuldende det aarlige Kredsløb,
 Vender en himmelsk Gud sine Vingers Flugt imod Jorden,
@@ -547,10 +568,11 @@ Er den tilstrækkelig dog for at vække det døde Naturliv,
 Og gjenføde den Kraft, der svandt i Vinterens Gravmulm.
 Til en flygtigforsvindende Drøm, et vidunderligt Billed
 Af vort evige Hjem blev Tidens Foryngelse knyttet.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch1861a3">
+<text id="hauch1861a3">
 <head>
     <title>Høsten</title>
     <firstline>Storken er flygtet længst, og Sangerfuglenes Qviddren</firstline>
@@ -559,6 +581,7 @@ Af vort evige Hjem blev Tidens Foryngelse knyttet.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Storken er flygtet længst, og Sangerfuglenes Qviddren
 Høres ei meer i Skovens Krat, deres Tunger forstummed,
 En efter En forsvandt og fulgte sin herskende Dronning
@@ -608,10 +631,11 @@ Derfor, Du hellige Høst, er Du Jordens Ven, og Dig elsker
 Høit hver alvorlig Natur, Du Naturens tragiske Musa;
 Thi naar Jordlivsglandsen henveires i Støv og i Stormvind,
 Drager Dit evige Lysvæld Menneskets Blik mod det Høie.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032913">
+<text id="hauch2018032913">
 <head>
     <title>Digteren og den tragiske Musa</title>
     <firstline>Siig mig, høie Musa, Du, som er saa stor og rig</firstline>
@@ -619,6 +643,7 @@ Drager Dit evige Lysvæld Menneskets Blik mod det Høie.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center>Han</center></nonum>
 
 Siig mig, høie Musa, Du, som er saa stor og rig,
@@ -653,10 +678,11 @@ Verden elsker ei den Dag, hvorpaa hver Hovmodsaand
 Blegner, synker som et Intet hen for Retfærds Haand,
 Og hvorpaa hvert Afgudsbilled, som den krandset har,
 Skues nøgen i sin Afmagt gjennem Sandheds Glar.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2005052804">
+<text id="hauch2005052804">
 <head>
     <title>Hellebæk</title>
     <firstline>Sangrige Danmark, Du Moder til Helte</firstline>
@@ -665,6 +691,7 @@ Skues nøgen i sin Afmagt gjennem Sandheds Glar.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Sangrige Danmark, Du Moder til Helte,
 Smilende mildt under Bølgernes Dands,
 Aldrig jeg skued Dit søgrønne Bælte,
@@ -709,10 +736,11 @@ Deilige Strand, med vor Oldtid fortrolig,
 Fremtidens Syner dog ligge dig nær;
 Kunde jeg vælge paa Jord mig en Bolig,
 Visselig troer jeg, jeg valgte den her.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2005052805">
+<text id="hauch2005052805">
 <head>
     <title>Fisken fra Fjeldsøen</title>
     <subtitle>En Fabel</subtitle>
@@ -722,6 +750,7 @@ Visselig troer jeg, jeg valgte den her.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Høit imod Norden i en stille Dal
 En Sø sig snoede mellem Klipper graae,
 Omkrandset rundt af store dunkle Skove,
@@ -812,10 +841,11 @@ Hvor Fjeldets Sø bag Nordens Skov sig dølger,
 Hvor glad den leged i sin Barndoms Tid,
 Men aldrig fandt den Veien mere did,
 Den fandt sin Død i Sydens fjerne Bølger.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2005052806">
+<text id="hauch2005052806">
 <head>
     <title>En Erindring</title>
     <firstline>En Elv bag tvende Klipper</firstline>
@@ -824,6 +854,7 @@ Den fandt sin Død i Sydens fjerne Bølger.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 En Elv bag tvende Klipper
 I Dybet jeg saae,
 Dens Bølger vare sorte,
@@ -893,10 +924,11 @@ Dertil de dunkle Klipper
 I Dalen dyb og trang,
 Og Roserne, der blussed
 Ved Vandbølgens Sang.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032917">
+<text id="hauch2018032917">
 <head>
     <title>De tvende Veie</title>
     <firstline>Du til Poesi vil offre dit Liv, ak, har Du nøie betænkt det</firstline>
@@ -904,6 +936,7 @@ Ved Vandbølgens Sang.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Du til Poesi vil offre dit Liv, ak, har Du nøie betænkt det,
 Og feiler dybt i Sjælen skjult Du en stor, uendelig Rigdom,
 Istand til at fylde den lange Tid fra din Ungdomsvaar og til Graven.
@@ -953,10 +986,11 @@ Den falske Berømthed kan vare maaskee et Aar eller ti eller tyve,
 Dog kommer engang Gjengjeldelsens Dag, da Sæbeboblerne briste,
 Da Laurbærkrandsen, vunden med List og ved mangfoldige Rænker,
 Skal rives med Haan fra Din Isse bort og offres til Glemselens Vande.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2005052807">
+<text id="hauch2005052807">
 <head>
     <title>Den forgangne Tid</title>
     <firstline>Vilde forfra Du begynde Dit forsvundne Liv igjen</firstline>
@@ -965,6 +999,7 @@ Skal rives med Haan fra Din Isse bort og offres til Glemselens Vande.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 ,,Vilde forfra Du begynde Dit forsvundne Liv igjen
 ,,Med dets Fryd og lange Smerte?'' saa Du spørger mig, min Ven,
 ,,Med dets Kamp og vilde Stræben, med dets korte Ungdomsleg,
@@ -986,10 +1021,11 @@ Men at jeg har Livet levet fra dets Foraar til dets Høst,
 Lært dets Glæder at vurdere, at forstaae dets Sorg og Lyst,
 Og at finde midt i Stormen i mit eget Hjerte Fred,
 Derfor takker jeg den Gud, der sendte mig i Støvet ned.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch1861a1">
+<text id="hauch1861a1">
 <head>
     <title>Trøst i Modgang</title>
     <firstline>Vender sig Lykken fra Dig</firstline>
@@ -997,6 +1033,7 @@ Derfor takker jeg den Gud, der sendte mig i Støvet ned.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Vender sig Lykken fra Dig,
 Bli'er Du i Støvet traadt,
 Og bli'er af Fjender spottet,
@@ -1021,10 +1058,11 @@ Thi Smerten er kun Vrangen
 Af Salighedens Dragt,
 I Dybets dunkle Kilder
 Speiler sig Lysets Pragt.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2001050102">
+<text id="hauch2001050102">
 <head>
     <title>Afsked fra Verden</title>
     <firstline>Det er paa Tiden, bort jeg vandre maa</firstline>
@@ -1035,6 +1073,7 @@ Speiler sig Lysets Pragt.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det er paa Tiden, bort jeg vandre maa,
 Den blege Død har lammet mine Kræfter,
 Det dunkle Eventyr jeg skal bestaae,
@@ -1069,10 +1108,11 @@ Du Frelsens Aand, forlad da Du mig ei!
 Og tag den Kundskab bort, der mig forvilder!
 Udslet min Synd og led Du mig paa Vei,
 Igjennem Dødens Nat til Livets Kilder!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032921">
+<text id="hauch2018032921">
 <head>
     <title>Et mystisk Digt</title>
     <toctitle>Et mystisk Digt (efter Novalis)</toctitle>
@@ -1082,10 +1122,10 @@ Igjennem Dødens Nat til Livets Kilder!
         <note>Gendigtning af Novalis' <xref type="translation" poem="novalis2019010901"/>.</note>
     </notes>
     <source pages="49"/>
-    <keywords>novalis</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Naar Tal ikke meer og ei Figurer,
 Er Nøglen til alle Kreaturer,
 Naar de, som kysses ved Midnatstids,
@@ -1098,10 +1138,11 @@ Og naar man i Eventyr og Sang
 Erkjender den evige Verdensgang,
 Da flyver for et hemmeligt Ord
 Det forvildede Væsen bort fra Jord.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032922">
+<text id="hauch2018032922">
 <head>
     <title>En lille Drengs Klage</title>
     <toctitle>En lille Drengs Klage (efter Rückert)</toctitle>
@@ -1114,6 +1155,7 @@ Det forvildede Væsen bort fra Jord.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Svalen har bedraget,
 O Moder, var det Ret!
 Den har forladt vor Bolig,
@@ -1123,10 +1165,11 @@ Og Lyset tog den med sig,
 Og Solens varme Glød,
 Og naar igjen den kommer,
 Er jeg af Længsel død.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032923">
+<text id="hauch2018032923">
 <head>
     <title>Tillid til Gud</title>
     <toctitle>Tillid til Gud (efter Paul Gerhard)</toctitle>
@@ -1139,6 +1182,7 @@ Er jeg af Længsel død.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Befal hvad Du mon eie,
 Dit Legem og Din Aand,
 Til Herrens sikkre Pleie,
@@ -1228,10 +1272,11 @@ Skjenk mig Din milde Pleie,
 Og led mig fast og tro,
 Da skal jeg see de Veie,
 Hvor Lysets Engle boe.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032924">
+<text id="hauch2018032924">
 <head>
     <title>Søvnen og Døden</title>
     <firstline>Naar jeg vugger Dig i min Arm</firstline>
@@ -1239,6 +1284,7 @@ Hvor Lysets Engle boe.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center>Søvnen:</center></nonum>
 
 Naar jeg vugger Dig i min Arm,
@@ -1373,10 +1419,11 @@ Naar Du reiser Dig af min Favn,
 Og Du glemmer den aldrig ganske,
 Selv i de himmelske Boliger,
 Saalænge Syndens Frugter modnes.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032925">
+<text id="hauch2018032925">
 <head>
     <title>Maaneskinsdrømme</title>
     <firstline>O Maane, svigt mig ei</firstline>
@@ -1384,6 +1431,7 @@ Saalænge Syndens Frugter modnes.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><small><center>Elskeren.</center></small></nonum>
 
   O Maane, svigt mig ei,
@@ -1501,10 +1549,11 @@ Og hvad ved Midnatstide til Jorden jeg betroer,
 Det fatter ei Din Tanke, det tolker ei Dit Ord,
 Det skal Du først erfare ved Dødens tause Bryst,
 Naar Dødningskibet fører Dig til Hjemmets fjerne Kyst.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032926">
+<text id="hauch2018032926">
 <head>
     <title>Undergang og Frelse</title>
     <subtitle>Et Phantasibillede fra Folkevandringernes Tid</subtitle>
@@ -1513,6 +1562,7 @@ Naar Dødningskibet fører Dig til Hjemmets fjerne Kyst.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Norden i stærke Strømme frem mod Syden brød,
 Den gamle Verden sukked, den anede sin Død,
 Den ingen Tilflugt kjendte, ei vidste den noget Værn
@@ -1617,10 +1667,11 @@ Staae som Sendebud i Kunsten fra dens fjerne Ungdomsland,
 Vandre som et Ord fra Himlen over Jord fra Strand til Strand,
 Som et Vidnesbyrd, at Aanden skal igjen af Muld opstaae,
 Og at hvad i Sandhed leved, aldrig kan og skal forgaae.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch1861a0">
+<text id="hauch1861a0">
 <head>
     <title>Pleiaderne ved Midnat</title>
     <firstline>Vi ere de natlige Væversker</firstline>
@@ -1628,6 +1679,7 @@ Og at hvad i Sandhed leved, aldrig kan og skal forgaae.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Vi ere de natlige Væversker,
 Der sanke de usynlige Traade
 Fra Melkeveiens yderste Rundkreds,
@@ -1679,10 +1731,11 @@ Der udtørres og hensvinder i en Sommerdag,
 Mod det uendelige Hav, der aldrig udtørres,
 I de høie Aanders Rige,
 Som forløstes fra Tidernes Tryk.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch1861a4">
+<text id="hauch1861a4">
 <head>
     <title>Kanefarten</title>
     <subtitle>Et polsk Reisebillede</subtitle>
@@ -1692,6 +1745,7 @@ Som forløstes fra Tidernes Tryk.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nu Natten længes og Dagen er kort,
 Og Somren er dragen til Syden bort.
 
@@ -1724,10 +1778,11 @@ Den næste Dag var ei Spor at see.
 
 Og Granen sukked og spurgte Maanen,
 Hvorhen han kjørte, men Maanen taug.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032929">
+<text id="hauch2018032929">
 <head>
     <title>Et Eventyr paa Havbunden</title>
     <firstline>Der leved en Fisker ved Havets Strand</firstline>
@@ -1735,6 +1790,7 @@ Hvorhen han kjørte, men Maanen taug.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Der leved en Fisker ved Havets Strand,
 Hans Hytte laae ved en Klipperand.
 
@@ -1848,10 +1904,11 @@ At den mig lokker i Dybets Nat,
 
 Hvor Utysker lure ved Klippens Fod,
 Hvor Djævle vil suge mit Hjerteblod.''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032930">
+<text id="hauch2018032930">
 <head>
     <title>Den fattige Fisker</title>
     <firstline>Ved hviden Strand laae Ivars lave Bolig</firstline>
@@ -1859,6 +1916,7 @@ Hvor Djævle vil suge mit Hjerteblod.''
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ved hviden Strand laae Ivars lave Bolig,
 Dens Dør og Vindue var mod Havet vendt,
 For Mod og Dristighed var han bekjendt,
@@ -2173,10 +2231,11 @@ Og mæler høit: ,,I Dag jeg først Dig kjender,
 ,,Men til en fattig Svend hun ei skal bindes,
 ,,Derfor til Dig jeg giver hende hen,
 ,,Thi mere rig paa Leiet Ingen findes.''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032931">
+<text id="hauch2018032931">
 <head>
     <title>Skinnet bedrager</title>
     <firstline>Der svømmed en Baad under Stranden</firstline>
@@ -2184,6 +2243,7 @@ Og mæler høit: ,,I Dag jeg først Dig kjender,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Der svømmed en Baad under Stranden,
 Dog førte den intet Seil,
 Mens Pilen og Bøgen sig speiled
@@ -2248,10 +2308,11 @@ Mens Fuldmaanen skinner i Krat:
 ,,Og tro ei, at Graven kan naae
 ,,Den Aand, som blev tænkt af den Høie,
 ,,Endskjøndt det nu synes Dig saa.''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032932">
+<text id="hauch2018032932">
 <head>
     <title>Malstrømmen</title>
     <firstline>Den gamle Sigurd var en mægtig Mand</firstline>
@@ -2259,6 +2320,7 @@ Mens Fuldmaanen skinner i Krat:
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center>I.</center></nonum>
 
 Den gamle Sigurd var en mægtig Mand,
@@ -2596,10 +2658,11 @@ Velsignelse fremspired af hans Baare,
 Den fulgte med dem over Land og Hav;
 I Dalen dybt mon deres Bolig staae,
 Ei Hevnens Aander kan dem mere naae.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032933">
+<text id="hauch2018032933">
 <head>
     <title>Fiskernettets Oprindelse</title>
     <firstline>Loke flygted fra Ægirs Ø</firstline>
@@ -2607,6 +2670,7 @@ Ei Hevnens Aander kan dem mere naae.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center>I.</center></nonum>
 
 Loke flygted fra Ægirs Ø,
@@ -2991,10 +3055,11 @@ Til Surtur kommer og Verden forgaaer.
 
 Og ei skal han løses, før Agdrasil brænder,
 Før Kræfterne spredes og Tiden sig ender.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032934">
+<text id="hauch2018032934">
 <head>
     <title>Olaf den Helliges Syn</title>
     <firstline>Da Kong Olafs kjække Helte</firstline>
@@ -3002,6 +3067,7 @@ Før Kræfterne spredes og Tiden sig ender.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Da Kong Olafs kjække Helte,
 Kom til Trondhjem nær,
 Mødte dem med Sværd ved Bælte
@@ -3178,10 +3244,11 @@ Hedenskabets Fald sig nærmer,
 Det henveires brat;
 Olaf Christi Tro beskjermer
 Gjennem Tidens Nat.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032935">
+<text id="hauch2018032935">
 <head>
     <title>Den uadelige Ridderfrue</title>
     <subtitle>Efter et svensk Folkesagn</subtitle>
@@ -3190,6 +3257,7 @@ Gjennem Tidens Nat.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center>I.</center></nonum>
 
 Grev Birger hersked i Gotland,
@@ -3567,8 +3635,9 @@ Og var ei til min Broder
 Du bunden ved Kirkens Bud,
 Da tænker jeg vist, jeg valgte
 Dig til min egen Brud.''
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section>
@@ -3579,7 +3648,7 @@ Dig til min egen Brud.''
 </head>
 <content>
 
-<poem id="hauch2018032936">
+<text id="hauch2018032936">
 <head>
     <title>Falken</title>
     <firstline>Det var en deilig Morgen og Solen skinned klar</firstline>
@@ -3587,6 +3656,7 @@ Dig til min egen Brud.''
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det var en deilig Morgen og Solen skinned klar,
 Duggen paa alle Blade glimtede som et Glar,
 Som slebne Diamanter, hvori sig Lyset speiled,
@@ -3736,10 +3806,11 @@ Da sagde Dannerkongen: ,,Jeg er af Jagten kjed,
 Nu vil jeg søge Falken alene; hvo veed,
 Om ikke jeg den finder bag Skovens høie Træer,
 Ugjerne jeg den mister, hvor trodsig end den er.''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032937">
+<text id="hauch2018032937">
 <head>
     <title>Den fremmede Jomfru</title>
     <firstline>Saa red den ædle Konning ad Markerne hen</firstline>
@@ -3747,6 +3818,7 @@ Ugjerne jeg den mister, hvor trodsig end den er.''
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Saa red den ædle Konning ad Markerne hen,
 Der fulgte ham efter kun en eneste Svend,
 Men da de kom til Skoven, hvor Veien blev trang,
@@ -3826,10 +3898,11 @@ Men Falken steg i Luften, den fulgte ham paa Vei,
 Hun tankefuld bortvandred, dog vidste hun ei,
 At nu hun havde fængslet med Elskovens Baand
 Den Herre, der holdt det hele Danmark i Haand.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032938">
+<text id="hauch2018032938">
 <head>
     <title>Kongen besøger Tovelil og hendes Broder</title>
     <firstline>Kong Volmer jager den lette Raa</firstline>
@@ -3837,6 +3910,7 @@ Den Herre, der holdt det hele Danmark i Haand.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Kong Volmer jager den lette Raa,
 Det var ved Vintertide,
 Han fanger de Dyr baade store og smaa,
@@ -3926,10 +4000,11 @@ Og atter den Herre spøged og loe,
 De Timer saa sagtelig glide,
 Men da han naaede sin Kongebo,
 Da var det ved Midnatstide.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032939">
+<text id="hauch2018032939">
 <head>
     <title>Valdemars Fest</title>
     <firstline>Kong Volmer havde bygget et Slot ved Vordingborg</firstline>
@@ -3937,6 +4012,7 @@ Da var det ved Midnatstide.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Kong Volmer havde bygget et Slot ved Vordingborg,
 Hvor ofte han sig hviled og glemte Verdens Sorg,
 Der vexled han med de Hofmænd saamangt et lystigt Ord,
@@ -4006,10 +4082,11 @@ Hun eier megen Rigdom, i Fløil gaaer hun klædt,
 Man siger, at hun stammer af fyrstelig Æt,
 De Sølvklokker klinge, hvor hendes Ganger gaaer,
 Fire ere de Jomfruer, som børste hendes Haar.''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032940">
+<text id="hauch2018032940">
 <head>
     <title>Tovelilles Dands</title>
     <firstline>Den høie Dør sig aabned, Kong Volmer fremtreen</firstline>
@@ -4017,6 +4094,7 @@ Fire ere de Jomfruer, som børste hendes Haar.''
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Den høie Dør sig aabned, Kong Volmer fremtreen,
 Og skjøndt han ei var smykket med Guld og Ædelsteen,
 Han ligned dog en Konning, som Ild var hans Blik,
@@ -4111,10 +4189,11 @@ Det er, som naar om Natten i Fuldmaanens Skjær
 De Elverpiger dandse bag Krat og bag Træer.
 Og dreie sig som Taager, der jages af Vind.''
 Det hørte Dronning Helvig med tankefuldt Sind.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032941">
+<text id="hauch2018032941">
 <head>
     <title>Kong Valdemar og hans Gjester</title>
     <subtitle>Fortsættelse</subtitle>
@@ -4123,6 +4202,7 @@ Det hørte Dronning Helvig med tankefuldt Sind.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I trende Dage varede den danske Konges Fest,
 Den ædle Marskalk sørged for hver indbuden Gjest;
 Af Spiser og ædle Vine var Kongehallen fuld,
@@ -4197,10 +4277,11 @@ Kong Volmer blev paa Borgen, han fulgte dem ei,
 Han sagde: ,,Jeg bliver hjemme, det er for lang en Vei,
 Jeg lytter helst til Klokkeklang fra Skovens vilde Sti,
 Og elsker kun den Munkesang, der snart er forbi.''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032942">
+<text id="hauch2018032942">
 <head>
     <title>Ridderspillet</title>
     <firstline>Saasnart de atter stode bag Borgens høie Tind</firstline>
@@ -4208,6 +4289,7 @@ Og elsker kun den Munkesang, der snart er forbi.''
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Saasnart de atter stode bag Borgens høie Tind,
 Iled de stærke Riddere med kamplystent Sind
 Ud i Fegtergaarden, der strakte sig mod Vang,
@@ -4347,10 +4429,11 @@ Det ligner de Sange ved Fuldmaanens Glands,
 Som Dvergene qvæde til Elverpigers Dands.''
 Da lytted Fru Helvig, til Sangen var endt;
 Men hvad hun dengang tænkte, det blev kun seent bekjendt.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032943">
+<text id="hauch2018032943">
 <head>
     <title>Herr Eckhard og hans Planer</title>
     <firstline>Den næste Morgen jaged Kong Volmer under Ø</firstline>
@@ -4358,6 +4441,7 @@ Men hvad hun dengang tænkte, det blev kun seent bekjendt.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Den næste Morgen jaged Kong Volmer under Ø,
 Ham fulgte mangen Ridder samt mangen deilig Mø.
 De rede paa høie Heste paa den sneedækte Vei;
@@ -4442,10 +4526,11 @@ Da beder han den tamme Hind alt i den Rosenlund.''
 Men denne Gang, min Ditlef, ere vi altfor faa,
 Dog har med Lybek og Gulland han nylig yppet Tvist,
 Kan de ham overvinde, behøves ei vor List.''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032944">
+<text id="hauch2018032944">
 <head>
     <title>Jagten</title>
     <firstline>Under de høie Bøge var hugget mangen Sti</firstline>
@@ -4453,6 +4538,7 @@ Kan de ham overvinde, behøves ei vor List.''
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Under de høie Bøge var hugget mangen Sti,
 Der red Konning Volmer med sit Følge forbi:
 De vilde Dyr i Skoven ei glæded sig derved,
@@ -4552,10 +4638,11 @@ Da reiste sig den Jomfru med blussende Kind,
 Hun iled gjennem Hallen som den flygtige Hind,
 Hun vilde ham ikke høre, men hvad der meer er hændt,
 Og hvad de siden talte, det er mig ei bekjendt.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032945">
+<text id="hauch2018032945">
 <head>
     <title>Fru Helvig</title>
     <firstline>Hr. Eckhard og Fru Helvig heel tidt hinanden saae</firstline>
@@ -4563,6 +4650,7 @@ Og hvad de siden talte, det er mig ei bekjendt.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hr. Eckhard og Fru Helvig heel tidt hinanden saae,
 De mødtes tidt i Hallen, naar Mørket faldt paa,
 De mødtes og i Lunden paa den eensomme Vei,
@@ -4667,10 +4755,11 @@ Og han kan vende Veiret blot ved sin Stemmes Klang,
 Og han kan standse Stormens og Stjernernes Gang
 Og lære Skovens Ulve at trække Bondens Plov.''
 — ,,Ja'', svared Fru Helvig, ,,jeg har alt hørt hans Lov.''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032946">
+<text id="hauch2018032946">
 <head>
     <title>Hexen spaaer Kong Valdemar</title>
     <firstline>Kong Volmer rider ved Maaneglands</firstline>
@@ -4678,6 +4767,7 @@ Og lære Skovens Ulve at trække Bondens Plov.''
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Kong Volmer rider ved Maaneglands,
 Ham standser en gammel kvinde,
 ,,Vel mødt'', hun siger, ,,Du Danmarks Drot!
@@ -4732,10 +4822,11 @@ Hun volder Dig Kummer og Sorg og Spee,''
 Saa sang hun ved Midnatstid,
 Da svared den Herre: ,,Jeg vel kan see,
 Fru Helvig har sendt Dig hid.''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032947">
+<text id="hauch2018032947">
 <head>
     <title>Valdemar beiler til Tovelille</title>
     <firstline>Eng og Ager grønnedes, der blomstred Bøg og Riis</firstline>
@@ -4743,6 +4834,7 @@ Fru Helvig har sendt Dig hid.''
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Eng og Ager grønnedes, der blomstred Bøg og Riis,
 Skovduen og Gjøgen de sang paa vante Viis,
 Og Stæren fløited liflig, det var ved Pindsetid,
@@ -4832,10 +4924,11 @@ I Drømme vi skue med indadvendt Blik,
 Hvad aldrig i Dagslyset Ord og Stemme fik,
 Der hvile mange Tanker i Drømmenes Dyb,
 Ukjendte for Lyset som Havbundens Kryb.''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032948">
+<text id="hauch2018032948">
 <head>
     <title>Hjemkomsten</title>
     <firstline>Kong Volmer havde feiret, Visby var ødelagt</firstline>
@@ -4843,6 +4936,7 @@ Ukjendte for Lyset som Havbundens Kryb.''
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Kong Volmer havde feiret, Visby var ødelagt,
 De vendiske Stæder skjalv for Kongens Magt.
 
@@ -4908,10 +5002,11 @@ Sig gunstig forbinde, kan jeg Intet formaae.
 
 Thi Lykken beroer paa Øieblikkets Magt.''
 Alt hvad de dengang talte, det blev til Volmer sagt.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032949">
+<text id="hauch2018032949">
 <head>
     <title>Skriftemaalet</title>
     <firstline>Verdens Frelser var opstanden</firstline>
@@ -4919,6 +5014,7 @@ Alt hvad de dengang talte, det blev til Volmer sagt.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Verdens Frelser var opstanden,
 Folket sig med Andagt bøied,
 Thi det var en Paaskemorgen,
@@ -5003,10 +5099,11 @@ Saadan talte streng alvorlig
 Munken til den blege Jomfru,
 Der for ham i Støvet knæled,
 Mens hun skjælved ved hans Røst.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032950">
+<text id="hauch2018032950">
 <head>
     <title>Luftbilledet</title>
     <firstline>Tankefuld den favre Jomfru</firstline>
@@ -5014,6 +5111,7 @@ Mens hun skjælved ved hans Røst.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Tankefuld den favre Jomfru
 Satte sig ved hviden Strand,
 Hvor de gyldne Solens Straaler
@@ -5066,10 +5164,11 @@ Ved den blege Jomfrus Fod:
 Over Sø og salten Vove
 Til den Ø, hvorpaa Du sødtes,
 Hvor Din Barndoms Vugge stod!''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032951">
+<text id="hauch2018032951">
 <head>
     <title>Tovelil taler med sin Broder</title>
     <firstline>Længe hviled i det Fjerne</firstline>
@@ -5077,6 +5176,7 @@ Hvor Din Barndoms Vugge stod!''
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Længe hviled i det Fjerne
 Dybt i Syd det sære Billed,
 Liig en gylden Barndomsdrøm,
@@ -5140,10 +5240,11 @@ Nær ved Havets Sølverflod,
 Aldrig vendte hun tilbage
 Til den Ø, hvorpaa hun fødtes,
 Og hvor hendes Vugge stod.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032952">
+<text id="hauch2018032952">
 <head>
     <title>Ringen</title>
     <firstline>Stjerner blinke med Sølverskjær</firstline>
@@ -5151,6 +5252,7 @@ Og hvor hendes Vugge stod.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Stjerner blinke med Sølverskjær,
 Høit over de drømmende Linde,
 Fru Helvig vandrer bag Skov og Træer,
@@ -5250,10 +5352,11 @@ Det hjalp ei, at Helvig om Naade ham bad,
 Til Baalet han Troldqvinden dømmer,
 Men Helvig tier og skjuler sit Had,
 Om Hevnen hun hemmelig drømmer.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032953">
+<text id="hauch2018032953">
 <head>
     <title>Kongens Kjærlighed vinder Seier</title>
     <firstline>Om nu det var den Trolddom, der var i Ringen lagt</firstline>
@@ -5261,6 +5364,7 @@ Om Hevnen hun hemmelig drømmer.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Om nu det var den Trolddom, der var i Ringen lagt,
 Eller det var Elskovs og Kjærligheds Magt,
 Der paa Tovelil virked, dog siges det for vist,
@@ -5355,10 +5459,11 @@ Svared med Smiil Kong Volmer: ,,Ængst Dig ei for mig!
 Jeg siger ei til Andre, hvad jeg har sagt til Dig;
 Jeg veed, at nu der hersker en renere Tro,
 Dog var man i gamle Dage ved Livet mere fro.''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032954">
+<text id="hauch2018032954">
 <head>
     <title>Valdemars Sang</title>
     <firstline>Min Falk den fløi over Mark og Vang</firstline>
@@ -5366,6 +5471,7 @@ Dog var man i gamle Dage ved Livet mere fro.''
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Min Falk den fløi over Mark og Vang,
 Tidt og mangesinde,
 I Skoven jeg saae hende første Gang,
@@ -5420,10 +5526,11 @@ Og naar vi kan modes paa vante Viis
 Tidt og mangesinde,
 Maa selv han beholde sit Paradiis,
 I vogte den Jomfru vel!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032955">
+<text id="hauch2018032955">
 <head>
     <title>Herr Eckhard gjester igjen Danmark</title>
     <firstline>Ved Midsommertide, da Dagen var lang</firstline>
@@ -5431,6 +5538,7 @@ I vogte den Jomfru vel!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ved Midsommertide, da Dagen var lang,
 Kom Herr Eckhard tilbage til Danmarks Blomstervang,
 Han skulde med Kongen handle, han dertil var vant,
@@ -5541,10 +5649,11 @@ Thi de er Alle dumme, de gaae kun lige til,
 Naar Volmer først er borte, da har vi vundet Spil
 Og kan i Landet raade som i Christophers Tider;
 Af alle de danske Konger den Herre bedst jeg lider.''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032956">
+<text id="hauch2018032956">
 <head>
     <title>Kampen i Skoven</title>
     <firstline>Kong Volmer havde dvælet, til Mørket faldt paa</firstline>
@@ -5552,6 +5661,7 @@ Af alle de danske Konger den Herre bedst jeg lider.''
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Kong Volmer havde dvælet, til Mørket faldt paa
 I Borgen, hvor Tovelil mon Guldharpen slaae,
 Nu vilde hau tilbage, thi Midnat var nær,
@@ -5726,10 +5836,11 @@ Da skjalv Dronning Helvig og blegned som et Lig,
 Hun svared: ,,Hr. Eckhard kun talte lidt med mig,
 Jeg saae ham saare sjelden, han syntes from og klog,
 Hans hemmelige Planer var mig en lukket Bog.''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032957">
+<text id="hauch2018032957">
 <head>
     <title>Kongen reiser til Tydskland</title>
     <firstline>Hr. Folkvar blev ført til Nyborg under Ø</firstline>
@@ -5737,6 +5848,7 @@ Hans hemmelige Planer var mig en lukket Bog.''
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hr. Folkvar blev ført til Nyborg under Ø,
 Der maatte den Herre med Qval og Skjændsel døe.
 Da Dronningen det hørte, da glemte hun at lee,
@@ -5861,10 +5973,11 @@ Saa talte Dronning Helvig med Suk og blegen Kind,
 Mens Læberne skjælved som Espeløv i Vind,
 Hun folded sine Hænder, hun bad med sagte Røst,
 I Dronningens Andagt fandt Mængden megen Trøst.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032958">
+<text id="hauch2018032958">
 <head>
     <title>Fru Helvigs Hevn</title>
     <firstline>Fru Tove sad i Gaarden, da stod ved Borgeled</firstline>
@@ -5872,6 +5985,7 @@ I Dronningens Andagt fandt Mængden megen Trøst.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Fru Tove sad i Gaarden, da stod ved Borgeled
 Den Svend, som heel ofte med Dankongen red.
 Mæled den fagre Lilie: ,,Er Du paa Øen her?
@@ -5991,10 +6105,11 @@ Der tænker jeg, Du slumrer for hans Elskov i Fred,
 Jeg haaber, han finder ikke Veien derned,
 Der mærker Du kun lidet til Storm og Vintervinde
 Og glemmer Din Skam, at Du var en Slegfredqvinde.''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032959">
+<text id="hauch2018032959">
 <head>
     <title>Valdemar vender tilbage</title>
     <firstline>Kong Volmers høie Snekke sig gynged under Ø</firstline>
@@ -6002,6 +6117,7 @@ Og glemmer Din Skam, at Du var en Slegfredqvinde.''
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Kong Volmers høie Snekke sig gynged under Ø,
 Dronning Helvig den speided alt langt udi Sø,
 Da sagde til de Terner den kongelige Viv:
@@ -6091,10 +6207,11 @@ Han svared: ,,Eders Drømme jeg ikke kan forstaae,
 At vi skal atter samles, det troer jeg ikke paa,
 I den jordiske Sommer min Lykke jeg fandt,
 Alt Andet mig synes kun Daarskab og Tant.''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032960">
+<text id="hauch2018032960">
 <head>
     <title>Valdemars anden Sang</title>
     <firstline>Jeg veed en Flod, jeg saae den kun i Drømme</firstline>
@@ -6102,6 +6219,7 @@ Alt Andet mig synes kun Daarskab og Tant.''
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg veed en Flod, jeg saae den kun i Drømme,
 Dog vist jeg veed, at den paa Jord er til,
 Bag Nattens Hal den skjuler sine Strømme,
@@ -6151,10 +6269,11 @@ Henveires skal Dit Liv og Dine Drømme
 Og al Din Gjerning, mens Du Lyset saae,
 Mod Fredens Lande vandre mine Strømme,
 Vil der Du hvile, maa Du først forgaae.''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032961">
+<text id="hauch2018032961">
 <head>
     <title>Hvorledes det siden gik</title>
     <firstline>Atter dog sig reiste Kong Volmer i sin Kraft</firstline>
@@ -6162,6 +6281,7 @@ Vil der Du hvile, maa Du først forgaae.''
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Atter dog sig reiste Kong Volmer i sin Kraft
 Og gjenvandt den Styrke, han før havde havt,
 Og styred atter Riget mellem Klipper og Skjær,
@@ -6206,10 +6326,11 @@ Fru Helvig sad i Taarnet med sneehvide Haar,
 Der havde hun alt siddet i femten lange Aar,
 Høit over Jordens Vrimmel, fra Himlen udelukt,
 Hendes Læbe var blegnet, og Øiets Ild var slukt.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032962">
+<text id="hauch2018032962">
 <head>
     <title>Kong Valdemars sidste Stund</title>
     <firstline>Kong Volmer styred Landet i fem og tredive Aar</firstline>
@@ -6217,6 +6338,7 @@ Hendes Læbe var blegnet, og Øiets Ild var slukt.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Kong Volmer styred Landet i fem og tredive Aar,
 I onde med gode Dage, i Vinter som i Vaar,
 Han vandt igjen tilbage saamangen pantsat Ø,
@@ -6281,10 +6403,11 @@ Den samme Dag, da Klokkerne ved Kongens Baare klang,
 Aanded og Dronning Helvig i Luft for sidste Gang,
 Dem, som i Livet skiltes ad, forened Dødens Magt,
 Og i den samme Time de blev i Graven lagt.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032963">
+<text id="hauch2018032963">
 <head>
     <title>Den vilde Jagt</title>
     <firstline>Daa man troede, Danmarks Drot</firstline>
@@ -6292,6 +6415,7 @@ Og i den samme Time de blev i Graven lagt.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
     Da man troede, Danmarks Drot
     Slumred alt i Graven rolig,
     Fløi en Tale fast utrolig
@@ -6382,10 +6506,11 @@ De meente, det var en afgjort Sag,
 Som ingen Bøn kunde vende,
 At han skulde jage til Dommens Dag,
 Til Verdens og Tidernes Ende.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hauch2018032964">
+<text id="hauch2018032964">
 <head>
     <title>Slutning</title>
     <firstline>Valdemars og Helvigs Datter</firstline>
@@ -6393,6 +6518,7 @@ Til Verdens og Tidernes Ende.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Valdemars og Helvigs Datter
 Hersted nu ved Nordens Strand,
 Aar for Aar der læstes Messer
@@ -6462,8 +6588,9 @@ Tidens Haardhed og dens Vantro
 Straffer en retfærdig Gud,
 Men den Fred, som Naaden skjenker,
 Maales ei af Tiden ud.''
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section>

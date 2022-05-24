@@ -1,16 +1,25 @@
-const { loadXMLDoc, fileExists } = require('../libs/helpers.js');
+const { fileExists } = require('../libs/helpers.js');
 const {
   isFileModified,
   loadCachedJSON,
   writeCachedJSON,
-  force_reload,
+  force_reload: globalForceReload,
   markFileDirty,
 } = require('../libs/caching.js');
-const { safeGetAttr } = require('./xml.js');
+const {
+  loadXMLDoc,
+  getChildByTagName,
+  getElementsByTagNames,
+  safeGetAttr,
+  safeGetOuterXML,
+} = require('./xml.js');
 
 const build_textrefs = collected => {
-  let textrefs = new Map(loadCachedJSON('collected.textrefs') || []);
+  let textrefs = globalForceReload
+    ? new Map()
+    : new Map(loadCachedJSON('collected.textrefs') || []);
   const force_reload = textrefs.size == 0;
+
   let found_changes = false;
   const regexps = [
     /xref\s.*?poem="([^",]*)/g,
@@ -29,23 +38,29 @@ const build_textrefs = collected => {
         found_changes = true;
       }
       let doc = loadXMLDoc(filename);
-      const texts = doc.find('//poem|//prose|//section[@id]');
-      texts.forEach(text => {
-        const notes = text.find('head/notes/note|body//footnote|body//note');
-        notes.forEach(note => {
-          regexps.forEach(regexp => {
-            while ((match = regexp.exec(note.toString())) != null) {
-              const fromId = text.attr('id').value();
-              const toId = match[1];
-              const array = textrefs.get(toId) || [];
-              if (array.indexOf(fromId) === -1) {
-                array.push(fromId);
+      const texts = getElementsByTagNames(doc, ['text', 'section'])
+        .filter(e => safeGetAttr(e, 'id') != null)
+        .forEach(text => {
+          const head = getChildByTagName(text, 'head');
+          const body = getChildByTagName(text, 'body');
+          const notes = [
+            ...getElementsByTagNames(head, ['note']),
+            ...getElementsByTagNames(body, ['note', 'footnote']),
+          ];
+          notes.forEach(note => {
+            regexps.forEach(regexp => {
+              while ((match = regexp.exec(safeGetOuterXML(note))) != null) {
+                const fromId = safeGetAttr(text, 'id');
+                const toId = match[1];
+                const array = textrefs.get(toId) || [];
+                if (array.indexOf(fromId) === -1) {
+                  array.push(fromId);
+                }
+                textrefs.set(toId, array);
               }
-              textrefs.set(toId, array);
-            }
+            });
           });
         });
-      });
     });
   });
   if (found_changes) {
@@ -55,7 +70,7 @@ const build_textrefs = collected => {
 };
 
 const mark_ref_destinations_dirty = collected => {
-  if (force_reload) {
+  if (globalForceReload) {
     // All destination files are marked dirty already
     return;
   }
@@ -76,22 +91,29 @@ const mark_ref_destinations_dirty = collected => {
         return;
       }
       let doc = loadXMLDoc(filename);
-      const texts = doc.find('//poem|//prose|//section[@id]');
-      texts.forEach(text => {
-        const notes = text.find('head/notes/note|body//footnote|body//note');
-        notes.forEach(note => {
-          regexps.forEach(regexp => {
-            while ((match = regexp.exec(note.toString())) != null) {
-              const toId = match[1];
-              const t = collected.texts.get(toId);
-              if (t != null) {
-                const filename = `fdirs/${t.poetId}/${t.workId}.xml`;
-                destination_workfiles.push(filename);
+
+      getElementsByTagNames(doc, ['text', 'section'])
+        .filter(e => safeGetAttr(e, 'id') != null)
+        .forEach(text => {
+          const head = getChildByTagName(text, 'head');
+          const body = getChildByTagName(text, 'body');
+          const notes = [
+            ...getElementsByTagNames(head, ['note']),
+            ...getElementsByTagNames(body, ['note', 'footnote']),
+          ];
+          notes.forEach(note => {
+            regexps.forEach(regexp => {
+              while ((match = regexp.exec(safeGetOuterXML(note))) != null) {
+                const toId = match[1];
+                const t = collected.texts.get(toId);
+                if (t != null) {
+                  const filename = `fdirs/${t.poetId}/${t.workId}.xml`;
+                  destination_workfiles.push(filename);
+                }
               }
-            }
+            });
           });
         });
-      });
     });
   });
   //console.log('Dirty files are: ', destination_workfiles);

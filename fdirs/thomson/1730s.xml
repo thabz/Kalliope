@@ -15,16 +15,18 @@
 </workhead>
 <workbody>
 
-<poem id="thomson2017122901">
+<text id="thomson2017122901">
 <head>
     <title>Spring</title>
     <firstline>Come, gentle Spring, æthereal Mildness, come</firstline>
     <notes>
         <note>The subject proposed. Inscribed to Lady Hartford. This Season is described as it affects the various parts of Nature, ascending from the lower to the higher; and mixed with Digressions arising from the subject. Its influence on inanimate Matter, on Vegetables, on brute Animals, and last on Man; concluding with a Dissuasive from the wild and irregular passion of Love, opposed to that of a purer and more reasonable kind.</note>
     </notes>
+    <keywords>lyttelton</keywords>
     <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Come, gentle Spring, æthereal Mildness, come;
 And from the bosom of yon dropping cloud,
 While music wakes around, veil'd in a shower
@@ -1201,10 +1203,11 @@ With many a proof of recollected love,
 Together down they sink in social sleep;
 Together freed, their gentle spirits fly
 To scenes where love and bliss immortal reign.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="thomson2017122902">
+<text id="thomson2017122902">
 <head>
     <title>Summer</title>
     <firstline>From brightening fields of ether fair-disclosed</firstline>
@@ -1217,6 +1220,7 @@ To scenes where love and bliss immortal reign.
     <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 From brightening fields of ether fair-disclosed,
 Child of the sun, refulgent Summer comes
 In pride of youth, and felt through nature's depth:
@@ -3115,10 +3119,11 @@ This infancy of being, cannot prove
 The final issue of the works of God,
 By boundless love and perfect wisdom formed,
 And ever rising with the rising mind.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="thomson2017122903">
+<text id="thomson2017122903">
 <head>
     <title>Autumn</title>
     <firstline>Crowned with the sickle and the wheaten sheaf</firstline>
@@ -3128,6 +3133,7 @@ And ever rising with the rising mind.
     <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Crowned with the sickle and the wheaten sheaf
 While Autumn nodding o'er the yellow plain
 Comes jovial on, the Doric reed once more
@@ -4540,10 +4546,11 @@ Inglorious lay me by the lowly brook,
 And whisper to my dreams. From thee begin,
 Dwell all on thee, with thee conclude my song;
 And let me never, never stray from thee!    
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="thomson2017122904">
+<text id="thomson2017122904">
 <head>
     <title>Winter</title>
     <firstline>See, Winter comes to rule the varied year</firstline>
@@ -4553,6 +4560,7 @@ And let me never, never stray from thee!
     <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 See, Winter comes to rule the varied year,
 Sullen and sad, with all his rising train —
 Vapours, and clouds, and storms. Be these my theme;
@@ -5662,8 +5670,9 @@ And what your bounded view, which only saw
 A little part, deemed evil is no more:
 The storms of wintry time will quickly pass,
 And one unbounded Spring encircle all.    
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="sick" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Ingeborg Maria</firstname>
+    <lastname>Sick</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1858-09-17</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1951-11-14</date>
+      <place>Hørsholm</place>
+    </dead>
+  </period>
+  
+  <works>1904,1921</works>
+</person>

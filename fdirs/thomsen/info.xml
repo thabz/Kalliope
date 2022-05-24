@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="thomsen" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Karsten</firstname>
+    <lastname>Thomsen</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1837-05-28</date>
+      <place>Bov sogn</place>
+    </born>
+    <dead>
+      <date>1889-10-29</date>
+      <place>Hanved sogn</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

@@ -2,27 +2,36 @@ const {
   isFileModified,
   loadCachedJSON,
   writeCachedJSON,
-  force_reload,
+  force_reload: globalForceReload,
 } = require('../libs/caching.js');
 const {
   safeMkdir,
   writeJSON,
-  loadXMLDoc,
   htmlToXml,
   fileExists,
 } = require('../libs/helpers.js');
-const { safeGetText } = require('./xml.js');
+const {
+  loadXMLDoc,
+  safeGetText,
+  safeGetAttr,
+  getElementsByTagNames,
+  getElementsByTagName,
+  getChildrenByTagName,
+  getChildByTagName,
+  safeGetOuterXML,
+  safeGetInnerXML,
+} = require('./xml.js');
 const { poetName, workLinkName } = require('./formatting.js');
 const { primaryTextVariantId } = require('./variants.js');
 
 const person_mentions_dirty = new Set();
 
-const build_person_or_keyword_refs = collected => {
-  let person_or_keyword_refs = new Map([]);
-  if (!force_reload) {
-    loadCachedJSON('collected.person_or_keyword_refs') || [];
-  }
+const build_person_or_keyword_refs = (collected) => {
+  let person_or_keyword_refs = globalForceReload
+    ? new Map([])
+    : new Map(loadCachedJSON('collected.person_or_keyword_refs') || []);
   const forced_reload = person_or_keyword_refs.size == 0;
+
   let found_changes = false;
   const regexps = [
     { regexp: /xref ()poem="([^"]*)"/g, type: 'text' },
@@ -36,6 +45,8 @@ const build_person_or_keyword_refs = collected => {
       regexp: /note ()unknown-original-by="([^",]*)/g,
       type: 'unknown-original',
     },
+    { regexp: /picture[^>]*()artist="([^"]*)"/g, type: 'person' },
+    { regexp: /picture[^>]*()ref="([^"]*)"/g, type: 'pictureref' },
   ];
   // TODO: Led også efter <a person="">xxx</a> og <a poet="">xxxx</a>
   // toKey is a poet id or a keyword id
@@ -58,7 +69,7 @@ const build_person_or_keyword_refs = collected => {
         collection.mention.splice(mentionIndex, 1);
       }
       if (
-        !collection.translation.some(t => t.translationPoemId === fromPoemId)
+        !collection.translation.some((t) => t.translationPoemId === fromPoemId)
       ) {
         collection.translation.push({
           translationPoemId: fromPoemId,
@@ -72,7 +83,7 @@ const build_person_or_keyword_refs = collected => {
     person_mentions_dirty.add(toKey);
   };
   collected.workids.forEach((workIds, poetId) => {
-    workIds.forEach(workId => {
+    workIds.forEach((workId) => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
       if (!fileExists(filename)) {
         return;
@@ -83,48 +94,68 @@ const build_person_or_keyword_refs = collected => {
         found_changes = true;
       }
       let doc = loadXMLDoc(filename);
-      const texts = doc.find('//poem|//prose|//section[@id]');
-      texts.forEach(text => {
-        const fromId = text.attr('id').value();
-        const notes = text.find(
-          'head/notes/note|head/pictures/picture|body//footnote|body//note|body'
-        );
-        notes.forEach(note => {
-          regexps.forEach(rule => {
-            while ((match = rule.regexp.exec(note.toString())) != null) {
-              const refType = match[1] || 'mention';
-              if (rule.type === 'text') {
-                const toPoemId = match[2].replace(/,.*$/, '');
-                const toText = collected.texts.get(toPoemId);
-                if (toText != null) {
-                  const toPoetId = toText.poetId;
-                  if (toPoetId !== poetId) {
-                    // Skip self-refs
-                    register(filename, toPoetId, fromId, refType, toPoemId);
+      getElementsByTagNames(doc, ['text', 'section'])
+        .filter((s) => safeGetAttr(s, 'id') != null)
+        .forEach((text) => {
+          const fromId = safeGetAttr(text, 'id');
+          const head = getChildByTagName(text, 'head');
+          const body = getChildByTagName(text, 'body');
+          const notes = [
+            ...getElementsByTagNames(head, ['note', 'picture']),
+            ...getElementsByTagNames(body, ['note', 'footnote']),
+          ];
+          notes.forEach((note) => {
+            regexps.forEach((rule) => {
+              while (
+                (match = rule.regexp.exec(safeGetOuterXML(note))) != null
+              ) {
+                const refType = match[1] || 'mention';
+                if (rule.type === 'text') {
+                  const toPoemId = match[2].replace(/,.*$/, '');
+                  const toText = collected.texts.get(toPoemId);
+                  if (toText != null) {
+                    const toPoetId = toText.poetId;
+                    if (toPoetId !== poetId) {
+                      // Skip self-refs
+                      register(filename, toPoetId, fromId, refType, toPoemId);
+                    }
+                  } else {
+                    throw new Error(
+                      `${filename} points to unknown text ${toPoemId}`
+                    );
                   }
-                } else {
-                  throw new Error(
-                    `${filename} points to unknown text ${toPoemId}`
-                  );
+                } else if (rule.type === 'person') {
+                  const toPoetId = match[2];
+                  register(filename, toPoetId, fromId, 'mention');
+                } else if (rule.type === 'unknown-original') {
+                  const toPoetId = match[2];
+                  register(filename, toPoetId, fromId, 'translation', null);
+                } else if (rule.type === 'pictureref') {
+                  const pictureRef = match[2];
+                  if (!pictureRef.match('/')) {
+                    throw new Error(
+                      `${filename} points has illegal picture ref ${pictureRef}. 
+                      It should be on the form "{artist-id}/{picture-id}" or "kunst/{picture-id}"`
+                    );
+                  }
+                  const picture = collected.artwork.get(pictureRef);
+                  if (picture == null) {
+                    throw new Error(
+                      `${filename} points to unknown picture ${pictureRef}`
+                    );
+                  }
+                  register(filename, picture.artistId, fromId, 'mention');
                 }
-              } else if (rule.type === 'person') {
-                const toPoetId = match[2];
-                register(filename, toPoetId, fromId, 'mention');
-              } else if (rule.type === 'unknown-original') {
-                const toPoetId = match[2];
-                register(filename, toPoetId, fromId, 'translation', null);
               }
-            }
+            });
           });
+          const keywords = safeGetText(head, 'keywords') || '';
+          if (keywords.trim().length > 0) {
+            keywords.split(',').forEach((keyword) => {
+              register(filename, keyword, fromId, 'mention');
+            });
+          }
         });
-        const head = text.get('head');
-        const keywords = safeGetText(head, 'keywords') || '';
-        if (keywords.trim().length > 0) {
-          keywords.split(',').forEach(keyword => {
-            register(filename, keyword, fromId, 'mention');
-          });
-        }
-      });
     });
   });
   if (found_changes) {
@@ -136,8 +167,8 @@ const build_person_or_keyword_refs = collected => {
   collected.person_or_keyword_refs = person_or_keyword_refs;
 };
 
-const build_mentions_json = collected => {
-  const build_html = poemId => {
+const build_mentions_json = (collected) => {
+  const build_html = (poemId) => {
     const meta = collected.texts.get(poemId);
     if (meta == null) {
       throw `Unknown poem ${poemId}`;
@@ -149,9 +180,9 @@ const build_mentions_json = collected => {
     const poet = poetName(poetObj);
     const work = collected.works.get(meta.poetId + '/' + meta.workId);
     if (work == null) {
-      throw `${poemId} references unknown work ${meta.poetId +
-        '/' +
-        meta.workId}`;
+      throw `${poemId} references unknown work ${
+        meta.poetId + '/' + meta.workId
+      }`;
     }
     const workNameFormattet =
       work.id === 'andre' ? '' : ` - ${workLinkName(work)}`;
@@ -184,15 +215,9 @@ const build_mentions_json = collected => {
     };
     const refs = collected.person_or_keyword_refs.get(poetId);
     if (refs != null) {
-      data.mentions = refs.mention
-        .filter(id => {
-          // Hvis en tekst har varianter som også henviser til denne,
-          // vil vi kun vise den ældste variant.
-          return primaryTextVariantId(id, collected) === id;
-        })
-        .map(build_html);
+      const seenTranslations = new Set();
       data.translations = refs.translation
-        .filter(t => {
+        .filter((t) => {
           // Fjern oversættelser som ikke er den ældste variant
           const { translationPoemId, _ } = t;
           return (
@@ -200,7 +225,7 @@ const build_mentions_json = collected => {
             translationPoemId
           );
         })
-        .map(t => {
+        .map((t) => {
           const { translationPoemId, translatedPoemId } = t;
           const translationPoem = collected.texts.get(translationPoemId);
           let translatedPoem = null;
@@ -209,6 +234,7 @@ const build_mentions_json = collected => {
             if (translatedPoem == null) {
               throw `${translatedPoemId} not found in texts.`;
             }
+            seenTranslations.add(translationPoemId);
           }
           const result = {
             translation: {
@@ -229,20 +255,28 @@ const build_mentions_json = collected => {
           }
           return result;
         });
+      data.mentions = refs.mention
+        .filter((id) => {
+          // Hvis en tekst har varianter som også henviser til denne,
+          // vil vi kun vise den ældste variant.
+          return primaryTextVariantId(id, collected) === id;
+        })
+        .filter((id) => {
+          const isAlsoTranslation = seenTranslations.has(id);
+          if (isAlsoTranslation) {
+            console.log(`Translation ${id} has superfluous mention.`);
+          }
+          return !isAlsoTranslation;
+        })
+        .map(build_html);
     }
 
-    ['primary', 'secondary'].forEach(filename => {
+    ['primary', 'secondary'].forEach((filename) => {
       const biblioXmlPath = `fdirs/${poet.id}/bibliography-${filename}.xml`;
       const doc = loadXMLDoc(biblioXmlPath);
       if (doc != null) {
-        data[filename] = doc.find('//items/item').map(line => {
-          return htmlToXml(
-            line
-              .toString()
-              .replace('<item>', '')
-              .replace('</item>', ''),
-            collected
-          );
+        data[filename] = getElementsByTagName(doc, 'item').map((line) => {
+          return htmlToXml(safeGetInnerXML(line), collected);
         });
       } else {
         data[filename] = [];

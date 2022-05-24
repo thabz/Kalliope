@@ -7,6 +7,7 @@ const translations: { [string]: string } = {
   'en*Personer': 'Persons',
   'en*Kunstnere': 'Artists',
   'en*Nøgleord': 'Keywords',
+  'en*Museer': 'Museums',
   'en*Værker': 'Works',
   'en*Digttitler': 'Poem titles',
   'en*Titler': 'Titles',
@@ -43,13 +44,18 @@ const translations: { [string]: string } = {
   'en*Død': 'Dead',
   'en*Tiltrådt': 'Accession',
   'en*(blev {ca}{yearDiff} år)': '(age {ca}{yearDiff} years)',
-  'en*ca.': 'en*c.',
+  'en*ca.': 'c.',
   'en*Søg i Kalliope': 'Search Kalliope',
   'en*Søg i {genetiveLastName} værker': 'Search {genetiveLastName} works',
   'en*{poetName}: »{poemTitle}« fra {workTitle}':
     '{poetName}: “{poemTitle}” from {workTitle}',
   'en*Søg i Kalliopes {adjective} samling':
     "Search Kalliope's {adjective} collection",
+  'en*Variant': 'Variation',
+  'en*Varianter': 'Variations',
+  'en*{varianter} af denne tekst:': '{varianter} of this text:',
+  'en*{varianter} af dette digt:': '{varianter} of this poem:',
+  'en*{varianter} af denne samling:': '{varianter} of this collection:',
 };
 
 const _ = (

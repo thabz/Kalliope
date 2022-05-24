@@ -1,108 +1,72 @@
-const { safeMkdir, writeJSON, loadXMLDoc } = require('../libs/helpers.js');
-const { isFileModified } = require('../libs/caching.js');
-const { safeGetAttr } = require('./xml.js');
+const { safeMkdir, writeJSON } = require('../libs/helpers.js');
+const {
+  isFileModified,
+  loadCachedJSON,
+  writeCachedJSON,
+  force_reload,
+} = require('../libs/caching.js');
+const {
+  safeGetAttr,
+  safeGetText,
+  getElementsByTagName,
+  loadXMLDoc,
+} = require('./xml.js');
 
-const museums = {
-  hirschsprungske: {
-    name: 'Den Hirschsprungske Samling',
-  },
-  skagen: {
-    name: 'Skagens Museum',
-  },
-  thorvaldsens: {
-    url: ids => `http://thorvaldsensmuseum.dk/samlingerne/vaerk/${ids.invNr}`,
-    name: 'Thorvaldsens Museum',
-  },
-  nivaagaard: {
-    url: ids => `http://www.nivaagaard.dk/samling-da/${ids.objId}`,
-    name: 'Nivaagaards Malerisamling',
-  },
-  kb: {
-    url: ids =>
-      `http://www.kb.dk/images/billed/2010/okt/billeder/object${ids.objId}/da/`,
-    name: 'Det kongelige Bibliotek',
-  },
-  smk: {
-    url: ids => `http://collection.smk.dk/#/detail/${ids.invNr}`,
-    name: 'Statens Museum for Kunst',
-  },
-  gleimhaus: {
-    url: ids =>
-      `https://www.museum-digital.de/nat/index.php?t=objekt&oges=${ids.objId}`,
-    name: 'Gleimhaus, Halberstadt',
-  },
-  ribe: {
-    url: ids => `https://ribekunstmuseum.dk/samling/${ids.invNr}`,
-    name: 'Ribe Kunstmuseum',
-  },
-  smb: {
-    url: ids => `http://www.smb-digital.de/eMuseumPlus?objectId=${ids.objId}`,
-    name: 'Staatliche Museen zu Berlin',
-  },
-  md: {
-    url: ids =>
-      `https://www.museum-digital.de/nat/index.php?t=objekt&oges=${ids.objId}`,
-  },
-  npg: {
-    url: ids =>
-      `https://www.npg.org.uk/collections/search/portrait/${ids.objId}`,
-    name: 'National Portrait Gallery, London',
-  },
-  'natmus.se': {
-    url: ids =>
-      `http://collection.nationalmuseum.se/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=${
-        ids.objId
-      }&viewType=detailView`,
-  },
-  'digitalmuseum.no': {
-    url: ids => `https://digitaltmuseum.no/${ids.objId}/maleri`,
-  },
-  'digitalmuseum.se': {
-    url: ids => `https://digitaltmuseum.se/${ids.objId}/maleri`,
-  },
-  fnm: {
-    name: 'Frederiksborg Nationalhistorisk Museum',
-    url: ids => {
-      // invNr må være 'a-841', 'A-841', 'A841', 'A 841'
-      const m = ids.invNr.match(/([a-z]+)[- ]*([0-9]+[a-z]*)/i);
-      return `https://dnm.dk/kunstvaerk/${m[1].toLowerCase()}-${m[2]}/`;
-    },
-  },
-};
-
-const get_museum_json = museumId => {
-  if (museumId != null && museums[museumId] != null) {
-    return {
-      id: museumId,
-      name: museums[museumId].name,
-    };
-  } else {
-    return null;
+// Read /data/museums.xml and produce collected.museums to to used later.
+const build_museums = () => {
+  const xmlFilename = `data/museums.xml`;
+  let collected_museums = new Map(loadCachedJSON('collected.museums') || []);
+  if (
+    !isFileModified(xmlFilename) &&
+    !force_reload &&
+    collected_museums.size !== 0
+  ) {
+    return collected_museums;
   }
+
+  const doc = loadXMLDoc(xmlFilename);
+
+  getElementsByTagName(doc, 'museum').map(museum => {
+    const id = safeGetAttr(museum, 'id');
+    const name = safeGetText(museum, 'name');
+    const sortName = safeGetText(museum, 'sort-name') || name;
+    const deepLink = safeGetText(museum, 'deep-link');
+    const data = {
+      id,
+      name,
+      sortName,
+      deepLink,
+    };
+    collected_museums.set(id, data);
+  });
+  writeCachedJSON('collected.museums', Array.from(collected_museums));
+
+  const path = `static/api/museums.json`;
+  console.log(path);
+  writeJSON(path, { museums: Array.from(collected_museums.values()) });
+
+  return collected_museums;
 };
 
-const build_museum_url = picture => {
+const build_museum_url = (picture, collected) => {
   if (picture == null) {
     return null;
   }
   const invNr = safeGetAttr(picture, 'invnr');
   const objId = safeGetAttr(picture, 'objid');
-  const museum = safeGetAttr(picture, 'museum');
-  if (museum != null && (invNr != null || objId != null)) {
-    const museumObject = museums[museum];
-    if (museumObject != null && museumObject.url != null) {
-      return museumObject.url({ invNr, objId });
+  const museumId = safeGetAttr(picture, 'museum');
+  if (museumId != null && (invNr != null || objId != null)) {
+    const museum = collected.museums.get(museumId);
+    if (museum != null && museum.deepLink != null) {
+      return museum.deepLink
+        .replace('${invNr}', invNr)
+        .replace('${objId}', objId);
     }
   }
   return null;
 };
 
-const build_museum_link = picture => {
-  const url = build_museum_url(picture);
-  return url == null ? null : ` <a href="${url}">⌘</a>`;
-};
-
-const build_museums = collected => {
+const build_museum_pages = collected => {
   safeMkdir('static/api/museums');
 
   let found_changes = false;
@@ -120,6 +84,7 @@ const build_museums = collected => {
       const workFilename = `fdirs/${poetId}/${workId}.xml`;
       found_changes |= isFileModified(workFilename);
     });
+    found_changes |= isFileModified('data/museums.xml');
   });
   if (!found_changes) {
     return;
@@ -127,35 +92,21 @@ const build_museums = collected => {
 
   let allArtwork = Array.from(collected.artwork.values());
   // Find portrætter som ikke har en ref og dermed inkluderet i collected.artwork
-  collected.poets.forEach((poet, poetId) => {
-    // From works
-    collected.workids.get(poet.id).forEach(workId => {
-      const doc = loadXMLDoc(`fdirs/${poetId}/${workId}.xml`);
-    });
-  });
-  Object.keys(museums).forEach(museumId => {
-    const museum = museums[museumId];
+  // collected.poets.forEach((poet, poetId) => {
+  //   // From works
+  //   collected.workids.get(poet.id).forEach(workId => {
+  //     const doc = loadXMLDoc(`fdirs/${poetId}/${workId}.xml`);
+  //   });
+  // });
+  collected.museums.forEach((museum, museumId) => {
     if (museum.name == null) {
       // Vi tager kun museer med navne
       return;
     }
 
-    const artwork = allArtwork
-      .filter(a => a.museum != null && a.museum.id === museumId)
-      .map(picture => {
-        return {
-          artist: picture.artist,
-          lang: picture.lang,
-          src: picture.src,
-          size: picture.size,
-          remoteUrl: picture.remoteUrl,
-          content_lang: picture.content_lang,
-          content_html: picture.content_html,
-          subjects: picture.subjects,
-          year: picture.year,
-        };
-      });
-
+    const artwork = allArtwork.filter(
+      a => a.museum != null && a.museum.id === museumId
+    );
     const json = {
       museum: {
         id: museumId,
@@ -170,8 +121,7 @@ const build_museums = collected => {
 };
 
 module.exports = {
-  get_museum_json,
   build_museum_url,
-  build_museum_link,
   build_museums,
+  build_museum_pages,
 };

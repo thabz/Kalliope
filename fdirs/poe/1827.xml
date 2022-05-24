@@ -17,7 +17,7 @@
 </workhead>
 <workbody>
 
-<poem id="poe2002011903">
+<text id="poe2002011903">
 <head>
    <title>Motto</title>
    <toctitle>Motto</toctitle>
@@ -26,12 +26,14 @@
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Young heads are giddy, and young hearts are warm,
 And made mistakes for manhood to reform. <sc>Cowper</sc>.
+</poetry>
 </body>
-</poem>
+</text>
 
-<prose id="poe2002011904">
+<text id="poe2002011904" skip-index="true">
 <head>
    <title>Preface</title>
    <toctitle>Preface</toctitle>
@@ -42,6 +44,7 @@ And made mistakes for manhood to reform. <sc>Cowper</sc>.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<prose>
 THE greater part of the Poems which compose this little volume, were written in the year 1821-2, when the author had not completed his fourteenth year. They were of course not intended for publication ; why they are now published concerns no one but himself. Of the smaller pieces very little need be said ; they perhaps savour too much of Egotism ; but they were written by one too young to have any knowledge of the world but from his own breast.
 
 In Tamerlane, he has endeavoured to expose the folly of even <i>risking</i> the best feelings of the heart at the shrine of Ambition. He is conscious that in this there are many faults, (besides that of the general character of the poem) which he flatters himself he could, with little trouble, have corrected, but unlike many of his predecessors, has been too fond of his early productions to amend them in his <i>old age</i>.
@@ -49,10 +52,11 @@ In Tamerlane, he has endeavoured to expose the folly of even <i>risking</i> the 
 He will not say that he is indifferent as to the success of these Poems - it might stimulate him to other attempts - but he can safely assert that failure will not at all influence him in a resolution already adopted. This is challenging criticism - let it be so.  <i>Nos hæc novimus esse nihil</i><footnote>Den sidste linie er fra Martials 13. bog, 2. epigram, vers 2. Frit oversat: Jeg kender selv uvigtigheden af dette.</footnote>.
 
 <center>___________</center>
-</body>
 </prose>
+</body>
+</text>
 
-<poem id="poe2002012301">
+<text id="poe2002012301">
 <head>
    <title>Tamerlane</title>
    <toctitle>Tamerlane</toctitle>
@@ -64,6 +68,7 @@ He will not say that he is indifferent as to the success of these Poems - it mig
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I.
 
     I have sent for thee, holy friar;
@@ -535,8 +540,9 @@ But she who rear'd them was long dead,
 And in such follies had no part,
 What was there left me <i>now</i>? despair -
 A kingdom for a broken - heart.
+</poetry>
 </body>
-</poem>
+</text>
 
 <section level="1">
 <head>
@@ -544,7 +550,7 @@ A kingdom for a broken - heart.
 </head>
 <content>
 
-<poem id="poe2002012302">
+<text id="poe2002012302">
 <head>
    <title>To - -</title>
    <toctitle>To - -</toctitle>
@@ -556,6 +562,7 @@ A kingdom for a broken - heart.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I saw thee on the bridal day;
     When a burning blush came o'er thee,
 Tho' Happiness around thee lay,
@@ -575,10 +582,11 @@ Who saw the on that bridal day,<note>giver ikke rigtig mening; der menes nok 'th
     When that deep blush <i>would</i> come o'er thee, -
 Tho' Happiness around thee lay;
     The world all Love before thee. -
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="poe2002011901">
+<text id="poe2002011901">
 <head>
    <title>Dreams</title>
    <toctitle>Dreams</toctitle>
@@ -590,6 +598,7 @@ Tho' Happiness around thee lay;
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Oh! that my young life were a lasting dream!
 My spirit not awak'ning, till the beam
 Of an Eternity should bring the morrow.
@@ -624,10 +633,11 @@ Of semblance with reality which brings
 To the delirious eye, more lovely things
 Of Paradise and Love - and all our own!
 Than young Hope in his sunniest hour hath known.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="poe2002012401">
+<text id="poe2002012401">
 <head>
    <title>Visit of the Dead</title>
    <toctitle>Visit of the Dead</toctitle>
@@ -639,6 +649,7 @@ Than young Hope in his sunniest hour hath known.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
         *         *         *         *
 Thy soul shall find itself alone -
 Alone of all on earth - unknown
@@ -668,10 +679,11 @@ By that summer breeze unbrok'n
 Shall charm thee - as a token,
 And a symbol which shall be
 Secrecy in thee.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="poe2002012402">
+<text id="poe2002012402">
 <head>
    <title>Evening Star</title>
    <toctitle>Evening Star</toctitle>
@@ -683,6 +695,7 @@ Secrecy in thee.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 'Twas noontide of summer,
     And mid-time of night;
 And stars, in their orbits,
@@ -706,10 +719,11 @@ Thou bearest in Heav'n at night,
     And more I admire
     Thy distant fire,
 Than that colder, lowly light.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="poe2002012403">
+<text id="poe2002012403">
 <head>
    <title>Imitation</title>
    <toctitle>Imitation</toctitle>
@@ -723,6 +737,7 @@ Than that colder, lowly light.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 A dark unfathom'd tide
 Of interminable pride -
 A mystery, and a dream,
@@ -743,10 +758,11 @@ And my worldly rest hath gone
 With a sight as it pass'd on
 I care not tho' it perish
 With a thought I then did cherish,
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="poe2002012404">
+<text id="poe2002012404">
 <head>
    <title>Untitled</title>
    <subtitle>[Stanzas ("In youth I have known ...")]</subtitle>
@@ -760,6 +776,7 @@ With a thought I then did cherish,
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <small>How often we forget all time, when lone</small>
 <small>Admiring Nature's universal throne;</small>
 <small>Her woods --- her wilds --- her mountains --- the intense</small>
@@ -808,10 +825,11 @@ That high tone of the spirit which hath striv'n
 Tho' not with Faith - with godliness - whose throne
 With desp'rate energy 't hath beaten down;
 Wearing its own deep feeling as a crown.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="poe2002012405">
+<text id="poe2002012405">
 <head>
    <title>Untitled</title>
    <subtitle>[A Dream]</subtitle>
@@ -824,6 +842,7 @@ Wearing its own deep feeling as a crown.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 A wilder'd being from my birth
     My spirit spurn'd control,
 But now, abroad on the wide earth,
@@ -848,10 +867,11 @@ What tho' that light, thro' misty night
     So dimly shone afar-
 What could there be more purely bright
     In Truth's day - star?
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="poe2002012406">
+<text id="poe2002012406">
 <head>
    <title>Untitled</title>
    <subtitle>[The Happiest Day]</subtitle>
@@ -864,6 +884,7 @@ What could there be more purely bright
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 The happiest day - the happiest hour
     My sear'd and blighted heart hath known,
 The highest hope of pride, and power,
@@ -893,10 +914,11 @@ For on its wing wall dark alloy
     And as it flutter'd - fell
 An essence - powerful to destroy
     A soul that knew it well.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="poe2002012407">
+<text id="poe2002012407">
 <head>
    <title>The Lake</title>
    <toctitle>The Lake</toctitle>
@@ -908,6 +930,7 @@ An essence - powerful to destroy
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 In youth's spring, it was my lot
 To haunt of the wide earth a spot
 The which I could not love the less;
@@ -930,8 +953,9 @@ For him who thence could solace bring
 To his dark imagining;
 Whose wild'ring thought could even make
 An Eden of that dim lake.
+</poetry>
 </body>
-</poem>
+</text>
 </content>
 </section>
 
@@ -941,7 +965,7 @@ An Eden of that dim lake.
 </head>
 <content>
 
-<prose id="poe2002012408">
+<text id="poe2002012408" skip-index="true">
 <head>
    <title>Endnotes</title>
    <toctitle>Endnotes</toctitle>
@@ -952,6 +976,7 @@ An Eden of that dim lake.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<prose>
 1.
 
 <center>I have sent for thee holy friar.</center>
@@ -1025,8 +1050,9 @@ An Eden of that dim lake.
 <center>Let life then, as the day-flow'r, fall.</center>
 
     There is a flow'r, (I have never known its botanic name,) vulgarly called the day flower. It blooms beautifully in the day-light, but withers towards evening, and by night its leaves appear totally shrivelled and dead. I have forgotten, however, to mention in the text, that it lives again in the morning. If it will not flourish in Tartary, I must be forgiven for carrying it thither.
-</body>
 </prose>
+</body>
+</text>
 </content>
 </section>
 </workbody>

@@ -14,6 +14,7 @@ const rootStaticFiles = [
   '/favicon.ico',
   '/robots.txt',
   '/sitemap.xml',
+  '/manifest.json',
   '/google88bff7f4fb67a7b5.html',
   '/apple-touch-icon-120x120.png',
   '/apple-touch-icon-152x152.png',
@@ -123,6 +124,10 @@ const redirects = [
     from: /\/..\/work\/([^\/]+)\/(.*?)\.xml/,
     to: '/static/api/$1/$2.xml',
   },
+  {
+    from: /(.*)\/winter(.*)/,
+    to: '$1/winther$2',
+  },
 ];
 
 const cleanUpRedirectURLRegExp = /[^0-9a-zA-Z\-_\/]/g;
@@ -139,6 +144,7 @@ app.prepare().then(() => {
       pathname.indexOf('.cgi') > -1 ||
       pathname.indexOf('.pl') > -1 ||
       pathname.indexOf('/bibliography/') > -1 ||
+      pathname.indexOf('/winter') > -1 ||
       (pathname.indexOf('.xml') > -1 && pathname.indexOf('/work/') > -1)
     ) {
       let done = false;

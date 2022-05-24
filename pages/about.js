@@ -3,11 +3,10 @@
 import React, { useContext } from 'react';
 import type Node from 'react';
 import { Link } from '../routes';
-import Head from '../components/head';
-import Main from '../components/main.js';
-import { KalliopeTabs } from '../components/tabs.js';
+import Page from '../components/page.js';
+import { kalliopeMenu } from '../components/menu.js';
 import LangSelect from '../components/langselect';
-import Nav, { kalliopeCrumbs } from '../components/nav';
+import { kalliopeCrumbs } from '../components/breadcrumbs.js';
 import SubHeading from '../components/subheading.js';
 import SidebarSplit from '../components/sidebarsplit.js';
 import TwoColumns from '../components/twocolumns.js';
@@ -16,7 +15,6 @@ import Picture from '../components/picture.js';
 import Note from '../components/note.js';
 import * as Links from '../components/links';
 import * as Client from '../common/client.js';
-import Heading from '../components/heading.js';
 import TextContent from '../components/textcontent.js';
 import ErrorPage from './error.js';
 import LangContext from '../common/LangContext.js';
@@ -44,10 +42,11 @@ const About = (props: AboutProps) => {
   if (error) {
     return <ErrorPage error={error} lang={lang} message="Ukendt nøgleord" />;
   }
-  const requestPath = `/${lang}/about/${aboutItemId}`;
-  const pictures = keyword.pictures.map(p => {
+
+  const pictures = keyword.pictures.map((p, i) => {
     return (
       <Picture
+        key={'pic' + i}
         pictures={[p]}
         contentLang={p.content_lang || 'da'}
         showDropShadow={aboutItemId !== 'kalliope'}
@@ -56,11 +55,14 @@ const About = (props: AboutProps) => {
       />
     );
   });
-  const renderedPictures = <SidebarPictures>{pictures}</SidebarPictures>;
+  const renderedPictures = (
+    <SidebarPictures key="pictures">{pictures}</SidebarPictures>
+  );
   const renderedNotes = keyword.notes.map((note, i) => {
     return (
       <Note key={'note' + i}>
         <TextContent
+          key="notes"
           contentHtml={note.content_html}
           contentLang={note.content_lang}
         />
@@ -91,7 +93,7 @@ const About = (props: AboutProps) => {
   let author = null;
   if (keyword.author != null) {
     author = (
-      <div style={{ fontVariant: 'small-caps', marginBottom: '40px' }}>
+      <div style={{ fontSize: '16px', marginBottom: '40px' }}>
         Af {keyword.author}
       </div>
     );
@@ -129,16 +131,15 @@ const About = (props: AboutProps) => {
   }
 
   return (
-    <div>
-      <Head headTitle="Kalliope" requestPath={requestPath} />
-      <Main>
-        <Nav lang="da" crumbs={crumbs} />
-        <Heading title="Kalliope" />
-        <KalliopeTabs lang={lang} selected="about" />
-        {pageBody}
-        <LangSelect lang={lang} path={requestPath} />
-      </Main>
-    </div>
+    <Page
+      headTitle={'Kalliope'}
+      requestPath={`/${lang}/about/${aboutItemId}`}
+      crumbs={crumbs}
+      pageTitle={'Kalliope'}
+      menuItems={kalliopeMenu()}
+      selectedMenuItem="about">
+      {pageBody}
+    </Page>
   );
 };
 

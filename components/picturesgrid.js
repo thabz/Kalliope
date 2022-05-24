@@ -15,6 +15,10 @@ export default class PicturesGrid extends React.Component<ArtworkListProps> {
   render() {
     const { lang, poet, artwork, hideArtist, hideMuseum } = this.props;
 
+    if (artwork.length === 0) {
+      return null;
+    }
+
     const sortArtworks = artwork => {
       return artwork.sort((a, b) => {
         const aKey = (a.year || '') + a.src;
@@ -107,6 +111,8 @@ export default class PicturesGrid extends React.Component<ArtworkListProps> {
             pictureRendered = (
               <Picture
                 key={'picture-' + picture.src}
+                hideArtist={hideArtist}
+                hideMuseum={hideMuseum}
                 pictures={[picture]}
                 contentLang={picture.content_lang || 'da'}
                 lang={lang}

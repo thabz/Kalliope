@@ -28,7 +28,7 @@ export default class Head extends React.Component<HeadProps> {
       requestPath,
     } = this.props;
 
-    const appleTouchIcons = [180, 152, 120, 76, 60].map(s => {
+    const appleTouchIcons = [180, 152, 120, 76, 60].map((s) => {
       const x = `${s}x${s}`;
       return (
         <link
@@ -40,12 +40,12 @@ export default class Head extends React.Component<HeadProps> {
       );
     });
     let ogImageAbsolute = ogImage != null ? ogImage : defaultOGImage;
-    if (!ogImageAbsolute.startsWith('http')) {
+    if (!ogImageAbsolute.indexOf('http') === 0) {
       ogImageAbsolute = `${urlPrefix}${ogImageAbsolute}`;
     }
     let hreflangs = [];
     if (requestPath != null) {
-      hreflangs = ['da', 'en'].map(lang => {
+      hreflangs = ['da', 'en'].map((lang) => {
         const alternatePath = requestPath.replace(/^\/../, '/' + lang);
         const alternateURL = urlPrefix + alternatePath;
         return (
@@ -75,8 +75,8 @@ export default class Head extends React.Component<HeadProps> {
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         {appleTouchIcons}
         <link rel="mask-icon" href="/static/favicon-mask.svg" color="black" />
-        <link rel="icon" href="/static/favicon.ico" />
-        <link rel="manifest" href="/static/manifest.json" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="manifest" href="/manifest.json" />
         {canonical}
         {hreflangs}
         <meta name="theme-color" content="rgb(139, 56, 65)" />
