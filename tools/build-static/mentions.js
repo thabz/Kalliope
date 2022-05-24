@@ -132,7 +132,18 @@ const build_person_or_keyword_refs = (collected) => {
                   register(filename, toPoetId, fromId, 'translation', null);
                 } else if (rule.type === 'pictureref') {
                   const pictureRef = match[2];
+                  if (!pictureRef.match('/')) {
+                    throw new Error(
+                      `${filename} points has illegal picture ref ${pictureRef}. 
+                      It should be on the form "{artist-id}/{picture-id}" or "kunst/{picture-id}"`
+                    );
+                  }
                   const picture = collected.artwork.get(pictureRef);
+                  if (picture == null) {
+                    throw new Error(
+                      `${filename} points to unknown picture ${pictureRef}`
+                    );
+                  }
                   register(filename, picture.artistId, fromId, 'mention');
                 }
               }

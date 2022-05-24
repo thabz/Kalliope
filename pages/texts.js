@@ -31,7 +31,7 @@ const groupLines = (
   type: LinesType
 ): Array<Section<LinesPair>> => {
   let groups: Map<string, Array<LinesPair>> = new Map();
-  lines.forEach(linePair => {
+  lines.forEach((linePair) => {
     let line, alternative;
     if (type === 'titles') {
       line = linePair.title;
@@ -46,13 +46,13 @@ const groupLines = (
     line = line.replace(',', '').replace('!', '');
     linePair['sortBy'] = line + ' [' + alternative + '[' + linePair.id;
     let letter: string = line[0];
-    if (line.startsWith('Aa')) {
+    if (line.indexOf('Aa') === 0) {
       letter = 'Å';
     }
-    if (line.startsWith('Ö')) {
+    if (line.indexOf('Ö') === 0) {
       letter = 'Ø';
     }
-    if (line.startsWith('È')) {
+    if (line.indexOf('È') === 0) {
       letter = 'E';
     }
     letter = letter.toUpperCase();
@@ -81,8 +81,8 @@ const TextsPage = (props: TextsProps) => {
 
   const groups = groupLines(lines, type);
   let sections: Array<SectionForRendering> = [];
-  groups.forEach(group => {
-    const items = group.items.map(lines => {
+  groups.forEach((group) => {
+    const items = group.items.map((lines) => {
       const url = Links.textURL(lang, lines.id);
       let line = lines[type === 'titles' ? 'title' : 'firstline'];
       let alternative = lines[type === 'titles' ? 'firstline' : 'title'];
@@ -128,7 +128,8 @@ const TextsPage = (props: TextsProps) => {
       pageTitle={<PoetName poet={poet} includePeriod />}
       menuItems={poetMenu(poet)}
       poet={poet}
-      selectedMenuItem={type}>
+      selectedMenuItem={type}
+    >
       {renderedGroups}
     </Page>
   );
