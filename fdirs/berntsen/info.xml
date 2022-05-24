@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="berntsen" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Aage</firstname>
+    <lastname>Berntsen</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1885-05-16</date>
+      <place>Særslev, Fyn</place>
+    </born>
+    <dead>
+      <date>1952-04-16</date>
+    </dead>
+  </period>
+  
+  <works>1908,1910,1914,1917,1923,1925,1929,1942</works>
+</person>

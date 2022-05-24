@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="agerskov" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Michael</firstname>
+    <lastname>Agerskov</lastname>
+    <fullname>Kaj Michael Andreas Agerskov</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1870-07-28</date>
+      <place>Guldborg</place>
+    </born>
+    <dead>
+      <date>1933-12-11</date>
+    </dead>
+  </period>
+  
+  <works>1893,1899,1909,1928,1930</works>
+</person>

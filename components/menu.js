@@ -118,7 +118,9 @@ const Tabs = (props: TabsProps) => {
     if (country === 'dk') {
       placeholder = _('Søg i Kalliope', lang);
     } else {
-      const countryData = CommonData.countries.filter(x => x.code === country);
+      const countryData = CommonData.countries.filter(
+        (x) => x.code === country
+      );
       if (countryData.length > 0) {
         const adjective = countryData[0].adjective[lang];
         placeholder = _('Søg i Kalliopes {adjective} samling', lang, {
@@ -138,7 +140,7 @@ const Tabs = (props: TabsProps) => {
           </label>
           <input
             id="search-field-id"
-            ref={domElement => {
+            ref={(domElement) => {
               if (domElement != null) {
                 searchField = domElement;
               }
@@ -156,14 +158,15 @@ const Tabs = (props: TabsProps) => {
         className="svg-container"
         style={{
           cursor: 'pointer',
-        }}>
+        }}
+      >
         <CrossSVG color="black" onClick={onCrossClick} />
       </div>
     </div>
   );
 
   const itemsRendered = items
-    .filter(item => !item.hide)
+    .filter((item) => !item.hide)
     .map((item, i) => {
       const className = item.id === selected ? 'tab selected' : 'tab';
       return (
@@ -183,14 +186,16 @@ const Tabs = (props: TabsProps) => {
         className="tabs"
         style={{
           display: showSearchField ? 'none' : 'flex',
-        }}>
+        }}
+      >
         {itemsRendered}
       </nav>
       <div
         className="searchfield-container"
         style={{
           display: showSearchField ? 'block' : 'none',
-        }}>
+        }}
+      >
         {searchFieldRendered}
       </div>
     </div>
@@ -251,6 +256,7 @@ const Tabs = (props: TabsProps) => {
             border-bottom: 2px solid transparent;
             padding-bottom: 15px;
             transition: margin-right ${transitionDuration};
+            white-space: nowrap;
           }
           :global(.tabs) > :global(.tab) :global(h2) {
             margin: 0;
