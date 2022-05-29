@@ -1,15 +1,28 @@
-KILDE:Otto Fønss: _Tidløs_, Gyldendalske Boghandel, Nordisk Forlag, 1919.
-DIGTER:fonss
-FACSIMILE:115308055490-color
-FACSIMILE-SIDER:101
-TITELBLAD:Tidløs / Sidste Digte / af / Otto C. Fønss // Paa Almens tindekranste Grønsværsjord / fremblomstrer yppigt hen paa Efteraaret / den lilla _Tidløs_ som en Krokusflor. // Den synes Bud om nyfødt Foraars Komme, / om en trods Tiden genvakt Ungdoms Drømme, / - men varsler dog, at Haabets Frist er omme. // Derfor - endskønt dens Blomstring er saa frodig, / saa virker just for hver, som ved Besked, / dens sene Pragt ret inderlig vemodig. // Gyldendalske Boghandel - Nordisk / Forlag - Kjøbenhavn og Kristiania / MDCCCCXIX
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
+<kalliopework id="1919" author="fonss" status="complete" type="poetry">
+<workhead>
+    <title>Tidløs</title>
+    <year>1919</year>
+    <notes>
+        <note>Teksten følger Otto Fønss: <i>Tidløs</i>, Gyldendalske Boghandel, Nordisk Forlag, 1919.</note>
+    </notes>
+    <pictures>
+        <picture src="1919-p1.jpg">Titelbladet til <i>Tidløs</i> (1919) lyder ,,Tidløs / Sidste Digte / af / Otto C. Fønss // Paa Almens tindekranste Grønsværsjord / fremblomstrer yppigt hen paa Efteraaret / den lilla <i>Tidløs</i> som en Krokusflor. // Den synes Bud om nyfødt Foraars Komme, / om en trods Tiden genvakt Ungdoms Drømme, / - men varsler dog, at Haabets Frist er omme. // Derfor - endskønt dens Blomstring er saa frodig, / saa virker just for hver, som ved Besked, / dens sene Pragt ret inderlig vemodig. // Gyldendalske Boghandel - Nordisk / Forlag - Kjøbenhavn og Kristiania / MDCCCCXIX''.</picture>
+    </pictures>
+    <source facsimile="115308055490-color" facsimile-pages-num="101" facsimile-pages-offset="6">Otto Fønss: <i>Tidløs</i>, Gyldendalske Boghandel, Nordisk Forlag, 1919.</source>
+</workhead>
+<workbody>
 
-SEKTION:
-
-T:Sønderjyderne
-F:Bort fra Skoves, Markers, Heders
-SIDE:5-6
-
+<text id="fonss2022052901">
+<head>
+    <title>Sønderjyderne</title>
+    <firstline>Bort fra Skoves, Markers, Heders</firstline>
+    <source pages="5-6"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Bort fra Skoves, Markers, Heders
 minderige Horizont,
 fra de lune Barndomsreders
@@ -45,28 +58,44 @@ gammel Voldsaand spændt i Blok,
 men for Retfærds Maalestok
 og Oprejsning Timen inde!
 
-{rs:(Skrevet 1916.)}
+<nonum><small><right>(Skrevet 1916.)</right></small></nonum>
+</poetry>
+</body>
+</text>
 
-T:I Skovtykningen
-U:(Efter Hebbel.)
-F:De Blomster, som gror herinde
-SIDE:7
-TODO:Find originalen. Hebbel er tysk digter med dansk statsborgerskab. Han har skrevet ét digt (lejlighedsdigt til kongen) på dansk iflg. Wikipedia.
-
+<text id="fonss2022052902">
+<head>
+    <title>I Skovtykningen</title>
+    <subtitle>(Efter Hebbel.)</subtitle>
+    <firstline>De Blomster, som gror herinde</firstline>
+    <source pages="7"/>
+    <!-- TODO: Find originalen. Hebbel er tysk digter med dansk statsborgerskab. Han har skrevet ét digt (lejlighedsdigt til kongen) på dansk iflg. Wikipedia. -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 De Blomster, som gror herinde,
 har Dødens den gustne Lød.
 En eneste kun i Midten
 er blussende valmuerød.
 Det Rødt fik den ikke fra Solen,
-_den_ naaede ej did, den stod.
+<i>den</i> naaede ej did, den stod.
 Det er fra Jorden, den har det,
-- thi _den_ drak Menneskeblod.
+- thi <i>den</i> drak Menneskeblod.
+</poetry>
+</body>
+</text>
 
-T:Folkevisevers
-U:(Efter Tysk.)
-F:Om du fra den maa skilles
-SIDE:8
-
+<text id="fonss2022052903">
+<head>
+    <title>Folkevisevers</title>
+    <subtitle>(Efter Tysk.)</subtitle>
+    <firstline>Om du fra den maa skilles</firstline>
+    <source pages="8"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Om du fra den maa skilles,
 du har fra ung haft kær,
 den Smerte vil ej stilles,
@@ -75,12 +104,19 @@ Hvor er det sorgfuldt dog, det Ord
 ,,Farvel, farvel for denne Jord''
 - om du fra den maa skilles,
 du har fra ung haft kær.
+</poetry>
+</body>
+</text>
 
-
-T:September
-F:Dig har jeg kær, September.
-SIDE:9-10
-
+<text id="fonss2022052904">
+<head>
+    <title>September</title>
+    <firstline>Dig har jeg kær, September.</firstline>
+    <source pages="9-10"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Dig har jeg kær, September.
 Skærsommers Glød du dæmper.
 Hvad kaad han ødslet har og spildt,
@@ -104,11 +140,19 @@ Fra Gry indtil jeg graaned,
 dit Øjes nordisk rene Blu,
 dit Fjærnsyns Drømmeblik min Hu
 med blide Længsler blaaned.
+</poetry>
+</body>
+</text>
 
-T:Pastel
-F:Paa Konsolen en Hebe
-SIDE:11-12
-
+<text id="fonss2022052905">
+<head>
+    <title>Pastel</title>
+    <firstline>Paa Konsolen en Hebe</firstline>
+    <source pages="11-12"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Paa Konsolen en Hebe,
 hvid mod en matgul Væg.
 En Vedbendranke fingrer
@@ -138,11 +182,19 @@ og nyder alle Liniers
 og Farvers Harmoni
 i dette lille dagligdags
 Pastelmaleri.
+</poetry>
+</body>
+</text>
 
-T:Hun rødmede
-F:Ved Stranden mødtes vi alene to
-SIDE:13-14
-
+<text id="fonss2022052906">
+<head>
+    <title>Hun rødmede</title>
+    <firstline>Ved Stranden mødtes vi alene to</firstline>
+    <source pages="13-14"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Ved Stranden mødtes vi alene to.
 Du havde taget Strømper af og Sko;
 med sirlig løftet Skørt, paa bare Ben
@@ -163,11 +215,19 @@ og lod mig ane kun et fortsat Løb
 ned gennem Legemet til dine Fødder
 for dèr - som Aftnen i en Rudes Spejl -
 at blegne bort i Storetaaens Negl.
+</poetry>
+</body>
+</text>
 
-T:Snehvide
-F:For hver Kilde klar
-SIDE:15-16
-
+<text id="fonss2022052907">
+<head>
+    <title>Snehvide</title>
+    <firstline>For hver Kilde klar</firstline>
+    <source pages="15-16"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 For hver Kilde klar
 sætter Vintren Segl,
 lægger Isens Giar
@@ -190,14 +250,21 @@ hvorfra Lyset flyr -
 
 og med lønlig Skræk
 i Naturens Bog
-se _Snehvides_ Træk
+se <i>Snehvides</i> Træk
 under Kistelaag.
+</poetry>
+</body>
+</text>
 
-
-T:Med et Koralhalsbaand
-F:I fjærne sydlige Have
-SIDE:17-18
-
+<text id="fonss2022052908">
+<head>
+    <title>Med et Koralhalsbaand</title>
+    <firstline>I fjærne sydlige Have</firstline>
+    <source pages="17-18"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 I fjærne sydlige Have
 bag Bølgens klare Krystal
 der groede i sælsom Skønhed
@@ -218,16 +285,24 @@ forlod den Sliberens Bord,
 og sanket i purpurne Kæder
 sendtes den hid til Nord.
 
-- - -Min Skat! Af min egen Længsel
+- - Min Skat! Af min egen Længsel
 forstod jeg den røde Korals.
 Giv den den Plads, den har drømt om,
 tæt til din snehvide Hals!
+</poetry>
+</body>
+</text>
 
-T:Trioletter
-F:Der flagrer end Eroter smaa
-SIDE:19-22
-
-{c:I.}
+<text id="fonss2022052909">
+<head>
+    <title>Trioletter</title>
+    <firstline>Der flagrer end Eroter smaa</firstline>
+    <source pages="19-22"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+<nonum><center>I.</center></nonum>
 
 Der flagrer end Eroter smaa
 paa alle Kanter mig i Møde:
@@ -241,7 +316,7 @@ Der flagrer end Eroter smaa
 paa alle Kanter mig i Møde.
 
 
-{c:II.}
+<nonum><center>II.</center></nonum>
 
 En Duft saa frisk, skovmærkefin,
 som den paa Vaarens Luftning svømmer
@@ -253,7 +328,7 @@ en Duft saa frisk, skovmærkefin,
 som den paa Vaarens Luftning svømmer.
 
 
-{c:III.}
+<nonum><center>III.</center></nonum>
 
 Jeg føler rørt imod min Haand
 det spæde Jomfrubryst sig hvælve,
@@ -265,7 +340,7 @@ og føler rørt imod min Haand
 det spæde Jomfrubryst sig hvælve.
 
 
-{c:IV.}
+<nonum><center>IV.</center></nonum>
 
 Skønt Svalerne langs Jorden stryger,
 og Himlen hlaasort er som Bly
@@ -277,7 +352,7 @@ skønt Svalerne langs Jorden stryger
 og Himlen blaasort er som Bly.
 
 
-{c:V.}
+<nonum><center>V.</center></nonum>
 
 Det funkler fra dit Øjes Nat
 som Morildsglimt i dybe Strømme.
@@ -289,7 +364,7 @@ det funkler fra dit Øjes Nat
 som Morildsglimt i dybe Strømme.
 
 
-{c:VI.}
+<nonum><center>VI.</center></nonum>
 
 At lodde dine Øjnes Bund
 vil mig til Dato ikke lykkes,
@@ -301,7 +376,7 @@ at lodde dine Øjnes Bund
 vil mig til Dato ikke lykkes.
 
 
-{c:VII.}
+<nonum><center>VII.</center></nonum>
 
 Min fine, kyske, skære Blomst,
 Marias hvide Særkeærme!
@@ -313,7 +388,7 @@ min fine, kyske, skære Blomst,
 Marias hvide Særkeærme!
 
 
-{c:VIII.}
+<nonum><center>VIII.</center></nonum>
 
 Her ved dit Øjes Brønd, min Skat,
 hvor Eros mig paa Post har stillet,
@@ -325,7 +400,7 @@ jeg inderst fandt mit eget Billed,
 hvor Eros har paa Post mig stillet.
 
 
-{c:IX.}
+<nonum><center>IX.</center></nonum>
 
 Med Glimt af hvide Tænders Pragt
 din røde Pigemund mig blænder.
@@ -336,12 +411,19 @@ et fint og skarpt Instinkt staar Vagt,
 naar dristig Attraa mod den brænder,
 - med Glimt af hvide Tænders Pragt
 din røde Pigemund mig blænder.
+</poetry>
+</body>
+</text>
 
-
-T:Interiør
-F:Svære Damaskforhæng, vissentgrønne mod en mathvid Væg
-SIDE:24-25
-
+<text id="fonss2022052910">
+<head>
+    <title>Interiør</title>
+    <firstline>Svære Damaskforhæng, vissentgrønne mod en mathvid Væg</firstline>
+    <source pages="24-25"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Svære Damaskforhæng, vissentgrønne mod en mathvid Væg,
 fra Gesimsen ned til Gulvet glider stolt i brede Læg,
 gamle Slægtsportrætler i Rococccorammers gyldne Bræm,
@@ -366,13 +448,20 @@ om den attenaars Komtesse, der - en nys trolovet Brud -
 fejrer her en stille Messe for sin unge Elskovs Gud
 og, mens Hjertet sødt henrevet spejles i det dybe Blik,
 fylder ufortrødent Brevet med sit varme Blods Lyrik.
+</poetry>
+</body>
+</text>
 
-
-T:Sonet
-F:Sin fordums Trylleglans har Sommermaanen
-SIDE:24
-N:sonnet
-
+<text id="fonss2022052911">
+<head>
+    <title>Sonet</title>
+    <firstline>Sin fordums Trylleglans har Sommermaanen</firstline>
+    <source pages="26"/>
+    <keywords>sonnet</keywords>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Sin fordums Trylleglans har Sommermaanen,
 sin røde Røst ej Nattergalen glemt,
 og Aftenklokken har sit Vemodsklemt,
@@ -388,14 +477,22 @@ Thi Nattergalesang og Maaneskær
 udstyre bør en Elskovs-téte-a-téte.
 
 Men naaer man i Aartier først det sjette,
-da har man at bekende kun, mon eher:
+da har man at bekende kun, mon cher:
 ,,Helas! ils sont passées, ces jours de fète!''
+</poetry>
+</body>
+</text>
 
-T:Mit Fædreland
-TOCTITEL:Mit Fædreland, min gamle Mor
-F:Mit Fædreland, min gamle Mor!
-SIDE:27-28
-
+<text id="fonss2022052912">
+<head>
+    <title>Mit Fædreland</title>
+    <toctitle>Mit Fædreland, min gamle Mor</toctitle>
+    <firstline>Mit Fædreland, min gamle Mor!</firstline>
+    <source pages="27-28"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Mit Fædreland, min gamle Mor!
 Dit Skøds den sunde Muld
 er Livets Grund, hvoraf jeg gror,
@@ -431,18 +528,28 @@ O, lad min Æt, naar jeg er Støv,
 end bygge under Bøgens Løv
 og værne ømt, i Daad som Ord,
       sin Mor!
+</poetry>
+</body>
+</text>
 
-T:Fædrelandsvennen
-U:Generalkonsul Henrik Pontoppidan
-U:(Ved Afsløring af hans Mindesmærke i Aarhus).
-TOCTITEL:Henrik Pontoppidan
-F:Ej blandt dem, hvis Navne prange
-SIDE:29-32
-
+<text id="fonss2022052913">
+<head>
+    <title>Fædrelandsvennen</title>
+    <toctitle>Henrik Pontoppidan</toctitle>
+    <subtitle>
+        <line>Generalkonsul Henrik Pontoppidan</line>
+        <line>(Ved Afsløring af hans Mindesmærke i Aarhus).</line>
+    </subtitle>
+    <firstline>Ej blandt dem, hvis Navne prange</firstline>
+    <source pages="29-32"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Ej blandt dem, hvis Navne prange
     stolt i Vaabenglans,
 ej i Folkets Heltesange
-    skal vi søge =hans=.
+    skal vi søge <w>hans</w>.
 Ved et Storværk dog, et Fredens,
 knytted han sit Navn til Hedens,
 - et som end, naar hines blegne,
@@ -454,10 +561,10 @@ trued efter ydre Fare
     med en indre nu:
 Faren for i vege Drømme
 ræd fra Nuets Kamp at rømme.
-- Da jog =Jydens= djærve Tale
+- Da jog <w>Jydens</w> djærve Tale
   Landsmænd op af Dvale:
 
-,,Er vi syge - se! i =Fliden=
+,,Er vi syge - se! i <w>Fliden</w>
     Lægedom der gror!
 Smaa? Velan? blev Lodden liden,
     nytt hver Fodsbred Jord
@@ -469,11 +576,11 @@ Fik du Huslod kun i Fæste,
 Hedens Himmel Luftsyn spejler -
     vend fra dem dig bort!
 Moser, Bakker, Lyng og Hjejler
-    - det, kun =det= er vort.
+    - det, kun <w>det</w> er vort.
 Tykkes armt det nu og øde, e
 dyrk det, til det bærer Grøde.
 Bryd dets Muld med stærke Lemmer,
-  =den= din Fremtid gemmer!
+  <w>den</w> din Fremtid gemmer!
 
 Sølvblaa blinker Havets Stribe,
   hvor Normannen foer -
@@ -493,7 +600,7 @@ var ham Ord og Daad det samme.
 Trindt hvor Lyst og Evner vaktes,
   gavmildt Hjælpen raktes.
 
-Saa med =Dalgas=' store Tanke
+Saa med <w>Dalgas</w>' store Tanke
     hans gik godt i Spand.
 Kraftig Skov blev Hedens Banke,
     Mosen Agerland.
@@ -501,21 +608,29 @@ Husmandsloddens krumme Slider
 ranked sig mod Vaarbrudstider,
 og om Torv, om Bod og Brygge
   brødes Sol og Skygge.
-  
+
 - Nu mens Agren gulner, Høet
     rejses Stak ved Stak.
 modnes og som Frugt af Frøet
     glade Hjerters Tak.
 Takken fra de tusind Sjæle
 - Daadens bedste Eftermæle -
-med =hans= Navn i Runer klare
+med <w>hans</w> Navn i Runer klare
   Stenen her bevare.
+</poetry>
+</body>
+</text>
 
-T:Peter Buhl
-U:(Ved Afsløringen af hans Mindesmærke 6te Juli 1913).
-F:Hans Barndoms Leg ved Lillebælt
-SIDE:33-35
-
+<text id="fonss2022052914">
+<head>
+    <title>Peter Buhl</title>
+    <subtitle>(Ved Afsløringen af hans Mindesmærke 6te Juli 1913).</subtitle>
+    <firstline>Hans Barndoms Leg ved Lillebælt</firstline>
+    <source pages="33-35"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Hans Barndoms Leg ved Lillebælt
 for Saltvand gav ham Smagen,
 og Havet hilste ham som Helt,
@@ -538,14 +653,14 @@ i den hans Mod dog fik sin Daab,
 sin Hæderskrans hans Minde.
 Thi dèr, hvor det gik hedest til,
 og Liv og Lemmer stod paa Spil,
-var =Peter Buhl= at finde.
+var <w>Peter Buhl</w> at finde.
 
 Og aldrig slap han uden Tab
 og uden Mén fra Stævnet:
 Som Tyr sin Arm i Ulvens Gab
 ved første Dyst han levned.
 Ved Anholt det hans Frihed gjaldt,
-men ved Lyngøre gav han =Alt=,
+men ved Lyngøre gav han <w>Alt</w>,
 og mer har ingen evnet. -
 
 Saa rig var Tiden paa Bedrift,
@@ -553,7 +668,7 @@ saa læns paa Mønt dens Dage,
 at ingen Sten med huggen Skrift
 den lod om ham tilbage.
 En Rune kun paa Mindets Blad
-og Bølgens Brus, og =Blicher=<note>Cf. Blichers <xref poem="blicher2003091573"/>.</note> kvad
+og Bølgens Brus, og <w>Blicher</w><note>Cf. Blichers <xref poem="blicher2003091573"/>.</note> kvad
 hans korte Heltesage.
 
 Dog medens mangt et Ry blev glemt
@@ -562,7 +677,7 @@ laa hans i Folkemunde gemt
 og bar saa rige Renter,
 at trygt vi efter hundred Aar,
 fuldsikre paa, det ej forgaar,
-i Stenen =her= det prenter.
+i Stenen <w>her</w> det prenter.
 
 Med Tordenskjold og Willemoes
 han nævnes skal tilsammen.
@@ -570,13 +685,20 @@ Hans Ildhu var som hine To’s
 en Arv fra Vikingstammen.
 Saa lad den lyse højt og kækt
 og tænde hos den unge Slægt
-for =Danmark= Alterflammen.
+for <w>Danmark</w> Alterflammen.
+</poetry>
+</body>
+</text>
 
-
-T:Fædrelandssang
-F:Naar ved Solhvervrundet
-SIDE:36-38
-
+<text id="fonss2022052915">
+<head>
+    <title>Fædrelandssang</title>
+    <firstline>Naar ved Solhvervrundet</firstline>
+    <source pages="36-38"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Naar ved Solhvervrundet,
 Dagen aldrig dør;
 naar dens Guld er tvundet
@@ -593,7 +715,7 @@ knap din Armods Skjul.
 Dog om Frosten bider,
 Eet den faar os lært:
 den i barske Tider
-gør os =Hjemmet= kært.
+gør os <w>Hjemmet</w> kært.
 
 Naar fra Kilder dulgte
 Skjaldens Sprogvæld sprang,
@@ -602,7 +724,7 @@ Rythmens ædle Gang.
 Gladest dog, hvor Ordet
 kunstløst faldt og frit,
 gennem Sjælen foer det:
-,,Dette Sprog er =mit=.''
+,,Dette Sprog er <w>mit</w>.''
 
 Naar mod Fortids Tinder
 Saga peged stolt,
@@ -630,15 +752,23 @@ Han. som før dig styrked,
 styrke dig paa ny,
 føre dig fra Mørket
 til Oprejsnings Gry!
-{cr:(1886)}
+<nonum><right><center>(1886)</center></right></nonum>
+</poetry>
+</body>
+</text>
 
-T:Kantate
-U:ved Jubilæumsfesten 1914 for Officersveteranerne fra 1864.
-F:Vær hilset af en yngre Old
-SIDE:39-43
-
-{c:I.}
-{cw:Kor.}
+<text id="fonss2022052916">
+<head>
+    <title>Kantate</title>
+    <subtitle>ved Jubilæumsfesten 1914 for Officersveteranerne fra 1864.</subtitle>
+    <firstline>Vær hilset af en yngre Old</firstline>
+    <source pages="39-43"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+<nonum><center>I.</center></nonum>
+<nonum><center><w>Kor.</w></center></nonum>
 
 Vær hilset af en yngre Old,
 I, som for femti Vintre siden
@@ -657,7 +787,7 @@ at mellem alle hendes Sønner
 staar I vor Moders Hjærte næst!
 
 
-{cw:Solo.}
+<nonum><center><w>Solo.</w></center></nonum>
 
 Værker det i gamle Saar,
 som ej Tiden hele kunde,
@@ -691,7 +821,7 @@ Nederlaget kan vi bære!
 Tabtes end vor dyre Sag,
 - se! den tabtes dog med Ære!
 I, som stod, hvor Sværdet bed,
-sig os: =vilde= I vel andet?
+sig os: <w>vilde</w> I vel andet?
 hvad I døj ed, hvad I led,
 led I jo for Fædrelandet!
 
@@ -705,7 +835,7 @@ Ungdomsløfters favre Ord
 mandigt I ved Daad fortolked!
 
 
-{cw:Kor.}
+<nonum><center><w>Kor.</w></center></nonum>
 
 Du Slægt, som nu for Tur skal staa,
 hvis unge Kraft vor Æt fornyer,
@@ -724,10 +854,10 @@ en fredsæl Aftenrødes Stilhed
 omstraale deres hvide Lok!
 
 
-{c:II.}
-{cw:Kor.}
+<nonum><center>II.</center></nonum>
+<nonum><center><w>Kor.</w></center></nonum>
 
-=Du= som gav vor gamle Stamme
+<w>Du</w> som gav vor gamle Stamme
 Rod i dette fagre Land,
 Skænk os Hjærtets rene Flamme
 til at værne, Mand ved Mand,
@@ -736,10 +866,10 @@ hver en Plet af Hjemmets Grund!
 
 Du som gav de Faa - o Herre! -
 Kraft at slaa for Danmarks Ret,
-hjælp Du =os=, som end er færre,
+hjælp Du <w>os</w>, som end er færre,
 til vort sidste Aandedræt
 uden Kævl og smaalig Kiv
-=Alt= at ofre for dets Liv!
+<w>Alt</w> at ofre for dets Liv!
 
 Sign vor unge Drot, hvis Bønner
 og hvis Id har samme Maal!
@@ -747,13 +877,20 @@ skærm hans Hus, giv Folkets Sønner
 stærke Viljers sejge Staal,
 saa vi staar til sidste Dyst
 Riddervagt om Danmarks Kyst!
+</poetry>
+</body>
+</text>
 
-
-T:Helgoland
-TOCTITEL:Helgoland (9de Maj)
-F:Saa dybe vare de Skygger
-SIDE:44-49
-
+<text id="fonss2022052917">
+<head>
+    <title>Helgoland</title>
+    <toctitle>Helgoland (9de Maj)</toctitle>
+    <firstline>Saa dybe vare de Skygger</firstline>
+    <source pages="44-49"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Saa dybe vare de Skygger,
 sig sammen om Danmark drog.
 Vaaren var kommen. Men Ingen
@@ -774,14 +911,14 @@ Det lød som et Raab om Sejr!
 
 Hvor kom den fra, denne Tordens
 rungende, dybe Metalbas -?
-Ovre i Vest laa =Havet=,
+Ovre i Vest laa <w>Havet</w>,
 vor tusindaarige Valplads.
 Dèr havde til da vi os hævdet
 trods Nederlagenes Kaos -
 Var det mon Sandhed? skulde vort Ry
 ogsaa dèr tages fra os?
 
-Saa =var= det. - Vor Fjendes ,,Bundsforvandt'',
+Saa <w>var</w> det. - Vor Fjendes ,,Bundsforvandt'',
 der raaded ved Adrias Strande,
 havde sendt sin Flaades Blænkere hid
 at rense Nordhavets Vande.
@@ -824,7 +961,7 @@ Granaternes springende Jærn.
 Dog Luen lod sig ej slukke
 den flammed i vilden Sky.
 Saa veg vor Fjende og søgte
-bag =Helgolands= Klipper Ly.
+bag <w>Helgolands</w> Klipper Ly.
 
 Da spiled de danske Svaner først
 til Hjemfærd Vingerne ud.
@@ -835,13 +972,13 @@ de ankred for Kristianssand.
 Dèr stedtes til Hvile de Gutter,
 som faldt under Helgoland. - -
 
-Nu vel! Hvad =var= saa det hele?
+Nu vel! Hvad <w>var</w> saa det hele?
 bliver der spurgt og sagt.
 Et flygtigt Solglimt! En Svale,
 som ingen Sommer fik bragt!
 Den Sommer, der kom, havde Nederlag
 og nye Tab kun i Følge.
-=Freden= gav intet Vederlag.
+<w>Freden</w> gav intet Vederlag.
 Sejren var skrevet paa Bølge!
 
 Den nøgterne Sandhed al skyldig Respekt,
@@ -866,22 +1003,29 @@ De Mænd, som ved Helgoland sloges
 og blødte for Hæderens Krans
 og kasted om Danebroges
 Blodflig Sejerens Glans -
-fra =Suenson= til den jævne Matros,
+fra <w>Suenson</w> til den jævne Matros,
 der tog Part i den kække Affære,
 - - Danmark skylder dem alle Ros og Ære!
+</poetry>
+</body>
+</text>
 
-
-T:Ritorneller
-F:En Flok af vilde Svaner flyr mod Vesten
-SIDE:50-51
-N:lange
-
-{cw:Udkaarelse.}
+<text id="fonss2022052918">
+<head>
+    <title>Ritorneller</title>
+    <firstline>En Flok af vilde Svaner flyr mod Vesten</firstline>
+    <source pages="50-51"/>
+    <keywords>lange</keywords>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+<nonum><center><w>Udkaarelse.</w></center></nonum>
 En Flok af vilde Svaner flyr mod Vesten.
 En daler ned og hviler sig paa Masten.
-Den Fugl blier =min=. Lad andre saa om Resten.
+Den Fugl blier <w>min</w>. Lad andre saa om Resten.
 
-{cw:Stjerneskud.}
+<nonum><center><w>Stjerneskud.</w></center></nonum>
 Et Lovtag, tungt af Stjerner, Natten hvælver,
 og Frugten drysser ned som lutret Sølv,
 naar ved Guds Aande Kæmpekronen skælver.
@@ -890,20 +1034,27 @@ Og op mod Stjerneregnens Flammestriber
 som Mulden efter Foraarsbygens Draaber
 med Barnehænder vore Ønsker griber.
 
-{cw:Ved Thor Langes Død.}
+<nonum><center><w>Ved Thor Langes Død.</w></center></nonum>
 Bag Folkevisens Strofer fra Ukraine
 og Korsangsrythmer fra hellenske Sagn
-din Hjemve toner efter =Danmarks= Egne.
+din Hjemve toner efter <w>Danmarks</w> Egne.
 
 Og fandt du end i Steppens Muld din Grav
 her hjemme skal din Troskabs Minde leve
 med Tak for Hjertet, du din Moder gav.
+</poetry>
+</body>
+</text>
 
-
-T:Indtoget
-F:Regn, som strømmed, Blæst, som tuded
-SIDE:52-53
-
+<text id="fonss2022052919">
+<head>
+    <title>Indtoget</title>
+    <firstline>Regn, som strømmed, Blæst, som tuded</firstline>
+    <source pages="52-53"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Regn, som strømmed, Blæst, som tuded,
 har hans Nærhed alt bebudet,
 og dér har vi ham jo selv.
@@ -931,12 +1082,19 @@ og en snarlig Død ham spaa.
 Men om og i Grav han lægges,
 atter vil til Liv han vækkes
 og paa tredje Dag opstaa.
+</poetry>
+</body>
+</text>
 
-
-T:Rekviem
-F:Tændt er alle Stjerner, store og smaa
-SIDE:54-55
-
+<text id="fonss2022052920">
+<head>
+    <title>Rekviem</title>
+    <firstline>Tændt er alle Stjerner, store og smaa</firstline>
+    <source pages="54-55"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Tændt er alle Stjerner, store og smaa,
       om Sommerens Baare.
 Luften er saa dugtung. Fra Kvist og fra Straa
@@ -972,12 +1130,19 @@ Sørg, lille Solsort i Vejhækkens Tjørn,
       han har elsket dig saare.
 Sørg! o men haab dog med Menneskens Børn
       paa hans Gensyn ad Aare!
+</poetry>
+</body>
+</text>
 
-
-T:Efteraarsstorm
-F:Vesterfra han kommer i susende Trav
-SIDE:56-58
-
+<text id="fonss2022052921">
+<head>
+    <title>Efteraarsstorm</title>
+    <firstline>Vesterfra han kommer i susende Trav</firstline>
+    <source pages="56-58"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Vesterfra han kommer i susende Trav,
 Søen staar i Skum under Hovene.
 Aftenhimlen gløder som rødgyldent Rav,
@@ -1021,12 +1186,20 @@ mens Gryet pibler frem i den østre.
 Trindt over Jord Ødelæggelsens Tegn!
 Nu kommer Turen til Solskin og Regn,
 de to barmhjertige Søstre.
+</poetry>
+</body>
+</text>
 
-T:Charles Dickens
-U:(I Dickens-Album’et).
-F:Jeg kaster et Blik langs Reolerne hen
-SIDE:59-60
-
+<text id="fonss2022052922">
+<head>
+    <title>Charles Dickens</title>
+    <subtitle>(I Dickens-Album’et).</subtitle>
+    <firstline>Jeg kaster et Blik langs Reolerne hen</firstline>
+    <source pages="59-60"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Jeg kaster et Blik langs Reolerne hen,
 jeg aabner mit Egetræs-Bogskab:
 De kræver Plads, disse Skatte
@@ -1034,7 +1207,7 @@ af Menneskedrømme og Klogskab.
 Hist sanker Dramaets Mestre Støv,
 her dufter det tungt af Lyrikens.
 Men frisk er den lange Hylde dér:
-den rummer alene =Dickens=.
+den rummer alene <w>Dickens</w>.
 
 Jeg lader mit Øje ile
 langs Titlernes gyldne Corso
@@ -1053,13 +1226,20 @@ saa varm og saa dyb af Hjerte,
 saa sprudlende frisk af Humør - -
 Jeg læser og læser ham om igen,
 - jeg læser ham, til jeg dør!
+</poetry>
+</body>
+</text>
 
-
-T:Egnen ved Hindsgavl
-U:(Triolet)
-F:Mit underfulde Barndomsland
-SIDE:61
-
+<text id="fonss2022052923">
+<head>
+    <title>Egnen ved Hindsgavl</title>
+    <subtitle>(Triolet)</subtitle>
+    <firstline>Mit underfulde Barndomsland</firstline>
+    <source pages="61"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Mit underfulde Barndomsland,
 hvis Skove Bæltets Blaa omslynger,
 hvis Skønhed Aarene forynger,
@@ -1068,12 +1248,19 @@ Som Dreng du vied mig. Som Mand
 utrættet jeg din Lovsang synger,
 mit underfulde Barndomsland,
 hvis Skove Bæltets Blaa omslynger.
+</poetry>
+</body>
+</text>
 
-
-T:Møen
-F:Imellem Østersøen
-SIDE:62-66
-
+<text id="fonss2022052924">
+<head>
+    <title>Møen</title>
+    <firstline>Imellem Østersøen</firstline>
+    <source pages="62-66"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Imellem Østersøen
 og Ulfsunds salte Strøm
 hæver det skønne Møen
@@ -1098,7 +1285,7 @@ da Vendens lede Drage
 hver Vaar tog Kursen hid.
 Den red paa Bølgehesten
 for sorte-gule Sejl,
-til =Absalon= som Blæsten
+til <w>Absalon</w> som Blæsten
 fik renset Havets Spejl.
 
 Og Stege fik sit Virke
@@ -1131,7 +1318,7 @@ et Fristed den sig fandt.
 Og dér i Løvets Skygger
 Smaaøer funkler trindt,
 men ud mod Havet bygger
-sin Borg den stolte =Klint=.
+sin Borg den stolte <w>Klint</w>.
 Der skyder hvide Nakker
 frem under Bøgens Braa,
 og Gavle, Spir og Takker
@@ -1161,7 +1348,7 @@ paa min Erindrings Tavle
 staar hver i kraftigt Rids.
 Mest dog, naar Aftnen maler
 med Purpur Himlens Bryn,
-er det den høje _,,Taler''_,
+er det den høje <i>,,Taler''</i>,
 som stiger for mit Syn.
 
 Mod Hvælvets dybtblaa Bue
@@ -1172,12 +1359,19 @@ Min Hilsen da jeg slynger
 imod dens Fjældvæg brat.
 Og Memnonstøtten synger
 et tonende ,,Godnat''.
+</poetry>
+</body>
+</text>
 
-
-T:Elbodalen
-F:Fjerntfra, dèr hvor Aasen blaaner
-SIDE:67-70
-
+<text id="fonss2022052925">
+<head>
+    <title>Elbodalen</title>
+    <firstline>Fjerntfra, dèr hvor Aasen blaaner</firstline>
+    <source pages="67-70"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Fjerntfra, dèr hvor Aasen blaaner
 mod en Luft som lys Opal,
 jævnt det jyske Højland skraaner
@@ -1194,7 +1388,7 @@ Helt fra Gudsøvig til Rands
 Bølgen har dens Fure gravet.
 Vikingen, som pløj ed Havet,
 har befaret den til Vands.
-=Ægirs= Ran dog =Frej= har krævet,
+<w>Ægirs</w> Ran dog <w>Frej</w> har krævet,
 har fra Dybet op den hævet,
 bræmmet den med Vang og Skov,
 viet den med Le og Plov.
@@ -1239,13 +1433,22 @@ Mørkt derover ruger Skoven
 drømmende om fjerne Tider.
 Men foroven
 gløder Himmelen som Rav.
+</poetry>
+</body>
+</text>
 
-
-T:Kulørernes Mester
-F:Jeg kom fra Fyrreskovens grønne Dybder
-SIDE:71-72
-NOTE:Peter Paul Rubens (1577-1640), flamsk barok kunstmaler.
-
+<text id="fonss2022052926">
+<head>
+    <title>Kulørernes Mester</title>
+    <firstline>Jeg kom fra Fyrreskovens grønne Dybder</firstline>
+    <notes>
+        <note>Peter Paul Rubens (1577-1640), flamsk barok kunstmaler.</note>
+    </notes>
+    <source pages="71-72"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Jeg kom fra Fyrreskovens grønne Dybder
 med dette Bølgesus, som aldrig tav,
 og mens et Skær af Rav tog Glød foroven,
@@ -1280,44 +1483,65 @@ Kulørernes, der øser ud af Tubens
 brogede Herlighed Paletten fuld
 med Bronce, Grønt og Lilla, Purpur, Guld -
 og maler fort, til Haanden stiv af Kuld
-maa slippe Penslen - Aarets store =Rubens=.
+maa slippe Penslen - Aarets store <w>Rubens</w>.
+</poetry>
+</body>
+</text>
 
+<section>
+<head>
+    <title>Ved Graven</title>
+</head>
+<content>
 
-SEKTION:Ved Graven
-
-T:
-LINKTITEL:Ved Graven, I
-F:
-SIDE:
-
-I.
+<text id="fonss2022052927">
+<head>
+    <title><num>I.</num>I Kunstens Tempelsale</title>
+    <linktitle>Ved Graven, I</linktitle>
+    <firstline>I Kunstens Tempelsale</firstline>
+    <source pages="73-74"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 I Kunstens Tempelsale
 du fandt en Solskinskrog,
 hvor Hjertets Længsler tale
 i Harmoniers Sprog -
+
 hvor Evighedens Stemme
 har Tonens Klædebon;
-dér følte du dig hjemme,
-dér dvæled helst din Aand.
+dèr følte du dig hjemme,
+dèr dvæled helst din Aand.
+
 De Bud fra Lysets Rige,
 der kom paa Tonens Flod,
 de uudsigelige,
 - var dem, du bedst forstod.
+
 Thi skal ad Tonens Veje
 vort Afskedssnk dig naa
 omkring dit stille Leje
 dens Vellydsbølger slaa.
+
 De klinge fra din Baare
 udover Gravens Skel
 og bringe med vor Taare
 dig Hilsen og Farvel.
+</poetry>
+</body>
+</text>
 
-T:
-LINKTITEL:Ved Graven, II
-F:
-SIDE:
-
-II.
+<text id="fonss2022052928">
+<head>
+    <title><num>II.</num>Just som Lørdags Kvæld randt ud</title>
+    <linktitle>Ved Graven, II</linktitle>
+    <firstline>Just som Lørdags Kvæld randt ud</firstline>
+    <source pages="74-75"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Just som Lørdags Kvæld randt ud,
 da var og din Livsdag leden,
 og barmhjertig kaldte Gud
@@ -1326,6 +1550,7 @@ Hvad du trængte til, var Fred,
 til i Tro at kaste Anker;
 fra din Lykke Skibbrud led,
 flakked husvildt dine Tanker.
+
 Hvil dig nu, du stakkels Barn!
 Travl og rastløst har du trippet,
 tvundet paa din Skæbnes Garn,
@@ -1334,6 +1559,7 @@ Mangt et mødigt Marthafjed
 her paa Jord du maatte træde.
 Nu har Herren kaldt dig ned
 paa Marias lave Sæde.
+
 Fald til Ro da ved hans Fod,
 hvor hver jordisk Mislyd tier,
 og hvor Sjælen løftes mod
@@ -1342,67 +1568,92 @@ Herre! lad det Barn, som her
 følte modløst sig og bange,
 Albarmhjertigheden nær,
 Tryghed hist og Hvile fange!
+</poetry>
+</body>
+</text>
 
-SLUTSEKTION
+</content>
+</section> <!-- Ved Graven -->
 
-T:Den kananæiske Kvinde
-F:
-SIDE:76-
-
+<text id="fonss2022052929">
+<head>
+    <title>Den kananæiske Kvinde</title>
+    <firstline>Se, du levede fjærnt fra den Helliges Veje</firstline>
+    <source pages="76-77"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Se, du levede fjærnt fra den Helliges Veje,
 og hans Liv var et Sagn, du kun halvvejs har troet.
 - Da slog Ulykken ned som et Lyn ved dit Leje:
 Paa dit eneste Barn faldt der Sygdom og Sot.
+
 Og fra Læge til Læge du gik - men forgæves,
 kasted Pengene hen kun til unyttigt Kram.
 Saa erklæred de, Sygdommen ej kunde hæves -
-Da - o da først! - søgte din Tanke til ham.
+Da - o <w>da</w> først! - søgte din Tanke til <w>ham.</w>
+
 Og du graved den frem, denne tusindaars Mythe,
 og din Sjæl siedes sønder i Tvivl og i Haab.
 Saa en Kvæld, da dit Barn var et Smerternes Bytte,
-brød du ud i Fortvivlelsens Bønner og Raab
+brød du ud i Fortvivlelsens Bønner og Raab - -
+
 Men han hørte dig ej. Og hans Ord var saa vrede,
 gennem Hjertet de skar som en skarpsleben Dolk:
-,,Hvo er du? Har du Børnenes Ret til at bede.
+,,Hvo er <w>du?</w> Har du Børnenes Ret til at bede.
 Se, jeg kender dig ej! Du er ej af mit Folk!''
+
 Det var Sandhed. Du følte det dybt i din Vaade;
-men du kunde ej slippe. Med bævende Mund
-sank du ned for hans Fod: ,,Ingen Ret - kun en Naade!
+men du <w>kunde</w> ej slippe. Med bævende Mund
+sank du ned for hans Fod: ,,Ingen Ret - kun en <w>Naade!</w>
 - Blot en Brødskorpe slængt til en herreløs Hund!''
+
 O, da fik du hans Blik! Som en morgenrød Stime
 brød det frem gennem Natten i funklende Glans.
-Da fornam du med Jubel: Fra nu var du hans!
-Du blev frelst med dit Barn i den selvsamme
-Time!
+Da fornam du med Jubel: Fra nu var du <w>hans!</w>
+Du blev frelst med dit Barn i den selvsamme Time!
+</poetry>
+</body>
+</text>
 
-T:Paa Genezareth Sø
-F:
-SIDE:78-
-
+<text id="fonss2022052930">
+<head>
+    <title>Paa Genezareth Sø</title>
+    <firstline>Vist fik du ham med ombord</firstline>
+    <source pages="78-80"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Vist fik du ham med ombord,
 da fra Land du Stævnen vendte.
 Mangt et Bibelsprog du kendte -
 du blev konfirmert i Fjor -
 og det nye Testamente
 stod paa Hylden med hans Ord.
-Men han sov - ja trygt og godt,
+
+Men han <w>sov</w> - ja trygt og godt,
 og du lod ham sove bare.
 Du var Mand for selv at klare
 Grejerne i Stort og Smaat,
 og Sejladsen gik jo flot -
 her var Fred og ingen Fare.
+
 Mere dristig blier din Fart.
 Frem mod nye Maal du tragter,
 ny Idéers Last du fragter,
 og de gamle glemmes snart -
 først af alle - det er klart -
-hans, som du har stuvet agter.
+<w>hans</w>, som du har stuvet agter.
+
 - Da forandres Alting brat.
 Over dig Orkanens Tuden,
 Søen spiller Bold med Skuden,
 ene er du og forladt
 Roret svigter, det er Nat,
 og du selv al Hjælp foruden.
+
 Mindes du da end Guds Søn
 - det er langtfra vist desværre -
 da kan Intet Vej ham spærre,
@@ -1416,26 +1667,35 @@ Og i dig blier Alting stille,
 ganske stille ved hans Ord:
 ,,Frygt ej! har du mig ombord,
 kan dit Liv ej gaa til Spilde.''
+
 Men maaske det er for sent,
 du har længst stødt ham af Baaden,
 overskaaret Ledningstraaden,
 glemt din Barndoms Bønner rent,
 - da er Trøsten dig forment,
 du har selv forskertset Naaden.
+</poetry>
+</body>
+</text>
 
-
-T:Børnehjælp
-F:
-SIDE:81-
-
+<text id="fonss2022052931">
+<head>
+    <title>Børnehjælp</title>
+    <firstline>Som Krat i Bøgelunden</firstline>
+    <source pages="81-83"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Som Krat i Bøgelunden
 af Hassel, Birk og Tjørn
 der gror fra Folkebunden
-en Ungskov frem af Børn.
+en Ungskov frem af <w>Børn</w>.
 Og disse smaa og spæde,
 hver lille Tøs og Knægt
 betroedes os til Glæde,
 til Røgt og Varetægt.
+
 Saa har vi da i Fællig
 et Kald at vogte paa.
 Men ak! hvor vidt forskellig
@@ -1444,34 +1704,34 @@ En Part fra første Time
 fik Sundheds friske Marv,
 en anden Sygdomskime
 og Syndens Frø i Arv.
-Tidløs. 81
-mmssmmm
+
 For Skødebørn af Lykken
 blier Livets Skole nem;
-men det er dem i Skyggen,
+men det er dem i <w>Skyggen</w>,
 som vi skal hjælpe frem,
 skal frede om og hegne
 og skaffe Luft og Lys,
 at de som vore egne
 kan trives og fornyes.
+
 Om Barnets Krav del toner
 fra Evangeliets Tekst.
 Ømt skærmer Skovens Kroner
 de unge Stammers Vækst.
-Og Saga - skønt hun tier -
+Og <w>Saga</w> - skønt hun tier -
 er samme Tankes Tolk:
-,,Det Værn, du Barnet vier,
-det vier du dit Folk!''
+,,Det Værn, du <w>Barnet</w> vier,
+det vier du dit <w>Folk!</w>''
+
 Af spæde Ymper bliver
 engang en Højskovs Hvælv.
 De smaa til hvem du giver,
-er Danmarks Fremtid selv,
-82
-äs
+er <w>Danmarks Fremtid</w> selv,
 Jo mere vi dem freder,
 jo sundere de groer,
 des bedre Kaar bereder
 vi Børn vor gamle Mor.
+
 Hav Pung og Haand da aaben,
 giv gavmildt, rigt og fuldt!
 Hver Gave er et Vaaben
@@ -1480,4 +1740,9 @@ Og én Gang vil den lønnes:
 Naar denne Slægt er Støv,
 skal Danmarks Stamme grønnes
 med frodigt Sommerløv!
+</poetry>
+</body>
+</text>
 
+</workbody>
+</kalliopework>
