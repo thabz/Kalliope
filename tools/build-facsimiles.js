@@ -7,11 +7,14 @@ const { safeMkdir, buildThumbnails } = require('./libs/helpers.js');
 
 const dirname = 'static/facsimiles';
 
+// First `brew install poppler`
+//
+// Then
+//
 // Place pdf-files in static/facsimiles/<poetname>/<workid>.pdf
 // For each pdf file this script creates a folder static/facsimiles/<poetname>/<workid>
 // containing jpg-files for each page in the pdf-file, named <workid>-<pagenumber>.jpg
 // where <pagenumber> is 000, 001, 002, etc.
-
 
 // I can't control the output format of 'pdftoppm', so I'll just rename
 // all files into the wanted filename-format: 000.jpg, 001.jpg, ...
@@ -29,8 +32,13 @@ const renameImages = imagesDir => {
 // Extract all pages from the pdf into separate jpeg files.
 let extractPdfImagesQueue = async.queue((task, callback) => {
   console.log(`Extracting from ${task.fullFilename}`);
-  exec(`pdftoppm -jpeg -r 300  ${task.fullFilename} ${task.imagesPrefix}`, () => {
-    callback();
+  exec(`pdftoppm -jpeg -r 300  ${task.fullFilename} ${task.imagesPrefix}`, (error) => {
+      if (error) {
+        console.error(`Exec error: ${error}`);
+        console.error("Run 'brew install poppler' to get the pdftoppm tool");
+      } else {
+        callback();
+      }
   });
 }, 2);
 
