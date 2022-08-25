@@ -1,14 +1,28 @@
-KILDE:Emil Bønnelycke: _Ild og Ungdom_, J. L. Lybeckers Forlag, Kbh., 1917
-DIGTER:boennelycke
-FACSIMILE:130023308984_color
-FACSIMILE-SIDER:95
-TITELBLAD:Emil Bønnelycke / Ild og Ungdom / Digte // København / J. L. Lybeckers Forlag / 1917
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
+<kalliopework id="1917" author="boennelycke" status="complete" type="poetry">
+<workhead>
+    <title>Ild og Ungdom</title>
+    <year>1917</year>
+    <notes>
+        <note>Teksten følger Emil Bønnelycke: <i>Ild og Ungdom</i>, J. L. Lybeckers Forlag, Kbh., 1917</note>
+    </notes>
+    <pictures>
+        <picture src="1917-p1.jpg">Titelbladet til <i>Ild og Ungdom</i> (1917) lyder ,,Emil Bønnelycke / Ild og Ungdom / Digte // København / J. L. Lybeckers Forlag / 1917''.</picture>
+    </pictures>
+    <source facsimile="130023308984_color" facsimile-pages-num="95" facsimile-pages-offset="10">Emil Bønnelycke: <i>Ild og Ungdom</i>, J. L. Lybeckers Forlag, Kbh., 1917</source>
+</workhead>
+<workbody>
 
-
-T:Hjertet
-F:Det banker af saa vild og ung en Glæde
-SIDE:1-2
-
+<text id="boennelycke2022082501">
+<head>
+    <title>Hjertet</title>
+    <firstline>Det banker af saa vild og ung en Glæde</firstline>
+    <source pages="1-2"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Det banker af saa vild og ung en Glæde.
 Det banker af en Hymne til Guds Dag.
 Det lever i en Festdragts Purpurklæde.
@@ -43,11 +57,19 @@ vil kappes om at juble og berette
 om Miraklet: Jeg er Livets Gæst -.
 Hjertet gemmer det i sine Kamre,
 Livet, Livet. Hør, o hør det hamre.
+</poetry>
+</body>
+</text>
 
-T:Din Mund
-F:Saa sødt den martrer mig, din Pigemund
-SIDE:3-4
-
+<text id="boennelycke2022082502">
+<head>
+    <title>Din Mund</title>
+    <firstline>Saa sødt den martrer mig, din Pigemund</firstline>
+    <source pages="3-4"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Saa sødt den martrer mig, din Pigemund.
 Den er som røde Frugter, jeg fortærer.
 Den er en Ild, som brænder mig i Kyssets Stund.
@@ -77,11 +99,19 @@ O, al din Villen er i denne Mund.
 Dit Pigevæsens Higen og dets Hede.
 Den siger jo til mig, din Elsker, kun,
 at du er glad for Mødet og er rede.  . . .
+</poetry>
+</body>
+</text>
 
-T:En Kiosk
-F:Med farvede Ruder den brænder sin dæmpede Fakkel
-SIDE:5-6
-
+<text id="boennelycke2022082503">
+<head>
+    <title>En Kiosk</title>
+    <firstline>Med farvede Ruder den brænder sin dæmpede Fakkel</firstline>
+    <source pages="5-6"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Med farvede Ruder den brænder sin dæmpede Fakkel,
 den brogede Kiosk, hvor Alverden gaar oprømt forbi.
 Den stirrer med Øjne og lytter til Gadens Spektakel
@@ -115,12 +145,20 @@ Det er Synd, siger jeg, det er sært, som det hele er fat -,
 jeg finder det mærkeligt, at - -
 Saa nu slukker man vist mine Lys.
 Ja ja, da. Godnat.
+</poetry>
+</body>
+</text>
 
-T:Støvlen
-F:Men hvad fejler dig min Støvle
-SIDE:7-11
-
-Men hvad fejler dig min Støvle, 
+<text id="boennelycke2022082504">
+<head>
+    <title>Støvlen</title>
+    <firstline>Men hvad fejler dig min Støvle</firstline>
+    <source pages="7-11"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Men hvad fejler dig min Støvle,
 du min Ven i Vandreglæden,
 er du træt af al min Træden -,
 af min Trods og al min Trampen
@@ -137,7 +175,7 @@ af sit gamle Svendestykke,
 maatte Manden bittert græde.
 
 Men jeg véd, at du vil harmes,
-for nu hører du det atter: 
+for nu hører du det atter:
 Jeg er sammensat af Latter -,
 jeg er Søn af Sorgløsheden,
 eftertragter ingen Gerning.
@@ -184,7 +222,7 @@ af en Mesters Svendestykke,
 som ej mér er til at pløkke -,
 det til Tak fordi du tviner.
 
-{c:*}
+<nonum><center>*</center></nonum>
 
 Kære Støvle, o jeg angrer,
 jeg har glemt, hvad du har været,
@@ -240,13 +278,21 @@ selv om Foden flittigt iler -.
 Kan man lé midt i sin Klage,
 i de Kampe, man maa kæmpe,
 i de Skrig, man ej kan dæmpe,
-er der _Ungdom_ end tilbage.
+er der <i>Ungdom</i> end tilbage.
+</poetry>
+</body>
+</text>
 
-T:Vagant
-F:Min hvide Vest er strøget
-SIDE:11-12
-
-Min hvide Vest er strøget. 
+<text id="boennelycke2022082505">
+<head>
+    <title>Vagant</title>
+    <firstline>Min hvide Vest er strøget</firstline>
+    <source pages="12-13"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Min hvide Vest er strøget.
 Sé, min Støvlesaal er ny
 og stærk, fordi den mærker,
 at nu drager vi af By -.
@@ -281,11 +327,19 @@ Jeg drager ind i Løvets Sal,
 og under Skovens Kroner
 dér knæler jeg og bader mig
 i Duft af Anemoner.
+</poetry>
+</body>
+</text>
 
-T:Øjenvidne
-F:Jeg hørte dem komme, de elskende to
-SIDE:14-15
-
+<text id="boennelycke2022082506">
+<head>
+    <title>Øjenvidne</title>
+    <firstline>Jeg hørte dem komme, de elskende to</firstline>
+    <source pages="14-15"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Jeg hørte dem komme, de elskende to,
 fortabt i hinanden, som Børn, naar de leger.
 Jeg hørte de lønlige Lyster, der lo -
@@ -325,12 +379,20 @@ Og jeg, som var høvisk og nu lod dem ene,
 følte et Pust af forstaaelig Higen -.
 Jeg hviskede ind mellem Græs, mellem Grene:
 Hører De, Hr. - jeg misunder Dem Pigen - -.
+</poetry>
+</body>
+</text>
 
-T:De klare Kjoler -
-LINKTITEL:De klare Kjoler
-F:De klare Kjoler blafrer hvidt og blafrer blidt
-SIDE:16
-
+<text id="boennelycke2022082507">
+<head>
+    <title>De klare Kjoler -</title>
+    <linktitle>De klare Kjoler</linktitle>
+    <firstline>De klare Kjoler blafrer hvidt og blafrer blidt</firstline>
+    <source pages="16"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 De klare Kjoler blafrer hvidt og blafrer blidt
 i Blæsten deres stedseunge myge Sang -.
 Mon al det skønne i den Ynde bliver mit,
@@ -345,11 +407,19 @@ De klare Kjoler er Symboler paa forgæves
 Ønsker om at eje, hvad man aldrig faar -:
 Hver en Pige, som fortryller dig, men flygter
     med sine seksten Aar -.
+</poetry>
+</body>
+</text>
 
-T:Paradokset
-F:Jeg spørger Græsset, om det véd, hvorfor det vokser
-SIDE:17-18
-
+<text id="boennelycke2022082508">
+<head>
+    <title>Paradokset</title>
+    <firstline>Jeg spørger Græsset, om det véd, hvorfor det vokser</firstline>
+    <source pages="17-18"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Jeg spørger Græsset, om det véd, hvorfor det vokser,
 men hører intet andet i dets sagte Røst,
 end hvad jeg selv saa tidt har sagt i Paradokser
@@ -383,17 +453,25 @@ at det er Mennesker, der selv har haft det ondt?
 Den sande Lykke, tror jeg, findes allesteder,
 den, der stedse flakker om, faar meget sét.
 Han kender Rigdomme af myldrende Smaaglæder,
-som netop smaa er af den _største_ Bonitét.
+som netop smaa er af den <i>største</i> Bonitét.
 
 Thi al det smaa, som færre ænser for dets Ringhed,
 er det store, som en Daare sætter højt.
 Han udsætter sig for Samfundsdommens Strenghed;
 men han regner ikke denne Dom en Døjt!
+</poetry>
+</body>
+</text>
 
-T:Høst
-F:Ser I Baalet skjult imellem Blade?
-SIDE:19
-
+<text id="boennelycke2022082509">
+<head>
+    <title>Høst</title>
+    <firstline>Ser I Baalet skjult imellem Blade?</firstline>
+    <source pages="19"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Ser I Baalet skjult imellem Blade?
 Ser I Somren luer af en sælsom Ild?
 Ser I denne gyldne Løvkaskade
@@ -410,11 +488,19 @@ Er hvert falmet Blad, som éngang voksed frem,
 og den vilde Purpur i hver visnet Rose,
 - medens Duften er en Guddom, en Narkose -,
 Livets Børn, som atter søger hjem?
+</poetry>
+</body>
+</text>
 
-T:Logerende
-F:Der dufter af Sauce til en kongelig Ret
-SIDE:20-21
-
+<text id="boennelycke2022082510">
+<head>
+    <title>Logerende</title>
+    <firstline>Der dufter af Sauce til en kongelig Ret</firstline>
+    <source pages="20-21"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Der dufter af Sauce til en kongelig Ret
 bag Døren, hvor Børnene leger,
 mens jeg staar forkommen og ønsker mig mæt
@@ -454,11 +540,19 @@ var én af de pludrende Poder - -.
     Der er Vemod i Luften -.
     Jeg stod der imens jeg var kaad.
     Jeg er pludselig nær ved en Graad . . .
+</poetry>
+</body>
+</text>
 
-T:Træet
-F:Du, Kastanie, gode Ven
-SIDE:22-23
-
+<text id="boennelycke2022082511">
+<head>
+    <title>Træet</title>
+    <firstline>Du, Kastanie, gode Ven</firstline>
+    <source pages="22-23"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Du, Kastanie, gode Ven,
 i din stride, simple Skønhed,
 i din grødemilde Grønhed
@@ -486,12 +580,20 @@ der i hektisk Feber brænder . . .
 og dit Løv er sælsomt lyst
 Bi og Blæst og Fuglemund
 tier i din store Stund.
+</poetry>
+</body>
+</text>
 
-T:Vandringsmand
-F:Jeg har Sko med slemme Huller
-SIDE:24-25
-
-{rs:Kristiania.}
+<text id="boennelycke2022082512">
+<head>
+    <title>Vandringsmand</title>
+    <firstline>Jeg har Sko med slemme Huller</firstline>
+    <source pages="24-25"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+<nonum><small><right>Kristiania.</right></small></nonum>
 
 Jeg har Sko med slemme Huller,
 jeg har blanke Buksebén -.
@@ -544,12 +646,19 @@ Naar hvert Hus i Byen rødm er,
 til det staar som et Palads,
 vil jeg dvæle som en Skude
 ved en venlig Ankerplads.
+</poetry>
+</body>
+</text>
 
-
-T:Introduction
-F:Jeg vil leve i Introductionen
-SIDE:26
-
+<text id="boennelycke2022082513">
+<head>
+    <title>Introduction</title>
+    <firstline>Jeg vil leve i Introductionen</firstline>
+    <source pages="26"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Jeg vil leve i Introductionen
 til alt, hvad jeg længes imod;
 thi ejer jeg først det forfulgte,
@@ -564,11 +673,19 @@ Jeg vil leve i alt, hvad der bærer
 min Glæde i skærmende Favn;
 thi Savnet er Lønnen, naar Maalet
 er naaet og nævnet ved Navn.
+</poetry>
+</body>
+</text>
 
-T:Mødet
-F:Du i Efteraarets graa
-SIDE:27-31
-
+<text id="boennelycke2022082514">
+<head>
+    <title>Mødet</title>
+    <firstline>Du i Efteraarets graa</firstline>
+    <source pages="27-31"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Du i Efteraarets graa
 af Dugg begrædte Daggryestime
 hører gennem Taagehavet
@@ -585,7 +702,7 @@ til din Glæde sér de Syner,
 du i Søvne rakte efter,
 i dit Indre staa forklaret,
 og du hvisker til dit Hjerte:
-_Mine_ Drømme er bevaret -.
+<i>Mine</i> Drømme er bevaret -.
 
 Formiddagens Dagværk lider
 langsomt, før det nævnes Slut;
@@ -661,7 +778,7 @@ blir et søndret Blomsterbed . . .
 
 Det er mig med Uvejrsstorme
 oe med Kræfter som Titaner,
-der skal kysse dig og knuge 
+der skal kysse dig og knuge
 som fraaded der Vulkaner
 i mit Blod og paa min Læbe,
 der med Kraterflammer luer -,
@@ -676,11 +793,19 @@ Og jeg hvisker, hvad jeg evner
 af forsorne, søde Ord,
 til du, Barn, i mine Arme
 segner om i duggvaad Jord . . .
+</poetry>
+</body>
+</text>
 
-T:Erobrerne
-F:Befalingen lød til mig selv: Saml dine Horder!
-SIDE:32-33
-
+<text id="boennelycke2022082515">
+<head>
+    <title>Erobrerne</title>
+    <firstline>Befalingen lød til mig selv: Saml dine Horder!</firstline>
+    <source pages="32-33"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Befalingen lød til mig selv: Saml dine Horder!
 Foran dig ligger et Land, som I skal indtage.
 Lad Vaabnene suse i Luften og sæt saa Recorder.
@@ -728,15 +853,23 @@ Mankerne flagrer uredte og Mulerne damper.
 »Vil vi vel helme, før Fjenden er slagen og splittet?«
 Der skal gro Nælder og Tidsler, hvor Hovene tramper . . .
 Sejren skal fejres med hedenske Fakler og Lamper . . .
+</poetry>
+</body>
+</text>
 
-T:Valby
-F:Skal vi gaa til Folkeparken, Søndermarken
-SIDE:34-35
-
+<text id="boennelycke2022082516">
+<head>
+    <title>Valby</title>
+    <firstline>Skal vi gaa til Folkeparken, Søndermarken</firstline>
+    <source pages="34-35"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Skal vi gaa til Folkeparken, Søndermarken,
 Mosedal, hvor Engens Æggeblommer
 vugger tungt i Vind og gul af Sommer -
-hos Kastaniens Blomster, som i Brudesærk 
+hos Kastaniens Blomster, som i Brudesærk
 lyser over Filmsfabrikkens Plankeværk . . .
 
 Jeg skal vise Vejen til Idyllen, Hylden,
@@ -772,19 +905,27 @@ som er skøn, fordi der hænger Forstad ved . . .
 Aah, i Valby, er det primitive end i Live.
 Dér er Hanegal og Duers Kurren
 mellem Motorcykler og moderne Snurren -.
-Dér gaar Storstadsstrømmen forbi Bondens Lade. 
+Dér gaar Storstadsstrømmen forbi Bondens Lade.
 Dér er straatækt Hus i Landsbygade.
+</poetry>
+</body>
+</text>
 
-T:Rus
-F:Det er den Vin i dine Aarer, der har gjort mig stærk
-SIDE:36-37
-
+<text id="boennelycke2022082517">
+<head>
+    <title>Rus</title>
+    <firstline>Det er den Vin i dine Aarer, der har gjort mig stærk</firstline>
+    <source pages="36-37"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Det er den Vin i dine Aarer, der har gjort mig stærk,
 din Skulders Vellugt, der har vakt Titaners Styrke,
 og denne Skælven i min Grundvold er dit Værk -,
 din Munds Skarlagenflamme og dit Øjes Mørke.
 
-Det er den Røst, som ordløs dvæler i dit Aandedræt, 
+Det er den Røst, som ordløs dvæler i dit Aandedræt,
 hvori jeg hører Ilden brænde i dit Hjerte.
 Den har i en kaotisk Kval og Fryd mig stedt,
 en ildrød Drøm, som mig en bundløs Sødme lærte . . .
@@ -803,11 +944,19 @@ Men jeg kan ikke sove fra en saadan Nat i h ryd.
 Saa rigt og altforglemmende er dette Mørke.
 Dybt i sin søde Stilhed mumler Natten: Nyd!
 Og mine Arme favner med fornyet Styrke. -
+</poetry>
+</body>
+</text>
 
-T:Genboen
-F:Hun vander sine Blomster
-SIDE:38-39
-
+<text id="boennelycke2022082518">
+<head>
+    <title>Genboen</title>
+    <firstline>Hun vander sine Blomster</firstline>
+    <source pages="38-39"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Hun vander sine Blomster
 og fodrer sine Fugle.
 Se, Særkens ene Sele
@@ -843,12 +992,19 @@ Det er, som om der lyser
 en Gudinde i den Særk,
 saa bondepigefrisk -
 og dog forfinet . . .
+</poetry>
+</body>
+</text>
 
-
-T:Gammelstrand
-F:Gammelstrand med Fiskebørs og Tang og Hyttefad
-SIDE:40
-
+<text id="boennelycke2022082519">
+<head>
+    <title>Gammelstrand</title>
+    <firstline>Gammelstrand med Fiskebørs og Tang og Hyttefad</firstline>
+    <source pages="40"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Gammelstrand med Fiskebørs og Tang og Hyttefad
 og sladrende, historiske Madammer sat i Rad,
 lyser af Fortryllelse, naar Sol er i vor Stad -.
@@ -872,12 +1028,20 @@ Dér er Fiskerleje og Idyl i Hovedstaden.
 Altid er der Brogethed og Folkeliv i Gaden.
 Myldrende og malerisk med Glimt af gamle Gader -,
 Gammelstrand, o, Gammelstrand med smuldrende Facader . . .
+</poetry>
+</body>
+</text>
 
-T:Sværmere
-F:Vi tømmer en Kalk af de duftende Blomster
-SIDE:41
-
-Vi tømmer en Kalk af de duftende Blomster, 
+<text id="boennelycke2022082520">
+<head>
+    <title>Sværmere</title>
+    <firstline>Vi tømmer en Kalk af de duftende Blomster</firstline>
+    <source pages="41"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Vi tømmer en Kalk af de duftende Blomster,
 hvis Bægre er fyldte til Randen
 med Himle af Glemsel, der lokkende, rusende
 kysser os blidt paa Forstanden -.
@@ -892,11 +1056,19 @@ Og medens en Vellugt af Vildrosens Blade
 sig med Mindet om Æbler forlener -,
 forsker vi parvis i Salighed
 som i boccaccioske Scener -.
+</poetry>
+</body>
+</text>
 
-T:Sommernat
-F:Hvad det er sandt, at jeg skal flakke hjemløs om
-SIDE:42
-
+<text id="boennelycke2022082521">
+<head>
+    <title>Sommernat</title>
+    <firstline>Hvad det er sandt, at jeg skal flakke hjemløs om</firstline>
+    <source pages="42"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Hvad det er sandt, at jeg skal flakke hjemløs om
 og nære trofast Venskab til en énlig Gade -
 og nynne Rytmen til en natlig Serenade -,
@@ -917,11 +1089,19 @@ som aander Lægedom imod en gammel Vunde -,
 dér gaar jeg gerne hen og sagtner glad min Gang,
 imens jeg beder om et Hjem i Løvets Bo,
 og ønsker jeg engang maa finde Ro.
+</poetry>
+</body>
+</text>
 
-T:Strofe
-F:Jeg er et Solstreif i den sorte Taage
-SIDE:43
-
+<text id="boennelycke2022082522">
+<head>
+    <title>Strofe</title>
+    <firstline>Jeg er et Solstreif i den sorte Taage</firstline>
+    <source pages="43"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Jeg er et Solstreif i den sorte Taage,
       der er Sorgen
 i al den Kval og Vé som mulmer
@@ -939,11 +1119,19 @@ Jeg er et Smil ved hvert et udslidt
       Hjertes Segnen -.
 Jeg er et Solstreif over
       Verdenssarkofagen -.
+</poetry>
+</body>
+</text>
 
-T:Ungdom
-F:Ingen skal spørge forgæves, om vi er det Unge
-SIDE:44-45
-
+<text id="boennelycke2022082523">
+<head>
+    <title>Ungdom</title>
+    <firstline>Ingen skal spørge forgæves, om vi er det Unge</firstline>
+    <source pages="44-45"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Ingen skal spørge forgæves, om vi er det Unge.
 Ingen skal tvivle paa os og paa Hjerternes Glød.
 Vid, vi har Klokker og klingende Malm i vor Tunge,
@@ -978,12 +1166,20 @@ Ungdom og Foraar, Fanfarernes skingre Musik -.
         Hold for Jert Øre:
         Gem Jer og stæng Jeres Døre -!
 Thi der er Guder og Ungdom paa Torv og paa Gade.
-Hører I Raabene? Blegner, fordi de er _glade?_
+Hører I Raabene? Blegner, fordi de er <i>glade?</i>
+</poetry>
+</body>
+</text>
 
-T:Grønt
-F:Jeg skal male Marker, Løv og Enge
-SIDE:46-47
-
+<text id="boennelycke2022082524">
+<head>
+    <title>Grønt</title>
+    <firstline>Jeg skal male Marker, Løv og Enge</firstline>
+    <source pages="46-47"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
     Jeg skal male Marker, Løv og Enge,
     Foraar, saa du daaner ungt og sødt.
     Føl og Trær og Raab af glade Drenge -
@@ -1015,14 +1211,22 @@ Du skal drikke Foraar til du segner glad og mæt.
     Jeg skal male Morgner, Dugg og Væde,
     Gryets Himmel, Grønheden ved Dag.
     Karskhed skal dit Væsen sig iklæde.
-    _Leve_ blot, skal være Livets Sag -.
+    <i>Leve</i> blot, skal være Livets Sag -.
     Jeg skal male Lyst og Appetit.
 Jeg skal bruge kraftig Kromoxyd til Kolorit.
+</poetry>
+</body>
+</text>
 
-T:Gaden
-F:Sporvogn, der brummer. Klokker der kimer og slaar
-SIDE:48-50
-
+<text id="boennelycke2022082525">
+<head>
+    <title>Gaden</title>
+    <firstline>Sporvogn, der brummer. Klokker der kimer og slaar</firstline>
+    <source pages="48-50"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Sporvogn, der brummer. Klokker der kimer og slaar.
 O Travle Butikker, hvor Dørene knalder og gaar.
 Ruslædersstøvler i Vindver og Laksko i Spejle -.
@@ -1078,13 +1282,20 @@ som i mit Hjerte har samlet sig, og i mit Mæle . . .
 Folk og Butikker, Markiser, og Fodtrin paa Fliser -.
 Malstrømmen, Menneskelivet, der myldrer og stimer.
 Sporvogn, der brummer, og Klokker, der klinger og kimer.
+</poetry>
+</body>
+</text>
 
-
-T:Drachmann-Statuen
-F:Fandt vi da lidt i den Lyre, som dybt i hans Hjerte
-SIDE:51-52
-N:drachmann
-
+<text id="boennelycke2022082526">
+<head>
+    <title>Drachmann-Statuen</title>
+    <firstline>Fandt vi da lidt i den Lyre, som dybt i hans Hjerte</firstline>
+    <source pages="51-52"/>
+    <keywords>drachmann</keywords>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Fandt vi da lidt i den Lyre, som dybt i hans Hjerte
 tvang sine Strenge til Lovsang, at de skulde spille
 festligt for Livet, til Lyren for stedse blev stille . . .
@@ -1129,12 +1340,19 @@ staar han og gyder os Harmen og Arven i Sindet . .
             Plads, hvor en Sanger skal staa.
 Ikke som Skilt for Kaféen og netop ved Døren
 som en Reklame til Ære for Restauratøren!
+</poetry>
+</body>
+</text>
 
-
-T:Side
-F:Nu trækker Støvlen Vand igen
-SIDE:53-54
-
+<text id="boennelycke2022082527">
+<head>
+    <title>Side</title>
+    <firstline>Nu trækker Støvlen Vand igen</firstline>
+    <source pages="53-54"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Nu trækker Støvlen Vand igen,
 for Vaarens Regn er kommen -,
 i alle Gader skinner Graad og Væde.
@@ -1162,11 +1380,19 @@ ved Hjælp af Logarithmer og en Lup -;
 men saligt er det Hjerte,
 hvoraf Sangens Sødme øses -,
 han gør i dette Kor det sande Kup!
+</poetry>
+</body>
+</text>
 
-T:Gadehjørnet
-F:Du kære Blæst, som synger i dit Bølgeslag
-SIDE:55
-
+<text id="boennelycke2022082528">
+<head>
+    <title>Gadehjørnet</title>
+    <firstline>Du kære Blæst, som synger i dit Bølgeslag</firstline>
+    <source pages="55"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Du kære Blæst, som synger i dit Bølgeslag
 og bærer Lyde af en Travlhed til mit Øre,
 sig, kan jeg knæle hér og takke denne Dag,
@@ -1181,11 +1407,19 @@ Du stærke Blæst, som ejer en Avisdrengs Stemme,
 en Agitator, der forkynder Døgnets Sag,
 sig er det Hjemløshed, at jeg har hjemme
 i Gadens Midte, i den travle Dag - -?
+</poetry>
+</body>
+</text>
 
-T:Reduction
-F:O, blev jeg blændet af min egen Glædes Blus
-SIDE:56-57
-
+<text id="boennelycke2022082529">
+<head>
+    <title>Reduction</title>
+    <firstline>O, blev jeg blændet af min egen Glædes Blus</firstline>
+    <source pages="56-57"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 O, blev jeg blændet af min egen Glædes Blus,
 hver Dag jeg greb min Pen og red min Pegasus
 mod Himlens Bjerge, Skyerne, mod Solens Ild,
@@ -1213,12 +1447,22 @@ Men hvad jeg klarest ser af alt, hvad jeg har sét,
 er en forarmet, trang Realitet . . .
     Gid denne bitre Viden maa slaa Rod
     og rinde som en Kilde i mit Blod . . .
+</poetry>
+</body>
+</text>
 
-T:Eigil Petersen
-F:Der laa en Mængde Nætter i hans Aasyns Mørke
-SIDE:58
-NOTE:Eigil Petersen (1875-1917), bladtegner.
-
+<text id="boennelycke2022082530">
+<head>
+    <title>Eigil Petersen</title>
+    <firstline>Der laa en Mængde Nætter i hans Aasyns Mørke</firstline>
+    <notes>
+        <note>Eigil Petersen (1875-1917), bladtegner.</note>
+    </notes>
+    <source pages="58"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Der laa en Mængde Nætter i hans Aasyns Mørke,
 et Stempel af den samme Sorg, som gaar igen -,
 Den ulmed i hans Blik med større, haabløs Styrke,
@@ -1238,11 +1482,19 @@ Men nu er al den bitre Vildskab blevet Minder,
 og Arbejdsbord med Rids og Streger staar forladt.
 Mens Skyggerne er veget af hans hvide Kinder,
 blev Nætterne i Blikket til den store Nat.
+</poetry>
+</body>
+</text>
 
-T:Blomsterhandlerens Vindu
-F:Tak, du Blomsterhandler for din Løvbutik
-SIDE:59-60
-
+<text id="boennelycke2022082531">
+<head>
+    <title>Blomsterhandlerens Vindu</title>
+    <firstline>Tak, du Blomsterhandler for din Løvbutik</firstline>
+    <source pages="59-60"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Tak, du Blomsterhandler for din Løvbutik,
 for den Kubisme i din Bods Amfiteater,
 hvor blaa og hvide Liljer kalder paa mit Blik,
@@ -1277,11 +1529,19 @@ Tak, I Nelliker og blaa Violbuketter,
 du Foraar bag en Blomsterhandlers Rude.
 Jeg vidner ved din Farverigdom og beretter,
 at her er Sol og Fuglesang herude.
+</poetry>
+</body>
+</text>
 
-T:Efter Regnen
-F:En usét Sanger fløjter bag en Haves Hegn
-SIDE:61
-
+<text id="boennelycke2022082532">
+<head>
+    <title>Efter Regnen</title>
+    <firstline>En usét Sanger fløjter bag en Haves Hegn</firstline>
+    <source pages="61"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 En usét Sanger fløjter bag en Haves Hegn
 og fylder Luften med sin dybe Melodi.
 Sé over Haven hænger Draaberne af Dagens Regn
@@ -1301,12 +1561,19 @@ O, alle Duftene, som genopstaaede henflyder
 i sød Forening i det nye, sarte Vejr,
 er jo udaandet efter Regnen og betyder,
 at Dagens Klarhed straaler af et Taareskær . . .
+</poetry>
+</body>
+</text>
 
-
-T:Solen og Gaden
-F:Jeg drak en Dram af Solen
-SIDE:62-63
-
+<text id="boennelycke2022082533">
+<head>
+    <title>Solen og Gaden</title>
+    <firstline>Jeg drak en Dram af Solen</firstline>
+    <source pages="62-63"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Jeg drak en Dram af Solen,
 hvis Guld laa hvidt i Gaden
 som Sommer over Staden -.
@@ -1336,11 +1603,19 @@ en saadan Glans og gylden Ild,
 der tryller og forhekser
 en gammel, graa Facade,
 en fattig, fattig Gade . . .
+</poetry>
+</body>
+</text>
 
-T:Morgenhilsen
-F:Godmorgen, du Sol, som gaar gylden og glad
-SIDE:64-65
-
+<text id="boennelycke2022082534">
+<head>
+    <title>Morgenhilsen</title>
+    <firstline>Godmorgen, du Sol, som gaar gylden og glad</firstline>
+    <source pages="64-65"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Godmorgen, du Sol, som gaar gylden og glad
           og mild som en mægtig Alfader
 op over en By, hvor du gyder din Lyst
@@ -1376,12 +1651,19 @@ Jeg hilser et Solstreif, en spillende Ild,
           hin lydløse Solmelodi -,
 Jeg staar dog i Larmen og hæver min Røst,
           selv som en Disharmoni.
+</poetry>
+</body>
+</text>
 
-
-T:Længsel
-F:Som af Djævle, som af Djævle
-SIDE:66
-
+<text id="boennelycke2022082535">
+<head>
+    <title>Længsel</title>
+    <firstline>Som af Djævle, som af Djævle</firstline>
+    <source pages="66"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Som af Djævle, som af Djævle
                 er min arme Sjæl besat.
 O, de leger i mit Indre,
@@ -1395,13 +1677,20 @@ Jeg er midt i dybe Sorger
                 baade kummerfuld og kaad --.
 Jeg er Sæden af en Lykke,
                 som i Smerteskrig blev saaed . .
+</poetry>
+</body>
+</text>
 
-
-T:Attituden
-F:De kongelige Attituders Maskerade
-SIDE:67-68
-
-De kongelige Attituders Maskerade, 
+<text id="boennelycke2022082536">
+<head>
+    <title>Attituden</title>
+    <firstline>De kongelige Attituders Maskerade</firstline>
+    <source pages="67-68"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+De kongelige Attituders Maskerade,
 de stive og formelle Skikke har jeg lært at hade.
 Den Høflighed, der ligger i den teatralske Falbelade.
 
@@ -1425,15 +1714,22 @@ Jeg møder mange fine Folk med fine Hatte,
 højtidelige Aasyn, stive, sjælsforladte -.
 O, det er Mennesker. Det er saa svært at fatte.
 
-Den Maade, hvorpaa =Dannelsen= blir ignoreret,
+Den Maade, hvorpaa <w>Dannelsen</w> blir ignoreret,
 har gjort, at jeg saa tidt har følt mig dybt krepéret,
 at jeg den ofte henrykt selv har negligéret - -.
+</poetry>
+</body>
+</text>
 
-
-T:Mindedigt over Glæden
-F:Der blev ingen Kranse sendt, ingen Blomster lagt paa Baaren
-SIDE:69-70
-
+<text id="boennelycke2022082537">
+<head>
+    <title>Mindedigt over Glæden</title>
+    <firstline>Der blev ingen Kranse sendt, ingen Blomster lagt paa Baaren</firstline>
+    <source pages="69-70"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Der blev ingen Kranse sendt, ingen Blomster lagt paa Baaren,
 skønt der voksed Vintergækker, og vi nærmede os Vaaren,
 skønt den gule Krokus blomstred, og Violens spæde Bloster
@@ -1460,13 +1756,19 @@ Men den findes ingen Steder. Den er død i alles Hjerter.
 Den har efterladt en gnaven Kapital af dumpe Smerter.
 Og de Aasyn, som jeg møder, bærer alle Præg af Pine.
 Hele Verden gaar forbi mig med en vildt bedrøvet Mine!
+</poetry>
+</body>
+</text>
 
-
-
-T:Ilden
-F:Jeg er Ilden, Brahma, Urkrafts Søn
-SIDE:71-72
-
+<text id="boennelycke2022082538">
+<head>
+    <title>Ilden</title>
+    <firstline>Jeg er Ilden, Brahma, Urkrafts Søn</firstline>
+    <source pages="71-72"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Jeg er Ilden, Brahma, Urkrafts Søn,
 han hvis Hjerte elsker vildest, naar det hader
 han der stundom blander Eder i sin Bøn,
@@ -1484,11 +1786,19 @@ Derfor brænder jeg af Hede, Trods og Had.
 Derfor gløder jeg af denne dybe Harme.
 Thi i denne Trodsighed er Satan glad -.
 Og i Ilden brænder jo Guds Varme . . .
+</poetry>
+</body>
+</text>
 
-T:Sporvognsturen
-F:Linje tre til Vesterbro
-SIDE:72-73
-
+<text id="boennelycke2022082539">
+<head>
+    <title>Sporvognsturen</title>
+    <firstline>Linje tre til Vesterbro</firstline>
+    <source pages="72-73"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Linje tre til Vesterbro.
 Vi var to, der lo og lo.
 Ovenpaa en Linje tre
@@ -1608,11 +1918,19 @@ tænkte Manden, da vi gled
 leende af Salighed,
 glade ad Alhambravej -
 »havde det dog været mig -.
+</poetry>
+</body>
+</text>
 
-T:Øjnene
-F:Er det dig, der smiler i dit Blik?
-SIDE:77-78
-
+<text id="boennelycke2022082540">
+<head>
+    <title>Øjnene</title>
+    <firstline>Er det dig, der smiler i dit Blik?</firstline>
+    <source pages="77-78"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Er det dig, der smiler i dit Blik?
 Er det den, hvis glade Sjæl jeg kender?
 Eller martrer mig Pupillernes Mystik,
@@ -1657,6 +1975,11 @@ som kun skal vandres af hengangne Sjæle.
 
     Dog tilbage til dit Øjes Blaa
     jeg vender og gensér en jordisk Pige,
-    genkender Kinden, hvorom Smilet laa 
+    genkender Kinden, hvorom Smilet laa
     og fatter, hvad jeg hører Stemmen sige.
+</poetry>
+</body>
+</text>
 
+</workbody>
+</kalliopework>
