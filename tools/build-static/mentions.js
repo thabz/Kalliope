@@ -36,8 +36,14 @@ const build_person_or_keyword_refs = (collected) => {
   const regexps = [
     { regexp: /xref poem="(?<poem>[^"]*)"/g, type: 'text' },
     { regexp: /a poem="(?<poem>[^"]*)"/g, type: 'text' },
-    { regexp: /xref type="(?<type>[^"]*)" poem="(?<poem>[^"]*)"/g, type: 'text' },
-    { regexp: /xref poem="(?<poem>[^"]*)" type="(?<type>[^"]*)"/g, type: 'text' },
+    {
+      regexp: /xref type="(?<type>[^"]*)" poem="(?<poem>[^"]*)"/g,
+      type: 'text',
+    },
+    {
+      regexp: /xref poem="(?<poem>[^"]*)" type="(?<type>[^"]*)"/g,
+      type: 'text',
+    },
     { regexp: /a type="(?<type>[^"]*)" poem="(?<poem>[^"]*)"/g, type: 'text' },
     { regexp: /xref bibel="(?<poem>[^",]*)/g, type: 'text' },
     { regexp: /a ()person="([^"]*)"/g, type: 'person' },
@@ -110,8 +116,8 @@ const build_person_or_keyword_refs = (collected) => {
               while (
                 (match = rule.regexp.exec(safeGetOuterXML(note))) != null
               ) {
-                const refType = match.groups.type || 'mention';
                 if (rule.type === 'text') {
+                  const refType = match.groups.type || 'mention';
                   const toPoemId = match.groups.poem.replace(/,.*$/, '');
                   const toText = collected.texts.get(toPoemId);
                   if (toText != null) {
