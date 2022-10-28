@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="wied" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Gustav</firstname>
+    <lastname>Wied</lastname>
+    <fullname>Gustav Johannes Wied</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1858-03-06</date>
+      <place>Nakskov</place>
+    </born>
+    <dead>
+      <date>1914-10-24</date>
+      <place>Roskilde</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>
