@@ -5,14 +5,13 @@
     <title>Poplerne</title>
     <year>1910</year>
     <notes>
-        <note>Indholdsfortegnelsen følges af mottoet ,,- igennem Hjertet gaar som Sang / din Stemmes mørke Klange -''.</note>
+        <note>Indholdsfortegnelsen følges af mottoet ,,- igennem Hjertet gaar som Sang / din Stemmes mørke Klange -'' fra</note>
         <note>Teksten følger Hans Ahlmann: <i>Poplerne</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910</note>
     </notes>
     <pictures>
         <picture src="1910-p1.jpg">Titelbladet til <i>Poplerne</i> (1910) lyder ,,Hans Ahlmann / Poplerne // København og Kristiania / Gyldendalske Boghandel / Nordisk Forlag / 1910''.</picture>
     </pictures>
-    <!-- TODO: Hvor stammer ovenstående motto fra -->
-    <source facsimile="11530803848A_color.pdf" facsimile-pages-num="103" facsimile-pages-offset="10">Hans Ahlmann: <i>Poplerne</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910</source>
+    <source facsimile="11530803848A_color.pdf" facsimile-pages-num="103" facsimile-pages-offset="14">Hans Ahlmann: <i>Poplerne</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910</source>
 </workhead>
 <workbody>
 
@@ -22,10 +21,13 @@
 </head>
 <content>
 
-<text id="ahlmann2022061301">
+<text id="ahlmann2023071501">
 <head>
     <title>Nat i April</title>
     <firstline>Det har regnet i Nat</firstline>
+    <notes>
+        <note type="credits">Bidrag fra Peder Henriksen.</note>
+    </notes>
     <source pages="3-4"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -76,10 +78,13 @@ Det regned velsigned i Nat.
 </body>
 </text>
 
-<text id="ahlmann2022061302">
+<text id="ahlmann2023071502">
 <head>
     <title>Tulipaner</title>
     <firstline>Med de gule Bægre hældet</firstline>
+    <notes>
+        <note type="credits">Bidrag fra Peder Henriksen.</note>
+    </notes>
     <source pages="5"/>
     <keywords>holstein</keywords>
     <quality>korrektur1,kilde,side</quality>
@@ -111,10 +116,13 @@ og bedaaret mig og Stuen ganske,
 </body>
 </text>
 
-<text id="ahlmann2022061303">
+<text id="ahlmann2023071503">
 <head>
     <title>Aprilaften</title>
     <firstline>En slidfuld Dag - og Aften nu</firstline>
+    <notes>
+        <note type="credits">Bidrag fra Peder Henriksen.</note>
+    </notes>
     <source pages="6-7"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -151,12 +159,13 @@ det maatte gerne ringe nu
 </body>
 </text>
 
-<text id="ahlmann2022061304">
+<text id="ahlmann2023071504">
 <head>
     <title>Frederiksværk</title>
     <firstline>Det var en Foraarsaften, bleg og stor</firstline>
     <notes>
         <note>Der henvises til »Bajadsens Sang« fra Leoncavallos opera <i>Bajadser</i> (it. orig. <i>I Pagliacci</i>) fra 1892.</note>
+        <note type="credits">Bidrag fra Peder Henriksen.</note>
     </notes>
     <source pages="8-11"/>
     <keywords>berntsen</keywords>
@@ -262,7 +271,7 @@ og af den store Sommer tungt forgyldes.
 </body>
 </text>
 
-<text id="ahlmann2022061305">
+<text id="ahlmann2023071505">
 <head>
     <title>Til en Fløjtespiller i Exil</title>
     <firstline>Jeg gik hjem igennem Byen, da Lygterne blev gule</firstline>
@@ -341,10 +350,13 @@ aa, Livet synger endnu sin lattermilde Vise.
 </body>
 </text>
 
-<text id="ahlmann2022061306">
+<text id="ahlmann2023071506">
 <head>
     <title>Foraar</title>
     <firstline>Det er en forunderlig Vaar i Aar</firstline>
+    <notes>
+        <note type="credits">Bidrag fra Peder Henriksen.</note>
+    </notes>
     <source pages="15"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -368,7 +380,7 @@ og lægge mig træf ved min Elskedes Dør.
 </body>
 </text>
 
-<text id="ahlmann2022061307">
+<text id="ahlmann2023071507">
 <head>
     <title>Foraar i Byen</title>
     <firstline>Det var, mens vi stod der i Foraarets Vind</firstline>
@@ -412,7 +424,7 @@ du Menneske, Menneske tæt i min Favn.
 </body>
 </text>
 
-<text id="ahlmann2022061308">
+<text id="ahlmann2023071508">
 <head>
     <title>Susanna</title>
     <firstline>Hvorfor smiler du, Susanna</firstline>
@@ -469,19 +481,16 @@ at jeg elsker dig, Susanna.
 </body>
 </text>
 
-<text id="ahlmann2022061309">
+<text id="ahlmann2023071509">
 <head>
     <title>Rubens og Botticelli</title>
     <firstline>Vi, som midt i Renæssancens</firstline>
     <source pages="20-23"/>
-    <!-- TODO: Fiks opsætningen af citatet -->
     <!-- TODO: Hvor stammer citatet fra? -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-<poetry>
-QUOTE
-
+<quote margin-left="30%" font-size="small">
 Man faar visse Breve sendte,
     og man aabner dem i Iver,
 og man læser og fortaber
@@ -496,9 +505,9 @@ og mens Skumringsløvet suser,
     Blad ved Blad i dunkel Klynge,
 voksende i lydløs Fylde,
     hører jeg mit Hjerte synge:
+</quote>
 
-ENDQUOTE
-
+<poetry>
 Vi, som midt i Renæssancens
     dystre Spor af Macchiavelli,
 mens det jubled i vort Hjerte
@@ -587,7 +596,7 @@ denne Aften vil vi knæle
 </body>
 </text>
 
-<text id="ahlmann2022061310">
+<text id="ahlmann2023071510">
 <head>
     <title>Foraarslandskab</title>
     <firstline>Skærtorsdags Sol gik hastigt ned</firstline>
@@ -627,7 +636,7 @@ Men imod Syd et splintret Blink,
 </body>
 </text>
 
-<text id="ahlmann2022061311">
+<text id="ahlmann2023071511">
 <head>
     <title>Harlekin til Mona Mia</title>
     <firstline>O Foraar og Elskov - man smiler og aner det næppe</firstline>
@@ -713,10 +722,13 @@ God Nat, Mona Mia, du skønneste Tegn i mit Tæppe.
 </head>
 <content>
 
-<text id="ahlmann2022061312">
+<text id="ahlmann2023071512">
 <head>
     <title>Hildesheim</title>
     <firstline>I Hildesheim, da Natten kom</firstline>
+    <notes>
+        <note type="credits">Bidrag fra Peder Henriksen.</note>
+    </notes>
     <source pages="33-34"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -765,7 +777,7 @@ Verden sang som Fontænerne.
 </body>
 </text>
 
-<text id="ahlmann2022061313">
+<text id="ahlmann2023071513">
 <head>
     <title>Aften</title>
     <firstline>Det var som en dæmpet Berceuse</firstline>
@@ -802,7 +814,7 @@ og sang om mit lyttende Legem,
 </body>
 </text>
 
-<text id="ahlmann2022061314">
+<text id="ahlmann2023071514">
 <head>
     <title>Hilsen</title>
     <firstline>Nu kommer Natten stille, berusende og stor</firstline>
@@ -829,7 +841,7 @@ selv sidder jeg blandt Tage og nikker ad din Kant
 </body>
 </text>
 
-<text id="ahlmann2022061315">
+<text id="ahlmann2023071515">
 <head>
     <title>Mørke</title>
     <firstline>Det stille Mørke til min Stue gaar</firstline>
@@ -851,7 +863,7 @@ tre Cellotoner af min Elskovs Sang,
 </body>
 </text>
 
-<text id="ahlmann2022061316">
+<text id="ahlmann2023071516">
 <head>
     <title>Volnay</title>
     <firstline>Min Gud, hvor du var smuk i Gaar</firstline>
@@ -898,7 +910,7 @@ og hører deres fjerne Spil, -
 </body>
 </text>
 
-<text id="ahlmann2022061317">
+<text id="ahlmann2023071517">
 <head>
     <title>Eros</title>
     <firstline>Hør min Hymne, hør mig, Eros</firstline>
@@ -1005,7 +1017,7 @@ Flammebaal fra Urtidsdybder.
 </body>
 </text>
 
-<text id="ahlmann2022061318">
+<text id="ahlmann2023071518">
 <head>
     <title>Popler</title>
     <firstline>Det blir en spinkel og vemodig Nat</firstline>
@@ -1066,7 +1078,7 @@ gaar Poppellyden susende igen.
 </head>
 <content>
 
-<text id="ahlmann2022061319">
+<text id="ahlmann2023071519">
 <head>
     <title>Sang</title>
     <firstline>Det er det samme Mørke</firstline>
@@ -1126,7 +1138,7 @@ har just et Foraar vakt.
 </body>
 </text>
 
-<text id="ahlmann2022061320">
+<text id="ahlmann2023071520">
 <head>
     <title>Oktober</title>
     <firstline>Der kom lange, lange Flager</firstline>
@@ -1219,7 +1231,7 @@ skal du tvinge med dit Væsen
 </body>
 </text>
 
-<text id="ahlmann2022061321">
+<text id="ahlmann2023071521">
 <head>
     <title>I dør -</title>
     <firstline>I dør, I dør, min Ungdoms Flok</firstline>
@@ -1246,7 +1258,7 @@ og bøjer mig imod jer dybt,
 </body>
 </text>
 
-<text id="ahlmann2022061322">
+<text id="ahlmann2023071522">
 <head>
     <title>Du var et Træ -</title>
     <firstline>Du var et Træ - i Sol og Slud</firstline>
@@ -1307,7 +1319,7 @@ en Skygge af dit Ungdomssind.
 </body>
 </text>
 
-<text id="ahlmann2022061323">
+<text id="ahlmann2023071523">
 <head>
     <title>Død</title>
     <firstline>En Død er kun en Død</firstline>
@@ -1344,7 +1356,7 @@ min Ungdom gik, - - dog nej -
 </body>
 </text>
 
-<text id="ahlmann2022061324">
+<text id="ahlmann2023071524">
 <head>
     <title>Marinus Schneider</title>
     <firstline>Der ligger En og dør i Nat</firstline>
@@ -1407,7 +1419,7 @@ henover den knækkede Stængel
 </body>
 </text>
 
-<text id="ahlmann2022061325">
+<text id="ahlmann2023071525">
 <head>
     <title>O Hjertebrand</title>
     <firstline>Der var en Tid, - bag Trods og Harm</firstline>
@@ -1459,7 +1471,7 @@ som uden Medynk finder Vej
 </body>
 </text>
 
-<text id="ahlmann2022061326">
+<text id="ahlmann2023071526">
 <head>
     <title>Ensomhed</title>
     <firstline>Kan du slet ikke lyse</firstline>
@@ -1506,7 +1518,7 @@ som Øjne, der gerne vil sove.
 </body>
 </text>
 
-<text id="ahlmann2022061327">
+<text id="ahlmann2023071527">
 <head>
     <title>Af en Kantate til Vældegaard</title>
     <firstline>Se, det er Tiden, da Aksene falder</firstline>
@@ -1689,7 +1701,7 @@ kun vi har fuldendet Løbet.
 </body>
 </text>
 
-<text id="ahlmann2022061328">
+<text id="ahlmann2023071528">
 <head>
     <title>Holger Drachmann</title>
     <firstline>En Fugl, en vældig, med Vingefang</firstline>
@@ -1825,13 +1837,15 @@ bagved den vældige, hærgede Fugl.
 </body>
 </text>
 
-<text id="ahlmann2022061329">
+<text id="ahlmann2023071529">
 <head>
     <title>Carlyle</title>
     <subtitle>(Til Whistlers Portræt af Carlyle.)</subtitle>
     <firstline>Carlyle, du strenge Mester, saa er jeg atter her</firstline>
     <source pages="78-79"/>
-    <!-- TODO: Indsæt billedet https://en.wikipedia.org/wiki/Arrangement_in_Grey_and_Black,_No._2:_Portrait_of_Thomas_Carlyle -->
+    <pictures>
+        <picture src="ahlmann2023071529-p1.jpg">James McNeill Whistler: <i>Arrangement in Grey and Black, No. 2: Portrait of Thomas Carlyle</i>, olie på lærred, 171x143,5 cm, 1872-73, Kelvingrove Art Gallery and Museum, Glasgow.</picture>
+    </pictures>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1871,7 +1885,7 @@ besejret og befriet jeg hviler ved din Fod.
 </body>
 </text>
 
-<text id="ahlmann2022061330">
+<text id="ahlmann2023071530">
 <head>
     <title>Høsten</title>
     <firstline>Solen er oppe, det blaaner foroven</firstline>
