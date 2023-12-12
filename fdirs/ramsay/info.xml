@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="ramsay" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Allan</firstname>
+    <lastname>Ramsay</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1686-10-15</date>
+      <place>Leadhills, Lanarkshire, Scotland</place>
+    </born>
+    <dead>
+      <date>1758-01-07</date>
+      <place>Edinburgh</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>
