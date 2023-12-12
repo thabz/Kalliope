@@ -57,7 +57,7 @@ const Bladrer = (props: BladrerProps) => {
   if (target == null) {
     return null;
   }
-  const onClick = e => {
+  const onClick = (e) => {
     const url = Links.textURL(lang, target.id);
     Router.pushRoute(url);
     window.scrollTo(0, 0);
@@ -233,7 +233,7 @@ const TextPage = (props: TextComponentProps) => {
   }
 
   const notes: Array<Node> = text.notes
-    .filter(note => note.type !== 'unknown-original')
+    .filter((note) => note.type !== 'unknown-original')
     .map((note, i) => {
       return (
         <Note key={'note' + i} type={note.type}>
@@ -247,7 +247,8 @@ const TextPage = (props: TextComponentProps) => {
 
   text.notes
     .filter(
-      note => note.type === 'unknown-original' && note.unknownOriginalBy != null
+      (note) =>
+        note.type === 'unknown-original' && note.unknownOriginalBy != null
     )
     .map((note, i) => {
       const poet = note.unknownOriginalBy;
@@ -290,8 +291,14 @@ const TextPage = (props: TextComponentProps) => {
       sourceText += 'p. ';
     }
     sourceText += source.pages + '.';
+
+    let className = null;
+    if (text.source.facsimilePages != null) {
+      // Vi har en facsimile, hvorunder vi viser sourceText, så denne note skal kun vises på print.
+      className = 'print-only';
+    }
     notes.push(
-      <Note className="print-only" key="source" type="source">
+      <Note className={className} key="source" type="source">
         <TextContent
           contentHtml={[[sourceText, { html: true }]]}
           contentLang="da"
@@ -315,6 +322,7 @@ const TextPage = (props: TextComponentProps) => {
       />
     );
   });
+
   if (text.source != null && text.source.facsimilePages != null) {
     function pad(num, size) {
       var s = num + '';
@@ -366,7 +374,7 @@ const TextPage = (props: TextComponentProps) => {
 
   let renderedKeywords = null;
   if (text.keywords.length > 0) {
-    const list = text.keywords.map(k => {
+    const list = text.keywords.map((k) => {
       return <KeywordLink keyword={k} lang={lang} key={k.id} />;
     });
     renderedKeywords = <div style={{ marginTop: '30px' }}>{list}</div>;
@@ -501,18 +509,18 @@ const TextPage = (props: TextComponentProps) => {
     ogDescription = OpenGraph.trimmedDescription(
       // Merge blocks
       text.blocks
-        .filter(b => b.type !== 'quote')
-        .map(b => b.lines)
+        .filter((b) => b.type !== 'quote')
+        .map((b) => b.lines)
         .reduce((result, lines) => {
           return result.concat(lines);
         }, [])
     );
 
     // Titlen skal indentes hvis første ikke-quote block indeholder numre.
-    const firstNoneQuoteBlock = text.blocks.find(b => b.type !== 'quote');
+    const firstNoneQuoteBlock = text.blocks.find((b) => b.type !== 'quote');
     shouldIndentTitle =
       firstNoneQuoteBlock != null &&
-      firstNoneQuoteBlock.lines.find(l => {
+      firstNoneQuoteBlock.lines.find((l) => {
         const lineOptions = l.length > 1 ? l[1] : {};
         return lineOptions.displayNum != null || lineOptions.margin != null;
       }) != null;
@@ -530,7 +538,8 @@ const TextPage = (props: TextComponentProps) => {
       pageTitle={<PoetName poet={poet} includePeriod />}
       pageSubtitle={_('Værker', lang)}
       menuItems={poetMenu(poet)}
-      selectedMenuItem="works">
+      selectedMenuItem="works"
+    >
       <FootnoteContainer key={text.id}>
         <SidebarSplit sidebar={sidebar}>
           <div>
@@ -541,7 +550,8 @@ const TextPage = (props: TextComponentProps) => {
                 className="text-content"
                 style={{
                   marginLeft: shouldIndentTitle ? '1.5em' : 0,
-                }}>
+                }}
+              >
                 <TextHeading text={text} />
               </div>
               <div>{body}</div>
