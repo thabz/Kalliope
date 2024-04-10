@@ -1,15 +1,29 @@
-KILDE:Ludvig Holstein: _Digte_, 1903, Det Nordiske Forlag, Kbh.
-DIGTER:holstein
-FACSIMILE:115308065814-color.pdf
-FACSIMILE-SIDER:101
-TITELBLAD:Ludvig Holstein / Digte // Det Nordiske Forlag / (Ernst Bojesen) // København 1903
-NOTE:I denne ny Udgave af »Digtet fra 1895 er enkelte Digte udeladt og nogle faa, som ikke forefindes i den første Udgave, men som naturligt hører til her, tilføjet.
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
+<kalliopework id="1903" author="holstein" status="complete" type="poetry">
+<workhead>
+    <title>Digte</title>
+    <year>1903</year>
+    <notes>
+        <note>I denne ny Udgave af »Digtet fra 1895 er enkelte Digte udeladt og nogle faa, som ikke forefindes i den første Udgave, men som naturligt hører til her, tilføjet.</note>
+        <note>Teksten følger Ludvig Holstein: <i>Digte</i>, 1903, Det Nordiske Forlag, Kbh.</note>
+    </notes>
+    <pictures>
+        <picture src="1903-p1.jpg">Titelbladet til <i>Digte</i> (1903) lyder ,,Ludvig Holstein / Digte // Det Nordiske Forlag / (Ernst Bojesen) // København 1903''.</picture>
+    </pictures>
+    <source facsimile="115308065814-color.pdf" facsimile-pages-num="101" facsimile-pages-offset="5">Ludvig Holstein: <i>Digte</i>, 1903, Det Nordiske Forlag, Kbh.</source>
+</workhead>
+<workbody>
 
-T:Æbleblomst
-F:Du fine, hvide Æbleblomst!
-SIDE:11-12
-VARIANT:holstein2017101501
-
+<text id="holstein2024041001" variant="holstein2017101501">
+<head>
+    <title>Æbleblomst</title>
+    <firstline>Du fine, hvide Æbleblomst!</firstline>
+    <source pages="11-12"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Du fine, hvide Æbleblomst!
 Hvem gav dig dette Lykkeskær?
 Ak, jeg er Solens Hjertenskær!
@@ -29,12 +43,19 @@ saa hvisker jeg: Jeg elsker dig!
 Og lukker mig og bøjer mig
 og drysser over Græsset ud
 mit hvide Flor, mit Bryllupsskrud - -
+</poetry>
+</body>
+</text>
 
-T:Vil I kende min Veninde
-F:Vil I kende min Veninde, hende, som jeg har kær?
-SIDE:13-15
-VARIANT:holstein2017110102
-
+<text id="holstein2024041002" variant="holstein2017110102">
+<head>
+    <title>Vil I kende min Veninde</title>
+    <firstline>Vil I kende min Veninde, hende, som jeg har kær?</firstline>
+    <source pages="13-15"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Vil I kende min Veninde, hende, som jeg har kær?
 Hun har store, nervøse Øjne, hun ligner en Raa, som flygter.
 Den spejder til alle Sider og lytter, om Faren er nær -
@@ -72,12 +93,19 @@ Hav Medlidenhed med hende! Vogt paa min stakkels Veninde!
 Jeg vil sige jer disse Tegn, at I skal kende hende derpaa:
 hun har store, nervøse Øjne, hun ligner en skræmmet Raa,
 hun er altid bange og søger efter én, hun ikke kan finde.
+</poetry>
+</body>
+</text>
 
-T:Det er Lærkernes Tid
-F:Det er Lærkernes Tid
-SIDE:16-17
-VARIANT:holstein2017101502
-
+<text id="holstein2024041003" variant="holstein2017101502">
+<head>
+    <title>Det er Lærkernes Tid</title>
+    <firstline>Det er Lærkernes Tid</firstline>
+    <source pages="16-17"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Det er Lærkernes Tid.
 Ad usynlige Gange
 piler deres Sange
@@ -105,12 +133,19 @@ brist som et Under
 Drøm i hvert Sind -
 det er Bristningens Tid
 og Forløsningens Tid. -
+</poetry>
+</body>
+</text>
 
-T:Svanerne
-F:I Asursøen flyver de kongelige Svaner
-SIDE:18-19
-VARIANT:holstein2017110108
-
+<text id="holstein2024041004" variant="holstein2017110108">
+<head>
+    <title>Svanerne</title>
+    <firstline>I Asursøen flyver de kongelige Svaner</firstline>
+    <source pages="18-19"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 I Asursøen flyver de kongelige Svaner - -
 De stævner ud i Verden ad endeløse Baner.
 De strækker deres Halse og syngende de stiger
@@ -130,12 +165,19 @@ Nu ler I vist deroppe, I kongelige Svaner!
 Farvel, min lille Putte! Saalangt, som du ej aner,
 vi flyver over Bjærge og Sør og fjerne Skove -
 Farvel, min lille Putte! Læg du dig til at sove!
+</poetry>
+</body>
+</text>
 
-T:Veninde, luk Varandadøren op
-F:Veninde, luk Varandadøren op! Lad Solen skinne
-SIDE:20-21
-VARIANT:holstein2017110113
-
+<text id="holstein2024041005" variant="holstein2017110113">
+<head>
+    <title>Veninde, luk Varandadøren op</title>
+    <firstline>Veninde, luk Varandadøren op! Lad Solen skinne</firstline>
+    <source pages="20-21"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Veninde, luk Varandadøren op! Lad Solen skinne,
 den varme Sol, Guds Sol, den gode, milde Foraarssol!
 Aa Herregud, Veninde, kom! Her fandt jeg en Viol!
@@ -160,12 +202,19 @@ Men luk Varandadøren op, Veninde, Solen skinner.
 Dens Straaler varmer i min Sjæl, jeg blir saa glad derved.
 Jeg biir saa sært vemodig glad og hjertevarm derved
 og tænker paa min Lykkes første Kys paa dine Kinder.
+</poetry>
+</body>
+</text>
 
-T:Jeg ved det
-F:Jeg ved det: vi skal mødes! Om tidlig eller sent
-SIDE:22-23
-VARIANT:holstein2017110104
-
+<text id="holstein2024041006" variant="holstein2017110104">
+<head>
+    <title>Jeg ved det</title>
+    <firstline>Jeg ved det: vi skal mødes! Om tidlig eller sent</firstline>
+    <source pages="22-23"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Jeg ved det: vi skal mødes! Om tidlig eller sent.
 Maaske, mens endnu fyrigt de hede Attraa svulmer,
 maaske, naar svagt i Asken de sidste Gnister ulmer -
@@ -190,14 +239,19 @@ Jeg ved det, ved, jeg ved det, og dette ene blot!
 Og dette ene ene jeg beder om at glemme.
 Men naar jeg helst vil glemme, da hører jeg din Stemme:
 Kom hid! Her har du hjemme! Her glemmer du saa godt
+</poetry>
+</body>
+</text>
 
-
-T:Det er i Dag et Vejr -
-F:Det er i Dag et Vejr - et Solskinsvejr!
-ID:holstein2017101503
-SIDE:24-25
-TODO:Tjek at dette digt har fået id holstein2017101503
-
+<text id="holstein2017101503">
+<head>
+    <title>Det er i Dag et Vejr -</title>
+    <firstline>Det er i Dag et Vejr - et Solskinsvejr!</firstline>
+    <source pages="24-25"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Det er i Dag et Vejr - et Solskinsvejr!
 O, søde Vaar, saa er du atter nær!
 Nu vil jeg glemme rent, at det var Vinter,
@@ -221,13 +275,19 @@ hun bragte dem til den, hun havde kær,
 Min Ven, her kommer jeg med Hyacinther!
 Min Ven, nu glemmer vi, at det var Vinter!
 Det er i Dag et Vejr, et Solskinsvejr -!
+</poetry>
+</body>
+</text>
 
-
-T:Hilsen
-F:Den dovne Fjord, som gynger og strækker sig i Solen
-SIDE:26
-VARIANT:holstein2017110127
-
+<text id="holstein2024041008" variant="holstein2017110127">
+<head>
+    <title>Hilsen</title>
+    <firstline>Den dovne Fjord, som gynger og strækker sig i Solen</firstline>
+    <source pages="26"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Den dovne Fjord, som gynger og strækker sig i Solen.
 De smækre, hvide Terner, som dukker sig deri - -
 Farvel, du lille Damper, som piler mig forbi,
@@ -237,12 +297,19 @@ Og sig, at hendes Øjne, bedrøvede og ømme,
 forfølger mig bestandig! Og spørg dem, hvad de vil!
 Fortæl mig, om de græder, naar Skibet lægger til!
 Og sig dem, at jeg kysser dem tit i mine Drømme!
+</poetry>
+</body>
+</text>
 
-T:September
-F:I sin side Særk, hvis Farve er gennemsigtig grøn
-SIDE:27-28
-VARIANT:holstein2017110121
-
+<text id="holstein2024041009" variant="holstein2017110121">
+<head>
+    <title>September</title>
+    <firstline>I sin side Særk, hvis Farve er gennemsigtig grøn</firstline>
+    <source pages="27-28"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 I sin side Særk, hvis Farve er gennemsigtig grøn
 og som flyder uden Bælte over Brysternes Bugter,
 i sit Svangerskabs Begyndelse; dog ikke mindre skøn,
@@ -265,13 +332,20 @@ og øser med begge Hænder af den skinnende Flod.
 Hænderne bliver vaade, Kinden bliver varm og rød,
 mens hun samler de duggede Frugter og løfter dem i sit Skød
 og slipper dem af Favnen i en Kurv af flettet Vidje.
+</poetry>
+</body>
+</text>
 
-T:Martssolskin
-F:Nu er Sneen næsten færdig med at smelte
-SIDE:29-30
-VARIANT:holstein2017110120
-N:goethe
-
+<text id="holstein2024041010" variant="holstein2017110120">
+<head>
+    <title>Martssolskin</title>
+    <firstline>Nu er Sneen næsten færdig med at smelte</firstline>
+    <source pages="29-30"/>
+    <keywords>goethe</keywords>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Nu er Sneen næsten færdig med at smelte.
 I Alléen er et frygteligt Ælte.
 Se, hvor Solskinnet leger mellem Stammerne
@@ -316,12 +390,19 @@ Og jeg kysser hendes søde, unge Kinder - -
 Ja, saadan drømmer jeg, mens Foraarssolen skinner.
 Men med Solen, ak, gaar ogsaa hele Glansen
 af min Ungdom og min Rigdom bag af Dansen.
+</poetry>
+</body>
+</text>
 
-T:Kys mig paa Øjnene, Sol
-F:Kys mig paa Øjnene, Sol!
-SIDE:31-32
-VARIANT:holstein2017110105
-
+<text id="holstein2024041011" variant="holstein2017110105">
+<head>
+    <title>Kys mig paa Øjnene, Sol</title>
+    <firstline>Kys mig paa Øjnene, Sol!</firstline>
+    <source pages="31-32"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Kys mig paa Øjnene, Sol!
 Skønt de fortjener det ej.
 Under de lukkede Laag
@@ -348,12 +429,19 @@ Milde, medlidende Sol,
 tak, at du glemmer mig ej!
 Selv til den mørkeste Vraa
 finder din Kærlighed Vej.
+</poetry>
+</body>
+</text>
 
-T:Det gyldenhvide Himmellys
-F:Det gyldenhvide Himmellys. De tavse, sorte Skove
-SIDE:33
-VARIANT:holstein2017110135
-
+<text id="holstein2024041012" variant="holstein2017110135">
+<head>
+    <title>Det gyldenhvide Himmellys</title>
+    <firstline>Det gyldenhvide Himmellys. De tavse, sorte Skove</firstline>
+    <source pages="33"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Det gyldenhvide Himmellys. De tavse, sorte Skove.
 Og rundt i Havens Gange staar de stille Trær og sove.
 Og Duggen daler kølig-mild og fugter Kind og Pande -
@@ -363,12 +451,19 @@ I Aften var det godt, min Sjæl, i Fald du kunde glide
 paa blod og hastig Vingeflugt mod Lysets Hav, det hvide!
 Og svinde hen i stille Lys og gylden Fred derinde,
 og dø deri - befriet fra din Drøm og fra dit Minde!
+</poetry>
+</body>
+</text>
 
-T:Marie
-F:Aa, Gud, for en smeltende Varme, det var
-SIDE:34-35
-VARIANT:holstein2017110110
-
+<text id="holstein2024041013" variant="holstein2017110110">
+<head>
+    <title>Marie</title>
+    <firstline>Aa, Gud, for en smeltende Varme, det var</firstline>
+    <source pages="34-35"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Aa, Gud, for en smeltende Varme, det var
 i Dagene efter Sankt Hans!
 Men Natten var sval og lys - o ja!
@@ -412,12 +507,19 @@ Sig, at hvor du i Verden gaar hen,
 skal ingen tage dig fra mig!
 Aa ja! Min allerkæreste Ven!
 Du alene skal ha’ mig!
+</poetry>
+</body>
+</text>
 
-T:Aa, se dog -
-F:Aa, se dog, min Veninde, de hvide Æbletrær!
-SIDE:36-37
-VARIANT:holstein2017110133
-
+<text id="holstein2024041014" variant="holstein2017110133">
+<head>
+    <title>Aa, se dog, min Veninde</title>
+    <firstline>Aa, se dog, min Veninde, de hvide Æbletrær!</firstline>
+    <source pages="36-37"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Aa, se dog, min Veninde, de hvide Æbletrær!
 De rødmer dybt af Lykke, de skinner højt af Lykke.
 Og Bierne beruset i Blomsterblusset dykke
@@ -440,12 +542,19 @@ saa nær, saa nær til Jorden •- og som vi ej kan naa.
 Men over os der blussed det blide Blomsterskær.
 Og om os stod en Himmel saa dyb, saa blaa saa nær.
 Og min Venindes Øjne var fyldt med blanke Taarer.
+</poetry>
+</body>
+</text>
 
-T:Jeg besværger Eder, Venner
-F:Jeg besværger eder, Venner, at I elsker eders Lykke!
-SIDE:38-41
-VARIANT:holstein2017110107
-
+<text id="holstein2024041015" variant="holstein2017110107">
+<head>
+    <title>Jeg besværger Eder, Venner</title>
+    <firstline>Jeg besværger eder, Venner, at I elsker eders Lykke!</firstline>
+    <source pages="38-41"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Jeg besværger eder, Venner, at I elsker eders Lykke!
 At I vogter den med Omhu, at I bejler til dens Gunst,
 som en klog og kærlig Gartner, der forstaar til Gavns sin Kunst -
@@ -490,12 +599,19 @@ Hvorfor lyve for hverandre? Hvorfor søge at besmykke,
 naar den trætte Mine røber, hvad vi bærer paa i Løn?
 Aa, det ved vi dog, den lykkelige smiler, han er skøn!
 Luften løftes, hvor han aander! Og han lyser af sin Lykke!
+</poetry>
+</body>
+</text>
 
-T:Alle mine Honningbi’r
-F:Alle mine Honningbi’r
-SIDE:42-43
-VARIANT:holstein2017110117
-
+<text id="holstein2024041016" variant="holstein2017110117">
+<head>
+    <title>Alle mine Honningbi’r</title>
+    <firstline>Alle mine Honningbi’r</firstline>
+    <source pages="42-43"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Alle mine Honningbi’r,
 sum, sum, sum, sum
 Flyv nu over Blomstersti’r!
@@ -529,11 +645,19 @@ Se, jeg aabner Kubens Dør -
 Flyv, min Sværm, beruset, ør
 om de hvide Tjørne,
 brummende som Bjørne!
+</poetry>
+</body>
+</text>
 
-T:Erindringens Sø
-F:Træd stille, min Veninde, jeg ved, dit Hjerte græder
-SIDE:44
-
+<text id="holstein2024041017" variant="holstein2017110123">
+<head>
+    <title>Erindringens Sø</title>
+    <firstline>Træd stille, min Veninde, jeg ved, dit Hjerte græder</firstline>
+    <source pages="44"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Træd stille, min Veninde, jeg ved, dit Hjerte græder,
 naar tavse vi betræder Erindringsøens Bred.
 Dog føres vi bestandig tilbage til de Steder,
@@ -551,12 +675,19 @@ Her færdes vore døde. Og tavse Bud de skikke,
 men vi forstaar dem ikke, fra Skyggelandets Kyst.
 Veninde, lad os dvæle ved Søens Bred og drikke
 for nogle Øjeblikke dens vemodsfulde Trøst!
+</poetry>
+</body>
+</text>
 
-T:Viol
-F:Min lille Blomst! Min lille Fugl!
-SIDE:45-46
-VARIANT:holstein2017110130
-
+<text id="holstein2024041018" variant="holstein2017110130">
+<head>
+    <title>Viol</title>
+    <firstline>Min lille Blomst! Min lille Fugl!</firstline>
+    <source pages="45-46"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Min lille Blomst! Min lille Fugl!
 Jeg ser dig fra mit mørke Skjul.
 Jeg vil jo intet gøre dig.
@@ -583,12 +714,19 @@ Jeg kan jo aldrig række dig;
 men han vil en Gang vække dig
 af Blomsterdrøm i Sommersol,
 Viol! Viol!
+</poetry>
+</body>
+</text>
 
-T:Drømmeren
-F:Min Kano langs Urskovsbredden
-SIDE:47-49
-VARIANT:holstein2017110126
-
+<text id="holstein2024041019" variant="holstein2017110126">
+<head>
+    <title>Drømmeren</title>
+    <firstline>Min Kano langs Urskovsbredden</firstline>
+    <source pages="47-49"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Min Kano langs Urskovsbredden
 driver paa den røde Flod.
 Store Liljeblomster drømmer
@@ -653,13 +791,19 @@ Glidermannen, som med Anstand
 gør de løjerligste Hop,
 mens de andre applauderer:
 Hvilken klog, beleven Krop!
+</poetry>
+</body>
+</text>
 
-
-T:Lisbeth
-F:Jeg græder, mens jeg kysser dig, dit søde, lille Skind
-SIDE:50-52
-VARIANT:holstein2017110134
-
+<text id="holstein2024041020" variant="holstein2017110134">
+<head>
+    <title>Lisbeth</title>
+    <firstline>Jeg græder, mens jeg kysser dig, dit søde, lille Skind</firstline>
+    <source pages="50-52"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Jeg græder, mens jeg kysser dig, dit søde, lille Skind.
 Jeg kysser dig paa Øjnene, de himmelblaa, de smukke.
 Jeg presser mod mit hvide Bryst din silkebløde Kind.
@@ -668,7 +812,7 @@ Hvem ligner du? Din Far! Din Far! Du sover i hans Vugge.
 Ja, tænk dig, han var selv en Gang, en lillebitte én,
 som hverken kunde tænke eller tale, bare skrige!
 Og du skal blive stor som han, min lille Øjesten!
-_Det_, synes jeg, er underligst blandt alt det underlige.
+<i>Det</i>, synes jeg, er underligst blandt alt det underlige.
 
 Nu kender du kun Mælkesorg, som stilles ved mit Bryst.
 Men hvis jeg vender Kinden til, saatrordu, den er Brystet.
@@ -701,12 +845,19 @@ og kysser dem og Munden og din silkebløde Kind -
 
 Jeg bar dig ved mit Hjerte, jeg vil lukke dig derind
 for Evighed, for Evighed, saa ved jeg, at jeg har dig.
+</poetry>
+</body>
+</text>
 
-T:Sang bag Ploven
-F:I Solen gaar jeg bag min Plov
-SIDE:53-54
-VARIANT:holstein2017110119
-
+<text id="holstein2024041021" variant="holstein2017110119">
+<head>
+    <title>Sang bag Ploven</title>
+    <firstline>I Solen gaar jeg bag min Plov</firstline>
+    <source pages="53-54"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 I Solen gaar jeg bag min Plov.
 Jeg nikker til den grønne Skov,
 hvor du, min Lykke, gemmer dig.
@@ -734,12 +885,19 @@ i mit Hjerte gemmer sig.
 Jeg gemmer mig; jeg gemmer dig;
 jeg gemmer vor Lyksalighed
 til Sol gaar ned, til Sol gaar ned.
+</poetry>
+</body>
+</text>
 
-T:Natten
-F:Nu flygter Dagen hastig bort fra Verden
-SIDE:55-56
-VARIANT:holstein2017110132
-
+<text id="holstein2024041022" variant="holstein2017110132">
+<head>
+    <title>Natten</title>
+    <firstline>Nu flygter Dagen hastig bort fra Verden</firstline>
+    <source pages="55-56"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Nu flygter Dagen hastig bort fra Verden.
 Og Natten stille ud i Rummet træder,
 begynder tyst sin Samariterfærden
@@ -764,12 +922,19 @@ Barmhjertig slaar hun ud sin Sørgekaabe
 og dækker Jordens mange aabne Vunder -
 saa kan de syge Sjæle atter haabe,
 at der er Frelse i den Dag, som stunder.
+</poetry>
+</body>
+</text>
 
-T:Faderens Sang
-F:Se, min Elskerinde ligner
-SIDE:57
-VARIANT:holstein2017110122
-
+<text id="holstein2024041023" variant="holstein2017110122">
+<head>
+    <title>Faderens Sang</title>
+    <firstline>Se, min Elskerinde ligner</firstline>
+    <source pages="57"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Se, min Elskerinde ligner
 en Madonna, øm og stille,
 som hun nu ved Vinduskarmen
@@ -793,12 +958,19 @@ som din Ungdoms Sejersskjorte,
 naar du selv en Gang med Tiden
 sprænger gennem Lykkens Porte
 med dit Kongebarn ved Siden!
+</poetry>
+</body>
+</text>
 
-T:Fyldt med Blomster blusser
-F:Fyldt med Blomster blusser
-SIDE:58-59
-VARIANT:holstein2017110103
-
+<text id="holstein2024041024" variant="holstein2017110103">
+<head>
+    <title>Fyldt med Blomster blusser</title>
+    <firstline>Fyldt med Blomster blusser</firstline>
+    <source pages="58-59"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Fyldt med Blomster blusser
 Æbletræets Gren.
 Atter blaaner Himlen
@@ -842,12 +1014,19 @@ i det dybe Blaa - -
 Hele Jorden drømmer
 om et Dyb af Lykke,
 som den ej kan naa.
+</poetry>
+</body>
+</text>
 
-T:Uro
-F:I Skoven? - Nej! Ved Stranden? - Nej! Ak, du, som er saa klog
-SIDE:60-61
-VARIANT:holstein2017110131
-
+<text id="holstein2024041025" variant="holstein2017110131">
+<head>
+    <title>Uro</title>
+    <firstline>I Skoven? - Nej! Ved Stranden? - Nej! Ak, du, som er saa klog</firstline>
+    <source pages="60-61"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 I Skoven? - Nej! Ved Stranden? - Nej! Ak, du, som er saa klog,
 saa sig, hvorfra den stammer, den Uro uden Hvile?
 Det er som nogen kaldte, som noget ud mig drog,
@@ -867,11 +1046,19 @@ I Skoven? Nej! Ved Stranden? Nej! Ak, skynd dig blot afsted!
 I Skoven? Nej! Ved Stranden? Nej! Du har ej Tid at hvile.
 En rastløs Uro driver mig og aldrig faar jeg Fred -
 Ak, skynd dig blot! Ak, skynd dig blot! Det haster, du maa ile!
+</poetry>
+</body>
+</text>
 
-T:Luk dine Øjne -
-F:Luk dine Øjne, luk Øjnene i
-SIDE:62-63
-
+<text id="holstein2024041026">
+<head>
+    <title>Luk dine Øjne -</title>
+    <firstline>Luk dine Øjne, luk Øjnene i</firstline>
+    <source pages="62-63"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Luk dine Øjne, luk Øjnene i -
 Vaarvinden suser os sagte forbi.
 Hører du Klokker, som kimer i Luften?
@@ -899,12 +1086,19 @@ Vaarvinden leger med Klokker i Luften.
 Hægen har Blomster, ak, kender du Duften!
 Brisen, som bærer den over dit Haar,
 kom fra vor Kærligheds Vaar -?
+</poetry>
+</body>
+</text>
 
-T:Ved Vuggen
-F:Jeg nynner og jeg bøder mit sølverhvide Slør
-SIDE:64
-VARIANT:holstein2017110129
-
+<text id="holstein2024041027" variant="holstein2017110129">
+<head>
+    <title>Ved Vuggen</title>
+    <firstline>Jeg nynner og jeg bøder mit sølverhvide Slør</firstline>
+    <source pages="64"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Jeg nynner og jeg bøder mit sølverhvide Slør.
 Det gemmer alle Kvinder, naar Pigedrømmen dør.
 Min Ungdoms hvide Drømme, som alle er forbi,
@@ -924,12 +1118,19 @@ Saa træder jeg min Vugge og lukker Øjet i
 og væver nye Drømme til Vuggens Melodi.
 Saa nynner jeg og drømmer og vaagner med et Suk -
 Hvad gør det, det er Drømme, naar Drømmen blot er smuk?
+</poetry>
+</body>
+</text>
 
-T:Jeg gik mig ud
-F:Jeg gik mig ud, da Sol oprandt
-SIDE:65-66
-VARIANT:holstein2017110106
-
+<text id="holstein2024041028" variant="holstein2017110106">
+<head>
+    <title>Jeg gik mig ud</title>
+    <firstline>Jeg gik mig ud, da Sol oprandt</firstline>
+    <source pages="65-66"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Jeg gik mig ud, da Sol oprandt - -
 mit Hjerte synger af Glæde.
 Vær hilset min Morgen, min nyfødte Dag,
@@ -964,12 +1165,19 @@ Vær hilset min Morgen, min nyfødte Dag,
 som stiger af Bølgernes Væde!
 Jeg bader min Sjæl i dit Renhedsvæld
 og Sanserne synger af Glæde.
+</poetry>
+</body>
+</text>
 
-T:Solskin i Stuen
-F:I en lys og lystig Lue
-SIDE:67-68
-VARIANT:holstein2017110112
-
+<text id="holstein2024041029" variant="holstein2017110112">
+<head>
+    <title>Solskin i Stuen</title>
+    <firstline>I en lys og lystig Lue</firstline>
+    <source pages="67-68"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 I en lys og lystig Lue
 danser Støvet i min Stue.
 Se, der staar en Jakobsstige
@@ -999,12 +1207,22 @@ Og du selv, min lille Frue - -
 Midt i Leg og Lys og Lue
 lulles du i Drommerier,
 leger du med Fantasier - -
+</poetry>
+</body>
+</text>
 
-T:Sjælland
-F:Vi Sletternes Sønner har Drømme i Sind
-SIDE:69-71
-NOTE:Se folkevisen <xref poem="folke2001042101"/>
-
+<text id="holstein2024041030">
+<head>
+    <title>Sjælland</title>
+    <firstline>Vi Sletternes Sønner har Drømme i Sind</firstline>
+    <notes>
+        <note>Se folkevisen <xref poem="folke2001042101"/></note>
+    </notes>
+    <source pages="69-71"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Vi Sletternes Sønner har Drømme i Sind,
 de vaagner og bliver til Sange,
 de stiger af Sommernattaagernes Spind
@@ -1054,12 +1272,19 @@ De ligger og venter Forlosningens Stund
 og længes at blive til Sange,
 som Lærker i Kløvermarktuernes Bund,
 før Dagningen lyser i Vange.
+</poetry>
+</body>
+</text>
 
-T:Hvem?
-F:Hvem skrider frem i stor og stille Vælde?
-SIDE:72
-VARIANT:holstein2017110124
-
+<text id="holstein2024041031" variant="holstein2017110124">
+<head>
+    <title>Hvem?</title>
+    <firstline>Hvem skrider frem i stor og stille Vælde?</firstline>
+    <source pages="72"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Hvem skrider frem i stor og stille Vælde?
 Hvad er her sket? En pludselig Forandring.
 Mon Tidens Hjul stod stille paa sin Vandring
@@ -1082,11 +1307,19 @@ mens Verden som i angst Forventning bier?
 Og hvem er du, som skælver saa urolig --
 du underlige Fugl, som fra din Bolig
 i Verden skuer frem med rædde Øjne?
+</poetry>
+</body>
+</text>
 
-T:O, alle de Lærker
-F:O, alle de Lærker, som flyver af Blund 
-SIDE:73-75
-
+<text id="holstein2024041032">
+<head>
+    <title>O, alle de Lærker -</title>
+    <firstline>O, alle de Lærker, som flyver af Blund</firstline>
+    <source pages="73-75"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 O, alle de Lærker, som flyver af Blund - -
 Det var i den sitrende Dæmrings Stund.
 Den blegnende Maane fra Skovene steg
@@ -1156,12 +1389,19 @@ Igennem din kimende Ørken jeg gaar
 til Højdernes kølige Skove
 med Sol paa mit Ansigt og Sol paa mit Haar,
 O, nu var det syndigt at sove.
+</poetry>
+</body>
+</text>
 
-T:I vor lave Stue
-F:I vor lave Stue
-SIDE:76-77
-VARIANT:holstein2017110114
-
+<text id="holstein2024041033" variant="holstein2017110114">
+<head>
+    <title>I vor lave Stue</title>
+    <firstline>I vor lave Stue</firstline>
+    <source pages="76-77"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 I vor lave Stue
 staar de hvide Senge
 og Gardiner hvide
@@ -1188,12 +1428,19 @@ Højt og klart fra Marken
 klinger Lærkens Trille.
 Kun min Sjæl urolig -
 ellers alt saa stille.
+</poetry>
+</body>
+</text>
 
-T:Den milde Majluft
-F:Den milde Majluft lokker frem paany
-SIDE:78-79
-VARIANT:holstein201711010
-
+<text id="holstein2024041034" variant="holstein2017110101">
+<head>
+    <title>Den milde Majluft</title>
+    <firstline>Den milde Majluft lokker frem paany</firstline>
+    <source pages="78-79"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Den milde Majluft lokker frem paany
 de lyse Haab, som aabner deres Øje
 og løfter Vingen mod den hvide Sky,
@@ -1223,12 +1470,19 @@ Hvad vil du da, naar selv den søde Stund,
 hvor Hjertet banker mod et andet Hjerte
 og Munden suger Lykke af en Mund,
 har Kildevæld, hvoraf der rinder Smerte?
+</poetry>
+</body>
+</text>
 
-T:En Duft af Viol
-F:En Duft af Viol! Ak, Duft af Viol!
-SIDE:80
-VARIANT:holstein2017110128
-
+<text id="holstein2024041035" variant="holstein2017110128">
+<head>
+    <title>En Duft af Viol</title>
+    <firstline>En Duft af Viol! Ak, Duft af Viol!</firstline>
+    <source pages="80"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 En Duft af Viol! Ak, Duft af Viol!
 Og Kilder, som pibler i mossede Bund.
 Og Duft af Viol, ak, Duft af Viol!
@@ -1252,12 +1506,19 @@ Det rinder velsignende over min Kind.
 Jeg Øjet opslaar, ak, op jeg det slaar!
 Jeg ser i din Hellighed skælvende ind -
 ak, evige Vaar!
+</poetry>
+</body>
+</text>
 
-T:Her staar de samme Lygter
-F:Her staar de samme Lygter og lyser op i Løvet
-SIDE:81-82
-VARIANT:holstein2017110138
-
+<text id="holstein2024041036" variant="holstein2017110138">
+<head>
+    <title>Her staar de samme Lygter</title>
+    <firstline>Her staar de samme Lygter og lyser op i Løvet</firstline>
+    <source pages="81-82"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Her staar de samme Lygter og lyser op i Løvet.
 Det er de samme Linde, den samme lyse Nat.
 Og Nattergalen hulker i Søndermarkens Krat -
@@ -1282,12 +1543,19 @@ Ak, hvorfor har dog Lykken saa flygtige Minutter,
 at selv ej vor Erindring kan grihe deres Hast?
 Og hvorfor vil vi søge at nagle noget fast,
 naar ogsaa vor Erindring om svunden Lykke slutter?
+</poetry>
+</body>
+</text>
 
-T:Far, hvor flyver Svanerne hen
-F:Far, hvor flyver Svanerne hen?
-SIDE:83
-VARIANT:holstein2017110125
-
+<text id="holstein2024041037" variant="holstein2017110125">
+<head>
+    <title>Far, hvor flyver Svanerne hen</title>
+    <firstline>Far, hvor flyver Svanerne hen?</firstline>
+    <source pages="83"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Far, hvor flyver Svanerne hen?
 Bort! Bort! Vingerne spiler de,
 Halsene strækker de, syngende iler de
@@ -1307,11 +1575,19 @@ Men Far, vi selv, hvor gaar vi saa hen?
 Bort! Bort! Øjnene lukker vi,
 Hovedet bojer vi, klagende sukker vi,
 bort! Bort! Ingen ved hvorhen.
+</poetry>
+</body>
+</text>
 
-T:Af Dæmringens Stilhed
-F:Af Dæmringens Stilhed hun stiger
-SIDE:84-85
-
+<text id="holstein2024041038">
+<head>
+    <title>Af Dæmringens Stilhed</title>
+    <firstline>Af Dæmringens Stilhed hun stiger</firstline>
+    <source pages="84-85"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Af Dæmringens Stilhed hun stiger
 og tøver som Dagningens Fjed,
 naar Tusmørket bævende viger
@@ -1341,13 +1617,20 @@ O Længsel som aldrig tør tie,
 som higer mod det, som den var,
 som vokser, saa tit den maa bie
 og kræver det eviges Svar!
+</poetry>
+</body>
+</text>
 
-T:Efter Tilstaaelsen
-F:Jeg har sagt dig, at jeg elsker dig. Jeg ved, at du har hørt det
-SIDE:86-91
-VARIANT:holstein2017110118
-
-{c:I}
+<text id="holstein2024041039" variant="holstein2017110118">
+<head>
+    <title>Efter Tilstaaelsen</title>
+    <firstline>Jeg har sagt dig, at jeg elsker dig. Jeg ved, at du har hørt det</firstline>
+    <source pages="86-91"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+<nonum><center>I</center></nonum>
 
 Jeg har sagt dig, at jeg elsker dig. Jeg ved, at du har hørt det.
 Jeg har sagt det, og nu ved jeg det, jeg vidste det ej før.
@@ -1375,7 +1658,7 @@ Men forbyd mig ej at se dig. Jeg kan spøge, jeg kan le,
 som jeg aldrig havde sagt det, som du aldrig havde hørt det.
 
 Men du tav. Og du blev adspredt, mens de andre lo og støj ed -
-Jeg har hørt, at Elskov smitter. Om _min_ rørte ved et Savn,
+Jeg har hørt, at Elskov smitter. Om <i>min</i> rørte ved et Savn,
 som dit kyske Hjerte skjuler, som du aldrig selv gav Navn!
 Du, livis Hjerte ej har elsket, du, hvis Mund har aldrig løjet -
 
@@ -1385,7 +1668,7 @@ Ligemeget! Jeg maa se dig! Hvad der videre vil ske - -?
 Ved mon jeg det? Ved mon du det? Lad vor Skæbne nu bestemme.
 
 
-{c:II}
+<nonum><center>II</center></nonum>
 
 Han ser ud, som han er god, og han har milde, brune Øjne.
 Og hans Smil er ej som andres. Hvorfor aner jeg deri
@@ -1421,8 +1704,9 @@ Hvorfor banker du, mit Hjerte? Det er ham! Det er hans Stemme!
 Hvorfor banker du, mit Hjerte, naar du hører denne Røst?
 Hvorfor banker dog mit Hjerte? Vær dog stille i mit Bryst!
 Skal jeg blive? Skal jeg flygte? Nej, lad Skæbnen nu bestemme!
+</poetry>
+</body>
+</text>
 
-
-
-
-
+</workbody>
+</kalliopework>
