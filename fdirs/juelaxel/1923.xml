@@ -2,15 +2,18 @@
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1923" author="juelaxel" status="complete" type="poetry">
 <workhead>
-    <title>Rosa: En skæbne</title>
+    <title>Rosa</title>
+    <subtitle>
+        <line>En Skæbne</line>
+    </subtitle>
     <year>1923</year>
     <notes>
-        <note>Teksten følger Axel Juel: <i>Rosa: En skæbne</i>, V. Pio, København, 1923.</note>
+        <note>Teksten følger Axel Juel: <i>Rosa</i>, V. Pio, København, 1923.</note>
     </notes>
     <pictures>
-        <picture src="1923-p1.jpg">Titelbladet til <i>Rosa: En skæbne</i> (1923) lyder ,,Axel Juel / Rosa // V. Pios Boghandel / Poul Branner / København / 1923''.</picture>
+        <picture src="1923-p1.jpg">Titelbladet til <i>Rosa</i> (1923) lyder ,,Axel Juel / Rosa // V. Pios Boghandel / Poul Branner / København / 1923''.</picture>
     </pictures>
-    <source facsimile="115308069917-color.pdf" facsimile-pages-num="153" facsimile-pages-offset="10">Axel Juel: <i>Rosa: En skæbne</i>, V. Pio, København, 1923.</source>
+    <source facsimile="115308069917-color.pdf" facsimile-pages-num="153" facsimile-pages-offset="3">Axel Juel: <i>Rosa</i>, V. Pio, København, 1923.</source>
 </workhead>
 <workbody>
 
@@ -125,6 +128,9 @@ som haabløs Debutant -:
 <head>
     <title><num>II</num>Der kom tre Grever sejlende</title>
     <firstline>Der kom tre Grever sejlende</firstline>
+    <pictures>
+        <picture src="juelaxel2024050803-p1.jpg">Axel Nygaards illustration.</picture>
+    </pictures>
     <source pages="11-13"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -174,7 +180,7 @@ den gamle Musikant -:
 <head>
     <title><num>III</num>Snart lærte hendes første</title>
     <firstline>Snart lærte hendes første</firstline>
-    <source pages="14-18"/>
+    <source pages="14-18" facsimile-pages="19-23"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -268,7 +274,7 @@ som om <i>den</i> ogsaa fandt:
 <head>
     <title><num>IV</num>Mens lille Rosa synes</title>
     <firstline>Mens lille Rosa synes</firstline>
-    <source pages="19-21"/>
+    <source pages="19-21" facsimile-pages="24-26"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -316,7 +322,7 @@ sit eget Køkkentøj.
 <head>
     <title><num>V</num>Og saadan formes Livet</title>
     <firstline>Og saadan formes Livet</firstline>
-    <source pages="22-24"/>
+    <source pages="22-24" facsimile-pages="27-29"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -373,7 +379,7 @@ hans gamle Bulehat.
 <head>
     <title><num>VI</num>Men Rosa aner dunkelt</title>
     <firstline>Men Rosa aner dunkelt</firstline>
-    <source pages="25-28"/>
+    <source pages="25-28" facsimile-pages="30-33"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -439,7 +445,7 @@ og Duggen i sit Haar.
 <head>
     <title><num>VII</num>Dag efter Dag forsvinder</title>
     <firstline>Dag efter Dag forsvinder</firstline>
-    <source pages="29-33"/>
+    <source pages="29-33" facsimile-pages="34-38"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -533,8 +539,10 @@ til hver en Gratulant:
 <head>
     <title><num>VIII</num>Nej, Rosa elsked ingen</title>
     <firstline>Nej, Rosa elsked ingen</firstline>
-    <source pages="34-37"/>
-    <!-- TODO: p2 -->
+    <source pages="34-37" facsimile-pages="39-44"/>
+    <pictures>
+        <picture src="juelaxel2024050809-p1.jpg">Axel Nygaards illustration.</picture>
+    </pictures>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -600,7 +608,7 @@ til hendes Gadedør.
 <head>
     <title><num>IX</num>Saa kom en dejlig Aften</title>
     <firstline>Saa kom en dejlig Aften</firstline>
-    <source pages="38-41"/>
+    <source pages="38-41" facsimile-pages="45-48"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -667,7 +675,7 @@ klæ’r hende brillant -«
 <head>
     <title><num>X</num>Hvor var det godt at komme</title>
     <firstline>Hvor var det godt at komme</firstline>
-    <source pages="42-44"/>
+    <source pages="42-44" facsimile-pages="49-51"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -715,7 +723,7 @@ sig helt i denne Stund.
 <head>
     <title><num>XI</num>Den næste Aften kom der</title>
     <firstline>Den næste Aften kom der</firstline>
-    <source pages="45-46"/>
+    <source pages="45-46" facsimile-pages="52-53"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -754,7 +762,7 @@ paa ham, der var saa god.
 <head>
     <title><num>XII</num>Alting i Rosas Verden</title>
     <firstline>Alting i Rosas Verden</firstline>
-    <source pages="47-49"/>
+    <source pages="47-49" facsimile-pages="54-56"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -811,7 +819,7 @@ kanhænde Kærlighed -
 <head>
     <title><num>XIII</num>Hun vented ingen Løfter</title>
     <firstline>Hun vented ingen Løfter</firstline>
-    <source pages="50-52"/>
+    <source pages="50-52" facsimile-pages="57-59"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -868,7 +876,7 @@ er ikke født til mer -
 <head>
     <title><num>XIV</num>Først længe, længe efter</title>
     <firstline>Først længe, længe efter</firstline>
-    <source pages="53-55"/>
+    <source pages="53-55" facsimile-pages="60-62"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -916,7 +924,7 @@ med gnaven Stemmeklang
 <head>
     <title><num>XV</num>Nu søgte hun den store</title>
     <firstline>Nu søgte hun den store</firstline>
-    <source pages="56-59"/>
+    <source pages="56-59" facsimile-pages="63-66"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -992,8 +1000,10 @@ om Ring med Diamant:
 <head>
     <title><num>XVI</num>Paa Trappen stod han gnaven</title>
     <firstline>Paa Trappen stod han gnaven</firstline>
-    <source pages="60-61"/>
-    <!-- TODO: p3 -->
+    <source pages="60-61" facsimile-pages="67-68"/>
+    <pictures>
+        <picture src="juelaxel2024050817-p1.jpg">Axel Nygaards illustration.</picture>
+    </pictures>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1032,7 +1042,7 @@ er ikke født til mer -
 <head>
     <title><num>XVII</num>Hvor frydefuldt at glide</title>
     <firstline>Hvor frydefuldt at glide</firstline>
-    <source pages="62-67"/>
+    <source pages="62-67" facsimile-pages="71-76"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1134,7 +1144,7 @@ og saa la’r de os gaa -«
 <head>
     <title><num>XVIII</num>Om Verdens største Vismænd</title>
     <firstline>Om Verdens største Vismænd</firstline>
-    <source pages="68-69"/>
+    <source pages="68-69" facsimile-pages="77-78"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1173,8 +1183,10 @@ thi Lov skal Fyldest ske.
 <head>
     <title><num>XIX</num>I gusten Skumringsgade</title>
     <firstline>I gusten Skumringsgade</firstline>
-    <source pages="70-73"/>
-    <!-- TODO: p4 -->
+    <source pages="70-73" facsimile-pages="79-82"/>
+    <pictures>
+        <picture src="juelaxel2024050820-p1.jpg">Axel Nygaards illustration.</picture>
+    </pictures>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1249,8 +1261,10 @@ saa kommer den for sent.
 <head>
     <title><num>XX</num>Dybt bukker Portieren</title>
     <firstline>Dybt bukker Portieren</firstline>
-    <source pages="74-76"/>
-    <!-- TODO: p5 -->
+    <source pages="74-76" facsimile-pages="85-86"/>
+    <pictures>
+        <picture src="juelaxel2024050821-p1.jpg">Axel Nygaards illustration.</picture>
+    </pictures>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1308,7 +1322,7 @@ sig over Bordets Kant:
 <head>
     <title><num>XXI</num>For mange Mænd var Rosa</title>
     <firstline>For mange Mænd var Rosa</firstline>
-    <source pages="77-81"/>
+    <source pages="77-81" facsimile-pages="90-94"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1393,8 +1407,10 @@ han denne Sætning fandt:
 <head>
     <title><num>XXII</num>Hvor Bremerholmens Værfter</title>
     <firstline>Hvor Bremerholmens Værfter</firstline>
-    <source pages="82-88"/>
-    <!-- TODO: p6 -->
+    <source pages="82-88" facsimile-pages="95-101"/>
+    <pictures>
+        <picture src="juelaxel2024050823-p1.jpg">Axel Nygaards illustration.</picture>
+    </pictures>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1514,7 +1530,7 @@ at vise Skammen bort.
 <head>
     <title><num>XXIII</num>Deroppe vaagner Rosa</title>
     <firstline>Deroppe vaagner Rosa</firstline>
-    <source pages="89-91"/>
+    <source pages="89-91" facsimile-pages="104-106"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1571,7 +1587,7 @@ og spejler sig - og gaar.
 <head>
     <title><num>XXIV</num>Hun driver gennem Byen</title>
     <firstline>Hun driver gennem Byen</firstline>
-    <source pages="92-96"/>
+    <source pages="92-96" facsimile-pages="107-111"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1664,7 +1680,7 @@ og banker sagte paa.
 <head>
     <title><num>XXV</num>Nej se, der kommer Rosa</title>
     <firstline>Nej se, der kommer Rosa</firstline>
-    <source pages="97-99"/>
+    <source pages="97-99" facsimile-pages="112-114"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1722,8 +1738,10 @@ kun liden Genklang fandt:
 <head>
     <title><num>XXVI</num>Den dybblaa Himmelhvælving</title>
     <firstline>Den dybblaa Himmelhvælving</firstline>
-    <source pages="100-104"/>
-    <!-- TODO: p7 -->
+    <source pages="100-104" facsimile-pages="115-119"/>
+    <pictures>
+        <picture src="juelaxel2024050827-p1.jpg">Axel Nygaards illustration.</picture>
+    </pictures>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1807,7 +1825,7 @@ og alt er tyst igen.
 <head>
     <title><num>XXVII</num>Den næste Gade hviler</title>
     <firstline>Den næste Gade hviler</firstline>
-    <source pages="105-108"/>
+    <source pages="105-108" facsimile-pages="122-125"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1874,7 +1892,7 @@ den brave Fabrikant -
 <head>
     <title><num>XXVIII</num>Og mange, gode Venner</title>
     <firstline>Og mange, gode Venner</firstline>
-    <source pages="109-113"/>
+    <source pages="109-113" facsimile-pages="126-130"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1968,7 +1986,7 @@ hvorom de Vished vandt:
 <head>
     <title><num>XXIX</num>En Dag stod tunge Roser</title>
     <firstline>En Dag stod tunge Roser</firstline>
-    <source pages="114-116"/>
+    <source pages="114-116" facsimile-pages="131-133"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2025,7 +2043,7 @@ kan aldrig reddes mer.
 <head>
     <title><num>XXX</num>En steg til Glans og Glæde</title>
     <firstline>En steg til Glans og Glæde</firstline>
-    <source pages="117-118"/>
+    <source pages="117-118" facsimile-pages="134-135"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2064,7 +2082,7 @@ dybt i den store By -
 <head>
     <title><num>XXXI</num>Han havde længe vaklet</title>
     <firstline>Han havde længe vaklet</firstline>
-    <source pages="119-121"/>
+    <source pages="119-121" facsimile-pages="136-138"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2121,8 +2139,10 @@ for En, vi helt har kær.
 <head>
     <title><num>XXXII</num>Og Dagen kom, da Rosa</title>
     <firstline>Og Dagen kom, da Rosa</firstline>
-    <source pages="122-123"/>
-    <!-- TODO: p8 -->
+    <source pages="122-123" facsimile-pages="139-140"/>
+    <pictures>
+        <picture src="juelaxel2024050833-p1.jpg">Axel Nygaards illustration.</picture>
+    </pictures>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2170,7 +2190,7 @@ og Duggen i sit Haar -
 <head>
     <title>Den gamle Landsby-Længe</title>
     <firstline>Den gamle Landsby-Længe</firstline>
-    <source pages="125-126"/>
+    <source pages="125-126" facsimile-pages="144-145"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
