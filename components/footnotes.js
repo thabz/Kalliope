@@ -37,7 +37,7 @@ const Footnote = ({ text }: FootnoteProps) => {
   const number = footnotes.registrer(this, text);
   const anchor = `note-${number}`;
   return (
-    <sup style={{ marginLeft: '0.3em' }} className="footnotes-print-only">
+    <sup style={{ marginLeft: '0.3em', lineHeight: '0' }} className="footnotes-print-only">
       <a name={anchor} />
       {number}
     </sup>
