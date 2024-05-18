@@ -1,27 +1,40 @@
-KILDE:
-DIGTER:
-FACSIMILE:
-FACSIMILE-SIDER:
-TITELBLAD:
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
+<kalliopework id="1872" author="moellerpl" status="complete" type="poetry">
+<workhead>
+    <title>Gudrun</title>
+    <year>1872</year>
+    <notes>
+        <note>Teksten følger P. L. Møller: <i>Gudrun</i>, E. Wagners Forlag, Kbh., 1872.</note>
+        <note>Noterne markeret med asterisk * er forfatterens egne.</note>
+    </notes>
+    <pictures>
+        <picture src="1872-p1.jpg">Titelbladet til <i>Gudrun</i> (1872) lyder ,,Det oldtydske Heltedigt / Gudrun, / efterladt Arbeide / af / P. L. Møller. / (Skrevet i Tydskland 1851.) // Kjøbenhavn / E. Wagners Forlag. / 1872.''.</picture>
+    </pictures>
+    <source facsimile="11540803885F_color.pdf" facsimile-pages-num="59" facsimile-pages-offset="4">P. L. Møller: <i>Gudrun</i>, E. Wagners Forlag, Kbh., 1872.</source>
+</workhead>
+<workbody>
 
-SEKTION:
-
-T:
-F:
-SIDE:
-TYPE:prose
-
-    I den literaire Verden kjender Enhver, eller har dog hørt tale om det gammeltydske Heltedigt: =»das Niebelungen Lied«=. Man veed i hvilken nær Slægtskabs Forbindelse det staaer med en Deel af vore interessanteste nordiske Oldtidssagn, og at det fornemmelig var dette mægtige, urkraftige Digt, der i den nyere tydske Literatur, da det endelig blev bekjendt, hævede den Fortryllelse, der var udgaaet fra Ludvig den Fjortendes Hof, vakte Aanderne af det franske Ledebaands Dvale, og bevirkede i Forening med Shakspeare det store Omsving i Smagen og Poesien, som især betegnes ved Goethe, hans Tid og hans Skole.  Det var første Gang i lang Tid, at man i Tydskland blev sig selv, og sin selvstændige Nationaleiendommelighed bevidst.
+<text id="moellerpl2024051701">
+<head>
+    <title>Gudrun</title>
+    <source pages="3-50"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<prose>
+    I den literaire Verden kjender Enhver, eller har dog hørt tale om det gammeltydske Heltedigt: <w>»das Niebelungen Lied«</w>. Man veed i hvilken nær Slægtskabs Forbindelse det staaer med en Deel af vore interessanteste nordiske Oldtidssagn, og at det fornemmelig var dette mægtige, urkraftige Digt, der i den nyere tydske Literatur, da det endelig blev bekjendt, hævede den Fortryllelse, der var udgaaet fra Ludvig den Fjortendes Hof, vakte Aanderne af det franske Ledebaands Dvale, og bevirkede i Forening med Shakspeare det store Omsving i Smagen og Poesien, som især betegnes ved Goethe, hans Tid og hans Skole.  Det var første Gang i lang Tid, at man i Tydskland blev sig selv, og sin selvstændige Nationaleiendommelighed bevidst.
     Digtet om Niebelungerne er meget gammelt, de fleste Sange sandsynligvis fra en Tid (det 5te og 6te Aarhundrede) da Skrivekunsten saa godt som ikke kjendtes eller benyttedes i Tydskland, men Hukommelsen og den mundtlige Tradition var i desto livligere Virksomhed. Efter al Sandsynlighed udgjorde det en væsentlig Deel af de Folkesange, som Carl den Store lod samle og afskrive. Senere Undersøgelser, navnlig af den berømte Lachmann, have næsten utvivlsomt bevist, at hint Digt, ligesom det efter F. A. Wolf blev almindeligt at troe om de homerske Digte (og vistnok i høiere Grad end disse) ikke hidrøre fra nogen enkelt Sanger, men fra en Mængde ubekjendte Rhapsoder, og at de forskjellige Sange først langt senere, tildeels i ganske ulogisk og ukronologisk Orden ere sammenstillede saaledes, som vi i de sædvanlige Udgaver og Oversættelser finde dem.  Saaledes forklares det, at man i et Digt, som tilsyneladende udgjør en Eenhed, finder Folkesange af saa forskjellig Natur og Alder, og at f. Ex. den hele sidste Afdeling: »Der Niebelungen Klage« — aabenbar er meget ældre end den første: »Der Niebelungen Noth«. Begge Afdelinger ere i den Skikkelse, hvori vi nu have dem, samlede, »die Klage« i Slutningen af det 12te, »die Noth«, i Begyndelsen af det 13de Aarhundrede, af en ubekjendt Literat ved' det thyringske Hof i Eisenach, hvor dengang, ligesom senere under Goethe’s og Schiller’s Auspicier i Weimar, den poetiske Sands florerede, og hvis Landgrever en Tid lang vare de tydske Medicæer. Det antages, at den Tanke, at forbinde de gamle Folkesange om Siegfried, Chrimhild og Gudrun til sammenhængende Digte, først er opstaaet efter at man ved de Franske var bleven bekjendt med de kunstmæssige græske og romerske Heltedigte - af Homer og Virgil.
     Det var, mærkeligt nok, et Medlem af den prosaiske, nu ganske glemte, schweitzerske Digteskole, Bodmer, som ved at udgive omtrent en Trediedel af Niebelungen Digtet under Titlen: »Chrimhildens Rache« , Zürich 1757, for første Gang gjorde den tydske Læseverden bekjendt med dette Nationalværk. Fuldstændigt blev det først trykt 1782, dog uden kritisk Undersøgelse eller Sammenligning af de forskjellige Haandskrifter, Kritiske Udgaver besørgedes først senere af v.  der Hagen og Zeune, Berlin 1810 og 1815, og endelig den bedste af Lachmann, Berlin 1826.  Af Oversættelser haves forskjellige; den bekjendtteste, om ikke just den bedste, da den undertiden er vanskeligere at forstaae end Originalen, er den af Simrock, 1827. Af O. Marbach har man i Pragt-Udgave en Oversættelse, som dog ikke indbefatter »die Klage«. Tieck beskjæftigede sig i sin Ungdom ivrigt med dette Digt, oversatte en Deel deraf, og forsøgte af sin egen Phantasie at udfylde de episke Huller deri, hvilket han dog atter opgav. For nylig er Niebelungen Digtet oversat paa Engelsk.
-    Mindre bekjendt turde det derimod være, at Tydskland besidder et andet, noget yngre Heltedigt, der i Aand, Sprog<note>*) Sproget, det gamle saakaldte: „Mittelhochdeutsch“ viser sig i dette Digt paa Overgangen fra Angelsachsisk og Oldtydsk til det nyere Høitydske, og er i det Hele taget ikke meget vanskeligt at forstaae.</note> og Versemaal meget ligner Niebelungen Digtet, men ved fuldkommen poetisk Behandling og Konstform forholder sig til dette omtrent som Odysseen til Iliaden. Tonen er her ikke saa mørk og melancholsk, men oftere oplivet ved let Skjemt og lysere Livsanskuelse.  Det er: =»Das Gudrun Lied.«= Ogsaa dette er en i Begyndelsen af det 13de Aarhundrede foretagen Samling af Folkesange af forskjellig Oprindelse og Alder. Men ved Bearbeidelsen og Sammenføiningen af de naive Folkepoesier, røbes her mere Konst, Takt og Smag; Stoffet er bedre ordnet, og Fablen har fornemmelig i den sidste, noget yngre Afdeling, en Sammenhæng, og, i Modsætning til Niebelungernes tragiske Dissonants, en forsonende Slutning, som vidner om en mere uddannet Konstsands. Derfor kan man heller ikke her, som Lachmann har gjort ved Niebelungen Digtet, med Sikkerhed udsondre de oprindelige, til Grund liggende Folkesange. Begge disse store, episke Digte have det tilfælleds, at de ligesom adskillige mindre (f. Ex. det fortræffelige: »Hildebrandslied«) henhører til den kraftige, gediegne Poesie, som udgik fra selve Folket, og danne saaledes en djærv Modsætning til den saakaldte »classiske« Hofpoesie, der senere i det 12te og 13de Aarhundrede repræsenteredes af meget begavede, men allerede ved Datidens franske Æsthetik fordannede og forfinede Poeter. Disse, som Hartman v. der Aue (Forfatter af Erek og Iwein), Gottfred af Strasbourg (Forfatter af Tristan) og den berømteste af dem, Wolfram von Eschenbach (Forfatter af Parcival og den ufuldendte Titurel); — ophørte nemlig med at behandle fædrelandske Stoffer, der først maatte samles og ordnes, hvorimod de udenlandske Stoffer allerede fandtes bearbeidede i de franske »Ridderromaner« paa Prosa.
+    Mindre bekjendt turde det derimod være, at Tydskland besidder et andet, noget yngre Heltedigt, der i Aand, Sprog<note>*) Sproget, det gamle saakaldte: „Mittelhochdeutsch“ viser sig i dette Digt paa Overgangen fra Angelsachsisk og Oldtydsk til det nyere Høitydske, og er i det Hele taget ikke meget vanskeligt at forstaae.</note> og Versemaal meget ligner Niebelungen Digtet, men ved fuldkommen poetisk Behandling og Konstform forholder sig til dette omtrent som Odysseen til Iliaden. Tonen er her ikke saa mørk og melancholsk, men oftere oplivet ved let Skjemt og lysere Livsanskuelse.  Det er: <w>»Das Gudrun Lied.«</w> Ogsaa dette er en i Begyndelsen af det 13de Aarhundrede foretagen Samling af Folkesange af forskjellig Oprindelse og Alder. Men ved Bearbeidelsen og Sammenføiningen af de naive Folkepoesier, røbes her mere Konst, Takt og Smag; Stoffet er bedre ordnet, og Fablen har fornemmelig i den sidste, noget yngre Afdeling, en Sammenhæng, og, i Modsætning til Niebelungernes tragiske Dissonants, en forsonende Slutning, som vidner om en mere uddannet Konstsands. Derfor kan man heller ikke her, som Lachmann har gjort ved Niebelungen Digtet, med Sikkerhed udsondre de oprindelige, til Grund liggende Folkesange. Begge disse store, episke Digte have det tilfælleds, at de ligesom adskillige mindre (f. Ex. det fortræffelige: »Hildebrandslied«) henhører til den kraftige, gediegne Poesie, som udgik fra selve Folket, og danne saaledes en djærv Modsætning til den saakaldte »classiske« Hofpoesie, der senere i det 12te og 13de Aarhundrede repræsenteredes af meget begavede, men allerede ved Datidens franske Æsthetik fordannede og forfinede Poeter. Disse, som Hartman v. der Aue (Forfatter af Erek og Iwein), Gottfred af Strasbourg (Forfatter af Tristan) og den berømteste af dem, Wolfram von Eschenbach (Forfatter af Parcival og den ufuldendte Titurel); — ophørte nemlig med at behandle fædrelandske Stoffer, der først maatte samles og ordnes, hvorimod de udenlandske Stoffer allerede fandtes bearbeidede i de franske »Ridderromaner« paa Prosa.
     Den første og midterste Deel af Gudrun Digtet synes at være meget gammel, og der findes Allusioner dertil allerede i angelsachsiske Digte fra det 8de og 9de Aarhundrede. Dog er Charakteren ikke saa vild og hedensk som i Niebelungen Digtet; ja strax i Begyndelsen, og paa mange andre Steder, fremtræder udtrykkelig det christelige Element, i det Hele tyder Aand og Tone mere paa et keltisk end paa et oldnordisk Udspring; Heltenes Borge have franske (keltiske) Navne, og Scenen er vexelvis i Irland, Danmark, Normandiet og paa det mellemliggende Hav. At dette Digt saa længe forblev ubekjendt, laa fornemmelig deri, at det kun existerede i et eneste Haandskrift (i Wien), som Keiseren, Maximilian, 1502 havde ladet afskrive. Det blev første Gang trykt i v. der Hagens og Primissers: »Heldenbuch«, B. 1, 1820. Ogsaa Wilhelm Grimm, som beskjæftigede sig meget med dette Digt, har vigtige Fortjenester af Textens kritiske Bearbeidelse. Senere udgaves det af Ziemann (Kutrun 1835), af Ettmüller (Zürich 1841) og af Vollmer (Leipzig 1845), og oversattes af Keller 1840 og af Simrock 1843; medens Digtet, mærkeligt nok, ligesom Niebelungerne, indeholder meget i Composition og Opfindsomhed, som minder om Homer og Virgil<note>*) Selv særegne Versemaal kan betragtes som en ved Kulturens hemmelighedsfulde Vandringer opstaaet germanisk Efterligning af Hexametret, hvilket, først omformet i Middelalderens Kjæmpevise-Metrum, trængte frem til Norden.</note> eller om Forestillinger, der i Oldtiden vare fælleds for alle Folks poetiske Tankekreds (saaledes spille Kvinderne ogsaa her Hovedrollen); medens det hvad Historie og Geographie angaaer ofte bevæger sig paa et saa mythisk Gebeet, at det ikke hidtil har været muligt, her med Sikkerhed at orientere sig, saa har det paa den anden Side i det oprindelige Sagngrundlag et saa nært Slægtskab med vort Nordens Heltesagn og det Liv, vi af vor Oldliteratur kjende, at allerede af denne Grund en Udsigt over Digtets Indhold, med enkelte i muligst tro Oversættelse meddelte Prøver, tør gjøre Regning paa nordiske Læseres Interesse.
 
 
-{c:I.}
+<nonum><center>I.</center></nonum>
 
-Helten i Digtets første Afdeling er Hagen, en Søn af Kong Siegband i Ireland. Forældrenes Charakterer skildres os i følgende Stropher:
-
+    Helten i Digtets første Afdeling er Hagen, en Søn af Kong Siegband i Ireland. Forældrenes Charakterer skildres os i følgende Stropher:
+</prose>
+<poetry>
 En Dag Siegband paa Trappen foran sin Høilofts Sal
 Sad under Cedertræet; da hans kongelige Genial
 Begyndte med ham at tale: »Os Ære strømmer til,
@@ -63,22 +76,14 @@ Sexti tusind Helte den Konge bød at bænke.
 De fik i Borgen Alle travlt med at brase og at skjænke.
 
 ---
+</poetry>
+<prose>
+    Dronningen, Fru Ute, var nu meget fornøiet, og der holdtes Kampspil med stor Pragt og lystig Musik i ti Dage. Men en Nemesis lurer alt paa at straffe hendes Stolthed og Forfængelighed. Hendes unge Søn Hagen, som alle de fremmede Riddere, Fruer og Jomfruer efter Høflighedens Forskrifter vise stor Yndest og Opmærksomhed, bliver pludselig røvet af en stor Fugl, hvilket i Oldtiden synes ikke at have været ualmindeligt, og maaskee ligger til Grund for de nordiske Sagn om »Valravnen», som først i en senere halvchristelig Tids Overtro antog den dæmoniske, vampyragtige Hexe-characteer, der er bekjendt af Oehlenschlägers fortræffelige Romance<note>*) Dog er det maaskee rimeligst, at de herhen hørende Forestillinger ere, som saa mange andre, komne til os fra Orienten, hvor navnlig Griffen spiller eu lignende overnaturlig Rolle, som man veed deels af den braminske Mythologie, deels af et malayisk Epos, Bida-Sari, hvoraf en hollandsk Oversættelse udkom 1843.</note>.
 
-    Dronningen, Fru Ute, var nu meget fornøiet,
-og der holdtes Kampspil med stor Pragt og lystig
-Musik i ti Dage. Men en Nemesis lurer alt paa
-at straffe hendes Stolthed og Forfængelighed. Hendes
-unge Søn Hagen, som alle de fremmede Riddere,
-Fruer og Jomfruer efter Høflighedens Forskrifter
-vise stor Yndest og Opmærksomhed, bliver
-pludselig røvet af en stor Fugl, hvilket i Oldtiden
-synes ikke at have været ualmindeligt, og maaskee
-ligger til Grund for de nordiske Sagn om »Valravnen», som først i en senere halvchristelig Tids
-Overtro antog den dæmoniske, vampyragtige Hexe-characteer, der er bekjendt af Oehlenschlägers
-fortræffelige Romance<note>*) Dog er det maaskee rimeligst, at de herhen hørende Forestillinger ere, som saa mange andre, komne til os fra Orienten, hvor navnlig Griffen spiller eu lignende overnaturlig Rolle, som man veed deels af den braminske Mythologie, deels af et malayisk Epos, Bida-Sari, hvoraf en hollandsk Oversættelse udkom 1843.</note>.
 
 ---
-
+</prose>
+<poetry>
 En vild og vældig Grif fløi gjennem Luften ned;
 Det Barn,. som Konning Siegband i Lyst og Kjærlighed
 Opfostred glad, for dette stor Sorrig snart han prøved;
@@ -105,37 +110,45 @@ Forbi var Festens Glæde, til Reisen rusted alle Mand,
 Her var ei Sted at blive, det var saa sørgeligt et Land.
 
 ---
-
+</poetry>
+<prose>
     Jarlen græder saa Taarerne rinde ham ned ad Brystet, men hans »ædle Viv» sætter ham i Rette, opfordrer ham til at ende sin Klage, da Alt dog engang er Døden hjemfalden, og da Gjæsterne i Hast ville drage bort, bevarer hun Værdigheden til det Yderste, og holder dem tilbage til hun har beskjænket Alle med Sølv og Guld.  Ogsaa hendes Gemal opmander sig og bortskjænker irlandske Heste, Guld og Sølv »uden at veie det». Saaledes ender Festen.
     Den syvaarige Prinds kommer til et fjernt, øde Eiland, hvor de unge Griffe just ville fortære ham, da han ved et lykkeligt Tilfælde falder ud af deres Kløer, og ned mellem Græsset i en Klippekløft, Her findes han af tre Kongedøttre, som, da de høre, at han er af god christelig Herkomst, pleie og ernære ham med Urter og Rødder.  De boede i en »huul Steen«; den ene, Hilde, var fra India, den anden fra Portugal, den tredie fra Iserland (Bayern?), og de vare ligeledes slæbte herhid af Grifferne; men da der siden opstaaer det Spørgsmaal, hvorledes de alle ere undgaaede Døden, har den gamle Digter været i stor Forlegenhed, thi han veed ingen bedre Forklaring at give, end at »de havde udstaaet saa meget, at de dog ikke kunde svare paa Alt.« Hagen finder ved Kysten en strandet Mands Lig, og med dennes Vaaben lykkes det ham at dræbe Griffene.  Han lever nu med sine tre Prindsesser, der bare en meget ufuldkommen Klædning af Mos, et sandt Robinsons Liv. Han nedlægger et vildt Dyr, en »Gampilone« som han og de unge Piger stege; ved at drikke dets Blod erholder han overnaturlige Kræfter, og uddanner sig nu paa egen Haand til en fuldkommen vaabendygtig Kjæmpe. Et forbifarende Skib forer endelig ham og de tre Prindsesser til Irland, hvor der bliver stor Glæde, da hans Moder gjenkjender ham paa et Guldkors, som han bærer paa Brystet. Han bliver snart slaaet til Ridder (»tager Sværdet«) og vælger sig den skjønne Hilde, Prindsessen af India til sin Brud. Et Aar og tre Dage efter staaer Brylluppet med Tournering og stor Pragt; den gamle Konge nedlægger Regjeringen til Fordeel for sin Søn, og femten Konger hylde ham som Lehnsherre.  En af de tilstedeværende Gjæster, en Konge fra Norge, ægter og hjemfører Prindsessen fra Iserland. Hagen, der tilsidst er bleven saa stærk som »sex og tyve Mænd», regjerer med saa megen Kraft og Retfærd, at han i eet Aar lader nogle og firsindstyve Personer halshugge. Hans Dronning føder ham en Datter, der ogsaa bliver kaldet Hilde, og i sit tolvte Aar er saa skjøn, at Rygtet lokker al Verdens Fyrster til at beile om hendes Haand, blandt disse en Konge af »Waleis» ved Danmark<note>*) Man kunde her let tænke paa Wales i England, men det sees paa flere Steder i det Følgende, at Waleis var Holsteen, eller dog en Deel deraf.</note>; men Hagen lader alle Friernes Sendebud ihjelslaae, thi han vil kun skjænke sin Datter til den, der overgaaer ham i Magt og Ære.
 
----    
+---
 
 
-{c:II.}
+<nonum><center>II.</center></nonum>
 
     I denne Afdeling optræder en ny Frier. Den ovennævnte Konge af Waleis var formodentlig kun en Underkonge. Den egentlige Konge over Danmark, Friesland, Ditmarsken og Waleis, hedder Hettel<note>*) Man mindes ved dette Navn om Ethel eller Atle (Attila) i Digtet og Sagnene om Niebelungerne.</note>, residerer i Landet Hegelingen (maaskee i Østfriesland), i Borgen Kampatille, og da han er meget mægtig, afskrækkes han ikke ved sine Forgængeres Uheld. Han sender Bud »hjem til Danmark« efter sine Stevener og Vasaller, Frode den Kloge og Sangeren (Skjalden) Horand, som nylig havde været paa et Krigstogt til Portugal, — efter Irold i Friesland og Wate den Stridbare fra »Stormenes Land« (Stormarn?), for at de skulle drage til Irland, og ved List forskaffe ham den skjønne Hilde. Der tømres Skibe af »Cypertræ« med Ankertoug fra Arabien og Aarer omvundne med Gnid, og 200 af de medfølgende 1300 Krigere skalle agere Kjøbmænd, opbygge Boder paa Stranden, og sælge de skjønne Damer Pragtklæder og Smykker af Guld og Ædelstene.  Til Irland er der 1000 Mile, som tilbagelægges i 36 Dage. Hagens Gunst vinde de ved rige Gaver, deriblandt 12 castiliske Heste, og ved at indbilde ham, at de i Unaade ere flygtede fra Hettels Hof. De Bevæbnede holdes skjulte i Skibsrummene.  Damerne i Hagens Borg, Balian, fatte særdeles Gunst for de gavmilde Fremmede, og skaffe dem frit Ophold ved Hoffet som Kongens Mænd. De opslaae deres Boder og sælge for Spotpris deres kostbare Varer, til hvilke man aldrig her saa Mage. Frode og Wate blive indbudne til Dronningen i hendes eget Gemak, og hun er saa naadig at kysse den gamle Wate.  Hun og Prindsessen spørge ham hvorledes det behager ham at være i Dameselskab, og om han befandt sig bedre i Strid og Kamp:
-
+</prose>
+<poetry>
 »Heel vel det mig behager her,« den Gamle gav til Svar.
 »Og aldrig hos skjønne Damer saa blødt jeg bænket var.
 Dog Eet var mig end kjærere: hvis jeg med gode Svende
 Og selv i denne Time, i Storm og Kamp tog Sværdet ud i Hænde«.
-
+</poetry>
+<prose>
     Da loe Prindsessen høit og de skjæmtede længe derom i Salen, og da Kjæmperne-gik bad den Skjønne Hilde:
-
+</prose>
+<poetry>
 »Kom oftere hid til Hoffet, en Plads I finde her,
 Og sidde i Fruerstuen er ingen Skam for Jer«
-
+</poetry>
+<prose>
     Siden spiller Wate Schak og holder Fægteøvelse med Kongen, der maae erkjende ham for sin Mester.
     Men endnu større Gunst erhverver den danske Horand sig ved sin Sang, der er saa sød, at Fuglene derved forstumme. Især er Prindsesse Hilde, som særdeles ynder Musik, ganske fortryllet af ham:
-
+</prose>
+<poetry>
 Hun lod ham kalde og sagde: »Syng dog endnu engang
 Den Vise, som alt forhen, Du denne Aften sang!
 Og giv mig alle Aftener kun denne ene Gave,
 At jeg Dig synge hører: forlang hvad Bøn Du vil, Du den skal have!«
-
+</poetry>
+<prose>
     Horand sang nu til den lyse Morgen med stedse skjønnere og fyldigere Stemme, og:
-
+</prose>
+<poetry>
 Den vilde Hagens Datter og hendes Møer smaae,
 De sadde saa stille og lyttede derpaa.
 Og Fuglene i Kongsgaarden ei oplod deres Munde
@@ -155,9 +168,11 @@ Han sagde; »kjære Datter, hvis han hver Aftenstund
 De Viser vilde synge, jeg gav ham tusind Pund;
 Dog ere hine Fremmede af saa hoffærdig Art,
 At neppe disse Toner ved Hoffet vi at høre faae saa snart«.
-
+</poetry>
+<prose>
     Tilsidst lader hun uden Forældrenes Vidende Sangeren kalde til sig paa hendes Kammer. Efter at han atter har sunget alle sine Viser og hun har skjænket ham dyre Ringe og et helt Belte (ligesom man i vor Tid belønner Hofvirtuoser med Titler og Gulddaaser), — forebringer han hende sin Herres Ærinde, og hun samtykker i Ægteskabet paa den Betingelse, at »Horand vil synge hver Aften og Morgen for hende«. De aftale, at Prindsessen skal bede sin Fader om Tilladelse til at besøge Skibene, og ved denne Leilighed lade sig bortføre. Hegelingerne anstille sig nu som om de af Hettel havde erholdt Tilladelse til at vende tilbage, og udbede sig til Afsked den Gunst, at Hagen med sit Hof vil besøge dem paa deres Skibe. Dette skeer, og medens Irlænderne beundre de Skatte, som man tildeels for at lette Skibene har udstillet paa Stranden, seile Hegelingerne bort med Hilde. Hettel opbyder ved Modtagelsen af det glade Budskab om deres Ankomst alle sine Mænd for festligt at modtage de Ankommende. Selv gaaer han dem imøde og kysser Wate og Frode paa Stranden i Waleis, hvor en Lystleir af Hytter og Telte er opbygget.  Men allerede næste Morgen viser sig Hagen, som paa hurtigt udrustede Skibe er ilet efter Bortfø- rerne. Paa Stranden opstaaer en hæftig Kamp, som først ophører ved Kongedatterens forsonende Mellemkomst:
-
+</prose>
+<poetry>
 Da Hagen og hans Kjæmper stod paa den danske Strand
 Da saae man Spyd at flyve fra gode Heltes Hand;
 De, som paa Landet stode, saa tappert monne slaae
@@ -167,72 +182,91 @@ De vexled Hug og Stik alt med de skarpe Spær,
 Under Skjoldene, gjennem Pandserets Aabninger, Enhver
 Uddelte dybe Vunder med freidigt Heltemod:
 Og Vandet blev farvet af det røde, varme Livets Blod.
-
+</poetry>
+<prose>
     Hettel kjæmper tappert med Hagen, men bliver saaret og afløses af den gamle Wate der atter saarer Hagen. Nu optræder hans Datter Hilde og beder Hettel at redde hendes Fader, og da denne erfarer, at det er Kongen selv af Hegelingen, der maner til Fred:
-
+</prose>
+<poetry>
 Saa siger den Overmodige: »Da dette nu jeg veed,
 I ei som lumpne Røvere kom, saa vil jeg give Fred!
 Du har som mægtig Konge, uden Plet paa Din Ære.
 Ved herlig List saa snildelig tilvundet Dig min Datter kjære.«
-
+</poetry>
+<prose>
     Heltene lade nu deres Saar forbinde, og Hagen er tilfreds, da hans Datter faaer en saa stor Konge, der »hersker over syv rige Lande« De drage Alle til Hegelingen, og efter 12 Dages Fester og Udvexling af Gaver, skilles de; Hilde bliver tilbage med Prindsesen af Portugal, samt tyve Jomfruer i hvide Klæder af den bedste Silke.  Hun neier sig og kysser sin Fader til Asked, og da denne kommer hjem, siger han til sin Dronning, den gamle Hilde, at »hvis han havde flere Børn, vilde han sende dem alle til Hegelingerne.«
 
 
-{c:III.}
+<nonum><center>III.</center></nonum>
 
-    De to foregaaende Afdelinger vare egentlig kun Indledning. Først i det sidste meget større Afsnit optræder Handlingens Hovedperson Gudrun, efter hvem Digtet har Navn. Hun danner en interessant Modsætning til Heltinden i Niebelungdigtet, Siegfrieds Gemalinde Chrimhild. Hun har ikke dennes fyrige Lidenskab, men holder sig aldeles fri for alt Had og lastværdig Daad, hvori Chrimhilds dæmoniske Natur forvildede sig. Hun bevarer uforandret, under de skjændigste Mishandlinger, Udtrykket af høi, ren Sjæleadel, af mild, ægte Qvindelighed og Hjertensgodhed. Hun udbreder i Slutningen Lykke rundt omkring sig og minder, for at vende tilbage til ovenberørte Sammenligning, ikke lidet om Odysseens Penelope.  Ogsaa er det mærkeligt, hos hine Tiders stærke Mænd, at møde en Opfattelse af ædel Qvindelighed, som ganske stemmer med en nyere Tidsalders Ideal af den =nordiske= Qvinde.
+
+    De to foregaaende Afdelinger vare egentlig kun Indledning. Først i det sidste meget større Afsnit optræder Handlingens Hovedperson Gudrun, efter hvem Digtet har Navn. Hun danner en interessant Modsætning til Heltinden i Niebelungdigtet, Siegfrieds Gemalinde Chrimhild. Hun har ikke dennes fyrige Lidenskab, men holder sig aldeles fri for alt Had og lastværdig Daad, hvori Chrimhilds dæmoniske Natur forvildede sig. Hun bevarer uforandret, under de skjændigste Mishandlinger, Udtrykket af høi, ren Sjæleadel, af mild, ægte Qvindelighed og Hjertensgodhed. Hun udbreder i Slutningen Lykke rundt omkring sig og minder, for at vende tilbage til ovenberørte Sammenligning, ikke lidet om Odysseens Penelope.  Ogsaa er det mærkeligt, hos hine Tiders stærke Mænd, at møde en Opfattelse af ædel Qvindelighed, som ganske stemmer med en nyere Tidsalders Ideal af den <w>nordiske</w> Qvinde.
     Gudrun er Kong Hettels Datter med Hilde den Yngre. Den Bredhed og Lyst til Gjentagelser, der som staaende Ingredients i hine gamle Digte, gjør dem noget trættende for moderne Læsere, viser sig ogsaa her. Ligesom Tilfældet var med Moderen skaffer Rygtet om hendes Skjønhed ogsaa Datteren mange Friere. Denne afviser med Stolthed: først Sigfrid af Morland (Spanien?), saa Hartmod af Normandiet, og tilsidst Hervig af Sjælland (eller Zeeland). Hartmod, som incognito besøger det danske Hof, faaer af Gudrun som lydig Datter Afslag, uagtet han behager hende. Han pønser nu paa voldsomt Overfald, Hervig kommer ham i Forkjøbet, overrasker »de modige - Danske» med en Krigshær, og beleirer Kongen i hans Residents. Da Hervig synes i Striden at faae Overhaand over Hettel, træder Gudrun mellem de Kjæmpende:
-
+</prose>
+<poetry>
 Hervig den Kjække mange Ildfunker monne slaa
 Af Hjelmene; da dette Værtens<note>*) Saaledes kaldes jævnlig Landets Konge.</note> Datter saa.,
 Gudrun den Skjønne, hun følte øienslyst,
 At Helten var saa tapper; det smerted og dog voldte hende Trøst.
-
-    Hun beder dem af Kjærlighed til hende at slutte Fred; herpaa erholder Hervig hendes Jaord, dog raades det ham ei at hente hende for om et Aar, og imidlertid .»at fordrive Tiden paa et andet Sted med skjønne Damer».
+</poetry>
+<prose>
+    Hun beder dem af Kjærlighed til hende at slutte Fred; herpaa erholder Hervig hendes Jaord, dog raades det ham ei at hente hende for om et Aar, og imidlertid »at fordrive Tiden paa et andet Sted med skjønne Damer».
     I Mellemtiden gjør Sigfrid, Morlands-Kongen, af Skinsyge et Indfald i Hervigs Land. Hettel iler sin Svigersøn til Hjelp, og de indeslutte Fjenden i en Borg ved Søen. Denne Fraværelse benytter Hartmod til med en stor Hær Normanner at angribe Hettels Borg, Matelane, dræbe Besætningen, og bortføre Gudrun med 62 af hendes skjønne Jomfruer, deriblandt den »evig unge« Hildeburg. Hettel slutter nu Fred med Sigfrid, som bliver hans Vasal, og sætter, med nogle, paa Veien, fra en Korstogshær, erobrede Skibe, efter Normannerne, som han indhenter ved en Sanddyne, Wulpensand, paa Kysten af Flandern, hvor de udhvile med deres Bytte. Her kjæmpes med stort Mandefald, men uden Udslag langt ud paa Natten, til alle Spyd paa begge Sider ere opbrugte. Dette Slag nævnes i andre Sagn, og ligeledes i Heltedigtet om Alexander Magnus, som et af de berømteste i Oldtiden:
-
+</prose>
+<poetry>
 Man saae de tappre Danske, som mandelig forfare
 At hvo som Livet elsked ei sig turde vise hvor de vare.
-
+</poetry>
+<prose>
     Men i Mørket dræber Sangeren Horand sin egen Frænde; Hartinods Fader, Ludvig, dræber Hettel, »Værten fra Matelane», og kun Wate holder Træfningen staaende; men Normanerne gjøre stor Larm med Trommer og Basuner, og finde ved denne Krigslist Leilighed til at indskibe sig og seile bort. De Danske have selv lidt for meget til om Morgenen at forfølge Fjenden; de begrave deres Døde og stifte et rigt Klostei paa Wulpensand<note>*) En Øe i Mundingen af Scheldefloden hedder virkelig endnu Wulpen, og her fandtes indtil det 16de Aarhundrede et Benedictinerkloster.</note>. Hjemme i Hegelingen beslutter man paa Wates Raad at vente med Krigens Fortsættelse indtil en nye, kampdygtig Ungdom er i opvoxet.
     De bortførte Jomfruer lide nu meget Ondt, da Gudrun med Bestemthed afslaaer at blive Hartmods Gemalinde. Dennes Fader kaster hende underveis i Havet, og Hartmod redder hende kun med stor Møie ved hendes gule Haarfletninger.  Men hun forbliver urokkelig, erklærer at »hendes Lod herneden fra nu af kun er Klage«, at hun hellere vil lade Livet, end blive Hartmods Brud, og alle hendes skjønne Møer henflyde i Taarer. Sønnen er imidlertid høimodigere end Faderen:
-
+</prose>
+<poetry>
 Saa taler Konning Hartmod: »Hvi vilde I drukne min Viv.
 Gudrun hin deilige? — Hun er mig som mit Liv.
 Hvis det nogen Ånden end min Fader monne være,
 Som sig til Sligt formasted, jeg skaaned ei hans Liv og hans Ære».
-
+</poetry>
+<prose>
     Efter Hjemkomsten gaaer han paa Krigstogt, og overlader Gudruns Opdragelse til sin Moder, den onde Gerlinde, som, da Gudrun ikke vil modtage hendes Velkomstkys, og end mindre samtykke i Ægteskabet og den tilbudte Krone, berøver hende de smukke Klæder, skiller hende fra hendes Jomfruer, og lader hende under Skjældsord og Slag, som den rihgeste Trælkvinde, gjøre Ild paa, feie Væreiser 3 Gange om Dagen, vadske og afviske Støvet med sit skjønne Haar:
-
+</prose>
+<poetry>
 Den Djævleqvinde talte til den skjønne Gudrun saa:
 »Vil Du ei Glæden nyde, Du Qvalen føle maa.»
 Den ædle Ungmøe svared: «Mig tvinger Nød dertil,
 Og hvad som I mig byde, jeg gjerne Alt forrette vil.«
-
+</poetry>
+<prose>
     Hendes Jomfruer maae hegle Hør, spinde og vinde Garn, og Alle bære de deres Skjæbne med stor Taalmodighed. Kun en eneste bliver utro, og gifter sig med Kongens Mundskjænk. Men ogsaa kun en Eneste viser den arme Gudrun Venlighed og Medlidenhed. Det er »Værtens Datter«, Hartmods Søster, den liden Ortrun. Hartmod kommer tilbage og vredes over sin Moders Haardhed; han anvender nu alle Midler, baade Overtalelser og Trudsler, men Gudrun svarer standhaftig, at hun hader ham for sin Faders og sine Venners Død, og vil blive sin trolovede Fæstemand troe, selv om han skulde døe:
-
+</prose>
+<poetry>
 »Jeg veed Jer Fader Ludvig min holde Fader slog,
 Og hvis jeg var en Ridder, jeg selv til Ansvar ham drog;
 Men kun med fælles Villie, naar begge det begjære,
 En Mand en Hustrue tager, saa var det stedse Ret og Ære«.
-
+</poetry>
+<prose>
     Gerlinde straffer hende derpaa endnu strengere; hun maae leve ved Vand og Brød, sove paa en haard Bænk, og hver Dag, selv midt om Vinteren, ved Stranden vadske Klæder for alle Riddere ved Hoffet, og hedder det: »Ingen vadsker saa godt i hele Normandiet.« Hildeburg erholder Tilladelse til i Alt at dele Skjæbne og Arbeide med sin Veninde, som deri finder stor Trøst. De herhenhørende Skildringer minde i paafaldende Grad om lignende i flere af Middelalderens Romaner, som »Herlanda« og »Genoveva«.
     Saaledes hengaae hele tretten Aar, i hvilke Dronning Hilde ikke har ophørt at begræde sin Datter. Hun har nu rustet en ypperlig Flaade af 40 Galeier. Hervig, Horand, Wate, Frode, Irold og Morung fra Holsteen, og flere Høvdinger gaae ombord med 70,000 Stridsmænd fra Danmark, Friesland, Waleis o. s. v. og mødes ved Wulpensand med Haradinernes Konge, Sigfrid af Morland, som bringer 10,000 Mand Hjælpetropper og Proviant for tyve Aar. Ganske som i Odysseen udstaae de først mange Farer ved Storm og Trolddom. De komme saaledes paa deres Reise for nær til »Magnetlandet«, hvis Bjerge trække saa stæikt, at alle deres Master blive krumme:
-
-=Der= lever Folket herligt; saa rigt er dette Land,
+</prose>
+<poetry>
+<w>Der</w> lever Folket herligt; saa rigt er dette Land,
 At op af Vandet Sølvet stiger som Sand i Strand;
 Med det de mure Borge, af Steen der er ei andet
 End pure, roden Guld, saa Armod ikke kjendes der i Landet.
-
+</poetry>
+<prose>
     Da imidlertid de blandt Krigerne paa Flaaden, som ere Christne, fremsige deres Bønner, dreier Vinden sig, og de komme lykkelig bort, og lande endelig paa Kysten af Normandiet. I Førstningen skjuler Hæren sig i en Skov, og Hervig gaaer med Gudruns Broder Ortwin op i Landet for at udspeide, om hun endnu er i Live. Men:
-
+</prose>
+<poetry>
 De havde med Raadslagning den ganske Dag tilbragt;
 Nu var det vorden silde, og Solens fulde Pragt
 Laa hist bag ved Gustrate i Skyer alt forborgen.
 Ortwin og Hervig maatte da vente til den næste Morgen.
-
+</poetry>
+<prose>
     Gudrun og Hildeburg vaske som sædvanlig ved Stranden. Paa en underfuld Maade erfare de deres Venners Nærhed af en talende Fugl:
-
+</prose>
+<poetry>
 Det var i Fastetiden, da over Bølgen blaae
 En Fugl til dem kom svømmende. Da talte Gudrun saa:
 Vee, skjønne Fugl!  O vil Du Dig over mig forbarme,
@@ -245,38 +279,46 @@ Du ædle, høie Ungmøe, fra Dine Frænder Bud jeg bringer Dig».
 
 Det var saa stort et Under, den høie Jomfru huld,
 Hun troede ei ret paa Røsten af denne vilde Fugl.
-Da talte Fuglen atter: .»Jeg fra Din Hjemstavns Land
+Da talte Fuglen atter: »Jeg fra Din Hjemstavns Land
 Og Dine Budskab bringer; Gud sender Dig sin Trøst til denne Strand«.
 
 Den ædle Gudrun knæled i Sandet ned saa glad,
 Med Korsets Tegn til Himlen saa varm en Bøn hun bad.
 Hun talte til Hildburga: »Tak Gud for denne Ære!
 At han os ei forgjætted; nu skal vi ikke længer Kummer bære.
-
+</poetry>
+<prose>
     Hun spørger nu Fuglen ud om Moder, Broder og Brudgom, dernæst om Wate, Horand, Frode og de andre Helte, og erholder paa Alt det glædeligste Svar. Det gik denne Dag daarligt med Vadsken, og om Aftenen modtager Gerlinde dem med Skjældsord. Om Natten falder der Snee, og de bede næste Morgen om Skoe for ei at fryse fordærvet; men det nytter ikke; de maae gaae til Stranden med bare Fødder. Da kommer Baaden med Hervig og Ortvin, som ikke gjenkjende de to Vadskerpiger. Disse forsøge at flygte, da de vare i det bare Linned, hvorfor Mændene tilbyde dem deres Kapper;
-
+</prose>
+<poetry>
 Det var den Tid da Dagen begynder at blive lang,
 Og Fuglen halv ængstelig prøver sin Strubes Klang,
 For at synge sine Viser, naar den kolde Marts er svunden;
 I Snee og lis saa bleve de arme frændeløse Piger funden.
-
+</poetry>
+<prose>
     Gudrun fortæller, for at sætte Hervig paa Prøve, først at hun er død af Kummer; men da begge derover fældede Taarer, og Hervig fremviser sin Trolovelses Ring, saa finder Gjenkjendelsen Sted, han bedækker hendes Mund med utallige Kys, og hun fortæller ham nu sin Skjæbne. Ortwin vil af ridderlig Følelse ikke hemmelig føre Jomfruerne bort, men lover at afhente dem næste Dag med 80,000 Mand. Gudrun føler sig paa eengang saa freidig og stolt, at hun uden Hensyn til at hendes Ryg siden maae undgjælde det, kaster alle de Klæder, hun skulde vadske, i Havet, saa man aldrig saae dem mere. Gerlinde lader hende binde til et Sengested i hendes eget Gemak, og laver sig til »at slaae hende Huden fra Benene». Da redder Gudrun sig ved List, idet hun tilbyder at ville ægte Hartmod. Nu er der Jubel i Borgen Hassiane, skjønt Gerlinde ikke er fri for Mistanke. Hartmod iler glædedrukken til, og vil strax omfavne Gudrun, men hun gjør ham opmærksom paa, at hun endnu gaaer i det blotte Linned, og at det ikke sømmer sig for en rig Konge at berøre en Vadskerpige før hun er iført kongelige Klæder. Hun forlanger nu, »efter saa lang Tids Trældom« først »et skjønt Bad før hun gaaer tilsengs«; derpaa fordrer hun sine 62 Jomfruer udleverede, samt Bad, god Mad og de bedste Klæder for dem Alle. Den liden Ortrun, en Figur, som er tegnet med stor Naivitet og binhed, fryder sig inderlig over at see Gudrun i Ære og Værdighed. For at formindske Besætningen paa Borgen, raader Gudrun Hartmod at sende Bud ud over hele Landet for at indbyde alle hans Venner og Riddere. Hendes Terner græde endnu ved Tanken om stedse at skulle blive her; men da »lo Gudrun for første Gang i 13 Aar» saa høit, at Gerlinde hører det og mærker Uraad.
     Gudrun lyses tilsengs af 30 Pager; Leiet, er redt med arabiske Puder, skjønne Silketæpper og kostbare Fiskehuder. Hun laaser nu Døren, drikker »god Vin« med sine Terner, fortæller dem, at hun idag har kysset sin Mand og sin Broder, og lover at gjøre den til den Rigeste som først forkynder hende Morgenens Komme. Til en Kamp hos hende mellem Pligten (eller Æren) og den Kjærlighed, hun følte for Hartmod, som vilde have givet en moderne Digter nok at bestille, mærker man ikke det Ringeste.
     Ved Tilbagekomsten omringe alle Hegelmgerne Hervig og Ortwin for at spørge Nyt; men disse erklære meget fornuftigt, at de ikke kunne fortælle Enhver især, hvad de have seet, og sammenkalde Høvdingerne, for gjennem disse at tilfredstille Hærens Nysgjerrighed. Nogle ville ikke troe at Gudrun endnu lever, Andre græde, da de høre hendes Fornedrelse; men da bliver den gamle Wate vred og skammer dem ud:
-
+</prose>
+<poetry>
 »Fy, som gamle Kjærlinger I Eder jo gebærde,
 Og veed end ei hvorfore! Graad klæder ikke Mænd med Sværd om Hærde«.
-
+</poetry>
+<prose>
     Denne skjændende Nestor blandt de Danske mangler imidlertid ikke Sands for Naturen. Han opfordrer til rask Opbrud med de Ord:
-
+</prose>
+<poetry>
 »Luften er saa qvægende, saa reen og stjernerig,
 Og skinner Maanen heel prægtig; forvist det flyder mig.
 Forlader nu denne øde Kyst, I Helte dyrebare:
 Saa stander vi for Ludvigs Borg ved næste Morgengry det klare.«
-
+</poetry>
+<prose>
     Om Natten omringes Borgen i al Stilhed.  Wate rider i Spidsen med Dronning Hildes Banner, og da Gudrun ved forste Morgengry vækkes af en Terne, seer hun, som Helene for Trojas Mure, sine Frænders Hjelme og straalende Vaaben.  Dog bliver hun vemodig stemt ved Tanken om, at for hendes Skyld saamange tappre Mænd idag skulle lade Livet. Da blæser Vægteren Allarm fra Taarntinden; Gerlinde springer op fra sit Leie hos den gamle Kong Ludvig, som endnu ikke vil troe paa Faren, men mener, det er Pilegrimme, som ville indkjøbe Forraad her i Havnen.  Men Hartmod kjender og optæller alle Fanerne og Hærene; den fra Stormland og Haradien (ɔ: Morland), den danske, frisiske, sjællandske, holsteenske og hegelingske. Gerlinde raader at forsvare sig fra Borgen, men Hartmod gjør et Udfald, og rider foran sin Hær, »saa statelig som en Keiser, og hans hvide Jernklæder glindsede i Solen». I Kampen saarer han Horand og Ortwin, men med al Tapperhed formaaer han Intet mod den uhyre Overmagt, hvormed »de modige Danske« ride op mod Borgen. Kong Ludvig falder i Kamp med Hervig, efter at de først have lettet deres Hjerter ved at udskjælde hinanden (ligesom hos Homer), Frode og Morung dræbe med deres Holstenere en Mængde Helte, og der følger nu en detailleret Skildring af Blodbadet. Hervigs Mod opflammes ved Tanken om, at hans Brud fra Borgen er Vidne til hans Bedrifter.
     Da Stillingen bliver meer og meer fortvivlet, vil Gerlinde ved en kjøbt Svend lade Gudrun dræbe, men denne tilsidesætter »al Hofetiquette og skriger saa høit», at Hartmod hører hendes Stemme, og redder hende ved at true Svenden med Galgen. Under en Hagel af Pile og Kastevaaben afskjærer Wate Hartmod, som søger at trække sig tilbage til Borgen; men endskjønt Wate besidder 26 Mænds Styrke, kan han dog ikke i Tvekampen faae Bugt med Hartmod. Da vender dennes Søster, den liden Ortrun, sig til Gudrun med Bøn om at skaffe Fred for Hartmod.  Hun raaber nu ned til Hervig, at han skal adskille de Kæmpende, hvilket han ogsaa gjør, men taaer til Tak »et grimt Hug» af Wate, der bliver meget vred, og aldrig kunde lide, at Nogen vovede i Strid at skille ham fra hans Fjende. Med Hartmods Fangenskab er Kampen endt. De Danske trænge, under Sangeren Horand, med Hildes Banner, ind i Borgen, og Wate skaaner i Berserkergang hverken Qvinder eller Børn, »for at disse ei skulle gjøre Skade, naar de voxe op».  Den onde Gerlinde falder nu paa Knæ for Gudrun, og beder om hendes Beskyttelse, hvilken denne vil afslaae; dog tillader hun hende, tilligemed den utro Terne, der havde giftet sig med Kong Ludvigs Mundskjænk, »for at blive Hertuginde«, at skjule sig imellem hendes Tjenesteqvinder.  Gudrun siger til Wate, at den onde Dronning ikke er her, og beder ham, ikke komme hende for nær, da han er saa blodig. Men han lader sig ikke skuffe:
-
+</prose>
+<poetry>
 Den Skjælvende den gamle Wate dog øinet har;
 Af Harme skar han Tænder, da han blev hende var.
 Med de lynende Dine og sit alenbrede Skjæg
@@ -286,145 +328,27 @@ Ved Hænderne han hende ud af Salen drog med Fart,
 Hvad han i Sinde havde, det mærked Alle snart;
 Han hende greb ved Haaret; der hjalp ei Bøn, ei Beden,
 Hendes Hoved han afhugged, — saa foer den onde Dronning heden.
-
+</poetry>
+<prose>
     Det Samme gjør den Gamle, »som her er Tugtemester«, ved den »utroe Terne«; alene Ortrun og hendes 32 Terner blive paa Gudruns Forbøn skaanede. Wate vil stikke Ild paa Fæstningen Kassiane, men det forhindres af Frode den Danske. Over 4000 Lig kastes i Havet, Hegelingerne ødelægge 26 Borge, erobre Landet og vende hjem med mange Gidsler, skjønne Qvinder og et uhyre Bytte. Fru Hilde kommer dem imøde paa Stranden, og bereder dem foran sin Borg Matilane den festligste Modtagelse. Hartmod erholder Pardon, og Digtet ender med almindelig Glæde. Hilde vil forst ikke kysse den liden Ortrun.  men beqvemmer sig dog dertil, da Gudrun med Taarer beder derom. Da Sigfrid stiger iland, synge hans Kæmper »en Arabervise«. Alle Høvdinge lønnes med Æreslehn<note>*) Frode den Danske udnævnes saaledestilKammerherre (Kamerære) hos Dronning Hilde.</note> og store Gaver. Før sin Formæling vil Hervig, Jarlen af Sjælland (eller Zeeland) vise Gudrun sin store Vennesælhed (og tillige en god Politik) ved at bringe Ægteskaber istand mellem hendes Broder Ortwin, Kongen i Ortland, og liden Ortrun, mellem Hartmod og Hildeburg, der nu maa have været temmelig tilaars, men hvem Gudrun »af Taknemlighed» skaffer en Gemal, — og endelig mellem Hervigs Søster og Morlandskongen af Karadina, der tidligere havde ødelagt og plyndret Sjælland; men derfor erklærer han sig nu ogsaa villig til at ægte Prindsessen »om hun saa kun eied en eneste Særk«. Wate sendes afsted for at hente hende hid, men paa Veien have de andre Helte deres Nød med at afholde ham fra Slag og Strid.  Hervigs Søster samtykker i at ægte Sigfrid, »da han eier ni Kongeriger«, uagtet han og hans Riddere ere noget mørke i Huden<note>*) Det siges udtrykkelig, at hans Forældre var af forskjellig Race (arabisk og spansk), men han selv saa dog ganske christelig ud, og havde endog guulladent Haar.</note>. Formælingen feires med de sædvanlige Ceremonier; 600 Svende slaaes til Riddere; kostelige Gaver uddeles til Brudeparrene og til de Skjalde, som forherlige Festen; men om Vielse eller Præster tales Intet, formodentlig fordi Begivenhederne og Sagnene tilhøre den hedenske, og kun den poetiske Udarbeidelse en christelig Tid. De fire Par drage nu hjem hver til sit Rige; Gudrun lover tre Gange om Aaret at sende sin Moder Bud, og Ortwin og Hervig slutte »en evig Alliance»:
-
+</prose>
+<poetry>
 Ortwin og Hervig de s vore nu i Pagt
 Hinanden ubrødelig Troskab; samt Sværd og Kongemagt
 Deres høie Fædre værdigt, med Ære steds at føre:
 Vil Nogen dem volde Skade, den skulde begge fange og tilintetgjøre.
+</poetry>
+<prose>
+    Hvad nu de forskjellige lærde eller ulærde Betragtninger angaaer, hvortil dette interessante Digt kunde give Anledning, saa frembyder sig først den Mærkelighed, at det Sagn, der her af en eller flere tydske, og som det synes, endog sydtydske Digtere, er benyttet som Grundlag, er af <w>nordisk</w> Oprindnlse, eller dog hører til dem, som engang vare fælles for flere af Europas Nationer, men med størst Omhu og Skjønsomhed bleve opbevarede i Norden. Ogsaa i andre gammeltydske Digte, som i »Parcival« og i »Biterolf og Dietleib« findes Keminiscentser eller Variationer af samme Sagn; selv i Niebelungdigtet har man villet gjenkjende det Samme i anden Opfattelse, som overhovedet i den tydske Middelalderpoesie de heterogeneste og historisk forskelligste Sagn hyppig sammensmeltes; men det er fornemmelig Fortællingen i <w>Snorros Edda</w> om Hedin, Høgne og Hilde<note>*) Moderniseret i sentimental Novelleform, efter Datidens Smag, af Samsøe.</note>, der maa ansees som den oprindelige Kilde og Spire til vort Digt. Den samme Fortælling meddeles som bekjendt af Saxo Grammaticus, næsten ganske enslydende, kun tilstudset og latiniseret paa hans sædvanlige Maneer. Hedin (Hettel) overfalder i Høgnes (Hagens) Fraværelse dennes Land med Krig, og bortfører hans Datter Hilde. Høgne forfølger og indhenter ham ved en af Ørkenøerne. Hilde vil stifte Forsoning (som i det her omhandlede Digt), men det nordiske Sagn kjender ikke det blødere Sydens Trang til blid og glædelig Opløsning: hun afvises af Faderen, og opfordrer nu selv Hedin til Kamp. Da Kongerne have kjæmpet hele Dagen, gaae de om Aftenen ombord paa deres Skibe, men Hilde vækker om Natten ved Trolddom de Døde op igjen. Derfor varer Kampen til Dommedag og kaldes »Hildes Leg». — I Vilkinasaga forekommer en noget lignende Bortførelse, men Hilde er her en Datter af Kong Arthus af Bretagneland. Man vil bemærke, at Ligheden med Snorro indskrænker sig nærmest til vort Digts anden Afdeling. Men herved er atter at bemærke, at ligesom ofte i forskjellige Digte det samme Sagn, eller dog de samme Ideer og Grundmotiver varieiedes med afvigende Staffage, saaledes ligger i Gudrun-Digtet den samme Sagnkjærne, og, om jeg saa maa sige, den samme officielle Tankegang, til Grund for alle tre Afdelinger, blot med passende Variation af Personer, Navne og Lokale, medens selv i sidste Afdeling dog kun de oprindelige Grundmotiver udvikle sig under stigende Mangfoldighed i en langt rigere Composition. Dertil kommer, at det i hin Tid hørte til de æsthetiske Fordringer, at Digteren gav nøiagtig Underretning om Hovedpersonernes Slægt og Forfædre, som ogsaa Tilfældet er f. Ex. i »Percival» og »Tristan».  Men Publikums Smag var dengang ikke saa forvænt og kræsen som nuomstunder, og derfor fandt Digteren det ikke fornødent, for den herhenhørende Deel af Digtet at opfinde en særegen Fabel og Handling, eller man ansaae det endog for en æsthetisk Skjønhed i Forfædrenes Liv at lade sine Heltes og Heltinders Charakteer og Skjæbne afspeile sig i kort Udtog. Det var aabenbart, at de hyppige Gjentagelser her, ligesom hos Homer, ingenlunde ere blot Naivitet, men en Methode.
+    Der er saaledes intet Væsentligt til Hinder for, at Hilde den ældre og yngre, saavelsom Gudrun, i det oprindelige Sagn har været en og samme Person; dette er en ganske uskyldig og maaskee grundet Formodning. Men de lærde tydske Fortolkere gaae, som sædvanligt, langt videre paa de frie Phantasiers Gebeet. Saaledes forsikkrer Hr. Albert Schott (en Schwaber), at der ikke kan være Tvivl om, at vi her have et forhistorisk Gudesagn for os, ganske det samme, som hos Grækerne fremtraadte poetisk i Iliaden, efterat det først var gaaet over til historisk Skikkelse. I Norden foregik denne Udvikling, fra den oprindelige, symbolsk-mythiske, til historisk, og derpaa til poetisk Form, naturligviis meget langsommere, men stedse efter de samme Love og i samme Orden. Derfor er det ganske forklarligt, at Snorro opfattede Sagnet om Hilde historisk, som en Beretning om menneskelige Forhold, uden at erkjende dets oprindelige, mythiske, natursymbolske Betydning, at det Hele nemlig kun er Oldtidens uskyldige Forestilling om den uophørlige Kamp mellem Lys og Mørke, — og uden at betænke, at Hedins og Høgnes Kamp, som evig fortsættes, kun er den evige Afvexling af Vinter og Sommer, at de Faldne, som Hilde hver Morgen vækker tillive, kun ere Skovene og Blomsterne, som i Vaaren atter leve op. Dog anfører Snorro som en Slags Undskyldning, at han »kun beretter som det hedder i de gamle Sange«, i hvilke vistnok en sagte Bevidsthed om Gudesagnet endnu levede. Dette Gudesagn er da ikke Andet, end den nordiske Mythe om Balder og Høder (som Saxo meddeler den), og den græske om Persephone, Dionyses og Hades.
+    Man mærker, at Hr. Schott ikke var ubekjendt med Finn Magnusens lærde »Eddalære», eller maaske har han nærmest øst af hans Landsmands Uhlands Skrift om »Thorsmythen». Iliaden staaer nu i samme Forhold til den græske, som Gudrundigtet til den nordiske Mythe. Saavel de nordiske som Sydens Guder vare ikke apotheoserede Mennesker, men personificerede Naturkræfter. Hedin (Hettel) og Hartmod er det Samme som Hoder (Vinteren), og denne atter Eet med Hades, Jomfrurøveren, som i Iliaden er udviklet til to Personer (Hektor-Paris). Høgne (Hagen), Hervig, og i Niebelungdigtet Sigfrid, ere Alle Eet med Balder (Sommeren), denne atter Eet med Zeus, Persephones Fader, og hos Homer: Menelaos-Achilles.  Den qvindelige Personification, Hilde-Gudrun, saavelsom Chrimhild, er identisk med Nanna (Blomster verdenen, hvis skjønneste Tid falder sammen med Balders Lysherredømme), og paa den anden Side med Persephone og Helene. Endelig finder han, at Horand erindrer om Ares, (der rigtignok ikke var bekjendt som Sanger) og Wate om Odin (Wodan), der ogsaa tænkes som en gammel og »bredskjægget« Person, o. s. v.
+    Jeg anfører Alt dette egentlig meest som Curiøsitet af tvivlsomt Værd (subtilius quam verius), da Enhver vil indrømme, at Digtets poetiske Interesse ikke forhøies ved disse Conjecturer, de være nu grundede eller ikke. Skulde de virkelig være historisk og philosophisk rigtige, saa vilde man idetmindste kunne spare sig al Uleilighed for at efterforske den historiske og geographiske Scene for Digtets Begivenheder, og de i det Forangaaende af og til antydede Paralleler eller Henvisninger til bekjendte, geographiske Navne, ere naturligvis kun yderst beskedne og vistnok ofte urigtige Formodninger.
+    Det Rigtigste og eneste Sikkre i denne Henseende er vel, at Digteren selv slet ikke har vidst Besked om de Steder, hvor han henlægger sine poetiske Skuepladse. Man veed ikke ret, om han mener Normandiet i Frankrig, eller Normanernes oprindelige Hjem i Norge og Danmark.  Han synes ved Benævnelsen »Danske« at forstaae Befolkningen af hele Skandinavien og Nordtydskland, ligesom endnu den Dag i Dag »Normanerne« i Folkesagn og populær Literatur i Frankrig kun forekommer under Navn af »Danois». Under dette Navn beleirede de i det 9de Aarhundrede Paris, og denne Begivenhed, der endog i den nyere Tid ofte er benyttet som Grundlag til historiske Romaner og romantiske Skildringer, er Anledning til at man af og til i Literaturen støder paa Yttringer om de Danskes tidligere historiske Storhed, som ellers ifølge de Franskes bekjendte Uvidenhed kunde synes overraskende.  Naar Talen er om Dansk og dansk Historie, tænker en Franskmand ikke paa Andet end Paris’s Beleiring og Vilhelm Erobreren.
+    Aabenbar Uvidenhed af den gamle Digter er det, naar han giver den danske (holstenske) Kong Hettels Borge saa unordiske, keltiske Navne som Kampatilla og Matelane. Det forklares dog let, naar man antager, at ligesom Beowulfdigtet er forfattet af en Angelsachser efter danske, saaledes er »Gudrun« forfattet efter nordtydske Kilder, af en Sydtydsker, hvis Navn dog ikke har været til at opdage. Og dog synes Gudrundigtet tidlig at have nydt en ikke ringe Celebritetet; det nævnes saaledes af andre ansete Digtere, som i Digtene om »Weinschelz« (omtr. 1230—40), om »Ridder Tannhäuser« (1250), og i den »Wartburger Sangerkrieg« (1290). Det var især Sangeren Horands Person, der i høi Grad synes at have betaget hine andre Digtere. Dog nævnes denne allerede i »Salomon og Morolf» (omtr. 1190), saa at man maaskee kan antage, han alt tidligere har været bekjendt af de gamle Folkesangere<note>*) En saadan lille Sang af den ældste, mythiske Art (den handler om „Balders Hest“) blev for nogle Aar siden opdaget i Merseburg.</note>.  Unægtelig maa man for Opbevareisen af disse og de derpaa grundede større Digte takke Middel alderens Fyrstehoffer, hvor de vandrende Sangere og Digtere vare velkomne Gjæster.
+    Til Gudrundigtets nyeste Historie hører, at det fornylig ikke blot er omgjort til et tragisk Drama af Victor Strausz, Bückeburgsk Gesandt i Frankfurt, og sammesteds ikke ubekjendt som Digter, men ogsaa er bearbeidet til en Opera, med Musik af en Darmstaater Componist, og opført, som det synes med Bifald, paa Theatret i Hof- og Residentsstaden Darmstadt. De Franske gaae endnu længere tilbage i Tiden for at finde Operastoffer. Som bekjendt behandlede fornylig en stor Opera af Scribe og Auber, der formodentlig troe at have udtømt hele Nutiden og Middelalderen, den bibelske Parabel om <w>den forlorne Søn</w>.
+</prose>
+</body>
+</text>
 
-    Hvad nu de forskjellige lærde eller ulærde Betragtninger angaaer, hvortil dette interessante Digt kunde give Anledning, saa frembyder sig først den Mærkelighed, at det Sagn, der her af en eller flere tydske, og som det synes, endog sydtydske Digtere, er benyttet som Grundlag, er af =nordisk= Oprindnlse, eller dog hører til dem, som engang vare fælles for flere af Europas Nationer, men med størst Omhu og Skjønsomhed bleve opbevarede i Norden. Ogsaa i andre gammeltydske Digte, som i »Parcival« og i »Biterolf og Dietleib« findes Keminiscentser eller Variationer af samme Sagn; selv i Niebelungdigtet har man villet gjenkjende det Samme i anden Opfattelse, som overhovedet i den tydske Middelalderpoesie de heterogeneste og historisk forskelligste Sagn hyppig sammensmeltes; men det er fornemmelig Fortællingen i =Snorros Edda= om Hedin, Høgne og Hilde<note>*) Moderniseret i sentimental Novelleform, efter Datidens Smag, af Samsøe.</note>, der maa ansees som den oprindelige Kilde og Spire til vort Digt. Den samme Fortælling meddeles som bekjendt af Saxo Grammaticus, næsten ganske enslydende, kun tilstudset og latiniseret paa hans sædvanlige Maneer. Hedin (Hettel) overfalder i Høgnes (Hagens) Fraværelse dennes Land med Krig, og bortfører hans Datter Hilde. Høgne forfølger og indhenter ham ved en af Ørkenøerne. Hilde vil stifte Forsoning (som i det her omhandlede Digt), men det nordiske Sagn kjender ikke det blødere Sydens Trang til blid og glædelig Opløsning: hun afvises af Faderen, og opfordrer nu selv Hedin til Kamp. Da Kongerne have kjæmpet hele Dagen, gaae de om Aftenen ombord paa deres Skibe, men Hilde vækker om Natten ved Trolddom de Døde op igjen. Derfor varer Kampen til Dommedag og kaldes »Hildes Leg». — I Vilkinasaga forekommer en noget lignende Bortførelse, men Hilde er her en Datter af Kong Arthus af Bretagneland. Man vil bemærke, at Ligheden med Snorro indskrænker sig nærmest til vort Digts anden Afdeling. Men herved er atter at bemærke, at ligesom ofte i forskjellige Digte det samme Sagn, eller dog de samme Ideer og Grundmotiver varieiedes med afvigende Staffage, saaledes ligger i Gudrun-Digtet den samme Sagnkjærne, og, om jeg saa maa sige, den samme officielle Tankegang, til Grund for alle tre Afdelinger, blot med passende Variation af Personer, Navne og Lokale, medens selv i sidste Afdeling dog kun de oprindelige Grundmotiver udvikle sig under stigende Mangfoldighed i en langt rigere Composition. Dertil kommer, at det i hin Tid hørte til de æsthetiske Fordringer, at Digteren gav nøiagtig Underretning om Hovedpersonernes Slægt og Forfædre, som ogsaa Tilfældet er f. Ex. i »Percival» og »Tristan».  Men Publikums Smag var dengang ikke saa forvænt og kræsen som nuomstunder, og derfor fandt Digteren det ikke fornødent, for den herhenhørende Deel af Digtet at opfinde en særegen Fabel og Handling, eller man ansaae det endog for en æsthetisk Skjønhed i Forfædrenes Liv at lade sine Heltes og Heltinders Charakteer og Skjæbne afspeile sig i kort Udtog. Det var aabenbart, at de hyppige Gjentagelser her, ligesom hos Homer, ingenlunde ere blot Naivitet, men en Methode.
-    Der er saaledes intet Væsentligt til Hinder
-for, at Hilde den ældre og yngre, saavelsom Gudrun,
-i det oprindelige Sagn har været en og
-samme Person; dette er en ganske uskyldig og
-maaskee grundet Formodning. Men de lærde tydske
-Fortolkere gaae, som sædvanligt, langt videre paa
-de Irie Phantasiers Gebeet. Saaledes forsikkrer
-Hr. Albert Schott (en Schwaber), at der ikke kan
-være Tvivl om, at vi her have et forhistorisk
-Gudesagn for os, ganske det samme, som hos
-Grækerne fremtraadte poetisk i Iliaden, eLerat det
-først var gaaet over til historisk Skikkelse. I
-Norden foregik denne Udvikling, fra den oprindelige,
-symbolsk-mythiske, til historisk, og derpaa
-til poetisk Form, naturligviis meget langsommere,
-men stedse efter de samme Love og i samme
-Orden. Derfor er det ganske forklarligt, at Snorro
-opfattede Sagnet om Hilde historisk, som en Beretning
-om menneskelige Forhold, uden at erkjende
-dets oprindelige, mythiske, natursymbolske Betydning,
-at det Hele nemlig kun er Oldtidens uskyldige
-Forestilling om den uophørlige Kamp mellem
-Lys og Mørke, — og uden at betænke, at Hedins
-og Høgnes Kamp, som evig fortsættes, kun er
-den evige Afvexling af Vinter og Sommer, at de
-Faldne, som Hilde hver Morgen vækker tillive,
-kun ere Skovene .og Blomsterne, som i Vaaren
-atter leve op. Dog anfører Snorro som en Slags
-Undskyldning, at han »kun beretter som det hedder
-i de gamle Sange«, i hvilke vistnok en sagte
-Bevidsthed om Gudesagnet endnu levede. Dette
-Gudesagn er da ikke Andet, end den nordiske
-Mythe om Balder og Høder (som Saxo meddeler
-den), og den græske om Persephone, Dionyses og
-Hades. Man mærker, at Hr. Schott ikke var ubekjendt
-med Finn Magnusens lærde »Eddalære», eller
-maaske har han nærmest øst af hans Landsmands
-Uh la nds Skrift om »Thorsmythen». Iliaden staaer
-nu i samme Forhold til den græske, som Gudrundigtet
-til den nordiske Mythe. Saavel de nordiske
-som Sydens Guder vare ikke apotheoserede Mennesker,
-men personificerede Naturkræfter. Hedin
-(Hettel) og Hartmod er det Samme som Hoder
-(Vinteren), og denne atter Eet med Hades, Jomfrurøveren,
-som i Iliaden er udviklet til to Personer
-(Hektor-Paris). Høgne (Hagen), Hervig,
-og i Niebelungdigtet Sigfrid, ere Alle Eet med
-Balder (Sommeren), denne atter Eet med Zeus,
-Persephones Fader, og hos Homer: Menelaos-Achilles.
-Den qvindelige Personification, Hilde-Gudrun,
-saavelsom Chrimhild, er identisk med Nanna (Blomster
-verdenen, hvis skjønneste Tid falder sammen
-med Balders Lysherredømme), og paa den anden
-Side med Persephone og Helene. Endelig finder
-han, at Horand erindrer om Ares, (der rigtignok
-ikke var bekjendt som Sanger) og Wate om Odin
-(Wodan), der ogsaa tænkes som en gammel og
-»bredskjægget« Person, o. s. v.
-Jeg anfører Alt dette egentlig meest som
-Curiøsitet af tvivlsomt Værd (subtilius quam verius),
-da Enhver vil indrømme,. at Digtets poetiske Interesse
-ikke forhøies ved disse Conjecturer, de
-være nn grundede eller ikke. Skulde de virkelig
-være historisk og philosophi.sk rigtige, saa vilde
-man idetmindste kunne spare sig al Uleilighed for
-at efterforske den historiske og geographiske Scene
-for Digtets Begivenheder, og de i det Forangaaende
-af og til antydede Paralleler eller Henvisninger
-til bekjendte, geographiske Navne, ere naturligvis
-kun yderst beskedne og vistnok ofte urigtige Formodninger.
-Det Rigtigste og eneste Sikkre i denne Henseende
-er vel, at Digteren selv slet ikke hai
-vidst Besked om de Steder, hvor han henlæggei
-sine poetiske Skuepladse. Man veed ikke ret, om
-han mener Normandiet i Frankrig, eller Normanernes
-oprindelige Hjem i Norge og Danmark.
-Han synes ved Benævnelsen »Danske« at forstaae
-Befolkningen af hele Skandinavien og Nordtydskland,
-ligesom endnu den Dag i Dag »Normanerne
-« i Folkesagn og populær Literatur i
-Frankrig kun forekommer under Navn af »Danois
-». Under dette Navn beleirede de i det 9de
-Aarhundrede Paris, og denne Begivenhed, der
-endog i den nyere Tid ofte er benyttet som
-Grundlag til historiske Romaner og romantiske
-Skildringer, er Anledning til at man af og til i
-Literaturen stader paa Yttringer om de Danskes
-tidligere historiske Storhed, som ellers ifølge de
-Fianskes bekjendte Uvidenhed kunde synes overraskende.
-Naar Talen er om Dansk og dansk
-Historie, tænker en Franskmand ikke paa Andet
-end Paris’s Beleiring og Vilhelm Erobreren.
-Aabenbar Uvidenhed af den gamle Digter er
-det, naar han giver den danske (holstenske) Kong
-Hettels Borge saa unordiske, keltiske Navne som
-Kampatilla og Matelane. Det forklares dog let,
-naar man antager, at ligesom Beowulfdigtet er
-forfattet af en Angelsachser efter danske, saaledes
-er »Gudrun« forfattet efter nordtydske Kilder, af
-en Sydtydsker, hvis Navn dog ikke har været til
-at opdage. Og dog synes Gudrundigtet tidlig
-at have nydt en ikke ringe Celebritetet; det nævnes
-saaledes af andre ansete Digtere, som i
-Digtene om »Weinschelz« (omtr. 1230 — 40),
-om »Ridder Tannhåuser« (1250), og i den »Wartburger
-Sangerkrieg« (1290). Det var især Sangeren
-Horands Person, der i høi Grad synes at
-have betaget hine andre Digtere. Dog nævnes
-denne allerede i »Salomon og Morolf» (omtr. 1190),
-saa at man maaskee kan antage, han alt tidligerø
-3
-har været bekjendt af de gamle Folkesangere*).
-Unægtelig maa man for Opbevareisen af disse og
-de derpaa grundede større Digte takke Middel
-alderens Fyrstehoffer, hvor de vandrende Sangere
-og Digtere vare velkomne Gjæster.
-• Til Gudrundigtets nyeste Historie hører, at
-det fornylig ikke blot er omgjort til et tragisk
-Drama af Victor Strausz, Biickeburgsk Gesandt i
-Frankfurt, og sammesteds ikke ubekjendt som
-Digter, men ogsaa er bearbeidet til en Opera,
-med Musik af en Darmstaater Componist, og opført,
-som det synes med Bifald, paa Theatret i
-Hof- og Residentsstaden Darmstadt. De Franske
-gaae endnu længere tilbage i Tiden for at finde
-Operastoffer. Som bekjendt behandlede fornylig
-en stor Opera af Scribe og Auber, der formodentlig
-troe at have udtømt hele Nutiden og Middelalderen,
-den bibelske. Parabel om den forlorne
-Søn.
-*) En saadan lille Sang af den ældste, mythiske
-Art (den handler om „Balders Hest“) blev
-for nogle Aar siden opdaget i Merseburg.
+</workbody>
+</kalliopework>
