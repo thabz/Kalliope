@@ -73,7 +73,7 @@ ad Veje i dryppende Regn -
 som stænged mig evigt inde
 de røde Risbøges Hegn.
 
-<nonum><small>September 1891</small></nonum>
+    <nonum><small>September 1891</small></nonum>
 </poetry>
 </body>
 </text>
@@ -115,7 +115,7 @@ to bløde Læber kysser mig paa Munden;
 mens Lærkerne de synger, og, Solen skinner varm . . .
 Min Ungdom, min Ungdom, der er svunden!
 
-<nonum><small>Efteraar 1889</small></nonum>
+    <nonum><small>Efteraar 1889</small></nonum>
 </poetry>
 </body>
 </text>
@@ -187,7 +187,6 @@ og ak! min Sjæl er gold som denne øde Jord.
     <title>Vinter</title>
     <firstline>O det hvide Hus bag de høje, sorte Popler</firstline>
     <source pages="17"/>
-    <!-- TODO: Find mottoet -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -350,7 +349,7 @@ imens min Sans af Søvnen sagte sløves -
 som Regnens Rislen i de lune Nætter,
 naar Bøgens brune Foraarsskove løves.
 
-<nonum><small>Februar 1886</small></nonum>
+    <nonum><small>Februar 1886</small></nonum>
 </poetry>
 </body>
 </text>
@@ -416,7 +415,7 @@ mens Græsset spirer, og mens Knopper briste.
 En sorgbleg Krans jeg sender dig, Veninde -
 en fattig Hilsen - ak, den allersidste . . .
 
-<nonum><small>Foraar 1889</small></nonum>
+    <nonum><small>Foraar 1889</small></nonum>
 </poetry>
 </body>
 </text>
@@ -455,7 +454,7 @@ med Hjærtet tungt af lyse Nætters Minder.
 . . . Jeg er saa træt, saa tomme mine Hænder.
 Og Somrens Sølv i Draaber fra mig rinder.
 
-<nonum><small>Juni 1888</small></nonum>
+    <nonum><small>Juni 1888</small></nonum>
 </poetry>
 </body>
 </text>
@@ -511,7 +510,7 @@ og kvidrer paa alle Kviste . . .
 Anna - du tog min unge Sjæl,
 saa lidet derom du vidste . . .
 
-<nonum><small>Juli 1884</small></nonum>
+    <nonum><small>Juli 1884</small></nonum>
 </poetry>
 </body>
 </text>
@@ -540,7 +539,7 @@ der travrig ud igennem Mørket flyder -
 mens i de lyse Nætters fjærne Skove
 de længselsfulde Fugles Fløjter lyder.
 
-<nonum><small>Juli 1892</small></nonum>
+    <nonum><small>Juli 1892</small></nonum>
 </poetry>
 </body>
 </text>
@@ -903,13 +902,12 @@ o Evighed! jeg er i Dine Hænder!
     <subtitle>(Efter Stéphane Mallarmé)</subtitle>
     <firstline>Jeg blomstrer ene, ene og forladt!</firstline>
     <source pages="46-48"/>
-    <!-- TODO: Fix markering af indledende citat -->
     <!-- TODO: Henvis til originalen https://www.eternels-eclairs.fr/Poeme-Stephane-Mallarme-Herodiade -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-<poetry>
-                    O Spejl!
+<quote margin-left="25%" font-size="small">
+<right>O Spejl!</right>
 du Vand, af Lede i din Ramme størknet,
 hvor ofte sad jeg ikke, naar det mørkned,
 forladt af Drømme, søgende de Minder,
@@ -917,7 +915,8 @@ der er'som Løv, jeg i din Dybde finder,
 og saae min Skygge, fjærn og underbar.
 Men Rædsel! ofte i dit strænge Glar
 erkendte jeg min golde, nøgne Drøm.
-
+</quote>
+<poetry>
 <nonum><center><sc>Herodias</sc></center></nonum>
 Jeg blomstrer ene, ene og forladt!
 Du véd det, blaa og stjærneblomstrende Nat,
@@ -1187,7 +1186,8 @@ er Ormenes Bid mod min Kistes Fjæl.
 
 <text id="joergensenj2024061631">
 <head>
-    <title>Aften-Tungsind, I-II</title>
+    <title>Aften-Tungsind</title>
+    <toctitle>Aften-Tungsind, I-II</toctitle>
     <firstline>Verden ligger saa graa og trist</firstline>
     <source pages="56-57"/>
     <quality>korrektur1,kilde,side</quality>
@@ -1340,9 +1340,9 @@ April 1894
 </body>
 </text>
 
-<section>
+<section id="joergensenj2024061666">
 <head>
-    <title>Foraars-Evangelium.</title>
+    <title>Foraars-Evangelium</title>
 </head>
 <content>
 
@@ -1881,7 +1881,7 @@ min Sjæl sig løfter mod Luftens Blaa,
 og Nattergale med Jubel slaa
 dybt i mit drømmende Hjærtes Skove.
 
-<nonum><small><i>Svendborg</i>, Maj 1894.</small></nonum>
+    <nonum><small><i>Svendborg</i>, Maj 1894.</small></nonum>
 </poetry>
 </body>
 </text>
@@ -1889,7 +1889,7 @@ dybt i mit drømmende Hjærtes Skove.
 </content>
 </section> <!-- Foraars-Evangelium. -->
 
-<section>
+<section id="joergensenj2024061667">
 <head>
     <title>Kaldæa</title>
 </head>
@@ -2112,7 +2112,7 @@ Og over Baalet ser jeg Himlen aaben:
 
 «i Retfærds Blod skal tvætte deres Sjæle
 «og Retfærds Blod i deres Kirker stænke
-«- et viet Vand til Fred for dem, som knæle.
+«— et viet Vand til Fred for dem, som knæle.
 </poetry>
 </body>
 </text>
@@ -2273,7 +2273,7 @@ Det hvisker gennem Nattens dybe Grunde:
 
 «Kun Livet selv kan slette Livets Brøde,
 «kun Sjælens Stræben soner Kødets Synder
-«- forgæves, om al Verden for dig døde!
+«— forgæves, om al Verden for dig døde!
 
 «Se, Evighedens gyldne Ring begynder
 «paany hver Morgen! Ud i Dagens Færden,
@@ -2482,7 +2482,7 @@ Før mig mildt med milde Hænder!
 Fri min Sjæl af Dødens Mørke!
 Jeg bekender, jeg bekender . . .
 
-<nonum><small>November 1894</small></nonum>
+    <nonum><small>November 1894</small></nonum>
 </poetry>
 </body>
 </text>
