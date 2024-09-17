@@ -1,16 +1,34 @@
-KILDE:Emil Bønnelycke: <i>Guldæblerne</i>, H. Hagerups Forlag, Kbh., 1921.
-DIGTER:boennelycke
-FACSIMILE:115308049215-color.pdf
-FACSIMILE-SIDER:78
-TITELBLAD:Emil Bønnelycke / Guldæblerne / Digte // København / H. Hagerups Forlag / 1921.
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
+<kalliopework id="1921" author="boennelycke" status="complete" type="poetry">
+<workhead>
+    <title>Guldæblerne</title>
+    <year>1921</year>
+    <notes>
+        <note>Teksten følger Emil Bønnelycke: <i>Guldæblerne</i>, H. Hagerups Forlag, Kbh., 1921.</note>
+    </notes>
+    <pictures>
+        <picture src="1921-p2.jpg">Forsiden til <i>Guldæblerne</i> (1921).</picture>
+        <picture src="1921-p1.jpg">Titelbladet til <i>Guldæblerne</i> (1921) lyder ,,Emil Bønnelycke / Guldæblerne / Digte // København / H. Hagerups Forlag / 1921.''.</picture>
+    </pictures>
+    <source facsimile="115308049215-color.pdf" facsimile-pages-num="78" facsimile-pages-offset="7">Emil Bønnelycke: <i>Guldæblerne</i>, H. Hagerups Forlag, Kbh., 1921.</source>
+</workhead>
+<workbody>
 
-
-T:Undren
-U:Til en Detalje i Domenico Ghirlandajo ,,Døberens Fødsel'',
-F:Upaaagtet af min Undren
-TODO:https://commons.wikimedia.org/wiki/File:Domenico_Ghirlandaio_-_Birth_of_St_John_the_Baptist_-_WGA8857.jpg
-SIDE:9-11
-
+<text id="boennelycke2024091701">
+<head>
+    <title>Undren</title>
+    <subtitle>Til en Detalje i Domenico Ghirlandajo ,,Døberens Fødsel'',</subtitle>
+    <firstline>Upaaagtet af min Undren</firstline>
+    <source pages="9-11"/>
+    <pictures>
+        <picture src="boennelycke2024091701-p1.jpg">Domenico Ghirlandaio: <i>Døberens Fødsel</i>, fresco, 1486-1490, Cappella Tornabuoni, Firenze.</picture>
+        <!-- https://commons.wikimedia.org/wiki/File:Domenico_Ghirlandaio_-_Birth_of_St_John_the_Baptist_-_WGA8857.jpg -->
+    </pictures>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Upaaagtet af min Undren
     har du siddet ved mit Bord,
 har du siddet ved min Side,
@@ -23,7 +41,7 @@ Men af Læberne, som fatter
 thi min Undren mangler Ord.
 
 Uudtalt blev min Fortolkning
-    af dit sode, unge Sind.
+    af dit søde, unge Sind.
 Naar jeg mødes med det fjerne
     i dit Øjes unge Stjerne -,
     har jeg set og set mig blind.
@@ -56,7 +74,7 @@ Hvad gør det jeg aldrig nævner
 Navn, mit Hjerte nævne skal,
 
 for at sige, hvad de maaler
-    hvad jeg sér. men ikke véd,
+    hvad jeg sér, men ikke véd,
 dette Sæt af dunkle Tanker,
     hvori drømte Tider banker -,
     er et Dyb af Trofasthed . . .
@@ -65,12 +83,24 @@ Og din faste stille Smilen,
     ja, det Liv af Lys og Skygger
     som dit unge Aasyn bygger,
 er din unge Kærlighed. -
+</poetry>
+</body>
+</text>
 
-T:Venis og Adonis
-U:Til Paolo Veroneses Billede i Prado.
-F:Berust af Kyssenes Aande
-SIDE:13-14
-
+<text id="boennelycke2024091702">
+<head>
+    <title>Venus og Adonis</title>
+    <subtitle>Til Paolo Veroneses Billede i Prado.</subtitle>
+    <firstline>Berust af Kyssenes Aande</firstline>
+    <source pages="12-14"/>
+    <pictures>
+        <picture src="boennelycke2024091702-p1.jpg">Paolo Veronese: <i>Venus og Adonis</i>, olie på lærred, 163x192 cm, Museo del Prado</picture>
+        <!-- https://en.wikipedia.org/wiki/File:Venus_y_Adonis_(Veronese).jpg -->
+    </pictures>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Berust af Kyssenes Aande,
 af Læbernes purpurne Pude -,
 af Brysternes bugnende Kube,
@@ -118,14 +148,23 @@ dine Dyder ikke kan dæmpe -.
 Og Blikket, som tørstende taler,
 og Smilet, der aldrig blev ældet,
 mindes alt det, du har fældet . . .
+</poetry>
+</body>
+</text>
 
-
-T:Troubadourer i Paris
-U:Til Axel Salto.
-NOTE:Axel Salto (1889-1961), dansk keramiker.
-F:
-SIDE:15-
-
+<text id="boennelycke2024091703">
+<head>
+    <title>Troubadourer i Paris</title>
+    <subtitle>Til Axel Salto.</subtitle>
+    <firstline>O, aldrig, Erindringens Have</firstline>
+    <notes>
+        <note>Axel Salto (1889-1961), dansk keramiker.</note>
+    </notes>
+    <source pages="15-20"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 O, aldrig, Erindringens Have,
     du skabte saa skøn en Buket
 som den du har skænket til Ære
@@ -252,7 +291,7 @@ dig bort fra lukulliske Orgiers,
 mod en forbitret Ekstase i
     Ilden hos Fader El Greco.
 
-- - - 
+- - -
 
 Det mørkner iblandt ,,Boulevard des
     Italiennes'' myldrende Trær.
@@ -262,11 +301,19 @@ Og hér begynder mit Epos,
     før alt jeg fik strengt-taget-sagt,
 at segne i et moderne Lys -,
     under Montmartres Magt.
+</poetry>
+</body>
+</text>
 
-T:Den gamle Vicomte
-F:Foran Versailles’ Facade
-SIDE:21-23
-
+<text id="boennelycke2024091704">
+<head>
+    <title>Den gamle Vicomte</title>
+    <firstline>Foran Versailles’ Facade</firstline>
+    <source pages="21-23"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Foran Versailles’ Facade.
 Træerne skumrer.
 Alle Fontænerne slumrer,
@@ -336,13 +383,24 @@ End mere Fontænerne tier.
 Hver Rude udbrænder.
 Vicomten staar op paa sin Sokkel . . .
 Han vrider de hvide Hænder -.
+</poetry>
+</body>
+</text>
 
-T:Den Fremmede
-U:Til Mathias Grünewalds Kristusbilleder.
-TODO:Find billederne. https://commons.wikimedia.org/wiki/File:Mathis_Gothart_Grünewald_047.jpg
-F:Hvem er du, som er standset paa Vejen
-SIDE:24-26
-
+<text id="boennelycke2024091705">
+<head>
+    <title>Den Fremmede</title>
+    <subtitle>Til Mathias Grünewalds Kristusbilleder.</subtitle>
+    <firstline>Hvem er du, som er standset paa Vejen</firstline>
+    <source pages="24-26"/>
+    <pictures>
+        <picture src="boennelycke2024091705-p1.jpg">Matthias Grünewald: <i>Crucifixion</i>, ca. 1515, 74,9x54,4cm, Kunstmuseum Basel</picture>
+        <!-- https://commons.wikimedia.org/wiki/File:Mathis_Gothart_Grünewald_047.jpg -->
+    </pictures>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Hvem er du, som er standset paa Vejen
 i Aftenens Taage af Rav?
 Hvem er du, som er kommet til Bredden
@@ -402,12 +460,20 @@ Jeg er én, der er standset alene
 i Livets forladte Land.
 Du kender min blodige Kjortel - -,
 men sér en almindelig Mand.
+</poetry>
+</body>
+</text>
 
-T:De vilde Violinister
-U:Til fire Malere.
-F:Fire Violinister i samme Symphoni
-SIDE:27-28
-
+<text id="boennelycke2024091706">
+<head>
+    <title>De vilde Violinister</title>
+    <subtitle>Til fire Malere.</subtitle>
+    <firstline>Fire Violinister i samme Symphoni</firstline>
+    <source pages="27-28"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Fire Violinister i samme Symphoni.
 Gud, Dante og Djævlen gaar sammen forbi -.
     Kommer ind i Baalet,
@@ -443,12 +509,20 @@ de andre den Gud, deres Ild har lovprist . . .
     Han er Ynden og Ilden,
     og Løven og Kilden -.
         Uden Brist.
+</poetry>
+</body>
+</text>
 
-T:Aanden i Naturen
-U:Til to unge Opfindere.
-F:Først til Eder Fornægtere af Livet
-SIDE:29-31
-
+<text id="boennelycke2024091707">
+<head>
+    <title>Aanden i Naturen</title>
+    <subtitle>Til to unge Opfindere.</subtitle>
+    <firstline>Først til Eder Fornægtere af Livet</firstline>
+    <source pages="29-31"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Først til Eder Fornægtere af Livet
     i alle de livløse Ting.
 Saa til Jer, for hvem Aand er Atomer,
@@ -502,12 +576,20 @@ En Hilsen, der næres af Ilden
     dybt i et broderligt Bryst,
 og melder to Bølger, der skylled
     i Land paa Berømmelsens Kyst.
+</poetry>
+</body>
+</text>
 
-T:Foraar
-U:Til E. B.
-F:Ad de blaavaade Veje, Frost-Flisernes blinkende Sti
-SIDE:32-33
-
+<text id="boennelycke2024091708">
+<head>
+    <title>Foraar</title>
+    <subtitle>Til E. B.</subtitle>
+    <firstline>Ad de blaavaade Veje, Frost-Flisernes blinkende Sti</firstline>
+    <source pages="32-33"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Ad de blaavaade Veje, Frost-Flisernes blinkende Sti
 gik jeg Opstandelsens søde Mirakel forbi -,
 som ledtes jeg frem mod en Morgens ild-byggede Maal,
@@ -542,11 +624,19 @@ O, jeg vil lægge min Haand langs Linjerne i dine Træk
 og hvile i Smilets Rytme og lede dets Bleghed væk -,
 som var jeg et frelsende Foraar med Varme og gylden Tø,
 der ikke forlader dit Leje, og vil ikke du maa dø.
+</poetry>
+</body>
+</text>
 
-T:Eventyr
-F:Se Solen i min Rude, forenet med Gardinet
-SIDE:34-35
-
+<text id="boennelycke2024091709">
+<head>
+    <title>Eventyr</title>
+    <firstline>Se Solen i min Rude, forenet med Gardinet</firstline>
+    <source pages="34-35"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Se Solen i min Rude, forenet med Gardinet.
 Det er som Lyset leger og gyldenlér i Linet -.
 Det er som Vinden risler, som Kys, der kærligt kommer
@@ -586,12 +676,20 @@ Det er som noget vandrer forbi min Rudes Spejl -.
 En Skumring i hvis Farver jeg ser de tunge Sejl
 af Skibet, som nu vinker fjernt med en hvid Lanterne
 Farvel til denne Rude, der blændes af en Stjerne . . .
+</poetry>
+</body>
+</text>
 
-T:Guldæblet springer . . .
-LINKTITEL:Guldæblet springer
-F:Guldæblet springer i Kongens By
-SIDE:36-37
-
+<text id="boennelycke2024091710">
+<head>
+    <title>Guldæblet springer . . .</title>
+    <linktitle>Guldæblet springer</linktitle>
+    <firstline>Guldæblet springer i Kongens By</firstline>
+    <source pages="36-37"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Guldæblet springer i Kongens By,
 og slynger sit Guld mod den gyldne Sky.
 Det spejler et Foraar i Gadens Strøm,
@@ -616,12 +714,20 @@ Guldæble, spring i det gyldne Vær.
 Din Kugle hæver den gyldne Hær
 af Foraars-Øjne, som vandrer hen
 mens Æblet styrter af Guld igen . . .
+</poetry>
+</body>
+</text>
 
-T:Atlantis
-U:Til min Onkel, Louis B., der druknede ved en Torpedering 1919.
-F:Der ligger et Land, et Land i den skumrende Stund
-SIDE:38-39
-
+<text id="boennelycke2024091711">
+<head>
+    <title>Atlantis</title>
+    <subtitle>Til min Onkel, Louis B., der druknede ved en Torpedering 1919.</subtitle>
+    <firstline>Der ligger et Land, et Land i den skumrende Stund</firstline>
+    <source pages="38-39"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Der ligger et Land, et Land i den skumrende Stund,
 som laa det med lysende Lygter alene paa Altets Bund.
 En Gade mod søgrøn Himmel med klareste Lygter paa Rad,
@@ -652,15 +758,23 @@ hvor Stjernernes svimle Skibe skuer mod Jordens Grav...
 stævnende trygt imod Stranden, etsteds i et blankt Univers,
 Landet der smiler i Masten og smykker det straalende Mers.
 
-Saá lyser _Foraaret_ frodigt igennem det frysende Alt.
+Saá lyser <i>Foraaret</i> frodigt igennem det frysende Alt.
 Det dykker ved Aften i Dybet og kysser de Skibe, som faldt -.
 Thi Skumringens havgrønne Tone, der kommer det dybe nær,
 er kun en Spejling af Landet, de evige Somres Skær . . .
+</poetry>
+</body>
+</text>
 
-T:Sommeren
-F:Hvorfor falder den mørke Regn?
-SIDE:40-41
-
+<text id="boennelycke2024091712">
+<head>
+    <title>Sommeren</title>
+    <firstline>Hvorfor falder den mørke Regn?</firstline>
+    <source pages="40-41"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Hvorfor falder den mørke Regn?
     Det er de sovende Somres Tegn.
 
@@ -676,7 +790,7 @@ Fordi den skal brænde af Længsels-Tørst
 Hvorfor er Jorden saa hjerteløs kold?
     Vi skal give os bedre vort Hjerte i Vold.
 
-Jorden har Somre, som _vi_ ikke sér.
+Jorden har Somre, som <i>vi</i> ikke sér.
     De lever dog selv om det sortner og sner.
 
 Jorden har Gaver i Visdoms Tegn.
@@ -696,12 +810,20 @@ Derfor, i alt hvad der synes os tabt,
 
 Sommeren sover i sorten Jord.
     Evigheds-Sommeren gror og gror . . .
+</poetry>
+</body>
+</text>
 
-T:Feldborg
-U:Til Læreren i Neder-Feldborg Skole.
-F:Jeg sang dit Navn belært af Lærkens Stemme
-SIDE:42-44
-
+<text id="boennelycke2024091713">
+<head>
+    <title>Feldborg</title>
+    <subtitle>Til Læreren i Neder-Feldborg Skole.</subtitle>
+    <firstline>Jeg sang dit Navn belært af Lærkens Stemme</firstline>
+    <source pages="42-44"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Jeg sang dit Navn belært af Lærkens Stemme,
     der steg paa Heden i den hede Dag.
 I Lærke-Skoven var mit Hjerte hjemme -,
@@ -755,16 +877,24 @@ Der ligger Lyng og Eng og mørke Skove
     i sjældent Møde ved den vilde Vej -.
 I denne Muld skal mine Minder sove
     bag Himlens favnende Forglemmigej.
+</poetry>
+</body>
+</text>
 
-T:Viborg
-U:Til Soldatertiden.
-F:Som Køln sin Dom, sit Hus for Patriarker
-SIDE:45-46
-
+<text id="boennelycke2024091714">
+<head>
+    <title>Viborg</title>
+    <subtitle>Til Soldatertiden.</subtitle>
+    <firstline>Som Køln sin Dom, sit Hus for Patriarker</firstline>
+    <source pages="45-46"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Som Køln sin Dom, sit Hus for Patriarker,
 har du din Kirke, mindre, men navnkundig stor.
 Solide Taarne sér ud over Viborg Marker,
-og Byen. hvor det dyrebare Minde bor.
+og Byen, hvor det dyrebare Minde bor.
 Naar Staden vaagner, høres landligt bruse,
 og Vindvet flyver op ved Hanegal -
 da pusler Larmen fra Patricierhuse
@@ -781,7 +911,7 @@ bag al Alverdens Død og røde Damp.
 
 Der kalder unge Stemmer, bly og glade,
 igennem Strædets drømmende Idyl.
-Jeg véd Sct. Mogens-, Set. Mathiasgade
+Jeg véd Sct. Mogens-, Sct. Mathiasgade
 vil smile til mig for mit Mindes Skyld.
 Hvor Finken flyver mellem Parkens Kroner
 og slaar sin Sang, skønt Dagen end er kold,
@@ -805,11 +935,19 @@ Fjernt flyver Himlen over Viborg Tage
 som en uendelig og sorgløs Akvarel -,
 blaa som de uopnaaelige Dage . . .
 med Farver, der skal farve mit Farvel.
+</poetry>
+</body>
+</text>
 
-T:Blaa Reflektioner
-F:Det er min Donatella
-SIDE:47-49
-
+<text id="boennelycke2024091715">
+<head>
+    <title>Blaa Reflektioner</title>
+    <firstline>Det er min Donatella</firstline>
+    <source pages="47-49"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Det er min Donatella,
     der dufter morgenblaat,
 og slynger Røgens Rytmer
@@ -872,12 +1010,20 @@ Og Mindets Stue smiler
     saa sød og sommerfuld,
 og Billederne flammer
     af Sol og gyldent Guld.
+</poetry>
+</body>
+</text>
 
-T:Naboens Lykke
-U:Til Fru I. S.
-F:Længe var der saa lydt og stille
-SIDE:50-52
-
+<text id="boennelycke2024091716">
+<head>
+    <title>Naboens Lykke</title>
+    <subtitle>Til Fru I. S.</subtitle>
+    <firstline>Længe var der saa lydt og stille</firstline>
+    <source pages="50-52"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Længe var der saa lydt og stille
     inde bag Naboens Køkkendør.
 Der høres ingen Vandhane-Kilde . . .
@@ -940,11 +1086,19 @@ Jeg synes noget blev mig givet . . .
     og er lyksalig af Barnevræl -.
 Køkkenet lever. Tallerkenlarmen.
 En Fuchsia gløder i Vindueskarmen . . .
+</poetry>
+</body>
+</text>
 
-T:Spørgsmaal
-F:Hvad er mit fattige Hjerte
-SIDE:53
-
+<text id="boennelycke2024091717">
+<head>
+    <title>Spørgsmaal</title>
+    <firstline>Hvad er mit fattige Hjerte</firstline>
+    <source pages="53"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Hvad er mit fattige Hjerte
 mod flagrende, flammende Flag,
 mod denne berusede Dag?
@@ -961,12 +1115,20 @@ Er det en lønlig Lykke,
 som vækket af Skyernes Smykke -,
 vender, ak, Stykke for Stykke
 sønderbrudt hjem til mig selv?
+</poetry>
+</body>
+</text>
 
-T:Helen
-U:Til K. H.
-F:Jeg véd, jeg har vovet mig
-SIDE:54-55
-
+<text id="boennelycke2024091718">
+<head>
+    <title>Helen</title>
+    <subtitle>Til K. H.</subtitle>
+    <firstline>Jeg véd, jeg har vovet mig</firstline>
+    <source pages="54-55"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Jeg véd, jeg har vovet mig
         ud paa den gyngende Grund
 som Elsker af én, som jeg elsker,
@@ -987,11 +1149,19 @@ og finder vel ogsaa lidt Hvile,
         Hvile for Helens Mund -.
 Jeg kysser min Elskte stille paa Panden.
 Min sande Elskte. Der er ingen anden.
+</poetry>
+</body>
+</text>
 
-T:Aveu
-F:Vil du, jeg maa følge dig
-SIDE:56-57
-
+<text id="boennelycke2024091719">
+<head>
+    <title>Aveu</title>
+    <firstline>Vil du, jeg maa følge dig</firstline>
+    <source pages="56-57"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Vil du, jeg maa følge dig
     og vandre hvor du gaar?
 Vil du jeg maa følge dig
@@ -1015,11 +1185,19 @@ Vil du, jeg maa kryste dig
 Vil du, jeg maa kryste dig,
 da skal det aldrig ryste mig,
     jeg favner dit Skelet . . .
+</poetry>
+</body>
+</text>
 
-T:Hespéria
-F:Om alt os svigter, alt forgaar
-SIDE:58-61
-
+<text id="boennelycke2024091720">
+<head>
+    <title>Hespéria</title>
+    <firstline>Om alt os svigter, alt forgaar</firstline>
+    <source pages="58-61"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Om alt os svigter, alt forgaar
 engang ved Dødens dybe Vælde,
 om alting smuldrer, selv dit Haar -,
@@ -1060,7 +1238,7 @@ føle Guld og Sølvergrene
 føre dig ad sære Veje -,
 hvor du vandrer, hvid og ene
     i Hespéria, hvor alt
-    er en Frugt af det, der faldt . . 
+    er en Frugt af det, der faldt . .
 
 Alle Skæbner, som blev skønne,
 alle Sole som gik ned -
@@ -1096,4 +1274,9 @@ O, giv mig af din gyldne Frugt,
 Hespéria, og lad mig smile
     til en Sjæl i Havens Skød.
     Hende, som jeg drømte død.
+</poetry>
+</body>
+</text>
 
+</workbody>
+</kalliopework>
