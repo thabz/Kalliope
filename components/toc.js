@@ -1,35 +1,14 @@
 // @flow
 
 import React from 'react';
-import { Link } from '../routes';
-import TextContent from './textcontent.js';
-import * as Links from './links';
 import CommonData from '../common/commondata.js';
+import { Link } from '../routes';
+import * as Links from './links';
+import TextContent from './textcontent.js';
 
-import type {
-  Lang,
-  Poet,
-  PoetId,
-  WorkId,
-  Work,
-  TocItem,
-  NoteItem,
-  PictureItem,
-  Error,
-} from '../common/types.js';
-
-type TocProps = {
-  toc: Array<TocItem>,
-  lang: Lang,
-  indent?: number,
-};
-export default class extends React.Component<TocProps> {
+export default class extends React.Component {
   render() {
-    const renderItems = (
-      items: Array<TocItem>,
-      indent: number = 0,
-      level = 1
-    ) => {
+    const renderItems = (items, indent = 0, level = 1) => {
       const rows = items.map((item, i) => {
         const { id, title, type, prefix, level } = item;
         if (type === 'section') {

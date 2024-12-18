@@ -1,49 +1,43 @@
 // @flow
 
-import React, { useEffect, useContext } from 'react';
-import type { Element, Node } from 'react';
-import { Link, Router } from '../routes';
-import Page from '../components/page.js';
-import Main from '../components/main.js';
-import { textCrumbs } from '../components/breadcrumbs.js';
-import SidebarSplit from '../components/sidebarsplit.js';
-import LangSelect from '../components/langselect';
-import { poetMenu } from '../components/menu.js';
-import SubHeading from '../components/subheading.js';
-import Stack from '../components/stack.js';
-import WrapNonEmpty from '../components/wrapnonempty.js';
-import TOC from '../components/toc.js';
-import PoetName from '../components/poetname.js';
-import { poetNameString } from '../components/poetname-helpers.js';
-import { workTitleString } from '../components/workname.js';
-import TextName, {
-  textTitleString,
-  textLinkTitleString,
-} from '../components/textname.js';
-import TextContent from '../components/textcontent.js';
-import { FootnoteContainer, FootnoteList } from '../components/footnotes.js';
-import Note from '../components/note.js';
-import SidebarPictures from '../components/sidebarpictures.js';
-import Picture from '../components/picture.js';
-import * as Links from '../components/links';
+import type { Node } from 'react';
+import React, { useContext, useEffect } from 'react';
 import * as Client from '../common/client.js';
-import * as OpenGraph from '../common/opengraph.js';
-import _ from '../common/translations.js';
-import ErrorPage from './error.js';
-import HelpKalliope from '../components/helpkalliope.js';
-import { pluralize } from '../common/strings.js';
 import LangContext from '../common/LangContext.js';
+import * as OpenGraph from '../common/opengraph.js';
+import { pluralize } from '../common/strings.js';
+import _ from '../common/translations.js';
 import type {
+  Error,
+  KeywordRef,
   Lang,
+  PictureItem,
   Poet,
-  Work,
+  PrevNextText,
   Text,
   TextSource,
-  PictureItem,
-  KeywordRef,
-  PrevNextText,
-  Error,
+  Work,
 } from '../common/types.js';
+import { textCrumbs } from '../components/breadcrumbs.js';
+import { FootnoteContainer, FootnoteList } from '../components/footnotes.js';
+import HelpKalliope from '../components/helpkalliope.js';
+import * as Links from '../components/links';
+import { poetMenu } from '../components/menu.js';
+import Note from '../components/note.js';
+import Page from '../components/page.js';
+import Picture from '../components/picture.js';
+import { poetNameString } from '../components/poetname-helpers.js';
+import PoetName from '../components/poetname.js';
+import SidebarPictures from '../components/sidebarpictures.js';
+import SidebarSplit from '../components/sidebarsplit.js';
+import Stack from '../components/stack.js';
+import TextContent from '../components/textcontent.js';
+import TextName, { textLinkTitleString } from '../components/textname.js';
+import TOC from '../components/toc.js';
+import { workTitleString } from '../components/workname.js';
+import WrapNonEmpty from '../components/wrapnonempty.js';
+import { Link, Router } from '../routes';
+import ErrorPage from './error.js';
 
 type BladrerProps = {
   target: ?PrevNextText,

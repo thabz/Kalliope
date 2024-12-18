@@ -2,18 +2,14 @@
 
 import React from 'react';
 import { Link } from '../routes';
-import type { SectionForRendering } from '../common/types.js';
 import TwoColumns from './twocolumns.js';
 
-type SectionedListProps = {
-  sections: Array<SectionForRendering>,
-};
-export default class SectionedList extends React.Component<SectionedListProps> {
+export default class SectionedList extends React.Component {
   render() {
     const { sections } = this.props;
     let renderedGroups = sections.map((group, i) => {
       const { title, items } = group;
-      const list = items.map(item => {
+      const list = items.map((item) => {
         const content =
           item.url != null ? (
             <Link route={item.url}>

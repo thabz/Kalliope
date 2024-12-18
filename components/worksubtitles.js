@@ -1,13 +1,8 @@
 // @flow
 import React from 'react';
-import type { Work, Lang } from '../common/types.js';
 import TextContent from './textcontent.js';
 
-type WorkSubtitlesProps = {
-  work: Work,
-  lang: Lang,
-};
-export default class WorkSubtitles extends React.Component<WorkSubtitlesProps> {
+export default class WorkSubtitles extends React.Component {
   render() {
     const { work, lang } = this.props;
     const { year } = work;
@@ -16,7 +11,8 @@ export default class WorkSubtitles extends React.Component<WorkSubtitlesProps> {
         return (
           <div
             key={'subtitle' + i}
-            style={{ fontSize: '0.8em', marginTop: '1em' }}>
+            style={{ fontSize: '0.8em', marginTop: '1em' }}
+          >
             <TextContent contentHtml={subtitle} lang={lang} />
           </div>
         );

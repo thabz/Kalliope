@@ -1,17 +1,14 @@
-// @flow
-
-import type { Poet, Lang } from '../common/types.js';
 import { formattedYearRange } from './formatteddate.js';
 
-const nvl = <T>(x: ?T, v: T): T => {
+const nvl = (x, v) => {
   return x == null ? v : x;
 };
 
 export function poetNameParts(
-  poet: Poet,
-  lastNameFirst: boolean = false,
-  includePeriod: boolean = false
-): Array<?string> {
+  poet,
+  lastNameFirst = false,
+  includePeriod = false
+) {
   const { name } = poet;
   const { firstname, lastname } = name;
 
@@ -40,10 +37,10 @@ export function poetNameParts(
 }
 
 export function poetNameString(
-  poet: Poet,
-  lastNameFirst: boolean = false,
-  includePeriod: boolean = false
-): string {
+  poet,
+  lastNameFirst = false,
+  includePeriod = false
+) {
   const p = poetNameParts(poet, lastNameFirst, includePeriod);
   if (p[0] != null && p[1] != null) {
     return p[0] + ' ' + p[1];
@@ -54,7 +51,7 @@ export function poetNameString(
   }
 }
 
-export const navnMedEjefald = (navn: ?string): ?string => {
+export const navnMedEjefald = (navn) => {
   if (navn == null) {
     return null;
   }
@@ -65,12 +62,12 @@ export const navnMedEjefald = (navn: ?string): ?string => {
   }
 };
 
-export function poetLastNameString(poet: Poet): string {
+export function poetLastNameString(poet) {
   const { firstname, lastname } = poet.name;
   return nvl(lastname, nvl(firstname, 'Ukendt'));
 }
 
-export function poetGenetiveLastName(poet: Poet, lang: Lang): string {
+export function poetGenetiveLastName(poet, lang) {
   const { firstname, lastname } = poet.name;
   let name = nvl(lastname, nvl(firstname, 'Ukendt'));
   if (lang === 'da') {
