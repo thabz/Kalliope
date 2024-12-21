@@ -1,31 +1,18 @@
-// @flow
-
-import React, { useState, Fragment } from 'react';
-import Page from '../components/page.js';
-import { poetCrumbsWithTitle } from '../components/breadcrumbs.js';
-import _ from '../common/translations.js';
-import { Link } from '../routes';
-import LangSelect from '../components/langselect';
-import { poetMenu } from '../components/menu.js';
-import PoetName from '../components/poetname.js';
-import { poetNameString } from '../components/poetname-helpers.js';
-import TextContent, { TextInline } from '../components/textcontent.js';
-import TwoColumns from '../components/twocolumns.js';
-import ErrorPage from './error.js';
-import * as Links from '../components/links';
+import React, { Fragment, useState } from 'react';
 import * as Client from '../common/client.js';
-import type {
-  Lang,
-  Text,
-  TextId,
-  Poet,
-  Work,
-  TextContentType,
-  Error,
-} from '../common/types.js';
-import { poetsByLastname } from '../common/sorting.js';
-import { createURL } from '../common/client.js';
 import * as OpenGraph from '../common/opengraph.js';
+import { poetsByLastname } from '../common/sorting.js';
+import _ from '../common/translations.js';
+import { poetCrumbsWithTitle } from '../components/breadcrumbs.js';
+import * as Links from '../components/links';
+import { poetMenu } from '../components/menu.js';
+import Page from '../components/page.js';
+import { poetNameString } from '../components/poetname-helpers.js';
+import PoetName from '../components/poetname.js';
+import { TextInline } from '../components/textcontent.js';
+import TwoColumns from '../components/twocolumns.js';
+import { Link } from '../routes';
+import ErrorPage from './error.js';
 
 const joinedByComma = (items, lang) => {
   let result = [];
@@ -85,13 +72,14 @@ const Item = (props) => {
         textIndent: '-30px',
         breakInside: 'avoid',
         lineHeight: 1.4,
-      }}>
+      }}
+    >
       {children}
     </div>
   );
 };
 
-const PoemLink = (props: { poem: Text, lang: Lang }) => {
+const PoemLink = (props) => {
   const { poem, lang } = props;
   const url = Links.textURL(lang, poem.id);
   return (
@@ -101,19 +89,7 @@ const PoemLink = (props: { poem: Text, lang: Lang }) => {
   );
 };
 
-type PoemType = {
-  poet: Poet,
-  poem: Text,
-};
-type TranslationsProps = {
-  lang: Lang,
-  translations: Array<{
-    translated?: PoemType,
-    translation: PoemType,
-  }>,
-};
-
-const TranslationsGroupedByTranslated = (props: TranslationsProps) => {
+const TranslationsGroupedByTranslated = (props) => {
   const { translations, lang } = props;
 
   const byTranslated = {};
@@ -164,7 +140,7 @@ const TranslationsGroupedByTranslated = (props: TranslationsProps) => {
   );
 };
 
-const TranslationsGroupedByTranslator = (props: TranslationsProps) => {
+const TranslationsGroupedByTranslator = (props) => {
   const { translations, lang } = props;
 
   const byTranslator = {};
@@ -257,7 +233,8 @@ const TranslationsSection = (props) => {
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'baseline',
-      }}>
+      }}
+    >
       <div>{sectionTitle('translations', lang)}</div>
       <div style={{ fontSize: '16px' }}>{groupByOptions}</div>
     </div>
@@ -266,25 +243,9 @@ const TranslationsSection = (props) => {
   return <Section title={title} items={items} />;
 };
 
-type MentionsProps = {
-  lang: Lang,
-  poet: Poet,
-  mentions: Array<TextContentType>,
-  translations: Array<TextContentType>,
-  primary: Array<TextContentType>,
-  secondary: Array<TextContentType>,
-  error: ?Error,
-};
-const MentionsPage = (props: MentionsProps) => {
-  const {
-    lang,
-    poet,
-    mentions,
-    translations,
-    primary,
-    secondary,
-    error,
-  } = props;
+const MentionsPage = (props) => {
+  const { lang, poet, mentions, translations, primary, secondary, error } =
+    props;
 
   if (error != null) {
     return <ErrorPage error={error} lang={lang} message="Ukendt person" />;
@@ -331,17 +292,14 @@ const MentionsPage = (props: MentionsProps) => {
       subtitle={_('Henvisninger', lang)}
       menuItems={poetMenu(poet)}
       poet={poet}
-      selectedMenuItem="mentions">
+      selectedMenuItem="mentions"
+    >
       <div style={{ paddingTop: '3px' }}>{sections}</div>
     </Page>
   );
 };
 
-MentionsPage.getInitialProps = async ({
-  query: { lang, poetId },
-}: {
-  query: { lang: Lang, poetId: string },
-}) => {
+MentionsPage.getInitialProps = async ({ query: { lang, poetId } }) => {
   const json = await Client.mentions(poetId);
   return {
     lang,

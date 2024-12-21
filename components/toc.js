@@ -1,5 +1,3 @@
-// @flow
-
 import React from 'react';
 import CommonData from '../common/commondata.js';
 import { Link } from '../routes';

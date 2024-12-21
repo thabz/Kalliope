@@ -1,5 +1,3 @@
-// @flow
-
 import React from 'react';
 
 export default class SplitWhenSmall extends React.Component {

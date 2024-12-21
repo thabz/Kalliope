@@ -1,4 +1,3 @@
-// @flow
 import React, { useEffect, useState } from 'react';
 import CommonData from '../common/commondata.js';
 import { CloseButton, LeftArrow, RightArrow } from './icons.js';

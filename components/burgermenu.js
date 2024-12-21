@@ -1,5 +1,3 @@
-// @flow
-
 import React, { useContext, useState } from 'react';
 import CommonData from '../common/commondata.js';
 import LangContext from '../common/LangContext.js';

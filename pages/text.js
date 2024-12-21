@@ -1,23 +1,9 @@
-// @flow
-
-import type { Node } from 'react';
 import React, { useContext, useEffect } from 'react';
 import * as Client from '../common/client.js';
 import LangContext from '../common/LangContext.js';
 import * as OpenGraph from '../common/opengraph.js';
 import { pluralize } from '../common/strings.js';
 import _ from '../common/translations.js';
-import type {
-  Error,
-  KeywordRef,
-  Lang,
-  PictureItem,
-  Poet,
-  PrevNextText,
-  Text,
-  TextSource,
-  Work,
-} from '../common/types.js';
 import { textCrumbs } from '../components/breadcrumbs.js';
 import { FootnoteContainer, FootnoteList } from '../components/footnotes.js';
 import HelpKalliope from '../components/helpkalliope.js';
@@ -39,12 +25,7 @@ import WrapNonEmpty from '../components/wrapnonempty.js';
 import { Link, Router } from '../routes';
 import ErrorPage from './error.js';
 
-type BladrerProps = {
-  target: ?PrevNextText,
-  left?: boolean,
-  right?: boolean,
-};
-const Bladrer = (props: BladrerProps) => {
+const Bladrer = (props) => {
   const { target, left, right } = props;
   const lang = useContext(LangContext);
 
@@ -80,8 +61,7 @@ const Bladrer = (props: BladrerProps) => {
   );
 };
 
-type KeywordLinkProps = { keyword: KeywordRef, lang: Lang };
-class KeywordLink extends React.Component<KeywordLinkProps> {
+class KeywordLink extends React.Component {
   render() {
     const { keyword, lang } = this.props;
     let url = null;
@@ -116,8 +96,7 @@ class KeywordLink extends React.Component<KeywordLinkProps> {
   }
 }
 
-type TextHeadingProps = { text: Text };
-class TextHeading extends React.Component<TextHeadingProps> {
+class TextHeading extends React.Component {
   render() {
     const { text } = this.props;
 
@@ -175,18 +154,7 @@ class TextHeading extends React.Component<TextHeadingProps> {
   }
 }
 
-type TextComponentProps = {
-  lang: Lang,
-  highlight: string,
-  poet: Poet,
-  work: Work,
-  text: Text,
-  section_titles: ?Array<{ title: string, id: ?string }>,
-  prev?: PrevNextText,
-  next?: PrevNextText,
-  error: ?Error,
-};
-const TextPage = (props: TextComponentProps) => {
+const TextPage = (props) => {
   useEffect(() => {
     if (typeof location !== undefined) {
       const hash = location.hash;
@@ -226,7 +194,7 @@ const TextPage = (props: TextComponentProps) => {
     };
   }
 
-  const notes: Array<Node> = text.notes
+  const notes = text.notes
     .filter((note) => note.type !== 'unknown-original')
     .map((note, i) => {
       return (
@@ -269,14 +237,14 @@ const TextPage = (props: TextComponentProps) => {
         </Note>
       );
     })
-    .filter((x: ?Node) => x != null)
-    .forEach((element: Node) => {
+    .filter((x) => x != null)
+    .forEach((element) => {
       notes.push(element);
     });
 
   let sourceText = '';
   if (text.source != null) {
-    const source: TextSource = text.source;
+    const source = text.source;
     sourceText = 'Teksten følger ';
     sourceText += source.source.replace(/\.?$/, ', ');
     if (source.pages.indexOf('-') > -1) {
@@ -324,7 +292,7 @@ const TextPage = (props: TextComponentProps) => {
       return s;
     }
     const firstPageNumber = text.source.facsimilePages[0];
-    let facsimilePictures: Array<PictureItem> = [];
+    let facsimilePictures = [];
     const srcPrefix = `https://kalliope.org/static/facsimiles/${poet.id}/${text.source.facsimile}`;
     for (let i = 0; i < text.source.facsimilePageCount; i++) {
       facsimilePictures.push({
@@ -460,11 +428,11 @@ const TextPage = (props: TextComponentProps) => {
   if (text.text_type === 'section' && text.toc != null) {
     body = <TOC toc={text.toc} lang={lang} indent={1} />;
   } else {
-    let highlightInterval: { from: number, to: number };
+    let highlightInterval;
     if (highlight != null) {
       let m = null;
-      let from: number = -1,
-        to: number = -1;
+      let from = -1,
+        to = -1;
       if ((m = highlight.match(/(\d+)-(\d+)/))) {
         from = parseInt(m[1]);
         to = parseInt(m[2]);
@@ -572,11 +540,7 @@ const TextPage = (props: TextComponentProps) => {
   );
 };
 
-TextPage.getInitialProps = async ({
-  query: { lang, textId, highlight },
-}: {
-  query: { lang: Lang, textId: string, highlight: string },
-}) => {
+TextPage.getInitialProps = async ({ query: { lang, textId, highlight } }) => {
   const json = await Client.text(textId);
   return {
     lang,

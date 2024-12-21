@@ -1,17 +1,7 @@
-// @flow
-
 import React from 'react';
-import type { Lang, PictureItem, Poet } from '../common/types.js';
 import Picture from '../components/picture.js';
 
-type ArtworkListProps = {
-  lang: Lang,
-  poet?: Poet,
-  hideArtist?: boolean,
-  hideMuseum?: boolean,
-  artwork: Array<PictureItem>,
-};
-export default class PicturesGrid extends React.Component<ArtworkListProps> {
+export default class PicturesGrid extends React.Component {
   render() {
     const { lang, poet, artwork, hideArtist, hideMuseum } = this.props;
 

@@ -1,5 +1,3 @@
-// @flow
-
 import React from 'react';
 import { Link } from '../routes';
 import TwoColumns from './twocolumns.js';
