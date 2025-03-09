@@ -1,17 +1,7 @@
-// @flow
-
 import React from 'react';
 import Picture from '../components/picture.js';
-import type { Lang, Poet, Work, PictureItem, Error } from '../common/types.js';
 
-type ArtworkListProps = {
-  lang: Lang,
-  poet?: Poet,
-  hideArtist?: boolean,
-  hideMuseum?: boolean,
-  artwork: Array<PictureItem>,
-};
-export default class PicturesGrid extends React.Component<ArtworkListProps> {
+export default class PicturesGrid extends React.Component {
   render() {
     const { lang, poet, artwork, hideArtist, hideMuseum } = this.props;
 
@@ -19,7 +9,7 @@ export default class PicturesGrid extends React.Component<ArtworkListProps> {
       return null;
     }
 
-    const sortArtworks = artwork => {
+    const sortArtworks = (artwork) => {
       return artwork.sort((a, b) => {
         const aKey = (a.year || '') + a.src;
         const bKey = (b.year || '') + b.src;
@@ -27,17 +17,17 @@ export default class PicturesGrid extends React.Component<ArtworkListProps> {
       });
     };
 
-    const rowWidth = items => {
+    const rowWidth = (items) => {
       let width = 0;
-      items.forEach(item => {
+      items.forEach((item) => {
         width += item.width;
       });
       return width;
     };
 
-    const rowHeight = items => {
+    const rowHeight = (items) => {
       let height = 0;
-      items.forEach(item => {
+      items.forEach((item) => {
         if (item.picture != null && item.picture.size != null) {
           height =
             (item.picture.size.height / item.picture.size.width) * item.width;
@@ -48,7 +38,7 @@ export default class PicturesGrid extends React.Component<ArtworkListProps> {
 
     const sortedArtworks = sortArtworks(artwork);
 
-    const renderWithMaxHeight = maxHeight => {
+    const renderWithMaxHeight = (maxHeight) => {
       const gutterWidth = maxHeight / 10;
       const viewportWidth = 100; // Max width (percentage)
       const rows = [];
@@ -66,7 +56,7 @@ export default class PicturesGrid extends React.Component<ArtworkListProps> {
           // Scale widths in row down, so that the sum is 100.
           const overflow = (currentWidth - viewportWidth) / row.length;
           const factor = viewportWidth / currentWidth;
-          row.forEach(item => {
+          row.forEach((item) => {
             item.width *= factor;
           });
           rows.push({
@@ -95,7 +85,7 @@ export default class PicturesGrid extends React.Component<ArtworkListProps> {
         avgHeight /= num;
         const factor = avgHeight / maxHeight;
         const lastRow = rows[rows.length - 1];
-        lastRow.items.forEach(item => {
+        lastRow.items.forEach((item) => {
           item.width *= factor;
         });
         lastRow.height = rowHeight(lastRow.items);

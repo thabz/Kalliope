@@ -1,31 +1,7 @@
-// @flow
 import 'isomorphic-fetch';
 import * as Paths from './paths.js';
-import type {
-  Lang,
-  Country,
-  Poet,
-  PoetId,
-  Museum,
-  MuseumId,
-  Work,
-  WorkId,
-  Text,
-  Keyword,
-  PrevNextText,
-  LinesPair,
-  TocItem,
-  NoteItem,
-  PictureItem,
-  TextLang,
-  DictItem,
-  Error,
-  LinesType,
-  TextContentType,
-  TimelineItem,
-} from './types.js';
 
-export const createURL = (path: string): string => {
+export const createURL = (path) => {
   try {
     let l = eval('document.location');
     // We're running in the browser
@@ -36,7 +12,7 @@ export const createURL = (path: string): string => {
   }
 };
 
-const fetchJSON = async (path: string): Promise<*> => {
+const fetchJSON = async (path) => {
   const res = await fetch(createURL(path));
   if (res.status > 200) {
     return Promise.resolve({ error: { statusCode: res.status } });
@@ -45,7 +21,7 @@ const fetchJSON = async (path: string): Promise<*> => {
   }
 };
 
-export const poet = async (poetId: ?PoetId): Promise<?Poet> => {
+export const poet = async (poetId) => {
   if (poetId == null) {
     return Promise.resolve(null);
   } else {
@@ -53,158 +29,68 @@ export const poet = async (poetId: ?PoetId): Promise<?Poet> => {
   }
 };
 
-type FetchPoetsResult = Promise<{
-  poets: Array<Poet>,
-  error: ?Error,
-}>;
-export const poets = async (country: Country): FetchPoetsResult => {
+export const poets = async (country) => {
   // flow-disable-next-line
   return fetchJSON(`/static/api/poets-${country}.json`);
 };
 
-type FetchAllTextsResult = Promise<{
-  lines: Array<any>,
-  letters: Array<string>,
-  error: ?Error,
-}>;
-export const allTexts = async (
-  country: Country,
-  type: LinesType,
-  letter: string
-): FetchAllTextsResult => {
+export const allTexts = async (country, type, letter) => {
   return fetchJSON(`/static/api/alltexts/${country}-${type}-${letter}.json`);
 };
 
-type FetchDictItemResult = Promise<{
-  item: DictItem,
-  error: ?Error,
-}>;
-export const dictItem = async (dictItemId: string): FetchDictItemResult => {
+export const dictItem = async (dictItemId) => {
   return fetchJSON(`/static/api/dict/${dictItemId}.json`);
 };
 
-type FetchMuseumsItemResult = Promise<{
-  museums: Array<Museum>,
-  error: ?Error,
-}>;
-export const museums = async (): FetchMuseumsItemResult => {
+export const museums = async () => {
   return fetchJSON(`/static/api/museums.json`);
 };
 
-export type FetchWorkResult = {
-  poet: Poet,
-  work: Work,
-  toc: Array<TocItem>,
-  notes: Array<NoteItem>,
-  subworks: ?Array<Work>,
-  pictures: Array<PictureItem>,
-};
-export const work = async (
-  poetId: PoetId,
-  workId: WorkId,
-  error: ?Error
-): Promise<FetchWorkResult> => {
+export const work = async (poetId, workId) => {
   const path = `/static/api/${poetId}/${workId}-toc.json`;
   return fetchJSON(path);
 };
 
-export type FetchMuseumResult = {
-  museum: Museum,
-  artwork: Array<PictureItem>,
-  error: ?Error,
-};
-export const museum = async (
-  museumId: MuseumId
-): Promise<FetchMuseumResult> => {
+export const museum = async (museumId) => {
   const path = `/static/api/museums/${museumId}.json`;
   return fetchJSON(path);
 };
 
-type FetchWorksResult = Promise<{
-  poet: Poet,
-  works: Array<Work>,
-  artwork: Array<PictureItem>,
-  error: ?Error,
-}>;
-export const works = async (poetId: PoetId): FetchWorksResult => {
+export const works = async (poetId) => {
   return fetchJSON(`/static/api/${poetId}/works.json`);
 };
 
-type FetchBioResult = Promise<{
-  poet: Poet,
-  portraits?: Array<PictureItem>,
-  timeline: Array<TimelineItem>,
-  content_html: TextContentType,
-  content_lang: TextLang,
-  error: ?Error,
-}>;
-export const bio = async (poetId: PoetId): FetchBioResult => {
+export const bio = async (poetId) => {
   return fetchJSON(`/static/api/${poetId}/bio.json`);
 };
 
-type FetchMentionsResult = Promise<{
-  poet: Poet,
-  mentions: Array<TextContentType>,
-  translations: Array<TextContentType>,
-  primary: Array<TextContentType>,
-  secondary: Array<TextContentType>,
-  error: ?Error,
-}>;
-export const mentions = async (poetId: PoetId): FetchMentionsResult => {
+export const mentions = async (poetId) => {
   return fetchJSON(`/static/api/${poetId}/mentions.json`);
 };
 
-type FetchKeywordResult = Promise<Keyword>;
-export const keyword = async (keywordId: string): FetchKeywordResult => {
+export const keyword = async (keywordId) => {
   return fetchJSON(`/static/api/keywords/${keywordId}.json`);
 };
 
-export const about = async (
-  keywordId: string,
-  lang: Lang
-): FetchKeywordResult => {
+export const about = async (keywordId, lang) => {
   return fetchJSON(`/static/api/about/${keywordId}_${lang}.json`);
 };
 
-type FetchTextResult = Promise<{
-  poet: Poet,
-  work: Work,
-  prev: PrevNextText,
-  next: PrevNextText,
-  text: Text,
-  section_titles: Array<string>,
-  error: ?Error,
-}>;
-export const text = async (textId: string): FetchTextResult => {
-  const path: string = Paths.textPath(textId);
-  const json: FetchTextResult = fetchJSON(`/${path}`);
+export const text = async (textId) => {
+  const path = Paths.textPath(textId);
+  const json = fetchJSON(`/${path}`);
   return json;
 };
 
-type FetchSearchResult = Promise<{
-  hits: { hits: [], total: number },
-  error: ?Error,
-}>;
-export const search = async (
-  poetId: string = '',
-  country: Country,
-  query: string,
-  page: number = 0
-): FetchSearchResult => {
+export const search = async (poetId, country, query, page = 0) => {
   let URL = `/search?country=${country}&query=${query}&page=${page}`;
   if (poetId != null) {
     URL += `&poetId=${poetId}`;
   }
   const res = await fetch(createURL(URL));
-  return (await res.json(): FetchSearchResult);
+  return await res.json();
 };
 
-type FetchTextsResult = Promise<{
-  poet: Poet,
-  lines: Object,
-}>;
-
-export const texts = async (poetId: PoetId): FetchTextsResult => {
-  const json: FetchTextsResult = fetchJSON(`/static/api/${poetId}/texts.json`);
-  return json;
+export const texts = async (poetId) => {
+  return fetchJSON(`/static/api/${poetId}/texts.json`);
 };

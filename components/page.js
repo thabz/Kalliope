@@ -1,19 +1,13 @@
-// @flow
 import React, { useContext } from 'react';
-import Tabs from './menu.js';
-import BurgerMenu from './burgermenu.js';
-import Breadcrumbs, { Paging } from './breadcrumbs.js';
-import Main from './main.js';
-import Head from './head.js';
-import CountryPicker from './countrypicker.js';
-import LangContext from '../common/LangContext.js';
-import LangSelect from './langselect.js';
 import CommonData from '../common/commondata.js';
+import LangContext from '../common/LangContext.js';
+import Breadcrumbs, { Paging } from './breadcrumbs.js';
+import Head from './head.js';
+import LangSelect from './langselect.js';
+import Main from './main.js';
+import Tabs from './menu.js';
 
-type HeadingProps = {
-  title: Node | string,
-};
-const Heading = (props: HeadingProps) => {
+const Heading = (props) => {
   const { title } = props;
   return (
     <div className="heading">
@@ -59,7 +53,7 @@ const Heading = (props: HeadingProps) => {
   );
 };
 
-const Page = props => {
+const Page = (props) => {
   const {
     children,
     headTitle,
@@ -109,7 +103,7 @@ const Page = props => {
             font-family: 'Alegreya';
             font-style: italic;
             font-weight: 400;
-            font-display: swap;
+            font-display: fallback;
             src: local('Alegreya Italic'), local('Alegreya-Italic'),
               url(https://fonts.gstatic.com/s/alegreya/v13/4UaHrEBBsBhlBjvfkSLkx60.ttf)
                 format('truetype');
@@ -118,7 +112,7 @@ const Page = props => {
             font-family: 'Alegreya';
             font-style: italic;
             font-weight: 700;
-            font-display: swap;
+            font-display: fallback;
             src: local('Alegreya Bold Italic'), local('Alegreya-BoldItalic'),
               url(https://fonts.gstatic.com/s/alegreya/v13/4UaErEBBsBhlBjvfkSLk_xHMwps.ttf)
                 format('truetype');
@@ -127,7 +121,7 @@ const Page = props => {
             font-family: 'Alegreya';
             font-style: normal;
             font-weight: 400;
-            font-display: swap;
+            font-display: fallback;
             src: local('Alegreya Regular'), local('Alegreya-Regular'),
               url(https://fonts.gstatic.com/s/alegreya/v13/4UaBrEBBsBhlBjvfkRLm.ttf)
                 format('truetype');
@@ -136,7 +130,7 @@ const Page = props => {
             font-family: 'Alegreya';
             font-style: normal;
             font-weight: 700;
-            font-display: swap;
+            font-display: fallback;
             src: local('Alegreya Bold'), local('Alegreya-Bold'),
               url(https://fonts.gstatic.com/s/alegreya/v13/4UaGrEBBsBhlBjvfkSpa4o3J.ttf)
                 format('truetype');
@@ -145,7 +139,7 @@ const Page = props => {
             font-family: 'Alegreya SC';
             font-style: normal;
             font-weight: 400;
-            font-display: swap;
+            font-display: fallback;
             src: local('Alegreya SC Regular'), local('AlegreyaSC-Regular'),
               url(https://fonts.gstatic.com/s/alegreyasc/v11/taiOGmRtCJ62-O0HhNEa-a6o.ttf)
                 format('truetype');
@@ -154,7 +148,7 @@ const Page = props => {
             font-family: 'Alegreya Sans';
             font-style: italic;
             font-weight: 400;
-            font-display: swap;
+            font-display: fallback;
             src: local('Alegreya Sans Italic'), local('AlegreyaSans-Italic'),
               url(https://fonts.gstatic.com/s/alegreyasans/v10/5aUt9_-1phKLFgshYDvh6Vwt7V9tuA.ttf)
                 format('truetype');
@@ -163,7 +157,7 @@ const Page = props => {
             font-family: 'Alegreya Sans';
             font-style: italic;
             font-weight: 700;
-            font-display: swap;
+            font-display: fallback;
             src: local('Alegreya Sans Bold Italic'),
               local('AlegreyaSans-BoldItalic'),
               url(https://fonts.gstatic.com/s/alegreyasans/v10/5aUo9_-1phKLFgshYDvh6Vwt7V9VBEh2jg.ttf)
@@ -173,7 +167,7 @@ const Page = props => {
             font-family: 'Alegreya Sans';
             font-style: normal;
             font-weight: 300;
-            font-display: swap;
+            font-display: fallback;
             src: local('Alegreya Sans Light'), local('AlegreyaSans-Light'),
               url(https://fonts.gstatic.com/s/alegreyasans/v10/5aUu9_-1phKLFgshYDvh6Vwt5fFPmE0.ttf)
                 format('truetype');
@@ -182,7 +176,7 @@ const Page = props => {
             font-family: 'Alegreya Sans';
             font-style: normal;
             font-weight: 400;
-            font-display: swap;
+            font-display: fallback;
             src: local('Alegreya Sans Regular'), local('AlegreyaSans-Regular'),
               url(https://fonts.gstatic.com/s/alegreyasans/v10/5aUz9_-1phKLFgshYDvh6Vwt3V0.ttf)
                 format('truetype');
@@ -191,7 +185,7 @@ const Page = props => {
             font-family: 'Alegreya Sans';
             font-style: normal;
             font-weight: 700;
-            font-display: swap;
+            font-display: fallback;
             src: local('Alegreya Sans Bold'), local('AlegreyaSans-Bold'),
               url(https://fonts.gstatic.com/s/alegreyasans/v10/5aUu9_-1phKLFgshYDvh6Vwt5eFImE0.ttf)
                 format('truetype');
@@ -200,7 +194,7 @@ const Page = props => {
             font-family: 'Alegreya Sans';
             font-style: normal;
             font-weight: 100;
-            font-display: swap;
+            font-display: fallback;
             src: local('Alegreya Sans Thin'), local('AlegreyaSans-Thin'),
               url(https://fonts.gstatic.com/s/alegreyasans/v10/5aUt9_-1phKLFgshYDvh6Vwt5TltuA.ttf)
                 format('truetype');

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="mickle" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>William</firstname>
+    <lastname>Mickle</lastname>
+    <fullname>William Julius Mickle</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1734-09-29</date>
+      <place>Langholm, Dumfrieshire</place>
+    </born>
+    <dead>
+      <date>1788-10-28</date>
+      <place>Forest Hill</place>
+    </dead>
+  </period>
+  <works>andre</works>
+</person>

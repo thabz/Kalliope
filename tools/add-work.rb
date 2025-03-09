@@ -2,35 +2,46 @@
 
 require 'nokogiri'
 
-poetid = ''
+poetId = nil
+workId = nil
 
 if ARGV.length > 0
-    poetid = ARGV[0]
-else
+    poetId = ARGV[0]
+end
+if ARGV.length > 1
+    workId = ARGV[1]
+end
+if poetId.nil?
     puts "Skriv digter-id: "
-    poetid = gets.strip
+    poetId = gets.strip
+end
+if workId.nil?
+  puts "Skriv værk-id: "
+  workId = STDIN.gets.strip
 end
 
-folder = "fdirs/#{poetid}"
+folder = "fdirs/#{poetId}"
 
 if (!File.directory?(folder)) 
     abort("Mappen #{folder} findes ikke.")
 end
 
-puts "Skriv værk-id: "
-workId = STDIN.gets.strip
 year = nil
+title = nil
 if m = workId.match(/\d\d\d\d/)
     year = m[0]
+    puts "Skriv titel: "
+    title = STDIN.gets.strip
+elsif workId == 'andre'
+    year = "?"
+    title = 'Andre digte'
 else 
-    abort("Værk-id skal indeholde fire cifre")
+    abort("Værk-id skal indeholde fire cifre eller være 'andre'")
 end
-puts "Skriv titel: "
-title = STDIN.gets.strip
 
 lines = %{<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
-<kalliopework id="#{workId}" author="#{poetid}" status="incomplete" type="poetry">
+<kalliopework id="#{workId}" author="#{poetId}" status="incomplete" type="poetry">
 <workhead>
     <title>#{title}</title>
     <year>#{year}</year>
@@ -52,7 +63,7 @@ end
 
 # Modify info.xml
 
-infoxmlfilename = "fdirs/#{poetid}/info.xml"
+infoxmlfilename = "fdirs/#{poetId}/info.xml"
 infoxmlfile = File.read(infoxmlfilename)
 infoxml = Nokogiri::XML(infoxmlfile)
 poetnodes = infoxml.xpath(".//person")

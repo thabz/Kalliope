@@ -1,32 +1,18 @@
-// @flow
-
+import 'isomorphic-fetch';
 import React, { useContext } from 'react';
-import Page from '../components/page.js';
-import { kalliopeMenu } from '../components/menu.js';
-import LangSelect from '../components/langselect';
-import { kalliopeCrumbs } from '../components/breadcrumbs';
-import SubHeading from '../components/subheading.js';
-import SidebarSplit from '../components/sidebarsplit.js';
-import * as Links from '../components/links';
-import TextContent from '../components/textcontent.js';
-import SplitWhenSmall from '../components/split-when-small.js';
-import Picture from '../components/picture.js';
-import { formattedDate } from '../components/formatteddate.js';
-import type {
-  Lang,
-  NewsItem,
-  TimelineItem,
-  PictureItem,
-} from '../common/types.js';
 import { createURL } from '../common/client.js';
 import LangContext from '../common/LangContext.js';
-import _ from '../common/translations.js';
-import 'isomorphic-fetch';
+import { kalliopeCrumbs } from '../components/breadcrumbs';
+import { formattedDate } from '../components/formatteddate.js';
+import { kalliopeMenu } from '../components/menu.js';
+import Page from '../components/page.js';
+import Picture from '../components/picture.js';
+import SidebarSplit from '../components/sidebarsplit.js';
+import SplitWhenSmall from '../components/split-when-small.js';
+import SubHeading from '../components/subheading.js';
+import TextContent from '../components/textcontent.js';
 
-type TodaysEventsProps = {
-  events: Array<TimelineItem>,
-};
-const TodaysEvents = ({ events }: TodaysEventsProps) => {
+const TodaysEvents = ({ events }) => {
   const lang = useContext(LangContext);
 
   if (events == null || events.length == 0) {
@@ -34,7 +20,7 @@ const TodaysEvents = ({ events }: TodaysEventsProps) => {
   }
   const nowYear = new Date().getFullYear();
   const renderedEvents = events
-    .filter(item => item.type !== 'image')
+    .filter((item) => item.type !== 'image')
     .map((item, i) => {
       const yearsAgo = nowYear - parseInt(item.date.substring(0, 4));
       const yearHtml = (
@@ -57,9 +43,9 @@ const TodaysEvents = ({ events }: TodaysEventsProps) => {
       );
     });
   let pictureItems = events
-    .filter(item => item.type === 'image' && item.src != null)
+    .filter((item) => item.type === 'image' && item.src != null)
     .map((item, i) => {
-      const picture: PictureItem = {
+      const picture = {
         src: item.src || '',
         lang: item.content_lang,
         content_html: item.content_html,
@@ -103,10 +89,7 @@ const TodaysEvents = ({ events }: TodaysEventsProps) => {
   );
 };
 
-type NewsProps = {
-  news: Array<NewsItem>,
-};
-const News = ({ news }: NewsProps) => {
+const News = ({ news }) => {
   const lang = useContext(LangContext);
 
   const items = news
@@ -160,20 +143,11 @@ const News = ({ news }: NewsProps) => {
   return <div>{items}</div>;
 };
 
-const zeroPad = (n: number) => {
+const zeroPad = (n) => {
   return n < 10 ? `0${n}` : `${n}`;
 };
 
-type IndexProps = {
-  news: Array<NewsItem>,
-  todaysEvents: Array<TimelineItem>,
-  pagingContext: ?{
-    prev: string, // mm-dd
-    next: string, // mm-dd
-  },
-};
-
-let Index = (props: IndexProps) => {
+let Index = (props) => {
   const { news, todaysEvents, pagingContext } = props;
   const lang = useContext(LangContext);
 
@@ -203,7 +177,8 @@ let Index = (props: IndexProps) => {
       crumbs={kalliopeCrumbs(lang)}
       menuItems={kalliopeMenu()}
       selectedMenuItem="index"
-      paging={paging}>
+      paging={paging}
+    >
       <SidebarSplit sidebar={sidebar}>
         <div>
           <News news={news} lang={lang} />
@@ -213,11 +188,7 @@ let Index = (props: IndexProps) => {
   );
 };
 
-Index.getInitialProps = async ({
-  query: { lang, date },
-}: {
-  query: { lang: Lang, date?: string },
-}) => {
+Index.getInitialProps = async ({ query: { lang, date } }) => {
   if (lang == null) {
     lang = 'da';
   }
@@ -250,8 +221,8 @@ Index.getInitialProps = async ({
   );
   const todayResponse = await todayPromise;
   const newsResponse = await newsPromise;
-  const todaysEvents: Array<TimelineItem> = await todayResponse.json();
-  const news: Array<NewsItem> = await newsResponse.json();
+  const todaysEvents = await todayResponse.json();
+  const news = await newsResponse.json();
 
   return { lang, country, news, todaysEvents, pagingContext };
 };

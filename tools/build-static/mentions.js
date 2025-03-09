@@ -26,7 +26,7 @@ const { primaryTextVariantId } = require('./variants.js');
 
 const person_mentions_dirty = new Set();
 
-const build_person_or_keyword_refs = collected => {
+const build_person_or_keyword_refs = (collected) => {
   let person_or_keyword_refs = globalForceReload
     ? new Map([])
     : new Map(loadCachedJSON('collected.person_or_keyword_refs') || []);
@@ -34,11 +34,18 @@ const build_person_or_keyword_refs = collected => {
 
   let found_changes = false;
   const regexps = [
-    { regexp: /xref ()poem="([^"]*)"/g, type: 'text' },
-    { regexp: /a ()poem="([^"]*)"/g, type: 'text' },
-    { regexp: /xref type="([^"]*)" poem="([^"]*)"/g, type: 'text' },
-    { regexp: /a type="([^"]*)" poem="([^"]*)"/g, type: 'text' },
-    { regexp: /xref ()bibel="([^",]*)/g, type: 'text' },
+    { regexp: /xref poem="(?<poem>[^"]*)"/g, type: 'text' },
+    { regexp: /a poem="(?<poem>[^"]*)"/g, type: 'text' },
+    {
+      regexp: /xref type="(?<type>[^"]*)" poem="(?<poem>[^"]*)"/g,
+      type: 'text',
+    },
+    {
+      regexp: /xref poem="(?<poem>[^"]*)" type="(?<type>[^"]*)"/g,
+      type: 'text',
+    },
+    { regexp: /a type="(?<type>[^"]*)" poem="(?<poem>[^"]*)"/g, type: 'text' },
+    { regexp: /xref bibel="(?<poem>[^",]*)/g, type: 'text' },
     { regexp: /a ()person="([^"]*)"/g, type: 'person' },
     { regexp: /a ()poet="([^"]*)"/g, type: 'person' },
     {
@@ -69,7 +76,7 @@ const build_person_or_keyword_refs = collected => {
         collection.mention.splice(mentionIndex, 1);
       }
       if (
-        !collection.translation.some(t => t.translationPoemId === fromPoemId)
+        !collection.translation.some((t) => t.translationPoemId === fromPoemId)
       ) {
         collection.translation.push({
           translationPoemId: fromPoemId,
@@ -83,7 +90,7 @@ const build_person_or_keyword_refs = collected => {
     person_mentions_dirty.add(toKey);
   };
   collected.workids.forEach((workIds, poetId) => {
-    workIds.forEach(workId => {
+    workIds.forEach((workId) => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
       if (!fileExists(filename)) {
         return;
@@ -95,8 +102,8 @@ const build_person_or_keyword_refs = collected => {
       }
       let doc = loadXMLDoc(filename);
       getElementsByTagNames(doc, ['text', 'section'])
-        .filter(s => safeGetAttr(s, 'id') != null)
-        .forEach(text => {
+        .filter((s) => safeGetAttr(s, 'id') != null)
+        .forEach((text) => {
           const fromId = safeGetAttr(text, 'id');
           const head = getChildByTagName(text, 'head');
           const body = getChildByTagName(text, 'body');
@@ -104,14 +111,14 @@ const build_person_or_keyword_refs = collected => {
             ...getElementsByTagNames(head, ['note', 'picture']),
             ...getElementsByTagNames(body, ['note', 'footnote']),
           ];
-          notes.forEach(note => {
-            regexps.forEach(rule => {
+          notes.forEach((note) => {
+            regexps.forEach((rule) => {
               while (
                 (match = rule.regexp.exec(safeGetOuterXML(note))) != null
               ) {
-                const refType = match[1] || 'mention';
                 if (rule.type === 'text') {
-                  const toPoemId = match[2].replace(/,.*$/, '');
+                  const refType = match.groups.type || 'mention';
+                  const toPoemId = match.groups.poem.replace(/,.*$/, '');
                   const toText = collected.texts.get(toPoemId);
                   if (toText != null) {
                     const toPoetId = toText.poetId;
@@ -132,7 +139,18 @@ const build_person_or_keyword_refs = collected => {
                   register(filename, toPoetId, fromId, 'translation', null);
                 } else if (rule.type === 'pictureref') {
                   const pictureRef = match[2];
+                  if (!pictureRef.match('/')) {
+                    throw new Error(
+                      `${filename} points has illegal picture ref ${pictureRef}. 
+                      It should be on the form "{artist-id}/{picture-id}" or "kunst/{picture-id}"`
+                    );
+                  }
                   const picture = collected.artwork.get(pictureRef);
+                  if (picture == null) {
+                    throw new Error(
+                      `${filename} points to unknown picture ${pictureRef}`
+                    );
+                  }
                   register(filename, picture.artistId, fromId, 'mention');
                 }
               }
@@ -140,7 +158,7 @@ const build_person_or_keyword_refs = collected => {
           });
           const keywords = safeGetText(head, 'keywords') || '';
           if (keywords.trim().length > 0) {
-            keywords.split(',').forEach(keyword => {
+            keywords.split(',').forEach((keyword) => {
               register(filename, keyword, fromId, 'mention');
             });
           }
@@ -156,8 +174,8 @@ const build_person_or_keyword_refs = collected => {
   collected.person_or_keyword_refs = person_or_keyword_refs;
 };
 
-const build_mentions_json = collected => {
-  const build_html = poemId => {
+const build_mentions_json = (collected) => {
+  const build_html = (poemId) => {
     const meta = collected.texts.get(poemId);
     if (meta == null) {
       throw `Unknown poem ${poemId}`;
@@ -204,15 +222,9 @@ const build_mentions_json = collected => {
     };
     const refs = collected.person_or_keyword_refs.get(poetId);
     if (refs != null) {
-      data.mentions = refs.mention
-        .filter(id => {
-          // Hvis en tekst har varianter som også henviser til denne,
-          // vil vi kun vise den ældste variant.
-          return primaryTextVariantId(id, collected) === id;
-        })
-        .map(build_html);
+      const seenTranslations = new Set();
       data.translations = refs.translation
-        .filter(t => {
+        .filter((t) => {
           // Fjern oversættelser som ikke er den ældste variant
           const { translationPoemId, _ } = t;
           return (
@@ -220,7 +232,7 @@ const build_mentions_json = collected => {
             translationPoemId
           );
         })
-        .map(t => {
+        .map((t) => {
           const { translationPoemId, translatedPoemId } = t;
           const translationPoem = collected.texts.get(translationPoemId);
           let translatedPoem = null;
@@ -229,6 +241,7 @@ const build_mentions_json = collected => {
             if (translatedPoem == null) {
               throw `${translatedPoemId} not found in texts.`;
             }
+            seenTranslations.add(translationPoemId);
           }
           const result = {
             translation: {
@@ -249,13 +262,27 @@ const build_mentions_json = collected => {
           }
           return result;
         });
+      data.mentions = refs.mention
+        .filter((id) => {
+          // Hvis en tekst har varianter som også henviser til denne,
+          // vil vi kun vise den ældste variant.
+          return primaryTextVariantId(id, collected) === id;
+        })
+        .filter((id) => {
+          const isAlsoTranslation = seenTranslations.has(id);
+          if (isAlsoTranslation) {
+            console.log(`Translation ${id} has superfluous mention.`);
+          }
+          return !isAlsoTranslation;
+        })
+        .map(build_html);
     }
 
-    ['primary', 'secondary'].forEach(filename => {
+    ['primary', 'secondary'].forEach((filename) => {
       const biblioXmlPath = `fdirs/${poet.id}/bibliography-${filename}.xml`;
       const doc = loadXMLDoc(biblioXmlPath);
       if (doc != null) {
-        data[filename] = getElementsByTagName(doc, 'item').map(line => {
+        data[filename] = getElementsByTagName(doc, 'item').map((line) => {
           return htmlToXml(safeGetInnerXML(line), collected);
         });
       } else {

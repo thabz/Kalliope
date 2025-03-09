@@ -1,41 +1,22 @@
-// @flow
-
 import React, { useContext } from 'react';
-import type Node from 'react';
-import { Link } from '../routes';
-import Page from '../components/page.js';
-import { kalliopeMenu } from '../components/menu.js';
-import LangSelect from '../components/langselect';
-import { kalliopeCrumbs } from '../components/breadcrumbs.js';
-import SubHeading from '../components/subheading.js';
-import SidebarSplit from '../components/sidebarsplit.js';
-import TwoColumns from '../components/twocolumns.js';
-import SidebarPictures from '../components/sidebarpictures.js';
-import Picture from '../components/picture.js';
-import Note from '../components/note.js';
-import * as Links from '../components/links';
 import * as Client from '../common/client.js';
-import TextContent from '../components/textcontent.js';
-import ErrorPage from './error.js';
 import LangContext from '../common/LangContext.js';
-import type {
-  Lang,
-  NewsItem,
-  TextContentType,
-  AboutItem,
-  Error,
-} from '../common/types.js';
-import { createURL } from '../common/client.js';
+import { kalliopeCrumbs } from '../components/breadcrumbs.js';
+import * as Links from '../components/links';
+import { kalliopeMenu } from '../components/menu.js';
+import Note from '../components/note.js';
+import Page from '../components/page.js';
+import Picture from '../components/picture.js';
+import SidebarPictures from '../components/sidebarpictures.js';
+import SidebarSplit from '../components/sidebarsplit.js';
+import SubHeading from '../components/subheading.js';
+import TextContent from '../components/textcontent.js';
+import TwoColumns from '../components/twocolumns.js';
+import ErrorPage from './error.js';
 
 // Koden er stort set identisk med keyword
 
-type AboutProps = {
-  lang: Lang,
-  keyword: AboutItem,
-  aboutItemId: string,
-  error: ?Error,
-};
-const About = (props: AboutProps) => {
+const About = (props) => {
   const { aboutItemId, keyword, error } = props;
   const lang = useContext(LangContext);
 
@@ -69,7 +50,7 @@ const About = (props: AboutProps) => {
       </Note>
     );
   });
-  let sidebar: Array<Node> = [];
+  let sidebar = [];
   if (keyword.notes.length > 0 || keyword.pictures.length > 0) {
     if (keyword.pictures.length > 0) {
       sidebar = sidebar.concat(renderedPictures);
@@ -137,17 +118,14 @@ const About = (props: AboutProps) => {
       crumbs={crumbs}
       pageTitle={'Kalliope'}
       menuItems={kalliopeMenu()}
-      selectedMenuItem="about">
+      selectedMenuItem="about"
+    >
       {pageBody}
     </Page>
   );
 };
 
-About.getInitialProps = async ({
-  query: { lang, aboutItemId },
-}: {
-  query: { lang: Lang, aboutItemId: string },
-}) => {
+About.getInitialProps = async ({ query: { lang, aboutItemId } }) => {
   if (lang == null) {
     lang = 'da';
   }
