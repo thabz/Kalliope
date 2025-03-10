@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <person id="rimestad" country="dk" lang="da" type="poet">
   <name>
-    <firstname>Chr.</firstname>
+    <firstname>Christian</firstname>
     <lastname>Rimestad</lastname>
-    <fullname>Christian Rimestad</fullname>
   </name>
   <period>
     <born>
@@ -15,4 +14,7 @@
     </dead>
   </period>
   <works>1905,1908,1910,1920,1926</works>
+  <identifiers>
+    <wikidata>Q6072642</wikidata>
+  </identifiers>
 </person>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <person id="lisle" country="fr" lang="fr" type="poet">
   <name>
-    <firstname>Claude-Joseph</firstname>
+    <firstname>Claude Joseph</firstname>
     <lastname>Rouget de Lisle</lastname>
   </name>
   <period>
@@ -15,4 +15,7 @@
     </dead>
   </period>
   <works>andre</works>
+  <identifiers>
+    <wikidata>Q207660</wikidata>
+  </identifiers>
 </person>

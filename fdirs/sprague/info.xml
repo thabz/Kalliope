@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<person id="sprague" country="us" lang="en" type="poet"> 
+<person id="sprague" country="us" lang="en" type="poet">
   <name>
     <firstname>Charles</firstname>
     <lastname>Sprague</lastname>
@@ -14,4 +14,7 @@
     </dead>
   </period>
   <works>andre</works>
+  <identifiers>
+    <wikidata>Q5082601</wikidata>
+  </identifiers>
 </person>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<person id="poe" country="us" lang="en" type="poet"> 
+<person id="poe" country="us" lang="en" type="poet">
   <name>
     <firstname>Edgar Allan</firstname>
     <lastname>Poe</lastname>
@@ -15,4 +15,7 @@
     </dead>
   </period>
   <works>1827,1829,1831,1840,1841,1845,andre</works>
+  <identifiers>
+    <wikidata>Q16867</wikidata>
+  </identifiers>
 </person>
