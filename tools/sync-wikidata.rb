@@ -38,6 +38,11 @@ end
 def buildIdentifiersXml(poetId, wikidataId, doc)
   puts "Building identifiers for #{poetId} with wikidataId #{wikidataId}"
   externalIds = fetchWikidataExternalIds(wikidataId)
+  # Check our id
+  if not externalIds['P12404'].nil? and externalIds['P12404'] != poetId
+    puts "{poetId} peger på den forkerte wikidata"
+    exit
+  end
   gravsted_dk_id = externalIds['P4359']
   lex_dk_id = externalIds['P8313']
   viaf_id = externalIds['P214']
@@ -52,6 +57,10 @@ def buildIdentifiersXml(poetId, wikidataId, doc)
   addIdentifierNode(externalIds, 'P214', 'viaf', doc, new_identifiers)
   new_identifiers.add_child("\n    ")
   addIdentifierNode(externalIds, 'P8313', 'lex-dk', doc, new_identifiers)
+  new_identifiers.add_child("\n    ")
+  addIdentifierNode(externalIds, 'P3154', 'runeberg-org', doc, new_identifiers)
+  new_identifiers.add_child("\n    ")
+  addIdentifierNode(externalIds, 'P1938', 'gutenberg-org', doc, new_identifiers)
   new_identifiers.add_child("\n  ")
   return new_identifiers
 end
