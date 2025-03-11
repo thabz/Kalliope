@@ -10,6 +10,11 @@ def fetchWikidataExternalIds(wikidata_id)
   response = Net::HTTP.get(url)
   data = JSON.parse(response)
 
+  if data.nil?
+    puts "Kunne ikke hente data for #{wikidata_id}"
+    exit
+  end
+
   # Extract entity data
   entity = data["entities"][wikidata_id]
   claims = entity["claims"]
@@ -31,13 +36,19 @@ def addIdentifierNode(externalIds, pKey, tag, doc, new_identifiers)
   if not id.nil?
     node = Nokogiri::XML::Node.new(tag, doc)
     node.content = id
+    new_identifiers.add_child("    ")
     new_identifiers.add_child(node) 
+    new_identifiers.add_child("\n")
   end
 end
 
 def buildIdentifiersXml(poetId, wikidataId, doc)
   puts "Building identifiers for #{poetId} with wikidataId #{wikidataId}"
   externalIds = fetchWikidataExternalIds(wikidataId)
+  if externalIds.nil?
+    puts "Wikidata ikke fundet for {poetId}"
+    exit
+  end
   # Check our id
   if not externalIds['P12404'].nil? and externalIds['P12404'] != poetId
     puts "{poetId} peger på den forkerte wikidata"
@@ -49,19 +60,19 @@ def buildIdentifiersXml(poetId, wikidataId, doc)
   new_identifiers = Nokogiri::XML::Node.new("identifiers", doc)
   wikidataNode = Nokogiri::XML::Node.new('wikidata', doc)
   wikidataNode.content = wikidataId
-  new_identifiers.add_child("\n    ")
+  new_identifiers.add_child("\n")
+  new_identifiers.add_child("    ")
   new_identifiers.add_child(wikidataNode) 
-  new_identifiers.add_child("\n    ")
+  new_identifiers.add_child("\n")
   addIdentifierNode(externalIds, 'P4359', 'gravsted-dk', doc, new_identifiers)
-  new_identifiers.add_child("\n    ")
   addIdentifierNode(externalIds, 'P214', 'viaf', doc, new_identifiers)
-  new_identifiers.add_child("\n    ")
   addIdentifierNode(externalIds, 'P8313', 'lex-dk', doc, new_identifiers)
-  new_identifiers.add_child("\n    ")
+  addIdentifierNode(externalIds, 'P9466', 'teaterleksikon-lex-dk', doc, new_identifiers)
+  addIdentifierNode(externalIds, 'P8341', 'biografisk-leksikon-lex-dk', doc, new_identifiers)
+  addIdentifierNode(externalIds, 'P12386', 'litteraturpriser-dk', doc, new_identifiers)
   addIdentifierNode(externalIds, 'P3154', 'runeberg-org', doc, new_identifiers)
-  new_identifiers.add_child("\n    ")
   addIdentifierNode(externalIds, 'P1938', 'gutenberg-org', doc, new_identifiers)
-  new_identifiers.add_child("\n  ")
+  new_identifiers.add_child("  ")
   return new_identifiers
 end
 
