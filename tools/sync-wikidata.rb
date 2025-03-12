@@ -83,6 +83,10 @@ def handlePoet(poetId)
     infoxmlfile = File.read(infoxmlfilename)
     infoxml = Nokogiri::XML(infoxmlfile)
     poetnodes = infoxml.xpath(".//person")
+
+    if poetnodes.first['type'] == 'collection'
+        return                       
+    end
     
     identifiersnodes = poetnodes.first.xpath('.//identifiers')
     
