@@ -109,9 +109,16 @@ def handlePoet(poetId)
     
 end
 
-Dir.entries("fdirs")
-    .select { |entry| File.directory?(File.join("fdirs", entry)) && !entry.start_with?(".") }
-    .sort
-    .each{|poetId| 
-      handlePoet(poetId)
-}
+if ARGV.length > 0
+    ARGV.each do |poetId|
+        handlePoet(poetId)
+    end
+else
+    Dir.entries("fdirs")
+        .select { |entry| File.directory?(File.join("fdirs", entry)) && !entry.start_with?(".") }
+        .sort
+        .each { |poetId| 
+          handlePoet(poetId)
+    }
+end
+
