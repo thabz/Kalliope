@@ -24,6 +24,7 @@ def fetchWikidataExternalIds(wikidata_id)
   claims.each do |property, values|
     values.each do |value|
       if value["mainsnak"]["datatype"] == "external-id"
+        next unless value["mainsnak"]["datavalue"].is_a?(Hash)
         external_ids[property] = value["mainsnak"]["datavalue"]["value"]
       end
     end
@@ -51,7 +52,7 @@ def buildIdentifiersXml(poetId, wikidataId, doc)
   end
   # Check our id
   if not externalIds['P12404'].nil? and externalIds['P12404'] != poetId
-    puts "{poetId} peger på den forkerte wikidata"
+    puts "#{poetId} peger på den forkerte wikidata"
     exit
   end
   gravsted_dk_id = externalIds['P4359']
@@ -91,7 +92,7 @@ def handlePoet(poetId)
     identifiersnodes = poetnodes.first.xpath('.//identifiers')
     
     if identifiersnodes.empty?
-        puts "#{poetId} has no identifiers"
+        puts "#{poetId} has no identifiers. Search wikidata for P12404:\"#{poetId}\""
     else
         wikidatanodes = identifiersnodes.first.xpath('.//wikidata')
         if wikidatanodes.empty?
