@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <person id="holty" country="de" lang="de" type="poet">
   <name>
-    <firstname>L.H.C.</firstname>
+    <firstname>Ludvig</firstname>
     <lastname>Hölty</lastname>
     <fullname>Ludwig Heinrich Christoph Hölty</fullname>
   </name>
@@ -16,4 +16,9 @@
     </dead>
   </period>
   <works>andre</works>
+  <identifiers>
+    <wikidata>Q71456</wikidata>
+    <viaf>64179984</viaf>
+    <litteraturpriser-dk>u6032</litteraturpriser-dk>
+  </identifiers>
 </person>

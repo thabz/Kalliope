@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <person id="lyschander" country="dk" lang="da" type="poet">
   <name>
-    <firstname>Claus Christophersen</firstname>
+    <firstname>Claus Christoffersen</firstname>
     <lastname>Lyschander</lastname>
   </name>
   <period>
@@ -15,4 +15,13 @@
     </dead>
   </period>
   <works>1597,1608,1622</works>
+  <identifiers>
+    <wikidata>Q5968944</wikidata>
+    <gravsted-dk>clauschristoffersenlyschander</gravsted-dk>
+    <viaf>10635651</viaf>
+    <lex-dk>Claus_Christoffersen_Lyschander</lex-dk>
+    <biografisk-leksikon-lex-dk>Claus_Christoffersen_Lyschander</biografisk-leksikon-lex-dk>
+    <litteraturpriser-dk>LClausChristophersenLyschander</litteraturpriser-dk>
+    <runeberg-org>lyskakla</runeberg-org>
+  </identifiers>
 </person>
