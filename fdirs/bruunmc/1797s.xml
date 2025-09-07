@@ -1,16 +1,30 @@
-KILDE:Malthe Conrad Bruun: <i>Slaget ved Tripolis</i>, Windings Forlag, Kbh., 1797.
-DIGTER:bruunmc
-FACSIMILE:115304002805_color.pdf
-FACSIMILE-SIDER:14
-TITELBLAD:Slaget ved Tripolis. // Et lyrisk Digt, / Danmarks Söekrigere / tilegnet. // Kjöbenhavn 1797. / Trykt paa H. L. S. Windings Forlag / i store Kannikestræde No. 39.
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
+<kalliopework id="1797s" author="bruunmc" status="complete" type="poetry">
+<workhead>
+    <title>Slaget ved Tripolis</title>
+    <year>1797</year>
+    <notes>
+        <note>Teksten følger Malthe Conrad Bruun: <i>Slaget ved Tripolis</i>, Windings Forlag, Kbh., 1797.</note>
+    </notes>
+    <pictures>
+        <picture src="1797s-p1.jpg">Titelbladet til <i>Slaget ved Tripolis</i> (1797) lyder ,,Slaget ved Tripolis. // Et lyrisk Digt, / Danmarks Söekrigere / tilegnet. // Kjöbenhavn 1797. / Trykt paa H. L. S. Windings Forlag / i store Kannikestræde No. 39.''.</picture>
+    </pictures>
+    <source facsimile="115304002805_color.pdf" facsimile-pages-num="14" facsimile-pages-offset="2">Malthe Conrad Bruun: <i>Slaget ved Tripolis</i>, Windings Forlag, Kbh., 1797.</source>
+</workhead>
+<workbody>
 
-
-T:Slaget ved Tripolis
-F:Hil dig, du Jordens Herskerinde
-SIDE:3-8
-
+<text id="bruunmc2025090701">
+<head>
+    <title>Slaget ved Tripolis</title>
+    <firstline>Hil dig, du Jordens Herskerinde</firstline>
+    <source pages="3-8"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Hil dig, du Jordens Herskerinde,
-Du Havets Dronning, _Tapperhed_,
+Du Havets Dronning, <i>Tapperhed</i>,
 Du vandrer; Bölger synke, Fjelde svinde
 Hin Stad du reiste, hiin nedtraaddes i dit Fjed:
 Men om Din Isse straaler Evighed.
@@ -36,13 +50,13 @@ En Muur af Diamant om alle Himles Lyst.
     I næste Old skal enkelt Grandsker spörge,
     ''Hvor var dens Sted?'' - og ingen veed det.
 
-Men _Tapperhed_, Din Vælde bryder
+Men <i>Tapperhed</i>, Din Vælde bryder
 Aarhundredernes Nat og rovsyg Glemsels Skjul.
-End bruser Kjögebugt dit Navn, o _Juul_,
-Og _Vessels_ Torden end fra Dynakil gjenlyder.
+End bruser Kjögebugt dit Navn, o <i>Juul</i>,
+Og <i>Vessels</i> Torden end fra Dynakil gjenlyder.
 
-Ad Stjernebanen frem Du træder . . . . 
-Det skjælvende Olymp for _Herkul_ aabner sig . . . . 
+Ad Stjernebanen frem Du træder . . . .
+Det skjælvende Olymp for <i>Herkul</i> aabner sig . . . .
 Din Trone staaer blandt Guders Straale-Sæder,
 Og Skjæbnen, Skjæbnen kun Du öjner over Dig.
 
@@ -62,18 +76,18 @@ Den Bugt, der Danske veeg? Kan Avind selv den finde?
     I röde Strömme sprudler du Livet ud.
     Dödskrampe sammenknuger dit Hjerte.
 
-Hör blant Syrterne<note>De navnkundige Syrtiske Skjær ligge i _Tripolis’s_ Distrikt og Atlas-Fjeldet gaaer sönden om det.</note> den danske Torden lyde!
+Hör blant Syrterne<note>De navnkundige Syrtiske Skjær ligge i <i>Tripolis’s</i> Distrikt og Atlas-Fjeldet gaaer sönden om det.</note> den danske Torden lyde!
 Fra forbauste Atlas gjalder den igjen.
-_Billes_ tætte Lyn Salpeterskyen bryde;
+<i>Billes</i> tætte Lyn Salpeterskyen bryde;
 Dannebroge flyder höjt paa den.
 Stænger rasle; Touge hvine; Master knage;
 Kugler ziske over Bölgetoppe hen.
-Matt’ de flöj, o _Hohlenberg_, tilbage
+Matt’ de flöj, o <i>Hohlenberg</i>, tilbage
 Fra din stolte Datters Egebryst.<note>Man erindre sig, at Fregatten Najaden er construeret af Capitain Holenberg.</note>
-Tys! - Hist _Sarpens_ knuste Raaer segne.
+Tys! - Hist <i>Sarpens</i> knuste Raaer segne.
 Fjender vrimle, Sabler klirre, Kugler regne,
 Graadigt hviner Maurisk Myrdelyst.
-    Iil, lyn og tordn til Hjelp, _Najade_! . . .,
+    Iil, lyn og tordn til Hjelp, <i>Najade</i>! . . .,
 Sejersraab til Dödshyl byttes nu.
 Brat dit mörkblaa Svælg, o Afgrund, du oplade!
 Dine Hekatomber sluge du!
@@ -85,7 +99,7 @@ Fra det mörkblaa Svælg og fra de danske Kjæder.
 
     Dog Sejersgudinden vinker!
     I Vest hun viser os en större Krands.
-    Du haaner Dannebrog, o _Numide_?<note>_Algier_ ligger i det gamle Numidien.</note>
+    Du haaner Dannebrog, o <i>Numide</i>?<note><i>Algier</i> ligger i det gamle Numidien.</note>
     Du tör udæske hine Tordner,
     Der dine Brödre slog? -
     Velan! lad Jorden kysse dine Lænker,
@@ -123,4 +137,9 @@ Ja, Dal og Fjeld og Strand skal höjt gjentage;
 ''Du aldrigovervundne Danner-Flag!''
 
 <right>M. C. Bruun.</right>
+</poetry>
+</body>
+</text>
 
+</workbody>
+</kalliopework>
