@@ -61,6 +61,43 @@ const Bladrer = (props) => {
   );
 };
 
+const Refs = ({ refs, contentLang }) => {
+  let renderedRefs = null;
+  if (refs.length === 1) {
+    renderedRefs = (
+      <>
+        <TextContent contentHtml={refs[0]} contentLang={contentLang} /> henviser
+        hertil.
+      </>
+    );
+  } else if (refs.length > 0) {
+    renderedRefs = (
+      <>
+        <p>Henvisninger hertil:</p>
+        {refs.map((ref, i) => {
+          return (
+            <div key={i} style={{ marginBottom: '10px' }}>
+              <TextContent contentHtml={ref} contentLang={contentLang} />
+            </div>
+          );
+        })}
+      </>
+    );
+  }
+  return (
+    <div className="refs">
+      {renderedRefs}
+      <style jsx>{`
+        @media print {
+          .refs {
+            display: none;
+          }
+        }
+      `}</style>
+    </div>
+  );
+};
+
 class KeywordLink extends React.Component {
   render() {
     const { keyword, lang } = this.props;
@@ -318,14 +355,6 @@ const TextPage = (props) => {
     </div>
   );
 
-  const refs = text.refs.map((ref, i) => {
-    return (
-      <div key={i} style={{ marginBottom: '10px' }}>
-        <TextContent contentHtml={ref} contentLang={text.content_lang} />
-      </div>
-    );
-  });
-
   const variants = text.variants.map((ref, i) => {
     return (
       <div key={i} style={{ marginBottom: '10px' }}>
@@ -340,23 +369,6 @@ const TextPage = (props) => {
       return <KeywordLink keyword={k} lang={lang} key={k.id} />;
     });
     renderedKeywords = <div style={{ marginTop: '30px' }}>{list}</div>;
-  }
-
-  let renderedRefs = null;
-  if (refs.length > 0) {
-    renderedRefs = (
-      <div className="refs">
-        <p>Henvisninger hertil:</p>
-        {refs}
-        <style jsx>{`
-          @media print {
-            .refs {
-              display: none;
-            }
-          }
-        `}</style>
-      </div>
-    );
   }
 
   let renderedVariants = null;
@@ -388,7 +400,7 @@ const TextPage = (props) => {
 
   let sidebar = null;
   if (
-    refs.length > 0 ||
+    text.refs.length > 0 ||
     variants.length > 0 ||
     text.has_footnotes ||
     text.pictures.length > 0 ||
@@ -400,7 +412,7 @@ const TextPage = (props) => {
       <div>
         {renderedNotes}
         <FootnoteList />
-        {renderedRefs}
+        <Refs refs={text.refs} contentLang={text.content_lang} />
         {renderedVariants}
         {renderedKeywords}
         {renderedPictures}
@@ -491,7 +503,7 @@ const TextPage = (props) => {
   return (
     <Page
       headTitle={ogTitle}
-      ogTitle={poetNameString(poet, false, false)}
+      ogTitle={ogTitle}
       ogImage={OpenGraph.poetImage(poet)}
       ogDescription={ogDescription}
       requestPath={`/${lang}/text/${text.id}`}
