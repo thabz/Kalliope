@@ -21,9 +21,11 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+          cache-dependency-path: package-lock.json
 
       - name: Install dependencies
-        run: npm ci
+        run: npm ci --prefer-offline --no-audit
 
       - name: Run tests (CI)
         run: npm run test-ci
