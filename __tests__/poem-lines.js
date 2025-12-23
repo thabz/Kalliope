@@ -1,13 +1,11 @@
 import fs from 'fs';
-import { loadText, fileExists } from '../tools/libs/helpers.js';
 import {
-  loadXMLDoc,
-  safeGetText,
-  safeGetAttr,
   getElementByTagName,
-  getElementsByTagName,
-  tagName,
+  loadXMLDoc,
+  safeGetAttr,
+  safeGetText,
 } from '../tools/build-static/xml.js';
+import { fileExists, loadText } from '../tools/libs/helpers.js';
 
 function flatten(arr) {
   return [].concat(...arr);
@@ -45,8 +43,9 @@ const regexps = [
       /[Ss]maaalfer/,
       /Smaaarbeider/,
       /<note>.*\]/,
-      /upaaagtet/,
+      /[Uu]paaagtet/,
       /Koleraaar/,
+      /Græsstraaarme/,
     ],
   },
   /sss/,
@@ -57,11 +56,13 @@ const regexps = [
 ];
 
 describe('Check workfiles', () => {
-  const allPoetIds = fs.readdirSync('fdirs').filter(p => p.indexOf('.') === -1);
+  const allPoetIds = fs
+    .readdirSync('fdirs')
+    .filter((p) => p.indexOf('.') === -1);
 
   let filenameLangs = {};
 
-  let filenames = allPoetIds.map(poetId => {
+  let filenames = allPoetIds.map((poetId) => {
     const infoFilename = `fdirs/${poetId}/info.xml`;
     if (!fs.existsSync(infoFilename)) {
       throw new Error(`Missing info.xml in fdirs/${poetId}.`);
@@ -81,9 +82,9 @@ describe('Check workfiles', () => {
           .replace('<works/>', '')
           .trim()
           .split(',')
-          .filter(x => x.length > 0)
+          .filter((x) => x.length > 0)
       : [];
-    return items.map(w => {
+    return items.map((w) => {
       const filename = `${poetId}/${w}.xml`;
       filenameLangs[filename] = lang;
       return filename;
@@ -92,14 +93,14 @@ describe('Check workfiles', () => {
 
   filenames = flatten(filenames);
 
-  filenames.forEach(filename => {
+  filenames.forEach((filename) => {
     const fullpath = `fdirs/${filename}`;
     const lang = filenameLangs[filename];
     const data = loadText(fullpath);
     it(`Workfile fdirs/${filename} is fine`, () => {
       expect(fileExists(fullpath)).toBeTruthy;
       expect(data.length > 0);
-      regexps.forEach(rule => {
+      regexps.forEach((rule) => {
         let regexp = rule.regexp || rule;
         let whitelist = rule.whitelist || [];
         let ignorelangs = rule.ignorelangs || [];
@@ -112,10 +113,10 @@ describe('Check workfiles', () => {
         }
 
         if (regexp.test(data)) {
-          data.split('\n').forEach(line => {
+          data.split('\n').forEach((line) => {
             if (
               regexp.test(line) &&
-              !whitelist.find(w => {
+              !whitelist.find((w) => {
                 return w.test(line);
               })
             ) {

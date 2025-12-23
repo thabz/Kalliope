@@ -2,7 +2,7 @@ import { poetNameString } from '../components/poetname-helpers.js';
 
 describe('String method', () => {
   it('outputs correctly when having full name and period', () => {
-    const poet: Poet = {
+    const poet = {
       name: {
         firstname: 'Emil',
         lastname: 'Aarestrup',
@@ -26,7 +26,7 @@ describe('String method', () => {
     );
   });
   it('outputs correctly when having full name and unknown birthday', () => {
-    const poet: Poet = {
+    const poet = {
       name: {
         firstname: 'Emil',
         lastname: 'Aarestrup',
@@ -45,7 +45,7 @@ describe('String method', () => {
     );
   });
   it('outputs correctly when having full name and unknown lifespan', () => {
-    const poet: Poet = {
+    const poet = {
       name: {
         firstname: 'Emil',
         lastname: 'Aarestrup',
