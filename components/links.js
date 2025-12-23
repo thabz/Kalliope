@@ -75,7 +75,7 @@ export const keywordsURL = (lang = 'da') => {
   return `/${lang}/keywords`;
 };
 
-export const dictionaryURL = (lang = 'da', id?) => {
+export const dictionaryURL = (lang = 'da', id) => {
   if (id != null) {
     return `/${lang}/dict/${id}`;
   } else {
