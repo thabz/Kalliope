@@ -1,26 +1,16 @@
-// @flow
-import React, { useContext, useState, useEffect } from 'react';
-import { Link, Router } from '../routes';
-import * as Links from './links.js';
-import { poetGenetiveLastName } from './poetname-helpers.js';
-import _ from '../common/translations.js';
-import type { Lang, Poet, Country } from '../common/types.js';
+import React, { useContext, useEffect, useState } from 'react';
 import CommonData from '../common/commondata.js';
 import LangContext from '../common/LangContext.js';
-import { LoupeSVG, CrossSVG } from './icons.js';
+import _ from '../common/translations.js';
+import { Link, Router } from '../routes';
+import { CrossSVG, LoupeSVG } from './icons.js';
+import * as Links from './links.js';
+import { poetGenetiveLastName } from './poetname-helpers.js';
 
 const transitionDuration = '0.2s';
 
-type TabsProps = {
-  items: Array<{ id: string, url: string, title: string, hide?: boolean }>,
-  poet?: Poet,
-  country: Country,
-  lang: Lang,
-  query?: ?string,
-  selected: string,
-};
-const Tabs = (props: TabsProps) => {
-  let searchField: HTMLInputElement;
+const Tabs = (props) => {
+  let searchField;
 
   const { items, selected, poet, lang, query } = props;
   let country = props.country;
@@ -56,7 +46,7 @@ const Tabs = (props: TabsProps) => {
     };
   }, [showSearchField]);
 
-  const onSubmit = (e: Event) => {
+  const onSubmit = (e) => {
     const q = searchField.value;
     let URL = null;
     if (poet != null && poet.has_texts) {
@@ -71,7 +61,7 @@ const Tabs = (props: TabsProps) => {
     e.preventDefault();
   };
 
-  const onLoupeClick = (e: Event) => {
+  const onLoupeClick = (e) => {
     if (showSearchField) {
       const q = searchField.value;
       if (q.length === 0) {
@@ -87,7 +77,7 @@ const Tabs = (props: TabsProps) => {
     e.preventDefault();
   };
 
-  const onCrossClick = (e: MouseEvent) => {
+  const onCrossClick = (e) => {
     hideSearchField();
     e.preventDefault();
   };
@@ -100,7 +90,7 @@ const Tabs = (props: TabsProps) => {
     window && (window.searchFieldHasFocus = false);
   };
 
-  const onKeyDown = (e: KeyboardEvent) => {
+  const onKeyDown = (e) => {
     if (e.keyCode === 27) {
       setShowSearchField(false);
       onBlur();
@@ -317,7 +307,7 @@ const Tabs = (props: TabsProps) => {
 
 export default Tabs;
 
-export const poetMenu = (poet: Poet) => {
+export const poetMenu = (poet) => {
   const lang = useContext(LangContext);
 
   return [

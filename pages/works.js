@@ -1,32 +1,21 @@
-// @flow
-
-import React from 'react';
 import 'isomorphic-fetch';
-import { Link, Router } from '../routes';
-import Page from '../components/page.js';
-import SubHeading from '../components/subheading.js';
-import { worksCrumbs } from '../components/breadcrumbs.js';
-import LangSelect from '../components/langselect';
-import { poetMenu } from '../components/menu.js';
-import PoetName from '../components/poetname.js';
-import { poetNameString } from '../components/poetname-helpers.js';
-import PicturesGrid from '../components/picturesgrid.js';
-import WorksList from '../components/workslist.js';
-import Stack from '../components/stack.js';
-import * as Links from '../components/links';
+import React from 'react';
 import * as Client from '../common/client.js';
-import ErrorPage from './error.js';
-import CommonData from '../common/commondata.js';
-import type { Lang, Poet, Work, PictureItem, Error } from '../common/types.js';
-import _ from '../common/translations.js';
 import * as OpenGraph from '../common/opengraph.js';
+import _ from '../common/translations.js';
+import { worksCrumbs } from '../components/breadcrumbs.js';
+import * as Links from '../components/links';
+import { poetMenu } from '../components/menu.js';
+import Page from '../components/page.js';
+import PicturesGrid from '../components/picturesgrid.js';
+import { poetNameString } from '../components/poetname-helpers.js';
+import PoetName from '../components/poetname.js';
+import Stack from '../components/stack.js';
+import WorksList from '../components/workslist.js';
+import { Router } from '../routes';
+import ErrorPage from './error.js';
 
-type ArtworkListProps = {
-  lang: Lang,
-  poet: Poet,
-  artwork: Array<PictureItem>,
-};
-class ArtworkList extends React.Component<ArtworkListProps> {
+class ArtworkList extends React.Component {
   render() {
     const { lang, poet, artwork } = this.props;
 
@@ -34,7 +23,7 @@ class ArtworkList extends React.Component<ArtworkListProps> {
       return null;
     }
 
-    const sortArtworks = artwork => {
+    const sortArtworks = (artwork) => {
       return artwork.sort((a, b) => {
         const aKey = (a.year || '') + a.src;
         const bKey = (b.year || '') + b.src;
@@ -42,17 +31,17 @@ class ArtworkList extends React.Component<ArtworkListProps> {
       });
     };
 
-    const rowWidth = items => {
+    const rowWidth = (items) => {
       let width = 0;
-      items.forEach(item => {
+      items.forEach((item) => {
         width += item.width;
       });
       return width;
     };
 
-    const rowHeight = items => {
+    const rowHeight = (items) => {
       let height = 0;
-      items.forEach(item => {
+      items.forEach((item) => {
         if (item.picture != null && item.picture.size != null) {
           height =
             (item.picture.size.height / item.picture.size.width) * item.width;
@@ -63,7 +52,7 @@ class ArtworkList extends React.Component<ArtworkListProps> {
 
     const sortedArtworks = sortArtworks(artwork);
 
-    const renderWithMaxHeight = maxHeight => {
+    const renderWithMaxHeight = (maxHeight) => {
       const gutterWidth = maxHeight / 10;
       const viewportWidth = 100; // Max width (percentage)
       const rows = [];
@@ -81,7 +70,7 @@ class ArtworkList extends React.Component<ArtworkListProps> {
           // Scale widths in row down, so that the sum is 100.
           const overflow = (currentWidth - viewportWidth) / row.length;
           const factor = viewportWidth / currentWidth;
-          row.forEach(item => {
+          row.forEach((item) => {
             item.width *= factor;
           });
           rows.push({
@@ -110,7 +99,7 @@ class ArtworkList extends React.Component<ArtworkListProps> {
         avgHeight /= num;
         const factor = avgHeight / maxHeight;
         const lastRow = rows[rows.length - 1];
-        lastRow.items.forEach(item => {
+        lastRow.items.forEach((item) => {
           item.width *= factor;
         });
         lastRow.height = rowHeight(lastRow.items);
@@ -196,14 +185,8 @@ class ArtworkList extends React.Component<ArtworkListProps> {
     );
   }
 }
-type WorksProps = {
-  lang: Lang,
-  poet: Poet,
-  works: Array<Work>,
-  artwork: Array<PictureItem>,
-  error: ?Error,
-};
-const WorksPage = (props: WorksProps) => {
+
+const WorksPage = (props) => {
   const { lang, poet, works, artwork, error } = props;
 
   if (error) {
@@ -262,7 +245,8 @@ const WorksPage = (props: WorksProps) => {
       pageSubtitle={_('Værker', lang)}
       menuItems={poetMenu(poet)}
       poet={poet}
-      selectedMenuItem="works">
+      selectedMenuItem="works"
+    >
       <div className="two-columns">
         {stack}
         <style jsx>{`
@@ -275,11 +259,7 @@ const WorksPage = (props: WorksProps) => {
   );
 };
 
-WorksPage.getInitialProps = async ({
-  query: { lang, poetId },
-}: {
-  query: { lang: Lang, poetId: string },
-}) => {
+WorksPage.getInitialProps = async ({ query: { lang, poetId } }) => {
   const json = await Client.works(poetId);
 
   return {

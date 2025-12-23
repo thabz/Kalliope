@@ -1,52 +1,29 @@
-// @flow
-
 import React, { useContext } from 'react';
-import Page from '../components/page.js';
-import Head from '../components/head';
-import Main from '../components/main.js';
-import { Link } from '../routes';
-import * as Links from '../components/links';
-import { kalliopeCrumbs } from '../components/breadcrumbs.js';
-import LangSelect from '../components/langselect.js';
+import * as Client from '../common/client.js';
+import CommonData from '../common/commondata.js';
 import LangContext from '../common/LangContext.js';
-import CountryPicker from '../components/countrypicker.js';
-import Tabs from '../components/menu.js';
-import PoetName from '../components/poetname.js';
-import SectionedList from '../components/sectionedlist.js';
 import * as Sorting from '../common/sorting.js';
 import * as Strings from '../common/strings.js';
 import _ from '../common/translations.js';
-import CommonData from '../common/commondata.js';
+import { kalliopeCrumbs } from '../components/breadcrumbs.js';
+import CountryPicker from '../components/countrypicker.js';
+import * as Links from '../components/links';
+import Page from '../components/page.js';
+import PoetName from '../components/poetname.js';
+import SectionedList from '../components/sectionedlist.js';
 import ErrorPage from './error.js';
-import * as Client from '../common/client.js';
-import { createURL } from '../common/client.js';
-import type {
-  Lang,
-  Country,
-  Section,
-  Poet,
-  SortReturn,
-  SectionForRendering,
-  Error,
-} from '../common/types.js';
 
-const nvl = <T>(x: ?T, v: T): T => {
+const nvl = (x, v) => {
   return x == null ? v : x;
 };
 
-type Group = {
-  title: string,
-  items: Array<Poet>,
-};
-type GroupBy = 'name' | 'year';
-
-const groupsByLetter = (poets: Array<Poet>, lang: Lang): Array<Group> => {
-  let groups: Map<string, Array<Poet>> = new Map();
+const groupsByLetter = (poets, lang) => {
+  let groups = new Map();
 
   poets
-    .filter(p => p.type !== 'person')
-    .filter(p => p.type !== 'artist')
-    .forEach(p => {
+    .filter((p) => p.type !== 'person')
+    .filter((p) => p.type !== 'artist')
+    .forEach((p) => {
       let key = null;
       if (p.name.sortname != null) {
         key = p.name.sortname[0];
@@ -61,11 +38,11 @@ const groupsByLetter = (poets: Array<Poet>, lang: Lang): Array<Group> => {
       } else {
         key = _('Ukendt digter', lang);
       }
-      let group: Array<Poet> = groups.get(key) || [];
+      let group = groups.get(key) || [];
       group.push(p);
       groups.set(key, group);
     });
-  let sortedGroups: Array<Group> = [];
+  let sortedGroups = [];
   groups.forEach((group, key) => {
     sortedGroups.push({
       title: key,
@@ -75,11 +52,11 @@ const groupsByLetter = (poets: Array<Poet>, lang: Lang): Array<Group> => {
   return sortedGroups.sort(Sorting.sectionsByTitle);
 };
 
-const groupsByYear = (poets: Array<Poet>, lang: Lang): Array<Group> => {
-  let groups: Map<string, Array<Poet>> = new Map();
+const groupsByYear = (poets, lang) => {
+  let groups = new Map();
   poets
-    .filter(p => p.type === 'poet')
-    .forEach(p => {
+    .filter((p) => p.type === 'poet')
+    .forEach((p) => {
       let key = _('Ukendt fødeår', lang);
       if (
         p.period != null &&
@@ -90,11 +67,11 @@ const groupsByYear = (poets: Array<Poet>, lang: Lang): Array<Group> => {
         const intervalStart = year - (year % 25);
         key = `${intervalStart} - ${intervalStart + 24}`;
       }
-      let group: Array<Poet> = groups.get(key) || [];
+      let group = groups.get(key) || [];
       group.push(p);
       groups.set(key, group);
     });
-  let sortedGroups: Array<Group> = [];
+  let sortedGroups = [];
   groups.forEach((group, key) => {
     sortedGroups.push({
       title: key,
@@ -104,13 +81,7 @@ const groupsByYear = (poets: Array<Poet>, lang: Lang): Array<Group> => {
   return sortedGroups.sort(Sorting.sectionsByTitle);
 };
 
-type PoetsProps = {
-  country: Country,
-  poets: Array<Poet>,
-  groupBy: GroupBy,
-  error: ?Error,
-};
-const Poets = (props: PoetsProps) => {
+const Poets = (props) => {
   const { country, poets, groupBy, error } = props;
   const lang = useContext(LangContext);
 
@@ -137,10 +108,10 @@ const Poets = (props: PoetsProps) => {
       ? groupsByLetter(poets, lang)
       : groupsByYear(poets, lang);
 
-  let sections: Array<SectionForRendering> = [];
+  let sections = [];
 
-  groups.forEach(group => {
-    const items = group.items.map(poet => {
+  groups.forEach((group) => {
+    const items = group.items.map((poet) => {
       return {
         id: poet.id,
         url: `/${lang}/works/${poet.id}`,
@@ -155,7 +126,7 @@ const Poets = (props: PoetsProps) => {
   let pageTitle = null;
 
   if (country !== 'dk') {
-    const cn = CommonData.countries.filter(c => {
+    const cn = CommonData.countries.filter((c) => {
       return c.code === country;
     })[0];
     pageTitle =
@@ -164,7 +135,7 @@ const Poets = (props: PoetsProps) => {
     pageTitle = _('Digtere', lang);
   }
 
-  const countryCodeToURL = (code: Country) => {
+  const countryCodeToURL = (code) => {
     return Links.poetsURL(lang, groupBy, code);
   };
   return (
@@ -175,7 +146,8 @@ const Poets = (props: PoetsProps) => {
       menuItems={tabs}
       selectedMenuItem={groupBy}
       country={country}
-      pageTitle={pageTitle}>
+      pageTitle={pageTitle}
+    >
       {renderedGroups}
       <CountryPicker
         style={{ marginTop: '40px' }}
@@ -187,11 +159,7 @@ const Poets = (props: PoetsProps) => {
   );
 };
 
-Poets.getInitialProps = async ({
-  query: { lang, country, groupBy },
-}: {
-  query: { lang: Lang, country: Country, groupBy: GroupBy },
-}) => {
+Poets.getInitialProps = async ({ query: { lang, country, groupBy } }) => {
   const json = await Client.poets(country);
   return { lang, country, groupBy, poets: json.poets, error: json.error };
 };

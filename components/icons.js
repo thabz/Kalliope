@@ -1,14 +1,6 @@
-// @flow
 import React from 'react';
 
-type SVGProps = {
-  onClick: MouseEvent => void,
-  inactive?: boolean,
-  className?: string,
-  color?: string,
-};
-
-export const BurgerSVG = (props: SVGProps) => {
+export const BurgerSVG = (props) => {
   const { onClick, inactive, className, color = 'black' } = props;
   const strokeColor = inactive == true ? '#888' : color;
   let extraClassName = inactive == true ? 'inactive' : 'active';
@@ -28,7 +20,8 @@ export const BurgerSVG = (props: SVGProps) => {
       height="30"
       style={style}
       onClick={onClick}
-      className={extraClassName}>
+      className={extraClassName}
+    >
       <line
         style={style}
         x1="4"
@@ -57,7 +50,7 @@ export const BurgerSVG = (props: SVGProps) => {
   );
 };
 
-export class LeftArrow extends React.Component<SVGProps> {
+export class LeftArrow extends React.Component {
   render() {
     const { onClick, inactive, color = 'black' } = this.props;
     const strokeColor = inactive == true ? '#888' : color;
@@ -113,7 +106,7 @@ export class LeftArrow extends React.Component<SVGProps> {
   }
 }
 
-export class RightArrow extends React.Component<SVGProps> {
+export class RightArrow extends React.Component {
   render() {
     const { onClick, inactive, color = 'black' } = this.props;
     const strokeColor = inactive == true ? '#888' : color;
@@ -169,7 +162,7 @@ export class RightArrow extends React.Component<SVGProps> {
   }
 }
 
-export class CloseButton extends React.Component<SVGProps> {
+export class CloseButton extends React.Component {
   render() {
     const { onClick } = this.props;
     return (
@@ -214,10 +207,7 @@ export class CloseButton extends React.Component<SVGProps> {
   }
 }
 
-type LoupeSVGProps = {
-  color: string,
-};
-export class LoupeSVG extends React.Component<LoupeSVGProps> {
+export class LoupeSVG extends React.Component {
   render() {
     const { color } = this.props;
     const style = {
@@ -251,7 +241,7 @@ export class LoupeSVG extends React.Component<LoupeSVGProps> {
   }
 }
 
-export const CrossSVG = (props: SVGProps) => {
+export const CrossSVG = (props) => {
   const { onClick, className, color = 'black' } = props;
 
   const style = {
@@ -267,7 +257,8 @@ export const CrossSVG = (props: SVGProps) => {
       width="100%"
       height="100%"
       className={className}
-      onClick={onClick}>
+      onClick={onClick}
+    >
       <line
         style={style}
         x1="38"

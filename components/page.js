@@ -1,19 +1,13 @@
-// @flow
 import React, { useContext } from 'react';
-import Tabs from './menu.js';
-import BurgerMenu from './burgermenu.js';
-import Breadcrumbs, { Paging } from './breadcrumbs.js';
-import Main from './main.js';
-import Head from './head.js';
-import CountryPicker from './countrypicker.js';
-import LangContext from '../common/LangContext.js';
-import LangSelect from './langselect.js';
 import CommonData from '../common/commondata.js';
+import LangContext from '../common/LangContext.js';
+import Breadcrumbs, { Paging } from './breadcrumbs.js';
+import Head from './head.js';
+import LangSelect from './langselect.js';
+import Main from './main.js';
+import Tabs from './menu.js';
 
-type HeadingProps = {
-  title: Node | string,
-};
-const Heading = (props: HeadingProps) => {
+const Heading = (props) => {
   const { title } = props;
   return (
     <div className="heading">
@@ -59,7 +53,7 @@ const Heading = (props: HeadingProps) => {
   );
 };
 
-const Page = props => {
+const Page = (props) => {
   const {
     children,
     headTitle,

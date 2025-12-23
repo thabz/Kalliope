@@ -1,54 +1,25 @@
-// @flow
-
 import React from 'react';
-import { Link } from '../routes';
-import Page from '../components/page.js';
-import Main from '../components/main.js';
-import { workCrumbs } from '../components/breadcrumbs.js';
-import SidebarSplit from '../components/sidebarsplit.js';
-import LangSelect from '../components/langselect.js';
-import { poetMenu } from '../components/menu.js';
-import SubHeading from '../components/subheading.js';
-import PoetName from '../components/poetname.js';
-import { poetNameString } from '../components/poetname-helpers.js';
-import WorkName, { workTitleString } from '../components/workname.js';
-import WorkSubtitles from '../components/worksubtitles.js';
-import Note from '../components/note.js';
-import TOC from '../components/toc.js';
-import TextContent from '../components/textcontent.js';
-import SidebarPictures from '../components/sidebarpictures.js';
-import Picture from '../components/picture.js';
-import ErrorPage from './error.js';
-import * as Links from '../components/links';
 import * as Client from '../common/client.js';
 import * as OpenGraph from '../common/opengraph.js';
-import CommonData from '../common/commondata.js';
 import _ from '../common/translations.js';
-import { request } from 'http';
+import { workCrumbs } from '../components/breadcrumbs.js';
+import { poetMenu } from '../components/menu.js';
+import Note from '../components/note.js';
+import Page from '../components/page.js';
+import Picture from '../components/picture.js';
+import { poetNameString } from '../components/poetname-helpers.js';
+import PoetName from '../components/poetname.js';
+import SidebarPictures from '../components/sidebarpictures.js';
+import SidebarSplit from '../components/sidebarsplit.js';
+import SubHeading from '../components/subheading.js';
+import TextContent from '../components/textcontent.js';
+import TOC from '../components/toc.js';
+import WorkName, { workTitleString } from '../components/workname.js';
 import WorksList from '../components/workslist';
-import type {
-  Lang,
-  Poet,
-  PoetId,
-  WorkId,
-  Work,
-  TocItem,
-  NoteItem,
-  PictureItem,
-  Error,
-} from '../common/types.js';
+import WorkSubtitles from '../components/worksubtitles.js';
+import ErrorPage from './error.js';
 
-type WorkProps = {
-  lang: Lang,
-  poet: Poet,
-  work: Work,
-  toc: Array<TocItem>,
-  subworks: Array<Work>,
-  notes: Array<NoteItem>,
-  pictures: Array<PictureItem>,
-  error: ?Error,
-};
-const WorkPage = (props: WorkProps) => {
+const WorkPage = (props) => {
   const { lang, poet, work, notes, pictures, toc, subworks, error } = props;
 
   if (error) {
@@ -109,9 +80,9 @@ const WorkPage = (props: WorkProps) => {
   }
   let ogDescription = null;
   if (toc != null && toc.length > 0) {
-    ogDescription = toc.map(part => part.title).join(', ');
+    ogDescription = toc.map((part) => part.title).join(', ');
   } else if (subworks != null && subworks.length > 0) {
-    ogDescription = subworks.map(part => part.toctitle).join(', ');
+    ogDescription = subworks.map((part) => part.toctitle).join(', ');
   }
 
   let sectixonTitles = null;
@@ -132,7 +103,8 @@ const WorkPage = (props: WorkProps) => {
       pageSubtitle={_('Værker', lang)}
       menuItems={poetMenu(poet)}
       poet={poet}
-      selectedMenuItem="works">
+      selectedMenuItem="works"
+    >
       <SidebarSplit sidebar={sidebar}>
         <div>
           <SubHeading>
@@ -151,11 +123,7 @@ const WorkPage = (props: WorkProps) => {
   );
 };
 
-WorkPage.getInitialProps = async ({
-  query: { lang, poetId, workId },
-}: {
-  query: { lang: Lang, poetId: PoetId, workId: WorkId },
-}) => {
+WorkPage.getInitialProps = async ({ query: { lang, poetId, workId } }) => {
   const json = await Client.work(poetId, workId);
   return {
     lang,

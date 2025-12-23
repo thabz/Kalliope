@@ -1,24 +1,16 @@
-// @flow
 import React, { useContext } from 'react';
-import { Link } from '../routes';
-var DOMParser = require('xmldom').DOMParser;
+import CommonData from '../common/commondata.js';
 import LangContext from '../common/LangContext.js';
-import type {
-  Text,
-  TextLang,
-  Lang,
-  TextContentOptions,
-  TextContentType,
-} from '../common/types.js';
+import { Link } from '../routes';
 import { Footnote } from './footnotes.js';
 import * as Links from './links';
-import CommonData from '../common/commondata.js';
+var DOMParser = require('xmldom').DOMParser;
 
 // Render xml
-const renderXmlString = (inputString: string) => {
+const renderXmlString = (inputString) => {
   const lang = useContext(LangContext);
 
-  const handle_metrik = (s: string) => {
+  const handle_metrik = (s) => {
     // Disse metrik symboler ligger i Unicode 23Dx
     // http://www.unicode.org/charts/PDF/U2300.pdf
     const unicode = s
@@ -34,7 +26,8 @@ const renderXmlString = (inputString: string) => {
           display: 'inline-block',
           width: '1em',
           marginRight: '0.3em',
-        }}>
+        }}
+      >
         {x}
       </span>
     ));
@@ -45,7 +38,7 @@ const renderXmlString = (inputString: string) => {
     );
   };
 
-  const handle_a = (node: any) => {
+  const handle_a = (node) => {
     if (node.hasAttribute('person')) {
       const poetId = node.getAttribute('person');
       return (
@@ -116,7 +109,7 @@ const renderXmlString = (inputString: string) => {
     }
   };
 
-  const handle_node = (node: any) => {
+  const handle_node = (node) => {
     switch (node.nodeName) {
       case 'br':
         return <br key={keySeq++} />;
@@ -167,7 +160,8 @@ const renderXmlString = (inputString: string) => {
         return (
           <center
             key={keySeq++}
-            style={{ display: 'inline-block', width: '100%' }}>
+            style={{ display: 'inline-block', width: '100%' }}
+          >
             {handle_nodes(node.childNodes)}
           </center>
         );
@@ -185,7 +179,8 @@ const renderXmlString = (inputString: string) => {
               display: 'block',
               position: 'absolute',
               margin: `0 ${right} 0 ${left}`,
-            }}>
+            }}
+          >
             {handle_nodes(node.childNodes)}
           </blockquote>
         );
@@ -205,7 +200,8 @@ const renderXmlString = (inputString: string) => {
               display: 'inline',
               fontSize: '1.0rem',
               lineHeight: '1.1rem', // Virker ikke i en inline block
-            }}>
+            }}
+          >
             {handle_nodes(node.childNodes)}
           </small>
         );
@@ -223,7 +219,8 @@ const renderXmlString = (inputString: string) => {
               display: 'inline-block',
               width: '100%',
               textAlign: 'right',
-            }}>
+            }}
+          >
             {handle_nodes(node.childNodes)}
           </span>
         );
@@ -235,7 +232,8 @@ const renderXmlString = (inputString: string) => {
               display: 'inline',
               color: CommonData.lightTextColor,
               pageBreakAfter: 'avoid', // Not working.
-            }}>
+            }}
+          >
             {handle_nodes(node.childNodes)}
           </span>
         );
@@ -312,7 +310,7 @@ const renderXmlString = (inputString: string) => {
     }
   };
 
-  const handle_nodes = (nodes: any) => {
+  const handle_nodes = (nodes) => {
     let collected = [];
     for (let i = 0; i < nodes.length; i++) {
       const node = nodes.item(i);
@@ -330,11 +328,11 @@ const renderXmlString = (inputString: string) => {
 export { renderXmlString };
 
 // Fiks bindestreger mellem årstal, sidetal osv.
-const replaceHyphens = (s: string) => {
+const replaceHyphens = (s) => {
   return s.replace(/(\d)-(\d)/g, '$1–$2'); // Hyphen/minus (U+002D) to en-dash (U+2013)
 };
 
-const TextInline = (props: TextContentPropsType) => {
+const TextInline = (props) => {
   const { contentHtml } = props;
   if (contentHtml == null) {
     return null;
@@ -346,16 +344,8 @@ const TextInline = (props: TextContentPropsType) => {
 export { TextInline };
 
 let keySeq = 1;
-type TextContentPropsType = {
-  contentHtml: ?TextContentType,
-  contentLang: TextLang,
-  options?: TextContentOptions,
-  style?: Object,
-  className?: string,
-  type?: 'prose' | 'poetry' | 'quote',
-  keyPrefix?: string, // Ved bladring hopper linjenumrene hvis alle digtes linjer har samme key.
-};
-const TextContent = (props: TextContentPropsType) => {
+
+const TextContent = (props) => {
   const lang = useContext(LangContext);
 
   const {
@@ -459,7 +449,8 @@ const TextContent = (props: TextContentPropsType) => {
         <div
           className={className}
           data-num={lineOptions.displayNum || lineOptions.margin}
-          key={keyPrefix + i}>
+          key={keyPrefix + i}
+        >
           {anchor}
           <div className={lineInnerClass}>{rendered}</div>
         </div>
@@ -485,7 +476,8 @@ const TextContent = (props: TextContentPropsType) => {
         <div
           className={className}
           key={i + keyPrefix}
-          data-num={lineOptions.displayNum}>
+          data-num={lineOptions.displayNum}
+        >
           {anchor}
           <div className={lineInnerClass}>{rendered}</div>
         </div>
@@ -510,7 +502,8 @@ const TextContent = (props: TextContentPropsType) => {
         .filter((a) => a != null)
         .join(' ')}
       lang={contentLang}
-      key={keyPrefix + 'outer'}>
+      key={keyPrefix + 'outer'}
+    >
       {/*
         <pre>
           {contentLang || 'Mangler content_lang'}

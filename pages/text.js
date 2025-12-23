@@ -1,56 +1,31 @@
-// @flow
-
-import React, { useEffect, useContext } from 'react';
-import type { Element, Node } from 'react';
-import { Link, Router } from '../routes';
-import Page from '../components/page.js';
-import Main from '../components/main.js';
-import { textCrumbs } from '../components/breadcrumbs.js';
-import SidebarSplit from '../components/sidebarsplit.js';
-import LangSelect from '../components/langselect';
-import { poetMenu } from '../components/menu.js';
-import SubHeading from '../components/subheading.js';
-import Stack from '../components/stack.js';
-import WrapNonEmpty from '../components/wrapnonempty.js';
-import TOC from '../components/toc.js';
-import PoetName from '../components/poetname.js';
-import { poetNameString } from '../components/poetname-helpers.js';
-import { workTitleString } from '../components/workname.js';
-import TextName, {
-  textTitleString,
-  textLinkTitleString,
-} from '../components/textname.js';
-import TextContent from '../components/textcontent.js';
-import { FootnoteContainer, FootnoteList } from '../components/footnotes.js';
-import Note from '../components/note.js';
-import SidebarPictures from '../components/sidebarpictures.js';
-import Picture from '../components/picture.js';
-import * as Links from '../components/links';
+import React, { useContext, useEffect } from 'react';
 import * as Client from '../common/client.js';
-import * as OpenGraph from '../common/opengraph.js';
-import _ from '../common/translations.js';
-import ErrorPage from './error.js';
-import HelpKalliope from '../components/helpkalliope.js';
-import { pluralize } from '../common/strings.js';
 import LangContext from '../common/LangContext.js';
-import type {
-  Lang,
-  Poet,
-  Work,
-  Text,
-  TextSource,
-  PictureItem,
-  KeywordRef,
-  PrevNextText,
-  Error,
-} from '../common/types.js';
+import * as OpenGraph from '../common/opengraph.js';
+import { pluralize } from '../common/strings.js';
+import _ from '../common/translations.js';
+import { textCrumbs } from '../components/breadcrumbs.js';
+import { FootnoteContainer, FootnoteList } from '../components/footnotes.js';
+import HelpKalliope from '../components/helpkalliope.js';
+import * as Links from '../components/links';
+import { poetMenu } from '../components/menu.js';
+import Note from '../components/note.js';
+import Page from '../components/page.js';
+import Picture from '../components/picture.js';
+import { poetNameString } from '../components/poetname-helpers.js';
+import PoetName from '../components/poetname.js';
+import SidebarPictures from '../components/sidebarpictures.js';
+import SidebarSplit from '../components/sidebarsplit.js';
+import Stack from '../components/stack.js';
+import TextContent from '../components/textcontent.js';
+import TextName, { textLinkTitleString } from '../components/textname.js';
+import TOC from '../components/toc.js';
+import { workTitleString } from '../components/workname.js';
+import WrapNonEmpty from '../components/wrapnonempty.js';
+import { Link, Router } from '../routes';
+import ErrorPage from './error.js';
 
-type BladrerProps = {
-  target: ?PrevNextText,
-  left?: boolean,
-  right?: boolean,
-};
-const Bladrer = (props: BladrerProps) => {
+const Bladrer = (props) => {
   const { target, left, right } = props;
   const lang = useContext(LangContext);
 
@@ -86,8 +61,44 @@ const Bladrer = (props: BladrerProps) => {
   );
 };
 
-type KeywordLinkProps = { keyword: KeywordRef, lang: Lang };
-class KeywordLink extends React.Component<KeywordLinkProps> {
+const Refs = ({ refs, contentLang }) => {
+  let renderedRefs = null;
+  if (refs.length === 1) {
+    renderedRefs = (
+      <>
+        <TextContent contentHtml={refs[0]} contentLang={contentLang} /> henviser
+        hertil.
+      </>
+    );
+  } else if (refs.length > 0) {
+    renderedRefs = (
+      <>
+        <p>Henvisninger hertil:</p>
+        {refs.map((ref, i) => {
+          return (
+            <div key={i} style={{ marginBottom: '10px' }}>
+              <TextContent contentHtml={ref} contentLang={contentLang} />
+            </div>
+          );
+        })}
+      </>
+    );
+  }
+  return (
+    <div className="refs">
+      {renderedRefs}
+      <style jsx>{`
+        @media print {
+          .refs {
+            display: none;
+          }
+        }
+      `}</style>
+    </div>
+  );
+};
+
+class KeywordLink extends React.Component {
   render() {
     const { keyword, lang } = this.props;
     let url = null;
@@ -122,8 +133,7 @@ class KeywordLink extends React.Component<KeywordLinkProps> {
   }
 }
 
-type TextHeadingProps = { text: Text };
-class TextHeading extends React.Component<TextHeadingProps> {
+class TextHeading extends React.Component {
   render() {
     const { text } = this.props;
 
@@ -181,18 +191,7 @@ class TextHeading extends React.Component<TextHeadingProps> {
   }
 }
 
-type TextComponentProps = {
-  lang: Lang,
-  highlight: string,
-  poet: Poet,
-  work: Work,
-  text: Text,
-  section_titles: ?Array<{ title: string, id: ?string }>,
-  prev?: PrevNextText,
-  next?: PrevNextText,
-  error: ?Error,
-};
-const TextPage = (props: TextComponentProps) => {
+const TextPage = (props) => {
   useEffect(() => {
     if (typeof location !== undefined) {
       const hash = location.hash;
@@ -232,7 +231,7 @@ const TextPage = (props: TextComponentProps) => {
     };
   }
 
-  const notes: Array<Node> = text.notes
+  const notes = text.notes
     .filter((note) => note.type !== 'unknown-original')
     .map((note, i) => {
       return (
@@ -275,14 +274,14 @@ const TextPage = (props: TextComponentProps) => {
         </Note>
       );
     })
-    .filter((x: ?Node) => x != null)
-    .forEach((element: Node) => {
+    .filter((x) => x != null)
+    .forEach((element) => {
       notes.push(element);
     });
 
   let sourceText = '';
   if (text.source != null) {
-    const source: TextSource = text.source;
+    const source = text.source;
     sourceText = 'Teksten følger ';
     sourceText += source.source.replace(/\.?$/, ', ');
     if (source.pages.indexOf('-') > -1) {
@@ -330,7 +329,7 @@ const TextPage = (props: TextComponentProps) => {
       return s;
     }
     const firstPageNumber = text.source.facsimilePages[0];
-    let facsimilePictures: Array<PictureItem> = [];
+    let facsimilePictures = [];
     const srcPrefix = `https://kalliope.org/static/facsimiles/${poet.id}/${text.source.facsimile}`;
     for (let i = 0; i < text.source.facsimilePageCount; i++) {
       facsimilePictures.push({
@@ -356,14 +355,6 @@ const TextPage = (props: TextComponentProps) => {
     </div>
   );
 
-  const refs = text.refs.map((ref, i) => {
-    return (
-      <div key={i} style={{ marginBottom: '10px' }}>
-        <TextContent contentHtml={ref} contentLang={text.content_lang} />
-      </div>
-    );
-  });
-
   const variants = text.variants.map((ref, i) => {
     return (
       <div key={i} style={{ marginBottom: '10px' }}>
@@ -378,23 +369,6 @@ const TextPage = (props: TextComponentProps) => {
       return <KeywordLink keyword={k} lang={lang} key={k.id} />;
     });
     renderedKeywords = <div style={{ marginTop: '30px' }}>{list}</div>;
-  }
-
-  let renderedRefs = null;
-  if (refs.length > 0) {
-    renderedRefs = (
-      <div className="refs">
-        <p>Henvisninger hertil:</p>
-        {refs}
-        <style jsx>{`
-          @media print {
-            .refs {
-              display: none;
-            }
-          }
-        `}</style>
-      </div>
-    );
   }
 
   let renderedVariants = null;
@@ -426,7 +400,7 @@ const TextPage = (props: TextComponentProps) => {
 
   let sidebar = null;
   if (
-    refs.length > 0 ||
+    text.refs.length > 0 ||
     variants.length > 0 ||
     text.has_footnotes ||
     text.pictures.length > 0 ||
@@ -438,7 +412,7 @@ const TextPage = (props: TextComponentProps) => {
       <div>
         {renderedNotes}
         <FootnoteList />
-        {renderedRefs}
+        <Refs refs={text.refs} contentLang={text.content_lang} />
         {renderedVariants}
         {renderedKeywords}
         {renderedPictures}
@@ -466,11 +440,11 @@ const TextPage = (props: TextComponentProps) => {
   if (text.text_type === 'section' && text.toc != null) {
     body = <TOC toc={text.toc} lang={lang} indent={1} />;
   } else {
-    let highlightInterval: { from: number, to: number };
+    let highlightInterval;
     if (highlight != null) {
       let m = null;
-      let from: number = -1,
-        to: number = -1;
+      let from = -1,
+        to = -1;
       if ((m = highlight.match(/(\d+)-(\d+)/))) {
         from = parseInt(m[1]);
         to = parseInt(m[2]);
@@ -529,7 +503,7 @@ const TextPage = (props: TextComponentProps) => {
   return (
     <Page
       headTitle={ogTitle}
-      ogTitle={poetNameString(poet, false, false)}
+      ogTitle={ogTitle}
       ogImage={OpenGraph.poetImage(poet)}
       ogDescription={ogDescription}
       requestPath={`/${lang}/text/${text.id}`}
@@ -578,11 +552,7 @@ const TextPage = (props: TextComponentProps) => {
   );
 };
 
-TextPage.getInitialProps = async ({
-  query: { lang, textId, highlight },
-}: {
-  query: { lang: Lang, textId: string, highlight: string },
-}) => {
+TextPage.getInitialProps = async ({ query: { lang, textId, highlight } }) => {
   const json = await Client.text(textId);
   return {
     lang,
