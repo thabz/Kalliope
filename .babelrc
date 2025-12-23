@@ -1,11 +1,6 @@
 {
-  "presets": [
-    "next/babel",
-    "@babel/preset-env",
-    "@babel/preset-flow"
-  ],
+  "presets": ["next/babel", "@babel/preset-env"],
   "plugins": [
-    "@babel/plugin-transform-flow-strip-types",
     "@babel/plugin-syntax-dynamic-import",
     "@babel/plugin-syntax-import-meta",
     "@babel/plugin-proposal-class-properties",

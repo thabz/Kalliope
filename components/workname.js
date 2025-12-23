@@ -1,23 +1,11 @@
-// @flow
 import React, { useContext } from 'react';
-import type { Work, Lang } from '../common/types.js';
 import CommonData from '../common/commondata.js';
-import _ from '../common/translations.js';
 import LangContext from '../common/LangContext.js';
+import _ from '../common/translations.js';
 
-type WorkNameProps = {
-  work: Work,
-  cursive?: boolean,
-  useTitle?: 'title' | 'toctitle' | 'linktitle' | 'breadcrumbtitle',
-};
-
-const WorkName = ({
-  work,
-  cursive = false,
-  useTitle = 'title',
-}: WorkNameProps) => {
+const WorkName = ({ work, cursive = false, useTitle = 'title' }) => {
   const { year } = work;
-  var titleTranslated: string = work[useTitle];
+  var titleTranslated = work[useTitle];
   const lang = useContext(LangContext);
 
   if (work.id == 'andre') {
@@ -62,7 +50,7 @@ const WorkName = ({
 
 export default WorkName;
 
-export function workTitleString(work: Work): string {
+export function workTitleString(work) {
   const { title, year } = work;
   let yearPart = '';
   if (year != null && year !== '?') {

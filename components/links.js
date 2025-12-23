@@ -1,73 +1,52 @@
-// @flow
-
-import type {
-  Lang,
-  PoetId,
-  LinesType,
-  Country,
-  URLString,
-} from '../common/types.js';
-
-export const frontPageURL = (lang: string = 'da'): URLString => {
+export const frontPageURL = (lang = 'da') => {
   return `/${lang}/`;
 };
 
-export const workURL = (
-  lang: Lang = 'da',
-  poetId: string,
-  workId: string
-): URLString => {
+export const workURL = (lang = 'da', poetId, workId) => {
   return `/${lang}/work/${poetId}/${workId}`;
 };
 
-export const allTextsURL = (
-  lang: Lang,
-  country: Country,
-  type: LinesType,
-  letter: string = 'A'
-): URLString => {
+export const allTextsURL = (lang, country, type, letter = 'A') => {
   return `/${lang}/texts/${country}/${type}/${letter}`;
 };
+
 export const poetsURL = (
-  lang: Lang = 'da',
-  groupBy: 'name' | 'year' | 'looks' = 'name',
-  country: string = 'dk'
-): URLString => {
+  lang = 'da',
+  groupBy = 'name', // 'name' | 'year' | 'looks'
+  country = 'dk'
+) => {
   return `/${lang}/poets/${country}/${groupBy}`;
 };
 
-export const poetURL = (lang: string = 'da', poetId: string): URLString => {
+export const poetURL = (lang = 'da', poetId) => {
   return `/${lang}/works/${poetId}`;
 };
 
 export const textsURL = (
-  lang: Lang = 'da',
-  poetId: string,
-  type: LinesType // 'first' | 'titles'
-): URLString => {
+  lang = 'da',
+  poetId,
+  type // 'first' | 'titles'
+) => {
   return `/${lang}/texts/${poetId}/${type}`;
 };
 
-export const worksURL = (lang: Lang = 'da', poetId: PoetId): URLString => {
+export const worksURL = (lang = 'da', poetId) => {
   return `/${lang}/works/${poetId}`;
 };
 
-export const bioURL = (lang: Lang = 'da', poetId: PoetId): URLString => {
+export const bioURL = (lang = 'da', poetId) => {
   return `/${lang}/bio/${poetId}`;
 };
 
-export const bibliographyURL = (
-  lang: Lang = 'da',
-  poetId: PoetId
-): URLString => {
+export const bibliographyURL = (lang = 'da', poetId) => {
   return `/${lang}/bibliography/${poetId}`;
 };
 
-export const mentionsURL = (lang: Lang = 'da', poetId: PoetId): URLString => {
+export const mentionsURL = (lang = 'da', poetId) => {
   return `/${lang}/mentions/${poetId}`;
 };
 
-export const textURL = (lang: Lang = 'da', textId: string): URLString => {
+export const textURL = (lang = 'da', textId) => {
   const highlight = textId.match(/,(.*)$/);
   if (highlight != null) {
     textId = textId.replace(',' + highlight[1], '');
@@ -80,7 +59,7 @@ export const textURL = (lang: Lang = 'da', textId: string): URLString => {
   }
 };
 
-export const bibleURL = (lang: Lang = 'da', bibleId: string): URLString => {
+export const bibleURL = (lang = 'da', bibleId) => {
   const verses = bibleId.match(/,(.*)$/);
   if (verses != null) {
     bibleId = bibleId.replace(',' + verses[1], '');
@@ -92,11 +71,11 @@ export const bibleURL = (lang: Lang = 'da', bibleId: string): URLString => {
   }
 };
 
-export const keywordsURL = (lang: Lang = 'da'): URLString => {
+export const keywordsURL = (lang = 'da') => {
   return `/${lang}/keywords`;
 };
 
-export const dictionaryURL = (lang: Lang = 'da', id?: string): URLString => {
+export const dictionaryURL = (lang = 'da', id) => {
   if (id != null) {
     return `/${lang}/dict/${id}`;
   } else {
@@ -104,28 +83,23 @@ export const dictionaryURL = (lang: Lang = 'da', id?: string): URLString => {
   }
 };
 
-export const keywordURL = (lang: Lang = 'da', keywordId: string): URLString => {
+export const keywordURL = (lang = 'da', keywordId) => {
   return `/${lang}/keyword/${keywordId}`;
 };
 
-export const aboutURL = (lang: Lang = 'da', aboutText: string): URLString => {
+export const aboutURL = (lang = 'da', aboutText) => {
   return `/${lang}/about/${aboutText}`;
 };
 
-export const museumURL = (lang: Lang = 'da', museumId: string): URLString => {
+export const museumURL = (lang = 'da', museumId) => {
   return `/${lang}/museum/${museumId}`;
 };
 
-export const museumsURL = (lang: Lang = 'da'): URLString => {
+export const museumsURL = (lang = 'da') => {
   return `/${lang}/museums`;
 };
 
-export const searchURL = (
-  lang: Lang,
-  query: string,
-  country: Country,
-  poetId: ?PoetId = null
-): URLString => {
+export const searchURL = (lang, query, country, poetId = null) => {
   const escapedQuery = encodeURIComponent(query).replace(/%20/g, '+');
   if (poetId != null) {
     return `/${lang}/search/${country}/${poetId}?query=${escapedQuery}`;

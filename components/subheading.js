@@ -1,9 +1,6 @@
-// @flow
 import * as React from 'react';
-import type { Node } from 'react';
 
-type Props = { children?: React.Node };
-const SubHeading = ({ children }: Props) => {
+const SubHeading = ({ children }) => {
   return (
     <div className="subheading">
       <h2>{children}</h2>

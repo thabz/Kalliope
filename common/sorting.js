@@ -1,20 +1,10 @@
-// @flow
-import type {
-  Section,
-  Poet,
-  LinesPair,
-  SortReturn,
-  Keyword,
-  DictItem,
-} from './types.js';
-
 const daDK = 'da-DK';
 
-const nvl = <T>(x: ?T, v: T): T => {
+const nvl = (x, v) => {
   return x == null ? v : x;
 };
 
-export const poetsByLastname = (a: Poet, b: Poet): SortReturn => {
+export const poetsByLastname = (a, b) => {
   const ao = nvl(
     a.name.sortname,
     nvl(a.name.lastname, '') + nvl(a.name.firstname, '')
@@ -26,7 +16,7 @@ export const poetsByLastname = (a: Poet, b: Poet): SortReturn => {
   return ao.localeCompare(bo, daDK);
 };
 
-export const poetsByBirthDate = (a: Poet, b: Poet): SortReturn => {
+export const poetsByBirthDate = (a, b) => {
   if (a.period == null || b.period == null) {
     return poetsByLastname(a, b);
   } else if (a.period.born == null || b.period.born == null) {
@@ -42,21 +32,21 @@ export const poetsByBirthDate = (a: Poet, b: Poet): SortReturn => {
   }
 };
 
-export const linesPairsByLine = (a: LinesPair, b: LinesPair): SortReturn => {
+export const linesPairsByLine = (a, b) => {
   const a1 = a.sortBy;
   const b1 = b.sortBy;
   return a1.localeCompare(b1, daDK);
 };
 
-export const keywordsByTitle = (a: Keyword, b: Keyword): SortReturn => {
+export const keywordsByTitle = (a, b) => {
   return a.title.localeCompare(b.title, daDK);
 };
 
-export const dictItemsByTitle = (a: DictItem, b: DictItem): SortReturn => {
+export const dictItemsByTitle = (a, b) => {
   return a.title.localeCompare(b.title, daDK);
 };
 
-export function sectionsByTitle<T>(a: Section<T>, b: Section<T>): SortReturn {
+export function sectionsByTitle(a, b) {
   if (a.title.startsWith('Ukendt') || a.title.startsWith('Unknown')) {
     return 1;
   } else if (b.title.startsWith('Ukendt') || b.title.startsWith('Unknown')) {

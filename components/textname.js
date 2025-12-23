@@ -1,9 +1,7 @@
-// @flow
 import React from 'react';
-import type { Text } from '../common/types.js';
 import CommonData from '../common/commondata.js';
 
-const TextName = ({ text }: { text: Text }) => {
+const TextName = ({ text }) => {
   const { title, title_prefix } = text;
   let renderedPrefix = null;
   if (title_prefix != null) {
@@ -20,10 +18,10 @@ const TextName = ({ text }: { text: Text }) => {
 };
 export default TextName;
 
-export function textTitleString(text: Text): string {
+export function textTitleString(text) {
   return text.title;
 }
 
-export function textLinkTitleString(text: Text): string {
+export function textLinkTitleString(text) {
   return text.linktitle;
 }
