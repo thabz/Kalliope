@@ -503,7 +503,7 @@ const TextPage = (props) => {
   return (
     <Page
       headTitle={ogTitle}
-      ogTitle={poetNameString(poet, false, false)}
+      ogTitle={ogTitle}
       ogImage={OpenGraph.poetImage(poet)}
       ogDescription={ogDescription}
       requestPath={`/${lang}/text/${text.id}`}
