@@ -1244,7 +1244,7 @@ Og hvad vil du have meer?
     <firstline>Jeg kiendte ei fordum til Kjerligheds Magt</firstline>
     <source pages="58"/>
     <notes>
-        <note unknown-original-by="gotter" />
+        <note>Gendigtning af Friedrich Wilhelm Gotter: <xref type="translation" poem="gotter2025081401"/>.</note>
     </notes>
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -3511,10 +3511,12 @@ Uden dig jeg snart blev kjed.
 <text id="bruunmc2018062362">
 <head>
     <title>Afskeden</title>
-    <subtitle>Oversat efter Tydsk</subtitle>
+    <subtitle>Oversat fra Tydsk</subtitle>
     <firstline>Forglem ej mig, naar Glæder mod dig smile</firstline>
     <source pages="173-174" facsimile-pages="185-186" />
-    <!-- TODO: Find den tyske original. -->
+    <notes>
+        <note>Gendigtning af <xref type="translation" poem="anonym2019021901"/>.</note>
+    </notes>
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3936,10 +3938,9 @@ Atter en Verden staae frem ved det besjælende Smil?
     <subtitle>Efter Göthe</subtitle>
     <firstline>Viger, o Sorger, fra mig, men ak, den støvklædte Pilgrim</firstline>
     <notes>
-        <note unknown-original-by="goethe" />
+        <note>Gendigtning af Goethe: <xref type="translation" poem="goethe2025081401"/>.</note>
     </notes>
     <source pages="193" facsimile-pages="205" />
-    <keywords>goethe</keywords>
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

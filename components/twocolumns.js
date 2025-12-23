@@ -1,9 +1,6 @@
-// @flow
-
 import React from 'react';
-import type { Node } from 'react';
 
-const TwoColumns = (props: { children: Node }) => {
+const TwoColumns = (props) => {
   return (
     <div className="two-columns">
       {props.children}

@@ -1,7 +1,6 @@
-// @flow
 import * as React from 'react';
 
-const Main = ({ children }: { children: React.Node }) => {
+const Main = ({ children }) => {
   return (
     <div>
       {children}
