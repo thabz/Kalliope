@@ -52,10 +52,11 @@ export const formattedDate = (date) => {
 export const extractYear = (date) => {
   let m = null,
     numericYear = null,
-    prefix = '';
+    prefix = null,
+    bce = false;
   if (date == null || date === '?') {
     return ['Ukendt år', null, true];
-  } else if ((m = date.match(/(\d\d\d\d)/))) {
+  } else if ((m = date.match(/(-?\d\d\d\d)/))) {
     numericYear = parseInt(m[1]);
   }
   if ((m = date.match(/ca/i))) {
@@ -64,7 +65,11 @@ export const extractYear = (date) => {
   if (numericYear == null) {
     return ['Ukendt år', null, true];
   }
-  return [`${prefix}${numericYear}`, numericYear, prefix !== ''];
+  if (numericYear < 0) {
+    bce = true;
+    numericYear = -numericYear;
+  }
+  return [`${prefix ?? ''}${numericYear}`, numericYear, prefix != null, bce];
 };
 
 export const formattedYear = (date) => {
@@ -73,10 +78,18 @@ export const formattedYear = (date) => {
 };
 
 export const formattedYearRange = (born, dead) => {
-  const [bornYearFormatted, bornYearNumeric, bornYearApproximated] =
-    extractYear(born);
-  const [deadYearFormatted, deadYearNumeric, deadYearApproximated] =
-    extractYear(dead);
+  const [
+    bornYearFormatted,
+    bornYearNumeric,
+    bornYearApproximated,
+    bornYearBCE,
+  ] = extractYear(born);
+  const [
+    deadYearFormatted,
+    deadYearNumeric,
+    deadYearApproximated,
+    deadYearBCE,
+  ] = extractYear(dead);
   if (bornYearNumeric == null && deadYearNumeric == null) {
     return '(Ukendt levetid)';
   } else {
@@ -84,6 +97,8 @@ export const formattedYearRange = (born, dead) => {
     if (
       !deadYearApproximated &&
       !bornYearApproximated &&
+      !bornYearBCE &&
+      !deadYearBCE &&
       bornYearNumeric != null &&
       bornYearNumeric > 1000 &&
       deadYearNumeric != null &&
@@ -92,7 +107,15 @@ export const formattedYearRange = (born, dead) => {
     ) {
       deadYearShortened = deadYearFormatted.substring(2, 4);
     }
-    return `(${bornYearFormatted}–${deadYearShortened.toLowerCase()})`;
+    let bornYearPostfix = '';
+    let deadYearPostfix = '';
+    if (bornYearBCE && deadYearBCE) {
+      deadYearPostfix = ' f.Kr.';
+    } else if (bornYearBCE && !deadYearBCE) {
+      bornYearPostfix = ' f.Kr.';
+      deadYearPostfix = ' e.Kr.';
+    }
+    return `(${bornYearFormatted}${bornYearPostfix}–${deadYearShortened.toLowerCase()}${deadYearPostfix})`;
   }
 };
 

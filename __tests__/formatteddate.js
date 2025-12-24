@@ -1,6 +1,7 @@
 import {
   formattedAge,
   formattedDate,
+  formattedYearRange,
   parseDate,
 } from '../components/formatteddate.js';
 
@@ -69,4 +70,11 @@ it('it formats age', () => {
       dead: { date: '0020-10-23' },
     })
   ).toEqual('(blev 58 år)');
+});
+
+it('it formats year ranges', () => {
+  expect(formattedYearRange('1910', '1980')).toEqual('(1910–80)');
+  expect(formattedYearRange('1782', '1810')).toEqual('(1782–1810)');
+  expect(formattedYearRange('-0100', '-0050')).toEqual('(100–50 f.Kr.)');
+  expect(formattedYearRange('-0030', '0020')).toEqual('(30 f.Kr.–20 e.Kr.)');
 });
