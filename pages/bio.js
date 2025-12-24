@@ -5,16 +5,13 @@ import _ from '../common/translations.js';
 import { poetCrumbsWithTitle } from '../components/breadcrumbs.js';
 import {
   extractYear,
+  formattedAge,
   formattedDate,
-  parseDate,
 } from '../components/formatteddate.js';
 import { poetMenu } from '../components/menu.js';
 import Page from '../components/page.js';
 import Picture from '../components/picture.js';
-import {
-  poetLastNameString,
-  poetNameString,
-} from '../components/poetname-helpers.js';
+import { poetNameString } from '../components/poetname-helpers.js';
 import PoetName from '../components/poetname.js';
 import SidebarSplit from '../components/sidebarsplit.js';
 import SplitWhenSmall from '../components/split-when-small.js';
@@ -74,48 +71,7 @@ class PersonMeta extends React.Component {
     const name = <PoetName poet={poet} />;
 
     // Age when dead
-    let age = null;
-    if (
-      poet.period != null &&
-      poet.period.born != null &&
-      poet.period.dead != null &&
-      poet.period.born.date != null &&
-      poet.period.dead.date != null &&
-      poet.period.born.date !== '?' &&
-      poet.period.dead.date !== '?'
-    ) {
-      const lastName = poetLastNameString(poet);
-      let born = parseDate(poet.period.born.date);
-      const dead = parseDate(poet.period.dead.date);
-      born.month = born.month || 0;
-      born.day = born.day || 0;
-      dead.month = dead.month || 0;
-      dead.day = dead.day || 0;
-      if (born != null && dead != null) {
-        let yearDiff = dead.year - born.year;
-        const deadBeforeBirthday =
-          dead.month < born.month ||
-          (born.month == dead.month && dead.day <= born.day);
-        if (deadBeforeBirthday) {
-          yearDiff -= 1;
-        }
-        let ca = '';
-        if (
-          born.prefix != null ||
-          dead.prefix != null ||
-          born.month === 0 ||
-          dead.month === 0 ||
-          born.day === 0 ||
-          dead.day === 0
-        ) {
-          ca = _('ca.', lang) + ' ';
-        }
-        age = _(`(blev {ca}{yearDiff} år)`, lang, {
-          ca,
-          yearDiff: yearDiff + '',
-        });
-      }
-    }
+    let age = formattedAge(poet.period, lang);
 
     let born =
       poet.period == null ? null : dateAndPlace(poet.period.born, lang);
