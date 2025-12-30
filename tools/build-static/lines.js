@@ -82,8 +82,7 @@ const build_global_lines_json = (collected) => {
               .replace(/^É/, 'E')
               .replace(/^È/, 'E')
               .replace(/^Ô/, 'O')
-              // Oldgræsk. Nedenstående dog virker ikke lige her, men
-              // er OK i Node-terminalen.
+              // Oldgræsk.
               .normalize('NFD') // splitter prækomponerede tegn
               .replace(/[\u0300-\u036f]/g, '') // fjern kombinerende diakritika
               .normalize('NFC'); // normaliser tilbage
