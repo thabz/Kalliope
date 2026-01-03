@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="horats" country="un" lang="la" type="poet">
+  <name>
+    <firstname></firstname>
+    <lastname>Horats</lastname>
+    <fullname>Quintus Horatius Flaccus</fullname>
+  </name>
+  <period>
+    <born>
+      <date>-0065-12-08</date>
+      <place>Venusia (nuværende Italien)</place>
+    </born>
+    <dead>
+      <date>-0008-11-27</date>
+      <place>Rom</place>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q6197</wikidata>
+    <viaf>100227522</viaf>
+  </identifiers>
+  
+</person>
