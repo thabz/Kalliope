@@ -9,28 +9,52 @@ const {
 } = require('./xml.js');
 const { get_picture } = require('./parsing.js');
 
-// Accepterer YYYY, YYYY-MM, YYYY-MM-DD og returnerer altid YYYY-MM-DD
-const normalize_timeline_date = date => {
-  if (date.length === 4 + 1 + 2 + 1 + 2) {
-    return date;
-  } else {
-    const parts = date.split('-');
-    if (parts.length === 1) {
-      parts.push('01');
-    }
-    if (parts.length === 2) {
-      parts.push('01');
-    }
-    return `${parts[0]}-${parts[1]}-${parts[2]}`;
+// Accepterer sYYYY, sYYYY-MM, sYYYY-MM-DD og returnerer altid sYYYY-MM-DD
+const normalize_timeline_date = (date) => {
+  // Tjek for negativt år
+  const isNegative = date.startsWith('-');
+  const cleanDate = isNegative ? date.slice(1) : date;
+  const parts = cleanDate.split('-');
+  if (parts.length === 1) {
+    parts.push('01', '01');
+  } else if (parts.length === 2) {
+    parts.push('01');
   }
+
+  const normalized = `${parts[0]}-${parts[1]}-${parts[2]}`;
+  return isNegative ? `-${normalized}` : normalized;
 };
 
-const sorted_timeline = timeline => {
-  return timeline.sort((a, b) => {
-    let date_a = normalize_timeline_date(a.date);
-    let date_b = normalize_timeline_date(b.date);
-    return date_b === date_a ? 0 : date_a < date_b ? -1 : 1;
-  });
+function compare_normalized_date(a, b) {
+  function parse(s) {
+    // s = "YYYY-MM-DD" eller "-YYYY-MM-DD"
+    const sign = s[0] === '-' ? -1 : 1;
+    const offset = sign === -1 ? 1 : 0;
+
+    const year = sign * Number(s.slice(offset, offset + 4));
+    const month = Number(s.slice(offset + 5, offset + 7));
+    const day = Number(s.slice(offset + 8, offset + 10));
+
+    return { year, month, day };
+  }
+
+  const pa = parse(a);
+  const pb = parse(b);
+
+  if (pa.year !== pb.year) {
+    return pa.year < pb.year ? -1 : 1;
+  }
+  if (pa.month !== pb.month) {
+    return pa.month < pb.month ? -1 : 1;
+  }
+  if (pa.day !== pb.day) {
+    return pa.day < pb.day ? -1 : 1;
+  }
+  return 0;
+}
+
+const sorted_timeline = (timeline) => {
+  return timeline.sort((a, b) => compare_normalized_date(a.date, b.date));
 };
 
 const load_timeline = async (filename, collected) => {
@@ -39,7 +63,7 @@ const load_timeline = async (filename, collected) => {
     return [];
   }
   return Promise.all(
-    getElementsByTagName(doc, 'entry').map(async event => {
+    getElementsByTagName(doc, 'entry').map(async (event) => {
       const type = safeGetAttr(event, 'type');
       const date = safeGetAttr(event, 'date');
       let data = {
@@ -48,7 +72,7 @@ const load_timeline = async (filename, collected) => {
         is_history_item: true,
       };
       if (type === 'image') {
-        const onError = message => {
+        const onError = (message) => {
           throw `${filename}: ${message}`;
         };
         const pictureNode = getChildByTagName(event, 'picture');
@@ -76,7 +100,7 @@ const load_timeline = async (filename, collected) => {
   );
 };
 
-const build_global_timeline = async collected => {
+const build_global_timeline = async (collected) => {
   return load_timeline('data/events.xml', collected);
 };
 
@@ -97,12 +121,12 @@ const build_poet_timeline_json = async (poet, collected) => {
   if (poet.type !== 'collection') {
     collected.workids
       .get(poet.id)
-      .filter(workId => {
+      .filter((workId) => {
         // Vi vil ikke have underværkerne i tidslinjen
         const work = collected.works.get(`${poet.id}/${workId}`);
         return work.parent == null;
       })
-      .forEach(workId => {
+      .forEach((workId) => {
         const work = collected.works.get(`${poet.id}/${workId}`);
         if (work.year != '?') {
           // TODO: Hvis der er et titel-blad, så output type image.
@@ -121,13 +145,14 @@ const build_poet_timeline_json = async (poet, collected) => {
         }
       });
     if (poet.period.born.date !== '?') {
-      const place = (poet.period.born.place != null
-        ? '  ' +
-          inonToString(poet.period.born.inon, 'da') +
-          ' ' +
-          poet.period.born.place +
-          ''
-        : ''
+      const place = (
+        poet.period.born.place != null
+          ? '  ' +
+            inonToString(poet.period.born.inon, 'da') +
+            ' ' +
+            poet.period.born.place +
+            ''
+          : ''
       ).replace(/\.*$/, '.'); // Kbh. giver ekstra punktum.
       items.push({
         date: poet.period.born.date,
@@ -141,12 +166,13 @@ const build_poet_timeline_json = async (poet, collected) => {
     }
     let dead_date = null;
     if (poet.period.dead.date !== '?') {
-      const place = (poet.period.dead.place != null
-        ? ' ' +
-          inonToString(poet.period.dead.inon, 'da') +
-          ' ' +
-          poet.period.dead.place
-        : ''
+      const place = (
+        poet.period.dead.place != null
+          ? ' ' +
+            inonToString(poet.period.dead.inon, 'da') +
+            ' ' +
+            poet.period.dead.place
+          : ''
       ).replace(/\.*$/, '.'); // Kbh. giver ekstra punktum.;
       items.push({
         date: poet.period.dead.date,
@@ -160,7 +186,7 @@ const build_poet_timeline_json = async (poet, collected) => {
     }
     let poet_events = (
       await load_timeline(`fdirs/${poet.id}/events.xml`, collected)
-    ).map(e => {
+    ).map((e) => {
       e.is_history_item = false;
       return e;
     });
@@ -173,9 +199,11 @@ const build_poet_timeline_json = async (poet, collected) => {
     if (poet.period.dead.date !== '?') {
       end_date = normalize_timeline_date(poet.period.dead.date);
     }
-    let globalItems = collected.timeline.filter(item => {
-      const d = normalize_timeline_date(item.date);
-      return d > start_date && d < end_date;
+    let globalItems = collected.timeline.filter((item) => {
+      return (
+        compare_normalized_date(item.date, start_date) === 1 &&
+        compare_normalized_date(item.date, end_date) === -1
+      );
     });
     items = [...globalItems, ...items];
     items = sorted_timeline(items);
