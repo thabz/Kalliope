@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <person id="horats" country="un" lang="la" type="poet">
   <name>
-    <firstname></firstname>
+    <firstname/>
     <lastname>Horats</lastname>
     <fullname>Quintus Horatius Flaccus</fullname>
   </name>
@@ -20,4 +20,5 @@
     <viaf>100227522</viaf>
   </identifiers>
   
+  <works>sermones1,sermones2,epodi,carmina1,carmina2,carmina3,epistulae1,carmen,epistulae2,carmina4,arspoetica</works>
 </person>
