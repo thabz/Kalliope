@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="dryden" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>John</firstname>
+    <lastname>Dryden</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1631-08-09</date>
+      <place>Aldwinkle, Northamptonshire, England</place>
+    </born>
+    <dead>
+      <date>1700-05-01</date>
+      <place>London</place>
+    </dead>
+  </period>
+  <works>andre</works>
+  <identifiers>
+    <wikidata>Q213355</wikidata>
+    <gravsted-dk>johndryden</gravsted-dk>
+    <viaf>68937979</viaf>
+    <lex-dk>John_Dryden</lex-dk>
+    <teaterleksikon-lex-dk>John_Dryden</teaterleksikon-lex-dk>
+    <litteraturpriser-dk>u765</litteraturpriser-dk>
+    <gutenberg-org>807</gutenberg-org>
+  </identifiers>
+</person>

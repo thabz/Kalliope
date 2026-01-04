@@ -8,7 +8,7 @@
 </workhead>
 <workbody>
 
-<poem id="scott2001081501">
+<text id="scott2001081501">
 <head>
    <title>County Guy</title>
    <toctitle>County Guy</toctitle>
@@ -16,6 +16,7 @@
    <firstline>Ah! County Guy, the hour is nigh</firstline>
 </head>
 <body>
+<poetry>
 Ah! County Guy, the hour is nigh,
     The sun has left the lea,
 The orange flower perfumes the bower,
@@ -33,10 +34,11 @@ The star of Love, all stars above
     Now reigns o'er earth and sky;
 And high and low the influence know--
     But where is County Guy?
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="scott2001081502">
+<text id="scott2001081502">
 <head>
    <title>Jock of Hazeldean</title>
    <toctitle>Jock of Hazeldean</toctitle>
@@ -44,6 +46,7 @@ And high and low the influence know--
    <firstline>Why weep ye by the tide, ladie</firstline>
 </head>
 <body>
+<poetry>
 "Why weep ye by the tide, ladie?
     Why weep ye by the tide?
 I'll wed ye to my youngest son,
@@ -79,10 +82,11 @@ They sought her baith by bower and ha';
     The ladie was not seen!
 She's o'er the Border and awa'
     Wi' Jock of Hazeldean.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="scott2001081503">
+<text id="scott2001081503">
 <head>
    <title>Lullaby of an Infant Chief</title>
    <toctitle>Lullaby of an Infant Chief</toctitle>
@@ -90,6 +94,7 @@ She's o'er the Border and awa'
    <firstline>O hush thee, my babie, thy sire was a knight</firstline>
 </head>
 <body>
+<poetry>
   O hush thee, my babie, thy sire was a knight,
 Thy mother a lady, both lovely and bright;
 The woods and the glens, from the towers which we see,
@@ -110,15 +115,17 @@ Then hush thee, my darling, take rest while you may,
 For strife comes with manhood, and waking with day.
        O ho ro, i ri ri, cadul gu lo,
        O ho ro, i ri ri, cadul gu lo.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="scott2019021301">
+<text id="scott2019021301">
 <head>
    <title>The dying Bard</title>
    <firstline>Dinas Emlinn, lament; for the moment is nigh</firstline>
 </head>
 <body>
+<poetry>
 <num>I.</num>Dinas Emlinn, lament; for the moment is nigh,
 When mute in the woodlands thine echoes shall die:
 No more by sweet Teivi Cadwallon shall rave,
@@ -148,16 +155,18 @@ And sage Taliessin, high harping to hold.
 Unconquer'd thy warriors, and matchless thy maids!
 And thou, whose faint warblings my weakness can tell,
 Farewell, my loved Harp! my last treasure, farewell!     
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="scott2019021302">
+<text id="scott2019021302">
 <head>
    <title>The Palmer</title>
    <firstline>O, open the door, some pity to show</firstline>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 'O, open the door, some pity to show,
 Keen blows the northern wind!
 The glen is white with the drifted snow,
@@ -207,8 +216,9 @@ For lo, when through the vapours dank,
 Morn shone on Ettrick fair,
 A corpse amid the alders rank,
 The Palmer welter'd there.     
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

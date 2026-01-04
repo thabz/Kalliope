@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="emerson" country="us" lang="en" type="poet">
+  <name>
+    <firstname>Ralph Waldo</firstname>
+    <lastname>Emerson</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1803-05-25</date>
+      <place>Boston, Mass.</place>
+    </born>
+    <dead>
+      <date>1882-04-27</date>
+      <place>Concord, Mass.</place>
+    </dead>
+  </period>
+  <works>1836,1847,1867</works>
+  <identifiers>
+    <wikidata>Q48226</wikidata>
+    <viaf>27079964</viaf>
+    <lex-dk>Ralph_Waldo_Emerson</lex-dk>
+    <litteraturpriser-dk>u15278</litteraturpriser-dk>
+    <runeberg-org>emersral</runeberg-org>
+    <gutenberg-org>1071</gutenberg-org>
+  </identifiers>
+</person>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="steffens" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Henrich</firstname>
+    <lastname>Steffens</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1773-05-02</date>
+      <place>Stavanger</place>
+    </born>
+    <dead>
+      <date>1845-02-13</date>
+      <place>Berlin</place>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q64406</wikidata>
+    <gravsted-dk>henriksteffens</gravsted-dk>
+    <viaf>46887340</viaf>
+    <lex-dk>Henrik_Steffens</lex-dk>
+    <biografisk-leksikon-lex-dk>Henrik_Steffens</biografisk-leksikon-lex-dk>
+    <litteraturpriser-dk>SHenrikSteffens</litteraturpriser-dk>
+    <runeberg-org>steffhen</runeberg-org>
+  </identifiers>
+</person>

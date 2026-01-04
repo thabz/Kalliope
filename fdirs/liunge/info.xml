@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="liunge" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Andreas Peter</firstname>
+    <lastname>Liunge</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1798-04-06</date>
+      <place>København</place>
+    </born>
+    <dead>
+        <date>1879-03-31</date>
+        <place inon="on">Frederiksberg</place>
+    </dead>
+  </period>
+  <works>andre</works>
+  <identifiers>
+    <wikidata>Q12301586</wikidata>
+    <viaf>70149066346465600384</viaf>
+    <biografisk-leksikon-lex-dk>A.P._Liunge</biografisk-leksikon-lex-dk>
+    <litteraturpriser-dk>LAPLiunge</litteraturpriser-dk>
+    <runeberg-org>liungand</runeberg-org>
+  </identifiers>
+</person>

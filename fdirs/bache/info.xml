@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="bache" country="dk" lang="da" type="artist">
+  <name>
+    <firstname>Otto</firstname>
+    <lastname>Bache</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1839-08-21</date>
+      <place>Roskilde</place>
+    </born>
+    <dead>
+      <date>1927-06-28</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q1807597</wikidata>
+    <gravsted-dk>ottobache</gravsted-dk>
+    <viaf>219149294075880520226</viaf>
+    <lex-dk>Otto_Bache</lex-dk>
+    <biografisk-leksikon-lex-dk>Otto_Bache</biografisk-leksikon-lex-dk>
+    <litteraturpriser-dk>BOttoBache</litteraturpriser-dk>
+  </identifiers>
+</person>

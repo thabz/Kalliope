@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="almqvist" country="se" lang="sv" type="poet">
+  <name>
+    <firstname>Carl Jonas Love</firstname>
+    <lastname>Almqvist</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1793-11-28</date>
+      <place>Stockholm</place>
+    </born>
+    <dead>
+      <date>1866-09-26</date>
+      <place>Bremen</place>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q316381</wikidata>
+    <gravsted-dk>carljonaslovealmqvist</gravsted-dk>
+    <viaf>54143513</viaf>
+    <lex-dk>Carl_Jonas_Love_Almqvist</lex-dk>
+    <litteraturpriser-dk>u53</litteraturpriser-dk>
+    <runeberg-org>almqvist</runeberg-org>
+    <gutenberg-org>5622</gutenberg-org>
+  </identifiers>
+</person>

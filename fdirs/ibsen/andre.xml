@@ -9,7 +9,7 @@
 </workhead>
 <workbody>
 
-<poem id="ibsen2002010601">
+<text id="ibsen2002010601">
 <head>
    <title>Rimbrev til fru Heiberg</title>
    <subtitle>Dresden, i påskeugen 1871</subtitle>
@@ -24,6 +24,7 @@
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Havde jeg på engang sendt
 alle takkens små billetter,
 i de vågne vinternætter
@@ -322,10 +323,11 @@ underfuldt til Danmrk bundet
 skal De stå for slægters øje, -
 bundet til en nat ved Sundet,
 under mindets stjerner høje!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ibsen2005112901">
+<text id="ibsen2005112901">
 <head>
    <title>Terje Vigen</title>
    <firstline>Der bode en underlig gråsprængt en</firstline>
@@ -337,6 +339,7 @@ under mindets stjerner høje!
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
+<poetry>
 Der bode en underlig gråsprængt en
 På den yderste, nøgne ø; -
 Han gjorde visst intet menneske mén
@@ -766,16 +769,18 @@ Samt året han hvile fandt. -
 Han lagdes for solbrand og vindes vift,
 Og derfor blev græsset så stridt og stivt,
 Men med vilde blomster iblandt.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ibsen2018042401">
+<text id="ibsen2018042401">
 <head>
    <title>I en komponists stambog</title>
    <firstline>Orpheus slog med toner rene</firstline>
    <quality></quality>
 </head>
 <body>
+<poetry>
 Orpheus slog med toner rene
 ånd i vilddyr, ild i stene.	 
 
@@ -784,8 +789,9 @@ vilddyr har vi og en flok af.
 
 Spil, så stenen spruder gnister!
 Spil, så dyrehammen brister!
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

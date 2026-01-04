@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="sivle" country="no" lang="no" type="poet">
+  <name>
+    <firstname>Per</firstname>
+    <lastname>Sivle</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1857-04-06</date>
+      <place>Flåm</place>
+    </born>
+    <dead>
+      <date>1904-09-06</date>
+      <place>Kristiania</place>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q936269</wikidata>
+    <viaf>27879890</viaf>
+    <lex-dk>Per_Sivle</lex-dk>
+    <litteraturpriser-dk>u6961</litteraturpriser-dk>
+    <runeberg-org>sivleper</runeberg-org>
+  </identifiers>
+</person>

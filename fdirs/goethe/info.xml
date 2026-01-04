@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="goethe" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Johann Wolfgang von</firstname>
+    <lastname>Goethe</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1749-08-28</date>
+      <place>Frankfurt am Main</place>
+    </born>
+    <dead>
+      <date>1832-03-22</date>
+      <place>Weimar</place>
+    </dead>
+  </period>
+  <works>1795,1808,1819,1832,romi,andre</works>
+  <identifiers>
+    <wikidata>Q5879</wikidata>
+    <gravsted-dk>johannwolfgangvongoethe</gravsted-dk>
+    <viaf>24602065</viaf>
+    <lex-dk>Johann_Wolfgang_von_Goethe</lex-dk>
+    <teaterleksikon-lex-dk>Johann_Wolfgang_von_Goethe</teaterleksikon-lex-dk>
+    <litteraturpriser-dk>u1082</litteraturpriser-dk>
+    <runeberg-org>goethjoh</runeberg-org>
+    <gutenberg-org>586</gutenberg-org>
+  </identifiers>
+</person>

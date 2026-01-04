@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="frederik3" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Frederik 3.</firstname>
+  </name>
+  <period>
+    <born>
+      <date>1609-03-18</date>
+      <place>Haderslevhus</place>
+    </born>
+    <coronation>
+      <date>1648-07-06</date>
+    </coronation>
+    <dead>
+      <date>1670-02-09</date>
+      <place inon="on">Københavns Slot</place>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q157812</wikidata>
+    <gravsted-dk>frederik3</gravsted-dk>
+    <viaf>174148389483710712905</viaf>
+    <lex-dk>Frederik_3._-_konge_af_Danmark_og_Norge</lex-dk>
+    <biografisk-leksikon-lex-dk>Frederik_3.</biografisk-leksikon-lex-dk>
+    <litteraturpriser-dk>FFrederikIII</litteraturpriser-dk>
+    <runeberg-org>fredrikk</runeberg-org>
+  </identifiers>
+</person>

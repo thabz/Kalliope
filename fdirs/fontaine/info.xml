@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="fontaine" country="fr" lang="fr" type="poet">
+  <name>
+    <firstname>Jean de</firstname>
+    <lastname>La Fontaine</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1621-07-08</date>
+      <place>Château-Thierry, Frankrig</place>
+    </born>
+    <dead>
+      <date>1695-04-13</date>
+      <place>Paris</place>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q49496</wikidata>
+    <gravsted-dk>jeandelafontaine</gravsted-dk>
+    <viaf>31998552</viaf>
+    <lex-dk>Jean_de_La_Fontaine</lex-dk>
+    <litteraturpriser-dk>u4042</litteraturpriser-dk>
+    <runeberg-org>lafonjea</runeberg-org>
+    <gutenberg-org>1758</gutenberg-org>
+  </identifiers>
+</person>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="strandberg" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Peter Julius</firstname>
+    <lastname>Strandberg</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1834-03-09</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1903-02-03</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <works>1864,1883,andre</works>
+</person>

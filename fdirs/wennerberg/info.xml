@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="wennerberg" country="se" lang="sv" type="poet">
+  <name>
+    <firstname>Gunnar</firstname>
+    <lastname>Wennerberg</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1817-10-02</date>
+      <place>Lidköping</place>
+    </born>
+    <dead>
+      <date>1901-08-24</date>
+      <place>Läckö kungsgård</place>
+    </dead>
+  </period>
+  <works>1849</works>
+  <identifiers>
+    <wikidata>Q1388588</wikidata>
+    <viaf>66656810</viaf>
+    <lex-dk>Gunnar_Wennerberg</lex-dk>
+    <runeberg-org>wennerbg</runeberg-org>
+  </identifiers>
+</person>

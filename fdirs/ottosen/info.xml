@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="ottosen" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Johan</firstname>
+    <lastname>Ottosen</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1859-01-31</date>
+      <place>Hylke ved Skanderborg</place>
+    </born>
+    <dead>
+      <date>1904-03-10</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <works>andre</works>
+  <identifiers>
+    <wikidata>Q16945437</wikidata>
+    <gravsted-dk>johanottosen</gravsted-dk>
+    <viaf>35806469</viaf>
+    <biografisk-leksikon-lex-dk>Johan_Ottosen</biografisk-leksikon-lex-dk>
+    <litteraturpriser-dk>OJohanOttosen</litteraturpriser-dk>
+    <runeberg-org>ottosjoh</runeberg-org>
+  </identifiers>
+</person>

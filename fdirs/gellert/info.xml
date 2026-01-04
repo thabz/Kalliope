@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="gellert" country="de" lang="de" type="poet">
+  <name>
+    <firstname>C.F.</firstname>
+    <lastname>Gellert</lastname>
+    <fullname>Christian Fürchtegott Gellert</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1715-07-04</date>
+      <place>Hainichen/Erzgebirge</place>
+    </born>
+    <dead>
+      <date>1769-12-13</date>
+      <place>Leipzig</place>
+    </dead>
+  </period>
+  <works>1746</works>
+  <identifiers>
+    <wikidata>Q60584</wikidata>
+    <viaf>9870867</viaf>
+    <lex-dk>Christian_Fürchtegott_Gellert</lex-dk>
+    <litteraturpriser-dk>u3987</litteraturpriser-dk>
+    <gutenberg-org>3015</gutenberg-org>
+  </identifiers>
+</person>

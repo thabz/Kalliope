@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="boccaccio" country="it" lang="it" type="poet">
+  <name>
+    <firstname>Giovanni</firstname>
+    <lastname>Boccaccio</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1313</date>
+      <place>Firenze</place>
+    </born>
+    <dead>
+      <date>1375</date>
+      <place>Certaldo, nær Firenze</place>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q1402</wikidata>
+    <viaf>64002165</viaf>
+    <lex-dk>Giovanni_Boccaccio</lex-dk>
+    <litteraturpriser-dk>u320</litteraturpriser-dk>
+    <runeberg-org>boccagio</runeberg-org>
+    <gutenberg-org>1279</gutenberg-org>
+  </identifiers>
+</person>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="pedersen" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Poul</firstname>
+    <lastname>Pedersen</lastname>
+    <alternative>Povel Pedersen</alternative>
+    <pseudonym>Philedor</pseudonym>
+  </name>
+  <period>
+    <born>
+      <date>?</date>
+    </born>
+    <dead>
+      <date>1700 ca.</date>
+    </dead>
+  </period>
+  <works>1724</works>
+  <identifiers>
+    <wikidata>Q22086048</wikidata>
+    <lex-dk>Poul_Pedersen_-_digter</lex-dk>
+    <biografisk-leksikon-lex-dk>Poul_Pedersen</biografisk-leksikon-lex-dk>
+  </identifiers>
+</person>

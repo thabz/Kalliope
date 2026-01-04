@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="bagger" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Carl</firstname>
+    <lastname>Bagger</lastname>
+    <fullname>Carl Christian Bagger</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1807-05-11</date>
+      <place>Kbh.</place>
+    </born>
+    <dead>
+      <date>1846-10-25</date>
+      <place>Odense</place>
+    </dead>
+  </period>
+  <works>1834,1835,1836,1845,andre</works>
+  <identifiers>
+    <wikidata>Q708867</wikidata>
+    <gravsted-dk>carlbagger</gravsted-dk>
+    <viaf>2701483</viaf>
+    <lex-dk>Carl_Bagger</lex-dk>
+    <biografisk-leksikon-lex-dk>Carl_Bagger</biografisk-leksikon-lex-dk>
+    <litteraturpriser-dk>BCarlBagger</litteraturpriser-dk>
+    <runeberg-org>baggecar</runeberg-org>
+  </identifiers>
+</person>

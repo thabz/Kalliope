@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="lundotto" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Otto J.</firstname>
+    <lastname>Lund</lastname>
+    <fullname>Otto Johannes Lund</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1885-05-04</date>
+      <place>Rutsker</place>
+    </born>
+    <dead>
+      <date>1948-12-30</date>
+      <place>Allinge</place>
+    </dead>
+  </period>
+  <works>1930,1933</works>
+  <identifiers>
+    <wikidata>Q124435407</wikidata>
+    <viaf>1328115</viaf>
+    <litteraturpriser-dk>LOttoJLund</litteraturpriser-dk>
+    <runeberg-org>lundottp</runeberg-org>
+  </identifiers>
+</person>

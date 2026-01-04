@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="petrarca" country="it" lang="it" type="poet">
+  <name>
+    <firstname>Francesco</firstname>
+    <lastname>Petrarca</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1304-07-20</date>
+      <place>Arezzo</place>
+    </born>
+    <dead>
+      <date>1374-07-19</date>
+      <place>Arquà</place>
+    </dead>
+  </period>
+  <works>1347,1360</works>
+  <identifiers>
+    <wikidata>Q1401</wikidata>
+    <viaf>4668156811376945390003</viaf>
+    <lex-dk>Francesco_Petrarca</lex-dk>
+    <litteraturpriser-dk>u6674</litteraturpriser-dk>
+    <runeberg-org>petrafra</runeberg-org>
+    <gutenberg-org>7519</gutenberg-org>
+  </identifiers>
+</person>

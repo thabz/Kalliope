@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="shakespeare" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>William</firstname>
+    <lastname>Shakespeare</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1564-04-26</date>
+      <place>Stratford-upon-Avon, Warwickshire, England</place>
+      <note>Dåbsdag</note>
+    </born>
+    <dead>
+      <date>1616-04-23</date>
+      <place>Stratford-upon-Avon, Warwickshire, England</place>
+    </dead>
+  </period>
+  <works>1593,1594,1601,lovers,sonnets,andre</works>
+  <identifiers>
+    <wikidata>Q692</wikidata>
+    <gravsted-dk>williamshakespeare</gravsted-dk>
+    <viaf>96994048</viaf>
+    <lex-dk>William_Shakespeare</lex-dk>
+    <teaterleksikon-lex-dk>William_Shakespeare</teaterleksikon-lex-dk>
+    <litteraturpriser-dk>u2744</litteraturpriser-dk>
+    <runeberg-org>shakewil</runeberg-org>
+    <gutenberg-org>654</gutenberg-org>
+  </identifiers>
+</person>

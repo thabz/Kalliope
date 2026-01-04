@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="helt" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Vilhelm</firstname>
+    <lastname>Helt</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1652-05-19</date>
+      <place>Nykøbing Sjælland</place>
+    </born>
+    <dead>
+      <date>1724-01-16</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <works>andre</works>
+  <identifiers>
+    <wikidata>Q62101494</wikidata>
+    <lex-dk>Vilhelm_Helt</lex-dk>
+    <biografisk-leksikon-lex-dk>Vilhelm_Helt</biografisk-leksikon-lex-dk>
+    <litteraturpriser-dk>HVilhelmHelt</litteraturpriser-dk>
+    <runeberg-org>heltvilh</runeberg-org>
+  </identifiers>
+</person>

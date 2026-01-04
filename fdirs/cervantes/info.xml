@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="cervantes" country="un" lang="sp" type="poet">
+  <name>
+    <firstname>Miguel de</firstname>
+    <lastname>Cervantes</lastname>
+    <fullname>Miguel de Cervantes Saavedra</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1547-09-29</date>
+      <place>Alcalá de Henares, Spanien</place>
+    </born>
+    <dead>
+      <date>1616-04-22</date>
+      <place>Madrid</place>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q5682</wikidata>
+    <viaf>17220427</viaf>
+    <lex-dk>Miguel_de_Cervantes_Saavedra</lex-dk>
+    <teaterleksikon-lex-dk>Miguel_de_Cervantes_Saavedra</teaterleksikon-lex-dk>
+    <litteraturpriser-dk>u515</litteraturpriser-dk>
+    <runeberg-org>cervamig</runeberg-org>
+    <gutenberg-org>505</gutenberg-org>
+  </identifiers>
+</person>

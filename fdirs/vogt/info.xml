@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="vogt" country="no" lang="no" type="poet">
+  <name>
+    <firstname>Nils Collett</firstname>
+    <lastname>Vogt</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1864-09-24</date>
+      <place>Christiania</place>
+    </born>
+    <dead>
+      <date>1937-12-23-</date>
+      <place>Christiania</place>
+    </dead>
+  </period>
+  <works/>
+  <identifiers>
+    <wikidata>Q1992327</wikidata>
+    <viaf>28163468</viaf>
+    <lex-dk>Nils_Collett_Vogt</lex-dk>
+    <litteraturpriser-dk>u4442</litteraturpriser-dk>
+    <runeberg-org>vogtnils</runeberg-org>
+  </identifiers>
+</person>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="holmes" country="us" lang="en" type="poet">
+  <name>
+    <firstname>Oliver Wendell</firstname>
+    <lastname>Holmes</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1809-08-29</date>
+      <place>Cambridge, Mass.</place>
+    </born>
+    <dead>
+      <date>1894-10-07</date>
+      <place>Boston</place>
+    </dead>
+  </period>
+  <works>1836,1862,1875,1880,1887</works>
+  <identifiers>
+    <wikidata>Q319829</wikidata>
+    <viaf>7405944</viaf>
+    <lex-dk>Oliver_Wendell_Holmes</lex-dk>
+    <litteraturpriser-dk>u1426</litteraturpriser-dk>
+    <runeberg-org>holmeoli</runeberg-org>
+    <gutenberg-org>387</gutenberg-org>
+  </identifiers>
+</person>

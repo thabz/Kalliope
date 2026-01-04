@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="clare" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>John</firstname>
+    <lastname>Clare</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1793-07-13</date>
+      <place>Helpston</place>
+    </born>
+    <dead>
+      <date>1864-05-20</date>
+      <place>Northampton General Lunatic Asylum</place>
+    </dead>
+  </period>
+  <works>andre</works>
+  <identifiers>
+    <wikidata>Q981572</wikidata>
+    <viaf>51703338</viaf>
+    <lex-dk>John_Clare</lex-dk>
+    <litteraturpriser-dk>u5888</litteraturpriser-dk>
+    <gutenberg-org>2843</gutenberg-org>
+  </identifiers>
+</person>

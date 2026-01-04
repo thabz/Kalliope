@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="rossettid" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Dante Gabriel</firstname>
+    <lastname>Rossetti</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1828-05-12</date>
+      <place>London</place>
+    </born>
+    <dead>
+      <date>1882-04-09</date>
+      <place>Birchington-on-Sea, Kent, England</place>
+    </dead>
+  </period>
+  <works>1861,1881,andre</works>
+  <identifiers>
+    <wikidata>Q186748</wikidata>
+    <viaf>41848725</viaf>
+    <lex-dk>Dante_Gabriel_Rossetti</lex-dk>
+    <litteraturpriser-dk>u15274</litteraturpriser-dk>
+    <gutenberg-org>1268</gutenberg-org>
+  </identifiers>
+</person>

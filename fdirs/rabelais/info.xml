@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="rabelais" country="fr" lang="fr" type="poet">
+  <name>
+    <firstname>François</firstname>
+    <lastname>Rabelais</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1483 ca.</date>
+      <place>Chinon</place>
+    </born>
+    <dead>
+      <date>1553-04-09</date>
+      <place>Paris</place>
+    </dead>
+  </period>
+  <works/>
+  <identifiers>
+    <wikidata>Q131018</wikidata>
+    <viaf>100209737</viaf>
+    <lex-dk>François_Rabelais</lex-dk>
+    <litteraturpriser-dk>u3796</litteraturpriser-dk>
+    <runeberg-org>rabelfra</runeberg-org>
+    <gutenberg-org>551</gutenberg-org>
+  </identifiers>
+</person>

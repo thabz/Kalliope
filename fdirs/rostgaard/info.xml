@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="rostgaard" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Frederik</firstname>
+    <lastname>Rostgaard</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1671-11-08</date>
+      <place>Krogerup</place>
+    </born>
+    <dead>
+      <date>1745-04-25</date>
+      <place>Krogerup</place>
+    </dead>
+  </period>
+  <works>andre</works>
+  <identifiers>
+    <wikidata>Q3363742</wikidata>
+    <gravsted-dk>frederikrostgaard</gravsted-dk>
+    <viaf>56771726</viaf>
+    <lex-dk>Frederik_Rostgaard</lex-dk>
+    <teaterleksikon-lex-dk>Frederik_Rostgaard</teaterleksikon-lex-dk>
+    <biografisk-leksikon-lex-dk>Frederik_Rostgaard</biografisk-leksikon-lex-dk>
+    <runeberg-org>rostgfre</runeberg-org>
+  </identifiers>
+</person>

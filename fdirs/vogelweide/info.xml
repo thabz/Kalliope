@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="vogelweide" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Walther von der</firstname>
+    <lastname>Vogelweide</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1170 ca.</date>
+    </born>
+    <dead>
+      <date>1230 ca.</date>
+    </dead>
+  </period>
+  <works>andre</works>
+  <identifiers>
+    <wikidata>Q44385</wikidata>
+    <viaf>78772012</viaf>
+    <lex-dk>Walther_von_der_Vogelweide</lex-dk>
+    <litteraturpriser-dk>u17719</litteraturpriser-dk>
+    <gutenberg-org>37904</gutenberg-org>
+  </identifiers>
+</person>

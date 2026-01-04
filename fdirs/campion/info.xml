@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="campion" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Thomas</firstname>
+    <lastname>Campion</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1567-02-12</date>
+      <place>London</place>
+    </born>
+    <dead>
+      <date>1620-03-01</date>
+    </dead>
+  </period>
+  <works>andre</works>
+  <identifiers>
+    <wikidata>Q455618</wikidata>
+    <viaf>41886212</viaf>
+    <lex-dk>Thomas_Campion</lex-dk>
+    <runeberg-org>campitho</runeberg-org>
+  </identifiers>
+</person>

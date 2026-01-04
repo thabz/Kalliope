@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="cunningham" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Allan</firstname>
+    <lastname>Cunningham</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1784-12-07</date>
+      <place>Kier, Skotland</place>
+    </born>
+    <dead>
+      <date>1842-10-30</date>
+      <place>London</place>
+    </dead>
+  </period>
+  <works>andre</works>
+  <identifiers>
+    <wikidata>Q2062341</wikidata>
+    <viaf>79253486</viaf>
+    <gutenberg-org>8069</gutenberg-org>
+  </identifiers>
+</person>

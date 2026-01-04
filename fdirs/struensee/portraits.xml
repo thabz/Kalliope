@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pictures>
-  <picture src="p1.jpg" primary="true" square-src="p1-square.jpg">
-    C. A. Lorentzen: <i>Friedrich Johan Struensee</i>, 1771.
-  </picture>
+  <picture ref="lorentzen/1771-struensee" primary="true" square-src="p1-square.jpg"/>
   <picture ref="juel/struensee-1771-oval" />
   <picture src="p2.jpg" />
 </pictures>

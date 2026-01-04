@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="struensee" country="dk" lang="da" type="person">
+  <name>
+    <firstname>J.F.</firstname>
+    <lastname>Struensee</lastname>
+    <fullname>Johan Friedrich Struensee</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1737-08-05</date>
+      <place>Halle</place>
+    </born>
+    <dead>
+      <date>1772-04-28</date>
+      <place>Kbh.</place>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q61879</wikidata>
+    <gravsted-dk>johannfriedrichstruensee</gravsted-dk>
+    <viaf>13100285</viaf>
+    <lex-dk>J.F._Struensee</lex-dk>
+    <biografisk-leksikon-lex-dk>J.F._Struensee</biografisk-leksikon-lex-dk>
+    <litteraturpriser-dk>SJohanFriedrichStruensee</litteraturpriser-dk>
+    <runeberg-org>struejoh</runeberg-org>
+  </identifiers>
+</person>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="baeckstroem" country="se" lang="sv" type="poet">
+  <name>
+    <firstname>Edvard</firstname>
+    <lastname>Bäckström</lastname>
+    <fullname>Per Johan Edvard Bäckström</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1841-10-27</date>
+      <place>Stockholm</place>
+    </born>
+    <dead>
+      <date>1886-02-12</date>
+      <place>Stockholm</place>
+    </dead>
+  </period>
+  <works>andre</works>
+  <identifiers>
+    <wikidata>Q5591671</wikidata>
+    <viaf>269185988</viaf>
+    <runeberg-org>backsted</runeberg-org>
+  </identifiers>
+</person>

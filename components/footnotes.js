@@ -1,129 +1,100 @@
-// @flow
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React, { useContext, useEffect, useState } from 'react';
 
-type FootnoteProps = {
-  text: *,
-};
-export class Footnote extends Component<FootnoteProps> {
-  context: {
-    footnoteContainer: FootnoteContainer,
+class Footnotes {
+  _footnotes = [];
+
+  number = () => {
+    return this._footnotes.length;
   };
-  componentWillMount() {
-    this.context.footnoteContainer.registrer(this);
-  }
-  componentWillUnmount() {
-    this.context.footnoteContainer.unregister(this);
-  }
-  text(): * {
-    return this.props.text;
-  }
-  render() {
-    const nummer = this.context.footnoteContainer.nummer(this);
-    const anchor = `note-${nummer}`;
-    return (
-      <sup style={{ marginLeft: '0.3em' }} className="footnotes-print-only">
-        <a name={anchor} />
-        {nummer}
-      </sup>
-    );
-  }
+  registrer = (footnote, text) => {
+    this._footnotes.push({ footnote, text });
+    return this._footnotes.length;
+  };
+  unregister = (footnote) => {
+    this._footnotes = this._footnotes.filter((x) => x.footnote !== footnote);
+  };
+  footnotes = () => {
+    return this._footnotes;
+  };
 }
 
-Footnote.contextTypes = {
-  footnoteContainer: PropTypes.object,
+const FootnoteContext = React.createContext();
+
+const Footnote = ({ text }) => {
+  const footnotes = useContext(FootnoteContext);
+
+  useEffect(() => {
+    return () => {
+      footnotes.unregister(this, text);
+    };
+  });
+
+  const number = footnotes.registrer(this, text);
+  const anchor = `note-${number}`;
+  return (
+    <sup
+      style={{ marginLeft: '0.3em', lineHeight: '0' }}
+      className="footnotes-print-only"
+    >
+      <a name={anchor} />
+      {number}
+    </sup>
+  );
 };
 
-export class FootnoteList extends Component<*> {
-  context: {
-    footnoteContainer: FootnoteContainer,
-  };
-  render() {
-    const container = this.context.footnoteContainer;
-    const notes = container.footnotes().map((footnote, i) => {
-      const text = footnote.text();
-      const anchor = `#note-${i + 1}`;
-      return (
-        <div className="footnote" key={i + text}>
-          <div className="footnote-num">
-            <a href={anchor}>{i + 1}.</a>
-          </div>
-          <div className="footnote-text">{text}</div>
-        </div>
-      );
-    });
+const FootnoteList = () => {
+  const footnotes = useContext(FootnoteContext);
+  const notes = footnotes.footnotes().map((footnote, i) => {
+    const text = footnote.text;
+    const anchor = `#note-${i + 1}`;
     return (
-      <div className="footnotes footnotes-print-only">
-        {notes}
-        <style jsx>{`
-          div.footnotes {
-            margin-top: 0;
-          }
-          :global(.footnote) {
-            display: flex;
-            align-items: flex-start;
-            width: 100%;
-            margin-left: -5px;
-          }
-          :global(.footnote .footnote-num) {
-            flex-basis: 20px;
-            flex-grow: 0;
-            flex-shrink: 0;
-            text-align: right;
-            padding-right: 7px;
-          }
-          :global(.footnote .footnote-num a) {
-            color: #666;
-          }
-          :global(.footnote .footnote-text) {
-            flex-grow: 1;
-          }
-        `}</style>
+      <div className="footnote" key={i + text}>
+        <div className="footnote-num">
+          <a href={anchor}>{i + 1}.</a>
+        </div>
+        <div className="footnote-text">{text}</div>
       </div>
     );
-  }
-}
-
-FootnoteList.contextTypes = {
-  footnoteContainer: PropTypes.object,
+  });
+  return (
+    <div className="footnotes footnotes-print-only">
+      {notes}
+      <style jsx>{`
+        div.footnotes {
+          margin-top: 0;
+          hyphens: auto;
+        }
+        :global(.footnote) {
+          display: flex;
+          align-items: flex-start;
+          width: 100%;
+          margin-left: -5px;
+        }
+        :global(.footnote .footnote-num) {
+          flex-basis: 20px;
+          flex-grow: 0;
+          flex-shrink: 0;
+          text-align: right;
+          padding-right: 7px;
+        }
+        :global(.footnote .footnote-num a) {
+          color: #666;
+        }
+        :global(.footnote .footnote-text) {
+          flex-grow: 1;
+        }
+      `}</style>
+    </div>
+  );
 };
 
-type FootnoteContainerProps = {
-  children?: *,
+const FootnoteContainer = (props) => {
+  const [footnotes] = useState(new Footnotes());
+  return (
+    <FootnoteContext.Provider value={footnotes}>
+      {props.children}
+    </FootnoteContext.Provider>
+  );
 };
-export class FootnoteContainer extends Component<FootnoteContainerProps> {
-  _footnotes: Array<Footnote>;
-  constructor() {
-    super();
-    this._footnotes = [];
-  }
-  componentDidMount() {
-    // Reset when mounting. See issue #76.
-    this._footnotes = [];
-  }
-  getChildContext() {
-    return { footnoteContainer: this };
-  }
-  footnotes(): Array<Footnote> {
-    return this._footnotes;
-  }
-  registrer(footnote: Footnote) {
-    const findes = this.nummer(footnote) !== 0;
-    if (!findes) {
-      this._footnotes.push(footnote);
-    }
-  }
-  unregister(footnote: Footnote) {
-    this._footnotes = this._footnotes.filter(x => x !== footnote);
-  }
-  nummer(footnote: Footnote) {
-    return this._footnotes.indexOf(footnote) + 1;
-  }
-  render() {
-    return <div>{this.props.children}</div>;
-  }
-}
 
-FootnoteContainer.childContextTypes = {
-  footnoteContainer: PropTypes.object,
-};
+export { Footnote, FootnoteContainer, FootnoteList };

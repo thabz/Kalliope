@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="drachmann" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Holger</firstname>
+    <lastname>Drachmann</lastname>
+    <fullname>Holger Henrik Herholdt Drachmann</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1846-10-09</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1908-01-14</date>
+      <place>Hornbæk</place>
+    </dead>
+  </period>
+  <works>1872,1875,1877,1877t,1877d,1879r,1879,1881,1884,1885,1890,1889,1892,1899,1901,andre</works>
+  <identifiers>
+    <wikidata>Q966764</wikidata>
+    <gravsted-dk>holgerdrachmann</gravsted-dk>
+    <viaf>76335990</viaf>
+    <lex-dk>Holger_Drachmann</lex-dk>
+    <teaterleksikon-lex-dk>Holger_Drachmann</teaterleksikon-lex-dk>
+    <biografisk-leksikon-lex-dk>Holger_Drachmann</biografisk-leksikon-lex-dk>
+    <litteraturpriser-dk>DHolgerDrachmann</litteraturpriser-dk>
+    <runeberg-org>drachhol</runeberg-org>
+    <gutenberg-org>25086</gutenberg-org>
+  </identifiers>
+</person>

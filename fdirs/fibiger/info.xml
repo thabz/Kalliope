@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="fibiger" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Johannes</firstname>
+    <lastname>Fibiger</lastname>
+    <fullname>Johannes Henrik Tauber Fibiger</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1821-01-27</date>
+      <place>Nykøbing Falster</place>
+    </born>
+    <dead>
+      <date>1897-11-13</date>
+    </dead>
+  </period>
+  <works>1884</works>
+  <identifiers>
+    <wikidata>Q5729636</wikidata>
+    <viaf>58834790</viaf>
+    <biografisk-leksikon-lex-dk>Johannes_Fibiger_-_præst</biografisk-leksikon-lex-dk>
+    <litteraturpriser-dk>FJohannesHenrikTauberFibiger</litteraturpriser-dk>
+    <runeberg-org>fibigjoh</runeberg-org>
+  </identifiers>
+</person>

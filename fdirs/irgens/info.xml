@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="irgens" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Hanna</firstname>
+    <lastname>Irgens</lastname>
+    <fullname>Johanne Christiane Irgens</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1792-08-19</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1853-06-13</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <works>1822,andre</works>
+  <identifiers>
+    <wikidata>Q12315182</wikidata>
+    <viaf>336149294361780522289</viaf>
+    <biografisk-leksikon-lex-dk>Hanna_Irgens</biografisk-leksikon-lex-dk>
+    <litteraturpriser-dk>IHanneIrgens</litteraturpriser-dk>
+    <runeberg-org>irgenhan</runeberg-org>
+  </identifiers>
+</person>

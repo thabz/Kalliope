@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="hempel" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Søren</firstname>
+    <lastname>Hempel</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1775-01-03</date>
+      <place>Fåborg</place>
+    </born>
+    <dead>
+      <date>1844-01-12</date>
+      <place>Odense</place>
+    </dead>
+  </period>
+  <works>andre</works>
+  <identifiers>
+    <wikidata>Q12338531</wikidata>
+    <gravsted-dk>soerenhempel</gravsted-dk>
+    <viaf>3348016</viaf>
+    <biografisk-leksikon-lex-dk>Søren_Hempel</biografisk-leksikon-lex-dk>
+    <litteraturpriser-dk>HSoerenHempel</litteraturpriser-dk>
+    <runeberg-org>hempesor</runeberg-org>
+  </identifiers>
+</person>

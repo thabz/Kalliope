@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="alfieri" country="it" lang="it" type="poet">
+  <name>
+    <firstname>Vittorio</firstname>
+    <lastname>Alfieri</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1749-01-16</date>
+      <place>Asti</place>
+    </born>
+    <dead>
+      <date>1803-10-08</date>
+      <place>Firenze</place>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q296244</wikidata>
+    <viaf>39389587</viaf>
+    <lex-dk>Vittorio_Alfieri</lex-dk>
+    <teaterleksikon-lex-dk>Vittorio_Alfieri</teaterleksikon-lex-dk>
+    <gutenberg-org>24785</gutenberg-org>
+  </identifiers>
+</person>

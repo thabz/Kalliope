@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="southey" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Robert</firstname>
+    <lastname>Southey</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1774-08-12</date>
+      <place>Bristol</place>
+    </born>
+    <dead>
+      <date>1843-03-21</date>
+      <place>London</place>
+    </dead>
+  </period>
+  <works>andre</works>
+  <identifiers>
+    <wikidata>Q216838</wikidata>
+    <viaf>61576896</viaf>
+    <lex-dk>Robert_Southey</lex-dk>
+    <litteraturpriser-dk>u4754</litteraturpriser-dk>
+    <gutenberg-org>488</gutenberg-org>
+  </identifiers>
+</person>

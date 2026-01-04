@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="lyhne" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Knud</firstname>
+    <lastname>Lyhne</lastname>
+    <fullname>August Knud Lyne Frederiksen</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1891-05-17</date>
+      <place>Horsens</place>
+    </born>
+    <dead>
+      <date>1948-10-26</date>
+    </dead>
+  </period>
+  <works>1913,1917,1920,1925</works>
+  <identifiers>
+    <wikidata>Q125808665</wikidata>
+    <litteraturpriser-dk>LKnudLyhne</litteraturpriser-dk>
+    <runeberg-org>lyhneknu</runeberg-org>
+  </identifiers>
+</person>

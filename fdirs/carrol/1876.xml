@@ -13,7 +13,7 @@
 </workhead>
 <workbody>
 
-<poem id="carroll2002030601">
+<text id="carroll2002030601">
 <head>
    <title>Dedication</title>
    <toctitle>Dedication</toctitle>
@@ -21,6 +21,7 @@
    <firstline>Girt with a boyish garb for boyish task</firstline>
 </head>
 <body>
+<poetry>
 <center>Inscribed to a dear Child:
 in memory of golden summer hours
 and whispers of a summer sea.</center>
@@ -44,16 +45,18 @@ Away, fond thoughts, and vex my soul no more!
      Work claims my wakeful nights, my busy days--
 Albeit bright memories of that sunlit shore
      Yet haunt my dreaming gaze!
+</poetry>
 </body>
-</poem>
+</text>
 
-<prose id="carroll2002030602">
+<text id="carroll2002030602" skip-index="true">
 <head>
    <title>Preface</title>
    <toctitle>Preface</toctitle>
    <indextitle>Preface</indextitle>
 </head>
 <body>
+<prose>
 If-and the thing is wildly possible-the charge of writing nonsense were ever brought against the author of this brief but instructive poem, it would be based, I feel convinced, on the line (in p.4)
 
           "Then the bowsprit got mixed with the rudder sometimes."
@@ -73,10 +76,11 @@ In view of this painful possibility, I will not (as I might) appeal indignantly 
           "Under which king, Bezonian?  Speak or die!"
 
 Justice Shallow had felt certain that it was either William or Richard, but had not been able to settle which, so that he could not possibly say either name before the other, can it be doubted that, rather than die, he would have gasped out "Rilchiam!"
-</body>
 </prose>
+</body>
+</text>
 
-<poem id="carroll2002030603">
+<text id="carroll2002030603">
 <head>
    <title>Fit the First</title>
    <subtitle>The Landing</subtitle>
@@ -90,6 +94,7 @@ Justice Shallow had felt certain that it was either William or Richard, but had 
    </pictures>
 </head>
 <body>
+<poetry>
 "Just the place for a Snark!" the Bellman cried,
      As he landed his crew with care;
 Supporting each man on the top of the tide
@@ -199,10 +204,11 @@ Yet still, ever after that sorrowful day,
      Whenever the Butcher was by,
 The Beaver kept looking the opposite way,
      And appeared unaccountably shy.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="carroll2002030604">
+<text id="carroll2002030604">
 <head>
    <title>Fit the Second</title>
    <toctitle>Fit the Second - The Bellman's Speech</toctitle>
@@ -213,6 +219,7 @@ The Beaver kept looking the opposite way,
    </pictures>
 </head>
 <body>
+<poetry>
 The Bellman himself they all praised to the skies--
      Such a carriage, such ease and such grace!
 Such solemnity, too!  One could see he was wise,
@@ -317,10 +324,11 @@ Distinguishing those that have feathers, and bite,
      Yet, I feel it my duty to say,
 Some are Boojums--" The Bellman broke off in alarm,
      For the Baker had fainted away.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="carroll2002030605">
+<text id="carroll2002030605">
 <head>
    <title>Fit the Third</title>
    <subtitle>The Backer's Tale</subtitle>
@@ -332,6 +340,7 @@ Some are Boojums--" The Bellman broke off in alarm,
    </pictures>
 </head>
 <body>
+<poetry>
 They roused him with muffins--they roused him with ice--
      They roused him with mustard and cress--
 They roused him with jam and judicious advice--
@@ -401,10 +410,11 @@ I serve it with greens in those shadowy scenes,
      In a moment (of this I am sure),
 I shall softly and suddenly vanish away--
      And the notion I cannot endure!"
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="carroll2002030606">
+<text id="carroll2002030606">
 <head>
    <title>Fit the fourth</title>
    <subtitle>The Hunting</subtitle>
@@ -416,6 +426,7 @@ I shall softly and suddenly vanish away--
    </pictures>
 </head>
 <body>
+<poetry>
 The Bellman looked uffish, and wrinkled his brow.
      "If only you'd spoken before!
 It's excessively awkward to mention it now,
@@ -505,10 +516,11 @@ And even the Baker, though stupid and stout,
      The Butcher beginning to sob.
 "Should we meet with a Jubjub, that desperate bird,
      We shall need all our strength for the job!"
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="carroll2002030607">
+<text id="carroll2002030607">
 <head>
    <title>Fit the Fifth</title>
    <subtitle>The Beaver's Lesson</subtitle>
@@ -520,6 +532,7 @@ And even the Baker, though stupid and stout,
    </pictures>
 </head>
 <body>
+<poetry>
 They sought it with thimbles, they sought it with care;
      They pursued it with forks and hope;
 They threatened its life with a railway-share;
@@ -664,10 +677,11 @@ And when quarrels arose--as one frequently finds
      Quarrels will, spite of every endeavor--
 The song of the Jubjub recurred to their minds,
      And cemented their friendship for ever!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="carroll2002030608">
+<text id="carroll2002030608">
 <head>
    <title>Fit the Sixth</title>
    <subtitle>The Barrister's Dream</subtitle>
@@ -679,6 +693,7 @@ The song of the Jubjub recurred to their minds,
    </pictures>
 </head>
 <body>
+<poetry>
 They sought it with thimbles, they sought it with care;
      They pursued it with forks and hope;
 They threatened its life with a railway-share;
@@ -768,10 +783,11 @@ Thus the Barrister dreamed, while the bellowing seemed
      To grow every moment more clear:
 Till he woke to the knell of a furious bell,
      Which the Bellman rang close at his ear.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="carroll2002030609">
+<text id="carroll2002030609">
 <head>
    <title>Fit the Seventh</title>
    <subtitle>The Banker's Fate</subtitle>
@@ -783,6 +799,7 @@ Till he woke to the knell of a furious bell,
    </pictures>
 </head>
 <body>
+<poetry>
 They sought it with thimbles, they sought it with care;
      They pursued it with forks and hope;
 They threatened its life with a railway-share;
@@ -832,10 +849,11 @@ Words whose utter inanity proved his insanity,
      The Bellman exclaimed in a fright.
 "We have lost half the day.  Any further delay,
      And we sha'nt catch a Snark before night!"
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="carroll2002030610">
+<text id="carroll2002030610">
 <head>
    <title>Fit the Eighth</title>
    <subtitle>The Vanishing</subtitle>
@@ -847,6 +865,7 @@ Words whose utter inanity proved his insanity,
    </pictures>
 </head>
 <body>
+<poetry>
 They sought it with thimbles, they sought it with care;
      They pursued it with forks and hope;
 They threatened its life with a railway-share;
@@ -893,7 +912,8 @@ He had softly and suddenly vanished away---
      For the Snark <i>was</i> a Boojum, you see.
 
 THE END
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

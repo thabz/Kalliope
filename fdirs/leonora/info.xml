@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="leonora" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Leonora Christina</firstname>
+    <lastname>Ulfeldt</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1621-07-08</date>
+      <place>Frederiksborg</place>
+    </born>
+    <dead>
+      <date>1698-03-16</date>
+      <place>Maribo Kloster</place>
+    </dead>
+  </period>
+  <works>andre</works>
+  <identifiers>
+    <wikidata>Q262989</wikidata>
+    <gravsted-dk>leonorachristina</gravsted-dk>
+    <viaf>89431067</viaf>
+    <lex-dk>Leonora_Christina</lex-dk>
+    <biografisk-leksikon-lex-dk>Leonora_Christina</biografisk-leksikon-lex-dk>
+    <litteraturpriser-dk>LLeonoraChristina</litteraturpriser-dk>
+    <runeberg-org>leonochr</runeberg-org>
+    <gutenberg-org>39253</gutenberg-org>
+  </identifiers>
+</person>

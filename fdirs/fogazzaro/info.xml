@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="fogazzaro" country="it" lang="it" type="poet">
+  <name>
+    <firstname>Antonio</firstname>
+    <lastname>Fogazzaro</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1842-03-25</date>
+      <place>Vicenza</place>
+    </born>
+    <dead>
+      <date>1911-03-07</date>
+      <place>Vicenza</place>
+    </dead>
+  </period>
+  <works>1908</works>
+  <identifiers>
+    <wikidata>Q470067</wikidata>
+    <viaf>39408145</viaf>
+    <lex-dk>Antonio_Fogazzaro</lex-dk>
+    <litteraturpriser-dk>u937</litteraturpriser-dk>
+    <gutenberg-org>2759</gutenberg-org>
+  </identifiers>
+</person>

@@ -9,7 +9,7 @@
 </workhead>
 <workbody>
 
-<poem id="emerson2005092501">
+<text id="emerson2005092501">
 <head>
    <title>Concord Hymn</title>
    <firstline>The rude bridge that arched the flood</firstline>
@@ -20,6 +20,7 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 The rude bridge that arched the flood,
 Their flag to April's breeze unfurled,
 Here once the embattled farmers stood,
@@ -39,8 +40,9 @@ Spirit, that made those heroes dare
 To die, or leave their children free,
 Bid Time and Nature gently spare
 The shaft we raise to them and thee.
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="todi" country="it" lang="it" type="poet">
+  <name>
+    <firstname>Jacopone da</firstname>
+    <lastname>Todi</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1230?</date>
+      <place>Todi</place>
+    </born>
+    <dead>
+      <date>1306-12-25</date>
+      <place>Collazzone</place>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q317267</wikidata>
+    <viaf>6645158792823139040006</viaf>
+    <lex-dk>Jacopone_da_Todi</lex-dk>
+    <gutenberg-org>34285</gutenberg-org>
+  </identifiers>
+</person>

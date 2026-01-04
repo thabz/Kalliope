@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="pulci" country="it" lang="it" type="poet">
+  <name>
+    <firstname>Luigi</firstname>
+    <lastname>Pulci</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1432-08-15</date>
+      <place>Firenze</place>
+    </born>
+    <dead>
+      <date>1484-11-11</date>
+    </dead>
+  </period>
+  <works>1481</works>
+  <identifiers>
+    <wikidata>Q631635</wikidata>
+    <viaf>89371518</viaf>
+    <lex-dk>Luigi_Pulci</lex-dk>
+    <gutenberg-org>6264</gutenberg-org>
+  </identifiers>
+</person>

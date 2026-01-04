@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="metastasio" country="it" lang="it" type="poet">
+  <name>
+    <firstname>Pietro</firstname>
+    <lastname>Metastasio</lastname>
+    <pseudonym>Pietro Trapassi</pseudonym>
+  </name>
+  <period>
+    <born>
+      <date>1698-01-03</date>
+      <place>Rom</place>
+    </born>
+    <dead>
+      <date>1782-04-12</date>
+      <place>Wien</place>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q29473</wikidata>
+    <viaf>64192672</viaf>
+    <lex-dk>Pietro_Metastasio</lex-dk>
+    <litteraturpriser-dk>u2064</litteraturpriser-dk>
+    <gutenberg-org>4069</gutenberg-org>
+  </identifiers>
+</person>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="boiardo" country="it" lang="it" type="poet">
+  <name>
+    <firstname>Matteo Maria</firstname>
+    <lastname>Boiardo</lastname>
+    <fullname>Matteo Maria Conte di Scandiano Boiardo</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1441 ca.</date>
+      <place>Scandiano</place>
+    </born>
+    <dead>
+      <date>1494-12-19</date>
+      <place>Reggio nell'Emilia</place>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q319557</wikidata>
+    <viaf>39400425</viaf>
+    <lex-dk>Matteo_Maria_di_Boiardo</lex-dk>
+    <gutenberg-org>6265</gutenberg-org>
+  </identifiers>
+</person>

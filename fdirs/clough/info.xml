@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="smith" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Arthur Hugh</firstname>
+    <lastname>Clough</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1819-01-01</date>
+      <place>Livelpool</place>
+    </born>
+    <dead>
+      <date>1861-11-13</date>
+      <place>Firenze</place>
+    </dead>
+  </period>
+  <works>andre</works>
+  <identifiers>
+    <wikidata>Q709930</wikidata>
+    <viaf>68944993</viaf>
+    <lex-dk>Arthur_Hugh_Clough</lex-dk>
+    <litteraturpriser-dk>u17011</litteraturpriser-dk>
+    <gutenberg-org>343</gutenberg-org>
+  </identifiers>
+</person>

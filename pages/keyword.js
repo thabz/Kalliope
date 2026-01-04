@@ -1,128 +1,111 @@
-// @flow
-
 import React from 'react';
-import { Link } from '../routes';
-import Head from '../components/head';
-import Main from '../components/main.js';
-import Nav, { kalliopeCrumbs } from '../components/nav';
-import SidebarSplit from '../components/sidebarsplit.js';
-import LangSelect from '../components/langselect';
-import { KalliopeTabs } from '../components/tabs.js';
-import Heading from '../components/heading.js';
-import SubHeading from '../components/subheading.js';
-import PoetName from '../components/poetname.js';
-import TextName from '../components/textname.js';
-import TextContent from '../components/textcontent.js';
-import SidebarPictures from '../components/sidebarpictures.js';
-import Picture from '../components/picture.js';
+import * as Client from '../common/client.js';
+import * as OpenGraph from '../common/opengraph.js';
+import _ from '../common/translations.js';
+import { kalliopeCrumbs } from '../components/breadcrumbs.js';
 import { FootnoteContainer, FootnoteList } from '../components/footnotes.js';
-import Note from '../components/note.js';
 import * as Links from '../components/links';
-import type { Lang, Keyword, Error } from './helpers/types.js';
-import * as Paths from './helpers/paths.js';
-import * as Client from './helpers/client.js';
-import { createURL } from './helpers/client.js';
-import * as OpenGraph from './helpers/opengraph.js';
+import { kalliopeMenu } from '../components/menu.js';
+import Page from '../components/page.js';
+import Picture from '../components/picture.js';
+import SidebarPictures from '../components/sidebarpictures.js';
+import SidebarSplit from '../components/sidebarsplit.js';
+import SubHeading from '../components/subheading.js';
+import TextContent from '../components/textcontent.js';
 import ErrorPage from './error.js';
-import _ from '../pages/helpers/translations.js';
 
-type KeywordComponentProps = {
-  lang: Lang,
-  keyword: Keyword,
-  error: ?Error,
-};
-export default class extends React.Component<KeywordComponentProps> {
-  static async getInitialProps({
-    query: { lang, keywordId },
-  }: {
-    query: { lang: Lang, keywordId: string },
-  }) {
-    const json = await Client.keyword(keywordId);
-    return {
-      lang,
-      keyword: json,
-      error: json.error,
-    };
+const KeywordPage = (props) => {
+  const { lang, keyword, error } = props;
+
+  if (error != null) {
+    return <ErrorPage error={error} lang={lang} message="Ukendt nøgleord" />;
   }
 
-  render() {
-    const { lang, keyword, error } = this.props;
+  const requestPath = `/${lang}/keyword/${keyword.id}`;
 
-    if (error != null) {
-      return <ErrorPage error={error} lang={lang} message="Ukendt nøgleord" />;
-    }
-    const requestPath = `/${lang}/keyword/${keyword.id}`;
-
-    const pictures = keyword.pictures.map(p => {
-      return (
-        <Picture
-          pictures={[p]}
-          contentLang={p.content_lang || 'da'}
-          lang={lang}
-        />
-      );
-    });
-    const renderedPictures = <SidebarPictures>{pictures}</SidebarPictures>;
-    let sidebar = [];
-    if (keyword.has_footnotes || keyword.pictures.length > 0) {
-      if (keyword.has_footnotes) {
-        sidebar.push(<FootnoteList />);
-      }
-      if (keyword.pictures.length > 0) {
-        sidebar.push(<div key="sidebarpictures">{renderedPictures}</div>);
-      }
-    }
-    const body = (
-      <TextContent
-        contentHtml={keyword.content_html}
-        contentLang={keyword.content_lang}
+  const pictures = keyword.pictures.map((p, i) => {
+    return (
+      <Picture
+        key={i}
+        pictures={[p]}
+        contentLang={p.content_lang || 'da'}
         lang={lang}
       />
     );
-    const crumbs = [
-      ...kalliopeCrumbs(lang),
-      { url: Links.keywordsURL(lang), title: _('Nøgleord', lang) },
-      { title: keyword.title },
-    ];
-    const title = keyword.title;
-    let author = null;
-    if (keyword.author != null) {
-      author = (
-        <div style={{ fontVariant: 'small-caps', marginBottom: '40px' }}>
-          Af {keyword.author}
-        </div>
-      );
-    }
-    const headTitle = `${keyword.title} - Kalliope`;
-    const ogTitle = keyword.title;
-    const ogDescription = OpenGraph.trimmedDescription(keyword.content_html);
+  });
+  const renderedPictures = <SidebarPictures>{pictures}</SidebarPictures>;
 
-    return (
-      <div>
-        <FootnoteContainer key={keyword.id}>
-          <Head
-            headTitle={headTitle}
-            ogTitle={ogTitle}
-            description={ogDescription}
-            requestPath={requestPath}
-          />
-          <Main>
-            <Nav lang={lang} crumbs={crumbs} />
-            <Heading title={title} />
-            <KalliopeTabs lang={lang} selected="keywords" />
-            <SidebarSplit sidebar={sidebar}>
-              <div key="content">
-                <article>
-                  <SubHeading>{keyword.title}</SubHeading>
-                  {author}
-                  <div style={{ lineHeight: 1.6 }}>{body}</div>
-                </article>
-              </div>
-            </SidebarSplit>
-            <LangSelect lang={lang} path={requestPath} />
-          </Main>
-        </FootnoteContainer>
+  let sidebar = [];
+
+  if (keyword.has_footnotes || keyword.pictures.length > 0) {
+    if (keyword.has_footnotes) {
+      sidebar.push(<FootnoteList key="footnotelist" />);
+    }
+    if (keyword.pictures.length > 0) {
+      sidebar.push(<div key="sidebarpictures">{renderedPictures}</div>);
+    }
+  }
+
+  const crumbs = [
+    ...kalliopeCrumbs(lang),
+    { url: Links.keywordsURL(lang), title: _('Nøgleord', lang) },
+    { title: keyword.title },
+  ];
+  const title = keyword.title;
+  let author = null;
+  if (keyword.author != null) {
+    author = (
+      <div style={{ fontSize: '16px', marginBottom: '40px' }}>
+        Af {keyword.author}
       </div>
     );
   }
-}
+  const headTitle = `${keyword.title} - Kalliope`;
+  const ogTitle = keyword.title;
+  const ogDescription = OpenGraph.trimmedDescription(keyword.content_html);
+
+  return (
+    <Page
+      headTitle={headTitle}
+      ogTitle={ogTitle}
+      ogDescription={ogDescription}
+      requestPath={requestPath}
+      crumbs={crumbs}
+      pageTitle={title}
+      menuItems={kalliopeMenu()}
+      selectedMenuItem="keywords"
+    >
+      <FootnoteContainer key={keyword.id}>
+        <SidebarSplit sidebar={sidebar}>
+          <div key="content">
+            <article>
+              <SubHeading>{keyword.title}</SubHeading>
+              {author}
+              <div style={{ lineHeight: 1.6, textAlign: 'justify' }}>
+                <TextContent
+                  contentHtml={keyword.content_html}
+                  contentLang={keyword.content_lang}
+                  lang={lang}
+                />
+              </div>
+            </article>
+          </div>
+        </SidebarSplit>
+      </FootnoteContainer>
+    </Page>
+  );
+};
+
+KeywordPage.getInitialProps = async ({ query: { lang, keywordId } }) => {
+  const json = await Client.keyword(keywordId);
+  if (json == null) {
+    return { lang, error: 'Ikke fundet', keyword: null };
+  } else {
+    return {
+      lang,
+      keyword: json,
+    };
+  }
+};
+
+export default KeywordPage;

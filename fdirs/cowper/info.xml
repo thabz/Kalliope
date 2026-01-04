@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="cowper" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>William</firstname>
+    <lastname>Cowper</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1731-11-26</date>
+      <place>Great Berkhamstead, Hertfordshire</place>
+    </born>
+    <dead>
+      <date>1800-04-25</date>
+      <place>East Dereham, Norfolk</place>
+    </dead>
+  </period>
+  <works>1779,andre</works>
+  <identifiers>
+    <wikidata>Q315537</wikidata>
+    <viaf>32009788</viaf>
+    <lex-dk>William_Cowper</lex-dk>
+    <gutenberg-org>1270</gutenberg-org>
+  </identifiers>
+</person>

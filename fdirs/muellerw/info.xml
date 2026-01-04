@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="muellerw" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Wilhelm</firstname>
+    <lastname>Müller</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1794-10-07</date>
+      <place>Dessau, Anhalt</place>
+    </born>
+    <dead>
+      <date>1827-09-30</date>
+      <place>Dessau, Anhalt</place>
+    </dead>
+  </period>
+  <works>andre</works>
+  <identifiers>
+    <wikidata>Q57879</wikidata>
+    <viaf>222259439</viaf>
+    <lex-dk>Wilhelm_Müller</lex-dk>
+    <litteraturpriser-dk>u17756</litteraturpriser-dk>
+    <runeberg-org>mullewil</runeberg-org>
+  </identifiers>
+</person>

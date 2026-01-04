@@ -15,7 +15,7 @@
 </workhead>
 <workbody>
 
-<poem id="holst2018030701">
+<text id="holst2018030701">
 <head>
     <title>Svend Tveskjæg</title>
     <toctitle><num>I.</num>Svend Tveskjæg</toctitle>
@@ -24,6 +24,7 @@
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><small><right>Det danske Piger var, som Danmarks Konning Svend</right></small></nonum>
 <nonum><small><right>Tveskjæg Frihed gav.</right></small></nonum>
 <nonum><small><right><w>J. L. Heiberg.</w></right></small></nonum>
@@ -261,10 +262,11 @@ Fra Sydens Blomsterhave
 En deilig Sommerflor,
 For dem, som de bortgave,
 De Piger i vort Nord! —
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="holst2018030702">
+<text id="holst2018030702">
 <head>
     <title>Njörrunga-Slaget</title>
     <!-- TODO: Jeg kan ikke gennemskue titlens fraktur. Mjö eller Njö eller ...? -->
@@ -277,6 +279,7 @@ De Piger i vort Nord! —
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><small><right>Et Sagn, fuldt værd at høre</right></small></nonum>
 <nonum><small><right>Med gamle Runer staaer;</right></small></nonum>
 <nonum><small><right>Laaner mig Eders Øre,</right></small></nonum>
@@ -467,10 +470,11 @@ Hidtraadte da Jarl Erik: «Alt nok af Blod der flød,
 Til at jeg skulde ville saa tapper Kjæmpes Død;
 Gak hjem med Dine Venner! Jer Daad ei glemmes vil,
 Mens blot et Glimt i Norden af Oldtids Kraft er til.«
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="holst2018030703">
+<text id="holst2018030703">
 <head>
     <title>Knud Lavard</title>
     <toctitle><num>III.</num>Knud Lavard</toctitle>
@@ -479,6 +483,7 @@ Mens blot et Glimt i Norden af Oldtids Kraft er til.«
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><small><right>Hvad Tidens er, det maa forgaae,</right></small></nonum>
 <nonum><small><right>Hvad Livets er maa leve.</right></small></nonum>
 <nonum><small><right><w>Chr. Wilster.</w></right></small></nonum>
@@ -617,10 +622,11 @@ Og Roserne spire hver kommende Vaar,
 Af Skov og af Kilde udslettes hvert Spoer,
     Dog aldrig i Danmark vil svinde
     Knud Lavards hellige Minde! —
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="holst2018030704">
+<text id="holst2018030704">
 <head>
     <title>Otto Rud</title>
     <toctitle><num>IV.</num>Otto Rud</toctitle>
@@ -629,6 +635,7 @@ Af Skov og af Kilde udslettes hvert Spoer,
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><small><right>Vort Fødeland var altid rigt</right></small></nonum>
 <nonum><small><right>Paa raske Orlogshelte.</right></small></nonum>
 <nonum><small><right><w>K. L. Rahbek.</w></right></small></nonum>
@@ -727,8 +734,9 @@ Hen til den djerve Helt.
 Brug kun Dit Sværd mod mig igjen!
 Jeg ærlig Fjende skatter
 Langt meer end troløs Ven.« —
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

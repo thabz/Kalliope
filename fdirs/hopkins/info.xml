@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="hopkins" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Gerard Manley</firstname>
+    <lastname>Hopkins</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1844-07-28</date>
+      <place>Stratford, Essex, England</place>
+    </born>
+    <dead>
+      <date>1889-06-08</date>
+      <place>Dublin</place>
+    </dead>
+  </period>
+  <works>andre</works>
+  <identifiers>
+    <wikidata>Q313693</wikidata>
+    <viaf>9847864</viaf>
+    <lex-dk>Gerard_Manley_Hopkins</lex-dk>
+    <gutenberg-org>25314</gutenberg-org>
+  </identifiers>
+</person>

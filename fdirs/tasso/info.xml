@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="tasso" country="it" lang="it" type="poet">
+  <name>
+    <firstname>Torquato</firstname>
+    <lastname>Tasso</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1544-03-11</date>
+      <place>Sorrento</place>
+    </born>
+    <dead>
+      <date>1595-04-25</date>
+      <place>Rom</place>
+    </dead>
+  </period>
+  <works>1581</works>
+  <identifiers>
+    <wikidata>Q168962</wikidata>
+    <viaf>4936996</viaf>
+    <lex-dk>Torquato_Tasso</lex-dk>
+    <litteraturpriser-dk>u2925</litteraturpriser-dk>
+    <runeberg-org>tassotor</runeberg-org>
+    <gutenberg-org>218</gutenberg-org>
+  </identifiers>
+</person>

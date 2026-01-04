@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="parnell" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Thomas</firstname>
+    <lastname>Parnell</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1679-09-11</date>
+      <place>Dublin</place>
+    </born>
+    <dead>
+      <date>1718-10-24</date>
+      <place>Chester</place>
+    </dead>
+  </period>
+  <works>andre</works>
+  <identifiers>
+    <wikidata>Q2517940</wikidata>
+    <viaf>32041540</viaf>
+    <gutenberg-org>4625</gutenberg-org>
+  </identifiers>
+</person>

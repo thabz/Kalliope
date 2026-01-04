@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="hoffmeyers" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Svend</firstname>
+    <lastname>Hoffmeyer</lastname>
+    <fullname>Svend Elin Hoffmeyer</fullname>
+    <!-- Læge -->
+  </name>
+  <period>
+    <born>
+      <date>1886-02-25</date>
+      <place>Grenå</place>
+    </born>
+    <dead>
+      <date>1951-09-28</date>
+    </dead>
+  </period>
+  <works>1946</works>
+  <identifiers>
+    <wikidata>Q125814813</wikidata>
+    <litteraturpriser-dk>HSvendHoffmeyer</litteraturpriser-dk>
+    <runeberg-org>hoffmsve</runeberg-org>
+  </identifiers>
+</person>

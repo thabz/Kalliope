@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="franzen" country="se" lang="sv" type="poet">
+  <name>
+    <firstname>Frans Michael</firstname>
+    <lastname>Franzén</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1772-02-09</date>
+      <place>Uleåborg</place>
+    </born>
+    <dead>
+      <date>1847-08-14</date>
+      <place>Härnösand</place>
+    </dead>
+  </period>
+  <works>andre</works>
+  <identifiers>
+    <wikidata>Q333297</wikidata>
+    <viaf>9891743</viaf>
+    <lex-dk>Franz_Michael_Franzén</lex-dk>
+    <litteraturpriser-dk>u10681</litteraturpriser-dk>
+    <runeberg-org>franzenm</runeberg-org>
+    <gutenberg-org>43818</gutenberg-org>
+  </identifiers>
+</person>

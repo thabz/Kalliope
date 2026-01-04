@@ -15,16 +15,18 @@
 </workhead>
 <workbody>
 
-<prose id="rodeh2018091501">
+<text id="rodeh2018091501" skip-index="true">
 <head>
     <title>Forord</title>
     <source pages="7"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<prose>
 De otte første Digte er hentede fra Samlingen »Hvide Blomster«, der udkom i 1902 og blev skrevne da Forfatteren var 20-21 Aar gammel. For Tilladelsen til at aftrykke dem her, skylder Forfatteren Det Schubotheske Forlag Tak. De fremtræder i delvis bearbejdet Skikkelse, uden at der dog er rørt ved det ungdommelige Følelsesindhold. Et Par Digte (fra den i 1896 udgivne Samling »Digte«), der i Stemning og Tilblivelsestid nærmest hører sammen med »Hvide Blomster«, afslutter første Afdeling. I anden Afdeling findes yderligere et lille Udvalg af »Digte«, skrevne et Par Aar senere.
-</body>
 </prose>
+</body>
+</text>
 
 <section>
 <head>
@@ -32,7 +34,7 @@ De otte første Digte er hentede fra Samlingen »Hvide Blomster«, der udkom i 1
 </head>
 <content>
 
-<poem id="rodeh2018091502" variant="rodeh2017090704">
+<text id="rodeh2018091502" variant="rodeh2017090704">
 <head>
     <title>Skyggekunstnerens Melodi</title>
     <firstline>Nej hvad er det dog for en Sang, jeg nynner?</firstline>
@@ -40,6 +42,7 @@ De otte første Digte er hentede fra Samlingen »Hvide Blomster«, der udkom i 1
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nej hvad er det dog for en Sang, jeg nynner?
 - Hvor skal jeg finde? -
 London - ja rigtig - ja nu begynder
@@ -306,10 +309,11 @@ Eller dem alle. Var de da saa triste?
 Aanej. Aanej. Men de svundne Aar!
 Selv om det ikke er mange.
 Man blir stundom saa bange.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rodeh2018091503" variant="rodeh2017090703">
+<text id="rodeh2018091503" variant="rodeh2017090703">
 <head>
     <title>Lillekonval</title>
     <firstline>Lillekonval med de hvide Kar</firstline>
@@ -317,6 +321,7 @@ Man blir stundom saa bange.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Lillekonval med de hvide Kar,
 Røgelseskar med den ømmeste Duft,
 faste og skære, som om de var
@@ -336,10 +341,11 @@ Er som et gammelt, gyldent Minde
 om svunden og halvglemt Glæde.
 Slynger sig sagtelig om Sinde,
 med Graad. som jeg gerne vil græde.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rodeh2018091504" variant="rodeh2017090715">
+<text id="rodeh2018091504" variant="rodeh2017090715">
 <head>
     <title>Vinden</title>
     <firstline>Mor, Mor! Kan du høre de klagende Støn?</firstline>
@@ -347,6 +353,7 @@ med Graad. som jeg gerne vil græde.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Mor, Mor! Kan du høre de klagende Støn?
 De sukkende Støn.
 Det er kun Vinden, som suser min Søn.
@@ -371,10 +378,11 @@ Vinden, Vinden er Storm og Blæst.
 Er Storm og Blæst.
 Ved ikke mer, hverken Lærd eller Præst.
 Aa Mor, jeg er angst for Vinden.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rodeh2018091505" variant="rodeh2017090716">
+<text id="rodeh2018091505" variant="rodeh2017090716">
 <head>
     <title>Jeg ved ikke hvor</title>
     <firstline>Jeg ved ikke hvor</firstline>
@@ -382,6 +390,7 @@ Aa Mor, jeg er angst for Vinden.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg ved ikke hvor
 Men jeg har set den
 i tunge, pinefulde Drømme,
@@ -421,10 +430,11 @@ de var Livets dyndede Kilde.
 Jeg ved ikke hvor.
 Men jeg har seet det
 i tunge, pinefulde Drømme.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rodeh2018091506" variant="rodeh2017090709">
+<text id="rodeh2018091506" variant="rodeh2017090709">
 <head>
     <title>Dagen spandt ud -</title>
     <firstline>Dagen spandt ud sin lange Traad</firstline>
@@ -432,6 +442,7 @@ i tunge, pinefulde Drømme.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Dagen spandt ud sin lange Traad,
 Aftenen bragte kun Sorg og Graad.
 Natten ved Raad.
@@ -439,10 +450,11 @@ Natten ved Raad.
 Ungdommen er nok lidt bittersød,
 Alderdom kender vel haardere Nød.
 Hvad vil min Død?
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rodeh2018091507" variant="rodeh2017090726">
+<text id="rodeh2018091507" variant="rodeh2017090726">
 <head>
     <title>Drøm</title>
     <firstline>Vi gik og drev langs med Bækken</firstline>
@@ -450,6 +462,7 @@ Hvad vil min Død?
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Vi gik og drev langs med Bækken,
 som muntert leged Tagfat,
 den funkled som Klingeæggen,
@@ -540,10 +553,11 @@ Det var den sødeste Kummer
 med Sol og med frugtbar Jord,
 som Digterfrøene rummer,
 saa Blomster syngende gror.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rodeh2018091508" variant="rodeh2017090728">
+<text id="rodeh2018091508" variant="rodeh2017090728">
 <head>
     <title>Morgen</title>
     <firstline>Jeg aabner mit friske Øje blidt</firstline>
@@ -551,6 +565,7 @@ saa Blomster syngende gror.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg aabner mit friske Øje blidt,
 min Sjæl er ej længer blind
 og i et Nu er Alverdens Lys
@@ -580,10 +595,11 @@ O jublende Tanke! Mit Liv, Mit Liv!
 O Lykke som blev mig forundt!
 Seks Dage Gud Herren med Verden stred.
 Jeg skaber den i et Sekund.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rodeh2018091509" variant="rodeh2017090733">
+<text id="rodeh2018091509" variant="rodeh2017090733">
 <head>
     <title>Den hvide Streg</title>
     <firstline>Jeg staar som en hvid Søjle</firstline>
@@ -591,6 +607,7 @@ Jeg skaber den i et Sekund.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg staar som en hvid Søjle
 ved den gabende Afgrunds Bred,
 og ingen, ingen kan tøjle
@@ -625,10 +642,11 @@ hvad var det jeg skreg
 Aa, store Gud!
 Den hvide Streg -
 vidsk den ikke ud!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rodeh2018091510" variant="rodeh20170909212">
+<text id="rodeh2018091510" variant="rodeh20170909212">
 <head>
     <title>Paa Gaden</title>
     <firstline>I Vest staar Himlen rosenrød</firstline>
@@ -636,6 +654,7 @@ vidsk den ikke ud!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I Vest staar Himlen rosenrød
 bag Buelampers hvide Glød.
 Rimfrostens Slør, en blaalig Sky
@@ -660,10 +679,11 @@ Jeg drømte, at Alverden brast -
 et Suk af salig Gru.
 Nirvanas Lys, Allivets Sjæl,
 den leved dog endnu.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rodeh2018091511" variant="rodeh2017090912">
+<text id="rodeh2018091511" variant="rodeh2017090912">
 <head>
     <title>Folkevise</title>
     <firstline>Saa skær en Jomfru sad i Løn</firstline>
@@ -671,6 +691,7 @@ den leved dog endnu.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Saa skær en Jomfru sad i Løn
 og sukkede og græd.
 Men Herregud, Du er jo skøn,
@@ -725,10 +746,11 @@ Aa græd dog ej: Aa græd dog ej.
 Snart er hver Sorg forbi.
 Men den har ej saa let en Vej,
 der gaar paa Jorden fri.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rodeh2018091512" variant="rodeh2017090924">
+<text id="rodeh2018091512" variant="rodeh2017090924">
 <head>
     <title>Midienat</title>
     <firstline>Nat, Nat, Midienat!</firstline>
@@ -736,6 +758,7 @@ der gaar paa Jorden fri.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nat, Nat, Midienat!
 den mægtige Solgud sover.
 Mørket har rejst sin sorte Mur,
@@ -750,8 +773,9 @@ Nat, Nat, Midienat!
 nu vaagner, nu vaager mit Hjerte.
 Tavsheden toner. I Dybets Mulm
 lyser en blaffende Kerte.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section>
@@ -762,7 +786,7 @@ lyser en blaffende Kerte.
 </head>
 <content>
 
-<poem id="rodeh2018091513" variant="rodeh2017090931">
+<text id="rodeh2018091513" variant="rodeh2017090931">
 <head>
     <title>Det nye Foraar</title>
     <firstline>Det nye Foraar, det kom til mit Sind</firstline>
@@ -770,6 +794,7 @@ lyser en blaffende Kerte.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det nye Foraar, det kom til mit Sind
 og bad halvt i Graad; Jeg vil ind, jeg vil ind,
 jeg trænger mig gennem hver Pore,
@@ -789,10 +814,11 @@ Paa Frydens Bund sitrer Smertens Lyd,
 paa Smertens Bund ligger gemt en Fryd.
 Jeg kommer med Elskov og Tanker.
 O, Foraar! Hvor Hjertet dog banker.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rodeh2018091514">
+<text id="rodeh2018091514">
 <head>
     <title>Det var en Dag</title>
     <subtitle>(af Kongesønner)</subtitle>
@@ -801,6 +827,7 @@ O, Foraar! Hvor Hjertet dog banker.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det var en Dag saa let og lys,
 som vilde Jorden flyve
 til Himlen med et Vellystgys
@@ -814,10 +841,11 @@ De længtes imod Himlens Blaa
 og Solens Guld, de vilde naa,
 paa Blomstervinger svæve.
 Hvem vil mit Hjerte hæve!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rodeh2018091515" variant="rodeh20170909313">
+<text id="rodeh2018091515" variant="rodeh20170909313">
 <head>
     <title>Midsommervise</title>
     <subtitle>(af Kongesønner)</subtitle>
@@ -826,6 +854,7 @@ Hvem vil mit Hjerte hæve!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Højt fra Himlen et Væld af Guld
 over Verden saa vide.
 Hele Jorden har Favnen fuld.
@@ -853,10 +882,11 @@ Hvide Lemmer bag hvide Lin.
 Slanke Bægre for Blodets Vin.
 Sølverbægere hvide.
 Det er Midsommertide!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rodeh2018091516">
+<text id="rodeh2018091516">
 <head>
     <title>Ligfølgets Sang</title>
     <subtitle>(af Kongesønner)</subtitle>
@@ -865,6 +895,7 @@ Det er Midsommertide!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Fryd maa forstumme, Skønhed maa blegne.
 Latteren tie i Glædernes Hus.
 Stærke og Sunde skal sygne og segne.
@@ -885,10 +916,11 @@ slet intet Øje skal se, hvor du dykker,
 ned i det Dybe, hvor intet kan sés.
 Sol, du skal slukkes og drysse som Aske.
 Verden, din Glans er kun Skyggernes Maske.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rodeh2018091517" variant="rodeh20170909219">
+<text id="rodeh2018091517" variant="rodeh20170909219">
 <head>
     <title>Vuggevise</title>
     <subtitle>(af Kongesønner)</subtitle>
@@ -897,6 +929,7 @@ Verden, din Glans er kun Skyggernes Maske.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Luk nu dine Øjelaag,
 sød er alle Trættes Blund.
 Livets store Billedbog
@@ -914,10 +947,11 @@ Du kan sagtens være glad.
 Blade om til næste Blad.
 Læs det rige Farvesprog.
 Det gør god og klog.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rodeh2018091518" variant="rodeh2017090935">
+<text id="rodeh2018091518" variant="rodeh2017090935">
 <head>
     <title>Foraar</title>
     <firstline>Se Sommerens Tid oprinder</firstline>
@@ -925,6 +959,7 @@ Det gør god og klog.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Se Sommerens Tid oprinder,
 hvor Dag tager Nat ved Haand.
 To lyse, unge Kvinder,
@@ -933,10 +968,11 @@ Ja, nu er de kommen til Lande,
 Gud ved hvorfra de kom?
 De kom over store Vande,
 og ser sig forundret om.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rodeh2018091519" variant="rodeh2017090937">
+<text id="rodeh2018091519" variant="rodeh2017090937">
 <head>
     <title>Purpur</title>
     <firstline>Skærsommerens Nat er urolig</firstline>
@@ -944,6 +980,7 @@ og ser sig forundret om.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Skærsommerens Nat er urolig,
 Skærsommerens Nat er varm.
 Lyset drømmer og vaager
@@ -968,10 +1005,11 @@ O, hellige Purpur! Forraad mig
 din Løndoms dybttonende Pragt.
 Forvandlet! - Nu føler, nu ved jeg,
 o, Purpur! - Din grufulde Magt.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rodeh2018091520" variant="rodeh2017090939">
+<text id="rodeh2018091520" variant="rodeh2017090939">
 <head>
     <title>Træet</title>
     <firstline>Roligt stander de store Træer</firstline>
@@ -979,6 +1017,7 @@ o, Purpur! - Din grufulde Magt.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Roligt stander de store Træer,
 løfter de fyldige, grønne Kroner
 tavst mod Morgenens lyse Skær.
@@ -987,10 +1026,11 @@ Ingen Raslen i Løvet lyder.
 Klar er Morgenen fuld og stor.
 Tavst staar Træet og nyder.
 Luften og Lys og Jord.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rodeh2018091521" variant="rodeh20170909315">
+<text id="rodeh2018091521" variant="rodeh20170909315">
 <head>
     <title>December</title>
     <firstline>Over Bjergets hvide Rande</firstline>
@@ -998,6 +1038,7 @@ Luften og Lys og Jord.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Over Bjergets hvide Rande
 stiger Maanens Sølverkugle.
 Men mod Aftenrøden flyver
@@ -1006,10 +1047,11 @@ Og sørgmodigt strækker Træet
 sine magre, frosne Arme
 imod Aftenrødens blege,
 kolde Drøm om Lys og Varme.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rodeh2018091522" variant="rodeh20170909316">
+<text id="rodeh2018091522" variant="rodeh20170909316">
 <head>
     <title>Sne</title>
     <firstline>Der er ingenting i Verden saa stille som Sne</firstline>
@@ -1017,6 +1059,7 @@ kolde Drøm om Lys og Varme.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Der er ingenting i Verden saa stille som Sne,
 naar den sagte gennem Luften daler,
 dæmper dine Skridt,
@@ -1034,10 +1077,11 @@ Tys, du lytter, til det Tavse klinger.
 O, saa fin en Klang,
 Sølverklokkesang
 inderst inde i dit Hjerte ringer.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rodeh2018091523" variant="rodeh2017090938">
+<text id="rodeh2018091523" variant="rodeh2017090938">
 <head>
     <title>Philosofens Vise</title>
     <firstline>Det var en Nat i Maaneskin</firstline>
@@ -1045,6 +1089,7 @@ inderst inde i dit Hjerte ringer.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det var en Nat i Maaneskin,
 da jeg fik Lyst at træde ind
 i Verden fra det Fjerne.
@@ -1079,10 +1124,11 @@ der smukt begravne bleve.
 »Men det forstaar sig selv, at naar
 man store Sten i Ho’det faar
 saa <i>vil</i> man ikke leve.«
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rodeh2018091524" variant="rodeh20170909317">
+<text id="rodeh2018091524" variant="rodeh20170909317">
 <head>
     <title>Sang</title>
     <firstline>O, lad min mørke Jubels Pragt</firstline>
@@ -1090,6 +1136,7 @@ saa <i>vil</i> man ikke leve.«
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 O, lad min mørke Jubels Pragt
 til Himlens Dybder stige,
 Og slutte der med Stjerner Pagt,
@@ -1101,10 +1148,11 @@ i evig Vellyst svulme,
 Alverdens Lys, Alverdens Lyst,
 dens Stjernedyb - dens Vaar, dens Høst
 skal Sorgens Smerte dulme.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rodeh2018091525" variant="rodeh2017090943">
+<text id="rodeh2018091525" variant="rodeh2017090943">
 <head>
     <title>Guitarspilleren</title>
     <firstline>Jeg saa, Du var lidt trist, imens Du sang</firstline>
@@ -1112,6 +1160,7 @@ skal Sorgens Smerte dulme.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg saa, Du var lidt trist, imens Du sang
 til Guitarspil den lille, muntre Vise.
 Der kom i Dine Øjne paa engang
@@ -1135,10 +1184,11 @@ at Menneskenes Kaar skal være haarde
 Vi vandrer fremad over andres Lig,
 og Venskab er kun Vaabenfred i Krig,
 Vi hilser tavs og stille med vor Kaarde.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rodeh2018091526" variant="rodeh2017090949">
+<text id="rodeh2018091526" variant="rodeh2017090949">
 <head>
     <title>Aand</title>
     <firstline>Læg Din ene Haand til mit Hjerte</firstline>
@@ -1146,6 +1196,7 @@ Vi hilser tavs og stille med vor Kaarde.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Læg Din ene Haand til mit Hjerte,
 tag min Haand i Din anden Haand,
 Se! Du føler mit Kød og Blod!
@@ -1156,8 +1207,9 @@ ser Du mig ikke.
 Nu er jeg borte; men efterlod
 dog mit Billed for dine Blikke.
 Ser Du det ikke - mit Kød og Blod?
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section>
@@ -1168,7 +1220,7 @@ Ser Du det ikke - mit Kød og Blod?
 </head>
 <content>
 
-<poem id="rodeh2018091527">
+<text id="rodeh2018091527">
 <head>
     <title>Sigbiørn Obsterfelder</title>
     <firstline>Ingen anden var saa stille</firstline>
@@ -1177,6 +1229,7 @@ Ser Du det ikke - mit Kød og Blod?
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ingen anden var saa stille,
 som en Fjeldesøes dybe Vove,
 hvori Stjernestraaler spille,
@@ -1336,10 +1389,11 @@ Spil Musik, en Sjæl er bristet
 i det evig Underbare.
 Løst er Runen, Livet risted.
 Spil Musik en Dødsfanfare!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rodeh2018091528">
+<text id="rodeh2018091528">
 <head>
     <title>Amalie Skram</title>
     <firstline>Syg af sin egen og Alverdens Kummer!</firstline>
@@ -1347,6 +1401,7 @@ Spil Musik en Dødsfanfare!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Syg af sin egen og Alverdens Kummer!
 Der døde ikke en, - der døde mange,
 saa mange, som det vilde Hjerte rummer
@@ -1397,10 +1452,11 @@ af Had og Løgn, af Fryd og Haab
 og Skrig i bitter Smerte
 stiger og hvælver en Gravfredskuppel
 over det døde Hjerte.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rodeh2018091529">
+<text id="rodeh2018091529">
 <head>
     <title>Ved Ibsens Død</title>
     <firstline>Rejs eder, bøj eders Hoved og ti!</firstline>
@@ -1409,6 +1465,7 @@ over det døde Hjerte.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Rejs eder, bøj eders Hoved og ti!
 Henrik Ibsen gaar tavs forbi,
 ganske ensom og stor og fri.
@@ -1420,10 +1477,11 @@ Dertil er nu din Fred for stor.
 Kraftens Vælde og Kraftens Brudd,
 Smertens Storme, som rased ud
 gjorde din Stilhed, saa stor som Gud.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rodeh2018091530">
+<text id="rodeh2018091530">
 <head>
     <title>Viggo Stuckenberg</title>
     <firstline>Det suser trist</firstline>
@@ -1432,6 +1490,7 @@ gjorde din Stilhed, saa stor som Gud.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det suser trist
 i de mørke Kroner
 og fra den nøgne Kvist
@@ -1468,8 +1527,9 @@ Ak Efteraar, naar Naturen dør.
 Du kendte og elsked dets lønlige Vej.
 Nu har det svøbt sit Taageslør
 om dig.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section>
@@ -1480,7 +1540,7 @@ om dig.
 </head>
 <content>
 
-<poem id="rodeh2018091531">
+<text id="rodeh2018091531">
 <head>
     <title>Sydens Stjerner -</title>
     <firstline>Har du seet Sydens Stjerner -</firstline>
@@ -1488,6 +1548,7 @@ om dig.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Har du seet Sydens Stjerner -
 du skal se dem ikveld,
 som et hvirvlende Snevejr
@@ -1517,10 +1578,11 @@ om al Himmeriges Rigdom
 om det dybe Skønhedsvæld
 om en Storm af Juveler om et Snevejrs Sølverfnug
 om en Blomsterskov, en Liljeregn, som glimrer af Dug.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rodeh2018091532">
+<text id="rodeh2018091532">
 <head>
     <title>Sydens og Nordens Sommer</title>
     <firstline>Søster siger Sydens Sommer</firstline>
@@ -1528,6 +1590,7 @@ om en Blomsterskov, en Liljeregn, som glimrer af Dug.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 »Søster« siger Sydens Sommer
 til den blonde, unge Kvinde,
 som vi elsker, naar hun kommer,
@@ -1598,10 +1661,11 @@ Men hun har et Vemodsminde:
 Juninattens Perler lyser!
 Og hun skælver, og hun gyser.
 Skjuler Øjnene og græder.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rodeh2018091533">
+<text id="rodeh2018091533">
 <head>
     <title>Violen</title>
     <firstline>Dens Blaa har en Rigdom, som det dybe Natteblaaes</firstline>
@@ -1609,6 +1673,7 @@ Skjuler Øjnene og græder.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Dens Blaa har en Rigdom, som det dybe Natteblaaes,
 den drak det ved Kveld og sprang stille frem i Solen,
 Og Sol og Nattehimmel, som ellers aldrig saaes,
@@ -1623,10 +1688,11 @@ Dens Duft bringer Bud fra dens Sjæl, som er Musik.
 Et Pust - kun svagt og angst for, hvad det rummer.
 Som En, der i sin Rigdom kun kan tale med et Blik.
 Mens Læben bare bæver og forstummer.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rodeh2018091534">
+<text id="rodeh2018091534">
 <head>
     <title>Aften ved Middelhavet</title>
     <firstline>Nu ringer alle Klokker i Firenze</firstline>
@@ -1634,6 +1700,7 @@ Mens Læben bare bæver og forstummer.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nu ringer alle Klokker i Firenze
 sin Fred udover Stad og grønne Vinjer.
 Sort staar Cypressen og de brede Pinjer
@@ -1683,10 +1750,11 @@ Hav brydes imod Fjeld og Bølger skyller
 enstonigt - Skvulp i Skvulp ind over Sanden
 og véd det ikke selv og skyller, skvulper
 smaa, blanke, døde Fiske ind paa Stranden.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rodeh2018091535">
+<text id="rodeh2018091535">
 <head>
     <title>Gule Roser paa Fiesole</title>
     <firstline>Et Vildnis fuldt af Roser</firstline>
@@ -1694,6 +1762,7 @@ smaa, blanke, døde Fiske ind paa Stranden.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Et Vildnis fuldt af Roser
 der bruser som et Hav,
 Ah Roser - gule Roser.
@@ -1743,10 +1812,11 @@ For Sommerlykken næres
 kun af sin egen Stamme,
 saa den tilsidst fortæres
 og synker i sin Flamme.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rodeh2018091536">
+<text id="rodeh2018091536">
 <head>
     <title>Det venezianske Glas</title>
     <subtitle>
@@ -1758,6 +1828,7 @@ og synker i sin Flamme.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I Venezia laves et kosteligt Glas
 mere skønt end Smaragd og Topas og Rubin.
 Der skal findes et Glas (i det rige Palads)
@@ -1792,10 +1863,11 @@ og dens Lys af Opal skal forgylde din Sal
 og dens Form skal fortrylle din daglige Sti.
 Ak en Skal af Krystal
 fuld af sød Poesi.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rodeh2018091537">
+<text id="rodeh2018091537">
 <head>
     <title>Holger Drachmann!</title>
     <subtitle>9ende Oktober 1906</subtitle>
@@ -1808,6 +1880,7 @@ fuld af sød Poesi.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Lærken højt imod Sky sig svang
 mødte Solen og stod og sang
 straalende Sange fra Reden,
@@ -1881,8 +1954,9 @@ Lad det da tone det dyre Spil.
 Mændene studser og lytter til.
 Kvinderne kommer i Klynger.
 Det er Danmark, som synger.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section>
@@ -1893,7 +1967,7 @@ Det er Danmark, som synger.
 </head>
 <content>
 
-<poem id="rodeh2018091538">
+<text id="rodeh2018091538">
 <head>
     <title>Springvandet</title>
     <firstline>Jeg har siddet ved et rislende Springvand ikveld</firstline>
@@ -1901,6 +1975,7 @@ Det er Danmark, som synger.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg har siddet ved et rislende Springvand ikveld.
 Jeg har leget med dets levende, glimrende Væld.
 Jeg har badet mine Hænder og min Pande
@@ -1915,10 +1990,11 @@ Jeg har været ved et levende Springvand ikveld.
 Jeg har drukket af dets læskende, liflige Væld.
 Og nu vandrer jeg i tykkeøre Drømme.
 Der var Vin i de rislende Strømme.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rodeh2018091539">
+<text id="rodeh2018091539">
 <head>
     <title>Astas Vuggesang</title>
     <firstline>Asta er du kommen fra Glemselens Land</firstline>
@@ -1926,6 +2002,7 @@ Der var Vin i de rislende Strømme.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Asta er du kommen fra Glemselens Land.
 Husker intet og kan intet sige.
 Asta du skal sige det, saa snart du blot kan:
@@ -1941,10 +2018,11 @@ straks naa frem til Kærlighedens Rige.
 Hvordan - ja hvordan?
 Hvor er vel det Land?
 Moders Bryst til hendes lille Pige.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rodeh2018091540">
+<text id="rodeh2018091540">
 <head>
     <title>Drømmekysset</title>
     <firstline>Jeg vaagned inat af den sødeste Blund</firstline>
@@ -1952,6 +2030,7 @@ Moders Bryst til hendes lille Pige.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg vaagned inat af den sødeste Blund.
 Jeg vaagnede op ved et Kys paa min Mund.
 Og derfor var Søvnen saa sød og sund.
@@ -1979,10 +2058,11 @@ og intet var dybt som dit Kys og mit.
 Som en Aakandes hellige hvide Rund
 der er vokset op fra den skjulte Bund.
 Dets Rødder naaed vort Væsens Grund.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="rodeh2018091541">
+<text id="rodeh2018091541">
 <head>
     <title>Fødselen</title>
     <firstline>Kære - Hør! Du maa vaagne!</firstline>
@@ -1990,6 +2070,7 @@ Dets Rødder naaed vort Væsens Grund.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 »Kære - Hør! Du maa vaagne!
 Du maa vaagne!«
 
@@ -2178,8 +2259,9 @@ Vi lever allesammen hos hinanden!
 Aa hvor han er sød!
 Den lille blodige Kriger!
 Det lille vrælende, majestætiske Barn!
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section>

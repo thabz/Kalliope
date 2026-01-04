@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="frederik1" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Frederik 1.</firstname>
+  </name>
+  <period>
+    <born>
+      <date>1471-10-07</date>
+      <place>Haderslevhus</place>
+    </born>
+    <coronation>
+      <date>1523-04-13</date>
+    </coronation>
+    <dead>
+      <date>1533-04-10</date>
+      <place inon="on">Gottorp Slot</place>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q157789</wikidata>
+    <gravsted-dk>frederik1</gravsted-dk>
+    <viaf>106145970073832250822</viaf>
+    <lex-dk>Frederik_1._-_konge_af_Danmark_og_Norge</lex-dk>
+    <biografisk-leksikon-lex-dk>Frederik_1.</biografisk-leksikon-lex-dk>
+  </identifiers>
+</person>

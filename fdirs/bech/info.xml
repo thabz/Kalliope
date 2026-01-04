@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="bech" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Bodil</firstname>
+    <lastname>Bech</lastname>
+    <fullname>Bodil Adele Vilhelmine Bech</fullname>
+    <pseudonym>Anne Fole</pseudonym>
+  </name>
+  <period>
+    <born>
+      <date>1889-03-13</date>
+      <place>Nørre Broby</place>
+    </born>
+    <dead>
+      <date>1942-09-03</date>
+      <place>Gudhjem</place>
+    </dead>
+  </period>
+  <works>1934,1935,1938,1940,1941</works>
+  <identifiers>
+    <wikidata>Q4937842</wikidata>
+    <gravsted-dk>bodilbech</gravsted-dk>
+    <viaf>281329570</viaf>
+    <lex-dk>Bodil_Bech</lex-dk>
+    <litteraturpriser-dk>BBodilBech</litteraturpriser-dk>
+    <runeberg-org>bechbodi</runeberg-org>
+  </identifiers>
+</person>

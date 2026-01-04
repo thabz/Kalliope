@@ -23,7 +23,7 @@
 </head>
 <content>
 
-<poem id="heibergjl2018092301">
+<text id="heibergjl2018092301">
 <head>
     <title>Danmark</title>
     <firstline>Hvor Bögeskoven svæver</firstline>
@@ -31,6 +31,7 @@
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvor Bögeskoven svæver
 I Favn af salten Sö;
 Hvor som Bouquet sig hæver
@@ -120,10 +121,11 @@ Her Kunsten Eder giver
 En Krands fra Dannevang;
 Hvert Blad i Krandsen bliver
 Et Billed og en Sang.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heibergjl2018092302">
+<text id="heibergjl2018092302">
 <head>
     <title>Christiansborg</title>
     <toctitle><num>1.</num>Christiansborg</toctitle>
@@ -135,6 +137,7 @@ Et Billed og en Sang.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Phönix, du, som nys begravet
     I din Aske laae,
 Og nu frem af Flammehavet
@@ -179,10 +182,11 @@ Medens Tusinder af Kjerter
     Straale Lyset ud,
 Medens Tusinder af Hjerter
     Fölge Glædens Bud.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heibergjl2018092303">
+<text id="heibergjl2018092303">
 <head>
     <title>Fredriksberg</title>
     <toctitle><num>2.</num>Fredriksberg</toctitle>
@@ -194,6 +198,7 @@ Medens Tusinder af Hjerter
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Den er forbi, den Tid, hvorpaa
         Din Himmel,
 O Fredriksberg! med Smilen saae
@@ -238,10 +243,11 @@ Hvor svundne Syner for hans Blik
         Fremstode
 Ved Mindet om Kong Frederik
         Den Gode.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heibergjl2018092304">
+<text id="heibergjl2018092304">
 <head>
     <title>Rundetaarn</title>
     <toctitle><num>3.</num>Rundetaarn</toctitle>
@@ -254,6 +260,7 @@ Ved Mindet om Kong Frederik
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center>I.</center></nonum>
 
 <nonum><center><b>Kong Christian den Fjerde taler.</b></center></nonum>
@@ -327,7 +334,7 @@ Men om han faaer et nyt Uranienborg?
 Det kan han ikke længer bruge, Herre!
 
 <nonum><center><b>Kongen.</b></center></nonum>
-Betragter han da ikke længer Himlen? :
+Betragter han da ikke længer Himlen?
 
 <nonum><center><b>Longomontan.</b></center></nonum>
 Det gjör han vist, men ikke meer fra Jorden.
@@ -388,10 +395,11 @@ At et bittert Savn forvundet,
 Slukket er en gammel Sorg:
 At det er Uranienborg,
 Flyttet ind til os fra Sundet.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heibergjl2018092305">
+<text id="heibergjl2018092305">
 <head>
     <title>Frederiksborg</title>
     <toctitle><num>4.</num>Frederiksborg</toctitle>
@@ -404,6 +412,7 @@ Flyttet ind til os fra Sundet.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center><b>Förste Capitel.</b></center></nonum>
 
 Det er dog grumme smukt, ved Gud!
@@ -957,10 +966,11 @@ Ja, Fredriksborg! af Hjertens Grund
 Din Deilighed jeg skatter,
 Men dog det vare skal en Stund,
 För her jeg kommer atter.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heibergjl2018092306">
+<text id="heibergjl2018092306">
 <head>
     <title>Frue-Kirke</title>
     <toctitle><num>5.</num>Frue-Kirke</toctitle>
@@ -972,6 +982,7 @@ För her jeg kommer atter.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvilken Bygning er her? Er Det en christelig Kirke?
     Naar Portalen man seer, finder man Stilen antik;
 Sidefaçader og Taarn, man veed ei, hvad de bebude,
@@ -996,10 +1007,11 @@ Viid, Antiken sig kjæk med Romancias Ynde formælte,
     Formen er græsk, men dybt præget med christelig Aand.
 Viid, en Genius har - og det gjör en Genius altid -
     Til Ideens Triumf her <i>det Umulige gjort</i>.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heibergjl2018092307">
+<text id="heibergjl2018092307">
 <head>
     <title>Skuespilhuset i Kjöbenhavn</title>
     <toctitle><num>6.</num>Skuespilhuset i Kjöbenhavn</toctitle>
@@ -1012,6 +1024,7 @@ Viid, en Genius har - og det gjör en Genius altid -
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center><b>Publicum</b></center></nonum>
 Her driver jeg paa Torvet om,
 Og föler mig saa tanketom.
@@ -1315,7 +1328,7 @@ Men Den, som vil rense mit Tempel, kommer
 Til at offre sin Tanke, sit Liv derpaa;
 Men saalunde som nu Sagerne staae,
 Maatte Den, der satte sin Capital
-I slig en Handel, være bindegal; ,
+I slig en Handel, være bindegal;
 Thi hvo vil stille sine Værker frem,
 For at Sjouere skal bedömme dem?
 Nei, Poeten, naar han sin Fordeel kjender,
@@ -1368,10 +1381,11 @@ Gid Himlen en Vækker dig sende vilde!
 <i>Jeg</i> kan det ikke, det er for silde.
 Jeg flyer til mine Söstres Chor;
 Farvel, du Slöve! betænk mit Ord!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heiberg2002011315">
+<text id="heiberg2002011315">
 <head>
     <title>Bade-Anstalten</title>
     <toctitle><num>7.</num>Bade-Anstalten</toctitle>
@@ -1387,6 +1401,7 @@ Farvel, du Slöve! betænk mit Ord!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Himlen er mild, nu har vi Mai,
 Bölgen er svagt af Vinden kruset,
 Folk nu vandre til Badehuset
@@ -1485,10 +1500,11 @@ Skyerne svömme
 Höit over Svömmernes Isser, og drömme
 Lettere Dröm, end den higende Lyst,
 Som drömmer i Menneskets Bryst.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heibergjl2018092309">
+<text id="heibergjl2018092309">
 <head>
     <title>Roeskilde-Domkirke</title>
     <toctitle><num>7.</num>Roeskilde-Domkirke</toctitle>
@@ -1501,6 +1517,7 @@ Som drömmer i Menneskets Bryst.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Du, Danmarks ældste Kirke,
 Du, Slettens Fjeld, hvorpaa to ranke Birke!
 Begeistrer verdslig Digter du til Sang?
@@ -1570,10 +1587,11 @@ Den Eneste, hvis Magt er evig stærk,
 Og paa hvis Side kæmper
 Den Gud, som alle slette Vaaben dæmper,
 Og hævder Aandens Værk.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heibergjl2018092310">
+<text id="heibergjl2018092310">
 <head>
     <title>Börsen</title>
     <toctitle><num>9.</num>Börsen</toctitle>
@@ -1586,6 +1604,7 @@ Og hævder Aandens Værk.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 O! hvem der dog var en Handelsmand!
 O! hvem der dog var Grosserer!
 En Anden saa let ei <i>handle</i> kan,
@@ -1697,10 +1716,11 @@ Jublende blanded sit Svar i.
 Og en Piil han greb, og skjöndt han er blind,
 Paa den sorte Tavle ridsed han ind:
 ''Idag var Coursen <i>al pari</i>.''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heiberg2002011801">
+<text id="heiberg2002011801">
 <head>
     <title>Kronborg</title>
     <toctitle><num>10.</num>Kronborg</toctitle>
@@ -1715,6 +1735,7 @@ Paa den sorte Tavle ridsed han ind:
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Kjöbenhavner! reis dig op
 Af din Morgensövn, den tunge,
 Mens de förste Svaler sjunge
@@ -1824,10 +1845,11 @@ Lad hos <i>Briggs</i> dig styrkes vel
 Ved hans Bord, hans Viin den blanke,
 Og vær smigret ved den Tanke:
 Danmark har et godt Hotel.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heibergjl2018092312">
+<text id="heibergjl2018092312">
 <head>
     <title>Kongens Palais</title>
     <toctitle><num>11.</num>Kongens Palais</toctitle>
@@ -1839,6 +1861,7 @@ Danmark har et godt Hotel.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Her du skuer det Centrum, hvorom det Hele sig dreier,
   Her er <i>Kongens Palais</i>, atter <i>Amalias Borg</i>.
 Saae du alle de Bönner, Forhaabninger, Önsker og Klager,
@@ -1851,10 +1874,11 @@ O! men Kongen dem seer, de tidt forjage ham Sövnen,
   Naar for hans Öie de staae, staae for hans prövende Sjæl.
 Men ved Stjernernes Lys i Kongernes sövnlöse Nætter
   Spirer, som Natviol, Folkenes drömmende Tak.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heibergjl2002012102">
+<text id="heibergjl2002012102">
 <head>
     <title>Rosenborg</title>
     <toctitle><num>12.</num>Rosenborg</toctitle>
@@ -1871,6 +1895,7 @@ Men ved Stjernernes Lys i Kongernes sövnlöse Nætter
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center><b>Slottet taler.</b></center></nonum>
 
 Her staaer jeg gamle Kæmpe fra Fjerde Christians Tid,
@@ -1947,10 +1972,11 @@ Her staaer jeg gamle Kæmpe fra Fjerde Christians Tid,
 Og skued gjennem Secler Menneskenes Id.
 Meget, som Ingen aner, var jeg Vidne til,
 Jeg fortælle kan om Meget, om Meget jeg tie vil.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heibergjl2018092314">
+<text id="heibergjl2018092314">
 <head>
     <title>Kjöbenhavns Toldbod</title>
     <toctitle><num>13.</num>Kjöbenhavns Toldbod</toctitle>
@@ -1962,6 +1988,7 @@ Jeg fortælle kan om Meget, om Meget jeg tie vil.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Kald, o Musa, herned, kald Choriamberne,
 Skjöndt nu Digterens Flugt gaaer til vor Toldbod kun.
 Vist ei vredes du vil, at et prosaisk Stof
@@ -1996,10 +2023,11 @@ Vel! saa fölger jeg dig gjerne paa Lystighed,
 Indtil Tummel og Stöv gjöre dig kjed deraf.
 Da först söges det blidt hvilende Sorgenfri,
 Hvor melodisk i Qveld flöiter en Nattergal.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heiberg2002011304">
+<text id="heiberg2002011304">
 <head>
     <title>Charlottenlund</title>
     <toctitle><num>14.</num>Charlottenlund</toctitle>
@@ -2015,6 +2043,7 @@ Hvor melodisk i Qveld flöiter en Nattergal.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center><b>Digteren.</b></center></nonum>
 Saa Dette kaldes i Skoven at gaae?
   Er slig en Promenade,
@@ -2165,7 +2194,7 @@ Vi kom herud i Omnibus,
   Afveien, Folk, for den vordende Rus!
   I maae lære hans Værd at skatte.
 
-Vi danne den Stamme, som evig skal staae,<note>Allusion til Winthers <xref poem="winter1999070501"/>.</note>
+Vi danne den Stamme, som evig skal staae,<note>Allusion til Winthers <xref poem="winther1999070501"/>.</note>
   Besjælet af Guddomsflammen.
   En Stamme kan ei afveien gaae,
   Derfor afveien for Stammen!
@@ -2388,10 +2417,11 @@ O Mennskebörn, som foragte min Skat!
   Eders Amme jeg er, tör jeg mene:
   Jeg fortæller jer Eventyr hver Nat,
   Og I sove derved som Stene.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heibergjl2018092316">
+<text id="heibergjl2018092316">
 <head>
     <title>Sorgenfri</title>
     <toctitle><num>15.</num>Sorgenfri</toctitle>
@@ -2403,6 +2433,7 @@ O Mennskebörn, som foragte min Skat!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ogsaa her et Selskab promenerer,
     Men med mindre Stöi;
 Hist ved Slottet Vagten musicerer
@@ -2493,10 +2524,11 @@ Vækker ofte med de milde Stemmer
 Gjenklangstonen i et ædelt Bryst,
 Naar <i>Amalia</i> hos jer fornemmer
     Kjærlighedens Röst!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heiberg2002011321">
+<text id="heiberg2002011321">
 <head>
     <title>Vallö-Kloster</title>
     <toctitle><num>16.</num>Vallö-Kloster</toctitle>
@@ -2515,6 +2547,7 @@ Naar <i>Amalia</i> hos jer fornemmer
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Vallö-Kloster
 Der vil hun döe,
 Min kjære Moster,
@@ -2631,10 +2664,11 @@ Og i Haven spadsere;
 Men - gaaer det an,
 Maa du logere
 Mig og min Mand.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heibergjl2018092318">
+<text id="heibergjl2018092318">
 <head>
     <title>Möens Klint</title>
     <toctitle><num>17.</num>Möens Klint</toctitle>
@@ -2647,6 +2681,7 @@ Mig og min Mand.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 ``Nu hviler <i>Grön</i> med <i>Fane</i> sin,
 ``Som trættede Hjort og rasken Hind.
 ``Tak, Bonde, nu den gode Gud,
@@ -2731,10 +2766,11 @@ Men Möen stander som Danmarks Pryd,
 Skipperens Lyst, Vandrerens Fryd,
 Saa skinnende hvid som <i>Fane</i> skjön,
 Om Issen krandset af Jetten <i>Grön</i>.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heibergjl2018092319">
+<text id="heibergjl2018092319">
 <head>
     <title>Valdemars Taarn</title>
     <toctitle><num>18.</num>Valdemars Taarn</toctitle>
@@ -2747,6 +2783,7 @@ Om Issen krandset af Jetten <i>Grön</i>.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Paa Himlen et Uveir truer,
 Solen synker i Vest
 Og kaster de sidste Luer
@@ -2831,8 +2868,9 @@ Nu synker i Grunden saa fage
 Borgen til det sidste Spor,
 Kun Taarnet bliver tilbage,
 Som Pant paa Kong Volmers Ord.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section>
@@ -2843,7 +2881,7 @@ Som Pant paa Kong Volmers Ord.
 </head>
 <content>
 
-<poem id="heibergjl2018092320">
+<text id="heibergjl2018092320">
 <head>
     <title>Nicolai-Taarn</title>
     <toctitle><num>19.</num>Nicolai-Taarn</toctitle>
@@ -2855,6 +2893,7 @@ Som Pant paa Kong Volmers Ord.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Som tabte Herligheders Rest,
 Som Affald af en prægtig Fest,
 Som en ærværdig Mindestötte,
@@ -2945,10 +2984,11 @@ Dens Argus ei, men kun hans Öie.
 Saa gid dit Syn sig da fornöie
 Saa vide paa sin Vægtervei,
 Sanct Nicolai!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heibergjl2018092321">
+<text id="heibergjl2018092321">
 <head>
     <title>Thorvaldsens Museum</title>
     <toctitle><num>20.</num>Thorvaldsens Museum</toctitle>
@@ -2960,6 +3000,7 @@ Sanct Nicolai!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Meget i vor Tid er slappet,
 Meget i vort Land er smaat,
 Meget flikket, Meget lappet,
@@ -3039,10 +3080,11 @@ Stjernerne med faste Blikke
 Den bestemte Bane gaae;
 Ændre den, det kan du ikke,
 Nu, saa pröv den at forstaae!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="heibergjl2018092322">
+<text id="heibergjl2018092322">
 <head>
     <title>Et Partie af Bredgaden</title>
     <toctitle><num>21.</num>Et Partie af Bredgaden</toctitle>
@@ -3054,6 +3096,7 @@ Nu, saa pröv den at forstaae!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det mylrer i Norgesgade
 Med pyntede Damer og Mænd;
 ,,Gentilernes Promenade,''
@@ -3161,8 +3204,9 @@ Saa nyd da Synets Rose, min Ven,
 Trods Afstandens Torn, som vogter den;
 Nedsænk i Stranden din Klage,
 Vend resigneret tilbage.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="eckersberg" country="dk" lang="da" type="artist">
+  <name>
+    <firstname>C.W.</firstname>
+    <lastname>Eckersberg</lastname>
+    <fullname>Christoffer Wilhelm Eckersberg</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1783-01-02</date>
+      <place>Blåkrog, Sundeved</place>
+      <!-- og ikke Blåkrog, Als, som man oftest finder. -->
+    </born>
+    <dead>
+      <date>1853-07-22</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q363823</wikidata>
+    <gravsted-dk>eckersberg</gravsted-dk>
+    <viaf>56884667</viaf>
+    <lex-dk>C.W._Eckersberg</lex-dk>
+    <biografisk-leksikon-lex-dk>C.W._Eckersberg</biografisk-leksikon-lex-dk>
+    <litteraturpriser-dk>ECWEckersberg</litteraturpriser-dk>
+    <runeberg-org>eckerchr</runeberg-org>
+  </identifiers>
+</person>

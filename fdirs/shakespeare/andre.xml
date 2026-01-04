@@ -9,7 +9,7 @@
 </workhead>
 <workbody>
 
-<poem id="shakespeare2019010901">
+<text id="shakespeare2019010901">
 <head>
    <title>Funeral Song</title>
    <firstline>Fear no more the heat o' the sun</firstline>
@@ -19,6 +19,7 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Fear no more the heat o' the sun,
 Nor the furious winters rages;
 Thou thy worldly task hast done,
@@ -46,10 +47,11 @@ Ghost unlaid forbear thee!
 Nothing ill come near thee!
 Quiet consummation have;
 And renowned be thy grave.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="shakespeare2019011001">
+<text id="shakespeare2019011001">
 <head>
    <title>Willow Song</title>
    <firstline>The poor soul sat sighing by a sycamore tree</firstline>
@@ -59,6 +61,7 @@ And renowned be thy grave.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 The poor soul sat sighing by a sycamore tree,
 (Sing all a green willow, willow willow willow,)
 With his hand in his bosom and his head upon his knee.
@@ -85,8 +88,9 @@ She was born to be false, and I to die for her love...
 
 Take this for my farewell and latest adieu...
 Write this on my tomb, that in love I was true...    
+</poetry>
 </body>
-</poem>
+</text>
 
 
 </workbody>

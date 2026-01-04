@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="lie" country="no" lang="no" type="poet">
+  <name>
+    <firstname>Jonas</firstname>
+    <lastname>Lie</lastname>
+    <fullname>Jonas Lauritz Idemil Lie</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1833-11-06</date>
+      <place>Hokksund i Eiker, Norge</place>
+    </born>
+    <dead>
+      <date>1908-07-05</date>
+      <place>Stavern, Norge</place>
+    </dead>
+  </period>
+  <works>1867</works>
+  <identifiers>
+    <wikidata>Q469681</wikidata>
+    <gravsted-dk>jonaslie</gravsted-dk>
+    <viaf>59124011</viaf>
+    <lex-dk>Jonas_Lie</lex-dk>
+    <litteraturpriser-dk>u1866</litteraturpriser-dk>
+    <runeberg-org>liejonas</runeberg-org>
+    <gutenberg-org>5095</gutenberg-org>
+  </identifiers>
+</person>

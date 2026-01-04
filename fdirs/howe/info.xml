@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="howe" country="us" lang="en" type="poet">
+  <name>
+    <firstname>Julia Ward</firstname>
+    <lastname>Howe</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1819-05-27</date>
+      <place>New York</place>
+    </born>
+    <dead>
+      <date>1910-10-17</date>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q241299</wikidata>
+    <gravsted-dk>juliawardhowe</gravsted-dk>
+    <viaf>76485657</viaf>
+    <gutenberg-org>35885</gutenberg-org>
+  </identifiers>
+</person>

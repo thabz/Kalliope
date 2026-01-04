@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="rueckert" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Friedrich</firstname>
+    <lastname>Rückert</lastname>
+    <pseudonym>Freimund Raimar</pseudonym>
+  </name>
+  <period>
+    <born>
+      <date>1788-05-16</date>
+      <place>Schweinfurt</place>
+    </born>
+    <dead>
+      <date>1866-01-31</date>
+      <place>Neuses</place>
+    </dead>
+  </period>
+  <works>1814,1822,1836,1836b,1836b-1,1836b-2,1836b-3,1836b-4,1836b-5,1836b-6,1837,1839,1844,1872,andre</works>
+  <identifiers>
+    <wikidata>Q60644</wikidata>
+    <viaf>42819</viaf>
+    <lex-dk>Friedrich_Rückert</lex-dk>
+    <litteraturpriser-dk>u2601</litteraturpriser-dk>
+    <gutenberg-org>35871</gutenberg-org>
+  </identifiers>
+</person>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="buchholtz" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Johannes</firstname>
+    <lastname>Buchholtz</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1882-02-22</date>
+      <place>Odense</place>
+    </born>
+    <dead>
+      <date>1940-08-05</date>
+      <place>Struer</place>
+    </dead>
+  </period>
+  <works>1921</works>
+  <identifiers>
+    <wikidata>Q516258</wikidata>
+    <gravsted-dk>johannesbuchholtz</gravsted-dk>
+    <viaf>42737792</viaf>
+    <lex-dk>Johannes_Buchholtz</lex-dk>
+    <biografisk-leksikon-lex-dk>Johannes_Buchholtz</biografisk-leksikon-lex-dk>
+    <litteraturpriser-dk>BJohannesBuchholtz</litteraturpriser-dk>
+    <runeberg-org>buchhjoh</runeberg-org>
+    <gutenberg-org>44027</gutenberg-org>
+  </identifiers>
+</person>

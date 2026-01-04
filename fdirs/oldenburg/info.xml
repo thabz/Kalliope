@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="oldenburg" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Theodor</firstname>
+    <lastname>Oldenburg</lastname>
+    <fullname>Theodor Wilhelm Oldenburg</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1805-09-27</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1842-05-26</date>
+      <place>Sorterup</place>
+    </dead>
+  </period>
+  <works>1844</works>
+  <identifiers>
+    <wikidata>Q6024628</wikidata>
+    <gravsted-dk>theodoroldenburg</gravsted-dk>
+    <biografisk-leksikon-lex-dk>Theodor_Oldenburg</biografisk-leksikon-lex-dk>
+    <runeberg-org>oldenthe</runeberg-org>
+  </identifiers>
+</person>

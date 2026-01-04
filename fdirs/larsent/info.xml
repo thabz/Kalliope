@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="larsent" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Thøger</firstname>
+    <lastname>Larsen</lastname>
+    <christened>Thøger Larsen Underbjerg</christened>
+  </name>
+  <period>
+    <born>
+      <date>1875-04-05</date>
+      <place>Underbjerg, Tørring Sogn</place>
+    </born>
+    <dead>
+      <date>1928-05-29</date>
+      <place>Lemvig</place>
+    </dead>
+  </period>
+  <works>1895,1904,1905,1907,1912,1914,1920,rubai,1923,1924,1925,1926,1927,andre</works>
+  <identifiers>
+    <wikidata>Q323530</wikidata>
+    <gravsted-dk>thoegerlarsen</gravsted-dk>
+    <viaf>22249307</viaf>
+    <lex-dk>Thøger_Larsen</lex-dk>
+    <biografisk-leksikon-lex-dk>Thøger_Larsen</biografisk-leksikon-lex-dk>
+    <litteraturpriser-dk>LThoegerLarsen</litteraturpriser-dk>
+    <runeberg-org>larsetho</runeberg-org>
+  </identifiers>
+</person>

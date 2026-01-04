@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="gubitz" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Friedrich Wilhelm</firstname>
+    <lastname>Gubitz</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1786-02-27</date>
+      <place>Leipzig</place>
+    </born>
+    <dead>
+      <date>1870-06-05</date>
+      <place>Berlin</place>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q692594</wikidata>
+    <viaf>49491757</viaf>
+    <litteraturpriser-dk>u3459</litteraturpriser-dk>
+  </identifiers>
+</person>

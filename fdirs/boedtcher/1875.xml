@@ -15,13 +15,14 @@
 </workhead>
 <workbody>
 
-<prose id="smit2018100901">
+<text id="smit2018100901" skip-index="true">
 <head>
    <title>Forord</title>
    <source pages="i-iv" facsimile-pages="11-14"/>
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<prose>
 Det er nu et Aar, siden <w>Ludvig Bødtcher</w> endte sit stille, ensomme Liv, og det tilfaldt da mig som en af hans nærmeste Slægtninge at gjennemgaa og ordne hans efterladte Papirer.
     Da jeg havde endt dette Arbejde, fik jeg den Tanke at udgive nærværende Samling, og for dennes Indhold skal jeg her med et Par Ord nærmere gjøre Rede.
     Jeg har kaldt Bogen: «Ludvig Bødtchers sidste Digte» for at antyde, dels at der — i alt Fald saa vidt mig bekjendt — ikke existerer flere Digte af ham, der bør bringes frem for Offentligheden, dels at man i den vil finde de Digte, som han har produceret i sine sidste Aar. Samlingen indeholder nemlig de Digte, som i Tidsrummet, mellem den sidste Digtsamlings Udgivelse (1870) og Digterens Død have været trykte i forskjellige Tidsskrifter, og enkelte hidtil utrykte. — Med Hensyn til disse sidste havde jeg kun en indirecte Udtalelse fra Digteren selv om, hvad der maatte tages med, idet der paa ét af hans Arbejder fandtes følgende Paategning: «<w>Jeg ønsker ikke</w>, at dette Fragment indlemmes i, hvad jeg ellers har skrevet». (Dette Arbejde er en ufuldendt Operatext, »Camachos Bryllup«, af hvilken en enkelt Scene før har været trykt og vil findes i denne Samling under samme Titel.) Jeg var altsaa henvist til mit eget Skjøn, som jeg da har brugt efter bedste Evne, idet jeg dels har henvendt mig til Mænd, der baade have Hjerte for og Forstand paa Digtekonsten, dels holdt mig for Øje, at Digterens eget Princip var «at vælge kræsent blandt sin Børneflok»; og jeg vil haabe, at det nogenlunde er lykkedes mig at have faaet det og kun det med, der burde tages med.
@@ -30,10 +31,11 @@ Det er nu et Aar, siden <w>Ludvig Bødtcher</w> endte sit stille, ensomme Liv, o
 
     <small><i>Kjøbenhavn i October 1875.</i></small>
 <right><b>Thorv. Smit.</b></right>
-</body>
 </prose>
+</body>
+</text>
 
-<poem id="boedtcher2018100902" variant="boedtcher2003010347">
+<text id="boedtcher2018100902" variant="boedtcher2003010347">
 <head>
    <title>Den Gamles Bøn</title>
    <firstline>Send, Ungdom! mig de lyse Minder</firstline>
@@ -41,6 +43,7 @@ Det er nu et Aar, siden <w>Ludvig Bødtcher</w> endte sit stille, ensomme Liv, o
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Send, Ungdom! mig de lyse Minder,
 Lig Bølger fra en sydlig Kyst,
 Og bad mit Bryst,
@@ -55,10 +58,11 @@ Da, gyldne Sol! er Du den Samme!
 Hvert Kys af Dig et Blomsterflor, — 
 Og Vemod boer
 Som før i Nattens blege Flamme!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="boedtcher2018100903" variant="boedtcher2003010337">
+<text id="boedtcher2018100903" variant="boedtcher2003010337">
 <head>
    <title>Til en gammel Ven!</title>
    <toctitle>Til en gammel Ven</toctitle>
@@ -68,6 +72,7 @@ Som før i Nattens blege Flamme!
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nu voxe Aftenskyggerne, du Kjære! -
 Magnetisk hæmmes Skridtet af vor Fod,
 Og Ilden svales i det trætte Blod
@@ -122,10 +127,11 @@ Og ,,Danmark fremfor Alt!'' vi jubled Alle. - -
 Opfører nu sit Fremtidsskuespil;
 Forventningsfuldt vi lytte og see til -
 Gid Haanden klappe maa, naar Tæppet falder!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="boedtcher2018100904" variant="boedtcher2003010334">
+<text id="boedtcher2018100904" variant="boedtcher2003010334">
 <head>
    <title>Englen Israfil</title>
    <subtitle>Mythe</subtitle>
@@ -136,6 +142,7 @@ Gid Haanden klappe maa, naar Tæppet falder!
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Da Herren vendte bort sit Aasyns Straaler
 Fra Lucifer, som stod med trodsig Mine,
 Da sank den onde Engel dybt med Pine,
@@ -181,10 +188,11 @@ Og hører han den blege Moders Jammer,
 Da fristes tidt til Trøst hans tause Mund -
 Men lydig imod Gud han venter stille
 Og bringer taus til Himmerig den Lille.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="boedtcher2018100905" variant="boedtcher2003010308">
+<text id="boedtcher2018100905" variant="boedtcher2003010308">
 <head>
    <title>Ved et 50 aarigt Studenterjubilæum</title>
    <!-- Anderledes toctitle? -->
@@ -196,6 +204,7 @@ Og bringer taus til Himmerig den Lille.
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nu foldes festligt med Jubel ud
 Den sejrrigste blandt Jordens Faner!
 Pallas Athene har sendt sit Bud,
@@ -245,10 +254,11 @@ Det seer tilbage, men ogsaa frem,
     Seer: som en Arv
     Oldtidens Marv
 Du bringer atter Nordens Stamme!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="boedtcher2018100906" variant="boedtcher2003010318">
+<text id="boedtcher2018100906" variant="boedtcher2003010318">
 <head>
    <title>Guldbryllupsbrev</title>
    <subtitle>i April 1869</subtitle>
@@ -259,6 +269,7 @@ Du bringer atter Nordens Stamme!
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Kan vel en Blind om Farver tale?
 Og tør en gammel ugift Svend,
 Hvis hele Liv svandt ensomt hen
@@ -296,10 +307,11 @@ Men Ringen blev den Samme -
 Den funkler nu med sælsom Glands,
 Og smelter til en gylden Krands
 I Kjærlighedens Flamme!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="boedtcher2018100907" variant="boedtcher2003010340">
+<text id="boedtcher2018100907" variant="boedtcher2003010340">
 <head>
    <title>En Tyv i Rom</title>
    <firstline>Endt var Osteriets Gilde</firstline>
@@ -307,6 +319,7 @@ I Kjærlighedens Flamme!
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Endt var Osteriets Gilde, -
 Det var over Midnat silde,
 Og ,,God Nat!'' og ,,gute Nacht''
@@ -468,21 +481,24 @@ Nattens Kogleri var flyttet -
 Vel blev Rotten kun en ,,mus''
 Og dertil ,,ridiculus'',
 Men jeg var dog glad ved Byttet.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="boedtcher2018100908" variant="boedtcher2003010303">
+<text id="boedtcher2018100908" variant="boedtcher2003010303">
 <head>
    <title>,,Sophieshaab''</title>
    <subtitle>(September 1856)</subtitle>
    <toctitle>Sophieshaab (September 1856)</toctitle>
    <indextitle>Sophieshaab</indextitle>
+   <linktitle>Sophieshaab</linktitle>
    <firstline>Til Højre, der hvor Vejen glider</firstline>
    <source pages="20-21"/>
    <keywords>rahbekk</keywords>
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Til Højre, der hvor Vejen glider
 Forbi den grønne Jagtallee,
 En landlig Bolig er at see,
@@ -518,10 +534,11 @@ Hist staar til Minde kun i Lunden,
 En Sten, som Vandreren beseer,
 Og Kamma selv er ikke meer, -
 Men - Kammas Aand er ej forsvunden.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="boedtcher2018100909" variant="boedtcher2001082601">
+<text id="boedtcher2018100909" variant="boedtcher2001082601">
 <head>
    <title>April</title>
    <firstline>Mit Hjerte hilser Dig April!</firstline>
@@ -529,6 +546,7 @@ Men - Kammas Aand er ej forsvunden.
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Mit Hjerte hilser Dig April! -
 Jeg kjender godt dit Vexelsmil
 Og Taaren i dit Øje;
@@ -549,10 +567,11 @@ Hvad her til Live kommer!
 At Alt, hvad her er visnet hen,
 Skal atter sætte Blomst igjen
 I Evighedens Sommer!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="boedtcher2018100910">
+<text id="boedtcher2018100910">
 <head>
    <title>Camachos Bryllup</title>
    <toctitle>Camachos Bryllup (Fragment fra 1823)</toctitle>
@@ -562,6 +581,7 @@ I Evighedens Sommer!
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center><small>(Camacho gaaer op og ned og læser paa en stor Liste. En Flok Kokke, som bærer forskjellige Kjøkkenredskaber.</small></center></nonum>
 
 <nonum><center><w>Chor af Kokkene.</w></center></nonum>
@@ -649,10 +669,11 @@ Lad ham mætte sine Blikke
 Med sin Overflod,
 Lad ham sødt i Tanken drikke
 Druens Rosenblod.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="boedtcher2018100911" variant="boedtcher2003010316">
+<text id="boedtcher2018100911" variant="boedtcher2003010316">
 <head>
    <title>Til min egen Dreng</title>
    <firstline>I din Haand du Lille! blinker</firstline>
@@ -660,6 +681,7 @@ Druens Rosenblod.
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I din Haand du Lille! blinker
 Nøglen til Alverdens Skat:
 Naar din Fantasi kun vinker,
@@ -689,10 +711,11 @@ Lykkelig jeg vil Dig kalde,
 Du, min egen lille Strik!
 Naar du finder blandt dem Alle
 Een, blot <w>Een, som holder Stik!</w>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="boedtcher2018100912" variant="boedtcher2003010320">
+<text id="boedtcher2018100912" variant="boedtcher2003010320">
 <head>
    <title>Skriftestolen</title>
    <subtitle>En Jule-Fortælling</subtitle>
@@ -702,6 +725,7 @@ Een, blot <w>Een, som holder Stik!</w>
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det var just en Julekvæld,
 Snehvid som i gamle Dage,
 Og man hørte Frosten knage,
@@ -1034,10 +1058,11 @@ Ak, men da man rigtigt saae,
 Var den lille Gjæst forsvunden,
 Havde Døren aaben funden
 Og var smuttet - ,,ovenpaa''.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="boedtcher2018100913" variant="boedtcher2003010339">
+<text id="boedtcher2018100913" variant="boedtcher2003010339">
 <head>
    <title>Somme Dage</title>
    <firstline>Naar blandt Nattens Stjernevrimmel</firstline>
@@ -1046,6 +1071,7 @@ Og var smuttet - ,,ovenpaa''.
    <keywords>brahe</keywords>
 </head>
 <body>
+<poetry>
 Naar blandt Nattens Stjernevrimmel
 Tycho spejded fra sin Borg,
 Glemte han al jordisk Sorg,
@@ -1081,10 +1107,11 @@ Lad min Aand da bag det Dunkle,
 Som vil binde for mit Syn,
 Se min klare Stjerne funkle
 Stærkere end Nattens Lyn!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="boedtcher2018100914" variant="boedtcher2003010348">
+<text id="boedtcher2018100914" variant="boedtcher2003010348">
 <head>
    <title>Et Møde</title>
    <firstline>Du Ensomhedens Sødme</firstline>
@@ -1092,6 +1119,7 @@ Stærkere end Nattens Lyn!
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Du Ensomhedens Sødme
 Dybt i den tause Skov,
 Dig søger jeg som Bien
@@ -1176,10 +1204,11 @@ Paany den sang sin Vise,
 Og hvis den Sandhed spaaer,
 Da loved den til Gjengjæld
 Mig endnu mangt et Aar!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="boedtcher2018100915" variant="boedtcher2003010321">
+<text id="boedtcher2018100915" variant="boedtcher2003010321">
 <head>
    <title>Notturno</title>
    <toctitle>Notturno</toctitle>
@@ -1189,6 +1218,7 @@ Mig endnu mangt et Aar!
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Intet Lys mit Øje skimter
 Bag Gardinets Hang -
 I den blanke Rude glimter
@@ -1220,10 +1250,11 @@ Som en fjendtlig Sky. -
 Tak, Du blide,
 Friske, liliehvide!
 Tak, og hvil nu sødt paany!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="boedtcher2018100916" variant="boedtcher2000082203">
+<text id="boedtcher2018100916" variant="boedtcher2000082203">
 <head>
    <title>En Aften i Hjemmet</title>
    <firstline>Det flammer i Kaminen</firstline>
@@ -1234,6 +1265,7 @@ Tak, og hvil nu sødt paany!
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det flammer i Kaminen
 Til Trods for Vintrens Vrede, -
 To slebne Glas staae rede
@@ -1331,10 +1363,11 @@ Hen til sit skjulte Leje,
 Hvor jeg kun kjender Vej -
 Og drømte hele Natten
 Om Roser og - om <w>Dig!</w>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="boedtcher2018100917" variant="boedtcher2003010331">
+<text id="boedtcher2018100917" variant="boedtcher2003010331">
 <head>
    <title>Violerne</title>
    <firstline>Dybt indaander jeg med Lyst</firstline>
@@ -1342,6 +1375,7 @@ Om Roser og - om <w>Dig!</w>
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Dybt indaander jeg med Lyst
 Vaarens duftende Violer,
 Skærmed' kjølt mod Solens Straaler,
@@ -1449,10 +1483,11 @@ Vel forlængst har Tid og Luften
 Smuldret Blomstens fine Løv
 Og forvandlet den til Støv,
 Men endnu mig glæder Duften!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="boedtcher2018100918" variant="boedtcher2003010326">
+<text id="boedtcher2018100918" variant="boedtcher2003010326">
 <head>
    <title>Foraarshilsen</title>
    <firstline>Din varme Puls, du gyldne Maj!</firstline>
@@ -1460,6 +1495,7 @@ Men endnu mig glæder Duften!
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Din varme Puls, du gyldne Maj!
 Til Jordens Bryst har fundet Vej
 Trods Vintrens bittre Vaande;
@@ -1508,10 +1544,11 @@ Aabn kjærligt dine Arme!
 Jeg trænger til din Skov og Vang
 Og Landsbyklokkens Aftensang
 Og dine Læbers Varme!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="boedtcher2018100919" variant="boedtcher2003010329">
+<text id="boedtcher2018100919" variant="boedtcher2003010329">
 <head>
    <title>I en lille Piges Album</title>
    <firstline>Dig selv, mit Barn, jeg kjender ej</firstline>
@@ -1520,6 +1557,7 @@ Og dine Læbers Varme!
    <keywords>stambog</keywords>
 </head>
 <body>
+<poetry>
 Dig selv, mit Barn, jeg kjender ej -
 Jeg kjender kun din unge Alder,
 Men <w>den</w> er som en Blomstervej,
@@ -1564,10 +1602,11 @@ Da nærmer sig en mægtig Aand,
 Og paa hans Vinger faaer Du Sæde,
 Han løsner blidt det sidste Baand
 Imellem Dig og Jordens Glæde!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="boedtcher2018100920" variant="boedtcher2003010317">
+<text id="boedtcher2018100920" variant="boedtcher2003010317">
 <head>
    <title>Vejen spærret</title>
    <firstline>Min Tanke fløj som Falken ud</firstline>
@@ -1575,6 +1614,7 @@ Imellem Dig og Jordens Glæde!
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Min Tanke fløj som Falken ud,
 Og Phantasien gav sin Vinge,
 Den skulde som et Bytte bringe
@@ -1609,10 +1649,11 @@ Hvorfra, Hvorhen, I dunkle Ord,
 Som Hjernen ej at grandske lærte,
 Jeg lægger Eder ved mit Hjerte,
 Hvor Haabet med sin Rigdom boer!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="boedtcher2018100921" variant="boedtcher2002122522">
+<text id="boedtcher2018100921" variant="boedtcher2002122522">
 <head>
    <title>Kom, o kom!</title>
    <firstline>Aftenvinde Svæve, svinde</firstline>
@@ -1620,6 +1661,7 @@ Hvor Haabet med sin Rigdom boer!
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
      Aftenvinde
      Svæve, svinde
 Gjennem Skovens Sommersal:
@@ -1637,10 +1679,11 @@ O! kom, o! kom min Sjæls Veninde!
 Dig venter Nattergalens Slag!
 Dig venter under Skovens Tag
 Mit eget Hjertes varme Slag!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="boedtcher2018100922" variant="boedt1999092501">
+<text id="boedtcher2018100922" variant="boedt1999092501">
 <head>
    <title>Hvordan hun er</title>
    <firstline>Hendes Øje er blaat og saa fuldt af Tugt</firstline>
@@ -1648,6 +1691,7 @@ Mit eget Hjertes varme Slag!
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hendes Øje er blaat og saa fuldt af Tugt
    Og uskyldig Lyst;
 Hendes Hjerte er godt, og det boer saa smukt
@@ -1662,10 +1706,11 @@ O! lyksalig den Ven, hvem i Elskovs Stund
    Hun engang i Løn
 Hvisker kjærlig og blid med blussende Mund
    Svar paa hans Bøn.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="boedtcher2018100923" variant="boedtcher2003010332">
+<text id="boedtcher2018100923" variant="boedtcher2003010332">
 <head>
    <title>Bryllupsdigt</title>
    <!--<subtitle>Den 21. November 1872</subtitle>-->
@@ -1677,6 +1722,7 @@ Hvisker kjærlig og blid med blussende Mund
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Rig var vor Glæde, let paa Skjæbnens Bølge
 Vugged vi trøstigt, selv hvor Skjær sig dølge,
 Holdt vi kun helligt Livets gyldne Smykke,
@@ -1696,10 +1742,11 @@ Maatte de Blikke, som nu straaler ømme,
 Fulde af Haabets lykkeligste Drømme,
 Aldrig formørkes, smile med en Flamme,
         Altid den Samme!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="boedtcher2018100924" variant="boedtcher2003010311">
+<text id="boedtcher2018100924" variant="boedtcher2003010311">
 <head>
    <title>Til en ung Musiker</title>
    <firstline>Til ingen Dødelig den Magt blev givet</firstline>
@@ -1707,6 +1754,7 @@ Aldrig formørkes, smile med en Flamme,
    <source pages="74"/>
 </head>
 <body>
+<poetry>
 Til ingen Dødelig den Magt blev givet
 Som løser hver en Dissonants i Livet; -
 ,,Fremtids Musik'' Du tidt vil faa at høre,
@@ -1717,10 +1765,11 @@ Vær ej forsagt, men heller ej forvoven,
 Og stol paa Dirigenten hist foroven:
 Da vil med Himlens Hjælp selv Dødens Dvale
 Dig blive til en jordisk blid Finale.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="boedtcher2018100925" variant="boedtcherandrea1">
+<text id="boedtcher2018100925" variant="boedtcherandrea1">
 <head>
    <title>Til en Dame</title>
    <subtitle>med et Exemplar af Holberg</subtitle>
@@ -1733,6 +1782,7 @@ Dig blive til en jordisk blid Finale.
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Man siger Holberg ynded ikke Kvinden,
 Blev aldrig smelted ved en Piges Smil:
 At derfor i hans Verker Elskerinden
@@ -1749,10 +1799,11 @@ De muntre Væsner jeg idag Dem sender,
 Idag, da Glæden smykker deres Hjem:
 De fik dem sikkert af hans egne Hænder,
 Ifald han levede og kjendte Dem.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="boedtcher2018100926" variant="boedtcher2003010310">
+<text id="boedtcher2018100926" variant="boedtcher2003010310">
 <head>
    <title>Hannibal Leth</title>
    <subtitle>død i Athen 1865</subtitle>
@@ -1768,6 +1819,7 @@ Ifald han levede og kjendte Dem.
    <keywords>gravskrift</keywords>
 </head>
 <body>
+<poetry>
 Jeg saae Dig ej paa denne dunkle Jord -
 Jeg skimted kun som gjennem Sørgeflor
 Dit Aasyn i din Moders vaade Blikke:
@@ -1781,10 +1833,11 @@ Og Hellas Himmel smiler, hvor Du blunder,
 Men mangt et kjærligt Suk gaaer stille frem:
 Det kommer fra dit fjerne Fædrehjem
 Og kysser Stenen, som Du hviler under!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="boedtcher2018100927" variant="boedtcher2003010335">
+<text id="boedtcher2018100927" variant="boedtcher2003010335">
 <head>
    <title>Efter Sorgen</title>
    <!--<subtitle>(Til Frederikke Leth d. 13de April 1873)</subtitle>-->
@@ -1795,6 +1848,7 @@ Og kysser Stenen, som Du hviler under!
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Blidt kommer efter Sorgens Nat
 Den stille Vemods Morgenrøde
 Og bringer tusind Minders Skat
@@ -1807,10 +1861,11 @@ Og Mindets Blomsterkrands, den rige,
 Som bandtes her med Støvets Baand,
 Forvandles til en Himmelstige,
 Hvor Aand kan sværme ømt med Aand.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="boedtcher2018100928" variant="boedtcher2002122521">
+<text id="boedtcher2018100928" variant="boedtcher2002122521">
 <head>
    <title>Til en ung Moder</title>
    <firstline>Nu knoppes Træet atter hist i Haven</firstline>
@@ -1818,6 +1873,7 @@ Hvor Aand kan sværme ømt med Aand.
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nu knoppes Træet atter hist i Haven
 Og Morg'nen skingrer højt af Fuglekvidder,
 Mens Du saa alvorsfuld bag Ruden sidder
@@ -1832,11 +1888,12 @@ Lad Vaarens Grønt Dig varsle Morgenrøde;
 Snart vil en anden Aarstid bringe Trøsten:
 Saa sandt som Vaaren Moder er til Høsten,
 Saa sandt skal Frugten smile Dig imøde!
+</poetry>
 </body>
-</poem>
+</text>
 
 
-<poem id="boedtcher2018100929" variant="boedtcher2003010346">
+<text id="boedtcher2018100929" variant="boedtcher2003010346">
 <head>
    <title>Det er en yndig Tid</title>
    <firstline>Det er en yndig Tid, naar Vaaren blid sig nærmer</firstline>
@@ -1844,6 +1901,7 @@ Saa sandt skal Frugten smile Dig imøde!
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det er en yndig Tid, naar Vaaren blid sig nærmer,
 Og Blomsten staaer i Pragt,
 Og Gartneren i Haven gaaer, mens ømt hans Haand beskjærmer
@@ -1858,10 +1916,11 @@ Beskjærm da her, o Gud! som for os Alle raader,
 Et ungt, uskyldigt Bryst
 Og giv det Kraft og Fromhed til at løse Livets Gaader
 Til alle Hjerters Lyst!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="boedtcher2018100930" variant="boedtcher2002122524">
+<text id="boedtcher2018100930" variant="boedtcher2002122524">
 <head>
    <title>Til en Confirmandinde</title>
    <subtitle>med en Blomsterbuket</subtitle>
@@ -1871,6 +1930,7 @@ Til alle Hjerters Lyst!
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Du selv, en Blomst fra Jordens Have,
 Med Rod i Evighedens Grund,
 Kan tyde Tanken af min Gave
@@ -1891,10 +1951,11 @@ O! beed da Himlens Gud om Kræfter
 At dyrke <w>Hjertets</w> Blomster ret!
 Da er Du, selv i Livets Aften,
 En yndig duftende Buket.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="boedtcher2018100931" variant="boedtcher2003010336">
+<text id="boedtcher2018100931" variant="boedtcher2003010336">
 <head>
    <title>Ved en Confirmation</title>
    <subtitle>i April 1873</subtitle>
@@ -1904,6 +1965,7 @@ En yndig duftende Buket.
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ak! hvad er vel min svage Sang
 Og Harpen, som Du knap kan høre,
 Mod Kirkens Røst og Orglets Klang,
@@ -1923,10 +1985,11 @@ Træd frejdig kun i Livet ud,
 Og vil sig mørke Skyer nærme,
 Ifør Dig Rustningen fra Gud,
 Og Himlen selv vil Dig beskjærme!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="boedtcher2018100932" variant="boedtcher2002122523">
+<text id="boedtcher2018100932" variant="boedtcher2002122523">
 <head>
    <title>Sølvbryllupssang</title>
    <subtitle>1839</subtitle>
@@ -1939,6 +2002,7 @@ Og Himlen selv vil Dig beskjærme!
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Der er en Tid, da frisk Begejstring kalder,
 Og Hjertet boer i Glædens muntre Hal, -
 Et Gjenskin af hin tabte gyldne Alder,
@@ -1965,10 +2029,11 @@ Du bringer Livets bedste Sølversmykke:
 En kraftfuld Mand, en glad og elsket Viv,
 Og ømme Børn og stille huslig Lykke,
 Og i en skjøn Natur et virksomt Liv!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="boedtcher2018100933" variant="boedtcher2003010309">
+<text id="boedtcher2018100933" variant="boedtcher2003010309">
 <head>
    <title>En Jubelskaal</title>
    <firstline>Naar Skoven grønnes og Droslen slaaer</firstline>
@@ -1976,6 +2041,7 @@ Og i en skjøn Natur et virksomt Liv!
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Naar Skoven grønnes og Droslen slaaer,
 Og Solens Sommerstraale brænder,
 Da mødtes svalt her saa mangt et Aar
@@ -2015,10 +2081,11 @@ Og lad et Hurra fylde Festens Hal!
       Sundhed og Fred
       Følge hans Fjed
 Og fjerne Maalet paa hans Bane.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="boedtcher2018100934" variant="boedtcher2003010302">
+<text id="boedtcher2018100934" variant="boedtcher2003010302">
 <head>
    <title>Et fortroligt Øjeblik</title>
    <firstline>Hvad tænker Du nu paa? Du stirrer tankefuld</firstline>
@@ -2026,6 +2093,7 @@ Og fjerne Maalet paa hans Bane.
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center><w>Min Musa:</w></center></nonum>
 Hvad tænker Du nu paa? Du stirrer tankefuld
 Og fast med Ængstelse hen paa din Harpes Guld.
@@ -2111,10 +2179,11 @@ Vi gjør Dig atter om dit Hjerte fri
 Og hviske til Dig: ,,Glem nu vore Smil:
 Det Hele var kun lidt Coquetterie
 Men - af et himmelsk Slags''.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="boedtcher2018100935" variant="boedtcher2002122526">
+<text id="boedtcher2018100935" variant="boedtcher2002122526">
 <head>
    <title>Med en Pennevisker</title>
    <firstline>Har Pennen gjort sit sidste Træk</firstline>
@@ -2122,14 +2191,16 @@ Men - af et himmelsk Slags''.
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Har Pennen gjort sit sidste Træk,
 Og standses af Papirets Skranker,
 Ta'er jeg med Glæde mod den Rest af Blæk,
 Som dengang ikke blev til Tanker.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="boedtcher2018100936" variant="boedtcher2002122525">
+<text id="boedtcher2018100936" variant="boedtcher2002122525">
 <head>
    <title>Epigram</title>
    <firstline>Hvor vrangt og efter eget blinde Tykke</firstline>
@@ -2137,15 +2208,17 @@ Som dengang ikke blev til Tanker.
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvor vrangt og efter eget blinde Tykke
 Uddeler Skjæbnen Guld og Hæderssmykke!
 Der er nu N! hvad har han gjort?
 Og dog han lever glimrende og stort: -
 ,,Ih nu, for Pokker! Manden har <w>gjort</w> Lykke.''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="boedtcher2018100937" variant="boedtcher2002122528">
+<text id="boedtcher2018100937" variant="boedtcher2002122528">
 <head>
    <title>Strikkebreve</title>
    <toctitle>Strikkebreve, 1 og 2</toctitle>
@@ -2157,6 +2230,7 @@ Og dog han lever glimrende og stort: -
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center>1.</center></nonum>
 
 Hvor sig Skjæbnen hurtig vender!
@@ -2207,10 +2281,11 @@ Men nu kom Ryk hvert Øjeblik -
 Mig Syn og Hørelse forgik;
 Jeg veed ej meer til Punkt og Prik
 Hvordan Du mig i Haanden fik.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="boedtcher2018100938" variant="boedtcher2003010349">
+<text id="boedtcher2018100938" variant="boedtcher2003010349">
 <head>
    <title>Sangfuglen</title>
    <firstline>Jeg hviled under Bøgens Skjul</firstline>
@@ -2218,6 +2293,7 @@ Hvordan Du mig i Haanden fik.
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg hvilte under Bøgens Skjul
 En Sommeraften mild,
 Højt over mig der sad en Fugl,
@@ -2244,8 +2320,9 @@ Min lille Fugl nu tav paa stand,
 Den fandt til Reden Vej,
 Og drømte om et yndigt Land -
 Det Samme drømte jeg.
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

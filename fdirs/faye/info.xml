@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="faye" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Gerhard</firstname>
+    <lastname>Faye</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1760-02-22</date>
+      <place>Lyngdal, Norge</place>
+    </born>
+    <dead>
+      <date>1845-03-10</date>
+      <place>Thisted</place>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q62890386</wikidata>
+    <viaf>1158159248160004870005</viaf>
+    <biografisk-leksikon-lex-dk>Gerhard_Faye</biografisk-leksikon-lex-dk>
+    <litteraturpriser-dk>FGerhardFaye</litteraturpriser-dk>
+    <runeberg-org>fayegerh</runeberg-org>
+  </identifiers>
+</person>

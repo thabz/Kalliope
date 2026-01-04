@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="rydberg" country="se" lang="sv" type="poet">
+  <name>
+    <firstname>Viktor</firstname>
+    <lastname>Rydberg</lastname>
+    <fullname>Abraham Viktor Rydberg</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1828-12-18</date>
+      <place>Jönköping, Sverige</place>
+    </born>
+    <dead>
+      <date>1895-09-21</date>
+      <place>Djursholm, Sverige</place>
+    </dead>
+  </period>
+  <works>andre</works>
+  <identifiers>
+    <wikidata>Q432129</wikidata>
+    <gravsted-dk>viktorrydberg</gravsted-dk>
+    <viaf>51730265</viaf>
+    <lex-dk>Viktor_Rydberg</lex-dk>
+    <litteraturpriser-dk>u2602</litteraturpriser-dk>
+    <runeberg-org>rydberg</runeberg-org>
+    <gutenberg-org>3156</gutenberg-org>
+  </identifiers>
+</person>

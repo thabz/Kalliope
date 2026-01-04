@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="miller" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Johann Martin</firstname>
+    <lastname>Miller</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1750-12-03</date>
+      <place>Ulm</place>
+    </born>
+    <dead>
+      <date>1814-06-21</date>
+      <place>Ulm</place>
+    </dead>
+  </period>
+  <works>andre</works>
+  <identifiers>
+    <wikidata>Q216127</wikidata>
+    <viaf>67261673</viaf>
+    <litteraturpriser-dk>u10686</litteraturpriser-dk>
+  </identifiers>
+</person>

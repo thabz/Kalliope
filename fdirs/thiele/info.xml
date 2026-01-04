@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="thiele" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Just Mathias</firstname>
+    <lastname>Thiele</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1795-12-13</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1874-11-09</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <works>1848</works>
+  <identifiers>
+    <wikidata>Q3366256</wikidata>
+    <gravsted-dk>justmathiasthiele</gravsted-dk>
+    <viaf>35239055</viaf>
+    <lex-dk>J.M._Thiele</lex-dk>
+    <biografisk-leksikon-lex-dk>Just_Mathias_Thiele</biografisk-leksikon-lex-dk>
+    <litteraturpriser-dk>TJustMathiasThiele</litteraturpriser-dk>
+    <runeberg-org>thieljus</runeberg-org>
+  </identifiers>
+</person>

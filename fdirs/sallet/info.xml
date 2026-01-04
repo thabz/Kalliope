@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="sallet" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Friedrich von</firstname>
+    <lastname>Sallet</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1812-04-20</date>
+      <place>Nieße</place>
+    </born>
+    <dead>
+      <date>1843-02-21</date>
+      <place>Reichau, Strehlen</place>
+    </dead>
+  </period>
+  <works>andre</works>
+  <identifiers>
+    <wikidata>Q77453</wikidata>
+    <viaf>64799981</viaf>
+  </identifiers>
+</person>

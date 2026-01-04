@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="aretino" country="it" lang="it" type="poet">
+  <name>
+    <firstname>Pietro</firstname>
+    <lastname>Aretino</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1492-04-20</date>
+      <place>Arezzo</place>
+    </born>
+    <dead>
+      <date>1556-10-21</date>
+      <place>Venedig</place>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q296272</wikidata>
+    <viaf>66609417</viaf>
+    <lex-dk>Pietro_Aretino</lex-dk>
+    <litteraturpriser-dk>u9040</litteraturpriser-dk>
+    <gutenberg-org>42426</gutenberg-org>
+  </identifiers>
+</person>

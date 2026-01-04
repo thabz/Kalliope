@@ -9,7 +9,7 @@
 </workhead>
 <workbody>
 
-<poem id="holty2001122801">
+<text id="holty2001122801">
 <head>
    <title>Erntelied</title>
    <firstline>Sicheln schallen, Ähren fallen</firstline>
@@ -19,6 +19,7 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Sicheln schallen,
 Ähren fallen
 Unter Sichelschall;
@@ -46,19 +47,21 @@ Dann sein Liebelein.
 Nach geleerten Kannen
 Gehen sie vondannen,
 Singen und juchei'n!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="holty2018070701">
+<text id="holty2018070701">
 <head>
    <title>Aufmunterung zur Freude</title>
    <firstline>Wer wollte sich mit Grillen plagen</firstline>
    <notes>
-      <note>1776</note>
+      <note>Skrevet 1776.</note>
    </notes>
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Wer wollte sich mit Grillen plagen,
 Solang uns Lenz und Jugend blühn;
 Wer wollt in seinen Blütentagen
@@ -88,7 +91,226 @@ O wunderschön ist Gottes Erde
 Und wert, darauf vergnügt zu sein!
 Drum will ich, bis ich Asche werde,
 Mich dieser schönen Erde freun!
+</poetry>
 </body>
-</poem>
+</text>
+
+<text id="holty2019020401">
+<head>
+   <title>Elegie auf ein Landmädchen</title>
+   <firstline>Schwermuthsvoll und dumpfig hallt Geläute</firstline>
+   <notes>
+       <note>Skrevet 1774.</note>
+   </notes>
+   <quality>korrektur1</quality>
+</head>
+<body>
+<poetry>
+Schwermuthsvoll und dumpfig hallt Geläute
+Vom bemooßten Kirchenthurm herab;
+Väter weinen, Kinder, Mütter, Bräute;
+Und der Todtengräber gräbt ein Grab.
+
+Angethan mit einem Sterbekleide,
+Eine Blumenkron' im blonden Haar,
+Schlummert Rößchen, so der Mutter Freude,
+So der Stolz des Dorfes war.
+
+Ihre Lieben, voll des Mißgeschickes,
+Denken nicht an Pfänderspiel und Tanz,
+Stehn am Sarge, winden, naßes Blickes,
+Ihrer Freundin einen Todtenkranz.
+
+Ach, kein Mädchen war der Thränen werther,
+Als du gutes, frommes Mädchen bist,
+Und im Himmel ist kein Geist verklärter,
+Als die Seele Rößchens ist.
+
+Wie ein Engel, stand, im Schäferkleide,
+Sie vor ihrer kleinen Hüttenthür.
+Wiesenblumen waren ihr Geschmeide,
+Und ein Veilchen ihres Busens Zier.
+
+Ihre Fächer waren Zephyrs Flügel,
+Und der Morgenhayn ihr Putzgemach,
+Diese Silberquellen ihre Spiegel,
+Ihre Schminke dieser Bach.
+
+Sittsamkeit umfloß, wie Mondenschimmer,
+Ihre Rosenwangen, ihren Blick,
+Nimmer wich der Seraph, Unschuld, nimmer,
+Von der holden Schäferin zurück.
+
+Jünglingsblicke taumelten, voll Feuer,
+Nach dem Reiz des lieben Mädchens hin,
+Aber keiner, als ihr Vielgetreuer,
+Rührte jemahls ihren Sinn.
+
+Keiner als ihr Willhelm! Frühlingsweihe
+Rief die Edeln in den Buchenhayn,
+Angeblinkt von Mayenhimmelbläue,
+Flogen sie den deutschen Ringelreihn.
+
+Rößchen gab ihm Bänder, mancher Farbe,
+Kam die Erndt', an seinen Schnitterhut,
+Saß mit ihm auf einer Weitzengarbe,
+Lächelt' ihm zur Arbeit Muth.
+
+Band den Weitzen, welchen Willhelm mähte,
+Band, und äugelt' ihrem Liebling nach,
+Bis die Kühlung kam, und Abendröthe
+Durch die falben Westgewölke brach.
+
+Über alles war ihm Rößchen theuer,
+War sein Taggedanke, war sein Traum.
+Wie sich Rößchen liebten und ihr Treuer,
+Lieben sich die Engel kaum.
+
+Willhelm, Willhelm! Sterbeglocken hallen,
+Und die Grabgesänge heben an,
+Schwarzbeflorte Trauerleute wallen,
+Und die Todtenkrone weht voran.
+
+Willhelm wankt, mit seinem Liederbuche,
+Naßen Auges, an das ofne Grab,
+Trocknet, mit dem weißen Leichentuche,
+Sich die hellen Thränen ab.
+
+Schlummre sanft, du gute, fromme Seele,
+Bis auf ewig dieser Schlummer flieht.
+Wein' auf ihrem Hügel, Philomele,
+Um die Dämmerung, ein Sterbelied.
+
+Weht, wie Harfenlispel, Abendwinde,
+Durch die Blumen, die ihr Grab gebar,
+Und im Wipfel dieser Kirchhoflinde
+Nist' ein Turteltaubenpaar.
+</poetry>
+</body>
+</text>
+
+<text id="holty2019060401">
+<head>
+   <title>Maylied</title>
+   <firstline>Tanzt dem schönen May entgegen</firstline>
+   <notes>
+       <note>Kilde er Ludwig Christoph Heinrich Hölty: <i>Sämtliche Werke</i>, Weimar 1914, bd. 1, pp. 225-227.<!-- http://www.zeno.org/nid/20005107830 --></note>
+   </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Tanzt dem schönen May entgegen,
+Der des Waldes Haar verneut,
+Roth und weiße Farbenbögen
+Auf des Fruchtbaums Wipfel streut,
+Mit dem goldverbrämten Schleier,
+Wartende Gefilde deckt!
+Singt ihm Hymnen in die Leyer,
+Der den Schlaf der Freude weckt!
+
+Tanzt daher, am Arm der Schöne,
+Der ein treuer Busen fröhnt,
+Menget Lieder ins Getöne,
+Das die Morgenglocke tönt,
+Ins Geschwirr der Espenblätter,
+Und erweckt den Wiederklang!
+Er, der Freund der Liebesgötter,
+Heischet Opfer und Gesang.
+
+Bringet ihm in grünen Schatten,
+Eure Frühlingsopfer dar,
+Junge neuvermählte Gatten,
+Auf der Liebe Festaltar:
+Küße, wenn des Hahns Drommete
+Das umbüschte Dörfchen weckt,
+Küße, wenn die Abendröthe
+Jeden Baum mit Purpur deckt.
+
+Flieht, ihr schönen Städterinnen,
+Eurer Städte goldne Kluft,
+Eurer Kerker hohe Zinnen,
+Trinket frische Mayenluft!
+Irrt, mit eurem Sonnenhütgen,
+Auf die Frühlingsflur hinaus!
+Singt ein frölich Mayenliedgen,
+Pflücket einen Busenstraus!
+
+Schmückt mit Kirschenblüthenzweigen
+Euren grünen Sonnenhut,
+Schürzt das Röckchen, tanzet Reigen,
+Wie die Schäferjugend thut!
+Gaukelt in der Kirschenblüthe,
+Zephyrn, eure Flügel matt,
+Haucht auf ihre Sonnenhüte
+Manches weiße Blüthenblatt.
+</poetry>
+</body>
+</text>
+
+<text id="holty2019121101">
+<head>
+    <title>Die Seligkeit der Liebenden</title>
+    <firstline>Beglückt, beglückt, wer die Geliebte findet</firstline>
+    <notes>
+        <note>Kilde er Ludwig Christoph Heinrich Hölty: <i>Sämtliche Werke</i>, Weimar 1914, bd. 1, pp. 210-212.<!-- http://www.zeno.org/nid/20005107741 --></note>
+    </notes>
+   <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Beglückt, beglückt, wer die Geliebte findet,
+Die seinen Jugendtraum begrüßt;
+Wenn Arm um Arm, und Geist um Geist sich windet,
+Und Seel' in Seele sich ergießt!
+
+Die Liebe macht zum Goldpalast die Hütte,
+Streut auf die Wildniß Tanz und Spiel;
+Enthüllet uns der Gottheit leise Tritte,
+Giebt uns des Himmels Vorgefühl!
+
+Sie macht das Herz der Schwermuth frühlingsheiter;
+Sie bettet uns auf Rosenaun,
+Und hebet uns auf eine Himmelsleiter,
+Wo wir den Glanz der Gottheit schaun!
+
+Die Liebenden sind schon zu beßern Zonen
+Auf Flügeln ihrer Lieb' erhöht;
+Empfahen schon des Himmels goldne Kronen,
+Eh ihr Gewand von Staub verweht.
+
+Sie kümmern sich um keine Erdengüter,
+Sind sich die ganze weite Welt,
+Und spotten dein, du stolzer Weltgebieter,
+Vor dem der Erdkreis niederfällt!
+
+Sanfthingeschmiegt auf seidne Frühlingsrasen,
+Auf Blumen eines Quellenrands,
+Verlachen sie die bunten Seifenblasen
+Des lieben leeren Erdentands.
+
+Ein Druck der Hand, der durch das Leben schüttert,
+Und eines Blickes Trunkenheit,
+Ein Feuerkuß, der von der Lippe zittert,
+Giebt ihnen Engelseligkeit.
+
+Ein Blick der Lieb', aus dem die Seele blicket,
+In dem ein Engel sich verklärt,
+Ein süßer Wink, den die Geliebte nicket,
+Ist tausend dieser Erden werth.
+
+Ein Herzenskuß, den selber Engel neiden,
+Küßt ihren Morgenschlummer wach;
+Ein Reihentanz von ewigjungen Freuden
+Umschlingt den lieben langen Tag!
+
+Ein süßer Schlaf sinkt auf ihr keusches Bette,
+Wie auf die Lauben Edens sank!
+Kein Endlicher mißt ihrer Freuden Kette,
+Wer nicht den Kelch der Liebe trank!
+</poetry>
+</body>
+</text>
+
 </workbody>
 </kalliopework>

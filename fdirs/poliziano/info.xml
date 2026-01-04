@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="poliziano" country="it" lang="it" type="poet">
+  <name>
+    <firstname>Angelo</firstname>
+    <lastname>Poliziano</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1454-07-14</date>
+      <place>Montepulciano</place>
+    </born>
+    <dead>
+      <date>1494-09-24</date>
+      <place>Firenze</place>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q250414</wikidata>
+    <viaf>9867884</viaf>
+    <lex-dk>Angelo_Ambrogini_Poliziano</lex-dk>
+    <runeberg-org>polizang</runeberg-org>
+  </identifiers>
+</person>

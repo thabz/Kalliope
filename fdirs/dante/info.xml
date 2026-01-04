@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="dante" country="it" lang="it" type="poet">
+  <name>
+    <firstname>Dante</firstname>
+    <lastname>Alighieri</lastname>
+    <realname>Durante Alighieri</realname>
+  </name>
+  <period>
+    <born>
+      <date>1265</date>
+      <place>Firenze</place>
+    </born>
+    <dead>
+      <date>1321-09-13</date>
+      <place>Ravenna</place>
+    </dead>
+  </period>
+  <works>commedia</works>
+  <identifiers>
+    <wikidata>Q1067</wikidata>
+    <gravsted-dk>dantealighieri</gravsted-dk>
+    <viaf>97105654</viaf>
+    <lex-dk>Dante_Alighieri</lex-dk>
+    <litteraturpriser-dk>u679</litteraturpriser-dk>
+    <runeberg-org>danteali</runeberg-org>
+    <gutenberg-org>507</gutenberg-org>
+  </identifiers>
+</person>

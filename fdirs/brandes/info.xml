@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="brandes" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Georg</firstname>
+    <lastname>Brandes</lastname>
+    <fullname>Georg Morris Cohen Brandes</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1842-02-04</date>
+      <place>Kbh.</place>
+    </born>
+    <dead>
+      <date>1927-02-19</date>
+      <place>Kbh.</place>
+    </dead>
+  </period>
+  <works>1902</works>
+  <identifiers>
+    <wikidata>Q316045</wikidata>
+    <gravsted-dk>georgbrandes</gravsted-dk>
+    <viaf>4938982</viaf>
+    <lex-dk>Georg_Brandes</lex-dk>
+    <biografisk-leksikon-lex-dk>Georg_Brandes</biografisk-leksikon-lex-dk>
+    <litteraturpriser-dk>BGeorgBrandes</litteraturpriser-dk>
+    <runeberg-org>brandesg</runeberg-org>
+    <gutenberg-org>2674</gutenberg-org>
+  </identifiers>
+</person>

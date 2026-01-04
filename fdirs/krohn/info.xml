@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="krohn" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Johan</firstname>
+    <lastname>Krohn</lastname>
+    <fullname>Johan Jacob Krohn</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1841-08-09</date>
+    </born>
+    <dead>
+      <date>1925-01-06</date>
+    </dead>
+  </period>
+  <works>1866,1870</works>
+  <identifiers>
+    <wikidata>Q3433198</wikidata>
+    <gravsted-dk>johankrohn</gravsted-dk>
+    <viaf>7467851</viaf>
+    <lex-dk>Johan_Krohn</lex-dk>
+    <biografisk-leksikon-lex-dk>J._Krohn</biografisk-leksikon-lex-dk>
+    <litteraturpriser-dk>KJohanKrohn</litteraturpriser-dk>
+  </identifiers>
+</person>

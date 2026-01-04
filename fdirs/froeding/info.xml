@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="froeding" country="se" lang="sv" type="poet">
+  <name>
+    <firstname>Gustaf</firstname>
+    <lastname>Fröding</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1860-08-22</date>
+      <place>Godset Alster i Värmland</place>
+    </born>
+    <dead>
+      <date>1911-02-08</date>
+      <place>Stockholm</place>
+    </dead>
+  </period>
+  <works>1896,andre</works>
+  <identifiers>
+    <wikidata>Q366801</wikidata>
+    <gravsted-dk>gustaffroding</gravsted-dk>
+    <viaf>56623279</viaf>
+    <lex-dk>Gustaf_Fröding</lex-dk>
+    <litteraturpriser-dk>u7675</litteraturpriser-dk>
+    <runeberg-org>froding</runeberg-org>
+    <gutenberg-org>28374</gutenberg-org>
+  </identifiers>
+</person>

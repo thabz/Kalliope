@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="morris" country="us" lang="en" type="poet">
+  <name>
+    <firstname>George Pope</firstname>
+    <lastname>Morris</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1802-10-10</date>
+      <place>Philadelphia</place>
+    </born>
+    <dead>
+      <date>1864-07-06</date>
+      <place>New York City</place>
+    </dead>
+  </period>
+  <works>andre</works>
+  <identifiers>
+    <wikidata>Q5543490</wikidata>
+    <viaf>60433498</viaf>
+    <gutenberg-org>964</gutenberg-org>
+  </identifiers>
+</person>

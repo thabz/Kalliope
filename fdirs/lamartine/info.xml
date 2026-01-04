@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="lamartine" country="fr" lang="fr" type="poet">
+  <name>
+    <firstname>Alphonse de</firstname>
+    <lastname>Lamartine</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1790-10-21</date>
+      <place>Mâcon, Frankrig</place>
+    </born>
+    <dead>
+      <date>1869-02-28</date>
+      <place>Paris</place>
+    </dead>
+  </period>
+  <works>1820,1830</works>
+  <identifiers>
+    <wikidata>Q188697</wikidata>
+    <viaf>95150108</viaf>
+    <lex-dk>Alphonse_de_Lamartine</lex-dk>
+    <litteraturpriser-dk>u1774</litteraturpriser-dk>
+    <runeberg-org>lamaralp</runeberg-org>
+    <gutenberg-org>4781</gutenberg-org>
+  </identifiers>
+</person>

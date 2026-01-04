@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="watson" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Thomas</firstname>
+    <lastname>Watson</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1555</date>
+    </born>
+    <dead>
+      <date>1592</date>
+    </dead>
+  </period>
+  <works>1593</works>
+  <identifiers>
+    <wikidata>Q345716</wikidata>
+    <viaf>61592926</viaf>
+  </identifiers>
+</person>

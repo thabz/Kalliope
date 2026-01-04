@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="bahnson" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Carl</firstname>
+    <lastname>Bahnson</lastname>
+    <fullname>Carl Tholstrup Bahnson</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1845-09-26</date>
+      <place>Viborg</place>
+    </born>
+    <dead>
+      <date>1917-07-15</date>
+      <place inon="on">Frederiksberg</place>
+    </dead>
+  </period>
+  <works>1918</works>
+  <identifiers>
+    <wikidata>Q125808537</wikidata>
+    <gravsted-dk>carlbahnson</gravsted-dk>
+    <viaf>6607161030932423920007</viaf>
+    <litteraturpriser-dk>BCarlBahnson</litteraturpriser-dk>
+    <runeberg-org>bahnscar</runeberg-org>
+  </identifiers>
+</person>

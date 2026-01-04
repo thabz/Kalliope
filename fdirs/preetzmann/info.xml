@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="preetzmann" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Christian</firstname>
+    <lastname>Preetzmann</lastname>
+    <pseudonym>Caralis</pseudonym>
+    <fullname>Christian P. Preetzmann</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1822-06-08</date>
+      <place>Lee</place>
+    </born>
+    <dead>
+      <date>1893-08-22</date>
+    </dead>
+  </period>
+  <works>1850,1867,1867d</works>
+  <identifiers>
+    <wikidata>Q110208365</wikidata>
+  </identifiers>
+</person>

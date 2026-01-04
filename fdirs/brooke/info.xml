@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="brooke" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Rupert</firstname>
+    <lastname>Brooke</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1887-08-03</date>
+      <place>Rugby, Warwickshire, England</place>
+    </born>
+    <dead>
+      <date>1915-04-23</date>
+      <place inon="on">Skyros, Grækenland</place>
+    </dead>
+  </period>
+  <works>1911,1915n,1915,1918</works>
+  <identifiers>
+    <wikidata>Q366086</wikidata>
+    <viaf>51704765</viaf>
+    <lex-dk>Rupert_Chawner_Brooke</lex-dk>
+    <gutenberg-org>148</gutenberg-org>
+  </identifiers>
+</person>

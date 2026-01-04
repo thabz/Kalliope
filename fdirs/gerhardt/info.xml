@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="gerhardt" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Paul</firstname>
+    <lastname>Gerhardt</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1607-03-12</date>
+      <place>Gräfenhainichen, Sachsen</place>
+    </born>
+    <dead>
+      <date>1676-05-27</date>
+      <place>Lübben, Spree</place>
+    </dead>
+  </period>
+  <works>andre</works>
+  <identifiers>
+    <wikidata>Q76331</wikidata>
+    <viaf>212149106310568492609</viaf>
+    <lex-dk>Paul_Gerhardt</lex-dk>
+    <runeberg-org>gerhapau</runeberg-org>
+    <gutenberg-org>34557</gutenberg-org>
+  </identifiers>
+</person>

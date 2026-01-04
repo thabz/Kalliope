@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="faber" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Peter</firstname>
+    <lastname>Faber</lastname>
+    <fullname>Peder Christian Frederik Faber</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1810-10-07</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1877-04-25</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <works>1877,andre</works>
+  <identifiers>
+    <wikidata>Q3486599</wikidata>
+    <gravsted-dk>peterfaber</gravsted-dk>
+    <viaf>8707878</viaf>
+    <lex-dk>Peter_Faber</lex-dk>
+    <biografisk-leksikon-lex-dk>Peter_Faber</biografisk-leksikon-lex-dk>
+    <litteraturpriser-dk>FPeterFaber</litteraturpriser-dk>
+    <runeberg-org>faberpet</runeberg-org>
+  </identifiers>
+</person>

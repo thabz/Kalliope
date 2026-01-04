@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="fonss" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Otto</firstname>
+    <lastname>Fønss</lastname>
+    <fullname>Otto Carl Christian Fønss</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1854-09-28</date>
+      <place>Middelfart</place>
+    </born>
+    <dead>
+      <date>1922-12-22</date>
+      <place>Odense</place>
+    </dead>
+  </period>
+  <works>1885,1889,1892,1894,1896,1898,1900,1904,1910,1913,1918,1919</works>
+  <identifiers>
+    <wikidata>Q16064884</wikidata>
+    <gravsted-dk>ottocfoenss</gravsted-dk>
+    <viaf>232720489</viaf>
+    <litteraturpriser-dk>FOttoFoenss</litteraturpriser-dk>
+    <runeberg-org>fonssott</runeberg-org>
+  </identifiers>
+</person>

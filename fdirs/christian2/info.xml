@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="christian2" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Christian 2.</firstname>
+  </name>
+  <period>
+    <born>
+      <date>1481-07-01</date>
+      <place inon="on">Nyborg Slot</place>
+    </born>
+    <coronation>
+      <date>1513-02-20</date>
+    </coronation>
+    <!-- Afsat og forvist 1523-04-13. Fængslet på Kalundborg Slot. -->
+    <dead>
+      <date>1559-01-25</date>
+      <place inon="on">Kalundborg Slot</place>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q154460</wikidata>
+    <gravsted-dk>christian2</gravsted-dk>
+    <viaf>42642695</viaf>
+    <lex-dk>Christian_2.</lex-dk>
+    <biografisk-leksikon-lex-dk>Christian_2.</biografisk-leksikon-lex-dk>
+    <litteraturpriser-dk>CChristianII</litteraturpriser-dk>
+    <runeberg-org>kristiap</runeberg-org>
+  </identifiers>
+</person>

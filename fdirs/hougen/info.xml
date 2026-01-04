@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="hougen" country="no" lang="no" type="poet">
+  <name>
+    <firstname>Engebret</firstname>
+    <lastname>Hougen</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1826</date>
+    </born>
+    <dead>
+      <date>1891</date>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q11967477</wikidata>
+    <viaf>309665108</viaf>
+    <runeberg-org>hougeeng</runeberg-org>
+  </identifiers>
+</person>

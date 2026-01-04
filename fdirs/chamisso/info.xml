@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="chamisso" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Adelbert von</firstname>
+    <lastname>Chamisso</lastname>
+    <realname>Louis Charles Adélaïde de Chamisso de Boncourt</realname>
+  </name>
+  <period>
+    <born>
+      <date>1781-01-30</date>
+      <place inon="on">slottet Boncourt, Champagne</place>
+    </born>
+    <dead>
+      <date>1838-08-21</date>
+      <place>Berlin</place>
+    </dead>
+  </period>
+  <works>andre</works>
+  <identifiers>
+    <wikidata>Q154782</wikidata>
+    <gravsted-dk>adelbertvonchamisso</gravsted-dk>
+    <viaf>4927907</viaf>
+    <litteraturpriser-dk>u519</litteraturpriser-dk>
+    <runeberg-org>chamiade</runeberg-org>
+    <gutenberg-org>1779</gutenberg-org>
+  </identifiers>
+</person>

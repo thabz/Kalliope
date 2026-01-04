@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="whitman" country="us" lang="en" type="poet">
+  <name>
+    <firstname>Walt</firstname>
+    <lastname>Whitman</lastname>
+    <fullname>Walter Whitman</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1819-05-31</date>
+      <place>West Hills, Long Island, New York, USA</place>
+    </born>
+    <dead>
+      <date>1892-03-26</date>
+      <place>Camden, New Jersey, USA</place>
+    </dead>
+  </period>
+  <works>1865,1871,1891</works>
+  <identifiers>
+    <wikidata>Q81438</wikidata>
+    <viaf>2478331</viaf>
+    <lex-dk>Walt_Whitman</lex-dk>
+    <litteraturpriser-dk>u3398</litteraturpriser-dk>
+    <runeberg-org>whitmwal</runeberg-org>
+    <gutenberg-org>600</gutenberg-org>
+  </identifiers>
+</person>

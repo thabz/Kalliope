@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="emmett" country="us" lang="en" type="poet">
+  <name>
+    <firstname>Daniel Decatur</firstname>
+    <lastname>Emmett</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1815-10-29</date>
+      <place>Mt. Vernon, Ohio</place>
+    </born>
+    <dead>
+      <date>1904-06-28</date>
+    </dead>
+  </period>
+  <works>andre</works>
+  <identifiers>
+    <wikidata>Q3602423</wikidata>
+    <viaf>8322392</viaf>
+  </identifiers>
+</person>

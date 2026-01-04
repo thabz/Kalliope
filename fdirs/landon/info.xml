@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="landon" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Letitia Elizabeth</firstname>
+    <lastname>Landon</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1802-08-14</date>
+      <place>Chelsea, London</place>
+    </born>
+    <dead>
+      <date>1838-10-15</date>
+      <place>Carolusborg, Sydafrika</place>
+    </dead>
+  </period>
+  <works>1824</works>
+  <identifiers>
+    <wikidata>Q1760518</wikidata>
+    <viaf>257537315</viaf>
+    <litteraturpriser-dk>u3364</litteraturpriser-dk>
+  </identifiers>
+</person>

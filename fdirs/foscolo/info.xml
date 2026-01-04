@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="foscolo" country="it" lang="it" type="poet">
+  <name>
+    <firstname>Ugo</firstname>
+    <lastname>Foscolo</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1778-02-06</date>
+      <place inon="on">øen Zakynthos, Grækenland</place>
+    </born>
+    <dead>
+      <date>1827-09-10</date>
+      <place>Turnham Green, London</place>
+    </dead>
+  </period>
+  <works>andre</works>
+  <identifiers>
+    <wikidata>Q166234</wikidata>
+    <gravsted-dk>ugofoscolo</gravsted-dk>
+    <viaf>36929008</viaf>
+    <lex-dk>Ugo_Foscolo</lex-dk>
+    <litteraturpriser-dk>u954</litteraturpriser-dk>
+    <gutenberg-org>44491</gutenberg-org>
+  </identifiers>
+</person>

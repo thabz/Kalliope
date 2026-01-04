@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="carducci" country="it" lang="it" type="poet">
+  <name>
+    <firstname>Giosuè</firstname>
+    <lastname>Carducci</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1835-07-27</date>
+      <place>Valdicastello di Pietrasanta</place>
+    </born>
+    <dead>
+      <date>1907-02-16</date>
+      <place>Bologna</place>
+    </dead>
+  </period>
+  <works>andre</works>
+  <identifiers>
+    <wikidata>Q43440</wikidata>
+    <viaf>34470601</viaf>
+    <lex-dk>Giosuè_Carducci</lex-dk>
+    <runeberg-org>cardugio</runeberg-org>
+    <gutenberg-org>43982</gutenberg-org>
+  </identifiers>
+</person>

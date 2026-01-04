@@ -7,13 +7,14 @@
 </workhead>
 <workbody>
 
-<poem id="tiedge2019021301">
+<text id="tiedge2019021301">
 <head>
     <title>Die Blume der Lauenburg</title>
     <firstline>Seht ihr die alte Lauenburg</firstline>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Seht ihr die alte Lauenburg
 Hoch auf dem Harze schimmern?
 Durch Wildniß geht der Weg hindurch
@@ -146,10 +147,11 @@ Trotzt öde nur noch eine Wand
 Der Zeit und ihren Stürmen.
 Da blühet das Blümchen um Mitternacht
 Im schimmer der blendenden Liljenpracht.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="tiedge2019021501">
+<text id="tiedge2019021501">
 <head>
     <title>Ida</title>
     <subtitle>Der Verdruß</subtitle>
@@ -160,6 +162,7 @@ Im schimmer der blendenden Liljenpracht.
     <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
     Der letzte Sonnenstrahl
 Hing röthlich noch am Haine,
 Da trieb ich dort am Raine
@@ -219,8 +222,9 @@ Des Sängers hin, ich muß!
 Mit einem Seufzer nieder.
 Was kann man denn dawider,
 Wenn man nun einmal muß?
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

@@ -1,24 +1,19 @@
-// @flow
-
 import 'isomorphic-fetch';
-import React from 'react';
-import Head from '../components/head';
-import Main from '../components/main.js';
-import * as Links from '../components/links';
-import Nav, { kalliopeCrumbs } from '../components/nav';
+import React, { useContext } from 'react';
+import { createURL } from '../common/client.js';
+import LangContext from '../common/LangContext.js';
+import * as Sorting from '../common/sorting.js';
+import _ from '../common/translations.js';
+import { kalliopeCrumbs } from '../components/breadcrumbs.js';
 import LangSelect from '../components/langselect.js';
-import { KalliopeTabs } from '../components/tabs.js';
-import Heading from '../components/heading.js';
-import PoetName from '../components/poetname.js';
+import * as Links from '../components/links';
+import { kalliopeMenu } from '../components/menu.js';
+import Page from '../components/page.js';
 import SectionedList from '../components/sectionedlist.js';
-import * as Sorting from './helpers/sorting.js';
-import type { Lang, Keyword, SectionForRendering } from './helpers/types.js';
-import { createURL } from './helpers/client.js';
-import _ from '../pages/helpers/translations.js';
 
-const groupsByLetter = (keywords: Array<Keyword>) => {
+const groupsByLetter = (keywords) => {
   let groups = new Map();
-  keywords.forEach(k => {
+  keywords.forEach((k) => {
     let key = k.title[0];
     let group = groups.get(key) || [];
     group.push(k);
@@ -34,56 +29,52 @@ const groupsByLetter = (keywords: Array<Keyword>) => {
   return sortedGroups.sort(Sorting.sectionsByTitle);
 };
 
-type KeywordsProps = {
-  lang: Lang,
-  keywords: Array<Keyword>,
-};
-export default class extends React.Component<KeywordsProps> {
-  static async getInitialProps({ query: { lang } }: { query: { lang: Lang } }) {
-    const res = await fetch(createURL('/static/api/keywords.json'));
-    const keywords: Array<Keyword> = await res.json();
-    return { lang, keywords };
-  }
+const Keywords = (props) => {
+  const { keywords } = props;
+  const lang = useContext(LangContext);
 
-  render() {
-    const { lang, keywords } = this.props;
+  const requestPath = `/${lang}/keywords`;
 
-    const requestPath = `/${lang}/keywords`;
+  const nonDrafts = keywords.filter((k) => !k.is_draft);
+  const groups = groupsByLetter(nonDrafts);
+  let sections = [];
 
-    const nonDrafts = keywords.filter(k => !k.is_draft);
-    const groups = groupsByLetter(nonDrafts);
-    let sections: Array<SectionForRendering> = [];
-
-    groups.forEach(group => {
-      const items = group.items.map(keyword => {
-        return {
-          id: keyword.id,
-          url: Links.keywordURL(lang, keyword.id),
-          html: keyword.title,
-        };
-      });
-      sections.push({ title: group.title, items });
+  groups.forEach((group) => {
+    const items = group.items.map((keyword) => {
+      const url =
+        keyword.redirectURL != null
+          ? keyword.redirectURL.replace('${lang}', lang)
+          : Links.keywordURL(lang, keyword.id);
+      return {
+        id: keyword.id,
+        url,
+        html: keyword.title,
+      };
     });
+    sections.push({ title: group.title, items });
+  });
 
-    let renderedGroups = <SectionedList sections={sections} />;
+  let renderedGroups = <SectionedList sections={sections} />;
 
-    return (
-      <div>
-        <Head
-          headTitle={_('Nøgleord', lang) + ' - Kalliope'}
-          requestPath={requestPath}
-        />
-        <Main>
-          <Nav
-            lang={lang}
-            crumbs={[...kalliopeCrumbs(lang), { title: _('Nøgleord', lang) }]}
-          />
-          <Heading title={_('Nøgleord', lang)} />
-          <KalliopeTabs lang={lang} selected="keywords" />
-          {renderedGroups}
-          <LangSelect lang={lang} path={requestPath} />
-        </Main>
-      </div>
-    );
-  }
-}
+  return (
+    <Page
+      headTitle={_('Nøgleord', lang) + ' - Kalliope'}
+      requestPath={requestPath}
+      crumbs={[...kalliopeCrumbs(lang), { title: _('Nøgleord', lang) }]}
+      pageTitle={_('Nøgleord', lang)}
+      menuItems={kalliopeMenu()}
+      selectedMenuItem="keywords"
+    >
+      {renderedGroups}
+      <LangSelect path={requestPath} />
+    </Page>
+  );
+};
+
+Keywords.getInitialProps = async ({ query: { lang } }) => {
+  const res = await fetch(createURL('/static/api/keywords.json'));
+  const keywords = await res.json();
+  return { lang, keywords };
+};
+
+export default Keywords;

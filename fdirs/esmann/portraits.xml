@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pictures>
-  <picture src="p1.jpg">
+  <picture src="p3.jpg" primary="true" square-src="p3-square.jpg" objid="451026" museum="kb">
+      Frederik Riise (fotograf): <i>Gustav Esmann</i>. Det kongelig Bibliotek.
   </picture>
-  <picture src="p2.jpg" primary="true" square-src="p2-square.jpg">
+  <picture src="p2.jpg" objid="451023" museum="kb">
+      Sophus Juncker-Jensen (fotograf): <i>Gustav Esmann</i>. Det kongelig Bibliotek.
   </picture>
 </pictures>

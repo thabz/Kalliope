@@ -9,7 +9,7 @@
 </workhead>
 <workbody>
 
-<poem id="byron2002021401">
+<text id="byron2002021401">
 <head>
    <title>Stanzas to [Augusta]</title>
    <toctitle>Stanzas to [Augusta]</toctitle>
@@ -21,6 +21,7 @@
    <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
+<poetry>
 Though the day of my destiny's over,
     And the star of my fate hath declined,
 Thy soft heart refused to discover
@@ -74,10 +75,11 @@ In the desert a fountain is springing,
     In the wide waste there still is a tree,
 And a bird in the solitude singing,
     Which speaks to my spirit of <i>thee</i>.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="byron2017090401">
+<text id="byron2017090401">
 <head>
    <title>The Dream</title>
    <firstline>Our life is twofold: Sleep hath its own world</firstline>
@@ -87,6 +89,7 @@ And a bird in the solitude singing,
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I.
 Our life is twofold: Sleep hath its own world,
 A boundary between the things misnamed
@@ -312,8 +315,9 @@ Almost like a reality—the one
 To end in madness—both in misery.
 
 <nonum><right>July, 1816.</right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

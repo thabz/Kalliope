@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="kjerulf" country="no" lang="no" type="poet">
+  <name>
+    <firstname>Theodor</firstname>
+    <lastname>Kjerulf</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1825-03-30</date>
+      <place>Kristiania</place>
+    </born>
+    <dead>
+      <date>1888-10-25</date>
+      <place>Kristiania</place>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q2121224</wikidata>
+    <viaf>42144110</viaf>
+    <lex-dk>Theodor_Kjerulf</lex-dk>
+    <litteraturpriser-dk>u11066</litteraturpriser-dk>
+    <runeberg-org>kjeruthe</runeberg-org>
+  </identifiers>
+</person>

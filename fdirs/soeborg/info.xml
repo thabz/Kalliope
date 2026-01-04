@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="soeborg" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Carl</firstname>
+    <lastname>Søeborg</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1775-08-15</date>
+    </born>
+    <dead>
+      <date>1852-11-03</date>
+    </dead>
+  </period>
+  <works>1817,1831</works>
+  <identifiers>
+    <wikidata>Q125357540</wikidata>
+    <viaf>7148704135936932306</viaf>
+    <litteraturpriser-dk>SCarlSoeeborg</litteraturpriser-dk>
+    <runeberg-org>soebocar</runeberg-org>
+  </identifiers>
+</person>

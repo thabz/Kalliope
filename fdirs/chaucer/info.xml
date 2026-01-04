@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="chaucer" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Geoffrey</firstname>
+    <lastname>Chaucer</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1340'erne ca.</date>
+    </born>
+    <dead>
+      <date>1400-10-25</date>
+      <place>London</place>
+    </dead>
+  </period>
+  <works>troilus,duchess,canterbury,andre</works>
+  <identifiers>
+    <wikidata>Q5683</wikidata>
+    <viaf>100185203</viaf>
+    <lex-dk>Geoffrey_Chaucer</lex-dk>
+    <litteraturpriser-dk>u5365</litteraturpriser-dk>
+    <runeberg-org>chaucgeo</runeberg-org>
+    <gutenberg-org>144</gutenberg-org>
+  </identifiers>
+</person>
