@@ -140,10 +140,13 @@ class Timeline extends React.Component {
     }
     let prevYearNumeric = null;
     const items = timeline.map((item, i) => {
-      const [curYearFormatted, curYearNumeric] = extractYear(item.date);
+      const [curYearFormatted, curYearNumeric, x, bce] = extractYear(item.date);
       let year = null;
       if (prevYearNumeric !== curYearNumeric) {
         year = curYearFormatted;
+        if (bce) {
+          year += ' f.Kr.';
+        }
       }
       prevYearNumeric = curYearNumeric;
 
@@ -183,7 +186,9 @@ class Timeline extends React.Component {
             lineHeight: '22px',
           }}
         >
-          <div style={{ float: 'left', fontSize: '15px' }}>{year}</div>
+          <div style={{ float: 'left', fontSize: '15px' }}>
+            {year == null ? null : year}
+          </div>
           <div
             style={{
               marginLeft: '50px',

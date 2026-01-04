@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import CommonData from '../common/commondata.js';
 import _ from '../common/translations.js';
+import { formattedDate } from '../components/formatteddate.js';
 import { Link } from '../routes';
 
 const workNameTranslated = (work, lang) => {
@@ -21,6 +22,15 @@ export default class WorksList extends React.Component {
     }
 
     const sortWorks = (works) => {
+      const sortableYear = (year) => {
+        let result = year.replace('ca.', '').replace('c.', '').trim();
+        if (result[0] === '-') {
+          result = 9999 + parseInt(result); // Sorter omvendt
+          result = '-' + result; // Men før de positive
+        }
+        return result;
+      };
+
       if (poet.id === 'bibel') {
         return works;
       } else {
@@ -31,9 +41,13 @@ export default class WorksList extends React.Component {
             return -1;
           } else {
             const aKey =
-              a.year == null || a.year === '?' ? a.title : a.year + a.id;
+              a.year == null || a.year === '?'
+                ? a.title
+                : sortableYear(a.year) + a.id;
             const bKey =
-              b.year == null || b.year === '?' ? b.title : b.year + b.id;
+              b.year == null || b.year === '?'
+                ? b.title
+                : sortableYear(b.year) + b.id;
             return aKey > bKey ? 1 : -1;
           }
         });
@@ -52,7 +66,7 @@ export default class WorksList extends React.Component {
         yearRendered = (
           <span key="year" className="lighter">
             {' '}
-            ({year})
+            ({formattedDate(year)})
           </span>
         );
       }

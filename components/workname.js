@@ -1,7 +1,8 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import CommonData from '../common/commondata.js';
 import LangContext from '../common/LangContext.js';
 import _ from '../common/translations.js';
+import { formattedDate } from '../components/formatteddate.js';
 
 const WorkName = ({ work, cursive = false, useTitle = 'title' }) => {
   const { year } = work;
@@ -14,7 +15,7 @@ const WorkName = ({ work, cursive = false, useTitle = 'title' }) => {
   let titlePart = <span>{titleTranslated}</span>;
   let yearPart = null;
   if (year != null && year !== '?') {
-    yearPart = <span>({year})</span>;
+    yearPart = <span>({formattedDate(year)})</span>;
   }
 
   const parts = [titlePart, yearPart].map((p, i) => {
@@ -54,7 +55,7 @@ export function workTitleString(work) {
   const { title, year } = work;
   let yearPart = '';
   if (year != null && year !== '?') {
-    yearPart = ` (${year})`;
+    yearPart = ` (${formattedDate(year)})`;
   }
   return title + yearPart;
 }

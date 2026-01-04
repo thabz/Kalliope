@@ -11,6 +11,7 @@ const { get_picture } = require('./parsing.js');
 
 // Accepterer sYYYY, sYYYY-MM, sYYYY-MM-DD og returnerer altid sYYYY-MM-DD
 const normalize_timeline_date = (date) => {
+  date = date.replace('ca.', '').replace('c.', '').trim();
   // Tjek for negativt år
   const isNegative = date.startsWith('-');
   const cleanDate = isNegative ? date.slice(1) : date;
@@ -54,7 +55,9 @@ function compare_normalized_date(a, b) {
 }
 
 const sorted_timeline = (timeline) => {
-  return timeline.sort((a, b) => compare_normalized_date(a.date, b.date));
+  return timeline.sort((a, b) =>
+    compare_normalized_date(a.normalized_date, b.normalized_date)
+  );
 };
 
 const load_timeline = async (filename, collected) => {
@@ -135,6 +138,7 @@ const build_poet_timeline_json = async (poet, collected) => {
             : work.title;
           items.push({
             date: work.published,
+            normalized_date: normalize_timeline_date(work.published),
             type: 'text',
             content_lang: 'da',
             is_history_item: false,
@@ -156,6 +160,7 @@ const build_poet_timeline_json = async (poet, collected) => {
       ).replace(/\.*$/, '.'); // Kbh. giver ekstra punktum.
       items.push({
         date: poet.period.born.date,
+        normalized_date: normalize_timeline_date(poet.period.born.date),
         type: 'text',
         is_history_item: false,
         content_lang: 'da',
@@ -164,7 +169,6 @@ const build_poet_timeline_json = async (poet, collected) => {
         ],
       });
     }
-    let dead_date = null;
     if (poet.period.dead.date !== '?') {
       const place = (
         poet.period.dead.place != null
@@ -176,6 +180,7 @@ const build_poet_timeline_json = async (poet, collected) => {
       ).replace(/\.*$/, '.'); // Kbh. giver ekstra punktum.;
       items.push({
         date: poet.period.dead.date,
+        normalized_date: normalize_timeline_date(poet.period.dead.date),
         type: 'text',
         is_history_item: false,
         content_lang: 'da',
@@ -188,23 +193,29 @@ const build_poet_timeline_json = async (poet, collected) => {
       await load_timeline(`fdirs/${poet.id}/events.xml`, collected)
     ).map((e) => {
       e.is_history_item = false;
+      e.normalized_date = normalize_timeline_date(e.date);
       return e;
     });
     items = [...items, ...poet_events];
     items = sorted_timeline(items);
   }
   if (items.length >= 2) {
-    const start_date = normalize_timeline_date(items[0].date);
-    let end_date = normalize_timeline_date(items[items.length - 1].date);
+    const start_date = items[0].normalized_date;
+    let end_date = items[items.length - 1].normalized_date;
     if (poet.period.dead.date !== '?') {
       end_date = normalize_timeline_date(poet.period.dead.date);
     }
-    let globalItems = collected.timeline.filter((item) => {
-      return (
-        compare_normalized_date(item.date, start_date) === 1 &&
-        compare_normalized_date(item.date, end_date) === -1
-      );
-    });
+    let globalItems = collected.timeline
+      .map((e) => {
+        e.normalized_date = normalize_timeline_date(e.date);
+        return e;
+      })
+      .filter((e) => {
+        return (
+          compare_normalized_date(e.normalized_date, start_date) === 1 &&
+          compare_normalized_date(e.normalized_date, end_date) === -1
+        );
+      });
     items = [...globalItems, ...items];
     items = sorted_timeline(items);
   }
