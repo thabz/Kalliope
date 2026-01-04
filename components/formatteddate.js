@@ -73,8 +73,8 @@ export const extractYear = (date) => {
 };
 
 export const formattedYear = (date) => {
-  const [formatted] = extractYear(date);
-  return formatted;
+  const [formatted, x, y, bce] = extractYear(date);
+  return bce ? formatted + ' f.Kr.' : formatted;
 };
 
 export const formattedYearRange = (born, dead) => {
