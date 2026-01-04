@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <person id="ovid" country="un" lang="la" type="poet">
   <name>
-    <firstname></firstname>
+    <firstname/>
     <lastname>Ovid</lastname>
     <fullname>Publius Ovidius Naso</fullname>
   </name>
@@ -16,4 +16,5 @@
     </dead>
   </period>
   
+  <works>amores,heroides,arsamatoria,remediaamoris,medicamina,fasti,metamorphoses,tristia,ibis,epistulae</works>
 </person>
