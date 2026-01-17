@@ -1,14 +1,28 @@
-KILDE:Poul la Cour: <i>Dagens Alter</i>, Levin &amp; Munksgaards Forlag, 1922.
-DIGTER:lacour
-FACSIMILE:
-FACSIMILE-SIDER:62
-TITELBLAD:
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
+<kalliopework id="1922" author="lacour" status="complete" type="poetry">
+<workhead>
+    <title>Dagens Alter</title>
+    <year>1922</year>
+    <notes>
+        <note>Teksten følger Poul la Cour: <i>Dagens Alter</i>, Levin &amp; Munksgaards Forlag, 1922.</note>
+    </notes>
+    <pictures>
+        <picture src="1922-p1.jpg">Titelbladet til <i>Dagens Alter</i> (1922) lyder ,,Poul la Cour / Dagens Alter / Digte // Levin &amp; Munksgaards Forlag 1922''.</picture>
+    </pictures>
+    <source facsimile="115308073933-color.pdf" facsimile-pages-num="62" facsimile-pages-offset="7">Poul la Cour: <i>Dagens Alter</i>, Levin &amp; Munksgaards Forlag, 1922.</source>
+</workhead>
+<workbody>
 
-
-T:Foran Dagens Alter
-F:Mennesket, som rastløs søger
-SIDE:7-12
-
+<text id="lacour2026011701">
+<head>
+    <title>Foran Dagens Alter</title>
+    <firstline>Mennesket, som rastløs søger</firstline>
+    <source pages="7-12"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Mennesket, som rastløs søger,
 han, som evigt beder - vaager
 for at finde Lysets Trolddom,
@@ -136,12 +150,19 @@ til den selv skal gøde Mulden - - -.
 Fjern for evigt fra min Sjæl
 Spor af Mørkets kolde Hæl,
 Nattens sorte Marterpæl!
+</poetry>
+</body>
+</text>
 
-
-T:Træet
-F:Som Fuglenes blaa Vinger lyner Luften
-SIDE:13-14
-
+<text id="lacour2026011702">
+<head>
+    <title>Træet</title>
+    <firstline>Som Fuglenes blaa Vinger lyner Luften</firstline>
+    <source pages="13-14"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Som Fuglenes blaa Vinger lyner Luften,
 og Skyerne er Skum paa Himlens Hav -
 Sangfugle slynger Jubel gennem Duften,
@@ -166,12 +187,19 @@ Jeg bøjer mig imod den mørke Stamme, -
 mens Blodet ildrødt bølger for mit Syn,
 jeg drikker af den Vaar, den hede Flamme,
 der luer under Bladets fine Bryn.
+</poetry>
+</body>
+</text>
 
-
-T:Nuet
-F:En lille Plante har sovet
-SIDE:15
-
+<text id="lacour2026011703">
+<head>
+    <title>Nuet</title>
+    <firstline>En lille Plante har sovet</firstline>
+    <source pages="15"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 En lille Plante har sovet
 fortænkt i den varme Muld,
 nu bryder den op i Lyset -
@@ -186,12 +214,19 @@ En Vaarplante tænker at blomstre
 befriet for Stængel og Rod . . .
 Bare i Knopmunden lyser
 forrædersk en rød Draabe Blod -.
+</poetry>
+</body>
+</text>
 
-
-T:Foraarstræk
-F:Igennem Taagebankers sølvhvide Perleskær
-SIDE:16-18
-
+<text id="lacour2026011704">
+<head>
+    <title>Foraarstræk</title>
+    <firstline>Igennem Taagebankers sølvhvide Perleskær</firstline>
+    <source pages="16-18"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Igennem Taagebankers sølvhvide Perleskær
 de løfter deres uvejrsmørke Vinger,
 der farvet graa af Duggen og tændt i Aftnens Vejr
@@ -241,11 +276,19 @@ En Straalevifte rammer med blodigt Skær et Fnugg
 af Skyer, der staar tændte over Landet,
 mens Fugleskaren standser og drikker Græssets Dugg
 og atter danser lydløst om i Sandet.
+</poetry>
+</body>
+</text>
 
-T:Sommersang
-F:De unge Kvinder, gyldent Korn, Blomster og grønne Træer 
-SIDE:19-20
-
+<text id="lacour2026011705">
+<head>
+    <title>Sommersang</title>
+    <firstline>De unge Kvinder, gyldent Korn, Blomster og grønne Træer</firstline>
+    <source pages="19-20"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 De unge Kvinder, gyldent Korn, Blomster og grønne Træer . . .
 Den hede Sommers modne Magt tryllebinder os alle
 og kryster os mod sit brune Bryst, til vi besejret falder
@@ -270,11 +313,19 @@ De unge Kvinder, gyldent Korn, Blomster og grønne Træer . . .
 O Sommer jeg skal favne i Evighedens Stunder
 og favner denne Stund som et rosenfarvet Under,
 der bliver rigt og dejligt, selv naar jeg ej er hær.
+</poetry>
+</body>
+</text>
 
-T:Mødet
-F:Der bølged, Ÿaljami, en Blodstrøm mod mit Hjærte
-SIDE:21-22
-
+<text id="lacour2026011706">
+<head>
+    <title>Mødet</title>
+    <firstline>Der bølged, Ÿaljami, en Blodstrøm mod mit Hjærte</firstline>
+    <source pages="21-22"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Der bølged, Ÿaljami, en Blodstrøm mod mit Hjærte,
 da Nattens tavse Timer slog Flammeviften ud,
 jeg ser, hvor Mørket skiltes af dine lyse Arme,
@@ -294,12 +345,19 @@ End bølger mod min Skulder et Hav af mørke Traade,
 end ser jeg dunkelt straale den dæmringslyse Stund -
 og paa min Læbe brænder endnu som bitter Smærte
 de tusind Kys, som segned paa Vejen mod din Mund.
+</poetry>
+</body>
+</text>
 
-
-T:Forvandling
-F:Jeg har Ÿaljami blot fattige Sange
-SIDE:23-24
-
+<text id="lacour2026011707">
+<head>
+    <title>Forvandling</title>
+    <firstline>Jeg har Ÿaljami blot fattige Sange</firstline>
+    <source pages="23-24"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Jeg har Ÿaljami blot fattige Sange,
 der falder i Stykker som løsrevne Klange . . . .
 se alt, jeg kan skænke dit Hjærte det svage,
@@ -320,11 +378,19 @@ skal blomstre igen i dit Hjaerte det bange -
 daer bliver mit Ord, som jeg gav dig i Gave,
 et lykkeligt Brus i en rødmende Have.
 Velsignede Jomfru, mit Vers er din Gave!
+</poetry>
+</body>
+</text>
 
-T:Ungdom
-F:Solen kærtegner din hvide Skulder
-SIDE:25-26
-
+<text id="lacour2026011708">
+<head>
+    <title>Ungdom</title>
+    <firstline>Solen kærtegner din hvide Skulder</firstline>
+    <source pages="25-26"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Solen kærtegner din hvide Skulder -.
 Barnligt aabner dine Øjne sig mod Alverden,
 der brænder mig imøde fra dit Bryst.
@@ -347,12 +413,19 @@ Mit Hjærte udbryder i Blomster.
 Du har ledt mig til Gaadernes brændende Bund . . .
 Henrykt føler jeg din varme Ungdom
 og klynger mig fyldt af lykkelig Undren ind til din Arm.
+</poetry>
+</body>
+</text>
 
-
-T:Dit Hjærte
-F:Dit Hjærte ejer mørke Melodier
-SIDE:27-28
-
+<text id="lacour2026011709">
+<head>
+    <title>Dit Hjærte</title>
+    <firstline>Dit Hjærte ejer mørke Melodier</firstline>
+    <source pages="27-28"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Dit Hjærte ejer mørke Melodier,
 som sagte stiger eller sagte falder
 og strømmer mig imod - blot aldrig tier -
@@ -371,17 +444,24 @@ med Ben saa slanke som de fine Klove.
 
 Min Zulamith - af dine hvide Hænder
 jeg faar, hvad ingen fik af Sarons Rose -.
-Thi hvorfor mon _mit_ Hjærte evigt brænder,
+Thi hvorfor mon <i>mit</i> Hjærte evigt brænder,
 
 om ikke blot fordi jeg dybt begravet
 i Nuet hører Lidenskabens Sange,
-der i _dit_ Hjærte stiger tungt som Havet.
+der i <i>dit</i> Hjærte stiger tungt som Havet.
+</poetry>
+</body>
+</text>
 
-
-T:Jeg vandred fjernt -
-F:Jeg vandred fjernt fra Hjemmet i et Øde
-SIDE:29-30
-
+<text id="lacour2026011710">
+<head>
+    <title>Jeg vandred fjernt -</title>
+    <firstline>Jeg vandred fjernt fra Hjemmet i et Øde</firstline>
+    <source pages="29-30"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Jeg vandred fjernt fra Hjemmet i et Øde
 af gule Græsstraa og af nøgne Buske
 og saa paa Himlen Stjærneskarer luske
@@ -406,12 +486,20 @@ Det Land, det er med Sol og Regn og Øde
 den Ild, som dybest i mit Hjerte funkler,
 og ingen Kval og Nød dets Fryd fordunkler: -
 jeg skal til Evighed dig stadig møde!
+</poetry>
+</body>
+</text>
 
-T:<num>I.</num>Mødre
-LINKTITEL:Mødre, I
-F:Der er Mødre, som maa smile af en egen dunkel Ild
-SIDE:31-32
-
+<text id="lacour2026011711">
+<head>
+    <title><num>I.</num>Mødre</title>
+    <linktitle>Mødre, I</linktitle>
+    <firstline>Der er Mødre, som maa smile af en egen dunkel Ild</firstline>
+    <source pages="31-32"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Der er Mødre, som maa smile af en egen dunkel Ild,
 naar de véd, at under Hjærtet bli’r et andet Hjærte til, -
 naar det spræller dybt i Bugen med en lille Haand og Fod,
@@ -431,14 +519,21 @@ saa de føler - vild af Véer - Dødens rædselsfulde Brod,
 gaar der dog som fine Smil og Glimt i deres bange Blik:
 snart skal de bespændte Bryster strømme af den hvide Drik!
 Svag af Kampen, mat af Fødslen, løfter de i deres Arme
-_Barnet_ . . . _Barnet_ . . . Branden tændt ved deres Moderhjærtes Varme.
+<i>Barnet</i> . . . <i>Barnet</i> . . . Branden tændt ved deres Moderhjærtes Varme.
+</poetry>
+</body>
+</text>
 
-
-T:<num>II.</num>Mødre
-LINKTITEL:Mødre, II
-F:Der er andre, der er malet graa af Last som en Hetære
-SIDE:33-35
-
+<text id="lacour2026011712">
+<head>
+    <title><num>II.</num>Mødre</title>
+    <linktitle>Mødre, II</linktitle>
+    <firstline>Der er andre, der er malet graa af Last som en Hetære</firstline>
+    <source pages="33-35"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Der er andre, der er malet graa af Last som en Hetære,
 for hvem Livet blot er dette at begæres og begære -
 der er andre, der er øvet i den Kunst at sjofelt favne,
@@ -464,12 +559,19 @@ da begærer de at ofre sig paa Modersmærtens Alter,
 da udstrækker de mod hvert et Barn de gustne Skøgearme
 — - -
 men Foragten møder iiskold deres dødsberørte Varme.
+</poetry>
+</body>
+</text>
 
-
-T:Vinterstad
-F:Stivnet i Smærte og død under Vinterens skærende Svøber
-SIDE:36-37
-
+<text id="lacour2026011713">
+<head>
+    <title>Vinterstad</title>
+    <firstline>Stivnet i Smærte og død under Vinterens skærende Svøber</firstline>
+    <source pages="36-37"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Stivnet i Smærte og død under Vinterens skærende Svøber,
 som hvined og sang gennem frosttunge, isnende Nætter,
 ligger med Huse som Farver fra mørke Paletter
@@ -489,12 +591,19 @@ Styrken, som luer i Vinterens Kulde og Sommerens Varme -
 alt er blot Livet og Led i dets evige Vælde.
 Under mig hører jeg Isen paa Pytterne smelde -
 hær er jeg Vinterens Bytte og ler mod dens favnende Arme.
+</poetry>
+</body>
+</text>
 
-
-T:Til en Ven
-F:Du er streng og grusom som Jehova - Dommeren
-SIDE:38
-
+<text id="lacour2026011714">
+<head>
+    <title>Til en Ven</title>
+    <firstline>Du er streng og grusom som Jehova - Dommeren</firstline>
+    <source pages="38"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Du er streng og grusom som Jehova - Dommeren -,
 og dog føder mine Tænder Smil under dit Blik,
 thi den Lykke, hvis Lys han aldrig har kendt,
@@ -512,14 +621,21 @@ bliver Saar.
 
 Thi din Natur er Frodighed og Vildskab -
 som dit Haar.
+</poetry>
+</body>
+</text>
 
-
-T:Sol
-U:Til et algiersk Billede af Willumsen.
-F:Et lille tørstigt Æsel, som drikker
-SIDE:39-40
-TODO:Find billedet. Det er ikke https://open.smk.dk/artwork/image/KMS3311
-
+<text id="lacour2026011715">
+<head>
+    <title>Sol</title>
+    <subtitle>Til et algiersk Billede af Willumsen.</subtitle>
+    <firstline>Et lille tørstigt Æsel, som drikker</firstline>
+    <source pages="39-40"/>
+    <!-- TODO: Find billedet. Det er ikke https://open.smk.dk/artwork/image/KMS3311 -->
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Et lille tørstigt Æsel, som drikker . . .  drikker . . . drikker . . .!
 Den røde Sol har hævet sit Ildhjul højt i Rummet,
 og Straalerne er Svøber, der slaar som koghed Bly,
@@ -529,7 +645,7 @@ for Himlen ejer ikke den allermindste Sky.
 Et lille tørstigt Æsel, som drikker . . .  drikker . . . drikker . . .!
 Mod Murens hvide Flade der knalder Sol og Hede,
 og Lyset risler kridhvidt ned ad hvert solbrændt Tag
-men _sprøjtes_ ud paa Gaden - ved Faldets bratte Kurve
+men <i>sprøjtes</i> ud paa Gaden - ved Faldets bratte Kurve
 brudt i et Farve-Spekter ... et ildtændt Flammeflag.
 
 Et lille tørstigt Æsel, som drikker . . .  drikker . . . drikker . . .!
@@ -539,11 +655,19 @@ Imens dens Skygge bygger i Sandet blaa Pagoder,
 den skyller salig i sig det gule, plumre Vand.
 
 Et lille tørstigt Æsel, som drikker . . .  drikker . . . drikker . . .!
+</poetry>
+</body>
+</text>
 
-T:Til Henri Matisse
-F:Først maler du os besynderlige Blomster
-SIDE:41-42
-
+<text id="lacour2026011716">
+<head>
+    <title>Til Henri Matisse</title>
+    <firstline>Først maler du os besynderlige Blomster</firstline>
+    <source pages="41-42"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Først maler du os besynderlige Blomster.
 Sød er Vildrose og fin dens Duft
 og Sangen i Cypressens og Oliventræets Krone
@@ -577,80 +701,103 @@ til dit Værk løfter sin Pande
 som et Liv, der er sprunget af Liv.
 Som en hemmelighedsfuld Skov vil det staa efter dig,
 og fra dets Dyb Fuglene kime os imøde.
+</poetry>
+</body>
+</text>
 
-T:Drøm
-F:
-SIDE:43-
-
+<text id="lacour2026011717">
+<head>
+    <title>Drøm</title>
+    <firstline>Jeg vandred Natten lang i Drømmens Rige</firstline>
+    <source pages="43-45"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Jeg vandred Natten lang i Drømmens Rige . . .
 mit Blik fortabte sig i Farvespil
 mer rigt end det, jeg vaagen véd er til,
 naar jeg ser Solen raa og blodig stige.
+
 En Valmuaande slog mig hed imøde
 fra hver en Blomst og døvede min Sans,
 indtil jeg glemte alt i Drømmens Glans
 og følte blot en dunkel Længsel bløde.
+
 Sølvgraa og kølig rislede en Kilde
 af Skumringsskæret mættet for min Fod,
 og sorte Svaner sejled mig imod
 som jeg bespændt af Drifter - hede - vilde.
-44
+
 En Trods klang mod mig fra de skønne Vinger,
 der Rummet splintrede med stærke Slag,
 som stræbte de imod den rige Dag,
 hvor Fuglesange under Blaaet klinger.
+
 Da husked jeg med eet, at Drømmens Rige
 er Bolig for den giftiggrønne Nat,
 og kendte mig ved det saa svag og mat
 og vilde op af Nattens Gravkrypt stige.
+
 Jeg elsker Stjærner paa den sorte Himmel
 og Maaneskin og Lygtelys og Dugg,
 naar alt bortvejres som et høstligt Fnugg,
 og Sjælen bliver højtidsfuld og svimmel.
+
 Men laa jeg end ved Tangens Bryst i Havet
 og hørte Bølgens fine Melodi,
 der gavmildt gled mit Øre tæt forbi -
 og var al Lykke i mit Sind begravet,
+
 jeg kløved dog i Hast de grønne Vande
 og skød som Fisken med sin Finne op
-%
-45
 og badede i Dagens Lys min Krop,
-tbi intet elsker jeg som Solens Lande - -.
-*
-* *
+tbi <i>intet</i> elsker jeg som Solens Lande - -.
+
+<nonum><center>* * *</center></nonum>
+
 Og Drømmerigets sorte, vilde Svaner
 gled over Vandet tyste som et Slæb
 og sang af deres fosforgule Næb
 og svang sig over Skyggespillets Baner.
+
 Og i det Spor, de drog som dybe Rifter
 med deres Flugt fra Nattens sorte Vrag,
 jeg skimted frydefuldt den nye Dag,
 dens Sol og Ild og Glød og Drøm og Drifter.
-46
+</poetry>
+</body>
+</text>
 
-T:Sommerens Runer
-F:
-SIDE:46-
-
-MIN unge Sommers røde Runer
+<text id="lacour2026011718">
+<head>
+    <title>Sommerens Runer</title>
+    <firstline>Min unge Sommers røde Runer</firstline>
+    <source pages="46-47"/>
+    <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Min unge Sommers røde Runer
 rister den staalblanke Kniv som Saar
 i Fyrretræets harpiksduftende Stamme.
+
 Jeg har lagt min Arm om dets Liv -
 i det bruser Saften som Blodet i mit Hjærte.
 Varligt gaar Sangen i dets Krone.
+
 Langt ude skramler en Vogn paa en Vej.
 Hesten hugger sit Hoved op og ned
-.og vrinsker ungt mod en svedblank Fælle.
+og vrinsker ungt mod en svedblank Fælle.
+
 Et Solblink fænger i smaa, hvide Huse . . .
 Hær staar jeg med Haanden mod Fyrrens hede Hud
 og rister, og rister som blødende Saar i Barken
+
 min egen unge Sommers røde Runer
+</poetry>
+</body>
+</text>
 
-
-
-
-
-
-
-
+</workbody>
+</kalliopework>
