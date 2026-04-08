@@ -1,4 +1,3 @@
-import React from 'react';
 import * as Client from '../common/client.js';
 import CommonData from '../common/commondata.js';
 import * as OpenGraph from '../common/opengraph.js';
@@ -38,6 +37,12 @@ const groupLines = (lines, type) => {
     if (line.indexOf('È') === 0) {
       letter = 'E';
     }
+    // Oldgræsk. Nedenstående dog virker ikke lige her, men
+    // er OK i Node-terminalen.
+    letter = letter
+      .normalize('NFD') // splitter prækomponerede tegn
+      .replace(/[\u0300-\u036f]/g, '') // fjern kombinerende diakritika
+      .normalize('NFC');
     letter = letter.toUpperCase();
     let array = groups.get(letter) || [];
     array.push(linePair);
