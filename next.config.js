@@ -34,10 +34,13 @@ class NodeSafeHashedChunkIdsPlugin {
 }
 
 module.exports = {
-  webpack: (config) => {
-    // Fixes npm packages that depend on `fs` module
-    config.node = {
-      fs: 'empty'
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      // Fixes npm packages that depend on the `fs` module in browser bundles.
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false
+      }
     }
 
     config.plugins = config.plugins.map(plugin => {
