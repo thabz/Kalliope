@@ -1,10 +1,10 @@
 // ./pages/_document.js
 import Document, { Head, Main, NextScript } from 'next/document';
-import flush from 'styled-jsx/server';
 
 export default class MyDocument extends Document {
-  static getInitialProps({ renderPage, asPath }) {
-    const { html, head, errorHtml, chunks } = renderPage();
+  static async getInitialProps(ctx) {
+    const initialProps = await Document.getInitialProps(ctx);
+    const { asPath } = ctx;
     // TODO: Get all supported langs from somewhere...
     let lang = 'da';
     if (asPath.match(/^\/da\//)) {
@@ -13,8 +13,7 @@ export default class MyDocument extends Document {
       lang = 'en';
     }
 
-    const styles = flush();
-    return { lang, html, head, errorHtml, chunks, styles };
+    return { ...initialProps, lang };
   }
 
   render() {
