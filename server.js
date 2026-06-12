@@ -25,7 +25,9 @@ const rootStaticFiles = [
   '/apple-touch-icon.png', // 180x180
 ];
 
-const worksRedirects = JSON.parse(fs.readFileSync('static/api/redirects.json'));
+const worksRedirects = JSON.parse(
+  fs.readFileSync(join(__dirname, 'static', 'api', 'redirects.json'))
+);
 const redirects = [
   {
     from: /\/(..)\/ffront.cgi/,
