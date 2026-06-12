@@ -26,7 +26,7 @@ const rootStaticFiles = [
 ];
 
 const worksRedirects = JSON.parse(
-  fs.readFileSync(join(__dirname, 'static', 'api', 'redirects.json'))
+  fs.readFileSync(join(__dirname, 'static', 'redirects.json'))
 );
 const redirects = [
   {

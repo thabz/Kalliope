@@ -882,7 +882,7 @@ const build_redirects_json = (collected) => {
       redirects[`/da/works/${poetId}`] = `/da/bio/${poetId}`;
     }
   });
-  writeJSON('static/api/redirects.json', redirects);
+  writeJSON('static/redirects.json', redirects);
 };
 
 const build_image_thumbnails = async () => {
