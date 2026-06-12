@@ -10,6 +10,7 @@
     "dev": " LOCALE=da_DK.UTF_8 node server.js",
     "build": "next build",
     "start": "NODE_ENV=production LOCALE=da_DK.UTF_8 node server.js",
+    "smoke": "node tools/smoke-server.js",
     "test": "jest --watch",
     "test2": "next test",
     "test-ci": "NODE_ICU_DATA=./node_modules/full-icu jest",
