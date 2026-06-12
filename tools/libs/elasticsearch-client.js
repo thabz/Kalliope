@@ -1,7 +1,7 @@
 const fetch = require('node-fetch');
 const queue = require('async/queue');
 
-const URLPrefix = 'http://localhost:9200';
+const URLPrefix = process.env.ELASTICSEARCH_URL || 'http://localhost:9200';
 
 const indexingQueue = queue((task, callback) => {
   const { index, type, id, json } = task;

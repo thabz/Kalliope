@@ -1,0 +1,14 @@
+node_modules
+.next
+.git
+.github
+coverage
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+caches
+static/api
+static/sitemaps
+static/facsimiles
+static/Kalliope.ics

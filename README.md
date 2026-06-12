@@ -18,6 +18,29 @@ Hvis alt lykkes, kan din egen kopi af Kalliope nu ses på http://localhost:3000/
 
 Hvis du nu retter i en XML-fil, f.eks. under `/fdirs/`, skal `npm run build-static` udføres igen, hvorefter ændringen kan ses i browseren. `npm run build-static` udføres meget hurtigt anden gang man kører den, da kun ændrede xml-filer behandles.
 
+### Docker
+
+Du kan også køre Kalliope med Docker og Elasticsearch:
+
+```shell
+docker compose up --build
+```
+
+Det starter appen på `http://localhost:3000` og Elasticsearch på `http://localhost:9200`.
+
+Hvis din Docker-installation stadig bruger den gamle Compose-klient, kan du bruge:
+
+```shell
+docker-compose up --build
+```
+
+På Colima kan buildet godt kræve mere RAM end standardopsætningen. Hvis containeren bliver killed under `build-static`, så prøv at starte Colima med mere hukommelse, f.eks.:
+
+```shell
+colima stop
+colima start --cpu 4 --memory 8 --disk 60
+```
+
 ### Faksimile generering
 
 Kræver `pdfimages` som er del af `poppler` pakken.
