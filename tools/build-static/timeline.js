@@ -230,4 +230,7 @@ const build_poet_timeline_json = async (poet, collected) => {
 module.exports = {
   build_global_timeline,
   build_poet_timeline_json,
+  normalize_timeline_date,
+  compare_normalized_date,
+  sorted_timeline,
 };

@@ -2,6 +2,7 @@ import {
   formattedAge,
   formattedDate,
   formattedYearRange,
+  formattedYear,
   parseDate,
 } from '../components/formatteddate.js';
 
@@ -37,6 +38,13 @@ it('it formats dates including negative years', () => {
   expect(formattedDate('0100-06-07')).toEqual('7/6 100');
   expect(formattedDate('-100-02-03')).toEqual('3/2 100 f.Kr.');
   expect(formattedDate('-8000-02-03')).toEqual('3/2 8000 f.Kr.');
+  expect(formattedDate('ca 1818')).toEqual('c.1818');
+});
+
+it('it formats single years', () => {
+  expect(formattedYear('1818')).toEqual('1818');
+  expect(formattedYear('-0100')).toEqual('100 f.Kr.');
+  expect(formattedYear('ca 1818')).toEqual('c. 1818');
 });
 
 it('it formats age', () => {
@@ -77,4 +85,5 @@ it('it formats year ranges', () => {
   expect(formattedYearRange('1782', '1810')).toEqual('(1782–1810)');
   expect(formattedYearRange('-0100', '-0050')).toEqual('(100–50 f.Kr.)');
   expect(formattedYearRange('-0030', '0020')).toEqual('(30 f.Kr.–20 e.Kr.)');
+  expect(formattedYearRange('?', '?')).toEqual('(Ukendt levetid)');
 });
