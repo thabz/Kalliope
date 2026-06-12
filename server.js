@@ -2,8 +2,9 @@
 const next = require('next');
 const routes = require('./routes');
 const fs = require('fs');
+const { createReadStream } = require('fs');
 const { parse } = require('url');
-const { join } = require('path');
+const { extname, join } = require('path');
 const { createServer } = require('http');
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
@@ -131,14 +132,40 @@ const redirects = [
 ];
 
 const cleanUpRedirectURLRegExp = /[^0-9a-zA-Z\-_\/]/g;
+const rootStaticContentTypes = {
+  '.html': 'text/html; charset=utf-8',
+  '.ico': 'image/x-icon',
+  '.json': 'application/json; charset=utf-8',
+  '.js': 'application/javascript; charset=utf-8',
+  '.png': 'image/png',
+  '.svg': 'image/svg+xml',
+  '.txt': 'text/plain; charset=utf-8',
+  '.xml': 'application/xml; charset=utf-8',
+};
+
+const serveRootStaticFile = (pathname, res) => {
+  const path = join(__dirname, 'static', pathname);
+  const stream = createReadStream(path);
+
+  stream.on('open', () => {
+    const contentType = rootStaticContentTypes[extname(path)];
+    if (contentType != null) {
+      res.setHeader('Content-Type', contentType);
+    }
+    stream.pipe(res);
+  });
+  stream.on('error', err => {
+    res.writeHead(err.code === 'ENOENT' ? 404 : 500);
+    res.end();
+  });
+};
 
 app.prepare().then(() => {
   createServer((req, res) => {
     const { pathname, query } = parse(req.url, true);
 
     if (rootStaticFiles.indexOf(pathname) > -1) {
-      const path = join(__dirname, 'static', pathname);
-      app.serveStatic(req, res, path);
+      serveRootStaticFile(pathname, res);
       return;
     } else if (
       pathname.indexOf('.cgi') > -1 ||
