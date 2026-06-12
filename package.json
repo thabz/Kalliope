@@ -6,6 +6,9 @@
     "url": "https://github.com/thabz/Kalliope"
   },
   "private": true,
+  "engines": {
+    "node": ">=20.18.1"
+  },
   "scripts": {
     "dev": " LOCALE=da_DK.UTF_8 node server.js",
     "build": "next build",
@@ -59,7 +62,7 @@
     "jest": "^23.6.0",
     "jimp": "^0.9.3",
     "mkdirp": "^0.5.1",
-    "next": "^13.2.4",
+    "next": "^14.2.35",
     "node-fetch": "^1.7.1",
     "p-limit": "^2.2.2",
     "regenerator-runtime": "^0.13.1",
