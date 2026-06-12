@@ -17,4 +17,14 @@ describe('sectionsByTitle', () => {
     const sorted = data.sort(Sorting.sectionsByTitle).map(x => x.title);
     expect(sorted).toEqual(['A', 'B', 'C', 'Æ', 'Ø', 'Aa']);
   });
+
+  it('puts unknown sections at the end', () => {
+    const data = ['Ukendt titel', 'B', 'A', 'Unknown section', 'C'].map(
+      (x) => {
+        return { title: x };
+      }
+    );
+    const sorted = data.sort(Sorting.sectionsByTitle).map((x) => x.title);
+    expect(sorted).toEqual(['A', 'B', 'C', 'Ukendt titel', 'Unknown section']);
+  });
 });
