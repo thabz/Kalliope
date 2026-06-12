@@ -26,6 +26,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Build static assets
+        run: npm run build-static
+
       - name: Build
         run: npm run build
 
