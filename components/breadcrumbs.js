@@ -49,7 +49,7 @@ export const Paging = (props) => {
     const style = { marginLeft: '16px', fontSize: '18px' };
     return (
       <div style={style} key={i}>
-        <Link prefetch route={url}>
+        <Link route={url}>
           <a title={title}>{arrow}</a>
         </Link>
       </div>
@@ -185,7 +185,7 @@ const Breadcrumbs = (props) => {
       let link = null;
       if (i !== crumbs.length - 1 && crumb.url != null) {
         link = (
-          <Link prefetch route={crumb.url}>
+          <Link route={crumb.url}>
             <a>{crumb.title}</a>
           </Link>
         );

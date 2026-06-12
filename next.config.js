@@ -13,7 +13,7 @@ class NodeSafeHashedChunkIdsPlugin {
           for (const chunk of chunks) {
             if (chunk.id === null && chunk.name) {
               const id = chunk.name.replace(this.buildId, '')
-              chunk.id = createHash('md4')
+              chunk.id = createHash('sha256')
                 .update(id)
                 .digest('hex')
                 .substr(0, 4)
@@ -23,7 +23,7 @@ class NodeSafeHashedChunkIdsPlugin {
             const ids = [...chunk.modulesIterable]
               .map(m => m.id)
               .sort()
-            const h = createHash('md4')
+            const h = createHash('sha256')
             ids.forEach(id => h.update(String(id)))
             chunk.id = h.digest('hex').substr(0, 4)
           }
@@ -34,7 +34,22 @@ class NodeSafeHashedChunkIdsPlugin {
 }
 
 module.exports = {
-  webpack: (config, { isServer }) => {
+  webpack: (config, { dev, isServer }) => {
+    if (dev) {
+      config.watchOptions = {
+        ...config.watchOptions,
+        ignored: [
+          '**/.git/**',
+          '**/node_modules/**',
+          '**/anmeldelser/**',
+          '**/data/**',
+          '**/fdirs/**',
+          '**/hist.dk/**',
+          '**/static/**'
+        ]
+      }
+    }
+
     if (!isServer) {
       // Fixes npm packages that depend on the `fs` module in browser bundles.
       config.resolve.fallback = {

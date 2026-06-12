@@ -465,9 +465,8 @@ const TextPage = (props) => {
         ...options,
       };
       return (
-        <div>
+        <div key={type + i}>
           <TextContent
-            key={type + i}
             contentHtml={lines}
             contentLang={text.content_lang}
             lang={lang}

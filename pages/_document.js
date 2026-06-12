@@ -1,5 +1,5 @@
 // ./pages/_document.js
-import Document, { Head, Main, NextScript } from 'next/document';
+import Document, { Head, Html, Main, NextScript } from 'next/document';
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -18,7 +18,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <html lang={this.props.lang}>
+      <Html lang={this.props.lang}>
         <Head>
           <style>{`body { margin: 0 } /* custom! */`}</style>
         </Head>
@@ -27,7 +27,7 @@ export default class MyDocument extends Document {
           <NextScript />
           <script src="/static/register-sw.js" />
         </body>
-      </html>
+      </Html>
     );
   }
 }
