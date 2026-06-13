@@ -7,7 +7,7 @@ const { parse } = require('url');
 const { extname, join } = require('path');
 const { createServer } = require('http');
 const dev = process.env.NODE_ENV !== 'production';
-const app = next({ dev });
+const app = next({ dev, webpack: true });
 const handler = routes.getRequestHandler(app);
 const elasticSearchClient = require('./tools/libs/elasticsearch-client.js');
 const rootStaticFiles = [
