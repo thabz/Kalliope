@@ -20,8 +20,8 @@ const {
 } = require('./xml.js');
 
 const create_poet_square_thumb = (poetId, square_path) => {
-  const path = `static/images/${poetId}/${square_path}`;
-  const destFolder = `static/images/${poetId}/social`;
+  const path = `public/images/${poetId}/${square_path}`;
+  const destFolder = `public/images/${poetId}/social`;
   const destPath = `${destFolder}/${poetId}.jpg`;
   if (!fileExists(destPath)) {
     safeMkdir(destFolder);
@@ -217,7 +217,7 @@ const build_poets_json = collected => {
       fileExists(`fdirs/${id}/bibliography-secondary.xml`);
     if (has_mentions !== poet.has_mentions) {
       poet.has_mentions = has_mentions;
-      writeJSON(`static/api/${poet.id}.json`, poet);
+      writeJSON(`public/api/${poet.id}.json`, poet);
       collected.poets.set(id, poet);
     }
   });
@@ -241,7 +241,7 @@ const build_poets_by_country_json = collected => {
     const data = {
       poets: sorted,
     };
-    writeJSON(`static/api/poets-${country}.json`, data);
+    writeJSON(`public/api/poets-${country}.json`, data);
   });
 };
 

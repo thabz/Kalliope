@@ -20,7 +20,7 @@ describe('opengraph helpers', () => {
         has_square_portrait: true,
         square_portrait: 'portrait.jpg',
       })
-    ).toBe('/static/images/aarestrup/portrait.jpg');
+    ).toBe('/images/aarestrup/portrait.jpg');
     expect(
       poetImage({
         id: 'aarestrup',

@@ -58,7 +58,7 @@ const build_anniversaries_ical = collected => {
   if (error != null) {
     throw error;
   }
-  writeText('static/Kalliope.ics', value);
+  writeText('public/Kalliope.ics', value);
 };
 
 module.exports = {

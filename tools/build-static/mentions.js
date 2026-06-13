@@ -212,7 +212,7 @@ const build_mentions_json = (collected) => {
       return;
     }
 
-    safeMkdir(`static/api/${poet.id}`);
+    safeMkdir(`public/api/${poet.id}`);
     let data = {
       poet,
       mentions: [],
@@ -290,7 +290,7 @@ const build_mentions_json = (collected) => {
       }
     });
 
-    const outFilename = `static/api/${poet.id}/mentions.json`;
+    const outFilename = `public/api/${poet.id}/mentions.json`;
     console.log(outFilename);
     writeJSON(outFilename, data);
   });

@@ -17,7 +17,7 @@ const {
 } = require('./xml.js');
 
 const build_global_lines_json = collected => {
-  safeMkdir('static/api/alltexts');
+  safeMkdir('public/api/alltexts');
   let changed_langs = {};
   let found_changes = false;
   collected.workids.forEach((workIds, poetId) => {
@@ -135,7 +135,7 @@ const build_global_lines_json = collected => {
             letters,
             lines: lines.sort(linesComparator),
           };
-          const filename = `static/api/alltexts/${country}-${linetype}-${letter}.json`;
+          const filename = `public/api/alltexts/${country}-${linetype}-${letter}.json`;
           //console.log(filename);
           writeJSON(filename, data);
         });
@@ -153,7 +153,7 @@ const build_poet_lines_json = collected => {
       return;
     }
 
-    safeMkdir(`static/api/${poetId}`);
+    safeMkdir(`public/api/${poetId}`);
 
     let collectedLines = [];
     collected.workids.get(poetId).forEach(workId => {
@@ -237,7 +237,7 @@ const build_poet_lines_json = collected => {
       poet: poet,
       lines: collectedLines,
     };
-    const linesOutFilename = `static/api/${poetId}/texts.json`;
+    const linesOutFilename = `public/api/${poetId}/texts.json`;
     console.log(linesOutFilename);
     writeJSON(linesOutFilename, data);
   });

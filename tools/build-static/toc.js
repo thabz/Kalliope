@@ -82,7 +82,7 @@ const build_works_toc = async (collected) => {
     const notes = get_notes(workhead, collected);
     const pictures = await get_pictures(
       workhead,
-      `/static/images/${poetId}`,
+      `/images/${poetId}`,
       `fdirs/${poetId}/${workId}`,
       collected
     );
@@ -104,7 +104,7 @@ const build_works_toc = async (collected) => {
   return Promise.all(
     Array.from(collected.poets.entries()).map(async (entry) => {
       const [poetId, poet] = entry;
-      safeMkdir(`static/api/${poetId}`);
+      safeMkdir(`public/api/${poetId}`);
 
       return Promise.all(
         collected.workids.get(poetId).map(async (workId) => {
@@ -158,7 +158,7 @@ const build_works_toc = async (collected) => {
           );
           toc_file_data.modified = modifiedDateString.toString().trim();
           */
-            const tocFilename = `static/api/${poetId}/${workId}-toc.json`;
+            const tocFilename = `public/api/${poetId}/${workId}-toc.json`;
             console.log(tocFilename);
             writeJSON(tocFilename, toc_file_data);
           }

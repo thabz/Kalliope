@@ -110,7 +110,7 @@ const PoetLooksPage = (props) => {
         content_html: [[name, { html: true }]],
         content_lang: 'da',
       };
-      const srcPrefix = `/static/images/${poet.id}`;
+      const srcPrefix = `/images/${poet.id}`;
       item = (
         <Picture
           pictures={[picture]}
@@ -182,7 +182,7 @@ const PoetLooksPage = (props) => {
 PoetLooksPage.getInitialProps = async ({
   query: { lang, country, groupBy },
 }) => {
-  const url = `/static/api/poets-${country}.json`;
+  const url = `/api/poets-${country}.json`;
   const res = await fetch(createURL(url));
   const json = await res.json();
   const poets = json.poets;
