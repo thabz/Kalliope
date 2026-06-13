@@ -45,7 +45,7 @@ const readArtworkFile = async (personId, artworkFilename, collected) => {
       }
 
       const src = `/images/${personId}/${pictureId}.jpg`;
-      const size = await imageSizeSync(src.replace(/^\//, ''));
+      const size = await imageSizeSync(`public${src}`);
       const remoteUrl = build_museum_url(picture, collected);
       const museumId = safeGetAttr(picture, 'museum');
       const clipPath = safeGetAttr(picture, 'clip-path');
