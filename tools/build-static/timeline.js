@@ -84,7 +84,7 @@ const load_timeline = async (filename, collected) => {
         }
         const picture = await get_picture(
           pictureNode,
-          '/static',
+          '',
           collected,
           onError
         );

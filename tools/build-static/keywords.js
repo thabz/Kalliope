@@ -15,7 +15,7 @@ const {
 } = require('./xml.js');
 
 const build_keywords = async collected => {
-  safeMkdir('static/api/keywords');
+  safeMkdir('public/api/keywords');
   let collected_keywords = new Map(loadCachedJSON('collected.keywords') || []);
   const folder = 'data/keywords';
   const filenames = fs
@@ -47,7 +47,7 @@ const build_keywords = async collected => {
         } else {
           const pictures = await get_pictures(
             head,
-            '/static/images/keywords',
+            '/images/keywords',
             path,
             collected
           );
@@ -74,14 +74,14 @@ const build_keywords = async collected => {
           redirectURL,
           is_draft,
         });
-        const outFilename = `static/api/keywords/${id}.json`;
+        const outFilename = `public/api/keywords/${id}.json`;
         console.log(outFilename);
         writeJSON(outFilename, data);
         collected_keywords.set(id, { id, title });
       })
     );
     writeCachedJSON('collected.keywords', Array.from(collected_keywords));
-    const outFilename = `static/api/keywords.json`;
+    const outFilename = `public/api/keywords.json`;
     console.log(outFilename);
     writeJSON(outFilename, keywords_toc);
   }

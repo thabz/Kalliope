@@ -18,9 +18,9 @@ const build_todays_events_json = async collected => {
 
   const langs = ['da', 'en'];
 
-  safeMkdir('static/api/today');
+  safeMkdir('public/api/today');
   langs.forEach(lang => {
-    safeMkdir(`static/api/today/${lang}`);
+    safeMkdir(`public/api/today/${lang}`);
   });
 
   const collected_events = new Map();
@@ -152,7 +152,7 @@ const build_todays_events_json = async collected => {
         const dd = d < 10 ? '0' + d : d;
         const mm = m < 10 ? '0' + m : m;
         const events = collected_events.get(`${lang}-${mm}-${dd}`) || [];
-        const path = `static/api/today/${lang}/${mm}-${dd}.json`;
+        const path = `public/api/today/${lang}/${mm}-${dd}.json`;
         //console.log(path);
         writeJSON(path, events, true);
       }

@@ -10,7 +10,7 @@ const {
 } = require('./xml.js');
 
 const build_sitemap_xml = (collected) => {
-  safeMkdir(`static/sitemaps`);
+  safeMkdir(`public/sitemaps`);
 
   const write_sitemap = (filename, urls) => {
     let xmlUrls = urls.map((url) => {
@@ -37,7 +37,7 @@ const build_sitemap_xml = (collected) => {
       }
     });
   });
-  write_sitemap('static/sitemaps/global.xml', urls);
+  write_sitemap('public/sitemaps/global.xml', urls);
 
   collected.poets.forEach((poet, poetId) => {
     const filenames = collected.workids
@@ -85,26 +85,26 @@ const build_sitemap_xml = (collected) => {
         }
       });
     });
-    write_sitemap(`static/sitemaps/${poetId}.xml`, poet_text_urls);
+    write_sitemap(`public/sitemaps/${poetId}.xml`, poet_text_urls);
   });
 
   const sitemaps_urls_xml = Array.from(collected.poets.values())
     .filter((poet) => poet.has_works || poet.has_artwork)
     .map((poet) => {
-      return `https://kalliope.org/static/sitemaps/${poet.id}.xml`;
+      return `https://kalliope.org/sitemaps/${poet.id}.xml`;
     })
     .map((url) => {
       return `  <sitemap><loc>${url}</loc></sitemap>`;
     });
   sitemaps_urls_xml.push(
-    `  <sitemap><loc>https://kalliope.org/static/sitemaps/global.xml</loc></sitemap>`
+    `  <sitemap><loc>https://kalliope.org/sitemaps/global.xml</loc></sitemap>`
   );
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
   xml +=
     '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">>\n';
   xml += sitemaps_urls_xml.join('\n');
   xml += '\n</sitemapindex>\n';
-  writeText('static/sitemap.xml', xml);
+  writeText('public/sitemap.xml', xml);
 };
 
 module.exports = {

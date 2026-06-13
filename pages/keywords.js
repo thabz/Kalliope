@@ -72,7 +72,7 @@ const Keywords = (props) => {
 };
 
 Keywords.getInitialProps = async ({ query: { lang } }) => {
-  const res = await fetch(createURL('/static/api/keywords.json'));
+  const res = await fetch(createURL('/api/keywords.json'));
   const keywords = await res.json();
   return { lang, keywords };
 };
