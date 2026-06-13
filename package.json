@@ -11,7 +11,7 @@
   },
   "scripts": {
     "dev": " LOCALE=da_DK.UTF_8 node server.js",
-    "build": "next build",
+    "build": "next build --webpack",
     "start": "NODE_ENV=production LOCALE=da_DK.UTF_8 node server.js",
     "test": "jest",
     "test-watch": "jest --watch",
@@ -38,7 +38,7 @@
     "jest": "^30.4.2",
     "jimp": "^0.9.3",
     "mkdirp": "^0.5.1",
-    "next": "^15.5.19",
+    "next": "^16.2.9",
     "node-fetch": "^1.7.1",
     "p-limit": "^2.2.2",
     "regenerator-runtime": "^0.13.1",
