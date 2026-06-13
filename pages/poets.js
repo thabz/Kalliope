@@ -17,6 +17,29 @@ const nvl = (x, v) => {
   return x == null ? v : x;
 };
 
+const poetListItem = (poet) => {
+  const { name, period } = poet;
+
+  return {
+    id: poet.id,
+    type: poet.type,
+    name: {
+      firstname: name.firstname,
+      lastname: name.lastname,
+      sortname: name.sortname,
+    },
+    period:
+      period == null
+        ? null
+        : {
+            born:
+              period.born == null ? null : { date: period.born.date },
+            dead:
+              period.dead == null ? null : { date: period.dead.date },
+          },
+  };
+};
+
 const groupsByLetter = (poets, lang) => {
   let groups = new Map();
 
@@ -161,7 +184,13 @@ const Poets = (props) => {
 
 Poets.getInitialProps = async ({ query: { lang, country, groupBy } }) => {
   const json = await Client.poets(country);
-  return { lang, country, groupBy, poets: json.poets, error: json.error };
+  return {
+    lang,
+    country,
+    groupBy,
+    poets: json.poets == null ? null : json.poets.map(poetListItem),
+    error: json.error,
+  };
 };
 
 export default Poets;
