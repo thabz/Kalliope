@@ -11,6 +11,7 @@ import Page from '../components/page.js';
 import { poetNameString } from '../components/poetname-helpers.js';
 import PoetName from '../components/poetname.js';
 import SectionedList from '../components/sectionedlist.js';
+import ErrorPage from './error.js';
 
 const groupLines = (lines, type) => {
   let groups = new Map();
@@ -54,7 +55,11 @@ const groupLines = (lines, type) => {
 };
 
 const TextsPage = (props) => {
-  const { lang, poet, type, lines } = props;
+  const { lang, poet, type, lines, error } = props;
+
+  if (error) {
+    return <ErrorPage error={error} lang={lang} message="Ukendt digter" />;
+  }
 
   const groups = groupLines(lines, type);
   let sections = [];
@@ -118,6 +123,7 @@ TextsPage.getInitialProps = async ({ query: { lang, poetId, type } }) => {
     lang,
     poet: json.poet,
     lines: json.lines,
+    error: json.error,
     type,
   };
 };
