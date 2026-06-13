@@ -11,7 +11,7 @@
   },
   "scripts": {
     "dev": " LOCALE=da_DK.UTF_8 node server.js",
-    "build": "next build --webpack",
+    "build": "next build",
     "start": "NODE_ENV=production LOCALE=da_DK.UTF_8 node server.js",
     "test": "jest",
     "test-watch": "jest --watch",
