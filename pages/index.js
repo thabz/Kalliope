@@ -215,9 +215,9 @@ Index.getInitialProps = async ({ query: { lang, date } }) => {
       next: `${zeroPad(next.getMonth() + 1)}-${zeroPad(next.getDate())}`,
     };
   }
-  const newsPromise = fetch(createURL(`/static/api/news_${lang}.json`));
+  const newsPromise = fetch(createURL(`/api/news_${lang}.json`));
   const todayPromise = fetch(
-    createURL(`/static/api/today/${lang}/${dayAndMonth}.json`)
+    createURL(`/api/today/${lang}/${dayAndMonth}.json`)
   );
   const todayResponse = await todayPromise;
   const newsResponse = await newsPromise;

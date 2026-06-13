@@ -45,7 +45,7 @@ module.exports = {
           '**/data/**',
           '**/fdirs/**',
           '**/hist.dk/**',
-          '**/static/**'
+          '**/public/**'
         ]
       }
     }

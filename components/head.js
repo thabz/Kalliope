@@ -5,7 +5,7 @@ const urlPrefix = 'https://kalliope.org';
 const defaultDescription =
   'Kalliope er en database indeholdende ældre dansk lyrik samt biografiske oplysninger om danske digtere. Målet er intet mindre end at samle hele den ældre danske lyrik, men indtil videre indeholder Kalliope et forhåbentligt repræsentativt, og stadigt voksende, udvalg af den danske digtning.';
 const defaultOGURL = urlPrefix;
-const defaultOGImage = `${urlPrefix}/static/touch-icon.png`;
+const defaultOGImage = `${urlPrefix}/touch-icon.png`;
 
 export default class Head extends React.Component {
   render() {
@@ -58,7 +58,7 @@ export default class Head extends React.Component {
         <link rel="icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         {appleTouchIcons}
-        <link rel="mask-icon" href="/static/favicon-mask.svg" color="black" />
+        <link rel="mask-icon" href="/favicon-mask.svg" color="black" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="manifest" href="/manifest.json" />
         {canonical}

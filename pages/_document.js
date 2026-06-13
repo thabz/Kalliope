@@ -25,7 +25,7 @@ export default class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          <script src="/static/register-sw.js" />
+          <script src="/register-sw.js" />
         </body>
       </Html>
     );

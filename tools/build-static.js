@@ -132,7 +132,7 @@ const build_bio_json = async (collected) => {
         return;
       }
 
-      safeMkdir(`static/api/${poet.id}`);
+      safeMkdir(`public/api/${poet.id}`);
       const bioXmlPath = `fdirs/${poet.id}/bio.xml`;
       const data = {
         poet,
@@ -149,7 +149,7 @@ const build_bio_json = async (collected) => {
       }
       data.timeline = await build_poet_timeline_json(poet, collected);
       data.portraits = await build_portraits_json(poet, collected);
-      const destFilename = `static/api/${poet.id}/bio.json`;
+      const destFilename = `public/api/${poet.id}/bio.json`;
       console.log(destFilename);
       writeJSON(destFilename, data);
     })
@@ -394,7 +394,7 @@ const handle_text = async (
       variants: variantsArray,
       pictures: await get_pictures(
         head,
-        `/static/images/${poetId}`,
+        `/images/${poetId}`,
         `fdirs/${poetId}/${workId}.xml:${textId}`,
         collected
       ),
@@ -534,7 +534,7 @@ const handle_work = async (work) => {
   const notes = get_notes(workhead, collected);
   const pictures = get_pictures(
     workhead,
-    `/static/images/${poetId}`,
+    `/images/${poetId}`,
     `fdirs/${poetId}/${workId}`,
     collected
   );
@@ -712,7 +712,7 @@ const works_second_pass = async (collected) => {
   return Promise.all(
     Array.from(collected.poets.entries()).map(async (entry) => {
       const [poetId, poet] = entry;
-      safeMkdir(`static/api/${poetId}`);
+      safeMkdir(`public/api/${poetId}`);
 
       return Promise.all(
         collected.workids.get(poetId).map(async (workId) => {
@@ -789,7 +789,7 @@ const works_second_pass = async (collected) => {
 
 const build_poet_works_json = (collected) => {
   collected.poets.forEach((poet, poetId) => {
-    safeMkdir(`static/api/${poetId}`);
+    safeMkdir(`public/api/${poetId}`);
 
     const workFilenames = collected.workids
       .get(poetId)
@@ -813,7 +813,7 @@ const build_poet_works_json = (collected) => {
 
       // Copy the xml-file into static to allow for xml download.
       fs.createReadStream(filename).pipe(
-        fs.createWriteStream(`static/api/${poetId}/${workId}.xml`)
+        fs.createWriteStream(`public/api/${poetId}/${workId}.xml`)
       );
       let doc = loadXMLDoc(filename);
       const work = getChildByTagName(doc, 'kalliopework');
@@ -839,7 +839,7 @@ const build_poet_works_json = (collected) => {
       works,
       artwork,
     };
-    const worksOutFilename = `static/api/${poetId}/works.json`;
+    const worksOutFilename = `public/api/${poetId}/works.json`;
     console.log(worksOutFilename);
     writeJSON(worksOutFilename, objectToWrite);
   });
@@ -868,7 +868,7 @@ const build_news = (collected) => {
         content_html: htmlToXml(safeGetInnerXML(body).trim(), collected),
       });
     });
-    const outfile = `static/api/news_${lang}.json`;
+    const outfile = `public/api/news_${lang}.json`;
     writeJSON(outfile, list);
     console.log(outfile);
   });
@@ -882,18 +882,18 @@ const build_redirects_json = (collected) => {
       redirects[`/da/works/${poetId}`] = `/da/bio/${poetId}`;
     }
   });
-  writeJSON('static/api/redirects.json', redirects);
+  writeJSON('public/api/redirects.json', redirects);
 };
 
 const build_image_thumbnails = async () => {
   return Promise.all([
-    buildThumbnails('static/images', isFileModified),
-    buildThumbnails('static/kunst', isFileModified),
+    buildThumbnails('public/images', isFileModified),
+    buildThumbnails('public/kunst', isFileModified),
   ]);
 };
 
 const main = async () => {
-  safeMkdir(`static/api`);
+  safeMkdir(`public/api`);
   collected.museums = await b('build_museums', build_museums, collected);
   collected.workids = await b('build_poet_workids', build_poet_workids);
   collected.poets = await b(
