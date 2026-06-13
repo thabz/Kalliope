@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from '../routes';
+import Link from 'next/link';
 import TwoColumns from './twocolumns.js';
 
 export default class SectionedList extends React.Component {
@@ -10,7 +10,7 @@ export default class SectionedList extends React.Component {
       const list = items.map((item) => {
         const content =
           item.url != null ? (
-            <Link route={item.url}>
+            <Link href={item.url} legacyBehavior>
               <a>{item.html}</a>
             </Link>
           ) : (

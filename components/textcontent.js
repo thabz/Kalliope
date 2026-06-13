@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
+import Link from 'next/link';
 import CommonData from '../common/commondata.js';
 import LangContext from '../common/LangContext.js';
-import { Link } from '../routes';
 import { Footnote } from './footnotes.js';
 import * as Links from './links';
 var DOMParser = require('xmldom').DOMParser;
@@ -42,42 +42,50 @@ const renderXmlString = (inputString) => {
     if (node.hasAttribute('person')) {
       const poetId = node.getAttribute('person');
       return (
-        <Link key={keySeq++} route={Links.poetURL(lang, poetId)}>
+        <Link key={keySeq++} href={Links.poetURL(lang, poetId)} legacyBehavior>
           <a>{handle_nodes(node.childNodes)}</a>
         </Link>
       );
     } else if (node.hasAttribute('poet')) {
       const poetId = node.getAttribute('poet');
       return (
-        <Link key={keySeq++} route={Links.poetURL(lang, poetId)}>
+        <Link key={keySeq++} href={Links.poetURL(lang, poetId)} legacyBehavior>
           <a>{handle_nodes(node.childNodes)}</a>
         </Link>
       );
     } else if (node.hasAttribute('poem')) {
       const textId = node.getAttribute('poem');
       return (
-        <Link key={keySeq++} route={Links.textURL(lang, textId)}>
+        <Link key={keySeq++} href={Links.textURL(lang, textId)} legacyBehavior>
           <a>{handle_nodes(node.childNodes)}</a>
         </Link>
       );
     } else if (node.hasAttribute('text')) {
       const textId = node.getAttribute('text');
       return (
-        <Link key={keySeq++} route={Links.textURL(lang, textId)}>
+        <Link key={keySeq++} href={Links.textURL(lang, textId)} legacyBehavior>
           <a>{handle_nodes(node.childNodes)}</a>
         </Link>
       );
     } else if (node.hasAttribute('keyword')) {
       const keywordId = node.getAttribute('keyword');
       return (
-        <Link key={keySeq++} route={Links.keywordURL(lang, keywordId)}>
+        <Link
+          key={keySeq++}
+          href={Links.keywordURL(lang, keywordId)}
+          legacyBehavior
+        >
           <a>{handle_nodes(node.childNodes)}</a>
         </Link>
       );
     } else if (node.hasAttribute('dict')) {
       const keywordId = node.getAttribute('dict');
       return (
-        <Link key={keySeq++} route={Links.dictionaryURL(lang, keywordId)}>
+        <Link
+          key={keySeq++}
+          href={Links.dictionaryURL(lang, keywordId)}
+          legacyBehavior
+        >
           <a>{handle_nodes(node.childNodes)}</a>
         </Link>
       );
@@ -86,21 +94,29 @@ const renderXmlString = (inputString) => {
       const poetId = parts[0];
       const workId = parts[1];
       return (
-        <Link key={keySeq++} route={Links.workURL(lang, poetId, workId)}>
+        <Link
+          key={keySeq++}
+          href={Links.workURL(lang, poetId, workId)}
+          legacyBehavior
+        >
           <a>{handle_nodes(node.childNodes)}</a>
         </Link>
       );
     } else if (node.hasAttribute('href')) {
       const href = node.getAttribute('href');
       return (
-        <Link key={keySeq++} route={href}>
+        <Link key={keySeq++} href={href} legacyBehavior>
           <a>{handle_nodes(node.childNodes)}</a>
         </Link>
       );
     } else if (node.hasAttribute('bible')) {
       const bibleId = node.getAttribute('bible');
       return (
-        <Link key={keySeq++} route={Links.bibleURL(lang, bibleId)}>
+        <Link
+          key={keySeq++}
+          href={Links.bibleURL(lang, bibleId)}
+          legacyBehavior
+        >
           <a>{handle_nodes(node.childNodes)}</a>
         </Link>
       );

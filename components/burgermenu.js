@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
+import Link from 'next/link';
 import CommonData from '../common/commondata.js';
 import LangContext from '../common/LangContext.js';
-import { Link } from '../routes';
 import { BurgerSVG, CrossSVG } from './icons.js';
 import * as Links from './links.js';
 
@@ -11,8 +11,10 @@ const MenuLink = (props) => {
   return (
     <div>
       {url != null ? (
-        <Link route={url} onClick={close}>
-          <a title={title}>{title}</a>
+        <Link href={url} legacyBehavior>
+          <a title={title} onClick={close}>
+            {title}
+          </a>
         </Link>
       ) : (
         title
@@ -104,7 +106,7 @@ const BurgerMenu = (props) => {
           alignItems: 'center',
         }}
       >
-        <Link route={Links.frontPageURL(lang)}>
+        <Link href={Links.frontPageURL(lang)} legacyBehavior>
           <a title="Gå til forsiden">
             <h2 style={{ fontWeight: 300, padding: 0, margin: 0 }}>Kalliope</h2>
           </a>

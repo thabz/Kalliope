@@ -17,7 +17,7 @@ import {
 import PoetName from '../components/poetname.js';
 import TextName from '../components/textname.js';
 import WorkName from '../components/workname.js';
-import { Link } from '../routes';
+import Link from 'next/link';
 import ErrorPage from './error.js';
 
 const RenderedHits = ({ hits }) => {
@@ -34,7 +34,7 @@ const RenderedHits = ({ hits }) => {
         item = (
           <div>
             <div>
-              <Link route={workURL}>
+              <Link href={workURL} legacyBehavior>
                 <a>
                   <WorkName work={work} lang={lang} />
                 </a>
@@ -64,7 +64,7 @@ const RenderedHits = ({ hits }) => {
         item = (
           <div>
             <div className="title">
-              <Link route={textURL}>
+              <Link href={textURL} legacyBehavior>
                 <a>
                   <TextName text={text} />
                 </a>
@@ -201,7 +201,7 @@ const SearchPage = (props) => {
     resultaterBeskrivelse += ` i ${genetive} værker.`;
     const fullSearchURL = Links.searchURL(lang, query, country);
     linkToFullSearch = (
-      <Link route={fullSearchURL}>
+      <Link href={fullSearchURL} legacyBehavior>
         <a>Søg i hele Kalliope.</a>
       </Link>
     );

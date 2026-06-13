@@ -1,16 +1,5 @@
 // routes.js
-const React = require('react');
 const { parse } = require('url');
-
-const getNextLink = () => {
-  const NextLinkModule = require('next/link');
-  return NextLinkModule.default || NextLinkModule;
-};
-
-const getNextRouter = () => {
-  const NextRouterModule = require('next/router');
-  return NextRouterModule.default || NextRouterModule;
-};
 
 const routeDefinitions = [
   {
@@ -158,40 +147,7 @@ const getRequestHandler = app => {
   };
 };
 
-const Link = ({ route, to, href, children, ...props }) => {
-  const nextHref = href || route || to;
-  const NextLink = getNextLink();
-
-  if (React.isValidElement(children) && children.type === 'a') {
-    const { onClick, ...linkProps } = props;
-    const child = onClick
-      ? React.cloneElement(children, { onClick })
-      : children;
-
-    return React.createElement(
-      NextLink,
-      { href: nextHref, legacyBehavior: true, passHref: true, ...linkProps },
-      child
-    );
-  }
-
-  return React.createElement(
-    NextLink,
-    { href: nextHref, ...props },
-    children
-  );
-};
-
-const Router = {
-  pushRoute: (url, as, options) =>
-    getNextRouter().push(as || url, undefined, options),
-  replaceRoute: (url, as, options) =>
-    getNextRouter().replace(as || url, undefined, options),
-};
-
 module.exports = {
-  Link,
-  Router,
   getRequestHandler,
   matchRoute,
 };

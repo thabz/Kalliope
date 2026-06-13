@@ -8,7 +8,7 @@ import Page from '../components/page.js';
 import Picture from '../components/picture.js';
 import { poetNameString } from '../components/poetname-helpers.js';
 import PoetName from '../components/poetname.js';
-import { Link } from '../routes';
+import Link from 'next/link';
 
 function joinWithCommaAndOr(items, andOrWord) {
   const result = [];
@@ -37,7 +37,7 @@ class CountryPicker extends React.Component {
         return <b key={country.code}>{adj}</b>;
       } else {
         return (
-          <Link route={url} key={country.code}>
+          <Link href={url} key={country.code} legacyBehavior>
             <a>{adj}</a>
           </Link>
         );
@@ -121,7 +121,7 @@ const PoetLooksPage = (props) => {
       );
     } else {
       item = (
-        <Link key={poet.id} route={url}>
+        <Link key={poet.id} href={url} legacyBehavior>
           <a>
             <MissingPortrait poet={poet} lang={lang} />
           </a>

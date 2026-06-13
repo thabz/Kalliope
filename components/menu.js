@@ -1,8 +1,9 @@
 import React, { useContext, useEffect, useState } from 'react';
+import Link from 'next/link';
+import Router from 'next/router';
 import CommonData from '../common/commondata.js';
 import LangContext from '../common/LangContext.js';
 import _ from '../common/translations.js';
-import { Link, Router } from '../routes';
 import { CrossSVG, LoupeSVG } from './icons.js';
 import * as Links from './links.js';
 import { poetGenetiveLastName } from './poetname-helpers.js';
@@ -57,7 +58,7 @@ const Tabs = (props) => {
     if (document) {
       searchField.blur();
     }
-    Router.pushRoute(URL);
+    Router.push(URL);
     e.preventDefault();
   };
 
@@ -161,7 +162,7 @@ const Tabs = (props) => {
       const className = item.id === selected ? 'tab selected' : 'tab';
       return (
         <div className={className} key={item.url}>
-          <Link route={item.url}>
+          <Link href={item.url} legacyBehavior>
             <a>
               <h2>{item.title}</h2>
             </a>

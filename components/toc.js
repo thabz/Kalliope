@@ -1,6 +1,6 @@
 import React from 'react';
+import Link from 'next/link';
 import CommonData from '../common/commondata.js';
-import { Link } from '../routes';
 import * as Links from './links';
 import TextContent from './textcontent.js';
 
@@ -17,7 +17,7 @@ export default class extends React.Component {
           } else {
             const url = Links.textURL(lang, id);
             shownTitle = (
-              <Link route={url}>
+              <Link href={url} legacyBehavior>
                 <a>{renderedTitle}</a>
               </Link>
             );
@@ -39,7 +39,7 @@ export default class extends React.Component {
         } else if (type === 'text' && id != null) {
           const url = Links.textURL(lang, id);
           const linkedTitle = (
-            <Link route={url}>
+            <Link href={url} legacyBehavior>
               <a>
                 <TextContent contentHtml={title} lang={lang} />
               </a>

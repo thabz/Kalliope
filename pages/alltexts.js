@@ -7,7 +7,7 @@ import { kalliopeCrumbs } from '../components/breadcrumbs.js';
 import * as Links from '../components/links';
 import Page from '../components/page.js';
 import TwoColumns from '../components/twocolumns';
-import { Link } from '../routes';
+import Link from 'next/link';
 import ErrorPage from './error.js';
 
 const AllTextsPage = (props) => {
@@ -55,7 +55,7 @@ const AllTextsPage = (props) => {
       const postfix = ` - ${line.poet.name}: ${line.work.title}`;
       return (
         <div key={line.textId} className="line">
-          <Link to={url}>
+          <Link href={url} legacyBehavior>
             <a>{line.line}</a>
           </Link>
           {postfix}
@@ -86,7 +86,7 @@ const AllTextsPage = (props) => {
         l === letter ? (
           shownLetter
         ) : (
-          <Link to={url}>
+          <Link href={url} legacyBehavior>
             <a>{shownLetter}</a>
           </Link>
         );
