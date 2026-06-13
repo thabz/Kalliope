@@ -23,11 +23,6 @@
     "build-facsimiles": "node tools/build-facsimiles.js",
     "build-facsimiles-old": "node tools/build-facsimiles-old.js"
   },
-  "jest": {
-    "transform": {
-      "^.+\\.js$": "<rootDir>/tools/jest-transform.js"
-    }
-  },
   "dependencies": {
     "global": "^4.3.2",
     "isomorphic-fetch": "^2.2.1",
@@ -37,16 +32,12 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.2.2",
     "async": "^2.5.0",
-    "babel-core": "^7.0.0-bridge.0",
-    "babel-jest": "^23.6.0",
     "entities": "^1.1.1",
-    "enzyme": "^3.0",
     "full-icu": "^1.2.1",
     "ics": "^2.4.1",
     "image-size": "^0.8.3",
-    "jest": "^23.6.0",
+    "jest": "^30.4.2",
     "jimp": "^0.9.3",
     "mkdirp": "^0.5.1",
     "next": "^15.5.19",
