@@ -5,7 +5,7 @@ import { kalliopeCrumbs } from '../components/breadcrumbs.js';
 import * as Links from '../components/links';
 import { kalliopeMenu } from '../components/menu.js';
 import Page from '../components/page.js';
-import { Link } from '../routes';
+import Link from 'next/link';
 import ErrorPage from './error.js';
 
 const MuseumsPage = (props) => {
@@ -23,7 +23,7 @@ const MuseumsPage = (props) => {
     .map((museum) => {
       return (
         <div>
-          <Link route={Links.museumURL(lang, museum.id)}>
+          <Link href={Links.museumURL(lang, museum.id)} legacyBehavior>
             <a>{museum.sortName}</a>
           </Link>
         </div>

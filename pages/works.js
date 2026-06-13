@@ -1,5 +1,6 @@
 import 'isomorphic-fetch';
-import React from 'react';
+import React, { useEffect } from 'react';
+import Router from 'next/router';
 import * as Client from '../common/client.js';
 import * as OpenGraph from '../common/opengraph.js';
 import _ from '../common/translations.js';
@@ -12,7 +13,6 @@ import { poetNameString } from '../components/poetname-helpers.js';
 import PoetName from '../components/poetname.js';
 import Stack from '../components/stack.js';
 import WorksList from '../components/workslist.js';
-import { Router } from '../routes';
 import ErrorPage from './error.js';
 
 class ArtworkList extends React.Component {
@@ -189,13 +189,17 @@ class ArtworkList extends React.Component {
 const WorksPage = (props) => {
   const { lang, poet, works, artwork, error } = props;
 
+  useEffect(() => {
+    if (works.length === 0 && artwork.length === 0) {
+      Router.replace(Links.bioURL(lang, poet.id));
+    }
+  }, [artwork.length, lang, poet.id, works.length]);
+
   if (error) {
     return <ErrorPage error={error} lang={lang} message="Ukendt digter" />;
   }
 
   if (works.length === 0 && artwork.length === 0) {
-    const bioURL = Links.bioURL(lang, poet.id);
-    Router.replaceRoute(bioURL);
     return null;
   }
 

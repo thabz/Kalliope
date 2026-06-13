@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
+import Link from 'next/link';
 import CommonData from '../common/commondata.js';
 import LangContext from '../common/LangContext.js';
-import { Link } from '../routes';
 import * as Links from './links.js';
 import PictureOverlay from './pictureoverlay.js';
 import PoetName from './poetname.js';
@@ -16,7 +16,7 @@ const FigCaption = (props) => {
   if (!hideArtist && picture.artist != null) {
     artistRendered = (
       <>
-        <Link route={Links.poetURL(lang, picture.artist.id)}>
+        <Link href={Links.poetURL(lang, picture.artist.id)} legacyBehavior>
           <a>
             <PoetName poet={picture.artist} />
           </a>
@@ -38,7 +38,7 @@ const FigCaption = (props) => {
       museumRendered = (
         <>
           {' '}
-          <Link route={Links.museumURL(lang, picture.museum.id)}>{name}</Link>
+          <Link href={Links.museumURL(lang, picture.museum.id)}>{name}</Link>
           {'. '}
         </>
       );

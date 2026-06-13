@@ -11,7 +11,7 @@ import { poetNameString } from '../components/poetname-helpers.js';
 import PoetName from '../components/poetname.js';
 import { TextInline } from '../components/textcontent.js';
 import TwoColumns from '../components/twocolumns.js';
-import { Link } from '../routes';
+import Link from 'next/link';
 import ErrorPage from './error.js';
 
 const joinedByComma = (items, lang) => {
@@ -83,7 +83,7 @@ const PoemLink = (props) => {
   const { poem, lang } = props;
   const url = Links.textURL(lang, poem.id);
   return (
-    <Link route={url}>
+    <Link href={url} legacyBehavior>
       <a>»{poem.linkTitle}«</a>
     </Link>
   );

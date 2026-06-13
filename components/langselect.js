@@ -7,7 +7,7 @@ const LangSelect = ({ path }) => {
       <nav>
         {links.map(({ href, label }) =>
           <div key={href}>
-            <Link route={href}><a>{label}</a></Link>
+            <Link href={href} legacyBehavior><a>{label}</a></Link>
           </div>
         )}
         <style jsx>{`

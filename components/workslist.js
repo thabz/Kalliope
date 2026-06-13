@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
+import Link from 'next/link';
 import CommonData from '../common/commondata.js';
 import _ from '../common/translations.js';
 import { formattedDate } from '../components/formatteddate.js';
-import { Link } from '../routes';
 
 const workNameTranslated = (work, lang) => {
   let result = work.toctitle;
@@ -73,7 +73,7 @@ export default class WorksList extends React.Component {
 
       const url = `/${lang}/work/${poet.id}/${work.id}`;
       const name = work.has_content ? (
-        <Link route={url}>
+        <Link href={url} legacyBehavior>
           <a title="Vis værk">
             {workName}
             {yearRendered}

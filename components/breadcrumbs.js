@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
+import Link from 'next/link';
+import Router from 'next/router';
 import CommonData from '../common/commondata.js';
 import * as Strings from '../common/strings.js';
 import _ from '../common/translations.js';
 import { textLinkTitleString } from '../components/textname.js';
-import { Link, Router } from '../routes';
 import * as Links from './links.js';
 import PoetName from './poetname';
 import TextContent from './textcontent.js';
@@ -16,14 +17,14 @@ export const Paging = (props) => {
     if (e.keyCode === 37) {
       // Left cursor key
       if (prev != null && window && !window.searchFieldHasFocus) {
-        Router.pushRoute(prev.url);
+        Router.push(prev.url);
         window.scrollTo(0, 0);
         e.preventDefault();
       }
     } else if (e.keyCode === 39) {
       // Right cursor key
       if (next != null && window && !window.searchFieldHasFocus) {
-        Router.pushRoute(next.url);
+        Router.push(next.url);
         window.scrollTo(0, 0);
         e.preventDefault();
       }
@@ -49,7 +50,7 @@ export const Paging = (props) => {
     const style = { marginLeft: '16px', fontSize: '18px' };
     return (
       <div style={style} key={i}>
-        <Link route={url}>
+        <Link href={url} legacyBehavior>
           <a title={title}>{arrow}</a>
         </Link>
       </div>
@@ -185,7 +186,7 @@ const Breadcrumbs = (props) => {
       let link = null;
       if (i !== crumbs.length - 1 && crumb.url != null) {
         link = (
-          <Link route={crumb.url}>
+          <Link href={crumb.url} legacyBehavior>
             <a>{crumb.title}</a>
           </Link>
         );

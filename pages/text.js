@@ -22,7 +22,8 @@ import TextName, { textLinkTitleString } from '../components/textname.js';
 import TOC from '../components/toc.js';
 import { workTitleString } from '../components/workname.js';
 import WrapNonEmpty from '../components/wrapnonempty.js';
-import { Link, Router } from '../routes';
+import Link from 'next/link';
+import Router from 'next/router';
 import ErrorPage from './error.js';
 
 const Bladrer = (props) => {
@@ -34,7 +35,7 @@ const Bladrer = (props) => {
   }
   const onClick = (e) => {
     const url = Links.textURL(lang, target.id);
-    Router.pushRoute(url);
+    Router.push(url);
     window.scrollTo(0, 0);
     e.preventDefault();
   };
@@ -114,7 +115,7 @@ class KeywordLink extends React.Component {
     }
     return (
       <span>
-        <Link route={url}>
+        <Link href={url} legacyBehavior>
           <a className="keyword-link" title={keyword.title}>
             {keyword.title}
           </a>
