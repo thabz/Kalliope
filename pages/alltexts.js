@@ -55,9 +55,7 @@ const AllTextsPage = (props) => {
       const postfix = ` - ${line.poet.name}: ${line.work.title}`;
       return (
         <div key={line.textId} className="line">
-          <Link href={url} legacyBehavior>
-            <a>{line.line}</a>
-          </Link>
+          <Link href={url}>{line.line}</Link>
           {postfix}
           <style jsx>{`
             div.line {
@@ -86,9 +84,7 @@ const AllTextsPage = (props) => {
         l === letter ? (
           shownLetter
         ) : (
-          <Link href={url} legacyBehavior>
-            <a>{shownLetter}</a>
-          </Link>
+          <Link href={url}>{shownLetter}</Link>
         );
       return (
         <span key={l} style={style}>

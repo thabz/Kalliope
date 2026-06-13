@@ -73,11 +73,9 @@ export default class WorksList extends React.Component {
 
       const url = `/${lang}/work/${poet.id}/${work.id}`;
       const name = work.has_content ? (
-        <Link href={url} legacyBehavior>
-          <a title="Vis værk">
-            {workName}
-            {yearRendered}
-          </a>
+        <Link href={url} title="Vis værk">
+          {workName}
+          {yearRendered}
         </Link>
       ) : (
         [workName, yearRendered]

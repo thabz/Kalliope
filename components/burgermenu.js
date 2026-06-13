@@ -11,10 +11,8 @@ const MenuLink = (props) => {
   return (
     <div>
       {url != null ? (
-        <Link href={url} legacyBehavior>
-          <a title={title} onClick={close}>
-            {title}
-          </a>
+        <Link href={url} title={title} onClick={close}>
+          {title}
         </Link>
       ) : (
         title
@@ -106,10 +104,8 @@ const BurgerMenu = (props) => {
           alignItems: 'center',
         }}
       >
-        <Link href={Links.frontPageURL(lang)} legacyBehavior>
-          <a title="Gå til forsiden">
-            <h2 style={{ fontWeight: 300, padding: 0, margin: 0 }}>Kalliope</h2>
-          </a>
+        <Link href={Links.frontPageURL(lang)} title="Gå til forsiden">
+          <h2 style={{ fontWeight: 300, padding: 0, margin: 0 }}>Kalliope</h2>
         </Link>
         <BurgerSVG
           onClick={onClick}

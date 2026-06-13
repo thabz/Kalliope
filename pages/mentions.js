@@ -83,9 +83,7 @@ const PoemLink = (props) => {
   const { poem, lang } = props;
   const url = Links.textURL(lang, poem.id);
   return (
-    <Link href={url} legacyBehavior>
-      <a>»{poem.linkTitle}«</a>
-    </Link>
+    <Link href={url}>»{poem.linkTitle}«</Link>
   );
 };
 
