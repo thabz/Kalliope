@@ -34,10 +34,8 @@ const RenderedHits = ({ hits }) => {
         item = (
           <div>
             <div>
-              <Link href={workURL} legacyBehavior>
-                <a>
-                  <WorkName work={work} lang={lang} />
-                </a>
+              <Link href={workURL}>
+                <WorkName work={work} lang={lang} />
               </Link>
             </div>
             <div>
@@ -64,10 +62,8 @@ const RenderedHits = ({ hits }) => {
         item = (
           <div>
             <div className="title">
-              <Link href={textURL} legacyBehavior>
-                <a>
-                  <TextName text={text} />
-                </a>
+              <Link href={textURL}>
+                <TextName text={text} />
               </Link>
             </div>
             <div className="hightlights">{renderedHighlight}</div>
@@ -201,9 +197,7 @@ const SearchPage = (props) => {
     resultaterBeskrivelse += ` i ${genetive} værker.`;
     const fullSearchURL = Links.searchURL(lang, query, country);
     linkToFullSearch = (
-      <Link href={fullSearchURL} legacyBehavior>
-        <a>Søg i hele Kalliope.</a>
-      </Link>
+      <Link href={fullSearchURL}>Søg i hele Kalliope.</Link>
     );
   } else if (country != 'dk') {
     const countryData = CommonData.countries.filter((x) => x.code === country);

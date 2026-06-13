@@ -16,10 +16,8 @@ const FigCaption = (props) => {
   if (!hideArtist && picture.artist != null) {
     artistRendered = (
       <>
-        <Link href={Links.poetURL(lang, picture.artist.id)} legacyBehavior>
-          <a>
-            <PoetName poet={picture.artist} />
-          </a>
+        <Link href={Links.poetURL(lang, picture.artist.id)}>
+          <PoetName poet={picture.artist} />
         </Link>
         {': '}
       </>

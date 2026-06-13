@@ -115,10 +115,8 @@ class KeywordLink extends React.Component {
     }
     return (
       <span>
-        <Link href={url} legacyBehavior>
-          <a className="keyword-link" title={keyword.title}>
-            {keyword.title}
-          </a>
+        <Link href={url} className="keyword-link" title={keyword.title}>
+          {keyword.title}
         </Link>
         <style jsx>{`
           :global(a.keyword-link) {

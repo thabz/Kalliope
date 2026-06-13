@@ -10,9 +10,7 @@ export default class SectionedList extends React.Component {
       const list = items.map((item) => {
         const content =
           item.url != null ? (
-            <Link href={item.url} legacyBehavior>
-              <a>{item.html}</a>
-            </Link>
+            <Link href={item.url}>{item.html}</Link>
           ) : (
             item.html
           );

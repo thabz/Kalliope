@@ -37,8 +37,8 @@ class CountryPicker extends React.Component {
         return <b key={country.code}>{adj}</b>;
       } else {
         return (
-          <Link href={url} key={country.code} legacyBehavior>
-            <a>{adj}</a>
+          <Link href={url} key={country.code}>
+            {adj}
           </Link>
         );
       }
@@ -121,10 +121,8 @@ const PoetLooksPage = (props) => {
       );
     } else {
       item = (
-        <Link key={poet.id} href={url} legacyBehavior>
-          <a>
-            <MissingPortrait poet={poet} lang={lang} />
-          </a>
+        <Link key={poet.id} href={url}>
+          <MissingPortrait poet={poet} lang={lang} />
         </Link>
       );
     }

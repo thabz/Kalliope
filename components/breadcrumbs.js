@@ -50,8 +50,8 @@ export const Paging = (props) => {
     const style = { marginLeft: '16px', fontSize: '18px' };
     return (
       <div style={style} key={i}>
-        <Link href={url} legacyBehavior>
-          <a title={title}>{arrow}</a>
+        <Link href={url} title={title}>
+          {arrow}
         </Link>
       </div>
     );
@@ -185,11 +185,7 @@ const Breadcrumbs = (props) => {
       }
       let link = null;
       if (i !== crumbs.length - 1 && crumb.url != null) {
-        link = (
-          <Link href={crumb.url} legacyBehavior>
-            <a>{crumb.title}</a>
-          </Link>
-        );
+        link = <Link href={crumb.url}>{crumb.title}</Link>;
       } else {
         link = crumb.title;
       }

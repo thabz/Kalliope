@@ -162,10 +162,8 @@ const Tabs = (props) => {
       const className = item.id === selected ? 'tab selected' : 'tab';
       return (
         <div className={className} key={item.url}>
-          <Link href={item.url} legacyBehavior>
-            <a>
-              <h2>{item.title}</h2>
-            </a>
+          <Link href={item.url}>
+            <h2>{item.title}</h2>
           </Link>
         </div>
       );

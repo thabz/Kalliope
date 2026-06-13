@@ -31,8 +31,8 @@ const CountryPicker = (props) => {
       return <b key={country.code}>{adj}</b>;
     } else {
       return (
-        <Link href={url} key={country.code} legacyBehavior>
-          <a>{adj}</a>
+        <Link href={url} key={country.code}>
+          {adj}
         </Link>
       );
     }

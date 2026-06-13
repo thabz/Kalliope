@@ -23,9 +23,7 @@ const MuseumsPage = (props) => {
     .map((museum) => {
       return (
         <div>
-          <Link href={Links.museumURL(lang, museum.id)} legacyBehavior>
-            <a>{museum.sortName}</a>
-          </Link>
+          <Link href={Links.museumURL(lang, museum.id)}>{museum.sortName}</Link>
         </div>
       );
     });

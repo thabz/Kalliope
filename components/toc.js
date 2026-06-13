@@ -17,9 +17,7 @@ export default class extends React.Component {
           } else {
             const url = Links.textURL(lang, id);
             shownTitle = (
-              <Link href={url} legacyBehavior>
-                <a>{renderedTitle}</a>
-              </Link>
+              <Link href={url}>{renderedTitle}</Link>
             );
           }
           const className = `level-${item.level == null ? 1 : item.level}`;
@@ -39,10 +37,8 @@ export default class extends React.Component {
         } else if (type === 'text' && id != null) {
           const url = Links.textURL(lang, id);
           const linkedTitle = (
-            <Link href={url} legacyBehavior>
-              <a>
-                <TextContent contentHtml={title} lang={lang} />
-              </a>
+            <Link href={url}>
+              <TextContent contentHtml={title} lang={lang} />
             </Link>
           );
           return (
