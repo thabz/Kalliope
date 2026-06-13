@@ -34,6 +34,7 @@ class NodeSafeHashedChunkIdsPlugin {
 }
 
 module.exports = {
+  outputFileTracingRoot: __dirname,
   webpack: (config, { dev, isServer }) => {
     if (dev) {
       config.watchOptions = {
