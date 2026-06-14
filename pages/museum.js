@@ -1,5 +1,4 @@
 import 'isomorphic-fetch';
-import React from 'react';
 import * as Client from '../common/client.js';
 import _ from '../common/translations.js';
 import { kalliopeCrumbs } from '../components/breadcrumbs.js';

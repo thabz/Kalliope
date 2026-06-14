@@ -1,5 +1,5 @@
 import 'isomorphic-fetch';
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { createURL } from '../common/client.js';
 import LangContext from '../common/LangContext.js';
 import { kalliopeCrumbs } from '../components/breadcrumbs';
@@ -154,18 +154,18 @@ let Index = (props) => {
   const requestPath = `/${lang}/`;
 
   const paging =
-    pagingContext != null
-      ? {
-          prev: {
-            url: `/${lang}/?date=${pagingContext.prev}`,
-            title: 'En dag tilbage',
-          },
-          next: {
-            url: `/${lang}/?date=${pagingContext.next}`,
-            title: 'En dag frem',
-          },
-        }
-      : null;
+    pagingContext != null ?
+      {
+        prev: {
+          url: `/${lang}/?date=${pagingContext.prev}`,
+          title: 'En dag tilbage',
+        },
+        next: {
+          url: `/${lang}/?date=${pagingContext.next}`,
+          title: 'En dag frem',
+        },
+      }
+    : null;
 
   const sidebar = <TodaysEvents events={todaysEvents} />;
 
@@ -217,7 +217,7 @@ Index.getInitialProps = async ({ query: { lang, date } }) => {
   }
   const newsPromise = fetch(createURL(`/api/news_${lang}.json`));
   const todayPromise = fetch(
-    createURL(`/api/today/${lang}/${dayAndMonth}.json`)
+    createURL(`/api/today/${lang}/${dayAndMonth}.json`),
   );
   const todayResponse = await todayPromise;
   const newsResponse = await newsPromise;

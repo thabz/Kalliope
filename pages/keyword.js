@@ -1,4 +1,3 @@
-import React from 'react';
 import * as Client from '../common/client.js';
 import * as OpenGraph from '../common/opengraph.js';
 import _ from '../common/translations.js';

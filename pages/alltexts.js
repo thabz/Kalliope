@@ -1,4 +1,4 @@
-import React from 'react';
+import Link from 'next/link';
 import * as Client from '../common/client.js';
 import CommonData from '../common/commondata.js';
 import * as Strings from '../common/strings.js';
@@ -7,7 +7,6 @@ import { kalliopeCrumbs } from '../components/breadcrumbs.js';
 import * as Links from '../components/links';
 import Page from '../components/page.js';
 import TwoColumns from '../components/twocolumns';
-import Link from 'next/link';
 import ErrorPage from './error.js';
 
 const AllTextsPage = (props) => {
@@ -81,11 +80,7 @@ const AllTextsPage = (props) => {
         fontWeight: l === letter ? 'bold' : 'normal',
       };
       const link =
-        l === letter ? (
-          shownLetter
-        ) : (
-          <Link href={url}>{shownLetter}</Link>
-        );
+        l === letter ? shownLetter : <Link href={url}>{shownLetter}</Link>;
       return (
         <span key={l} style={style}>
           {link}

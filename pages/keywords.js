@@ -1,5 +1,5 @@
 import 'isomorphic-fetch';
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { createURL } from '../common/client.js';
 import LangContext from '../common/LangContext.js';
 import * as Sorting from '../common/sorting.js';
@@ -42,9 +42,9 @@ const Keywords = (props) => {
   groups.forEach((group) => {
     const items = group.items.map((keyword) => {
       const url =
-        keyword.redirectURL != null
-          ? keyword.redirectURL.replace('${lang}', lang)
-          : Links.keywordURL(lang, keyword.id);
+        keyword.redirectURL != null ?
+          keyword.redirectURL.replace('${lang}', lang)
+        : Links.keywordURL(lang, keyword.id);
       return {
         id: keyword.id,
         url,

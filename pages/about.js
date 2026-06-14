@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import * as Client from '../common/client.js';
 import LangContext from '../common/LangContext.js';
 import { kalliopeCrumbs } from '../components/breadcrumbs.js';

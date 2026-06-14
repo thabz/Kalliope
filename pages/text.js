@@ -1,3 +1,5 @@
+import Link from 'next/link';
+import Router from 'next/router';
 import React, { useContext, useEffect } from 'react';
 import * as Client from '../common/client.js';
 import LangContext from '../common/LangContext.js';
@@ -22,8 +24,6 @@ import TextName, { textLinkTitleString } from '../components/textname.js';
 import TOC from '../components/toc.js';
 import { workTitleString } from '../components/workname.js';
 import WrapNonEmpty from '../components/wrapnonempty.js';
-import Link from 'next/link';
-import Router from 'next/router';
 import ErrorPage from './error.js';
 
 const Bladrer = (props) => {
@@ -246,7 +246,7 @@ const TextPage = (props) => {
   text.notes
     .filter(
       (note) =>
-        note.type === 'unknown-original' && note.unknownOriginalBy != null
+        note.type === 'unknown-original' && note.unknownOriginalBy != null,
     )
     .map((note, i) => {
       const poet = note.unknownOriginalBy;
@@ -259,7 +259,7 @@ const TextPage = (props) => {
         {
           poetId: poet.id,
           poetName: poetNameString(poet, false, true),
-        }
+        },
       );
       return (
         <Note key={'unknown' + i} type={'unknown-original'}>
@@ -301,7 +301,7 @@ const TextPage = (props) => {
           contentHtml={[[sourceText, { html: true }]]}
           contentLang="da"
         />
-      </Note>
+      </Note>,
     );
   }
 
@@ -344,7 +344,7 @@ const TextPage = (props) => {
         startIndex={firstPageNumber - 1}
         lang="da"
         contentLang="da"
-      />
+      />,
     );
   }
 
@@ -375,7 +375,7 @@ const TextPage = (props) => {
     let heading = null;
     const varianter = _(
       pluralize(variants.length, 'Variant', 'Varianter'),
-      lang
+      lang,
     );
     if (text.text_type === 'section') {
       heading = _('{varianter} af denne samling:', lang, { varianter });
@@ -485,7 +485,7 @@ const TextPage = (props) => {
         .map((b) => b.lines)
         .reduce((result, lines) => {
           return result.concat(lines);
-        }, [])
+        }, []),
     );
 
     // Titlen skal indentes hvis første ikke-quote block indeholder numre.

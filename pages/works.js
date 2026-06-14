@@ -1,6 +1,6 @@
 import 'isomorphic-fetch';
-import React, { useEffect } from 'react';
 import Router from 'next/router';
+import React, { useEffect } from 'react';
 import * as Client from '../common/client.js';
 import * as OpenGraph from '../common/opengraph.js';
 import _ from '../common/translations.js';
@@ -208,13 +208,13 @@ const WorksPage = (props) => {
     <PicturesGrid lang={lang} poet={poet} artwork={artwork} hideArtist={true} />
   );
   const worksTitle =
-    artwork.length === 0 || works.length === 0 ? null : (
-      <h3>{_('Litteratur', lang)}</h3>
-    );
+    artwork.length === 0 || works.length === 0 ?
+      null
+    : <h3>{_('Litteratur', lang)}</h3>;
   const artworksTitle =
-    artwork.length === 0 || works.length === 0 ? null : (
-      <h3>{_('Kunst', lang)}</h3>
-    );
+    artwork.length === 0 || works.length === 0 ?
+      null
+    : <h3>{_('Kunst', lang)}</h3>;
 
   const stack = (
     <>

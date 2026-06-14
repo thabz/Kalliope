@@ -1,4 +1,3 @@
-import React from 'react';
 import { kalliopeCrumbs } from '../components/breadcrumbs.js';
 import { kalliopeMenu } from '../components/menu.js';
 import Page from '../components/page.js';

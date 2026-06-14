@@ -1,4 +1,5 @@
-import React, { Fragment, useState } from 'react';
+import Link from 'next/link';
+import { Fragment, useState } from 'react';
 import * as Client from '../common/client.js';
 import * as OpenGraph from '../common/opengraph.js';
 import { poetsByLastname } from '../common/sorting.js';
@@ -11,7 +12,6 @@ import { poetNameString } from '../components/poetname-helpers.js';
 import PoetName from '../components/poetname.js';
 import { TextInline } from '../components/textcontent.js';
 import TwoColumns from '../components/twocolumns.js';
-import Link from 'next/link';
 import ErrorPage from './error.js';
 
 const joinedByComma = (items, lang) => {
@@ -82,9 +82,7 @@ const Item = (props) => {
 const PoemLink = (props) => {
   const { poem, lang } = props;
   const url = Links.textURL(lang, poem.id);
-  return (
-    <Link href={url}>»{poem.linkTitle}«</Link>
-  );
+  return <Link href={url}>»{poem.linkTitle}«</Link>;
 };
 
 const TranslationsGroupedByTranslated = (props) => {
@@ -134,7 +132,7 @@ const TranslationsGroupedByTranslated = (props) => {
             <PoemLink poem={a.translation.poem} lang={lang} />
           </Item>
         );
-      })
+      }),
   );
 };
 
@@ -273,14 +271,14 @@ const MentionsPage = (props) => {
         translations={translations}
         lang={lang}
         key={'translations'}
-      />
+      />,
     );
   }
 
   return (
     <Page
       headTitle={`${_('Henvisninger', lang)} - ${poetNameString(
-        poet
+        poet,
       )} - Kalliope`}
       ogTitle={poetNameString(poet, false, false)}
       ogImage={OpenGraph.poetImage(poet)}

@@ -1,4 +1,5 @@
 import 'isomorphic-fetch';
+import Link from 'next/link';
 import React from 'react';
 import { createURL } from '../common/client.js';
 import CommonData from '../common/commondata.js';
@@ -8,7 +9,6 @@ import Page from '../components/page.js';
 import Picture from '../components/picture.js';
 import { poetNameString } from '../components/poetname-helpers.js';
 import PoetName from '../components/poetname.js';
-import Link from 'next/link';
 
 function joinWithCommaAndOr(items, andOrWord) {
   const result = [];
@@ -20,7 +20,7 @@ function joinWithCommaAndOr(items, andOrWord) {
       result.push(
         <span key={i} style={{ marginLeft: '-0.25em' }}>
           ,{' '}
-        </span>
+        </span>,
       );
     }
   });
@@ -103,7 +103,7 @@ const PoetLooksPage = (props) => {
       const name = `<a href="/${lang}/bio/${poet.id}">${poetNameString(
         poet,
         false,
-        true
+        true,
       )}</a>`;
       const picture = {
         src: poet.portrait,

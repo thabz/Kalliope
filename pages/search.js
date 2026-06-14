@@ -1,4 +1,5 @@
-import React, { useContext, useEffect, useState } from 'react';
+import Link from 'next/link';
+import { useContext, useEffect, useState } from 'react';
 import * as Client from '../common/client.js';
 import CommonData from '../common/commondata.js';
 import LangContext from '../common/LangContext.js';
@@ -17,7 +18,6 @@ import {
 import PoetName from '../components/poetname.js';
 import TextName from '../components/textname.js';
 import WorkName from '../components/workname.js';
-import Link from 'next/link';
 import ErrorPage from './error.js';
 
 const RenderedHits = ({ hits }) => {
@@ -114,7 +114,7 @@ const SearchPage = (props) => {
       poet != null ? poet.id : '',
       country,
       query,
-      resultPage + 1
+      resultPage + 1,
     );
     setFetchingMore(false);
     if (result.error != null) {
@@ -138,7 +138,7 @@ const SearchPage = (props) => {
         body.offsetHeight || 0,
         html.clientHeight || 0,
         html.scrollHeight || 0,
-        html.offsetHeight || 0
+        html.offsetHeight || 0,
       );
       if (window.pageYOffset + window.innerHeight > documentHeight - 600) {
         fetchMoreItems();
@@ -165,7 +165,7 @@ const SearchPage = (props) => {
         poet != null ? poet.id : '',
         country,
         query,
-        0
+        0,
       );
       if (result.error != null) {
         setError(result.error);
@@ -196,9 +196,7 @@ const SearchPage = (props) => {
     const genetive = poetGenetiveLastName(poet, lang);
     resultaterBeskrivelse += ` i ${genetive} værker.`;
     const fullSearchURL = Links.searchURL(lang, query, country);
-    linkToFullSearch = (
-      <Link href={fullSearchURL}>Søg i hele Kalliope.</Link>
-    );
+    linkToFullSearch = <Link href={fullSearchURL}>Søg i hele Kalliope.</Link>;
   } else if (country != 'dk') {
     const countryData = CommonData.countries.filter((x) => x.code === country);
     if (countryData.length > 0) {
@@ -207,9 +205,10 @@ const SearchPage = (props) => {
     }
   }
 
-  const henterFlere = isFetchingMore ? (
-    <div style={{ marginBottom: '500px' }}>Henter flere...</div>
-  ) : null;
+  const henterFlere =
+    isFetchingMore ?
+      <div style={{ marginBottom: '500px' }}>Henter flere...</div>
+    : null;
 
   let tabs = null;
   let headTitle = null;
