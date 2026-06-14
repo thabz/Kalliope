@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { Fragment } from 'react';
 import CommonData from '../common/commondata.js';
 import _ from '../common/translations.js';
-import { formattedDate } from '../components/formatteddate.js';
+import { formattedYear } from '../components/formatteddate.js';
 
 const workNameTranslated = (work, lang) => {
   let result = work.toctitle;
@@ -63,7 +63,7 @@ const WorksList = ({ lang, poet, works }) => {
       yearRendered = (
         <span key="year" className="lighter">
           {' '}
-          ({formattedDate(year)})
+          ({formattedYear(year)})
         </span>
       );
     }

@@ -1,6 +1,7 @@
 import {
   formattedAge,
   formattedDate,
+  formatYearEra,
   formattedYearRange,
   formattedYear,
   parseDate,
@@ -18,6 +19,12 @@ it('it parses dates including negative years', () => {
     year: 100,
     month: 6,
     day: 7,
+  });
+  expect(parseDate('1818-06')).toEqual({
+    prefix: null,
+    year: 1818,
+    month: 6,
+    day: null,
   });
   expect(parseDate('-0100-02-03')).toEqual({
     prefix: null,
@@ -45,6 +52,12 @@ it('it formats single years', () => {
   expect(formattedYear('1818')).toEqual('1818');
   expect(formattedYear('-0100')).toEqual('100 f.Kr.');
   expect(formattedYear('ca 1818')).toEqual('c. 1818');
+});
+
+it('it formats year eras', () => {
+  expect(formatYearEra('100', 'bce')).toEqual('100 f.Kr.');
+  expect(formatYearEra('20', 'ce')).toEqual('20 e.Kr.');
+  expect(formatYearEra('1818', null)).toEqual('1818');
 });
 
 it('it formats age', () => {

@@ -1,6 +1,10 @@
 const { safeMkdir, writeJSON, htmlToXml } = require('../libs/helpers.js');
 const { isFileModified } = require('../libs/caching.js');
 const {
+  compareNormalizedDate,
+  normalizeTimelineDate,
+} = require('../../common/dates.js');
+const {
   safeGetAttr,
   safeGetInnerXML,
   getChildByTagName,
@@ -9,50 +13,8 @@ const {
 } = require('./xml.js');
 const { get_picture } = require('./parsing.js');
 
-// Accepterer sYYYY, sYYYY-MM, sYYYY-MM-DD og returnerer altid sYYYY-MM-DD
-const normalize_timeline_date = (date) => {
-  date = date.replace('ca.', '').replace('c.', '').trim();
-  // Tjek for negativt år
-  const isNegative = date.startsWith('-');
-  const cleanDate = isNegative ? date.slice(1) : date;
-  const parts = cleanDate.split('-');
-  if (parts.length === 1) {
-    parts.push('01', '01');
-  } else if (parts.length === 2) {
-    parts.push('01');
-  }
-
-  const normalized = `${parts[0]}-${parts[1]}-${parts[2]}`;
-  return isNegative ? `-${normalized}` : normalized;
-};
-
-function compare_normalized_date(a, b) {
-  function parse(s) {
-    // s = "YYYY-MM-DD" eller "-YYYY-MM-DD"
-    const sign = s[0] === '-' ? -1 : 1;
-    const offset = sign === -1 ? 1 : 0;
-
-    const year = sign * Number(s.slice(offset, offset + 4));
-    const month = Number(s.slice(offset + 5, offset + 7));
-    const day = Number(s.slice(offset + 8, offset + 10));
-
-    return { year, month, day };
-  }
-
-  const pa = parse(a);
-  const pb = parse(b);
-
-  if (pa.year !== pb.year) {
-    return pa.year < pb.year ? -1 : 1;
-  }
-  if (pa.month !== pb.month) {
-    return pa.month < pb.month ? -1 : 1;
-  }
-  if (pa.day !== pb.day) {
-    return pa.day < pb.day ? -1 : 1;
-  }
-  return 0;
-}
+const normalize_timeline_date = normalizeTimelineDate;
+const compare_normalized_date = compareNormalizedDate;
 
 const sorted_timeline = (timeline) => {
   return timeline.sort((a, b) =>

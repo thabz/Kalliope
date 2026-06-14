@@ -11,4 +11,13 @@ describe('work name helpers', () => {
     );
     expect(workTitleString({ title: 'Digte', year: '?' })).toBe('Digte');
   });
+
+  it('always formats work dates as years only', () => {
+    expect(workTitleString({ title: 'Digte', year: '1818-06-07' })).toBe(
+      'Digte (1818)'
+    );
+    expect(workTitleString({ title: 'Digte', year: 'ca. 1818-06-07' })).toBe(
+      'Digte (c. 1818)'
+    );
+  });
 });
