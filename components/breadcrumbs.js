@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
 import Link from 'next/link';
 import Router from 'next/router';
+import { useEffect } from 'react';
 import CommonData from '../common/commondata.js';
 import * as Strings from '../common/strings.js';
 import _ from '../common/translations.js';

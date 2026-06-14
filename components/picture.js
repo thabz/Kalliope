@@ -1,5 +1,5 @@
-import React, { useContext, useState } from 'react';
 import Link from 'next/link';
+import { useContext, useState } from 'react';
 import CommonData from '../common/commondata.js';
 import LangContext from '../common/LangContext.js';
 import * as Links from './links.js';
@@ -162,8 +162,7 @@ const Picture = ({
         <picture
           className={pictureClassName}
           onClick={onClick}
-          style={clipPathDropShadowStyle}
-        >
+          style={clipPathDropShadowStyle}>
           {sources}
           <img
             className={pictureClassName}

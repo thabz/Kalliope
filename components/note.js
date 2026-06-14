@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Note = (props) => {
   const { className, type, children } = props;
   let finalClassName = (className || '') + ' sidebar-note';

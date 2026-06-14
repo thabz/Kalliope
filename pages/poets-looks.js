@@ -19,7 +19,7 @@ function joinWithCommaAndOr(items, andOrWord) {
       result.push(
         <span key={i} style={{ marginLeft: '-0.25em' }}>
           ,{' '}
-        </span>,
+        </span>
       );
     }
   });
@@ -96,7 +96,7 @@ const PoetLooksPage = (props) => {
       const name = `<a href="/${lang}/bio/${poet.id}">${poetNameString(
         poet,
         false,
-        true,
+        true
       )}</a>`;
       const picture = {
         src: poet.portrait,
@@ -149,8 +149,7 @@ const PoetLooksPage = (props) => {
       requestPath={requestPath}
       pageTitle={pageTitle}
       menuItems={tabs}
-      selectedMenuItem="looks"
-    >
+      selectedMenuItem="looks">
       <div className="picture-container">{renderedPortraits}</div>
       <CountryPicker
         style={{ marginTop: '40px' }}

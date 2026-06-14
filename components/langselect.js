@@ -1,5 +1,3 @@
-import React from 'react';
-
 const LangSelect = ({ path }) => {
   return <div style={{ paddingBottom: '70px' }} />;
   /*

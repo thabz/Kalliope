@@ -25,12 +25,12 @@ const poetListItem = (poet) => {
       sortname: name.sortname,
     },
     period:
-      period == null ? null : (
-        {
-          born: period.born == null ? null : { date: period.born.date },
-          dead: period.dead == null ? null : { date: period.dead.date },
-        }
-      ),
+      period == null
+        ? null
+        : {
+            born: period.born == null ? null : { date: period.born.date },
+            dead: period.dead == null ? null : { date: period.dead.date },
+          },
   };
 };
 
@@ -120,9 +120,9 @@ const Poets = (props) => {
     },
   ];
   const groups =
-    groupBy === 'name' ?
-      groupsByLetter(poets, lang)
-    : groupsByYear(poets, lang);
+    groupBy === 'name'
+      ? groupsByLetter(poets, lang)
+      : groupsByYear(poets, lang);
 
   let sections = [];
 
@@ -162,8 +162,7 @@ const Poets = (props) => {
       menuItems={tabs}
       selectedMenuItem={groupBy}
       country={country}
-      pageTitle={pageTitle}
-    >
+      pageTitle={pageTitle}>
       {renderedGroups}
       <CountryPicker
         style={{ marginTop: '40px' }}

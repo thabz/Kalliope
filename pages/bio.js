@@ -67,8 +67,7 @@ const PersonMeta = ({ poet, lang }) => {
   // Age when dead
   let age = formattedAge(poet.period, lang);
 
-  let born =
-    poet.period == null ? null : dateAndPlace(poet.period.born, lang);
+  let born = poet.period == null ? null : dateAndPlace(poet.period.born, lang);
   let dead =
     poet.period == null ? null : dateAndPlace(poet.period.dead, lang, age);
 
@@ -172,8 +171,7 @@ const Timeline = ({ timeline, lang }) => {
           marginBottom: '10px',
           breakInside: 'avoid',
           lineHeight: '22px',
-        }}
-      >
+        }}>
         <div style={{ float: 'left', fontSize: '15px' }}>
           {year == null ? null : year}
         </div>
@@ -182,8 +180,7 @@ const Timeline = ({ timeline, lang }) => {
             marginLeft: '50px',
             fontSize: '16px',
             color: item.is_history_item ? '#666' : 'black',
-          }}
-        >
+          }}>
           {html}
         </div>
       </div>
@@ -224,8 +221,7 @@ const BioPage = (props) => {
       pageSubtitle={_('Biografi', lang)}
       menuItems={poetMenu(poet)}
       poet={poet}
-      selectedMenuItem="bio"
-    >
+      selectedMenuItem="bio">
       <SidebarSplit sidebar={sidebarItems} sidebarOnTopWhenSplit={true}>
         <div style={{ lineHeight: '1.6' }}>
           <TextContent

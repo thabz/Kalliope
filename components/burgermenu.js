@@ -1,5 +1,5 @@
-import React, { useContext, useState } from 'react';
 import Link from 'next/link';
+import { useContext, useState } from 'react';
 import CommonData from '../common/commondata.js';
 import LangContext from '../common/LangContext.js';
 import { BurgerSVG, CrossSVG } from './icons.js';
@@ -40,8 +40,7 @@ const Menu = (props) => {
   return (
     <div
       style={{ position: 'absolute', left: 0, right: 0, top: 0, bottom: 0 }}
-      onClick={onBackgroundClick}
-    >
+      onClick={onBackgroundClick}>
       <div className="container">
         <CrossSVG
           onClick={close}
@@ -102,8 +101,7 @@ const BurgerMenu = (props) => {
           justifyContent: 'space-between',
           width: '100%',
           alignItems: 'center',
-        }}
-      >
+        }}>
         <Link href={Links.frontPageURL(lang)} title="Gå til forsiden">
           <h2 style={{ fontWeight: 300, padding: 0, margin: 0 }}>Kalliope</h2>
         </Link>

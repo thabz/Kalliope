@@ -72,8 +72,7 @@ const Item = (props) => {
         textIndent: '-30px',
         breakInside: 'avoid',
         lineHeight: 1.4,
-      }}
-    >
+      }}>
       {children}
     </div>
   );
@@ -132,7 +131,7 @@ const TranslationsGroupedByTranslated = (props) => {
             <PoemLink poem={a.translation.poem} lang={lang} />
           </Item>
         );
-      }),
+      })
   );
 };
 
@@ -229,8 +228,7 @@ const TranslationsSection = (props) => {
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'baseline',
-      }}
-    >
+      }}>
       <div>{sectionTitle('translations', lang)}</div>
       <div style={{ fontSize: '16px' }}>{groupByOptions}</div>
     </div>
@@ -271,14 +269,14 @@ const MentionsPage = (props) => {
         translations={translations}
         lang={lang}
         key={'translations'}
-      />,
+      />
     );
   }
 
   return (
     <Page
       headTitle={`${_('Henvisninger', lang)} - ${poetNameString(
-        poet,
+        poet
       )} - Kalliope`}
       ogTitle={poetNameString(poet, false, false)}
       ogImage={OpenGraph.poetImage(poet)}
@@ -288,8 +286,7 @@ const MentionsPage = (props) => {
       subtitle={_('Henvisninger', lang)}
       menuItems={poetMenu(poet)}
       poet={poet}
-      selectedMenuItem="mentions"
-    >
+      selectedMenuItem="mentions">
       <div style={{ paddingTop: '3px' }}>{sections}</div>
     </Page>
   );

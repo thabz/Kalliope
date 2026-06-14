@@ -111,8 +111,7 @@ const AllTextsPage = (props) => {
       crumbs={[...kalliopeCrumbs(lang), { title: pageTitle }]}
       pageTitle={pageTitle}
       menuItems={tabs}
-      selectedMenuItem={type}
-    >
+      selectedMenuItem={type}>
       <div style={{ lineHeight: 1.5 }}>
         <TwoColumns>{renderedLines}</TwoColumns>
       </div>

@@ -38,8 +38,7 @@ const MuseumsPage = (props) => {
       crumbs={crumbs}
       pageTitle={_('Museer', lang)}
       menuItems={kalliopeMenu()}
-      selectedMenuItem="keywords"
-    >
+      selectedMenuItem="keywords">
       <div className="two-columns" style={{ lineHeight: 1.7 }}>
         {items}
       </div>

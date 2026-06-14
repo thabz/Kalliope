@@ -114,7 +114,7 @@ const SearchPage = (props) => {
       poet != null ? poet.id : '',
       country,
       query,
-      resultPage + 1,
+      resultPage + 1
     );
     setFetchingMore(false);
     if (result.error != null) {
@@ -138,7 +138,7 @@ const SearchPage = (props) => {
         body.offsetHeight || 0,
         html.clientHeight || 0,
         html.scrollHeight || 0,
-        html.offsetHeight || 0,
+        html.offsetHeight || 0
       );
       if (window.pageYOffset + window.innerHeight > documentHeight - 600) {
         fetchMoreItems();
@@ -165,7 +165,7 @@ const SearchPage = (props) => {
         poet != null ? poet.id : '',
         country,
         query,
-        0,
+        0
       );
       if (result.error != null) {
         setError(result.error);
@@ -205,10 +205,9 @@ const SearchPage = (props) => {
     }
   }
 
-  const henterFlere =
-    isFetchingMore ?
-      <div style={{ marginBottom: '500px' }}>Henter flere...</div>
-    : null;
+  const henterFlere = isFetchingMore ? (
+    <div style={{ marginBottom: '500px' }}>Henter flere...</div>
+  ) : null;
 
   let tabs = null;
   let headTitle = null;
@@ -239,8 +238,7 @@ const SearchPage = (props) => {
       country={country}
       menuItems={tabs}
       poet={poet}
-      selectedMenuItem="search"
-    >
+      selectedMenuItem="search">
       <div className="result-items">
         <div className="result-count">
           {resultaterBeskrivelse} {linkToFullSearch}

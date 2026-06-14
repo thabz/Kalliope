@@ -49,12 +49,12 @@ const WorkPage = (props) => {
   });
   const renderedPictures = <SidebarPictures>{workPictures}</SidebarPictures>;
   const completedStatus =
-    work.status === 'incomplete' && work.id !== 'andre' ?
+    work.status === 'incomplete' && work.id !== 'andre' ? (
       <div>
         Kalliopes udgave af <WorkName work={work} cursive={true} lang={lang} />{' '}
         er endnu ikke fuldstændig.
       </div>
-    : null;
+    ) : null;
   let sidebar = null;
   if (pictures.length > 0 || notes.length > 0 || completedStatus != null) {
     sidebar = (
@@ -89,7 +89,7 @@ const WorkPage = (props) => {
   return (
     <Page
       headTitle={`${workTitleString(work)} - ${poetNameString(
-        poet,
+        poet
       )} - Kalliope`}
       ogTitle={
         poetNameString(poet, false, false) + ': ' + workTitleString(work)
@@ -102,8 +102,7 @@ const WorkPage = (props) => {
       pageSubtitle={_('Værker', lang)}
       menuItems={poetMenu(poet)}
       poet={poet}
-      selectedMenuItem="works"
-    >
+      selectedMenuItem="works">
       <SidebarSplit sidebar={sidebar}>
         <div>
           <SubHeading>

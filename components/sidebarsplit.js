@@ -1,4 +1,9 @@
-const SidebarSplit = ({ children, sidebar, sidebarOnTopWhenSplit, style = {} }) => {
+const SidebarSplit = ({
+  children,
+  sidebar,
+  sidebarOnTopWhenSplit,
+  style = {},
+}) => {
   let className =
     sidebar == null || sidebar.length == 0
       ? 'sidebar-spl empty'

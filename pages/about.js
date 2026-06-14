@@ -118,8 +118,7 @@ const About = (props) => {
       crumbs={crumbs}
       pageTitle={'Kalliope'}
       menuItems={kalliopeMenu()}
-      selectedMenuItem="about"
-    >
+      selectedMenuItem="about">
       {pageBody}
     </Page>
   );

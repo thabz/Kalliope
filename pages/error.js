@@ -12,8 +12,7 @@ const ErrorPage = (props) => {
       pageTitle=" "
       pageSubtitle={message}
       menuItems={kalliopeMenu()}
-      selectedMenuItem="index"
-    >
+      selectedMenuItem="index">
       <SubHeading>{message}</SubHeading>
       <div style={{ lineHeight: 1.7 }}>
         Noget er gået helt galt. Hvis du har lyst, må du meget gerne skrive til{' '}

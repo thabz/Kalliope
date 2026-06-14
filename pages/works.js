@@ -37,13 +37,13 @@ const WorksPage = (props) => {
     <PicturesGrid lang={lang} poet={poet} artwork={artwork} hideArtist={true} />
   );
   const worksTitle =
-    artwork.length === 0 || works.length === 0 ?
-      null
-    : <h3>{_('Litteratur', lang)}</h3>;
+    artwork.length === 0 || works.length === 0 ? null : (
+      <h3>{_('Litteratur', lang)}</h3>
+    );
   const artworksTitle =
-    artwork.length === 0 || works.length === 0 ?
-      null
-    : <h3>{_('Kunst', lang)}</h3>;
+    artwork.length === 0 || works.length === 0 ? null : (
+      <h3>{_('Kunst', lang)}</h3>
+    );
 
   const stack = (
     <>
@@ -78,8 +78,7 @@ const WorksPage = (props) => {
       pageSubtitle={_('Værker', lang)}
       menuItems={poetMenu(poet)}
       poet={poet}
-      selectedMenuItem="works"
-    >
+      selectedMenuItem="works">
       <div className="two-columns">
         {stack}
         <style jsx>{`

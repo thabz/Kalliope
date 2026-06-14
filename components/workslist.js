@@ -1,5 +1,5 @@
-import { Fragment } from 'react';
 import Link from 'next/link';
+import { Fragment } from 'react';
 import CommonData from '../common/commondata.js';
 import _ from '../common/translations.js';
 import { formattedDate } from '../components/formatteddate.js';
@@ -117,9 +117,7 @@ const WorksList = ({ lang, poet, works }) => {
           line-height: 1.7;
           padding: 0;
         }
-        :global(table.toc)
-          :global(td.workname.has-content)
-          :global(.lighter) {
+        :global(table.toc) :global(td.workname.has-content) :global(.lighter) {
           color: ${CommonData.lightLinkColor} !important;
         }
         :global(table.toc) :global(td.workname.no-content) :global(.lighter) {

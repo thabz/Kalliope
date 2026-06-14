@@ -42,9 +42,9 @@ const Keywords = (props) => {
   groups.forEach((group) => {
     const items = group.items.map((keyword) => {
       const url =
-        keyword.redirectURL != null ?
-          keyword.redirectURL.replace('${lang}', lang)
-        : Links.keywordURL(lang, keyword.id);
+        keyword.redirectURL != null
+          ? keyword.redirectURL.replace('${lang}', lang)
+          : Links.keywordURL(lang, keyword.id);
       return {
         id: keyword.id,
         url,
@@ -63,8 +63,7 @@ const Keywords = (props) => {
       crumbs={[...kalliopeCrumbs(lang), { title: _('Nøgleord', lang) }]}
       pageTitle={_('Nøgleord', lang)}
       menuItems={kalliopeMenu()}
-      selectedMenuItem="keywords"
-    >
+      selectedMenuItem="keywords">
       {renderedGroups}
       <LangSelect path={requestPath} />
     </Page>

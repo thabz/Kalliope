@@ -109,8 +109,7 @@ const TextsPage = (props) => {
       pageTitle={<PoetName poet={poet} includePeriod />}
       menuItems={poetMenu(poet)}
       poet={poet}
-      selectedMenuItem={type}
-    >
+      selectedMenuItem={type}>
       {renderedGroups}
     </Page>
   );

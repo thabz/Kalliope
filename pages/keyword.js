@@ -72,8 +72,7 @@ const KeywordPage = (props) => {
       crumbs={crumbs}
       pageTitle={title}
       menuItems={kalliopeMenu()}
-      selectedMenuItem="keywords"
-    >
+      selectedMenuItem="keywords">
       <FootnoteContainer key={keyword.id}>
         <SidebarSplit sidebar={sidebar}>
           <div key="content">
