@@ -4,6 +4,7 @@ import {
   poetsCrumbs,
   textCrumbs,
   workCrumbs,
+  worksCrumbs,
 } from '../components/breadcrumbs.js';
 
 describe('breadcrumb helpers', () => {
@@ -49,6 +50,15 @@ describe('breadcrumb helpers', () => {
     const crumbs = workCrumbs('en', poet, work);
     expect(crumbs[crumbs.length - 1].url).toBe('/en/work/aarestrup/1838');
     expect(React.isValidElement(crumbs[crumbs.length - 1].title)).toBe(true);
+  });
+
+  it('does not link the poet crumb to the current works page', () => {
+    const crumbs = worksCrumbs('en', poet);
+    expect(crumbs[crumbs.length - 2].url).toBeUndefined();
+    expect(crumbs[crumbs.length - 1]).toEqual({
+      title: 'Works',
+      url: '/en/works/aarestrup',
+    });
   });
 
   it('builds text breadcrumbs including section titles', () => {

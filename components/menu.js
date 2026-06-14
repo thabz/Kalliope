@@ -158,12 +158,17 @@ const Tabs = (props) => {
   const itemsRendered = items
     .filter((item) => !item.hide)
     .map((item, i) => {
-      const className = item.id === selected ? 'tab selected' : 'tab';
+      const isSelected = item.id === selected;
+      const className = isSelected ? 'tab selected' : 'tab';
       return (
         <div className={className} key={item.url}>
-          <Link href={item.url}>
+          {isSelected ? (
             <h2>{item.title}</h2>
-          </Link>
+          ) : (
+            <Link href={item.url}>
+              <h2>{item.title}</h2>
+            </Link>
+          )}
         </div>
       );
     });
@@ -260,7 +265,7 @@ const Tabs = (props) => {
             border-bottom: 2px solid #888;
           }
           */
-          :global(.tabs) :global(.tab.selected a) {
+          :global(.tabs) :global(.tab.selected h2) {
             color: black;
           }
           :global(.tabs) > :global(.tab) :global(a) {
