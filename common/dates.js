@@ -64,6 +64,25 @@ const formatYearEra = (year, era) => {
   return year;
 };
 
+const formatYearInterval = (startYear, endYear) => {
+  if (startYear < 0 && endYear < 0) {
+    return `${formatYearEra(
+      Math.abs(startYear),
+      'bce'
+    )} - ${formatYearEra(Math.abs(endYear), 'bce')}`;
+  }
+  if (startYear === 0) {
+    return `1 - ${endYear}`;
+  }
+  if (startYear < 0) {
+    return `${formatYearEra(
+      Math.abs(startYear),
+      'bce'
+    )} - ${formatYearEra(endYear, 'ce')}`;
+  }
+  return `${startYear} - ${endYear}`;
+};
+
 const formatTitleAndYear = (title, date) => {
   const [year, numericYear, , bce] = extractYear(date, null);
   if (numericYear == null) {
@@ -241,6 +260,7 @@ const compareNormalizedDate = (a, b) => {
 module.exports = {
   compareNormalizedDate,
   extractYear,
+  formatYearInterval,
   formatYearEra,
   formatTitleAndYear,
   formattedAge,

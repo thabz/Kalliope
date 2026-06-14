@@ -1,6 +1,7 @@
 import {
   formattedAge,
   formattedDate,
+  formatYearInterval,
   formatYearEra,
   formattedYearRange,
   formattedYear,
@@ -58,6 +59,12 @@ it('it formats year eras', () => {
   expect(formatYearEra('100', 'bce')).toEqual('100 f.Kr.');
   expect(formatYearEra('20', 'ce')).toEqual('20 e.Kr.');
   expect(formatYearEra('1818', null)).toEqual('1818');
+});
+
+it('it formats year intervals', () => {
+  expect(formatYearInterval(-25, -1)).toEqual('25 f.Kr. - 1 f.Kr.');
+  expect(formatYearInterval(0, 24)).toEqual('1 - 24');
+  expect(formatYearInterval(25, 49)).toEqual('25 - 49');
 });
 
 it('it formats age', () => {
