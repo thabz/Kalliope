@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Router from 'next/router';
-import React, { useContext, useEffect } from 'react';
+import { useContext, useEffect } from 'react';
 import * as Client from '../common/client.js';
 import LangContext from '../common/LangContext.js';
 import * as OpenGraph from '../common/opengraph.js';
@@ -99,96 +99,89 @@ const Refs = ({ refs, contentLang }) => {
   );
 };
 
-class KeywordLink extends React.Component {
-  render() {
-    const { keyword, lang } = this.props;
-    let url = null;
-    switch (keyword.type) {
-      case 'keyword':
-        url = Links.keywordURL(lang, keyword.id);
-        break;
-      case 'poet':
-        url = Links.poetURL(lang, keyword.id);
-        break;
-      case 'subject':
-        return null;
-    }
-    return (
-      <span>
-        <Link href={url} className="keyword-link" title={keyword.title}>
-          {keyword.title}
-        </Link>
-        <style jsx>{`
-          :global(a.keyword-link) {
-            display: inline-block;
-            background-color: hsla(353, 43%, 95%, 1);
-            padding: 1px 5px;
-            border-radius: 4px;
-            margin: 0 4px 2px 0;
-          }
-        `}</style>
-      </span>
-    );
+const KeywordLink = ({ keyword, lang }) => {
+  let url = null;
+  switch (keyword.type) {
+    case 'keyword':
+      url = Links.keywordURL(lang, keyword.id);
+      break;
+    case 'poet':
+      url = Links.poetURL(lang, keyword.id);
+      break;
+    case 'subject':
+      return null;
   }
-}
+  return (
+    <span>
+      <Link href={url} className="keyword-link" title={keyword.title}>
+        {keyword.title}
+      </Link>
+      <style jsx>{`
+        :global(a.keyword-link) {
+          display: inline-block;
+          background-color: hsla(353, 43%, 95%, 1);
+          padding: 1px 5px;
+          border-radius: 4px;
+          margin: 0 4px 2px 0;
+        }
+      `}</style>
+    </span>
+  );
+};
 
-class TextHeading extends React.Component {
-  render() {
-    const { text } = this.props;
+const TextHeading = ({ text }) => {
+  let className = 'text-heading';
 
-    let className = 'text-heading';
-
-    const subtitles = (text.subtitles || []).map((t, i) => {
-      return (
-        <h4 key={'sub' + i} style={{ lineHeight: '1.6' }}>
-          <TextContent contentHtml={t} contentLang={text.content_lang} />
-        </h4>
-      );
-    });
-    let suptitles = (text.suptitles || []).map((t, i) => {
-      return (
-        <h4 key={'sup' + i} style={{ lineHeight: '1.6' }} className="suptitle">
-          <TextContent contentHtml={t} contentLang={text.content_lang} />
-        </h4>
-      );
-    });
-
+  const subtitles = (text.subtitles || []).map((t, i) => {
     return (
-      <div className={className}>
-        <Stack spacing="15px">
-          <WrapNonEmpty>{suptitles}</WrapNonEmpty>
-          <h2>
-            <TextName text={text} />
-          </h2>
-          <WrapNonEmpty>{subtitles}</WrapNonEmpty>
-        </Stack>
-        <style jsx>{`
-          .text-heading :global(h2) {
-            line-height: 1.6;
-            font-size: 1.4em;
-            font-weight: normal;
-            font-style: italic;
-            margin: 0;
-            padding: 0;
-          }
-          .text-heading :global(h4) {
-            font-size: 1.05em;
-            line-height: 1.6;
-            font-weight: normal;
-            margin: 0;
-            padding: 0;
-          }
-          .text-heading {
-            margin-bottom: 60px;
-          }
-          .text-heading.poem {
-            margin-left: 1.5em;
-          }
-        `}</style>
-      </div>
+      <h4 key={'sub' + i} style={{ lineHeight: '1.6' }}>
+        <TextContent contentHtml={t} contentLang={text.content_lang} />
+      </h4>
     );
-  }
-}
+  });
+  let suptitles = (text.suptitles || []).map((t, i) => {
+    return (
+      <h4 key={'sup' + i} style={{ lineHeight: '1.6' }} className="suptitle">
+        <TextContent contentHtml={t} contentLang={text.content_lang} />
+      </h4>
+    );
+  });
+
+  return (
+    <div className={className}>
+      <Stack spacing="15px">
+        <WrapNonEmpty>{suptitles}</WrapNonEmpty>
+        <h2>
+          <TextName text={text} />
+        </h2>
+        <WrapNonEmpty>{subtitles}</WrapNonEmpty>
+      </Stack>
+      <style jsx>{`
+        .text-heading :global(h2) {
+          line-height: 1.6;
+          font-size: 1.4em;
+          font-weight: normal;
+          font-style: italic;
+          margin: 0;
+          padding: 0;
+        }
+        .text-heading :global(h4) {
+          font-size: 1.05em;
+          line-height: 1.6;
+          font-weight: normal;
+          margin: 0;
+          padding: 0;
+        }
+        .text-heading {
+          margin-bottom: 60px;
+        }
+        .text-heading.poem {
+          margin-left: 1.5em;
+        }
+      `}</style>
+    </div>
+  );
+};
 
 const TextPage = (props) => {
   useEffect(() => {
