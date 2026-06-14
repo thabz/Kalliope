@@ -7,6 +7,7 @@ import * as Strings from '../common/strings.js';
 import _ from '../common/translations.js';
 import { kalliopeCrumbs } from '../components/breadcrumbs.js';
 import CountryPicker from '../components/countrypicker.js';
+import { formatYearInterval, parseDate } from '../components/formatteddate.js';
 import * as Links from '../components/links';
 import Page from '../components/page.js';
 import PoetName from '../components/poetname.js';
@@ -69,6 +70,12 @@ const groupsByLetter = (poets, lang) => {
   return sortedGroups.sort(Sorting.sectionsByTitle);
 };
 
+const poetYearIntervalTitle = (year) => {
+  const intervalStart = Math.floor(year / 25) * 25;
+  const intervalEnd = intervalStart + 24;
+  return formatYearInterval(intervalStart, intervalEnd);
+};
+
 const groupsByYear = (poets, lang) => {
   let groups = new Map();
   poets
@@ -80,9 +87,10 @@ const groupsByYear = (poets, lang) => {
         p.period.born != null &&
         p.period.born.date !== '?'
       ) {
-        const year = parseInt(p.period.born.date.substring(0, 4), 10);
-        const intervalStart = year - (year % 25);
-        key = `${intervalStart} - ${intervalStart + 24}`;
+        const born = parseDate(p.period.born.date);
+        if (born.year != null) {
+          key = poetYearIntervalTitle(born.year);
+        }
       }
       let group = groups.get(key) || [];
       group.push(p);
@@ -95,7 +103,7 @@ const groupsByYear = (poets, lang) => {
       items: group.sort(Sorting.poetsByBirthDate),
     });
   });
-  return sortedGroups.sort(Sorting.sectionsByTitle);
+  return sortedGroups.sort(Sorting.poetYearSectionsByTitle);
 };
 
 const Poets = (props) => {

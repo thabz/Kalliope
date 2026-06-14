@@ -6,6 +6,7 @@ import {
   extractYear,
   formattedAge,
   formattedDate,
+  formatYearEra,
 } from '../components/formatteddate.js';
 import { poetMenu } from '../components/menu.js';
 import Page from '../components/page.js';
@@ -130,10 +131,7 @@ const Timeline = ({ timeline, lang }) => {
     const [curYearFormatted, curYearNumeric, x, bce] = extractYear(item.date);
     let year = null;
     if (prevYearNumeric !== curYearNumeric) {
-      year = curYearFormatted;
-      if (bce) {
-        year += ' f.Kr.';
-      }
+      year = formatYearEra(curYearFormatted, bce ? 'bce' : null);
     }
     prevYearNumeric = curYearNumeric;
 

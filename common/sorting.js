@@ -55,3 +55,33 @@ export function sectionsByTitle(a, b) {
     return a.title.localeCompare(b.title, daDK);
   }
 }
+
+const poetYearSectionSortKey = (title) => {
+  const match = title.match(/^(-?\d+) - (-?\d+)$/);
+  if (match != null) {
+    const intervalStart = parseInt(match[1], 10);
+    return intervalStart === 25 ? -0.5 : intervalStart;
+  }
+
+  const bceMatch = title.match(/^(\d+) f\.Kr\. - (\d+) f\.Kr\.$/);
+  if (bceMatch != null) {
+    return -parseInt(bceMatch[1], 10);
+  }
+
+  return null;
+};
+
+export function poetYearSectionsByTitle(a, b) {
+  if (a.title.startsWith('Ukendt') || a.title.startsWith('Unknown')) {
+    return 1;
+  } else if (b.title.startsWith('Ukendt') || b.title.startsWith('Unknown')) {
+    return -1;
+  }
+
+  const aKey = poetYearSectionSortKey(a.title);
+  const bKey = poetYearSectionSortKey(b.title);
+  if (aKey != null && bKey != null) {
+    return aKey - bKey;
+  }
+  return sectionsByTitle(a, b);
+}
