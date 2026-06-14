@@ -1,5 +1,5 @@
 import 'isomorphic-fetch';
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { createURL } from '../common/client.js';
 import LangContext from '../common/LangContext.js';
 import { kalliopeCrumbs } from '../components/breadcrumbs';
@@ -177,8 +177,7 @@ let Index = (props) => {
       crumbs={kalliopeCrumbs(lang)}
       menuItems={kalliopeMenu()}
       selectedMenuItem="index"
-      paging={paging}
-    >
+      paging={paging}>
       <SidebarSplit sidebar={sidebar}>
         <div>
           <News news={news} lang={lang} />

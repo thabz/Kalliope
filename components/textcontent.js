@@ -1,5 +1,5 @@
-import React, { useContext } from 'react';
 import Link from 'next/link';
+import { useContext } from 'react';
 import CommonData from '../common/commondata.js';
 import LangContext from '../common/LangContext.js';
 import { Footnote } from './footnotes.js';
@@ -26,8 +26,7 @@ const renderXmlString = (inputString) => {
           display: 'inline-block',
           width: '1em',
           marginRight: '0.3em',
-        }}
-      >
+        }}>
         {x}
       </span>
     ));
@@ -160,8 +159,7 @@ const renderXmlString = (inputString) => {
         return (
           <center
             key={keySeq++}
-            style={{ display: 'inline-block', width: '100%' }}
-          >
+            style={{ display: 'inline-block', width: '100%' }}>
             {handle_nodes(node.childNodes)}
           </center>
         );
@@ -179,8 +177,7 @@ const renderXmlString = (inputString) => {
               display: 'block',
               position: 'absolute',
               margin: `0 ${right} 0 ${left}`,
-            }}
-          >
+            }}>
             {handle_nodes(node.childNodes)}
           </blockquote>
         );
@@ -200,8 +197,7 @@ const renderXmlString = (inputString) => {
               display: 'inline',
               fontSize: '1.0rem',
               lineHeight: '1.1rem', // Virker ikke i en inline block
-            }}
-          >
+            }}>
             {handle_nodes(node.childNodes)}
           </small>
         );
@@ -219,8 +215,7 @@ const renderXmlString = (inputString) => {
               display: 'inline-block',
               width: '100%',
               textAlign: 'right',
-            }}
-          >
+            }}>
             {handle_nodes(node.childNodes)}
           </span>
         );
@@ -232,8 +227,7 @@ const renderXmlString = (inputString) => {
               display: 'inline',
               color: CommonData.lightTextColor,
               pageBreakAfter: 'avoid', // Not working.
-            }}
-          >
+            }}>
             {handle_nodes(node.childNodes)}
           </span>
         );
@@ -449,8 +443,7 @@ const TextContent = (props) => {
         <div
           className={className}
           data-num={lineOptions.displayNum || lineOptions.margin}
-          key={keyPrefix + i}
-        >
+          key={keyPrefix + i}>
           {anchor}
           <div className={lineInnerClass}>{rendered}</div>
         </div>
@@ -476,8 +469,7 @@ const TextContent = (props) => {
         <div
           className={className}
           key={i + keyPrefix}
-          data-num={lineOptions.displayNum}
-        >
+          data-num={lineOptions.displayNum}>
           {anchor}
           <div className={lineInnerClass}>{rendered}</div>
         </div>
@@ -502,8 +494,7 @@ const TextContent = (props) => {
         .filter((a) => a != null)
         .join(' ')}
       lang={contentLang}
-      key={keyPrefix + 'outer'}
-    >
+      key={keyPrefix + 'outer'}>
       {/*
         <pre>
           {contentLang || 'Mangler content_lang'}

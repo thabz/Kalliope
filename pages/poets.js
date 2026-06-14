@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import * as Client from '../common/client.js';
 import CommonData from '../common/commondata.js';
 import LangContext from '../common/LangContext.js';
@@ -12,10 +12,6 @@ import Page from '../components/page.js';
 import PoetName from '../components/poetname.js';
 import SectionedList from '../components/sectionedlist.js';
 import ErrorPage from './error.js';
-
-const nvl = (x, v) => {
-  return x == null ? v : x;
-};
 
 const poetListItem = (poet) => {
   const { name, period } = poet;
@@ -32,10 +28,8 @@ const poetListItem = (poet) => {
       period == null
         ? null
         : {
-            born:
-              period.born == null ? null : { date: period.born.date },
-            dead:
-              period.dead == null ? null : { date: period.dead.date },
+            born: period.born == null ? null : { date: period.born.date },
+            dead: period.dead == null ? null : { date: period.dead.date },
           },
   };
 };
@@ -125,7 +119,6 @@ const Poets = (props) => {
       url: Links.poetsURL(lang, 'year', country),
     },
   ];
-  const selectedTabIndex = groupBy === 'name' ? 0 : 1;
   const groups =
     groupBy === 'name'
       ? groupsByLetter(poets, lang)
@@ -169,8 +162,7 @@ const Poets = (props) => {
       menuItems={tabs}
       selectedMenuItem={groupBy}
       country={country}
-      pageTitle={pageTitle}
-    >
+      pageTitle={pageTitle}>
       {renderedGroups}
       <CountryPicker
         style={{ marginTop: '40px' }}

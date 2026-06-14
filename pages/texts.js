@@ -1,4 +1,3 @@
-import React from 'react';
 import * as Client from '../common/client.js';
 import CommonData from '../common/commondata.js';
 import * as OpenGraph from '../common/opengraph.js';
@@ -110,8 +109,7 @@ const TextsPage = (props) => {
       pageTitle={<PoetName poet={poet} includePeriod />}
       menuItems={poetMenu(poet)}
       poet={poet}
-      selectedMenuItem={type}
-    >
+      selectedMenuItem={type}>
       {renderedGroups}
     </Page>
   );

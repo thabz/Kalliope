@@ -1,3 +1,5 @@
+import Link from 'next/link';
+import Router from 'next/router';
 import { useContext, useEffect } from 'react';
 import * as Client from '../common/client.js';
 import LangContext from '../common/LangContext.js';
@@ -22,8 +24,6 @@ import TextName, { textLinkTitleString } from '../components/textname.js';
 import TOC from '../components/toc.js';
 import { workTitleString } from '../components/workname.js';
 import WrapNonEmpty from '../components/wrapnonempty.js';
-import Link from 'next/link';
-import Router from 'next/router';
 import ErrorPage from './error.js';
 
 const Bladrer = (props) => {
@@ -503,8 +503,7 @@ const TextPage = (props) => {
       pageTitle={<PoetName poet={poet} includePeriod />}
       pageSubtitle={_('Værker', lang)}
       menuItems={poetMenu(poet)}
-      selectedMenuItem="works"
-    >
+      selectedMenuItem="works">
       <FootnoteContainer key={text.id}>
         <SidebarSplit sidebar={sidebar}>
           <div>
@@ -515,8 +514,7 @@ const TextPage = (props) => {
                 className="text-content"
                 style={{
                   marginLeft: shouldIndentTitle ? '1.5em' : 0,
-                }}
-              >
+                }}>
                 <TextHeading text={text} />
               </div>
               <div>{body}</div>

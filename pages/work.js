@@ -1,4 +1,3 @@
-import React from 'react';
 import * as Client from '../common/client.js';
 import * as OpenGraph from '../common/opengraph.js';
 import _ from '../common/translations.js';
@@ -103,8 +102,7 @@ const WorkPage = (props) => {
       pageSubtitle={_('Værker', lang)}
       menuItems={poetMenu(poet)}
       poet={poet}
-      selectedMenuItem="works"
-    >
+      selectedMenuItem="works">
       <SidebarSplit sidebar={sidebar}>
         <div>
           <SubHeading>

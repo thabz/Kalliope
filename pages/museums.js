@@ -1,11 +1,10 @@
-import React from 'react';
+import Link from 'next/link';
 import * as Client from '../common/client.js';
 import _ from '../common/translations.js';
 import { kalliopeCrumbs } from '../components/breadcrumbs.js';
 import * as Links from '../components/links';
 import { kalliopeMenu } from '../components/menu.js';
 import Page from '../components/page.js';
-import Link from 'next/link';
 import ErrorPage from './error.js';
 
 const MuseumsPage = (props) => {
@@ -39,8 +38,7 @@ const MuseumsPage = (props) => {
       crumbs={crumbs}
       pageTitle={_('Museer', lang)}
       menuItems={kalliopeMenu()}
-      selectedMenuItem="keywords"
-    >
+      selectedMenuItem="keywords">
       <div className="two-columns" style={{ lineHeight: 1.7 }}>
         {items}
       </div>

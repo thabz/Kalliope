@@ -1,6 +1,6 @@
 import 'isomorphic-fetch';
-import { useEffect } from 'react';
 import Router from 'next/router';
+import { useEffect } from 'react';
 import * as Client from '../common/client.js';
 import * as OpenGraph from '../common/opengraph.js';
 import _ from '../common/translations.js';
@@ -78,8 +78,7 @@ const WorksPage = (props) => {
       pageSubtitle={_('Værker', lang)}
       menuItems={poetMenu(poet)}
       poet={poet}
-      selectedMenuItem="works"
-    >
+      selectedMenuItem="works">
       <div className="two-columns">
         {stack}
         <style jsx>{`

@@ -1,6 +1,6 @@
-import React, { useContext, useEffect, useState } from 'react';
 import Link from 'next/link';
 import Router from 'next/router';
+import { useContext, useEffect, useState } from 'react';
 import CommonData from '../common/commondata.js';
 import LangContext from '../common/LangContext.js';
 import _ from '../common/translations.js';
@@ -149,8 +149,7 @@ const Tabs = (props) => {
         className="svg-container"
         style={{
           cursor: 'pointer',
-        }}
-      >
+        }}>
         <CrossSVG color="black" onClick={onCrossClick} />
       </div>
     </div>
@@ -175,16 +174,14 @@ const Tabs = (props) => {
         className="tabs"
         style={{
           display: showSearchField ? 'none' : 'flex',
-        }}
-      >
+        }}>
         {itemsRendered}
       </nav>
       <div
         className="searchfield-container"
         style={{
           display: showSearchField ? 'block' : 'none',
-        }}
-      >
+        }}>
         {searchFieldRendered}
       </div>
     </div>

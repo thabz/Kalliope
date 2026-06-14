@@ -1,5 +1,3 @@
-import * as React from 'react';
-
 const Main = ({ children }) => {
   return (
     <div>

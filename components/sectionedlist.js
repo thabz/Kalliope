@@ -6,11 +6,7 @@ const SectionedList = ({ sections }) => {
     const { title, items } = group;
     const list = items.map((item) => {
       const content =
-        item.url != null ? (
-          <Link href={item.url}>{item.html}</Link>
-        ) : (
-          item.html
-        );
+        item.url != null ? <Link href={item.url}>{item.html}</Link> : item.html;
       return <div key={item.id}>{content}</div>;
     });
     return (

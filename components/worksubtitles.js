@@ -6,8 +6,7 @@ const WorkSubtitles = ({ work, lang }) => {
       return (
         <div
           key={'subtitle' + i}
-          style={{ fontSize: '0.8em', marginTop: '1em' }}
-        >
+          style={{ fontSize: '0.8em', marginTop: '1em' }}>
           <TextContent contentHtml={subtitle} lang={lang} />
         </div>
       );

@@ -6,7 +6,14 @@ const defaultDescription =
 const defaultOGURL = urlPrefix;
 const defaultOGImage = `${urlPrefix}/touch-icon.png`;
 
-const Head = ({ ogTitle, headTitle, description, url, ogImage, requestPath }) => {
+const Head = ({
+  ogTitle,
+  headTitle,
+  description,
+  url,
+  ogImage,
+  requestPath,
+}) => {
   const appleTouchIcons = [180, 152, 120, 76, 60].map((s) => {
     const x = `${s}x${s}`;
     return (
@@ -28,12 +35,7 @@ const Head = ({ ogTitle, headTitle, description, url, ogImage, requestPath }) =>
       const alternatePath = requestPath.replace(/^\/../, '/' + lang);
       const alternateURL = urlPrefix + alternatePath;
       return (
-        <link
-          rel="alternate"
-          hrefLang={lang}
-          href={alternateURL}
-          key={lang}
-        />
+        <link rel="alternate" hrefLang={lang} href={alternateURL} key={lang} />
       );
     });
   }

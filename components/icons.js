@@ -18,8 +18,7 @@ export const BurgerSVG = (props) => {
       height="30"
       style={style}
       onClick={onClick}
-      className={extraClassName}
-    >
+      className={extraClassName}>
       <line
         style={style}
         x1="4"
@@ -243,8 +242,7 @@ export const CrossSVG = (props) => {
       width="100%"
       height="100%"
       className={className}
-      onClick={onClick}
-    >
+      onClick={onClick}>
       <line
         style={style}
         x1="38"

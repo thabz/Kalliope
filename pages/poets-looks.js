@@ -1,4 +1,5 @@
 import 'isomorphic-fetch';
+import Link from 'next/link';
 import { createURL } from '../common/client.js';
 import CommonData from '../common/commondata.js';
 import * as Strings from '../common/strings.js';
@@ -7,7 +8,6 @@ import Page from '../components/page.js';
 import Picture from '../components/picture.js';
 import { poetNameString } from '../components/poetname-helpers.js';
 import PoetName from '../components/poetname.js';
-import Link from 'next/link';
 
 function joinWithCommaAndOr(items, andOrWord) {
   const result = [];
@@ -149,8 +149,7 @@ const PoetLooksPage = (props) => {
       requestPath={requestPath}
       pageTitle={pageTitle}
       menuItems={tabs}
-      selectedMenuItem="looks"
-    >
+      selectedMenuItem="looks">
       <div className="picture-container">{renderedPortraits}</div>
       <CountryPicker
         style={{ marginTop: '40px' }}
