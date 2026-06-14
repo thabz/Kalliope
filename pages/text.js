@@ -322,7 +322,7 @@ const TextPage = (props) => {
     }
     const firstPageNumber = text.source.facsimilePages[0];
     let facsimilePictures = [];
-    const srcPrefix = `https://kalliope.org/facsimiles/${poet.id}/${text.source.facsimile}`;
+    const srcPrefix = `https://kalliope.org/static/facsimiles/${poet.id}/${text.source.facsimile}`;
     for (let i = 0; i < text.source.facsimilePageCount; i++) {
       facsimilePictures.push({
         src: srcPrefix + '/' + pad(i, 3) + '.jpg',
