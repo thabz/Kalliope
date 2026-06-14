@@ -117,7 +117,10 @@ export const poetCrumbsWithTitle = (lang, poet, title) => {
 };
 export const worksCrumbs = (lang, poet) => {
   return [
-    ...poetCrumbs(lang, poet),
+    ...poetsCrumbs(lang, poet),
+    {
+      title: <PoetName poet={poet} />,
+    },
     {
       url: Links.worksURL(lang, poet.id),
       title: _('Værker', lang),
@@ -177,20 +180,19 @@ const Breadcrumbs = (props) => {
   const { lang, crumbs, rightSide } = props;
 
   let joinedLinks = [];
-  crumbs
-    .filter((x) => x != null)
-    .map((crumb, i) => {
-      if (i !== 0) {
-        joinedLinks.push(<div key={'arrow' + i}>&nbsp;→&nbsp;</div>);
-      }
-      let link = null;
-      if (i !== crumbs.length - 1 && crumb.url != null) {
-        link = <Link href={crumb.url}>{crumb.title}</Link>;
-      } else {
-        link = crumb.title;
-      }
-      joinedLinks.push(<div key={'link' + i}>{link}</div>);
-    });
+  const visibleCrumbs = crumbs.filter((x) => x != null);
+  visibleCrumbs.forEach((crumb, i) => {
+    if (i !== 0) {
+      joinedLinks.push(<div key={'arrow' + i}>&nbsp;→&nbsp;</div>);
+    }
+    let link = null;
+    if (i !== visibleCrumbs.length - 1 && crumb.url != null) {
+      link = <Link href={crumb.url}>{crumb.title}</Link>;
+    } else {
+      link = crumb.title;
+    }
+    joinedLinks.push(<div key={'link' + i}>{link}</div>);
+  });
 
   return (
     <div className="nav-container">
