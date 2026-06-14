@@ -1,5 +1,4 @@
 import 'isomorphic-fetch';
-import React from 'react';
 import { createURL } from '../common/client.js';
 import CommonData from '../common/commondata.js';
 import * as Strings from '../common/strings.js';
@@ -27,50 +26,44 @@ function joinWithCommaAndOr(items, andOrWord) {
   return result;
 }
 
-class CountryPicker extends React.Component {
-  render() {
-    const { lang, selectedCountry, selectedGroupBy, style } = this.props;
-    const items = CommonData.countries.map((country) => {
-      const url = Links.poetsURL(lang, selectedGroupBy, country.code);
-      const adj = country.adjective[lang] + ' ';
-      if (country.code === selectedCountry) {
-        return <b key={country.code}>{adj}</b>;
-      } else {
-        return (
-          <Link href={url} key={country.code}>
-            {adj}
-          </Link>
-        );
-      }
-    });
-    const joinedItems = joinWithCommaAndOr(items, 'eller');
-    return (
-      <div style={style}>
-        <div>Skift mellem {joinedItems} digtere.</div>
-      </div>
-    );
-  }
-}
+const CountryPicker = ({ lang, selectedCountry, selectedGroupBy, style }) => {
+  const items = CommonData.countries.map((country) => {
+    const url = Links.poetsURL(lang, selectedGroupBy, country.code);
+    const adj = country.adjective[lang] + ' ';
+    if (country.code === selectedCountry) {
+      return <b key={country.code}>{adj}</b>;
+    } else {
+      return (
+        <Link href={url} key={country.code}>
+          {adj}
+        </Link>
+      );
+    }
+  });
+  const joinedItems = joinWithCommaAndOr(items, 'eller');
+  return (
+    <div style={style}>
+      <div>Skift mellem {joinedItems} digtere.</div>
+    </div>
+  );
+};
 
-class MissingPortrait extends React.Component {
-  render() {
-    const { lang, poet } = this.props;
-    const style = {
-      display: 'inline-block',
-      border: '3px dotted black',
-      width: '100%',
-      borderRadius: '20px',
-    };
-    return (
-      <div>
-        <div style={style} />
-        <div style={{ fontSize: '0.8em', marginTop: '8px' }}>
-          <PoetName poet={poet} includePeriod />
-        </div>
+const MissingPortrait = ({ lang, poet }) => {
+  const style = {
+    display: 'inline-block',
+    border: '3px dotted black',
+    width: '100%',
+    borderRadius: '20px',
+  };
+  return (
+    <div>
+      <div style={style} />
+      <div style={{ fontSize: '0.8em', marginTop: '8px' }}>
+        <PoetName poet={poet} includePeriod />
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 const PoetLooksPage = (props) => {
   const { lang, country, poets, groupBy } = props;
