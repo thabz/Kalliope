@@ -112,6 +112,42 @@ let collected = {
 // Ready after second pass
 let collected_works = new Map();
 
+const parseAliases = (value) => {
+  if (value == null) {
+    return [];
+  }
+  return value
+    .split(',')
+    .map((alias) => alias.trim())
+    .filter((alias) => alias.length > 0);
+};
+
+const buildTextAliasRedirects = (redirects, texts) => {
+  const textIds = new Set(texts.keys());
+  const aliases = new Map();
+
+  texts.forEach((text) => {
+    (text.aliases || []).forEach((alias) => {
+      if (alias === text.id || textIds.has(alias)) {
+        throw new Error(
+          `Text alias "${alias}" conflicts with an existing text id.`
+        );
+      }
+      if (aliases.has(alias)) {
+        throw new Error(
+          `Text alias "${alias}" is used by both ${aliases.get(alias)} and ${
+            text.id
+          }.`
+        );
+      }
+      aliases.set(alias, text.id);
+      ['da', 'en'].forEach((lang) => {
+        redirects[`/${lang}/text/${alias}`] = `/${lang}/text/${text.id}`;
+      });
+    });
+  });
+};
+
 const build_bio_json = async (collected) => {
   return Promise.all(
     Array.from(collected.poets.entries()).map(async (entry) => {
@@ -655,6 +691,12 @@ const works_first_pass = (collected) => {
         parentIdsToFillIn.set(fullWorkId, `${poetId}/${parentId}`);
       }
 
+      Array.from(texts.entries()).forEach(([cachedTextId, text]) => {
+        if (text.poetId === poetId && text.workId === workId) {
+          texts.delete(cachedTextId);
+        }
+      });
+
       workTexts.forEach((part) => {
         const textId = safeGetAttr(part, 'id');
         if (tagName(part) === 'section' && textId == null) {
@@ -668,6 +710,7 @@ const works_first_pass = (collected) => {
         const title = extractTitle(head, 'title');
         const linktitle = extractTitle(head, 'linktitle');
         const indextitle = extractTitle(head, 'indextitle');
+        const aliases = parseAliases(safeGetAttr(part, 'aliases'));
 
         const linkTitle = linktitle || title || firstline;
         const indexTitle = indextitle || title || firstline;
@@ -685,6 +728,7 @@ const works_first_pass = (collected) => {
           firstline: replaceDashes(firstline == null ? null : firstline.title),
           indexTitle: replaceDashes(indexTitle.title),
           linkTitle: replaceDashes(linkTitle.title),
+          aliases,
           type: tagName(part),
           poetId: poetId,
           workId: workId,
@@ -876,6 +920,7 @@ const build_news = (collected) => {
 
 const build_redirects_json = (collected) => {
   let redirects = {};
+  buildTextAliasRedirects(redirects, collected.texts);
   collected.poets.forEach((poet, poetId) => {
     if (!poet.has_works && !poet.has_artwork) {
       redirects[`/en/works/${poetId}`] = `/en/bio/${poetId}`;
