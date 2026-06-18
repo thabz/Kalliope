@@ -32,6 +32,12 @@ const build_todays_events_json = async collected => {
     collected_events.set(key, items);
   };
 
+  const sort_events_by_date = events => {
+    return events.sort((a, b) => {
+      return a.date < b.date ? -1 : a.date > b.date ? 1 : 0;
+    });
+  };
+
   collected.poets.forEach((poet, poetId) => {
     if (poet.period != null) {
       const born = poet.period.born;
@@ -151,7 +157,9 @@ const build_todays_events_json = async collected => {
       for (let d = 1; d <= 31; d++) {
         const dd = d < 10 ? '0' + d : d;
         const mm = m < 10 ? '0' + m : m;
-        const events = collected_events.get(`${lang}-${mm}-${dd}`) || [];
+        const events = sort_events_by_date(
+          collected_events.get(`${lang}-${mm}-${dd}`) || []
+        );
         const path = `public/api/today/${lang}/${mm}-${dd}.json`;
         //console.log(path);
         writeJSON(path, events, true);
