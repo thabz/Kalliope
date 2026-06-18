@@ -10,6 +10,29 @@ import { fileExists, loadText } from '../tools/libs/helpers.js';
 function flatten(arr) {
   return [].concat(...arr);
 }
+
+function checkNotesGroups(filename, data) {
+  const headRegexp = /<(workhead|head)>[\s\S]*?<\/\1>/g;
+  const idRegexp = /<(?:text|section)[^>]*\sid="([^"]+)"/g;
+  let currentId = 'workhead';
+  const ids = Array.from(data.matchAll(idRegexp));
+  let idIndex = 0;
+  let headMatch;
+
+  while ((headMatch = headRegexp.exec(data)) != null) {
+    while (idIndex < ids.length && ids[idIndex].index < headMatch.index) {
+      currentId = ids[idIndex][1];
+      idIndex += 1;
+    }
+    const notesGroups = headMatch[0].match(/<notes>/g) || [];
+    if (notesGroups.length > 1) {
+      throw new Error(
+        `fdirs/${filename} ${currentId} has ${notesGroups.length} <notes> groups.`
+      );
+    }
+  }
+}
+
 // Regulære expressions som fanger typiske fejl i vores XML.
 // Disse kan enten være et regexp direkte eller et regexp med en whitelist.
 const regexps = [
@@ -100,6 +123,7 @@ describe('Check workfiles', () => {
     it(`Workfile fdirs/${filename} is fine`, () => {
       expect(fileExists(fullpath)).toBeTruthy;
       expect(data.length > 0);
+      checkNotesGroups(filename, data);
       regexps.forEach((rule) => {
         let regexp = rule.regexp || rule;
         let whitelist = rule.whitelist || [];
