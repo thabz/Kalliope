@@ -180,7 +180,10 @@ app.prepare().then(() => {
       res.writeHead(301, { Location: location });
       res.end();
       return;
-    } else if (rootStaticFiles.indexOf(pathname) > -1) {
+    } else if (
+      rootStaticFiles.indexOf(pathname) > -1 ||
+      pathname.indexOf('/api/') === 0
+    ) {
       serveRootStaticFile(pathname, res);
       return;
     } else if (
