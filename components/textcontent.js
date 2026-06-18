@@ -37,71 +37,96 @@ const renderXmlString = (inputString) => {
     );
   };
 
+  const handle_hash_link_click = (event, href) => {
+    if (typeof window === 'undefined' || href.indexOf('#') === -1) {
+      return;
+    }
+    event.preventDefault();
+
+    const target = new URL(href, window.location.href);
+    if (
+      target.pathname === window.location.pathname &&
+      target.search === window.location.search
+    ) {
+      window.location.hash = target.hash;
+      window.location.reload();
+    } else {
+      window.location.href = target.toString();
+    }
+  };
+
+  const handle_link = (href, children) => {
+    const key = keySeq++;
+    if (href.indexOf('#') > -1) {
+      return (
+        <a
+          key={key}
+          href={href}
+          onClick={(e) => handle_hash_link_click(e, href)}>
+          {children}
+        </a>
+      );
+    }
+    return (
+      <Link key={key} href={href}>
+        {children}
+      </Link>
+    );
+  };
+
   const handle_a = (node) => {
     if (node.hasAttribute('person')) {
       const poetId = node.getAttribute('person');
-      return (
-        <Link key={keySeq++} href={Links.poetURL(lang, poetId)}>
-          {handle_nodes(node.childNodes)}
-        </Link>
+      return handle_link(
+        Links.poetURL(lang, poetId),
+        handle_nodes(node.childNodes)
       );
     } else if (node.hasAttribute('poet')) {
       const poetId = node.getAttribute('poet');
-      return (
-        <Link key={keySeq++} href={Links.poetURL(lang, poetId)}>
-          {handle_nodes(node.childNodes)}
-        </Link>
+      return handle_link(
+        Links.poetURL(lang, poetId),
+        handle_nodes(node.childNodes)
       );
     } else if (node.hasAttribute('poem')) {
       const textId = node.getAttribute('poem');
-      return (
-        <Link key={keySeq++} href={Links.textURL(lang, textId)}>
-          {handle_nodes(node.childNodes)}
-        </Link>
+      return handle_link(
+        Links.textURL(lang, textId),
+        handle_nodes(node.childNodes)
       );
     } else if (node.hasAttribute('text')) {
       const textId = node.getAttribute('text');
-      return (
-        <Link key={keySeq++} href={Links.textURL(lang, textId)}>
-          {handle_nodes(node.childNodes)}
-        </Link>
+      return handle_link(
+        Links.textURL(lang, textId),
+        handle_nodes(node.childNodes)
       );
     } else if (node.hasAttribute('keyword')) {
       const keywordId = node.getAttribute('keyword');
-      return (
-        <Link key={keySeq++} href={Links.keywordURL(lang, keywordId)}>
-          {handle_nodes(node.childNodes)}
-        </Link>
+      return handle_link(
+        Links.keywordURL(lang, keywordId),
+        handle_nodes(node.childNodes)
       );
     } else if (node.hasAttribute('dict')) {
       const keywordId = node.getAttribute('dict');
-      return (
-        <Link key={keySeq++} href={Links.dictionaryURL(lang, keywordId)}>
-          {handle_nodes(node.childNodes)}
-        </Link>
+      return handle_link(
+        Links.dictionaryURL(lang, keywordId),
+        handle_nodes(node.childNodes)
       );
     } else if (node.hasAttribute('work')) {
       const parts = node.getAttribute('work').split('/');
       const poetId = parts[0];
       const workId = parts[1];
-      return (
-        <Link key={keySeq++} href={Links.workURL(lang, poetId, workId)}>
-          {handle_nodes(node.childNodes)}
-        </Link>
+      return handle_link(
+        Links.workURL(lang, poetId, workId),
+        handle_nodes(node.childNodes)
       );
     } else if (node.hasAttribute('href')) {
       const href = node.getAttribute('href');
-      return (
-        <Link key={keySeq++} href={href}>
-          {handle_nodes(node.childNodes)}
-        </Link>
-      );
+      return handle_link(href, handle_nodes(node.childNodes));
     } else if (node.hasAttribute('bible')) {
       const bibleId = node.getAttribute('bible');
-      return (
-        <Link key={keySeq++} href={Links.bibleURL(lang, bibleId)}>
-          {handle_nodes(node.childNodes)}
-        </Link>
+      return handle_link(
+        Links.bibleURL(lang, bibleId),
+        handle_nodes(node.childNodes)
       );
     } else {
       return <code key={keySeq++}>{node.toString()}</code>;
