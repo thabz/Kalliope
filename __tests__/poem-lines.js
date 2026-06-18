@@ -33,6 +33,30 @@ function checkNotesGroups(filename, data) {
   }
 }
 
+function textIds(data) {
+  const idRegexp = /<(?:text|section)[^>]*\sid="([^"]+)"/g;
+  return Array.from(data.matchAll(idRegexp)).map((match) => match[1]);
+}
+
+function textAliases(data) {
+  const partRegexp = /<(?:text|section)\b[^>]*>/g;
+  return Array.from(data.matchAll(partRegexp)).flatMap((partMatch) => {
+    const part = partMatch[0];
+    const idMatch = part.match(/\sid="([^"]+)"/);
+    const aliasesMatch = part.match(/\saliases="([^"]*)"/);
+
+    if (idMatch == null || aliasesMatch == null) {
+      return [];
+    }
+
+    return aliasesMatch[1]
+      .split(',')
+      .map((alias) => alias.trim())
+      .filter((alias) => alias.length > 0)
+      .map((alias) => ({ id: idMatch[1], alias }));
+  });
+}
+
 // Regulære expressions som fanger typiske fejl i vores XML.
 // Disse kan enten være et regexp direkte eller et regexp med en whitelist.
 const regexps = [
@@ -116,11 +140,47 @@ describe('Check workfiles', () => {
 
   filenames = flatten(filenames);
 
+  let seenTextIds = new Map();
+  let seenTextAliases = new Map();
+  let duplicateTextAliases = [];
+
+  filenames.forEach((filename) => {
+    const data = loadText(`fdirs/${filename}`);
+    textIds(data).forEach((textId) => {
+      seenTextIds.set(textId, filename);
+    });
+    textAliases(data).forEach(({ id, alias }) => {
+      if (seenTextAliases.has(alias)) {
+        duplicateTextAliases.push(
+          `Text alias "${alias}" is used by both ${seenTextAliases.get(
+            alias
+          )} and ${filename}:${id}.`
+        );
+      }
+      seenTextAliases.set(alias, `${filename}:${id}`);
+    });
+  });
+
+  it('Text aliases do not conflict with text ids', () => {
+    if (duplicateTextAliases.length > 0) {
+      fail(duplicateTextAliases.join('\n'));
+    }
+    seenTextAliases.forEach((textId, alias) => {
+      if (seenTextIds.has(alias)) {
+        fail(
+          `Text alias "${alias}" in ${textId} conflicts with text id in ${seenTextIds.get(
+            alias
+          )}.`
+        );
+      }
+    });
+  });
+
   filenames.forEach((filename) => {
     const fullpath = `fdirs/${filename}`;
     const lang = filenameLangs[filename];
-    const data = loadText(fullpath);
     it(`Workfile fdirs/${filename} is fine`, () => {
+      const data = loadText(fullpath);
       expect(fileExists(fullpath)).toBeTruthy;
       expect(data.length > 0);
       checkNotesGroups(filename, data);
