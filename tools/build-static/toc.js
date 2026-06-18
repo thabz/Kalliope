@@ -1,4 +1,5 @@
 const { isFileModified } = require('../libs/caching.js');
+const { execFileSync } = require('child_process');
 const {
   safeMkdir,
   writeJSON,
@@ -69,7 +70,45 @@ const extract_subworks = (poetId, workbody, collected) => {
   });
 };
 
+const collect_git_modified_dates = () => {
+  const log = execFileSync(
+    'git',
+    [
+      '--no-pager',
+      'log',
+      '--pretty=format:%ct',
+      '--name-only',
+      '--',
+      ':(glob)fdirs/**/*.xml',
+    ],
+    { encoding: 'utf8' }
+  );
+  const modifiedDates = new Map();
+  let timestamp = null;
+
+  log.split('\n').forEach((line) => {
+    const trimmed = line.trim();
+    if (trimmed.length === 0) {
+      return;
+    }
+    if (/^\d+$/.test(trimmed)) {
+      timestamp = parseInt(trimmed, 10);
+      return;
+    }
+    if (timestamp != null && !modifiedDates.has(trimmed)) {
+      modifiedDates.set(
+        trimmed,
+        new Date(timestamp * 1000).toISOString().slice(0, 10)
+      );
+    }
+  });
+
+  return modifiedDates;
+};
+
 const build_works_toc = async (collected) => {
+  const modifiedDates = collect_git_modified_dates();
+
   // Returns {toc, subworks, notes, pictures}
   const extract_work_data = async (work) => {
     const type = safeGetAttr(work, 'type');
@@ -147,17 +186,8 @@ const build_works_toc = async (collected) => {
               work: collected.works.get(`${poetId}/${workId}`),
               notes: work_data.notes || [],
               pictures: work_data.pictures || [],
+              modified: modifiedDates.get(filename),
             };
-
-            // Find modified date i git.
-            // Later: this turns out to be super-slow, building toc's
-            // takes 151s instead of 9s. So I've disabled this.
-            /*
-          const modifiedDateString = execSync(
-            `git log -1 --format="%ad" --date=iso-strict -- ${filename}`
-          );
-          toc_file_data.modified = modifiedDateString.toString().trim();
-          */
             const tocFilename = `public/api/${poetId}/${workId}-toc.json`;
             console.log(tocFilename);
             writeJSON(tocFilename, toc_file_data);

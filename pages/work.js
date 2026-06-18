@@ -2,6 +2,7 @@ import * as Client from '../common/client.js';
 import * as OpenGraph from '../common/opengraph.js';
 import _ from '../common/translations.js';
 import { workCrumbs } from '../components/breadcrumbs.js';
+import { formattedDate } from '../components/formatteddate.js';
 import { poetMenu } from '../components/menu.js';
 import Note from '../components/note.js';
 import Page from '../components/page.js';
@@ -19,7 +20,8 @@ import WorkSubtitles from '../components/worksubtitles.js';
 import ErrorPage from './error.js';
 
 const WorkPage = (props) => {
-  const { lang, poet, work, notes, pictures, toc, subworks, error } = props;
+  const { lang, poet, work, notes, pictures, toc, subworks, modified, error } =
+    props;
 
   if (error) {
     return <ErrorPage error={error} lang={lang} message="Ukendt værk" />;
@@ -110,9 +112,19 @@ const WorkPage = (props) => {
             <WorkSubtitles work={work} lang={lang} />
           </SubHeading>
           {table}
+          {modified != null ? (
+            <div className="modified">
+              {_('Sidst ændret', lang)}: {formattedDate(modified)}
+            </div>
+          ) : null}
           <style jsx>{`
             :global(.nodata) {
               padding: 30px 0;
+            }
+            .modified {
+              color: #777;
+              font-size: 0.9em;
+              margin-top: 30px;
             }
           `}</style>
         </div>
@@ -131,6 +143,7 @@ WorkPage.getInitialProps = async ({ query: { lang, poetId, workId } }) => {
     subworks: json.subworks,
     notes: json.notes,
     pictures: json.pictures,
+    modified: json.modified,
     error: json.error,
   };
 };
