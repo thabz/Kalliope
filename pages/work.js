@@ -57,13 +57,25 @@ const WorkPage = (props) => {
         er endnu ikke fuldstændig.
       </div>
     ) : null;
+  const modifiedDate =
+    modified != null ? (
+      <div className="modified">
+        {_('Sidst ændret', lang)} {formattedDate(modified)}.
+      </div>
+    ) : null;
   let sidebar = null;
-  if (pictures.length > 0 || notes.length > 0 || completedStatus != null) {
+  if (
+    pictures.length > 0 ||
+    notes.length > 0 ||
+    completedStatus != null ||
+    modifiedDate != null
+  ) {
     sidebar = (
       <div>
         {renderedPictures}
         {renderedNotes}
         {completedStatus}
+        {modifiedDate}
       </div>
     );
   }
@@ -112,11 +124,6 @@ const WorkPage = (props) => {
             <WorkSubtitles work={work} lang={lang} />
           </SubHeading>
           {table}
-          {modified != null ? (
-            <div className="modified">
-              {_('Sidst ændret', lang)}: {formattedDate(modified)}
-            </div>
-          ) : null}
           <style jsx>{`
             :global(.nodata) {
               padding: 30px 0;
