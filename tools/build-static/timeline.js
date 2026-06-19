@@ -65,6 +65,31 @@ const load_timeline = async (filename, collected) => {
   );
 };
 
+const cover_picture = async (poetId, workId, collected) => {
+  const filename = `fdirs/${poetId}/${workId}.xml`;
+  const doc = loadXMLDoc(filename);
+  if (doc == null) {
+    return null;
+  }
+
+  const work = getChildByTagName(doc, 'kalliopework');
+  const head = getChildByTagName(work, 'workhead');
+  const pictures = getElementsByTagName(head, 'picture');
+  const pictureNode =
+    pictures.find((picture) => safeGetAttr(picture, 'type') === 'frontpage') ||
+    pictures.find((picture) => safeGetAttr(picture, 'type') === 'titlepage') ||
+    pictures[0];
+
+  if (pictureNode == null) {
+    return null;
+  }
+
+  const onError = (message) => {
+    throw `${filename}: ${message}`;
+  };
+  return get_picture(pictureNode, `/images/${poetId}`, collected, onError);
+};
+
 const build_global_timeline = async (collected) => {
   return load_timeline('data/events.xml', collected);
 };
@@ -84,32 +109,57 @@ const build_poet_timeline_json = async (poet, collected) => {
 
   let items = [];
   if (poet.type !== 'collection') {
-    collected.workids
-      .get(poet.id)
-      .filter((workId) => {
-        // Vi vil ikke have underværkerne i tidslinjen
-        const work = collected.works.get(`${poet.id}/${workId}`);
-        return work.parent == null;
-      })
-      .forEach((workId) => {
-        const work = collected.works.get(`${poet.id}/${workId}`);
-        if (work.year != '?') {
-          // TODO: Hvis der er et titel-blad, så output type image.
-          const workName = work.has_content
-            ? `<a work="${poet.id}/${workId}">${work.title}</a>`
-            : work.title;
-          items.push({
-            date: work.published,
-            normalized_date: normalize_timeline_date(work.published),
-            type: 'text',
-            content_lang: 'da',
-            is_history_item: false,
-            content_html: [
+    const workItems = await Promise.all(
+      collected.workids
+        .get(poet.id)
+        .filter((workId) => {
+          // Vi vil ikke have underværkerne i tidslinjen
+          const work = collected.works.get(`${poet.id}/${workId}`);
+          return work.parent == null;
+        })
+        .map(async (workId) => {
+          const work = collected.works.get(`${poet.id}/${workId}`);
+          if (work.year != '?') {
+            const workName = work.has_content
+              ? `<a work="${poet.id}/${workId}">${work.title}</a>`
+              : work.title;
+            const coverPicture = await cover_picture(
+              poet.id,
+              workId,
+              collected
+            );
+            const contentHtml = [
               [`${poet.name.lastname}: ${workName}.`, { html: true }],
-            ],
-          });
-        }
-      });
+            ];
+            const textItem = {
+              date: work.published,
+              normalized_date: normalize_timeline_date(work.published),
+              type: 'text',
+              content_lang: 'da',
+              is_history_item: false,
+              content_html: contentHtml,
+            };
+            if (coverPicture == null) {
+              return [textItem];
+            }
+            return [
+              {
+                date: work.published,
+                normalized_date: normalize_timeline_date(work.published),
+                type: 'image',
+                is_history_item: false,
+                src: coverPicture.src,
+                content_lang: coverPicture.content_lang,
+                lang: coverPicture.lang,
+                content_html: coverPicture.content_html,
+                miniature_content_html: contentHtml,
+              },
+            ];
+          }
+          return [];
+        })
+    );
+    items = items.concat([].concat(...workItems));
     if (poet.period.born.date !== '?') {
       const place = (
         poet.period.born.place != null

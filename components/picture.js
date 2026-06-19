@@ -173,7 +173,11 @@ const Picture = ({
           />
         </picture>
         <FigCaption
-          picture={picture}
+          picture={{
+            ...picture,
+            content_html:
+              picture.miniature_content_html || picture.content_html,
+          }}
           hideArtist={hideArtist}
           hideMuseum={hideMuseum}
         />
