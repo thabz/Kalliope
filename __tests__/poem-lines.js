@@ -11,6 +11,10 @@ function flatten(arr) {
   return [].concat(...arr);
 }
 
+function fail(message) {
+  throw new Error(message);
+}
+
 function checkNotesGroups(filename, data) {
   const headRegexp = /<(workhead|head)>[\s\S]*?<\/\1>/g;
   const idRegexp = /<(?:text|section)[^>]*\sid="([^"]+)"/g;
@@ -57,6 +61,40 @@ function textAliases(data) {
   });
 }
 
+function ignoredTestsAtLine(data) {
+  const partRegexp = /<(?:text|section)\b[^>]*>/g;
+  const lineStarts = [0];
+  let lineBreakIndex = -1;
+
+  while ((lineBreakIndex = data.indexOf('\n', lineBreakIndex + 1)) !== -1) {
+    lineStarts.push(lineBreakIndex + 1);
+  }
+
+  const ignoredAtLine = new Map();
+  let currentIgnoredTests = [];
+  let partIndex = 0;
+  const parts = Array.from(data.matchAll(partRegexp));
+
+  lineStarts.forEach((lineStart, lineIndex) => {
+    while (partIndex < parts.length && parts[partIndex].index <= lineStart) {
+      const ignoreTestsMatch = parts[partIndex][0].match(
+        /\signore-tests="([^"]*)"/
+      );
+      currentIgnoredTests =
+        ignoreTestsMatch == null
+          ? []
+          : ignoreTestsMatch[1]
+              .split(',')
+              .map((testName) => testName.trim())
+              .filter((testName) => testName.length > 0);
+      partIndex += 1;
+    }
+    ignoredAtLine.set(lineIndex, currentIgnoredTests);
+  });
+
+  return ignoredAtLine;
+}
+
 // Regulære expressions som fanger typiske fejl i vores XML.
 // Disse kan enten være et regexp direkte eller et regexp med en whitelist.
 const regexps = [
@@ -69,6 +107,8 @@ const regexps = [
   /<firstline><\/firstline>/, // Tom <firstline> ...
   /<source pages="">/,
   /^.*[^\.]\.\s*[a-z;]\s*$/, // Løse bogstaver efter sidste punktum
+  { testName: 'loose-letters', regexp: / [a-hj-np-z]\s*$/m, onlylangs: ['da'] }, // Løst bogstav sidst på dansk linje. Tillad i og o.
+  { testName: 'loose-letters', regexp: / [b-z]\s*$/m, onlylangs: ['en'] }, // Løst bogstav sidst på engelsk linje. Tillad a.
   { regexp: /[a-zæøå],[a-zæøå]/, whitelist: [/<keywords>/, /<quality>/] },
   { regexp: /mmm/, whitelist: [/<note>.*\]/] },
   ///iii/, // Problematisk da den rammer lowercase romertal. Fiks fejlere og drop reglen.
@@ -181,6 +221,7 @@ describe('Check workfiles', () => {
     const lang = filenameLangs[filename];
     it(`Workfile fdirs/${filename} is fine`, () => {
       const data = loadText(fullpath);
+      const ignoredTests = ignoredTestsAtLine(data);
       expect(fileExists(fullpath)).toBeTruthy;
       expect(data.length > 0);
       checkNotesGroups(filename, data);
@@ -188,8 +229,12 @@ describe('Check workfiles', () => {
         let regexp = rule.regexp || rule;
         let whitelist = rule.whitelist || [];
         let ignorelangs = rule.ignorelangs || [];
+        let onlylangs = rule.onlylangs || [];
 
         if (ignorelangs.indexOf(lang) > -1) {
+          return;
+        }
+        if (onlylangs.length > 0 && onlylangs.indexOf(lang) === -1) {
           return;
         }
         if (!regexp) {
@@ -197,9 +242,11 @@ describe('Check workfiles', () => {
         }
 
         if (regexp.test(data)) {
-          data.split('\n').forEach((line) => {
+          data.split('\n').forEach((line, lineIndex) => {
             if (
               regexp.test(line) &&
+              (rule.testName == null ||
+                ignoredTests.get(lineIndex).indexOf(rule.testName) === -1) &&
               !whitelist.find((w) => {
                 return w.test(line);
               })
