@@ -1,7 +1,12 @@
 import { useEffect, useState } from 'react';
 import CommonData from '../common/commondata.js';
-import { CloseButton, LeftArrow, RightArrow } from './icons.js';
+import { CloseButton, DownArrow, LeftArrow, RightArrow } from './icons.js';
 import { FigCaption } from './picture.js';
+
+const filenameFromSrc = (src) => {
+  const path = src.split('?')[0];
+  return path.substring(path.lastIndexOf('/') + 1);
+};
 
 const BiggerPicture = ({ picture }) => {
   const src = picture.src;
@@ -145,6 +150,16 @@ const PictureOverlay = ({ pictures, startIndex, closeCallback }) => {
     );
   }
   const picture = pictures[currentIndex];
+  buttons.push(
+    <a
+      className="download-icon"
+      href={picture.src}
+      download={filenameFromSrc(picture.src)}
+      title="Download originalbillede"
+      key="download">
+      <DownArrow />
+    </a>
+  );
   return (
     <div className="overlay-background" onClick={hideOverlay}>
       <div className="overlay-container" onClick={eatClick}>
@@ -197,14 +212,19 @@ const PictureOverlay = ({ pictures, startIndex, closeCallback }) => {
           top: -15px;
         }
 
-        .overlay-container .overlay-icon svg {
+        .overlay-container .overlay-icon :global(svg),
+        .overlay-container .overlay-icon :global(a.download-icon) {
           display: block;
         }
 
-        :global(.overlay-icon svg.active:hover .icon-background) {
+        .overlay-container .overlay-icon :global(> * + *) {
+          margin-top: 5px;
+        }
+
+        :global(.overlay-icon .active:hover .icon-background) {
           fill: #eee;
         }
-        :global(.overlay-icon svg.active) {
+        :global(.overlay-icon .active) {
           cursor: pointer;
         }
 

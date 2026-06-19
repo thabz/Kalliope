@@ -153,6 +153,59 @@ export const RightArrow = ({ onClick, inactive, color = 'black' }) => {
   );
 };
 
+export const DownArrow = ({ onClick, inactive, color = 'black' }) => {
+  const strokeColor = inactive == true ? '#888' : color;
+  const className = inactive == true ? 'inactive' : 'active';
+  return (
+    <svg width="30" height="30" onClick={onClick} className={className}>
+      <circle
+        className="icon-background"
+        cx="15"
+        cy="15"
+        r="14"
+        fill="white"
+        stroke="black"
+        strokeWidth="1"
+        vectorEffect="non-scaling-stroke"
+      />
+      <line
+        x1="15"
+        y1="8"
+        x2="15"
+        y2="22"
+        strokeWidth="1"
+        stroke={strokeColor}
+        vectorEffect="non-scaling-stroke"
+      />
+      <line
+        x1="9"
+        y1="15"
+        x2="15"
+        y2="22"
+        strokeWidth="1"
+        stroke={strokeColor}
+        vectorEffect="non-scaling-stroke"
+      />
+      <line
+        x1="21"
+        y1="15"
+        x2="15"
+        y2="22"
+        strokeWidth="1"
+        stroke={strokeColor}
+        vectorEffect="non-scaling-stroke"
+      />
+      <circle
+        className="button-overlay"
+        cx="15"
+        cy="15"
+        r="14"
+        fill="transparent"
+      />
+    </svg>
+  );
+};
+
 export const CloseButton = ({ onClick }) => {
   return (
     <svg width="30" height="30" onClick={onClick} className="active">
