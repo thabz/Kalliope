@@ -24,8 +24,8 @@ describe('place names', () => {
     expect(translatePlace('Spentrup, Jylland', 'en')).toBe(
       'Spentrup, Jutland'
     );
-    expect(translatePlace('Sankt Thomas i Dansk Vestindien', 'en')).toBe(
-      'Saint Thomas in the Danish West Indies'
+    expect(translatePlace('Skt. Thomas, Dansk Vestindien', 'en')).toBe(
+      'St. Thomas, Danish West Indies'
     );
     expect(translatePlace('skibsforlis på vej hjem fra Kina', 'en')).toBe(
       'shipwreck on the way home from China'
