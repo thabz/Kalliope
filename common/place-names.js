@@ -16,7 +16,6 @@ const placeReplacementsByLang = {
     ['Sorgenfri Slot', 'Sorgenfri Palace'],
     ['Skt. Thomas', 'St. Thomas'],
     ['Skt. Petersborg', 'St. Petersburg'],
-    ['Christiania (nu Oslo)', 'Christiania (now Oslo)'],
     ['Kbh.', 'Copenhagen'],
     ['København', 'Copenhagen'],
     ['Hamborg', 'Hamburg'],
