@@ -28,17 +28,7 @@ const groupLines = (lines, type, contentLang) => {
     }
     line = line.replace(',', '').replace('!', '');
     linePair['sortBy'] = line + ' [' + alternative + '[' + linePair.id;
-    let letter = line[0];
-    if (contentLang === 'da' && line.indexOf('Aa') === 0) {
-      letter = 'Å';
-    }
-    if (contentLang === 'da' && line.indexOf('Ö') === 0) {
-      letter = 'Ø';
-    }
-    if (line.indexOf('È') === 0) {
-      letter = 'E';
-    }
-    letter = letter.toUpperCase();
+    let letter = Sorting.lineSectionTitleForLang(line, contentLang);
     let array = groups.get(letter) || [];
     array.push(linePair);
     groups.set(letter, array);
