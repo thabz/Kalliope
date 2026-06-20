@@ -17,8 +17,8 @@ describe('place names', () => {
     expect(translatePlace('Turino, Savoy (nu Italien)', 'en')).toBe(
       'Turin, Savoy (now Italy)'
     );
-    expect(translatePlace('Rom, Kirchenstaat (nuværende Italien)', 'en')).toBe(
-      'Rome, Papal States (present-day Italy)'
+    expect(translatePlace('Rom, Pavestaten (nuværende Italien)', 'en')).toBe(
+      'Rome, the Papal States (present-day Italy)'
     );
     expect(translatePlace('Shiraz, Persien', 'en')).toBe('Shiraz, Persia');
     expect(translatePlace('Spentrup, Jylland', 'en')).toBe(

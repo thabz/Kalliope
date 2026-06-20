@@ -65,7 +65,7 @@ const placeReplacementsByLang = {
     ['Rumænien', 'Romania'],
     ['Slovenien', 'Slovenia'],
     ['Kina', 'China'],
-    ['Kirchenstaat', 'Papal States'],
+    ['Pavestaten', 'the Papal States'],
     ['Italien', 'Italy'],
     ['Spanien', 'Spain'],
     ['Holland', 'the Netherlands'],
