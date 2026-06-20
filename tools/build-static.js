@@ -27,6 +27,7 @@ const {
   build_poets_first_pass,
   build_poets_json,
   build_poets_by_country_json,
+  build_literary_periods_json,
 } = require('./build-static/poets.js');
 const {
   build_dict_first_pass,
@@ -968,6 +969,11 @@ const main = async () => {
   await b(
     'build_poets_by_country_json',
     build_poets_by_country_json,
+    collected
+  );
+  await b(
+    'build_literary_periods_json',
+    build_literary_periods_json,
     collected
   );
   await b('build_museum_pages', build_museum_pages, collected);
