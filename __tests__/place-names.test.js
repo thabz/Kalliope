@@ -9,6 +9,27 @@ describe('place names', () => {
     expect(
       translatePlace('Raivola, Finland (nu Roshchino, Rusland)', 'en')
     ).toBe('Raivola, Finland (now Roshchino, Russia)');
+    expect(translatePlace('Københavns Slot', 'en')).toBe('Copenhagen Castle');
+    expect(translatePlace('Firenze', 'en')).toBe('Florence');
+    expect(translatePlace('Venedig', 'en')).toBe('Venice');
+    expect(translatePlace('Göteborg', 'en')).toBe('Gothenburg');
+    expect(translatePlace('Konstantinopel', 'en')).toBe('Constantinople');
+    expect(translatePlace('Turino, Savoy (nu Italien)', 'en')).toBe(
+      'Turin, Savoy (now Italy)'
+    );
+    expect(translatePlace('Rom, Kirchenstaat (nuværende Italien)', 'en')).toBe(
+      'Rome, Papal States (present-day Italy)'
+    );
+    expect(translatePlace('Shiraz, Persien', 'en')).toBe('Shiraz, Persia');
+    expect(translatePlace('Spentrup, Jylland', 'en')).toBe(
+      'Spentrup, Jutland'
+    );
+    expect(translatePlace('Sankt Thomas i Dansk Vestindien', 'en')).toBe(
+      'Saint Thomas in the Danish West Indies'
+    );
+    expect(translatePlace('skibsforlis på vej hjem fra Kina', 'en')).toBe(
+      'shipwreck on the way home from China'
+    );
   });
 
   it('leaves Danish place names unchanged for Danish display', () => {
