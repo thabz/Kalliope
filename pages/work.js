@@ -3,6 +3,7 @@ import * as OpenGraph from '../common/opengraph.js';
 import _ from '../common/translations.js';
 import { workCrumbs } from '../components/breadcrumbs.js';
 import { formattedDate } from '../components/formatteddate.js';
+import * as Links from '../components/links.js';
 import { poetMenu } from '../components/menu.js';
 import Note from '../components/note.js';
 import Page from '../components/page.js';
@@ -20,8 +21,19 @@ import WorkSubtitles from '../components/worksubtitles.js';
 import ErrorPage from './error.js';
 
 const WorkPage = (props) => {
-  const { lang, poet, work, notes, pictures, toc, subworks, modified, error } =
-    props;
+  const {
+    lang,
+    poet,
+    work,
+    notes,
+    pictures,
+    toc,
+    subworks,
+    modified,
+    prev,
+    next,
+    error,
+  } = props;
 
   if (error) {
     return <ErrorPage error={error} lang={lang} message="Ukendt værk" />;
@@ -98,7 +110,19 @@ const WorkPage = (props) => {
     ogDescription = subworks.map((part) => part.toctitle).join(', ');
   }
 
-  let sectixonTitles = null;
+  let paging = {};
+  if (prev != null) {
+    paging.prev = {
+      url: Links.workURL(lang, poet.id, prev.id),
+      title: workTitleString(prev),
+    };
+  }
+  if (next != null) {
+    paging.next = {
+      url: Links.workURL(lang, poet.id, next.id),
+      title: workTitleString(next),
+    };
+  }
 
   return (
     <Page
@@ -114,6 +138,7 @@ const WorkPage = (props) => {
       crumbs={workCrumbs(lang, poet, work)}
       pageTitle={<PoetName poet={poet} includePeriod />}
       pageSubtitle={_('Værker', lang)}
+      paging={paging}
       menuItems={poetMenu(poet)}
       poet={poet}
       selectedMenuItem="works">
@@ -151,6 +176,8 @@ WorkPage.getInitialProps = async ({ query: { lang, poetId, workId } }) => {
     notes: json.notes,
     pictures: json.pictures,
     modified: json.modified,
+    prev: json.prev,
+    next: json.next,
     error: json.error,
   };
 };

@@ -8,6 +8,7 @@ const {
   fileExists,
 } = require('../libs/helpers.js');
 const { extractTitle, get_notes, get_pictures } = require('./parsing.js');
+const { sortWorks } = require('../../common/worksort.js');
 const {
   loadXMLDoc,
   getChildren,
@@ -109,6 +110,32 @@ const collect_git_modified_dates = () => {
 const build_works_toc = async (collected) => {
   const modifiedDates = collect_git_modified_dates();
 
+  const workFilesForPoet = (poetId) => {
+    return collected.workids
+      .get(poetId)
+      .map((workId) => `fdirs/${poetId}/${workId}.xml`)
+      .filter(fileExists);
+  };
+
+  const worksForPaging = (poetId, poet) => {
+    const works = collected.workids
+      .get(poetId)
+      .map((workId) => collected.works.get(`${poetId}/${workId}`))
+      .filter((work) => work != null && work.parent == null)
+      .filter((work) => work.has_content);
+    return sortWorks(poet, works);
+  };
+
+  const resolvePrevNextWork = (works, workId) => {
+    const index = works.findIndex((work) => {
+      return work.id === workId;
+    });
+    return {
+      prev: index > 0 ? works[index - 1] : null,
+      next: index >= 0 && index < works.length - 1 ? works[index + 1] : null,
+    };
+  };
+
   // Returns {toc, subworks, notes, pictures}
   const extract_work_data = async (work) => {
     const type = safeGetAttr(work, 'type');
@@ -144,6 +171,12 @@ const build_works_toc = async (collected) => {
     Array.from(collected.poets.entries()).map(async (entry) => {
       const [poetId, poet] = entry;
       safeMkdir(`public/api/${poetId}`);
+      const workFilenames = workFilesForPoet(poetId);
+      const poetWorksModified = isFileModified(
+        `fdirs/${poetId}/info.xml`,
+        ...workFilenames
+      );
+      const pageWorks = worksForPaging(poetId, poet);
 
       return Promise.all(
         collected.workids.get(poetId).map(async (workId) => {
@@ -151,7 +184,7 @@ const build_works_toc = async (collected) => {
           if (!fileExists(filename)) {
             return;
           }
-          if (!isFileModified(filename)) {
+          if (!poetWorksModified && !isFileModified(filename)) {
             return;
           }
           let doc = loadXMLDoc(filename);
@@ -179,6 +212,7 @@ const build_works_toc = async (collected) => {
           const parentData = collected.works.get(parentId);
 
           if (work_data) {
+            const { prev, next } = resolvePrevNextWork(pageWorks, workId);
             const toc_file_data = {
               poet,
               toc: work_data.toc,
@@ -187,6 +221,8 @@ const build_works_toc = async (collected) => {
               notes: work_data.notes || [],
               pictures: work_data.pictures || [],
               modified: modifiedDates.get(filename),
+              prev,
+              next,
             };
             const tocFilename = `public/api/${poetId}/${workId}-toc.json`;
             console.log(tocFilename);

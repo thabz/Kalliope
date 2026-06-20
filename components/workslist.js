@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { Fragment } from 'react';
 import CommonData from '../common/commondata.js';
 import _ from '../common/translations.js';
+import WorkSorting from '../common/worksort.js';
 import { formattedYear } from '../components/formatteddate.js';
 
 const workNameTranslated = (work, lang) => {
@@ -18,43 +19,10 @@ const WorksList = ({ lang, poet, works }) => {
     return null;
   }
 
-  const sortWorks = (works) => {
-    const sortableYear = (year) => {
-      let result = year.replace('ca.', '').replace('c.', '').trim();
-      if (result[0] === '-') {
-        result = 9999 + parseInt(result); // Sorter omvendt
-        result = '-' + result; // Men før de positive
-      }
-      return result;
-    };
-
-    if (poet.id === 'bibel') {
-      return works;
-    } else {
-      return works.sort((a, b) => {
-        if (a.id === 'andre') {
-          return 1;
-        } else if (b.id === 'andre') {
-          return -1;
-        } else {
-          const aKey =
-            a.year == null || a.year === '?'
-              ? a.title
-              : sortableYear(a.year) + a.id;
-          const bKey =
-            b.year == null || b.year === '?'
-              ? b.title
-              : sortableYear(b.year) + b.id;
-          return aKey > bKey ? 1 : -1;
-        }
-      });
-    }
-  };
-
   const anyPrefixes =
     works.filter((work) => work.toctitle.prefix != null).length > 0;
 
-  const rows = sortWorks(works).map((work, i) => {
+  const rows = WorkSorting.sortWorks(poet, works).map((work, i) => {
     const workName = workNameTranslated(work, lang);
 
     const year = work.year;
