@@ -33,13 +33,13 @@ const translatePlace = (place, lang) => {
   );
 };
 
-const build_todays_events_json = async collected => {
+const build_todays_events_json = async (collected) => {
   const portrait_descriptions = Array.from(collected.poets.values()).map(
-    poet => {
+    (poet) => {
       return `fdirs/${poet.id}/portraits.xml`;
     }
   );
-  const poet_info_files = Array.from(collected.poets.values()).map(poet => {
+  const poet_info_files = Array.from(collected.poets.values()).map((poet) => {
     return `fdirs/${poet.id}/info.xml`;
   });
   if (!isFileModified(...poet_info_files, ...portrait_descriptions)) {
@@ -49,7 +49,7 @@ const build_todays_events_json = async collected => {
   const langs = ['da', 'en'];
 
   safeMkdir('public/api/today');
-  langs.forEach(lang => {
+  langs.forEach((lang) => {
     safeMkdir(`public/api/today/${lang}`);
   });
 
@@ -62,7 +62,7 @@ const build_todays_events_json = async collected => {
     collected_events.set(key, items);
   };
 
-  const sort_events_by_date = events => {
+  const sort_events_by_date = (events) => {
     return events.sort((a, b) => {
       return a.date < b.date ? -1 : a.date > b.date ? 1 : 0;
     });
@@ -77,7 +77,7 @@ const build_todays_events_json = async collected => {
         if (m != null) {
           const year = m[1];
           const monthAndDay = m[2];
-          langs.forEach(lang => {
+          langs.forEach((lang) => {
             content_html = `<a poet="${poetId}">${poetName(poet)}</a>`;
             content_html += lang === 'da' ? ' født' : ' born';
             if (born.place != null) {
@@ -101,7 +101,7 @@ const build_todays_events_json = async collected => {
         if (m != null) {
           const year = m[1];
           const monthAndDay = m[2];
-          langs.forEach(lang => {
+          langs.forEach((lang) => {
             content_html = `<a poet="${poetId}">${poetName(poet)}</a>`;
             content_html += lang === 'da' ? ' død' : ' dead';
             if (dead.place != null) {
@@ -124,7 +124,7 @@ const build_todays_events_json = async collected => {
   });
 
   await Promise.all(
-    langs.map(async lang => {
+    langs.map(async (lang) => {
       const preferredCountries =
         lang === 'da' ? ['se', 'de', 'dk'] : ['us', 'gb']; // Større index er større vægt
       for (let m = 1; m <= 12; m++) {
@@ -132,14 +132,14 @@ const build_todays_events_json = async collected => {
           const dd = d < 10 ? '0' + d : d;
           const mm = m < 10 ? '0' + m : m;
           const events = collected_events.get(`${lang}-${mm}-${dd}`) || [];
-          if (events.filter(e => e.type === 'image').length === 0) {
+          if (events.filter((e) => e.type === 'image').length === 0) {
             // There are no images from events in today.xml. Find the most relevant poet portrait.
             const weighted = events
-              .filter(e => e.context.poet.has_portraits)
-              .map(event => {
+              .filter((e) => e.context.poet.has_portraits)
+              .map((event) => {
                 const poet = event.context.poet;
                 let weight = 0;
-                weight += poet.has_portraits ? 12 : 6; // TODO: Find the one with a portrait description
+                weight += poet.has_portraits ? 12 : 6;
                 weight += poet.has_texts ? 10 : 5;
                 weight += poet.has_works ? 6 : 3;
                 weight += preferredCountries.indexOf(poet.country);
@@ -156,7 +156,7 @@ const build_todays_events_json = async collected => {
               let content_html = null;
               const primary_portrait = (
                 await build_portraits_json(poet, collected)
-              ).filter(p => p.primary)[0];
+              ).filter((p) => p.primary)[0];
               if (
                 primary_portrait != null &&
                 primary_portrait.content_html[0][0].length > 0
@@ -182,7 +182,7 @@ const build_todays_events_json = async collected => {
     })
   );
 
-  langs.forEach(lang => {
+  langs.forEach((lang) => {
     for (let m = 1; m <= 12; m++) {
       for (let d = 1; d <= 31; d++) {
         const dd = d < 10 ? '0' + d : d;

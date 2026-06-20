@@ -55,8 +55,7 @@ const build_person_or_keyword_refs = (collected) => {
     { regexp: /picture[^>]*()artist="([^"]*)"/g, type: 'person' },
     { regexp: /picture[^>]*()ref="([^"]*)"/g, type: 'pictureref' },
   ];
-  // TODO: Led også efter <a person="">xxx</a> og <a poet="">xxxx</a>
-  // toKey is a poet id or a keyword id
+
   const register = (filename, toKey, fromPoemId, type, toPoemId) => {
     const collection = person_or_keyword_refs.get(toKey) || {
       mention: [],
