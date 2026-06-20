@@ -30,6 +30,28 @@ describe('place names', () => {
     expect(translatePlace('skibsforlis på vej hjem fra Kina', 'en')).toBe(
       'shipwreck on the way home from China'
     );
+    expect(translatePlace('Branderslev på Lolland', 'en')).toBe(
+      'Branderslev on Lolland'
+    );
+    expect(translatePlace('Siracusa på Sicilien', 'en')).toBe(
+      'Siracusa in Sicily'
+    );
+    expect(translatePlace('Nørre Vram i Skåne', 'en')).toBe(
+      'Nørre Vram in Scania'
+    );
+    expect(translatePlace('nær Roskilde', 'en')).toBe('near Roskilde');
+    expect(translatePlace('Det Gule Palæ, Kbh.', 'en')).toBe(
+      'Det Gule Palæ, Copenhagen'
+    );
+    expect(translatePlace('Østerlinnet, Ribe Stift', 'en')).toBe(
+      'Østerlinnet, Ribe Diocese'
+    );
+    expect(translatePlace('Underbjerg, Tørring Sogn', 'en')).toBe(
+      'Underbjerg, Tørring Parish'
+    );
+    expect(translatePlace('Øksendal på Nordmøre', 'en')).toBe(
+      'Øksendal in Nordmoere'
+    );
   });
 
   it('leaves Danish place names unchanged for Danish display', () => {
