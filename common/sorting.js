@@ -1,5 +1,19 @@
 const daDK = 'da-DK';
 
+const localesByLang = {
+  da: daDK,
+  de: 'de',
+  en: 'en-GB',
+  es: 'es',
+  fa: 'fa',
+  fr: 'fr-FR',
+  it: 'it-IT',
+  no: 'nb-NO',
+  sv: 'sv-SE',
+};
+
+export const localeForLang = (lang) => localesByLang[lang] || daDK;
+
 const nvl = (x, v) => {
   return x == null ? v : x;
 };
@@ -36,6 +50,15 @@ export const linesPairsByLine = (a, b) => {
   const a1 = a.sortBy;
   const b1 = b.sortBy;
   return a1.localeCompare(b1, daDK);
+};
+
+export const linesPairsByLineForLang = (lang) => {
+  const locale = localeForLang(lang);
+  return (a, b) => {
+    const a1 = a.sortBy;
+    const b1 = b.sortBy;
+    return a1.localeCompare(b1, locale);
+  };
 };
 
 export const keywordsByTitle = (a, b) => {

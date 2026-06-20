@@ -29,6 +29,36 @@ describe('sectionsByTitle', () => {
   });
 });
 
+describe('linesPairsByLineForLang', () => {
+  it('sorts Aa as Å in Danish line sorting', () => {
+    const data = ['Ø', 'A', 'Æ', 'B', 'Aa', 'C'].map((x) => {
+      return { sortBy: x };
+    });
+    const sorted = data
+      .sort(Sorting.linesPairsByLineForLang('da'))
+      .map((x) => x.sortBy);
+    expect(sorted).toEqual(['A', 'B', 'C', 'Æ', 'Ø', 'Aa']);
+  });
+
+  it('sorts Tennysons Waäit by English line sorting', () => {
+    const data = [
+      'Wab',
+      'Waäit till our Sally cooms in, fur thou mun a’ sights to tell',
+      'Waz',
+    ].map((x) => {
+      return { sortBy: x };
+    });
+    const sorted = data
+      .sort(Sorting.linesPairsByLineForLang('en'))
+      .map((x) => x.sortBy);
+    expect(sorted).toEqual([
+      'Waäit till our Sally cooms in, fur thou mun a’ sights to tell',
+      'Wab',
+      'Waz',
+    ]);
+  });
+});
+
 describe('poetYearSectionsByTitle', () => {
   it('puts 25-49 first among CE sections and unknown sections last', () => {
     const data = [
