@@ -891,7 +891,7 @@ const build_poet_works_json = (collected) => {
 };
 
 const build_news = (collected) => {
-  ['da', 'en'].forEach((lang) => {
+  ['da', 'en', 'fr', 'de'].forEach((lang) => {
     const path = `data/news_${lang}.xml`;
     if (!isFileModified(path)) {
       return;
