@@ -1,5 +1,6 @@
 import * as Client from '../common/client.js';
 import * as OpenGraph from '../common/opengraph.js';
+import { translatePlace } from '../common/place-names.js';
 import _ from '../common/translations.js';
 import { poetCrumbsWithTitle } from '../components/breadcrumbs.js';
 import {
@@ -30,7 +31,9 @@ const dateAndPlace = (datePlace, lang, age) => {
     result.push(formattedDate(datePlace.date));
   }
   if (datePlace.place != null) {
-    result.push(<span key="place">{', ' + datePlace.place}</span>);
+    result.push(
+      <span key="place">{', ' + translatePlace(datePlace.place, lang)}</span>
+    );
   }
   if (age != null) {
     result.push(<span key="age"> {age}</span>);
