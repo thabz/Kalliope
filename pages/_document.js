@@ -1,17 +1,15 @@
 // ./pages/_document.js
 import Document, { Head, Html, Main, NextScript } from 'next/document';
+import { matchRoute } from '../routes';
+
+const pathnameFrom = (asPath) => asPath.split(/[?#]/, 1)[0];
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
     const { asPath } = ctx;
-    // TODO: Get all supported langs from somewhere...
-    let lang = 'da';
-    if (asPath.match(/^\/da\//)) {
-      lang = 'da';
-    } else if (asPath.match(/^\/en\//)) {
-      lang = 'en';
-    }
+    const route = matchRoute(pathnameFrom(asPath));
+    const lang = route == null ? 'da' : route.query.lang;
 
     return { ...initialProps, lang };
   }
