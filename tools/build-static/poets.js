@@ -125,8 +125,8 @@ const build_poets_first_pass = collected => {
     if (!country.match(/(dk|se|no|gb|de|fr|us|it|un)/)) {
       throw `${id} har ukendt land: ${country}`;
     }
-    if (!lang.match(/(da|sv|no|en|de|fr|la|pe|sp|un|it)/)) {
-      throw `${id} har ukendt sprog: ${country}`;
+    if (!lang.match(/(da|sv|no|en|de|fr|la|fa|es|un|it)/)) {
+      throw `${id} har ukendt sprog: ${lang}`;
     }
 
     let square_portrait = null;
