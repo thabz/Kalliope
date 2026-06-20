@@ -12,7 +12,26 @@ const localesByLang = {
   sv: 'sv-SE',
 };
 
+const lineCollatorOptions = {
+  ignorePunctuation: true,
+};
+
 export const localeForLang = (lang) => localesByLang[lang] || daDK;
+
+export const lineSectionTitleForLang = (line, lang) => {
+  if (lang === 'da' && line.indexOf('Aa') === 0) {
+    return 'Å';
+  }
+  if (lang === 'da' && line.indexOf('Ö') === 0) {
+    return 'Ø';
+  }
+
+  const normalizedLetter =
+    lang === 'da'
+      ? line[0]
+      : line[0].normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  return normalizedLetter.toUpperCase()[0];
+};
 
 const nvl = (x, v) => {
   return x == null ? v : x;
@@ -54,10 +73,11 @@ export const linesPairsByLine = (a, b) => {
 
 export const linesPairsByLineForLang = (lang) => {
   const locale = localeForLang(lang);
+  const collator = new Intl.Collator(locale, lineCollatorOptions);
   return (a, b) => {
     const a1 = a.sortBy;
     const b1 = b.sortBy;
-    return a1.localeCompare(b1, locale);
+    return collator.compare(a1, b1);
   };
 };
 
