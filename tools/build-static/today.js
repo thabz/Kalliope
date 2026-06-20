@@ -1,37 +1,8 @@
 const { isFileModified } = require('../libs/caching.js');
 const { safeMkdir, writeJSON } = require('../libs/helpers.js');
+const { translatePlace } = require('../../common/place-names.js');
 const { poetName } = require('./formatting.js');
 const { build_portraits_json } = require('./portraits.js');
-
-const placeReplacementsByLang = {
-  en: [
-    ['Københavns Slot', 'Copenhagen Castle'],
-    ['Kbh.', 'Copenhagen'],
-    ['København', 'Copenhagen'],
-    ['Skt. Petersborg', 'St. Petersburg'],
-    ['Sjælland', 'Zealand'],
-    ['Rusland', 'Russia'],
-    ['Tyskland', 'Germany'],
-    ['Frankrig', 'France'],
-    ['Sverige', 'Sweden'],
-    ['Norge', 'Norway'],
-    ['England', 'England'],
-    ['Skotland', 'Scotland'],
-    ['Italien', 'Italy'],
-    ['Spanien', 'Spain'],
-    ['Holland', 'the Netherlands'],
-    ['Nederlandene', 'the Netherlands'],
-    [' ved ', ' near '],
-    ['(nu ', '(now '],
-  ],
-};
-
-const translatePlace = (place, lang) => {
-  return (placeReplacementsByLang[lang] || []).reduce(
-    (translated, [from, to]) => translated.replaceAll(from, to),
-    place
-  );
-};
 
 const build_todays_events_json = async collected => {
   const portrait_descriptions = Array.from(collected.poets.values()).map(
