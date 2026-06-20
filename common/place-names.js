@@ -5,7 +5,6 @@ const placeReplacementsByLang = {
     ['Charlottenlund Slot', 'Charlottenlund Palace'],
     ['Frederiksborg Slot', 'Frederiksborg Castle'],
     ['Københavns Slot', 'Copenhagen Castle'],
-    ['København Slot', 'Copenhagen Castle'],
     ['Amalienborg Slot', 'Amalienborg Palace'],
     ['Gottorp Slot', 'Gottorp Castle'],
     ['Nyborg Slot', 'Nyborg Castle'],
