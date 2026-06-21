@@ -1,5 +1,3 @@
-import React from 'react';
-
 const LangSelect = ({ path }) => {
   return <div style={{ paddingBottom: '70px' }} />;
   /*
@@ -7,7 +5,7 @@ const LangSelect = ({ path }) => {
       <nav>
         {links.map(({ href, label }) =>
           <div key={href}>
-            <Link route={href}><a>{label}</a></Link>
+            <Link href={href}>{label}</Link>
           </div>
         )}
         <style jsx>{`
