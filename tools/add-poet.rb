@@ -91,7 +91,6 @@ if (@wantsAndreXml)
 <kalliopework id="andre" author="#{@poetId}" status="incomplete" type="poetry">
 <workhead>
     <title>Andre digte</title>
-    <year>?</year>
 </workhead>
 <workbody>
 
@@ -113,7 +112,7 @@ if (@wantsAndreXml)
 end
 
 if (@wantsPortraitsXml) 
-    Dir.mkdir("static/images/#{@poetId}")
+    Dir.mkdir("public/images/#{@poetId}")
 
     @portraitsXml = %{<?xml version="1.0" encoding="UTF-8"?>
 <pictures>

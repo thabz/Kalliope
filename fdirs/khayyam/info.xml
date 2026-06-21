@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<person id="khayyam" country="un" lang="pe" type="poet">
+<person id="khayyam" country="un" lang="fa" type="poet">
   <name>
     <firstname>Omar</firstname>
     <lastname>Khayyam</lastname>
@@ -15,4 +15,10 @@
       <place>Nishabur, Khorasan, nuværende Iran</place>
     </dead>
   </period>
+  <literary-periods>middelalderen</literary-periods>
+  <identifiers>
+    <wikidata>Q35900</wikidata>
+    <viaf>100210377</viaf>
+    <gutenberg-org>1787</gutenberg-org>
+  </identifiers>
 </person>

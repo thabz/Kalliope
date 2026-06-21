@@ -1,36 +1,30 @@
-// @flow
-
-import React, { useEffect, useState, useContext } from 'react';
-import Page from '../components/page.js';
-import { Link } from '../routes';
-import * as Links from '../components/links';
+import Link from 'next/link';
+import { useContext, useEffect, useState } from 'react';
+import * as Client from '../common/client.js';
+import CommonData from '../common/commondata.js';
+import LangContext from '../common/LangContext.js';
+import _ from '../common/translations.js';
 import {
   kalliopeCrumbs,
   poetCrumbsWithTitle,
 } from '../components/breadcrumbs.js';
-import LangSelect from '../components/langselect.js';
+import * as Links from '../components/links';
 import { kalliopeMenu, poetMenu } from '../components/menu.js';
+import Page from '../components/page.js';
 import {
-  poetNameString,
   poetGenetiveLastName,
+  poetNameString,
 } from '../components/poetname-helpers.js';
 import PoetName from '../components/poetname.js';
-import WorkName from '../components/workname.js';
 import TextName from '../components/textname.js';
-import * as Strings from '../common/strings.js';
-import CommonData from '../common/commondata.js';
+import WorkName from '../components/workname.js';
 import ErrorPage from './error.js';
-import * as Client from '../common/client.js';
-import type { Lang, Country, Poet, PoetId, Error } from '../common/types.js';
-import _ from '../common/translations.js';
-import LangContext from '../common/LangContext.js';
 
-const RenderedHits = (props: { hits: [] }) => {
-  const { hits } = props;
+const RenderedHits = ({ hits }) => {
   const lang = useContext(LangContext);
 
   return hits
-    .filter(x => x._source.text != null)
+    .filter((x) => x._source.text != null)
     .map((hit, i) => {
       const { poet, work, text } = hit._source;
       const { highlight } = hit;
@@ -40,10 +34,8 @@ const RenderedHits = (props: { hits: [] }) => {
         item = (
           <div>
             <div>
-              <Link route={workURL}>
-                <a>
-                  <WorkName work={work} lang={lang} />
-                </a>
+              <Link href={workURL}>
+                <WorkName work={work} lang={lang} />
               </Link>
             </div>
             <div>
@@ -70,10 +62,8 @@ const RenderedHits = (props: { hits: [] }) => {
         item = (
           <div>
             <div className="title">
-              <Link route={textURL}>
-                <a>
-                  <TextName text={text} />
-                </a>
+              <Link href={textURL}>
+                <TextName text={text} />
               </Link>
             </div>
             <div className="hightlights">{renderedHighlight}</div>
@@ -99,7 +89,7 @@ const RenderedHits = (props: { hits: [] }) => {
               margin-bottom: 20px;
             }
             .result-item::before {
-              content: "${i + 1}"
+              content: '${i + 1}';
             }
           `}</style>
         </div>
@@ -107,13 +97,7 @@ const RenderedHits = (props: { hits: [] }) => {
     });
 };
 
-type SearchProps = {
-  lang: Lang,
-  poet: ?Poet,
-  country: Country,
-  query: string,
-};
-const SearchPage = (props: SearchProps) => {
+const SearchPage = (props) => {
   const { lang, poet, country, query } = props;
   const [error, setError] = useState(null);
   const [hits, setHits] = useState([]);
@@ -212,13 +196,9 @@ const SearchPage = (props: SearchProps) => {
     const genetive = poetGenetiveLastName(poet, lang);
     resultaterBeskrivelse += ` i ${genetive} værker.`;
     const fullSearchURL = Links.searchURL(lang, query, country);
-    linkToFullSearch = (
-      <Link route={fullSearchURL}>
-        <a>Søg i hele Kalliope.</a>
-      </Link>
-    );
+    linkToFullSearch = <Link href={fullSearchURL}>Søg i hele Kalliope.</Link>;
   } else if (country != 'dk') {
-    const countryData = CommonData.countries.filter(x => x.code === country);
+    const countryData = CommonData.countries.filter((x) => x.code === country);
     if (countryData.length > 0) {
       const adjective = countryData[0].adjective[lang];
       resultaterBeskrivelse += ` i den ${adjective} samling.`;
@@ -281,8 +261,6 @@ const SearchPage = (props: SearchProps) => {
 
 SearchPage.getInitialProps = async ({
   query: { lang, country, poetId, query },
-}: {
-  query: { lang: Lang, country: Country, poetId?: PoetId, query: string },
 }) => {
   const poet = await Client.poet(poetId);
   return {

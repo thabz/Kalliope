@@ -5,10 +5,10 @@ const mkdirp = require('mkdirp');
 const async = require('async');
 const { safeMkdir, buildThumbnails } = require('./libs/helpers.js');
 
-const dirname = 'static/facsimiles';
+const dirname = 'public/facsimiles';
 
-// Place pdf-files in static/facsimiles/<poetname>/<workid>.pdf
-// For each pdf file this script creates a folder static/facsimiles/<poetname>/<workid>
+// Place pdf-files in public/facsimiles/<poetname>/<workid>.pdf
+// For each pdf file this script creates a folder public/facsimiles/<poetname>/<workid>
 // containing jpg-files for each page in the pdf-file, named <workid>-<pagenumber>.jpg
 // where <pagenumber> is 000, 001, 002, etc.
 
@@ -62,9 +62,9 @@ poetDirs.forEach(poetDir => {
 });
 
 extractPdfImagesQueue.drain = function() {
-  buildThumbnails('static/facsimiles');
+  buildThumbnails('public/facsimiles');
   exec(
-    'rsync -rva static/facsimiles/* 10.0.0.5:Sites/kalliope/static/facsimiles'
+    'rsync -rva public/facsimiles/* 10.0.0.5:Sites/kalliope/public/facsimiles'
   );
 };
 

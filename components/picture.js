@@ -1,23 +1,14 @@
-// @flow
-import React, { useContext, useState } from 'react';
-import type { PictureItem, Lang, TextLang } from '../common/types.js';
-import { TextInline } from './textcontent.js';
-import PictureOverlay from './pictureoverlay.js';
+import Link from 'next/link';
+import { useContext, useState } from 'react';
 import CommonData from '../common/commondata.js';
-import PoetName from './poetname.js';
-import * as Links from './links.js';
-import Stack from './stack.js';
-import * as Strings from '../common/strings.js';
 import LangContext from '../common/LangContext.js';
-import { Link } from '../routes';
+import * as Links from './links.js';
+import PictureOverlay from './pictureoverlay.js';
+import PoetName from './poetname.js';
+import Stack from './stack.js';
+import { TextInline } from './textcontent.js';
 
-type FigCaptionProps = {
-  picture: PictureItem,
-  className?: string,
-  hideArtist?: boolean,
-  hideMuseum?: boolean,
-};
-const FigCaption = (props: FigCaptionProps) => {
+const FigCaption = (props) => {
   const { picture, hideArtist = false, hideMuseum = false } = props;
   const lang = useContext(LangContext);
 
@@ -25,10 +16,8 @@ const FigCaption = (props: FigCaptionProps) => {
   if (!hideArtist && picture.artist != null) {
     artistRendered = (
       <>
-        <Link route={Links.poetURL(lang, picture.artist.id)}>
-          <a>
-            <PoetName poet={picture.artist} />
-          </a>
+        <Link href={Links.poetURL(lang, picture.artist.id)}>
+          <PoetName poet={picture.artist} />
         </Link>
         {': '}
       </>
@@ -47,7 +36,7 @@ const FigCaption = (props: FigCaptionProps) => {
       museumRendered = (
         <>
           {' '}
-          <Link route={Links.museumURL(lang, picture.museum.id)}>{name}</Link>
+          <Link href={Links.museumURL(lang, picture.museum.id)}>{name}</Link>
           {'. '}
         </>
       );
@@ -90,15 +79,6 @@ const FigCaption = (props: FigCaptionProps) => {
   );
 };
 
-type PictureProps = {
-  pictures: Array<PictureItem>,
-  hideArtist?: boolean,
-  hideMuseum?: boolean,
-  startIndex?: number,
-  showDropShadow?: boolean,
-  clickToZoom?: boolean,
-  contentLang: TextLang,
-};
 const Picture = ({
   pictures,
   contentLang,
@@ -107,7 +87,7 @@ const Picture = ({
   showDropShadow = true,
   clickToZoom = true,
   startIndex = 0,
-}: PictureProps) => {
+}) => {
   const [overlayShown, showOverlay] = useState(false);
   const picture = pictures[startIndex];
   const src = picture.src;
@@ -193,7 +173,11 @@ const Picture = ({
           />
         </picture>
         <FigCaption
-          picture={picture}
+          picture={{
+            ...picture,
+            content_html:
+              picture.miniature_content_html || picture.content_html,
+          }}
           hideArtist={hideArtist}
           hideMuseum={hideMuseum}
         />

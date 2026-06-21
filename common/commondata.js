@@ -1,17 +1,6 @@
-// @flow
-//import type { Country } from './types.js';
-
 // All our images should have scaled versions with the following widths
 module.exports.availableImageWidths = [
-  100,
-  150,
-  200,
-  250,
-  300,
-  400,
-  500,
-  600,
-  800,
+  100, 150, 200, 250, 300, 400, 500, 600, 800,
 ];
 
 // Det er vigtigt at webp kommer før jpg, da Chrome vælger den første source

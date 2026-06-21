@@ -1,17 +1,11 @@
-// @flow
-
-import React from 'react';
-import { Link } from '../routes';
-import * as Links from './links.js';
-
-const LangSelect = ({ path }: { path: string }) => {
+const LangSelect = ({ path }) => {
   return <div style={{ paddingBottom: '70px' }} />;
   /*
     return (
       <nav>
         {links.map(({ href, label }) =>
           <div key={href}>
-            <Link route={href}><a>{label}</a></Link>
+            <Link href={href}>{label}</Link>
           </div>
         )}
         <style jsx>{`
