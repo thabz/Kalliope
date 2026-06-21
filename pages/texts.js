@@ -1,4 +1,3 @@
-import React from 'react';
 import * as Client from '../common/client.js';
 import CommonData from '../common/commondata.js';
 import * as OpenGraph from '../common/opengraph.js';
@@ -11,8 +10,9 @@ import Page from '../components/page.js';
 import { poetNameString } from '../components/poetname-helpers.js';
 import PoetName from '../components/poetname.js';
 import SectionedList from '../components/sectionedlist.js';
+import ErrorPage from './error.js';
 
-const groupLines = (lines, type) => {
+const groupLines = (lines, type, contentLang) => {
   let groups = new Map();
   lines.forEach((linePair) => {
     let line, alternative;
@@ -28,17 +28,7 @@ const groupLines = (lines, type) => {
     }
     line = line.replace(',', '').replace('!', '');
     linePair['sortBy'] = line + ' [' + alternative + '[' + linePair.id;
-    let letter = line[0];
-    if (line.indexOf('Aa') === 0) {
-      letter = 'Å';
-    }
-    if (line.indexOf('Ö') === 0) {
-      letter = 'Ø';
-    }
-    if (line.indexOf('È') === 0) {
-      letter = 'E';
-    }
-    letter = letter.toUpperCase();
+    let letter = Sorting.lineSectionTitleForLang(line, contentLang);
     let array = groups.get(letter) || [];
     array.push(linePair);
     groups.set(letter, array);
@@ -47,16 +37,20 @@ const groupLines = (lines, type) => {
   groups.forEach((group, key) => {
     sortedGroups.push({
       title: key,
-      items: group.sort(Sorting.linesPairsByLine),
+      items: group.sort(Sorting.linesPairsByLineForLang(contentLang)),
     });
   });
   return sortedGroups.sort(Sorting.sectionsByTitle);
 };
 
 const TextsPage = (props) => {
-  const { lang, poet, type, lines } = props;
+  const { lang, poet, type, lines, error } = props;
 
-  const groups = groupLines(lines, type);
+  if (error) {
+    return <ErrorPage error={error} lang={lang} message="Ukendt digter" />;
+  }
+
+  const groups = groupLines(lines, type, poet.lang);
   let sections = [];
   groups.forEach((group) => {
     const items = group.items.map((lines) => {
@@ -105,8 +99,7 @@ const TextsPage = (props) => {
       pageTitle={<PoetName poet={poet} includePeriod />}
       menuItems={poetMenu(poet)}
       poet={poet}
-      selectedMenuItem={type}
-    >
+      selectedMenuItem={type}>
       {renderedGroups}
     </Page>
   );
@@ -118,6 +111,7 @@ TextsPage.getInitialProps = async ({ query: { lang, poetId, type } }) => {
     lang,
     poet: json.poet,
     lines: json.lines,
+    error: json.error,
     type,
   };
 };

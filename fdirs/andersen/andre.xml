@@ -3,9 +3,7 @@
 <kalliopework id="andre" author="andersen" status="incomplete" type="poetry">
 <workhead>
    <title>Andre digte</title>
-   <year>?</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
@@ -230,7 +228,7 @@ Lad Tiden dække Alt med sine Vinger,
 Maaskee i Døden den Dit Held Dig bringer:
 Hvor nu er Land, var fordums Tid et Hav,
 En Bøge-Skov kan voxe om Din Grav;
-Et Sekel gaaer;<note>Måske en lille allusion til <xref poem="oehlenschlaeger1803a0"/>s ,,Et Sekel svinder!!''.</note>
+Et Sekel gaaer;<note>Måske en lille allusion til <xref poem="guldhornene"/>s ,,Et Sekel svinder!!''.</note>
 En Antiqvar vil finde Dine Skaar;
 Dybt i hans Indre taler høit en Stemme,
 At Konge-Støv Du eengang monne gjemme.
@@ -1234,7 +1232,7 @@ Faaborg den 7 August.
 </body>
 </text>
 
-<text id="andersen2001091301">
+<text id="andersen2001091301" ignore-tests="loose-letters">
 <head>
    <title>Formens evige Magie</title>
    <subtitle>

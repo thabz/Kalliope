@@ -1,4 +1,6 @@
 // Use poetname.js:poetNameString instead when node.js uses modules
+const { formatTitleAndYear } = require('../../common/dates.js');
+
 const poetName = poet => {
   if (poet == null) {
     throw 'poetName called with null poet';
@@ -20,20 +22,12 @@ const poetName = poet => {
 // Use workname.js: workTitleString instead when node.js uses modules
 const workName = work => {
   const { title, year } = work;
-  let yearPart = '';
-  if (year && year !== '?') {
-    yearPart = ` (${year})`;
-  }
-  return title + yearPart;
+  return formatTitleAndYear(title, year);
 };
 
 const workLinkName = work => {
   const { linktitle, year } = work;
-  let yearPart = '';
-  if (year && year !== '?') {
-    yearPart = ` (${year})`;
-  }
-  return linktitle + yearPart;
+  return formatTitleAndYear(linktitle, year);
 };
 
 module.exports = {
