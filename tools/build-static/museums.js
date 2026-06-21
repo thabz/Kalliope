@@ -41,7 +41,7 @@ const build_museums = () => {
   });
   writeCachedJSON('collected.museums', Array.from(collected_museums));
 
-  const path = `static/api/museums.json`;
+  const path = `public/api/museums.json`;
   console.log(path);
   writeJSON(path, { museums: Array.from(collected_museums.values()) });
 
@@ -67,7 +67,7 @@ const build_museum_url = (picture, collected) => {
 };
 
 const build_museum_pages = collected => {
-  safeMkdir('static/api/museums');
+  safeMkdir('public/api/museums');
 
   let found_changes = false;
 
@@ -114,7 +114,7 @@ const build_museum_pages = collected => {
       },
       artwork,
     };
-    const path = `static/api/museums/${museumId}.json`;
+    const path = `public/api/museums/${museumId}.json`;
     console.log(path);
     writeJSON(path, json);
   });

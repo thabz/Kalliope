@@ -1,5 +1,5 @@
 import 'isomorphic-fetch';
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { createURL } from '../common/client.js';
 import LangContext from '../common/LangContext.js';
 import { kalliopeCrumbs } from '../components/breadcrumbs';
@@ -177,8 +177,7 @@ let Index = (props) => {
       crumbs={kalliopeCrumbs(lang)}
       menuItems={kalliopeMenu()}
       selectedMenuItem="index"
-      paging={paging}
-    >
+      paging={paging}>
       <SidebarSplit sidebar={sidebar}>
         <div>
           <News news={news} lang={lang} />
@@ -215,9 +214,9 @@ Index.getInitialProps = async ({ query: { lang, date } }) => {
       next: `${zeroPad(next.getMonth() + 1)}-${zeroPad(next.getDate())}`,
     };
   }
-  const newsPromise = fetch(createURL(`/static/api/news_${lang}.json`));
+  const newsPromise = fetch(createURL(`/api/news_${lang}.json`));
   const todayPromise = fetch(
-    createURL(`/static/api/today/${lang}/${dayAndMonth}.json`)
+    createURL(`/api/today/${lang}/${dayAndMonth}.json`)
   );
   const todayResponse = await todayPromise;
   const newsResponse = await newsPromise;

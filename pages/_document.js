@@ -1,34 +1,31 @@
 // ./pages/_document.js
-import Document, { Head, Main, NextScript } from 'next/document';
-import flush from 'styled-jsx/server';
+import Document, { Head, Html, Main, NextScript } from 'next/document';
+import { matchRoute } from '../routes';
+
+const pathnameFrom = (asPath) => asPath.split(/[?#]/, 1)[0];
 
 export default class MyDocument extends Document {
-  static getInitialProps({ renderPage, asPath }) {
-    const { html, head, errorHtml, chunks } = renderPage();
-    // TODO: Get all supported langs from somewhere...
-    let lang = 'da';
-    if (asPath.match(/^\/da\//)) {
-      lang = 'da';
-    } else if (asPath.match(/^\/en\//)) {
-      lang = 'en';
-    }
+  static async getInitialProps(ctx) {
+    const initialProps = await Document.getInitialProps(ctx);
+    const { asPath } = ctx;
+    const route = matchRoute(pathnameFrom(asPath));
+    const lang = route == null ? 'da' : route.query.lang;
 
-    const styles = flush();
-    return { lang, html, head, errorHtml, chunks, styles };
+    return { ...initialProps, lang };
   }
 
   render() {
     return (
-      <html lang={this.props.lang}>
+      <Html lang={this.props.lang}>
         <Head>
           <style>{`body { margin: 0 } /* custom! */`}</style>
         </Head>
         <body>
           <Main />
           <NextScript />
-          <script src="/static/register-sw.js" />
+          <script src="/register-sw.js" />
         </body>
-      </html>
+      </Html>
     );
   }
 }

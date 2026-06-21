@@ -1,8 +1,8 @@
-import React, { useContext } from 'react';
+import Link from 'next/link';
+import { useContext } from 'react';
 import CommonData from '../common/commondata.js';
 import LangContext from '../common/LangContext.js';
 import _ from '../common/translations.js';
-import { Link } from '../routes';
 
 function joinWithCommaAndOr(items, andOrWord) {
   const result = [];
@@ -31,8 +31,8 @@ const CountryPicker = (props) => {
       return <b key={country.code}>{adj}</b>;
     } else {
       return (
-        <Link route={url} key={country.code}>
-          <a>{adj}</a>
+        <Link href={url} key={country.code}>
+          {adj}
         </Link>
       );
     }

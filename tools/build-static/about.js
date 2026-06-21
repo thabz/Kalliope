@@ -15,7 +15,7 @@ const {
 } = require('./xml.js');
 
 const build_about_pages = async (collected) => {
-  safeMkdir(`static/api/about`);
+  safeMkdir(`public/api/about`);
   // Regenerate all about-pages if any work-file is modified, since our poem-counts then might be off
   const areAnyWorkModified = Array.from(collected.works.keys())
     .filter((key) => {
@@ -30,7 +30,7 @@ const build_about_pages = async (collected) => {
       .map((x) => {
         return {
           xml: `${folder}/${x}`,
-          json: `static/api/about/${x.replace(/.xml$/, '.json')}`,
+          json: `public/api/about/${x.replace(/.xml$/, '.json')}`,
         };
       })
       .filter((paths) => isFileModified(paths.xml) || areAnyWorkModified)
@@ -47,7 +47,7 @@ const build_about_pages = async (collected) => {
         const title = safeGetText(head, 'title');
         const pictures = await get_pictures(
           head,
-          '/static/images/about',
+          '/images/about',
           paths.xml,
           collected
         );

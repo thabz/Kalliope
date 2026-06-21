@@ -1,4 +1,5 @@
-import React, { useContext, useEffect, useState } from 'react';
+import Link from 'next/link';
+import { useContext, useEffect, useState } from 'react';
 import * as Client from '../common/client.js';
 import CommonData from '../common/commondata.js';
 import LangContext from '../common/LangContext.js';
@@ -17,7 +18,6 @@ import {
 import PoetName from '../components/poetname.js';
 import TextName from '../components/textname.js';
 import WorkName from '../components/workname.js';
-import { Link } from '../routes';
 import ErrorPage from './error.js';
 
 const RenderedHits = ({ hits }) => {
@@ -34,10 +34,8 @@ const RenderedHits = ({ hits }) => {
         item = (
           <div>
             <div>
-              <Link route={workURL}>
-                <a>
-                  <WorkName work={work} lang={lang} />
-                </a>
+              <Link href={workURL}>
+                <WorkName work={work} lang={lang} />
               </Link>
             </div>
             <div>
@@ -64,10 +62,8 @@ const RenderedHits = ({ hits }) => {
         item = (
           <div>
             <div className="title">
-              <Link route={textURL}>
-                <a>
-                  <TextName text={text} />
-                </a>
+              <Link href={textURL}>
+                <TextName text={text} />
               </Link>
             </div>
             <div className="hightlights">{renderedHighlight}</div>
@@ -200,11 +196,7 @@ const SearchPage = (props) => {
     const genetive = poetGenetiveLastName(poet, lang);
     resultaterBeskrivelse += ` i ${genetive} værker.`;
     const fullSearchURL = Links.searchURL(lang, query, country);
-    linkToFullSearch = (
-      <Link route={fullSearchURL}>
-        <a>Søg i hele Kalliope.</a>
-      </Link>
-    );
+    linkToFullSearch = <Link href={fullSearchURL}>Søg i hele Kalliope.</Link>;
   } else if (country != 'dk') {
     const countryData = CommonData.countries.filter((x) => x.code === country);
     if (countryData.length > 0) {
@@ -246,8 +238,7 @@ const SearchPage = (props) => {
       country={country}
       menuItems={tabs}
       poet={poet}
-      selectedMenuItem="search"
-    >
+      selectedMenuItem="search">
       <div className="result-items">
         <div className="result-count">
           {resultaterBeskrivelse} {linkToFullSearch}

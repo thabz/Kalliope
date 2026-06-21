@@ -1,8 +1,9 @@
-import React, { useContext, useEffect, useState } from 'react';
+import Link from 'next/link';
+import Router from 'next/router';
+import { useContext, useEffect, useState } from 'react';
 import CommonData from '../common/commondata.js';
 import LangContext from '../common/LangContext.js';
 import _ from '../common/translations.js';
-import { Link, Router } from '../routes';
 import { CrossSVG, LoupeSVG } from './icons.js';
 import * as Links from './links.js';
 import { poetGenetiveLastName } from './poetname-helpers.js';
@@ -57,7 +58,7 @@ const Tabs = (props) => {
     if (document) {
       searchField.blur();
     }
-    Router.pushRoute(URL);
+    Router.push(URL);
     e.preventDefault();
   };
 
@@ -148,8 +149,7 @@ const Tabs = (props) => {
         className="svg-container"
         style={{
           cursor: 'pointer',
-        }}
-      >
+        }}>
         <CrossSVG color="black" onClick={onCrossClick} />
       </div>
     </div>
@@ -158,14 +158,17 @@ const Tabs = (props) => {
   const itemsRendered = items
     .filter((item) => !item.hide)
     .map((item, i) => {
-      const className = item.id === selected ? 'tab selected' : 'tab';
+      const isSelected = item.id === selected;
+      const className = isSelected ? 'tab selected' : 'tab';
       return (
         <div className={className} key={item.url}>
-          <Link route={item.url}>
-            <a>
+          {isSelected ? (
+            <h2>{item.title}</h2>
+          ) : (
+            <Link href={item.url}>
               <h2>{item.title}</h2>
-            </a>
-          </Link>
+            </Link>
+          )}
         </div>
       );
     });
@@ -176,16 +179,14 @@ const Tabs = (props) => {
         className="tabs"
         style={{
           display: showSearchField ? 'none' : 'flex',
-        }}
-      >
+        }}>
         {itemsRendered}
       </nav>
       <div
         className="searchfield-container"
         style={{
           display: showSearchField ? 'block' : 'none',
-        }}
-      >
+        }}>
         {searchFieldRendered}
       </div>
     </div>
@@ -264,7 +265,7 @@ const Tabs = (props) => {
             border-bottom: 2px solid #888;
           }
           */
-          :global(.tabs) :global(.tab.selected a) {
+          :global(.tabs) :global(.tab.selected h2) {
             color: black;
           }
           :global(.tabs) > :global(.tab) :global(a) {

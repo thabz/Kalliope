@@ -14,6 +14,7 @@ const translations = {
   'en*Biografi': 'Biography',
   'en*Om': 'About',
   'en*Nyheder': 'News',
+  'en*Sidst ændret': 'Last modified',
   'en*digtere': 'poets',
   'en*Efter navn': 'By name',
   'en*Efter år': 'By year',
