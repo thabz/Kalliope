@@ -4,6 +4,7 @@ const path = require('path');
 const mkdirp = require('mkdirp');
 const Paths = require('../common/paths.js');
 const CommonData = require('../common/commondata.js');
+const { extractYear } = require('../common/dates.js');
 const {
   isFileModified,
   markFileDirty,
@@ -27,6 +28,7 @@ const {
   build_poets_first_pass,
   build_poets_json,
   build_poets_by_country_json,
+  build_literary_periods_json,
 } = require('./build-static/poets.js');
 const {
   build_dict_first_pass,
@@ -112,6 +114,42 @@ let collected = {
 // Ready after second pass
 let collected_works = new Map();
 
+const parseAliases = (value) => {
+  if (value == null) {
+    return [];
+  }
+  return value
+    .split(',')
+    .map((alias) => alias.trim())
+    .filter((alias) => alias.length > 0);
+};
+
+const buildTextAliasRedirects = (redirects, texts) => {
+  const textIds = new Set(texts.keys());
+  const aliases = new Map();
+
+  texts.forEach((text) => {
+    (text.aliases || []).forEach((alias) => {
+      if (alias === text.id || textIds.has(alias)) {
+        throw new Error(
+          `Text alias "${alias}" conflicts with an existing text id.`
+        );
+      }
+      if (aliases.has(alias)) {
+        throw new Error(
+          `Text alias "${alias}" is used by both ${aliases.get(alias)} and ${
+            text.id
+          }.`
+        );
+      }
+      aliases.set(alias, text.id);
+      ['da', 'en'].forEach((lang) => {
+        redirects[`/${lang}/text/${alias}`] = `/${lang}/text/${text.id}`;
+      });
+    });
+  });
+};
+
 const build_bio_json = async (collected) => {
   return Promise.all(
     Array.from(collected.poets.entries()).map(async (entry) => {
@@ -132,7 +170,7 @@ const build_bio_json = async (collected) => {
         return;
       }
 
-      safeMkdir(`static/api/${poet.id}`);
+      safeMkdir(`public/api/${poet.id}`);
       const bioXmlPath = `fdirs/${poet.id}/bio.xml`;
       const data = {
         poet,
@@ -149,7 +187,7 @@ const build_bio_json = async (collected) => {
       }
       data.timeline = await build_poet_timeline_json(poet, collected);
       data.portraits = await build_portraits_json(poet, collected);
-      const destFilename = `static/api/${poet.id}/bio.json`;
+      const destFilename = `public/api/${poet.id}/bio.json`;
       console.log(destFilename);
       writeJSON(destFilename, data);
     })
@@ -394,7 +432,7 @@ const handle_text = async (
       variants: variantsArray,
       pictures: await get_pictures(
         head,
-        `/static/images/${poetId}`,
+        `/images/${poetId}`,
         `fdirs/${poetId}/${workId}.xml:${textId}`,
         collected
       ),
@@ -534,7 +572,7 @@ const handle_work = async (work) => {
   const notes = get_notes(workhead, collected);
   const pictures = get_pictures(
     workhead,
-    `/static/images/${poetId}`,
+    `/images/${poetId}`,
     `fdirs/${poetId}/${workId}`,
     collected
   );
@@ -579,6 +617,19 @@ const handle_work = async (work) => {
   return { lines, toc, notes, pictures };
 };
 
+const validateWorkYear = (year, filename) => {
+  if (year == null) {
+    return;
+  }
+  if (year === '?') {
+    throw new Error(`${filename} has unknown year marker in <year>.`);
+  }
+  const [, numericYear] = extractYear(year, null);
+  if (numericYear == null) {
+    throw new Error(`${filename} has invalid <year>: ${year}`);
+  }
+};
+
 // Constructs collected.works and collected.texts to
 // be used for resolving <xref poem="">, etc.
 const works_first_pass = (collected) => {
@@ -621,6 +672,7 @@ const works_first_pass = (collected) => {
       const linktitle = replaceDashes(safeGetText(head, 'linktitle')) || title;
       const breadcrumbtitle = safeGetText(head, 'breadcrumbtitle') || title;
       const year = safeGetText(head, 'year');
+      validateWorkYear(year, workFilename);
       const status = safeGetAttr(work, 'status');
       const type = safeGetAttr(work, 'type');
       const subtitles = extractSubtitles(head, 'subtitle', collected);
@@ -655,6 +707,12 @@ const works_first_pass = (collected) => {
         parentIdsToFillIn.set(fullWorkId, `${poetId}/${parentId}`);
       }
 
+      Array.from(texts.entries()).forEach(([cachedTextId, text]) => {
+        if (text.poetId === poetId && text.workId === workId) {
+          texts.delete(cachedTextId);
+        }
+      });
+
       workTexts.forEach((part) => {
         const textId = safeGetAttr(part, 'id');
         if (tagName(part) === 'section' && textId == null) {
@@ -668,6 +726,7 @@ const works_first_pass = (collected) => {
         const title = extractTitle(head, 'title');
         const linktitle = extractTitle(head, 'linktitle');
         const indextitle = extractTitle(head, 'indextitle');
+        const aliases = parseAliases(safeGetAttr(part, 'aliases'));
 
         const linkTitle = linktitle || title || firstline;
         const indexTitle = indextitle || title || firstline;
@@ -685,6 +744,7 @@ const works_first_pass = (collected) => {
           firstline: replaceDashes(firstline == null ? null : firstline.title),
           indexTitle: replaceDashes(indexTitle.title),
           linkTitle: replaceDashes(linkTitle.title),
+          aliases,
           type: tagName(part),
           poetId: poetId,
           workId: workId,
@@ -712,7 +772,7 @@ const works_second_pass = async (collected) => {
   return Promise.all(
     Array.from(collected.poets.entries()).map(async (entry) => {
       const [poetId, poet] = entry;
-      safeMkdir(`static/api/${poetId}`);
+      safeMkdir(`public/api/${poetId}`);
 
       return Promise.all(
         collected.workids.get(poetId).map(async (workId) => {
@@ -789,7 +849,7 @@ const works_second_pass = async (collected) => {
 
 const build_poet_works_json = (collected) => {
   collected.poets.forEach((poet, poetId) => {
-    safeMkdir(`static/api/${poetId}`);
+    safeMkdir(`public/api/${poetId}`);
 
     const workFilenames = collected.workids
       .get(poetId)
@@ -813,7 +873,7 @@ const build_poet_works_json = (collected) => {
 
       // Copy the xml-file into static to allow for xml download.
       fs.createReadStream(filename).pipe(
-        fs.createWriteStream(`static/api/${poetId}/${workId}.xml`)
+        fs.createWriteStream(`public/api/${poetId}/${workId}.xml`)
       );
       let doc = loadXMLDoc(filename);
       const work = getChildByTagName(doc, 'kalliopework');
@@ -839,14 +899,14 @@ const build_poet_works_json = (collected) => {
       works,
       artwork,
     };
-    const worksOutFilename = `static/api/${poetId}/works.json`;
+    const worksOutFilename = `public/api/${poetId}/works.json`;
     console.log(worksOutFilename);
     writeJSON(worksOutFilename, objectToWrite);
   });
 };
 
 const build_news = (collected) => {
-  ['da', 'en'].forEach((lang) => {
+  ['da', 'en', 'fr', 'de'].forEach((lang) => {
     const path = `data/news_${lang}.xml`;
     if (!isFileModified(path)) {
       return;
@@ -868,7 +928,7 @@ const build_news = (collected) => {
         content_html: htmlToXml(safeGetInnerXML(body).trim(), collected),
       });
     });
-    const outfile = `static/api/news_${lang}.json`;
+    const outfile = `public/api/news_${lang}.json`;
     writeJSON(outfile, list);
     console.log(outfile);
   });
@@ -876,24 +936,25 @@ const build_news = (collected) => {
 
 const build_redirects_json = (collected) => {
   let redirects = {};
+  buildTextAliasRedirects(redirects, collected.texts);
   collected.poets.forEach((poet, poetId) => {
     if (!poet.has_works && !poet.has_artwork) {
       redirects[`/en/works/${poetId}`] = `/en/bio/${poetId}`;
       redirects[`/da/works/${poetId}`] = `/da/bio/${poetId}`;
     }
   });
-  writeJSON('static/api/redirects.json', redirects);
+  writeJSON('public/api/redirects.json', redirects);
 };
 
 const build_image_thumbnails = async () => {
   return Promise.all([
-    buildThumbnails('static/images', isFileModified),
-    buildThumbnails('static/kunst', isFileModified),
+    buildThumbnails('public/images', isFileModified),
+    buildThumbnails('public/kunst', isFileModified),
   ]);
 };
 
 const main = async () => {
-  safeMkdir(`static/api`);
+  safeMkdir(`public/api`);
   collected.museums = await b('build_museums', build_museums, collected);
   collected.workids = await b('build_poet_workids', build_poet_workids);
   collected.poets = await b(
@@ -923,6 +984,11 @@ const main = async () => {
   await b(
     'build_poets_by_country_json',
     build_poets_by_country_json,
+    collected
+  );
+  await b(
+    'build_literary_periods_json',
+    build_literary_periods_json,
     collected
   );
   await b('build_museum_pages', build_museum_pages, collected);

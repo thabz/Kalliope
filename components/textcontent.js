@@ -1,7 +1,7 @@
-import React, { useContext } from 'react';
+import Link from 'next/link';
+import { useContext } from 'react';
 import CommonData from '../common/commondata.js';
 import LangContext from '../common/LangContext.js';
-import { Link } from '../routes';
 import { Footnote } from './footnotes.js';
 import * as Links from './links';
 var DOMParser = require('xmldom').DOMParser;
@@ -26,8 +26,7 @@ const renderXmlString = (inputString) => {
           display: 'inline-block',
           width: '1em',
           marginRight: '0.3em',
-        }}
-      >
+        }}>
         {x}
       </span>
     ));
@@ -38,71 +37,96 @@ const renderXmlString = (inputString) => {
     );
   };
 
+  const handle_hash_link_click = (event, href) => {
+    if (typeof window === 'undefined' || href.indexOf('#') === -1) {
+      return;
+    }
+    event.preventDefault();
+
+    const target = new URL(href, window.location.href);
+    if (
+      target.pathname === window.location.pathname &&
+      target.search === window.location.search
+    ) {
+      window.location.hash = target.hash;
+      window.location.reload();
+    } else {
+      window.location.href = target.toString();
+    }
+  };
+
+  const handle_link = (href, children) => {
+    const key = keySeq++;
+    if (href.indexOf('#') > -1) {
+      return (
+        <a
+          key={key}
+          href={href}
+          onClick={(e) => handle_hash_link_click(e, href)}>
+          {children}
+        </a>
+      );
+    }
+    return (
+      <Link key={key} href={href}>
+        {children}
+      </Link>
+    );
+  };
+
   const handle_a = (node) => {
     if (node.hasAttribute('person')) {
       const poetId = node.getAttribute('person');
-      return (
-        <Link key={keySeq++} route={Links.poetURL(lang, poetId)}>
-          <a>{handle_nodes(node.childNodes)}</a>
-        </Link>
+      return handle_link(
+        Links.poetURL(lang, poetId),
+        handle_nodes(node.childNodes)
       );
     } else if (node.hasAttribute('poet')) {
       const poetId = node.getAttribute('poet');
-      return (
-        <Link key={keySeq++} route={Links.poetURL(lang, poetId)}>
-          <a>{handle_nodes(node.childNodes)}</a>
-        </Link>
+      return handle_link(
+        Links.poetURL(lang, poetId),
+        handle_nodes(node.childNodes)
       );
     } else if (node.hasAttribute('poem')) {
       const textId = node.getAttribute('poem');
-      return (
-        <Link key={keySeq++} route={Links.textURL(lang, textId)}>
-          <a>{handle_nodes(node.childNodes)}</a>
-        </Link>
+      return handle_link(
+        Links.textURL(lang, textId),
+        handle_nodes(node.childNodes)
       );
     } else if (node.hasAttribute('text')) {
       const textId = node.getAttribute('text');
-      return (
-        <Link key={keySeq++} route={Links.textURL(lang, textId)}>
-          <a>{handle_nodes(node.childNodes)}</a>
-        </Link>
+      return handle_link(
+        Links.textURL(lang, textId),
+        handle_nodes(node.childNodes)
       );
     } else if (node.hasAttribute('keyword')) {
       const keywordId = node.getAttribute('keyword');
-      return (
-        <Link key={keySeq++} route={Links.keywordURL(lang, keywordId)}>
-          <a>{handle_nodes(node.childNodes)}</a>
-        </Link>
+      return handle_link(
+        Links.keywordURL(lang, keywordId),
+        handle_nodes(node.childNodes)
       );
     } else if (node.hasAttribute('dict')) {
       const keywordId = node.getAttribute('dict');
-      return (
-        <Link key={keySeq++} route={Links.dictionaryURL(lang, keywordId)}>
-          <a>{handle_nodes(node.childNodes)}</a>
-        </Link>
+      return handle_link(
+        Links.dictionaryURL(lang, keywordId),
+        handle_nodes(node.childNodes)
       );
     } else if (node.hasAttribute('work')) {
       const parts = node.getAttribute('work').split('/');
       const poetId = parts[0];
       const workId = parts[1];
-      return (
-        <Link key={keySeq++} route={Links.workURL(lang, poetId, workId)}>
-          <a>{handle_nodes(node.childNodes)}</a>
-        </Link>
+      return handle_link(
+        Links.workURL(lang, poetId, workId),
+        handle_nodes(node.childNodes)
       );
     } else if (node.hasAttribute('href')) {
       const href = node.getAttribute('href');
-      return (
-        <Link key={keySeq++} route={href}>
-          <a>{handle_nodes(node.childNodes)}</a>
-        </Link>
-      );
+      return handle_link(href, handle_nodes(node.childNodes));
     } else if (node.hasAttribute('bible')) {
       const bibleId = node.getAttribute('bible');
-      return (
-        <Link key={keySeq++} route={Links.bibleURL(lang, bibleId)}>
-          <a>{handle_nodes(node.childNodes)}</a>
-        </Link>
+      return handle_link(
+        Links.bibleURL(lang, bibleId),
+        handle_nodes(node.childNodes)
       );
     } else {
       return <code key={keySeq++}>{node.toString()}</code>;
@@ -160,8 +184,7 @@ const renderXmlString = (inputString) => {
         return (
           <center
             key={keySeq++}
-            style={{ display: 'inline-block', width: '100%' }}
-          >
+            style={{ display: 'inline-block', width: '100%' }}>
             {handle_nodes(node.childNodes)}
           </center>
         );
@@ -179,8 +202,7 @@ const renderXmlString = (inputString) => {
               display: 'block',
               position: 'absolute',
               margin: `0 ${right} 0 ${left}`,
-            }}
-          >
+            }}>
             {handle_nodes(node.childNodes)}
           </blockquote>
         );
@@ -200,8 +222,7 @@ const renderXmlString = (inputString) => {
               display: 'inline',
               fontSize: '1.0rem',
               lineHeight: '1.1rem', // Virker ikke i en inline block
-            }}
-          >
+            }}>
             {handle_nodes(node.childNodes)}
           </small>
         );
@@ -219,8 +240,7 @@ const renderXmlString = (inputString) => {
               display: 'inline-block',
               width: '100%',
               textAlign: 'right',
-            }}
-          >
+            }}>
             {handle_nodes(node.childNodes)}
           </span>
         );
@@ -232,8 +252,7 @@ const renderXmlString = (inputString) => {
               display: 'inline',
               color: CommonData.lightTextColor,
               pageBreakAfter: 'avoid', // Not working.
-            }}
-          >
+            }}>
             {handle_nodes(node.childNodes)}
           </span>
         );
@@ -449,8 +468,7 @@ const TextContent = (props) => {
         <div
           className={className}
           data-num={lineOptions.displayNum || lineOptions.margin}
-          key={keyPrefix + i}
-        >
+          key={keyPrefix + i}>
           {anchor}
           <div className={lineInnerClass}>{rendered}</div>
         </div>
@@ -476,8 +494,7 @@ const TextContent = (props) => {
         <div
           className={className}
           key={i + keyPrefix}
-          data-num={lineOptions.displayNum}
-        >
+          data-num={lineOptions.displayNum}>
           {anchor}
           <div className={lineInnerClass}>{rendered}</div>
         </div>
@@ -502,8 +519,7 @@ const TextContent = (props) => {
         .filter((a) => a != null)
         .join(' ')}
       lang={contentLang}
-      key={keyPrefix + 'outer'}
-    >
+      key={keyPrefix + 'outer'}>
       {/*
         <pre>
           {contentLang || 'Mangler content_lang'}

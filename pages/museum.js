@@ -1,5 +1,4 @@
 import 'isomorphic-fetch';
-import React from 'react';
 import * as Client from '../common/client.js';
 import _ from '../common/translations.js';
 import { kalliopeCrumbs } from '../components/breadcrumbs.js';
@@ -31,8 +30,7 @@ const MuseumPage = (props) => {
       pageTitle={museum.name}
       pageSubtitle={_('Værker', lang)}
       menuItems={kalliopeMenu()}
-      selectedMenuItem="works"
-    >
+      selectedMenuItem="works">
       <div className="two-columns" style={{ lineHeight: 1.7 }}>
         <PicturesGrid lang={lang} artwork={artwork} hideMuseum={true} />
       </div>
