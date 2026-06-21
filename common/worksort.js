@@ -17,14 +17,8 @@ const sortWorks = (poet, works) => {
       } else if (b.id === 'andre') {
         return -1;
       } else {
-        const aKey =
-          a.year == null || a.year === '?'
-            ? a.title
-            : sortableYear(a.year) + a.id;
-        const bKey =
-          b.year == null || b.year === '?'
-            ? b.title
-            : sortableYear(b.year) + b.id;
+        const aKey = a.year == null ? a.title : sortableYear(a.year) + a.id;
+        const bKey = b.year == null ? b.title : sortableYear(b.year) + b.id;
         return aKey > bKey ? 1 : -1;
       }
     });

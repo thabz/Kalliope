@@ -119,7 +119,7 @@ const build_poet_timeline_json = async (poet, collected) => {
         })
         .map(async (workId) => {
           const work = collected.works.get(`${poet.id}/${workId}`);
-          if (work.year != '?') {
+          if (work.year != null) {
             const workName = work.has_content
               ? `<a work="${poet.id}/${workId}">${work.title}</a>`
               : work.title;

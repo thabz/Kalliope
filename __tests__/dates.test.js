@@ -20,8 +20,6 @@ describe('shared date helpers', () => {
 
   it('omits unknown years from work titles', () => {
     expect(Dates.formatTitleAndYear('Digte', null)).toBe('Digte');
-    expect(Dates.formatTitleAndYear('Digte', '?')).toBe('Digte');
-    expect(Dates.formatTitleAndYear('Digte', 'uden år')).toBe('Digte');
   });
 
   it('normalizes timeline dates independently of display formatting', () => {
