@@ -34,8 +34,7 @@ const Footnote = ({ text }) => {
   return (
     <sup
       style={{ marginLeft: '0.3em', lineHeight: '0' }}
-      className="footnotes-print-only"
-    >
+      className="footnotes-print-only">
       <a name={anchor} />
       {number}
     </sup>

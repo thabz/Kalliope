@@ -25,59 +25,59 @@ export const poet = async (poetId) => {
   if (poetId == null) {
     return Promise.resolve(null);
   } else {
-    return fetchJSON(`/static/api/${poetId}.json`);
+    return fetchJSON(`/api/${poetId}.json`);
   }
 };
 
 export const poets = async (country) => {
   // flow-disable-next-line
-  return fetchJSON(`/static/api/poets-${country}.json`);
+  return fetchJSON(`/api/poets-${country}.json`);
 };
 
 export const allTexts = async (country, type, letter) => {
-  return fetchJSON(`/static/api/alltexts/${country}-${type}-${letter}.json`);
+  return fetchJSON(`/api/alltexts/${country}-${type}-${letter}.json`);
 };
 
 export const dictItem = async (dictItemId) => {
-  return fetchJSON(`/static/api/dict/${dictItemId}.json`);
+  return fetchJSON(`/api/dict/${dictItemId}.json`);
 };
 
 export const museums = async () => {
-  return fetchJSON(`/static/api/museums.json`);
+  return fetchJSON(`/api/museums.json`);
 };
 
 export const work = async (poetId, workId) => {
-  const path = `/static/api/${poetId}/${workId}-toc.json`;
+  const path = `/api/${poetId}/${workId}-toc.json`;
   return fetchJSON(path);
 };
 
 export const museum = async (museumId) => {
-  const path = `/static/api/museums/${museumId}.json`;
+  const path = `/api/museums/${museumId}.json`;
   return fetchJSON(path);
 };
 
 export const works = async (poetId) => {
-  return fetchJSON(`/static/api/${poetId}/works.json`);
+  return fetchJSON(`/api/${poetId}/works.json`);
 };
 
 export const bio = async (poetId) => {
-  return fetchJSON(`/static/api/${poetId}/bio.json`);
+  return fetchJSON(`/api/${poetId}/bio.json`);
 };
 
 export const mentions = async (poetId) => {
-  return fetchJSON(`/static/api/${poetId}/mentions.json`);
+  return fetchJSON(`/api/${poetId}/mentions.json`);
 };
 
 export const keyword = async (keywordId) => {
-  return fetchJSON(`/static/api/keywords/${keywordId}.json`);
+  return fetchJSON(`/api/keywords/${keywordId}.json`);
 };
 
 export const about = async (keywordId, lang) => {
-  return fetchJSON(`/static/api/about/${keywordId}_${lang}.json`);
+  return fetchJSON(`/api/about/${keywordId}_${lang}.json`);
 };
 
 export const text = async (textId) => {
-  const path = Paths.textPath(textId);
+  const path = Paths.textPath(textId).replace(/^public\//, '');
   const json = fetchJSON(`/${path}`);
   return json;
 };
@@ -92,5 +92,5 @@ export const search = async (poetId, country, query, page = 0) => {
 };
 
 export const texts = async (poetId) => {
-  return fetchJSON(`/static/api/${poetId}/texts.json`);
+  return fetchJSON(`/api/${poetId}/texts.json`);
 };

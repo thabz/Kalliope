@@ -1,8 +1,8 @@
 User-agent: *
-Disallow: /static/facsimiles/
-Disallow: /static/images/*/t/
-Disallow: /static/kunst/*/t/
-Disallow: /static/gfx/
+Disallow: /facsimiles/
+Disallow: /images/*/t/
+Disallow: /kunst/*/t/
+Disallow: /gfx/
 
 User-agent: SemrushBot
 Disallow: /
