@@ -1,9 +1,6 @@
-// @flow
-
 import React from 'react';
-import type { Node } from 'react';
 
-const WrapNonEmpty = (props: { children: Node }) => {
+const WrapNonEmpty = (props) => {
   const { children, ...rest } = props;
   if (React.Children.toArray(children).length > 0) {
     return <div {...rest}>{children}</div>;

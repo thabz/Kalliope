@@ -1,32 +1,15 @@
-// @flow
-
 import 'isomorphic-fetch';
-import React from 'react';
-import Page from '../components/page.js';
-import { Link } from '../routes';
-import * as Links from '../components/links';
-import LangSelect from '../components/langselect.js';
-import Tabs from '../components/menu.js';
-import PoetName from '../components/poetname.js';
-import { poetNameString } from '../components/poetname-helpers.js';
-import Picture from '../components/picture.js';
-import * as Sorting from '../common/sorting.js';
-import * as Strings from '../common/strings.js';
-import CommonData from '../common/commondata.js';
+import Link from 'next/link';
 import { createURL } from '../common/client.js';
-import type {
-  Lang,
-  Country,
-  Section,
-  Poet,
-  SortReturn,
-  SectionForRendering,
-  PictureItem,
-} from '../common/types.js';
+import CommonData from '../common/commondata.js';
+import * as Strings from '../common/strings.js';
+import * as Links from '../components/links';
+import Page from '../components/page.js';
+import Picture from '../components/picture.js';
+import { poetNameString } from '../components/poetname-helpers.js';
+import PoetName from '../components/poetname.js';
 
-type GroupBy = 'name' | 'year';
-
-function joinWithCommaAndOr(items: Array<string | Node>, andOrWord) {
+function joinWithCommaAndOr(items, andOrWord) {
   const result = [];
   items.forEach((item, i) => {
     result.push(item);
@@ -43,68 +26,46 @@ function joinWithCommaAndOr(items: Array<string | Node>, andOrWord) {
   return result;
 }
 
-type CountryPickerProps = {
-  lang: Lang,
-  selectedCountry: Country,
-  selectedGroupBy: GroupBy,
-  style: any,
+const CountryPicker = ({ lang, selectedCountry, selectedGroupBy, style }) => {
+  const items = CommonData.countries.map((country) => {
+    const url = Links.poetsURL(lang, selectedGroupBy, country.code);
+    const adj = country.adjective[lang] + ' ';
+    if (country.code === selectedCountry) {
+      return <b key={country.code}>{adj}</b>;
+    } else {
+      return (
+        <Link href={url} key={country.code}>
+          {adj}
+        </Link>
+      );
+    }
+  });
+  const joinedItems = joinWithCommaAndOr(items, 'eller');
+  return (
+    <div style={style}>
+      <div>Skift mellem {joinedItems} digtere.</div>
+    </div>
+  );
 };
-class CountryPicker extends React.Component<CountryPickerProps> {
-  render() {
-    const { lang, selectedCountry, selectedGroupBy, style } = this.props;
-    const items = CommonData.countries.map(country => {
-      const url = Links.poetsURL(lang, selectedGroupBy, country.code);
-      const adj = country.adjective[lang] + ' ';
-      if (country.code === selectedCountry) {
-        return <b key={country.code}>{adj}</b>;
-      } else {
-        return (
-          <Link route={url} key={country.code}>
-            <a>{adj}</a>
-          </Link>
-        );
-      }
-    });
-    const joinedItems = joinWithCommaAndOr(items, 'eller');
-    return (
-      <div style={style}>
-        <div>Skift mellem {joinedItems} digtere.</div>
-      </div>
-    );
-  }
-}
 
-type MissingPortraitProps = {
-  poet: Poet,
-  lang: Lang,
-};
-class MissingPortrait extends React.Component<MissingPortraitProps> {
-  render() {
-    const { lang, poet } = this.props;
-    const style = {
-      display: 'inline-block',
-      border: '3px dotted black',
-      width: '100%',
-      borderRadius: '20px',
-    };
-    return (
-      <div>
-        <div style={style} />
-        <div style={{ fontSize: '0.8em', marginTop: '8px' }}>
-          <PoetName poet={poet} includePeriod />
-        </div>
+const MissingPortrait = ({ lang, poet }) => {
+  const style = {
+    display: 'inline-block',
+    border: '3px dotted black',
+    width: '100%',
+    borderRadius: '20px',
+  };
+  return (
+    <div>
+      <div style={style} />
+      <div style={{ fontSize: '0.8em', marginTop: '8px' }}>
+        <PoetName poet={poet} includePeriod />
       </div>
-    );
-  }
-}
-
-type PoetLooksProps = {
-  lang: Lang,
-  country: Country,
-  poets: Array<Poet>,
-  groupBy: GroupBy,
+    </div>
+  );
 };
-const PoetLooksPage = (props: PoetLooksProps) => {
+
+const PoetLooksPage = (props) => {
   const { lang, country, poets, groupBy } = props;
 
   const tabs = [
@@ -137,12 +98,12 @@ const PoetLooksPage = (props: PoetLooksProps) => {
         false,
         true
       )}</a>`;
-      const picture: PictureItem = {
+      const picture = {
         src: poet.portrait,
         content_html: [[name, { html: true }]],
         content_lang: 'da',
       };
-      const srcPrefix = `/static/images/${poet.id}`;
+      const srcPrefix = `/images/${poet.id}`;
       item = (
         <Picture
           pictures={[picture]}
@@ -153,10 +114,8 @@ const PoetLooksPage = (props: PoetLooksProps) => {
       );
     } else {
       item = (
-        <Link key={poet.id} route={url}>
-          <a>
-            <MissingPortrait poet={poet} lang={lang} />
-          </a>
+        <Link key={poet.id} href={url}>
+          <MissingPortrait poet={poet} lang={lang} />
         </Link>
       );
     }
@@ -177,7 +136,7 @@ const PoetLooksPage = (props: PoetLooksProps) => {
   const requestPath = `/${lang}/poets/${country}/looks}`;
 
   if (country !== 'dk') {
-    const cn = CommonData.countries.filter(c => {
+    const cn = CommonData.countries.filter((c) => {
       return c.code === country;
     })[0];
     pageTitle = Strings.toTitleCase(cn.adjective[lang]) + ' ' + ' digtere';
@@ -212,13 +171,11 @@ const PoetLooksPage = (props: PoetLooksProps) => {
 
 PoetLooksPage.getInitialProps = async ({
   query: { lang, country, groupBy },
-}: {
-  query: { lang: Lang, country: Country, groupBy: GroupBy },
 }) => {
-  const url = `/static/api/poets-${country}.json`;
+  const url = `/api/poets-${country}.json`;
   const res = await fetch(createURL(url));
   const json = await res.json();
-  const poets: Array<Poet> = json.poets;
+  const poets = json.poets;
   return { lang, country, groupBy, poets };
 };
 

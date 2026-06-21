@@ -1,0 +1,19 @@
+User-agent: *
+Disallow: /facsimiles/
+Disallow: /images/*/t/
+Disallow: /kunst/*/t/
+Disallow: /gfx/
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: dotbot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+Sitemap: https://kalliope.org/sitemap.xml

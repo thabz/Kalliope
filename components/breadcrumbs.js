@@ -1,55 +1,30 @@
-// @flow
-
-import React, { useEffect } from 'react';
-import type { Node } from 'react';
-import Head from './head';
-import { Link, Router } from '../routes';
-import PoetName from './poetname';
-import WorkName from './workname';
-import TextName, {
-  textTitleString,
-  textLinkTitleString,
-} from '../components/textname.js';
-import TextContent from './textcontent.js';
+import Link from 'next/link';
+import Router from 'next/router';
+import { useEffect } from 'react';
 import CommonData from '../common/commondata.js';
-import _ from '../common/translations.js';
 import * as Strings from '../common/strings.js';
+import _ from '../common/translations.js';
+import { textLinkTitleString } from '../components/textname.js';
 import * as Links from './links.js';
-import type { Lang, Poet, Work, Text, URLString } from '../common/types.js';
+import PoetName from './poetname';
+import TextContent from './textcontent.js';
+import WorkName from './workname';
 
-type BreadcrumbItem = {
-  url?: ?URLString,
-  title: Node,
-};
-
-export type { BreadcrumbItem };
-
-type NavPagingType = {
-  prev: ?{
-    url: URLString,
-    title: string,
-  },
-  next: ?{
-    url: URLString,
-    title: string,
-  },
-};
-
-export const Paging = (props: NavPagingType) => {
+export const Paging = (props) => {
   const { prev, next } = props;
 
-  const onKeyUp = (e: KeyboardEvent) => {
+  const onKeyUp = (e) => {
     if (e.keyCode === 37) {
       // Left cursor key
       if (prev != null && window && !window.searchFieldHasFocus) {
-        Router.pushRoute(prev.url);
+        Router.push(prev.url);
         window.scrollTo(0, 0);
         e.preventDefault();
       }
     } else if (e.keyCode === 39) {
       // Right cursor key
       if (next != null && window && !window.searchFieldHasFocus) {
-        Router.pushRoute(next.url);
+        Router.push(next.url);
         window.scrollTo(0, 0);
         e.preventDefault();
       }
@@ -75,8 +50,8 @@ export const Paging = (props: NavPagingType) => {
     const style = { marginLeft: '16px', fontSize: '18px' };
     return (
       <div style={style} key={i}>
-        <Link prefetch route={url}>
-          <a title={title}>{arrow}</a>
+        <Link href={url} title={title}>
+          {arrow}
         </Link>
       </div>
     );
@@ -84,7 +59,7 @@ export const Paging = (props: NavPagingType) => {
   return <div style={{ display: 'flex', padding: '4px 0' }}>{arrows}</div>;
 };
 
-export const kalliopeCrumbs = (lang: Lang) => {
+export const kalliopeCrumbs = (lang) => {
   return [
     {
       url: Links.frontPageURL(lang),
@@ -93,15 +68,15 @@ export const kalliopeCrumbs = (lang: Lang) => {
   ];
 };
 
-export const poetsCrumbs = (lang: Lang, poet: Poet) => {
-  let poetsLinkText: string;
+export const poetsCrumbs = (lang, poet) => {
+  let poetsLinkText;
   if (poet.type === 'person') {
     poetsLinkText = _('Personer', lang);
   } else if (poet.type === 'artist') {
     poetsLinkText = _('Kunstnere', lang);
   } else {
     if (poet.country !== 'dk') {
-      const cn = CommonData.countries.filter(c => {
+      const cn = CommonData.countries.filter((c) => {
         return c.code === poet.country;
       })[0];
       poetsLinkText =
@@ -120,7 +95,7 @@ export const poetsCrumbs = (lang: Lang, poet: Poet) => {
   ];
 };
 
-export const poetCrumbs = (lang: Lang, poet: Poet) => {
+export const poetCrumbs = (lang, poet) => {
   return [
     ...poetsCrumbs(lang, poet),
     {
@@ -130,7 +105,7 @@ export const poetCrumbs = (lang: Lang, poet: Poet) => {
   ];
 };
 
-export const poetCrumbsWithTitle = (lang: Lang, poet: Poet, title: string) => {
+export const poetCrumbsWithTitle = (lang, poet, title) => {
   return [
     ...poetsCrumbs(lang, poet),
     {
@@ -140,21 +115,24 @@ export const poetCrumbsWithTitle = (lang: Lang, poet: Poet, title: string) => {
     { url: null, title },
   ];
 };
-export const worksCrumbs = (lang: Lang, poet: Poet) => {
+export const worksCrumbs = (lang, poet) => {
   return [
-    ...poetCrumbs(lang, poet),
+    ...poetsCrumbs(lang, poet),
+    {
+      title: <PoetName poet={poet} />,
+    },
     {
       url: Links.worksURL(lang, poet.id),
       title: _('Værker', lang),
     },
   ];
 };
-export const workCrumbs = (lang: Lang, poet: Poet, work: Work) => {
+export const workCrumbs = (lang, poet, work) => {
   const workLink = {
     title: <WorkName lang={lang} work={work} useTitle="breadcrumbtitle" />,
     url: Links.workURL(lang, poet.id, work.id),
   };
-  let parentLink: ?BreadcrumbItem;
+  let parentLink;
   if (work.parent != null) {
     parentLink = {
       title: (
@@ -164,21 +142,15 @@ export const workCrumbs = (lang: Lang, poet: Poet, work: Work) => {
     };
   }
 
-  return [...poetCrumbs(lang, poet), parentLink, workLink].filter(n => {
+  return [...poetCrumbs(lang, poet), parentLink, workLink].filter((n) => {
     return n != null;
   });
 };
 
-export const textCrumbs = (
-  lang: Lang,
-  poet: Poet,
-  work: Work,
-  sectionTitles?: Array<{ id: ?string, title: string }>,
-  text: Text
-) => {
-  let parentSectionsBreadcrumbs: Array<BreadcrumbItem> = [];
+export const textCrumbs = (lang, poet, work, sectionTitles, text) => {
+  let parentSectionsBreadcrumbs = [];
   if (sectionTitles != null) {
-    parentSectionsBreadcrumbs = sectionTitles.map(t => {
+    parentSectionsBreadcrumbs = sectionTitles.map((t) => {
       let title = (
         <TextContent
           contentHtml={[[t.title, { html: true }]]}
@@ -204,33 +176,23 @@ export const textCrumbs = (
   ];
 };
 
-type BreadcrumbsProps = {
-  lang: Lang,
-  crumbs: Array<BreadcrumbItem>,
-  rightSide?: Node,
-};
-const Breadcrumbs = (props: BreadcrumbsProps) => {
+const Breadcrumbs = (props) => {
   const { lang, crumbs, rightSide } = props;
 
   let joinedLinks = [];
-  crumbs
-    .filter(x => x != null)
-    .map((crumb, i) => {
-      if (i !== 0) {
-        joinedLinks.push(<div key={'arrow' + i}>&nbsp;→&nbsp;</div>);
-      }
-      let link: Node = null;
-      if (i !== crumbs.length - 1 && crumb.url != null) {
-        link = (
-          <Link prefetch route={crumb.url}>
-            <a>{crumb.title}</a>
-          </Link>
-        );
-      } else {
-        link = crumb.title;
-      }
-      joinedLinks.push(<div key={'link' + i}>{link}</div>);
-    });
+  const visibleCrumbs = crumbs.filter((x) => x != null);
+  visibleCrumbs.forEach((crumb, i) => {
+    if (i !== 0) {
+      joinedLinks.push(<div key={'arrow' + i}>&nbsp;→&nbsp;</div>);
+    }
+    let link = null;
+    if (i !== visibleCrumbs.length - 1 && crumb.url != null) {
+      link = <Link href={crumb.url}>{crumb.title}</Link>;
+    } else {
+      link = crumb.title;
+    }
+    joinedLinks.push(<div key={'link' + i}>{link}</div>);
+  });
 
   return (
     <div className="nav-container">

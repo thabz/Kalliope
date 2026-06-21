@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <person id="sears" country="us" lang="en" type="poet">
   <name>
-    <firstname>Edmund Hamilton</firstname>
+    <firstname>Edmund</firstname>
     <lastname>Sears</lastname>
+    <fullname>Edmund Hamilton Sears</fullname>
   </name>
   <period>
     <born>
@@ -13,4 +14,8 @@
       <place>Boston</place>
     </dead>
   </period>
+  <identifiers>
+    <wikidata>Q5339812</wikidata>
+    <viaf>58238085</viaf>
+  </identifiers>
 </person>
