@@ -1,26 +1,17 @@
-// @flow
-import React, { useContext, useState, useEffect } from 'react';
-import { Link, Router } from '../routes';
-import * as Links from './links.js';
-import { poetGenetiveLastName } from './poetname-helpers.js';
-import _ from '../common/translations.js';
-import type { Lang, Poet, Country } from '../common/types.js';
+import Link from 'next/link';
+import Router from 'next/router';
+import { useContext, useEffect, useState } from 'react';
 import CommonData from '../common/commondata.js';
 import LangContext from '../common/LangContext.js';
-import { LoupeSVG, CrossSVG } from './icons.js';
+import _ from '../common/translations.js';
+import { CrossSVG, LoupeSVG } from './icons.js';
+import * as Links from './links.js';
+import { poetGenetiveLastName } from './poetname-helpers.js';
 
 const transitionDuration = '0.2s';
 
-type TabsProps = {
-  items: Array<{ id: string, url: string, title: string, hide?: boolean }>,
-  poet?: Poet,
-  country: Country,
-  lang: Lang,
-  query?: ?string,
-  selected: string,
-};
-const Tabs = (props: TabsProps) => {
-  let searchField: HTMLInputElement;
+const Tabs = (props) => {
+  let searchField;
 
   const { items, selected, poet, lang, query } = props;
   let country = props.country;
@@ -56,7 +47,7 @@ const Tabs = (props: TabsProps) => {
     };
   }, [showSearchField]);
 
-  const onSubmit = (e: Event) => {
+  const onSubmit = (e) => {
     const q = searchField.value;
     let URL = null;
     if (poet != null && poet.has_texts) {
@@ -67,11 +58,11 @@ const Tabs = (props: TabsProps) => {
     if (document) {
       searchField.blur();
     }
-    Router.pushRoute(URL);
+    Router.push(URL);
     e.preventDefault();
   };
 
-  const onLoupeClick = (e: Event) => {
+  const onLoupeClick = (e) => {
     if (showSearchField) {
       const q = searchField.value;
       if (q.length === 0) {
@@ -87,7 +78,7 @@ const Tabs = (props: TabsProps) => {
     e.preventDefault();
   };
 
-  const onCrossClick = (e: MouseEvent) => {
+  const onCrossClick = (e) => {
     hideSearchField();
     e.preventDefault();
   };
@@ -100,7 +91,7 @@ const Tabs = (props: TabsProps) => {
     window && (window.searchFieldHasFocus = false);
   };
 
-  const onKeyDown = (e: KeyboardEvent) => {
+  const onKeyDown = (e) => {
     if (e.keyCode === 27) {
       setShowSearchField(false);
       onBlur();
@@ -158,8 +149,7 @@ const Tabs = (props: TabsProps) => {
         className="svg-container"
         style={{
           cursor: 'pointer',
-        }}
-      >
+        }}>
         <CrossSVG color="black" onClick={onCrossClick} />
       </div>
     </div>
@@ -168,14 +158,17 @@ const Tabs = (props: TabsProps) => {
   const itemsRendered = items
     .filter((item) => !item.hide)
     .map((item, i) => {
-      const className = item.id === selected ? 'tab selected' : 'tab';
+      const isSelected = item.id === selected;
+      const className = isSelected ? 'tab selected' : 'tab';
       return (
         <div className={className} key={item.url}>
-          <Link route={item.url}>
-            <a>
+          {isSelected ? (
+            <h2>{item.title}</h2>
+          ) : (
+            <Link href={item.url}>
               <h2>{item.title}</h2>
-            </a>
-          </Link>
+            </Link>
+          )}
         </div>
       );
     });
@@ -186,16 +179,14 @@ const Tabs = (props: TabsProps) => {
         className="tabs"
         style={{
           display: showSearchField ? 'none' : 'flex',
-        }}
-      >
+        }}>
         {itemsRendered}
       </nav>
       <div
         className="searchfield-container"
         style={{
           display: showSearchField ? 'block' : 'none',
-        }}
-      >
+        }}>
         {searchFieldRendered}
       </div>
     </div>
@@ -274,7 +265,7 @@ const Tabs = (props: TabsProps) => {
             border-bottom: 2px solid #888;
           }
           */
-          :global(.tabs) :global(.tab.selected a) {
+          :global(.tabs) :global(.tab.selected h2) {
             color: black;
           }
           :global(.tabs) > :global(.tab) :global(a) {
@@ -317,7 +308,7 @@ const Tabs = (props: TabsProps) => {
 
 export default Tabs;
 
-export const poetMenu = (poet: Poet) => {
+export const poetMenu = (poet) => {
   const lang = useContext(LangContext);
 
   return [

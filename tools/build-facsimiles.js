@@ -5,13 +5,16 @@ const mkdirp = require('mkdirp');
 const async = require('async');
 const { safeMkdir, buildThumbnails } = require('./libs/helpers.js');
 
-const dirname = 'static/facsimiles';
+const dirname = 'public/facsimiles';
 
-// Place pdf-files in static/facsimiles/<poetname>/<workid>.pdf
-// For each pdf file this script creates a folder static/facsimiles/<poetname>/<workid>
+// First `brew install poppler`
+//
+// Then
+//
+// Place pdf-files in public/facsimiles/<poetname>/<workid>.pdf
+// For each pdf file this script creates a folder public/facsimiles/<poetname>/<workid>
 // containing jpg-files for each page in the pdf-file, named <workid>-<pagenumber>.jpg
 // where <pagenumber> is 000, 001, 002, etc.
-
 
 // I can't control the output format of 'pdftoppm', so I'll just rename
 // all files into the wanted filename-format: 000.jpg, 001.jpg, ...
@@ -29,8 +32,13 @@ const renameImages = imagesDir => {
 // Extract all pages from the pdf into separate jpeg files.
 let extractPdfImagesQueue = async.queue((task, callback) => {
   console.log(`Extracting from ${task.fullFilename}`);
-  exec(`pdftoppm -jpeg -r 300  ${task.fullFilename} ${task.imagesPrefix}`, () => {
-    callback();
+  exec(`pdftoppm -jpeg -r 300  ${task.fullFilename} ${task.imagesPrefix}`, (error) => {
+      if (error) {
+        console.error(`Exec error: ${error}`);
+        console.error("Run 'brew install poppler' to get the pdftoppm tool");
+      } else {
+        callback();
+      }
   });
 }, 2);
 
@@ -62,9 +70,9 @@ poetDirs.forEach(poetDir => {
 });
 
 extractPdfImagesQueue.drain = function() {
-  buildThumbnails('static/facsimiles');
+  buildThumbnails('public/facsimiles');
   exec(
-    'rsync -rva static/facsimiles/* 10.0.0.5:Sites/kalliope/static/facsimiles'
+    'rsync -rva public/facsimiles/* 10.0.0.5:Sites/kalliope/public/facsimiles'
   );
 };
 

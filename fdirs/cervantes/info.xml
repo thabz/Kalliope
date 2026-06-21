@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<person id="cervantes" country="un" lang="sp" type="poet">
+<person id="cervantes" country="un" lang="es" type="poet">
   <name>
     <firstname>Miguel de</firstname>
     <lastname>Cervantes</lastname>
@@ -15,4 +15,14 @@
       <place>Madrid</place>
     </dead>
   </period>
+  <literary-periods>renaessance-og-humanisme</literary-periods>
+  <identifiers>
+    <wikidata>Q5682</wikidata>
+    <viaf>17220427</viaf>
+    <lex-dk>Miguel_de_Cervantes_Saavedra</lex-dk>
+    <teaterleksikon-lex-dk>Miguel_de_Cervantes_Saavedra</teaterleksikon-lex-dk>
+    <litteraturpriser-dk>u515</litteraturpriser-dk>
+    <runeberg-org>cervamig</runeberg-org>
+    <gutenberg-org>505</gutenberg-org>
+  </identifiers>
 </person>

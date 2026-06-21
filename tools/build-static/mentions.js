@@ -34,11 +34,18 @@ const build_person_or_keyword_refs = (collected) => {
 
   let found_changes = false;
   const regexps = [
-    { regexp: /xref ()poem="([^"]*)"/g, type: 'text' },
-    { regexp: /a ()poem="([^"]*)"/g, type: 'text' },
-    { regexp: /xref type="([^"]*)" poem="([^"]*)"/g, type: 'text' },
-    { regexp: /a type="([^"]*)" poem="([^"]*)"/g, type: 'text' },
-    { regexp: /xref ()bibel="([^",]*)/g, type: 'text' },
+    { regexp: /xref poem="(?<poem>[^"]*)"/g, type: 'text' },
+    { regexp: /a poem="(?<poem>[^"]*)"/g, type: 'text' },
+    {
+      regexp: /xref type="(?<type>[^"]*)" poem="(?<poem>[^"]*)"/g,
+      type: 'text',
+    },
+    {
+      regexp: /xref poem="(?<poem>[^"]*)" type="(?<type>[^"]*)"/g,
+      type: 'text',
+    },
+    { regexp: /a type="(?<type>[^"]*)" poem="(?<poem>[^"]*)"/g, type: 'text' },
+    { regexp: /xref bibel="(?<poem>[^",]*)/g, type: 'text' },
     { regexp: /a ()person="([^"]*)"/g, type: 'person' },
     { regexp: /a ()poet="([^"]*)"/g, type: 'person' },
     {
@@ -48,8 +55,7 @@ const build_person_or_keyword_refs = (collected) => {
     { regexp: /picture[^>]*()artist="([^"]*)"/g, type: 'person' },
     { regexp: /picture[^>]*()ref="([^"]*)"/g, type: 'pictureref' },
   ];
-  // TODO: Led også efter <a person="">xxx</a> og <a poet="">xxxx</a>
-  // toKey is a poet id or a keyword id
+
   const register = (filename, toKey, fromPoemId, type, toPoemId) => {
     const collection = person_or_keyword_refs.get(toKey) || {
       mention: [],
@@ -109,9 +115,9 @@ const build_person_or_keyword_refs = (collected) => {
               while (
                 (match = rule.regexp.exec(safeGetOuterXML(note))) != null
               ) {
-                const refType = match[1] || 'mention';
                 if (rule.type === 'text') {
-                  const toPoemId = match[2].replace(/,.*$/, '');
+                  const refType = match.groups.type || 'mention';
+                  const toPoemId = match.groups.poem.replace(/,.*$/, '');
                   const toText = collected.texts.get(toPoemId);
                   if (toText != null) {
                     const toPoetId = toText.poetId;
@@ -205,7 +211,7 @@ const build_mentions_json = (collected) => {
       return;
     }
 
-    safeMkdir(`static/api/${poet.id}`);
+    safeMkdir(`public/api/${poet.id}`);
     let data = {
       poet,
       mentions: [],
@@ -283,7 +289,7 @@ const build_mentions_json = (collected) => {
       }
     });
 
-    const outFilename = `static/api/${poet.id}/mentions.json`;
+    const outFilename = `public/api/${poet.id}/mentions.json`;
     console.log(outFilename);
     writeJSON(outFilename, data);
   });

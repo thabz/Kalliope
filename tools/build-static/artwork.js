@@ -44,8 +44,8 @@ const readArtworkFile = async (personId, artworkFilename, collected) => {
         description = safeTrim(safeGetInnerXML(picture));
       }
 
-      const src = `/static/images/${personId}/${pictureId}.jpg`;
-      const size = await imageSizeSync(src.replace(/^\//, ''));
+      const src = `/images/${personId}/${pictureId}.jpg`;
+      const size = await imageSizeSync(`public${src}`);
       const remoteUrl = build_museum_url(picture, collected);
       const museumId = safeGetAttr(picture, 'museum');
       const clipPath = safeGetAttr(picture, 'clip-path');
@@ -135,7 +135,7 @@ const build_artwork = async (collected) => {
                 const src = safeGetAttr(pictureNode, 'src');
                 const picture = await get_picture(
                   pictureNode,
-                  `/static/images/${personId}`,
+                  `/images/${personId}`,
                   collected,
                   onError
                 );
@@ -186,7 +186,7 @@ const build_artwork = async (collected) => {
                     const src = safeGetAttr(pictureNode, 'src');
                     const picture = await get_picture(
                       pictureNode,
-                      `/static/images/${personId}`,
+                      `/images/${personId}`,
                       collected,
                       onError
                     );

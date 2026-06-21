@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="beyer" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Sille</firstname>
+    <lastname>Beyer</lastname>
+    <fullname>Sille Henrikke Christine Beyer</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1803-08-25</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1961-09-10</date>
+    </dead>
+  </period>
+  <works>1852</works>
+  <identifiers>
+    <wikidata>Q4938944</wikidata>
+    <gravsted-dk>sillebeyer</gravsted-dk>
+    <viaf>50104349</viaf>
+    <biografisk-leksikon-lex-dk>Sille_Beyer</biografisk-leksikon-lex-dk>
+    <litteraturpriser-dk>BSilleBeyer</litteraturpriser-dk>
+    <runeberg-org>beyersil</runeberg-org>
+  </identifiers>
+</person>

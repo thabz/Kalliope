@@ -1,36 +1,19 @@
-// @flow
-
-import React from 'react';
-import Page from '../components/page.js';
-import { poetCrumbsWithTitle } from '../components/breadcrumbs.js';
-import LangSelect from '../components/langselect.js';
-import PoetName from '../components/poetname.js';
-import { poetNameString } from '../components/poetname-helpers.js';
-import WorkName from '../components/workname.js';
-import { poetMenu } from '../components/menu.js';
-import SectionedList from '../components/sectionedlist.js';
-import * as Links from '../components/links.js';
-import * as Sorting from '../common/sorting.js';
-import { createURL } from '../common/client.js';
-import CommonData from '../common/commondata.js';
-import _ from '../common/translations.js';
-import type {
-  LinesPair,
-  Section,
-  Lang,
-  Poet,
-  Work,
-  SectionForRendering,
-  LinesType,
-} from '../common/types.js';
 import * as Client from '../common/client.js';
+import CommonData from '../common/commondata.js';
 import * as OpenGraph from '../common/opengraph.js';
+import * as Sorting from '../common/sorting.js';
+import _ from '../common/translations.js';
+import { poetCrumbsWithTitle } from '../components/breadcrumbs.js';
+import * as Links from '../components/links.js';
+import { poetMenu } from '../components/menu.js';
+import Page from '../components/page.js';
+import { poetNameString } from '../components/poetname-helpers.js';
+import PoetName from '../components/poetname.js';
+import SectionedList from '../components/sectionedlist.js';
+import ErrorPage from './error.js';
 
-const groupLines = (
-  lines: Array<LinesPair>,
-  type: LinesType
-): Array<Section<LinesPair>> => {
-  let groups: Map<string, Array<LinesPair>> = new Map();
+const groupLines = (lines, type, contentLang) => {
+  let groups = new Map();
   lines.forEach((linePair) => {
     let line, alternative;
     if (type === 'titles') {
@@ -45,17 +28,7 @@ const groupLines = (
     }
     line = line.replace(',', '').replace('!', '');
     linePair['sortBy'] = line + ' [' + alternative + '[' + linePair.id;
-    let letter: string = line[0];
-    if (line.indexOf('Aa') === 0) {
-      letter = 'Å';
-    }
-    if (line.indexOf('Ö') === 0) {
-      letter = 'Ø';
-    }
-    if (line.indexOf('È') === 0) {
-      letter = 'E';
-    }
-    letter = letter.toUpperCase();
+    let letter = Sorting.lineSectionTitleForLang(line, contentLang);
     let array = groups.get(letter) || [];
     array.push(linePair);
     groups.set(letter, array);
@@ -64,23 +37,21 @@ const groupLines = (
   groups.forEach((group, key) => {
     sortedGroups.push({
       title: key,
-      items: group.sort(Sorting.linesPairsByLine),
+      items: group.sort(Sorting.linesPairsByLineForLang(contentLang)),
     });
   });
   return sortedGroups.sort(Sorting.sectionsByTitle);
 };
 
-type TextsProps = {
-  lang: Lang,
-  poet: Poet,
-  lines: Array<LinesPair>,
-  type: LinesType,
-};
-const TextsPage = (props: TextsProps) => {
-  const { lang, poet, type, lines } = props;
+const TextsPage = (props) => {
+  const { lang, poet, type, lines, error } = props;
 
-  const groups = groupLines(lines, type);
-  let sections: Array<SectionForRendering> = [];
+  if (error) {
+    return <ErrorPage error={error} lang={lang} message="Ukendt digter" />;
+  }
+
+  const groups = groupLines(lines, type, poet.lang);
+  let sections = [];
   groups.forEach((group) => {
     const items = group.items.map((lines) => {
       const url = Links.textURL(lang, lines.id);
@@ -128,23 +99,19 @@ const TextsPage = (props: TextsProps) => {
       pageTitle={<PoetName poet={poet} includePeriod />}
       menuItems={poetMenu(poet)}
       poet={poet}
-      selectedMenuItem={type}
-    >
+      selectedMenuItem={type}>
       {renderedGroups}
     </Page>
   );
 };
 
-TextsPage.getInitialProps = async ({
-  query: { lang, poetId, type },
-}: {
-  query: { lang: Lang, poetId: string, type: LinesType },
-}) => {
+TextsPage.getInitialProps = async ({ query: { lang, poetId, type } }) => {
   const json = await Client.texts(poetId);
   return {
     lang,
     poet: json.poet,
     lines: json.lines,
+    error: json.error,
     type,
   };
 };

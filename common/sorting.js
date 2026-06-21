@@ -1,32 +1,97 @@
-// @flow
-import type {
-  Section,
-  Poet,
-  LinesPair,
-  SortReturn,
-  Keyword,
-  DictItem,
-} from './types.js';
-
 const daDK = 'da-DK';
 
-const nvl = <T>(x: ?T, v: T): T => {
+const localesByLang = {
+  da: daDK,
+  de: 'de',
+  en: 'en-GB',
+  es: 'es',
+  fa: 'fa',
+  fr: 'fr-FR',
+  it: 'it-IT',
+  no: 'nb-NO',
+  sv: 'sv-SE',
+};
+
+const localesByCountry = {
+  de: 'de',
+  dk: daDK,
+  fr: 'fr-FR',
+  gb: 'en-GB',
+  it: 'it-IT',
+  no: 'nb-NO',
+  se: 'sv-SE',
+  un: daDK,
+  us: 'en-US',
+};
+
+const lineCollatorOptions = {
+  ignorePunctuation: true,
+};
+
+export const localeForLang = (lang) => localesByLang[lang] || daDK;
+export const localeForCountry = (country) => localesByCountry[country] || daDK;
+
+export const lineSectionTitleForLang = (line, lang) => {
+  if (lang === 'da' && line.indexOf('Aa') === 0) {
+    return 'Å';
+  }
+  if (lang === 'da' && line.indexOf('Ö') === 0) {
+    return 'Ø';
+  }
+
+  const normalizedLetter =
+    lang === 'da'
+      ? line[0]
+      : line[0].normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  return normalizedLetter.toUpperCase()[0];
+};
+
+const nvl = (x, v) => {
   return x == null ? v : x;
 };
 
-export const poetsByLastname = (a: Poet, b: Poet): SortReturn => {
-  const ao = nvl(
-    a.name.sortname,
-    nvl(a.name.lastname, '') + nvl(a.name.firstname, '')
+const poetLastnameSortKey = (poet) => {
+  return nvl(
+    poet.name.sortname,
+    nvl(poet.name.lastname, '') + nvl(poet.name.firstname, '')
   );
-  const bo = nvl(
-    b.name.sortname,
-    nvl(b.name.lastname, '') + nvl(b.name.firstname, '')
-  );
+};
+
+export const poetsByLastname = (a, b) => {
+  const ao = poetLastnameSortKey(a);
+  const bo = poetLastnameSortKey(b);
   return ao.localeCompare(bo, daDK);
 };
 
-export const poetsByBirthDate = (a: Poet, b: Poet): SortReturn => {
+export const poetsByLastnameForCountry = (country) => {
+  const locale = localeForCountry(country);
+  return (a, b) => {
+    const ao = poetLastnameSortKey(a);
+    const bo = poetLastnameSortKey(b);
+    return ao.localeCompare(bo, locale);
+  };
+};
+
+export const poetsByBirthDateForCountry = (country) => {
+  const byLastname = poetsByLastnameForCountry(country);
+  return (a, b) => {
+    if (a.period == null || b.period == null) {
+      return byLastname(a, b);
+    } else if (a.period.born == null || b.period.born == null) {
+      return byLastname(a, b);
+    } else {
+      const a1 = a.period.born.date;
+      const b1 = b.period.born.date;
+      if (a1 === b1) {
+        return byLastname(a, b);
+      } else {
+        return a1 < b1 ? -1 : 1;
+      }
+    }
+  };
+};
+
+export const poetsByBirthDate = (a, b) => {
   if (a.period == null || b.period == null) {
     return poetsByLastname(a, b);
   } else if (a.period.born == null || b.period.born == null) {
@@ -42,21 +107,31 @@ export const poetsByBirthDate = (a: Poet, b: Poet): SortReturn => {
   }
 };
 
-export const linesPairsByLine = (a: LinesPair, b: LinesPair): SortReturn => {
+export const linesPairsByLine = (a, b) => {
   const a1 = a.sortBy;
   const b1 = b.sortBy;
   return a1.localeCompare(b1, daDK);
 };
 
-export const keywordsByTitle = (a: Keyword, b: Keyword): SortReturn => {
+export const linesPairsByLineForLang = (lang) => {
+  const locale = localeForLang(lang);
+  const collator = new Intl.Collator(locale, lineCollatorOptions);
+  return (a, b) => {
+    const a1 = a.sortBy;
+    const b1 = b.sortBy;
+    return collator.compare(a1, b1);
+  };
+};
+
+export const keywordsByTitle = (a, b) => {
   return a.title.localeCompare(b.title, daDK);
 };
 
-export const dictItemsByTitle = (a: DictItem, b: DictItem): SortReturn => {
+export const dictItemsByTitle = (a, b) => {
   return a.title.localeCompare(b.title, daDK);
 };
 
-export function sectionsByTitle<T>(a: Section<T>, b: Section<T>): SortReturn {
+export function sectionsByTitle(a, b) {
   if (a.title.startsWith('Ukendt') || a.title.startsWith('Unknown')) {
     return 1;
   } else if (b.title.startsWith('Ukendt') || b.title.startsWith('Unknown')) {
@@ -64,4 +139,34 @@ export function sectionsByTitle<T>(a: Section<T>, b: Section<T>): SortReturn {
   } else {
     return a.title.localeCompare(b.title, daDK);
   }
+}
+
+const poetYearSectionSortKey = (title) => {
+  const match = title.match(/^(-?\d+) - (-?\d+)$/);
+  if (match != null) {
+    const intervalStart = parseInt(match[1], 10);
+    return intervalStart === 25 ? -0.5 : intervalStart;
+  }
+
+  const bceMatch = title.match(/^(\d+) f\.Kr\. - (\d+) f\.Kr\.$/);
+  if (bceMatch != null) {
+    return -parseInt(bceMatch[1], 10);
+  }
+
+  return null;
+};
+
+export function poetYearSectionsByTitle(a, b) {
+  if (a.title.startsWith('Ukendt') || a.title.startsWith('Unknown')) {
+    return 1;
+  } else if (b.title.startsWith('Ukendt') || b.title.startsWith('Unknown')) {
+    return -1;
+  }
+
+  const aKey = poetYearSectionSortKey(a.title);
+  const bKey = poetYearSectionSortKey(b.title);
+  if (aKey != null && bKey != null) {
+    return aKey - bKey;
+  }
+  return sectionsByTitle(a, b);
 }
