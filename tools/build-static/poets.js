@@ -1,5 +1,9 @@
 const fs = require('fs');
 const {
+  literaryPeriods,
+  literaryPeriodIds,
+} = require('../../common/literary-periods.js');
+const {
   isFileModified,
   loadCachedJSON,
   writeCachedJSON,
@@ -20,8 +24,8 @@ const {
 } = require('./xml.js');
 
 const create_poet_square_thumb = (poetId, square_path) => {
-  const path = `static/images/${poetId}/${square_path}`;
-  const destFolder = `static/images/${poetId}/social`;
+  const path = `public/images/${poetId}/${square_path}`;
+  const destFolder = `public/images/${poetId}/social`;
   const destPath = `${destFolder}/${poetId}.jpg`;
   if (!fileExists(destPath)) {
     safeMkdir(destFolder);
@@ -36,6 +40,22 @@ const all_poet_ids = () => {
     _all_poet_ids = fs.readdirSync('fdirs').filter(p => p.indexOf('.') === -1);
   }
   return _all_poet_ids;
+};
+
+const parseLiteraryPeriods = (id, value) => {
+  if (value == null || value.trim() === '') {
+    return [];
+  }
+  const periods = value
+    .split(',')
+    .map(period => period.trim())
+    .filter(period => period !== '');
+  periods.forEach(period => {
+    if (!literaryPeriodIds.has(period)) {
+      throw `${id} har ukendt litterær periode: ${period}`;
+    }
+  });
+  return periods;
 };
 
 const build_poets_first_pass = collected => {
@@ -98,11 +118,15 @@ const build_poets_first_pass = collected => {
     const nameE = getChildByTagName(p, 'name');
     const periodE = getChildByTagName(p, 'period');
     const works = safeGetText(p, 'works');
+    const literary_periods = parseLiteraryPeriods(
+      id,
+      safeGetText(p, 'literary-periods')
+    );
     if (!country.match(/(dk|se|no|gb|de|fr|us|it|un)/)) {
       throw `${id} har ukendt land: ${country}`;
     }
-    if (!lang.match(/(da|sv|no|en|de|fr||un|it)/)) {
-      throw `${id} har ukendt sprog: ${country}`;
+    if (!lang.match(/(da|sv|no|en|de|fr|la|fa|es|un|it)/)) {
+      throw `${id} har ukendt sprog: ${lang}`;
     }
 
     let square_portrait = null;
@@ -180,6 +204,7 @@ const build_poets_first_pass = collected => {
         sortname,
       },
       period,
+      literary_periods,
       has_portraits,
       has_square_portrait,
       has_works: has.has_works,
@@ -217,7 +242,7 @@ const build_poets_json = collected => {
       fileExists(`fdirs/${id}/bibliography-secondary.xml`);
     if (has_mentions !== poet.has_mentions) {
       poet.has_mentions = has_mentions;
-      writeJSON(`static/api/${poet.id}.json`, poet);
+      writeJSON(`public/api/${poet.id}.json`, poet);
       collected.poets.set(id, poet);
     }
   });
@@ -241,8 +266,55 @@ const build_poets_by_country_json = collected => {
     const data = {
       poets: sorted,
     };
-    writeJSON(`static/api/poets-${country}.json`, data);
+    writeJSON(`public/api/poets-${country}.json`, data);
   });
+};
+
+const build_literary_periods_json = collected => {
+  const poetListItem = poet => {
+    return {
+      id: poet.id,
+      type: poet.type,
+      country: poet.country,
+      lang: poet.lang,
+      name: {
+        firstname: poet.name.firstname,
+        lastname: poet.name.lastname,
+        sortname: poet.name.sortname,
+      },
+      period:
+        poet.period == null
+          ? null
+          : {
+              born:
+                poet.period.born == null
+                  ? null
+                  : { date: poet.period.born.date },
+              dead:
+                poet.period.dead == null
+                  ? null
+                  : { date: poet.period.dead.date },
+            },
+    };
+  };
+  const periods = literaryPeriods.map(period => {
+    const poets = [];
+    collected.poets.forEach(poet => {
+      if ((poet.literary_periods || []).includes(period.id)) {
+        poets.push(poetListItem(poet));
+      }
+    });
+    poets.sort((a, b) => {
+      const aName = a.name.sortname || a.name.lastname || a.id;
+      const bName = b.name.sortname || b.name.lastname || b.id;
+      return aName.localeCompare(bName, 'da');
+    });
+    return {
+      ...period,
+      poets,
+    };
+  });
+  writeJSON('public/api/literary-periods.json', { periods });
 };
 
 module.exports = {
@@ -250,4 +322,5 @@ module.exports = {
   build_poets_json,
   build_poets_first_pass,
   build_poets_by_country_json,
+  build_literary_periods_json,
 };
