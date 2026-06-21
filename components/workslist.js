@@ -27,7 +27,7 @@ const WorksList = ({ lang, poet, works }) => {
 
     const year = work.year;
     let yearRendered = null;
-    if (year != null && year !== '?') {
+    if (year != null) {
       yearRendered = (
         <span key="year" className="lighter">
           {' '}

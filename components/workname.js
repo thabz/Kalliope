@@ -15,7 +15,7 @@ const WorkName = ({ work, cursive = false, useTitle = 'title' }) => {
   }
   let titlePart = <span>{titleTranslated}</span>;
   let yearPart = null;
-  if (year != null && year !== '?') {
+  if (year != null) {
     yearPart = <span>({formattedYear(year)})</span>;
   }
 

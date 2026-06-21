@@ -4,6 +4,7 @@ const path = require('path');
 const mkdirp = require('mkdirp');
 const Paths = require('../common/paths.js');
 const CommonData = require('../common/commondata.js');
+const { extractYear } = require('../common/dates.js');
 const {
   isFileModified,
   markFileDirty,
@@ -616,6 +617,19 @@ const handle_work = async (work) => {
   return { lines, toc, notes, pictures };
 };
 
+const validateWorkYear = (year, filename) => {
+  if (year == null) {
+    return;
+  }
+  if (year === '?') {
+    throw new Error(`${filename} has unknown year marker in <year>.`);
+  }
+  const [, numericYear] = extractYear(year, null);
+  if (numericYear == null) {
+    throw new Error(`${filename} has invalid <year>: ${year}`);
+  }
+};
+
 // Constructs collected.works and collected.texts to
 // be used for resolving <xref poem="">, etc.
 const works_first_pass = (collected) => {
@@ -658,6 +672,7 @@ const works_first_pass = (collected) => {
       const linktitle = replaceDashes(safeGetText(head, 'linktitle')) || title;
       const breadcrumbtitle = safeGetText(head, 'breadcrumbtitle') || title;
       const year = safeGetText(head, 'year');
+      validateWorkYear(year, workFilename);
       const status = safeGetAttr(work, 'status');
       const type = safeGetAttr(work, 'type');
       const subtitles = extractSubtitles(head, 'subtitle', collected);

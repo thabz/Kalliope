@@ -91,7 +91,6 @@ if (@wantsAndreXml)
 <kalliopework id="andre" author="#{@poetId}" status="incomplete" type="poetry">
 <workhead>
     <title>Andre digte</title>
-    <year>?</year>
 </workhead>
 <workbody>
 
