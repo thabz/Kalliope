@@ -13,7 +13,7 @@ const hashCode = (str) => {
 const textFolder = (id) => {
   // Hashen bevæger sig mest i de mindst betydende bits, så reverse hex-strengen.
   const hash = hashCode(id).toString(16).split('').reverse().join('');
-  return `static/api/texts/${hash[0]}/${hash[1]}${hash[2]}`;
+  return `public/api/texts/${hash[0]}/${hash[1]}${hash[2]}`;
 };
 
 const textPath = (id) => {

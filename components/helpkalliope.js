@@ -1,4 +1,3 @@
-import React from 'react';
 import { poetNameString } from './poetname-helpers.js';
 
 const Popup = () => {

@@ -1,5 +1,5 @@
 import 'isomorphic-fetch';
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { createURL } from '../common/client.js';
 import LangContext from '../common/LangContext.js';
 import * as Sorting from '../common/sorting.js';
@@ -63,8 +63,7 @@ const Keywords = (props) => {
       crumbs={[...kalliopeCrumbs(lang), { title: _('Nøgleord', lang) }]}
       pageTitle={_('Nøgleord', lang)}
       menuItems={kalliopeMenu()}
-      selectedMenuItem="keywords"
-    >
+      selectedMenuItem="keywords">
       {renderedGroups}
       <LangSelect path={requestPath} />
     </Page>
@@ -72,7 +71,7 @@ const Keywords = (props) => {
 };
 
 Keywords.getInitialProps = async ({ query: { lang } }) => {
-  const res = await fetch(createURL('/static/api/keywords.json'));
+  const res = await fetch(createURL('/api/keywords.json'));
   const keywords = await res.json();
   return { lang, keywords };
 };
