@@ -14,6 +14,8 @@ const {
 const { poetName } = require('./formatting.js');
 const { imageSizeSync } = require('./image.js');
 
+const publicPathFromSrc = src => `public${src}`;
+
 // Returns raw {title: string, prefix?: string}
 // Both can be converted to xml using htmlToXml(...)
 const extractTitle = (head, type) => {
@@ -78,7 +80,7 @@ const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
       src,
       year,
       clipPath,
-      size: await imageSizeSync(src.replace(/^\//, '')),
+      size: await imageSizeSync(publicPathFromSrc(src)),
       remoteUrl,
       museum: collected.museums.get(museumId),
       content_lang: 'da',
@@ -101,7 +103,7 @@ const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
       src: artwork.src,
       year,
       clipPath,
-      size: await imageSizeSync(artwork.src.replace(/^\//, '')),
+      size: await imageSizeSync(publicPathFromSrc(artwork.src)),
       remoteUrl: artwork.remoteUrl,
       museum: artwork.museum,
       content_lang: artwork.content_lang,

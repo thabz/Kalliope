@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import * as Client from '../common/client.js';
 import LangContext from '../common/LangContext.js';
 import { kalliopeCrumbs } from '../components/breadcrumbs.js';
@@ -118,8 +118,7 @@ const About = (props) => {
       crumbs={crumbs}
       pageTitle={'Kalliope'}
       menuItems={kalliopeMenu()}
-      selectedMenuItem="about"
-    >
+      selectedMenuItem="about">
       {pageBody}
     </Page>
   );
