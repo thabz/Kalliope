@@ -171,13 +171,13 @@ const Poets = (props) => {
       selectedMenuItem={groupBy}
       country={country}
       pageTitle={pageTitle}>
-      {renderedGroups}
       <CountryPicker
-        style={{ marginTop: '40px' }}
+        style={{ marginBottom: '60px' }}
         lang={lang}
         countryToURL={countryCodeToURL}
         selectedCountry={country}
       />
+      {renderedGroups}
     </Page>
   );
 };
