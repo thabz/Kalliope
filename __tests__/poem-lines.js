@@ -1,10 +1,4 @@
 import fs from 'fs';
-import {
-  getElementByTagName,
-  loadXMLDoc,
-  safeGetAttr,
-  safeGetText,
-} from '../tools/build-static/xml.js';
 import { fileExists, loadText } from '../tools/libs/helpers.js';
 
 function flatten(arr) {
@@ -59,6 +53,35 @@ function textAliases(data) {
       .filter((alias) => alias.length > 0)
       .map((alias) => ({ id: idMatch[1], alias }));
   });
+}
+
+function firstYear(text) {
+  const match = (text || '').match(/\d{3,4}/);
+  return match == null ? null : parseInt(match[0], 10);
+}
+
+function firstMatch(text, regexp) {
+  const match = text.match(regexp);
+  return match == null ? null : match[1];
+}
+
+function findMissingModernFrenchSpacing(data) {
+  const textData = data
+    .replace(/<!--[\s\S]*?-->/g, '')
+    .replace(/<picture\b[\s\S]*?<\/picture>/g, '');
+  const lines = textData.split('\n');
+  for (let i = 0; i < lines.length; i++) {
+    const text = lines[i].replace(/<[^>]+>/g, '');
+    const match = text.match(/\S([?!;:])/);
+    if (match != null) {
+      return {
+        line: i + 1,
+        sign: match[1],
+        text: lines[i],
+      };
+    }
+  }
+  return null;
 }
 
 function ignoredTestsAtLine(data) {
@@ -148,19 +171,22 @@ describe('Check workfiles', () => {
     .filter((p) => p.indexOf('.') === -1);
 
   let filenameLangs = {};
+  let filenameBornYears = {};
+  let filenameWorkYears = {};
 
   let filenames = allPoetIds.map((poetId) => {
     const infoFilename = `fdirs/${poetId}/info.xml`;
     if (!fs.existsSync(infoFilename)) {
       throw new Error(`Missing info.xml in fdirs/${poetId}.`);
     }
-    const doc = loadXMLDoc(infoFilename);
-    const person = getElementByTagName(doc, 'person');
+    const infoData = loadText(infoFilename);
+    const person = firstMatch(infoData, /(<person\b[^>]*>)/);
     if (person == null) {
       throw new Error(`${infoFilename} is malformed.`);
     }
-    const lang = safeGetAttr(person, 'lang');
-    const workIds = safeGetText(person, 'works');
+    const lang = firstMatch(person, /\slang="([^"]+)"/);
+    const bornYear = firstYear(firstMatch(infoData, /<born>([\s\S]*?)<\/born>/));
+    const workIds = firstMatch(infoData, /<works>([\s\S]*?)<\/works>/);
     let items = workIds
       ? workIds
           .toString()
@@ -174,6 +200,8 @@ describe('Check workfiles', () => {
     return items.map((w) => {
       const filename = `${poetId}/${w}.xml`;
       filenameLangs[filename] = lang;
+      filenameBornYears[filename] = bornYear;
+      filenameWorkYears[filename] = firstYear(w);
       return filename;
     });
   });
@@ -256,6 +284,21 @@ describe('Check workfiles', () => {
           });
         }
       });
+
+      const shouldUseModernFrenchPunctuationSpacing =
+        lang === 'fr' &&
+        ((filenameBornYears[filename] != null &&
+          filenameBornYears[filename] >= 1800) ||
+          (filenameWorkYears[filename] != null &&
+            filenameWorkYears[filename] >= 1800));
+      if (shouldUseModernFrenchPunctuationSpacing) {
+        const missingFrenchSpacing = findMissingModernFrenchSpacing(data);
+        if (missingFrenchSpacing != null) {
+          fail(
+            `French spacing missing before '${missingFrenchSpacing.sign}' in ${filename}:${missingFrenchSpacing.line} [${missingFrenchSpacing.text}]`
+          );
+        }
+      }
     });
   });
 });
