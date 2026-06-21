@@ -12,11 +12,24 @@ const localesByLang = {
   sv: 'sv-SE',
 };
 
+const localesByCountry = {
+  de: 'de',
+  dk: daDK,
+  fr: 'fr-FR',
+  gb: 'en-GB',
+  it: 'it-IT',
+  no: 'nb-NO',
+  se: 'sv-SE',
+  un: daDK,
+  us: 'en-US',
+};
+
 const lineCollatorOptions = {
   ignorePunctuation: true,
 };
 
 export const localeForLang = (lang) => localesByLang[lang] || daDK;
+export const localeForCountry = (country) => localesByCountry[country] || daDK;
 
 export const lineSectionTitleForLang = (line, lang) => {
   if (lang === 'da' && line.indexOf('Aa') === 0) {
@@ -37,16 +50,45 @@ const nvl = (x, v) => {
   return x == null ? v : x;
 };
 
+const poetLastnameSortKey = (poet) => {
+  return nvl(
+    poet.name.sortname,
+    nvl(poet.name.lastname, '') + nvl(poet.name.firstname, '')
+  );
+};
+
 export const poetsByLastname = (a, b) => {
-  const ao = nvl(
-    a.name.sortname,
-    nvl(a.name.lastname, '') + nvl(a.name.firstname, '')
-  );
-  const bo = nvl(
-    b.name.sortname,
-    nvl(b.name.lastname, '') + nvl(b.name.firstname, '')
-  );
+  const ao = poetLastnameSortKey(a);
+  const bo = poetLastnameSortKey(b);
   return ao.localeCompare(bo, daDK);
+};
+
+export const poetsByLastnameForCountry = (country) => {
+  const locale = localeForCountry(country);
+  return (a, b) => {
+    const ao = poetLastnameSortKey(a);
+    const bo = poetLastnameSortKey(b);
+    return ao.localeCompare(bo, locale);
+  };
+};
+
+export const poetsByBirthDateForCountry = (country) => {
+  const byLastname = poetsByLastnameForCountry(country);
+  return (a, b) => {
+    if (a.period == null || b.period == null) {
+      return byLastname(a, b);
+    } else if (a.period.born == null || b.period.born == null) {
+      return byLastname(a, b);
+    } else {
+      const a1 = a.period.born.date;
+      const b1 = b.period.born.date;
+      if (a1 === b1) {
+        return byLastname(a, b);
+      } else {
+        return a1 < b1 ? -1 : 1;
+      }
+    }
+  };
 };
 
 export const poetsByBirthDate = (a, b) => {

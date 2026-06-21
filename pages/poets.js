@@ -35,7 +35,7 @@ const poetListItem = (poet) => {
   };
 };
 
-const groupsByLetter = (poets, lang) => {
+const groupsByLetter = (poets, lang, country) => {
   let groups = new Map();
 
   poets
@@ -64,7 +64,7 @@ const groupsByLetter = (poets, lang) => {
   groups.forEach((group, key) => {
     sortedGroups.push({
       title: key,
-      items: group.sort(Sorting.poetsByLastname),
+      items: group.sort(Sorting.poetsByLastnameForCountry(country)),
     });
   });
   return sortedGroups.sort(Sorting.sectionsByTitle);
@@ -76,7 +76,7 @@ const poetYearIntervalTitle = (year) => {
   return formatYearInterval(intervalStart, intervalEnd);
 };
 
-const groupsByYear = (poets, lang) => {
+const groupsByYear = (poets, lang, country) => {
   let groups = new Map();
   poets
     .filter((p) => p.type === 'poet')
@@ -100,7 +100,7 @@ const groupsByYear = (poets, lang) => {
   groups.forEach((group, key) => {
     sortedGroups.push({
       title: key,
-      items: group.sort(Sorting.poetsByBirthDate),
+      items: group.sort(Sorting.poetsByBirthDateForCountry(country)),
     });
   });
   return sortedGroups.sort(Sorting.poetYearSectionsByTitle);
@@ -129,8 +129,8 @@ const Poets = (props) => {
   ];
   const groups =
     groupBy === 'name'
-      ? groupsByLetter(poets, lang)
-      : groupsByYear(poets, lang);
+      ? groupsByLetter(poets, lang, country)
+      : groupsByYear(poets, lang, country);
 
   let sections = [];
 
