@@ -29,6 +29,30 @@ describe('sectionsByTitle', () => {
   });
 });
 
+describe('poetsByLastnameForCountry', () => {
+  it('sorts German poet names by German collation', () => {
+    const data = ['Müller', 'Mörike', 'Mozart', 'Meyer'].map((lastname) => {
+      return { name: { lastname } };
+    });
+    const sorted = data
+      .sort(Sorting.poetsByLastnameForCountry('de'))
+      .map((x) => x.name.lastname);
+    expect(sorted).toEqual(['Meyer', 'Mörike', 'Mozart', 'Müller']);
+  });
+
+  it('sorts ungrouped poet names by Danish collation', () => {
+    const data = ['Øster', 'Andersen', 'Aagesen', 'Blicher'].map(
+      (lastname) => {
+        return { name: { lastname } };
+      }
+    );
+    const sorted = data
+      .sort(Sorting.poetsByLastnameForCountry('un'))
+      .map((x) => x.name.lastname);
+    expect(sorted).toEqual(['Andersen', 'Blicher', 'Øster', 'Aagesen']);
+  });
+});
+
 describe('linesPairsByLineForLang', () => {
   it('sorts Aa as Å in Danish line sorting', () => {
     const data = ['Ø', 'A', 'Æ', 'B', 'Aa', 'C'].map((x) => {
