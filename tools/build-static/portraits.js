@@ -15,7 +15,7 @@ const build_portraits_json = async (poet, collected) => {
       getElementsByTagName(doc, 'picture').map(async picture => {
         picture = await get_picture(
           picture,
-          `/static/images/${poet.id}`,
+          `/images/${poet.id}`,
           collected,
           onError
         );

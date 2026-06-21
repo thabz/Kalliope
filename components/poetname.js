@@ -1,4 +1,3 @@
-import React from 'react';
 import { poetNameParts } from './poetname-helpers.js';
 
 const PoetName = (props) => {

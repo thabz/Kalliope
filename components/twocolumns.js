@@ -1,5 +1,3 @@
-import React from 'react';
-
 const TwoColumns = (props) => {
   return (
     <div className="two-columns">

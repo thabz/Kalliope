@@ -1,4 +1,3 @@
-import React from 'react';
 import CommonData from '../common/commondata.js';
 
 const TextName = ({ text }) => {

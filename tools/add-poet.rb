@@ -113,7 +113,7 @@ if (@wantsAndreXml)
 end
 
 if (@wantsPortraitsXml) 
-    Dir.mkdir("static/images/#{@poetId}")
+    Dir.mkdir("public/images/#{@poetId}")
 
     @portraitsXml = %{<?xml version="1.0" encoding="UTF-8"?>
 <pictures>
