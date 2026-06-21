@@ -3,12 +3,12 @@
 require 'json'
 require 'fileutils'
 
-@imagesDir = "static/images"
+@imagesDir = "public/images"
 @primaries = {}
 @squares = {}
 
 ["de","dk","fr","gb","it","no","se","us"].each { |cc|
-    data = File.read("static/api/poets-#{cc}.json")
+    data = File.read("public/api/poets-#{cc}.json")
     JSON.parse(data).each { |poet| 
         @primaries[poet["id"]] = poet["portrait"]
         @squares[poet["id"]] = poet["square_portrait"]

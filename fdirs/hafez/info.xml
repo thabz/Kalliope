@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<person id="hafez" country="un" lang="pe" type="poet">
+<person id="hafez" country="un" lang="fa" type="poet">
   <name>
     <firstname>Shams al-din</firstname>
     <lastname>Hafez</lastname>
@@ -16,6 +16,7 @@
       <place>Shiraz</place>
     </dead>
   </period>
+  <literary-periods>middelalderen</literary-periods>
   <identifiers>
     <wikidata>Q6240</wikidata>
     <viaf>92145857106822922504</viaf>
