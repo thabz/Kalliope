@@ -22,7 +22,7 @@ const build_dict_first_pass = collected => {
     return;
   }
 
-  safeMkdir('static/api/dict');
+  safeMkdir('public/api/dict');
   const doc = loadXMLDoc(path);
   getElementsByTagName(doc, 'entry').forEach(item => {
     const id = safeGetAttr(item, 'id');
@@ -42,7 +42,7 @@ const build_dict_second_pass = collected => {
     return;
   }
   console.log('Building dict');
-  safeMkdir('static/api/dict');
+  safeMkdir('public/api/dict');
 
   let items = new Array();
 
@@ -61,7 +61,7 @@ const build_dict_second_pass = collected => {
         content_html,
       },
     };
-    writeJSON(`static/api/dict/${id}.json`, data);
+    writeJSON(`public/api/dict/${id}.json`, data);
     const simpleData = {
       id,
       title,
@@ -91,7 +91,7 @@ const build_dict_second_pass = collected => {
     });
     createItem(id, title, phrase, variants, body, collected);
   });
-  writeJSON(`static/api/dict.json`, items);
+  writeJSON(`public/api/dict.json`, items);
 };
 
 module.exports = {
