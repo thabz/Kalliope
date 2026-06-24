@@ -31,7 +31,7 @@ const WorksList = ({ lang, poet, works }) => {
       yearRendered = (
         <span key="year" className="lighter">
           {' '}
-          ({formattedYear(year)})
+          ({formattedYear(year, lang)})
         </span>
       );
     }

@@ -251,7 +251,7 @@ const TextPage = (props) => {
         lang,
         {
           poetId: poet.id,
-          poetName: poetNameString(poet, false, true),
+          poetName: poetNameString(poet, false, true, lang),
         }
       );
       return (
@@ -261,7 +261,7 @@ const TextPage = (props) => {
               contentHtml={[[html, { html: true }]]}
               contentLang={lang}
             />
-            <HelpKalliope unknownOriginalBy={poet} />
+            <HelpKalliope unknownOriginalBy={poet} lang={lang} />
           </>
         </Note>
       );
@@ -415,13 +415,13 @@ const TextPage = (props) => {
   let ogTitle = null;
   if (work.id !== 'andre') {
     ogTitle = _(`{poetName}: »{poemTitle}« fra {workTitle}`, lang, {
-      poetName: poetNameString(poet, false, false),
+      poetName: poetNameString(poet, false, false, lang),
       poemTitle: textLinkTitleString(text),
-      workTitle: workTitleString(work),
+      workTitle: workTitleString(work, lang),
     });
   } else {
     ogTitle = _(`{poetName}: »{poemTitle}«`, lang, {
-      poetName: poetNameString(poet, false, false),
+      poetName: poetNameString(poet, false, false, lang),
       poemTitle: textLinkTitleString(text),
     });
   }

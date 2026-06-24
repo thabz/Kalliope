@@ -114,23 +114,28 @@ const WorkPage = (props) => {
   if (prev != null) {
     paging.prev = {
       url: Links.workURL(lang, poet.id, prev.id),
-      title: workTitleString(prev),
+      title: workTitleString(prev, lang),
     };
   }
   if (next != null) {
     paging.next = {
       url: Links.workURL(lang, poet.id, next.id),
-      title: workTitleString(next),
+      title: workTitleString(next, lang),
     };
   }
 
   return (
     <Page
-      headTitle={`${workTitleString(work)} - ${poetNameString(
-        poet
+      headTitle={`${workTitleString(work, lang)} - ${poetNameString(
+        poet,
+        false,
+        false,
+        lang
       )} - Kalliope`}
       ogTitle={
-        poetNameString(poet, false, false) + ': ' + workTitleString(work)
+        poetNameString(poet, false, false, lang) +
+        ': ' +
+        workTitleString(work, lang)
       }
       ogImage={OpenGraph.poetImage(poet)}
       ogDescription={ogDescription}
