@@ -1,5 +1,11 @@
 const { execFileSync } = require('child_process');
 
+const GIT_MODIFIED_DATE_PATHS = [
+  'fdirs/**/*.xml',
+  'data/events.xml',
+  'data/keywords/*.xml',
+];
+
 const collect_git_modified_dates = () => {
   const log = execFileSync(
     'git',
@@ -9,7 +15,7 @@ const collect_git_modified_dates = () => {
       '--pretty=format:%ct',
       '--name-only',
       '--',
-      ':(glob)fdirs/**/*.xml',
+      ...GIT_MODIFIED_DATE_PATHS.map((path) => `:(glob)${path}`),
     ],
     { encoding: 'utf8' }
   );
