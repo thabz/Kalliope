@@ -53,7 +53,10 @@ const build_person_or_keyword_refs = (collected) => {
       type: 'unknown-original',
     },
     { regexp: /picture[^>]*()artist="([^"]*)"/g, type: 'person' },
-    { regexp: /picture[^>]*()ref="([^"]*)"/g, type: 'pictureref' },
+    {
+      regexp: /picture[^>]*(?:artwork|ref)="([^"]*)"/g,
+      type: 'pictureref',
+    },
   ];
 
   const register = (filename, toKey, fromPoemId, type, toPoemId) => {
@@ -141,7 +144,7 @@ const build_person_or_keyword_refs = (collected) => {
                   const toPoetId = match[2];
                   register(filename, toPoetId, fromId, 'translation', null);
                 } else if (rule.type === 'pictureref') {
-                  const pictureRef = match[2];
+                  const pictureRef = match[1];
                   if (!pictureRef.match('/')) {
                     throw new Error(
                       `${filename} ${fromId}: points has illegal picture ref ${pictureRef}. 
