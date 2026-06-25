@@ -129,7 +129,11 @@ const build_artwork = async (collected) => {
           await Promise.all(
             getElementsByTagName(doc, 'picture')
               .filter((picture) => {
-                return safeGetAttr(picture, 'ref') == null;
+                return (
+                  safeGetAttr(picture, 'artwork') == null &&
+                  safeGetAttr(picture, 'portrait') == null &&
+                  safeGetAttr(picture, 'ref') == null
+                );
               })
               .map(async (pictureNode) => {
                 const src = safeGetAttr(pictureNode, 'src');
@@ -140,7 +144,9 @@ const build_artwork = async (collected) => {
                   onError
                 );
                 if (picture == null) {
-                  onError('har et billede uden src- eller ref-attribut.');
+                  onError(
+                    'har et billede uden src-, artwork-, portrait- eller ref-attribut.'
+                  );
                 }
                 const key = `portrait/${personId}/${src}`;
                 return { key, picture };
@@ -180,7 +186,11 @@ const build_artwork = async (collected) => {
               await Promise.all(
                 getElementsByTagName(doc, 'picture')
                   .filter((picture) => {
-                    return safeGetAttr(picture, 'ref') == null;
+                    return (
+                      safeGetAttr(picture, 'artwork') == null &&
+                      safeGetAttr(picture, 'portrait') == null &&
+                      safeGetAttr(picture, 'ref') == null
+                    );
                   })
                   .map(async (pictureNode) => {
                     const src = safeGetAttr(pictureNode, 'src');
@@ -191,7 +201,9 @@ const build_artwork = async (collected) => {
                       onError
                     );
                     if (picture == null) {
-                      onError('har et billede uden src- eller ref-attribut.');
+                      onError(
+                        'har et billede uden src-, artwork-, portrait- eller ref-attribut.'
+                      );
                     }
                     const key = `work/${personId}/${workId}/${src}`;
                     return { key, picture };
