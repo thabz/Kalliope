@@ -30,6 +30,15 @@ Først skal `docker` være installeret og tilgængelig i din terminal:
 - På Linux skal du installere Docker Engine og Compose-plugin'et via din distributions
   pakkehåndtering eller Dockers installationsvejledning.
 
+Start derefter Docker-daemonen:
+
+- Med Docker Desktop: åbn Docker Desktop og vent til Docker kører.
+- Med Colima:
+
+```shell
+colima start
+```
+
 ```shell
 docker compose up --build
 ```
