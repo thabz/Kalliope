@@ -53,6 +53,13 @@ const translations = {
   'en*{varianter} af denne tekst:': '{varianter} of this text:',
   'en*{varianter} af dette digt:': '{varianter} of this poem:',
   'en*{varianter} af denne samling:': '{varianter} of this collection:',
+  'en*knytter sig til samme dato.': 'are associated with the same date.',
+
+  'de*og': 'und',
+  'de*knytter sig til samme dato.': 'beziehen sich auf dasselbe Datum.',
+
+  'fr*og': 'et',
+  'fr*knytter sig til samme dato.': 'se rapportent à la même date.',
 };
 
 const _ = (danishString, lang, keys) => {

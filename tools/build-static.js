@@ -236,6 +236,7 @@ const handle_text = async (
 
   const textId = safeGetAttr(text, 'id');
   const head = getChildByTagName(text, 'head');
+  const textDates = extractDates(head);
   const firstline = extractTitle(head, 'firstline');
   let title = extractTitle(head, 'title') || firstline; // {title: xxx, prefix: xxx}
   let indextitle = extractTitle(head, 'indextitle') || title;
@@ -310,6 +311,7 @@ const handle_text = async (
         ],
       ];
     });
+  const relatedDateTexts = relatedTextsForDates(textId, textDates, collected);
 
   const foldername = Paths.textFolder(textId);
   const prev_next = resolve_prev_next(textId);
@@ -430,6 +432,7 @@ const handle_text = async (
       keywords: keywordsArray || [],
       refs: refsArray,
       variants: variantsArray,
+      related_date_texts: relatedDateTexts,
       pictures: await get_pictures(
         head,
         `/images/${poetId}`,
@@ -630,6 +633,99 @@ const validateWorkYear = (year, filename) => {
   }
 };
 
+const removeWorkDates = (dates, poetId, workId) => {
+  dates.forEach((items, date) => {
+    const filtered = items.filter(
+      (item) => item.poetId !== poetId || item.workId !== workId
+    );
+    if (filtered.length === 0) {
+      dates.delete(date);
+    } else {
+      dates.set(date, filtered);
+    }
+  });
+};
+
+const addTextDates = (dates, text, textDates) => {
+  ['written', 'performed', 'event'].forEach((type) => {
+    const date = textDates[type] == null ? null : textDates[type].trim();
+    if (date == null || date.length === 0) {
+      return;
+    }
+    const items = dates.get(date) || [];
+    const { type: textType, ...textData } = text;
+    items.push({
+      dateType: type,
+      textType,
+      ...textData,
+    });
+    dates.set(date, items);
+  });
+};
+
+const sortCollectedDates = (dates) => {
+  const sorted = new Map(
+    Array.from(dates.entries()).sort(([dateA], [dateB]) =>
+      dateA.localeCompare(dateB)
+    )
+  );
+  sorted.forEach((items, date) => {
+    sorted.set(
+      date,
+      items.sort((a, b) => {
+        if (a.poetId !== b.poetId) {
+          return a.poetId.localeCompare(b.poetId);
+        }
+        if (a.workId !== b.workId) {
+          return a.workId.localeCompare(b.workId);
+        }
+        if (a.id !== b.id) {
+          return a.id.localeCompare(b.id);
+        }
+        return a.dateType.localeCompare(b.dateType);
+      })
+    );
+  });
+  return sorted;
+};
+
+const relatedTextsForDates = (textId, textDates, collected) => {
+  const variantIds = new Set(resolve_variants(textId, collected) || [textId]);
+  variantIds.add(textId);
+
+  const result = [];
+  const seen = new Set();
+  ['written', 'performed', 'event'].forEach((dateType) => {
+    const date = textDates[dateType] == null ? null : textDates[dateType].trim();
+    if (date == null || date.length === 0) {
+      return;
+    }
+    const items = collected.dates.get(date) || [];
+    items.forEach((item) => {
+      const itemVariantIds = resolve_variants(item.id, collected) || [item.id];
+      const itemVariantKey = itemVariantIds[0];
+      if (
+        itemVariantIds.some((variantId) => variantIds.has(variantId)) ||
+        seen.has(itemVariantKey)
+      ) {
+        return;
+      }
+      seen.add(itemVariantKey);
+      result.push({
+        date,
+        dateType: item.dateType,
+        id: item.id,
+        title: item.title,
+        firstline: item.firstline,
+        poetId: item.poetId,
+        poetName: poetName(collected.poets.get(item.poetId)),
+        workId: item.workId,
+      });
+    });
+  });
+  return result;
+};
+
 // Constructs collected.works and collected.texts to
 // be used for resolving <xref poem="">, etc.
 const works_first_pass = (collected) => {
@@ -639,9 +735,12 @@ const works_first_pass = (collected) => {
   const works = globalForceReload
     ? new Map()
     : new Map(loadCachedJSON('collected.works') || []);
+  const dates = globalForceReload
+    ? new Map()
+    : new Map(loadCachedJSON('collected.dates') || []);
 
   let found_changes = false;
-  const force_reload = texts.size === 0 || works.size === 0;
+  const force_reload = texts.size === 0 || works.size === 0 || dates.size === 0;
 
   let parentIdsToFillIn = new Map(); // Bruges til nedenstående second-pass som klistrer parent-data på
 
@@ -676,7 +775,7 @@ const works_first_pass = (collected) => {
       const status = safeGetAttr(work, 'status');
       const type = safeGetAttr(work, 'type');
       const subtitles = extractSubtitles(head, 'subtitle', collected);
-      const dates = extractDates(head);
+      const workDates = extractDates(head);
       // Sanity check
       if (safeGetAttr(work, 'author') !== poetId) {
         throw new Error(
@@ -700,7 +799,7 @@ const works_first_pass = (collected) => {
         status,
         type,
         has_content: workTexts.length > 0,
-        published: dates.published || year,
+        published: workDates.published || year,
       });
 
       if (parentId != null) {
@@ -712,6 +811,7 @@ const works_first_pass = (collected) => {
           texts.delete(cachedTextId);
         }
       });
+      removeWorkDates(dates, poetId, workId);
 
       workTexts.forEach((part) => {
         const textId = safeGetAttr(part, 'id');
@@ -727,6 +827,7 @@ const works_first_pass = (collected) => {
         const linktitle = extractTitle(head, 'linktitle');
         const indextitle = extractTitle(head, 'indextitle');
         const aliases = parseAliases(safeGetAttr(part, 'aliases'));
+        const textDates = extractDates(head);
 
         const linkTitle = linktitle || title || firstline;
         const indexTitle = indextitle || title || firstline;
@@ -738,7 +839,7 @@ const works_first_pass = (collected) => {
             )} ${textId} without title.`
           );
         }
-        texts.set(textId, {
+        const text = {
           id: textId,
           title: replaceDashes(linkTitle.title),
           firstline: replaceDashes(firstline == null ? null : firstline.title),
@@ -748,7 +849,9 @@ const works_first_pass = (collected) => {
           type: tagName(part),
           poetId: poetId,
           workId: workId,
-        });
+        };
+        texts.set(textId, text);
+        addTextDates(dates, text, textDates);
       });
     });
   });
@@ -764,8 +867,9 @@ const works_first_pass = (collected) => {
   if (found_changes) {
     writeCachedJSON('collected.texts', Array.from(texts));
     writeCachedJSON('collected.works', Array.from(works));
+    writeCachedJSON('collected.dates', Array.from(sortCollectedDates(dates)));
   }
-  return { works, texts };
+  return { works, texts, dates };
 };
 
 const works_second_pass = async (collected) => {
@@ -962,13 +1066,14 @@ const main = async () => {
     build_poets_first_pass,
     collected
   );
-  const { works, texts } = await b(
+  const { works, texts, dates } = await b(
     'works_first_pass',
     works_first_pass,
     collected
   );
   collected.works = works;
   collected.texts = texts;
+  collected.dates = dates;
   collected.artwork = await b('build_artwork', build_artwork, collected);
   await b(
     'build_person_or_keyword_refs',
