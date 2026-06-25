@@ -22,6 +22,13 @@ Hvis du nu retter i en XML-fil, f.eks. under `/fdirs/`, skal `npm run build-stat
 
 Du kan også køre Kalliope med Docker og Elasticsearch:
 
+Først skal `docker` være installeret og tilgængelig i din terminal:
+
+- På Mac kan du installere [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+  eller bruge [Colima](https://github.com/abiosoft/colima) sammen med Docker CLI.
+- På Linux skal du installere Docker Engine og Compose-plugin'et via din distributions
+  pakkehåndtering eller Dockers installationsvejledning.
+
 ```shell
 docker compose up --build
 ```
