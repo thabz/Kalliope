@@ -1,5 +1,4 @@
 const { isFileModified } = require('../libs/caching.js');
-const { execFileSync } = require('child_process');
 const {
   safeMkdir,
   writeJSON,
@@ -7,6 +6,7 @@ const {
   replaceDashes,
   fileExists,
 } = require('../libs/helpers.js');
+const { collect_git_modified_dates } = require('./git.js');
 const { extractTitle, get_notes, get_pictures } = require('./parsing.js');
 const { sortWorks } = require('../../common/worksort.js');
 const {
@@ -69,42 +69,6 @@ const extract_subworks = (poetId, workbody, collected) => {
     }
     return subwork;
   });
-};
-
-const collect_git_modified_dates = () => {
-  const log = execFileSync(
-    'git',
-    [
-      '--no-pager',
-      'log',
-      '--pretty=format:%ct',
-      '--name-only',
-      '--',
-      ':(glob)fdirs/**/*.xml',
-    ],
-    { encoding: 'utf8' }
-  );
-  const modifiedDates = new Map();
-  let timestamp = null;
-
-  log.split('\n').forEach((line) => {
-    const trimmed = line.trim();
-    if (trimmed.length === 0) {
-      return;
-    }
-    if (/^\d+$/.test(trimmed)) {
-      timestamp = parseInt(trimmed, 10);
-      return;
-    }
-    if (timestamp != null && !modifiedDates.has(trimmed)) {
-      modifiedDates.set(
-        trimmed,
-        new Date(timestamp * 1000).toISOString().slice(0, 10)
-      );
-    }
-  });
-
-  return modifiedDates;
 };
 
 const build_works_toc = async (collected) => {
