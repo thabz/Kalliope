@@ -16,7 +16,7 @@ const WorkName = ({ work, cursive = false, useTitle = 'title' }) => {
   let titlePart = <span>{titleTranslated}</span>;
   let yearPart = null;
   if (year != null) {
-    yearPart = <span>({formattedYear(year)})</span>;
+    yearPart = <span>({formattedYear(year, lang)})</span>;
   }
 
   const parts = [titlePart, yearPart].map((p, i) => {
@@ -52,7 +52,7 @@ const WorkName = ({ work, cursive = false, useTitle = 'title' }) => {
 
 export default WorkName;
 
-export function workTitleString(work) {
+export function workTitleString(work, lang = 'da') {
   const { title, year } = work;
-  return Dates.formatTitleAndYear(title, year);
+  return Dates.formatTitleAndYear(title, year, lang);
 }

@@ -134,7 +134,7 @@ const Timeline = ({ timeline, lang }) => {
     const [curYearFormatted, curYearNumeric, x, bce] = extractYear(item.date);
     let year = null;
     if (prevYearNumeric !== curYearNumeric) {
-      year = formatYearEra(curYearFormatted, bce ? 'bce' : null);
+      year = formatYearEra(curYearFormatted, bce ? 'bce' : null, lang);
     }
     prevYearNumeric = curYearNumeric;
 
