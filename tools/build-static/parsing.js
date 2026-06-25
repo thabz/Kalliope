@@ -162,6 +162,7 @@ const extractDates = head => {
   if (dates != null) {
     result.published = safeGetText(dates, 'published');
     result.event = safeGetText(dates, 'event');
+    result.performed = safeGetText(dates, 'performed');
     result.written = safeGetText(dates, 'written');
   }
   return result;

@@ -129,6 +129,37 @@ const KeywordLink = ({ keyword, lang }) => {
   );
 };
 
+const RelatedDateTexts = ({ texts, lang }) => {
+  if (texts.length === 0) {
+    return null;
+  }
+  return (
+    <div className="related-date-texts">
+      {texts.map((text, i) => {
+        const separator =
+          i === texts.length - 1
+            ? ''
+            : i === texts.length - 2
+            ? ` ${_('og', lang)} `
+            : ', ';
+        return (
+          <span key={text.id}>
+            {text.poetName}:
+            <Link href={Links.textURL(lang, text.id)}>»{text.title}«</Link>
+            {separator}
+          </span>
+        );
+      })}{' '}
+      {_('knytter sig til samme dato.', lang)}
+      <style jsx>{`
+        .related-date-texts {
+          margin-bottom: 30px;
+        }
+      `}</style>
+    </div>
+  );
+};
+
 const TextHeading = ({ text }) => {
   let className = 'text-heading';
 
@@ -398,11 +429,13 @@ const TextPage = (props) => {
     text.pictures.length > 0 ||
     notes.length > 0 ||
     text.keywords.length > 0 ||
+    (text.related_date_texts || []).length > 0 ||
     textPictures.length > 0
   ) {
     sidebar = (
       <div>
         {renderedNotes}
+        <RelatedDateTexts texts={text.related_date_texts || []} lang={lang} />
         <FootnoteList />
         <Refs refs={text.refs} contentLang={text.content_lang} />
         {renderedVariants}
