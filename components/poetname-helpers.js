@@ -7,7 +7,8 @@ const nvl = (x, v) => {
 export function poetNameParts(
   poet,
   lastNameFirst = false,
-  includePeriod = false
+  includePeriod = false,
+  lang = 'da'
 ) {
   const { name } = poet;
   const { firstname, lastname } = name;
@@ -31,7 +32,11 @@ export function poetNameParts(
 
   if (includePeriod && poet.period != null) {
     const { born, dead } = poet.period;
-    periodPart = formattedYearRange(nvl(born, {}).date, nvl(dead, {}).date);
+    periodPart = formattedYearRange(
+      nvl(born, {}).date,
+      nvl(dead, {}).date,
+      lang
+    );
   }
   return [namePart, periodPart];
 }
@@ -39,9 +44,10 @@ export function poetNameParts(
 export function poetNameString(
   poet,
   lastNameFirst = false,
-  includePeriod = false
+  includePeriod = false,
+  lang = 'da'
 ) {
-  const p = poetNameParts(poet, lastNameFirst, includePeriod);
+  const p = poetNameParts(poet, lastNameFirst, includePeriod, lang);
   if (p[0] != null && p[1] != null) {
     return p[0] + ' ' + p[1];
   } else if (p[0] != null) {

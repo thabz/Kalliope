@@ -1,7 +1,7 @@
-import React, { useContext, useState } from 'react';
+import Link from 'next/link';
+import { useContext, useState } from 'react';
 import CommonData from '../common/commondata.js';
 import LangContext from '../common/LangContext.js';
-import { Link } from '../routes';
 import * as Links from './links.js';
 import PictureOverlay from './pictureoverlay.js';
 import PoetName from './poetname.js';
@@ -16,10 +16,8 @@ const FigCaption = (props) => {
   if (!hideArtist && picture.artist != null) {
     artistRendered = (
       <>
-        <Link route={Links.poetURL(lang, picture.artist.id)}>
-          <a>
-            <PoetName poet={picture.artist} />
-          </a>
+        <Link href={Links.poetURL(lang, picture.artist.id)}>
+          <PoetName poet={picture.artist} />
         </Link>
         {': '}
       </>
@@ -38,7 +36,7 @@ const FigCaption = (props) => {
       museumRendered = (
         <>
           {' '}
-          <Link route={Links.museumURL(lang, picture.museum.id)}>{name}</Link>
+          <Link href={Links.museumURL(lang, picture.museum.id)}>{name}</Link>
           {'. '}
         </>
       );
@@ -164,8 +162,7 @@ const Picture = ({
         <picture
           className={pictureClassName}
           onClick={onClick}
-          style={clipPathDropShadowStyle}
-        >
+          style={clipPathDropShadowStyle}>
           {sources}
           <img
             className={pictureClassName}
@@ -176,7 +173,11 @@ const Picture = ({
           />
         </picture>
         <FigCaption
-          picture={picture}
+          picture={{
+            ...picture,
+            content_html:
+              picture.miniature_content_html || picture.content_html,
+          }}
           hideArtist={hideArtist}
           hideMuseum={hideMuseum}
         />

@@ -6,7 +6,9 @@ const {
   replaceDashes,
   fileExists,
 } = require('../libs/helpers.js');
+const { collect_git_modified_dates } = require('./git.js');
 const { extractTitle, get_notes, get_pictures } = require('./parsing.js');
+const { sortWorks } = require('../../common/worksort.js');
 const {
   loadXMLDoc,
   getChildren,
@@ -70,6 +72,34 @@ const extract_subworks = (poetId, workbody, collected) => {
 };
 
 const build_works_toc = async (collected) => {
+  const modifiedDates = collect_git_modified_dates();
+
+  const workFilesForPoet = (poetId) => {
+    return collected.workids
+      .get(poetId)
+      .map((workId) => `fdirs/${poetId}/${workId}.xml`)
+      .filter(fileExists);
+  };
+
+  const worksForPaging = (poetId, poet) => {
+    const works = collected.workids
+      .get(poetId)
+      .map((workId) => collected.works.get(`${poetId}/${workId}`))
+      .filter((work) => work != null && work.parent == null)
+      .filter((work) => work.has_content);
+    return sortWorks(poet, works);
+  };
+
+  const resolvePrevNextWork = (works, workId) => {
+    const index = works.findIndex((work) => {
+      return work.id === workId;
+    });
+    return {
+      prev: index > 0 ? works[index - 1] : null,
+      next: index >= 0 && index < works.length - 1 ? works[index + 1] : null,
+    };
+  };
+
   // Returns {toc, subworks, notes, pictures}
   const extract_work_data = async (work) => {
     const type = safeGetAttr(work, 'type');
@@ -82,7 +112,7 @@ const build_works_toc = async (collected) => {
     const notes = get_notes(workhead, collected);
     const pictures = await get_pictures(
       workhead,
-      `/static/images/${poetId}`,
+      `/images/${poetId}`,
       `fdirs/${poetId}/${workId}`,
       collected
     );
@@ -104,7 +134,13 @@ const build_works_toc = async (collected) => {
   return Promise.all(
     Array.from(collected.poets.entries()).map(async (entry) => {
       const [poetId, poet] = entry;
-      safeMkdir(`static/api/${poetId}`);
+      safeMkdir(`public/api/${poetId}`);
+      const workFilenames = workFilesForPoet(poetId);
+      const poetWorksModified = isFileModified(
+        `fdirs/${poetId}/info.xml`,
+        ...workFilenames
+      );
+      const pageWorks = worksForPaging(poetId, poet);
 
       return Promise.all(
         collected.workids.get(poetId).map(async (workId) => {
@@ -112,7 +148,7 @@ const build_works_toc = async (collected) => {
           if (!fileExists(filename)) {
             return;
           }
-          if (!isFileModified(filename)) {
+          if (!poetWorksModified && !isFileModified(filename)) {
             return;
           }
           let doc = loadXMLDoc(filename);
@@ -140,6 +176,7 @@ const build_works_toc = async (collected) => {
           const parentData = collected.works.get(parentId);
 
           if (work_data) {
+            const { prev, next } = resolvePrevNextWork(pageWorks, workId);
             const toc_file_data = {
               poet,
               toc: work_data.toc,
@@ -147,18 +184,11 @@ const build_works_toc = async (collected) => {
               work: collected.works.get(`${poetId}/${workId}`),
               notes: work_data.notes || [],
               pictures: work_data.pictures || [],
+              modified: modifiedDates.get(filename),
+              prev,
+              next,
             };
-
-            // Find modified date i git.
-            // Later: this turns out to be super-slow, building toc's
-            // takes 151s instead of 9s. So I've disabled this.
-            /*
-          const modifiedDateString = execSync(
-            `git log -1 --format="%ad" --date=iso-strict -- ${filename}`
-          );
-          toc_file_data.modified = modifiedDateString.toString().trim();
-          */
-            const tocFilename = `static/api/${poetId}/${workId}-toc.json`;
+            const tocFilename = `public/api/${poetId}/${workId}-toc.json`;
             console.log(tocFilename);
             writeJSON(tocFilename, toc_file_data);
           }

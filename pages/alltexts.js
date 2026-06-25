@@ -1,4 +1,4 @@
-import React from 'react';
+import Link from 'next/link';
 import * as Client from '../common/client.js';
 import CommonData from '../common/commondata.js';
 import * as Strings from '../common/strings.js';
@@ -7,7 +7,6 @@ import { kalliopeCrumbs } from '../components/breadcrumbs.js';
 import * as Links from '../components/links';
 import Page from '../components/page.js';
 import TwoColumns from '../components/twocolumns';
-import { Link } from '../routes';
 import ErrorPage from './error.js';
 
 const AllTextsPage = (props) => {
@@ -55,9 +54,7 @@ const AllTextsPage = (props) => {
       const postfix = ` - ${line.poet.name}: ${line.work.title}`;
       return (
         <div key={line.textId} className="line">
-          <Link to={url}>
-            <a>{line.line}</a>
-          </Link>
+          <Link href={url}>{line.line}</Link>
           {postfix}
           <style jsx>{`
             div.line {
@@ -83,13 +80,7 @@ const AllTextsPage = (props) => {
         fontWeight: l === letter ? 'bold' : 'normal',
       };
       const link =
-        l === letter ? (
-          shownLetter
-        ) : (
-          <Link to={url}>
-            <a>{shownLetter}</a>
-          </Link>
-        );
+        l === letter ? shownLetter : <Link href={url}>{shownLetter}</Link>;
       return (
         <span key={l} style={style}>
           {link}
@@ -120,8 +111,7 @@ const AllTextsPage = (props) => {
       crumbs={[...kalliopeCrumbs(lang), { title: pageTitle }]}
       pageTitle={pageTitle}
       menuItems={tabs}
-      selectedMenuItem={type}
-    >
+      selectedMenuItem={type}>
       <div style={{ lineHeight: 1.5 }}>
         <TwoColumns>{renderedLines}</TwoColumns>
       </div>

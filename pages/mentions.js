@@ -1,4 +1,5 @@
-import React, { Fragment, useState } from 'react';
+import Link from 'next/link';
+import { Fragment, useState } from 'react';
 import * as Client from '../common/client.js';
 import * as OpenGraph from '../common/opengraph.js';
 import { poetsByLastname } from '../common/sorting.js';
@@ -11,7 +12,6 @@ import { poetNameString } from '../components/poetname-helpers.js';
 import PoetName from '../components/poetname.js';
 import { TextInline } from '../components/textcontent.js';
 import TwoColumns from '../components/twocolumns.js';
-import { Link } from '../routes';
 import ErrorPage from './error.js';
 
 const joinedByComma = (items, lang) => {
@@ -72,8 +72,7 @@ const Item = (props) => {
         textIndent: '-30px',
         breakInside: 'avoid',
         lineHeight: 1.4,
-      }}
-    >
+      }}>
       {children}
     </div>
   );
@@ -82,11 +81,7 @@ const Item = (props) => {
 const PoemLink = (props) => {
   const { poem, lang } = props;
   const url = Links.textURL(lang, poem.id);
-  return (
-    <Link route={url}>
-      <a>»{poem.linkTitle}«</a>
-    </Link>
-  );
+  return <Link href={url}>»{poem.linkTitle}«</Link>;
 };
 
 const TranslationsGroupedByTranslated = (props) => {
@@ -233,8 +228,7 @@ const TranslationsSection = (props) => {
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'baseline',
-      }}
-    >
+      }}>
       <div>{sectionTitle('translations', lang)}</div>
       <div style={{ fontSize: '16px' }}>{groupByOptions}</div>
     </div>
@@ -292,8 +286,7 @@ const MentionsPage = (props) => {
       subtitle={_('Henvisninger', lang)}
       menuItems={poetMenu(poet)}
       poet={poet}
-      selectedMenuItem="mentions"
-    >
+      selectedMenuItem="mentions">
       <div style={{ paddingTop: '3px' }}>{sections}</div>
     </Page>
   );

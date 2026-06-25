@@ -44,8 +44,8 @@ const readArtworkFile = async (personId, artworkFilename, collected) => {
         description = safeTrim(safeGetInnerXML(picture));
       }
 
-      const src = `/static/images/${personId}/${pictureId}.jpg`;
-      const size = await imageSizeSync(src.replace(/^\//, ''));
+      const src = `/images/${personId}/${pictureId}.jpg`;
+      const size = await imageSizeSync(`public${src}`);
       const remoteUrl = build_museum_url(picture, collected);
       const museumId = safeGetAttr(picture, 'museum');
       const clipPath = safeGetAttr(picture, 'clip-path');
@@ -129,18 +129,24 @@ const build_artwork = async (collected) => {
           await Promise.all(
             getElementsByTagName(doc, 'picture')
               .filter((picture) => {
-                return safeGetAttr(picture, 'ref') == null;
+                return (
+                  safeGetAttr(picture, 'artwork') == null &&
+                  safeGetAttr(picture, 'portrait') == null &&
+                  safeGetAttr(picture, 'ref') == null
+                );
               })
               .map(async (pictureNode) => {
                 const src = safeGetAttr(pictureNode, 'src');
                 const picture = await get_picture(
                   pictureNode,
-                  `/static/images/${personId}`,
+                  `/images/${personId}`,
                   collected,
                   onError
                 );
                 if (picture == null) {
-                  onError('har et billede uden src- eller ref-attribut.');
+                  onError(
+                    'har et billede uden src-, artwork-, portrait- eller ref-attribut.'
+                  );
                 }
                 const key = `portrait/${personId}/${src}`;
                 return { key, picture };
@@ -180,18 +186,24 @@ const build_artwork = async (collected) => {
               await Promise.all(
                 getElementsByTagName(doc, 'picture')
                   .filter((picture) => {
-                    return safeGetAttr(picture, 'ref') == null;
+                    return (
+                      safeGetAttr(picture, 'artwork') == null &&
+                      safeGetAttr(picture, 'portrait') == null &&
+                      safeGetAttr(picture, 'ref') == null
+                    );
                   })
                   .map(async (pictureNode) => {
                     const src = safeGetAttr(pictureNode, 'src');
                     const picture = await get_picture(
                       pictureNode,
-                      `/static/images/${personId}`,
+                      `/images/${personId}`,
                       collected,
                       onError
                     );
                     if (picture == null) {
-                      onError('har et billede uden src- eller ref-attribut.');
+                      onError(
+                        'har et billede uden src-, artwork-, portrait- eller ref-attribut.'
+                      );
                     }
                     const key = `work/${personId}/${workId}/${src}`;
                     return { key, picture };

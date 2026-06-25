@@ -25,7 +25,18 @@ const rootStaticFiles = [
   '/apple-touch-icon.png', // 180x180
 ];
 
-const worksRedirects = JSON.parse(fs.readFileSync('static/api/redirects.json'));
+const readJSONIfExists = (path, fallback) => {
+  try {
+    return JSON.parse(fs.readFileSync(path));
+  } catch (err) {
+    if (err.code === 'ENOENT') {
+      return fallback;
+    }
+    throw err;
+  }
+};
+
+const worksRedirects = readJSONIfExists('public/api/redirects.json', {});
 const redirects = [
   {
     from: /\/(..)\/ffront.cgi/,
@@ -123,7 +134,7 @@ const redirects = [
   },
   {
     from: /\/..\/work\/([^\/]+)\/(.*?)\.xml/,
-    to: '/static/api/$1/$2.xml',
+    to: '/api/$1/$2.xml',
   },
   {
     from: /(.*)\/winter(.*)/,
@@ -144,7 +155,7 @@ const rootStaticContentTypes = {
 };
 
 const serveRootStaticFile = (pathname, res) => {
-  const path = join(__dirname, 'static', pathname);
+  const path = join(__dirname, 'public', pathname);
   const stream = createReadStream(path);
 
   stream.on('open', () => {
@@ -164,7 +175,15 @@ app.prepare().then(() => {
   createServer((req, res) => {
     const { pathname, query } = parse(req.url, true);
 
-    if (rootStaticFiles.indexOf(pathname) > -1) {
+    if (pathname.indexOf('/static/') === 0) {
+      const location = req.url.replace(/^\/static/, '');
+      res.writeHead(301, { Location: location });
+      res.end();
+      return;
+    } else if (
+      rootStaticFiles.indexOf(pathname) > -1 ||
+      pathname.indexOf('/api/') === 0
+    ) {
       serveRootStaticFile(pathname, res);
       return;
     } else if (

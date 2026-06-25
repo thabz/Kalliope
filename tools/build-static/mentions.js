@@ -53,10 +53,12 @@ const build_person_or_keyword_refs = (collected) => {
       type: 'unknown-original',
     },
     { regexp: /picture[^>]*()artist="([^"]*)"/g, type: 'person' },
-    { regexp: /picture[^>]*()ref="([^"]*)"/g, type: 'pictureref' },
+    {
+      regexp: /picture[^>]*(?:artwork|ref)="([^"]*)"/g,
+      type: 'pictureref',
+    },
   ];
-  // TODO: Led også efter <a person="">xxx</a> og <a poet="">xxxx</a>
-  // toKey is a poet id or a keyword id
+
   const register = (filename, toKey, fromPoemId, type, toPoemId) => {
     const collection = person_or_keyword_refs.get(toKey) || {
       mention: [],
@@ -84,7 +86,9 @@ const build_person_or_keyword_refs = (collected) => {
         });
       }
     } else {
-      throw new Error(`${filename} has xref with unknown type ${type}`);
+      throw new Error(
+        `${filename} ${fromPoemId}: has xref with unknown type ${type}`
+      );
     }
     person_or_keyword_refs.set(toKey, collection);
     person_mentions_dirty.add(toKey);
@@ -107,6 +111,7 @@ const build_person_or_keyword_refs = (collected) => {
           const fromId = safeGetAttr(text, 'id');
           const head = getChildByTagName(text, 'head');
           const body = getChildByTagName(text, 'body');
+          const linkedPoetIds = new Set();
           const notes = [
             ...getElementsByTagNames(head, ['note', 'picture']),
             ...getElementsByTagNames(body, ['note', 'footnote']),
@@ -124,11 +129,12 @@ const build_person_or_keyword_refs = (collected) => {
                     const toPoetId = toText.poetId;
                     if (toPoetId !== poetId) {
                       // Skip self-refs
+                      linkedPoetIds.add(toPoetId);
                       register(filename, toPoetId, fromId, refType, toPoemId);
                     }
                   } else {
                     throw new Error(
-                      `${filename} points to unknown text ${toPoemId}`
+                      `${filename} ${fromId}: points to unknown text ${toPoemId}`
                     );
                   }
                 } else if (rule.type === 'person') {
@@ -138,17 +144,17 @@ const build_person_or_keyword_refs = (collected) => {
                   const toPoetId = match[2];
                   register(filename, toPoetId, fromId, 'translation', null);
                 } else if (rule.type === 'pictureref') {
-                  const pictureRef = match[2];
+                  const pictureRef = match[1];
                   if (!pictureRef.match('/')) {
                     throw new Error(
-                      `${filename} points has illegal picture ref ${pictureRef}. 
+                      `${filename} ${fromId}: points has illegal picture ref ${pictureRef}. 
                       It should be on the form "{artist-id}/{picture-id}" or "kunst/{picture-id}"`
                     );
                   }
                   const picture = collected.artwork.get(pictureRef);
                   if (picture == null) {
                     throw new Error(
-                      `${filename} points to unknown picture ${pictureRef}`
+                      `${filename} ${fromId}: points to unknown picture ${pictureRef}`
                     );
                   }
                   register(filename, picture.artistId, fromId, 'mention');
@@ -159,7 +165,16 @@ const build_person_or_keyword_refs = (collected) => {
           const keywords = safeGetText(head, 'keywords') || '';
           if (keywords.trim().length > 0) {
             keywords.split(',').forEach((keyword) => {
-              register(filename, keyword, fromId, 'mention');
+              const keywordId = keyword.trim();
+              if (keywordId.length === 0) {
+                return;
+              }
+              if (linkedPoetIds.has(keywordId)) {
+                throw new Error(
+                  `${filename} ${fromId}: Overflødig keyword-reference ${keywordId}`
+                );
+              }
+              register(filename, keywordId, fromId, 'mention');
             });
           }
         });
@@ -212,7 +227,7 @@ const build_mentions_json = (collected) => {
       return;
     }
 
-    safeMkdir(`static/api/${poet.id}`);
+    safeMkdir(`public/api/${poet.id}`);
     let data = {
       poet,
       mentions: [],
@@ -290,7 +305,7 @@ const build_mentions_json = (collected) => {
       }
     });
 
-    const outFilename = `static/api/${poet.id}/mentions.json`;
+    const outFilename = `public/api/${poet.id}/mentions.json`;
     console.log(outFilename);
     writeJSON(outFilename, data);
   });

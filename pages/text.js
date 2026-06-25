@@ -1,4 +1,6 @@
-import React, { useContext, useEffect } from 'react';
+import Link from 'next/link';
+import Router from 'next/router';
+import { useContext, useEffect } from 'react';
 import * as Client from '../common/client.js';
 import LangContext from '../common/LangContext.js';
 import * as OpenGraph from '../common/opengraph.js';
@@ -22,7 +24,6 @@ import TextName, { textLinkTitleString } from '../components/textname.js';
 import TOC from '../components/toc.js';
 import { workTitleString } from '../components/workname.js';
 import WrapNonEmpty from '../components/wrapnonempty.js';
-import { Link, Router } from '../routes';
 import ErrorPage from './error.js';
 
 const Bladrer = (props) => {
@@ -34,7 +35,7 @@ const Bladrer = (props) => {
   }
   const onClick = (e) => {
     const url = Links.textURL(lang, target.id);
-    Router.pushRoute(url);
+    Router.push(url);
     window.scrollTo(0, 0);
     e.preventDefault();
   };
@@ -98,98 +99,120 @@ const Refs = ({ refs, contentLang }) => {
   );
 };
 
-class KeywordLink extends React.Component {
-  render() {
-    const { keyword, lang } = this.props;
-    let url = null;
-    switch (keyword.type) {
-      case 'keyword':
-        url = Links.keywordURL(lang, keyword.id);
-        break;
-      case 'poet':
-        url = Links.poetURL(lang, keyword.id);
-        break;
-      case 'subject':
-        return null;
-    }
-    return (
-      <span>
-        <Link route={url}>
-          <a className="keyword-link" title={keyword.title}>
-            {keyword.title}
-          </a>
-        </Link>
-        <style jsx>{`
-          :global(a.keyword-link) {
-            display: inline-block;
-            background-color: hsla(353, 43%, 95%, 1);
-            padding: 1px 5px;
-            border-radius: 4px;
-            margin: 0 4px 2px 0;
-          }
-        `}</style>
-      </span>
-    );
+const KeywordLink = ({ keyword, lang }) => {
+  let url = null;
+  switch (keyword.type) {
+    case 'keyword':
+      url = Links.keywordURL(lang, keyword.id);
+      break;
+    case 'poet':
+      url = Links.poetURL(lang, keyword.id);
+      break;
+    case 'subject':
+      return null;
   }
-}
+  return (
+    <span>
+      <Link href={url} className="keyword-link" title={keyword.title}>
+        {keyword.title}
+      </Link>
+      <style jsx>{`
+        :global(a.keyword-link) {
+          display: inline-block;
+          background-color: hsla(353, 43%, 95%, 1);
+          padding: 1px 5px;
+          border-radius: 4px;
+          margin: 0 4px 2px 0;
+        }
+      `}</style>
+    </span>
+  );
+};
 
-class TextHeading extends React.Component {
-  render() {
-    const { text } = this.props;
-
-    let className = 'text-heading';
-
-    const subtitles = (text.subtitles || []).map((t, i) => {
-      return (
-        <h4 key={'sub' + i} style={{ lineHeight: '1.6' }}>
-          <TextContent contentHtml={t} contentLang={text.content_lang} />
-        </h4>
-      );
-    });
-    let suptitles = (text.suptitles || []).map((t, i) => {
-      return (
-        <h4 key={'sup' + i} style={{ lineHeight: '1.6' }} className="suptitle">
-          <TextContent contentHtml={t} contentLang={text.content_lang} />
-        </h4>
-      );
-    });
-
-    return (
-      <div className={className}>
-        <Stack spacing="15px">
-          <WrapNonEmpty>{suptitles}</WrapNonEmpty>
-          <h2>
-            <TextName text={text} />
-          </h2>
-          <WrapNonEmpty>{subtitles}</WrapNonEmpty>
-        </Stack>
-        <style jsx>{`
-          .text-heading :global(h2) {
-            line-height: 1.6;
-            font-size: 1.4em;
-            font-weight: normal;
-            font-style: italic;
-            margin: 0;
-            padding: 0;
-          }
-          .text-heading :global(h4) {
-            font-size: 1.05em;
-            line-height: 1.6;
-            font-weight: normal;
-            margin: 0;
-            padding: 0;
-          }
-          .text-heading {
-            margin-bottom: 60px;
-          }
-          .text-heading.poem {
-            margin-left: 1.5em;
-          }
-        `}</style>
-      </div>
-    );
+const RelatedDateTexts = ({ texts, lang }) => {
+  if (texts.length === 0) {
+    return null;
   }
-}
+  return (
+    <div className="related-date-texts">
+      {texts.map((text, i) => {
+        const separator =
+          i === texts.length - 1
+            ? ''
+            : i === texts.length - 2
+            ? ` ${_('og', lang)} `
+            : ', ';
+        return (
+          <span key={text.id}>
+            {text.poetName}:
+            <Link href={Links.textURL(lang, text.id)}>»{text.title}«</Link>
+            {separator}
+          </span>
+        );
+      })}{' '}
+      {_('knytter sig til samme dato.', lang)}
+      <style jsx>{`
+        .related-date-texts {
+          margin-bottom: 30px;
+        }
+      `}</style>
+    </div>
+  );
+};
+
+const TextHeading = ({ text }) => {
+  let className = 'text-heading';
+
+  const subtitles = (text.subtitles || []).map((t, i) => {
+    return (
+      <h4 key={'sub' + i} style={{ lineHeight: '1.6' }}>
+        <TextContent contentHtml={t} contentLang={text.content_lang} />
+      </h4>
+    );
+  });
+  let suptitles = (text.suptitles || []).map((t, i) => {
+    return (
+      <h4 key={'sup' + i} style={{ lineHeight: '1.6' }} className="suptitle">
+        <TextContent contentHtml={t} contentLang={text.content_lang} />
+      </h4>
+    );
+  });
+
+  return (
+    <div className={className}>
+      <Stack spacing="15px">
+        <WrapNonEmpty>{suptitles}</WrapNonEmpty>
+        <h2>
+          <TextName text={text} />
+        </h2>
+        <WrapNonEmpty>{subtitles}</WrapNonEmpty>
+      </Stack>
+      <style jsx>{`
+        .text-heading :global(h2) {
+          line-height: 1.6;
+          font-size: 1.4em;
+          font-weight: normal;
+          font-style: italic;
+          margin: 0;
+          padding: 0;
+        }
+        .text-heading :global(h4) {
+          font-size: 1.05em;
+          line-height: 1.6;
+          font-weight: normal;
+          margin: 0;
+          padding: 0;
+        }
+        .text-heading {
+          margin-bottom: 60px;
+        }
+        .text-heading.poem {
+          margin-left: 1.5em;
+        }
+      `}</style>
+    </div>
+  );
+};
 
 const TextPage = (props) => {
   useEffect(() => {
@@ -259,7 +282,7 @@ const TextPage = (props) => {
         lang,
         {
           poetId: poet.id,
-          poetName: poetNameString(poet, false, true),
+          poetName: poetNameString(poet, false, true, lang),
         }
       );
       return (
@@ -269,7 +292,7 @@ const TextPage = (props) => {
               contentHtml={[[html, { html: true }]]}
               contentLang={lang}
             />
-            <HelpKalliope unknownOriginalBy={poet} />
+            <HelpKalliope unknownOriginalBy={poet} lang={lang} />
           </>
         </Note>
       );
@@ -406,11 +429,13 @@ const TextPage = (props) => {
     text.pictures.length > 0 ||
     notes.length > 0 ||
     text.keywords.length > 0 ||
+    (text.related_date_texts || []).length > 0 ||
     textPictures.length > 0
   ) {
     sidebar = (
       <div>
         {renderedNotes}
+        <RelatedDateTexts texts={text.related_date_texts || []} lang={lang} />
         <FootnoteList />
         <Refs refs={text.refs} contentLang={text.content_lang} />
         {renderedVariants}
@@ -423,13 +448,13 @@ const TextPage = (props) => {
   let ogTitle = null;
   if (work.id !== 'andre') {
     ogTitle = _(`{poetName}: »{poemTitle}« fra {workTitle}`, lang, {
-      poetName: poetNameString(poet, false, false),
+      poetName: poetNameString(poet, false, false, lang),
       poemTitle: textLinkTitleString(text),
-      workTitle: workTitleString(work),
+      workTitle: workTitleString(work, lang),
     });
   } else {
     ogTitle = _(`{poetName}: »{poemTitle}«`, lang, {
-      poetName: poetNameString(poet, false, false),
+      poetName: poetNameString(poet, false, false, lang),
       poemTitle: textLinkTitleString(text),
     });
   }
@@ -511,8 +536,7 @@ const TextPage = (props) => {
       pageTitle={<PoetName poet={poet} includePeriod />}
       pageSubtitle={_('Værker', lang)}
       menuItems={poetMenu(poet)}
-      selectedMenuItem="works"
-    >
+      selectedMenuItem="works">
       <FootnoteContainer key={text.id}>
         <SidebarSplit sidebar={sidebar}>
           <div>
@@ -523,8 +547,7 @@ const TextPage = (props) => {
                 className="text-content"
                 style={{
                   marginLeft: shouldIndentTitle ? '1.5em' : 0,
-                }}
-              >
+                }}>
                 <TextHeading text={text} />
               </div>
               <div>{body}</div>

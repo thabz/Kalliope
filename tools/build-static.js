@@ -4,6 +4,7 @@ const path = require('path');
 const mkdirp = require('mkdirp');
 const Paths = require('../common/paths.js');
 const CommonData = require('../common/commondata.js');
+const { extractYear } = require('../common/dates.js');
 const {
   isFileModified,
   markFileDirty,
@@ -27,6 +28,7 @@ const {
   build_poets_first_pass,
   build_poets_json,
   build_poets_by_country_json,
+  build_literary_periods_json,
 } = require('./build-static/poets.js');
 const {
   build_dict_first_pass,
@@ -112,6 +114,42 @@ let collected = {
 // Ready after second pass
 let collected_works = new Map();
 
+const parseAliases = (value) => {
+  if (value == null) {
+    return [];
+  }
+  return value
+    .split(',')
+    .map((alias) => alias.trim())
+    .filter((alias) => alias.length > 0);
+};
+
+const buildTextAliasRedirects = (redirects, texts) => {
+  const textIds = new Set(texts.keys());
+  const aliases = new Map();
+
+  texts.forEach((text) => {
+    (text.aliases || []).forEach((alias) => {
+      if (alias === text.id || textIds.has(alias)) {
+        throw new Error(
+          `Text alias "${alias}" conflicts with an existing text id.`
+        );
+      }
+      if (aliases.has(alias)) {
+        throw new Error(
+          `Text alias "${alias}" is used by both ${aliases.get(alias)} and ${
+            text.id
+          }.`
+        );
+      }
+      aliases.set(alias, text.id);
+      ['da', 'en'].forEach((lang) => {
+        redirects[`/${lang}/text/${alias}`] = `/${lang}/text/${text.id}`;
+      });
+    });
+  });
+};
+
 const build_bio_json = async (collected) => {
   return Promise.all(
     Array.from(collected.poets.entries()).map(async (entry) => {
@@ -132,7 +170,7 @@ const build_bio_json = async (collected) => {
         return;
       }
 
-      safeMkdir(`static/api/${poet.id}`);
+      safeMkdir(`public/api/${poet.id}`);
       const bioXmlPath = `fdirs/${poet.id}/bio.xml`;
       const data = {
         poet,
@@ -149,7 +187,7 @@ const build_bio_json = async (collected) => {
       }
       data.timeline = await build_poet_timeline_json(poet, collected);
       data.portraits = await build_portraits_json(poet, collected);
-      const destFilename = `static/api/${poet.id}/bio.json`;
+      const destFilename = `public/api/${poet.id}/bio.json`;
       console.log(destFilename);
       writeJSON(destFilename, data);
     }),
@@ -199,6 +237,7 @@ const handle_text = async (
 
   const textId = safeGetAttr(text, 'id');
   const head = getChildByTagName(text, 'head');
+  const textDates = extractDates(head);
   const firstline = extractTitle(head, 'firstline');
   let title = extractTitle(head, 'title') || firstline; // {title: xxx, prefix: xxx}
   let indextitle = extractTitle(head, 'indextitle') || title;
@@ -273,6 +312,7 @@ const handle_text = async (
         ],
       ];
     });
+  const relatedDateTexts = relatedTextsForDates(textId, textDates, collected);
 
   const foldername = Paths.textFolder(textId);
   const prev_next = resolve_prev_next(textId);
@@ -393,9 +433,10 @@ const handle_text = async (
       keywords: keywordsArray || [],
       refs: refsArray,
       variants: variantsArray,
+      related_date_texts: relatedDateTexts,
       pictures: await get_pictures(
         head,
-        `/static/images/${poetId}`,
+        `/images/${poetId}`,
         `fdirs/${poetId}/${workId}.xml:${textId}`,
         collected,
       ),
@@ -535,7 +576,7 @@ const handle_work = async (work) => {
   const notes = get_notes(workhead, collected);
   const pictures = get_pictures(
     workhead,
-    `/static/images/${poetId}`,
+    `/images/${poetId}`,
     `fdirs/${poetId}/${workId}`,
     collected,
   );
@@ -580,6 +621,112 @@ const handle_work = async (work) => {
   return { lines, toc, notes, pictures };
 };
 
+const validateWorkYear = (year, filename) => {
+  if (year == null) {
+    return;
+  }
+  if (year === '?') {
+    throw new Error(`${filename} has unknown year marker in <year>.`);
+  }
+  const [, numericYear] = extractYear(year, null);
+  if (numericYear == null) {
+    throw new Error(`${filename} has invalid <year>: ${year}`);
+  }
+};
+
+const removeWorkDates = (dates, poetId, workId) => {
+  dates.forEach((items, date) => {
+    const filtered = items.filter(
+      (item) => item.poetId !== poetId || item.workId !== workId
+    );
+    if (filtered.length === 0) {
+      dates.delete(date);
+    } else {
+      dates.set(date, filtered);
+    }
+  });
+};
+
+const addTextDates = (dates, text, textDates) => {
+  ['written', 'performed', 'event'].forEach((type) => {
+    const date = textDates[type] == null ? null : textDates[type].trim();
+    if (date == null || date.length === 0) {
+      return;
+    }
+    const items = dates.get(date) || [];
+    const { type: textType, ...textData } = text;
+    items.push({
+      dateType: type,
+      textType,
+      ...textData,
+    });
+    dates.set(date, items);
+  });
+};
+
+const sortCollectedDates = (dates) => {
+  const sorted = new Map(
+    Array.from(dates.entries()).sort(([dateA], [dateB]) =>
+      dateA.localeCompare(dateB)
+    )
+  );
+  sorted.forEach((items, date) => {
+    sorted.set(
+      date,
+      items.sort((a, b) => {
+        if (a.poetId !== b.poetId) {
+          return a.poetId.localeCompare(b.poetId);
+        }
+        if (a.workId !== b.workId) {
+          return a.workId.localeCompare(b.workId);
+        }
+        if (a.id !== b.id) {
+          return a.id.localeCompare(b.id);
+        }
+        return a.dateType.localeCompare(b.dateType);
+      })
+    );
+  });
+  return sorted;
+};
+
+const relatedTextsForDates = (textId, textDates, collected) => {
+  const variantIds = new Set(resolve_variants(textId, collected) || [textId]);
+  variantIds.add(textId);
+
+  const result = [];
+  const seen = new Set();
+  ['written', 'performed', 'event'].forEach((dateType) => {
+    const date = textDates[dateType] == null ? null : textDates[dateType].trim();
+    if (date == null || date.length === 0) {
+      return;
+    }
+    const items = collected.dates.get(date) || [];
+    items.forEach((item) => {
+      const itemVariantIds = resolve_variants(item.id, collected) || [item.id];
+      const itemVariantKey = itemVariantIds[0];
+      if (
+        itemVariantIds.some((variantId) => variantIds.has(variantId)) ||
+        seen.has(itemVariantKey)
+      ) {
+        return;
+      }
+      seen.add(itemVariantKey);
+      result.push({
+        date,
+        dateType: item.dateType,
+        id: item.id,
+        title: item.title,
+        firstline: item.firstline,
+        poetId: item.poetId,
+        poetName: poetName(collected.poets.get(item.poetId)),
+        workId: item.workId,
+      });
+    });
+  });
+  return result;
+};
+
 // Constructs collected.works and collected.texts to
 // be used for resolving <xref poem="">, etc.
 const works_first_pass = (collected) => {
@@ -591,9 +738,12 @@ const works_first_pass = (collected) => {
     globalForceReload ?
       new Map()
     : new Map(loadCachedJSON('collected.works') || []);
+  const dates = globalForceReload
+    ? new Map()
+    : new Map(loadCachedJSON('collected.dates') || []);
 
   let found_changes = false;
-  const force_reload = texts.size === 0 || works.size === 0;
+  const force_reload = texts.size === 0 || works.size === 0 || dates.size === 0;
 
   let parentIdsToFillIn = new Map(); // Bruges til nedenstående second-pass som klistrer parent-data på
 
@@ -624,10 +774,11 @@ const works_first_pass = (collected) => {
       const linktitle = replaceDashes(safeGetText(head, 'linktitle')) || title;
       const breadcrumbtitle = safeGetText(head, 'breadcrumbtitle') || title;
       const year = safeGetText(head, 'year');
+      validateWorkYear(year, workFilename);
       const status = safeGetAttr(work, 'status');
       const type = safeGetAttr(work, 'type');
       const subtitles = extractSubtitles(head, 'subtitle', collected);
-      const dates = extractDates(head);
+      const workDates = extractDates(head);
       // Sanity check
       if (safeGetAttr(work, 'author') !== poetId) {
         throw new Error(
@@ -651,12 +802,19 @@ const works_first_pass = (collected) => {
         status,
         type,
         has_content: workTexts.length > 0,
-        published: dates.published || year,
+        published: workDates.published || year,
       });
 
       if (parentId != null) {
         parentIdsToFillIn.set(fullWorkId, `${poetId}/${parentId}`);
       }
+
+      Array.from(texts.entries()).forEach(([cachedTextId, text]) => {
+        if (text.poetId === poetId && text.workId === workId) {
+          texts.delete(cachedTextId);
+        }
+      });
+      removeWorkDates(dates, poetId, workId);
 
       workTexts.forEach((part) => {
         const textId = safeGetAttr(part, 'id');
@@ -671,6 +829,8 @@ const works_first_pass = (collected) => {
         const title = extractTitle(head, 'title');
         const linktitle = extractTitle(head, 'linktitle');
         const indextitle = extractTitle(head, 'indextitle');
+        const aliases = parseAliases(safeGetAttr(part, 'aliases'));
+        const textDates = extractDates(head);
 
         const linkTitle = linktitle || title || firstline;
         const indexTitle = indextitle || title || firstline;
@@ -682,16 +842,19 @@ const works_first_pass = (collected) => {
             )} ${textId} without title.`,
           );
         }
-        texts.set(textId, {
+        const text = {
           id: textId,
           title: replaceDashes(linkTitle.title),
           firstline: replaceDashes(firstline == null ? null : firstline.title),
           indexTitle: replaceDashes(indexTitle.title),
           linkTitle: replaceDashes(linkTitle.title),
+          aliases,
           type: tagName(part),
           poetId: poetId,
           workId: workId,
-        });
+        };
+        texts.set(textId, text);
+        addTextDates(dates, text, textDates);
       });
     });
   });
@@ -707,15 +870,16 @@ const works_first_pass = (collected) => {
   if (found_changes) {
     writeCachedJSON('collected.texts', Array.from(texts));
     writeCachedJSON('collected.works', Array.from(works));
+    writeCachedJSON('collected.dates', Array.from(sortCollectedDates(dates)));
   }
-  return { works, texts };
+  return { works, texts, dates };
 };
 
 const works_second_pass = async (collected) => {
   return Promise.all(
     Array.from(collected.poets.entries()).map(async (entry) => {
       const [poetId, poet] = entry;
-      safeMkdir(`static/api/${poetId}`);
+      safeMkdir(`public/api/${poetId}`);
 
       return Promise.all(
         collected.workids.get(poetId).map(async (workId) => {
@@ -792,7 +956,7 @@ const works_second_pass = async (collected) => {
 
 const build_poet_works_json = (collected) => {
   collected.poets.forEach((poet, poetId) => {
-    safeMkdir(`static/api/${poetId}`);
+    safeMkdir(`public/api/${poetId}`);
 
     const workFilenames = collected.workids
       .get(poetId)
@@ -814,9 +978,9 @@ const build_poet_works_json = (collected) => {
         return;
       }
 
-      // Copy the xml-file into static to allow for xml download.
+      // Copy the xml-file into public to allow for xml download.
       fs.createReadStream(filename).pipe(
-        fs.createWriteStream(`static/api/${poetId}/${workId}.xml`),
+        fs.createWriteStream(`public/api/${poetId}/${workId}.xml`)
       );
       let doc = loadXMLDoc(filename);
       const work = getChildByTagName(doc, 'kalliopework');
@@ -842,14 +1006,14 @@ const build_poet_works_json = (collected) => {
       works,
       artwork,
     };
-    const worksOutFilename = `static/api/${poetId}/works.json`;
+    const worksOutFilename = `public/api/${poetId}/works.json`;
     console.log(worksOutFilename);
     writeJSON(worksOutFilename, objectToWrite);
   });
 };
 
 const build_news = (collected) => {
-  ['da', 'en'].forEach((lang) => {
+  ['da', 'en', 'fr', 'de'].forEach((lang) => {
     const path = `data/news_${lang}.xml`;
     if (!isFileModified(path)) {
       return;
@@ -871,7 +1035,7 @@ const build_news = (collected) => {
         content_html: htmlToXml(safeGetInnerXML(body).trim(), collected),
       });
     });
-    const outfile = `static/api/news_${lang}.json`;
+    const outfile = `public/api/news_${lang}.json`;
     writeJSON(outfile, list);
     console.log(outfile);
   });
@@ -879,24 +1043,25 @@ const build_news = (collected) => {
 
 const build_redirects_json = (collected) => {
   let redirects = {};
+  buildTextAliasRedirects(redirects, collected.texts);
   collected.poets.forEach((poet, poetId) => {
     if (!poet.has_works && !poet.has_artwork) {
       redirects[`/en/works/${poetId}`] = `/en/bio/${poetId}`;
       redirects[`/da/works/${poetId}`] = `/da/bio/${poetId}`;
     }
   });
-  writeJSON('static/api/redirects.json', redirects);
+  writeJSON('public/api/redirects.json', redirects);
 };
 
 const build_image_thumbnails = async () => {
   return Promise.all([
-    buildThumbnails('static/images', isFileModified),
-    buildThumbnails('static/kunst', isFileModified),
+    buildThumbnails('public/images', isFileModified),
+    buildThumbnails('public/kunst', isFileModified),
   ]);
 };
 
 const main = async () => {
-  safeMkdir(`static/api`);
+  safeMkdir(`public/api`);
   collected.museums = await b('build_museums', build_museums, collected);
   collected.workids = await b('build_poet_workids', build_poet_workids);
   collected.poets = await b(
@@ -904,13 +1069,14 @@ const main = async () => {
     build_poets_first_pass,
     collected,
   );
-  const { works, texts } = await b(
+  const { works, texts, dates } = await b(
     'works_first_pass',
     works_first_pass,
     collected,
   );
   collected.works = works;
   collected.texts = texts;
+  collected.dates = dates;
   collected.artwork = await b('build_artwork', build_artwork, collected);
   await b(
     'build_person_or_keyword_refs',
@@ -927,6 +1093,11 @@ const main = async () => {
     'build_poets_by_country_json',
     build_poets_by_country_json,
     collected,
+  );
+  await b(
+    'build_literary_periods_json',
+    build_literary_periods_json,
+    collected
   );
   await b('build_museum_pages', build_museum_pages, collected);
   collected.variants = await b('build_variants', build_variants, collected);

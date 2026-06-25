@@ -1,8 +1,9 @@
-import React from 'react';
 import * as Client from '../common/client.js';
 import * as OpenGraph from '../common/opengraph.js';
 import _ from '../common/translations.js';
 import { workCrumbs } from '../components/breadcrumbs.js';
+import { formattedDate } from '../components/formatteddate.js';
+import * as Links from '../components/links.js';
 import { poetMenu } from '../components/menu.js';
 import Note from '../components/note.js';
 import Page from '../components/page.js';
@@ -20,7 +21,19 @@ import WorkSubtitles from '../components/worksubtitles.js';
 import ErrorPage from './error.js';
 
 const WorkPage = (props) => {
-  const { lang, poet, work, notes, pictures, toc, subworks, error } = props;
+  const {
+    lang,
+    poet,
+    work,
+    notes,
+    pictures,
+    toc,
+    subworks,
+    modified,
+    prev,
+    next,
+    error,
+  } = props;
 
   if (error) {
     return <ErrorPage error={error} lang={lang} message="Ukendt værk" />;
@@ -56,13 +69,25 @@ const WorkPage = (props) => {
         er endnu ikke fuldstændig.
       </div>
     ) : null;
+  const modifiedDate =
+    modified != null ? (
+      <div className="modified">
+        {_('Sidst ændret', lang)} {formattedDate(modified)}.
+      </div>
+    ) : null;
   let sidebar = null;
-  if (pictures.length > 0 || notes.length > 0 || completedStatus != null) {
+  if (
+    pictures.length > 0 ||
+    notes.length > 0 ||
+    completedStatus != null ||
+    modifiedDate != null
+  ) {
     sidebar = (
       <div>
         {renderedPictures}
         {renderedNotes}
         {completedStatus}
+        {modifiedDate}
       </div>
     );
   }
@@ -85,15 +110,32 @@ const WorkPage = (props) => {
     ogDescription = subworks.map((part) => part.toctitle).join(', ');
   }
 
-  let sectixonTitles = null;
+  let paging = {};
+  if (prev != null) {
+    paging.prev = {
+      url: Links.workURL(lang, poet.id, prev.id),
+      title: workTitleString(prev, lang),
+    };
+  }
+  if (next != null) {
+    paging.next = {
+      url: Links.workURL(lang, poet.id, next.id),
+      title: workTitleString(next, lang),
+    };
+  }
 
   return (
     <Page
-      headTitle={`${workTitleString(work)} - ${poetNameString(
-        poet
+      headTitle={`${workTitleString(work, lang)} - ${poetNameString(
+        poet,
+        false,
+        false,
+        lang
       )} - Kalliope`}
       ogTitle={
-        poetNameString(poet, false, false) + ': ' + workTitleString(work)
+        poetNameString(poet, false, false, lang) +
+        ': ' +
+        workTitleString(work, lang)
       }
       ogImage={OpenGraph.poetImage(poet)}
       ogDescription={ogDescription}
@@ -101,10 +143,10 @@ const WorkPage = (props) => {
       crumbs={workCrumbs(lang, poet, work)}
       pageTitle={<PoetName poet={poet} includePeriod />}
       pageSubtitle={_('Værker', lang)}
+      paging={paging}
       menuItems={poetMenu(poet)}
       poet={poet}
-      selectedMenuItem="works"
-    >
+      selectedMenuItem="works">
       <SidebarSplit sidebar={sidebar}>
         <div>
           <SubHeading>
@@ -115,6 +157,11 @@ const WorkPage = (props) => {
           <style jsx>{`
             :global(.nodata) {
               padding: 30px 0;
+            }
+            .modified {
+              color: #777;
+              font-size: 0.9em;
+              margin-top: 30px;
             }
           `}</style>
         </div>
@@ -133,6 +180,9 @@ WorkPage.getInitialProps = async ({ query: { lang, poetId, workId } }) => {
     subworks: json.subworks,
     notes: json.notes,
     pictures: json.pictures,
+    modified: json.modified,
+    prev: json.prev,
+    next: json.next,
     error: json.error,
   };
 };
