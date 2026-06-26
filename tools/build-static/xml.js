@@ -1,17 +1,31 @@
-const { DOMParser, XMLSerializer } = require('@xmldom/xmldom');
+const {
+  DOMParser,
+  XMLSerializer,
+  onWarningStopParsing,
+} = require('@xmldom/xmldom');
 const { loadText } = require('../libs/helpers.js');
 const { entityMap } = require('./entities.js');
 
+const xmlEntities = new Set(['amp', 'apos', 'gt', 'lt', 'quot']);
+
+const toCharacterReferences = text =>
+  Array.from(text)
+    .map(ch => `&#${ch.codePointAt(0)};`)
+    .join('');
+
 const parseXMLFragment = xmlString => {
   const s = xmlString.replace(/&([A-Za-z]+);/g, (m, e) => {
+    if (xmlEntities.has(e)) {
+      return m;
+    }
     const replacement = entityMap[e];
     if (replacement == null) {
       throw `Unknown entity &${e};`;
     }
-    return replacement;
+    return toCharacterReferences(replacement);
   });
   return new DOMParser({
-    onError() {},
+    onError: onWarningStopParsing,
   }).parseFromString(s, 'text/xml');
 };
 

@@ -51,6 +51,17 @@ describe('XML parser', () => {
     expect(prose).toEqual('Æble');
   });
 
+  it('keeps XML entities escaped until parsing', () => {
+    const entityText = getElementsByTagName(doc, 'prose')[1];
+    expect(safeGetText(entityText)).toEqual('Æble &c. <i>ikke kursiv</i>');
+    expect(safeGetInnerXML(entityText)).toEqual(
+      'Æble &amp;c. &lt;i&gt;ikke kursiv&lt;/i&gt;'
+    );
+
+    const urlText = getElementsByTagName(doc, 'prose')[2];
+    expect(safeGetText(urlText)).toEqual('https://example.test/?a=1&b=2');
+  });
+
   it('extract outer xml', () => {
     const subtitle = getElementByTagName(doc, 'subtitle');
     const subtitleOuter = safeGetOuterXML(subtitle);
@@ -78,20 +89,24 @@ describe('XML parser', () => {
     });
 
     const allChildren = getChildrenByTagNames(body, ['poem', 'prose']);
-    expect(allChildren.length).toEqual(3);
+    expect(allChildren.length).toEqual(5);
     expect(tagName(allChildren[0])).toEqual('poem');
     expect(tagName(allChildren[1])).toEqual('prose');
-    expect(tagName(allChildren[2])).toEqual('poem');
+    expect(tagName(allChildren[2])).toEqual('prose');
+    expect(tagName(allChildren[3])).toEqual('prose');
+    expect(tagName(allChildren[4])).toEqual('poem');
   });
 
   it('understands direct children in order', () => {
     const body = getElementByTagName(doc, 'body');
     const children = getChildren(body);
-    expect(children.length).toEqual(4);
+    expect(children.length).toEqual(6);
     expect(tagName(children[0])).toEqual('poem');
     expect(tagName(children[1])).toEqual('prose');
-    expect(tagName(children[2])).toEqual('poem');
-    expect(tagName(children[3])).toEqual('section');
+    expect(tagName(children[2])).toEqual('prose');
+    expect(tagName(children[3])).toEqual('prose');
+    expect(tagName(children[4])).toEqual('poem');
+    expect(tagName(children[5])).toEqual('section');
   });
 
   it('understands multiple children', () => {
@@ -112,7 +127,7 @@ describe('XML parser', () => {
     expect(body).not.toBeNull();
     const children = getElementsByTagNames(body, ['poem', 'prose']);
     expect(children).not.toBeNull();
-    expect(children.length).toEqual(10);
+    expect(children.length).toEqual(12);
   });
 
   it('recursive find returns sorted', () => {
@@ -121,27 +136,31 @@ describe('XML parser', () => {
     expect(body).not.toBeNull();
     const children = getElementsByTagNames(body, ['poem', 'prose']);
     expect(children).not.toBeNull();
-    expect(children.length).toEqual(10);
+    expect(children.length).toEqual(12);
     expect(tagName(children[0])).toEqual('poem');
     expect(tagName(children[1])).toEqual('prose');
-    expect(tagName(children[2])).toEqual('poem');
-    expect(tagName(children[3])).toEqual('poem');
-    expect(tagName(children[4])).toEqual('prose');
+    expect(tagName(children[2])).toEqual('prose');
+    expect(tagName(children[3])).toEqual('prose');
+    expect(tagName(children[4])).toEqual('poem');
     expect(tagName(children[5])).toEqual('poem');
     expect(tagName(children[6])).toEqual('prose');
     expect(tagName(children[7])).toEqual('poem');
-    expect(tagName(children[8])).toEqual('poem');
-    expect(tagName(children[9])).toEqual('prose');
+    expect(tagName(children[8])).toEqual('prose');
+    expect(tagName(children[9])).toEqual('poem');
+    expect(tagName(children[10])).toEqual('poem');
+    expect(tagName(children[11])).toEqual('prose');
     expect(safeGetAttr(children[0], 'pos')).toEqual('1');
     expect(safeGetAttr(children[1], 'pos')).toEqual('2');
-    expect(safeGetAttr(children[2], 'pos')).toEqual('3');
-    expect(safeGetAttr(children[3], 'pos')).toEqual('4');
-    expect(safeGetAttr(children[4], 'pos')).toEqual('5');
-    expect(safeGetAttr(children[5], 'pos')).toEqual('6');
-    expect(safeGetAttr(children[6], 'pos')).toEqual('7');
-    expect(safeGetAttr(children[7], 'pos')).toEqual('8');
-    expect(safeGetAttr(children[8], 'pos')).toEqual('9');
-    expect(safeGetAttr(children[9], 'pos')).toEqual('10');
+    expect(safeGetAttr(children[2], 'pos')).toEqual('2a');
+    expect(safeGetAttr(children[3], 'pos')).toEqual('2b');
+    expect(safeGetAttr(children[4], 'pos')).toEqual('3');
+    expect(safeGetAttr(children[5], 'pos')).toEqual('4');
+    expect(safeGetAttr(children[6], 'pos')).toEqual('5');
+    expect(safeGetAttr(children[7], 'pos')).toEqual('6');
+    expect(safeGetAttr(children[8], 'pos')).toEqual('7');
+    expect(safeGetAttr(children[9], 'pos')).toEqual('8');
+    expect(safeGetAttr(children[10], 'pos')).toEqual('9');
+    expect(safeGetAttr(children[11], 'pos')).toEqual('10');
   });
 
   it('empty is not null', () => {
