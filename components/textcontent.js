@@ -4,7 +4,7 @@ import CommonData from '../common/commondata.js';
 import LangContext from '../common/LangContext.js';
 import { Footnote } from './footnotes.js';
 import * as Links from './links';
-var DOMParser = require('xmldom').DOMParser;
+var DOMParser = require('@xmldom/xmldom').DOMParser;
 
 // Render xml
 const renderXmlString = (inputString) => {

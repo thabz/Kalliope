@@ -1,4 +1,4 @@
-const { DOMParser, XMLSerializer } = require('xmldom');
+const { DOMParser, XMLSerializer } = require('@xmldom/xmldom');
 const { loadText } = require('../libs/helpers.js');
 const { entityMap } = require('./entities.js');
 
@@ -10,7 +10,9 @@ const parseXMLFragment = xmlString => {
     }
     return replacement;
   });
-  return new DOMParser().parseFromString(s, 'text/xml');
+  return new DOMParser({
+    onError() {},
+  }).parseFromString(s, 'text/xml');
 };
 
 const loadXMLDoc = filename => {

@@ -30,6 +30,7 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "@xmldom/xmldom": "^0.9.10",
     "async": "^2.5.0",
     "entities": "^1.1.1",
     "full-icu": "^1.2.1",
@@ -41,8 +42,7 @@
     "next": "^16.2.9",
     "node-fetch": "^1.7.1",
     "p-limit": "^2.2.2",
-    "regenerator-runtime": "^0.13.1",
-    "xmldom": "^0.1.31"
+    "regenerator-runtime": "^0.13.1"
   },
   "author": "Jesper Christensen",
   "license": "MIT"
