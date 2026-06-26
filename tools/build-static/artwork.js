@@ -15,13 +15,18 @@ const {
   getChildByTagName,
   safeTrim,
 } = require('./xml.js');
-const { get_picture } = require('./parsing.js');
+const { get_picture, validate_picture_attrs } = require('./parsing.js');
 const { build_museum_url } = require('./museums.js');
 
 const readArtworkFile = async (personId, artworkFilename, collected) => {
   const artworksDoc = loadXMLDoc(artworkFilename);
+  const onError = (message) => {
+    throw `${artworkFilename}: ${message}`;
+  };
   return await Promise.all(
     getElementsByTagName(artworksDoc, 'picture').map(async (picture) => {
+      validate_picture_attrs(picture, onError);
+
       const pictureId = safeGetAttr(picture, 'id');
       const subjectAttr = safeGetAttr(picture, 'subject');
       let subjects = subjectAttr != null ? subjectAttr.split(',') : [];
