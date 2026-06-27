@@ -340,7 +340,8 @@ const renderXmlString = (inputString) => {
   };
 
   const frag = new DOMParser().parseFromString(
-    '<content>' + inputString + '</content>'
+    '<content>' + inputString + '</content>',
+    'text/xml'
   );
   return handle_nodes(frag.childNodes);
 };
