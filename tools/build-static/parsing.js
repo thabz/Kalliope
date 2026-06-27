@@ -13,6 +13,7 @@ const {
 } = require('./xml.js');
 const { poetName } = require('./formatting.js');
 const { imageSizeSync } = require('./image.js');
+const { mapLimit } = require('./concurrency.js');
 
 const publicPathFromSrc = src => `public${src}`;
 
@@ -254,10 +255,11 @@ const get_pictures = (head, srcPrefix, xmlFilename, collected) => {
   const onError = message => {
     throw `${xmlFilename}: ${message}`;
   };
-  return Promise.all(
-    getElementsByTagName(head, 'picture').map(async p => {
+  return mapLimit(
+    getElementsByTagName(head, 'picture'),
+    async p => {
       return await get_picture(p, srcPrefix, collected, onError);
-    })
+    }
   );
 };
 

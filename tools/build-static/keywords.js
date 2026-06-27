@@ -13,6 +13,7 @@ const {
   safeGetAttr,
   getChildByTagName,
 } = require('./xml.js');
+const { mapLimit } = require('./concurrency.js');
 
 const build_keywords = async collected => {
   safeMkdir('public/api/keywords');
@@ -25,8 +26,9 @@ const build_keywords = async collected => {
   if (collected_keywords.size === 0 || isFileModified(...filenames)) {
     collected_keywords = new Map();
     let keywords_toc = new Array();
-    await Promise.all(
-      filenames.map(async path => {
+    await mapLimit(
+      filenames,
+      async path => {
         if (!path.endsWith('.xml')) {
           return;
         }
@@ -78,7 +80,7 @@ const build_keywords = async collected => {
         console.log(outFilename);
         writeJSON(outFilename, data);
         collected_keywords.set(id, { id, title });
-      })
+      }
     );
     writeCachedJSON('collected.keywords', Array.from(collected_keywords));
     const outFilename = `public/api/keywords.json`;

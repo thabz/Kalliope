@@ -7,6 +7,7 @@ const {
   fileExists,
 } = require('../libs/helpers.js');
 const { collect_git_modified_dates } = require('./git.js');
+const { mapLimit } = require('./concurrency.js');
 const { extractTitle, get_notes, get_pictures } = require('./parsing.js');
 const { sortWorks } = require('../../common/worksort.js');
 const {
@@ -131,72 +132,54 @@ const build_works_toc = async (collected) => {
     return { lines, toc, subworks, notes, pictures };
   };
 
-  return Promise.all(
-    Array.from(collected.poets.entries()).map(async (entry) => {
-      const [poetId, poet] = entry;
-      safeMkdir(`public/api/${poetId}`);
-      const workFilenames = workFilesForPoet(poetId);
-      const poetWorksModified = isFileModified(
-        `fdirs/${poetId}/info.xml`,
-        ...workFilenames
-      );
-      const pageWorks = worksForPaging(poetId, poet);
+  const poetData = new Map();
+  const jobs = [];
+  collected.poets.forEach((poet, poetId) => {
+    safeMkdir(`public/api/${poetId}`);
+    const workFilenames = workFilesForPoet(poetId);
+    const poetWorksModified = isFileModified(
+      `fdirs/${poetId}/info.xml`,
+      ...workFilenames
+    );
+    const pageWorks = worksForPaging(poetId, poet);
+    poetData.set(poetId, { pageWorks, poet, poetWorksModified });
+    collected.workids.get(poetId).forEach((workId) => {
+      jobs.push({ poetId, workId });
+    });
+  });
 
-      return Promise.all(
-        collected.workids.get(poetId).map(async (workId) => {
-          const filename = `fdirs/${poetId}/${workId}.xml`;
-          if (!fileExists(filename)) {
-            return;
-          }
-          if (!poetWorksModified && !isFileModified(filename)) {
-            return;
-          }
-          let doc = loadXMLDoc(filename);
-          const work = getChildByTagName(doc, 'kalliopework');
-          const status = safeGetAttr(work, 'status');
-          const type = safeGetAttr(work, 'type');
-          const parentId = safeGetAttr(work, 'parent');
-          const head = getChildByTagName(work, 'workhead');
-          const title = safeGetText(head, 'title');
-          const toctitle = safeGetText(head, 'toctitle') || title;
-          const linktitle = safeGetText(head, 'linktitle') || title;
-          const breadcrumbtitle = safeGetText(head, 'breadcrumbtitle') || title;
-          const year = safeGetText(head, 'year');
-          const data = {
-            id: workId,
-            title,
-            toctitle,
-            breadcrumbtitle,
-            linktitle,
-            year,
-            status,
-            type,
-          };
-          const work_data = await extract_work_data(work);
-          const parentData = collected.works.get(parentId);
+  return mapLimit(jobs, async ({ poetId, workId }) => {
+    const { pageWorks, poet, poetWorksModified } = poetData.get(poetId);
+    const filename = `fdirs/${poetId}/${workId}.xml`;
+    if (!fileExists(filename)) {
+      return;
+    }
+    if (!poetWorksModified && !isFileModified(filename)) {
+      return;
+    }
+    let doc = loadXMLDoc(filename);
+    const work = getChildByTagName(doc, 'kalliopework');
+    const work_data = await extract_work_data(work);
 
-          if (work_data) {
-            const { prev, next } = resolvePrevNextWork(pageWorks, workId);
-            const toc_file_data = {
-              poet,
-              toc: work_data.toc,
-              subworks: work_data.subworks,
-              work: collected.works.get(`${poetId}/${workId}`),
-              notes: work_data.notes || [],
-              pictures: work_data.pictures || [],
-              modified: modifiedDates.get(filename),
-              prev,
-              next,
-            };
-            const tocFilename = `public/api/${poetId}/${workId}-toc.json`;
-            console.log(tocFilename);
-            writeJSON(tocFilename, toc_file_data);
-          }
-          doc = null;
-        })
-      );
-    })
-  );
+    if (work_data) {
+      const { prev, next } = resolvePrevNextWork(pageWorks, workId);
+      const toc_file_data = {
+        poet,
+        toc: work_data.toc,
+        subworks: work_data.subworks,
+        work: collected.works.get(`${poetId}/${workId}`),
+        notes: work_data.notes || [],
+        pictures: work_data.pictures || [],
+        modified: modifiedDates.get(filename),
+        prev,
+        next,
+      };
+      const tocFilename = `public/api/${poetId}/${workId}-toc.json`;
+      console.log(tocFilename);
+      writeJSON(tocFilename, toc_file_data);
+    }
+    doc = null;
+  });
 };
 
 module.exports = {

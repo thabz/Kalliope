@@ -88,6 +88,7 @@ const {
   b,
   print_benchmarking_results,
 } = require('./build-static/benchmarking.js');
+const { mapLimit } = require('./build-static/concurrency.js');
 const { build_works_toc, build_section_toc } = require('./build-static/toc.js');
 const { update_elasticsearch } = require('./build-static/elastic.js');
 const {
@@ -151,8 +152,9 @@ const buildTextAliasRedirects = (redirects, texts) => {
 };
 
 const build_bio_json = async (collected) => {
-  return Promise.all(
-    Array.from(collected.poets.entries()).map(async (entry) => {
+  return mapLimit(
+    Array.from(collected.poets.entries()),
+    async (entry) => {
       const [poetId, poet] = entry;
       // Skip if all of the participating xml files aren't modified
       if (
@@ -190,7 +192,7 @@ const build_bio_json = async (collected) => {
       const destFilename = `public/api/${poet.id}/bio.json`;
       console.log(destFilename);
       writeJSON(destFilename, data);
-    })
+    }
   );
 };
 
@@ -459,9 +461,8 @@ const handle_work = async (work) => {
     let proses = [];
     let toc = [];
 
-    await Promise.all(
-      getChildren(section).map(async (part) => {
-        const partName = tagName(part);
+    for (const part of getChildren(section)) {
+      const partName = tagName(part);
         if (partName === 'text') {
           const textId = safeGetAttr(part, 'id');
           const head = getChildByTagName(part, 'head');
@@ -566,8 +567,7 @@ const handle_work = async (work) => {
             section_titles
           );
         }
-      })
-    );
+    }
     return toc;
   };
 
@@ -873,82 +873,76 @@ const works_first_pass = (collected) => {
 };
 
 const works_second_pass = async (collected) => {
-  return Promise.all(
-    Array.from(collected.poets.entries()).map(async (entry) => {
-      const [poetId, poet] = entry;
-      safeMkdir(`public/api/${poetId}`);
+  const jobs = [];
+  collected.poets.forEach((poet, poetId) => {
+    safeMkdir(`public/api/${poetId}`);
+    collected.workids.get(poetId).forEach((workId) => {
+      jobs.push({ poetId, workId });
+    });
+  });
 
-      return Promise.all(
-        collected.workids.get(poetId).map(async (workId) => {
-          const filename = `fdirs/${poetId}/${workId}.xml`;
-          if (!fileExists(filename)) {
-            return;
-          }
-          if (!isFileModified(filename)) {
-            return;
-          }
-          let doc = loadXMLDoc(filename);
-          const work = getChildByTagName(doc, 'kalliopework');
-          const status = safeGetAttr(work, 'status');
-          const type = safeGetAttr(work, 'type');
-          const head = getChildByTagName(work, 'workhead');
-          const title = safeGetText(head, 'title');
-          const year = safeGetText(head, 'year');
-          //const data = { id: workId, title, year, status, type };
-          const data = collected.works.get(`${poetId}/${workId}`);
-          let sources = {};
-          getChildrenByTagName(head, 'source').forEach((sourceNode) => {
-            let source = null;
-            const sourceInner = safeGetInnerXML(sourceNode);
-            if (sourceInner != null && sourceInner.length > 0) {
-              source = { source: sourceInner };
-            }
-            if (source == null || source.source == null) {
-              throw new Error(
-                `fdirs/${poetId}/${workId}.xml has source with no title.`
-              );
-            }
-            const sourceId = safeGetAttr(sourceNode, 'id') || 'default';
-            let facsimile = safeGetAttr(sourceNode, 'facsimile');
-            if (facsimile != null) {
-              facsimile = facsimile.replace(/.pdf$/, '');
-              let facsimilePagesOffset = safeGetAttr(
-                sourceNode,
-                'facsimile-pages-offset'
-              );
-              if (facsimilePagesOffset != null) {
-                facsimilePagesOffset = parseInt(facsimilePagesOffset, 10);
-              }
+  return mapLimit(jobs, async ({ poetId, workId }) => {
+    const filename = `fdirs/${poetId}/${workId}.xml`;
+    if (!fileExists(filename)) {
+      return;
+    }
+    if (!isFileModified(filename)) {
+      return;
+    }
+    let doc = loadXMLDoc(filename);
+    const work = getChildByTagName(doc, 'kalliopework');
+    const head = getChildByTagName(work, 'workhead');
+    const data = collected.works.get(`${poetId}/${workId}`);
+    let sources = {};
+    getChildrenByTagName(head, 'source').forEach((sourceNode) => {
+      let source = null;
+      const sourceInner = safeGetInnerXML(sourceNode);
+      if (sourceInner != null && sourceInner.length > 0) {
+        source = { source: sourceInner };
+      }
+      if (source == null || source.source == null) {
+        throw new Error(
+          `fdirs/${poetId}/${workId}.xml has source with no title.`
+        );
+      }
+      const sourceId = safeGetAttr(sourceNode, 'id') || 'default';
+      let facsimile = safeGetAttr(sourceNode, 'facsimile');
+      if (facsimile != null) {
+        facsimile = facsimile.replace(/.pdf$/, '');
+        let facsimilePagesOffset = safeGetAttr(
+          sourceNode,
+          'facsimile-pages-offset'
+        );
+        if (facsimilePagesOffset != null) {
+          facsimilePagesOffset = parseInt(facsimilePagesOffset, 10);
+        }
 
-              const facsimilePageCount = safeGetAttr(
-                sourceNode,
-                'facsimile-pages-num'
-              );
-              if (facsimilePageCount == null) {
-                throw new Error(
-                  `fdirs/${poetId}/${workId}.xml is missing facsimile-pages-num in source.`
-                );
-              }
-              source = {
-                ...source,
-                facsimile,
-                facsimilePageCount: parseInt(facsimilePageCount, 10),
-                facsimilePagesOffset,
-              };
-            }
-            sources[sourceId] = source;
-          });
-          data.sources = sources;
-          collected_works.set(poetId + '-' + workId, data);
+        const facsimilePageCount = safeGetAttr(
+          sourceNode,
+          'facsimile-pages-num'
+        );
+        if (facsimilePageCount == null) {
+          throw new Error(
+            `fdirs/${poetId}/${workId}.xml is missing facsimile-pages-num in source.`
+          );
+        }
+        source = {
+          ...source,
+          facsimile,
+          facsimilePageCount: parseInt(facsimilePageCount, 10),
+          facsimilePagesOffset,
+        };
+      }
+      sources[sourceId] = source;
+    });
+    data.sources = sources;
+    collected_works.set(poetId + '-' + workId, data);
 
-          // TODO: Make handle_work non-recursive by using a simple XPath
-          // to select all the poems and prose texts.
-          await handle_work(work); // Creates texts
-          doc = null;
-        })
-      );
-    })
-  );
+    // TODO: Make handle_work non-recursive by using a simple XPath
+    // to select all the poems and prose texts.
+    await handle_work(work); // Creates texts
+    doc = null;
+  });
 };
 
 const build_poet_works_json = (collected) => {
