@@ -188,8 +188,8 @@ så XML kan skrive:
 - Lokale `src`-billeder skal ligge i `public/images/<id>/`.
 - `square-src` skal også ligge i `public/images/<id>/`.
 - `museum` skal være et kendt museums-id for at give meningsfuldt link.
-- Der findes gamle stavefejl i data, fx `musem`, `invbr` og `yaer`; de bør rettes til
-  `museum`, `invnr` og `year` når de opdages.
+- Ukendte attributter på `<picture>` er build-fejl. Brug fx `museum`, `invnr` og
+  `year`; gamle stavefejl som `musem`, `invbr` og `yaer` må ikke genindføres.
 
 ## Nyttige eksempler
 
@@ -198,4 +198,3 @@ så XML kan skrive:
 - `fdirs/steffens/portraits.xml`: portræt udelukkende via artwork.
 - `fdirs/hugo/portraits.xml`: lokalt portræt, som også genbruges fra keyword-data.
 - `fdirs/luther/portraits.xml`: Cranach-billede via `kunst/cranach-luther`.
-

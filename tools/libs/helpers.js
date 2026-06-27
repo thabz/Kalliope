@@ -1,6 +1,6 @@
 const fs = require('fs');
 const entities = require('entities');
-const { DOMParser } = require('xmldom');
+const { DOMParser } = require('@xmldom/xmldom');
 const bible = require('./bible-abbr.js');
 const path = require('path');
 const plimit = require('p-limit');

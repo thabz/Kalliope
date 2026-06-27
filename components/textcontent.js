@@ -4,7 +4,7 @@ import CommonData from '../common/commondata.js';
 import LangContext from '../common/LangContext.js';
 import { Footnote } from './footnotes.js';
 import * as Links from './links';
-var DOMParser = require('xmldom').DOMParser;
+var DOMParser = require('@xmldom/xmldom').DOMParser;
 
 // Render xml
 const renderXmlString = (inputString) => {
@@ -340,7 +340,8 @@ const renderXmlString = (inputString) => {
   };
 
   const frag = new DOMParser().parseFromString(
-    '<content>' + inputString + '</content>'
+    '<content>' + inputString + '</content>',
+    'text/xml'
   );
   return handle_nodes(frag.childNodes);
 };

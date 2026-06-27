@@ -13,8 +13,53 @@ const {
 } = require('./xml.js');
 const { poetName } = require('./formatting.js');
 const { imageSizeSync } = require('./image.js');
+const { mapLimit } = require('./concurrency.js');
 
 const publicPathFromSrc = src => `public${src}`;
+
+const knownPictureAttrs = new Set([
+  // Reference to a shared artwork entry, e.g. "cranach/luther".
+  'artwork',
+  // Optional CSS clip-path used to crop the displayed image.
+  'clip-path',
+  // Local image id, primarily in artwork and portrait registries.
+  'id',
+  // Museum inventory number.
+  'invnr',
+  // Language for image text or description content.
+  'lang',
+  // Museum id used for remote collection links.
+  'museum',
+  // Museum object id used for remote collection links.
+  'objid',
+  // Reference to a shared portrait entry, e.g. "hugo/p1".
+  'portrait',
+  // Marks the preferred image when several pictures are available.
+  'primary',
+  // Legacy generic picture reference.
+  'ref',
+  // Alternative source used when a square crop is needed.
+  'square-src',
+  // Direct image source path.
+  'src',
+  // Artwork subject id, primarily in artwork registries.
+  'subject',
+  // Local picture type/classification.
+  'type',
+  // Wikidata entity id for external lookup.
+  'wikidata',
+  // Artwork or portrait year.
+  'year',
+]);
+
+const validate_picture_attrs = (pictureNode, onError) => {
+  for (let i = 0; i < pictureNode.attributes.length; i++) {
+    const attrName = pictureNode.attributes.item(i).name;
+    if (!knownPictureAttrs.has(attrName)) {
+      onError(`fandt ukendt picture-attribut "${attrName}"`);
+    }
+  }
+};
 
 const get_local_picture_content = (pictureNode) => {
   if (getChildByTagName(pictureNode, 'description') != null) {
@@ -128,6 +173,8 @@ const extractSubtitles = (head, tag = 'subtitle', collected) => {
 };
 
 const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
+  validate_picture_attrs(pictureNode, onError);
+
   const primary = safeGetAttr(pictureNode, 'primary') == 'true';
   let src = safeGetAttr(pictureNode, 'src');
   const artworkRef =
@@ -208,10 +255,11 @@ const get_pictures = (head, srcPrefix, xmlFilename, collected) => {
   const onError = message => {
     throw `${xmlFilename}: ${message}`;
   };
-  return Promise.all(
-    getElementsByTagName(head, 'picture').map(async p => {
+  return mapLimit(
+    getElementsByTagName(head, 'picture'),
+    async p => {
       return await get_picture(p, srcPrefix, collected, onError);
-    })
+    }
   );
 };
 
@@ -234,4 +282,5 @@ module.exports = {
   get_notes,
   get_pictures,
   get_picture,
+  validate_picture_attrs,
 };
