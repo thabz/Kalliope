@@ -18,6 +18,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang={this.props.lang}>
         <Head>
+          <link rel="stylesheet" href="/fonts/kalliope-fonts.css" />
           <style>{`body { margin: 0 } /* custom! */`}</style>
         </Head>
         <body>
