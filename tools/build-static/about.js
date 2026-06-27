@@ -13,6 +13,7 @@ const {
   safeGetAttr,
   getChildByTagName,
 } = require('./xml.js');
+const { mapLimit } = require('./concurrency.js');
 
 const build_about_pages = async (collected) => {
   safeMkdir(`public/api/about`);
@@ -23,62 +24,60 @@ const build_about_pages = async (collected) => {
     })
     .reduce((result, b) => b || result, false);
   const folder = 'data/about';
-  return Promise.all(
-    fs
-      .readdirSync(folder)
-      .filter((x) => x.endsWith('.xml'))
-      .map((x) => {
-        return {
-          xml: `${folder}/${x}`,
-          json: `public/api/about/${x.replace(/.xml$/, '.json')}`,
-        };
-      })
-      .filter((paths) => isFileModified(paths.xml) || areAnyWorkModified)
-      .map(async (paths) => {
-        let lang = 'da';
-        const m = paths.xml.match(/_(..)\.xml$/);
-        if (m) {
-          lang = m[1];
-        }
-        const doc = loadXMLDoc(paths.xml);
-        const about = getChildByTagName(doc, 'about');
-        const head = getChildByTagName(about, 'head');
-        const body = getChildByTagName(about, 'body');
-        const title = safeGetText(head, 'title');
-        const pictures = await get_pictures(
-          head,
-          '/images/about',
-          paths.xml,
-          collected
-        );
-        const author = safeGetText(head, 'author');
-        const poemsNum = Array.from(collected.texts.values())
-          .map((t) => (t.type === 'text' ? 1 : 0))
-          .reduce((sum, v) => sum + v, 0);
-        const poetsNum = Array.from(collected.poets.values())
-          .map((t) => (t.type === 'poet' ? 1 : 0))
-          .reduce((sum, v) => sum + v, 0);
-        const notes = get_notes(head, collected, {
-          poemsNum: poemsNum.toLocaleString(lang),
-          poetsNum: poetsNum.toLocaleString(lang),
-          worksNum: collected.works.size.toLocaleString(lang),
-          langsNum: 8 - 1, // gb og us er begge engelsk.
-        });
-        // Data er samme format som keywords
-        const data = {
-          id: paths.xml,
-          title,
-          author,
-          has_footnotes: false,
-          pictures,
-          notes,
-          content_lang: 'da',
-          content_html: htmlToXml(safeGetInnerXML(body), collected),
-        };
-        console.log(paths.json);
-        writeJSON(paths.json, data);
-      })
-  );
+  const pages = fs
+    .readdirSync(folder)
+    .filter((x) => x.endsWith('.xml'))
+    .map((x) => {
+      return {
+        xml: `${folder}/${x}`,
+        json: `public/api/about/${x.replace(/.xml$/, '.json')}`,
+      };
+    })
+    .filter((paths) => isFileModified(paths.xml) || areAnyWorkModified);
+  return mapLimit(pages, async (paths) => {
+    let lang = 'da';
+    const m = paths.xml.match(/_(..)\.xml$/);
+    if (m) {
+      lang = m[1];
+    }
+    const doc = loadXMLDoc(paths.xml);
+    const about = getChildByTagName(doc, 'about');
+    const head = getChildByTagName(about, 'head');
+    const body = getChildByTagName(about, 'body');
+    const title = safeGetText(head, 'title');
+    const pictures = await get_pictures(
+      head,
+      '/images/about',
+      paths.xml,
+      collected
+    );
+    const author = safeGetText(head, 'author');
+    const poemsNum = Array.from(collected.texts.values())
+      .map((t) => (t.type === 'text' ? 1 : 0))
+      .reduce((sum, v) => sum + v, 0);
+    const poetsNum = Array.from(collected.poets.values())
+      .map((t) => (t.type === 'poet' ? 1 : 0))
+      .reduce((sum, v) => sum + v, 0);
+    const notes = get_notes(head, collected, {
+      poemsNum: poemsNum.toLocaleString(lang),
+      poetsNum: poetsNum.toLocaleString(lang),
+      worksNum: collected.works.size.toLocaleString(lang),
+      langsNum: 8 - 1, // gb og us er begge engelsk.
+    });
+    // Data er samme format som keywords
+    const data = {
+      id: paths.xml,
+      title,
+      author,
+      has_footnotes: false,
+      pictures,
+      notes,
+      content_lang: 'da',
+      content_html: htmlToXml(safeGetInnerXML(body), collected),
+    };
+    console.log(paths.json);
+    writeJSON(paths.json, data);
+  });
 };
 
 module.exports = {

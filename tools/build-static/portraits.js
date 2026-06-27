@@ -1,5 +1,6 @@
 const { get_picture } = require('./parsing.js');
 const { loadXMLDoc, getElementsByTagName } = require('./xml.js');
+const { mapLimit } = require('./concurrency.js');
 
 const build_portraits_json = async (poet, collected) => {
   let result = [];
@@ -11,8 +12,9 @@ const build_portraits_json = async (poet, collected) => {
     onError = message => {
       throw `fdirs/${poet.id}/portraits.xml: ${message}`;
     };
-    result = await Promise.all(
-      getElementsByTagName(doc, 'picture').map(async picture => {
+    result = await mapLimit(
+      getElementsByTagName(doc, 'picture'),
+      async picture => {
         picture = await get_picture(
           picture,
           `/images/${poet.id}`,
@@ -23,7 +25,7 @@ const build_portraits_json = async (poet, collected) => {
           onError('har et billede uden src- eller ref-attribut.');
         }
         return picture;
-      })
+      }
     );
     const primaries = result.filter(p => p.primary);
     if (primaries.length > 1) {

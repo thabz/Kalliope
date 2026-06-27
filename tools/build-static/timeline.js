@@ -12,6 +12,7 @@ const {
   getElementsByTagName,
 } = require('./xml.js');
 const { get_picture } = require('./parsing.js');
+const { mapLimit } = require('./concurrency.js');
 
 const normalize_timeline_date = normalizeTimelineDate;
 const compare_normalized_date = compareNormalizedDate;
@@ -27,8 +28,9 @@ const load_timeline = async (filename, collected) => {
   if (doc == null) {
     return [];
   }
-  return Promise.all(
-    getElementsByTagName(doc, 'entry').map(async (event) => {
+  return mapLimit(
+    getElementsByTagName(doc, 'entry'),
+    async (event) => {
       const type = safeGetAttr(event, 'type');
       const date = safeGetAttr(event, 'date');
       let data = {
@@ -61,7 +63,7 @@ const load_timeline = async (filename, collected) => {
         data.content_html = htmlToXml(safeGetInnerXML(html).trim(), collected);
       }
       return data;
-    })
+    }
   );
 };
 
@@ -109,56 +111,48 @@ const build_poet_timeline_json = async (poet, collected) => {
 
   let items = [];
   if (poet.type !== 'collection') {
-    const workItems = await Promise.all(
-      collected.workids
-        .get(poet.id)
-        .filter((workId) => {
-          // Vi vil ikke have underværkerne i tidslinjen
-          const work = collected.works.get(`${poet.id}/${workId}`);
-          return work.parent == null;
-        })
-        .map(async (workId) => {
-          const work = collected.works.get(`${poet.id}/${workId}`);
-          if (work.year != null) {
-            const workName = work.has_content
-              ? `<a work="${poet.id}/${workId}">${work.title}</a>`
-              : work.title;
-            const coverPicture = await cover_picture(
-              poet.id,
-              workId,
-              collected
-            );
-            const contentHtml = [
-              [`${poet.name.lastname}: ${workName}.`, { html: true }],
-            ];
-            const textItem = {
-              date: work.published,
-              normalized_date: normalize_timeline_date(work.published),
-              type: 'text',
-              content_lang: 'da',
-              is_history_item: false,
-              content_html: contentHtml,
-            };
-            if (coverPicture == null) {
-              return [textItem];
-            }
-            return [
-              {
-                date: work.published,
-                normalized_date: normalize_timeline_date(work.published),
-                type: 'image',
-                is_history_item: false,
-                src: coverPicture.src,
-                content_lang: coverPicture.content_lang,
-                lang: coverPicture.lang,
-                content_html: coverPicture.content_html,
-                miniature_content_html: contentHtml,
-              },
-            ];
-          }
-          return [];
-        })
-    );
+    const timelineWorkIds = collected.workids.get(poet.id).filter((workId) => {
+      // Vi vil ikke have underværkerne i tidslinjen
+      const work = collected.works.get(`${poet.id}/${workId}`);
+      return work.parent == null;
+    });
+    const workItems = await mapLimit(timelineWorkIds, async (workId) => {
+      const work = collected.works.get(`${poet.id}/${workId}`);
+      if (work.year != null) {
+        const workName = work.has_content
+          ? `<a work="${poet.id}/${workId}">${work.title}</a>`
+          : work.title;
+        const coverPicture = await cover_picture(poet.id, workId, collected);
+        const contentHtml = [
+          [`${poet.name.lastname}: ${workName}.`, { html: true }],
+        ];
+        const textItem = {
+          date: work.published,
+          normalized_date: normalize_timeline_date(work.published),
+          type: 'text',
+          content_lang: 'da',
+          is_history_item: false,
+          content_html: contentHtml,
+        };
+        if (coverPicture == null) {
+          return [textItem];
+        }
+        return [
+          {
+            date: work.published,
+            normalized_date: normalize_timeline_date(work.published),
+            type: 'image',
+            is_history_item: false,
+            src: coverPicture.src,
+            content_lang: coverPicture.content_lang,
+            lang: coverPicture.lang,
+            content_html: coverPicture.content_html,
+            miniature_content_html: contentHtml,
+          },
+        ];
+      }
+      return [];
+    });
     items = items.concat([].concat(...workItems));
     if (poet.period.born.date !== '?') {
       const place = (
