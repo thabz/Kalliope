@@ -5,6 +5,12 @@ const defaultDescription =
   'Kalliope er en database indeholdende ældre dansk lyrik samt biografiske oplysninger om danske digtere. Målet er intet mindre end at samle hele den ældre danske lyrik, men indtil videre indeholder Kalliope et forhåbentligt repræsentativt, og stadigt voksende, udvalg af den danske digtning.';
 const defaultOGURL = urlPrefix;
 const defaultOGImage = `${urlPrefix}/touch-icon.png`;
+const criticalFonts = [
+  '/fonts/alegreya-sans/alegreya-sans-normal-400-latin.woff2',
+  '/fonts/alegreya-sans/alegreya-sans-normal-700-latin.woff2',
+  '/fonts/alegreya-sans/alegreya-sans-normal-100-latin.woff2',
+  '/fonts/alegreya-sans/alegreya-sans-normal-300-latin.woff2',
+];
 
 const Head = ({
   ogTitle,
@@ -58,6 +64,16 @@ const Head = ({
       <link rel="mask-icon" href="/favicon-mask.svg" color="black" />
       <link rel="icon" href="/favicon.ico" />
       <link rel="manifest" href="/manifest.json" />
+      {criticalFonts.map((href) => (
+        <link
+          rel="preload"
+          href={href}
+          as="font"
+          type="font/woff2"
+          crossOrigin=""
+          key={href}
+        />
+      ))}
       {canonical}
       {hreflangs}
       <meta name="theme-color" content="rgb(139, 56, 65)" />
