@@ -19,7 +19,7 @@ export const trimmedDescription = (content_html) => {
 export const poetImage = (poet) => {
   if (poet.has_square_portrait) {
     const thumb = poet.square_portrait;
-    return `/images/${poet.id}/${thumb}`;
+    return thumb.startsWith('/') ? thumb : `/images/${poet.id}/${thumb}`;
   } else {
     return null;
   }

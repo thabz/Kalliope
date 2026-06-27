@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { useContext, useState } from 'react';
 import CommonData from '../common/commondata.js';
+import * as ImagePaths from '../common/imagepaths.js';
 import LangContext from '../common/LangContext.js';
 import * as Links from './links.js';
 import PictureOverlay from './pictureoverlay.js';
@@ -91,17 +92,16 @@ const Picture = ({
   const [overlayShown, showOverlay] = useState(false);
   const picture = pictures[startIndex];
   const src = picture.src;
-  const fallbackSrc = src.replace(/\/([^\/]+).jpg$/, (m, p1) => {
-    return '/t/' + p1 + CommonData.fallbackImagePostfix;
-  });
+  const fallbackSrc = ImagePaths.fallbackThumbnailSrc(
+    src,
+    CommonData.fallbackImagePostfix
+  );
   const sizes = '(max-width: 700px) 250px, 48vw';
   let srcsets = {};
   const sources = CommonData.availableImageFormats.map((ext) => {
     const srcset = CommonData.availableImageWidths
       .map((width) => {
-        const filename = src
-          .replace(/.jpg$/, `-w${width}.${ext}`)
-          .replace(/\/([^\/]+)$/, '/t/$1');
+        const filename = ImagePaths.thumbnailSrc(src, width, ext);
         return `${filename} ${width}w`;
       })
       .join(', ');

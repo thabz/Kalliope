@@ -21,6 +21,11 @@ services:
       - "3000:3000"
     depends_on:
       - elasticsearch
+    volumes:
+      - ./.git:/app/.git:ro
+      - ./public/images:/app/public/images:ro
+      - ./public/kunst:/app/public/kunst:ro
+      - ./public/generated:/app/public/generated
     command: >
       sh -c "node tools/wait-for-elasticsearch.js &&
       npm run build-static &&

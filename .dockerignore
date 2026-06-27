@@ -8,7 +8,10 @@ yarn-debug.log*
 yarn-error.log*
 .DS_Store
 caches
-static/api
-static/sitemaps
-static/facsimiles
-static/Kalliope.ics
+public/api
+public/sitemaps
+public/facsimiles
+public/Kalliope.ics
+public/generated
+public/images
+public/kunst
