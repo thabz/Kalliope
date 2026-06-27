@@ -10,10 +10,12 @@ import { poetGenetiveLastName } from './poetname-helpers.js';
 
 const transitionDuration = '0.2s';
 
+const pathWithoutQuery = url => url.split(/[?#]/, 1)[0];
+
 const Tabs = (props) => {
   let searchField;
 
-  const { items, selected, poet, lang, query } = props;
+  const { items, selected, poet, lang, query, requestPath } = props;
   let country = props.country;
   if (country == null) {
     country = lang === 'da' ? 'dk' : 'gb';
@@ -160,14 +162,17 @@ const Tabs = (props) => {
     .map((item, i) => {
       const isSelected = item.id === selected;
       const className = isSelected ? 'tab selected' : 'tab';
+      const isCurrentPage =
+        pathWithoutQuery(item.url) === pathWithoutQuery(requestPath || '');
+      const isClickable = !isSelected || !isCurrentPage;
       return (
         <div className={className} key={item.url}>
-          {isSelected ? (
-            <h2>{item.title}</h2>
-          ) : (
+          {isClickable ? (
             <Link href={item.url}>
               <h2>{item.title}</h2>
             </Link>
+          ) : (
+            <h2>{item.title}</h2>
           )}
         </div>
       );

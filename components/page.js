@@ -95,6 +95,7 @@ const Page = (props) => {
           query={query}
           poet={poet}
           lang={lang}
+          requestPath={requestPath}
         />
         {children}
         <LangSelect lang={lang} path={requestPath} />
