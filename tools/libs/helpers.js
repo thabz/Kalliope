@@ -4,9 +4,21 @@ const { DOMParser } = require('@xmldom/xmldom');
 const bible = require('./bible-abbr.js');
 const path = require('path');
 const plimit = require('p-limit');
-const jimp = require('jimp');
+const sharp = require('sharp');
 const CommonData = require('../../common/commondata.js');
 const ImagePaths = require('../../common/imagepaths.js');
+
+const envInt = (name, fallback) => {
+  const value = parseInt(process.env[name], 10);
+  return Number.isNaN(value) ? fallback : value;
+};
+
+sharp.cache({
+  memory: Math.max(0, envInt('KALLIOPE_SHARP_CACHE_MEMORY', 64)),
+  files: Math.max(0, envInt('KALLIOPE_SHARP_CACHE_FILES', 0)),
+  items: Math.max(0, envInt('KALLIOPE_SHARP_CACHE_ITEMS', 0)),
+});
+sharp.concurrency(Math.max(1, envInt('KALLIOPE_SHARP_CONCURRENCY', 1)));
 
 const safeMkdir = dirname => {
   try {
@@ -248,32 +260,17 @@ const htmlToXml = (html, collected, isPoetry) => {
 };
 
 const resizeImage = async (inputfile, outputfile, maxWidth) => {
-  return new Promise((resolve, reject) => {
-    const task = { inputfile, outputfile, maxWidth };
-    jimp
-      .read(task.inputfile)
-      .then(image => {
-        if (image.bitmap.width < maxWidth) {
-          image.writeAsync(task.outputfile).then(() => {
-            console.log(outputfile);
-            resolve(outputfile);
-          });
-        } else {
-          image
-            .resize(task.maxWidth, jimp.AUTO)
-            .writeAsync(task.outputfile)
-            .then(() => {
-              console.log(outputfile);
-              resolve(outputfile);
-            });
-        }
-      })
-      .catch(err => {
-        console.log(err);
-        console.log(task.outputfile);
-        reject(err);
-      });
-  });
+  try {
+    await sharp(inputfile)
+      .resize({ width: maxWidth, withoutEnlargement: true })
+      .toFile(outputfile);
+    console.log(outputfile);
+    return outputfile;
+  } catch (err) {
+    console.log(err);
+    console.log(outputfile);
+    throw err;
+  }
 };
 
 const thumbnailConcurrency = Math.max(

@@ -65,7 +65,7 @@ docker-compose --profile build run --rm static-builder
 docker-compose up --build app
 ```
 
-På Colima kan første statiske build godt kræve mere RAM end standardopsætningen, især under thumbnail-generering. Docker-opsætningen kører thumbnails med lav concurrency som standard (`KALLIOPE_THUMBNAIL_CONCURRENCY=1`) for at spare hukommelse. Hvis containeren alligevel bliver killed under `build-static`, så prøv at starte Colima med mere hukommelse og kør builderen igen:
+På Colima kan første statiske build godt kræve mere RAM end standardopsætningen, især under thumbnail-generering. Docker-opsætningen kører thumbnails med lav concurrency som standard (`KALLIOPE_THUMBNAIL_CONCURRENCY=1`, `KALLIOPE_SHARP_CONCURRENCY=1`) og en lille sharp-cache (`KALLIOPE_SHARP_CACHE_MEMORY=64`) for at spare hukommelse. Hvis containeren alligevel bliver killed under `build-static`, så prøv at starte Colima med mere hukommelse og kør builderen igen:
 
 ```shell
 colima stop
@@ -78,6 +78,8 @@ Hvis du vil bygge thumbnails hurtigere og har rigeligt RAM, kan concurrency hæv
 ```shell
 KALLIOPE_THUMBNAIL_CONCURRENCY=2 docker compose --profile build run --rm static-builder
 ```
+
+`KALLIOPE_THUMBNAIL_CONCURRENCY` styrer hvor mange billeder der behandles samtidig. `KALLIOPE_SHARP_CONCURRENCY` styrer hvor mange libvips worker-tråde sharp bruger per billede.
 
 ### Faksimile generering
 

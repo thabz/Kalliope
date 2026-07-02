@@ -7,6 +7,7 @@ const poetName = poet => {
   }
   const { name } = poet;
   const { firstname, lastname } = name;
+  let namePart;
   if (lastname) {
     if (firstname) {
       namePart = `${firstname} ${lastname}`;

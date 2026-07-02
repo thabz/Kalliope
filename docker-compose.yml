@@ -39,6 +39,8 @@ services:
     environment:
       ELASTICSEARCH_URL: http://elasticsearch:9200
       KALLIOPE_THUMBNAIL_CONCURRENCY: 1
+      KALLIOPE_SHARP_CONCURRENCY: 1
+      KALLIOPE_SHARP_CACHE_MEMORY: 64
     depends_on:
       - elasticsearch
     volumes:
