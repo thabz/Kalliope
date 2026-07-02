@@ -4,6 +4,8 @@ Dette er et internt overblik over `fdirs/<id>/portraits.xml`.
 Filen beskriver portrætter, som vises på biografisider og bruges til kvadratiske social
 portraits. Portrætter kan også genbruges fra andre XML-filer via `portrait="digter/pN"`.
 
+Se også `docs/style-guide.md` for de generelle regler om billedplacering og GitHub-sprog.
+
 ## Grundstruktur
 
 ```xml
