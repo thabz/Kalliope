@@ -13,6 +13,7 @@ const force_reload = process.argv.indexOf('--force-reload') !== -1;
 // Load caches
 let old_sha = loadJSON('./caches/files-sha.json') || {};
 let new_sha = {};
+let modified_files = new Set();
 let unmodified_files = new Set();
 let deleted_files = new Set();
 safeMkdir(`caches`);
@@ -31,6 +32,8 @@ const markFileDirty = (...filenames) => {
     if (filenames[i] != null) {
       //console.log('Marking file dirty: ' + filenames[i]);
       delete old_sha[filenames[i]];
+      delete new_sha[filenames[i]];
+      modified_files.delete(filenames[i]);
       unmodified_files.delete(filenames[i]);
     }
   }
@@ -40,15 +43,20 @@ const isFileModified = (...filenames) => {
   const _isFileModified = filename => {
     // For now remove the :id part of the filename
     filename = filename.split(':')[0];
-    if (new_sha[filename]) {
+    if (modified_files.has(filename)) {
       return true;
     }
     if (unmodified_files.has(filename)) {
       return false;
     }
+    if (new_sha[filename]) {
+      unmodified_files.add(filename);
+      return false;
+    }
     if (!fileExists(filename)) {
       if (old_sha[filename] != null) {
         deleted_files.add(filename);
+        modified_files.add(filename);
         return true;
       } else {
         return false;
@@ -71,13 +79,14 @@ const isFileModified = (...filenames) => {
       digest = 'NO-DATA';
     }
 
-    if (
-      old_sha[filename] == null ||
-      digest !== old_sha[filename].sha ||
-      mtime !== old_sha[filename].mtime
-    ) {
+    if (old_sha[filename] == null || digest !== old_sha[filename].sha) {
       new_sha[filename] = { sha: digest, mtime: mtime };
+      modified_files.add(filename);
       return true;
+    } else if (mtime !== old_sha[filename].mtime) {
+      new_sha[filename] = { sha: digest, mtime: mtime };
+      unmodified_files.add(filename);
+      return false;
     } else {
       unmodified_files.add(filename);
       return false;
