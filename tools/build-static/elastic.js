@@ -10,9 +10,13 @@ const {
   safeGetInnerXML,
   tagName,
 } = require('./xml.js');
-const { isFileModified } = require('../libs/caching.js');
 const elasticSearchClient = require('../libs/elasticsearch-client.js');
 const { mapLimit } = require('./concurrency.js');
+
+const elasticsearchConcurrency = Math.max(
+  1,
+  parseInt(process.env.KALLIOPE_ELASTICSEARCH_CONCURRENCY, 10) || 1
+);
 
 const update_elasticsearch = async collected => {
   const inner_update_elasticsearch = async () => {
@@ -21,9 +25,6 @@ const update_elasticsearch = async collected => {
     collected.poets.forEach((poet, poetId) => {
       collected.workids.get(poetId).forEach(workId => {
         const filename = `fdirs/${poetId}/${workId}.xml`;
-        if (!isFileModified(filename)) {
-          return;
-        }
         let doc = loadXMLDoc(filename);
         const work = getElementByTagName(doc, 'kalliopework');
         const workBody = getElementByTagName(work, 'workbody');
@@ -116,7 +117,7 @@ const update_elasticsearch = async collected => {
       });
     });
 
-    await mapLimit(tasks, task => task(), 2);
+    await mapLimit(tasks, task => task(), elasticsearchConcurrency);
   };
 
   try {
@@ -125,6 +126,7 @@ const update_elasticsearch = async collected => {
   } catch (error) {
     console.log('Elasticsearch update failed.');
     console.log(error);
+    throw error;
   }
 };
 

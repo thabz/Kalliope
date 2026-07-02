@@ -3,7 +3,7 @@ const fetch = require('node-fetch');
 const URLPrefix = process.env.ELASTICSEARCH_URL || 'http://localhost:9200';
 const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
 
-const requestWithRetry = async (URL, options, attempts = 5) => {
+const requestWithRetry = async (URL, options, attempts = 15) => {
   let lastError = null;
   for (let attempt = 1; attempt <= attempts; attempt++) {
     try {
@@ -19,7 +19,7 @@ const requestWithRetry = async (URL, options, attempts = 5) => {
       lastError = error;
     }
     if (attempt < attempts) {
-      await wait(250 * attempt);
+      await wait(500 * attempt);
     }
   }
   throw lastError;
