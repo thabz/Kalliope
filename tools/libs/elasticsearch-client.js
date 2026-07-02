@@ -1,19 +1,27 @@
 const fetch = require('node-fetch');
 
 const URLPrefix = process.env.ELASTICSEARCH_URL || 'http://localhost:9200';
+const requestTimeout = Math.max(
+  1000,
+  parseInt(process.env.KALLIOPE_ELASTICSEARCH_REQUEST_TIMEOUT_MS, 10) || 60000
+);
 const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 const requestWithRetry = async (URL, options, attempts = 15) => {
   let lastError = null;
+  const requestOptions = {
+    timeout: requestTimeout,
+    ...options,
+  };
   for (let attempt = 1; attempt <= attempts; attempt++) {
     try {
-      const res = await fetch(URL, options);
+      const res = await fetch(URL, requestOptions);
       if (res.ok) {
         return res;
       }
       const text = await res.text();
       lastError = new Error(
-        `Elasticsearch ${options.method} ${URL} failed: ${res.status} ${text}`
+        `Elasticsearch ${requestOptions.method} ${URL} failed: ${res.status} ${text}`
       );
     } catch (error) {
       lastError = error;
@@ -28,13 +36,17 @@ const requestWithRetry = async (URL, options, attempts = 15) => {
 class ElasticSearchClient {
   async createIndex(index) {
     const URL = `${URLPrefix}/${index}`;
-    const deleteRes = await fetch(URL, { method: 'DELETE' });
+    const deleteRes = await fetch(URL, {
+      method: 'DELETE',
+      timeout: requestTimeout,
+    });
+    const deleteText = await deleteRes.text();
     if (!deleteRes.ok && deleteRes.status !== 404) {
       throw new Error(
-        `Elasticsearch DELETE ${URL} failed: ${deleteRes.status}`
+        `Elasticsearch DELETE ${URL} failed: ${deleteRes.status} ${deleteText}`
       );
     }
-    return requestWithRetry(URL, {
+    const putRes = await requestWithRetry(URL, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -45,6 +57,7 @@ class ElasticSearchClient {
         },
       }),
     });
+    return putRes.text();
   }
 
   async create(index, type, id, json) {

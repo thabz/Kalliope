@@ -117,7 +117,24 @@ const update_elasticsearch = async collected => {
       });
     });
 
-    await mapLimit(tasks, task => task(), elasticsearchConcurrency);
+    console.log(
+      `Writing ${tasks.length} Elasticsearch documents with concurrency ${elasticsearchConcurrency}`
+    );
+    let completed = 0;
+    await mapLimit(
+      tasks,
+      async task => {
+        const result = await task();
+        completed += 1;
+        if (completed % 100 === 0 || completed === tasks.length) {
+          console.log(
+            `Wrote ${completed}/${tasks.length} Elasticsearch documents`
+          );
+        }
+        return result;
+      },
+      elasticsearchConcurrency
+    );
   };
 
   try {
