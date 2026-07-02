@@ -276,7 +276,11 @@ const resizeImage = async (inputfile, outputfile, maxWidth) => {
   });
 };
 
-const limit = plimit(5);
+const thumbnailConcurrency = Math.max(
+  1,
+  parseInt(process.env.KALLIOPE_THUMBNAIL_CONCURRENCY, 10) || 1
+);
+const limit = plimit(thumbnailConcurrency);
 
 const buildThumbnails = async (topFolder, isFileModifiedMethod) => {
   const tasks = [];

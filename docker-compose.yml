@@ -15,6 +15,7 @@ services:
   app:
     build:
       context: .
+      target: runtime
     restart: unless-stopped
     environment:
       ELASTICSEARCH_URL: http://elasticsearch:9200
@@ -23,17 +24,32 @@ services:
     depends_on:
       - elasticsearch
     volumes:
-      - ./.git:/app/.git:ro
-      - ./data:/app/data:ro
-      - ./fdirs:/app/fdirs:ro
-      - ./public/images:/app/public/images:ro
-      - ./public/kunst:/app/public/kunst:ro
-      - ./public/generated:/app/public/generated
+      - ./public:/app/public:ro
     command: >
       sh -c "node tools/wait-for-elasticsearch.js &&
-      npm run build-static &&
       npm run build &&
       npm start"
+
+  static-builder:
+    build:
+      context: .
+      target: static-builder
+    profiles:
+      - build
+    environment:
+      ELASTICSEARCH_URL: http://elasticsearch:9200
+      KALLIOPE_THUMBNAIL_CONCURRENCY: 1
+    depends_on:
+      - elasticsearch
+    volumes:
+      - ./.git:/app/.git:ro
+      - ./caches:/app/caches
+      - ./data:/app/data:ro
+      - ./fdirs:/app/fdirs:ro
+      - ./public:/app/public
+    command: >
+      sh -c "node tools/wait-for-elasticsearch.js &&
+      npm run build-static"
 
 volumes:
   esdata:

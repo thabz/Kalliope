@@ -39,23 +39,44 @@ Start derefter Docker-daemonen:
 colima start
 ```
 
+Første gang skal de statiske data bygges, før appen startes:
+
 ```shell
-docker compose up --build
+docker compose up -d elasticsearch
+docker compose --profile build build static-builder
+docker compose --profile build run --rm static-builder
+docker compose up --build app
 ```
 
 Det starter appen på `http://localhost:3000` og Elasticsearch på `http://localhost:9200`.
 
+Efter ændringer i XML-filer under `data/` eller `fdirs/` skal builderen køres igen:
+
+```shell
+docker compose --profile build run --rm static-builder
+```
+
 Hvis din Docker-installation stadig bruger den gamle Compose-klient, kan du bruge:
 
 ```shell
-docker-compose up --build
+docker-compose up -d elasticsearch
+docker-compose --profile build build static-builder
+docker-compose --profile build run --rm static-builder
+docker-compose up --build app
 ```
 
-På Colima kan buildet godt kræve mere RAM end standardopsætningen. Hvis containeren bliver killed under `build-static`, så prøv at starte Colima med mere hukommelse, f.eks.:
+På Colima kan første statiske build godt kræve mere RAM end standardopsætningen, især under thumbnail-generering. Docker-opsætningen kører thumbnails med lav concurrency som standard (`KALLIOPE_THUMBNAIL_CONCURRENCY=1`) for at spare hukommelse. Hvis containeren alligevel bliver killed under `build-static`, så prøv at starte Colima med mere hukommelse og kør builderen igen:
 
 ```shell
 colima stop
 colima start --cpu 4 --memory 8 --disk 60
+docker compose --profile build run --rm static-builder
+```
+
+Hvis du vil bygge thumbnails hurtigere og har rigeligt RAM, kan concurrency hæves:
+
+```shell
+KALLIOPE_THUMBNAIL_CONCURRENCY=2 docker compose --profile build run --rm static-builder
 ```
 
 ### Faksimile generering
