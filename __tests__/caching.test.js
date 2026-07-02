@@ -39,8 +39,11 @@ describe('caching', () => {
   test('treats mtime-only changes as unmodified content', () => {
     const { caching, writes } = loadCaching('same', 200, 'same', 100);
 
-    expect(caching.isFileModified(filename)).toBe(false);
-    expect(caching.isFileModified(filename)).toBe(false);
+    const firstConsumerSeesModified = caching.isFileModified(filename);
+    const nextConsumerSeesModified = caching.isFileModified(filename);
+
+    expect(firstConsumerSeesModified).toBe(false);
+    expect(nextConsumerSeesModified).toBe(false);
 
     caching.refreshFilesModifiedCache();
 
@@ -53,7 +56,10 @@ describe('caching', () => {
   test('keeps content changes marked modified during the same run', () => {
     const { caching } = loadCaching('changed', 200, 'original', 100);
 
-    expect(caching.isFileModified(filename)).toBe(true);
-    expect(caching.isFileModified(filename)).toBe(true);
+    const firstConsumerSeesModified = caching.isFileModified(filename);
+    const nextConsumerSeesModified = caching.isFileModified(filename);
+
+    expect(firstConsumerSeesModified).toBe(true);
+    expect(nextConsumerSeesModified).toBe(true);
   });
 });
