@@ -9,6 +9,11 @@
   "engines": {
     "node": ">=20.18.1"
   },
+  "browserslist": [
+    "defaults",
+    "Safari >= 13.1",
+    "iOS >= 13.4"
+  ],
   "scripts": {
     "dev": " LOCALE=da_DK.UTF_8 node server.js",
     "build": "next build",
