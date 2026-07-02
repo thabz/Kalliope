@@ -34,6 +34,24 @@ const requestWithRetry = async (URL, options, attempts = 15) => {
 };
 
 class ElasticSearchClient {
+  async indexExists(index) {
+    const URL = `${URLPrefix}/${index}`;
+    const res = await fetch(URL, {
+      method: 'HEAD',
+      timeout: requestTimeout,
+    });
+    if (res.ok) {
+      return true;
+    }
+    if (res.status === 404) {
+      return false;
+    }
+    const text = await res.text();
+    throw new Error(
+      `Elasticsearch HEAD ${URL} failed: ${res.status} ${text}`
+    );
+  }
+
   async createIndex(index) {
     const URL = `${URLPrefix}/${index}`;
     const deleteRes = await fetch(URL, {

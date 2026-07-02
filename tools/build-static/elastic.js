@@ -1,4 +1,10 @@
-const { htmlToXml, replaceDashes } = require('../libs/helpers.js');
+const crypto = require('crypto');
+const { htmlToXml, replaceDashes, loadFile } = require('../libs/helpers.js');
+const {
+  loadCachedJSON,
+  writeCachedJSON,
+  force_reload,
+} = require('../libs/caching.js');
 const {
   loadXMLDoc,
   safeGetText,
@@ -17,6 +23,45 @@ const elasticsearchConcurrency = Math.max(
   1,
   parseInt(process.env.KALLIOPE_ELASTICSEARCH_CONCURRENCY, 10) || 1
 );
+const elasticsearchForceRebuild = ['1', 'true', 'yes'].includes(
+  (process.env.KALLIOPE_ELASTICSEARCH_FORCE_REBUILD || '').toLowerCase()
+);
+const elasticsearchCacheKey = 'elasticsearch-sources';
+
+const getElasticsearchSourceFiles = collected => {
+  const sourceFiles = new Set([
+    'tools/build-static/elastic.js',
+    'tools/build-static/xml.js',
+    'tools/libs/elasticsearch-client.js',
+    'tools/libs/helpers.js',
+  ]);
+
+  collected.poets.forEach((poet, poetId) => {
+    sourceFiles.add(`fdirs/${poetId}/info.xml`);
+    collected.workids.get(poetId).forEach(workId => {
+      sourceFiles.add(`fdirs/${poetId}/${workId}.xml`);
+    });
+  });
+
+  return Array.from(sourceFiles).sort();
+};
+
+const buildElasticsearchSourceSnapshot = collected => {
+  const sourceFiles = getElasticsearchSourceFiles(collected);
+  const shasum = crypto.createHash('sha1');
+
+  sourceFiles.forEach(filename => {
+    shasum.update(filename);
+    shasum.update('\0');
+    shasum.update(loadFile(filename) || 'NO-DATA');
+    shasum.update('\0');
+  });
+
+  return {
+    digest: shasum.digest('hex'),
+    sourceFiles,
+  };
+};
 
 const update_elasticsearch = async collected => {
   const inner_update_elasticsearch = async () => {
@@ -138,8 +183,29 @@ const update_elasticsearch = async collected => {
   };
 
   try {
+    const sourceSnapshot = buildElasticsearchSourceSnapshot(collected);
+    const cachedSourceSnapshot = loadCachedJSON(elasticsearchCacheKey);
+    const sourceSnapshotChanged =
+      cachedSourceSnapshot == null ||
+      cachedSourceSnapshot.digest !== sourceSnapshot.digest;
+    const indexExists = await elasticSearchClient.indexExists('kalliope');
+
+    if (
+      !force_reload &&
+      !elasticsearchForceRebuild &&
+      !sourceSnapshotChanged &&
+      indexExists
+    ) {
+      console.log('Skipping Elasticsearch update; source snapshot unchanged');
+      return;
+    }
+
     await elasticSearchClient.createIndex('kalliope');
     await inner_update_elasticsearch();
+    writeCachedJSON(elasticsearchCacheKey, {
+      ...sourceSnapshot,
+      updatedAt: new Date().toISOString(),
+    });
   } catch (error) {
     console.log('Elasticsearch update failed.');
     console.log(error);
@@ -148,5 +214,7 @@ const update_elasticsearch = async collected => {
 };
 
 module.exports = {
+  buildElasticsearchSourceSnapshot,
+  getElasticsearchSourceFiles,
   update_elasticsearch,
 };
