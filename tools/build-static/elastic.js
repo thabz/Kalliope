@@ -10,17 +10,21 @@ const {
   safeGetInnerXML,
   tagName,
 } = require('./xml.js');
-const { isFileModified } = require('../libs/caching.js');
 const elasticSearchClient = require('../libs/elasticsearch-client.js');
+const { mapLimit } = require('./concurrency.js');
 
-const update_elasticsearch = collected => {
-  const inner_update_elasticsearch = () => {
+const elasticsearchConcurrency = Math.max(
+  1,
+  parseInt(process.env.KALLIOPE_ELASTICSEARCH_CONCURRENCY, 10) || 1
+);
+
+const update_elasticsearch = async collected => {
+  const inner_update_elasticsearch = async () => {
+    const tasks = [];
+
     collected.poets.forEach((poet, poetId) => {
       collected.workids.get(poetId).forEach(workId => {
         const filename = `fdirs/${poetId}/${workId}.xml`;
-        if (!isFileModified(filename)) {
-          return;
-        }
         let doc = loadXMLDoc(filename);
         const work = getElementByTagName(doc, 'kalliopework');
         const workBody = getElementByTagName(work, 'workbody');
@@ -42,11 +46,13 @@ const update_elasticsearch = collected => {
         };
 
         console.log(`Updating work ${poetId}-${workId} in elasticsearch`);
-        elasticSearchClient.create(
-          'kalliope',
-          'work',
-          `${poetId}-${workId}`,
-          data
+        tasks.push(() =>
+          elasticSearchClient.create(
+            'kalliope',
+            'text',
+            `${poetId}-${workId}`,
+            data
+          )
         );
         if (workBody == null) {
           return;
@@ -104,25 +110,41 @@ const update_elasticsearch = collected => {
             text: textData,
           };
           //console.log(`Putting textId ${textId}: ${title}`);
-          elasticSearchClient.create('kalliope', 'text', textId, data);
+          tasks.push(() =>
+            elasticSearchClient.create('kalliope', 'text', textId, data)
+          );
         });
       });
     });
+
+    console.log(
+      `Writing ${tasks.length} Elasticsearch documents with concurrency ${elasticsearchConcurrency}`
+    );
+    let completed = 0;
+    await mapLimit(
+      tasks,
+      async task => {
+        const result = await task();
+        completed += 1;
+        if (completed % 100 === 0 || completed === tasks.length) {
+          console.log(
+            `Wrote ${completed}/${tasks.length} Elasticsearch documents`
+          );
+        }
+        return result;
+      },
+      elasticsearchConcurrency
+    );
   };
 
-  elasticSearchClient
-    .createIndex('kalliope')
-    .then(() => {
-      try {
-        inner_update_elasticsearch();
-      } catch (error) {
-        console.log(error);
-      }
-    })
-    .catch(error => {
-      console.log('Elasticsearch server not found on localhost:9200.');
-      //console.log(error);
-    });
+  try {
+    await elasticSearchClient.createIndex('kalliope');
+    await inner_update_elasticsearch();
+  } catch (error) {
+    console.log('Elasticsearch update failed.');
+    console.log(error);
+    throw error;
+  }
 };
 
 module.exports = {

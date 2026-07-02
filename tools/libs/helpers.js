@@ -4,12 +4,25 @@ const { DOMParser } = require('@xmldom/xmldom');
 const bible = require('./bible-abbr.js');
 const path = require('path');
 const plimit = require('p-limit');
-const jimp = require('jimp');
+const sharp = require('sharp');
 const CommonData = require('../../common/commondata.js');
+const ImagePaths = require('../../common/imagepaths.js');
+
+const envInt = (name, fallback) => {
+  const value = parseInt(process.env[name], 10);
+  return Number.isNaN(value) ? fallback : value;
+};
+
+sharp.cache({
+  memory: Math.max(0, envInt('KALLIOPE_SHARP_CACHE_MEMORY', 64)),
+  files: Math.max(0, envInt('KALLIOPE_SHARP_CACHE_FILES', 0)),
+  items: Math.max(0, envInt('KALLIOPE_SHARP_CACHE_ITEMS', 0)),
+});
+sharp.concurrency(Math.max(1, envInt('KALLIOPE_SHARP_CONCURRENCY', 1)));
 
 const safeMkdir = dirname => {
   try {
-    fs.mkdirSync(dirname);
+    fs.mkdirSync(dirname, { recursive: true });
   } catch (err) {
     if (err.code !== 'EEXIST') throw err;
   }
@@ -247,35 +260,24 @@ const htmlToXml = (html, collected, isPoetry) => {
 };
 
 const resizeImage = async (inputfile, outputfile, maxWidth) => {
-  return new Promise((resolve, reject) => {
-    const task = { inputfile, outputfile, maxWidth };
-    jimp
-      .read(task.inputfile)
-      .then(image => {
-        if (image.bitmap.width < maxWidth) {
-          image.writeAsync(task.outputfile).then(() => {
-            console.log(outputfile);
-            resolve(outputfile);
-          });
-        } else {
-          image
-            .resize(task.maxWidth, jimp.AUTO)
-            .writeAsync(task.outputfile)
-            .then(() => {
-              console.log(outputfile);
-              resolve(outputfile);
-            });
-        }
-      })
-      .catch(err => {
-        console.log(err);
-        console.log(task.outputfile);
-        reject(err);
-      });
-  });
+  try {
+    await sharp(inputfile)
+      .resize({ width: maxWidth, withoutEnlargement: true })
+      .toFile(outputfile);
+    console.log(outputfile);
+    return outputfile;
+  } catch (err) {
+    console.log(err);
+    console.log(outputfile);
+    throw err;
+  }
 };
 
-const limit = plimit(5);
+const thumbnailConcurrency = Math.max(
+  1,
+  parseInt(process.env.KALLIOPE_THUMBNAIL_CONCURRENCY, 10) || 1
+);
+const limit = plimit(thumbnailConcurrency);
 
 const buildThumbnails = async (topFolder, isFileModifiedMethod) => {
   const tasks = [];
@@ -303,19 +305,17 @@ const buildThumbnails = async (topFolder, isFileModifiedMethod) => {
         filename.endsWith('.jpg') &&
         !skipRegExps.test(filename)
       ) {
-        if (
-          isFileModifiedMethod != null &&
-          !isFileModifiedMethod(fullFilename)
-        ) {
-          return;
-        }
+        const sourceMtime = fileModifiedTime(fullFilename);
         CommonData.availableImageFormats.forEach((ext, i) => {
           CommonData.availableImageWidths.forEach(width => {
-            const outputfile = fullFilename
-              .replace(/\.jpg$/, `-w${width}.${ext}`)
-              .replace(/\/([^\/]+)$/, '/t/$1');
+            const outputfile = `public${ImagePaths.thumbnailSrc(
+              fullFilename.replace(/^public/, ''),
+              width,
+              ext
+            )}`;
             safeMkdir(outputfile.replace(/\/[^\/]+?$/, ''));
-            if (!fileExists(outputfile)) {
+            const outputMtime = fileModifiedTime(outputfile);
+            if (outputMtime == null || sourceMtime > outputMtime) {
               tasks.push(
                 limit(() => {
                   return resizeImage(fullFilename, outputfile, width);

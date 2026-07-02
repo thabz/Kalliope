@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import CommonData from '../common/commondata.js';
+import * as ImagePaths from '../common/imagepaths.js';
 import { CloseButton, DownArrow, LeftArrow, RightArrow } from './icons.js';
 import { FigCaption } from './picture.js';
 
@@ -10,16 +11,15 @@ const filenameFromSrc = (src) => {
 
 const BiggerPicture = ({ picture }) => {
   const src = picture.src;
-  const fallbackSrc = src.replace(/\/([^\/]+).jpg$/, (m, p1) => {
-    return '/t/' + p1 + CommonData.fallbackImagePostfix;
-  });
+  const fallbackSrc = ImagePaths.fallbackThumbnailSrc(
+    src,
+    CommonData.fallbackImagePostfix
+  );
   const srcSet = CommonData.availableImageFormats
     .map((ext) => {
       return CommonData.availableImageWidths
         .map((width) => {
-          const filename = src
-            .replace(/.jpg$/, `-w${width}.${ext}`)
-            .replace(/\/([^\/]+)$/, '/t/$1');
+          const filename = ImagePaths.thumbnailSrc(src, width, ext);
           return `${filename} ${width}w`;
         })
         .join(', ');

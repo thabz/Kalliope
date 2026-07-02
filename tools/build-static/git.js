@@ -6,19 +6,7 @@ const GIT_MODIFIED_DATE_PATHS = [
   'data/keywords/*.xml',
 ];
 
-const collect_git_modified_dates = () => {
-  const log = execFileSync(
-    'git',
-    [
-      '--no-pager',
-      'log',
-      '--pretty=format:%ct',
-      '--name-only',
-      '--',
-      ...GIT_MODIFIED_DATE_PATHS.map((path) => `:(glob)${path}`),
-    ],
-    { encoding: 'utf8' }
-  );
+const parseGitModifiedDatesLog = (log) => {
   const modifiedDates = new Map();
   let timestamp = null;
 
@@ -42,6 +30,35 @@ const collect_git_modified_dates = () => {
   return modifiedDates;
 };
 
+const collect_git_modified_dates = () => {
+  let log;
+  try {
+    log = execFileSync(
+      'git',
+      [
+        '--no-pager',
+        'log',
+        '--pretty=format:%ct',
+        '--name-only',
+        '--',
+        ...GIT_MODIFIED_DATE_PATHS.map((path) => `:(glob)${path}`),
+      ],
+      { encoding: 'utf8' }
+    );
+  } catch (error) {
+    if (error.code === 'ENOENT' || error.status === 128) {
+      console.warn(
+        'Skipping git modified dates; git metadata is unavailable.'
+      );
+      return new Map();
+    }
+    throw error;
+  }
+
+  return parseGitModifiedDatesLog(log);
+};
+
 module.exports = {
   collect_git_modified_dates,
+  parseGitModifiedDatesLog,
 };

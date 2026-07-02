@@ -1,0 +1,57 @@
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.17.20
+    restart: unless-stopped
+    environment:
+      discovery.type: single-node
+      xpack.security.enabled: "false"
+      xpack.ml.enabled: "false"
+      ES_JAVA_OPTS: -Xms512m -Xmx512m
+    volumes:
+      - esdata:/usr/share/elasticsearch/data
+
+  app:
+    build:
+      context: .
+      target: runtime
+    restart: unless-stopped
+    environment:
+      ELASTICSEARCH_URL: http://elasticsearch:9200
+    ports:
+      - "3001:3000"
+    depends_on:
+      - elasticsearch
+    volumes:
+      - ./public:/app/public:ro
+    command: >
+      sh -c "node tools/wait-for-elasticsearch.js &&
+      npm run build &&
+      npm start"
+
+  static-builder:
+    build:
+      context: .
+      target: static-builder
+    profiles:
+      - build
+    environment:
+      ELASTICSEARCH_URL: http://elasticsearch:9200
+      KALLIOPE_THUMBNAIL_CONCURRENCY: 4
+      KALLIOPE_SHARP_CONCURRENCY: 1
+      KALLIOPE_SHARP_CACHE_MEMORY: 64
+      KALLIOPE_ELASTICSEARCH_CONCURRENCY: 1
+      KALLIOPE_ELASTICSEARCH_REQUEST_TIMEOUT_MS: 60000
+    depends_on:
+      - elasticsearch
+    volumes:
+      - ./.git:/app/.git:ro
+      - ./caches:/app/caches
+      - ./data:/app/data:ro
+      - ./fdirs:/app/fdirs:ro
+      - ./public:/app/public
+    command: >
+      sh -c "node tools/wait-for-elasticsearch.js &&
+      npm run build-static"
+
+volumes:
+  esdata:

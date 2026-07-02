@@ -25,13 +25,13 @@ const {
 
 const create_poet_square_thumb = (poetId, square_path) => {
   const path = `public/images/${poetId}/${square_path}`;
-  const destFolder = `public/images/${poetId}/social`;
+  const destFolder = `public/generated/images/${poetId}/social`;
   const destPath = `${destFolder}/${poetId}.jpg`;
   if (!fileExists(destPath)) {
     safeMkdir(destFolder);
     resizeImage(path, destPath, 600);
   }
-  return `social/${poetId}.jpg`;
+  return `/generated/images/${poetId}/social/${poetId}.jpg`;
 };
 
 let _all_poet_ids = null;

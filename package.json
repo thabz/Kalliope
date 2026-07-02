@@ -40,14 +40,13 @@
     "entities": "^1.1.1",
     "full-icu": "^1.2.1",
     "ics": "^2.4.1",
-    "image-size": "^0.8.3",
     "jest": "^30.4.2",
-    "jimp": "^0.9.3",
     "mkdirp": "^0.5.1",
     "next": "^16.2.9",
     "node-fetch": "^1.7.1",
     "p-limit": "^2.2.2",
-    "regenerator-runtime": "^0.13.1"
+    "regenerator-runtime": "^0.13.1",
+    "sharp": "^0.34.5"
   },
   "author": "Jesper Christensen",
   "license": "MIT"
