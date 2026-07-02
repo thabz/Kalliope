@@ -1,39 +1,63 @@
 const fetch = require('node-fetch');
-const queue = require('async/queue');
 
-const URLPrefix = 'http://localhost:9200';
+const URLPrefix = process.env.ELASTICSEARCH_URL || 'http://localhost:9200';
+const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
 
-const indexingQueue = queue((task, callback) => {
-  const { index, type, id, json } = task;
-  const URL = `${URLPrefix}/${index}/${type}/${id}`;
-  const body = JSON.stringify(json);
-
-  return fetch(URL, { method: 'PUT', body: body })
-    .then(res => {
-      return res.json();
-    })
-    .then(json => {
-      callback();
-      return json;
-    })
-    .catch(error => {
-      console.log(error);
-      return null;
-    });
-}, 100);
+const requestWithRetry = async (URL, options, attempts = 5) => {
+  let lastError = null;
+  for (let attempt = 1; attempt <= attempts; attempt++) {
+    try {
+      const res = await fetch(URL, options);
+      if (res.ok) {
+        return res;
+      }
+      const text = await res.text();
+      lastError = new Error(
+        `Elasticsearch ${options.method} ${URL} failed: ${res.status} ${text}`
+      );
+    } catch (error) {
+      lastError = error;
+    }
+    if (attempt < attempts) {
+      await wait(250 * attempt);
+    }
+  }
+  throw lastError;
+};
 
 class ElasticSearchClient {
-  createIndex(index) {
+  async createIndex(index) {
     const URL = `${URLPrefix}/${index}`;
-    return fetch(URL, { method: 'PUT' });
+    const deleteRes = await fetch(URL, { method: 'DELETE' });
+    if (!deleteRes.ok && deleteRes.status !== 404) {
+      throw new Error(
+        `Elasticsearch DELETE ${URL} failed: ${deleteRes.status}`
+      );
+    }
+    return requestWithRetry(URL, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        mappings: {
+          date_detection: false,
+        },
+      }),
+    });
   }
 
-  create(index, type, id, json) {
-    indexingQueue.push({ index, type, id, json }, err => {
-      if (err) {
-        console.log(err);
-      }
+  async create(index, type, id, json) {
+    const URL = `${URLPrefix}/${index}/_doc/${id}`;
+    const body = JSON.stringify(json);
+    const res = await requestWithRetry(URL, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body,
     });
+    return res.json();
   }
 
   // Returns the raw JSON as (a promise of) text, not as an object.

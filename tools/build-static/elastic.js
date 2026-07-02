@@ -12,9 +12,12 @@ const {
 } = require('./xml.js');
 const { isFileModified } = require('../libs/caching.js');
 const elasticSearchClient = require('../libs/elasticsearch-client.js');
+const { mapLimit } = require('./concurrency.js');
 
-const update_elasticsearch = collected => {
-  const inner_update_elasticsearch = () => {
+const update_elasticsearch = async collected => {
+  const inner_update_elasticsearch = async () => {
+    const tasks = [];
+
     collected.poets.forEach((poet, poetId) => {
       collected.workids.get(poetId).forEach(workId => {
         const filename = `fdirs/${poetId}/${workId}.xml`;
@@ -42,11 +45,13 @@ const update_elasticsearch = collected => {
         };
 
         console.log(`Updating work ${poetId}-${workId} in elasticsearch`);
-        elasticSearchClient.create(
-          'kalliope',
-          'work',
-          `${poetId}-${workId}`,
-          data
+        tasks.push(() =>
+          elasticSearchClient.create(
+            'kalliope',
+            'text',
+            `${poetId}-${workId}`,
+            data
+          )
         );
         if (workBody == null) {
           return;
@@ -104,25 +109,23 @@ const update_elasticsearch = collected => {
             text: textData,
           };
           //console.log(`Putting textId ${textId}: ${title}`);
-          elasticSearchClient.create('kalliope', 'text', textId, data);
+          tasks.push(() =>
+            elasticSearchClient.create('kalliope', 'text', textId, data)
+          );
         });
       });
     });
+
+    await mapLimit(tasks, task => task(), 2);
   };
 
-  elasticSearchClient
-    .createIndex('kalliope')
-    .then(() => {
-      try {
-        inner_update_elasticsearch();
-      } catch (error) {
-        console.log(error);
-      }
-    })
-    .catch(error => {
-      console.log('Elasticsearch server not found on localhost:9200.');
-      //console.log(error);
-    });
+  try {
+    await elasticSearchClient.createIndex('kalliope');
+    await inner_update_elasticsearch();
+  } catch (error) {
+    console.log('Elasticsearch update failed.');
+    console.log(error);
+  }
 };
 
 module.exports = {

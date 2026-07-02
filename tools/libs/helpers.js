@@ -6,10 +6,11 @@ const path = require('path');
 const plimit = require('p-limit');
 const jimp = require('jimp');
 const CommonData = require('../../common/commondata.js');
+const ImagePaths = require('../../common/imagepaths.js');
 
 const safeMkdir = dirname => {
   try {
-    fs.mkdirSync(dirname);
+    fs.mkdirSync(dirname, { recursive: true });
   } catch (err) {
     if (err.code !== 'EEXIST') throw err;
   }
@@ -275,7 +276,11 @@ const resizeImage = async (inputfile, outputfile, maxWidth) => {
   });
 };
 
-const limit = plimit(5);
+const thumbnailConcurrency = Math.max(
+  1,
+  parseInt(process.env.KALLIOPE_THUMBNAIL_CONCURRENCY, 10) || 1
+);
+const limit = plimit(thumbnailConcurrency);
 
 const buildThumbnails = async (topFolder, isFileModifiedMethod) => {
   const tasks = [];
@@ -303,19 +308,17 @@ const buildThumbnails = async (topFolder, isFileModifiedMethod) => {
         filename.endsWith('.jpg') &&
         !skipRegExps.test(filename)
       ) {
-        if (
-          isFileModifiedMethod != null &&
-          !isFileModifiedMethod(fullFilename)
-        ) {
-          return;
-        }
+        const sourceMtime = fileModifiedTime(fullFilename);
         CommonData.availableImageFormats.forEach((ext, i) => {
           CommonData.availableImageWidths.forEach(width => {
-            const outputfile = fullFilename
-              .replace(/\.jpg$/, `-w${width}.${ext}`)
-              .replace(/\/([^\/]+)$/, '/t/$1');
+            const outputfile = `public${ImagePaths.thumbnailSrc(
+              fullFilename.replace(/^public/, ''),
+              width,
+              ext
+            )}`;
             safeMkdir(outputfile.replace(/\/[^\/]+?$/, ''));
-            if (!fileExists(outputfile)) {
+            const outputMtime = fileModifiedTime(outputfile);
+            if (outputMtime == null || sourceMtime > outputMtime) {
               tasks.push(
                 limit(() => {
                   return resizeImage(fullFilename, outputfile, width);
