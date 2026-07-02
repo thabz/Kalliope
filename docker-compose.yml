@@ -7,8 +7,6 @@ services:
       xpack.security.enabled: "false"
       xpack.ml.enabled: "false"
       ES_JAVA_OPTS: -Xms512m -Xmx512m
-    ports:
-      - "9200:9200"
     volumes:
       - esdata:/usr/share/elasticsearch/data
 
@@ -20,7 +18,7 @@ services:
     environment:
       ELASTICSEARCH_URL: http://elasticsearch:9200
     ports:
-      - "3000:3000"
+      - "3001:3000"
     depends_on:
       - elasticsearch
     volumes:
