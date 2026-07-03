@@ -3,6 +3,7 @@
 Disse regler gælder for AI-agenter og automatiserede assistenter, der arbejder i dette repository.
 
 - Skriv altid GitHub issue-titler, issue-beskrivelser, PR-titler og PR-beskrivelser på dansk, medmindre brugeren eksplicit beder om et andet sprog.
+- Når en PR skal lukke et GitHub issue automatisk, skal PR-beskrivelsen bruge GitHubs engelske closing keyword, fx `Fixes #123`. Skriv ikke `Lukker #123`, fordi GitHub ikke auto-lukker issues på dansk.
 - Læg portræt- og kunstgrafik under `public/images/<id>/`. Læg aldrig billedfiler under `fdirs/`.
 - `fdirs/<id>/portraits.xml` må referere lokale portrætter med `src="..."` og `square-src="..."`, men filerne skal findes i `public/images/<id>/`.
 - Tekstfiler i repoet skal være UTF-8. Indfør ikke Latin-1/ISO-8859-1 encoded filer.
