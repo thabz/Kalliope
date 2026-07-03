@@ -3,19 +3,23 @@ const os = require('os');
 const path = require('path');
 const sharp = require('sharp');
 
-const { resizeImage } = require('../tools/libs/helpers.js');
+const { buildThumbnails, resizeImage } = require('../tools/libs/helpers.js');
 const { imageSizeSync } = require('../tools/build-static/image.js');
+const ImagePaths = require('../common/imagepaths.js');
 
 describe('sharp image helpers', () => {
   let tmpdir;
+  let cwd;
   let logSpy;
 
   beforeEach(() => {
     tmpdir = fs.mkdtempSync(path.join(os.tmpdir(), 'kalliope-images-'));
+    cwd = process.cwd();
     logSpy = jest.spyOn(console, 'log').mockImplementation(() => {});
   });
 
   afterEach(() => {
+    process.chdir(cwd);
     logSpy.mockRestore();
     fs.rmSync(tmpdir, { recursive: true, force: true });
   });
@@ -66,5 +70,54 @@ describe('sharp image helpers', () => {
       width: 123,
       height: 45,
     });
+  });
+
+  it('keeps existing thumbnails when the source mtime changes without content changes', async () => {
+    process.chdir(tmpdir);
+    fs.mkdirSync('public/images/poet', { recursive: true });
+    await createJpeg('public/images/poet/p1.jpg', 320, 180);
+
+    await buildThumbnails('public/images', () => true);
+
+    const output = `public${ImagePaths.thumbnailSrc(
+      '/images/poet/p1.jpg',
+      100,
+      'jpg'
+    )}`;
+    const outputMtime = fs.statSync(output).mtimeMs;
+    const future = new Date(Date.now() + 60000);
+    fs.utimesSync('public/images/poet/p1.jpg', future, future);
+
+    await buildThumbnails('public/images', () => false);
+
+    expect(fs.statSync(output).mtimeMs).toBe(outputMtime);
+  });
+
+  it('creates missing thumbnails even when the source content is unchanged', async () => {
+    process.chdir(tmpdir);
+    fs.mkdirSync('public/images/poet', { recursive: true });
+    await createJpeg('public/images/poet/p1.jpg', 320, 180);
+
+    await buildThumbnails('public/images', () => true);
+
+    const missingOutput = `public${ImagePaths.thumbnailSrc(
+      '/images/poet/p1.jpg',
+      100,
+      'jpg'
+    )}`;
+    const existingOutput = `public${ImagePaths.thumbnailSrc(
+      '/images/poet/p1.jpg',
+      150,
+      'jpg'
+    )}`;
+    const existingOutputMtime = fs.statSync(existingOutput).mtimeMs;
+    fs.unlinkSync(missingOutput);
+    const future = new Date(Date.now() + 60000);
+    fs.utimesSync('public/images/poet/p1.jpg', future, future);
+
+    await buildThumbnails('public/images', () => false);
+
+    expect(fs.existsSync(missingOutput)).toBe(true);
+    expect(fs.statSync(existingOutput).mtimeMs).toBe(existingOutputMtime);
   });
 });

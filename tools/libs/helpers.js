@@ -305,6 +305,9 @@ const buildThumbnails = async (topFolder, isFileModifiedMethod) => {
         filename.endsWith('.jpg') &&
         !skipRegExps.test(filename)
       ) {
+        const hasModificationCache = isFileModifiedMethod != null;
+        const sourceModified =
+          hasModificationCache && isFileModifiedMethod(fullFilename);
         const sourceMtime = fileModifiedTime(fullFilename);
         CommonData.availableImageFormats.forEach((ext, i) => {
           CommonData.availableImageWidths.forEach(width => {
@@ -315,7 +318,12 @@ const buildThumbnails = async (topFolder, isFileModifiedMethod) => {
             )}`;
             safeMkdir(outputfile.replace(/\/[^\/]+?$/, ''));
             const outputMtime = fileModifiedTime(outputfile);
-            if (outputMtime == null || sourceMtime > outputMtime) {
+            if (
+              outputMtime == null ||
+              (hasModificationCache
+                ? sourceModified
+                : sourceMtime > outputMtime)
+            ) {
               tasks.push(
                 limit(() => {
                   return resizeImage(fullFilename, outputfile, width);
