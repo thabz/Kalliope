@@ -23,6 +23,23 @@ const {
   getElementsByTagName,
 } = require('./xml.js');
 
+const knownPoetLanguages = new Set([
+  'da',
+  'sv',
+  'no',
+  'en',
+  'de',
+  'fr',
+  'la',
+  'grc',
+  'fa',
+  'es',
+  'un',
+  'it',
+]);
+
+const isKnownPoetLanguage = lang => knownPoetLanguages.has(lang);
+
 const create_poet_square_thumb = (poetId, square_path) => {
   const path = `public/images/${poetId}/${square_path}`;
   const destFolder = `public/generated/images/${poetId}/social`;
@@ -125,7 +142,7 @@ const build_poets_first_pass = collected => {
     if (!country.match(/(dk|se|no|gb|de|fr|us|it|un)/)) {
       throw `${id} har ukendt land: ${country}`;
     }
-    if (!lang.match(/(da|sv|no|en|de|fr|la|fa|es|un|it)/)) {
+    if (!isKnownPoetLanguage(lang)) {
       throw `${id} har ukendt sprog: ${lang}`;
     }
 
@@ -323,4 +340,5 @@ module.exports = {
   build_poets_first_pass,
   build_poets_by_country_json,
   build_literary_periods_json,
+  isKnownPoetLanguage,
 };
