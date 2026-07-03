@@ -101,9 +101,6 @@ const build_museum_pages = collected => {
   //     const doc = loadXMLDoc(`fdirs/${poetId}/${workId}.xml`);
   //   });
   // });
-  let rebuilt = 0;
-  let skipped = 0;
-
   collected.museums.forEach((museum, museumId) => {
     if (museum.name == null) {
       // Vi tager kun museer med navne
@@ -111,7 +108,6 @@ const build_museum_pages = collected => {
     }
     const path = `public/api/museums/${museumId}.json`;
     if (!found_changes && fileExists(path)) {
-      skipped += 1;
       return;
     }
 
@@ -127,11 +123,7 @@ const build_museum_pages = collected => {
     };
     console.log(path);
     writeJSON(path, json);
-    rebuilt += 1;
   });
-  console.log(
-    `build_museum_pages: ${rebuilt} rebuilt, ${skipped} skipped`
-  );
 };
 
 module.exports = {

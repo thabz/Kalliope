@@ -153,8 +153,6 @@ const buildTextAliasRedirects = (redirects, texts) => {
 };
 
 const build_bio_json = async (collected) => {
-  let rebuilt = 0;
-  let skipped = 0;
   await mapLimit(
     Array.from(collected.poets.entries()),
     async (entry) => {
@@ -172,10 +170,8 @@ const build_bio_json = async (collected) => {
           `fdirs/${poet.id}/bio.xml`,
         )
       ) {
-        skipped += 1;
         return;
       }
-      rebuilt += 1;
 
       safeMkdir(`public/api/${poet.id}`);
       const bioXmlPath = `fdirs/${poet.id}/bio.xml`;
@@ -198,9 +194,6 @@ const build_bio_json = async (collected) => {
       console.log(destFilename);
       writeJSON(destFilename, data);
     },
-  );
-  console.log(
-    `build_bio_json: ${rebuilt} rebuilt, ${skipped} skipped, ${rebuilt + skipped} considered`
   );
 };
 
