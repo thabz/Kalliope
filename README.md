@@ -48,7 +48,8 @@ docker compose --profile build run --rm static-builder
 docker compose up --build app
 ```
 
-Det starter appen på `http://localhost:3000` og Elasticsearch på `http://localhost:9200`.
+Det starter appen på `http://localhost:3001`. Elasticsearch kører kun på
+Docker-netværket og er ikke eksponeret på hosten.
 
 Efter ændringer i XML-filer under `data/` eller `fdirs/` skal builderen køres igen:
 
