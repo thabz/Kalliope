@@ -1,6 +1,6 @@
-const { safeMkdir, writeJSON } = require('../libs/helpers.js');
+const { fileExists, safeMkdir, writeJSON } = require('../libs/helpers.js');
 const {
-  isFileModified,
+  isFileContentModified,
   loadCachedJSON,
   writeCachedJSON,
   force_reload,
@@ -15,12 +15,17 @@ const {
 // Read /data/museums.xml and produce collected.museums to to used later.
 const build_museums = () => {
   const xmlFilename = `data/museums.xml`;
+  const path = `public/api/museums.json`;
   let collected_museums = new Map(loadCachedJSON('collected.museums') || []);
   if (
-    !isFileModified(xmlFilename) &&
+    !isFileContentModified(xmlFilename) &&
     !force_reload &&
     collected_museums.size !== 0
   ) {
+    if (!fileExists(path)) {
+      console.log(path);
+      writeJSON(path, { museums: Array.from(collected_museums.values()) });
+    }
     return collected_museums;
   }
 
@@ -41,7 +46,6 @@ const build_museums = () => {
   });
   writeCachedJSON('collected.museums', Array.from(collected_museums));
 
-  const path = `public/api/museums.json`;
   console.log(path);
   writeJSON(path, { museums: Array.from(collected_museums.values()) });
 
@@ -69,26 +73,25 @@ const build_museum_url = (picture, collected) => {
 const build_museum_pages = collected => {
   safeMkdir('public/api/museums');
 
-  let found_changes = false;
+  let found_changes =
+    force_reload ||
+    isFileContentModified('data/museums.xml') ||
+    isFileContentModified('data/artwork.xml');
 
   collected.poets.forEach((poet, poetId) => {
     const portraitsFile = `fdirs/${poet.id}/portraits.xml`;
-    if (isFileModified(portraitsFile)) {
+    if (isFileContentModified(portraitsFile)) {
       found_changes = true;
     }
     const artworkFile = `fdirs/${poet.id}/artwork.xml`;
     if (poet.has_artwork) {
-      found_changes |= isFileModified(artworkFile);
+      found_changes |= isFileContentModified(artworkFile);
     }
     collected.workids.get(poet.id).forEach(workId => {
       const workFilename = `fdirs/${poetId}/${workId}.xml`;
-      found_changes |= isFileModified(workFilename);
+      found_changes |= isFileContentModified(workFilename);
     });
-    found_changes |= isFileModified('data/museums.xml');
   });
-  if (!found_changes) {
-    return;
-  }
 
   let allArtwork = Array.from(collected.artwork.values());
   // Find portrætter som ikke har en ref og dermed inkluderet i collected.artwork
@@ -98,9 +101,17 @@ const build_museum_pages = collected => {
   //     const doc = loadXMLDoc(`fdirs/${poetId}/${workId}.xml`);
   //   });
   // });
+  let rebuilt = 0;
+  let skipped = 0;
+
   collected.museums.forEach((museum, museumId) => {
     if (museum.name == null) {
       // Vi tager kun museer med navne
+      return;
+    }
+    const path = `public/api/museums/${museumId}.json`;
+    if (!found_changes && fileExists(path)) {
+      skipped += 1;
       return;
     }
 
@@ -114,10 +125,13 @@ const build_museum_pages = collected => {
       },
       artwork,
     };
-    const path = `public/api/museums/${museumId}.json`;
     console.log(path);
     writeJSON(path, json);
+    rebuilt += 1;
   });
+  console.log(
+    `build_museum_pages: ${rebuilt} rebuilt, ${skipped} skipped`
+  );
 };
 
 module.exports = {

@@ -7,6 +7,7 @@ const CommonData = require('../common/commondata.js');
 const { extractYear } = require('../common/dates.js');
 const {
   isFileModified,
+  isFileContentModified,
   markFileDirty,
   refreshFilesModifiedCache,
   force_reload: globalForceReload,
@@ -152,13 +153,15 @@ const buildTextAliasRedirects = (redirects, texts) => {
 };
 
 const build_bio_json = async (collected) => {
-  return mapLimit(
+  let rebuilt = 0;
+  let skipped = 0;
+  await mapLimit(
     Array.from(collected.poets.entries()),
     async (entry) => {
       const [poetId, poet] = entry;
       // Skip if all of the participating xml files aren't modified
       if (
-        !isFileModified(
+        !isFileContentModified(
           'data/events.xml',
           ...collected.workids
             .get(poetId)
@@ -169,8 +172,10 @@ const build_bio_json = async (collected) => {
           `fdirs/${poet.id}/bio.xml`,
         )
       ) {
+        skipped += 1;
         return;
       }
+      rebuilt += 1;
 
       safeMkdir(`public/api/${poet.id}`);
       const bioXmlPath = `fdirs/${poet.id}/bio.xml`;
@@ -193,6 +198,9 @@ const build_bio_json = async (collected) => {
       console.log(destFilename);
       writeJSON(destFilename, data);
     },
+  );
+  console.log(
+    `build_bio_json: ${rebuilt} rebuilt, ${skipped} skipped, ${rebuilt + skipped} considered`
   );
 };
 

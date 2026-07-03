@@ -62,4 +62,13 @@ describe('caching', () => {
     expect(firstConsumerSeesModified).toBe(true);
     expect(nextConsumerSeesModified).toBe(true);
   });
+
+  test('distinguishes derived dirty marks from source content changes', () => {
+    const { caching } = loadCaching('same', 100, 'same', 100);
+
+    caching.markFileDirty(filename);
+
+    expect(caching.isFileModified(filename)).toBe(true);
+    expect(caching.isFileContentModified(filename)).toBe(false);
+  });
 });
