@@ -29,6 +29,22 @@ const groupLines = (lines, type, contentLang) => {
     line = line.replace(',', '').replace('!', '');
     linePair['sortBy'] = line + ' [' + alternative + '[' + linePair.id;
     let letter = Sorting.lineSectionTitleForLang(line, contentLang);
+    if (line.indexOf('Aa') === 0) {
+      letter = 'Å';
+    }
+    if (line.indexOf('Ö') === 0) {
+      letter = 'Ø';
+    }
+    if (line.indexOf('È') === 0) {
+      letter = 'E';
+    }
+    // Oldgræsk. Nedenstående dog virker ikke lige her, men
+    // er OK i Node-terminalen.
+    letter = letter
+      .normalize('NFD') // splitter prækomponerede tegn
+      .replace(/[\u0300-\u036f]/g, '') // fjern kombinerende diakritika
+      .normalize('NFC');
+    letter = letter.toUpperCase();
     let array = groups.get(letter) || [];
     array.push(linePair);
     groups.set(letter, array);
