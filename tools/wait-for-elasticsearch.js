@@ -12,10 +12,13 @@ const waitForElasticsearch = async () => {
     try {
       const response = await fetch(healthUrl);
       if (response.ok) {
-        return;
+        const health = await response.json();
+        if (health.status === 'yellow' || health.status === 'green') {
+          return;
+        }
       }
     } catch (error) {
-      // Ignore connection errors while Elasticsearch is booting.
+      // Ignore connection and parse errors while Elasticsearch is booting.
     }
 
     await sleep(1000);

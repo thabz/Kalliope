@@ -7,7 +7,12 @@ const requestTimeout = Math.max(
 );
 const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
 
-const requestWithRetry = async (URL, options, attempts = 15) => {
+const requestWithRetry = async (
+  URL,
+  options,
+  attempts = 15,
+  acceptedStatuses = []
+) => {
   let lastError = null;
   const requestOptions = {
     timeout: requestTimeout,
@@ -16,7 +21,7 @@ const requestWithRetry = async (URL, options, attempts = 15) => {
   for (let attempt = 1; attempt <= attempts; attempt++) {
     try {
       const res = await fetch(URL, requestOptions);
-      if (res.ok) {
+      if (res.ok || acceptedStatuses.includes(res.status)) {
         return res;
       }
       const text = await res.text();
@@ -54,16 +59,15 @@ class ElasticSearchClient {
 
   async createIndex(index) {
     const URL = `${URLPrefix}/${index}`;
-    const deleteRes = await fetch(URL, {
-      method: 'DELETE',
-      timeout: requestTimeout,
-    });
-    const deleteText = await deleteRes.text();
-    if (!deleteRes.ok && deleteRes.status !== 404) {
-      throw new Error(
-        `Elasticsearch DELETE ${URL} failed: ${deleteRes.status} ${deleteText}`
-      );
-    }
+    const deleteRes = await requestWithRetry(
+      URL,
+      {
+        method: 'DELETE',
+      },
+      15,
+      [404]
+    );
+    await deleteRes.text();
     const putRes = await requestWithRetry(URL, {
       method: 'PUT',
       headers: {
