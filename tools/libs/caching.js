@@ -13,7 +13,6 @@ const force_reload = process.argv.indexOf('--force-reload') !== -1;
 // Load caches
 let old_sha = loadJSON('./caches/files-sha.json') || {};
 let new_sha = {};
-let marked_dirty_files = new Set();
 let modified_files = new Set();
 let unmodified_files = new Set();
 let deleted_files = new Set();
@@ -31,21 +30,19 @@ if (force_reload) {
 const markFileDirty = (...filenames) => {
   for (let i = 0; i < filenames.length; i++) {
     if (filenames[i] != null) {
-      const filename = filenames[i].split(':')[0];
       //console.log('Marking file dirty: ' + filenames[i]);
-      marked_dirty_files.add(filename);
-      unmodified_files.delete(filename);
+      delete old_sha[filenames[i]];
+      delete new_sha[filenames[i]];
+      modified_files.delete(filenames[i]);
+      unmodified_files.delete(filenames[i]);
     }
   }
 };
 
-const isFileModifiedWithOptions = (includeMarkedDirty, ...filenames) => {
+const isFileModified = (...filenames) => {
   const _isFileModified = filename => {
     // For now remove the :id part of the filename
     filename = filename.split(':')[0];
-    if (includeMarkedDirty && marked_dirty_files.has(filename)) {
-      return true;
-    }
     if (modified_files.has(filename)) {
       return true;
     }
@@ -104,14 +101,6 @@ const isFileModifiedWithOptions = (includeMarkedDirty, ...filenames) => {
   return result;
 };
 
-const isFileModified = (...filenames) => {
-  return isFileModifiedWithOptions(true, ...filenames);
-};
-
-const isFileContentModified = (...filenames) => {
-  return isFileModifiedWithOptions(false, ...filenames);
-};
-
 const refreshFilesModifiedCache = () => {
   // Iterate all files in the has_new_sha and
   // update 'files-sha.json'.
@@ -137,7 +126,6 @@ const shouldForceReload = () => {
 };
 module.exports = {
   isFileModified,
-  isFileContentModified,
   markFileDirty,
   refreshFilesModifiedCache,
   loadCachedJSON,

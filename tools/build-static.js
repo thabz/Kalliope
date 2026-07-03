@@ -7,7 +7,6 @@ const CommonData = require('../common/commondata.js');
 const { extractYear } = require('../common/dates.js');
 const {
   isFileModified,
-  isFileContentModified,
   markFileDirty,
   refreshFilesModifiedCache,
   force_reload: globalForceReload,
@@ -153,13 +152,13 @@ const buildTextAliasRedirects = (redirects, texts) => {
 };
 
 const build_bio_json = async (collected) => {
-  await mapLimit(
+  return mapLimit(
     Array.from(collected.poets.entries()),
     async (entry) => {
       const [poetId, poet] = entry;
       // Skip if all of the participating xml files aren't modified
       if (
-        !isFileContentModified(
+        !isFileModified(
           'data/events.xml',
           ...collected.workids
             .get(poetId)
