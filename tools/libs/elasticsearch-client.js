@@ -34,6 +34,24 @@ const requestWithRetry = async (URL, options, attempts = 15) => {
 };
 
 class ElasticSearchClient {
+  async indexExists(index) {
+    const URL = `${URLPrefix}/${index}`;
+    const res = await fetch(URL, {
+      method: 'HEAD',
+      timeout: requestTimeout,
+    });
+    if (res.ok) {
+      return true;
+    }
+    if (res.status === 404) {
+      return false;
+    }
+    const text = await res.text();
+    throw new Error(
+      `Elasticsearch HEAD ${URL} failed: ${res.status} ${text}`
+    );
+  }
+
   async createIndex(index) {
     const URL = `${URLPrefix}/${index}`;
     const deleteRes = await fetch(URL, {
@@ -71,6 +89,45 @@ class ElasticSearchClient {
       body,
     });
     return res.json();
+  }
+
+  async deleteByQuery(index, query) {
+    const URL = `${URLPrefix}/${index}/_delete_by_query?conflicts=proceed&refresh=true`;
+    const res = await requestWithRetry(URL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ query }),
+    });
+    return res.json();
+  }
+
+  deletePoet(index, poetId) {
+    return this.deleteByQuery(index, {
+      term: {
+        'poet.id': poetId,
+      },
+    });
+  }
+
+  deleteWork(index, poetId, workId) {
+    return this.deleteByQuery(index, {
+      bool: {
+        filter: [
+          {
+            term: {
+              'poet.id': poetId,
+            },
+          },
+          {
+            term: {
+              'work.id': workId,
+            },
+          },
+        ],
+      },
+    });
   }
 
   // Returns the raw JSON as (a promise of) text, not as an object.
