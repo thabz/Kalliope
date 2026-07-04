@@ -324,17 +324,21 @@ const build_mentions_json = (collected) => {
     if (!poet.has_mentions) {
       return;
     }
+    const outFilename = `public/api/${poet.id}/mentions.json`;
     const biblioFilesAreModifed =
       isFileModified(`fdirs/${poet.id}/bibliography-primary.xml`) ||
       isFileModified(`fdirs/${poet.id}/bibliography-secondary.xml`);
-    if (!biblioFilesAreModifed && !person_mentions_dirty.has(poet.id)) {
+    const shouldRebuild =
+      biblioFilesAreModifed ||
+      person_mentions_dirty.has(poet.id) ||
+      !fileExists(outFilename);
+    if (!shouldRebuild) {
       return;
     }
 
     safeMkdir(`public/api/${poet.id}`);
     let data = build_mentions_data(poet, poetId, collected, build_html);
 
-    const outFilename = `public/api/${poet.id}/mentions.json`;
     console.log(outFilename);
     writeJSON(outFilename, data);
   });
