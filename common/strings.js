@@ -5,7 +5,7 @@ export function toTitleCase(str) {
 }
 
 export function trimHtml(str) {
-  return str.replace(/<[^>]*>/g, '');
+  return str.replace(/<\/?[A-Za-z][^>]*>/g, '');
 }
 
 export function pluralize(num, ental, flertal) {
