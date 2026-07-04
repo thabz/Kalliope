@@ -7,7 +7,7 @@ jest.mock('../tools/libs/caching.js', () => ({
 
 jest.mock('../tools/libs/helpers.js', () => ({
   safeMkdir: () => {},
-  writeJSON: () => {},
+  writeJSON: jest.fn(),
   htmlToXml: (html) => html,
   fileExists: () => false,
 }));
@@ -24,7 +24,11 @@ jest.mock('../tools/build-static/xml.js', () => ({
   safeGetInnerXML: () => '',
 }));
 
-const { build_mentions_data } = require('../tools/build-static/mentions.js');
+const { writeJSON } = require('../tools/libs/helpers.js');
+const {
+  build_mentions_data,
+  build_mentions_json,
+} = require('../tools/build-static/mentions.js');
 
 const poet = (id, firstname, lastname) => ({
   id,
@@ -132,5 +136,30 @@ describe('mentions data', () => {
     );
 
     expect(data.mentions).toEqual([[['aarestrup2018110521']]]);
+  });
+
+  it('skriver manglende mentions-json fra eksisterende refs', () => {
+    const collected = buildCollected();
+    collected.poets.get('reboul').has_mentions = true;
+    const consoleLogSpy = jest.spyOn(console, 'log').mockImplementation(() => {});
+
+    try {
+      build_mentions_json(collected);
+    } finally {
+      consoleLogSpy.mockRestore();
+    }
+
+    expect(writeJSON).toHaveBeenCalledWith(
+      'public/api/reboul/mentions.json',
+      expect.objectContaining({
+        translations: expect.arrayContaining([
+          expect.objectContaining({
+            translation: expect.objectContaining({
+              poem: expect.objectContaining({ id: 'aarestrup2018110521' }),
+            }),
+          }),
+        ]),
+      })
+    );
   });
 });
