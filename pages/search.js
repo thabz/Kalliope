@@ -24,23 +24,31 @@ const RenderedHits = ({ hits }) => {
   const lang = useContext(LangContext);
 
   return hits
-    .filter((x) => x._source.text != null)
+    .filter((x) => ['poet', 'text'].includes(x._source.result_type))
     .map((hit, i) => {
       const { poet, work, text } = hit._source;
       const { highlight } = hit;
       let item = null;
-      if (text == null) {
-        const workURL = Links.textURL(lang, work.id);
+      if (hit._source.result_type === 'poet') {
+        const poetURL = Links.poetURL(lang, poet.id);
         item = (
           <div>
-            <div>
-              <Link href={workURL}>
-                <WorkName work={work} lang={lang} />
+            <div className="title">
+              <Link href={poetURL}>
+                <PoetName poet={poet} includePeriod />
               </Link>
             </div>
-            <div>
-              <PoetName poet={poet} />:{' '}
+            <div className="poet-and-work">
+              {_('Digter', lang)}
             </div>
+            <style jsx>{`
+              .title {
+                font-size: 1.15em;
+              }
+              .poet-and-work {
+                color: ${CommonData.lightTextColor};
+              }
+            `}</style>
           </div>
         );
       } else {

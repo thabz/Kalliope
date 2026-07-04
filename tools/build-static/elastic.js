@@ -74,6 +74,32 @@ const getChangedElasticsearchWorkEntries = workEntries => {
   };
 };
 
+const getPoetSearchText = poet => {
+  const name = poet.name || {};
+  return [
+    name.firstname,
+    name.lastname,
+    name.fullname,
+    name.pseudonym,
+    name.christened,
+    name.realname,
+    name.sortname,
+  ]
+    .filter(Boolean)
+    .join(' ');
+};
+
+const buildElasticsearchPoetDocuments = collected => {
+  return Array.from(collected.poets.values()).map(poet => ({
+    id: `poet-${poet.id}`,
+    data: {
+      result_type: 'poet',
+      poet,
+      poet_search: getPoetSearchText(poet),
+    },
+  }));
+};
+
 const buildElasticsearchWorkDocuments = (collected, entry) => {
   const { poet, poetId, workId, workKey } = entry;
   const filename = `fdirs/${poetId}/${workId}.xml`;
@@ -96,6 +122,7 @@ const buildElasticsearchWorkDocuments = (collected, entry) => {
     {
       id: workKey,
       data: {
+        result_type: 'work',
         poet,
         work: workData,
       },
@@ -160,7 +187,10 @@ const buildElasticsearchWorkDocuments = (collected, entry) => {
     };
     documents.push({
       id: textId,
-      data,
+      data: {
+        result_type: 'text',
+        ...data,
+      },
     });
   });
 
@@ -208,6 +238,7 @@ const update_elasticsearch = async collected => {
 
   try {
     const workEntries = getElasticsearchWorkEntries(collected);
+    const poetDocuments = buildElasticsearchPoetDocuments(collected);
     const indexExists = await elasticSearchClient.indexExists('kalliope');
     const codeModified = isFileModified(...elasticsearchCodeSourceFiles);
     const needsFullRebuild =
@@ -218,6 +249,7 @@ const update_elasticsearch = async collected => {
 
     if (needsFullRebuild) {
       await elasticSearchClient.createIndex('kalliope');
+      await writeElasticsearchDocuments(poetDocuments);
       await indexWorks(workEntries);
       return;
     }
@@ -248,6 +280,12 @@ const update_elasticsearch = async collected => {
       elasticsearchConcurrency
     );
 
+    const changedPoetDocuments = poetDocuments.filter(document =>
+      modifiedPoetIds.has(document.data.poet.id)
+    );
+    if (changedPoetDocuments.length > 0) {
+      await writeElasticsearchDocuments(changedPoetDocuments);
+    }
     await indexWorks(changedWorkEntries);
   } catch (error) {
     console.log('Elasticsearch update failed.');
@@ -257,6 +295,7 @@ const update_elasticsearch = async collected => {
 };
 
 module.exports = {
+  buildElasticsearchPoetDocuments,
   getChangedElasticsearchWorkEntries,
   getElasticsearchWorkEntries,
   update_elasticsearch,

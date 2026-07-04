@@ -37,13 +37,26 @@ jest.mock('../tools/build-static/xml.js', () => ({
 const elasticSearchClient = require('../tools/libs/elasticsearch-client.js');
 const { isFileModified } = require('../tools/libs/caching.js');
 const {
+  buildElasticsearchPoetDocuments,
   getChangedElasticsearchWorkEntries,
   getElasticsearchWorkEntries,
   update_elasticsearch,
 } = require('../tools/build-static/elastic.js');
 
 const collected = {
-  poets: new Map([['poet', { id: 'poet' }]]),
+  poets: new Map([
+    [
+      'poet',
+      {
+        id: 'poet',
+        name: {
+          firstname: 'Emil',
+          lastname: 'Aarestrup',
+          fullname: 'Carl Ludvig Emil Aarestrup',
+        },
+      },
+    ],
+  ]),
   workids: new Map([['poet', ['second', 'first']]]),
 };
 
@@ -85,6 +98,19 @@ describe('Elasticsearch build-static step', () => {
     expect(result.entries.map(entry => entry.workKey)).toEqual(['poet-first']);
   });
 
+  test('builds searchable poet documents', () => {
+    expect(buildElasticsearchPoetDocuments(collected)).toEqual([
+      {
+        id: 'poet-poet',
+        data: {
+          result_type: 'poet',
+          poet: collected.poets.get('poet'),
+          poet_search: 'Emil Aarestrup Carl Ludvig Emil Aarestrup',
+        },
+      },
+    ]);
+  });
+
   test('skips Elasticsearch when no works changed and index exists', async () => {
     await update_elasticsearch(collected);
 
@@ -115,7 +141,7 @@ describe('Elasticsearch build-static step', () => {
       'text',
       'poet-first',
       expect.objectContaining({
-        poet: { id: 'poet' },
+        poet: collected.poets.get('poet'),
         work: expect.objectContaining({ id: 'first' }),
       })
     );
@@ -134,8 +160,9 @@ describe('Elasticsearch build-static step', () => {
       'poet'
     );
     expect(elasticSearchClient.deleteWork).not.toHaveBeenCalled();
-    expect(elasticSearchClient.create).toHaveBeenCalledTimes(2);
+    expect(elasticSearchClient.create).toHaveBeenCalledTimes(3);
     expect(elasticSearchClient.create.mock.calls.map(call => call[2])).toEqual([
+      'poet-poet',
       'poet-first',
       'poet-second',
     ]);
@@ -149,6 +176,11 @@ describe('Elasticsearch build-static step', () => {
     expect(elasticSearchClient.createIndex).toHaveBeenCalledWith('kalliope');
     expect(elasticSearchClient.deletePoet).not.toHaveBeenCalled();
     expect(elasticSearchClient.deleteWork).not.toHaveBeenCalled();
-    expect(elasticSearchClient.create).toHaveBeenCalledTimes(2);
+    expect(elasticSearchClient.create).toHaveBeenCalledTimes(3);
+    expect(elasticSearchClient.create.mock.calls.map(call => call[2])).toEqual([
+      'poet-poet',
+      'poet-first',
+      'poet-second',
+    ]);
   });
 });
