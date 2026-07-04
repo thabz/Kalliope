@@ -74,8 +74,36 @@ class ElasticSearchClient {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
+        settings: {
+          analysis: {
+            analyzer: {
+              kalliope_text: {
+                tokenizer: 'standard',
+                filter: ['lowercase', 'asciifolding'],
+              },
+            },
+          },
+        },
         mappings: {
           date_detection: false,
+          properties: {
+            text: {
+              properties: {
+                title: {
+                  type: 'text',
+                  analyzer: 'kalliope_text',
+                },
+                content_html: {
+                  type: 'text',
+                  analyzer: 'kalliope_text',
+                },
+                subtitles: {
+                  type: 'text',
+                  analyzer: 'kalliope_text',
+                },
+              },
+            },
+          },
         },
       }),
     });
