@@ -57,15 +57,6 @@ Efter ændringer i XML-filer under `data/` eller `fdirs/` skal builderen køres 
 docker compose --profile build run --rm static-builder
 ```
 
-Hvis din Docker-installation stadig bruger den gamle Compose-klient, kan du bruge:
-
-```shell
-docker-compose up -d elasticsearch
-docker-compose --profile build build static-builder
-docker-compose --profile build run --rm static-builder
-docker-compose up --build app
-```
-
 På Colima kan første statiske build godt kræve mere RAM end standardopsætningen, især under thumbnail-generering. Docker-opsætningen kører fire thumbnails ad gangen som standard (`KALLIOPE_THUMBNAIL_CONCURRENCY=4`), men holder sharp/libvips per-billede concurrency lav (`KALLIOPE_SHARP_CONCURRENCY=1`) og bruger en lille sharp-cache (`KALLIOPE_SHARP_CACHE_MEMORY=64`) for at spare hukommelse. Hvis containeren alligevel bliver killed under `build-static`, så prøv at starte Colima med mere hukommelse og kør builderen igen:
 
 ```shell
