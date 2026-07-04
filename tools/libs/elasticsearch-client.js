@@ -174,7 +174,12 @@ class ElasticSearchClient {
             {
               multi_match: {
                 query: query,
-                fields: ['text.title', 'text.content_html', 'text.subtitles'],
+                fields: [
+                  'poet_search^4',
+                  'text.title^3',
+                  'text.subtitles^2',
+                  'text.content_html',
+                ],
               },
             },
           ],
@@ -190,6 +195,9 @@ class ElasticSearchClient {
     if (poetId != null && poetId.length > 0) {
       body.query.bool.filter.push({
         term: { 'poet.id': poetId },
+      });
+      body.query.bool.filter.push({
+        term: { result_type: 'text' },
       });
     }
 

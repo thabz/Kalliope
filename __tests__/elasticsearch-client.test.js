@@ -38,4 +38,36 @@ describe('Elasticsearch client', () => {
       'kalliope_text'
     );
   });
+
+  test('searches both texts and poet names', async () => {
+    await elasticSearchClient.search('kalliope', 'text', 'dk', '', 'aarestrup');
+
+    const body = JSON.parse(fetch.mock.calls[0][1].body);
+
+    expect(body.query.bool.must[0].multi_match.fields).toEqual([
+      'poet_search^4',
+      'text.title^3',
+      'text.subtitles^2',
+      'text.content_html',
+    ]);
+    expect(body.query.bool.filter).toEqual([{ term: { 'poet.country': 'dk' } }]);
+  });
+
+  test('searches only texts when scoped to a poet', async () => {
+    await elasticSearchClient.search(
+      'kalliope',
+      'text',
+      'dk',
+      'aarestrup',
+      'rose'
+    );
+
+    const body = JSON.parse(fetch.mock.calls[0][1].body);
+
+    expect(body.query.bool.filter).toEqual([
+      { term: { 'poet.country': 'dk' } },
+      { term: { 'poet.id': 'aarestrup' } },
+      { term: { result_type: 'text' } },
+    ]);
+  });
 });
