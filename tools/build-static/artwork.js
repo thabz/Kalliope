@@ -4,7 +4,7 @@ const {
   loadCachedJSON,
   writeCachedJSON,
   markFileDirty,
-  globalForceReload,
+  force_reload: globalForceReload,
 } = require('../libs/caching.js');
 const { imageSizeSync } = require('./image.js');
 const {
@@ -90,6 +90,7 @@ const build_artwork = async (collected) => {
     ? new Map()
     : new Map(loadCachedJSON('collected.artwork') || []);
   const force_reload = collected_artwork.size == 0;
+  let found_changes = false;
 
   await mapLimit(
     Array.from(collected.poets.values()),
@@ -97,12 +98,11 @@ const build_artwork = async (collected) => {
       const personId = person.id;
       const artworkFilename = `fdirs/${personId}/artwork.xml`;
       const portraitsFile = `fdirs/${personId}/portraits.xml`;
+      const artworkFileChanged =
+        force_reload || isFileModified(artworkFilename);
 
-      if (
-        force_reload ||
-        fileExists(artworkFilename) ||
-        isFileModified(artworkFilename)
-      ) {
+      if (artworkFileChanged) {
+        found_changes = true;
         // Fjern eksisterende fra cache (i tilfælde af id er slettet)
         Array.from(collected_artwork.keys())
           .filter((k) => k.indexOf(`${personId}/`) === 0)
@@ -110,13 +110,16 @@ const build_artwork = async (collected) => {
             collected_artwork.delete(k);
           });
 
-        (await readArtworkFile(personId, artworkFilename, collected)).forEach(
-          (artwork) => {
-            collected_artwork.set(artwork.id, artwork);
-          }
-        );
+        if (fileExists(artworkFilename)) {
+          (await readArtworkFile(personId, artworkFilename, collected)).forEach(
+            (artwork) => {
+              collected_artwork.set(artwork.id, artwork);
+            }
+          );
+        }
       }
       if (force_reload || isFileModified(portraitsFile)) {
+        found_changes = true;
         // Fjern eksisterende portraits fra cache (i tilfælde af id er slettet)
         Array.from(collected_artwork.keys())
           .filter((k) => k.indexOf(`portrait/${personId}/`) === 0)
@@ -170,6 +173,7 @@ const build_artwork = async (collected) => {
         async (workId) => {
           const workFilename = `fdirs/${personId}/${workId}.xml`;
           if (force_reload || isFileModified(workFilename)) {
+            found_changes = true;
             // Fjern eksisterende work pictures fra cache
             Array.from(collected_artwork.keys())
               .filter((k) => k.indexOf(`work/${personId}/${workId}`) === 0)
@@ -219,13 +223,24 @@ const build_artwork = async (collected) => {
     }
   );
 
-  (await readArtworkFile('kunst', 'data/artwork.xml', collected)).forEach(
-    (artwork) => {
-      collected_artwork.set(artwork.id, artwork);
-    }
-  );
+  if (force_reload || isFileModified('data/artwork.xml')) {
+    found_changes = true;
+    Array.from(collected_artwork.keys())
+      .filter((k) => k.indexOf('kunst/') === 0)
+      .forEach((k) => {
+        collected_artwork.delete(k);
+      });
 
-  writeCachedJSON('collected.artwork', Array.from(collected_artwork));
+    (await readArtworkFile('kunst', 'data/artwork.xml', collected)).forEach(
+      (artwork) => {
+        collected_artwork.set(artwork.id, artwork);
+      }
+    );
+  }
+
+  if (found_changes) {
+    writeCachedJSON('collected.artwork', Array.from(collected_artwork));
+  }
   return collected_artwork;
 };
 
