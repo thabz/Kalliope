@@ -6,7 +6,6 @@ import * as Links from '../components/links';
 import { kalliopeMenu } from '../components/menu.js';
 import Note from '../components/note.js';
 import Page from '../components/page.js';
-import Picture from '../components/picture.js';
 import SidebarPictures from '../components/sidebarpictures.js';
 import SidebarSplit from '../components/sidebarsplit.js';
 import SubHeading from '../components/subheading.js';
@@ -24,20 +23,14 @@ const About = (props) => {
     return <ErrorPage error={error} lang={lang} message="Ukendt nøgleord" />;
   }
 
-  const pictures = keyword.pictures.map((p, i) => {
-    return (
-      <Picture
-        key={'pic' + i}
-        pictures={[p]}
-        contentLang={p.content_lang || 'da'}
-        showDropShadow={aboutItemId !== 'kalliope'}
-        clickToZoom={aboutItemId !== 'kalliope'}
-        lang={lang}
-      />
-    );
-  });
   const renderedPictures = (
-    <SidebarPictures key="pictures">{pictures}</SidebarPictures>
+    <SidebarPictures
+      key="pictures"
+      pictures={keyword.pictures}
+      showDropShadow={aboutItemId !== 'kalliope'}
+      clickToZoom={aboutItemId !== 'kalliope'}
+      lang={lang}
+    />
   );
   const renderedNotes = keyword.notes.map((note, i) => {
     return (

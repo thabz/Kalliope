@@ -13,7 +13,6 @@ import * as Links from '../components/links';
 import { poetMenu } from '../components/menu.js';
 import Note from '../components/note.js';
 import Page from '../components/page.js';
-import Picture from '../components/picture.js';
 import { poetNameString } from '../components/poetname-helpers.js';
 import PoetName from '../components/poetname.js';
 import SidebarPictures from '../components/sidebarpictures.js';
@@ -334,16 +333,7 @@ const TextPage = (props) => {
     renderedNotes = <div style={{ marginBottom: '30px' }}>{notes}</div>;
   }
 
-  let textPictures = text.pictures.map((p, i) => {
-    return (
-      <Picture
-        key={'textpicture' + i}
-        pictures={[p]}
-        contentLang={p.content_lang || 'da'}
-        lang={lang}
-      />
-    );
-  });
+  let textPictures = [...text.pictures];
 
   if (text.source != null && text.source.facsimilePages != null) {
     function pad(num, size) {
@@ -361,20 +351,18 @@ const TextPage = (props) => {
         content_lang: 'da',
       });
     }
-    textPictures.push(
-      <Picture
-        key={'facsimile' + firstPageNumber}
-        pictures={facsimilePictures}
-        startIndex={firstPageNumber - 1}
-        lang="da"
-        contentLang="da"
-      />
-    );
+    textPictures.push({
+      key: 'facsimile' + firstPageNumber,
+      pictures: facsimilePictures,
+      startIndex: firstPageNumber - 1,
+      lang: 'da',
+      contentLang: 'da',
+    });
   }
 
   const renderedPictures = (
     <div style={{ marginTop: '30px' }}>
-      <SidebarPictures>{textPictures}</SidebarPictures>
+      <SidebarPictures pictures={textPictures} lang={lang} />
     </div>
   );
 

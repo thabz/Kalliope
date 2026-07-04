@@ -6,7 +6,6 @@ import { FootnoteContainer, FootnoteList } from '../components/footnotes.js';
 import * as Links from '../components/links';
 import { kalliopeMenu } from '../components/menu.js';
 import Page from '../components/page.js';
-import Picture from '../components/picture.js';
 import SidebarPictures from '../components/sidebarpictures.js';
 import SidebarSplit from '../components/sidebarsplit.js';
 import SubHeading from '../components/subheading.js';
@@ -22,17 +21,9 @@ const KeywordPage = (props) => {
 
   const requestPath = `/${lang}/keyword/${keyword.id}`;
 
-  const pictures = keyword.pictures.map((p, i) => {
-    return (
-      <Picture
-        key={i}
-        pictures={[p]}
-        contentLang={p.content_lang || 'da'}
-        lang={lang}
-      />
-    );
-  });
-  const renderedPictures = <SidebarPictures>{pictures}</SidebarPictures>;
+  const renderedPictures = (
+    <SidebarPictures pictures={keyword.pictures} lang={lang} />
+  );
 
   let sidebar = [];
 
