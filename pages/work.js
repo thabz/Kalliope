@@ -7,7 +7,6 @@ import * as Links from '../components/links.js';
 import { poetMenu } from '../components/menu.js';
 import Note from '../components/note.js';
 import Page from '../components/page.js';
-import Picture from '../components/picture.js';
 import { poetNameString } from '../components/poetname-helpers.js';
 import PoetName from '../components/poetname.js';
 import SidebarPictures from '../components/sidebarpictures.js';
@@ -51,17 +50,7 @@ const WorkPage = (props) => {
     );
   });
 
-  const workPictures = pictures.map((p, i) => {
-    return (
-      <Picture
-        pictures={[p]}
-        key={'picture' + i}
-        contentLang={p.content_lang || 'da'}
-        lang={lang}
-      />
-    );
-  });
-  const renderedPictures = <SidebarPictures>{workPictures}</SidebarPictures>;
+  const renderedPictures = <SidebarPictures pictures={pictures} lang={lang} />;
   const completedStatus =
     work.status === 'incomplete' && work.id !== 'andre' ? (
       <div>
