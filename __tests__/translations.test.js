@@ -16,5 +16,11 @@ describe('translations helper', () => {
     expect(_('Søg i {genetiveLastName} værker', 'en', {
       genetiveLastName: 'Aarestrup',
     })).toBe('Search Aarestrup works');
+    expect(_('Søg i {genetiveLastName} værker', 'de', {
+      genetiveLastName: 'von Goethe',
+    })).toBe('In den Werken von Goethe suchen');
+    expect(_('Søg i {genetiveLastName} værker', 'fr', {
+      genetiveLastName: 'de Reboul',
+    })).toBe('Rechercher dans les œuvres de Reboul');
   });
 });
