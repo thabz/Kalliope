@@ -141,8 +141,13 @@ describe('mentions data', () => {
   it('skriver manglende mentions-json fra eksisterende refs', () => {
     const collected = buildCollected();
     collected.poets.get('reboul').has_mentions = true;
+    const consoleLogSpy = jest.spyOn(console, 'log').mockImplementation(() => {});
 
-    build_mentions_json(collected);
+    try {
+      build_mentions_json(collected);
+    } finally {
+      consoleLogSpy.mockRestore();
+    }
 
     expect(writeJSON).toHaveBeenCalledWith(
       'public/api/reboul/mentions.json',
