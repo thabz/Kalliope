@@ -183,7 +183,7 @@ class ElasticSearchClient {
               },
             },
           ],
-          filter: [{ term: { 'poet.country': country } }],
+          filter: [],
         },
       },
       highlight: {
@@ -198,6 +198,26 @@ class ElasticSearchClient {
       });
       body.query.bool.filter.push({
         term: { result_type: 'text' },
+      });
+      body.query.bool.filter.push({
+        term: { 'poet.country': country },
+      });
+    } else {
+      body.query.bool.filter.push({
+        bool: {
+          should: [
+            { term: { result_type: 'poet' } },
+            {
+              bool: {
+                filter: [
+                  { term: { result_type: 'text' } },
+                  { term: { 'poet.country': country } },
+                ],
+              },
+            },
+          ],
+          minimum_should_match: 1,
+        },
       });
     }
 

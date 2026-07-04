@@ -39,10 +39,11 @@ describe('Elasticsearch client', () => {
     );
   });
 
-  test('searches both texts and poet names', async () => {
+  test('searches poet names across countries and texts in selected country', async () => {
     await elasticSearchClient.search('kalliope', 'text', 'dk', '', 'aarestrup');
 
     const body = JSON.parse(fetch.mock.calls[0][1].body);
+    const resultTypeFilter = body.query.bool.filter[0].bool;
 
     expect(body.query.bool.must[0].multi_match.fields).toEqual([
       'poet_search^4',
@@ -50,7 +51,20 @@ describe('Elasticsearch client', () => {
       'text.subtitles^2',
       'text.content_html',
     ]);
-    expect(body.query.bool.filter).toEqual([{ term: { 'poet.country': 'dk' } }]);
+    expect(resultTypeFilter).toEqual({
+      should: [
+        { term: { result_type: 'poet' } },
+        {
+          bool: {
+            filter: [
+              { term: { result_type: 'text' } },
+              { term: { 'poet.country': 'dk' } },
+            ],
+          },
+        },
+      ],
+      minimum_should_match: 1,
+    });
   });
 
   test('searches only texts when scoped to a poet', async () => {
@@ -65,9 +79,9 @@ describe('Elasticsearch client', () => {
     const body = JSON.parse(fetch.mock.calls[0][1].body);
 
     expect(body.query.bool.filter).toEqual([
-      { term: { 'poet.country': 'dk' } },
       { term: { 'poet.id': 'aarestrup' } },
       { term: { result_type: 'text' } },
+      { term: { 'poet.country': 'dk' } },
     ]);
   });
 });
