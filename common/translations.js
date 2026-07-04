@@ -56,9 +56,13 @@ const translations = {
   'en*knytter sig til samme dato.': 'are associated with the same date.',
 
   'de*og': 'und',
+  'de*Søg i {genetiveLastName} værker':
+    'In den Werken {genetiveLastName} suchen',
   'de*knytter sig til samme dato.': 'beziehen sich auf dasselbe Datum.',
 
   'fr*og': 'et',
+  'fr*Søg i {genetiveLastName} værker':
+    'Rechercher dans les œuvres {genetiveLastName}',
   'fr*knytter sig til samme dato.': 'se rapportent à la même date.',
 };
 

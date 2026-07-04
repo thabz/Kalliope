@@ -116,7 +116,7 @@ describe('String method', () => {
     expect(poetLastNameString({ name: {} })).toEqual('Ukendt');
   });
 
-  it('formats genitive last names in Danish and English', () => {
+  it('formats genitive last names', () => {
     expect(poetGenetiveLastName({ name: { lastname: 'Petersen' } }, 'da')).toBe(
       'Petersens'
     );
@@ -126,11 +126,29 @@ describe('String method', () => {
     expect(poetGenetiveLastName({ name: { lastname: 'Petersen' } }, 'en')).toBe(
       'Petersen’s'
     );
-    expect(poetGenetiveLastName({ name: { lastname: 'S' } }, 'en')).toBe(
-      'S’s'
+    expect(poetGenetiveLastName({ name: { lastname: 'Dickens' } }, 'en')).toBe(
+      'Dickens’'
     );
-    expect(() => poetGenetiveLastName({ name: {} }, 'fr')).toThrow(
-      'Ukendt sprog: fr'
+    expect(poetGenetiveLastName({ name: { lastname: 'Marx' } }, 'en')).toBe(
+      'Marx’s'
+    );
+    expect(poetGenetiveLastName({ name: { lastname: 'Berlioz' } }, 'en')).toBe(
+      'Berlioz’s'
+    );
+    expect(poetGenetiveLastName({ name: { lastname: 'Goethe' } }, 'de')).toBe(
+      'von Goethe'
+    );
+    expect(poetGenetiveLastName({ name: { lastname: 'Reboul' } }, 'fr')).toBe(
+      'de Reboul'
+    );
+    expect(
+      poetGenetiveLastName({ name: { lastname: 'Aarestrup' } }, 'fr')
+    ).toBe('d’Aarestrup');
+    expect(poetGenetiveLastName({ name: { lastname: "d'Urfé" } }, 'fr')).toBe(
+      'd’Urfé'
+    );
+    expect(() => poetGenetiveLastName({ name: {} }, 'it')).toThrow(
+      'Ukendt sprog: it'
     );
   });
 });
