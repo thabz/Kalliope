@@ -154,6 +154,39 @@ const rootStaticContentTypes = {
   '.xml': 'application/xml; charset=utf-8',
 };
 
+const cacheControlForPath = pathname => {
+  if (dev) {
+    return 'no-cache';
+  }
+  if (pathname.indexOf('/_next/static/') === 0) {
+    // 31536000 seconds = 365 days. Next.js filenames are content-hashed.
+    return 'public, max-age=31536000, immutable';
+  }
+  if (
+    pathname.indexOf('/api/') === 0 ||
+    pathname.indexOf('/generated/') === 0 ||
+    pathname === '/sitemap.xml'
+  ) {
+    // 43200 seconds = 12 hours. Build-static data changes when the XML changes.
+    return 'public, max-age=43200';
+  }
+  if (
+    pathname.indexOf('/images/') === 0 ||
+    pathname.indexOf('/kunst/') === 0 ||
+    pathname.indexOf('/fonts/') === 0 ||
+    rootStaticFiles.indexOf(pathname) > -1
+  ) {
+    // 2592000 seconds = 30 days. These assets are comparatively stable.
+    return 'public, max-age=2592000';
+  }
+
+  return 'no-cache';
+};
+
+const setCacheHeaders = (pathname, res) => {
+  res.setHeader('Cache-Control', cacheControlForPath(pathname));
+};
+
 const serveRootStaticFile = (pathname, res) => {
   const path = join(__dirname, 'public', pathname);
   const stream = createReadStream(path);
@@ -174,6 +207,7 @@ const serveRootStaticFile = (pathname, res) => {
 app.prepare().then(() => {
   createServer((req, res) => {
     const { pathname, query } = parse(req.url, true);
+    setCacheHeaders(pathname, res);
 
     if (pathname.indexOf('/static/') === 0) {
       const location = req.url.replace(/^\/static/, '');
