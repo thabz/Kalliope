@@ -28,7 +28,7 @@ function stripDiacriticsGreek(str) {
   );
 }
 const build_global_lines_json = (collected) => {
-  safeMkdir('static/api/alltexts');
+  safeMkdir('public/api/alltexts');
   let changed_langs = {};
   let found_changes = false;
   collected.workids.forEach((workIds, poetId) => {
