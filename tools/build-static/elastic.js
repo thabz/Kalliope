@@ -223,6 +223,36 @@ const writeElasticsearchDocuments = async documents => {
   );
 };
 
+const isElasticsearchUnavailable = error => {
+  const unavailableCodes = new Set([
+    'ECONNREFUSED',
+    'ECONNRESET',
+    'ENOTFOUND',
+    'EHOSTUNREACH',
+    'ETIMEDOUT',
+  ]);
+  let current = error;
+
+  while (current != null) {
+    if (
+      unavailableCodes.has(current.code) ||
+      unavailableCodes.has(current.errno)
+    ) {
+      return true;
+    }
+    if (
+      /\b(ECONNREFUSED|ECONNRESET|ENOTFOUND|EHOSTUNREACH|ETIMEDOUT)\b/.test(
+        current.message || ''
+      )
+    ) {
+      return true;
+    }
+    current = current.cause;
+  }
+
+  return false;
+};
+
 const update_elasticsearch = async collected => {
   const indexWorks = async entries => {
     const documents = [];
@@ -288,6 +318,13 @@ const update_elasticsearch = async collected => {
     }
     await indexWorks(changedWorkEntries);
   } catch (error) {
+    if (isElasticsearchUnavailable(error)) {
+      console.log(
+        'Elasticsearch server not available; skipping search index update.'
+      );
+      console.log(error.message);
+      return;
+    }
     console.log('Elasticsearch update failed.');
     console.log(error);
     throw error;

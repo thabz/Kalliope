@@ -120,6 +120,25 @@ describe('Elasticsearch build-static step', () => {
     expect(elasticSearchClient.create).not.toHaveBeenCalled();
   });
 
+  test('skips Elasticsearch when the local server is unavailable', async () => {
+    const error = new Error('connect ECONNREFUSED 127.0.0.1:9200');
+    error.code = 'ECONNREFUSED';
+    elasticSearchClient.indexExists.mockRejectedValue(error);
+    const consoleLog = jest.spyOn(console, 'log').mockImplementation(() => {});
+
+    await expect(update_elasticsearch(collected)).resolves.toBeUndefined();
+
+    expect(elasticSearchClient.createIndex).not.toHaveBeenCalled();
+    expect(elasticSearchClient.deletePoet).not.toHaveBeenCalled();
+    expect(elasticSearchClient.deleteWork).not.toHaveBeenCalled();
+    expect(elasticSearchClient.create).not.toHaveBeenCalled();
+    expect(consoleLog).toHaveBeenCalledWith(
+      'Elasticsearch server not available; skipping search index update.'
+    );
+
+    consoleLog.mockRestore();
+  });
+
   test('indexes only changed works', async () => {
     isFileModified.mockImplementation((...filenames) =>
       filenames.includes('fdirs/poet/first.xml')
