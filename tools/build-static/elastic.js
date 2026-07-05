@@ -18,6 +18,10 @@ const elasticsearchConcurrency = Math.max(
   1,
   parseInt(process.env.KALLIOPE_ELASTICSEARCH_CONCURRENCY, 10) || 1
 );
+const elasticsearchBulkSize = Math.max(
+  1,
+  parseInt(process.env.KALLIOPE_ELASTICSEARCH_BULK_SIZE, 10) || 500
+);
 const elasticsearchForceRebuild = ['1', 'true', 'yes'].includes(
   (process.env.KALLIOPE_ELASTICSEARCH_FORCE_REBUILD || '').toLowerCase()
 );
@@ -197,22 +201,34 @@ const buildElasticsearchWorkDocuments = (collected, entry) => {
   return documents;
 };
 
+const chunkDocuments = documents => {
+  const chunks = [];
+
+  for (let i = 0; i < documents.length; i += elasticsearchBulkSize) {
+    chunks.push(documents.slice(i, i + elasticsearchBulkSize));
+  }
+
+  return chunks;
+};
+
 const writeElasticsearchDocuments = async documents => {
+  const chunks = chunkDocuments(documents);
+
   console.log(
-    `Writing ${documents.length} Elasticsearch documents with concurrency ${elasticsearchConcurrency}`
+    `Writing ${documents.length} Elasticsearch documents in ` +
+      `${chunks.length} bulk request(s) with concurrency ` +
+      elasticsearchConcurrency
   );
   let completed = 0;
   await mapLimit(
-    documents,
-    async document => {
-      const result = await elasticSearchClient.create(
-        'kalliope',
-        'text',
-        document.id,
-        document.data
-      );
-      completed += 1;
-      if (completed % 100 === 0 || completed === documents.length) {
+    chunks,
+    async chunk => {
+      const result = await elasticSearchClient.bulkCreate('kalliope', chunk);
+      completed += chunk.length;
+      if (
+        completed % elasticsearchBulkSize === 0 ||
+        completed === documents.length
+      ) {
         console.log(
           `Wrote ${completed}/${documents.length} Elasticsearch documents`
         );
@@ -281,6 +297,7 @@ const update_elasticsearch = async collected => {
       await elasticSearchClient.createIndex('kalliope');
       await writeElasticsearchDocuments(poetDocuments);
       await indexWorks(workEntries);
+      await elasticSearchClient.refreshIndex('kalliope');
       return;
     }
 
@@ -317,6 +334,7 @@ const update_elasticsearch = async collected => {
       await writeElasticsearchDocuments(changedPoetDocuments);
     }
     await indexWorks(changedWorkEntries);
+    await elasticSearchClient.refreshIndex('kalliope');
   } catch (error) {
     if (isElasticsearchUnavailable(error)) {
       console.log(

@@ -123,6 +123,55 @@ class ElasticSearchClient {
     return res.json();
   }
 
+  async bulkCreate(index, documents) {
+    if (documents.length === 0) {
+      return { errors: false, items: [] };
+    }
+
+    const URL = `${URLPrefix}/${index}/_bulk`;
+    const body =
+      documents
+        .map(document =>
+          [
+            JSON.stringify({
+              index: {
+                _id: document.id,
+              },
+            }),
+            JSON.stringify(document.data),
+          ].join('\n')
+        )
+        .join('\n') + '\n';
+    const res = await requestWithRetry(URL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-ndjson',
+      },
+      body,
+    });
+    const result = await res.json();
+
+    if (result.errors) {
+      const failedItem = result.items.find(item => {
+        const action = item.index || item.create || item.update;
+        return action && action.error;
+      });
+      throw new Error(
+        `Elasticsearch bulk ${URL} failed: ${JSON.stringify(failedItem)}`
+      );
+    }
+
+    return result;
+  }
+
+  async refreshIndex(index) {
+    const URL = `${URLPrefix}/${index}/_refresh`;
+    const res = await requestWithRetry(URL, {
+      method: 'POST',
+    });
+    return res.json();
+  }
+
   async deleteByQuery(index, query) {
     const URL = `${URLPrefix}/${index}/_delete_by_query?conflicts=proceed&refresh=true`;
     const res = await requestWithRetry(URL, {
