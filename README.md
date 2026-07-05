@@ -51,6 +51,20 @@ docker compose up --build app
 Det starter appen på `http://localhost:3001`. Elasticsearch kører kun på
 Docker-netværket og er ikke eksponeret på hosten.
 
+Hvis du udvikler direkte på hosten med `npm run dev`, men gerne vil bruge
+Elasticsearch fra Docker på `localhost:9200`, så start kun Elasticsearch med
+dev-override:
+
+```shell
+docker compose -f docker-compose.yml -f docker-compose.dev.yml up -d elasticsearch
+npm run build-static
+npm run dev
+```
+
+`docker-compose.dev.yml` eksponerer kun Elasticsearch-porten, når override-filen
+bruges. Den almindelige Docker-opsætning holder stadig Elasticsearch internt på
+Docker-netværket.
+
 Efter ændringer i XML-filer under `data/` eller `fdirs/` skal builderen køres igen:
 
 ```shell
