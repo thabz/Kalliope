@@ -5,12 +5,14 @@ const elasticSearchClient = require('../tools/libs/elasticsearch-client.js');
 
 const response = {
   ok: true,
+  json: jest.fn(async () => ({ errors: false, items: [] })),
   text: jest.fn(async () => ''),
 };
 
 describe('Elasticsearch client', () => {
   beforeEach(() => {
     jest.clearAllMocks();
+    response.json.mockClear();
     response.text.mockClear();
     fetch.mockResolvedValue(response);
   });
@@ -37,6 +39,38 @@ describe('Elasticsearch client', () => {
     expect(body.mappings.properties.text.properties.subtitles.analyzer).toBe(
       'kalliope_text'
     );
+  });
+
+  test('writes documents through the bulk API as newline-delimited JSON', async () => {
+    await elasticSearchClient.bulkCreate('kalliope', [
+      {
+        id: 'poet-first',
+        data: {
+          result_type: 'work',
+        },
+      },
+      {
+        id: 'text-id',
+        data: {
+          result_type: 'text',
+          title: 'Første linje',
+        },
+      },
+    ]);
+
+    const [url, options] = fetch.mock.calls[0];
+    const lines = options.body.split('\n');
+
+    expect(url).toBe('http://localhost:9200/kalliope/_bulk');
+    expect(options.method).toBe('POST');
+    expect(options.headers['Content-Type']).toBe('application/x-ndjson');
+    expect(lines).toEqual([
+      JSON.stringify({ index: { _id: 'poet-first' } }),
+      JSON.stringify({ result_type: 'work' }),
+      JSON.stringify({ index: { _id: 'text-id' } }),
+      JSON.stringify({ result_type: 'text', title: 'Første linje' }),
+      '',
+    ]);
   });
 
   test('searches poet names across countries and texts in selected country', async () => {

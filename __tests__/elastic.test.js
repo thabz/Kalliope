@@ -9,11 +9,13 @@ jest.mock('../tools/libs/caching.js', () => ({
 }));
 
 jest.mock('../tools/libs/elasticsearch-client.js', () => ({
+  bulkCreate: jest.fn(),
   create: jest.fn(),
   createIndex: jest.fn(),
   deletePoet: jest.fn(),
   deleteWork: jest.fn(),
   indexExists: jest.fn(),
+  refreshIndex: jest.fn(),
 }));
 
 jest.mock('../tools/build-static/concurrency.js', () => ({
@@ -59,6 +61,11 @@ const collected = {
   ]),
   workids: new Map([['poet', ['second', 'first']]]),
 };
+
+const bulkDocumentIds = () =>
+  elasticSearchClient.bulkCreate.mock.calls.flatMap(call =>
+    call[1].map(document => document.id)
+  );
 
 describe('Elasticsearch build-static step', () => {
   beforeEach(() => {
@@ -117,7 +124,8 @@ describe('Elasticsearch build-static step', () => {
     expect(elasticSearchClient.createIndex).not.toHaveBeenCalled();
     expect(elasticSearchClient.deletePoet).not.toHaveBeenCalled();
     expect(elasticSearchClient.deleteWork).not.toHaveBeenCalled();
-    expect(elasticSearchClient.create).not.toHaveBeenCalled();
+    expect(elasticSearchClient.bulkCreate).not.toHaveBeenCalled();
+    expect(elasticSearchClient.refreshIndex).not.toHaveBeenCalled();
   });
 
   test('indexes only changed works', async () => {
@@ -135,16 +143,20 @@ describe('Elasticsearch build-static step', () => {
       'poet',
       'first'
     );
-    expect(elasticSearchClient.create).toHaveBeenCalledTimes(1);
-    expect(elasticSearchClient.create).toHaveBeenCalledWith(
+    expect(elasticSearchClient.bulkCreate).toHaveBeenCalledTimes(1);
+    expect(elasticSearchClient.bulkCreate).toHaveBeenCalledWith(
       'kalliope',
-      'text',
-      'poet-first',
-      expect.objectContaining({
-        poet: collected.poets.get('poet'),
-        work: expect.objectContaining({ id: 'first' }),
-      })
+      [
+        expect.objectContaining({
+          id: 'poet-first',
+          data: expect.objectContaining({
+            poet: collected.poets.get('poet'),
+            work: expect.objectContaining({ id: 'first' }),
+          }),
+        }),
+      ]
     );
+    expect(elasticSearchClient.refreshIndex).toHaveBeenCalledWith('kalliope');
   });
 
   test('reindexes all poet works when poet info changed', async () => {
@@ -160,12 +172,12 @@ describe('Elasticsearch build-static step', () => {
       'poet'
     );
     expect(elasticSearchClient.deleteWork).not.toHaveBeenCalled();
-    expect(elasticSearchClient.create).toHaveBeenCalledTimes(3);
-    expect(elasticSearchClient.create.mock.calls.map(call => call[2])).toEqual([
+    expect(bulkDocumentIds()).toEqual([
       'poet-poet',
       'poet-first',
       'poet-second',
     ]);
+    expect(elasticSearchClient.refreshIndex).toHaveBeenCalledWith('kalliope');
   });
 
   test('rebuilds the full index when the index is missing', async () => {
@@ -176,11 +188,11 @@ describe('Elasticsearch build-static step', () => {
     expect(elasticSearchClient.createIndex).toHaveBeenCalledWith('kalliope');
     expect(elasticSearchClient.deletePoet).not.toHaveBeenCalled();
     expect(elasticSearchClient.deleteWork).not.toHaveBeenCalled();
-    expect(elasticSearchClient.create).toHaveBeenCalledTimes(3);
-    expect(elasticSearchClient.create.mock.calls.map(call => call[2])).toEqual([
+    expect(bulkDocumentIds()).toEqual([
       'poet-poet',
       'poet-first',
       'poet-second',
     ]);
+    expect(elasticSearchClient.refreshIndex).toHaveBeenCalledWith('kalliope');
   });
 });
