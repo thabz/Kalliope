@@ -38,6 +38,8 @@ jest.mock('../tools/build-static/xml.js', () => ({
 
 const elasticSearchClient = require('../tools/libs/elasticsearch-client.js');
 const { isFileModified } = require('../tools/libs/caching.js');
+const { htmlToXml } = require('../tools/libs/helpers.js');
+const xml = require('../tools/build-static/xml.js');
 const {
   buildElasticsearchPoetEntries,
   buildElasticsearchTextEntries,
@@ -62,6 +64,11 @@ const collected = {
   workids: new Map([['poet', ['second', 'first']]]),
 };
 
+const collectedWithOtherPoems = {
+  poets: collected.poets,
+  workids: new Map([['poet', ['andre']]]),
+};
+
 const bulkDocumentIds = () =>
   elasticSearchClient.bulkCreate.mock.calls.flatMap(call =>
     call[1].map(document => document.id)
@@ -72,6 +79,18 @@ describe('Elasticsearch build-static step', () => {
     jest.clearAllMocks();
     elasticSearchClient.indexExists.mockResolvedValue(true);
     isFileModified.mockReturnValue(false);
+    htmlToXml.mockReset();
+    xml.loadXMLDoc.mockImplementation(() => 'doc');
+    xml.safeGetText.mockImplementation((element, tagName) => tagName);
+    xml.safeGetAttr.mockImplementation((element, attrName) => attrName);
+    xml.getChildByTagName.mockImplementation(() => 'head');
+    xml.getElementsByTagNames.mockImplementation(() => []);
+    xml.getChildrenByTagName.mockImplementation(() => []);
+    xml.getElementByTagName.mockImplementation((element, tagName) =>
+      tagName === 'workbody' ? null : tagName
+    );
+    xml.safeGetInnerXML.mockImplementation(() => null);
+    xml.tagName.mockReset();
   });
 
   test('builds stable text entries', () => {
@@ -171,6 +190,7 @@ describe('Elasticsearch build-static step', () => {
         expect.objectContaining({
           id: 'poet-first',
           data: expect.objectContaining({
+            result_type: 'work',
             poet: collected.poets.get('poet'),
             work: expect.objectContaining({ id: 'first' }),
           }),
@@ -178,6 +198,41 @@ describe('Elasticsearch build-static step', () => {
       ]
     );
     expect(elasticSearchClient.refreshIndex).toHaveBeenCalledWith('kalliope');
+  });
+
+  test('skips work documents for Andre digte while indexing its texts', async () => {
+    isFileModified.mockImplementation((...filenames) =>
+      filenames.includes('fdirs/poet/andre.xml')
+    );
+    xml.getElementByTagName.mockImplementation((element, tagName) => tagName);
+    xml.safeGetText.mockImplementation((element, tagName) =>
+      tagName === 'title' ? 'Andre digte' : tagName
+    );
+    xml.safeGetAttr.mockImplementation((element, attrName) =>
+      attrName === 'id' ? 'poet-andre-text' : attrName
+    );
+    xml.getElementsByTagNames.mockReturnValue(['text']);
+    xml.tagName.mockReturnValue('text');
+    xml.safeGetInnerXML.mockImplementation(element =>
+      element === 'body' ? 'Tekstindhold' : 'Teksttitel'
+    );
+    htmlToXml.mockReturnValue([['Tekstindhold']]);
+
+    await update_elasticsearch(collectedWithOtherPoems);
+
+    expect(elasticSearchClient.bulkCreate).toHaveBeenCalledWith('kalliope', [
+      expect.objectContaining({
+        id: 'poet-andre-text',
+        data: expect.objectContaining({
+          result_type: 'text',
+          poet: collected.poets.get('poet'),
+          work: expect.objectContaining({
+            id: 'andre',
+            title: 'Andre digte',
+          }),
+        }),
+      }),
+    ]);
   });
 
   test('reindexes all poet works when poet info changed', async () => {

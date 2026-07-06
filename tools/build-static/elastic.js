@@ -123,16 +123,19 @@ const buildElasticsearchTextEntryDocuments = (collected, entry) => {
     status,
     type,
   };
-  const documents = [
-    {
-      id: textEntryKey,
-      data: {
-        result_type: 'work',
-        poet,
-        work: workData,
-      },
-    },
-  ];
+  const documents =
+    title === 'Andre digte'
+      ? []
+      : [
+          {
+            id: textEntryKey,
+            data: {
+              result_type: 'work',
+              poet,
+              work: workData,
+            },
+          },
+        ];
 
   if (workBody == null) {
     return documents;
