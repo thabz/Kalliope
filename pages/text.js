@@ -65,15 +65,13 @@ const Refs = ({ refs, contentLang }) => {
   let renderedRefs = null;
   if (refs.length === 1) {
     renderedRefs = (
-      <>
-        <TextContent contentHtml={refs[0]} contentLang={contentLang} /> henviser
-        hertil.
-      </>
+      <div style={{ marginBottom: '10px' }}>
+        <TextContent contentHtml={refs[0]} contentLang={contentLang} />
+      </div>
     );
   } else if (refs.length > 0) {
     renderedRefs = (
       <>
-        <p>Henvisninger hertil:</p>
         {refs.map((ref, i) => {
           return (
             <div key={i} style={{ marginBottom: '10px' }}>
@@ -95,6 +93,34 @@ const Refs = ({ refs, contentLang }) => {
         }
       `}</style>
     </div>
+  );
+};
+
+const SidebarSection = ({ title, children, printHidden = false }) => {
+  if (children == null) {
+    return null;
+  }
+  const className = `sidebar-section${printHidden ? ' print-hidden' : ''}`;
+  return (
+    <section className={className}>
+      <h3>{title}</h3>
+      {children}
+      <style jsx>{`
+        .sidebar-section {
+          margin-bottom: 30px;
+        }
+        .sidebar-section :global(h3) {
+          font-size: 1em;
+          font-weight: normal;
+          margin: 0 0 10px;
+        }
+        @media print {
+          .sidebar-section.print-hidden {
+            display: none;
+          }
+        }
+      `}</style>
+    </section>
   );
 };
 
@@ -328,11 +354,6 @@ const TextPage = (props) => {
     );
   }
 
-  let renderedNotes = null;
-  if (notes.length > 0) {
-    renderedNotes = <div style={{ marginBottom: '30px' }}>{notes}</div>;
-  }
-
   let textPictures = [...text.pictures];
 
   if (text.source != null && text.source.facsimilePages != null) {
@@ -409,9 +430,43 @@ const TextPage = (props) => {
     );
   }
 
+  const noteCount = notes.length + (text.footnotes_count || 0);
+  const noteHeading = _(pluralize(noteCount, 'Note', 'Noter'), lang);
+  const refsHeading = _(
+    pluralize(text.refs.length, 'Henvisning', 'Henvisninger'),
+    lang
+  );
+  const translationsHeading = _(
+    pluralize(
+      (text.translations || []).length,
+      'Gendigtning',
+      'Gendigtninger'
+    ),
+    lang
+  );
+  const renderedNoteSection =
+    notes.length > 0 || text.has_footnotes ? (
+      <SidebarSection title={noteHeading}>
+        {notes}
+        <FootnoteList />
+      </SidebarSection>
+    ) : null;
+  const renderedRefs = text.refs.length > 0 ? (
+    <SidebarSection title={refsHeading} printHidden>
+      <Refs refs={text.refs} contentLang={text.content_lang} />
+    </SidebarSection>
+  ) : null;
+  const renderedTranslations =
+    (text.translations || []).length > 0 ? (
+      <SidebarSection title={translationsHeading} printHidden>
+        <Refs refs={text.translations} contentLang={text.content_lang} />
+      </SidebarSection>
+    ) : null;
+
   let sidebar = null;
   if (
     text.refs.length > 0 ||
+    (text.translations || []).length > 0 ||
     variants.length > 0 ||
     text.has_footnotes ||
     text.pictures.length > 0 ||
@@ -422,10 +477,10 @@ const TextPage = (props) => {
   ) {
     sidebar = (
       <div>
-        {renderedNotes}
+        {renderedNoteSection}
         <RelatedDateTexts texts={text.related_date_texts || []} lang={lang} />
-        <FootnoteList />
-        <Refs refs={text.refs} contentLang={text.content_lang} />
+        {renderedRefs}
+        {renderedTranslations}
         {renderedVariants}
         {renderedKeywords}
         {renderedPictures}

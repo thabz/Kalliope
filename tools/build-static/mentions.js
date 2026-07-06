@@ -227,6 +227,11 @@ const build_mentions_data = (poet, poetId, collected, build_html) => {
       .map((t) => {
         const { translationPoemId, translatedPoemId } = t;
         const translationPoem = collected.texts.get(translationPoemId);
+        if (translationPoem == null) {
+          throw new Error(
+            `${poetId}: translation text ${translationPoemId} (from ${t.translationPoemId}) not found in texts.`
+          );
+        }
         let translatedPoem = null;
         if (translatedPoemId != null) {
           translatedPoem = collected.texts.get(translatedPoemId);
