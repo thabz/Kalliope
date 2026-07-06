@@ -7,9 +7,7 @@ const defaultOGURL = urlPrefix;
 const defaultOGImage = `${urlPrefix}/touch-icon.png`;
 const criticalFonts = [
   '/fonts/alegreya-sans/alegreya-sans-normal-400-latin.woff2',
-  '/fonts/alegreya-sans/alegreya-sans-normal-700-latin.woff2',
   '/fonts/alegreya-sans/alegreya-sans-normal-100-latin.woff2',
-  '/fonts/alegreya-sans/alegreya-sans-normal-300-latin.woff2',
 ];
 
 const Head = ({
