@@ -14,18 +14,48 @@ const {
   safeGetOuterXML,
 } = require('./xml.js');
 
+const textRefTagRegexp = /<(?:xref|a)\b[^>]*(?:\bpoem|\bbibel)="[^"]*"[^>]*>/g;
+
+const getAttr = (tag, attrName) => {
+  const match = tag.match(new RegExp(`\\b${attrName}="([^"]*)"`));
+  return match == null ? null : match[1];
+};
+
+const extractTextRefs = xml => {
+  return Array.from(xml.matchAll(textRefTagRegexp)).map(match => {
+    const tag = match[0];
+    const target = getAttr(tag, 'poem') || getAttr(tag, 'bibel');
+    return {
+      toId: target.replace(/,.*$/, ''),
+      type: getAttr(tag, 'type') === 'translation' ? 'translation' : 'mention',
+    };
+  });
+};
+
+const markTextRefDestinationsDirty = (textrefs, collected) => {
+  const destinationWorkfiles = [];
+  textrefs.forEach((refs, toId) => {
+    const text = collected.texts.get(toId);
+    if (text != null) {
+      destinationWorkfiles.push(`fdirs/${text.poetId}/${text.workId}.xml`);
+    }
+  });
+  markFileDirty(...destinationWorkfiles);
+};
+
 const build_textrefs = collected => {
-  let textrefs = globalForceReload
-    ? new Map()
-    : new Map(loadCachedJSON('collected.textrefs') || []);
+  const cachedTextrefs = loadCachedJSON('collected.textrefs') || [];
+  const hasLegacyTextrefs = cachedTextrefs.some(([, refs]) =>
+    Array.isArray(refs)
+  );
+  const codeModified = isFileModified('tools/build-static/textrefs.js');
+  let textrefs =
+    globalForceReload || hasLegacyTextrefs || codeModified
+      ? new Map()
+      : new Map(cachedTextrefs);
   const force_reload = textrefs.size == 0;
 
   let found_changes = false;
-  const regexps = [
-    /xref\s.*?poem="([^",]*)/g,
-    /a\s.*?poem="([^",]*)/g,
-    /xref bibel="([^",]*)/g,
-  ];
   collected.poets.forEach((poet, poetId) => {
     collected.workids.get(poetId).forEach(workId => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
@@ -48,16 +78,16 @@ const build_textrefs = collected => {
             ...getElementsByTagNames(body, ['note', 'footnote']),
           ];
           notes.forEach(note => {
-            regexps.forEach(regexp => {
-              while ((match = regexp.exec(safeGetOuterXML(note))) != null) {
-                const fromId = safeGetAttr(text, 'id');
-                const toId = match[1];
-                const array = textrefs.get(toId) || [];
-                if (array.indexOf(fromId) === -1) {
-                  array.push(fromId);
-                }
-                textrefs.set(toId, array);
+            extractTextRefs(safeGetOuterXML(note)).forEach(ref => {
+              const fromId = safeGetAttr(text, 'id');
+              const refs = textrefs.get(ref.toId) || {
+                mention: [],
+                translation: [],
+              };
+              if (refs[ref.type].indexOf(fromId) === -1) {
+                refs[ref.type].push(fromId);
               }
+              textrefs.set(ref.toId, refs);
             });
           });
         });
@@ -65,6 +95,8 @@ const build_textrefs = collected => {
   });
   if (found_changes) {
     writeCachedJSON('collected.textrefs', Array.from(textrefs));
+    markTextRefDestinationsDirty(new Map(cachedTextrefs), collected);
+    markTextRefDestinationsDirty(textrefs, collected);
   }
   return textrefs;
 };
@@ -76,11 +108,6 @@ const mark_ref_destinations_dirty = collected => {
   }
 
   let destination_workfiles = [];
-  const regexps = [
-    /xref\s.*?poem="([^",]*)/g,
-    /a\s.*?poem="([^",]*)/g,
-    /xref bibel="([^",]*)/g,
-  ];
   collected.poets.forEach((poet, poetId) => {
     collected.workids.get(poetId).forEach(workId => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
@@ -102,14 +129,11 @@ const mark_ref_destinations_dirty = collected => {
             ...getElementsByTagNames(body, ['note', 'footnote']),
           ];
           notes.forEach(note => {
-            regexps.forEach(regexp => {
-              while ((match = regexp.exec(safeGetOuterXML(note))) != null) {
-                const toId = match[1];
-                const t = collected.texts.get(toId);
-                if (t != null) {
-                  const filename = `fdirs/${t.poetId}/${t.workId}.xml`;
-                  destination_workfiles.push(filename);
-                }
+            extractTextRefs(safeGetOuterXML(note)).forEach(ref => {
+              const t = collected.texts.get(ref.toId);
+              if (t != null) {
+                const filename = `fdirs/${t.poetId}/${t.workId}.xml`;
+                destination_workfiles.push(filename);
               }
             });
           });
@@ -122,5 +146,6 @@ const mark_ref_destinations_dirty = collected => {
 
 module.exports = {
   build_textrefs,
+  extractTextRefs,
   mark_ref_destinations_dirty,
 };

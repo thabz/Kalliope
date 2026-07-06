@@ -273,7 +273,15 @@ const handle_text = async (
     });
   }
 
-  let refsArray = (collected.textrefs.get(textId) || [])
+  const textRefs = collected.textrefs.get(textId) || {
+    mention: [],
+    translation: [],
+  };
+  const textRefIdsByType = Array.isArray(textRefs)
+    ? { mention: textRefs, translation: [] }
+    : textRefs;
+  const buildRefsArray = (refIds) =>
+    refIds
     .filter((id) => {
       // Hvis en tekst har varianter som også henviser til denne,
       // vil vi kun vise den ældste variant.
@@ -295,6 +303,8 @@ const handle_text = async (
         ],
       ];
     });
+  let refsArray = buildRefsArray(textRefIdsByType.mention || []);
+  let translationsArray = buildRefsArray(textRefIdsByType.translation || []);
 
   const variantsArray = (resolve_variants(textId, collected) || [])
     .filter((id) => {
@@ -384,6 +394,7 @@ const handle_text = async (
   }
   let blocks = null;
   let has_footnotes = false;
+  let footnotes_count = 0;
   let toc = null;
   if (textType === 'section') {
     // A linkable section with id
@@ -399,6 +410,8 @@ const handle_text = async (
       (block) => {
         const type = tagName(block);
         const rawBlock = safeGetInnerXML(block);
+        footnotes_count += (rawBlock.match(/<footnote\b|<note\b/g) || [])
+          .length;
         has_footnotes |=
           rawBlock.indexOf('<footnote') !== -1 ||
           rawBlock.indexOf('<note') !== -1;
@@ -430,10 +443,12 @@ const handle_text = async (
       suptitles,
       text_type: textType,
       has_footnotes,
+      footnotes_count,
       notes: get_notes(head, collected),
       source,
       keywords: keywordsArray || [],
       refs: refsArray,
+      translations: translationsArray,
       variants: variantsArray,
       related_date_texts: relatedDateTexts,
       pictures: await get_pictures(
@@ -748,12 +763,18 @@ const works_first_pass = (collected) => {
   let parentIdsToFillIn = new Map(); // Bruges til nedenstående second-pass som klistrer parent-data på
 
   collected.workids.forEach((workIds, poetId) => {
+    const workFilenames = workIds.map(
+      (workId) => `fdirs/${poetId}/${workId}.xml`,
+    );
+    const poetHasChangedWorks =
+      force_reload || isFileModified(...workFilenames);
+
     workIds.forEach((workId) => {
       const workFilename = `fdirs/${poetId}/${workId}.xml`;
       if (!fileExists(workFilename)) {
         return;
       }
-      if (!force_reload && !isFileModified(workFilename)) {
+      if (!poetHasChangedWorks) {
         return;
       } else {
         found_changes = true;

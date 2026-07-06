@@ -4,6 +4,10 @@ describe('translations helper', () => {
   it('returns translated strings when available', () => {
     expect(_('Digtere', 'en')).toBe('Poets');
     expect(_('ca.', 'en')).toBe('c.');
+    expect(_('Henvisning', 'en')).toBe('Reference');
+    expect(_('Henvisninger', 'de')).toBe('Verweise');
+    expect(_('Gendigtning', 'fr')).toBe('Adaptation');
+    expect(_('Noter', 'fr')).toBe('Notes');
   });
 
   it('falls back to the original string when missing', () => {
