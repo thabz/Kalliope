@@ -35,29 +35,18 @@ function stripXmlComments(data) {
   return data.replace(/<!--[\s\S]*?-->/g, '');
 }
 
-function textParts(data) {
-  const partRegexp = /<(?:text|section)\b[^>]*>/g;
-  return Array.from(stripXmlComments(data).matchAll(partRegexp)).map(
-    (partMatch) => partMatch[0]
+function textIds(data) {
+  const idRegexp = /<(?:text|section)[^>]*\sid="([^"]+)"/g;
+  return Array.from(stripXmlComments(data).matchAll(idRegexp)).map(
+    (match) => match[1]
   );
 }
 
-function isSkippedIndexPart(part) {
-  return /\sskip-index="[^"]*"/.test(part);
-}
-
-function textIds(data) {
-  return textParts(data)
-    .filter((part) => !isSkippedIndexPart(part))
-    .map((part) => part.match(/\sid="([^"]+)"/))
-    .filter(Boolean)
-    .map((match) => match[1]);
-}
-
 function textAliases(data) {
-  return textParts(data)
-    .filter((part) => !isSkippedIndexPart(part))
-    .flatMap((part) => {
+  const partRegexp = /<(?:text|section)\b[^>]*>/g;
+  return Array.from(stripXmlComments(data).matchAll(partRegexp)).flatMap(
+    (partMatch) => {
+      const part = partMatch[0];
       const idMatch = part.match(/\sid="([^"]+)"/);
       const aliasesMatch = part.match(/\saliases="([^"]*)"/);
 
@@ -70,7 +59,8 @@ function textAliases(data) {
         .map((alias) => alias.trim())
         .filter((alias) => alias.length > 0)
         .map((alias) => ({ id: idMatch[1], alias }));
-    });
+    }
+  );
 }
 
 function firstYear(text) {
