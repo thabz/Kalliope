@@ -39,9 +39,9 @@ jest.mock('../tools/build-static/xml.js', () => ({
 const elasticSearchClient = require('../tools/libs/elasticsearch-client.js');
 const { isFileModified } = require('../tools/libs/caching.js');
 const {
-  buildElasticsearchPoetDocuments,
-  getChangedElasticsearchWorkEntries,
-  getElasticsearchWorkEntries,
+  buildElasticsearchPoetEntries,
+  buildElasticsearchTextEntries,
+  getChangedElasticsearchTextEntries,
   update_elasticsearch,
 } = require('../tools/build-static/elastic.js');
 
@@ -74,39 +74,41 @@ describe('Elasticsearch build-static step', () => {
     isFileModified.mockReturnValue(false);
   });
 
-  test('builds stable work entries', () => {
+  test('builds stable text entries', () => {
     expect(
-      getElasticsearchWorkEntries(collected).map(entry => ({
-        workKey: entry.workKey,
+      buildElasticsearchTextEntries(collected).map(entry => ({
+        textEntryKey: entry.textEntryKey,
         sourceFiles: entry.sourceFiles,
       }))
     ).toEqual([
       {
-        workKey: 'poet-first',
+        textEntryKey: 'poet-first',
         sourceFiles: ['fdirs/poet/info.xml', 'fdirs/poet/first.xml'],
       },
       {
-        workKey: 'poet-second',
+        textEntryKey: 'poet-second',
         sourceFiles: ['fdirs/poet/info.xml', 'fdirs/poet/second.xml'],
       },
     ]);
   });
 
-  test('finds changed works from the shared file cache', () => {
+  test('finds changed text entries from the shared file cache', () => {
     isFileModified.mockImplementation((...filenames) =>
       filenames.includes('fdirs/poet/first.xml')
     );
 
-    const result = getChangedElasticsearchWorkEntries(
-      getElasticsearchWorkEntries(collected)
+    const result = getChangedElasticsearchTextEntries(
+      buildElasticsearchTextEntries(collected)
     );
 
     expect(result.modifiedPoetIds.size).toBe(0);
-    expect(result.entries.map(entry => entry.workKey)).toEqual(['poet-first']);
+    expect(result.entries.map(entry => entry.textEntryKey)).toEqual([
+      'poet-first',
+    ]);
   });
 
-  test('builds searchable poet documents', () => {
-    expect(buildElasticsearchPoetDocuments(collected)).toEqual([
+  test('builds searchable poet entries', () => {
+    expect(buildElasticsearchPoetEntries(collected)).toEqual([
       {
         id: 'poet-poet',
         data: {
@@ -147,7 +149,7 @@ describe('Elasticsearch build-static step', () => {
     consoleLog.mockRestore();
   });
 
-  test('indexes only changed works', async () => {
+  test('indexes only changed text entries', async () => {
     isFileModified.mockImplementation((...filenames) =>
       filenames.includes('fdirs/poet/first.xml')
     );

@@ -32,14 +32,14 @@ const elasticsearchCodeSourceFiles = [
   'tools/libs/helpers.js',
 ];
 
-const getElasticsearchWorkKey = (poetId, workId) => `${poetId}-${workId}`;
+const getElasticsearchTextEntryKey = (poetId, workId) => `${poetId}-${workId}`;
 
-const getElasticsearchWorkSourceFiles = (poetId, workId) => [
+const getElasticsearchTextEntrySourceFiles = (poetId, workId) => [
   `fdirs/${poetId}/info.xml`,
   `fdirs/${poetId}/${workId}.xml`,
 ];
 
-const getElasticsearchWorkEntries = collected => {
+const buildElasticsearchTextEntries = collected => {
   const entries = [];
 
   collected.poets.forEach((poet, poetId) => {
@@ -48,32 +48,33 @@ const getElasticsearchWorkEntries = collected => {
         poet,
         poetId,
         workId,
-        workKey: getElasticsearchWorkKey(poetId, workId),
-        sourceFiles: getElasticsearchWorkSourceFiles(poetId, workId),
+        textEntryKey: getElasticsearchTextEntryKey(poetId, workId),
+        sourceFiles: getElasticsearchTextEntrySourceFiles(poetId, workId),
       });
     });
   });
 
-  return entries.sort((a, b) => a.workKey.localeCompare(b.workKey));
+  return entries.sort((a, b) => a.textEntryKey.localeCompare(b.textEntryKey));
 };
 
-const getChangedElasticsearchWorkEntries = workEntries => {
+const getChangedElasticsearchTextEntries = textEntries => {
   const modifiedPoetIds = new Set();
-  const modifiedWorkKeys = new Set();
+  const modifiedTextEntryKeys = new Set();
 
-  workEntries.forEach(entry => {
+  textEntries.forEach(entry => {
     if (isFileModified(`fdirs/${entry.poetId}/info.xml`)) {
       modifiedPoetIds.add(entry.poetId);
     } else if (isFileModified(`fdirs/${entry.poetId}/${entry.workId}.xml`)) {
-      modifiedWorkKeys.add(entry.workKey);
+      modifiedTextEntryKeys.add(entry.textEntryKey);
     }
   });
 
   return {
     modifiedPoetIds,
-    entries: workEntries.filter(
+    entries: textEntries.filter(
       entry =>
-        modifiedPoetIds.has(entry.poetId) || modifiedWorkKeys.has(entry.workKey)
+        modifiedPoetIds.has(entry.poetId) ||
+        modifiedTextEntryKeys.has(entry.textEntryKey)
     ),
   };
 };
@@ -93,7 +94,7 @@ const getPoetSearchText = poet => {
     .join(' ');
 };
 
-const buildElasticsearchPoetDocuments = collected => {
+const buildElasticsearchPoetEntries = collected => {
   return Array.from(collected.poets.values()).map(poet => ({
     id: `poet-${poet.id}`,
     data: {
@@ -104,8 +105,8 @@ const buildElasticsearchPoetDocuments = collected => {
   }));
 };
 
-const buildElasticsearchWorkDocuments = (collected, entry) => {
-  const { poet, poetId, workId, workKey } = entry;
+const buildElasticsearchTextEntryDocuments = (collected, entry) => {
+  const { poet, poetId, workId, textEntryKey } = entry;
   const filename = `fdirs/${poetId}/${workId}.xml`;
   let doc = loadXMLDoc(filename);
   const work = getElementByTagName(doc, 'kalliopework');
@@ -124,7 +125,7 @@ const buildElasticsearchWorkDocuments = (collected, entry) => {
   };
   const documents = [
     {
-      id: workKey,
+      id: textEntryKey,
       data: {
         result_type: 'work',
         poet,
@@ -270,21 +271,28 @@ const isElasticsearchUnavailable = error => {
 };
 
 const update_elasticsearch = async collected => {
-  const indexWorks = async entries => {
+  const indexElasticsearchPoetEntries = async entries => {
+    await writeElasticsearchDocuments(entries);
+  };
+
+  const indexElasticsearchTextEntries = async entries => {
     const documents = [];
 
     entries.forEach(entry => {
-      console.log(`Updating work ${entry.workKey} in elasticsearch`);
-      const workDocuments = buildElasticsearchWorkDocuments(collected, entry);
-      documents.push(...workDocuments);
+      console.log(`Updating text entry ${entry.textEntryKey} in elasticsearch`);
+      const textEntryDocuments = buildElasticsearchTextEntryDocuments(
+        collected,
+        entry
+      );
+      documents.push(...textEntryDocuments);
     });
 
     await writeElasticsearchDocuments(documents);
   };
 
   try {
-    const workEntries = getElasticsearchWorkEntries(collected);
-    const poetDocuments = buildElasticsearchPoetDocuments(collected);
+    const textEntries = buildElasticsearchTextEntries(collected);
+    const poetEntries = buildElasticsearchPoetEntries(collected);
     const indexExists = await elasticSearchClient.indexExists('kalliope');
     const codeModified = isFileModified(...elasticsearchCodeSourceFiles);
     const needsFullRebuild =
@@ -295,19 +303,19 @@ const update_elasticsearch = async collected => {
 
     if (needsFullRebuild) {
       await elasticSearchClient.createIndex('kalliope');
-      await writeElasticsearchDocuments(poetDocuments);
-      await indexWorks(workEntries);
+      await indexElasticsearchPoetEntries(poetEntries);
+      await indexElasticsearchTextEntries(textEntries);
       await elasticSearchClient.refreshIndex('kalliope');
       return;
     }
 
     const {
       modifiedPoetIds,
-      entries: changedWorkEntries,
-    } = getChangedElasticsearchWorkEntries(workEntries);
+      entries: changedTextEntries,
+    } = getChangedElasticsearchTextEntries(textEntries);
 
-    if (changedWorkEntries.length === 0) {
-      console.log('Skipping Elasticsearch update; no changed works');
+    if (changedTextEntries.length === 0) {
+      console.log('Skipping Elasticsearch update; no changed text entries');
       return;
     }
 
@@ -317,7 +325,7 @@ const update_elasticsearch = async collected => {
       elasticsearchConcurrency
     );
     await mapLimit(
-      changedWorkEntries.filter(entry => !modifiedPoetIds.has(entry.poetId)),
+      changedTextEntries.filter(entry => !modifiedPoetIds.has(entry.poetId)),
       entry =>
         elasticSearchClient.deleteWork(
           'kalliope',
@@ -327,13 +335,13 @@ const update_elasticsearch = async collected => {
       elasticsearchConcurrency
     );
 
-    const changedPoetDocuments = poetDocuments.filter(document =>
-      modifiedPoetIds.has(document.data.poet.id)
+    const changedPoetEntries = poetEntries.filter(entry =>
+      modifiedPoetIds.has(entry.data.poet.id)
     );
-    if (changedPoetDocuments.length > 0) {
-      await writeElasticsearchDocuments(changedPoetDocuments);
+    if (changedPoetEntries.length > 0) {
+      await indexElasticsearchPoetEntries(changedPoetEntries);
     }
-    await indexWorks(changedWorkEntries);
+    await indexElasticsearchTextEntries(changedTextEntries);
     await elasticSearchClient.refreshIndex('kalliope');
   } catch (error) {
     if (isElasticsearchUnavailable(error)) {
@@ -350,8 +358,8 @@ const update_elasticsearch = async collected => {
 };
 
 module.exports = {
-  buildElasticsearchPoetDocuments,
-  getChangedElasticsearchWorkEntries,
-  getElasticsearchWorkEntries,
+  buildElasticsearchPoetEntries,
+  buildElasticsearchTextEntries,
+  getChangedElasticsearchTextEntries,
   update_elasticsearch,
 };
