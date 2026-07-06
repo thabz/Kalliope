@@ -39,6 +39,10 @@ describe('Elasticsearch client', () => {
     expect(body.mappings.properties.text.properties.subtitles.analyzer).toBe(
       'kalliope_text'
     );
+    expect(body.mappings.properties.work.properties.title).toEqual({
+      type: 'text',
+      analyzer: 'kalliope_text',
+    });
   });
 
   test('writes documents through the bulk API as newline-delimited JSON', async () => {
@@ -73,27 +77,70 @@ describe('Elasticsearch client', () => {
     ]);
   });
 
-  test('searches poet names across countries and texts in selected country', async () => {
+  test('searches poet names across countries and works/texts in selected country', async () => {
     await elasticSearchClient.search('kalliope', 'text', 'dk', '', 'aarestrup');
 
     const body = JSON.parse(fetch.mock.calls[0][1].body);
     const resultTypeFilter = body.query.bool.filter[0].bool;
 
-    expect(body.query.bool.must[0].multi_match.fields).toEqual([
-      'poet_search^4',
-      'text.title^3',
-      'text.subtitles^2',
-      'text.content_html',
-    ]);
+    expect(body.query.bool.must).toEqual([]);
     expect(resultTypeFilter).toEqual({
       should: [
-        { term: { result_type: 'poet' } },
         {
           bool: {
-            filter: [
-              { term: { result_type: 'text' } },
-              { term: { 'poet.country': 'dk' } },
+            filter: [{ term: { result_type: 'poet' } }],
+            must: [
+              {
+                multi_match: {
+                  query: 'aarestrup',
+                  fields: ['poet_search^4'],
+                },
+              },
             ],
+          },
+        },
+        {
+          bool: {
+            must: [
+              {
+                bool: {
+                  filter: [{ term: { result_type: 'work' } }],
+                  must: [
+                    {
+                      multi_match: {
+                        query: 'aarestrup',
+                        fields: ['work.title^3'],
+                      },
+                    },
+                  ],
+                },
+              },
+            ],
+            filter: [{ term: { 'poet.country': 'dk' } }],
+          },
+        },
+        {
+          bool: {
+            must: [
+              {
+                bool: {
+                  filter: [{ term: { result_type: 'text' } }],
+                  must: [
+                    {
+                      multi_match: {
+                        query: 'aarestrup',
+                        fields: [
+                          'text.title^3',
+                          'text.subtitles^2',
+                          'text.content_html',
+                        ],
+                      },
+                    },
+                  ],
+                },
+              },
+            ],
+            filter: [{ term: { 'poet.country': 'dk' } }],
           },
         },
       ],
@@ -101,7 +148,7 @@ describe('Elasticsearch client', () => {
     });
   });
 
-  test('searches only texts when scoped to a poet', async () => {
+  test('searches only works and texts when scoped to a poet', async () => {
     await elasticSearchClient.search(
       'kalliope',
       'text',
@@ -114,8 +161,46 @@ describe('Elasticsearch client', () => {
 
     expect(body.query.bool.filter).toEqual([
       { term: { 'poet.id': 'aarestrup' } },
-      { term: { result_type: 'text' } },
       { term: { 'poet.country': 'dk' } },
+    ]);
+    expect(body.query.bool.must).toEqual([
+      {
+        bool: {
+          should: [
+            {
+              bool: {
+                filter: [{ term: { result_type: 'work' } }],
+                must: [
+                  {
+                    multi_match: {
+                      query: 'rose',
+                      fields: ['work.title^3'],
+                    },
+                  },
+                ],
+              },
+            },
+            {
+              bool: {
+                filter: [{ term: { result_type: 'text' } }],
+                must: [
+                  {
+                    multi_match: {
+                      query: 'rose',
+                      fields: [
+                        'text.title^3',
+                        'text.subtitles^2',
+                        'text.content_html',
+                      ],
+                    },
+                  },
+                ],
+              },
+            },
+          ],
+          minimum_should_match: 1,
+        },
+      },
     ]);
   });
 });
