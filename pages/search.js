@@ -20,6 +20,8 @@ import TextName from '../components/textname.js';
 import WorkName from '../components/workname.js';
 import ErrorPage from './error.js';
 
+export const totalHitsValue = (hits) => hits.total.value;
+
 const RenderedHits = ({ hits }) => {
   const lang = useContext(LangContext);
 
@@ -129,7 +131,10 @@ const SearchPage = (props) => {
       setError(result.error);
     } else {
       setResultPage(resultPage + 1);
-      if (result.hits.total > 0 && result.hits.hits.length > 0) {
+      if (
+        totalHitsValue(result.hits) > 0 &&
+        result.hits.hits.length > 0
+      ) {
         setHits(hits.concat(result.hits.hits));
       }
     }
@@ -180,7 +185,7 @@ const SearchPage = (props) => {
       } else {
         setResultPage(0);
         setHits(result.hits.hits);
-        setTotalHits(result.hits.total);
+        setTotalHits(totalHitsValue(result.hits));
       }
     };
     asyncLoad();
