@@ -43,6 +43,19 @@ const markTextRefDestinationsDirty = (textrefs, collected) => {
   markFileDirty(...destinationWorkfiles);
 };
 
+const removeTextRefSources = (textrefs, fromIds) => {
+  const ids = new Set(fromIds);
+  textrefs.forEach((refs, toId) => {
+    refs.mention = refs.mention.filter(fromId => !ids.has(fromId));
+    refs.translation = refs.translation.filter(fromId => !ids.has(fromId));
+    if (refs.mention.length === 0 && refs.translation.length === 0) {
+      textrefs.delete(toId);
+    } else {
+      textrefs.set(toId, refs);
+    }
+  });
+};
+
 const build_textrefs = collected => {
   const cachedTextrefs = loadCachedJSON('collected.textrefs') || [];
   const hasLegacyTextrefs = cachedTextrefs.some(([, refs]) =>
@@ -68,29 +81,34 @@ const build_textrefs = collected => {
         found_changes = true;
       }
       let doc = loadXMLDoc(filename);
-      const texts = getElementsByTagNames(doc, ['text', 'section'])
-        .filter(e => safeGetAttr(e, 'id') != null)
-        .forEach(text => {
-          const head = getChildByTagName(text, 'head');
-          const body = getChildByTagName(text, 'body');
-          const notes = [
-            ...getElementsByTagNames(head, ['note']),
-            ...getElementsByTagNames(body, ['note', 'footnote']),
-          ];
-          notes.forEach(note => {
-            extractTextRefs(safeGetOuterXML(note)).forEach(ref => {
-              const fromId = safeGetAttr(text, 'id');
-              const refs = textrefs.get(ref.toId) || {
-                mention: [],
-                translation: [],
-              };
-              if (refs[ref.type].indexOf(fromId) === -1) {
-                refs[ref.type].push(fromId);
-              }
-              textrefs.set(ref.toId, refs);
-            });
+      const texts = getElementsByTagNames(doc, ['text', 'section']).filter(
+        e => safeGetAttr(e, 'id') != null
+      );
+      removeTextRefSources(
+        textrefs,
+        texts.map(text => safeGetAttr(text, 'id'))
+      );
+      texts.forEach(text => {
+        const head = getChildByTagName(text, 'head');
+        const body = getChildByTagName(text, 'body');
+        const notes = [
+          ...getElementsByTagNames(head, ['note']),
+          ...getElementsByTagNames(body, ['note', 'footnote']),
+        ];
+        notes.forEach(note => {
+          extractTextRefs(safeGetOuterXML(note)).forEach(ref => {
+            const fromId = safeGetAttr(text, 'id');
+            const refs = textrefs.get(ref.toId) || {
+              mention: [],
+              translation: [],
+            };
+            if (refs[ref.type].indexOf(fromId) === -1) {
+              refs[ref.type].push(fromId);
+            }
+            textrefs.set(ref.toId, refs);
           });
         });
+      });
     });
   });
   if (found_changes) {
@@ -148,4 +166,5 @@ module.exports = {
   build_textrefs,
   extractTextRefs,
   mark_ref_destinations_dirty,
+  removeTextRefSources,
 };
