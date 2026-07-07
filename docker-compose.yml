@@ -9,6 +9,15 @@ services:
       ES_JAVA_OPTS: -Xms512m -Xmx512m
     volumes:
       - esdata:/usr/share/elasticsearch/data
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "curl -fsS 'http://localhost:9200/_cluster/health?wait_for_status=yellow&timeout=1s' >/dev/null"
+        ]
+      interval: 5s
+      timeout: 5s
+      retries: 24
 
   app:
     build:
@@ -20,12 +29,12 @@ services:
     ports:
       - "3001:3000"
     depends_on:
-      - elasticsearch
+      elasticsearch:
+        condition: service_healthy
     volumes:
       - ./public:/app/public:ro
     command: >
-      sh -c "node tools/wait-for-elasticsearch.js &&
-      npm run build &&
+      sh -c "npm run build &&
       npm start"
 
   static-builder:
@@ -42,7 +51,8 @@ services:
       KALLIOPE_ELASTICSEARCH_CONCURRENCY: 1
       KALLIOPE_ELASTICSEARCH_REQUEST_TIMEOUT_MS: 60000
     depends_on:
-      - elasticsearch
+      elasticsearch:
+        condition: service_healthy
     volumes:
       - ./.git:/app/.git:ro
       - ./caches:/app/caches
@@ -50,8 +60,7 @@ services:
       - ./fdirs:/app/fdirs:ro
       - ./public:/app/public
     command: >
-      sh -c "node tools/wait-for-elasticsearch.js &&
-      npm run build-static"
+      sh -c "npm run build-static"
 
 volumes:
   esdata:
