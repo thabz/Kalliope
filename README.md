@@ -57,12 +57,7 @@ npm test
 Produktionen køres med Docker Compose. Prod-serveren bygger appen, bygger de
 statiske data og opdaterer Elasticsearch.
 
-Log ind på prod-serveren og gå til repoet:
-
-```shell
-ssh jec@10.0.0.5
-cd ~/Sites/kalliope
-```
+Log ind på prod-serveren og gå til repoet.
 
 Hent seneste kode:
 
