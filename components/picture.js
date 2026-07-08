@@ -88,6 +88,7 @@ const Picture = ({
   showDropShadow = true,
   clickToZoom = true,
   startIndex = 0,
+  sizes = '(max-width: 767px) 47vw, 250px',
 }) => {
   const [overlayShown, showOverlay] = useState(false);
   const picture = pictures[startIndex];
@@ -96,7 +97,6 @@ const Picture = ({
     src,
     CommonData.fallbackImagePostfix
   );
-  const sizes = '(max-width: 700px) 250px, 48vw';
   let srcsets = {};
   const sources = CommonData.availableImageFormats.map((ext) => {
     const srcset = CommonData.availableImageWidths
