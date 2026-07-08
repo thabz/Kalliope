@@ -9,14 +9,14 @@ const build_portraits_json = async (poet, collected) => {
   }
   const doc = loadXMLDoc(`fdirs/${poet.id}/portraits.xml`);
   if (doc != null) {
-    onError = message => {
+    const onError = message => {
       throw `fdirs/${poet.id}/portraits.xml: ${message}`;
     };
     result = await mapLimit(
       getElementsByTagName(doc, 'picture'),
-      async picture => {
-        picture = await get_picture(
-          picture,
+      async pictureNode => {
+        const picture = await get_picture(
+          pictureNode,
           `/images/${poet.id}`,
           collected,
           onError

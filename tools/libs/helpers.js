@@ -200,7 +200,7 @@ const htmlToXml = (html, collected, isPoetry) => {
     decoded.indexOf('<num>') > -1 || decoded.indexOf('<margin>') > -1;
 
   let lineNum = 1;
-  lines = decoded.split('\n').map(l => {
+  const lines = decoded.split('\n').map(l => {
     let options = {};
     if (l.indexOf('<resetnum/>') > -1) {
       lineNum = 1;

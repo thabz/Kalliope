@@ -1,6 +1,6 @@
 import entities from 'entities';
 import { htmlToXml } from '../libs/helpers.js';
-import { build_museum_link, build_museum_url } from './museums.js';
+import { build_museum_url } from './museums.js';
 import {
   getChildByTagName,
   getChildrenByTagName,

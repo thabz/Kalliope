@@ -20,7 +20,6 @@ import {
   writeText,
   htmlToXml,
   replaceDashes,
-  imageSizeSync,
   buildThumbnails,
 } from './libs/helpers.js';
 import {
@@ -69,7 +68,7 @@ import {
   primaryTextVariantId,
 } from './build-static/variants.js';
 import { build_artwork } from './build-static/artwork.js';
-import { flushImageSizeCache } from './build-static/image.js';
+import { flushImageSizeCache, imageSizeSync } from './build-static/image.js';
 import {
   poetName,
   workName,
