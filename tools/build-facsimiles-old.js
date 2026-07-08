@@ -1,9 +1,9 @@
-const { exec } = require('child_process');
-const fs = require('fs');
-const path = require('path');
-const mkdirp = require('mkdirp');
-const async = require('async');
-const { safeMkdir, buildThumbnails } = require('./libs/helpers.js');
+import { exec } from 'child_process';
+import fs from 'fs';
+import path from 'path';
+import mkdirp from 'mkdirp';
+import async from 'async';
+import { safeMkdir, buildThumbnails } from './libs/helpers.js';
 
 const dirname = 'public/facsimiles';
 

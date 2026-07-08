@@ -24,11 +24,11 @@ jest.mock('../tools/build-static/xml.js', () => ({
   safeGetInnerXML: () => '',
 }));
 
-const { writeJSON } = require('../tools/libs/helpers.js');
-const {
+import { writeJSON } from '../tools/libs/helpers.js';
+import {
   build_mentions_data,
   build_mentions_json,
-} = require('../tools/build-static/mentions.js');
+} from '../tools/build-static/mentions.js';
 
 const poet = (id, firstname, lastname) => ({
   id,

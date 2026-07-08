@@ -1,19 +1,19 @@
-const fs = require('fs');
-const { safeMkdir, htmlToXml, writeJSON } = require('../libs/helpers.js');
-const {
+import fs from 'fs';
+import { safeMkdir, htmlToXml, writeJSON } from '../libs/helpers.js';
+import {
   isFileModified,
   loadCachedJSON,
   writeCachedJSON,
-} = require('../libs/caching.js');
-const { get_pictures, get_notes } = require('./parsing.js');
-const {
+} from '../libs/caching.js';
+import { get_pictures, get_notes } from './parsing.js';
+import {
   loadXMLDoc,
   safeGetInnerXML,
   safeGetText,
   safeGetAttr,
   getChildByTagName,
-} = require('./xml.js');
-const { mapLimit } = require('./concurrency.js');
+} from './xml.js';
+import { mapLimit } from './concurrency.js';
 
 const build_about_pages = async (collected) => {
   safeMkdir(`public/api/about`);
@@ -80,6 +80,6 @@ const build_about_pages = async (collected) => {
   });
 };
 
-module.exports = {
+export {
   build_about_pages,
 };

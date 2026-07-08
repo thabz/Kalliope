@@ -1,27 +1,27 @@
-const fs = require('fs');
-const {
+import fs from 'fs';
+import {
   literaryPeriods,
   literaryPeriodIds,
-} = require('../../common/literary-periods.js');
-const {
+} from '../../common/literary-periods.js';
+import {
   isFileModified,
   loadCachedJSON,
   writeCachedJSON,
-  force_reload: globalForceReload,
-} = require('../libs/caching.js');
-const {
+  force_reload as globalForceReload,
+} from '../libs/caching.js';
+import {
   fileExists,
   safeMkdir,
   writeJSON,
   resizeImage,
-} = require('../libs/helpers.js');
-const {
+} from '../libs/helpers.js';
+import {
   loadXMLDoc,
   safeGetText,
   safeGetAttr,
   getChildByTagName,
   getElementsByTagName,
-} = require('./xml.js');
+} from './xml.js';
 
 const knownPoetLanguages = new Set([
   'da',
@@ -334,7 +334,7 @@ const build_literary_periods_json = collected => {
   writeJSON('public/api/literary-periods.json', { periods });
 };
 
-module.exports = {
+export {
   all_poet_ids,
   build_poets_json,
   build_poets_first_pass,

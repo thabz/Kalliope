@@ -1,4 +1,4 @@
-const { execFileSync } = require('child_process');
+import { execFileSync } from 'child_process';
 
 const GIT_MODIFIED_DATE_PATHS = [
   'fdirs/**/*.xml',
@@ -58,7 +58,7 @@ const collect_git_modified_dates = () => {
   return parseGitModifiedDatesLog(log);
 };
 
-module.exports = {
+export {
   collect_git_modified_dates,
   parseGitModifiedDatesLog,
 };

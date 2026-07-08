@@ -1,15 +1,18 @@
 // server.js
-const next = require('next');
-const routes = require('./routes');
-const fs = require('fs');
-const { createReadStream } = require('fs');
-const { parse } = require('url');
-const { extname, join } = require('path');
-const { createServer } = require('http');
+import next from 'next';
+import * as routes from './routes.js';
+import fs from 'fs';
+import { createReadStream } from 'fs';
+import { extname, join } from 'path';
+import { createServer } from 'http';
+import { dirname } from 'path';
+import { fileURLToPath } from 'url';
+import elasticSearchClient from './tools/libs/elasticsearch-client.js';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
 const handler = routes.getRequestHandler(app);
-const elasticSearchClient = require('./tools/libs/elasticsearch-client.js');
 const rootStaticFiles = [
   '/sw.js',
   '/favicon.ico',
@@ -173,7 +176,9 @@ const serveRootStaticFile = (pathname, res) => {
 
 app.prepare().then(() => {
   createServer((req, res) => {
-    const { pathname, query } = parse(req.url, true);
+    const requestUrl = new URL(req.url, 'http://localhost');
+    const { pathname } = requestUrl;
+    const query = Object.fromEntries(requestUrl.searchParams);
 
     if (pathname.indexOf('/static/') === 0) {
       const location = req.url.replace(/^\/static/, '');

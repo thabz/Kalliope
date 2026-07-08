@@ -1,40 +1,39 @@
-const fs = require('fs');
-const { execSync } = require('child_process');
-const path = require('path');
-const mkdirp = require('mkdirp');
-const Paths = require('../common/paths.js');
-const CommonData = require('../common/commondata.js');
-const { extractYear } = require('../common/dates.js');
-const {
+import fs from 'fs';
+import { execSync } from 'child_process';
+import path from 'path';
+import mkdirp from 'mkdirp';
+import * as Paths from '../common/paths.js';
+import * as CommonData from '../common/commondata.js';
+import { extractYear } from '../common/dates.js';
+import {
   isFileModified,
   markFileDirty,
   refreshFilesModifiedCache,
-  force_reload: globalForceReload,
+  force_reload as globalForceReload,
   loadCachedJSON,
   writeCachedJSON,
-} = require('./libs/caching.js');
-const {
+} from './libs/caching.js';
+import {
   fileExists,
   safeMkdir,
   writeJSON,
   writeText,
   htmlToXml,
   replaceDashes,
-  imageSizeSync,
   buildThumbnails,
-} = require('./libs/helpers.js');
-const {
+} from './libs/helpers.js';
+import {
   all_poet_ids,
   build_poets_first_pass,
   build_poets_json,
   build_poets_by_country_json,
   build_literary_periods_json,
-} = require('./build-static/poets.js');
-const {
+} from './build-static/poets.js';
+import {
   build_dict_first_pass,
   build_dict_second_pass,
-} = require('./build-static/dict.js');
-const {
+} from './build-static/dict.js';
+import {
   loadXMLDoc,
   safeGetText,
   safeGetAttr,
@@ -46,60 +45,60 @@ const {
   getElementsByTagNames,
   safeGetInnerXML,
   tagName,
-} = require('./build-static/xml.js');
-const { build_sitemap_xml } = require('./build-static/sitemap.js');
-const { build_keywords } = require('./build-static/keywords.js');
-const { build_about_pages } = require('./build-static/about.js');
-const { build_portraits_json } = require('./build-static/portraits.js');
-const { build_todays_events_json } = require('./build-static/today.js');
-const {
+} from './build-static/xml.js';
+import { build_sitemap_xml } from './build-static/sitemap.js';
+import { build_keywords } from './build-static/keywords.js';
+import { build_about_pages } from './build-static/about.js';
+import { build_portraits_json } from './build-static/portraits.js';
+import { build_todays_events_json } from './build-static/today.js';
+import {
   extractDates,
   extractTitle,
   extractSubtitles,
   get_notes,
   get_pictures,
-} = require('./build-static/parsing.js');
-const {
+} from './build-static/parsing.js';
+import {
   build_person_or_keyword_refs,
   build_mentions_json,
-} = require('./build-static/mentions.js');
-const {
+} from './build-static/mentions.js';
+import {
   build_variants,
   resolve_variants,
   primaryTextVariantId,
-} = require('./build-static/variants.js');
-const { build_artwork } = require('./build-static/artwork.js');
-const { flushImageSizeCache } = require('./build-static/image.js');
-const {
+} from './build-static/variants.js';
+import { build_artwork } from './build-static/artwork.js';
+import { flushImageSizeCache, imageSizeSync } from './build-static/image.js';
+import {
   poetName,
   workName,
   workLinkName,
-} = require('./build-static/formatting.js');
-const {
+} from './build-static/formatting.js';
+import {
   build_global_lines_json,
   build_poet_lines_json,
-} = require('./build-static/lines.js');
-const {
+} from './build-static/lines.js';
+import {
   build_museums,
   build_museum_pages,
   build_museum_url,
-} = require('./build-static/museums.js');
-const {
+} from './build-static/museums.js';
+import {
   b,
   print_benchmarking_results,
-} = require('./build-static/benchmarking.js');
-const { mapLimit } = require('./build-static/concurrency.js');
-const { build_works_toc, build_section_toc } = require('./build-static/toc.js');
-const { update_elasticsearch } = require('./build-static/elastic.js');
-const {
+} from './build-static/benchmarking.js';
+import { mapLimit } from './build-static/concurrency.js';
+import { build_works_toc, build_section_toc } from './build-static/toc.js';
+import { update_elasticsearch } from './build-static/elastic.js';
+import {
   build_textrefs,
   mark_ref_destinations_dirty,
-} = require('./build-static/textrefs.js');
-const { build_anniversaries_ical } = require('./build-static/ical.js');
-const {
+} from './build-static/textrefs.js';
+import { build_anniversaries_ical } from './build-static/ical.js';
+import {
   build_global_timeline,
   build_poet_timeline_json,
-} = require('./build-static/timeline.js');
+} from './build-static/timeline.js';
 
 let collected = {
   texts: new Map(),

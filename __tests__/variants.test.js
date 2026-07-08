@@ -1,7 +1,7 @@
-const {
+import {
   primaryTextVariantId,
   resolve_variants,
-} = require('../tools/build-static/variants.js');
+} from '../tools/build-static/variants.js';
 
 describe('variant resolution helpers', () => {
   const collected = {

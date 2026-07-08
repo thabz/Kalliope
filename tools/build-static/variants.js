@@ -1,12 +1,12 @@
-const {
+import {
   isFileModified,
   loadCachedJSON,
   writeCachedJSON,
   markFileDirty,
-  force_reload: globalForceReload,
-} = require('../libs/caching.js');
-const { fileExists } = require('../libs/helpers.js');
-const { loadXMLDoc, safeGetAttr, getElementsByTagNames } = require('./xml.js');
+  force_reload as globalForceReload,
+} from '../libs/caching.js';
+import { fileExists } from '../libs/helpers.js';
+import { loadXMLDoc, safeGetAttr, getElementsByTagNames } from './xml.js';
 
 const build_variants = (collected) => {
   let variants_map = globalForceReload
@@ -14,7 +14,7 @@ const build_variants = (collected) => {
     : new Map(loadCachedJSON('collected.variants') || []);
   const force_reload = variants_map.size === 0;
 
-  register_variant = (from, to) => {
+  const register_variant = (from, to) => {
     let array = variants_map.get(from) || [];
     if (array.indexOf(to) === -1) {
       array.push(to);
@@ -128,7 +128,7 @@ const primaryTextVariantId = (textId, collected) => {
   }
 };
 
-module.exports = {
+export {
   build_variants,
   resolve_variants,
   primaryTextVariantId,

@@ -11,4 +11,4 @@ const fallbackThumbnailSrc = (src, postfix) => {
     .replace(/\/([^/]+)\.jpg$/, `/t/$1${postfix}`);
 };
 
-module.exports = { thumbnailSrc, fallbackThumbnailSrc };
+export { thumbnailSrc, fallbackThumbnailSrc };

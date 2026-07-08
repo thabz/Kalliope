@@ -1,4 +1,4 @@
-const Dates = require('../common/dates.js');
+import * as Dates from '../common/dates.js';
 
 describe('shared date helpers', () => {
   it('keeps precise date formatting available for real dates', () => {

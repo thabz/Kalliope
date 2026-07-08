@@ -1,8 +1,8 @@
-const { isFileModified } = require('../libs/caching.js');
-const { safeMkdir, writeJSON } = require('../libs/helpers.js');
-const { translatePlace } = require('../../common/place-names.js');
-const { poetName } = require('./formatting.js');
-const { build_portraits_json } = require('./portraits.js');
+import { isFileModified } from '../libs/caching.js';
+import { safeMkdir, writeJSON } from '../libs/helpers.js';
+import { translatePlace } from '../../common/place-names.js';
+import { poetName } from './formatting.js';
+import { build_portraits_json } from './portraits.js';
 
 const build_todays_events_json = async (collected) => {
   const portrait_descriptions = Array.from(collected.poets.values()).map(
@@ -169,6 +169,6 @@ const build_todays_events_json = async (collected) => {
   });
 };
 
-module.exports = {
+export {
   build_todays_events_json,
 };

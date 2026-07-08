@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import CommonData from '../common/commondata.js';
-import * as Links from './links';
+import * as Links from './links.js';
 import TextContent from './textcontent.js';
 
 const TOC = ({ toc, lang, indent }) => {

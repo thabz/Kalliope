@@ -4,9 +4,9 @@ import CommonData from '../common/commondata.js';
 import * as Strings from '../common/strings.js';
 import _ from '../common/translations.js';
 import { kalliopeCrumbs } from '../components/breadcrumbs.js';
-import * as Links from '../components/links';
+import * as Links from '../components/links.js';
 import Page from '../components/page.js';
-import TwoColumns from '../components/twocolumns';
+import TwoColumns from '../components/twocolumns.js';
 import ErrorPage from './error.js';
 
 const AllTextsPage = (props) => {

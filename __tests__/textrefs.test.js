@@ -1,4 +1,4 @@
-const { extractTextRefs } = require('../tools/build-static/textrefs.js');
+import { extractTextRefs } from '../tools/build-static/textrefs.js';
 
 describe('text refs', () => {
   it('groups ordinary refs and translations from xrefs', () => {

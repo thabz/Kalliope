@@ -6,9 +6,9 @@ import * as Strings from '../common/strings.js';
 import _ from '../common/translations.js';
 import { textLinkTitleString } from '../components/textname.js';
 import * as Links from './links.js';
-import PoetName from './poetname';
+import PoetName from './poetname.js';
 import TextContent from './textcontent.js';
-import WorkName from './workname';
+import WorkName from './workname.js';
 
 export const Paging = (props) => {
   const { prev, next } = props;

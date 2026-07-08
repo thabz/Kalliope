@@ -123,7 +123,7 @@ const literaryPeriods = [
 
 const literaryPeriodIds = new Set(literaryPeriods.map((period) => period.id));
 
-module.exports = {
+export {
   literaryPeriods,
   literaryPeriodIds,
 };

@@ -1,10 +1,10 @@
-const {
+import {
   isFileModified,
   loadCachedJSON,
   writeCachedJSON,
-} = require('../libs/caching.js');
-const { safeMkdir, writeJSON, htmlToXml } = require('../libs/helpers.js');
-const {
+} from '../libs/caching.js';
+import { safeMkdir, writeJSON, htmlToXml } from '../libs/helpers.js';
+import {
   safeGetAttr,
   safeGetText,
   getElementsByTagName,
@@ -13,7 +13,7 @@ const {
   tagName,
   safeGetInnerXML,
   loadXMLDoc,
-} = require('./xml.js');
+} from './xml.js';
 
 const build_dict_first_pass = collected => {
   const path = `data/dict.xml`;
@@ -95,7 +95,7 @@ const build_dict_second_pass = collected => {
   writeJSON(`public/api/dict.json`, items);
 };
 
-module.exports = {
+export {
   build_dict_first_pass,
   build_dict_second_pass,
 };

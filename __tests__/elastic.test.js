@@ -36,16 +36,16 @@ jest.mock('../tools/build-static/xml.js', () => ({
   tagName: jest.fn(),
 }));
 
-const elasticSearchClient = require('../tools/libs/elasticsearch-client.js');
-const { isFileModified } = require('../tools/libs/caching.js');
-const { htmlToXml } = require('../tools/libs/helpers.js');
-const xml = require('../tools/build-static/xml.js');
-const {
+import * as elasticSearchClient from '../tools/libs/elasticsearch-client.js';
+import { isFileModified } from '../tools/libs/caching.js';
+import { htmlToXml } from '../tools/libs/helpers.js';
+import * as xml from '../tools/build-static/xml.js';
+import {
   buildElasticsearchPoetEntries,
   buildElasticsearchTextEntries,
   getChangedElasticsearchTextEntries,
   update_elasticsearch,
-} = require('../tools/build-static/elastic.js');
+} from '../tools/build-static/elastic.js';
 
 const collected = {
   poets: new Map([
