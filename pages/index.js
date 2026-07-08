@@ -133,6 +133,7 @@ const News = ({ news }) => {
               margin-top: 5px;
               font-size: 0.9em;
               color: #757575;
+              text-align: right;
             }
           `}</style>
         </div>
