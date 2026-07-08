@@ -1,10 +1,10 @@
-const {
+import {
   DOMParser,
   XMLSerializer,
   onWarningStopParsing,
-} = require('@xmldom/xmldom');
-const { loadText } = require('../libs/helpers.js');
-const { entityMap } = require('./entities.js');
+} from '@xmldom/xmldom';
+import { loadText } from '../libs/helpers.js';
+import { entityMap } from './entities.js';
 
 const xmlEntities = new Set(['amp', 'apos', 'gt', 'lt', 'quot']);
 
@@ -178,7 +178,7 @@ const _sortBySourceOrder = (a, b) => {
   }
 };
 
-module.exports = {
+export {
   loadXMLDoc,
   safeGetText,
   safeGetAttr,

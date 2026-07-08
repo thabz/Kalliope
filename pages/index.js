@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { createURL } from '../common/client.js';
 import LangContext from '../common/LangContext.js';
-import { kalliopeCrumbs } from '../components/breadcrumbs';
+import { kalliopeCrumbs } from '../components/breadcrumbs.js';
 import { formattedDate } from '../components/formatteddate.js';
 import { kalliopeMenu } from '../components/menu.js';
 import Page from '../components/page.js';

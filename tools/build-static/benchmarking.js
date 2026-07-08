@@ -99,7 +99,7 @@ const print_benchmarking_results = () => {
   console.log(`SUM: ${sum}ms`);
 };
 
-module.exports = {
+export {
   b,
   print_benchmarking_results,
 };

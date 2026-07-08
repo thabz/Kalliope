@@ -1,6 +1,6 @@
-const { htmlToXml, replaceDashes } = require('../libs/helpers.js');
-const { isFileModified, force_reload } = require('../libs/caching.js');
-const {
+import { htmlToXml, replaceDashes } from '../libs/helpers.js';
+import { isFileModified, force_reload } from '../libs/caching.js';
+import {
   loadXMLDoc,
   safeGetText,
   safeGetAttr,
@@ -10,9 +10,9 @@ const {
   getElementByTagName,
   safeGetInnerXML,
   tagName,
-} = require('./xml.js');
-const elasticSearchClient = require('../libs/elasticsearch-client.js');
-const { mapLimit } = require('./concurrency.js');
+} from './xml.js';
+import elasticSearchClient from '../libs/elasticsearch-client.js';
+import { mapLimit } from './concurrency.js';
 
 const elasticsearchConcurrency = Math.max(
   1,
@@ -360,7 +360,7 @@ const update_elasticsearch = async collected => {
   }
 };
 
-module.exports = {
+export {
   buildElasticsearchPoetEntries,
   buildElasticsearchTextEntries,
   getChangedElasticsearchTextEntries,

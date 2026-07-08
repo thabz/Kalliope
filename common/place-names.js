@@ -106,6 +106,6 @@ const translatePlace = (place, lang) => {
   );
 };
 
-module.exports = {
+export {
   translatePlace,
 };

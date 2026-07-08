@@ -1,4 +1,4 @@
-const elasticSearchClient = require('../tools/libs/elasticsearch-client.js');
+import elasticSearchClient from '../tools/libs/elasticsearch-client.js';
 
 const response = {
   ok: true,

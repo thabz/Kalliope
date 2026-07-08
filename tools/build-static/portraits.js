@@ -1,6 +1,6 @@
-const { get_picture } = require('./parsing.js');
-const { loadXMLDoc, getElementsByTagName } = require('./xml.js');
-const { mapLimit } = require('./concurrency.js');
+import { get_picture } from './parsing.js';
+import { loadXMLDoc, getElementsByTagName } from './xml.js';
+import { mapLimit } from './concurrency.js';
 
 const build_portraits_json = async (poet, collected) => {
   let result = [];
@@ -38,6 +38,6 @@ const build_portraits_json = async (poet, collected) => {
   return result;
 };
 
-module.exports = {
+export {
   build_portraits_json,
 };

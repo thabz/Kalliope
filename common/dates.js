@@ -307,7 +307,22 @@ const compareNormalizedDate = (a, b) => {
   return 0;
 };
 
-module.exports = {
+export {
+  compareNormalizedDate,
+  extractYear,
+  formatYearInterval,
+  formatYearEra,
+  formatTitleAndYear,
+  formattedAge,
+  formattedDate,
+  formattedYear,
+  formattedYearRange,
+  normalizeTimelineDate,
+  normalizedYear,
+  parseDate,
+};
+
+export default {
   compareNormalizedDate,
   extractYear,
   formatYearInterval,

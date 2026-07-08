@@ -1,4 +1,4 @@
-const crypto = require('crypto');
+import crypto from 'crypto';
 
 const filename = 'fdirs/poet/work.xml';
 
@@ -8,7 +8,7 @@ const sha1 = data => {
   return shasum.digest('hex');
 };
 
-const loadCaching = (fileContent, fileMtime, cachedContent, cachedMtime) => {
+const loadCaching = async (fileContent, fileMtime, cachedContent, cachedMtime) => {
   jest.resetModules();
 
   const files = new Map([[filename, { content: fileContent, mtime: fileMtime }]]);
@@ -30,14 +30,14 @@ const loadCaching = (fileContent, fileMtime, cachedContent, cachedMtime) => {
   }));
 
   return {
-    caching: require('../tools/libs/caching.js'),
+    caching: await import('../tools/libs/caching.js'),
     writes,
   };
 };
 
 describe('caching', () => {
-  test('treats mtime-only changes as unmodified content', () => {
-    const { caching, writes } = loadCaching('same', 200, 'same', 100);
+  test('treats mtime-only changes as unmodified content', async () => {
+    const { caching, writes } = await loadCaching('same', 200, 'same', 100);
 
     const firstConsumerSeesModified = caching.isFileModified(filename);
     const nextConsumerSeesModified = caching.isFileModified(filename);
@@ -53,8 +53,8 @@ describe('caching', () => {
     });
   });
 
-  test('keeps content changes marked modified during the same run', () => {
-    const { caching } = loadCaching('changed', 200, 'original', 100);
+  test('keeps content changes marked modified during the same run', async () => {
+    const { caching } = await loadCaching('changed', 200, 'original', 100);
 
     const firstConsumerSeesModified = caching.isFileModified(filename);
     const nextConsumerSeesModified = caching.isFileModified(filename);

@@ -1,16 +1,16 @@
-const { isFileModified } = require('../libs/caching.js');
-const {
+import { isFileModified } from '../libs/caching.js';
+import {
   safeMkdir,
   writeJSON,
   htmlToXml,
   replaceDashes,
   fileExists,
-} = require('../libs/helpers.js');
-const { collect_git_modified_dates } = require('./git.js');
-const { mapLimit } = require('./concurrency.js');
-const { extractTitle, get_notes, get_pictures } = require('./parsing.js');
-const { sortWorks } = require('../../common/worksort.js');
-const {
+} from '../libs/helpers.js';
+import { collect_git_modified_dates } from './git.js';
+import { mapLimit } from './concurrency.js';
+import { extractTitle, get_notes, get_pictures } from './parsing.js';
+import { sortWorks } from '../../common/worksort.js';
+import {
   loadXMLDoc,
   getChildren,
   tagName,
@@ -18,7 +18,7 @@ const {
   safeGetAttr,
   getChildByTagName,
   getChildrenByTagName,
-} = require('./xml.js');
+} from './xml.js';
 
 // Rekursiv function som bruges til at bygge værkers indholdsfortegnelse,
 // men også del-indholdstegnelser til de linkbare sektioner som har en id.
@@ -182,7 +182,7 @@ const build_works_toc = async (collected) => {
   });
 };
 
-module.exports = {
+export {
   build_works_toc,
   build_section_toc,
 };

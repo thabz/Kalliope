@@ -1,15 +1,15 @@
 // All our images should have scaled versions with the following widths
-module.exports.availableImageWidths = [
+export const availableImageWidths = [
   100, 150, 200, 250, 300, 400, 500, 600, 800,
 ];
 
 // Det er vigtigt at webp kommer før jpg, da Chrome vælger den første source
 // den kender.
-module.exports.availableImageFormats = ['jpg'];
+export const availableImageFormats = ['jpg'];
 
-module.exports.fallbackImagePostfix = '-w800.jpg';
+export const fallbackImagePostfix = '-w800.jpg';
 
-const countries = [
+export const countries = [
   //const countries: Array<{
   //  code: Country,
   //  adjective: { da: string, en: string },
@@ -79,9 +79,18 @@ const countries = [
   },
 ];
 
-module.exports.countries = countries;
+export const backgroundLinkColor = 'hsla(353, 20%, 85%, 1)';
+export const lightLinkColor = '#9C686C';
+export const lightTextColor = '#767676';
+export const linkColor = 'hsla(353, 43%, 38%, 1)';
 
-module.exports.backgroundLinkColor = 'hsla(353, 20%, 85%, 1)';
-module.exports.lightLinkColor = '#9C686C';
-module.exports.lightTextColor = '#767676';
-module.exports.linkColor = 'hsla(353, 43%, 38%, 1)';
+export default {
+  availableImageWidths,
+  availableImageFormats,
+  fallbackImagePostfix,
+  countries,
+  backgroundLinkColor,
+  lightLinkColor,
+  lightTextColor,
+  linkColor,
+};

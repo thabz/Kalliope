@@ -1,16 +1,16 @@
-const {
+import {
   safeMkdir,
   writeText,
   fileExists,
   fileModifiedTime,
-} = require('../libs/helpers.js');
-const { isFileModified } = require('../libs/caching.js');
-const {
+} from '../libs/helpers.js';
+import { isFileModified } from '../libs/caching.js';
+import {
   loadXMLDoc,
   safeGetAttr,
   getElementsByTagNames,
-} = require('./xml.js');
-const { collect_git_modified_dates } = require('./git.js');
+} from './xml.js';
+import { collect_git_modified_dates } from './git.js';
 
 const LANGS = ['da', 'en'];
 
@@ -193,6 +193,6 @@ const build_sitemap_xml = (collected) => {
   writeText('public/sitemap.xml', xml);
 };
 
-module.exports = {
+export {
   build_sitemap_xml,
 };

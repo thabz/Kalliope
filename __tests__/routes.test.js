@@ -1,4 +1,4 @@
-import { matchRoute } from '../routes';
+import { matchRoute } from '../routes.js';
 
 describe('routes', () => {
   it('matches the localized front page', () => {

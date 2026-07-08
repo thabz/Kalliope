@@ -1,16 +1,16 @@
-const { safeMkdir, writeJSON } = require('../libs/helpers.js');
-const {
+import { safeMkdir, writeJSON } from '../libs/helpers.js';
+import {
   isFileModified,
   loadCachedJSON,
   writeCachedJSON,
   force_reload,
-} = require('../libs/caching.js');
-const {
+} from '../libs/caching.js';
+import {
   safeGetAttr,
   safeGetText,
   getElementsByTagName,
   loadXMLDoc,
-} = require('./xml.js');
+} from './xml.js';
 
 // Read /data/museums.xml and produce collected.museums to to used later.
 const build_museums = () => {
@@ -120,7 +120,7 @@ const build_museum_pages = collected => {
   });
 };
 
-module.exports = {
+export {
   build_museum_url,
   build_museums,
   build_museum_pages,

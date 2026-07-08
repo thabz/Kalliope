@@ -1,5 +1,5 @@
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
 
 const imageExtensionPattern = /\.(jpe?g|png|gif|webp)$/i;
 const pictureTagPattern = /<picture\b([^>]*)>/g;

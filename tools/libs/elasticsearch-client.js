@@ -325,4 +325,4 @@ class ElasticSearchClient {
 
 const elasticSearchClient = new ElasticSearchClient();
 
-module.exports = elasticSearchClient;
+export default elasticSearchClient;
