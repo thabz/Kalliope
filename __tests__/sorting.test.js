@@ -1,6 +1,6 @@
 import * as Sorting from '../common/sorting.js';
 
-//const Sorting = require('./sorting.js');
+//import * as Sorting from './sorting.js';
 
 describe('locale lookup', () => {
   it('returns known locales and falls back to Danish', () => {

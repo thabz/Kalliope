@@ -1,19 +1,19 @@
-const fs = require('fs');
-const { safeMkdir, htmlToXml, writeJSON } = require('../libs/helpers.js');
-const {
+import fs from 'fs';
+import { safeMkdir, htmlToXml, writeJSON } from '../libs/helpers.js';
+import {
   isFileModified,
   loadCachedJSON,
   writeCachedJSON,
-} = require('../libs/caching.js');
-const { get_pictures } = require('./parsing.js');
-const {
+} from '../libs/caching.js';
+import { get_pictures } from './parsing.js';
+import {
   loadXMLDoc,
   safeGetInnerXML,
   safeGetText,
   safeGetAttr,
   getChildByTagName,
-} = require('./xml.js');
-const { mapLimit } = require('./concurrency.js');
+} from './xml.js';
+import { mapLimit } from './concurrency.js';
 
 const build_keywords = async collected => {
   safeMkdir('public/api/keywords');
@@ -90,6 +90,6 @@ const build_keywords = async collected => {
   return collected_keywords;
 };
 
-module.exports = {
+export {
   build_keywords,
 };

@@ -1,11 +1,13 @@
-const fetch = require('node-fetch');
-
 const URLPrefix = process.env.ELASTICSEARCH_URL || 'http://localhost:9200';
 const requestTimeout = Math.max(
   1000,
   parseInt(process.env.KALLIOPE_ELASTICSEARCH_REQUEST_TIMEOUT_MS, 10) || 60000
 );
 const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
+const withRequestTimeout = options => ({
+  ...options,
+  signal: options.signal || AbortSignal.timeout(requestTimeout),
+});
 
 const requestWithRetry = async (
   URL,
@@ -14,11 +16,8 @@ const requestWithRetry = async (
   acceptedStatuses = []
 ) => {
   let lastError = null;
-  const requestOptions = {
-    timeout: requestTimeout,
-    ...options,
-  };
   for (let attempt = 1; attempt <= attempts; attempt++) {
+    const requestOptions = withRequestTimeout(options);
     try {
       const res = await fetch(URL, requestOptions);
       if (res.ok || acceptedStatuses.includes(res.status)) {
@@ -41,10 +40,9 @@ const requestWithRetry = async (
 class ElasticSearchClient {
   async indexExists(index) {
     const URL = `${URLPrefix}/${index}`;
-    const res = await fetch(URL, {
+    const res = await fetch(URL, withRequestTimeout({
       method: 'HEAD',
-      timeout: requestTimeout,
-    });
+    }));
     if (res.ok) {
       return true;
     }
@@ -98,6 +96,14 @@ class ElasticSearchClient {
                   analyzer: 'kalliope_text',
                 },
                 subtitles: {
+                  type: 'text',
+                  analyzer: 'kalliope_text',
+                },
+              },
+            },
+            work: {
+              properties: {
+                title: {
                   type: 'text',
                   analyzer: 'kalliope_text',
                 },
@@ -214,24 +220,51 @@ class ElasticSearchClient {
   // Returns the raw JSON as (a promise of) text, not as an object.
   search(index, type, country, poetId, query, page = 0) {
     const URL = `${URLPrefix}/${index}/_search`;
+    const poetSearchQuery = {
+      bool: {
+        filter: [{ term: { result_type: 'poet' } }],
+        must: [
+          {
+            multi_match: {
+              query,
+              fields: ['poet_search^4'],
+            },
+          },
+        ],
+      },
+    };
+    const workSearchQuery = {
+      bool: {
+        filter: [{ term: { result_type: 'work' } }],
+        must: [
+          {
+            multi_match: {
+              query,
+              fields: ['work.title^3'],
+            },
+          },
+        ],
+      },
+    };
+    const textSearchQuery = {
+      bool: {
+        filter: [{ term: { result_type: 'text' } }],
+        must: [
+          {
+            multi_match: {
+              query,
+              fields: ['text.title^3', 'text.subtitles^2', 'text.content_html'],
+            },
+          },
+        ],
+      },
+    };
     const body = {
       size: 10,
       from: page * 10,
       query: {
         bool: {
-          must: [
-            {
-              multi_match: {
-                query: query,
-                fields: [
-                  'poet_search^4',
-                  'text.title^3',
-                  'text.subtitles^2',
-                  'text.content_html',
-                ],
-              },
-            },
-          ],
+          must: [],
           filter: [],
         },
       },
@@ -245,8 +278,11 @@ class ElasticSearchClient {
       body.query.bool.filter.push({
         term: { 'poet.id': poetId },
       });
-      body.query.bool.filter.push({
-        term: { result_type: 'text' },
+      body.query.bool.must.push({
+        bool: {
+          should: [workSearchQuery, textSearchQuery],
+          minimum_should_match: 1,
+        },
       });
       body.query.bool.filter.push({
         term: { 'poet.country': country },
@@ -255,13 +291,17 @@ class ElasticSearchClient {
       body.query.bool.filter.push({
         bool: {
           should: [
-            { term: { result_type: 'poet' } },
+            poetSearchQuery,
             {
               bool: {
-                filter: [
-                  { term: { result_type: 'text' } },
-                  { term: { 'poet.country': country } },
-                ],
+                must: [workSearchQuery],
+                filter: [{ term: { 'poet.country': country } }],
+              },
+            },
+            {
+              bool: {
+                must: [textSearchQuery],
+                filter: [{ term: { 'poet.country': country } }],
               },
             },
           ],
@@ -285,4 +325,4 @@ class ElasticSearchClient {
 
 const elasticSearchClient = new ElasticSearchClient();
 
-module.exports = elasticSearchClient;
+export default elasticSearchClient;

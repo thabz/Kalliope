@@ -1,18 +1,18 @@
-const { safeMkdir, writeJSON, htmlToXml } = require('../libs/helpers.js');
-const { isFileModified } = require('../libs/caching.js');
-const {
+import { safeMkdir, writeJSON, htmlToXml } from '../libs/helpers.js';
+import { isFileModified } from '../libs/caching.js';
+import {
   compareNormalizedDate,
   normalizeTimelineDate,
-} = require('../../common/dates.js');
-const {
+} from '../../common/dates.js';
+import {
   safeGetAttr,
   safeGetInnerXML,
   getChildByTagName,
   loadXMLDoc,
   getElementsByTagName,
-} = require('./xml.js');
-const { get_picture } = require('./parsing.js');
-const { mapLimit } = require('./concurrency.js');
+} from './xml.js';
+import { get_picture } from './parsing.js';
+import { mapLimit } from './concurrency.js';
 
 const normalize_timeline_date = normalizeTimelineDate;
 const compare_normalized_date = compareNormalizedDate;
@@ -233,7 +233,7 @@ const build_poet_timeline_json = async (poet, collected) => {
   return items;
 };
 
-module.exports = {
+export {
   build_global_timeline,
   build_poet_timeline_json,
   normalize_timeline_date,

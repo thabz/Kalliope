@@ -1,11 +1,10 @@
-import 'isomorphic-fetch';
 import Router from 'next/router';
 import { useEffect } from 'react';
 import * as Client from '../common/client.js';
 import * as OpenGraph from '../common/opengraph.js';
 import _ from '../common/translations.js';
 import { worksCrumbs } from '../components/breadcrumbs.js';
-import * as Links from '../components/links';
+import * as Links from '../components/links.js';
 import { poetMenu } from '../components/menu.js';
 import Page from '../components/page.js';
 import PicturesGrid from '../components/picturesgrid.js';

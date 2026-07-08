@@ -1,4 +1,4 @@
-const { isKnownPoetLanguage } = require('../tools/build-static/poets.js');
+import { isKnownPoetLanguage } from '../tools/build-static/poets.js';
 
 describe('poet language validation', () => {
   it('allows Ancient Greek text language', () => {

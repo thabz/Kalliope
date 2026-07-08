@@ -1,6 +1,6 @@
 // ./pages/_document.js
 import Document, { Head, Html, Main, NextScript } from 'next/document';
-import { matchRoute } from '../routes';
+import { matchRoute } from '../routes.js';
 
 const pathnameFrom = (asPath) => asPath.split(/[?#]/, 1)[0];
 
@@ -24,7 +24,7 @@ export default class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          <script src="/register-sw.js" />
+          <script src="/register-sw.js" defer />
         </body>
       </Html>
     );

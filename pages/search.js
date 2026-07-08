@@ -8,7 +8,7 @@ import {
   kalliopeCrumbs,
   poetCrumbsWithTitle,
 } from '../components/breadcrumbs.js';
-import * as Links from '../components/links';
+import * as Links from '../components/links.js';
 import { kalliopeMenu, poetMenu } from '../components/menu.js';
 import Page from '../components/page.js';
 import {
@@ -20,11 +20,24 @@ import TextName from '../components/textname.js';
 import WorkName from '../components/workname.js';
 import ErrorPage from './error.js';
 
+export const totalHitsValue = (hits) => hits.total.value;
+
+const ResultTypeLabel = ({ children }) => (
+  <span className="result-type">
+    {children}
+    <style jsx>{`
+      .result-type {
+        color: ${CommonData.lightTextColor};
+      }
+    `}</style>
+  </span>
+);
+
 const RenderedHits = ({ hits }) => {
   const lang = useContext(LangContext);
 
   return hits
-    .filter((x) => ['poet', 'text'].includes(x._source.result_type))
+    .filter((x) => ['poet', 'work', 'text'].includes(x._source.result_type))
     .map((hit, i) => {
       const { poet, work, text } = hit._source;
       const { highlight } = hit;
@@ -39,14 +52,32 @@ const RenderedHits = ({ hits }) => {
               </Link>
             </div>
             <div className="poet-and-work">
-              {_('Digter', lang)}
+              <ResultTypeLabel>{_('Digter', lang)}</ResultTypeLabel>
             </div>
             <style jsx>{`
               .title {
                 font-size: 1.15em;
               }
-              .poet-and-work {
-                color: ${CommonData.lightTextColor};
+            `}</style>
+          </div>
+        );
+      } else if (hit._source.result_type === 'work') {
+        const workURL = Links.workURL(lang, poet.id, work.id);
+        item = (
+          <div>
+            <div className="title">
+              <Link href={workURL}>
+                <WorkName work={work} lang={lang} />
+              </Link>
+            </div>
+            <div className="poet-and-work">
+              <ResultTypeLabel>{_('Værk', lang)}</ResultTypeLabel>
+              {' · '}
+              <PoetName poet={poet} />
+            </div>
+            <style jsx>{`
+              .title {
+                font-size: 1.15em;
               }
             `}</style>
           </div>
@@ -76,6 +107,8 @@ const RenderedHits = ({ hits }) => {
             </div>
             <div className="hightlights">{renderedHighlight}</div>
             <div className="poet-and-work">
+              <ResultTypeLabel>{_('Tekst', lang)}</ResultTypeLabel>
+              {' · '}
               <PoetName poet={poet} />: <WorkName work={work} lang={lang} />
             </div>
             <style jsx>{`
@@ -129,7 +162,10 @@ const SearchPage = (props) => {
       setError(result.error);
     } else {
       setResultPage(resultPage + 1);
-      if (result.hits.total > 0 && result.hits.hits.length > 0) {
+      if (
+        totalHitsValue(result.hits) > 0 &&
+        result.hits.hits.length > 0
+      ) {
         setHits(hits.concat(result.hits.hits));
       }
     }
@@ -180,7 +216,7 @@ const SearchPage = (props) => {
       } else {
         setResultPage(0);
         setHits(result.hits.hits);
-        setTotalHits(result.hits.total);
+        setTotalHits(totalHitsValue(result.hits));
       }
     };
     asyncLoad();

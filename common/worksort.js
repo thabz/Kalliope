@@ -25,6 +25,10 @@ const sortWorks = (poet, works) => {
   }
 };
 
-module.exports = {
+export {
+  sortWorks,
+};
+
+export default {
   sortWorks,
 };

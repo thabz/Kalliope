@@ -2,7 +2,7 @@ import Link from 'next/link';
 import * as Client from '../common/client.js';
 import _ from '../common/translations.js';
 import { kalliopeCrumbs } from '../components/breadcrumbs.js';
-import * as Links from '../components/links';
+import * as Links from '../components/links.js';
 import { kalliopeMenu } from '../components/menu.js';
 import Page from '../components/page.js';
 import ErrorPage from './error.js';

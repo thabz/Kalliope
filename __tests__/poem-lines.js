@@ -31,28 +31,36 @@ function checkNotesGroups(filename, data) {
   }
 }
 
+function stripXmlComments(data) {
+  return data.replace(/<!--[\s\S]*?-->/g, '');
+}
+
 function textIds(data) {
   const idRegexp = /<(?:text|section)[^>]*\sid="([^"]+)"/g;
-  return Array.from(data.matchAll(idRegexp)).map((match) => match[1]);
+  return Array.from(stripXmlComments(data).matchAll(idRegexp)).map(
+    (match) => match[1]
+  );
 }
 
 function textAliases(data) {
   const partRegexp = /<(?:text|section)\b[^>]*>/g;
-  return Array.from(data.matchAll(partRegexp)).flatMap((partMatch) => {
-    const part = partMatch[0];
-    const idMatch = part.match(/\sid="([^"]+)"/);
-    const aliasesMatch = part.match(/\saliases="([^"]*)"/);
+  return Array.from(stripXmlComments(data).matchAll(partRegexp)).flatMap(
+    (partMatch) => {
+      const part = partMatch[0];
+      const idMatch = part.match(/\sid="([^"]+)"/);
+      const aliasesMatch = part.match(/\saliases="([^"]*)"/);
 
-    if (idMatch == null || aliasesMatch == null) {
-      return [];
+      if (idMatch == null || aliasesMatch == null) {
+        return [];
+      }
+
+      return aliasesMatch[1]
+        .split(',')
+        .map((alias) => alias.trim())
+        .filter((alias) => alias.length > 0)
+        .map((alias) => ({ id: idMatch[1], alias }));
     }
-
-    return aliasesMatch[1]
-      .split(',')
-      .map((alias) => alias.trim())
-      .filter((alias) => alias.length > 0)
-      .map((alias) => ({ id: idMatch[1], alias }));
-  });
+  );
 }
 
 function firstYear(text) {
@@ -66,9 +74,10 @@ function firstMatch(text, regexp) {
 }
 
 function findMissingModernFrenchSpacing(data) {
-  const textData = data
-    .replace(/<!--[\s\S]*?-->/g, '')
-    .replace(/<picture\b[\s\S]*?<\/picture>/g, '');
+  const textData = stripXmlComments(data).replace(
+    /<picture\b[\s\S]*?<\/picture>/g,
+    ''
+  );
   const lines = textData.split('\n');
   for (let i = 0; i < lines.length; i++) {
     const text = lines[i].replace(/<[^>]+>/g, '');
@@ -209,12 +218,20 @@ describe('Check workfiles', () => {
   filenames = flatten(filenames);
 
   let seenTextIds = new Map();
+  let duplicateTextIds = [];
   let seenTextAliases = new Map();
   let duplicateTextAliases = [];
 
   filenames.forEach((filename) => {
     const data = loadText(`fdirs/${filename}`);
     textIds(data).forEach((textId) => {
+      if (seenTextIds.has(textId)) {
+        duplicateTextIds.push(
+          `Text id "${textId}" is used in both ${seenTextIds.get(
+            textId
+          )} and ${filename}.`
+        );
+      }
       seenTextIds.set(textId, filename);
     });
     textAliases(data).forEach(({ id, alias }) => {
@@ -227,6 +244,12 @@ describe('Check workfiles', () => {
       }
       seenTextAliases.set(alias, `${filename}:${id}`);
     });
+  });
+
+  it('Text ids are unique across workfiles', () => {
+    if (duplicateTextIds.length > 0) {
+      fail(duplicateTextIds.join('\n'));
+    }
   });
 
   it('Text aliases do not conflict with text ids', () => {

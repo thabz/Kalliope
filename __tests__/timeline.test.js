@@ -1,8 +1,8 @@
-const {
+import {
   compare_normalized_date,
   normalize_timeline_date,
   sorted_timeline,
-} = require('../tools/build-static/timeline.js');
+} from '../tools/build-static/timeline.js';
 
 describe('timeline helpers', () => {
   it('normalizes partial and approximate dates', () => {

@@ -1,4 +1,4 @@
-const pLimit = require('p-limit');
+import pLimit from 'p-limit';
 
 const DEFAULT_CONCURRENCY = 4;
 
@@ -14,7 +14,7 @@ const mapLimit = (items, mapper, concurrency = buildConcurrency) => {
   );
 };
 
-module.exports = {
+export {
   buildConcurrency,
   mapLimit,
 };

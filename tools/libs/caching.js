@@ -1,12 +1,12 @@
-const {
+import {
   loadJSON,
   loadFile,
   writeJSON,
   safeMkdir,
   fileExists,
   fileModifiedTime,
-} = require('./helpers.js');
-const crypto = require('crypto');
+} from './helpers.js';
+import crypto from 'crypto';
 
 const force_reload = process.argv.indexOf('--force-reload') !== -1;
 
@@ -124,7 +124,7 @@ const writeCachedJSON = (key, data) => {
 const shouldForceReload = () => {
   return force_reload;
 };
-module.exports = {
+export {
   isFileModified,
   markFileDirty,
   refreshFilesModifiedCache,

@@ -3,8 +3,8 @@ import { useContext } from 'react';
 import CommonData from '../common/commondata.js';
 import LangContext from '../common/LangContext.js';
 import { Footnote } from './footnotes.js';
-import * as Links from './links';
-var DOMParser = require('@xmldom/xmldom').DOMParser;
+import * as Links from './links.js';
+import { DOMParser } from '@xmldom/xmldom';
 
 // Render xml
 const renderXmlString = (inputString) => {

@@ -1,7 +1,7 @@
-const fs = require('fs');
-const path = require('path');
-const { execFileSync } = require('child_process');
-const { TextDecoder } = require('util');
+import fs from 'fs';
+import path from 'path';
+import { execFileSync } from 'child_process';
+import { TextDecoder } from 'util';
 
 const decoder = new TextDecoder('utf-8', { fatal: true });
 

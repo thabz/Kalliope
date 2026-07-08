@@ -1,4 +1,4 @@
-const { loadCachedJSON } = require('./libs/caching.js');
+import { loadCachedJSON } from './libs/caching.js';
 
 const counts = new Map();
 let poemsWithNoDate = 0;

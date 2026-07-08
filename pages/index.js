@@ -1,8 +1,7 @@
-import 'isomorphic-fetch';
 import { useContext } from 'react';
 import { createURL } from '../common/client.js';
 import LangContext from '../common/LangContext.js';
-import { kalliopeCrumbs } from '../components/breadcrumbs';
+import { kalliopeCrumbs } from '../components/breadcrumbs.js';
 import { formattedDate } from '../components/formatteddate.js';
 import { kalliopeMenu } from '../components/menu.js';
 import Page from '../components/page.js';
@@ -134,6 +133,7 @@ const News = ({ news }) => {
               margin-top: 5px;
               font-size: 0.9em;
               color: #757575;
+              text-align: right;
             }
           `}</style>
         </div>

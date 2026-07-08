@@ -1,6 +1,3 @@
-// routes.js
-const { parse } = require('url');
-
 const routeDefinitions = [
   {
     page: '/',
@@ -133,7 +130,15 @@ const getRequestHandler = app => {
   const nextHandler = app.getRequestHandler();
 
   return (req, res, parsedUrl) => {
-    const url = parsedUrl || parse(req.url, true);
+    const url =
+      parsedUrl ||
+      (() => {
+        const requestUrl = new URL(req.url, 'http://localhost');
+        return {
+          pathname: requestUrl.pathname,
+          query: Object.fromEntries(requestUrl.searchParams),
+        };
+      })();
     const match = matchRoute(url.pathname);
 
     if (match != null) {
@@ -147,7 +152,7 @@ const getRequestHandler = app => {
   };
 };
 
-module.exports = {
+export {
   getRequestHandler,
   matchRoute,
 };
