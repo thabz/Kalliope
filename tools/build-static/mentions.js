@@ -118,6 +118,7 @@ const build_person_or_keyword_refs = (collected) => {
           ];
           notes.forEach((note) => {
             regexps.forEach((rule) => {
+              let match;
               while (
                 (match = rule.regexp.exec(safeGetOuterXML(note))) != null
               ) {

@@ -49,7 +49,7 @@ const build_todays_events_json = async (collected) => {
           const year = m[1];
           const monthAndDay = m[2];
           langs.forEach((lang) => {
-            content_html = `<a poet="${poetId}">${poetName(poet)}</a>`;
+            let content_html = `<a poet="${poetId}">${poetName(poet)}</a>`;
             content_html += lang === 'da' ? ' født' : ' born';
             if (born.place != null) {
               content_html += `, ${translatePlace(born.place, lang)}.`;
@@ -73,7 +73,7 @@ const build_todays_events_json = async (collected) => {
           const year = m[1];
           const monthAndDay = m[2];
           langs.forEach((lang) => {
-            content_html = `<a poet="${poetId}">${poetName(poet)}</a>`;
+            let content_html = `<a poet="${poetId}">${poetName(poet)}</a>`;
             content_html += lang === 'da' ? ' død' : ' dead';
             if (dead.place != null) {
               content_html += `, ${translatePlace(dead.place, lang)}.`;
