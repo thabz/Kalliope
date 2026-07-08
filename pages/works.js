@@ -1,4 +1,3 @@
-import 'isomorphic-fetch';
 import Router from 'next/router';
 import { useEffect } from 'react';
 import * as Client from '../common/client.js';
