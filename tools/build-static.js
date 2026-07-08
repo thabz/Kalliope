@@ -101,6 +101,15 @@ const {
   build_poet_timeline_json,
 } = require('./build-static/timeline.js');
 
+const envFlag = (name) => {
+  return ['1', 'true', 'yes'].includes(
+    (process.env[name] || '').toLowerCase(),
+  );
+};
+
+const skipImageThumbnails = envFlag('KALLIOPE_SKIP_IMAGE_THUMBNAILS');
+const skipElasticsearch = envFlag('KALLIOPE_SKIP_ELASTICSEARCH');
+
 let collected = {
   texts: new Map(),
   works: new Map(),
@@ -1139,8 +1148,16 @@ const main = async () => {
   await b('build_sitemap_xml', build_sitemap_xml, collected);
   await b('build_anniversaries_ical', build_anniversaries_ical, collected);
   refreshFilesModifiedCache();
-  await b('build_image_thumbnails', build_image_thumbnails);
-  await b('update_elasticsearch', update_elasticsearch, collected);
+  if (skipImageThumbnails) {
+    console.log('Skipping image thumbnail build.');
+  } else {
+    await b('build_image_thumbnails', build_image_thumbnails);
+  }
+  if (skipElasticsearch) {
+    console.log('Skipping Elasticsearch update.');
+  } else {
+    await b('update_elasticsearch', update_elasticsearch, collected);
+  }
   refreshFilesModifiedCache();
   flushImageSizeCache();
   print_benchmarking_results();
