@@ -1,4 +1,3 @@
-import 'isomorphic-fetch';
 import { useContext } from 'react';
 import { createURL } from '../common/client.js';
 import LangContext from '../common/LangContext.js';

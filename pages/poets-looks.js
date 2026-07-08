@@ -1,4 +1,3 @@
-import 'isomorphic-fetch';
 import Link from 'next/link';
 import { createURL } from '../common/client.js';
 import CommonData from '../common/commondata.js';

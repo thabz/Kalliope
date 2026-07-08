@@ -1,4 +1,3 @@
-import 'isomorphic-fetch';
 import * as Client from '../common/client.js';
 import _ from '../common/translations.js';
 import { kalliopeCrumbs } from '../components/breadcrumbs.js';
