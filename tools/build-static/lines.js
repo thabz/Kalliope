@@ -1,20 +1,20 @@
-const { isFileModified } = require('../libs/caching.js');
-const {
+import { isFileModified } from '../libs/caching.js';
+import {
   safeMkdir,
   writeJSON,
   replaceDashes,
   fileExists,
-} = require('../libs/helpers.js');
-const { primaryTextVariantId } = require('./variants.js');
-const { extractTitle } = require('./parsing.js');
-const { poetName, workName } = require('./formatting.js');
-const {
+} from '../libs/helpers.js';
+import { primaryTextVariantId } from './variants.js';
+import { extractTitle } from './parsing.js';
+import { poetName, workName } from './formatting.js';
+import {
   getChildByTagName,
   getElementsByTagNames,
   loadXMLDoc,
   safeGetAttr,
   tagName,
-} = require('./xml.js');
+} from './xml.js';
 
 function stripDiacriticsGreek(str) {
   return (
@@ -259,7 +259,7 @@ const build_poet_lines_json = (collected) => {
   });
 };
 
-module.exports = {
+export {
   build_global_lines_json,
   build_poet_lines_json,
 };

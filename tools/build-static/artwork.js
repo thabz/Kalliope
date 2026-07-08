@@ -1,23 +1,23 @@
-const { fileExists, htmlToXml } = require('../libs/helpers.js');
-const {
+import { fileExists, htmlToXml } from '../libs/helpers.js';
+import {
   isFileModified,
   loadCachedJSON,
   writeCachedJSON,
   markFileDirty,
-  force_reload: globalForceReload,
-} = require('../libs/caching.js');
-const { imageSizeSync } = require('./image.js');
-const {
+  force_reload as globalForceReload,
+} from '../libs/caching.js';
+import { imageSizeSync } from './image.js';
+import {
   loadXMLDoc,
   safeGetAttr,
   safeGetInnerXML,
   getElementsByTagName,
   getChildByTagName,
   safeTrim,
-} = require('./xml.js');
-const { get_picture, validate_picture_attrs } = require('./parsing.js');
-const { build_museum_url } = require('./museums.js');
-const { mapLimit } = require('./concurrency.js');
+} from './xml.js';
+import { get_picture, validate_picture_attrs } from './parsing.js';
+import { build_museum_url } from './museums.js';
+import { mapLimit } from './concurrency.js';
 
 const readArtworkFile = async (personId, artworkFilename, collected) => {
   const artworksDoc = loadXMLDoc(artworkFilename);
@@ -244,6 +244,6 @@ const build_artwork = async (collected) => {
   return collected_artwork;
 };
 
-module.exports = {
+export {
   build_artwork,
 };

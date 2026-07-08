@@ -8,7 +8,7 @@ import {
   kalliopeCrumbs,
   poetCrumbsWithTitle,
 } from '../components/breadcrumbs.js';
-import * as Links from '../components/links';
+import * as Links from '../components/links.js';
 import { kalliopeMenu, poetMenu } from '../components/menu.js';
 import Page from '../components/page.js';
 import {

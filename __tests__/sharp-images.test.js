@@ -1,11 +1,11 @@
-const fs = require('fs');
-const os = require('os');
-const path = require('path');
-const sharp = require('sharp');
+import fs from 'fs';
+import os from 'os';
+import path from 'path';
+import sharp from 'sharp';
 
-const { buildThumbnails, resizeImage } = require('../tools/libs/helpers.js');
-const { imageSizeSync } = require('../tools/build-static/image.js');
-const ImagePaths = require('../common/imagepaths.js');
+import { buildThumbnails, resizeImage } from '../tools/libs/helpers.js';
+import { imageSizeSync } from '../tools/build-static/image.js';
+import * as ImagePaths from '../common/imagepaths.js';
 
 describe('sharp image helpers', () => {
   let tmpdir;

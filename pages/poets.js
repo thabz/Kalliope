@@ -8,7 +8,7 @@ import _ from '../common/translations.js';
 import { kalliopeCrumbs } from '../components/breadcrumbs.js';
 import CountryPicker from '../components/countrypicker.js';
 import { formatYearInterval, parseDate } from '../components/formatteddate.js';
-import * as Links from '../components/links';
+import * as Links from '../components/links.js';
 import Page from '../components/page.js';
 import PoetName from '../components/poetname.js';
 import SectionedList from '../components/sectionedlist.js';

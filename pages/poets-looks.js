@@ -1,9 +1,8 @@
-import 'isomorphic-fetch';
 import Link from 'next/link';
 import { createURL } from '../common/client.js';
 import CommonData from '../common/commondata.js';
 import * as Strings from '../common/strings.js';
-import * as Links from '../components/links';
+import * as Links from '../components/links.js';
 import Page from '../components/page.js';
 import Picture from '../components/picture.js';
 import { poetNameString } from '../components/poetname-helpers.js';

@@ -1,7 +1,4 @@
-jest.mock('node-fetch', () => jest.fn());
-
-const fetch = require('node-fetch');
-const elasticSearchClient = require('../tools/libs/elasticsearch-client.js');
+import elasticSearchClient from '../tools/libs/elasticsearch-client.js';
 
 const response = {
   ok: true,
@@ -10,17 +7,23 @@ const response = {
 };
 
 describe('Elasticsearch client', () => {
+  const originalFetch = global.fetch;
+
   beforeEach(() => {
     jest.clearAllMocks();
     response.json.mockClear();
     response.text.mockClear();
-    fetch.mockResolvedValue(response);
+    global.fetch = jest.fn().mockResolvedValue(response);
+  });
+
+  afterAll(() => {
+    global.fetch = originalFetch;
   });
 
   test('creates an accent-insensitive text index', async () => {
     await elasticSearchClient.createIndex('kalliope');
 
-    const putCall = fetch.mock.calls.find(([, options]) => {
+    const putCall = global.fetch.mock.calls.find(([, options]) => {
       return options.method === 'PUT';
     });
     const body = JSON.parse(putCall[1].body);
@@ -62,7 +65,7 @@ describe('Elasticsearch client', () => {
       },
     ]);
 
-    const [url, options] = fetch.mock.calls[0];
+    const [url, options] = global.fetch.mock.calls[0];
     const lines = options.body.split('\n');
 
     expect(url).toBe('http://localhost:9200/kalliope/_bulk');
@@ -80,7 +83,7 @@ describe('Elasticsearch client', () => {
   test('searches poet names across countries and works/texts in selected country', async () => {
     await elasticSearchClient.search('kalliope', 'text', 'dk', '', 'aarestrup');
 
-    const body = JSON.parse(fetch.mock.calls[0][1].body);
+    const body = JSON.parse(global.fetch.mock.calls[0][1].body);
     const resultTypeFilter = body.query.bool.filter[0].bool;
 
     expect(body.query.bool.must).toEqual([]);
@@ -157,7 +160,7 @@ describe('Elasticsearch client', () => {
       'rose'
     );
 
-    const body = JSON.parse(fetch.mock.calls[0][1].body);
+    const body = JSON.parse(global.fetch.mock.calls[0][1].body);
 
     expect(body.query.bool.filter).toEqual([
       { term: { 'poet.id': 'aarestrup' } },

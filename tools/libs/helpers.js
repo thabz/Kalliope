@@ -1,12 +1,12 @@
-const fs = require('fs');
-const entities = require('entities');
-const { DOMParser } = require('@xmldom/xmldom');
-const bible = require('./bible-abbr.js');
-const path = require('path');
-const plimit = require('p-limit');
-const sharp = require('sharp');
-const CommonData = require('../../common/commondata.js');
-const ImagePaths = require('../../common/imagepaths.js');
+import fs from 'fs';
+import entities from 'entities';
+import { DOMParser } from '@xmldom/xmldom';
+import * as bible from './bible-abbr.js';
+import path from 'path';
+import plimit from 'p-limit';
+import sharp from 'sharp';
+import * as CommonData from '../../common/commondata.js';
+import * as ImagePaths from '../../common/imagepaths.js';
 
 const envInt = (name, fallback) => {
   const value = parseInt(process.env[name], 10);
@@ -200,7 +200,7 @@ const htmlToXml = (html, collected, isPoetry) => {
     decoded.indexOf('<num>') > -1 || decoded.indexOf('<margin>') > -1;
 
   let lineNum = 1;
-  lines = decoded.split('\n').map(l => {
+  const lines = decoded.split('\n').map(l => {
     let options = {};
     if (l.indexOf('<resetnum/>') > -1) {
       lineNum = 1;
@@ -341,7 +341,7 @@ const buildThumbnails = async (topFolder, isFileModifiedMethod) => {
   await Promise.all(tasks);
 };
 
-module.exports = {
+export {
   safeMkdir,
   fileExists,
   fileModifiedTime,

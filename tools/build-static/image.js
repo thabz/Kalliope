@@ -1,11 +1,11 @@
-const plimit = require('p-limit');
-const sharp = require('sharp');
-const { fileExists } = require('../libs/helpers.js');
-const {
+import plimit from 'p-limit';
+import sharp from 'sharp';
+import { fileExists } from '../libs/helpers.js';
+import {
   isFileModified,
   loadCachedJSON,
   writeCachedJSON,
-} = require('../libs/caching.js');
+} from '../libs/caching.js';
 
 let collected_imagesizes = new Map(
   loadCachedJSON('collected.imagesizes') || []
@@ -43,7 +43,7 @@ const flushImageSizeCache = () => {
   writeCachedJSON('collected.imagesizes', Array.from(collected_imagesizes));
 };
 
-module.exports = {
+export {
   flushImageSizeCache,
   imageSizeSync,
 };

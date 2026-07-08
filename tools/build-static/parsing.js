@@ -1,7 +1,7 @@
-const entities = require('entities');
-const { htmlToXml } = require('../libs/helpers.js');
-const { build_museum_link, build_museum_url } = require('./museums.js');
-const {
+import entities from 'entities';
+import { htmlToXml } from '../libs/helpers.js';
+import { build_museum_url } from './museums.js';
+import {
   getChildByTagName,
   getChildrenByTagName,
   getElementByTagName,
@@ -10,10 +10,10 @@ const {
   safeGetAttr,
   safeGetInnerXML,
   safeTrim,
-} = require('./xml.js');
-const { poetName } = require('./formatting.js');
-const { imageSizeSync } = require('./image.js');
-const { mapLimit } = require('./concurrency.js');
+} from './xml.js';
+import { poetName } from './formatting.js';
+import { imageSizeSync } from './image.js';
+import { mapLimit } from './concurrency.js';
 
 const publicPathFromSrc = src => `public${src}`;
 
@@ -275,7 +275,7 @@ const extractDates = head => {
   return result;
 };
 
-module.exports = {
+export {
   extractTitle,
   extractSubtitles,
   extractDates,

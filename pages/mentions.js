@@ -5,7 +5,7 @@ import * as OpenGraph from '../common/opengraph.js';
 import { poetsByLastname } from '../common/sorting.js';
 import _ from '../common/translations.js';
 import { poetCrumbsWithTitle } from '../components/breadcrumbs.js';
-import * as Links from '../components/links';
+import * as Links from '../components/links.js';
 import { poetMenu } from '../components/menu.js';
 import Page from '../components/page.js';
 import { poetNameString } from '../components/poetname-helpers.js';

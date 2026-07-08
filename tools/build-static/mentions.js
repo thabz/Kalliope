@@ -1,16 +1,16 @@
-const {
+import {
   isFileModified,
   loadCachedJSON,
   writeCachedJSON,
-  force_reload: globalForceReload,
-} = require('../libs/caching.js');
-const {
+  force_reload as globalForceReload,
+} from '../libs/caching.js';
+import {
   safeMkdir,
   writeJSON,
   htmlToXml,
   fileExists,
-} = require('../libs/helpers.js');
-const {
+} from '../libs/helpers.js';
+import {
   loadXMLDoc,
   safeGetText,
   safeGetAttr,
@@ -20,9 +20,9 @@ const {
   getChildByTagName,
   safeGetOuterXML,
   safeGetInnerXML,
-} = require('./xml.js');
-const { poetName, workLinkName } = require('./formatting.js');
-const { primaryTextVariantId } = require('./variants.js');
+} from './xml.js';
+import { poetName, workLinkName } from './formatting.js';
+import { primaryTextVariantId } from './variants.js';
 
 const person_mentions_dirty = new Set();
 
@@ -349,7 +349,7 @@ const build_mentions_json = (collected) => {
   });
 };
 
-module.exports = {
+export {
   build_person_or_keyword_refs,
   build_mentions_data,
   build_mentions_json,

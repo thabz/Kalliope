@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import * as Client from '../common/client.js';
 import LangContext from '../common/LangContext.js';
 import { kalliopeCrumbs } from '../components/breadcrumbs.js';
-import * as Links from '../components/links';
+import * as Links from '../components/links.js';
 import { kalliopeMenu } from '../components/menu.js';
 import Note from '../components/note.js';
 import Page from '../components/page.js';

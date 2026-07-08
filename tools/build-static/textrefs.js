@@ -1,18 +1,18 @@
-const { fileExists } = require('../libs/helpers.js');
-const {
+import { fileExists } from '../libs/helpers.js';
+import {
   isFileModified,
   loadCachedJSON,
   writeCachedJSON,
-  force_reload: globalForceReload,
+  force_reload as globalForceReload,
   markFileDirty,
-} = require('../libs/caching.js');
-const {
+} from '../libs/caching.js';
+import {
   loadXMLDoc,
   getChildByTagName,
   getElementsByTagNames,
   safeGetAttr,
   safeGetOuterXML,
-} = require('./xml.js');
+} from './xml.js';
 
 const textRefTagRegexp = /<(?:xref|a)\b[^>]*(?:\bpoem|\bbibel)="[^"]*"[^>]*>/g;
 
@@ -144,7 +144,7 @@ const mark_ref_destinations_dirty = collected => {
   markFileDirty(...destination_workfiles);
 };
 
-module.exports = {
+export {
   build_textrefs,
   extractTextRefs,
   mark_ref_destinations_dirty,

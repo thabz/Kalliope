@@ -1,4 +1,3 @@
-import 'isomorphic-fetch';
 import * as Paths from './paths.js';
 
 export const createURL = (path) => {

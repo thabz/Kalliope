@@ -1,11 +1,13 @@
-const fetch = require('node-fetch');
-
 const URLPrefix = process.env.ELASTICSEARCH_URL || 'http://localhost:9200';
 const requestTimeout = Math.max(
   1000,
   parseInt(process.env.KALLIOPE_ELASTICSEARCH_REQUEST_TIMEOUT_MS, 10) || 60000
 );
 const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
+const withRequestTimeout = options => ({
+  ...options,
+  signal: options.signal || AbortSignal.timeout(requestTimeout),
+});
 
 const requestWithRetry = async (
   URL,
@@ -14,11 +16,8 @@ const requestWithRetry = async (
   acceptedStatuses = []
 ) => {
   let lastError = null;
-  const requestOptions = {
-    timeout: requestTimeout,
-    ...options,
-  };
   for (let attempt = 1; attempt <= attempts; attempt++) {
+    const requestOptions = withRequestTimeout(options);
     try {
       const res = await fetch(URL, requestOptions);
       if (res.ok || acceptedStatuses.includes(res.status)) {
@@ -41,10 +40,9 @@ const requestWithRetry = async (
 class ElasticSearchClient {
   async indexExists(index) {
     const URL = `${URLPrefix}/${index}`;
-    const res = await fetch(URL, {
+    const res = await fetch(URL, withRequestTimeout({
       method: 'HEAD',
-      timeout: requestTimeout,
-    });
+    }));
     if (res.ok) {
       return true;
     }
@@ -327,4 +325,4 @@ class ElasticSearchClient {
 
 const elasticSearchClient = new ElasticSearchClient();
 
-module.exports = elasticSearchClient;
+export default elasticSearchClient;

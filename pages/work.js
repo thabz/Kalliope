@@ -15,7 +15,7 @@ import SubHeading from '../components/subheading.js';
 import TextContent from '../components/textcontent.js';
 import TOC from '../components/toc.js';
 import WorkName, { workTitleString } from '../components/workname.js';
-import WorksList from '../components/workslist';
+import WorksList from '../components/workslist.js';
 import WorkSubtitles from '../components/worksubtitles.js';
 import ErrorPage from './error.js';
 
