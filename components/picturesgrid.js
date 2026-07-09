@@ -36,6 +36,9 @@ const PicturesGrid = ({ lang, poet, artwork, hideArtist, hideMuseum }) => {
     return height;
   };
 
+  // Fortæl browseren hvor bredt billedet faktisk vises: i små viewports er
+  // bredden en procentdel af viewporten, mens den på desktop er bundet af
+  // hovedkolonnens maksimale bredde.
   const imageSizesForWidth = (widthPercent) => {
     return `(max-width: ${mainBreakpointPx}px) ${widthPercent.toFixed(
       2
