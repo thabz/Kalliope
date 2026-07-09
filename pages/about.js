@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import * as Client from '../common/client.js';
 import LangContext from '../common/LangContext.js';
+import _ from '../common/translations.js';
 import { kalliopeCrumbs } from '../components/breadcrumbs.js';
 import * as Links from '../components/links.js';
 import { kalliopeMenu } from '../components/menu.js';
@@ -61,14 +62,14 @@ const About = (props) => {
   );
   const crumbs = [
     ...kalliopeCrumbs(lang),
-    { url: Links.aboutURL(lang, 'kalliope'), title: 'Om' },
+    { url: Links.aboutURL(lang, 'kalliope'), title: _('Om', lang) },
     { title: keyword.title },
   ];
   let author = null;
   if (keyword.author != null) {
     author = (
       <div style={{ fontSize: '16px', marginBottom: '40px' }}>
-        Af {keyword.author}
+        {_('Af', lang)} {keyword.author}
       </div>
     );
   }

@@ -1,102 +1,106 @@
+import { supportedLanguagePattern } from './common/languages.js';
+
+const lang = supportedLanguagePattern;
+
 const routeDefinitions = [
   {
     page: '/',
-    regex: /^\/(da|en)\/?$/,
+    regex: new RegExp(`^/(${lang})/?$`),
     keys: ['lang'],
   },
   {
     page: '/poets',
-    regex: /^\/(da|en)\/poets\/([^/]+)\/(name|year)\/?$/,
+    regex: new RegExp(`^/(${lang})/poets/([^/]+)/(name|year)/?$`),
     keys: ['lang', 'country', 'groupBy'],
   },
   {
     page: '/poets-looks',
-    regex: /^\/(da|en)\/poets\/([^/]+)\/(looks)\/?$/,
+    regex: new RegExp(`^/(${lang})/poets/([^/]+)/(looks)/?$`),
     keys: ['lang', 'country', 'groupBy'],
   },
   {
     page: '/works',
-    regex: /^\/(da|en)\/works\/([^/]+)\/?$/,
+    regex: new RegExp(`^/(${lang})/works/([^/]+)/?$`),
     keys: ['lang', 'poetId'],
   },
   {
     page: '/museums',
-    regex: /^\/(da|en)\/museums\/?$/,
+    regex: new RegExp(`^/(${lang})/museums/?$`),
     keys: ['lang'],
   },
   {
     page: '/museum',
-    regex: /^\/(da|en)\/museum\/([^/]+)\/?$/,
+    regex: new RegExp(`^/(${lang})/museum/([^/]+)/?$`),
     keys: ['lang', 'museumId'],
   },
   {
     page: '/texts',
-    regex: /^\/(da|en)\/texts\/([^/]+)\/([^/]+)\/?$/,
+    regex: new RegExp(`^/(${lang})/texts/([^/]+)/([^/]+)/?$`),
     keys: ['lang', 'poetId', 'type'],
   },
   {
     page: '/alltexts',
-    regex: /^\/(da|en)\/texts\/([^/]+)\/([^/]+)\/([^/]+)\/?$/,
+    regex: new RegExp(`^/(${lang})/texts/([^/]+)/([^/]+)/([^/]+)/?$`),
     keys: ['lang', 'country', 'type', 'letter'],
   },
   {
     page: '/bio',
-    regex: /^\/(da|en)\/bio\/([^/]+)\/?$/,
+    regex: new RegExp(`^/(${lang})/bio/([^/]+)/?$`),
     keys: ['lang', 'poetId'],
   },
   {
     page: '/bibliography',
-    regex: /^\/(da|en)\/bibliography\/([^/]+)\/?$/,
+    regex: new RegExp(`^/(${lang})/bibliography/([^/]+)/?$`),
     keys: ['lang', 'poetId'],
   },
   {
     page: '/mentions',
-    regex: /^\/(da|en)\/mentions\/([^/]+)\/?$/,
+    regex: new RegExp(`^/(${lang})/mentions/([^/]+)/?$`),
     keys: ['lang', 'poetId'],
   },
   {
     page: '/work',
-    regex: /^\/(da|en)\/work\/([^/]+)\/([^/]+)\/?$/,
+    regex: new RegExp(`^/(${lang})/work/([^/]+)/([^/]+)/?$`),
     keys: ['lang', 'poetId', 'workId'],
   },
   {
     page: '/text',
-    regex: /^\/(da|en)\/text\/([^/]+)\/?$/,
+    regex: new RegExp(`^/(${lang})/text/([^/]+)/?$`),
     keys: ['lang', 'textId'],
   },
   {
     page: '/keywords',
-    regex: /^\/(da|en)\/keywords\/?$/,
+    regex: new RegExp(`^/(${lang})/keywords/?$`),
     keys: ['lang'],
   },
   {
     page: '/keyword',
-    regex: /^\/(da|en)\/keyword\/([^/]+)\/?$/,
+    regex: new RegExp(`^/(${lang})/keyword/([^/]+)/?$`),
     keys: ['lang', 'keywordId'],
   },
   {
     page: '/dict',
-    regex: /^\/(da|en)\/dict\/?$/,
+    regex: new RegExp(`^/(${lang})/dict/?$`),
     keys: ['lang'],
   },
   {
     page: '/dictitem',
-    regex: /^\/(da|en)\/dict\/([^/]+)\/?$/,
+    regex: new RegExp(`^/(${lang})/dict/([^/]+)/?$`),
     keys: ['lang', 'dictItemId'],
   },
   {
     page: '/about',
-    regex: /^\/(da|en)\/about\/([^/]+)\/?$/,
+    regex: new RegExp(`^/(${lang})/about/([^/]+)/?$`),
     keys: ['lang', 'aboutItemId'],
   },
   {
     page: '/search',
-    regex: /^\/(da|en)\/search\/([^/]+)\/([^/]+)\/?$/,
+    regex: new RegExp(`^/(${lang})/search/([^/]+)/([^/]+)/?$`),
     keys: ['lang', 'country', 'poetId'],
   },
   {
     page: '/search',
-    regex: /^\/(da|en)\/search\/([^/]+)\/?$/,
+    regex: new RegExp(`^/(${lang})/search/([^/]+)/?$`),
     keys: ['lang', 'country'],
   },
 ];

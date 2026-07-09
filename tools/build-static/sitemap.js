@@ -11,8 +11,9 @@ import {
   getElementsByTagNames,
 } from './xml.js';
 import { collect_git_modified_dates } from './git.js';
+import { supportedLanguages } from '../../common/languages.js';
 
-const LANGS = ['da', 'en'];
+const LANGS = supportedLanguages;
 
 const sitemapLastmod = (filename) => {
   const modifiedTime = fileModifiedTime(filename);

@@ -19,7 +19,11 @@ describe('common data', () => {
     const other = CommonData.countries.find((country) => country.code === 'un');
     expect(danish.adjective.da).toBe('danske');
     expect(danish.adjective.en).toBe('Danish');
+    expect(danish.adjective.fr).toBe('danois');
+    expect(danish.adjective.de).toBe('dänische');
     expect(other.adjective.da).toBe('andre');
     expect(other.adjective.en).toBe('other');
+    expect(other.adjective.fr).toBe('autres');
+    expect(other.adjective.de).toBe('andere');
   });
 });

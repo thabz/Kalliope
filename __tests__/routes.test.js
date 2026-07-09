@@ -10,6 +10,14 @@ describe('routes', () => {
       page: '/',
       query: { lang: 'en' },
     });
+    expect(matchRoute('/fr/')).toEqual({
+      page: '/',
+      query: { lang: 'fr' },
+    });
+    expect(matchRoute('/de')).toEqual({
+      page: '/',
+      query: { lang: 'de' },
+    });
   });
 
   it('matches poet listing routes', () => {
@@ -65,6 +73,6 @@ describe('routes', () => {
       page: '/keyword',
       query: { lang: 'da', keywordId: 'ære' },
     });
-    expect(matchRoute('/fr/text/aarestrup1838010201')).toBe(null);
+    expect(matchRoute('/es/text/aarestrup1838010201')).toBe(null);
   });
 });

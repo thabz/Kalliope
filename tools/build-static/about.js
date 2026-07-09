@@ -72,7 +72,7 @@ const build_about_pages = async (collected) => {
       has_footnotes: false,
       pictures,
       notes,
-      content_lang: 'da',
+      content_lang: lang,
       content_html: htmlToXml(safeGetInnerXML(body), collected),
     };
     console.log(paths.json);
