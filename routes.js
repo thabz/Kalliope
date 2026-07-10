@@ -1,6 +1,6 @@
-import { supportedLanguagePattern } from './common/languages.js';
+import { supportedLanguages } from './common/languages.js';
 
-const lang = supportedLanguagePattern;
+const lang = supportedLanguages.join('|');
 
 const routeDefinitions = [
   {
