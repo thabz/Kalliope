@@ -20,7 +20,7 @@
     "start": "NODE_ENV=production LOCALE=da_DK.UTF_8 node server.js",
     "test": "jest",
     "test-watch": "jest --watch",
-    "test-ci": "NODE_ICU_DATA=./node_modules/full-icu jest",
+    "test-ci": "jest",
     "test2": "next test",
     "build-static": "node tools/build-static.js",
     "build-graph": "node tools/build-graph.js",
@@ -29,21 +29,19 @@
     "build-facsimiles-old": "node tools/build-facsimiles-old.js"
   },
   "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
-  },
-  "devDependencies": {
     "@xmldom/xmldom": "^0.9.10",
     "async": "^2.5.0",
     "entities": "^1.1.1",
-    "full-icu": "^1.2.1",
     "ics": "^2.4.1",
-    "jest": "^30.4.2",
     "mkdirp": "^0.5.1",
     "next": "^16.2.9",
     "p-limit": "^2.2.2",
-    "regenerator-runtime": "^0.13.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "sharp": "^0.34.5"
+  },
+  "devDependencies": {
+    "jest": "^30.4.2"
   },
   "author": "Jesper Christensen",
   "license": "MIT",
