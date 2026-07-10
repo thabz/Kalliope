@@ -1,5 +1,7 @@
 FROM node:20-bullseye-slim AS build
 
+ENV NPM_CONFIG_UPDATE_NOTIFIER=false
+
 WORKDIR /app
 
 COPY package*.json ./
@@ -14,11 +16,12 @@ COPY tools ./tools
 
 FROM node:20-bullseye-slim AS runtime
 
-WORKDIR /app
+ENV NPM_CONFIG_UPDATE_NOTIFIER=false
 ENV NODE_OPTIONS=--max-old-space-size=4096
-
 ENV NODE_ENV=production
 ENV LOCALE=da_DK.UTF_8
+
+WORKDIR /app
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends ca-certificates && \
