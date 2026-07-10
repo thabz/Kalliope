@@ -5,7 +5,7 @@ ENV NPM_CONFIG_UPDATE_NOTIFIER=false
 WORKDIR /app
 
 COPY package*.json ./
-RUN npm ci --legacy-peer-deps
+RUN npm ci --omit=dev --legacy-peer-deps
 
 COPY next.config.js routes.js server.js ./
 COPY common ./common
