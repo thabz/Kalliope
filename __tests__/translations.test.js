@@ -6,7 +6,9 @@ describe('translations helper', () => {
     expect(_('ca.', 'en')).toBe('c.');
     expect(_('Henvisning', 'en')).toBe('Reference');
     expect(_('Henvisninger', 'de')).toBe('Verweise');
+    expect(_('Digtere', 'de')).toBe('Dichter');
     expect(_('Gendigtning', 'fr')).toBe('Adaptation');
+    expect(_('Digtere', 'fr')).toBe('Poètes');
     expect(_('Noter', 'fr')).toBe('Notes');
   });
 

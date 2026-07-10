@@ -27,7 +27,7 @@ const MuseumsPage = (props) => {
       );
     });
 
-  const crumbs = [...kalliopeCrumbs(lang), { title: 'Museer' }];
+  const crumbs = [...kalliopeCrumbs(lang), { title: _('Museer', lang) }];
 
   return (
     <Page

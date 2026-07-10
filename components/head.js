@@ -1,4 +1,5 @@
 import NextHead from 'next/head';
+import { supportedLanguages } from '../common/languages.js';
 
 const urlPrefix = 'https://kalliope.org';
 const defaultDescription =
@@ -35,7 +36,7 @@ const Head = ({
   }
   let hreflangs = [];
   if (requestPath != null) {
-    hreflangs = ['da', 'en'].map((lang) => {
+    hreflangs = supportedLanguages.map((lang) => {
       const alternatePath = requestPath.replace(/^\/../, '/' + lang);
       const alternateURL = urlPrefix + alternatePath;
       return (

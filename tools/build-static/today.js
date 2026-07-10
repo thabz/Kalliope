@@ -1,10 +1,27 @@
 import { isFileModified } from '../libs/caching.js';
-import { safeMkdir, writeJSON } from '../libs/helpers.js';
+import { fileExists, safeMkdir, writeJSON } from '../libs/helpers.js';
 import { translatePlace } from '../../common/place-names.js';
+import { supportedLanguages } from '../../common/languages.js';
 import { poetName } from './formatting.js';
 import { build_portraits_json } from './portraits.js';
 
+const eventLabels = {
+  born: {
+    da: 'født',
+    de: 'geboren',
+    en: 'born',
+    fr: 'né',
+  },
+  dead: {
+    da: 'død',
+    de: 'gestorben',
+    en: 'dead',
+    fr: 'mort',
+  },
+};
+
 const build_todays_events_json = async (collected) => {
+  const langs = supportedLanguages;
   const portrait_descriptions = Array.from(collected.poets.values()).map(
     (poet) => {
       return `fdirs/${poet.id}/portraits.xml`;
@@ -13,11 +30,15 @@ const build_todays_events_json = async (collected) => {
   const poet_info_files = Array.from(collected.poets.values()).map((poet) => {
     return `fdirs/${poet.id}/info.xml`;
   });
-  if (!isFileModified(...poet_info_files, ...portrait_descriptions)) {
+  const missingLanguageOutput = langs.some((lang) => {
+    return !fileExists(`public/api/today/${lang}/01-01.json`);
+  });
+  if (
+    !missingLanguageOutput &&
+    !isFileModified(...poet_info_files, ...portrait_descriptions)
+  ) {
     return;
   }
-
-  const langs = ['da', 'en'];
 
   safeMkdir('public/api/today');
   langs.forEach((lang) => {
@@ -50,7 +71,7 @@ const build_todays_events_json = async (collected) => {
           const monthAndDay = m[2];
           langs.forEach((lang) => {
             let content_html = `<a poet="${poetId}">${poetName(poet)}</a>`;
-            content_html += lang === 'da' ? ' født' : ' born';
+            content_html += ` ${eventLabels.born[lang]}`;
             if (born.place != null) {
               content_html += `, ${translatePlace(born.place, lang)}.`;
             } else {
@@ -74,7 +95,7 @@ const build_todays_events_json = async (collected) => {
           const monthAndDay = m[2];
           langs.forEach((lang) => {
             let content_html = `<a poet="${poetId}">${poetName(poet)}</a>`;
-            content_html += lang === 'da' ? ' død' : ' dead';
+            content_html += ` ${eventLabels.dead[lang]}`;
             if (dead.place != null) {
               content_html += `, ${translatePlace(dead.place, lang)}.`;
             } else {
@@ -97,7 +118,13 @@ const build_todays_events_json = async (collected) => {
   await Promise.all(
     langs.map(async (lang) => {
       const preferredCountries =
-        lang === 'da' ? ['se', 'de', 'dk'] : ['us', 'gb']; // Større index er større vægt
+        lang === 'da'
+          ? ['se', 'de', 'dk']
+          : lang === 'de'
+            ? ['dk', 'gb', 'de']
+            : lang === 'fr'
+              ? ['dk', 'gb', 'fr']
+              : ['us', 'gb']; // Større index er større vægt
       for (let m = 1; m <= 12; m++) {
         for (let d = 1; d <= 31; d++) {
           const dd = d < 10 ? '0' + d : d;

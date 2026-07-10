@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { createURL } from '../common/client.js';
 import LangContext from '../common/LangContext.js';
+import _ from '../common/translations.js';
 import { kalliopeCrumbs } from '../components/breadcrumbs.js';
 import { formattedDate } from '../components/formatteddate.js';
 import { kalliopeMenu } from '../components/menu.js';
@@ -23,7 +24,9 @@ const TodaysEvents = ({ events }) => {
     .map((item, i) => {
       const yearsAgo = nowYear - parseInt(item.date.substring(0, 4));
       const yearHtml = (
-        <div className="today-date" title={yearsAgo + ' år siden i dag'}>
+        <div
+          className="today-date"
+          title={_('{yearsAgo} år siden i dag', lang, { yearsAgo })}>
           {formattedDate(item.date)}
         </div>
       );
@@ -67,7 +70,7 @@ const TodaysEvents = ({ events }) => {
   let pictureItem = pictureItems.length > 0 ? pictureItems[0] : null;
   return (
     <div>
-      <SubHeading>Dagen i dag</SubHeading>
+      <SubHeading>{_('Dagen i dag', lang)}</SubHeading>
       <SplitWhenSmall>
         <div>{renderedEvents}</div>
         <div style={{ marginTop: '40px' }}>{pictureItem}</div>
@@ -158,11 +161,11 @@ let Index = (props) => {
       ? {
           prev: {
             url: `/${lang}/?date=${pagingContext.prev}`,
-            title: 'En dag tilbage',
+            title: _('En dag tilbage', lang),
           },
           next: {
             url: `/${lang}/?date=${pagingContext.next}`,
-            title: 'En dag frem',
+            title: _('En dag frem', lang),
           },
         }
       : null;

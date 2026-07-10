@@ -12,13 +12,15 @@ export const fallbackImagePostfix = '-w800.jpg';
 export const countries = [
   //const countries: Array<{
   //  code: Country,
-  //  adjective: { da: string, en: string },
+  //  adjective: { da: string, en: string, fr: string, de: string },
   //}> = [
   {
     code: 'dk',
     adjective: {
       da: 'danske',
       en: 'Danish',
+      fr: 'danois',
+      de: 'dänische',
     },
   },
   {
@@ -26,6 +28,8 @@ export const countries = [
     adjective: {
       da: 'engelske',
       en: 'English',
+      fr: 'anglais',
+      de: 'englische',
     },
   },
   {
@@ -33,6 +37,8 @@ export const countries = [
     adjective: {
       da: 'tyske',
       en: 'German',
+      fr: 'allemands',
+      de: 'deutsche',
     },
   },
   {
@@ -40,6 +46,8 @@ export const countries = [
     adjective: {
       da: 'franske',
       en: 'French',
+      fr: 'français',
+      de: 'französische',
     },
   },
   {
@@ -47,6 +55,8 @@ export const countries = [
     adjective: {
       da: 'svenske',
       en: 'Swedish',
+      fr: 'suédois',
+      de: 'schwedische',
     },
   },
   {
@@ -54,6 +64,8 @@ export const countries = [
     adjective: {
       da: 'norske',
       en: 'Norwegian',
+      fr: 'norvégiens',
+      de: 'norwegische',
     },
   },
   {
@@ -61,6 +73,8 @@ export const countries = [
     adjective: {
       da: 'italienske',
       en: 'Italian',
+      fr: 'italiens',
+      de: 'italienische',
     },
   },
   {
@@ -68,6 +82,8 @@ export const countries = [
     adjective: {
       da: 'amerikanske',
       en: 'North American',
+      fr: 'nord-américains',
+      de: 'nordamerikanische',
     },
   },
   {
@@ -75,6 +91,8 @@ export const countries = [
     adjective: {
       da: 'andre',
       en: 'other',
+      fr: 'autres',
+      de: 'andere',
     },
   },
 ];

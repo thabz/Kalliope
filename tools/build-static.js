@@ -5,6 +5,7 @@ import mkdirp from 'mkdirp';
 import * as Paths from '../common/paths.js';
 import * as CommonData from '../common/commondata.js';
 import { extractYear } from '../common/dates.js';
+import { supportedLanguages } from '../common/languages.js';
 import {
   isFileModified,
   markFileDirty,
@@ -152,7 +153,7 @@ const buildTextAliasRedirects = (redirects, texts) => {
         );
       }
       aliases.set(alias, text.id);
-      ['da', 'en'].forEach((lang) => {
+      supportedLanguages.forEach((lang) => {
         redirects[`/${lang}/text/${alias}`] = `/${lang}/text/${text.id}`;
       });
     });
@@ -1036,7 +1037,7 @@ const build_poet_works_json = (collected) => {
 };
 
 const build_news = (collected) => {
-  ['da', 'en', 'fr', 'de'].forEach((lang) => {
+  supportedLanguages.forEach((lang) => {
     const path = `data/news_${lang}.xml`;
     if (!isFileModified(path)) {
       return;
@@ -1069,8 +1070,9 @@ const build_redirects_json = (collected) => {
   buildTextAliasRedirects(redirects, collected.texts);
   collected.poets.forEach((poet, poetId) => {
     if (!poet.has_works && !poet.has_artwork) {
-      redirects[`/en/works/${poetId}`] = `/en/bio/${poetId}`;
-      redirects[`/da/works/${poetId}`] = `/da/bio/${poetId}`;
+      supportedLanguages.forEach((lang) => {
+        redirects[`/${lang}/works/${poetId}`] = `/${lang}/bio/${poetId}`;
+      });
     }
   });
   writeJSON('public/api/redirects.json', redirects);
