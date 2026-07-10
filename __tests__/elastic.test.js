@@ -75,7 +75,10 @@ const bulkDocumentIds = () =>
   );
 
 describe('Elasticsearch build-static step', () => {
+  let consoleLog;
+
   beforeEach(() => {
+    consoleLog = jest.spyOn(console, 'log').mockImplementation(() => {});
     jest.clearAllMocks();
     elasticSearchClient.indexExists.mockResolvedValue(true);
     isFileModified.mockReturnValue(false);
@@ -91,6 +94,10 @@ describe('Elasticsearch build-static step', () => {
     );
     xml.safeGetInnerXML.mockImplementation(() => null);
     xml.tagName.mockReset();
+  });
+
+  afterEach(() => {
+    consoleLog.mockRestore();
   });
 
   test('builds stable text entries', () => {
@@ -153,7 +160,6 @@ describe('Elasticsearch build-static step', () => {
     const error = new Error('connect ECONNREFUSED 127.0.0.1:9200');
     error.code = 'ECONNREFUSED';
     elasticSearchClient.indexExists.mockRejectedValue(error);
-    const consoleLog = jest.spyOn(console, 'log').mockImplementation(() => {});
 
     await expect(update_elasticsearch(collected)).resolves.toBeUndefined();
 
@@ -164,8 +170,6 @@ describe('Elasticsearch build-static step', () => {
     expect(consoleLog).toHaveBeenCalledWith(
       'Elasticsearch server not available; skipping search index update.'
     );
-
-    consoleLog.mockRestore();
   });
 
   test('indexes only changed text entries', async () => {
