@@ -41,3 +41,11 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 CMD ["npm", "run", "build-static"]
+
+FROM runtime AS facsimile-builder
+
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends poppler-utils && \
+    rm -rf /var/lib/apt/lists/*
+
+CMD ["npm", "run", "build-facsimiles", "--", "all"]

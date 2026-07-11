@@ -120,4 +120,21 @@ describe('sharp image helpers', () => {
     expect(fs.existsSync(missingOutput)).toBe(true);
     expect(fs.statSync(existingOutput).mtimeMs).toBe(existingOutputMtime);
   });
+
+  it('supports custom thumbnail output paths', async () => {
+    process.chdir(tmpdir);
+    fs.mkdirSync('facsimiles/poet/work', { recursive: true });
+    await createJpeg('facsimiles/poet/work/000.jpg', 320, 180);
+
+    await buildThumbnails('facsimiles', null, {
+      thumbnailOutputPath: (fullFilename, width, ext) => {
+        return fullFilename
+          .replace(/\.jpg$/, `-w${width}.${ext}`)
+          .replace(/\/([^/]+)$/, '/t/$1');
+      },
+    });
+
+    expect(fs.existsSync('facsimiles/poet/work/t/000-w100.jpg')).toBe(true);
+    expect(fs.existsSync('public/generated/facsimiles')).toBe(false);
+  });
 });

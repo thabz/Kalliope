@@ -52,6 +52,37 @@ Kør testene før større ændringer eller pull requests:
 npm test
 ```
 
+## Facsimile-generering
+
+Facsimiler bygges i en separat Docker Compose-service. Læg PDF'er i
+`facsimiles/<poet>/<work>.pdf`; mappen er lokal og committes ikke.
+
+Sync køres fra hosten, så containeren ikke får adgang til lokale SSH-nøgler.
+
+Udtræk sider fra nye PDF'er:
+
+```shell
+docker compose --profile facsimiles run --rm --build facsimile-builder npm run build-facsimiles -- extract
+```
+
+Overskriv eksisterende output for fundne PDF'er:
+
+```shell
+docker compose --profile facsimiles run --rm --build facsimile-builder npm run build-facsimiles -- reextract
+```
+
+Kør hele kæden med udtrækning og thumbnails:
+
+```shell
+docker compose --profile facsimiles run --rm --build facsimile-builder npm run build-facsimiles -- all
+```
+
+Upload derefter fra hosten til `jec@10.0.0.5:/Volumes/Alma/Faksimiler`:
+
+```shell
+./tools/sync-facsimiler.sh
+```
+
 ## Deploy på prod og opdatering af prod
 
 Produktionen køres med Docker Compose. Prod-serveren bygger appen, bygger de

@@ -62,5 +62,20 @@ services:
     command: >
       sh -c "npm run build-static"
 
+  facsimile-builder:
+    build:
+      context: .
+      target: facsimile-builder
+    profiles:
+      - facsimiles
+    environment:
+      KALLIOPE_THUMBNAIL_CONCURRENCY: 4
+      KALLIOPE_SHARP_CONCURRENCY: 1
+      KALLIOPE_SHARP_CACHE_MEMORY: 64
+    volumes:
+      - ./facsimiles:/app/facsimiles
+    command: >
+      sh -c "npm run build-facsimiles -- all"
+
 volumes:
   esdata:
