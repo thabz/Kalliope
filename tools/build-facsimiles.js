@@ -7,43 +7,16 @@ import { safeMkdir, buildThumbnails } from './libs/helpers.js';
 
 const execFileAsync = promisify(execFile);
 
-const loadEnvFile = filename => {
-  if (!fs.existsSync(filename)) {
-    return;
-  }
-
-  fs
-    .readFileSync(filename, 'utf8')
-    .split(/\r?\n/)
-    .forEach(line => {
-      const trimmed = line.trim();
-      if (trimmed === '' || trimmed.startsWith('#')) {
-        return;
-      }
-      const separatorIndex = trimmed.indexOf('=');
-      if (separatorIndex === -1) {
-        return;
-      }
-      const key = trimmed.slice(0, separatorIndex).trim();
-      const value = trimmed.slice(separatorIndex + 1).trim();
-      if (process.env[key] == null) {
-        process.env[key] = value;
-      }
-    });
-};
-
-loadEnvFile('.env');
-
 const facsimilesDir = process.env.KALLIOPE_FACSIMILE_DIR || 'facsimiles';
 const extractConcurrency = Math.max(
   1,
   parseInt(process.env.KALLIOPE_FACSIMILE_EXTRACT_CONCURRENCY, 10) || 2
 );
-const commands = new Set(['extract', 'reextract', 'thumbnails', 'sync', 'all']);
+const commands = new Set(['extract', 'reextract', 'thumbnails', 'all']);
 
 const usage = () => {
   console.error(
-    'Brug: npm run build-facsimiles -- <extract|reextract|thumbnails|sync|all>'
+    'Brug: npm run build-facsimiles -- <extract|reextract|thumbnails|all>'
   );
 };
 
@@ -149,26 +122,12 @@ const thumbnails = async () => {
   });
 };
 
-const isRemoteTargetWithoutUser = target => {
-  return /^[^/@\s:]+:/.test(target);
-};
-
-const sync = async () => {
-  const target = process.env.KALLIOPE_FACSIMILE_RSYNC_TARGET;
-  if (!target) {
-    throw new Error('KALLIOPE_FACSIMILE_RSYNC_TARGET mangler.');
-  }
-  if (isRemoteTargetWithoutUser(target)) {
-    throw new Error(
-      'KALLIOPE_FACSIMILE_RSYNC_TARGET skal angive remote-bruger, fx jec@10.0.0.5:/Volumes/Alma/Faksimiler.'
-    );
-  }
-  if (!fs.existsSync(facsimilesDir)) {
-    throw new Error(`${facsimilesDir} findes ikke.`);
-  }
-
-  console.log(`Synkroniserer ${facsimilesDir}/ til ${target}.`);
-  await execFileAsync('rsync', ['-rva', `${facsimilesDir}/`, target]);
+const printSyncCommand = () => {
+  console.log('');
+  console.log('Facsimilerne er genereret lokalt.');
+  console.log(
+    'Kør derefter ./tools/sync-facsimiler.sh for at synkronisere faksimiler til webserveren.'
+  );
 };
 
 const run = async command => {
@@ -179,12 +138,10 @@ const run = async command => {
     await extract(true);
   } else if (command === 'thumbnails') {
     await thumbnails();
-  } else if (command === 'sync') {
-    await sync();
   } else if (command === 'all') {
     await extract(false);
     await thumbnails();
-    await sync();
+    printSyncCommand();
   }
 };
 

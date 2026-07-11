@@ -57,11 +57,7 @@ npm test
 Facsimiler bygges i en separat Docker Compose-service. Læg PDF'er i
 `facsimiles/<poet>/<work>.pdf`; mappen er lokal og committes ikke.
 
-Sæt sync-målet i `.env`. Start evt. med `.env.example`:
-
-```shell
-KALLIOPE_FACSIMILE_RSYNC_TARGET=jec@10.0.0.5:/Volumes/Alma/Faksimiler
-```
+Sync køres fra hosten, så containeren ikke får adgang til lokale SSH-nøgler.
 
 Udtræk sider fra nye PDF'er:
 
@@ -75,10 +71,16 @@ Overskriv eksisterende output for fundne PDF'er:
 docker compose --profile facsimiles run --rm --build facsimile-builder npm run build-facsimiles -- reextract
 ```
 
-Kør hele kæden med udtrækning, thumbnails og sync:
+Kør hele kæden med udtrækning og thumbnails:
 
 ```shell
 docker compose --profile facsimiles run --rm --build facsimile-builder npm run build-facsimiles -- all
+```
+
+Upload derefter fra hosten til `jec@10.0.0.5:/Volumes/Alma/Faksimiler`:
+
+```shell
+./tools/sync-facsimiler.sh
 ```
 
 ## Deploy på prod og opdatering af prod
