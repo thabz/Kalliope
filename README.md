@@ -60,7 +60,7 @@ Facsimiler bygges i en separat Docker Compose-service. Læg PDF'er i
 Sæt sync-målet i `.env`. Start evt. med `.env.example`:
 
 ```shell
-KALLIOPE_FACSIMILE_RSYNC_TARGET=10.0.0.5:/Volumes/Alma/Test
+KALLIOPE_FACSIMILE_RSYNC_TARGET=jec@10.0.0.5:/Volumes/Alma/Faksimiler
 ```
 
 Udtræk sider fra nye PDF'er:

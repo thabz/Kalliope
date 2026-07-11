@@ -8,4 +8,5 @@ Disse regler gælder for AI-agenter og automatiserede assistenter, der arbejder 
 - `fdirs/<id>/portraits.xml` må referere lokale portrætter med `src="..."` og `square-src="..."`, men filerne skal findes i `public/images/<id>/`.
 - Tekstfiler i repoet skal være UTF-8. Indfør ikke Latin-1/ISO-8859-1 encoded filer.
 - Commit ikke lokale scratch-filer eller untracked arbejdsfiler, medmindre brugeren eksplicit beder om det.
+- Commit, push eller amend aldrig kodeændringer, før brugeren eksplicit har læst ændringen og bedt om commit/push. Det gælder også opdateringer til eksisterende PR-branches.
 - Læs `docs/style-guide.md` før du opretter issues, PRs eller ændringer i data-/billedstrukturen.

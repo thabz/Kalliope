@@ -149,10 +149,19 @@ const thumbnails = async () => {
   });
 };
 
+const isRemoteTargetWithoutUser = target => {
+  return /^[^/@\s:]+:/.test(target);
+};
+
 const sync = async () => {
   const target = process.env.KALLIOPE_FACSIMILE_RSYNC_TARGET;
   if (!target) {
     throw new Error('KALLIOPE_FACSIMILE_RSYNC_TARGET mangler.');
+  }
+  if (isRemoteTargetWithoutUser(target)) {
+    throw new Error(
+      'KALLIOPE_FACSIMILE_RSYNC_TARGET skal angive remote-bruger, fx jec@10.0.0.5:/Volumes/Alma/Faksimiler.'
+    );
   }
   if (!fs.existsSync(facsimilesDir)) {
     throw new Error(`${facsimilesDir} findes ikke.`);
