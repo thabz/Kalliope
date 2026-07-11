@@ -1,5 +1,8 @@
 node_modules
 .next
+.env
+.swc
+.DS_Store
 .git
 .github
 __tests__
@@ -19,6 +22,7 @@ caches
 data
 docker-compose.yml
 facsimiler.txt
+facsimiles
 fdirs
 jest.config.js
 LICENSE
