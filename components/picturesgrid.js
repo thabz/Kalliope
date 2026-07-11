@@ -1,5 +1,9 @@
 import Picture from '../components/picture.js';
 
+const mainMaxWidthPx = 880;
+const mainHorizontalPaddingPx = 40;
+const mainBreakpointPx = mainMaxWidthPx + mainHorizontalPaddingPx;
+
 const PicturesGrid = ({ lang, poet, artwork, hideArtist, hideMuseum }) => {
   if (artwork.length === 0) {
     return null;
@@ -30,6 +34,17 @@ const PicturesGrid = ({ lang, poet, artwork, hideArtist, hideMuseum }) => {
       }
     });
     return height;
+  };
+
+  // Fortæl browseren hvor bredt billedet faktisk vises: i små viewports er
+  // bredden en procentdel af viewporten, mens den på desktop er bundet af
+  // hovedkolonnens maksimale bredde.
+  const imageSizesForWidth = (widthPercent) => {
+    return `(max-width: ${mainBreakpointPx}px) ${widthPercent.toFixed(
+      2
+    )}vw, ${Math.ceil(
+      (widthPercent / 100) * mainMaxWidthPx
+    )}px`;
   };
 
   const sortedArtworks = sortArtworks(artwork);
@@ -91,7 +106,7 @@ const PicturesGrid = ({ lang, poet, artwork, hideArtist, hideMuseum }) => {
       const renderedList = row.items.map((item, i) => {
         const picture = item.picture;
 
-        const width = item.width;
+        const widthPercent = item.width;
         let pictureRendered = null;
         if (picture != null) {
           pictureRendered = (
@@ -102,11 +117,12 @@ const PicturesGrid = ({ lang, poet, artwork, hideArtist, hideMuseum }) => {
               pictures={[picture]}
               contentLang={picture.content_lang || 'da'}
               lang={lang}
+              sizes={imageSizesForWidth(widthPercent)}
             />
           );
         }
         return (
-          <div key={'container-' + i} style={{ flexBasis: width + '%' }}>
+          <div key={'container-' + i} style={{ flexBasis: widthPercent + '%' }}>
             {pictureRendered}
           </div>
         );
