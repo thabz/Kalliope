@@ -77,6 +77,12 @@ Kør hele kæden med udtrækning og thumbnails:
 docker compose --profile facsimiles run --rm --build facsimile-builder npm run build-facsimiles -- all
 ```
 
+PDF-udtræk bruger som standard `KALLIOPE_FACSIMILE_EXTRACTOR=auto`, som
+udtrækker sikre indlejrede JPEG-sidebilleder med `pdfimages` og renderer resten
+med `pdftoppm`. Sæt `KALLIOPE_FACSIMILE_EXTRACTOR=pdftoppm` for kun at rendere
+med `pdftoppm`, eller justér fallback-opløsningen med
+`KALLIOPE_FACSIMILE_RENDER_DPI` (default `300`).
+
 Upload derefter fra hosten til `jec@10.0.0.5:/Volumes/Alma/Faksimiler`:
 
 ```shell
