@@ -41,3 +41,11 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 CMD ["npm", "run", "build-static"]
+
+FROM runtime AS facsimile-builder
+
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends openssh-client poppler-utils rsync && \
+    rm -rf /var/lib/apt/lists/*
+
+CMD ["npm", "run", "build-facsimiles", "--", "all"]

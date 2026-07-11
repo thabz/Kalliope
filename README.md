@@ -52,6 +52,35 @@ Kør testene før større ændringer eller pull requests:
 npm test
 ```
 
+## Facsimile-generering
+
+Facsimiler bygges i en separat Docker Compose-service. Læg PDF'er i
+`facsimiles/<poet>/<work>.pdf`; mappen er lokal og committes ikke.
+
+Sæt sync-målet i `.env`. Start evt. med `.env.example`:
+
+```shell
+KALLIOPE_FACSIMILE_RSYNC_TARGET=10.0.0.5:/Volumes/Alma/Test
+```
+
+Udtræk sider fra nye PDF'er:
+
+```shell
+docker compose --profile facsimiles run --rm --build facsimile-builder npm run build-facsimiles -- extract
+```
+
+Overskriv eksisterende output for fundne PDF'er:
+
+```shell
+docker compose --profile facsimiles run --rm --build facsimile-builder npm run build-facsimiles -- reextract
+```
+
+Kør hele kæden med udtrækning, thumbnails og sync:
+
+```shell
+docker compose --profile facsimiles run --rm --build facsimile-builder npm run build-facsimiles -- all
+```
+
 ## Deploy på prod og opdatering af prod
 
 Produktionen køres med Docker Compose. Prod-serveren bygger appen, bygger de

@@ -1,3 +1,16 @@
 #!/bin/sh
 
-rsync -rva public/facsimiles/* 10.0.0.5:Sites/kalliope/public/facsimiles
+set -eu
+
+if [ -f .env ]; then
+  set -a
+  . ./.env
+  set +a
+fi
+
+if [ -z "${KALLIOPE_FACSIMILE_RSYNC_TARGET:-}" ]; then
+  echo "KALLIOPE_FACSIMILE_RSYNC_TARGET mangler." >&2
+  exit 1
+fi
+
+rsync -rva facsimiles/ "$KALLIOPE_FACSIMILE_RSYNC_TARGET"

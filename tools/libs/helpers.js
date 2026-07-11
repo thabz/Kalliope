@@ -279,8 +279,22 @@ const thumbnailConcurrency = Math.max(
 );
 const limit = plimit(thumbnailConcurrency);
 
-const buildThumbnails = async (topFolder, isFileModifiedMethod) => {
+const defaultThumbnailOutputPath = (fullFilename, width, ext) => {
+  return `public${ImagePaths.thumbnailSrc(
+    fullFilename.replace(/^public/, ''),
+    width,
+    ext
+  )}`;
+};
+
+const buildThumbnails = async (
+  topFolder,
+  isFileModifiedMethod,
+  options = {}
+) => {
   const tasks = [];
+  const thumbnailOutputPath =
+    options.thumbnailOutputPath || defaultThumbnailOutputPath;
   const pipeJoinedExts = CommonData.availableImageFormats.join('|');
   const skipRegExps = new RegExp(`-w\\d+\\.(${pipeJoinedExts})$`);
 
@@ -311,11 +325,7 @@ const buildThumbnails = async (topFolder, isFileModifiedMethod) => {
         const sourceMtime = fileModifiedTime(fullFilename);
         CommonData.availableImageFormats.forEach((ext, i) => {
           CommonData.availableImageWidths.forEach(width => {
-            const outputfile = `public${ImagePaths.thumbnailSrc(
-              fullFilename.replace(/^public/, ''),
-              width,
-              ext
-            )}`;
+            const outputfile = thumbnailOutputPath(fullFilename, width, ext);
             safeMkdir(outputfile.replace(/\/[^\/]+?$/, ''));
             const outputMtime = fileModifiedTime(outputfile);
             if (
