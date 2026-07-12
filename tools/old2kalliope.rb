@@ -65,6 +65,7 @@ end
 @credits = nil
 @facsimile_page = nil
 @lang = nil
+@text_author = nil
 
 def printHeader()
     if @header_printed
@@ -140,8 +141,12 @@ def printPoem()
   if @lang
       lang = " lang=\"#{@lang}\""
   end
+  author = ''
+  if @text_author
+      author = " author=\"#{@text_author}\""
+  end
 
-  puts "<text id=\"#{poemid}\"#{variant}#{lang}>"
+  puts "<text id=\"#{poemid}\"#{author}#{variant}#{lang}>"
   puts "<head>"
   if @title
       puts "    <title>#{@title}</title>"
@@ -235,6 +240,7 @@ def printPoem()
   @type = 'poetry'
   @variant = nil
   @lang = nil
+  @text_author = nil
   @todos = []
   @credits = nil
   @facsimile_page = nil
@@ -361,12 +367,13 @@ File.readlines(ARGV[0]).each do |line|
       @state = 'NONE'
     end
   end
-  if @state == 'NONE' and (line =~ /^T:/ or line =~ /^F:/ or line =~ /^ID:/)
+  if @state == 'NONE' and (line =~ /^T:/ or line =~ /^F:/ or line =~ /^ID:/ or line =~ /^DIGTER:/)
     @state = 'INHEAD'
   end
   if @state == 'INBODY' and (line.start_with?("T:") or 
                              line.start_with?("F:") or 
-                             line.start_with?("ID:"))
+                             line.start_with?("ID:") or
+                             line.start_with?("DIGTER:"))
     printPoem()
     @state = 'INHEAD'
   end
@@ -402,6 +409,8 @@ File.readlines(ARGV[0]).each do |line|
       @subtitles.push(line[2..-1].strip)
     elsif line.start_with?("ID:")
       @poemid = line[3..-1].strip
+    elsif line.start_with?("DIGTER:")
+      @text_author = line[7..-1].strip
     elsif line.start_with?("N:")
       @keywords = line[2..-1].strip
       if @keywords =~ / /
@@ -467,4 +476,3 @@ if @state != 'NONE'
 end
 
 printFooter()
-
