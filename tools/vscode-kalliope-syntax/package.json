@@ -7,6 +7,12 @@
   "engines": {
     "vscode": "^1.90.0"
   },
+  "main": "./extension.js",
+  "activationEvents": [
+    "onStartupFinished",
+    "onLanguage:plaintext",
+    "onLanguage:kalliope-old"
+  ],
   "categories": [
     "Programming Languages"
   ],
@@ -18,14 +24,6 @@
           "Kalliope Old Text",
           "kalliope-old"
         ],
-        "extensions": [
-          ".old2kalliope",
-          ".kalliope"
-        ],
-        "filenames": [
-          "efterklang.txt"
-        ],
-        "firstLine": "^KILDE:",
         "configuration": "./language-configuration/kalliope-old.json"
       }
     ],

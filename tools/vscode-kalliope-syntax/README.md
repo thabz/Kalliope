@@ -2,7 +2,8 @@
 
 Syntax highlighting for Kalliope `old2kalliope` input files.
 
-The language is selected automatically for files whose first line starts with `KILDE:`. It also associates `efterklang.txt`, `.old2kalliope`, and `.kalliope` files with the language.
+The language is selected automatically for `.txt` files whose first line starts
+with `KILDE:`.
 
 ## Install
 

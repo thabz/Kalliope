@@ -17,10 +17,9 @@ Enable it for a buffer with:
 :set syntax=kalliope
 ```
 
-To enable it automatically for the current Kalliope conversion file, add an autocmd to `~/.vim/ftdetect/kalliope.vim`:
+To enable it automatically for Kalliope conversion files, add an autocmd to
+`~/.vim/ftdetect/kalliope.vim`:
 
 ```vim
-autocmd BufRead,BufNewFile */kalliope/efterklang.txt setfiletype kalliope
+autocmd BufRead,BufNewFile *.txt if getline(1) =~# '^KILDE:' | setfiletype kalliope | endif
 ```
-
-If you use other `old2kalliope` input filenames, add them to the same autocmd pattern.
