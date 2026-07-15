@@ -5,7 +5,7 @@ const infoXmlFiles = () =>
     .split('\n')
     .filter(Boolean);
 
-describe('info.xml DTD', () => {
+describe('info.xml RELAX NG schema', () => {
   it('validates all tracked info.xml files', () => {
     const files = infoXmlFiles();
 
@@ -14,7 +14,7 @@ describe('info.xml DTD', () => {
     try {
       execFileSync(
         'xmllint',
-        ['--noout', '--dtdvalid', 'data/info-xml.dtd', ...files],
+        ['--noout', '--relaxng', 'data/info-xml.rng', ...files],
         { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }
       );
     } catch (error) {

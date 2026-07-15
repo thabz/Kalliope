@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="kalliopework"/>
+  </start>
+
+  <define name="mixed">
+    <zeroOrMore>
+      <choice>
+        <text/>
+        <ref name="workhead"/>
+        <ref name="workbody"/>
+        <ref name="textElement"/>
+        <ref name="poem"/>
+        <ref name="prose"/>
+        <ref name="prosa"/>
+        <ref name="section"/>
+        <ref name="subwork"/>
+        <ref name="content"/>
+        <ref name="head"/>
+        <ref name="body"/>
+        <ref name="title"/>
+        <ref name="year"/>
+        <ref name="subtitle"/>
+        <ref name="suptitle"/>
+        <ref name="firstline"/>
+        <ref name="indextitle"/>
+        <ref name="toctitle"/>
+        <ref name="linktitle"/>
+        <ref name="breadcrumbtitle"/>
+        <ref name="nofirstline"/>
+        <ref name="keywords"/>
+        <ref name="source"/>
+        <ref name="dates"/>
+        <ref name="published"/>
+        <ref name="written"/>
+        <ref name="performed"/>
+        <ref name="event"/>
+        <ref name="begivenhed"/>
+        <ref name="notes"/>
+        <ref name="note"/>
+        <ref name="quality"/>
+        <ref name="pictures"/>
+        <ref name="picture"/>
+        <ref name="poetry"/>
+        <ref name="quote"/>
+        <ref name="a"/>
+        <ref name="xref"/>
+        <ref name="b"/>
+        <ref name="i"/>
+        <ref name="sc"/>
+        <ref name="small"/>
+        <ref name="sup"/>
+        <ref name="s"/>
+        <ref name="u"/>
+        <ref name="num"/>
+        <ref name="nonum"/>
+        <ref name="resetnum"/>
+        <ref name="center"/>
+        <ref name="right"/>
+        <ref name="margin"/>
+        <ref name="metrik"/>
+        <ref name="wrap"/>
+        <ref name="line"/>
+        <ref name="br"/>
+        <ref name="hr"/>
+        <ref name="pb"/>
+        <ref name="img"/>
+        <ref name="colored"/>
+        <ref name="footnote"/>
+        <ref name="biblio"/>
+        <ref name="asterism"/>
+        <ref name="block-center"/>
+        <ref name="two-columns"/>
+        <ref name="column"/>
+        <ref name="w"/>
+      </choice>
+    </zeroOrMore>
+  </define>
+
+  <define name="kalliopework">
+    <element name="kalliopework">
+      <attribute name="id"><text/></attribute>
+      <attribute name="author"><text/></attribute>
+      <optional><attribute name="status"><text/></attribute></optional>
+      <optional><attribute name="type"><text/></attribute></optional>
+      <optional><attribute name="parent"><text/></attribute></optional>
+      <ref name="workhead"/>
+      <optional><ref name="workbody"/></optional>
+    </element>
+  </define>
+
+  <define name="workhead"><element name="workhead"><ref name="mixed"/></element></define>
+  <define name="workbody"><element name="workbody"><ref name="mixed"/></element></define>
+
+  <define name="textElement">
+    <element name="text">
+      <optional><attribute name="id"><text/></attribute></optional>
+      <optional><attribute name="variant"><text/></attribute></optional>
+      <optional><attribute name="aliases"><text/></attribute></optional>
+      <optional><attribute name="skip-index"><text/></attribute></optional>
+      <optional><attribute name="lang"><text/></attribute></optional>
+      <optional><attribute name="ignore-tests"><text/></attribute></optional>
+      <ref name="mixed"/>
+    </element>
+  </define>
+
+  <define name="poem">
+    <element name="poem">
+      <optional><attribute name="id"><text/></attribute></optional>
+      <ref name="mixed"/>
+    </element>
+  </define>
+
+  <define name="section">
+    <element name="section">
+      <optional><attribute name="id"><text/></attribute></optional>
+      <optional><attribute name="level"><text/></attribute></optional>
+      <optional><attribute name="variant"><text/></attribute></optional>
+      <optional><attribute name="aliases"><text/></attribute></optional>
+      <ref name="mixed"/>
+    </element>
+  </define>
+
+  <define name="subwork">
+    <element name="subwork">
+      <attribute name="ref"><text/></attribute>
+      <ref name="mixed"/>
+    </element>
+  </define>
+
+  <define name="body">
+    <element name="body">
+      <optional>
+        <attribute name="space" ns="http://www.w3.org/XML/1998/namespace">
+          <choice>
+            <value>default</value>
+            <value>preserve</value>
+          </choice>
+        </attribute>
+      </optional>
+      <ref name="mixed"/>
+    </element>
+  </define>
+
+  <define name="title">
+    <element name="title">
+      <optional><attribute name="force-index"><text/></attribute></optional>
+      <ref name="mixed"/>
+    </element>
+  </define>
+
+  <define name="firstline">
+    <element name="firstline">
+      <optional><attribute name="force-index"><text/></attribute></optional>
+      <ref name="mixed"/>
+    </element>
+  </define>
+
+  <define name="source">
+    <element name="source">
+      <optional><attribute name="id"><text/></attribute></optional>
+      <optional><attribute name="in"><text/></attribute></optional>
+      <optional><attribute name="pages"><text/></attribute></optional>
+      <optional><attribute name="facsimile"><text/></attribute></optional>
+      <optional><attribute name="facsimile-pages"><text/></attribute></optional>
+      <optional><attribute name="facsimile-pages-num"><text/></attribute></optional>
+      <optional><attribute name="facsimile-pages-offset"><text/></attribute></optional>
+      <ref name="mixed"/>
+    </element>
+  </define>
+
+  <define name="note">
+    <element name="note">
+      <optional>
+        <attribute name="space" ns="http://www.w3.org/XML/1998/namespace">
+          <choice>
+            <value>default</value>
+            <value>preserve</value>
+          </choice>
+        </attribute>
+      </optional>
+      <optional><attribute name="type"><text/></attribute></optional>
+      <optional><attribute name="lang"><text/></attribute></optional>
+      <optional><attribute name="unknown-original-by"><text/></attribute></optional>
+      <ref name="mixed"/>
+    </element>
+  </define>
+
+  <define name="picture">
+    <element name="picture">
+      <optional><attribute name="src"><text/></attribute></optional>
+      <optional><attribute name="type"><text/></attribute></optional>
+      <optional><attribute name="year"><text/></attribute></optional>
+      <optional><attribute name="artwork"><text/></attribute></optional>
+      <optional><attribute name="museum"><text/></attribute></optional>
+      <optional><attribute name="invnr"><text/></attribute></optional>
+      <optional><attribute name="objid"><text/></attribute></optional>
+      <optional><attribute name="wikidata"><text/></attribute></optional>
+      <ref name="mixed"/>
+    </element>
+  </define>
+
+  <define name="poetry">
+    <element name="poetry">
+      <optional><attribute name="font-size"><text/></attribute></optional>
+      <ref name="mixed"/>
+    </element>
+  </define>
+
+  <define name="prose">
+    <element name="prose">
+      <optional><attribute name="font-size"><text/></attribute></optional>
+      <ref name="mixed"/>
+    </element>
+  </define>
+
+  <define name="quote">
+    <element name="quote">
+      <optional><attribute name="font-size"><text/></attribute></optional>
+      <optional><attribute name="margin-left"><text/></attribute></optional>
+      <ref name="mixed"/>
+    </element>
+  </define>
+
+  <define name="a">
+    <element name="a">
+      <optional><attribute name="href"><text/></attribute></optional>
+      <optional><attribute name="poet"><text/></attribute></optional>
+      <optional><attribute name="poem"><text/></attribute></optional>
+      <optional><attribute name="work"><text/></attribute></optional>
+      <optional><attribute name="keyword"><text/></attribute></optional>
+      <optional><attribute name="person"><text/></attribute></optional>
+      <optional><attribute name="bible"><text/></attribute></optional>
+      <optional><attribute name="type"><text/></attribute></optional>
+      <ref name="mixed"/>
+    </element>
+  </define>
+
+  <define name="xref">
+    <element name="xref">
+      <optional><attribute name="poem"><text/></attribute></optional>
+      <optional><attribute name="bibel"><text/></attribute></optional>
+      <optional><attribute name="type"><text/></attribute></optional>
+      <ref name="mixed"/>
+    </element>
+  </define>
+
+  <define name="hr">
+    <element name="hr">
+      <optional><attribute name="width"><text/></attribute></optional>
+      <ref name="mixed"/>
+    </element>
+  </define>
+
+  <define name="pb">
+    <element name="pb">
+      <optional><attribute name="n"><text/></attribute></optional>
+      <ref name="mixed"/>
+    </element>
+  </define>
+
+  <define name="img">
+    <element name="img">
+      <optional><attribute name="src"><text/></attribute></optional>
+      <optional><attribute name="alt"><text/></attribute></optional>
+      <optional><attribute name="width"><text/></attribute></optional>
+      <ref name="mixed"/>
+    </element>
+  </define>
+
+  <define name="colored">
+    <element name="colored">
+      <optional><attribute name="color"><text/></attribute></optional>
+      <ref name="mixed"/>
+    </element>
+  </define>
+
+  <define name="simpleElement">
+    <ref name="mixed"/>
+  </define>
+
+  <define name="prosa"><element name="prosa"><ref name="simpleElement"/></element></define>
+  <define name="content"><element name="content"><ref name="simpleElement"/></element></define>
+  <define name="head"><element name="head"><ref name="simpleElement"/></element></define>
+  <define name="year"><element name="year"><ref name="simpleElement"/></element></define>
+  <define name="subtitle"><element name="subtitle"><ref name="simpleElement"/></element></define>
+  <define name="suptitle"><element name="suptitle"><ref name="simpleElement"/></element></define>
+  <define name="indextitle"><element name="indextitle"><ref name="simpleElement"/></element></define>
+  <define name="toctitle"><element name="toctitle"><ref name="simpleElement"/></element></define>
+  <define name="linktitle"><element name="linktitle"><ref name="simpleElement"/></element></define>
+  <define name="breadcrumbtitle"><element name="breadcrumbtitle"><ref name="simpleElement"/></element></define>
+  <define name="nofirstline"><element name="nofirstline"><ref name="simpleElement"/></element></define>
+  <define name="keywords"><element name="keywords"><ref name="simpleElement"/></element></define>
+  <define name="dates"><element name="dates"><ref name="simpleElement"/></element></define>
+  <define name="published"><element name="published"><ref name="simpleElement"/></element></define>
+  <define name="written"><element name="written"><ref name="simpleElement"/></element></define>
+  <define name="performed"><element name="performed"><ref name="simpleElement"/></element></define>
+  <define name="event"><element name="event"><ref name="simpleElement"/></element></define>
+  <define name="begivenhed"><element name="begivenhed"><ref name="simpleElement"/></element></define>
+  <define name="notes"><element name="notes"><ref name="simpleElement"/></element></define>
+  <define name="quality"><element name="quality"><ref name="simpleElement"/></element></define>
+  <define name="pictures"><element name="pictures"><ref name="simpleElement"/></element></define>
+  <define name="b"><element name="b"><ref name="simpleElement"/></element></define>
+  <define name="i"><element name="i"><ref name="simpleElement"/></element></define>
+  <define name="sc"><element name="sc"><ref name="simpleElement"/></element></define>
+  <define name="small"><element name="small"><ref name="simpleElement"/></element></define>
+  <define name="sup"><element name="sup"><ref name="simpleElement"/></element></define>
+  <define name="s"><element name="s"><ref name="simpleElement"/></element></define>
+  <define name="u"><element name="u"><ref name="simpleElement"/></element></define>
+  <define name="num"><element name="num"><ref name="simpleElement"/></element></define>
+  <define name="nonum"><element name="nonum"><ref name="simpleElement"/></element></define>
+  <define name="resetnum"><element name="resetnum"><ref name="simpleElement"/></element></define>
+  <define name="center"><element name="center"><ref name="simpleElement"/></element></define>
+  <define name="right"><element name="right"><ref name="simpleElement"/></element></define>
+  <define name="margin"><element name="margin"><ref name="simpleElement"/></element></define>
+  <define name="metrik"><element name="metrik"><ref name="simpleElement"/></element></define>
+  <define name="wrap"><element name="wrap"><ref name="simpleElement"/></element></define>
+  <define name="line"><element name="line"><ref name="simpleElement"/></element></define>
+  <define name="br"><element name="br"><ref name="simpleElement"/></element></define>
+  <define name="footnote"><element name="footnote"><ref name="simpleElement"/></element></define>
+  <define name="biblio"><element name="biblio"><ref name="simpleElement"/></element></define>
+  <define name="asterism"><element name="asterism"><ref name="simpleElement"/></element></define>
+  <define name="block-center"><element name="block-center"><ref name="simpleElement"/></element></define>
+  <define name="two-columns"><element name="two-columns"><ref name="simpleElement"/></element></define>
+  <define name="column"><element name="column"><ref name="simpleElement"/></element></define>
+  <define name="w"><element name="w"><ref name="simpleElement"/></element></define>
+</grammar>
