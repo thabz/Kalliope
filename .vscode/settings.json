@@ -1,0 +1,31 @@
+{
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "keyword.other.header.text.kalliope",
+        "settings": {
+          "foreground": "#6A9955"
+        }
+      },
+      {
+        "scope": "keyword.other.header.work.kalliope",
+        "settings": {
+          "foreground": "#C586C0"
+        }
+      },
+      {
+        "scope": "keyword.other.header.todo.kalliope",
+        "settings": {
+          "foreground": "#D7BA7D",
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": "invalid.trailing-space-before-punctuation.kalliope, invalid.space-before-period.kalliope, invalid.escape.kalliope, invalid.leading-period.kalliope",
+        "settings": {
+          "foreground": "#F44747"
+        }
+      }
+    ]
+  }
+}
