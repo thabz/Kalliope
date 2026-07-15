@@ -11,7 +11,7 @@ const kalliopeWorkFiles = () =>
     /<kalliopework[\s>]/.test(fs.readFileSync(filename, 'utf8'))
   );
 
-describe('kalliopework DTD', () => {
+describe('kalliopework RELAX NG schema', () => {
   it('validates all tracked work files', () => {
     const files = kalliopeWorkFiles();
 
@@ -20,7 +20,7 @@ describe('kalliopework DTD', () => {
     try {
       execFileSync(
         'xmllint',
-        ['--noout', '--dtdvalid', 'data/kalliopework.dtd', ...files],
+        ['--noout', '--relaxng', 'data/kalliopework.rng', ...files],
         { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }
       );
     } catch (error) {

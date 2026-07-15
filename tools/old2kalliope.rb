@@ -85,7 +85,6 @@ def printHeader()
     end
 
     puts %Q|<?xml version="1.0" encoding="UTF-8"?>|
-    puts %Q|<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">|
     puts %Q|<kalliopework id="#{@workid}" author="#{@poetid}" status="complete" type="poetry">|
     puts %Q|<workhead>|
     puts %Q|    <title>#{title}</title>|

@@ -40,7 +40,6 @@ end
 yearLine = year.nil? ? "" : "    <year>#{year}</year>\n"
 
 lines = %{<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="#{workId}" author="#{poetId}" status="incomplete" type="poetry">
 <workhead>
     <title>#{title}</title>
