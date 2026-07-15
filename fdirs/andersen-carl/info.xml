@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="andersen-carl" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Carl</firstname>
+    <lastname>Andersen</lastname>
+    <fullname>Carl Christian Thorvald Andersen</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1828-10-26</date>
+    </born>
+    <dead>
+      <date>1883-09-13</date>
+    </dead>
+  </period>
+  <literary-periods>romantik-og-praeromantik</literary-periods>
+  <identifiers>
+    <wikidata>Q15873738</wikidata>
+    <viaf>47597627</viaf>
+    <litteraturpriser-dk>ACarlAndersen</litteraturpriser-dk>
+    <runeberg-org>andercar</runeberg-org>
+  </identifiers>
+</person>
