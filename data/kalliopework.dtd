@@ -1,21 +1,176 @@
-<!ELEMENT kalliopework (workhead, workbody)>
-<!ELEMENT workhead (title, subtitle?, date, quality?, notes?, pictures?, keywords?, cvs-timestamp)>
-<!ELEMENT workbody (group|text)*>
-<!ELEMENT text (head,body)>
-<!ELEMENT head (headingtitle?, linktitle?, indextitle?, toctitle?, subtitle?, notes?)>
-<!ATTLIST body xml:space (default|preserve) 'preserve'>
-<!ELEMENT title (#PCDATA)>
-<!ELEMENT date (#PCDATA)>
-<!ELEMENT author (#PCDATA)>
-<!ELEMENT notes (note*)>
-<!ELEMENT note (#PCDATA)>
-<!ELEMENT pictures (picture?)>
-<!ELEMENT picture (#PCDATA)>
-<!ATTLIST note xml:space (default|preserve) 'preserve'>
-<!ELEMENT group (#PCDATA)> 
-<!ELEMENT subtitle (#PCDATA)>
-
-<!--
+<!ENTITY AElig "&#198;">
+<!ENTITY Auml "&#196;">
+<!ENTITY Epsilon "&#917;">
+<!ENTITY Gamma "&#915;">
+<!ENTITY Iota "&#921;">
+<!ENTITY Kappa "&#922;">
+<!ENTITY Lambda "&#923;">
+<!ENTITY OElig "&#338;">
+<!ENTITY Omega "&#937;">
+<!ENTITY Omicron "&#927;">
+<!ENTITY Pi "&#928;">
+<!ENTITY Rho "&#929;">
+<!ENTITY Sigma "&#931;">
+<!ENTITY Upsilon "&#933;">
+<!ENTITY Uuml "&#220;">
+<!ENTITY acirc "&#226;">
+<!ENTITY aelig "&#230;">
+<!ENTITY agrave "&#224;">
+<!ENTITY bdquo "&#8222;">
 <!ENTITY dagger "&#8224;">
+<!ENTITY deg "&#176;">
+<!ENTITY eacute "&#233;">
+<!ENTITY ecirc "&#234;">
+<!ENTITY egrave "&#232;">
+<!ENTITY infin "&#8734;">
+<!ENTITY iuml "&#239;">
+<!ENTITY ldquo "&#8220;">
 <!ENTITY mdash "&#8212;">
--->
+<!ENTITY nbsp "&#160;">
+<!ENTITY ocirc "&#244;">
+<!ENTITY oelig "&#339;">
+<!ENTITY ouml "&#246;">
+<!ENTITY szlig "&#223;">
+<!ENTITY thorn "&#254;">
+
+<!ELEMENT kalliopework (workhead, workbody?)>
+<!ATTLIST kalliopework
+  id CDATA #REQUIRED
+  author CDATA #REQUIRED
+  status CDATA #IMPLIED
+  type CDATA #IMPLIED
+  parent CDATA #IMPLIED>
+
+<!ELEMENT workhead ANY>
+<!ELEMENT workbody ANY>
+<!ELEMENT text ANY>
+<!ATTLIST text
+  id CDATA #IMPLIED
+  variant CDATA #IMPLIED
+  aliases CDATA #IMPLIED
+  skip-index CDATA #IMPLIED
+  lang CDATA #IMPLIED
+  ignore-tests CDATA #IMPLIED>
+<!ELEMENT poem ANY>
+<!ATTLIST poem id CDATA #IMPLIED>
+<!ELEMENT prose ANY>
+<!ATTLIST prose font-size CDATA #IMPLIED>
+<!ELEMENT prosa ANY>
+<!ELEMENT section ANY>
+<!ATTLIST section
+  id CDATA #IMPLIED
+  level CDATA #IMPLIED
+  variant CDATA #IMPLIED
+  aliases CDATA #IMPLIED>
+<!ELEMENT subwork ANY>
+<!ATTLIST subwork ref CDATA #REQUIRED>
+<!ELEMENT content ANY>
+
+<!ELEMENT head ANY>
+<!ELEMENT body ANY>
+<!ATTLIST body xml:space (default|preserve) "preserve">
+<!ELEMENT title ANY>
+<!ATTLIST title force-index CDATA #IMPLIED>
+<!ELEMENT year ANY>
+<!ELEMENT subtitle ANY>
+<!ELEMENT suptitle ANY>
+<!ELEMENT firstline ANY>
+<!ATTLIST firstline force-index CDATA #IMPLIED>
+<!ELEMENT indextitle ANY>
+<!ELEMENT toctitle ANY>
+<!ELEMENT linktitle ANY>
+<!ELEMENT breadcrumbtitle ANY>
+<!ELEMENT nofirstline ANY>
+<!ELEMENT keywords ANY>
+<!ELEMENT source ANY>
+<!ATTLIST source
+  id CDATA #IMPLIED
+  in CDATA #IMPLIED
+  pages CDATA #IMPLIED
+  facsimile CDATA #IMPLIED
+  facsimile-pages CDATA #IMPLIED
+  facsimile-pages-num CDATA #IMPLIED
+  facsimile-pages-offset CDATA #IMPLIED>
+<!ELEMENT dates ANY>
+<!ELEMENT published ANY>
+<!ELEMENT written ANY>
+<!ELEMENT performed ANY>
+<!ELEMENT event ANY>
+<!ELEMENT begivenhed ANY>
+
+<!ELEMENT notes ANY>
+<!ELEMENT note ANY>
+<!ATTLIST note
+  xml:space (default|preserve) "preserve"
+  type CDATA #IMPLIED
+  lang CDATA #IMPLIED
+  unknown-original-by CDATA #IMPLIED>
+<!ELEMENT quality ANY>
+<!ELEMENT pictures ANY>
+<!ELEMENT picture ANY>
+<!ATTLIST picture
+  src CDATA #IMPLIED
+  type CDATA #IMPLIED
+  year CDATA #IMPLIED
+  artwork CDATA #IMPLIED
+  museum CDATA #IMPLIED
+  invnr CDATA #IMPLIED
+  objid CDATA #IMPLIED
+  wikidata CDATA #IMPLIED>
+
+<!ELEMENT poetry ANY>
+<!ATTLIST poetry font-size CDATA #IMPLIED>
+<!ELEMENT quote ANY>
+<!ATTLIST quote
+  font-size CDATA #IMPLIED
+  margin-left CDATA #IMPLIED>
+<!ELEMENT a ANY>
+<!ATTLIST a
+  href CDATA #IMPLIED
+  poet CDATA #IMPLIED
+  poem CDATA #IMPLIED
+  work CDATA #IMPLIED
+  keyword CDATA #IMPLIED
+  person CDATA #IMPLIED
+  bible CDATA #IMPLIED
+  type CDATA #IMPLIED>
+<!ELEMENT xref ANY>
+<!ATTLIST xref
+  poem CDATA #IMPLIED
+  bibel CDATA #IMPLIED
+  type CDATA #IMPLIED>
+<!ELEMENT b ANY>
+<!ELEMENT i ANY>
+<!ELEMENT sc ANY>
+<!ELEMENT small ANY>
+<!ELEMENT sup ANY>
+<!ELEMENT s ANY>
+<!ELEMENT u ANY>
+<!ELEMENT num ANY>
+<!ELEMENT nonum ANY>
+<!ELEMENT resetnum ANY>
+<!ELEMENT center ANY>
+<!ELEMENT right ANY>
+<!ELEMENT margin ANY>
+<!ELEMENT metrik ANY>
+<!ELEMENT wrap ANY>
+<!ELEMENT line ANY>
+<!ELEMENT br ANY>
+<!ELEMENT hr ANY>
+<!ATTLIST hr width CDATA #IMPLIED>
+<!ELEMENT pb ANY>
+<!ATTLIST pb n CDATA #IMPLIED>
+<!ELEMENT img ANY>
+<!ATTLIST img
+  src CDATA #IMPLIED
+  alt CDATA #IMPLIED
+  width CDATA #IMPLIED>
+<!ELEMENT colored ANY>
+<!ATTLIST colored color CDATA #IMPLIED>
+<!ELEMENT footnote ANY>
+<!ELEMENT biblio ANY>
+<!ELEMENT asterism ANY>
+<!ELEMENT block-center ANY>
+<!ELEMENT two-columns ANY>
+<!ELEMENT column ANY>
+<!ELEMENT w ANY>

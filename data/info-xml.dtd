@@ -1,0 +1,51 @@
+<!ELEMENT person (name, (period|literary-periods|works|identifiers)*)>
+<!ATTLIST person
+  id CDATA #REQUIRED
+  country CDATA #REQUIRED
+  lang CDATA #REQUIRED
+  type CDATA #REQUIRED>
+
+<!ELEMENT name (firstname|lastname|fullname|sortname|christened|realname|pseudonym|alternative|alternativ|latin|note)*>
+<!ELEMENT firstname (#PCDATA)>
+<!ELEMENT lastname (#PCDATA)>
+<!ELEMENT fullname (#PCDATA)>
+<!ELEMENT sortname (#PCDATA)>
+<!ELEMENT christened (#PCDATA)>
+<!ELEMENT realname (#PCDATA)>
+<!ELEMENT pseudonym (#PCDATA)>
+<!ELEMENT alternative (#PCDATA)>
+<!ELEMENT alternativ (#PCDATA)>
+<!ELEMENT latin (#PCDATA)>
+
+<!ELEMENT period (born, coronation?, dead?)>
+<!ELEMENT born (date|place|note)*>
+<!ELEMENT dead (date|place|note)*>
+<!ELEMENT coronation (date|place|note)*>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT place (#PCDATA)>
+<!ATTLIST place inon CDATA #IMPLIED>
+<!ELEMENT note (#PCDATA)>
+
+<!ELEMENT literary-periods (#PCDATA)>
+<!ELEMENT works (#PCDATA)>
+
+<!ELEMENT identifiers (
+  wikidata?,
+  gravsted-dk?,
+  viaf?,
+  lex-dk?,
+  teaterleksikon-lex-dk?,
+  biografisk-leksikon-lex-dk?,
+  litteraturpriser-dk?,
+  runeberg-org?,
+  gutenberg-org?
+)>
+<!ELEMENT wikidata (#PCDATA)>
+<!ELEMENT gravsted-dk (#PCDATA)>
+<!ELEMENT viaf (#PCDATA)>
+<!ELEMENT lex-dk (#PCDATA)>
+<!ELEMENT teaterleksikon-lex-dk (#PCDATA)>
+<!ELEMENT biografisk-leksikon-lex-dk (#PCDATA)>
+<!ELEMENT litteraturpriser-dk (#PCDATA)>
+<!ELEMENT runeberg-org (#PCDATA)>
+<!ELEMENT gutenberg-org (#PCDATA)>
