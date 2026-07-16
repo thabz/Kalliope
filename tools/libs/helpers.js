@@ -1,5 +1,4 @@
 import fs from 'fs';
-import entities from 'entities';
 import { DOMParser } from '@xmldom/xmldom';
 import * as bible from './bible-abbr.js';
 import path from 'path';
@@ -71,28 +70,52 @@ const writeText = (filename, text) => {
   fs.writeFileSync(filename, text);
 };
 
+const xmlEntityMap = {
+  amp: '&',
+  apos: "'",
+  gt: '>',
+  lt: '<',
+  quot: '"',
+};
+
+const decodeXmlCharacterReferences = text =>
+  text.replace(/&(#x[0-9a-fA-F]+|#[0-9]+|[A-Za-z][A-Za-z0-9]+);/g, (m, e) => {
+    if (e.startsWith('#x')) {
+      return String.fromCodePoint(parseInt(e.slice(2), 16));
+    }
+    if (e.startsWith('#')) {
+      return String.fromCodePoint(parseInt(e.slice(1), 10));
+    }
+    if (xmlEntityMap[e] != null) {
+      return xmlEntityMap[e];
+    }
+    throw new Error(`Unknown XML entity ${m}`);
+  });
+
 const replaceDashes = html => {
   if (html == null) {
     return null;
   }
-  return entities.decodeHTML(
+  return decodeXmlCharacterReferences(
     html
-      .replace(/ -&nbsp;/g, ' —&nbsp;')
+      .replace(/ -&#160;/g, ' —&#160;')
+      .replace(/ -\u00a0/g, ' —\u00a0')
       .replace(/ - /g, ' — ')
       .replace(/ -/g, ' —')
       .replace(/^- /gm, '— ')
       .replace(/>- /g, '>— ')
       .replace(/,,- /g, ',,— ')
-      .replace(/,,/g, '&bdquo;')
-      .replace(/''/g, '&rdquo;')
-      .replace(/``/g, '&ldquo;')
-      .replace(/'/g, '&rsquo;')
-      .replace(/&nbsp;- /g, '&nbsp;— ')
-      .replace(/ -&ldquo;/g, ' —&ldquo;')
+      .replace(/,,/g, '„')
+      .replace(/''/g, '”')
+      .replace(/``/g, '“')
+      .replace(/'/g, '’')
+      .replace(/&#160;- /g, '&#160;— ')
+      .replace(/\u00a0- /g, '\u00a0— ')
+      .replace(/ -“/g, ' —“')
       .replace(/ -$/gm, ' —')
       .replace(/ -([\!;\?\.»«,:\n])/g, / —$1/)
-      .replace(/ \. \. \./gm, '&nbsp;.&nbsp;.&nbsp;.') // Undgå ombrydning af ". . ."
-      .replace(/ —/g, '&nbsp;—') // Undgå tankestreger som ombrydes til sin egen linje
+      .replace(/ \. \. \./gm, '\u00a0.\u00a0.\u00a0.') // Undgå ombrydning af ". . ."
+      .replace(/ —/g, '\u00a0—') // Undgå tankestreger som ombrydes til sin egen linje
   );
 };
 
@@ -112,7 +135,7 @@ const htmlToXml = (html, collected, isPoetry) => {
     .replace(/\n/g, '::NEWLINE-PLACEHOLDER::') // Regexp nedenunder spænder ikke over flere linjer... underligt.
     .replace(/<!--.*?-->/g, '')
     .replace(/::NEWLINE-PLACEHOLDER::/g, '\n');
-  let decoded = entities.decodeHTML(
+  let decoded = decodeXmlCharacterReferences(
     replaceDashes(
       html
         .replace(/\n *(----*) *\n/g, (match, p1) => {
@@ -122,7 +145,7 @@ const htmlToXml = (html, collected, isPoetry) => {
           return `\n<hr width="${p1.length}" class="double"/>\n`;
         })
         .replace(/^( +)/gm, (match, p1) => {
-          return '&nbsp;'.repeat(2 * p1.length);
+          return '\u00a0'.repeat(2 * p1.length);
         })
         .replace(/^( *[_\*\- ]+ *)$/gm, (match, p1) => {
           // <nonum> på afskillerlinjer som f.eks. "* * *" eller "___"

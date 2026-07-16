@@ -21,10 +21,13 @@ const binaryExtensions = new Set([
   '.woff2',
 ]);
 
-const gitFiles = () =>
-  execFileSync('git', ['ls-files'], { encoding: 'utf8' })
+const gitFiles = (...patterns) =>
+  execFileSync('git', ['ls-files', ...patterns], { encoding: 'utf8' })
     .split('\n')
-    .filter(Boolean);
+    .filter(Boolean)
+    .filter(filename => fs.existsSync(filename));
+
+const xmlEntities = new Set(['amp', 'apos', 'gt', 'lt', 'quot']);
 
 const looksBinary = buffer => {
   const scanLength = Math.min(buffer.length, 8000);
@@ -54,6 +57,23 @@ describe('source encodings', () => {
         decoder.decode(buffer);
       } catch (error) {
         invalid.push(filename);
+      }
+    });
+
+    expect(invalid).toEqual([]);
+  });
+
+  it('keeps XML files free of SGML/HTML named entities', () => {
+    const invalid = [];
+
+    gitFiles('*.xml').forEach(filename => {
+      const text = fs.readFileSync(filename, 'utf8');
+      const entities = text.matchAll(/&([A-Za-z][A-Za-z0-9]+);/g);
+
+      for (const entity of entities) {
+        if (!xmlEntities.has(entity[1])) {
+          invalid.push(`${filename}: &${entity[1]};`);
+        }
       }
     });
 
