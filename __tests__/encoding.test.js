@@ -81,6 +81,8 @@ describe('source encodings', () => {
   });
 
   it('keeps tracked text files Unicode-normalized as NFC', () => {
+    // NFC stores characters in their composed Unicode form where possible,
+    // for example "å" as one code point instead of "a" plus a combining ring.
     const unnormalized = [];
 
     gitFiles().forEach(filename => {
