@@ -4,29 +4,11 @@ import {
   onWarningStopParsing,
 } from '@xmldom/xmldom';
 import { loadText } from '../libs/helpers.js';
-import { entityMap } from './entities.js';
-
-const xmlEntities = new Set(['amp', 'apos', 'gt', 'lt', 'quot']);
-
-const toCharacterReferences = text =>
-  Array.from(text)
-    .map(ch => `&#${ch.codePointAt(0)};`)
-    .join('');
 
 const parseXMLFragment = xmlString => {
-  const s = xmlString.replace(/&([A-Za-z]+);/g, (m, e) => {
-    if (xmlEntities.has(e)) {
-      return m;
-    }
-    const replacement = entityMap[e];
-    if (replacement == null) {
-      throw `Unknown entity &${e};`;
-    }
-    return toCharacterReferences(replacement);
-  });
   return new DOMParser({
     onError: onWarningStopParsing,
-  }).parseFromString(s, 'text/xml');
+  }).parseFromString(xmlString, 'text/xml');
 };
 
 const loadXMLDoc = filename => {

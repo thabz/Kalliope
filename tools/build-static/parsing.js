@@ -1,4 +1,3 @@
-import entities from 'entities';
 import { htmlToXml } from '../libs/helpers.js';
 import { build_museum_url } from './museums.js';
 import {
