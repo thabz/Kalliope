@@ -64,6 +64,33 @@ const ResultTypeLabel = ({ children }) => (
   </span>
 );
 
+const renderHighlightFragment = (line, keyPrefix = '') => {
+  return line
+    .replace(/\s+/g, ' ')
+    .replace(/^[\s,.!:;?\d"“„]+/, '')
+    .replace(/[\s,.!:;?\d"“„]+$/, '')
+    .split(/(<\/?em>)/)
+    .reduce(
+      (acc, part) => {
+        if (part === '<em>') {
+          acc.highlight = true;
+        } else if (part === '</em>') {
+          acc.highlight = false;
+        } else if (part.length > 0) {
+          acc.parts.push(
+            acc.highlight ? (
+              <em key={`${keyPrefix}em-${acc.parts.length}`}>{part}</em>
+            ) : (
+              part
+            )
+          );
+        }
+        return acc;
+      },
+      { parts: [], highlight: false }
+    ).parts;
+};
+
 const RenderedHits = ({ hits }) => {
   const lang = useContext(LangContext);
 
@@ -94,11 +121,15 @@ const RenderedHits = ({ hits }) => {
         );
       } else if (hit._source.result_type === 'work') {
         const workURL = Links.workURL(lang, poet.id, work.id);
+        const highlightedWorkTitle =
+          highlight && highlight['work.title']
+            ? renderHighlightFragment(highlight['work.title'][0], hit._id)
+            : null;
         item = (
           <div>
             <div className="title">
               <Link href={workURL}>
-                <WorkName work={work} lang={lang} />
+                {highlightedWorkTitle || <WorkName work={work} lang={lang} />}
               </Link>
             </div>
             <div className="poet-and-work">
@@ -115,25 +146,27 @@ const RenderedHits = ({ hits }) => {
         );
       } else {
         const textURL = Links.textURL(lang, text.id);
+        const highlightedTextTitle =
+          highlight && highlight['text.title']
+            ? renderHighlightFragment(highlight['text.title'][0], hit._id)
+            : null;
         let renderedHighlight = null;
         if (highlight && highlight['text.content_html']) {
           // The query is highlighted in each line using <em> by Elasticsearch
           const lines = highlight['text.content_html'];
           renderedHighlight = lines.map((line, i) => {
-            let parts = line
-              .replace(/\s+/g, ' ')
-              .replace(/^[\s,.!:;?\d"“„]+/, '')
-              .replace(/[\s,.!:;?\d"“„]+$/, '')
-              .split(/<\/?em>/);
-            parts[1] = <em key={i}>{parts[1]}</em>;
-            return <div key={i}>{parts}</div>;
+            return (
+              <div key={i}>
+                {renderHighlightFragment(line, `${hit._id}-${i}`)}
+              </div>
+            );
           });
         }
         item = (
           <div>
             <div className="title">
               <Link href={textURL}>
-                <TextName text={text} />
+                {highlightedTextTitle || <TextName text={text} />}
               </Link>
             </div>
             <div className="hightlights">{renderedHighlight}</div>

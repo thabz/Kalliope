@@ -32,6 +32,10 @@ describe('Elasticsearch client', () => {
       tokenizer: 'standard',
       filter: ['lowercase', 'asciifolding'],
     });
+    expect(body.settings.analysis.normalizer.kalliope_keyword).toEqual({
+      type: 'custom',
+      filter: ['lowercase', 'asciifolding'],
+    });
     expect(body.mappings.properties.text.properties.content_html).toEqual({
       type: 'text',
       analyzer: 'kalliope_text',
@@ -45,9 +49,21 @@ describe('Elasticsearch client', () => {
     expect(body.mappings.properties.text.properties.subtitles.analyzer).toBe(
       'kalliope_text'
     );
+    expect(
+      body.mappings.properties.text.properties.title.fields.exact
+    ).toEqual({
+      type: 'keyword',
+      normalizer: 'kalliope_keyword',
+    });
     expect(body.mappings.properties.work.properties.title).toEqual({
       type: 'text',
       analyzer: 'kalliope_text',
+      fields: {
+        exact: {
+          type: 'keyword',
+          normalizer: 'kalliope_keyword',
+        },
+      },
     });
   });
 
@@ -87,72 +103,110 @@ describe('Elasticsearch client', () => {
     await elasticSearchClient.search('kalliope', 'text', 'dk', '', 'aarestrup');
 
     const body = JSON.parse(global.fetch.mock.calls[0][1].body);
-    const resultTypeFilter = body.query.bool.filter[0].bool;
+    const resultTypeQuery = body.query.bool.filter[0].bool;
+    const workQuery = resultTypeQuery.should[1].bool.must[0].bool;
+    const textQuery = resultTypeQuery.should[2].bool.must[0].bool;
 
     expect(body.query.bool.must).toEqual([]);
-    expect(resultTypeFilter).toEqual({
-      should: [
-        {
-          bool: {
-            filter: [{ term: { result_type: 'poet' } }],
-            must: [
-              {
-                multi_match: {
-                  query: 'aarestrup',
-                  fields: ['poet_search^4'],
-                },
-              },
-            ],
-          },
-        },
-        {
-          bool: {
-            must: [
-              {
-                bool: {
-                  filter: [{ term: { result_type: 'work' } }],
-                  must: [
-                    {
-                      multi_match: {
-                        query: 'aarestrup',
-                        fields: ['work.title^3'],
-                      },
-                    },
-                  ],
-                },
-              },
-            ],
-            filter: [{ term: { 'poet.country': 'dk' } }],
-          },
-        },
-        {
-          bool: {
-            must: [
-              {
-                bool: {
-                  filter: [{ term: { result_type: 'text' } }],
-                  must: [
-                    {
-                      multi_match: {
-                        query: 'aarestrup',
-                        fields: [
-                          'text.id^5',
-                          'text.title^3',
-                          'text.subtitles^2',
-                          'text.content_html',
-                        ],
-                      },
-                    },
-                  ],
-                },
-              },
-            ],
-            filter: [{ term: { 'poet.country': 'dk' } }],
-          },
-        },
-      ],
-      minimum_should_match: 1,
+    expect(body.highlight.fields).toEqual({
+      'work.title': {},
+      'text.title': {},
+      'text.content_html': {},
     });
+    expect(resultTypeQuery.minimum_should_match).toBe(1);
+    expect(resultTypeQuery.should[0]).toEqual({
+      bool: {
+        filter: [{ term: { result_type: 'poet' } }],
+        must: [
+          {
+            multi_match: {
+              query: 'aarestrup',
+              fields: ['poet_search^4'],
+            },
+          },
+        ],
+      },
+    });
+    expect(resultTypeQuery.should[1].bool.filter).toEqual([
+      { term: { 'poet.country': 'dk' } },
+    ]);
+    expect(workQuery.filter).toEqual([{ term: { result_type: 'work' } }]);
+    expect(workQuery.must).toEqual([
+      {
+        multi_match: {
+          query: 'aarestrup',
+          fields: ['work.title^8'],
+        },
+      },
+    ]);
+    expect(workQuery.should).toEqual([
+      {
+        match: {
+          'work.title.exact': {
+            query: 'aarestrup',
+            boost: 24,
+          },
+        },
+      },
+      {
+        match_phrase: {
+          'work.title': {
+            query: 'aarestrup',
+            boost: 12,
+          },
+        },
+      },
+      {
+        match_phrase_prefix: {
+          'work.title': {
+            query: 'aarestrup',
+            boost: 6,
+          },
+        },
+      },
+    ]);
+    expect(resultTypeQuery.should[2].bool.filter).toEqual([
+      { term: { 'poet.country': 'dk' } },
+    ]);
+    expect(textQuery.filter).toEqual([{ term: { result_type: 'text' } }]);
+    expect(textQuery.must).toEqual([
+      {
+        multi_match: {
+          query: 'aarestrup',
+          fields: [
+            'text.title^10',
+            'text.subtitles^2',
+            'text.content_html',
+          ],
+        },
+      },
+    ]);
+    expect(textQuery.should).toEqual([
+      {
+        match: {
+          'text.title.exact': {
+            query: 'aarestrup',
+            boost: 40,
+          },
+        },
+      },
+      {
+        match_phrase: {
+          'text.title': {
+            query: 'aarestrup',
+            boost: 20,
+          },
+        },
+      },
+      {
+        match_phrase_prefix: {
+          'text.title': {
+            query: 'aarestrup',
+            boost: 10,
+          },
+        },
+      },
+    ]);
   });
 
   test('searches only works and texts when scoped to a poet', async () => {
@@ -165,50 +219,37 @@ describe('Elasticsearch client', () => {
     );
 
     const body = JSON.parse(global.fetch.mock.calls[0][1].body);
+    const scopedQuery = body.query.bool.must[0].bool;
+    const workQuery = scopedQuery.should[0].bool;
+    const textQuery = scopedQuery.should[1].bool;
 
     expect(body.query.bool.filter).toEqual([
       { term: { 'poet.id': 'aarestrup' } },
       { term: { 'poet.country': 'dk' } },
     ]);
-    expect(body.query.bool.must).toEqual([
-      {
-        bool: {
-          should: [
-            {
-              bool: {
-                filter: [{ term: { result_type: 'work' } }],
-                must: [
-                  {
-                    multi_match: {
-                      query: 'rose',
-                      fields: ['work.title^3'],
-                    },
-                  },
-                ],
-              },
-            },
-            {
-              bool: {
-                filter: [{ term: { result_type: 'text' } }],
-                must: [
-                  {
-                    multi_match: {
-                      query: 'rose',
-                      fields: [
-                        'text.id^5',
-                        'text.title^3',
-                        'text.subtitles^2',
-                        'text.content_html',
-                      ],
-                    },
-                  },
-                ],
-              },
-            },
-          ],
-          minimum_should_match: 1,
+    expect(scopedQuery.minimum_should_match).toBe(1);
+    expect(scopedQuery.should).toHaveLength(2);
+    expect(workQuery.must[0].multi_match.fields).toEqual(['work.title^8']);
+    expect(workQuery.should[0]).toEqual({
+      match: {
+        'work.title.exact': {
+          query: 'rose',
+          boost: 24,
         },
       },
+    });
+    expect(textQuery.must[0].multi_match.fields).toEqual([
+      'text.title^10',
+      'text.subtitles^2',
+      'text.content_html',
     ]);
+    expect(textQuery.should[0]).toEqual({
+      match: {
+        'text.title.exact': {
+          query: 'rose',
+          boost: 40,
+        },
+      },
+    });
   });
 });
