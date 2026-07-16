@@ -79,4 +79,32 @@ describe('source encodings', () => {
 
     expect(invalid).toEqual([]);
   });
+
+  it('keeps tracked text files Unicode-normalized as NFC', () => {
+    const unnormalized = [];
+
+    gitFiles().forEach(filename => {
+      if (binaryExtensions.has(path.extname(filename).toLowerCase())) {
+        return;
+      }
+
+      const buffer = fs.readFileSync(filename);
+      if (looksBinary(buffer)) {
+        return;
+      }
+
+      let text;
+      try {
+        text = decoder.decode(buffer);
+      } catch (error) {
+        return;
+      }
+
+      if (text.normalize('NFC') !== text) {
+        unnormalized.push(filename);
+      }
+    });
+
+    expect(unnormalized).toEqual([]);
+  });
 });
