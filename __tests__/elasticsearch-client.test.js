@@ -36,6 +36,9 @@ describe('Elasticsearch client', () => {
       type: 'text',
       analyzer: 'kalliope_text',
     });
+    expect(body.mappings.properties.text.properties.id).toEqual({
+      type: 'keyword',
+    });
     expect(body.mappings.properties.text.properties.title.analyzer).toBe(
       'kalliope_text'
     );
@@ -133,6 +136,7 @@ describe('Elasticsearch client', () => {
                       multi_match: {
                         query: 'aarestrup',
                         fields: [
+                          'text.id^5',
                           'text.title^3',
                           'text.subtitles^2',
                           'text.content_html',
@@ -191,6 +195,7 @@ describe('Elasticsearch client', () => {
                     multi_match: {
                       query: 'rose',
                       fields: [
+                        'text.id^5',
                         'text.title^3',
                         'text.subtitles^2',
                         'text.content_html',

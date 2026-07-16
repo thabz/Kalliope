@@ -87,6 +87,9 @@ class ElasticSearchClient {
           properties: {
             text: {
               properties: {
+                id: {
+                  type: 'keyword',
+                },
                 title: {
                   type: 'text',
                   analyzer: 'kalliope_text',
@@ -253,7 +256,12 @@ class ElasticSearchClient {
           {
             multi_match: {
               query,
-              fields: ['text.title^3', 'text.subtitles^2', 'text.content_html'],
+              fields: [
+                'text.id^5',
+                'text.title^3',
+                'text.subtitles^2',
+                'text.content_html',
+              ],
             },
           },
         ],
