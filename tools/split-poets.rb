@@ -22,4 +22,3 @@ poetsxml.xpath(".//person").each { |poetnode|
 }
 
 exit
-

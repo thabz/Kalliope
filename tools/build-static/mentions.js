@@ -148,7 +148,7 @@ const build_person_or_keyword_refs = (collected) => {
                   const pictureRef = match[1];
                   if (!pictureRef.match('/')) {
                     throw new Error(
-                      `${filename} ${fromId}: points has illegal picture ref ${pictureRef}. 
+                      `${filename} ${fromId}: points has illegal picture ref ${pictureRef}.
                       It should be on the form "{artist-id}/{picture-id}" or "kunst/{picture-id}"`
                     );
                   }

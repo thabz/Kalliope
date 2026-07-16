@@ -509,4 +509,3 @@ Buildet tjekker blandt andet:
 - `fdirs/hugo/portraits.xml`: portraetter, inkl. genbrugt keyword-billede.
 - `data/keywords/rom.xml`: billeder via `artwork`.
 - `data/about/tags.xml`: aeldre, kommenteret oversigt over inline-tags.
-

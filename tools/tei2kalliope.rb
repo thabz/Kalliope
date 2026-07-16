@@ -15,9 +15,9 @@ def extractWorkHead(xml)
     titles_num = xml.xpath('//teiHeader/fileDesc/titleStmt/title').length
     subtitles = []
     title = xml.xpath('//teiHeader/fileDesc/titleStmt/title').each_with_index { |node, i|
-        if (i == 0) 
+        if (i == 0)
             puts %Q|    <title>#{node.content}</title>|
-        else 
+        else
             subtitles.push(node.content)
         end
     }
@@ -52,7 +52,7 @@ def extractPoemBody(poemnode)
         if node.name == "lg"
             extractPoemBody(node)
             if (i != items.size - 1)
-                puts 
+                puts
             end
         elsif node.name == "l" or node.name == "p"
             content = as_html(node)
@@ -83,7 +83,7 @@ def extractText(node)
     }
     if titles.empty?
         title = ''
-    else 
+    else
         title = titles[0].strip.gsub(/\n/,'')
     end
 
@@ -97,7 +97,7 @@ def extractText(node)
         title = "<num>#{title}</num>#{firstline}"
     end
     title = title.gsub(/\.$/,'').strip
-    
+
     poemid = "#{@poetid}#{@date}%02d" % [@poemnum]
     @poemnum += 1
     puts %Q|<poem id="#{poemid}">|
@@ -130,10 +130,10 @@ def extractSection(node)
 end
 
 def extractWorkBody(body)
-    body.xpath("div").each { |node| 
+    body.xpath("div").each { |node|
         if not node.xpath("div").empty?
             extractSection(node)
-        else 
+        else
             extractText(node)
         end
     }
@@ -179,5 +179,3 @@ puts extractWork(teixml)
 #        f.puts
 #    end
 #}
-
-
