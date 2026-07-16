@@ -37,7 +37,7 @@ end
     end
 }
 
-@fieldnames.each { |fieldname| 
+@fieldnames.each { |fieldname|
     puts "#{fieldname}: "
     value = STDIN.gets.strip
     @fieldvalues[fieldname] = value
@@ -85,7 +85,7 @@ end
 
 writeXML('info.xml', @infoXml)
 
-if (@wantsAndreXml) 
+if (@wantsAndreXml)
     today = Time.new.strftime("%Y%m%d")
     @andreXml = %{<?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="andre" author="#{@poetId}" status="incomplete" type="poetry">
@@ -111,7 +111,7 @@ if (@wantsAndreXml)
     writeXML('andre.xml', @andreXml)
 end
 
-if (@wantsPortraitsXml) 
+if (@wantsPortraitsXml)
     Dir.mkdir("public/images/#{@poetId}")
 
     @portraitsXml = %{<?xml version="1.0" encoding="UTF-8"?>
@@ -122,4 +122,3 @@ if (@wantsPortraitsXml)
     }
     writeXML('portraits.xml', @portraitsXml)
 end
-

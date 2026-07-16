@@ -236,7 +236,7 @@ const Tabs = (props) => {
             border: 0;
             padding: 0;
             margin: 0;
-            outline: 0;            
+            outline: 0;
             font-weight: 100;
             font-family: inherit;
             transition: font-size ${transitionDuration}, line-height: ${transitionDuration};

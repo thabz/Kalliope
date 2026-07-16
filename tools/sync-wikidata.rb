@@ -38,7 +38,7 @@ def addIdentifierNode(externalIds, pKey, tag, doc, new_identifiers)
     node = Nokogiri::XML::Node.new(tag, doc)
     node.content = id
     new_identifiers.add_child("    ")
-    new_identifiers.add_child(node) 
+    new_identifiers.add_child(node)
     new_identifiers.add_child("\n")
   end
 end
@@ -63,7 +63,7 @@ def buildIdentifiersXml(poetId, wikidataId, doc)
   wikidataNode.content = wikidataId
   new_identifiers.add_child("\n")
   new_identifiers.add_child("    ")
-  new_identifiers.add_child(wikidataNode) 
+  new_identifiers.add_child(wikidataNode)
   new_identifiers.add_child("\n")
   addIdentifierNode(externalIds, 'P4359', 'gravsted-dk', doc, new_identifiers)
   addIdentifierNode(externalIds, 'P214', 'viaf', doc, new_identifiers)
@@ -79,18 +79,18 @@ end
 
 def handlePoet(poetId)
     # Modify info.xml
-    
+
     infoxmlfilename = "fdirs/#{poetId}/info.xml"
     infoxmlfile = File.read(infoxmlfilename)
     infoxml = Nokogiri::XML(infoxmlfile)
     poetnodes = infoxml.xpath(".//person")
 
     if poetnodes.first['type'] == 'collection'
-        return                       
+        return
     end
-    
+
     identifiersnodes = poetnodes.first.xpath('.//identifiers')
-    
+
     if identifiersnodes.empty?
         puts "#{poetId} has no identifiers. Search wikidata for P12404:\"#{poetId}\""
     else
@@ -103,11 +103,11 @@ def handlePoet(poetId)
           identifiersnodes.first.replace(newIdentifiersXml)
         end
     end
-    
+
     File.open(infoxmlfilename, 'w') do |f|
         f.write infoxml.to_xml
     end
-    
+
 end
 
 if ARGV.length > 0
@@ -118,8 +118,7 @@ else
     Dir.entries("fdirs")
         .select { |entry| File.directory?(File.join("fdirs", entry)) && !entry.start_with?(".") }
         .sort
-        .each { |poetId| 
+        .each { |poetId|
           handlePoet(poetId)
     }
 end
-
