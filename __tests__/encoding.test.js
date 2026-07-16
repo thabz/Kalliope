@@ -40,9 +40,11 @@ const looksBinary = buffer => {
 };
 
 describe('source encodings', () => {
-  it('keeps tracked text files encoded as UTF-8', () => {
-    const invalid = [];
+  const invalidUtf8 = [];
+  const invalidXmlEntities = [];
+  const unnormalized = [];
 
+  beforeAll(() => {
     gitFiles().forEach(filename => {
       if (binaryExtensions.has(path.extname(filename).toLowerCase())) {
         return;
@@ -54,29 +56,38 @@ describe('source encodings', () => {
       }
 
       try {
-        decoder.decode(buffer);
+        const text = decoder.decode(buffer);
+
+        if (filename.endsWith('.xml')) {
+          const entities = text.matchAll(/&([A-Za-z][A-Za-z0-9]+);/g);
+
+          for (const entity of entities) {
+            if (!xmlEntities.has(entity[1])) {
+              invalidXmlEntities.push(`${filename}: &${entity[1]};`);
+            }
+          }
+        }
+
+        if (text.normalize('NFC') !== text) {
+          unnormalized.push(filename);
+        }
       } catch (error) {
-        invalid.push(filename);
+        invalidUtf8.push(filename);
       }
     });
+  });
 
-    expect(invalid).toEqual([]);
+  it('keeps tracked text files encoded as UTF-8', () => {
+    expect(invalidUtf8).toEqual([]);
   });
 
   it('keeps XML files free of SGML/HTML named entities', () => {
-    const invalid = [];
+    expect(invalidXmlEntities).toEqual([]);
+  });
 
-    gitFiles('*.xml').forEach(filename => {
-      const text = fs.readFileSync(filename, 'utf8');
-      const entities = text.matchAll(/&([A-Za-z][A-Za-z0-9]+);/g);
-
-      for (const entity of entities) {
-        if (!xmlEntities.has(entity[1])) {
-          invalid.push(`${filename}: &${entity[1]};`);
-        }
-      }
-    });
-
-    expect(invalid).toEqual([]);
+  it('keeps tracked text files Unicode-normalized as NFC', () => {
+    // NFC stores characters in their composed Unicode form where possible,
+    // for example "å" as one code point instead of "a" plus a combining ring.
+    expect(unnormalized).toEqual([]);
   });
 });
