@@ -90,6 +90,12 @@ const build_artwork = async (collected) => {
     ? new Map()
     : new Map(loadCachedJSON('collected.artwork') || []);
   const force_reload = collected_artwork.size == 0;
+  const codeModified = isFileModified(
+    'tools/build-static/artwork.js',
+    'tools/build-static/museums.js',
+    'tools/build-static/parsing.js',
+  );
+  const museumsModified = isFileModified('data/museums.xml');
   let found_changes = false;
 
   await mapLimit(
@@ -99,7 +105,10 @@ const build_artwork = async (collected) => {
       const artworkFilename = `fdirs/${personId}/artwork.xml`;
       const portraitsFile = `fdirs/${personId}/portraits.xml`;
       const artworkFileChanged =
-        force_reload || isFileModified(artworkFilename);
+        force_reload ||
+        codeModified ||
+        museumsModified ||
+        isFileModified(artworkFilename);
 
       if (artworkFileChanged) {
         found_changes = true;
@@ -118,7 +127,12 @@ const build_artwork = async (collected) => {
           );
         }
       }
-      if (force_reload || isFileModified(portraitsFile)) {
+      if (
+        force_reload ||
+        codeModified ||
+        museumsModified ||
+        isFileModified(portraitsFile)
+      ) {
         found_changes = true;
         // Fjern eksisterende portraits fra cache (i tilfælde af id er slettet)
         Array.from(collected_artwork.keys())
@@ -172,7 +186,12 @@ const build_artwork = async (collected) => {
         collected.workids.get(personId),
         async (workId) => {
           const workFilename = `fdirs/${personId}/${workId}.xml`;
-          if (force_reload || isFileModified(workFilename)) {
+          if (
+            force_reload ||
+            codeModified ||
+            museumsModified ||
+            isFileModified(workFilename)
+          ) {
             found_changes = true;
             // Fjern eksisterende work pictures fra cache
             Array.from(collected_artwork.keys())
@@ -223,7 +242,12 @@ const build_artwork = async (collected) => {
     }
   );
 
-  if (force_reload || isFileModified('data/artwork.xml')) {
+  if (
+    force_reload ||
+    codeModified ||
+    museumsModified ||
+    isFileModified('data/artwork.xml')
+  ) {
     found_changes = true;
     Array.from(collected_artwork.keys())
       .filter((k) => k.indexOf('kunst/') === 0)
