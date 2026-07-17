@@ -121,6 +121,10 @@ def printFooter()
     puts "</kalliopework>"
 end
 
+def normalizePages(pages)
+  pages.sub(/\A(\d+)-\1\z/, '\1')
+end
+
 def printPoem()
   printHeader()
   if @facsimile and (not @page or @page.strip.length == 0)
@@ -182,12 +186,13 @@ def printPoem()
     puts "    </notes>"
   end
   if @source and @page
+      pages = normalizePages(@page)
       if @facsimile_page
-        puts "    <source pages=\"#{@page}\" facsimile-pages=\"#{@facsimile_page}\" />"
+        puts "    <source pages=\"#{pages}\" facsimile-pages=\"#{@facsimile_page}\" />"
       elsif @page =~ /[ivx]+/i
-        puts "    <source pages=\"#{@page}\" facsimile-pages=\"10\" />"
+        puts "    <source pages=\"#{pages}\" facsimile-pages=\"10\" />"
       else
-        puts "    <source pages=\"#{@page}\"/>"
+        puts "    <source pages=\"#{pages}\"/>"
       end
   end
   if @written or @performed or @event
