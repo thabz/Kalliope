@@ -252,7 +252,7 @@ class ElasticSearchClient {
           {
             multi_match: {
               query,
-              fields: ['poet_search^4'],
+              fields: ['poet.id^8', 'poet_search^4'],
             },
           },
         ],

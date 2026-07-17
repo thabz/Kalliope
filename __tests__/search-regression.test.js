@@ -82,7 +82,7 @@ describe('Elasticsearch search regression', () => {
 
     // Accent-insensitive search should also cover poet names.
     const mallarme = await search({
-      country: 'fr',
+      country: 'dk',
       query: 'mallarme',
     });
     expect(mallarme.hits.total.value).toBeGreaterThan(0);

@@ -125,7 +125,7 @@ describe('Elasticsearch client', () => {
           {
             multi_match: {
               query: 'aarestrup',
-              fields: ['poet_search^4'],
+              fields: ['poet.id^8', 'poet_search^4'],
             },
           },
         ],
