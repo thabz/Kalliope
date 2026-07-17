@@ -161,12 +161,28 @@ const buildTextAliasRedirects = (redirects, texts) => {
 };
 
 const build_bio_json = async (collected) => {
+  const codeModified = isFileModified(
+    'tools/build-static.js',
+    'tools/build-static/artwork.js',
+    'tools/build-static/museums.js',
+    'tools/build-static/timeline.js',
+    'tools/build-static/parsing.js',
+  );
+  const artworkModified = isFileModified(
+    'data/museums.xml',
+    'data/artwork.xml',
+    ...Array.from(collected.poets.keys()).map(
+      (poetId) => `fdirs/${poetId}/artwork.xml`,
+    ),
+  );
   return mapLimit(
     Array.from(collected.poets.entries()),
     async (entry) => {
       const [poetId, poet] = entry;
       // Skip if all of the participating xml files aren't modified
       if (
+        !codeModified &&
+        !artworkModified &&
         !isFileModified(
           'data/events.xml',
           ...collected.workids

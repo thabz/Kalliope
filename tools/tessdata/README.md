@@ -1,4 +1,4 @@
-Stammer fra 
+Stammer fra
 
 https://github.com/tesseract-ocr/tessdata
 

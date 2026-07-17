@@ -1,4 +1,4 @@
-#!/usr/local/bin/ruby 
+#!/usr/local/bin/ruby
 
 require 'json'
 require 'fileutils'
@@ -9,7 +9,7 @@ require 'fileutils'
 
 ["de","dk","fr","gb","it","no","se","us"].each { |cc|
     data = File.read("public/api/poets-#{cc}.json")
-    JSON.parse(data).each { |poet| 
+    JSON.parse(data).each { |poet|
         @primaries[poet["id"]] = poet["portrait"]
         @squares[poet["id"]] = poet["square_portrait"]
     }
@@ -27,8 +27,8 @@ def image_title(poet, image)
     end
 end
 
-Dir.new(@imagesDir).each { |poet| 
-    if (poet != '..' and File.directory?("#{@imagesDir}/#{poet}")) 
+Dir.new(@imagesDir).each { |poet|
+    if (poet != '..' and File.directory?("#{@imagesDir}/#{poet}"))
         images = Dir.new("#{@imagesDir}/#{poet}").find_all { |image|
             image.match?(/^p\d.jpg/) or image.match?(/^p\d-oval.jpg/)
         }
@@ -44,7 +44,7 @@ Dir.new(@imagesDir).each { |poet|
                     square = ""
                     if (@primaries[poet] == image)
                         primary = ' primary="true"'
-                        if @squares[poet] 
+                        if @squares[poet]
                             square = " square-src=\"#{@squares[poet]}\""
                         end
                     end
@@ -61,4 +61,3 @@ Dir.new(@imagesDir).each { |poet|
         end
     end
 }
-

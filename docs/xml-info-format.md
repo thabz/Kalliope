@@ -253,4 +253,3 @@ Bemærk:
 - `fdirs/abildgaard/info.xml`: kunstner (`type="artist"`).
 - `fdirs/folkeviser/info.xml`: samlings-/collection-lignende data.
 - `fdirs/christian7/info.xml`: person med kroningsdata.
-

@@ -1,0 +1,38 @@
+{
+  "name": "kalliope-syntax",
+  "displayName": "Kalliope Syntax",
+  "description": "Syntax highlighting for Kalliope old2kalliope text files.",
+  "version": "0.0.1",
+  "publisher": "thabz",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "main": "./extension.js",
+  "activationEvents": [
+    "onStartupFinished",
+    "onLanguage:plaintext",
+    "onLanguage:kalliope-old"
+  ],
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "kalliope-old",
+        "aliases": [
+          "Kalliope Old Text",
+          "kalliope-old"
+        ],
+        "configuration": "./language-configuration/kalliope-old.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "kalliope-old",
+        "scopeName": "source.kalliope.old",
+        "path": "./syntaxes/kalliope-old.tmLanguage.json"
+      }
+    ]
+  }
+}

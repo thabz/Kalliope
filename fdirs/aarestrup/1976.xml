@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1976" author="aarestrup" status="complete" type="poetry">
 <workhead>
     <title>Samlede Skrifter</title>
@@ -9,12 +8,11 @@
     </notes>
 </workhead>
 <workbody>
-    <subwork ref="1976-1"/>    
-    <subwork ref="1976-2"/>    
-    <subwork ref="1976-3"/>    
-    <subwork ref="1976-4"/>    
-    <subwork ref="1976-5"/>    
-    <subwork ref="1976-6"/>    
+    <subwork ref="1976-1"/>
+    <subwork ref="1976-2"/>
+    <subwork ref="1976-3"/>
+    <subwork ref="1976-4"/>
+    <subwork ref="1976-5"/>
+    <subwork ref="1976-6"/>
 </workbody>
 </kalliopework>
-

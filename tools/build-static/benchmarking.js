@@ -2,6 +2,10 @@ let b_keys = [];
 let b_millis = {};
 let b_memory = {};
 
+const memoryLogEnabled = ['1', 'true', 'yes'].includes(
+  (process.env.KALLIOPE_BUILD_STATIC_MEMORY_LOG || '').toLowerCase()
+);
+
 const megabytes = bytes => Math.round(bytes / 1024 / 1024);
 
 const memorySnapshot = () => {
@@ -25,6 +29,11 @@ const formatMemory = memory =>
 
 // Benchmarking
 const b = async (name, f, args) => {
+  if (!memoryLogEnabled) {
+    console.log(`${name}...`);
+    return await f(args);
+  }
+
   collectGarbage();
   const beforeMemory = memorySnapshot();
   console.log(`${name}... ${formatMemory(beforeMemory)}`);
@@ -80,6 +89,10 @@ const b = async (name, f, args) => {
 };
 
 const print_benchmarking_results = () => {
+  if (!memoryLogEnabled) {
+    return;
+  }
+
   let sum = 0;
   console.log('\nSTATS');
   b_keys.forEach(key => {

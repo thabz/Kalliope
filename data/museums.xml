@@ -3,63 +3,113 @@
   <museum id="hirschsprungske">
     <name>Den Hirschsprungske Samling</name>
     <sort-name>Hirschsprungske Samling, Den</sort-name>
+    <link>https://hirschsprung.dk/</link>
   </museum>
   <museum id="skagen">
     <name>Skagens Museum</name>
+    <link>https://skagensmuseum.dk/</link>
   </museum>
   <museum id="thorvaldsens">
     <name>Thorvaldsens Museum</name>
+    <link>https://www.thorvaldsensmuseum.dk/</link>
     <deep-link>http://thorvaldsensmuseum.dk/samlingerne/vaerk/${invNr}</deep-link>
   </museum>
   <museum id="nivaagaard">
     <name>Nivaagaards Malerisamling</name>
+    <link>https://nivaagaard.dk/</link>
     <deep-link>http://www.nivaagaard.dk/samling-da/${objId}</deep-link>
   </museum>
   <museum id="kb">
     <name>Det kongelige Bibliotek</name>
     <sort-name>Kongelige Bibliotek</sort-name>
+    <link>https://www.kb.dk/</link>
     <deep-link>https://digitalesamlinger.kb.dk/images/billed/2010/okt/billeder/object${objId}/da/</deep-link>
   </museum>
   <museum id="smk">
     <name>Statens Museum for Kunst</name>
+    <link>https://www.smk.dk/</link>
     <deep-link>http://collection.smk.dk/#/detail/${invNr}</deep-link>
   </museum>
   <museum id="gleimhaus">
     <name>Gleimhaus, Halberstadt</name>
+    <link>https://www.gleimhaus.de/</link>
     <deep-link>https://www.museum-digital.de/nat/index.php?t=objekt&amp;oges=${objId}</deep-link>
   </museum>
   <museum id="ribe">
     <name>Ribe Kunstmuseum</name>
+    <link>https://www.ribekunstmuseum.dk/</link>
     <deep-link>https://ribekunstmuseum.dk/samling/${invNr}</deep-link>
   </museum>
   <museum id="smb">
     <name>Staatliche Museen zu Berlin</name>
+    <link>https://www.smb.museum/home/</link>
     <deep-link>http://www.smb-digital.de/eMuseumPlus?objectId=${objId}</deep-link>
   </museum>
   <museum id="md">
+    <link>https://www.museum-digital.de/</link>
     <deep-link>https://www.museum-digital.de/nat/index.php?t=objekt&amp;oges=${objId}</deep-link>
   </museum>
   <museum id="npg">
     <name>National Portrait Gallery, London</name>
+    <link>https://www.npg.org.uk/</link>
     <deep-link>https://www.npg.org.uk/collections/search/portrait/${objId}</deep-link>
   </museum>
   <museum id="natmus.se">
     <name>Nationalmuseum, Stockholm</name>
+    <link>https://www.nationalmuseum.se/</link>
     <deep-link>http://collection.nationalmuseum.se/eMP/eMuseumPlus?service=ExternalInterface&amp;module=collection&amp;objectId=${objId}&amp;viewType=detailView</deep-link>
   </museum>
   <museum id="digitalmuseum.no">
+    <link>https://digitaltmuseum.no/</link>
     <deep-link>https://digitaltmuseum.no/${objId}/maleri</deep-link>
   </museum>
   <museum id="digitalmuseum.se">
+    <link>https://digitaltmuseum.se/</link>
     <deep-link>https://digitaltmuseum.se/${objId}/maleri</deep-link>
   </museum>
   <museum id="fnm">
     <name>Frederiksborg Nationalhistorisk Museum</name>
-    <!-- invNr må være 'a-841' -->
-    <deep-link>https://dnm.dk/kunstvaerk/${invNr}/</deep-link>
+    <link>https://frederiksborg.dk/</link>
   </museum>
   <museum id="glyptoteket">
     <name>Ny Carlsberg Glyptotek</name>
+    <link>https://glyptoteket.dk/</link>
   </museum>
-  <!-- TODO: Alte Nationalgallerie, Berlin -->
+  <museum id="louvre">
+    <name>Musée du Louvre</name>
+    <link>https://www.louvre.fr/</link>
+    <deep-link>https://collections.louvre.fr/ark:/53355/${objId}</deep-link>
+  </museum>
+  <museum id="rijksmuseum">
+    <name>Rijksmuseum</name>
+    <link>https://www.rijksmuseum.nl/nl</link>
+    <deep-link>https://www.rijksmuseum.nl/nl/collectie/object/${objId}</deep-link>
+  </museum>
+  <museum id="mauritshuis">
+    <name>Mauritshuis</name>
+    <link>https://www.mauritshuis.nl/</link>
+    <deep-link>https://www.mauritshuis.nl/nl-nl/verdiep/de-collectie/kunstwerken/${objId}/</deep-link>
+  </museum>
+  <museum id="nationalgallery">
+    <name>The National Gallery, London</name>
+    <sort-name>National Gallery, London</sort-name>
+    <link>https://www.nationalgallery.org.uk/</link>
+    <deep-link>https://www.nationalgallery.org.uk/paintings/${invNr}</deep-link>
+  </museum>
+  <museum id="uffizi">
+    <name>Galleria degli Uffizi</name>
+    <link>https://www.uffizi.it/</link>
+    <deep-link>https://fotoinventari.uffizi.it/it/ricerca-opere?isPostBack=1&amp;numero_opera=${invNr}</deep-link>
+  </museum>
+  <museum id="tate">
+    <name>Tate</name>
+    <link>https://www.tate.org.uk/</link>
+    <deep-link>https://www.tate.org.uk/art/artworks/${invNr}</deep-link>
+  </museum>
+  <museum id="wallace">
+    <name>The Wallace Collection</name>
+    <sort-name>Wallace Collection, The</sort-name>
+    <link>https://www.wallacecollection.org/</link>
+    <deep-link>https://wallacelive.wallacecollection.org/eMP/eMuseumPlus?service=ExternalInterface&amp;module=collection&amp;objectId=${objId}</deep-link>
+  </museum>
 </museums>

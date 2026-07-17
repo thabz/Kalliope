@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="person"/>
+  </start>
+
+  <define name="person">
+    <element name="person">
+      <attribute name="id"><text/></attribute>
+      <attribute name="country"><text/></attribute>
+      <attribute name="lang"><text/></attribute>
+      <attribute name="type"><text/></attribute>
+      <ref name="name"/>
+      <zeroOrMore>
+        <choice>
+          <ref name="period"/>
+          <ref name="literary-periods"/>
+          <ref name="works"/>
+          <ref name="identifiers"/>
+        </choice>
+      </zeroOrMore>
+    </element>
+  </define>
+
+  <define name="name">
+    <element name="name">
+      <zeroOrMore>
+        <choice>
+          <ref name="firstname"/>
+          <ref name="lastname"/>
+          <ref name="fullname"/>
+          <ref name="sortname"/>
+          <ref name="christened"/>
+          <ref name="realname"/>
+          <ref name="pseudonym"/>
+          <ref name="alternative"/>
+          <ref name="alternativ"/>
+          <ref name="latin"/>
+          <ref name="note"/>
+        </choice>
+      </zeroOrMore>
+    </element>
+  </define>
+
+  <define name="period">
+    <element name="period">
+      <ref name="born"/>
+      <optional><ref name="coronation"/></optional>
+      <optional><ref name="dead"/></optional>
+    </element>
+  </define>
+
+  <define name="born">
+    <element name="born">
+      <zeroOrMore>
+        <choice>
+          <ref name="date"/>
+          <ref name="place"/>
+          <ref name="note"/>
+        </choice>
+      </zeroOrMore>
+    </element>
+  </define>
+
+  <define name="dead">
+    <element name="dead">
+      <zeroOrMore>
+        <choice>
+          <ref name="date"/>
+          <ref name="place"/>
+          <ref name="note"/>
+        </choice>
+      </zeroOrMore>
+    </element>
+  </define>
+
+  <define name="coronation">
+    <element name="coronation">
+      <zeroOrMore>
+        <choice>
+          <ref name="date"/>
+          <ref name="place"/>
+          <ref name="note"/>
+        </choice>
+      </zeroOrMore>
+    </element>
+  </define>
+
+  <define name="place">
+    <element name="place">
+      <optional>
+        <attribute name="inon"><text/></attribute>
+      </optional>
+      <text/>
+    </element>
+  </define>
+
+  <define name="identifiers">
+    <element name="identifiers">
+      <optional><ref name="wikidata"/></optional>
+      <optional><ref name="gravsted-dk"/></optional>
+      <optional><ref name="viaf"/></optional>
+      <optional><ref name="lex-dk"/></optional>
+      <optional><ref name="teaterleksikon-lex-dk"/></optional>
+      <optional><ref name="biografisk-leksikon-lex-dk"/></optional>
+      <optional><ref name="litteraturpriser-dk"/></optional>
+      <optional><ref name="runeberg-org"/></optional>
+      <optional><ref name="gutenberg-org"/></optional>
+    </element>
+  </define>
+
+  <define name="firstname"><element name="firstname"><text/></element></define>
+  <define name="lastname"><element name="lastname"><text/></element></define>
+  <define name="fullname"><element name="fullname"><text/></element></define>
+  <define name="sortname"><element name="sortname"><text/></element></define>
+  <define name="christened"><element name="christened"><text/></element></define>
+  <define name="realname"><element name="realname"><text/></element></define>
+  <define name="pseudonym"><element name="pseudonym"><text/></element></define>
+  <define name="alternative"><element name="alternative"><text/></element></define>
+  <define name="alternativ"><element name="alternativ"><text/></element></define>
+  <define name="latin"><element name="latin"><text/></element></define>
+  <define name="note"><element name="note"><text/></element></define>
+  <define name="date"><element name="date"><text/></element></define>
+  <define name="literary-periods"><element name="literary-periods"><text/></element></define>
+  <define name="works"><element name="works"><text/></element></define>
+  <define name="wikidata"><element name="wikidata"><text/></element></define>
+  <define name="gravsted-dk"><element name="gravsted-dk"><text/></element></define>
+  <define name="viaf"><element name="viaf"><text/></element></define>
+  <define name="lex-dk"><element name="lex-dk"><text/></element></define>
+  <define name="teaterleksikon-lex-dk"><element name="teaterleksikon-lex-dk"><text/></element></define>
+  <define name="biografisk-leksikon-lex-dk"><element name="biografisk-leksikon-lex-dk"><text/></element></define>
+  <define name="litteraturpriser-dk"><element name="litteraturpriser-dk"><text/></element></define>
+  <define name="runeberg-org"><element name="runeberg-org"><text/></element></define>
+  <define name="gutenberg-org"><element name="gutenberg-org"><text/></element></define>
+</grammar>

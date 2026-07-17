@@ -2,7 +2,7 @@
 
 require 'date'
 
-def printTemplate() 
+def printTemplate()
     puts "KILDE:"
     puts "DIGTER:"
     puts "FACSIMILE:"
@@ -73,9 +73,9 @@ def printHeader()
     end
     year = "ÅR"
     title = "TITEL"
-    if @source 
+    if @source
         m = @source.match(/<i>(.*?)<\/i>.*(\d\d\d\d)[\s\.]*$/)
-        if m 
+        if m
             title = m[1]
             year = m[2]
         end
@@ -85,7 +85,6 @@ def printHeader()
     end
 
     puts %Q|<?xml version="1.0" encoding="UTF-8"?>|
-    puts %Q|<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">|
     puts %Q|<kalliopework id="#{@workid}" author="#{@poetid}" status="complete" type="poetry">|
     puts %Q|<workhead>|
     puts %Q|    <title>#{title}</title>|
@@ -95,7 +94,7 @@ def printHeader()
       puts "        <note>#{noteline}</note>"
     }
     puts %Q|        <note>Teksten følger #{@source}</note>|
-    if @found_corrections      
+    if @found_corrections
         puts %Q|        <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>|
     end
     if @found_poet_notes
@@ -183,11 +182,11 @@ def printPoem()
     puts "    </notes>"
   end
   if @source and @page
-      if @facsimile_page 
+      if @facsimile_page
         puts "    <source pages=\"#{@page}\" facsimile-pages=\"#{@facsimile_page}\" />"
-      elsif @page =~ /[ivx]+/i 
+      elsif @page =~ /[ivx]+/i
         puts "    <source pages=\"#{@page}\" facsimile-pages=\"10\" />"
-      else  
+      else
         puts "    <source pages=\"#{@page}\"/>"
       end
   end
@@ -224,7 +223,7 @@ def printPoem()
   puts ""
   @poemid = nil
   @firstline = nil
-  @title = nil 
+  @title = nil
   @toctitle = nil
   @linktitle = nil
   @indextitle = nil
@@ -259,7 +258,7 @@ def printStartSektion(title, level)
   puts "</head>"
   puts "<content>"
   puts ""
-end    
+end
 
 def printEndSection(sectionTitle)
   puts "</content>"
@@ -278,7 +277,7 @@ end
 
 File.readlines(ARGV[0]).each do |line|
   next if @done;
-  if line.start_with?('SLUT') and not line.start_with?('SLUTSEKTION') 
+  if line.start_with?('SLUT') and not line.start_with?('SLUTSEKTION')
     @done = true
     if @state != 'NONE'
         printPoem();
@@ -339,7 +338,7 @@ File.readlines(ARGV[0]).each do |line|
   if line =~ /{[^}]+\s*$/
       STDERR.puts "ADVARSEL: Linjen »#{line}« mangler afsluttende }"
   end
-  if @state == 'WORKHEAD'  
+  if @state == 'WORKHEAD'
     if line =~ /^KILDE:/
       @source = line[6..-1].strip
     elsif line =~ /^FACSIMILE:/
@@ -363,15 +362,15 @@ File.readlines(ARGV[0]).each do |line|
       @poetid = line[7..-1].strip
     elsif line =~ /^DATO:/
       @date = line[5..-1].strip
-    else 
+    else
       @state = 'NONE'
     end
   end
   if @state == 'NONE' and (line =~ /^T:/ or line =~ /^F:/ or line =~ /^ID:/ or line =~ /^DIGTER:/)
     @state = 'INHEAD'
   end
-  if @state == 'INBODY' and (line.start_with?("T:") or 
-                             line.start_with?("F:") or 
+  if @state == 'INBODY' and (line.start_with?("T:") or
+                             line.start_with?("F:") or
                              line.start_with?("ID:") or
                              line.start_with?("DIGTER:"))
     printPoem()
@@ -397,7 +396,7 @@ File.readlines(ARGV[0]).each do |line|
   if @state == 'INHEAD'
     if line.start_with?("T:")
       @title = line[2..-1].strip
-      if @title =~ /<num>.*?<\/num>$/ 
+      if @title =~ /<num>.*?<\/num>$/
         abort "FEJL: Digtet »#{@title}« mangler titel i TITEL:"
       end
     elsif line.start_with?("F:")
@@ -418,7 +417,7 @@ File.readlines(ARGV[0]).each do |line|
       end
     elsif line.start_with?("TOCTITEL:")
       @toctitle = line[9..-1].strip
-      if @toctitle =~ /<num>.*?<\/num>$/ 
+      if @toctitle =~ /<num>.*?<\/num>$/
         abort "FEJL: Digtet »#{@title}« mangler titel i TOCTITEL:"
       end
     elsif line.start_with?("INDEXTITEL:")
@@ -459,7 +458,7 @@ File.readlines(ARGV[0]).each do |line|
           @body.push("</#{@type}>")
           @type = line[5..-1].strip
           @body.push("<#{@type}>")
-      else 
+      else
           @body.push(line)
       end
       if line =~ /<note>.*\] .*<\/note>/

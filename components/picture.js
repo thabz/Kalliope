@@ -27,7 +27,12 @@ const FigCaption = (props) => {
 
   let remoteLink = null;
   if (picture.remoteUrl != null) {
-    remoteLink = <a href={picture.remoteUrl}>⌘</a>;
+    remoteLink = (
+      <>
+        {' '}
+        <a href={picture.remoteUrl}>⌘</a>
+      </>
+    );
   }
 
   let museumRendered = null;
