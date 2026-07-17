@@ -3,7 +3,7 @@
 require 'tmpdir'
 
 def handle(pdffilename, lang)
-    Dir.mktmpdir("foo") { |workdir| 
+    Dir.mktmpdir("foo") { |workdir|
         imageprefix = "#{workdir}/page"
         `pdftoppm -jpeg -f 20 -l 23 -r 300  '#{pdffilename}' '#{imageprefix}'`
         Dir["#{workdir}/*.jpg"].each { |imagefile|
@@ -31,5 +31,3 @@ if ARGV.length > 0
 else
     puts "./tools/ocr.rb pdf-filename"
 end
-
-

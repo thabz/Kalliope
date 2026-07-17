@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1931" author="luetken" status="complete" type="poetry">
 <workhead>
    <title>Sjælens Have</title>
@@ -1431,8 +1430,11 @@ og Tak for Drømmen — Dansen din — og alt!
 <text id="luetken2018011837">
 <head>
     <title>Hyrdernes Tilbedelse</title>
-    <subtitle>Tilegnet Ribéra</subtitle>
-    <!-- TODO: Tilegnet maleren José de Ribera? https://commons.wikimedia.org/wiki/File:José<i>de</i>Ribera<i>-</i>Adoration<i>of</i>the<i>Shepherds</i>-_Louvre.jpg -->
+    <subtitle>Tilegnet Ribèra</subtitle>
+    <!-- https://commons.wikimedia.org/wiki/File:José_de_Ribera_-_Adoration_of_the_Shepherds_-_Louvre.jpg -->
+    <notes>
+        <note>Den spanske maler Jusepe de Ribera (1591–1652), som blandt andet malede <i>Hyrdernes tilbedelse</i> (1650, Louvre). Det er uvist, om Lütken sigter til netop dette maleri.</note>
+    </notes>
     <firstline>En blaalig Skumring brød den klare Dag</firstline>
     <source pages="51-52"/>
     <quality>korrektur1,kilde,side</quality>
@@ -1785,4 +1787,3 @@ hvor Jorden grønnes under døde Straa.
 
 </workbody>
 </kalliopework>
-

@@ -13,7 +13,7 @@
 <!-- vers -->
 <xsl:template match="l">
     <xsl:apply-templates/>
-    <xsl:text>&#xa;</xsl:text> 
+    <xsl:text>&#xa;</xsl:text>
 </xsl:template>
 
 <xsl:template match="hi[contains(@rend, 'italics')]">
@@ -23,12 +23,12 @@
 <!-- paragraph-->
 <xsl:template match="p">
     <xsl:apply-templates/>
-    <xsl:text>&#xa;</xsl:text> 
+    <xsl:text>&#xa;</xsl:text>
 </xsl:template>
 
 <xsl:template match="sp">
     <xsl:apply-templates/>
-    <xsl:text>&#xa;</xsl:text> 
+    <xsl:text>&#xa;</xsl:text>
 </xsl:template>
 
 <xsl:template match="speaker">
@@ -36,13 +36,13 @@
 </xsl:template>
 
 <xsl:template match="stage">
-    <center><nonum><small><xsl:apply-templates/></small></nonum></center><xsl:text>&#xa;</xsl:text> 
+    <center><nonum><small><xsl:apply-templates/></small></nonum></center><xsl:text>&#xa;</xsl:text>
 </xsl:template>
 
 <!-- linegroup / strofe -->
 <xsl:template match="lg">
    <xsl:apply-templates select="l"/>
-    <xsl:text>&#xa;</xsl:text> 
+    <xsl:text>&#xa;</xsl:text>
 </xsl:template>
 
 <xsl:template match="lg[last()]">
@@ -51,7 +51,7 @@
 
 <!-- Digte -->
 <xsl:template match="//div">
-  <!-- digt div har et decls-attribute. Det har section div'er ikke -->    
+  <!-- digt div har et decls-attribute. Det har section div'er ikke -->
   <xsl:param name="number"/>
   <poem id="XXX{$number}{position()}"><xsl:text>&#xa;</xsl:text>
     <head><xsl:text>&#xa;</xsl:text>
@@ -93,7 +93,7 @@
 </xsl:template>
 
 <xsl:template match="//body">
-  <workbody>      
+  <workbody>
       <xsl:apply-templates select="//body/div">
         <xsl:with-param name="number" select="position()"/>
       </xsl:apply-templates>

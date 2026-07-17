@@ -22,7 +22,7 @@ end
 
 folder = "fdirs/#{poetId}"
 
-if (!File.directory?(folder)) 
+if (!File.directory?(folder))
     abort("Mappen #{folder} findes ikke.")
 end
 
@@ -34,13 +34,12 @@ if m = workId.match(/\d\d\d\d/)
     title = STDIN.gets.strip
 elsif workId == 'andre'
     title = 'Andre digte'
-else 
+else
     abort("Værk-id skal indeholde fire cifre eller være 'andre'")
 end
 yearLine = year.nil? ? "" : "    <year>#{year}</year>\n"
 
 lines = %{<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="#{workId}" author="#{poetId}" status="incomplete" type="poetry">
 <workhead>
     <title>#{title}</title>

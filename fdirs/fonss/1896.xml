@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1896" author="fonss" status="complete" type="poetry">
 <workhead>
     <title>Hinsides Bjærgene</title>
@@ -878,7 +877,10 @@ bliver Du maaske selv engang i Tiden.
     <firstline>Har vi vel mere Vidnesbyrd behov</firstline>
     <source pages="37"/>
     <pictures>
-        <picture src="fonss2019101510-p1.jpg">Leonardo da Vinci: <i>Den sidste nadver</i>, 1895-98, tempera, 460 × 880 cm. Santa Maria delle Grazie, Milano.</picture>
+        <picture src="fonss2019101510-p1.jpg" wikidata="Q128910">
+            Leonardo da Vinci: <i>Den sidste nadver</i>, 1895-98, tempera, 460 × 880 cm. Santa Maria delle Grazie, Milano.
+            <!-- metadata checked: 2026-07-16 -->
+        </picture>
     </pictures>
     <keywords>sonnet</keywords>
     <quality>korrektur1,kilde,side</quality>

@@ -7,8 +7,8 @@
   </head>
   <body>
     <poem pos="1">x</poem>
-    <prose pos="2">&AElig;ble</prose>
-    <prose pos="2a">&AElig;ble &amp;c. &lt;i&gt;ikke kursiv&lt;/i&gt;</prose>
+    <prose pos="2">&#198;ble</prose>
+    <prose pos="2a">&#198;ble &amp;c. &lt;i&gt;ikke kursiv&lt;/i&gt;</prose>
     <prose pos="2b">https://example.test/?a=1&amp;b=2</prose>
     <poem pos="3">x</poem>
     <section>
@@ -16,11 +16,11 @@
       <prose pos="5"></prose>
       <section>
         <poem pos="6">x</poem>
-        <prose pos="7"></prose>      
-        <poem pos="8">x</poem>      
-      </section>      
-      <poem pos="9">x</poem>      
-      <prose pos="10"></prose>      
+        <prose pos="7"></prose>
+        <poem pos="8">x</poem>
+      </section>
+      <poem pos="9">x</poem>
+      <prose pos="10"></prose>
     </section>
   </body>
 </work>

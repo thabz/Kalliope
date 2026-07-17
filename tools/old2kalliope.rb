@@ -2,7 +2,7 @@
 
 require 'date'
 
-def printTemplate() 
+def printTemplate()
     puts "KILDE:"
     puts "DIGTER:"
     puts "FACSIMILE:"
@@ -65,6 +65,7 @@ end
 @credits = nil
 @facsimile_page = nil
 @lang = nil
+@text_author = nil
 
 def printHeader()
     if @header_printed
@@ -72,9 +73,9 @@ def printHeader()
     end
     year = "ÅR"
     title = "TITEL"
-    if @source 
+    if @source
         m = @source.match(/<i>(.*?)<\/i>.*(\d\d\d\d)[\s\.]*$/)
-        if m 
+        if m
             title = m[1]
             year = m[2]
         end
@@ -84,7 +85,6 @@ def printHeader()
     end
 
     puts %Q|<?xml version="1.0" encoding="UTF-8"?>|
-    puts %Q|<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">|
     puts %Q|<kalliopework id="#{@workid}" author="#{@poetid}" status="complete" type="poetry">|
     puts %Q|<workhead>|
     puts %Q|    <title>#{title}</title>|
@@ -94,7 +94,7 @@ def printHeader()
       puts "        <note>#{noteline}</note>"
     }
     puts %Q|        <note>Teksten følger #{@source}</note>|
-    if @found_corrections      
+    if @found_corrections
         puts %Q|        <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>|
     end
     if @found_poet_notes
@@ -140,8 +140,12 @@ def printPoem()
   if @lang
       lang = " lang=\"#{@lang}\""
   end
+  author = ''
+  if @text_author
+      author = " author=\"#{@text_author}\""
+  end
 
-  puts "<text id=\"#{poemid}\"#{variant}#{lang}>"
+  puts "<text id=\"#{poemid}\"#{author}#{variant}#{lang}>"
   puts "<head>"
   if @title
       puts "    <title>#{@title}</title>"
@@ -178,11 +182,11 @@ def printPoem()
     puts "    </notes>"
   end
   if @source and @page
-      if @facsimile_page 
+      if @facsimile_page
         puts "    <source pages=\"#{@page}\" facsimile-pages=\"#{@facsimile_page}\" />"
-      elsif @page =~ /[ivx]+/i 
+      elsif @page =~ /[ivx]+/i
         puts "    <source pages=\"#{@page}\" facsimile-pages=\"10\" />"
-      else  
+      else
         puts "    <source pages=\"#{@page}\"/>"
       end
   end
@@ -219,7 +223,7 @@ def printPoem()
   puts ""
   @poemid = nil
   @firstline = nil
-  @title = nil 
+  @title = nil
   @toctitle = nil
   @linktitle = nil
   @indextitle = nil
@@ -235,6 +239,7 @@ def printPoem()
   @type = 'poetry'
   @variant = nil
   @lang = nil
+  @text_author = nil
   @todos = []
   @credits = nil
   @facsimile_page = nil
@@ -253,7 +258,7 @@ def printStartSektion(title, level)
   puts "</head>"
   puts "<content>"
   puts ""
-end    
+end
 
 def printEndSection(sectionTitle)
   puts "</content>"
@@ -272,7 +277,7 @@ end
 
 File.readlines(ARGV[0]).each do |line|
   next if @done;
-  if line.start_with?('SLUT') and not line.start_with?('SLUTSEKTION') 
+  if line.start_with?('SLUT') and not line.start_with?('SLUTSEKTION')
     @done = true
     if @state != 'NONE'
         printPoem();
@@ -333,7 +338,7 @@ File.readlines(ARGV[0]).each do |line|
   if line =~ /{[^}]+\s*$/
       STDERR.puts "ADVARSEL: Linjen »#{line}« mangler afsluttende }"
   end
-  if @state == 'WORKHEAD'  
+  if @state == 'WORKHEAD'
     if line =~ /^KILDE:/
       @source = line[6..-1].strip
     elsif line =~ /^FACSIMILE:/
@@ -357,16 +362,17 @@ File.readlines(ARGV[0]).each do |line|
       @poetid = line[7..-1].strip
     elsif line =~ /^DATO:/
       @date = line[5..-1].strip
-    else 
+    else
       @state = 'NONE'
     end
   end
-  if @state == 'NONE' and (line =~ /^T:/ or line =~ /^F:/ or line =~ /^ID:/)
+  if @state == 'NONE' and (line =~ /^T:/ or line =~ /^F:/ or line =~ /^ID:/ or line =~ /^DIGTER:/)
     @state = 'INHEAD'
   end
-  if @state == 'INBODY' and (line.start_with?("T:") or 
-                             line.start_with?("F:") or 
-                             line.start_with?("ID:"))
+  if @state == 'INBODY' and (line.start_with?("T:") or
+                             line.start_with?("F:") or
+                             line.start_with?("ID:") or
+                             line.start_with?("DIGTER:"))
     printPoem()
     @state = 'INHEAD'
   end
@@ -390,7 +396,7 @@ File.readlines(ARGV[0]).each do |line|
   if @state == 'INHEAD'
     if line.start_with?("T:")
       @title = line[2..-1].strip
-      if @title =~ /<num>.*?<\/num>$/ 
+      if @title =~ /<num>.*?<\/num>$/
         abort "FEJL: Digtet »#{@title}« mangler titel i TITEL:"
       end
     elsif line.start_with?("F:")
@@ -402,6 +408,8 @@ File.readlines(ARGV[0]).each do |line|
       @subtitles.push(line[2..-1].strip)
     elsif line.start_with?("ID:")
       @poemid = line[3..-1].strip
+    elsif line.start_with?("DIGTER:")
+      @text_author = line[7..-1].strip
     elsif line.start_with?("N:")
       @keywords = line[2..-1].strip
       if @keywords =~ / /
@@ -409,7 +417,7 @@ File.readlines(ARGV[0]).each do |line|
       end
     elsif line.start_with?("TOCTITEL:")
       @toctitle = line[9..-1].strip
-      if @toctitle =~ /<num>.*?<\/num>$/ 
+      if @toctitle =~ /<num>.*?<\/num>$/
         abort "FEJL: Digtet »#{@title}« mangler titel i TOCTITEL:"
       end
     elsif line.start_with?("INDEXTITEL:")
@@ -450,7 +458,7 @@ File.readlines(ARGV[0]).each do |line|
           @body.push("</#{@type}>")
           @type = line[5..-1].strip
           @body.push("<#{@type}>")
-      else 
+      else
           @body.push(line)
       end
       if line =~ /<note>.*\] .*<\/note>/
@@ -467,4 +475,3 @@ if @state != 'NONE'
 end
 
 printFooter()
-

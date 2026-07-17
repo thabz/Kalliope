@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1900" author="michaelis" status="complete" type="poetry">
 <workhead>
    <title>Livets Fest</title>
@@ -164,7 +163,7 @@ staar han høj, staar han stejl
 </head>
 <body>
 <poetry>
-I.    
+I.
 
 Som et Frø, der sukker
 sovende i Mulde,
@@ -1969,7 +1968,7 @@ tyst i Natten sine Spor.
 <section>
     <head>
         <title>Rembrandt</title>
-    </head>    
+    </head>
     <content>
 
 <text id="michaelis2017091538">
@@ -1980,7 +1979,7 @@ tyst i Natten sine Spor.
     <firstline>Porten gaar op. Under klingende Spil</firstline>
     <source pages="89-90"/>
     <pictures>
-        <picture src="michaelis2017091538-p1.jpg">Rembrandt: <i>Nattevagten</i>, 1712, olie på lærred, 363×437cm. Rijksmuseum, Amsterdam.</picture>
+        <picture src="michaelis2017091538-p1.jpg" wikidata="Q219831" museum="rijksmuseum" objid="De-Nachtwacht--3137deb45cd7765f9a76084a16c99544" invnr="SK-C-5">Rembrandt: <i>Nattevagten</i>, 1712, olie på lærred, 363×437cm.</picture>
     </pictures>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2029,7 +2028,7 @@ Hjerterne vaagne bag Skærf og bag Panser.
     <firstline>Tæt skal jeg Tonerne slynge</firstline>
     <source pages="91-92"/>
     <pictures>
-        <picture src="michaelis2017091540-p1.jpg">Rembrandt: <i>Saul and David</i>, ca. 1651-1654 og ca. 1655-1658, olie på lærred, 130 × 165,5 cm. Mauritshuis, Den Haag.</picture>
+        <picture src="michaelis2017091540-p1.jpg" wikidata="Q9074913" museum="mauritshuis" objid="saul-en-david-621" invnr="621">Rembrandt: <i>Saul and David</i>, ca. 1651-1654 og ca. 1655-1658, olie på lærred, 130 × 165,5 cm.</picture>
     </pictures>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2085,7 +2084,10 @@ i Øjets bundløse Sø.
     <firstline>Den sidste tunge Strid er stridt</firstline>
     <source pages="93-94"/>
     <pictures>
-        <picture src="michaelis2017091542-p1.jpg">Rembrandt: <i>The anatomy lesson of Dr. Joan Deyman</i>, ca. 1666, olie på lærred, 100 × 134 cm. Rijksmuseum, Amsterdam.</picture>
+        <picture src="michaelis2017091542-p1.jpg" wikidata="Q2252345" museum="rijksmuseum">
+          Rembrandt: <i>The anatomy lesson of Dr. Joan Deyman</i>, ca. 1666, olie på lærred, 100 × 134 cm. Rijksmuseum, Amsterdam.
+          <!-- metadata checked: 2026-07-16 -->
+        </picture>
     </pictures>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2141,7 +2143,7 @@ jeg læser alt, hvad du har lidt.
     <firstline>Der aander fra dit Ansigt</firstline>
     <source pages="95-96"/>
     <pictures>
-        <picture src="michaelis2017091544-p1.jpg">Rembrandt: <i>Portrait of Hendrikje Stoffels</i>, c.1654-6, oile på lærred, 101,9 × 83,7 cm. The National Gallery, London.</picture>
+        <picture src="michaelis2017091544-p1.jpg" wikidata="Q21500197" museum="nationalgallery" invnr="NG6432">Rembrandt: <i>Portrait of Hendrikje Stoffels</i>, c.1654-6, olie på lærred, 101,9 × 83,7 cm.</picture>
     </pictures>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2192,7 +2194,7 @@ gaar Solen aldrig ned.
 <section>
     <head>
         <title>Mindedigte</title>
-    </head>    
+    </head>
     <content>
 
 <text id="michaelis2017091547">

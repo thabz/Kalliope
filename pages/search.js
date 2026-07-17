@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Router from 'next/router';
 import { useContext, useEffect, useState } from 'react';
 import * as Client from '../common/client.js';
 import CommonData from '../common/commondata.js';
@@ -22,6 +23,36 @@ import ErrorPage from './error.js';
 
 export const totalHitsValue = (hits) => hits.total.value;
 
+export const singleMatchingTextIdResultURL = (lang, query, result) => {
+  if (
+    query == null ||
+    result == null ||
+    result.error != null ||
+    result.hits == null
+  ) {
+    return null;
+  }
+
+  const normalizedQuery = query.trim();
+  const hits = result.hits.hits || [];
+  if (totalHitsValue(result.hits) !== 1 || hits.length !== 1) {
+    return null;
+  }
+
+  const hit = hits[0];
+  const text = hit._source && hit._source.text;
+  if (
+    hit._source == null ||
+    hit._source.result_type !== 'text' ||
+    text == null ||
+    text.id !== normalizedQuery
+  ) {
+    return null;
+  }
+
+  return Links.textURL(lang, text.id);
+};
+
 const ResultTypeLabel = ({ children }) => (
   <span className="result-type">
     {children}
@@ -32,6 +63,33 @@ const ResultTypeLabel = ({ children }) => (
     `}</style>
   </span>
 );
+
+const renderHighlightFragment = (line, keyPrefix = '') => {
+  return line
+    .replace(/\s+/g, ' ')
+    .replace(/^[\s,.!:;?\d"“„]+/, '')
+    .replace(/[\s,.!:;?\d"“„]+$/, '')
+    .split(/(<\/?em>)/)
+    .reduce(
+      (acc, part) => {
+        if (part === '<em>') {
+          acc.highlight = true;
+        } else if (part === '</em>') {
+          acc.highlight = false;
+        } else if (part.length > 0) {
+          acc.parts.push(
+            acc.highlight ? (
+              <em key={`${keyPrefix}em-${acc.parts.length}`}>{part}</em>
+            ) : (
+              part
+            )
+          );
+        }
+        return acc;
+      },
+      { parts: [], highlight: false }
+    ).parts;
+};
 
 const RenderedHits = ({ hits }) => {
   const lang = useContext(LangContext);
@@ -63,11 +121,15 @@ const RenderedHits = ({ hits }) => {
         );
       } else if (hit._source.result_type === 'work') {
         const workURL = Links.workURL(lang, poet.id, work.id);
+        const highlightedWorkTitle =
+          highlight && highlight['work.title']
+            ? renderHighlightFragment(highlight['work.title'][0], hit._id)
+            : null;
         item = (
           <div>
             <div className="title">
               <Link href={workURL}>
-                <WorkName work={work} lang={lang} />
+                {highlightedWorkTitle || <WorkName work={work} lang={lang} />}
               </Link>
             </div>
             <div className="poet-and-work">
@@ -84,25 +146,27 @@ const RenderedHits = ({ hits }) => {
         );
       } else {
         const textURL = Links.textURL(lang, text.id);
+        const highlightedTextTitle =
+          highlight && highlight['text.title']
+            ? renderHighlightFragment(highlight['text.title'][0], hit._id)
+            : null;
         let renderedHighlight = null;
         if (highlight && highlight['text.content_html']) {
           // The query is highlighted in each line using <em> by Elasticsearch
           const lines = highlight['text.content_html'];
           renderedHighlight = lines.map((line, i) => {
-            let parts = line
-              .replace(/\s+/g, ' ')
-              .replace(/^[\s,.!:;?\d"“„]+/, '')
-              .replace(/[\s,.!:;?\d"“„]+$/, '')
-              .split(/<\/?em>/);
-            parts[1] = <em key={i}>{parts[1]}</em>;
-            return <div key={i}>{parts}</div>;
+            return (
+              <div key={i}>
+                {renderHighlightFragment(line, `${hit._id}-${i}`)}
+              </div>
+            );
           });
         }
         item = (
           <div>
             <div className="title">
               <Link href={textURL}>
-                <TextName text={text} />
+                {highlightedTextTitle || <TextName text={text} />}
               </Link>
             </div>
             <div className="hightlights">{renderedHighlight}</div>
@@ -145,6 +209,7 @@ const SearchPage = (props) => {
   const [isFetchingMore, setFetchingMore] = useState(false);
   const [totalHits, setTotalHits] = useState(0);
   const [resultPage, setResultPage] = useState(0);
+  const [redirectURL, setRedirectURL] = useState(null);
 
   const fetchMoreItems = async () => {
     if (isFetchingMore || hits.length >= totalHits) {
@@ -214,16 +279,26 @@ const SearchPage = (props) => {
       if (result.error != null) {
         setError(result.error);
       } else {
+        const textURL = singleMatchingTextIdResultURL(lang, query, result);
+        if (textURL != null) {
+          setRedirectURL(textURL);
+          Router.replace(textURL);
+          return;
+        }
         setResultPage(0);
         setHits(result.hits.hits);
         setTotalHits(totalHitsValue(result.hits));
       }
     };
     asyncLoad();
-  }, [query, poet]);
+  }, [country, lang, poet, query]);
 
   if (error != null) {
     return <ErrorPage error={error} lang={lang} message="Søgning fejlede" />;
+  }
+
+  if (redirectURL != null) {
+    return null;
   }
 
   let resultaterOrd = null;

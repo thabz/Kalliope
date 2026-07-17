@@ -16,7 +16,7 @@ end
 folder = "fdirs/#{poetid}"
 workfilename = "#{folder}/#{workid}.xml"
 
-if (!File.directory?(folder)) 
+if (!File.directory?(folder))
     abort("Mappen #{folder} findes ikke.")
 end
 
@@ -38,7 +38,7 @@ while (!done)
     poemId = "#{poetid}#{date}%02d" % [num]
     if not allcontents.include? poemId
         done = true
-    else 
+    else
         num += 1
     end
 end
@@ -69,4 +69,3 @@ contents.gsub! "</workbody>", textxml
 File.open(workfilename, "w") { |file|
     file.write(contents)
 }
-

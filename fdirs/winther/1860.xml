@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1860" author="winther" status="complete" type="poetry">
 <workhead>
     <title>Samlede Digtninger</title>
@@ -10,13 +9,12 @@
     </notes>
 </workhead>
 <workbody>
-    <subwork ref="1860-1"/>    
-    <subwork ref="1860-2"/>    
-    <subwork ref="1860-3"/>    
-    <subwork ref="1860-4"/>    
-    <subwork ref="1860-5"/>    
-    <subwork ref="1860-6"/>    
-    <subwork ref="1860-7"/>    
+    <subwork ref="1860-1"/>
+    <subwork ref="1860-2"/>
+    <subwork ref="1860-3"/>
+    <subwork ref="1860-4"/>
+    <subwork ref="1860-5"/>
+    <subwork ref="1860-6"/>
+    <subwork ref="1860-7"/>
 </workbody>
 </kalliopework>
-
