@@ -7,6 +7,7 @@ import { worksCrumbs } from '../components/breadcrumbs.js';
 import * as Links from '../components/links.js';
 import { poetMenu } from '../components/menu.js';
 import Page from '../components/page.js';
+import PageLead from '../components/pagelead.js';
 import PicturesGrid from '../components/picturesgrid.js';
 import { poetNameString } from '../components/poetname-helpers.js';
 import PoetName from '../components/poetname.js';
@@ -78,6 +79,13 @@ const WorksPage = (props) => {
       menuItems={poetMenu(poet)}
       poet={poet}
       selectedMenuItem="works">
+      <PageLead>
+        {_(
+          'En kronologisk oversigt over værker af {poetName} på Kalliope. Vælg et værk for at se dets indhold og læse de tekster, der findes i samlingen.',
+          lang,
+          { poetName: poetNameString(poet, false, false, lang) }
+        )}
+      </PageLead>
       <div className="two-columns">
         {stack}
         <style jsx>{`

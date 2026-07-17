@@ -8,6 +8,7 @@ import { poetCrumbsWithTitle } from '../components/breadcrumbs.js';
 import * as Links from '../components/links.js';
 import { poetMenu } from '../components/menu.js';
 import Page from '../components/page.js';
+import PageLead from '../components/pagelead.js';
 import { poetNameString } from '../components/poetname-helpers.js';
 import PoetName from '../components/poetname.js';
 import { TextInline } from '../components/textcontent.js';
@@ -237,6 +238,42 @@ const TranslationsSection = (props) => {
   return <Section title={title} items={items} />;
 };
 
+const MentionsLead = (props) => {
+  const { hasReferences, hasTranslations, lang, poet } = props;
+  const poetName = poetNameString(poet, false, false, lang);
+  if (hasReferences && hasTranslations) {
+    return (
+      <PageLead>
+        {_(
+          'Her finder du tekster af andre forfattere, som omtaler eller henvender sig til {poetName}, samt oversættelser af digterens tekster til andre sprog.',
+          lang,
+          { poetName }
+        )}
+      </PageLead>
+    );
+  }
+  if (hasTranslations) {
+    return (
+      <PageLead>
+        {_(
+          'Her finder du oversættelser af tekster af {poetName} til andre sprog.',
+          lang,
+          { poetName }
+        )}
+      </PageLead>
+    );
+  }
+  return (
+    <PageLead>
+      {_(
+        'Her finder du tekster af andre forfattere, som omtaler eller henvender sig til {poetName}.',
+        lang,
+        { poetName }
+      )}
+    </PageLead>
+  );
+};
+
 const MentionsPage = (props) => {
   const { lang, poet, mentions, translations, primary, secondary, error } =
     props;
@@ -272,6 +309,9 @@ const MentionsPage = (props) => {
       />
     );
   }
+  const hasReferences =
+    mentions.length > 0 || primary.length > 0 || secondary.length > 0;
+  const hasTranslations = translations.length > 0;
 
   return (
     <Page
@@ -287,6 +327,12 @@ const MentionsPage = (props) => {
       menuItems={poetMenu(poet)}
       poet={poet}
       selectedMenuItem="mentions">
+      <MentionsLead
+        hasReferences={hasReferences}
+        hasTranslations={hasTranslations}
+        lang={lang}
+        poet={poet}
+      />
       <div style={{ paddingTop: '3px' }}>{sections}</div>
     </Page>
   );
