@@ -132,8 +132,14 @@ const htmlToXml = (html, collected, isPoetry) => {
       .replace(/^\[(\d+\.?)\]\s*$/gm, '<versenum>[$1]</versenum>');
   }
   html = html
-    .replace(/\n/g, '::NEWLINE-PLACEHOLDER::') // Regexp nedenunder spænder ikke over flere linjer... underligt.
-    .replace(/<!--.*?-->/g, '')
+    .replace(/\n/g, '::NEWLINE-PLACEHOLDER::')
+    .replace(
+      /(^|::NEWLINE-PLACEHOLDER::)[ \t]*<!--.*?-->[ \t]*(::NEWLINE-PLACEHOLDER::|$)/g,
+      (match, before) => before
+    )
+    .replace(/[ \t]*<!--.*?-->[ \t]*/g, match => {
+      return /^[ \t]+<!--.*?-->[ \t]+$/.test(match) ? ' ' : '';
+    })
     .replace(/::NEWLINE-PLACEHOLDER::/g, '\n');
   let decoded = decodeXmlCharacterReferences(
     replaceDashes(
