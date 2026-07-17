@@ -174,6 +174,7 @@ describe('Elasticsearch client', () => {
         multi_match: {
           query: 'aarestrup',
           fields: [
+            'text.id^5',
             'text.title^10',
             'text.subtitles^2',
             'text.content_html',
@@ -239,6 +240,7 @@ describe('Elasticsearch client', () => {
       },
     });
     expect(textQuery.must[0].multi_match.fields).toEqual([
+      'text.id^5',
       'text.title^10',
       'text.subtitles^2',
       'text.content_html',

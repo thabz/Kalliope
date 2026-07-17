@@ -302,6 +302,7 @@ class ElasticSearchClient {
             multi_match: {
               query,
               fields: [
+                'text.id^5',
                 'text.title^10',
                 'text.subtitles^2',
                 'text.content_html',
