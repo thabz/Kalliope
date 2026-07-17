@@ -343,7 +343,7 @@ class ElasticSearchClient {
         term: { 'poet.country': country },
       });
     } else {
-      body.query.bool.filter.push({
+      body.query.bool.must.push({
         bool: {
           should: [
             poetSearchQuery,

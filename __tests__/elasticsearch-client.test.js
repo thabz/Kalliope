@@ -103,11 +103,11 @@ describe('Elasticsearch client', () => {
     await elasticSearchClient.search('kalliope', 'text', 'dk', '', 'aarestrup');
 
     const body = JSON.parse(global.fetch.mock.calls[0][1].body);
-    const resultTypeQuery = body.query.bool.filter[0].bool;
+    const resultTypeQuery = body.query.bool.must[0].bool;
     const workQuery = resultTypeQuery.should[1].bool.must[0].bool;
     const textQuery = resultTypeQuery.should[2].bool.must[0].bool;
 
-    expect(body.query.bool.must).toEqual([]);
+    expect(body.query.bool.filter).toEqual([]);
     expect(body.highlight.fields).toEqual({
       'work.title': {},
       'text.title': {},
