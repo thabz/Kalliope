@@ -21,7 +21,7 @@ npm install
 Start Elasticsearch på `localhost:9200`:
 
 ```shell
-docker compose -f docker-compose.yml -f docker-compose.dev.yml up -d elasticsearch
+docker compose up -d elasticsearch
 ```
 
 Byg de statiske data og start appen:
