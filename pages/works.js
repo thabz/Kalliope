@@ -15,6 +15,81 @@ import Stack from '../components/stack.js';
 import WorksList from '../components/workslist.js';
 import ErrorPage from './error.js';
 
+const romanNumerals = {
+  16: 'XVI',
+  17: 'XVII',
+  18: 'XVIII',
+  19: 'XIX',
+};
+
+const ordinalNumber = (number) => {
+  const remainder10 = number % 10;
+  const remainder100 = number % 100;
+  if (remainder10 === 1 && remainder100 !== 11) {
+    return `${number}st`;
+  }
+  if (remainder10 === 2 && remainder100 !== 12) {
+    return `${number}nd`;
+  }
+  if (remainder10 === 3 && remainder100 !== 13) {
+    return `${number}rd`;
+  }
+  return `${number}th`;
+};
+
+const periodFromAnonymousId = (poet, lang) => {
+  const match = poet.id.match(/^anonym(\d{4})/);
+  if (match == null) {
+    return null;
+  }
+  const year = parseInt(match[1]);
+  const century = year / 100 + 1;
+  if (lang === 'en') {
+    return `${ordinalNumber(century)} century`;
+  }
+  if (lang === 'de') {
+    return `${century}. Jahrhundert`;
+  }
+  if (lang === 'fr') {
+    return `${romanNumerals[century] || century}e siècle`;
+  }
+  return `${year}-tallet`;
+};
+
+const worksLead = (poet, lang) => {
+  if (poet.id === 'bibel') {
+    return _(
+      'En oversigt over Bibelens bøger på Kalliope. Vælg en bog for at se dens indhold og læse de tekster, der findes i samlingen.',
+      lang
+    );
+  }
+  if (poet.id.indexOf('folkeviser') === 0) {
+    return _(
+      'En oversigt over folkeviser på Kalliope. Vælg et værk for at se dets indhold og læse de tekster, der findes i samlingen.',
+      lang
+    );
+  }
+  const anonymousPeriod = periodFromAnonymousId(poet, lang);
+  if (anonymousPeriod != null) {
+    return _(
+      'En oversigt over værker på Kalliope af ukendte forfattere fra {period}. Vælg et værk for at se dets indhold og læse de tekster, der findes i samlingen.',
+      lang,
+      { period: anonymousPeriod }
+    );
+  }
+  if (poet.type === 'collection') {
+    return _(
+      'En oversigt over værker i denne samling på Kalliope. Vælg et værk for at se dets indhold og læse de tekster, der findes i samlingen.',
+      lang
+    );
+  }
+  return _(
+    'En kronologisk oversigt over værker af {poetName} på Kalliope. Vælg et værk for at se dets indhold og læse de tekster, der findes i samlingen.',
+    lang,
+    { poetName: poetNameString(poet, false, false, lang) }
+  );
+};
+
 const WorksPage = (props) => {
   const { lang, poet, works, artwork, error } = props;
 
@@ -79,13 +154,7 @@ const WorksPage = (props) => {
       menuItems={poetMenu(poet)}
       poet={poet}
       selectedMenuItem="works">
-      <PageLead>
-        {_(
-          'En kronologisk oversigt over værker af {poetName} på Kalliope. Vælg et værk for at se dets indhold og læse de tekster, der findes i samlingen.',
-          lang,
-          { poetName: poetNameString(poet, false, false, lang) }
-        )}
-      </PageLead>
+      <PageLead>{worksLead(poet, lang)}</PageLead>
       <div className="two-columns">
         {stack}
         <style jsx>{`

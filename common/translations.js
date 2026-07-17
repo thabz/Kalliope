@@ -22,6 +22,7 @@ const translations = {
   'en*Biografi': 'Biography',
   'en*Om': 'About',
   'en*Nyheder': 'News',
+  'en*Seneste nyt': 'Latest news',
   'en*Sidst ændret': 'Last modified',
   'en*digtere': 'poets',
   'en*Efter navn': 'By name',
@@ -63,6 +64,8 @@ const translations = {
     "Kalliope's {adjective} poets ordered by birth year. The overview gives a chronological view of the collection's authors.",
   'en*{Adjective} digtere er kun medtaget i begrænset omfang for at belyse den danske digtning.':
     '{Adjective} poets are included only to a limited extent to illuminate Danish poetry.',
+  'en*Kalliope er et digitalt bibliotek for poesi og klassisk litteratur. Her finder du digte, oversættelser, forfatterbiografier og litterære noter, frit tilgængeligt og forbundet gennem personer, værker, steder og historiske perioder.':
+    'Kalliope is a digital library for poetry and classic literature. Here you will find poems, translations, author biographies, and literary notes, freely available and connected through people, works, places, and historical periods.',
   'en*Kalliope er gennem årene blevet til med hjælp fra mange læsere og bidragydere. Her takker vi dem, der har sendt digte, billeder, oplysninger og rettelser eller på anden måde har hjulpet samlingen.':
     'Over the years, Kalliope has been built with help from many readers and contributors. Here we thank those who have sent poems, pictures, information, and corrections, or otherwise helped the collection.',
   'en*Her finder du Kalliopes artikler om litterære perioder, genrer, versformer, begreber og andre emner med tilknytning til digtningen.':
@@ -71,6 +74,14 @@ const translations = {
     'An overview of museums and collections that own artworks and portraits reproduced on Kalliope. Select a museum to see the associated images.',
   'en*En kronologisk oversigt over værker af {poetName} på Kalliope. Vælg et værk for at se dets indhold og læse de tekster, der findes i samlingen.':
     'A chronological overview of works by {poetName} on Kalliope. Select a work to see its contents and read the texts included in the collection.',
+  'en*En oversigt over Bibelens bøger på Kalliope. Vælg en bog for at se dens indhold og læse de tekster, der findes i samlingen.':
+    'An overview of the books of the Bible on Kalliope. Select a book to see its contents and read the texts included in the collection.',
+  'en*En oversigt over folkeviser på Kalliope. Vælg et værk for at se dets indhold og læse de tekster, der findes i samlingen.':
+    'An overview of folk ballads on Kalliope. Select a work to see its contents and read the texts included in the collection.',
+  'en*En oversigt over værker på Kalliope af ukendte forfattere fra {period}. Vælg et værk for at se dets indhold og læse de tekster, der findes i samlingen.':
+    'An overview of works on Kalliope by unknown authors from the {period}. Select a work to see its contents and read the texts included in the collection.',
+  'en*En oversigt over værker i denne samling på Kalliope. Vælg et værk for at se dets indhold og læse de tekster, der findes i samlingen.':
+    'An overview of works in this collection on Kalliope. Select a work to see its contents and read the texts included in the collection.',
   'en*Alle digte af {poetName} på Kalliope ordnet alfabetisk efter titel.':
     'All poems by {poetName} on Kalliope, ordered alphabetically by title.',
   'en*Alle digte af {poetName} på Kalliope ordnet alfabetisk efter tekstens første linje. Listen kan bruges til at finde et digt, når titlen er ukendt.':
@@ -113,6 +124,7 @@ const translations = {
   'de*biografi': 'Biografie',
   'de*Om': 'Über',
   'de*Nyheder': 'Aktuelles',
+  'de*Seneste nyt': 'Neuigkeiten',
   'de*Sidst ændret': 'Zuletzt geändert',
   'de*digtere': 'Dichter',
   'de*digte': 'Gedichte',
@@ -132,6 +144,8 @@ const translations = {
     'Kalliopes {adjective} Dichter nach Geburtsjahr geordnet. Die Übersicht gibt einen chronologischen Einblick in die Autoren der Sammlung.',
   'de*{Adjective} digtere er kun medtaget i begrænset omfang for at belyse den danske digtning.':
     '{Adjective} Dichter sind nur in begrenztem Umfang aufgenommen, um die dänische Dichtung zu beleuchten.',
+  'de*Kalliope er et digitalt bibliotek for poesi og klassisk litteratur. Her finder du digte, oversættelser, forfatterbiografier og litterære noter, frit tilgængeligt og forbundet gennem personer, værker, steder og historiske perioder.':
+    'Kalliope ist eine digitale Bibliothek für Poesie und klassische Literatur. Hier finden Sie Gedichte, Übersetzungen, Autorenbiografien und literarische Notizen, frei zugänglich und verknüpft durch Personen, Werke, Orte und historische Epochen.',
   'de*Kalliope er gennem årene blevet til med hjælp fra mange læsere og bidragydere. Her takker vi dem, der har sendt digte, billeder, oplysninger og rettelser eller på anden måde har hjulpet samlingen.':
     'Kalliope ist im Laufe der Jahre mit Hilfe vieler Leser und Beiträger entstanden. Hier danken wir allen, die Gedichte, Bilder, Informationen und Korrekturen eingesandt oder die Sammlung auf andere Weise unterstützt haben.',
   'de*Her finder du Kalliopes artikler om litterære perioder, genrer, versformer, begreber og andre emner med tilknytning til digtningen.':
@@ -140,6 +154,14 @@ const translations = {
     'Eine Übersicht über Museen und Sammlungen, die auf Kalliope wiedergegebene Kunstwerke und Porträts besitzen. Wählen Sie ein Museum, um die zugehörigen Bilder zu sehen.',
   'de*En kronologisk oversigt over værker af {poetName} på Kalliope. Vælg et værk for at se dets indhold og læse de tekster, der findes i samlingen.':
     'Eine chronologische Übersicht über Werke von {poetName} auf Kalliope. Wählen Sie ein Werk, um dessen Inhalt zu sehen und die in der Sammlung vorhandenen Texte zu lesen.',
+  'de*En oversigt over Bibelens bøger på Kalliope. Vælg en bog for at se dens indhold og læse de tekster, der findes i samlingen.':
+    'Eine Übersicht über die Bücher der Bibel auf Kalliope. Wählen Sie ein Buch, um dessen Inhalt zu sehen und die in der Sammlung vorhandenen Texte zu lesen.',
+  'de*En oversigt over folkeviser på Kalliope. Vælg et værk for at se dets indhold og læse de tekster, der findes i samlingen.':
+    'Eine Übersicht über Volksballaden auf Kalliope. Wählen Sie ein Werk, um dessen Inhalt zu sehen und die in der Sammlung vorhandenen Texte zu lesen.',
+  'de*En oversigt over værker på Kalliope af ukendte forfattere fra {period}. Vælg et værk for at se dets indhold og læse de tekster, der findes i samlingen.':
+    'Eine Übersicht über Werke unbekannter Autoren aus dem {period} auf Kalliope. Wählen Sie ein Werk, um dessen Inhalt zu sehen und die in der Sammlung vorhandenen Texte zu lesen.',
+  'de*En oversigt over værker i denne samling på Kalliope. Vælg et værk for at se dets indhold og læse de tekster, der findes i samlingen.':
+    'Eine Übersicht über Werke in dieser Sammlung auf Kalliope. Wählen Sie ein Werk, um dessen Inhalt zu sehen und die in der Sammlung vorhandenen Texte zu lesen.',
   'de*Alle digte af {poetName} på Kalliope ordnet alfabetisk efter titel.':
     'Alle Gedichte von {poetName} auf Kalliope, alphabetisch nach Titel geordnet.',
   'de*Alle digte af {poetName} på Kalliope ordnet alfabetisk efter tekstens første linje. Listen kan bruges til at finde et digt, når titlen er ukendt.':
@@ -213,6 +235,7 @@ const translations = {
   'fr*biografi': 'biographie',
   'fr*Om': 'À propos',
   'fr*Nyheder': 'Actualités',
+  'fr*Seneste nyt': 'Dernières nouvelles',
   'fr*Sidst ændret': 'Dernière modification',
   'fr*digtere': 'poètes',
   'fr*digte': 'poèmes',
@@ -232,6 +255,8 @@ const translations = {
     'Les poètes {adjective} de Kalliope classés par année de naissance. Cet aperçu donne une vue chronologique des auteurs de la collection.',
   'fr*{Adjective} digtere er kun medtaget i begrænset omfang for at belyse den danske digtning.':
     'Les poètes {adjective} ne sont inclus que dans une mesure limitée afin d’éclairer la poésie danoise.',
+  'fr*Kalliope er et digitalt bibliotek for poesi og klassisk litteratur. Her finder du digte, oversættelser, forfatterbiografier og litterære noter, frit tilgængeligt og forbundet gennem personer, værker, steder og historiske perioder.':
+    'Kalliope est une bibliothèque numérique de poésie et de littérature classique. Vous y trouverez des poèmes, des traductions, des biographies d’auteurs et des notes littéraires, librement accessibles et reliés par des personnes, des œuvres, des lieux et des périodes historiques.',
   'fr*Kalliope er gennem årene blevet til med hjælp fra mange læsere og bidragydere. Her takker vi dem, der har sendt digte, billeder, oplysninger og rettelser eller på anden måde har hjulpet samlingen.':
     'Au fil des années, Kalliope a été constitué avec l’aide de nombreux lecteurs et contributeurs. Nous remercions ici celles et ceux qui ont envoyé des poèmes, des images, des informations et des corrections, ou qui ont aidé la collection d’une autre manière.',
   'fr*Her finder du Kalliopes artikler om litterære perioder, genrer, versformer, begreber og andre emner med tilknytning til digtningen.':
@@ -240,6 +265,14 @@ const translations = {
     'Un aperçu des musées et collections qui possèdent les œuvres d’art et portraits reproduits sur Kalliope. Choisissez un musée pour voir les images associées.',
   'fr*En kronologisk oversigt over værker af {poetName} på Kalliope. Vælg et værk for at se dets indhold og læse de tekster, der findes i samlingen.':
     'Un aperçu chronologique des œuvres de {poetName} sur Kalliope. Choisissez une œuvre pour voir son contenu et lire les textes présents dans la collection.',
+  'fr*En oversigt over Bibelens bøger på Kalliope. Vælg en bog for at se dens indhold og læse de tekster, der findes i samlingen.':
+    'Un aperçu des livres de la Bible sur Kalliope. Choisissez un livre pour voir son contenu et lire les textes présents dans la collection.',
+  'fr*En oversigt over folkeviser på Kalliope. Vælg et værk for at se dets indhold og læse de tekster, der findes i samlingen.':
+    'Un aperçu des ballades populaires sur Kalliope. Choisissez une œuvre pour voir son contenu et lire les textes présents dans la collection.',
+  'fr*En oversigt over værker på Kalliope af ukendte forfattere fra {period}. Vælg et værk for at se dets indhold og læse de tekster, der findes i samlingen.':
+    'Un aperçu des œuvres d’auteurs inconnus du {period} sur Kalliope. Choisissez une œuvre pour voir son contenu et lire les textes présents dans la collection.',
+  'fr*En oversigt over værker i denne samling på Kalliope. Vælg et værk for at se dets indhold og læse de tekster, der findes i samlingen.':
+    'Un aperçu des œuvres de cette collection sur Kalliope. Choisissez une œuvre pour voir son contenu et lire les textes présents dans la collection.',
   'fr*Alle digte af {poetName} på Kalliope ordnet alfabetisk efter titel.':
     'Tous les poèmes de {poetName} sur Kalliope, classés par ordre alphabétique de titre.',
   'fr*Alle digte af {poetName} på Kalliope ordnet alfabetisk efter tekstens første linje. Listen kan bruges til at finde et digt, når titlen er ukendt.':

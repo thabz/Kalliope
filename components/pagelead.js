@@ -6,7 +6,7 @@ const PageLead = (props) => {
       <style jsx>{`
         .page-lead {
           max-width: 760px;
-          margin: -10px 0 30px 0;
+          margin: -10px 0 60px 0;
           color: #555;
           font-size: 20px;
           line-height: 1.45;
