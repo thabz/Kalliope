@@ -67,6 +67,19 @@ describe('Elasticsearch search regression', () => {
       '<em>Lys</em>-<em>Englen</em>',
     ]);
 
+    // Accent-insensitive search should find accented Danish titles.
+    const ekbatana = await search({
+      country: 'dk',
+      query: 'ekbatana',
+    });
+    expect(ekbatana.hits.total.value).toBeGreaterThan(0);
+    expect(hitIds(ekbatana)).toContain('claussen2001082601');
+    const claussenEkbatana = ekbatana.hits.hits.find(
+      hit => hit._id === 'claussen2001082601'
+    );
+    expect(claussenEkbatana._source.poet.id).toBe('claussen');
+    expect(claussenEkbatana._source.text.title).toBe('Ekbátana');
+
     // Scoped searches should keep results inside the selected poet.
     const scopedPoet = await search({
       country: 'dk',
