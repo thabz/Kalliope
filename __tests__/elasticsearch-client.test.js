@@ -40,6 +40,10 @@ describe('Elasticsearch client', () => {
       type: 'text',
       analyzer: 'kalliope_text',
     });
+    expect(body.mappings.properties.poet_search).toEqual({
+      type: 'text',
+      analyzer: 'kalliope_text',
+    });
     expect(body.mappings.properties.text.properties.id).toEqual({
       type: 'keyword',
     });
@@ -121,7 +125,7 @@ describe('Elasticsearch client', () => {
           {
             multi_match: {
               query: 'aarestrup',
-              fields: ['poet_search^4'],
+              fields: ['poet.id^8', 'poet_search^4'],
             },
           },
         ],

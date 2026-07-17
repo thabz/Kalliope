@@ -91,6 +91,10 @@ class ElasticSearchClient {
         mappings: {
           date_detection: false,
           properties: {
+            poet_search: {
+              type: 'text',
+              analyzer: 'kalliope_text',
+            },
             text: {
               properties: {
                 id: {
@@ -248,7 +252,7 @@ class ElasticSearchClient {
           {
             multi_match: {
               query,
-              fields: ['poet_search^4'],
+              fields: ['poet.id^8', 'poet_search^4'],
             },
           },
         ],
