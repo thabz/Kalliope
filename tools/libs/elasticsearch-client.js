@@ -80,6 +80,12 @@ class ElasticSearchClient {
                 filter: ['lowercase', 'asciifolding'],
               },
             },
+            normalizer: {
+              kalliope_keyword: {
+                type: 'custom',
+                filter: ['lowercase', 'asciifolding'],
+              },
+            },
           },
         },
         mappings: {
@@ -93,6 +99,12 @@ class ElasticSearchClient {
                 title: {
                   type: 'text',
                   analyzer: 'kalliope_text',
+                  fields: {
+                    exact: {
+                      type: 'keyword',
+                      normalizer: 'kalliope_keyword',
+                    },
+                  },
                 },
                 content_html: {
                   type: 'text',
@@ -109,6 +121,12 @@ class ElasticSearchClient {
                 title: {
                   type: 'text',
                   analyzer: 'kalliope_text',
+                  fields: {
+                    exact: {
+                      type: 'keyword',
+                      normalizer: 'kalliope_keyword',
+                    },
+                  },
                 },
               },
             },
@@ -236,6 +254,32 @@ class ElasticSearchClient {
         ],
       },
     };
+    const titleBoostQueries = (field, exactBoost) => [
+      {
+        match: {
+          [`${field}.exact`]: {
+            query,
+            boost: exactBoost,
+          },
+        },
+      },
+      {
+        match_phrase: {
+          [field]: {
+            query,
+            boost: exactBoost / 2,
+          },
+        },
+      },
+      {
+        match_phrase_prefix: {
+          [field]: {
+            query,
+            boost: exactBoost / 4,
+          },
+        },
+      },
+    ];
     const workSearchQuery = {
       bool: {
         filter: [{ term: { result_type: 'work' } }],
@@ -243,10 +287,11 @@ class ElasticSearchClient {
           {
             multi_match: {
               query,
-              fields: ['work.title^3'],
+              fields: ['work.title^8'],
             },
           },
         ],
+        should: titleBoostQueries('work.title', 24),
       },
     };
     const textSearchQuery = {
@@ -257,14 +302,14 @@ class ElasticSearchClient {
             multi_match: {
               query,
               fields: [
-                'text.id^5',
-                'text.title^3',
+                'text.title^10',
                 'text.subtitles^2',
                 'text.content_html',
               ],
             },
           },
         ],
+        should: titleBoostQueries('text.title', 40),
       },
     };
     const body = {
@@ -278,6 +323,8 @@ class ElasticSearchClient {
       },
       highlight: {
         fields: {
+          'work.title': {},
+          'text.title': {},
           'text.content_html': {},
         },
       },
@@ -296,7 +343,11 @@ class ElasticSearchClient {
         term: { 'poet.country': country },
       });
     } else {
-      body.query.bool.filter.push({
+      // Keep the actual search query in must/query context so Elasticsearch
+      // calculates _score. Country/result-type limits belong in filter context;
+      // moving the title/text queries there disables title boosts and exact
+      // title matches stop rising to the top.
+      body.query.bool.must.push({
         bool: {
           should: [
             poetSearchQuery,
