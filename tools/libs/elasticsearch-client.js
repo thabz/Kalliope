@@ -343,6 +343,10 @@ class ElasticSearchClient {
         term: { 'poet.country': country },
       });
     } else {
+      // Keep the actual search query in must/query context so Elasticsearch
+      // calculates _score. Country/result-type limits belong in filter context;
+      // moving the title/text queries there disables title boosts and exact
+      // title matches stop rising to the top.
       body.query.bool.must.push({
         bool: {
           should: [
