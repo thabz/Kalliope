@@ -91,6 +91,10 @@ class ElasticSearchClient {
         mappings: {
           date_detection: false,
           properties: {
+            poet_search: {
+              type: 'text',
+              analyzer: 'kalliope_text',
+            },
             text: {
               properties: {
                 id: {

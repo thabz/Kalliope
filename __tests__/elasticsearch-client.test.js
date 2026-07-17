@@ -40,6 +40,10 @@ describe('Elasticsearch client', () => {
       type: 'text',
       analyzer: 'kalliope_text',
     });
+    expect(body.mappings.properties.poet_search).toEqual({
+      type: 'text',
+      analyzer: 'kalliope_text',
+    });
     expect(body.mappings.properties.text.properties.id).toEqual({
       type: 'keyword',
     });

@@ -80,6 +80,19 @@ describe('Elasticsearch search regression', () => {
     expect(claussenEkbatana._source.poet.id).toBe('claussen');
     expect(claussenEkbatana._source.text.title).toBe('Ekbátana');
 
+    // Accent-insensitive search should also cover poet names.
+    const mallarme = await search({
+      country: 'fr',
+      query: 'mallarme',
+    });
+    expect(mallarme.hits.total.value).toBeGreaterThan(0);
+    expect(hitIds(mallarme)).toContain('poet-mallarme');
+    const mallarmePoet = mallarme.hits.hits.find(
+      hit => hit._id === 'poet-mallarme'
+    );
+    expect(mallarmePoet._source.poet.id).toBe('mallarme');
+    expect(mallarmePoet._source.poet.name.lastname).toBe('Mallarmé');
+
     // Scoped searches should keep results inside the selected poet.
     const scopedPoet = await search({
       country: 'dk',
