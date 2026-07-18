@@ -389,6 +389,30 @@ describe('OCR candidate report helpers', () => {
     );
   });
 
+  it('allows OCR rules to be ignored for a whole work', () => {
+    const candidates = findOcrCandidatesInFile({
+      filename: 'fdirs/test/ignore-work-rule.xml',
+      lang: 'da',
+      text: [
+        '<kalliopework id="ignore-work-rule" author="test" ignore-tests="mixed-aa-circumflex,single-circumflex-a-in-text,mojibake">',
+        '<workhead><notes><note>Et opfÃ¸rte skuespil.</note></notes></workhead>',
+        '<workbody>',
+        '<text id="reported">saâ detNat</text>',
+        '<text id="ignored" ignore-tests="internal-uppercase">saâ detNat</text>',
+        '</workbody>',
+        '</kalliopework>',
+      ].join('\n'),
+    });
+
+    expect(
+      candidates.map(candidate => [
+        candidate.textId,
+        candidate.word,
+        candidate.rule,
+      ])
+    ).toEqual([['reported', 'detNat', 'internal-uppercase']]);
+  });
+
   it('allows all new OCR rules to be ignored per text block', () => {
     const candidates = findOcrCandidatesInFile({
       filename: 'fdirs/test/ignore-new-rules.xml',

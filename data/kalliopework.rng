@@ -85,6 +85,7 @@
       <optional><attribute name="status"><text/></attribute></optional>
       <optional><attribute name="type"><text/></attribute></optional>
       <optional><attribute name="parent"><text/></attribute></optional>
+      <optional><attribute name="ignore-tests"><text/></attribute></optional>
       <ref name="workhead"/>
       <optional><ref name="workbody"/></optional>
     </element>

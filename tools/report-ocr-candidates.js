@@ -102,6 +102,13 @@ const ignoredTests = tag =>
     .map(testName => testName.trim())
     .filter(testName => testName.length > 0);
 
+const mergeIgnoredTests = (...testLists) => [...new Set(testLists.flat())];
+
+const workIgnoredTests = text => {
+  const openingTag = text.match(/<kalliopework\b[^>]*>/)?.[0] ?? '';
+  return ignoredTests(openingTag);
+};
+
 const lineNumberAt = (text, index) => text.slice(0, index).split('\n').length;
 
 const textBlocks = text =>
@@ -368,6 +375,7 @@ const findMojibakeCandidatesInFile = ({ filename, text }) => {
   const candidates = [];
   const seenCandidates = new Map();
   const blocks = textBlocks(text);
+  const ignoredForWork = workIgnoredTests(text);
   const lines = removeXmlMarkup(text).split('\n');
 
   lines.forEach((lineText, index) => {
@@ -392,7 +400,10 @@ const findMojibakeCandidatesInFile = ({ filename, text }) => {
         textId: block?.id ?? '',
         word: match[0],
         context,
-        ignoredTests: block?.ignoredTests ?? [],
+        ignoredTests: mergeIgnoredTests(
+          ignoredForWork,
+          block?.ignoredTests ?? []
+        ),
         priority: 'høj',
         rule: 'mojibake',
         reason: 'tegnfølge tyder på forkert tegnkodning',
@@ -404,6 +415,7 @@ const findMojibakeCandidatesInFile = ({ filename, text }) => {
 };
 
 const findOcrCandidatesInFile = ({ filename, text, lang }) => {
+  const ignoredForWork = workIgnoredTests(text);
   const mojibakeCandidates = findMojibakeCandidatesInFile({ filename, text });
   const blockCandidates = textBlocks(text).flatMap(block => {
     const activeLang = block.lang ?? lang;
@@ -411,7 +423,14 @@ const findOcrCandidatesInFile = ({ filename, text, lang }) => {
       return [];
     }
 
-    return findTextBlockCandidates({ filename, block, lang: activeLang });
+    return findTextBlockCandidates({
+      filename,
+      block: {
+        ...block,
+        ignoredTests: mergeIgnoredTests(ignoredForWork, block.ignoredTests),
+      },
+      lang: activeLang,
+    });
   });
 
   return [...mojibakeCandidates, ...blockCandidates];
@@ -450,7 +469,7 @@ const usage = () => {
 const printFooter = candidateCount => {
   console.error(`${candidateCount} kandidat(er) fundet.`);
   console.error(
-    'Legitime forekomster kan undtages pr. regel med fx ignore-tests="regelnavn" på det relevante <text>-element.'
+    'Legitime forekomster kan undtages pr. regel med fx ignore-tests="regelnavn" på det relevante <text>- eller <kalliopework>-element.'
   );
 };
 
