@@ -11,7 +11,9 @@
   "activationEvents": [
     "onStartupFinished",
     "onLanguage:plaintext",
-    "onLanguage:kalliope-old"
+    "onLanguage:kalliope-old",
+    "onLanguage:xml",
+    "onCommand:kalliope.showFacsimileForCurrentText"
   ],
   "categories": [
     "Programming Languages"
@@ -33,6 +35,32 @@
         "scopeName": "source.kalliope.old",
         "path": "./syntaxes/kalliope-old.tmLanguage.json"
       }
-    ]
+    ],
+    "commands": [
+      {
+        "command": "kalliope.showFacsimileForCurrentText",
+        "title": "Kalliope: Vis facsimile for aktuelt digt"
+      }
+    ],
+    "configuration": {
+      "title": "Kalliope",
+      "properties": {
+        "kalliope.facsimiles.localRoot": {
+          "type": "string",
+          "default": "facsimiles",
+          "description": "Lokal rodmappe for facsimile-billeder. Relative stier fortolkes fra workspace-roden."
+        },
+        "kalliope.facsimiles.remoteBaseUrl": {
+          "type": "string",
+          "default": "https://kalliope.org/static/facsimiles",
+          "description": "Fallback-URL for facsimile-billeder, når en lokal billedfil ikke findes."
+        },
+        "kalliope.facsimiles.autoUpdate": {
+          "type": "boolean",
+          "default": true,
+          "description": "Opdater det åbne facsimile-split automatisk, når cursoren flyttes."
+        }
+      }
+    }
   }
 }
