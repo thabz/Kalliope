@@ -238,7 +238,12 @@ const addCandidate = (candidates, seenCandidates, candidate) => {
   }
 };
 
-const findTextBlockCandidates = ({ filename, block, lang = 'da' }) => {
+const findTextBlockCandidates = ({
+  filename,
+  block,
+  lang = 'da',
+  reportSingleAaRing = true,
+}) => {
   const candidates = [];
   const seenCandidates = new Map();
   const searchableText = removeIgnoredXml(block.text);
@@ -348,7 +353,7 @@ const findTextBlockCandidates = ({ filename, block, lang = 'da' }) => {
     });
   }
 
-  if (aaRingHits.length === 1) {
+  if (reportSingleAaRing && aaRingHits.length === 1) {
     addCandidate(candidates, seenCandidates, {
       ...aaRingHits[0],
       ignoredTests: block.ignoredTests,
@@ -417,7 +422,16 @@ const findMojibakeCandidatesInFile = ({ filename, text }) => {
 const findOcrCandidatesInFile = ({ filename, text, lang }) => {
   const ignoredForWork = workIgnoredTests(text);
   const mojibakeCandidates = findMojibakeCandidatesInFile({ filename, text });
-  const blockCandidates = textBlocks(text).flatMap(block => {
+  const blocks = textBlocks(text);
+  const aaRingCount = blocks.reduce((count, block) => {
+    const activeLang = block.lang ?? lang;
+    if (block.skipIndex || activeLang !== 'da') {
+      return count;
+    }
+    const searchableText = stripXml(removeIgnoredXml(block.text));
+    return count + (searchableText.match(/[åÅ]/gu)?.length ?? 0);
+  }, 0);
+  const blockCandidates = blocks.flatMap(block => {
     const activeLang = block.lang ?? lang;
     if (block.skipIndex) {
       return [];
@@ -430,6 +444,7 @@ const findOcrCandidatesInFile = ({ filename, text, lang }) => {
         ignoredTests: mergeIgnoredTests(ignoredForWork, block.ignoredTests),
       },
       lang: activeLang,
+      reportSingleAaRing: aaRingCount < 10,
     });
   });
 

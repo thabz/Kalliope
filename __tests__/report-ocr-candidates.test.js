@@ -154,6 +154,24 @@ describe('OCR candidate report helpers', () => {
     );
   });
 
+  it('does not report isolated å occurrences when the work has at least ten', () => {
+    const candidates = findOcrCandidatesInFile({
+      filename: 'fdirs/test/many-rings.xml',
+      lang: 'da',
+      text: [
+        '<kalliopework id="many-rings" author="test">',
+        '<text id="first">Let på min Fod,</text>',
+        '<text id="second">Nu går et år, mens båden når en blå å.</text>',
+        '<text id="third">Så går vi på.</text>',
+        '</kalliopework>',
+      ].join('\n'),
+    });
+
+    expect(
+      candidates.filter(candidate => candidate.rule === 'single-a-ring-in-text')
+    ).toEqual([]);
+  });
+
   it('reports known suspicious wordforms with suggested corrections', () => {
     const candidates = findOcrCandidatesInFile({
       filename: 'fdirs/test/wordforms.xml',
