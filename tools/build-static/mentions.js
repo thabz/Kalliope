@@ -23,6 +23,7 @@ import {
 } from './xml.js';
 import { poetName, workLinkName } from './formatting.js';
 import { primaryTextVariantId } from './variants.js';
+import { loadExternalIdentifiers } from './external-identifiers.js';
 
 const person_mentions_dirty = new Set();
 
@@ -190,9 +191,16 @@ const build_person_or_keyword_refs = (collected) => {
   collected.person_or_keyword_refs = person_or_keyword_refs;
 };
 
-const build_mentions_data = (poet, poetId, collected, build_html) => {
+const build_mentions_data = (
+  poet,
+  poetId,
+  collected,
+  build_html,
+  identifiers = {},
+) => {
   let data = {
     poet,
+    identifiers,
     mentions: [],
     translations: [],
     primary: [],
@@ -334,8 +342,14 @@ const build_mentions_json = (collected) => {
     const biblioFilesAreModifed =
       isFileModified(`fdirs/${poet.id}/bibliography-primary.xml`) ||
       isFileModified(`fdirs/${poet.id}/bibliography-secondary.xml`);
+    const externalIdentifiersModified = isFileModified(
+      `fdirs/${poet.id}/info.xml`,
+      'common/external-identifiers.js',
+      'tools/build-static/external-identifiers.js',
+    );
     const shouldRebuild =
       biblioFilesAreModifed ||
+      externalIdentifiersModified ||
       person_mentions_dirty.has(poet.id) ||
       !fileExists(outFilename);
     if (!shouldRebuild) {
@@ -343,7 +357,13 @@ const build_mentions_json = (collected) => {
     }
 
     safeMkdir(`public/api/${poet.id}`);
-    let data = build_mentions_data(poet, poetId, collected, build_html);
+    let data = build_mentions_data(
+      poet,
+      poetId,
+      collected,
+      build_html,
+      loadExternalIdentifiers(poetId),
+    );
 
     console.log(outFilename);
     writeJSON(outFilename, data);
