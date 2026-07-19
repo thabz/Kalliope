@@ -428,6 +428,8 @@ Inline XML bliver renderet client-side af `components/textcontent.js`.
 Almindelige inline-tags:
 
 - `<i>`, `<b>`, `<u>`, `<sup>`, `<sub>`, `<strike>`
+- `<span lang="sv">`: markerer et inline-tekststykke på et andet sprog uden
+  at ændre typografien. Brug ISO 639-1-sprogkoder som `sv`, `de` og `fr`.
 - `<s>` og `<small>`
 - `<w>`: spatieret tekst; renderes aktuelt som kursiv.
 - `<sc>`: small caps.

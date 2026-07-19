@@ -65,6 +65,14 @@ const priorityOrder = new Map([
   ['lav', 2],
 ]);
 
+const parseDisabledTests = (value = '') =>
+  new Set(
+    value
+      .split(',')
+      .map(testName => testName.trim())
+      .filter(Boolean)
+  );
+
 const preserveLineBreaks = text =>
   text.replace(/[^\n]/g, match => (match === '\r' ? '\r' : ' '));
 
@@ -82,6 +90,38 @@ const removeXmlMarkup = text =>
   text
     .replace(/<!--[\s\S]*?-->/g, preserveLineBreaks)
     .replace(/<[^>]+>/g, preserveLineBreaks);
+
+const textForLanguage = (text, inheritedLang, targetLang) => {
+  const languages = [inheritedLang];
+  const tags = [];
+
+  return text.replace(/<[^>]+>|[^<]+/g, part => {
+    if (!part.startsWith('<')) {
+      return languages[languages.length - 1] === targetLang
+        ? part
+        : preserveLineBreaks(part);
+    }
+
+    const closingTag = part.match(/^<\/\s*([A-Za-z_:][\w:.-]*)/);
+    if (closingTag != null) {
+      const index = tags.lastIndexOf(closingTag[1]);
+      if (index !== -1) {
+        tags.length = index;
+        languages.length = index + 1;
+      }
+      return part;
+    }
+
+    const openingTag = part.match(/^<\s*([A-Za-z_:][\w:.-]*)/);
+    if (openingTag == null || /\/\s*>$/.test(part)) {
+      return part;
+    }
+
+    tags.push(openingTag[1]);
+    languages.push(getAttr(part, 'lang') ?? languages[languages.length - 1]);
+    return part;
+  });
+};
 
 const stripXml = text =>
   text
@@ -248,6 +288,7 @@ const findTextBlockCandidates = ({
   const seenCandidates = new Map();
   const searchableText = removeIgnoredXml(block.text);
   const lines = searchableText.split('\n');
+  const danishLines = textForLanguage(searchableText, lang, 'da').split('\n');
   const aaRingHits = [];
   const circumflexAHits = [];
   const suspiciousWordformHits = [];
@@ -284,10 +325,21 @@ const findTextBlockCandidates = ({
           reason: 'stort bogstav eller manglende mellemrum midt i ord',
         });
       }
+    }
 
-      if (lang !== 'da' || shouldDeferWordformAnalysis(word)) {
+    const danishContext = stripXml(danishLines[index]);
+    for (const word of wordsInContext(danishContext)) {
+      if (shouldDeferWordformAnalysis(word)) {
         continue;
       }
+
+      const hit = {
+        file: filename,
+        line: block.startLine + index,
+        textId: block.id,
+        word,
+        context,
+      };
 
       if (wordHasAaRing(word)) {
         aaRingHits.push(hit);
@@ -320,20 +372,18 @@ const findTextBlockCandidates = ({
       }
     }
 
-    if (lang === 'da') {
-      for (const repetition of repeatedWordsInContext(context)) {
-        addCandidate(candidates, seenCandidates, {
-          file: filename,
-          line: block.startLine + index,
-          textId: block.id,
-          word: repetition,
-          context,
-          ignoredTests: block.ignoredTests,
-          priority: 'lav',
-          rule: 'repeated-adjacent-word',
-          reason: 'samme ord står to gange i træk',
-        });
-      }
+    for (const repetition of repeatedWordsInContext(danishContext)) {
+      addCandidate(candidates, seenCandidates, {
+        file: filename,
+        line: block.startLine + index,
+        textId: block.id,
+        word: repetition,
+        context,
+        ignoredTests: block.ignoredTests,
+        priority: 'lav',
+        rule: 'repeated-adjacent-word',
+        reason: 'samme ord står to gange i træk',
+      });
     }
   });
 
@@ -419,16 +469,23 @@ const findMojibakeCandidatesInFile = ({ filename, text }) => {
   return candidates;
 };
 
-const findOcrCandidatesInFile = ({ filename, text, lang }) => {
+const findOcrCandidatesInFile = ({
+  filename,
+  text,
+  lang,
+  disabledTests = process.env.DISABLED_TESTS ?? '',
+}) => {
   const ignoredForWork = workIgnoredTests(text);
   const mojibakeCandidates = findMojibakeCandidatesInFile({ filename, text });
   const blocks = textBlocks(text);
   const aaRingCount = blocks.reduce((count, block) => {
     const activeLang = block.lang ?? lang;
-    if (block.skipIndex || activeLang !== 'da') {
+    if (block.skipIndex) {
       return count;
     }
-    const searchableText = stripXml(removeIgnoredXml(block.text));
+    const searchableText = stripXml(
+      textForLanguage(removeIgnoredXml(block.text), activeLang, 'da')
+    );
     return count + (searchableText.match(/[åÅ]/gu)?.length ?? 0);
   }, 0);
   const blockCandidates = blocks.flatMap(block => {
@@ -448,10 +505,17 @@ const findOcrCandidatesInFile = ({ filename, text, lang }) => {
     });
   });
 
-  return [...mojibakeCandidates, ...blockCandidates];
+  const disabledTestNames = parseDisabledTests(disabledTests);
+  return [...mojibakeCandidates, ...blockCandidates].filter(
+    candidate => !disabledTestNames.has(candidate.rule)
+  );
 };
 
-const findOcrCandidates = ({ rootDir = process.cwd(), files = null } = {}) => {
+const findOcrCandidates = ({
+  rootDir = process.cwd(),
+  files = null,
+  disabledTests = process.env.DISABLED_TESTS ?? '',
+} = {}) => {
   const poetLangs = loadPoetLangs(rootDir);
   const filenames = files ?? trackedFiles(rootDir);
   const candidates = filenames.flatMap(filename => {
@@ -460,6 +524,7 @@ const findOcrCandidates = ({ rootDir = process.cwd(), files = null } = {}) => {
       filename,
       text: fs.readFileSync(fullFilename, 'utf8'),
       lang: langForFile(filename, poetLangs),
+      disabledTests,
     });
   });
 
@@ -515,6 +580,8 @@ export {
   formatCandidate,
   removeIgnoredXml,
   removeXmlMarkup,
+  parseDisabledTests,
+  textForLanguage,
   repeatedWordsInContext,
   stripXml,
   suggestedWordform,

@@ -48,6 +48,7 @@
         <ref name="xref"/>
         <ref name="b"/>
         <ref name="i"/>
+        <ref name="span"/>
         <ref name="sc"/>
         <ref name="small"/>
         <ref name="sup"/>
@@ -303,7 +304,18 @@
   <define name="quality"><element name="quality"><ref name="simpleElement"/></element></define>
   <define name="pictures"><element name="pictures"><ref name="simpleElement"/></element></define>
   <define name="b"><element name="b"><ref name="simpleElement"/></element></define>
-  <define name="i"><element name="i"><ref name="simpleElement"/></element></define>
+  <define name="i">
+    <element name="i">
+      <optional><attribute name="lang"><text/></attribute></optional>
+      <ref name="simpleElement"/>
+    </element>
+  </define>
+  <define name="span">
+    <element name="span">
+      <attribute name="lang"><text/></attribute>
+      <ref name="simpleElement"/>
+    </element>
+  </define>
   <define name="sc"><element name="sc"><ref name="simpleElement"/></element></define>
   <define name="small"><element name="small"><ref name="simpleElement"/></element></define>
   <define name="sup"><element name="sup"><ref name="simpleElement"/></element></define>
