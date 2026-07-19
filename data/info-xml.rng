@@ -98,6 +98,10 @@
   <define name="identifiers">
     <element name="identifiers">
       <optional><ref name="wikidata"/></optional>
+      <optional><ref name="wikipedia-da"/></optional>
+      <optional><ref name="wikipedia-en"/></optional>
+      <optional><ref name="wikipedia-fr"/></optional>
+      <optional><ref name="wikipedia-de"/></optional>
       <optional><ref name="gravsted-dk"/></optional>
       <optional><ref name="viaf"/></optional>
       <optional><ref name="lex-dk"/></optional>
@@ -124,6 +128,10 @@
   <define name="literary-periods"><element name="literary-periods"><text/></element></define>
   <define name="works"><element name="works"><text/></element></define>
   <define name="wikidata"><element name="wikidata"><text/></element></define>
+  <define name="wikipedia-da"><element name="wikipedia-da"><text/></element></define>
+  <define name="wikipedia-en"><element name="wikipedia-en"><text/></element></define>
+  <define name="wikipedia-fr"><element name="wikipedia-fr"><text/></element></define>
+  <define name="wikipedia-de"><element name="wikipedia-de"><text/></element></define>
   <define name="gravsted-dk"><element name="gravsted-dk"><text/></element></define>
   <define name="viaf"><element name="viaf"><text/></element></define>
   <define name="lex-dk"><element name="lex-dk"><text/></element></define>
