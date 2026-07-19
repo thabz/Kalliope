@@ -1,11 +1,13 @@
 import {
   findOcrCandidatesInFile,
   formatCandidate,
+  parseDisabledTests,
   removeIgnoredXml,
   removeXmlMarkup,
   repeatedWordsInContext,
   stripXml,
   suggestedWordform,
+  textForLanguage,
   textBlocks,
   wordHasAaCircumflexMix,
   wordHasAaRingMix,
@@ -60,6 +62,17 @@ describe('OCR candidate report helpers', () => {
     );
   });
 
+  it('selects text by inherited and inline language', () => {
+    const text =
+      'Dansk <span lang="sv">svensk <i>också</i>\n' +
+      '<span lang="da">dansk igen</span></span> slut';
+
+    expect(stripXml(textForLanguage(text, 'da', 'da'))).toBe(
+      'Dansk dansk igen slut'
+    );
+    expect(stripXml(textForLanguage(text, 'da', 'sv'))).toBe('svensk också');
+  });
+
   it('recognizes mixed and internal uppercase character patterns', () => {
     expect(wordHasAaRingMix('saå')).toBe(true);
     expect(wordHasAaRingMix('påa')).toBe(true);
@@ -93,6 +106,20 @@ describe('OCR candidate report helpers', () => {
     expect(repeatedWordsInContext('Det er som klare Perler')).toEqual([]);
     expect(repeatedWordsInContext('Ha ha! Ja ja.')).toEqual([]);
     expect(repeatedWordsInContext("Naar Læremo'er er ude")).toEqual([]);
+  });
+
+  it('parses and applies globally disabled report tests', () => {
+    expect([...parseDisabledTests(' repeated-adjacent-word, mojibake ')])
+      .toEqual(['repeated-adjacent-word', 'mojibake']);
+
+    const candidates = findOcrCandidatesInFile({
+      filename: 'fdirs/test/disabled.xml',
+      lang: 'da',
+      disabledTests: 'repeated-adjacent-word',
+      text: '<text id="disabled">Du trilled som som Perler</text>',
+    });
+
+    expect(candidates).toEqual([]);
   });
 
   it('reports local suspicious character deviations in Danish text blocks', () => {
@@ -242,6 +269,28 @@ describe('OCR candidate report helpers', () => {
     );
   });
 
+  it('skips Danish rules in inline foreign-language text', () => {
+    const candidates = findOcrCandidatesInFile({
+      filename: 'fdirs/test/inline-language.xml',
+      lang: 'da',
+      text: [
+        '<text id="mixed">',
+        'se paå den Fisker',
+        '<span lang="sv">gå gå och saå samt nouveIIes</span>',
+        'Du trilled som som Perler',
+        '</text>',
+      ].join('\n'),
+    });
+
+    expect(
+      candidates.map(candidate => [candidate.word, candidate.rule])
+    ).toEqual([
+        ['paå', 'mixed-aa-ring'],
+        ['nouveIIes', 'internal-uppercase'],
+        ['som som', 'repeated-adjacent-word'],
+    ]);
+  });
+
   it('reports probable missing spaces before uppercase letters', () => {
     const candidates = findOcrCandidatesInFile({
       filename: 'fdirs/test/spacing.xml',
@@ -266,6 +315,7 @@ describe('OCR candidate report helpers', () => {
         '<workbody>',
         '<text id="english">an aâ€°rial ship</text>',
         '<text id="swedish" lang="sv">Âskan går.</text>',
+        '<text id="inline">Dansk <span lang="sv">aâ€°rial</span></text>',
         '</workbody>',
         '</kalliopework>',
       ].join('\n'),
@@ -282,6 +332,7 @@ describe('OCR candidate report helpers', () => {
       [3, '', 'opfÃ¸rte', 'mojibake'],
       [6, 'english', 'aâ€°rial', 'mojibake'],
       [7, 'swedish', 'Âskan', 'mojibake'],
+      [8, 'inline', 'aâ€°rial', 'mojibake'],
     ]);
   });
 

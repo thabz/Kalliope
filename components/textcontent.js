@@ -144,7 +144,17 @@ const renderXmlString = (inputString) => {
       case 'pb':
         return null;
       case 'i':
-        return <i key={keySeq++}>{handle_nodes(node.childNodes)}</i>;
+        return (
+          <i key={keySeq++} lang={node.getAttribute('lang') || undefined}>
+            {handle_nodes(node.childNodes)}
+          </i>
+        );
+      case 'span':
+        return (
+          <span key={keySeq++} lang={node.getAttribute('lang') || undefined}>
+            {handle_nodes(node.childNodes)}
+          </span>
+        );
       case 'b':
         return <b key={keySeq++}>{handle_nodes(node.childNodes)}</b>;
       case 'u':
