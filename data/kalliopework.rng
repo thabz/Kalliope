@@ -98,6 +98,7 @@
   <define name="textElement">
     <element name="text">
       <optional><attribute name="id"><text/></attribute></optional>
+      <optional><attribute name="author"><text/></attribute></optional>
       <optional><attribute name="variant"><text/></attribute></optional>
       <optional><attribute name="aliases"><text/></attribute></optional>
       <optional><attribute name="skip-index"><text/></attribute></optional>
