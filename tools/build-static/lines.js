@@ -165,7 +165,11 @@ const build_poet_lines_json = (collected) => {
     const filenames = collected.workids
       .get(poetId)
       .map((workId) => `fdirs/${poetId}/${workId}.xml`);
-    if (!isFileModified(`fdirs/${poetId}/info.xml`, ...filenames)) {
+    const poetMetadataModified = collected.poetMetadataDirty?.has(poetId);
+    if (
+      !poetMetadataModified &&
+      !isFileModified(`fdirs/${poetId}/info.xml`, ...filenames)
+    ) {
       return;
     }
 

@@ -31,6 +31,12 @@ const fileExists = filename => {
   return fs.existsSync(filename);
 };
 
+const removeFile = filename => {
+  if (fileExists(filename)) {
+    fs.unlinkSync(filename);
+  }
+};
+
 const fileModifiedTime = filename => {
   if (fileExists(filename)) {
     // Older node.js has no mtimeMs so we use mtime.getTime()
@@ -397,6 +403,7 @@ const buildThumbnails = async (
 export {
   safeMkdir,
   fileExists,
+  removeFile,
   fileModifiedTime,
   loadJSON,
   loadText,

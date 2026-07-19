@@ -182,8 +182,10 @@ const build_bio_json = async (collected) => {
     Array.from(collected.poets.entries()),
     async (entry) => {
       const [poetId, poet] = entry;
+      const poetMetadataModified = collected.poetMetadataDirty?.has(poetId);
       // Skip if all of the participating xml files aren't modified
       if (
+        !poetMetadataModified &&
         !codeModified &&
         !artworkModified &&
         !isFileModified(
@@ -259,6 +261,7 @@ const handle_text = async (
   section_titles,
 ) => {
   if (
+    !collected.poetMetadataDirty?.has(poetId) &&
     !isFileModified(`fdirs/${poetId}/info.xml`, `fdirs/${poetId}/${workId}.xml`)
   ) {
     return;
@@ -939,7 +942,10 @@ const works_second_pass = async (collected) => {
     if (!fileExists(filename)) {
       return;
     }
-    if (!isFileModified(filename)) {
+    if (
+      !collected.poetMetadataDirty?.has(poetId) &&
+      !isFileModified(filename)
+    ) {
       return;
     }
     let doc = loadXMLDoc(filename);
@@ -1006,6 +1012,7 @@ const build_poet_works_json = (collected) => {
       .get(poetId)
       .map((workId) => `fdirs/${poetId}/${workId}.xml`);
     if (
+      !collected.poetMetadataDirty?.has(poetId) &&
       !isFileModified(
         `fdirs/${poetId}/info.xml`,
         `fdirs/${poetId}/artwork.xml`,
@@ -1128,7 +1135,11 @@ const main = async () => {
     build_person_or_keyword_refs,
     collected,
   );
-  await b('build_poets_json', build_poets_json, collected);
+  collected.poetMetadataDirty = await b(
+    'build_poets_json',
+    build_poets_json,
+    collected,
+  );
   await b(
     'mark_ref_destinations_dirty',
     mark_ref_destinations_dirty,

@@ -137,10 +137,9 @@ const build_works_toc = async (collected) => {
   collected.poets.forEach((poet, poetId) => {
     safeMkdir(`public/api/${poetId}`);
     const workFilenames = workFilesForPoet(poetId);
-    const poetWorksModified = isFileModified(
-      `fdirs/${poetId}/info.xml`,
-      ...workFilenames
-    );
+    const poetWorksModified =
+      collected.poetMetadataDirty?.has(poetId) ||
+      isFileModified(`fdirs/${poetId}/info.xml`, ...workFilenames);
     const pageWorks = worksForPaging(poetId, poet);
     poetData.set(poetId, { pageWorks, poet, poetWorksModified });
     collected.workids.get(poetId).forEach((workId) => {
