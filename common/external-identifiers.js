@@ -11,7 +11,7 @@ const externalIdentifierSources = [
   source(
     'wikidata',
     'authority',
-    10,
+    20,
     'Wikidata',
     'WD',
     (value) => `https://www.wikidata.org/wiki/${encodeURIComponent(value)}`,
@@ -28,7 +28,7 @@ const externalIdentifierSources = [
   source(
     'viaf',
     'authority',
-    20,
+    10,
     'VIAF',
     'VIAF',
     (value) => `https://viaf.org/viaf/${encodeURIComponent(value)}/`,

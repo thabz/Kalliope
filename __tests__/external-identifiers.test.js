@@ -21,8 +21,8 @@ describe('external identifiers', () => {
       id,
       href,
     }))).toEqual([
-      { id: 'wikidata', href: 'https://www.wikidata.org/wiki/Q5673' },
       { id: 'viaf', href: 'https://viaf.org/viaf/4925902/' },
+      { id: 'wikidata', href: 'https://www.wikidata.org/wiki/Q5673' },
       { id: 'lex-dk', href: 'https://lex.dk/H.C._Andersen' },
       {
         id: 'biografisk-leksikon-lex-dk',
@@ -69,7 +69,7 @@ describe('external identifiers', () => {
       buildExternalIdentifierLinks(identifiers, { category: 'authority' }).map(
         ({ id }) => id,
       ),
-    ).toEqual(['wikidata', 'viaf']);
+    ).toEqual(['viaf', 'wikidata']);
     expect(
       buildExternalIdentifierLinks(identifiers, { category: 'reference' }).map(
         ({ id }) => id,
