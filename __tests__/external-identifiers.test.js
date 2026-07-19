@@ -16,6 +16,7 @@ describe('external identifiers', () => {
       'lex-dk': 'H.C._Andersen',
       'teaterleksikon-lex-dk': 'H.C._Andersen',
       'biografisk-leksikon-lex-dk': 'H.C._Andersen',
+      'kvindebiografisk-leksikon-lex-dk': 'Benedicte_Arnesen_Kall',
       'litteraturpriser-dk': 'AHCAndersen',
       'runeberg-org': 'andersen',
       'gutenberg-org': '2298',
@@ -31,6 +32,11 @@ describe('external identifiers', () => {
       {
         id: 'biografisk-leksikon-lex-dk',
         href: 'https://biografiskleksikon.lex.dk/H.C._Andersen',
+      },
+      {
+        id: 'kvindebiografisk-leksikon-lex-dk',
+        href:
+          'https://kvindebiografiskleksikon.lex.dk/Benedicte_Arnesen_Kall',
       },
       {
         id: 'litteraturpriser-dk',
@@ -94,6 +100,7 @@ describe('external identifiers', () => {
       'wikipedia-da': 'H.C. Andersen',
       'litteraturpriser-dk': 'AHCAndersen',
       'biografisk-leksikon-lex-dk': 'H.C._Andersen',
+      'kvindebiografisk-leksikon-lex-dk': 'Benedicte_Arnesen_Kall',
       'lex-dk': 'H.C._Andersen',
     };
 
@@ -104,6 +111,7 @@ describe('external identifiers', () => {
     ).toEqual([
       'lex-dk',
       'biografisk-leksikon-lex-dk',
+      'kvindebiografisk-leksikon-lex-dk',
       'litteraturpriser-dk',
       'teaterleksikon-lex-dk',
       'wikipedia',
