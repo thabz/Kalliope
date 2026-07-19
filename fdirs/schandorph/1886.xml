@@ -959,7 +959,7 @@ tilsidst dog den Stenklumps Sprængning mægter.
 </body>
 </text>
 
-<text id="schandorph2019010213">
+<text id="schandorph2019010213" ignore-tests="mixed-aa-circumflex">
 <head>
     <title>Studium</title>
     <firstline>Ja, det kniber for Per Larsen. Haardt han maa sit Hoved bryde.</firstline>
@@ -3392,8 +3392,8 @@ for Dem, mens de glider ad Aarenes Vande
 </head>
 <body>
 <poetry>
-<nonum><small><right>Kristallen den fina</right></small></nonum>
-<nonum><small><right>som solen månd skina.</right></small></nonum>
+<nonum><small><right lang="sv">Kristallen den fina</right></small></nonum>
+<nonum><small><right lang="sv">som solen månd skina.</right></small></nonum>
 
     Jeg saâ mellem Fjelde
     i en yndig Gazelle,

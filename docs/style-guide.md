@@ -25,6 +25,9 @@ Denne guide samler projektets faste konventioner, især dem der er nemme at glem
 ## XML-data
 
 - Hold XML-beskrivelser korte, kildebaserede og i samme stil som omkringliggende filer.
+- Markér fremmedsprog inde i en tekst med `<span lang="sv">...</span>` og en
+  ISO 639-1-sprogkode. Sæt fortsat `lang` på `<text>`, når hele teksten har
+  samme sprog.
 - Brug eksisterende attributter og formater; ukendte `<picture>`-attributter er build-fejl.
 - Alle tekst- og XML-filer skal være UTF-8 encoded. Konvertér gamle Latin-1/ISO-8859-1-filer i stedet for at videreføre dem.
 - Se også `docs/xml-portraits-format.md` for detaljer om `portraits.xml`.
