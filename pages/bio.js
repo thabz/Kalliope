@@ -3,6 +3,7 @@ import * as OpenGraph from '../common/opengraph.js';
 import { translatePlace } from '../common/place-names.js';
 import _ from '../common/translations.js';
 import { poetCrumbsWithTitle } from '../components/breadcrumbs.js';
+import ExternalIdentifierLinks from '../components/external-identifier-links.js';
 import {
   extractYear,
   formattedAge,
@@ -196,8 +197,16 @@ const Timeline = ({ timeline, lang }) => {
 };
 
 const BioPage = (props) => {
-  const { lang, poet, portraits, content_html, content_lang, timeline, error } =
-    props;
+  const {
+    lang,
+    poet,
+    portraits,
+    content_html,
+    content_lang,
+    timeline,
+    identifiers,
+    error,
+  } = props;
 
   if (error) {
     return <ErrorPage error={error} lang={lang} message="Ukendt person" />;
@@ -207,6 +216,11 @@ const BioPage = (props) => {
       <PersonMeta poet={poet} lang={lang} />
       <div style={{ width: '100%', marginTop: '40px' }}>
         <PersonPortrait poet={poet} portraits={portraits} lang={lang} />
+        <ExternalIdentifierLinks
+          identifiers={identifiers}
+          lang={lang}
+          category="authority"
+        />
       </div>
     </SplitWhenSmall>
   );
@@ -258,6 +272,7 @@ BioPage.getInitialProps = async ({ query: { lang, poetId } }) => {
     content_html: json.content_html,
     content_lang: json.content_lang,
     timeline: json.timeline,
+    identifiers: json.identifiers,
     error: json.error,
   };
 };

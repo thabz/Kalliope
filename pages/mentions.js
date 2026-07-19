@@ -5,6 +5,7 @@ import * as OpenGraph from '../common/opengraph.js';
 import { poetsByLastname } from '../common/sorting.js';
 import _ from '../common/translations.js';
 import { poetCrumbsWithTitle } from '../components/breadcrumbs.js';
+import ExternalIdentifierLinks from '../components/external-identifier-links.js';
 import * as Links from '../components/links.js';
 import { poetMenu } from '../components/menu.js';
 import Page from '../components/page.js';
@@ -238,8 +239,16 @@ const TranslationsSection = (props) => {
 };
 
 const MentionsPage = (props) => {
-  const { lang, poet, mentions, translations, primary, secondary, error } =
-    props;
+  const {
+    lang,
+    poet,
+    mentions,
+    translations,
+    primary,
+    secondary,
+    identifiers,
+    error,
+  } = props;
 
   if (error != null) {
     return <ErrorPage error={error} lang={lang} message="Ukendt person" />;
@@ -262,6 +271,16 @@ const MentionsPage = (props) => {
     .map((g) => {
       return <Section title={g.title} items={g.items} key={g.title} />;
     });
+
+  sections.push(
+    <ExternalIdentifierLinks
+      identifiers={identifiers}
+      lang={lang}
+      category="reference"
+      variant="references"
+      key="external-identifiers"
+    />
+  );
 
   if (translations.length > 0) {
     sections.push(
@@ -301,6 +320,7 @@ MentionsPage.getInitialProps = async ({ query: { lang, poetId } }) => {
     translations: json.translations || [],
     primary: json.primary || [],
     secondary: json.secondary || [],
+    identifiers: json.identifiers || {},
     error: json.error,
   };
 };

@@ -22,6 +22,7 @@ import {
   getChildByTagName,
   getElementsByTagName,
 } from './xml.js';
+import { hasExternalIdentifiers } from './external-identifiers.js';
 
 const knownPoetLanguages = new Set([
   'da',
@@ -256,8 +257,10 @@ const build_poets_json = collected => {
       (mentions != null &&
         (mentions.mention.length > 0 || mentions.translation.length > 0)) ||
       fileExists(`fdirs/${id}/bibliography-primary.xml`) ||
-      fileExists(`fdirs/${id}/bibliography-secondary.xml`);
+      fileExists(`fdirs/${id}/bibliography-secondary.xml`) ||
+      hasExternalIdentifiers(id, 'reference');
     if (has_mentions !== poet.has_mentions) {
+      found_changes = true;
       poet.has_mentions = has_mentions;
       writeJSON(`public/api/${poet.id}.json`, poet);
       collected.poets.set(id, poet);
