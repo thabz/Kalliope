@@ -1,3 +1,5 @@
+import { supportedLanguages } from './languages.js';
+
 const source = (id, category, priority, label, shortLabel, url) => ({
   id,
   category,
@@ -5,7 +7,43 @@ const source = (id, category, priority, label, shortLabel, url) => ({
   label,
   shortLabel,
   url,
+  identifierIds: [id],
+  resolve: (identifiers) => identifiers[id],
 });
+
+const wikipediaIdentifierIds = supportedLanguages.map(
+  (lang) => `wikipedia-${lang}`,
+);
+
+const wikipediaArticleURL = ({ lang, title }) => {
+  const encodedTitle = title
+    .replaceAll(' ', '_')
+    .split('/')
+    .map((part) => encodeURIComponent(part))
+    .join('/');
+  return `https://${lang}.wikipedia.org/wiki/${encodedTitle}`;
+};
+
+const wikipediaSource = {
+  id: 'wikipedia',
+  category: 'reference',
+  priority: 135,
+  label: 'Wikipedia',
+  shortLabel: 'W',
+  url: wikipediaArticleURL,
+  identifierIds: wikipediaIdentifierIds,
+  resolve: (identifiers, lang) => {
+    const requestedLang = supportedLanguages.includes(lang) ? lang : 'en';
+    const requestedTitle = identifiers[`wikipedia-${requestedLang}`];
+    if (requestedTitle != null && requestedTitle !== '') {
+      return { lang: requestedLang, title: requestedTitle };
+    }
+    const englishTitle = identifiers['wikipedia-en'];
+    return englishTitle == null || englishTitle === ''
+      ? null
+      : { lang: 'en', title: englishTitle };
+  },
+};
 
 const externalIdentifierSources = [
   source(
@@ -16,6 +54,7 @@ const externalIdentifierSources = [
     'WD',
     (value) => `https://www.wikidata.org/wiki/${encodeURIComponent(value)}`,
   ),
+  wikipediaSource,
   source(
     'gravsted-dk',
     'reference',
@@ -86,22 +125,31 @@ const externalIdentifierSources = [
   ),
 ];
 
-const externalIdentifierIds = externalIdentifierSources.map(
-  ({ id }) => id,
+const externalIdentifierIds = externalIdentifierSources.flatMap(
+  ({ identifierIds }) => identifierIds,
 );
 
-const buildExternalIdentifierLinks = (identifiers, { category } = {}) => {
+const buildExternalIdentifierLinks = (
+  identifiers,
+  { category, lang = 'da' } = {},
+) => {
   if (identifiers == null) {
     return [];
   }
   return externalIdentifierSources
     .filter((source) => category == null || source.category === category)
-    .filter(({ id }) => identifiers[id] != null && identifiers[id] !== '')
-    .sort((a, b) => a.priority - b.priority)
-    .map(({ url, ...identifierSource }) => ({
-      ...identifierSource,
-      href: url(identifiers[identifierSource.id]),
-    }));
+    .map((source) => ({ source, value: source.resolve(identifiers, lang) }))
+    .filter(({ value }) => value != null && value !== '')
+    .sort((a, b) => a.source.priority - b.source.priority)
+    .map(
+      ({
+        source: { identifierIds, resolve, url, ...identifierSource },
+        value,
+      }) => ({
+        ...identifierSource,
+        href: url(value),
+      }),
+    );
 };
 
 export {

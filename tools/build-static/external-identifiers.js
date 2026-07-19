@@ -2,6 +2,7 @@ import {
   buildExternalIdentifierLinks,
   externalIdentifierIds,
 } from '../../common/external-identifiers.js';
+import { supportedLanguages } from '../../common/languages.js';
 import { loadXMLDoc, safeGetText, getChildByTagName } from './xml.js';
 
 const loadExternalIdentifiers = (poetId) => {
@@ -18,9 +19,12 @@ const loadExternalIdentifiers = (poetId) => {
   return identifiers;
 };
 
-const hasExternalIdentifiers = (poetId, category) =>
-  buildExternalIdentifierLinks(loadExternalIdentifiers(poetId), {
-    category,
-  }).length > 0;
+const hasExternalIdentifiers = (poetId, category) => {
+  const identifiers = loadExternalIdentifiers(poetId);
+  return supportedLanguages.some(
+    (lang) =>
+      buildExternalIdentifierLinks(identifiers, { category, lang }).length > 0,
+  );
+};
 
 export { hasExternalIdentifiers, loadExternalIdentifiers };

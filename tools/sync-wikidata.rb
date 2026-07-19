@@ -5,18 +5,54 @@ require 'net/http'
 require 'json'
 require 'uri'
 
-def fetchWikidataExternalIds(wikidata_id)
+STDOUT.sync = true
+STDERR.sync = true
+
+WIKIPEDIA_LANGUAGES = %w[da en fr de].freeze
+WIKIDATA_MAX_RETRIES = 5
+WIKIDATA_REQUEST_DELAY = 0.25
+WIKIDATA_USER_AGENT = 'Kalliope Wikidata sync (https://kalliope.org/)'
+
+def fetchWikidataEntity(wikidata_id)
   url = URI("https://www.wikidata.org/wiki/Special:EntityData/#{wikidata_id}.json")
-  response = Net::HTTP.get(url)
-  data = JSON.parse(response)
+  attempts = 0
 
-  if data.nil?
-    puts "Kunne ikke hente data for #{wikidata_id}"
-    exit
+  loop do
+    request = Net::HTTP::Get.new(url)
+    request['User-Agent'] = WIKIDATA_USER_AGENT
+    response = Net::HTTP.start(url.hostname, url.port, use_ssl: true) do |http|
+      http.open_timeout = 15
+      http.read_timeout = 30
+      http.request(request)
+    end
+
+    if response.is_a?(Net::HTTPSuccess)
+      sleep WIKIDATA_REQUEST_DELAY
+      data = JSON.parse(response.body)
+      entity = data.dig("entities", wikidata_id)
+
+      if entity.nil? || entity.key?("missing")
+        raise "Kunne ikke finde Wikidata-entiteten #{wikidata_id}"
+      end
+
+      return entity
+    end
+
+    retryable = response.code == '429' || response.code.start_with?('5')
+    unless retryable && attempts < WIKIDATA_MAX_RETRIES
+      raise "Kunne ikke hente data for #{wikidata_id}: HTTP #{response.code}"
+    end
+
+    attempts += 1
+    retry_after = response['Retry-After'].to_i
+    wait_seconds = retry_after.positive? ? retry_after : 2**attempts
+    warn "Wikidata svarede HTTP #{response.code} for #{wikidata_id}; prøver igen om #{wait_seconds} sekunder"
+    sleep wait_seconds
   end
+end
 
+def externalIds(entity)
   # Extract entity data
-  entity = data["entities"][wikidata_id]
   claims = entity["claims"]
 
   external_ids = {}
@@ -32,6 +68,12 @@ def fetchWikidataExternalIds(wikidata_id)
   return external_ids
 end
 
+def wikipediaTitles(entity)
+  WIKIPEDIA_LANGUAGES.to_h do |lang|
+    [lang, entity.dig("sitelinks", "#{lang}wiki", "title")]
+  end
+end
+
 def addIdentifierNode(externalIds, pKey, tag, doc, new_identifiers)
   id = externalIds[pKey]
   if not id.nil?
@@ -45,19 +87,14 @@ end
 
 def buildIdentifiersXml(poetId, wikidataId, doc)
   puts "Building identifiers for #{poetId} with wikidataId #{wikidataId}"
-  externalIds = fetchWikidataExternalIds(wikidataId)
-  if externalIds.nil?
-    puts "Wikidata ikke fundet for {poetId}"
-    exit
-  end
+  entity = fetchWikidataEntity(wikidataId)
+  externalIds = externalIds(entity)
+  wikipediaTitles = wikipediaTitles(entity)
   # Check our id
   if not externalIds['P12404'].nil? and externalIds['P12404'] != poetId
     puts "#{poetId} peger på den forkerte wikidata"
     exit
   end
-  gravsted_dk_id = externalIds['P4359']
-  lex_dk_id = externalIds['P8313']
-  viaf_id = externalIds['P214']
   new_identifiers = Nokogiri::XML::Node.new("identifiers", doc)
   wikidataNode = Nokogiri::XML::Node.new('wikidata', doc)
   wikidataNode.content = wikidataId
@@ -65,6 +102,9 @@ def buildIdentifiersXml(poetId, wikidataId, doc)
   new_identifiers.add_child("    ")
   new_identifiers.add_child(wikidataNode)
   new_identifiers.add_child("\n")
+  WIKIPEDIA_LANGUAGES.each do |lang|
+    addIdentifierNode(wikipediaTitles, lang, "wikipedia-#{lang}", doc, new_identifiers)
+  end
   addIdentifierNode(externalIds, 'P4359', 'gravsted-dk', doc, new_identifiers)
   addIdentifierNode(externalIds, 'P214', 'viaf', doc, new_identifiers)
   addIdentifierNode(externalIds, 'P8313', 'lex-dk', doc, new_identifiers)

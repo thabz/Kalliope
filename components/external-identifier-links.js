@@ -8,7 +8,7 @@ const ExternalIdentifierLinks = ({
   category,
   variant = 'sidebar',
 }) => {
-  const links = buildExternalIdentifierLinks(identifiers, { category });
+  const links = buildExternalIdentifierLinks(identifiers, { category, lang });
   if (links.length === 0) {
     return null;
   }
