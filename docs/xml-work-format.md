@@ -143,6 +143,7 @@ Anden verslinje
 Attributter paa `<text>`:
 
 - `id`: globalt tekst-id. Bruges i URL'er og links.
+- `author`: valgfrit forfatter-id, hvis teksten har en anden forfatter end værket.
 - `variant`: tekst-id for en variant af samme tekst. Variantgrafen bliver symmetrisk.
 - `aliases`: komma-separerede gamle id'er, der skal redirecte til denne tekst.
 - `skip-index`: hvis sat, udelades teksten fra titel/foerstelinjeindekser.
