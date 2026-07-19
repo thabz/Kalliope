@@ -138,6 +138,7 @@ const renderPageWithPdftoppm = async (
   try {
     await command('pdftoppm', [
       '-jpeg',
+      '-cropbox',
       '-f',
       String(page),
       '-l',
