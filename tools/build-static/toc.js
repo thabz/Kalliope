@@ -150,12 +150,14 @@ const build_works_toc = async (collected) => {
   collected.poets.forEach((poet, poetId) => {
     safeMkdir(`public/api/${poetId}`);
     const workFilenames = workFilesForPoet(poetId);
-    const poetWorksModified = isFileModified(
-      'tools/build-static/toc.js',
-      'tools/build-static/anthologies.js',
-      `fdirs/${poetId}/info.xml`,
-      ...workFilenames
-    );
+    const poetWorksModified =
+      collected.poetMetadataDirty?.has(poetId) ||
+      isFileModified(
+        'tools/build-static/toc.js',
+        'tools/build-static/anthologies.js',
+        `fdirs/${poetId}/info.xml`,
+        ...workFilenames
+      );
     const pageWorks = worksForPaging(poetId, poet);
     poetData.set(poetId, { pageWorks, poet, poetWorksModified });
     worksForPoet(collected, poetId).forEach(work => {
@@ -167,6 +169,7 @@ const build_works_toc = async (collected) => {
     const { pageWorks, poet, poetWorksModified } = poetData.get(poetId);
     if (workMeta.virtualType === 'anthology') {
       if (
+        !poetWorksModified &&
         !isFileModified(
           'tools/build-static/toc.js',
           'tools/build-static/anthologies.js',

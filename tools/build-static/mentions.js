@@ -9,6 +9,7 @@ import {
   writeJSON,
   htmlToXml,
   fileExists,
+  removeFile,
 } from '../libs/helpers.js';
 import {
   loadXMLDoc,
@@ -337,10 +338,11 @@ const build_mentions_json = (collected) => {
   };
 
   collected.poets.forEach((poet, poetId) => {
+    const outFilename = `public/api/${poet.id}/mentions.json`;
     if (!poet.has_mentions) {
+      removeFile(outFilename);
       return;
     }
-    const outFilename = `public/api/${poet.id}/mentions.json`;
     const biblioFilesAreModifed =
       isFileModified(`fdirs/${poet.id}/bibliography-primary.xml`) ||
       isFileModified(`fdirs/${poet.id}/bibliography-secondary.xml`);
@@ -353,6 +355,7 @@ const build_mentions_json = (collected) => {
       biblioFilesAreModifed ||
       externalIdentifiersModified ||
       person_mentions_dirty.has(poet.id) ||
+      collected.poetMetadataDirty?.has(poet.id) ||
       !fileExists(outFilename);
     if (!shouldRebuild) {
       return;

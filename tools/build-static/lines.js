@@ -174,7 +174,9 @@ const build_poet_lines_json = (collected) => {
     const filenames = Array.from(
       new Set(poetTexts.flatMap(sourceFilesForText))
     );
+    const poetMetadataModified = collected.poetMetadataDirty?.has(poetId);
     if (
+      !poetMetadataModified &&
       !isFileModified(
         'tools/build-static/lines.js',
         'tools/build-static/anthologies.js',

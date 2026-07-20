@@ -249,9 +249,8 @@ const build_poets_first_pass = collected => {
 };
 
 const build_poets_json = collected => {
-  all_poet_ids().forEach(id => {
-    const poet = collected.poets.get(id);
-
+  const poetMetadataDirty = new Set();
+  collected.poets.forEach((poet, id) => {
     const mentions = collected.person_or_keyword_refs.get(id);
     const has_mentions =
       (mentions != null &&
@@ -262,6 +261,7 @@ const build_poets_json = collected => {
     const mentionsChanged = has_mentions !== poet.has_mentions;
     if (mentionsChanged) {
       poet.has_mentions = has_mentions;
+      poetMetadataDirty.add(id);
       collected.poets.set(id, poet);
     }
     const sourceFiles = Array.from(
@@ -284,6 +284,7 @@ const build_poets_json = collected => {
     }
   });
   writeCachedJSON('collected.poets', Array.from(collected.poets));
+  return poetMetadataDirty;
 };
 
 const build_poets_by_country_json = collected => {

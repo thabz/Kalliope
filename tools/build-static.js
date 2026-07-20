@@ -190,8 +190,10 @@ const build_bio_json = async (collected) => {
     Array.from(collected.poets.entries()),
     async (entry) => {
       const [poetId, poet] = entry;
+      const poetMetadataModified = collected.poetMetadataDirty?.has(poetId);
       // Skip if all of the participating xml files aren't modified
       if (
+        !poetMetadataModified &&
         !codeModified &&
         !artworkModified &&
         !isFileModified(
@@ -277,7 +279,10 @@ const handle_text = async (
       `fdirs/${sourcePoetId}/info.xml`,
       `fdirs/${sourcePoetId}/${sourceWorkId}.xml`,
     ];
-  if (!isFileModified(...sourceFiles)) {
+  if (
+    !collected.poetMetadataDirty?.has(poetId) &&
+    !isFileModified(...sourceFiles)
+  ) {
     return;
   }
   const poet = collected.poets.get(poetId);
@@ -1179,7 +1184,13 @@ const works_second_pass = async (collected) => {
         );
       }
     });
-    if (!isFileModified(...sourceFiles)) {
+    const poetMetadataModified = Array.from(collected.texts.values()).some(
+      text =>
+        (text.sourcePoetId || text.poetId) === poetId &&
+        (text.sourceWorkId || text.workId) === workId &&
+        collected.poetMetadataDirty?.has(text.poetId)
+    );
+    if (!poetMetadataModified && !isFileModified(...sourceFiles)) {
       return;
     }
     let doc = loadXMLDoc(filename);
@@ -1247,6 +1258,7 @@ const build_poet_works_json = (collected) => {
       new Set(poetWorks.flatMap(work => work.sourceFiles || []))
     );
     if (
+      !collected.poetMetadataDirty?.has(poetId) &&
       !isFileModified(
         'tools/build-static.js',
         'tools/build-static/anthologies.js',
@@ -1367,7 +1379,11 @@ const main = async () => {
     build_person_or_keyword_refs,
     collected,
   );
-  await b('build_poets_json', build_poets_json, collected);
+  collected.poetMetadataDirty = await b(
+    'build_poets_json',
+    build_poets_json,
+    collected,
+  );
   await b(
     'mark_ref_destinations_dirty',
     mark_ref_destinations_dirty,

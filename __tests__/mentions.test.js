@@ -8,8 +8,9 @@ jest.mock('../tools/libs/caching.js', () => ({
 jest.mock('../tools/libs/helpers.js', () => ({
   safeMkdir: () => {},
   writeJSON: jest.fn(),
+  removeFile: jest.fn(),
   htmlToXml: (html) => html,
-  fileExists: () => false,
+  fileExists: jest.fn(() => false),
 }));
 
 jest.mock('../tools/build-static/xml.js', () => ({
@@ -24,7 +25,11 @@ jest.mock('../tools/build-static/xml.js', () => ({
   safeGetInnerXML: () => '',
 }));
 
-import { writeJSON } from '../tools/libs/helpers.js';
+import {
+  fileExists,
+  removeFile,
+  writeJSON,
+} from '../tools/libs/helpers.js';
 import {
   build_mentions_data,
   build_mentions_json,
@@ -52,6 +57,12 @@ const work = (id, year) => ({
 });
 
 describe('mentions data', () => {
+  beforeEach(() => {
+    fileExists.mockReturnValue(false);
+    removeFile.mockClear();
+    writeJSON.mockClear();
+  });
+
   const buildCollected = () => {
     const reboul = poet('reboul', 'Jean', 'Reboul');
     const aarestrup = poet('aarestrup', 'Emil', 'Aarestrup');
@@ -161,5 +172,20 @@ describe('mentions data', () => {
         ]),
       })
     );
+  });
+
+  it('fjerner forældet mentions-json uden henvisninger', () => {
+    const collected = buildCollected();
+    collected.poets.get('reboul').has_mentions = false;
+    fileExists.mockImplementation(
+      filename => filename === 'public/api/reboul/mentions.json'
+    );
+
+    build_mentions_json(collected);
+
+    expect(removeFile).toHaveBeenCalledWith(
+      'public/api/reboul/mentions.json'
+    );
+    expect(writeJSON).not.toHaveBeenCalled();
   });
 });
