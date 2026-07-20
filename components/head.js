@@ -18,6 +18,8 @@ const Head = ({
   url,
   ogImage,
   requestPath,
+  canonicalPath,
+  noIndex = false,
 }) => {
   const appleTouchIcons = [180, 152, 120, 76, 60].map((s) => {
     const x = `${s}x${s}`;
@@ -35,9 +37,10 @@ const Head = ({
     ogImageAbsolute = `${urlPrefix}${ogImageAbsolute}`;
   }
   let hreflangs = [];
-  if (requestPath != null) {
+  const metadataPath = canonicalPath || requestPath;
+  if (metadataPath != null) {
     hreflangs = supportedLanguages.map((lang) => {
-      const alternatePath = requestPath.replace(/^\/../, '/' + lang);
+      const alternatePath = metadataPath.replace(/^\/../, '/' + lang);
       const alternateURL = urlPrefix + alternatePath;
       return (
         <link rel="alternate" hrefLang={lang} href={alternateURL} key={lang} />
@@ -46,8 +49,8 @@ const Head = ({
   }
   let canonical = null;
   let ogURL = null;
-  if (requestPath != null) {
-    const url = urlPrefix + requestPath;
+  if (metadataPath != null) {
+    const url = urlPrefix + metadataPath;
     canonical = <link rel="canonical" href={url} />;
     ogURL = <meta property="og:url" content={url} />;
   }
@@ -57,6 +60,7 @@ const Head = ({
       <title>{headTitle || ogTitle || ''}</title>
       <meta name="description" content={description || defaultDescription} />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
+      {noIndex ? <meta name="robots" content="noindex,follow" /> : null}
       <link rel="icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
       <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       {appleTouchIcons}

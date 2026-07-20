@@ -364,7 +364,8 @@ const TextPage = (props) => {
     }
     const firstPageNumber = text.source.facsimilePages[0];
     let facsimilePictures = [];
-    const srcPrefix = `https://kalliope.org/static/facsimiles/${poet.id}/${text.source.facsimile}`;
+    const facsimilePoetId = text.source.facsimilePoetId || poet.id;
+    const srcPrefix = `https://kalliope.org/static/facsimiles/${facsimilePoetId}/${text.source.facsimile}`;
     for (let i = 0; i < text.source.facsimilePageCount; i++) {
       facsimilePictures.push({
         src: srcPrefix + '/' + pad(i, 3) + '.jpg',
@@ -574,6 +575,8 @@ const TextPage = (props) => {
       ogImage={OpenGraph.poetImage(poet)}
       ogDescription={ogDescription}
       requestPath={`/${lang}/text/${text.id}`}
+      canonicalPath={`/${lang}/text/${text.canonical_id || text.id}`}
+      noIndex={text.indexable === false}
       crumbs={textCrumbs(lang, poet, work, section_titles || [], text)}
       paging={paging}
       pageTitle={<PoetName poet={poet} includePeriod />}

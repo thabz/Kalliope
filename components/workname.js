@@ -12,6 +12,8 @@ const WorkName = ({ work, cursive = false, useTitle = 'title' }) => {
 
   if (work.id == 'andre') {
     titleTranslated = _('Andre digte', lang);
+  } else if (work.virtualType === 'anthology' || work.id === 'antologier') {
+    titleTranslated = _('Tekster i andre udgivelser', lang);
   }
   let titlePart = <span>{titleTranslated}</span>;
   let yearPart = null;
@@ -53,6 +55,10 @@ const WorkName = ({ work, cursive = false, useTitle = 'title' }) => {
 export default WorkName;
 
 export function workTitleString(work, lang = 'da') {
-  const { title, year } = work;
+  const { year } = work;
+  const title =
+    work.virtualType === 'anthology' || work.id === 'antologier'
+      ? _('Tekster i andre udgivelser', lang)
+      : work.title;
   return Dates.formatTitleAndYear(title, year, lang);
 }

@@ -12,10 +12,17 @@ const sortWorks = (poet, works) => {
     return [...works];
   } else {
     return [...works].sort((a, b) => {
-      if (a.id === 'andre') {
-        return 1;
-      } else if (b.id === 'andre') {
-        return -1;
+      const trailingRank = work => {
+        if (work.virtualType === 'anthology' || work.id === 'antologier') {
+          return 2;
+        } else if (work.id === 'andre') {
+          return 1;
+        }
+        return 0;
+      };
+      const rankDifference = trailingRank(a) - trailingRank(b);
+      if (rankDifference !== 0) {
+        return rankDifference;
       } else {
         const aKey = a.year == null ? a.title : sortableYear(a.year) + a.id;
         const bKey = b.year == null ? b.title : sortableYear(b.year) + b.id;
