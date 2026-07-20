@@ -91,6 +91,7 @@ import {
 import { mapLimit } from './build-static/concurrency.js';
 import { build_works_toc, build_section_toc } from './build-static/toc.js';
 import { update_elasticsearch } from './build-static/elastic.js';
+import { loadExternalIdentifiers } from './build-static/external-identifiers.js';
 import {
   build_textrefs,
   mark_ref_destinations_dirty,
@@ -167,6 +168,8 @@ const build_bio_json = async (collected) => {
     'tools/build-static/museums.js',
     'tools/build-static/timeline.js',
     'tools/build-static/parsing.js',
+    'tools/build-static/external-identifiers.js',
+    'common/external-identifiers.js',
   );
   const artworkModified = isFileModified(
     'data/museums.xml',
@@ -202,6 +205,7 @@ const build_bio_json = async (collected) => {
       const data = {
         poet,
         content_html: null,
+        identifiers: loadExternalIdentifiers(poet.id),
       };
       const doc = loadXMLDoc(bioXmlPath);
       if (doc != null) {

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="rosenfeld" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Rosalie</firstname>
+    <lastname>Rosenfeld</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1852-07-02</date>
+    </born>
+    <dead>
+      <date>1925-10-09</date>
+    </dead>
+  </period>
+  <identifiers>
+    <litteraturpriser-dk>RRosalieRosenfeld</litteraturpriser-dk>
+    <runeberg-org>rosenros</runeberg-org>
+  </identifiers>
+</person>

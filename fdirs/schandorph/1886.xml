@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1886" author="schandorph" status="complete" type="poetry">
+<kalliopework id="1886" author="schandorph" status="complete" type="poetry" ignore-tests="mixed-aa-circumflex,single-circumflex-a-in-text">
 <workhead>
     <title>Fest- og Søgnedage</title>
     <year>1886</year>
@@ -331,7 +331,7 @@ dejlige, dumme Filistre.
 </body>
 </text>
 
-<text id="schandorph2019010205">
+<text id="schandorph2019010205" ignore-tests="repeated-adjacent-word">
 <head>
     <title><num>II.</num>Ved Soranernes Holberg-Fest</title>
     <toctitle><num>II.</num>Ved Soranernes Holberg-Fest</toctitle>
@@ -959,7 +959,7 @@ tilsidst dog den Stenklumps Sprængning mægter.
 </body>
 </text>
 
-<text id="schandorph2019010213">
+<text id="schandorph2019010213" ignore-tests="mixed-aa-circumflex">
 <head>
     <title>Studium</title>
     <firstline>Ja, det kniber for Per Larsen. Haardt han maa sit Hoved bryde.</firstline>
@@ -3392,8 +3392,8 @@ for Dem, mens de glider ad Aarenes Vande
 </head>
 <body>
 <poetry>
-<nonum><small><right>Kristallen den fina</right></small></nonum>
-<nonum><small><right>som solen månd skina.</right></small></nonum>
+<nonum><small><right lang="sv">Kristallen den fina</right></small></nonum>
+<nonum><small><right lang="sv">som solen månd skina.</right></small></nonum>
 
     Jeg saâ mellem Fjelde
     i en yndig Gazelle,

@@ -48,6 +48,7 @@
         <ref name="xref"/>
         <ref name="b"/>
         <ref name="i"/>
+        <ref name="span"/>
         <ref name="sc"/>
         <ref name="small"/>
         <ref name="sup"/>
@@ -85,6 +86,7 @@
       <optional><attribute name="status"><text/></attribute></optional>
       <optional><attribute name="type"><text/></attribute></optional>
       <optional><attribute name="parent"><text/></attribute></optional>
+      <optional><attribute name="ignore-tests"><text/></attribute></optional>
       <ref name="workhead"/>
       <optional><ref name="workbody"/></optional>
     </element>
@@ -96,6 +98,7 @@
   <define name="textElement">
     <element name="text">
       <optional><attribute name="id"><text/></attribute></optional>
+      <optional><attribute name="author"><text/></attribute></optional>
       <optional><attribute name="variant"><text/></attribute></optional>
       <optional><attribute name="aliases"><text/></attribute></optional>
       <optional><attribute name="skip-index"><text/></attribute></optional>
@@ -146,6 +149,7 @@
   <define name="title">
     <element name="title">
       <optional><attribute name="force-index"><text/></attribute></optional>
+      <optional><attribute name="lang"><text/></attribute></optional>
       <ref name="mixed"/>
     </element>
   </define>
@@ -302,9 +306,25 @@
   <define name="quality"><element name="quality"><ref name="simpleElement"/></element></define>
   <define name="pictures"><element name="pictures"><ref name="simpleElement"/></element></define>
   <define name="b"><element name="b"><ref name="simpleElement"/></element></define>
-  <define name="i"><element name="i"><ref name="simpleElement"/></element></define>
+  <define name="i">
+    <element name="i">
+      <optional><attribute name="lang"><text/></attribute></optional>
+      <ref name="simpleElement"/>
+    </element>
+  </define>
+  <define name="span">
+    <element name="span">
+      <attribute name="lang"><text/></attribute>
+      <ref name="simpleElement"/>
+    </element>
+  </define>
   <define name="sc"><element name="sc"><ref name="simpleElement"/></element></define>
-  <define name="small"><element name="small"><ref name="simpleElement"/></element></define>
+  <define name="small">
+    <element name="small">
+      <optional><attribute name="lang"><text/></attribute></optional>
+      <ref name="simpleElement"/>
+    </element>
+  </define>
   <define name="sup"><element name="sup"><ref name="simpleElement"/></element></define>
   <define name="s"><element name="s"><ref name="simpleElement"/></element></define>
   <define name="u"><element name="u"><ref name="simpleElement"/></element></define>
@@ -312,11 +332,21 @@
   <define name="nonum"><element name="nonum"><ref name="simpleElement"/></element></define>
   <define name="resetnum"><element name="resetnum"><ref name="simpleElement"/></element></define>
   <define name="center"><element name="center"><ref name="simpleElement"/></element></define>
-  <define name="right"><element name="right"><ref name="simpleElement"/></element></define>
+  <define name="right">
+    <element name="right">
+      <optional><attribute name="lang"><text/></attribute></optional>
+      <ref name="simpleElement"/>
+    </element>
+  </define>
   <define name="margin"><element name="margin"><ref name="simpleElement"/></element></define>
   <define name="metrik"><element name="metrik"><ref name="simpleElement"/></element></define>
   <define name="wrap"><element name="wrap"><ref name="simpleElement"/></element></define>
-  <define name="line"><element name="line"><ref name="simpleElement"/></element></define>
+  <define name="line">
+    <element name="line">
+      <optional><attribute name="lang"><text/></attribute></optional>
+      <ref name="simpleElement"/>
+    </element>
+  </define>
   <define name="br"><element name="br"><ref name="simpleElement"/></element></define>
   <define name="footnote"><element name="footnote"><ref name="simpleElement"/></element></define>
   <define name="biblio"><element name="biblio"><ref name="simpleElement"/></element></define>
@@ -324,5 +354,10 @@
   <define name="block-center"><element name="block-center"><ref name="simpleElement"/></element></define>
   <define name="two-columns"><element name="two-columns"><ref name="simpleElement"/></element></define>
   <define name="column"><element name="column"><ref name="simpleElement"/></element></define>
-  <define name="w"><element name="w"><ref name="simpleElement"/></element></define>
+  <define name="w">
+    <element name="w">
+      <optional><attribute name="lang"><text/></attribute></optional>
+      <ref name="simpleElement"/>
+    </element>
+  </define>
 </grammar>

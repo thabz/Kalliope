@@ -185,11 +185,16 @@ portrætter, artwork, bio eller mentions.
 ```xml
 <identifiers>
   <wikidata>Q5673</wikidata>
+  <wikipedia-da>H.C. Andersen</wikipedia-da>
+  <wikipedia-en>Hans Christian Andersen</wikipedia-en>
+  <wikipedia-fr>Hans Christian Andersen</wikipedia-fr>
+  <wikipedia-de>Hans Christian Andersen</wikipedia-de>
   <gravsted-dk>hcandersen</gravsted-dk>
   <viaf>4925902</viaf>
   <lex-dk>H.C._Andersen</lex-dk>
   <teaterleksikon-lex-dk>H.C._Andersen</teaterleksikon-lex-dk>
   <biografisk-leksikon-lex-dk>H.C._Andersen</biografisk-leksikon-lex-dk>
+  <kvindebiografisk-leksikon-lex-dk>Benedicte_Arnesen_Kall</kvindebiografisk-leksikon-lex-dk>
   <litteraturpriser-dk>AHCAndersen</litteraturpriser-dk>
   <runeberg-org>andersen</runeberg-org>
   <gutenberg-org>2298</gutenberg-org>
@@ -202,14 +207,33 @@ og er derfor en del af formatet.
 Almindelige felter:
 
 - `<wikidata>`
+- `<wikipedia-da>`, `<wikipedia-en>`, `<wikipedia-fr>` og `<wikipedia-de>`
 - `<viaf>`
 - `<gravsted-dk>`
 - `<lex-dk>`
 - `<teaterleksikon-lex-dk>`
 - `<biografisk-leksikon-lex-dk>`
+- `<kvindebiografisk-leksikon-lex-dk>`
 - `<litteraturpriser-dk>`
 - `<runeberg-org>`
 - `<gutenberg-org>`
+
+Wikipedia-felterne indeholder artikeltitler fra Wikidatas sitelinks. Grænsefladen
+vælger feltet for det aktuelle Kalliope-sprog og falder tilbage til
+`<wikipedia-en>`, hvis der ikke findes en artikel på det aktuelle sprog. Hvis
+begge mangler, vises der ikke et Wikipedia-link. Felterne opdateres sammen med
+de øvrige eksterne id'er af `tools/sync-wikidata.rb`. Kør synkroniseringen i
+dens kortlivede værktøjscontainer:
+
+```sh
+docker-compose run --rm wikidata-sync
+```
+
+Angiv eventuelt en eller flere digter-id'er for kun at synkronisere dem:
+
+```sh
+docker-compose run --rm wikidata-sync pope andersen
+```
 
 Der kan findes andre sjældne id-felter i data; de bør dokumenteres her, når de får aktiv brug.
 

@@ -1,3 +1,13 @@
+FROM ruby:3.4-slim AS wikidata-sync
+
+WORKDIR /app
+
+RUN gem install nokogiri --no-document
+
+COPY tools/sync-wikidata.rb ./tools/sync-wikidata.rb
+
+ENTRYPOINT ["ruby", "tools/sync-wikidata.rb"]
+
 FROM node:20-bullseye-slim AS build
 
 ENV NPM_CONFIG_UPDATE_NOTIFIER=false

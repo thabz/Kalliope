@@ -141,7 +141,10 @@ const regexps = [
   /^.*[^\.]\.\s*[a-z;]\s*$/, // Løse bogstaver efter sidste punktum
   { testName: 'loose-letters', regexp: / [a-hj-np-z]\s*$/m, onlylangs: ['da'] }, // Løst bogstav sidst på dansk linje. Tillad i og o.
   { testName: 'loose-letters', regexp: / [b-z]\s*$/m, onlylangs: ['en'] }, // Løst bogstav sidst på engelsk linje. Tillad a.
-  { regexp: /[a-zæøå],[a-zæøå]/, whitelist: [/<keywords>/, /<quality>/] },
+  {
+    regexp: /[a-zæøå],[a-zæøå]/,
+    whitelist: [/<keywords>/, /<quality>/, /\signore-tests="[^"]*,/],
+  },
   { regexp: /mmm/, whitelist: [/<note>.*\]/] },
   ///iii/, // Problematisk da den rammer lowercase romertal. Fiks fejlere og drop reglen.
   /\s,\s*$/m, // luft foran afsluttende komma

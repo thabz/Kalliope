@@ -119,6 +119,18 @@ const replaceDashes = html => {
   );
 };
 
+const splitMultilineLanguageSpans = html =>
+  html.replace(
+    /<span(\s+[^>]*\blang="[^"]+"[^>]*)>([\s\S]*?)<\/span>/g,
+    (_, attributes, content) => {
+      const openingTag = `<span${attributes}>`;
+      return `${openingTag}${content.replaceAll(
+        '\n',
+        `</span>\n${openingTag}`
+      )}</span>`;
+    }
+  );
+
 const htmlToXml = (html, collected, isPoetry) => {
   if (html == null) {
     return null;
@@ -141,25 +153,27 @@ const htmlToXml = (html, collected, isPoetry) => {
       return /^[ \t]+<!--.*?-->[ \t]+$/.test(match) ? ' ' : '';
     })
     .replace(/::NEWLINE-PLACEHOLDER::/g, '\n');
-  let decoded = decodeXmlCharacterReferences(
-    replaceDashes(
-      html
-        .replace(/\n *(----*) *\n/g, (match, p1) => {
-          return `\n<hr width="${p1.length}"/>\n`;
-        })
-        .replace(/\n *(====*) *\n/g, (match, p1) => {
-          return `\n<hr width="${p1.length}" class="double"/>\n`;
-        })
-        .replace(/^( +)/gm, (match, p1) => {
-          return '\u00a0'.repeat(2 * p1.length);
-        })
-        .replace(/^( *[_\*\- ]+ *)$/gm, (match, p1) => {
-          // <nonum> på afskillerlinjer som f.eks. "* * *" eller "___"
-          return `<nonum>${p1}</nonum>`;
-        })
-        .replace(/^\n/, '')
-        .replace(/^ *(<right>.*)$/gm, '$1')
-        .replace(/^ *(<center>.*)$/gm, '$1')
+  let decoded = splitMultilineLanguageSpans(
+    decodeXmlCharacterReferences(
+      replaceDashes(
+        html
+          .replace(/\n *(----*) *\n/g, (match, p1) => {
+            return `\n<hr width="${p1.length}"/>\n`;
+          })
+          .replace(/\n *(====*) *\n/g, (match, p1) => {
+            return `\n<hr width="${p1.length}" class="double"/>\n`;
+          })
+          .replace(/^( +)/gm, (match, p1) => {
+            return '\u00a0'.repeat(2 * p1.length);
+          })
+          .replace(/^( *[_\*\- ]+ *)$/gm, (match, p1) => {
+            // <nonum> på afskillerlinjer som f.eks. "* * *" eller "___"
+            return `<nonum>${p1}</nonum>`;
+          })
+          .replace(/^\n/, '')
+          .replace(/^ *(<right>.*)$/gm, '$1')
+          .replace(/^ *(<center>.*)$/gm, '$1')
+      )
     )
   );
 

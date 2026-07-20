@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1879" author="schandorph" status="complete" type="poetry">
+<kalliopework id="1879" author="schandorph" status="complete" type="poetry" ignore-tests="mixed-aa-circumflex,single-circumflex-a-in-text">
 <workhead>
     <title>Unge Dage</title>
     <year>1879</year>
@@ -197,7 +197,7 @@ Man flokkes om ham, man anticiperer
 den store Nydelse med henrykt Sind;
 kun en af Vinen døsig, ung Grosserer
 i Sofahjørnet sagte slumrer ind.
-Skoflikkeren, der Mollberg gav ,,på truten'',
+Skoflikkeren, der Mollberg gav ,,<span lang="sv">på truten</span>'',
 fordi han spillede den polske Dans,
 blev foredragen med en Elegans,
 en let Hengliden, saa at paa Minuten
@@ -2139,7 +2139,7 @@ at der er meget Godt ved Brændevin.''
 </body>
 </text>
 
-<text id="schandorph2018080312">
+<text id="schandorph2018080312" ignore-tests="mixed-aa-circumflex">
 <head>
     <title><num>12. Sang</num>Paa Vagt. Tilbagetoget</title>
     <toctitle><num>12. Sang</num>Paa Vagt. Tilbagetoget</toctitle>

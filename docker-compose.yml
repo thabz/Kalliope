@@ -80,5 +80,14 @@ services:
     command: >
       sh -c "npm run build-facsimiles -- all"
 
+  wikidata-sync:
+    build:
+      context: .
+      target: wikidata-sync
+    profiles:
+      - tools
+    volumes:
+      - ./fdirs:/app/fdirs
+
 volumes:
   esdata:

@@ -10,6 +10,12 @@ describe('translations helper', () => {
     expect(_('Gendigtning', 'fr')).toBe('Adaptation');
     expect(_('Digtere', 'fr')).toBe('Poètes');
     expect(_('Noter', 'fr')).toBe('Notes');
+    expect(_('Identifikatorer', 'en')).toBe('Identifiers');
+    expect(_('Identifikatorer', 'de')).toBe('Identifikatoren');
+    expect(_('Identifikatorer', 'fr')).toBe('Identifiants');
+    expect(_('Eksterne ressourcer', 'en')).toBe('External resources');
+    expect(_('Eksterne ressourcer', 'de')).toBe('Externe Ressourcen');
+    expect(_('Eksterne ressourcer', 'fr')).toBe('Ressources externes');
   });
 
   it('falls back to the original string when missing', () => {
