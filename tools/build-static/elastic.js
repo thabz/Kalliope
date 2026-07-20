@@ -13,6 +13,11 @@ import {
 } from './xml.js';
 import elasticSearchClient from '../libs/elasticsearch-client.js';
 import { mapLimit } from './concurrency.js';
+import {
+  sourceWorkFilename,
+  textsForWork,
+  worksForPoet,
+} from './anthologies.js';
 
 const elasticsearchConcurrency = Math.max(
   1,
@@ -27,6 +32,7 @@ const elasticsearchForceRebuild = ['1', 'true', 'yes'].includes(
 );
 const elasticsearchCodeSourceFiles = [
   'tools/build-static/elastic.js',
+  'tools/build-static/anthologies.js',
   'tools/build-static/xml.js',
   'tools/libs/elasticsearch-client.js',
   'tools/libs/helpers.js',
@@ -34,22 +40,29 @@ const elasticsearchCodeSourceFiles = [
 
 const getElasticsearchTextEntryKey = (poetId, workId) => `${poetId}-${workId}`;
 
-const getElasticsearchTextEntrySourceFiles = (poetId, workId) => [
-  `fdirs/${poetId}/info.xml`,
-  `fdirs/${poetId}/${workId}.xml`,
-];
+const getElasticsearchTextEntrySourceFiles = (poetId, workId, work) =>
+  work.sourceFiles || [
+    `fdirs/${poetId}/info.xml`,
+    `fdirs/${poetId}/${workId}.xml`,
+  ];
 
 const buildElasticsearchTextEntries = collected => {
   const entries = [];
 
   collected.poets.forEach((poet, poetId) => {
-    collected.workids.get(poetId).forEach(workId => {
+    worksForPoet(collected, poetId).forEach(work => {
+      const workId = work.id;
       entries.push({
         poet,
         poetId,
         workId,
+        work,
         textEntryKey: getElasticsearchTextEntryKey(poetId, workId),
-        sourceFiles: getElasticsearchTextEntrySourceFiles(poetId, workId),
+        sourceFiles: getElasticsearchTextEntrySourceFiles(
+          poetId,
+          workId,
+          work
+        ),
       });
     });
   });
@@ -64,7 +77,7 @@ const getChangedElasticsearchTextEntries = textEntries => {
   textEntries.forEach(entry => {
     if (isFileModified(`fdirs/${entry.poetId}/info.xml`)) {
       modifiedPoetIds.add(entry.poetId);
-    } else if (isFileModified(`fdirs/${entry.poetId}/${entry.workId}.xml`)) {
+    } else if (isFileModified(...entry.sourceFiles)) {
       modifiedTextEntryKeys.add(entry.textEntryKey);
     }
   });
@@ -106,25 +119,17 @@ const buildElasticsearchPoetEntries = collected => {
 };
 
 const buildElasticsearchTextEntryDocuments = (collected, entry) => {
-  const { poet, poetId, workId, textEntryKey } = entry;
-  const filename = `fdirs/${poetId}/${workId}.xml`;
-  let doc = loadXMLDoc(filename);
-  const work = getElementByTagName(doc, 'kalliopework');
-  const workBody = getElementByTagName(work, 'workbody');
-  const status = safeGetAttr(work, 'status');
-  const type = safeGetAttr(work, 'type');
-  const head = getChildByTagName(work, 'workhead');
-  const title = safeGetText(head, 'title');
-  const year = safeGetText(head, 'year');
+  const { poet, poetId, workId, textEntryKey, work: workMeta } = entry;
   const workData = {
     id: workId,
-    title,
-    year,
-    status,
-    type,
+    title: workMeta.title,
+    year: workMeta.year,
+    status: workMeta.status,
+    type: workMeta.type,
+    virtualType: workMeta.virtualType,
   };
   const documents =
-    title === 'Andre digte'
+    workData.title === 'Andre digte' || workMeta.virtualType === 'anthology'
       ? []
       : [
           {
@@ -137,12 +142,7 @@ const buildElasticsearchTextEntryDocuments = (collected, entry) => {
           },
         ];
 
-  if (workBody == null) {
-    return documents;
-  }
-
-  getElementsByTagNames(workBody, ['text', 'section']).forEach(text => {
-    const textId = safeGetAttr(text, 'id');
+  const appendTextDocument = (text, textId) => {
     if (tagName(text) === 'section' && textId == null) {
       return;
     }
@@ -200,7 +200,43 @@ const buildElasticsearchTextEntryDocuments = (collected, entry) => {
         ...data,
       },
     });
-  });
+  };
+
+  if (workMeta.virtualType === 'anthology') {
+    textsForWork(collected, poetId, workId).forEach(textMeta => {
+      const filename = sourceWorkFilename(textMeta);
+      const doc = loadXMLDoc(filename);
+      const sourceText = getElementsByTagNames(doc, ['text', 'section']).find(
+        text => safeGetAttr(text, 'id') === textMeta.sourceTextId
+      );
+      if (sourceText == null) {
+        throw new Error(
+          `${filename} mangler antologiteksten ${textMeta.sourceTextId}.`
+        );
+      }
+      appendTextDocument(sourceText, textMeta.id);
+    });
+  } else {
+    const filename = `fdirs/${poetId}/${workId}.xml`;
+    const doc = loadXMLDoc(filename);
+    const work = getElementByTagName(doc, 'kalliopework');
+    const workBody = getElementByTagName(work, 'workbody');
+    if (workBody != null) {
+      getElementsByTagNames(workBody, ['text', 'section']).forEach(text => {
+        const textId = safeGetAttr(text, 'id');
+        const textMeta = collected.texts.get(textId);
+        if (
+          textMeta != null &&
+          textMeta.placement === 'author' &&
+          textMeta.sourcePoetId === poetId &&
+          textMeta.sourceWorkId === workId
+        ) {
+          return;
+        }
+        appendTextDocument(text, textId);
+      });
+    }
+  }
 
   return documents;
 };
@@ -363,6 +399,7 @@ const update_elasticsearch = async collected => {
 export {
   buildElasticsearchPoetEntries,
   buildElasticsearchTextEntries,
+  buildElasticsearchTextEntryDocuments,
   getChangedElasticsearchTextEntries,
   update_elasticsearch,
 };

@@ -23,6 +23,7 @@ import {
   getElementsByTagName,
 } from './xml.js';
 import { hasExternalIdentifiers } from './external-identifiers.js';
+import { worksForPoet } from './anthologies.js';
 
 const knownPoetLanguages = new Set([
   'da',
@@ -249,7 +250,6 @@ const build_poets_first_pass = collected => {
 
 const build_poets_json = collected => {
   const poetMetadataDirty = new Set();
-  let found_changes = false;
   collected.poets.forEach((poet, id) => {
     const mentions = collected.person_or_keyword_refs.get(id);
     const has_mentions =
@@ -258,18 +258,32 @@ const build_poets_json = collected => {
       fileExists(`fdirs/${id}/bibliography-primary.xml`) ||
       fileExists(`fdirs/${id}/bibliography-secondary.xml`) ||
       hasExternalIdentifiers(id, 'reference');
-    if (has_mentions !== poet.has_mentions) {
-      found_changes = true;
+    const mentionsChanged = has_mentions !== poet.has_mentions;
+    if (mentionsChanged) {
       poet.has_mentions = has_mentions;
       poetMetadataDirty.add(id);
-      found_changes = true;
-      writeJSON(`public/api/${poet.id}.json`, poet);
       collected.poets.set(id, poet);
     }
+    const sourceFiles = Array.from(
+      new Set(
+        worksForPoet(collected, id).flatMap(work => work.sourceFiles || [])
+      )
+    );
+    const outputFilename = `public/api/${poet.id}.json`;
+    if (
+      mentionsChanged ||
+      !fileExists(outputFilename) ||
+      isFileModified(
+        'tools/build-static.js',
+        'tools/build-static/anthologies.js',
+        `fdirs/${id}/info.xml`,
+        ...sourceFiles
+      )
+    ) {
+      writeJSON(outputFilename, poet);
+    }
   });
-  if (found_changes) {
-    writeCachedJSON('collected.poets', Array.from(collected.poets));
-  }
+  writeCachedJSON('collected.poets', Array.from(collected.poets));
   return poetMetadataDirty;
 };
 

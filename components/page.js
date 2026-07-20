@@ -63,6 +63,8 @@ const Page = (props) => {
     ogImage,
     ogDescription,
     requestPath,
+    canonicalPath,
+    noIndex,
     crumbs = [],
     paging,
     country,
@@ -84,6 +86,8 @@ const Page = (props) => {
         ogImage={ogImage}
         ogDescription={ogDescription}
         requestPath={requestPath}
+        canonicalPath={canonicalPath}
+        noIndex={noIndex}
       />
       <Main>
         <Breadcrumbs lang={lang} crumbs={crumbs} rightSide={pagingRendered} />

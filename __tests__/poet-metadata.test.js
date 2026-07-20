@@ -35,6 +35,7 @@ describe('beregnede digtermetadata', () => {
     const horn = { id: 'horn', has_mentions: true };
     const collected = {
       poets: new Map([['horn', horn]]),
+      works: new Map(),
       person_or_keyword_refs: new Map(),
     };
 
@@ -53,6 +54,7 @@ describe('beregnede digtermetadata', () => {
     const horn = { id: 'horn', has_mentions: false };
     const collected = {
       poets: new Map([['horn', horn]]),
+      works: new Map(),
       person_or_keyword_refs: new Map([
         ['horn', { mention: ['anden2026071901'], translation: [] }],
       ]),
@@ -64,10 +66,14 @@ describe('beregnede digtermetadata', () => {
     expect(horn.has_mentions).toBe(true);
   });
 
-  it('skriver ikke metadata igen, når has_mentions er uændret', () => {
+  it('skriver ikke side-API igen, når has_mentions er uændret', () => {
     const horn = { id: 'horn', has_mentions: false };
+    fileExists.mockImplementation(
+      filename => filename === 'public/api/horn.json'
+    );
     const collected = {
       poets: new Map([['horn', horn]]),
+      works: new Map(),
       person_or_keyword_refs: new Map(),
     };
 
@@ -75,6 +81,9 @@ describe('beregnede digtermetadata', () => {
 
     expect(dirtyPoetIds).toEqual(new Set());
     expect(writeJSON).not.toHaveBeenCalled();
-    expect(writeCachedJSON).not.toHaveBeenCalled();
+    expect(writeCachedJSON).toHaveBeenCalledWith(
+      'collected.poets',
+      Array.from(collected.poets)
+    );
   });
 });

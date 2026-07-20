@@ -111,6 +111,8 @@ const build_person_or_keyword_refs = (collected) => {
         .filter((s) => safeGetAttr(s, 'id') != null)
         .forEach((text) => {
           const fromId = safeGetAttr(text, 'id');
+          const fromText = collected.texts.get(fromId);
+          const fromPoetId = fromText == null ? poetId : fromText.poetId;
           const head = getChildByTagName(text, 'head');
           const body = getChildByTagName(text, 'body');
           const linkedPoetIds = new Set();
@@ -130,7 +132,7 @@ const build_person_or_keyword_refs = (collected) => {
                   const toText = collected.texts.get(toPoemId);
                   if (toText != null) {
                     const toPoetId = toText.poetId;
-                    if (toPoetId !== poetId) {
+                    if (toPoetId !== fromPoetId) {
                       // Skip self-refs
                       linkedPoetIds.add(toPoetId);
                       register(filename, toPoetId, fromId, refType, toPoemId);
