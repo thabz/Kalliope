@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="juul" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Christian</firstname>
+    <lastname>Juul</lastname>
+    <fullname>Jørgen Christian Grønvald Juul</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1813-10-30</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1854-10-22</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <literary-periods>romantik-og-praeromantik</literary-periods>
+  <identifiers>
+    <biografisk-leksikon-lex-dk>Christian_Juul</biografisk-leksikon-lex-dk>
+  </identifiers>
+  <works>1840</works>
+</person>

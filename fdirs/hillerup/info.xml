@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="hillerup" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>F.C.</firstname>
+    <lastname>Hillerup</lastname>
+    <fullname>Frederik Christian Hillerup</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1793-05-12</date>
+      <place>Wedellsborg</place>
+    </born>
+    <dead>
+      <date>1861-05-05</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <literary-periods>romantik-og-praeromantik</literary-periods>
+  <works>1830</works>
+</person>

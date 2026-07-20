@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="homann" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Just</firstname>
+    <lastname>Homann</lastname>
+    <fullname>Just Ludwigsen Homann</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1819-08-30</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1850-07-25</date>
+      <place>Bollingstedt</place>
+    </dead>
+  </period>
+  <literary-periods>romantik-og-praeromantik</literary-periods>
+  <works>1848</works>
+</person>
