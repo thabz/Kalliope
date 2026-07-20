@@ -97,6 +97,15 @@ const externalIdentifierSources = [
     (value) => `https://biografiskleksikon.lex.dk/${encodeURIComponent(value)}`,
   ),
   source(
+    'kvindebiografisk-leksikon-lex-dk',
+    'reference',
+    115,
+    'Dansk Kvindebiografisk Leksikon',
+    'DKL',
+    (value) =>
+      `https://kvindebiografiskleksikon.lex.dk/${encodeURIComponent(value)}`,
+  ),
+  source(
     'litteraturpriser-dk',
     'reference',
     120,

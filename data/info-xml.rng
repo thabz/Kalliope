@@ -107,6 +107,7 @@
       <optional><ref name="lex-dk"/></optional>
       <optional><ref name="teaterleksikon-lex-dk"/></optional>
       <optional><ref name="biografisk-leksikon-lex-dk"/></optional>
+      <optional><ref name="kvindebiografisk-leksikon-lex-dk"/></optional>
       <optional><ref name="litteraturpriser-dk"/></optional>
       <optional><ref name="runeberg-org"/></optional>
       <optional><ref name="gutenberg-org"/></optional>
@@ -137,6 +138,7 @@
   <define name="lex-dk"><element name="lex-dk"><text/></element></define>
   <define name="teaterleksikon-lex-dk"><element name="teaterleksikon-lex-dk"><text/></element></define>
   <define name="biografisk-leksikon-lex-dk"><element name="biografisk-leksikon-lex-dk"><text/></element></define>
+  <define name="kvindebiografisk-leksikon-lex-dk"><element name="kvindebiografisk-leksikon-lex-dk"><text/></element></define>
   <define name="litteraturpriser-dk"><element name="litteraturpriser-dk"><text/></element></define>
   <define name="runeberg-org"><element name="runeberg-org"><text/></element></define>
   <define name="gutenberg-org"><element name="gutenberg-org"><text/></element></define>

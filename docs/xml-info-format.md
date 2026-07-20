@@ -194,6 +194,7 @@ portrætter, artwork, bio eller mentions.
   <lex-dk>H.C._Andersen</lex-dk>
   <teaterleksikon-lex-dk>H.C._Andersen</teaterleksikon-lex-dk>
   <biografisk-leksikon-lex-dk>H.C._Andersen</biografisk-leksikon-lex-dk>
+  <kvindebiografisk-leksikon-lex-dk>Benedicte_Arnesen_Kall</kvindebiografisk-leksikon-lex-dk>
   <litteraturpriser-dk>AHCAndersen</litteraturpriser-dk>
   <runeberg-org>andersen</runeberg-org>
   <gutenberg-org>2298</gutenberg-org>
@@ -212,6 +213,7 @@ Almindelige felter:
 - `<lex-dk>`
 - `<teaterleksikon-lex-dk>`
 - `<biografisk-leksikon-lex-dk>`
+- `<kvindebiografisk-leksikon-lex-dk>`
 - `<litteraturpriser-dk>`
 - `<runeberg-org>`
 - `<gutenberg-org>`
