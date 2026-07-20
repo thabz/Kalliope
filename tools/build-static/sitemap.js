@@ -1,17 +1,8 @@
-import {
-  safeMkdir,
-  writeText,
-  fileExists,
-  fileModifiedTime,
-} from '../libs/helpers.js';
+import { safeMkdir, writeText, fileModifiedTime } from '../libs/helpers.js';
 import { isFileModified } from '../libs/caching.js';
-import {
-  loadXMLDoc,
-  safeGetAttr,
-  getElementsByTagNames,
-} from './xml.js';
 import { collect_git_modified_dates } from './git.js';
 import { supportedLanguages } from '../../common/languages.js';
+import { textsForWork, worksForPoet } from './anthologies.js';
 
 const LANGS = supportedLanguages;
 
@@ -39,10 +30,6 @@ const poetBioLastmod = (poetId, modifiedDates) => {
 
 const keywordLastmod = (keywordId, modifiedDates) => {
   return modifiedDates.get(`data/keywords/${keywordId}.xml`);
-};
-
-const workLastmod = (poetId, workId, modifiedDates) => {
-  return modifiedDates.get(`fdirs/${poetId}/${workId}.xml`);
 };
 
 const localizedUrl = (lang, path) => {
@@ -132,13 +119,20 @@ const build_sitemap_xml = (collected) => {
   write_sitemap('public/sitemaps/global.xml', urls);
 
   collected.poets.forEach((poet, poetId) => {
-    const filenames = collected.workids
-      .get(poetId)
-      .map((workId) => `fdirs/${poetId}/${workId}.xml`);
+    const poetWorks = worksForPoet(collected, poetId);
+    const filenames = Array.from(
+      new Set(poetWorks.flatMap(work => work.sourceFiles || []))
+    );
     const poetLastmod = latestDate(
       filenames.map((filename) => modifiedDates.get(filename))
     );
-    if (!isFileModified(...filenames)) {
+    if (
+      !isFileModified(
+        'tools/build-static/sitemap.js',
+        'tools/build-static/anthologies.js',
+        ...filenames
+      )
+    ) {
       return;
     }
     const poet_text_urls = [];
@@ -153,26 +147,20 @@ const build_sitemap_xml = (collected) => {
         ...localizedUrls(`/texts/${poetId}/first`, poetLastmod)
       );
     }
-    collected.workids.get(poetId).forEach((workId) => {
-      const work = collected.works.get(`${poetId}/${workId}`);
+    poetWorks.forEach(work => {
+      const workId = work.id;
       if (work.has_content) {
-        const filename = `fdirs/${poetId}/${workId}.xml`;
-        const lastmod = workLastmod(poetId, workId, modifiedDates);
+        const lastmod = latestDate(
+          (work.sourceFiles || []).map(filename => modifiedDates.get(filename))
+        );
         poet_text_urls.push(
           ...localizedUrls(`/work/${poetId}/${workId}`, lastmod)
         );
-        if (!fileExists(filename)) {
-          return;
-        }
-
-        let doc = loadXMLDoc(filename);
-        if (doc == null) {
-          console.log("Couldn't load", filename);
-        }
-        getElementsByTagNames(doc, ['text', 'section']).forEach((part) => {
-          const textId = safeGetAttr(part, 'id');
-          if (textId != null) {
-            poet_text_urls.push(...localizedUrls(`/text/${textId}`, lastmod));
+        textsForWork(collected, poetId, workId).forEach(text => {
+          if (text.indexable !== false) {
+            poet_text_urls.push(
+              ...localizedUrls(`/text/${text.id}`, lastmod)
+            );
           }
         });
       }

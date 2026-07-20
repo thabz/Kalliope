@@ -7,6 +7,7 @@ import {
 } from '../libs/caching.js';
 import { fileExists } from '../libs/helpers.js';
 import { loadXMLDoc, safeGetAttr, getElementsByTagNames } from './xml.js';
+import { sourceWorkFilename, sourceWorkKey } from './anthologies.js';
 
 const build_variants = (collected) => {
   let variants_map = globalForceReload
@@ -51,9 +52,7 @@ const build_variants = (collected) => {
           // Mark work containing variantId dirty
           const variantData = collected.texts.get(variantId);
           if (variantData != null) {
-            markFileDirty(
-              `fdirs/${variantData.poetId}/${variantData.workId}.xml`
-            );
+            markFileDirty(sourceWorkFilename(variantData));
           }
         });
     });
@@ -106,8 +105,8 @@ const resolve_variants = (poemId, collected) => {
         `The unknown text "${b}" is listed as a variant of "${poemId}".`
       );
     }
-    const workA = collected.works.get(metaA.poetId + '/' + metaA.workId);
-    const workB = collected.works.get(metaB.poetId + '/' + metaB.workId);
+    const workA = collected.works.get(sourceWorkKey(metaA));
+    const workB = collected.works.get(sourceWorkKey(metaB));
     return workA.year > workB.year ? 1 : -1;
   });
   resolve_variants_cache[poemId] = result;

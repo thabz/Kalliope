@@ -6,6 +6,9 @@ const collect = () => {
   let texts = new Map(loadCachedJSON('collected.texts') || []);
   const regexp = /[a-z]+(\d{6})/;
   texts.forEach((meta, textId) => {
+    if (meta.indexable === false) {
+      return;
+    }
     const m = textId.match(regexp);
     if (m) {
       counts[m[1]] = (counts[m[1]] || 0) + 1;
@@ -18,8 +21,8 @@ const collect = () => {
   const nowMonth = new Date().getMonth() + 1;
 
   let sum = poemsWithNoDate;
-  for (y = 1999; y <= nowYear; y++) {
-    for (m = 1; m <= 12; m++) {
+  for (let y = 1999; y <= nowYear; y++) {
+    for (let m = 1; m <= 12; m++) {
       if (!(y === nowYear && m > nowMonth)) {
         const k = `${y}${m < 10 ? '0' + m : m}`;
         if (counts[k]) {
