@@ -8,6 +8,7 @@ import {
 } from '../libs/helpers.js';
 import { collect_git_modified_dates } from './git.js';
 import { mapLimit } from './concurrency.js';
+import { createProgressReporter } from './progress.js';
 import { extractTitle, get_notes, get_pictures } from './parsing.js';
 import { workName } from './formatting.js';
 import { sortWorks } from '../../common/worksort.js';
@@ -89,6 +90,7 @@ const extract_subworks = (poetId, workbody, collected) => {
 
 const build_works_toc = async (collected) => {
   const modifiedDates = collect_git_modified_dates();
+  const progress = createProgressReporter('Skrev toc.json-filer', 100);
 
   const workFilesForPoet = (poetId) => {
     return Array.from(
@@ -166,7 +168,7 @@ const build_works_toc = async (collected) => {
     });
   });
 
-  return mapLimit(jobs, async ({ poetId, workId, work: workMeta }) => {
+  const results = await mapLimit(jobs, async ({ poetId, workId, work: workMeta }) => {
     const { pageWorks, poet, poetWorksModified } = poetData.get(poetId);
     if (workMeta.virtualType === 'anthology') {
       if (
@@ -198,7 +200,6 @@ const build_works_toc = async (collected) => {
         .sort()
         .pop();
       const tocFilename = `public/api/${poetId}/${workId}-toc.json`;
-      console.log(tocFilename);
       writeJSON(tocFilename, {
         poet,
         toc,
@@ -210,6 +211,7 @@ const build_works_toc = async (collected) => {
         prev,
         next,
       });
+      progress.increment();
       return;
     }
     const filename = `fdirs/${poetId}/${workId}.xml`;
@@ -237,11 +239,13 @@ const build_works_toc = async (collected) => {
         next,
       };
       const tocFilename = `public/api/${poetId}/${workId}-toc.json`;
-      console.log(tocFilename);
       writeJSON(tocFilename, toc_file_data);
+      progress.increment();
     }
     doc = null;
   });
+  progress.finish();
+  return results;
 };
 
 export {

@@ -7,6 +7,7 @@ import {
 import { primaryTextVariantId } from './variants.js';
 import { poetName, workName } from './formatting.js';
 import { sourceFilesForText } from './anthologies.js';
+import { createProgressReporter } from './progress.js';
 
 function stripDiacriticsGreek(str) {
   return (
@@ -167,6 +168,7 @@ const build_global_lines_json = (collected) => {
 };
 
 const build_poet_lines_json = (collected) => {
+  const progress = createProgressReporter('Skrev texts.json-filer', 100);
   collected.poets.forEach((poet, poetId) => {
     const poetTexts = Array.from(collected.texts.values()).filter(
       text => text.poetId === poetId && text.indexable !== false
@@ -224,9 +226,10 @@ const build_poet_lines_json = (collected) => {
       lines: collectedLines,
     };
     const linesOutFilename = `public/api/${poetId}/texts.json`;
-    console.log(linesOutFilename);
     writeJSON(linesOutFilename, data);
+    progress.increment();
   });
+  progress.finish();
 };
 
 export {

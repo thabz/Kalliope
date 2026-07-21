@@ -6,6 +6,7 @@ import plimit from 'p-limit';
 import sharp from 'sharp';
 import * as CommonData from '../../common/commondata.js';
 import * as ImagePaths from '../../common/imagepaths.js';
+import { createProgressReporter } from '../build-static/progress.js';
 
 const envInt = (name, fallback) => {
   const value = parseInt(process.env[name], 10);
@@ -313,7 +314,6 @@ const resizeImage = async (inputfile, outputfile, maxWidth) => {
     await sharp(inputfile)
       .resize({ width: maxWidth, withoutEnlargement: true })
       .toFile(outputfile);
-    console.log(outputfile);
     return outputfile;
   } catch (err) {
     console.log(err);
@@ -342,6 +342,10 @@ const buildThumbnails = async (
   options = {}
 ) => {
   const tasks = [];
+  const progress = createProgressReporter(
+    `Genererede thumbnails i ${topFolder}`,
+    100
+  );
   const thumbnailOutputPath =
     options.thumbnailOutputPath || defaultThumbnailOutputPath;
   const pipeJoinedExts = CommonData.availableImageFormats.join('|');
@@ -384,8 +388,14 @@ const buildThumbnails = async (
                 : sourceMtime > outputMtime)
             ) {
               tasks.push(
-                limit(() => {
-                  return resizeImage(fullFilename, outputfile, width);
+                limit(async () => {
+                  const result = await resizeImage(
+                    fullFilename,
+                    outputfile,
+                    width
+                  );
+                  progress.increment();
+                  return result;
                 })
               );
             }
@@ -398,6 +408,7 @@ const buildThumbnails = async (
   handleDirRecursive(topFolder);
 
   await Promise.all(tasks);
+  progress.finish();
 };
 
 export {

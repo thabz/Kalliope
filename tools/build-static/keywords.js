@@ -80,7 +80,6 @@ const build_keywords = async collected => {
         });
         const outFilename = `${outputFolder}/${id}.json`;
         outputFilenames.add(`${id}.json`);
-        console.log(outFilename);
         writeJSON(outFilename, data);
         collected_keywords.set(id, { id, title });
       }
@@ -88,13 +87,11 @@ const build_keywords = async collected => {
     for (const filename of fs.readdirSync(outputFolder)) {
       if (filename.endsWith('.json') && !outputFilenames.has(filename)) {
         const staleFilename = `${outputFolder}/${filename}`;
-        console.log(`Removing ${staleFilename}`);
         fs.unlinkSync(staleFilename);
       }
     }
     writeCachedJSON('collected.keywords', Array.from(collected_keywords));
     const outFilename = `public/api/keywords.json`;
-    console.log(outFilename);
     writeJSON(outFilename, keywords_toc);
   }
   return collected_keywords;

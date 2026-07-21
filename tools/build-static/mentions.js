@@ -25,6 +25,7 @@ import {
 import { poetName, workLinkName } from './formatting.js';
 import { primaryTextVariantId } from './variants.js';
 import { loadExternalIdentifiers } from './external-identifiers.js';
+import { createProgressReporter } from './progress.js';
 
 const person_mentions_dirty = new Set();
 
@@ -311,6 +312,7 @@ const build_mentions_data = (
 };
 
 const build_mentions_json = (collected) => {
+  const progress = createProgressReporter('Skrev mentions.json-filer', 100);
   const build_html = (poemId) => {
     const meta = collected.texts.get(poemId);
     if (meta == null) {
@@ -370,9 +372,10 @@ const build_mentions_json = (collected) => {
       loadExternalIdentifiers(poetId),
     );
 
-    console.log(outFilename);
     writeJSON(outFilename, data);
+    progress.increment();
   });
+  progress.finish();
 };
 
 export {
