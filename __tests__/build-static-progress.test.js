@@ -20,4 +20,17 @@ describe('build-static progress reporting', () => {
       'Skrev tekstfiler: 5 (færdig)',
     ]);
   });
+
+  it('does not report anything when no work was done', () => {
+    const messages = [];
+    const progress = createProgressReporter(
+      'Skrev tekstfiler',
+      2,
+      message => messages.push(message)
+    );
+
+    progress.finish();
+
+    expect(messages).toEqual([]);
+  });
 });
