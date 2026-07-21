@@ -93,6 +93,29 @@ class Txt2XmlTest < Minitest::Test
     assert_equal %w[i w b], REXML::XPath.match(text, 'body/poetry/*').map(&:name)
   end
 
+  def test_escapes_bare_ampersands_without_double_escaping_entities
+    document = convert_and_parse(<<~TEXT)
+      KILDE:Red.: <i>Digte &amp; Sange</i>, Forlag & Søn, 1900.
+      DIGTER:digter
+      TITELBLAD:Magt & Ære
+      NOTE:Liv & Død
+
+      T:Sol & Måne
+      F:Sol & Måne
+
+      Sol & Måne
+      SLUT
+    TEXT
+
+    workhead = REXML::XPath.first(document, '/kalliopework/workhead')
+    text = REXML::XPath.first(document, '//text')
+
+    assert_equal 'Digte & Sange', element_text(workhead, 'title')
+    assert_equal 'Liv & Død', element_text(workhead, 'notes/note')
+    assert_equal 'Sol & Måne', element_text(text, 'head/title')
+    assert_equal 'Sol & Måne', REXML::XPath.first(text, 'body/poetry').text.strip
+  end
+
   def test_section_author_is_emitted_without_repeating_it_on_texts
     document = convert_and_parse(<<~TEXT)
       KILDE:<i>Antologi</i> 1872

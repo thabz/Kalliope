@@ -127,6 +127,10 @@ def normalizePages(pages)
   pages.sub(/\A(\d+)-\1\z/, '\1')
 end
 
+def escapeBareAmpersands(line)
+  line.gsub(/&(?!(?:amp|apos|gt|lt|quot|#\d+|#x[0-9a-fA-F]+);)/, '&amp;')
+end
+
 def printPoem()
   printHeader()
   if @facsimile and (not @page or @page.strip.length == 0)
@@ -324,6 +328,7 @@ File.readlines(ARGV[0]).each do |line|
     next
   end
   line_before = line
+  line = escapeBareAmpersands(line)
   while line =~ /\t/
       line = line.gsub(/\t/,'    ')
   end
