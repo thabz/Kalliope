@@ -59,7 +59,7 @@ services:
     volumes:
       - ./.git:/app/.git:ro
       - ./caches:/app/caches
-      - ./data:/app/data:ro
+      - ./content:/app/content:ro
       - ./fdirs:/app/fdirs:ro
       - ./public:/app/public
     command: >

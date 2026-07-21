@@ -16,7 +16,7 @@ import {
 } from './xml.js';
 
 const build_dict_first_pass = collected => {
-  const path = `data/dict.xml`;
+  const path = `content/dict.xml`;
   if (!isFileModified(path)) {
     collected.dict = new Map(loadCachedJSON('collected.dict'));
     return;
@@ -37,7 +37,7 @@ const build_dict_first_pass = collected => {
 };
 
 const build_dict_second_pass = collected => {
-  const path = `data/dict.xml`;
+  const path = `content/dict.xml`;
   if (!isFileModified(path)) {
     return;
   }

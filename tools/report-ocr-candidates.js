@@ -8,7 +8,12 @@ const wordRegexp = new RegExp(
   `(?<![${wordChars}])([${wordChars}]+)(?![${wordChars}])`,
   'gu'
 );
-const defaultPatterns = ['fdirs/*/*.xml', 'data/*.xml'];
+const defaultPatterns = [
+  'fdirs/*/*.xml',
+  'content/*.xml',
+  'content/news/*.xml',
+  'content/today/*.xml',
+];
 const deferredWordformWords = new Set(['fåtted']);
 const allowedInternalUppercaseWords = new Set(['DgF']);
 const allowedRepeatedWords = new Set([

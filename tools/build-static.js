@@ -181,8 +181,8 @@ const build_bio_json = async (collected) => {
     'common/external-identifiers.js',
   );
   const artworkModified = isFileModified(
-    'data/museums.xml',
-    'data/artwork.xml',
+    'content/museums.xml',
+    'content/artwork.xml',
     ...Array.from(collected.poets.keys()).map(
       (poetId) => `fdirs/${poetId}/artwork.xml`,
     ),
@@ -198,7 +198,7 @@ const build_bio_json = async (collected) => {
         !codeModified &&
         !artworkModified &&
         !isFileModified(
-          'data/events.xml',
+          'content/events.xml',
           ...worksForPoet(collected, poetId).flatMap(
             work => work.sourceFiles || []
           ),
@@ -1310,7 +1310,7 @@ const build_poet_works_json = (collected) => {
 
 const build_news = (collected) => {
   supportedLanguages.forEach((lang) => {
-    const path = `data/news_${lang}.xml`;
+    const path = `content/news/${lang}.xml`;
     if (!isFileModified(path)) {
       return;
     }
