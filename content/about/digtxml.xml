@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<about>
+<head>
+    <title>Kalliopes XML-format</title>
+</head>
+<body>
+    <!--
+<h1>Kalliopes XML format</h1>
+<p>Kalliopes digte er alle indtastet i et skræddersyet XML-format. Følgende er en introduktion til dette. Jeg viser et eksempel efterfulgt af forklaring af de forskellige elementer i XMLen.</p>
+
+<pre style="background-color: white; padding: 10px; border: 1px solid black">
+&lt;poem id="aarestrup-20041112-1"&gt;
+&lt;head&gt;
+   &lt;title&gt;Angst&lt;/title&gt;
+   &lt;firstline&gt;Hold fastere omkring mig&lt;/firstline&gt;
+&lt;/head&gt;
+&lt;body&gt;
+Hold fastere omkring mig
+   Med dine runde Arme;
+Hold fast, imens dit Hjerte
+   Endnu har Blod og Varme.
+
+Om lidt, saa er vi skilt ad,
+   Som Bærrene paa Hækken;
+Om lidt, er vi forsvundne,
+   Som Boblerne i Bækken.
+&lt;/body&gt;
+&lt;/poem&gt;
+</pre>
+
+<p>Hele digtet er omkrandset af <tt>&lt;poem&gt;</tt> som består af to elementer <tt>&lt;head&gt;</tt> efterfulgt af <tt>&lt;body&gt;</tt>. Førstnævnte er digtets metadata og sidste nævnte er selve teksten i digtet.</p>
+<p>Et digt har desuden er unikt id i Kalliope. Dette angives som attribut til <tt>&lt;poem&gt;</tt>. Et id er typisk på formen digternavn efterfuldt af dato for indtastning efterfulgt af en løbenummer. Hvis du ikke forstår dette, så lad bare være med at tildele digte et id.
+</p>
+<p>Et digts metadata er oplysninger om titel, nøgleord, førstelinie, noter, m.m. Ovenstående digt viser kun en lille del af de metadata som Kalliope faktisk understøtter. Ikke alle metadata er påkrævede, faktisk er det eneste krav til en digt metadata at titel og førstelinie er indtastet. Disse to markeres som <tt>&lt;title&gt;</tt> og <tt>&lt;firstline&gt;</tt>.</p>
+<p>Digtets <tt>&lt;body&gt;</tt> indeholder selve teksten. Der er mulighed for at markere at ord skal have en speciel formattering, såsom kursiv og fed. Dette gøres med tags som ligner HTML. Der findes en <a class="green" href="kabout.pl?page=tags"> speciel side</a> om disse formatteringtags.</p>
+
+<p>Et værk i Kalliope består af een fil som indeholder en masse <tt>&lt;poem&gt;</tt> ... <tt>&lt;/poem&gt;</tt>. En digters udgivelser opdeles således i een fil pr. værk.</p>
+-->
+</body>
+</about>

@@ -19,11 +19,12 @@ const build_about_pages = async (collected) => {
   safeMkdir(`public/api/about`);
   // Regenerate all about-pages if any work-file is modified, since our poem-counts then might be off
   const areAnyWorkModified = Array.from(collected.works.keys())
-    .filter((key) => {
-      return isFileModified(`fdirs/${key}.xml`);
+    .filter(key => {
+      const work = collected.works.get(key);
+      return isFileModified(...(work.sourceFiles || [`fdirs/${key}.xml`]));
     })
     .reduce((result, b) => b || result, false);
-  const folder = 'data/about';
+  const folder = 'content/about';
   const pages = fs
     .readdirSync(folder)
     .filter((x) => x.endsWith('.xml'))
@@ -53,7 +54,7 @@ const build_about_pages = async (collected) => {
     );
     const author = safeGetText(head, 'author');
     const poemsNum = Array.from(collected.texts.values())
-      .map((t) => (t.type === 'text' ? 1 : 0))
+      .map(t => (t.type === 'text' && t.indexable !== false ? 1 : 0))
       .reduce((sum, v) => sum + v, 0);
     const poetsNum = Array.from(collected.poets.values())
       .map((t) => (t.type === 'poet' ? 1 : 0))
@@ -66,7 +67,8 @@ const build_about_pages = async (collected) => {
     });
     // Data er samme format som keywords
     const data = {
-      id: paths.xml,
+      // Bevar den eksisterende offentlige id, selv om kildefilen er flyttet.
+      id: paths.xml.replace(/^content\//, 'data/'),
       title,
       author,
       has_footnotes: false,

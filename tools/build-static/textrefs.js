@@ -13,6 +13,7 @@ import {
   safeGetAttr,
   safeGetOuterXML,
 } from './xml.js';
+import { sourceWorkFilename } from './anthologies.js';
 
 const textRefTagRegexp = /<(?:xref|a)\b[^>]*(?:\bpoem|\bbibel)="[^"]*"[^>]*>/g;
 
@@ -37,7 +38,7 @@ const markTextRefDestinationsDirty = (textrefs, collected) => {
   textrefs.forEach((refs, toId) => {
     const text = collected.texts.get(toId);
     if (text != null) {
-      destinationWorkfiles.push(`fdirs/${text.poetId}/${text.workId}.xml`);
+      destinationWorkfiles.push(sourceWorkFilename(text));
     }
   });
   markFileDirty(...destinationWorkfiles);
@@ -132,7 +133,7 @@ const mark_ref_destinations_dirty = collected => {
             extractTextRefs(safeGetOuterXML(note)).forEach(ref => {
               const t = collected.texts.get(ref.toId);
               if (t != null) {
-                const filename = `fdirs/${t.poetId}/${t.workId}.xml`;
+                const filename = sourceWorkFilename(t);
                 destination_workfiles.push(filename);
               }
             });

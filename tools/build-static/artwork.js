@@ -95,7 +95,7 @@ const build_artwork = async (collected) => {
     'tools/build-static/museums.js',
     'tools/build-static/parsing.js',
   );
-  const museumsModified = isFileModified('data/museums.xml');
+  const museumsModified = isFileModified('content/museums.xml');
   let found_changes = false;
 
   await mapLimit(
@@ -246,7 +246,7 @@ const build_artwork = async (collected) => {
     force_reload ||
     codeModified ||
     museumsModified ||
-    isFileModified('data/artwork.xml')
+    isFileModified('content/artwork.xml')
   ) {
     found_changes = true;
     Array.from(collected_artwork.keys())
@@ -255,7 +255,7 @@ const build_artwork = async (collected) => {
         collected_artwork.delete(k);
       });
 
-    (await readArtworkFile('kunst', 'data/artwork.xml', collected)).forEach(
+    (await readArtworkFile('kunst', 'content/artwork.xml', collected)).forEach(
       (artwork) => {
         collected_artwork.set(artwork.id, artwork);
       }

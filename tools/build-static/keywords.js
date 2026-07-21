@@ -16,9 +16,10 @@ import {
 import { mapLimit } from './concurrency.js';
 
 const build_keywords = async collected => {
-  safeMkdir('public/api/keywords');
+  const outputFolder = 'public/api/keywords';
+  safeMkdir(outputFolder);
   let collected_keywords = new Map(loadCachedJSON('collected.keywords') || []);
-  const folder = 'data/keywords';
+  const folder = 'content/keywords';
   const filenames = fs
     .readdirSync(folder)
     .filter(x => x.endsWith('.xml'))
@@ -26,6 +27,7 @@ const build_keywords = async collected => {
   if (collected_keywords.size === 0 || isFileModified(...filenames)) {
     collected_keywords = new Map();
     let keywords_toc = new Array();
+    const outputFilenames = new Set();
     await mapLimit(
       filenames,
       async path => {
@@ -76,12 +78,20 @@ const build_keywords = async collected => {
           redirectURL,
           is_draft,
         });
-        const outFilename = `public/api/keywords/${id}.json`;
+        const outFilename = `${outputFolder}/${id}.json`;
+        outputFilenames.add(`${id}.json`);
         console.log(outFilename);
         writeJSON(outFilename, data);
         collected_keywords.set(id, { id, title });
       }
     );
+    for (const filename of fs.readdirSync(outputFolder)) {
+      if (filename.endsWith('.json') && !outputFilenames.has(filename)) {
+        const staleFilename = `${outputFolder}/${filename}`;
+        console.log(`Removing ${staleFilename}`);
+        fs.unlinkSync(staleFilename);
+      }
+    }
     writeCachedJSON('collected.keywords', Array.from(collected_keywords));
     const outFilename = `public/api/keywords.json`;
     console.log(outFilename);

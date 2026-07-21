@@ -14,7 +14,7 @@ describe('info.xml RELAX NG schema', () => {
     try {
       execFileSync(
         'xmllint',
-        ['--noout', '--relaxng', 'data/info-xml.rng', ...files],
+        ['--noout', '--relaxng', 'schemas/info-xml.rng', ...files],
         { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }
       );
     } catch (error) {

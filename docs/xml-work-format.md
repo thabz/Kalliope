@@ -183,7 +183,7 @@ Titel-fallbacks:
 
 Hvert id kan vaere:
 
-- et keyword i `data/keywords/*.xml`
+- et keyword i `content/keywords/*.xml`
 - en digter/person i `fdirs/<id>/info.xml`
 - et frit subject-id, hvis ingen af de to findes
 
@@ -293,7 +293,7 @@ Særlige linjeformer:
 Sektioner grupperer tekster og kan nestes:
 
 ```xml
-<section id="del-1" level="2">
+<section id="del-1" author="hansenfj" level="2">
   <head>
     <title>Foerste del</title>
   </head>
@@ -306,6 +306,9 @@ Sektioner grupperer tekster og kan nestes:
 Attributter paa `<section>`:
 
 - `id`: gor sektionen linkbar og giver den egen tekstside med intern TOC.
+- `author`: valgfrit forfatter-id, som arves af alle tekster og undersektioner.
+  Et `author` direkte paa en indlejret `<section>` eller `<text>` overskriver den
+  arvede forfatter i den paagaeldende gren.
 - `level`: overskriftsniveau i indholdsfortegnelsen.
 - `variant`: variant-id, ligesom paa `<text>`.
 - `aliases`: gamle id'er, ligesom paa `<text>`.
@@ -398,7 +401,7 @@ Portraet:
 Attributter:
 
 - `src`: lokalt billede. Relative paths slaas op under `/images/<digter>`.
-- `artwork`: reference til et billede i `data/artwork.xml` eller `fdirs/<kunstner>/artwork.xml`.
+- `artwork`: reference til et billede i `content/artwork.xml` eller `fdirs/<kunstner>/artwork.xml`.
 - `portrait`: reference til et portraet i `fdirs/<digter>/portraits.xml`.
 - `primary="true"`: markerer primaert billede.
 - `year`: aar for billedet.
@@ -510,5 +513,5 @@ Buildet tjekker blandt andet:
 - `fdirs/ingemann/1832.xml`: stort vaerk med mange tekster.
 - `fdirs/winther/1860-1.xml` og `fdirs/winther/1860-2.xml`: varianter.
 - `fdirs/hugo/portraits.xml`: portraetter, inkl. genbrugt keyword-billede.
-- `data/keywords/rom.xml`: billeder via `artwork`.
-- `data/about/tags.xml`: aeldre, kommenteret oversigt over inline-tags.
+- `content/keywords/rom.xml`: billeder via `artwork`.
+- `content/about/tags.xml`: aeldre, kommenteret oversigt over inline-tags.

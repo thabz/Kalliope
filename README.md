@@ -5,7 +5,7 @@
 ## Udvikling og tekstredigering lokalt
 
 Brug denne arbejdsgang når du udvikler på appen eller redigerer tekster i
-`fdirs/` og `data/`.
+`fdirs/` og `content/`.
 
 Krav:
 
@@ -33,7 +33,7 @@ npm run dev
 
 Appen kører på http://localhost:3000/.
 
-Når du ændrer XML-filer i `fdirs/` eller `data/`, skal de statiske data bygges
+Når du ændrer XML-filer i `fdirs/` eller `content/`, skal de statiske data bygges
 igen:
 
 ```shell

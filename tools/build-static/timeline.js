@@ -93,7 +93,7 @@ const cover_picture = async (poetId, workId, collected) => {
 };
 
 const build_global_timeline = async (collected) => {
-  return load_timeline('data/events.xml', collected);
+  return load_timeline('content/events.xml', collected);
 };
 
 const build_poet_timeline_json = async (poet, collected) => {

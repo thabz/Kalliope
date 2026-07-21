@@ -43,6 +43,7 @@ import * as xml from '../tools/build-static/xml.js';
 import {
   buildElasticsearchPoetEntries,
   buildElasticsearchTextEntries,
+  buildElasticsearchTextEntryDocuments,
   getChangedElasticsearchTextEntries,
   update_elasticsearch,
 } from '../tools/build-static/elastic.js';
@@ -62,11 +63,41 @@ const collected = {
     ],
   ]),
   workids: new Map([['poet', ['second', 'first']]]),
+  works: new Map([
+    [
+      'poet/second',
+      {
+        id: 'second',
+        title: 'Second',
+        sourceFiles: ['fdirs/poet/info.xml', 'fdirs/poet/second.xml'],
+      },
+    ],
+    [
+      'poet/first',
+      {
+        id: 'first',
+        title: 'First',
+        sourceFiles: ['fdirs/poet/info.xml', 'fdirs/poet/first.xml'],
+      },
+    ],
+  ]),
+  texts: new Map(),
 };
 
 const collectedWithOtherPoems = {
   poets: collected.poets,
   workids: new Map([['poet', ['andre']]]),
+  works: new Map([
+    [
+      'poet/andre',
+      {
+        id: 'andre',
+        title: 'Andre digte',
+        sourceFiles: ['fdirs/poet/info.xml', 'fdirs/poet/andre.xml'],
+      },
+    ],
+  ]),
+  texts: new Map(),
 };
 
 const bulkDocumentIds = () =>
@@ -233,6 +264,104 @@ describe('Elasticsearch build-static step', () => {
           work: expect.objectContaining({
             id: 'andre',
             title: 'Andre digte',
+          }),
+        }),
+      }),
+    ]);
+  });
+
+  test('indexes an anthology text only under its author placement', () => {
+    const sourcePoet = { id: 'anthology', name: { fullname: 'Antologi' } };
+    const author = { id: 'author', name: { fullname: 'Forfatter' } };
+    const sourceWork = {
+      id: '1872',
+      title: 'Antologien',
+      sourceFiles: ['fdirs/anthology/info.xml', 'fdirs/anthology/1872.xml'],
+    };
+    const virtualWork = {
+      id: 'antologier',
+      title: 'Tekster i andre udgivelser',
+      virtualType: 'anthology',
+      sourceFiles: [
+        'fdirs/author/info.xml',
+        'fdirs/anthology/info.xml',
+        'fdirs/anthology/1872.xml',
+      ],
+    };
+    const anthologyCollected = {
+      poets: new Map([
+        ['anthology', sourcePoet],
+        ['author', author],
+      ]),
+      works: new Map([
+        ['anthology/1872', sourceWork],
+        ['author/antologier', virtualWork],
+      ]),
+      texts: new Map([
+        [
+          'anthology-text',
+          {
+            id: 'anthology-text',
+            poetId: 'author',
+            workId: 'antologier',
+            placement: 'author',
+            sourcePoetId: 'anthology',
+            sourceWorkId: '1872',
+            sourceTextId: 'anthology-text',
+          },
+        ],
+        [
+          'anthology-texta',
+          {
+            id: 'anthology-texta',
+            poetId: 'anthology',
+            workId: '1872',
+            placement: 'publication',
+            sourcePoetId: 'anthology',
+            sourceWorkId: '1872',
+            sourceTextId: 'anthology-text',
+            indexable: false,
+          },
+        ],
+      ]),
+    };
+    const sourceText = { node: 'source-text' };
+    xml.getElementByTagName.mockImplementation((element, tagName) => tagName);
+    xml.getElementsByTagNames.mockReturnValue([sourceText]);
+    xml.safeGetAttr.mockImplementation((element, attrName) => {
+      if (element === sourceText && attrName === 'id') {
+        return 'anthology-text';
+      }
+      return null;
+    });
+    xml.safeGetInnerXML.mockImplementation(element =>
+      element === 'body' ? 'Tekstindhold' : 'Teksttitel'
+    );
+    xml.tagName.mockReturnValue('text');
+    htmlToXml.mockReturnValue([['Tekstindhold']]);
+
+    const entries = buildElasticsearchTextEntries(anthologyCollected);
+    const physicalDocuments = buildElasticsearchTextEntryDocuments(
+      anthologyCollected,
+      entries.find(entry => entry.textEntryKey === 'anthology-1872')
+    );
+    const authorDocuments = buildElasticsearchTextEntryDocuments(
+      anthologyCollected,
+      entries.find(entry => entry.textEntryKey === 'author-antologier')
+    );
+
+    expect(physicalDocuments.map(document => document.id)).toEqual([
+      'anthology-1872',
+    ]);
+    expect(authorDocuments).toEqual([
+      expect.objectContaining({
+        id: 'anthology-text',
+        data: expect.objectContaining({
+          result_type: 'text',
+          poet: author,
+          work: expect.objectContaining({
+            id: 'antologier',
+            virtualType: 'anthology',
           }),
         }),
       }),

@@ -12,9 +12,9 @@ import {
   loadXMLDoc,
 } from './xml.js';
 
-// Read /data/museums.xml and produce collected.museums to to used later.
+// Read content/museums.xml and produce collected.museums to be used later.
 const build_museums = () => {
-  const xmlFilename = `data/museums.xml`;
+  const xmlFilename = `content/museums.xml`;
   let collected_museums = new Map(loadCachedJSON('collected.museums') || []);
   if (
     !isFileModified(xmlFilename) &&
@@ -84,7 +84,7 @@ const build_museum_pages = collected => {
       const workFilename = `fdirs/${poetId}/${workId}.xml`;
       found_changes |= isFileModified(workFilename);
     });
-    found_changes |= isFileModified('data/museums.xml');
+    found_changes |= isFileModified('content/museums.xml');
   });
   if (!found_changes) {
     return;

@@ -3,7 +3,7 @@ const fs = require('fs');
 const vscode = require('vscode');
 const { resolveFacsimileForPosition } = require('./facsimile.cjs');
 
-const languageId = 'kalliope-old';
+const languageId = 'kalliope-text';
 let facsimilePanel = null;
 
 const isKalliopeOldText = document => {

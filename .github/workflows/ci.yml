@@ -33,6 +33,21 @@ jobs:
         env:
           CI: true
 
+  txt2xml:
+    name: Run txt2xml tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Use Ruby 3.3
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+
+      - name: Run txt2xml tests
+        run: ruby test/txt2xml_test.rb
+
   build-static:
     name: Run build-static smoke
     runs-on: ubuntu-latest
