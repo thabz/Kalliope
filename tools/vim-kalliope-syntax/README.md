@@ -1,6 +1,6 @@
 # Kalliope Syntax for Vim
 
-Syntax highlighting for Kalliope `old2kalliope` input files.
+Syntax highlighting for Kalliope text-format input files.
 
 ## Install
 
