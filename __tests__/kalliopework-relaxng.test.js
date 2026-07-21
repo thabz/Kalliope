@@ -20,7 +20,7 @@ describe('kalliopework RELAX NG schema', () => {
     try {
       execFileSync(
         'xmllint',
-        ['--noout', '--relaxng', 'data/kalliopework.rng', ...files],
+        ['--noout', '--relaxng', 'schemas/kalliopework.rng', ...files],
         { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }
       );
     } catch (error) {

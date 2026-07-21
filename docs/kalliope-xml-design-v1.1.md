@@ -33,13 +33,13 @@ Modellen tager udgangspunkt i den eksisterende struktur:
 
 - persondata i `fdirs/<person-id>/info.xml`
 - enkeltforfatterværker i `fdirs/<person-id>/<work-id>.xml`
-- værksvalidering med `data/kalliopework.rng`
-- personvalidering med `data/info-xml.rng`
+- værksvalidering med `schemas/kalliopework.rng`
+- personvalidering med `schemas/info-xml.rng`
 - `<kalliopework>` som beholder for en bestemt udgivelse
 - `<text>` som en tekstforekomst i udgivelsen
 - `<source>` til kilde- og sideoplysninger
 
-Den nuværende schemafil er **Relax NG**, ikke DTD. Tidligere omtale af `kalliopework.dtd` bør derfor forstås som `data/kalliopework.rng`.
+Den nuværende schemafil er **Relax NG**, ikke DTD. Tidligere omtale af `kalliopework.dtd` bør derfor forstås som `schemas/kalliopework.rng`.
 
 ---
 
