@@ -13,9 +13,9 @@ Denne guide samler projektets faste konventioner, især dem der er nemme at glem
 - Portrætter og kunstgrafik ligger i `public/images/<id>/`.
 - Der må ikke ligge `.jpg`, `.jpeg`, `.png`, `.gif` eller `.webp` under `fdirs/`.
 - Når billedmetadata som `wikidata`, `museum`, `objid` og `invnr` opdateres, skal alle
-  kilder med `<picture>` gennemgås: `data/artwork.xml`, `fdirs/<id>/artwork.xml`,
-  `data/events.xml`, `fdirs/<id>/events.xml`, værkernes XML-filer, `data/keywords/*.xml`,
-  `data/about/*.xml` og `fdirs/<id>/portraits.xml`.
+  kilder med `<picture>` gennemgås: `content/artwork.xml`, `fdirs/<id>/artwork.xml`,
+  `content/events.xml`, `fdirs/<id>/events.xml`, værkernes XML-filer,
+  `content/keywords/*.xml`, `content/about/*.xml` og `fdirs/<id>/portraits.xml`.
 - Husk at `<picture artwork="...">` og `<picture portrait="...">` er referencer; metadata
   bør normalt ligge på det refererede billede i `artwork.xml` eller `portraits.xml`.
 - `fdirs/<id>/portraits.xml` refererer lokale filer med filnavn, fx `src="p1.jpg"` og `square-src="p1-square.jpg"`.

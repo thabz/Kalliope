@@ -19,7 +19,7 @@ const build_keywords = async collected => {
   const outputFolder = 'public/api/keywords';
   safeMkdir(outputFolder);
   let collected_keywords = new Map(loadCachedJSON('collected.keywords') || []);
-  const folder = 'data/keywords';
+  const folder = 'content/keywords';
   const filenames = fs
     .readdirSync(folder)
     .filter(x => x.endsWith('.xml'))

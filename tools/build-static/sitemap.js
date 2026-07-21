@@ -23,13 +23,13 @@ const poetBioLastmod = (poetId, modifiedDates) => {
       `fdirs/${poetId}/info.xml`,
       `fdirs/${poetId}/bio.xml`,
       `fdirs/${poetId}/events.xml`,
-      'data/events.xml',
+      'content/events.xml',
     ].map((filename) => modifiedDates.get(filename))
   );
 };
 
 const keywordLastmod = (keywordId, modifiedDates) => {
-  return modifiedDates.get(`data/keywords/${keywordId}.xml`);
+  return modifiedDates.get(`content/keywords/${keywordId}.xml`);
 };
 
 const localizedUrl = (lang, path) => {

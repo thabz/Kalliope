@@ -42,7 +42,7 @@ Attributter:
 - `primary="true"`: markerer portrættet som det primære på biografisiden.
 - `square-src`: kvadratisk fil under `public/images/<id>/`, brugt til social portrait.
 - `year`: år eller årinterval for billedet.
-- `museum`: museums-id fra `data/museums.xml`.
+- `museum`: museums-id fra `content/museums.xml`.
 - `objid`, `invnr`, `wikidata`: bruges til remote museum-link.
 - `clip-path`: CSS clip-path til beskæring.
 
@@ -60,7 +60,7 @@ Et portræt kan pege på et artwork i stedet for at gentage billedmetadata:
 `artwork` har formen:
 
 - `<kunstner-id>/<picture-id>` for `fdirs/<kunstner-id>/artwork.xml`
-- `kunst/<picture-id>` for globale billeder i `data/artwork.xml`
+- `kunst/<picture-id>` for globale billeder i `content/artwork.xml`
 
 Når `artwork` bruges, hentes billedsti, billedtekst, museum, note og kunstnerdata fra
 artwork-posten.
@@ -127,7 +127,7 @@ Lokale portrætter kan få eksternt museumslink via attributter:
 
 Typiske attributter:
 
-- `museum`: id fra `data/museums.xml`.
+- `museum`: id fra `content/museums.xml`.
 - `objid`: objekt-id hos museet.
 - `invnr`: inventarnummer.
 - `wikidata`: Wikidata-id.

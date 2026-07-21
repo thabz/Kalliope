@@ -2,8 +2,8 @@ import { execFileSync } from 'child_process';
 
 const GIT_MODIFIED_DATE_PATHS = [
   'fdirs/**/*.xml',
-  'data/events.xml',
-  'data/keywords/*.xml',
+  'content/events.xml',
+  'content/keywords/*.xml',
 ];
 
 const parseGitModifiedDatesLog = (log) => {

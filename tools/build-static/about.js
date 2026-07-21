@@ -24,7 +24,7 @@ const build_about_pages = async (collected) => {
       return isFileModified(...(work.sourceFiles || [`fdirs/${key}.xml`]));
     })
     .reduce((result, b) => b || result, false);
-  const folder = 'data/about';
+  const folder = 'content/about';
   const pages = fs
     .readdirSync(folder)
     .filter((x) => x.endsWith('.xml'))
@@ -67,7 +67,8 @@ const build_about_pages = async (collected) => {
     });
     // Data er samme format som keywords
     const data = {
-      id: paths.xml,
+      // Bevar den eksisterende offentlige id, selv om kildefilen er flyttet.
+      id: paths.xml.replace(/^content\//, 'data/'),
       title,
       author,
       has_footnotes: false,

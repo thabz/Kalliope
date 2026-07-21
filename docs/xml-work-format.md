@@ -183,7 +183,7 @@ Titel-fallbacks:
 
 Hvert id kan vaere:
 
-- et keyword i `data/keywords/*.xml`
+- et keyword i `content/keywords/*.xml`
 - en digter/person i `fdirs/<id>/info.xml`
 - et frit subject-id, hvis ingen af de to findes
 
@@ -401,7 +401,7 @@ Portraet:
 Attributter:
 
 - `src`: lokalt billede. Relative paths slaas op under `/images/<digter>`.
-- `artwork`: reference til et billede i `data/artwork.xml` eller `fdirs/<kunstner>/artwork.xml`.
+- `artwork`: reference til et billede i `content/artwork.xml` eller `fdirs/<kunstner>/artwork.xml`.
 - `portrait`: reference til et portraet i `fdirs/<digter>/portraits.xml`.
 - `primary="true"`: markerer primaert billede.
 - `year`: aar for billedet.
@@ -513,5 +513,5 @@ Buildet tjekker blandt andet:
 - `fdirs/ingemann/1832.xml`: stort vaerk med mange tekster.
 - `fdirs/winther/1860-1.xml` og `fdirs/winther/1860-2.xml`: varianter.
 - `fdirs/hugo/portraits.xml`: portraetter, inkl. genbrugt keyword-billede.
-- `data/keywords/rom.xml`: billeder via `artwork`.
-- `data/about/tags.xml`: aeldre, kommenteret oversigt over inline-tags.
+- `content/keywords/rom.xml`: billeder via `artwork`.
+- `content/about/tags.xml`: aeldre, kommenteret oversigt over inline-tags.
