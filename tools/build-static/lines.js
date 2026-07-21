@@ -170,9 +170,7 @@ const build_global_lines_json = (collected) => {
 const build_poet_lines_json = (collected) => {
   const progress = createProgressReporter('Skrev texts.json-filer', 100);
   collected.poets.forEach((poet, poetId) => {
-    const poetTexts = Array.from(collected.texts.values()).filter(
-      text => text.poetId === poetId && text.indexable !== false
-    );
+    const poetTexts = collected.textsByPoet.get(poetId) || [];
     const filenames = Array.from(
       new Set(poetTexts.flatMap(sourceFilesForText))
     );

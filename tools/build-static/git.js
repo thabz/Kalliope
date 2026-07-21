@@ -1,4 +1,7 @@
 import { execFileSync } from 'child_process';
+import { loadJSON, safeMkdir, writeJSON } from '../libs/helpers.js';
+
+const GIT_MODIFIED_DATES_CACHE = 'caches/git-modified-dates.json';
 
 const GIT_MODIFIED_DATE_PATHS = [
   'fdirs/**/*.xml',
@@ -31,8 +34,16 @@ const parseGitModifiedDatesLog = (log) => {
 };
 
 const collect_git_modified_dates = () => {
+  let head;
   let log;
   try {
+    head = execFileSync('git', ['rev-parse', 'HEAD'], {
+      encoding: 'utf8',
+    }).trim();
+    const cached = loadJSON(GIT_MODIFIED_DATES_CACHE);
+    if (cached?.head === head) {
+      return new Map(cached.dates);
+    }
     log = execFileSync(
       'git',
       [
@@ -55,7 +66,13 @@ const collect_git_modified_dates = () => {
     throw error;
   }
 
-  return parseGitModifiedDatesLog(log);
+  const modifiedDates = parseGitModifiedDatesLog(log);
+  safeMkdir('caches');
+  writeJSON(GIT_MODIFIED_DATES_CACHE, {
+    head,
+    dates: Array.from(modifiedDates),
+  });
+  return modifiedDates;
 };
 
 export {

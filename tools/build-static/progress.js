@@ -13,7 +13,7 @@ const createProgressReporter = (
       }
     },
     finish() {
-      if (count % interval !== 0 || count === 0) {
+      if (count > 0 && count % interval !== 0) {
         logger(`${label}: ${count} (færdig)`);
       }
     },

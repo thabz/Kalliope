@@ -89,7 +89,13 @@ const extract_subworks = (poetId, workbody, collected) => {
 };
 
 const build_works_toc = async (collected) => {
-  const modifiedDates = collect_git_modified_dates();
+  let modifiedDates = null;
+  const getModifiedDates = () => {
+    if (modifiedDates == null) {
+      modifiedDates = collect_git_modified_dates();
+    }
+    return modifiedDates;
+  };
   const progress = createProgressReporter('Skrev toc.json-filer', 100);
 
   const workFilesForPoet = (poetId) => {
@@ -195,7 +201,7 @@ const build_works_toc = async (collected) => {
       }));
       const { prev, next } = resolvePrevNextWork(pageWorks, workId);
       const modified = workMeta.sourceFiles
-        .map(filename => modifiedDates.get(filename))
+        .map(filename => getModifiedDates().get(filename))
         .filter(date => date != null)
         .sort()
         .pop();
@@ -234,7 +240,7 @@ const build_works_toc = async (collected) => {
         work: collected.works.get(`${poetId}/${workId}`),
         notes: work_data.notes || [],
         pictures: work_data.pictures || [],
-        modified: modifiedDates.get(filename),
+        modified: getModifiedDates().get(filename),
         prev,
         next,
       };
