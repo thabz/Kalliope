@@ -287,6 +287,12 @@ def printEndSection(sectionTitle)
   puts ""
 end
 
+def ensureSectionsClosed()
+  return if @section_title_stack.empty?
+
+  abort "FEJL: SEKTION »#{@section_title_stack.last}« mangler SLUTSEKTION"
+end
+
 File.readlines(ARGV[0]).each do |line|
   if line =~ /<note>.*\] .*<\/note>/
     @found_corrections = true
@@ -309,6 +315,7 @@ File.readlines(ARGV[0]).each do |line|
     end
   end
   if line.start_with?('SLUT') and not line.start_with?('SLUTSEKTION')
+    ensureSectionsClosed()
     @done = true
     if @state != 'NONE'
         printPoem();
@@ -418,6 +425,9 @@ File.readlines(ARGV[0]).each do |line|
       next
   end
   if line.start_with?('SLUTSEKTION') or line.start_with?('SEKTIONSLUT')
+      if @section_title_stack.empty?
+          abort "FEJL: SLUTSEKTION uden tilhørende SEKTION"
+      end
       if @state != 'NONE'
           printPoem();
       end
@@ -502,6 +512,7 @@ File.readlines(ARGV[0]).each do |line|
 end
 
 printPendingSection()
+ensureSectionsClosed()
 if @state != 'NONE'
     printPoem()
 end

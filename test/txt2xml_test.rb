@@ -241,6 +241,31 @@ class Txt2XmlTest < Minitest::Test
     assert_equal '12', section.attributes['level']
   end
 
+  def test_rejects_a_section_without_an_end_marker
+    assert_conversion_fails(<<~TEXT, 'FEJL: SEKTION »Uafsluttet« mangler SLUTSEKTION')
+      KILDE:<i>Antologi</i> 1872
+      DIGTER:antologierdk
+
+      SEKTION:Uafsluttet
+
+      T:Et digt
+      F:En førstelinje
+
+      En førstelinje
+      SLUT
+    TEXT
+  end
+
+  def test_rejects_an_end_marker_without_a_section
+    assert_conversion_fails(<<~TEXT, 'FEJL: SLUTSEKTION uden tilhørende SEKTION')
+      KILDE:<i>Antologi</i> 1872
+      DIGTER:antologierdk
+
+      SLUTSEKTION
+      SLUT
+    TEXT
+  end
+
   def test_converts_prose_and_body_type_changes
     document = convert_and_parse(<<~TEXT)
       KILDE:<i>Prosa</i> 1900
