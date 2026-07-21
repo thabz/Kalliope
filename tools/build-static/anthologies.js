@@ -1,3 +1,5 @@
+import { safeGetAttr } from './xml.js';
+
 const ANTHOLOGY_WORK_ID = 'antologier';
 const ANTHOLOGY_WORK_TITLE = 'Tekster i andre udgivelser';
 
@@ -5,6 +7,18 @@ const publicationTextId = textId => `${textId}a`;
 
 const isAnthologyText = (textAuthorId, publicationPoetId) =>
   textAuthorId != null && textAuthorId !== publicationPoetId;
+
+const resolveAuthorId = (node, fallbackAuthorId) => {
+  let current = node;
+  while (current != null) {
+    const authorId = safeGetAttr(current, 'author');
+    if (authorId != null && authorId.length > 0) {
+      return authorId;
+    }
+    current = current.parentNode;
+  }
+  return fallbackAuthorId;
+};
 
 const sourceWorkKey = text =>
   `${text.sourcePoetId || text.poetId}/${text.sourceWorkId || text.workId}`;
@@ -112,6 +126,7 @@ export {
   buildVirtualAnthologyWorks,
   isAnthologyText,
   publicationTextId,
+  resolveAuthorId,
   sourceFilesForText,
   sourceWorkFilename,
   sourceWorkKey,

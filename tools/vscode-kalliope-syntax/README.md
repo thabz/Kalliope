@@ -90,6 +90,8 @@ Kalliope-workspacet indeholder `.vscode/settings.json` med tokenfarver til
 `old2kalliope`-grammatikken. Teksthovedkommandoer som `T:`, `F:` og
 tekstniveauets `DIGTER:` bruger scopet `keyword.other.header.text.kalliope`,
 mens værkhovedkommandoer bruger `keyword.other.header.work.kalliope`.
+`DIGTER:` umiddelbart under `SEKTION:` bruger det særskilte scope
+`keyword.other.header.section.kalliope`.
 
 VS Code indlæser ikke vilkårlige extensions direkte fra en workspace-mappe.
 Derfor er installationsscriptet nødvendigt, selv om extensionens kildekode

@@ -293,7 +293,7 @@ Særlige linjeformer:
 Sektioner grupperer tekster og kan nestes:
 
 ```xml
-<section id="del-1" level="2">
+<section id="del-1" author="hansenfj" level="2">
   <head>
     <title>Foerste del</title>
   </head>
@@ -306,6 +306,9 @@ Sektioner grupperer tekster og kan nestes:
 Attributter paa `<section>`:
 
 - `id`: gor sektionen linkbar og giver den egen tekstside med intern TOC.
+- `author`: valgfrit forfatter-id, som arves af alle tekster og undersektioner.
+  Et `author` direkte paa en indlejret `<section>` eller `<text>` overskriver den
+  arvede forfatter i den paagaeldende gren.
 - `level`: overskriftsniveau i indholdsfortegnelsen.
 - `variant`: variant-id, ligesom paa `<text>`.
 - `aliases`: gamle id'er, ligesom paa `<text>`.

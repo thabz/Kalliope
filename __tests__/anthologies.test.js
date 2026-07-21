@@ -1,8 +1,10 @@
+import { DOMParser } from '@xmldom/xmldom';
 import {
   ANTHOLOGY_WORK_ID,
   buildVirtualAnthologyWorks,
   isAnthologyText,
   publicationTextId,
+  resolveAuthorId,
   sourceWorkFilename,
   worksForPoet,
 } from '../tools/build-static/anthologies.js';
@@ -16,6 +18,61 @@ import {
 } from '../tools/build-static/xml.js';
 
 describe('antologiplaceringer', () => {
+  it('arver forfatter fra den nærmeste sektion', () => {
+    const doc = new DOMParser().parseFromString(
+      `<kalliopework author="antologierdk">
+        <workbody>
+          <section author="sektionsdigter">
+            <content>
+              <text id="arvet" />
+              <section author="indre-digter">
+                <content>
+                  <text id="indre" />
+                  <text id="overskrevet" author="tekst-digter" />
+                </content>
+              </section>
+            </content>
+          </section>
+          <text id="vaerkets" />
+        </workbody>
+      </kalliopework>`,
+      'text/xml'
+    );
+    const texts = Array.from(doc.getElementsByTagName('text'));
+    const author = id => {
+      const text = Array.from(doc.getElementsByTagName('text')).find(
+        node => node.getAttribute('id') === id
+      );
+      return resolveAuthorId(text, 'fallback');
+    };
+
+    expect(texts).toHaveLength(4);
+    expect(author('arvet')).toBe('sektionsdigter');
+    expect(author('indre')).toBe('indre-digter');
+    expect(author('overskrevet')).toBe('tekst-digter');
+    expect(author('vaerkets')).toBe('antologierdk');
+  });
+
+  it('bruger udgivelses-id for tekster i en forfattersektion', () => {
+    const doc = new DOMParser().parseFromString(
+      `<workbody>
+        <section author="hansenfj">
+          <head><title>F. J. Hansen</title></head>
+          <content>
+            <text id="solnedgang">
+              <head><title>Solnedgang</title></head>
+            </text>
+          </content>
+        </section>
+      </workbody>`,
+      'text/xml'
+    );
+
+    const toc = build_section_toc(doc.documentElement, 'antologierdk');
+
+    expect(toc[0].content[0].id).toBe('solnedganga');
+  });
+
   it('genkender en anden tekstforfatter og danner udgivelses-id', () => {
     expect(isAnthologyText('arnesen-kall', 'antologierdk')).toBe(true);
     expect(isAnthologyText('antologierdk', 'antologierdk')).toBe(false);

@@ -118,6 +118,7 @@
   <define name="section">
     <element name="section">
       <optional><attribute name="id"><text/></attribute></optional>
+      <optional><attribute name="author"><text/></attribute></optional>
       <optional><attribute name="level"><text/></attribute></optional>
       <optional><attribute name="variant"><text/></attribute></optional>
       <optional><attribute name="aliases"><text/></attribute></optional>

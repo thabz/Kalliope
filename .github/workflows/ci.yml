@@ -33,6 +33,21 @@ jobs:
         env:
           CI: true
 
+  old2kalliope:
+    name: Run old2kalliope tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Use Ruby 3.3
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+
+      - name: Run old2kalliope tests
+        run: ruby test/old2kalliope_test.rb
+
   build-static:
     name: Run build-static smoke
     runs-on: ubuntu-latest

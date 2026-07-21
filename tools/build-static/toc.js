@@ -23,6 +23,7 @@ import {
 import {
   isAnthologyText,
   publicationTextId,
+  resolveAuthorId,
   worksForPoet,
 } from './anthologies.js';
 
@@ -37,7 +38,7 @@ const build_section_toc = (section, publicationPoetId = null) => {
     const partName = tagName(part);
     if (partName === 'text') {
       const sourceTextId = safeGetAttr(part, 'id');
-      const textAuthorId = safeGetAttr(part, 'author');
+      const textAuthorId = resolveAuthorId(part, publicationPoetId);
       const textId =
         isAnthologyText(textAuthorId, publicationPoetId) ?
           publicationTextId(sourceTextId)
