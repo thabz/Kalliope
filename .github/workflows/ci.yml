@@ -33,8 +33,8 @@ jobs:
         env:
           CI: true
 
-  old2kalliope:
-    name: Run old2kalliope tests
+  txt2xml:
+    name: Run txt2xml tests
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -45,8 +45,8 @@ jobs:
         with:
           ruby-version: '3.3'
 
-      - name: Run old2kalliope tests
-        run: ruby test/old2kalliope_test.rb
+      - name: Run txt2xml tests
+        run: ruby test/txt2xml_test.rb
 
   build-static:
     name: Run build-static smoke

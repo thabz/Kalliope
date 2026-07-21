@@ -1,9 +1,9 @@
 import fs from 'fs';
 
-describe('VS Code old2kalliope syntax', () => {
+describe('VS Code Kalliope text-format syntax', () => {
   const grammar = JSON.parse(
     fs.readFileSync(
-      'tools/vscode-kalliope-syntax/syntaxes/kalliope-old.tmLanguage.json',
+      'tools/vscode-kalliope-syntax/syntaxes/kalliope-text.tmLanguage.json',
       'utf8',
     ),
   );

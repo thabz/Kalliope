@@ -1,6 +1,6 @@
 # Kalliope-extension til VS Code
 
-Extensionen giver syntaksfremhævning til Kalliopes `old2kalliope`-filer og kan
+Extensionen giver syntaksfremhævning til Kalliope-tekstformatet og kan
 vise facsimilesider ved siden af et værk-XML, mens teksten redigeres.
 
 Syntaksen vælges automatisk for `.txt`-filer, hvis første linje begynder med
@@ -87,7 +87,7 @@ Hvis panelet viser en forklaring i stedet for et billede, så kontrollér:
 ## Syntaksfarver
 
 Kalliope-workspacet indeholder `.vscode/settings.json` med tokenfarver til
-`old2kalliope`-grammatikken. Teksthovedkommandoer som `T:`, `F:` og
+Kalliope-tekstformatets grammatik. Teksthovedkommandoer som `T:`, `F:` og
 tekstniveauets `DIGTER:` bruger scopet `keyword.other.header.text.kalliope`,
 mens værkhovedkommandoer bruger `keyword.other.header.work.kalliope`.
 `DIGTER:` umiddelbart under `SEKTION:` bruger det særskilte scope

@@ -5,9 +5,9 @@ require 'rexml/document'
 require 'rexml/xpath'
 require 'tempfile'
 
-class Old2KalliopeTest < Minitest::Test
+class Txt2XmlTest < Minitest::Test
   ROOT = File.expand_path('..', __dir__)
-  CONVERTER = File.join(ROOT, 'tools', 'old2kalliope.rb')
+  CONVERTER = File.join(ROOT, 'tools', 'txt2xml.rb')
 
   def test_prints_a_template_without_an_input_file
     output, error, status = Open3.capture3(RbConfig.ruby, CONVERTER)
@@ -364,7 +364,7 @@ class Old2KalliopeTest < Minitest::Test
   private
 
   def convert(input)
-    Tempfile.create(['old2kalliope', '.txt']) do |file|
+    Tempfile.create(['txt2xml', '.txt']) do |file|
       file.write(input)
       file.flush
       return Open3.capture3(RbConfig.ruby, CONVERTER, file.path)

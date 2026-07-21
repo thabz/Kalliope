@@ -68,11 +68,11 @@ Formaterne er dokumenteret i [personformatet](../docs/xml-info-format.md) og
 
 ### Konvertér redaktionel tekst til XML
 
-`old2kalliope.rb` konverterer Kalliopes kompakte tekstformat til værk-XML og
+`txt2xml.rb` konverterer Kalliopes kompakte tekstformat til værk-XML og
 skriver resultatet til standard output:
 
 ```sh
-ruby tools/old2kalliope.rb input.txt > output.xml
+ruby tools/txt2xml.rb input.txt > output.xml
 ```
 
 Køres scriptet uden et filargument, udskriver det en tom skabelon.
