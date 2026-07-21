@@ -124,6 +124,7 @@ const skipElasticsearch = envFlag('KALLIOPE_SKIP_ELASTICSEARCH');
 
 let collected = {
   texts: new Map(),
+  textsByPoet: new Map(),
   works: new Map(),
   workids: new Map(),
   keywords: new Map(),
@@ -1134,10 +1135,17 @@ const works_first_pass = (collected) => {
 
   buildVirtualAnthologyWorks({ ...collected, works, texts });
 
+  const textsByPoet = new Map();
+  texts.forEach(text => {
+    if (text.indexable === false) {
+      return;
+    }
+    const poetTexts = textsByPoet.get(text.poetId) || [];
+    poetTexts.push(text);
+    textsByPoet.set(text.poetId, poetTexts);
+  });
   collected.poets.forEach((poet, poetId) => {
-    const poetTexts = Array.from(texts.values()).filter(
-      text => text.poetId === poetId && text.indexable !== false
-    );
+    const poetTexts = textsByPoet.get(poetId) || [];
     poet.has_works =
       (collected.workids.get(poetId) || []).length > 0 ||
       works.has(`${poetId}/${ANTHOLOGY_WORK_ID}`);
@@ -1163,11 +1171,21 @@ const works_first_pass = (collected) => {
     writeCachedJSON('collected.dates', Array.from(sortCollectedDates(dates)));
     writeCachedJSON('collected.poets', Array.from(collected.poets));
   }
-  return { works, texts, dates };
+  return { works, texts, textsByPoet, dates };
 };
 
 const works_second_pass = async (collected) => {
   const jobs = [];
+  const textsBySourceWork = new Map();
+  collected.texts.forEach(text => {
+    const sourcePoetId = text.sourcePoetId || text.poetId;
+    const sourceWorkId = text.sourceWorkId || text.workId;
+    const key = `${sourcePoetId}/${sourceWorkId}`;
+    const texts = textsBySourceWork.get(key) || [];
+    texts.push(text);
+    textsBySourceWork.set(key, texts);
+  });
+
   collected.poets.forEach((poet, poetId) => {
     safeMkdir(`public/api/${poetId}`);
     collected.workids.get(poetId).forEach((workId) => {
@@ -1188,21 +1206,14 @@ const works_second_pass = async (collected) => {
         `fdirs/${poetId}/info.xml`,
         filename,
       ]);
-      collected.texts.forEach(text => {
-        if (
-          (text.sourcePoetId || text.poetId) === poetId &&
-          (text.sourceWorkId || text.workId) === workId
-        ) {
-          sourceFilesForText(text).forEach(sourceFile =>
-            sourceFiles.add(sourceFile)
-          );
-        }
+      const sourceTexts = textsBySourceWork.get(`${poetId}/${workId}`) || [];
+      sourceTexts.forEach(text => {
+        sourceFilesForText(text).forEach(sourceFile =>
+          sourceFiles.add(sourceFile)
+        );
       });
-      const poetMetadataModified = Array.from(collected.texts.values()).some(
-        text =>
-          (text.sourcePoetId || text.poetId) === poetId &&
-          (text.sourceWorkId || text.workId) === workId &&
-          collected.poetMetadataDirty?.has(text.poetId)
+      const poetMetadataModified = sourceTexts.some(text =>
+        collected.poetMetadataDirty?.has(text.poetId)
       );
       if (!poetMetadataModified && !isFileModified(...sourceFiles)) {
         return;
@@ -1384,13 +1395,14 @@ const main = async () => {
     build_poets_first_pass,
     collected,
   );
-  const { works, texts, dates } = await b(
+  const { works, texts, textsByPoet, dates } = await b(
     'works_first_pass',
     works_first_pass,
     collected,
   );
   collected.works = works;
   collected.texts = texts;
+  collected.textsByPoet = textsByPoet;
   collected.dates = dates;
   collected.artwork = await b('build_artwork', build_artwork, collected);
   await b(
