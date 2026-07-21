@@ -387,7 +387,6 @@ const update_elasticsearch = async collected => {
       console.log(
         'Elasticsearch server not available; skipping search index update.'
       );
-      console.log(error.message);
       return;
     }
     console.log('Elasticsearch update failed.');

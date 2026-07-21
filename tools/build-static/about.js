@@ -77,7 +77,6 @@ const build_about_pages = async (collected) => {
       content_lang: lang,
       content_html: htmlToXml(safeGetInnerXML(body), collected),
     };
-    console.log(paths.json);
     writeJSON(paths.json, data);
   });
 };

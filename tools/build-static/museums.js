@@ -115,7 +115,6 @@ const build_museum_pages = collected => {
       artwork,
     };
     const path = `public/api/museums/${museumId}.json`;
-    console.log(path);
     writeJSON(path, json);
   });
 };

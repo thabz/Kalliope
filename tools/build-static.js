@@ -89,6 +89,8 @@ import {
   print_benchmarking_results,
 } from './build-static/benchmarking.js';
 import { mapLimit } from './build-static/concurrency.js';
+import { createProgressReporter } from './build-static/progress.js';
+import { validateFirstlineMarkup } from './build-static/validation.js';
 import { build_works_toc, build_section_toc } from './build-static/toc.js';
 import { update_elasticsearch } from './build-static/elastic.js';
 import { loadExternalIdentifiers } from './build-static/external-identifiers.js';
@@ -133,6 +135,7 @@ let collected = {
 
 // Ready after second pass
 let collected_works = new Map();
+let textBuildProgress = null;
 
 const parseAliases = (value) => {
   if (value == null) {
@@ -171,6 +174,7 @@ const buildTextAliasRedirects = (redirects, texts) => {
 };
 
 const build_bio_json = async (collected) => {
+  const progress = createProgressReporter('Skrev bio.json-filer', 100);
   const codeModified = isFileModified(
     'tools/build-static.js',
     'tools/build-static/artwork.js',
@@ -187,7 +191,7 @@ const build_bio_json = async (collected) => {
       (poetId) => `fdirs/${poetId}/artwork.xml`,
     ),
   );
-  return mapLimit(
+  const results = await mapLimit(
     Array.from(collected.poets.entries()),
     async (entry) => {
       const [poetId, poet] = entry;
@@ -230,10 +234,12 @@ const build_bio_json = async (collected) => {
       data.timeline = await build_poet_timeline_json(poet, collected);
       data.portraits = await build_portraits_json(poet, collected);
       const destFilename = `public/api/${poet.id}/bio.json`;
-      console.log(destFilename);
       writeJSON(destFilename, data);
+      progress.increment();
     },
   );
+  progress.finish();
+  return results;
 };
 
 const build_poet_workids = () => {
@@ -531,8 +537,8 @@ const handle_text = async (
       indexable: placement.indexable !== false,
     },
   };
-  console.log(Paths.textPath(textId));
   writeJSON(Paths.textPath(textId), text_data);
+  textBuildProgress?.increment();
 };
 
 const handle_work = async (work) => {
@@ -587,9 +593,11 @@ const handle_work = async (work) => {
           if (indextitle == null) {
             throw `${textId} mangler førstelinje, indextitle og title i ${poetId}/${workId}.xml`;
           }
-          if (firstline != null && firstline.title.indexOf('<') > -1) {
-            throw `${textId} har markup i førstelinjen i ${poetId}/${workId}.xml`;
-          }
+          validateFirstlineMarkup(
+            firstline,
+            textId,
+            `fdirs/${poetId}/${workId}.xml`
+          );
           if (firstline != null && firstline.title.trim().length === 0) {
             throw `${textId} har blank førstelinje i ${poetId}/${workId}.xml`;
           }
@@ -923,6 +931,7 @@ const works_first_pass = (collected) => {
     works.size === 0 ||
     dates.size === 0 ||
     anthologyCodeModified;
+  const progress = createProgressReporter('Indlæste værkfiler', 100);
 
   let parentIdsToFillIn = new Map(); // Bruges til nedenstående second-pass som klistrer parent-data på
 
@@ -1118,8 +1127,10 @@ const works_first_pass = (collected) => {
           addTextDates(dates, text, textDates);
         }
       });
+      progress.increment();
     });
   });
+  progress.finish();
 
   buildVirtualAnthologyWorks({ ...collected, works, texts });
 
@@ -1164,42 +1175,44 @@ const works_second_pass = async (collected) => {
     });
   });
 
-  return mapLimit(jobs, async ({ poetId, workId }) => {
-    const filename = `fdirs/${poetId}/${workId}.xml`;
-    if (!fileExists(filename)) {
-      return;
-    }
-    const sourceFiles = new Set([
-      'tools/build-static.js',
-      'tools/build-static/anthologies.js',
-      `fdirs/${poetId}/info.xml`,
-      filename,
-    ]);
-    collected.texts.forEach(text => {
-      if (
-        (text.sourcePoetId || text.poetId) === poetId &&
-        (text.sourceWorkId || text.workId) === workId
-      ) {
-        sourceFilesForText(text).forEach(sourceFile =>
-          sourceFiles.add(sourceFile)
-        );
+  textBuildProgress = createProgressReporter('Skrev tekstfiler');
+  try {
+    await mapLimit(jobs, async ({ poetId, workId }) => {
+      const filename = `fdirs/${poetId}/${workId}.xml`;
+      if (!fileExists(filename)) {
+        return;
       }
-    });
-    const poetMetadataModified = Array.from(collected.texts.values()).some(
-      text =>
-        (text.sourcePoetId || text.poetId) === poetId &&
-        (text.sourceWorkId || text.workId) === workId &&
-        collected.poetMetadataDirty?.has(text.poetId)
-    );
-    if (!poetMetadataModified && !isFileModified(...sourceFiles)) {
-      return;
-    }
-    let doc = loadXMLDoc(filename);
-    const work = getChildByTagName(doc, 'kalliopework');
-    const head = getChildByTagName(work, 'workhead');
-    const data = collected.works.get(`${poetId}/${workId}`);
-    let sources = {};
-    getChildrenByTagName(head, 'source').forEach((sourceNode) => {
+      const sourceFiles = new Set([
+        'tools/build-static.js',
+        'tools/build-static/anthologies.js',
+        `fdirs/${poetId}/info.xml`,
+        filename,
+      ]);
+      collected.texts.forEach(text => {
+        if (
+          (text.sourcePoetId || text.poetId) === poetId &&
+          (text.sourceWorkId || text.workId) === workId
+        ) {
+          sourceFilesForText(text).forEach(sourceFile =>
+            sourceFiles.add(sourceFile)
+          );
+        }
+      });
+      const poetMetadataModified = Array.from(collected.texts.values()).some(
+        text =>
+          (text.sourcePoetId || text.poetId) === poetId &&
+          (text.sourceWorkId || text.workId) === workId &&
+          collected.poetMetadataDirty?.has(text.poetId)
+      );
+      if (!poetMetadataModified && !isFileModified(...sourceFiles)) {
+        return;
+      }
+      let doc = loadXMLDoc(filename);
+      const work = getChildByTagName(doc, 'kalliopework');
+      const head = getChildByTagName(work, 'workhead');
+      const data = collected.works.get(`${poetId}/${workId}`);
+      let sources = {};
+      getChildrenByTagName(head, 'source').forEach((sourceNode) => {
       let source = null;
       const sourceInner = safeGetInnerXML(sourceNode);
       if (sourceInner != null && sourceInner.length > 0) {
@@ -1239,18 +1252,23 @@ const works_second_pass = async (collected) => {
         };
       }
       sources[sourceId] = source;
-    });
-    data.sources = sources;
-    collected_works.set(poetId + '-' + workId, data);
+      });
+      data.sources = sources;
+      collected_works.set(poetId + '-' + workId, data);
 
-    // TODO: Make handle_work non-recursive by using a simple XPath
-    // to select all the poems and prose texts.
-    await handle_work(work); // Creates texts
-    doc = null;
-  });
+      // TODO: Make handle_work non-recursive by using a simple XPath
+      // to select all the poems and prose texts.
+      await handle_work(work); // Creates texts
+      doc = null;
+    });
+    textBuildProgress.finish();
+  } finally {
+    textBuildProgress = null;
+  }
 };
 
 const build_poet_works_json = (collected) => {
+  const progress = createProgressReporter('Skrev works.json-filer', 100);
   collected.poets.forEach((poet, poetId) => {
     safeMkdir(`public/api/${poetId}`);
 
@@ -1303,9 +1321,10 @@ const build_poet_works_json = (collected) => {
       artwork,
     };
     const worksOutFilename = `public/api/${poetId}/works.json`;
-    console.log(worksOutFilename);
     writeJSON(worksOutFilename, objectToWrite);
+    progress.increment();
   });
+  progress.finish();
 };
 
 const build_news = (collected) => {
@@ -1333,7 +1352,6 @@ const build_news = (collected) => {
     });
     const outfile = `public/api/news_${lang}.json`;
     writeJSON(outfile, list);
-    console.log(outfile);
   });
 };
 
