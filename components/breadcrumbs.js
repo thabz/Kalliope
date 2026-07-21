@@ -202,6 +202,12 @@ const Breadcrumbs = (props) => {
         nav {
           display: flex;
           flex-wrap: wrap;
+          line-height: 19px;
+        }
+        nav:empty::before {
+          content: 'Kalliope';
+          visibility: hidden;
+          padding: 4px 0;
         }
         nav > :global(div) {
           flex-shrink: 1;

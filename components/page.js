@@ -8,18 +8,36 @@ import Main from './main.js';
 import Tabs from './menu.js';
 
 const Heading = (props) => {
-  const { title } = props;
+  const { title, poet } = props;
+  const iconSrc =
+    poet == null ? '/images/about/poet.jpg' : poet.square_portrait;
+  const iconClassName =
+    poet == null ? 'heading-icon kalliope-icon' : 'heading-icon poet-icon';
+  const headingClassName =
+    poet == null ? 'heading kalliope-heading' : 'heading';
+
   return (
-    <div className="heading">
+    <div className={headingClassName}>
       <h1>{title}</h1>
+      {iconSrc != null ? (
+        <img className={iconClassName} src={iconSrc} alt="" />
+      ) : null}
       <style jsx>{`
         .heading {
-          margin-bottom: 30px;
+          position: relative;
+          display: flex;
+          align-items: flex-end;
+          justify-content: space-between;
+          gap: 24px;
+          min-height: 128px;
+          margin-bottom: 50px;
+          margin-top: -30px;
         }
 
         .heading :global(h1) {
           margin: 0;
-          width: 100%;
+          min-width: 0;
+          flex: 1;
           padding-top: 10px;
           line-height: 56px;
           font-size: 56px;
@@ -30,12 +48,48 @@ const Heading = (props) => {
         .heading :global(h1):global(.lighter) {
           color: #757575;
         }
+        .heading-icon {
+          display: block;
+          flex: 0 0 auto;
+          box-shadow: 4px 4px 12px #888;
+        }
+        .poet-icon {
+          width: 128px;
+          height: 128px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+        .kalliope-icon {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 120px;
+          height: auto;
+          box-shadow: none;
+        }
+        .kalliope-heading :global(h1) {
+          margin-right: 144px;
+        }
 
-        @media (max-width: 480px) {
+        @media (max-width: 640px) {
           .heading :global(h1) {
             padding-top: 10px;
             line-height: 40px;
             font-size: 40px;
+          }
+          .heading {
+            gap: 16px;
+            min-height: 90px;
+          }
+          .poet-icon {
+            width: 90px;
+            height: 90px;
+          }
+          .kalliope-icon {
+            width: 60px;
+          }
+          .kalliope-heading :global(h1) {
+            margin-right: 76px;
           }
         }
 
@@ -46,6 +100,9 @@ const Heading = (props) => {
           }
           .heading {
             margin-bottom: 40px;
+          }
+          .heading-icon {
+            display: none;
           }
         }
       `}</style>
@@ -91,7 +148,7 @@ const Page = (props) => {
       />
       <Main>
         <Breadcrumbs lang={lang} crumbs={crumbs} rightSide={pagingRendered} />
-        <Heading title={pageTitle} subtitle={pageSubtitle} />
+        <Heading title={pageTitle} subtitle={pageSubtitle} poet={poet} />
         <Tabs
           items={menuItems}
           selected={selectedMenuItem}
