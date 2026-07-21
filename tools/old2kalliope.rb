@@ -10,6 +10,7 @@ def printTemplate()
     puts "TITELBLAD:"
     puts ""
     puts "SEKTION:"
+    puts "DIGTER:"
     puts ""
     puts "T:"
     puts "F:"
@@ -27,6 +28,7 @@ end
 @poemcount = 1;
 @header_printed = false
 @section_title_stack = []
+@pending_section = nil
 
 # Work data
 @poetid = 'POETID'
@@ -251,18 +253,32 @@ def printPoem()
   @poemcount += 1
 end
 
-def printStartSektion(title, level)
+def printStartSektion(title, level, author)
   levelAttr = ''
   if not level.nil? and level.length > 0
       levelAttr = " level=\"#{level}\""
   end
+  authorAttr = ''
+  if not author.nil? and author.length > 0
+      authorAttr = " author=\"#{author}\""
+  end
   printHeader()
-  puts "<section#{levelAttr}>"
+  puts "<section#{authorAttr}#{levelAttr}>"
   puts "<head>"
   puts "    <title>#{title}</title>"
   puts "</head>"
   puts "<content>"
   puts ""
+end
+
+def printPendingSection(author = nil)
+  return if @pending_section.nil?
+
+  title = @pending_section[:title]
+  level = @pending_section[:level]
+  @section_title_stack.push(title)
+  printStartSektion(title, level, author)
+  @pending_section = nil
 end
 
 def printEndSection(sectionTitle)
@@ -282,6 +298,16 @@ end
 
 File.readlines(ARGV[0]).each do |line|
   next if @done;
+  if @pending_section
+    if line.start_with?('DIGTER:')
+      printPendingSection(line[7..-1].strip)
+      next
+    elsif line.strip.length == 0
+      next
+    else
+      printPendingSection()
+    end
+  end
   if line.start_with?('SLUT') and not line.start_with?('SLUTSEKTION')
     @done = true
     if @state != 'NONE'
@@ -386,10 +412,10 @@ File.readlines(ARGV[0]).each do |line|
       if (@state == 'INBODY')
           printPoem();
       end
-      sectionTitle = line.gsub(/^SEKTION\d?:/,'').strip
-      @section_title_stack.push(sectionTitle)
-      print printStartSektion(sectionTitle, level)
+      sectionTitle = line.gsub(/^SEKTION\d*:/,'').strip
+      @pending_section = { title: sectionTitle, level: level }
       @state = 'NONE'
+      next
   end
   if line.start_with?('SLUTSEKTION') or line.start_with?('SEKTIONSLUT')
       if @state != 'NONE'
@@ -438,7 +464,7 @@ File.readlines(ARGV[0]).each do |line|
     elsif line.start_with?("SKREVET:")
       @written = line[8..-1].strip
     elsif line.start_with?("FREMFØRT:")
-      @written = line[9..-1].strip
+      @performed = line[9..-1].strip
     elsif line.start_with?("BEGIVENHED:")
       @event = line.gsub(/^BEGIVENHED:/,'').strip
     elsif line.start_with?("SPROG:")
@@ -475,6 +501,7 @@ File.readlines(ARGV[0]).each do |line|
   end
 end
 
+printPendingSection()
 if @state != 'NONE'
     printPoem()
 end

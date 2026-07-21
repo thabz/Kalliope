@@ -7,7 +7,10 @@
       "include": "#work-head"
     },
     {
-      "include": "#section-line"
+      "include": "#section-head"
+    },
+    {
+      "include": "#section-end"
     },
     {
       "include": "#text-head-line"
@@ -67,9 +70,40 @@
         }
       ]
     },
-    "section-line": {
+    "section-head": {
       "name": "meta.section.kalliope",
-      "match": "^(SEKTION\\d*:|SLUTSEKTION|SEKTIONSLUT|SLUT)(.*)$",
+      "begin": "^(SEKTION\\d*:)(.*)$",
+      "beginCaptures": {
+        "1": {
+          "name": "keyword.other.section.kalliope"
+        }
+      },
+      "end": "^(?!(?:DIGTER:|\\s*$))",
+      "patterns": [
+        {
+          "name": "meta.header.section.kalliope",
+          "match": "^(DIGTER:)(.*)$",
+          "captures": {
+            "1": {
+              "name": "keyword.other.header.section.kalliope"
+            },
+            "2": {
+              "patterns": [
+                {
+                  "include": "#inline-markup"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "include": "#inline-markup"
+        }
+      ]
+    },
+    "section-end": {
+      "name": "meta.section.kalliope",
+      "match": "^(SLUTSEKTION|SEKTIONSLUT|SLUT)(.*)$",
       "captures": {
         "1": {
           "name": "keyword.other.section.kalliope"

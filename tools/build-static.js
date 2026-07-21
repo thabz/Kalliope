@@ -106,6 +106,7 @@ import {
   buildVirtualAnthologyWorks,
   isAnthologyText,
   publicationTextId,
+  resolveAuthorId,
   sourceFilesForText,
   worksForPoet,
 } from './build-static/anthologies.js';
@@ -574,7 +575,7 @@ const handle_work = async (work) => {
       const partName = tagName(part);
         if (partName === 'text') {
           const textId = safeGetAttr(part, 'id');
-          const textAuthorId = safeGetAttr(part, 'author');
+          const textAuthorId = resolveAuthorId(part, poetId);
           const anthologyText = isAnthologyText(textAuthorId, poetId);
           const renderedTextId =
             anthologyText ? publicationTextId(textId) : textId;
@@ -760,7 +761,7 @@ const handle_work = async (work) => {
       .filter((part) => safeGetAttr(part, 'id') != null)
       .map((part) => {
         const sourceTextId = safeGetAttr(part, 'id');
-        const textAuthorId = safeGetAttr(part, 'author');
+        const textAuthorId = resolveAuthorId(part, poetId);
         const textId =
           isAnthologyText(textAuthorId, poetId) ?
             publicationTextId(sourceTextId)
@@ -1022,7 +1023,7 @@ const works_first_pass = (collected) => {
         const indextitle = extractTitle(head, 'indextitle');
         const aliases = parseAliases(safeGetAttr(part, 'aliases'));
         const textDates = extractDates(head);
-        const textAuthorId = safeGetAttr(part, 'author');
+        const textAuthorId = resolveAuthorId(part, poetId);
         const anthologyText = isAnthologyText(textAuthorId, poetId);
 
         if (anthologyText && collected.poets.get(textAuthorId) == null) {
