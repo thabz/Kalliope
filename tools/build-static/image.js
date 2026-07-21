@@ -13,7 +13,10 @@ let collected_imagesizes = new Map(
 
 const readImageSize = async filename => {
   if (!fileExists(filename)) {
-    throw `image size failed for missing file: ${filename}`;
+    throw new Error(
+      `Billedfilen findes ikke: ${filename}\n` +
+        'Tilføj filen, eller ret billedreferencen i XML-kilden.'
+    );
   }
   const cached = collected_imagesizes.get(filename);
   if (cached != null && !isFileModified(filename)) {
@@ -28,7 +31,7 @@ const readImageSize = async filename => {
     collected_imagesizes.set(filename, size);
     return size;
   } catch (e) {
-    throw `${filename}: ${e}`;
+    throw new Error(`${filename}: ${e.message || e}`);
   }
 };
 

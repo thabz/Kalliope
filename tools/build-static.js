@@ -1440,4 +1440,7 @@ const main = async () => {
   print_benchmarking_results();
 };
 
-main();
+main().catch(error => {
+  console.error(`\nFEJL: ${error.message || error}`);
+  process.exitCode = 1;
+});

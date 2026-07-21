@@ -72,6 +72,15 @@ describe('sharp image helpers', () => {
     });
   });
 
+  it('explains how to fix a missing image file', async () => {
+    const input = path.join(tmpdir, 'missing.jpg');
+
+    await expect(imageSizeSync(input)).rejects.toThrow(
+      `Billedfilen findes ikke: ${input}\n` +
+        'Tilføj filen, eller ret billedreferencen i XML-kilden.'
+    );
+  });
+
   it('keeps existing thumbnails when the source mtime changes without content changes', async () => {
     process.chdir(tmpdir);
     fs.mkdirSync('public/images/poet', { recursive: true });
