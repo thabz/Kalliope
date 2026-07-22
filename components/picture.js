@@ -202,7 +202,6 @@ const Picture = ({
           border: 0;
         }
         img.with-drop-shadow {
-          box-shadow: 4px 4px 12px #888;
         }
         img.clickable {
           cursor: pointer;

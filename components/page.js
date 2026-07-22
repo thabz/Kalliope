@@ -51,7 +51,6 @@ const Heading = (props) => {
         .heading-icon {
           display: block;
           flex: 0 0 auto;
-          box-shadow: 4px 4px 12px #888;
         }
         .poet-icon {
           width: 128px;
