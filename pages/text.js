@@ -96,18 +96,11 @@ const Refs = ({ refs, contentLang }) => {
   );
 };
 
-const SidebarSection = ({
-  title,
-  children,
-  printHidden = false,
-  printOnly = false,
-}) => {
+const SidebarSection = ({ title, children, printHidden = false }) => {
   if (children == null) {
     return null;
   }
-  const className = `sidebar-section${printHidden ? ' print-hidden' : ''}${
-    printOnly ? ' print-only' : ''
-  }`;
+  const className = `sidebar-section${printHidden ? ' print-hidden' : ''}`;
   return (
     <section className={className}>
       <h3>{title}</h3>
@@ -121,13 +114,7 @@ const SidebarSection = ({
           font-weight: normal;
           margin: 0 0 10px;
         }
-        .sidebar-section.print-only {
-          display: none;
-        }
         @media print {
-          .sidebar-section.print-only {
-            display: block;
-          }
           .sidebar-section.print-hidden {
             display: none;
           }
@@ -460,13 +447,17 @@ const TextPage = (props) => {
     ),
     lang
   );
-  const renderedNoteSection =
-    notes.length > 0 || text.has_footnotes ? (
-      <SidebarSection title={noteHeading} printOnly={!hasScreenNotes}>
+  let renderedNoteSection = null;
+  if (hasScreenNotes) {
+    renderedNoteSection = (
+      <SidebarSection title={noteHeading}>
         {notes}
         <FootnoteList />
       </SidebarSection>
-    ) : null;
+    );
+  } else if (notes.length > 0) {
+    renderedNoteSection = notes;
+  }
   const renderedRefs = text.refs.length > 0 ? (
     <SidebarSection title={refsHeading} printHidden>
       <Refs refs={text.refs} contentLang={text.content_lang} />
