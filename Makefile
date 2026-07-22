@@ -5,7 +5,7 @@ POETS ?=
 
 .PHONY: help elasticsearch build-static build-static-force-reload \
 	build-facsimiles extract-facsimiles reextract-facsimiles \
-	sync-wikidata app status
+	sync-facsimiles sync-wikidata app status
 
 help:
 	@printf '%s\n' \
@@ -15,6 +15,7 @@ help:
 		'make build-facsimiles          Udtræk facsimiler og byg thumbnails' \
 		'make extract-facsimiles        Udtræk sider fra nye facsimile-PDF’er' \
 		'make reextract-facsimiles      Erstat tidligere udtrukne facsimile-sider' \
+		'make sync-facsimiles           Synkroniser facsimiler til webserveren' \
 		'make sync-wikidata             Synkroniser metadata fra Wikidata' \
 		'make app                       Byg og start appen' \
 		'make status                    Vis status for Docker Compose-services'
@@ -38,6 +39,9 @@ extract-facsimiles:
 
 reextract-facsimiles:
 	$(COMPOSE) --profile facsimiles run --rm --build facsimile-builder npm run build-facsimiles -- reextract
+
+sync-facsimiles:
+	./tools/sync-facsimiler.sh
 
 sync-wikidata:
 	$(COMPOSE) --profile tools run --rm --build wikidata-sync $(POETS)
