@@ -27,11 +27,11 @@ anbefalede arbejdsgang bruger Docker Compose, så Poppler-afhængighederne finde
 i et ensartet miljø:
 
 ```sh
-docker compose --profile facsimiles run --rm --build facsimile-builder \
-  npm run build-facsimiles -- all
+make build-facsimiles
 ```
 
-Kommandoen accepterer `extract`, `reextract`, `thumbnails` eller `all`. Se
+Selve værktøjet accepterer `extract`, `reextract`, `thumbnails` eller `all`.
+Make-targets findes også til `extract` og `reextract`. Se
 [facsimileafsnittet i projektets README](../README.md#facsimile-generering) for
 den fulde arbejdsgang.
 
@@ -98,8 +98,8 @@ som kildetekst.
 Kør det anbefalet i værktøjscontaineren:
 
 ```sh
-docker compose run --rm wikidata-sync
-docker compose run --rm wikidata-sync DIGTER-ID [DIGTER-ID ...]
+make sync-wikidata
+make sync-wikidata POETS="DIGTER-ID [DIGTER-ID ...]"
 ```
 
 Uden digter-id'er behandles alle mapper i `fdirs/`. Lokal kørsel med Ruby

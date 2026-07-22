@@ -11,6 +11,7 @@ Krav:
 
 - Node.js 20 eller nyere
 - Docker, hvis Elasticsearch skal køres lokalt via Compose
+- Make til genvejene omkring Docker Compose
 
 Installer afhængigheder:
 
@@ -21,7 +22,7 @@ npm install
 Start Elasticsearch på `localhost:9200`:
 
 ```shell
-docker compose up -d elasticsearch
+make elasticsearch
 ```
 
 Byg de statiske data og start appen:
@@ -62,19 +63,19 @@ Sync køres fra hosten, så containeren ikke får adgang til lokale SSH-nøgler.
 Udtræk sider fra nye PDF'er:
 
 ```shell
-docker compose --profile facsimiles run --rm --build facsimile-builder npm run build-facsimiles -- extract
+make extract-facsimiles
 ```
 
 Overskriv eksisterende output for fundne PDF'er:
 
 ```shell
-docker compose --profile facsimiles run --rm --build facsimile-builder npm run build-facsimiles -- reextract
+make reextract-facsimiles
 ```
 
 Kør hele kæden med udtrækning og thumbnails:
 
 ```shell
-docker compose --profile facsimiles run --rm --build facsimile-builder npm run build-facsimiles -- all
+make build-facsimiles
 ```
 
 PDF-udtræk bruger som standard `KALLIOPE_FACSIMILE_EXTRACTOR=auto`, som
@@ -105,25 +106,23 @@ git pull --ff-only
 Byg og kør static-builderen:
 
 ```shell
-docker compose up -d elasticsearch
-docker compose --profile build build static-builder
-docker compose --profile build run --rm static-builder
+make build-static
 ```
 
 Byg og genstart appen:
 
 ```shell
-docker compose up --build -d app
+make app
 ```
 
 Tjek at containerne kører:
 
 ```shell
-docker compose ps
+make status
 ```
 
 Ved større dataændringer kan static-buildet køres med fuld reload:
 
 ```shell
-docker compose --profile build run --rm static-builder npm run build-static-force-reload
+make build-static-force-reload
 ```
