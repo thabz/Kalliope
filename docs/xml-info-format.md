@@ -226,13 +226,13 @@ de øvrige eksterne id'er af `tools/sync-wikidata.rb`. Kør synkroniseringen i
 dens kortlivede værktøjscontainer:
 
 ```sh
-docker-compose run --rm wikidata-sync
+make sync-wikidata
 ```
 
 Angiv eventuelt en eller flere digter-id'er for kun at synkronisere dem:
 
 ```sh
-docker-compose run --rm wikidata-sync pope andersen
+make sync-wikidata POETS="pope andersen"
 ```
 
 Der kan findes andre sjældne id-felter i data; de bør dokumenteres her, når de får aktiv brug.
