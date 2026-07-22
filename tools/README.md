@@ -116,7 +116,9 @@ konfigurerede Kalliope-server:
 ```
 
 Scriptet bruger SSH og rsync fra værtsmaskinen og forudsætter adgang til den
-server, der er angivet i scriptet.
+server, der er angivet i scriptet. Inden synkronisering sættes lokale mapper til
+`755` og filer til `644`. `rsync` overfører derefter rettighederne, så
+webserveren også kan læse nye facsimiler oprettet af Docker.
 
 ## Editorintegrationer
 
