@@ -402,6 +402,11 @@ describe('Elasticsearch build-static step', () => {
       'poet-first',
       'poet-second',
     ]);
+    expect(
+      consoleLog.mock.calls.some(([message]) =>
+        message.startsWith('Updating text entry ')
+      )
+    ).toBe(false);
     expect(elasticSearchClient.refreshIndex).toHaveBeenCalledWith('kalliope');
   });
 });
