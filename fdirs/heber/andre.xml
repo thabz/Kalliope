@@ -2,16 +2,16 @@
 <kalliopework id="andre" author="heber" status="incomplete" type="poetry">
 <workhead>
    <title>Andre digte</title>
-   <year>?</year>
 </workhead>
 <workbody>
 
-<poem id="heber2019090701">
+<text id="heber2019090701">
 <head>
    <title>Happiness</title>
    <firstline>One morning in the month of May</firstline>
 </head>
 <body>
+<poetry>
 One morning in the month of May,
 I wandered o'er the hill;
 Though nature all around was gay,
@@ -60,9 +60,10 @@ But humble penitence.
 I questioned death—the grisly shade
 Relaxed his brow severe—
 And “I am happiness,” he said
-“If Virtue guides thee here”    
+“If Virtue guides thee here”
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

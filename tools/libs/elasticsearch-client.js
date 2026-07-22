@@ -1,62 +1,335 @@
-const fetch = require('node-fetch');
-const queue = require('async/queue');
+const URLPrefix = process.env.ELASTICSEARCH_URL || 'http://localhost:9200';
+const requestTimeout = Math.max(
+  1000,
+  parseInt(process.env.KALLIOPE_ELASTICSEARCH_REQUEST_TIMEOUT_MS, 10) || 60000
+);
+const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
+const withRequestTimeout = options => ({
+  ...options,
+  signal: options.signal || AbortSignal.timeout(requestTimeout),
+});
 
-const URLPrefix = 'http://localhost:9200';
-
-const indexingQueue = queue((task, callback) => {
-  const { index, type, id, json } = task;
-  const URL = `${URLPrefix}/${index}/${type}/${id}`;
-  const body = JSON.stringify(json);
-
-  return fetch(URL, { method: 'PUT', body: body })
-    .then(res => {
-      return res.json();
-    })
-    .then(json => {
-      callback();
-      return json;
-    })
-    .catch(error => {
-      console.log(error);
-      return null;
-    });
-}, 100);
+const requestWithRetry = async (
+  URL,
+  options,
+  attempts = 15,
+  acceptedStatuses = []
+) => {
+  let lastError = null;
+  for (let attempt = 1; attempt <= attempts; attempt++) {
+    const requestOptions = withRequestTimeout(options);
+    try {
+      const res = await fetch(URL, requestOptions);
+      if (res.ok || acceptedStatuses.includes(res.status)) {
+        return res;
+      }
+      const text = await res.text();
+      lastError = new Error(
+        `Elasticsearch ${requestOptions.method} ${URL} failed: ${res.status} ${text}`
+      );
+    } catch (error) {
+      lastError = error;
+    }
+    if (attempt < attempts) {
+      await wait(500 * attempt);
+    }
+  }
+  throw lastError;
+};
 
 class ElasticSearchClient {
-  createIndex(index) {
+  async indexExists(index) {
     const URL = `${URLPrefix}/${index}`;
-    return fetch(URL, { method: 'PUT' });
+    const res = await fetch(URL, withRequestTimeout({
+      method: 'HEAD',
+    }));
+    if (res.ok) {
+      return true;
+    }
+    if (res.status === 404) {
+      return false;
+    }
+    const text = await res.text();
+    throw new Error(
+      `Elasticsearch HEAD ${URL} failed: ${res.status} ${text}`
+    );
   }
 
-  create(index, type, id, json) {
-    indexingQueue.push({ index, type, id, json }, err => {
-      if (err) {
-        console.log(err);
-      }
+  async createIndex(index) {
+    const URL = `${URLPrefix}/${index}`;
+    const deleteRes = await requestWithRetry(
+      URL,
+      {
+        method: 'DELETE',
+      },
+      15,
+      [404]
+    );
+    await deleteRes.text();
+    const putRes = await requestWithRetry(URL, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        settings: {
+          analysis: {
+            analyzer: {
+              kalliope_text: {
+                tokenizer: 'standard',
+                filter: ['lowercase', 'asciifolding'],
+              },
+            },
+            normalizer: {
+              kalliope_keyword: {
+                type: 'custom',
+                filter: ['lowercase', 'asciifolding'],
+              },
+            },
+          },
+        },
+        mappings: {
+          date_detection: false,
+          properties: {
+            poet_search: {
+              type: 'text',
+              analyzer: 'kalliope_text',
+            },
+            text: {
+              properties: {
+                id: {
+                  type: 'keyword',
+                },
+                title: {
+                  type: 'text',
+                  analyzer: 'kalliope_text',
+                  fields: {
+                    exact: {
+                      type: 'keyword',
+                      normalizer: 'kalliope_keyword',
+                    },
+                  },
+                },
+                content_html: {
+                  type: 'text',
+                  analyzer: 'kalliope_text',
+                },
+                subtitles: {
+                  type: 'text',
+                  analyzer: 'kalliope_text',
+                },
+              },
+            },
+            work: {
+              properties: {
+                title: {
+                  type: 'text',
+                  analyzer: 'kalliope_text',
+                  fields: {
+                    exact: {
+                      type: 'keyword',
+                      normalizer: 'kalliope_keyword',
+                    },
+                  },
+                },
+              },
+            },
+          },
+        },
+      }),
+    });
+    return putRes.text();
+  }
+
+  async create(index, type, id, json) {
+    const URL = `${URLPrefix}/${index}/_doc/${id}`;
+    const body = JSON.stringify(json);
+    const res = await requestWithRetry(URL, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body,
+    });
+    return res.json();
+  }
+
+  async bulkCreate(index, documents) {
+    if (documents.length === 0) {
+      return { errors: false, items: [] };
+    }
+
+    const URL = `${URLPrefix}/${index}/_bulk`;
+    const body =
+      documents
+        .map(document =>
+          [
+            JSON.stringify({
+              index: {
+                _id: document.id,
+              },
+            }),
+            JSON.stringify(document.data),
+          ].join('\n')
+        )
+        .join('\n') + '\n';
+    const res = await requestWithRetry(URL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-ndjson',
+      },
+      body,
+    });
+    const result = await res.json();
+
+    if (result.errors) {
+      const failedItem = result.items.find(item => {
+        const action = item.index || item.create || item.update;
+        return action && action.error;
+      });
+      throw new Error(
+        `Elasticsearch bulk ${URL} failed: ${JSON.stringify(failedItem)}`
+      );
+    }
+
+    return result;
+  }
+
+  async refreshIndex(index) {
+    const URL = `${URLPrefix}/${index}/_refresh`;
+    const res = await requestWithRetry(URL, {
+      method: 'POST',
+    });
+    return res.json();
+  }
+
+  async deleteByQuery(index, query) {
+    const URL = `${URLPrefix}/${index}/_delete_by_query?conflicts=proceed&refresh=true`;
+    const res = await requestWithRetry(URL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ query }),
+    });
+    return res.json();
+  }
+
+  deletePoet(index, poetId) {
+    return this.deleteByQuery(index, {
+      term: {
+        'poet.id': poetId,
+      },
+    });
+  }
+
+  deleteWork(index, poetId, workId) {
+    return this.deleteByQuery(index, {
+      bool: {
+        filter: [
+          {
+            term: {
+              'poet.id': poetId,
+            },
+          },
+          {
+            term: {
+              'work.id': workId,
+            },
+          },
+        ],
+      },
     });
   }
 
   // Returns the raw JSON as (a promise of) text, not as an object.
   search(index, type, country, poetId, query, page = 0) {
     const URL = `${URLPrefix}/${index}/_search`;
+    const poetSearchQuery = {
+      bool: {
+        filter: [{ term: { result_type: 'poet' } }],
+        must: [
+          {
+            multi_match: {
+              query,
+              fields: ['poet.id^8', 'poet_search^4'],
+            },
+          },
+        ],
+      },
+    };
+    const titleBoostQueries = (field, exactBoost) => [
+      {
+        match: {
+          [`${field}.exact`]: {
+            query,
+            boost: exactBoost,
+          },
+        },
+      },
+      {
+        match_phrase: {
+          [field]: {
+            query,
+            boost: exactBoost / 2,
+          },
+        },
+      },
+      {
+        match_phrase_prefix: {
+          [field]: {
+            query,
+            boost: exactBoost / 4,
+          },
+        },
+      },
+    ];
+    const workSearchQuery = {
+      bool: {
+        filter: [{ term: { result_type: 'work' } }],
+        must: [
+          {
+            multi_match: {
+              query,
+              fields: ['work.title^8'],
+            },
+          },
+        ],
+        should: titleBoostQueries('work.title', 24),
+      },
+    };
+    const textSearchQuery = {
+      bool: {
+        filter: [{ term: { result_type: 'text' } }],
+        must: [
+          {
+            multi_match: {
+              query,
+              fields: [
+                'text.id^5',
+                'text.title^10',
+                'text.subtitles^2',
+                'text.content_html',
+              ],
+            },
+          },
+        ],
+        should: titleBoostQueries('text.title', 40),
+      },
+    };
     const body = {
       size: 10,
       from: page * 10,
       query: {
         bool: {
-          must: [
-            {
-              multi_match: {
-                query: query,
-                fields: ['text.title', 'text.content_html', 'text.subtitles'],
-              },
-            },
-          ],
-          filter: [{ term: { 'poet.country': country } }],
+          must: [],
+          filter: [],
         },
       },
       highlight: {
         fields: {
+          'work.title': {},
+          'text.title': {},
           'text.content_html': {},
         },
       },
@@ -64,6 +337,40 @@ class ElasticSearchClient {
     if (poetId != null && poetId.length > 0) {
       body.query.bool.filter.push({
         term: { 'poet.id': poetId },
+      });
+      body.query.bool.must.push({
+        bool: {
+          should: [workSearchQuery, textSearchQuery],
+          minimum_should_match: 1,
+        },
+      });
+      body.query.bool.filter.push({
+        term: { 'poet.country': country },
+      });
+    } else {
+      // Keep the actual search query in must/query context so Elasticsearch
+      // calculates _score. Country/result-type limits belong in filter context;
+      // moving the title/text queries there disables title boosts and exact
+      // title matches stop rising to the top.
+      body.query.bool.must.push({
+        bool: {
+          should: [
+            poetSearchQuery,
+            {
+              bool: {
+                must: [workSearchQuery],
+                filter: [{ term: { 'poet.country': country } }],
+              },
+            },
+            {
+              bool: {
+                must: [textSearchQuery],
+                filter: [{ term: { 'poet.country': country } }],
+              },
+            },
+          ],
+          minimum_should_match: 1,
+        },
       });
     }
 
@@ -82,4 +389,4 @@ class ElasticSearchClient {
 
 const elasticSearchClient = new ElasticSearchClient();
 
-module.exports = elasticSearchClient;
+export default elasticSearchClient;

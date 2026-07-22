@@ -1,36 +1,16 @@
-// @flow
-import React, { useContext } from 'react';
-import { Link } from '../routes';
-var DOMParser = require('xmldom').DOMParser;
-import LangContext from '../common/LangContext.js';
-import type {
-  Text,
-  TextLang,
-  Lang,
-  TextContentOptions,
-  TextContentType,
-} from '../common/types.js';
-import { Footnote } from './footnotes.js';
-import * as Links from './links';
+import Link from 'next/link';
+import { useContext } from 'react';
 import CommonData from '../common/commondata.js';
+import LangContext from '../common/LangContext.js';
+import { Footnote } from './footnotes.js';
+import * as Links from './links.js';
+import { DOMParser } from '@xmldom/xmldom';
 
-// Fiks bindestreger mellem årstal, sidetal osv.
-const replaceHyphens = (s: string) => {
-  return s.replace(/(\d)-(\d)/g, '$1–$2'); // Hyphen/minus (U+002D) to en-dash (U+2013)
-};
-
-let keySeq = 1;
-type TextContentPropsType = {
-  contentHtml: ?TextContentType,
-  contentLang: TextLang,
-  options?: TextContentOptions,
-  style?: Object,
-  className?: ?string,
-  keyPrefix?: string, // Ved bladring hopper linjenumrene hvis alle digtes linjer har samme key.
-};
-const TextContent = (props: TextContentPropsType) => {
+// Render xml
+const renderXmlString = (inputString) => {
   const lang = useContext(LangContext);
-  const handle_metrik = (s: string) => {
+
+  const handle_metrik = (s) => {
     // Disse metrik symboler ligger i Unicode 23Dx
     // http://www.unicode.org/charts/PDF/U2300.pdf
     const unicode = s
@@ -57,71 +37,103 @@ const TextContent = (props: TextContentPropsType) => {
     );
   };
 
-  const handle_a = (node: any) => {
+  const handle_hash_link_click = (event, href) => {
+    if (typeof window === 'undefined' || href.indexOf('#') === -1) {
+      return;
+    }
+    event.preventDefault();
+
+    const target = new URL(href, window.location.href);
+    if (
+      target.pathname === window.location.pathname &&
+      target.search === window.location.search
+    ) {
+      window.location.hash = target.hash;
+      window.location.reload();
+    } else {
+      window.location.href = target.toString();
+    }
+  };
+
+  const handle_link = (href, children) => {
+    const key = keySeq++;
+    if (href.indexOf('#') > -1) {
+      return (
+        <a
+          key={key}
+          href={href}
+          onClick={(e) => handle_hash_link_click(e, href)}>
+          {children}
+        </a>
+      );
+    }
+    return (
+      <Link key={key} href={href}>
+        {children}
+      </Link>
+    );
+  };
+
+  const handle_a = (node) => {
     if (node.hasAttribute('person')) {
       const poetId = node.getAttribute('person');
-      return (
-        <Link key={keySeq++} route={Links.poetURL(lang, poetId)}>
-          <a>{handle_nodes(node.childNodes)}</a>
-        </Link>
+      return handle_link(
+        Links.poetURL(lang, poetId),
+        handle_nodes(node.childNodes)
       );
     } else if (node.hasAttribute('poet')) {
       const poetId = node.getAttribute('poet');
-      return (
-        <Link key={keySeq++} route={Links.poetURL(lang, poetId)}>
-          <a>{handle_nodes(node.childNodes)}</a>
-        </Link>
+      return handle_link(
+        Links.poetURL(lang, poetId),
+        handle_nodes(node.childNodes)
       );
     } else if (node.hasAttribute('poem')) {
       const textId = node.getAttribute('poem');
-      return (
-        <Link key={keySeq++} route={Links.textURL(lang, textId)}>
-          <a>{handle_nodes(node.childNodes)}</a>
-        </Link>
+      return handle_link(
+        Links.textURL(lang, textId),
+        handle_nodes(node.childNodes)
+      );
+    } else if (node.hasAttribute('text')) {
+      const textId = node.getAttribute('text');
+      return handle_link(
+        Links.textURL(lang, textId),
+        handle_nodes(node.childNodes)
       );
     } else if (node.hasAttribute('keyword')) {
       const keywordId = node.getAttribute('keyword');
-      return (
-        <Link key={keySeq++} route={Links.keywordURL(lang, keywordId)}>
-          <a>{handle_nodes(node.childNodes)}</a>
-        </Link>
+      return handle_link(
+        Links.keywordURL(lang, keywordId),
+        handle_nodes(node.childNodes)
       );
     } else if (node.hasAttribute('dict')) {
       const keywordId = node.getAttribute('dict');
-      return (
-        <Link key={keySeq++} route={Links.dictionaryURL(lang, keywordId)}>
-          <a>{handle_nodes(node.childNodes)}</a>
-        </Link>
+      return handle_link(
+        Links.dictionaryURL(lang, keywordId),
+        handle_nodes(node.childNodes)
       );
     } else if (node.hasAttribute('work')) {
       const parts = node.getAttribute('work').split('/');
       const poetId = parts[0];
       const workId = parts[1];
-      return (
-        <Link key={keySeq++} route={Links.workURL(lang, poetId, workId)}>
-          <a>{handle_nodes(node.childNodes)}</a>
-        </Link>
+      return handle_link(
+        Links.workURL(lang, poetId, workId),
+        handle_nodes(node.childNodes)
       );
     } else if (node.hasAttribute('href')) {
       const href = node.getAttribute('href');
-      return (
-        <Link key={keySeq++} route={href}>
-          <a>{handle_nodes(node.childNodes)}</a>
-        </Link>
-      );
+      return handle_link(href, handle_nodes(node.childNodes));
     } else if (node.hasAttribute('bible')) {
       const bibleId = node.getAttribute('bible');
-      return (
-        <Link key={keySeq++} route={Links.bibleURL(lang, bibleId)}>
-          <a>{handle_nodes(node.childNodes)}</a>
-        </Link>
+      return handle_link(
+        Links.bibleURL(lang, bibleId),
+        handle_nodes(node.childNodes)
       );
     } else {
       return <code key={keySeq++}>{node.toString()}</code>;
     }
   };
 
-  const handle_node = (node: any) => {
+  const handle_node = (node) => {
     switch (node.nodeName) {
       case 'br':
         return <br key={keySeq++} />;
@@ -132,15 +144,23 @@ const TextContent = (props: TextContentPropsType) => {
       case 'pb':
         return null;
       case 'i':
-        return <i key={keySeq++}>{handle_nodes(node.childNodes)}</i>;
+        return (
+          <i key={keySeq++} lang={node.getAttribute('lang') || undefined}>
+            {handle_nodes(node.childNodes)}
+          </i>
+        );
+      case 'span':
+        return (
+          <span key={keySeq++} lang={node.getAttribute('lang') || undefined}>
+            {handle_nodes(node.childNodes)}
+          </span>
+        );
       case 'b':
         return <b key={keySeq++}>{handle_nodes(node.childNodes)}</b>;
       case 'u':
         return <u key={keySeq++}>{handle_nodes(node.childNodes)}</u>;
       case 'p':
         return <p>{handle_nodes(node.childNodes)}</p>;
-      case 'blockquote':
-        return <blockquote>{handle_nodes(node.childNodes)}</blockquote>;
       case 'sup':
         return <sup key={keySeq++}>{handle_nodes(node.childNodes)}</sup>;
       case 'sub':
@@ -178,6 +198,24 @@ const TextContent = (props: TextContentPropsType) => {
             {handle_nodes(node.childNodes)}
           </center>
         );
+      case 'blockquote':
+        const left = node.hasAttribute('left')
+          ? node.getAttribute('left')
+          : '50%';
+        const right = node.hasAttribute('right')
+          ? node.getAttribute('right')
+          : '0';
+        return (
+          <blockquote
+            key={keySeq++}
+            style={{
+              display: 'block',
+              position: 'absolute',
+              margin: `0 ${right} 0 ${left}`,
+            }}>
+            {handle_nodes(node.childNodes)}
+          </blockquote>
+        );
       case 'colored':
         const color = node.getAttribute('color') || 'solid';
         return (
@@ -192,8 +230,8 @@ const TextContent = (props: TextContentPropsType) => {
             key={keySeq++}
             style={{
               display: 'inline',
-              fontSize: '0.85em',
-              lineHeight: '1.6em',
+              fontSize: '1.0rem',
+              lineHeight: '1.1rem', // Virker ikke i en inline block
             }}>
             {handle_nodes(node.childNodes)}
           </small>
@@ -278,6 +316,7 @@ const TextContent = (props: TextContentPropsType) => {
         }
         const style = {
           width: width,
+          pageBreakInside: 'avoid',
           maxWidth: '100%',
         };
         return <img key={keySeq++} src={src} style={style} alt={alt} />;
@@ -288,7 +327,7 @@ const TextContent = (props: TextContentPropsType) => {
         return <Footnote key={keySeq++} text={noteContent} />;
       case 'sc':
         return (
-          <span key={keySeq++} style={{ fontVariant: 'small-caps' }}>
+          <span key={keySeq++} className="small-caps">
             {handle_nodes(node.childNodes)}
           </span>
         );
@@ -300,7 +339,7 @@ const TextContent = (props: TextContentPropsType) => {
     }
   };
 
-  const handle_nodes = (nodes: any) => {
+  const handle_nodes = (nodes) => {
     let collected = [];
     for (let i = 0; i < nodes.length; i++) {
       const node = nodes.item(i);
@@ -310,13 +349,43 @@ const TextContent = (props: TextContentPropsType) => {
     return collected;
   };
 
+  const frag = new DOMParser().parseFromString(
+    '<content>' + inputString + '</content>',
+    'text/xml'
+  );
+  return handle_nodes(frag.childNodes);
+};
+export { renderXmlString };
+
+// Fiks bindestreger mellem årstal, sidetal osv.
+const replaceHyphens = (s) => {
+  return s.replace(/(\d)-(\d)/g, '$1–$2'); // Hyphen/minus (U+002D) to en-dash (U+2013)
+};
+
+const TextInline = (props) => {
+  const { contentHtml } = props;
+  if (contentHtml == null) {
+    return null;
+  }
+  const rendered = contentHtml.map((l, i) => renderXmlString(l[0]));
+
+  return <div style={{ display: 'inline' }}>{rendered}</div>;
+};
+export { TextInline };
+
+let keySeq = 1;
+
+const TextContent = (props) => {
+  const lang = useContext(LangContext);
+
   const {
     contentHtml,
     contentLang,
     style,
     keyPrefix = 'linje-',
-    className,
+    className = 'block',
     options = {},
+    type = 'prose',
   } = props;
 
   if (contentHtml == null) {
@@ -330,9 +399,16 @@ const TextContent = (props: TextContentPropsType) => {
     );
   }
 
+  const showNums =
+    contentHtml.find((l) => {
+      const lineOptions = l.length > 1 ? l[1] : {};
+      return lineOptions.displayNum != null || lineOptions.margin != null;
+    }) != null;
+
   if (options.highlight != null) {
+    const highlight = options.highlight;
     const lastLineNum = contentHtml
-      .map(l => {
+      .map((l) => {
         const lineOptions = l.length > 1 ? l[1] : {};
         const lineNum =
           lineOptions.num != null ? parseInt(lineOptions.num) : null;
@@ -342,8 +418,8 @@ const TextContent = (props: TextContentPropsType) => {
         return Math.max(lineNum, maxLineNum);
       }, -1);
     // Bound the values
-    options.highlight.from = Math.max(1, options.highlight.from);
-    options.highlight.to = Math.min(lastLineNum, options.highlight.to);
+    highlight.from = Math.max(1, highlight.from);
+    highlight.to = Math.min(lastLineNum, highlight.to);
   }
 
   let isHighlighting = false;
@@ -352,7 +428,6 @@ const TextContent = (props: TextContentPropsType) => {
     const lineNum = lineOptions.num != null ? parseInt(lineOptions.num) : null;
     let className = '';
     let anchor = null;
-
     let rendered = null;
     if (options.highlight != null) {
       if (lineNum != null && lineNum === options.highlight.from) {
@@ -372,20 +447,17 @@ const TextContent = (props: TextContentPropsType) => {
     }
 
     if (lineOptions.html) {
-      const frag = new DOMParser().parseFromString(
-        '<content>' + l[0] + '</content>'
-      );
-      rendered = handle_nodes(frag.childNodes);
+      rendered = renderXmlString(l[0], lang);
     } else {
       rendered = replaceHyphens(l[0]);
       if (rendered.trim().length === 0) {
-        if (options == null || !options.isPoetry) {
+        if (type === 'prose') {
           className += ' half-height-blank';
         }
         rendered = <br />;
       }
     }
-    let lineInnerClass = 'inner-line';
+    let lineInnerClass = '';
     if (lineOptions.center) {
       lineInnerClass += ' centered-text';
     }
@@ -396,8 +468,12 @@ const TextContent = (props: TextContentPropsType) => {
     if (lineOptions.margin) {
       className += ' with-margin-text';
     }
+    if (showNums) {
+      className += ' line-with-num';
+    }
 
-    if (options.isPoetry && !lineOptions.wrap && !lineOptions.hr) {
+    if (type !== 'prose' && !lineOptions.wrap && !lineOptions.hr) {
+      lineInnerClass += ' inner-poem-line';
       className += ' poem-line';
       return (
         <div
@@ -406,14 +482,6 @@ const TextContent = (props: TextContentPropsType) => {
           key={keyPrefix + i}>
           {anchor}
           <div className={lineInnerClass}>{rendered}</div>
-        </div>
-      );
-    } else if (options.isBible) {
-      className += ' bible-line';
-      return (
-        <div className={className} data-num={lineNum} key={keyPrefix + i}>
-          {anchor}
-          {rendered}
         </div>
       );
     } else if (lineOptions.hr) {
@@ -426,6 +494,7 @@ const TextContent = (props: TextContentPropsType) => {
     } else {
       // Prose
       className += ' prose-paragraph';
+      lineInnerClass += ' inner-prose-line';
       if (lineOptions.right) {
         className += ' right-aligned-prose-text';
       }
@@ -433,17 +502,33 @@ const TextContent = (props: TextContentPropsType) => {
         className += ' centered-prose-text';
       }
       return (
-        <div className={className} key={i + keyPrefix}>
-          {rendered}
+        <div
+          className={className}
+          key={i + keyPrefix}
+          data-num={lineOptions.displayNum}>
+          {anchor}
+          <div className={lineInnerClass}>{rendered}</div>
         </div>
       );
     }
   });
 
+  let quoteClassName = '';
+  if (type === 'quote') {
+    quoteClassName = 'blockquote';
+  }
+
+  let smallClassName = '';
+  if (options.fontSize === 'small') {
+    smallClassName = ' small';
+  }
+
   return (
     <div
       style={style}
-      className={className}
+      className={[className, smallClassName, quoteClassName]
+        .filter((a) => a != null)
+        .join(' ')}
       lang={contentLang}
       key={keyPrefix + 'outer'}>
       {/*
@@ -453,8 +538,7 @@ const TextContent = (props: TextContentPropsType) => {
         */}
       {lines}
       <style jsx>{`
-        :global(.poem-line::before),
-        :global(.bible-line::before) {
+        :global(.line-with-num::before) {
           content: attr(data-num);
           color: ${CommonData.lightTextColor};
           margin-right: 1em;
@@ -478,12 +562,22 @@ const TextContent = (props: TextContentPropsType) => {
           vertical-align: top;
           margin-top: 0;
         }
-        :global(.bible-line),
-        :global(.poem-line) {
+        :global(.line-with-num) {
           margin-left: 1.5em;
         }
         :global(.prose-paragraph) {
           hyphens: auto;
+        }
+        :global(.block.small) {
+          font-size: 1rem;
+          line-height: 1.45rem;
+        }
+        :global(.block.small .line-with-num::before) {
+          margin-top: 0;
+          font-size: 0.8rem;
+        }
+        :global(.block) {
+          display: inline-block;
         }
         :global(.highlighted-line) {
           background-color: rgb(253, 246, 227);
@@ -509,11 +603,15 @@ const TextContent = (props: TextContentPropsType) => {
         :global(.last-highlighted-line) {
           border-bottom: 1px solid rgb(238, 232, 213);
         }
-        :global(.inner-line) {
+        :global(.inner-poem-line) {
           display: inline-block;
           width: calc(100%-7em);
           margin-left: 7em;
           text-indent: -7em;
+        }
+        :global(.inner-prose-line) {
+          display: inline-block;
+          width: calc(100%);
         }
         :global(.right-aligned-text) {
           text-align: right;
@@ -542,6 +640,12 @@ const TextContent = (props: TextContentPropsType) => {
         }
         :global(.text-two-columns) :global(div:last-child) {
           padding-left: 10px;
+        }
+        :global(.blockquote) {
+          /*width: calc(100% - ${options.marginLeft} - ${options.marginRight});*/
+          margin-left: ${options.marginLeft};
+          margin-right: ${options.marginRight};
+          font-size: ${options.fontSize};
         }
       `}</style>
     </div>

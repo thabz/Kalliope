@@ -31,13 +31,13 @@ end
 @fieldvalues = {}
 @fieldvalidations = {
     'Digter-id' => lambda do |id|
-        if File.directory?("fdirs/#{id}")
-            abort "Mappen fdirs/#{id} findes allerede."
+        if File.exist?("fdirs/#{id}/info.xml")
+            abort "fdirs/#{id}/info.xml findes allerede."
         end
     end
 }
 
-@fieldnames.each { |fieldname| 
+@fieldnames.each { |fieldname|
     puts "#{fieldname}: "
     value = STDIN.gets.strip
     @fieldvalues[fieldname] = value
@@ -57,7 +57,7 @@ end
 @birthplace = wrapInTag(@fieldvalues['Fødested'], 'place', '      ')
 @deathplace = wrapInTag(@fieldvalues['Dødssted'], 'place', '      ')
 
-Dir.mkdir(@poetFolder)
+Dir.mkdir(@poetFolder) unless File.directory?(@poetFolder)
 
 def writeXML(filename, xml)
     File.open("#{@poetFolder}/#{filename}", 'w') do |file|
@@ -85,24 +85,25 @@ end
 
 writeXML('info.xml', @infoXml)
 
-if (@wantsAndreXml) 
+if (@wantsAndreXml)
     today = Time.new.strftime("%Y%m%d")
     @andreXml = %{<?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="andre" author="#{@poetId}" status="incomplete" type="poetry">
 <workhead>
-   <title>Andre digte</title>
-   <year>?</year>
+    <title>Andre digte</title>
 </workhead>
 <workbody>
 
-<poem id="#{@poetId}#{today}01">
+<text id="#{@poetId}#{today}01">
 <head>
-   <title></title>
-   <firstline></firstline>
+    <title></title>
+    <firstline></firstline>
 </head>
 <body>
+<poetry>
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>
@@ -110,8 +111,8 @@ if (@wantsAndreXml)
     writeXML('andre.xml', @andreXml)
 end
 
-if (@wantsPortraitsXml) 
-    Dir.mkdir("static/images/#{@poetId}")
+if (@wantsPortraitsXml)
+    Dir.mkdir("public/images/#{@poetId}")
 
     @portraitsXml = %{<?xml version="1.0" encoding="UTF-8"?>
 <pictures>
@@ -121,4 +122,3 @@ if (@wantsPortraitsXml)
     }
     writeXML('portraits.xml', @portraitsXml)
 end
-

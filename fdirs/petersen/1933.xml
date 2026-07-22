@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1933" author="petersen" status="complete" type="poetry">
 <workhead>
     <title>En Drift Vers</title>
@@ -16,13 +15,14 @@
 </workhead>
 <workbody>
 
-<prose id="petersen2019091501">
+<text id="petersen2019091501" skip-index="true">
 <head>
     <title>Forord</title>
     <source pages="5-6"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<prose>
 ,,En Drift Vers'' er ikke et <w>Udvalg</w> af Digte. De udgør, hvad nære Venner gennem Aar har reddet fra Undergang.
 
 Dette forhindrer ikke, at mindst Halvdelen af Digtene er kendt af Tusinder af Mennesker - fra Oplæsninger i Foreninger, Radio etc., - Mennesker, som hidtil har maattet lade sig nøje med mere eller mindre korrekte Afskrifter.
@@ -34,10 +34,11 @@ Under disse Forhold har Digteren bøjet sig for den Henstilling, at det vilde v�
 Vi sætter vor Fortrøstning til, at ,,En Drift Vers'' i hvert Fald nu ikke vil blive glemt.
 
 <nonum><right>Udgiveren.</right></nonum>
-</body>
 </prose>
+</body>
+</text>
 
-<poem id="petersen2019091502">
+<text id="petersen2019091502">
 <head>
     <title>Sangeren</title>
     <firstline>Har du hørt om den gamle kurer-vej</firstline>
@@ -45,6 +46,7 @@ Vi sætter vor Fortrøstning til, at ,,En Drift Vers'' i hvert Fald nu ikke vil 
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Har du hørt om den gamle kurer-vej
 i timile-skovenes gem.
 Den strækker sig op gennem Norrland
@@ -89,10 +91,11 @@ Jeg trygler dig - Gud over guder -
 lad ildsøjlen gløde om natten
 og støvstøtten kalde ved middag
 at vejvise sangerens fjed!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="petersen2019091503">
+<text id="petersen2019091503">
 <head>
     <title>Til dig, hvem massen kaarer</title>
     <firstline>Den dag, da den blindede længsel</firstline>
@@ -100,6 +103,7 @@ at vejvise sangerens fjed!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Den dag, da den blindede længsel,
 som trøstesløst leder om vej,
 gaar ud af sit knugende fængsel
@@ -126,10 +130,11 @@ Den dag du staar bundet til søjlen
 til spot og forsmædelig spe
 - den dag har du foden i bøjlen,
 og da - lær da massen at se.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="petersen2019091504">
+<text id="petersen2019091504">
 <head>
     <title>Nytaar</title>
     <firstline>Har du aldrig ligget vaagen under stjernernes forvirring</firstline>
@@ -137,6 +142,7 @@ og da - lær da massen at se.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Har du aldrig ligget vaagen under stjernernes forvirring -
 har du aldrig hørt de fodslag paa din vagt!
 Har du aldrig set de roder - set de rækker og kolonner,
@@ -163,10 +169,11 @@ har du aldrig gjort et løfte, som var bedre end de andre
 og har holdt det! - aa, saa ved du, det er sandt:
 Een dag brudt i blodig nærkamp som en søndertrampet lanse
 vejer mer' end tusind op af dem, der svandt!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="petersen2019091505">
+<text id="petersen2019091505">
 <head>
     <title>En synkende slægt</title>
     <firstline>De gamle til lidet behag</firstline>
@@ -174,6 +181,7 @@ vejer mer' end tusind op af dem, der svandt!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 De gamle til lidet behag
 staar en verden som kun kan forraa os,
 opbygget af vold og bedrag
@@ -210,10 +218,11 @@ og sukker - ordløs og spag.
 Dog - Gud gør, hvordan det skal gaa os!''
 
 - Og hvem tør vel nægte den sag!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="petersen2019091506">
+<text id="petersen2019091506">
 <head>
     <title>Nat</title>
     <firstline>Mørkets - kuldens tid var inde - det var nat</firstline>
@@ -221,6 +230,7 @@ Dog - Gud gør, hvordan det skal gaa os!''
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Mørkets - kuldens tid var inde - det var nat.
 Der var vokset sorte roser op i solens have
 - og jeg husker nu en graad, der græd
@@ -242,10 +252,11 @@ og om nogen si'r, at ingen taarer græd
 bitterligt - jeg tror det saare gerne.
 
 For jeg ved kun, det var nat - var nat.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="petersen2019091507">
+<text id="petersen2019091507">
 <head>
     <title>Gederne</title>
     <firstline>Intet kom med fred til mit sind</firstline>
@@ -253,6 +264,7 @@ For jeg ved kun, det var nat - var nat.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Intet kom med fred til mit sind,
         saa langt jeg ved,
 som naar gederne kom hjem til en by,
@@ -270,10 +282,11 @@ sprang smaa, raa bukkekid og mødrene -
 klop - klop - med dem,
 og der blev den fred i gaden,
         ingen fuldtud kan forstaa.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="petersen2019091508">
+<text id="petersen2019091508">
 <head>
     <title>Trætte mænd</title>
     <firstline>De drømte om ære og kranse engang</firstline>
@@ -281,6 +294,7 @@ og der blev den fred i gaden,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 De drømte om ære og kranse engang,
 og stjerner skød glimt i de sange, de sang
 mod fanernes vinken fra stage og stang.
@@ -308,10 +322,11 @@ af sejr, naar den sidste fanfare dø'r hen -
 Det sind, der tør glemme de mødige fjed
 - tør ende sin vej med at bøje sig ned
 og kysse det støv, som det trættedes ved.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="petersen2019091509">
+<text id="petersen2019091509">
 <head>
     <title>Sendebudet</title>
     <firstline>Det led mod de frysende stjerners tid</firstline>
@@ -319,6 +334,7 @@ og kysse det støv, som det trættedes ved.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det led mod de frysende stjerners tid,
 da Fusel vandt vejen frem.
 En hytte nikkede velkomstblid
@@ -363,10 +379,11 @@ Det ur blev timer i minders kval
 og timer i stille fest . . . . . . . . . .
 - Og det var det ur, Bror Fusel stjal
 ved gry af den dødes vest.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="petersen2019091510">
+<text id="petersen2019091510">
 <head>
     <title>Spillet</title>
     <firstline>I denne dybe nat skal millioner</firstline>
@@ -374,8 +391,9 @@ ved gry af den dødes vest.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I denne dybe nat skal millioner
-af mennester uønsket blive til.
+af mennesker uønsket blive til.
 Og døendes utalte formationer
 skal gaa ad veje, som de ikke vil.
 
@@ -388,10 +406,11 @@ Hør, søde barn, hør tærninger, som ruller,
 og øjne tælles tyst i nattens graa.
 Jeg fatter kun dit hoved mod min skulder,
 og at vi er saa smaa - saa myresmaa . . .
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="petersen2019091511">
+<text id="petersen2019091511">
 <head>
     <title>Tragedie</title>
     <firstline>Hendes øjne var engang som blanke stjerner</firstline>
@@ -399,6 +418,7 @@ og at vi er saa smaa - saa myresmaa . . .
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hendes øjne var engang som blanke stjerner
 - blanke stjerner er til trøst og miskundhed! -
 Og alt levende tog kraft af deres styrke,
@@ -408,10 +428,11 @@ Hendes øjne er i dag som kolde kloder,
 og nødtørftigt maa de laane deres glans.
 Kolde kloder ligner tiggere, som danser,
 og jeg frygter disse øjnes tiggerdans.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="petersen2019091512">
+<text id="petersen2019091512">
 <head>
     <title>Kit in memoriam</title>
     <firstline>De skældte mig for drukkenboldt</firstline>
@@ -419,6 +440,7 @@ og jeg frygter disse øjnes tiggerdans.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 De skældte mig for drukkenboldt
 og sjover og drabant
 og hvisked' det, som værre var,
@@ -462,10 +484,11 @@ saa tror jeg nok en næsvis røst
 uskyldigt hvisker: ,,- Skidt
 - vi finder nok et andet sted!''
 En saadan tøs var Kit.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="petersen2019091513">
+<text id="petersen2019091513">
 <head>
     <title>Vuggesang</title>
     <firstline>Aa - barnlille</firstline>
@@ -476,6 +499,7 @@ En saadan tøs var Kit.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Aa - barnlille
 - det at ville
 er at miste
@@ -508,10 +532,11 @@ kaabes klæde.
                 ville livet,
                 ville kampen
                 fremfor kivet.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="petersen2019091514">
+<text id="petersen2019091514">
 <head>
     <title>Galgen</title>
     <firstline>Jeg er viet til en drøm om en galge</firstline>
@@ -519,6 +544,7 @@ kaabes klæde.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg er viet til en drøm om en galge
 - om et hængetræ, som venter mig et sted.
 Og det volder mig iblandt en smule uro
@@ -563,12 +589,13 @@ Det er straffens <colored color="maroon">tunge</colored> ende, at Hun kommer,
 naar en nat det uafvendelige sker.
 Og hun græder - uden braad og uden vrede,
 mens for sidste gang vort arme hjerte ler.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="petersen2019091515">
+<text id="petersen2019091515">
 <head>
-    <title>Et kvad om en knes fra Peene.</title>
+    <title>Et kvad om en knes fra Peene</title>
     <firstline>Den nat laa vaaren i Strela sund</firstline>
     <notes>
         <note>* Dette digt om biskop-admiralen og den unge pommerske fyrste er skrevet til en Absalonfest i København. Kogger og karver var to af datidens skibstyper. Siva og Radegast nordtyske vasal-guder, Strelasund = Stralssund.</note>
@@ -577,6 +604,7 @@ mens for sidste gang vort arme hjerte ler.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
         Den nat laa vaaren i Strela sund;
         ved gry var den naaet til Laalands kyst.
         Den nat var der sorg om en vikings mund;
@@ -673,10 +701,11 @@ og det var talen, som siden lød:
         ved mindet om en dunet, vendisk ørn.
         <colored color="maroon">Paa Strela sund laa dagen underdrejet</colored>
         <colored color="maroon">og nøled' med at vække Rygnes børn.</colored>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="petersen2019091516">
+<text id="petersen2019091516">
 <head>
     <title>Cafe ,,Det røde Hjerte.''</title>
     <firstline>Der var stille i cafe ,,Det røde Hjerte''</firstline>
@@ -684,6 +713,7 @@ og det var talen, som siden lød:
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Der var stille i cafe <colored color="maroon">,,Det røde Hjerte''</colored>
 - det var skumring, og det mørkned' - det var høst
 Og paa skødet af den gamle pastor Smerte
@@ -738,10 +768,11 @@ Aa - det knaged' i mit syndefulde hjerte,
 da det stilned' om den lilles kære røst.
 Men paa skødet af den gamle pastor Smerte
 sad den søde, lille løgner, frøken Trøst.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="petersen2019091517">
+<text id="petersen2019091517">
 <head>
     <title>Landets sjæl</title>
     <firstline>Som ekkoet af en lurs gjalden</firstline>
@@ -749,6 +780,7 @@ sad den søde, lille løgner, frøken Trøst.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Som ekkoet af en lurs gjalden
 naa'r det mig dumpt og ærværdigt:
 - Herretid maales med smaamaal!
@@ -782,7 +814,7 @@ det kan dog ikke ramme Gud.
 som vi ser paa børn,
 der knytter haanden.
 
-Thi - et menneste med foden
+Thi - et menneske med foden
 paa nakken af et andet!
 -? ler, som knuser ler
 og selv maa lægge sig ovenpaa.
@@ -792,7 +824,7 @@ og selv maa lægge sig ovenpaa.
 Dog - om dom skal være,
 da tilgiv den, der skal dømme;
 thi ingen dom gør ret,
-før mennester ser en handling som kim.
+før mennesker ser en handling som kim.
 
 Og ingen har set en handling som kim
 - uden Gud.
@@ -841,10 +873,11 @@ i loen.
 
 <colored color="maroon">Den, der bærer brødrenes byrder,</colored>
 <colored color="maroon">bringer brød til sit lands sjæl.</colored>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="petersen2019091518">
+<text id="petersen2019091518">
 <head>
     <title>Brændende Europa</title>
     <firstline>Der sad en landarbejder i gaar</firstline>
@@ -852,6 +885,7 @@ i loen.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Der sad en landarbejder i gaar
 et sted i en landsby bag <colored color="maroon">Pinsk</colored> i Polen
 og snittede paa en vugge til det barn,
@@ -878,7 +912,7 @@ Resten er næsten for banalt
 til at fortælles.
 Men hvor vil det varme os
 at se som i transparent
-de ens lysende, sorte overstrifter
+de ens lysende, sorte overskrifter
 i hundrede aviser
 i det store, kristne land:
 <colored color="maroon">Vor elskede søster! Hvor maa du have lidt!</colored>
@@ -898,7 +932,7 @@ naar tidens fylde kommer,
 kan naa at faa hovedet flækket af schupoer
 paa et hjørne af Bülowsplatz.
 
-Men i stumringen kommer de til mig -
+Men i skumringen kommer de til mig -
 fire etager op, ad en lang, sort gang -
 ubegribeligt mange paa korte bruskben -
 med smaa smilehuls-hænder
@@ -925,9 +959,9 @@ Og øjnene spørger forundret:
 Og jeg ryster lidt paa haanden
 - for der er jo den kniv.
 
-Er der mennester, som beder endnu
+Er der mennesker, som beder endnu
 - for eksempel blot hundrede
-fordelt i England, Frankrig, Tystland, Skandinavien
+fordelt i England, Frankrig, Tyskland, Skandinavien
 - altsaa ikke folk som kan sige bønner,
 dem er der rigeligt af;
 men folk, som kan skrige dem
@@ -937,8 +971,9 @@ Altsaa ikke fem minutter om morgenen:
 ,,- Herre, tak for søvn og hvile!''
 - og andre fem om aftenen:
 ,,- ske dig tak for sol og helse!''
+
 Løfter der sig endnu stemmer
-skaldende og oprejste i forvirringen,
+skælvende og oprejste i forvirringen,
 eller drukner alt i larmen.
 
 Denne vanvittige larm
@@ -984,7 +1019,7 @@ For de ved
 - af hovmodet, misundelsen og hadet
 i mit frygteligt skidne sind
 groede krigen
-som en hastig blomst.
+som en hæslig blomst.
 
 Er der endnu mennesker, som kan bede
 - hvorfor forener de da ikke deres hjerters
@@ -1013,10 +1048,11 @@ Men om dette ikke er muligt
 - lad dem laane os af deres renheds og uskyldigheds rigdom
 - en skærv til tæremønt af deres øjnes sandhed
 - og giv os din fred.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="petersen2019091519">
+<text id="petersen2019091519">
 <head>
     <title>Gennem passet</title>
     <firstline>Bring mig een mand - en eneste, som tør sværge</firstline>
@@ -1024,6 +1060,7 @@ Men om dette ikke er muligt
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Bring mig een mand - en eneste, som tør sværge
     ved sin mo'rs minde, at han aldrig gik op mod
     et pas - at han aldrig stod op for at gaa
@@ -1051,8 +1088,9 @@ Vilde vinde! - voks til en orkan, der driver dem
     ned eller tilbage . . . . . . . . . for deres sjæles
     skyld . . . . . . . . . .  og for vor skyld, der har
     ranslen snøret . . . . . . . .
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

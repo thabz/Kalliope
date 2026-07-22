@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="wackenroder" status="incomplete" type="poetry">
 <workhead>
    <title>Andre digte</title>
-   <year>?</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="wackenroder2019021801">
+<text id="wackenroder2019021801">
 <head>
    <title>Siehe, wie ich trostlos weine</title>
    <subtitle>1797</subtitle>
@@ -17,6 +14,7 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Siehe wie ich trostlos weine
 In dem Kämmerlein alleine,
 Heilige Cäcilia!
@@ -51,19 +49,22 @@ Durch die Kraft der Töne sey;
 Daß mein Geist die Welt durchklinge,
 Sympathetisch sie durchdringe,
 Sie berausch' in Phantasey! –
+</poetry>
 </body>
-</poem>
+</text>
 
 <!--
-<poem id="wackenroder2019021801">
+<text id="wackenroder2019021801">
 <head>
     <title></title>
    <firstline> </firstline>
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
+</poetry>
 </body>
-</poem>
+</text>
 -->
 
 </workbody>

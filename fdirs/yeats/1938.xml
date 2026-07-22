@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1938" author="yeats" status="incomplete" type="poetry">
 <workhead>
    <title>Last Poems</title>
    <year>1938-39</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="yeats2002012801">
+<text id="yeats2002012801">
 <head>
    <title>Under Ben Bulben</title>
    <toctitle>Under Ben Bulben</toctitle>
@@ -22,6 +20,7 @@
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I
 
 Swear by what the sages spoke
@@ -141,7 +140,8 @@ By his command these words are cut:
                 Cast a cold eye
                 On life, on death.
                 Horseman, pass by!
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="hostrup" status="incomplete" type="poetry">
 <workhead>
    <title>Andre digte</title>
-   <year>?</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="hostrup1999031804">
+<text id="hostrup1999031804">
 <head>
    <title>Emmys Sang af 'Den Tredie'</title>
    <toctitle>Emmys Sang af 'Den Tredie'</toctitle>
@@ -18,6 +15,7 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Fader siger: »Sy du skal og sømme!
 stræb og stræb, det bedste som du kan!«
 Skal jeg sy, hvornaar skal jeg da drømme?
@@ -37,10 +35,11 @@ Moders Ord saamangen Gang mig smerte:
 »Sid dog stille! ellers bli'r jeg vred!«
 Sidde stille, naar man har et Hjerte -
 O, det er en ren Umulighed.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2001041802">
+<text id="hostrup2001041802">
 <head>
    <title>Hvor Studenterne forlyste</title>
    <toctitle>Hvor Studenterne forlyste</toctitle>
@@ -55,6 +54,7 @@ O, det er en ren Umulighed.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Hvor Studenterne forlyste
 Sig paa tapper Krigsmaneer,
 Stod der før en gammel Bøste,
@@ -82,10 +82,11 @@ Dyden elsk, og hold i Ære
 Kongens Exercerehuus.
 Vogt dig derfor vel for Sligt
 Paa Prins Wilhellems Distrikt.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2005042804">
+<text id="hostrup2005042804">
 <head>
    <title>Moral for Krigere</title>
    <subtitle>eller en ganske ny og traurig Vise om Søren Persen, der stod paa Vagt ved et Krudttaarn, men af Mangel paa Forsigtighed og Vanvare fros ihjel; forfattet som et advarende Exempel og helliget den tapre danske Hær af  L. Hansen, Underofficer ved Kongens Regiment</subtitle>
@@ -99,8 +100,9 @@ Paa Prins Wilhellems Distrikt.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 I denne Vinter har vi ha't
-en usædvanlig Frost,    
+en usædvanlig Frost,
 og saadan var det og den Nat,
 da Søren stod paa Post.
 Da Kulden var saa fæl  -  faldera!
@@ -130,10 +132,11 @@ ved første Kompagni
 ved Kongens Regiment  -  faldera!
 Jeg er dig vist bekendt,
 mit Navn er Hansen, her er Visen ude.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2005042805">
+<text id="hostrup2005042805">
 <head>
    <title>Fruens Sang</title>
    <subtitle>Mel.: Ach, wie schnell die Tage fliehen. (Mendelsohn.)</subtitle>
@@ -145,8 +148,9 @@ mit Navn er Hansen, her er Visen ude.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 1.
-                               
+
 O de mænd kan sagtens snakke
 om vor Mangel paa Respekt;
 paa den arme Kones Nakke
@@ -168,10 +172,11 @@ er og bliver dem en Gaade.
 O, de Mænd!
 O, hvor raa de forekommer
 en poetisk Kvindesjæl!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2005042806">
+<text id="hostrup2005042806">
 <head>
    <title>Bruns Sang</title>
    <subtitle>Mel.: Nær Majdaagaa lokje.</subtitle>
@@ -183,6 +188,7 @@ en poetisk Kvindesjæl!
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 1.
 
 I denne stille Bolig,
@@ -196,14 +202,15 @@ og blev min lille Skat.
 2.
 
 Du gode gamle Stue,
-som favned hende ømt og blidt,           
+som favned hende ømt og blidt,
 jeg tænker, du maa mig skue
 lidt skjævt til min Visit;
 thi Skatten som du værned om,
 den bliver nu min Ejendom,
 den flytter hjem til mit.
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1837" author="rueckert" status="incomplete" type="poetry">
 <workhead>
    <title>Morgenländische Sagen und Geschichten</title>
@@ -7,12 +6,13 @@
 </workhead>
 <workbody>
 
-<poem id="rueckert2019021203">
+<text id="rueckert2019021203">
 <head>
     <title>Der Traubenkern</title>
     <firstline>Jesid Ben Abdelmalik</firstline>
 </head>
 <body>
+<poetry>
 Jesid Ben Abdelmalik
 Auf dem Chalifenthron,
 Vergrößert seine Herrschaft,
@@ -67,9 +67,9 @@ Man sagt, daß eine Rebe
 Im Grabe Wurzel schlug,
 Die große Traubenbeeren
 Doch ohne Kerne trug.
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>
-

@@ -1,26 +1,162 @@
-// @flow
+import { supportedLanguages } from './common/languages.js';
 
-// routes.js
-const nextRoutes = require('next-routes');
-const routes = (module.exports = nextRoutes());
+const lang = supportedLanguages.join('|');
 
-// Named routes
-routes.add('index', '/:lang(da|en)/');
-routes.add('poets', '/:lang(da|en)/poets/:country/:groupBy(name|year)');
-routes.add('poets-looks', '/:lang(da|en)/poets/:country/:groupBy(looks)');
-routes.add('works', '/:lang(da|en)/works/:poetId');
-routes.add('museum', '/:lang(da|en)/museum/:museumId');
-routes.add('texts', '/:lang(da|en)/texts/:poetId/:type');
-routes.add('alltexts', '/:lang(da|en)/texts/:country/:type/:letter');
-routes.add('bio', '/:lang(da|en)/bio/:poetId');
-routes.add('bibliography', '/:lang(da|en)/bibliography/:poetId');
-routes.add('mentions', '/:lang(da|en)/mentions/:poetId');
-routes.add('work', '/:lang(da|en)/work/:poetId/:workId');
-routes.add('text', '/:lang(da|en)/text/:textId');
-routes.add('keywords', '/:lang(da|en)/keywords');
-routes.add('keyword', '/:lang(da|en)/keyword/:keywordId');
-routes.add('dict', '/:lang(da|en)/dict');
-routes.add('dictitem', '/:lang(da|en)/dict/:dictItemId');
-routes.add('about', '/:lang(da|en)/about/:aboutItemId');
-routes.add('search-poet', '/:lang(da|en)/search/:country/:poetId', 'search');
-routes.add('search-kalliope', '/:lang(da|en)/search/:country', 'search');
+const routeDefinitions = [
+  {
+    page: '/',
+    regex: new RegExp(`^/(${lang})/?$`),
+    keys: ['lang'],
+  },
+  {
+    page: '/poets',
+    regex: new RegExp(`^/(${lang})/poets/([^/]+)/(name|year)/?$`),
+    keys: ['lang', 'country', 'groupBy'],
+  },
+  {
+    page: '/poets-looks',
+    regex: new RegExp(`^/(${lang})/poets/([^/]+)/(looks)/?$`),
+    keys: ['lang', 'country', 'groupBy'],
+  },
+  {
+    page: '/works',
+    regex: new RegExp(`^/(${lang})/works/([^/]+)/?$`),
+    keys: ['lang', 'poetId'],
+  },
+  {
+    page: '/museums',
+    regex: new RegExp(`^/(${lang})/museums/?$`),
+    keys: ['lang'],
+  },
+  {
+    page: '/museum',
+    regex: new RegExp(`^/(${lang})/museum/([^/]+)/?$`),
+    keys: ['lang', 'museumId'],
+  },
+  {
+    page: '/texts',
+    regex: new RegExp(`^/(${lang})/texts/([^/]+)/([^/]+)/?$`),
+    keys: ['lang', 'poetId', 'type'],
+  },
+  {
+    page: '/alltexts',
+    regex: new RegExp(`^/(${lang})/texts/([^/]+)/([^/]+)/([^/]+)/?$`),
+    keys: ['lang', 'country', 'type', 'letter'],
+  },
+  {
+    page: '/bio',
+    regex: new RegExp(`^/(${lang})/bio/([^/]+)/?$`),
+    keys: ['lang', 'poetId'],
+  },
+  {
+    page: '/bibliography',
+    regex: new RegExp(`^/(${lang})/bibliography/([^/]+)/?$`),
+    keys: ['lang', 'poetId'],
+  },
+  {
+    page: '/mentions',
+    regex: new RegExp(`^/(${lang})/mentions/([^/]+)/?$`),
+    keys: ['lang', 'poetId'],
+  },
+  {
+    page: '/work',
+    regex: new RegExp(`^/(${lang})/work/([^/]+)/([^/]+)/?$`),
+    keys: ['lang', 'poetId', 'workId'],
+  },
+  {
+    page: '/text',
+    regex: new RegExp(`^/(${lang})/text/([^/]+)/?$`),
+    keys: ['lang', 'textId'],
+  },
+  {
+    page: '/keywords',
+    regex: new RegExp(`^/(${lang})/keywords/?$`),
+    keys: ['lang'],
+  },
+  {
+    page: '/keyword',
+    regex: new RegExp(`^/(${lang})/keyword/([^/]+)/?$`),
+    keys: ['lang', 'keywordId'],
+  },
+  {
+    page: '/dict',
+    regex: new RegExp(`^/(${lang})/dict/?$`),
+    keys: ['lang'],
+  },
+  {
+    page: '/dictitem',
+    regex: new RegExp(`^/(${lang})/dict/([^/]+)/?$`),
+    keys: ['lang', 'dictItemId'],
+  },
+  {
+    page: '/about',
+    regex: new RegExp(`^/(${lang})/about/([^/]+)/?$`),
+    keys: ['lang', 'aboutItemId'],
+  },
+  {
+    page: '/search',
+    regex: new RegExp(`^/(${lang})/search/([^/]+)/([^/]+)/?$`),
+    keys: ['lang', 'country', 'poetId'],
+  },
+  {
+    page: '/search',
+    regex: new RegExp(`^/(${lang})/search/([^/]+)/?$`),
+    keys: ['lang', 'country'],
+  },
+];
+
+const decodePathPart = value => {
+  try {
+    return decodeURIComponent(value);
+  } catch (err) {
+    return value;
+  }
+};
+
+const matchRoute = pathname => {
+  for (const route of routeDefinitions) {
+    const match = route.regex.exec(pathname);
+    if (match == null) {
+      continue;
+    }
+
+    const query = {};
+    route.keys.forEach((key, index) => {
+      query[key] = decodePathPart(match[index + 1]);
+    });
+    return { page: route.page, query };
+  }
+
+  return null;
+};
+
+const getRequestHandler = app => {
+  const nextHandler = app.getRequestHandler();
+
+  return (req, res, parsedUrl) => {
+    const url =
+      parsedUrl ||
+      (() => {
+        const requestUrl = new URL(req.url, 'http://localhost');
+        return {
+          pathname: requestUrl.pathname,
+          query: Object.fromEntries(requestUrl.searchParams),
+        };
+      })();
+    const match = matchRoute(url.pathname);
+
+    if (match != null) {
+      return app.render(req, res, match.page, {
+        ...url.query,
+        ...match.query,
+      });
+    }
+
+    return nextHandler(req, res, parsedUrl);
+  };
+};
+
+export {
+  getRequestHandler,
+  matchRoute,
+};

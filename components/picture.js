@@ -1,40 +1,112 @@
-// @flow
-import React, { useContext, useState } from 'react';
-import type { PictureItem, Lang, TextLang } from '../common/types.js';
-import TextContent from './textcontent.js';
-import PictureOverlay from './pictureoverlay.js';
+import Link from 'next/link';
+import { useContext, useState } from 'react';
 import CommonData from '../common/commondata.js';
-import * as Strings from '../common/strings.js';
+import * as ImagePaths from '../common/imagepaths.js';
+import LangContext from '../common/LangContext.js';
+import * as Links from './links.js';
+import PictureOverlay from './pictureoverlay.js';
+import PoetName from './poetname.js';
+import Stack from './stack.js';
+import { TextInline } from './textcontent.js';
 
-type PictureProps = {
-  pictures: Array<PictureItem>,
-  startIndex?: number,
-  showDropShadow?: boolean,
-  clickToZoom?: boolean,
-  contentLang: TextLang,
+const FigCaption = (props) => {
+  const { picture, hideArtist = false, hideMuseum = false } = props;
+  const lang = useContext(LangContext);
+
+  let artistRendered = null;
+  if (!hideArtist && picture.artist != null) {
+    artistRendered = (
+      <>
+        <Link href={Links.poetURL(lang, picture.artist.id)}>
+          <PoetName poet={picture.artist} />
+        </Link>
+        {': '}
+      </>
+    );
+  }
+
+  let remoteLink = null;
+  if (picture.remoteUrl != null) {
+    remoteLink = (
+      <>
+        {' '}
+        <a href={picture.remoteUrl}>⌘</a>
+      </>
+    );
+  }
+
+  let museumRendered = null;
+  if (!hideMuseum && picture.museum != null) {
+    const name = picture.museum.name;
+    if (name) {
+      museumRendered = (
+        <>
+          {' '}
+          <Link href={Links.museumURL(lang, picture.museum.id)}>{name}</Link>
+          {'. '}
+        </>
+      );
+    }
+  }
+
+  let noteRendered = null;
+  if (picture.note_html != null) {
+    noteRendered = (
+      <TextInline
+        contentHtml={picture.note_html}
+        contentLang={picture.content_lang || 'da'}
+      />
+    );
+  }
+
+  return (
+    <figcaption>
+      <Stack>
+        <div>
+          {artistRendered}
+          <TextInline
+            inline={true}
+            contentHtml={picture.content_html}
+            contentLang={picture.content_lang || 'da'}
+          />
+          {museumRendered}
+          {remoteLink}
+        </div>
+        {noteRendered}
+      </Stack>
+      <style jsx>{`
+        figcaption {
+          margin-top: 8px;
+          font-size: 16px;
+          line-height: 1.4;
+        }
+      `}</style>
+    </figcaption>
+  );
 };
+
 const Picture = ({
   pictures,
   contentLang,
+  hideArtist = false,
+  hideMuseum = false,
   showDropShadow = true,
   clickToZoom = true,
   startIndex = 0,
-}: PictureProps) => {
+  sizes = '(max-width: 767px) 47vw, 250px',
+}) => {
   const [overlayShown, showOverlay] = useState(false);
-
   const picture = pictures[startIndex];
   const src = picture.src;
-  const fallbackSrc = src.replace(/\/([^\/]+).jpg$/, (m, p1) => {
-    return '/t/' + p1 + CommonData.fallbackImagePostfix;
-  });
-  const sizes = '(max-width: 700px) 250px, 48vw';
+  const fallbackSrc = ImagePaths.fallbackThumbnailSrc(
+    src,
+    CommonData.fallbackImagePostfix
+  );
   let srcsets = {};
-  const sources = CommonData.availableImageFormats.map(ext => {
+  const sources = CommonData.availableImageFormats.map((ext) => {
     const srcset = CommonData.availableImageWidths
-      .map(width => {
-        const filename = src
-          .replace(/.jpg$/, `-w${width}.${ext}`)
-          .replace(/\/([^\/]+)$/, '/t/$1');
+      .map((width) => {
+        const filename = ImagePaths.thumbnailSrc(src, width, ext);
         return `${filename} ${width}w`;
       })
       .join(', ');
@@ -57,6 +129,18 @@ const Picture = ({
     pictureClassName += ' clickable';
   }
 
+  let clipPathStyle = {};
+  let clipPathDropShadowStyle = {};
+  if (picture.clipPath != null) {
+    clipPathStyle = {
+      clipPath: picture.clipPath,
+      WebkitClipPath: picture.clipPath,
+    };
+    clipPathDropShadowStyle = {
+      filter: 'drop-shadow(4px 4px 12px #888)',
+    };
+  }
+
   const onClick = () => {
     if (clickToZoom == true) {
       showOverlay(true);
@@ -76,24 +160,32 @@ const Picture = ({
       />
     );
   }
+
   return (
     <div className="sidebar-picture">
       <figure>
-        <picture className={pictureClassName} onClick={onClick}>
+        <picture
+          className={pictureClassName}
+          onClick={onClick}
+          style={clipPathDropShadowStyle}>
           {sources}
           <img
             className={pictureClassName}
             src={fallbackSrc}
             width="100%"
+            style={clipPathStyle}
             alt={alt}
           />
         </picture>
-        <figcaption>
-          <TextContent
-            contentHtml={picture.content_html}
-            contentLang={picture.content_lang || 'da'}
-          />
-        </figcaption>
+        <FigCaption
+          picture={{
+            ...picture,
+            content_html:
+              picture.miniature_content_html || picture.content_html,
+          }}
+          hideArtist={hideArtist}
+          hideMuseum={hideMuseum}
+        />
       </figure>
       {pictureOverlay}
       <style jsx>{`
@@ -102,11 +194,6 @@ const Picture = ({
         }
         figure {
           margin: 0;
-        }
-        figcaption {
-          margin-top: 8px;
-          font-size: 0.8em;
-          line-height: 1.6;
         }
         .oval-mask {
           border-radius: 50%;
@@ -131,3 +218,4 @@ const Picture = ({
 };
 
 export default Picture;
+export { FigCaption };

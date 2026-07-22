@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1858" author="kaalund" status="complete" type="poetry">
 <workhead>
     <title>Et Foraar</title>
@@ -16,20 +15,22 @@
 </workhead>
 <workbody>
 
-<prose id="kaalund2018061701">
+<text id="kaalund2018061799" skip-index="true">
 <head>
     <title>Forord</title>
     <source pages="ii-iii" facsimile-pages="7-8" />
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<prose>
 Uagtet denne Digtsamling indeholder en Deel nye Digte, beder jeg dog Læseren nærmest betragte den som en Afslutning af en tidligere poetisk Virksomhed, ↄ: en Opgjørelse med en lyrisk, romantisk Ungdom, over hvilken jeg troer at være kommen ud, uden derfor at være kommen ud over Poesien. Dog dette maa Fremtiden afgjøre! Saameget er vist, at jeg, efter en mangeaarig Taushed, seer tilbage paa mine tidligere Frembringelser med et temmeligt uhildet Blik, der gjør mig istand til at erkjende, at der er Meget, som jeg har Grund til at ønske utrykt. Mine ældre Digte findes adspredte i forskjellige Samlinger, Tidsskrifter og Blade, de ere ikke naaet langt ud i Publikum og ere for Størstedelen udgivne i en ungdommelig Periode, uden Valg og Kritik. I denne uheldige Skikkelse vil jeg nødig flytte min poetiske Fortid med over i Fremtiden; derfor har jeg nu foretaget en Revision af mine Ungdomsarbejder, hvis Resultat er denne Samling af Digte. De nye slutte sig i Karakteer og Tone til de ældre, og disse ere saa lidet kjendte og tildeels saa omarbeidede, at de mulig kunne gjælde for nye. Resten af hvad jeg har skrevet overgiver jeg - med Undtagelse af de ,,Halvhundrede Fabler for Børn'', som jeg har udgivet i Forening med afdøde Maler Th. Lundbye - til Forglemmelse.
 
 <nonum><right><b>H. V. K.</b></right></nonum>
-</body>
 </prose>
+</body>
+</text>
 
-<poem id="kaalund2001061401">
+<text id="kaalund2001061401">
 <head>
     <title>Sommerfuglene</title>
     <firstline>En Sommerfuglesamling er disse mine Sange</firstline>
@@ -37,6 +38,7 @@ Uagtet denne Digtsamling indeholder en Deel nye Digte, beder jeg dog Læseren n�
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 En Sommerfuglesamling er disse mine Sange.
 De flagred i mit Indre, der tog jeg dem tilfange.
 
@@ -90,10 +92,11 @@ Lysalf og Cherub og knusende Kæmpe,
 Viismand og Barn paa engang!
 Hvo har som Du kunnet Sorgerne dæmpe,
 Herlige Skjald, med din Sang!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001061402" variant="kaalund2018060501">
+<text id="kaalund2001061402" variant="kaalund2018060501">
 <head>
     <title>Til Adam Oehlenschläger</title>
     <firstline>Nordens Homeros! Hvad kan jeg Dig sige</firstline>
@@ -102,6 +105,7 @@ Herlige Skjald, med din Sang!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nordens Homeros! Hvad kan jeg Dig sige,
 Som alt ei Tusind' har sagt?
 Du, som din Stav over Aandernes Rige,
@@ -164,10 +168,11 @@ Tag dem til Tak for Din Digtersols Straaler;
 Men for Dit Hjertes især,
 Du, som det Høie i Sole, Violer
 Endnu som Barnet har kjær!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2018061704" variant="kaalund2018060521">
+<text id="kaalund2018061704" variant="kaalund2018060521">
 <head>
     <title>Til Danmark</title>
     <firstline>Hil dig Du Nordhavets</firstline>
@@ -175,6 +180,7 @@ Endnu som Barnet har kjær!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hil dig Du Nordhavets
 Deiligste Datter,
 Stille, velsignede
@@ -309,10 +315,11 @@ Hellige Moder,
 I Dine Arme
 Skjænk mig to Fodsbred
 Jord til en Grav!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001061403" variant="kaalund2018060508">
+<text id="kaalund2001061403" variant="kaalund2018060508">
 <head>
     <title>Hilsen til Thorvaldsen</title>
     <firstline>Vær velkommen Søn af gamle Norden</firstline>
@@ -323,6 +330,7 @@ Jord til en Grav!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Vær velkommen Søn af gamle Norden,
 Vær velkommen til Din Moders Bryst!
 Henrykt føler hun hvad Du er vorden,
@@ -400,10 +408,11 @@ Er Dit Fødeland dog heller ei;
 Kort, men skjøn er Nordens grønne Sommer!
 Fremmed staaer Du hist blandt Sydens Blommer,
 Med Dit Øies blaae Forglemmigei!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001061405" variant="kaalund2018060511">
+<text id="kaalund2001061405" variant="kaalund2018060511">
 <head>
     <title>Kvindens Skabelse</title>
     <firstline>Tidens Morgen frembrød i straalende Glands over Eden</firstline>
@@ -412,6 +421,7 @@ Med Dit Øies blaae Forglemmigei!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Tidens Morgen frembrød i straalende Glands over Eden,
 Herlig sig Solen opsvang paa flammende Vinger af Mulmet,
 Ormen krøb ydmygt i Støv, og Ørnen steg høit imod Skyen.
@@ -422,10 +432,11 @@ See, da danned ham Gud dets Billed af Roser og Lilier:
 Ildens med Vandets Natur han blanded, og Slangens med Duens,
 Klippens med Sivets: og skabt for Adam smilede Kvinden -
 Englen, ved hvilken er tabt, men atter gjenfundet et Eden!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001061406" variant="kaalund2018060516"> 
+<text id="kaalund2001061406" variant="kaalund2018060516">
 <head>
     <title>Aftenskumring</title>
     <firstline>Hver en Smaafugl blunder</firstline>
@@ -433,6 +444,7 @@ Englen, ved hvilken er tabt, men atter gjenfundet et Eden!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hver en Smaafugl blunder
 I den dunkle Lund,
 Med sit Hoved under
@@ -468,10 +480,11 @@ Vidt min Sjæl, du flakked
 Uden Ro og Rist;
 Nyd da nu en stakket,
 Ak, kun stakket Frist!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001061409" variant="kaalund2018060523">
+<text id="kaalund2001061409" variant="kaalund2018060523">
 <head>
     <title>Ephemer-Glæden</title>
     <firstline>Klart straaler Slottet i festlig Glands</firstline>
@@ -479,6 +492,7 @@ Ak, kun stakket Frist!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Klart straaler Slottet i festlig Glands
 Af tusind blændende Kjerter;
 Der hvirvle sig oppe, i lystig Dands,
@@ -503,10 +517,11 @@ I Secler jeg sang over Tidens Hav:
 Stig kun, du rastløse Bølge!
 Snart tumle sig Andre paa Din Grav;
 Men Alle de skulle Dig følge!''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001061411" variant="kaalund2018060520">
+<text id="kaalund2001061411" variant="kaalund2018060520">
 <head>
     <title>Niels Ebbesens Mindestøtte</title>
     <firstline>En Bautasteen paa gammel ærlig Viis</firstline>
@@ -514,6 +529,7 @@ Men Alle de skulle Dig følge!''
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 ,,En Bautasteen paa gammel ærlig Viis
 Vil Danmark for sin kjække Martyr reise,
 For Ridder Ebbesen fra Nørreriis,
@@ -603,10 +619,11 @@ Ved Kunstens Tryllestav igjen af Graven!
 En Æresstøtte bliver det for Dig;
 Men lytter Du til hint udanske Skrig,
 Da over Dig Du selv vil bryde Staven!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001061502" variant="kaalund2018060538">
+<text id="kaalund2001061502" variant="kaalund2018060538">
 <head>
     <title>Konen ved Ledet i Frederiksdal</title>
     <firstline>Naar gjennem det deilige Frederiksdal</firstline>
@@ -614,6 +631,7 @@ Da over Dig Du selv vil bryde Staven!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Naar gjennem det deilige Frederiksdal
 I den varme, duftende Sommer
 Du drager hen gjennem Bøgenes Sal
@@ -683,10 +701,11 @@ Da stands ved den fattige Ledkones Bo,
 Og hvis den som mig kan Dig fryde,
 Da skjænk hende venlig en Hvid eller to,
 Hvormed hun den bedre kan pryde.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2018061711" variant="kaalund2018060513">
+<text id="kaalund2018061711" variant="kaalund2018060513">
 <head>
     <title>Til Historiemaler Adam Müller</title>
     <subtitle>(Ved hans Afreise til Rom)</subtitle>
@@ -695,6 +714,7 @@ Hvormed hun den bedre kan pryde.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I Østerland leved en Yngling engang,
 Han elsked en funklende Stjerne;
 Ved den kun hans Hjerte saa inderligt hang,
@@ -736,10 +756,11 @@ Og freidigen haabe, vi sees vel igjen
 Engang i de kommende Dage.
 Vi ønske Dig Sundhed og Hæder og Held!
 Vor nordiske Broder, Farvel! Farvel!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001061503" variant="kaalund2018060525">
+<text id="kaalund2001061503" variant="kaalund2018060525">
 <head>
     <title>Ved Frederik den Sjettes Død</title>
     <firstline>En Sphinx med Fingeren paa sin Mund</firstline>
@@ -748,6 +769,7 @@ Vor nordiske Broder, Farvel! Farvel!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 En Sphinx med Fingeren paa sin Mund,
 I Dæmring Fremtiden ruger,
 Mens Kongegraven ved Leire-Lund
@@ -855,10 +877,11 @@ Thi Magten snart med Despoten døer,
 Hans mægtige Scepter er dog kun et Rør!
 Men Kjærligheds hellige Vælde
 Sit Hoved til Folket kan hælde!''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001061504">
+<text id="kaalund2001061504">
 <head>
     <title>Til Historiemaler, Professor Eckersberg</title>
     <subtitle>Ved hans Halvhundredeaars Jubilæum</subtitle>
@@ -868,6 +891,7 @@ Sit Hoved til Folket kan hælde!''
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Vi bringe Dig vor Hylding, kjære Gamle!
 Foruden Faklers Glands kun med en Sang,
 Vi ved Dit Vindue os i Natten samle;
@@ -912,10 +936,11 @@ Fred med Dit Liv, til Du hos Juul faaer hjemme
 Høit paa Udødeligheds lyse Bjerg!
 Vor gamle Lærer, aldrig vi forglemme,
 Vor Ven, vor elskelige Eckersberg!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001061505" variant="kaalund2018061212">
+<text id="kaalund2001061505" variant="kaalund2018061212">
 <head>
     <title>Kjærligheds Trang</title>
     <firstline>Dig Kjærligheds veemodsfulde</firstline>
@@ -923,6 +948,7 @@ Vor Ven, vor elskelige Eckersberg!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Dig Kjærligheds veemodsfulde,
         Hellige Trang!
 Dig vier i Verdens Kulde
@@ -962,10 +988,11 @@ Ja, hæv mig mod Lysets Porte
         Med Guddomskraft,
 Skal ei i Natten den sorte
         Min Sjæl gaae tabt!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001061506" variant="kaalund2018061214">
+<text id="kaalund2001061506" variant="kaalund2018061214">
 <head>
     <title>Aftenskyerne</title>
     <firstline>Naar Aftenen breder om Jorden sit Slør</firstline>
@@ -973,6 +1000,7 @@ Skal ei i Natten den sorte
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Naar Aftenen breder om Jorden sit Slør,
 Da ligge i Vesten de deiligste Øer;
 Fra skinnende Sletter, hvor Alferne boe,
@@ -1007,10 +1035,11 @@ Ak, Elskte, jeg er ei uskyldig som før!
 I Taage forsvinde de himmelske Øer;
 Og var selv et Eden den rødmende Sky,
 Hvad skulde jeg Daare i Englenes By!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001061407" variant="kaalund2018061209">
+<text id="kaalund2001061407" variant="kaalund2018061209">
 <head>
     <title>Alverden er syg</title>
     <firstline>Alverden er syg, Alverden er mat!</firstline>
@@ -1018,6 +1047,7 @@ Hvad skulde jeg Daare i Englenes By!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Alverden er syg, Alverden er mat!
 Mig tykkes den ganger paa Held;
 O, jeg gad lystigt svinge min Hat
@@ -1037,10 +1067,11 @@ O, jeg gad stige paa Bjerget op
 Og juble og svinge min Hat;
 Og greb mig en Hvirvelvind paa dets Top
 Da syge Verden: God-Nat!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001061601" variant="kaalund2018061241">
+<text id="kaalund2001061601" variant="kaalund2018061241">
 <head>
     <title>Den stumme Sorg</title>
     <firstline>Kom liden Thora, kom og sid</firstline>
@@ -1048,6 +1079,7 @@ Da syge Verden: God-Nat!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Kom liden Thora, kom og sid
 Søsterlig ved min Side!
 Alt i Morgen mig seer i Strid
@@ -1132,10 +1164,11 @@ Bleg og stille Du staaer som før,
 Taus Du Dit Hoved ryster. -
 Nu, saa Farvel da! ifald jeg døer.
 Mindes mig da som Søster!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001061602" variant="kaalund2018061204">
+<text id="kaalund2001061602" variant="kaalund2018061204">
 <head>
     <title>Fortrøstning</title>
     <firstline>Jeg sad og saae</firstline>
@@ -1143,6 +1176,7 @@ Mindes mig da som Søster!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
     Jeg sad og saae
     Mod Skyen graa,
 Og veed Du hvad jeg tænkte paa?
@@ -1182,10 +1216,11 @@ Og holder paa min simple Tro:
     At Skyen gaaer,
     Men Sol opstaaer
 I Østen som for tusind Aar!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001061603" variant="kaalund2018061210">
+<text id="kaalund2001061603" variant="kaalund2018061210">
 <head>
     <title>Vor Tid</title>
     <firstline>Nu skriver fast Alle den dejligste Stiil</firstline>
@@ -1193,6 +1228,7 @@ I Østen som for tusind Aar!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nu skriver fast Alle den dejligste Stiil,
 Man digter og rimer saa yndigt;
 Kritiken gaaer efter med Høvl og med Fiil,
@@ -1276,10 +1312,11 @@ Men Tiden henvandrer urokket sin Gang;
 Det hjælper slet ikke at klage.
 Thi maa jeg end synge som Lærken i Kvæld,
 Jeg jubler som den dog for Livets Væld.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001061701" variant="kaalund2018061211">
+<text id="kaalund2001061701" variant="kaalund2018061211">
 <head>
     <title>Kom glade Overgivenhed</title>
     <firstline>Kom glade Overgivenhed</firstline>
@@ -1287,6 +1324,7 @@ Jeg jubler som den dog for Livets Væld.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Kom glade Overgivenhed
 Og Fryd for Ingenting,
 O, kom og tag mig atter med
@@ -1356,10 +1394,11 @@ Kom tag mig atter, tag mig med
 Til Dands og Leg og Spring,
 Min gamle Overgivenhed
 Og Fryd for Ingenting!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001061703" variant="kaalund2018061238">
+<text id="kaalund2001061703" variant="kaalund2018061238">
 <head>
     <title>Før hun var voxen</title>
     <firstline>Før da til Valsen</firstline>
@@ -1367,6 +1406,7 @@ Og Fryd for Ingenting!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Før da til Valsen
 Jeg hende bød,
 Da blev til Halsen
@@ -1426,10 +1466,11 @@ Nei, nei, nu bliver
 Det alt for galt!
 Kvittering giver
 Jeg strax - betalt!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001061704" variant="kaalund2018061239">
+<text id="kaalund2001061704" variant="kaalund2018061239">
 <head>
     <title>Da hun var voxen</title>
     <firstline>Med milde Blikke</firstline>
@@ -1437,6 +1478,7 @@ Jeg strax - betalt!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Med milde Blikke
 Du paa mig seer -
 Du kan slet ikke
@@ -1466,10 +1508,11 @@ Og dog Du hænger
 Saa ømt ved mig.
 Og dog jeg trænger
 Saa dybt til Dig.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2018061723" variant="kaalund2018061207">
+<text id="kaalund2018061723" variant="kaalund2018061207">
 <head>
     <title>Tankens Elv</title>
     <firstline>Den larmende Dag maa svinde</firstline>
@@ -1477,6 +1520,7 @@ Saa dybt til Dig.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Den larmende Dag maa svinde,
     Men i mig selv
 Uroligt styrter derinde
@@ -1506,10 +1550,11 @@ Og om jeg lukker mit Øre
     For Verdens Larm,
 Jeg kan dog Brændingen høre
     I egen Barm.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001061705" variant="kaalund2018061203">
+<text id="kaalund2001061705" variant="kaalund2018061203">
 <head>
     <title>Naar Du er træt</title>
     <firstline>Naar Du er træt, naar Du er kjed</firstline>
@@ -1517,6 +1562,7 @@ Jeg kan dog Brændingen høre
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Naar Du er træt, naar Du er kjed
 Af Verden og dens Smaalighed,
 Da skynd Dig fra den trange Muur
@@ -1561,10 +1607,11 @@ Og see derop til Du er træt,
 Indtil Dit Hjerte bliver let,
 Da reis Dig atter, Støvets Søn,
 Og Du vil finde Verden skjøn.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001061706" variant="kaalund2018061224">
+<text id="kaalund2001061706" variant="kaalund2018061224">
 <head>
     <title>Naturens Uforanderlighed</title>
     <firstline>I Verden op og ned det gaaer</firstline>
@@ -1572,6 +1619,7 @@ Og Du vil finde Verden skjøn.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I Verden op og ned det gaaer;
 Naturen leer derad.
 Blaaøiet, som for tusind Aar,
@@ -1621,10 +1669,11 @@ Et Barn i Vuggen var jeg nys,
 Snart slaaer min Afskedsstund
 Og derfor trykker jeg et Kys,
 Et varmt, paa Livets Mund.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001061501" variant="kaalund2018061220">
+<text id="kaalund2001061501" variant="kaalund2018061220">
 <head>
     <title>Den flyvende Sommer</title>
     <firstline>En Spindelvæv flagrer i Solens Skin</firstline>
@@ -1632,6 +1681,7 @@ Et varmt, paa Livets Mund.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 En Spindelvæv flagrer i Solens Skin,
 Naar Vaaren med Sangfugle kommer,
 En Tømme af Guld paa Himmelens Vind,
@@ -1651,10 +1701,11 @@ En Rose mig rækker engang vel sin Green,
 Hvorpaa jeg kan hvile og bygge;
 Der spinder vel Silke paa Kjærligheds Teen
 Min Sangs den ustadige Lykke.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2018061727" variant="kaalund2018061205">
+<text id="kaalund2018061727" variant="kaalund2018061205">
 <head>
     <title>Jeg hviler med mine Minder</title>
     <firstline>Jeg hviler med mine Minder</firstline>
@@ -1662,6 +1713,7 @@ Min Sangs den ustadige Lykke.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg hviler med mine Minder
 Under Livets grønne Træ;
 Som Børn med blege Kinder
@@ -1686,10 +1738,11 @@ Naar engang Livets Varme
 Forsvinder fra min Kind,
 Med dem i mine Arme
 Jeg sover stille ind.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001061708" variant="kaalund2018061227">
+<text id="kaalund2001061708" variant="kaalund2018061227">
 <head>
     <title>Tankespillet</title>
     <firstline>Kjender Du det Tankespil, som sindrigt</firstline>
@@ -1697,6 +1750,7 @@ Jeg sover stille ind.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Kjender Du det Tankespil, som sindrigt
 Sammensat af Stykke tæt ved Stykke,
 Føier sig til et harmonisk Billed,
@@ -1725,10 +1779,11 @@ Tankefuld og grunder paa, hvorledes
 Jeg det seere Tankespil skal samle
 Og af Stykkerne, jeg har tilbage,
 Sammensætte mig mit Eden atter.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001061709" variant="kaalund2018061226">
+<text id="kaalund2001061709" variant="kaalund2018061226">
 <head>
     <title>En Drøm</title>
     <firstline>Et Samlingspunkt jeg trængte til</firstline>
@@ -1736,6 +1791,7 @@ Sammensætte mig mit Eden atter.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Et Samlingspunkt jeg trængte til
 Hvorved jeg fæste kunde
 Hvad der var spredt i Livets Spil
@@ -1780,10 +1836,11 @@ Som før jeg gaaer i Støvet her,
 Og i det vide Fjerne
 Som før til mig veemodig seer
 Den stille Nattens Stjerne.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001062605">
+<text id="kaalund2001062605">
 <head>
     <title>Den fiirbenede Proletar</title>
     <firstline>See Puddelen med det purrede Skind</firstline>
@@ -1791,6 +1848,7 @@ Den stille Nattens Stjerne.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 See Puddelen med det purrede Skind;
 Hvor boltrer den sig med lystigt Sind
 I Sneen derude paa Pladsen!
@@ -1881,10 +1939,11 @@ Han har jo Luften og Solen,
 Den gyldne Frihed og Venner nok,
 Af Kammerater en lystig Flok,
 De foragte ham ei for Kjolen.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2018061731" variant="kaalund2018061230">
+<text id="kaalund2018061731" variant="kaalund2018061230">
 <head>
     <title>To Hænder fik vi</title>
     <firstline>To Hænder fik vi til at trykke</firstline>
@@ -1892,6 +1951,7 @@ De foragte ham ei for Kjolen.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 To Hænder fik vi til at trykke
 I Favn Alverdens Herlighed;
 Men ak! de gribe kun dens Skygge,
@@ -1911,10 +1971,11 @@ Men for den Verden at udsjunge,
 Hvortil vort Hjerte fattes Rum,
 Vi eie kun den ene Tunge.
 Og den gjør Fryd og Smerte stum.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001061711" variant="kaalund2018061213">
+<text id="kaalund2001061711" variant="kaalund2018061213">
 <head>
     <title>Forbandet Kain udi Ørken gik</title>
     <firstline>Forbandet Kain udi Ørken gik</firstline>
@@ -1922,6 +1983,7 @@ Og den gjør Fryd og Smerte stum.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Forbandet Kain udi Ørken gik,
 Og Eva hviled paa Baare;
 Da faldt fra Oldingen Adams Blik
@@ -1946,10 +2008,11 @@ End kæmper Livet med Sorgens Hær,
 Det bære eller det briste!
 Den første Taare blev fulgt af fleer
 Men naar, naar flyder den sidste?
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001061712" variant="kaalund2018061206">
+<text id="kaalund2001061712" variant="kaalund2018061206">
 <head>
     <title>O, jeg har siddet engang som Drot</title>
     <firstline>O, jeg har siddet engang som Drot</firstline>
@@ -1957,6 +2020,7 @@ Men naar, naar flyder den sidste?
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 O, jeg har siddet engang som Drot
 Paa Fantasiens Throne;
 Men Tiden kom og styrted mit Slot
@@ -1966,10 +2030,11 @@ Nu maa jeg forjage den gyldne Drøm,
 Nu snige sig Timerne tunge;
 Dog synes mig tidt ved Tidens Strøm,
 At jeg er en falden Konge.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001062516">
+<text id="kaalund2001062516">
 <head>
     <title>Orgelet</title>
     <firstline>Det er mig engang for Sandhed sagt</firstline>
@@ -1977,6 +2042,7 @@ At jeg er en falden Konge.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det er mig engang for Sandhed sagt,
 At mellem Kirkerne findes
 En brøstfældig En, jeg veed ei hvor,
@@ -2016,10 +2082,11 @@ Naar Tonerne vækkes, som slumre deri,
 Jeg føler mig mægtigt rystet,
 Hvis Orglet derinde jeg spillede fuldt,
 Jeg troer, det sprængte mig Brystet.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001061713" variant="kaalund2018061223">
+<text id="kaalund2001061713" variant="kaalund2018061223">
 <head>
     <title>Til Trankebar!</title>
     <firstline>Til Trankebar, til Trankebar!</firstline>
@@ -2027,6 +2094,7 @@ Jeg troer, det sprængte mig Brystet.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Til Trankebar, til Trankebar!
 Ak, hvo der dog en Sømand var!
 
@@ -2086,10 +2154,11 @@ Og fløi derud paa Verdens Hav;
 
 Da blæste vel en Nordenvind
 De syge Griller af mit Sind.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001061714" variant="kaalund2018061234">
+<text id="kaalund2001061714" variant="kaalund2018061234">
 <head>
     <title>Eftersommeren</title>
     <firstline>Her, hvor den græsrige Slette</firstline>
@@ -2097,6 +2166,7 @@ De syge Griller af mit Sind.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Her, hvor den græsrige Slette
 Støder til Strandens Næs,
 Vil jeg paa Skrænten mig sætte
@@ -2151,10 +2221,11 @@ Derfor af Glæde jeg bæver;
 Thi en guddommelig
 Genius, føler jeg, svæver
 Salig i Livet om mig.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001061715" variant="kaalund2018061229">
+<text id="kaalund2001061715" variant="kaalund2018061229">
 <head>
     <title>Før Søvnen</title>
     <firstline>Paa mit Kammer nu jeg Lyset slukker</firstline>
@@ -2162,6 +2233,7 @@ Salig i Livet om mig.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Paa mit Kammer nu jeg Lyset slukker:
 Mørket hviler paa den trætte Jord,
 Medens Drømmens Verden sig oplukker.
@@ -2181,10 +2253,11 @@ Alt den føler sin Bevidsthed vige.
 Føler sig saa underlig forladt,
 Som et Barn, der nok engang maa sige
 Moderen Godnat!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001061801" variant="kaalund2018061236">
+<text id="kaalund2001061801" variant="kaalund2018061236">
 <head>
     <title>Friskt Veir</title>
     <firstline>Det dufter til Regn</firstline>
@@ -2192,6 +2265,7 @@ Moderen Godnat!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det dufter til Regn
 Fra rødmende Skovrosers Hegn,
 Blandt Moser og Dale og Bakker
@@ -2263,10 +2337,11 @@ Aabner for Storhed mit Bryst,
 At jeg maa smile
 Ad Livets Dyst
 Og længes i Striden at ile.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001061802" variant="kaalund2018061233">
+<text id="kaalund2001061802" variant="kaalund2018061233">
 <head>
     <title>Sommeraftenens Tusmørke</title>
     <firstline>Jeg Baaden har paa Land nu sat</firstline>
@@ -2274,6 +2349,7 @@ Og længes i Striden at ile.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg Baaden har paa Land nu sat
 Og standset Aarens Slag.
 Endnu et Blik, og saa Godnat,
@@ -2318,10 +2394,11 @@ Ved Lysets Smiil jeg dvæle maa,
 Jeg suger Mod deraf,
 Som svævede min Sjæl derpaa
 I Intets store Grav.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001061803" variant="kaalund2018061235">
+<text id="kaalund2001061803" variant="kaalund2018061235">
 <head>
     <title>Mismod</title>
     <firstline>Tungt paa den vaade Skovvej Vognen henrasler</firstline>
@@ -2329,6 +2406,7 @@ I Intets store Grav.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Tungt paa den vaade Skovvej Vognen henrasler
 Ud fra Gjærdet strække sig visne Hasler;
 Taarnede vildt, som høie Bjerge, af Blæsten,
@@ -2348,10 +2426,11 @@ Og paa de øde Høie, hvor Vindene bruse,
 Mismod griber mit Indre. Hellige Muse,
 Fyld mit Hjerte atter med Manddomskraften
 I den vilde, den tungsindige Aften!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001062101">
+<text id="kaalund2001062101">
 <head>
     <title>Keiseren og den fattige Kone</title>
     <firstline>En Keiser lod bygge et Tempel til Guds Ære</firstline>
@@ -2359,6 +2438,7 @@ I den vilde, den tungsindige Aften!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 En Keiser lod bygge et Tempel til Guds Ære,
 De stolteste Søiler skulde Hvælvingen bære.
 
@@ -2445,8 +2525,9 @@ Du seer kun paa det fromme, det ydmyge Sind!
 
 Jeg bygged Dig et Tempel: men hun gjorde mere,
 Da hun et Halmstraa offred til Himmelens Ære!''
+</poetry>
 </body>
-</poem>
+</text>
 
 <section level="3">
 <head>
@@ -2454,7 +2535,7 @@ Da hun et Halmstraa offred til Himmelens Ære!''
 </head>
 <content>
 
-<poem id="kaalund200106257" variant="kaalund2001062501">
+<text id="kaalund200106257" variant="kaalund2001062501">
 <head>
     <title>Naar Du er dum</title>
     <firstline>Naar Du er dum</firstline>
@@ -2462,16 +2543,18 @@ Da hun et Halmstraa offred til Himmelens Ære!''
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
     Naar Du er dum,
     Da vær blot stum.
 Men med en kritisk Mine
     Strax gyser Hver,
     Som til Dig seer.
 Og tænker: Død og Pine!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2018061767" variant="kaalund2001062502">
+<text id="kaalund2018061767" variant="kaalund2001062502">
 <head>
     <title>,,Jeg,'' raabte Vintren, ,,klæder Jorden af</title>
     <indextitle>Jeg, raabte Vintren, klæder Jorden af</indextitle>
@@ -2480,15 +2563,17 @@ Og tænker: Død og Pine!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 ,,Jeg,'' raabte Vintren, ,,klæder Jorden af
 Og frem den nøgne Sandhed viser.''
 Men mildt til Gjensvar Vaaren gav:
 ,,Jeg dækker kjærligt Jordens Grav,
 Og derfor Skabningen mig priser.''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2018061766" variant="kaalund2001062503">
+<text id="kaalund2018061766" variant="kaalund2001062503">
 <head>
     <title>O Pige! jeg vil ikke see</title>
     <firstline>O Pige! jeg vil ikke see</firstline>
@@ -2496,14 +2581,16 @@ Og derfor Skabningen mig priser.''
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 O Pige! jeg vil ikke see
 Hvordan Din Hat kan klæde;
 Men vel om Du med Aand kan lee
 Og kan med Hjerte græde.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2018061765" variant="kaalund2001062504">
+<text id="kaalund2018061765" variant="kaalund2001062504">
 <head>
     <title>Den Mand er ikke stort bevendt, som praler af sin Hjerne</title>
     <firstline>Den Mand er ikke stort bevendt, som praler af sin Hjerne</firstline>
@@ -2511,12 +2598,14 @@ Og kan med Hjerte græde.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Den Mand er ikke stort bevendt, som praler af sin Hjerne;
 Det er jo kun den skrumpne Nød, som rasler med sin Kjærne.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2018061764" variant="kaalund2001062505">
+<text id="kaalund2018061764" variant="kaalund2001062505">
 <head>
     <title>Natur, hvor Lidt har Mennesket Du paa dets Vandring givet!</title>
     <firstline>Natur, hvor Lidt har Mennesket Du paa dets Vandring givet!</firstline>
@@ -2524,6 +2613,7 @@ Det er jo kun den skrumpne Nød, som rasler med sin Kjærne.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Natur, hvor Lidt har Mennesket Du paa dets Vandring givet!
 Den plumpe Bjørn Du knapper selv en Foerværkspelts om Livet,
 Paa Faarets Fødder trækker Du de varme uldne Strømper
@@ -2532,10 +2622,11 @@ Jeg Støvler kjøbe maa og Skoe, om Hatten ei at tale,
 Og bøde selv med Kjoleskjød paa Mangelen af Hale;
 I Faar og Heste har den frit, hvor jeg misunder Eder! -
 Her har en Regning jeg igjen nu faaet fra min Skræder!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2018061769" variant="kaalund2001062506">
+<text id="kaalund2018061769" variant="kaalund2001062506">
 <head>
     <title>Af Recensent faaer man Navnet nu</title>
     <firstline>Af Recensent faaer man Navnet nu</firstline>
@@ -2543,14 +2634,16 @@ Her har en Regning jeg igjen nu faaet fra min Skræder!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Af Recensent faaer man Navnet nu,
 Naar man kan skrive: Du Fæ!
 Til Feiekost kan det Smaakrat due,
 Som ei har Marv til et Træ.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001062507">
+<text id="kaalund2001062507">
 <head>
     <title>Ja, Stof til Sang har hver en Tid</title>
     <firstline>Ja, Stof til Sang har hver en Tid</firstline>
@@ -2558,14 +2651,16 @@ Som ei har Marv til et Træ.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ja, Stof til Sang har hver en Tid
 Mens Lys og Skygge parres,
 Om ei ved sine Heltes Strid,
 Saa dog ved fine Narres.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2018061749" variant="kaalund2018061283">
+<text id="kaalund2018061749" variant="kaalund2018061283">
 <head>
     <title>De Vises Steen</title>
     <firstline>Den er Din Øiesteen, o Almagts Gud</firstline>
@@ -2573,14 +2668,16 @@ Saa dog ved fine Narres.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Den er Din Øiesteen, o Almagts Gud,
 Jeg kan det ikke anderledes raade,
 Din Øiesteen, som opløst seer hver Gaade,
 Og den vil Grublervanvid rive ud.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2018061750" variant="kaalund2018061285">
+<text id="kaalund2018061750" variant="kaalund2018061285">
 <head>
     <title>Dadl ei Den, som, blind for Livets Glæde</title>
     <firstline>Dadl ei Den, som, blind for Livets Glæde</firstline>
@@ -2588,14 +2685,16 @@ Og den vil Grublervanvid rive ud.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Dadl ei Den, som, blind for Livets Glæde,
 Efter Glæde sukke kan:
 Kan man ei paa Verdenshavet græde
 For en Draabe Kildevand?
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2018061764">
+<text id="kaalund2018061764a">
 <head>
     <title>Shakespeare</title>
     <firstline>Leer jeg af Hjertet med Dig, jeg kunde bevæget dog græde</firstline>
@@ -2604,14 +2703,16 @@ For en Draabe Kildevand?
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Leer jeg af Hjertet med Dig, jeg kunde bevæget dog græde;
 Brister i Graad jeg med Dig, da funkler mit Øie af Glæde;
 Det er Din uhyre Kraft, som Skyggen og Lyset omfatter,
 Bøier min Alvor til Smiil og smelter i Taarer min Latter.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2018061761" variant="kaalund2001062513">
+<text id="kaalund2018061761" variant="kaalund2001062513">
 <head>
     <title>Voltaire</title>
     <firstline>En Digter sang: hvor Smaae kan vare store!</firstline>
@@ -2620,14 +2721,16 @@ Bøier min Alvor til Smiil og smelter i Taarer min Latter.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 En Digter sang: hvor Smaae kan vare store!
 Men seer jeg Dig i al Din Storhed staae
 Og saare Hjertet for med Vid at more.
 Jeg synger: ak, hvor Store tidt er smaae!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2018061762" variant="kaalund2001062512">
+<text id="kaalund2018061762" variant="kaalund2001062512">
 <head>
     <title>Grundtvig</title>
     <firstline>Heel selsomt det i Verden gaaer</firstline>
@@ -2636,14 +2739,16 @@ Jeg synger: ak, hvor Store tidt er smaae!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Heel selsomt det i Verden gaaer:
 Forundring hos Beundring staaer -
 Hvo af de to Du vækked meest,
 Det har jeg aldrig rigtig vidst.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2018061763" variant="kaalund2001062514">
+<text id="kaalund2018061763" variant="kaalund2001062514">
 <head>
     <title>Schak Staffeldt</title>
     <firstline>Schak Staffeldt, de dybeste drømmende Savn</firstline>
@@ -2652,14 +2757,16 @@ Det har jeg aldrig rigtig vidst.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Schak Staffeldt, de dybeste drømmende Savn
 Du nævner med sølvklare Toner ved Navn.
 Man kalder Dig mystisk og ei populair -
 Naar gik det ei saadan det Himmelske her!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2018061755">
+<text id="kaalund2018061755">
 <head>
     <title>Til -</title>
     <firstline>Jeg savner Noget! skal jeg Navnet sige?</firstline>
@@ -2667,17 +2774,19 @@ Naar gik det ei saadan det Himmelske her!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg savner Noget! skal jeg Navnet sige?
 Midt i Din Digterverdens Trylleland
 Jeg savner - Nei, nei ingen lille Pige,
 Men - tilgiv mig, o Digter! men - en Mand.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section>
 
-<poem id="kaalund2001062515" variant="kaalund2018061225">
+<text id="kaalund2001062515" variant="kaalund2018061225">
 <head>
     <title>Hvor skal jeg søge Sandhed?</title>
     <firstline>Hvor skal jeg søge Sandhed?</firstline>
@@ -2685,6 +2794,7 @@ Men - tilgiv mig, o Digter! men - en Mand.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 ,,Hvor skal jeg søge Sandhed? hvor?
 Jeg seer kun lutter vilde Spor;
 En mener saa, en Anden saa -
@@ -2719,10 +2829,11 @@ Ved den jeg vil mig holde fast
 I Livets vilde Bølgekast!
 Om hele Verden raabte Nei
 Jeg fulgte dog min Engels Vei!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001062517" variant="kaalund2018061237">
+<text id="kaalund2001062517" variant="kaalund2018061237">
 <head>
     <title>I Efteraaret</title>
     <firstline>Jeg svøber mig i Kappen lunt og tæt</firstline>
@@ -2730,6 +2841,7 @@ Jeg fulgte dog min Engels Vei!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg svøber mig i Kappen lunt og tæt
 Og vandrer ud, alene med min Tanke,
 I Efteraarets sørgende Natur.
@@ -2928,10 +3040,11 @@ Mig ikke Haabet som et sorgløst Barn,
 Men som en Cherub, der paa Dødens Nakke
 Stolt sætter Foden, og udødelig
 I Undergangen peger op mod Gud.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001062518" variant="kaalund2018061232">
+<text id="kaalund2001062518" variant="kaalund2018061232">
 <head>
     <title>Efter Uveiret</title>
     <firstline>Renset er Luften. Naturen som gjenfødt sig fryder</firstline>
@@ -2939,6 +3052,7 @@ I Undergangen peger op mod Gud.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Renset er Luften. Naturen som gjenfødt sig fryder,
         Tordenen flyer;
 Prægtigt i Guldglands den straalende Sol gjennembryder
@@ -2993,10 +3107,11 @@ Skjælvende jeg Dig tilbad, da Du nys i Din Vælde
         Hæved Din Røst,
 Nu, som det gladeste Barn, maa jeg jublende hælde
         Mig til Dit Bryst!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001062519" variant="kaalund2018061208">
+<text id="kaalund2001062519" variant="kaalund2018061208">
 <head>
     <title>Mørk Himmel</title>
     <firstline>Novemberaftenen bruser mørk</firstline>
@@ -3004,6 +3119,7 @@ Nu, som det gladeste Barn, maa jeg jublende hælde
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Novemberaftenen bruser mørk
 Henover Skove og Byer.
 Deroppe i Himmelens vilde Ørk,
@@ -3028,10 +3144,11 @@ Thi opad flyver min Kjærlighed
 Som en vildfarende Due;
 - O, var der en Plet at hvile ved
 Paa Himmelens mørke Bue!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2018061760" variant="kaalund2018061231">
+<text id="kaalund2018061760" variant="kaalund2018061231">
 <head>
     <title>Korset</title>
     <firstline>Naar Mennesket sin Favn udstrækker</firstline>
@@ -3039,6 +3156,7 @@ Paa Himmelens mørke Bue!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Naar Mennesket sin Favn udstrækker,
 Hvad synes Du det ligner da?
 Et Kors af Støv, som Tanken vækker
@@ -3063,10 +3181,11 @@ O, lad ei Støvets Kors Dig kue!
 Naar Tiden farver Issen graa,
 Da daler Fredens hvide Due
 Med strakte Vinger ned derpaa.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001062602">
+<text id="kaalund2001062602">
 <head>
     <title>Nisserne paa Vandring</title>
     <firstline>De arme Smaanisser, de undes ei Ro</firstline>
@@ -3074,6 +3193,7 @@ Med strakte Vinger ned derpaa.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 De arme Smaanisser, de undes ei Ro;
 Slet Ingen har nu den gamle Tro,
 At Lykke de bringe til Huset;
@@ -3193,10 +3313,11 @@ Og hvor de søge, i Syd og Nord,
 Er alt det Gamle forandret -
 I Duggen vi see det myldrende Spor,
 Som viser den Vei de har vandret.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001062603">
+<text id="kaalund2001062603">
 <head>
     <title>Lysets Flugt</title>
     <firstline>See, hvor Aftnens Straaler drage</firstline>
@@ -3204,6 +3325,7 @@ Som viser den Vei de har vandret.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 See, hvor Aftnens Straaler drage
 Veemodsfulde sig tilbage,
 Langsomt stille, Fod for Fod,
@@ -3266,10 +3388,11 @@ Fryd Dig, det er ikke slukt!
 Hisset oppe i det Fjerne,
 Paa den lille gyldne Stjerne
 Glimre end dets Straaler smukt.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001062604" variant="kaalund2018061218">
+<text id="kaalund2001062604" variant="kaalund2018061218">
 <head>
     <title>O var jeg en Jæger!</title>
     <firstline>Nu suser den kolde Octoberblæst</firstline>
@@ -3277,6 +3400,7 @@ Glimre end dets Straaler smukt.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nu suser den kolde Octoberblæst
 Og voldsomt Egen bevæger -
 O havde jeg nu en fyrig Hest.
@@ -3331,10 +3455,11 @@ Jeg vilde dandse, jeg vilde lee
 Og tømme det fyldte Bæger,
 Mens Landsbupigerne hvisked: See,
 Der er den luftige Jæger!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001062801">
+<text id="kaalund2001062801">
 <head>
     <title>Bjørnen som Rytter</title>
     <subtitle>Fortælling for Børn</subtitle>
@@ -3343,6 +3468,7 @@ Der er den luftige Jæger!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 En Bjørn engang gik ud paa Rov,
 Da traf den paa en Nordbag liden,
 Som tøiret stod bagved en Skov,
@@ -3467,10 +3593,11 @@ At Bonden fik en Vinterfrakke,
 En lodden Vams for Regn og Blæst,
 See, derfor kunde han sin Hest,
 Sin raske, lille Nordbag takke.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001062802" variant="kaalund2018061269">
+<text id="kaalund2001062802" variant="kaalund2018061269">
 <head>
     <title>Til Familien i Præstegaarden</title>
     <firstline>Der sidder jeg stakkels Spøgefugl</firstline>
@@ -3478,6 +3605,7 @@ Sin raske, lille Nordbag takke.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Der sidder jeg stakkels Spøgefugl
 I Stuen nu atter fangen.
 - Hvi skulde jeg lægge paa Hjertet Skjul?
@@ -3637,10 +3765,11 @@ Og siig, hvad hos mig Du hørte og saae,
 Alt hvad mig Stakkel paa Hjertet laa,
 Og bring mig saa atter med Svar derpaa
 Et Blad, som en Arkens Due!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001063001" variant="kaalund2018061265">
+<text id="kaalund2001063001" variant="kaalund2018061265">
 <head>
     <title>Naturens Graad</title>
     <firstline>O Menneske, Du Jordens halve Gud</firstline>
@@ -3648,6 +3777,7 @@ Et Blad, som en Arkens Due!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 ,,O Menneske, Du Jordens halve Gud,
 Lad til mit Moderbryst, mig ømt Dig trykke!
 Kom, Du mit Barn, min Stolthed, kom herud,
@@ -3692,10 +3822,11 @@ Og Alt laa atter i den gamle Ro,
 Uveiret svandt, og Jord og Hav blev stille:
 Men mildt Naturen gjennem Taarer lo
 Og trssted sig ved Nattergalens Trille.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001063002" variant="kaalund2018061242">
+<text id="kaalund2001063002" variant="kaalund2018061242">
 <head>
     <title>Keiserkronen</title>
     <firstline>See, hvilken Blomst, hvor rank og skjøn!</firstline>
@@ -3706,6 +3837,7 @@ Og trssted sig ved Nattergalens Trille.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 ,,See, hvilken Blomst, hvor rank og skjøn!''
 Udbrød et Barn i Glædens Tone.
 ,,Ja,'' svared Gartneren, ,,min Søn,
@@ -3725,10 +3857,11 @@ Seer Du hvad Blomsten gjemmer her:
 En Taare skjult for Mængdens Blikke.
 Saa Høiheds ydre Glands man seer;
 Men hvad den skjuler seer man ikke.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001063003">
+<text id="kaalund2001063003">
 <head>
     <title>Edderkoppen</title>
     <firstline>Du Edderkop, vil Du til Hækken spinde?</firstline>
@@ -3736,6 +3869,7 @@ Men hvad den skjuler seer man ikke.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Du Edderkop, vil Du til Hækken spinde?
 Hvor kan Du Vei over Strømmen finde?
 Om Dag og Nat Du løber Din Vei.
@@ -3756,10 +3890,11 @@ Dit Haab, det er den flagrende Traad,
 Som Du haver vædet med Længsels Graad.
 Forsag kun ikke, det kan vel lykkes:
 Paa Himmelens Hjelp kan Meget bygges!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001063004" variant="kaalund2018061244">
+<text id="kaalund2001063004" variant="kaalund2018061244">
 <head>
     <title>Billedstøtten</title>
     <firstline>Til Stranden skylled op et halvfuldendt</firstline>
@@ -3767,6 +3902,7 @@ Paa Himmelens Hjelp kan Meget bygges!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Til Stranden skylled op et halvfuldendt,
 Et herligt Billed, Mesterhaanden værdigt.
 Man fandt det; Kunstneren var ubekjendt,
@@ -3796,10 +3932,11 @@ Ikkun en Kjender raabte: ,,Daarer seer,
 Nu er jo Billedet et ganske andet!'' -
 Saa gaaer det! Man udsletter Prægets Værd
 Og kalder saa den slebne Dukke dannet.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001063005" variant="kaalund2018061254">
+<text id="kaalund2001063005" variant="kaalund2018061254">
 <head>
     <title>Solen og dens Skygge</title>
     <firstline>Engang faldt Solen paa</firstline>
@@ -3807,6 +3944,7 @@ Og kalder saa den slebne Dukke dannet.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Engang faldt Solen paa
 At see sin egen Skygge;
 Da dækked Bjerg og Straa
@@ -3821,10 +3959,11 @@ Og da han Ingen saae
 (Begribelig er Tingen)
 Faldt Excellentsen paa,
 Han havde heller ingen.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001063006" variant="kaalund2018061248">
+<text id="kaalund2001063006" variant="kaalund2018061248">
 <head>
     <title>Indsigt og Oversigt</title>
     <firstline>En Træorm i en Vinduespost</firstline>
@@ -3832,6 +3971,7 @@ Han havde heller ingen.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 En Træorm i en Vinduespost
 Et Hul dybsindig monne gnave;
 Da flagred ind i Stuen just
@@ -3856,10 +3996,11 @@ Glad slap jeg atter Psychen ud,
 Den boltred sig i Morgenflammen.
 Tak, raabte jeg, tak, gode Gud,
 At den og jeg vi høre sammen!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001063007" variant="kaalund2018061247">
+<text id="kaalund2001063007" variant="kaalund2018061247">
 <head>
     <title>Cocosnødden</title>
     <firstline>En Cocosnød</firstline>
@@ -3867,6 +4008,7 @@ At den og jeg vi høre sammen!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
     En Cocosnød
     Paa Havet flød,
 Omtumlet vildt af Voven.
@@ -3922,10 +4064,11 @@ Lad Strømmen det bortrive!
     Et Palmetræ
     Til Slægters Læ
 Kan Sandhedsordet blive!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001063008" variant="kaalund2018061262">
+<text id="kaalund2001063008" variant="kaalund2018061262">
 <head>
     <title>Planeten og Kometen</title>
     <firstline>I sit System en meget lærd Planet</firstline>
@@ -3933,6 +4076,7 @@ Kan Sandhedsordet blive!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I sit System en meget lærd Planet
 Formanende sin Stemme hæved,
 Da gjennem Universet en Komet
@@ -3962,10 +4106,11 @@ Det sande Middelpunkt ei Nogen veed -
 Af Tidens Haand vi Alle lænked bliver;
 Om Almagts Sol ikkun en Evighed
 Sin uudgrundelige Bane skriver.''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001063009">
+<text id="kaalund2001063009">
 <head>
     <title>Nøddeknækkeren</title>
     <firstline>Nøddeknækker, hvad er Du stiv!</firstline>
@@ -3973,6 +4118,7 @@ Sin uudgrundelige Bane skriver.''
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nøddeknækker, hvad er Du stiv!
 Nødder Du knækker Dit hele Liv.
 Har i Dit Hoved Du slet ingen Hjerne?
@@ -3986,10 +4132,11 @@ Hvergang en Nød man i Gabet ham stak,
 Klemte han til saa Skallen knak;
 Han agted kun lidt at Kjernen var lækker
 - Men det var jo ogsaa en Nøddeknækker
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001063010">
+<text id="kaalund2001063010">
 <head>
     <title>Uveirsskyen</title>
     <firstline>O, Menneske, hvor vil Du fly?</firstline>
@@ -3997,6 +4144,7 @@ Han agted kun lidt at Kjernen var lækker
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 ,,O, Menneske, hvor vil Du fly?''
 Saa buldrede en Tordensky
 Og trak sig om det høie Bjerg,
@@ -4026,10 +4174,11 @@ Da faldt han ydmygt ned paa Knæ
 Og raabte: ,,Gud, hos Dig er Læ!
 Hvo, som til Dig tør kraftigt ty,
 Staaer hævet over Jordens Sky!''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001063011" variant="kaalund2018061263">
+<text id="kaalund2001063011" variant="kaalund2018061263">
 <head>
     <title>Guldfiskene</title>
     <firstline>En dobbelt Boble, hvælvet af Krystal</firstline>
@@ -4037,6 +4186,7 @@ Staaer hævet over Jordens Sky!''
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 En dobbelt Boble, hvælvet af Krystal,
 Heel prægtig spillede i Solens Lue;
 Paa Marmorbordet i den rige Hal
@@ -4066,10 +4216,11 @@ O, siig mig, Kjære, har Du aldrig seet
 Med friske Øine ind i Selskabssalen
 Paa Fornemhedens stive Gravitet
 Og siig mig, har Du aldrig tænkt som Svalen?
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2018061768" variant="kaalund2001062509">
+<text id="kaalund2018061768" variant="kaalund2001062509">
 <head>
     <title>Skralden</title>
     <firstline>Jeg, raabte høit en Skralde</firstline>
@@ -4077,16 +4228,18 @@ Og siig mig, har Du aldrig tænkt som Svalen?
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 ,,Jeg,'' raabte høit en Skralde
 Og overdøved Alle,
 ,,Gjør selv den Vise taus!''
 Hvad melder Du da, Kjære?
 Det maa vel Perler være.
 Lad see - da var det Snaus.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2018061778" variant="kaalund2018061252">
+<text id="kaalund2018061778" variant="kaalund2018061252">
 <head>
     <title>Natfiolen</title>
     <firstline>O, bønfaldt alle Markens Blomster, straal</firstline>
@@ -4094,6 +4247,7 @@ Lad see - da var det Snaus.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 ,,O,'' bønfaldt alle Markens Blomster, ,,straal,
 Du rige Sol!'' og som de bad, det skete.
 Da lukked sig den stille Natfiol
@@ -4123,10 +4277,11 @@ Og hæver over Jorden Dine Blikke.''
 ,,O, det er let for Glæden kun at leve;
 Men det er stort, forladt af Lykkens Glands
 At kunne Hovedet af Støvet hæve!''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001063013" variant="kaalund2018061251">
+<text id="kaalund2001063013" variant="kaalund2018061251">
 <head>
     <title>Sommerfugl og Østers</title>
     <firstline>Hvad fik hiin Østers Skallen til?</firstline>
@@ -4134,6 +4289,7 @@ At kunne Hovedet af Støvet hæve!''
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 ,,Hvad fik hiin Østers Skallen til?
 Og jeg, hvi fik jeg ingen?
 Hver næsviis Dreng kan, naar han vil
@@ -4153,10 +4309,11 @@ Der hører, og der seer Du ei,
 Der ængstes Du ei mere''
 ,,Nei,'' tænkte Sommerfuglen, ,,nei,
 Gid Pokker Østers være!''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001063014">
+<text id="kaalund2001063014">
 <head>
     <title>Den høiere Dressur</title>
     <firstline>Mellem Fjellebodens Aber</firstline>
@@ -4164,6 +4321,7 @@ Gid Pokker Østers være!''
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Mellem Fjellebodens Aber
 Dandser jeg som Puddelhunden.
 Skjøndt jeg kjeder mig og gaber,
@@ -4199,10 +4357,11 @@ Hellere fra hele Klatten
 Løb jeg strax, ifald jeg kunde,
 Ud blandt Gadens frie Hunde,
 For med dem at pudse Katten.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001070101" variant="kaalund2018061219">
+<text id="kaalund2001070101" variant="kaalund2018061219">
 <head>
     <title>Til Rosen</title>
     <firstline>Rose, yndige Rose! naar jeg Dig seer</firstline>
@@ -4210,6 +4369,7 @@ For med dem at pudse Katten.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Rose, yndige Rose! naar jeg Dig seer,
 Er det som Glædens Engel til mig leer,
 Som Du vilde med barnlig Uskyld spørge:
@@ -4249,10 +4409,11 @@ Frem i evig Rigdom af Skabelsens Kilde.
 Menneskesjælen standser midt i sin Drøm,
 Seer og længes og bliver saa underlig øm,
 Føler sig selv en Engel som Du, o Rose.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund1999031201">
+<text id="kaalund1999031201">
 <head>
     <title>Efter Maskeraden</title>
     <firstline>Her sidder jeg alene</firstline>
@@ -4260,6 +4421,7 @@ Føler sig selv en Engel som Du, o Rose.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Her sidder jeg alene
 Med Haanden under Kind,
 Fra Livets Narrescene
@@ -4279,10 +4441,11 @@ For Verdens Smiil at vinde
 Jeg kastede mig hen -
 O kunde jeg nu finde
 Mig selv, mig selv igjen!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001070102">
+<text id="kaalund2001070102">
 <head>
     <title>Revolutionstiden</title>
     <subtitle>(1848)</subtitle>
@@ -4292,6 +4455,7 @@ Mig selv, mig selv igjen!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center>1.</center></nonum>
 
 Giganten var styrtet; paa eensom Ø
@@ -4580,10 +4744,11 @@ Længe vil endnu vi rave
 Frem mod Maalet, Skridt for Skridt
 Broder, naar Enhver faaer Sit,
 Smuldre vi i vore Grave.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001070103">
+<text id="kaalund2001070103">
 <head>
     <title>Sang for det danske Folk</title>
     <subtitle>(Den 22de Marts 1848)</subtitle>
@@ -4592,6 +4757,7 @@ Smuldre vi i vore Grave.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Opmand Dig, Du Danske! lad Verden nu see,
 At ei Du vanslægted i Tiden.
 Skal Dannemark rammes af Skændsel maaskee?
@@ -4626,10 +4792,11 @@ Ja, Seiren, den lyse, skal følge vor Sag,
 Saavist som med knejsende Pander
 Vi vende vort Øie mod Frihedens Dag
 Og Ryggen mod Verdens Tyranner!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001070104">
+<text id="kaalund2001070104">
 <head>
     <title>Ved Adam Oehlenschlägers Død</title>
     <firstline>Ak, det herlige Lys er slukket</firstline>
@@ -4638,6 +4805,7 @@ Og Ryggen mod Verdens Tyranner!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ak, det herlige Lys er slukket,
 Stum er den mægtigste Harpe i Nord!
 Skjalden, den store, Øiet har lukket,
@@ -4677,10 +4845,11 @@ Ikke vi klage tør ved hans Baare -
 Endt er hans Storværk, fuldbragt hans Kald
 Ikkun Beundrings hellige Taare
 Græder Norden for Hakons Skjald.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2018061786">
+<text id="kaalund2018061786">
 <head>
     <title>Bryllupssang</title>
     <firstline>Der er paa Jord et helligt Baand</firstline>
@@ -4688,6 +4857,7 @@ Græder Norden for Hakons Skjald.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Der er paa Jord et helligt Baand,
 Saa skjønt som intet andet,
 Af Kvindens lette, bløde Haand
@@ -4714,10 +4884,11 @@ Nei Stoffet er bestandigt rigt,
 Og det kan aldrig tømmes;
 For Eder blive det et Digt,
 Saa skjønt som det kan drømmes!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001070108">
+<text id="kaalund2001070108">
 <head>
     <title>Rastløs Higen</title>
     <firstline>Ved hvert Maal, hvortil jeg higer</firstline>
@@ -4725,6 +4896,7 @@ Saa skjønt som det kan drømmes!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ved hvert Maal, hvortil jeg higer
 Længselsfuld paa Livets Vei,
 Ved hvert Trin, hvortil jeg stiger,
@@ -4751,10 +4923,11 @@ O, hvor ofte træt til Døden,
 Synker jeg i Slummer hen -
     Morgenrøden
 Vækker mig til Strid igjen!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001070105">
+<text id="kaalund2001070105">
 <head>
     <title>Den brudte Straale</title>
     <firstline>Du priser kun Skjalde af første Rang</firstline>
@@ -4762,6 +4935,7 @@ Vækker mig til Strid igjen!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Du priser kun Skjalde af første Rang,
 De mindre kan Du ei taale;
 Du vil kun høre udødelig Sang,
@@ -4782,10 +4956,11 @@ Da lad kun mit Navn forglemmes og dø
 Koraldyret lig i den dybe Sø,
 Jeg bygger dog med paa den voxende Ø
 Og bereder den Verden, som kommer!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001070106">
+<text id="kaalund2001070106">
 <head>
     <title>De to Kamre</title>
     <firstline>Tvende Kamre har Dit Hjerte</firstline>
@@ -4793,6 +4968,7 @@ Og bereder den Verden, som kommer!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Tvende Kamre har Dit Hjerte.
 Fra det ene lyder Sukket;
 Thi derinde, der har Sorgen
@@ -4832,10 +5008,11 @@ Ak, det hjælper ei hun banker
 Paa den tynde Muur og kalder;
 Skillevæggen styrter ikke,
 Førend hele Huset falder.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001070107">
+<text id="kaalund2001070107">
 <head>
     <title>Chaos</title>
     <firstline>Styrtet er min drømte Verden, tabt</firstline>
@@ -4843,6 +5020,7 @@ Førend hele Huset falder.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Styrtet er min drømte Verden, tabt,
 Kastet ned i Chaos og i Øde!
 Skjønnere end hiin, af Ønsket skabt,
@@ -4862,10 +5040,11 @@ End er ei Forventningskvalen omme -
 Naar skal Aanden med dens Skaberkraft
 Finde Glæde ved hvad den har skabt?
 Ak, og naar skal Hviledagen komme?
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001070109">
+<text id="kaalund2001070109">
 <head>
     <title>Det gamle Øg</title>
     <firstline>Det suser saa tungt i den visnede Bøg</firstline>
@@ -4873,6 +5052,7 @@ Ak, og naar skal Hviledagen komme?
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det suser saa tungt i den visnede Bøg,
 Det hvisler i Tidslernes Toppe.
 Paa Bakken græsser et Udgangsøg,
@@ -4927,10 +5107,11 @@ Jeg agter det lidt! Lad mig ride med,
 Fra Menneskeaaget og Sorgen!
 Saa farer med Dig jeg og Døden afsted -
 Hurra! mod den evige Morgen.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001070110">
+<text id="kaalund2001070110">
 <head>
     <title>Kun en Draabe</title>
     <firstline>Tag friske Rosenblade - hundred Pund -</firstline>
@@ -4938,6 +5119,7 @@ Hurra! mod den evige Morgen.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Tag friske Rosenblade - hundred Pund -
 Sænk i et Kar med Vand de skjønne Blade;
 Lad Massen gjære dybt paa Karrets Bund,
@@ -4977,10 +5159,11 @@ En enkelt, lille Draabe kun Du faaer -
 O Menneske, hvad vil Du meer forlange!
 I Draaben er de døde Rosers Vaar,
 Og svundne Seclers Duft i Sagn og Sange.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001070111">
+<text id="kaalund2001070111">
 <head>
     <title>Fredspiben</title>
     <firstline>Jeg var en Vild, som Fuglen fri</firstline>
@@ -4988,6 +5171,7 @@ Og svundne Seclers Duft i Sagn og Sange.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg var en Vild, som Fuglen fri,
 Mig skulde De ikke tæmme!
 Til Urskoven i min Fantasie
@@ -5002,10 +5186,11 @@ Men teer jeg mig end som en tam Person,
 Jeg er dog den Gamle derinde,
 - Jeg ryger kun som den vilde Huron
 En Fredspibe med min Fjende.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001070112">
+<text id="kaalund2001070112">
 <head>
     <title>Lærken</title>
     <firstline>Det lakked hen mod Pintse, dog laae paa Marken Snee</firstline>
@@ -5013,6 +5198,7 @@ En Fredspibe med min Fjende.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det lakked hen mod Pintse, dog laae paa Marken Snee;
         Endnu var ei Vinteren omme.
 Tungsindig blev min Sjæl, jeg tænkte: Maaskee
@@ -5047,10 +5233,11 @@ O lær mig, lille Lærke, saa freidigt og fro
         Som Du, førend Vintren er omme.
 At synge prophetisk med jublende Tro
         Om Fremtidens Vaar, som skal komme!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2018061795">
+<text id="kaalund2018061795">
 <head>
     <title>Servisk Folkepoesi</title>
     <subtitle>(Frit efter Talwi)</subtitle>
@@ -5059,6 +5246,7 @@ At synge prophetisk med jublende Tro
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center>1.</center></nonum>
 
 Hemmeligt en Yngling og en Pige
@@ -5116,10 +5304,11 @@ Vandrer Pigen med sin yngre Broder.
 Det er ikke Sneen, som det isner,
 Men vor strenge Moder, der vil give
 Mig til Manden, som jeg ikke elsker.''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2018061796">
+<text id="kaalund2018061796">
 <head>
     <title>Nygræsk</title>
     <subtitle>(Efter Daumer)</subtitle>
@@ -5131,6 +5320,7 @@ Mig til Manden, som jeg ikke elsker.''
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ned paa Olympos' høie Top
 En mægtig Ørn sig sænker;
 Den bærer i sin skarpe Klo
@@ -5159,10 +5349,11 @@ Nu veed Du Alt, spørg ei om meer,
 Men stil paa mig Din Hunger -
 Du er Dit stolte Bytte værd,
 Du mægtige Rovfuglklephte!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001070113">
+<text id="kaalund2001070113">
 <head>
     <title>Helligkilden</title>
     <firstline>Gjennem Hedelyng og Sand</firstline>
@@ -5170,6 +5361,7 @@ Du mægtige Rovfuglklephte!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Gjennem Hedelyng og Sand,
 Under Klinten ved Tidsvilde
 Slynger sig Helenes Kilde
@@ -5258,10 +5450,11 @@ Ei paa Moden, ringeagtet;
 Himlen speiler sig deri
 Vældet er ei bortforpagtet,
 Curen er for Alle fri.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001070114">
+<text id="kaalund2001070114">
 <head>
     <title>Den lille Evadatter</title>
     <firstline>Overgiven er Du, glad og vild</firstline>
@@ -5269,6 +5462,7 @@ Curen er for Alle fri.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Overgiven er Du, glad og vild
 Som et Barn, og dog, Du lille Slange,
 Med de store brune Øines Ild
@@ -5373,10 +5567,11 @@ Har man naaet den stores Helligdom,
 Kan man lege med den lilles Bue;
 Derfor gaaer jeg nu saa rolig om,
 Kan med Smiil Dig ind i Øiet skue.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001070115">
+<text id="kaalund2001070115">
 <head>
     <title>Til Naturen</title>
     <firstline>O store, evige Natur</firstline>
@@ -5384,6 +5579,7 @@ Kan med Smiil Dig ind i Øiet skue.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 O store, evige Natur,
 O lad mig ei i Savn forgaae!
 Opluk, opluk mit Fangebuur,
@@ -5413,10 +5609,11 @@ Endnu har jeg ei Sangen glemt,
 Den lyder kun, Natur, om Dig.
 O Moder, har Du ikke gjemt
 En Plads ved Livets Fest for mig?
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001070116">
+<text id="kaalund2001070116">
 <head>
     <title>Livet</title>
     <firstline>En Tyran, forfærdelig og grum</firstline>
@@ -5424,6 +5621,7 @@ En Plads ved Livets Fest for mig?
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 En Tyran, forfærdelig og grum,
 Lod et kunstigt Marterkammer bygge;
 Skjult han kunde paa en Fjeder trykke,
@@ -5489,10 +5687,11 @@ Lad kun Tiden kræve Sit herneden!
 Smertesfængslet med den snevre Plads
 Voxe skal dog til et Storpalads,
 Der sig taber ud i Evigheden!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001070117">
+<text id="kaalund2001070117">
 <head>
     <title>Contrasterne</title>
     <firstline>Du stødes ved min Tale</firstline>
@@ -5500,6 +5699,7 @@ Der sig taber ud i Evigheden!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Du stødes ved min Tale,
 Du kan slet ikke fatte
 Dens underlige Volter
@@ -5564,10 +5764,11 @@ Som Verden er, min Kjære,
 Saa maa vi den annamme.
 Trods sine tvende Sider,
 Er Mønten dog den samme.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001070118">
+<text id="kaalund2001070118">
 <head>
     <title>Maaskee!</title>
     <firstline>Jeg vil et Ord Dem nævne</firstline>
@@ -5575,6 +5776,7 @@ Er Mønten dog den samme.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg vil et Ord Dem nævne,
 Saa fuldt af Haab, saa fuldt af Vee,
 Det er det lille, jevne.
@@ -5609,10 +5811,11 @@ Paa Haabet vil jeg bygge:
 Vil Gud, jeg skal Dem atter see!
 Til da er Livets Lykke
 For mig kun et Maaskee.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001061303">
+<text id="kaalund2001061303">
 <head>
     <title>Til Hende</title>
     <firstline>Mens Vintersolen daler bag den rødmende Sky</firstline>
@@ -5620,6 +5823,7 @@ For mig kun et Maaskee.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Mens Vintersolen daler bag den rødmende Sky,
     Min søde, lille Brud i det Fjerne!
 Jeg sender Dig min Hilsen fra den fremmede By,
@@ -5700,10 +5904,11 @@ Jeg hvirvler mig med Sang kun som Lærken i det Blaae,
     Den synger for sin Mage dernede,
 Sin søde, lille Mage, og jeg gjør ligesaa -
     Ak, havde jeg som den blot en Rede!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="kaalund2001070119">
+<text id="kaalund2001070119">
 <head>
     <title>De grønne Blade</title>
     <firstline>Igjennem Plantens Liv der gaaer en Længsel</firstline>
@@ -5711,6 +5916,7 @@ Sin søde, lille Mage, og jeg gjør ligesaa -
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Igjennem Plantens Liv der gaaer en Længsel:
 Sin Blomst, sit Bedste stræber den at naae.
 Fra Spiren bryder frem af Frøets Fængsel
@@ -5745,8 +5951,9 @@ Hvad Bladet lover, det skal Blomsten holde.
 O kunde disse Blade Du forstaae!
 Det er mit Væsens Blomst, jeg vil udfolde,
 Min Digterlængsels Krone, jeg vil naae!
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

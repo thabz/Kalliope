@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1818" author="foersom" status="incomplete" type="poetry">
 <workhead>
    <title>Digte I</title>
    <year>1818</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="foersom1999030401">
+<text id="foersom1999030401">
 <head>
    <title>Linas Aften- og Morgenbøn</title>
    <toctitle>Linas Aften- og Morgenbøn</toctitle>
@@ -18,6 +16,7 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Nu lukker sig mit Øie;
 o, Fader i det Høie!
 i Varetægt mig tag!
@@ -40,7 +39,8 @@ at Du, o Fader! grant mig seer.
 Hvad Fare kan mig true,
 hvad Nød kan mig vel kue,
 naar mig min Gud og Ven er nær?
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="fasting" status="incomplete" type="poetry">
 <workhead>
    <title>Andre digte</title>
-   <year>?</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="fasting2001062301">
+<text id="fasting2001062301">
 <head>
    <title>Kom Brødre! kom! nu vil vi til at drikke!</title>
    <toctitle>Kom Brødre! kom! nu vil vi til at drikke!</toctitle>
@@ -23,6 +20,7 @@
    <keywords>drikkevise</keywords>
 </head>
 <body>
+<poetry>
 Kom Brødre! kom! nu vil vi til at drikke!
 lad ingen Sorg forstyrre denne Fest!
 I Bacchi Navn vi Fanerne udstikke;
@@ -82,7 +80,8 @@ Kom Brødre! kom! nu vil vi til at drikke!
 lad ingen Sorg forstyrre denne Fest!
 I Bacchi Navn vi Fanerne udstikke,
 :|: den største Helt er den, der tørster meest. :|:
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1853" author="grundtvig" status="incomplete" type="poetry">
 <workhead>
    <title>Fest-Psalmer</title>
    <year>1853</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="grundtvigpinsesalmera3">
+<text id="grundtvigpinsesalmera3">
 <head>
    <title>I al sin Glands nu straaler Solen</title>
    <toctitle>I al sin Glands nu straaler Solen</toctitle>
@@ -18,6 +16,7 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 I al sin Glands nu straaler Solen,
 Livs-Lyset over Naadestolen,
 Nu kom vor Pinselilje-Tid,
@@ -66,7 +65,8 @@ Som Sole vi gaa op og ned
 I din enbaarnes Herlighed;
 Thi du for Hjertet, vi gav dig,
 Gav os med ham dit Himmerig!
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="fontane" status="incomplete" type="poetry">
 <workhead>
    <title>Andre digte</title>
-   <year>?</year>
 </workhead>
 <workbody>
 
-<poem id="fontane2019072101">
+<text id="fontane2019072101">
 <head>
    <title>Archibald Douglas</title>
    <firstline>Ich hab’ es getragen sieben Jahr</firstline>
 </head>
 <body>
+<poetry>
 ,,Ich hab’ es getragen sieben Jahr
 Und ich kann es nicht tragen mehr,
 Wo immer die Welt am schönsten war,
@@ -126,9 +125,10 @@ Wer die Heimath liebt, wie Du.
 Zu Roß, wir reiten nach Linlithgow
 Und Du reitest an meiner Seit’,
 Da wollen wir fischen und jagen froh,
-Als wie in alter Zeit.''    
+Als wie in alter Zeit.''
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

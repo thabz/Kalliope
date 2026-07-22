@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1849" author="wennerberg" status="incomplete" type="poetry">
 <workhead>
    <title>Gluntarne</title>
    <subtitle>En samling duetter för baryton och bas med ackompanjemang av piano</subtitle>
    <year>1849-51</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="wennerberg2002050901">
+<text id="wennerberg2002050901">
 <head>
    <title>En månskensnatt på Slottsbacken</title>
    <toctitle>En månskensnatt på Slottsbacken</toctitle>
@@ -22,6 +20,7 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Herre min Gud, vad den månen lyser,
 se, vilken glans utöver land och stad!
 Himlen är klar och var stjärna myser
@@ -131,7 +130,8 @@ Nu ska' vi knacka oss in hos Lamby;
 Porter så här dags - är det ej gott?
 Var finns en punkt uti Sveriges rike,
 Där man om natten har så lycklig lott?
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

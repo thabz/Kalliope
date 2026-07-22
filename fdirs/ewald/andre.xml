@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="ewald" status="incomplete" type="poetry">
 <workhead>
    <title>Andre digte</title>
-   <year>?</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
@@ -15,13 +12,14 @@
 </head>
 <content>
 
-<poem id="ewald2005052115">
+<text id="ewald2005052115">
 <head>
    <title>Tanker ved Salig Hr. Ulrich Friderich Suhms Grav</title>
    <firstline>Ja stræng var Gud, og vreed var Himmelen</firstline>
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
    Ja stræng var Gud, og vreed var Himmelen;
 Ey Bønner den, ei Graad bevæge kunde.
 Forbarme dig! saa raabte alle Munde;
@@ -65,11 +63,12 @@ Saa glem, o glem ey i Din Salighed,
 De Elskede, hvis eeneste Du var!
 Giør Sorgen mild, skab Trøst i deres Smerte!
 Men du, som vist for Jorden Omsorg har,
-Du Trøstens Gud, læg selv det knuste Hierte! 
+Du Trøstens Gud, læg selv det knuste Hierte!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald1999082207">
+<text id="ewald1999082207">
 <head>
    <title>Fragment</title>
    <toctitle>Fragment</toctitle>
@@ -78,6 +77,7 @@ Du Trøstens Gud, læg selv det knuste Hierte!
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Før Kunsten kom var Pragt og Orden
 Før Vid og Smag var Lyst paa Jorden
   Om Gamle Sagar gjelde skal. -
@@ -86,10 +86,11 @@ Om vi skal troe, hvad Skjalder sige,
   Der neppe kjende den Metal. -
 Nok er det at en Tid har været;
 Da Smag og Kunster ey var æret.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald1999082208">
+<text id="ewald1999082208">
 <head>
    <title>Fragment</title>
    <toctitle>Fragment</toctitle>
@@ -98,13 +99,15 @@ Da Smag og Kunster ey var æret.
    <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
+<poetry>
 Lær mig
 Vor Sjæl er Ild, - som utaknemmelig,
 Fortærer det hvorved den føder sig -
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald1999082209">
+<text id="ewald1999082209">
 <head>
    <title>Fragment</title>
    <toctitle>Fragment</toctitle>
@@ -113,12 +116,14 @@ Fortærer det hvorved den føder sig -
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Er det kun Lyst som viise glædes ved;
 Hvor arm er da vor Jord paa Salighed! -
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2002030501">
+<text id="ewald2002030501">
 <head>
    <title>Da den høysalige Konge blev udført</title>
    <subtitle>Motetto med Klagesange.</subtitle>
@@ -132,6 +137,7 @@ Hvor arm er da vor Jord paa Salighed! -
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Chor.
 Job.30,31
 Vor Harpe er bleven til Sorrig, og vor Orgel til grædendes Lyd
@@ -209,10 +215,11 @@ Og du vor Cithar -stille!
 
 Chor.
 Nu bæres Kongen bort til graven.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewaldandrea0">
+<text id="ewaldandrea0">
 <head>
    <title>Fragment</title>
    <toctitle>Fragment</toctitle>
@@ -221,6 +228,7 @@ Nu bæres Kongen bort til graven.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Indhyllet i mig Selv og taus og Mørk som du
 Guddommelige Nat o Yongs Veninde
 Gik jeg ved Lethes Bræd - en Taare stoed endnu
@@ -241,10 +249,11 @@ Piloten - Søens Søn, naar han halv kold og Stiv
 er følesløs og døv mod Venners Taarer
 Da røres han endnu og gisper efter Liv,
 Ved den bekiendte Lyd af Seil og Aarer
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald1999021802">
+<text id="ewald1999021802">
 <head>
    <title>Paaskrift paa en Kaffekande</title>
    <toctitle>Paaskrift paa en Kaffekande</toctitle>
@@ -253,12 +262,14 @@ Ved den bekiendte Lyd af Seil og Aarer
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Som Venskab, saa din Saft, du ædle Mokka Frugt,
 Bør være reen og stærk og varm og umisbrugt.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald1999021803">
+<text id="ewald1999021803">
 <head>
    <title>Aftenen. Et Fragment (II)</title>
    <toctitle>Aftenen. Et Fragment (II)</toctitle>
@@ -267,14 +278,16 @@ Bør være reen og stærk og varm og umisbrugt.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Klogskab, skaan en følsom Daare -
   Skaan ham, for dit kolde Raad! -
 Viisdom, røv mig ey min Taare! -
   Haab, misund mig ey min Graad! -
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewaldandrea5">
+<text id="ewaldandrea5">
 <head>
    <title>Vinteren, et Fragment</title>
    <toctitle>Vinteren, et Fragment</toctitle>
@@ -283,6 +296,7 @@ Viisdom, røv mig ey min Taare! -
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Ned fra Finlands nøgne Skjær,
   Stiger Vinteren ukaldet,
   Zittrende og grim og skaldet,
@@ -315,10 +329,11 @@ Søen hvidnes, hærdes, fryser, -
   Bække sagtnes, standse, staae -
   Er det vel at undre paa,
 Om min stakkels Muse gyser? -
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewaldandrea6">
+<text id="ewaldandrea6">
 <head>
    <title>Vers</title>
    <toctitle>Vers</toctitle>
@@ -327,6 +342,7 @@ Om min stakkels Muse gyser? -
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Min Bendsen naar Englernes Ild
 Opvarmer og smelter dit Bryst,
 Naar Sandsen og Tanken er vild,
@@ -335,10 +351,11 @@ Naar Venus giør følelsen Varm,
 Da send fra den sneehvide Arm
 Et smagtende Smiil til din Ven -
 Og glem ham fortryllet igien!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald1999082201">
+<text id="ewald1999082201">
 <head>
    <title>Den fornuftige Datter</title>
    <toctitle>Den fornuftige Datter</toctitle>
@@ -347,6 +364,7 @@ Og glem ham fortryllet igien!
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Hvad er Dig kierest, lille Pige?
    »Mama, det er min Psalmebog.«
 Nu det var skiønt, dog sandt at sige,
@@ -355,10 +373,11 @@ Ak ney, det kan umueligt være,
    Betænk Dig ret, og svar igien?
 »Mama, den er det, ved min Ære;
    Thi Naboens Peter gav mig den.«
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald1999082202">
+<text id="ewald1999082202">
 <head>
    <title>Versemageren</title>
    <toctitle>Versemageren</toctitle>
@@ -367,6 +386,7 @@ Ak ney, det kan umueligt være,
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 En Versemager oversatte
 Sin Riimbog i et fremmed Sprog;
 Og, ak, nu fandt det arme Skrog,
@@ -375,10 +395,11 @@ Han rystede det lange Øre:
 Ney, raabde han forbittret, ney,
 Det Sprog er vemmeligt at høre,
 Saa klinge mine Tanker ey.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2002031906">
+<text id="ewald2002031906">
 <head>
    <title>Fabel Hønen og Kyllingerne</title>
    <toctitle>Fabel Hønen og Kyllingerne</toctitle>
@@ -391,6 +412,7 @@ Saa klinge mine Tanker ey.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Med ømme Mødres stolte Glæde;
 Kom hun den trygge Tid ihu,
 Da hendes Kyllinger var spæde;
@@ -404,10 +426,11 @@ Naar hun ey havde Tid at gaae;
 Og hvor et Korn var at fortjene;
 Der passede de flittig paa. -
 Den Tid,
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald1999021801">
+<text id="ewald1999021801">
 <head>
    <title>Natte-Tanker</title>
    <subtitle>
@@ -425,6 +448,7 @@ Den Tid,
    <keywords>elegi</keywords>
 </head>
 <body>
+<poetry>
 I Nattens fredelige Skygge,
   Naar Armod og den trætte Flid,
 Og nøgne Dyder slumre trygge,
@@ -478,10 +502,11 @@ Hans Sjæl omspænder Soel(...),
   Hans stærke Tank(e) ...
 Og nu og da og ...
    Adspreder ey ...
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewaldandrea2">
+<text id="ewaldandrea2">
 <head>
    <title>Til Sielen. En Ode</title>
    <toctitle>Til Sielen. En Ode</toctitle>
@@ -494,9 +519,10 @@ Og nu og da og ...
    <keywords>ode</keywords>
 </head>
 <body>
+<poetry>
 Siig, du nedfaldne, spæde, afmægtige
 Broder af Engle! Siig, hvi udspreder du
-        Fierløse Vinger? &mdash; Ak, forgieves
+        Fierløse Vinger? — Ak, forgieves
         Flagrer du op mod din første Bolig!
 
 Som da, naar Ørnens neppe bedunede
@@ -585,7 +611,7 @@ Lurende Rovdyr, Tiger, og lokkende
         Gnistrende Øien, hvorved man svimler.
 
 Over dig, see dit svulmende Ønskes Vei!
-Grundløse Svelg, og &mdash; Intet, at hvile ved!
+Grundløse Svelg, og — Intet, at hvile ved!
         See dem! og stiig! og naae Cherubens
         Flammende Sverd, og dit Edens Ildhegn!
 
@@ -638,10 +664,11 @@ Da skal din Taare høit, som Cherubers Chor,
 Prise den Aand, som reev dig af Nattens Favn,
         Og alle Himlene skal svare:
         Stor er den Aand, som opløfter Faldne!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald1999030202">
+<text id="ewald1999030202">
 <head>
    <title>I Abrahamsons Stambog</title>
    <toctitle>I Abrahamsons Stambog</toctitle>
@@ -654,6 +681,7 @@ Prise den Aand, som reev dig af Nattens Favn,
    <keywords>stambog,abrahamson</keywords>
 </head>
 <body>
+<poetry>
 Tre Ting - o skiærp mit Syn, Kalliope,
 Tre sieldne Under ønsker jeg at see:
 Den Draabe i Neptunus's salte Skiød
@@ -700,10 +728,11 @@ Derfor gid Amors Ild og Pluti Glands
 Og Martis Palmer og Apollons Krands
 Forøge din Lyksalighed, min Ven -
 Men Verdens Fald kan ey formindske den.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewaldandrea1">
+<text id="ewaldandrea1">
 <head>
    <title>Poenitenten. Et Fragment</title>
    <toctitle>Poenitenten. Et Fragment</toctitle>
@@ -713,6 +742,7 @@ Men Verdens Fald kan ey formindske den.
    <keywords>heksameter</keywords>
 </head>
 <body>
+<poetry>
 Hvis var den tunge, velsignende Haand, som berørte mit Øye,
 Vandrere? - ligner han Jordens Gud, som han stod for sin Skaber -
 Hellig, og herlig - et Aftryk af ham, fra hvis Hænder han udsprang?
@@ -729,10 +759,11 @@ Sagtnedes meer og meer og taug - I en bundløs Afgrund
 Svimlende Sjælen, og famlede for sig, og søgte sin Frelser -
 Henrykt fornam den hans Glimt, og forfulgte med Jubel hans Gjenskin
 Vandrere! - seer i hans blegnende Glands? - thi jeg føler, han var det -
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald1999022201">
+<text id="ewald1999022201">
 <head>
    <title>Poenitenten. En Ode</title>
    <toctitle>Poenitenten. En Ode</toctitle>
@@ -745,6 +776,7 @@ Vandrere! - seer i hans blegnende Glands? - thi jeg føler, han var det -
    <keywords>ode</keywords>
 </head>
 <body>
+<poetry>
   Hvo styrer nu mit bange Trin?
 Hvo viser mig det Lys, som brændte?
   Hvo er du, falske grumme Skin,
@@ -843,10 +875,11 @@ Skal den da døe, som det forløste?
 Ak jeg fortiener ei at haabe;
 Men Jesu Blod, Gud, kun en Draabe,
   En Draabe kan jeg frelses ved.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald1999022202">
+<text id="ewald1999022202">
 <head>
    <title>Følelser ved den Hellige Nadvere</title>
    <subtitle>
@@ -864,6 +897,7 @@ Men Jesu Blod, Gud, kun en Draabe,
    <keywords>lejlighedsdigtning,ode</keywords>
 </head>
 <body>
+<poetry>
 Brødre, hvis er den Glands? - Seer I det herlige
 Purpurskier, som min Siel gysende svømmer i;
 Nu da Naadens Herold festlig nedstiger fra
@@ -924,10 +958,11 @@ Ved dets aabnede Veld, drikker et Svelg af Liv!
 Men igiennem sin Graad stirrer mit Øie paa
 Hvert velsignende Smiil, som med den Eviges
 Magt-Ord, siger mig høit: Elskte, din Siel er frelst!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald1999120701">
+<text id="ewald1999120701">
 <head>
    <title>Morgen-Sang</title>
    <subtitle>Mel.: Vaagn op og slaa paa dine Strenge</subtitle>
@@ -940,6 +975,7 @@ Magt-Ord, siger mig høit: Elskte, din Siel er frelst!
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 O Du, som aabner nu mit Øie
    Paa ny til al din Herlighed!
 O Guders Gud, du evig Høie,
@@ -1016,10 +1052,11 @@ Thi dit er Rige, Magt og Ære!
    Kun Du er god og stoer og viis!
 Hvor henrykt skal jeg raabe da:
 Forløser! Gud! Halleluja!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald1999022001">
+<text id="ewald1999022001">
 <head>
    <title>Død og Dom</title>
    <toctitle>Død og Dom</toctitle>
@@ -1029,6 +1066,7 @@ Forløser! Gud! Halleluja!
    <keywords>elegi</keywords>
 </head>
 <body>
+<poetry>
 Hvo kan opholde Ormens Liv,
   Og standse Støvets Dage? -
 Hvi siger til Minutet: Bliv! -
@@ -1068,10 +1106,11 @@ Han forsker, om jeg er ham lig,
 Bruus Hav, bort skyl dog dette Dynd! -
 Bræk, Afgrund og opslug min Synd,
   At jeg maae synes hellig -
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2000062904">
+<text id="ewald2000062904">
 <head>
    <title>Fragment</title>
    <toctitle>Fragment</toctitle>
@@ -1080,14 +1119,16 @@ Bræk, Afgrund og opslug min Synd,
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Skjønt Himlen taug og Dagens Hersker smiilte,
 Saae Vandreren en svanger Torden-Skye,
 Han saae kun den - han kjendte den og iilte;
 Med lange Skrit i Tide til et Lye
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald1999022003">
+<text id="ewald1999022003">
 <head>
    <title>Impromptu</title>
    <toctitle>Impromptu</toctitle>
@@ -1097,6 +1138,7 @@ Med lange Skrit i Tide til et Lye
    <keywords>lejlighedsdigtning</keywords>
 </head>
 <body>
+<poetry>
 Her hviiler Madam Godike,
 Hun faldt fordi hun stoed ikke,
 Dog tabte vi vort Mod ikke,
@@ -1104,10 +1146,11 @@ Thi Himlen os forlod ikke;
 Og hendes Presse stoed ikke -
 Gaae, Vandrer, bort og roed ikke
 Hos hendes Legems Bodike! -
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2002031907">
+<text id="ewald2002031907">
 <head>
    <title>Fragment</title>
    <toctitle>Fragment</toctitle>
@@ -1120,6 +1163,7 @@ Hos hendes Legems Bodike! -
    <keywords>blankvers</keywords>
 </head>
 <body>
+<poetry>
    Hellige, Hellige, Hellige Gud,
       Du som ufaldne med Rædsel tilbede -
    Skyggerne flye for en Lyd af dit Bud
@@ -1164,8 +1208,9 @@ Forgjæves kalde den forsvundne Nat
 Ey kan undgaa at see sig - ey at see
 Den Helligste og al hans Vredes Harm
 Og de ....
+</poetry>
 </body>
-</poem>
+</text>
 </content>
 </section>
 
@@ -1175,7 +1220,7 @@ Og de ....
 </head>
 <content>
 
-<poem id="ewald2005052103">
+<text id="ewald2005052103">
 <head>
    <title>Gratulation da Seigr. Peder Huulegaard</title>
    <subtitle>
@@ -1190,6 +1235,7 @@ Og de ....
    <keywords>lejlighedsdigtning</keywords>
 </head>
 <body>
+<poetry>
 See! Soelen bryder frem, vor Sorrig er forsvunden,
    Og deylig Soelskin har nu efter Regn sit Sted,
 Bort Sorrig! viig fra os, dig haver vi forvunden!
@@ -1326,8 +1372,9 @@ At Handelen maae steds florere
       Og Lykken stedse være med
 Til De tilsidst med andre fleere
       Gaaer til et saligt Hvile-Stæd.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section>
@@ -1338,7 +1385,7 @@ Til De tilsidst med andre fleere
 </head>
 <content>
 
-<poem id="ewald2000070102">
+<text id="ewald2000070102">
 <head>
    <title>Tanker i Anledning af Hr. Hans Ebbesen...</title>
    <subtitle>Hørkræmmer her i Staden, og Jomfrue Christiane Benedicte Huulegaards Mariage.</subtitle>
@@ -1352,6 +1399,7 @@ Til De tilsidst med andre fleere
    <keywords>lejlighedsdigtning</keywords>
 </head>
 <body>
+<poetry>
 Hvor Zephyr hvislende blant tet begroede Eger
    Snart deler Solens Magt, snart skiller Skygger ad;
 Saa i et sagte Hvift med søde Liljer leger,
@@ -1404,10 +1452,11 @@ To Ønsker har kuns Sted; thi hvad er meer tilbage,
    <sc>End Lykkens Stadighed, og Himlens Varetægt?</sc>
 
 <i>E.</i>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2001071102">
+<text id="ewald2001071102">
 <head>
    <title>Sørge-Sange i Christiansborgs Slots-Kirke</title>
    <subtitle>
@@ -1422,6 +1471,7 @@ To Ønsker har kuns Sted; thi hvad er meer tilbage,
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 <center>FOR DEN FØRSTE PARENTATION</center>
 
 <sc>Undersaatterne</sc>
@@ -1685,10 +1735,11 @@ En Retfærdig skal være til en evig Ihukommelse.
 <i>Chor.</i>
 
 Nu bæres Kongen bort til Graven.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2005052108">
+<text id="ewald2005052108">
 <head>
    <title>I Anledning af Hr. Palludan og Jfr. Lønborg's Mariage</title>
    <subtitle>(1768)</subtitle>
@@ -1697,6 +1748,7 @@ Nu bæres Kongen bort til Graven.
    <keywords>lejlighedsdigtning</keywords>
 </head>
 <body>
+<poetry>
 Bort vilde Latter! - Kiendetegn paa Daarer! -
 Bacchanter rase - Glæden fælder Taarer. -
    Den kildres kun, den glædes ey som leer. -
@@ -1759,10 +1811,11 @@ En værdig Hyrde! - Gud hans Hytte bygger! -
 Men da skal Clio slaae de høye Strænge;
 Høyt skal jeg raabe: Lad den vare længe!
    <sc>Gud! - lad den evig evig blive ved! -</sc>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2000062901">
+<text id="ewald2000062901">
 <head>
    <title>Tanker i Anledning af Frøken Sophia Dorthea v. Holstein's Dødsfald</title>
    <subtitle>(1768)</subtitle>
@@ -1776,6 +1829,7 @@ Høyt skal jeg raabe: Lad den vare længe!
    <keywords>lejlighedsdigtning</keywords>
 </head>
 <body>
+<poetry>
 Den Aand, for hvilke Dødelige blegne,
 Mord-Engelen stoed over Cimbrers Egne -
 Teutonen skialv - og Odins stolte Sønner,
@@ -1860,10 +1914,11 @@ Som Orion! - men tier matte Toner. -
 Hun var - Hun stod, som Brud for sin Forsoner;
    Tie matte Graad! - thi heele Himlen leer: -
    Og vor Heltinde græder aldrig meer. -
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2001070801">
+<text id="ewald2001070801">
 <head>
    <title>Sørge-Digt over Frue Rahbek</title>
    <subtitle>(1768)</subtitle>
@@ -1877,6 +1932,7 @@ Hun var - Hun stod, som Brud for sin Forsoner;
    <keywords>elegi</keywords>
 </head>
 <body>
+<poetry>
 O! Viisdoms Dyb! hvori Cheruber svimle
    O Vei! hvis Maal kun den Alviise veed,
 Og Du, o Skrek for alle skabte Himle!
@@ -1965,10 +2021,11 @@ Du er lyksalig - Vi, som blev tilbage,
    Kuns vi har tabt ved Din Lyksalighed;
 Tilgiv os da; tilgiv os dene Klage;
    Og om vi længes efter samme Sted.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2005052114">
+<text id="ewald2005052114">
 <head>
    <title>Tanker da Arveprinds Frederik Giennemgik Smaa-Koppernes Indpodning</title>
    <firstline>Da Glædens Soel stoed høyest over Norden</firstline>
@@ -1978,6 +2035,7 @@ Tilgiv os da; tilgiv os dene Klage;
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Da Glædens Soel stoed høyest over Norden,
    Og Sorrigs mindste Skygger selv forsvandt,
 Opkom en Skye, som truede med Torden. -
@@ -2040,10 +2098,11 @@ Knyt Fryd til FREDRICHS Aar med Skiæbnens Kiæde,
 Byd JULIANE aldrig fælde Taarer,
 Og selv ey see det Slag, som, skiønt det saarer,
    Dog først en evig Krone vindes ved.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2005052104">
+<text id="ewald2005052104">
 <head>
    <title>Tanker i Anledning af Sr. Huulgaards dødelige Afgang</title>
    <firstline>Og dig bør Tiden lære os at frygte</firstline>
@@ -2053,6 +2112,7 @@ Og selv ey see det Slag, som, skiønt det saarer,
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Og dig bør Tiden lære os at frygte
    Og idel Vandheld giøre skrækkelig,
 Lyst til at høre Nyt! Og du, o Rygte
@@ -2132,8 +2192,9 @@ Saa stort et Tab, trøst dig ved Himmelen!
 Din fulde Løn, din EVALD og min Ven.
 
 H ,, ,, ,,
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section>
@@ -2144,7 +2205,7 @@ H ,, ,, ,,
 </head>
 <content>
 
-<poem id="ewald2005052111">
+<text id="ewald2005052111">
 <head>
    <title>Ode til Printz Friderich, da Han fornyede sin Daabes Pagt</title>
    <subtitle>(1770)</subtitle>
@@ -2153,6 +2214,7 @@ H ,, ,, ,,
    <keywords>ode,lejlighedsdigtning,terziner,frederik6</keywords>
 </head>
 <body>
+<poetry>
 Syng kunstled og urørt om Lykkens Gaver,
 Om alt hvad, Jord og Tid og Rygtet haver;
    Og Echo svare høyt paa Støvets Lyst!
@@ -2249,10 +2311,11 @@ Hvis Flid opelskte disse Saligheder,
 Helt, ved hvis Aske denne Taare rinder,
 Den Salighed, som FREDERIKS Mentor finder,
    Den synger ingen uden Du!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2005052112">
+<text id="ewald2005052112">
 <head>
    <title>Over Hr. Hermanny</title>
    <firstline>Naar Dyden høy og glimrende og prægtig</firstline>
@@ -2262,6 +2325,7 @@ Den Salighed, som FREDERIKS Mentor finder,
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Naar Dyden høy og glimrende og prægtig,
       Aftvinger Jorden Lyst;
 Da er en Gienlyd af dens Røst almægtig
@@ -2346,10 +2410,11 @@ Derfor - - - Men salig er du - - - og mit Hierte,
       Og Taaren kom igien
 Selv ved din Fryd forstummer jeg af Smerte,
       Thi jeg har tabt min Ven.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2001062403">
+<text id="ewald2001062403">
 <head>
    <title>Til Cecilia Wormstrup</title>
    <toctitle>Til Cecilia Wormstrup</toctitle>
@@ -2363,6 +2428,7 @@ Selv ved din Fryd forstummer jeg af Smerte,
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Brød vel Apoll sin Daphnes spæde Græne
 Til Krands for mig? - Naar stammede jeg Digt,
 Beruuset af din Kraft o Hippocrene? -
@@ -2409,10 +2475,11 @@ Dog at du ey, opirred nu maae sige;
 Han synger ey min Fest af Egensind. -
 Vel! - rime vil jeg! - og du muntre Pige,
 Syng Tanker til de Riim som faldt mig ind! -
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2001070802">
+<text id="ewald2001070802">
 <head>
    <title>Et Glimt fra Tiden ind i Evigheden</title>
    <subtitle>
@@ -2429,6 +2496,7 @@ Syng Tanker til de Riim som faldt mig ind! -
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 O Nat, da ey et Gran gav Gjenskin af den Høye!
    Da Godhed ey fandt Støv at hvile ved! - -
 O Svælg af Lys, da Herrens Øye
@@ -2439,7 +2507,7 @@ Ufatteligt! - og Vi! - - - Hvad var vi, før Alfader
 Indsprengt med glimrende Monader -
    I dette Svælg, der var saa stort, som han? -
 
-Nu svævede hans Aand - nu tâlte Magtens Stemmer,
+Nu svævede hans Aand - nu talte Magtens Stemmer,
    Og Soele Kredse viklede sig ud - -
 Nu blev en Jord - - og af dens Gjemmer
    Opstod et Støv - <sc>Og dette ligner Gud! -</sc>
@@ -2517,11 +2585,12 @@ Med salig Vellyst i dit Øye,
 Saa synker all din Sjæl i evig evig Glæde,
    Saa døer dit Øye i Algodheds Magt -
 Saa smiler du mod os, som græde
-   Ved Graven - der, hvor kun dit Støv er lagt.   
+   Ved Graven - der, hvor kun dit Støv er lagt.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2000062902">
+<text id="ewald2000062902">
 <head>
    <title>Ønske til Jomfrue Cecilia Wormstrup, paa Hendes Fødsels-dag</title>
    <toctitle>Ønske til Jomfrue Cecilia Wormstrup, paa Hendes Fødsels-dag</toctitle>
@@ -2536,6 +2605,7 @@ Saa smiler du mod os, som græde
    <keywords>lejlighedsdigtning</keywords>
 </head>
 <body>
+<poetry>
 Fryd, som Dydige kun smage,
 Skiønhed, som ey Aar betage,
 Mange og ufølte Dage,
@@ -2565,21 +2635,23 @@ Mange og ufølte Dage
    Og et evig helligt Ja
 Af en kiær og værdig Mage
    Krone dig CECILIA! -
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2005112901">
+<text id="ewald2005112901">
 <head>
    <title>Recitativ og Aria</title>
    <subtitle>siunget den 18. Maj 1771, da det Musikalske Selskab for denne Vinter ophørte</subtitle>
    <firstline>Naturen smilte - See! - dens Haardhed smelter</firstline>
    <notes>
       <note type="credits">Bidrag fra Ejnar Nørager Pedersen.</note>
-   </notes>   
+   </notes>
    <quality>korrektur1</quality>
    <keywords>lejlighedsdigtning</keywords>
 </head>
 <body>
+<poetry>
 <center><nonum>Recitativ.</nonum></center>
 Naturen smilte - See! - dens Haardhed smelter
 O Soel, for dine Straalers Magt -
@@ -2611,20 +2683,22 @@ Gienlyd, af de Danskes Ære! -
    Gienlyd af Velgierninger! -
 Sang! - ukunstled skal du være,
    Som det Bryst, hvis Tolk de er. -
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2005052101">
+<text id="ewald2005052101">
 <head>
    <title>Cantata for Raadhuus-Strædets Concert</title>
    <firstline>Hun falmede, og mat og nu afmægtig</firstline>
    <notes>
       <note>,,Opført første Concert i Efterhøsten 1771.''</note>
-   </notes>   
+   </notes>
    <quality>korrektur1</quality>
    <keywords>lejlighedsdigtning</keywords>
 </head>
 <body>
+<poetry>
 <nonum><center><b>Recitativ.</b></center></nonum>
 
 Hun falmede, og mat og nu afmægtig,
@@ -2657,11 +2731,12 @@ Er den dog varm af Tak, og høi af Glæde.
                       Styrker mig, I Himliske!
                  Høi og sterk skal Sangen være,
                  Høi, som Eders Venners Ære,
-                      Sterk, som Deres Følelse! 
+                      Sterk, som Deres Følelse!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewaldandrea3">
+<text id="ewaldandrea3">
 <head>
    <title>Da jeg var syg</title>
    <subtitle>Beatus ille, qui procul negotiis - Horat:</subtitle>
@@ -2670,11 +2745,12 @@ Er den dog varm af Tak, og høi af Glæde.
    <firstline>Lyksalig Den, som langt fra Verdens Larm</firstline>
    <notes>
       <note>Trykt 25. september i <i>Adresseavisen</i>, nr. 157, <year>1771</year>.</note>
-      <note>Mottoet er den første linie af Horats ode om landlivets lyksaligheder, som siger ,,Lyksalig den, der fjernt fra døgnets værk.''</note>
+      <note>Mottoet er den første linie af Horats' <xref poem="horats2026010315"/> om landlivets lyksaligheder, som siger ,,Lyksalig den, der fjernt fra døgnets værk.''</note>
    </notes>
    <quality>korrektur1,korrektur2,korrektur3</quality>
 </head>
 <body>
+<poetry>
 Lyksalig Den, som langt fra Verdens Larm,
 Er ikke riig - ey heller alt for arm
 Hvis Siel kan uforstyrret tænke sig,
@@ -2727,10 +2803,11 @@ Som Skaberen kun henter Fryd af sig,
 Og uden andres Hielp er lykkelig;
 Saa skal jeg ære Ham - og føle Mig
 Og glemme Roes - og Guld - og Brøl - og Skrig!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2005052109">
+<text id="ewald2005052109">
 <head>
    <title>Klage-Sang af en Bekiendt ved Hr. Haagensens Grav</title>
    <subtitle>Den 28de December 1771</subtitle>
@@ -2739,6 +2816,7 @@ Og glemme Roes - og Guld - og Brøl - og Skrig!
    <keywords>elegi,lejlighedsdigtning</keywords>
 </head>
 <body>
+<poetry>
 Min Sang er skurrende - og længe
 Klang Klagen i ustæmte Strænge -
    Og al min Harpes Lyd er Graad -
@@ -2795,10 +2873,11 @@ Vil Ormen maale Viisdoms Kiæde? -
 Spørg heller Dig, hvi du tør græde,
 Naar Himlen gav din Ven en Glæde,
    Hvis Skygge Jorden neppe har -
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2005052113">
+<text id="ewald2005052113">
 <head>
    <title>Over M. Th**</title>
    <firstline>O! forskaan mig, viise Daare</firstline>
@@ -2809,6 +2888,7 @@ Naar Himlen gav din Ven en Glæde,
    <keywords>elegi</keywords>
 </head>
 <body>
+<poetry>
 O! forskaan mig, viise Daare,
    Tret ei længer med Naturens Røst!
 Denne tunge, hede Taare,
@@ -2871,10 +2951,11 @@ Og den fromme Graad, som flyder
    Paa vor salige Venindes Grav,
 Skienke dig et Glimt af Dyder,
    Som hun alt for kort har straalet af!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2005052105">
+<text id="ewald2005052105">
 <head>
    <title>I Anledning af Hans Excellence Hr. Grev Haxthausens Afgang fra Søe Etaten</title>
    <firstline>Lad Helten reise stolte Pyramider</firstline>
@@ -2885,6 +2966,7 @@ Skienke dig et Glimt af Dyder,
    <keywords>elegi,lejlighedsdigtning</keywords>
 </head>
 <body>
+<poetry>
 Lad Helten reise stolte Pyramider
 Paa Brødres Støv! - Til Skræk for bedre Tider
    Krigs Guden flette ham en blodig Krands!
@@ -2897,10 +2979,11 @@ Og meer end Lorbær, er det Navn af Fader,
 Du bygte kun DIN Roes paa Brødres Nytte,
 I Danskes Bryst - Men denne Ære Stytte
       Skal ingen gyse ved at see! -
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald1999021805">
+<text id="ewald1999021805">
 <head>
    <title>Taarer ved Herr Frederik von Arnsbachs Grav</title>
    <subtitle>Taarer ved den fordum Høiædle og Velbyrdige, nu hos Gud Salige, Divisions Qvarteer-Mester Herr Frederik von Arnsbachs Grav. Af Hans bedrøvede Ven Johannes Ewald.</subtitle>
@@ -2914,6 +2997,7 @@ I Danskes Bryst - Men denne Ære Stytte
    <keywords>elegi,lejlighedsdigtning</keywords>
 </head>
 <body>
+<poetry>
 Her traf han mig - Her i mit fulde Hierte
   Fandt jeg den dødelige Piil - -
 Kun skrækkelig for Børn! - kun følt af Daarer! -
@@ -2997,10 +3081,11 @@ Død er Han - død ... dog vil jeg ikke græde -
 Algodhed tog Ham - syng om salig Glæde! -
 Syng høit! - men Hiertet smelter - Taaren flyder -
   Og Harpen falder af den svage Haand! -
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2002031903">
+<text id="ewald2002031903">
 <head>
    <title>Til B *** og E ***</title>
    <subtitle>1772</subtitle>
@@ -3013,6 +3098,7 @@ Syng høit! - men Hiertet smelter - Taaren flyder -
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 O du, hvis stærke Flammer drive
    Det store Hiul i Verdens Ur,
 Hvis Straaler varme og oplive
@@ -3111,10 +3197,11 @@ Opdage Skiebnens skiulte Kiede,
 Spaae skal min Sang, og Godhed svare:
 Ja, længe skal din Glæde vare,
    Og himmelsk Lyst skal krone den!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2002122003">
+<text id="ewald2002122003">
 <head>
    <title>En Passions-Sang [Stabat Mater]</title>
    <subtitle>Dansk Efterligning</subtitle>
@@ -3128,6 +3215,7 @@ Ja, længe skal din Glæde vare,
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Korset, som den strænge Fader
 Vred og tordnende forlader,
 Væder Mirjam med sin Graad -
@@ -3199,10 +3287,11 @@ Taaren holde op at flyde,
 I Din Glædes Paradiis! -
 
 AMEN.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2002031904">
+<text id="ewald2002031904">
 <head>
    <title>Til Hr. Hiersing og Jfr. Malling</title>
    <subtitle>1772</subtitle>
@@ -3215,6 +3304,7 @@ AMEN.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ord eller Lyd - som Babels Virvelvinde
 Forfølge, tumle, splitte ad til nu;
 Ord, som i Brødres Læber daglig blandet
@@ -3312,10 +3402,11 @@ Om - - - og hvorom? - Hvad kan min Sang begjære
 Til den Lyksalige? - Guld og Ære -
 Ney Jersing - Thi det beste du kan haabe
    Er, at den Lyst du har, maae vare ved
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2002031905">
+<text id="ewald2002031905">
 <head>
    <title>Rimbrev til L. Bensen</title>
    <subtitle>1772</subtitle>
@@ -3328,6 +3419,7 @@ Ney Jersing - Thi det beste du kan haabe
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Høystærede Herre!
             udvalgteste Ven!
    Patron!
@@ -3419,10 +3511,11 @@ Paa Stoelen I Sengen den nittende Juli
             JoPehandernes SpenEdrupwald
 
 A Monseieur Monsieur L: Bensen à son Logis
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2000062903">
+<text id="ewald2000062903">
 <head>
    <title>Paa Kongens Fødsels-Dag</title>
    <subtitle>1772</subtitle>
@@ -3433,6 +3526,7 @@ A Monseieur Monsieur L: Bensen à son Logis
    <keywords>lejlighedsdigtning,christian7,frederik6</keywords>
 </head>
 <body>
+<poetry>
 Velkomne Dag! - og stor blant Nordens Dage!
 Og dobbelt stor, og altid meer velkommen
 Jo tiere du kommer glad tilbage! -
@@ -3464,10 +3558,11 @@ Stor i Viisdom, Magt og Ære,
 Haand i Haand i Thronens Skygge,
 Troe, lyksalige og trygge
    Skal Hans Børn udbrede Lyst!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2002031902">
+<text id="ewald2002031902">
 <head>
    <title>Over M. B**</title>
    <subtitle>1772</subtitle>
@@ -3480,6 +3575,7 @@ Troe, lyksalige og trygge
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Almagts Ord, du store Anker,
    Du, som Verden hviler ved,
 Hold min Siel! - heft mine Tanker
@@ -3560,10 +3656,11 @@ Ak, mit sønderknuste Hierte
 Hvor er Tryghed? - Verdens Anker,
 Almagt, heft de bange Tanker
    Til den Dødes Salighed!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2002031901">
+<text id="ewald2002031901">
 <head>
    <title>Til Thalias Caroline paa hendes Fødselsdag</title>
    <subtitle>d 5te Febr: 1772</subtitle>
@@ -3577,6 +3674,7 @@ Almagt, heft de bange Tanker
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 O du som henrykt seer vor Fryd,
 Og hører Glædens høye Lyd,
    Thalias tause Ven -
@@ -3681,10 +3779,11 @@ Udvidet følte al vor Lyst;
 Nu veedst du det - Vær glad som vi! -
 Og drik ved Pindi Harmonie,
    Vor Carolines Skaal! -
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald1999022004">
+<text id="ewald1999022004">
 <head>
    <title>Haab og Erindring</title>
    <toctitle>Haab og Erindring</toctitle>
@@ -3696,6 +3795,7 @@ Og drik ved Pindi Harmonie,
    <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
+<poetry>
 Hold paa dit Nu, min Siæl! Forsøg at smage
   Det Øyeblik, som er!
 O, bind det Flygtige, hold det tilbage
@@ -3866,10 +3966,11 @@ Er han i hvert et ædelt Træk den samme?
   Og - <i>tænker han paa mig?</i>
 
         Kiøbenhavn den 31te Maji 1772.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2001062406">
+<text id="ewald2001062406">
 <head>
    <title>Til Herr Berling og Jfr. Godiche</title>
    <subtitle>paa Deres Bryllups-Dag den 9 October 1772</subtitle>
@@ -3883,6 +3984,7 @@ Er han i hvert et ædelt Træk den samme?
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Bag Zembla er et Bierg af Sølv, som stiger
 Mod Himmelen - der boer den stolte Kriger,
 Indsvøbt i tykke Skyer af ævig Snee,
@@ -3931,10 +4033,11 @@ O viise Valg! Ja <sc>Berling</sc>! Ja den Høye,
 Som elsker dig, har selv opladt dit Øye -
 Han viiste dig det skiønne Tilflugts-Sted,
 Og han velsigner det med Varighed! -
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewaldandrea4">
+<text id="ewaldandrea4">
 <head>
    <title>Rungsteds Lyksaligheder. En Ode.</title>
    <toctitle>Rungsteds Lyksaligheder. En Ode.</toctitle>
@@ -3948,6 +4051,7 @@ Og han velsigner det med Varighed! -
    <keywords>ode</keywords>
 </head>
 <body>
+<poetry>
 1
 I kiølende Skygger,
    I Mørke, som Roser udbrede;
@@ -4037,10 +4141,11 @@ Siig! - Kan min Camoene
    Kan Sangens Gudinde,
 Med smeltende Toner belønne det Skiød,
    Hvoraf min Lyksalighed flød? -
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2001062404">
+<text id="ewald2001062404">
 <head>
    <title>Over Andreas Schyth</title>
    <toctitle>Over Andreas Schyth</toctitle>
@@ -4055,6 +4160,7 @@ Med smeltende Toner belønne det Skiød,
    <keywords>lejlighedsdigtning</keywords>
 </head>
 <body>
+<poetry>
 Mon Støv kan følge med den Høye,
 Hvem fandt hans Spor og hvilket Øye
    Har seet hans underlige Vey -
@@ -4166,10 +4272,11 @@ Og Godhed, som borttog sin Tjener,
 Men ak - vi, som en kjærlig Fader
 Uigjenkaldelig forlader,
    Os kun - os trøster Taaren ey -
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2001062402">
+<text id="ewald2001062402">
 <head>
    <title>Over Johannes Kinast</title>
    <toctitle>Over Johannes Kinast</toctitle>
@@ -4184,6 +4291,7 @@ Uigjenkaldelig forlader,
    <keywords>lejlighedsdigtning</keywords>
 </head>
 <body>
+<poetry>
 Mon den, som knæler for den Høye
    Fornemmer Lyd af Skabningen? -
 Seer han vor Jord? - og veed hans Øye,
@@ -4264,10 +4372,11 @@ Igjen fornyer dig til sin Boelig
 Skal gjemme paa dit Eftermæle,
 Indtil og vore frelste Sjæle,
 Bortrykkes i en Strøm af Lyst -
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald1999030201">
+<text id="ewald1999030201">
 <head>
    <title>Til Hr. Find og Jfr. Lund</title>
    <subtitle>(1773)</subtitle>
@@ -4278,6 +4387,7 @@ Bortrykkes i en Strøm af Lyst -
    <keywords>lejlighedsdigtning</keywords>
 </head>
 <body>
+<poetry>
 Nu smiler Solen stolt bag aabne Himle,
 Naturen føder, unge Glæder vrimle
   Omkring dens Bryst;
@@ -4340,10 +4450,11 @@ Vær tryg ved Pagtens diamantne Kiæde,
 Han bandt den! - Han velsigne den! - Han give
 Sin Engel seent sit Vink, at sønderrive
   Saa smukt et Baand!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald1999022203">
+<text id="ewald1999022203">
 <head>
    <title>Til Jomfrue Anna Hedevig Jacobsen</title>
    <subtitle>da Solen var overtrukken med Skyer i Sommeren 1773.</subtitle>
@@ -4356,6 +4467,7 @@ Sin Engel seent sit Vink, at sønderrive
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Solen Flygter, Taarer skiule
   Sporet af den Himmelske;
 Norden brøler i sin Hule,
@@ -4382,10 +4494,11 @@ Dig, hvis aldrig mørke Øie
   Dydens Himmel straaler i,
 Dig kan Glæden kun fornøie
   Med sin egen Melodie.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewaldandrea8">
+<text id="ewaldandrea8">
 <head>
    <title>Klage-Sang over Skiødehunden: Maske</title>
    <toctitle>Klage-Sang over Skiødehunden: Maske</toctitle>
@@ -4399,6 +4512,7 @@ Dig kan Glæden kun fornøie
    <keywords>elegi,lejlighedsdigtning</keywords>
 </head>
 <body>
+<poetry>
 Bland Muse, bland din Graad med Arabelles Taarer!
   For Efterslægten klag den fromme Piges Nød! -
 Hyl, at Barbarer selv, og følesløse Daarer
@@ -4574,10 +4688,11 @@ Staae stille Hund, og hyel, ved denne haandfuld Aske,
   Som da den havde Liv, var Arabelles Lyst;
 Men væ dig! - om du fræk besmitter Støv af Maske
   Som en elskværdig Mund saa tit har roest og kyst! -
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2000070901">
+<text id="ewald2000070901">
 <head>
    <title>Nytaarsdigt til en Fader (I)</title>
    <toctitle>Nytaarsdigt til en Fader (I)</toctitle>
@@ -4590,6 +4705,7 @@ Men væ dig! - om du fræk besmitter Støv af Maske
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 O du min Ungdoms troe Veyleder,
    Som styrer mig til varig Lyst
 O du som planter Saligheder
@@ -4622,10 +4738,11 @@ Hans Naade skjæn(ke) dig en Alder -
    Som er ærværdig (hø)y og sød -
 Han byde at du ikke falder
    Før du hensegner i hans Skjød -
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2000070902">
+<text id="ewald2000070902">
 <head>
    <title>Nytaarsdigt til en Fader (II)</title>
    <toctitle>Nytaarsdigt til en Fader (II)</toctitle>
@@ -4638,6 +4755,7 @@ Han byde at du ikke falder
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Som Snee bortsmelter Støvets Dage
    Som Nattens Dug forgaaer vort Liv
 Hvo sagtner Tidens Gang? - Hvo binder
@@ -4679,10 +4797,11 @@ Ved hans Velsignelse formeere
 Din Alder sig med mange fleere,
    Og han beslutte dem med Glæde
       Med salig Lyst, Som ey forgaaer -
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2001081802">
+<text id="ewald2001081802">
 <head>
    <title>Nytaarsdigt til en Moder</title>
    <toctitle>Nytaarsdigt til en Moder</toctitle>
@@ -4695,6 +4814,7 @@ Din Alder sig med mange fleere,
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 O du mit Intets troe Veninde
    Hvad var jeg, da dit varme Bryst
 Oplivede mig til at finde
@@ -4829,10 +4949,11 @@ Hans Viisdoms Straale skal advare
 En roelig, høy og æret Alder
 Da byde Naaden at du falder
    I dens Barmhjertigheders Skjød -
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2001062401">
+<text id="ewald2001062401">
 <head>
    <title>Aftenen</title>
    <toctitle>Aftenen</toctitle>
@@ -4846,6 +4967,7 @@ Da byde Naaden at du falder
    <keywords>blankvers</keywords>
 </head>
 <body>
+<poetry>
 Indsvøbt i al sin Skræk og vred, og vild,
 Nedbruser han fra Bjergene - O flye,
 Du Roesens og de spæde Liliers Ven! -
@@ -4909,10 +5031,11 @@ Et ildrødt Meteor, er Jettens Sværd -
 O see det lyne bag hans Hjelm! - og flye,
 Du milde Kjæmper med de gyldne Haar! -
                               Ewald.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2000070103">
+<text id="ewald2000070103">
 <head>
    <title>Epigram</title>
    <toctitle>Epigram</toctitle>
@@ -4925,6 +5048,7 @@ Du milde Kjæmper med de gyldne Haar! -
    <keywords>heksameter</keywords>
 </head>
 <body>
+<poetry>
 Thoren, wie lange verfolgt ihr den Barden? - und hascht nach ein Luft-Kind? -
 Lächelnd entflieht er euch - über den Dunstkreis, mit Flügeln der Geister
 Schertzt mit den Sternen und dünckt sich ein Irrlicht, mit feürigen Locken;
@@ -4934,8 +5058,9 @@ Hört er den müssigen Pöbel sich härmen und krähen und kreischen -
 Wundert sich, was doch für Thierchen hierunten ihn hassen und fürchten,
 Schüttelt das flammende Haupt; und verfolgt die weitschweifende Bane
 Ruhig und lächelnd und hell wie der Mond beym Gebelle der Hunde.
+</poetry>
 </body>
-</poem>
+</text>
 </content>
 </section>
 
@@ -4945,7 +5070,7 @@ Ruhig und lächelnd und hell wie der Mond beym Gebelle der Hunde.
 </head>
 <content>
 
-<poem id="ewald2001071101">
+<text id="ewald2001071101">
 <head>
    <title>I Anledning af den Sal. Mad. Jacobsens Dødsfald</title>
    <subtitle>i Rondsted den 1 May 1775</subtitle>
@@ -4955,6 +5080,7 @@ Ruhig und lächelnd und hell wie der Mond beym Gebelle der Hunde.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 O siig mig, du, som med afmægtig Klage
    Vanærer Venners Hvilested:
 Hvad gavner Graad? - hvo kaldte den tilbage
@@ -5051,10 +5177,11 @@ Og ey forgieves kalde Dig tilbage,
    Men glade gaae til Dig! -
 
 Rondsted, den 14 May 1775.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald1999092201">
+<text id="ewald1999092201">
 <head>
    <title>Til Generalinde Elisabeth Moltke</title>
    <toctitle>Til Generalinde Elisabeth Moltke</toctitle>
@@ -5067,6 +5194,7 @@ Rondsted, den 14 May 1775.
    <keywords>lejlighedsdigtning</keywords>
 </head>
 <body>
+<poetry>
 Reen og ukunstled er den Fryd,
   Som flammer i vort Bryst
 Enfoldig er vor Glædes Lyd,
@@ -5111,10 +5239,11 @@ At den maae længe blive det
   Som den har vært os nu
 stolt af dit Liv Elisabeth
   Og god, og stoer som du -
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2005052110">
+<text id="ewald2005052110">
 <head>
    <title>Ode til Arve-Prindsen, den 11. October 1776</title>
    <firstline>Ei Glædes Raab af Kampens grumme Helte</firstline>
@@ -5122,6 +5251,7 @@ stolt af dit Liv Elisabeth
    <keywords>lejlighedsdigtning,ode</keywords>
 </head>
 <body>
+<poetry>
 Ei Glædes Raab af Kampens grumme Helte
          Og ei Trompetens vilde Klang
 Kan naae den fromme Bardes Bryst - og smelte
@@ -5211,10 +5341,11 @@ Og Jorden og dens sidste Slægter lære
          Henrykte denne Festes Fryd -
 Vort Held - vort Haab - vor FREDERIK - og Hans Ære
          Af Harpens høie Lyd.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2000063002">
+<text id="ewald2000063002">
 <head>
    <title>Vers paa et Sølv Skildt</title>
    <subtitle>
@@ -5231,6 +5362,7 @@ Vort Held - vort Haab - vor FREDERIK - og Hans Ære
    <keywords>lejlighedsdigtning</keywords>
 </head>
 <body>
+<poetry>
 Din Afkom elskte Laug skal see
 Din sidste Slægt skal glad adlyde
 To Love, som den ellevte
@@ -5240,10 +5372,11 @@ To Bud, o Slægt! af ædle Skytter,
 Er alt, hvad han til Afskeed vil,
 Sigt altid kun til det, som nytter,
 Tref altid hvad du sigter til.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald1999030204">
+<text id="ewald1999030204">
 <head>
    <title>Eselet og Bonden</title>
    <subtitle>
@@ -5256,6 +5389,7 @@ Tref altid hvad du sigter til.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 En Esel vant til Byrder og Slag,
   Bar, i den Troe at det saa skulde være,
 Taalmodig, jevnlig, Dag for Dag
@@ -5330,10 +5464,11 @@ Thi sank vi under Nøden,
   Da smilte <i>Armes Ven</i> -
 Da gav han kierlig Døden
   Et Vink at ende den -
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2001082401">
+<text id="ewald2001082401">
 <head>
    <title>Fragment</title>
    <toctitle>Fragment</toctitle>
@@ -5342,6 +5477,7 @@ Da gav han kierlig Døden
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Svulmende Vellyst, du som mit Bryst af Leer
 Længe forgjæves stræber at dæmme for
 Bundløse Veld af Støvets Glæder
@@ -5368,10 +5504,11 @@ Og skulde jeg i Kreds af Brødre
 Stable mit Leer for AlGodheds Kilde
 Styrt i din Vælde salige Strøm af Gud
 Bruus fra min Læbe, høyt, at dit raske Fald
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2000063003">
+<text id="ewald2000063003">
 <head>
    <title>Tanker ved Graven af den unge Jens Sanderschov</title>
    <toctitle>Tanker ved Graven af den unge Jens Sanderschov</toctitle>
@@ -5386,6 +5523,7 @@ Bruus fra min Læbe, høyt, at dit raske Fald
    <keywords>lejlighedsdigtning</keywords>
 </head>
 <body>
+<poetry>
 Vær høy min Graad! - for Himlen vil jeg klage! -
    Til Almagt Throne skal min Jammer naae! -
 Thi den - kun den beskygger Støvets Dage! -
@@ -5447,10 +5585,11 @@ Og selv dens Vink - dens sidste Vink skal finde
    Min Ven - mit Tab - min Kummer i mit Bryst.
 
    T
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2005052118">
+<text id="ewald2005052118">
 <head>
    <title>Ved en Fest paa Kronprindsens Fødselsdag</title>
    <subtitle>(1778)</subtitle>
@@ -5459,6 +5598,7 @@ Og selv dens Vink - dens sidste Vink skal finde
    <keywords>lejlighedsdigtning</keywords>
 </head>
 <body>
+<poetry>
 <center><nonum><i>Aria.</i></nonum></center>
 Din Fryd, o Nord! stadfæstes fra det Høye. -
 I aabne Himle seer det glade Øye
@@ -5525,10 +5665,11 @@ Og hver, hvis Barm Ufødtes Lyst kan fryde,
                   Den Dag, du straalte første Gang! -
 
 <center><nonum>________</nonum></center>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2005052119">
+<text id="ewald2005052119">
 <head>
    <title>Indskrifter ved Festen</title>
    <subtitle>(1778)</subtitle>
@@ -5539,6 +5680,7 @@ Og hver, hvis Barm Ufødtes Lyst kan fryde,
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Skue Nord og nyd
       Din Afkoms Aar
 Tryg ved den Fryd,
@@ -5547,11 +5689,12 @@ Tryg ved den Fryd,
 Straal Soel og stiig,
 Styr og beriig
       Og smelt vort Bryst
-      I Tak og Lyst. 
+      I Tak og Lyst.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2005052106">
+<text id="ewald2005052106">
 <head>
    <title>I Anledning af Hendes Kongelige Majestæts Dronning Juliana Maria høie Fødsels-Fest</title>
    <subtitle>Den 4. September 1778</subtitle>
@@ -5560,6 +5703,7 @@ Styr og beriig
    <keywords>lejlighedsdigtning</keywords>
 </head>
 <body>
+<poetry>
 Stort er Dit Navn, Du Cimbrernes Veninde! -
       Dets Lyd er høie Hymners Klang;
 Og ved dets Kraft, skal Bragas Afkom finde
@@ -5664,28 +5808,31 @@ Da skal Din Glæde voxe høit - og ligne
       De Danskes Fryd - og blande sig,
 Med Normænds Lyst - - Og Du skal selv velsigne
       Den Dag, som gav os Dig! -
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2005052107">
+<text id="ewald2005052107">
 <head>
    <title>Indskrift ved en Fest i samme Anledning</title>
    <firstline>Giem Steen - Giem Præget af vort Bryst</firstline>
    <notes>
       <note>1778.</note>
       <note>Se <xref poem="ewald2005052106"/>.</note>
-   </notes>   
+   </notes>
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Giem Steen - Giem Præget af vort Bryst,
       At Evighedens Børn maae lære
 Vort Nordens Roes - dets Held, dets Lyst,
-      Vor Tak - og JULIANES Ære! 
+      Vor Tak - og JULIANES Ære!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2000063001">
+<text id="ewald2000063001">
 <head>
    <title>Sang i Anledning af Kongens Fødselsdag 1778</title>
    <toctitle>Sang i Anledning af Kongens Fødselsdag 1778</toctitle>
@@ -5698,6 +5845,7 @@ Vort Nordens Roes - dets Held, dets Lyst,
    <keywords>lejlighedsdigtning,christian7</keywords>
 </head>
 <body>
+<poetry>
    Valfader saae sin fromme Balder,
 Og græd den første Gang ved Blod,
 Ak! raabte han den ædle falder,
@@ -5730,10 +5878,11 @@ Saa god som han, saa god som han?
 Seer <sc>Christians</sc> Smiil - hvo elsker Norden
 Saa høyt som han, saa høyt som han?
 Velsigner alle <sc>Christian</sc>!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewaldandrea7">
+<text id="ewaldandrea7">
 <head>
    <title>Aftenen. Et Fragment</title>
    <toctitle>Aftenen. Et Fragment</toctitle>
@@ -5745,6 +5894,7 @@ Velsigner alle <sc>Christian</sc>!
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Skiul din Straale! - Skaan mit Hierte
   For det sidste Spor af Lyst!
 Frydens Glimt i Skyer af Smerte
@@ -5761,10 +5911,11 @@ I et grundløst Mulm forsvinde
   Hvert et Glimt, som trøster mig,
 Medynksløse Virvelvinde
   Døve mine Klageskrig!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald1999081401">
+<text id="ewald1999081401">
 <head>
    <title>Et hengivent Ønske</title>
    <toctitle>Et hengivent Ønske</toctitle>
@@ -5776,6 +5927,7 @@ Medynksløse Virvelvinde
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 O du, hvis Vink fremkaldte Myriader,
   Af Intets tause Nat til dig! -
 Du Cherubimers Ven! - du Støvets Fader! -
@@ -5784,10 +5936,11 @@ O byd mit Liv - mit usle Liv, at være
   Et Spor af dig, du Godheds Gud! -
 Min svage Røst fortolke høyt din Ære!
   Og al min Idræt dine Bud! -
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald1999081402">
+<text id="ewald1999081402">
 <head>
    <title>Under Frue Caroline Walthers Portrait</title>
    <toctitle>Under Frue Caroline Walthers Portrait</toctitle>
@@ -5799,14 +5952,16 @@ Min svage Røst fortolke høyt din Ære!
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 See her hvad Aand, hvad Ild, i hver en Mine,
   Naar vor Aglae taus kun viser sig,
 See her er præget af Thalias Caroline,
   Hvis Sang saa ofte har fortryllet dig.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2001070101">
+<text id="ewald2001070101">
 <head>
    <title>Indføds-Retten</title>
    <toctitle>Indføds-Retten</toctitle>
@@ -5818,6 +5973,7 @@ See her er præget af Thalias Caroline,
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
    Stor er den - Giennem Himlene
 Skal Glædens høye Gienlyd trænge,
    Som Musen aandløs lisplende,
@@ -6096,10 +6252,11 @@ Min Ild - min smeltende Camoene
    Kan henrykt ey fortolke sig -
 Et klogt og stræbsomt Folk allene,
    Skal værdig - evig priise dig! -
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2000070101">
+<text id="ewald2000070101">
 <head>
    <title>Fra et brev til moderen</title>
    <subtitle>Marie Huulegaard, dateret D. 6te Novbr 1778</subtitle>
@@ -6109,6 +6266,7 @@ Et klogt og stræbsomt Folk allene,
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Opfordrer jeg min Sangerinde,
    At tænde Flammer i min Sjæl -
 Strax spørger hun til mine Vinde;
@@ -6136,10 +6294,11 @@ Frue Mary hun ringer paa Tærnen blaae -
 Vær snar Grete lille, lad Rokken stae! -
    Kilt dig op og spring. -
 Saa sørgelig klinger den gyldne Harpe -
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2005051802">
+<text id="ewald2005051802">
 <head>
    <title>Cantate ved Jubileet den 11 May 1779 i Anledning af Universitetets Indvielse for 300 Aar siden</title>
    <firstline>Sænk, Viisdom, sænk din Glands herned</firstline>
@@ -6151,6 +6310,7 @@ Saa sørgelig klinger den gyldne Harpe -
    <keywords>lejlighedsdigtning</keywords>
 </head>
 <body>
+<poetry>
 <nonum><b>FOR BEGYNDELSES-TALEN</b></nonum>
 
 <nonum><i>Chor.</i></nonum>
@@ -6184,7 +6344,7 @@ Da følte Cimbrerne det blide Dag-Skiær -
 Og Haab, og virksom Drift, og Forske-Lyst;
 Og mildrende og vennekiære Kunster
 Oplivedes trint om Din Søn, Estrithe,
-Og trint om Valdemar, om Axels Ven, 
+Og trint om Valdemar, om Axels Ven,
 Og om hans seyer-sælle Navner. -
 Men, Christiaan, Dig, Du store Konge-Fader
 Vor Glædes Veld, vor elskte Skygges Rod,
@@ -6249,10 +6409,11 @@ Og - hør os Himmel! - evig skal det staae.
                Og prøved Sandheds ægte Dyd
             Forevige ved moedne Glæder
                Det første Dag-Skiær af Din Fryd!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2002122001">
+<text id="ewald2002122001">
 <head>
    <title>Cantate opført ved Universitetets sædvanlige Høitidelighed i Anledning af Kongens Fødselsdag 1779</title>
    <toctitle>Cantate opført ved Universitetets sædvanlige Høitidelighed i Anledning af Kongens Fødselsdag 1779</toctitle>
@@ -6266,6 +6427,7 @@ Og - hør os Himmel! - evig skal det staae.
    <keywords>lejlighedsdigtning</keywords>
 </head>
 <body>
+<poetry>
 Naar Landets Børn, Du evig Viise,
 I Dine Glimt tør fryde sig,
 Hvor høyt skal da hver Læbe priise, -
@@ -6332,10 +6494,11 @@ Fyld, Gud - opfyld vor CHRISTIANS Dage,
 Med Lys og Held! - og ofte byd:
 Hans Fest, at vende bliid tilbage,
 Og os, at møde den med Fryd! -
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2001062405">
+<text id="ewald2001062405">
 <head>
    <title>Til Hans Kongelige Høihed Arveprinds Frederik</title>
    <subtitle>den 11. October 1779. En Ode</subtitle>
@@ -6349,6 +6512,7 @@ Og os, at møde den med Fryd! -
    <keywords>lejlighedsdigtning,ode,frederik6</keywords>
 </head>
 <body>
+<poetry>
 Henrykt, troe mig, o Efterslegt! henrykt
 Saae jeg Frederikkers Dag, og dens Hæder
 Bandt min zitrende Læbe; men helligt
@@ -6450,10 +6614,11 @@ Fredriks Smil til de heldige Cimbrer!
 Da skal Godhed samtykkende hastig
 Byde mig bringe sit Norden en elsket
                      Fredrik endnu!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald1999082206">
+<text id="ewald1999082206">
 <head>
    <title>Det nye Aar 1779</title>
    <toctitle>Det nye Aar 1779</toctitle>
@@ -6463,6 +6628,7 @@ Byde mig bringe sit Norden en elsket
    <keywords>lejlighedsdigtning</keywords>
 </head>
 <body>
+<poetry>
 Held dig, nyeskabte Aar, som nu saa blid fremstiger
   Af Evighedens Nat! - Held dig fra Verdners Gud!
 Han selv - han byde dig, at være CHRISTIANS Riger,
@@ -6499,10 +6665,11 @@ O lær os agte det vor Lyst, vor Held, vor Ære,
   Med ægte Danne-Dyd at pryde Danskes Hiem! -
 At andre see vor Glands! - og at vi selv maae lære
   At elske Fremmede - og ey at savne dem! -
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2002122002">
+<text id="ewald2002122002">
 <head>
    <title>En aandelig Sang</title>
    <subtitle>
@@ -6520,6 +6687,7 @@ At andre see vor Glands! - og at vi selv maae lære
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 <nonum>1.</nonum>
 
 Hvorhen? - Fortvivlede, hvorhen? -
@@ -6807,10 +6975,11 @@ Iil, før hans Torden rammer! -
 Hvis ei - gaae! - styrt dig blind og fræk,
 I evigt Nag, og Skam, og Skræk,
 Og uafseelig Jammer! -
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald1999021804">
+<text id="ewald1999021804">
 <head>
    <title>Claus Rimers Gravskrift</title>
    <toctitle>Claus Rimers Gravskrift</toctitle>
@@ -6822,6 +6991,7 @@ Og uafseelig Jammer! -
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Her ligger Claus
 Blandt andet Snaus:
 Hans Krop er Slim,
@@ -6837,10 +7007,11 @@ Han gik til Gravs:
 Derfor skal paa
 Han Liigsteen staae:
 <i>In fine laus.</i>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald2005052117">
+<text id="ewald2005052117">
 <head>
    <title>Til min M** paa hans Broders Fødselsdag</title>
    <subtitle>(1780)</subtitle>
@@ -6849,6 +7020,7 @@ Han Liigsteen staae:
    <keywords>lejlighedsdigtning</keywords>
 </head>
 <body>
+<poetry>
 Troe mig, Damon: Vor Siel har sit bestemte Maal,
 Som vort Legem af Støv - Mennesket aabner vel
 Altid graadigt sit Bryst - troer det et bundløst Svælg,
@@ -6943,11 +7115,12 @@ Ofte - Heldige Tre! - Heldigste Pythias! -
 Ofte strømme Din Dag, herlig og blid, som nu,
 Ned fra Glædernes Veld! - ofte opfylde den,
 Din udvidede Barm! - evig, som nu, for stor,
-Til min Læbe - og til kunstige Harpers Lyd! - 
+Til min Læbe - og til kunstige Harpers Lyd! -
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewald1999030203">
+<text id="ewald1999030203">
 <head>
    <title>Til min M***</title>
    <subtitle>(1780)</subtitle>
@@ -6964,6 +7137,7 @@ Til min Læbe - og til kunstige Harpers Lyd! -
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Sværdets Hvinen og Skraldet af Skiolde
 Tvinger nogle til Sang, og din Vellyst,
 Biarkemaalet og Nornernes Hilsen,
@@ -7029,10 +7203,11 @@ Viisdoms flammende Ven, o Du Jordens
 Elsker! Derfor, min ædelste Moltke
 Fylder Du mægtig mit Bryst, og min Harpes
       Sittrende Stræng.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ewaldandrea9">
+<text id="ewaldandrea9">
 <head>
    <title>Udrust dig, Helt fra Golgotha</title>
    <toctitle>Udrust dig, Helt fra Golgotha</toctitle>
@@ -7045,6 +7220,7 @@ Fylder Du mægtig mit Bryst, og min Harpes
    <keywords>salme</keywords>
 </head>
 <body>
+<poetry>
 1
 Udrust dig, Helt fra Golgotha!
   Løft høit dit røde Skiold;
@@ -7068,8 +7244,9 @@ O Herre! forund mig Liise og Roe;
   Men revser du mig med Smerte,
 Da lær mig at taale - at bede - og troe,
   Og JESUS opfylde mit Hierte.
+</poetry>
 </body>
-</poem>
+</text>
 </content>
 </section>
 </workbody>

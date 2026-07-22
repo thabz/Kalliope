@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="reckee" status="incomplete" type="poetry">
 <workhead>
    <title>Andre digte</title>
-   <year>?</year>
 </workhead>
 <workbody>
 
-<poem id="reckee2001102301">
+<text id="reckee2001102301">
 <head>
    <title>Af Bertran de Born</title>
    <toctitle>Af Bertran de Born</toctitle>
@@ -19,6 +17,7 @@
    <!-- Fra Billen -->
 </head>
 <body>
+<poetry>
 Vaagn af din Slummer, min deilige Brud,
        Hør Strengene tone!
 Stjernerne blinke paa Himmelens Skrud,
@@ -42,8 +41,9 @@ Ikke mig lyster den skummende Viin
 Bring mig din Rosenkind, fager og fiin,
        Læg den til min!
 Hid er jeg fløiet med Ild under Vinge!
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

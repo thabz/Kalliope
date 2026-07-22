@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1649" author="lovelace" status="incomplete" type="poetry">
 <workhead>
    <title>Lucasta. Epodes, Odes, Sonnets, Songs, &amp;c.</title>
    <year>1649</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="lovelace2000082901">
+<text id="lovelace2000082901">
 <head>
    <title>To Lucasta. Going Beyond the Warres</title>
    <toctitle>To Lucasta. Going Beyond the Warres</toctitle>
@@ -18,6 +16,7 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
   I.
 
 Tell me not, (sweet,) I am unkinde,
@@ -38,7 +37,8 @@ Yet this inconstancy is such,
    As you too shall adore;
 I could not love thee, dear, so much,
    Lov'd I not Honour more.
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

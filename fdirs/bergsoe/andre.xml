@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="bergsoe" status="incomplete" type="poetry">
 <workhead>
    <title>Andre digte</title>
-   <year>?</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="bergsoe2001121601">
+<text id="bergsoe2001121601">
 <head>
    <title>Prolog</title>
    <toctitle>Prolog</toctitle>
@@ -22,6 +19,7 @@
    <keywords>rom</keywords>
 </head>
 <body>
+<poetry>
 Den blanke Vaarsol lyser over Strande,
 Det unge Løv har nys sig foldet ud,
 Og tusind Fuglerøster bære Bud
@@ -68,10 +66,11 @@ Om de skal visne, slængte hen i Gruset,
 Hvad eller være Reisekrans paa Huset.
 
                Mai 1866.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="bergsoe2002022501">
+<text id="bergsoe2002022501">
 <head>
    <title>I Dalens Grød en Skytte laae</title>
    <toctitle>I Dalens Grød en Skytte laae</toctitle>
@@ -85,16 +84,18 @@ Hvad eller være Reisekrans paa Huset.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 I Dalens Grød en Skytte laae,
 Løvhytten er en Kilde.
 Dens Væg var Tag, dens Leer var Straa,
 Dens Regn var Hoser vilde.
 Dens Leiers Mod var Fattigdom;
 Dog var han flad, thi han - var krum.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="bergsoe2002050901">
+<text id="bergsoe2002050901">
 <head>
    <title>Aakande</title>
    <toctitle>Aakande</toctitle>
@@ -106,6 +107,7 @@ Dog var han flad, thi han - var krum.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Du, min stille Lotusblomst, fra Skovsøens Rand,
 du Svane, som paa Bølgen dig vugger,
 sig, synker du om Natten til Drømmenes Land?
@@ -115,7 +117,8 @@ Er det derfor, du sænker dig i Skovdybets Væld,
 naar Aftenstjernen over dig blinker?
 Ak aaben mig dit Bæger blot en eneste Kvæld,
 det er mere end Drømmen, som dig vinker.
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

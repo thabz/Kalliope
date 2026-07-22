@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="hoeghguldbergf" status="incomplete" type="poetry">
 <workhead>
    <title>Andre digte</title>
-   <year>?</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="hoeghguldbergf2017092001">
+<text id="hoeghguldbergf2017092001">
 <head>
    <title>Candidaten</title>
    <firstline>Gud ske Tak! Det er endt! Attestatsen fik jeg omsider</firstline>
@@ -19,6 +16,7 @@
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
     <nonum><small>Merkt, Christen! heilig ist des Priesters Amt!</small></nonum>
     <nonum><small>Wer nicht den wahren Priester ehrt, der ehrt</small></nonum>
     <nonum><small>auch nicht den Altar nicht des Altars Gott.</small></nonum>
@@ -192,10 +190,11 @@ Seent, naar jeg mægter ei meer ved ofrende Fester at messe,
     eller i Hjemmet at see selv til min Ager og Stald,
 fare med Fred jeg bort! og hvile sig Hyrden i Graven
     tæt ved hans elskede Faar! Amen! Det skee! ja, det skee!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hoeghguldbergf2017092002">
+<text id="hoeghguldbergf2017092002">
 <head>
    <title>Assistentskirkegaarden</title>
    <firstline>Hil dig, de lykkelige Dødes Hjem!</firstline>
@@ -206,6 +205,7 @@ fare med Fred jeg bort! og hvile sig Hyrden i Graven
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
     <nonum><small><wrap>Sehen Sie gen Himmel, Gottes Sternenschrift, die Urkunde unsrer Unsterblichkeit, die glänzende Charte unsrer weitern Wallfahrt! Wo endet das Welltall? Und warum kommen von dorther vom fernsten Stern zu uns Stralen hinunter? Warum sind den Menschen die Blicke und der flammende Flug unsterblicher Hoffnungen gegeben? Warum deckt uns Gott, wenn wir Tagüber vom Stral der Sonne ermattet und an unsern Staubklump gefesselt waren, Nachts dieses hohe Gefilde unendlicher ewigen Aussichten auf?</wrap></small></nonum>
     <nonum><right>Herder.</right></nonum>
 
@@ -287,7 +287,7 @@ hver fordumglade Stund, der vender ei tilbage!
     Nei! vækker Tanken om den endte Qval
 og Evighedens Løn for bittre Dage!
 
-    Hist kommer skridende vemodigt frem 
+    Hist kommer skridende vemodigt frem
 i Liigfærds sorte Dragt en Venneskare.
     Den følger Broderen til Gravens Hjem,
 hvis mørke Bred kun Glimt af Haab opklare.
@@ -320,21 +320,21 @@ med Sangens Vemod over Graven svæver:
         Alt, hvad lever, skal forsvinde.
             Jordens Herre, Mand! til Dig
             Lovens Dødsbud strækker sig.
-        
+
             O! men intet Skabt forgaaer,
             Liv igjen af Død opstaaer.
         Liljen faldt! en Ny fremtræder:
         yngre Løv snart Skoven klæder:
             og den Grav, der lukker sig,
             kun som Vugge gjemmer Dig.
-        
+
             Morgnen straaler, Barnet fro
             vaagner efter natlig Ro.
         Evighedens Morgen smiler,
         Graven aabnes, hvor Du hviler,
             Dødningklædet synker ned,
             nyskabt hæves Du til Fred.
-        
+
             Ti da, Klage! Stands da, Graad!
             Viist og godt er Herrens Raad.
         Snart, for Evighed vi møde
@@ -492,33 +492,33 @@ og blidere Du føle skal Din Smerte.
             som det for evigt var forbi!
             Lykønsker før den Vandringsmand,
             der atter hilser Fædreland!
-        
+
         Der er et Land, hvor Aander mødes,
             hvor alle vore Kjere boe.
         Det er det Land, hvor Qval forsødes,
             og Hjertet først har evig Ro.
             O stirrer mod dets Kyster hen!
             Did vandre vi til tabte Ven.
-        
+
         Men Taage staaer om Landets Kyster,
             og tvilfuld Taage dækker dem.
         Og det vor ømme Sjel mistrøster,
             saa fjernt at see de Kjeres Hjem.
             Da græde vi for tabte Ven,
             som vi ham aldrig fandt igjen.
-        
+
         Gak ud ved Nat til Vennens Hvile,
             hvor Ro til Tanker møder Dig!
         Dit Øie blidt mod Graven smile!
             Din Sjel til Himlen hæve sig!
             Den Længsel, Du da føler der,
             spaaer Dig: at hisset Hjemmet er.
-        
+
         Alt saae vi mange Dage rinde,
             end følge føie Timer dem.
         Snart skal den mørke Taage svinde,
             snart øine vi de Kjeres Hjem.
-            O stirrer mod dets Kyster hen! 
+            O stirrer mod dets Kyster hen!
             Did vandre vi til tabte Ven!
 
     O! nyder jeg en Digters største Løn?
@@ -585,7 +585,7 @@ hver Ædlings Grav skal meer end Templet helligt være,
 som Dannemø med Dyd og Pligters Ære!
 
     Her Gravens Hvile være dobbelt sød!
-Her hviler Carstens<note>Konferensråd Adolph Gottfried Carstens (1712/13-1795)</note>: Han, hvis fromme Hjerte 
+Her hviler Carstens<note>Konferensråd Adolph Gottfried Carstens (1712/13-1795)</note>: Han, hvis fromme Hjerte
     i Suk og Klager ei udbrød,
 skjøndt hver hans Dag var fyldt med bitter Smerte.
     Vor Tabte! Du, som gik ad Banen daadfuld hen!
@@ -630,7 +630,7 @@ Ham lig i Trofasthed jeg Ingen meer skal finde!
     Kjek fulgte han som Yngling og som Mand
 den aarlesvorne Viisdoms Fane.
     Og Sandhed, ene Sandhed søgte han
-ved hvert et møisomt Fjed paa trange Bane. 
+ved hvert et møisomt Fjed paa trange Bane.
     Saa redebon han stod til Brodergavn,
 var blid, beskeden, seen til Dom, retfærdig.
     Og Sandhedsvennens hæderlige Navn
@@ -827,7 +827,7 @@ Din rosenklædte Høi den Tilflugt være,
 bespeide Kunstens Krav og Kunstens Ære.
 
     Men end en Digters Grav! - Her slumrer Du,
-vort Norges Storm!<note>Digteren <a poet="storm">Edvard Storm (1749–94)</a>.</note> og Fjeldets Muser græde. 
+vort Norges Storm!<note>Digteren <a poet="storm">Edvard Storm (1749–94)</a>.</note> og Fjeldets Muser græde.
     Kun til at fremme Held stod fast Dit Hu;
 og Dydens Ven Dit Støv med Taarer væde!
     Paa Festens Dag i Templet henryktglad
@@ -969,7 +969,7 @@ og smilende den hører:
     men Stjernerne hviske saa blidt til mig ned:
     "see! her er Dit Fædreland! her er Din Fred!"
         og Taaren ei længere rinder.
-    
+
     Elsk, Sjel! kun det Hjem, du forlod,
         hvis Minde dig dunkelt omsvæver!
     Fuldend dog din trættende Valfart med Mod!
@@ -978,7 +978,7 @@ og smilende den hører:
     som adler ved Kummer til renere Lyst;
     og ei det ham sønligen elskende Bryst
         i Døden hans Øie forlader.
-    
+
     Den altid gjensmilende Vaar,
         hver Morgen, hvis Komme dig fryder,
     hvert Frø, der af Jorden til Livet opstaaer,
@@ -987,7 +987,7 @@ og smilende den hører:
     Hvad er vel mod dig selv det skjønneste Løv?
     Og fryd dig! det er kun den fængslende Støv,
         der eengang af Gravene dækkes!
-    
+
     Hver Dagning, som rykker dig frem,
         forøge din barnlige Længsel!
     Den anende Drøm om et ædlere Hjem
@@ -1009,10 +1009,11 @@ saa Dødens Nat for Livets Dagning viger.
 Han vaagner ei, for meer at bløde;
     han vaagner, for med Fryd at skue hvi han leed.
 Held Eder! Held, I lykkelige Døde!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hoeghguldbergf2001071501">
+<text id="hoeghguldbergf2001071501">
 <head>
    <title>Af fyldte Bægre vinkes vi</title>
    <subtitle>Mel.: En Prinds jeg været har i Dag.</subtitle>
@@ -1027,6 +1028,7 @@ Held Eder! Held, I lykkelige Døde!
    <keywords>drikkevise</keywords>
 </head>
 <body>
+<poetry>
 Af fyldte Bægre vinkes vi;
 o Venner! iler dem i møde!
 vor Glædskabs Tid er snart forbi,
@@ -1061,10 +1063,11 @@ for Børnebørn vi presse den,
 vi lærer dem med Lyst at klinke;
 og frydes, naar med bredfuldt Maal
 de tømme Oldefædres Skaal!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hoeghguldbergf2001071502">
+<text id="hoeghguldbergf2001071502">
 <head>
    <title>End smiler Glæden over hele Jorden</title>
    <subtitle>Mel.: Hvor skjønt sin Pligt osv.</subtitle>
@@ -1079,6 +1082,7 @@ de tømme Oldefædres Skaal!
    <keywords>drikkevise</keywords>
 </head>
 <body>
+<poetry>
 End smiler Glæden over hele Jorden,
 og fylder blid hver ædel Barm!
 kun sjelden lyder vrede Torden,
@@ -1120,10 +1124,11 @@ Hver Skyfri Dag er dig en Vinding;
 den skjuler, hvad du fordum leed.
 Hver Fryd, dig vinker, kom fra Gud;
 glad følge du dens Vennebud!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hoeghguldbergf2001071503">
+<text id="hoeghguldbergf2001071503">
 <head>
    <title>Til Glæde! til Glæde!</title>
    <toctitle>Til Glæde! til Glæde!</toctitle>
@@ -1137,6 +1142,7 @@ glad følge du dens Vennebud!
    <keywords>drikkevise</keywords>
 </head>
 <body>
+<poetry>
 Til Glæde! til glæde!
 Den fylder hver levende Barm.
 Og hvi skal da Mennesket Græde,
@@ -1172,10 +1178,11 @@ Naar Venner fra Venner bortvandre,
 og søge, men finde dem ei,
 fro mindes de da med hverandre,
 vi gik den nusmilende Vei!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hoeghguldbergf2001071504">
+<text id="hoeghguldbergf2001071504">
 <head>
    <title>Ud til Kampen os Flaskerne byde</title>
    <toctitle>Ud til Kampen os Flaskerne byde</toctitle>
@@ -1189,6 +1196,7 @@ vi gik den nusmilende Vei!
    <keywords>drikkevise</keywords>
 </head>
 <body>
+<poetry>
 Ud til Kampen os Flaskerne byde,
 ikke strækkes I stridvante Mænd!
 Frem for Druernes Fængsel at bryde,
@@ -1214,7 +1222,8 @@ vi med Hæder og Palmerne hjem.
 vore Fjender vi mandigen møde,
 og den ordnede Hær
 for de ravende Helte maa bløde. :|:
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

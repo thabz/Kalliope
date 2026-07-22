@@ -2,11 +2,10 @@
 <kalliopework id="andre" author="boeghn" status="incomplete" type="poetry">
 <workhead>
    <title>Andre digte</title>
-   <year>?</year>
 </workhead>
 <workbody>
 
-<poem id="boeghn2019101201">
+<text id="boeghn2019101201">
 <head>
    <title>Solnedgang</title>
    <subtitle>Efter Heine</subtitle>
@@ -16,6 +15,7 @@
    </notes>
 </head>
 <body>
+<poetry>
 En Frøken stod med Taare
 ved Havets stejle Bred;
 det rørte hende saa saare,
@@ -25,8 +25,9 @@ at Solen den gik ned.
 vandrer jo Solen hen;
 min Frøken, vær De blot rolig!
 Den kommer i Morgen igen!''
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

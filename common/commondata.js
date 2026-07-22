@@ -1,35 +1,26 @@
-// @flow
-//import type { Country } from './types.js';
-
 // All our images should have scaled versions with the following widths
-module.exports.availableImageWidths = [
-  100,
-  150,
-  200,
-  250,
-  300,
-  400,
-  500,
-  600,
-  800,
+export const availableImageWidths = [
+  100, 150, 200, 250, 300, 400, 500, 600, 800,
 ];
 
 // Det er vigtigt at webp kommer før jpg, da Chrome vælger den første source
 // den kender.
-module.exports.availableImageFormats = ['webp', 'jpg'];
+export const availableImageFormats = ['jpg'];
 
-module.exports.fallbackImagePostfix = '-w800.jpg';
+export const fallbackImagePostfix = '-w800.jpg';
 
-const countries = [
-//const countries: Array<{
-//  code: Country,
-//  adjective: { da: string, en: string },
-//}> = [
+export const countries = [
+  //const countries: Array<{
+  //  code: Country,
+  //  adjective: { da: string, en: string, fr: string, de: string },
+  //}> = [
   {
     code: 'dk',
     adjective: {
       da: 'danske',
       en: 'Danish',
+      fr: 'danois',
+      de: 'dänische',
     },
   },
   {
@@ -37,6 +28,8 @@ const countries = [
     adjective: {
       da: 'engelske',
       en: 'English',
+      fr: 'anglais',
+      de: 'englische',
     },
   },
   {
@@ -44,6 +37,8 @@ const countries = [
     adjective: {
       da: 'tyske',
       en: 'German',
+      fr: 'allemands',
+      de: 'deutsche',
     },
   },
   {
@@ -51,6 +46,8 @@ const countries = [
     adjective: {
       da: 'franske',
       en: 'French',
+      fr: 'français',
+      de: 'französische',
     },
   },
   {
@@ -58,6 +55,8 @@ const countries = [
     adjective: {
       da: 'svenske',
       en: 'Swedish',
+      fr: 'suédois',
+      de: 'schwedische',
     },
   },
   {
@@ -65,6 +64,8 @@ const countries = [
     adjective: {
       da: 'norske',
       en: 'Norwegian',
+      fr: 'norvégiens',
+      de: 'norwegische',
     },
   },
   {
@@ -72,6 +73,8 @@ const countries = [
     adjective: {
       da: 'italienske',
       en: 'Italian',
+      fr: 'italiens',
+      de: 'italienische',
     },
   },
   {
@@ -79,6 +82,8 @@ const countries = [
     adjective: {
       da: 'amerikanske',
       en: 'North American',
+      fr: 'nord-américains',
+      de: 'nordamerikanische',
     },
   },
   {
@@ -86,13 +91,24 @@ const countries = [
     adjective: {
       da: 'andre',
       en: 'other',
+      fr: 'autres',
+      de: 'andere',
     },
   },
 ];
 
-module.exports.countries = countries;
+export const backgroundLinkColor = 'hsla(353, 20%, 85%, 1)';
+export const lightLinkColor = '#9C686C';
+export const lightTextColor = '#767676';
+export const linkColor = 'hsla(353, 43%, 38%, 1)';
 
-module.exports.backgroundLinkColor = 'hsla(353, 20%, 85%, 1)';
-module.exports.lightLinkColor = '#9C686C';
-module.exports.lightTextColor = '#767676';
-module.exports.linkColor = 'hsla(353, 43%, 38%, 1)';
+export default {
+  availableImageWidths,
+  availableImageFormats,
+  fallbackImagePostfix,
+  countries,
+  backgroundLinkColor,
+  lightLinkColor,
+  lightTextColor,
+  linkColor,
+};

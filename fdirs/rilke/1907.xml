@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1907" author="rilke" status="incomplete" type="poetry">
 <workhead>
    <title>Neue Gedichte</title>
    <year>1907</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="rilke2000031711">
+<text id="rilke2000031711">
 <head>
    <title>Römische Fontäne</title>
    <subtitle>Borghese</subtitle>
@@ -20,6 +18,7 @@
    <keywords>rom,sonnet</keywords>
 </head>
 <body>
+<poetry>
 Zwei Becken, eins das andre übersteigend
 aus einem alten runden Marmorrand,
 und aus dem oberen Wasser leis sich neigend
@@ -37,7 +36,8 @@ nur manchmal träumerisch und tropfenweis
 sich niederlassend an den Moosbehängen
 zum letzten Spiegel, der sein Becken leis
 von unten lächeln macht mit Übergängen.
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1833" author="brooks" status="incomplete" type="poetry">
 <workhead>
     <title>Zóphiël</title>
@@ -7,12 +6,13 @@
 </workhead>
 <workbody>
 
-<poem id="brooks2019090901">
+<text id="brooks2019090901">
 <head>
    <title>Song of Egla</title>
    <firstline>Day in melting purple dying</firstline>
 </head>
 <body>
+<poetry>
 Day in melting purple dying,
 Blossoms all around me sighing,
 Fragrance from the lilies straying,
@@ -47,8 +47,9 @@ Once, in caution, I could fly thee.
 Now I nothing could deny thee.
     In a look if death there be,
     Come, and I will gaze on thee!
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

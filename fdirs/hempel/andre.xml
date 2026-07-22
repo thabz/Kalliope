@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="hempel" status="incomplete" type="poetry">
 <workhead>
    <title>Andre digte</title>
-   <year>?</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="hempel2001052701">
+<text id="hempel2001052701">
 <head>
    <title>At al Verdens Levemaade</title>
    <subtitle>Mel. Jeg af Vand slet ikke holder</subtitle>
@@ -24,6 +21,7 @@
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
+<poetry>
 At al Verdens Levemaade
 har sit Udspring fra det Vaade,
 trænger til Beviis ei først.
@@ -58,7 +56,8 @@ Kuren er mintro ! probat:
 Seculis in Seculorum,
 naar Vi synge Kakkelorum,
 døden ei faaer Geisten fat.
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

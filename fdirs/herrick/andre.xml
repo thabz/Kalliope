@@ -2,16 +2,16 @@
 <kalliopework id="andre" author="herrick" status="incomplete" type="poetry">
 <workhead>
    <title>Andre digte</title>
-   <year>?</year>
 </workhead>
 <workbody>
 
-<poem id="herrick2019090301">
+<text id="herrick2019090301">
 <head>
    <title>To Anthea, Who May Command Him Any Thing</title>
    <firstline>Bid me to live, and I will live</firstline>
 </head>
 <body>
+<poetry>
 Bid me to live, and I will live
 Thy Protestant to be;
 Or bid me love, and I will give
@@ -41,16 +41,18 @@ E'en death, to die for thee.
 The very eyes of me;
 And hast command of every part,
 To live and die for thee.
-    
-</body>
-</poem>
 
-<poem id="herrick2019090601">
+</poetry>
+</body>
+</text>
+
+<text id="herrick2019090601">
 <head>
     <title>To Daffadils</title>
     <firstline>Fair Daffadils, we weep to see</firstline>
 </head>
 <body>
+<poetry>
 Fair Daffadils, we weep to see
 You haste away so soon;
 As yet the early-rising sun
@@ -71,9 +73,10 @@ As your hours do, and dry
 Away,
 Like to the summer's rain;
 Or as the pearls of morning's dew,
-Ne'er to be found again.    
+Ne'er to be found again.
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

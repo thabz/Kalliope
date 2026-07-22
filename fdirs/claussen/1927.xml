@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1927" author="claussen" status="complete" type="poetry">
 <workhead>
    <title>Titania holdt Bryllup</title>
    <year>1927</year>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 
 <workbody>
@@ -15,7 +13,7 @@
 </head>
 <content>
 
-<poem id="claussen2005052401">
+<text id="claussen2005052401">
 <head>
    <title>Mordet i Værtshuset</title>
    <subtitle>eller Kvinden i dit Liv</subtitle>
@@ -23,6 +21,7 @@
    <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
+<poetry>
 
 <i>Personer:</i>
 <sc>Hotelværten</sc>
@@ -66,7 +65,7 @@ men de vil eje hele Byttet hver især. <i>(Ud)</i>
 <sc>Værten</sc> <i>(ind)</i>
 Kom straks med Nøglerne!
 
-<sc>Pigen</sc> 
+<sc>Pigen</sc>
                            Betal først Deres Gæld
 til mig. Saa kan De slaa den Pranger frit ihjel!
 <i>(Ud)</i>
@@ -98,7 +97,7 @@ Ih, den har Herren tjent i Dag, mens han var væk!
 <sc>Prangeren</sc>
 Ja, Per, i Hestehandel kan jeg pudse dem.
 Nu gaar Knud Dunk, min Konkurrent, fra Hus og Hjem.
-	 
+
 <sc>Per</sc> <i>(indsmigrende)</i>
 Jeg er saa ung endnu, jeg vilde gerne frem.
 
@@ -210,7 +209,7 @@ som knuser, hvad De træffer mellem Deres Knor,
 men bliver mere fattig for hvert heldigt Mord!
 
 <sc>Værten</sc>
-Elisabeth! 
+Elisabeth!
 
 <sc>Pigen</sc>
 De tror, at Kys og Sukkergodt betaler Gæld.
@@ -323,7 +322,7 @@ Saa lad os se, om Posen er i god Behold.
 <sc>Pigen</sc> <i>(følger efter, forbitret)</i>
 Han var en dygtig Hestepranger, stor og kæk.
 Hvem gav dig Lov at myrde ham, mens jeg var væk?
-Din skidne Tyv, hvad angaar dig hans Pengesæk? 
+Din skidne Tyv, hvad angaar dig hans Pengesæk?
 
 <sc>Lars</sc> <i>(vil ud til venstre, truende)</i>
 En Mand, som slaar ihjel, forandres paa en Studs.
@@ -362,7 +361,7 @@ ELLEVTE SCENE
 I Lovens Navn, vi arresterer Dem for Gæld.
 
 <i>Mørke paa Scenen.</i>
-<i>Tableau i Baggrunden: To Betjente ses i Transparent</i> 
+<i>Tableau i Baggrunden: To Betjente ses i Transparent</i>
 TÆPPE
 
 
@@ -428,7 +427,7 @@ Og Stuepigen Elsebeth?
 
 <sc>Anden</sc>
 Lad se dit Guld - du stakkels Nar - dit fromme Svin!
-Skal du slaa Folk ihjel? Slip Sækken, eller føl!     
+Skal du slaa Folk ihjel? Slip Sækken, eller føl!
 Din ækle Tyv, jeg sparker dig i denne Pøl!
 <i>(Hamrer et Spiger gennem hans Hoved)</i>
 
@@ -450,16 +449,18 @@ Men jeg vil heller være Kvinden i dit Liv.
 Da Per er død, jeg følger dig som Ægteviv!
 
 TÆPPE
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2005060201">
+<text id="claussen2005060201">
 <head>
    <title>Karnevallet</title>
    <firstline>Der hvirvled hvide Driver ind ad krogetgamle Stræder</firstline>
    <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
+<poetry>
 		Saa sandt hjælp' mig Gud i Himmerig,
 		saa visselig er hun Mø for mig.
 		Foruden én Gang mig lyste,
@@ -636,16 +637,18 @@ da laa der endnu i mit bogfyldte Rum
 en Forventningens Duft fra i Gaar - saa dum.
 Og jeg lallede skamfuld: ,,Det mishager mig!''
 Og vendte min Pande den modsatte Vej.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2005060202">
+<text id="claussen2005060202">
 <head>
    <title>Besøget i Himlen</title>
    <firstline>Som jeg kom over Bakken, saa' jeg det milebrede</firstline>
    <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
+<poetry>
 <nonum><i>I</i></nonum>
 Som jeg kom over Bakken, saa' jeg det milebrede
 Kornbølge-Højland uden Pletter af Muld
@@ -855,8 +858,9 @@ Hils mine Børn, jeg elsker dem som Kunstnere, der spiller
 snart Violin, snart Bas - Bratsj, Horn, Obo, Skalmej.
 Det nye morer mig: Vers, Tragedier, Vaudeviller.
 Jeg støtter alle Retninger - enhver er god for sig!''
+</poetry>
 </body>
-</poem>
+</text>
 </content>
 </section>
 
@@ -866,13 +870,14 @@ Jeg støtter alle Retninger - enhver er god for sig!''
 </head>
 <content>
 
-<poem id="claussen2005060203">
+<text id="claussen2005060203">
 <head>
    <title>Drinks</title>
    <firstline>Jeg havde Bourgogne, jeg har det ej mer</firstline>
    <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
+<poetry>
 Jeg havde Bourgogne, jeg har det ej mer . . .
 Den røde Vin er en født Kavaler,
 som er taktfuld og fin og har gode Ideer.
@@ -915,17 +920,19 @@ Hos Lorden af Whisky er Hvile og Ro.
 Hvad kan vi ej elske og haabe og tro?
 Paa Tro, Haab og Kærligheds Skib med Tremaster
     vi sejle og ro
-og stedes for Døden i vaade Sko. 
+og stedes for Døden i vaade Sko.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2005060204">
+<text id="claussen2005060204">
 <head>
    <title>Vin i Huset</title>
    <firstline>En Flaskekarl med Kurv og Skødeskind</firstline>
    <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
+<poetry>
 En Flaskekarl med Kurv og Skødeskind
 i Skumring til en Frue kommer ind.
 ,,Hvor kan jeg stille Vinen, gode Dame?''
@@ -957,10 +964,11 @@ han blev tilfreds, men Fruen mest tilfreds.
 En Flaskekarl med Kurv og Skødeskind
 i Skumring skulde ikke komme ind.
 Nu ved jeg dog, at vi har Vin i Huset.''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2005060205">
+<text id="claussen2005060205">
 <head>
    <title>Skæmte-Vise</title>
    <subtitle>Til Carl Nielsen</subtitle>
@@ -968,6 +976,7 @@ Nu ved jeg dog, at vi har Vin i Huset.''
    <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
+<poetry>
 Hønsefødder og Gulerødder
 		det elsker vi af Vane.
 Sælger du din Strengeleg
@@ -1003,10 +1012,11 @@ Spil, du Spillemand, som har Sange,
 		og lad de Onde skele!
 Livet klinger i dine Noder
 		og dermed klinger det Hele.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2005060210">
+<text id="claussen2005060210">
 <head>
    <title>Udsat for Kritik</title>
    <subtitle>Et Prosadigt</subtitle>
@@ -1014,6 +1024,7 @@ Livet klinger i dine Noder
    <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
+<poetry>
 Det er naturligvis ikke den allersmukkeste Hat,
 sagde Karl bevæget og saa' i sin Hat.
 Men den er dog alligevel ganske net,
@@ -1030,9 +1041,10 @@ Men jeg har nu levet af det, og det har ogsaa ernæret min Kone.
 Det er naturligvis ikke den allersmukkeste Kone,
 sagde Karl bevæget og saa' i sin Hat.
 Men hun er jo dog ganske net, og jeg holder af hende.
-Jeg har ingen anden. 
+Jeg har ingen anden.
+</poetry>
 </body>
-</poem>
+</text>
 </content>
 </section>
 
@@ -1042,13 +1054,14 @@ Jeg har ingen anden.
 </head>
 <content>
 
-<poem id="claussen2005060206">
+<text id="claussen2005060206">
 <head>
    <title>Fyraften</title>
    <firstline>Læredrenge, hæse Stemmer</firstline>
    <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
+<poetry>
 Læredrenge, hæse Stemmer,
 Snak, Tobak og meget Spyt,
 Barnepiger er der ogsaa,
@@ -1077,7 +1090,7 @@ som hun ikke prutter om.
 Poul er kun en grøn Latiner,
 en Tyran paa femten Aar,
 og han synes, det er Spanien,
-Alexandras brune Haar. 
+Alexandras brune Haar.
 
 Og den unge Herre synger,
 naar hun smutter ham forbi,
@@ -1143,16 +1156,18 @@ Læredrenge, hæse Stemmer,
 Snak, Tobak og meget Spyt.
 Barnepiger er der ogsaa,
 én er dristig, én forknyt.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2005060207">
+<text id="claussen2005060207">
 <head>
    <title>Frugtbarhedens Tog</title>
    <firstline>Den søde, forelskede Blomst</firstline>
    <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
+<poetry>
 Den søde, forelskede Blomst
 og Rankerne, der kror sig og gror
 ud over alle Mure og Ruiner,
@@ -1176,16 +1191,18 @@ som følte alle Væsner, Ting og Planter
 et varmt, et Frugtbarhedens Gys.
 Snart skal det store Bacchos-Tog fornyes,
 og Dionysos ride paa sin Panter.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2005060208">
+<text id="claussen2005060208">
 <head>
    <title>Bevidsthedens Grænser</title>
    <firstline>Dit Hoved siger: Jeg er Aanden</firstline>
    <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
+<poetry>
 Dit Hoved siger: Jeg er Aanden
 og jeg er redebon og nær forhaanden.
 Man viser mig et Kim til noget stort, -
@@ -1203,16 +1220,18 @@ i Kløgtens Spil paa Pandens Høje,
 mens jeg gaar om med ubelyste Sanser
 og paa hver Finger ønsker mig et Øje.
 Ak, hvor de dumme Sanser støje!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2005060209">
+<text id="claussen2005060209">
 <head>
    <title>Ak, den unge Svæven</title>
    <firstline>Ak, den unge Svæven, ak, den lange Favnen</firstline>
    <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
+<poetry>
 Ak, den unge Svæven, ak, den lange Favnen
 af den korte Drøm om evigvarig Lykke,
 ak, den sære Sværmen, Kyssen, Savnen!
@@ -1272,23 +1291,26 @@ Store, milde Gud, nu faar jeg Ris paa - Bagen!
 Dumme Pigebørn og tossede Studenter
 stoler mer paa Lykken end Forstanden;
 men de kloge ser ej paa hinanden.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section>
 
-<prose id="claussen2005060501">
+<text id="claussen2005060501" skip-index="true">
 <head>
    <title>Efterskrift</title>
    <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
+<prose>
 Af de tolv Digte, som her for første Gang opstaar i Bogform, er ,,Karnevallet'' og ,,Besøget i Himlen'' Ungdomsarbejder, hvoraf det ene fremkom i det i sin Tid meget ansete norske Tidsskrift ,,Samtiden'', mens det andet har staaet i et Dagblad, hvis Tendenser paa det Tidspunkt meget lidt tjente til at sætte slige forkyndende Vers i det rette Lys. Selv stolede jeg paa Verset som paa Thors Hammer. ,,Mordet i Værtshuset'' ser Dagen paa disse Sider og har sin Plads her, hvad enten man vil anse det for et Livsopgør eller en Satire i en dionysisk Stund.
 
     S. C.
-</body>
 </prose>
+</body>
+</text>
 
 </workbody>
 </kalliopework>

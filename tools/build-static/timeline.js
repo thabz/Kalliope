@@ -1,85 +1,102 @@
-const {
-  safeMkdir,
-  writeJSON,
+import { safeMkdir, writeJSON, htmlToXml } from '../libs/helpers.js';
+import { isFileModified } from '../libs/caching.js';
+import {
+  compareNormalizedDate,
+  normalizeTimelineDate,
+} from '../../common/dates.js';
+import {
+  safeGetAttr,
+  safeGetInnerXML,
+  getChildByTagName,
   loadXMLDoc,
-  htmlToXml,
-} = require('../libs/helpers.js');
-const { isFileModified } = require('../libs/caching.js');
-const { safeGetAttr } = require('./xml.js');
-const { get_picture } = require('./parsing.js');
+  getElementsByTagName,
+} from './xml.js';
+import { get_picture } from './parsing.js';
+import { mapLimit } from './concurrency.js';
 
-// Accepterer YYYY, YYYY-MM, YYYY-MM-DD og returnerer altid YYYY-MM-DD
-const normalize_timeline_date = date => {
-  if (date.length === 4 + 1 + 2 + 1 + 2) {
-    return date;
-  } else {
-    const parts = date.split('-');
-    if (parts.length === 1) {
-      parts.push('01');
-    }
-    if (parts.length === 2) {
-      parts.push('01');
-    }
-    return `${parts[0]}-${parts[1]}-${parts[2]}`;
-  }
+const normalize_timeline_date = normalizeTimelineDate;
+const compare_normalized_date = compareNormalizedDate;
+
+const sorted_timeline = (timeline) => {
+  return timeline.sort((a, b) =>
+    compare_normalized_date(a.normalized_date, b.normalized_date)
+  );
 };
 
-const sorted_timeline = timeline => {
-  return timeline.sort((a, b) => {
-    let date_a = normalize_timeline_date(a.date);
-    let date_b = normalize_timeline_date(b.date);
-    return date_b === date_a ? 0 : date_a < date_b ? -1 : 1;
-  });
-};
-
-const load_timeline = (filename, collected) => {
+const load_timeline = async (filename, collected) => {
   let doc = loadXMLDoc(filename);
   if (doc == null) {
     return [];
   }
-  return doc.find('//events/entry').map(event => {
-    const type = event.attr('type').value();
-    const date = event.attr('date').value();
-    let data = {
-      date,
-      type,
-      is_history_item: true,
-    };
-    if (type === 'image') {
-      const onError = message => {
-        throw `${filename}: ${message}`;
+  return mapLimit(
+    getElementsByTagName(doc, 'entry'),
+    async (event) => {
+      const type = safeGetAttr(event, 'type');
+      const date = safeGetAttr(event, 'date');
+      let data = {
+        date,
+        type,
+        is_history_item: true,
       };
-      const pictureNode = event.get('picture');
-      if (pictureNode == null) {
-        onError('indeholder event med type image uden <picture>');
+      if (type === 'image') {
+        const onError = (message) => {
+          throw `${filename}: ${message}`;
+        };
+        const pictureNode = getChildByTagName(event, 'picture');
+        if (pictureNode == null) {
+          onError('indeholder event med type image uden <picture>');
+        }
+        const picture = await get_picture(
+          pictureNode,
+          '',
+          collected,
+          onError
+        );
+        data.src = picture.src;
+        data.content_lang = picture.content_lang;
+        data.lang = picture.lang;
+        data.content_html = picture.content_html;
+      } else {
+        data.content_lang = 'da';
+        data.lang = 'da';
+        const html = getChildByTagName(event, 'html');
+        data.content_html = htmlToXml(safeGetInnerXML(html).trim(), collected);
       }
-      const picture = get_picture(pictureNode, '/static', collected, onError);
-      data.src = picture.src;
-      data.content_lang = picture.content_lang;
-      data.lang = picture.lang;
-      data.content_html = picture.content_html;
-    } else {
-      data.content_lang = 'da';
-      data.lang = 'da';
-      const html = event.get('html');
-      data.content_html = htmlToXml(
-        html
-          .toString()
-          .replace('<html>', '')
-          .replace('</html>', '')
-          .trim(),
-        collected
-      );
+      return data;
     }
-    return data;
-  });
+  );
 };
 
-const build_global_timeline = collected => {
-  return load_timeline('data/events.xml', collected);
+const cover_picture = async (poetId, workId, collected) => {
+  const filename = `fdirs/${poetId}/${workId}.xml`;
+  const doc = loadXMLDoc(filename);
+  if (doc == null) {
+    return null;
+  }
+
+  const work = getChildByTagName(doc, 'kalliopework');
+  const head = getChildByTagName(work, 'workhead');
+  const pictures = getElementsByTagName(head, 'picture');
+  const pictureNode =
+    pictures.find((picture) => safeGetAttr(picture, 'type') === 'frontpage') ||
+    pictures.find((picture) => safeGetAttr(picture, 'type') === 'titlepage') ||
+    pictures[0];
+
+  if (pictureNode == null) {
+    return null;
+  }
+
+  const onError = (message) => {
+    throw `${filename}: ${message}`;
+  };
+  return get_picture(pictureNode, `/images/${poetId}`, collected, onError);
 };
 
-const build_poet_timeline_json = (poet, collected) => {
+const build_global_timeline = async (collected) => {
+  return load_timeline('content/events.xml', collected);
+};
+
+const build_poet_timeline_json = async (poet, collected) => {
   const inonToString = (inon, lang) => {
     const translations = {
       'da*in': 'i',
@@ -94,42 +111,62 @@ const build_poet_timeline_json = (poet, collected) => {
 
   let items = [];
   if (poet.type !== 'collection') {
-    collected.workids
-      .get(poet.id)
-      .filter(workId => {
-        // Vi vil ikke have underværkerne i tidslinjen
-        const work = collected.works.get(`${poet.id}/${workId}`);
-        return work.parent == null;
-      })
-      .forEach(workId => {
-        const work = collected.works.get(`${poet.id}/${workId}`);
-        if (work.year != '?') {
-          // TODO: Hvis der er et titel-blad, så output type image.
-          const workName = work.has_content
-            ? `<a work="${poet.id}/${workId}">${work.title}</a>`
-            : work.title;
-          items.push({
-            date: work.published,
-            type: 'text',
-            content_lang: 'da',
-            is_history_item: false,
-            content_html: [
-              [`${poet.name.lastname}: ${workName}.`, { html: true }],
-            ],
-          });
+    const timelineWorkIds = collected.workids.get(poet.id).filter((workId) => {
+      // Vi vil ikke have underværkerne i tidslinjen
+      const work = collected.works.get(`${poet.id}/${workId}`);
+      return work.parent == null;
+    });
+    const workItems = await mapLimit(timelineWorkIds, async (workId) => {
+      const work = collected.works.get(`${poet.id}/${workId}`);
+      if (work.year != null) {
+        const workName = work.has_content
+          ? `<a work="${poet.id}/${workId}">${work.title}</a>`
+          : work.title;
+        const coverPicture = await cover_picture(poet.id, workId, collected);
+        const contentHtml = [
+          [`${poet.name.lastname}: ${workName}.`, { html: true }],
+        ];
+        const textItem = {
+          date: work.published,
+          normalized_date: normalize_timeline_date(work.published),
+          type: 'text',
+          content_lang: 'da',
+          is_history_item: false,
+          content_html: contentHtml,
+        };
+        if (coverPicture == null) {
+          return [textItem];
         }
-      });
+        return [
+          {
+            date: work.published,
+            normalized_date: normalize_timeline_date(work.published),
+            type: 'image',
+            is_history_item: false,
+            src: coverPicture.src,
+            content_lang: coverPicture.content_lang,
+            lang: coverPicture.lang,
+            content_html: coverPicture.content_html,
+            miniature_content_html: contentHtml,
+          },
+        ];
+      }
+      return [];
+    });
+    items = items.concat([].concat(...workItems));
     if (poet.period.born.date !== '?') {
-      const place = (poet.period.born.place != null
-        ? '  ' +
-          inonToString(poet.period.born.inon, 'da') +
-          ' ' +
-          poet.period.born.place +
-          ''
-        : ''
+      const place = (
+        poet.period.born.place != null
+          ? '  ' +
+            inonToString(poet.period.born.inon, 'da') +
+            ' ' +
+            poet.period.born.place +
+            ''
+          : ''
       ).replace(/\.*$/, '.'); // Kbh. giver ekstra punktum.
       items.push({
         date: poet.period.born.date,
+        normalized_date: normalize_timeline_date(poet.period.born.date),
         type: 'text',
         is_history_item: false,
         content_lang: 'da',
@@ -138,17 +175,18 @@ const build_poet_timeline_json = (poet, collected) => {
         ],
       });
     }
-    let dead_date = null;
     if (poet.period.dead.date !== '?') {
-      const place = (poet.period.dead.place != null
-        ? ' ' +
-          inonToString(poet.period.dead.inon, 'da') +
-          ' ' +
-          poet.period.dead.place
-        : ''
+      const place = (
+        poet.period.dead.place != null
+          ? ' ' +
+            inonToString(poet.period.dead.inon, 'da') +
+            ' ' +
+            poet.period.dead.place
+          : ''
       ).replace(/\.*$/, '.'); // Kbh. giver ekstra punktum.;
       items.push({
         date: poet.period.dead.date,
+        normalized_date: normalize_timeline_date(poet.period.dead.date),
         type: 'text',
         is_history_item: false,
         content_lang: 'da',
@@ -157,26 +195,33 @@ const build_poet_timeline_json = (poet, collected) => {
         ],
       });
     }
-    let poet_events = load_timeline(
-      `fdirs/${poet.id}/events.xml`,
-      collected
-    ).map(e => {
+    let poet_events = (
+      await load_timeline(`fdirs/${poet.id}/events.xml`, collected)
+    ).map((e) => {
       e.is_history_item = false;
+      e.normalized_date = normalize_timeline_date(e.date);
       return e;
     });
     items = [...items, ...poet_events];
     items = sorted_timeline(items);
   }
   if (items.length >= 2) {
-    const start_date = normalize_timeline_date(items[0].date);
-    let end_date = normalize_timeline_date(items[items.length - 1].date);
+    const start_date = items[0].normalized_date;
+    let end_date = items[items.length - 1].normalized_date;
     if (poet.period.dead.date !== '?') {
       end_date = normalize_timeline_date(poet.period.dead.date);
     }
-    let globalItems = collected.timeline.filter(item => {
-      const d = normalize_timeline_date(item.date);
-      return d > start_date && d < end_date;
-    });
+    let globalItems = collected.timeline
+      .map((e) => {
+        e.normalized_date = normalize_timeline_date(e.date);
+        return e;
+      })
+      .filter((e) => {
+        return (
+          compare_normalized_date(e.normalized_date, start_date) === 1 &&
+          compare_normalized_date(e.normalized_date, end_date) === -1
+        );
+      });
     items = [...globalItems, ...items];
     items = sorted_timeline(items);
   }
@@ -188,7 +233,10 @@ const build_poet_timeline_json = (poet, collected) => {
   return items;
 };
 
-module.exports = {
+export {
   build_global_timeline,
   build_poet_timeline_json,
+  normalize_timeline_date,
+  compare_normalized_date,
+  sorted_timeline,
 };

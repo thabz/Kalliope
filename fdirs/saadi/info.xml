@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="saadi" country="un" lang="fa" type="poet">
+  <name>
+    <firstname>Saadi</firstname>
+    <lastname>Shirazi</lastname>
+    <fullname>Abū-Muhammad Muslih al-Dīn bin Abdallāh Shīrāzī</fullname>
+    <christened>ابومحمد مصلح الدین بن عبدالله شیرازی</christened>
+  </name>
+  <period>
+    <born>
+      <date>1210</date>
+      <place>Shiraz, Persien</place>
+    </born>
+    <dead>
+      <date>1291 ca.</date>
+      <place>Shiraz, Persien</place>
+    </dead>
+  </period>
+  <literary-periods>middelalderen</literary-periods>
+  <identifiers>
+    <wikidata>Q170302</wikidata>
+    <wikipedia-da>Saadi</wikipedia-da>
+    <wikipedia-en>Saadi Shirazi</wikipedia-en>
+    <wikipedia-fr>Saadi</wikipedia-fr>
+    <wikipedia-de>Saadi</wikipedia-de>
+    <viaf>100206721</viaf>
+  </identifiers>
+</person>

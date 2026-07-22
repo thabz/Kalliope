@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="brun" status="incomplete" type="poetry">
 <workhead>
    <title>Andre digte</title>
-   <year>?</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="brun2001010701">
+<text id="brun2001010701">
 <head>
    <title>Norges Herlighed</title>
    <toctitle>Norges Herlighed</toctitle>
@@ -18,6 +15,7 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Boer jeg paa det høie Fjeld,
 Hvor en Fin skjød en Reen med sin Riffel paa Skien,
 Hvor der sprang et Kildevæld,
@@ -69,10 +67,11 @@ Vi drak Norges Hæder og Held,
 Sang om Strand, om Dal og om Fjeld,
 Alting blomstre for Enhver,
 Som vort Land og vort Selskab har kjær!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="brun2001010702">
+<text id="brun2001010702">
 <head>
    <title>Den norske Vinter</title>
    <toctitle>Den norske Vinter</toctitle>
@@ -81,6 +80,7 @@ Som vort Land og vort Selskab har kjær!
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Min norske Vinter er saa vakker;
 De hvide sneebedækte Bakker,
 Og grønne Gran med puddret Haar,
@@ -136,10 +136,11 @@ Thi der er Ild i Nordmands Bryst.
 Kom, Broder! kom, men uden Kulde,
 Hverandre indtil Døden hulde,
 Syng Venskabs Skaal med mandig Røst!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="brun2001010703">
+<text id="brun2001010703">
 <head>
    <title>Et Impromtu.</title>
    <toctitle>Et Impromtu.</toctitle>
@@ -148,6 +149,7 @@ Syng Venskabs Skaal med mandig Røst!
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Efterspil tit gjorde Lykke,
 Skjøndt det kun en Farce var,
 Naar et udarbeidet Stykke
@@ -165,10 +167,11 @@ Det i Aften bedre glider,
 Sagen er - vi Manden har,
 Som vor Sang og Glæde lider,
 Sangen vor Stiftamtmans var!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="brun2001010704">
+<text id="brun2001010704">
 <head>
    <title>Min Smag</title>
    <toctitle>Min Smag</toctitle>
@@ -177,6 +180,7 @@ Sangen vor Stiftamtmans var!
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Jeg skjøtter intet om høie Sving
 Og ei om Toner, som knibes ud af Kastrater,
 Og ei randsager jeg dybe Ting,
@@ -221,10 +225,11 @@ Venner Glasset tager!
 Vinen liflig smager,
 Naar vi drak vort rene Venskabs glade Skaal
 Og Fred og Velstand i Norden.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="brun2001010705">
+<text id="brun2001010705">
 <head>
    <title>Bergenssangen</title>
    <subtitle>eller "Udsigter fra Ulriken"</subtitle>
@@ -234,6 +239,7 @@ Og Fred og Velstand i Norden.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Jeg tog min nystemte Cithar ihænde,
 Sorgen forgik meg paa Ulrikens topp;
 tænkte paa Bauner om de skulde brænde
@@ -296,10 +302,11 @@ Hver som opriktig mod Fødeby tænkte,
 lad denne munterheds Skaal være sin.
 Held for vort Bergen, vort fødelands Held
 Giv alting maa blomstre fra Fjære til Fjeld.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="brun2005071001">
+<text id="brun2005071001">
 <head>
    <title>Bjergmands-Sang</title>
    <firstline>Vort Kolde Norden føler Varme</firstline>
@@ -311,6 +318,7 @@ Giv alting maa blomstre fra Fjære til Fjeld.
    </notes>
 </head>
 <body>
+<poetry>
 1.
 Vort Kolde Norden føler Varme;
 Hvert Bjerg udstrekker lange Arme
@@ -326,7 +334,7 @@ Da er der Malm i Bjergmands Arm;
 For dine Fædres og dit Rige
 Skal den din Hammer aldrig svige,
 Men falde tung paa Uvens Barm.
- 
+
 3.
 See her er Folk, som gaaer i Døden,
 Som trodser Farer ufortrøden,
@@ -334,7 +342,7 @@ Hvis Krigsmusik er Miners Knald.
 Ja, medens Bjerg vi undergrave,
 Vor egen Grav vi tit tillave -
 Men døe i Fred - - det er vort kald.
- 
+
 4.
 Skal derfor Pligt os engang kalde
 At gaae mod dem, som overfalde,
@@ -342,7 +350,7 @@ O Prinds! din Arv, vort Fødeland,
 Da trodse Bjergmænd Ild og Kulde;
 Vort Kongehuus til Døden hulde,
 I blodig Kamp vi holde Stand.
- 
+
 5.
 Dig, Rigets Arving! Bjerge hylde,
 Og prange med sin Rigdoms Fylde,
@@ -350,7 +358,7 @@ Og anbefale sig din Gunst.
 Du saae, naar Du steg ned i Huler,
 Og fandt den Skat, som Jorden skjuler,
 At Klippen var ei skabt omsonst.
- 
+
 6.
 Selv skal Du Bjergmands Haab oplive,
 Om han det elskte Navn maa skrive
@@ -358,7 +366,7 @@ Paa denne ny navnløse Ort.
 Naar Ertsen riig i Gruben tindrer,
 Man Fredriks dyre Navn erindrer;
 Det blir og under Jorden stort.
- 
+
 7.
 Stiig, Kongesøn! Stiig ned i Jorden!
 Den aldrig ganske stor er vorden,
@@ -366,7 +374,7 @@ Som ei nedlod sig for at see.
 Stiig siden op paa Odelsthrone,
 Og Grubens Skat i Kongekrone
 Skal glimre blandt Juvelerne.
- 
+
 8.
 Vi Agre ei, men Ilden dyrke,
 Med haarde Steen vi prøve Styrke
@@ -374,7 +382,7 @@ Og trenge ind i Jordens Skjød:
 Vi ned i Dragers Bolig stige,
 Og vore dybe Miner sige
 Til disse Stene: "Vorder Brød."
- 
+
 9.
 Vi slaae paa Borr med flittig Hammer,
 Og indminere mangt et Kammer,
@@ -382,7 +390,7 @@ Som aldrig saae den blide Dag;
 I Afgrunds Dyb vi fange Bytte,
 Og yde Skat til kunstig Hytte,
 Hvor Ild og Vand gjør Vaabenbrag.
- 
+
 10.
 Der Lænker rasle, Vandfald suser,
 Og Vind af trinde Bælge bruser.
@@ -390,7 +398,7 @@ Og trykket Luft oppuster Ild.
 Ved Ild maa Steen som Vandet flyde,
 Og Ovnen Kobberstrøm udgyde,
 Og det var/er Bjergmands Skuespil.
- 
+
 11.
 Saa blomstrer Flid i Fredens Skygge,
 Naar Folkesædre mildt betrygge
@@ -398,7 +406,7 @@ Hver i sit Kald, hver i sin Stand.
 Thi leve længe Landets Fader,
 Indtil han sildig overlader
 Sin Arv til værdig Eftermand!
- 
+
 12.
 Stiig, Fredrik, da paa Faders Throne,
 Og Himlen al din Idræt Krone;
@@ -406,8 +414,9 @@ Men glem ei dine Bjergmænds Tarv!
 Du har for længst vort hele Hjerte,
 Som varig Ild for Dig ernærte;
 Ja Du fik Klippen og i Arv. -
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

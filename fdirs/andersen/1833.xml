@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1833" author="andersen" status="incomplete" type="poetry">
 <workhead>
    <title>Aarets tolv Maaneder</title>
@@ -8,11 +7,10 @@
        <picture type="titlepage" src="1833-p1.jpg">Titelbladet lyder ,,Aarets tolv Maaneder, / Tegnede med Blæk og Pen / af / H. C. Andersen. // Kjøbenhavn, 1833. / Paa Universitets-Boghandler C. A. Reitzels Forlag. / Trykt hos P. N. Jørgensen.''.</picture>
    </pictures>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="andersen1999041405">
+<text id="andersen1999041405">
 <head>
    <title>En ung Maler</title>
    <subtitle>(kommer med sin Mappe og sine Tegne-Redskaber).</subtitle>
@@ -25,6 +23,7 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Den friske, grønne Eng med sine Damme,
 Den knopped' brune Skov, den aabne Sø,
 Og Skyerne ved Firmamentets Ramme,
@@ -47,10 +46,11 @@ Maa tage Plads og lege med de Smaa.
 De, som to muntre, Vaarens, Alfer staae
 Ved Vintrens Snee, hvor mangt et Minde hviler.
 Ømt til de kjære Smaa den Gamle smiler!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="andersen1999041406">
+<text id="andersen1999041406">
 <head>
    <title>Storken er reist til fremmed' Land</title>
    <toctitle>Storken er reist til fremmed' Land</toctitle>
@@ -62,6 +62,7 @@ Ved Vintrens Snee, hvor mangt et Minde hviler.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Storken er reist til fremmed' Land, Spurven boer i dens Rede;
 Løvet falder, men Bærret staaer redt paa den sorte Hede.
 Taagen ligger saa kold og klam, Vedet fældes i Skoven,
@@ -76,10 +77,11 @@ Havblik, Forbudet paa en Storm, snart den stiger med Vælde,
 Da skal Skoven staae som et Vrag, alt de Masterne fælde.
 Tomhed breder sig meer og meer, her er ei Fryd, ei Smerte;
 Livstomt staaer den stolte Naturs svulmende Digterhjerte.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="andersen1999041411">
+<text id="andersen1999041411">
 <head>
    <title>De fattige Børn paa Gaden</title>
    <subtitle>(synge)</subtitle>
@@ -92,6 +94,7 @@ Livstomt staaer den stolte Naturs svulmende Digterhjerte.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Barn Jesus i en Krybbe laae,
 Skjøndt Himlen var hans Eie;
 Hans Pude her blev Hø og Straa,
@@ -107,10 +110,11 @@ Til Trøst for hvert et Hjerte;
 Til Barnet vil vi stige ind,
 Og blive Børn i Sjæl og Sind.
 Halleluja, Barn Jesus!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="andersen2006053001">
+<text id="andersen2006053001">
 <head>
    <title>Sommerflugt og Hvile</title>
    <firstline>Gjærdet staaer med vilde Roser</firstline>
@@ -121,6 +125,7 @@ Halleluja, Barn Jesus!
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Gjærdet staaer med vilde Roser,
 Nedenfor er' Tørvemoser,
 Storken der paa røde Hoser
@@ -280,8 +285,9 @@ Hver en Mismods Stemme tier,
 Øiet seer kun Harmonier.
 Barnlig' fromme Melodier
 Gjennembæve mig med Lyst.
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

@@ -1,31 +1,19 @@
-// @flow
-
-import React, { useState, Fragment } from 'react';
-import Head from '../components/head';
-import Main from '../components/main.js';
-import Nav, { poetCrumbsWithTitle } from '../components/nav';
+import Link from 'next/link';
+import { Fragment, useState } from 'react';
+import * as Client from '../common/client.js';
+import * as OpenGraph from '../common/opengraph.js';
+import { poetsByLastname } from '../common/sorting.js';
 import _ from '../common/translations.js';
-import { Link } from '../routes';
-import LangSelect from '../components/langselect';
-import { PoetTabs } from '../components/tabs.js';
-import Heading from '../components/heading.js';
-import PoetName from '../components/poetname.js';
+import { poetCrumbsWithTitle } from '../components/breadcrumbs.js';
+import ExternalIdentifierLinks from '../components/external-identifier-links.js';
+import * as Links from '../components/links.js';
+import { poetMenu } from '../components/menu.js';
+import Page from '../components/page.js';
 import { poetNameString } from '../components/poetname-helpers.js';
-import TextContent from '../components/textcontent.js';
+import PoetName from '../components/poetname.js';
+import { TextInline } from '../components/textcontent.js';
 import TwoColumns from '../components/twocolumns.js';
 import ErrorPage from './error.js';
-import * as Links from '../components/links';
-import * as Client from '../common/client.js';
-import type {
-  Lang,
-  TextId,
-  Poet,
-  Work,
-  TextContentType,
-  Error,
-} from '../common/types.js';
-import { poetsByLastname } from '../common/sorting.js';
-import { createURL } from '../common/client.js';
 
 const joinedByComma = (items, lang) => {
   let result = [];
@@ -55,71 +43,56 @@ const sectionTitle = (sectionType, lang) => {
   }
 };
 
-class Section extends React.Component {
-  render() {
-    const { title, items } = this.props;
-    return (
-      <div className="list-section" style={{ marginBottom: '40px' }}>
-        <h3 style={{ columnSpan: 'all' }}>{title}</h3>
-        <TwoColumns>{items}</TwoColumns>
-        <style jsx>{`
-          h3 {
-            font-weight: normal;
-            font-size: 18px;
-            border-bottom: 1px solid black;
-          }
-        `}</style>
-      </div>
-    );
-  }
-}
+const Section = (props) => {
+  const { title, items } = props;
+  return (
+    <div className="list-section" style={{ marginBottom: '40px' }}>
+      <h3 style={{ columnSpan: 'all' }}>{title}</h3>
+      <TwoColumns>{items}</TwoColumns>
+      <style jsx>{`
+        h3 {
+          font-weight: 300;
+          font-size: 22x;
+          line-height: 1.6;
+          padding-bottom: 1px;
+          border-bottom: 1px solid #888;
+          margin-bottom: 20px;
+        }
+      `}</style>
+    </div>
+  );
+};
 
-const Item = props => {
+const Item = (props) => {
   const { children } = props;
   return (
     <div
       style={{
-        marginBottom: '5px',
+        marginBottom: '10px',
         marginLeft: '30px',
         textIndent: '-30px',
         breakInside: 'avoid',
-        lineHeight: 1.5,
+        lineHeight: 1.4,
       }}>
       {children}
     </div>
   );
 };
 
-const PoemLink = props => {
+const PoemLink = (props) => {
   const { poem, lang } = props;
   const url = Links.textURL(lang, poem.id);
-  return (
-    <Link route={url}>
-      <a>»{poem.linkTitle}«</a>
-    </Link>
-  );
+  return <Link href={url}>»{poem.linkTitle}«</Link>;
 };
 
-type PoemType = {
-  poet: Poet,
-  poem: Text,
-};
-type TranslationsProps = {
-  lang: Lang,
-  translations: Array<{
-    translated?: PoemType,
-    translation: PoemType,
-  }>,
-};
-
-const TranslationsGroupedByTranslated = (props: TranslationsProps) => {
+const TranslationsGroupedByTranslated = (props) => {
   const { translations, lang } = props;
 
   const byTranslated = {};
   // Build byTranslated
   translations
-    .filter(t => t.translated != null)
-    .forEach(t => {
+    .filter((t) => t.translated != null)
+    .forEach((t) => {
       const { translated, translation } = t;
       const a = byTranslated[translated.poem.id] || {
         translated,
@@ -133,8 +106,8 @@ const TranslationsGroupedByTranslated = (props: TranslationsProps) => {
     .sort((a, b) => {
       return a.translated.poem.title < b.translated.poem.title ? -1 : 1;
     })
-    .map(a => {
-      const translations = a.translations.map(t => {
+    .map((a) => {
+      const translations = a.translations.map((t) => {
         return (
           <Fragment key={t.poem.id}>
             <PoetName poet={t.poet} />: <PoemLink poem={t.poem} lang={lang} />
@@ -150,8 +123,8 @@ const TranslationsGroupedByTranslated = (props: TranslationsProps) => {
     });
   return result.concat(
     translations
-      .filter(t => t.translated == null)
-      .map(a => {
+      .filter((t) => t.translated == null)
+      .map((a) => {
         return (
           <Item key={a.translation.poem.id}>
             {_('Et ukendt digt er oversat af', lang)}{' '}
@@ -163,12 +136,12 @@ const TranslationsGroupedByTranslated = (props: TranslationsProps) => {
   );
 };
 
-const TranslationsGroupedByTranslator = (props: TranslationsProps) => {
+const TranslationsGroupedByTranslator = (props) => {
   const { translations, lang } = props;
 
   const byTranslator = {};
   // Build byTranslator
-  translations.forEach(t => {
+  translations.forEach((t) => {
     const { translated, translation } = t;
     const a = byTranslator[translation.poet.id] || {
       translator: translation.poet,
@@ -182,8 +155,8 @@ const TranslationsGroupedByTranslator = (props: TranslationsProps) => {
     .sort((a, b) => {
       return poetsByLastname(a.translator, b.translator);
     })
-    .map(a => {
-      const translations = a.translations.map(t => {
+    .map((a) => {
+      const translations = a.translations.map((t) => {
         if (t.translated != null) {
           return (
             <>
@@ -209,14 +182,14 @@ const TranslationsGroupedByTranslator = (props: TranslationsProps) => {
       );
     });
 };
-const TranslationsSection = props => {
+const TranslationsSection = (props) => {
   const { translations, lang } = props;
   const [groupBy, setGroupBy] = useState('by-translated');
 
   const groupByOptions = [
     { title: _('Efter titel', lang), value: 'by-translated' },
     { title: _('Efter oversætter', lang), value: 'by-translator' },
-  ].map(o => {
+  ].map((o) => {
     const selected = o.value === groupBy;
     const style = {
       marginLeft: '10px',
@@ -258,99 +231,98 @@ const TranslationsSection = props => {
         alignItems: 'baseline',
       }}>
       <div>{sectionTitle('translations', lang)}</div>
-      <div style={{ fontSize: 'small' }}>{groupByOptions}</div>
+      <div style={{ fontSize: '16px' }}>{groupByOptions}</div>
     </div>
   );
 
   return <Section title={title} items={items} />;
 };
 
-type MentionsProps = {
-  lang: Lang,
-  poet: Poet,
-  mentions: Array<TextContentType>,
-  translations: Array<TextContentType>,
-  primary: Array<TextContentType>,
-  secondary: Array<TextContentType>,
-  error: ?Error,
-};
-export default class extends React.Component<MentionsProps> {
-  static async getInitialProps({
-    query: { lang, poetId },
-  }: {
-    query: { lang: Lang, poetId: string },
-  }) {
-    const json = await Client.mentions(poetId);
-    return {
-      lang,
-      poet: json.poet,
-      mentions: json.mentions || [],
-      translations: json.translations || [],
-      primary: json.primary || [],
-      secondary: json.secondary || [],
-      error: json.error,
-    };
+const MentionsPage = (props) => {
+  const {
+    lang,
+    poet,
+    mentions,
+    translations,
+    primary,
+    secondary,
+    identifiers,
+    error,
+  } = props;
+
+  if (error != null) {
+    return <ErrorPage error={error} lang={lang} message="Ukendt person" />;
   }
 
-  render() {
-    const {
-      lang,
-      poet,
-      mentions,
-      translations,
-      primary,
-      secondary,
-      error,
-    } = this.props;
+  const sections = ['mentions', 'primary', 'secondary']
+    .map((section, i) => {
+      return {
+        title: sectionTitle(section, lang),
+        items: props[section].map((line, j) => {
+          return (
+            <Item key={j}>
+              <TextInline contentHtml={line} contentLang="da" />
+            </Item>
+          );
+        }),
+      };
+    })
+    .filter((g) => g.items.length > 0)
+    .map((g) => {
+      return <Section title={g.title} items={g.items} key={g.title} />;
+    });
 
-    if (error != null) {
-      return <ErrorPage error={error} lang={lang} message="Ukendt person" />;
-    }
-    const requestPath = `/${lang}/mentions/${poet.id}`;
-    const sections = ['mentions', 'primary', 'secondary']
-      .map((section, i) => {
-        return {
-          title: sectionTitle(section, lang),
-          items: this.props[section].map((line, j) => {
-            return (
-              <Item key={j}>
-                <TextContent contentHtml={line} lang={lang} contentLang="da" />
-              </Item>
-            );
-          }),
-        };
-      })
-      .filter(g => g.items.length > 0)
-      .map(g => {
-        return <Section title={g.title} items={g.items} key={g.title} />;
-      });
+  sections.push(
+    <ExternalIdentifierLinks
+      identifiers={identifiers}
+      lang={lang}
+      category="reference"
+      variant="references"
+      key="external-identifiers"
+    />
+  );
 
-    if (translations.length > 0) {
-      sections.push(
-        <TranslationsSection
-          translations={translations}
-          lang={lang}
-          key={'translations'}
-        />
-      );
-    }
-
-    const title = <PoetName poet={poet} includePeriod />;
-    const headTitle = poetNameString(poet, false, false) + ' - Kalliope';
-    return (
-      <div>
-        <Head headTitle={headTitle} requestPath={requestPath} />
-        <Main>
-          <Nav
-            lang={lang}
-            crumbs={poetCrumbsWithTitle(lang, poet, _('Henvisninger', lang))}
-          />
-          <Heading title={title} subtitle={_('Henvisninger', lang)} />
-          <PoetTabs poet={poet} selected="mentions" />
-          {sections}
-          <LangSelect path={requestPath} />
-        </Main>
-      </div>
+  if (translations.length > 0) {
+    sections.push(
+      <TranslationsSection
+        translations={translations}
+        lang={lang}
+        key={'translations'}
+      />
     );
   }
-}
+
+  return (
+    <Page
+      headTitle={`${_('Henvisninger', lang)} - ${poetNameString(
+        poet
+      )} - Kalliope`}
+      ogTitle={poetNameString(poet, false, false)}
+      ogImage={OpenGraph.poetImage(poet)}
+      requestPath={`/${lang}/mentions/${poet.id}`}
+      crumbs={poetCrumbsWithTitle(lang, poet, _('Henvisninger', lang))}
+      pageTitle={<PoetName poet={poet} includePeriod />}
+      subtitle={_('Henvisninger', lang)}
+      menuItems={poetMenu(poet)}
+      poet={poet}
+      selectedMenuItem="mentions">
+      <div style={{ paddingTop: '3px' }}>{sections}</div>
+    </Page>
+  );
+};
+
+MentionsPage.getInitialProps = async ({ query: { lang, poetId } }) => {
+  const json = await Client.mentions(poetId);
+  return {
+    lang,
+    poet: json.poet,
+    mentions: json.mentions || [],
+    translations: json.translations || [],
+    primary: json.primary || [],
+    secondary: json.secondary || [],
+    identifiers: json.identifiers || {},
+    error: json.error,
+  };
+};
+
+export default MentionsPage;

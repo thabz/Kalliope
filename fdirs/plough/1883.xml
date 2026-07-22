@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1883" author="plough" status="incomplete" type="poetry">
 <workhead>
    <title>Nye Digte</title>
    <year>1883</year>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="plough2004011101">
+<text id="plough2004011101">
 <head>
 	<title>Sonet</title>
 	<toctitle>Sonet</toctitle>
@@ -21,6 +19,7 @@
 	<keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Ak, jeg er bleven fattig, derfor rutter
 jeg ikke mer med Viser og Sonnetter.
 De fleste Rhytmer, som jeg sammenfletter,
@@ -38,66 +37,69 @@ Du fordrer, at min Vingehest jeg rider.
 For Dig jeg gjør, hvad ej jeg gjør for Penge;
 for Dig jeg trodsig mod min Afmagt strider.
 Du faaer det sidste Klimp af mine Strenge.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ploug2018081501">
+<text id="ploug2018081501">
 <head>
 	<title>† Ved Christian Winthers Jordefærd</title>
     <subtitle>2. Februar 1877</subtitle>
 	<toctitle>Ved Christian Winthers Jordefærd</toctitle>
 	<indextitle>Ved Christian Winthers Jordefærd</indextitle>
 	<firstline>Folmer Sangers lette Fjed</firstline>
-    <keywords>winter</keywords>
+    <keywords>winther</keywords>
 	<quality>korrektur1</quality>
 </head>
 <body>
-,,<w>Folmer Sangers</w>'' lette Fjed 
+<poetry>
+,,<w>Folmer Sangers</w>'' lette Fjed
 naa’de Pilgrimsfærdens Ende,
 og den gyldne Cithar gled,
-stum og brusten, Ham af Hænde; 
+stum og brusten, Ham af Hænde;
 men den Tonestrøm, der flød
 klar og liflig fra dens Strænge,
 langt udover Grav og Død
 ruller gjennem Danmarks Vænge.
 
-Al den Ynde, Duft og Glands, 
+Al den Ynde, Duft og Glands,
 Sprogets Urtehave rummer,
-bandt Han i Buket og Krands, 
-bar Han frem i blanke Kummer. 
-Rosenstrø’t ej var hans Vej; 
-saaret selv af Livets Vaande, 
+bandt Han i Buket og Krands,
+bar Han frem i blanke Kummer.
+Rosenstrø’t ej var hans Vej;
+saaret selv af Livets Vaande,
 har Han skabt en Rosenmaj,
 som ej dør for Vintrens Aande.
 
 Alferne, som snildt i Flok,
-tjelde os vort Hjemlands Vægge, 
+tjelde os vort Hjemlands Vægge,
 kæmme Bøgens lyse Lok,
-Agrens rige Taffel dække, — 
-de har aabnet for hans Blik 
+Agrens rige Taffel dække, —
+de har aabnet for hans Blik
 deres sommergrønne Sale;
-og hvad Han at skue fik, 
+og hvad Han at skue fik,
 ingen Anden kunde male.
 
-Først og sidst var Kjærlighed, 
-med dens Jubel og dens Jammer, 
-med dens Længsel, mild og hed, 
+Først og sidst var Kjærlighed,
+med dens Jubel og dens Jammer,
+med dens Længsel, mild og hed,
 Arnen i Hans Hjertes Kammer;
 og mens der er Hjerter til,
-som dens Rørelser fornemme, 
-skal de kvæges ved Hans Spil, 
+som dens Rørelser fornemme,
+skal de kvæges ved Hans Spil,
 skal Hans Sang ej gaa i Glemme!
 
-Tak Ham da for hvad Han gav 
+Tak Ham da for hvad Han gav
 af sin Evnes modne Grøde,
-og lad Mindet paa hans Grav 
+og lad Mindet paa hans Grav
 skinne som en Aftenrøde!
 Du, Alkjærlighedens Gud,
-over Sjælen Dig forbarme! 
-Slet al Skyld og Svaghed ud! 
+over Sjælen Dig forbarme!
+Slet al Skyld og Svaghed ud!
 Tag Ham i din Naades Arme!
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

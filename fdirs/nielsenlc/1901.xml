@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1901" author="nielsenlc" status="complete" type="poetry">
 <workhead>
    <title>Vaardigte</title>
@@ -12,7 +11,7 @@
        <picture type="titlepage" src="1901-p1.jpg">Titelbladet lyder ,,L. C. Nielsen / Vaardigte // Gyldendalske Boghandels / Forlag * København MCMI''.</picture>
    </pictures>
    <source facsimile="115308082713_color" facsimile-pages-num="110" facsimile-pages-offset="12">L. C. Nielsen: <i>Vaardigte</i>, Gyldendalske Boghandels Forlag, Kbh., 1901.</source>
-   
+
 </workhead>
 <workbody>
 
@@ -22,7 +21,7 @@
 </head>
 <content>
 
-<poem id="nielsenlc2018031701">
+<text id="nielsenlc2018031701">
 <head>
     <title>Vaarvejr</title>
     <firstline>Lun er Luften, lind af Væde</firstline>
@@ -30,6 +29,7 @@
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Lun er Luften, lind af Væde.
 Himlen som et Silkeklæde
 hvælver sig og varsler Regn;
@@ -50,10 +50,11 @@ paa det store Øjeblik.
 Alle Kim har aabne Munde
 for at drikke ud til Bunde
 Regnens rige, grødefulde Drik.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2018031702">
+<text id="nielsenlc2018031702">
 <head>
     <title>Sommer</title>
     <firstline>Nu kukker Gøgen Kyssetal</firstline>
@@ -61,6 +62,7 @@ Regnens rige, grødefulde Drik.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center>I</center></nonum>
 
         Nu kukker Gøgen Kyssetal
@@ -114,10 +116,11 @@ Menneskebørnene sove!
     som en Elsker, der følger sin Elskedes Fjed,
     som en Mand, der elvertagen
     kun af sin Elskov ved.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2018031703">
+<text id="nielsenlc2018031703">
 <head>
     <title>Aftenlandskab</title>
     <firstline>Som en vældig Hval, der løfter</firstline>
@@ -125,6 +128,7 @@ Menneskebørnene sove!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Som en vældig Hval, der løfter
         frem sit store runde Legem,
 ligger Kystens mørke Linje
@@ -151,10 +155,11 @@ lille, hvid af Kalk.
         hæver sig mod Himlen,
       sort, som sov paa Hvalens Ryg en
         hoveddukket Falk.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2018031704">
+<text id="nielsenlc2018031704">
 <head>
     <title>Stilhed</title>
     <firstline>Dagen randt</firstline>
@@ -162,6 +167,7 @@ lille, hvid af Kalk.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Dagen randt,
 og Solen svandt,
 længst er Maanen nede;
@@ -190,10 +196,11 @@ Rislet af en Kilde,
 dumpe Lyd fra fjerne Veje.
 
     Saa er alt saa stille.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2018031705">
+<text id="nielsenlc2018031705">
 <head>
     <title>Det drypper af Regn</title>
     <firstline>Det drypper af Regn i den lydstille Nat</firstline>
@@ -201,6 +208,7 @@ dumpe Lyd fra fjerne Veje.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det drypper af Regn i den lydstille Nat,
 det græder fra alle smaa Grene;
 der vaagner en Fugl i det bladløse Krat,
@@ -224,10 +232,11 @@ jeg drages af Strømninger stride.
 Da løftes min Sjæl som en morgenkarsk Vind,
 stiger op, stiger højt, stiger langt
                 over Verden den vide!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2018031706">
+<text id="nielsenlc2018031706">
 <head>
     <title>Novembersol</title>
     <firstline>Alting løfter sig i Længsel</firstline>
@@ -235,6 +244,7 @@ stiger op, stiger højt, stiger langt
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
     Alting løfter sig i Længsel,
     og Novembersolen drager.
 Græsset, som var falmet, faar sin Farve tilbage;
@@ -258,10 +268,11 @@ og den blinde Muldvarp kan i Jorden jeg høre.
 stille Lyde fødes, som af Børn, der om mig liste.
 Krager og Spurve om Kap i Luften skriger
 lystigt som ved Foraarstid, naar Knopperne briste.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2018031707">
+<text id="nielsenlc2018031707">
 <head>
     <title>Alt mødigt Liv</title>
     <firstline>Alt mødigt Liv nu giver sig</firstline>
@@ -269,6 +280,7 @@ lystigt som ved Foraarstid, naar Knopperne briste.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Alt mødigt Liv nu giver sig
 den styrkende Søvn i Vold,
 og Vinden, den vældige Hyrde,
@@ -298,8 +310,9 @@ Alt mødigt Liv har givet sig
 den styrkende Søvn i Vold.
 Naturen, den vældige Hyrde,
 har jaget sin Hjord i Fold.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section>
@@ -310,7 +323,7 @@ har jaget sin Hjord i Fold.
 </head>
 <content>
 
-<poem id="nielsenlc2018031708">
+<text id="nielsenlc2018031708">
 <head>
     <title>Den hvide Minaret</title>
     <firstline>Højt ligger Moskeen, forladt og øde</firstline>
@@ -318,6 +331,7 @@ har jaget sin Hjord i Fold.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Højt ligger Moskeen, forladt og øde;
 de troende flygted, og Muezzinen døde.
 
@@ -358,7 +372,7 @@ og over Døren hængte man Jomfruens Billed.
 Og Folk kom forbi, og man tegnede tyst
 et Kors for sin Pande og et for sit Bryst.
 
-Man glemte Moskeen, som laa dér saa øde;
+Man glemte Moskeen, som laa dér saa øde;
 kun Præsterne takked’ endnu for den døde.
 
 Høgene fløj ud og ind ad Minaretens Dør,
@@ -390,10 +404,11 @@ Men da man kom ved Daggry at se, hvad der var sket,
 laa Kristenkirken knust af den hvide Minaret.
 
 <nonum><small><i>Arta.</i></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2018031709">
+<text id="nielsenlc2018031709">
 <head>
     <title>De store, stumme Tinder</title>
     <firstline>Langt borte ligger Bjærgene i Aftensolens Skær</firstline>
@@ -401,6 +416,7 @@ laa Kristenkirken knust af den hvide Minaret.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Langt borte ligger Bjærgene i Aftensolens Skær,
 i violette Taager de bag hinanden dølges;
 de er som store Bølger, der taust og evigt følges,
@@ -417,10 +433,11 @@ de svømmer ind iblandt dem, til Tinderne dem dølger -
 de store, stumme Tinder i Aftensolens Skær!
 
 <nonum><small><i>Arta.</i></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2018031710">
+<text id="nielsenlc2018031710">
 <head>
     <title>Det regner over Bjærgene</title>
     <firstline>Det regner over Bjærgene saa trøstesløs en Regn</firstline>
@@ -428,6 +445,7 @@ de store, stumme Tinder i Aftensolens Skær!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det regner over Bjærgene saa trøstesløs en Regn,
 og Pindos hvide Tinder af mørke Skyer dækkes,
 mens af de tætte Draaber et dunkelt Gitter trækkes
@@ -444,10 +462,11 @@ og længes efter Luften imellem danske Bøge —
 Det regner over Bjærgene saa trøstesløs en Regn.
 
 <nonum><small><i>Arta.</i></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2018031711">
+<text id="nielsenlc2018031711">
 <head>
     <title>Der ligger et Hus</title>
     <firstline>Der ligger et Hus deroppe</firstline>
@@ -455,9 +474,10 @@ Det regner over Bjærgene saa trøstesløs en Regn.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Der ligger et Hus deroppe
 saa nær ved den hvide Sne;
-dér var det, jeg fik den lille
+dér var det, jeg fik den lille
 lysøjede at se.
 
 Hun skænked mig Mælk i Glasset.
@@ -471,10 +491,11 @@ hvorledes en Kvinde kysser
 saa nær ved den kyske Sne!
 
 <nonum><small><i>St. Gothardt.</i></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2018031712">
+<text id="nielsenlc2018031712">
 <head>
     <title>Hospenthal</title>
     <firstline>Hospenthal ligger i Dalen</firstline>
@@ -482,6 +503,7 @@ saa nær ved den kyske Sne!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hospenthal ligger i Dalen,
 hvor Floderne sammen bruse.
 Hospenthal er en lille By
@@ -600,10 +622,11 @@ Jeg ved, der var Sol; jeg ved, der var Duft;
 jeg hørte mit Hjerte bruse - - -
 - Hospenthal var en lille By
 med Kirke og venlige Huse.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2018031713">
+<text id="nielsenlc2018031713">
 <head>
     <title>Andermatt</title>
     <firstline>Andermatt — Andermatt</firstline>
@@ -611,6 +634,7 @@ med Kirke og venlige Huse.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Andermatt — Andermatt,
 hvorfor længes jeg efter din Fred i Nat!
 
@@ -643,8 +667,9 @@ og ræddes, at Rejsen skal være forbi!
 
 Andermatt — Andermatt,
 derfor længes jeg efter din Fred i Nat.
+</poetry>
 </body>
-</poem>
+</text>
 
 <section level="3">
 <head>
@@ -652,7 +677,7 @@ derfor længes jeg efter din Fred i Nat.
 </head>
 <content>
 
-<poem id="nielsenlc2018031714">
+<text id="nielsenlc2018031714">
 <head>
     <title>Jeg skælver i Nat, jeg græder i Nat</title>
     <toctitle><num>I.</num>Jeg skælver i Nat, jeg græder i Nat</toctitle>
@@ -661,6 +686,7 @@ derfor længes jeg efter din Fred i Nat.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg skælver i Nat, jeg græder i Nat,
           jeg slaar mig for Panden og ler;
 hvad er det? — Lukker jeg Øjet, i blændende
@@ -687,10 +713,11 @@ Hun elsker! Det er det hvideste Skær,
           som noget Menneske ser —
 Jeg skælver i Nat, jeg græder i Nat,
           jeg lukker mit Øje og ler!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2018031715">
+<text id="nielsenlc2018031715">
 <head>
     <title>Den Mand, som ved, han elsker</title>
     <toctitle><num>II.</num>Den Mand, som ved, han elsker</toctitle>
@@ -699,6 +726,7 @@ Jeg skælver i Nat, jeg græder i Nat,
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Den Mand, som ved, han elsker,
           hvor bliver han skøn og stor,
 hvor blomstrer under hans Øjne
@@ -734,10 +762,11 @@ men tager sin Pung og yder ham Hjælp —
           og sætter sig atter hen,
 og græder maaske og smiler —
           og smiler og græder igen.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2018031716">
+<text id="nielsenlc2018031716">
 <head>
     <title>O! hver Dag burde være ny</title>
     <toctitle><num>III.</num>O! hver Dag burde være ny</toctitle>
@@ -746,6 +775,7 @@ og græder maaske og smiler —
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 O! hver Dag burde være ny. Vi burde fødes
 paany hver Dag som Lyset under Himlen.
 Og gik vi to vildfarne Børn i Vrimlen
@@ -760,10 +790,11 @@ O! hver Dag burde være som en Mønt,
 nypræget, uberørt af Mængdens Hænder!
 Ja, hver Dag være som et Baal, der brænder
 fra tidligst Gry, til Natten er begyndt.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2018031717">
+<text id="nielsenlc2018031717">
 <head>
     <title>Det er Nat, det er stille i Nat</title>
     <toctitle><num>IV.</num>Det er Nat, det er stille i Nat</toctitle>
@@ -772,6 +803,7 @@ fra tidligst Gry, til Natten er begyndt.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det er Nat, det er stille i Nat.
 Jeg kan høre min Lampe, som brænder.
 Jeg har bøjet mig over dine Roser,
@@ -801,10 +833,11 @@ Men jeg kysser de Roser, jeg fik.
 Og jeg siger til hver, som jeg kender:
 Vær taalmodig, hendes Hjerte kan dø
 som en Fugl, der er syg, i dine Hænder.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2018031718">
+<text id="nielsenlc2018031718">
 <head>
     <title>Min Elskede danser i Sale i Nat!</title>
     <toctitle><num>V.</num>Min Elskede danser i Sale i Nat!</toctitle>
@@ -813,6 +846,7 @@ som en Fugl, der er syg, i dine Hænder.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Min Elskede danser i Sale i Nat!
 Gud ved, hvor det er, jeg gaar;
 det skinner af Sol og Maane,
@@ -833,10 +867,11 @@ Og alle de Nattergale!
 Min Elskede bøjer sit Hoved hedt
 og lytter til fremmedes Tale —
       Min Elskede danser i Sale!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2018031719">
+<text id="nielsenlc2018031719">
 <head>
     <title>Jeg hørte i Natten min Elskedes Sang</title>
     <toctitle><num>VI.</num>Jeg hørte i Natten min Elskedes Sang</toctitle>
@@ -845,6 +880,7 @@ og lytter til fremmedes Tale —
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg hørte i Natten min Elskedes Sang.
 Natten var sanddru, og Natten var lang.
 
@@ -865,10 +901,11 @@ og skreg til min Gud om at give mig Ro.
 
 Natten var sanddru, Natten var lang.
 Min Elskede sad hos en fremmed og sang.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2018031720">
+<text id="nielsenlc2018031720">
 <head>
     <title>Lad mig faa Lov at gaa ene i Nat</title>
     <toctitle><num>VII.</num>Lad mig faa Lov at gaa ene i Nat</toctitle>
@@ -877,6 +914,7 @@ Min Elskede sad hos en fremmed og sang.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Lad mig faa Lov at gaa ene i Nat,
         at gaa ene i Nat!
     Jeg har sunget som Dreng og fløjtet,
@@ -894,10 +932,11 @@ Jeg vilde gerne have sunget i Nat,
     har blomstret og baaret Frø.
 Jeg vilde gerne have sunget i Nat!
     Har blomstret — og baaret Frø!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2018031721">
+<text id="nielsenlc2018031721">
 <head>
     <title>Den Mand blir tavs, hvem Sorger slaa</title>
     <toctitle><num>VIII.</num>Den Mand blir tavs, hvem Sorger slaa</toctitle>
@@ -906,6 +945,7 @@ Jeg vilde gerne have sunget i Nat!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Den Mand blir tavs, hvem Sorger slaa
 med Smertens kolde Svøbeslag;
 han vælger ensom Vej at gaa
@@ -925,10 +965,11 @@ Thi taler stum, da skræmmes den,
 som sorgløs ødslede med Ord,
 og ler sørgmodig Mand igen,
 det er, som Rædsel fra ham fo’r.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2018031722">
+<text id="nielsenlc2018031722">
 <head>
     <title>Jeg har bedækket dit Leje med Kys</title>
     <toctitle><num>IX.</num>Jeg har bedækket dit Leje med Kys</toctitle>
@@ -937,6 +978,7 @@ det er, som Rædsel fra ham fo’r.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg har bedækket dit Leje med Kys
           og dugget din Pude med Graad,
 viljeløs driver jeg mod dig, som var jeg
@@ -972,13 +1014,14 @@ Jeg har været en kostbar Stav
           af Sølv og Cedertræ,
 du tog den i dine Hænder
           og brød den over dit Knæ.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section>
 
-<poem id="nielsenlc2018031723">
+<text id="nielsenlc2018031723">
 <head>
     <title>A. D. Jørgensen</title>
     <subtitle>(Af en Kantate ved Mindefesten paa Universitetet.)</subtitle>
@@ -991,6 +1034,7 @@ du tog den i dine Hænder
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I
 
 Døden gaar mellem Mennesker og søger de bedste ud,
@@ -1042,10 +1086,11 @@ Hans vil staa, naar andre fældes,
 ungt og stærkt, naar andre ældes,
 som en Eg blandt Bøg og Birke
 i vort Dannevirke.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2018031724">
+<text id="nielsenlc2018031724">
 <head>
     <title>Lille Lydia</title>
     <firstline>Der ligger en Barne-Stambog og venter</firstline>
@@ -1053,6 +1098,7 @@ i vort Dannevirke.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I
 
 Der ligger en Barne-Stambog og venter
@@ -1109,10 +1155,11 @@ Men jeg, som nu soner min Brøde,
 hvad ikke <i>du</i> faar at se,
       vil mindes, saa tit jeg sørger,
       hvor lidt du fik Lov til at le!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2018031725">
+<text id="nielsenlc2018031725">
 <head>
     <title>Roser</title>
     <firstline>Saa vaagner en Morgen i Havernes Bed</firstline>
@@ -1120,6 +1167,7 @@ hvad ikke <i>du</i> faar at se,
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Saa vaagner en Morgen i Havernes Bed
 de Roser røde og hvide;
 og alle de Hjerter, som lide,
@@ -1134,10 +1182,11 @@ Thi den, som danser paa Roser, en Dag
 skal barfodet Tornene træde,
 men den, som for Roserne græde,
 skal finde dem blomstrende under sit Tag!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2018031726">
+<text id="nielsenlc2018031726">
 <head>
     <title>Gymnastiksang</title>
     <subtitle>(Ved 1ste internationale Gymnastikfest i København.)</subtitle>
@@ -1146,6 +1195,7 @@ skal finde dem blomstrende under sit Tag!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Held den, hvis Ryg er rank,
 hans Øje ser mod Solen
 op over Støv og Stank;
@@ -1166,8 +1216,9 @@ han bliver fri og frank.
 Han gaar sin Gang saa stolt og trygt,
 hans Øje ser mod Solen,
 han kender ej til Frygt.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section>
@@ -1178,7 +1229,7 @@ han kender ej til Frygt.
 </head>
 <content>
 
-<poem id="nielsenlc2018031727">
+<text id="nielsenlc2018031727">
 <head>
     <title>Stille Nat</title>
     <firstline>Stille staa de Trær langs Vejen</firstline>
@@ -1186,6 +1237,7 @@ han kender ej til Frygt.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Stille staa de Trær langs Vejen,
 stille alle Stjerner staa,
 kun mit eget bange Hjerte
@@ -1205,10 +1257,11 @@ Men en Gang mit bange Hjerte
 giver trygt sig til at staa,
 medens Jord og alle Stjerner
 bliver rastløst ved at gaa.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2018031728">
+<text id="nielsenlc2018031728">
 <head>
     <title>Menneskesind</title>
     <firstline>Langsomt modnes Menneskesind</firstline>
@@ -1216,6 +1269,7 @@ bliver rastløst ved at gaa.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Langsomt modnes Menneskesind;
 de visner i Lykkens Øde.
 Der trædes saa mange sporløse Trin
@@ -1230,10 +1284,11 @@ Mangen Ager, som gulnet staar,
 har vissen Rod og er gold.
 Kun den, som vokser i Sorgens Muld,
 skal bære de gode Fold.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2018031729">
+<text id="nielsenlc2018031729">
 <head>
     <title>Jordbefriet</title>
     <firstline>Det er Nat, og min er Natten</firstline>
@@ -1241,6 +1296,7 @@ skal bære de gode Fold.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det er Nat, og min er Natten
 med den klare Stjernevrimmel.
 Og jeg vandrer ud i Rummet,
@@ -1255,10 +1311,11 @@ bort mod disse blanke Kloder,
 som mit Øje spænder over,
 til de frie Aanders Himmel,
 medens Jordens Slægter sover.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2018031730">
+<text id="nielsenlc2018031730">
 <head>
     <title>Af en Kantate</title>
     <subtitle>til det nordiske Haandværks- og Industrimøde i København.</subtitle>
@@ -1267,6 +1324,7 @@ medens Jordens Slægter sover.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center><i>SOLO</i></center></nonum>
 
 Slægternes Vilkaar veksle med Tiden,
@@ -1324,10 +1382,11 @@ Jerntid er kommen, og Jernvilje kræves;
 glød den i Gerning og hærd den i Strid!
 Norden har Skatte, som venter at hæves,
 hæv dem! Da gryr det mod Guldaldertid.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2018031731">
+<text id="nielsenlc2018031731">
 <head>
     <title>Der ligger Byer</title>
     <firstline>Der ligger Byer i Verden</firstline>
@@ -1335,6 +1394,7 @@ hæv dem! Da gryr det mod Guldaldertid.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Der ligger Byer i Verden,
 jeg aldrig faar at se,
 Floder strømme mod Havet,
@@ -1361,10 +1421,11 @@ om det end Livet gjaldt!
 hvad jeg vil se, er alt.
 
 <nonum><small><i>Florents</i></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2018031732">
+<text id="nielsenlc2018031732">
 <head>
     <title>Titus</title>
     <firstline>Solen, O, min Gud, hvor Solen</firstline>
@@ -1372,6 +1433,7 @@ hvad jeg vil se, er alt.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Solen, O, min Gud, hvor Solen
 gør mig sund i alle Sanser;
 jeg kan høre Kloder klinge,
@@ -1398,10 +1460,11 @@ Kejser Titus skrider sejrrig
 til sin Plads paa Kapitol!''
 
 <nonum><small><i>Rom</i></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2018031733">
+<text id="nielsenlc2018031733">
 <head>
     <title>Kejser</title>
     <firstline>Solen gløded. Jeg drømte mig Kejser</firstline>
@@ -1409,6 +1472,7 @@ til sin Plads paa Kapitol!''
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Solen gløded. Jeg drømte mig Kejser.
 Jeg er kun en dansk Poet, som rejser.
 
@@ -1449,10 +1513,11 @@ at jeg kan tro mig et Nu som Kejser,
 — jeg danske Stodder, som stipendierejser!
 
 <nonum><small><i>Rom</i></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2018031734">
+<text id="nielsenlc2018031734">
 <head>
     <title>Via Appia</title>
     <firstline>Som et trangt, udtørret Leje</firstline>
@@ -1460,6 +1525,7 @@ at jeg kan tro mig et Nu som Kejser,
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Som et trangt, udtørret Leje
 for en sagte Flod
 strækker Via Appia sig
@@ -1501,10 +1567,11 @@ vidner du, at Elskov lever,
 mens alt levende forgaar!
 
 <nonum><small><i>Castel Gandolfo</i></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2018031735">
+<text id="nielsenlc2018031735">
 <head>
     <title>For alt, hvad jeg ser</title>
     <firstline>For alt, hvad jeg ser, maa jeg spørge mig selv</firstline>
@@ -1513,6 +1580,7 @@ mens alt levende forgaar!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 For alt, hvad jeg ser, maa jeg spørge mig selv:
 Er det dig, som faar det at se?
 Kampagnens bølgende Slette,
@@ -1541,10 +1609,11 @@ og elsket mig ung og stærk.
         er det dine Øjne, som ser?
 
 <nonum><small><i>Rom</i></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2018031736">
+<text id="nielsenlc2018031736">
 <head>
     <title>Til min Dreng</title>
     <firstline>Dine Øjne glipper mod Lyset</firstline>
@@ -1552,6 +1621,7 @@ og elsket mig ung og stærk.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Dine Øjne glipper mod Lyset,
 de kan ikke taale at se.
 Du græder —
@@ -1571,10 +1641,11 @@ I Taushed,
       at bære de tungeste Slag.
 
 <nonum><small><i>Florents</i></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2018031737">
+<text id="nielsenlc2018031737">
 <head>
     <title>Rejserim</title>
     <firstline>Jeg løfter dig, min lille Dreng</firstline>
@@ -1582,6 +1653,7 @@ I Taushed,
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center>I</center></nonum>
 
 Jeg løfter dig, min lille Dreng,
@@ -1589,7 +1661,7 @@ saa rider vi til Rom!
       Nu skynder vi os sporenstregs,
       at Mo’r ej ta’r dig undervejs,
       forbi Berlin til Brenner;
-      dér møder os den Varme, som
+      dér møder os den Varme, som
       Verona mod os sender!
 
 Verona!
@@ -1737,10 +1809,11 @@ det Land, som du og jeg og Mor
 vil aldrig kunne glemme!
 
       — Min Dreng, nu er vi hjemme!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2018031738">
+<text id="nielsenlc2018031738">
 <head>
     <title>Maria i Neapel</title>
     <firstline>Maria i Neapel</firstline>
@@ -1748,11 +1821,12 @@ vil aldrig kunne glemme!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center>I</center></nonum>
 
 Maria i Neapel,
 hvad er der blevet af dig?
-— Jeg ved, du var sørgmodig, 
+— Jeg ved, du var sørgmodig,
 den Dag jeg gik fra dig.
 
 Du stod i dit Vindu
@@ -1850,10 +1924,11 @@ Da kan det ske, du bliver
 saa fjern og skøn en Fabel,
 jeg læste i min Barndom —
       Maria i Neapel!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2018031739">
+<text id="nielsenlc2018031739">
 <head>
     <title>Kloder</title>
     <firstline>Kloder springe ud af Himmelmørket</firstline>
@@ -1861,6 +1936,7 @@ jeg læste i min Barndom —
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Kloder springe ud af Himmelmørket,
 lyse op et kort Sekund — og dø;
 Rummet glimter i en Stjerne-Morild,
@@ -1889,10 +1965,11 @@ Alt, som lever; al Ting, som er til,
 gaar fra Mulm til Mulm i Stjernebuer.
 
 <nonum><small><i>Florents</i></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2018031740">
+<text id="nielsenlc2018031740">
 <head>
     <title>Stjerner</title>
     <subtitle>(Efter Opførelsen af ,,La cittá morte'')</subtitle>
@@ -1901,6 +1978,7 @@ gaar fra Mulm til Mulm i Stjernebuer.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Mørket er faldet i Rom.
                         Over Villa Borgheses Have
 højt i den vandblege Himmel skælver et ensomt Lys
@@ -1923,7 +2001,7 @@ Forladthedens ensomme Stemme,
 der dugges af Vemod og mildnes i Trøst —
 Tilgivelsens smerteforklarede Røst,
 som ikke paa Jord har hjemme.
-Dér vandrer du hist i din hvide Glans,
+Dér vandrer du hist i din hvide Glans,
 befriet for Menneskesorg og Sans,
 og ser gennem Taarer, hvor Mand og Kvinde
 endnu drives til Drab i Blinde,
@@ -1941,10 +2019,11 @@ som aabned sig Mulmets sorgfulde Mund —
                     jeg ser Jer i denne Stund!
 
 <nonum><small><i>Rom.</i></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2018031741">
+<text id="nielsenlc2018031741">
 <head>
     <title>Skal jeg dø</title>
     <firstline>Skal jeg dø, lad mig dø i mit eget Land</firstline>
@@ -1952,6 +2031,7 @@ som aabned sig Mulmets sorgfulde Mund —
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Skal jeg dø, lad mig dø i mit eget Land,
 med mit Blik i et Blik, som jeg kender!
       Jeg er ene i Nat. Lukker Døden min Mund,
@@ -1971,10 +2051,11 @@ til mit Liv er der ingen, som kender.
 Skal jeg dø, lad mig dø mellem Venner!
 
 <nonum><small><i>Florents.</i></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2018031742">
+<text id="nielsenlc2018031742">
 <head>
     <title>Vide om i Verden</title>
     <firstline>Vide om i Verden gaar de unge Kvinder</firstline>
@@ -1982,6 +2063,7 @@ Skal jeg dø, lad mig dø mellem Venner!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Vide om i Verden gaar de unge Kvinder;
 deres Legem lyser under klare Lin;
 de har hvide Tænder, Blodets røde Kinder,
@@ -2009,12 +2091,13 @@ ud af Tidens Sandglas, og intet Under sker.
 
 O, du vide Verdens længselsfulde Kvinder
 med de hede Bryster, med det dunkle Haar,
-ikke én iblandt Jer Lykkens Leje finder,
+ikke én iblandt Jer Lykkens Leje finder,
 til den store Armods Brudeseng I gaar!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2018031743">
+<text id="nielsenlc2018031743">
 <head>
     <title>De skreg over Byen</title>
     <firstline>De skreg over Byen i Nat</firstline>
@@ -2022,6 +2105,7 @@ til den store Armods Brudeseng I gaar!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 De skreg over Byen i Nat
       de hvide, vandrende Fugle.
 Jeg maatte mit Hoved skjule
@@ -2042,10 +2126,11 @@ Jeg hulked Hænderne vaade,
 fordi jeg ej var om Bord.
       De sejled mod Syden, mod Solen,
       hvor Livet ustandseligt gror!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2018031744">
+<text id="nielsenlc2018031744">
 <head>
     <title>Hundredaaret</title>
     <subtitle>(Slutningsdigt til ,,Vort Folk.'')</subtitle>
@@ -2054,6 +2139,7 @@ fordi jeg ej var om Bord.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 De skød det ind paa Kongedyb med skæbnesvangre Skud,
 det Hundredaar, som rundet er i vissen Ælde ud;
 mod Overmagt gav Mænd sig hen saa stolt, som de forstod;
@@ -2123,7 +2209,7 @@ med øget Virkevilje vi mod vor Fremtid gaar.
 
 Jeg ser de bøgelyse Øer ud over Havet spredt
 saa skært og skønt i Solen, som aldrig jeg har set.
-Jeg ved det, som de ligger dér, saa er der kun saa kort
+Jeg ved det, som de ligger dér, saa er der kun saa kort
 fra Grænse og til Grænse. — Men dette Land er vort.
 
 Jeg ser de Slægter, som gik hen, mens Hundredaaret skred,
@@ -2137,10 +2223,11 @@ Og derfor samle vi hvert Navn, som steg af Folkets Jord:
 I dem vor Fortid leved — af dem vor Fremtid gror!
 
 <nonum><small><i>Florents.</i></small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2018031745">
+<text id="nielsenlc2018031745">
 <head>
     <title>Min Sjæl strømmer over</title>
     <firstline>Min Sjæl strømmer over, min Sjæl kan ikke rumme</firstline>
@@ -2148,6 +2235,7 @@ I dem vor Fortid leved — af dem vor Fremtid gror!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Min Sjæl strømmer over, min Sjæl kan ikke rumme,
 hvad Dagen skænker i den fra Morgen, til det kvælder,
           den fyldes som en Kumme,
@@ -2189,12 +2277,12 @@ mens Dagen dybt og styrket paa Mulmets Pude sover.
           der evigt strømmer over,
       min Sjæl kan ikke rumme, hvad Livets Kildevæld
       udgyder i dens Kumme fra Morgen og til Kvæld.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section>
 
 </workbody>
 </kalliopework>
-

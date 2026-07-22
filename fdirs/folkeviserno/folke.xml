@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="folke" author="folkeviserno" status="incomplete" type="poetry">
 <workhead>
    <title>Norske folkeviser</title>
-   <year>?</year>
 </workhead>
 <workbody>
 
-<poem id="folkeviserno2018080401">
+<text id="folkeviserno2018080401">
 <head>
     <title>Å kjøre vatten og kjøre ve'</title>
     <firstline>Å kjøre vatten og kjøre ve'</firstline>
@@ -17,6 +15,7 @@
     </notes>
 </head>
 <body>
+<poetry>
 1.
 
 Å kjøre vatten å kjøre ve'
@@ -66,9 +65,10 @@ je ka vist aldrig bli' lei a.
 De røde roser å de öine blå,
 de vakre jenter holder je utå,
 helst når je får den je vi ha,
-så er det morosamt å leva.    
+så er det morosamt å leva.
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1785" author="baggesen" status="complete" type="poetry">
 <workhead>
    <title>Comiske Fortællinger</title>
@@ -11,11 +10,11 @@
    <pictures>
       <picture type="titlepage" src="1785-p1.jpg">Titelbladet til <i>Comiske Fortællinger</i> (1785).<br/>Comiske / Fortællinger / af / Jens Baggesen. / --- Ubi qvid datur otî / Illudo chartis; hoc est mediocribus illis / Ex vitiis unum. - / Horat. / Kiøbenhavn, 1785. / Trykt hos August Friderich Stein.</picture>
    </pictures>
-   <source facsimile="115308040544_color" facsimile-pages-num="228" facsimile-pages-offset="28">Jens Baggesen: <i>Comiske Fortællinger</i>, Kbh., 1785.</source> 
+   <source facsimile="115308040544_color" facsimile-pages-num="228" facsimile-pages-offset="28">Jens Baggesen: <i>Comiske Fortællinger</i>, Kbh., 1785.</source>
 </workhead>
 <workbody>
 
-<prose id="baggesen2002100301a">
+<text id="baggesen2002100301a" skip-index="true">
 <head>
    <title>Fortale</title>
    <toctitle>Fortale</toctitle>
@@ -23,6 +22,7 @@
    <source pages="i-iv" facsimile-pages="9-12"/>
 </head>
 <body>
+<prose>
 Ikke blot at imodtage, men ogsaa efter Evne at meddeele Glæde, er en Pligt, som ingen fra Monarken til Betleren bør forsømme. Vort Liv og vore fleeste Glæder i Livet har sat og sætter os daglig i Gield til vore Medmennesker; det bør være vor Bestræbelse, at betale noget deraf, om det end skulle blot skee ved at give dem en uskadelig Tidsfordriv.
 
     Lyst til at opfylde denne Pligt saa nøie, som det var mig mueligt, bragde mig tidlig til at undersøge, hvortil jeg havde mindst Udygtighed. De skiønne Videnskaber, og iblandt disse fornemmelig Poesien, henreve mig. Jeg ønskede brændende, at det maatte være dem, jeg med meest Held kunde opofre mig; prøvede mine ringe Kræfter dertil; og, da det ikke var mine Venner eller mig selv, som kunde bestemme deres større eller mindre Svaghed, forelagde jeg mine smaa Prøvestykker den store Dommer, Publicum.
@@ -36,12 +36,13 @@ Ikke blot at imodtage, men ogsaa efter Evne at meddeele Glæde, er en Pligt, som
     Eiendom, Sundhed, Livet selv er intet imod den Ære, som eengang tabt aldrig vindes tilbage. Jeg har følt i sin heele gyselige Omfang hvad jeg vovede. Jeg stræbte derfor at anvende den mueligste Flid paa mit Arbeide og at bruge Fiilen saa længe jeg nogenledes kunde. Dette er Aarsagen til den Langsomhed, hvormed det gik igiennem Pressen. Heller for sildig end for tidlig, syntes mig en passende Tanke for en Udgiver; gid jeg kun ikke burde tænkt: heller <i>aldrig</i> end nogen af begge Deele.
 
     Om min Bog har jeg for Resten kun lidet at sige mine Læsere. Overbeviist om, at den har Feil, og frygtende for, at den har mange, vil jeg dog ikke her kiede Læseren med at undskylde dem. Dem, jeg har kundet see, har jeg rettet. Dem, som ere blevne tilbage, kan intet rette. Hverken Ungdom, Mangel paa Tid, Legems eller Siels Fattigdom, eller noget andet kan undskylde disse, dersom de ulykkeligviis skulde have Overvægten.
-</body>
 </prose>
+</body>
+</text>
 
 <!-- Der burde være mellemrum i TOC på dette sted. -->
 
-<poem id="baggesen2001060801a">
+<text id="baggesen2001060801a">
 <head>
    <title>Poesiens Oprindelse</title>
    <firstline>Engang i denne Verdens unge Dage</firstline>
@@ -52,6 +53,7 @@ Ikke blot at imodtage, men ogsaa efter Evne at meddeele Glæde, er en Pligt, som
    <source pages="1-44"/>
 </head>
 <body>
+<poetry>
 Engang i denne Verdens unge Dage,
 En fem sex tusind Aar og fleer, ifald man vil,
 Før jeg, min Læser, eller du var til
@@ -177,8 +179,8 @@ Ved alt, hvad helligt er, i Himmel Jord og Hav,
 At før skal Dovre sig for Nordens Storme bøie,
 Før jeg uhevnet taaler denne Streg,
 Som ingen anden (derpaa tør jeg sværge)
-Har spilled mig end de fordømte Dverge'' &mdash;
-,,&mdash; Ja! ved min Hammer!'' brølte Thor, ,,skal jeg - - &mdash;''
+Har spilled mig end de fordømte Dverge'' —
+,,— Ja! ved min Hammer!'' brølte Thor, ,,skal jeg - - —''
 ,,Saa sagte, kiere Søn! du kan dig let forgribe,''
 Blev Odin ved; ,,Viid, hvem jeg er og du!
 Nys slog din studse Tølper mig i tu
@@ -497,7 +499,7 @@ Men Sagen er at giennembryde det!'' -
 Og derpaa førte han igiennem mange Huler,
 Hvor Nattens Troldpak sig for Dagens Konge skiuler,
 Herr Bolverk til et Sted, saa rædsomt, sort og fuult,
-At <b>Miltons</b> Helvede mod det er lyseguult. &mdash;<note>Jvf. <a person="milton">Miltons</a> (1608-1674) <a work="milton/1667"><i>Paradise Lost</i></a>.</note>
+At <b>Miltons</b> Helvede mod det er lyseguult. —<note>Jvf. <a person="milton">Miltons</a> (1608-1674) <a work="milton/1667"><i>Paradise Lost</i></a>.</note>
 ,,Her,'' sagde Bauge, ,,dersom du kan slippe
 En Bagatel af en syv otte Miil
 Dybt ind i denne gamle Klippe:
@@ -968,10 +970,11 @@ Nye Miød sprang frem i samme Øieblik.
 Det halve af den Miød, den gavmild skienkte dig,
 O! du, min norske Ven! de danske Musers Ære!<note>Den norske ven er <a person="pram">Chr. Henriksen Pram</a> (1756-1821), Baggesens velynder.</note>
 Hvor vilde jeg da vis paa Digter-Krandsen være!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2002110103">
+<text id="baggesen2002110103">
 <head>
    <title>Katten, eller Elskovs Magt</title>
    <firstline>De kiere Katte er' slet ikke mine Folk</firstline>
@@ -982,6 +985,7 @@ Hvor vilde jeg da vis paa Digter-Krandsen være!
    <source pages="47-74"/>
 </head>
 <body>
+<poetry>
 De kiere Katte er' slet ikke mine Folk.
 Jeg skyer dem meer end Mørkets Ild-Krabater,
 End Østers, usiet Melk, og Mecenater,
@@ -1206,7 +1210,7 @@ Det er at sige, at staae op igien;
 Thi døe er ingen Sag - det kan jo paa min Ære
 Hvem det skal være;
 At leve derimod, see, det er Tingen!
-Det kan i vore Tider næsten ingen &mdash;<note>næsten] uæsten</note>
+Det kan i vore Tider næsten ingen —<note>næsten] uæsten</note>
 At sige naar det galdt; jeg ikke regner den,
 Som kan gaae i sin Seng, og kan staae op igien
 Foruden Farlighed, og ei alleene leve;
@@ -1561,10 +1565,11 @@ Og Digterne skal deres Penne spise
 For at udfinde Ord, som rime sig paa <b>umf</b>,
 Naar de dig vil i al din Høihed prise,
 Og synge Eventyr om <b>Amor i Triumf</b>.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2002122301">
+<text id="baggesen2002122301">
 <head>
    <title>Deucalion og Pyrrha</title>
    <toctitle>Deucalion og Pyrrha</toctitle>
@@ -1577,6 +1582,7 @@ Og synge Eventyr om <b>Amor i Triumf</b>.
    <source pages="77-100"/>
 </head>
 <body>
+<poetry>
 <center><nonum><b>Første Deel</b></nonum></center>
 
 Om første Verdens Undergang fortæl,
@@ -1618,7 +1624,7 @@ Tre Gange skialv Olymp. <i>Zeus</i> taler saa fra Thronen:
 ,,Jeg i min Levetid har aldrig været før
 Saa bange, som i denne Tid, for Kronen,
 
-Ei selv den Gang de rasende <i>Kottoner</i>,<note>* Giganter. <i>Kottos</i> var een af de Kiemper, som bestormede Himmelen.<br/>Οἳ δ᾽ ἄῤ ἐνὶ πρώτοισι μάχην δριμεῖαν ἔγειραν<br/>Κόττος<br/>Hesiod. Deor. Gen. v. 713. etc.<!-- Dette er fra Hesiods Theogonien, hvilket betyder gudefødslen. Deor. Gen. er den latinske titel. --><!-- http://www.sacred-texts.com/cla/hesiod/gtheo.htm--></note>
+Ei selv den Gang de rasende <i>Kottoner</i>,<note>* Giganter. <i>Kottos</i> var een af de Kiemper, som bestormede Himmelen.<br/>Οἳ δ᾽ ἄῤ ἐνὶ πρώτοισι μάχην δριμεῖαν ἔγειραν<br/>Κόττος<br/>Hesiod. Deor. Gen. v. 713. etc.<!-- Dette er fra Hesiods Theogonien, hvilket betyder gudefødslen. Deor. Gen. er den latinske titel. --><!-- http://www.sacred-texts.com/cla/hesiod/gtheo.htm--></note>
 Med hundred' Hænder hver, bestormede min Dør,
 <i>Olymper</i> dyngede paa <i>Pelioner</i>,
 Og, dristig klavrende paa disse Bierges Top,
@@ -1648,7 +1654,7 @@ Dem op i deres aabne Øine nu,
 Det slaaer mig aldrig feil, naar een kan spille
 Saaledes Bas med mig, som ved det mindste Puh
 Kan blæse Jorden, Jer, og ham, og alt, som Pudder
-Af Pudderpusteren, i evig Skuddermudder - &mdash;''
+Af Pudderpusteren, i evig Skuddermudder - —''
 
     Den heele Gude-Skare skialv
 Ved disse Torden-Ord af ængstlig Nidkierhed
@@ -2032,12 +2038,14 @@ Skal jeg, som saa, vist give mig den Ære,
 Paa min Façon
 Om <i>Pyrrha</i> samt <i>Deucalion</i>
 Den anden Deel ærbødigst at frembære.
+</poetry>
 </body>
-</poem>
+</text>
 
 <section level="2" id="baggesen2018101601">
 <head>
    <title>Jeppe</title>
+   <subtitle>Et Eventyr</subtitle>
    <toctitle>Jeppe. Et Eventyr</toctitle>
    <indextitle>Jeppe</indextitle>
    <linktitle>Jeppe</linktitle>
@@ -2049,7 +2057,7 @@ Den anden Deel ærbødigst at frembære.
 </head>
 <content>
 
-<poem id="baggesen2002122501">
+<text id="baggesen2002122501">
 <head>
    <title>Første Capitel</title>
    <toctitle>Første Capitel</toctitle>
@@ -2060,6 +2068,7 @@ Den anden Deel ærbødigst at frembære.
    <source pages="103-109"/>
 </head>
 <body>
+<poetry>
 
 <center><nonum><sc>Indhold</sc></nonum></center>
 
@@ -2205,10 +2214,11 @@ Jus-Talionisk vor <i>Xantipp'</i> om Ørerne
 At hun ei svared' et til tusinde -
 Paa Gulvet tumled' om den hidsige Matrone,
 For første Gang nedstødt fra konelige Throne.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2002122502">
+<text id="baggesen2002122502">
 <head>
    <title>Andet Capitel</title>
    <linktitle>Jeppe. Andet Capitel</linktitle>
@@ -2218,6 +2228,7 @@ For første Gang nedstødt fra konelige Throne.
    <source pages="110-118"/>
 </head>
 <body>
+<poetry>
 <nonum><center><sc>Indhold</sc></center></nonum>
 
         Lidt meer om Heltens Tilstand. Et par Ord
@@ -2393,10 +2404,11 @@ Og han hug til igien. ,,Ja, ja! pas paa! pas paa!
 At vi har spaaet dig sandt, du snart at see vil faa'' -
 Hyp! hyp! - nu kommer den - hyp! hyp! - og krak! krak! krak!
 Der laae vor <i>Jeppe</i> - Greenen knak.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2002122601">
+<text id="baggesen2002122601">
 <head>
    <title>Tredie Capitel</title>
    <linktitle>Jeppe. Tredie Capitel</linktitle>
@@ -2406,6 +2418,7 @@ Der laae vor <i>Jeppe</i> - Greenen knak.
    <source pages="118-126"/>
 </head>
 <body>
+<poetry>
 <center><nonum><sc>Indhold</sc></nonum></center>
 
         Skielv altid, usle, svage Dødelige,
@@ -2574,10 +2587,11 @@ Og denne Kunst kan Klauser ikke,
 Om de endogsaa kunde giøre Guld.
 Hvor stor min Helt seer ud fra denne Side
 Skal Læseren nu faae at vide.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2003010701">
+<text id="baggesen2003010701">
 <head>
    <title>Fierde Capitel</title>
    <linktitle>Jeppe. Fierde Capitel</linktitle>
@@ -2587,6 +2601,7 @@ Skal Læseren nu faae at vide.
    <source pages="126-134"/>
 </head>
 <body>
+<poetry>
 <center><nonum><sc>Indhold</sc></nonum></center>
 
         En Herremand og Kudsk fremviise sig;
@@ -2768,10 +2783,11 @@ Men <i>Jeppe</i> hører ei et Ord;
 Hvor har du været henne, Kiøter?'' -
 Saa blev hun ved i fulde tre Qvarteer,
 Og endelig sov hen, da hun ei kunde meer.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2003010801">
+<text id="baggesen2003010801">
 <head>
    <title>Femte Capitel</title>
    <linktitle>Jeppe. Femte Capitel</linktitle>
@@ -2781,6 +2797,7 @@ Og endelig sov hen, da hun ei kunde meer.
    <source pages="135-139"/>
 </head>
 <body>
+<poetry>
 <center><nonum><sc>Indhold</sc></nonum></center>
 
         <i>Aurores</i> Ankomst giør en Hoben Vind,
@@ -2881,10 +2898,11 @@ Og konfunderer Jorden med min Hat,
 Naar Røgen er forbi jeg ydmyg synker ned.
 Sligt Spring imellem paa sit rette Sted
 Jeg haaber Læseren mig her og der forlader.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2003011002">
+<text id="baggesen2003011002">
 <head>
    <title>Siette Capitel</title>
    <linktitle>Jeppe. Siette Capitel</linktitle>
@@ -2895,6 +2913,7 @@ Jeg haaber Læseren mig her og der forlader.
    <source pages="140-151"/>
 </head>
 <body>
+<poetry>
 <center><nonum><sc>Indhold</sc></nonum></center>
 
         Et Billede paa Seirens stolte Fryd;
@@ -2939,7 +2958,7 @@ Med mindre du igien mig høflig to betaler;
 Du borger Solens Lys; men Sæbe-Solen lig
 Du svinder bort mens man betragter dig;
 Et Øieblik, og al din Flitterglands forgaaer
-Og er hvad &mdash; &mdash; s Vers er om en halv Snees Aar.
+Og er hvad — — s Vers er om en halv Snees Aar.
 
     Man mærker her, at jeg og Lykke ei er Venner,
 Skiønt virkelig jeg ei, desværr'! Personen kiender;
@@ -3139,10 +3158,11 @@ Her er saa smukt, saa smukt, og jeg er meget glad.''
 At snakke med sig selv. Den har saa mange Helte.
 Man seer deraf han var ei ganske Nar;
 Men kunde raisonnere, naar det gieldte.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2003011003">
+<text id="baggesen2003011003">
 <head>
    <title>Syvende Capitel</title>
    <linktitle>Jeppe. Syvende Capitel</linktitle>
@@ -3151,6 +3171,7 @@ Men kunde raisonnere, naar det gieldte.
    <source pages="151-159"/>
 </head>
 <body>
+<poetry>
 <center><nonum><sc>Indhold</sc></nonum></center>
 
         Et nyt Spilop, hvoraf man seer med Sorg,
@@ -3186,7 +3207,7 @@ Gientoge de, vær ikke slet saa kiæk!
 Med Lempe faaer man Æg i Hummelsæk,
 Og med det Gode kan man alting faae;
 <i>Peer Asen</i>, siger I! Hvad han?
-<nonum><right>,,Har Fanden taget.'' &mdash;</right></nonum>
+<nonum><right>,,Har Fanden taget.'' —</right></nonum>
 For meget lidt, saamænd, han sig da har umaget!
 ,,Og hvis I ei paa Stand mig siger hvor han er -
 Jeg veed I kan, Jer Prophesie, desværr'!
@@ -3337,10 +3358,11 @@ Got, sagde <i>Jeppe</i>, gaae nu hvor du vil!
 Nu har du mig igien hvad du mig kosted' givet;
 Saa tog han Grimen af, gav ham et Afskeeds Smæk,
 Og dermed gik han glad fra sin Bormester væk.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2003011101">
+<text id="baggesen2003011101">
 <head>
    <title>Ottende Capitel</title>
    <linktitle>Jeppe. Ottende Capitel</linktitle>
@@ -3350,6 +3372,7 @@ Og dermed gik han glad fra sin Bormester væk.
    <source pages="160-168"/>
 </head>
 <body>
+<poetry>
 <center><nonum><sc>Indhold</sc></nonum></center>
 
         Vor Helt, trods alle sine tyve Daler,
@@ -3484,7 +3507,7 @@ Hvad skader dig? hvorfore skielver du?
 Nu kan du jo paa al din Mangel bode!
 Du kan jo være ubekymret nu!
 Betænk, du eier reene tyve Daler!
-Frisk, <i>Jeppe!</i> syng din gamle Viise! hei!'' &mdash;
+Frisk, <i>Jeppe!</i> syng din gamle Viise! hei!'' —
 Saaledes han sig selv opmuntrende tiltaler;
 Men Stemmen slaaer ham feil, og synge kan han ei.
 ,,Gid jeg nu vidste hvad jeg skulde giøre
@@ -3537,10 +3560,11 @@ Jeg veed ei selv hvordan; det gik og kom
 Og kom og gik,
 Saalænge til, før Helten saae sig om,
 Han for sin Koe de tyve Daler fik.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2003011102">
+<text id="baggesen2003011102">
 <head>
    <title>Niende Capitel</title>
    <linktitle>Jeppe. Niende Capitel</linktitle>
@@ -3550,6 +3574,7 @@ Han for sin Koe de tyve Daler fik.
    <source pages="169-179"/>
 </head>
 <body>
+<poetry>
 <center><nonum><sc>Indhold</sc></nonum></center>
 
         Man høster ikke altid, hvor man saaede.
@@ -3780,10 +3805,11 @@ Og traved' rundten om paa Gaden
 For at faae fat paa den omtalte Hund.
 
     Nu puster man igien en liden Stund.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="baggesen2003011103">
+<text id="baggesen2003011103">
 <head>
    <title>Tiende Capitel</title>
    <breadcrumbtitle>Tiende Capitel</breadcrumbtitle>
@@ -3793,6 +3819,7 @@ For at faae fat paa den omtalte Hund.
    <source pages="180-196"/>
 </head>
 <body>
+<poetry>
 <center><nonum><sc>Indhold</sc></nonum></center>
 
         Den Læser, som har fulgt mig hidindtil,
@@ -4159,8 +4186,9 @@ Som hun anstændig kunde leve for.
 Saa gaaer det, Læser! overalt paa Jorden.
 Den lyse Phæbus smiler efter Torden,
 Og Rosen efter Regn fremblomstrer meere rød.
+</poetry>
 </body>
-</poem>
+</text>
 </content>
 </section>
 </workbody>

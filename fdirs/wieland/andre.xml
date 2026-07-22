@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="wieland" status="incomplete" type="poetry">
 <workhead>
    <title>Andre digte</title>
-   <year>?</year>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="wieland2001102401">
+<text id="wieland2001102401">
 <head>
    <title>Endymions Traum</title>
    <toctitle>Endymions Traum</toctitle>
@@ -16,6 +13,7 @@
    <firstline>Wo blieb auch, hätte nicht ein Maler und Poet</firstline>
 </head>
 <body>
+<poetry>
     Wo blieb auch, hätte nicht ein Maler und Poet
 Das Recht, ins Schönere zu malen,
 Die Zauberey des schönen Idealen?
@@ -78,10 +76,11 @@ Gepolstert, weich, und röther als Korallen,
 Statt Locken, die herab bis an die Hüften wallen,
 Ein wollicht Haar, von selbst gekräus't,
 Und Zähne, wie man sie gern hat und gerne weis't.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="wieland2001102402">
+<text id="wieland2001102402">
 <head>
    <title>Prolog zum Solimann</title>
    <subtitle>
@@ -93,6 +92,7 @@ Und Zähne, wie man sie gern hat und gerne weis't.
    <firstline>Von allen Sterblichen die diesen Erdenball</firstline>
 </head>
 <body>
+<poetry>
     Von allen Sterblichen die diesen Erdenball
 Zum Schauplatz ihrer Thorheit machen,
 Und zum beweinen viel, doch zehnmal mehr zum lachen
@@ -157,10 +157,11 @@ So möge wenigstens das eyfrigste Bemühn
 Euch zu vergnügen, uns den Weg zu eurem Beyfall bahnen,
 Und heißt das Schicksal uns aus euren Mauern ziehn,
 So denkt mit Huld an <i>Roxelanen</i>!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="wieland2001102403">
+<text id="wieland2001102403">
 <head>
    <title>Das Gärtlein still vom Busch umhegt</title>
    <toctitle>Das Gärtlein still vom Busch umhegt</toctitle>
@@ -168,6 +169,7 @@ So denkt mit Huld an <i>Roxelanen</i>!
    <firstline>Das Gärtlein still vom Busch umhegt</firstline>
 </head>
 <body>
+<poetry>
 Das Gärtlein still vom Busch umhegt,
 Das jeden Monat Rosen trägt,
 Das gern den Gärtner in sich schließt,
@@ -179,10 +181,11 @@ Der ohne Licht zur Grube fährt,
 Der immer wirkt und immer schafft,
 Bis er erlahmt, bis er erschlafft,
 Er lebe hoch.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="wieland2001102404">
+<text id="wieland2001102404">
 <head>
    <title>Erdenglück</title>
    <subtitle>An Chloe</subtitle>
@@ -191,6 +194,7 @@ Er lebe hoch.
    <firstline>Hüpfend, wie das Blut in deinen Adern, scherzet</firstline>
 </head>
 <body>
+<poetry>
 Hüpfend, wie das Blut in deinen Adern, scherzet,
 Chloe, deine Seel' ihr Daseyn hin;
 Keine Ahndung ferner Übel schwärzet
@@ -256,10 +260,11 @@ Leichte Träum' unwesentlicher Lust!
 Nur von fern aus offnem Himmel sehn;
 Diesseits her versetzt, sind eure Früchte - Blätter,
 Die mit leerem Schmuck das Auge hintergehn!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="wieland2001102405">
+<text id="wieland2001102405">
 <head>
    <title>Aspasia</title>
    <subtitle>
@@ -271,6 +276,7 @@ Die mit leerem Schmuck das Auge hintergehn!
    <firstline>Schön, liebenswerth, mit jedem Reitz geschmückt</firstline>
 </head>
 <body>
+<poetry>
     <nonum><wrap>Dieses Gedicht lag (beynahe so lang als Horaz will, daß ein jeder Dichter seine Werke zurück halten soll) unter einem Haufen von Concepten, Skizzen, Torso's u. s. w. zur Vergessenheit verurtheilt; und dort würden wir es ruhig haben vermodern lassen, wenn nicht gewisse neueste Begebenheiten (von welchen wir vielleicht künftig unsern Lesern umständliche Nachricht mittheilen können) Witz und Laune aufzufordern schienen, eine Schwärmerey, welche durch die Ansteckung gefährlicher werden könnte, als viele sich vorstellen, durch die einzigen Mittel, die von je her gegen diese Krankheit bewährt erfunden worden, durch Scherz und Ironie anzugreifen. In dieser Rücksicht hat man nicht übel zu thun geglaubt, wenn man diese scherzhafte Erzählung - weil sie doch einmal da war - aus dem Staube hervorzöge, in den Merkur einrückte, und würken liesse was sie kan. Vor der Beschuldigung unlautrer Absichten hoffen wir, wenigstens von Seiten aller Vernünftigen, sicher zu seyn: und den Nattern, wer wollte diesen wehren, aus allem Gift zu ziehen, oder alles mit ihrem eigenthümlichen Gift zu begeifern? - Uebrigens finden wir noch nöthig anzumerken, daß, da dieses Gedicht schon vor mehrern Jahren verurtheilt worden war unterdrückt zu werden, einige Stellen und Züge desselben, welche um Gnade zu bitten schienen, in den <i>Combabus</i> und in den <i>Amadis</i> aufgenommen worden. Erinnert man sich nicht, sie schon gelesen zu haben; desto besser! Erinnert man sich dessen, so wird die Vergleichung zeigen, daß sie hier an ihrem eigentlichen Orte stehen.</wrap></nonum>
 
     ------------------
@@ -650,10 +656,11 @@ Aus der Geschichte noch heraus:
 Allein wir lassen gern den Leser selbst gewähren.
 Wer eine Nase hat - spürt sie unfehlbar aus;
 Die andern können sie entbehren!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="wieland2018042301">
+<text id="wieland2018042301">
 <head>
    <title>Melinde</title>
    <firstline>Melinde hatte siebzehn Jahre schon</firstline>
@@ -663,6 +670,7 @@ Die andern können sie entbehren!
    </notes>
 </head>
 <body>
+<poetry>
 Melinde hatte siebzehn Jahre schon,
 Fern von der Stadt, mit ihrer edeln Mutter
 In froher Mittelmäßigkeit gelebt.
@@ -683,7 +691,7 @@ Ihr zärtliches einnehmend sanftes Lächeln
 In deine Augen goß, und jede Neigung
 In deiner Brust nach ihrem Herzen schuf;
 Dich sahn die Freundinnen, dich sahn die Engel,
-Und liebten dich, und segneten den Jüngling, 
+Und liebten dich, und segneten den Jüngling,
 Den einst dein Blick die Liebe lehren sollte:
 So wuchs in ihrer zärtlich edeln Mutter
 Umarmung, unter liebreichweisen Lehren,
@@ -716,7 +724,7 @@ Der Augenblick, da sie sich weiblich fühlte.
 
 Ismene war Elvirens beste Freundin,
 Zwei gleiche Seelen, die der Stand nur schied.
-Ismenens Güter gränzten an das Landhaus, 
+Ismenens Güter gränzten an das Landhaus,
 Wo sich Elvire mit der Tochter aufhielt.
 Melinde gab Ismenen oft Besuch;
 Sie war so sicher in der Freundin Schutz,
@@ -749,7 +757,7 @@ Und bei des Gabalis Sylphiden<note>Gabalis Sylphiden. Der Abbé de Villars (geb.
 Es war, als ob aus ihren fühlenden
 Gerührten Augen, die nicht heucheln konnten,
 Die Zärtlichkeit sich in sein Herz ergösse.
-Doch die Gewohnheit regelloser Triebe, 
+Doch die Gewohnheit regelloser Triebe,
 Melindens Stand, der unter seinem war,
 Und Hoffnung, sie auf den gewohnten Fuß,
 Mit einer Wollust, die dem Lasterhaften
@@ -780,7 +788,7 @@ Schon schwang die Nacht ihr sterniges Gefieder
 Um die Natur, schon lag Elvir' im Schlummer,
 Als sie, den Schlaf umsonst zu Hülfe rufend,
 Mit ihrem bangen Herzen sich besprach:
-»Wie ist's mit dir? Warum entflieht die Ruhe 
+»Wie ist's mit dir? Warum entflieht die Ruhe
 Aus deiner Brust, der Schlaf von deinen Augenliedern?
 Was raubt der Unschuld heitre Stille dir,
 Zu schwaches Herz? – O könnt' ich es mir selbst verhehlen!
@@ -811,7 +819,7 @@ In welcher sel'gen Einfalt lebten wir
 Fern von der Welt, vergnügt mit unsrer Liebe,
 In diesen Thälern, wo die freie Tugend
 Sich vor der Thorheit und dem Laster einschließt!
-O welche neue Hoffnungen verbreiten 
+O welche neue Hoffnungen verbreiten
 Ihr glänzendes Gefieder um mich her!
 O Liebe! allzu schön erscheinst du mir!
 In welcher Seraphsmiene seh' ich dich
@@ -843,7 +851,7 @@ O Unschuld und o Liebe, dich entweihe!«
 
 So irrte, zwischen Furcht und Hoffnung schwankend,
 Das arme Kind, getäuscht von seinem Herzen,
-Die ganze Nacht in fieberhaften Träumen. 
+Die ganze Nacht in fieberhaften Träumen.
 Die Morgenröthe fand sie wach und sorgend,
 Und Thränen glänzten in den matten Augen,
 Wie Morgenthau im Schooß der Blumen glänzt.
@@ -875,7 +883,7 @@ Lysander schien ihr ihres ganzen Herzens
 Vollkommen werth; auch war er's, hätte nicht
 Die Macht der zügellosen Sinnlichkeit
 Ihm den Geschmack an reinern Freuden längst
-Geraubt, und Unschuld ihm und Tugend als 
+Geraubt, und Unschuld ihm und Tugend als
 Phantomen vorgespiegelt, denen nur
 Ein Thor sich selbst und sein Vergnügen opfert.
 Allein Melindens Unerfahrenheit
@@ -907,7 +915,7 @@ Polirten Spiegeln gleich, auf deren Fläche
 Der helle Mond sein zitternd Bildniß wirft.
 Hier ging Melinde, wie es schien, allein;
 Doch, wie sie glaubte, in der unsichtbaren,
-Dem Geist, der leiser fühlt, nur merklichen 
+Dem Geist, der leiser fühlt, nur merklichen
 Gesellschaft ihrer himmlischen Gespielen.
 Auch war die Unschuld und die holde Liebe
 An ihrer Seite mit der süßen Stille,
@@ -940,7 +948,7 @@ Der hellen Nacht, der frohen Einsamkeit,
 Der Schöpferin der schönsten Hoffnungen!
 Wie fühlt mein Herz sich selbst und seinen Adel!
 Welch eine himmlische Zufriedenheit,
-O Unschuld, lächelst du in meine Seele! 
+O Unschuld, lächelst du in meine Seele!
 Mit welcher Ruhe, frei von lüsternen
 Aufwallungen der wünschenden Begierden,
 Seh' ich in euch, ihr goldnen Tage, hin,
@@ -972,7 +980,7 @@ Der Grotte, wo der Liebenswürdigen
 So wenig von dem nahen Unglück schwante.
 
 »Wie weich ist jetzt ihr Herz? gewiß sie fühlt,
-Fühlt deinen Einfluß, wollustathmende Natur! 
+Fühlt deinen Einfluß, wollustathmende Natur!
 Die tiefe Ruhe, die gewognen Schatten,
 Die Luft von Nachtthau frisch und lieblich düftend,
 Die melancholischen verliebten Lieder
@@ -1004,7 +1012,7 @@ Und Zärtlichkeit, und Angst und Abscheu beben
 Auf einmal durch ihr überraschtes Herz.
 Jetzt sieht sie ihn wehmüthig zärtlich an,
 Mit einem Blick, der auch dem Wildesten
-Gefühl der Tugend hätte geben sollen; 
+Gefühl der Tugend hätte geben sollen;
 Allein Lysandern gab er nichts, als was
 Ihn stärker spornte, sich die Zärtlichkeit
 Und die Verwirrung des zu schwachen Mädchens
@@ -1036,7 +1044,7 @@ Des Jünglings mit beschnittnen Nägeln straft.
 Jetzt sah sie keine Rettung, als mit Thränen
 Und bangem Flehn sein Mitleid zu erregen.
 In ängstlicher Verwirrung fällt sie ihm
-Zu Fuß, und ringt die zarten Rosenarme, 
+Zu Fuß, und ringt die zarten Rosenarme,
 Und spricht mit einer Stimm', aus welcher Unschuld
 Und Angst und Wehmuth felsenrührend tönen:
 
@@ -1068,7 +1076,7 @@ Der frohen Einfalt, der ich sorgenfrei,
 Gleich einem Kind, im sichern Schooße lag?
 Da war ich glücklich. Keine Wünsch' empörten
 Mein heitres Herz, der Himmel war allein
-Der Gegenstand der zärtlichen Begierden. 
+Der Gegenstand der zärtlichen Begierden.
 O warum mußtest du mich lieben lehren?
 Die falsche Liebe, die mir Unerfahrnen
 Entzückungen und Paradiese zeigte,
@@ -1099,7 +1107,7 @@ Im Thor der Ewigkeit wirst du, erschüttert
 Von Seelenangst, in deine Zeit zurücksehn.
 O! wie verächtlich werden dir alsdann
 Die Triebe seyn, die deiner Trunkenheit
-Jetzt würdig scheinen, ihnen Ehr' und Tugend, 
+Jetzt würdig scheinen, ihnen Ehr' und Tugend,
 Und deine Seele und Melindens Unschuld
 Für einen Augenblick dahinzugeben!
 Bezähme dich, Lysander, flieh' von hier,
@@ -1132,7 +1140,7 @@ Die ihre Thränen unverräthrisch aufnimmt.
 
 Lysander, tiefgerührt von dieser Scene,
 Von ihrem Reiz, den die erhabne Tugend
-Verehrungswürdig macht, und von der Rede, 
+Verehrungswürdig macht, und von der Rede,
 Die ihn mit ihren ängstlichen Accenten,
 Stets wo er war, umtönte, wollte zwar,
 Den Frevel auszulöschen, dessen Bild
@@ -1145,8 +1153,9 @@ Beschloß sie ihrer Tage Ueberrest
 In einer Zelle den Betrachtungen
 Der Ewigkeit zu leben, und die Triebe
 Der reinsten Brust dem Himmel nur zu weihen.
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="lucidor" status="incomplete" type="poetry">
 <workhead>
    <title>Andre digte</title>
-   <year>?</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="lucidor2001051001">
+<text id="lucidor2001051001">
 <head>
    <title>14:e visan</title>
    <toctitle>14:e visan</toctitle>
@@ -18,6 +15,7 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Nyss när Frigga satt i bade
 had´ hon Astrild i sitt sköt
 var han ljuvste fröjd åtnjöt
@@ -94,7 +92,8 @@ efter hon förundrar sig
 att nu bara barnen veta
 allt vad kvinnfolk så fördolt
 ha med kjorteln överhålt.
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1816a" author="byron" status="incomplete" type="poetry">
 <workhead>
    <title>The Prisoner of Chillon and other poems</title>
    <year>1816</year>
    <quality>korrektur1,korrektur2,kilde</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="byron2002021401">
+<text id="byron2002021401">
 <head>
    <title>Stanzas to [Augusta]</title>
    <toctitle>Stanzas to [Augusta]</toctitle>
@@ -21,6 +19,7 @@
    <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
+<poetry>
 Though the day of my destiny's over,
     And the star of my fate hath declined,
 Thy soft heart refused to discover
@@ -74,10 +73,11 @@ In the desert a fountain is springing,
     In the wide waste there still is a tree,
 And a bird in the solitude singing,
     Which speaks to my spirit of <i>thee</i>.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="byron2017090401">
+<text id="byron2017090401">
 <head>
    <title>The Dream</title>
    <firstline>Our life is twofold: Sleep hath its own world</firstline>
@@ -87,6 +87,7 @@ And a bird in the solitude singing,
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I.
 Our life is twofold: Sleep hath its own world,
 A boundary between the things misnamed
@@ -129,7 +130,7 @@ Was crowned with a peculiar diadem
 Of trees, in circular array, so fixed,
 Not by the sport of nature, but of man:
 These two, a maiden and a youth, were there
-Gazing—the one on all that was beneath 
+Gazing—the one on all that was beneath
 Fair as herself—but the Boy gazed on her;
 And both were young, and one was beautiful:
 And both were young—yet not alike in youth.
@@ -139,7 +140,7 @@ The Boy had fewer summers, but his heart
 Had far outgrown his years, and to his eye
 There was but one belovéd face on earth,
 And that was shining on him: he had looked
-Upon it till it could not pass away; 
+Upon it till it could not pass away;
 He had no breath, no being, but in hers;
 She was his voice; he did not speak to her,
 But trembled on her words; she was his sight,
@@ -312,8 +313,9 @@ Almost like a reality—the one
 To end in madness—both in misery.
 
 <nonum><right>July, 1816.</right></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

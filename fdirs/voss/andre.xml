@@ -2,16 +2,16 @@
 <kalliopework id="andre" author="voss" status="incomplete" type="poetry">
 <workhead>
    <title>Andre digte</title>
-   <year>?</year>
 </workhead>
 <workbody>
 
-<poem id="voss2019122301">
+<text id="voss2019122301">
 <head>
     <title>Freundschaftsbund</title>
     <firstline>Im Hut der Freiheit stimmet an</firstline>
 </head>
 <body>
+<poetry>
 Im Hut der Freiheit stimmet an
 Voll Ernst der Freundschaft Lied!
 Der ist, bei Gott! kein Ehrenmann,
@@ -80,11 +80,12 @@ Und teilen Freud' und Not!
 Sei dieser Kuß der Freundschaft Pfand
 Durch Leben und durch Tod!
 Wie David seinen Jonathan,
-Und Voß dich, Stolberg, liebgewann!    
+Und Voß dich, Stolberg, liebgewann!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="voss2019122302">
+<text id="voss2019122302">
 <head>
     <title>An Miller</title>
     <subtitle>November 1772.</subtitle>
@@ -94,6 +95,7 @@ Und Voß dich, Stolberg, liebgewann!
     </notes>
 </head>
 <body>
+<poetry>
 Mein allerliebster Miller,
 Wer hat dich Ton und Triller
 So silberrein gelehrt,
@@ -120,9 +122,10 @@ Doch endlich überwinden,
 Die unerbittlich ist!
 Sie soll mit zwanzig Küssen
 Dich einst bezahlen müssen!
-Doch wenn du sittsam bist.    
+Doch wenn du sittsam bist.
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

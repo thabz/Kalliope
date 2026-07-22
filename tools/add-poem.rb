@@ -16,60 +16,51 @@ end
 folder = "fdirs/#{poetid}"
 workfilename = "#{folder}/#{workid}.xml"
 
-if (!File.directory?(folder)) 
+if (!File.directory?(folder))
     abort("Mappen #{folder} findes ikke.")
 end
 
 if workid == 'andre' and !File.file?(workfilename)
-    # Opret filen andre.xml
-    andrexml = %{<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
-<kalliopework id="#{workid}" author="#{poetid}" status="incomplete" type="poetry">
-<workhead>
-    <title>Andre digte</title>
-    <year>?</year>
-</workhead>
-<workbody>
-</workbody>
-</kalliopework>}
-
-    File.open(workfilename, "w") { |file|
-        file.write(andrexml)
-    }
+    `./tools/add-work.rb #{poetid} andre`
 elsif !File.file?(workfilename)
     abort("#{workfilename} findes ikke.")
 end
 
-contents = File.read(workfilename)
 
+allcontents = Dir["#{folder}/*.xml"].map{ |f|
+    File.read(f)
+}.join " "
 poemId = '';
 date = Time.now.strftime("%Y%m%d")
 num = 1
 done = false
 while (!done)
     poemId = "#{poetid}#{date}%02d" % [num]
-    if not contents.include? poemId
+    if not allcontents.include? poemId
         done = true
-    else 
+    else
         num += 1
     end
 end
 
 puts "Poem id #{poemId}"
 
+contents = File.read(workfilename)
 prefix = ""
-if not contents.include?("<poem")
+if not contents.include?("<text")
     prefix = "\n"
 end
 
-textxml = %{#{prefix}<poem id="#{poemId}">
+textxml = %{#{prefix}<text id="#{poemId}">
 <head>
     <title></title>
     <firstline></firstline>
 </head>
 <body>
+<poetry>
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>}
 
@@ -78,4 +69,3 @@ contents.gsub! "</workbody>", textxml
 File.open(workfilename, "w") { |file|
     file.write(contents)
 }
-

@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="novalis" status="incomplete" type="poetry">
 <workhead>
    <title>Andre digte</title>
-   <year>?</year>
 </workhead>
 <workbody>
 
-<poem id="novalis2019010901">
+<text id="novalis2019010901">
 <head>
    <title>Wenn nicht mehr Zahlen und Figuren</title>
    <firstline>Wenn nicht mehr Zahlen und Figuren</firstline>
@@ -17,6 +15,7 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Wenn nicht mehr Zahlen und Figuren
 Sind Schlüssel aller Kreaturen
 Wenn die, so singen oder küssen,
@@ -28,9 +27,10 @@ Zu ächter Klarheit werden gatten,
 Und man in Mährchen und Gedichten
 Erkennt die wahren Weltgeschichten,
 Dann fliegt vor Einem geheimen Wort
-Das ganze verkehrte Wesen fort.    
+Das ganze verkehrte Wesen fort.
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

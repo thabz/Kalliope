@@ -1,22 +1,25 @@
-// @flow
-import React, { useState, useEffect, useContext } from 'react';
+import { useEffect, useState } from 'react';
 import CommonData from '../common/commondata.js';
-import TextContent from './textcontent.js';
-import { CloseButton, LeftArrow, RightArrow } from './icons.js';
-import type { PictureItem } from '../common/types.js';
+import * as ImagePaths from '../common/imagepaths.js';
+import { CloseButton, DownArrow, LeftArrow, RightArrow } from './icons.js';
+import { FigCaption } from './picture.js';
 
-const BiggerPicture = ({ picture }: { picture: PictureItem }) => {
+const filenameFromSrc = (src) => {
+  const path = src.split('?')[0];
+  return path.substring(path.lastIndexOf('/') + 1);
+};
+
+const BiggerPicture = ({ picture }) => {
   const src = picture.src;
-  const fallbackSrc = src.replace(/\/([^\/]+).jpg$/, (m, p1) => {
-    return '/t/' + p1 + CommonData.fallbackImagePostfix;
-  });
+  const fallbackSrc = ImagePaths.fallbackThumbnailSrc(
+    src,
+    CommonData.fallbackImagePostfix
+  );
   const srcSet = CommonData.availableImageFormats
-    .map(ext => {
+    .map((ext) => {
       return CommonData.availableImageWidths
-        .map(width => {
-          const filename = src
-            .replace(/.jpg$/, `-w${width}.${ext}`)
-            .replace(/\/([^\/]+)$/, '/t/$1');
+        .map((width) => {
+          const filename = ImagePaths.thumbnailSrc(src, width, ext);
           return `${filename} ${width}w`;
         })
         .join(', ');
@@ -33,19 +36,31 @@ const BiggerPicture = ({ picture }: { picture: PictureItem }) => {
     pictureClassName += ' oval-mask';
     imgClassName += ' oval-mask';
   }
+
+  let clipPathStyle = {};
+  let clipPathDropShadowStyle = {};
+  if (picture.clipPath != null) {
+    clipPathStyle = {
+      clipPath: picture.clipPath,
+      WebkitClipPath: picture.clipPath,
+    };
+    clipPathDropShadowStyle = {
+      filter: 'drop-shadow(4px 4px 12px #888)',
+    };
+  }
+
   return (
-    <figure className="overlay-figure">
-      <img src={fallbackSrc} className={imgClassName} alt={alt} />
-      <figcaption>
-        <TextContent contentHtml={picture.content_html} contentLang="da" />
-      </figcaption>
+    <figure className="overlay-figure" style={clipPathDropShadowStyle}>
+      <img
+        src={fallbackSrc}
+        className={imgClassName}
+        alt={alt}
+        style={clipPathStyle}
+      />
+      <FigCaption picture={picture} />
       <style jsx>{`
         figure {
           margin: 0;
-        }
-        figcaption {
-          margin-top: 16px;
-          line-height: 1.5;
         }
         .oval-mask {
           border-radius: 50%;
@@ -61,34 +76,29 @@ const BiggerPicture = ({ picture }: { picture: PictureItem }) => {
   );
 };
 
-type Props = {
-  pictures: Array<PictureItem>,
-  startIndex: number,
-  closeCallback: () => void,
-};
-const PictureOverlay = ({ pictures, startIndex, closeCallback }: Props) => {
+const PictureOverlay = ({ pictures, startIndex, closeCallback }) => {
   const [currentIndex, setCurrentIndex] = useState(startIndex);
 
-  const hideOverlay = (e: Event) => {
+  const hideOverlay = (e) => {
     e.preventDefault();
     closeCallback();
   };
 
-  const onRightClick = (e: Event) => {
+  const onRightClick = (e) => {
     if (currentIndex < pictures.length - 1) {
       setCurrentIndex(currentIndex + 1);
     }
     e.stopPropagation();
   };
 
-  const onLeftClick = (e: Event) => {
+  const onLeftClick = (e) => {
     if (currentIndex > 0) {
       setCurrentIndex(currentIndex - 1);
     }
     e.stopPropagation();
   };
 
-  const onKeyUp = (e: KeyboardEvent) => {
+  const onKeyUp = (e) => {
     if (e.keyCode === 27) {
       hideOverlay(e);
     } else if (e.keyCode === 37) {
@@ -100,7 +110,7 @@ const PictureOverlay = ({ pictures, startIndex, closeCallback }: Props) => {
     }
   };
 
-  const eatClick = (e: MouseEvent) => {
+  const eatClick = (e) => {
     e.stopPropagation();
   };
 
@@ -122,7 +132,7 @@ const PictureOverlay = ({ pictures, startIndex, closeCallback }: Props) => {
     };
   });
 
-  let buttons = [<CloseButton onClick={hideOverlay} />];
+  let buttons = [<CloseButton onClick={hideOverlay} key="close" />];
   if (pictures.length > 1) {
     buttons.push(
       <RightArrow
@@ -140,6 +150,16 @@ const PictureOverlay = ({ pictures, startIndex, closeCallback }: Props) => {
     );
   }
   const picture = pictures[currentIndex];
+  buttons.push(
+    <a
+      className="download-icon"
+      href={picture.src}
+      download={filenameFromSrc(picture.src)}
+      title="Download originalbillede"
+      key="download">
+      <DownArrow />
+    </a>
+  );
   return (
     <div className="overlay-background" onClick={hideOverlay}>
       <div className="overlay-container" onClick={eatClick}>
@@ -192,14 +212,19 @@ const PictureOverlay = ({ pictures, startIndex, closeCallback }: Props) => {
           top: -15px;
         }
 
-        .overlay-container .overlay-icon svg {
+        .overlay-container .overlay-icon :global(svg),
+        .overlay-container .overlay-icon :global(a.download-icon) {
           display: block;
         }
 
-        :global(.overlay-icon svg.active:hover .icon-background) {
+        .overlay-container .overlay-icon :global(> * + *) {
+          margin-top: 5px;
+        }
+
+        :global(.overlay-icon .active:hover .icon-background) {
           fill: #eee;
         }
-        :global(.overlay-icon svg.active) {
+        :global(.overlay-icon .active) {
           cursor: pointer;
         }
 

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="soetoft" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Nicolai</firstname>
+    <lastname>Søtoft</lastname>
+    <fullname>Nicolai Bierfreund Søtoft</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1790-03-31</date>
+      <place>Assens</place>
+    </born>
+    <dead>
+      <date>1844-06-05</date>
+      <place>Øster Egesborg</place>
+    </dead>
+  </period>
+  <literary-periods>romantik-og-praeromantik</literary-periods>
+  <works>1815</works>
+  <identifiers>
+    <biografisk-leksikon-lex-dk>Nicolai_Søtoft</biografisk-leksikon-lex-dk>
+    <litteraturpriser-dk>SNicolaiSoetoft</litteraturpriser-dk>
+  </identifiers>
+</person>

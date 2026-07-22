@@ -67,4 +67,4 @@ const abbrevations = {
   aabenbaringen: 'Åb',
 };
 
-module.exports.abbrevations = abbrevations;
+export { abbrevations };

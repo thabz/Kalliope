@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1770" author="ewald" status="complete" type="poetry">
 <workhead>
    <title>Philet</title>
    <year>1770</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="ewald2000070104">
+<text id="ewald2000070104">
 <head>
    <title>Philet en Fortælning</title>
    <subtitle>
@@ -28,6 +26,7 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 »Træt er min Siel - - forfulgt af Frygtens blege Skygger,
    Sank den tilsidst ved dig,
 Du steile Muur, som bange Kummer bygger
@@ -332,7 +331,8 @@ Nu flyede den bestyrtede Camoene,
    Mon jeg begræder det? -
 Jeg! - som afmægtig neppe mere finder
    Mit svage Aande-Dret!« -
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

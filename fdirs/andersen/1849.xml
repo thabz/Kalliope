@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1849" author="andersen" status="incomplete" type="poetry">
 <workhead>
    <title>Fire Sange</title>
    <year>1849</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="andersen1999041401">
+<text id="andersen1999041401">
 <head>
    <title>Slaaentjørnen</title>
    <toctitle>Slaaentjørnen</toctitle>
@@ -18,6 +16,7 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Vor Junker kom i Skoven, der Grethe han saae,
 Hun gik og samled Jordbær, hun trak dem paa Straa,
 De modneste de bedste, hvert af dem frisk og sødt.
@@ -35,7 +34,8 @@ Før Junkeren det vidste i Tjørnen han laae,
 Og Grethe løb, hun smilte, og sagde mange Tak!
 Den Slaaentjørn havde Torne og alle Torne stak.
 Jeg vil hjelpe med at plukke!
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

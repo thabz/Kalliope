@@ -1,69 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="longfellow" status="incomplete" type="poetry">
 <workhead>
    <title>Andre digte</title>
-   <year>?</year>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="longfellow2001081801">
-<head>
-   <title>King Christian</title>
-   <subtitle>A national song of Denmark</subtitle>
-   <toctitle>King Christian</toctitle>
-   <indextitle>King Christian</indextitle>
-   <firstline>King Christian stood by the lofty mast</firstline>
-   <notes>
-      <note>Oversættelse af Ewalds <xref type="translation" poem="ewlad1999022205"/>.</note>
-   </notes>
-</head>
-<body>
-King Christian stood by the lofty mast
-   In mist and smoke;
-His sword was hammering so fast,
-Through Gothic helm and brain it passed;
-Then sank each hostile hulk and mast,
-   In mist and smoke.
-"Fly!" shouted they, "fly, he who can!
-Who braves of Denmark's Christian
-   The stroke?"
-
-Nils Juel gave heed to the tempest's roar,
-   Now is the hour!
-He hoisted his blood-red flag once more,
-And smote upon the foe full sore,
-And shouted Loud, through the tempest's roar,
-   "Now is the hour!"
-"Fly!" shouted they, "for shelter fly!
-Of Denmark's Juel who can defy
-   The power?"
-
-North Sea! a glimpse of Wessel rent
-   Thy murky sky!
-Then champions to thine arms were sent;
-Terror and Death glared where he went;
-From the waves was heard a wail, that
-    rent
-   Thy murky sky!
-From Denmark, thunders Tordenskiol',
-Let each to Heaven commend his soul,
-    And fly!
-
-Path of the Dane to fame and might!
-   Dark-rolling wave!
-Receive thy friend, who, scorning flight
-Goes to meet danger with despite,
-Proudly as thou the tempest's might
-   Dark-rolling wave!
-And amid pleasures and alarms;
-And war and victory, be thine arms
-   My grave!
-</body>
-</poem>
-
-<poem id="longfellow2018042301">
+<text id="longfellow2018042301">
 <head>
    <title>Childhood</title>
    <firstline>There was a time when I was very small</firstline>
@@ -72,6 +14,7 @@ And war and victory, be thine arms
    </notes>
 </head>
 <body>
+<poetry>
 There was a time when I was very small,
   When my whole frame was but an ell in height;
 Sweetly, as I recall it, tears do fall,
@@ -116,10 +59,11 @@ They perished, the blithe days of boyhood perished,
   And all the gladness, all the peace I knew!
 Now have I but their memory, fondly cherished;—
   God! may I never lose that too!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="longfellow2019011801">
+<text id="longfellow2019011801">
 <head>
    <title>Wanderer's Night Song I</title>
    <firstline>Thou that from the heavens art</firstline>
@@ -128,6 +72,7 @@ Now have I but their memory, fondly cherished;—
    </notes>
 </head>
 <body>
+<poetry>
 Thou that from the heavens art,
 Every pain and sorrow stillest,
 And the doubly wretched heart
@@ -136,10 +81,11 @@ I am weary with contending!
 Why this rapture and unrest?
 Peace descending
 Come ah, come into my breast!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="longfellow2019011802">
+<text id="longfellow2019011802">
 <head>
    <title>Wanderer's Night Song II</title>
    <firstline>O’er all the hilltops</firstline>
@@ -148,6 +94,7 @@ Come ah, come into my breast!
    </notes>
 </head>
 <body>
+<poetry>
 O’er all the hilltops
 Is quiet now,
 In all the treetops
@@ -156,15 +103,17 @@ Hardly a breath;
 The birds are asleep in the trees:
 Wait, soon like these
 Thou too shalt rest.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="longfellow2019051301">
+<text id="longfellow2019051301">
 <head>
     <title>The Evening Star</title>
     <firstline>Lo! in the painted oriel of the West</firstline>
 </head>
 <body>
+<poetry>
 Lo! in the painted oriel of the West,
 Whose panes the sunken sun incarnadines,
 Like a fair lady at her casement, shines
@@ -178,54 +127,58 @@ My morning and my evening star of love!
 My best and gentlest lady! even thus,
 As that fair planet in the sky above,
 Dost thou retire unto thy rest at night,
-And from thy darkened window fades the light.    
+And from thy darkened window fades the light.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="longfellow2019072201">
+<text id="longfellow2019072201">
 <head>
     <title>The open Window</title>
     <firstline>The old house by the lindens</firstline>
 </head>
 <body>
+<poetry>
 The old house by the lindens
   Stood silent in the shade,
 And on the gravelled pathway
-  The light and shadow played. 
+  The light and shadow played.
 
 I saw the nursery windows
   Wide open to the air;
 But the faces of the children,
-  They were no longer there. 
+  They were no longer there.
 
 The large Newfoundland house-dog
   Was standing by the door;
 He looked for his little playmates,
-  Who would return no more. 
+  Who would return no more.
 
 They walked not under the lindens,
   They played not in the hall;
 But shadow, and silence, and sadness
-  Were hanging over all. 
+  Were hanging over all.
 
 The birds sang in the branches,
   With sweet, familiar tone;
 But the voices of the children
-  Will be heard in dreams alone! 
+  Will be heard in dreams alone!
 
 And the boy that walked beside me,
   He could not understand
 Why closer in mine, ah! closer,
-  I pressed his warm, soft hand!    
+  I pressed his warm, soft hand!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="longfellow2019072202">
+<text id="longfellow2019072202">
 <head>
     <title>Daybreak</title>
     <firstline>A wind came up out of the sea</firstline>
 </head>
 <body>
+<poetry>
 A wind came up out of the sea,
 And said, "O mists, make room for me."
 
@@ -251,136 +204,142 @@ It shouted through the belfry-tower,
 "Awake, O bell! proclaim the hour."
 
 It crossed the churchyard with a sigh,
-And said, "Not yet! in quiet lie."    
+And said, "Not yet! in quiet lie."
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="longfellow201908221">
+<text id="longfellow201908221">
 <head>
     <title>The Slave's Dream</title>
     <firstline>Beside the ungathered rice he lay</firstline>
 </head>
 <body>
+<poetry>
 Beside the ungathered rice he lay,
   His sickle in his hand;
 His breast was bare, his matted hair
   Was buried in the sand.
 Again, in the mist and shadow of sleep,
-  He saw his Native Land. 
+  He saw his Native Land.
 Wide through the landscape of his dreams
   The lordly Niger flowed;
 Beneath the palm-trees on the plain
   Once more a king he strode;
 And heard the tinkling caravans
-  Descend the mountain-road. 
+  Descend the mountain-road.
 He saw once more his dark-eyed queen
   Among her children stand;
 They clasped his neck, they kissed his cheeks,
   They held him by the hand!—
 A tear burst from the sleeper's lids
-  And fell into the sand. 
+  And fell into the sand.
 And then at furious speed he rode
   Along the Niger's bank;
 His bridle-reins were golden chains,
   And, with a martial clank,
 At each leap he could feel his scabbard of steel
-  Smiting his stallion's flank. 
+  Smiting his stallion's flank.
 Before him, like a blood-red flag,
   The bright flamingoes flew;
 From morn till night he followed their flight,
   O'er plains where the tamarind grew,
 Till he saw the roofs of Caffre huts,
-  And the ocean rose to view. 
+  And the ocean rose to view.
 At night he heard the lion roar,
   And the hyena scream,
 And the river-horse, as he crushed the reeds
   Beside some hidden stream;
 And it passed, like a glorious roll of drums,
-  Through the triumph of his dream. 
+  Through the triumph of his dream.
 The forests, with their myriad tongues,
   Shouted of liberty;
 And the Blast of the Desert cried aloud,
   With a voice so wild and free,
 That he started in his sleep and smiled
-  At their tempestuous glee. 
+  At their tempestuous glee.
 He did not feel the driver's whip,
   Nor the burning heat of day;
 For Death had illumined the Land of Sleep,
   And his lifeless body lay
 A worn-out fetter, that the soul
-  Had broken and thrown away!     
+  Had broken and thrown away!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="longfellow201908222">
+<text id="longfellow201908222">
 <head>
     <title>The Day is Done</title>
     <firstline>The day is done, and the darkness</firstline>
 </head>
 <body>
-The day is done, and the darkness 
-      Falls from the wings of Night, 
-As a feather is wafted downward 
-      From an eagle in his flight. 
+<poetry>
+The day is done, and the darkness
+      Falls from the wings of Night,
+As a feather is wafted downward
+      From an eagle in his flight.
 
-I see the lights of the village 
-      Gleam through the rain and the mist, 
-And a feeling of sadness comes o'er me 
-      That my soul cannot resist: 
+I see the lights of the village
+      Gleam through the rain and the mist,
+And a feeling of sadness comes o'er me
+      That my soul cannot resist:
 
-A feeling of sadness and longing, 
-      That is not akin to pain, 
-And resembles sorrow only 
-      As the mist resembles the rain. 
+A feeling of sadness and longing,
+      That is not akin to pain,
+And resembles sorrow only
+      As the mist resembles the rain.
 
-Come, read to me some poem, 
-      Some simple and heartfelt lay, 
-That shall soothe this restless feeling, 
-      And banish the thoughts of day. 
+Come, read to me some poem,
+      Some simple and heartfelt lay,
+That shall soothe this restless feeling,
+      And banish the thoughts of day.
 
-Not from the grand old masters, 
-      Not from the bards sublime, 
-Whose distant footsteps echo 
-      Through the corridors of Time. 
+Not from the grand old masters,
+      Not from the bards sublime,
+Whose distant footsteps echo
+      Through the corridors of Time.
 
-For, like strains of martial music, 
-      Their mighty thoughts suggest 
-Life's endless toil and endeavor; 
-      And to-night I long for rest. 
+For, like strains of martial music,
+      Their mighty thoughts suggest
+Life's endless toil and endeavor;
+      And to-night I long for rest.
 
-Read from some humbler poet, 
-      Whose songs gushed from his heart, 
-As showers from the clouds of summer, 
-      Or tears from the eyelids start; 
+Read from some humbler poet,
+      Whose songs gushed from his heart,
+As showers from the clouds of summer,
+      Or tears from the eyelids start;
 
-Who, through long days of labor, 
-      And nights devoid of ease, 
-Still heard in his soul the music 
-      Of wonderful melodies. 
+Who, through long days of labor,
+      And nights devoid of ease,
+Still heard in his soul the music
+      Of wonderful melodies.
 
-Such songs have power to quiet 
-      The restless pulse of care, 
-And come like the benediction 
-      That follows after prayer. 
+Such songs have power to quiet
+      The restless pulse of care,
+And come like the benediction
+      That follows after prayer.
 
-Then read from the treasured volume 
-      The poem of thy choice, 
-And lend to the rhyme of the poet 
-      The beauty of thy voice. 
+Then read from the treasured volume
+      The poem of thy choice,
+And lend to the rhyme of the poet
+      The beauty of thy voice.
 
-And the night shall be filled with music, 
-      And the cares, that infest the day, 
-Shall fold their tents, like the Arabs, 
-      And as silently steal away.     
+And the night shall be filled with music,
+      And the cares, that infest the day,
+Shall fold their tents, like the Arabs,
+      And as silently steal away.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="longfellow2019082901">
+<text id="longfellow2019082901">
 <head>
     <title>The Old Clock on the Stairs</title>
     <firstline>Somewhat back from the village street</firstline>
 </head>
 <body>
+<poetry>
 {rs:L'eternite est une pendule, dont le balancier dit et redit sans}
 {rs:cesse ces deux mots seulement dans le silence des tombeaux:}
 {rs:"Toujours! jamais!  Jamais! toujours!"—JACQUES BRIDAINE.}
@@ -464,16 +423,18 @@ Forever there, but never here!
 The horologe of Eternity
 Sayeth this incessantly,—
       "Forever—never!
-      Never—forever!"    
+      Never—forever!"
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="longfellow2019090101">
+<text id="longfellow2019090101">
 <head>
     <title>The Bridge</title>
     <firstline>I stood on the bridge at midnight</firstline>
 </head>
 <body>
+<poetry>
 I stood on the bridge at midnight,
   As the clocks were striking the hour,
 And the moon rose o'er the city,
@@ -548,15 +509,17 @@ The moon and its broken reflection
   And its shadows shall appear,
 As the symbol of love in heaven,
   And its wavering image here.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="longfellow2019090102">
+<text id="longfellow2019090102">
 <head>
     <title>Twilight</title>
     <firstline>The twilight is sad and cloudy</firstline>
 </head>
 <body>
+<poetry>
 The twilight is sad and cloudy,
   The wind blows wild and free,
 And like the wings of sea-birds
@@ -585,16 +548,18 @@ As they beat at the crazy casement,
 And why do the roaring ocean,
   And the night-wind, wild and bleak,
 As they beat at the heart of the mother,
-  Drive the color from her cheek?    
+  Drive the color from her cheek?
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="longfellow2019090701">
+<text id="longfellow2019090701">
 <head>
     <title>The Arrow and the Song</title>
     <firstline>I shot an arrow into the air</firstline>
 </head>
 <body>
+<poetry>
 I shot an arrow into the air,
 It fell to earth, I knew not where;
 For, so swiftly it flew, the sight
@@ -608,16 +573,18 @@ That it can follow the flight of song?
 Long, long afterward, in an oak
 I found the arrow, still unbroke;
 And the song, from beginning to end,
-I found again in the heart of a friend.    
+I found again in the heart of a friend.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="longfellow2019090702">
+<text id="longfellow2019090702">
 <head>
     <title>Suspiria</title>
     <firstline>Take them, O Death! and bear away</firstline>
 </head>
 <body>
+<poetry>
 Take them, O Death! and bear away
   Whatever thou canst call thine own!
 Thine image, stamped upon this clay,
@@ -631,16 +598,18 @@ As garments by the soul laid by,
 Take them, O great Eternity!
   Our little life is but a gust
 That bends the branches of thy tree,
-  And trails its blossoms in the dust!    
+  And trails its blossoms in the dust!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="longfellow2019090703">
+<text id="longfellow2019090703">
 <head>
     <title>A Gleam of Sunshine</title>
     <firstline>This is the place.  Stand still, my steed</firstline>
 </head>
 <body>
+<poetry>
 This is the place.  Stand still, my steed,
   Let me review the scene,
 And summon from the shadowy Past
@@ -709,9 +678,10 @@ Subdue the light of noon, and breathe
 This memory brightens o'er the past,
   As when the sun, concealed
 Behind some cloud that near us hangs
-  Shines on a distant field.    
+  Shines on a distant field.
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

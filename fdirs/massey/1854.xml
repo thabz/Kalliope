@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1854" author="massey" status="incomplete" type="poetry">
 <workhead>
     <title>The Ballad of Babe Christabel</title>
@@ -7,12 +6,13 @@
 </workhead>
 <workbody>
 
-<poem id="massey2019090901">
+<text id="massey2019090901">
 <head>
    <title>Wedded Love</title>
    <firstline>The summer Night comes brooding down on Earth</firstline>
 </head>
 <body>
+<poetry>
 <sc>The</sc> summer Night comes brooding down on Earth,
 As Love comes brooding down on human hearts,
 With bliss that hath no utterance save rich tears.
@@ -59,8 +59,9 @@ Dear Wife! with sweet, low voice, she syllables
 Some precious music balm'd in her heart's book,
 And I am flooded with melodious rain,
 Like Nature standing crown'd with sunlit showers .
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

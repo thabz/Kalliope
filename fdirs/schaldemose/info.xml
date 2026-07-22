@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="schaldemose" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Frederik</firstname>
+    <lastname>Schaldemose</lastname>
+    <fullname>Frederik Julius Schaldemose</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1783-02-15</date>
+      <place>Fyn</place>
+    </born>
+    <dead>
+      <date>1853-02-22</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <works>1815,1819,1824,1829</works>
+  <identifiers>
+    <wikidata>Q23931030</wikidata>
+    <wikipedia-da>Frederik Julius Schaldemose</wikipedia-da>
+    <viaf>277251499</viaf>
+    <biografisk-leksikon-lex-dk>Fr._Schaldemose</biografisk-leksikon-lex-dk>
+    <litteraturpriser-dk>SFrSchaldemose</litteraturpriser-dk>
+    <runeberg-org>schalfre</runeberg-org>
+  </identifiers>
+</person>

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1863" author="andersen" status="incomplete" type="poetry">
 <workhead>
    <title>I Spanien</title>
@@ -11,7 +10,6 @@
       <picture type="titlepage" src="1863-p1.jpg">Titelbladet til <i>I Spanien</i> (1863).<br/>I Spanien / af / H. C. Andersen. // Kjøbenhavn. / C. A. Reitzels Forlag. / 1863.</picture>
    </pictures>
    <quality>korrektur1,kilde,side</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
@@ -21,7 +19,7 @@
 </head>
 <content>
 
-<poem id="andersen2002112411">
+<text id="andersen2002112411">
 <head>
    <title>I</title>
    <toctitle><num>I</num>Sindet forfriskes, Tanken beriges</toctitle>
@@ -33,12 +31,14 @@
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Sindet forfriskes, Tanken beriges;
 O kun i fattige Ord det udsiges:
 Deiligt at flyve og juble i Vrimlen;
 Tak for min Lykke, Fader i Himlen!
+</poetry>
 </body>
-</poem>
+</text>
 </content>
 </section>
 
@@ -48,7 +48,7 @@ Tak for min Lykke, Fader i Himlen!
 </head>
 <content>
 
-<poem id="andersen2002112403">
+<text id="andersen2002112403">
 <head>
    <title>I</title>
    <toctitle><num>I</num>Granattræ, Citrontræ, - ja slige Høibaarne</toctitle>
@@ -60,6 +60,7 @@ Tak for min Lykke, Fader i Himlen!
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Granattræ, Citrontræ, - ja slige Høibaarne,
 De vare til Castagnetterne Rod,
 Og disse fik Klang af det Træ, de blev skaarne,
@@ -74,8 +75,9 @@ De sige, hvad Hjertet Dig siger, min Ven:
 Citrontræ, jeg tænder Dig, brænd saa igjen!
 Vi favnes, vi blusse, livsalige Møde,
 Og saa - Du er Aske og jeg faren hen!''
+</poetry>
 </body>
-</poem>
+</text>
 </content>
 </section>
 
@@ -85,7 +87,7 @@ Og saa - Du er Aske og jeg faren hen!''
 </head>
 <content>
 
-<poem id="andersen2002112404">
+<text id="andersen2002112404">
 <head>
    <title>I</title>
    <toctitle><num>I</num>I Afrikanerbyen</toctitle>
@@ -98,6 +100,7 @@ Og saa - Du er Aske og jeg faren hen!''
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I Afrikanerbyen,
     i Cartagena jeg boer,
 I den smalle, snevre Gade,
@@ -118,10 +121,11 @@ Fra Afrika brænder Luften,
     og Blodet er Ild som den; -
 Nu vil jeg slukke Lampen
     og hvert et Ord med den.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="andersen2002112405">
+<text id="andersen2002112405">
 <head>
    <title>II</title>
    <toctitle><num>II</num>De dandse med Castagnetter</toctitle>
@@ -133,6 +137,7 @@ Nu vil jeg slukke Lampen
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 De dandse med Castagnetter,
     det er den hele Musik;
 De see hinanden i Øiet,
@@ -147,10 +152,11 @@ En Nellike og en Granatblomst!
     i Dandsen de leve og groe.
 I, som bleve Konstens Udkaarne,
     beseir i Dandsen de To.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="andersen2002112406">
+<text id="andersen2002112406">
 <head>
    <title>III</title>
    <toctitle><num>III</num>Hvor Himlen har Stjerner! jeg kjender jo hver</toctitle>
@@ -162,16 +168,18 @@ I, som bleve Konstens Udkaarne,
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvor Himlen har Stjerner! jeg kjender jo hver,
 De hjemlige Venner, hvor funkle de her!
 De sende en Luftning saa frisk og saa mild,
 En Lædskedrik i den brændende Ild,
 Et Vindpust over det glødende Sand,
 Det er som et Kys fra det danske Land!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="andersen2002112407">
+<text id="andersen2002112407">
 <head>
    <title>IV</title>
    <toctitle><num>IV</num>Hvor flyver min Tanke imorgen den Dag?</toctitle>
@@ -183,6 +191,7 @@ Det er som et Kys fra det danske Land!
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvor flyver min Tanke imorgen den Dag?
 Den evigt leve jo vilde;
 Mit Legeme bliver et sjunket Vrag,
@@ -191,12 +200,13 @@ Mit Jordliv? Som Blinket det brat henfoer!
 
 Min Tanke har kæmpet en Kamp saa stor,
 I den var Vor Herre tilstede.
-&mdash; - Min Barnetroes hellige ,,<i>Fadervor</i>'',
+— - Min Barnetroes hellige ,,<i>Fadervor</i>'',
 Vær du mig mit Hvilesteds Klæde!
 Jeg lukker mit Øie til evig Ro,
 Hvad eller til Klarhed i Gud og Tro.
+</poetry>
 </body>
-</poem>
+</text>
 </content>
 </section>
 
@@ -206,7 +216,7 @@ Hvad eller til Klarhed i Gud og Tro.
 </head>
 <content>
 
-<poem id="andersen2002112408">
+<text id="andersen2002112408">
 <head>
    <title>I</title>
    <toctitle><num>I</num>Der under Træerne nede</toctitle>
@@ -218,6 +228,7 @@ Hvad eller til Klarhed i Gud og Tro.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Der under Træerne nede
     paa <i>Alameda</i> de gaae;
 Gaslamperne brænde festligt,
@@ -232,10 +243,11 @@ Mig bringer Synet af Skyer
     igjen til den nordiske Strand,
 Og Havet er Landeveien
     hjem til mit Fædreland.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="andersen2002112409">
+<text id="andersen2002112409">
 <head>
    <title>II</title>
    <toctitle><num>II</num>Ingen kjender mig, Ingen kjender jeg</toctitle>
@@ -247,6 +259,7 @@ Og Havet er Landeveien
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ingen kjender mig, Ingen kjender jeg,
 Som i en ny Slægt vandrer jeg om;
 En af Syvsoverne, synes jeg, er jeg her,
@@ -255,10 +268,11 @@ O hvilken Deilighed! jeg ret som Straaet vil
 Drive paa Strømmen ned, dreie mig rundt;
 Gid at jeg turde kun, Straaet tør gjøre det,
 Kysse hver Blomst paa den svulmende Strøm!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="andersen2002112410">
+<text id="andersen2002112410">
 <head>
    <title>III</title>
    <toctitle><num>III</num>Flodleiet ligger udtørret</toctitle>
@@ -270,6 +284,7 @@ Kysse hver Blomst paa den svulmende Strøm!
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Flodleiet ligger udtørret
     og bruges som Landevei;
 Der er Marked og Handel, Disken
@@ -295,10 +310,11 @@ Cactus og Palmer den river
     med sig i vildkaade Hast,
 Dog ikke min Erindring,
     den holder Billedet fast.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="andersen2002112601">
+<text id="andersen2002112601">
 <head>
    <title>IV</title>
    <toctitle><num>IV</num>Ja Guult og Rødt er Spaniens Farver</toctitle>
@@ -310,6 +326,7 @@ Dog ikke min Erindring,
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ja Guult og Rødt er <i>Spaniens</i> Farver,
 De straale ildfuldt fra Flag og Faner,
 Og Cactusblomsten dem samlet har,
@@ -322,10 +339,11 @@ Dig frelste ikke de tusind Dolke,
 Der pible frem fra dine Blade,
 Paa Disken kom Du, blev solgt for Spotpriis,
 Du Solblomst-Frugt med <i>Spaniens</i> Farver!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="andersen2002112602">
+<text id="andersen2002112602">
 <head>
    <title>V</title>
    <toctitle><num>V</num>Hvo skal jeg troe?</toctitle>
@@ -337,6 +355,7 @@ Du Solblomst-Frugt med <i>Spaniens</i> Farver!
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvo skal jeg troe?
 Øinene to?
 Lyve ei disse?
@@ -355,10 +374,11 @@ Hvor er mit Pas! hvor er min Musa!
 Forsvar mig
 Mod Spaniens Medusa!
 Inqvisitionen har mig.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="andersen2002112603">
+<text id="andersen2002112603">
 <head>
    <title>VI</title>
    <toctitle><num>VI</num>Ved Husets Muur stod en Hæk af Geranier</toctitle>
@@ -370,16 +390,18 @@ Inqvisitionen har mig.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ved Husets Muur stod en Hæk af Geranier,
 Der sad hun paa Trappens Marmorsteen,
 Saa ung, saa deilig, hun solgte Kastanier,
 Sad med Blomst i Haaret og med bare Been.
 Hun saae med to Livsens Øine paa En,
 Var man ei en Iismand, strax blev man en Spanier.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="andersen2002112604">
+<text id="andersen2002112604">
 <head>
    <title>VII</title>
    <toctitle><num>VII</num>Som en Lotus paa den stille Sø</toctitle>
@@ -391,6 +413,7 @@ Var man ei en Iismand, strax blev man en Spanier.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Som en Lotus paa den stille Sø
 Er i Norden Qvinden;
 Fra den dybe Havbund Skjønheds Frø
@@ -407,10 +430,11 @@ Livet er et Kys, et sødt Forsvinden.
 Brænd Du mig til Aske, lad mig døe;
 Lotusblomst paa Nordens dybe Sø,
 Bed en Bøn for mig - hos <i>Spanierinden</i>.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="andersen2002112605">
+<text id="andersen2002112605">
 <head>
    <title>VIII</title>
    <toctitle><num>VIII</num>I Norden, i Kakkelovns-Krogen</toctitle>
@@ -422,14 +446,16 @@ Bed en Bøn for mig - hos <i>Spanierinden</i>.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I Norden, i Kakkelovns-Krogen,
 Groe Eventyr deiligt i Bogen,
 Men ovre bag Pyrenæernes Muur,
 Der voxe de vildt i den hele Natur,
 Og er Du selv ung, ret Flamme og Fyr,
 Saa brænder du op i et Eventyr!
+</poetry>
 </body>
-</poem>
+</text>
 </content>
 </section>
 
@@ -439,10 +465,10 @@ Saa brænder du op i et Eventyr!
 </head>
 <content>
 
-<poem id="andersen2002112606">
+<text id="andersen2002112606">
 <head>
    <title>I</title>
-   <toctitle><num>I</num>&bdquo;Grønne Flod, Du strømmer sorgfuld&ldquo;</toctitle>
+   <toctitle><num>I</num>„Grønne Flod, Du strømmer sorgfuld“</toctitle>
    <indextitle>Grønne Flod, Du strømmer sorgfuld</indextitle>
    <firstline>Grønne Flod, Du strømmer sorgfuld</firstline>
    <notes>
@@ -451,6 +477,7 @@ Saa brænder du op i et Eventyr!
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 ,,Grønne Flod, Du strømmer sorgfuld,
 Mange Liig Du fører med Dig;
 Liig af Christne og af Maurer,
@@ -460,13 +487,14 @@ Dine friske, klare Bølger
 Ere røde nu af Blodet;
 Blod af Maurer og af Christne,
 Som er' faldne her i Slaget.''<note>* Gammel spansk Romanze.</note>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="andersen2002112607">
+<text id="andersen2002112607">
 <head>
    <title>II</title>
-   <toctitle><num>II</num>&bdquo;Darro givet har det Løfte&ldquo;</toctitle>
+   <toctitle><num>II</num>„Darro givet har det Løfte“</toctitle>
    <indextitle>Darro givet har det Løfte</indextitle>
    <firstline>Darro givet har det Løfte</firstline>
    <notes>
@@ -476,14 +504,16 @@ Som er' faldne her i Slaget.''<note>* Gammel spansk Romanze.</note>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <i>Darro</i> givet har det Løfte:
 Ved Formælingen med <i>Xenil</i>
 Bringer den i Morgengave
 Plaza Nueva og Zacatin.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="andersen2002112608">
+<text id="andersen2002112608">
 <head>
    <title>III</title>
    <toctitle><num>III</num>Held mig! Granada jeg seer</toctitle>
@@ -495,6 +525,7 @@ Plaza Nueva og Zacatin.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center><b>I</b></center></nonum>
 Held mig! <i>Granada</i> jeg seer,
     Mindernes selsomme By!
@@ -507,7 +538,7 @@ Fra Alamedaen smukt
 Øinene blaae som i Nord,
     sneehvide Blomster i Haaret.<note>Haaret.] <i>således originalen, skulle måske have været et komma</i>.</note>
 Havfruens Skjønhed og Blik!
-    &mdash; Vandrer! er alt Du bedaaret?
+    — Vandrer! er alt Du bedaaret?
 
 <nonum><center><b>II</b></center></nonum>
 Ja havblaae er hendes Øine,
@@ -534,7 +565,7 @@ Imellem Bladenes Bolstrer
     en Drømmeverden er lagt;
 Du Rose, bliv mit <i>Alhambra</i>,
     med hende jeg boer i din Pragt,
-Og vi ere unge &mdash;! imorgen
+Og vi ere unge —! imorgen
     da falder hvert Rosenblad.
 Vær Du min Erindring, skrinlagt
     i dette smuldrende Qvad.
@@ -550,10 +581,11 @@ I Norden jeg skar i en Græstørv
     mit Navn paa den danske Ø,
 Snart voxer Græsset derover,
     alle Minderne døe!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="andersen2002112609">
+<text id="andersen2002112609">
 <head>
    <title>IV</title>
    <toctitle><num>IV</num>Bibelens Job ham kjender Du vel?</toctitle>
@@ -565,16 +597,18 @@ Snart voxer Græsset derover,
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Bibelens <i>Job</i> ham kjender Du vel?
 Vennernes Ord slog ham ikke ihjel,
 Skrabed' tilblods kun som Potteskaar,
 Saa der stod Ar til de seneste Aar,
 Mærker herom, saa dybe og stærke:
 Verset her, - det er ogsaa et Mærke!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="andersen2002112610">
+<text id="andersen2002112610">
 <head>
    <title>V</title>
    <toctitle><num>V</num>Giv af dit Hjerte til Folk og til Slægt</toctitle>
@@ -586,6 +620,7 @@ Verset her, - det er ogsaa et Mærke!
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Giv af dit Hjerte til Folk og til Slægt,
 Venter Du Tak, da er Du en Daare,
 Staa døv og steenkold, saa faae de Respekt,
@@ -594,12 +629,13 @@ Nærme sig ei som den surrende Myg,
 Nei de kun spytte ad Dig bag din Ryg.
 Giv Dig ei hen til Den, Du troer kjende,
 Husk at din Ven kan blive din Fjende.
-&mdash; Dog følg dit Hjerte! giv af dit Hjerte!
-Venter Du Glæde &mdash;, ja, da faaer Du Smerte.
+— Dog følg dit Hjerte! giv af dit Hjerte!
+Venter Du Glæde —, ja, da faaer Du Smerte.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="andersen2002112611">
+<text id="andersen2002112611">
 <head>
    <title>VI</title>
    <toctitle><num>VI</num>Den, som jeg gav af mit Hjerteblod</toctitle>
@@ -611,6 +647,7 @@ Venter Du Glæde &mdash;, ja, da faaer Du Smerte.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Den, som jeg gav af mit Hjerteblod,
 Hun traadte mig med sin fine Fod;
 Dem, som jeg gav hvert Tankens Barn,
@@ -621,13 +658,14 @@ Der blæser en iiskold, skjærende Vind,
 Den trænger som Gift i mit Hjerte ind,
 Den kommer fra Menneskets Hjertebund,
 O, maatte mit briste i denne Stund!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="andersen2002112612">
+<text id="andersen2002112612">
 <head>
    <title>VII</title>
-   <toctitle><num>VII</num>&bdquo;I Granada, gjennem Byen&ldquo;</toctitle>
+   <toctitle><num>VII</num>„I Granada, gjennem Byen“</toctitle>
    <indextitle>I Granada, gjennem Byen</indextitle>
    <firstline>I Granada, gjennem Byen</firstline>
    <notes>
@@ -637,6 +675,7 @@ O, maatte mit briste i denne Stund!
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
     ,,I <i>Granada</i>, gjennem Byen,
     Sorgfuld drager Maurerkongen;
     Fra <i>Elviras</i> Port han rider
@@ -665,10 +704,11 @@ O, maatte mit briste i denne Stund!
     ,,Som Du <i>Alhama</i> har mistet,
     Miste skal Du snart dit Rige!
         Vee mig, mit <i>Alhama!</i>''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="andersen2002112613">
+<text id="andersen2002112613">
 <head>
    <title>VIII</title>
    <toctitle><num>VIII</num>Som en Æolsharpe brudt itu</toctitle>
@@ -680,6 +720,7 @@ O, maatte mit briste i denne Stund!
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Som en Æolsharpe brudt itu,
 Men endnu ophængt ved <i>Darros</i> Bjergkant,
 Seer jeg Dig, <i>Alhambra</i>, billedsmykket,
@@ -692,8 +733,9 @@ Svulmende til stormende Scirocco.
 Brudt itu er Harpen, Resten hænger
 Af den mellem sørgende Cypresser,
 Kostbar rigt indlagt - det er <i>Alhambra</i>.
+</poetry>
 </body>
-</poem>
+</text>
 </content>
 </section>
 
@@ -703,7 +745,7 @@ Kostbar rigt indlagt - det er <i>Alhambra</i>.
 </head>
 <content>
 
-<poem id="andersen2002112614">
+<text id="andersen2002112614">
 <head>
    <title>I</title>
    <toctitle><num>I</num>Man siger, at i Spanien Qvinden</toctitle>
@@ -715,6 +757,7 @@ Kostbar rigt indlagt - det er <i>Alhambra</i>.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Man siger, at i <i>Spanien</i> Qvinden
 Har krigerisk Mandsmod og Aand;
 Man siger, at Spanierinden
@@ -727,8 +770,9 @@ Der er en Sladdren, en Latter,
 Du seirende hæver din Haand, -
 Ja, <i>da</i> har Spaniens Datter
 En Dolk ved sit Strømpebaand.
+</poetry>
 </body>
-</poem>
+</text>
 </content>
 </section>
 
@@ -738,7 +782,7 @@ En Dolk ved sit Strømpebaand.
 </head>
 <content>
 
-<poem id="andersen2002112615">
+<text id="andersen2002112615">
 <head>
    <title>I Afrika</title>
    <toctitle><num>I</num>I Afrika</toctitle>
@@ -750,6 +794,7 @@ En Dolk ved sit Strømpebaand.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg er ovre i <i>Marokko!</i>
     er det ei et Eventyr?
 Norden for mig er <i>Europa</i>,
@@ -774,10 +819,11 @@ Jeg i Havets Susen hører
     Toner fra den danske Strand;
 Hører Du igjen mit Hjertes
     Banken, Du, mit Fædreland?
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="andersen2002112902">
+<text id="andersen2002112902">
 <head>
    <title>II</title>
    <toctitle><num>II</num>Danmark kommer Bouquetten fra</toctitle>
@@ -790,14 +836,16 @@ Hører Du igjen mit Hjertes
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <i>Danmark</i> kommer Bouquetten fra,
 Den dufter af danske Minder;
 Tør jeg vel haabe, i <i>Afrika</i>
 At eie to unge Veninder?
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="andersen2002112903">
+<text id="andersen2002112903">
 <head>
    <title>III</title>
    <toctitle><num>III</num>Hører Du Havets susende Tone</toctitle>
@@ -809,6 +857,7 @@ At eie to unge Veninder?
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hører Du Havets susende Tone,
 Klang i Naturens store Accord?
 Hver en Conchylie har Lyd af den samme,
@@ -823,8 +872,9 @@ I Dig det suser og synger, hvad Havet
 Rummer, mens Tider foer det forbi.
 Dig til mit lyttende Øre jeg lægger,
 Suus og fortæl, hvad et Verdenshav dækker!
+</poetry>
 </body>
-</poem>
+</text>
 </content>
 </section>
 
@@ -834,7 +884,7 @@ Suus og fortæl, hvad et Verdenshav dækker!
 </head>
 <content>
 
-<poem id="andersen2002112904">
+<text id="andersen2002112904">
 <head>
    <title>Cadiz</title>
    <toctitle><num>I</num>Cadiz</toctitle>
@@ -846,6 +896,7 @@ Suus og fortæl, hvad et Verdenshav dækker!
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Som store, grønne Fuglebuur,
 Hængt ud paa Husets hvide Muur,
 Altanerne her prange,
@@ -858,13 +909,14 @@ Ja søndagsklædt seer <i>Cadiz</i> ud,
 Men kjedelig, Du gode Gud!
 Og var her ikke Havet,
 Saa heller strax begravet.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="andersen2002112905">
+<text id="andersen2002112905">
 <head>
    <title>II</title>
-   <toctitle><num>II</num>&bdquo;Fire Fjæle er vor Pragt&ldquo;</toctitle>
+   <toctitle><num>II</num>„Fire Fjæle er vor Pragt“</toctitle>
    <indextitle>Fire Fjæle er vor Pragt</indextitle>
    <firstline>Fire Fjæle er vor Pragt</firstline>
    <notes>
@@ -874,10 +926,12 @@ Saa heller strax begravet.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 ,,Fire Fjæle er vor Pragt,
 Naar vi bli'er i Graven lagt!''
+</poetry>
 </body>
-</poem>
+</text>
 </content>
 </section>
 
@@ -887,7 +941,7 @@ Naar vi bli'er i Graven lagt!''
 </head>
 <content>
 
-<poem id="andersen2002112906">
+<text id="andersen2002112906">
 <head>
    <title>Cigaren</title>
    <toctitle><num>I</num>Cigaren</toctitle>
@@ -899,6 +953,7 @@ Naar vi bli'er i Graven lagt!''
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Cigarens Glød er et Ildsted,
     hvor Ildaander er tilhuse;
 Den Ene blæser med Puster,
@@ -915,14 +970,15 @@ Jeg glemmer at Have og Bjerge
     uendeligt vidt os skille,
 At nede paa Pladsen rigt gløder
     Orangens duftfyldte Træer.
-&mdash; Nu lægger jeg bort Cigaren;
+— Nu lægger jeg bort Cigaren;
     <i>Sevilla</i>, du deilige Stad!
 Jeg glemte Dig, jeg var i <i>Danmark</i>,
     mens her med Cigaren jeg sad.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="andersen2002112907">
+<text id="andersen2002112907">
 <head>
    <title>II</title>
    <toctitle><num>II</num>Ja vel, vi er midt i November</toctitle>
@@ -934,6 +990,7 @@ Jeg glemte Dig, jeg var i <i>Danmark</i>,
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ja vel, vi er midt i November,
     men vi er i Spanien med,
 Og jeg gaaer i Vinterfrakke,<note>Vinterfrakke,] Vinterfrakke</note>
@@ -954,13 +1011,14 @@ Ved dem og ved det at jeg fryser,
     er jeg i mit danske Hjem;
 <i>Sevilla</i>, o hvor Du forstaaer dog,
     at trylle det Kjæreste frem!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="andersen2002112908">
+<text id="andersen2002112908">
 <head>
    <title>III</title>
-   <toctitle><num>III</num>&bdquo;Gud, Almægtige! hvad er det?&ldquo;</toctitle>
+   <toctitle><num>III</num>„Gud, Almægtige! hvad er det?“</toctitle>
    <indextitle>Gud, Almægtige! hvad er det?</indextitle>
    <firstline>Gud, Almægtige! hvad er det?</firstline>
    <notes>
@@ -970,6 +1028,7 @@ Ved dem og ved det at jeg fryser,
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 ,,Gud, Almægtige! hvad er det?
 Gravcapellet staaer i Flamme.
 Og jeg blive maa som Liigvagt
@@ -978,10 +1037,11 @@ Jeg vil krybe hen ad Jorden,
 Bringe Budskab til hans Fader.
 Sanct Georg, Sanct' agnus dei,
 Hjelp mig naadigt ud paa Gaden!''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="andersen2002112909">
+<text id="andersen2002112909">
 <head>
    <title>IV</title>
    <toctitle><num>IV</num>Hun er som en Rose, saa frisk og blød!</toctitle>
@@ -993,6 +1053,7 @@ Hjelp mig naadigt ud paa Gaden!''
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hun er som en Rose, saa frisk og blød!
 Ja en levende Rose, baade hvid og rød.
 Hun skinner for mig som Bjergtoppens Snee,
@@ -1006,10 +1067,11 @@ I al den Glands farer Mennesket vild;
 Hun siger da til mig, det er som et Qvad:
 ,,Nyd Livets Minuter, pluk Blomstens Blad,
 Troer Du, at en Djævel gjør Mennesket glad!''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="andersen2002112910">
+<text id="andersen2002112910">
 <head>
    <title>V</title>
    <toctitle><num>V</num>Ak, var der dog kun et eneste Sprog</toctitle>
@@ -1021,6 +1083,7 @@ Troer Du, at en Djævel gjør Mennesket glad!''
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ak, var der dog kun et eneste Sprog,
 Et eneste Sprog paa Jorden;
 Saa deiligt man da hinanden forstod
@@ -1030,10 +1093,11 @@ De Ord er' tidt sagt; men reis Du dog
 Til <i>Andalusiens</i> Dale;
 Der er et eneste fælles Sprog,
 Øine og Pulse det tale.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="andersen2002122001">
+<text id="andersen2002122001">
 <head>
    <title>VI</title>
    <toctitle><num>VI</num>Man finder det passende, finder det smukt</toctitle>
@@ -1045,6 +1109,7 @@ Der er et eneste fælles Sprog,
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Man finder det passende, finder det smukt,
 Naar jeg synger om Svanernes Sang og Flugt,
 Om det svulmende Hav, om Stjernernes Pragt,
@@ -1061,10 +1126,11 @@ I Paradiishaven, som <i>Spanien</i> staaer nær,
 Det Deiligste det var jo <i>Eva</i> der,
 Og alt det Deiligste, skabt af Gud,
 I Kjærlighed synger mit Hjerte ud!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="andersen2002121902">
+<text id="andersen2002121902">
 <head>
    <title>VII</title>
    <toctitle><num>VII</num>Jeg er som et Vand, som det dybe Vand</toctitle>
@@ -1076,6 +1142,7 @@ I Kjærlighed synger mit Hjerte ud!
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg er som et Vand, som det dybe Vand,
 Alt speiler sig klart deri;
 Jeg bliver Sydbo i Sydboens Land;
@@ -1083,10 +1150,11 @@ Der smelter alt Snerperi!
 Hvor Følelsen rigtig er sund og sand,
 Den eier et Fyrværkeri;
 Det blusser, det knalder, det gaaer i Brand.
-&mdash; Reis hjem! - vær streng, som den gamle Mand
+— Reis hjem! - vær streng, som den gamle Mand
 Mod Ungdommen! <i>Din</i> er forbi!
+</poetry>
 </body>
-</poem>
+</text>
 </content>
 </section>
 
@@ -1096,7 +1164,7 @@ Mod Ungdommen! <i>Din</i> er forbi!
 </head>
 <content>
 
-<poem id="andersen2002121903">
+<text id="andersen2002121903">
 <head>
    <title>I</title>
    <toctitle><num>I</num>Du evige Gud, saa kjærlig og god!</toctitle>
@@ -1108,6 +1176,7 @@ Mod Ungdommen! <i>Din</i> er forbi!
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Du evige Gud, saa kjærlig og god!
 Send Du mig dit Lys for min usikkre Fod,
 Lys ind i mit Hjerte, det vil kun det Rette!
@@ -1123,8 +1192,9 @@ Jeg kæmper, jeg svimler, dog eengang jeg havner;
 O lad det gaae op for mig hvad jeg savner!
 Mig Christendomslæren er Kjærlighedslæren,
 I den kom Du til os! Dig Magten og Æren!
+</poetry>
 </body>
-</poem>
+</text>
 </content>
 </section>
 
@@ -1134,7 +1204,7 @@ I den kom Du til os! Dig Magten og Æren!
 </head>
 <content>
 
-<poem id="andersen2002121904">
+<text id="andersen2002121904">
 <head>
    <title>Madrid</title>
    <toctitle><num>I</num>Madrid</toctitle>
@@ -1146,6 +1216,7 @@ I den kom Du til os! Dig Magten og Æren!
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <i>Spaniens</i> Hovedstad, nei
     hvor Du dog reent har afslidt
 Alt, hvad der præger som Spansk;
@@ -1162,8 +1233,9 @@ Sølede, taagede, hu!
     det er, jeg er i <i>Madrid!</i>
 Ørkenstad, o hvor Du dog
     ligner dit <i>Spanien</i> lidt!
+</poetry>
 </body>
-</poem>
+</text>
 </content>
 </section>
 
@@ -1173,7 +1245,7 @@ Sølede, taagede, hu!
 </head>
 <content>
 
-<poem id="andersen2002121905">
+<text id="andersen2002121905">
 <head>
    <title>I</title>
    <toctitle><num>I</num>Vær hilset, Du Fortids Toledo</toctitle>
@@ -1185,6 +1257,7 @@ Sølede, taagede, hu!
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Vær hilset, Du Fortids <i>Toledo</i>,
     Du ridderlige gamle By;
 Hvor Maurerklinger blev' smeded',
@@ -1217,8 +1290,9 @@ Og der, bag det gittrede Vindue,
     den deiligste Rose jeg saae; -
 Og den havde kulsorte Øine,
     tidt vil jeg tænke derpaa.
+</poetry>
 </body>
-</poem>
+</text>
 </content>
 </section>
 
@@ -1228,7 +1302,7 @@ Og den havde kulsorte Øine,
 </head>
 <content>
 
-<poem id="andersen2002121906">
+<text id="andersen2002121906">
 <head>
    <title>Burgos</title>
    <toctitle><num>I</num>Burgos</toctitle>
@@ -1240,6 +1314,7 @@ Og den havde kulsorte Øine,
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det fyger saa voldsomt derude,
 Halv Alen høit ligger der Snee,
 Og her er en Træk fra hver Rude,
@@ -1274,15 +1349,16 @@ Hun drog mig til Dødens Lande,
 Og drager endnu denne Stund;
 Men sprungen jeg er af min Kiste,
 Og Vinduet aabnet paa Stand.
-Mit sidste Vers &mdash;, ei paa det sidste
+Mit sidste Vers —, ei paa det sidste
 Jeg synger i <i>Spaniens</i> Land.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="andersen2002121907">
+<text id="andersen2002121907">
 <head>
    <title>II</title>
-   <toctitle><num>II</num>&bdquo;Cid lod kalde tvende Jøder&ldquo;</toctitle>
+   <toctitle><num>II</num>„Cid lod kalde tvende Jøder“</toctitle>
    <indextitle>Cid lod kalde tvende Jøder</indextitle>
    <firstline>Cid lod kalde tvende Jøder</firstline>
    <notes>
@@ -1292,6 +1368,7 @@ Jeg synger i <i>Spaniens</i> Land.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 ,,<i>Cid</i> lod kalde tvende Jøder
 Og med mange Ceremonier
 Gav dem Plads hos sig ved Taflet.
@@ -1304,8 +1381,9 @@ Der var fyldt med alt hans Sølvtøi.''
 
 ,, - - De tunge Kister, -
 <i>Cid</i> kun havde fyldt med Sand.''
+</poetry>
 </body>
-</poem>
+</text>
 </content>
 </section>
 
@@ -1315,7 +1393,7 @@ Der var fyldt med alt hans Sølvtøi.''
 </head>
 <content>
 
-<poem id="andersen2002121908">
+<text id="andersen2002121908">
 <head>
    <title>I</title>
    <toctitle><num>I</num>Af Rhythmer i Castagnetter</toctitle>
@@ -1327,6 +1405,7 @@ Der var fyldt med alt hans Sølvtøi.''
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Af Rhythmer i Castagnetter
     er Klang i det spanske Sprog;
 Det bølger melodisk, som sang det
@@ -1339,10 +1418,11 @@ Betragt saa <i>Murillos</i> Madonna,
     meer Himmelsk dit Øie ei saae;
 Det spanske Sprog maa hun tale,
     og Englene det forstaae.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="andersen2002121909">
+<text id="andersen2002121909">
 <head>
    <title>II</title>
    <toctitle><num>II</num>Spanien, hvilken Rigdom har Du</toctitle>
@@ -1354,6 +1434,7 @@ Det spanske Sprog maa hun tale,
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <i>Spanien</i>, hvilken Rigdom har Du
     af Naturens Deilighed;
 Palmeskov og Cactus-Vildhed,
@@ -1370,10 +1451,11 @@ Og din Nutid eier Ungdom,
     Munkene Du fra Dig jog;
 <i>Spaniens</i> Blomstren forudseer jeg
     lyse vil i Fremtids Bog.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="andersen2002121910">
+<text id="andersen2002121910">
 <head>
    <title>III</title>
    <toctitle><num>III</num>Jeg jubler af Fryd paa fremmed Strand</toctitle>
@@ -1385,12 +1467,14 @@ Og din Nutid eier Ungdom,
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg jubler af Fryd paa fremmed Strand,
 Men Glæden har Taarer i Hjemmets Land.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="andersen2002121911">
+<text id="andersen2002121911">
 <head>
    <title>IV</title>
    <toctitle><num>IV</num>Gud Fader i Himlen, hvor er Du dog god!</toctitle>
@@ -1402,6 +1486,7 @@ Men Glæden har Taarer i Hjemmets Land.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Gud Fader i Himlen, hvor er Du dog god!
 Jeg føler dit Aandedrag gjennem mit Blod.
 Du løfter, Du leder, beskjermer og glæder,
@@ -1412,8 +1497,9 @@ Jeg lever, jeg jubler, min Fryd er saa stor,
 At jeg i Dig paa en Evighed troer;
 Og var selv mit Liv kun den flygtende Stund,
 Det var dog et Kys af din Fadermund.
+</poetry>
 </body>
-</poem>
+</text>
 </content>
 </section>
 </workbody>

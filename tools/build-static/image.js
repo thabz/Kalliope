@@ -1,45 +1,52 @@
-const deasync = require('deasync');
-const sharp = require('sharp');
-const { fileExists } = require('../libs/helpers.js');
-const {
+import plimit from 'p-limit';
+import sharp from 'sharp';
+import { fileExists } from '../libs/helpers.js';
+import {
   isFileModified,
   loadCachedJSON,
   writeCachedJSON,
-} = require('../libs/caching.js');
+} from '../libs/caching.js';
 
-let collected_imagesizes = null;
+let collected_imagesizes = new Map(
+  loadCachedJSON('collected.imagesizes') || []
+);
 
-const imageSizeAsync = (filename, callback) => {
-  if (collected_imagesizes == null) {
-    collected_imagesizes = new Map(
-      loadCachedJSON('collected.imagesizes') || []
-    );
-  }
+const readImageSize = async filename => {
   if (!fileExists(filename)) {
-    const error = `image size failed for file: ${filename}`;
-    throw error;
+    throw new Error(
+      `Billedfilen findes ikke: ${filename}\n` +
+        'Tilføj filen, eller ret billedreferencen i XML-kilden.'
+    );
   }
   const cached = collected_imagesizes.get(filename);
   if (cached != null && !isFileModified(filename)) {
-    callback(null, cached);
-  } else {
-    sharp(filename)
-      .metadata()
-      .then(metadata => {
-        const size = { width: metadata.width, height: metadata.height };
-        collected_imagesizes.set(filename, size);
-        callback(null, size);
-      });
+    return cached;
+  }
+  try {
+    const metadata = await sharp(filename).metadata();
+    const size = {
+      width: metadata.width,
+      height: metadata.height,
+    };
+    collected_imagesizes.set(filename, size);
+    return size;
+  } catch (e) {
+    throw new Error(`${filename}: ${e.message || e}`);
   }
 };
 
-const imageSizeSync = deasync(imageSizeAsync);
+const limit = plimit(5);
+const imageSizeSync = async filename => {
+  return limit(() => {
+    return readImageSize(filename);
+  });
+};
 
 const flushImageSizeCache = () => {
   writeCachedJSON('collected.imagesizes', Array.from(collected_imagesizes));
 };
 
-module.exports = {
+export {
   flushImageSizeCache,
   imageSizeSync,
 };

@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="hansenmc" status="incomplete" type="poetry">
 <workhead>
    <title>Andre digte</title>
-   <year>?</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="hansenmc2001101601">
+<text id="hansenmc2001101601">
 <head>
    <title>En Perle jeg kjender, saa reen og saa skjøn</title>
    <toctitle>En Perle jeg kjender, saa reen og saa skjøn</toctitle>
@@ -23,6 +20,7 @@
    <keywords>drikkevise</keywords>
 </head>
 <body>
+<poetry>
 En Perle jeg kjender, saa reen og saa skjøn,
 ei blot hos den Rige den hviler;
 men ofte den eies af Armodens Søn,
@@ -42,7 +40,8 @@ O, venlige Perle! du Møen gjør skjøn,
 og Øiet fortryller du saare;
 tit lover du Elskeren Kjærligheds Løn,
 du rene og himmelske - Taare!
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

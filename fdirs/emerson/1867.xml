@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1867" author="emerson" status="incomplete" type="poetry">
 <workhead>
    <title>May-Day and Other Pieces</title>
    <year>1867</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="emerson2005050101">
+<text id="emerson2005050101">
 <head>
    <title>Days</title>
    <firstline>Daughters of Time, the hypocritic Days</firstline>
@@ -21,20 +19,21 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Daughters of Time, the hypocritic Days
 Muffled and dumb like barefoot dervishes
-And marching single in an endless file, 
+And marching single in an endless file,
 Bring diadems and fagots in their hands.
-To each they offer gifts after his will, 
+To each they offer gifts after his will,
 Bread, kingdom, stars, and sky that holds them all.
 I, in my pleached garden, watched the pomp,
 Forgot my morning wishes, hastily
 Took a few herbs and apples, and the Day
 Turned and departed silent. I, too late
 Under her solemn fillet saw the scorn.
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>
-

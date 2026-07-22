@@ -1,73 +1,50 @@
-// @flow
-
-import React, { useContext } from 'react';
-import type Node from 'react';
-import { Link } from '../routes';
-import Head from '../components/head';
-import Main from '../components/main.js';
-import { KalliopeTabs } from '../components/tabs.js';
-import LangSelect from '../components/langselect';
-import Nav, { kalliopeCrumbs } from '../components/nav';
-import SubHeading from '../components/subheading.js';
-import SidebarSplit from '../components/sidebarsplit.js';
-import TwoColumns from '../components/twocolumns.js';
-import SidebarPictures from '../components/sidebarpictures.js';
-import Picture from '../components/picture.js';
-import Note from '../components/note.js';
-import * as Links from '../components/links';
+import { useContext } from 'react';
 import * as Client from '../common/client.js';
-import Heading from '../components/heading.js';
-import TextContent from '../components/textcontent.js';
-import ErrorPage from './error.js';
 import LangContext from '../common/LangContext.js';
-import type {
-  Lang,
-  NewsItem,
-  TextContentType,
-  AboutItem,
-  Error,
-} from '../common/types.js';
-import { createURL } from '../common/client.js';
+import _ from '../common/translations.js';
+import { kalliopeCrumbs } from '../components/breadcrumbs.js';
+import * as Links from '../components/links.js';
+import { kalliopeMenu } from '../components/menu.js';
+import Note from '../components/note.js';
+import Page from '../components/page.js';
+import SidebarPictures from '../components/sidebarpictures.js';
+import SidebarSplit from '../components/sidebarsplit.js';
+import SubHeading from '../components/subheading.js';
+import TextContent from '../components/textcontent.js';
+import TwoColumns from '../components/twocolumns.js';
+import ErrorPage from './error.js';
 
 // Koden er stort set identisk med keyword
 
-type AboutProps = {
-  lang: Lang,
-  keyword: AboutItem,
-  aboutItemId: string,
-  error: ?Error,
-};
-const About = (props: AboutProps) => {
+const About = (props) => {
   const { aboutItemId, keyword, error } = props;
   const lang = useContext(LangContext);
 
   if (error) {
     return <ErrorPage error={error} lang={lang} message="Ukendt nøgleord" />;
   }
-  const requestPath = `/${lang}/about/${aboutItemId}`;
-  const pictures = keyword.pictures.map(p => {
-    return (
-      <Picture
-        pictures={[p]}
-        contentLang={p.content_lang || 'da'}
-        showDropShadow={aboutItemId !== 'kalliope'}
-        clickToZoom={aboutItemId !== 'kalliope'}
-        lang={lang}
-      />
-    );
-  });
-  const renderedPictures = <SidebarPictures>{pictures}</SidebarPictures>;
+
+  const renderedPictures = (
+    <SidebarPictures
+      key="pictures"
+      pictures={keyword.pictures}
+      showDropShadow={aboutItemId !== 'kalliope'}
+      clickToZoom={aboutItemId !== 'kalliope'}
+      lang={lang}
+    />
+  );
   const renderedNotes = keyword.notes.map((note, i) => {
     return (
       <Note key={'note' + i}>
         <TextContent
+          key="notes"
           contentHtml={note.content_html}
           contentLang={note.content_lang}
         />
       </Note>
     );
   });
-  let sidebar: Array<Node> = [];
+  let sidebar = [];
   if (keyword.notes.length > 0 || keyword.pictures.length > 0) {
     if (keyword.pictures.length > 0) {
       sidebar = sidebar.concat(renderedPictures);
@@ -85,14 +62,14 @@ const About = (props: AboutProps) => {
   );
   const crumbs = [
     ...kalliopeCrumbs(lang),
-    { url: Links.aboutURL(lang, 'kalliope'), title: 'Om' },
+    { url: Links.aboutURL(lang, 'kalliope'), title: _('Om', lang) },
     { title: keyword.title },
   ];
   let author = null;
   if (keyword.author != null) {
     author = (
-      <div style={{ fontVariant: 'small-caps', marginBottom: '40px' }}>
-        Af {keyword.author}
+      <div style={{ fontSize: '16px', marginBottom: '40px' }}>
+        {_('Af', lang)} {keyword.author}
       </div>
     );
   }
@@ -129,24 +106,19 @@ const About = (props: AboutProps) => {
   }
 
   return (
-    <div>
-      <Head headTitle="Kalliope" requestPath={requestPath} />
-      <Main>
-        <Nav lang="da" crumbs={crumbs} />
-        <Heading title="Kalliope" />
-        <KalliopeTabs lang={lang} selected="about" />
-        {pageBody}
-        <LangSelect lang={lang} path={requestPath} />
-      </Main>
-    </div>
+    <Page
+      headTitle={'Kalliope'}
+      requestPath={`/${lang}/about/${aboutItemId}`}
+      crumbs={crumbs}
+      pageTitle={'Kalliope'}
+      menuItems={kalliopeMenu()}
+      selectedMenuItem="about">
+      {pageBody}
+    </Page>
   );
 };
 
-About.getInitialProps = async ({
-  query: { lang, aboutItemId },
-}: {
-  query: { lang: Lang, aboutItemId: string },
-}) => {
+About.getInitialProps = async ({ query: { lang, aboutItemId } }) => {
   if (lang == null) {
     lang = 'da';
   }

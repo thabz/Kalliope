@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1866" author="munch" status="complete" type="poetry">
 <workhead>
     <title>Enoch Arden</title>
@@ -14,7 +13,7 @@
 </workhead>
 <workbody>
 
-<poem id="munch2019101201">
+<text id="munch2019101201">
 <head>
     <title>Enoch Arden</title>
     <firstline>I lange Klippestrand er der en Kløft</firstline>
@@ -26,6 +25,7 @@
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I lange Klippestrand er der en Kløft,
 Hvor Havets Skum paa gule Sandbund slaar
 Bag den en Klynge røde Tage om
@@ -216,7 +216,7 @@ Sin Plan for Annie før den næste Morgen.
 
 Nu talte han. Da, første Gang vel siden
 Hans gyldne Ring omslutted hendes Finger,
-Hun stred imod hans Yillie. Ikke dog
+Hun stred imod hans Villie. Ikke dog
 Med Støi og voldsom Klage stod hun mod —
 Men kun med mange Bønner, mange Taarer,
 Mangt sødt bedrøvet Kys ved Dag, ved Nat,
@@ -1133,8 +1133,9 @@ Han faldt tilbage, talte ikke meer.
 Saa foer den stærke Heltesjæl da hen.
 Og da man ham begrov, den lille By
 Ei havde seet meer pragtfuld Jordefærd.
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>
