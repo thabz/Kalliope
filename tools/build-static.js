@@ -351,18 +351,20 @@ const handle_text = async (
     .map((id) => {
       const meta = collected.texts.get(id);
       const poet = poetName(collected.poets.get(meta.poetId));
-      const workFormattet =
+      const work =
         meta.workId === 'andre' ?
-          ''
-        : ' - ' +
-          workLinkName(collected.works.get(meta.poetId + '/' + meta.workId));
+          null
+        : workLinkName(
+            collected.works.get(meta.poetId + '/' + meta.workId),
+          );
 
-      return [
-        [
-          `${poet}: <a poem="${id}">»${meta.title}«</a>${workFormattet}`,
-          { html: true },
-        ],
-      ];
+      return {
+        id,
+        title: meta.title,
+        poet,
+        poetId: meta.poetId,
+        work,
+      };
     });
   let refsArray = buildRefsArray(textRefIdsByType.mention || []);
   let translationsArray = buildRefsArray(textRefIdsByType.translation || []);
@@ -378,12 +380,13 @@ const handle_text = async (
       const work = workLinkName(
         collected.works.get(meta.poetId + '/' + meta.workId),
       );
-      return [
-        [
-          `${poet}: <a poem="${id}">»${meta.title}«</a> – ${work}`,
-          { html: true },
-        ],
-      ];
+      return {
+        id,
+        title: meta.title,
+        poet,
+        poetId: meta.poetId,
+        work,
+      };
     });
   const relatedDateTexts = relatedTextsForDates(
     sourceTextId,

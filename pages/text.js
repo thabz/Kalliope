@@ -61,31 +61,59 @@ const Bladrer = (props) => {
   );
 };
 
-const Refs = ({ refs, contentLang }) => {
-  let renderedRefs = null;
-  if (refs.length === 1) {
-    renderedRefs = (
-      <div style={{ marginBottom: '10px' }}>
-        <TextContent contentHtml={refs[0]} contentLang={contentLang} />
+const Refs = ({ refs, contentLang, currentPoetId }) => {
+  const lang = useContext(LangContext);
+  const renderedRefs = refs.map((ref, i) => {
+    if (Array.isArray(ref)) {
+      return (
+        <div className="reference" key={i}>
+          <TextContent contentHtml={ref} contentLang={contentLang} />
+        </div>
+      );
+    }
+
+    const metadata = [];
+    if (ref.poetId !== currentPoetId) {
+      metadata.push(ref.poet);
+    }
+    if (ref.work != null) {
+      metadata.push(ref.work);
+    }
+
+    return (
+      <div className="reference" key={ref.id}>
+        <Link
+          href={Links.textURL(lang, ref.id)}
+          className="reference-title">
+          »{ref.title}«
+        </Link>
+        {metadata.length > 0 ? (
+          <div className="reference-metadata">{metadata.join(' · ')}</div>
+        ) : null}
       </div>
     );
-  } else if (refs.length > 0) {
-    renderedRefs = (
-      <>
-        {refs.map((ref, i) => {
-          return (
-            <div key={i} style={{ marginBottom: '10px' }}>
-              <TextContent contentHtml={ref} contentLang={contentLang} />
-            </div>
-          );
-        })}
-      </>
-    );
-  }
+  });
+
   return (
     <div className="refs">
       {renderedRefs}
       <style jsx>{`
+        .reference {
+          margin-bottom: 16px;
+        }
+        .reference:last-child {
+          margin-bottom: 0;
+        }
+        :global(a.reference-title) {
+          display: inline-block;
+          hyphens: none;
+          overflow-wrap: break-word;
+        }
+        .reference-metadata {
+          margin-top: 2px;
+          color: #777;
+          font-size: 0.9em;
+        }
         @media print {
           .refs {
             display: none;
@@ -96,26 +124,37 @@ const Refs = ({ refs, contentLang }) => {
   );
 };
 
-const SidebarSection = ({ title, children, printHidden = false }) => {
+const MetadataGroup = ({ title, children, printHidden = false }) => {
   if (children == null) {
     return null;
   }
-  const className = `sidebar-section${printHidden ? ' print-hidden' : ''}`;
+  const className = `metadata-group${printHidden ? ' print-hidden' : ''}`;
   return (
     <section className={className}>
-      <h3>{title}</h3>
+      <h4>{title}</h4>
       {children}
       <style jsx>{`
-        .sidebar-section {
-          margin-bottom: 30px;
+        .metadata-group {
+          margin-bottom: 22px;
         }
-        .sidebar-section :global(h3) {
-          font-size: 1em;
-          font-weight: normal;
-          margin: 0 0 10px;
+        .metadata-group:last-child {
+          margin-bottom: 0;
+        }
+        .metadata-group :global(h4) {
+          margin: 0 0 7px;
+          color: #777;
+          font-size: 0.75em;
+          font-weight: 600;
+          letter-spacing: 0.06em;
+          line-height: 1.2;
+          text-transform: uppercase;
+        }
+        .metadata-group :global(a) {
+          hyphens: none;
+          overflow-wrap: break-word;
         }
         @media print {
-          .sidebar-section.print-hidden {
+          .metadata-group.print-hidden {
             display: none;
           }
         }
@@ -279,18 +318,28 @@ const TextPage = (props) => {
     };
   }
 
-  const notes = text.notes
-    .filter((note) => note.type !== 'unknown-original')
-    .map((note, i) => {
-      return (
-        <Note key={'note' + i} type={note.type}>
-          <TextContent
-            contentHtml={note.content_html}
-            contentLang={note.content_lang}
-          />
-        </Note>
-      );
-    });
+  const renderNotes = (items, keyPrefix) =>
+    items
+      .filter((note) => note.type !== 'unknown-original')
+      .map((note, i) => {
+        return (
+          <Note key={keyPrefix + i} type={note.type}>
+            <TextContent
+              contentHtml={note.content_html}
+              contentLang={note.content_lang}
+            />
+          </Note>
+        );
+      });
+
+  const translationSourceNotes = renderNotes(
+    text.notes.filter((note) => note.type === 'translation-source'),
+    'translation-source'
+  );
+  const notes = renderNotes(
+    text.notes.filter((note) => note.type !== 'translation-source'),
+    'note'
+  );
 
   text.notes
     .filter(
@@ -298,16 +347,16 @@ const TextPage = (props) => {
         note.type === 'unknown-original' && note.unknownOriginalBy != null
     )
     .map((note, i) => {
-      const poet = note.unknownOriginalBy;
-      if (poet == null) {
+      const originalPoet = note.unknownOriginalBy;
+      if (originalPoet == null) {
         return null;
       }
       const html = _(
         `Oversættelse af et ukendt digt af <a poet="{poetId}">{poetName}</a>.`,
         lang,
         {
-          poetId: poet.id,
-          poetName: poetNameString(poet, false, true, lang),
+          poetId: originalPoet.id,
+          poetName: poetNameString(originalPoet, false, true, lang),
         }
       );
       return (
@@ -317,7 +366,7 @@ const TextPage = (props) => {
               contentHtml={[[html, { html: true }]]}
               contentLang={lang}
             />
-            <HelpKalliope unknownOriginalBy={poet} lang={lang} />
+            <HelpKalliope unknownOriginalBy={originalPoet} lang={lang} />
           </>
         </Note>
       );
@@ -328,34 +377,17 @@ const TextPage = (props) => {
     });
 
   let sourceText = '';
-  let renderedPrintSource = null;
+  let renderedSource = null;
   if (text.source != null) {
     const source = text.source;
-    sourceText = 'Teksten følger ';
-    sourceText += source.source.replace(/\.?$/, ', ');
-    if (source.pages.indexOf('-') > -1) {
-      sourceText += 'pp. ';
-    } else {
-      sourceText += 'p. ';
-    }
-    sourceText += source.pages + '.';
-
-    const sourceContent = (
+    sourceText = source.source.replace(/\.?$/, ', ');
+    sourceText += 's. ' + source.pages + '.';
+    renderedSource = (
       <TextContent
         contentHtml={[[sourceText, { html: true }]]}
         contentLang="da"
       />
     );
-    if (text.source.facsimilePages != null) {
-      // Billedteksten skjules ved udskrift, så kildehenvisningen vises separat dér.
-      renderedPrintSource = <div className="print-only">{sourceContent}</div>;
-    } else {
-      notes.push(
-        <Note key="source" type="source">
-          {sourceContent}
-        </Note>
-      );
-    }
   }
 
   let textPictures = [...text.pictures];
@@ -377,6 +409,9 @@ const TextPage = (props) => {
         content_lang: 'da',
       });
     }
+    facsimilePictures[firstPageNumber - 1].miniature_content_html = [
+      [sourceText, { html: true }],
+    ];
     textPictures.push({
       key: 'facsimile' + firstPageNumber,
       pictures: facsimilePictures,
@@ -386,19 +421,12 @@ const TextPage = (props) => {
     });
   }
 
-  const renderedPictures = (
-    <div style={{ marginTop: '30px' }}>
-      <SidebarPictures pictures={textPictures} lang={lang} />
-    </div>
-  );
-
-  const variants = text.variants.map((ref, i) => {
-    return (
-      <div key={i} style={{ marginBottom: '10px' }}>
-        <TextContent contentHtml={ref} contentLang={text.content_lang} />
+  const renderedPictures =
+    textPictures.length > 0 ? (
+      <div>
+        <SidebarPictures pictures={textPictures} lang={lang} />
       </div>
-    );
-  });
+    ) : null;
 
   let renderedKeywords = null;
   if (text.keywords.length > 0) {
@@ -408,39 +436,8 @@ const TextPage = (props) => {
     renderedKeywords = <div style={{ marginTop: '30px' }}>{list}</div>;
   }
 
-  let renderedVariants = null;
-  if (variants.length > 0) {
-    let heading = null;
-    const varianter = _(
-      pluralize(variants.length, 'Variant', 'Varianter'),
-      lang
-    );
-    if (text.text_type === 'section') {
-      heading = _('{varianter} af denne samling:', lang, { varianter });
-    } else if (text.text_type === 'text') {
-      heading = _('{varianter} af denne tekst:', lang, { varianter });
-    }
-    renderedVariants = (
-      <div className="variants">
-        <p>{heading}</p>
-        {variants}
-        <style jsx>{`
-          @media print {
-            .variants {
-              display: none;
-            }
-          }
-        `}</style>
-      </div>
-    );
-  }
-
   const noteCount = notes.length + (text.footnotes_count || 0);
   const noteHeading = _(pluralize(noteCount, 'Note', 'Noter'), lang);
-  const refsHeading = _(
-    pluralize(text.refs.length, 'Henvisning', 'Henvisninger'),
-    lang
-  );
   const translationsHeading = _(
     pluralize(
       (text.translations || []).length,
@@ -449,57 +446,78 @@ const TextPage = (props) => {
     ),
     lang
   );
-  const renderedNoteSection =
+  const hasAboutText =
+    translationSourceNotes.length > 0 ||
+    renderedSource != null ||
+    notes.length > 0 ||
+    text.has_footnotes ||
+    text.refs.length > 0 ||
+    (text.translations || []).length > 0 ||
+    text.variants.length > 0;
+  const renderedNotes =
     notes.length > 0 || text.has_footnotes ? (
-      <SidebarSection title={noteHeading}>
+      <MetadataGroup title={noteHeading}>
         {notes}
         <FootnoteList />
-      </SidebarSection>
+      </MetadataGroup>
     ) : null;
-  const renderedRefs = text.refs.length > 0 ? (
-    <SidebarSection title={refsHeading} printHidden>
-      <Refs refs={text.refs} contentLang={text.content_lang} />
-    </SidebarSection>
+  const renderedTextMetadata = hasAboutText ? (
+    <>
+      {translationSourceNotes.length > 0 ? (
+        <MetadataGroup title={_('Forlæg', lang)}>
+          {translationSourceNotes}
+        </MetadataGroup>
+      ) : null}
+      {renderedSource != null ? (
+        <MetadataGroup title={_('Kilde', lang)}>
+          {renderedSource}
+        </MetadataGroup>
+      ) : null}
+      {text.variants.length > 0 ? (
+        <MetadataGroup title={_('Andre udgaver', lang)} printHidden>
+          <Refs
+            refs={text.variants}
+            contentLang={text.content_lang}
+            currentPoetId={poet.id}
+          />
+        </MetadataGroup>
+      ) : null}
+      {text.refs.length > 0 ? (
+        <MetadataGroup title={_('Omtalt i', lang)} printHidden>
+          <Refs
+            refs={text.refs}
+            contentLang={text.content_lang}
+            currentPoetId={poet.id}
+          />
+        </MetadataGroup>
+      ) : null}
+      {(text.translations || []).length > 0 ? (
+        <MetadataGroup title={translationsHeading} printHidden>
+          <Refs
+            refs={text.translations}
+            contentLang={text.content_lang}
+            currentPoetId={poet.id}
+          />
+        </MetadataGroup>
+      ) : null}
+    </>
   ) : null;
-  const renderedTranslations =
-    (text.translations || []).length > 0 ? (
-      <SidebarSection title={translationsHeading} printHidden>
-        <Refs refs={text.translations} contentLang={text.content_lang} />
-      </SidebarSection>
-    ) : null;
 
   let sidebar = null;
   if (
-    text.refs.length > 0 ||
-    (text.translations || []).length > 0 ||
-    variants.length > 0 ||
-    text.has_footnotes ||
+    hasAboutText ||
     text.pictures.length > 0 ||
-    notes.length > 0 ||
     text.keywords.length > 0 ||
     (text.related_date_texts || []).length > 0 ||
     textPictures.length > 0
   ) {
     sidebar = (
       <div>
-        {renderedNoteSection}
-        {renderedPrintSource}
+        {renderedNotes}
+        {renderedTextMetadata}
         <RelatedDateTexts texts={text.related_date_texts || []} lang={lang} />
-        {renderedRefs}
-        {renderedTranslations}
-        {renderedVariants}
         {renderedKeywords}
         {renderedPictures}
-        <style jsx>{`
-          .print-only {
-            display: none;
-          }
-          @media print {
-            .print-only {
-              display: block;
-            }
-          }
-        `}</style>
       </div>
     );
   }
