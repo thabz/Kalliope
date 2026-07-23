@@ -7,6 +7,7 @@ import { poetCrumbsWithTitle } from '../components/breadcrumbs.js';
 import * as Links from '../components/links.js';
 import { poetMenu } from '../components/menu.js';
 import Page from '../components/page.js';
+import PageLead from '../components/pagelead.js';
 import { poetNameString } from '../components/poetname-helpers.js';
 import PoetName from '../components/poetname.js';
 import SectionedList from '../components/sectionedlist.js';
@@ -104,6 +105,24 @@ const TextsPage = (props) => {
 
   const lastCrumbTitle =
     type === 'titles' ? _('Titler', lang) : _('Førstelinjer', lang);
+  const lead =
+    type === 'titles' ? (
+      <PageLead>
+        {_(
+          'Alle digte af {poetName} på Kalliope ordnet alfabetisk efter titel.',
+          lang,
+          { poetName: poetNameString(poet, false, false, lang) }
+        )}
+      </PageLead>
+    ) : (
+      <PageLead>
+        {_(
+          'Alle digte af {poetName} på Kalliope ordnet alfabetisk efter tekstens første linje. Listen kan bruges til at finde et digt, når titlen er ukendt.',
+          lang,
+          { poetName: poetNameString(poet, false, false, lang) }
+        )}
+      </PageLead>
+    );
 
   return (
     <Page
@@ -116,6 +135,7 @@ const TextsPage = (props) => {
       menuItems={poetMenu(poet)}
       poet={poet}
       selectedMenuItem={type}>
+      {lead}
       {renderedGroups}
     </Page>
   );
