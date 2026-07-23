@@ -106,10 +106,4 @@
     <link>https://www.tate.org.uk/</link>
     <deep-link>https://www.tate.org.uk/art/artworks/${invNr}</deep-link>
   </museum>
-  <museum id="wallace">
-    <name>The Wallace Collection</name>
-    <sort-name>Wallace Collection, The</sort-name>
-    <link>https://www.wallacecollection.org/</link>
-    <deep-link>https://wallacelive.wallacecollection.org/eMP/eMuseumPlus?service=ExternalInterface&amp;module=collection&amp;objectId=${objId}</deep-link>
-  </museum>
 </museums>

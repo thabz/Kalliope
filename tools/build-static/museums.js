@@ -15,15 +15,16 @@ import {
 // Read content/museums.xml and produce collected.museums to be used later.
 const build_museums = () => {
   const xmlFilename = `content/museums.xml`;
-  let collected_museums = new Map(loadCachedJSON('collected.museums') || []);
+  const cached_museums = new Map(loadCachedJSON('collected.museums') || []);
   if (
     !isFileModified(xmlFilename) &&
     !force_reload &&
-    collected_museums.size !== 0
+    cached_museums.size !== 0
   ) {
-    return collected_museums;
+    return cached_museums;
   }
 
+  const collected_museums = new Map();
   const doc = loadXMLDoc(xmlFilename);
 
   getElementsByTagName(doc, 'museum').map(museum => {
