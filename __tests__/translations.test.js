@@ -16,6 +16,8 @@ describe('translations helper', () => {
     expect(_('Eksterne ressourcer', 'en')).toBe('External resources');
     expect(_('Eksterne ressourcer', 'de')).toBe('Externe Ressourcen');
     expect(_('Eksterne ressourcer', 'fr')).toBe('Ressources externes');
+    expect(_('Forlæg', 'de')).toBe('Vorlage');
+    expect(_('Andre udgaver', 'fr')).toBe('Autres éditions');
   });
 
   it('falls back to the original string when missing', () => {
