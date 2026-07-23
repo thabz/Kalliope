@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="goetzn" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Johann Nikolaus</firstname>
+    <lastname>Götz</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1721-07-09</date>
+      <place>Worms</place>
+    </born>
+    <dead>
+      <date>1781-11-04</date>
+      <place>Winterburg</place>
+    </dead>
+  </period>
+  <literary-periods>oplysningstid-og-klassicisme</literary-periods>
+  <identifiers>
+    <wikidata>Q77275</wikidata>
+    <wikipedia-en>Johann Nikolaus Götz</wikipedia-en>
+    <wikipedia-fr>Johann Nikolaus Götz</wikipedia-fr>
+    <wikipedia-de>Johann Nikolaus Götz</wikipedia-de>
+    <viaf>8179182</viaf>
+  </identifiers>
+</person>
