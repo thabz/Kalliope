@@ -2,7 +2,6 @@ import { useContext } from 'react';
 import { createURL } from '../common/client.js';
 import LangContext from '../common/LangContext.js';
 import _ from '../common/translations.js';
-import { kalliopeCrumbs } from '../components/breadcrumbs.js';
 import { formattedDate } from '../components/formatteddate.js';
 import { kalliopeMenu } from '../components/menu.js';
 import Page from '../components/page.js';
@@ -177,7 +176,6 @@ let Index = (props) => {
       headTitle="Kalliope"
       pageTitle="Kalliope"
       requestPath={requestPath}
-      crumbs={kalliopeCrumbs(lang)}
       menuItems={kalliopeMenu()}
       selectedMenuItem="index"
       paging={paging}>

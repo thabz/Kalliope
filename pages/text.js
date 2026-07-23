@@ -615,6 +615,7 @@ const TextPage = (props) => {
       pageTitle={<PoetName poet={poet} includePeriod />}
       pageSubtitle={_('Værker', lang)}
       menuItems={poetMenu(poet)}
+      poet={poet}
       selectedMenuItem="works">
       <FootnoteContainer key={text.id}>
         <SidebarSplit sidebar={sidebar}>
