@@ -318,7 +318,6 @@ const update_elasticsearch = async collected => {
     const documents = [];
 
     entries.forEach(entry => {
-      console.log(`Updating text entry ${entry.textEntryKey} in elasticsearch`);
       const textEntryDocuments = buildElasticsearchTextEntryDocuments(
         collected,
         entry
