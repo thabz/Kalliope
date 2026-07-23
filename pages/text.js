@@ -328,6 +328,7 @@ const TextPage = (props) => {
     });
 
   let sourceText = '';
+  let renderedPrintSource = null;
   if (text.source != null) {
     const source = text.source;
     sourceText = 'Teksten følger ';
@@ -339,19 +340,22 @@ const TextPage = (props) => {
     }
     sourceText += source.pages + '.';
 
-    let className = null;
-    if (text.source.facsimilePages != null) {
-      // Vi har en facsimile, hvorunder vi viser sourceText, så denne note skal kun vises på print.
-      className = 'print-only';
-    }
-    notes.push(
-      <Note className={className} key="source" type="source">
-        <TextContent
-          contentHtml={[[sourceText, { html: true }]]}
-          contentLang="da"
-        />
-      </Note>
+    const sourceContent = (
+      <TextContent
+        contentHtml={[[sourceText, { html: true }]]}
+        contentLang="da"
+      />
     );
+    if (text.source.facsimilePages != null) {
+      // Billedteksten skjules ved udskrift, så kildehenvisningen vises separat dér.
+      renderedPrintSource = <div className="print-only">{sourceContent}</div>;
+    } else {
+      notes.push(
+        <Note key="source" type="source">
+          {sourceContent}
+        </Note>
+      );
+    }
   }
 
   let textPictures = [...text.pictures];
@@ -479,12 +483,23 @@ const TextPage = (props) => {
     sidebar = (
       <div>
         {renderedNoteSection}
+        {renderedPrintSource}
         <RelatedDateTexts texts={text.related_date_texts || []} lang={lang} />
         {renderedRefs}
         {renderedTranslations}
         {renderedVariants}
         {renderedKeywords}
         {renderedPictures}
+        <style jsx>{`
+          .print-only {
+            display: none;
+          }
+          @media print {
+            .print-only {
+              display: block;
+            }
+          }
+        `}</style>
       </div>
     );
   }
