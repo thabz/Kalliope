@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1831" author="ingemann" status="incomplete" type="poetry">
 <workhead>
    <title>Huldregaverne</title>
    <year>1831</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="ingemann1831a0">
+<text id="ingemann1831a0">
 <head>
    <title>I Snee staaer Urt og Busk i Skjul</title>
    <toctitle>I Snee staaer Urt og Busk i Skjul</toctitle>
@@ -18,6 +16,7 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 I Snee staaer Urt og Busk i Skjul;
   Det er saa koldt derude;
 Dog synger der en lille Fugl
@@ -37,7 +36,8 @@ Giv Tid! og Aandens Vinterblund
   Skal flye for herlig Sommer;
 Giv Tid og bie paa Herrens Stund!
   - Hans Skjønhedsrige kommer.
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

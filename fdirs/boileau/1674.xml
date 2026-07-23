@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1674" author="boileau" status="complete" type="poetry">
 <workhead>
    <title>L'Art poétique</title>
    <year>1674</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
    <!-- Stjålet fra http://www.uqac.uquebec.ca/dal/poetique/boileau_chant_I.htm -->
 </workhead>
 <workbody>
 
-<poem id="boileau2002122601">
+<text id="boileau2002122601">
 <head>
    <title>Chant I</title>
    <toctitle>Chant I</toctitle>
@@ -20,6 +18,7 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 C'est en vain qu'au Parnasse un téméraire auteur
 Pense de l'art des vers atteindre la hauteur:
 S'il ne sent point du ciel l'influence secrète,
@@ -252,10 +251,11 @@ L'ouvrage le plus plat a, chez les courtisans,
 De tout temps rencontré de zélés partisans;
 Et, pour finir enfin par un trait de satire,
 Un sot trouve toujours un plus sot qui l'admire.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="boileau2002122602">
+<text id="boileau2002122602">
 <head>
    <title>Chant II</title>
    <toctitle>Chant II</toctitle>
@@ -265,6 +265,7 @@ Un sot trouve toujours un plus sot qui l'admire.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Telle qu'une bergère, au plus beau jour de fête,
 De superbes rubis ne charge point sa tête,
 Et, sans mêler à l'or l'éclat des diamans,
@@ -381,7 +382,7 @@ La tragédie en fit ses plus chères délices;
 L'élégie en orna ses douloureux caprices;
 Un héros sur la scène eut soin de s'en parer,
 Et sans pointe un amant n'osa plus soupirer:
-On vit tous les bergers, dans leurs plaintes nouveIIes,
+On vit tous les bergers, dans leurs plaintes nouvelles,
 Fidèles à la pointe encor plus qu'à leurs belles;
 Chaque mot eut toujours deux visages divers:
 La prose la reçut aussi bien que les vers;
@@ -469,10 +470,11 @@ Encore est-ce un miracle, en ses vagues furies,
 Si bientôt, imprimant ses sottes rêveries,
 Il ne se fait graver au-devant du recueil,
 Couronné de lauriers par la main de Nanteuil.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="boileau2002122603">
+<text id="boileau2002122603">
 <head>
    <title>Chant III</title>
    <toctitle>Chant III</toctitle>
@@ -482,6 +484,7 @@ Couronné de lauriers par la main de Nanteuil.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Il n'est point de serpent ni de monstre odieux,
 Qui, par l'art imité, ne puisse plaire aux yeux:
 D'un pinceau délicat l'artifice agréable
@@ -910,10 +913,11 @@ Qui, pour me divertir, n'a que la saleté,
 Qu'il s'en aille, s'il veut, sur deux tréteaux monté,
 Amusant le pont Neuf de ses sornettes fades,
 Aux laquais assemblés jouer ses mascarades.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="boileau2002122604">
+<text id="boileau2002122604">
 <head>
    <title>Chant IV</title>
    <toctitle>Chant IV</toctitle>
@@ -923,6 +927,7 @@ Aux laquais assemblés jouer ses mascarades.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Dans Florence jadis vivoit un médecin,
 Savant hâbleur, dit-on, et célèbre assassin.
 Lui seul y fit longtemps la publique misère:
@@ -1161,7 +1166,8 @@ Quelquefois du bon or je sépare le faux,
 Et des auteurs grossiers j'attaque les défauts;
 Censeur un peu fâcheux, mais souvent nécessaire,
 Plus enclin à blâmer que savant à bien faire.
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

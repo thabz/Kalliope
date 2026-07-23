@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1901" author="karlfeldt" status="incomplete" type="poetry">
 <workhead>
     <title>Fridolins Lustgård och Dalmålningar på rim</title>
@@ -7,12 +6,13 @@
 </workhead>
 <workbody>
 
-<poem id="karlfeldt2019072102">
+<text id="karlfeldt2019072102">
 <head>
    <title>Böljeby-vals</title>
    <firstline>Sjung, sjung i alarna</firstline>
 </head>
 <body>
+<poetry>
 Sjung, sjung i alarna,
 flygande storm, du kämpars vän,
 sjung, sjung i salarna;
@@ -48,8 +48,9 @@ Våren, den susande,
 har inga visor mer för oss.
 Livet är brusande
 stormsång och stormdans bara.
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

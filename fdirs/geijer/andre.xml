@@ -1,15 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="geijer" status="incomplete" type="poetry">
 <workhead>
    <title>Andre digte</title>
-   <year>?</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="geijer2018081001">
+<text id="geijer2020011201">
+<head>
+    <title>Manhem</title>
+    <firstline>Det var en tid det bodde uti Norden</firstline>
+   <notes>
+       <note>Efter Erik Gustaf: <i>Dikter</i>, Carina og Lars Burman (red.), Svenska Akademien, 1999, pp. 5-7.</note>
+   </notes>
+</head>
+<body>
+<poetry>
+Det var en tid det bodde uti Norden
+En storsint ätt, beredd för frid som krig.
+Då, ingens slav och ingens herre vorden,
+Var Odalbonde var en man för sig.
+Med svärd han röjde våld, med plogen jorden,
+Med lugn för Gud och man han gick sin stig.
+Sig själv sitt värn han visste andra skydda,
+Och Kungasöner växte i hans hydda.
+
+Till honom ej, från vitt avlägsna stränder,
+Med skeppen flöto konstiga behov.
+Ej krämarn musten sög utur hans länder,
+Ej flärdens yppighet hans vinst begrov.
+Men åkern plöjde han med egna händer,
+Hans tillit var hans arm, hans skatt var hov.
+Vår konst att njuta är, hans var umbära,
+Och själv sig vara nog, var all hans lära.
+
+Om han ej övad var att sirligt tala,
+Hans handslag gällde mer än ed och skrift.
+Han drog ej agg inunder löjen hala:
+Hans hand bar svärd, men ej hans tunga gift.
+Han ej förstod med ord en skuld betala,
+Och språka om sitt hjärtas ömma drift.
+Hans hat var eld, hans vänskap gick i döden,
+Och med sin fosterbror han delte öden.
+
+Hans lärdom var ej stor - Han visste lida
+Och leva som en man. Vad vet’ vi mer?
+Vi veta huru sol och stjärnor skrida -
+De över veklingar gå upp och ner.
+Vi apa åskan, kunna vapen smida,
+Men ej det mod, som emot faran ler.
+För lyckan krypande vi slåss om brödet.
+Han upprätt stod och brottades med ödet.
+
+Och föll han även - ej han hördes kvida,
+Han tåligt drog vad lag som mänskan fått.
+Med fåfäng suck han bad ej plågan bida.
+Han tiggde ej om livets usla lott.
+Med färdigt mod att lyda och att strida,
+Han böd ett stålsatt bröst mot lyckans skott.
+Allt kan dess nyck förta och allt beskära,
+Ej makt att leva fri, och dö med ära.
+
+Av dessa dygder fordom Manhem nämndes,
+Ty det var Fosterland för manlig dygd.
+Vid blotta namnet vekligheten skrämdes,
+Och tänkte rodnande sin egen blygd.
+Här, där ur klippans hällar järnet tämdes,
+Hon grundades den evigt fria bygd:
+Och när åt bojan folken tyckts sig lämna,
+Då kommo Nordens Söner att dem hämna.
+
+Så tänkte man i våra fäders dagar.
+Du är försvunnen tid av dygd och makt!
+Vad mer, om Tysklands lärdom oss behagar,
+Och Gallien kläder oss med lust och prakt,
+Och Indiens krydda våra rätter lagar,
+Om lika många band de på oss lagt?
+Vad mer om tusen skatter till oss välva,
+Och vi då äga allt och ej oss själva!
+
+Och Nordens son Europas flärd församlar
+Och känner allt, men ej att vara fri!
+Av ljus ej ser, av idel visdom famlar,
+Tills lust och maklighet hans herrar bli;
+Och då hans sköra lycka slutligt ramlar
+Än vekligt höjer hopplöshetens skri,
+Än trotsigt vill åt ödet vördnad lära,
+Och talar högt om sina fäders ära!
+
+En slav är den, som usla lustar jaga,
+Om kedjan aldrig skramlat kring hans fot.
+Blott det är dygd, att handla och fördraga
+Med enfald och med kraft och utan knot.
+Det blott en vishet finns - att emottaga
+Med lugn sin lott oaktat ödets hot:
+Du fåfängt söker den kring vida jorden
+Om i ditt bröst den ej är nedlagd vorden.
+
+På segerrika marker Svensken träder,
+Där berg och skogar tala forntids bragd.
+Han ropar dig den sång, som stormen kväder
+Kring kämpars aska, djupt i högen lagd:
+Kan du förgäta dina stora fäder,
+Och ibland deras skuggor stå försagd?
+Steg då med deras ätt och deras seder
+Ock Nordens kraft i gravens sköte neder?
+
+Nej! renom det, de forna dygders tempel,
+För evigheten rest på denna jord!
+Är hon ej med naturens egen stämpel
+Till manlighetens starka boning gjord?
+Upplivom dem de forntida exempel
+Av ära, kraft och tro uti vår Nord.
+Då skola i vårt fall vi även hämnas,
+Och Manhems namn på jorden åter nämnas.
+</poetry>
+</body>
+</text>
+
+<text id="geijer2018081001">
 <head>
    <title>Vikingen</title>
    <firstline>Vid femton års ålder blef stugan mig trång</firstline>
@@ -19,6 +128,7 @@
    </notes>
 </head>
 <body>
+<poetry>
   Vid femton års ålder blev stugan mig trång,
 Där jag bodde med moder min.
 Att vakta på gettren blev dagen mig lång.
@@ -53,7 +163,7 @@ Och svor att erövra mig rike och land
 
   Vid sexton års ålder jag Vikingen slog,
 Som skällde mig skägglös och vek.
-Jag sjö-konung blev – över vattnen drog,
+Jag sjö-konung blev - över vattnen drog,
 Uti härnadens blodiga lek.
 Jag landgång gjorde, vann borgar och slott,
 Och med mina kämpar om rovet drog lott
@@ -61,8 +171,8 @@ Och med mina kämpar om rovet drog lott
 
   Ur hornen vi tömde då mjödets must
 Med makt på den stormande sjö.
-Från vågen vi härskade på var kust –
-I Valland jag tog mig en mö –
+Från vågen vi härskade på var kust -
+I Valland jag tog mig en mö -
 I tre dagar grät hon, och så blev hon nöjd,
 Och så stod vårt bröllop, med lekande fröjd,
     Uppå havet.
@@ -71,7 +181,7 @@ Och så stod vårt bröllop, med lekande fröjd,
 Och drack under sotad ås,<note>* Att aldrig dricka under sotad ås, det vill säga: under tak å land, var eljest vikinga-sed.</note>
 Och drog för rike och menighet sorg,
 Och sov inom väggar och lås.
-Det var en hel vinter – den syntes mig lång,
+Det var en hel vinter - den syntes mig lång,
 Och fast jag var Kung var dock jorden mig trång,
     Emot havet.
 
@@ -80,10 +190,10 @@ För att hjälpa var hjälplös gäck.
 Till mur vill man ha mig kring bondens bo
 Och till lås för tiggarens säck.
 På sakören, edgång och tjuvar och rån
-Jag hörde mig mätt – Vor’ jag långt därifrån
+Jag hörde mig mätt - Vor’ jag långt därifrån
     Uppå havet!
 
-  Så bad jag – men hän gick ock vintern lång,
+  Så bad jag - men hän gick ock vintern lång,
 Och med sippor stränderna strös.
 Och böljorna sjunga åter sin sång,
 Och klinga: till sjöss, till sjöss!
@@ -109,8 +219,8 @@ Men sorgen, hon känner ej Vikingens stig
 
   Och åter bland kämpar jag spejande stod
 Efter skepp i det fjärran blå.
-Kom Vikinga-segel – då gällde det blod:
-Kom Krämarn – så fick han gå.
+Kom Vikinga-segel - då gällde det blod:
+Kom Krämarn - så fick han gå.
 Men blodig är segren den tappre värd,
 Och Vikinga-vänskap, den knytes med svärd
     Uppå havet.
@@ -131,7 +241,7 @@ Likt mänskornas öden är böljornas svall:
 Bäst är vara färdig för medgång som fall
     Uppå havet.
 
-  Jag tjugu år fyllt – då kom ofärden snar:
+  Jag tjugu år fyllt - då kom ofärden snar:
 Och sjön nu begärar mitt blod.
 Han känner det väl, han det förr druckit har,
 Där hetaste striden stod.
@@ -144,19 +254,594 @@ Snabb var, men god, deras fart.
 Det går ej en väg blott till gudarnas sal:
 Och bättre är hinna den snart.
 Med dödssång de ljudande böljor gå;
-På dem har jag levat – min grav skall jag få
+På dem har jag levat - min grav skall jag få
     Uti havet.
 
 <nonum><center>* * *</center></nonum>
 
 Så sjunger, på ensliga klippans hall
-Den skeppsbrutne Viking bland bränningars svall –
-I djupet sjön honom river –
+Den skeppsbrutne Viking bland bränningars svall -
+I djupet sjön honom river -
 Och böljorna sjunga åter sin sång,
 Och vinden växlar sin lekande gång:
-Men den tappres minne – det <i>bliver.</i>
+Men den tappres minne - det <i>bliver.</i>
+</poetry>
 </body>
-</poem>
+</text>
+
+
+<text id="geijer2020011202">
+<head>
+    <title>Odalbonden</title>
+    <firstline>Å bergig ås, där står mitt hus</firstline>
+    <notes>
+        <note>Efter Erik Gustaf: <i>Dikter</i>, Carina og Lars Burman (red.), Svenska Akademien, 1999, pp. 12-15.</note>
+    </notes>
+</head>
+<body>
+<poetry>
+Å bergig ås, där står mitt hus,
+Högt över skog och sjö.
+Där såg jag första dagens ljus,
+Och där vill jag ock dö.
+
+Må ho som vill gå kring världens rund:
+Vare herre och dräng den det kan!
+Men jag står helst på min egen grund,
+Och är helst min egen man.
+
+Mig lockar icke ärans namn.
+Hon bor dock i mitt bröst.
+Min skörd ej gror i ryktets famn.
+Jag skär den lugn var höst.
+
+Den jorden behärskar, har tusende ben
+Och väl tusende armar därtill.
+Men svårt är dem röra - <i>min</i> arm är ej sen
+Att föra ut vad <i>jag</i> vill.
+
+Jag tror ej böljans falska lopp,
+Som far förutan ro.
+Den fasta jord, hon är mitt hopp,
+Hon visar evig tro.
+
+Hon närer mig ur sin hulda barm,
+Den tid som mig ödet gav.
+Hon fattar mig säkert, hon håller mig varm,
+Då jag dör, uti djupan grav.
+
+Ej buller älskar jag och bång.
+Vad stort sker, det sker tyst.
+Snart märks ej spår av stormens gång,
+Av blixten, se’n den lyst.
+
+Men tyst lägger tiden stund till stund;
+Och du täljer dock icke hans dar.
+Och tyst flyter böljan i havets grund;
+Fast regn-bäcken skrålande far.
+
+Så går ock jag en stilla stig:
+Man spör om mig ej stort.
+Och mina bröder likna mig,
+Var en uppå sin ort.
+
+Vi reda för landet den närande saft.
+Vi föda det - brödet är vårt.
+Av oss har det hälsa, av oss har det kraft,
+Och blöder det - blodet är vårt.
+
+Var plåga har sitt skri för sig,
+Men hälsan tiger still;
+Därför man talar ej om mig,
+Som vore jag ej till.
+
+De väldige Herrar, med skri och med dån,
+Slå riken och byar omkull;
+Tyst bygga dem Bonden och hans son,
+Som så uti blodbestänkt mull.
+
+Mig mycken lärdom ej är tung,
+Jag vet blott vad är <i>mitt</i>.
+Vad rätt är, ger jag Gud och Kung,
+Och njuter resten fritt.
+
+De lärde, de rike de bråka sitt vett
+Att röna vars rätt som är god.
+Mig ren är den rätt, som man värvt med sin svett,
+Och som man värjt med sitt blod.
+
+Jag går ej stadigt stugan kring;
+Ty blir mig hågen varm,
+Jag vandrar opp till Svea Ting,
+Med skölden på min arm.
+
+Med mång’ ord talar vår Lagman ej
+För Kungen i allmän sak.
+Men kraftigt är Allmogens Ja eller Nej,
+Under vapnens skallande brak.
+
+Och om till krig Han uppbåd ger,
+Så gå vi man ur gård.
+Där Kungen ställer sitt baner,
+Där drabbar striden hård.
+
+För älskade panten i moders famn,
+För fäder, för hem vi slåss.
+Och känner ej ryktet vårt dunkla namn,
+Svea-Konungar känna oss.
+
+<nonum><center>* * *</center></nonum>
+
+Så sjunger glatt vid sprakande spis,
+I den kalla vinter-kväll
+Den gamle man uppå bonde-vis,
+Med söner sin’ i sitt tjäll.
+
+Han sitter och täljer sin ålders stav.
+Må hans ätt ej i Sverige se slut!
+Väl Bondens minne sänks uti grav;
+Men hans verk varar tiden ut.
+</poetry>
+</body>
+</text>
+
+<text id="geijer2020011203">
+<head>
+    <title>Den siste Kämpen</title>
+    <firstline>I natten tindra blixtrarnas sken</firstline>
+    <notes>
+        <note>Efter Erik Gustaf: <i>Dikter</i>, Carina og Lars Burman (red.), Svenska Akademien, 1999, pp. 18-22.</note>
+    </notes>
+</head>
+<body>
+<poetry>
+I natten tindra blixtrarnas sken:
+På klippans spets sitter Kämpen allen,
+  Det väldiga svärd vid sin sida.
+En ny tid kommer. - Hans tider förgå,
+Hans styrka är bruten, hans hjässa är grå:
+  Vi skulle han längre förbida?
+
+Från branta fjället han trotsig ser
+I stupande forsens avgrund ner:
+  Av längtan tänds honom bloden.
+I vågens damm tyckas vålnader stå,
+Ur djupet röster manande gå:
+  Hell den, som får vara hos Oden!
+
+Ur klostret steg fjärran klockornas klang:
+Och Kämpen ryste: - Ur djupet det sang
+  En sång, som mer honom glädde.
+Den talte om kämpa-bragd och hopp.
+Men åskan slog gällt, och sången slöt opp,
+  Och upp stod Kämpen och kvädde:
+
+        Ännu dock leva
+        de gamle Gudar,
+        och Tor på vagnen
+        dånande åker -
+        Härskarn i himlen
+        evigt ; om också
+        intet offer
+        av jordrikets söner
+        åt honom tändes.
+        Och Du, Oden,
+        Asa-hövdinge!
+        Gången är Du.
+        Ännu i livet
+        ingen förmåtte
+        Dig besegra;
+        och, då Döden
+        Dig ville tvinga,
+        drog Du manligt
+        det goda svärdet,
+        och ristade djupt
+        opp livets källor,
+        så att själen,
+        trotsig och glad,
+        med forsande blodet
+        flög åt höjden.
+
+        Dock, Du lever!
+        och mång’ tusende
+        kämpar, dem Du,
+        Valfader,<note>* Odens tillnamn: emedan han korade eller valde åt sig de svärdslagna.</note> valt
+        å rykande slaktfält,
+        till Dig samlats
+        och i Dina
+        gyldene salar
+        glade gästa.
+        Där de kläda sig
+        varje morgon
+        i blixtrande stål:
+        Att huggas och slåss
+        uppå Odens gård,
+        det är deras ro.
+        Se’n rida de hem
+        till rågat bord.
+        Sköldmö skänker
+        det brusande mjöd:
+        Skalden tar opp
+        den mäktiga sång. -
+        Om fordom timma
+        och kämpa-idrott
+        kväder han: - Hjältarne
+        lyssna med fröjd,
+        och bifall slå
+        uppå skölden hård,
+        så att det dånar
+        genom den eviga
+        nattens riken.
+
+        Se, I Gudar!
+        Jag är för gammal
+        för nya läran
+        om vita Kristus<note>* Sådant var Hedningarnes uttryck.</note> -
+        Vill ej till himlen,
+        till andra Gudar
+        och Sankt Peter,
+        som jag ej känner.
+
+        Döpter är jag
+        i rödan blod
+        av fiender slagna,
+        och föraktar
+        att helgas av vatten.
+        Gångne är
+        Stallbröder mina
+        alle hädan.
+        Ensam är jag;
+        och den siste,
+        ja, den siste,
+        ende, lämnade
+        av mina vänner,
+        vill ej mer
+        med mig pläga samkväm.
+
+        Sen, I Gudar!
+        Detta svärdet :
+        nu är det tungt
+        i den Gamles händer.
+        I veten jag har ej
+        mycket aktat
+        blod eller livet :
+        Bort det! - att Kämpen
+        skulle dö nesligt
+        på mjuka bädden;
+        dit de komma
+        de svarte män
+        uti munke-kåpor,
+        och med olåt
+        nedlägga kroppen
+        i lågan mull:
+        där ingen hög,
+        ingen Bauta-sten
+        skall stå upp på hans stoft,
+        att de må se den,
+        de kommande folk,
+        och vandraren säga:
+        Där vilar Han
+        av de gamla dagar.
+
+        Därför, Valfader,
+        tag mig till Dig! -
+        I Valhalla
+        ännu står
+        ledigt ett rum
+        för den siste kämpen - -
+
+I natten tindrar blixtarnas sken.
+På klippans spets sitter Kämpen allen,
+  Sitt väldiga svärd vid sin sida.
+En ny tid kommer, - Hans tider förgå.
+Hans styrka är bruten, hans hår äro grå:
+  Vi skulle han längre förbida?
+
+Från branta fjället han trotsig ser
+I stupande forsens avgrund ner:
+  Av längtan tänds honom bloden.
+Ur djupet tycks manande röster gå.
+Han störtar från klippan i djupet brå - -
+  Säll den, som får vara hos Oden!
+</poetry>
+</body>
+</text>
+
+<text id="geijer2020011204">
+<head>
+    <title>Den siste skalden</title>
+    <firstline>Hans växt var kämpalik, men böjd av åren</firstline>
+    <notes>
+        <note>Efter Erik Gustaf: <i>Dikter</i>, Carina og Lars Burman (red.), Svenska Akademien, 1999, pp. 23-31.</note>
+    </notes>
+</head>
+<body>
+<poetry>
+Hans växt var kämpalik, men böjd av åren,
+Med långsam gång han över heden skred,
+Från hjässan fladdrade de vita håren,
+Det sida skägget flöt till gördeln ned.
+Han följde ingen väg, han såg ej spåren,
+Men framåt oförryckt tog han sin led.
+Mot klara himlen stadigt stod hans öga,
+Som om sitt mål han sökte i det höga.
+
+»Varthän, O Vandrare i nattens timma?«
+Han vänder sig ej om vid röstens skall.
+Hans steg ej vilsefar i skog och dimma;
+En Gud bevarar visst hans fot för fall.
+I luften höres milda toner simma,
+Som suckande dö bort mot klippans hall.
+Så vandrar han med harpan uti händer,
+Så har han vandrat genom många länder.
+
+En sällsam gäst från gråa forntids-dagar -
+Ej någon visste talet på hans år -
+Han går sin stilla gång och icke klagar
+Att han på jorden ingen fristad når,
+Att andra tider infört andra lagar,
+Att längese’n försvunnit Sångens vår.
+Hans släkt gått ut. - Han sina vänner miste.
+Han utav skalderna är kvar den siste.
+
+I Kungaborgen lyste ljusen klara,
+Vitt hördes midnattsfestens vilda fröjd.
+Kring borden satt de fagra jungfrurs skara
+Och mången unger-sven till lekar böjd.
+Låt bägarn, fylld till brädd, kring laget fara, -
+Skrek Konungen, - Jag är i kväll förnöjd.
+Men tunga slag på porten störa festen:
+Låt upp, sad’ Kungen, för den nya gästen!
+
+In trädde Skalden. - Dörren knappast rymde
+Den gamles majestätiska gestalt.
+En okänd fruktan lagets glädje skymde,
+Och tyst som graven blev i salen allt.
+Snällt mången mö bakom sin granne rymde,
+Av bävan månget Tignar-hjärta<note>* Tignar-män: hovmän, gamla tidens adelsmän.</note> smalt.
+Men tyst, en vålnad lik från andra världen,
+Stod gästen där med ögat fäst på värden.
+
+Vem är du, Främling, äntlig Kungen frågar,
+Och gör ett kors utöver bägarns rand.
+Om jagad upp ur gravens sköt du tågar,
+Vik hän i korsets namn till skuggors land!
+Om i ditt bröst än livets flamma lågar,
+Så tag den gyldne bägarn av min hand -
+Den Gamle bägarn tar och drycken tömmer,
+Hans öga tänds, han mjödets kraft berömmer.
+
+Vad Du mig gjort, Dig Gud en gång betalar,
+Och tröstens dryck Dig ej i nöden spar.
+En gammal man, o Konung! du hugsvalar,
+Vars levnad en gång skådat bättre dar.
+I festens prakt, i gyllne Kungasalar,
+Ej Skalden fordomdags en främling var.
+Nu är han trött av hundra-åra skiften,
+Han överlevt sin tid, hans hopp är griften.
+
+Av Sångens barn, som tystnat uti Norden,
+Jag ensam blev. - Jag tog min vandringsstav.
+En flyktig främling i min ålder vorden,
+Min harpa mig mitt uppehälle gav.
+Från dörr till dörr jag vandrade på jorden:
+Jag kom till fjärran land och Kristi grav.
+Jag harpan slog till mången Pilgrims psalmer,
+Jag spelte under Helga landets palmer.
+
+Men giftig var i Södern blomstrens ånga,
+Där synden frodas uti Solens brand,
+Och illslugt folket, deras hjärtan trånga;
+Själv sången låg i vinningslystnans band.
+Jag Karlavagnen såg på fästet gånga:
+Jag trådde åter till mitt kalla land.
+Där ren står blåa himlen över tjällen,
+Och äran bor, ovanskelig som fjällen.
+
+Det drog mig bort. - Jag kunde icke dröja.
+I mina ögon sällan kom en blund.
+Jag gick, då natten stjärnbestrött sin slöja,
+Jag gick, då solen gjorde dagens rund.
+En högre makt har tyckts min styrka höja,
+Och jag har härdat ut till denna stund.
+Så har jag vandrat över berg och dalar,
+Så har jag kommit i min Konungs salar.
+
+Av Dig, o Drott! Jag intet vill begära,
+Ej kostlig gåva, icke bröd och lön;
+Men vill Du skalden någon nåd beskära,
+Så tillstäd honom blott en enda bön:
+Att än en gång få höja festens ära. -
+Välan! utav Din konst giv oss ett rön,
+Sad’ Konungen - Den Gamle satt i gången,
+Och harpan slog och söng den sista sången.
+
+        Vid målet är jag
+        av långa resan.
+        De matta senor
+        mig icke svikit
+        på sista färden.
+        Tack Er, I Makter!
+        som nådigt vakat
+        över den Gamle,
+        att hans själ
+        måtte se den dag,
+        varefter hon längtat -
+        Jag vet var jag är.
+        Känner jag icke
+        det väldiga Svitiods
+        Konunga-sal?
+        Där tapprare männer
+        i högsätet sutit,
+        Kong! före Dig
+        och skalder fordom
+        stämde opp sången
+        bättre än jag -
+        Mig tyckes jag ser dem,
+        de gråa skuggor,
+        med stilla allvar,
+        resliga stå
+        bland de stojande gäster.
+        Jag kommer! Jag kommer!
+        Ej fruktlöst de vinka.
+        Jag längtar till Er,
+        till Eder, I hjältar!
+        Och livligt går upp,
+        för min hänryckta själ,
+        det röda skenet
+        av forntida minnen. -
+
+        I forna dagar
+        satt Skalden ofta
+        vid kunga-bord;
+        där skummande hornen
+        gingo kring laget
+        i kämpa-samkväm.
+        Vid hans sånger
+        om segerrik bragd
+        bröt ljungande mod
+        in i männers hjärtan;
+        och mången stod opp
+        från hårda bänken,
+        svärjande löfte
+        om framtida storverk.
+        Då var ärofull
+        sångens lön;
+        och ett konunga-svärd,
+        från hjältens sida,
+        var värdig skänk
+        åt Skalden, vars arm
+        nog visste det föra,
+        i forna dagar.
+
+        I forna dagar
+        var Skaldens plats,
+        ej i gästabud blott,
+        men i härnad.
+        Då Kämpen drog ut,
+        blev ej Skalden kvar.
+        Då Kämpen drog hem,
+        kom Skalden och kvad
+        om ärofull död eller seger.
+
+        Då hären på heden
+        sig lägrat till vila,
+        väntande slaget
+        vid gryningens timma,
+        satt Skalden upp
+        i den tysta natt,
+        och med högan röst
+        kvad förfäders ära.
+        Sångens makt
+        tog fatt på hans själ,
+        och gav honom kraft
+        att betvinga männer.
+        Som svärdsegg skarpa
+        gingo hans ord.
+        Han grep uti harpan
+        med väldig hand,
+        och ljudet trängde
+        till hjärta och märg,
+        och tände där eld
+        och en hjälte-vrede.
+        Med svärdet tryckt
+        till klappande bröst,
+        ligger Kämpen tyst.
+        Han räknar på stjärnorna
+        nattens lopp -
+        än tindra de klart
+        över fjällets topp;
+        och ur dalens djup,
+        ur den stormande fors
+        tycks fjärran dånet skicka en röst,
+        som ropar: till Valhall! till Valhall!
+
+        Fast månge äro
+        min levnads dagar:
+        Jag sett ett släkte
+        av jorden gå;
+        Jag sett ett annat
+        på jorden komma.
+        Men knappast bevarar
+        min hågkomst matt,
+        ifrån barna-år,
+        ett minne av Sångens
+        gyldene dagar:
+        Då ännu stod
+        i sin forna prakt
+        Uppsala Tempel.
+        Där, under valv
+        av timmerhög skog,
+        bodde de mäktige
+        Svitiods Gudar -
+        Jag såg Konung <i>Inge;</i>
+        han kom med makt,
+        och lärde med svärdsegg
+        Kristen tro,
+        i min ungdoms-dagar. -
+        Jag minnes den natt,
+        då branden bröt ut
+        utur helgedomen.
+        Med hiskeligt brak
+        störte de urgamla
+        murar ned
+        uti svalg av lågor.
+        I luften veno
+        sällsamma ljud;
+        och folket, som stod
+        förstenat av fasa,
+        hov ett skri:
+        <i>Nu draga de hädan,</i>
+        <i>de gamle Gudar!</i>
+        Då blev jag döpter
+        i Fyris å,
+        som välvde röd
+        utav hedna-blod,
+        i min ungdoms-dagar.
+        Åttio år
+        har jag väntat se’n.
+        Men de komma ej åter,
+        de gamle Gudar.
+        Därföre måste jag
+        gå till dem.
+        Och de Kristnas Fader,
+        som jag bekänt,
+        Han är rik och mild:
+        Hans hämnd skall ej söka
+        en ringa man,
+        som vid gravens brädd
+        stammar en bön
+        åt förgätna Gudar -
+        Han skall ej vredgas,
+        om Skalden förskjuter
+        himmelens glans,
+        för att, i nattens,
+        gråa djup
+        sitta med kämpar
+        i Odens sal,
+        och sjunga sin sång
+        med Brage den gamle.
+
+I salen hörs ett harmfullt sorl kring borden,
+Och upp står Konungen med häftigt mod.
+»Din sång jag löna vill, och för de orden,
+Din hednahund, du pliktar med ditt blod!«
+Den gamla satt med pannan böjd mot jorden.
+Han famnar harpan, som för honom stod.
+Han svarar ej - han ej ur stället rymmer;
+Ty dödens skugga re’n hans öga skymmer.
+
+Men hastigt grep hans hand i harpans strängar -
+De darrade med gäll och ljuvlig klang.
+Det är hans själ, som sig med ljudet mängar,
+Då fri den sig ur kroppens bojor svang:
+Och stundom ännu, uppå våra ängar,
+Man hör i kvällens timma denna klang:
+Då viska barnen tyst - och fly till sängen -
+»Den siste Skalden vandrar över ängen.«
+</poetry>
+</body>
+</text>
 
 </workbody>
 </kalliopework>

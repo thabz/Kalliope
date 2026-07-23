@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1749" author="klopstock" status="incomplete" type="poetry">
 <workhead>
    <title>Der Messias</title>
    <year>1749</year>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="klopstock2001102301">
+<text id="klopstock2001102301">
 <head>
    <title>Sing, unsterbliche Seele</title>
    <toctitle>Erster Gesang</toctitle>
@@ -16,6 +14,7 @@
    <firstline>Sing, unsterbliche Seele, der sündigen Menschen Erlösung</firstline>
 </head>
 <body>
+<poetry>
 Sing, unsterbliche Seele, der sündigen Menschen Erlösung,
 Die der Messias auf Erden in seiner Menschheit vollendet
 Und durch die er Adams Geschlechte die Liebe der Gottheit
@@ -768,10 +767,11 @@ Unter den Vätern war einer von hohem denkenden Ansehn,
 Adam, der Sohn der erwachenden Erd und der Bildungen Gottes.
 Gabriel, er und der Herrscher der Sonnen erwarteten sehnlich
 Unter Gesprächen vom Heile der Menschen den Anblick des Ölbergs.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="klopstock2001102302">
+<text id="klopstock2001102302">
 <head>
    <title>Itzo stieg über die Zedernwälder der Morgen herunter</title>
    <toctitle>Zweiter Gesang</toctitle>
@@ -779,6 +779,7 @@ Unter Gesprächen vom Heile der Menschen den Anblick des Ölbergs.
    <firstline>Itzo stieg über die Zedernwälder der Morgen herunter</firstline>
 </head>
 <body>
+<poetry>
 Itzo stieg über die Zedernwälder der Morgen herunter.
 Jesus erhub sich, ihn sahn in der Sonne die Seelen der Väter.
 Als sie ihn sahn, da sangen zwo Seelen so gegeneinander,
@@ -1368,7 +1369,7 @@ Gottes Stimme war's nicht; zum mindsten klang sie viel anders,
 Als er uns Göttern vordem den Sohn der Ewigkeit aufdrang.
 Auch war ein finstrer Prophet dabei, der dort in der Wüste
 Menschenfeindlich die Felsen durchirrt, der rief ihm entgegen:
-Siehe das Lamm Gottes, das der Erden Sünde versöhnet 
+Siehe das Lamm Gottes, das der Erden Sünde versöhnet
 Der du von Ewigkeit bist, der du lange schon vor mir gewesen,
 Sei mir gegrüßt! Aus dir, o du der Erbarmungen Fülle!
 Nehmen wir Gnad um Gnade. Durch Mosen gab Gott die Gesetze,
@@ -1720,10 +1721,11 @@ Itzo sandten sie, hoch von dunkeln donnernden Bergen,
 Eherne Krieger; sie rauschen mit eisernem wilden Getöse
 Über die Felsen und krachen und donnern und töten von ferne.
 Also kam Adramelech und Satan zum Ölberg hernieder.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="klopstock2001102303">
+<text id="klopstock2001102303">
 <head>
    <title>Sei mir gegrüßt!</title>
    <toctitle>Dritter Gesang</toctitle>
@@ -1731,6 +1733,7 @@ Also kam Adramelech und Satan zum Ölberg hernieder.
    <firstline>Sei mir gegrüßt! Ich sehe dich wieder, die du mich gebarest</firstline>
 </head>
 <body>
+<poetry>
 Sei mir gegrüßt! Ich sehe dich wieder, die du mich gebarest,
 Erde, mein mütterlich Land, die du mich im kühlenden Schöße
 Einst zu den Schlafenden Gottes begräbst und meine Gebeine
@@ -1857,7 +1860,7 @@ Wie er sie lehrt, wie er bald mit mächtigen Reden den Eingang
 Zu den hohen Geheimnissen zeigt, bald in menschlichen Bildern
 Dich, unsterbliche Tugend, verklärter und fühlbarer zeiget
 Und nach und nach ihr empfindendes Herz zur Ewigkeit bildet.
-0 wieviel erlernen wir da! wie macht uns sein Beispiel
+O wieviel erlernen wir da! wie macht uns sein Beispiel
 Aufmerksam, und wie reizet er uns, ihm anbetend zu folgen!
 Selia, solltest du ihn und seinen göttlichen Wandel
 Und sein edles, des ewigen Vaters so würdiges Leben
@@ -2529,7 +2532,8 @@ Gottes Gesichte betriegen dich nicht! Der Tag sei gesegnet!
 Wenn der Messias durch dich ein neues Königreich anfängt.«
 Also sagt er. Indem war er, seit dem unsel'gen Gesichte,
 Zwo erschreckliche Stunden der Ewigkeit näher gekommen.
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

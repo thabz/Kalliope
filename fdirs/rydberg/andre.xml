@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="rydberg" status="incomplete" type="poetry">
 <workhead>
    <title>Andre digte</title>
-   <year>?</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="rydberg2001051001">
+<text id="rydberg2001051001">
 <head>
    <title>Tomten</title>
    <toctitle>Tomten</toctitle>
@@ -18,6 +15,7 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 I
 Midvinternattens köld är hård,
 stjärnorna gnistra och glimma.
@@ -127,7 +125,8 @@ Månen sänker sin tysta ban,
 snön lyser vit på fur och gran,
 snön lyser vit på taken.
 Endast tomten är vaken.
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

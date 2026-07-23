@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1875" author="drachmann" status="complete" type="poetry">
 <workhead>
    <title>Dæmpede Melodier</title>
@@ -17,7 +16,7 @@
 <workbody>
 
 
-<poem id="drachmann2018012901">
+<text id="drachmann2018012901">
 <head>
     <title>Til Mesteren</title>
     <firstline>Jeg nærmed ydmyg mig den stolte Guddom</firstline>
@@ -25,6 +24,7 @@
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg nærmed ydmyg mig den stolte Guddom,
 Som staar med hævet Lyre, løftet Bue,
 Jeg bøied Knæ, og sank for Gudens Aasyn,
@@ -96,10 +96,11 @@ Viis Dig kun gavmild mod Din ringe Lærling;
 Husk paa, til Gavmildhed forpligter Stillingen:
 Paa Helikon end gjælder Adelslove,
 Det er kun Jordens Drot, der vender Skillingen.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="drachmann1999031710">
+<text id="drachmann1999031710">
 <head>
     <title>I Mellemakten</title>
     <firstline>Med Tæppet faldt Skranken for Stilheden atter</firstline>
@@ -107,6 +108,7 @@ Det er kun Jordens Drot, der vender Skillingen.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Med Tæppet faldt Skranken for Stilheden atter;
 Men borte var Publikums Snakken og Latter.
 
@@ -154,10 +156,11 @@ Den rytmiske Taktstok, den har jeg for Øie.
 
 Naar Blodet det syder: saa Taktstokken frem;
 Og Sjælens Rebeller, til Dørs med dem!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="drachmann2018012903">
+<text id="drachmann2018012903">
 <head>
     <title>Hvad der hændtes paa Strømmen</title>
     <firstline>Og det var Nat. En Nat hvor Maanen stod</firstline>
@@ -165,6 +168,7 @@ Og Sjælens Rebeller, til Dørs med dem!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Og det var Nat. En Nat hvor Maanen stod
 Søvndrukken bag den øde Strandbreds Høie,
 Og stirred mod den dunkle Strøm, og lod
@@ -245,10 +249,11 @@ Men hvor det blinker over Dybets Bund,
 Der skimtes mørke Skikkelser med Svømmen
 At nærme Bredden sig, for om en Stund
 At samles atter til en Fart mod Strømmen.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="drachmann2018012904">
+<text id="drachmann2018012904">
 <head>
     <title>Vaarsang</title>
     <firstline>Saa fik vi da Hast paa den knugende Tid</firstline>
@@ -256,6 +261,7 @@ At samles atter til en Fart mod Strømmen.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Saa fik vi da Hast paa den knugende Tid,
 Saa fik vi da Foraar omsider,
 Og nu trækker Varmen i Støvfrakke hvid,
@@ -304,10 +310,11 @@ Kun lidet for Livet det frugter. —
 Nei, Livet skal leves, og Vaaren er skjøn,
 Og Marken er frodig og Skoven er grøn:
 Saa lad os da leve med Vaaren!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="drachmann2018012905">
+<text id="drachmann2018012905">
 <head>
     <title>I Breschen</title>
     <firstline>Kanonilden standsed; og Krudtrøgen trak</firstline>
@@ -315,6 +322,7 @@ Saa lad os da leve med Vaaren!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Kanonilden standsed; og Krudtrøgen trak
 Fra Lavetterne bort, og bag Skandserne bølged
 Et uhyre Tusindbens Legeme frem;
@@ -373,8 +381,9 @@ Da blottede han, Generalen, den haarde
 Sit Hoved, og sænked fra Hesten sin Kaarde,
 Og Hornene klang over Murene hen, —
 Han hilste de Faldne i Breschen igjen.
+</poetry>
 </body>
-</poem>
+</text>
 
 <section level="1">
 <head>
@@ -382,7 +391,7 @@ Han hilste de Faldne i Breschen igjen.
 </head>
 <content>
 
-<poem id="drachmann2018012906">
+<text id="drachmann2018012906">
 <head>
     <title>Til en Ven</title>
     <toctitle><num>I.</num>Til en Ven</toctitle>
@@ -391,6 +400,7 @@ Han hilste de Faldne i Breschen igjen.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Livet kan være forbandet nok,
 Værre det bli’er ved at klage;
 Fremad min Bro’er! over Sten og Stok,
@@ -426,10 +436,11 @@ Saalænge som han har haft’et.
 Viis, Du kan klare Butikken;
 Arbeidet, det er en tro Kammerat,
 La’er en Haandværkssvend aldrig i Stikken.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="drachmann2018012907">
+<text id="drachmann2018012907">
 <head>
     <title>Til en Veninde</title>
     <toctitle><num>II.</num>Til en Veninde</toctitle>
@@ -438,6 +449,7 @@ La’er en Haandværkssvend aldrig i Stikken.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Kjære Kristine, jeg skriver Dig til
 Forat sende Dig Ringen tilbage;
 Skjænd nu kuns paa mig saameget Du vil,
@@ -500,10 +512,11 @@ Lad os kun skilles og gaa hver sin Vei,
 Hjertet, det bliver dog immer hos Dig,
 Derpaa kan Du være sikker
 Saasandt som Din Ven han er Snedker.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="drachmann2018012908">
+<text id="drachmann2018012908">
 <head>
     <title>Om »Skjæbnen«</title>
     <toctitle><num>III.</num>Om »Skjæbnen«</toctitle>
@@ -512,6 +525,7 @@ Saasandt som Din Ven han er Snedker.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Fra ganske Lille har man mig fortalt
 Om denne Skjæbne; — jeg fik aldrig seet den,
 Men da den stadig Skylden fik for Alt,
@@ -577,13 +591,14 @@ Hver Aften saae vi efter i Status’en,
 Og hvergang der var kommen Huller i
 Balancen, sa’e jeg: Maa jeg være fri!
 Og gav saa Skjæbnen en i Sinkadusen.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section>
 
-<poem id="drachmann2018012909">
+<text id="drachmann2018012909">
 <head>
     <title>Fra Verdens-Kunstudstillingen</title>
     <firstline>Jeg seer endnu de billedfyldte Sale</firstline>
@@ -591,6 +606,7 @@ Og gav saa Skjæbnen en i Sinkadusen.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg seer endnu de billedfyldte Sale,
 Hvor Kunsten væved med begeistret Sind
 Det Ideelle eller det Reale
@@ -821,10 +837,11 @@ Det er en Troldmand, som af Morgenskæret,
 Af Nattens Halvlys, Solnedgangens Pragt
 Har vævet sig en Kappe. Frit for Veiret
 Henvifter Væverens Vidunderdragt.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="drachmann1875a0">
+<text id="drachmann1875a0">
 <head>
     <title>Improvisation ombord</title>
     <firstline>Snart er de lyse Nætters Tid forbi</firstline>
@@ -833,6 +850,7 @@ Henvifter Væverens Vidunderdragt.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Snart er de lyse Nætters Tid forbi,
 Og Mørket stiger bag de dybe Vande,
 Og Bølgen spiller op den Melodi,
@@ -857,10 +875,11 @@ Daggryets Gud vi offrer Vinens Glød,
 Til Dig en Hymne efter Vinen følger,
 Og slaar vor Time, giv os da en Død
 Som Shelleys i Toscanerhavets Bølger!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="drachmann2018012911">
+<text id="drachmann2018012911">
 <head>
     <title>Wilhelm Marstrand</title>
     <subtitle>Død den 30te Marts 1873.</subtitle>
@@ -870,6 +889,7 @@ Som Shelleys i Toscanerhavets Bølger!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Betrukket med Sort
 Var Salen, som huser de hvide Guder.
 Træt, paa de simple Fyrretræespuder,
@@ -961,10 +981,11 @@ Den ledige Trone ventende staaer,
 Men, vi faaer fare med Læmpe:
 Tiden er vanskelig, Tiden er haard,
 Den kan længe en Spire dæmpe.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="drachmann2018012912">
+<text id="drachmann2018012912">
 <head>
     <title>Ad libitum</title>
     <firstline>Jeg byder Jer ikke det vuggende Spil</firstline>
@@ -972,6 +993,7 @@ Den kan længe en Spire dæmpe.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg byder Jer ikke det vuggende Spil
 Med sindrige Løb henad Fløiten,
 Med Næse paaskraa og med Mund spidset til,
@@ -1016,10 +1038,11 @@ Og Trangen er ærlig, fra Hjertet den gaar,
 Og tør I ei derpaa lide,
 Nuvel! saa er Sangeren dømt, og saa faar,
 Kjære Venner, han selv gaa tilside.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="drachmann2018012913">
+<text id="drachmann2018012913">
 <head>
     <title>Skibsrotter</title>
     <firstline>I Aberdeen laa vi</firstline>
@@ -1027,6 +1050,7 @@ Kjære Venner, han selv gaa tilside.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 »I Aberdeen laa vi,
 Og seilklar var Skuden;
 Fix saae hun ud fra
@@ -1091,10 +1115,11 @@ Ja, Skibsrotten veed nok
 Sin Tid at beramme; —
 Der er Rotter iland
 Som har lært sig det samme.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="drachmann2018012914">
+<text id="drachmann2018012914">
 <head>
     <title>Sonet</title>
     <subtitle>Af »I Storm og Stille«</subtitle>
@@ -1104,6 +1129,7 @@ Som har lært sig det samme.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 En Mundfuld Luft! Her snøres Struben til;
 Kun Smedebælgen aander, Kullet flammer,
 Og lyser op den skumle Esses Kammer,
@@ -1121,10 +1147,11 @@ Saavelsom Havets alvorsfulde Bas.
 En egen Trøst igjennem Spillet lyder.
 Jeg selv har lyttet tidt i Storm og Stille,
 Og Hjertets Trang kom Spillets Trøst tilpas.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="drachmann2018012915">
+<text id="drachmann2018012915">
 <head>
     <title>Fra Klitten</title>
     <subtitle>En Hverdagshistorie</subtitle>
@@ -1133,6 +1160,7 @@ Og Hjertets Trang kom Spillets Trøst tilpas.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center>Forord.</center></nonum>
 
 Aldrig en Rose, næppe nok en Aster
@@ -1720,10 +1748,11 @@ Saavist som der gives den Kvinde,
 Der kan faa isinde,
 Naar Baaden blier slynget i Brændingen hen,
 At drage Dig frelst ud af Hvirvlen igen!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="drachmann1999050301">
+<text id="drachmann1999050301">
 <head>
     <title>Fiskeren synger</title>
     <firstline>Min Fa’er han var Fiskermand</firstline>
@@ -1731,6 +1760,7 @@ At drage Dig frelst ud af Hvirvlen igen!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Min Fa’er han var en Fiskermand
 Med Hus iland,
 Med Baad paa Vand,
@@ -1811,10 +1841,11 @@ Hurra, det er en ren Plaseer,
 Og næste Aar! — jeg si’er ei mer
 En Dreng — maaske en Pige;
 Det kan nu Ingen sige.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="drachmann1999050302">
+<text id="drachmann1999050302">
 <head>
     <title>En Strandvasker</title>
     <firstline>Der drev en Person paa Strandbredden op</firstline>
@@ -1822,6 +1853,7 @@ Det kan nu Ingen sige.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Der drev en Person paa Strandbredden op,
 Vi saae ham, han laa med Næbet iveiret;
 Et dødblegt Ansigt, og om hans Krop
@@ -1876,10 +1908,11 @@ Men hvad; — vil man tænke formeget paa sligt,
 Saa kunde man græde hver Time paa Dagen.
 Nei, Taaren af Øiet, og ud til sin Pligt:
 At glemme sin Død det er Sagen!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="drachmann2018012918">
+<text id="drachmann2018012918">
 <head>
     <title>I Kjøgebugt</title>
     <firstline>Vi lader Baaden skrive med sit Ror</firstline>
@@ -1887,6 +1920,7 @@ At glemme sin Død det er Sagen!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center>1.</center></nonum>
 
 Vi lader Baaden skrive med sit Ror
@@ -2020,7 +2054,7 @@ Hurra, saa skal Luven vi knibe!
 
 
 <nonum><center>3.</center></nonum>
-      
+
       Vor Baad er rap; hal Skjødet an!
       Mod Østen Kurs er sat.
       Didude flammer op en Brand
@@ -2030,7 +2064,7 @@ Hurra, saa skal Luven vi knibe!
       Og viser Flagets Toner;
       Du røde Dug! Saa er vi dér,
       Hvor Seirens Genius troner.
-      
+
       Endnu en Kamp, den sidste Kamp;
       Og Fjendens Kraft er brudt.
       Det sidste Skuds brandrøde Damp
@@ -2040,7 +2074,7 @@ Hurra, saa skal Luven vi knibe!
       Et lydeligt: Hold inde!
       Og sender saa sin Kompliment
       Den slagne, tappre Fjende.
-      
+
       Paa Linieskibets høie Hyt,
       Hvor Admiralen staar,
       Dér skingrer nu Trompeten lydt
@@ -2050,7 +2084,7 @@ Hurra, saa skal Luven vi knibe!
       Og lytter saa til Talen;
       Den klinger fyndig, kort og sund
       Fra ham, fra Admiralen:
-      
+
       »... Ja, gjæve Mænd! I mindes at
       Igaar ved denne Tid,
       I Herrens lyse Sommernat,
@@ -2060,7 +2094,7 @@ Hurra, saa skal Luven vi knibe!
       Om gunstig Gang i Legen.
       Nu: Herrens Haand for Flaaden slog,
       Og — Natten er vor egen!« ...
-      
+
       Og Vinden rummer; Skjødets Barm
       Staar hvælvet, fuld og rund;
       Og efter Kampens vilde Larm
@@ -2070,7 +2104,7 @@ Hurra, saa skal Luven vi knibe!
       Henover Havets Vover,
       Hvor Bølgekoret luller smukt
       For Dødens Tang-Alkover.
-      
+
       De sank, — som Solen synker ned
       I Havets Moderfavn,
       Men Kjøgebugtens aabne Rhed
@@ -2080,10 +2114,11 @@ Hurra, saa skal Luven vi knibe!
       Og farve Sømænds Kinder
       Med Aftensolens Kolorit,
       Med Glands af Stortids Minder.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="drachmann2018012919">
+<text id="drachmann2018012919">
 <head>
     <title>Fregatten Freia</title>
     <firstline>Med Pres af Seil, for Dronningvind</firstline>
@@ -2091,6 +2126,7 @@ Hurra, saa skal Luven vi knibe!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Med Pres af Seil, for Dronningvind,
 Som kjørtes den af Heste,
 En dansk Fregat ved Downs løb ind;
@@ -2150,10 +2186,11 @@ Og svoer en Ed, en britisk Ed
 Ved de latinske Guder:
 »Vi glemmer ei, at »Freia« stred
 Mod sex af Englands Skuder.«
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="drachmann1999050304">
+<text id="drachmann1999050304">
 <head>
     <title>Landnamsfart</title>
     <firstline>Hvad er det for en modig Flok</firstline>
@@ -2161,6 +2198,7 @@ Mod sex af Englands Skuder.«
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvad er det for en modig Flok,
 Som over Nordhav-Vovens Skum
 Med Seilet spændt fra Raaens Nok,
@@ -2259,10 +2297,11 @@ Da Landnamsfartens stærke Mænd
 I Gjalderhornet tuder,
 Og Støtte-Parret gynger hen
 Ad Havets Vuggepuder.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="drachmann1999050305">
+<text id="drachmann1999050305">
 <head>
     <title>Luther i Wittenberg</title>
     <firstline>Det var udenfor Wittenbergs ærværdige By</firstline>
@@ -2271,6 +2310,7 @@ Ad Havets Vuggepuder.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det var udenfor Wittenbergs ærværdige By,
 Der samledes en Skare i Decembermorgnens Gry,
 Der samledes en Skare om Baalets røde Flamme,
@@ -2335,10 +2375,11 @@ Og bragte med en Kulde deroppe fra Norden,
 Og faldt i Øst og Vest som en Rimfrost til Jorden.
 Da spired Kuldens Kjæmper. Høiere klang Tonen.
 Stormklokker ringed. — Det var Reformationen.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="drachmann2018012922">
+<text id="drachmann2018012922">
 <head>
     <title>Hjemkomsten</title>
     <firstline>Nu fløiter Finken og Droslen slaar</firstline>
@@ -2346,6 +2387,7 @@ Stormklokker ringed. — Det var Reformationen.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nu fløiter Finken og Droslen slaar,
 Og Jorden damper af Grøde,
 Og Landsbypigen til Grændsen gaar,
@@ -2430,10 +2472,11 @@ Saa drager de Grændsepæl-Linien forbi.
 En standser, og peger med Kolben:
 »Her var, Musketerer, nok Fjenden før vi!
 Der ligger ... see hist, under Stolpen ...!«
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="drachmann2018012923">
+<text id="drachmann2018012923">
 <head>
     <title>Vaabensmeden</title>
     <firstline>Fra Morgnen gryer</firstline>
@@ -2441,6 +2484,7 @@ Der ligger ... see hist, under Stolpen ...!«
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Fra Morgnen gryer
 Til Lyset flyer
 Og Nætterne med, om fornødent,
@@ -2496,10 +2540,11 @@ Og da skal jeg prøve, om Vaabnene du’r;
 Og duer mit Arbeid’ ikke:
 Se saa er jeg den, som staar først for Tur
 Til fældet paa Valen at ligge.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="drachmann2018012924">
+<text id="drachmann2018012924">
 <head>
     <title>Oktoberdrømme</title>
     <firstline>Jeg følger Dig tildørs, Du skjønne Sommer</firstline>
@@ -2507,6 +2552,7 @@ Til fældet paa Valen at ligge.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg følger Dig tildørs, Du skjønne Sommer.
 Paa Tærsklen staar jeg, og mit Hoved blotter,
 Og, anende den Tid, som snarlig kommer
@@ -2560,10 +2606,11 @@ Jeg hører Fuglekorets Festorkester.
 Jeg skilles rolig fra det trætte Aar;
 Med blottet Hoved bøiet her jeg staar,
 En Haabende blandt Haabets sidste Rester.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="drachmann2018012925">
+<text id="drachmann2018012925">
 <head>
     <title>Et Aftenbillede</title>
     <firstline>Se Solen synker. Vidt i Luften runger</firstline>
@@ -2571,10 +2618,10 @@ En Haabende blandt Haabets sidste Rester.
         <note>Citatet stammer fra Goethes digt <xref poem="goethe2018012902,9-12"/>.</note>
     </notes>
     <source pages="106-120"/>
-    <keywords>goethe</keywords>
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><small><right>Soll Spot und Hohn getragen sein,</right></small></nonum>
 <nonum><small><right>Trag' ich allein den Hohn;</right></small></nonum>
 <nonum><small><right>Ich kenn' ihn wohl, er kennt mich wohl</right></small></nonum>
@@ -2949,10 +2996,11 @@ Og svinder hen i Intet, flyder sammen;
 Og Skvulpet, som har Nattens Gjenlyd vækket,
 Døer hen som Vindens Suk, som Strømmens Klage,
 Et Febergisp i Kjæmpebyens Søvn.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="drachmann1999050303">
+<text id="drachmann1999050303">
 <head>
     <title>Misericordia!</title>
     <firstline>Der lyder en Sang, en forunderlig Sang</firstline>
@@ -2960,6 +3008,7 @@ Et Febergisp i Kjæmpebyens Søvn.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Der lyder en Sang, en forunderlig Sang
 Om Natten naar Livets Travlhed blunder;
 En eneste Tone, en dirrende lang
@@ -3004,10 +3053,11 @@ Hvor fødtes den Røst? Den fødtes i Nød,
 Den raabte i Ørknen forladt og ene;
 Og Raabet var altid det samme: Brød!
 Og Svaret det samme: Stene!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="drachmann2018012927">
+<text id="drachmann2018012927">
 <head>
     <title>Den sidste ,,Sorte-Fods'' Klagesang</title>
     <toctitle>Den sidste Sorte-Fods Klagesang</toctitle>
@@ -3016,10 +3066,10 @@ Og Svaret det samme: Stene!
         <note>Citatet stammer fra Goethes digt <xref poem="goethe2018012901,198-201"/>.</note>
     </notes>
     <source pages="124-138"/>
-    <keywords>goethe</keywords>
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><small><right>Er war nunmehr der Länder satt,</right></small></nonum>
 <nonum><small><right>Wo man so viele Kreuze hat</right></small></nonum>
 <nonum><small><right>Und man, für lauter Kreuz und Christ,</right></small></nonum>
@@ -3381,20 +3431,22 @@ Missionæren opreist staar,
 Flytter Haanden til sin Pande,
 Stirrer stum og tankefuld
 I La Plataflodens Vande.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="drachmann2018012928">
+<text id="drachmann2018012928">
 <head>
     <title>Forbi!</title>
     <firstline>Som Baaden, der sagte glider</firstline>
     <source pages="139-141"/>
     <pictures>
-        <picture src="drachmann2018012928-p1.jpg">Marc Gabriel Charles Gleyre: <i>Le Soir Ou Les Illusions Perdues</i>, ca. 1843, olie på lærred, 238x157cm. Louvre.</picture>
+        <picture src="drachmann2018012928-p1.jpg">Marc Gabriel Charles Gleyre: <i>Le Soir Ou Les Illusions Perdues</i>, ca. 1843, olie på lærred, 238 × 157 cm. Louvre.</picture>
     </pictures>
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><small><center>efter Gleyres Maleri i Luxembourg »Les illusions perdues«.</center></small></nonum>
 
 Som Baaden, der sagte glider
@@ -3458,8 +3510,9 @@ Som sidder paa Stranden tilbage. —
 Op Skjald! Du fik jo den Mægtiges Røst;
 Lad Sorgerne blive til Sang i Dit Bryst;
 Sæt Musik til den Ensommes Klage!
+</poetry>
 </body>
-</poem>
+</text>
 
 <section level="1">
 <head>
@@ -3467,7 +3520,7 @@ Sæt Musik til den Ensommes Klage!
 </head>
 <content>
 
-<poem id="drachmann1999050306">
+<text id="drachmann1999050306">
 <head>
     <title>Kvæle vil jeg min Klage</title>
     <firstline>Kvæle vil jeg min Klage</firstline>
@@ -3475,6 +3528,7 @@ Sæt Musik til den Ensommes Klage!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Kvæle vil jeg min Klage,
 Sorg, der vil hulke sig frem;
 Tilbage i Tiden, tilbage!
@@ -3488,10 +3542,11 @@ Jeg vil lytte naar Krigsluren gjaller,
 Jeg vil lide med Andre og bløde med dem: -
 Høit hædres den Kjæmpe, som falder,
 Høit Helten, som vender med Seiren hjem. —
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="drachmann1999050307">
+<text id="drachmann1999050307">
 <head>
     <title>Fra den store nordiske Krig</title>
     <toctitle><num>I.</num>Fra den store nordiske Krig</toctitle>
@@ -3500,6 +3555,7 @@ Høit Helten, som vender med Seiren hjem. —
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Der slingrer en Smakke afsted over Sø,
 En kummerlig Prise for kræsne Korsarer;
 Hei Sporhunde, puds dog det flygtende Vildt!
@@ -3571,10 +3627,11 @@ Er af Bølgernes Bulder han vækket:
 »Nei, det er de brummende Vover;
 »Vi slipper vel over — saa hjælpe os Gud —
 »I Kvæld Peder Wessel nok sover.«!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="drachmann2018012931">
+<text id="drachmann2018012931">
 <head>
     <title>Hærbud</title>
     <toctitle><num>II.</num>Hærbud</toctitle>
@@ -3583,6 +3640,7 @@ Er af Bølgernes Bulder han vækket:
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hærbud udgaar. Bondetrællen
 Slæbes op til Godsets Gaard;
 Sporeklirren, Pidskesmælden,
@@ -3667,10 +3725,11 @@ Men i Luften høiest oppe
 — Dér hvor ingen Cæsar rækker -
 Søndenvindens Fortravs Troppe-
 Deling imod Norden trækker.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="drachmann2018012932">
+<text id="drachmann2018012932">
 <head>
     <title>Ulrik Kruse</title>
     <toctitle><num>III.</num>Ulrik Kruse</toctitle>
@@ -3679,6 +3738,7 @@ Deling imod Norden trækker.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Saa slog Nordosten til Tøveir om;
 Kong Karl er frygtlig at skue.
 Tilside, kom ikke den Rasende nær!
@@ -3780,10 +3840,11 @@ Og jeg tør kun ringest mig regne.« —
 »For Tusind! Da skal man faa sande mit Ord,
 At Færden blier farlig og Dysten stor,
 Naar Denne er en af de kleine.« —
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="drachmann2018012933">
+<text id="drachmann2018012933">
 <head>
     <title>Anna Kolbjørnsdatter</title>
     <toctitle><num>IV.</num>Anna Kolbjørnsdatter</toctitle>
@@ -3792,6 +3853,7 @@ Naar Denne er en af de kleine.« —
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nordrehoug hedder den Præstegaard;
 Dér er Mester Ramus Præst,
 Kjendt med de skiftende Seklers Bog
@@ -3926,10 +3988,11 @@ Men Anna fører ham ind i Hus
 Og bænker ham høibords i Stuen.
 Dér sidder han jevnbyrds med Fruen
 Og tømmer sagtmodig sit Krus.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="drachmann2018012934">
+<text id="drachmann2018012934">
 <head>
     <title>Jakob Værn</title>
     <toctitle><num>V.</num>Jakob Værn</toctitle>
@@ -3938,6 +4001,7 @@ Og tømmer sagtmodig sit Krus.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 »Naar Fjenden falder i Landet ind
 Er hver en Borger Soldat,
 Kræmmer og Gaardskarl maa ud for Haanden,
@@ -3987,10 +4051,11 @@ Og svinger sin Kaarde fra Gjærdets Top
 Og raaber saa høit han kan:
 »Andet og tredie Geled læg an!« —
 Og Svensken forsvinder til sidste Mand.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="drachmann1999050308">
+<text id="drachmann1999050308">
 <head>
     <title>Karl for Frederikshald</title>
     <toctitle><num>VI.</num>Karl for Frederikshald</toctitle>
@@ -3999,6 +4064,7 @@ Og Svensken forsvinder til sidste Mand.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det brøler og brager om Frederikshald
 Med buldrende Drøn, med raslende Knald,
 Med Stykkernes Jern, med Musketternes Bly.
@@ -4089,13 +4155,14 @@ Hjertet staar stille, Læben er stum,
 Hvad huses vel nu i Tankernes Rum?
 Døden er taus, men Sagnet har Ord:
 Nu segned den stolteste Helt i Nord!
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section>
 
-<poem id="drachmann2018012936">
+<text id="drachmann2018012936">
 <head>
     <title>Lægen paa Valpladsen</title>
     <firstline>Det store Slag var slaaet. Nattens Slør</firstline>
@@ -4103,6 +4170,7 @@ Nu segned den stolteste Helt i Nord!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det store Slag var slaaet. Nattens Slør
 Medlidende var sænket over Sletten,
 Hvor Dommen afsagt var — af Folkeretten,
@@ -4300,10 +4368,11 @@ Den Blødende man løfter op paa Baaren.
 Og Lægen underbinder varsomt Aaren
 Mens Ambulancelygtens milde Skin
 Belyser Tegnet paa de hvide Bind.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="drachmann2018012937">
+<text id="drachmann2018012937">
 <head>
     <title>Da Taagen sænked sig</title>
     <firstline>Da Taagen sænked sig, da gled Det bort</firstline>
@@ -4312,6 +4381,7 @@ Belyser Tegnet paa de hvide Bind.
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Da Taagen sænked sig, da gled Det bort
 Hvad forhen straaled, hvad jeg nu kun aner
 Som bag et Slør, hvor Duggens Taare baner
@@ -4329,10 +4399,11 @@ Hvor ingen Levende sin Fod har sat.
 Jeg lytter. Stemmer lyde mig imøde;
 Jeg spørger bævende. Og Svaret gjalder:
 Du lever jo; tænk ei paa os; tag fat!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="drachmann1999050309">
+<text id="drachmann1999050309">
 <head>
     <title>Med høi Horisont</title>
     <firstline>Saa tog da den jublende Dag Reisauss</firstline>
@@ -4340,6 +4411,7 @@ Du lever jo; tænk ei paa os; tag fat!
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Saa tog da den jublende Dag Reisauss
 Med alle de glade Svende;
 Den muntre Time, det friske Minut,
@@ -4462,7 +4534,7 @@ Straaler hun for os paa Skrænten.
         Tyst som Barnet
         Bag Vuggefangets
         Sænkede Forhæng;
-        
+
         Som Ingen har Toner
         For Maaneglimrets
         Hvisken med Strømmens
@@ -4471,7 +4543,7 @@ Straaler hun for os paa Skrænten.
         Suk, der iler
         Aandeagtige
         Dagen forud —:
-        
+
         Saa nævner Ingen
         I Ord eller Toner
         Hine Tider
@@ -4480,7 +4552,7 @@ Straaler hun for os paa Skrænten.
         Af Nattens Skjønhed
         Ud over Maalet,
         Menneskegrændsen.
-        
+
         Men Den, der suger
         Som Sivet Maanens
         Hvisken med Strømmen
@@ -4489,7 +4561,7 @@ Straaler hun for os paa Skrænten.
         For ham er den kommende
         Dag en Lidelse,
         Solen en Bøddel.
-        
+
         Og Den, som elsked
         Saa høit en Kvinde
         At Sjælen hastigt
@@ -4498,7 +4570,7 @@ Straaler hun for os paa Skrænten.
         Overskredes, —
         Han finder sig snart
         Som Betler ved Døren.
-        
+
         Dog, har han, skjøndt Betler,
         Den Stoltes Styrke,
         Saa reiser han sig
@@ -4564,7 +4636,7 @@ Stem Strengen, og jeg skal høre!
     Som et Minde om det, der maatte forgaa,
     Som et stolt Monument imod Himlens Blaa
     Over det, som skal evigt vare.
-    
+
     Ja, jeg skal tage hint Pust fra Din Mund
     Og lukke det ind i min Lyre;
     Dybt fra dens Bund
@@ -4577,51 +4649,51 @@ Stem Strengen, og jeg skal høre!
     Som et blinkende Blus fra den øde Kyst
     Og sende de vildsomme Sømænd sin Trøst,
     Som paa søndrede Snekker tog Hyre.
-    
+
     ---
-    
+
     Men før jeg skilles fra det Syn,
     Jeg saae i Nattens Stunder,
     Jeg tegner i Tankerne hen et Bryn
     Og under det Øiets ulmende Lyn
     Og Kinden, som blødt sig runder.
-    
+
     Jeg retter paa Øiet; jeg gjør dets Laag
     Til <w>hendes</w>, og ingen Andens;
     Kinden meisler jeg fast og klog,
     Lidt mere Varme i Brynets Sprog
     Og lidt mere Kulde i Pandens.
-    
+
     Jeg lader den barnlige Linies Løb
     Slynge sig sammen med Kvindens;
     Blomsten, som dukked sig bly i sit Svøb,
     Villien, som trodsed og aldrig gav Køb:
     Det Sprog er Brynets og Kindens.
-    
+
     Saa lader jeg Farvens melodiske Spil
     Henover Munden sig vugge,
     Jeg lader Læberne staa som de vil,
     Halvt til et Smil og halvt lukket til
     Over Brystets urolige Sukke.
-    
+
     Saa staar der et Billed. Jeg hviler en Stund,
     Jeg sammenligner og maaler;
     Der findes paa hele Jordens Rund
     Et eneste Billed, et eneste kun,
     Som at lignes med dette taaler. —
-    
+
     Et Billed, blegt, med et selsomt Træk
     Om de store, spørgende Øine,
     Som jager det Overfladiske væk,
     Som vender sig bort med Angst og Skræk
     Fra de hule, moderne Løgne.
-    
+
     Et Billed, lyst imod Nattens Grund;
     Et Tegn, som om Tiderne minder,
     Da Menneskets Færden var sand og sund,
     Da Jorden vaagned som Barnet af Blund
     Der griber mod Solen, som skinner. —
-    
+
     Jeg undres over hvad selv jeg seer;
     Et Blik jeg paa Billedet fæster.
     Nei, her er Intet at rette meer,
@@ -4666,8 +4738,9 @@ Stærkere Toner for strengere Dage;
 Rust Dig min Sang til den kommende Dont! —
 Kan man strække sig baade i Flanke og Front,
 Har man Udsigten fri, har man høi <w>Horisont</w>.
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

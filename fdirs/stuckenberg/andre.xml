@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="stuckenberg" status="incomplete" type="poetry">
 <workhead>
    <title>Digte og Prosa fra Tilskueren og Taarnet</title>
-   <year>?</year>
    <notes>
        <note>Teksterne stammer fra Viggo Stuckenberg: <i>Samlede Værker</i>, Gyldendalske Boghandel, 1910, bd. 2, side 371-413.</note>
-   </notes>       
+   </notes>
    <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
-<poem id="stuckenberg20170917346">
+<text id="stuckenberg20170917346">
 <head>
     <title>Af et Æventyrdigt</title>
     <subtitle>Forspil</subtitle>
     <firstline>Højt oppe, midt i det sommerstærke</firstline>
     <notes>
       <note>Teksten følger Viggo Stuckenberg: <i>Samlede Værker</i>, Gyldendalske Boghandel, 1910, bd. 2, side 371-397.</note>
-    </notes>       
+    </notes>
 </head>
 <body>
+<poetry>
 Højt oppe, midt i det sommerstærke
     lysblaa flimrende Solluftvæld
     staar som et lident dirrende Skæl
@@ -707,7 +706,7 @@ og leget med Guld af Nød.'' -
 
 Hun bøjed sit Hoved, sin smidige Haand
 hun stille for Bryst ham stemmer,
-- ,,Hvad vil du? - hvem er I, Herre? - 
+- ,,Hvad vil du? - hvem er I, Herre? -
 nej intet af Eders jeg gemmer!'' -
 
 Let over hendes hans Fingre
@@ -814,18 +813,20 @@ saa tager han Hestens Tøjle i Haand
 og skrider langsomt ad Skovens Sti
 og bliver borte, inde hvor Stien
 løber de stille Stammer forbi.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="stuckenberg20170917351">
+<text id="stuckenberg20170917351">
 <head>
     <title>Af Esbens Sange</title>
     <firstline>Nu rinder Sol over Skovenes Kamme</firstline>
     <notes>
       <note>Teksten følger Viggo Stuckenberg: <i>Samlede Værker</i>, Gyldendalske Boghandel, 1910, bd. 2, side 398-401.</note>
-    </notes>       
+    </notes>
 </head>
 <body>
+<poetry>
 I
 
 Nu rinder Sol over Skovenes Kamme,
@@ -951,18 +952,20 @@ med Hoffet omkring mig
 i maabende Tavshed,
     jeg kunde mig rejse og raabe:
     Ved I det! Kongen er død!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="stuckenberg20170917356">
+<text id="stuckenberg20170917356">
 <head>
     <title>Grøn Skov</title>
     <firstline>Hvor er der langt til Livets Larm</firstline>
     <notes>
       <note>Teksten følger Viggo Stuckenberg: <i>Samlede Værker</i>, Gyldendalske Boghandel, 1910, bd. 2, side 402.</note>
-    </notes>       
+    </notes>
 </head>
 <body>
+<poetry>
 Hvor er der langt til Livets Larm
 fra denne lille aabne Plet
 saa dybt i Skovens Fred!
@@ -982,18 +985,20 @@ hvor elsker jeg din lyse Ro,
 jeg Fattigfugl i Bur!
 og du har Trøst, og du er tro,
 saa tro som ingen Barndomsven,
+</poetry>
 </body>
-</poem>
+</text>
 
-<prose id="stuckenberg20170917357">
+<text id="stuckenberg20170917357" skip-index="true">
 <head>
     <title>Den hvide Dør</title>
     <subtitle>November (1892).</subtitle>
     <notes>
       <note>Teksten følger Viggo Stuckenberg: <i>Samlede Værker</i>, Gyldendalske Boghandel, 1910, bd. 2, side 403-410.</note>
-    </notes>       
+    </notes>
 </head>
 <body>
+<prose>
     Kære Ven, jeg sidder i et Gasthaus dybt inde i Thüringen og skriver dette ved Skæret af et osende Lys. Jeg fryser, min Aande staar som en sølvblaa Taageglorie om Lysets gule Flamme, og bag mig, i det kolde Halvmørke, er en hvid Dør lukket med en sort, jærnsnirklet Laas. Udenfor ligger en mørk Gade, sølet og snæver, og denne Gade løber videre, sølet og snæver og med fattigt lysende Lygter, ned igennem en By af lave, hvide Bindingsværkshuse med røde Tage og grønne Skodder, gemte i Regn og Mørke, og tæt bag Husene løfter sig i Mørket Dorsenberg med Gran ved Gran i ubegribelig Stilhed. Hvert Kvarter slaar et Kirkeur, rungende, som sang Vorherre selv sin Tids Vagtraab ned i denne Grav af Regn og Mørke.
     Den hvide Dør er lukket bag mig. Kære Ven, dette er egent- lig alt. Jeg sidder her og er ikke i den lille By langt nede imod Syd, ikke der, hvorhen jeg vilde rejst, ikke hos hende - og hendes Mand og hendes Børn.
     Altsaa heller ikke denne Gang - jeg evnede det ikke - som jeg aldrig vil evne det.
@@ -1022,7 +1027,7 @@ saa tro som ingen Barndomsven,
     Jeg gik ud paa Gangen. Derude havde han, inden han gik, aabnet en Dør ind til Soveværelset, og jeg blev staaende et Øje- blik og saa derind. Der stod to Senge derinde dækkede med hvide Tæpper, og midt paa den ene Sengs hvide Tæppe laa en Ligkrans af rustede Jærntraade samlede under en Buket falmede, kunstige Blomster.
     Og da jeg kom ud og gik langs Huset, fandt jeg i Græsset under det lave Sovekammervindue lange, blonde, afredte Kvindehaar, vaade af Regn og viklede sammen som omkring en Finger.
     I Aften - for en Time siden - kom han ind til mig nede i Gæstestuen.
-    - Naa, sagde han og stirrede længe paa mig, - naa, har De set Dem om - hjemme? 
+    - Naa, sagde han og stirrede længe paa mig, - naa, har De set Dem om - hjemme?
     Jeg nikkede tavs.
     - Lad os sidde lidt, før vi gaar hjem, bad han. Det er min Fødselsdag i Dag, - der er noget, jeg maa sige Dem, - hør et Øjeblik taalmodigt paa mig, - og gaa saa hjem med mig!
     Han lænede sit svære Legeme frem over Bordet og gjorde en Bevægelse, som vilde han rakt mig sin Haand. Og saa be- gyndte han at tale, hastigt, hviskende næsten, og saa' imens paa mig, som vilde han med sine Øjne vaage over, at hans Ord naaede mig og mig alene.
@@ -1036,18 +1041,20 @@ saa tro som ingen Barndomsven,
     Han er gaaet - han er her - han og Dødens Hus deroppe ved Bjærgstien - og jeg ser den regnmørke Gade og de fejen- de Kvinder - Uendeligheden - og langt langt, borte to brune, slørede Kvindeøjne, hvis Blik ikke finder mit, aldrig finder mit, men stirrer som ind i en evig, ubrydelig Tavshed. -
     Den hvide Dør er lukket. ..
     Min Sjæls hvide Dør.
-</body>
 </prose>
+</body>
+</text>
 
-<prose id="stuckenberg20170917358">
+<text id="stuckenberg20170917358" skip-index="true">
 <head>
     <title>Maaneskinspassiar</title>
     <subtitle>Med mine Drenge</subtitle>
     <notes>
       <note>Teksten følger Viggo Stuckenberg: <i>Samlede Værker</i>, Gyldendalske Boghandel, 1910, bd. 2, side 410-413.</note>
-    </notes>       
+    </notes>
 </head>
 <body>
+<prose>
     Jeg er meget gammel, - meget ældre end nogen egentlig kan tænke sig, - og nu skal jeg fortælle jer en Historie.
     Jeg er Manden i Maanen.
     Jeg bor paa Maanen, - ikke paa den Side, som I kan se, men omme paa den anden, som I aldrig ser. Der bor jeg i et Baghus. Jeg gaar med en stor Nøgle i Lommen - med den Nøgle lukker jeg mig ind. Den kan I nu for Resten ikke faa at se, - jeg har hængt den fra mig, skal jeg sige jer, - det gør jeg altid, naar jeg skal snakke med saadan nogle som I. Da jeg gik hjemmefra i Aftes, hængte jeg den fra mig paa Sirius.
@@ -1065,10 +1072,11 @@ saa tro som ingen Barndomsven,
     Ak, lille Børn, hvad skulde den Sol!
     I ser saa glade ud, - jeg kan se paa jer, at I tænker paa So- len. Nu har jeg ikke Tid længer, - nu er min Lampe ved at gaa ud deroppe, og det sorte Plankeværk ved at sluge Sirius. Og saa mister jeg min Nøgle og kan ikke komme ind. Og kom- mer jeg ikke ind i det gamle Baghus - - -
     Ja - hvad tror I saa, den skal stille op, som er Manden i Maanen?
-</body>
 </prose>
+</body>
+</text>
 
-    
+
 
 </workbody>
 </kalliopework>

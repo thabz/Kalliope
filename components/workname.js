@@ -1,70 +1,64 @@
-// @flow
-import React from 'react';
-import type { Work, Lang } from '../pages/helpers/types.js';
-import CommonData from '../pages/helpers/commondata.js';
-import _ from '../pages/helpers/translations.js';
+import { useContext } from 'react';
+import CommonData from '../common/commondata.js';
+import Dates from '../common/dates.js';
+import LangContext from '../common/LangContext.js';
+import _ from '../common/translations.js';
+import { formattedYear } from '../components/formatteddate.js';
 
-type WorkNameProps = {
-  work: Work,
-  cursive: boolean,
-  useTitle: 'title' | 'toctitle' | 'linktitle' | 'breadcrumbtitle',
-  lang: Lang,
-};
-export default class WorkName extends React.Component<WorkNameProps> {
-  static defaultProps = {
-    cursive: false,
-    useTitle: 'title',
-  };
-  render() {
-    const { work, cursive, useTitle, lang } = this.props;
-    const { year } = work;
-    var titleTranslated = work[useTitle || 'title'];
-    if (work.id == 'andre') {
-      titleTranslated = _('Andre digte', lang);
+const WorkName = ({ work, cursive = false, useTitle = 'title' }) => {
+  const { year } = work;
+  var titleTranslated = work[useTitle];
+  const lang = useContext(LangContext);
+
+  if (work.id == 'andre') {
+    titleTranslated = _('Andre digte', lang);
+  } else if (work.virtualType === 'anthology' || work.id === 'antologier') {
+    titleTranslated = _('Tekster i andre udgivelser', lang);
+  }
+  let titlePart = <span>{titleTranslated}</span>;
+  let yearPart = null;
+  if (year != null) {
+    yearPart = <span>({formattedYear(year, lang)})</span>;
+  }
+
+  const parts = [titlePart, yearPart].map((p, i) => {
+    let className = i === 0 ? 'title' : 'lighter';
+    if (cursive === true && i === 0) {
+      className += ' cursive';
     }
-    let titlePart = <span>{titleTranslated}</span>;
-    let yearPart = null;
-    if (year != null && year !== '?') {
-      yearPart = <span>({year})</span>;
-    }
-
-    const parts = [titlePart, yearPart].map((p, i) => {
-      let className = i === 0 ? 'title' : 'lighter';
-      if (cursive === true && i === 0) {
-        className += ' cursive';
-      }
-      return p ? (
-        <span key={i} className={className}>
-          {p}{' '}
-        </span>
-      ) : null;
-    });
-    return (
-      <span className="workname">
-        {parts}
-        <style jsx>{`
-          .workname :global(.title.cursive) {
-            font-style: italic;
-          }
-
-          :global(.workname) :global(.lighter) {
-            color: ${CommonData.lightTextColor} !important;
-          }
-
-          :global(a) :global(.workname) :global(.lighter) {
-            color: ${CommonData.lightLinkColor} !important;
-          }
-        `}</style>
+    return p ? (
+      <span key={i} className={className}>
+        {p}{' '}
       </span>
-    );
-  }
-}
+    ) : null;
+  });
+  return (
+    <span className="workname">
+      {parts}
+      <style jsx>{`
+        .workname :global(.title.cursive) {
+          font-style: italic;
+        }
 
-export function workTitleString(work: Work): string {
-  const { title, year } = work;
-  let yearPart = '';
-  if (year != null && year !== '?') {
-    yearPart = ` (${year})`;
-  }
-  return title + yearPart;
+        :global(.workname) :global(.lighter) {
+          color: ${CommonData.lightTextColor} !important;
+        }
+
+        :global(a) :global(.workname) :global(.lighter) {
+          color: ${CommonData.lightLinkColor} !important;
+        }
+      `}</style>
+    </span>
+  );
+};
+
+export default WorkName;
+
+export function workTitleString(work, lang = 'da') {
+  const { year } = work;
+  const title =
+    work.virtualType === 'anthology' || work.id === 'antologier'
+      ? _('Tekster i andre udgivelser', lang)
+      : work.title;
+  return Dates.formatTitleAndYear(title, year, lang);
 }

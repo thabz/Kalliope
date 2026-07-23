@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="boegh" status="incomplete" type="poetry">
 <workhead>
    <title>Andre digte</title>
-   <year>?</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="boegh1999100501">
+<text id="boegh1999100501">
 <head>
    <title>Da jeg var Pige</title>
    <toctitle>Da jeg var Pige</toctitle>
@@ -18,6 +15,7 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Ja, nu tør man jo sige
 Og gøre næsten, hvad man vil,
 Men den Gang <i>jeg</i> var Pige
@@ -53,10 +51,11 @@ Nej fy! - da maa jeg sige,
    Rent ud sige...
 Den Gang da jeg var Pige,
 Da var der Piger til.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="boegh2003040501">
+<text id="boegh2003040501">
 <head>
    <title>Peer og Maren</title>
    <toctitle>Peer og Maren</toctitle>
@@ -68,6 +67,7 @@ Da var der Piger til.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Aa hør nu, go'e Venner, om I vil gi' en Pægl,
 en Vise skal jeg synge jer om Maren og mig sælo',
 om hvodden hun med List
@@ -80,7 +80,7 @@ saa sa' den Officer,
 som sad ved Bordet: "Per,
 gaa hjem og bliv lidt større, du er kun ni Kvarter."
 
-Og Knøsene fra Sognet, de grinte, hver og en, 
+Og Knøsene fra Sognet, de grinte, hver og en,
 for nu var de saa stolte af deres lange Ben.
 Jeg taalte deres Spot
 og svared dem blot:
@@ -88,7 +88,7 @@ og svared dem blot:
 
 Men Sognefogdens Maren, ded var nu, kan jeg tro,
 den nydeligste Pige, der kan gaa i et Par Sko;
-hun var saa skær og ren 
+hun var saa skær og ren
 jeg kender itte en
 med saadan et Par Øjne og saadan et Par Ben.
 
@@ -139,7 +139,8 @@ Nu løfter jeg paa Hatten, for min Vise er forbi.
 Jeg ønsker blot enhver,
 som har en pige kær:
 Gud fri ham for Gardister! Jeg siger itte mer.
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

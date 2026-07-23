@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="arnold" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Matthew</firstname>
+    <lastname>Arnold</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1822-12-24</date>
+      <place>Laleham, Middlesex</place>
+    </born>
+    <dead>
+      <date>1888-04-15</date>
+      <place>Liverpool</place>
+    </dead>
+  </period>
+  <literary-periods>realisme-og-naturalisme</literary-periods>
+  <works>andre</works>
+  <identifiers>
+    <wikidata>Q271032</wikidata>
+    <wikipedia-da>Matthew Arnold</wikipedia-da>
+    <wikipedia-en>Matthew Arnold</wikipedia-en>
+    <wikipedia-fr>Matthew Arnold</wikipedia-fr>
+    <wikipedia-de>Matthew Arnold</wikipedia-de>
+    <viaf>73868557</viaf>
+    <lex-dk>Matthew_Arnold</lex-dk>
+    <litteraturpriser-dk>u86</litteraturpriser-dk>
+    <runeberg-org>arnolmat</runeberg-org>
+    <gutenberg-org>1401</gutenberg-org>
+  </identifiers>
+</person>

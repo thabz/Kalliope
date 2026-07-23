@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1588" author="sthen" status="incomplete" type="poetry">
 <workhead>
    <title>En liden Vandrebog</title>
    <year>1588</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="sthen1999030203">
+<text id="sthen1999030203">
 <head>
    <title>En Morgensang</title>
    <toctitle>En Morgensang</toctitle>
@@ -23,6 +21,7 @@
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
+<poetry>
 1.      Den mørcke Nat forgangen er
                 Oc Dagen rinder op saa vide
         Solen hun skinner ofuer Marck oc Kier
@@ -74,7 +73,7 @@
 
 8.      Siden oppaa den Fierde Dags Tid
 		Hand Himmelen monne vel pryde
-        Met Soel oc Maane oc Stierner met. 		
+        Met Soel oc Maane oc Stierner met.
                 Deres Skjn wi nu Daglige nyde:
         Gud giffue oss Lycke oc gode Raad
                 Sin Naadis Liuss oss tilsende.
@@ -106,10 +105,11 @@
                 Baade nu oc i alle Tide:
         Gud giffue oss Lycke oc gode Raad
                 Sin Naadis Liuss oss tilsende. / Amen.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="sthen1999030201">
+<text id="sthen1999030201">
 <head>
    <title>En Afften eller Natsang</title>
    <subtitle>
@@ -127,6 +127,7 @@
    <quality>korrektur1,kilde</quality>
 </head>
 <body>
+<poetry>
 1.      Den liuse Dag forgangen er
                 Oc Natten hun henger oss paa
         O JEsu Christe HErre kier
@@ -175,10 +176,11 @@
                 Dig prjse foruden Ende<note>1659: al Ende</note>
                         Glæde oss Gud i Himmerige.
                                                 AMEN.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="sthen2002072501">
+<text id="sthen2002072501">
 <head>
    <title>En arm Synders Klagemaal</title>
    <subtitle>
@@ -194,6 +196,7 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Jeg stod mig op en Morgenstund,
 jeg klaged min Sorg saa mangenlund.
      Sorgen var i min Hu for Synder mine.
@@ -285,10 +288,11 @@ Gud være med dennem, jeg ønske vil.
 Nu ville vi gøre her Ende paa,
 Christ unde os alle Guds Rige at faa.
      Glæden bliver da i vor Hu ved Christ alene.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="sthen2002072503">
+<text id="sthen2002072503">
 <head>
    <title>En Vise om Verdens Svig og falske Venner</title>
    <toctitle>En Vise om Verdens Svig og falske Venner</toctitle>
@@ -300,6 +304,7 @@ Christ unde os alle Guds Rige at faa.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Jeg gik mig i Rosenslund,
 jeg agted de Djur at bede,
 men der mødte mig i samme Stund,
@@ -359,10 +364,11 @@ i denne Verden hen;
 jeg siden hos dig monne bide
 i Himmerig til evig Tide,
 Gud unde mig det. Amen.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="sthen1999030202">
+<text id="sthen1999030202">
 <head>
    <title>Herre JEsu Christ, Min Frelser du est</title>
    <toctitle>Herre JEsu Christ, Min Frelser du est</toctitle>
@@ -375,6 +381,7 @@ Gud unde mig det. Amen.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 1.
 HERRE JEsu Christ, Min Frelser du est,
 Til dig haaber ieg alleene: Jeg troer paa dig,
@@ -422,10 +429,11 @@ O giffue det Gud, Wi effter dine Bud,
 Kunde oss saa skicke tilsammen: At wi met dig,
 Euindelig, I Himmerig,
 Kunde leffue i Salighed, Amen.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="sthen2005072001">
+<text id="sthen2005072001">
 <head>
    <title>Et anfægtet Menneskes Bøn til Gud</title>
    <firstline>O Gud, efter dig mig forlænger</firstline>
@@ -437,6 +445,7 @@ Kunde leffue i Salighed, Amen.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 O Gud, efter dig mig forlænger,
 naar Synden mit Hjærte trænger,
    til dig staar al min Lid;
@@ -466,10 +475,10 @@ o Jesu, dig ej fra mig skille,
    Jesus han er min trygge Havn.
 
 Gud Fader, som mig haver skabt,
-lad mig aldrig blive fortabt, 
+lad mig aldrig blive fortabt,
    mit Haab sætter jeg til dig;
 Guds Søn, som mig haver forløst,
-du være altid min Hjælp og Trøst,  
+du være altid min Hjælp og Trøst,
    styrke det du haver begyndt i mig!
 
 Den Helligaand i lige Maade
@@ -478,8 +487,9 @@ forlæne mig Visdom og Naade,
 i mit Kald saa flittig at være,
 og mit Kors taalmodelig bære,
    siden fange i Himmerig Del og Lod!
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

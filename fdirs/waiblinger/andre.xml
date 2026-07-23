@@ -2,16 +2,16 @@
 <kalliopework id="andre" author="waiblinger" status="incomplete" type="poetry">
 <workhead>
    <title>Andre digte</title>
-   <year>?</year>
 </workhead>
 <workbody>
 
-<poem id="waiblinger2019090801">
+<text id="waiblinger2019090801">
 <head>
    <title>Lieder des Römischen Carnevals</title>
    <firstline>Und warum nicht, heitere Muse</firstline>
 </head>
 <body>
+<poetry>
 <nonum><center><i>Erstes Lied</i></center></nonum>
 
 Und warum nicht, heitere Muse,
@@ -860,8 +860,9 @@ Eine Zukunft, leicht und selig,
 Sieht er fern herüberschweben,
 Sei's auch, daß er hier sie nicht,
 Im Elysium doch erreiche!
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

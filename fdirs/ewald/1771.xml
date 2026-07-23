@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1771" author="ewald" status="complete" type="poetry">
 <workhead>
    <title>Hedningernes Frelse</title>
@@ -9,11 +8,10 @@
       <note type="credits">Indtastet af Henrik Nielsen.</note>
       <note>Teksten er rettet ind efter <i>Den danske lyrik</i>, bind 1 (»Før 1800«), red. F.J. Billeskov Jansen, 1963.</note>
    </notes>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="ewald2001081801">
+<text id="ewald2001081801">
 <head>
    <title>Hedningernes Frelse</title>
    <subtitle>Et Passions Oratorium</subtitle>
@@ -26,6 +24,7 @@
    <!-- Elendig udgave snuppet fra Billeskov -->
 </head>
 <body>
+<poetry>
                  Syngende Personer
 
 Michael, Gabriel: To Engle som bevogte Christi Grav
@@ -405,7 +404,8 @@ Som Forsoneren udbreder
 O Du evig evig Høye! -
 Styrk vort Bryst, og styrk vort Øye,
    Til at føle det! -
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

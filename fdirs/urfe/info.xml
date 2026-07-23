@@ -2,8 +2,9 @@
 <person id="urfe" country="fr" lang="fr" type="poet">
   <name>
     <firstname>Honoré</firstname>
-    <lastname>d'Urfé</lastname>
-    <fullname>Honoré d'Urfé, marquis de Valromey, comte de Châteauneuf</fullname>
+    <lastname>d’Urfé</lastname>
+    <fullname>Honoré d’Urfé, marquis de Valromey, comte de Châteauneuf</fullname>
+    <sortname>Urfé, Honore de</sortname>
   </name>
   <period>
     <born>
@@ -16,4 +17,11 @@
       <place>Villefranche-sur-Mer, Frankrig</place>
     </dead>
   </period>
+  <identifiers>
+    <wikidata>Q358491</wikidata>
+    <wikipedia-en>Honoré d'Urfé</wikipedia-en>
+    <wikipedia-fr>Honoré d'Urfé</wikipedia-fr>
+    <wikipedia-de>Honoré d’Urfé</wikipedia-de>
+    <viaf>41847426</viaf>
+  </identifiers>
 </person>

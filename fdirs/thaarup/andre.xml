@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="thaarup" status="incomplete" type="poetry">
 <workhead>
    <title>Andre digte</title>
-   <year>?</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="thaarup2001053001">
+<text id="thaarup2001053001">
 <head>
    <title>Hr Bacchus er en skjønne Mand</title>
    <firstline>Hr Bacchus er en skjønne Mand</firstline>
@@ -22,6 +19,7 @@
    <keywords>drikkevise</keywords>
 </head>
 <body>
+<poetry>
 Hr Bacchus er en skjønne Mand,
 han giver, hvad Man søger,
 meer end Apol, den Liremand,
@@ -76,10 +74,11 @@ Men fik de Smagen først engang,
 og følte Vinens Varme,
 Hver hørte glad vor Drikkesang
 og fløi i vore Arme.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="thaarup2001072201">
+<text id="thaarup2001072201">
 <head>
    <title>For Glæden i Venskab at finde</title>
    <toctitle>For Glæden i Venskab at finde</toctitle>
@@ -93,6 +92,7 @@ og fløi i vore Arme.
    <keywords>drikkevise</keywords>
 </head>
 <body>
+<poetry>
 For Glæden i Venskab at finde,
 vi rækker hinanden vor Haand;
 for Frihed med Pligt at forbinde,
@@ -125,10 +125,11 @@ Værer fri! Værer fri!
 det er Himlens almægtige Bud.
 Hver Friheds Fjende er en Slave,
 Frihed og Glæden er fra Gud.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="thaarup2001072202">
+<text id="thaarup2001072202">
 <head>
    <title>Lad Aaret komme, Aaret gaae</title>
    <subtitle>Mel.: Langt meer end Guld er Druen værd</subtitle>
@@ -143,6 +144,7 @@ Frihed og Glæden er fra Gud.
    <keywords>drikkevise</keywords>
 </head>
 <body>
+<poetry>
 Lad Aaret komme, Aaret gaae,
 vor Glæde vil vi nyde,
 og vorder da vor Isse graa,
@@ -163,10 +165,11 @@ Dig hilse Alle Haand i Haand!
 Dit Præg hvert Hjerte bære!
 :|: Vær du vor Fryd, trods Tid og Aar,
 vor Trøst, naar Afskedstimen slaaer! :|:
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="thaarup2001072203">
+<text id="thaarup2001072203">
 <head>
    <title>Mildt, som Aftenstjernen, smile</title>
    <subtitle>Mel.: Hver, som hylder muntre Glæder</subtitle>
@@ -181,6 +184,7 @@ vor Trøst, naar Afskedstimen slaaer! :|:
    <keywords>drikkevise</keywords>
 </head>
 <body>
+<poetry>
 Mildt, som Aftenstjernen, smile
 sande Glæder til os ned!
 de forskjønne Mandens Hvile,
@@ -207,10 +211,11 @@ Du, som vore Hjerter byder,
 dig til Ære, synge Vi:
 ædle Venskab! Intet bryder
 dine Sønners Harmoni!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="thaarup2001072204">
+<text id="thaarup2001072204">
 <head>
    <title>Samles her til milde Glæder</title>
    <toctitle>Samles her til milde Glæder</toctitle>
@@ -224,6 +229,7 @@ dine Sønners Harmoni!
    <keywords>drikkevise</keywords>
 </head>
 <body>
+<poetry>
 Samles her til milde Glæder
 hver en Alder, hver en Stand!
 Ærligt Venskab, blide Sæder
@@ -259,10 +265,11 @@ den skal Klubbens Støtte være,
 som den er vort Hjerte kjær:
 Skaal for hver en Mand af Ære,
 som her var, og endnu er!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="thaarup2001072205">
+<text id="thaarup2001072205">
 <head>
    <title>Vil du den sande Lykke finde</title>
    <toctitle>Vil du den sande Lykke finde</toctitle>
@@ -276,6 +283,7 @@ som her var, og endnu er!
    <keywords>drikkevise</keywords>
 </head>
 <body>
+<poetry>
 Vil du den sande Lykke finde,
 din Sjel da være Dyden huld!
 Du aldrig lade dig forblinde
@@ -302,10 +310,11 @@ Ved Eder skal vor Bane være,
 endog imellem Torne, skjøn,
 og hver en Frydefest skal lære:
 Lyksalighed er Banens Løn!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="thaarup2001072206">
+<text id="thaarup2001072206" ignore-tests="repeated-adjacent-word">
 <head>
    <title>Vær du vort Samfunds Skytsgudinde</title>
    <toctitle>Vær du vort Samfunds Skytsgudinde</toctitle>
@@ -319,6 +328,7 @@ Lyksalighed er Banens Løn!
    <keywords>drikkevise</keywords>
 </head>
 <body>
+<poetry>
 Vær du vort Samfunds Skytsgudinde,
 o Venskab, Jordens bedste Held!
 vort Favnetag dit Hædersminde,
@@ -353,10 +363,11 @@ at alle, alle Hjerter brænde
 for dig, du Jordens Salighed!
 :|: Op Brødre! stemmer stemmer i:
 Held være Venskabs Harmoni! :|:
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="thaarup2001120101">
+<text id="thaarup2001120101">
 <head>
    <title>Kongen bød</title>
    <toctitle>Kongen bød</toctitle>
@@ -366,11 +377,12 @@ Held være Venskabs Harmoni! :|:
       <note>Skrevet 1788 til indskriften på Frihedsstøtten.</note>
    </notes>
    <pictures>
-       <picture src="thaarup2001120101-p1.jpg" museum="smk" invnr="KKSgb4610">Frederik Ludvig Bradt: <i>Frihedsstøtten set fra Frederiksbergsiden</i>, ca. 1800, blyant, vandfarve, pen og sort blæk, 557x445 mm, Statens Museum for Kunst.</picture>
+       <picture src="thaarup2001120101-p1.jpg" museum="smk" invnr="KKSgb4610">Frederik Ludvig Bradt: <i>Frihedsstøtten set fra Frederiksbergsiden</i>, ca. 1800, blyant, vandfarve, pen og sort blæk, 557 × 445 mm.</picture>
    </pictures>
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Kongen
 bød
 Stavnsbaandet
@@ -385,10 +397,11 @@ kiek og oplyst
 flittig og god
 hæderlig Borger
 Lykkelig
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="thaarup2017010801">
+<text id="thaarup2017010801">
 <head>
    <title>Sørgecantate over Stampe</title>
    <firstline>Som Skyggen svinder Livet bort</firstline>
@@ -402,72 +415,73 @@ Lykkelig
    <keywords></keywords>
 </head>
 <body>
+<poetry>
 <nonum><b>For Talen.</b></nonum>
 
-    Som Skyggen svinder Livet bort: 
+    Som Skyggen svinder Livet bort:
     Tung er den Vey vi træde:
-    Vor Ungdoms favre Vaar er kort: 
+    Vor Ungdoms favre Vaar er kort:
     Ustadig al vor Glæde;
-    Alt spirer, modnes, og forgaaer: 
+    Alt spirer, modnes, og forgaaer:
     Syv gange Ti er Støvets Aar;
     Men sielden, sielden fleere.
 
 O föel det, du! som i din Ungdoms Vaar
-Gridsk söger Hæld i Jordens Glæder, 
+Gridsk söger Hæld i Jordens Glæder,
 Og du! som i din Manddom gaaer
 Den skumle Vey til falsk udvortes Hæder;
 Og du, som snehvid dynger Guld til Guld,
 Og glemmer Graven for et ubrugt Muld:
 Henvender Öiet til et Hælsot-Leye:
-Seer Ungdom visne der, som Løv: 
+Seer Ungdom visne der, som Løv:
 Hovmodig Manddom segne ned i Stöv:
 Og Guldets Træl blot fire Fielle eye:
-Med Anger mindes Daaren svundne Glæder, 
+Med Anger mindes Daaren svundne Glæder,
 Det Glimretegn paa falsk, udvortes hæder
 Er for den Stoltes Öie,
-Som Lyn i Midnat for en Synder. 
-Og mörk, som Nat, som Fiæren let 
-Er Guldet selv ved Graven. — 
+Som Lyn i Midnat for en Synder.
+Og mörk, som Nat, som Fiæren let
+Er Guldet selv ved Graven. —
 Naar Dödens mörke tunge Vinge
-Nedtrykker Luften paa dit Bryst, 
+Nedtrykker Luften paa dit Bryst,
 Og Siælen angst skuer ned
-I Gravens Svælg, og tænker Evighed, 
+I Gravens Svælg, og tænker Evighed,
 O Menneske! hvad tröster dig
 Paa Jordens heele klode?
 
-    Naar Öret næppe Lyd kan kiende, 
+    Naar Öret næppe Lyd kan kiende,
     Naar Pulsen mattes i sit Slag:
     Og tungt og afbrudt Aandedrag
     Og Mulm forkynde Dagens Ende;
-    Ey Taaren, Venskabs tause Klage, 
+    Ey Taaren, Venskabs tause Klage,
     Ey Magens smertefulde Skrig,
     Nedkalder Glimt af Tröst til dig:
-    Har du ey veyet dine Dage, 
+    Har du ey veyet dine Dage,
     Har du ey handlet visselig.
 
         Herre! lær os at tælle vore Dage, at vi maae vorde forstandige.
 
 Som Solen daler ned
-Paa Vaarens ynderige Dag, 
-Og i sin Dalen overstraaler Jorden, 
+Paa Vaarens ynderige Dag,
+Og i sin Dalen overstraaler Jorden,
 Saa er den Vise i sin sidste Stund.
 Med Roe forlader han al Livets Hæder,
-Og uden Anger mindes han dets Glæder. 
+Og uden Anger mindes han dets Glæder.
 Rundt om hans Leye staae
-Med Haand i Haand de brugte Dage 
-At fölge ham for Evighedens Dom, 
+Med Haand i Haand de brugte Dage
+At fölge ham for Evighedens Dom,
 Og alle smile Himlens Haab,
 Hans Dödstund er en skyldfrie Sövn
-Og Himle fryde sig; men Jorden græder — 
+Og Himle fryde sig; men Jorden græder —
 See, saa forlod vor STAMPE Jorden.
 
     Græder ved hans Urne, græder,
-    I, som kiendte Mandens Siæl! 
+    I, som kiendte Mandens Siæl!
     Savnet er den Vises Hæder,
-    Men hans Lön er Himlens Glæder: 
+    Men hans Lön er Himlens Glæder:
     Og at ligne ham er Hæld!
 
----    
+---
 
 <nonum><b>Efter Talen</b></nonum>
 
@@ -476,25 +490,25 @@ Athene staaer i dyb Betragtning,
 Og Sorgens Alvor er i hendes Aasyn:
 Hun mindes sine nye Tab. —
 Urania! din <i>Geus</i> er ikke meer —
-Og Danmarks Archimed, den ædle <i>Gerner</i>, 
+Og Danmarks Archimed, den ædle <i>Gerner</i>,
 Han, Nordens umiskiendelige Gavn,
-Som giennem Bölgen fortnede dets Hæder, 
+Som giennem Bölgen fortnede dets Hæder,
 Er Stöv. —
 Saa sank den Lovens Tolk,
-Astræas Ven, den vise <i>Anker</i> — 
+Astræas Ven, den vise <i>Anker</i> —
 Og han, som brændte for sit Födeland,
-Som ædel Elsker for sin Möe: — 
+Som ædel Elsker for sin Möe: —
 Din <i>Eriksen</i>, o! Island tier —
 O du, som i din Egekrands
 Bar latinske Musers Pryd,
 Du ælde Lüxdorph, hvo tör gribe
 Den Harpe, du forlod?
-Den kiekke Mand, trods Zemblas Kuld og Nat, 
+Den kiekke Mand, trods Zemblas Kuld og Nat,
 Som Paulus, varm for Troe og Brödre,
-Den fromme <i>Egede</i>, der lærde Gröndlands Vilde 
+Den fromme <i>Egede</i>, der lærde Gröndlands Vilde
 At hæve Tanken fra fæle mörke Hule
 Til Lys og Himlens Haab,
-Er samlet med sin Lærdoms Förstegröde, 
+Er samlet med sin Lærdoms Förstegröde,
 Hvor Haab er Vished. —
 Og du forlod Athenes Helligdom,
 Som Dyd og Lærdom dante Vey <!-- TODO: dante? Rahbek siger "bante". Jeg vil sige "vante"... -->
@@ -502,27 +516,28 @@ Til Ærens Tempel,
 O STAMPE! dine feire Aar
 Du viede til Ungdoms Lære.
 Som Oldring sidder nu din Lærling taus, <!-- Olding -->
-Og stirrer paa din Grav, og takker dig med Taarer. — 
+Og stirrer paa din Grav, og takker dig med Taarer. —
 Dig satte Nordens Christian
 Blandt sine Mænd,
-Og gav dig Hæderstegn paa Dyd og Visdom: 
+Og gav dig Hæderstegn paa Dyd og Visdom:
 Athene savner dig, og Födelandet
 Og Kongen savne dig! —
 
-    Yngling! knæl i Visdoms Tempel, 
+    Yngling! knæl i Visdoms Tempel,
     See vort Savn og dit Exempel,
-    Og en hellig Flamme Stige 
-    For at vorde deres Lige, 
+    Og en hellig Flamme Stige
+    For at vorde deres Lige,
     Som udbredte Lys og Gavn.
-    Lad din Vandel skyldfrie være, 
+    Lad din Vandel skyldfrie være,
     Hellig, som Guds Navn, den Ære;
-    Dig da vorde sande Glæder, 
-    Fast og stor og lys din Hæder, 
+    Dig da vorde sande Glæder,
+    Fast og stor og lys din Hæder,
     Og udödelig dit Navn! —
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="thaarup2017011601">
+<text id="thaarup2017011601">
 <head>
    <title>Sørgesang over Sophie Frederike</title>
    <firstline>Som Skyggen svinder Livet bort</firstline>
@@ -534,6 +549,7 @@ Og Kongen savne dig! —
    <keywords></keywords>
 </head>
 <body>
+<poetry>
 <nonum><b>For Talen.</b></nonum>
 
 <nonum>Choral.</nonum>
@@ -611,7 +627,7 @@ At vi græde, naar vi sige:
 Skee Din Vilje Gud.
 
 
----    
+---
 
 <nonum><b>Efter Talen</b></nonum>
 
@@ -650,10 +666,11 @@ Da Hun faldt hen i Dødens Blund
 Og sank i Gravens Gjemme.
 Held Hende; thi Hun gik herfra
 Til alles Gud – Halleluja!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="thaarup2019021901">
+<text id="thaarup2019021901">
 <head>
    <title>Fødelands-Kjerlighed</title>
    <firstline>Du Plet af Jord, hvor Livets Stemme</firstline>
@@ -661,6 +678,7 @@ Til alles Gud – Halleluja!
    <keywords></keywords>
 </head>
 <body>
+<poetry>
 Du Plet af Jord, hvor Livets Stemme
     Steeg første Gang fra spæde Bryst,
 Hvor Himlen gav mig at fornemme
@@ -672,7 +690,7 @@ Der tændtes Gnisten til den Flamme,
 
 Og naar i Barndoms blide Dage
     Til fremmed Egn vi løbe hen,
-Med Længsel ilte vi tilbage: 
+Med Længsel ilte vi tilbage:
     Til moderlige Hjem igjen;
 Hver Høi, hver Dal, som gav os Glæder,
     Den blev vort Minde dyrebar,
@@ -723,7 +741,7 @@ Paa Klippen, som et Alter, brændte
     Et Offer for vort Fødeland,
 Der Borger-Kjerligheden tændte
     For Landets Vel sin By i Brand.
-    
+
 O Konge-Stad, din Seiers Minde
     Til Danskes sidste Slægt skal staae:
 Det Land, som Gustav vilde vinde,
@@ -732,7 +750,7 @@ Men Borger-Kjerligheden vinder,
     Og Gustav skjelver for sit Navn,
 Hans Haab og Helte Gravsted finder
     Omkring det frelste Kjøbenhavn.
-    
+
 Hver Dannemarks og Norges Pige
     Skal henrykt synge deres Navn;
 Hver Moder ofte Sønnen sige
@@ -741,7 +759,7 @@ Og, mens han lærer stamme Moder,
     Ham lære stamme Fødeland,
 At elske Mennesket som Broder,
     Men Fødelandet som en Mand.
-    
+
 Vi ville ligne vore Fædre
     Som Mænd i Feide og i Fred;
 Vort Navn skal Efterslægten hædre
@@ -759,8 +777,9 @@ Vor Attraa Viisdoms Børn skal ære;
     Alfader give Bifalds Smil! .
 Den gode Borgers Navn at bære,
     Er Maalet, som vi stræbe til.
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

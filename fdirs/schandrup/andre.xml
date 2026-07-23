@@ -1,26 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="schandrup" status="incomplete" type="poetry">
 <workhead>
    <title>Andre digte</title>
-   <year>?</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="schandrup2002101201">
+<text id="schandrup2002101201">
 <head>
    <title>Den Daanende og igien Respirerende Brudgom</title>
    <toctitle>Den Daanende og igien Respirerende Brudgom</toctitle>
    <indextitle>Den Daanende og igien Respirerende Brudgom</indextitle>
    <firstline>Vel sov vor Brudgom hen og Dynen sig befaled</firstline>
    <notes>
-      <note>Efter Niels Simonsen: <i>Verdslig Barok</i>, 1985, p. 152-153, som igen angiver Add. 2&deg; 167, s. 978, som tekstgrundlag.</note>
+      <note>Efter Niels Simonsen: <i>Verdslig Barok</i>, 1985, p. 152-153, som igen angiver Add. 2° 167, s. 978, som tekstgrundlag.</note>
    </notes>
    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Vel sov vor Brudgom hen og Dynen sig befaled,
 Men vognet dog igien det første Hanen galed,
    Hand sig i Brude-blee i Nat begrave lod,
@@ -45,10 +43,11 @@ Hun kand til denne Sag, slet intet andet svare:
 Det rylted for og bag, hun meen det var een Mare,
    Og det er hendis Skaal, som denne Mare red
    En Pæl med Randers Øl Poëten giør Beskeed.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="schandrup2002032901">
+<text id="schandrup2002032901">
 <head>
    <title>Den Romerske Tiggebrættis Egentlig Afbilding</title>
    <toctitle>Den Romerske Tiggebrættis Egentlig Afbilding</toctitle>
@@ -61,6 +60,7 @@ Det rylted for og bag, hun meen det var een Mare,
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Kom Buntemager kom og sæt
    En Krucke fuld af Sverte
 At jeg kand skildre Tigge-Bræt
@@ -190,7 +190,8 @@ At alle Græckers Male-Flok
    Med mig fornuftig Dømmer
 At her er Qvaliteter nok
    Som slig en Dame sømmer.
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1829" author="hugo" status="incomplete" type="poetry">
 <workhead>
    <title>Les Orientales</title>
@@ -8,13 +7,14 @@
 </workhead>
 <workbody>
 
-<poem id="hugo2018111002">
+<text id="hugo2018111002">
 <head>
     <title><num>VIII.</num>Chanson de pirates</title>
     <firstline>Nous emmenions en esclavage</firstline>
     <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 <nonum><right><small>Alerte ! alerte ! voici les pirates d’Ochab qui traversent le détroit</small></right></nonum>
 <nonum><right><small><i>Le Captif d’Ochab.</i></small></right></nonum>
 
@@ -46,7 +46,7 @@ Dans la galère capitane
 Nous étions quatrevingts rameurs.
 
 Elle veut fuir vers sa chapelle.
-— Osez-vous bien, fils de Satan?
+— Osez-vous bien, fils de Satan ?
 — Nous osons, dit le capitan.
 Elle pleure, supplie, appelle.
 Malgré sa plainte et ses clameurs,
@@ -64,16 +64,18 @@ Dans la galère capitane
 Nous étions quatrevingts rameurs
 
 <nonum><center><small>12 mars 1828.</small></center></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hugo20181109">
+<text id="hugo20181109">
 <head>
     <title><num>XX.</num>Attente</title>
     <firstline>Monte, écureuil, monte au grand chêne</firstline>
     <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 <nonum><right><small>Esperaba, desperada.</small></right></nonum>
 
 Monte, écureuil, monte au grand chêne,
@@ -101,16 +103,18 @@ Et courir un cheval qui fume,
 Et revenir mon bien-aimé ?
 
 <nonum><center><small>1er juin 1828.</small></center></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hugo2018111001">
+<text id="hugo2018111001">
 <head>
     <title><num>XXII.</num>La Sultane favorite</title>
     <firstline>N’ai-je pas pour toi, belle juive</firstline>
     <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 <nonum><small><right>Perfide comme l'onde.</right></small></nonum>
 <nonum><small><right>Shakespeare.</right></small></nonum>
 
@@ -199,13 +203,17 @@ Il faut au sultan des sultanes ;
 Il faut des perles au poignard !
 
 <nonum><center><small>22 octobre 1828.</small></center></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hugo2018111003">
+<text id="hugo2018111003">
 <head>
     <title><num>XXVI.</num>Les Tronçons du serpent</title>
     <firstline>Je veille, et nuit et jour mon front rêve enflammé</firstline>
+    <notes>
+        <note>Mottoet stammer fra en fransk oversættelse af persiske <a poet="saadi">Saadi</a> : <i>Gulistan</i> (1258).</note>
+        </notes>
     <pictures>
         <picture src="hugo2018111003-p1.jpg">
             Alexandre Cabanel: <i>Albaydé</i>, 1848, olie på lærred, 98×80 cm. Musée Fabre, Montpellier.</picture>
@@ -215,9 +223,11 @@ Il faut des perles au poignard !
     <quality>korrektur1</quality>
 </head>
 <body>
-<nonum><right><small>D’ailleurs les sages ont dit : Il ne faut point attacher son cœur aux choses passagères.</small></right></nonum>
-<nonum><right><small>Sadi. <i>Gulistan.</i></small></right></nonum>
-
+<quote font-size="small" margin-left="20%">
+D’ailleurs les sages ont dit : Il ne faut point attacher son cœur aux choses passagères.
+<right>Sadi. <i>Gulistan.</i></right>
+</quote>
+<poetry>
 Je veille, et nuit et jour mon front rêve enflammé,
     Ma joue en pleurs ruisselle,
 Depuis qu’Albaydé dans la tombe a fermé
@@ -274,16 +284,18 @@ Sans pouvoir réunir ses tronçons mutilés
     Qui rampent et qui saignent. »
 
 <nonum><center><small>10 novembre 1828.</small></center></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hugo2019021202">
+<text id="hugo2019021202">
 <head>
     <title><num>XXX.</num>Romance mauresque</title>
     <firstline>Don Rodrigue est à la chasse</firstline>
     <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 <nonum><right><small>Dixóle : — Dime, buen hombre.</small></right></nonum>
 <nonum><right><small>Lo que preguntarte queria.</small></right></nonum>
 <nonum><right><small><i>Romancero general.</i></small></right></nonum>
@@ -339,7 +351,7 @@ Du roi maure Aliatar.
 
 Certe, à moins qu’il ne m’évite,
 Je le reconnaîtrais vite ;
-Toujours il porte avec lui 
+Toujours il porte avec lui
 Notre dague de famille ;
 Une agate au pommeau brille,
 Et la lame est sans étui.
@@ -401,17 +413,19 @@ Ma dague au pommeau d’agate
 Eût ta gorge pour fourreau.
 
 <nonum><center><small>1<sup>er</sup> mai 1828.</small></center></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
 
-<poem id="hugo2019021201">
+<text id="hugo2019021201">
 <head>
     <title><num>XXXVII.</num>Extase</title>
     <firstline>J’étais seul près des flots, par une nuit d’étoiles</firstline>
     <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 <nonum><right><small>Et j’entendis une grande voix.</small></right></nonum>
 <nonum><right><small><i>Apocalypse.</i></small></right></nonum>
 
@@ -430,144 +444,147 @@ Disaient, en recourbant l’écume de leur crête :
     ― C’est le Seigneur, le Seigneur Dieu !
 
 <nonum><center><small>25 novembre 1828.</small></center></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hugo20180206">
+<text id="hugo20180206">
 <head>
     <title><num>XL.</num>Lui</title>
     <firstline>Toujours lui ! Lui partout ! - Ou brûlante ou glacée</firstline>
     <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 I.
 
-Toujours lui ! Lui partout ! - Ou brûlante ou glacée, 
-Son image sans cesse ébranle ma pensée. 
-Il verse à mon esprit le souffle créateur. 
-Je tremble, et dans ma bouche abondent les paroles 
-Quand son nom gigantesque, entouré d'auréoles, 
+Toujours lui ! Lui partout ! - Ou brûlante ou glacée,
+Son image sans cesse ébranle ma pensée.
+Il verse à mon esprit le souffle créateur.
+Je tremble, et dans ma bouche abondent les paroles
+Quand son nom gigantesque, entouré d'auréoles,
 Se dresse dans mon vers de toute sa hauteur.
 
-Là, je le vois, guidant l'obus aux bonds rapides, 
-Là, massacrant le peuple au nom des régicides, 
-Là, soldat, aux tribuns arrachant leurs pouvoirs, 
-Là, consul, jeune et fier, amaigri par des veilles 
-Que des rêves d'empire emplissaient de merveilles, 
+Là, je le vois, guidant l'obus aux bonds rapides,
+Là, massacrant le peuple au nom des régicides,
+Là, soldat, aux tribuns arrachant leurs pouvoirs,
+Là, consul, jeune et fier, amaigri par des veilles
+Que des rêves d'empire emplissaient de merveilles,
   Pâle sous ses longs cheveux noirs.
 
-Puis, empereur puissant, dont la tête s'incline, 
-Gouvernant un combat du haut de la colline, 
-Promettant une étoile à ses soldats joyeux, 
-Faisant signe aux canons qui vomissent les flammes, 
-De son âme à la guerre armant six cent mille âmes, 
+Puis, empereur puissant, dont la tête s'incline,
+Gouvernant un combat du haut de la colline,
+Promettant une étoile à ses soldats joyeux,
+Faisant signe aux canons qui vomissent les flammes,
+De son âme à la guerre armant six cent mille âmes,
 Grave et serein, avec un éclair dans les yeux.
 
-Puis, pauvre prisonnier, qu'on raille et qu'on tourmente, 
-Croisant ses bras oisifs sur son sein qui fermente, 
-En proie aux geôliers vils comme un vil criminel, 
-Vaincu, chauve, courbant son front noir de nuages, 
-Promenant sur un roc où passent les orages 
+Puis, pauvre prisonnier, qu'on raille et qu'on tourmente,
+Croisant ses bras oisifs sur son sein qui fermente,
+En proie aux geôliers vils comme un vil criminel,
+Vaincu, chauve, courbant son front noir de nuages,
+Promenant sur un roc où passent les orages
   Sa pensée, orage éternel.
 
-Qu'il est grand, là surtout ! quand, puissance brisée, 
-Des porte-clefs anglais misérable risée, 
-Au sacre du malheur il retrempe ses droits, 
-Tient au bruit de ses pas deux mondes en haleine, 
-Et, mourant de l'exil, gêné dans Sainte-Hélène, 
+Qu'il est grand, là surtout ! quand, puissance brisée,
+Des porte-clefs anglais misérable risée,
+Au sacre du malheur il retrempe ses droits,
+Tient au bruit de ses pas deux mondes en haleine,
+Et, mourant de l'exil, gêné dans Sainte-Hélène,
 Manque d'air dans la cage où l'exposent les rois !
 
-Qu'il est grand à cette heure où, prêt à voir Dieu même, 
-Son œil qui s'éteint roule une larme suprême ! 
-Il évoque à sa mort sa vieille armée en deuil, 
-Se plaint à ses guerriers d'expirer solitaire, 
-Et, prenant pour linceul son manteau militaire, 
+Qu'il est grand à cette heure où, prêt à voir Dieu même,
+Son œil qui s'éteint roule une larme suprême !
+Il évoque à sa mort sa vieille armée en deuil,
+Se plaint à ses guerriers d'expirer solitaire,
+Et, prenant pour linceul son manteau militaire,
 Du lit de camp passe au cercueil !
 
 II.
 
-À Rome, où du Sénat hérite le conclave, 
-À l'Elbe, aux monts blanchis de neige ou noirs de lave, 
-Au menaçant Kremlin, à l'Alhambra riant, 
-Il est partout ! - Au Nil, je le rencontre encore. 
-L'Egypte resplendit des feux de son aurore ; 
+À Rome, où du Sénat hérite le conclave,
+À l'Elbe, aux monts blanchis de neige ou noirs de lave,
+Au menaçant Kremlin, à l'Alhambra riant,
+Il est partout ! - Au Nil, je le rencontre encore.
+L'Egypte resplendit des feux de son aurore ;
 Son astre impérial se lève à l'orient.
 
-Vainqueur, enthousiaste, éclatant de prestiges, 
-Prodige, il étonna la terre des prodiges 
-Les vieux scheiks vénéraient l'émir jeune et prudent, 
-Le peuple redoutait ses armes inouïes ; 
-Sublime, il apparut aux tribus éblouies 
+Vainqueur, enthousiaste, éclatant de prestiges,
+Prodige, il étonna la terre des prodiges
+Les vieux scheiks vénéraient l'émir jeune et prudent,
+Le peuple redoutait ses armes inouïes ;
+Sublime, il apparut aux tribus éblouies
   Comme un Mahomet d'Occident.
 
-Leur féerie a déjà réclamé son histoire ; 
-La tente de l'arabe est pleine de sa gloire. 
-Tout bédouin libre était son hardi compagnon ; 
-Les petits enfants, l'œil tourné vers nos rivages, 
-Sur un tambour français règlent leurs pas sauvages, 
+Leur féerie a déjà réclamé son histoire ;
+La tente de l'arabe est pleine de sa gloire.
+Tout bédouin libre était son hardi compagnon ;
+Les petits enfants, l'œil tourné vers nos rivages,
+Sur un tambour français règlent leurs pas sauvages,
 Et les ardents chevaux hennissent à son nom.
 
-Parfois il vient, porté sur l'ouragan numide, 
-Prenant pour piédestal la grande pyramide, 
-Contempler les déserts, sablonneux océans. 
-Là, son ombre, éveillant le sépulcre sonore, 
-Comme pour la bataille, y ressuscite encore 
+Parfois il vient, porté sur l'ouragan numide,
+Prenant pour piédestal la grande pyramide,
+Contempler les déserts, sablonneux océans.
+Là, son ombre, éveillant le sépulcre sonore,
+Comme pour la bataille, y ressuscite encore
   Les quarante siècles géants.
 
-Il dit : Debout ! Soudain chaque siècle se lève, 
-Ceux-ci portant le sceptre et ceux-là ceints du glaive, 
-Satrapes, pharaons, mages, peuple glacé ; 
-Immobiles, poudreux, muets, sa voix les compte ; 
-Tous semblent, adorant son front qui les surmonte, 
+Il dit : Debout ! Soudain chaque siècle se lève,
+Ceux-ci portant le sceptre et ceux-là ceints du glaive,
+Satrapes, pharaons, mages, peuple glacé ;
+Immobiles, poudreux, muets, sa voix les compte ;
+Tous semblent, adorant son front qui les surmonte,
 Faire à ce roi des temps une cour du passé.
 
-Ainsi tout, sous les pas de l'homme ineffaçable, 
-Tout devient monument ; il passe sur le sable, 
-Mais qu'importe qu'Assur de ses flots soit couvert, 
-Que l'aquilon sans cesse y fatigue son aile ! 
-Son pied colossal laisse une trace éternelle 
+Ainsi tout, sous les pas de l'homme ineffaçable,
+Tout devient monument ; il passe sur le sable,
+Mais qu'importe qu'Assur de ses flots soit couvert,
+Que l'aquilon sans cesse y fatigue son aile !
+Son pied colossal laisse une trace éternelle
   Sur le front mouvant du désert.
 
 III.
 
-Histoire, poésie, il joint du pied vos cimes. 
-Eperdu, je ne puis dans ces mondes sublimes 
-Remuer rien de grand sans toucher à son nom ; 
-Oui, quand tu m'apparais, pour le culte ou le blâme, 
-Les chants volent pressés sur mes lèvres de flamme, 
+Histoire, poésie, il joint du pied vos cimes.
+Eperdu, je ne puis dans ces mondes sublimes
+Remuer rien de grand sans toucher à son nom ;
+Oui, quand tu m'apparais, pour le culte ou le blâme,
+Les chants volent pressés sur mes lèvres de flamme,
 Napoléon ! soleil dont je suis le Memnon !
 
-Tu domines notre âge ; ange ou démon, qu'importe ? 
-Ton aigle dans son vol, haletants, nous emporte. 
-L'œil même qui te fuit te retrouve partout. 
-Toujours dans nos tableaux tu jettes ta grande ombre ; 
-Toujours Napoléon, éblouissant et sombre, 
+Tu domines notre âge ; ange ou démon, qu'importe ?
+Ton aigle dans son vol, haletants, nous emporte.
+L'œil même qui te fuit te retrouve partout.
+Toujours dans nos tableaux tu jettes ta grande ombre ;
+Toujours Napoléon, éblouissant et sombre,
   Sur le seuil du siècle est debout.
 
-Ainsi, quand, du Vésuve explorant le domaine, 
-De Naples à Portici l'étranger se promène, 
-Lorsqu'il trouble, rêveur, de ses pas importuns 
-Ischia, de ses fleurs embaumant l'onde heureuse 
-Dont le bruit, comme un chant de sultane amoureuse, 
+Ainsi, quand, du Vésuve explorant le domaine,
+De Naples à Portici l'étranger se promène,
+Lorsqu'il trouble, rêveur, de ses pas importuns
+Ischia, de ses fleurs embaumant l'onde heureuse
+Dont le bruit, comme un chant de sultane amoureuse,
 Semble une voix qui vole au milieu des parfums ;
 
-Qu'il hante de Paestum l'auguste colonnade, 
-Qu'il écoute à Pouzzol la vive sérénade 
-Chantant la tarentelle au pied d'un mur toscan ; 
-Qu'il éveille en passant cette cité momie, 
-Pompéi, corps gisant d'une ville endormie, 
+Qu'il hante de Paestum l'auguste colonnade,
+Qu'il écoute à Pouzzol la vive sérénade
+Chantant la tarentelle au pied d'un mur toscan ;
+Qu'il éveille en passant cette cité momie,
+Pompéi, corps gisant d'une ville endormie,
   Saisie un jour par le volcan ;
 
-Qu'il erre au Pausilippe avec la barque agile 
-D'où le brun marinier hante Tasse à Virgile ; 
-Toujours, sous l'arbre vert, sur les lits de gazon, 
-Toujours il voit, du sein des mers et des prairies, 
-Du haut des caps, du bord des presqu'îles fleuries, 
+Qu'il erre au Pausilippe avec la barque agile
+D'où le brun marinier hante Tasse à Virgile ;
+Toujours, sous l'arbre vert, sur les lits de gazon,
+Toujours il voit, du sein des mers et des prairies,
+Du haut des caps, du bord des presqu'îles fleuries,
 Toujours le noir géant qui fume à l'horizon !
 
 <nonum><center><small>Décembre 1827.</small></center></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

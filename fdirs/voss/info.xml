@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="voss" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Johann Heinrich</firstname>
+    <lastname>Voß</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1751-02-20</date>
+      <place>Sommerstorf</place>
+    </born>
+    <dead>
+      <date>1826-03-29</date>
+      <place>Heidelberg</place>
+    </dead>
+  </period>
+  <works>andre</works>
+  <identifiers>
+    <wikidata>Q62188</wikidata>
+    <wikipedia-da>Johann Heinrich Voss</wikipedia-da>
+    <wikipedia-en>Johann Heinrich Voss</wikipedia-en>
+    <wikipedia-fr>Johann Heinrich Voß</wikipedia-fr>
+    <wikipedia-de>Johann Heinrich Voß</wikipedia-de>
+    <viaf>61642982</viaf>
+    <lex-dk>Johann_Heinrich_Voss</lex-dk>
+  </identifiers>
+</person>

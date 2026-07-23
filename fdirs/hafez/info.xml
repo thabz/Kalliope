@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<person id="hafez" country="un" lang="pe" type="poet">
+<person id="hafez" country="un" lang="fa" type="poet">
   <name>
     <firstname>Shams al-din</firstname>
     <lastname>Hafez</lastname>
@@ -16,4 +16,15 @@
       <place>Shiraz</place>
     </dead>
   </period>
+  <literary-periods>middelalderen</literary-periods>
+  <identifiers>
+    <wikidata>Q6240</wikidata>
+    <wikipedia-da>Hafez</wikipedia-da>
+    <wikipedia-en>Hafez</wikipedia-en>
+    <wikipedia-fr>Hafez (poète)</wikipedia-fr>
+    <wikipedia-de>Hafis</wikipedia-de>
+    <viaf>92145857106822922504</viaf>
+    <lex-dk>Muhammad_ShamsuDin_Hafiz</lex-dk>
+    <gutenberg-org>39907</gutenberg-org>
+  </identifiers>
 </person>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="hoffman" country="us" lang="en" type="poet">
+  <name>
+    <firstname>Charles Fenno</firstname>
+    <lastname>Hoffman</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1806-02-07</date>
+      <place>New York City</place>
+    </born>
+    <dead>
+      <date>1884-06-07</date>
+      <place>Harrisburg, Pennsylvania</place>
+    </dead>
+  </period>
+  <works>andre</works>
+  <identifiers>
+    <wikidata>Q352023</wikidata>
+    <wikipedia-en>Charles Fenno Hoffman</wikipedia-en>
+    <wikipedia-de>Charles Fenno Hoffman</wikipedia-de>
+    <viaf>72557865</viaf>
+    <gutenberg-org>25722</gutenberg-org>
+  </identifiers>
+</person>

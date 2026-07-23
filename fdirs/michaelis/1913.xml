@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1913" author="michaelis" status="complete" type="poetry">
 <workhead>
    <title>Blaaregn</title>
@@ -16,7 +15,7 @@
 <workbody>
 
 
-<poem id="michaelis2017102401">
+<text id="michaelis2017102401">
 <head>
     <title>Blaaregn</title>
     <firstline>Blaaregnen stille blomstrer</firstline>
@@ -24,6 +23,7 @@
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Blaaregnen stille blomstrer -
 
 Se, Himlen faldt i Tanker:
@@ -61,7 +61,7 @@ paa Bambuskaarder fægter;
 en Guldfisk under Broen
 af gabende Gæller smægter.
 Jeg ser et benhvidt Plekter
-i Samisén’ens Strenge,
+i Samisén’ens Strenge,
 rispe haardt og længe
 med Klimper, som gør ve.
 
@@ -296,7 +296,7 @@ Stænget er selv Balkonen.
 Men end mit tynde Hus
 er fyldt af Bjergets Aande,
 med Dask af Pilevaande
-og Kryptomériers Sus.
+og Kryptomériers Sus.
 
 Genlydt imod Balkonen
 fjernt gennem Fyrrekroner
@@ -398,7 +398,7 @@ jeg trode længst forbi.
 ----
 
 Hvad er det for en Sommer,
-JL X der gyldendiset kommer
+der gyldendiset kommer
 og smiler for min Rude
 og dugger for min Dør?
 Den skønne Kyst derude
@@ -470,7 +470,7 @@ Og i mit Hjerte isned
 en gammel ulægt Ve,
 der lønligt havde fulgt mig
 til Thehus Numer tre
-og dér usynligt dulgt sig
+og dér usynligt dulgt sig
 lig Fujis hvide Sne.
 
 Men nu var Fuji borte
@@ -486,7 +486,7 @@ omkring den grønne Dam.
 
 Da tripped frem i Gryet
 saa morgenfrisk fornyet
-min lille Nattefé
+min lille Nattefé
 — frem af sit Bambus-Stræde
 — en Kolibri i Bur.
 
@@ -531,7 +531,7 @@ og mødes let i Luften
 og stryger bort igen.
 
 Er det en Streng, der sukker
-hist i din Samisén?
+hist i din Samisén?
 
 Nu gaar jeg bort med Duften
 af Salven i dit Haar.
@@ -615,10 +615,11 @@ vi ses en anden Gang.
 
 Ja se, nu har jeg mødt dig
 i denne lille Sang.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102402">
+<text id="michaelis2017102402">
 <head>
     <title>Paa Vandring</title>
     <firstline>Længsel mod Forandring</firstline>
@@ -626,6 +627,7 @@ i denne lille Sang.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Længsel mod Forandring
 Japan paa Folkevandring
 bestandig traver om.
@@ -683,7 +685,7 @@ hvis du vil se mit Blomme-
 træs hvide Brudedragt
 med Solens Flimmer lagt.
 Aa, skynd dig, vil du se
-min Kirsebær-Allé,
+min Kirsebær-Allé,
 hvor ned fra alle Kroner
 der drysser Duft og Toner
 af solfaldsfarvet Sne
@@ -702,10 +704,11 @@ mens Stunden er belejlig.
 
 ,,Dog, før du gæsted Nikko,
 brug ikke Ordet dejlig!''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102403">
+<text id="michaelis2017102403">
 <head>
     <title>Nikko</title>
     <firstline>Dèr blinker Fjæld og Floder</firstline>
@@ -713,10 +716,11 @@ brug ikke Ordet dejlig!''
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Dèr blinker Fjæld og Floder
 og Porte og Pagoder,
 sølvhvide Vandfalds Brusen
-og Kryptomériers Susen,
+og Kryptomériers Susen,
 bag Stammesøjlers tusend-
 aarsgamle Tempelhær
 Gravslotte for Shoguner:
@@ -832,7 +836,7 @@ De Abefagter stamme
 en Takt, vi bør annamme
 — Noblessens ABC.
 
-De stolte Kryptomérier
+De stolte Kryptomérier
 om Templerne staa Vagt.
 Naturens blaa Mysterier
 i deres Skjul blev lagt.
@@ -903,10 +907,11 @@ Nu er mit Sind beredt
 til Sang, der vidner vægtig:
 Brug ikke Ordet prægtig,
 før du har Nikko set.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102404">
+<text id="michaelis2017102404">
 <head>
     <title>Yoshiwara</title>
     <firstline>En Rad af Riksja-Lygter</firstline>
@@ -914,6 +919,7 @@ før du har Nikko set.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 En Rad af Riksja-Lygter
 ind gennem Natten flygter
 som Ild, der gnistrer bort.
@@ -1219,10 +1225,11 @@ af Finhed uden Lige,
 som til <i>dit</i> Himmerige
 i dette Bur blev sat
 i Staden uden Nat.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102405">
+<text id="michaelis2017102405">
 <head>
     <title>Landskabshaven</title>
     <firstline>Paa Bjergets Sydskrænt</firstline>
@@ -1230,19 +1237,20 @@ i Staden uden Nat.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-Paa Bjergets Sydskrænt 
+<poetry>
+Paa Bjergets Sydskrænt
 grave vi vil en Landskabshave,
 skønt Jorden fylder næppe
-stort mere end en Skæppe 
+stort mere end en Skæppe
 og knap halvhundred Alen
-den strækker sig i Dalen, 
+den strækker sig i Dalen,
 før den Granitten naar.
 
 Lysgrønne Ørnebregner
 ned over Klippen regner,
 og Stenene er vaade
 af tynde Vandfaldstraade
-som Spind af sølvhvidt Haar. 
+som Spind af sølvhvidt Haar.
 Om Stier, aldrig traadte,
 op til en Tufstens Grotte
 
@@ -1252,23 +1260,23 @@ Et Svaj af Bambusplanter
 gror tæt langs Dalens Kanter
 og lokker Spurv og Finke.
 
-En lille Dam kan blinke 
+En lille Dam kan blinke
 maskeret som en Sø
 blandt alenhøje Klipper
 i afstemt Perspektiv.
 Og fra en Lysthus-Celle
 hen ad en mosset Helle
 blandt Lotusgrønt og Siv
-tre korte Skridt man tripper 
-ud til en bitte 0,
+tre korte Skridt man tripper
+ud til en bitte Ø,
 hvor Hængepile daske
-og smaa Skildpadder smaske 
+og smaa Skildpadder smaske
 i Luften efter Myg.
 
-Paa Øen staar man tryg 
+Paa Øen staar man tryg
 og ser paa Kiselstene,
-som Søen skylled rene, 
-og ser en Sten-Lanterne 
+som Søen skylled rene,
+og ser en Sten-Lanterne
 fortone i det fjerne
 og to Pagoder smaa
 i Horisonten staa.
@@ -1279,14 +1287,14 @@ og tungt sig taarner Sandet:
 et Øde vildsomt dannet
 — en Ørken af et Læs.
 Jeg sænker mine Øjne
-og ser kun Sandets nøgne 
+og ser kun Sandets nøgne
 og trøstesløse Hvidt.
-Jeg hører Sandets Knasen 
+Jeg hører Sandets Knasen
 og naar igen Oasen
 i tvende korte Skridt.
-Her ser jeg høje Lønne 
-med findelt Løv sig grønne 
-omkring den gamle Rønne, 
+Her ser jeg høje Lønne
+med findelt Løv sig grønne
+omkring den gamle Rønne,
 hvis Tag er brunet Straa.
 
 Her vil jeg stille staa.
@@ -1294,32 +1302,32 @@ Thi nu er Haven færdig,
 en Landskabskunstner værdig
 og fyldt med Fjæld-Mystik.
 
-Her kan man gaa og drømme 
+Her kan man gaa og drømme
 og føle Himlen strømme
 med Sfærernes Musik.
 Her kan i Pavillonen
 man lytte tyst til Gongen
 fra Kwannon-Templets Indre.
 
-Stort vokser af det mindre, 
-stort kommer af det lille 
+Stort vokser af det mindre,
+stort kommer af det lille
 og Havet af en Kilde:
 Her er det godt at gaa,
-og her er godt at dvæle 
+og her er godt at dvæle
 for Eneboersjæle,
 der elsker at erindre
 og stræber at forstaa
 — i høj og hellig Glæde.
 
 Her er et Aftensæde,
-hvor højt mod Himlens Blaanen 
+hvor højt mod Himlens Blaanen
 man kan betragte Maanen.
 Og her en løvgemt Vraa,
 hvor man de stille Fiske
 ved Nat kan høre hviske
 blandt Nøkkeroser blaa.
 
-De tyste Timer gaa — 
+De tyste Timer gaa —
 o lær dog at forstaa:
 En Verden sluttet inde
 som i en Nøddeskal
@@ -1329,24 +1337,25 @@ om Fjæld og Fossefald
 i Havens lille Bur
 — hvor Træerne kan lytte
 til mine Tankers Fred
-— og jeg min Gang kan knytte 
+— og jeg min Gang kan knytte
 til Evighedens Fjed.
 
-En Dværgfyrr, grøn af Sommer, 
+En Dværgfyrr, grøn af Sommer,
 i Urtepotten staar:
-Den maaler femten Tommer, 
+Den maaler femten Tommer,
 men tæller hundred Aar.
 Den strækker sine Grene,
-dens Stamme skønt sig krøger, 
+dens Stamme skønt sig krøger,
 den Himmellyset søger,
-fuldkommengjort alene 
+fuldkommengjort alene
 i sine spinkle Maal
 
 - et Skovtræ i en Skaal.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102406">
+<text id="michaelis2017102406">
 <head>
     <title>De flyvende Karper</title>
     <firstline>Mild Sake-Vin jeg drak i</firstline>
@@ -1354,95 +1363,96 @@ i sine spinkle Maal
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-Mild Sake-Vin jeg drak i 
+<poetry>
+Mild Sake-Vin jeg drak i
 det skønne Nagasaki
-og stopped fin Tobak i 
+og stopped fin Tobak i
 min Pibes lille Skal.
-Fra Bronzehest-Terrassen 
-jeg stirred over Massen 
+Fra Bronzehest-Terrassen
+jeg stirred over Massen
 af graa og lave Tage,
 der stolpebaarne stage
 sig op mod Fjældets Fald.
 
-Dybt nede Havet glimter, 
+Dybt nede Havet glimter,
 og hvide Panserskibe
-i Solen kviksølv-flimter. 
-Og Dampbarkasser pibe 
-og Fisker-Djunker sejle; 
-Synsranden skaaret drager 
+i Solen kviksølv-flimter.
+Og Dampbarkasser pibe
+og Fisker-Djunker sejle;
+Synsranden skaaret drager
 staalblaa sin Klingerand.
 
-Rismarker under Vand, 
+Rismarker under Vand,
 hvidblinkende som Spejle,
-med Plantevimpler flager 
+med Plantevimpler flager
 imellem Digers Ler.
 Og kuberunde Høje
-sig kupler for mit Øje, 
-og Bambusskove vaje 
-og Sagopalmers Fjer. 
+sig kupler for mit Øje,
+og Bambusskove vaje
+og Sagopalmers Fjer.
 Og Fyrretrær dreje
 sig, knækt i Zigzag-Knær.
 
-Jeg aander Løvets Hvislen 
+Jeg aander Løvets Hvislen
 fra mørke Kamfertrær,
-jeg aander Vandets Duften 
-fra hundred Kildevælds 
+jeg aander Vandets Duften
+fra hundred Kildevælds
 balsamisk blide Rislen.
-Hvor herligt stryger Luften 
-fra Bugten højt til Fjælds, 
+Hvor herligt stryger Luften
+fra Bugten højt til Fjælds,
 som svulmed selve Havet
-til Vejrs i denne Time, 
+til Vejrs i denne Time,
 som stod en Bølgedønning,
 som stod en Fiskestime
 hen over Tag og Mønning.
 
-Ja, se dog: Alle Huse 
+Ja, se dog: Alle Huse
 har oprejst slanke Master
-— et Fiskevod de trak i 
+— et Fiskevod de trak i
 det ganske Nagasaki,
-og Fisk som i en Ruse 
+og Fisk som i en Ruse
 hen over Byen bruse,
 for Vindens salte Strøm.
 En Fiskestime haster
-med Sus som Æolsharper 
-hen over Tag og Mønning 
-for Vug af Vindens Dønning 
+med Sus som Æolsharper
+hen over Tag og Mønning
+for Vug af Vindens Dønning
 — en eventyrlig Drøm.
-Aa, se dog, det er Karper, 
+Aa, se dog, det er Karper,
 som bovner over Byen
 — et højt og herligt Syn!
 
 Ja, det er Japans Fædre,
-ja, det er Japans Mødre, 
+ja, det er Japans Mødre,
 som deres Sønner hædre
-— og Søstre deres Brødre 
+— og Søstre deres Brødre
 og Kvinder deres Mænd.
 De fejrer Foraarsfesten
-med Karper hejst i Blæsten 
+med Karper hejst i Blæsten
 højt paa en Fanestang.
 
 Hør deres stolte Sang:
-Se, disse store Karper 
+Se, disse store Karper
 forkynde skal som Harper,
-at dette Hus har Sønner, 
-som løfter Slægtens Arv, 
-at dette Hus har Sønner, 
+at dette Hus har Sønner,
+som løfter Slægtens Arv,
+at dette Hus har Sønner,
 hvis tapre Hjerter skønner
 paa Fædrelandets Tarv.
 
-For hver en Søn, vi ejer, 
-os varsles større Sejer. 
-Vi hejser ham en Karpe 
+For hver en Søn, vi ejer,
+os varsles større Sejer.
+Vi hejser ham en Karpe
 i Dag til Pryd og Sir
 af silkesejgt Papir.
 Vi maler Øjne, Finner,
 saa de i Solen skinner,
-vi bygger Svælg og Gæller, 
+vi bygger Svælg og Gæller,
 saa de i Luften smælder.
 
-Og er han voksen rigtig, 
+Og er han voksen rigtig,
 af Alder værnepligtig,
-vi rejser ham i Toppen 
+vi rejser ham i Toppen
 af Bambus-Løv en Dusk.
 
 Se opad, Dreng, og husk:
@@ -1451,13 +1461,14 @@ i uforfærdet Trodsen
 at vandre <i>opad</i> Fossen
 — det er en Karpes Kald.
 
-Og hver af Japans Sønner 
-i Dødsforagt og Trodsen 
+Og hver af Japans Sønner
+i Dødsforagt og Trodsen
 en Karpe ligne skal!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102407">
+<text id="michaelis2017102407">
 <head>
     <title>Fugleburene</title>
     <firstline>Pa spidse Klove tripper gennem Støvet</firstline>
@@ -1465,64 +1476,65 @@ en Karpe ligne skal!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Pa spidse Klove tripper gennem Støvet
 Kineserinder henad Pekings Gader,
-,,de gyldne Liljer'' stolprer støt og øvet 
+,,de gyldne Liljer'' stolprer støt og øvet
 og Trekant-Spor som Raadyr efterlader.
 
-Guldblomster vipper i det sorte Haar, 
+Guldblomster vipper i det sorte Haar,
 og Trøjen glimter af Libelle-Silke,
-et lysblaat Bændel tæt til Anklen slaar 
+et lysblaat Bændel tæt til Anklen slaar
 de hvide Bukser om de spidse Stilke.
 
-Dér kører Mandarinen i Karét
+Dér kører Mandarinen i Karét
 med Visdomsknappen, han kan aldrig tabe;
 han smiler som en selvbevidst Profet
 og ser paa mig som paa en fremmed Abe.
 
-Forriderne med lange Svøber piske 
-de smaa mongolske Heste i Galop. 
-Guldskilte dingler foran alle Diske, 
+Forriderne med lange Svøber piske
+de smaa mongolske Heste i Galop.
+Guldskilte dingler foran alle Diske,
 med Kugler regnes i hver lille Shop.
 
 Se, unge Mænd i Riksja-Karriol
-med Tænkerpanden bleg og højtbarberet, 
+med Tænkerpanden bleg og højtbarberet,
 af Viften skærmet mod den skarpe Sol,
 i Luften stirrer filosof-blaseret.
 
-Mantsjuer, fede, med Fuldmaanetræk, 
-højt teatralske som i Helteroller, 
-igennem Snavset skrider værdigt væk 
+Mantsjuer, fede, med Fuldmaanetræk,
+højt teatralske som i Helteroller,
+igennem Snavset skrider værdigt væk
 og med Foragt en Evropæer skolder.
 
 Filtstøviet Politi med Stave staar,
 en Messing-Sol paa deres Straahat spiller.
-Med Hagebaand og stor Kapothat gaar 
+Med Hagebaand og stor Kapothat gaar
 Studenterne med store runde Briller.
 
 Se Tiggerlavets Oldermand, behængt
-med Laser som en Snavsets Hjemmeføding, 
+med Laser som en Snavsets Hjemmeføding,
 i Mudder døbt, med Uhumskhed befængt,
 en Kejser med Tribut fra hver en Mødding.
 
 Her maatte Skidtet muges med en Skovl
-— i tykke Kager kan det Færdslen stoppe. 
-Der staar en Stank og Os af Sved og Svovl 
+— i tykke Kager kan det Færdslen stoppe.
+Der staar en Stank og Os af Sved og Svovl
 fra dette Mylr af nøgne Overkroppe.
 
 Se, Spisepinde stanger Ris i Mag.
-Blandt sorte Svin forpjusket Fjerkræ kagler. 
-En Rejsevogn med Bomulds-Tøndetag 
+Blandt sorte Svin forpjusket Fjerkræ kagler.
+En Rejsevogn med Bomulds-Tøndetag
 skumpler paa Hjul af Middelalders-Nagler.
 
 Det gnistrer fra Pailu’ers Teglglassur,
-og Fæstningstaarne højt med krumme Tage 
+og Fæstningstaarne højt med krumme Tage
 paa Muren rejser deres Stokværk-Bur,
 dæmonbeskyttede af Hund og Drage.
 
-Mur overalt — Mur om Tartarerstaden, 
+Mur overalt — Mur om Tartarerstaden,
 og Kejserstaden skilt fra den paany,
-og Aandemure stillet midt paa Gaden, 
+og Aandemure stillet midt paa Gaden,
 og Mur, som hegner den forbudte By.
 
 Et Pavketaarn Mongolerne har bygt
@@ -1532,20 +1544,20 @@ paa Pavkerne, der aldrig mer skal buldre.
 
 Se, Glimt af Trær i den forbudte By
 mod Tagenes de endeløse Masser.
-En hvid Pagode stiger højt mod Sky; 
+En hvid Pagode stiger højt mod Sky;
 blandt Bjerge skimtes Sommerens Paladser.
 
 I uforfalsket Tusindaars-Kultur
-staar Livets gamle Sang fra alle Munde. 
+staar Livets gamle Sang fra alle Munde.
 Kineseren gaar om med Fuglebur,
 som vore Damer gaa med Skødehunde.
 
-Højt over Peking hvide Duer synger, 
+Højt over Peking hvide Duer synger,
 i Solen blinker deres Vingekor.
-Her sælges Falke, samlede i Klynger; 
+Her sælges Falke, samlede i Klynger;
 Børnene leger med en Spurv i Snor.
 
-Med Fuglesang man Stemningen forstærker: 
+Med Fuglesang man Stemningen forstærker:
 Naar Venner mødes, hilser de med dem
 og lytter glade til hinandens Lærker
 og holder henrykt Nattergalen frem.
@@ -1554,10 +1566,11 @@ Til Gensynsstævne og til Afskedsgilde
 man bringer med sin bedste Sang-Dressur:
 Da slaar det lille Dyr sin bedste Trille,
 og højt man hilser med sit Fuglebur.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102408">
+<text id="michaelis2017102408">
 <head>
     <title>Himlens Tempel</title>
     <firstline>Kina har ingen Kejser mer</firstline>
@@ -1565,45 +1578,46 @@ og højt man hilser med sit Fuglebur.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-Kina har ingen Kejser mer, 
+<poetry>
+Kina har ingen Kejser mer,
 og Himlen ingen Søn.
 Og ingen mer de Telte blaa
 i ,,Jordens Midtpunkt'' op skal slaa
-— mod Himlens aabne Kuppel 
+— mod Himlens aabne Kuppel
 er sendt den sidste Bøn.
 Kina har ingen Kejser mer,
 og Himlen ingen Søn.
 
-Bag okkerrøde Mure 
+Bag okkerrøde Mure
 Livstrær i Urskov gror.
-Ugræsset vajer højt og tykt, 
-Tomheden hviler tempeltrygt 
-paa hvide Sten-Terrasser, 
+Ugræsset vajer højt og tykt,
+Tomheden hviler tempeltrygt
+paa hvide Sten-Terrasser,
 hvor ingen sætter Spor.
 Bag okkerrøde Mure
 Livstrær i Urskov gror.
 
 De otte Kejser-Aner
 er stængt i deres Hus,
-de sover under Dødens Segl 
+de sover under Dødens Segl
 og under Tag af havblaa Tegl.
-Igennem Purpur-Tralværk 
+Igennem Purpur-Tralværk
 gaar Evighedens Sus.
-De otte Kejser-Aner 
+De otte Kejser-Aner
 er glemt i deres Hus.
 
-Nord-Altret dybblaat taarner 
-tre Tag mod Himlens Skyr. 
-Et Tusindben var kravlet op 
+Nord-Altret dybblaat taarner
+tre Tag mod Himlens Skyr.
+Et Tusindben var kravlet op
 til Kuplens gyldne Kugletop
-— da nedfor Himmellynet 
-og brændte Taarn og Dyr. 
-Og renset steg det atter 
+— da nedfor Himmellynet
+og brændte Taarn og Dyr.
+Og renset steg det atter
 dybblaat mod Himlens Skyr.
 
 Her rejses Himlens Alter
 platformhøjt over Trin
-hvor Marmor-Rækværk Rundkres slog 
+hvor Marmor-Rækværk Rundkres slog
 af Drageslyng blandt Skyers Tog.
 Paa tre Terrasser Altret
 er rejst for Landet Sin.
@@ -1612,9 +1626,9 @@ platformhøjt over Trin.
 
 Men Altret selv usynligt
 maa søges i det Blaa:
-Er kun det rene Himmelhvælv, 
+Er kun det rene Himmelhvælv,
 der hviler evigt i sig selv,
-mens Maane, Sol og Stjerner 
+mens Maane, Sol og Stjerner
 som Kuppelkerter staa.
 Thi Altret selv usynligt
 maa søges i det Blaa.
@@ -1622,15 +1636,16 @@ maa søges i det Blaa.
 Kina har ingen Kejser mer,
 og Himlen ingen Søn,
 der knæle kan i Bøn for Regn,
-for Høst og gode Himmeltegn 
+for Høst og gode Himmeltegn
 — mod Himlens aabne Kuppel
-er sendt den sidste Bøn. 
-Kina har ingen Kejser mer, 
+er sendt den sidste Bøn.
+Kina har ingen Kejser mer,
 og Himlen ingen Søn.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102409">
+<text id="michaelis2017102409">
 <head>
     <title>Dynastiet Ming</title>
     <firstline>Med en Pomp, som kun tilkommer Helten</firstline>
@@ -1638,10 +1653,11 @@ og Himlen ingen Søn.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Med en Pomp, som kun tilkommer Helten,
 Dynastiet Ming er draget i Felten.
 
-Mellem Rækker med opplantet Værge 
+Mellem Rækker med opplantet Værge
 drog de ud til de vestlige Bjerge.
 
 Mens det himmelske Folk gjorde Front,
@@ -1653,13 +1669,13 @@ da de blinkende stævned mod Valen;
 da Himlens uforlignelige Sønner
 brød op under Trommer og Bønner.
 
-Med et Følge, som tilkommer Helte, 
+Med et Følge, som tilkommer Helte,
 drog de ud til de evige Telte.
 
-Iblandt Bønder, som hakker og tærsker, 
+Iblandt Bønder, som hakker og tærsker,
 drog i Marken de, Hersker efter Hersker.
 
-Gennem Porte og Marmor-Pailuer 
+Gennem Porte og Marmor-Pailuer
 en Kohorte af kejserlige Buer.
 
 Over Kinas de guleste Floder
@@ -1668,16 +1684,16 @@ gik de bort til de gyldne Pagoder.
 Gennem Ørkner og lerklinte Byer
 til et Kloster for smaragdgrønne Skyer.
 
-Ud mod Bjergsneens evige Smelten 
+Ud mod Bjergsneens evige Smelten
 Dynastiet Ming er draget i Felten.
 
-Se, en Hærvej blev lagt over Sletten 
+Se, en Hærvej blev lagt over Sletten
 for det langsomme Tog af de Tretten,
 
-der drog ud imod Bjergenes Ring, 
+der drog ud imod Bjergenes Ring,
 Dynastiet — Ming efter Ming.
 
-De blev baarne i hvide Palankiner 
+De blev baarne i hvide Palankiner
 gennem Rækker af høje Mandariner.
 
 Mellem Hattenes Ædelstensknapper
@@ -1689,16 +1705,16 @@ med den Pomp, som kun tilkommer Helten.
 Gennem Rader af stirrende Dyr
 drog de bort til de blomstrende Skyr.
 
-Mellem Vagter i prangende Dragter 
+Mellem Vagter i prangende Dragter
 til Møde med de øverste Magter.
 
-Over Sletten endnu staar at se 
-hele Følgets forstenede Allé.
+Over Sletten endnu staar at se
+hele Følgets forstenede Allé.
 
 To Geledder af tavse Kolosser
 — Skildvagter, som Tiderne trodser,
 
-sat til Pomp for de himmelske Helte, 
+sat til Pomp for de himmelske Helte,
 der drog ud til de evige Telte.
 
 Se de vilde fantastiske Løver,
@@ -1710,45 +1726,46 @@ uden Glam i de stentunge Munde.
 Kamelernes puklede Blokke
 — intet Bud kan af Hvilen dem rokke.
 
-Se, tungsindige Kæmpe-Elefanter 
+Se, tungsindige Kæmpe-Elefanter
 deres Snabler i Stengrunden planter
 
 til Ære for de henfarne Helte,
 der gik ind i de himmelblaa Telte.
 
-Og i Spidsen, som Hærtogets Blænkere, 
+Og i Spidsen, som Hærtogets Blænkere,
 fire tavse og stenhugne Tænkere
 
 ser endnu Dynastiet passere
 af de Ming’er, som ikke er mere.
 
-Under Bjerget i lukkede Lunde 
+Under Bjerget i lukkede Lunde
 efter Livsslaget stille de blunde.
 
-De, som Riget bar paa Almagtens Skuldre, 
+De, som Riget bar paa Almagtens Skuldre,
 bag de tommeste Gravhaller smulre.
 
-Her huserer kun Firben og Gekko, 
+Her huserer kun Firben og Gekko,
 og kun Græshoppe-Sang laver Ekko.
 
-Og i Templerne Æsler og Geder 
+Og i Templerne Æsler og Geder
 efter Stald mellem Søjlerne leder.
 
 Her er stille og øde af Gru
 — ak, her hviler den store Yung-lu.
 
-Trindt i Skjul under Bjergenes Ring 
+Trindt i Skjul under Bjergenes Ring
 sover Kejserne — Ming efter Ming.
 
 Dynastiets de henfarne Helte
 gik til Ro i de himmelblaa Telte.
 
 Over Sletten endnu staar at se
-hele Følgets forstenede Allé.
+hele Følgets forstenede Allé.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102410">
+<text id="michaelis2017102410">
 <head>
     <title>Nankov-Passet</title>
     <firstline>Jeg har vandret paa den evige Mur</firstline>
@@ -1756,58 +1773,59 @@ hele Følgets forstenede Allé.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg har vandret paa den evige Mur,
 I Vægtergangen om det himmelske Rige
-— snart ad Klippen den stejler som en Stige, 
+— snart ad Klippen den stejler som en Stige,
 snart den styrter i den stenede Ur.
 
-Som en Murkrone udelt og hel 
+Som en Murkrone udelt og hel
 over Bakke og Dal den sig bukler
-og bespænder de højeste Pukler 
+og bespænder de højeste Pukler
 af Bjergkædens hvilende Kamel.
 
-Jeg har krøbet paa Muren som en Myg, 
+Jeg har krøbet paa Muren som en Myg,
 jeg har kravlet som en vingeløs Bille,
 der kan gemme sig bort i en Rille
 af denne Kam over Bjergenes Ryg.
 
 Bastioner for hvert hundrede Skridt
-lig Kykloper ser ud mod det fjerne, 
-men kun henfarne Skygger dem værne 
+lig Kykloper ser ud mod det fjerne,
+men kun henfarne Skygger dem værne
 af de Horder, som i Græsset har bidt.
 
 Mod Tartarernes hærgende Hær
-blev den bygt over Hundreder af Mile 
+blev den bygt over Hundreder af Mile
 som et Skjold mod de fygende Pile
 og mod Stenenes haglende Vejr.
 
-Jeg kan høre de hylende Glam 
+Jeg kan høre de hylende Glam
 af Mantsjuer, der kastes tilbage
-med et Hug af den himmelske Drage, 
+med et Hug af den himmelske Drage,
 naar den stritted sin skællede Kam.
 
-Millioner af Sten lagt paa Sten 
+Millioner af Sten lagt paa Sten
 Myriader af Liv maatte sluge
 for at lægges i Fuge ved Fuge
 — nu er glemt de, hver evige En.
 
 Kun en Port og et Pas, som et Bor
-gennem Klipperne ud maatte bane 
-— og en slentrende lang Karavane 
+gennem Klipperne ud maatte bane
+— og en slentrende lang Karavane
 gennem Passet gaar ud imod Nord.
 
 Et uendeligt Taalmod at se:
 Over Asiens uhyre Sletter
-Fod for Fod den i Maaneder 
+Fod for Fod den i Maaneder
 sætter for til Moskov at bringe sin The.
 
-Gennem Passet de mylrende Faar 
+Gennem Passet de mylrende Faar
 søger ud til de græsrige Vange,
 og det himmelske Folk som en Fange
 gennem Porten paa Vandringer
 
-Aa, besæt denne vilde Natur 
-med Soldater i pansrede Rader 
+Aa, besæt denne vilde Natur
+med Soldater i pansrede Rader
 — alle Kinas utalte Myriader
 kunde staa paa den evige Mur.
 
@@ -1816,7 +1834,7 @@ som en blodig og raa Forurening
 — denne Fæstning blev kun en Forstening,
 og den evige Mur ligger Lig.
 
-Aldrig mer skal her rasle af Staal, 
+Aldrig mer skal her rasle af Staal,
 aldrig mer skal her hvine med Buer
 — paa hver Mark ligger fredede Tuer,
 hvor de Døde har naaet deres Maal.
@@ -1831,19 +1849,20 @@ som et Minde om Sjæle, der trode
 paa et Rige saa lukt som en Klode
 og paa Fred i et afspærret Bur.
 
-Og naar Jorden engang bliver lam 
-og gaar ind til den evige Hvile, 
+Og naar Jorden engang bliver lam
+og gaar ind til den evige Hvile,
 taarnet op over Hundreder af Mile
 skal den staa som en stivfrossen Kam.
 
 Og en Gæst paa den evige Mur
 fra en Stjerne dens Mening vil ane:
-Over Bjergenes rutsjende Bane 
+Over Bjergenes rutsjende Bane
 vil han køre en svimlende Tur.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102411">
+<text id="michaelis2017102411">
 <head>
     <title>Kæmpekløften Grand Canyon i Arizona</title>
     <toctitle>Kæmpekløften Grand Canyon i Arizona</toctitle>
@@ -1856,47 +1875,48 @@ vil han køre en svimlende Tur.
     <keywords>terziner</keywords>
 </head>
 <body>
+<poetry>
     <nonum><right><small>Jeg saae Dine Troner,</small></right></nonum>
 <nonum><right><small>O Almagt! — og stirrede længe.</small></right></nonum>
 <nonum><right><small><i>Johannes Ewald.</i></small></right></nonum>
 
-Hvem tog mig op paa denne stejle Rand, 
+Hvem tog mig op paa denne stejle Rand,
 hvor røde Tinder af et Ørkenøde
 optaarner tusind Templer tændt i Brand?
 
-Hvor Klippetroner tyst i Solen gløde, 
-Trinpyramider, som Naturen skaber 
+Hvor Klippetroner tyst i Solen gløde,
+Trinpyramider, som Naturen skaber
 til Ventested for alle Jordens Døde.
 
-Se, Kloden til sit Hjertekammer gaber, 
-et Saar i Skorpen skar sit Kæmpesnit, 
+Se, Kloden til sit Hjertekammer gaber,
+et Saar i Skorpen skar sit Kæmpesnit,
 hvis Blodrand sig i Horisonten taber.
 
 Inferno, ubefolket milevidt,
-men Sjæle-hjemsøgt, set i Drøm af Dante, 
+men Sjæle-hjemsøgt, set i Drøm af Dante,
 hvis Seerblik mod denne Kløft har stridt.
 
-Solbaalene med svovlblaa Luer kante 
-bundløse Dybder, hvor usynligt stimle 
+Solbaalene med svovlblaa Luer kante
+bundløse Dybder, hvor usynligt stimle
 de Pinselsdømte og de Rædselsvante.
 
-Et Svælg, hvor Jordens Ørne bliver svimle 
+Et Svælg, hvor Jordens Ørne bliver svimle
 og Vingerne til Overfart kun spændes
 af Erkeengle fra de høje Himle.
 
-Et Skaberværksted, som af Solen tændes 
-hver Dag i Blus fra tusind tavse Esser, 
+Et Skaberværksted, som af Solen tændes
+hver Dag i Blus fra tusind tavse Esser,
 mens Jordens Lag keramisk sammenbrændes
 
 af Fortidshaves Skaldyr, der sig presser
 til Kalk og Marmor med Krystalglassur,
 og miledybt i Bunden Floden messer
 
-imellem Mur af Gnejs i Vandfalds-Dur. 
+imellem Mur af Gnejs i Vandfalds-Dur.
 — Ukendte Kilder i mit Hjerte bløde:
 Fald ned og tilbed! — Evige Natur,
 
-hvem tog mig op i dette Ørkenøde 
+hvem tog mig op i dette Ørkenøde
 og stilled mig paa denne stejle Rand
 og lod mig selve Skaberkraften møde
 
@@ -1912,7 +1932,7 @@ igennem Luften vingebaaret piber
 paa Flugt mod Evighedens Demantfjæld
 — dèr sætter den sig ned og Næbbet sliber.
 
-Kun for hvert Tusindaar, der gaar paa Hæld, 
+Kun for hvert Tusindaar, der gaar paa Hæld,
 den gæster Bjergets Demant-Pyramider,
 saa drikker den af Tidens Vandfaldsvæld
 
@@ -1937,30 +1957,30 @@ den syvende Dag og ser et fuldbragt Værk,
 der endeløst til alle Sider smiler?
 
 Her troner han i Lysets Sejerssærk:
-Se, alt er godt! Fuldkommen Verdensnormen 
+Se, alt er godt! Fuldkommen Verdensnormen
 gled frem og størknede sig tæt og stærk.
 
 Hans Skaberhænder var jo Støbeformen,
-der smelted Bjerge ud i tunge Masser, 
+der smelted Bjerge ud i tunge Masser,
 mens Have syded under Jordskælvsstormen.
 
 Vildt taarner sig de vældige Terrasser;
 paa brede Nakker bærer Fjæld-Atlanter
 i Solen frem de luende Paladser.
 
-Se, alt er godt! Naturens Kraft-Giganter 
-har foldet Vingerne som blaa Keruber, 
+Se, alt er godt! Naturens Kraft-Giganter
+har foldet Vingerne som blaa Keruber,
 der hviler sig paa Kløftens Tusindkanter.
 
 Hør denne Hymne: Op fra Dybets Gruber
 til Evighedens Orgel magtfuldt bruser
 Tavshedens Sang fra Millioner Struber:
 
-Se, alt er saare godt! Syndflodens Sluser 
+Se, alt er saare godt! Syndflodens Sluser
 forlængst blev lukt i dette Kæmpesvælg,
 og intet Jordskælv længer Freden knuser.
 
-Storværket herligt steg af Jordens Bælg. 
+Storværket herligt steg af Jordens Bælg.
 — Se, over Kløften evig Søndag skinner,
 og intet bryder denne Arbejdshelg.
 
@@ -1972,7 +1992,7 @@ Seks Dages Værk — o stærke Skaberhaand,
 som formed dette Fabellands Profiler,
 hvad er vel Tiden for din evige Aand?
 
-Se, her er Stedet, hvor et Nu du hviler 
+Se, her er Stedet, hvor et Nu du hviler
 den syvende Dag og ser et fuldbragt Værk,
 der endeløst til alle Sider smiler.
 
@@ -1980,40 +2000,40 @@ Her troner du i Lysets Sejerssærk.
 
 ----
 
-Frem gennem Kløftens Bund af Urgranit 
+Frem gennem Kløftens Bund af Urgranit
 tungt Colorado ætser sig sit Leje
 og har sig Trapper i Basalten slidt.
 
-I Malstrømshvirvler sig dens Bølger dreje, 
+I Malstrømshvirvler sig dens Bølger dreje,
 og ingen Charon tør i Kano ro
 ad denne Stykses vilde Vandfalds-Veje.
 
-Den store Aand i evig Rædselsro 
-henruger over Flodens skumgraa Baner, 
+Den store Aand i evig Rædselsro
+henruger over Flodens skumgraa Baner,
 som aldrig skal bespændes af en Bro.
 
 Endnu jo voved ingen Indianer
 at følge Strømmens bratte Katarakter
 bort mod de fjerne store Oceaner.
 
-Her hersker Underverdnens Genfærds-Magter, 
+Her hersker Underverdnens Genfærds-Magter,
 Dæmoner mylre, klamme Taagehænder
 med Skumvaadt slaa den dristige Betragter.
 
-Se, Floden viser sine Kæmpetænder, 
+Se, Floden viser sine Kæmpetænder,
 der Hundreder af Mile Gnejsen aad
 og søndermalet den mod Havet sender.
 
 <i>Den store Aand</i> — ja, se den store Daad!
-— Rødhuderne begreb Alkraftens Herre 
+— Rødhuderne begreb Alkraftens Herre
 og brast ved Synet i en ydmyg Graad.
 
-... Selv steg jeg ned i Dybderne, 
+... Selv steg jeg ned i Dybderne,
 som spærre forgæves Colorados vilde Kog,
 der raser fremad lig en Tordenkærre.
 
-Et Nu jeg lytted til dens Vandes Sprog, 
-der tusindfoldigt gennem Kløften toner. 
+Et Nu jeg lytted til dens Vandes Sprog,
+der tusindfoldigt gennem Kløften toner.
 Et Nu jeg saa det store Skyggetog
 
 af Tidens evigt tabte Legioner.
@@ -2024,19 +2044,19 @@ Pa hvem mon venter disse Kæmpetroner,
 der Dag for Dag i evig Solglød raster,
 døbt efter Guder eller Faraoner?
 
-Se, Buddha over Cheops Skygge kaster, 
+Se, Buddha over Cheops Skygge kaster,
 Vishnu og Siva vil Kongfutse favne,
 ,,Lysenglens Sti'' sig snor mod Zoroaster.
 
-Et Panorama, højtidssmykt med Navne 
-og navnløst dog som alt det Pan-enorme, 
+Et Panorama, højtidssmykt med Navne
+og navnløst dog som alt det Pan-enorme,
 der evigt maa sin rette Tolkning savne.
 
-Titaner, som vil Himmelhvælvet storme, 
+Titaner, som vil Himmelhvælvet storme,
 men atter i en Afgrund lænkebastet
 Omvæltningsplanerne paany maa forme.
 
-Forviisningssted for Aander, som formasted 
+Forviisningssted for Aander, som formasted
 sig til at gribe det ugribelige,
 men tungt til Jord blev af den Høje kastet.
 
@@ -2044,15 +2064,15 @@ Du Kaos-blaa, unævnelige Rige,
 din Tronstol ingen Dødelig besætter,
 kun til din Skammel Mennesker kan stige.
 
-Hver Morgen dukker op af Dybets Nætter 
-din Rad af Troner som til Mønstring stillet, 
+Hver Morgen dukker op af Dybets Nætter
+din Rad af Troner som til Mønstring stillet,
 et soltændt Spejl med tusinde Facetter,
 
 der kaster kun tilbage Solens Billed
-— af Lysets Orgelklange gennemskælvet 
+— af Lysets Orgelklange gennemskælvet
 fra Top til Top genstraales Farvespillet.
 
-Violblaat sænker ned sig Himmelhvælvet 
+Violblaat sænker ned sig Himmelhvælvet
 i denne stærke Solbrands Purpurdrøm
 — Lys-Paradiset, der vil favne Helved.
 
@@ -2060,7 +2080,7 @@ Apokalypsens vilde Feberdrøm
 — hør denne Stilhed, som fra Kløften raaber:
 Himlenes Herre, stig herned og døm!
 
-Se, disse Bjerge favner dig som Kaaber 
+Se, disse Bjerge favner dig som Kaaber
 og former dig dit høje Dommersæde.
 Og Aanderne, som paa Forløsning haaber,
 
@@ -2069,78 +2089,79 @@ Se, Klipperne har taarnet Kalk-Tribuner
 til dine Erkeengles store Kæde.
 
 Her blotted Tiden alle Jordens Runer
-— din Stol er bygt af tusind Syndflodslag. 
+— din Stol er bygt af tusind Syndflodslag.
 Befal da nu at støde i Basuner!
 
-Vi venter, Herre, paa din Dommedag! 
+Vi venter, Herre, paa din Dommedag!
 - - - Da flytter Solen sig en lille Tomme,
 og alt er tyst som efter Klokkeslag.
 
-Da svares der: Er Evigheden omme 
+Da svares der: Er Evigheden omme
 og jeg forgæves efter Livet lytter,
 da først er Tiden til at fælde Domme.
 
-Kender <i>du</i> Kraften, som usynligt 
+Kender <i>du</i> Kraften, som usynligt
 knytter Udviklingstraaden mellem Stort og Smaat?
 Kender <i>du</i> Kløftens første Troglodytter,
 
-de Lag af Spor, som Tiderne har traadt? 
+de Lag af Spor, som Tiderne har traadt?
 Nej, har du Tid at vente, vil jeg røbe,
 naar alting endelig er saare godt.
 
-Endnu i Millioner Aar skal løbe 
-Flodlejerne af Himmelregnen fulde; 
+Endnu i Millioner Aar skal løbe
+Flodlejerne af Himmelregnen fulde;
 utalte Sekler skal endnu jeg støbe
 
-paa disse Bjerge, før en evig Kulde 
+paa disse Bjerge, før en evig Kulde
 skal størkne deres rindende Glassur
 og Havet islagt høre op at rulle.
 
-Raab da paa Dommedag og stød i Lur, 
-thi da er Livets Kilde død og brusten 
+Raab da paa Dommedag og stød i Lur,
+thi da er Livets Kilde død og brusten
 og Pulsen standset i en slukt Natur.
 
 Da glider Solens Flamme mat og rusten
-hen over Kløftens Grav, hvor Sjælen hviler 
+hen over Kløftens Grav, hvor Sjælen hviler
 af denne Jord, som flyver glemt og gusten.
 
-De sidste Mennesker blev som Fossiler 
+De sidste Mennesker blev som Fossiler
 i Skorpen af den visne Klode glemt.
 Til andre Verdner Skaberblikket iler.
 
-Da toner Jorden som et Klokkeklemt 
+Da toner Jorden som et Klokkeklemt
 i Himmelløbets Klode-Symfoni,
 der til et evigt Samspil blev bestemt.
 
 I Altets Kresgang intet er forbi:
-Alt gaar igen — i Livets Hymne blander 
+Alt gaar igen — i Livets Hymne blander
 Døden sin Pavses mørke Melodi.
 
 Alkraften dræber, og Alkraften danner,
-men aldrig slappet selve Kraftens Bue 
+men aldrig slappet selve Kraftens Bue
 skal spændes under Evighedens Banner.
 
-Fra denne Kløft skal ingen Dommer true, 
-men som et Varsel om en evig Pagt 
+Fra denne Kløft skal ingen Dommer true,
+men som et Varsel om en evig Pagt
 Regnbuens hele Ring syvfarvet lue.
 
 Af Universets endeløse Pragt
-en Afglans, smeltet ud i Rosentoner, 
+en Afglans, smeltet ud i Rosentoner,
 en Himmeldrøm er for dit Øje lagt.
 
 Ja, disse Tinder er forladte Troner,
 der om Keruber har engang sig krummet
 med Vingefang som flyvende Æoner.
 
-Er i din Sjæl endnu ej helt forstummet 
+Er i din Sjæl endnu ej helt forstummet
 Genklangen af den Gud, der <i>anes</i> blot
 som Kraftens Strømning gennem Verdensrummet,
 
 bøj Knæ og hvisk: Ja, alt er saare godt.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102412">
+<text id="michaelis2017102412">
 <head>
     <title>Stjerner</title>
     <firstline>Din første lille Stjerne</firstline>
@@ -2148,6 +2169,7 @@ bøj Knæ og hvisk: Ja, alt er saare godt.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Din første lille Stjerne
 sank ikke fra det fjerne
 og ikke fra det høje
@@ -2212,10 +2234,11 @@ At ønsker du din egen
 — saa grib i Mælkevejen
 og vælg en Sol saa klar,
 som ingen andre har.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102413">
+<text id="michaelis2017102413">
 <head>
     <title>Længsel</title>
     <subtitle>(Japansk Motiv)</subtitle>
@@ -2224,6 +2247,7 @@ som ingen andre har.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ak, Aaret fødtes for at ældes tidlig,
 og atter vandre vi i Vaarens Dage,
 men fra min Elsker bar den ikke Budskab
@@ -2238,10 +2262,11 @@ Ak, lig en Sørgepil mit Haar nedsynker,
 naar Mørkningsskyggerne sig triste sænke.
 Se, mine Ærmers hvide Flor er vaadt som Sne
 af Graadens Dryp, der uophørligt stænke.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102414">
+<text id="michaelis2017102414">
 <head>
     <title>Musik</title>
     <subtitle>(Efter Walt Whitman)</subtitle>
@@ -2251,9 +2276,9 @@ af Graadens Dryp, der uophørligt stænke.
     </notes>
     <source pages="98-99"/>
     <quality>korrektur1,kilde,side</quality>
-    <keywords>whitman</keywords>
 </head>
 <body>
+<poetry>
 Orgelpibers Klange, højtidssøde,
 ud fra Kirken fløjted mig i Møde
 Bud fra Kryptens Tusinder af Døde.
@@ -2273,10 +2298,11 @@ om mit Hoved laa de tyst og længe.
 Under Øret hørte jeg dem kime,
 dine Aarer i den tavse Time
 som smaa Klokker for mit Øre kime.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102415">
+<text id="michaelis2017102415">
 <head>
     <title>Honningsang</title>
     <firstline>Den hele Have er en Stad</firstline>
@@ -2284,6 +2310,7 @@ som smaa Klokker for mit Øre kime.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><right><small>Til Georg Høeberg.</small></right></nonum>
 
 Den hele Have er en Stad,
@@ -2321,10 +2348,11 @@ som solskinsfyldte Tene.
 De spandt din Dragt, du Rene,
 og Brud du staar,
 o Vaar.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102416">
+<text id="michaelis2017102416">
 <head>
     <title>Afrodite fra Melos</title>
     <firstline>Hvor du staar, en Tempelstilhed</firstline>
@@ -2333,6 +2361,7 @@ o Vaar.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvor du staar, en Tempelstilhed
 fra dit hvide Legem lyser:
 Ikke du, men din Betragter
@@ -2372,10 +2401,11 @@ Tiden har din Sejersfylde
 kun for begge Arme stynet
 — for at vise os din Midje
 og beskæmme os ved Synet.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102417">
+<text id="michaelis2017102417">
 <head>
     <title>Nordens Athen</title>
     <firstline>Nordens Athen, hvor æstetiske Ugler</firstline>
@@ -2383,6 +2413,7 @@ og beskæmme os ved Synet.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nordens Athen, hvor æstetiske Ugler
 støber i Smug deres Piller og Kugler
 Sladderen snylter som Græs mellem Stene
@@ -2402,10 +2433,11 @@ Hvor kan saa herligt som her man sig sole?
 Hvor findes Mage til Havn og til Mole?
 Libanons Ceder, Monte Pincios Pinje
 — hvad er vel <i>I</i> mod min Bys Langelinje?
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102418">
+<text id="michaelis2017102418">
 <head>
     <title>Thurø</title>
     <firstline>Omkrest af Sejl lig Sommerfugle-Flammer</firstline>
@@ -2414,6 +2446,7 @@ Libanons Ceder, Monte Pincios Pinje
     <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Omkrest af Sejl lig Sommerfugle-Flammer,
 der flagrer over smalle blanke Sund,
 mens hen langs Kysten og i Thurø Bund
@@ -2431,10 +2464,11 @@ her er det godt en Sommernat at sove.
 Her hejste jeg mit glade danske Flag:
 Her fandt jeg Arbejdsfredens trygge Dag
 og Lykken ved sin egen Jord at eje.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102419">
+<text id="michaelis2017102419">
 <head>
     <title>H. C. Andersen</title>
     <firstline>I Fattigmands Slagbænk har du drømt din Barnedrøm</firstline>
@@ -2446,6 +2480,7 @@ og Lykken ved sin egen Jord at eje.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><right><small>2. April 1905.</small></right></nonum>
 I Fattigmands Slagbænk har du drømt din Barnedrøm
 til Banken af en Hammer, der faldt paa Pløk og Søm.
@@ -2457,7 +2492,7 @@ Isblomsterne paa Ruden var din første Billedbog,
 der funkled Eventyret ind i Hjemmets dunkle Krog.
 
 Paa Taget stod en Kasse med Purløg og Persille
-— dér sad du i det Grønne og drømte musestille.
+— dér sad du i det Grønne og drømte musestille.
 
 I Spindehuset hørte du, hvor Skotrokken spandt,
 og lytted til de Sagn, som fra Folkedybet randt.
@@ -2523,10 +2558,11 @@ og Pilene flage langs den rindende Aa.
 
 De første Foraarsblomster skal op af Jorden dukke,
 hvor Tommelise hviled i sin allermindste Vugge.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102420">
+<text id="michaelis2017102420">
 <head>
     <title>Holger Drachmann</title>
     <firstline>Saa kastes dit Legem i Ovnens Slug</firstline>
@@ -2535,6 +2571,7 @@ hvor Tommelise hviled i sin allermindste Vugge.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><right><small>Jan. 1908.</small></right></nonum>
 Saa kastes dit Legem i Ovnens Slug
 at lutres af Flammernes Tunge.
@@ -2630,10 +2667,11 @@ Skaller med Perler skyller mod Kyst
 med Sang bag Konkylierande:
 Havet risler med Drachmanns Røst
 — en Konka fra evige Strande.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102421">
+<text id="michaelis2017102421">
 <head>
     <title>Edvard Blaumüller</title>
     <firstline>Vi sænker vore Øjne for dit blaa</firstline>
@@ -2644,6 +2682,7 @@ Havet risler med Drachmanns Røst
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><right><small>2. Okt. 1911.</small></right></nonum>
 Vi sænker vore Øjne for dit blaa,
 staalblanke Blik. Dit Hjertes Alterflamme
@@ -2688,10 +2727,11 @@ i Tornekransen og din Sjæl husvale.
 Vi sænker vore Øjne for dit blaa,
 staalblanke Blik. Dit Hjertes Alterflamme
 endnu en Gang skal vore Hjerter ramme.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102422">
+<text id="michaelis2017102422">
 <head>
     <title>Herman Bang</title>
     <firstline>Hvad var det, som Hjertet drog?</firstline>
@@ -2703,6 +2743,7 @@ endnu en Gang skal vore Hjerter ramme.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><right><small>29. Jan. 1912.</small></right></nonum>
 Hvad var det, som Hjertet drog?
 Længslerne om Jorden glede,
@@ -2754,11 +2795,12 @@ kæmpende og stærk til Døden.
 I den nye Verdens Øde
 ligger du i Kulden bristet.
 Takken siger dig for sent,
-at <i>nu</i> véd vi, hvad vi misted.
+at <i>nu</i> véd vi, hvad vi misted.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102423">
+<text id="michaelis2017102423">
 <head>
     <title>August Strindberg</title>
     <firstline>Saa sank du træt i Dødens dybe Mulm</firstline>
@@ -2769,6 +2811,7 @@ at <i>nu</i> véd vi, hvad vi misted.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><right><small>14. Maj 1912.</small></right></nonum>
 Saa sank du træt i Dødens dybe Mulm,
 som Evighedens Straaler gennemskinne,
@@ -2798,7 +2841,7 @@ En, som du prøved med din Viljes Magt.
 Du stod og stirred Time efter Time
 og lod din Viljes Klokker — haabløst — kime.
 
-Hvem har som du de Kønnets Kampe kendt, 
+Hvem har som du de Kønnets Kampe kendt,
 der raser evigt mellem Mand og Kvinde?
 O Nag — o Sødme — Rovdyrtag, som binde -
 Skinsygens Vitriol — hvor vildt forbrændt! -
@@ -2818,10 +2861,11 @@ for svimmelsyg at gribe mod Bedraget
 i Længsel efter Glimt af ny Fornuft,
 den Galningefornuft, vi Vanvid kalde,
 fordi den endnu ej er naat til alle.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102424">
+<text id="michaelis2017102424">
 <head>
     <title>Kong Frederik VIII</title>
     <firstline>En lovtro Drot, en kronet Demokrat</firstline>
@@ -2833,6 +2877,7 @@ fordi den endnu ej er naat til alle.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><right><small>14. Maj 1912.</small></right></nonum>
 En lovtro Drot, en kronet Demokrat,
 en Vandrer blandt sit Folk med aabne Hænder,
@@ -2869,10 +2914,11 @@ Det Ekko han med Længsel lytted efter
 fra Folkets Hjerte,
 
                     toner ved hans Død.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102425">
+<text id="michaelis2017102425">
 <head>
     <title>Georg Brandes</title>
     <firstline>Endnu du vaager, Mester; aarle, silde</firstline>
@@ -2884,6 +2930,7 @@ fra Folkets Hjerte,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><right><small>4. Febr. 1912.</small></right></nonum>
 Endnu du vaager, Mester; aarle, silde
 dit Lys er tændt, et Fyr paa bratte Brinker,
@@ -3107,7 +3154,7 @@ dit lille Land, hvor Niddet gror i Løn
 og Klaffer pletter med sin onde Sværte,
 
 besynger jeg tilsidst dit gode Hjerte:
-Jeg véd, hvor Medynk gør dig mild og skøn;
+Jeg véd, hvor Medynk gør dig mild og skøn;
 naar du blev rørt, du nægted ingens Bøn,
 og dybt du krymped dig i andres Smerte.
 
@@ -3118,10 +3165,11 @@ dit Væsens Vemod yndefuldt kan daare
 Jeg saa dig ved din Datters Bryllup tindre
 forklaret med et Perleglimt af Taare
 i Glans af Glæde fra dit skønne Indre.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102426">
+<text id="michaelis2017102426">
 <head>
     <title>Victor Bendix</title>
     <firstline>Er Tiden Musik? Bliver Dagene til Noder</firstline>
@@ -3132,6 +3180,7 @@ i Glans af Glæde fra dit skønne Indre.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><right><small>17. Maj 1911.</small></right></nonum>
 Er Tiden Musik? Bliver Dagene til Noder
 i Menneskelivets Orkesterpartitur,
@@ -3177,10 +3226,11 @@ Hans Liv blev til Musik. Hans Dage blev til Noder
 i hans ildfulde Hjertes Orkesterpartitur.
 Nu skal han høre Bruset af hans egne Tonefloder:
 Vi vil takke ham i Genklang — vi vil hylde ham i Dur.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102427">
+<text id="michaelis2017102427">
 <head>
     <title>Peter Nansen</title>
     <firstline>Parnas-Bevogter, elskte Peter Nansen</firstline>
@@ -3192,6 +3242,7 @@ Vi vil takke ham i Genklang — vi vil hylde ham i Dur.
     <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 <nonum><right><small>26. Okt. 1908.</small></right></nonum>
 Parnas-Bevogter, elskte Peter Nansen,
 til hvem de danske Muser søger hen,
@@ -3210,10 +3261,11 @@ en henrykt Summen til din Ære toner.
 Tak for dit Venskabs rene Melodier,
 og gid — saa gør du dine Bier glade -
 din Lavrbærkrone skyde friske Blade!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102428">
+<text id="michaelis2017102428">
 <head>
     <title>Ellen Price</title>
     <firstline>Hvor ren og tyst. En Sjæl foruden Pletter</firstline>
@@ -3221,6 +3273,7 @@ din Lavrbærkrone skyde friske Blade!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><right><small>Til en Billedrække.</small></right></nonum>
 Hvor ren og tyst. En Sjæl foruden Pletter,
 Den danske Yndes sommerblide Muse
@@ -3265,10 +3318,11 @@ og tunge Taarer væde Kindens Aske.
 En Kunst, som fyldt af Sjæl vort Hjerte rammer.
 Den danske Ynde, tyst og uden Pletter
 med Skær i Øjet af de lyse Nætter.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102429">
+<text id="michaelis2017102429">
 <head>
     <title>Til en Død</title>
     <firstline>Alle de Timer, vi leved</firstline>
@@ -3276,6 +3330,7 @@ med Skær i Øjet af de lyse Nætter.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Alle de Timer, vi leved
 sammen i Frygt og i Fryd, —
 Vindene har dem skrevet
@@ -3300,10 +3355,11 @@ Modnede dig til Kvinde,
 blev dog aldrig din Mand.
 Nu du smulrer derinde
 i Dødens haabløse Land.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102430">
+<text id="michaelis2017102430">
 <head>
     <title>Til en Levende</title>
     <firstline>Ak, er jeg bleven født paany?</firstline>
@@ -3311,6 +3367,7 @@ i Dødens haabløse Land.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ak, er jeg bleven født paany?
 Jeg gaar min sagte Vej
 og hvisker i det lyse Gry:
@@ -3340,10 +3397,11 @@ Saa rød og rank, som fra dit Skød
 den steg sin stille Vej —
 dit Hjertes dybe Blomst du brød
 og rakte den til mig.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102431">
+<text id="michaelis2017102431">
 <head>
     <title>Louise</title>
     <firstline>Og Nattergalen sang for sidste Gang</firstline>
@@ -3355,6 +3413,7 @@ og rakte den til mig.
     <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 <nonum><right><small>23. Juni 1908.</small></right></nonum>
 Og Nattergalen sang for sidste Gang,
 en Puls, der lønligt hulked sig til Døde
@@ -3373,10 +3432,11 @@ Hvor tavst du elsked, Søster, skønne, blide!
 Sin sidste Hulken Nattergalen sang.
 Dit Liv var viet til at hjælpe andre.
 Nu blev en Engel borte ved min Side.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102432">
+<text id="michaelis2017102432">
 <head>
     <title>Til mine Minders Moder</title>
     <firstline>Et Janushoved højnet</firstline>
@@ -3384,6 +3444,7 @@ Nu blev en Engel borte ved min Side.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Et Janushoved højnet
 paa samme Marmorsten
 — vi var et Dobbeltvæsen,
@@ -3418,16 +3479,18 @@ Hvor skal vi kunne skille,
 hvad vi hinanden gav?
 Vi to har samme Have haft,
 og vi faar samme Grav.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102450">
+<text id="michaelis2017102450">
 <head>
     <firstline>Jeg længes efter dig, naar Dagen gryr</firstline>
     <source pages="150-151"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg længes efter dig, naar Dagen gryr
 I og Savnet fylder mine aabne Arme.
 Da favner jeg de hvide Morgenskyrj
@@ -3445,7 +3508,7 @@ der løsned Sindets Lærkemelodier.
 Jeg længes efter dig i Mørkets Bug,
 naar Sjælen hjemløs lytter, sorgtung bøjet
 over din Seng, til Søvnens Aandesug.
-Du véd det, men kan ikke aabne Øjet:
+Du véd det, men kan ikke aabne Øjet:
 Jeg listed til dit Leje mig i Smug,
 min hede Længsel tynger dig paa Øjet.
 
@@ -3455,16 +3518,18 @@ vi to har vandret, før vor Høst blev gul
 og vi blev gravlagt under Grædepile.
 Du var mit Hjertes hvide Barnejul,
 vi talte til hinanden — ved at smile.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102451">
+<text id="michaelis2017102451">
 <head>
     <firstline>Hvordan takke dig i Ord, naar hver en Dag, jeg aander</firstline>
     <source pages="152-153"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvordan takke dig i Ord, naar hver en Dag, jeg aander,
 lægger et Led i Ringen, i Ringen, som er din.
 Naar ikke du er hos mig, jeg ubevidst mig vaander
@@ -3488,10 +3553,11 @@ du er bedre end de bedste, og din Sjæl har større Glans.
 Jeg husker, hvad du gav mig, og stille jeg velsigner
 det Hjerte, som mig lærte den dybe sidste Sans.
 Kvinde for alle Kvinder, der er ingen, som dig ligner.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102452">
+<text id="michaelis2017102452">
 <head>
     <firstline>Nu strømmer alle Floderne tilbage</firstline>
     <source pages="154"/>
@@ -3499,6 +3565,7 @@ Kvinde for alle Kvinder, der er ingen, som dig ligner.
     <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Nu strømmer alle Floderne tilbage
 til Kildespringet, hvorfra de er rundne.
 Og atter længes jeg mod hine svundne,
@@ -3516,10 +3583,11 @@ Du blev min Husalf og mit Hjertes Frue.
 Hvor skal jeg nogensinde kunne glemme,
 du var for mig Samvittighedens Stemme,
 dit Hjerte Arnen for min Lykkes Lue?
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102453">
+<text id="michaelis2017102453">
 <head>
     <firstline>Hos dig mit Hjerte holder stille Jul</firstline>
     <source pages="155"/>
@@ -3527,6 +3595,7 @@ dit Hjerte Arnen for min Lykkes Lue?
     <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Hos dig mit Hjerte holder stille Jul.
 Paa Mindets Træ de gyldne Stjerner skinne
 i Glans af dig, min Værnehelgeninde,
@@ -3544,10 +3613,11 @@ om Trøst, der Bud fra andre Sjæle bar?
 Jeg banked op, men stilled ej din Længsel.
 Du hamred ud dit Hjertes skræmte Tanker,
 til endelig en anden gav dig Svar.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102454">
+<text id="michaelis2017102454">
 <head>
     <firstline>Bort som en Skygge gennem Natten gaar</firstline>
     <source pages="156"/>
@@ -3555,6 +3625,7 @@ til endelig en anden gav dig Svar.
     <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Bort som en Skygge gennem Natten gaar
 — en bøjet Betler paa en slukket Scene
 med Posen fyldt af Brød, der blev til Stene -
@@ -3572,10 +3643,11 @@ og aldrig kan mit Nederlag jeg glemme
 Da hviskes i Sylvesternatten mildt:
 Husk, du hos mig har alle Dage hjemme.
 Jeg var din Husalf, og jeg blev din Muse.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102433">
+<text id="michaelis2017102433">
 <head>
     <title>Til min Fader</title>
     <firstline>Dit Sind var Ynde. Øjets milde Glød</firstline>
@@ -3587,6 +3659,7 @@ Jeg var din Husalf, og jeg blev din Muse.
     <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 <nonum><right><small>14. Dec. 1912.</small></right></nonum>
 Dit Sind var Ynde. Øjets milde Glød
 beholdt sit Solspil til de sidste Dage.
@@ -3605,10 +3678,11 @@ og gav sig Evighedens Sug i Vold.
 Jeg saa dig synkende omkring dig gribe
 paa det Uendeliges øde Hav.
 Jeg greb din Haand. Holdt den, til den blev kold.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102434">
+<text id="michaelis2017102434">
 <head>
     <title>Serafen</title>
     <firstline>Vi traf hinanden i vor Skæbnes Time</firstline>
@@ -3617,6 +3691,7 @@ Jeg greb din Haand. Holdt den, til den blev kold.
     <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Vi traf hinanden i vor Skæbnes Time:
 V Jeg var den Vækker, som dit Blod har savnet,
 og i dit Skød har en Seraf jeg favnet
@@ -3634,10 +3709,11 @@ og Morgenstjernens Kuldestraaler glimte.
 Er ikke Elskov Hjerternes Ekstase?
 Naar under Laaget dine Øjne flyr,
 Serafens hvide Vinger kan jeg skimte.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102435">
+<text id="michaelis2017102435">
 <head>
     <title>Tre Søstre</title>
     <firstline>Tre sjældne Søstre for mit Liv bestemte</firstline>
@@ -3645,6 +3721,7 @@ Serafens hvide Vinger kan jeg skimte.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Tre sjældne Søstre for mit Liv bestemte
 — i deres Hænder de min Skæbne klemte.
 
@@ -3668,10 +3745,11 @@ og Favn for Favn hun vilde Traaden maale.
 
 Den tredje aldrig med mit Blik jeg slipper
 — thi det er hende, som den overklipper.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102436">
+<text id="michaelis2017102436">
 <head>
     <title>Fantasus:</title>
     <toctitle>Fantasus</toctitle>
@@ -3685,6 +3763,7 @@ Den tredje aldrig med mit Blik jeg slipper
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><right><small>Det ny Teater, 19. Sept. 1908.</small></right></nonum>
 
 Vær hilset! Her er jeg. Med Vind til Vinge
@@ -3761,10 +3840,11 @@ husk: Huset her skal formes af sin Gæst,
 husk: Det er Jer, som hjælper os til Fest,
 som fylde skal med Fremtid dette Hus,
 med Stemningsstilhed og med Bifaldsbrus.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102437">
+<text id="michaelis2017102437">
 <head>
     <title>Boghandlersang</title>
     <firstline>Venner, velmødt! Lad os kalde hverandre</firstline>
@@ -3775,6 +3855,7 @@ med Stemningsstilhed og med Bifaldsbrus.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><right><small>18. Jan. 1912.</small></right></nonum>
 
 Venner, velmødt! Lad os kalde hverandre
@@ -3830,10 +3911,11 @@ Bøgenes Land blev et Bøgernes Land,
 sammen de trives i løvrig Forgrening.
 Stolt tør vi hævde og fejre vor Stand:
 Leve vor faste Forening!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2017102438">
+<text id="michaelis2017102438">
 <head>
     <title>Nytaar 1913</title>
     <firstline>Saa fik vi Aarets Felttog ført til Ende</firstline>
@@ -3841,6 +3923,7 @@ Leve vor faste Forening!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Saa fik vi Aarets Felttog ført til Ende.
 En sidste Gang vi tæller vore Døde,
 mens vore Granlys for Sylvester brænde.
@@ -3850,7 +3933,7 @@ og Vaabenhvile Fjenderne forsoner,
 Fredsbivuaker gennem Natten gløde.
 
 Udødelige Perser-Legioner
-i Livets Storarmé mod Nyet tragter,
+i Livets Storarmé mod Nyet tragter,
 mens Haabets Hymne gennem Gryet toner.
 
 Ak, endnu dyrker vi de onde Magter,
@@ -3878,8 +3961,9 @@ i Sneens glimmerfagre Flokkers Spil
 et Glimt af Evighedens hvide Svane
 
 og takke Livet for, at vi blev til.
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

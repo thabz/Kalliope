@@ -1,16 +1,21 @@
-const {
+import {
   isFileModified,
   loadCachedJSON,
   writeCachedJSON,
-  markFileDirty,  
-} = require('../libs/caching.js');
-const { loadXMLDoc, fileExists } = require('../libs/helpers.js');
-const { safeGetAttr } = require('./xml.js');
+  markFileDirty,
+  force_reload as globalForceReload,
+} from '../libs/caching.js';
+import { fileExists } from '../libs/helpers.js';
+import { loadXMLDoc, safeGetAttr, getElementsByTagNames } from './xml.js';
+import { sourceWorkFilename, sourceWorkKey } from './anthologies.js';
 
-const build_variants = collected => {
-  let variants_map = new Map(loadCachedJSON('collected.variants') || []);
+const build_variants = (collected) => {
+  let variants_map = globalForceReload
+    ? new Map()
+    : new Map(loadCachedJSON('collected.variants') || []);
+  const force_reload = variants_map.size === 0;
 
-  register_variant = (from, to) => {
+  const register_variant = (from, to) => {
     let array = variants_map.get(from) || [];
     if (array.indexOf(to) === -1) {
       array.push(to);
@@ -19,28 +24,35 @@ const build_variants = collected => {
   };
 
   collected.poets.forEach((poet, poetId) => {
-    collected.workids.get(poetId).forEach(workId => {
+    collected.workids.get(poetId).forEach((workId) => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
       if (!fileExists(filename)) {
-          return
+        return;
       }
-      if (!isFileModified(filename)) {
+      if (!force_reload && !isFileModified(filename)) {
         return;
       }
       let doc = loadXMLDoc(filename);
-      doc
-        .find('//poem[@variant]|//prose[@variant]|//section[@variant]')
-        .forEach(text => {
+      getElementsByTagNames(doc, ['text', 'section'])
+        .filter((e) => {
+          return (
+            safeGetAttr(e, 'variant') != null && safeGetAttr(e, 'id') != null
+          );
+        })
+        .forEach((text) => {
           const textId = safeGetAttr(text, 'id');
           const variantId = safeGetAttr(text, 'variant');
+          if (textId == null || variantId == null) {
+            throw new Error(
+              `Text in ${poetId}/${workId} ${textId} is listed as a variant of ${variantId}.`
+            );
+          }
           register_variant(textId, variantId);
           register_variant(variantId, textId);
           // Mark work containing variantId dirty
           const variantData = collected.texts.get(variantId);
           if (variantData != null) {
-            markFileDirty(
-              `fdirs/${variantData.poetId}/${variantData.workId}.xml`
-            );
+            markFileDirty(sourceWorkFilename(variantData));
           }
         });
     });
@@ -51,6 +63,10 @@ const build_variants = collected => {
 
 const resolve_variants_cache = {};
 const resolve_variants = (poemId, collected) => {
+  if (poemId == null) {
+    throw new Error(`function resolve_variants called with null poemId.`);
+  }
+
   const variantIds = collected.variants.get(poemId);
   if (variantIds == null || variantIds.length == 0) {
     return null;
@@ -62,13 +78,13 @@ const resolve_variants = (poemId, collected) => {
 
   // Deep dive through variants-graph
   let seen_variants = new Set();
-  const recurse = variantId => {
+  const recurse = (variantId) => {
     if (seen_variants.has(variantId)) {
       return;
     } else {
       seen_variants.add(variantId);
       const variantIds = collected.variants.get(variantId);
-      variantIds.forEach(variantId => {
+      variantIds.forEach((variantId) => {
         recurse(variantId);
       });
     }
@@ -81,16 +97,16 @@ const resolve_variants = (poemId, collected) => {
     const metaB = collected.texts.get(b);
     if (metaA == null) {
       throw new Error(
-        `The unknown text ${a} is listed as a variant of ${poemId}.`
+        `The unknown text "${a}" is listed as a variant of "${poemId}".`
       );
     }
     if (metaB == null) {
       throw new Error(
-        `The unknown text ${b} is listed as a variant ${poemId}.`
+        `The unknown text "${b}" is listed as a variant of "${poemId}".`
       );
     }
-    const workA = collected.works.get(metaA.poetId + '/' + metaA.workId);
-    const workB = collected.works.get(metaB.poetId + '/' + metaB.workId);
+    const workA = collected.works.get(sourceWorkKey(metaA));
+    const workB = collected.works.get(sourceWorkKey(metaB));
     return workA.year > workB.year ? 1 : -1;
   });
   resolve_variants_cache[poemId] = result;
@@ -98,6 +114,11 @@ const resolve_variants = (poemId, collected) => {
 };
 
 const primaryTextVariantId = (textId, collected) => {
+  if (textId == null) {
+    throw new Error(
+      `function primaryTextVariantId called with textId "${textId}".`
+    );
+  }
   const variants = resolve_variants(textId, collected);
   if (variants != null && variants.length > 0) {
     return variants[0];
@@ -106,7 +127,7 @@ const primaryTextVariantId = (textId, collected) => {
   }
 };
 
-module.exports = {
+export {
   build_variants,
   resolve_variants,
   primaryTextVariantId,

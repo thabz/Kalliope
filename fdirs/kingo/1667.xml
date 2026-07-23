@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1667" author="kingo" status="incomplete" type="poetry">
 <workhead>
    <title>Af Næfve-tuud og Knud her-ud</title>
    <year>1667</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="kingo1667a0">
+<text id="kingo1667a0">
 <head>
    <title>Giet hvis ønske</title>
    <toctitle>Giet hvis ønske</toctitle>
@@ -18,6 +16,7 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 O! var mit skiød een Kachel-Vraa
   Naar frøssen <i>Kingo</i> Kommer,
 Lychsalig Jeg mig sagde da,
@@ -46,7 +45,8 @@ Og sige ved sig Sagtelig:
   Du deilig Sommer lille
 Naar Jeg eengang faar faufned dig
   Sig Vinter vel skal Stille.
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="gautier" status="incomplete" type="poetry">
 <workhead>
    <title>Andre digte</title>
-   <year>?</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="gautier2002122601">
+<text id="gautier2002122601">
 <head>
    <title>L'Art</title>
    <toctitle>L'Art</toctitle>
@@ -18,12 +15,13 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Oui, l'oeuvre sort plus belle
 D'une forme au travail
 Rebelle,
 Vers, marbre, onyx, émail.
 
-Point de contraintes fausses!
+Point de contraintes fausses !
 Mais que pour marcher droit
 Tu chausses,
 Muse, un cothurne étroit.
@@ -31,22 +29,22 @@ Muse, un cothurne étroit.
 Fi du rythme commode,
 Comme un soulier trop grand,
 Du mode
-Que tout pied quitte et prend!
+Que tout pied quitte et prend !
 
 Statuaire, repousse
 L'argile que pétrit
 Le pouce,
-Quand flotte ailleurs l'esprit;
+Quand flotte ailleurs l'esprit ;
 
 Lutte avec le carrare,
 Avec le paros dur
 Et rare,
-Gardiens de contour pur;
+Gardiens de contour pur ;
 
 Emprunte à Syracuse
 Son bronze où fermement
 S'accuse
-Le trait fier et charmant;
+Le trait fier et charmant ;
 
 D'une main délicate
 Poursuit dans un filon
@@ -61,7 +59,7 @@ Au four de l'émailleur.
 Fais les sirènes bleues,
 Tordant de cent façons
 Leurs queues,
-Les montres des blasons;
+Les montres des blasons ;
 
 Dans son nimbe trilobe
 La Vierge et son Jésus,
@@ -69,7 +67,7 @@ Le globe
 Avec la croix dessus.
 
 Tout passe. - L'art robuste
-Seul a l'éternité;
+Seul a l'éternité ;
 Le buste
 Survit à la cité.
 
@@ -83,11 +81,12 @@ Mais les vers souverains
 Demeurent
 Plus forts que les airains.
 
-Sculpte, lime, cisèle;
+Sculpte, lime, cisèle ;
 Que ton rêve flottant
 Se scelle
-Dans le bloc résistant!
+Dans le bloc résistant !
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

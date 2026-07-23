@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="voltaire" status="incomplete" type="poetry">
 <workhead>
    <title>Andre digte</title>
-   <year>?</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="voltaire2002122601">
+<text id="voltaire2002122601">
 <head>
    <title>À Boileau, Ou mon testament. (1769)</title>
    <toctitle>À Boileau, Ou mon testament. (1769)</toctitle>
@@ -21,6 +18,7 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Boileau, correct auteur de quelques bons écrits,
 Zoïle de Quinault, et flatteur de Louis,
 Mais oracle du goût dans cet art difficile
@@ -163,7 +161,8 @@ Secondé de Ninon, dont je fus légataire,
 J'adoucirai les traits de ton humeur austère.
 Partons: dépêche-toi, curé de mon hameau,
 Viens de ton eau bénite asperger mon caveau.
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

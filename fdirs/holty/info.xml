@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <person id="holty" country="de" lang="de" type="poet">
   <name>
-    <firstname>L.H.C.</firstname>
+    <firstname>Ludvig</firstname>
     <lastname>Hölty</lastname>
     <fullname>Ludwig Heinrich Christoph Hölty</fullname>
   </name>
@@ -15,5 +15,14 @@
       <place>Hannover</place>
     </dead>
   </period>
+  <literary-periods>romantik-og-praeromantik</literary-periods>
   <works>andre</works>
+  <identifiers>
+    <wikidata>Q71456</wikidata>
+    <wikipedia-en>Ludwig Christoph Heinrich Hölty</wikipedia-en>
+    <wikipedia-fr>Ludwig Hölty</wikipedia-fr>
+    <wikipedia-de>Ludwig Hölty</wikipedia-de>
+    <viaf>64179984</viaf>
+    <litteraturpriser-dk>u6032</litteraturpriser-dk>
+  </identifiers>
 </person>

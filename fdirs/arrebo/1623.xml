@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1623" author="arrebo" status="incomplete" type="poetry">
 <workhead>
    <title>Kong Davids Psalter</title>
    <subtitle>Sangvis udsat under hundrede og nogle Melodier og Toner</subtitle>
    <year>1623</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="arrebo2002072801">
+<text id="arrebo2002072801">
 <head>
    <title>Den XXIII. Salme kan kaldes den gode Hyrde</title>
    <toctitle>Den XXIII. Salme kan kaldes den gode Hyrde</toctitle>
@@ -23,6 +21,7 @@
    <!--  Fra Billen -->
 </head>
 <body>
+<poetry>
    Her kontrafejer David dig
    din Hyrde Jesum god og rig;
    bliv du hans Faar og lyd hans Røst,
@@ -75,10 +74,11 @@ hos mig skal stedse blive;
 derefter skal jeg eviglig
 bo i dit Hus og Himmerig,
 ej Ende faa de Dage.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="arrebo2002072802">
+<text id="arrebo2002072802">
 <head>
    <title>Den CXXXVIII. Salme kan kaldes Taksigelse for daglig Godt</title>
    <toctitle>Den CXXXVIII. Salme kan kaldes Taksigelse for daglig Godt</toctitle>
@@ -91,6 +91,7 @@ ej Ende faa de Dage.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
    Mod alle Folk til Liv og Sjæl
    gød Gud, vor Herre daglig vel;
    thi skulde vi hans Navn med Flid
@@ -145,7 +146,8 @@ Efterdi, o Gud, din Miskundhed og Naade
 varer eviglig og ej kan aflade,
 da forlad os ej udi Nød fortabte,
 <right>som du selv skabte.</right>
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

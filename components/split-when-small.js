@@ -1,36 +1,26 @@
-// @flow
-
-import React from 'react';
-import type { Node } from 'react';
-
-type SplitWhenSmallProps = {
-  children: Node,
-};
-export default class SplitWhenSmall extends React.Component<
-  SplitWhenSmallProps
-> {
-  render() {
-    return (
-      <div className="horizontal-on-small">
-        {this.props.children}
-        <style jsx>{`
+const SplitWhenSmall = ({ children }) => {
+  return (
+    <div className="horizontal-on-small">
+      {children}
+      <style jsx>{`
+        .horizontal-on-small {
+          display: flex;
+          flex-direction: column;
+        }
+        @media (max-width: 767px) {
           .horizontal-on-small {
-            display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
           }
-          @media (max-width: 760px) {
-            .horizontal-on-small {
-              flex-direction: row;
-              justify-content: space-between;
-              width: 100%;
-            }
-            .horizontal-on-small > :global(*) {
-              flex-basis: 47%; /* Add 6% spacing between */
-              margin: 0 !important;
-            }
+          .horizontal-on-small > :global(*) {
+            flex-basis: 47%; /* Add 6% spacing between */
+            margin: 0 !important;
           }
-        `}</style>
-      </div>
-    );
-  }
-}
+        }
+      `}</style>
+    </div>
+  );
+};
+
+export default SplitWhenSmall;

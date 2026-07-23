@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1884" author="hostrup" status="complete" type="poetry">
 <workhead>
    <title>Sange og Digte fra de senere Aar</title>
@@ -15,7 +14,7 @@
 </workhead>
 <workbody>
 
-<poem id="hostrup2018051001">
+<text id="hostrup2018051001">
 <head>
     <title>[Motto]</title>
     <indextitle>Motto</indextitle>
@@ -24,16 +23,18 @@
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ikke stort og ikke meget,
 intet højt og intet hedt,
 noget følt og noget leget,
 noget frisk og noget bleget,
 men om det er nok saa lidt,
 dog i alle Fald — mit eget.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2003011501">
+<text id="hostrup2003011501">
 <head>
     <title>Ved N. F. S. Grundtvigs Jordefærd</title>
     <firstline>Kimer, I Klokker! nu sluktes en Sol over Mulde</firstline>
@@ -46,6 +47,7 @@ dog i alle Fald — mit eget.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Kimer, I Klokker! nu sluktes en Sol over Mulde,
 længe den kæmped mod Mørket med Straalerne fulde,
     sildig den sank,
@@ -69,10 +71,11 @@ kimer om Guldet fra Himlen, der gyldned hans Aften,
     kimer fra Jord.
     Sejer og Fred i Guds Ord!
 Æren er Guds i det høje.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051003">
+<text id="hostrup2018051003">
 <head>
     <title>Mindesang over N. F. S. Grundtvig</title>
     <subtitle>Som: Habor kom fra Norges Fjælde</subtitle>
@@ -81,6 +84,7 @@ kimer om Guldet fra Himlen, der gyldned hans Aften,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvad var Gnyet, hvad var Braget,
     hvorfra kom de Kaab, der klang?
 Thor igjen paa Kjærren aged
@@ -105,8 +109,8 @@ skued dybt i Urdes Kilde.
 Nordens Aand igjen sig meldte,
     trindt vi sporet har hans Færd,
 Sang han skabte, fostred Helte,
-    én dog kaared han især,
-én Mand fast han gav sig ganske,
+    én dog kaared han især,
+én Mand fast han gav sig ganske,
 kristnet dog som Holger Danske.'
 
 Ja med Grundtvig kom tilbage
@@ -135,16 +139,17 @@ Danmark end ved Svælget ligger,
 er dog kun for Gud en Tigger,
     venter end paa Frelsens Dag,
 kjender Naaden, midt i Faldet,
-véd til Liv og Daad sig kaldet.
+véd til Liv og Daad sig kaldet.
 
 Thi med Grundtvig kom tilbage
     Holger selv, da Nød var haard,
 tændte Kirkens Lysestage,
     rejste Skolens sunkne Gaard,
-dér han Værn for Nordens Vænge
+dér han Værn for Nordens Vænge
 bygger nu af Tolvaarsdrenge.
+</poetry>
 </body>
-</poem>
+</text>
 
 <section level="3">
 <head>
@@ -152,7 +157,7 @@ bygger nu af Tolvaarsdrenge.
 </head>
 <content>
 
-<poem id="hostrup2018051004">
+<text id="hostrup2018051004">
 <head>
     <title>Skaf Krigssignalet bort fra Nordens Grænse!</title>
     <toctitle><num>1.</num>,,Skaf Krigssignalet bort fra Nordens Grænse!``</toctitle>
@@ -161,6 +166,7 @@ bygger nu af Tolvaarsdrenge.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 ,,Skaf Krigssignalet bort fra Nordens Grænse!``
     det er en Nordmands sidste Ord,
 og gid for det vi kunde rense
@@ -181,10 +187,11 @@ og dersom de dit Ord vil ænse,
     som rejste det midt i vort Land,
     saa tal kun baade Lag og Nat
     til dem, der har Signalet sat!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051005">
+<text id="hostrup2018051005">
 <head>
     <title>Til de danske Sønderjyder</title>
     <toctitle><num>2.</num>Til de danske Sønderjyder</toctitle>
@@ -193,6 +200,7 @@ og dersom de dit Ord vil ænse,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Kjære Brødre under Trykket,
 men som kjækt det byde Trods,
 har det ængstet eders Hjærte,
@@ -257,13 +265,14 @@ uden Fjendskab eller Nag,
     lyder i vor Moders Gaard,
   let man al sin Strid kan glemme,
     hvor det danske Hjærte slaar.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section>
 
-<poem id="hostrup2018051006">
+<text id="hostrup2018051006">
 <head>
     <title>Sølvbryllupssang</title>
     <subtitle>Som: Tjenare, Mollberg, hur är det fatt</subtitle>
@@ -272,6 +281,7 @@ uden Fjendskab eller Nag,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Kjæreste <w>Børre</w>, drømmer du ej?
 naa’de du alt saa langt ad din Vej?
 Tænk, er det nu et kvart Hundredaar,
@@ -294,7 +304,7 @@ hun retted an — og han retted Stil.
     kom Vuggen i Gang.
 Det var en Gut, lidt forfalden til Drik,
 og mens han daglig sin Gyngetur fik,
-drømte ban stolt sig ombord paa en Brig.
+drømte han stolt sig ombord paa en Brig.
 
 Saa kom der Piger, vevre og smaa,
 krøb lidt paa fire, rejste sig saa,
@@ -331,10 +341,11 @@ som i en Ping; Forældre med Børn,
 Glæden i det mister aldrig sin Smag,
 leve da Hjemmet med Kransen paa Tag!
 leve de to, der har rejst det i Dag!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051007">
+<text id="hostrup2018051007">
 <head>
     <title>Svend Kongesøn</title>
     <subtitle>(Saxe, 12te Bog)</subtitle>
@@ -343,6 +354,7 @@ leve de to, der har rejst det i Dag!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
   Til Danmark kom der Tidende stor,
   den avlede Sorg og Klage:
   Kong Erik var død paa Cyperland
@@ -424,10 +436,11 @@ Den blinker saa huldt, den hænger saa højt, den gyldne Krone.
   med dem dog, uden at blive til Spot,
   vi efter det største rækker.
 Den blinker saa huldt, den hænger saa højt, den gyldne Krone.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051008">
+<text id="hostrup2018051008">
 <head>
     <title>Til nogle Venner i Frederiksborg,</title>
     <toctitle>Til nogle Venner i Frederiksborg</toctitle>
@@ -439,6 +452,7 @@ Den blinker saa huldt, den hænger saa højt, den gyldne Krone.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 For Tagen-Del i Lykke min,
   som op, saa ned ad Bakke,
 for Vennesind og Vennevin
@@ -458,10 +472,11 @@ Ved Vennegaven, tror jeg, vil
   min Sundhed jævnt formeres,
 og trænger m in ej mer dertil,
   jeg drikker den paa Deres.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051009">
+<text id="hostrup2018051009">
 <head>
     <title>Tak</title>
     <subtitle>Til en Tilhørerinde</subtitle>
@@ -470,6 +485,7 @@ og trænger m in ej mer dertil,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 At takke er at tage — se,
 saadan jeg mig det tænker,
 kun hjærtelig at tage mod,
@@ -489,10 +505,11 @@ Og saadan takker ogsaa jeg,
 skjønt Ord dertil mig fattes,
 thi Deres Gave, skjøn og blød,
 modtages glad og skattes.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051010">
+<text id="hostrup2018051010">
 <head>
     <title>Telegram til P. A. Fenger</title>
     <subtitle>paa hans 50-Aars Jubilæumsdag</subtitle>
@@ -501,6 +518,7 @@ modtages glad og skattes.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Kjære Fenger! bunden fast
 sender Hilsen jeg i Hast.
 Tak for lang og trofast Vagt,
@@ -512,10 +530,11 @@ lys du staar i Aftenstunden,
 Tak for al din bramfri Færd!
 Tak, fordi vi har dig kjær!
     Leve Peter Fenger!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051011">
+<text id="hostrup2018051011">
 <head>
     <title>Theologisk Sejerssang</title>
     <subtitle>Som: Vänskap, frihet och fosterland</subtitle>
@@ -524,6 +543,7 @@ Tak, fordi vi har dig kjær!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
   Kjender I ogsaa Studentens Kaar,
   helst naar det nær mod Examen gaar,
   og han sidder i sit Hul
@@ -571,10 +591,11 @@ naar bare han kan vente, kan han blive alle Slags.
   og om end lidt han først løb sur,
   med faste Skridt og uden Knur,
 gaar lige løs paa Skanserne, som Christian Spur.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051012">
+<text id="hostrup2018051012">
 <head>
     <title>Vore Førere</title>
     <firstline>Er Freden død i Frodes Vang?</firstline>
@@ -582,6 +603,7 @@ gaar lige løs paa Skanserne, som Christian Spur.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Er Freden død i Frodes Vang?
 forstummer nu dens Fuglesang
     i Gny af Sværd og Pile?
@@ -619,7 +641,7 @@ men hendes Haand fast, som en Mands,
     ,,og Dansk med Tysk er mænget!
 ,,Mit Led er brudt, mit Gjærde faldt,
     ,,og splittet ligger Vænget,
-,,saa der er ét, som gaar for alt:
+,,saa der er ét, som gaar for alt:
     ,,at faa det helt — og stænget.``
 
 Men hist i Roskildkirkens Krog
@@ -643,7 +665,7 @@ og Kraft er i den smalle Mund
     ,,blev smaat det med den gamle;
 ,,med søndret Vælde, blind og halt
     ,,du maatte frem dig famle,
-,,saa der er ét, som gaar for alt:
+,,saa der er ét, som gaar for alt:
     ,,at Kræfterne sig samle.``
 
 Da udi Ringsted Klokken klang
@@ -667,10 +689,10 @@ og myndig lyder Røsten ej,
     ,,og Nødens Lænker trange.
 ,,Vor Folkekraft, til Stordaad kaldt,
     ,,er bunden hos de mange,
-,,saa der er ét, som gaar for alt:
+,,saa der er ét, som gaar for alt:
     ,,at fri den ædle Fange.``
 
-Og Klarhed gåar fra deres Ord,
+Og Klarhed gåar fra deres Ord,
 det er, som over mørken Jord
     de hvide Nordlys flamme.
 Ja nu er Vejen til at se,
@@ -701,10 +723,11 @@ de vise Vej, de høje tre,
     de Sejeren forjætte,
 og alle gode Danske se,
     at Vejen er den rette.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051013">
+<text id="hostrup2018051013">
 <head>
     <title>Himmelbjærg-Egnen</title>
     <firstline>Det laa der endnu som i tusend Aar</firstline>
@@ -712,6 +735,7 @@ og alle gode Danske se,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det laa der endnu som i tusend Aar,
     i sine egne Tanker,
 det skjønne Land, hvor Aaen gaar
@@ -722,7 +746,7 @@ og Birken sig hælded fra Skrænten ned,
 selv nød den i Spejlet sin Dejlighed,
     der sjælden saaes af andre.
 
-Da kom der paa én Gang et Rædselsbud
+Da kom der paa én Gang et Rædselsbud
     til alle Stedets Vætter,
 som rev af den lange Drøm dem ud
     og gav dem vaagne Nætter:
@@ -776,7 +800,7 @@ Det ligger der end, som i tusend Aar,
     i sine egne Tanker,
 det skjønne Land, hvor Aaen gaar
     imellem Skov og|Banker.
-Og Dampen hvæser ad ål den Jord,
+Og Dampen hvæser ad ål den Jord,
     som er til liden Nytte,
 men Aakanden svømmer, og Lyngen gror,
 og Højen knejser stolt og stor
@@ -791,10 +815,11 @@ endnu er der ensomt, frisk og vildt,
 og intet er tamt, om det er mildt,
 kun er den Skjønhed ej længer spildt,
     som Menneskehjærter glæder.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051014">
+<text id="hostrup2018051014">
 <head>
     <title>En Præstehistorie</title>
     <firstline>I Landsbyen drog Natten ind</firstline>
@@ -802,8 +827,9 @@ kun er den Skjønhed ej længer spildt,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I Landsbyen drog Natten ind,
-kun ét Sted end med rødligt Skin
+kun ét Sted end med rødligt Skin
 sex Ruder melder om en Aand,
 som Søvnen ej bar lagt i Baand.
 Der sidder i den lave Stue
@@ -830,7 +856,7 @@ og dertil god, som Folk er flest,
 en Kristen af den store Flok,
 som, da ham denne Jord var nok,
 paa Undere kun troede lidt,
-men paa sig selv som Nummer ét;
+men paa sig selv som Nummer ét;
 han skal nu hædres sidste Gang
 med Klokkelyd og Psalmesang,
 med Øl og Mad, med Lys og Flor,
@@ -897,7 +923,7 @@ han bli’r dog savnet i sit Hjem.
 En Spotter var han, har man sagt,
 men hvem har til at dømme Magt?
 Vel frelses ikkun den, som tror,
-men véd vi vel, om intet bor
+men véd vi vel, om intet bor
 i Manden bedre end hans Ord?
 
 Han staar ved Kisten. Denne Gang
@@ -932,12 +958,12 @@ men Præsten vaagner kold som Sten
 i Lænestol ved Lampens Skin
 og grunder lidt med Haand mod Kind
 Saa puster rask kan Lampen ud
-og gaar til Køjs med Tak til Hud,
+og gaar til Køjs med Tak til Gud,
 og gjemmer saa den hele Sag
 i Tro paa ham til næste Dag.
 
 Hvad talte han da om ved Baaren?
-Jeg véd, han krænked ikke Taaren,
+Jeg véd, han krænked ikke Taaren,
 han hverken greb til Dommens Ris,
 ej heller løj den dødes Pris.
 Hans Tale handled kun, jeg tror,
@@ -950,12 +976,13 @@ flux bringer Naade, Fred og Sejr
 selv ind i Dødens faste Lejr.
 Og om ej mange just blev rørt,
 om flere, hvad de helst gad hørt,
-ej denne dang i Talen fandt,
+ej denne Gang i Talen fandt,
 alt hvad han sagde, var dog sandt.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051015">
+<text id="hostrup2018051015">
 <head>
     <title>Bidrag til en Skriftlæsningsbog</title>
     <firstline>Min Pen og jeg har været i Krig</firstline>
@@ -963,6 +990,7 @@ alt hvad han sagde, var dog sandt.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Min Pen og jeg har været i Krig,
 fra jeg fik som Pog den i Hænde,
 den Strid har varet langsommelig Tid
@@ -992,10 +1020,11 @@ Den Strid har nu varet halvhundred Aar
 og er endnu ikke til Ende,
 saa stræb da, Børn, alt hvad I formaar,
 at magte eders Penne!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051016">
+<text id="hostrup2018051016">
 <head>
     <title>En sørgelig Vise om Kvindens Træskhed</title>
     <firstline>Der var en Gang en Pige</firstline>
@@ -1003,6 +1032,7 @@ at magte eders Penne!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Der var en Gang en Pige,
 hun var saa yndefuld
 med Øjne straalerige
@@ -1051,10 +1081,11 @@ den falskes falske Haar —
     til min Trøst
     ved mit Bryst
 de skal hvile, mens det slaar.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051017">
+<text id="hostrup2018051017">
 <head>
     <title>Slottet, som skal bygges</title>
     <subtitle>
@@ -1066,9 +1097,10 @@ de skal hvile, mens det slaar.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 ,,Gid vel jeg var gift kun, for nu er jeg kjed
 af Kjærlighed, `` saadan sa’ Pigen,
-og Aandsfrænder har hun — som alle vi véd —
+og Aandsfrænder har hun — som alle vi véd —
 hvis Antal vel nu er i Stigen.
 Det siges jo dristig, det hævdes jo stift,
 at Giftermaal kun er for Kjærlighed Gift,
@@ -1077,7 +1109,7 @@ at Giftermaal kun er for Kjærlighed Gift,
 
 Men om i Paris det end udraabes højt,
 om vide for Visdom det gjælder,
-i Himlen, vi véd,, det ej vejer en Døjt,
+i Himlen, vi véd,, det ej vejer en Døjt,
 og derfor paa Jorden ej heller.
 Nej, Kjærlighedsdrømmen først bliver til Liv,
 naar Svend bliver Mand, og naar Mø bliver Viv,
@@ -1099,7 +1131,7 @@ mod Ægteskab intet bevise det kan,
 men kun, at her mangler det ægte;
 thi tror de paa Slottet og Kjærligheds Gud,
 saa daler fra Skyen det ned paa hans Bud,
-    saa ser de dét voxe og stige,
+    saa ser de dét voxe og stige,
     en Vidunderborg uden Lige,
 
 Et Hjem for vort Hjærte, rodfæstet i Jord,
@@ -1119,10 +1151,11 @@ Saa nøjes da ej med det snævre og smaa,
 men byg I kun dristig med ham mod det blaa!
     Lad højt det sig rejse fra Grunden
     og slaa hver en Tvivler paa Munden!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2002050901">
+<text id="hostrup2002050901">
 <head>
     <title>Højskolesang til Vallekilde</title>
     <subtitle>Som: Ja vi elsker dette Landet</subtitle>
@@ -1134,6 +1167,7 @@ men byg I kun dristig med ham mod det blaa!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det, som lysner over Vangen,
     er det Aftenrød?
 var monstro det Svanesangen,
@@ -1178,10 +1212,11 @@ at en Gang I kan med Ære,
     bort fra Nattens Sky,
 eders gamle Moder bære
     ind i Dagen ny!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051019">
+<text id="hostrup2018051019">
 <head>
     <title>Til C. Ploug</title>
     <subtitle>i Anledning af den provisoriske Finanslov i April 1877</subtitle>
@@ -1191,6 +1226,7 @@ eders gamle Moder bære
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
   Folkesanger, vort Hjærte kjær,
 i Slægt med Hedens stigende Lærke,
 som højt i det gyldne Morgenskjær
@@ -1213,7 +1249,7 @@ men med en Solstraale i sit Øje!``
 for Frihedsvældet, der sprang her hjemme,
 paa Jyllands Bønder, der stod, hvor det gjaldt,
 og heller ej nu vil Kaldet glemme!
-  Dér er din Sang, i deres Lag,
+  Dér er din Sang, i deres Lag,
   ikke hvor Vældet man ud vil tørre,
   ej hvor man stempler som Selvbedrag
   Troen fra otte og fyrre.
@@ -1238,10 +1274,11 @@ Om hvad Nødvendigheden har budt,
 om de var falske, vor Ungdoms Drømme,
 om mit Folk har sin Ret forbrudt,
 maa nu Historien dømme.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051020">
+<text id="hostrup2018051020">
 <head>
     <title>Grundlovssang</title>
     <subtitle>
@@ -1253,10 +1290,11 @@ maa nu Historien dømme.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Der kom en Vaar til Danevang,
 stormende bragte den Vaande,
 men gammel Is og gammel Tvang,
-det brast med ét for dens Aande.
+det brast med ét for dens Aande.
 Og Vold og Kløft, som Slægter saa’,
 tyktes nu plat forsvunden,
 og Liv, der gik for længst istaa,
@@ -1306,10 +1344,11 @@ Den spaar om Dag, da Danmark staar
 atter med Kransen om Panden,
 og Hjærter, der for hende slaar,
 faar lært at forstaa hinanden.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051021">
+<text id="hostrup2018051021">
 <head>
     <title>Ved Fyrretyve-Aars Studenterjubilæet</title>
     <subtitle>Som: Menuetten af Elverhøj</subtitle>
@@ -1318,6 +1357,7 @@ faar lært at forstaa hinanden.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Vi mødtes først, da Knoppen brun
 sig aabned for de glade,
 og vi sprang nd med bløde Dun
@@ -1362,10 +1402,11 @@ Om Ungdomsrejsens Æventyr
 endnu i Høst vi sjunge
 og takke hver, der tændte Fyr
 paa Farten for de unge.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051022">
+<text id="hostrup2018051022">
 <head>
     <title>Prolog</title>
     <subtitle>ved et nyt Theaters Aabning i Hillerød med ,,Gjenboerne``</subtitle>
@@ -1374,6 +1415,7 @@ paa Farten for de unge.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Gammelt eller nyt — derom man strider
 ivrigt paa Jorden til alle Tider,
 stredes for tusende Aar tilbage,
@@ -1418,7 +1460,7 @@ vi prøve venligt dem at forene.
 Mod dem, der kjækt hige bort fra det gamle,
 vi ypper i Aften ingen Dispyt,
 vi kan jo her i et Hus dem samle,
-hvor alt, hvad De sér, er flunkende nyt,
+hvor alt, hvad De sér, er flunkende nyt,
 hvor Tæppet, som her for nylig hang,
 gik op for et Publikum første Gang,
 hvor ingen Aktør har trampet paa Gulvet,
@@ -1434,7 +1476,7 @@ hvor Helte man saa’, der til Skyerne rakte,
 vi har dog det Haab, at de, som os gjæste,
 vil sige i Aften: det ny er det bedste.
 
-Men de, som sér helst tilbage i Tiden,
+Men de, som sér helst tilbage i Tiden,
 hvis Lyst til det ny ikkun er liden,
 som har i Minderne deres Lykke,
 dem at behage vi ogsaa mene,
@@ -1469,10 +1511,11 @@ Ja nyt og gammelt, de enes bestemt,
 og kjønt de her vilde mødes atter,
 saa fremt vi formaar med den gamle Skjærnt
 at vække hos Dem en nyfødt Latter.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051023">
+<text id="hostrup2018051023">
 <head>
     <title>Krager</title>
     <subtitle>Til en Tegning af O. A. Hermansen</subtitle>
@@ -1484,6 +1527,7 @@ at vække hos Dem en nyfødt Latter.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Vistnok er de mørke og tunge,
 skrige hæst mellem dem, der sjunge,
 stemme just ej til Liv og Lyst,
@@ -1531,7 +1575,7 @@ at det giver Trøst for Dagen og Møjen
 og Mod til atter at vove Trøjen.
 
 Hvad snakker de om? det gad jeg vel høre,
-jeg lyttéd saa mangen Gang dertil;
+jeg lyttéd saa mangen Gang dertil;
 det ligner jo fast et Arbejderrøre,
 et Fælledmøde, om saa man vil,
 lidt Socialisme er sagtens deri?
@@ -1539,10 +1583,11 @@ Ja, jeg tør ej erklære dem fri,
 men ængstes dog ej for Land og Rige
 og tror ikke, det har meget at sige,
 saa længe de blot faar Lov til at skrige
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051024">
+<text id="hostrup2018051024">
 <head>
     <title>Storken</title>
     <firstline>Han kom igjen</firstline>
@@ -1550,6 +1595,7 @@ saa længe de blot faar Lov til at skrige
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
     Han kom igjen,
     vor gamle Ven
 med Hoserne de røde,
@@ -1621,10 +1667,11 @@ til Ungerne bli’r stærke.
 vi er af Trækfuglarten,
 og saa skal det kjendes,
 vi har Vinger faaet til Farten.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051025">
+<text id="hostrup2018051025">
 <head>
     <title>Carl Ploug</title>
     <subtitle>Ved hans 50 Aars Studenterjubilæum</subtitle>
@@ -1634,6 +1681,7 @@ vi har Vinger faaet til Farten.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Fra han dukked op i Vaaren,
 saaes det, han var kæmpebaaren,
 Arnekrogen blev ham trang.
@@ -1661,8 +1709,9 @@ altid følte man i Løn:
 ej han stred for Gunst og Gave,
 men for Thyras Blomsterhave
 som sin Moders gjæve Søn.
+</poetry>
 </body>
-</poem>
+</text>
 
 <section level="3">
 <head>
@@ -1670,7 +1719,7 @@ som sin Moders gjæve Søn.
 </head>
 <content>
 
-<poem id="hostrup2018051026">
+<text id="hostrup2018051026" ignore-tests="mixed-aa-circumflex">
 <head>
     <title>I Paradis vaagned Adam op</title>
     <toctitle><num>1.</num>I Paradis vaagned Adam op</toctitle>
@@ -1680,11 +1729,12 @@ som sin Moders gjæve Søn.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I Paradis vaagned Adam op
 og saa’ med forundret Blik
 paa Blomsten i Eng, paa Cederens Top,
 paa Bølgen, som kom og gik.
-,,Nej se! nej se!`` han jubled og lo 
+,,Nej se! nej se!`` han jubled og lo
 ad Fugl paa Kvist, ad Hest og ad Ko,
     han saa’ sig mæt
     og blev nok træt,
@@ -1739,10 +1789,11 @@ med Haab, som gror, og Sorg, som forgaar,
     det favne tro
     de unge to
 i mange velsignede Aar!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051027">
+<text id="hostrup2018051027">
 <head>
     <title>For fulde Sejl at pløje</title>
     <toctitle><num>2.</num>For fulde Sejl at pløje</toctitle>
@@ -1755,6 +1806,7 @@ i mange velsignede Aar!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 For fulde Sejl at pløje
 det vilde Hav med Lyst,
 med aabent Ungdomsøje
@@ -1834,13 +1886,14 @@ til ham det lille Ord:
 ,,Gjør det godt!``
 saa de maa bo i Ly af
 hans Naade paa Jord.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section>
 
-<poem id="hostrup2018051028">
+<text id="hostrup2018051028">
 <head>
     <title>Epilog</title>
     <subtitle>
@@ -1853,6 +1906,7 @@ hans Naade paa Jord.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Vi har ikke mere — nu er De fri —
 det er kun Værten, som gjerne, førend
 Huset bli’r lukket forsvarligt i,
@@ -1894,7 +1948,7 @@ paa Hesten, der synes ifærd med at dejse,
 paa Rytteren, som har glemt at knejse,
 hvis Hoved alt har mistet sin Hals
 og synker nu langsomt ham ned i Brystet.
-Var det ét Symbol — nu allenfals,
+Var det ét Symbol — nu allenfals,
 det var just ikke af dem, der trøsted.
 
 Saa gik jeg da bort til Nørregade,
@@ -1930,10 +1984,11 @@ og skynder mig nu at aabenbare det.
 Og det er Tak — min Tak til Dem,
 som hjalp mig at faa Humøret frem
 og — indtil i Aften — at bevare det.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051029">
+<text id="hostrup2018051029">
 <head>
     <title>For Fuldmægtig Marcussen</title>
     <subtitle>Som: Bror, Bror, Brille! Klokken ringer el’ve.</subtitle>
@@ -1942,6 +1997,7 @@ og — indtil i Aften — at bevare det.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
         Tys, tys, stille!
         Klokken ringer el’ve,
 Marcussen sidder med sin Hammer i Haand;
@@ -2001,10 +2057,11 @@ Marcussen takke vi for dem, som gik,
         let vi la’r os sinke,
 ingen dog vil komme sidst
         med Marcussen at klinke.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051030">
+<text id="hostrup2018051030">
 <head>
     <title>Til Elisabeth</title>
     <subtitle>
@@ -2016,6 +2073,7 @@ ingen dog vil komme sidst
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Saa gik tyve Aar og fem,
 leved jeg i fler end dem?
 Paa de andre ligger Taagen,
@@ -2085,10 +2143,11 @@ men som god vi Dagen hædre,
 der blev Mo’r til mange bedre.
 Gud os den i Naade gav,
 Naaden lyser ud deraf.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051031">
+<text id="hostrup2018051031">
 <head>
     <title>Til Kapellanens Bryllup</title>
     <subtitle>Som: Ja lige strax man kjender.</subtitle>
@@ -2097,6 +2156,7 @@ Naaden lyser ud deraf.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg skued alt ham strande
 paa Peberkystens Sand,
 men det var dig, Johanne,
@@ -2141,10 +2201,11 @@ Lad Haabet for jer sjunge,
 hver Gang det bliver graat,
 ja, hold hinanden unge,
 saa bliver alting godt.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051032">
+<text id="hostrup2018051032">
 <head>
     <title>Indskrift paa Kong Frederik den syvendes Mindestøtte i Frederiksborg</title>
     <indextitle>Indskrift paa Frederik d. 7.s Mindestøtte</indextitle>
@@ -2155,16 +2216,18 @@ saa bliver alting godt.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Der var hans Hjem, da den nye Dag
 i Danmark fødtes med Tordenbrag,
 da Folket vaagnede med sin Drot
 og vaagnede derfor sundt og godt.
 Her staar han og minder om gode Aar,
 Gud give Sommer, som han gav Vaar!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051033">
+<text id="hostrup2018051033">
 <head>
     <title>Ved Afsløringen af Frederik den syvendes Statue i Hillerød</title>
     <toctitle>Ved Afsløringen af Statuen</toctitle>
@@ -2175,6 +2238,7 @@ Gud give Sommer, som han gav Vaar!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center>1.</center></nonum>
 
 Der rulled en Strøm mod det høje Slot,
@@ -2218,7 +2282,7 @@ aldrig den glemmes, mens Danmark staar.
 <nonum><center>2.</center></nonum>
 
 Staa han da her paa Torvet,
-skuet af hver og én,
+skuet af hver og én,
 han, som først fra den høje Sal
 ned iblandt Folket tren!
 Staa han da foran Borgen
@@ -2252,10 +2316,11 @@ Men naar vi tro vil være
 Kong Frederiks Tid og Sag,
 naa vi vel gjennem Vinterstorm
 en Gang til en Sommerdag!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051034">
+<text id="hostrup2018051034">
 <head>
     <title>Sølvbryllup i Silkeborg</title>
     <subtitle>Som: Velkommen fra de døde</subtitle>
@@ -2264,6 +2329,7 @@ en Gang til en Sommerdag!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 De Brylupsklokker kime
 igjen fra Taarnets Tind,
 men det er Mindets Time,
@@ -2317,10 +2383,11 @@ og drag saa trøstig vid’re
 til næste Bedested;
 lad Haabets Fugle kvidre,
 I véd, hvem I har med!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051035">
+<text id="hostrup2018051035">
 <head>
     <title>Sidst i Oktober</title>
     <firstline>Saa Skoven endnu har en siddende Gjæst?</firstline>
@@ -2328,6 +2395,7 @@ I véd, hvem I har med!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Saa Skoven endnu har en siddende Gjæst?
 En Maler, der trodser Kuld og Blæst? —
     Aa ja, af dem er vel mange,
@@ -2376,10 +2444,11 @@ med Ord eller Farver, kun som den er,
 thi den hører med i det høstlige Kvad,
 saa vist som hvert et faldende Blad
     blotter en Knop, der spaar ’en.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2002050902">
+<text id="hostrup2002050902">
 <head>
     <title>Julebudet</title>
     <firstline>Julebudet til dem, der bygge</firstline>
@@ -2391,6 +2460,7 @@ saa vist som hvert et faldende Blad
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Julebudet til dem, der bygge
 her i Mørket og Dødens Skygge,
 det er det Lys, som, aldrig slukt,
@@ -2400,7 +2470,7 @@ trøster mildelig mellem Grave.
 
 Julebudet i Vinterens Vaande,
 det er Gud Faders varme Aande,
-Menneskefaldet til Frelse vendt, 
+Menneskefaldet til Frelse vendt,
 enneskets Adel paa ny erkjendt,
 Hjærtets Ret til at kæmpe og vinde
 evig slaaet fast trods hver en Fjende.
@@ -2418,10 +2488,11 @@ Glæd dig da kun, du Menneskesjæl,
 stinger end Ormen endnu din Hæl!
 Favn kun trøstig, hvad Gud har givet,
 løft dit Hoved og tak for Livet!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051037">
+<text id="hostrup2018051037">
 <head>
     <title>Ved Bryllup og Sølvbryllup</title>
     <subtitle>Som: O, det var et Liv</subtitle>
@@ -2433,6 +2504,7 @@ løft dit Hoved og tak for Livet!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
     Ingen Sang jeg har,
     Himlen var for klar,
 altfor liflig brændte Hagens Straale,
@@ -2497,14 +2569,15 @@ men i Dag gaar jeg itu som Sanger.
     Nu jeg tænker knap,
 De af denne Tønde mer forlanger.
 — Skaal for ham, som red paa Lykkens Ganger!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051038">
+<text id="hostrup2018051038">
 <head>
     <title>Folkevandring</title>
     <subtitle>
-        <line>Ved Aåbningen af Kjøbenhavns Folkehøjskole</line>
+        <line>Ved Aabningen af Kjøbenhavns Folkehøjskole</line>
         <line>Som: Dejlige Øresund</line>
     </subtitle>
     <firstline>Der, hvor vi stred og sang</firstline>
@@ -2512,6 +2585,7 @@ De af denne Tønde mer forlanger.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
     Der, hvor vi stred og sang,
     der, hvor vort Ord har Klang,
 hvor vi hver dog fik sit lille Rige,
@@ -2529,7 +2603,7 @@ dristig op og ned paa Huset vender.
     Tænk, om de tramped ned
     Frugten af al vor Sved,
 Sæden, vi vor bedste Pleje skjænkte!
-    Blev det en HunnerfLok!
+    Blev det en Hunnerflok!
     ja det var bittert nok,
 om den vore Tempelbuer sprængte.
 
@@ -2560,10 +2634,11 @@ hvad der er os helligt selv at hædre,
     kæmpe for det med Lyst,
     bøde paa vore Brøst
 og hvad vi gjør godt — at gjøre bedre!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051039">
+<text id="hostrup2018051039">
 <head>
     <title>Tak for Maleriet</title>
     <subtitle>(Til Venner i Frederiksborg)</subtitle>
@@ -2572,6 +2647,7 @@ og hvad vi gjør godt — at gjøre bedre!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Kjære Venner, alle sammen!
 fra min Væg nu Funkedammen,
 som i Juliglans den hviler,
@@ -2598,10 +2674,11 @@ op af Fortids Kraft sig rækker.
 
 Tak for Mindegaven, Venner,
 og for Minderne, den vækker!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051040">
+<text id="hostrup2018051040">
 <head>
     <title>,,Massen``</title>
     <indextitle>Massen</indextitle>
@@ -2611,6 +2688,7 @@ og for Minderne, den vækker!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Om ,,Massen`` bliver saa meget sagt,
   men aldrig jeg Talen ynder,
 den faar kun i store Stæder Magt
@@ -2670,10 +2748,11 @@ For den skal Tigeren flygte fejg,
 for den, naar bare vi trættes ej,
 skal hvad der flød sammen som Mælkevej,
   en Gang staa klart som Stjærner.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051041">
+<text id="hostrup2018051041">
 <head>
     <title>Julevers</title>
     <firstline>Sne paa Jorden</firstline>
@@ -2681,6 +2760,7 @@ skal hvad der flød sammen som Mælkevej,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
         Sne paa Jorden,
         Is paa Fjorden,
 Solen, næppe for Taager øjnet,
@@ -2695,7 +2775,7 @@ nærmest ved det, vi underforstaar,
 Kulden, som ellers let blev trykkende,
 kun med de lune Hjem i Ryggene,
 Sneen, naar tungt i den vi ælter,
-bare fordi vi véd, den smelter,
+bare fordi vi véd, den smelter,
 Marken, fattig paa Sang og Farver,
 mest for kvad den i Vaaren arver. —
 
@@ -2712,10 +2792,11 @@ Bud om Vaaren, der kommer og sejrer.
     hvorom over de døde Sletter
     netop i Aarets Midnatstime
     alle Juleklokkerne kime.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051042">
+<text id="hostrup2018051042">
 <head>
     <title>Til Danmarks Ungdom</title>
     <subtitle>Indledningsdigt til Jh. Sandels Fortællinger Krigen 1848—50</subtitle>
@@ -2724,6 +2805,7 @@ Bud om Vaaren, der kommer og sejrer.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det er dine Fædres Saga,
 ej den fjærne taageslørte,
 hvorom kun de døde mælde,
@@ -2806,10 +2888,11 @@ for, hvor højt saa Strømmen gaar,
 og hvor meget der vil hærge det,
 atter gjennem tredve Aar
 til din Efterslægt at færge det.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051043">
+<text id="hostrup2018051043">
 <head>
     <title>Paa Skat og Marie Rardøms Sølvbryllupsdag</title>
     <subtitle>Som: Jeg mindes vel et Sted, gid jeg var der igjen</subtitle>
@@ -2818,6 +2901,7 @@ til din Efterslægt at færge det.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Saa fik vi atter Foraar, og det gaar til Marv og Ben
 paa hver, som just ej er af Sten,
 i Silke staar Bøgen, de skarpe Vinde fly,
@@ -2872,10 +2956,11 @@ De plukked sig en Sommerdag en dejlig Mindekrans,
 der aldrig skal tabe sin Glans,
 thi Livet, vi fik, er til Evighed bestemt,
 og kun hvad der var ondt bliver glemt.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051044">
+<text id="hostrup2018051044">
 <head>
     <title>Løb med Forhindringer</title>
     <subtitle>Bryllupsvise</subtitle>
@@ -2884,6 +2969,7 @@ og kun hvad der var ondt bliver glemt.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Skal det for Ungersvenden gaa
   at faa sig en Hjærtenskjære,
 han først maa have Rede paa,
@@ -2956,7 +3042,7 @@ Saa maa man bort fra fulde Glas
   og Hvisken i Havens Gange
 og slaa sin Lejr ved Frueplads,
   hvis Blomster nok ej er mange.
-Saa slaar ban den for sin Jomfru.
+Saa slaar han den for sin Jomfru.
 
 Han sidde skal i Baasen kvalm —
   det gaar vel ej uden Sukken —
@@ -2982,7 +3068,7 @@ han finde maa sig først en Vraa,
   hvori der er Plads til Frede.
 Han søger den til sin Jomfru.
 
-Og Huset snart blev hexet frem - d
+Og Huset snart blev hexet frem -
   et Hus er nok ej saa ilde —
 men før han førte Skatten hjem,
   han maatte med os til Gilde.
@@ -3005,10 +3091,11 @@ Ja <w>Aage</w> og <w>hans unge Brud</w>
 de kæmped trofast Kampen ud
   og hørte saa pænt paa min Vise.
 Saa vinder den Svend sin Jomfru.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051045">
+<text id="hostrup2018051045">
 <head>
     <title>Paa N. F. S. Grundtvigs Hundredaarsdag</title>
     <firstline>En Kæmpe han var i al sin Færd</firstline>
@@ -3017,6 +3104,7 @@ Saa vinder den Svend sin Jomfru.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 En Kæmpe han var i al sin Færd,
   hvem Frygten aldrig lammed,
 to Menneskealdre fuldt hans Sværd
@@ -3064,10 +3152,11 @@ han banked saa fast paa Hjærtedør
 hans Sang og Syner er Folkets Arv,
 de rejse dets Mod, de styrke dets Marv,
   de lyse for Slægterne mange.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051046">
+<text id="hostrup2018051046">
 <head>
     <title>Til Menneskemalerne</title>
     <firstline>At se paa Menneskenes Færd</firstline>
@@ -3075,6 +3164,7 @@ de rejse dets Mod, de styrke dets Marv,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 At se paa Menneskenes Færd,
   og ikke som en Drømmer,
 at se med aabent Blik og nær
@@ -3106,7 +3196,7 @@ Et Strejflys paa den sorte Flod,
   af Haab en enkelt Straale,
 et Vindpust af et frejdigt Mod,
   saa kan jeg alting taale,
-naar blot I éj gi’r Pølen Ret,
+naar blot I éj gi’r Pølen Ret,
   ej pjasker der som Rotter,
 men elsker Renhed, kræver Tvæt,
   imens I Snavset blotter. —
@@ -3164,10 +3254,11 @@ men det, at Livet skal fornyes
   ved Helveder at tømme,
 og Mørket skues uden Lys,
   det kalder jeg at drømme.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051047">
+<text id="hostrup2018051047">
 <head>
     <title>Vorherre og Kejseren</title>
     <subtitle>Et Juledigt</subtitle>
@@ -3176,6 +3267,7 @@ og Mørket skues uden Lys,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Verdenskejseren sad i Rom,
 Jorden bøjed sig for hans Dom,
 
@@ -3239,10 +3331,11 @@ aabner Guds Faderfavn for os,
 Nyføder Livet i Dødens Land,
 skjænker med Haab, der ej visne kan,
 Freden, der overgaar al Forstand.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2002050903">
+<text id="hostrup2002050903">
 <head>
     <title>De unges Sang</title>
     <subtitle>
@@ -3258,6 +3351,7 @@ Freden, der overgaar al Forstand.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Vi fik ej under Tidernes Tryk
 et bøjet Mod, en ludende Hyg,
 vor Kamp, vort Kald, hvad bære vi kan,
@@ -3323,10 +3417,11 @@ og vi vil lære at føre dem godt;
         bære Ungdommens Mod;
     Dagens Møje, Kampens Lue,
     aldrig i os skal det kue!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051049">
+<text id="hostrup2018051049">
 <head>
     <title>Sølvbryllup i Roskilde</title>
     <subtitle>Som Slutningssangen af ,,Æventyr i Rosenborg Have.``</subtitle>
@@ -3335,6 +3430,7 @@ og vi vil lære at føre dem godt;
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 O Anna, kjære, ved Brudebordet,
   hvorved du nu har faaet Plads igjen,
 kan ej blandt dem, der i Sang tar Ordet,
@@ -3389,10 +3485,11 @@ med Høstens Frugt og med Sang fra Maj,
       men Fred i Striden
       for Annaliden
       og Nikolaj.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051050">
+<text id="hostrup2018051050">
 <head>
     <title>En Vise om Andemad</title>
     <subtitle>Som: Nu er det stille, han har os forladt</subtitle>
@@ -3401,6 +3498,7 @@ med Høstens Frugt og med Sang fra Maj,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Venner, hvor er vort Fædreland dog kjønt,
   hæderligt det mod Alderdommen kæmper,
 alting endnu er sommerligt og grønt,
@@ -3449,10 +3547,11 @@ men det maa <w>leves</w> — Livet i vort Hjem,
   og vi taaler ej mer, det staar stille.
 Oprør vi priser ej — nej stop!
 men Skaal for dem, som rører op!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051051">
+<text id="hostrup2018051051">
 <head>
     <title>Til den danske Sønderjyde</title>
     <firstline>I aaben Mark du staar for Stød</firstline>
@@ -3460,6 +3559,7 @@ men Skaal for dem, som rører op!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I aaben Mark du staar for Stød,
 mens vi kan sidde hjemme,
 du bærer Læsset af vor Nød,
@@ -3486,10 +3586,11 @@ og Sejrens Dag sig nærme vil —
 den Sejersdag, vi mene —
 da vi kan lægge Skulder til
 hvad nu du bærer ene.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hostrup2018051052">
+<text id="hostrup2018051052">
 <head>
     <title>Smaavers</title>
     <firstline>Lige Ret for Mand og Kvinde</firstline>
@@ -3497,6 +3598,7 @@ hvad nu du bærer ene.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center><b>Lige Ret</b></center></nonum>
 
 Lige Ret for Mand og Kvinde,
@@ -3568,7 +3670,7 @@ De lyse jeg ikke laster
 og bæver ej for de bistre,
 men hverken i Favn mig kaster
 paa Realismens Fantaster
-éller Romantikens Filistre.
+éller Romantikens Filistre.
 
 ---
 
@@ -3591,8 +3693,9 @@ Monstro de har skadet hinandens Sprog
     af lutter Enighed kun,
 da ikke jeg tale kan som en Bog
     og skriver blot som en Mund?
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

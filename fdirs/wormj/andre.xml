@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="wormj" status="incomplete" type="poetry">
 <workhead>
    <title>Andre digte</title>
-   <year>?</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="wormjandrea0">
+<text id="wormjandrea0">
 <head>
    <title>Satyre over Kingos Kalot</title>
    <toctitle>Satyre over Kingos Kalot</toctitle>
@@ -18,6 +15,7 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
   Jeg veed en <i>Calot</i>,
 En Geistlig at bære, hand nylig har faaet,
 Hun sidder paa Toppen af hans Hoved saa fast,
@@ -87,7 +85,8 @@ Og naar du i [Kroeret] har drucket dit Øl,
 [Tag vand i <i>Calotten</i>, og Halsen i skiøll,]
 Og om du om Natten behøver en Pot,
   Da brug din <i>Calot</i>.
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

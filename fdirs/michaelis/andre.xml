@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="michaelis" status="incomplete" type="poetry">
 <workhead>
    <title>Andre digte</title>
-   <year>?</year>
    <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
-<poem id="michaelis2002040101">
+<text id="michaelis2002040101">
 <head>
    <title>Bakkehuset</title>
    <toctitle>Bakkehuset</toctitle>
@@ -20,6 +18,7 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Fra dette Hjem, hvis klare Ruder vendte
 Mod Mark og Sund og Byens fjerne Taarne,
 Er vandret forhen, af Begejstring baarne,
@@ -39,10 +38,11 @@ Vidt over Land nu toner Mindebruset:
 Det gamle Træ har Øksen ikke hugget,
 Men faste Mure har paany sig lukket
 Om Genien, der bor i Bakkehuset.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2019052401">
+<text id="michaelis2019052401">
 <head>
     <title>Den lystige Døde</title>
     <firstline>I en fed og mulden Jord, hvor Sneglene sig mave</firstline>
@@ -54,27 +54,29 @@ Om Genien, der bor i Bakkehuset.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I en fed og mulden Jord, hvor Sneglene sig mave,
 vil jeg bore mig et Leje i Gravens dybe Favn,
-hvor mine gamle Knogler kan finde Glemslens Havn 
+hvor mine gamle Knogler kan finde Glemslens Havn
 og sove som en Haj i de bundløse Have.
 
 Jeg hader Testamenter og de anlagte Grave;
-langt heller end at volde om blot en Taares Savn, 
-langt før jeg vilde levende indbyde Grib og Ravn 
+langt heller end at volde om blot en Taares Savn,
+langt før jeg vilde levende indbyde Grib og Ravn
 til i mit skidne Aadsel at flænse og save.
 
 I Orme! sorte Venner uden Øre, uden Øje,
-I ser en fri Mand komme, hvem Døden skal fornøje! 
+I ser en fri Mand komme, hvem Døden skal fornøje!
 Livslystne Filosoffer i Forraadnelsens Land,
 
 gaa uden Sky igennem mine Resters arme Øde
 og sig mig, om vel nogen Pinsel gives kan
-for slig en gammel Krop, uden Sjæl og død blandt Døde!    
+for slig en gammel Krop, uden Sjæl og død blandt Døde!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="michaelis2019052402">
+<text id="michaelis2019052402">
 <head>
     <title>En Nat</title>
     <firstline>En Nat, da jeg hviled hos en hæslig Jødinde</firstline>
@@ -86,25 +88,27 @@ for slig en gammel Krop, uden Sjæl og død blandt Døde!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 En Nat, da jeg hviled hos en hæslig Jødinde
-som et Lig, der langs et andet har strakt sig koldt og mat, 
+som et Lig, der langs et andet har strakt sig koldt og mat,
 ved dette solgte Legem randt mig pludselig i Minde
 den sørgmodige Skønhed, min Attraa har forladt.
 
-Jeg saa for mine Øjne hendes fødte Majestæt, 
-hendes Blik, der er væbnet med Almagt og Ynde, 
-hendes Haar, der som en duftende Hjelm har Issen klædt, 
+Jeg saa for mine Øjne hendes fødte Majestæt,
+hendes Blik, der er væbnet med Almagt og Ynde,
+hendes Haar, der som en duftende Hjelm har Issen klædt,
 og hvis blotte Erindring kan vække mig til Brynde.
 
-Thi dit adelige Legem med Kys jeg dække vilde, 
+Thi dit adelige Legem med Kys jeg dække vilde,
 fra dine friske Fødder til de sorte Lokkers Hang
 overskylle dig med ømme Kærtegns Rigdomskilde,
 
-om du kunde blot en Aften med Taarer uden Tvang, 
-du de Grusommes Dronning, med Taarer blidt formørke 
-dine iskolde Øjnes straalende Styrke.    
+om du kunde blot en Aften med Taarer uden Tvang,
+du de Grusommes Dronning, med Taarer blidt formørke
+dine iskolde Øjnes straalende Styrke.
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

@@ -1,12 +1,16 @@
-// @flow
+import * as React from 'react';
 
-import React from 'react';
-
-const Stack = props => {
+const Stack = (props) => {
   let { children, spacing } = { spacing: '15px', ...props };
-  const padded = children.map((c, i) => {
-    const style = i < children.length - 1 ? { marginBottom: spacing } : {};
-    return <div style={style}>{c}</div>;
+
+  const childrenArray = React.Children.toArray(children);
+  const padded = childrenArray.map((c, i) => {
+    const style = i < childrenArray.length - 1 ? { marginBottom: spacing } : {};
+    return (
+      <div style={style} key={i}>
+        {c}
+      </div>
+    );
   });
   return <div>{padded}</div>;
 };

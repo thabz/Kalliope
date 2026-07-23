@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1925" author="claussen" status="complete" type="poetry">
 <workhead>
    <title>Heroica</title>
    <subtitle>Nye Digte</subtitle>
    <year>1925</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
    <notes>
       <note>Noter markeret med foranstillet * er Claussens egne.</note>
    </notes>
 </workhead>
 <workbody>
 
-<prose id="claussen2002020201">
+<text id="claussen2002020201" skip-index="true">
 <head>
    <title>Indledning</title>
    <toctitle>Indledning</toctitle>
@@ -21,13 +19,15 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<prose>
 Til denne Samling nye Vers er det efter nogles Mening passende, at jeg knytter en Række af de Tanker, som man allerede fandt i mit Foredrag om Halvfemsernes Lyrik, Jord og Sjæl, 1917, udkommet 1918 i Løvetandsfnug. Foredraget var en Fremstilling af, hvorledes Folk i en lille Storstad i Halvfemserne var forfarne i at vide en lille Smule for meget om altfor lidt, og hvor nødigt man gik paa Opdagelsesrejse i nye Egne, hvor kun Instinktet og Poesien kan frelse os. Hin Tid var blevet en kritisk Tid i Ordets dobbelte Forstand og maatte værge sig med Ironi og Latter. Uden at forsmaa disse Vaaben maa man dog fornægte dem, hvis de stiller sig i Vejen for en ny Udfoldelse. Agerkaalen skal ikke opæde Kornet. Og en Dag mod Slutningen af Aarhundredet var det, trods alt, Tankens tillidsfulde Selvudfoldelse, Digtningen og Verset, der havde vundet Sejr over den kendte Lattermildhed. Alle Videnskaber og Kunster er en Dag mod Slutningen af det Nittende Aarhundrede fyldte af en frugtbar Mumlen, som Kilder i en overdaadig Have, der berøres af et Pust fra Universet. Ny Viden afføder ny blændende Teknik i hver Art og Gren. Men Poesien er lykkeligst, thi den kender hemmeligt den skabende Lov: Alt indefra.
    Poesien tonede frem i Literaturen som en ny Stad bygget fra Luften. Den lyriske Undersøgelse, hvori jeg og nogle andre havde nedlagt al vor Kunnen og mest personlige Viden, var bleven Tidens sejrende Udtryk med nye Midler til Forbindelse mellem Jord og høje Himle, Modtagelighed for Kundskaber, sjælelig Stemthed.
    Kan vi nævne dette, som blev vor Erobring, uden at rose den nærværende Tid paa Bekostning af noget fra før? Alle Tider vækker Længsler hos os. Men vi elsker den Sandhed og Skønhed i store Træk, der taler ud fra et nyt Ansigt, med Anlæg og Løfter fra alle Tider, med et Præg af egen Aand, Skæbne, Historie - saa at selv de smaa Træk bliver Heroica.
-</body>
 </prose>
+</body>
+</text>
 
-<prose id="claussen2002020202">
+<text id="claussen2002020202" skip-index="true">
 <head>
    <title>Ny Aand</title>
    <subtitle>Forbindelsen mellem Fantasi og Videnskab</subtitle>
@@ -37,6 +37,7 @@ Til denne Samling nye Vers er det efter nogles Mening passende, at jeg knytter e
    <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
+<prose>
 Man søger til de store Byer med den Forestilling, at man skal leve med, faa Del i det store Fællesskab, mærke Tidens Aande og Puls. Men intet Sted finder Digteren Sammenhængen mellem levende Væsner løsere end i Storstaden.
    Intet Sted er den ensomme Grubler ensommere og mere overladt til de graa Stemninger, som for et Verdensbarn er Døden.
 
@@ -99,7 +100,7 @@ Den megen Mistro, Nøgternhed, Vredladenhed, som i ældre Slægter var de Lærde
       skal glade vi til Kirke gaa.
 
 I al Tænkning, i den religiøse, den videnskabelige og den digteriske, er det tilsidst Indbildningskraften, man støtter sig til, naar det andet svigter.
-   For de kristne hedder det ,,Traaden fra oven''. For Videnskabsmanden er der ingen Ulykke sket, selv om Jorden glipper under Fødderne. De kalder det x eller y eller z. Intet er dem mere kærkomment end at eftersøge og bestemme saadan noget ukendt, selv om det bliver x/&infin; (x divideret med uendelig) og forsvinder som Snus. Tænk, om de skulde finde en ganske ny Aarsag eller noget uforklarligt at indregistrere, saasom et hidtil ikke paavist Grundstof, et Radium paa den gamle Klode, hvor Kemikerne har endevendt hvert Støvgran. Om ikke andet er at finde, er der altid en smuk Formel at gøre.
+   For de kristne hedder det ,,Traaden fra oven''. For Videnskabsmanden er der ingen Ulykke sket, selv om Jorden glipper under Fødderne. De kalder det x eller y eller z. Intet er dem mere kærkomment end at eftersøge og bestemme saadan noget ukendt, selv om det bliver x/∞ (x divideret med uendelig) og forsvinder som Snus. Tænk, om de skulde finde en ganske ny Aarsag eller noget uforklarligt at indregistrere, saasom et hidtil ikke paavist Grundstof, et Radium paa den gamle Klode, hvor Kemikerne har endevendt hvert Støvgran. Om ikke andet er at finde, er der altid en smuk Formel at gøre.
    Katolikerne har Traaden fra oven. Digteren har Traaden i sig selv, den uendelige Sammenhæng. Om man ikke forstaar den i hver Sang, hver Strofe, hvert Vers, betyder mindre. Han har maaske med Hensigt villet spænde Ben for den Forfarne og faa den Selvkloge til at snuble. Det væsenligste er, om De forstaar, at bag disse tusinde Sange med deres Rim og Sindbilleder er en Hensigt, en Ro, som hos Luftsejleren, der ikke kæntrer, en Tryghed for Sjælen midt i den store Hvirvel og Rastløshed.
    Hvad jeg har sagt om en Forfatter et Sted, at han havde sit Talents Aand, er kun et simpelt Udtryk for det, der er Mesterens Kendetegn.
 
@@ -126,8 +127,9 @@ Hermed er mit Emne udtømt. Men Æventyret om den moderne Lyrik er ikke dermed t
    Men saa kommer Aandens Kendsgerninger og tager disse Klokkere i Nakken.
    Tvivl ikke om noget i vor Tid, da alle Drømme og alle Mareridt flyver gennem Luften.
    Det bliver en Gang nødvendigt, at Klokkerne ringer rigtigt. Lad dem ringe, naar Broen bygges mellem Realisme og Idealitet, mellem Jord og Sjæl. Jeg tror, at uden at elske Realitet kan man ikke forstaa nogen Idealisme. Jeg tror, at uden Idealisme er der ingen Realitet.
-</body>
 </prose>
+</body>
+</text>
 
 <section level="1">
 <head>
@@ -135,7 +137,7 @@ Hermed er mit Emne udtømt. Men Æventyret om den moderne Lyrik er ikke dermed t
 </head>
 <content>
 
-<poem id="claussen2002020203">
+<text id="claussen2002020203">
 <head>
    <title>Første Hexameterbrev</title>
    <subtitle>til Johannes Jørgensen</subtitle>
@@ -146,6 +148,7 @@ Hermed er mit Emne udtømt. Men Æventyret om den moderne Lyrik er ikke dermed t
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Kæreste Ven, ihvor du gaar hen og hvor vidt du end færdes,
 tænk da paa de bekymrede Mænd, som har Ophold ved Nyborg.
 Ikke alene jeg er, men hos mig den malende Gottschalk <note>Albert Gottschalk (1866-1906), landskabsmaler og nær ven af Claussen.</note>
@@ -193,10 +196,11 @@ Træerne knirker og knitrer, som spændte Gudsmoder sit Snørliv,
 og mit Hjerte udstrømmer i Digt som et lynende Skymulm.
 
               <i>Dyrehaugegaard ved Nyborg i Somren 1892.</i>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002020204">
+<text id="claussen2002020204">
 <head>
    <title>Hexameter-Hymne til Pan og Giovanni</title>
    <subtitle>(Treogtredive Aar senere).</subtitle>
@@ -207,6 +211,7 @@ og mit Hjerte udstrømmer i Digt som et lynende Skymulm.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 I
 Fynsk og falstersk, et Fostbroderskab fra afvigte Seklum,
 født under Storstadens raadløse Vandren i Øster og Vester,
@@ -288,10 +293,11 @@ Som en Moder af Folket har i sig en Rest af Guds Moder!
 Som ved Paaske og Pinse en Blomst bringer Vaar og Messias!
 ja, som en Datter af Pan uden Rædsel forløses og føder -
 hilser et Foraar i Danmark Giovanni, naar Liljerne blomstrer.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002020205">
+<text id="claussen2002020205">
 <head>
    <title>Anraabelse</title>
    <toctitle>Anraabelse</toctitle>
@@ -300,6 +306,7 @@ hilser et Foraar i Danmark Giovanni, naar Liljerne blomstrer.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Har jeg min Bue velspændt og i Koggeret træffende Pile?
 Und mig, Fjerntrammer, at føre et Mesterskud - Føbos Apollon,
 Solgud og Skytte og Mesterskabs Aand for de skabende Verdner.
@@ -327,10 +334,11 @@ Solgud og Mesterskabs Aand. Der findes en Verden bag Verden
 og en Sol bagved Solen, et Lys bliver tændt bagved Lyset.
 Guddomsdybt var det Hjerte, der brast paa et Kors i Judæa:
 Solen selv blev korsfæstet og genfødt med Ild, som er Naade.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002020206">
+<text id="claussen2002020206">
 <head>
    <title>Søndag i Skoven</title>
    <toctitle>Søndag i Skoven</toctitle>
@@ -339,6 +347,7 @@ Solen selv blev korsfæstet og genfødt med Ild, som er Naade.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Søndag i Skoven. Det blaaner i Træernes øverste Kroner.
 Hvisk og tisk kun om Højtid, I sødmefyldte Serafer!
 Helt ind i Himlen jeg følger Jer gerne. Dog endnu er Jorden
@@ -380,8 +389,9 @@ Derfor er Alvor mig kær i Musikken, I høje Serafer.
 Ingen Taarer jeg fælder, hvis Koret kan opveje Solen,
 hvis et Atom gennem Solen kan stige til stærkere Stjerner ...
 Men jeg var Jæger paa Jorden. Og først vil jeg fælde en Panter.
+</poetry>
 </body>
-</poem>
+</text>
 </content>
 </section>
 
@@ -391,7 +401,7 @@ Men jeg var Jæger paa Jorden. Og først vil jeg fælde en Panter.
 </head>
 <content>
 
-<poem id="claussen2001123101">
+<text id="claussen2001123101">
 <head>
    <title>Heroica</title>
    <toctitle>Heroica</toctitle>
@@ -400,6 +410,7 @@ Men jeg var Jæger paa Jorden. Og først vil jeg fælde en Panter.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Det er en Dyst at standse vilde Heste.
 Det er en Dyst at vinde sjældne Kvinder,
 store og smukke, som gør fager Modstand,
@@ -429,10 +440,11 @@ Det er en Dyst at have Kraft som Aand
 og ikke taale Straf af nogen Næve.
 Hvis du fordømmes, skal du møde Dommen
 med Ord, som har fem Fingre paa hver Haand.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2001123102">
+<text id="claussen2001123102">
 <head>
    <title>Jeg gav den unge Gud mit Hjerte</title>
    <toctitle>Jeg gav den unge Gud mit Hjerte</toctitle>
@@ -441,6 +453,7 @@ med Ord, som har fem Fingre paa hver Haand.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Jeg gav den unge Gud mit Hjerte,
 jeg gav ham alle mine Sange.
 Selv det umulige jeg havde Mod at nærmes -
@@ -477,10 +490,11 @@ En Bajadere og en kølig Ranke -
 en Dumhed bragt i Form, det er en Tanke ...
 
 Naar Verset ryster sin Løvemanke.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002020207">
+<text id="claussen2002020207">
 <head>
    <title>Erobrere</title>
    <toctitle>Erobrere</toctitle>
@@ -489,6 +503,7 @@ Naar Verset ryster sin Løvemanke.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Trætte Soldater i Række og Rad,
 vi rykker ind i den fremmede Stad.
 Alt ligger aabent fra Slot og til Rønne,
@@ -543,10 +558,11 @@ Dog Byen er tagen, her bliver vi fast,
 hvor Fjenderne rømte i Huj og Hast.
 Saa rensed vi Bøsserne, sov som Helte
 og fandt, at Huse er bedre end Telte.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002020208">
+<text id="claussen2002020208">
 <head>
    <title>Drømt en Morgenstund</title>
    <toctitle>Drømt en Morgenstund</toctitle>
@@ -555,6 +571,7 @@ og fandt, at Huse er bedre end Telte.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Der vaagned en Drøm en Morgenstund
 om Sheherezades Fabler, -
 om Dampere med Røg i Mund
@@ -615,10 +632,11 @@ der laa en Fabelverden
 og næsten et Gudefund
 saa sært som nogen Fiskeform
 fra Oceanernes Bund.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2001123103">
+<text id="claussen2001123103">
 <head>
    <title>Don Luis de Góngoras Sonet om Madrid</title>
    <toctitle>Don Luis de Góngoras Sonet om Madrid</toctitle>
@@ -631,6 +649,7 @@ fra Oceanernes Bund.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Et dyrisk Liv med Hexegrydens Brusen;
    mod Mandens Mønt Megærer sammensvorne;
    tusend forfængelige Haab forlorne;
@@ -650,10 +669,11 @@ Krigsmænd af Fag, lemlæstede Krabater,
    det er Madrid, det burde hedde Helved.
 
 <nonum>                <i>(16. Aarhundrede)</i></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2001123104">
+<text id="claussen2001123104">
 <head>
    <title>Nat paa Havet</title>
    <toctitle>Nat paa Havet</toctitle>
@@ -662,6 +682,7 @@ Krigsmænd af Fag, lemlæstede Krabater,
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Hun hæver to mørkrøde Roser
 mod Aftenens oprørte Sø,
 de straaler som hellige Løfter
@@ -676,10 +697,11 @@ Og andre halvskjulte Skygger
 ses kredse ved Ror og Rat,
 som gjorde Skønhed dem søvnløs
 i den bølgeomtumlede Nat.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002020209">
+<text id="claussen2002020209">
 <head>
    <title>Der er intet saa yndigt i Foraarets Gry</title>
    <toctitle>Der er intet saa yndigt i Foraarets Gry</toctitle>
@@ -688,6 +710,7 @@ i den bølgeomtumlede Nat.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Der er intet saa yndigt i Foraarets Gry,
 der er intet saa sødt i den nyfødte Sky
 som den Elskede og hendes Kjole,
@@ -713,10 +736,11 @@ Der er intet mer ondt ved det hærgende Hav.
 Og ingen Stolthed gør fattig og lav
 som at sætte sin Kærlighed uhørt paa Spil,
 for at sanke de Sten ... som du vil ...
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002020210">
+<text id="claussen2002020210">
 <head>
    <title>Flyveren og Pigen</title>
    <toctitle>Flyveren og Pigen</toctitle>
@@ -725,6 +749,7 @@ for at sanke de Sten ... som du vil ...
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Flyvere i sære Kredse svinger
 over vore Hoveder og Tage.
 Fartøj, som ej kender til Fortøjning,
@@ -755,10 +780,11 @@ Jeg er Flyveren, og du er Pigen.
 Jeg er Jakob, du er Jakobsstigen.
 Nægt mig ikke, der er Vej til Himlen ...
 Jeg har kendt den førend Krigen.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002020211">
+<text id="claussen2002020211">
 <head>
    <title>Skumringsbillede</title>
    <toctitle>Skumringsbillede</toctitle>
@@ -767,6 +793,7 @@ Jeg har kendt den førend Krigen.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 En mørk og faamælt Pige
 betjente altid Sigmund,
 beredte ham hans Bad,
@@ -802,10 +829,11 @@ Naar Sigmund siden blev ene,
 han lagde tyst sine Klæder,
 men sad og grubled en Stund
 med samme Træk om sin Mund.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002020212">
+<text id="claussen2002020212">
 <head>
    <title>Forklaringen</title>
    <toctitle>Forklaringen</toctitle>
@@ -814,6 +842,7 @@ med samme Træk om sin Mund.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Planløst er det ikke.
 Og tror I, jeg mangler Plan,
 det er kun, fordi jeg aldrig
@@ -828,8 +857,9 @@ Før I kan elske mangfoldigt
 hver Urt og hver hængende Gren,
 saa én straks bliver til tyve
 og tyve omsider til én.
+</poetry>
 </body>
-</poem>
+</text>
 </content>
 </section>
 
@@ -839,7 +869,7 @@ og tyve omsider til én.
 </head>
 <content>
 
-<poem id="claussen2002020213">
+<text id="claussen2002020213">
 <head>
    <title>I Begyndelsen var -</title>
    <toctitle>I Begyndelsen var -</toctitle>
@@ -848,6 +878,7 @@ og tyve omsider til én.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 I Begyndelsen var Kilden
 født paa en Bjærgaas i Morgenrøden.
 Solen rased vildt som Døden,
@@ -874,10 +905,11 @@ Har jeg døjet ondt af Solen,
 Elskte, du er frisk som Kilden.
 Hvis jeg fryser i September,
 Yndige, saa er du Ilden.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002020214">
+<text id="claussen2002020214">
 <head>
    <title>December 1923</title>
    <toctitle>December 1923</toctitle>
@@ -886,6 +918,7 @@ Yndige, saa er du Ilden.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Min Kraft er ikke sprængt,
 Min Tone er betrængt
 Ak, giv mig Guders Gud
@@ -905,10 +938,11 @@ Og kun fortættet Væsen
 kan fylde mit Begær
 
 Fortætning af alt Væsen.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002020215">
+<text id="claussen2002020215">
 <head>
    <title>I Staden</title>
    <toctitle>I Staden</toctitle>
@@ -917,6 +951,7 @@ Fortætning af alt Væsen.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 København er stor,
 men Danmarks Land er lille.
 Stjernerne gaar om paa Gaderne
@@ -926,10 +961,11 @@ Søde Kvindeøjne
 stirrer paa Façaderne,
 vandrer flinkt i Gaderne
 mellem Job og Hor.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002020216">
+<text id="claussen2002020216">
 <head>
    <title>21.2.24</title>
    <toctitle>21.2.24</toctitle>
@@ -938,16 +974,18 @@ mellem Job og Hor.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Hun har saa skønt fra Naturen
 en Holdning i store Drag,
 at man vilde kysse Konturen
 af hendes <i>For og bag</i>,
 selvom hun laa forstenet
 og kold i en Sarkofag.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002020217">
+<text id="claussen2002020217">
 <head>
    <title>Vinterflora</title>
    <toctitle>Vinterflora</toctitle>
@@ -956,6 +994,7 @@ og kold i en Sarkofag.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Det er sære lunkne Vinteraar, der tærer
 som Vampyrer Kraften ud af vore Sfærer.
 
@@ -964,10 +1003,11 @@ hvorved Jorden tyst sin Blomstersjæl forynger.
 
 Her er Ungdomsmylder: fuldt af Hyacinter
 og af fuldt udsprungne Kvinder nu i Vinter.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002020218">
+<text id="claussen2002020218">
 <head>
    <title>Vaarbebudelse</title>
    <toctitle>Vaarbebudelse</toctitle>
@@ -976,6 +1016,7 @@ og af fuldt udsprungne Kvinder nu i Vinter.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Dette Snefald over Kirkegaarden
 midt i Vintrens Hjerte kalder tyst paa Vaaren.
 Natten skælver ved det store Foraars Komme.
@@ -985,10 +1026,11 @@ Denne fine Sne paa Kinden,
              mærker du det ej?
 er forfrosne Dødes Ild,
              ... med Blomsterkys til dig.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002020219">
+<text id="claussen2002020219">
 <head>
    <title>Kan Sommerfuglevinger tynge -</title>
    <toctitle>Kan Sommerfuglevinger tynge -</toctitle>
@@ -997,6 +1039,7 @@ er forfrosne Dødes Ild,
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Kan Sommerfuglevinger tynge?
 Tænk, hvad to spinkle Skuldre kunde bære
 for dem, hun vilde livsforynge.
@@ -1007,18 +1050,20 @@ Naar Vintren ender, vil vi atter vaage.
 
 Den fine Blomst sov ind før Vaarens Smil
 i Hospitalet bag den svære Luge.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002020220">
+<text id="claussen2002020220">
 <head>
-   <title>30.7.23 &bdquo;Hôtel de la plage&ldquo;, Donville</title>
-   <toctitle>30.7.23 &bdquo;Hôtel de la plage&ldquo;, Donville</toctitle>
-   <indextitle>30.7.23 &bdquo;Hôtel de la plage&ldquo;, Donville</indextitle>
+   <title>30.7.23 „Hôtel de la plage“, Donville</title>
+   <toctitle>30.7.23 „Hôtel de la plage“, Donville</toctitle>
+   <indextitle>30.7.23 „Hôtel de la plage“, Donville</indextitle>
    <firstline>For at gemme Hjemmets Lykke</firstline>
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 For at gemme Hjemmets Lykke
 lukked vi med Laase Huset,
 rejste ud, hvor Vinden blæser,
@@ -1040,10 +1085,11 @@ rejste vi ...
 Sommerfuglen vakler henrykt
 op i Blaaet. Vore Længsler
 lod vi bag os - - - - - - - -
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002020221">
+<text id="claussen2002020221">
 <head>
    <title>Et Foraarsbud</title>
    <toctitle>Et Foraarsbud</toctitle>
@@ -1052,6 +1098,7 @@ lod vi bag os - - - - - - - -
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Et Foraarsbud, en Vaarblomst
 har atter kysset mig.
 Og kær og ung og sælsom
@@ -1067,8 +1114,9 @@ lad med sin lyse Streg
 det unge Foraar spire!
 - - - -
 det unge Foraar spire.
+</poetry>
 </body>
-</poem>
+</text>
 </content>
 </section>
 
@@ -1078,7 +1126,7 @@ det unge Foraar spire.
 </head>
 <content>
 
-<prose id="claussen2002020222">
+<text id="claussen2002020222" skip-index="true">
 <head>
    <title>Fantasia</title>
    <toctitle>Fantasia</toctitle>
@@ -1086,6 +1134,7 @@ det unge Foraar spire.
    <quality>korrektur1</quality>
 </head>
 <body>
+<prose>
 Jeg ved, at noget i de efterfølgende Betragtninger vil forekomme stødende uforstaaeligt og overspændt.
    Det er imidlertid kun en Skildring af, hvorledes en Kunstner for at udvide sin Synskreds lader, som om alle de Love, man almindelig tror paa, var ukendte og ikke gældende.
    De fleste tror jo at vide, at Planter ikke har nogen Tanke eller Følelse; at Byens Støj er sjælløs og upoetisk; at Kvinder er jordiske og slet ikke sælsomme; at Sanserne er mørke Magter; at Hensigter er egenkærlige o.s.v.
@@ -1111,8 +1160,9 @@ overdaadige Drøm, med de senere Aar og den paafølgende Virkelighed, forstaar j
    Aa! ingen <i>tilfældige</i> Slør eller Blomster havde hun. Alt var gennem Glimt og Skygger kun Udfoldelse af hendes Grundstof eller blivende Grund, Alvor fra Dybet af al Alvor. Jubel af et elskende Hjertes Jubel.
    Jeg ved næppe, hvorledes jeg ud af virkelige Kvindeansigter har skabt denne Fantasia, den skabende Tankes Muse, Medhjælp til at være hos Digteren ved de højeste Begivenheder, hvor de virkelige Kvinder ikke strakte til.
    Men jeg tror, at det ikke var et tomt Billede, en gold Drøm, nej en ny Virkelighed, jeg anede frem af Almagtens Gemmer og satte i Frihed.''
-</body>
 </prose>
+</body>
+</text>
 </content>
 </section>
 
@@ -1122,7 +1172,7 @@ overdaadige Drøm, med de senere Aar og den paafølgende Virkelighed, forstaar j
 </head>
 <content>
 
-<poem id="claussen2002020223">
+<text id="claussen2002020223">
 <head>
    <title>En Historie</title>
    <toctitle>En Historie</toctitle>
@@ -1131,6 +1181,7 @@ overdaadige Drøm, med de senere Aar og den paafølgende Virkelighed, forstaar j
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Søde Barn, jeg var kun fireogtyve,
 du var seksogtyve, gør det noget,
 at jeg fik dit Hjerte til at smile?
@@ -1168,10 +1219,11 @@ store Somre modner dine Haver,
 mørkt og violet som Dyreskind
 staar en Tordensky bag Kløvermarken -
 Du har Frugtbarhed for hele Aaret.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002020224">
+<text id="claussen2002020224">
 <head>
    <title>Ved Afrodites Støtte</title>
    <toctitle>Ved Afrodites Støtte</toctitle>
@@ -1180,6 +1232,7 @@ Du har Frugtbarhed for hele Aaret.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Han har sagt, at jeg skal møde
 ham ved Afrodites Støtte.
 Jeg er angst for Marmorstøtten,
@@ -1238,10 +1291,11 @@ O, men hvis min Ven nu møder
 Byens hæslige Hetærer!
 O, forbarm dig, Afrodite.
 Afrodite, jeg begærer.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002020225">
+<text id="claussen2002020225">
 <head>
    <title>Modellerne</title>
    <toctitle>Modellerne</toctitle>
@@ -1250,6 +1304,7 @@ Afrodite, jeg begærer.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 De kom ind, to unge Piger paa en kølig Formiddag.
 Før vi havde ønsket Synet, stod de nøgne for og bag,
 frysende som friske Blomster, fuld af Farvevelbehag.
@@ -1311,10 +1366,11 @@ De er stolte, at de gav dig Vinger.
 Det er Underet og Spøgen:
 Du blev Skaber til et Billed,
 da en Pige klædtes nøgen.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002020226">
+<text id="claussen2002020226">
 <head>
    <title>Den lykkelige Maler</title>
    <toctitle>Den lykkelige Maler</toctitle>
@@ -1323,6 +1379,7 @@ da en Pige klædtes nøgen.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Der er saa længe kriget fælt og pratet.
 Nej de, hvis Hjerte rummer Farveskriget,
 forstaar: ved Malerkunst fornyes Riget.
@@ -1398,10 +1455,11 @@ Ej Krig og Kneb - men Kunst fornyer Riget.
 Thi Maleren, med klare Øjne fostret,
 saar Verdensfreden, Skønheds-Konkordatet
 fra Stalden, Dueslaget og til Klostret.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002020227">
+<text id="claussen2002020227">
 <head>
    <title>Bøgen og Nælden</title>
    <toctitle>Bøgen og Nælden</toctitle>
@@ -1410,6 +1468,7 @@ fra Stalden, Dueslaget og til Klostret.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
                    Ord til Sønderjyderne.
 
 Den røde Valmu' ler til Landsbypigen:
@@ -1470,10 +1529,11 @@ Lad Eders Haand af Haandtryk festlig smykkes!
 Som dette Digt maa trykkes frit - - ,,Maa trykkes''!
 
                    <i>Versailles 1920.</i>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002020228">
+<text id="claussen2002020228">
 <head>
    <title>Alle Nordens Fugle</title>
    <toctitle>Alle Nordens Fugle</toctitle>
@@ -1482,6 +1542,7 @@ Som dette Digt maa trykkes frit - - ,,Maa trykkes''!
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Midt i Nordens stormomsuste Hjørne
 rejser sig det solindspundne Træ,
 i hvis friske Løv er frodig Læ.
@@ -1517,10 +1578,11 @@ tro paa Nordens Fylgie, tro paa Slægten,
 som er groet i disse Grenes Læ.
 Dybt har Somren mærket Dal og Høje,
 Sejren kyssed Drømmen i vort Øje.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002020229">
+<text id="claussen2002020229">
 <head>
    <title>Sjælland og Digteren</title>
    <toctitle>Sjælland og Digteren</toctitle>
@@ -1530,6 +1592,7 @@ Sejren kyssed Drømmen i vort Øje.
    <keywords>holstein</keywords>
 </head>
 <body>
+<poetry>
                  <i>Til Ludvig Holstein</i>
 
 Hvad er <i>det</i> at elske og forsage?
@@ -1554,10 +1617,11 @@ Købt med Blodets Pragt, som er en Løves,
 rækker han de Blomster, som behøves..
 Foraarsbud til vaklende og svage!
 og til Hjertet Brød, hvis du er sulten.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002020230">
+<text id="claussen2002020230">
 <head>
    <title>J. F. Willumsen</title>
    <toctitle>J. F. Willumsen</toctitle>
@@ -1566,6 +1630,7 @@ og til Hjertet Brød, hvis du er sulten.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Fra en gaade-opfyldt
    Drømmesigerske
 var hans Muse bleven
@@ -1582,7 +1647,7 @@ Men vor Spot herhjemme
    til dit Jotunhjem!''
 
           *
-	
+
 Bølgen bliver Pol-Is,
    Sol-Ild bliver Kul.
 Verden er et Gaadebjerg
@@ -1594,7 +1659,7 @@ Og Øresund har Skyllevand
    til hele Clondykes Guld.
 
           *
-	
+
 Du har taget Skyller,
    Willum, som en Mand
 Stundum tror man, Verden
@@ -1611,7 +1676,7 @@ naar vi rolig skyller
    Skyllevandet ud.
 
            *
-	
+
 Fandt han Guld paa Fjeldet,
    hvor ej Urt vil gro?
 Fandt han det ved Porten
@@ -1631,14 +1696,14 @@ Norner, som ej sove,
    hindre Mænds Forlis.
 
             *
-	
+
 Willum Skattegraver,
    stræb kun tillidsfuld!
 Kattegat har Skyllevand
    til mer end Clondykes Guld.
 Den, som graver dygtig,
    ham er Lykken huld.
-	
+
 Stene, Sølv og Sager
    fandt du mangen Gang.
 Men hvad er nu dette?
@@ -1657,10 +1722,11 @@ for at søge Helten
 slaa sin Kappe om ham,
    dække mildt hans Saar
 som Valkyrie med sit lange, gyldne Haar.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002020231">
+<text id="claussen2002020231">
 <head>
    <title>Nils Collett Vogt</title>
    <toctitle>Nils Collett Vogt</toctitle>
@@ -1670,6 +1736,7 @@ som Valkyrie med sit lange, gyldne Haar.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Strid mellem Rigsmaal og Maalmænd, Strid mellem Norske og Danske.
 Hvem, udi Belzebub, skal eje de norrøne Øer?
 Rækker vi Haanden til Haandslag, napper I fra os en Færing,
@@ -1685,10 +1752,11 @@ Nej, du har Hekla i Brystet og Geysirs hedt sprudlende Kilde.
 Fyrstelig Blaaræv kommer din Digter og Jæger paa Skud.
 Glem nu hine Værdier fra uorganiske Verdner.
 Pris din prægtige Isbjørn og Sangfugl, Nils Collett Vogt!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002020232">
+<text id="claussen2002020232">
 <head>
    <title>Til Thøger Larsen</title>
    <toctitle>Til Thøger Larsen</toctitle>
@@ -1698,6 +1766,7 @@ Pris din prægtige Isbjørn og Sangfugl, Nils Collett Vogt!
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Jeg elsker Solskinnet og Regnen, Blæsten og Hverdagen
 i København og overalt i Danmark,
 Smagen og Folket og det bedste af den skabende Aand i Danmark.
@@ -1722,10 +1791,11 @@ synes du at tyde med Livets Sikkerhed,
 som var alle Bladene paa Ygdrasils Ask
 kun mange sære Omdannelser
 af et eneste Blad.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002020233">
+<text id="claussen2002020233">
 <head>
    <title>Sejre og Vunder</title>
    <toctitle>Sejre og Vunder</toctitle>
@@ -1734,6 +1804,7 @@ af et eneste Blad.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Nok er at tale om,
 naar vi tilsammen kom
 - sælsomme Tider og Dage.
@@ -1761,10 +1832,11 @@ udslidt af Vinterens Vinde?
 - Er du et gammelt Træ,
 staar dog med Smil og Læ,
 Sjæl, du er endnu derinde.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002020234">
+<text id="claussen2002020234">
 <head>
    <title>Skærveslagerens Vise</title>
    <subtitle>Gammelfransk</subtitle>
@@ -1778,6 +1850,7 @@ Sjæl, du er endnu derinde.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 :,: Ved en Vej i nørre Len :,:
    :,: stod en Vejmand og slog Sten. :,:
 I Dagevis, i Ugevis
@@ -1802,10 +1875,11 @@ slog jeg heller ikke Sten.
 :,: Thi Livets Vej er fuld af Sten. - :,:
    Thi Livets Vej er fuld af Sten.
 Det er ej den grønne Gren.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002010601">
+<text id="claussen2002010601">
 <head>
    <title>Vaarsang ved Jul</title>
    <toctitle>Vaarsang ved Jul</toctitle>
@@ -1814,6 +1888,7 @@ Det er ej den grønne Gren.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Tusmørkets Stjerner
 rimblege staar.
 Sig, min Veninde,
@@ -1845,10 +1920,11 @@ tyst, hvor vi gaar.
 Ak, min Veninde -
 
 er Højtid inde?
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002010602">
+<text id="claussen2002010602">
 <head>
    <title>Klodens Sange</title>
    <toctitle>Klodens Sange</toctitle>
@@ -1857,6 +1933,7 @@ er Højtid inde?
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Pragtfulde Somre, under Parkens Grene,
 Ild i hvert Øje, Skæmt og munter Kiv,
 kun under Roser glimted Ufreds Kniv.
@@ -1879,10 +1956,11 @@ Med Døden og Sergentens Raab i Hælene,
 i Vand til Halsen, men med Ild i Sjælene
 gaar Tropperne i Rædslens Kanonade,
 og spændt og hærdet synger Jordens Flade - Hurrah!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2001123105">
+<text id="claussen2001123105">
 <head>
    <title>Inde fra Klodens Værksted</title>
    <toctitle>Inde fra Klodens Værksted</toctitle>
@@ -1891,6 +1969,7 @@ og spændt og hærdet synger Jordens Flade - Hurrah!
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Inde fra Klodens Værksted lyder dunkle Eksplosioner.
 Omsmeltes nu hver Livsform fra den gamle Alders Gry?
 Brydes Karrene i Stykker? væltes Ovnene tillige?
@@ -1907,10 +1986,11 @@ Opløses i Atomer selve Tavlerne nu?
 Tal, som aldrig stemte, skal ikke optegnes mere ...
 Ja, Talsystemet er ude,
                      det sled Tavlerne itu.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002020235">
+<text id="claussen2002020235">
 <head>
    <title>Femte Juni		</title>
    <toctitle>Femte Juni		</toctitle>
@@ -1919,6 +1999,7 @@ Ja, Talsystemet er ude,
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Det er femte Juni, bag det grønne Vænge.
 Alle de smaa Græshopper stemmer deres Strenge.
 Fire unge Piger med hvide Kjoler paa
@@ -1966,10 +2047,11 @@ til Kedsomheden er dreven forbi.
 
 Fire unge Piger, som venter i Ro,
 er dog Symbolet paa den stærkeste Tro.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002010603">
+<text id="claussen2002010603">
 <head>
    <title>Den stærke Dame i Teltet</title>
    <toctitle>Den stærke Dame i Teltet</toctitle>
@@ -1978,6 +2060,7 @@ er dog Symbolet paa den stærkeste Tro.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Med Brændenælder er min Pande smykt,
 med Tidsler fletter jeg de hvide Lænder,
 thi mer end alle Brændenælder brænder
@@ -1996,10 +2079,11 @@ er sat af Væsen, gør ej stor Allarm.
 
 Jeg længes efter Aftenhimlens Blaanen
 og hyler, som en skabet Hund mod Maanen.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002020236">
+<text id="claussen2002020236">
 <head>
    <title>Jeg traf en Skønhed</title>
    <toctitle>Jeg traf en Skønhed</toctitle>
@@ -2008,6 +2092,7 @@ og hyler, som en skabet Hund mod Maanen.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Jeg traf en Skønhed fra Firsernes Dage
       lidt sprukken i Gipsen.
 I Ungdomstiden hun dyrkede Drachmann,
@@ -2057,8 +2142,9 @@ En Del af sin Velstand hun misted ved Krigen,
       men bjerged en Grunddel.
 Hun bød mig paa The Klokken Fem - i sin Villa
       ej langtfra en Runddel.
+</poetry>
 </body>
-</poem>
+</text>
 </content>
 </section>
 
@@ -2068,7 +2154,7 @@ Hun bød mig paa The Klokken Fem - i sin Villa
 </head>
 <content>
 
-<poem id="claussen2002020237">
+<text id="claussen2002020237">
 <head>
    <title>Foraar</title>
    <toctitle>Foraar</toctitle>
@@ -2077,6 +2163,7 @@ Hun bød mig paa The Klokken Fem - i sin Villa
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Nu er det Foraar hjemme, bredt og vidt,
 og Bankkassereren med lange Skridt
 opmaaler Pløjejordens Længder, Bredder
@@ -2097,10 +2184,11 @@ en Folketaler og en Inkassator
 
 Han er moderne, tjener Mønt som Skidt.
 Der kan du laane - kvirrevirrevit!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002020238">
+<text id="claussen2002020238">
 <head>
    <title>Terminsbekymringer</title>
    <toctitle>Terminsbekymringer</toctitle>
@@ -2110,6 +2198,7 @@ Der kan du laane - kvirrevirrevit!
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Med Næsen skriverspids og vissenbleg
 og Kløgten lagt tilbage bagved Ørene
 han drøfted Vognremise, Stalden, Køerne,
@@ -2127,10 +2216,11 @@ som var itu, paa Grisestien, Rotterne!
 Han havde ingen Kaabe til sin Datter
 og ingen Frø til Konens ny Rabatter.
 Naar Huset styrter, er der nok af Spotterne.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002020239">
+<text id="claussen2002020239">
 <head>
    <title>Den nye Prokurator</title>
    <toctitle>Den nye Prokurator</toctitle>
@@ -2140,6 +2230,7 @@ Naar Huset styrter, er der nok af Spotterne.
    <keywords>sonnet</keywords>
 </head>
 <body>
+<poetry>
 Den nye Prokurator, De bør kende ham,
 er ganske ung, men Næsen er lidt vissen,
 han husker Bondens Heste, Blakken, Blissen,
@@ -2157,10 +2248,11 @@ han er et rigtigt Jern, den lille Jessen.
 Og Vælgerfolket danser til hans Pibe,
 men spørg ej om hans Tro paa Jesu Krist,
 da kommer lille Jessen slemt i Knibe.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002020240">
+<text id="claussen2002020240">
 <head>
    <title>Vor Mor paa Gaarden</title>
    <toctitle>Vor Mor paa Gaarden</toctitle>
@@ -2169,6 +2261,7 @@ da kommer lille Jessen slemt i Knibe.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Vor Mor paa Gaarden var de Andres Mester.
 Hun havde stridt for den beskedne Lykke
 at faa beplantet Havens Hjørnestykke.
@@ -2188,10 +2281,11 @@ Hun vendte Blikket fromt mod Hanebjælken,
 naar det blev sagt, at Folk forfalsked Mælken;
 hun kom lidt Vand i sine Mælkespande
 af Renlighed --- men ikke for at blande.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002020241">
+<text id="claussen2002020241">
 <head>
    <title>Nye Tider</title>
    <toctitle>Nye Tider</toctitle>
@@ -2200,6 +2294,7 @@ af Renlighed --- men ikke for at blande.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Den gamle Tid fallit - fallit - fallit!
 (Jeg skrev de Vers et Aar, da alt gik skidt)
 Nu er det nye Tider. Kvirrevit!
@@ -2217,8 +2312,9 @@ Ak, kom vor Moders Tandsæt ej betids,
 vil Datren konfirmeres med Gebids ...
 Den gamle Tid fallit - fallit - fallit!
 Nu er det Foraar: Kvirrevirrevit!
+</poetry>
 </body>
-</poem>
+</text>
 </content>
 </section>
 
@@ -2228,7 +2324,7 @@ Nu er det Foraar: Kvirrevirrevit!
 </head>
 <content>
 
-<poem id="claussen2002020242">
+<text id="claussen2002020242">
 <head>
    <title>Strofer i Tusmørket</title>
    <toctitle>Strofer i Tusmørket</toctitle>
@@ -2237,6 +2333,7 @@ Nu er det Foraar: Kvirrevirrevit!
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Skumringsstunder. Lune Aftener. Nattetimer.
 Lad os tale, medens alting bliver stille: vi har mer at tale om.
 Ræk mig endnu dine Hænder, naar du synes, vi skal tie,
@@ -2257,10 +2354,11 @@ Skumringsstunder, lune Aftener, Nattetimer.
 Har du set, at det nye Skud paa Rosen, det har skudt igen i Dag -?
 Stryg en Tændstik og se efter - - Se, vor Have er beredt,
 selv i Mørke har vi Roser, selv i Tavshed Velbehag.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002010605">
+<text id="claussen2002010605">
 <head>
    <title>Jeg vil begraves i Fred -</title>
    <toctitle>Jeg vil begraves i Fred -</toctitle>
@@ -2269,6 +2367,7 @@ selv i Mørke har vi Roser, selv i Tavshed Velbehag.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Dette er Digterens Kaar:
    fødes og lægges hen,
    glemmes og æres igen
@@ -2288,10 +2387,11 @@ Jeg vil begraves i Fred.
 Jeg vil ikke ha'e Titusind med,
 medmindre vi samme Dag
    faldt i et Slag.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2001123106">
+<text id="claussen2001123106">
 <head>
    <title>Store farlige ...</title>
    <toctitle>Store farlige ...</toctitle>
@@ -2300,6 +2400,7 @@ medmindre vi samme Dag
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Store farlige Blomster gror
 af et nedlagt Frø.
 Hvis du kysser mig én Gang til,
@@ -2309,10 +2410,11 @@ Kysset fra hendes friske Mund
 var som et Sædekorn.
 Tænk, at det skete! ... Denne Mund
 kyssed mig aldrig tilforn.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002010604">
+<text id="claussen2002010604">
 <head>
    <title>Kære ny ...</title>
    <toctitle>Kære ny ...</toctitle>
@@ -2321,6 +2423,7 @@ kyssed mig aldrig tilforn.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Kære ny Skovmærkelil,
 jeg er træt af Jordens
 graa Forstillelse og Spil.
@@ -2332,10 +2435,11 @@ Jeg maa ane, smage -
 favnes af Skovmærkelil.
 Alt det Skabte er af Gud
 eller ikke til.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002020243">
+<text id="claussen2002020243">
 <head>
    <title>Under en Sølvpoppel</title>
    <toctitle>Under en Sølvpoppel</toctitle>
@@ -2344,6 +2448,7 @@ eller ikke til.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Ak, naar Døden løser op,
 vil jeg græmme mig
 over al den skønne Sang,
@@ -2369,7 +2474,7 @@ i sin grønne Ensomhed.
 Hun har kaldt mig selv til Profet
 for en Verdens-Aabenbaring,
 som kun hun og jeg har set.
-Alt fra B&acirc;l og til Elias
+Alt fra Bâl og til Elias
 lod Sandsigerinden mig fordybes i.
 Er vi ikke Vidner alle?
 Er vi ikke Sandhedens Profeter?
@@ -2380,10 +2485,11 @@ Ak, hvis Døden kommer,
 har jeg intet da fortalt?
 om den Aand, der bor i mig og alt,
 om det ny, det skabende Vidunder?
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2001123107">
+<text id="claussen2001123107">
 <head>
    <title>Moder Natur</title>
    <toctitle>Moder Natur</toctitle>
@@ -2392,6 +2498,7 @@ om det ny, det skabende Vidunder?
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Natur, min Moder, som gav os Livet,
 tillad dit Barn at betræde din Grund;
 puds ikke paa ham din bidske Hund,
@@ -2407,10 +2514,11 @@ Straf ikke Begynderen,
 og undskyld Synderen.
 Ræk ham som Gunst af din friske Mund
 den enkle Lykke, som er dig givet.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002020244">
+<text id="claussen2002020244">
 <head>
    <title>Kanalbillede</title>
    <toctitle>Kanalbillede</toctitle>
@@ -2419,6 +2527,7 @@ den enkle Lykke, som er dig givet.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Et evigt Tab af Minutter.
 Viseren lister Skiven rundt,
 stædig og tavs
@@ -2463,10 +2572,11 @@ Og hele denne Hvirvel
 af Liv og Larm og Trods
 skal være næsten forsvunden.
 Og ingen vil spørge om os.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002020245">
+<text id="claussen2002020245">
 <head>
    <title>Tvesyn</title>
    <toctitle>Tvesyn</toctitle>
@@ -2475,6 +2585,7 @@ Og ingen vil spørge om os.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Saaledes talte Tanken
 mismodigt i Drømme til sin Poet:
 ,,Hvis ej vi var komne til Verden
@@ -2503,8 +2614,9 @@ Ilions Mure!
    som ingen har set!
 - Undtagen den store Homeros -
    den blinde Poet
+</poetry>
 </body>
-</poem>
+</text>
 </content>
 </section>
 
@@ -2514,7 +2626,7 @@ Ilions Mure!
 </head>
 <content>
 
-<poem id="claussen2002020246">
+<text id="claussen2002020246">
 <head>
    <title>Prinsessens Dossier</title>
    <toctitle>Prinsessens Dossier</toctitle>
@@ -2523,6 +2635,7 @@ Ilions Mure!
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Prinsesse Merete, den unge Prinsesse Merete
 (det var i det graa Helsingør,
       eller i Andalusien, det skete?),
@@ -2677,10 +2790,11 @@ som saa sine Længsler af Pigen besvar't
 og tog hende, Alderen ubeset -
 
 Var <i>det</i> ikke sket ... saa var det <i>dog</i> sket!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002020247">
+<text id="claussen2002020247">
 <head>
    <title>Den lille Bazajet og Kvinderne</title>
    <toctitle>Den lille Bazajet og Kvinderne</toctitle>
@@ -2689,6 +2803,7 @@ Var <i>det</i> ikke sket ... saa var det <i>dog</i> sket!
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Han havde læst om Bajazet,
 Bajazet Ilderim den Skrækkelige
 og gik omkring som Ild og Fyr,
@@ -2721,10 +2836,11 @@ men alle Pigehjerters Overvinder,
 du væbned dig imod dem - det var ret.
 Hvad Storfolk haabløst ønsker sig, det kan
 et Kvindehjerte for den mindste Mand.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002020248">
+<text id="claussen2002020248">
 <head>
    <title>Ung Glorie</title>
    <toctitle>Ung Glorie</toctitle>
@@ -2733,6 +2849,7 @@ et Kvindehjerte for den mindste Mand.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Over mit Hoved
 slaar Tungsindets Fugl,
 dens natbrede Vinger
@@ -2768,10 +2885,11 @@ klynged sig til mig
 med Arme, som lune,
 og heksed med Øjne
 fryddrukne og brune.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002010606">
+<text id="claussen2002010606">
 <head>
    <title>Vinterdag</title>
    <toctitle>Vinterdag</toctitle>
@@ -2780,6 +2898,7 @@ fryddrukne og brune.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Sorte Grene, frossen Jord,
 snavset Søens Tavle,
 Luft som Bly - kun skært og fjærnt
@@ -2804,10 +2923,11 @@ Se blot: barsk og stemningsgoldt,
 det er hele Kunsten!
 ... Tror du: Skønhed er vort Maal?
 eller Sommerbrunsten ...?
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2001123108">
+<text id="claussen2001123108">
 <head>
    <title>Skabelse</title>
    <toctitle>Skabelse</toctitle>
@@ -2816,6 +2936,7 @@ eller Sommerbrunsten ...?
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Jeg er ej født endnu, men fødende forløses jeg.
 Af Livet i mit Værk jeg aner Livet i mig selv,
 berøvet dette Spejl er jeg, saa godt som, lagt i Jord.
@@ -2830,10 +2951,11 @@ Et det en Guddomspragt, hvis Væld er idel Herlighed?
 
 Jeg ved det ej, men i mit Blod er alle Længslers Mod.
 Jeg hamrer Ild af Mørket, udfrir de afmægtige.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2001123109">
+<text id="claussen2001123109">
 <head>
    <title>Kvindens Bekendelse</title>
    <toctitle>Kvindens Bekendelse</toctitle>
@@ -2842,6 +2964,7 @@ Jeg hamrer Ild af Mørket, udfrir de afmægtige.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Hvis du spørger, kan jeg roligt svare:
 Det er Kærligheden, som jeg vil.
 Jeg er ingen Nar og ingen Hare,
@@ -2861,10 +2984,11 @@ Nogle griber til med vilde Hænder,
 naar de ser en Kvinde øm og blind.
 Du min Elsker sagde blot: ,,du brænder'',
 strøg mig varsomt paa min hede Kind.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002020249">
+<text id="claussen2002020249">
 <head>
    <title>Russerinden</title>
    <toctitle>Russerinden</toctitle>
@@ -2873,6 +2997,7 @@ strøg mig varsomt paa min hede Kind.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Det er kun en Pige, der synger,
 i Efteraarets Graa
 og mindes sit fjerne Rusland,
@@ -2945,10 +3070,11 @@ Og hun vil dække dets Vunde bred,
 og gerne gaar hun til Grunde derved.
 Den slaviske Pige, hvis isnende Mod
 har Brudehymner - som Volga har Floder af Blod.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002010607">
+<text id="claussen2002010607">
 <head>
    <title>Humlen</title>
    <toctitle>Humlen</toctitle>
@@ -2957,6 +3083,7 @@ har Brudehymner - som Volga har Floder af Blod.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Og der var Frugt paa Træet.
 Og der var Korn til Kræet.
 Og der var Græs til Koen.
@@ -2979,10 +3106,11 @@ kan modstaa Arvesynden!
 
 Og drage styrkede igennem Tumlen,
 dér har vi Humlen.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2001123110">
+<text id="claussen2001123110">
 <head>
    <title>Barnerim</title>
    <toctitle>Barnerim</toctitle>
@@ -2991,6 +3119,7 @@ dér har vi Humlen.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Katten har spist den lille Mus.
 Og da den lille Mus var spist,
 aad den to smaa andre Mus
@@ -3005,10 +3134,11 @@ Jeg faar aldrig en rigtig Davre,
 gør jeg mig nok saa snild,
 Kokketøsen har sat mig paa Havre-
 suppe og Spegesild.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="claussen2002020250">
+<text id="claussen2002020250">
 <head>
    <title>Fest-Epilog</title>
    <toctitle>Fest-Epilog</toctitle>
@@ -3017,6 +3147,7 @@ suppe og Spegesild.
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
       <small><i>En Mand, som roses, bliver altid mindre.</i></small>
       <small><i>Forskaan os da for Mindekranses Plage:</i></small>
       <small><i>En Pil, som træfter, ser sig ej tilbage...</i></small>
@@ -3043,8 +3174,9 @@ sligt forpligter vel til at aabne Himlen.
 Men jeg siger til enhver: I Morgen Himlen!
 Nu vil jeg hjem - hjem!
       Jeg vil hjem!
+</poetry>
 </body>
-</poem>
+</text>
 </content>
 </section>
 
@@ -3054,7 +3186,7 @@ Nu vil jeg hjem - hjem!
 </head>
 <content>
 
-<poem id="claussen2001050201">
+<text id="claussen2001050201">
 <head>
    <title>Atomernes Oprør</title>
    <toctitle>Atomernes Oprør</toctitle>
@@ -3066,6 +3198,7 @@ Nu vil jeg hjem - hjem!
    <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
+<poetry>
 Som naar i Pampas en Gaucho med Lasso skal indfange Heste,
 samles fra Pegasus' Ryg de rimløse Spand Hexametre,
 let uden Skole og Tvang - kun lidt pudsning af Fødder og Manke!
@@ -3191,8 +3324,9 @@ Jeg, et Atom under Solen, jeg anraaber Lande og Bølger.
 Træer og Sten og Metaller, Dyr og Fugle som aander,
 Strømmen i Havenes Dyb og Ilden i Bjergenes Indre:
 dersom vor Stjerne kan frelses, da lad os ej volde den Skade.
+</poetry>
 </body>
-</poem>
+</text>
 </content>
 </section>
 </workbody>

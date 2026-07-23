@@ -1,26 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="syv" status="incomplete" type="poetry">
 <workhead>
    <title>Andre digte</title>
-   <year>?</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="syv2002110214">
+<text id="syv2002110214">
 <head>
    <title>Tilgifft for pigerne</title>
    <toctitle>Tilgifft for pigerne</toctitle>
    <indextitle>Tilgifft for pigerne</indextitle>
    <firstline>Jeg er ey Jærn, ey staal, ey steen</firstline>
    <notes>
-      <note>Efter Niels Simonsen: <i>Verdslig Barok</i>, 1985, pp. 64-65, som igen angiver Rostg. 2&deg; 132 bl. 76<sup>r</sup> som tekstgrundlag.</note>
+      <note>Efter Niels Simonsen: <i>Verdslig Barok</i>, 1985, pp. 64-65, som igen angiver Rostg. 2° 132 bl. 76<sup>r</sup> som tekstgrundlag.</note>
    </notes>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg er ey Jærn, ey staal, ey steen,
 Ey messing, kaaber eller been,
 Dog er ieg haard, som hver aff de,
@@ -60,7 +58,8 @@ I dette Aar, som sorg og Harm
 Fortage kand, och i sin arm
 Forlyste hend'; at sligt er sandt
 Min haand derpaa giffv'r ieg til pandt.
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

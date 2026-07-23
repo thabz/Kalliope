@@ -23,23 +23,25 @@ yarn-error.log*
 caches
 
 # Generated JSON files
-static/api
+public/api
+public/generated
 
 # Generated XML sitemap
-static/sitemap.xml    
-static/sitemaps/*.xml
+public/sitemap.xml
+public/sitemaps/*.xml
 
 # Generated thumbnails
-static/**/*-w????.jpg
-static/**/*-w???.jpg
-static/**/*-w??.jpg
-static/**/*-w????.webp
-static/**/*-w???.webp
-static/**/*-w??.webp
-static/images/*/social
+public/**/*-w????.jpg
+public/**/*-w???.jpg
+public/**/*-w??.jpg
+public/**/*-w????.webp
+public/**/*-w???.webp
+public/**/*-w??.webp
+public/images/*/social
 
 # Facsimiles
-static/facsimiles
+public/facsimiles
+facsimiles
 
 # iCal kalender
-static/Kalliope.ics
+public/Kalliope.ics

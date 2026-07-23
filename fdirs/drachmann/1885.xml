@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1885" author="drachmann" status="complete" type="poetry">
 <workhead>
    <title>Af Der var engang</title>
@@ -8,20 +7,20 @@
       <note>Eventyrspillet <i>Der var engang</i> havde premiere på Det kgl. Teater i 1887 med musik af Lange-Müller.</note>
    </notes>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="drachmann1885a0">
+<text id="drachmann1885a0">
 <head>
    <title>Vi elsker vort Land</title>
    <firstline>Vi elsker vort Land</firstline>
    <pictures>
-       <picture ref="kroyer/1906-sankt-hans"/>
+       <picture artwork="kroyer/1906-sankt-hans"/>
    </pictures>
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
   Vi elsker vort Land,
   naar den signede Jul
 tænder Stjerner i Træet med Glans i hvert Øje,
@@ -59,7 +58,8 @@ vil vi Baalet paa Fædrenes Gravhøje tænde:
     vi vil <i>Fred</i> her til Lands,
     Sante Hans, Sante Hans!
 den kan vindes, hvor Hjerterne aldrig blir tvivlende kolde!
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

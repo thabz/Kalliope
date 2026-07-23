@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1793" author="thaarup" status="incomplete" type="poetry">
 <workhead>
    <title>Peters Bryllup</title>
    <year>1793</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="thaarup1999101801">
+<text id="thaarup1999101801">
 <head>
    <title>I Dalens Skjød en Hytte laae</title>
    <toctitle>I Dalens Skjød en Hytte laae</toctitle>
@@ -18,6 +16,7 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 I Dalens Skjød en Hytte laae,
 Ved Bredden af en Kilde;
 Dens Væg var Leer, dens Tag var Straa,
@@ -52,7 +51,8 @@ Nu staaer en sval og løvriig Lund
 Til trætte Vandrers Hvile;
 Der lagde man og deres Been,
 Men der er ingen Mindesteen.
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

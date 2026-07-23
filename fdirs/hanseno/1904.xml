@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1904" author="hanseno" status="complete" type="poetry">
 <workhead>
    <title>Tværveje</title>
@@ -21,7 +20,7 @@
 </head>
 <content>
 
-<poem id="hanseno2017111901">
+<text id="hanseno2017111901">
 <head>
     <title>Nirwana</title>
     <firstline>En Sang for trætte Hjærner</firstline>
@@ -29,6 +28,7 @@
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 En Sang for trætte Hjærner,
 som Kraften har forladt:
 Fjærnt bag de store Stjærner
@@ -37,10 +37,11 @@ En Sang, naar Sjæle græde
 og ingen Udvej se:
 Nirwana har ingen Glæde,
 men heller ingen Ve.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hanseno2017111902">
+<text id="hanseno2017111902">
 <head>
     <title>Ræk mig en Dvaledrik</title>
     <firstline>Ræk mig en Dvaledrik, du dunkle Nat!</firstline>
@@ -48,6 +49,7 @@ men heller ingen Ve.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ræk mig en Dvaledrik, du dunkle Nat!
 — Hvad er det, dine mørke Læber siger?
 Dagen vil skænke mig endnu en Skat
@@ -68,10 +70,11 @@ Utryg jeg altid gaar i Dagen ind,
 mod dig jeg længes, naar den favrest straaler.
 Jeg vil den dybe Fred i Sjæl og Sind.
 Ræk mig den største af de fulde Skaaler.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hanseno2017111903">
+<text id="hanseno2017111903">
 <head>
     <title>Et Aftenminde</title>
     <firstline>Aftenen lægger sig skyggende</firstline>
@@ -79,11 +82,12 @@ Ræk mig den største af de fulde Skaaler.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Aftenen lægger sig skyggende
 over den gamle Gaard.
 Ind i Hus de pludrende
 Hønneker Pigen faar.
-Rygende og sludrende 
+Rygende og sludrende
 Folkene sidder og staar.
 Bjørnetungt efter Myggene
 Arbejdsnæverne slaar.
@@ -141,10 +145,11 @@ Røgen hæver sig vuggende
 over det sværtede Tag,
 højt — for at hilse den gryende,
 dontforjættende Dag.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hanseno2017111904">
+<text id="hanseno2017111904">
 <head>
     <title>Hylden</title>
     <firstline>Jeg husker, man sagde, hvor Hylden gror</firstline>
@@ -152,6 +157,7 @@ dontforjættende Dag.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg husker, man sagde, hvor Hylden gror,
 vokser der Lykke tillige.
 Vi smilte den Gang af det gamle Ord.
@@ -196,10 +202,11 @@ Og jeg tænker, at selv om vi ser, de gror,
 skal ej paa vor Lykke vi lide. —
 Trods alt vil vi dog med den grove Jord
 om karrig Grøde stride.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hanseno2017111905">
+<text id="hanseno2017111905">
 <head>
     <title>Haven</title>
     <firstline>Den gamle Have grønnes</firstline>
@@ -207,6 +214,7 @@ om karrig Grøde stride.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Den gamle Have grønnes
 ungt igen i Aar;
 højt over hver Naborønnes
@@ -283,10 +291,11 @@ Nu faar han et Fristed mindre,
 den store, vandrende Vaar. —
 Aldrig mer til vort Indre
 de dybe Skovsus naar.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hanseno2017111906">
+<text id="hanseno2017111906">
 <head>
     <title>Den gamle Guldsmed</title>
     <firstline>Det skørner slemt i det skæve Hus</firstline>
@@ -294,6 +303,7 @@ de dybe Skovsus naar.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det skørner slemt i ,,det skæve Hus,''
 men længe det har holdt Stand.
 Under Gulvene skriger Rotter og Mus —
@@ -356,10 +366,11 @@ Men Rækken han øger — det er ham en Rus
 i Livsens stærke Vand.
 Der sprøjter et Festens Jubelbrus
 over hvert enkelts Rand.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hanseno2017111907">
+<text id="hanseno2017111907">
 <head>
     <title>I Nordenkirke</title>
     <firstline>Der gives i Sjælen Gemmer</firstline>
@@ -367,6 +378,7 @@ over hvert enkelts Rand.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Der gives i Sjælen Gemmer,
 jeg ikke har Nøglen til.
 Dagene gaar, og jeg glemmer
@@ -377,7 +389,7 @@ et eget Stemningsspil.
 Jeg hilser et Hus i Staden —
 stort er ej dets Værd;
 falmet er Façaden —
-jeg ved, jeg fødtes dér.
+jeg ved, jeg fødtes dér.
 Den anden Side af Gaden
 er høje Kastanietrær.
 
@@ -436,10 +448,11 @@ Jeg ønsker dig alle de Glæder,
 der aabner et Menneskes Sind.
 Voks — og kast, hvor du træder,
 Lys i Sjælene ind!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hanseno2017111908">
+<text id="hanseno2017111908">
 <head>
     <title>Færgemanden</title>
     <firstline>Tovet løsnes og Baaden gaar</firstline>
@@ -447,6 +460,7 @@ Lys i Sjælene ind!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Tovet løsnes og Baaden gaar,
 Klokken er otte slet.
 Til Stien derovre han atter mig ror —
@@ -509,10 +523,11 @@ Mit Blik fra hans mørke Ansigt gled
 hen paa hans hvidnende Haand. —
 Jeg syntes, jeg sejled i Charons Baad
 og Vandet var Acheron.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hanseno2017111909">
+<text id="hanseno2017111909">
 <head>
     <title>Aften ved Fjorden</title>
     <firstline>Jeg længtes mod Kvældens Brise</firstline>
@@ -520,6 +535,7 @@ og Vandet var Acheron.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg længtes mod Kvældens Brise,
 mens langsomt Dagen gled
 og gjorde hver Sten og Flise,
@@ -534,8 +550,8 @@ i Aften mig paany —
 men mest den er om de Minder,
 der bor i den lille By.
 
-Dér ligger dens røde Tage,
-dér staar dens stærke Taarn;
+Dér ligger dens røde Tage,
+dér staar dens stærke Taarn;
 min Hu gaar langt tilbage,
 draget, drømmevorn.
 De lever op, de Dage,
@@ -603,10 +619,11 @@ min Sjæl, den vemodsvise,
 ser ud mod mørke Aar.
 Dæmringsskyggerne dise,
 men roligt Hjærtet slaar.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hanseno2017111910">
+<text id="hanseno2017111910">
 <head>
     <title>Jødernes Kirkegaard</title>
     <firstline>Det klarede nys, men det mulner igen</firstline>
@@ -614,6 +631,7 @@ men roligt Hjærtet slaar.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I.
 
 Det klarede nys, men det mulner igen,
@@ -828,7 +846,7 @@ i i Havnen laa Flaaderne taklet.
 
 De gik dybt, da fra Tyrus til Japho de for
 i vindrueblaanende Vande. —
-Bleg rejser Huråm sig en Nat fra sit Bord,
+Bleg rejser Huråm sig en Nat fra sit Bord,
 og Tempelet staar i hans Pande.
 
 Kong Salomo vandrer til Moria hen,
@@ -857,7 +875,7 @@ fra det kunstige Hav og fra Oksernes Kuld
 for Øjet det sølverne flimrer.
 
 Tæt Forhænget lukkes. Basunernes Brag
-naar ud til de lyttende Klyngér;
+naar ud til de lyttende Klyngér;
 det standser, og under det hellige Tag
 de kaldede Sangere synger.
 
@@ -903,10 +921,11 @@ Og medens det rusker i Busk og i Træ,
 den bindende Klinke jeg løfter.
 Nu bliver den vandrende kold over Knæ.
 Det risler i Rør og i Grøfter.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hanseno2017111911">
+<text id="hanseno2017111911">
 <head>
     <title>Paa Diget</title>
     <firstline>Jeg er i mit eget Rige</firstline>
@@ -914,6 +933,7 @@ Det risler i Rør og i Grøfter.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg er i mit eget Rige,
 jeg følger Fjordens Rand.
 Stille, grundede Vige
@@ -976,10 +996,11 @@ Jeg blev i mit eget Rige
 halvt en fremmed Mand.
 Jeg kommer for at sige,
 jeg elsker dette Land.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hanseno2017111912">
+<text id="hanseno2017111912">
 <head>
     <title>Barselgildet paa Engvejen.</title>
     <firstline>Jæ har sovet for længe til Maaren i Dav</firstline>
@@ -987,14 +1008,15 @@ jeg elsker dette Land.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 ,,Jæ har sovet for længe til Maaren i Dav,''
 sa’e Niels, medens søvnigt han nikkede.
 ,,Klokken va’ seks omtrent paa det Lav,
 da jæ vovnede ved a’ jæ hikkede.
 
 For jæ va’ til Basselgilde
-i Gaar hos vor Gartnér,
-aa det blev sgu Såtens silde,
+i Gaar hos vor Gartnér,
+aa det blev sgu Såtens silde,
 for vi skulde immer ha’ mer.
 
 Det sidste, vi fik, va’ en Kaffeknæjt
@@ -1010,10 +1032,11 @@ for jæ va’ dundrende fuld,
 aa gik som en nyfødt Kal’
 aa brækkede mig paa vort Gulv,
 aa Konen ble’ lynende gal.''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hanseno2017111913">
+<text id="hanseno2017111913">
 <head>
     <title>Begravelsen i Branderslev</title>
     <firstline>De havde kun hende, saa døde sgu hun</firstline>
@@ -1021,6 +1044,7 @@ aa Konen ble’ lynende gal.''
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 De havde kun hende, saa døde sgu hun.
 — Vi loved den gamle aa bære.
 Gud ved, hvad det Gilde har kostet dem mon?
@@ -1033,7 +1057,7 @@ aa saa gik vi med Jomfruens Kiste.
 Vi stilled den op i den stive Kareth,
 aa Kusken begyndte aa køre,
 men Vejret var galt, som jeg sjælden har set,
-aa saa var det et Såten til Føre.
+aa saa var det et Såten til Føre.
 ,,Hør, den æ sgu hvas, denne her," sa’e Mads,
 ,,den regner vist dørk med det fø’ste.
 Aa sikken et Fodtøj, vi faar'', sa’e Mads.
@@ -1043,7 +1067,7 @@ Men saa tog Fa’en ved Præstens Hat,
 og hen gennem Skidtet den svansed.
 Han raabte Gevalt aa vi fik den da fat,
 men hele Kodiljen ble’ standset.
-,,Nu æ vi nok strå’s, hvor vi ska’," sa’e Mads.
+,,Nu æ vi nok strå’s, hvor vi ska’," sa’e Mads.
 ,,Gud Fader, hvor Hatten æ svinet.
 Det æ godt, a’ det ikke æ min'', sa’e Mads,
 aa Kors hvor Mads han grined. —
@@ -1056,10 +1080,11 @@ men Jomfruen kom da i Jorden.
 ,,Men naar vi nu bare va’ hjemme.
 Det va’ godt a’ faa skiftet lidt snart,'' sa’e Mads,
 ,,aa min Ligtorn begynder aa klemme.''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hanseno2017111914">
+<text id="hanseno2017111914">
 <head>
     <title>Høststunder</title>
     <firstline>Jeg træder, Vejen støver</firstline>
@@ -1067,6 +1092,7 @@ Det va’ godt a’ faa skiftet lidt snart,'' sa’e Mads,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg træder, Vejen støver,
 tungt og vaadt er mit Haar;
 atter i Græs og Kløver
@@ -1129,8 +1155,9 @@ Jeg suger af jer for mange
 Uger Mod og Kraft —
 og sortner end alle Vange,
 en Glædesstund har jeg haft.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section>
@@ -1141,7 +1168,7 @@ en Glædesstund har jeg haft.
 </head>
 <content>
 
-<poem id="hanseno2017111915">
+<text id="hanseno2017111915">
 <head>
     <title>Stjærnen</title>
     <subtitle>Til Knud V. Rosenstand og C. Lambek</subtitle>
@@ -1150,6 +1177,7 @@ en Glædesstund har jeg haft.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I.
 
 Det var en mørk Augustmat,
@@ -1259,10 +1287,11 @@ Jeg stirrer ud, jeg stirrer ud,
 kan ej min Længsel tvinge.
 Den ler af Bøn, den ler af Bud.
 Hvorhen vil den mig bringe?''
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hanseno2017111916">
+<text id="hanseno2017111916">
 <head>
     <title>Valkyrien</title>
     <firstline>Jeg løftes i Vejret, jeg flyver — hvorhen?</firstline>
@@ -1270,6 +1299,7 @@ Hvorhen vil den mig bringe?''
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg løftes i Vejret, jeg flyver — hvorhen? —
 Der er svimlende Taarne, som skinner.
 Nu stinger det inde i Brystet igen,
@@ -1334,10 +1364,11 @@ Det hændte et Sted mellem Stjærne og Sky
 en Stund mellem Tanke og Dvale.
 Det hænder i Næ og det hænder i Ny,
 naar sammen alene vi tale.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hanseno2017111917">
+<text id="hanseno2017111917">
 <head>
     <title>In memoriam</title>
     <firstline>Der stivned en Stjærne, som stirred herned</firstline>
@@ -1345,6 +1376,7 @@ naar sammen alene vi tale.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Der stivned en Stjærne, som stirred herned,
 og Kulden har kulnet dens Lød,
 men ingen af alle dens Søskende ved,
@@ -1370,7 +1402,7 @@ II.
 
 Det var Sommer, og skinnende Ribsene hang,
 og Hindbærrets Blege blev rødt,
-der kom Nødder i Krat, der vår Stakke i Vang,
+der kom Nødder i Krat, der vår Stakke i Vang,
 og Lindene duftede sødt.
 
 Det var Højdag, men Luften var sløret og graa,
@@ -1460,8 +1492,9 @@ Det er, som om levende Lys der mig naar
 fra dit Blik bag de mørknende Bryn.
 Jeg vil føle det Skær gennem Menneskeaar,
 du Straale, du Stjærne, du Syn!
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section>
@@ -1472,7 +1505,7 @@ du Straale, du Stjærne, du Syn!
 </head>
 <content>
 
-<poem id="hanseno2017111918">
+<text id="hanseno2017111918">
 <head>
     <title>Kong Ragnar</title>
     <firstline>Ude i Fjorden</firstline>
@@ -1480,6 +1513,7 @@ du Straale, du Stjærne, du Syn!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ude i Fjorden
 Isen braged;
 Hallen blev kvalm,
@@ -1953,10 +1987,11 @@ Eet Skridt gik han frem,
 saa skreg han lydt,
 og Haanden slap
 det hævede Sværd.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="hanseno2017111919">
+<text id="hanseno2017111919">
 <head>
     <title>Leif den lykkelige</title>
     <firstline>Der sagdes, at Bjarne</firstline>
@@ -1964,6 +1999,7 @@ det hævede Sværd.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Der sagdes, at Bjarne
 nyt Land havde set;
 der blev studset og troet,
@@ -2239,7 +2275,7 @@ af kosteligt Træ —
 han gik ud, saa at Vandet
 slog over hans Knæ,
 hjalp, som han kunde,
-de skød og dé trak,
+de skød og dé trak,
 og Skibet kom op
 uden Spørgen og Snak.
 
@@ -2368,8 +2404,9 @@ Hans Sind blev som Skibet,
 Stormen forslaar —
 han blev, til han døde,
 paa Bratteli Gaard.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section>

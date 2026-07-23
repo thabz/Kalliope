@@ -1,10 +1,8 @@
-module.exports = {
-  webpack: (config) => {
-    // Fixes npm packages that depend on `fs` module
-    config.node = {
-      fs: 'empty'
-    }
+import { dirname } from 'path';
+import { fileURLToPath } from 'url';
 
-    return config
-  }
-}
+const __dirname = dirname(fileURLToPath(import.meta.url));
+
+export default {
+  outputFileTracingRoot: __dirname,
+};

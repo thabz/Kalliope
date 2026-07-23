@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="anonym1700fr" status="incomplete" type="poetry">
 <workhead>
    <title>Andre digte</title>
-   <year>?</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="anonym2017082101">
+<text id="anonym2017082101">
 <head>
    <title>Chevaliers de la table ronde</title>
    <firstline>Chevaliers de la table ronde</firstline>
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Chevaliers de la Table Ronde,
 Goûtons voir si le vin est bon.
 Chevaliers de la Table Ronde,
@@ -158,7 +156,8 @@ C’est à boire avant de mourir.
 C’est à boire, oui, oui, oui,
 C’est à boire, non, non, non,
 C’est à boire avant de mourir.
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

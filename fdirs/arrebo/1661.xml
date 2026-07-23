@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1661" author="arrebo" status="incomplete" type="poetry">
 <workhead>
    <title>Hexaëmeron</title>
    <year>1661</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="arrebo2002072803">
+<text id="arrebo2002072803">
 <head>
    <title>Fortale til Skaberen</title>
    <toctitle>Fortale til Skaberen</toctitle>
@@ -19,12 +17,13 @@
    <!-- Efter DSL udgaven fra 1965. -->
 </head>
 <body>
+<poetry>
 O Almæctige Gud, al Verdens Skaber oc HErre,
 Præctig du gaaer her ud, din Gierning ziirlig maa være!
 Herlighed er din dragt, oc Lius dit Klædebon hvide!
 Deilighed er din Pract, du skin som Solen hin blide!
 Blankt dit Klædebon er, din' Hænders Gierninger liuse,
-Neppe dem <i>Ph&oelig;bus</i> seer, før hand flux lader sig kiuse.
+Neppe dem <i>Phœbus</i> seer, før hand flux lader sig kiuse.
 Ingen, i Verden viid, sligt Mesterstycke har skaaret,
 Ingen, af Adams tiid, saa konstig Qvinde har baaret;
 Ej Teltmageren kand sit Pauluun kruse saa artig,
@@ -103,7 +102,8 @@ Du, som eenist dog er den døv-mand lærer at høre,
 Du, ô Skabere kier, lær dummen tungen at røre
 Paa dit Løfte til gafn vi ville haabe ja liide;
 Hermed i Jesu Nafn vi saa til Arbeydet skriide.
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

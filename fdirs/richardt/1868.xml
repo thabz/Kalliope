@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1868" author="richardt" status="incomplete" type="poetry">
 <workhead>
    <title>Texter og Toner</title>
    <year>1868</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="richardt1999100502">
+<text id="richardt1999100502">
 <head>
    <title>Naturen og Kunsten</title>
    <subtitle>Af en Cantate</subtitle>
@@ -19,6 +17,7 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Derfor kan vort Øie glædes
    ved et Billeds Farvepragt,
 Thi det Lys hvori det klædes,
@@ -45,10 +44,11 @@ Tankens hemmeligste Susen,
    Elskovsblikkets tause Sprog,
 Lærkens Sang og Bækkens Brusen, -
    Alt er Kunstens Lærebog.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="richardt2000062501a">
+<text id="richardt2000062501a">
 <head>
    <title>Væbnersang</title>
    <toctitle>Væbnersang</toctitle>
@@ -61,6 +61,7 @@ Lærkens Sang og Bækkens Brusen, -
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 Altid frejdig, naar Du gaar
 Veje, Gud tør kjende,
 selv om Du til Maalet naaer
@@ -75,7 +76,8 @@ Kæmp for Alt, hvad Du har kjært,
 dø, om <i>saa</i> det gjælder,
 da er Livet ej saa svært,
 Døden ikke heller.
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

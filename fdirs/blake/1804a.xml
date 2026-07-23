@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1804a" author="blake" status="incomplete" type="poetry">
 <workhead>
    <title>Milton - a Poem</title>
    <year>1804-18</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="blake2002030801">
+<text id="blake2002030801">
 <head>
    <title>And did those feet in ancient time</title>
    <toctitle>And did those feet in ancient time</toctitle>
@@ -18,6 +16,7 @@
    <quality>korrektur1</quality>
 </head>
 <body>
+<poetry>
 And did those feet in ancient time,
 Walk upon Englands mountains green:
 And was the holy Lamb of God,
@@ -37,7 +36,8 @@ I will not cease from Mental Fight,
 Nor shall my Sword sleep in my hand:
 Till we have built Jerusalem,
 In Englands green &amp; pleasant Land.
+</poetry>
 </body>
-</poem>
+</text>
 </workbody>
 </kalliopework>

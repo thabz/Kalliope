@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="wotton" status="incomplete" type="poetry">
 <workhead>
    <title>Andre digte</title>
-   <year>?</year>
    <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
 </workhead>
 <workbody>
 
-<poem id="wotton2005043001">
+<text id="wotton2005043001">
 <head>
-   <title>Upon the death of Sir <i>Albert Morton's</i> Wife</title>
+   <title>Upon the death of Sir Albert Morton's Wife</title>
+   <toctitle>Upon the death of Sir <i>Albert Morton's</i> Wife</toctitle>
+
    <indextitle>Upon the death of Sir Albert Morton's Wife</indextitle>
    <firstline>He first deceas'd: She for a little tri'd</firstline>
    <notes>
@@ -21,10 +20,12 @@
    <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
+<poetry>
 He first deceas'd: She for a little tri'd
 To live without Him: lik'd it not, and di'd.
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>

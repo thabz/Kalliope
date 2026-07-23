@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1905" author="nielsenlc" status="complete" type="poetry">
 <workhead>
    <title>Vandringer</title>
@@ -17,7 +16,7 @@
 </workhead>
 <workbody>
 
-<poem id="nielsenlc2017100901">
+<text id="nielsenlc2017100901">
 <head>
    <title>Minder</title>
    <firstline>Jeg mindes Dage, jeg mindes Nætter</firstline>
@@ -25,6 +24,7 @@
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg mindes Dage, jeg mindes Nætter,
 jeg mindes Mørke saavel som Sol;
 i alt jeg lever, sig Mindet fletter
@@ -54,20 +54,22 @@ Jeg mindes Livet, jeg mindes Døden,
 som tidt jeg hørte bag ved min Hæl.
 Jeg bærer Mulmet, og Morgenrøden,
 og Solfaldssorgen dybt i min Sjæl.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2017100902">
+<text id="nielsenlc2017100902">
 <head>
    <title>Rejsen</title>
-   <firstline>Udvé drog mig</firstline>
+   <firstline>Udvé drog mig</firstline>
    <source pages="3-7"/>
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <center>I.</center>
 
-Udvé drog mig,
+Udvé drog mig,
 vaagen og drømmende;
 gennem mit strømmende
 Hjærteblod jog mig
@@ -88,7 +90,7 @@ Moderblik saa han,
 som han vilde vide, hvorfor dit Hjærte græd!
 — Dine Øjne fyldtes; du saa, hvor han var spæd!
 
-Udvé drog mig,
+Udvé drog mig,
 sorgfuldt og sugende.
 Dagenes rugende
 Vintermulm jog mig,
@@ -157,10 +159,11 @@ Vi stilled’ os ved Døren og slog vort Vindu ned
 og stod og saá paa Myldret og mored os derved;
 en Dreng, som falbød Blomster, gav vi Handsel;
 med Roser vi smykkede vor Ransel!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2017100903">
+<text id="nielsenlc2017100903">
 <head>
    <title>Julehilsen hjem!</title>
    <subtitle>(Med et Billede af Luca della Robbias Relief: Syngende Drenge.)</subtitle>
@@ -173,6 +176,7 @@ med Roser vi smykkede vor Ransel!
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Vi kommer syngende langvejs fra
 vor Sang, og I vil forstaa den:
 der findes aldrig saa lang en Vej,
@@ -204,10 +208,11 @@ Der findes aldrig saa lang en Vej,
 at Længslen ikke kan gaa den!
 
 <nonum><small>    Florents 1900.</small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2017100904">
+<text id="nielsenlc2017100904">
 <head>
    <title>Grave</title>
    <subtitle>(Fra den protestantiske Kirkegaard i Rom.)</subtitle>
@@ -216,6 +221,7 @@ at Længslen ikke kan gaa den!
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Cypresserne tale i Taushed,
 om sagte Sorg de suser;
 Luften er grøn af Løvet,
@@ -298,10 +304,11 @@ af Hjærter i Jordens Skød —
         men Livet larmende Død!
 
 <nonum><small>Rom 1901.</small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2017100905">
+<text id="nielsenlc2017100905">
 <head>
    <title>Solsyner</title>
    <firstline>Imperatordrømme, Kejsersyner!</firstline>
@@ -309,6 +316,7 @@ af Hjærter i Jordens Skød —
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Imperatordrømme, Kejsersyner!
     — Alt det hvide Marmor lyner
     i den hvide Sol.
@@ -359,10 +367,11 @@ Det var Solen, Marmorsolen,
 Jeg er gal af Sol!
 
 <nonum><small>Rom 1901.</small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2017100906">
+<text id="nielsenlc2017100906">
 <head>
    <title>Spartanere</title>
    <subtitle>(Til en Idrætsaften i Sportsklubben »Sparta«.)</subtitle>
@@ -371,6 +380,7 @@ Jeg er gal af Sol!
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Et Folk af Styrke, en Slægt af Staal!
 En rank, urokkelig Ungdomsskare,
 saa vant, i Faren at se sit Maal,
@@ -433,10 +443,11 @@ Hver Gang I Musklernes Fjedre spænder,
 hver Gang I griber med faste Hænder,
 det er Lykurgos’ glemte Ry,
 I giver levende Magt paany!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2017100907">
+<text id="nielsenlc2017100907">
 <head>
    <title>Livets Brusen</title>
    <firstline>Livet bruser. Hør dets Blodkaskade</firstline>
@@ -444,6 +455,7 @@ I giver levende Magt paany!
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Livet bruser. Hør dets Blodkaskade
 styrte sig fra Hjærtets dybe Sø
 mod den Afgrund, hvori alt skal dø,
@@ -458,10 +470,11 @@ til de skylles ned en Dag og falder
 lig en løsnet Lerklump i en Flod — —
 Livet bruser. Blod frembringer Blod.
 Livet har ej Maal og ikke Alder.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2017100908">
+<text id="nielsenlc2017100908">
 <head>
    <title>Præstø</title>
    <subtitle>(Ved Præstø 500 Aars Fest)</subtitle>
@@ -470,6 +483,7 @@ Livet har ej Maal og ikke Alder.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I.
 
     Foran: den blaa og brede Fjord,
@@ -542,10 +556,11 @@ som ej blev ældet af de mange Aar,
 men ung og stærk endnu ved Fjorden staar
 og drømmer med et Smil i Nætter klare
 om Havets overvundne Venderfare.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2017100909">
+<text id="nielsenlc2017100909">
 <head>
    <title>Mismod</title>
    <firstline>Ak, hver Dag jeg lære maa</firstline>
@@ -553,6 +568,7 @@ om Havets overvundne Venderfare.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I.
 
 Ak, hver Dag jeg lære maa:
@@ -592,10 +608,11 @@ Skær dit Hjærte ud, før det er for sent,
 dræb det, mens du bærer det uberørt og rent —
 som en Mand, der myrder sit Barn, imens det blunder,
 at det ikke siden i Livet skal gaa under.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2017100910">
+<text id="nielsenlc2017100910">
 <head>
    <title>Morgen paa Fjorden</title>
    <firstline>Det dæmrer mod Dag!</firstline>
@@ -603,6 +620,7 @@ at det ikke siden i Livet skal gaa under.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det dæmrer mod Dag!
 
         Natten indhyller sit Hoved i Dis
@@ -646,10 +664,11 @@ Da brister den sidste, blinkende Stjerne,
 som slukkedes fjernt en hvid Lanterne,
 og Rummets Red ligger gylden blaa,
 før Solens Stævn styrer frem derpaa!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2017100911">
+<text id="nielsenlc2017100911">
 <head>
    <title>Høstnat</title>
    <firstline>Det er saa tyst</firstline>
@@ -657,6 +676,7 @@ før Solens Stævn styrer frem derpaa!
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
     Det er saa tyst,
     fuldmaanelyst
 og skært af Dis, som dugger.
@@ -677,10 +697,11 @@ solløs Dagning atter.
     I Længsel efter Somrens Lys
     opvaagner Jorden i et Gys
 frygter, Frostens Haand dens Strube fatter.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2017100912">
+<text id="nielsenlc2017100912">
 <head>
    <title>Sensommerbarn</title>
    <firstline>Hun er et Sensommerbarn</firstline>
@@ -688,6 +709,7 @@ frygter, Frostens Haand dens Strube fatter.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hun er et Sensommerbarn.
     Hun fødtes, da Hegnenes Nødder blev brune
     og Haserne faldt,
@@ -710,10 +732,11 @@ O, du min afsindige Sjæl!
     duftige Drømme som Agerdamp efter din Hæl -
         Kender du Foraar og Høst,
         o, min afsindige Sjæl!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2017100913">
+<text id="nielsenlc2017100913">
 <head>
    <title>Skæbne</title>
    <subtitle>(Af Romanen: De onde Aar.)</subtitle>
@@ -722,6 +745,7 @@ O, du min afsindige Sjæl!
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Mit Liv vil gaa sin Gang, om jeg græder eller ler;
 om jeg lever eller dør, er for Verden det samme.
     Om jeg brænder som en Flamme,
@@ -745,10 +769,11 @@ som en døvstum, der ikke kan høre eller svare.
     Om jeg raaber højt i Fare,
     det vil agte ej derpaa;
 om jeg dør eller lever, det vil uforandret gaa!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2017100914">
+<text id="nielsenlc2017100914">
 <head>
    <title>Parisisk Morgen</title>
    <firstline>Den unge Morgen, som sov paa Puder</firstline>
@@ -756,6 +781,7 @@ om jeg dør eller lever, det vil uforandret gaa!
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
     Den unge Morgen, som sov paa Puder
     af Blomsteraande og Himmeldis,
     har aabnet Øjet og staar og stirrer
@@ -780,7 +806,7 @@ Da kysser Gryet din Mund — Paris!
 udgyder over dit Bed — Paris!
 
     Han luger ikke. Han kender ikke
-    til Skel blandt Blomster. Han vil kun ét:
+    til Skel blandt Blomster. Han vil kun ét:
     Med Tak de skal af hans Gave drikke
     og gro — ja, gro, saa at Livets Gaade
     hver Aften løst for hans Fod kan ligge
@@ -804,10 +830,11 @@ i rigt og broget som din — Paris!
     og langsomt letter dens hvide Dis.
     Men i din skønne Kastaniegade
 gaar Foraarsmorgenen frem — Paris!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2017100915">
+<text id="nielsenlc2017100915">
 <head>
    <title>Floden</title>
    <firstline>Der synger Fugle, og Floden bruser</firstline>
@@ -815,6 +842,7 @@ gaar Foraarsmorgenen frem — Paris!
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I.
 
 Der synger Fugle, og Floden bruser,
@@ -837,7 +865,7 @@ som spændt har lyttet, en bange Smærte;
 de Raab, der svandt, før jeg dem forstod,
 en Angest i mig de efterlod.
 
-Hvor véd jeg fra, om de ikke bragte
+Hvor véd jeg fra, om de ikke bragte
 min Sjæl det Bad, den maa ydmygt agte,
 det skæbnesvangre: Far hen! Far ben!
 — O! Raab fra Floden, lyd ej igen.
@@ -881,7 +909,7 @@ En gylden Krusning hen ad den iler,
 som kasted Lykken sin gyldne Tærning.
 
 Ja, før end Solen igen gaar ned,
-véd alle, hvad de nu ikke véd!
+véd alle, hvad de nu ikke véd!
 
 
 III.
@@ -922,10 +950,11 @@ flyder ud i Havet og forsvinder,
 glider ud i Mørket — og er Minder!
 
 <nonum><small>Suresnes 1903.</small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2017100916">
+<text id="nielsenlc2017100916">
 <head>
    <title>Natlig Møde</title>
    <firstline>Midnatstimens milde Mørke</firstline>
@@ -933,6 +962,7 @@ glider ud i Mørket — og er Minder!
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Midnatstimens milde Mørke
     over Verdensstaden svømmed,
 medens Floden lydløst strømmed
@@ -1005,7 +1035,7 @@ som om dér han dunkelt gætted
     al den Frygt, hans Tanker rummed.
 Men da stadig jeg forstummed
     af en Uro i mit Indre,
-saå han bort for ej at hindre
+saá han bort for ej at hindre
     mig i Svarets frie Dom.
 »Danmark kan ej blive mindre,«
     i en dødstung Tone kom.
@@ -1044,10 +1074,11 @@ hvad vi begge hørte lyde
     saá han paa mig og gik bort.
 
 <nonum><small>Paris 1903.</small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2017100917">
+<text id="nielsenlc2017100917">
 <head>
    <title>Grøn Glæde</title>
    <firstline>Nu grønnes Jorden som aldrig før</firstline>
@@ -1055,6 +1086,7 @@ hvad vi begge hørte lyde
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nu grønnes Jorden som aldrig før.
 — Mit Hjærte aabner sin stængte Dør.
 
@@ -1087,10 +1119,11 @@ hans Mildhed aander i Morgensuset.
 
 Men Adam kaster sin Kvinde ned:
 »Se, Gud er glad, han lod os i Fred.«
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2017100918">
+<text id="nielsenlc2017100918">
 <head>
    <title>Morgenandagt</title>
    <firstline>Morgensus i unge Kroner!</firstline>
@@ -1098,6 +1131,7 @@ Men Adam kaster sin Kvinde ned:
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Morgensus i unge Kroner!
     Fugletoner,
     søvntilslørte, kuldeskræmte,
@@ -1149,10 +1183,11 @@ Morgen! Aarets Morgen gryr!
     Regn og Sol vil blandes sammen — -
         Lovet være Vaaren!
             Amen!«
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2017100919">
+<text id="nielsenlc2017100919">
 <head>
    <title>Vaarregn</title>
    <firstline>Det regner saa stille, saa stille</firstline>
@@ -1160,6 +1195,7 @@ Morgen! Aarets Morgen gryr!
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Det regner saa stille, saa stille,
     en bristende Væde, der dufter af Vaar;
     det er, som Plejadernes Haar,
@@ -1177,10 +1213,11 @@ Jeg aander saa varligt, saa varligt,
     sødt bæver imod mig en Duft af Vaar,
         en Aande af Sol, der skælver
     igennem Plejadernes Haar!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2017100935">
+<text id="nielsenlc2017100935">
 <head>
    <title>Vaarfløjter</title>
    <firstline>Har jeg aldrig hørt Stærene fløjte før</firstline>
@@ -1188,6 +1225,7 @@ Jeg aander saa varligt, saa varligt,
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Har jeg aldrig hørt Stærene fløjte før,
 har jeg været en døv til i Dag?
     — I Morges, i Morges, jeg aabned min Dør,
@@ -1235,10 +1273,11 @@ som drak af den hellige Nil! o
 og synger mod Solen, som Gud har bestemt
     og Vinterens myrdende Mørke er glemt,
         og Livet, og Livet forstaar jeg!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2017100920">
+<text id="nielsenlc2017100920">
 <head>
    <title>Du</title>
    <firstline>Hvem er du, du fremmede og fjerne</firstline>
@@ -1246,6 +1285,7 @@ og synger mod Solen, som Gud har bestemt
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvem er du, du fremmede og fjerne,
 som min Sjæl har mødt og møder gerne
 som jeg daglig ser og daglig søger?
@@ -1270,10 +1310,11 @@ O, Veninde, tal, at jeg kan tie!
 Rastløs har jeg været, lad mig bie!
 I mit Øres Digel Rytmer syder;
 lad dem formes, mens din Stemme lyder!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2017100921">
+<text id="nielsenlc2017100921">
 <head>
    <title>Blomster</title>
    <firstline>Fra Cassiopeja’s Blomsterkurv</firstline>
@@ -1281,6 +1322,7 @@ lad dem formes, mens din Stemme lyder!
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Fra Cassiopeja’s Blomsterkurv
 der kastes hvide Liljer ud;
 en Regn af Blomster-Stjerneskud
@@ -1301,10 +1343,11 @@ og Cassiopeja’s Blomsterkurv
 tømmer jeg ud i dit unge Skød.
     Da vil du dit Hoved bøje
     og villig min Vilje føje!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2017100922">
+<text id="nielsenlc2017100922">
 <head>
    <title>Dit Hjærte</title>
    <firstline>Jeg siger dig: Bøj dit Hjærte!</firstline>
@@ -1312,6 +1355,7 @@ tømmer jeg ud i dit unge Skød.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg siger dig: Bøj dit Hjærte!
     Dit Hjærte knejser hovmodigt;
     og det skal krybe sig blodigt,
@@ -1327,10 +1371,11 @@ Jeg siger dig: Rejs dit Hjærte!
     Jeg taler om, hvad jeg véd;
     jeg siger dig:
             Rejs dit Hjærte!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2017100923">
+<text id="nielsenlc2017100923">
 <head>
    <title>Havet</title>
    <firstline>En Duft af Salt og Tang</firstline>
@@ -1338,6 +1383,7 @@ Jeg siger dig: Rejs dit Hjærte!
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I.
 
 En Duft af Salt og Tang,
@@ -1473,11 +1519,11 @@ hvor Pustet fra hans Aande
             de store Blade blader;
 det var, som Vælde bruste
             imod ham fra hans Værk;
-han fåtted Rytmens Styrke
-            og saå, hvor han var stærk!
+han fatted Rytmens Styrke
+            og saá, hvor han var stærk!
 
 Og til sig selv han talte:
-            »Dér har jeg skabt mig Svaret.
+            »Dér har jeg skabt mig Svaret.
 Hvad ved min Gerning mangled,
             har Bølgen aabenbaret.
 Alt Liv, som nu skal vorde,
@@ -1502,10 +1548,11 @@ og lagde Ord for Ord
             som Skrifttegn for min Fod —
 - Det var Jehova’s Budskab,
             som stolt min Sjæl forstod.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2017100924">
+<text id="nielsenlc2017100924">
 <head>
    <title>Uvejr</title>
    <firstline>Imod mit Vindu hvirvles</firstline>
@@ -1513,6 +1560,7 @@ og lagde Ord for Ord
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Imod mit Vindu hvirvles
 der Regn og Sne i Byger,
 Skumstyrt fra Mulmets Bølger
@@ -1562,10 +1610,11 @@ Tvivl taager mine Tanker;
 har jeg min Vej forspildt?
 — Havet har os forenet,
 men Livet har os skilt.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2017100925">
+<text id="nielsenlc2017100925">
 <head>
    <title>Vandringer</title>
    <firstline>Jeg har vandret ad vide, vide Veje</firstline>
@@ -1573,6 +1622,7 @@ men Livet har os skilt.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I.
 
 Jeg har vandret ad vide, vide Veje,
@@ -1616,7 +1666,7 @@ og Sorg, som ej kan siges!
     en sagte sukkende Vind;
     hjemløst flagrer dens Vinge
     mellem de nøgne Mure —
-        Men Solen hviler i Dalens Skød m
+        Men Solen hviler i Dalens Skød
         ed træt og blussende Kind.
 
 Verden er fuld af Skønhed
@@ -1883,7 +1933,7 @@ Døden vandrer jeg ikke fra,
 hvor langt jeg Livet skal friste.
     Se, jeg staar i din Vinjes Jord
     og hører, mit Hjærtes Grøde gror,
-    og véd, mod Modningens Under
+    og véd, mod Modningens Under
         det stunder!
 
 Tørstig var jeg paa Legem og Sjæl,
@@ -1946,10 +1996,11 @@ dybt inde fra Kanalen den kommende klang.
         Bøn fra Venedigs Bryst!
 
 <nonum><small>Venedig.</small></nonum>
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2017100926">
+<text id="nielsenlc2017100926">
 <head>
    <title>En Morgensang</title>
    <firstline>En Morgensang, før Morgen gryr!</firstline>
@@ -1957,6 +2008,7 @@ dybt inde fra Kanalen den kommende klang.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 En Morgensang, før Morgen gryr!
 En Glædessang, før Glæden flyr!
 O, intet er saa flygtigt
@@ -2023,10 +2075,11 @@ som Glæde, Sol og Skyr!
     og alle lo foragteligt uværdige — —
 
     Jeg tav. Jeg var den eneste blufærdige!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2017100927">
+<text id="nielsenlc2017100927">
 <head>
    <title>Snefald</title>
    <firstline>Jeg hører denne Lyd i Nat</firstline>
@@ -2034,6 +2087,7 @@ som Glæde, Sol og Skyr!
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg hører denne Lyd i Nat
         af Sne, af Sne, som falder!
         Saa tyst som Duers Aandedræt,
@@ -2052,12 +2106,13 @@ Jeg frygter denne Lyd i Nat
         af Sne, af Sne, som falder!
         Den sidste Rest af Slægters Raab,
         der een Gang steg saa højt af Haab;
-    som Lig af Ord, ej nogen mer skal høre — 
+    som Lig af Ord, ej nogen mer skal høre —
         Ak, denne Lyd, som ligger i mit Øre!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2017100928">
+<text id="nielsenlc2017100928">
 <head>
    <title>Vinternat</title>
    <firstline>De klare, kolde Stjerner</firstline>
@@ -2065,39 +2120,40 @@ Jeg frygter denne Lyd i Nat
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-De klare, kolde Stjerner 
+<poetry>
+De klare, kolde Stjerner
 mod Jordens Vinter vendt —
 Jeg ser Orions Bælte
 om Nattens Midje spændt.
 
-Fjernt gennem Rummets Højsal 
+Fjernt gennem Rummets Højsal
 den hvide Midnat gaar;
 stolt sidder Nyets Guldkam
 i hendes dunkle Haar.
 
-Sært hendes Øjne tindrer, 
-de græder ej, de ler ej; 
-de sitrer som Krystaller, 
+Sært hendes Øjne tindrer,
+de græder ej, de ler ej;
+de sitrer som Krystaller,
 de stirrer, men de ser ej.
 
-Paa hendes Bryster brænder 
+Paa hendes Bryster brænder
 to Tvillingstjerner smaa,
 to Draaber Mælk, forvandlet
 en Gang, da Gud dem saa.
 
 Oe Mælkediamanter
 for hendes Fod er drysset;
-eller mon det er Blomster, 
+eller mon det er Blomster,
 hun isnende har kysset:
 
-Den højre Haand er hævet 
-og peger som et Spyd; 
-rubinrød Spidsen 
+Den højre Haand er hævet
+og peger som et Spyd;
+rubinrød Spidsen
 funkler med Sirius, i Syd.
 
-Hun skrider stum og stille 
-frem i sin kolde Pragt, 
-som Rummets høje Rige 
+Hun skrider stum og stille
+frem i sin kolde Pragt,
+som Rummets høje Rige
 var hende underlagt.
 
 Orions Perlebælte
@@ -2105,14 +2161,15 @@ om Nattens Midje spænder
 til det mod Jorden segner
 for Gryets unge Hænder;
 
-og blottet Natten blegner, 
+og blottet Natten blegner,
 og hendes Øjne dør — —
-De sidste Stjerner slukkes 
+De sidste Stjerner slukkes
 som Glimt af Is, der tøer.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2017100929">
+<text id="nielsenlc2017100929">
 <head>
    <title>Missolonghi</title>
    <firstline>Missolonghi, Missolonghi</firstline>
@@ -2121,8 +2178,9 @@ som Glimt af Is, der tøer.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Missolonghi, Missolonghi,
-By, hvor Byrons Hjærte brast, 
+By, hvor Byrons Hjærte brast,
 flygtigt, flygtigt kun jeg saá dig,
 men du holdt mit Hjærte fast!
 
@@ -2131,39 +2189,40 @@ aaben nu for Vind og Veji,
 sagnomsuset, halvt i Gruset
 sunken sammen, laa du dér.
 
-Og din Mur, hvor fordum Blodet 
+Og din Mur, hvor fordum Blodet
 randt af dem, som for dig stred,
-sønderrevet, var den blevet 
+sønderrevet, var den blevet
 Tumleplads for Faar og Ged.
 
-Gennem øde, solfaldsrøde 
-Gader Fattigdommen gik. 
+Gennem øde, solfaldsrøde
+Gader Fattigdommen gik.
 Dine Kvinder, dine Kvinder
 havde Øjne uden Blik.
 
 Askeøjne, Arnesteder,
-hvor for længst hver Glød var slukt - 
+hvor for længst hver Glød var slukt -
 som var Livet i dem standset,
 da <i>hans</i> Øjnes Laag blev lukt!
 
-Ak, jeg kom med al mit unge 
-Hjærtes Drøm om gyldent Ry, 
-og jeg fandt en lille, skiden, 
+Ak, jeg kom med al mit unge
+Hjærtes Drøm om gyldent Ry,
+og jeg fandt en lille, skiden,
 hytteopfyldt Hyrdeby.
 
 Havbeskyllet, solindhyllet
-som i Kampens Morgenskær; 
-sagnomsuset ... O, men Bruset 
+som i Kampens Morgenskær;
+sagnomsuset ... O, men Bruset
 af hans Smærte stilned her.
 
-Og hans skønne Hoved stivned 
+Og hans skønne Hoved stivned
 skønt i Dødens Alabast —
 Missolonghi, Missolonghi,
 By, hvor Byrons Hjærte brast!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2017100930">
+<text id="nielsenlc2017100930">
 <head>
    <title>Orient</title>
    <firstline>Der strøg forbi mig en krydret Brise</firstline>
@@ -2171,6 +2230,7 @@ By, hvor Byrons Hjærte brast!
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I.
 
 Der strøg forbi mig en krydret Brise,
@@ -2179,13 +2239,13 @@ det var, som Morgenen vilde vise
 min Sjæl et Minde, den før har kendt.
 
 Jeg maatte standse og Aande drage
-saa dybt; mit Bryst blev af Længsel spændt; 
+saa dybt; mit Bryst blev af Længsel spændt;
 imod mig bølged min Ungdoms Dage,
 de gyldne Dage i Orient.
 
 Mit Hjærte fyldtes af denne Brise
 med mystisk Sødme af Orient;
-min Sjæl blev stille. — Men denne Vise 
+min Sjæl blev stille. — Men denne Vise
 har Solens Brise til Lise sendt.
 
 
@@ -2193,34 +2253,34 @@ II.
 
 Vi stod gennem Archipelaget!
     Og Solen faldt i de buede Sejl
-    og sprang tilbage fra Havets Spejl. 
+    og sprang tilbage fra Havets Spejl.
     Tre Gange kipped vi Flaget
-        for en Marstal’er Skonnert, som kendte os. 
+        for en Marstal’er Skonnert, som kendte os.
         — Ellers var der intet, som hændte os!
 
 Vi kom fra de græske Cyklader,
     der svømmed omkring os blødtlinjede blaa,
-    som farvet af Havet, hvori de laa, 
+    som farvet af Havet, hvori de laa,
     som bygget af Bølgeflader.
         Nu sank de saa langt bag vor Laaring
         lig blaanende Skyer ved Vaaring!
 
 De sagnomkransede Kyster,
-    hvor fordum et Folk i sin Vælde stod; 
-    som rødned saa tidt af sit eget Blod; 
+    hvor fordum et Folk i sin Vælde stod;
+    som rødned saa tidt af sit eget Blod;
     de bugned lig frugtbare Bryster.
-        Jeg var kun en Dreng, men fra Lønningen 
+        Jeg var kun en Dreng, men fra Lønningen
         jeg hørte Homer gennem Dønningen!
 
 Det var den helleniske Himmel,
-    saa bundløst dybt og saa vidt var dens Hvælv, 
+    saa bundløst dybt og saa vidt var dens Hvælv,
     den favned Havet; det var den selv;
     og Solen gød tindrende svimmel
-        over Hav og Himmel sin Glorie, 
+        over Hav og Himmel sin Glorie,
         og Luften var lutret Historie!
 
 Hvor aanded jeg Luften og Solen!
-    Mit Hjærte modned, som blev det en Mands, 
+    Mit Hjærte modned, som blev det en Mands,
     og dunkelt forstod jeg, at udenlands
     jeg lærte langt mer end i Skolen.
         Af Livet jeg lærte, af Linjerne,
@@ -2230,19 +2290,19 @@ O, Drømme, som Drenge kan drømme!
     Som Taager de fødes og glide forbi,
     men Varsler om Fremtiden glimter deri,
     mod Manddom og Mandsdaad de strømme.
-        Og den, som kan Tegnene tyde sig, 
+        Og den, som kan Tegnene tyde sig,
         han véd, hvad han siden skal byde sig!
 
 Vi stod gennem Archipelaget.
     Og Kios steg om vor Styrbords Bov;
     der red en lille cypressort Skov
     paa Ryggen af Højdedraget.
-        Om Bagbord løfted Mytilene 
+        Om Bagbord løfted Mytilene
         sin Bjærgkegle kongeligt ene!
 
 Da rejste sig Asiens Kyster,
     da aabned sig Bugten, hvor Smyrna laa.
-    Jeg følte gennem mit Hjærte gaa 
+    Jeg følte gennem mit Hjærte gaa
     en Sødme af Længsler og Lyster,
         en Ild, som jeg siden ej har kendt den —
         - Da mødte min Sjæl Orienten!
@@ -2250,32 +2310,32 @@ Da rejste sig Asiens Kyster,
 
 III.
 
-Saa kasted vi Anker paa Smyrna’s Rhed; 
+Saa kasted vi Anker paa Smyrna’s Rhed;
 mit Drengehjærte det bæved derved.
 Paa Raanokken laa jeg,
 i Sejlet jeg sled;
 men ind over Byen og Højene saá jeg!
 
-En Vellugt vugged min Mund imod 
-og sank som Sol i mit Hjærteblod. 
+En Vellugt vugged min Mund imod
+og sank som Sol i mit Hjærteblod.
 Min Nok beslog jeg,
 i Luften jeg stod;
 men dybt ind i Østerlands Drømmene drog jeg!
 
-De fjerneste Tider imod mig skred, 
-som saå jeg gennem Aartusinder ned; 
+De fjerneste Tider imod mig skred,
+som saá jeg gennem Aartusinder ned;
 en Seer blev jeg
 og skjalv derved.
 En Pagt paa Vindenes Vinger skrev jeg!
 
-Det var et Sekund, eller Tusinde Aar, 
+Det var et Sekund, eller Tusinde Aar,
 men ristet ind i min Sjæl det staar.
 Ad Veje gik jeg,
 Guds Aande gaar.
 Min Daab i Slægternes Dybder fik jeg!
 
-Et Pust fra Palmer med Daddelduft 
-strøg duvende gennem den høje Luft. 
+Et Pust fra Palmer med Daddelduft
+strøg duvende gennem den høje Luft.
 Det var, som svam jeg
 i Sol og Duft,
 og Østens glødende Sjæl fornam jeg!
@@ -2284,21 +2344,22 @@ og Østens glødende Sjæl fornam jeg!
 IV.
 Smyrna!
         Navnet smager
-    som et Granatæbles Blod, 
+    som et Granatæbles Blod,
     dufter solsødt som Dadler!
-Drømme fra Østerland drager 
+Drømme fra Østerland drager
 gennem min Sjæl, naar det nævnes.
 
 Smyrna!
         Ja, som en Frugt,
-    som en Melon paa Marken 
-    lyser den frem mellem Højene 
+    som en Melon paa Marken
+    lyser den frem mellem Højene
     langs den drueblaa Bugt.
 O, som en solmoden Frugt!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2017100931">
+<text id="nielsenlc2017100931">
 <head>
    <title>Yemen</title>
    <firstline>Mod Yemen stunder mit Hjærte</firstline>
@@ -2306,45 +2367,47 @@ O, som en solmoden Frugt!
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-Mod Yemen stunder mit Hjærte, 
+<poetry>
+Mod Yemen stunder mit Hjærte,
 imod Arabiens Lykkeland,
-der hæver sin yppige Have 
+der hæver sin yppige Have
 af Ørkenens golde Sand.
     Mit Hjærtes blodtunge Drueklase
     drømmer om Yemens Lys-Oase,
     længes fra Mørket ved Polen
         mod Solen!
 
-Mod Yemen! Ja, imod Yemen, 
-hvor Asra’s elskende Stamme bor, 
+Mod Yemen! Ja, imod Yemen,
+hvor Asra’s elskende Stamme bor,
 hvor Dødens blodrøde Purpur
 af Livets Dunkelhed gror.
-    Til Palmesuset fra Yemens Skove 
-    lytter mit Hjærte og kan ej sove, 
+    Til Palmesuset fra Yemens Skove
+    lytter mit Hjærte og kan ej sove,
     hedt som en flammende Lilje
         af Vilje.
 
-Ja, jeg har Hjemve mod Yemen, 
-mod Frodighedens og Frugtens Dal, 
+Ja, jeg har Hjemve mod Yemen,
+mod Frodighedens og Frugtens Dal,
 hvor Natten bæver besvangret
 og aander saa vellugtsval.
-    Mit Hjærte gyser af Minders Sødme, 
-    drømmer sig hjem i Gryets Rødme, 
+    Mit Hjærte gyser af Minders Sødme,
+    drømmer sig hjem i Gryets Rødme,
     favnes af Palmesuset,
         beruset.
 
-Mod Yemen stunder mit Hjærte, 
+Mod Yemen stunder mit Hjærte,
 imod Arabiens Lykkekyst,
 der lokker med lønlig Kalden
 de bristende Kim i mit Bryst.
-    Mit Hjærte higer fra Mulmets Øde 
-    Yemens svulmende Vaar i Møde, 
+    Mit Hjærte higer fra Mulmets Øde
+    Yemens svulmende Vaar i Møde,
     stiger fra Mørket ved Polen
         mod Solen!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2017100932">
+<text id="nielsenlc2017100932">
 <head>
    <title>Asra</title>
    <firstline>Dit Haar er som glødende Ibenholt</firstline>
@@ -2352,37 +2415,39 @@ de bristende Kim i mit Bryst.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-Dit Haar er som glødende Ibenholt, 
+<poetry>
+Dit Haar er som glødende Ibenholt,
 dine Øjne som tropiske Nætter.
     Saa hænger jeg Sydkorset om din Hals.
     O, Gud, for et Kys er min Sjæl tilfals!
     Du gør mig til Hersker, til Træl, til et Kryb —
         — Natten er dunkel, og Natten er dyb!
 
-Din Mund er en brændende Kaktusblomst, 
+Din Mund er en brændende Kaktusblomst,
 dine Tænder af hvide Koraller.
-    Saa ryster jeg Natten, til Stjernerne sner 
-    omkring dig som Blomster; du blegner og ler. 
+    Saa ryster jeg Natten, til Stjernerne sner
+    omkring dig som Blomster; du blegner og ler.
     Du gør mig til Hersker, til Træl, til et Kryb
         — Natten er dunkel, og Natten er dyb!
 
-Din Haand er saa blid som et blundende Kid, 
+Din Haand er saa blid som et blundende Kid,
 dine Bryster er bævende Duer.
-    Saa fanger jeg Himlenes kredsende Høg 
+    Saa fanger jeg Himlenes kredsende Høg
     og bringer dig den som en ydmyg Spøg.
     Du gør mig til Hersker, til Træl, til et Kryb —
         — Natten er dunkel, og Natten er dyb!
 
-Min Vilje er vild som det høstlige Hav; 
+Min Vilje er vild som det høstlige Hav;
 det brænder af Morild i Mulmet.
     Men driver du, Asra, dit Spil for vidt,
     da rejser Havet sig stormfuldt stridt;
     jeg gør mig til Hersker og dig til mit Kryb —
         — Og Natten skal blive dig dunkel og dyb!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2017100933">
+<text id="nielsenlc2017100933">
 <head>
    <title>Tananarive</title>
    <firstline>Der toned et Navn i min Sjæl i Nat</firstline>
@@ -2390,39 +2455,41 @@ det brænder af Morild i Mulmet.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-Der toned et Navn i min Sjæl i Nat, 
+<poetry>
+Der toned et Navn i min Sjæl i Nat,
 af Drømmes Lydbølger baaret.
-    Det vugged mit Sind, til jeg vaktes derved. 
+    Det vugged mit Sind, til jeg vaktes derved.
     — Og det var en Morgen ved Marne’s Bred,
     i Stilhed, man ej kan beskrive.
     En tungtlastet Flodpram blev staget afsted,
-    saa tyst den hen over Flodspejlet gled; 
+    saa tyst den hen over Flodspejlet gled;
         i Stævnen stod:
             Tananarive!
 
-Fra blundende Haver mig blomstred imod 
+Fra blundende Haver mig blomstred imod
 en tung og berusende Sødme.
-    Højt over mit Hoved, i Solvældets Glød, 
+    Højt over mit Hoved, i Solvældets Glød,
     Akacietræernes Aande lød,
     uhørligt, som Duggdraaber drive.
-    Saa sagtelig, sagtelig Flodvandet flød, 
+    Saa sagtelig, sagtelig Flodvandet flød,
     og sagte Prammen sig fremad skød
         med Guldnavnet:
             Tananarive!
 
-Saa stille jeg stod i den tiende Stund 
+Saa stille jeg stod i den tiende Stund
 af drømmende Vellugt ombølget.
-    O, gerne jeg drog til den ukendte 0, 
-    der løfter sig fjernt af den kogende Sø; 
+    O, gerne jeg drog til den ukendte Ø,
+    der løfter sig fjernt af den kogende Sø;
     hvor Urskovens Pan er i Live;
-    hvor glødende Blomster udfoldes og dø; 
+    hvor glødende Blomster udfoldes og dø;
     hvor Vindene duve af duftende Frø
         fra Palmer i
             Tananarive!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="nielsenlc2017100934">
+<text id="nielsenlc2017100934">
 <head>
    <title>Vandring</title>
    <firstline>Fra Sorg jeg gik, til Sorg jeg kom</firstline>
@@ -2430,19 +2497,20 @@ af drømmende Vellugt ombølget.
    <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-Fra Sorg jeg gik, til Sorg jeg kom, 
+<poetry>
+Fra Sorg jeg gik, til Sorg jeg kom,
     fra Savn og til Savn jeg vandred;
-men vilde jeg standse og se mig om, 
-    jeg saå, der var intet forandret!
+men vilde jeg standse og se mig om,
+    jeg saá, der var intet forandret!
 
-Der steg et Bjærg; der randt en Flod; 
-    der faldt nogle Bække, som bruste; 
+Der steg et Bjærg; der randt en Flod;
+    der faldt nogle Bække, som bruste;
 men vilde jeg glemme, hvad jeg forlod,
     sørgmodigt mit Hjærte suste.
 
 En Vej løb hen, jeg fulgte den.
     Nu vandrer du Glemsel, i Møde!
-Men Minder maned mig hjem igen; 
+Men Minder maned mig hjem igen;
     det var som en Mumlen af døde.
 
 Fra Mark til Skov, fra Bjærg til Dal,
@@ -2450,18 +2518,18 @@ Fra Mark til Skov, fra Bjærg til Dal,
 dog aldrig jeg kom fra den vejløse Val,
     hvor jeg med min Skæbne kriged.
 
-Fra Vest til Øst, fra Vaar til Høst, 
+Fra Vest til Øst, fra Vaar til Høst,
     i Gry og ved Aftentide,
-jeg kunde ej gaa fra mit eget Bryst, 
+jeg kunde ej gaa fra mit eget Bryst,
     og vandred jeg end saa vide.
 
 Hver levet Dag, hvert Nederlag,
     hver Smærte, jeg voldte andre, —
-jeg bærer det hos mig Dag for Dag, 
+jeg bærer det hos mig Dag for Dag,
     med det maa jeg Vejene vandre!
+</poetry>
 </body>
-</poem>
+</text>
 
 </workbody>
 </kalliopework>
-
