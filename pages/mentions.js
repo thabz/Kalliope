@@ -272,16 +272,6 @@ const MentionsPage = (props) => {
       return <Section title={g.title} items={g.items} key={g.title} />;
     });
 
-  sections.push(
-    <ExternalIdentifierLinks
-      identifiers={identifiers}
-      lang={lang}
-      category="reference"
-      variant="references"
-      key="external-identifiers"
-    />
-  );
-
   if (translations.length > 0) {
     sections.push(
       <TranslationsSection
@@ -291,6 +281,16 @@ const MentionsPage = (props) => {
       />
     );
   }
+
+  sections.push(
+    <ExternalIdentifierLinks
+      identifiers={identifiers}
+      lang={lang}
+      category="reference"
+      variant="references"
+      key="external-identifiers"
+    />
+  );
 
   return (
     <Page
