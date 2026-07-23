@@ -26,6 +26,7 @@ import { poetName, workLinkName } from './formatting.js';
 import { primaryTextVariantId } from './variants.js';
 import { loadExternalIdentifiers } from './external-identifiers.js';
 import { createProgressReporter } from './progress.js';
+import { findTextInUnlistedWork } from './workfiles.js';
 
 const person_mentions_dirty = new Set();
 
@@ -139,6 +140,17 @@ const build_person_or_keyword_refs = (collected) => {
                       register(filename, toPoetId, fromId, refType, toPoemId);
                     }
                   } else {
+                    const unlistedWork = findTextInUnlistedWork(
+                      toPoemId,
+                      collected.unlistedWorkFiles || [],
+                    );
+                    if (unlistedWork != null) {
+                      throw new Error(
+                        `${filename} ${fromId}: points to unknown text ${toPoemId}. ` +
+                        `The text is in ${unlistedWork.filename}, but that work ` +
+                        `is not listed in <works> in ${unlistedWork.infoFilename}.`,
+                      );
+                    }
                     throw new Error(
                       `${filename} ${fromId}: points to unknown text ${toPoemId}`
                     );

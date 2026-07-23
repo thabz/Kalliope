@@ -112,6 +112,7 @@ import {
   sourceFilesForText,
   worksForPoet,
 } from './build-static/anthologies.js';
+import { findUnlistedWorkFiles } from './build-static/workfiles.js';
 
 const envFlag = (name) => {
   return ['1', 'true', 'yes'].includes(
@@ -132,6 +133,7 @@ let collected = {
   dict: new Map(),
   timeline: new Array(),
   person_or_keyword_reference: new Map(),
+  unlistedWorkFiles: [],
 };
 
 // Ready after second pass
@@ -1393,6 +1395,7 @@ const main = async () => {
   safeMkdir(`public/api`);
   collected.museums = await b('build_museums', build_museums, collected);
   collected.workids = await b('build_poet_workids', build_poet_workids);
+  collected.unlistedWorkFiles = findUnlistedWorkFiles(collected.workids);
   collected.poets = await b(
     'build_poets_first_pass',
     build_poets_first_pass,
