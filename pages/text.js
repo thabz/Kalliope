@@ -409,12 +409,8 @@ const TextPage = (props) => {
         content_lang: 'da',
       });
     }
-    const printedPage = text.source.pages.split('-')[0];
     facsimilePictures[firstPageNumber - 1].miniature_content_html = [
-      [
-        `Kilden${printedPage ? `, s. ${printedPage}` : ''}.`,
-        { html: true },
-      ],
+      [sourceText, { html: true }],
     ];
     textPictures.push({
       key: 'facsimile' + firstPageNumber,
