@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="wintherm" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Mathias</firstname>
+    <lastname>Winther</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1795-01-25</date>
+      <place>Gammellund, Vissenbjerg Sogn</place>
+    </born>
+    <dead>
+      <date>1834-02-26</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q12326411</wikidata>
+    <viaf>76634015</viaf>
+    <biografisk-leksikon-lex-dk>Mathias_Winther</biografisk-leksikon-lex-dk>
+    <runeberg-org>winthmat</runeberg-org>
+  </identifiers>
+</person>

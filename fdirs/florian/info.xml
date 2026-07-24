@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="florian" country="fr" lang="fr" type="poet">
+  <name>
+    <firstname>Jean-Pierre Claris de</firstname>
+    <lastname>Florian</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1755-03-06</date>
+      <place>Logrian-Florian</place>
+    </born>
+    <dead>
+      <date>1794-09-13</date>
+      <place>Sceaux</place>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q551740</wikidata>
+    <viaf>24601427</viaf>
+  </identifiers>
+</person>

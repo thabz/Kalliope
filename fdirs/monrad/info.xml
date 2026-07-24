@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="monrad" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Ditlev Gothardt</firstname>
+    <lastname>Monrad</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1811-11-24</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1887-03-28</date>
+      <place>Nykøbing Falster</place>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q694093</wikidata>
+    <viaf>72192281</viaf>
+    <lex-dk>D.G._Monrad</lex-dk>
+    <biografisk-leksikon-lex-dk>D.G._Monrad</biografisk-leksikon-lex-dk>
+  </identifiers>
+</person>
