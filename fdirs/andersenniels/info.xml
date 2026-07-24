@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="andersenniels" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Niels</firstname>
+    <lastname>Andersen</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1819-08-27</date>
+      <place>Ørsted</place>
+    </born>
+    <dead>
+      <date>1835-02-04</date>
+      <place>Ørsted</place>
+    </dead>
+  </period>
+  <identifiers>
+    <litteraturpriser-dk>ANielsAndersenf1819</litteraturpriser-dk>
+  </identifiers>
+</person>
