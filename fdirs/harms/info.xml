@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="harms" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Claus</firstname>
+    <lastname>Harms</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1778-05-25</date>
+      <place>Fahrstedt</place>
+    </born>
+    <dead>
+      <date>1855-02-01</date>
+      <place>Kiel</place>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q69117</wikidata>
+    <viaf>42629420</viaf>
+    <lex-dk>Claus_Harms</lex-dk>
+  </identifiers>
+</person>

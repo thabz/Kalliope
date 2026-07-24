@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="birch" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Frederik Sneedorff</firstname>
+    <lastname>Birch</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1805-03-01</date>
+      <place>Maribo</place>
+    </born>
+    <dead>
+      <date>1869-03-11</date>
+      <place>Halling</place>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q5576472</wikidata>
+    <viaf>267305131</viaf>
+    <biografisk-leksikon-lex-dk>Fr._Sneedorff_Birch</biografisk-leksikon-lex-dk>
+    <runeberg-org>sneedofr</runeberg-org>
+  </identifiers>
+</person>
