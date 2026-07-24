@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="bango" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Ole</firstname>
+    <lastname>Bang</lastname>
+    <christened>Oluf Lundt Bang</christened>
+  </name>
+  <period>
+    <born>
+      <date>1788-07-27</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1877-10-12</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q5565283</wikidata>
+    <viaf>32777073</viaf>
+    <lex-dk>Ole_Bang</lex-dk>
+    <biografisk-leksikon-lex-dk>Ole_Bang_-_læge</biografisk-leksikon-lex-dk>
+  </identifiers>
+</person>

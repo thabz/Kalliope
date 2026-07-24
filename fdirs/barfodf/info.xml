@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="barfodf" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Povl Frederik</firstname>
+    <lastname>Barfod</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1811-04-07</date>
+      <place>Lyngby, Djursland</place>
+    </born>
+    <dead>
+      <date>1896-06-15</date>
+      <place>Frederiksberg</place>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q795352</wikidata>
+    <viaf>45083663</viaf>
+    <biografisk-leksikon-lex-dk>Frederik_Barfod</biografisk-leksikon-lex-dk>
+    <runeberg-org>barfofre</runeberg-org>
+  </identifiers>
+</person>
