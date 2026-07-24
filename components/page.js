@@ -1,5 +1,10 @@
-import { useContext } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import CommonData from '../common/commondata.js';
+import {
+  getKalliopeIconDate,
+  getKalliopeIconSrc,
+} from '../common/kalliope-icon.js';
+import * as ImagePaths from '../common/imagepaths.js';
 import LangContext from '../common/LangContext.js';
 import Breadcrumbs, { Paging } from './breadcrumbs.js';
 import Head from './head.js';
@@ -9,17 +14,50 @@ import Tabs from './menu.js';
 
 const Heading = (props) => {
   const { title, poet } = props;
-  const iconSrc =
-    poet == null ? '/images/about/poet.jpg' : poet.square_portrait;
+  const [kalliopeIconSrc, setKalliopeIconSrc] = useState(
+    '/images/about/poet.jpg'
+  );
+  useEffect(() => {
+    const iconDate = getKalliopeIconDate(window.location.search);
+    setKalliopeIconSrc(getKalliopeIconSrc(iconDate));
+  }, []);
+  const iconSrc = poet == null ? kalliopeIconSrc : poet.square_portrait;
   const iconClassName =
     poet == null ? 'heading-icon kalliope-icon' : 'heading-icon poet-icon';
   const headingClassName =
     poet == null ? 'heading kalliope-heading' : 'heading';
+  const kalliopeIcon =
+    poet == null ? (
+      <picture>
+        {CommonData.availableImageFormats.map(ext => (
+          <source
+            key={ext}
+            type={ext !== 'jpg' ? `image/${ext}` : undefined}
+            srcSet={CommonData.availableImageWidths
+              .map(
+                width =>
+                  `${ImagePaths.thumbnailSrc(iconSrc, width, ext)} ${width}w`
+              )
+              .join(', ')}
+            sizes="(max-width: 640px) 60px, 120px"
+          />
+        ))}
+        <img
+          className={iconClassName}
+          src={ImagePaths.fallbackThumbnailSrc(
+            iconSrc,
+            CommonData.fallbackImagePostfix
+          )}
+          alt=""
+        />
+      </picture>
+    ) : null;
 
   return (
     <div className={headingClassName}>
       <h1>{title}</h1>
-      {iconSrc != null ? (
+      {kalliopeIcon}
+      {poet != null && iconSrc != null ? (
         <img className={iconClassName} src={iconSrc} alt="" />
       ) : null}
       <style jsx>{`
@@ -63,7 +101,9 @@ const Heading = (props) => {
           top: 0;
           right: 0;
           width: 120px;
-          height: auto;
+          height: 158px;
+          object-fit: contain;
+          object-position: top right;
           box-shadow: none;
         }
         .kalliope-heading :global(h1) {
@@ -86,6 +126,7 @@ const Heading = (props) => {
           }
           .kalliope-icon {
             width: 60px;
+            height: 79px;
           }
           .kalliope-heading :global(h1) {
             margin-right: 76px;

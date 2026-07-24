@@ -1,5 +1,10 @@
 import { isFileModified } from '../libs/caching.js';
-import { fileExists, safeMkdir, writeJSON } from '../libs/helpers.js';
+import {
+  fileExists,
+  loadJSON,
+  safeMkdir,
+  writeJSON,
+} from '../libs/helpers.js';
 import { translatePlace } from '../../common/place-names.js';
 import { supportedLanguages } from '../../common/languages.js';
 import { poetName } from './formatting.js';
@@ -20,8 +25,11 @@ const eventLabels = {
   },
 };
 
+const portraitPrioritiesFilename = 'content/today/portrait-priorities.json';
+
 const build_todays_events_json = async (collected) => {
   const langs = supportedLanguages;
+  const portraitPriorities = loadJSON(portraitPrioritiesFilename) || {};
   const portrait_descriptions = Array.from(collected.poets.values()).map(
     (poet) => {
       return `fdirs/${poet.id}/portraits.xml`;
@@ -35,7 +43,11 @@ const build_todays_events_json = async (collected) => {
   });
   if (
     !missingLanguageOutput &&
-    !isFileModified(...poet_info_files, ...portrait_descriptions)
+    !isFileModified(
+      portraitPrioritiesFilename,
+      ...poet_info_files,
+      ...portrait_descriptions
+    )
   ) {
     return;
   }
@@ -137,17 +149,27 @@ const build_todays_events_json = async (collected) => {
               .map((event) => {
                 const poet = event.context.poet;
                 let weight = 0;
+                const preferredPoetId =
+                  portraitPriorities[lang] &&
+                  portraitPriorities[lang][`${mm}-${dd}`];
                 weight += poet.has_portraits ? 12 : 6;
                 weight += poet.has_texts ? 10 : 5;
                 weight += poet.has_works ? 6 : 3;
                 weight += preferredCountries.indexOf(poet.country);
                 weight += event.context.event_type === 'born' ? 3 : 0; // Foretræk fødselsdage
+                weight += preferredPoetId === poet.id ? 1000 : 0;
                 return {
                   weight,
                   event,
                 };
               })
-              .sort((a, b) => (a.weight < b.weight ? 1 : -1));
+              .sort(
+                (a, b) =>
+                  b.weight - a.weight ||
+                  a.event.context.poet.id.localeCompare(
+                    b.event.context.poet.id
+                  )
+              );
             if (weighted.length > 0) {
               const event = weighted[0].event;
               const poet = event.context.poet;
