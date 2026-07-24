@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="hjortvk" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Victor Christian</firstname>
+    <lastname>Hjort</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1765-10-13</date>
+      <place>Gunderslevholm</place>
+    </born>
+    <dead>
+      <date>1818-07-26</date>
+      <place>Ribe</place>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q5807726</wikidata>
+    <viaf>141483674</viaf>
+  </identifiers>
+</person>

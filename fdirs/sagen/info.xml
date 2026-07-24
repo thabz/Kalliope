@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="sagen" country="no" lang="no" type="poet">
+  <name>
+    <firstname>Lyder Christian</firstname>
+    <lastname>Sagen</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1777-03-13</date>
+      <place>Flekkefjord</place>
+    </born>
+    <dead>
+      <date>1850-06-16</date>
+      <place>Bergen</place>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q4580437</wikidata>
+    <viaf>30437805</viaf>
+    <runeberg-org>sagenlyd</runeberg-org>
+  </identifiers>
+</person>
