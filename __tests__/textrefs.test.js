@@ -1,9 +1,23 @@
+jest.mock('../tools/libs/caching.js', () => ({
+  isFileModified: jest.fn(() => false),
+  loadCachedJSON: jest.fn(() => null),
+  writeCachedJSON: jest.fn(),
+  force_reload: false,
+  markFileDirty: jest.fn(),
+}));
+
+import { markFileDirty } from '../tools/libs/caching.js';
 import {
   collectTextRefs,
   extractTextRefs,
+  markChangedTextRefDestinationsDirty,
 } from '../tools/build-static/textrefs.js';
 
 describe('text refs', () => {
+  beforeEach(() => {
+    markFileDirty.mockClear();
+  });
+
   it('groups ordinary refs and translations from xrefs', () => {
     expect(
       extractTextRefs(`
@@ -24,25 +38,42 @@ describe('text refs', () => {
     ]);
   });
 
-  it('produces unchanged destination refs when only source whitespace changes', () => {
-    const before = collectTextRefs(
-      new Map([
-        [
-          'fdirs/source/one.xml',
-          [{ fromId: 'source1', toId: 'target1', type: 'mention' }],
-        ],
-      ])
-    );
-    const after = collectTextRefs(
-      new Map([
-        [
-          'fdirs/source/one.xml',
-          [{ fromId: 'source1', toId: 'target1', type: 'mention' }],
-        ],
-      ])
-    );
+  it('does not dirty destinations when source refs are unchanged', () => {
+    const refs = new Map([
+      ['target1', { mention: ['source1'], translation: [] }],
+    ]);
+    const collected = {
+      texts: new Map([
+        ['target1', { poetId: 'target-poet', workId: 'target-work' }],
+      ]),
+    };
 
-    expect(after).toEqual(before);
+    markChangedTextRefDestinationsDirty(refs, refs, collected);
+
+    expect(markFileDirty).not.toHaveBeenCalled();
+  });
+
+  it('dirties only the destination whose source ref was removed', () => {
+    const before = new Map([
+      ['target1', { mention: ['source1'], translation: [] }],
+      ['target2', { mention: ['source2'], translation: [] }],
+    ]);
+    const after = new Map([
+      ['target2', { mention: ['source2'], translation: [] }],
+    ]);
+    const collected = {
+      texts: new Map([
+        ['target1', { poetId: 'target-poet', workId: 'target-work' }],
+        ['target2', { poetId: 'other-poet', workId: 'other-work' }],
+      ]),
+    };
+
+    markChangedTextRefDestinationsDirty(before, after, collected);
+
+    expect(markFileDirty).toHaveBeenCalledTimes(1);
+    expect(markFileDirty).toHaveBeenCalledWith(
+      'fdirs/target-poet/target-work.xml'
+    );
   });
 
   it('removes stale refs when a modified source no longer links to a target', () => {

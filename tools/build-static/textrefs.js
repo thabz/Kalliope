@@ -70,7 +70,9 @@ const markChangedTextRefDestinationsDirty = (
       destinationWorkfiles.add(sourceWorkFilename(text));
     }
   });
-  markFileDirty(...destinationWorkfiles);
+  if (destinationWorkfiles.size > 0) {
+    markFileDirty(...destinationWorkfiles);
+  }
 };
 
 const build_textrefs = collected => {
