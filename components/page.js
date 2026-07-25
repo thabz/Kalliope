@@ -13,7 +13,7 @@ import Picture from './picture.js';
 import Tabs from './menu.js';
 
 const Heading = (props) => {
-  const { title, poet } = props;
+  const { title, poet, iconSrc: customIconSrc } = props;
   const [kalliopeIconSrc, setKalliopeIconSrc] = useState(
     '/images/about/poet.jpg'
   );
@@ -21,7 +21,8 @@ const Heading = (props) => {
     const iconDate = getKalliopeIconDate(window.location.search);
     setKalliopeIconSrc(getKalliopeIconSrc(iconDate));
   }, []);
-  const iconSrc = poet == null ? kalliopeIconSrc : poet.square_portrait;
+  const iconSrc =
+    poet == null ? customIconSrc ?? kalliopeIconSrc : poet.square_portrait;
   const iconClassName =
     poet == null ? 'heading-icon kalliope-icon' : 'heading-icon poet-icon';
   const headingClassName =
@@ -149,6 +150,7 @@ const Page = (props) => {
     paging,
     country,
     poet,
+    iconSrc,
     menuItems,
     selectedMenuItem,
     query,
@@ -171,7 +173,12 @@ const Page = (props) => {
       />
       <Main>
         <Breadcrumbs lang={lang} crumbs={crumbs} rightSide={pagingRendered} />
-        <Heading title={pageTitle} subtitle={pageSubtitle} poet={poet} />
+        <Heading
+          title={pageTitle}
+          subtitle={pageSubtitle}
+          poet={poet}
+          iconSrc={iconSrc}
+        />
         <Tabs
           items={menuItems}
           selected={selectedMenuItem}

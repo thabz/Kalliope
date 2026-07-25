@@ -11,6 +11,7 @@ const ErrorPage = (props) => {
       crumbs={[...kalliopeCrumbs(lang), { title: message }]}
       pageTitle=" "
       pageSubtitle={message}
+      iconSrc="/images/about/404.jpg"
       menuItems={kalliopeMenu()}
       selectedMenuItem="index">
       <SubHeading>{message}</SubHeading>
