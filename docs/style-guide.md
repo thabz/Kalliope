@@ -8,6 +8,14 @@ Denne guide samler projektets faste konventioner, især dem der er nemme at glem
 - Skriv konkret hvad der er observeret, ændret og valideret.
 - Brug engelske navne eller citater, når de er kildens titel, personnavn eller egentlig terminologi.
 
+## JavaScript
+
+- Brug aldrig implicit boolean coercion. Sammenlign eksplicit med den forventede
+  værdi, fx `value != null`, `items.length > 0` eller `flag === true`.
+- Brug `??` til fallback for `null` og `undefined`; brug ikke `value || fallback`,
+  når `value` ikke er en boolean.
+- Brug kun `&&`, `||` og `!` på udtryk, der allerede er booleans.
+
 ## Billeder
 
 - Portrætter og kunstgrafik ligger i `public/images/<id>/`.
