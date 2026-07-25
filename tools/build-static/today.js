@@ -149,10 +149,13 @@ const build_todays_events_json = async (collected) => {
               .map((event) => {
                 const poet = event.context.poet;
                 let weight = 0;
+                const sharedPortraitPriorities =
+                  portraitPriorities.all ?? {};
                 const languagePortraitPriorities =
                   portraitPriorities[lang] ?? {};
                 const preferredPoetId =
-                  languagePortraitPriorities[`${mm}-${dd}`];
+                  languagePortraitPriorities[`${mm}-${dd}`] ??
+                  sharedPortraitPriorities[`${mm}-${dd}`];
                 weight += poet.has_portraits ? 12 : 6;
                 weight += poet.has_texts ? 10 : 5;
                 weight += poet.has_works ? 6 : 3;

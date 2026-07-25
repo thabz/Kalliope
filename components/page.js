@@ -1,15 +1,15 @@
 import { useContext, useEffect, useState } from 'react';
-import CommonData from '../common/commondata.js';
 import {
   getKalliopeIconDate,
   getKalliopeIconSrc,
 } from '../common/kalliope-icon.js';
-import * as ImagePaths from '../common/imagepaths.js';
+import CommonData from '../common/commondata.js';
 import LangContext from '../common/LangContext.js';
 import Breadcrumbs, { Paging } from './breadcrumbs.js';
 import Head from './head.js';
 import LangSelect from './langselect.js';
 import Main from './main.js';
+import Picture from './picture.js';
 import Tabs from './menu.js';
 
 const Heading = (props) => {
@@ -28,29 +28,12 @@ const Heading = (props) => {
     poet == null ? 'heading kalliope-heading' : 'heading';
   const kalliopeIcon =
     poet == null ? (
-      <picture>
-        {CommonData.availableImageFormats.map(ext => (
-          <source
-            key={ext}
-            type={ext !== 'jpg' ? `image/${ext}` : undefined}
-            srcSet={CommonData.availableImageWidths
-              .map(
-                width =>
-                  `${ImagePaths.thumbnailSrc(iconSrc, width, ext)} ${width}w`
-              )
-              .join(', ')}
-            sizes="(max-width: 640px) 60px, 120px"
-          />
-        ))}
-        <img
-          className={iconClassName}
-          src={ImagePaths.fallbackThumbnailSrc(
-            iconSrc,
-            CommonData.fallbackImagePostfix
-          )}
-          alt=""
-        />
-      </picture>
+      <Picture
+        pictures={[{ src: iconSrc }]}
+        bare={true}
+        sizes="(max-width: 640px) 60px, 120px"
+        imgClassName={iconClassName}
+      />
     ) : null;
 
   return (
@@ -86,17 +69,17 @@ const Heading = (props) => {
         .heading :global(h1):global(.lighter) {
           color: #757575;
         }
-        .heading-icon {
+        :global(.heading-icon) {
           display: block;
           flex: 0 0 auto;
         }
-        .poet-icon {
+        :global(.poet-icon) {
           width: 128px;
           height: 128px;
           border-radius: 50%;
           object-fit: cover;
         }
-        .kalliope-icon {
+        :global(.kalliope-icon) {
           position: absolute;
           top: 0;
           right: 0;
@@ -120,11 +103,11 @@ const Heading = (props) => {
             gap: 16px;
             min-height: 90px;
           }
-          .poet-icon {
+          :global(.poet-icon) {
             width: 90px;
             height: 90px;
           }
-          .kalliope-icon {
+          :global(.kalliope-icon) {
             width: 60px;
             height: 79px;
           }
@@ -141,7 +124,7 @@ const Heading = (props) => {
           .heading {
             margin-bottom: 40px;
           }
-          .heading-icon {
+          :global(.heading-icon) {
             display: none;
           }
         }

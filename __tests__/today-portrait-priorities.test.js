@@ -1,12 +1,22 @@
 import fs from 'node:fs';
+import { supportedLanguages } from '../common/languages.js';
 
 const priorities = JSON.parse(
   fs.readFileSync('content/today/portrait-priorities.json', 'utf8')
 );
 
 describe('prioriterede portrætter på forsiden', () => {
+  test.each(supportedLanguages)(
+    'Baudelaire prioriteres på fransk, tysk, engelsk og dansk (%s)',
+    lang => {
+      const preferredPoet =
+        priorities[lang]?.['04-09'] ?? priorities.all['04-09'];
+
+      expect(preferredPoet).toBe('baudelaire');
+    }
+  );
+
   test.each([
-    ['04-09', 'baudelaire'],
     ['09-08', 'grundtvig'],
     ['11-14', 'oehlenschlaeger'],
     ['12-03', 'holberg'],
