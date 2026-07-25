@@ -29,7 +29,7 @@ const portraitPrioritiesFilename = 'content/today/portrait-priorities.json';
 
 const build_todays_events_json = async (collected) => {
   const langs = supportedLanguages;
-  const portraitPriorities = loadJSON(portraitPrioritiesFilename) || {};
+  const portraitPriorities = loadJSON(portraitPrioritiesFilename) ?? {};
   const portrait_descriptions = Array.from(collected.poets.values()).map(
     (poet) => {
       return `fdirs/${poet.id}/portraits.xml`;
@@ -61,7 +61,7 @@ const build_todays_events_json = async (collected) => {
 
   const add_event = (lang, monthAndDay, event) => {
     const key = `${lang}-${monthAndDay}`;
-    let items = collected_events.get(key) || [];
+    let items = collected_events.get(key) ?? [];
     items.push(event);
     collected_events.set(key, items);
   };
@@ -141,7 +141,7 @@ const build_todays_events_json = async (collected) => {
         for (let d = 1; d <= 31; d++) {
           const dd = d < 10 ? '0' + d : d;
           const mm = m < 10 ? '0' + m : m;
-          const events = collected_events.get(`${lang}-${mm}-${dd}`) || [];
+          const events = collected_events.get(`${lang}-${mm}-${dd}`) ?? [];
           if (events.filter((e) => e.type === 'image').length === 0) {
             // There are no images from events in today.xml. Find the most relevant poet portrait.
             const weighted = events
@@ -149,9 +149,10 @@ const build_todays_events_json = async (collected) => {
               .map((event) => {
                 const poet = event.context.poet;
                 let weight = 0;
+                const languagePortraitPriorities =
+                  portraitPriorities[lang] ?? {};
                 const preferredPoetId =
-                  portraitPriorities[lang] &&
-                  portraitPriorities[lang][`${mm}-${dd}`];
+                  languagePortraitPriorities[`${mm}-${dd}`];
                 weight += poet.has_portraits ? 12 : 6;
                 weight += poet.has_texts ? 10 : 5;
                 weight += poet.has_works ? 6 : 3;
@@ -163,13 +164,15 @@ const build_todays_events_json = async (collected) => {
                   event,
                 };
               })
-              .sort(
-                (a, b) =>
-                  b.weight - a.weight ||
-                  a.event.context.poet.id.localeCompare(
-                    b.event.context.poet.id
-                  )
-              );
+              .sort((a, b) => {
+                const weightDifference = b.weight - a.weight;
+                if (weightDifference !== 0) {
+                  return weightDifference;
+                }
+                return a.event.context.poet.id.localeCompare(
+                  b.event.context.poet.id
+                );
+              });
             if (weighted.length > 0) {
               const event = weighted[0].event;
               const poet = event.context.poet;
@@ -208,7 +211,7 @@ const build_todays_events_json = async (collected) => {
         const dd = d < 10 ? '0' + d : d;
         const mm = m < 10 ? '0' + m : m;
         const events = sort_events_by_date(
-          collected_events.get(`${lang}-${mm}-${dd}`) || []
+          collected_events.get(`${lang}-${mm}-${dd}`) ?? []
         );
         const path = `public/api/today/${lang}/${mm}-${dd}.json`;
         //console.log(path);

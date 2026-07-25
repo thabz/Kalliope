@@ -23,7 +23,7 @@ const padDatePart = value => String(value).padStart(2, '0');
 
 export const getKalliopeIconDate = (search, currentDate = new Date()) => {
   const dateKey = new URLSearchParams(search).get('date');
-  const match = /^(\d{2})-(\d{2})$/.exec(dateKey || '');
+  const match = /^(\d{2})-(\d{2})$/.exec(dateKey ?? '');
 
   if (match == null) {
     return currentDate;
