@@ -365,6 +365,11 @@ Attributter paa `<note>`:
 - `lang`: sprog for noten; default er `da`.
 - `unknown-original-by`: digter-id. Giver noten typen `unknown-original` og bruges som oversaettelsesreference.
 
+Brug en tom `<note unknown-original-by="..."/>`, naar originalens ophavsmand er
+kendt, men originalteksten ikke findes i Kalliope. Naar originalteksten findes i
+Kalliope, bruges i stedet en `<xref type="translation" poem="..."/>` i en
+almindelig note.
+
 Noter i selve teksten kan skrives som `<note>` eller `<footnote>` i tekstblokkene:
 
 ```xml

@@ -66,6 +66,7 @@ Sprogkoder, som buildet accepterer i dag:
 - `la`
 - `fa`
 - `es`
+- `nl`
 - `un`
 - `it`
 

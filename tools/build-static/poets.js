@@ -36,6 +36,7 @@ const knownPoetLanguages = new Set([
   'grc',
   'fa',
   'es',
+  'nl',
   'un',
   'it',
 ]);

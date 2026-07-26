@@ -884,7 +884,9 @@ Kun hvor du er ei, findes Held.
     <subtitle>Efter Imbert</subtitle>
     <firstline>Hvorfor klage, hvorfor græde</firstline>
     <source pages="42"/>
-    <!-- TODO: Find original (Imbert) -->
+    <notes>
+        <note unknown-original-by="imbert" />
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1287,7 +1289,9 @@ Ad Sagnet, som Klokkerne mindes.
     <subtitle>Fabel efter Nivernois</subtitle>
     <firstline>En Konge havde sig engang en Nar</firstline>
     <source pages="60-61"/>
-    <!-- TODO: Find originalen (Nivernois) -->
+    <notes>
+        <note unknown-original-by="nivernais" />
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1489,7 +1493,9 @@ Farvel, elskte Harpe! min eneste Skat!
     <subtitle>Efter Florian</subtitle>
     <firstline>Forgiæves Fængslets Muur gientager</firstline>
     <source pages="69-70"/>
-    <!-- TODO: Find original (Florian) -->
+    <notes>
+        <note unknown-original-by="florian" />
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1676,7 +1682,9 @@ Ham vil den aldrig være glædelig.
     <subtitle>Efter Jerningham</subtitle>
     <firstline>Til Templet söger sorgfuld Hob i Bön</firstline>
     <source pages="76-82"/>
-    <!-- TODO: Find original (Jerningham) -->
+    <notes>
+        <note unknown-original-by="jerningham" />
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2000,7 +2008,9 @@ Ja dette svage Hierte troer:
     <subtitle>Oratorium efter Mahlmann</subtitle>
     <firstline>Du har dine Stötter opbygget dig</firstline>
     <source pages="89-92"/>
-    <!-- TODO: Find original (Mahlman) -->
+    <notes>
+        <note unknown-original-by="mahlmann" />
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2641,7 +2651,9 @@ Og det er denne, som du har beholder.
     <subtitle>Fabel efter Fumars</subtitle>
     <firstline>Nedstegen Phæbus er i Thetis Favn</firstline>
     <source pages="110"/>
-    <!-- TODO: Find original (Fumars) -->
+    <notes>
+        <note unknown-original-by="fumars" />
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2666,9 +2678,9 @@ Höit Maanen vi, men aldrig Solen see.
     <firstline>Der gives en Plads i det kiölige Rum</firstline>
     <notes>
         <note>* En Lövhytte i Toppen af en herlig Eeg i Kraagerup Hauge, hvis Eiers Kone, Fru Fr. Brun den yngre, Sangen er tilegnet.</note>
+        <note unknown-original-by="brunf" />
     </notes>
     <source pages="111-112"/>
-    <!-- TODO: Find original (Frue Fr. Brun)-->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2717,7 +2729,9 @@ Et daarende Haab du ei elske mig op!
     <subtitle>Efter Steenhammars svenske Original</subtitle>
     <firstline>Storme vildt om Thorvalds Leie hviner</firstline>
     <source pages="113-121"/>
-    <!-- TODO: Find original (Stenhammer) -->
+    <notes>
+        <note unknown-original-by="stenhammar" />
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

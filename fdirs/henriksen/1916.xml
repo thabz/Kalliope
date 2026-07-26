@@ -851,7 +851,9 @@ fornemme Efterarets Løvfaldsfryd.
     <firstline>Der blæser en Sydstorm af værste Art</firstline>
     <source pages="44-45"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
-    <!-- TODO: Find originalen (Schoenaich-Carolath) -->
+    <notes>
+        <note unknown-original-by="schoenaich" />
+    </notes>
 </head>
 <body>
 <poetry>
@@ -893,7 +895,9 @@ Vi hilser Dig, Gudestrand!
     <firstline>Du smalle Ring, Du gyldne Ring</firstline>
     <source pages="46-47"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
-    <!-- TODO: Find originalen (Vierordt) -->
+    <notes>
+        <note unknown-original-by="vierordt" />
+    </notes>
 </head>
 <body>
 <poetry>
@@ -945,7 +949,9 @@ det helligt-rene Troskabspant.
     <firstline>Og gaarr Du i modløs Tøven</firstline>
     <source pages="48-50"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
-    <!-- TODO: Find originalen (Lienhard) -->
+    <notes>
+        <note unknown-original-by="lienhard" />
+    </notes>
 </head>
 <body>
 <poetry>
@@ -1236,7 +1242,9 @@ der drog ham med Toner og Sus.
     <subtitle>Ynglingen til Jomfruen:</subtitle>
     <firstline>Det var i Jordens sidste Vaar</firstline>
     <source pages="61-63"/>
-    <!-- TODO: Find originalen (Karlfeldt). -->
+    <notes>
+        <note unknown-original-by="karlfeldt" />
+    </notes>
     <!-- http://www.karlfeldt.org/bibliotek/diktarkivet -->
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
