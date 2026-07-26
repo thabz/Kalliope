@@ -7,7 +7,7 @@ export const createURL = (path) => {
     return `${l.protocol}//${l.host}${path}`;
   } catch (error) {
     // We're running in node.js on the server
-    return `http://localhost:3000${path}`;
+    return `http://localhost:${process.env.PORT ?? 3000}${path}`;
   }
 };
 

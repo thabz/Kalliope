@@ -11,6 +11,14 @@ import elasticSearchClient from './tools/libs/elasticsearch-client.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const dev = process.env.NODE_ENV !== 'production';
+const port = Number(process.argv[2] ?? process.env.PORT ?? 3000);
+
+if (!Number.isInteger(port) || port < 1 || port > 65535) {
+  throw new Error(`Invalid port: ${process.argv[2] ?? process.env.PORT}`);
+}
+
+process.env.PORT = String(port);
+
 const app = next({ dev });
 const handler = routes.getRequestHandler(app);
 const rootStaticFiles = [
@@ -289,9 +297,9 @@ app.prepare().then(() => {
       //      }
       handler(req, res);
     }
-  }).listen(3000, err => {
+  }).listen(port, err => {
     if (err) throw err;
-    console.log('> Ready on http://localhost:3000');
+    console.log(`> Ready on http://localhost:${port}`);
   });
 });
 
