@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="helvig" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Amalie von</firstname>
+    <lastname>Helvig</lastname>
+    <fullname>Anna Amalie von Helvig</fullname>
+    <alternative>Anna Amalie von Imhoff</alternative>
+  </name>
+  <period>
+    <born>
+      <date>1776-08-16</date>
+      <place>Weimar</place>
+    </born>
+    <dead>
+      <date>1831-12-17</date>
+      <place>Berlin</place>
+    </dead>
+  </period>
+  <works>1812</works>
+  <identifiers>
+    <wikidata>Q69439</wikidata>
+    <wikipedia-de>Amalie von Imhoff</wikipedia-de>
+    <viaf>59072448</viaf>
+  </identifiers>
+</person>
