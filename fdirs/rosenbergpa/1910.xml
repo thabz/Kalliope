@@ -5829,9 +5829,9 @@ Er Naaden aldrig fjern.
     <firstline>Nys paa Telegrafkontoret</firstline>
     <notes>
         <note>Eusebio Blasco Soler (1844–1903), spansk journalist, digter og dramatiker.</note>
+        <note unknown-original-by="blasco" />
     </notes>
     <source pages="272-273"/>
-    <!-- TODO: Find originalen. Eusebio Blasco Soler. -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5879,9 +5879,9 @@ Mens Depeschen hen han lagde:
     <firstline>Gule Blomter har du plukket</firstline>
     <notes>
         <note>Ramón de Campoamor y Campoosorio (1817-1901), spansk digter.</note>
+        <note unknown-original-by="campoamor" />
     </notes>
     <source pages="274-275"/>
-    <!-- TODO: Find originalen. Ramón de Campoamor y Campoosorio. -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5930,9 +5930,9 @@ Intet mer, min lille Elskte!
     <firstline>Den synkende Sol staar gylden bag Skyernes blaagraa Volde</firstline>
     <notes>
         <note>Eusebio Blasco Soler (1844–1903), spansk journalist, digter og dramatiker.</note>
+        <note unknown-original-by="blasco" />
     </notes>
     <source pages="276-286"/>
-    <!-- TODO: Find originalen. Eusebio Blasco Soler. -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6286,7 +6286,9 @@ Hilser jeg Gryet og Dagen.
     <subtitle>(Efter Jacques Perk)</subtitle>
     <firstline>Gud, sagde Duen, Gud er rund og fager</firstline>
     <source pages="294-295"/>
-    <!-- TODO: Find originalen. Jacques Perk. -->
+    <notes>
+        <note unknown-original-by="perk" />
+    </notes>
     <keywords>sonnet</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
