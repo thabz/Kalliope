@@ -29,7 +29,7 @@ const dateAndPlace = (datePlace, lang, age) => {
   if (datePlace.date === '?') {
     result.push(_('Ukendt år', lang));
   } else {
-    result.push(formattedDate(datePlace.date));
+    result.push(formattedDate(datePlace.date, lang));
   }
   if (datePlace.place != null) {
     result.push(

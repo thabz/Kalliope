@@ -61,7 +61,7 @@ const WorkPage = (props) => {
   const modifiedDate =
     modified != null ? (
       <div className="modified">
-        {_('Sidst ændret', lang)} {formattedDate(modified)}.
+        {_('Sidst ændret', lang)} {formattedDate(modified, lang)}.
       </div>
     ) : null;
   let sidebar = null;

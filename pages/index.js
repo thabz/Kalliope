@@ -27,7 +27,7 @@ const TodaysEvents = ({ events }) => {
         <div
           className="today-date"
           title={_('{yearsAgo} år siden i dag', lang, { yearsAgo })}>
-          {formattedDate(item.date)}
+          {formattedDate(item.date, lang)}
         </div>
       );
       const html = (
@@ -107,7 +107,7 @@ const News = ({ news }) => {
               lang={lang}
             />
           </div>
-          <div className="news-date">{formattedDate(date)}</div>
+          <div className="news-date">{formattedDate(date, lang)}</div>
           <style jsx>{`
             div.news-item {
               margin-bottom: 20px;
