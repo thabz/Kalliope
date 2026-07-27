@@ -7,6 +7,7 @@ import * as Links from '../components/links.js';
 import { kalliopeMenu } from '../components/menu.js';
 import Note from '../components/note.js';
 import Page from '../components/page.js';
+import PageLead from '../components/pagelead.js';
 import SidebarPictures from '../components/sidebarpictures.js';
 import SidebarSplit from '../components/sidebarsplit.js';
 import SubHeading from '../components/subheading.js';
@@ -79,6 +80,12 @@ const About = (props) => {
     pageBody = (
       <div className="thanks-list">
         <SubHeading>{keyword.title}</SubHeading>
+        <PageLead>
+          {_(
+            'Kalliope er gennem årene blevet til med hjælp fra mange læsere og bidragydere. Her takker vi dem, der har sendt digte, billeder, oplysninger og rettelser eller på anden måde har hjulpet samlingen.',
+            lang
+          )}
+        </PageLead>
         <TwoColumns>{body}</TwoColumns>
         <style jsx>{`
           .thanks-list {

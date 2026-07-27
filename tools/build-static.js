@@ -112,6 +112,7 @@ import {
   sourceFilesForText,
   worksForPoet,
 } from './build-static/anthologies.js';
+import { findUnlistedWorkFiles } from './build-static/workfiles.js';
 
 const envFlag = (name) => {
   return ['1', 'true', 'yes'].includes(
@@ -132,6 +133,7 @@ let collected = {
   dict: new Map(),
   timeline: new Array(),
   person_or_keyword_reference: new Map(),
+  unlistedWorkFiles: [],
 };
 
 // Ready after second pass
@@ -351,18 +353,20 @@ const handle_text = async (
     .map((id) => {
       const meta = collected.texts.get(id);
       const poet = poetName(collected.poets.get(meta.poetId));
-      const workFormattet =
+      const work =
         meta.workId === 'andre' ?
-          ''
-        : ' - ' +
-          workLinkName(collected.works.get(meta.poetId + '/' + meta.workId));
+          null
+        : workLinkName(
+            collected.works.get(meta.poetId + '/' + meta.workId),
+          );
 
-      return [
-        [
-          `${poet}: <a poem="${id}">»${meta.title}«</a>${workFormattet}`,
-          { html: true },
-        ],
-      ];
+      return {
+        id,
+        title: meta.title,
+        poet,
+        poetId: meta.poetId,
+        work,
+      };
     });
   let refsArray = buildRefsArray(textRefIdsByType.mention || []);
   let translationsArray = buildRefsArray(textRefIdsByType.translation || []);
@@ -378,12 +382,13 @@ const handle_text = async (
       const work = workLinkName(
         collected.works.get(meta.poetId + '/' + meta.workId),
       );
-      return [
-        [
-          `${poet}: <a poem="${id}">»${meta.title}«</a> – ${work}`,
-          { html: true },
-        ],
-      ];
+      return {
+        id,
+        title: meta.title,
+        poet,
+        poetId: meta.poetId,
+        work,
+      };
     });
   const relatedDateTexts = relatedTextsForDates(
     sourceTextId,
@@ -1390,6 +1395,7 @@ const main = async () => {
   safeMkdir(`public/api`);
   collected.museums = await b('build_museums', build_museums, collected);
   collected.workids = await b('build_poet_workids', build_poet_workids);
+  collected.unlistedWorkFiles = findUnlistedWorkFiles(collected.workids);
   collected.poets = await b(
     'build_poets_first_pass',
     build_poets_first_pass,

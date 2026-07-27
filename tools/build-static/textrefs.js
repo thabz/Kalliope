@@ -33,41 +33,73 @@ const extractTextRefs = xml => {
   });
 };
 
-const markTextRefDestinationsDirty = (textrefs, collected) => {
-  const destinationWorkfiles = [];
-  textrefs.forEach((refs, toId) => {
+const collectTextRefs = refsByFile => {
+  const textrefs = new Map();
+  refsByFile.forEach(refs => {
+    refs.forEach(({ fromId, toId, type }) => {
+      const destinationRefs = textrefs.get(toId) || {
+        mention: [],
+        translation: [],
+      };
+      if (destinationRefs[type].indexOf(fromId) === -1) {
+        destinationRefs[type].push(fromId);
+      }
+      textrefs.set(toId, destinationRefs);
+    });
+  });
+  return textrefs;
+};
+
+const refsEqual = (left, right) =>
+  JSON.stringify(left || { mention: [], translation: [] }) ===
+  JSON.stringify(right || { mention: [], translation: [] });
+
+const markChangedTextRefDestinationsDirty = (
+  previousTextrefs,
+  textrefs,
+  collected
+) => {
+  const destinationWorkfiles = new Set();
+  const allIds = new Set([...previousTextrefs.keys(), ...textrefs.keys()]);
+  allIds.forEach(toId => {
+    if (refsEqual(previousTextrefs.get(toId), textrefs.get(toId))) {
+      return;
+    }
     const text = collected.texts.get(toId);
     if (text != null) {
-      destinationWorkfiles.push(sourceWorkFilename(text));
+      destinationWorkfiles.add(sourceWorkFilename(text));
     }
   });
-  markFileDirty(...destinationWorkfiles);
+  if (destinationWorkfiles.size > 0) {
+    markFileDirty(...destinationWorkfiles);
+  }
 };
 
 const build_textrefs = collected => {
   const cachedTextrefs = loadCachedJSON('collected.textrefs') || [];
-  const hasLegacyTextrefs = cachedTextrefs.some(([, refs]) =>
-    Array.isArray(refs)
-  );
+  const previousTextrefs = new Map(cachedTextrefs);
   const codeModified = isFileModified('tools/build-static/textrefs.js');
-  let textrefs =
-    globalForceReload || hasLegacyTextrefs || codeModified
+  let refsByFile =
+    globalForceReload || codeModified
       ? new Map()
-      : new Map(cachedTextrefs);
-  const force_reload = textrefs.size == 0;
+      : new Map(loadCachedJSON('collected.textrefs_by_file') || []);
+  const force_reload = refsByFile.size === 0;
 
   let found_changes = false;
+  const knownFiles = new Set();
   collected.poets.forEach((poet, poetId) => {
     collected.workids.get(poetId).forEach(workId => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
       if (!fileExists(filename)) {
         return;
       }
+      knownFiles.add(filename);
       if (!force_reload && !isFileModified(filename)) {
         return;
       } else {
         found_changes = true;
       }
+      const fileRefs = [];
       let doc = loadXMLDoc(filename);
       const texts = getElementsByTagNames(doc, ['text', 'section'])
         .filter(e => safeGetAttr(e, 'id') != null)
@@ -81,72 +113,45 @@ const build_textrefs = collected => {
           notes.forEach(note => {
             extractTextRefs(safeGetOuterXML(note)).forEach(ref => {
               const fromId = safeGetAttr(text, 'id');
-              const refs = textrefs.get(ref.toId) || {
-                mention: [],
-                translation: [],
-              };
-              if (refs[ref.type].indexOf(fromId) === -1) {
-                refs[ref.type].push(fromId);
-              }
-              textrefs.set(ref.toId, refs);
+              fileRefs.push({
+                fromId,
+                toId: ref.toId,
+                type: ref.type,
+              });
             });
           });
         });
+      refsByFile.set(filename, fileRefs);
     });
   });
+  Array.from(refsByFile.keys()).forEach(filename => {
+    if (!knownFiles.has(filename)) {
+      refsByFile.delete(filename);
+      found_changes = true;
+    }
+  });
+  const textrefs = collectTextRefs(refsByFile);
   if (found_changes) {
     writeCachedJSON('collected.textrefs', Array.from(textrefs));
-    markTextRefDestinationsDirty(new Map(cachedTextrefs), collected);
-    markTextRefDestinationsDirty(textrefs, collected);
+    writeCachedJSON('collected.textrefs_by_file', Array.from(refsByFile));
+    markChangedTextRefDestinationsDirty(
+      previousTextrefs,
+      textrefs,
+      collected
+    );
   }
   return textrefs;
 };
 
 const mark_ref_destinations_dirty = collected => {
-  if (globalForceReload) {
-    // All destination files are marked dirty already
-    return;
-  }
-
-  let destination_workfiles = [];
-  collected.poets.forEach((poet, poetId) => {
-    collected.workids.get(poetId).forEach(workId => {
-      const filename = `fdirs/${poetId}/${workId}.xml`;
-      if (!fileExists(filename)) {
-        return;
-      }
-      if (!isFileModified(filename)) {
-        return;
-      }
-      let doc = loadXMLDoc(filename);
-
-      getElementsByTagNames(doc, ['text', 'section'])
-        .filter(e => safeGetAttr(e, 'id') != null)
-        .forEach(text => {
-          const head = getChildByTagName(text, 'head');
-          const body = getChildByTagName(text, 'body');
-          const notes = [
-            ...getElementsByTagNames(head, ['note']),
-            ...getElementsByTagNames(body, ['note', 'footnote']),
-          ];
-          notes.forEach(note => {
-            extractTextRefs(safeGetOuterXML(note)).forEach(ref => {
-              const t = collected.texts.get(ref.toId);
-              if (t != null) {
-                const filename = sourceWorkFilename(t);
-                destination_workfiles.push(filename);
-              }
-            });
-          });
-        });
-    });
-  });
-  //console.log('Dirty files are: ', destination_workfiles);
-  markFileDirty(...destination_workfiles);
+  // build_textrefs compares the cached and current per-file references later
+  // in the build, before any outputs that depend on destination backlinks.
 };
 
 export {
   build_textrefs,
+  collectTextRefs,
   extractTextRefs,
+  markChangedTextRefDestinationsDirty,
   mark_ref_destinations_dirty,
 };

@@ -11,6 +11,7 @@ import {
 } from '../libs/caching.js';
 import {
   fileExists,
+  fileModifiedTime,
   safeMkdir,
   writeJSON,
   resizeImage,
@@ -36,6 +37,7 @@ const knownPoetLanguages = new Set([
   'grc',
   'fa',
   'es',
+  'nl',
   'un',
   'it',
 ]);
@@ -46,7 +48,11 @@ const create_poet_square_thumb = (poetId, square_path) => {
   const path = `public/images/${poetId}/${square_path}`;
   const destFolder = `public/generated/images/${poetId}/social`;
   const destPath = `${destFolder}/${poetId}.jpg`;
-  if (!fileExists(destPath)) {
+  const destinationModifiedTime = fileModifiedTime(destPath);
+  if (
+    destinationModifiedTime == null ||
+    fileModifiedTime(path) > destinationModifiedTime
+  ) {
     safeMkdir(destFolder);
     resizeImage(path, destPath, 600);
   }

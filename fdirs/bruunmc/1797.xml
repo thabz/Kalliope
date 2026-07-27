@@ -4823,7 +4823,9 @@ Og paa elysisk Rosenslette
         <line>Oversat efter <w>Coupignys</w> franske Original</line>
     </subtitle>
     <firstline>O, see den skjønneste blant dine Dage!</firstline>
-    <!-- TODO: Find André-François de Coupignys original -->
+    <notes>
+        <note unknown-original-by="coupigny" />
+    </notes>
     <source pages="230-232" facsimile-pages="242-244" />
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>

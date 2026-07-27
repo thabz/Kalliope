@@ -33,6 +33,7 @@ import {
 import {
   build_mentions_data,
   build_mentions_json,
+  collectPersonOrKeywordRefs,
 } from '../tools/build-static/mentions.js';
 
 const poet = (id, firstname, lastname) => ({
@@ -120,6 +121,32 @@ describe('mentions data', () => {
       ]),
     };
   };
+
+  it('produces unchanged person refs when only source whitespace changes', () => {
+    const entries = [
+      {
+        toKey: 'bango',
+        fromPoemId: 'aarestrup2001061401',
+        type: 'mention',
+      },
+    ];
+    const before = collectPersonOrKeywordRefs(
+      new Map([['fdirs/aarestrup/1863.xml', entries]])
+    );
+    const after = collectPersonOrKeywordRefs(
+      new Map([['fdirs/aarestrup/1863.xml', [...entries]]])
+    );
+
+    expect(after).toEqual(before);
+  });
+
+  it('removes stale person refs with the modified source file', () => {
+    const refs = collectPersonOrKeywordRefs(
+      new Map([['fdirs/aarestrup/1863.xml', []]])
+    );
+
+    expect(refs.has('bango')).toBe(false);
+  });
 
   it('viser oversættelser fra den primære variant', () => {
     const collected = buildCollected();

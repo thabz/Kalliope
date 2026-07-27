@@ -10,6 +10,7 @@ import CountryPicker from '../components/countrypicker.js';
 import { formatYearInterval, parseDate } from '../components/formatteddate.js';
 import * as Links from '../components/links.js';
 import Page from '../components/page.js';
+import PageLead from '../components/pagelead.js';
 import PoetName from '../components/poetname.js';
 import SectionedList from '../components/sectionedlist.js';
 import ErrorPage from './error.js';
@@ -74,6 +75,13 @@ const poetYearIntervalTitle = (year) => {
   const intervalStart = Math.floor(year / 25) * 25;
   const intervalEnd = intervalStart + 24;
   return formatYearInterval(intervalStart, intervalEnd);
+};
+
+const countryAdjective = (country, lang) => {
+  const cn = CommonData.countries.filter((c) => {
+    return c.code === country;
+  })[0];
+  return cn.adjective[lang];
 };
 
 const groupsByYear = (poets, lang, country) => {
@@ -162,6 +170,35 @@ const Poets = (props) => {
   const countryCodeToURL = (code) => {
     return Links.poetsURL(lang, groupBy, code);
   };
+  const adjective = countryAdjective(country, lang);
+  const nonDanishNote =
+    country === 'dk'
+      ? null
+      : _(
+          '{Adjective} digtere er kun medtaget i begrænset omfang for at belyse den danske digtning.',
+          lang,
+          { adjective, Adjective: Strings.toTitleCase(adjective) }
+        );
+  const lead =
+    groupBy === 'name' ? (
+      <PageLead>
+        {_(
+          'En alfabetisk oversigt over de {adjective} digtere på Kalliope. Vælg et navn for at se digterens værker, tekster og biografiske oplysninger.',
+          lang,
+          { adjective }
+        )}{' '}
+        {nonDanishNote}
+      </PageLead>
+    ) : (
+      <PageLead>
+        {_(
+          'De {adjective} digtere på Kalliope ordnet efter fødselsår. Oversigten giver et kronologisk indblik i samlingens forfattere.',
+          lang,
+          { adjective }
+        )}{' '}
+        {nonDanishNote}
+      </PageLead>
+    );
   return (
     <Page
       headTitle={_('Digtere', lang) + ' - Kalliope'}
@@ -171,6 +208,7 @@ const Poets = (props) => {
       selectedMenuItem={groupBy}
       country={country}
       pageTitle={pageTitle}>
+      {lead}
       <CountryPicker
         style={{ marginBottom: '60px' }}
         lang={lang}

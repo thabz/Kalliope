@@ -2,10 +2,10 @@ import { useContext } from 'react';
 import { createURL } from '../common/client.js';
 import LangContext from '../common/LangContext.js';
 import _ from '../common/translations.js';
-import { kalliopeCrumbs } from '../components/breadcrumbs.js';
 import { formattedDate } from '../components/formatteddate.js';
 import { kalliopeMenu } from '../components/menu.js';
 import Page from '../components/page.js';
+import PageLead from '../components/pagelead.js';
 import Picture from '../components/picture.js';
 import SidebarSplit from '../components/sidebarsplit.js';
 import SplitWhenSmall from '../components/split-when-small.js';
@@ -97,14 +97,9 @@ const News = ({ news }) => {
   const items = news
     .filter((_, i) => i < 5)
     .map((item, i) => {
-      const { date, content_html, content_lang, title } = item;
-      let renderedTitle = null;
-      if (i === 0 && title != null) {
-        renderedTitle = <h3>{title}</h3>;
-      }
+      const { date, content_html, content_lang } = item;
       return (
         <div className="news-item" key={date + i}>
-          {renderedTitle}
           <div className="news-body">
             <TextContent
               contentHtml={content_html}
@@ -116,18 +111,6 @@ const News = ({ news }) => {
           <style jsx>{`
             div.news-item {
               margin-bottom: 20px;
-            }
-            div.news-item:first-child {
-              padding-bottom: 40px;
-              border-bottom: 1px solid #757575;
-              margin-bottom: 50px;
-            }
-
-            :global(div.news-item h3) {
-              font-weight: 100;
-              font-size: 26px;
-              margin: 0 0 20px 0;
-              padding: 0;
             }
             div.news-body {
               line-height: 1.6;
@@ -143,7 +126,12 @@ const News = ({ news }) => {
       );
     });
 
-  return <div>{items}</div>;
+  return (
+    <div>
+      <SubHeading>{_('Seneste nyt', lang)}</SubHeading>
+      {items}
+    </div>
+  );
 };
 
 const zeroPad = (n) => {
@@ -177,10 +165,15 @@ let Index = (props) => {
       headTitle="Kalliope"
       pageTitle="Kalliope"
       requestPath={requestPath}
-      crumbs={kalliopeCrumbs(lang)}
       menuItems={kalliopeMenu()}
       selectedMenuItem="index"
       paging={paging}>
+      <PageLead>
+        {_(
+          'Kalliope er et digitalt bibliotek for poesi og klassisk litteratur. Her finder du digte, oversættelser, forfatterbiografier og litterære noter, frit tilgængeligt og forbundet gennem personer, værker, steder og historiske perioder.',
+          lang
+        )}
+      </PageLead>
       <SidebarSplit sidebar={sidebar}>
         <div>
           <News news={news} lang={lang} />

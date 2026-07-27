@@ -417,8 +417,10 @@ At alt i Haab jeg stolt der tager Sted!
     <subtitle>Efter Le Brun</subtitle>
     <toctitle>Le Brun: Til Oversættere</toctitle>
     <firstline>Sög ei at give Ord for Ord</firstline>
+    <notes>
+        <note>Gendigtning af Lebruns <xref type="translation" poem="lebrun2026072601"/>.</note>
+    </notes>
     <source pages="24"/>
-    <!-- TODO: Find originalen (Le Brun) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -822,7 +824,7 @@ Der paa hans Vei giöd Glæde ned.
    <toctitle>Bürger: Naar Klaffertungerne dig stikke</toctitle>
    <firstline>Naar Klaffertungerne dig stikke</firstline>
    <notes>
-      <note unknown-original-by="burger" />
+      <note>Gendigtning af Gottfried August Bürgers <xref type="translation" poem="burger2026072301"/>.</note>
    </notes>
    <quality>korrektur1,kilde,side</quality>
    <source pages="40"/>
@@ -884,7 +886,9 @@ Kun hvor du er ei, findes Held.
     <subtitle>Efter Imbert</subtitle>
     <firstline>Hvorfor klage, hvorfor græde</firstline>
     <source pages="42"/>
-    <!-- TODO: Find original (Imbert) -->
+    <notes>
+        <note unknown-original-by="imbert" />
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1287,7 +1291,9 @@ Ad Sagnet, som Klokkerne mindes.
     <subtitle>Fabel efter Nivernois</subtitle>
     <firstline>En Konge havde sig engang en Nar</firstline>
     <source pages="60-61"/>
-    <!-- TODO: Find originalen (Nivernois) -->
+    <notes>
+        <note unknown-original-by="nivernais" />
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1490,9 +1496,9 @@ Farvel, elskte Harpe! min eneste Skat!
     <firstline>Forgiæves Fængslets Muur gientager</firstline>
     <notes>
         <note>Florian er den franske digter <a poet="florian">Jean-Pierre Claris de Florian</a>.</note>
+        <note unknown-original-by="florian" />
     </notes>
     <source pages="69-70"/>
-    <!-- TODO: Find original (Florian) -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1679,7 +1685,9 @@ Ham vil den aldrig være glædelig.
     <subtitle>Efter Jerningham</subtitle>
     <firstline>Til Templet söger sorgfuld Hob i Bön</firstline>
     <source pages="76-82"/>
-    <!-- TODO: Find original (Jerningham) -->
+    <notes>
+        <note unknown-original-by="jerningham" />
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2003,7 +2011,9 @@ Ja dette svage Hierte troer:
     <subtitle>Oratorium efter Mahlmann</subtitle>
     <firstline>Du har dine Stötter opbygget dig</firstline>
     <source pages="89-92"/>
-    <!-- TODO: Find original (Mahlman) -->
+    <notes>
+        <note unknown-original-by="mahlmann" />
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2644,7 +2654,9 @@ Og det er denne, som du har beholder.
     <subtitle>Fabel efter Fumars</subtitle>
     <firstline>Nedstegen Phæbus er i Thetis Favn</firstline>
     <source pages="110"/>
-    <!-- TODO: Find original (Fumars) -->
+    <notes>
+        <note unknown-original-by="fumars" />
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2669,9 +2681,9 @@ Höit Maanen vi, men aldrig Solen see.
     <firstline>Der gives en Plads i det kiölige Rum</firstline>
     <notes>
         <note>* En Lövhytte i Toppen af en herlig Eeg i Kraagerup Hauge, hvis Eiers Kone, Fru Fr. Brun den yngre, Sangen er tilegnet.</note>
+        <note unknown-original-by="brunf" />
     </notes>
     <source pages="111-112"/>
-    <!-- TODO: Find original (Frue Fr. Brun)-->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2720,7 +2732,9 @@ Et daarende Haab du ei elske mig op!
     <subtitle>Efter Steenhammars svenske Original</subtitle>
     <firstline>Storme vildt om Thorvalds Leie hviner</firstline>
     <source pages="113-121"/>
-    <!-- TODO: Find original (Stenhammer) -->
+    <notes>
+        <note unknown-original-by="stenhammar" />
+    </notes>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2925,7 +2939,7 @@ Ofte Thorvald blev begrædt af dem.
     <subtitle>Af Walter Scott, efter en gammel engelsk Sang</subtitle>
     <firstline>Min tunge Lod jeg klage maa</firstline>
     <notes>
-        <note unknown-original-by="scott" />
+        <note>Gendigtning af Walter Scotts <xref type="translation" poem="scott2026072301"/>.</note>
     </notes>
     <source pages="122-124"/>
     <quality>korrektur1,kilde,side</quality>
