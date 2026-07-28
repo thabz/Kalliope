@@ -9,8 +9,13 @@ import SectionedList from '../components/sectionedlist.js';
 import ErrorPage from './error.js';
 
 const countryNames = {
+  at: { da: 'Østrig', de: 'Österreich', en: 'Austria', fr: 'Autriche' },
+  au: { da: 'Australien', de: 'Australien', en: 'Australia', fr: 'Australie' },
+  ca: { da: 'Canada', de: 'Kanada', en: 'Canada', fr: 'Canada' },
   de: { da: 'Tyskland', de: 'Deutschland', en: 'Germany', fr: 'Allemagne' },
   dk: { da: 'Danmark', de: 'Dänemark', en: 'Denmark', fr: 'Danemark' },
+  es: { da: 'Spanien', de: 'Spanien', en: 'Spain', fr: 'Espagne' },
+  fi: { da: 'Finland', de: 'Finnland', en: 'Finland', fr: 'Finlande' },
   fr: { da: 'Frankrig', de: 'Frankreich', en: 'France', fr: 'France' },
   gb: {
     da: 'Storbritannien',
@@ -25,7 +30,16 @@ const countryNames = {
     en: 'Netherlands',
     fr: 'Pays-Bas',
   },
+  no: { da: 'Norge', de: 'Norwegen', en: 'Norway', fr: 'Norvège' },
+  ru: { da: 'Rusland', de: 'Russland', en: 'Russia', fr: 'Russie' },
   se: { da: 'Sverige', de: 'Schweden', en: 'Sweden', fr: 'Suède' },
+  us: { da: 'USA', de: 'USA', en: 'United States', fr: 'États-Unis' },
+  va: {
+    da: 'Vatikanstaten',
+    de: 'Vatikanstadt',
+    en: 'Vatican City',
+    fr: 'Cité du Vatican',
+  },
 };
 
 const museumSort = (a, b) => a.sortName.localeCompare(b.sortName);
