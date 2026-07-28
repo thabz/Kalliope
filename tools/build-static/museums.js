@@ -31,11 +31,13 @@ const build_museums = () => {
     const id = safeGetAttr(museum, 'id');
     const name = safeGetText(museum, 'name');
     const sortName = safeGetText(museum, 'sort-name') || name;
+    const country = safeGetText(museum, 'country');
     const deepLink = safeGetText(museum, 'deep-link');
     const data = {
       id,
       name,
       sortName,
+      country,
       deepLink,
     };
     collected_museums.set(id, data);

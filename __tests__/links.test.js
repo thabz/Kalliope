@@ -21,6 +21,7 @@ describe('link builders', () => {
     expect(frontPageURL()).toBe('/da/');
     expect(keywordsURL()).toBe('/da/keywords');
     expect(museumsURL('en')).toBe('/en/museums');
+    expect(museumsURL('en', 'country')).toBe('/en/museums/country');
   });
 
   it('builds poet and work urls', () => {
