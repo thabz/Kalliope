@@ -106,4 +106,181 @@
     <link>https://www.tate.org.uk/</link>
     <deep-link>https://www.tate.org.uk/art/artworks/${invNr}</deep-link>
   </museum>
+  <museum id="borghese">
+    <name>Galleria Borghese</name>
+  </museum>
+  <museum id="nga">
+    <name>National Gallery of Art, Washington</name>
+    <deep-link>https://www.nga.gov/artworks/${objId}</deep-link>
+  </museum>
+  <museum id="kunstpalast">
+    <name>Kunstpalast, Düsseldorf</name>
+  </museum>
+  <museum id="picardie">
+    <name>Musée de Picardie</name>
+  </museum>
+  <museum id="khm">
+    <name>Kunsthistorisches Museum Wien</name>
+  </museum>
+  <museum id="vatican">
+    <name>Musei Vaticani</name>
+  </museum>
+  <museum id="kelvingrove">
+    <name>Kelvingrove Art Gallery and Museum</name>
+  </museum>
+  <museum id="high">
+    <name>High Museum of Art</name>
+  </museum>
+  <museum id="hunterian">
+    <name>The Hunterian, University of Glasgow</name>
+  </museum>
+  <museum id="ima">
+    <name>Indianapolis Museum of Art at Newfields</name>
+  </museum>
+  <museum id="branitz">
+    <name>Fürst-Pückler-Museum Park und Schloss Branitz</name>
+  </museum>
+  <museum id="orsay">
+    <name>Musée d'Orsay</name>
+  </museum>
+  <museum id="norton">
+    <name>Norton Museum of Art</name>
+  </museum>
+  <museum id="oslo">
+    <name>Oslo Museum</name>
+  </museum>
+  <museum id="ngv">
+    <name>National Gallery of Victoria</name>
+  </museum>
+  <museum id="ashmolean">
+    <name>Ashmolean Museum</name>
+  </museum>
+  <museum id="prado">
+    <name>Museo Nacional del Prado</name>
+  </museum>
+  <museum id="scotnpg">
+    <name>Scottish National Portrait Gallery</name>
+  </museum>
+  <museum id="willumsens">
+    <name>J.F. Willumsens Museum</name>
+  </museum>
+  <museum id="falkenberg">
+    <name>Falkenbergs museum</name>
+  </museum>
+  <museum id="capodimonte">
+    <name>Museo e Real Bosco di Capodimonte</name>
+  </museum>
+  <museum id="kunsten">
+    <name>Kunsten Museum of Modern Art Aalborg</name>
+  </museum>
+  <museum id="staedel">
+    <name>Städel Museum</name>
+  </museum>
+  <museum id="dhm">
+    <name>Deutsches Historisches Museum</name>
+  </museum>
+  <museum id="neuepinakothek">
+    <name>Neue Pinakothek</name>
+  </museum>
+  <museum id="lascala">
+    <name>Museo Teatrale alla Scala</name>
+  </museum>
+  <museum id="munch">
+    <name>MUNCH</name>
+  </museum>
+  <museum id="hamburgerkunsthalle">
+    <name>Hamburger Kunsthalle</name>
+  </museum>
+  <museum id="barberinicorsini">
+    <name>Gallerie Nazionali d'Arte Antica</name>
+  </museum>
+  <museum id="pushkin">
+    <name>The Pushkin State Museum of Fine Arts</name>
+  </museum>
+  <museum id="capitolini">
+    <name>Musei Capitolini</name>
+  </museum>
+  <museum id="fabre">
+    <name>Musée Fabre</name>
+  </museum>
+  <museum id="reventlow">
+    <name>Reventlow-Museet Pederstrup</name>
+  </museum>
+  <museum id="hcandersen">
+    <name>H.C. Andersens Hus</name>
+  </museum>
+  <museum id="johanneslarsen">
+    <name>Johannes Larsen Museet</name>
+  </museum>
+  <museum id="dulwich">
+    <name>Dulwich Picture Gallery</name>
+  </museum>
+  <museum id="kirstenkjaer">
+    <name>Kirsten Kjærs Museum</name>
+  </museum>
+  <museum id="bolognaarchaeological">
+    <name>Museo Civico Archeologico di Bologna</name>
+  </museum>
+  <museum id="kolumba">
+    <name>Kolumba</name>
+  </museum>
+  <museum id="conde">
+    <name>Musée Condé</name>
+  </museum>
+  <museum id="operaduomo">
+    <name>Museo dell'Opera del Duomo</name>
+  </museum>
+  <museum id="novalis">
+    <name>Novalis-Museum Schloss Oberwiederstedt</name>
+  </museum>
+  <museum id="behnhaus">
+    <name>Museum Behnhaus Drägerhaus</name>
+  </museum>
+  <museum id="moderna">
+    <name>Moderna Museet</name>
+  </museum>
+  <museum id="britishmuseum">
+    <name>The British Museum</name>
+  </museum>
+  <museum id="tesse">
+    <name>Musée de Tessé</name>
+  </museum>
+  <museum id="skd">
+    <name>Staatliche Kunstsammlungen Dresden</name>
+  </museum>
+  <museum id="met">
+    <name>The Metropolitan Museum of Art</name>
+  </museum>
+  <museum id="leeds">
+    <name>Leeds Art Gallery</name>
+  </museum>
+  <museum id="ago">
+    <name>Art Gallery of Ontario</name>
+  </museum>
+  <museum id="helsinkiuni">
+    <name>Helsinki University Museum</name>
+  </museum>
+  <museum id="smithsoniannpg">
+    <name>National Portrait Gallery, Smithsonian Institution</name>
+  </museum>
+  <museum id="brou">
+    <name>Musée du monastère royal de Brou</name>
+  </museum>
+  <museum id="wallace">
+    <name>The Wallace Collection</name>
+    <deep-link>https://wallacelive.wallacecollection.org/eMP/eMuseumPlus?module=collection&amp;objectId=${objId}&amp;service=ExternalInterface</deep-link>
+  </museum>
+  <museum id="nlw">
+    <name>National Library of Wales</name>
+  </museum>
+  <museum id="schack">
+    <name>Sammlung Schack</name>
+    <deep-link>https://www.sammlung.pinakothek.de/de/artwork/${objId}</deep-link>
+  </museum>
+  <museum id="sydvestjyske">
+    <name>Sydvestjyske Museer</name>
+  </museum>
+  <museum id="cornell">
+    <name>Cornell University Library</name>
+  </museum>
 </museums>
