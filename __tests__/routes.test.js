@@ -31,6 +31,17 @@ describe('routes', () => {
     });
   });
 
+  it('matches museum listing routes', () => {
+    expect(matchRoute('/da/museums/country')).toEqual({
+      page: '/museums',
+      query: { lang: 'da', groupBy: 'country' },
+    });
+    expect(matchRoute('/en/museums/name')).toEqual({
+      page: '/museums',
+      query: { lang: 'en', groupBy: 'name' },
+    });
+  });
+
   it('matches text listing routes', () => {
     expect(matchRoute('/da/texts/krossing/titles')).toEqual({
       page: '/texts',

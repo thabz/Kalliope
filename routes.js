@@ -25,6 +25,11 @@ const routeDefinitions = [
   },
   {
     page: '/museums',
+    regex: new RegExp(`^/(${lang})/museums/(name|country)/?$`),
+    keys: ['lang', 'groupBy'],
+  },
+  {
+    page: '/museums',
     regex: new RegExp(`^/(${lang})/museums/?$`),
     keys: ['lang'],
   },

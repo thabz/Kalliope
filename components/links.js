@@ -95,8 +95,10 @@ export const museumURL = (lang = 'da', museumId) => {
   return `/${lang}/museum/${museumId}`;
 };
 
-export const museumsURL = (lang = 'da') => {
-  return `/${lang}/museums`;
+export const museumsURL = (lang = 'da', groupBy = null) => {
+  return groupBy == null
+    ? `/${lang}/museums`
+    : `/${lang}/museums/${groupBy}`;
 };
 
 export const searchURL = (lang, query, country, poetId = null) => {
