@@ -22,6 +22,7 @@ describe('Kalliope header icon', () => {
   );
 
   test.each([
+    [1, 25],
     [2, 14],
     [3, 8],
     [4, 2],
