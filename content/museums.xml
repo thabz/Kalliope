@@ -176,6 +176,7 @@
   <museum id="orsay">
     <name>Musée d'Orsay</name>
     <country>fr</country>
+    <deep-link>https://www.musee-orsay.fr/fr/oeuvres/${objId}</deep-link>
   </museum>
   <museum id="norton">
     <name>Norton Museum of Art</name>
@@ -188,6 +189,7 @@
   <museum id="ngv">
     <name>National Gallery of Victoria</name>
     <country>au</country>
+    <deep-link>https://www.ngv.vic.gov.au/explore/collection/work/${objId}/</deep-link>
   </museum>
   <museum id="ashmolean">
     <name>Ashmolean Museum</name>
@@ -196,6 +198,7 @@
   <museum id="prado">
     <name>Museo Nacional del Prado</name>
     <country>es</country>
+    <deep-link>https://www.museodelprado.es/en/the-collection/art-work/${objId}</deep-link>
   </museum>
   <museum id="scotnpg">
     <name>Scottish National Portrait Gallery</name>
@@ -308,6 +311,7 @@
   <museum id="britishmuseum">
     <name>The British Museum</name>
     <country>gb</country>
+    <deep-link>https://www.britishmuseum.org/collection/object/${objId}</deep-link>
   </museum>
   <museum id="tesse">
     <name>Musée de Tessé</name>
@@ -320,6 +324,7 @@
   <museum id="met">
     <name>The Metropolitan Museum of Art</name>
     <country>us</country>
+    <deep-link>https://www.metmuseum.org/art/collection/search/${objId}</deep-link>
   </museum>
   <museum id="leeds">
     <name>Leeds Art Gallery</name>
