@@ -1,7 +1,15 @@
-const Tooltip = ({ ariaLabel, children, focusable = false, text }) => {
+const Tooltip = ({
+  ariaLabel,
+  children,
+  focusable = false,
+  placement = 'above',
+  text,
+}) => {
   return (
     <span
-      className={`tooltip${focusable === true ? ' focusable' : ''}`}
+      className={`tooltip ${placement}${
+        focusable === true ? ' focusable' : ''
+      }`}
       data-tooltip={text}
       aria-label={ariaLabel}
       tabIndex={focusable === true ? 0 : undefined}>
@@ -48,6 +56,17 @@ const Tooltip = ({ ariaLabel, children, focusable = false, text }) => {
           transform: translateX(-50%);
           visibility: hidden;
           z-index: 1;
+        }
+        .tooltip.below::before {
+          bottom: auto;
+          top: calc(100% + 7px);
+          transform: translate(-50%, -3px);
+        }
+        .tooltip.below::after {
+          border-bottom: 5px solid #000;
+          border-top: 0;
+          bottom: auto;
+          top: calc(100% + 2px);
         }
         .tooltip:hover::before,
         .tooltip:focus-within::before {

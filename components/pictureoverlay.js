@@ -177,6 +177,7 @@ const PictureOverlay = ({ pictures, startIndex, closeCallback }) => {
           bottom: 0;
           background-color: rgba(255, 255, 255, 0.9);
           overflow-y: scroll;
+          z-index: 999;
         }
 
         .overlay-background :global(.overlay-container) {
@@ -184,7 +185,6 @@ const PictureOverlay = ({ pictures, startIndex, closeCallback }) => {
           left: 50%;
           top: 50%;
           transform: translate(-50%, -50%);
-          z-index: 999;
         }
 
         .overlay-background .overlay-container :global(.overlay-figure) {

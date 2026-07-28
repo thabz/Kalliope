@@ -3,11 +3,13 @@ import { useContext, useState } from 'react';
 import CommonData from '../common/commondata.js';
 import * as ImagePaths from '../common/imagepaths.js';
 import LangContext from '../common/LangContext.js';
+import _ from '../common/translations.js';
 import * as Links from './links.js';
 import PictureOverlay from './pictureoverlay.js';
 import PoetName from './poetname.js';
 import Stack from './stack.js';
 import { TextInline } from './textcontent.js';
+import Tooltip from './tooltip.js';
 
 const FigCaption = (props) => {
   const { picture, hideArtist = false, hideMuseum = false } = props;
@@ -27,10 +29,15 @@ const FigCaption = (props) => {
 
   let remoteLink = null;
   if (picture.remoteUrl != null) {
+    const tooltip = _('Se billedet på museets hjemmeside', lang);
     remoteLink = (
       <>
         {' '}
-        <a href={picture.remoteUrl}>⌘</a>
+        <Tooltip text={tooltip}>
+          <a href={picture.remoteUrl} aria-label={tooltip}>
+            ⌘
+          </a>
+        </Tooltip>
       </>
     );
   }

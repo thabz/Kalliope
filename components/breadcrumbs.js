@@ -51,7 +51,7 @@ export const Paging = (props) => {
     const style = { marginLeft: '16px', fontSize: '18px' };
     return (
       <div style={style} key={i}>
-        <Tooltip text={title}>
+        <Tooltip text={title} placement="below">
           <Link href={url} aria-label={title}>
             {arrow}
           </Link>
