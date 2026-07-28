@@ -63,4 +63,32 @@ describe('side metadata', () => {
       '<meta property="og:site_name" content="Kalliope"/>'
     );
   });
+
+  it('uses a concise default description and a large X image', () => {
+    const html = renderToStaticMarkup(<Head />);
+    const description =
+      'Kalliope samler ældre dansk lyrik og biografiske oplysninger om danske digtere i en voksende digital database.';
+
+    expect(description.length).toBeLessThanOrEqual(125);
+    expect(html).toContain(
+      `<meta name="description" content="${description}"/>`
+    );
+    expect(html).toContain(
+      `<meta property="og:description" content="${description}"/>`
+    );
+    expect(html).toContain(
+      '<meta name="twitter:card" content="summary_large_image"/>'
+    );
+  });
+
+  it('uses the supplied page description', () => {
+    const html = renderToStaticMarkup(<Head description="En kort tekst." />);
+
+    expect(html).toContain(
+      '<meta name="description" content="En kort tekst."/>'
+    );
+    expect(html).toContain(
+      '<meta property="og:description" content="En kort tekst."/>'
+    );
+  });
 });

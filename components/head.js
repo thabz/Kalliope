@@ -3,7 +3,7 @@ import { supportedLanguages } from '../common/languages.js';
 
 const urlPrefix = 'https://kalliope.org';
 const defaultDescription =
-  'Kalliope er en database indeholdende ældre dansk lyrik samt biografiske oplysninger om danske digtere. Målet er intet mindre end at samle hele den ældre danske lyrik, men indtil videre indeholder Kalliope et forhåbentligt repræsentativt, og stadigt voksende, udvalg af den danske digtning.';
+  'Kalliope samler ældre dansk lyrik og biografiske oplysninger om danske digtere i en voksende digital database.';
 const defaultOGImage = `${urlPrefix}/touch-icon.png`;
 const criticalFonts = [
   '/fonts/alegreya-sans/alegreya-sans-normal-400-latin.woff2',
@@ -85,7 +85,7 @@ const Head = ({
         content={description ?? defaultDescription}
       />
       <meta name="twitter:site" content="@kalliope_org" />
-      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:image" content={ogImageAbsolute} />
       <meta property="og:image" content={ogImageAbsolute} />
       <meta property="og:image:width" content="600" />

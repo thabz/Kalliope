@@ -166,7 +166,7 @@ const Page = (props) => {
         headTitle={headTitle}
         ogTitle={ogTitle}
         ogImage={ogImage}
-        ogDescription={ogDescription}
+        description={ogDescription}
         requestPath={requestPath}
         canonicalPath={canonicalPath}
         noIndex={noIndex}
