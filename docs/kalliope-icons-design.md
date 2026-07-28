@@ -1,5 +1,8 @@
 # Kalliopes dagsikoner
 
+Se også `docs/style-guide.md` for projektets generelle billed- og
+dokumentationsregler.
+
 ## Formål
 
 Kalliopes ikon i sidens header kan skifte på udvalgte mærkedage. Ikonerne er
