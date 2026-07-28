@@ -109,6 +109,11 @@
     <link>https://www.mauritshuis.nl/</link>
     <deep-link>https://www.mauritshuis.nl/nl-nl/verdiep/de-collectie/kunstwerken/${objId}/</deep-link>
   </museum>
+  <museum id="mrbab">
+    <name>Musées royaux des Beaux-Arts de Belgique</name>
+    <link>https://fine-arts-museum.be/</link>
+    <deep-link>https://fine-arts-museum.be/fr/la-collection/${objId}</deep-link>
+  </museum>
   <museum id="nationalgallery">
     <name>The National Gallery, London</name>
     <sort-name>National Gallery, London</sort-name>
