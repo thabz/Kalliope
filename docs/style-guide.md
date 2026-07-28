@@ -1,6 +1,23 @@
 # Kalliope Styleguide
 
-Denne guide samler projektets faste konventioner, især dem der er nemme at glemme i små ændringer.
+Denne guide er den autoritative indgang til projektets faste konventioner.
+Agenternes arbejdsproces ligger i `AGENTS.md`; format- og domænedetaljer ligger
+i specialdokumenterne nedenfor.
+
+## Dokumentationsvejviser
+
+Læs den relevante specialdokumentation før ændringer på området:
+
+- `docs/kalliope-icons-design.md` ved ændringer i dagsikoner eller
+  portrætprioriteringer for **I dag**
+- `docs/xml-info-format.md` ved ændringer i `fdirs/<id>/info.xml`
+- `docs/xml-portraits-format.md` ved ændringer i `portraits.xml`,
+  portrætreferencer eller kvadratiske portrætter
+- `docs/xml-work-format.md` ved ændringer i XML-værkfiler
+- `docs/kalliope-xml-design-v1.1.md` ved ændringer i XML-modellen for
+  publikationer, antologier og tekstforekomster
+- `docs/kalliope-masterplan.md` ved arbejde med korpusets afgrænsning,
+  kilder, redaktionelle principper eller den langsigtede datastruktur
 
 ## GitHub
 
@@ -33,6 +50,8 @@ Denne guide samler projektets faste konventioner, især dem der er nemme at glem
 - `fdirs/<id>/portraits.xml` refererer lokale filer med filnavn, fx `src="p1.jpg"` og `square-src="p1-square.jpg"`.
 - Den faktiske fil for `fdirs/<id>/portraits.xml` skal derfor være `public/images/<id>/p1.jpg`.
 - Square portraits er normalt manuelt beskårne kvadratiske billeder og skal også ligge i `public/images/<id>/`.
+- Følg `docs/kalliope-icons-design.md` for dagsikonernes placering, navngivning,
+  hvide baggrund og sammenhæng med portrætprioriteringer.
 
 ## XML-data
 
@@ -42,7 +61,10 @@ Denne guide samler projektets faste konventioner, især dem der er nemme at glem
   samme sprog.
 - Brug eksisterende attributter og formater; ukendte `<picture>`-attributter er build-fejl.
 - Alle tekst- og XML-filer skal være UTF-8 encoded. Konvertér gamle Latin-1/ISO-8859-1-filer i stedet for at videreføre dem.
-- Se også `docs/xml-portraits-format.md` for detaljer om `portraits.xml`.
+- Følg `docs/xml-info-format.md`, `docs/xml-portraits-format.md` eller
+  `docs/xml-work-format.md` for det konkrete filformat.
+- Følg `docs/kalliope-xml-design-v1.1.md` ved ændringer i den overordnede
+  publikations- og antologimodel.
 
 ## Arbejdsfiler
 
