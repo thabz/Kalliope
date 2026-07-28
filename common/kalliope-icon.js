@@ -3,6 +3,7 @@ const ICON_DIRECTORY = '/images/about/kalliope-days';
 
 const iconByDate = Object.fromEntries(
   [
+    '01-25',
     '02-14',
     '03-08',
     '04-02',
