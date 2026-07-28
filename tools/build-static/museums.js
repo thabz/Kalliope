@@ -59,6 +59,12 @@ const build_museum_url = (picture, collected) => {
   if (museumId != null && (invNr != null || objId != null)) {
     const museum = collected.museums.get(museumId);
     if (museum != null && museum.deepLink != null) {
+      if (
+        (museum.deepLink.includes('${invNr}') && invNr == null) ||
+        (museum.deepLink.includes('${objId}') && objId == null)
+      ) {
+        return null;
+      }
       return museum.deepLink
         .replace('${invNr}', invNr)
         .replace('${objId}', objId);

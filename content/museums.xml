@@ -99,7 +99,7 @@
   <museum id="uffizi">
     <name>Galleria degli Uffizi</name>
     <link>https://www.uffizi.it/</link>
-    <deep-link>https://fotoinventari.uffizi.it/it/ricerca-opere?isPostBack=1&amp;numero_opera=${invNr}</deep-link>
+    <deep-link>https://www.uffizi.it/opere/${objId}</deep-link>
   </museum>
   <museum id="tate">
     <name>Tate</name>
