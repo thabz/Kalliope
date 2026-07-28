@@ -100,8 +100,8 @@ import {
 } from './build-static/textrefs.js';
 import { build_anniversaries_ical } from './build-static/ical.js';
 import {
-  build_global_timeline,
-  build_poet_timeline_json,
+  buildGlobalTimeline,
+  buildPoetTimelineJson,
 } from './build-static/timeline.js';
 import {
   ANTHOLOGY_WORK_ID,
@@ -234,7 +234,7 @@ const build_bio_json = async (collected) => {
         data.content_html = htmlToXml(safeGetInnerXML(body), collected);
         data.content_lang = 'da';
       }
-      data.timeline = await build_poet_timeline_json(poet, collected);
+      data.timeline = await buildPoetTimelineJson(poet, collected);
       data.portraits = await build_portraits_json(poet, collected);
       const destFilename = `public/api/${poet.id}/bio.json`;
       writeJSON(destFilename, data);
@@ -1447,8 +1447,8 @@ const main = async () => {
   await b('works_second_pass', works_second_pass, collected);
   await b('build_works_toc', build_works_toc, collected);
   collected.timeline = await b(
-    'build_global_timeline',
-    build_global_timeline,
+    'buildGlobalTimeline',
+    buildGlobalTimeline,
     collected,
   );
   await b('build_bio_json', build_bio_json, collected);

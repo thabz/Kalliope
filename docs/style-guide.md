@@ -10,6 +10,10 @@ Denne guide samler projektets faste konventioner, især dem der er nemme at glem
 
 ## JavaScript
 
+- Brug camelCase til nye JavaScript-identifikatorer (funktioner, variable og
+  interne properties). Bevar `snake_case` på serialiserede XML-/JSON-felter og
+  andre eksterne kontrakter; introducér ikke nye `snake_case`-symboler i
+  JavaScript.
 - Brug aldrig implicit boolean coercion. Sammenlign eksplicit med den forventede
   værdi, fx `value != null`, `items.length > 0` eller `flag === true`.
 - Brug `??` til fallback for `null` og `undefined`; brug ikke `value || fallback`,
