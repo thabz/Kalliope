@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="brentano" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Clemens</firstname>
+    <lastname>Brentano</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1778</date>
+      <place>Ehrenbreitstein</place>
+    </born>
+    <dead>
+      <date>1842-07-28</date>
+      <place>Aschaffenburg</place>
+    </dead>
+  </period>
+  <literary-periods>romantik-og-praeromantik</literary-periods>
+  <works>1852</works>
+  <identifiers>
+    <wikidata>Q57235</wikidata>
+    <wikipedia-da>Clemens Brentano</wikipedia-da>
+    <wikipedia-en>Clemens Brentano</wikipedia-en>
+    <wikipedia-de>Clemens Brentano</wikipedia-de>
+    <viaf>73863902</viaf>
+  </identifiers>
+</person>
