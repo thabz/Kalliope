@@ -82,6 +82,8 @@ const translations = {
     "Here you will find Kalliope's articles on literary periods, genres, verse forms, concepts, and other topics related to poetry.",
   'en*En oversigt over museer og samlinger, som ejer kunstværker og portrætter gengivet på Kalliope. Vælg et museum for at se de tilknyttede billeder.':
     'An overview of museums and collections that own artworks and portraits reproduced on Kalliope. Select a museum to see the associated images.',
+  'en*Her finder du de kunstværker og portrætter fra {museumName}, som er gengivet på Kalliope.':
+    'Here you will find the artworks and portraits from {museumName} that are reproduced on Kalliope.',
   'en*En kronologisk oversigt over værker af {poetName} på Kalliope. Vælg et værk for at se dets indhold og læse de tekster, der findes i samlingen.':
     'A chronological overview of works by {poetName} on Kalliope. Select a work to see its contents and read the texts included in the collection.',
   'en*En oversigt over Bibelens bøger på Kalliope. Vælg en bog for at se dens indhold og læse de tekster, der findes i samlingen.':
@@ -170,6 +172,8 @@ const translations = {
     'Hier finden Sie Kalliopes Artikel über literarische Epochen, Gattungen, Versformen, Begriffe und andere Themen mit Bezug zur Dichtung.',
   'de*En oversigt over museer og samlinger, som ejer kunstværker og portrætter gengivet på Kalliope. Vælg et museum for at se de tilknyttede billeder.':
     'Eine Übersicht über Museen und Sammlungen, die auf Kalliope wiedergegebene Kunstwerke und Porträts besitzen. Wählen Sie ein Museum, um die zugehörigen Bilder zu sehen.',
+  'de*Her finder du de kunstværker og portrætter fra {museumName}, som er gengivet på Kalliope.':
+    'Hier finden Sie die Kunstwerke und Porträts aus {museumName}, die auf Kalliope wiedergegeben sind.',
   'de*En kronologisk oversigt over værker af {poetName} på Kalliope. Vælg et værk for at se dets indhold og læse de tekster, der findes i samlingen.':
     'Eine chronologische Übersicht über Werke von {poetName} auf Kalliope. Wählen Sie ein Werk, um dessen Inhalt zu sehen und die in der Sammlung vorhandenen Texte zu lesen.',
   'de*En oversigt over Bibelens bøger på Kalliope. Vælg en bog for at se dens indhold og læse de tekster, der findes i samlingen.':
@@ -292,6 +296,8 @@ const translations = {
     'Vous trouverez ici les articles de Kalliope sur les périodes littéraires, les genres, les formes versifiées, les notions et d’autres sujets liés à la poésie.',
   'fr*En oversigt over museer og samlinger, som ejer kunstværker og portrætter gengivet på Kalliope. Vælg et museum for at se de tilknyttede billeder.':
     'Un aperçu des musées et collections qui possèdent les œuvres d’art et portraits reproduits sur Kalliope. Choisissez un musée pour voir les images associées.',
+  'fr*Her finder du de kunstværker og portrætter fra {museumName}, som er gengivet på Kalliope.':
+    'Vous trouverez ici les œuvres d’art et les portraits de {museumName} reproduits sur Kalliope.',
   'fr*En kronologisk oversigt over værker af {poetName} på Kalliope. Vælg et værk for at se dets indhold og læse de tekster, der findes i samlingen.':
     'Un aperçu chronologique des œuvres de {poetName} sur Kalliope. Choisissez une œuvre pour voir son contenu et lire les textes présents dans la collection.',
   'fr*En oversigt over Bibelens bøger på Kalliope. Vælg en bog for at se dens indhold og læse de tekster, der findes i samlingen.':
