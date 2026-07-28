@@ -3,6 +3,7 @@ import CommonData from '../common/commondata.js';
 import * as ImagePaths from '../common/imagepaths.js';
 import { CloseButton, DownArrow, LeftArrow, RightArrow } from './icons.js';
 import { FigCaption } from './picture.js';
+import Tooltip from './tooltip.js';
 
 const filenameFromSrc = (src) => {
   const path = src.split('?')[0];
@@ -151,14 +152,15 @@ const PictureOverlay = ({ pictures, startIndex, closeCallback }) => {
   }
   const picture = pictures[currentIndex];
   buttons.push(
-    <a
-      className="download-icon"
-      href={picture.src}
-      download={filenameFromSrc(picture.src)}
-      title="Download originalbillede"
-      key="download">
-      <DownArrow />
-    </a>
+    <Tooltip text="Download originalbillede" key="download">
+      <a
+        className="download-icon"
+        href={picture.src}
+        download={filenameFromSrc(picture.src)}
+        aria-label="Download originalbillede">
+        <DownArrow />
+      </a>
+    </Tooltip>
   );
   return (
     <div className="overlay-background" onClick={hideOverlay}>

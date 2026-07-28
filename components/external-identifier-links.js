@@ -1,5 +1,6 @@
 import { buildExternalIdentifierLinks } from '../common/external-identifiers.js';
 import _ from '../common/translations.js';
+import Tooltip from './tooltip.js';
 import TwoColumns from './twocolumns.js';
 
 const ExternalIdentifierLinks = ({
@@ -59,12 +60,14 @@ const ExternalIdentifierLinks = ({
       <div className="heading">{heading}</div>
       <div className="links">
         {links.map((link) => (
-          <a key={link.id} href={link.href} title={link.label}>
-            <span className={`icon icon-${link.id}`} aria-hidden="true">
-              {link.shortLabel}
-            </span>
-            <span className="visually-hidden">{link.label}</span>
-          </a>
+          <Tooltip text={link.label} key={link.id}>
+            <a href={link.href}>
+              <span className={`icon icon-${link.id}`} aria-hidden="true">
+                {link.shortLabel}
+              </span>
+              <span className="visually-hidden">{link.label}</span>
+            </a>
+          </Tooltip>
         ))}
       </div>
       <style jsx>{`

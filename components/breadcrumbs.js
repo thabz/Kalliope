@@ -8,6 +8,7 @@ import { textLinkTitleString } from '../components/textname.js';
 import * as Links from './links.js';
 import PoetName from './poetname.js';
 import TextContent from './textcontent.js';
+import Tooltip from './tooltip.js';
 import WorkName from './workname.js';
 
 export const Paging = (props) => {
@@ -50,9 +51,11 @@ export const Paging = (props) => {
     const style = { marginLeft: '16px', fontSize: '18px' };
     return (
       <div style={style} key={i}>
-        <Link href={url} title={title}>
-          {arrow}
-        </Link>
+        <Tooltip text={title}>
+          <Link href={url} aria-label={title}>
+            {arrow}
+          </Link>
+        </Tooltip>
       </div>
     );
   });

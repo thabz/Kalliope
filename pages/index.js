@@ -11,6 +11,7 @@ import SidebarSplit from '../components/sidebarsplit.js';
 import SplitWhenSmall from '../components/split-when-small.js';
 import SubHeading from '../components/subheading.js';
 import TextContent from '../components/textcontent.js';
+import Tooltip from '../components/tooltip.js';
 
 const TodaysEvents = ({ events }) => {
   const lang = useContext(LangContext);
@@ -23,11 +24,16 @@ const TodaysEvents = ({ events }) => {
     .filter((item) => item.type !== 'image')
     .map((item, i) => {
       const yearsAgo = nowYear - parseInt(item.date.substring(0, 4));
+      const date = formattedDate(item.date, lang);
+      const tooltip = _('{yearsAgo} år siden i dag', lang, { yearsAgo });
       const yearHtml = (
-        <div
-          className="today-date"
-          title={_('{yearsAgo} år siden i dag', lang, { yearsAgo })}>
-          {formattedDate(item.date, lang)}
+        <div className="today-date">
+          <Tooltip
+            text={tooltip}
+            ariaLabel={`${date} – ${tooltip}`}
+            focusable>
+            {date}
+          </Tooltip>
         </div>
       );
       const html = (
