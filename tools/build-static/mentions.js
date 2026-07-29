@@ -116,7 +116,11 @@ const build_person_or_keyword_refs = (collected) => {
         return;
       }
       knownFiles.add(filename);
-      if (!forced_reload && !isFileModified(filename)) {
+      if (
+        !forced_reload &&
+        refsByFile.has(filename) &&
+        !isFileModified(filename)
+      ) {
         return;
       } else {
         found_changes = true;
