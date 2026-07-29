@@ -145,6 +145,12 @@ describe('repositoryets Salmonsen-status', () => {
       'downing',
       'drayton',
       'dyer',
+      'emmett',
+      'eschenburg',
+      'freneau',
+      'gilfillan',
+      'goetzn',
+      'gubitz',
     ];
     const rootDir = process.cwd();
     const status = JSON.parse(
