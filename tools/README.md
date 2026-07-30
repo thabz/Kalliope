@@ -51,6 +51,8 @@ npm run report-ocr-candidates -- fdirs/digter/vaerk.xml
 udenlandske digtere. Positive fund registreres af digterens `bio.xml`, mens
 kontrollerede negative fund ligger i
 `data/salmonsen-biography-status.json`.
+Den fulde redaktionelle arbejdsgang er beskrevet i
+[Salmonsen-biografier](../docs/salmonsen-biographies.md).
 
 ```sh
 npm run report-salmonsen-biographies
