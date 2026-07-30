@@ -1,7 +1,10 @@
 import { DOMParser } from '@xmldom/xmldom';
 
 import { museumsByCountry } from '../pages/museums.js';
-import { build_museum_url } from '../tools/build-static/museums.js';
+import {
+  build_museum_url,
+  validateMuseum,
+} from '../tools/build-static/museums.js';
 import {
   getElementsByTagName,
   loadXMLDoc,
@@ -51,6 +54,12 @@ describe('museum groups', () => {
     museums.forEach((museum) => {
       expect(safeGetText(museum, 'country')).not.toBeNull();
     });
+  });
+
+  it('stops the static build when country metadata is missing', () => {
+    expect(() =>
+      validateMuseum({ id: 'museum', country: null }),
+    ).toThrow('content/museums.xml: museum museum mangler <country>.');
   });
 });
 
