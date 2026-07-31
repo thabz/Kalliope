@@ -131,7 +131,9 @@ dine Boller, dem har Du ærligt fortjent!
     <subtitle>Motivet fra et Maleri af Jan Sten.</subtitle>
     <firstline>Hvor er hun ung og yndig</firstline>
     <quality>korrektur1,kilde,side</quality>
-    <!-- TODO: Dette maleri er vist nævnt i et andet digt, som vist stadig befinder sig i et pullrequest. -->
+    <pictures>
+        <picture artwork="kunst/jan-steen-doktorsbesoeg-1663">Digtet kommenterer dette maleri af Jan Steen.</picture>
+    </pictures>
     <source pages="4-7"/>
 </head>
 <body>

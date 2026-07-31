@@ -368,4 +368,10 @@
     <name>Cornell University Library</name>
     <country>us</country>
   </museum>
+  <museum id="taft">
+    <name>Taft Museum of Art</name>
+    <country>us</country>
+    <link>https://www.taftmuseum.org/</link>
+    <deep-link>https://webkiosk.taftmuseum.org/objects-1/info?objectName=${objId}</deep-link>
+  </museum>
 </museums>
