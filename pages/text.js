@@ -12,6 +12,7 @@ import HelpKalliope from '../components/helpkalliope.js';
 import * as Links from '../components/links.js';
 import { poetMenu } from '../components/menu.js';
 import Note from '../components/note.js';
+import SidebarMiniHeading from '../components/sidebarminiheading.js';
 import Page from '../components/page.js';
 import { poetNameString } from '../components/poetname-helpers.js';
 import PoetName from '../components/poetname.js';
@@ -131,7 +132,7 @@ const MetadataGroup = ({ title, children, printHidden = false }) => {
   const className = `metadata-group${printHidden ? ' print-hidden' : ''}`;
   return (
     <section className={className}>
-      <h4>{title}</h4>
+      <SidebarMiniHeading>{title}</SidebarMiniHeading>
       {children}
       <style jsx>{`
         .metadata-group {
@@ -139,15 +140,6 @@ const MetadataGroup = ({ title, children, printHidden = false }) => {
         }
         .metadata-group:last-child {
           margin-bottom: 0;
-        }
-        .metadata-group :global(h4) {
-          margin: 0 0 7px;
-          color: #777;
-          font-size: 0.75em;
-          font-weight: 600;
-          letter-spacing: 0.06em;
-          line-height: 1.2;
-          text-transform: uppercase;
         }
         .metadata-group :global(a) {
           hyphens: none;

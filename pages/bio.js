@@ -15,6 +15,7 @@ import Page from '../components/page.js';
 import Picture from '../components/picture.js';
 import { poetNameString } from '../components/poetname-helpers.js';
 import PoetName from '../components/poetname.js';
+import SidebarMiniHeading from '../components/sidebarminiheading.js';
 import SidebarSplit from '../components/sidebarsplit.js';
 import SplitWhenSmall from '../components/split-when-small.js';
 import TextContent from '../components/textcontent.js';
@@ -47,17 +48,13 @@ const PersonMetaLine = ({ label, value }) => {
     return null;
   }
   const styles = {
-    key: {
-      fontWeight: 'bold',
-      fontSize: '0.8em',
-    },
     item: {
-      marginBottom: '10px',
+      marginBottom: '22px',
     },
   };
   return (
     <div style={styles.item}>
-      <div style={styles.key}>{label}</div>
+      <SidebarMiniHeading>{label}</SidebarMiniHeading>
       <div>{value}</div>
     </div>
   );
