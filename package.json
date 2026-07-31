@@ -23,6 +23,7 @@
     "test-ci": "jest",
     "test2": "next test",
     "report-ocr-candidates": "DISABLED_TESTS=\"repeated-adjacent-word\" node tools/report-ocr-candidates.js",
+    "report-salmonsen-biographies": "node tools/report-salmonsen-biographies.js",
     "build-static": "node tools/build-static.js",
     "build-static-force-reload": "node tools/build-static.js --force-reload",
     "build-facsimiles": "node tools/build-facsimiles.js"

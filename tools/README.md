@@ -45,6 +45,25 @@ npm run report-ocr-candidates
 npm run report-ocr-candidates -- fdirs/digter/vaerk.xml
 ```
 
+### Salmonsen-biografier
+
+`report-salmonsen-biographies.js` viser fremdriften for biografier til
+udenlandske digtere. Positive fund registreres af digterens `bio.xml`, mens
+kontrollerede negative fund ligger i
+`data/salmonsen-biography-status.json`.
+Den fulde redaktionelle arbejdsgang er beskrevet i
+[Salmonsen-biografier](../docs/salmonsen-biographies.md).
+
+```sh
+npm run report-salmonsen-biographies
+npm run report-salmonsen-biographies -- --check
+npm run report-salmonsen-biographies -- --next 12
+```
+
+Den sidste kommando udskriver digter-id, navn og landekode for næste bølge.
+Statusfilen skal kun opdateres af bølgens koordinator, efter arbejdsagenternes
+resultater er samlet.
+
 ## Redaktionelle værktøjer
 
 ### Opret digtere, værker og tekster
