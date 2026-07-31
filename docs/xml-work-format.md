@@ -430,6 +430,15 @@ eller splittes op:
 </picture>
 ```
 
+Hvis kommentaren er intern og ikke skal vises i frontend, brug en XML-kommentar:
+
+```xml
+<picture src="x.jpg">
+  <description>Billedtekst.</description>
+  <!-- Ekstra intern note til redaktøren. -->
+</picture>
+```
+
 ## Links og inline-tags
 
 Inline XML bliver renderet client-side af `components/textcontent.js`.
