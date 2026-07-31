@@ -95,21 +95,19 @@ Den enkle form er tekst direkte i `<picture>`:
 </picture>
 ```
 
-Hvis billedtekst og note skal adskilles, kan man bruge:
+Hvis der skal være interne redaktionelle noter om et portræt, kan de gemmes som XML-kommentarer.
+De skjules for frontend og kan læses i Git, fx:
 
 ```xml
 <picture src="p1.jpg">
   <description>
     Kunstner: <i>Titel</i>, år.
   </description>
-  <picture-note>
-    Ekstra bemærkning om billedet.
-  </picture-note>
+  <!-- Ekstra intern bemærkning om billedet. -->
 </picture>
 ```
 
-Indholdet køres gennem samme inline XML-rendering som andre billedtekster, så fx `<i>`,
-`<a poet="...">` og lignende kan bruges.
+Kommentarer er ikke en del af de renderede billedfelter, så de når ikke ud til brugerne.
 
 ## Museumsdata
 

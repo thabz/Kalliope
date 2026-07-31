@@ -2,10 +2,10 @@
 <pictures>
   <picture src="p1.jpg" primary="true" square-src="p1-square.jpg" museum="kb">
     Even Neuhaus (fotograf): <i>Peter Nansen</i>. Det Kongelige Bibliotek.
-    <picture-note>Manglende entydig KB-katalogmatch; objektet kan ikke verificeres sikkert endnu.</picture-note>
+      <!-- Manglende entydig KB-katalogmatch; objektet kan ikke verificeres sikkert endnu. -->
   </picture>
   <picture src="p2.jpg" museum="kb" objid="444145">
     Christensen &amp; Zahrtmann(fotograf): <i>Peter Nansen</i>, ca. 1898. Det Kongelige Bibliotek.
-    <picture-note>Kan ikke med sikkerhed skelne mellem de to nærliggende KB-kandidater med nuværende metadata.</picture-note>
+      <!-- Kan ikke med sikkerhed skelne mellem de to nærliggende KB-kandidater med nuværende metadata. -->
   </picture>
 </pictures>
