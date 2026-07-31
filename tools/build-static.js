@@ -223,6 +223,7 @@ const build_bio_json = async (collected) => {
       const data = {
         poet,
         content_html: null,
+        sources: [],
         identifiers: loadExternalIdentifiers(poet.id),
       };
       const doc = loadXMLDoc(bioXmlPath);
@@ -233,6 +234,12 @@ const build_bio_json = async (collected) => {
         let author = safeGetText(head, 'author');
         data.content_html = htmlToXml(safeGetInnerXML(body), collected);
         data.content_lang = 'da';
+        data.sources = (getChildrenByTagName(head, 'source') || []).map(
+          source => ({
+            content_html: htmlToXml(safeGetInnerXML(source), collected),
+            href: safeGetAttr(source, 'href'),
+          })
+        );
       }
       data.timeline = await buildPoetTimelineJson(poet, collected);
       data.portraits = await build_portraits_json(poet, collected);

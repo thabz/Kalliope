@@ -56,6 +56,14 @@ Læs den relevante specialdokumentation før ændringer på området:
 ## XML-data
 
 - Hold XML-beskrivelser korte, kildebaserede og i samme stil som omkringliggende filer.
+- Biografiers kilder angives kun i biografiens `<head>` som
+  `<source href="…">kildeangivelse</source>`. Udelad `href`, når der ikke findes
+  en verificeret digital udgave. URL'en skal som udgangspunkt pege på det konkrete
+  opslag eller den konkrete side, ikke på værkets eller værtens forside. Hvis der
+  kun foreligger en samlet digital udgave, kan kildekilden pege til
+  `https://www.rosekamp.dk/DBL_All/dansk_biografisk_leksikon.htm` eller
+  `https://runeberg.org/dbl/`. Renderingslaget viser kilderne efter
+  biografiteksten og tilføjer selv linktegnet `↗`, tooltip og tilgængeligt navn.
 - Markér fremmedsprog inde i en tekst med `<span lang="sv">...</span>` og en
   ISO 639-1-sprogkode. Sæt fortsat `lang` på `<text>`, når hele teksten har
   samme sprog.

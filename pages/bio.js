@@ -17,7 +17,8 @@ import { poetNameString } from '../components/poetname-helpers.js';
 import PoetName from '../components/poetname.js';
 import SidebarSplit from '../components/sidebarsplit.js';
 import SplitWhenSmall from '../components/split-when-small.js';
-import TextContent from '../components/textcontent.js';
+import TextContent, { TextInline } from '../components/textcontent.js';
+import Tooltip from '../components/tooltip.js';
 import TwoColumns from '../components/twocolumns.js';
 import ErrorPage from './error.js';
 
@@ -196,6 +197,56 @@ const Timeline = ({ timeline, lang }) => {
   );
 };
 
+const BiographySources = ({ sources, lang }) => {
+  const sourceAriaLabel = _('Digital kilde', lang);
+  if (sources == null || sources.length === 0) {
+    return null;
+  }
+  return (
+    <footer className="biography-sources" aria-label={_('Kilde', lang)}>
+      {sources.map((source, index) => (
+        <div className="source" key={index}>
+          <TextInline contentHtml={source.content_html} />
+          {source.href == null ? null : (
+            <>
+              {' '}
+              <Tooltip text={sourceAriaLabel}>
+                <a
+                  href={source.href}
+                  aria-label={sourceAriaLabel}
+                  className="source-link">
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </Tooltip>
+            </>
+          )}
+        </div>
+      ))}
+      <style jsx>{`
+        .biography-sources {
+          margin-bottom: 40px;
+          font-size: 0.8em;
+          text-align: right;
+        }
+        .source {
+          margin-top: 0.6em;
+        }
+        .source-link {
+          color: #c00;
+          display: inline-block;
+          font-size: 0.68em;
+          font-weight: 900;
+          margin-left: 0.15em;
+          line-height: 1;
+          text-decoration: none;
+          transform: translateY(-1px);
+          position: relative;
+        }
+      `}</style>
+    </footer>
+  );
+};
+
 const BioPage = (props) => {
   const {
     lang,
@@ -203,6 +254,7 @@ const BioPage = (props) => {
     portraits,
     content_html,
     content_lang,
+    sources,
     timeline,
     identifiers,
     error,
@@ -245,6 +297,7 @@ const BioPage = (props) => {
             contentLang={content_lang}
             className="bio-text"
           />
+          <BiographySources sources={sources} lang={lang} />
           <Timeline timeline={timeline} lang={lang} />
           <style jsx>{`
             :global(.bio-text) {
@@ -271,6 +324,7 @@ BioPage.getInitialProps = async ({ query: { lang, poetId } }) => {
     poet: json.poet,
     content_html: json.content_html,
     content_lang: json.content_lang,
+    sources: json.sources,
     timeline: json.timeline,
     identifiers: json.identifiers,
     error: json.error,
