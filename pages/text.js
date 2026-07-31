@@ -433,7 +433,9 @@ const TextPage = (props) => {
     const list = text.keywords.map((k) => {
       return <KeywordLink keyword={k} lang={lang} key={k.id} />;
     });
-    renderedKeywords = <div style={{ marginTop: '30px' }}>{list}</div>;
+    renderedKeywords = (
+      <div style={{ marginTop: '30px', marginBottom: '30px' }}>{list}</div>
+    );
   }
 
   const noteCount = notes.length + (text.footnotes_count || 0);
