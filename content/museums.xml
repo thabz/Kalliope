@@ -52,7 +52,7 @@
     <name>Staatliche Museen zu Berlin</name>
     <country>de</country>
     <link>https://www.smb.museum/home/</link>
-    <deep-link>http://www.smb-digital.de/eMuseumPlus?objectId=${objId}</deep-link>
+    <deep-link>https://search.smb.museum/object/obj-${objId}</deep-link>
   </museum>
   <museum id="md">
     <country>de</country>
