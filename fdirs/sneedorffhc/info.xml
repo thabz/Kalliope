@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="sneedorffhc" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Hans Christian</firstname>
+    <lastname>Sneedorff</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1759-05-22</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1824-10-13</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q6182431</wikidata>
+    <biografisk-leksikon-lex-dk>Hans_Christian_Sneedorff</biografisk-leksikon-lex-dk>
+    <runeberg-org>sneedhan</runeberg-org>
+  </identifiers>
+</person>
