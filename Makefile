@@ -21,15 +21,15 @@ help:
 		'make status                    Vis status for Docker Compose-services'
 
 elasticsearch:
-	$(COMPOSE) up -d elasticsearch
+	$(COMPOSE) up -d --wait elasticsearch
 
 build-static: elasticsearch
 	$(COMPOSE) --profile build build static-builder
-	$(COMPOSE) --profile build run --rm static-builder
+	$(COMPOSE) --profile build run --rm --no-deps static-builder
 
 build-static-force-reload: elasticsearch
 	$(COMPOSE) --profile build build static-builder
-	$(COMPOSE) --profile build run --rm static-builder npm run build-static-force-reload
+	$(COMPOSE) --profile build run --rm --no-deps static-builder npm run build-static-force-reload
 
 build-facsimiles:
 	$(COMPOSE) --profile facsimiles run --rm --build facsimile-builder npm run build-facsimiles -- all
