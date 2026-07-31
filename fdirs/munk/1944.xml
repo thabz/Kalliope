@@ -366,6 +366,7 @@ vi er af Vikingæt!
 <head>
     <title>Danmarkssang</title>
     <firstline>Danmark, Land af Hav og Himmel</firstline>
+   <!-- Ikke en variant af munk2020011928: Forskellige lejlighedsdigte med fælles indledning. -->
     <source pages="17-18"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1484,6 +1485,7 @@ Danmark for sin Bror.
 <head>
     <title>Danmark og Norden</title>
     <firstline>Danmark, Land af Hav og Himmel</firstline>
+   <!-- Ikke en variant af munk2020011906: Forskellige lejlighedsdigte med fælles indledning. -->
     <source pages="49-50"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1793,7 +1795,7 @@ Gud glæde Din Sjæl i Himmerig - Amen!
 </text>
 -->
 
-<text id="munk2020011934">
+<text id="munk2020011934" variant="munk2017090205">
 <head>
     <title>Hjælp mig at følge dig -</title>
     <firstline>Mester med den tunge Tornekrone</firstline>
