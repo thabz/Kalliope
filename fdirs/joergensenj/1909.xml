@@ -5,12 +5,12 @@
     <title>Af det Dybe</title>
     <year>1909</year>
     <notes>
-        <note>Teksten følger Johannes Jørgensen: <i>Af det Dybe</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1909.</note>
+        <note>Teksten følger Johannes Jørgensen: <i>Af det Dybe</i>, Gyldendalske Boghandel, Nordisk Forlag, København og Kristiania, 1909.</note>
     </notes>
     <pictures>
-        <picture src="1909-p1.jpg">Titelbladet til <i>Af det Dybe</i> (1909) lyder ,,Johannes Jørgensen / Af det Dybe // København og Kristania / Gyldendalske Boghandel / Nordisk Forlag / 1909''.</picture>
+        <picture src="1909-p1.jpg">Titelbladet til <i>Af det Dybe</i> (1909) lyder ,,Johannes Jørgensen / Af det Dybe // København og Kristiania / Gyldendalske Boghandel / Nordisk Forlag / 1909''.</picture>
     </pictures>
-    <source facsimile="115308070683-color.pdf" facsimile-pages-num="89" facsimile-pages-offset="11">Johannes Jørgensen: <i>Af det Dybe</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1909.</source>
+    <source facsimile="115308070683-color.pdf" facsimile-pages-num="89" facsimile-pages-offset="11">Johannes Jørgensen: <i>Af det Dybe</i>, Gyldendalske Boghandel, Nordisk Forlag, København og Kristiania, 1909.</source>
 </workhead>
 <workbody>
 
@@ -19,7 +19,7 @@
     <title>Vignet</title>
     <firstline>En støvet Bog fra længst forsvundne Aar</firstline>
     <source pages="5"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -55,7 +55,7 @@ og svagt og fjærnt min Ungdoms Stemmer kalde . . .
     <title><num>I.</num>Det var Vaar</title>
     <firstline>Det var Vaar, og jeg sad mellem Buskene inde</firstline>
     <source pages="6-7"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -79,7 +79,7 @@ i Sorger, der én Gang mig stemte . . .
 
 Jeg vandred en Gang hin fjærne Sti,
 som slynger sig, solhvid og støvet -
-der risler en Bæk under Graner forbi --
+der risler en Bæk under Graner forbi -
 jeg kender det ilende Vands Melodi -
 det gør mig, o Gud, saa bedrøvet. . .
 
@@ -106,7 +106,7 @@ der sejlende Slotte af Snedun og Sølv paa Himmelens Silkeblaat bygger.
     <title><num>II.</num>Ak, disse Aftner</title>
     <firstline>Ak, disse Aftner! Den bløde Luft</firstline>
     <source pages="8-9"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -143,7 +143,7 @@ ak Gud, siden da er Aarene rundne saa trøstesløs mange!
     <title><num>III.</num>Solen synker.</title>
     <firstline>Solen synker i Guldtaager ned</firstline>
     <source pages="10"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -172,7 +172,7 @@ og en enlig, en sitrende Stjærne.
     <title><num>IV.</num>De kaldte paa mig</title>
     <firstline>De kaldte paa mig med Pinsedagsklokkers Klang</firstline>
     <source pages="11"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -204,7 +204,7 @@ Da svulmed mit Hjærte, som skulde det briste brat,
     <title><num>V.</num>Det lyser og glimter</title>
     <firstline>Det lyser og glimter i Skovens Dyb</firstline>
     <source pages="12-13"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -241,7 +241,7 @@ Hvor <i>du</i> vel i Verden vanker?
     <title><num>VI.</num>Der flyver en Fugl</title>
     <firstline>Der flyver en Fugl højt oppe</firstline>
     <source pages="14"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -273,7 +273,7 @@ ud over imod dit Hjem.
     <title><num>VII.</num>Dybt i Skoven</title>
     <firstline>Dybt i Skoven er der stille</firstline>
     <source pages="15"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -304,13 +304,13 @@ som en uforstyrret Kilde.
 </head>
 <content>
 
-<text id="joergensenj2024060509">
+<text id="joergensenj2024060509" ignore-tests="single-a-ring-in-text">
 <head>
     <title>Maj</title>
     <toctitle>Maj I-III</toctitle>
     <firstline>Langt ind er lyst</firstline>
     <source pages="19-22"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -401,7 +401,7 @@ som Græssets Blomster og Bøgens Gren?
     <title>Himmelblaat</title>
     <firstline>Blaa som et Hav er Himlen</firstline>
     <source pages="24"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -429,7 +429,7 @@ i blaanende Blaat uden Bund.
     <toctitle>Sommer I-V</toctitle>
     <firstline>I Middelhavet, i de dybe Vande</firstline>
     <source pages="25-29"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -541,7 +541,7 @@ Det lufter mod Aften, Solen er slukt,
     <title>Agnete</title>
     <firstline>Der pipper en Fugl i Skoven</firstline>
     <source pages="30-31"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -583,12 +583,12 @@ gærne paa Strandbredden dø!
 </body>
 </text>
 
-<text id="joergensenj2024060513">
+<text id="joergensenj2024060513" ignore-tests="suspicious-wordform,single-a-ring-in-text">
 <head>
     <title>Samtale</title>
     <firstline>Saa er da alle Blomsterdrømme, drømte</firstline>
     <source pages="32-34"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -654,7 +654,7 @@ og plant mit Kors, hvor dine Roser stod!
     <firstline>Højsommer er det, Juli. Alt er grønt</firstline>
     <source pages="35"/>
     <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -689,7 +689,7 @@ er strøet med Lindens første gule Blade.
         <note>Gendigtning af Eichendorffs <xref poem="eichendorff2024060401" type="translation"/>.</note>
     </notes>
     <source pages="36-37"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -726,7 +726,7 @@ og fandt i Himlen ind . . .
     <title>Platanernes Susen</title>
     <source pages="38-41"/>
     <keywords>stuckenberg</keywords>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <prose>
@@ -746,7 +746,7 @@ og fandt i Himlen ind . . .
     Ad saadanne Veje gik Viggo Stuckenberg gærne . . .
     Der var saadan en Vej - men med Popler, ikke med Plataner - forbi det Hus, hvor han boede.
     Han og Ingeborg boede der, overfor Sorgenfri Skov, i Lyngby hjemme i Danmark.
-    Hende jordfæstede de hvor? Et Steds paa den anden Side af Kloden ... Og han ligger længst under Stenen, vi satte ham paa Nørrebros Kirkegaard.
+    Hende jordfæstede de hvor? Et Steds paa den anden Side af Kloden . . . Og han ligger længst under Stenen, vi satte ham paa Nørrebros Kirkegaard.
     Hvorfor ligger han længst dèr?
     Hvorfor gaar jeg - levende - ad en Vej i Frankrig, under blæsende Træer, og bærer Mindet om ham saa bittert og dybt i mit Hjærte?
     Roser lyser i Haverne, Frugter hænger halvmodne blandt blanke Blade, det lugter af Løg og Dild ud fra Urtebedene.
@@ -768,7 +768,7 @@ og fandt i Himlen ind . . .
     <title>Dødens Skygger</title>
     <firstline>Som Sneen falder, let og tyst</firstline>
     <source pages="42-43"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -810,7 +810,7 @@ kan tro, han skal Livssolen se!
     <title>At tro</title>
     <firstline>At tro er at løfte sit Blik</firstline>
     <source pages="44"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -835,7 +835,7 @@ som i en højtidelig Kirke.
     <title>Langfredag</title>
     <firstline>Intet Lys og ingen Fred</firstline>
     <source pages="45-46"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -877,7 +877,7 @@ af Din Paaskemorgen.
     <title>Julerosen</title>
     <firstline>Barn Jesus, jeg vil bringe Dig en Blomst!</firstline>
     <source pages="47-48"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -926,7 +926,7 @@ om Du vil naadig til min Gave sé!
     <firstline>Ak, naar jeg tænker paa det gamle Hjem</firstline>
     <source pages="49-51"/>
     <!-- TODO: Find originalerne -->
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -936,7 +936,7 @@ Ak, naar jeg tænker paa det gamle Hjem,
 og at jeg har forladt det, blot af Lyst
 til Æventyr og fjærne, fremmede Lande -
 da kan jeg græde som et lille Barn
-og skammer mig slet ikke ... O mit Hjem,
+og skammer mig slet ikke . . . O mit Hjem,
 Vejen er lang for den, som har forladt dig,
 og aldrig mere kommer jeg tilbage . . .
 
@@ -979,10 +979,11 @@ Syntes du ikke om din fine Dragt?
 
 <text id="joergensenj2024060522">
 <head>
-    <title>Den barmhjærtige Søster I-II</title>
+    <title>Den barmhjærtige Søster</title>
+    <toctitle>Den barmhjærtige Søster I-II</toctitle>
     <firstline>Der maa saa mange græde</firstline>
     <source pages="52-53"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1030,7 +1031,7 @@ strømmer Dag, som aldrig svinder.
     <title>Forstadsjul</title>
     <firstline>Jul i de lange Gader</firstline>
     <source pages="54-56"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1071,7 +1072,7 @@ rapser han ogsaa lidt.
 
 Der er jo saa raat derhjemme
 paa Moders Femtesals Kvist -
-lidt knitrende Ild i Ovrien
+lidt knitrende Ild i Ovnen
 gør det strax mindre trist.
 
 Saa vandrer han ned ad Gaden
@@ -1098,7 +1099,7 @@ tag dem og plant dem om!
     <subtitle>En Korsvej</subtitle>
     <firstline>Ak, hvor det gør godt, et Øjeblik</firstline>
     <source pages="57-61"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1232,7 +1233,7 @@ ad Aarene op mod de evige Riger?
     <firstline>Her har han vandret</firstline>
     <source pages="62-66"/>
     <keywords>mueller</keywords>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1320,7 +1321,7 @@ glemmes saa dybt i Persefones kølige Arme.
     <firstline>O Sjæl, som er velsignet</firstline>
     <source pages="67-68"/>
     <!-- TODO: Find originalen -->
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1345,7 +1346,7 @@ ak se det tornekranset
 og ganske overblodigt.
 
 Se Saaret i hans Side
-og Blodet,, som udstrømmer -
+og Blodet, som udstrømmer -
 se alt, han maatte lide,
 at Gud dig ikke dømmer.
 
@@ -1356,7 +1357,7 @@ som ligger i det Onde.
 
 Græd, at han maatte lide
 paa Korset for vor Glæde -
-græd, Sjæl, som Gud har signet
+græd, Sjæl, som Gud har signet!
 Det er dig godt at græde.
 </poetry>
 </body>
@@ -1369,7 +1370,7 @@ Det er dig godt at græde.
     <subtitle>Efter Camilla Battista Varani</subtitle>
     <firstline>Hvor end jeg færdes, kun paa et jeg tænker</firstline>
     <source pages="69-72"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1396,7 +1397,7 @@ om mine hede Bønner ej Dig krænker?
 Og jeg gad vide, om med Ret jeg tænker,
 at blot jeg venter, vil Du hos mig være?
 Thi i den bitre Død min Sjæl Du sænker,
-og lidt det vilde stemme med' Din Ære,
+og lidt det vilde stemme med Din Ære,
 om aldrig Dagen kom, da Du mig henter . . .
 Husk, Tiden falder lang for den, som venter!
 
@@ -1453,7 +1454,7 @@ mig snart Dit skønne, hellige Aasyn skue!
     <title>Danmark</title>
     <firstline>En Bondestue staar bygt i Nord</firstline>
     <source pages="73-74"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1485,7 +1486,7 @@ Glad til Arbejd gaar Mand og Kvinde;
 Børnene leger ude og inde.
 
 Hvad hedder det Hus ved Nordenstrand?
-Danmark er det, vort Fædrpland!
+Danmark er det, vort Fædreland!
 
 Signe den Gud, som Landet os gav,
 vor Stue Østen og Vesten for Hav!
