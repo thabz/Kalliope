@@ -145,6 +145,10 @@ const MetadataGroup = ({ title, children, printHidden = false }) => {
           hyphens: none;
           overflow-wrap: break-word;
         }
+        .metadata-group :global(p.digital-source) {
+          margin-top: 10px;
+          margin-bottom: 0;
+        }
         @media print {
           .metadata-group.print-hidden {
             display: none;
@@ -370,16 +374,32 @@ const TextPage = (props) => {
 
   let sourceText = '';
   let renderedSource = null;
+  let renderedDigitalSource = null;
   if (text.source != null) {
     const source = text.source;
-    sourceText = source.source.replace(/\.?$/, ', ');
-    sourceText += 's. ' + source.pages + '.';
-    renderedSource = (
-      <TextContent
-        contentHtml={[[sourceText, { html: true }]]}
-        contentLang="da"
-      />
-    );
+    if (source.source != null && source.source.length > 0) {
+      sourceText = source.source;
+      if (source.pages != null) {
+        sourceText = sourceText.replace(/\.?$/, ', ');
+        sourceText += 's. ' + source.pages + '.';
+      }
+      renderedSource = (
+        <TextContent
+          contentHtml={[[sourceText, { html: true }]]}
+          contentLang="da"
+        />
+      );
+    }
+    if (source.digitalUrl != null) {
+      renderedDigitalSource = (
+        <a
+          href={source.digitalUrl}
+          target="_blank"
+          rel="noopener noreferrer">
+          {_('Digital kilde', lang)}
+        </a>
+      );
+    }
   }
 
   let textPictures = [...text.pictures];
@@ -462,9 +482,12 @@ const TextPage = (props) => {
           {translationSourceNotes}
         </MetadataGroup>
       ) : null}
-      {renderedSource != null ? (
+      {renderedSource != null || renderedDigitalSource != null ? (
         <MetadataGroup title={_('Kilde', lang)}>
           {renderedSource}
+          {renderedDigitalSource != null ? (
+            <p className="digital-source">{renderedDigitalSource}</p>
+          ) : null}
         </MetadataGroup>
       ) : null}
       {text.variants.length > 0 ? (

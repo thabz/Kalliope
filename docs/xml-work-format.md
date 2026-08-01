@@ -80,12 +80,23 @@ En kilde paa vaerkniveau kan bruges som default for tekster i samme vaerk:
 </source>
 ```
 
+En stabil digitalisering kan tilføjes på kilde-niveau:
+
+```xml
+<source href="https://www.kb.dk/en/..." facsimile="115308051039_color"
+        facsimile-pages-num="66"
+        facsimile-pages-offset="8">
+  Erica: <i>Lyngblomster</i>, 1856.
+</source>
+```
+
 Attributter:
 
 - `id`: valgfri kilde-id. Uden `id` bliver kilden `default`.
 - `facsimile`: mappe/id for faksimile. `.pdf` fjernes automatisk, hvis det er angivet.
 - `facsimile-pages-num`: antal sider i faksimilen. Paakraeves naar `facsimile` bruges.
 - `facsimile-pages-offset`: tal der laegges til trykte sidetal for at finde faksimilesider.
+- `href`: valgfri URL til en stabil digital udgave af teksten.
 
 Flere kilder kan defineres ved at give dem hver deres `id`:
 
@@ -198,6 +209,10 @@ En tekstkilde kan bruge default-kilden fra `<workhead>`:
 <source pages="11-12"/>
 ```
 
+```xml
+<source href="https://archive.org/details/..." pages="11-12"/>
+```
+
 Eller en navngivet kilde:
 
 ```xml
@@ -208,8 +223,25 @@ Attributter:
 
 - `in`: kilde-id fra `<workhead><source id="...">`. Uden `in` bruges `default`.
 - `pages`: trykte sidetal.
+- `href`: valgfri URL til teksten eller den digitale udgave. Tilsidesætter evt. `href` på den arvede værkkilde.
 - `facsimile`: override af faksimile.
 - `facsimile-pages`: konkret faksimileside eller interval.
+
+Eksempel (text kilde med arv og override):
+
+```xml
+<source href="https://kb.dk/some-stable-record">...</source>
+<source in="bd2" href="https://kb.dk/manual-override">...</source>
+```
+
+Regler:
+
+- `<workhead><source href="...">` sættes på værkniveau og kan arves af tekster uden egen kilde-href.
+- Et tekstniveau `<source href="...">` erstatter URL'en fra den arvede værk-kilde.
+- `href`: valgfri URL til den digitale kilde for teksten/udgaven.
+
+`href` arves fra den valgte værkkilde, når teksten ikke selv angiver sin egen `href`.
+Hvis teksten angiver en `href`, tilsidesætter den arvet `href`.
 
 Hvis `facsimile-pages` mangler, men `pages` og `facsimile-pages-offset` findes,
 beregnes faksimilesiderne automatisk.
@@ -421,16 +453,7 @@ For lokale billeder kan billedteksten enten vaere direkte indhold:
 <picture src="x.jpg">Billedtekst.</picture>
 ```
 
-eller splittes op:
-
-```xml
-<picture src="x.jpg">
-  <description>Billedtekst.</description>
-  <picture-note>Ekstra note.</picture-note>
-</picture>
-```
-
-Hvis kommentaren er intern og ikke skal vises i frontend, brug en XML-kommentar:
+Eller splittes op:
 
 ```xml
 <picture src="x.jpg">
@@ -438,6 +461,9 @@ Hvis kommentaren er intern og ikke skal vises i frontend, brug en XML-kommentar:
   <!-- Ekstra intern note til redaktøren. -->
 </picture>
 ```
+
+Hvis billedteksten skal opdeles, bruges `description`; der er ikke brug for `<picture-note>`
+til interne redaktionelle kommentarer.
 
 ## Links og inline-tags
 
