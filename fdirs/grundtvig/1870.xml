@@ -8,10 +8,10 @@
     <breadcrumbtitle>Bd. 2</breadcrumbtitle>
     <year>1870</year>
     <notes>
-       <note>Teksten følger N.F.S. Grundtvig: <i>Psalmer og aandelige Sange</i>, Bd. 2, Kbh., 1870.</note>
        <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
        <note>Noter med en foranstillet asterisk er digterens egne.</note>
     </notes>
+    <source>N.F.S. Grundtvig: <i>Psalmer og aandelige Sange</i>, Bd. 2, Kbh., 1870.</source>
     <pictures>
         <picture type="titlepage" src="1870-p1.jpg">Første titelblad lyder ,,Psalmer / og / aandelige Sange. / af / Nik. Fred. Sev. Grundtvig. // Anden Deel. / Sangværket til Kirke-Skolen. // Kjøbenhavn. / C. G. Iversens Boghandel. Karl Schønberg. / Thieles Bogtrykkeri. / 1870.''</picture>
         <picture src="1870-p2.jpg"></picture>
@@ -5012,10 +5012,10 @@ Og blomstre for Hans Øie!
     <subtitle>Egen Melodi af H. Nutzhorn.</subtitle>
     <firstline>Der laa en Stad paa Marken</firstline>
     <notes>
-      <note>Efter Josva. 2 og Matth. 1.</note>
       <note>P. O. Boisens bibelske og kirkehistoriske Psalmer og Sange (1853) Nr. 28, forkortet fra Sangværk 2, 2. (1841) Nr. 41, hvor slutningen dog fattes.</note>
       <note>Cf. <xref bibel="bibeljosua02"/> og <xref bibel="bibelmatt01,5"/>.</note>
     </notes>
+    <source>Josva. 2 og Matth. 1.</source>
     <quality>korrektur1,kilde,side</quality>
     <source pages="133-136"/>
 </head>
@@ -6320,9 +6320,9 @@ Davids-Harpen gaaer aldrig ad Glemme!
     <subtitle>Egen Melodi af J. P.E. Hartmann.</subtitle>
     <firstline>Mellem Brødre kaldt den Lille</firstline>
     <notes>
-      <note>Efter den 151. Dav. Ps.</note>
       <note>Hagens Psalmer og Rim (1832) Nr. 7, efter den 151. Davids-Psalme hos de Halvfjerds.</note>
     </notes>
+    <source>den 151. Dav. Ps.</source>
     <quality>korrektur1,kilde,side</quality>
     <source pages="166-167"/>
 </head>
@@ -6983,9 +6983,9 @@ Hyttetag til Høitidsdage!
     <title><num>56.</num>Kom, lad os prise de herlige Mænd</title>
     <firstline>Kom, lad os prise de herlige Mænd</firstline>
     <notes>
-      <note>Efter Syrachs Lovsang Kap. 44-50.</note>
       <note>Sangværk 2,1. Nr. 6.</note>
     </notes>
+    <source>Syrachs Lovsang Kap. 44-50.</source>
     <quality>korrektur1,kilde,side</quality>
     <source pages="183-195"/>
 </head>
@@ -9664,9 +9664,7 @@ Skiænkes med Guds eenbaarne Søn!
     <title><num>82.</num>See, hvor nu Jesus træder</title>
     <subtitle>Mel. Den bittre Død Dig trængde.</subtitle>
     <firstline>See, hvor nu Jesus træder</firstline>
-    <notes>
-      <note>Efter Kingo, Festpsalmer, Tillæg til 7. Oplag, 1860, Nr. 850.</note>
-    </notes>
+    <source>Kingo, Festpsalmer, Tillæg til 7. Oplag, 1860, Nr. 850.</source>
     <quality>korrektur1,kilde,side</quality>
     <source pages="252"/>
 </head>
@@ -9695,9 +9693,7 @@ Hvad Kiærlighed formaaer!
     <title><num>83.</num>Vor Frelser frit sin Fiende</title>
     <subtitle>Mel. Alt paa den vilde Hede.</subtitle>
     <firstline>Vor Frelser frit sin Fiende</firstline>
-    <notes>
-      <note>Efter Kingo, Festpsalmer, Tillæg til 7. Oplag, 1861, Nr. 851.</note>
-    </notes>
+    <source>Kingo, Festpsalmer, Tillæg til 7. Oplag, 1861, Nr. 851.</source>
     <quality>korrektur1,kilde,side</quality>
     <source pages="253"/>
 </head>
