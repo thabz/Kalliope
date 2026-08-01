@@ -66,7 +66,7 @@ const get_local_picture_content = (pictureNode) => {
       description: safeGetInnerXML(
         getChildByTagName(pictureNode, 'description')
       ),
-      note: null,
+      note: safeGetInnerXML(getChildByTagName(pictureNode, 'picture-note')),
     };
   }
   return {
