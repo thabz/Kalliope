@@ -18,6 +18,7 @@ import {
 import { get_picture, validate_picture_attrs } from './parsing.js';
 import { build_museum_url } from './museums.js';
 import { mapLimit } from './concurrency.js';
+import { removeRedundantMuseumName } from './validation.js';
 
 const readArtworkFile = async (personId, artworkFilename, collected) => {
   const artworksDoc = loadXMLDoc(artworkFilename);
@@ -55,6 +56,7 @@ const readArtworkFile = async (personId, artworkFilename, collected) => {
       const size = await imageSizeSync(`public${src}`);
       const remoteUrl = build_museum_url(picture, collected);
       const museumId = safeGetAttr(picture, 'museum');
+      const museum = collected.museums.get(museumId);
       const clipPath = safeGetAttr(picture, 'clip-path');
       const content_raw = safeGetInnerXML(picture).trim();
       const result = {
@@ -67,7 +69,10 @@ const readArtworkFile = async (personId, artworkFilename, collected) => {
         subjects,
         year,
         content_raw,
-        content_html: htmlToXml(description, collected),
+        content_html: htmlToXml(
+          removeRedundantMuseumName(description, museum?.name),
+          collected
+        ),
         note_html: htmlToXml(note, collected),
       };
       if (personId != 'kunst') {
@@ -75,7 +80,7 @@ const readArtworkFile = async (personId, artworkFilename, collected) => {
         result.artistId = personId;
       }
       if (museumId != null) {
-        result.museum = collected.museums.get(museumId);
+        result.museum = museum;
       }
       if (clipPath != null) {
         result.clipPath = clipPath;
