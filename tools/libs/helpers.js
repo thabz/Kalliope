@@ -316,7 +316,14 @@ const resizeImage = async (inputfile, outputfile, maxWidth, options = {}) => {
       withoutEnlargement: true,
     };
     if (options.fit != null) {
-      resizeOptions.height = maxWidth;
+      const metadata = await sharp(inputfile).metadata();
+      const squareSize = Math.min(
+        maxWidth,
+        metadata.width ?? maxWidth,
+        metadata.height ?? maxWidth
+      );
+      resizeOptions.width = squareSize;
+      resizeOptions.height = squareSize;
       resizeOptions.fit = options.fit;
     }
     const image = sharp(inputfile).resize(resizeOptions);
