@@ -75,6 +75,7 @@ import {
   workName,
   workLinkName,
 } from './build-static/formatting.js';
+import { pageOnlySourceError } from './build-static/source-validation.js';
 import {
   build_global_lines_json,
   build_poet_lines_json,
@@ -414,6 +415,15 @@ const handle_text = async (
   let source = null;
   let workSource = null;
   if (sourceNode != null) {
+    const pageOnlyError = pageOnlySourceError({
+      filename: `fdirs/${sourcePoetId}/${sourceWorkId}.xml`,
+      textId: sourceTextId,
+      textSource: sourceNode,
+      workSources: sourceWork.sources,
+    });
+    if (pageOnlyError != null) {
+      throw new Error(pageOnlyError);
+    }
     const sourceReferenceId = safeGetAttr(sourceNode, 'in');
     const sourceId = sourceReferenceId ?? 'default';
     workSource = sourceWork.sources[sourceId] ?? null;
