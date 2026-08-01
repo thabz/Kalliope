@@ -18,6 +18,7 @@ import { poetNameString } from '../components/poetname-helpers.js';
 import PoetName from '../components/poetname.js';
 import SidebarPictures from '../components/sidebarpictures.js';
 import SidebarSplit from '../components/sidebarsplit.js';
+import Source from '../components/source.js';
 import Stack from '../components/stack.js';
 import TextContent from '../components/textcontent.js';
 import TextName, { textLinkTitleString } from '../components/textname.js';
@@ -374,7 +375,6 @@ const TextPage = (props) => {
 
   let sourceText = '';
   let renderedSource = null;
-  let renderedDigitalSource = null;
   if (text.source != null) {
     const source = text.source;
     if (source.source != null && source.source.length > 0) {
@@ -384,20 +384,15 @@ const TextPage = (props) => {
         sourceText += 's. ' + source.pages + '.';
       }
       renderedSource = (
-        <TextContent
+        <Source
           contentHtml={[[sourceText, { html: true }]]}
-          contentLang="da"
+          href={source.digitalUrl}
+          lang={lang}
         />
       );
-    }
-    if (source.digitalUrl != null) {
-      renderedDigitalSource = (
-        <a
-          href={source.digitalUrl}
-          target="_blank"
-          rel="noopener noreferrer">
-          {_('Digital kilde', lang)}
-        </a>
+    } else if (source.digitalUrl != null) {
+      renderedSource = (
+        <Source href={source.digitalUrl} lang={lang} />
       );
     }
   }
@@ -482,12 +477,9 @@ const TextPage = (props) => {
           {translationSourceNotes}
         </MetadataGroup>
       ) : null}
-      {renderedSource != null || renderedDigitalSource != null ? (
+      {renderedSource != null ? (
         <MetadataGroup title={_('Kilde', lang)}>
           {renderedSource}
-          {renderedDigitalSource != null ? (
-            <p className="digital-source">{renderedDigitalSource}</p>
-          ) : null}
         </MetadataGroup>
       ) : null}
       {text.variants.length > 0 ? (

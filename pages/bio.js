@@ -18,8 +18,8 @@ import PoetName from '../components/poetname.js';
 import SidebarMiniHeading from '../components/sidebarminiheading.js';
 import SidebarSplit from '../components/sidebarsplit.js';
 import SplitWhenSmall from '../components/split-when-small.js';
-import TextContent, { TextInline } from '../components/textcontent.js';
-import Tooltip from '../components/tooltip.js';
+import Source from '../components/source.js';
+import TextContent from '../components/textcontent.js';
 import TwoColumns from '../components/twocolumns.js';
 import ErrorPage from './error.js';
 
@@ -195,7 +195,6 @@ const Timeline = ({ timeline, lang }) => {
 };
 
 const BiographySources = ({ sources, lang }) => {
-  const sourceAriaLabel = _('Digital kilde', lang);
   if (sources == null || sources.length === 0) {
     return null;
   }
@@ -203,20 +202,11 @@ const BiographySources = ({ sources, lang }) => {
     <footer className="biography-sources" aria-label={_('Kilde', lang)}>
       {sources.map((source, index) => (
         <div className="source" key={index}>
-          <TextInline contentHtml={source.content_html} />
-          {source.href == null ? null : (
-            <>
-              {' '}
-              <Tooltip text={sourceAriaLabel}>
-                <a
-                  href={source.href}
-                  aria-label={sourceAriaLabel}
-                  className="source-link">
-                  <span aria-hidden="true">↗</span>
-                </a>
-              </Tooltip>
-            </>
-          )}
+          <Source
+            contentHtml={source.content_html}
+            href={source.href}
+            lang={lang}
+          />
         </div>
       ))}
       <style jsx>{`
@@ -227,17 +217,6 @@ const BiographySources = ({ sources, lang }) => {
         }
         .source {
           margin-top: 0.6em;
-        }
-        .source-link {
-          color: #c00;
-          display: inline-block;
-          font-size: 0.68em;
-          font-weight: 900;
-          margin-left: 0.15em;
-          line-height: 1;
-          text-decoration: none;
-          transform: translateY(-1px);
-          position: relative;
         }
       `}</style>
     </footer>

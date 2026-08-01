@@ -206,6 +206,26 @@ export const DownArrow = ({ onClick, inactive, color = 'black' }) => {
   );
 };
 
+export const ExternalLinkSVG = ({ color = 'currentColor' }) => {
+  return (
+    <svg
+      width="13"
+      height="13"
+      viewBox="0 0 16 16"
+      aria-hidden="true"
+      focusable="false">
+      <path
+        d="M5 11 12.5 3.5M7.5 3.5h5v5"
+        fill="none"
+        stroke={color}
+        strokeWidth="2.2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+
 export const CloseButton = ({ onClick }) => {
   return (
     <svg width="30" height="30" onClick={onClick} className="active">
