@@ -18,6 +18,8 @@ Læs den relevante specialdokumentation før ændringer på området:
   publikationer, antologier og tekstforekomster
 - `docs/kalliope-masterplan.md` ved arbejde med korpusets afgrænsning,
   kilder, redaktionelle principper eller den langsigtede datastruktur
+- `docs/kb-digital-links.md` ved oprettelse eller audit af digitale kilde- og
+  facsimilelinks til Det Kgl. Bibliotek
 
 ## GitHub
 
