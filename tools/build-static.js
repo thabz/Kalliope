@@ -88,6 +88,10 @@ import {
   b,
   print_benchmarking_results,
 } from './build-static/benchmarking.js';
+import {
+  collectSourceDigitalUrl,
+  resolveSourceDigitalUrlForText,
+} from './build-static/source.js';
 import { mapLimit } from './build-static/concurrency.js';
 import { createProgressReporter } from './build-static/progress.js';
 import { validateFirstlineMarkup } from './build-static/validation.js';
@@ -410,23 +414,33 @@ const handle_text = async (
   let source = null;
   let workSource = null;
   if (sourceNode != null) {
-    const sourceId = safeGetAttr(sourceNode, 'in') || 'default';
-    workSource = sourceWork.sources[sourceId];
-    if (workSource == null) {
+    const sourceReferenceId = safeGetAttr(sourceNode, 'in');
+    const sourceId = sourceReferenceId ?? 'default';
+    workSource = sourceWork.sources[sourceId] ?? null;
+    if (sourceReferenceId != null && workSource == null) {
       throw new Error(
         `fdirs/${sourcePoetId}/${sourceWorkId}.xml ${sourceTextId} references undefined source.`,
       );
     }
     let pages = null;
     const pagesAttr = safeGetAttr(sourceNode, 'pages');
-    let sourceBookRef = workSource ? workSource.source : null;
+    let sourceBookRef = workSource == null ? null : workSource.source;
     const sourceNodeInner = safeGetInnerXML(sourceNode);
     if (sourceNodeInner.length > 0) {
       sourceBookRef = sourceNodeInner;
     }
+    const digitalUrl = resolveSourceDigitalUrlForText({
+      sourceNode,
+      sourceForText: workSource,
+    });
+    if (sourceBookRef == null && digitalUrl == null) {
+      throw new Error(
+        `fdirs/${sourcePoetId}/${sourceWorkId}.xml ${sourceTextId} references undefined source.`,
+      );
+    }
     const facsimile =
-      safeGetAttr(sourceNode, 'facsimile') ||
-      (workSource ? workSource.facsimile : null);
+      safeGetAttr(sourceNode, 'facsimile') ??
+      (workSource == null ? null : workSource.facsimile);
     let facsimilePages = safeGetAttr(sourceNode, 'facsimile-pages');
     if (
       facsimilePages == null &&
@@ -461,7 +475,9 @@ const handle_text = async (
     source = {
       source: sourceBookRef,
       pages: pagesAttr,
-      facsimilePageCount: workSource.facsimilePageCount,
+      digitalUrl,
+      facsimilePageCount:
+        workSource == null ? null : workSource.facsimilePageCount,
       facsimile,
       facsimilePages,
       facsimilePoetId: sourcePoetId,
@@ -1219,8 +1235,8 @@ const works_second_pass = async (collected) => {
         filename,
       ]);
       const sourceTexts = textsBySourceWork.get(`${poetId}/${workId}`) || [];
-      sourceTexts.forEach(text => {
-        sourceFilesForText(text).forEach(sourceFile =>
+      sourceTexts.forEach((text) => {
+        sourceFilesForText(text).forEach((sourceFile) =>
           sourceFiles.add(sourceFile)
         );
       });
@@ -1236,45 +1252,46 @@ const works_second_pass = async (collected) => {
       const data = collected.works.get(`${poetId}/${workId}`);
       let sources = {};
       getChildrenByTagName(head, 'source').forEach((sourceNode) => {
-      let source = null;
-      const sourceInner = safeGetInnerXML(sourceNode);
-      if (sourceInner != null && sourceInner.length > 0) {
-        source = { source: sourceInner };
-      }
-      if (source == null || source.source == null) {
-        throw new Error(
-          `fdirs/${poetId}/${workId}.xml has source with no title.`
-        );
-      }
-      const sourceId = safeGetAttr(sourceNode, 'id') || 'default';
-      let facsimile = safeGetAttr(sourceNode, 'facsimile');
-      if (facsimile != null) {
-        facsimile = facsimile.replace(/.pdf$/, '');
-        let facsimilePagesOffset = safeGetAttr(
-          sourceNode,
-          'facsimile-pages-offset'
-        );
-        if (facsimilePagesOffset != null) {
-          facsimilePagesOffset = parseInt(facsimilePagesOffset, 10);
+        let source = null;
+        const sourceInner = safeGetInnerXML(sourceNode);
+        if (sourceInner != null && sourceInner.length > 0) {
+          source = { source: sourceInner };
         }
-
-        const facsimilePageCount = safeGetAttr(
-          sourceNode,
-          'facsimile-pages-num'
-        );
-        if (facsimilePageCount == null) {
+        if (source == null || source.source == null) {
           throw new Error(
-            `fdirs/${poetId}/${workId}.xml is missing facsimile-pages-num in source.`
+            `fdirs/${poetId}/${workId}.xml has source with no title.`
           );
         }
-        source = {
-          ...source,
-          facsimile,
-          facsimilePageCount: parseInt(facsimilePageCount, 10),
-          facsimilePagesOffset,
-        };
-      }
-      sources[sourceId] = source;
+        source.digitalUrl = collectSourceDigitalUrl(sourceNode);
+        const sourceId = safeGetAttr(sourceNode, 'id') || 'default';
+        let facsimile = safeGetAttr(sourceNode, 'facsimile');
+        if (facsimile != null) {
+          facsimile = facsimile.replace(/.pdf$/, '');
+          let facsimilePagesOffset = safeGetAttr(
+            sourceNode,
+            'facsimile-pages-offset'
+          );
+          if (facsimilePagesOffset != null) {
+            facsimilePagesOffset = parseInt(facsimilePagesOffset, 10);
+          }
+
+          const facsimilePageCount = safeGetAttr(
+            sourceNode,
+            'facsimile-pages-num'
+          );
+          if (facsimilePageCount == null) {
+            throw new Error(
+              `fdirs/${poetId}/${workId}.xml is missing facsimile-pages-num in source.`
+            );
+          }
+          source = {
+            ...source,
+            facsimile,
+            facsimilePageCount: parseInt(facsimilePageCount, 10),
+            facsimilePagesOffset,
+          };
+        }
+        sources[sourceId] = source;
       });
       data.sources = sources;
       collected_works.set(poetId + '-' + workId, data);
