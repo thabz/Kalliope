@@ -42,7 +42,12 @@ const Heading = (props) => {
       <h1>{title}</h1>
       {kalliopeIcon}
       {poet != null && iconSrc != null ? (
-        <img className={iconClassName} src={iconSrc} alt="" />
+        <picture className="poet-icon-picture">
+          {poet.square_portrait_webp != null ? (
+            <source srcSet={poet.square_portrait_webp} type="image/webp" />
+          ) : null}
+          <img className={iconClassName} src={iconSrc} alt="" />
+        </picture>
       ) : null}
       <style jsx>{`
         .heading {
@@ -79,6 +84,10 @@ const Heading = (props) => {
           height: 128px;
           border-radius: 50%;
           object-fit: cover;
+        }
+        :global(.poet-icon-picture) {
+          display: block;
+          flex: 0 0 auto;
         }
         :global(.kalliope-icon) {
           position: absolute;

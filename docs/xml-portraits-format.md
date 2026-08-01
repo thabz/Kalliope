@@ -134,17 +134,25 @@ Remote URL bygges i `tools/build-static/museums.js`.
 
 ## Square portraits
 
-`square-src` bruges til at skabe:
+`square-src` bruges som kilde til to genererede billeder:
 
 ```text
 public/images/<id>/social/<id>.jpg
 ```
 
+JPEG-varianten er 600 × 600 px og bruges til Open Graph og Twitter Cards.
+WebP-varianten er højst 256 × 256 px og bruges som sideikon i sidens overskrift;
+JPEG-varianten er fallback via `<picture>`. Kildebilledet skal derfor være et
+kvadrat på højst 600 × 600 px, gemt som JPEG uden overflødige metadata og med
+anbefalet kvalitet omkring 82. Hold kildefilen lille; normalt bør den være under
+350 KiB.
+
 Regler:
 
 - Hvis `portraits.xml` findes, skal mindst et billede have `square-src`.
 - Det første fundne `square-src` bruges.
-- `square-src` er normalt en manuelt beskåret kvadratisk fil, fx `p1-square.jpg`.
+- `square-src` er en manuelt beskåret kvadratisk fil, fx `p1-square.jpg`, på
+  højst 600 × 600 px.
 
 Eksempel:
 
