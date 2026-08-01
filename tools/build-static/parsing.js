@@ -13,7 +13,6 @@ import {
 import { poetName } from './formatting.js';
 import { imageSizeSync } from './image.js';
 import { mapLimit } from './concurrency.js';
-import { removeRedundantMuseumName } from './validation.js';
 
 const publicPathFromSrc = src => `public${src}`;
 
@@ -182,7 +181,6 @@ const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
   const portraitRef = safeGetAttr(pictureNode, 'portrait');
   const year = safeGetAttr(pictureNode, 'year');
   const museumId = safeGetAttr(pictureNode, 'museum');
-  const museum = collected.museums.get(museumId);
   const clipPath = safeGetAttr(pictureNode, 'clip-path');
   const remoteUrl = build_museum_url(pictureNode, collected);
   if (src != null) {
@@ -198,12 +196,9 @@ const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
       clipPath,
       size: await imageSizeSync(publicPathFromSrc(src)),
       remoteUrl,
-      museum,
+      museum: collected.museums.get(museumId),
       content_lang: 'da',
-      content_html: htmlToXml(
-        removeRedundantMuseumName(description, museum?.name),
-        collected
-      ),
+      content_html: htmlToXml(description, collected),
       note_html: htmlToXml(note, collected),
       primary,
     };
