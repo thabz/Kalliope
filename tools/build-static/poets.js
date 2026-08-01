@@ -47,14 +47,14 @@ const isKnownPoetLanguage = lang => knownPoetLanguages.has(lang);
 const create_poet_square_thumb = (poetId, square_path) => {
   const path = `public/images/${poetId}/${square_path}`;
   const destFolder = `public/generated/images/${poetId}/social`;
-  const destPath = `${destFolder}/${poetId}.jpg`;
-  const destinationModifiedTime = fileModifiedTime(destPath);
+  const jpegPath = `${destFolder}/${poetId}.jpg`;
+  const destinationModifiedTime = fileModifiedTime(jpegPath);
   if (
     destinationModifiedTime == null ||
     fileModifiedTime(path) > destinationModifiedTime
   ) {
     safeMkdir(destFolder);
-    resizeImage(path, destPath, 600);
+    resizeImage(path, jpegPath, 600, { fit: 'cover', quality: 82 });
   }
   return `/generated/images/${poetId}/social/${poetId}.jpg`;
 };

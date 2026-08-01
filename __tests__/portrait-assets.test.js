@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import sharp from 'sharp';
 
 const imageExtensionPattern = /\.(jpe?g|png|gif|webp)$/i;
 const pictureTagPattern = /<picture\b([^>]*)>/g;
@@ -61,5 +62,46 @@ describe('portrait asset conventions', () => {
       });
 
     expect(missing).toEqual([]);
+  });
+
+  it('keeps square portrait sources square and no larger than 600 px', async () => {
+    const invalid = [];
+    for (const poetId of fs
+      .readdirSync('fdirs', { withFileTypes: true })
+      .filter(entry => entry.isDirectory())
+      .map(entry => entry.name)) {
+      const portraitsFile = path.join('fdirs', poetId, 'portraits.xml');
+      if (!fs.existsSync(portraitsFile)) {
+        continue;
+      }
+      const xml = fs.readFileSync(portraitsFile, 'utf8');
+      for (const pictureMatch of xml.matchAll(pictureTagPattern)) {
+        for (const assetMatch of pictureMatch[1].matchAll(
+          /\bsquare-src="([^"]+)"/g
+        )) {
+          const filename = path.join(
+            'public',
+            'images',
+            poetId,
+            assetMatch[1]
+          );
+          const metadata = await sharp(filename).metadata();
+          if (
+            metadata.width !== metadata.height ||
+            metadata.width > 600 ||
+            metadata.height > 600 ||
+            fs.statSync(filename).size > 350 * 1024
+          ) {
+            invalid.push(
+              `${filename}: ${metadata.width}x${metadata.height}, ${
+                Math.round(fs.statSync(filename).size / 1024)
+              } KiB`
+            );
+          }
+        }
+      }
+    }
+
+    expect(invalid).toEqual([]);
   });
 });
