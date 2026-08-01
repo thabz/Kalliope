@@ -8,12 +8,12 @@
     <subtitle>Anden udgave</subtitle>
     <year>1913</year>
     <notes>
-        <note>Teksten følger Johannes Jørgensen: <i>Bekendelse</i>, 2. udgave, Gyldendalske Boghandel, Nordisk Forlagt, 1913.</note>
+        <note>Teksten følger Johannes Jørgensen: <i>Bekendelse</i>, 2. udgave, Gyldendalske Boghandel, Nordisk Forlag, 1913.</note>
     </notes>
     <pictures>
-        <picture src="1913b-p1.jpg">Titelbladet til <i>Bekendelse</i> (1913) lyder ,,Johannes Jørgensen // Bekendelse / Per mortem ad vitam / Anden Udgave // København og Kristiania / Gyldendalske Boghandel / Nordisk Forlagt - 1913''.</picture>
+        <picture src="1913b-p1.jpg">Titelbladet til <i>Bekendelse</i> (1913) lyder ,,Johannes Jørgensen // Bekendelse / Per mortem ad vitam / Anden Udgave // København og Kristiania / Gyldendalske Boghandel / Nordisk Forlag - 1913''.</picture>
     </pictures>
-    <source facsimile="115308070586-color.pdf" facsimile-pages-num="119" facsimile-pages-offset="5">Johannes Jørgensen: <i>Bekendelse</i>, 2. udgave, Gyldendalske Boghandel, Nordisk Forlagt, 1913.</source>
+    <source facsimile="115308070586-color.pdf" facsimile-pages-num="119" facsimile-pages-offset="5">Johannes Jørgensen: <i>Bekendelse</i>, 2. udgave, Gyldendalske Boghandel, Nordisk Forlag, 1913.</source>
 </workhead>
 <workbody>
 
@@ -22,7 +22,7 @@
     <title>Til Den, der læser</title>
     <firstline>Ene paa Jorden, hvorhen du gaar</firstline>
     <source pages="9"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -39,7 +39,7 @@ den trofaste, hjemlige Himmel.
     <title>Høstdrøm</title>
     <firstline>Jeg drømte i Nat om øde</firstline>
     <source pages="10-11"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -83,7 +83,7 @@ de røde Risbøges Hegn.
     <title>Ensomhed</title>
     <firstline>Derude suser den sorte Nat</firstline>
     <source pages="12-13"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -122,10 +122,10 @@ Min Ungdom, min Ungdom, der er svunden!
 
 <text id="joergensenj2024061604">
 <head>
-    <title>Stjærne Stemning</title>
+    <title>Stjærne-Stemning</title>
     <firstline>Jeg staar alene i Natten paa Taarnets Tinde</firstline>
     <source pages="14-15"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -136,7 +136,7 @@ pupilløse Guldøjne stirrer sørgmodigt ned
 i langsom Vandren ud over Nattens Ørk
 som trætte Nomader uden Frist eller Fred.
 
-De samme Stjærner var det, Jacbb saa
+De samme Stjærner var det, Jacob saa
 paa Himmelkuplen over Charans Sletter,
 naar han med sine Hjorder ude laa
 og stirred søvnløs i de lange Nætter
@@ -154,7 +154,7 @@ Min Haand blev slap - min Tanke syg og led.
 Hvi skal jeg plante Blomster, naar de visner,
 og tvinde fine Spind, som hurtig briste?
 Jeg mærker sløvt, hvor Hjærtet i mig isner,
-og Tvivlen borer i mit. Væsens Ved
+og Tvivlen borer i mit Væsens Ved
 og huler hvert et fattigt Haab en Kiste.
 </poetry>
 </body>
@@ -165,7 +165,7 @@ og huler hvert et fattigt Haab en Kiste.
     <title>Maane</title>
     <firstline>Der driver Skyer for Vinternattens Maane</firstline>
     <source pages="16"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -186,12 +186,15 @@ og ak! min Sjæl er gold som denne øde Jord.
 <head>
     <title>Vinter</title>
     <firstline>O det hvide Hus bag de høje, sorte Popler</firstline>
+    <notes>
+        <note>Mottoet er en allusion til Charles Baudelaires <xref poem="baudel1999070165,8"/>: ,,D'où jaillit toute vive une âme qui revient.''</note>
+    </notes>
     <source pages="17"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<nonum><small><right><i>Une âme, qui revient à Baudelaire</i></right></small></nonum>
+<nonum><small><right><i><span lang="fr">Une âme, qui revient à Baudelaire</span></i></right></small></nonum>
 O det hvide Hus bag de høje, sorte Popler
 og den vaade Nat med den hvide Maanes Lampe
 - den vaade Tøvejrsnat, da Jordens Digler bobler
@@ -203,7 +206,7 @@ Jeg vandrer kendte Veje - og er, som fordum, ene,
 og mit Hjærte er sygt af døde Dages Duft.
 
 Jeg standser ved et Gærde ind til en gammel Have,
-eg standser, jeg stirrer, bedrøvet og alene;
+jeg standser, jeg stirrer, bedrøvet og alene;
 jeg aander en Liglugt fra døde Tiders Grave
 og drømmer om en Kvinde under disse sorte Grene.
 
@@ -220,13 +223,13 @@ og et Møde med en Kvinde under disse nøgne Grene . . .
     <title>Vinterskumring</title>
     <firstline>Jeg ser, hvor Himlen blaaner bag min Rude</firstline>
     <source pages="18"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Jeg ser, hvor Himlen blaaner bag min Rude.
 En regngraa Dag i Skumring blomstrer bort.
-Violblaa løfter Himjen sig derude,
+Violblaa løfter Himlen sig derude,
 en Kæmpeblomst, hvis Voxetid er kort.
 
 Himmelviolens violette Blade
@@ -252,7 +255,7 @@ som Blod af tvende vaandefulde Vunder.
     <title>Lilith</title>
     <firstline>Lilith stod under Livets Træ</firstline>
     <source pages="19-20"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -278,7 +281,7 @@ væded og vanded Træets Rod.
 
 Lilith smutted i Slangeham
 gennem Edens Lunde -
-Adam lytted i Længsel f og Skam
+Adam lytted i Længsel og Skam
 til Løvet, der hvisked som Slanger med hvislende Munde.
 </poetry>
 </body>
@@ -289,7 +292,7 @@ til Løvet, der hvisked som Slanger med hvislende Munde.
     <title>Februar</title>
     <firstline>Idag er den omme, den graa og onde Vinter</firstline>
     <source pages="21-22"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -324,7 +327,7 @@ i et Dalstrøg mod Sønden, som blaaner af Violer.
     <title>Lyse Nætter</title>
     <firstline>Jeg ligger søvnløs. Kamrets klumre Luft</firstline>
     <source pages="23"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -359,13 +362,13 @@ naar Bøgens brune Foraarsskove løves.
     <title>Dansk</title>
     <firstline>Her flyder Floder mellem flade Enge</firstline>
     <source pages="24"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Her flyder Floder mellem flade Enge,
 og vaarkold hvælver Himlen sig derover.
-Paa spinkle Træer 'de slappe Blade hænge
+Paa spinkle Træer de slappe Blade hænge
 som Fugle, der med sænket Vinge sover.
 
 I fugtigt Græs de gustne Liljer gyser
@@ -386,7 +389,7 @@ ved Foraarstid paa Høst og Frost og Død.
     <title>Døden</title>
     <firstline>Igennem lyse Fuglestemmers Vrimmel</firstline>
     <source pages="25-26"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -397,10 +400,10 @@ den sejler tungt og raaber hæst om Lig.
 
 Og medens Vaaren skrider frem i Slæb
 af Bøgeløv og Blomster over Sletter,
-det er mig, som jeg vandred. gennem Nat
+det er mig, som jeg vandred gennem Nat
 mer mørketung end alle Vintrens Nætter.
 
-Min Tanke famler, og min F’od er mat,
+Min Tanke famler, og min Fod er mat,
 og alle Lamper slukkes, som jeg tændte.
 Jeg sidder ene i den dybe Nat
 paa Tærsklen til det store Ubekendte.
@@ -422,10 +425,10 @@ en fattig Hilsen - ak, den allersidste . . .
 
 <text id="joergensenj2024061613">
 <head>
-    <title>St. Hans Nat</title>
+    <title>Sankt Hans Nat</title>
     <firstline>Skærsommernattens Luft af Vellugt stribes</firstline>
     <source pages="27-28"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -436,7 +439,7 @@ og drager kysk som Duft af tvættet Lin.
 
 Den hede Luft er tæt og tung af Em,
 og Søens blege Blik i Taage blindes.
-Om Maanens røde, rindende. Hexe-Øje
+Om Maanens røde, rindende Hexe-Øje
 den tykke Dis til svulne Ringe tvindes.
 
 Jeg vandrer ind ad smaa og smalle Gader.
@@ -464,7 +467,7 @@ Og Somrens Sølv i Draaber fra mig rinder.
     <title>Arkturus</title>
     <firstline>Der blinker en enlig Stjærne</firstline>
     <source pages="29"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -491,13 +494,13 @@ i Længslernes lyse Nat . . .
     <title>Hjemkomst</title>
     <firstline>Saa vandrer jeg atter den gamle Vej</firstline>
     <source pages="30"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Saa vandrer jeg atter den gamle Vej
 op over de bølgende Banker,
-og Nattergalen'sætter Musik
+og Nattergalen sætter Musik
 til mine sørgmodige Tanker.
 
 Mit Hjærte drømmer saa sært og saart,
@@ -520,7 +523,7 @@ saa lidet derom du vidste . . .
     <title>Aftenlyd</title>
     <firstline>Nu synger Drosler i den silde Aften</firstline>
     <source pages="31"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -549,7 +552,7 @@ de længselsfulde Fugles Fløjter lyder.
     <title>Naturen</title>
     <firstline>De mørke Graner tungt omkring mig skygged</firstline>
     <source pages="32-33"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -601,7 +604,7 @@ Men Skyggen venter - Graneskovens Skygger . . .
     <title>Pan</title>
     <firstline>Jeg ser en Mark, et øde Vand</firstline>
     <source pages="34"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -612,7 +615,7 @@ mod Middagshimlens Dis.
 
 Det suser over mig i Træer
 og gennem Markens Straa.
-Jeg skimter Solskinsbølgars Hær
+Jeg skimter Solskinsbølgers Hær
 henover Vandet gaa.
 
 Det øde Vand, den mørke Kyst
@@ -633,12 +636,12 @@ fra Jordens dybe Hjærte.
     <title>Nymfer</title>
     <firstline>Det suser tungt i store Træer</firstline>
     <source pages="35"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Det suser tungt i store Træer,
-og Skovéns Skygge flænges
+og Skovens Skygge flænges
 af tusend Solskinsgnisters Hær,
 som over Løvet slænges.
 
@@ -665,7 +668,7 @@ i disse lyse Lunde.
     <title>Kvinder</title>
     <firstline>Paa Somrens Stier blege Minder møder</firstline>
     <source pages="36-37"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -675,7 +678,7 @@ og i mit Hjærte gammel Elskov bløder -
 en Sygdom lig, som ingen Kunst forandrer.
 
 En er der, som i Morgensolskin kommer,
-saa glad og fri, saa blød og'ung og slank,
+saa glad og fri, saa blød og ung og slank,
 en grøn og duggfrisk junifrodig Sommer.
 - Én er der, middagsmoden, mørk og rank,
 
@@ -707,7 +710,7 @@ i Tungsindsskyggen af dit milde Minde.
     <title>Stjærnenat</title>
     <firstline>Jeg vandrer silde i den mørke Have</firstline>
     <source pages="38-39"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -727,7 +730,7 @@ Ensformig, evig ruller Livets Strøm.
 Aar avler Aar, som Bølge Bølge føder.
 
 Jeg ser de blege Stjærner langsomt slukkes
-som Eestblus i det sølvblaa Sommergry,
+som Festblus i det sølvblaa Sommergry,
 og dybt i Morgenrødens Blodhav dukkes
 de sidste Lys i Nattens tavse By.
 
@@ -749,12 +752,12 @@ O Gud, hvorfor, hvorfor? Hvorfor, o Gud?
     <title>Havet</title>
     <firstline>Det regned stille fra en Graavejrshimmel</firstline>
     <source pages="40-41"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Det regned stille fra en Graavejrshimmel,
-og Landets Linjer Iaa i Graat begravet.
+og Landets Linjer laa i Graat begravet.
 Da vandred jeg fra Tages triste Stimmel
 ad lange Veje bort - og naaede Havet.
 
@@ -791,7 +794,7 @@ som Myggen favnes af et evigt Rav.
     <title>Høstvind</title>
     <firstline>Jeg vandrer hastigt i den køle Dag</firstline>
     <source pages="42-43"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -816,7 +819,7 @@ jeg bæres højt som Skyer paa Høstens Vind
 til Lyd af Markers Sang og Skoves Brus.
 
 Du stærke Løvfaldstid, hvis kolde Luft
-er om mig, Og hvis stolte Røst jeg hører!
+er om mig, og hvis stolte Røst jeg hører!
 Min Tanke svulmer, af Din Storhed fuld,
 mit Hjærte som et Hav i Storm sig rører.
 
@@ -826,14 +829,14 @@ den store Harpe, i hvis Stamme-Strænge
 med Haand af Storm Du tungt og mægtigt griber.
 
 Du vældige, ak lad mig ej fortabes!
-Du Stormes Herre, giv min Sjæl Din Stormi
+Du Stormes Herre, giv min Sjæl Din Storm!
 Lad af mit Hjærtes Søvn en Skønhed skabes
 som Vaar af Vintrens døde Larveform!
 
 Ak, giv mig Magt og giv mig Mod som Du,
 o Høst, o Storm, Du legemløse Ørn!
 at stige stolt mod Evighedens Sol
-og flyve ensom over Jordens. Børn.
+og flyve ensom over Jordens Børn.
 </poetry>
 </body>
 </text>
@@ -843,7 +846,7 @@ og flyve ensom over Jordens. Børn.
     <title>Bekendelse</title>
     <firstline>Den halve Maane sank bag sorte Træer</firstline>
     <source pages="44-45"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -885,7 +888,7 @@ o Afgrundsdyb, der ængster og beruser!
 
 Hvor skal, o Evighed, fra Dig vi rømme?
 I Dyrets Puls Dit store Hjærte banker;
-Du higer gennem gyldne Rlantedrømme
+Du higer gennem gyldne Plantedrømme
 
 mod Sol og Luft og rene, lyse Tanker.
 Og hvor min Sjæl sig end i Verden vender,
@@ -905,7 +908,7 @@ o Evighed! jeg er i Dine Hænder!
         <note>Gendigtning af Mallarmés <xref type="translation" poem="mallarme2024061702"/>.</note>
     </notes>
     <source pages="46-48"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <quote margin-left="25%" font-size="small">
@@ -913,7 +916,7 @@ o Evighed! jeg er i Dine Hænder!
 du Vand, af Lede i din Ramme størknet,
 hvor ofte sad jeg ikke, naar det mørkned,
 forladt af Drømme, søgende de Minder,
-der er'som Løv, jeg i din Dybde finder,
+der er som Løv, jeg i din Dybde finder,
 og saae min Skygge, fjærn og underbar.
 Men Rædsel! ofte i dit strænge Glar
 erkendte jeg min golde, nøgne Drøm.
@@ -927,14 +930,14 @@ mens Urtids-Mørke dækker Jordens Kyster!
 Og I, af hvem mit Øjes Amethyster
 melodisk Glans og sangklar Tone suger,
 I ædle Stene! blanke Malm, der knuger
-dig skæbnetungt omkring mit svære Haarl
+dig skæbnetungt omkring mit svære Haar!
 Og du, o Kvinde, født i fjærne Aar,
 i onde Seklers sibyllinske Huler,
 du vil, mit nøgne Legems hvide Lilje
 med Vellystduft, en Dødelig til Vilje,
 skal løfte sig af mine Klæders Blade,
 men vid, at blot det lune Sommerblaa,
-hvori sig Kvinder gæi;ne nøgent bade,
+hvori sig Kvinder gærne nøgent bade,
 mig i min stjærneskælvende Kyskhed saae,
 da maatte jeg dø!
 
@@ -968,7 +971,7 @@ med Blik som Venusstjærnen, naar den dirrer
 bag Løv, der vaander sig og sagte sukker?
 Did gad jeg drage.
                 Tænd - et barnligt Spil -
-de Kærter dér, hvis Vox vfed svage Ild
+de Kærter dér, hvis Vox ved svage Ild
 neddrypper over Guld, en sælsom Graad.
 Og . . .
 
@@ -989,19 +992,19 @@ og mærker sine Drømmes Pragtskrud sprænges.
 
 <text id="joergensenj2024061626">
 <head>
-    <title>Længsel . . .</title>
-    <toctitle>Længsel . . .</toctitle>
+    <title>Længsel</title>
+    <toctitle>Længsel</toctitle>
     <subtitle>(Efter Stéphane Mallarmé)</subtitle>
-    <firstline>I mod din Pande, Søster, der blid og stille drømmer</firstline>
+    <firstline>Imod din Pande, Søster, der blid og stille drømmer</firstline>
     <notes>
         <note>Gendigtning af Mallarmés <xref type="translation" poem="mallarme1999090507"/>.</note>
     </notes>
     <source pages="49"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-I mod din Pande, Søster, der blid og stille drømmer
+Imod din Pande, Søster, der blid og stille drømmer
 som et Efteraarsvand, hvori visne Blade svømmer,
 og mod dit Engleøjes flakkende Himmelblik
 min hvide Længsel stiger som et Springvands Musik,
@@ -1018,13 +1021,14 @@ som gyldnes blegt af Straaler, der langt og langsomt dø.
 <text id="joergensenj2024061627">
 <head>
     <title>Den evige Strid</title>
-    <subtitle>(Efter Stuart Merril)</subtitle>
+    <subtitle>(Efter Stuart Merrill)</subtitle>
     <firstline>Nu græder Aftenhimlen over Middagssolens Død</firstline>
     <notes>
         <note>Gendigtning af Stuart Merrills <xref type="translation" poem="merrill2026080101"/>.</note>
     </notes>
     <source pages="50-52"/>
-    <quality>korrektur1,kilde,side</quality>
+    <!-- TODO: https://fr.wikisource.org/wiki/Les_Gammes/L%27Éternel_dialogue -->
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1098,7 +1102,7 @@ og Dødssøvnens Rædsel i Kisten under Mulde.
 O Sejr, jeg skal genfødes i nye Rosers Glød!
 
 <nonum><center><sc>Aanden </sc></center></nonum>
-O Verdens Nætter og Dage! o Verdens Liv og Dødi
+O Verdens Nætter og Dage! o Verdens Liv og Død!
 </poetry>
 </body>
 </text>
@@ -1108,7 +1112,7 @@ O Verdens Nætter og Dage! o Verdens Liv og Dødi
     <title>Træthed</title>
     <firstline>Jeg længes mod et lyst og luftigt Hospital</firstline>
     <source pages="53"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1135,7 +1139,7 @@ en Fønix lig, der opstaar af sin Fortids brudte Skal.
     <title>Sommersang</title>
     <firstline>Søde Snerrers Sommerduft</firstline>
     <source pages="54"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1163,7 +1167,7 @@ og min Sjæl er underfuld.
     <firstline>Jeg har dykket min Sjæl i et Maaneskinsbad</firstline>
     <source pages="55"/>
     <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1194,7 +1198,7 @@ er Ormenes Bid mod min Kistes Fjæl.
     <toctitle>Aften-Tungsind, I-II</toctitle>
     <firstline>Verden ligger saa graa og trist</firstline>
     <source pages="56-57"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1246,7 +1250,7 @@ i søgrøn Luft bag Solnedgangens Banker.
     <title>Aftenfred</title>
     <firstline>Fra Aftenhimlens gule Blomsterbræm</firstline>
     <source pages="58"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1257,7 +1261,7 @@ i lange Sværme som en Flugt af Blade.
 
 Jeg ser de sorte Fugle flagre frem
 som Blade, der i Luftens Guldhav strømmer.
-Hen over Jordens dunkle Dal eje svømmer:
+Hen over Jordens dunkle Dal de svømmer:
 et Sjæletog paa Vejen til sit Hjem.
 
 Det gyldne Skær af Dagens By, der brænder,
@@ -1277,7 +1281,7 @@ og som et sølvhvidt Vand den blege Egn.
         <note>Mottoet er en variant af Claussens <xref poem="claussen2024061601"/> fra <i>Frøken Regnvejr. Et Hyrdespil</i>, <i>Tilskueren</i>, april 1894.</note>
    </notes>
     <source pages="59-62"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <quote margin-left="15%" font-size="small">
@@ -1293,7 +1297,7 @@ en tropisk Drøm om at dø og fornyes, som viljeløst Draaberne vil.
 Det var i det gamle København, i Løvstræde var det vist,
 der boede du, der skrev du Vers, paa en hyggelig trediesals Kvist;
 røde Tage og Skorstene graa, Gavle og Spire man saae
-og højt over Helligaandskirkens Taarn.Himlen saa foraarsblaa.
+og højt over Helligaandskirkens Taarn. Himlen saa foraarsblaa.
 
 Jeg husker, det var en Gang i April, en Aften med Varme og Væde,
 da var i din Stue og ved dit Bord de gamle Venner tilstede,
@@ -1318,10 +1322,10 @@ det havde aldrig vor Isse naaet med sin Lykkes livsalige Salve
 - vor Elskov var bleg, vort Hjærte delt, vore Længsler svage og halve.
 
 Du tav, og Stuen blev stille og mørk. Et hurtigt Farvel vi bøde.
-Men endnu, tænker jeg paa hin Nat, begynder mil Hjærte at bløde.
+Men endnu, tænker jeg paa hin Nat, begynder mit Hjærte at bløde.
 
 Saa gik der Aar, og du rejste bort. Jeg sad i Landet tilbage.
-Nu kommer det hjem, hint gamle'Digt, et Minde om døde Dage.
+Nu kommer det hjem, hint gamle Digt, et Minde om døde Dage.
 Nej - intet Minde om døde Ting! men Skønhed, der evig lever,
 og Versets straalende Gloriering om Skønhedens Aasyn svæver.
 Skønhed, født af den danske Jord og modnet i sydlig Sommer,
@@ -1334,7 +1338,7 @@ den, der skal vaagne ved Lærkesang til Morgenens evige Under.
 
 Vær hilset du, der i sydlig Luft, trods Klangen af Kastagnetter,
 bar i dit Hjærte Lindenes Duft og husked de lyse Nætter,
-liusked, hvor sælsomt Vandet randt hen under den gamle Bro,
+husked, hvor sælsomt Vandet randt hen under den gamle Bro,
 klukked og klaged og nynned ved Nat for ensomme talende To -
 husked de hjemlige Vandes Sang og Strømmenes dæmpede Spil,
 «en Sang og en Drøm om at dø og fornyes som viljeløst Draaberne vil».
@@ -1355,7 +1359,7 @@ April 1894
     <title><num>I.</num>Vandet risler med sagte Lyd</title>
     <firstline>Vandet risler med sagte Lyd</firstline>
     <source pages="65"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1382,14 +1386,14 @@ og endnu Arkturus blinker.
     <title><num>II.</num>Foraarshimlen er ren og blaa</title>
     <firstline>Foraarshimlen er ren og blaa</firstline>
     <source pages="66"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Foraarshimlen er ren og blaa,
 det dufter af solvarm Muld.
 I Havens Bede staar Vinca blaa
-og Paaskeljljernes Guld.
+og Paaskeliljernes Guld.
 
 Buskene grønnes i Foraarsdag;
 Med Knopper staar Frugthavens Træer
@@ -1409,7 +1413,7 @@ som en Blomst, der i Lyset gror.
     <title><num>III.</num>Min Sjæl er som en enlig Bæk</title>
     <firstline>Min Sjæl er som en enlig Bæk</firstline>
     <source pages="67"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1436,7 +1440,7 @@ og en Gang naaer den Evighedens Vande.
     <title><num>IV.</num>Solskinslyse Foraarsskove</title>
     <firstline>Solskinslyse Foraarsskove</firstline>
     <source pages="68"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1460,10 +1464,10 @@ føler jeg, at Gud er nær.
 
 <text id="joergensenj2024061638">
 <head>
-    <title><num>V.</num>Der skinner Sol i Haver</title>
+    <title><num>V.</num>Nu skinner Sol i Haver</title>
     <firstline>Nu skinner Sol i Haver</firstline>
     <source pages="69"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1490,7 +1494,7 @@ af Sjælens visne Bund.
     <title><num>VI.</num>Det var i de lyse Skove</title>
     <firstline>Det var i de lyse Skove</firstline>
     <source pages="70-72"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1542,7 +1546,7 @@ og Jubel i Hjærtet boer.
 Thi Himmerigs Rige fødes
 paa Jorden hver lysende Vaar
 og over min Sjæl som en Himmel
-af duftende' Stjærner staar.
+af duftende Stjærner staar.
 </poetry>
 </body>
 </text>
@@ -1552,7 +1556,7 @@ af duftende' Stjærner staar.
     <title><num>VII.</num>Walpurgisnat, Walpurgisnat</title>
     <firstline>Walpurgisnat, Walpurgisnat!</firstline>
     <source pages="73-74"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1592,12 +1596,12 @@ o fjærne, bløde Hænder . . .
     <title><num>VIII.</num>Hvi brænder saa hedt dit sorte Blik</title>
     <firstline>Hvi brænder saa hedt dit sorte Blik?</firstline>
     <source pages="75"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Hvi brænder saa hedt dit sorte Blik?
-X hvi blusser din blodige Mund?
+hvi blusser din blodige Mund?
 Du drager som sagte, sørgmodig Musik
 i en lun og skumrende Stund.
 
@@ -1619,7 +1623,7 @@ og hvor jeg for dig har grædt . . .
     <title><num>IX.</num>Der roer mig en Baad forbi</title>
     <firstline>Der roer mig en Baad forbi</firstline>
     <source pages="76-77"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1658,10 +1662,10 @@ Baaden ensom forsvandt.
 
 <text id="joergensenj2024061643">
 <head>
-    <title><num>X.</num>Unge Kvinder vandrer forbi</title>
+    <title><num>X.</num>Unge Kvinder vandre forbi</title>
     <firstline>Unge Kvinder vandre forbi</firstline>
     <source pages="78-79"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1698,7 +1702,7 @@ Det dufter af Løv og lyser af Blomster klare.
     <title><num>XI.</num>Jeg sidder blandt stille Planter</title>
     <firstline>Jeg sidder blandt stille Planter</firstline>
     <source pages="80"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1722,10 +1726,10 @@ gennem mit Hjærte gaar.
 
 <text id="joergensenj2024061645">
 <head>
-    <title><num>XII.</num>De hvide Kastanjer, de gyldne Lønne</title>
+    <title><num>XII.</num>De hvide Kastanier, de gyldne Lønne</title>
     <firstline>De hvide Kastanier, de gyldne Lønne</firstline>
     <source pages="81"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1752,7 +1756,7 @@ strømmer og vælder med syngende Vand.
     <title><num>XIII.</num>Vandet strømmer i blaalig Dag</title>
     <firstline>Vandet strømmer i blaalig Dag</firstline>
     <source pages="82-83"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1789,7 +1793,7 @@ og spejler Din Verdens Tag.
     <title><num>XIV.</num>Den døde Tid er ej forbi</title>
     <firstline>Den døde Tid er ej forbi</firstline>
     <source pages="84-85"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1831,12 +1835,12 @@ af Evighed.
     <title><num>XV.</num>Fra Tankers Trældom og Tvivl, der trætter</title>
     <firstline>Fra Tankers Trældom og Tvivl, der trætter</firstline>
     <source pages="86-88"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Fra Tankers Trældom og Tvivl, der trætter,
-kommer jeg til dig, o SlOov, som skinner
+kommer jeg til dig, o Skov, som skinner
 af Sol, der ned gennem Løvet rinder
 i grønlig Lysning, i gyldne Pletter.
 
@@ -1904,7 +1908,7 @@ dybt i mit drømmende Hjærtes Skove.
     <title>Indledning</title>
     <firstline>Kaldæa, Tvivlens Land, hvor Hyrden stirred</firstline>
     <source pages="90"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1927,7 +1931,7 @@ er aabenbaret som vort Hjærtes Hjem.
     <firstline>Saa er jeg atter i de gamle Bøger</firstline>
     <source pages="91"/>
     <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1961,7 +1965,7 @@ den dybe Klang af Davids Harpestrænge.
     <firstline>Den dybe Klang af Davids Harpestrænge</firstline>
     <source pages="92"/>
     <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1976,7 +1980,7 @@ den bitre Bod for hvad min Lyst forbrød
 O Solskin over Verdens fagre Enge!
 Hvi hvisler Slangen fra dit Blomsterskød?
 Hvi fylder Muld den Frugt, som rund og rød
-jeg ser imellem gyldne Blad§ hænge?
+jeg ser imellem gyldne Blade hænge?
 
 Hvi er ej Sandhed under Skønhed gemt,
 og Dyden ej i Visdoms lange Klæder?
@@ -1995,7 +1999,7 @@ saa glædes Herren, mens vort Hjærte græder.
     <firstline>Ja, Herren glædes, naar vort Hjærte græder</firstline>
     <source pages="93"/>
     <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2012,7 +2016,7 @@ mens Livet øser ud med fulde Hænder
 sin Skat af Længsel og af dybe Glæder.
 
 O var det derfor, Du til Jorden kom,
-Menneskesøn fra Galilæas Højer
+Menneskesøn fra Galilæas Høje?
 Er det Din Vilje, og er det Din Dom,
 
 at Lys skal slukkes, Hjærterne sig bøje,
@@ -2028,7 +2032,7 @@ O Frelser med det store, klare Øje!
     <firstline>O Frelser med det store, klare Øje!</firstline>
     <source pages="94"/>
     <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2061,7 +2065,7 @@ hans Navn skal ogsaa tælles blandt Fortabtes?
     <firstline>Og han skal ogsaa tælles blandt Fortabte</firstline>
     <source pages="95"/>
     <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2094,7 +2098,7 @@ Og over Baalet ser jeg Himlen aaben:
     <firstline>I Blod og Luer hærdes Mine Vaaben</firstline>
     <source pages="96"/>
     <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2127,7 +2131,7 @@ Og over Baalet ser jeg Himlen aaben:
     <firstline>Et viet Vand til Fred for dem, som knæle . . .</firstline>
     <source pages="97"/>
     <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2135,7 +2139,7 @@ Og over Baalet ser jeg Himlen aaben:
 
 Et viet Vand til Fred for dem, som knæle . . .
 Men Freden var det, hine vilde øde,
-som paa et Baai for deres Tanker døde
+som paa et Baal for deres Tanker døde
 og stod blandt Luer, stolte, sejersæle.
 
 De flytted kendte Grænsers sikre Pæle.
@@ -2160,7 +2164,7 @@ og Kødet skriger, medens Verden vakler.
     <firstline>Ja, Satan jubler, medens Verden vakler</firstline>
     <source pages="98"/>
     <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2193,7 +2197,7 @@ som er tilfals for den, der kan betale . . .
     <firstline>O du Guds Lam, forbarm Dig over os</firstline>
     <source pages="99"/>
     <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2213,7 +2217,7 @@ Jeg vaagner, Herre! hver Gang Dagen gryer,
 og hører Englens Ord i Klokkens Stemme,
 der hilser Lyset mellem Purpurskyer.
 
-Da fylder gylden Fred mit Jdjærtes Gemme.
+Da fylder gylden Fred mit Hjærtes Gemme.
 Men der er dem, som bryder ind og stjæler,
 og ak! forgæves i Dit Hus jeg knæler.
 </poetry>
@@ -2226,7 +2230,7 @@ og ak! forgæves i Dit Hus jeg knæler.
     <firstline>O Herre! jeg begærer kun at knæle!</firstline>
     <source pages="100"/>
     <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2259,7 +2263,7 @@ og gennem Nattens Dyb dens Stemme hvisler.
     <firstline>Det hvisker gennem Nattens dybe Grunde</firstline>
     <source pages="101"/>
     <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2292,11 +2296,11 @@ Det hvisker gennem Nattens dybe Grunde:
     <firstline>Ja, Dagen aabner for den vide Verden</firstline>
     <source pages="102"/>
     <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<nonum><small><right><i>Similis factus surn pellicano</i></right></small></nonum>
+<nonum><small><right><i>Similis factus sum pellicano</i></right></small></nonum>
 <nonum><small><right><i>solitudinis; factus sum sicut</i></right></small></nonum>
 <nonum><small><right><i>nycticorax in domicilio</i></right></small></nonum>
 
@@ -2327,7 +2331,7 @@ Det er det nye Testamentes Vin!
     <firstline>Den nye Visdoms galdebitre Vin</firstline>
     <source pages="103"/>
     <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2360,7 +2364,7 @@ og al min Sorg var under Sol begravet.
     <firstline>O Verdens Skønhed! Søer, Stæder, Bjærge</firstline>
     <source pages="104"/>
     <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2374,7 +2378,7 @@ Du var mig Maalet for min Pilgrimsgang
 Forjag, o Skønhed, alle dunkle Dværge,
 som pinte mig, en Tid saa tung og lang,
 vær Du min Stav og vær min Støttestang
-paa Livets Veje og i Dødens' Færge!
+paa Livets Veje og i Dødens Færge!
 
 Ej lukkes Himlens Dør for Himlens Engel.
 Der er en Naadens Port for dem, der lede,
@@ -2393,7 +2397,7 @@ den Hostie, hvoraf vort Hjærte lever.
     <firstline>Saa er det Nat. Jeg staar paa Bjærgets Tinde</firstline>
     <source pages="105"/>
     <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2432,7 +2436,7 @@ og som jeg troer paa, her i mit Kaldæa.
     <subtitle>Til den, der har læst</subtitle>
     <firstline>Slet det Onde med det Gode</firstline>
     <source pages="106-108"/>
-    <quality>korrektur1,kilde,side</quality>
+    <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2448,7 +2452,7 @@ alting, alting jeg bekender.
 
 Jeg gik vild i onde Egne,
 hvor de dømte Aander færdes,
-hvor hvert Glimt af' Gud maa blegne,
+hvor hvert Glimt af Gud maa blegne,
 og hver Sjæl i Nat forhærdes.
 
 Mulmets Fugle svirred om mig,
