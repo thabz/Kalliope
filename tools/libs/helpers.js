@@ -320,11 +320,7 @@ const resizeImage = async (inputfile, outputfile, maxWidth, options = {}) => {
       resizeOptions.fit = options.fit;
     }
     const image = sharp(inputfile).resize(resizeOptions);
-    if (options.format === 'webp') {
-      image.webp({ quality: options.quality ?? 82 });
-    } else {
-      image.jpeg({ quality: options.quality ?? 82 });
-    }
+    image.jpeg({ quality: options.quality ?? 82 });
     await image.toFile(outputfile);
     return outputfile;
   } catch (err) {

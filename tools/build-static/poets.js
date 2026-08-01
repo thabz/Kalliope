@@ -44,29 +44,19 @@ const knownPoetLanguages = new Set([
 
 const isKnownPoetLanguage = lang => knownPoetLanguages.has(lang);
 
-const create_poet_square_thumbs = (poetId, square_path) => {
+const create_poet_square_thumb = (poetId, square_path) => {
   const path = `public/images/${poetId}/${square_path}`;
   const destFolder = `public/generated/images/${poetId}/social`;
   const jpegPath = `${destFolder}/${poetId}.jpg`;
-  const webpPath = `${destFolder}/${poetId}.webp`;
   const destinationModifiedTime = fileModifiedTime(jpegPath);
   if (
     destinationModifiedTime == null ||
-    fileModifiedTime(webpPath) == null ||
     fileModifiedTime(path) > destinationModifiedTime
   ) {
     safeMkdir(destFolder);
     resizeImage(path, jpegPath, 600, { fit: 'cover', quality: 82 });
-    resizeImage(path, webpPath, 256, {
-      fit: 'cover',
-      format: 'webp',
-      quality: 82,
-    });
   }
-  return {
-    jpeg: `/generated/images/${poetId}/social/${poetId}.jpg`,
-    webp: `/generated/images/${poetId}/social/${poetId}.webp`,
-  };
+  return `/generated/images/${poetId}/social/${poetId}.jpg`;
 };
 
 let _all_poet_ids = null;
@@ -165,7 +155,6 @@ const build_poets_first_pass = collected => {
     }
 
     let square_portrait = null;
-    let square_portrait_webp = null;
     const has_portraits = fileExists(`fdirs/${id}/portraits.xml`);
     if (has_portraits) {
       const portraitsDoc = loadXMLDoc(`fdirs/${id}/portraits.xml`);
@@ -173,9 +162,7 @@ const build_poets_first_pass = collected => {
         .map(p => safeGetAttr(p, 'square-src'))
         .filter(s => s != null);
       if (squares.length > 0) {
-        const squarePortraits = create_poet_square_thumbs(id, squares[0]);
-        square_portrait = squarePortraits.jpeg;
-        square_portrait_webp = squarePortraits.webp;
+        square_portrait = create_poet_square_thumb(id, squares[0]);
       }
     }
     const has_square_portrait = square_portrait != null;
@@ -232,7 +219,6 @@ const build_poets_first_pass = collected => {
       lang,
       type,
       square_portrait,
-      square_portrait_webp,
       name: {
         firstname,
         lastname,

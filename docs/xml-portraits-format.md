@@ -134,18 +134,16 @@ Remote URL bygges i `tools/build-static/museums.js`.
 
 ## Square portraits
 
-`square-src` bruges som kilde til to genererede billeder:
+`square-src` bruges som kilde til et genereret billede:
 
 ```text
 public/images/<id>/social/<id>.jpg
 ```
 
-JPEG-varianten er 600 × 600 px og bruges til Open Graph og Twitter Cards.
-WebP-varianten er højst 256 × 256 px og bruges som sideikon i sidens overskrift;
-JPEG-varianten er fallback via `<picture>`. Kildebilledet skal derfor være et
-kvadrat på højst 600 × 600 px, gemt som JPEG uden overflødige metadata og med
-anbefalet kvalitet omkring 82. Hold kildefilen lille; normalt bør den være under
-350 KiB.
+JPEG-billedet er 600 × 600 px og bruges til Open Graph, Twitter Cards og som
+sideikon i sidens overskrift. Kildebilledet skal derfor være et kvadrat på højst
+600 × 600 px, gemt som JPEG uden overflødige metadata og med anbefalet kvalitet
+omkring 82. Hold kildefilen lille; normalt bør den være under 350 KiB.
 
 Regler:
 
