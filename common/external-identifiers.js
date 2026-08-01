@@ -105,14 +105,18 @@ const externalIdentifierSources = [
     (value) =>
       `https://kvindebiografiskleksikon.lex.dk/${encodeURIComponent(value)}`,
   ),
+  // Wikidata P12386 is Dansk Forfatterleksikon ID. Named IDs live in
+  // 1850bib; foreign-author IDs such as u757 live in 1850u.
   source(
-    'litteraturpriser-dk',
+    'danskforfatterleksikon-dk',
     'reference',
     120,
-    'Litteraturpriser.dk',
-    'LP',
-    (value) =>
-      `https://www.litteraturpriser.dk/aut/${encodeURIComponent(value)}.htm`,
+    'Dansk Forfatterleksikon',
+    'DFL',
+    (value) => {
+      const section = /^u\d+$/.test(value) ? '1850u' : '1850bib';
+      return `https://danskforfatterleksikon.dk/${section}/${encodeURIComponent(value)}.htm`;
+    },
   ),
   source(
     'runeberg-org',

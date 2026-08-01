@@ -196,7 +196,7 @@ portrætter, artwork, bio eller mentions.
   <teaterleksikon-lex-dk>H.C._Andersen</teaterleksikon-lex-dk>
   <biografisk-leksikon-lex-dk>H.C._Andersen</biografisk-leksikon-lex-dk>
   <kvindebiografisk-leksikon-lex-dk>Benedicte_Arnesen_Kall</kvindebiografisk-leksikon-lex-dk>
-  <litteraturpriser-dk>AHCAndersen</litteraturpriser-dk>
+  <danskforfatterleksikon-dk>AHCAndersen</danskforfatterleksikon-dk>
   <runeberg-org>andersen</runeberg-org>
   <gutenberg-org>2298</gutenberg-org>
 </identifiers>
@@ -215,7 +215,7 @@ Almindelige felter:
 - `<teaterleksikon-lex-dk>`
 - `<biografisk-leksikon-lex-dk>`
 - `<kvindebiografisk-leksikon-lex-dk>`
-- `<litteraturpriser-dk>`
+- `<danskforfatterleksikon-dk>`: Dansk Forfatterleksikon-id fra Wikidata-egenskaben P12386.
 - `<runeberg-org>`
 - `<gutenberg-org>`
 

@@ -8,4 +8,12 @@ describe('Wikidata sync', () => {
       "addIdentifierNode(externalIds, 'P7939', 'kvindebiografisk-leksikon-lex-dk', doc, new_identifiers)",
     );
   });
+
+  it('maps Dansk Forfatterleksikon to its info.xml identifier', () => {
+    const script = readFileSync('tools/sync-wikidata.rb', 'utf8');
+
+    expect(script).toContain(
+      "addIdentifierNode(externalIds, 'P12386', 'danskforfatterleksikon-dk', doc, new_identifiers)",
+    );
+  });
 });
