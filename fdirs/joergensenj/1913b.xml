@@ -182,16 +182,19 @@ og ak! min Sjæl er gold som denne øde Jord.
 </body>
 </text>
 
-<text id="joergensenj2024061606" ignore-tests="single-circumflex-a-in-text">
+<text id="joergensenj2024061606">
 <head>
     <title>Vinter</title>
     <firstline>O det hvide Hus bag de høje, sorte Popler</firstline>
+    <notes>
+        <note>Mottoet er en allusion til Charles Baudelaires <xref poem="baudel1999070165,8"/>: ,,D'où jaillit toute vive une âme qui revient.''</note>
+    </notes>
     <source pages="17"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<nonum><small><right><i>Une âme, qui revient à Baudelaire</i></right></small></nonum>
+<nonum><small><right><i><span lang="fr">Une âme, qui revient à Baudelaire</span></i></right></small></nonum>
 O det hvide Hus bag de høje, sorte Popler
 og den vaade Nat med den hvide Maanes Lampe
 - den vaade Tøvejrsnat, da Jordens Digler bobler
@@ -2096,7 +2099,7 @@ Og over Baalet ser jeg Himlen aaben:
 </head>
 <body>
 <poetry>
-<nonum><small><right><i>Speculum justitiæ?</i></right></small></nonum>
+<nonum><small><right><i>Speculum justitiœ?</i></right></small></nonum>
 
 «I Blod og Luer hærdes Mine Vaaben,
 «og hver som vandrer ad den trange Vej,
@@ -2205,7 +2208,7 @@ og svulmer snart paany i Tvivl og Trods.
 O du Guds Lam, forbarm Dig over os,
 som søger, spørger, samler, prøver, læmper.
 <i>O Jesu, tu qui regnas nunc et semper</i>
-<i>et in æternum - Christe, audi nos!</i>
+<i>et in œternum - Christe, audi nos!</i>
 
 Jeg vaagner, Herre! hver Gang Dagen gryer,
 og hører Englens Ord i Klokkens Stemme,
