@@ -1,0 +1,262 @@
+# Korrektur mod facsimile
+
+Denne vejledning beskriver en praktisk arbejdsgang for agenter, der skal
+færdiggøre eller kontrollere en transskription mod et facsimile. Den supplerer
+de redaktionelle principper i `docs/kalliope-masterplan.md` og formatreglerne i
+`docs/xml-work-format.md`.
+
+Målet er ikke blot en tekst uden oplagte OCR-fejl. Resultatet skal bevare
+kildens ordlyd, verslinjer, strofer, overskrifter, tegnsætning og relevante
+typografiske træk og samtidig være gyldigt Kalliope-XML.
+
+## Grundregel
+
+Facsimilet er facit. OCR, eksisterende transskriptioner, metadata og kendskab
+til en strofeform er hjælpemidler, ikke selvstændige tekstvidner.
+
+En usædvanlig form eller stavemåde må ikke rettes, blot fordi den ser
+mistænkelig ud. Hvis facsimilet tydeligt har formen, skal den bevares. Hvis
+læsningen ikke kan afgøres forsvarligt, skal usikkerheden synliggøres i stedet
+for at blive skjult med et gæt.
+
+## 1. Afgræns arbejdet
+
+Læs altid `AGENTS.md`, `docs/style-guide.md` og den specialdokumentation, som
+stilguiden henviser til, før der ændres filer.
+
+Fastlæg derefter:
+
+- hvilken fysisk udgave der transskriberes
+- hvilke trykte sider og PDF-sider der hører til teksten
+- hvordan trykte sidetal mappes til facsimilesider
+- hvilke XML-filer og forfatterregistre der skal ændres
+- om arbejdet tilhører en eksisterende PR-branch
+
+Kontrollér både første og sidste relevante side direkte. Et angivet sideinterval
+kan være forkert, og en tekst kan fortsætte på næste side uden ny overskrift.
+
+Hvis det almindelige arbejdstræ indeholder andre ændringer, så brug en separat
+worktree til en selvstændig dokumentations- eller værktøjs-PR. Bland aldrig en
+tekstkorrektur med uvedkommende ændringer.
+
+## 2. Lav et sideinventar
+
+Ingen side må forsvinde mellem OCR og korrektur. Lav derfor en midlertidig liste
+over alle relevante sider med mindst:
+
+- trykt sidetal
+- PDF-side eller billedfil
+- tekst eller afsnit
+- første og sidste synlige verslinje
+- status for strukturkontrol
+- status for tekstkontrol
+- eventuelle tvivlstilfælde
+
+Listen er arbejdsdata og skal normalt ikke committes. Den skal gøre det muligt
+at se, om hver side faktisk er blevet behandlet.
+
+## 3. Kontrollér strukturen før enkeltordene
+
+Begynd med en visuel gennemgang af facsimilet uden at stole på den eksisterende
+XML-opdeling. Registrer:
+
+- tekstens begyndelse og slutning
+- titler, undertitler og deloverskrifter
+- strofegrænser og ekstra blanklinjer
+- nummererede og unummererede strofer
+- skillelinjer, signaturer og andre ikke-verslinjer
+- indrykninger og centrerede linjer
+- sideskift midt i en strofe
+
+Et blankt mellemrum i trykket er redaktionel information. Det må hverken
+fjernes, fordi nabostrofer har samme rimskema, eller tilføjes alene ud fra en
+formodet strofeform.
+
+### Regelmæssige strofeformer
+
+Når facsimilet har bekræftet en regelmæssig strofeform, kan linjetælling bruges
+som en stærk kontrol. En ottave skal eksempelvis have otte verslinjer, men det
+beviser ikke, at en indledning eller paratekst i samme bog også består af
+ottaver.
+
+Kontrollér maskinelt:
+
+- at alle strofeoverskrifter forekommer i ubrudt rækkefølge
+- at hver strofe har det forventede antal verslinjer
+- at ingen overskrift er blevet hængende ved den foregående strofe
+- at en manglende overskrift ikke har dannet en dobbeltstrofe
+
+Linjetælling finder strukturfejl, som en almindelig OCR-sammenligning ikke ser.
+En korrekt tekst kan stadig være opdelt forkert.
+
+### Layout i XML
+
+Strofeoverskrifter og andre trykte linjer, som ikke er vers, skal markeres efter
+`docs/xml-work-format.md`. En centreret strofeoverskrift kan eksempelvis være:
+
+```xml
+<nonum><center>XLII.</center></nonum>
+```
+
+En trykt skillelinje kan tilsvarende være en centreret `<nonum>`-linje eller et
+eksisterende, passende skilleelement. Følg mønstret i repositoryet; lad ikke en
+overskrift eller dekoration stå som en almindelig verslinje.
+
+## 4. Brug flere OCR-pass som kontrol
+
+Undersøg først PDF'en med `pdfimages -list`. Udtræk de indlejrede sidebilleder,
+når der er ét sikkert helsidesbillede pr. relevant PDF-side, og opløsningen er
+tilstrækkelig. Render ellers siderne i en fast, læsbar opløsning med
+`pdftoppm`. Repositoryets facsimileværktøjer og indstillinger er beskrevet i
+`README.md`.
+
+Antag aldrig, at et udtrukket billednummer er lig med det trykte sidetal. Bevar
+mappingen mellem trykt side, PDF-side og filnavn i sideinventaret.
+
+Kør gerne OCR med flere layoutstrategier, eksempelvis Tesseract med forskellige
+PSM-værdier. Disse tre pass supplerer ofte hinanden:
+
+- `--psm 3`: automatisk sideopdeling
+- `--psm 4`: én kolonne med tekstområder i varierende størrelse
+- `--psm 6`: én ensartet tekstblok
+
+Gem OCR-resultaterne i en tydeligt afgrænset scratch-mappe. De må ikke ende i
+PR'en.
+
+### Sammenlign uden at normalisere kildeteksten
+
+En midlertidig sammenligning må gerne normalisere kopier af linjerne for at
+finde kandidater. Den kan eksempelvis ignorere:
+
+- XML-tags
+- forskelle mellem apostroftegn
+- mellemrum omkring tegnsætning
+- OCR-støj i sidemargener
+- kendte OCR-varianter af `æ`, `ø` og `å`
+
+Normaliseringen må kun bruges til søgning og justering. Den publicerede tekst
+skal fortsat gengive facsimilets historiske ortografi og tegnsætning.
+
+Prioritér steder, hvor flere OCR-pass er enige om en afvigelse fra XML. Husk
+dog, at flere pass fra samme OCR-motor kan dele den samme fejl. Konsensus gør et
+sted vigtigt at undersøge; den afgør ikke læsningen.
+
+### Pas på forskudte linjer
+
+Sammenligning linje for linje kan komme ud af takt ved:
+
+- sidehoveder og sidetal
+- strofeoverskrifter
+- en overset eller dobbelt OCR-linje
+- sideskift midt i en strofe
+- skillelinjer og signaturer
+
+Brug derfor et begrænset søgevindue omkring den forventede position, og
+kontrollér altid første og sidste match på hver side. En lav samlet fejlafstand
+er ikke bevis for, at linjerne er korrekt justeret.
+
+## 5. Læs hver side direkte
+
+OCR-kandidatlisten er et supplement til, ikke en erstatning for, en fuld
+sidegennemgang. Læs hver relevant side og sammenhold den med XML'en.
+
+Kontrollér særskilt:
+
+- hvert ord og hver bøjningsendelse
+- store og små begyndelsesbogstaver
+- historiske stavemåder
+- apostroffer og accenttegn
+- punktum, komma, kolon og semikolon
+- spørgsmålstegn og udråbstegn
+- bindestreger, tankestreger og ellipser
+- åbnende og lukkende anførselstegn
+- kursiv, spatiering og anden fremhævelse
+- indrykninger, centrerede linjer og signaturer
+
+Tegnfejl er ofte sværere for OCR end ordfejl. Et pass kan gengive alle bogstaver
+rigtigt og stadig miste en tankestreg, vende et anførselstegn eller forveksle
+spatiering med almindelige mellemrum.
+
+Zoom ind på tvivlsomme steder. Afgør dem ikke ud fra moderne sprogbrug. En
+mærkelig, men tydeligt trykt læsning skal bevares.
+
+## 6. Kør målrettede maskinkontroller
+
+Efter den manuelle gennemgang bør filen undersøges for almindelige OCR-rester.
+Tilpas søgningerne til XML'en, så tags ikke giver unødig støj. Nyttige kandidater
+kan blandt andet være:
+
+```shell
+rg -n '«[^«»]*«|\*|[[:alpha:]]\.[[:alpha:]]|[[:alpha:]]- ' path/to/work.xml
+rg -n '[[:space:]]+$' path/to/work.xml
+```
+
+Søg desuden efter:
+
+- cifre midt i ord
+- enkeltstående symboler fra OCR
+- mellemrum midt i ord
+- identiske nabolinjer
+- usandsynlige punktummer midt i ord
+- ens åbnende anførselstegn i begge ender af et citat
+- rester af sidehoveder og sidetal
+
+Kør repositoryets OCR-kandidatrapport:
+
+```shell
+npm run report-ocr-candidates
+```
+
+Rapporten viser kandidater, ikke sikre fejl. Hvert fund skal vurderes mod
+facsimilet.
+
+## 7. Validér XML og repository
+
+Før ændringen afleveres eller publiceres:
+
+```shell
+xmllint --noout path/to/work.xml
+git diff --check
+npm test -- --runInBand
+```
+
+Kør også en domænespecifik kontrol af strofeantal, stroferækkefølge og
+verslinjer pr. strofe, når formen tillader det. En lille midlertidig parser er
+ofte mere pålidelig end manuel optælling i et langt værk.
+
+Hele testsuiten skal bestå før PR-oprettelse. Tjek til sidst `git status --short`
+og bekræft, at kun de tilsigtede filer er med.
+
+## 8. Ryd op og aflever
+
+Fjern genererede sidebilleder, OCR-filer, beskæringer og sammenligningsrapporter
+fra arbejdstræet. Kontrollér den præcise scratch-mappe før sletning; slet aldrig
+via en bred eller uafklaret sti.
+
+Afleveringen skal oplyse:
+
+- hvilke trykte sider der er gennemgået
+- om hele teksten er læst direkte mod facsimilet
+- hvordan strofer og overskrifter er valideret
+- hvilke automatiske kontroller der er kørt
+- om der findes uløste læsninger
+- hvilke filer der er ændret
+- om ændringerne er committet eller kun ligger lokalt
+
+Hvis repositoryet kræver brugerens gennemlæsning før commit eller push, skal
+arbejdet stoppe dér. En besked om, at teksten er færdig, er ikke i sig selv en
+godkendelse til at publicere den.
+
+## Afsluttende kontrolliste
+
+- [ ] Alle relevante sider er registreret og gennemgået.
+- [ ] Første og sidste tekstlinje stemmer med facsimilet.
+- [ ] Strofegrænser følger trykket, også ved uregelmæssige former.
+- [ ] Regelmæssige strofer har korrekt linjeantal og ubrudte overskrifter.
+- [ ] Overskrifter og dekorationer tælles ikke som verslinjer.
+- [ ] Historisk ortografi og tegnsætning er bevaret.
+- [ ] Kursiv, spatiering, indrykning og signaturer er kontrolleret.
+- [ ] Alle OCR-kandidater er afgjort mod facsimilet.
+- [ ] XML validerer, og hele testsuiten består.
+- [ ] Scratch-filer er fjernet.
+- [ ] PR'en indeholder kun den aftalte ændring.
