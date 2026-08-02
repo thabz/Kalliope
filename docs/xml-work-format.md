@@ -270,10 +270,11 @@ Understottede felter:
 - `<event>`
 
 `written`, `performed` og `event` samles i `caches/collected.dates.json` og bruges til
-"andre tekster knyttet til samme dato".
+`andre tekster knyttet til samme dato`.
 
-Datoformatet er normalt `YYYY`, `YYYY-MM` eller `YYYY-MM-DD`. Datohjaelperne kender ogsaa
-negative aar og enkelte `ca.`-udtryk.
+For tekst-hoveder (`<text><head><dates>`) skal disse felter som minimum være fulde datoer:
+`YYYY-MM-DD` på formen år-måned-dag.
+Datohjaelperne kender også negative år og enkelte `ca.`-udtryk i andre sammenhænge.
 
 ## Body og tekstblokke
 
