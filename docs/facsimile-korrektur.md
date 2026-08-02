@@ -79,6 +79,29 @@ som en stærk kontrol. En ottave skal eksempelvis have otte verslinjer, men det
 beviser ikke, at en indledning eller paratekst i samme bog også består af
 ottaver.
 
+Find også digtets dominerende strofemønster. Hvis næsten alle strofer har fire
+verslinjer, skal enhver strofe med eksempelvis én, tre, fem eller otte linjer
+behandles som en konkret korrekturkandidat. Det gælder også, selv om alle ord
+allerede stemmer med OCR'en. En ekstra blanklinje kan splitte en firlinjet
+strofe i `1 + 3`, mens en manglende blanklinje kan samle to strofer til én på
+otte linjer. De to fejl kan ligge tæt på hinanden og derfor se ud som en enkelt
+flyttet strofegrænse.
+
+Lav derfor en afvigelsesliste for hvert regelmæssigt digt eller nummereret
+afsnit:
+
+- optæl verslinjerne mellem alle blanklinjer
+- bestem den dominerende strofelængde ud fra de sikre strofer
+- flag alle afvigende længder og alle steder uden blanklinje mellem to
+  forventede strofer
+- undersøg nabostrofer samlet, da en forkert grænse ofte giver komplementære
+  afvigelser
+- kontrollér hver kandidat visuelt i facsimilet, før XML'en ændres
+
+En markant afvigelse kræver tydeligt belæg i facsimilet. Den må ikke accepteres
+alene, fordi den eksisterende transskription eller OCR har en blanklinje på
+stedet.
+
 Kontrollér maskinelt:
 
 - at alle strofeoverskrifter forekommer i ubrudt rækkefølge
@@ -88,6 +111,18 @@ Kontrollér maskinelt:
 
 Linjetælling finder strukturfejl, som en almindelig OCR-sammenligning ikke ser.
 En korrekt tekst kan stadig være opdelt forkert.
+
+Ved sideskift skal optællingen fortsætte på tværs af siden. Afgør ud fra
+facsimilet, strofeformen og den løbende tekst, om den første linje på den nye
+side fortsætter en strofe eller begynder en ny. En ny fysisk side er ikke i sig
+selv en strofegrænse.
+
+Kontrollér nummerering på hvert hierarkisk niveau for sig. Et langt digt kan
+eksempelvis have romertal som hovedafsnit og arabertal som underafsnit, så
+rækken `I.`, `1.`, `2.` ikke nødvendigvis er en OCR-fejl. Omvendt er et spring
+fra `3.` til `8.` et stærkt signal om manglende underafsnit. Sammenlign både
+tegnformen og den lodrette afstand over og under hvert nummer med facsimilet;
+OCR forveksler ofte `I` og `1` og mister let korte, centrerede nummerlinjer.
 
 ### Layout i XML
 
@@ -122,6 +157,12 @@ PSM-værdier. Disse tre pass supplerer ofte hinanden:
 
 Gem OCR-resultaterne i en tydeligt afgrænset scratch-mappe. De må ikke ende i
 PR'en.
+
+OCR-værktøjers blanklinjer er særligt upålidelige. De kan opstå inde i en
+strofe, når en kort eller indrykket verslinje registreres som en ny tekstblok,
+og de kan forsvinde mellem to strofer. Brug derfor OCR til at sammenligne
+ordlyd og finde kandidater, men udled ikke strofegrænser direkte af OCR'ens
+plain-text-output.
 
 ### Sammenlign uden at normalisere kildeteksten
 
