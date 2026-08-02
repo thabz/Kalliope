@@ -117,23 +117,23 @@
     <deep-link>https://www.nationalgallery.org.uk/paintings/${invNr}</deep-link>
   </museum>
   <museum id="uffizi">
-    <name>Galleria degli Uffizi</name>
+    <name>Galleria degli Uffizi, Firenze</name>
     <country>it</country>
     <link>https://www.uffizi.it/</link>
     <deep-link>https://www.uffizi.it/opere/${objId}</deep-link>
   </museum>
   <museum id="tate">
-    <name>Tate</name>
+    <name>Tate, London</name>
     <country>gb</country>
     <link>https://www.tate.org.uk/</link>
     <deep-link>https://www.tate.org.uk/art/artworks/${invNr}</deep-link>
   </museum>
   <museum id="borghese">
-    <name>Galleria Borghese</name>
+    <name>Galleria Borghese, Rom</name>
     <country>it</country>
   </museum>
   <museum id="nga">
-    <name>National Gallery of Art, Washington</name>
+    <name>National Gallery of Art, Washington, D.C.</name>
     <country>us</country>
     <deep-link>https://www.nga.gov/artworks/${objId}</deep-link>
   </museum>
@@ -142,7 +142,7 @@
     <country>de</country>
   </museum>
   <museum id="picardie">
-    <name>Musée de Picardie</name>
+    <name>Musée de Picardie, Amiens</name>
     <country>fr</country>
   </museum>
   <museum id="khm">
@@ -154,11 +154,11 @@
     <country>va</country>
   </museum>
   <museum id="kelvingrove">
-    <name>Kelvingrove Art Gallery and Museum</name>
+    <name>Kelvingrove Art Gallery and Museum, Glasgow</name>
     <country>gb</country>
   </museum>
   <museum id="high">
-    <name>High Museum of Art</name>
+    <name>High Museum of Art, Atlanta</name>
     <country>us</country>
   </museum>
   <museum id="hunterian">
@@ -174,7 +174,7 @@
     <country>de</country>
   </museum>
   <museum id="orsay">
-    <name>Musée d'Orsay</name>
+    <name>Musée d'Orsay, Paris</name>
     <country>fr</country>
     <deep-link>https://www.musee-orsay.fr/fr/oeuvres/${objId}</deep-link>
   </museum>
@@ -187,12 +187,12 @@
     <country>no</country>
   </museum>
   <museum id="ngv">
-    <name>National Gallery of Victoria</name>
+    <name>National Gallery of Victoria, Melbourne</name>
     <country>au</country>
     <deep-link>https://www.ngv.vic.gov.au/explore/collection/work/${objId}/</deep-link>
   </museum>
   <museum id="ashmolean">
-    <name>Ashmolean Museum</name>
+    <name>Ashmolean Museum, Oxford</name>
     <country>gb</country>
   </museum>
   <museum id="prado">
@@ -201,7 +201,7 @@
     <deep-link>https://www.museodelprado.es/en/the-collection/art-work/${objId}</deep-link>
   </museum>
   <museum id="scotnpg">
-    <name>Scottish National Portrait Gallery</name>
+    <name>Scottish National Portrait Gallery, Edinburgh</name>
     <country>gb</country>
   </museum>
   <museum id="willumsens">
@@ -221,23 +221,23 @@
     <country>dk</country>
   </museum>
   <museum id="staedel">
-    <name>Städel Museum</name>
+    <name>Städel Museum, Frankfurt</name>
     <country>de</country>
   </museum>
   <museum id="dhm">
-    <name>Deutsches Historisches Museum</name>
+    <name>Deutsches Historisches Museum, Berlin</name>
     <country>de</country>
   </museum>
   <museum id="neuepinakothek">
-    <name>Neue Pinakothek</name>
+    <name>Neue Pinakothek, München</name>
     <country>de</country>
   </museum>
   <museum id="lascala">
-    <name>Museo Teatrale alla Scala</name>
+    <name>Museo Teatrale alla Scala, Milano</name>
     <country>it</country>
   </museum>
   <museum id="munch">
-    <name>MUNCH</name>
+    <name>MUNCH, Oslo</name>
     <country>no</country>
   </museum>
   <museum id="hamburgerkunsthalle">
@@ -249,15 +249,15 @@
     <country>it</country>
   </museum>
   <museum id="pushkin">
-    <name>The Pushkin State Museum of Fine Arts</name>
+    <name>The Pushkin State Museum of Fine Arts, Moskva</name>
     <country>ru</country>
   </museum>
   <museum id="capitolini">
-    <name>Musei Capitolini</name>
+    <name>Musei Capitolini, Rom</name>
     <country>it</country>
   </museum>
   <museum id="fabre">
-    <name>Musée Fabre</name>
+    <name>Musée Fabre, Montpellier</name>
     <country>fr</country>
   </museum>
   <museum id="reventlow">
@@ -273,7 +273,7 @@
     <country>dk</country>
   </museum>
   <museum id="dulwich">
-    <name>Dulwich Picture Gallery</name>
+    <name>Dulwich Picture Gallery, London</name>
     <country>gb</country>
   </museum>
   <museum id="kirstenkjaer">
@@ -285,7 +285,7 @@
     <country>it</country>
   </museum>
   <museum id="kolumba">
-    <name>Kolumba</name>
+    <name>Kolumba, Köln</name>
     <country>de</country>
   </museum>
   <museum id="conde">
@@ -293,7 +293,7 @@
     <country>fr</country>
   </museum>
   <museum id="operaduomo">
-    <name>Museo dell'Opera del Duomo</name>
+    <name>Museo dell'Opera del Duomo, Firenze</name>
     <country>it</country>
   </museum>
   <museum id="novalis">
@@ -301,11 +301,11 @@
     <country>de</country>
   </museum>
   <museum id="behnhaus">
-    <name>Museum Behnhaus Drägerhaus</name>
+    <name>Museum Behnhaus Drägerhaus, Lübeck</name>
     <country>de</country>
   </museum>
   <museum id="moderna">
-    <name>Moderna Museet</name>
+    <name>Moderna Museet, Stockholm</name>
     <country>se</country>
   </museum>
   <museum id="britishmuseum">
@@ -314,7 +314,7 @@
     <deep-link>https://www.britishmuseum.org/collection/object/${objId}</deep-link>
   </museum>
   <museum id="tesse">
-    <name>Musée de Tessé</name>
+    <name>Musée de Tessé, Le Mans</name>
     <country>fr</country>
   </museum>
   <museum id="skd">
@@ -331,23 +331,23 @@
     <country>gb</country>
   </museum>
   <museum id="ago">
-    <name>Art Gallery of Ontario</name>
+    <name>Art Gallery of Ontario, Toronto</name>
     <country>ca</country>
   </museum>
   <museum id="helsinkiuni">
-    <name>Helsinki University Museum</name>
+    <name>Helsinki University Museum, Helsinki</name>
     <country>fi</country>
   </museum>
   <museum id="smithsoniannpg">
-    <name>National Portrait Gallery, Smithsonian Institution</name>
+    <name>National Portrait Gallery, Smithsonian Institution, Washington, D.C.</name>
     <country>us</country>
   </museum>
   <museum id="brou">
-    <name>Musée du monastère royal de Brou</name>
+    <name>Musée du monastère royal de Brou, Bourg-en-Bresse</name>
     <country>fr</country>
   </museum>
   <museum id="wallace">
-    <name>The Wallace Collection</name>
+    <name>The Wallace Collection, London</name>
     <country>gb</country>
     <deep-link>https://wallacelive.wallacecollection.org/eMP/eMuseumPlus?module=collection&amp;objectId=${objId}&amp;service=ExternalInterface</deep-link>
   </museum>
