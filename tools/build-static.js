@@ -315,6 +315,7 @@ const handle_text = async (
 
   const head = getChildByTagName(text, 'head');
   const textDates = extractDates(head);
+  validateTextDates(textDates, sourcePoetId, sourceWorkId, sourceTextId);
   const firstline = extractTitle(head, 'firstline');
   let title = extractTitle(head, 'title') || firstline; // {title: xxx, prefix: xxx}
   let indextitle = extractTitle(head, 'indextitle') || title;
@@ -848,6 +849,37 @@ const validateWorkYear = (year, filename) => {
   if (numericYear == null) {
     throw new Error(`${filename} has invalid <year>: ${year}`);
   }
+};
+
+const fullDatePattern = /^-?\d{3,4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$/;
+
+const validateTextDate = (date, tagName, sourcePoetId, sourceWorkId, textId) => {
+  const value = date == null ? null : date.trim();
+  if (value == null || value.length === 0) {
+    return;
+  }
+  if (!fullDatePattern.test(value)) {
+    throw new Error(
+      `fdirs/${sourcePoetId}/${sourceWorkId}.xml (${textId}) has invalid <${tagName}> in <dates>: ${value}. Expected YYYY-MM-DD.`
+    );
+  }
+};
+
+const validateTextDates = (
+  textDates,
+  sourcePoetId,
+  sourceWorkId,
+  sourceTextId
+) => {
+  ['published', 'written', 'performed', 'event'].forEach((type) => {
+    validateTextDate(
+      textDates[type],
+      type,
+      sourcePoetId,
+      sourceWorkId,
+      sourceTextId
+    );
+  });
 };
 
 const removeWorkDates = (dates, poetId, workId) => {
