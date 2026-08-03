@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1883" author="plough" status="complete" type="poetry">
 <workhead>
     <title>Nye Digte</title>
     <year>1883</year>
     <notes>
-        <note>Teksten følger Carl Ploug: <i>Nye Digte</i>, Forlagsbureauet i Kjøbenhavn, Kjøbenhavn, 1883.</note>
         <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
         <note>Noter med en foranstillet asterisk er digterens egne.</note>
     </notes>
@@ -16,7 +14,7 @@
 </workhead>
 <workbody>
 
-<poem id="plough2026080301">
+<text id="plough2026080301">
 <head>
     <title><i>Til min Hustru</i></title>
     <firstline><i>Det bliver sagtens den sidste Gang</i></firstline>
@@ -24,6 +22,7 @@
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <i>Det bliver sagtens den sidste Gang,</i>
 <i>at ,,Viser og Vers'' i Bundt jeg binder,</i>
 <i>og sender dem ud til Mænd og Kvinder,</i>
@@ -33,8 +32,9 @@
 <i>i Nutidens Guldalder fattig min Sang,</i>
 <i>saa veed jeg dog Een, den kan glæde og røre,</i>
 <i>Hende skal denne Bog tilhøre.</i>
+</poetry>
 </body>
-</poem>
+</text>
 
 <section>
 <head>
@@ -42,7 +42,7 @@
 </head>
 <content>
 
-<poem id="plough2026080302">
+<text id="plough2026080302">
 <head>
     <title>For Oplysning</title>
     <subtitle>7. November 1869.</subtitle>
@@ -51,6 +51,7 @@
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Luk op for Lyset! — Skod og Lem
 maa ej dets Straaler indestænge,
 mens udenfor staa Nok, som trænge
@@ -90,10 +91,11 @@ og alle Levende se klart;
 saa her maa vorde godt at være,
 og lyde Tak og Pris og Ære
 til Ham, fra hvem alt Lyset kom.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080303">
+<text id="plough2026080303">
 <head>
     <title>† Niels Laurits Høyen</title>
     <subtitle>29. April 1870.</subtitle>
@@ -103,6 +105,7 @@ til Ham, fra hvem alt Lyset kom.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nu tier den Røst, hvis mægtige Klang
 til Konstens Helligdom ringede Folket;
 der straalte som Farver og smelted som Sang,
@@ -138,10 +141,11 @@ I <w>Ham</w> har vi mistet en styrende Magt,
 en vaabenstærk Fører ad Aandernes Bane;
 med <w>Ham</w> er der sænket en sejerrig Fane;
 et Maal af vort Liv er tilbage lagt.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080304">
+<text id="plough2026080304">
 <head>
     <title>Ved Bertel Thorvaldsens Hundredaarsfest</title>
     <subtitle>19. November 1870.</subtitle>
@@ -150,6 +154,7 @@ et Maal af vort Liv er tilbage lagt.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center>1.</center></nonum>
 
 Med Lys og Skygge, med Vinter og Vaar
@@ -202,10 +207,11 @@ Løves maa det Land, hvor
 Skjønheds Tempel straaler
 lyse Altar-Luer
 over Livets Idræt.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080305">
+<text id="plough2026080305">
 <head>
     <title>Ved Mindefesten for Orla Lehmann</title>
     <subtitle>26. November 1870.</subtitle>
@@ -214,6 +220,7 @@ over Livets Idræt.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center>1.</center></nonum>
 
 Morgendæmringen taaget
@@ -325,10 +332,11 @@ sildige Slægtled
 sande med Undren,
 hvad han har været,
 hvad vi har tabt.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080306">
+<text id="plough2026080306">
 <head>
     <title>Ved Japetus Steenstrups 25 Aars Jubilæum</title>
     <subtitle>28. November 1870.</subtitle>
@@ -337,6 +345,7 @@ hvad vi har tabt.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Du aldrig trætte Vandringsmand
 gjennem Naturens vide Riger,
 som dykker ned i det dybeste Vand
@@ -376,10 +385,11 @@ ogsaa din Gjernings Pris fornemme,
 vide, at Samtiden skjønner derpaa,
 og dit Navn regner mellem de faa,
 som dit Fædreland aldrig vil glemme.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080307">
+<text id="plough2026080307">
 <head>
     <title>For Grundloven</title>
     <subtitle>5. Juni 1871.</subtitle>
@@ -388,6 +398,7 @@ som dit Fædreland aldrig vil glemme.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Dengang af Vintersøvnen lang
 vort Folkeliv blev vækket,
 og den fornys rimfrosne Vang
@@ -441,10 +452,11 @@ Naar ret hver Evne vorder brugt,
 naar alt det Onde faar sin Tugt,
 naar alt det Gode bærer Frugt,
 skal Danmark evigt leve!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080308">
+<text id="plough2026080308">
 <head>
     <title>Ved H. N. Clausens Guldbryllup</title>
     <subtitle>8. December 1871.</subtitle>
@@ -453,6 +465,7 @@ skal Danmark evigt leve!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 De Guldklokker ringe saa blødt og mildt og sødt
 i Livets sene, stille Aftentimer;
 hvad Dagen bragte Bittert, det synker ned som dødt,
@@ -484,10 +497,11 @@ paa hvem i tunge Tider han har biet.
 Om blide Kaar og Lykke endnu ej Gud det gav,
 dets Kjærlighed han tager dog med sig i sin Grav,
 og det hans ædle Træk vil aldrig glemme.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080309">
+<text id="plough2026080309">
 <head>
     <title>Ved Henrik Rungs Jordefærd</title>
     <subtitle>19. December 1871.</subtitle>
@@ -496,6 +510,7 @@ og det hans ædle Træk vil aldrig glemme.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ak, Harpen er, brusten, hængt paa Knag;
 endt er hans Spil;
 og Hjertets brusende Bølgeslag
@@ -516,10 +531,11 @@ dit Haab, din Sorg og din Længsel han
 bar paa i Løn.
 Du jubled, Du klaged i Tonernes Klang;
 Derfor hans Sange blev Folkesang.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080310">
+<text id="plough2026080310">
 <head>
     <title>Ved Fregatten ,,Tordenskjolds'' Hjemkomst</title>
     <subtitle>29. Januar 1872.</subtitle>
@@ -528,6 +544,7 @@ Derfor hans Sange blev Folkesang.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Velkommen hjem fra Kinas Kyst
 til gamle Danmarks Moderbryst,
 I, som har fjerne Folkeslag
@@ -581,10 +598,11 @@ til Haabet om, at vi, skjønt smaa,
 ved fælles Hjælp skal Maalet naa,
 og leve ædelt, skjønt og frit,
 naar ærlig Hver gjør Sit!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080311">
+<text id="plough2026080311">
 <head>
     <title>Ved den nordiske Industriudstillings Aabning</title>
     <subtitle>13. Juni 1872.</subtitle>
@@ -593,6 +611,7 @@ naar ærlig Hver gjør Sit!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Velkommen til Arbejdets Kappestrid,
 hvor regnende Kløgt og skabende Snille
 skal mødes med Haandens trofaste Flid;
@@ -661,10 +680,11 @@ og laan vor Stræben Lykke!
     ved sine Sønners Daad,
     ved vise Fyrsters Raad,
   ved ædle Folkeviljer!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080312">
+<text id="plough2026080312">
 <head>
     <title>Ved Norges Tusindaarsfest</title>
     <subtitle>18. Juli 1872.</subtitle>
@@ -673,6 +693,7 @@ og laan vor Stræben Lykke!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Et Aartusind Blink paa Fjeldet
 af den samme Sol —
 Folkehallen takt og tjeldet,
@@ -708,10 +729,11 @@ gid din Aand fra Fjeldets Side
 skue langt og lyse vide,
 mens i Dal dit Hjertes Kilde
 rinder klar og stille!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080313">
+<text id="plough2026080313">
 <head>
     <title>Ved det første nordiske Juristmøde</title>
     <subtitle>24. August 1872.</subtitle>
@@ -720,6 +742,7 @@ rinder klar og stille!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Naturen gav vor ældste Lov
 i hine fjerne Dage,
 da Gotens Øxe rydded Skov
@@ -773,10 +796,11 @@ Og vil vi trodse Verdens Storm,
 saa maa den blive Livets Norm,
 saa maa den tage Bogstavform
 og vorde læst til Thinge!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080314">
+<text id="plough2026080314">
 <head>
     <title>† Vilhelm Marstrand</title>
     <subtitle>8. April 1873.</subtitle>
@@ -785,6 +809,7 @@ og vorde læst til Thinge!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nu slukkedes en Stjerne af de faa,
 der blinked paa vor dunkle Aftenbue
 og loved, at vort Navn skal ej forgaa,
@@ -847,10 +872,11 @@ Da glatted Fred hans Pandes Folder ud,
 og Klarhed i hans trætte Øje skinned. —
 Thi hvile han i Fred, i Fred hos Gud,
 og evig Klarhed hvile over Mindet!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080315">
+<text id="plough2026080315">
 <head>
     <title>For Grundloven</title>
     <subtitle>5. Juni 1873.</subtitle>
@@ -859,6 +885,7 @@ og evig Klarhed hvile over Mindet!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Dengang hin Foraarsmorgen vi
 sprang ud af vore Dyner,
 da Kongen kaldte: ,,I er fri!'' —
@@ -911,10 +938,11 @@ og løfte over Nuets Savn
 os ind i vore Længslers Havn,
 og <w>Fredriks</w> Ros og Danmarks Navn
 til fjerne Tider bringe!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080316">
+<text id="plough2026080316">
 <head>
     <title>Ved Afsløringen af Kong Frederik den Syvendes Rytterstatue</title>
     <subtitle>6. Oktober 1873.</subtitle>
@@ -923,6 +951,7 @@ til fjerne Tider bringe!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center>1.</center></nonum>
 
 Ti Vintre bruned Skovens grønne Kroner
@@ -1010,10 +1039,11 @@ Gid Du se al Virken lønnes
     rigt paa Land og Hav!
 Gid Du se dit Scepter grønnes
     som en Mandelstav!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080317">
+<text id="plough2026080317">
 <head>
     <title>Til Nordslesvigs Repræsentanter</title>
     <subtitle>7. Oktober 1873.</subtitle>
@@ -1022,6 +1052,7 @@ Gid Du se dit Scepter grønnes
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I drive i det vilde Hav
 paa Stumperne af Vraget;
 vi frelste fra den vaade Grav
@@ -1075,10 +1106,11 @@ Da skal vor Moders Ømhed nok
 jer’ vaade Trøje tørre,
 og aldrig i vor Børneflok
 skal Glæden vorde større!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080318">
+<text id="plough2026080318">
 <head>
     <title>Til J. P. E. Hartmann</title>
     <subtitle>22. Mai 1874.</subtitle>
@@ -1087,6 +1119,7 @@ skal Glæden vorde større!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hil Dig, Du, der en Sommernat i Skoven
     lytted til Alfernes Leg!
 Hil Dig, hvis Sjæl af Havfrusang fra Voven
@@ -1131,10 +1164,11 @@ Tak saa for Orgelets mægtige Stemme,
      Psalmernes løftende Kor!
 Tak for hver Treklang, som lod os forglemme,
      at der er Mislyd paa Jord!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080319">
+<text id="plough2026080319">
 <head>
     <title>Paa Himmelbjerget</title>
     <subtitle>9. Juli 1874.</subtitle>
@@ -1143,6 +1177,7 @@ Tak for hver Treklang, som lod os forglemme,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Du Land, der mellem tvende Have bølger
 som om din Jordbund deres Billed bar;
 som dyben Dal bag nøgne Banker dølger,
@@ -1169,10 +1204,11 @@ Gid Frihedstræet, som vi eje Begge,
 maa skyde rankt og stolt mod Himlen op,
 og intet Kryb dets sunde Rødder svække,
 men Sangens Fugle bygge i dets Top!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080320">
+<text id="plough2026080320">
 <head>
     <title>Paa Fredericiaslagets 25de Aarsdag</title>
     <subtitle>6. Juli 1874.</subtitle>
@@ -1181,6 +1217,7 @@ men Sangens Fugle bygge i dets Top!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center>1.</center></nonum>
 
 Hvor er nu hin Morgenrøde,
@@ -1256,10 +1293,11 @@ Alt Egenkrav bortvejret
 af Fædrelandets Sag!
 En Aand som den, der sejred
 i <w>Sjette Julis</w> Slag!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080321">
+<text id="plough2026080321">
 <head>
     <title>Prolog ved den nye Theaterbygnings Indvielse</title>
     <subtitle>15. Oktober 1874.</subtitle>
@@ -1268,6 +1306,7 @@ i <w>Sjette Julis</w> Slag!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center>1.</center></nonum>
 
 Vi hilse Huset, Land og Folk har bygt,
@@ -1557,10 +1596,11 @@ Beskærm vor Konge og hans Æt!
 Lad ham se Danmark naa sin Ret
 og hele Folket skares tæt
 omkring sin Drot!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080322">
+<text id="plough2026080322">
 <head>
     <title>† Vilhelmine Smith</title>
     <subtitle>16. Oktober 1874.</subtitle>
@@ -1569,6 +1609,7 @@ omkring sin Drot!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hun var ikkun en gammel enlig Kvinde,
 til hvem den store Verden ej har kjendt,
 ibag en Kjøbstads trange Mur stængt inde,
@@ -1595,10 +1636,11 @@ Hun enlig var, men hun var ikke ene;
 en anden Kvinde tog en Husbonds Sted,
 og om den lange Dødskamps mørke Scene
 har Søsterkjærlighed bredt himmelsk Fred.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080323">
+<text id="plough2026080323">
 <head>
     <title>Ved Overleveringen af Prisbelønningerne fra Verdensudstillingen i Wien</title>
     <subtitle>28. Februar 1875.</subtitle>
@@ -1607,6 +1649,7 @@ har Søsterkjærlighed bredt himmelsk Fred.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Paa Verdens Kort forsvinder
 fast denne Plet af Jord,
 som gjemmer vore Minder,
@@ -1651,10 +1694,11 @@ og den er det forjættet:
 at leve hædret fort,
 og aldrig vorde slettet
 med Skam af Verdens Kort.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080324">
+<text id="plough2026080324">
 <head>
     <title>† Christian Flor</title>
     <subtitle>9. April 1875.</subtitle>
@@ -1663,6 +1707,7 @@ med Skam af Verdens Kort.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Vort Modersmaal han elsked — hun var hans Ungdomsbrud;
 for hendes Ret og Ære at værge drog han ud;
 hvor mest hun blev forhaanet og trampet under Fod,
@@ -1692,10 +1737,11 @@ Men at den end kan kæmpe, og at den staar saa fast
 mod Fristelse og Fare, mod Svig og Overlast —
 det skyldes ham, vi nylig har lagt i sorten Jord,
 vort Modersmaals Elsker og Ridder, <w>Christian Flor</w>.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080325">
+<text id="plough2026080325">
 <head>
     <title>Ved Indvielsen af Arbejderforeningens Bygning</title>
     <subtitle>2. Maj 1875.</subtitle>
@@ -1704,6 +1750,7 @@ vort Modersmaals Elsker og Ridder, <w>Christian Flor</w>.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Arbejdet er Velsignelse og Ære,
 ej Trællens usle Lod, men Frimands Kald,
 som skal det hele Samfunds Lykke bære,
@@ -1739,10 +1786,11 @@ Gid Luen gjennem fjerne Tider skinne,
 af Splid ej slukt, af Sløvhed aldrig dækt!
 Gid Fædrelandet her maa altid finde
 et Kuld af Sønner, trofast, sundt og kjækt!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080326">
+<text id="plough2026080326">
 <head>
     <title>Ved Studenternes Fakkeltog til Nordens Konger</title>
     <subtitle>25. Maj 1875.</subtitle>
@@ -1751,6 +1799,7 @@ et Kuld af Sønner, trofast, sundt og kjækt!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I Tankernes Rige, i Kundskabens Land
 staar Maalet, der vinker vor frejdige Stand.
 Vi veed, det er evigt; det slukkes ej af
@@ -1790,10 +1839,11 @@ I sidde, hver af Jer paa Kjærlighed rig,
 mens Folkene stræbe mod skiftende Med
 og voxe sig sammen i Frihed og Fred!
             Hil Eder!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080327">
+<text id="plough2026080327">
 <head>
     <title>Hilsen til Upsala</title>
     <subtitle>4. Juni 1875.</subtitle>
@@ -1802,6 +1852,7 @@ og voxe sig sammen i Frihed og Fred!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Du Lærdommens Sæde
 i Asernes Vang
 med Ungdom og Glæde
@@ -1837,10 +1888,11 @@ Af Sæden, Du lægger,
 en Fremtid skal gro,
 der Hænderne rækker
 til Brødrene to!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080328">
+<text id="plough2026080328">
 <head>
     <title>Ved H. C. Andersens Jordefærd</title>
     <subtitle>11. August 1875.</subtitle>
@@ -1849,6 +1901,7 @@ til Brødrene to!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Sov, Du trætte Barn, sov sødt,
 aldrig ængstet mer og saaret,
 under Blomstertæppet blødt,
@@ -1884,10 +1937,11 @@ Kan mod Fare og mod Vold
 Kunst og Videnskab det værne,
 skal dit Navn fra Danmarks Skjold
 tindre som en Lykkestjerne!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080329">
+<text id="plough2026080329">
 <head>
     <title>Paa de forenede Rigers 61de Aarsdag</title>
     <subtitle>4. November 1875.</subtitle>
@@ -1896,6 +1950,7 @@ tindre som en Lykkestjerne!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Gjennem Akersdal <w>Carl Johan</w> rider,
 atter født til Liv ved Kunstens Magt;
 Kongen hilser mildt til alle Sider,
@@ -1931,10 +1986,11 @@ Men vi prise højt den gamle Mester,
 som har rejst de tvende Fløjes Tag,
 Og vi sætte fremst blandt Nordens Fester
 de forente Rigers Bryllupsdag!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080330">
+<text id="plough2026080330">
 <head>
     <title>For Norden</title>
     <subtitle>19. Februar 1876.</subtitle>
@@ -1943,6 +1999,7 @@ de forente Rigers Bryllupsdag!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Blinker ej Solen paa Højfjeldets Toppe,
 medens Taagen ruger paa Dalenes Bund?
 Breder ej Blikket sig vidtom deroppe?
@@ -1978,10 +2035,11 @@ Vi ville huske, at vi ere Tre,
 lige i Ret og i Pligt og i Ære,
 fælles om Ansvaret — da skal vi se,
 hvem der vil Vold paa os bære!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080331">
+<text id="plough2026080331">
 <head>
     <title>Ved Afsløringen af Tyge Brahes Billedstøtte</title>
     <subtitle>8. August 1876.</subtitle>
@@ -1990,6 +2048,7 @@ hvem der vil Vold paa os bære!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvor er <w>Uranias</w> Borg, hint Perlesmykke,
          Øresund bar?
 Raahed og Sløvhed Stykke efter Stykke
@@ -2034,10 +2093,11 @@ Her, hvor <w>Uranias</w> Dyrkere sig samle,
 velkomne dem til Videnskabens Fest
          byder hendes gamle
          Ypperstepræst.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080332">
+<text id="plough2026080332">
 <head>
     <title>Ved Indvielsen af Viborg Domkirke</title>
     <subtitle>10. September 1876.</subtitle>
@@ -2046,6 +2106,7 @@ velkomne dem til Videnskabens Fest
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center>1.</center></nonum>
 
 Paa Klippegrund Guds Kirke staar,
@@ -2132,10 +2193,11 @@ Vær vor Viljes Støttestav!
 Led saa vor hele
 jordiske Vandring,
 at vi med Fred kan gaa i Grav!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080333">
+<text id="plough2026080333">
 <head>
     <title>Ved Afsløringen af H. C. Ørsteds Billedstøtte</title>
     <subtitle>25. September 1876.</subtitle>
@@ -2144,6 +2206,7 @@ at vi med Fred kan gaa i Grav!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center>1.</center></nonum>
 
 Dette lave Land, som dukked
@@ -2228,10 +2291,11 @@ skal vor Tak faa Stemme
 i hver fremmed Stavn; —
 Jorden vil ej glemme
 sin Velgjørers Navn.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080334">
+<text id="plough2026080334">
 <head>
     <title>Ved et Guldbryllup</title>
     <subtitle>18. Oktober 1876.</subtitle>
@@ -2240,6 +2304,7 @@ sin Velgjørers Navn.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I Livets Have voxe saamange Planter op
 til Lyst og Trøst, til Nytte og til Smykke;
 og nogle løfte dristigt mod Solen deres Top,
@@ -2271,10 +2336,11 @@ og Alderdommens Skygger for Dem klare!
 Vi takke deres trofaste Hu og glade Sind!
 Vi takke for det milde og varmende Skin,
 som faldt over os fra deres Lykke!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="ploug2018081501">
+<text id="ploug2018081501">
 <head>
     <title>Ved Christian Winthers Jordefærd</title>
     <subtitle>2. Februar 1877.</subtitle>
@@ -2287,6 +2353,7 @@ som faldt over os fra deres Lykke!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 ,,<w>Folmer Sangers</w>'' lette Fjed
 naa’de Pilgrimsfærdens Ende,
 og den gyldne Cithar gled,
@@ -2331,10 +2398,11 @@ Du, Alkjærlighedens Gud,
 over Sjælen Dig forbarme!
 Slet al Skyld og Svaghed ud!
 Tag Ham i din Naades Arme!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080336">
+<text id="plough2026080336">
 <head>
     <title>Ved H. N. Clausens Jordefærd</title>
     <subtitle>6. April 1877.</subtitle>
@@ -2346,6 +2414,7 @@ Tag Ham i din Naades Arme!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nu sank det hvide Hoved, tungt og træt,
 som lyste over Kampens første Række;
 og Ordets Sværd, for Sandhed brugt og Ret,
@@ -2375,10 +2444,11 @@ den sidste af den lille Ridderskare,
 som ud af Fortids trange Volde drog,
 og løfted højt til Sejr det Nyes Brog!
 Taknemligt Folket skal hans Navn bevare!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080337">
+<text id="plough2026080337">
 <head>
     <title>For Grundloven</title>
     <subtitle>5. Juni 1877.</subtitle>
@@ -2390,6 +2460,7 @@ Taknemligt Folket skal hans Navn bevare!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Vel har ej nu vor Frihedssang
 saa let en Flugt, saa frisk en Klang,
 som da den første Junidag
@@ -2425,10 +2496,11 @@ At vogte paa dens dyre Skat,
 saa Tyv ej stjæler den ved Nat,
 ej Røver raner den ved Dag
 — det bli’r vor Æressag.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080338">
+<text id="plough2026080338">
 <head>
     <title>Svar paa en Skaal</title>
     <subtitle>6. Juni 1877.</subtitle>
@@ -2438,6 +2510,7 @@ ej Røver raner den ved Dag
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hist under Asgers herlige Hvælv, det skjønneste Minde,
 Nordens Vikingekraft har sat sig selv i sin Hjemstavn,
 og hvis halvt forvanskede Træk nu Kunsten forynger, —
@@ -2500,10 +2573,11 @@ Komme da visselig skal en Vaar, da de frugtbare Sædkorn,
 vi har samlet og gjemt i Vinternætternes Længde,
 voxe og prange med Blomster og Frugt i Landenes Agre,
 og da Folkene følge i Flok Højskolernes Ungdom!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080339">
+<text id="plough2026080339">
 <head>
     <title>Paa Kjøgebugtslagets Tohundredaarsdag</title>
     <subtitle>1. Juli 1877.</subtitle>
@@ -2515,6 +2589,7 @@ og da Folkene følge i Flok Højskolernes Ungdom!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center>1.</center></nonum>
 
 Stig op af Havets Vover,
@@ -2602,10 +2677,11 @@ Paa Dig vort Fremtidshaab er bygt;
 er Du med os, vi vandre trygt.
 Hvad Lod Du saa har os bered,
 er Æren din i Evighed.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080340">
+<text id="plough2026080340">
 <head>
     <title>Ved Indvielsen af N. Zahles og Th. Moltkes Skolebygning</title>
     <subtitle>9. Oktober 1877.</subtitle>
@@ -2617,6 +2693,7 @@ er Æren din i Evighed.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Læg Kundskabs-Sæden, ren og sund,
 i Barnesjælens Furer bløde!
 Bring Hjertets Vaarsol til at gløde
@@ -2648,10 +2725,11 @@ en ny, en sund og dygtig Slægt,
 hvis Gjerning skatter til dens Ære,
 hvis Liv er præget af dens Lære,
 af Sandhed og af Kjærlighed!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080341">
+<text id="plough2026080341">
 <head>
     <title>Til Johan Nicolai Madvig</title>
     <subtitle>27. April 1878.</subtitle>
@@ -2663,6 +2741,7 @@ af Sandhed og af Kjærlighed!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvem har redt, som Du, med Snillets Øje
 Traad fra Traad i Tankens Klædebon,
 og de Love læst, der sammenføje
@@ -2698,10 +2777,11 @@ Og naar blandt de Unge Du ta’r Sæde,
 lyser om Dig Idealets Skær:
 Alle ønske i dit Spor at træde,
 Ingen haabe tør at naa Dig nær.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080342">
+<text id="plough2026080342">
 <head>
     <title>For de Gamle ved et Bryllup</title>
     <subtitle>25. Januar 1879.</subtitle>
@@ -2713,6 +2793,7 @@ Ingen haabe tør at naa Dig nær.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Vi sejle Alle paa Livets Flod
 i Joller smaa og store Baade:
 Er Luften klar og er Vinden god,
@@ -2762,10 +2843,11 @@ af fler og flere nye Sejl omflydt,
        end mangen Dag
        maa tone Flag
 til Børneskarens Trøst og Glæde!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080343">
+<text id="plough2026080343">
 <head>
     <title>Ved den polytekniske Læreanstalts Halvhundredaarsfest</title>
     <subtitle>27. Januar 1879.</subtitle>
@@ -2777,6 +2859,7 @@ til Børneskarens Trøst og Glæde!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center>1.</center></nonum>
 
 Hvor stod Alt dog langt tilbage
@@ -2862,10 +2945,11 @@ Og gid dens Kimer spredes vidt
 og klæde hele Danmarks Slette!
 Og gid den trolig virke Sit
 til Lys og Lykke at forjætte!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080344">
+<text id="plough2026080344">
 <head>
     <title>Kantate ved Universitetets Firehundredaarsfest</title>
     <subtitle>4. Juni 1879.</subtitle>
@@ -2877,6 +2961,7 @@ til Lys og Lykke at forjætte!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center>I.</center></nonum>
 <nonum><center>1.</center></nonum>
 
@@ -3073,10 +3158,11 @@ Beskyt vort minderige Land,
 dets Ret, dets Frihed og dets Ære!
 Skærm Ham, Du gav dets gamle Spir at bære,
 den nye Stammes <w>første Christian</w>.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080345">
+<text id="plough2026080345">
 <head>
     <title>For Universitetet</title>
     <subtitle>4. Juni 1879.</subtitle>
@@ -3085,6 +3171,7 @@ den nye Stammes <w>første Christian</w>.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Højbaarne Datter af kongelig Vilje!
 knæsat af Kirken og døbt paa dens Tilje,
 borgerlig dog i din Færd og dit Sind,
@@ -3119,10 +3206,11 @@ Dannelsens Glæde og Kundskabens Magt.
 Vær, medens Danmark paa Bølgerne svømmer,
 Kilden, af hvilken dets Sundhed udstrømmer,
 Sandhedens aarvaagne, frejdige Vagt!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080346">
+<text id="plough2026080346">
 <head>
     <title>Ved et Bryllup</title>
     <subtitle>14. August 1879.</subtitle>
@@ -3131,6 +3219,7 @@ Sandhedens aarvaagne, frejdige Vagt!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvor trives Lykkens Blomst mon <w>bedst</w>,
 saa Arnens Karm den smykker,
 og Arbejdsdagen gjør til Fest,
@@ -3175,10 +3264,11 @@ Den sødme Sorgens bitre Skaal!
 Den bringe Smerten Trøst og Taal!
 Og hen mod Livets sidste Maal
 dens milde Glands dem lede!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080347">
+<text id="plough2026080347">
 <head>
     <title>Ved P. A. Heises Jordefærd</title>
     <subtitle>18. September 1879.</subtitle>
@@ -3187,6 +3277,7 @@ dens milde Glands dem lede!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nu falder snart det gule Blad,
 og Skovens Fugle spredes ad,
     og Somrens Jubel tier;
@@ -3214,10 +3305,11 @@ søgt Sandheds Lys og Skjønheds Glands,
 hans Værk ej Døden sletter ud,
 hans Vej har ført ham op mod Gud,
     mod Begges Straalekilde.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080348">
+<text id="plough2026080348">
 <head>
     <title>Ved et Studenterjubilæum</title>
     <subtitle>24. Oktober 1879.</subtitle>
@@ -3226,6 +3318,7 @@ hans Vej har ført ham op mod Gud,
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Vel mødt! Studenter askegraa,
 med furet Kind og rustne Stemmer,
 hvis Hjerter dog af Ungdom slaa,
@@ -3270,10 +3363,11 @@ for <w>Dem</w>, der alt har sagt Farvel;
 for <w>Dem</w>, der lystred ej Appel;
 for <w>Os</w>, som flot i denne Kveld
 et halvt Aarhundred springe over!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080349">
+<text id="plough2026080349">
 <head>
     <title>Paa Øehlenschlägers Hundredaarsdag</title>
     <subtitle>14. November 1879.</subtitle>
@@ -3286,6 +3380,7 @@ et halvt Aarhundred springe over!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Musernes førstefødte Søn,
 baaren til Sangens Høvdingsæde!
 Fader, som lever ynglingeskjøn
@@ -3325,10 +3420,11 @@ sletted Du Blodet, som var rundet,
 smelted Du gramme Frænders Sind;
 Du Forsoningens Dag ringed ind,
 og Broderbaandet i Nord har Du tvundet.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080350">
+<text id="plough2026080350">
 <head>
     <title>Ved den broderlige Arbejdsklasses Hjælpeforenings 25de Aarsfest</title>
     <subtitle>1. December 1879.</subtitle>
@@ -3340,6 +3436,7 @@ og Broderbaandet i Nord har Du tvundet.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Bække smaa kan gjøre Aa,
 og Aaen frugtbar blive,
 og vande Markens Blomst og Straa
@@ -3375,10 +3472,11 @@ thi gid vort Samfund da maa naa
 at fylde Hundredaaret,
 og alle Landsmænd skjønne paa,
 hvad Frugter det har baaret.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080351">
+<text id="plough2026080351">
 <head>
     <title>† Anna Nørregaard</title>
     <subtitle>8. Marts 1880.</subtitle>
@@ -3390,6 +3488,7 @@ hvad Frugter det har baaret.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Højbaaren var hun af Hjerte og Vilje
 mer end af Slægt og af Navn,
 styrede udad paa brusende Tilje,
@@ -3425,10 +3524,11 @@ gjemmes den faure og kjække Kvinde.
     Aanden hos Gud!
 Her kun de Ymper, hun plantede ud,
 de — og et kjærligt, velsignet Minde!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080352">
+<text id="plough2026080352">
 <head>
     <title>For ,,Vega''-Farerne</title>
     <subtitle>19. April 1880.</subtitle>
@@ -3440,6 +3540,7 @@ de — og et kjærligt, velsignet Minde!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Vift stolt paa Tidens Bølge,
 blaagule Broderflag!
 Dit gamle Heltefølge,
@@ -3484,10 +3585,11 @@ Mens ,,Lyrens'' Stjerner tindre
 og spejle sig i Sø,
 skal Verden <w>Dem</w> erindre,
 og ,,<w>Vegas</w>'' Navn ej dø!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080353">
+<text id="plough2026080353">
 <head>
     <title>Paa Istedslagets 30te Aarsdag</title>
     <subtitle>25. Juli 1880.</subtitle>
@@ -3499,6 +3601,7 @@ og ,,<w>Vegas</w>'' Navn ej dø!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Døde vore Ungdomsminder
   alt af Alderdom,
 saa det næste Slægtled finder
@@ -3543,10 +3646,11 @@ Lær det taale, skal det lide!
 Lær det sejre, skal det stride!
 Giv det Vilje til at raade
   selv sin Fremtids Gaade!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080354">
+<text id="plough2026080354">
 <head>
     <title>Til Afsked med C. St. A. Bille</title>
     <subtitle>10. September 1880.</subtitle>
@@ -3555,6 +3659,7 @@ Giv det Vilje til at raade
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Før ad Verdenshavets Vej Du drager
 til en land-politisk Udkigspost,
 og paa Republikens Julep smager
@@ -3590,10 +3695,11 @@ Og naar — ej for sent — Du hjemad vender,
 find saa Alting voxet jevnt og frit,
 saa Du knap vort gamle Samfund kjender,
 skjønt dertil Du ærlig har gjort Dit!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080355">
+<text id="plough2026080355">
 <head>
     <title>† Michaela Ingerslev</title>
     <subtitle>December 1880.</subtitle>
@@ -3602,6 +3708,7 @@ skjønt dertil Du ærlig har gjort Dit!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hun var i Slægt med Roserne, og bar
 sin Stammes Lød paa Læben og paa Kinden;
 og hun var bly og mild og ren og klar
@@ -3637,10 +3744,11 @@ det melder, at den Væxt, der standsed her,
 fortsættes Idealet mere nær;
 det lover, at den Skjønhed, Døden røved,
 skal opstaa uforkrænkelig af Støvet.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080356">
+<text id="plough2026080356">
 <head>
     <title>† Enkedronning Caroline Amalie</title>
     <subtitle>27. Marts 1881.</subtitle>
@@ -3652,6 +3760,7 @@ skal opstaa uforkrænkelig af Støvet.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nu drager en Dronning, af Dage mæt,
 ad Roskilde-Hus til Slægtens Stævne.
 Hun var deres Lige i Kaar som i Æt,
@@ -3678,10 +3787,11 @@ En <w>Folkemoder</w> i Graven steg ned,
 og Grenen, som lægges paa Hendes Baare,
 gjenlyder af Bønnen om Naade og Fred,
 og blinker af mangen taknemlig Taare.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080357">
+<text id="plough2026080357">
 <head>
     <title>Ved Afsløringen af Niels Juels Mindesmærke</title>
     <subtitle>21. September 1881.</subtitle>
@@ -3693,6 +3803,7 @@ og blinker af mangen taknemlig Taare.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center>1.</center></nonum>
 
 Det Hav, som bruser om vor Kyst,
@@ -3764,10 +3875,11 @@ bevar os vore Fædres Hjem!
 Lad ej vor Slægt beskæmme dem,
 men kald os nye Helte frem
     af Heltes Grav!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080358">
+<text id="plough2026080358">
 <head>
     <title>Ved Indvielsen af det tekniske Selskabs Skole</title>
     <subtitle>29. September 1881.</subtitle>
@@ -3776,6 +3888,7 @@ men kald os nye Helte frem
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Om Formens Skjønhed Haandens Arbejd smykker,
 om Stilens Renhed præger Værkets Led,
 om deres Helhed Harmoni udtrykker —
@@ -3811,10 +3924,11 @@ Gid Videnskaben hid sin Fakkel bringe
 og lette Møjen, skynde deres Værk,
 saa her et mægtigt Sundhedsvæld maa springe,
 hvor Folkeaanden to’r sig karsk og stærk!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080359">
+<text id="plough2026080359">
 <head>
     <title>Ved Grundtvigs Højskoles 25 Aars Fest</title>
     <subtitle>3. November 1881.</subtitle>
@@ -3823,6 +3937,7 @@ hvor Folkeaanden to’r sig karsk og stærk!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Om Hjerterne i Danmarks Skjold
 var kun Aakandeblade,
 og Sagnene fra Hedenold
@@ -3867,10 +3982,11 @@ men lad os rette al vor Agt
 derpaa: at faa af Dvale vakt
 og rejst til enevældig Magt
 det varme danske Hjerte!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080360">
+<text id="plough2026080360">
 <head>
     <title>† E. H. C. de Wilster</title>
     <subtitle>Januar 1882.</subtitle>
@@ -3879,6 +3995,7 @@ det varme danske Hjerte!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Af Alder og Sygdom bastet
 slæbte han Foden tungt;
 men gjennem hans Aarer hasted
@@ -3923,10 +4040,11 @@ Om Vejen var stejl eller jevnet,
 han fulgte kun Pligtens Røst
 og naa’de saa langt, som han evned,
 med Gud til Støtte og Trøst.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080361">
+<text id="plough2026080361">
 <head>
     <title>For Danmark</title>
     <subtitle>11. Marts 1882.</subtitle>
@@ -3935,6 +4053,7 @@ med Gud til Støtte og Trøst.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Vi har et gammelt Fædreland,
 hvor Stammens Arne tændtes,
 og fra hvis fyrrekronte Strand
@@ -3979,10 +4098,11 @@ Naar Hvermand trolig gjør sin Pligt,
 saasnart som Danmark kalder,
 det vorder end paa Lykke rigt,
 og staar, til Verden falder.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080362">
+<text id="plough2026080362">
 <head>
     <title>Ved William Wains Jordefærd</title>
     <subtitle>9. Maj 1882.</subtitle>
@@ -3991,6 +4111,7 @@ og staar, til Verden falder.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 En fremmed Svend, kun rig paa Mod og Snille,
 for hvem Arbejdet selv var Glædens Kilde,
 oprunden i det Smaa og af det Jevne,
@@ -4005,10 +4126,11 @@ saadan var Han, hvis Støv i Kisten gjemmes,
 som savnes paa sin Plads og sent vil glemmes.
 Hans Snilles Værk gav tusind Snekker Vinge;
 Hans Navn blandt vore bedste Mænds skal klinge!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080363">
+<text id="plough2026080363">
 <head>
     <title>For Kongen</title>
     <subtitle>1. Juli 1883.</subtitle>
@@ -4017,6 +4139,7 @@ Hans Navn blandt vore bedste Mænds skal klinge!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I Kreds om Kongen, danske Mænd!
 han Rigets Fane bærer,
 og Hver, som trofast følger den,
@@ -4070,10 +4193,11 @@ Hvis Nogen kommer dem for nær,
 saa skal der rede staa en Hær
 af Mænd, som er hans Tillid værd
 og Folkets Tak fortjene!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080364">
+<text id="plough2026080364">
 <head>
     <title>Ved Afsløringen af V. C. S. Topsøes Gravmæle</title>
     <subtitle>11. Juli 1883.</subtitle>
@@ -4082,6 +4206,7 @@ og Folkets Tak fortjene!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Han, som sover under Muld,
 var ej blot vor Ven og Fælle,
 ren af Sind og tro som Guld,
@@ -4108,10 +4233,11 @@ Evighedens Haab og Tro
 skal som Sol paa Graven skinne,
 lysne i hans øde Bo,
 tørre Taaren af hans Minde!
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080365">
+<text id="plough2026080365">
 <head>
     <title>Ved Afdækningen af Thomas Kingos Mindesmærke i Slangerup</title>
     <subtitle>20. Juli 1883.</subtitle>
@@ -4123,6 +4249,7 @@ tørre Taaren af hans Minde!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 <nonum><center>1.</center></nonum>
 
 Han var den første Fugl i Danmarks Skove,
@@ -4190,8 +4317,9 @@ hvor Du sad med Væverspolen,
 hvor Du steg paa Prækestolen,
 hvor Du svang Dig ud fra Reden
     ind i Evigheden.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section> <!-- I. Lejlighedsdigte -->
@@ -4202,13 +4330,14 @@ hvor Du svang Dig ud fra Reden
 </head>
 <content>
 
-<poem id="plough2026080366">
+<text id="plough2026080366">
 <head>
     <firstline>Man siger, Tiden er en grusom Herre</firstline>
     <source pages="173"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Man siger, Tiden er en grusom Herre,
 der ej blot piller Luv af vore Klæder,
 men knuser vore Nydelser og Glæder
@@ -4227,16 +4356,18 @@ højt paa vor fælles Arne Luen brænder;
 hvert Aar drog os kun nærmere hinanden.
 
 U:(7. Marts 1874).
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080367">
+<text id="plough2026080367">
 <head>
     <firstline>Nu er Du en Matrone</firstline>
     <source pages="174-176"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nu er Du en Matrone
 paa fyrretyve Aar,
 og Høstens Segl har studset
@@ -4308,10 +4439,11 @@ til Glæde og til Styrke
 din kjærlige Sjæl,
 indtil Vejenden kommer
 og jeg siger Dig Farvel.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2004011101">
+<text id="plough2004011101">
 <head>
     <subtitle>(7. Marts 1878).</subtitle>
     <firstline>Ak, jeg er bleven fattig, derfor rutter</firstline>
@@ -4322,6 +4454,7 @@ og jeg siger Dig Farvel.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Ak, jeg er bleven fattig, derfor rutter
 jeg ikke med Viser og Sonnetter.
 De fleste Rhytmer, som jeg sammenfletter,
@@ -4341,16 +4474,18 @@ for Dig jeg trodsig mod min Afmagt strider.
 Du faar det sidste Klimp af mine Strenge.
 
 U:(6. Juni 1879).
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080369">
+<text id="plough2026080369">
 <head>
     <firstline>Pintseklokken kimer atter</firstline>
     <source pages="178-179"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Pintseklokken kimer atter,
 kalder paa de grønne Blade,
 at de lukke Skovens Hvælving;
@@ -4404,16 +4539,18 @@ os at drage op imod sig
 i de end tilmaalte Dage.
 
 U:(7. Marts 1880).
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080370">
+<text id="plough2026080370">
 <head>
     <firstline>Du er jo ung, skjønt Tidens Alfeskare</firstline>
     <source pages="180"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Du er jo ung, skjønt Tidens Alfeskare
 lidt Sølv har tabt paa Lokkerne de brune,
 og skjønt de mange vaagne Nætters Mare
@@ -4433,16 +4570,18 @@ af ingen Livets Hagelbyge kappes,
 men gror sin stille Væxt mod Evigheden.
 
 U:(1. August 1880).
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080371">
+<text id="plough2026080371">
 <head>
     <firstline>I sneg saa tyst Jer fra Kjøbenhavn</firstline>
     <source pages="181-182"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 I sneg saa tyst Jer fra Kjøbenhavn,
 som ,,Kongens Brev'' I havde ranet,
 og skifted Stand og forandred Navn,
@@ -4484,16 +4623,18 @@ sin Naades Sæd i Eder begge To,
 og brede om sig Gavn og Glæde!
 
 U:(7. Marts 1881).
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080372">
+<text id="plough2026080372">
 <head>
     <firstline>Jeg skal ej klage over, at jeg ældes</firstline>
     <source pages="183"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Jeg skal ej klage over, at jeg ældes
 at Haarets Rester tyndes, og mit Øje
 ej skjelner skarpt, mit Øre ikke nøje,
@@ -4512,16 +4653,18 @@ og aande Ungdomsstyrke i min Tanke,
 saa Døgnets Dunstkreds aldrig den kan binde.
 
 U:(7. Marts 1883).
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080373">
+<text id="plough2026080373">
 <head>
     <firstline>Nu staar jeg ved det Grændseskjel</firstline>
     <source pages="184-187"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nu staar jeg ved det Grændseskjel
 der skiller Livets Dag og Kveld,
 og viser nær dets Nat;
@@ -4626,8 +4769,9 @@ og nye Tiders Krav,
 saa skal Du leve med deri
 et kjærligt Mindes Liv, naar vi
 er lagte i vor Grav.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section> <!-- II. Fra Hjemmet -->
@@ -4638,7 +4782,7 @@ er lagte i vor Grav.
 </head>
 <content>
 
-<poem id="plough2026080374">
+<text id="plough2026080374">
 <head>
     <title>Dronning Filippa</title>
     <subtitle>1870.</subtitle>
@@ -4647,6 +4791,7 @@ er lagte i vor Grav.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hvor yndig hun var, hvor fin og hvor spæd,
 hvor ydmyg af Sind og tugtig i Sæd,
 hvor rig uden Dronningesmykke,
@@ -4821,10 +4966,11 @@ ved Guds almægtige Naade!
 Maaske en ny Filippa staar frem,
 og sender Jer skæmmede Stumper hjem
 af Eders braskende Flaade.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080375">
+<text id="plough2026080375">
 <head>
     <title>Kristjern den Anden i Fængslet</title>
     <subtitle>(ved C. Blochs Billede).</subtitle>
@@ -4834,6 +4980,7 @@ af Eders braskende Flaade.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 O, sørgelige, sønderrevne Blad,
 hvoraf vor Stammes Saga har saa mange,
 som plettet er af Tvedragt, Nid og Had,
@@ -4950,10 +5097,11 @@ Var end hans Ungdom vild, hans Manddom haard,
 han sent har milde Rørelser fornummet,
 og sildig Efterslægt vemodig staar
 foran hans Skikkelse i Fængselsrummet.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080376">
+<text id="plough2026080376">
 <head>
     <title>Leonora Christine Ulfeldt</title>
     <firstline>Nu endelig træder hun frem, som hun var</firstline>
@@ -4961,6 +5109,7 @@ foran hans Skikkelse i Fængselsrummet.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Nu endelig træder hun frem, som hun var,
 en Dronning i Blaataarns Gjemme,
 mens den, der Kronen og Purpuret bar
@@ -5059,8 +5208,9 @@ en Datter af <w>Ham</w> ,,ved højen Mast'',
 en Mand, der af Legem kun var Kvinde;
 og rejst sig hun har med Haanden fast
 som Ærestøtte sit ,,<w>Jammers-Minde</w>''.
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section> <!-- III. Fortællende Digte -->
@@ -5071,7 +5221,7 @@ som Ærestøtte sit ,,<w>Jammers-Minde</w>''.
 </head>
 <content>
 
-<poem id="plough2026080377">
+<text id="plough2026080377">
 <head>
     <title>Svar til C. Hostrup</title>
     <subtitle>27de April 1877</subtitle>
@@ -5084,6 +5234,7 @@ som Ærestøtte sit ,,<w>Jammers-Minde</w>''.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Tak for din Hilsen, min gamle Ven,
 med manende Vemodsrøst!
 Tillad, jeg sender Dig en igjen
@@ -5137,12 +5288,13 @@ For Modvind jeg gaaer over Stag,
 og stræber at kæmpe med Slid og med Lempe mod Blæsten op;
 men fra min Top,
 der vajer det gamle Flag.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080378">
+<text id="plough2026080378">
 <head>
-    <title>Svar til Dr. S. Schandorph*)</title>
+    <title>Svar til Dr. S. Schandorph</title>
     <subtitle>
         <line>27. December 1879.</line>
         <line>,,Se, Movitz! hvi står du och gråter?''</line>
@@ -5158,6 +5310,7 @@ der vajer det gamle Flag.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Hr. Doktor, jeg takker ærbødig
 for al den Besvær, De har havt!
 for Ugerne to, De fandt nødig
@@ -5301,10 +5454,11 @@ Og skulde det nogen Tid hænde,
 at Avind medhandled Dem slemt,
 jeg ønsker Dem — ej blot for Skjemt —
 en Sejer som denne.
+</poetry>
 </body>
-</poem>
+</text>
 
-<poem id="plough2026080379">
+<text id="plough2026080379">
 <head>
     <title>Til Samtiden</title>
     <subtitle>September og Oktober 1883.</subtitle>
@@ -5313,6 +5467,7 @@ en Sejer som denne.
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<poetry>
 Højstærede Samtid! En mere beskeden
     Graaskæg end jeg
 vilde vel neppe bryde Freden
@@ -6260,8 +6415,9 @@ Frem under Loven, i Ly af dens Bud!
 Frem med hvert Overbevisningens Vaaben!
 Møder os Modstand, nu vel, saa hold ud
 <w>der</w>, indtil Vejen er aaben!
+</poetry>
 </body>
-</poem>
+</text>
 
 </content>
 </section> <!-- IV. Polemiske Digte -->
