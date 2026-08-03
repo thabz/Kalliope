@@ -3841,9 +3841,6 @@ skjønt dertil Du ærlig har gjort Dit!
     <subtitle>December 1880.</subtitle>
     <firstline>Hun var i Slægt med Roserne, og bar</firstline>
     <source pages="147-148"/>
-    <dates>
-        <event>1880-12</event>
-    </dates>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4143,9 +4140,6 @@ det varme danske Hjerte!
     <subtitle>Januar 1882.</subtitle>
     <firstline>Af Alder og Sygdom bastet</firstline>
     <source pages="158-159"/>
-    <dates>
-        <event>1882-01</event>
-    </dates>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5396,9 +5390,9 @@ som Ærestøtte sit ,,<w>Jammers-Minde</w>''.
     <firstline>Tak for din Hilsen, min gamle Ven</firstline>
     <notes>
         <note>*) Hostrups Digt til Forf. var skrevet 16. og 21. April og indført i ,,Dansk Folketidende'' for 27de.</note>
+        <note>Se Hostrups <xref poem="hostrup2018051019"/></note>
     </notes>
     <source pages="209-211"/>
-    <!-- TODO: Find Hostrups digt -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5465,19 +5459,20 @@ der vajer det gamle Flag.
     <title>Svar til Dr. S. Schandorph</title>
     <subtitle>
         <line>27. December 1879.</line>
-        <line>,,Se, Movitz! hvi står du och gråter?''</line>
-        <line><i>Bellman.</i></line>
     </subtitle>
     <firstline>Hr. Doktor, jeg takker ærbødig</firstline>
     <notes>
         <note>*) Dr. Schandorphs Angreb var indført i ,,Morgenbladet'' Nr. 299 for 24. December 1879.</note>
+        <!-- TODO: Find Schandorphs Angreb fra ,,Morgenbladet'' -->
     </notes>
     <source pages="212-217"/>
-    <!-- TODO: Find digtet -->
-    <!-- TODO: Lav citat ud af Bellman -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<quote margin-left="30%" font-size="small" lang="sv">
+,,Se, Movitz! hvi står du och gråter?''
+<i>Bellman.</i>
+</quote>
 <poetry>
 Hr. Doktor, jeg takker ærbødig
 for al den Besvær, De har havt!
