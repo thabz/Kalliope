@@ -16,9 +16,9 @@
 
 <text id="plough2026080301">
 <head>
-    <title><i>Til min Hustru</i></title>
-    <firstline><i>Det bliver sagtens den sidste Gang</i></firstline>
-    <source pages="I" facsimile-pages="10" />
+    <title>Til min Hustru</title>
+    <firstline>Det bliver sagtens den sidste Gang</firstline>
+    <source pages="I" facsimile-pages="15" />
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -97,11 +97,13 @@ til Ham, fra hvem alt Lyset kom.
 
 <text id="plough2026080303">
 <head>
-    <title>† Niels Laurits Høyen</title>
+    <suptitle>†</suptitle>
+    <title>Niels Laurits Høyen</title>
+    <linktitle>† Niels Laurits Høyen</linktitle>
+    <toctitle>† Niels Laurits Høyen</toctitle>
     <subtitle>29. April 1870.</subtitle>
     <firstline>Nu tier den Røst, hvis mægtige Klang</firstline>
     <source pages="3-4"/>
-    <!-- TODO: suptitle -->
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -151,6 +153,7 @@ et Maal af vort Liv er tilbage lagt.
     <subtitle>19. November 1870.</subtitle>
     <firstline>Med Lys og Skygge, med Vinter og Vaar</firstline>
     <source pages="5-7"/>
+    <keywords>thorvaldsen</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -802,11 +805,15 @@ og vorde læst til Thinge!
 
 <text id="plough2026080314">
 <head>
-    <title>† Vilhelm Marstrand</title>
+    <suptitle>†</suptitle>
+    <title>Vilhelm Marstrand</title>
+    <toctitle>† Vilhelm Marstrand</toctitle>
+    <linktitle>† Vilhelm Marstrand</linktitle>
     <subtitle>8. April 1873.</subtitle>
     <firstline>Nu slukkedes en Stjerne af de faa</firstline>
     <source pages="32-34"/>
     <quality>korrektur1,kilde,side</quality>
+    <keywords>marstrand</keywords>
 </head>
 <body>
 <poetry>
@@ -1602,7 +1609,10 @@ omkring sin Drot!
 
 <text id="plough2026080322">
 <head>
-    <title>† Vilhelmine Smith</title>
+    <suptitle>†</suptitle>
+    <title>Vilhelmine Smith</title>
+    <linktitle>† Vilhelmine Smith</linktitle>
+    <toctitle>† Vilhelmine Smith</toctitle>
     <subtitle>16. Oktober 1874.</subtitle>
     <firstline>Hun var ikkun en gammel enlig Kvinde</firstline>
     <source pages="64-65"/>
@@ -1700,7 +1710,10 @@ med Skam af Verdens Kort.
 
 <text id="plough2026080324">
 <head>
-    <title>† Christian Flor</title>
+    <suptitle>†</suptitle>
+    <title>Christian Flor</title>
+    <toctitle>† Christian Flor</toctitle>
+    <linktitle>† Christian Flor</linktitle>
     <subtitle>9. April 1875.</subtitle>
     <firstline>Vort Modersmaal han elsked — hun var hans Ungdomsbrud</firstline>
     <source pages="68-69"/>
@@ -3214,7 +3227,7 @@ Sandhedens aarvaagne, frejdige Vagt!
 <head>
     <title>Ved et Bryllup</title>
     <subtitle>14. August 1879.</subtitle>
-    <firstline>Hvor trives Lykkens Blomst mon <w>bedst</w></firstline>
+    <firstline>Hvor trives Lykkens Blomst mon bedst</firstline>
     <source pages="129-130"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -3478,7 +3491,10 @@ hvad Frugter det har baaret.
 
 <text id="plough2026080351">
 <head>
-    <title>† Anna Nørregaard</title>
+    <suptitle>†</suptitle>
+    <title>Anna Nørregaard</title>
+    <linktitle>† Anna Nørregaard</linktitle>
+    <toctitle>† Anna Nørregaard</toctitle>
     <subtitle>8. Marts 1880.</subtitle>
     <firstline>Højbaaren var hun af Hjerte og Vilje</firstline>
     <source pages="139-140"/>
@@ -3701,7 +3717,10 @@ skjønt dertil Du ærlig har gjort Dit!
 
 <text id="plough2026080355">
 <head>
-    <title>† Michaela Ingerslev</title>
+    <suptitle>†</suptitle>
+    <title>Michaela Ingerslev</title>
+    <toctitle>† Michaela Ingerslev</toctitle>
+    <linktitle>† Michaela Ingerslev</linktitle>
     <subtitle>December 1880.</subtitle>
     <firstline>Hun var i Slægt med Roserne, og bar</firstline>
     <source pages="147-148"/>
@@ -3750,7 +3769,10 @@ skal opstaa uforkrænkelig af Støvet.
 
 <text id="plough2026080356">
 <head>
-    <title>† Enkedronning Caroline Amalie</title>
+    <suptitle>†</suptitle>
+    <title>Enkedronning Caroline Amalie</title>
+    <toctitle>† Enkedronning Caroline Amalie</toctitle>
+    <linktitle>† Enkedronning Caroline Amalie</linktitle>
     <subtitle>27. Marts 1881.</subtitle>
     <firstline>Nu drager en Dronning, af Dage mæt</firstline>
     <source pages="149-150"/>
@@ -3988,7 +4010,10 @@ det varme danske Hjerte!
 
 <text id="plough2026080360">
 <head>
-    <title>† E. H. C. de Wilster</title>
+    <suptitle>†</suptitle>
+    <title>E. H. C. de Wilster</title>
+    <toctitle>† E. H. C. de Wilster</toctitle>
+    <linktitle>† E. H. C. de Wilster</linktitle>
     <subtitle>Januar 1882.</subtitle>
     <firstline>Af Alder og Sygdom bastet</firstline>
     <source pages="158-159"/>
@@ -4332,6 +4357,7 @@ hvor Du svang Dig ud fra Reden
 
 <text id="plough2026080366">
 <head>
+    <subtitle>(7. Marts 1874).</subtitle>
     <firstline>Man siger, Tiden er en grusom Herre</firstline>
     <source pages="173"/>
     <quality>korrektur1,kilde,side</quality>
@@ -4354,8 +4380,6 @@ og rusked fælt i Ører og i Tænder,
 staar Følelsernes Brønd dog fuld til Randen;
 højt paa vor fælles Arne Luen brænder;
 hvert Aar drog os kun nærmere hinanden.
-
-U:(7. Marts 1874).
 </poetry>
 </body>
 </text>
@@ -4473,13 +4497,13 @@ For Dig jeg gjør, hvad ej jeg gjør for Penge;
 for Dig jeg trodsig mod min Afmagt strider.
 Du faar det sidste Klimp af mine Strenge.
 
-U:(6. Juni 1879).
 </poetry>
 </body>
 </text>
 
 <text id="plough2026080369">
 <head>
+    <subtitle>(6. Juni 1879).</subtitle>
     <firstline>Pintseklokken kimer atter</firstline>
     <source pages="178-179"/>
     <quality>korrektur1,kilde,side</quality>
@@ -4538,13 +4562,13 @@ os at styrke, os at lære,
 os at drage op imod sig
 i de end tilmaalte Dage.
 
-U:(7. Marts 1880).
 </poetry>
 </body>
 </text>
 
 <text id="plough2026080370">
 <head>
+    <subtitle>(7. Marts 1880).</subtitle>
     <firstline>Du er jo ung, skjønt Tidens Alfeskare</firstline>
     <source pages="180"/>
     <quality>korrektur1,kilde,side</quality>
@@ -4569,13 +4593,13 @@ Og Begge er vi unge, naar vort Eden
 af ingen Livets Hagelbyge kappes,
 men gror sin stille Væxt mod Evigheden.
 
-U:(1. August 1880).
 </poetry>
 </body>
 </text>
 
 <text id="plough2026080371">
 <head>
+    <subtitle>(1. August 1880).</subtitle>
     <firstline>I sneg saa tyst Jer fra Kjøbenhavn</firstline>
     <source pages="181-182"/>
     <quality>korrektur1,kilde,side</quality>
@@ -4622,7 +4646,6 @@ sin Naades Sæd i Eder begge To,
         nok staa ved Magt
 og brede om sig Gavn og Glæde!
 
-U:(7. Marts 1881).
 </poetry>
 </body>
 </text>
@@ -4630,6 +4653,7 @@ U:(7. Marts 1881).
 <text id="plough2026080372">
 <head>
     <firstline>Jeg skal ej klage over, at jeg ældes</firstline>
+    <subtitle>(7. Marts 1881).</subtitle>
     <source pages="183"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -4652,7 +4676,6 @@ og skærme den mod mørke Luners Vinde,
 og aande Ungdomsstyrke i min Tanke,
 saa Døgnets Dunstkreds aldrig den kan binde.
 
-U:(7. Marts 1883).
 </poetry>
 </body>
 </text>
@@ -4660,6 +4683,7 @@ U:(7. Marts 1883).
 <text id="plough2026080373">
 <head>
     <firstline>Nu staar jeg ved det Grændseskjel</firstline>
+    <subtitle>(7. Marts 1883).</subtitle>
     <source pages="184-187"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -4976,7 +5000,9 @@ af Eders braskende Flaade.
     <subtitle>(ved C. Blochs Billede).</subtitle>
     <firstline>O, sørgelige, sønderrevne Blad</firstline>
     <source pages="198-202"/>
-    <!-- TODO: Indsæt <picture ref="bloch/christian2-1871"> -->
+    <pictures>
+        <picture ref="bloch/christian2-1871"/>
+    </pictures>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5106,6 +5132,7 @@ foran hans Skikkelse i Fængselsrummet.
     <title>Leonora Christine Ulfeldt</title>
     <firstline>Nu endelig træder hun frem, som hun var</firstline>
     <source pages="203-206"/>
+    <keywords>leonora</keywords>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
