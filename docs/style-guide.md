@@ -16,6 +16,8 @@ Læs den relevante specialdokumentation før ændringer på området:
 - `docs/xml-work-format.md` ved ændringer i XML-værkfiler
 - `docs/facsimile-korrektur.md` ved transskription og fuld korrektur af tekst,
   strofer og typografi mod et facsimile
+- `docs/ocr-korrektur-laerebog.md` ved generelle læringsprincipper for redigering
+  og reparation af OCR-scannede tekster
 - `docs/kalliope-xml-design-v1.1.md` ved ændringer i XML-modellen for
   publikationer, antologier og tekstforekomster
 - `docs/kalliope-masterplan.md` ved arbejde med korpusets afgrænsning,
