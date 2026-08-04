@@ -1,5 +1,14 @@
 # SQLite-indeks (statisk build)
 
+Dette er den foretrukne datakilde for agenter og analyseværktøjer, når en
+forespørgsel kan løses med de indekserede felter. Start med SQL her i stedet
+for at scanne alle XML-filer. Gå til `fdirs/` eller `content/`, hvis et felt
+mangler i databasen, eller hvis den originale XML-kilde skal verificeres.
+
+Åbn en interaktiv session med `make sqlite`. Databasen skal først være bygget
+med `make build-static` eller `npm run build-static`; `make sqlite` bygger ikke
+automatisk databasen.
+
 Bygning:
 - Trigger: `npm run build-static`
 - Output: `public/api/kalliope.sqlite`
@@ -58,6 +67,10 @@ Bygning:
   - Nøgle: `source_file`
   - Holder seneste hash/mtime til ændringstjek.
 
+SQLite-filen er et genereret, internt analyseartefakt; den er ikke en del af
+frontendens API. `caches/sqlite-index-build.sql` er kun en valgfri debug-/
+importcache og skal ikke redigeres som datakilde.
+
 ## Relationer
 
 - `poet` 1:N `work`
@@ -66,6 +79,15 @@ Bygning:
 - `text` 1:N `event`
 - `text` 1:N `source`
 - `text_search_index.text_id` peger mod `text.text_id`
+
+## Arbejdsgang for agenter
+
+1. Afgræns forespørgslen til de felter og relationer, der er beskrevet her.
+2. Kør en SQL-forespørgsel mod `public/api/kalliope.sqlite`.
+3. Brug XML-filerne som kildecheck eller fallback, ikke som første søgestrategi.
+
+Databasen er et genereret analyseartefakt og må ikke redigeres manuelt. Kør et
+nyt static-build efter ændringer i XML eller buildlogikken.
 
 ## Typiske queries
 
@@ -98,6 +120,16 @@ JOIN event e1 ON e1.text_id = t.text_id AND e1.event_type = 'printed'
 JOIN event e2 ON e2.text_id = t.text_id AND e2.event_type = 'performed';
 ```
 
+- Antal indekserbare tekster pr. forfatter og type:
+
+```sql
+SELECT poet_id, type, COUNT(*) AS n
+FROM text
+WHERE indexable = 1
+GROUP BY poet_id, type
+ORDER BY n DESC;
+```
+
 - Seneste ændrede filer ifølge source hash:
 
 ```sql
@@ -105,3 +137,16 @@ SELECT source_file, sha1, datetime(updated_at / 1000, 'unixepoch') AS updated_at
 FROM source_file_hash
 ORDER BY updated_at DESC;
 ```
+
+- Tekster uden registreret dato, hvor brødteksten indeholder en mulig dato:
+
+```sql
+SELECT t.text_id
+FROM text t
+JOIN text_content c ON c.text_id = t.text_id
+WHERE NOT EXISTS (SELECT 1 FROM event e WHERE e.text_id = t.text_id)
+  AND lower(c.normalized_text) LIKE '% januar %';
+```
+
+Ovenstående er kun et simpelt eksempel. En mere præcis datoanalyse kræver
+enten en SQLite-regexp-extension eller behandling af resultatet i et script.

@@ -47,6 +47,21 @@ Hvis cachede build-data driller, kan hele static-buildet tvinges igennem:
 npm run build-static-force-reload
 ```
 
+## Forespørgsler i korpusindekset
+
+Static-buildet opretter `public/api/kalliope.sqlite`, som er den hurtige vej
+til opslag, optællinger og audits på tværs af korpusdata. Se
+[`docs/sqlite-index.md`](docs/sqlite-index.md) for skema, relationer og
+eksempler. Åbn databasen interaktivt med:
+
+```shell
+make sqlite
+```
+
+Brug SQLite før en gennemgang af alle XML-filer; gå kun til XML, når de
+nødvendige oplysninger ikke findes i indekset, eller når kilde-XML'en skal
+kontrolleres.
+
 Kør testene før større ændringer eller pull requests:
 
 ```shell
