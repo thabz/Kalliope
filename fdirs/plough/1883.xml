@@ -3841,9 +3841,6 @@ skjønt dertil Du ærlig har gjort Dit!
     <subtitle>December 1880.</subtitle>
     <firstline>Hun var i Slægt med Roserne, og bar</firstline>
     <source pages="147-148"/>
-    <dates>
-        <event>1880-12</event>
-    </dates>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4143,9 +4140,6 @@ det varme danske Hjerte!
     <subtitle>Januar 1882.</subtitle>
     <firstline>Af Alder og Sygdom bastet</firstline>
     <source pages="158-159"/>
-    <dates>
-        <event>1882-01</event>
-    </dates>
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5469,7 +5463,7 @@ der vajer det gamle Flag.
     <firstline>Hr. Doktor, jeg takker ærbødig</firstline>
     <notes>
         <note>*) Dr. Schandorphs Angreb var indført i ,,Morgenbladet'' Nr. 299 for 24. December 1879.</note>
-        <!-- TODO: Find Schandorphs Angreb fra ,,Morgenbladet'' -->
+        <note>Se Schandorph: <xref poem="schandorph2026080401"/>.</note>
     </notes>
     <source pages="212-217"/>
     <quality>korrektur1,kilde,side</quality>
