@@ -4,7 +4,7 @@ Bygning:
 - Trigger: `npm run build-static`
 - Output: `public/api/kalliope.sqlite`
 - Optionelt SQL-debug: `caches/sqlite-index-build.sql`
-- Bruger `isFileModified` + `source_file_hash` (sha1/mtime) til at springe build over ved uændrede kilder.
+- Bruger `isFileModified` til at springe build over ved uændrede kilder.
 - Inkrementel opdatering:
   - Ved ændring af kildefiler findes berørte tekst/work/poet rækker via source-mapping.
   - De berørte rækker slettes først, hvorefter nye rækker indsættes.
@@ -20,14 +20,14 @@ Bygning:
       1) Identificér berørte `text_id` via mapping.
       2) Slet disse rækker fra `text_search_index`, `text_content`, `text`, `source`, `event`.
       3) Genopbyg kun disse `text_id` + parent `work_id`/`poet_id`.
-      4) Opdater `source_file_hash` for de ændrede filer.
+      4) Opdater filcache for de ændrede filer.
 
 ## Kendte begrænsninger
 
 - `DELETE`/`INSERT` sker per `poet/work/text`-scope; afhængigheder uden eksplicit source-mapping kan udløse fuld rebuild.
 - Ændringer i ukendte filer (ikke i den indsamlede source-liste) eller ugyldige mapping-regler vælger fuld genopbygning.
-- `source_file_hash` indeholder alle registrerede source-filer; sletning af en fil i kilden udløser rebuild af de afhængige rækker efter detekterede manglende mapning.
-- FTS5 bruges hvor tilgængeligt; i miljø uden FTS5 kører fallback via `text_search_index`-feltet.
+- FTS5 er ikke bygget i denne version; søgning bruger `text_search_index` med `LIKE`-fallback.
+- Hvis `sqlite3` CLI mangler, springes SQLite-opbygning af over, så `npm run build-static` stadig gennemføres.
 
 ## Tabeller
 
@@ -52,12 +52,6 @@ Bygning:
 - `text_search_index`
   - Nøgle: `text_id`
   - Denormaliseret søgeflade med `raw_text`, titler, evt. datoer og nøgleord.
-- `text_search_index_fts`
-  - Opretter FTS5-index ved tilgængelighed (fallback anvendes ikke nødvendigvis ved test-miljø).
-- `source_file_hash`
-  - Nøgle: `source_file`
-  - Holder seneste hash/mtime til ændringstjek.
-
 ## Relationer
 
 - `poet` 1:N `work`
@@ -96,12 +90,4 @@ SELECT t.text_id, t.title
 FROM text t
 JOIN event e1 ON e1.text_id = t.text_id AND e1.event_type = 'printed'
 JOIN event e2 ON e2.text_id = t.text_id AND e2.event_type = 'performed';
-```
-
-- Seneste ændrede filer ifølge source hash:
-
-```sql
-SELECT source_file, sha1, datetime(updated_at / 1000, 'unixepoch') AS updated_at
-FROM source_file_hash
-ORDER BY updated_at DESC;
 ```

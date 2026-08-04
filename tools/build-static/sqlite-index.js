@@ -5,7 +5,6 @@ import * as Paths from '../../common/paths.js';
 
 const SQLITE_INDEX_SCHEMA = `
 BEGIN;
-DROP TABLE IF EXISTS source_file_hash;
 DROP TABLE IF EXISTS text_search_index_fts;
 DROP TABLE IF EXISTS text_search_index;
 DROP TABLE IF EXISTS text_content;
@@ -144,17 +143,10 @@ CREATE TABLE text_search_index (
   event_iso TEXT,
   event_raw TEXT
 );
-CREATE TABLE source_file_hash (
-  source_file TEXT PRIMARY KEY,
-  sha1 TEXT NOT NULL,
-  mtime_ms INTEGER,
-  updated_at INTEGER
-);
 CREATE INDEX idx_text_work_id ON text(work_id);
 CREATE INDEX idx_text_poet_id ON text(poet_id);
 CREATE INDEX idx_event_text_id ON event(text_id);
 CREATE INDEX idx_event_poet_id ON event(poet_id);
-CREATE VIRTUAL TABLE text_search_index_fts USING fts5(raw_text, content="text_search_index", content_rowid="rowid");
 `;
 
 const SQL_CACHE_FILE = path.resolve('caches/sqlite-index-build.sql');
@@ -406,9 +398,6 @@ const buildFallbackSql = (collected) => {
     });
 
   const statements = insertRows.map((statement) => `${statement};`);
-  statements.push(
-    'INSERT INTO text_search_index_fts (rowid, raw_text) SELECT rowid, raw_text FROM text_search_index;'
-  );
   statements.push('COMMIT;');
   return statements.join('\n');
 };
@@ -422,13 +411,32 @@ export const updateSqliteIndex = (collected) => {
   const rawSql = fs.existsSync(SQL_CACHE_FILE)
     ? fs.readFileSync(SQL_CACHE_FILE, 'utf8')
     : buildFallbackSql(collected);
-  const fixedSql = fixSqlSemicolons(rawSql);
+  const fallbackSql = rawSql.includes('text_search_index_fts')
+    ? rawSql.replace(
+        /CREATE\s+VIRTUAL\s+TABLE\s+text_search_index_fts[^(]*\([^;]*;\s*/gi,
+        '',
+      )
+    : rawSql;
+  const fixedSql = fixSqlSemicolons(fallbackSql).replace(
+    /INSERT INTO text_search_index_fts[^;]*;\n?/g,
+    '',
+  );
 
   const importSqlite = spawnSync('sqlite3', [SQLITE_PATH], {
     input: fixedSql,
     encoding: 'utf8',
     stdio: ['pipe', process.stdout, process.stderr],
   });
+
+  if (
+    importSqlite.error != null &&
+    importSqlite.error.code === 'ENOENT'
+  ) {
+    console.log(
+      'Springer opdatering af SQLite-index over: sqlite3 CLI mangler i PATH.',
+    );
+    return false;
+  }
 
   if (importSqlite.status !== 0) {
     throw new Error(
