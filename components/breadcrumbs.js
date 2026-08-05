@@ -207,6 +207,9 @@ const Breadcrumbs = (props) => {
           flex-wrap: wrap;
           line-height: 19px;
         }
+        nav :global(a) {
+          text-decoration: none;
+        }
         nav:empty::before {
           content: 'Kalliope';
           visibility: hidden;

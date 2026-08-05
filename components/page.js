@@ -204,7 +204,19 @@ const Page = (props) => {
           }
           :global(a) {
             color: ${CommonData.linkColor};
+            text-decoration-thickness: 0.5px !important;
+          }
+          :global(.prose-paragraph a),
+          :global(.poem-line a) {
+            text-decoration: underline;
+            text-underline-offset: 0.12em;
+          }
+          :global(.tabs a) {
             text-decoration: none;
+          }
+          :global(a:focus-visible) {
+            outline: 2px solid ${CommonData.linkColor};
+            outline-offset: 3px;
           }
           :global(a):global(.lighter) {
             color: ${CommonData.lightLinkColor};
