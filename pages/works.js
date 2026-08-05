@@ -158,7 +158,7 @@ const WorksPage = (props) => {
       <div className="two-columns no-link-underline">
         {stack}
         <style jsx>{`
-          :global(.no-link-underline a) {
+          :global(.no-link-underline a:not([href*='/museum/'])) {
             text-decoration: none;
           }
           :global(.nodata) {
