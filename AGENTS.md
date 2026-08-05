@@ -9,6 +9,17 @@ Disse regler gælder for AI-agenter og automatiserede assistenter, der arbejder 
 - Læs derefter den specialdokumentation, som stilguiden henviser til for det
   relevante område.
 
+## Forespørgsler på korpusdata
+
+- Brug den genererede SQLite-database `public/api/kalliope.sqlite` til opslag,
+  optællinger, filtrering og audit af korpusdata, når forespørgslen kan løses
+  der. Læs `docs/sqlite-index.md` først.
+- Scan ikke alle XML-filer i `fdirs/` eller `content/` som førstevalg. Gå kun
+  til XML, når databasen ikke indeholder de nødvendige felter, eller når den
+  konkrete opgave kræver kilde-XML'en.
+- Databasen bygges med `make build-static` eller `npm run build-static`. Brug
+  `make sqlite` for at åbne en lokal SQLite-session efter et build.
+
 ## Git og GitHub
 
 - Hele testpakken skal køres og bestå, før der oprettes en PR.
