@@ -155,9 +155,12 @@ const WorksPage = (props) => {
       poet={poet}
       selectedMenuItem="works">
       <PageLead>{worksLead(poet, lang)}</PageLead>
-      <div className="two-columns">
+      <div className="two-columns no-link-underline">
         {stack}
         <style jsx>{`
+          :global(.no-link-underline a) {
+            text-decoration: none;
+          }
           :global(.nodata) {
             padding: 30px 0;
           }

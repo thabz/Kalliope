@@ -215,7 +215,14 @@ const Poets = (props) => {
         countryToURL={countryCodeToURL}
         selectedCountry={country}
       />
-      {renderedGroups}
+      <div className="poets-overview">
+        {renderedGroups}
+      </div>
+      <style jsx>{`
+        :global(.poets-overview a) {
+          text-decoration: none;
+        }
+      `}</style>
     </Page>
   );
 };
