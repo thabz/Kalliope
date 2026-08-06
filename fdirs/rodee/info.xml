@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="rodee" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Edith</firstname>
+    <lastname>Rode</lastname>
+    <christened>Edith Nebelong</christened>
+  </name>
+  <period>
+    <born>
+      <date>1879-02-23</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1956-09-03</date>
+      <place>Frederiksberg</place>
+    </dead>
+  </period>
+  <works>1920,1933,1952</works>
+</person>
