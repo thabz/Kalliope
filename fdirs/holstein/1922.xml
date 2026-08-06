@@ -1633,7 +1633,7 @@ Liv, der groer. —
 </body>
 </text>
 
-<text id="holstein2024041224">
+<text id="holstein2024041224" ignore-tests="repeated-adjacent-word">
 <head>
     <title>Foraarsaften</title>
     <firstline>Gaa, Pige, din Skæbne i Møde</firstline>
@@ -2147,13 +2147,13 @@ Gustent Græs gi’r mager Mælk i Spande —
 Denne Kvide voldte du, St. Hans.
 Straaet staar og smægter,
 men du nægter
-Muldens Tørstige din MiJdheds Tegn,,
+Muldens Tørstige din Mildheds Tegn,,
 hører ej de Bønner,
 som de stønner:
 Kommer ikke snart den gode Regn?
 
 Men en Tordenbløde efter Tørke
-er som Guds Musik at lytte tiL
+er som Guds Musik at lytte til
 Skønt at høre gemt i Kamrets Mørke
 dette Frugtbarhedens Harpespil.
 Glemt er glad Mands Kummer,

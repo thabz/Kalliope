@@ -1,13 +1,43 @@
 import { findOcrCandidates } from './report-ocr-candidates.js';
 import { collectPoemLineQualityFindings } from './text-quality-poem-lines.js';
+import { normalizeMinDate } from './text-quality-filters.js';
 
 const normalizePath = filename => filename.replace(/^\.\//, '').replace(/\\/g, '/');
 
 const parseArgs = () => {
   const args = process.argv.slice(2);
-  const json = args.includes('--json');
-  const files = args.filter(arg => !arg.startsWith('--')).map(normalizePath);
-  return { json, files: files.length === 0 ? null : files };
+  let json = false;
+  let facsimileOnly = false;
+  let minDate = null;
+  const files = [];
+
+  for (let index = 0; index < args.length; index += 1) {
+    const arg = args[index];
+    if (arg === '--json') {
+      json = true;
+    } else if (arg === '--facsimile-only') {
+      facsimileOnly = true;
+    } else if (arg === '--min-date') {
+      index += 1;
+      if (args[index] == null) {
+        throw new Error('--min-date kræver en dato i formatet YYYY-MM-DD.');
+      }
+      minDate = normalizeMinDate(args[index]);
+    } else if (arg.startsWith('--min-date=')) {
+      minDate = normalizeMinDate(arg.slice('--min-date='.length));
+    } else if (arg.startsWith('--')) {
+      throw new Error(`Ukendt option: ${arg}`);
+    } else {
+      files.push(normalizePath(arg));
+    }
+  }
+
+  return {
+    json,
+    minDate,
+    facsimileOnly,
+    files: files.length === 0 ? null : files,
+  };
 };
 
 const compareTextQualityIssues = (a, b) => {
@@ -67,21 +97,32 @@ const formatSummary = (issues, technicalError = null) => {
 };
 
 const run = () => {
-  const { json, files } = parseArgs();
   const rootDir = process.cwd();
+  let json = false;
   const result = {
     issues: [],
   };
 
   try {
+    const options = parseArgs();
+    json = options.json;
+    const { files, minDate, facsimileOnly } = options;
     const ocrCandidates = findOcrCandidates({
       rootDir,
       files,
+      minDate,
+      facsimileOnly,
       disabledTests: process.env.DISABLED_TESTS ?? '',
     });
-    const poemLineFindings = collectPoemLineQualityFindings({ rootDir, files });
+    const poemLineFindings = collectPoemLineQualityFindings({
+      rootDir,
+      files,
+      minDate,
+      facsimileOnly,
+    });
     result.issues = [...poemLineFindings.map(toPoemLineIssue), ...ocrCandidates.map(toOcrIssue)].sort(compareTextQualityIssues);
   } catch (error) {
+    const json = process.argv.includes('--json');
     const summary = formatSummary(result.issues, error.message);
     if (json) {
       console.log(JSON.stringify(summary, null, 2));

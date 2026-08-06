@@ -1,6 +1,10 @@
 import fs from 'fs';
 import path from 'path';
 import { fileExists, loadText } from './libs/helpers.js';
+import {
+  filterTextDataByMinDate,
+  hasPdfFacsimile,
+} from './text-quality-filters.js';
 
 const flatten = array => [].concat(...array);
 
@@ -355,6 +359,8 @@ const formatPoemLineIssue = issue =>
 const collectPoemLineQualityFindings = ({
   rootDir = process.cwd(),
   files = null,
+  minDate = null,
+  facsimileOnly = false,
 } = {}) => {
   const fileMetadata = parsePoetWorkFiles(rootDir);
   const allowedFiles = files == null
@@ -373,8 +379,11 @@ const collectPoemLineQualityFindings = ({
     if (data == null) {
       throw new Error(`Missing file ${relativePath}.`);
     }
+    if (facsimileOnly && !hasPdfFacsimile(data)) {
+      continue;
+    }
     fileByFilename.set(item.filename, {
-      data,
+      data: filterTextDataByMinDate(data, minDate),
       ...item,
       path: relativePath,
     });

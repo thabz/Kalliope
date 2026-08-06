@@ -1431,7 +1431,7 @@ Med et Smiil; Behold den, Kjære!
 </body>
 </text>
 
-<text id="schaldemose2026011146">
+<text id="schaldemose2026011146" ignore-tests="repeated-adjacent-word">
 <head>
     <title><num>46.</num>Kjærlighed</title>
     <firstline>Noget tungt det er at elske</firstline>
@@ -2700,7 +2700,7 @@ Skjælmen alt for vel.
 <text id="schaldemose2026011182">
 <head>
     <title>Raseriet</title>
-    <firstline>Drikke, rase vil jeg jeg nu!</firstline>
+    <firstline>Drikke, rase vil jeg nu!</firstline>
     <notes>
         <note>Efterligning af Anakreontika <xref type="translation" poem="anakreontika2025122831"/>.</note>
     </notes>
@@ -2709,7 +2709,7 @@ Skjælmen alt for vel.
 </head>
 <body>
 <poetry>
-Drikke, rase vil jeg jeg nu!
+Drikke, rase vil jeg nu!<note>jeg] jeg jeg</note>
 Rased' ei, Alkmæon! du?
 Og Orest med nøgen Fod,
 Da det røde Moderblod
