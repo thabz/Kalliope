@@ -1894,7 +1894,7 @@ Hvad kan man ønske Dem og Dyden meer?
 </body>
 </text>
 
-<text id="rahbek2020010424">
+<text id="rahbek2020010424" ignore-tests="repeated-adjacent-word">
 <head>
     <title>P. Gierløvs Minde</title>
     <firstline>Klager Dydens fromme Sønner, klager!</firstline>
@@ -2936,9 +2936,9 @@ Lundene istemme hendes Klage,
 Kilderne begræde Cypris Ven,
 Blomsterne af Kummer visne hen;
 Over alles, lyder hendes Klage:
-  Adonis! ak Adonis er er mere!
+  Adonis! ak Adonis er ei mere!
 Fierne Gienlyd jamrende gientage:
-  Ak Adonis er er meer!
+  Ak Adonis er ei meer!
 Hvo sørger er med Kærligheds Gudinde;
 Da over døde Elskers Liig
 Hun saae hans Purpurblod at rinde,
