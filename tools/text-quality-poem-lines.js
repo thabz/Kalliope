@@ -367,15 +367,16 @@ const collectPoemLineQualityFindings = ({
   const aliasLocations = new Map();
 
   for (const item of fileMetadata) {
-    const fullpath = `fdirs/${item.filename}`;
+    const relativePath = path.join('fdirs', item.filename);
+    const fullpath = path.join(rootDir, relativePath);
     const data = loadText(fullpath);
     if (data == null) {
-      throw new Error(`Missing file ${fullpath}.`);
+      throw new Error(`Missing file ${relativePath}.`);
     }
     fileByFilename.set(item.filename, {
       data,
       ...item,
-      path: fullpath,
+      path: relativePath,
     });
   }
 

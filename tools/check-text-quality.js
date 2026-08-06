@@ -1,7 +1,7 @@
 import { findOcrCandidates } from './report-ocr-candidates.js';
 import { collectPoemLineQualityFindings } from './text-quality-poem-lines.js';
 
-const normalizePath = filename => filename.replace(/^\.\//, '').replace(/^fdirs\//, '').replace(/\\/g, '/');
+const normalizePath = filename => filename.replace(/^\.\//, '').replace(/\\/g, '/');
 
 const parseArgs = () => {
   const args = process.argv.slice(2);
