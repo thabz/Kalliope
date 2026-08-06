@@ -50,8 +50,32 @@ const compareTextQualityIssues = (a, b) => {
   return 0;
 };
 
+const contextAroundMatch = (context, match, wordsOnEachSide = 5) => {
+  if (match == null || match === '') {
+    return context;
+  }
+
+  const matchStart = context.toLocaleLowerCase().indexOf(match.toLocaleLowerCase());
+  if (matchStart === -1) {
+    return context;
+  }
+
+  const matchEnd = matchStart + match.length;
+  const tokens = [...context.matchAll(/[\p{L}\p{N}]+(?:['’’-][\p{L}\p{N}]+)*/gu)].map(token => ({
+    start: token.index,
+    end: token.index + token[0].length,
+  }));
+  const before = tokens.filter(token => token.end <= matchStart).slice(-wordsOnEachSide);
+  const after = tokens.filter(token => token.start >= matchEnd).slice(0, wordsOnEachSide);
+  const start = before[0]?.start ?? matchStart;
+  const end = after.at(-1)?.end ?? matchEnd;
+  const prefix = start > 0 ? '... ' : '';
+  const suffix = end < context.length ? ' ...' : '';
+  return `${prefix}${context.slice(start, end)}${suffix}`;
+};
+
 const asHumanLine = issue =>
-  `${issue.severity}\t${issue.file}:${issue.line ?? ''}\t${issue.rule}\t${issue.textId ?? ''}\t${issue.description}\t${issue.excerpt ?? ''}`;
+  `${issue.severity}\t${issue.file}:${issue.line ?? ''}\t${issue.rule}\t${issue.textId ?? ''}\t${issue.description}${issue.match == null ? '' : ` [match: ${issue.match}]`}\t${issue.match == null ? issue.excerpt ?? '' : contextAroundMatch(issue.excerpt ?? '', issue.match)}`;
 
 const toOcrIssue = candidate => ({
   file: candidate.file,
@@ -60,6 +84,7 @@ const toOcrIssue = candidate => ({
   rule: candidate.rule,
   severity: candidate.priority,
   description: candidate.reason ?? candidate.rule,
+  match: candidate.word,
   excerpt: candidate.context,
   source: 'ocr-candidates',
 });
@@ -71,6 +96,7 @@ const toPoemLineIssue = issue => ({
   rule: issue.rule,
   severity: issue.severity,
   description: issue.description,
+  match: issue.match,
   excerpt: issue.excerpt,
   source: 'poem-lines',
 });
