@@ -12,10 +12,12 @@ automatisk databasen.
 Bygning:
 - Trigger: `npm run build-static`
 - Output: `public/api/kalliope.sqlite`
-- Optionelt SQL-debug: `caches/sqlite-index-build.sql`
-- Bruger `isFileModified` til at springe build over ved uændrede kilder.
+- Hvis relevante XML-filer ikke er ændret, springes opbygning over med det samme.
+- Kode ændringer i `tools/build-static/sqlite-index.js` giver stadig en tvungen genopbygning.
 - Inkrementel opdatering:
-  - Ved ændring af kildefiler findes berørte tekst/work/poet rækker via source-mapping.
+  - Ved ændring af kildefiler findes berørte tekst/work rækker via source-mapping:
+    - `fdirs/<id>/*.xml` med arbejdsfiler (ikke metadatafiler) behandles tekst/work-delta.
+    - `artwork.xml`/`portraits.xml` i `content/` eller `fdirs/<id>/` behandles som `picture`-delta.
   - De berørte rækker slettes først, hvorefter nye rækker indsættes.
   - Der bygges fuld DB, hvis der mangler kilder/afhængigheder ikke kan matches.
   - Eksempel:
@@ -24,19 +26,16 @@ Bygning:
       - `text`-rækker hvor `work_id = 'gudmand/work1'`
       - `event` for de samme tekster (`text.work_id`).
       - `source` for de samme tekster.
-      - `poet` rækker for forfatteren (`poet_id = 'gudmand'`) hvis filen er `info.xml`/`bio.xml`/`events.xml`/`portraits.xml`/`artwork.xml`.
     - Flow:
       1) Identificér berørte `text_id` via mapping.
       2) Slet disse rækker fra `text_search_index`, `text_content`, `text`, `source`, `event`.
-      3) Genopbyg kun disse `text_id` + parent `work_id`/`poet_id`.
-      4) Opdater filcache for de ændrede filer.
+      3) Genopbyg berørte `work_id` og `text_id`.
 
 ## Kendte begrænsninger
 
 - `DELETE`/`INSERT` sker per `poet/work/text`-scope; afhængigheder uden eksplicit source-mapping kan udløse fuld rebuild.
 - Ændringer i ukendte filer (ikke i den indsamlede source-liste) eller ugyldige mapping-regler vælger fuld genopbygning.
-- FTS5 er ikke bygget i denne version; søgning bruger `text_search_index` med `LIKE`-fallback.
-- Hvis `sqlite3` CLI mangler, springes SQLite-opbygning af over, så `npm run build-static` stadig gennemføres.
+- FTS5 bruges hvor tilgængeligt; i miljø uden FTS5 kører fallback via `text_search_index`-feltet.
 
 ## Tabeller
 
@@ -61,9 +60,13 @@ Bygning:
 - `text_search_index`
   - Nøgle: `text_id`
   - Denormaliseret søgeflade med `raw_text`, titler, evt. datoer og nøgleord.
+- `text_search_index_fts`
+  - Opretter FTS5-index ved tilgængelighed (fallback anvendes ikke nødvendigvis ved test-miljø).
+- `picture`
+  - Nøgle: `picture_id`
+  - Råsporede `<picture>`-elementer med kilde, scope (`text`, `work`, `fdir_artwork`, `content_artwork`, `events`, `portraits` osv.), og `has_href`/`has_objid` (0/1).
 SQLite-filen er et genereret, internt analyseartefakt; den er ikke en del af
-frontendens API. `caches/sqlite-index-build.sql` er kun en valgfri debug-/
-importcache og skal ikke redigeres som datakilde.
+frontendens API og er ikke en del af produktionsbuilden.
 ## Relationer
 
 - `poet` 1:N `work`
@@ -112,9 +115,6 @@ FROM text t
 JOIN event e1 ON e1.text_id = t.text_id AND e1.event_type = 'printed'
 JOIN event e2 ON e2.text_id = t.text_id AND e2.event_type = 'performed';
 ```
-<<<<<<< HEAD
-=======
-
 - Antal indekserbare tekster pr. forfatter og type:
 
 ```sql
@@ -125,12 +125,28 @@ GROUP BY poet_id, type
 ORDER BY n DESC;
 ```
 
-- Seneste ændrede filer ifølge source hash:
+- Top 10 tekster efter antal billeder i teksten:
 
 ```sql
-SELECT source_file, sha1, datetime(updated_at / 1000, 'unixepoch') AS updated_at
-FROM source_file_hash
-ORDER BY updated_at DESC;
+SELECT p.text_id, t.title, COUNT(1) AS picture_count
+FROM picture p
+JOIN text t ON t.text_id = p.text_id
+WHERE p.text_id IS NOT NULL
+GROUP BY p.text_id
+ORDER BY picture_count DESC, p.text_id
+LIMIT 10;
+```
+
+- Hvor mange billeder mangler `href` eller museums-`objid`:
+
+```sql
+SELECT
+  COUNT(*) AS total_pictures,
+  SUM(1 - has_href) AS mangler_href,
+  SUM(1 - has_objid) AS mangler_objid,
+  SUM(CASE WHEN has_href = 0 OR has_objid = 0 THEN 1 ELSE 0 END) AS mangler_href_eller_objid,
+  SUM(CASE WHEN has_href = 0 AND has_objid = 0 THEN 1 ELSE 0 END) AS mangler_begge
+FROM picture;
 ```
 
 - Tekster uden registreret dato, hvor brødteksten indeholder en mulig dato:
@@ -145,4 +161,3 @@ WHERE NOT EXISTS (SELECT 1 FROM event e WHERE e.text_id = t.text_id)
 
 Ovenstående er kun et simpelt eksempel. En mere præcis datoanalyse kræver
 enten en SQLite-regexp-extension eller behandling af resultatet i et script.
->>>>>>> ebf3295a02a2ea1d1d1e7955cbaf4904021b267e
