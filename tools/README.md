@@ -45,6 +45,21 @@ npm run report-ocr-candidates
 npm run report-ocr-candidates -- fdirs/digter/vaerk.xml
 ```
 
+### Tekstkvalitetskontrol
+
+`check-text-quality` kører alle tekstkvalitetskontroller (OCR-kandidater + linje-regler) i én kommando og returnerer et stabilt output.
+
+```sh
+npm run check-text-quality
+npm run check-text-quality -- fdirs/digter/vaerk.xml
+```
+
+Med JSON-output:
+
+```sh
+node tools/check-text-quality.js --json
+```
+
 ### Salmonsen-biografier
 
 `report-salmonsen-biographies.js` viser fremdriften for biografier til
