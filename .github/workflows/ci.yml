@@ -28,6 +28,12 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Check text quality
+        run: |
+          output="$(npm run check-text-quality -- --min-date=2021-01-01)"
+          printf '%s\n' "$output"
+          grep -Fq "Ingen tekstkvalitetsfejl fundet." <<< "$output"
+
       - name: Run tests (CI)
         run: npm run test-ci
         env:
