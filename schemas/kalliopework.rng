@@ -225,6 +225,7 @@
     <element name="quote">
       <optional><attribute name="font-size"><text/></attribute></optional>
       <optional><attribute name="margin-left"><text/></attribute></optional>
+      <optional><attribute name="lang"><text/></attribute></optional>
       <ref name="mixed"/>
     </element>
   </define>
@@ -290,7 +291,7 @@
   <define name="content"><element name="content"><ref name="simpleElement"/></element></define>
   <define name="head"><element name="head"><ref name="simpleElement"/></element></define>
   <define name="year"><element name="year"><ref name="simpleElement"/></element></define>
-  <define name="subtitle"><element name="subtitle"><ref name="simpleElement"/></element></define>
+  <define name="subtitle"><element name="subtitle"><optional><attribute name="lang"><text/></attribute></optional><ref name="simpleElement"/></element></define>
   <define name="suptitle"><element name="suptitle"><ref name="simpleElement"/></element></define>
   <define name="indextitle"><element name="indextitle"><ref name="simpleElement"/></element></define>
   <define name="toctitle"><element name="toctitle"><ref name="simpleElement"/></element></define>
