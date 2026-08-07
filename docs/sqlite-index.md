@@ -112,9 +112,6 @@ FROM text t
 JOIN event e1 ON e1.text_id = t.text_id AND e1.event_type = 'printed'
 JOIN event e2 ON e2.text_id = t.text_id AND e2.event_type = 'performed';
 ```
-<<<<<<< HEAD
-=======
-
 - Antal indekserbare tekster pr. forfatter og type:
 
 ```sql
@@ -145,4 +142,3 @@ WHERE NOT EXISTS (SELECT 1 FROM event e WHERE e.text_id = t.text_id)
 
 Ovenstående er kun et simpelt eksempel. En mere præcis datoanalyse kræver
 enten en SQLite-regexp-extension eller behandling af resultatet i et script.
->>>>>>> ebf3295a02a2ea1d1d1e7955cbaf4904021b267e

@@ -9,6 +9,15 @@ Disse regler gælder for AI-agenter og automatiserede assistenter, der arbejder 
 - Læs derefter den specialdokumentation, som stilguiden henviser til for det
   relevante område.
 
+## Kalliopes dækningsmål
+
+Ved arbejde med personer, værker, kilder og import skal
+`docs/alle-danske-digtere.md` læses først.
+
+Løsninger må ikke optimere for enkelte kendte forfattere på bekostning af
+det langsigtede mål om dokumenterbar dækning af alle relevante danske
+digtere.
+
 ## Forespørgsler på korpusdata
 
 - Brug den genererede SQLite-database `public/api/kalliope.sqlite` til opslag,
