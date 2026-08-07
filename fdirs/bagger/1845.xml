@@ -248,8 +248,10 @@ Hil være Kong Fredrik den Anden!
 
 <text id="bagger2017120405">
 <head>
-    <title>† Frederikke Kirstine Hempel</title>
-    <toctitle>Frederikke Kirstine Hempel</toctitle>
+    <suptitle>†</suptitle>
+    <title>Frederikke Kirstine Hempel</title>
+    <toctitle>† Frederikke Kirstine Hempel</toctitle>
+    <linktitle>† Frederikke Kirstine Hempel</linktitle>
     <indextitle>Frederikke Kirstine Hempel</indextitle>
     <subtitle>(Død i September 1839)</subtitle>
     <firstline>Græd ei, naar Bladet ved Løvfaldstid</firstline>
@@ -257,10 +259,11 @@ Hil være Kong Fredrik den Anden!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<quote margin-left="10%" font-size="small" lang="en">
+Why should we mourn for the blest?
+<right><w>Byron</w></right>
+</quote>
 <poetry>
-<nonum>Why should we mourn for the blest?</nonum>
-<nonum><right><w>Byron</w></right></nonum>
-
 Græd ei, naar Bladet ved Løvfaldstid
 Til Jorden synker;
 Den Kind, der i Somren er glat og hvit,
@@ -1692,18 +1695,18 @@ Maa over alle Verdens Lande staae!
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<quote margin-left="10%" font-size="small">
+,,Dybt i Dalen er mit simple Hjem,
+Aldrig vil paa Bjerget op jeg klavre;
+Lad for Andre Slottets Port paa klem,
+Jeg vil see paa Bondens Rug og Havre.
+Dog ifald til Kongegaard engang
+Jeg gaaer vild, fra Marken og fra Haven,
+Ei som Smigrer skriver jeg min Sang:
+Thi den gjælder Konger da — i Graven! —''
+<right>Smaadigte 1834.''</right>
+</quote>
 <poetry>
-<nonum><small>,,Dybt i Dalen er mit simple Hjem,</small></nonum>
-<nonum><small>Aldrig vil paa Bjerget op jeg klavre;</small></nonum>
-<nonum><small>Lad for Andre Slottets Port paa klem,</small></nonum>
-<nonum><small>Jeg vil see paa Bondens Rug og Havre.</small></nonum>
-<nonum><small>Dog ifald til Kongegaard engang</small></nonum>
-<nonum><small>Jeg gaaer vild, fra Marken og fra Haven,</small></nonum>
-<nonum><small>Ei som Smigrer skriver jeg min Sang:</small></nonum>
-<nonum><small>Thi den gjælder Konger da — i Graven! —''</small></nonum>
-<nonum><right><small>Smaadigte 1834.''</small></right></nonum>
-
-
 ,,Intet Strøg paa Violinen?
 Ingen Støden i Trompet?
 Ingen Dands og ziirlig Trinen,
@@ -2777,12 +2780,16 @@ Til evig Lysglands Du indgaaer! :|:
     <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-<poetry>
-<nonum lang="la">,,Hoc ridere meum, tam nil, nullâ tibi vendo Iliade.''</nonum>
-<nonum><right>Persius</right></nonum>
-<nonum lang="fr">,,Il y a un dieu pour les ivrognes.''</nonum>
-<nonum><right>Proverbes de Salomon II</right></nonum>
+<quote margin-left="30%" font-size="small" lang="la">
+,,Hoc ridere meum, tam nil, nullâ tibi vendo Iliade.''
+<right>Persius</right>
+</quote>
+<quote margin-left="30%" font-size="small" lang="fr">
+,,Il y a un dieu pour les ivrognes.''
+<right>Proverbes de Salomon II</right>
+</quote>
 
+<poetry>
 <nonum><center>Enkelt Damestemme.</center></nonum>
 
    Død er nu <w>Jesper!</w>
