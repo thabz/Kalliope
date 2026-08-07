@@ -875,7 +875,7 @@ De Syge stønner paa Helgenes Grav,
 </body>
 </text>
 
-<text id="bergsoe1999112801">
+<text id="bergsoe1999112801" ignore-tests="repeated-adjacent-word">
 <head>
     <title>Den syge Svale</title>
     <toctitle>Den syge Svale</toctitle>
@@ -1334,7 +1334,7 @@ Fast maa man troe, Du er dumpet perplex
 Siig, hvad Dig fængsler paa Slottet deroppe!
 Ligger Du og drømmer med Piben i Mund,
 Flyver din ,,Maage" paa Bølgernes Toppe,
-Eller mon Du solder med ,,bröder från Lund"?
+Eller mon Du solder med <span lang="sv">,,bröder från Lund''</span>?
 Eller, I Guder, jeg faaer en Idee!
 Har ved et Piilskud Du tabt Contenancen?
 Saaret til Døde Du ligger maaskee

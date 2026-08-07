@@ -3262,7 +3262,7 @@ Lægge i den samme Grav, ved dine Vaaben fældte,
 </body>
 </text>
 
-<text id="bruunmc2018062357">
+<text id="bruunmc2018062357" ignore-tests="repeated-adjacent-word">
 <head>
     <title>Niels Ebbesen</title>
     <subtitle>
@@ -4635,13 +4635,13 @@ Mit Hierte finder Fred.
 </body>
 </text>
 
-<text id="bruunmc2018062385">
+<text id="bruunmc2018062385" ignore-tests="repeated-adjacent-word">
 <head>
     <title>Mit Vaucluse</title>
     <subtitle>Sonnet</subtitle>
     <firstline>Hvad Guddomsmagt usynligen mig binder?</firstline>
     <source pages="222" facsimile-pages="234" />
-    <keywords>sonnet</keywords>
+    <keywords>sonnet,petrarca</keywords>
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

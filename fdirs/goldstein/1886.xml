@@ -539,7 +539,7 @@ men Hunnens Gift . . .
 </body>
 </text>
 
-<text id="goldstein2019041218">
+<text id="goldstein2019041218" ignore-tests="single-circumflex-a-in-text,mixed-aa-circumflex">
 <head>
     <title>Elskov er som -</title>
     <firstline>Elskov er som Syfilis</firstline>
@@ -555,7 +555,7 @@ ud fra Forjættelsens Paradis
 
 Den rives med paa den sære Sejlads
 gennem Aarekanalernes Strømme
-og naaâr sit Naturmaal uden Kompas
+og naâr sit Naturmaal uden Kompas
         som i Drømme.
 
 Den tærer trædsk paa Marv og Sind,
@@ -799,7 +799,7 @@ Glød avler Is, Is avler Glød,
 </body>
 </text>
 
-<text id="goldstein2019041221">
+<text id="goldstein2019041221" ignore-tests="repeated-adjacent-word">
 <head>
     <title>Slutningsfragment</title>
     <firstline>Er De gal, højstærede? Hys! Hvis De offenlig viste Dem</firstline>
