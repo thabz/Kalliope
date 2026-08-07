@@ -1,6 +1,48 @@
 {
   "source": "dansk-biografisk-leksikon",
-  "status": "not-yet-collected",
-  "generatedAt": "2026-08-07T12:48:39.124Z",
-  "method": "Not yet fetched; first document Lex access and reuse terms."
+  "status": "snapshot",
+  "generatedAt": "2026-08-07T14:35:04.839Z",
+  "fetchedAt": "2026-08-07T14:35:04.839Z",
+  "method": "Bounded fetch of the DBL Digtere and Forfattere taxonomy indexes and their linked article pages; parser runs offline from cached HTML unless --fetch is supplied.",
+  "baseUrl": "https://biografiskleksikon.lex.dk",
+  "access": {
+    "robotsUrl": "https://biografiskleksikon.lex.dk/robots.txt",
+    "robotsObserved": "Public category and article URLs are allowed for the default user-agent; robots.txt disallows selected administrative/search paths and states that reuse of content requires permission.",
+    "reuseTerms": "DBL articles are marked Begrænset anvendelse; this snapshot stores source observations and short metadata/description fields, not a redistributable full-text corpus."
+  },
+  "indexes": [
+    {
+      "id": "digtere",
+      "url": "https://biografiskleksikon.lex.dk/.taxonomy/2817",
+      "rawFile": "tools/data/indsamling/dbl/raw/digtere.html"
+    },
+    {
+      "id": "forfattere",
+      "url": "https://biografiskleksikon.lex.dk/.taxonomy/2818",
+      "rawFile": "tools/data/indsamling/dbl/raw/forfattere.html"
+    }
+  ],
+  "rawCache": [
+    "tools/data/indsamling/dbl/raw/robots.txt",
+    "tools/data/indsamling/dbl/raw/digtere.html",
+    "tools/data/indsamling/dbl/raw/forfattere.html",
+    "tools/data/indsamling/dbl/raw/articles"
+  ],
+  "parsedSnapshot": "docs/indsamling/dbl/observations.json",
+  "records": {
+    "observations": 692,
+    "uniqueArticles": 692,
+    "byCategory": {
+      "digtere": 23,
+      "forfattere": 669
+    },
+    "parserErrors": 0
+  },
+  "parser": "tools/collect-dbl.js",
+  "checksums": {
+    "indexes": {
+      "digtere": "5c7d05b8cb4add91e349376207e5e550d1eea2291535549ad052438e40231756",
+      "forfattere": "5774a8033af09a3290c3a6c33159a1d4bc3f6dc3b6838ec4c88f320831942bee"
+    }
+  }
 }

@@ -226,7 +226,7 @@ Vi vil dog leve, vi vil døe for Norden.
 Straal gyldenblank, du Sundets rustne Nøgle!
 Sæt Krands om Panden, gamle Mærkismand,
 Som saae <w>Carl Gustaf</w> tabe Havets Tøile,
-Og <w>Stenbocks</w> Drenge feie Skånes Strand!
+Og <w>Stenbocks</w> Drenge feie <span lang="sv">Skånes</span> Strand!
 Thi bag Din Mur, de mørke Tiders Minde,
 Staae disse Landes Fyrster Haand i Haand,
 Med lige Huld og lige Tro i Sinde:
@@ -2865,7 +2865,7 @@ Lod vi der tilbage.
 </body>
 </text>
 
-<text id="plough2018031453">
+<text id="plough2018031453" ignore-tests="repeated-adjacent-word">
 <head>
     <title>Vuggevise</title>
     <firstline>Nu skal Du kjønt Dig putte ned</firstline>
@@ -3164,10 +3164,12 @@ For Folkets friske, sunde Liv i Norden.
 </body>
 </text>
 
-<text id="plough2018031458">
+<text id="plough2018031458" ignore-tests="repeated-adjacent-word">
 <head>
-    <title>† Oscar den Første</title>
+    <suptitle>†</suptitle>
+    <title>Oscar den Første</title>
     <indextitle>Oscar den Første</indextitle>
+    <linktitle>† Oscar den Første</linktitle>
     <subtitle>(8de August 1859)</subtitle>
     <firstline>Nu aabnes Riddarholmens Kongebolig</firstline>
    <pictures>
@@ -3586,7 +3588,7 @@ Paa Fredericias Mark, paa Isteds Hede!
 
 Men tro, at, dersom ,,Grannen uti Øster'',
 Hvis venstre Haand fornys blev hugget af,
-Sin gridske Høire over Ålands Hav
+Sin gridske Høire over <span lang="sv">Ålands</span> Hav
 Engang udstrække vil mod Eders Kyster,
 Da skal det Samme vorde gjort igjen!
 Da skal paa Fyrisval vor Ungdom møde!

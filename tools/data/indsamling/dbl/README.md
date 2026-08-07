@@ -1,4 +1,4 @@
 # DBL indsamling
 
-Operationalt dataområde for DBL-snapshot og parsed observationer. Kilden er
-endnu ikke høstet.
+`raw/` indeholder det afgrænsede DBL-cachelag og er ignoreret af Git.
+Collectorens parsed output og manifest ligger under `docs/indsamling/dbl/`.

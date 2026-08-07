@@ -133,7 +133,7 @@ Først et Sus - som om en Verden
 
 Myldrens Myldren - lilla - hvide
     Tusind i en Haandevending,
-    og Smaafugle la’er sig sig glide
+    og Smaafugle la’er sig glide<note>sig] sig sig</note>
     silkeblødt igjennem Luften,
     for at kende henrykt Duften,
     for at se det aabenbare
@@ -2165,7 +2165,7 @@ Et Særsyn i denne forhutlede Tid,
 </body>
 </text>
 
-<text id="drachmann2003010201">
+<text id="drachmann2003010201" ignore-tests="repeated-adjacent-word">
 <head>
     <title>Johanne Louise Heiberg</title>
     <firstline>Nu drages med Sort det lyse Hus</firstline>
