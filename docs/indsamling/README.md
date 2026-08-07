@@ -20,7 +20,7 @@ er et arbejdsarkiv mellem dataindsamling og identitetsreduktion.
 | `kalliope/` | snapshot | Udtrukne personobservationer fra det lokale register |
 | `dfl/` | snapshot | DFL-forfattere, DFL-værkposter og manifest for rå HTML-cache |
 | `wikidata/` | snapshot | Råt SPARQL-resultat og registrerede observationer |
-| `dbl/` | ikke høstet | Planlagt redaktionel kilde |
+| `dbl/` | snapshot | DBL-kategoriindexer, rå cache og provenancebevarede observationer |
 | `kvindebiografisk/` | ikke høstet | Planlagt redaktionel kilde |
 | `nordisk-kvindelitteraturhistorie/` | ikke høstet | Planlagt litteraturhistorisk kilde |
 
