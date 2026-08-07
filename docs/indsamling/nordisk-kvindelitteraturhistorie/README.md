@@ -1,18 +1,37 @@
 # Nordisk Kvindelitteraturhistorie
 
-Kilden er endnu ikke høstet. Mappen er reserveret til et reproducerbart
-snapshot og det tilhørende manifest.
+Kilden er høstet som et afgrænset, reproducerbart snapshot af det offentlige
+danske forfatterindex. Det er kildeevidens, ikke en komplet bibliografi over
+danske digtere.
 
-## Planlagt hentning
+## Hentning
 
-Undersøg først det offentlige forfatterindex og de relevante artikelrelationer.
-Gem index og rå artikler med URL, hentetidspunkt og kildefelter. Kilden er
-litteraturhistorisk og skal derfor gemmes som evidens, ikke som en automatisk
-komplet liste over danske digtere.
+Hentningen bruger webstedets eget JSON-endpoint:
 
-## Forventede felter og problemer
+`https://nordicwomensliterature.net/wp-json/nwl/v1/writers/da`
 
-Forfatterindex og artikler forventes at kunne give forfatter-URL, navn,
-land/sprog og artikelrelationer. Kilden er litteraturhistorisk, ikke en komplet
-bibliografi, og relationer til dansk litteratur eller digtning skal derfor
-bevares som evidens med kildehenvisning.
+HTML-indexet og JSON-svaret gemmes under
+`tools/data/indsamling/nordisk-kvindelitteraturhistorie/raw/`. Kør
+`node tools/data/indsamling/nordisk-kvindelitteraturhistorie/collect.mjs` for
+at hente igen eller tilføj `--offline` for at parse det bevarede snapshot.
+
+Snapshotet indeholder 819 observationer, heraf 233 med Danmark som kildeland
+og 22 uden land. Hver observation kan spores til sin konkrete profil-URL.
+
+## Felter og begrænsninger
+
+Forfatterindexets felter er navn, fødselsår, dødsår, land, profil-URL og
+eventuelt billed-URL. Originale værdier ligger i `raw`, mens normaliserede
+værdier ligger separat i `parsed/observations.json`. Pseudonymer og
+navnevarianter er ikke sammenlagt.
+
+JSON-indexet indeholder ingen artikelrelationer. Webstedets separate
+artikelarkiv skal derfor behandles som en senere, eksplicit afgrænset kilde;
+ingen artikelrelationer er automatisk opfundet i dette snapshot. Webstedet
+beskriver over 200 artikler og over 800 forfattere, og oplyser samtidig at
+biobibliografierne ikke løbende opdateres.
+
+Adgang er offentlig uden login. Høsten gemmer kun indexmetadata, ikke billeder
+eller fulde forfatterprofiler, og der er ikke foretaget en juridisk
+genbrugsvurdering af biografitekst eller billeder. Checksums og parserstatus
+står i `tools/data/indsamling/nordisk-kvindelitteraturhistorie/manifest.json`.
