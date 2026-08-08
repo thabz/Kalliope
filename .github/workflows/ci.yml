@@ -91,6 +91,7 @@ jobs:
 
           container_name="kalliope-ci-app-container"
           docker run --detach --name "$container_name" -p 3000:3000 \
+            -v "$PWD/public/api:/app/public/api:ro" \
             -e KALLIOPE_SKIP_ELASTICSEARCH=true \
             -e KALLIOPE_SKIP_IMAGE_THUMBNAILS=true \
             -e KALLIOPE_SHARP_CACHE_MEMORY=64 \
