@@ -478,6 +478,26 @@ Pay particular attention to:
 
 Determine the dominant stanza pattern when the poem has one.
 
+After initially structuring each poem, you MUST run the bundled stanza analysis
+with a temporary JSON file containing only that poem's body:
+
+```json
+{
+  "body": "First verse line\nSecond verse line\n\nNext stanza"
+}
+```
+
+```shell
+node .codex/skills/pdf-to-kalliope/scripts/analyze-stanzas.js /tmp/poem.json
+```
+
+Inspect every reported candidate against the facsimile. Run the analysis again
+after changing stanza boundaries. Do not consider a poem structurally checked
+until this command has been run and every candidate has been resolved against
+the facsimile. The report is diagnostic only: a candidate may be a legitimate
+irregularity, and `no_candidates`, `no_stable_pattern` or
+`insufficient_evidence` does not prove that the transcription is correct.
+
 If nearly every stanza contains four verse lines, a transcription showing a
 one-line stanza followed by a three-line stanza is a strong error candidate.
 
@@ -962,6 +982,8 @@ The task is complete only when all applicable items are true:
 - [ ] Verse lines match the printed source.
 - [ ] Physical line wraps were rejoined to their correct verse lines.
 - [ ] Stanza boundaries match the printed source.
+- [ ] The bundled stanza analysis was run for every poem, rerun after stanza
+      changes, and every candidate was resolved against the facsimile.
 - [ ] Indentation was verified visually and represented with spaces.
 - [ ] Headings, mottoes, numbers and decorations are not ordinary verse lines.
 - [ ] Footnotes are placed at the text locations to which they belong.
