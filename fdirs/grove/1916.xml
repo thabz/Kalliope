@@ -5,7 +5,7 @@
     <subtitle>Digte</subtitle>
     <year>1916</year>
     <pictures>
-        <picture src="1916-p1.jpg" type="titlepage" primary="true">Titelbladet til <i>Ved Limfjorden</i> (1916) lyder ,,Johan Grove: / Ved Limfjorden / Digte / G. E. C. Gads Forlag — København 1916''.</picture>
+        <picture src="1916-p1.jpg" type="titlepage">Titelbladet til <i>Ved Limfjorden</i> (1916) lyder ,,Johan Grove: / Ved Limfjorden / Digte / G. E. C. Gads Forlag — København 1916''.</picture>
     </pictures>
     <source href="https://www.kb.dk/e-mat/dod/115308057242-color.pdf" facsimile="115308057242_color" facsimile-pages-num="285" facsimile-pages-offset="7">Johan Grove: <i>Ved Limfjorden</i>, G. E. C. Gads Forlag, Kbh., 1916.</source>
 </workhead>
@@ -53,7 +53,7 @@ Og Læsnings Tid er inde.  JOHAN GROVE.
 </body>
 </text>
 
-<prose id="grove20260808002">
+<prose>
 <head>
     <title>Fortale</title>
     <source pages="5-11"/>
@@ -10023,7 +10023,7 @@ Tilintetgjørelsens storladne Ynde.
     <firstline>Hver Morgen jeg jubled, naar Sol oprandt</firstline>
     <notes>
         <note type="source">Kildens tilskrivning: Af Heinrich Heine.</note>
-        <note unknown-original-by="heine" />
+        <note>Gendigtning af <xref type="translation" poem="heine2001122711"/>.</note>
     </notes>
     <source pages="240"/>
     <quality>korrektur1,kilde,side</quality>
@@ -10303,7 +10303,7 @@ Ifald man aldrig værre Styrmænd saae!
     <firstline>Kammerat, jeg vil unde Dig et Aar eller to —</firstline>
     <notes>
         <note type="source">Kildens tilskrivning: Af Walter Scott.</note>
-        <note unknown-original-by="scott" />
+        <note>Gendigtning af <xref type="translation" poem="scott2026080801"/>.</note>
     </notes>
     <source pages="246-247"/>
     <quality>korrektur1,kilde,side</quality>
@@ -10529,7 +10529,7 @@ Og til den Nyfødte smiler Kvinden, som nylig græd.
     <firstline>Ejed jeg blot en Stump Jord. Bakke, Dal eller Slette</firstline>
     <notes>
         <note type="source">Kildens tilskrivning: Af Joséphin Soulary.</note>
-        <note unknown-original-by="soulary" />
+        <note>Gendigtning af <xref type="translation" poem="soulary2026080801"/>.</note>
     </notes>
     <source pages="251-252"/>
     <quality>korrektur1,kilde,side</quality>
@@ -10724,7 +10724,7 @@ Vexle blide Blikke under Maaneskin. —
     <firstline>Nu Krusets Laag maa smækkes til</firstline>
     <notes>
         <note type="source">Kildens tilskrivning: Efter Bellman.</note>
-        <note unknown-original-by="bellman" />
+        <note>Gendigtning af <xref type="translation" poem="bellman2026080801"/>.</note>
     </notes>
     <source pages="256"/>
     <quality>korrektur1,kilde,side</quality>
@@ -10791,7 +10791,7 @@ Men Skibbrud i det Hav er jo en Lykke!
     <firstline>Stor er Verona, men skylder Catul dog lige saa meget</firstline>
     <notes>
         <note type="source">Kildens tilskrivning: Epigram af Martial.</note>
-        <note unknown-original-by="martial" />
+        <note>Gendigtning af <xref type="translation" poem="martial2026080801"/>.</note>
     </notes>
     <source pages="257"/>
     <quality>korrektur1,kilde,side</quality>
@@ -10810,7 +10810,7 @@ Som den smaabitte Mantua skylder den store Virgil.
 </content>
 </section>
 
-<prose id="grove20260808202">
+<prose>
 <head>
     <title>Oplysninger</title>
     <source pages="259-261"/>
