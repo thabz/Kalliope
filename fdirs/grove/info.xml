@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="grove" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Johan</firstname>
+    <lastname>Grove</lastname>
+    <fullname>Johan Frederik Grove</fullname>
+    <pseudonym>Samuth</pseudonym>
+    <pseudonym>Mikkel Spunds</pseudonym>
+  </name>
+  <period>
+    <born>
+      <date>1859-08-02</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1917-02-15</date>
+      <place>Nibe</place>
+    </dead>
+  </period>
+  <works>1916</works>
+  <identifiers>
+    <danskforfatterleksikon-dk>GJohanGrove</danskforfatterleksikon-dk>
+  </identifiers>
+</person>
