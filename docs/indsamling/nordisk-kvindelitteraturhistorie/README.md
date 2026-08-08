@@ -13,7 +13,7 @@ Hentningen bruger webstedets eget JSON-endpoint:
 HTML-indexet og JSON-svaret gemmes under
 `tools/data/indsamling/nordisk-kvindelitteraturhistorie/raw/`. Kør
 `node tools/data/indsamling/nordisk-kvindelitteraturhistorie/collect.mjs` for
-at hente igen eller tilføj `--offline` for at parse det bevarede snapshot.
+at parse det bevarede snapshot eller tilføj `--fetch` for at hente igen.
 
 Snapshotet indeholder 819 observationer, heraf 233 med Danmark som kildeland
 og 22 uden land. Hver observation kan spores til sin konkrete profil-URL.

@@ -317,7 +317,9 @@ const run = async ({ offline = false, limit = 500, authorPageLimit = 100 } = {})
 };
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
-  run({ offline: process.argv.includes('--offline'), authorPageLimit: process.argv.includes('--all-author-pages') ? Number.POSITIVE_INFINITY : 100 }).catch(error => { console.error(error.message); process.exitCode = 1; });
+  const fetchSources = process.argv.includes('--fetch');
+  const offline = fetchSources !== true;
+  run({ offline, authorPageLimit: process.argv.includes('--all-author-pages') ? Number.POSITIVE_INFINITY : 100 }).catch(error => { console.error(error.message); process.exitCode = 1; });
 }
 
 export { normalizeName, yearFromDate, parseDfl, parseDflTitles, parseWikidata, matchRecord, mergeCandidates, extractDflTitleUrls };

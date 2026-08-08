@@ -18,7 +18,9 @@ blev hentet fra de konkrete links i forfatterlisten og cachet lokalt.
 
 Hentningen er begrænset til de kendte indexer og linkede opslag. Den følger
 ikke ukontrolleret links uden for dette afgrænsede sæt. `npm run
-candidate-register -- --offline --all-author-pages` genbruger de lokale caches.
+candidate-register` genbruger som standard de lokale caches. Brug `npm run
+candidate-register -- --fetch` for at hente kilderne igen, eventuelt med
+`--all-author-pages` for alle DFL-opslag.
 
 ## Begrænsning
 
