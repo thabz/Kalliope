@@ -9,7 +9,7 @@ const rawDir = join(root, 'raw');
 const parsedDir = join(root, 'parsed');
 const apiUrl = 'https://nordicwomensliterature.net/wp-json/nwl/v1/writers/da';
 const indexUrl = 'https://nordicwomensliterature.net/da/writers/';
-const offline = process.argv.includes('--offline');
+const offline = process.argv.includes('--fetch') !== true;
 
 async function getText(url, localName) {
   if (offline === true) {

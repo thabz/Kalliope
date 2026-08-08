@@ -8,7 +8,7 @@ identitetssammenlægning.
 
 ```sh
 node tools/data/indsamling/nordisk-kvindelitteraturhistorie/collect.mjs
-node tools/data/indsamling/nordisk-kvindelitteraturhistorie/collect.mjs --offline
+node tools/data/indsamling/nordisk-kvindelitteraturhistorie/collect.mjs --fetch
 ```
 
 Scriptet bruger det JSON-endpoint, som webstedets eget index-script kalder:

@@ -22,7 +22,7 @@ er et arbejdsarkiv mellem dataindsamling og identitetsreduktion.
 | `wikidata/` | snapshot | Råt SPARQL-resultat og registrerede observationer |
 | `dbl/` | snapshot | DBL-kategoriindexer, rå cache og provenancebevarede observationer |
 | `kvindebiografisk/` | ikke høstet | Planlagt redaktionel kilde |
-| `nordisk-kvindelitteraturhistorie/` | ikke høstet | Planlagt litteraturhistorisk kilde |
+| `nordisk-kvindelitteraturhistorie/` | snapshot | Forfatterindex og parsed observationer |
 
 ## Samlet kildevurdering
 
@@ -38,6 +38,62 @@ er et arbejdsarkiv mellem dataindsamling og identitetsreduktion.
 Kilderne har forskellige udvælgelsesprincipper. Kildeoverlap er derfor
 evidens, ikke automatisk identitetsbevis, og én kilde er ikke nødvendigvis
 komplet.
+
+## Kør collectors
+
+Kør kommandoerne fra repositoryets rod. En kørsel uden fetch-option bruger det
+eksisterende snapshot, hvor collectorens format understøtter det. Hentning fra
+nettet skal altid være eksplicit.
+
+### Wikidata
+
+```sh
+npm run collect-wikidata
+npm run collect-wikidata -- --fetch
+npm run collect-wikidata -- --fetch --limit=10
+```
+
+Den første kommando parser snapshotet offline. `--fetch` henter et nyt råt
+SPARQL-svar. `--limit=N` er kun til begrænsede afprøvninger; uden `--limit`
+returneres alle kandidater fra forespørgslen. Output ligger under
+`docs/indsamling/wikidata/` og i `docs/indsamling/rapporter/`.
+
+### Dansk Biografisk Leksikon
+
+```sh
+npm run collect-dbl
+npm run collect-dbl -- --fetch
+```
+
+Uden `--fetch` genbruges den lokale HTML-cache. `--fetch` henter de afgrænsede
+DBL-indexer og opslagssider igen. Parsed observationer ligger i
+`docs/indsamling/dbl/observations.json`.
+
+### Nordisk Kvindelitteraturhistorie
+
+```sh
+node tools/data/indsamling/nordisk-kvindelitteraturhistorie/collect.mjs
+node tools/data/indsamling/nordisk-kvindelitteraturhistorie/collect.mjs --fetch
+```
+
+Den første kommando parser de gemte JSON- og HTML-snapshots. `--fetch` henter
+forfatterindexet igen. Output ligger i collectorens `parsed/`-mappe og under
+`tools/data/indsamling/nordisk-kvindelitteraturhistorie/manifest.json`.
+
+### Samlet kandidatregister
+
+```sh
+npm run candidate-register
+npm run candidate-register -- --fetch
+```
+
+Kørsel uden options samler de allerede hentede Kalliope-, DFL- og Wikidata-
+snapshots offline. `--fetch` henter DFL- og Wikidata-data igen og opdaterer de
+lokale caches. Hvis begge options angives, vinder `--fetch`. Begge tilstande
+skriver det samlede register samt overlap- og vurderingsrapporter.
+
+Dansk Kvindebiografisk Leksikon er endnu ikke høstet og har derfor ingen
+collector-kommando.
 
 ## Genbrug
 
