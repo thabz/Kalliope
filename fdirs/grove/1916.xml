@@ -7,7 +7,7 @@
     <pictures>
         <picture src="1916-p1.jpg" type="titlepage">Titelbladet til <i>Ved Limfjorden</i> (1916) lyder ,,Johan Grove: / Ved Limfjorden / Digte / G. E. C. Gads Forlag — København 1916''.</picture>
     </pictures>
-    <source href="https://www.kb.dk/e-mat/dod/115308057242-color.pdf" facsimile="115308057242_color" facsimile-pages-num="285" facsimile-pages-offset="7">Johan Grove: <i>Ved Limfjorden</i>, G. E. C. Gads Forlag, Kbh., 1916.</source>
+    <source href="https://www.kb.dk/e-mat/dod/115308057242-color.pdf" facsimile="115308057242-color" facsimile-pages-num="285" facsimile-pages-offset="7">Johan Grove: <i>Ved Limfjorden</i>, G. E. C. Gads Forlag, Kbh., 1916.</source>
 </workhead>
 <workbody>
 
@@ -53,7 +53,7 @@ Og Læsnings Tid er inde.  JOHAN GROVE.
 </body>
 </text>
 
-<prose>
+<text id="grove20260808002" skip-index="true">
 <head>
     <title>Fortale</title>
     <source pages="5-11"/>
@@ -78,11 +78,11 @@ Gjendigtningerne fra andre Literaturer har et mere tilfældigt Præg. Da min Fad
 JOHAN GROVE.
 </prose>
 </body>
-</prose>
+</text>
 
-<section level="1">
+<section leve="1">
 <head>
-    <title><num>I.</num> Blandede Digte</title>
+    <title>I. Blandede Digte</title>
 </head>
 <content>
 
@@ -1766,7 +1766,7 @@ Og Minderne blegne for Nutidens funklende By.
 
 <section level="1">
 <head>
-    <title><num>II.</num> Viser og Vers</title>
+    <title>II. Viser og Vers</title>
 </head>
 <content>
 
@@ -2187,7 +2187,7 @@ Skjønt er der ogsaa at være!
 
 <section level="1">
 <head>
-    <title><num>III.</num> Gjendigtninger</title>
+    <title>III. Gjendigtninger</title>
 </head>
 <content>
 
@@ -2200,10 +2200,8 @@ Skjønt er der ogsaa at være!
 <text id="grove20260808053">
 <head>
     <title>Germaner og Slaver</title>
+    <subtitle>Af Jan Kollar.</subtitle>
     <firstline>Bygningen skuer jeg her, men med taareblændede Øjne</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Jan Kollar.</note>
-    </notes>
     <source pages="67-68"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2252,10 +2250,8 @@ Spejded mod Øst og mod Vest Slaver jeg intetsteds fandt! (Af Prologen til »Sl�
 <text id="grove20260808054">
 <head>
     <title>Fædrene Visdom</title>
+    <subtitle>Af Boleslav Jablonsky.</subtitle>
     <firstline>Da Gud Dig skikked paa dit Jordlivs Vandring</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Boleslav Jablonsky.</note>
-    </notes>
     <source pages="68-69"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2277,11 +2273,9 @@ Lad Ingen løbe af med din Forstand!
 
 <text id="grove20260808055">
 <head>
-    <title>Toman og Skovfeen</title>
+
+    <subtitle>Digte af František Ladislaus Čelakovský.</subtitle>
     <firstline>Sankt Hans Aften var det. For Toman Søst'ren stod</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Digte af František Ladislaus Čelakovský.</note>
-    </notes>
     <source pages="69-72"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2412,11 +2406,9 @@ Hvi styrted Du Dig selv i slig Vaande og Ve?«
 
 <text id="grove20260808056">
 <head>
-    <title>Pragervise</title>
+
+    <subtitle>Digte af František Ladislaus Čelakovský.</subtitle>
     <firstline>Ærede Frøken, om jeg tør spørge</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Digte af František Ladislaus Čelakovský.</note>
-    </notes>
     <source pages="72-73"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2440,11 +2432,9 @@ Og Gulvsand osse, hvis man vil ha’e!«
 
 <text id="grove20260808057">
 <head>
-    <title>Epigram</title>
+
+    <subtitle>Af Karel Jaromir Erben.</subtitle>
     <firstline>Klag ej, fordi bestandig Eders Pander</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Karel Jaromir Erben.</note>
-    </notes>
     <source pages="73"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2460,11 +2450,9 @@ Endnu ej fik Fornuften banket fast!
 
 <text id="grove20260808058">
 <head>
-    <title>Den Hjemløse</title>
+
+    <subtitle>Af Karel Hynek Mácha.</subtitle>
     <firstline>Øde ligger Jerusalem. Hvo nævner den gamle Stad?</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Karel Hynek Mácha.</note>
-    </notes>
     <source pages="73-74"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2490,11 +2478,9 @@ Dybere var min Kummer, af nagende Hjemve runden.
 
 <text id="grove20260808059">
 <head>
-    <title>Mit Hjem</title>
+
+    <subtitle>Af Joseph Cajetan Tyl.</subtitle>
     <firstline>Hvor er mit Fædreland, mit Hjem?</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Joseph Cajetan Tyl.</note>
-    </notes>
     <source pages="74"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2522,11 +2508,9 @@ Bøhmerland, mit Hjem, mit Hjem!
 
 <text id="grove20260808060">
 <head>
-    <title>Prags Universitet</title>
+
+    <subtitle>Epigrammer af Karel Havlíček Borovský.</subtitle>
     <firstline>To Fakulteter her i Clementinum!</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Epigrammer af Karel Havlíček Borovský.</note>
-    </notes>
     <source pages="74-75"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2548,11 +2532,9 @@ I Carolinum gjælder det kun Kjødet!
 
 <text id="grove20260808061">
 <head>
-    <title>Ecclesia militans</title>
+
+    <subtitle>Epigrammer af Karel Havlíček Borovský.</subtitle>
     <firstline>Som Kirkens kampberedte Patriark</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Epigrammer af Karel Havlíček Borovský.</note>
-    </notes>
     <source pages="75"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2571,11 +2553,9 @@ Selvfølgelig han Alle slog i Kvæg!
 
 <text id="grove20260808062">
 <head>
-    <title>Postillonen</title>
+
+    <subtitle>Af Vítězslav Hálek.</subtitle>
     <firstline>Hvor klinger det Horn dog kjønt idag</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Vítězslav Hálek.</note>
-    </notes>
     <source pages="75-76"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2626,11 +2606,9 @@ Naar en Million Kys man i Breve har!
 
 <text id="grove20260808063">
 <head>
-    <title>Stjernehimlen</title>
+
+    <subtitle>Digte af Jan Neruda.</subtitle>
     <firstline>Blaaklokker vel myldre i Skovens Bund</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Digte af Jan Neruda.</note>
-    </notes>
     <source pages="76-77"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2671,11 +2649,9 @@ Med Taarer jeg Stjernerne hylder.
 
 <text id="grove20260808064">
 <head>
-    <title>Kornblomsten</title>
+
+    <subtitle>Digte af Jan Neruda.</subtitle>
     <firstline>Kornblomsten klaged sig, da det blev Nat</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Digte af Jan Neruda.</note>
-    </notes>
     <source pages="77"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2701,11 +2677,9 @@ Han har vel Grund til bittert sig at græmme!
 
 <text id="grove20260808065">
 <head>
-    <title>Det syge Barn</title>
+
+    <subtitle>Digte af Jan Neruda.</subtitle>
     <firstline>Nattevagt i Angst og Kummer</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Digte af Jan Neruda.</note>
-    </notes>
     <source pages="78-79"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2761,11 +2735,9 @@ Thi hun brast i Graad bestemt.«
 
 <text id="grove20260808066">
 <head>
-    <title>Paa tre Hjul</title>
+
+    <subtitle>Digte af Jan Neruda.</subtitle>
     <firstline>Med det fyldte Krus foran sig sidder</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Digte af Jan Neruda.</note>
-    </notes>
     <source pages="79-80"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2816,11 +2788,9 @@ Paa tre Hjul til Helvede skal kjøre!«
 
 <text id="grove20260808067">
 <head>
-    <title>Familiegravstedet</title>
+
+    <subtitle>Digte af Jan Neruda.</subtitle>
     <firstline>Til min Faders Gravsted</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Digte af Jan Neruda.</note>
-    </notes>
     <source pages="80"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2846,11 +2816,9 @@ Dér af Kjærlighed.
 
 <text id="grove20260808068">
 <head>
-    <title>Til min Moder</title>
+
+    <subtitle>Digte af Jan Neruda.</subtitle>
     <firstline>Helst i Taushed Alt jeg bærer</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Digte af Jan Neruda.</note>
-    </notes>
     <source pages="81"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2878,11 +2846,9 @@ I en Krog Dig stille gjemmer?
 
 <text id="grove20260808069">
 <head>
-    <title>Dødningetoget</title>
+
+    <subtitle>Digte af Adolf Heyduk.</subtitle>
     <firstline>Det var sig om Natten før Juledag</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Digte af Adolf Heyduk.</note>
-    </notes>
     <source pages="81-82"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2932,11 +2898,9 @@ Ved Huset man død ham finder.
 
 <text id="grove20260808070">
 <head>
-    <title>Det røde Kjær</title>
+
+    <subtitle>Digte af Adolf Heyduk.</subtitle>
     <firstline>Bag Landsbyen ligger en bundløs Mose</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Digte af Adolf Heyduk.</note>
-    </notes>
     <source pages="82-84"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -3002,11 +2966,9 @@ Paa Kjæret hint Syn ved Sankt Hans.
 
 <text id="grove20260808071">
 <head>
-    <title>Hold ud!</title>
+
+    <subtitle>Af Elise Krásnohorská.</subtitle>
     <firstline>Klynk og klag ej, men hold ud!</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Elise Krásnohorská.</note>
-    </notes>
     <source pages="84-85"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -3042,11 +3004,9 @@ Du faaer Fred i Gravens Bo.
 
 <text id="grove20260808072">
 <head>
-    <title>Gjøgen</title>
+
+    <subtitle>Digte af Svatopluk Čech.</subtitle>
     <firstline>Vor Skovsti, hvor vi mødtes</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Digte af Svatopluk Čech.</note>
-    </notes>
     <source pages="85"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -3093,11 +3053,9 @@ Kukkuk! Kukkuk! Kukkuk!
 
 <text id="grove20260808073">
 <head>
-    <title>Spillemandens Datter</title>
+
+    <subtitle>Digte af Svatopluk Čech.</subtitle>
     <firstline>Saa frændeløs og venneløs</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Digte af Svatopluk Čech.</note>
-    </notes>
     <source pages="86-88"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -3204,11 +3162,9 @@ Saa duede det slet ikke! —
 
 <text id="grove20260808074">
 <head>
-    <title>Længsel</title>
+
+    <subtitle>Digte af Svatopluk Čech.</subtitle>
     <firstline>Det skumrer over Skov og Marker</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Digte af Svatopluk Čech.</note>
-    </notes>
     <source pages="88-89"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -3251,11 +3207,9 @@ Hvor Lykken dvæler hos min Ven!
 
 <text id="grove20260808075">
 <head>
-    <title>Vognen</title>
+
+    <subtitle>Digte af Svatopluk Čech.</subtitle>
     <firstline>Paa Vejen ruller en Vogn afsted</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Digte af Svatopluk Čech.</note>
-    </notes>
     <source pages="89-90"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -3287,10 +3241,10 @@ Jeg med den Pige at gjøre ....?
 
 <text id="grove20260808076">
 <head>
-    <title>I Klosterkjælderen</title>
+
+    <subtitle>Digte af Svatopluk Čech.</subtitle>
     <firstline>Frater Kristof maa som Kjældermester</firstline>
     <notes>
-        <note type="source">Kildens tilskrivning: Digte af Svatopluk Čech.</note>
         <note type="source">*) Byen Melnik i det nordlige Bøhmen har fra gammel Tid været Hovedsædet for den bøhmiske Vinavl.</note>
     </notes>
     <source pages="90-92"/>
@@ -3385,11 +3339,9 @@ Men paa Timen — Klosterkjældermester!«
 
 <text id="grove20260808077">
 <head>
-    <title>Maskindrejeren</title>
+
+    <subtitle>Digte af Joseph Václav Sládek.</subtitle>
     <firstline>Med gustne Kinder og fugtigt Haar</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Digte af Joseph Václav Sládek.</note>
-    </notes>
     <source pages="92-93"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -3433,11 +3385,9 @@ Vil varsle lidt Lykke for mig engang!«
 
 <text id="grove20260808078">
 <head>
-    <title>Min Moder</title>
+
+    <subtitle>Digte af Joseph Václav Sládek.</subtitle>
     <firstline>Bort, langt bort mod en fremmed Kyst</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Digte af Joseph Václav Sládek.</note>
-    </notes>
     <source pages="93-94"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -3473,10 +3423,10 @@ Dybere Flænger slog.
 
 <text id="grove20260808079">
 <head>
-    <title>Papu'en</title>
+
+    <subtitle>Digte af Joseph Václav Sládek.</subtitle>
     <firstline>Hvor Michigan sin Bølgevrimmel sender</firstline>
     <notes>
-        <note type="source">Kildens tilskrivning: Digte af Joseph Václav Sládek.</note>
         <note type="source">*) Indiansk Betegnelse for et spædt Barn.</note>
     </notes>
     <source pages="94-98"/>
@@ -3633,11 +3583,9 @@ Hvordan det vel den lille Papu gaaer?«
 
 <text id="grove20260808080">
 <head>
-    <title>Dødens Løfte</title>
+
+    <subtitle>Af Ladislaus Quis.</subtitle>
     <firstline>Rundtom nøgne, flade Marker</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Ladislaus Quis.</note>
-    </notes>
     <source pages="98-102"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -3780,11 +3728,9 @@ Indtil Verdens sidste Stund!«
 
 <text id="grove20260808081">
 <head>
-    <title>Spaadommen</title>
+
+    <subtitle>Af Julius Zeyer.</subtitle>
     <firstline>»I dybe Skov forvilded sig en Ridder —</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Julius Zeyer.</note>
-    </notes>
     <source pages="102-103"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -3851,11 +3797,9 @@ Ak, derom mælede den Gamle ej!
 
 <text id="grove20260808082">
 <head>
-    <title>Frosne Ruder</title>
+
+    <subtitle>Digte af Jaroslav Vrchlický.</subtitle>
     <firstline>I Dybet hele Verden segned</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Digte af Jaroslav Vrchlický.</note>
-    </notes>
     <source pages="103-104"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -3896,11 +3840,9 @@ Min Sang! — Fortæl saa Eventyr!
 
 <text id="grove20260808083">
 <head>
-    <title>Foraarsromance</title>
+
+    <subtitle>Digte af Jaroslav Vrchlický.</subtitle>
     <firstline>Der var engang en Troldmand stor</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Digte af Jaroslav Vrchlický.</note>
-    </notes>
     <source pages="104-106"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -3976,11 +3918,9 @@ Og Maj, den fagre, sejrede!
 
 <text id="grove20260808084">
 <head>
-    <title>Vision</title>
+
+    <subtitle>Digte af Jaroslav Vrchlický.</subtitle>
     <firstline>Jeg stod ved Aften i den gamle Kirke</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Digte af Jaroslav Vrchlický.</note>
-    </notes>
     <source pages="106-107"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -4015,11 +3955,9 @@ Og frækt hans Latter gjennem Kirken bruste.
 
 <text id="grove20260808085">
 <head>
-    <title>Eventyret om Guldnøglen</title>
+
+    <subtitle>Digte af Jaroslav Vrchlický.</subtitle>
     <firstline>Kjender min Skat det skjønne Eventyr</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Digte af Jaroslav Vrchlický.</note>
-    </notes>
     <source pages="107-113"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -4249,11 +4187,9 @@ Og Eventyret om den gyldne Nøgle!
 
 <text id="grove20260808086">
 <head>
-    <title>Ekloge</title>
+
+    <subtitle>Af Jaroslav Vrchlický.</subtitle>
     <firstline>Se, krystalklart lyser Luften, Hyldeblomsten dufter sødt</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Jaroslav Vrchlický.</note>
-    </notes>
     <source pages="113-114"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -4287,11 +4223,9 @@ Fuglen, som sin muntre Trille slaaer:
 
 <text id="grove20260808087">
 <head>
-    <title>Stjerner</title>
+
+    <subtitle>Af Jaroslav Vrchlický.</subtitle>
     <firstline>Du Engel, som ved Kjærlighedens Kilde</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Jaroslav Vrchlický.</note>
-    </notes>
     <source pages="114"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -4312,11 +4246,9 @@ Du aner ej, hvor rigt .... det aner Ingen!
 
 <text id="grove20260808088">
 <head>
-    <title>Skovmotiv</title>
+
+    <subtitle>Af Jaroslav Vrchlický.</subtitle>
     <firstline>Mit Hjerte banker, som det skulde briste!</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Jaroslav Vrchlický.</note>
-    </notes>
     <source pages="114"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -4338,11 +4270,9 @@ Kjære, at Lykken uskadt naaer mit Bo?
 
 <text id="grove20260808089">
 <head>
-    <title>Efter Regn</title>
+
+    <subtitle>Af Jaroslav Vrchlický.</subtitle>
     <firstline>Nu bryder det Blaa gjennem Skyernes Dække</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Jaroslav Vrchlický.</note>
-    </notes>
     <source pages="114-115"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -4369,11 +4299,9 @@ Og ryster fornøjet sit pjaskvaade Haar.
 
 <text id="grove20260808090">
 <head>
-    <title>Mellem Valnøddetræer</title>
+
+    <subtitle>Af Jaroslav Vrchlický.</subtitle>
     <firstline>Saa snever var den Sti, saa smal, saa trang</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Jaroslav Vrchlický.</note>
-    </notes>
     <source pages="115"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -4393,11 +4321,9 @@ Sært nok! — For snever fandt vi den dog ej!
 
 <text id="grove20260808091">
 <head>
-    <title>Psyche og Satyr</title>
+
+    <subtitle>Af Jaroslav Vrchlický.</subtitle>
     <firstline>Ved Alfeus’ yppigt blomstersmykte Bred</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Jaroslav Vrchlický.</note>
-    </notes>
     <source pages="115-119"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -4561,11 +4487,9 @@ Tilbage til dit Hjem, Du Himmelbaarne!
 
 <text id="grove20260808092">
 <head>
-    <title>Satyrens Sang</title>
+
+    <subtitle>Af Jaroslav Vrchlický.</subtitle>
     <firstline>Bag Breddens Siv jeg døser bort den lange, hede Sommer</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Jaroslav Vrchlický.</note>
-    </notes>
     <source pages="119-123"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -4671,11 +4595,9 @@ Taalmodig venter jeg den Stund, da Druehøsten kommer.
 
 <text id="grove20260808093">
 <head>
-    <title>Aktæon</title>
+
+    <subtitle>Af Jaroslav Vrchlický.</subtitle>
     <firstline>Hvor finder jeg et Fristed? Ve mig, ve mig!</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Jaroslav Vrchlický.</note>
-    </notes>
     <source pages="123-125"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -4753,11 +4675,9 @@ Endymion ........................
 
 <text id="grove20260808094">
 <head>
-    <title>Mater dolorosa</title>
+
+    <subtitle>Af Jaroslav Vrchlický.</subtitle>
     <firstline>Fra Klosterportens Hvælving</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Jaroslav Vrchlický.</note>
-    </notes>
     <source pages="125-126"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -4802,11 +4722,9 @@ Om Fest i Sol og Vaar!
 
 <text id="grove20260808095">
 <head>
-    <title>Min Datters Fødselsdag</title>
+
+    <subtitle>Af Jaroslav Vrchlický.</subtitle>
     <firstline>Den fjortende April iaar blev taaget</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Jaroslav Vrchlický.</note>
-    </notes>
     <source pages="126"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -4836,11 +4754,9 @@ Columbus, da han Vestens Land opdaged!
 
 <text id="grove20260808096">
 <head>
-    <title>Et Barn</title>
+
+    <subtitle>Af Jaroslav Vrchlický.</subtitle>
     <firstline>Hvor der var Støj! — Fra Dagens muntre Udflugt</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Jaroslav Vrchlický.</note>
-    </notes>
     <source pages="126-128"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -4895,12 +4811,10 @@ Den fletted Sølverkrans. — Og det blev Nat.
 
 <text id="grove20260808097">
 <head>
-    <title>Zita</title>
+
+    <subtitle>Af Jaroslav Vrchlický.</subtitle>
     <subtitle>En Legende.</subtitle>
     <firstline>Mon Du vel i Himmelsalen</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Jaroslav Vrchlický.</note>
-    </notes>
     <source pages="128-134"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -5149,11 +5063,9 @@ Er Du vred nu, søde Zita?
 
 <text id="grove20260808098">
 <head>
-    <title>Amarus</title>
+
+    <subtitle>Af Jaroslav Vrchlický.</subtitle>
     <firstline>Som spæd han kom i Kloster, vidste intet</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Jaroslav Vrchlický.</note>
-    </notes>
     <source pages="134-136"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -5223,11 +5135,9 @@ Og over ham lød endnu Fuglesangen! — —
 
 <text id="grove20260808099">
 <head>
-    <title>Giotto og Sjælen</title>
+
+    <subtitle>Af Jaroslav Vrchlický.</subtitle>
     <firstline>En Aften sad Giotto i sit Værksted</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Jaroslav Vrchlický.</note>
-    </notes>
     <source pages="136-137"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -5285,11 +5195,9 @@ Hvorfor jeg dette Sagn Dig har fortalt? — —
 
 <text id="grove20260808100">
 <head>
-    <title>Grev Breda</title>
+
+    <subtitle>Af Jaroslav Vrchlický.</subtitle>
     <firstline>Grev Breda fnyser. — Hvordan er det fat?</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Jaroslav Vrchlický.</note>
-    </notes>
     <source pages="137-139"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -5356,11 +5264,9 @@ Kvalt med en flettet, gylden Lok minsandten!
 
 <text id="grove20260808101">
 <head>
-    <title>De Fattiges Ax</title>
+
+    <subtitle>Af Jaroslav Vrchlický.</subtitle>
     <firstline>Varm var Dagen; tusind Maurer</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Jaroslav Vrchlický.</note>
-    </notes>
     <source pages="139-141"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -5442,11 +5348,9 @@ Herren til en Ørn min Ganger!«
 
 <text id="grove20260808102">
 <head>
-    <title>Arabisk Motiv</title>
+
+    <subtitle>Af Jaroslav Vrchlický.</subtitle>
     <firstline>Fra Kampen Sachar saaret kom tilbage</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Jaroslav Vrchlický.</note>
-    </notes>
     <source pages="141"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -5475,11 +5379,9 @@ Paa Teltets Lærred med sit Blod han tegned:
 
 <text id="grove20260808103">
 <head>
-    <title>Nektar</title>
+
+    <subtitle>Af Jaroslav Vrchlický.</subtitle>
     <firstline>Venus engang i længst forsvundne Dage</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Jaroslav Vrchlický.</note>
-    </notes>
     <source pages="141-142"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -5510,12 +5412,10 @@ Besk virker derfor Skjønhed paa saa Mangen!
 
 <text id="grove20260808104">
 <head>
-    <title>Henrik Ibsen</title>
+
+    <subtitle>Af Jaroslav Vrchlický.</subtitle>
     <subtitle>20. Marts 1898.</subtitle>
     <firstline>Mon Galdebægret, af dit Folk Dig rakt</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Jaroslav Vrchlický.</note>
-    </notes>
     <source pages="142-143"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -5579,11 +5479,9 @@ De Smaas Velsignelse Du aldrig taber.
 
 <text id="grove20260808105">
 <head>
-    <title>Th. de Banville</title>
+
+    <subtitle>Af Jaroslav Vrchlický.</subtitle>
     <firstline>Bring hvide Roser, Hyacinther, Myrther</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Jaroslav Vrchlický.</note>
-    </notes>
     <source pages="144"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -5611,11 +5509,9 @@ Kysses i Vaarens Blomsterregn tildøde!
 
 <text id="grove20260808106">
 <head>
-    <title>Thorvaldsen</title>
+
+    <subtitle>Af Jaroslav Vrchlický.</subtitle>
     <firstline>»Brus, vilde Storm! Far hen i Stød!</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Jaroslav Vrchlický.</note>
-    </notes>
     <source pages="144-147"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -5740,11 +5636,9 @@ Som Varsel om hans Fremtids Ry. —
 
 <text id="grove20260808107">
 <head>
-    <title>Caligula og Philon</title>
+
+    <subtitle>Af Jaroslav Vrchlický.</subtitle>
     <firstline>Atter faldt Onkel Claudius i Søvn</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Jaroslav Vrchlický.</note>
-    </notes>
     <source pages="147-156"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -6093,11 +5987,9 @@ Gav første Dødshug til Caligula.
 
 <text id="grove20260808108">
 <head>
-    <title>Fra Kjærlighedens Karneval</title>
+
+    <subtitle>Af Jaroslav Vrchlický.</subtitle>
     <firstline>Kjærlighed, Du Blomst fra Eden</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Jaroslav Vrchlický.</note>
-    </notes>
     <source pages="156-165"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -6415,11 +6307,9 @@ Rester af en lyrisk Digter.
 
 <text id="grove20260808109">
 <head>
-    <title>To Skygger</title>
+
+    <subtitle>Af Jaroslav Vrchlický.</subtitle>
     <firstline>En Aften silde gik jeg til mit Hjem</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Jaroslav Vrchlický.</note>
-    </notes>
     <source pages="165"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -6449,11 +6339,9 @@ Jeg Don Quijot og Sancho Pansa kjende.
 
 <text id="grove20260808110">
 <head>
-    <title>Sangenes Vin</title>
+
+    <subtitle>Af Jaroslav Vrchlický.</subtitle>
     <firstline>Naar Vingaardsmanden først, ved Foraarstide</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Jaroslav Vrchlický.</note>
-    </notes>
     <source pages="165-166"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -6483,11 +6371,9 @@ Da størkne Taarerne til Ædelstene.
 
 <text id="grove20260808111">
 <head>
-    <title>Omnes vulnerant, ultima necat</title>
+
+    <subtitle>Af Jaroslav Vrchlický.</subtitle>
     <firstline>Ensformig Viseren bestandig skrider</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Jaroslav Vrchlický.</note>
-    </notes>
     <source pages="166"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -6523,11 +6409,9 @@ Ej værd fra Reden bort en Fugl at jage!
 
 <text id="grove20260808112">
 <head>
-    <title>Farvespil</title>
+
+    <subtitle>Af Jaroslav Vrchlický.</subtitle>
     <firstline>Ej, førend Lysets Bølger gjennemgløde</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Jaroslav Vrchlický.</note>
-    </notes>
     <source pages="167"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -6556,11 +6440,9 @@ Phantasus fejrer Farvebacchanal!
 
 <text id="grove20260808113">
 <head>
-    <title>Mine Rejser</title>
+
+    <subtitle>Af Jaroslav Vrchlický.</subtitle>
     <firstline>Hvor drømte tidt jeg i de svundne Dage</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Jaroslav Vrchlický.</note>
-    </notes>
     <source pages="167-168"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -6596,11 +6478,9 @@ Saa stolte Rejser ved sit Skrivebord!
 
 <text id="grove20260808114">
 <head>
-    <title>Diogeneslygten</title>
+
+    <subtitle>Af Jaroslav Vrchlický.</subtitle>
     <firstline>Naar Dagens Lys er slukket, ved mit Leje</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Jaroslav Vrchlický.</note>
-    </notes>
     <source pages="168-169"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -6647,11 +6527,9 @@ BENE lag
 
 <text id="grove20260808115">
 <head>
-    <title>Stigma</title>
+
+    <subtitle>Af Jaroslav Vrchlický.</subtitle>
     <firstline>Utak er ofte Digterværkets Løn</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Jaroslav Vrchlický.</note>
-    </notes>
     <source pages="169"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -6678,11 +6556,9 @@ Af Lykkens Kys, var det end nok saa kort!
 
 <text id="grove20260808116">
 <head>
-    <title>Satans Fald</title>
+
+    <subtitle>Af Jaroslav Vrchlický.</subtitle>
     <firstline>Det skete, at i Menneskenes Hjerter</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Jaroslav Vrchlický.</note>
-    </notes>
     <source pages="169-170"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -6708,11 +6584,9 @@ Og Spor af Satans Værk var ej at finde!
 
 <text id="grove20260808117">
 <head>
-    <title>Don Juans Bod</title>
+
+    <subtitle>Af Jaroslav Vrchlický.</subtitle>
     <firstline>Kun de nøgne, sorte Klipper</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Jaroslav Vrchlický.</note>
-    </notes>
     <source pages="170-182"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -7182,11 +7056,9 @@ Edens Porte aabne staa.« — — —
 
 <text id="grove20260808118">
 <head>
-    <title>Moderne Ballade</title>
+
+    <subtitle>Af Jaroslav Vrchlický.</subtitle>
     <firstline>Søvnløs han sig paa Lejet kaster</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Jaroslav Vrchlický.</note>
-    </notes>
     <source pages="182-185"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -7280,11 +7152,9 @@ Og Satan paa hans Tærskel staaer!
 
 <text id="grove20260808119">
 <head>
-    <title>Ensomhedens Aand</title>
+
+    <subtitle>Af Jaroslav Vrchlický.</subtitle>
     <firstline>Ved Bjergvæg, under dunkle Fyrretræer</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Jaroslav Vrchlický.</note>
-    </notes>
     <source pages="185-188"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -7422,11 +7292,9 @@ Kan tale til min Sjæl med Længslens Klange!
 
 <text id="grove20260808120">
 <head>
-    <title>Montenegrinerinden</title>
+
+    <subtitle>Af Karel Kučera.</subtitle>
     <firstline>»Af hin Rede højt paa Bjergets Tinder</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Karel Kučera.</note>
-    </notes>
     <source pages="188-190"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -7486,11 +7354,9 @@ Og en Blodpøl, vi ved Træet fandt!«
 
 <text id="grove20260808121">
 <head>
-    <title>Lægemidlet</title>
+
+    <subtitle>Af Karel Kučera.</subtitle>
     <firstline>Et Hundredtusind skarpe Spyd og Lanser</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Karel Kučera.</note>
-    </notes>
     <source pages="190-191"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -7562,11 +7428,9 @@ Gjør stille Ende paa sit Liv.
 
 <text id="grove20260808122">
 <head>
-    <title>Poesien!</title>
+
+    <subtitle>Af F. A. Šubert.</subtitle>
     <firstline>Jeg flakked rundt i Florents, —</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af F. A. Šubert.</note>
-    </notes>
     <source pages="191-195"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -7897,11 +7761,9 @@ Og kun Splinter blev tilbage.
 
 <text id="grove20260808128">
 <head>
-    <title>Den sidste Sne</title>
+
+    <subtitle>Af Alexander Maikov. (Russisk Digter).</subtitle>
     <firstline>Til Vaarens blaa Violer</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Alexander Maikov. (Russisk Digter).</note>
-    </notes>
     <source pages="199"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -7922,11 +7784,9 @@ Efter de gryende Glæder.
 
 <text id="grove20260808129">
 <head>
-    <title>Snehvidelil</title>
+
+    <subtitle>Eventyr fra Ukraine. Af Grigor Petrovitsch Danilevski. (Russisk Digter).</subtitle>
     <firstline>Engang leved et Par gamle</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Eventyr fra Ukraine. Af Grigor Petrovitsch Danilevski. (Russisk Digter).</note>
-    </notes>
     <source pages="199-202"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -8040,11 +7900,9 @@ Og mod Himlens Blaa sig taber.
 
 <text id="grove20260808130">
 <head>
-    <title>Fedjá</title>
+
+    <subtitle>Af Ivan Turgénjev. (Russisk Digter).</subtitle>
     <firstline>Nattefrosten isned — paa en prustende Hest</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Ivan Turgénjev. (Russisk Digter).</note>
-    </notes>
     <source pages="202-203"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -8080,11 +7938,9 @@ Vendte brat sin Hest — og forsvandt i det Fjerne.
 
 <text id="grove20260808131">
 <head>
-    <title>Paa Steppen</title>
+
+    <subtitle>Af Adam Mickiewicz. (Polsk Digter).</subtitle>
     <firstline>Hen over Steppens Hav af Græs jeg glider</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Adam Mickiewicz. (Polsk Digter).</note>
-    </notes>
     <source pages="203"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -8113,12 +7969,10 @@ Ved Bud fra Hjemmet; men — det Bud ej klinger!
 
 <text id="grove20260808132">
 <head>
-    <title>Paa Lur</title>
+
+    <subtitle>Af Adam Mickiewicz. (Polsk Digter).</subtitle>
     <subtitle>Ballade fra Ukraine.</subtitle>
     <firstline>Af Adam Mickiewicz. (Polsk Digter)</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Adam Mickiewicz. (Polsk Digter).</note>
-    </notes>
     <source pages="204-206"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -8231,11 +8085,9 @@ Og til Jord styrter død — Vojevoden!
 
 <text id="grove20260808133">
 <head>
-    <title>Pigen og Fuglen</title>
+
+    <subtitle>Af Fran Levstik. (Slovenisk Digter).</subtitle>
     <firstline>En Pige gik med sin blanke Spand</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Fran Levstik. (Slovenisk Digter).</note>
-    </notes>
     <source pages="206-207"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -8275,10 +8127,10 @@ Og veed, hvordan det i Verden gaaer.«
 
 <text id="grove20260808134">
 <head>
-    <title>Agaen og den Kristne</title>
+
+    <subtitle>Af Ivan Trnski.</subtitle>
     <firstline>Højt til Hest begav sig til Lievno</firstline>
     <notes>
-        <note type="source">Kildens tilskrivning: Af Ivan Trnski.</note>
         <note type="source">*) Vuk betyder Ulv.</note>
     </notes>
     <source pages="207-213"/>
@@ -8492,11 +8344,9 @@ Og Lievno jubled dem imøde!
 
 <text id="grove20260808135">
 <head>
-    <title>Belejringen af Kroja</title>
+
+    <subtitle>Af Andrija Katschitsch kld. Milovan. (Kroatisk Digter).</subtitle>
     <firstline>Sultan Murad</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Andrija Katschitsch kld. Milovan. (Kroatisk Digter).</note>
-    </notes>
     <source pages="213-214"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -8590,11 +8440,9 @@ Vil vort Hjerteblod for Kristus offre!«
 
 <text id="grove20260808137">
 <head>
-    <title>Kometen</title>
+
+    <subtitle>Af Johan Vajda.</subtitle>
     <firstline>Højt paa Himlens Kuppel straaler truende Kometens Glød</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Johan Vajda.</note>
-    </notes>
     <source pages="215-216"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -8627,11 +8475,9 @@ Vandrer Du din Vej alene, overalt forstødt, forladt! ...
 
 <text id="grove20260808138">
 <head>
-    <title>Min Ungdom</title>
+
+    <subtitle>Af Alexander Petöfy.</subtitle>
     <firstline>Du flygter, Ungdom? — Flygt Du kun!</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Alexander Petöfy.</note>
-    </notes>
     <source pages="216"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -8662,11 +8508,9 @@ Erindringen I med Jer tage!
 
 <text id="grove20260808139">
 <head>
-    <title>Det dæmrer!</title>
+
+    <subtitle>Af Karl Szász.</subtitle>
     <firstline>Det dæmrer! — Se, de slanke Træer slumre</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Karl Szász.</note>
-    </notes>
     <source pages="217"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -8713,11 +8557,9 @@ Og Fred og Haab mit arme Hjerte bringe! ....
 
 <text id="grove20260808140">
 <head>
-    <title>Længsel</title>
+
+    <subtitle>Af Nukada. (Digterinde. 8. Aarhundrede).</subtitle>
     <firstline>Se dog, hvor underlig langsomt og mat</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Nukada. (Digterinde. 8. Aarhundrede).</note>
-    </notes>
     <source pages="218"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -8735,11 +8577,9 @@ Før det er Nat og Elskovs Tid.
 
 <text id="grove20260808141">
 <head>
-    <title>Maanen</title>
+
+    <subtitle>Af Ishikava. (Digterinde. 8. Aarhundrede).</subtitle>
     <firstline>Maanen bryder nu frem af Sky</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Ishikava. (Digterinde. 8. Aarhundrede).</note>
-    </notes>
     <source pages="218"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -8757,11 +8597,9 @@ Saa de kan funkle som Diamanter.
 
 <text id="grove20260808142">
 <head>
-    <title>Et Minde</title>
+
+    <subtitle>Af Kibino. (8. Aarhundrede).</subtitle>
     <firstline>Vinden rev Bladene med over Engene</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Kibino. (8. Aarhundrede).</note>
-    </notes>
     <source pages="218"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -8777,11 +8615,9 @@ Blommetræesblomsternes Duft, den søde.
 
 <text id="grove20260808143">
 <head>
-    <title>Vildgaasen</title>
+
+    <subtitle>Af Ochi. (Bonde. 9. Aarhundrede).</subtitle>
     <firstline>Nu times os blide Kaar</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Ochi. (Bonde. 9. Aarhundrede).</note>
-    </notes>
     <source pages="219"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -8802,11 +8638,9 @@ Med Dig gjennem Luften fare!
 
 <text id="grove20260808144">
 <head>
-    <title>Pigernes Dans</title>
+
+    <subtitle>Af Sodzyo Hendzyo. (Buddhistisk Biskop. 9. Aarhundrede).</subtitle>
     <firstline>Pigerne danse i Kjæde </firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Sodzyo Hendzyo. (Buddhistisk Biskop. 9. Aarhundrede).</note>
-    </notes>
     <source pages="219"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -8828,11 +8662,9 @@ Pigerne danse i Kjæde ....
 
 <text id="grove20260808145">
 <head>
-    <title>Blomsterrøveren</title>
+
+    <subtitle>Af Sosei.</subtitle>
     <firstline>Sig mig, hvor Vinden har Bo, den slemme</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Sosei.</note>
-    </notes>
     <source pages="219-220"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -8852,11 +8684,9 @@ At jeg kan gjengælde Haardt med Haardt!
 
 <text id="grove20260808146">
 <head>
-    <title>Modsætninger</title>
+
+    <subtitle>Af Tomonori. (9. Aarhundrede).</subtitle>
     <firstline>Kirsebærtræet blomstred. Sort var mit Hovedhaar</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Tomonori. (9. Aarhundrede).</note>
-    </notes>
     <source pages="220"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -8876,11 +8706,9 @@ Og lige skjøn er Blomsten. — Min Haartop nu er hvid ....
 
 <text id="grove20260808147">
 <head>
-    <title>Ankerbøjen</title>
+
+    <subtitle>Af Motoyosi.</subtitle>
     <firstline>Som Ankerbøjen i Nanivas Havn</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Motoyosi.</note>
-    </notes>
     <source pages="220-221"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -8896,11 +8724,9 @@ Svimlende højt i Jubel, dybt, dybt ned i Savn.
 
 <text id="grove20260808148">
 <head>
-    <title>Umuligt</title>
+
+    <subtitle>Af Kanemori.</subtitle>
     <firstline>Jeg vilde saa gjerne dølge</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Kanemori.</note>
-    </notes>
     <source pages="221"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -8918,11 +8744,9 @@ Som veed de det, en og hver.
 
 <text id="grove20260808149">
 <head>
-    <title>Sommernatten</title>
+
+    <subtitle>Af Inno Betto.</subtitle>
     <firstline>Den ene Sommernat var Skyld deri</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Inno Betto.</note>
-    </notes>
     <source pages="221"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -8943,11 +8767,9 @@ Den ene korte Nat.
 
 <text id="grove20260808150">
 <head>
-    <title>Haabløst</title>
+
+    <subtitle>Af Tosinari.</subtitle>
     <firstline>Mørk og kvalfuld Verden maa</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Tosinari.</note>
-    </notes>
     <source pages="221-222"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -8967,11 +8789,9 @@ Skovens Hjort i Graad jeg saae!
 
 <text id="grove20260808151">
 <head>
-    <title>Alderdom</title>
+
+    <subtitle>Af Kiutsune. (Ministersøn, som endte i Kloster. 12.—13. Aarh.).</subtitle>
     <firstline>Paa dunkle Lokker jeg fletted Krans</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Kiutsune. (Ministersøn, som endte i Kloster. 12.—13. Aarh.).</note>
-    </notes>
     <source pages="222"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -8999,11 +8819,9 @@ Men Time paa Time, Aar efter Aar.
 
 <text id="grove20260808152">
 <head>
-    <title>Hvorfor?</title>
+
+    <subtitle>Af Kalidasa.</subtitle>
     <firstline>Saa mørkeblaat som Lotus er vel dit Øjepar</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Kalidasa.</note>
-    </notes>
     <source pages="222"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -9023,11 +8841,9 @@ Han i din bløde Barm har et flinthaardt Hjerte lagt?
 
 <text id="grove20260808153">
 <head>
-    <title>Jagt</title>
+
+    <subtitle>Af Kalidasa.</subtitle>
     <firstline>Den Skjønne som Jægeren er at skue</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Kalidasa.</note>
-    </notes>
     <source pages="222-223"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -9043,11 +8859,9 @@ Og skyder mig selv som en Raabuk ned!
 
 <text id="grove20260808154">
 <head>
-    <title>Fiskeren</title>
+
+    <subtitle>Af Bhartrihari.</subtitle>
     <firstline>Ved Livshavets Bred</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Bhartrihari.</note>
-    </notes>
     <source pages="223"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -9073,11 +8887,9 @@ I Elskovens Glød.
 
 <text id="grove20260808155">
 <head>
-    <title>Slangeblik</title>
+
+    <subtitle>Af Bhartrihari.</subtitle>
     <firstline>Som Slangen hendes Øje sig udvider</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Bhartrihari.</note>
-    </notes>
     <source pages="223"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -9099,11 +8911,9 @@ Slet intet Urt og Tryllesprog formaaer.
 
 <text id="grove20260808156">
 <head>
-    <title>I Slaveri</title>
+
+    <subtitle>Af Bhartrihari.</subtitle>
     <firstline>Jeg tør paastaa, hun maa have</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Bhartrihari.</note>
-    </notes>
     <source pages="224"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -9119,11 +8929,9 @@ Hvor hun sender hen sit Blik.
 
 <text id="grove20260808157">
 <head>
-    <title>Tvende Veje</title>
+
+    <subtitle>Af Bhartrihari.</subtitle>
     <firstline>Ved Gangās syndudslettende Vove</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Bhartrihari.</note>
-    </notes>
     <source pages="224"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -9139,11 +8947,9 @@ Ved Pigens perlesmykkede Bryst.
 
 <text id="grove20260808158">
 <head>
-    <title>Hvad saa?</title>
+
+    <subtitle>Af Amaru.</subtitle>
     <firstline>Naar Glimtet fra hans Øjne mod mig foer</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Amaru.</note>
-    </notes>
     <source pages="224"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -9161,11 +8967,9 @@ Om alle Snore i mit Snørliv brast?
 
 <text id="grove20260808159">
 <head>
-    <title>Surmuleri</title>
+
+    <subtitle>Af Amaru.</subtitle>
     <firstline>Da jeg knæle vilde ved den Lilles Fod</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Amaru.</note>
-    </notes>
     <source pages="224"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -9186,11 +8990,9 @@ For det klæ’er Dig, Du! — Jeg finder mig deri.
 
 <text id="grove20260808160">
 <head>
-    <title>Paa Vilkaar</title>
+
+    <subtitle>Af Amaru.</subtitle>
     <firstline>Skjønne, er det Alvor nu</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Amaru.</note>
-    </notes>
     <source pages="225"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -9211,11 +9013,9 @@ Jeg med Fred herfra skal drage.
 
 <text id="grove20260808161">
 <head>
-    <title>Forskjel</title>
+
+    <subtitle>Af Govardhana.</subtitle>
     <firstline>Skjemt blev paa den Elsktes Læber blot</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Govardhana.</note>
-    </notes>
     <source pages="225"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -9434,9 +9234,6 @@ Thi ellers faaer Du let af Arbejd mere!
     <title>En Foraarsrus</title>
     <subtitle>Ode af Li-t'ai-pé.</subtitle>
     <firstline>Hvad andet er det hele Liv end Drømme?</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Ode af Li-t'ai-pé.</note>
-    </notes>
     <source pages="229"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -9782,11 +9579,9 @@ Slumrer da den spinkle Pige.
 
 <text id="grove20260808178">
 <head>
-    <title>Elskovsve</title>
+
+    <subtitle>Af von Kürenberg. (ca. 1150).</subtitle>
     <firstline>Naar, ædle Ridder, jeg ene staaer</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af von Kürenberg. (ca. 1150).</note>
-    </notes>
     <source pages="236"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -9806,11 +9601,9 @@ Som vilde det hartad briste.
 
 <text id="grove20260808179">
 <head>
-    <title>Huset i Himlen</title>
+
+    <subtitle>Af Spervogel. (ca. 1150).</subtitle>
     <firstline>Et Hus i Himmerige staaer</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Spervogel. (ca. 1150).</note>
-    </notes>
     <source pages="236"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -9829,11 +9622,9 @@ Som tvætted sig for alle Synder rene.
 
 <text id="grove20260808180">
 <head>
-    <title>Foraar</title>
+
+    <subtitle>Af Dietmar von Aist. (ca. 1170).</subtitle>
     <firstline>En liden Fugl sang af sit Næb fra Lindetræets høje Top</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Dietmar von Aist. (ca. 1170).</note>
-    </notes>
     <source pages="236-237"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -9849,11 +9640,9 @@ De lokke tusind Tanker frem, som lønlig til min Elskte gaa.
 
 <text id="grove20260808181">
 <head>
-    <title>Tristan</title>
+
+    <subtitle>Af Heinrich von Veldecke. (ca. 1170).</subtitle>
     <firstline>Tro sin Dronning til sin Grav</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Heinrich von Veldecke. (ca. 1170).</note>
-    </notes>
     <source pages="237"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -9877,11 +9666,9 @@ Som Du kaaret er til min!
 
 <text id="grove20260808182">
 <head>
-    <title>Et Kys</title>
+
+    <subtitle>Af Walther von der Vogelweide. (1168—1230).</subtitle>
     <firstline>Om det maa times mig, ak, om det hænder</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Walther von der Vogelweide. (1168—1230).</note>
-    </notes>
     <source pages="237"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -9900,11 +9687,9 @@ Lindres den Kval, som i Hjertet brænder.
 
 <text id="grove20260808183">
 <head>
-    <title>Majglæde</title>
+
+    <subtitle>Af Neidhart von Reuenthal. (ca. 1230).</subtitle>
     <firstline>Nu paa Bjerg, i Dal, mod Sky</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Neidhart von Reuenthal. (ca. 1230).</note>
-    </notes>
     <source pages="238"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -9933,11 +9718,9 @@ Forrest i de Unges Tog.
 
 <text id="grove20260808184">
 <head>
-    <title>Den unge Moder</title>
+
+    <subtitle>Af Gottfried von Neifen. (ca. 1250).</subtitle>
     <firstline>Skal i Sommer som i Vaar</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Gottfried von Neifen. (ca. 1250).</note>
-    </notes>
     <source pages="238-239"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -9978,11 +9761,9 @@ Du maa tie stille!
 
 <text id="grove20260808185">
 <head>
-    <title>Ved Løvfaldstid</title>
+
+    <subtitle>Af Adolf Friedrich von Schack.</subtitle>
     <firstline>I klare, kølige Oktoberdage</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Adolf Friedrich von Schack.</note>
-    </notes>
     <source pages="239-240"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -10019,11 +9800,11 @@ Tilintetgjørelsens storladne Ynde.
 
 <text id="grove20260808186">
 <head>
-    <title>Dag og Nat!</title>
+
+    <subtitle>Af Heinrich Heine.</subtitle>
     <firstline>Hver Morgen jeg jubled, naar Sol oprandt</firstline>
     <notes>
-        <note type="source">Kildens tilskrivning: Af Heinrich Heine.</note>
-        <note>Gendigtning af <xref type="translation" poem="heine2001122711"/>.</note>
+        <note>Gendigtning af Heinrich Heine: <xref type="translation" poem="heine2001122711"/>.</note>
     </notes>
     <source pages="240"/>
     <quality>korrektur1,kilde,side</quality>
@@ -10045,11 +9826,9 @@ Og gik som i Søvne omkring!
 
 <text id="grove20260808187">
 <head>
-    <title>En Goethefortolker</title>
+
+    <subtitle>Epigram af Gottfried Keller.</subtitle>
     <firstline>Han sin Hjerne, fyldt med tørre Ærter</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Epigram af Gottfried Keller.</note>
-    </notes>
     <source pages="240"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -10065,11 +9844,9 @@ Og hvor Staklens skjøre Hjerne revner!
 
 <text id="grove20260808188">
 <head>
-    <title>Fransk Duel</title>
+
+    <subtitle>Skjemtedigt af Friedrich Bodenstedt.</subtitle>
     <firstline>Frankrigs store Krigsminister</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Skjemtedigt af Friedrich Bodenstedt.</note>
-    </notes>
     <source pages="240-242"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -10130,11 +9907,9 @@ Boulanger og Lareinty.
 
 <text id="grove20260808189">
 <head>
-    <title>Svalerne</title>
+
+    <subtitle>Af Gustavo Adolfo Becquer.</subtitle>
     <firstline>Sikkert vil de sorte Svaler atter flokke sig derude</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Gustavo Adolfo Becquer.</note>
-    </notes>
     <source pages="242-243"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -10175,11 +9950,9 @@ De fløj bort for længe siden!
 
 <text id="grove20260808190">
 <head>
-    <title>Smaadigte</title>
+
+    <subtitle>Af Gustavo Adolfo Becquer.</subtitle>
     <firstline>Idag er Luften ren og Himlen blaa</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Gustavo Adolfo Becquer.</note>
-    </notes>
     <source pages="243-245"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -10265,11 +10038,9 @@ Om Alt jeg veed!
 
 <text id="grove20260808191">
 <head>
-    <title>Themistocles's Søn</title>
+
+    <subtitle>Af Maria Letizia de Rute.</subtitle>
     <firstline>En Dag Themistocles, vel halvt i Spot</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Maria Letizia de Rute.</note>
-    </notes>
     <source pages="245-246"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -10299,11 +10070,11 @@ Ifald man aldrig værre Styrmænd saae!
 
 <text id="grove20260808192">
 <head>
-    <title>Barfodmunken</title>
+
+    <subtitle>Af Walter Scott.</subtitle>
     <firstline>Kammerat, jeg vil unde Dig et Aar eller to —</firstline>
     <notes>
-        <note type="source">Kildens tilskrivning: Af Walter Scott.</note>
-        <note>Gendigtning af <xref type="translation" poem="scott2026080801"/>.</note>
+        <note>Gendigtning af Walter Scott: <xref type="translation" poem="scott2026080801"/>.</note>
     </notes>
     <source pages="246-247"/>
     <quality>korrektur1,kilde,side</quality>
@@ -10385,11 +10156,9 @@ Tænk — aldrig mer man dem saae!
 
 <text id="grove20260808194">
 <head>
-    <title>Sangen om Tigilau</title>
+
+    <subtitle>Et Sagn fra Sámoaøerne. Af Marcus Clarke.</subtitle>
     <firstline>Sangen om Sinas Bejler, den Kjække</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Et Sagn fra Sámoaøerne. Af Marcus Clarke.</note>
-    </notes>
     <source pages="248-250"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -10490,11 +10259,11 @@ Over det brusende Vand, ak, Sina, da Maanen gik ned.
 
 <text id="grove20260808195">
 <head>
-    <title>Et Møde</title>
+
+    <subtitle>Af Joséphin Soulary.</subtitle>
     <firstline>Inde i Kirken mødes to vidt forskjellige Følger</firstline>
     <notes>
-        <note type="source">Kildens tilskrivning: Af Joséphin Soulary.</note>
-        <note>Gendigtning af <xref type="translation" poem="soulary2020031701"/>.</note>
+        <note>Gendigtning af Joséphin Soulary: <xref type="translation" poem="soulary2020031701"/>.</note>
     </notes>
     <source pages="250-251"/>
     <quality>korrektur1,kilde,side</quality>
@@ -10525,11 +10294,11 @@ Og til den Nyfødte smiler Kvinden, som nylig græd.
 
 <text id="grove20260808196">
 <head>
-    <title>Ærgjerrige Drømme</title>
+
+    <subtitle>Af Joséphin Soulary.</subtitle>
     <firstline>Ejed jeg blot en Stump Jord. Bakke, Dal eller Slette</firstline>
     <notes>
-        <note type="source">Kildens tilskrivning: Af Joséphin Soulary.</note>
-        <note>Gendigtning af <xref type="translation" poem="soulary2026080801"/>.</note>
+        <note>Gendigtning af Joséphin Soulary: <xref type="translation" poem="soulary2026080801"/>.</note>
     </notes>
     <source pages="251-252"/>
     <quality>korrektur1,kilde,side</quality>
@@ -10559,11 +10328,9 @@ Saa langt jeg min hele Synskreds for Resten af Livet vil trække.«
 
 <text id="grove20260808197">
 <head>
-    <title>Monte Carlo</title>
+
+    <subtitle>Af Jacques Normand.</subtitle>
     <firstline>Det ligner en Dekoration til et straalende Feeri</firstline>
-    <notes>
-        <note type="source">Kildens tilskrivning: Af Jacques Normand.</note>
-    </notes>
     <source pages="252-253"/>
     <quality>korrektur1,kilde,side</quality>
 </head>
@@ -10720,11 +10487,11 @@ Vexle blide Blikke under Maaneskin. —
 
 <text id="grove20260808199">
 <head>
-    <title>Af en Gravtale</title>
+
+    <subtitle>Efter Bellman.</subtitle>
     <firstline>Nu Krusets Laag maa smækkes til</firstline>
     <notes>
-        <note type="source">Kildens tilskrivning: Efter Bellman.</note>
-        <note>Gendigtning af <xref type="translation" poem="bellman2026080801"/>.</note>
+        <note>Gendigtning af Carl Michael Bellman: <xref type="translation" poem="bellman2026080801"/>.</note>
     </notes>
     <source pages="256"/>
     <quality>korrektur1,kilde,side</quality>
@@ -10754,11 +10521,11 @@ Fik Leen ganske rusten!
 
 <text id="grove20260808200">
 <head>
-    <title>Det Uendelige</title>
+
+    <subtitle>Af Giacomo Leopardi.</subtitle>
     <firstline>Kjær var mig stedse denne øde Høj</firstline>
     <notes>
-        <note type="source">Kildens tilskrivning: Af Giacomo Leopardi.</note>
-        <note>Gendigtning af <xref type="translation" poem="leopardi2018090701"/>.</note>
+        <note>Gendigtning af Giacomo Leopardi: <xref type="translation" poem="leopardi2018090701"/>.</note>
     </notes>
     <source pages="256-257"/>
     <quality>korrektur1,kilde,side</quality>
@@ -10787,11 +10554,11 @@ Men Skibbrud i det Hav er jo en Lykke!
 
 <text id="grove20260808201">
 <head>
-    <title>Digterværd</title>
+
+    <subtitle>Epigram af Martial.</subtitle>
     <firstline>Stor er Verona, men skylder Catul dog lige saa meget</firstline>
     <notes>
-        <note type="source">Kildens tilskrivning: Epigram af Martial.</note>
-        <note>Gendigtning af <xref type="translation" poem="martial2026080801"/>.</note>
+        <note>Gendigtning af Martial: <xref type="translation" poem="martial2026080801"/>.</note>
     </notes>
     <source pages="257"/>
     <quality>korrektur1,kilde,side</quality>
@@ -10810,7 +10577,7 @@ Som den smaabitte Mantua skylder den store Virgil.
 </content>
 </section>
 
-<prose>
+<text id="grove20260808202" skip-index="true">
 <head>
     <title>Oplysninger</title>
     <source pages="259-261"/>
@@ -10889,7 +10656,7 @@ Marcus Andrew Hislop Clarke, australsk-engelsk Digter og Journalist, f. i Kensin
 NATTERGALEN. Den normanniske Adelsfrue Marie de France, der i Begyndelsen af det 13. Aarhundrede vandt Ry som Digterinde, har bearbejdet denne Folkesang, der altsaa maa være ældre end det 13. Aarhundrede, i Trouvérernes Maner, men nævner selv Folkesangen som sin Kilde og følger den ret nøje. (Jfr. Villemarqué).
 </prose>
 </body>
-</prose>
+</text>
 
 </workbody>
 </kalliopework>
