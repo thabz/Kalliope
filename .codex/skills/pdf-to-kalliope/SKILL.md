@@ -498,6 +498,22 @@ Do not insert `<pb>` merely at the beginning or end of each `<text>` to repeat
 its `<source pages="...">`. A page transition between two separate text entries
 is not internal to either body and therefore does not receive a marker.
 
+Write every text-level `source/@pages` as one full page label or a closed,
+nondecreasing interval. Expand bibliographic abbreviations before writing XML:
+use `102-108`, never `102-08`, and never leave an open value such as `106-`.
+
+Across the complete work in document order, Arabic `pb/@n` values and numeric
+`pb/@facs` filenames must never decrease. Gaps are valid because transitions
+between separate text entries do not receive markers. Roman `n` labels are not
+part of the machine ordering check.
+
+Use `ignore-tests="pagebreak-count"` on one text only when a documented
+pagination anomaly makes a legal page interval differ from the number of
+internal body transitions. Never use it to permit an abbreviated, open or
+decreasing `pages` value. The exception does not relax marker placement,
+`facs`, or ordering requirements. Put it on the work only when the anomaly
+applies throughout the publication.
+
 The page marker does not affect public rendering, but it must remain in the
 source XML for structural analysis, including detection of stanza continuations
 and physical line wrapping.
@@ -876,9 +892,11 @@ At minimum:
 15. Verify every internal page boundary against the page inventory, including
     each marker's exact position, printed `n` value and required `facs`
     filename.
-16. Verify that `<workhead>` contains `<pagebreaks/>`, including when no text
+16. Verify that Arabic `pb/@n` values and numeric `pb/@facs` filenames never
+    decrease in document order; gaps are allowed.
+17. Verify that `<workhead>` contains `<pagebreaks/>`, including when no text
     crosses a page boundary.
-17. Verify that the title page and optional cover images are the correct pages.
+18. Verify that the title page and optional cover images are the correct pages.
 
 The final work must have been checked page by page against the images.
 
@@ -904,6 +922,8 @@ Explicitly verify that:
 - no continuation over a page boundary is missing
 - every internal source-page transition has exactly one correctly placed `<pb>`
 - every `<pb>` has the correct non-empty `facs` filename
+- Arabic `pb/@n` values and numeric `pb/@facs` filenames never decrease in
+  document order, while gaps are allowed
 - `<workhead>` contains `<pagebreaks/>`, even when there are no `<pb>` elements
 - no heading or numbered section has disappeared
 - source order is preserved
@@ -1057,6 +1077,8 @@ The task is complete only when all applicable items are true:
       precisely placed `<pb>`.
 - [ ] Every `<pb>` has a non-empty `facs` containing the correct facsimile page
       filename; `n`, when present, is the printed page label.
+- [ ] Arabic `pb/@n` values and numeric `pb/@facs` filenames never decrease in
+      document order; gaps are allowed.
 - [ ] `<workhead>` contains `<pagebreaks/>`, including when no included text
       crosses a page boundary and the work consequently has no `<pb>`.
 - [ ] Every relevant poem was included.

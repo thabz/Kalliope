@@ -62,6 +62,8 @@ De guldhenboelgende Vaenge
 - `status`: typisk `complete` eller `incomplete`.
 - `type`: typisk `poetry`; enkelte vaerker bruger `prose`.
 - `parent`: valgfri. Bruges naar et vaerk er en underdel af et andet vaerk hos samme digter.
+- `ignore-tests`: kommaseparerede, navngivne undtagelser fra enkelte semantiske
+  tests. Brug kun en dokumenteret undtagelse og aldrig som generel testafbrydelse.
 
 `<workhead>` indeholder metadata for hele vaerket. `<workbody>` indeholder tekster,
 sektioner og eventuelle underværker.
@@ -201,7 +203,9 @@ Attributter paa `<text>`:
 - `aliases`: komma-separerede gamle id'er, der skal redirecte til denne tekst.
 - `skip-index`: hvis sat, udelades teksten fra titel/foerstelinjeindekser.
 - `lang`: valgfrit sprog for teksten, hvis den afviger fra digterens `lang`.
-- `ignore-tests`: bruges af tests til enkelte undtagelser.
+- `ignore-tests`: bruges af tests til enkelte dokumenterede undtagelser. Værdien
+  `pagebreak-count` springer kun sammenligningen mellem `source/@pages` og antal
+  `<pb>` over for teksten.
 
 ### Text head
 
@@ -278,6 +282,9 @@ Eksempel (text kilde med arv og override):
 
 Regler:
 
+- `pages` skal være én fuld sidebetegnelse eller et lukket, ikke-faldende
+  interval. Skriv eksempelvis `102-108`, aldrig den bibliografiske forkortelse
+  `102-08`; åbne intervaller som `106-` er ugyldige.
 - `<workhead><source href="...">` sættes på værkniveau og kan arves af tekster uden egen kilde-href.
 - Et tekstniveau `<source href="...">` erstatter URL'en fra den arvede værk-kilde.
 - `href`: valgfri URL til den digitale kilde for teksten/udgaven.
@@ -391,6 +398,18 @@ for at gentage tekstens `<source pages="...">`. Derfor kan et værk med
 `<pagebreaks/>` lovligt indeholde nul `<pb>`-elementer. I værker med
 `<pagebreaks/>` er `facs` redaktionelt obligatorisk på hvert `<pb>`. Schemaet
 tillader fortsat ældre `<pb>` uden `facs` af hensyn til bagudkompatibilitet.
+
+I dokumentrækkefølge må de arabiske værdier i `pb/@n` og de numeriske
+facsimilefilnavne i `pb/@facs` ikke falde gennem værket. Spring er gyldige, fordi
+sideskift mellem to tekstposter ikke får en markør. Romertalsværdier i `n`
+indgår ikke i den maskinelle rækkefølgekontrol.
+
+Hvis et lovligt sideinterval undtagelsesvis ikke kan omsættes til
+`slutside - startside` interne markører, kan den konkrete tekst bruge
+`ignore-tests="pagebreak-count"`. Undtagelsen må ikke bruges til forkortede,
+åbne eller faldende `pages`-værdier og springer ikke kravene til `facs`,
+placering eller rækkefølge over. Sæt kun undtagelsen på `<kalliopework>`, hvis
+den dokumenterede pagineringsafvigelse gælder hele værket.
 
 Særlige linjeformer:
 

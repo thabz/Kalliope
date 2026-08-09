@@ -1422,6 +1422,18 @@ legacy-markører. Den semantiske validator skal kræve en ikke-tom `facs` på hv
 `<pb>` i et værk med `<pagebreaks/>` og kontrollere, at værdien er et filnavn,
 der svarer til den relevante facsimileside.
 
+Alle `source/@pages` på tekstforekomster skal være fulde sidebetegnelser eller
+lukkede, ikke-faldende intervaller. Forkortede slutpunkter som `140-47`, åbne
+intervaller og numerisk faldende intervaller er ugyldige og skal repareres i
+kildedata.
+
+I dokumentrækkefølge skal arabiske `pb/@n` og numeriske `pb/@facs`-filnavne være
+ikke-faldende gennem værket. Spring er tilladt; romertal i `n` ignoreres af den
+maskinelle rækkefølgekontrol. `ignore-tests="pagebreak-count"` på en tekst eller
+undtagelsesvis hele værket springer kun den aritmetiske sammenligning mellem
+sideinterval og antal `<pb>` over. Den gør ikke et ulovligt interval gyldigt og
+fravælger ikke de øvrige markørkrav.
+
 ### Bagudkompatibilitet
 
 Eksisterende:
@@ -2002,6 +2014,10 @@ Relax NG kontrollerer XML-strukturen. En særskilt validator skal kontrollere be
 - Hver `<pb>` skal have en ikke-tom `facs` med facsimilesidens filnavn.
 - `n`, når den findes, skal være den trykte sidebetegnelse og må ikke udfyldes
   med PDF-siden eller facsimilefilens nummer.
+- Arabiske `n`-værdier og numeriske `facs`-filnavne må ikke falde gennem
+  værket; spring er tilladt.
+- `ignore-tests="pagebreak-count"` må kun fravælge antalskontrollen for en
+  dokumenteret pagineringsafvigelse.
 - Nul `<pb>` er gyldigt, når ingen inkluderet tekst krydser en sidegrænse.
 
 ### Personer
