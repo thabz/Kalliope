@@ -75,7 +75,10 @@ import {
   workName,
   workLinkName,
 } from './build-static/formatting.js';
-import { pageOnlySourceError } from './build-static/source-validation.js';
+import {
+  pageIntervalError,
+  pageOnlySourceError,
+} from './build-static/source-validation.js';
 import {
   build_global_lines_json,
   build_poet_lines_json,
@@ -417,6 +420,14 @@ const handle_text = async (
   let source = null;
   let workSource = null;
   if (sourceNode != null) {
+    const intervalError = pageIntervalError({
+      filename: `fdirs/${sourcePoetId}/${sourceWorkId}.xml`,
+      textId: sourceTextId,
+      textSource: sourceNode,
+    });
+    if (intervalError != null) {
+      throw new Error(intervalError);
+    }
     const pageOnlyError = pageOnlySourceError({
       filename: `fdirs/${sourcePoetId}/${sourceWorkId}.xml`,
       textId: sourceTextId,

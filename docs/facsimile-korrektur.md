@@ -148,6 +148,18 @@ Der indsættes ikke en markør alene ved begyndelsen eller slutningen af hver
 hvor alle tekster står på én side, kan derfor være fuldt sideopmærket uden at
 indeholde nogen `<pb>`.
 
+Sideintervallet skal skrives med fulde endepunkter, fx `102-108`, ikke
+`102-08`, og skal være lukket og ikke-faldende. I dokumentrækkefølge skal
+arabiske `pb/@n` og de numeriske `pb/@facs`-filnavne være ikke-faldende gennem
+værket; der må gerne være spring mellem markørerne. Romertal i `n` ignoreres af
+den maskinelle rækkefølgekontrol.
+
+En konkret tekst med en dokumenteret pagineringsafvigelse kan bruge
+`ignore-tests="pagebreak-count"`, hvis det lovlige sideinterval ikke bestemmer
+antallet af interne markører. Undtagelsen fritager kun for antalskontrollen og
+må aldrig skjule et ulovligt `pages`, en manglende `facs`, forkert placering
+eller faldende markørværdier.
+
 Når alle inkluderede tekstkroppe er kontrolleret, skal værkets `<workhead>`
 indeholde:
 
@@ -315,6 +327,8 @@ Sammenhold desuden sideinventaret med XML'en og kontrollér, at:
 - ingen `<pb>` er indsat blot ved begyndelsen eller slutningen af en tekst
 - alle `<pb>` har en ikke-tom `facs`-attribut med det korrekte filnavn
 - `n`, når den findes, er den trykte sidebetegnelse og ikke PDF-siden
+- arabiske `n`-værdier og numeriske `facs`-filnavne er ikke-faldende gennem
+  værket; spring er tilladt
 - `<workhead>` indeholder `<pagebreaks/>`, når kontrollen er fuldført
 
 Hele testsuiten skal bestå før PR-oprettelse. Tjek til sidst `git status --short`
