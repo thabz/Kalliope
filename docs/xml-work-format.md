@@ -59,6 +59,8 @@ Almindelige felter i `<workhead>`:
 - `<pictures>`: billeder knyttet til hele vaerket.
 - `<source>`: kildeangivelser, som tekster kan arve eller referere til.
 - `<dates>`: datoer for vaerket.
+- `<pagebreaks/>`: erklærer, at alle interne sideskift i de inkluderede
+  tekstkroppe er registreret med `<pb>`.
 
 Titelfelter kan bruge `<num>` som prefix:
 
@@ -67,6 +69,25 @@ Titelfelter kan bruge `<num>` som prefix:
 ```
 
 Det bliver splittet i `prefix` og egentlig titel i indholdsfortegnelsen.
+
+### Workhead pagebreaks
+
+Nye værker, der er transskriberet fra et komplet facsimile, skal erklære den
+fuldstændige registrering af sideskift i `<workhead>`:
+
+```xml
+<workhead>
+  <title>Lyngblomster</title>
+  <year>1856</year>
+  <pagebreaks/>
+</workhead>
+```
+
+`<pagebreaks/>` betyder, at alle fysiske sideskift **inde i** hver inkluderet
+tekst er kontrolleret og markeret efter reglerne nedenfor. Elementet betyder
+ikke, at værket nødvendigvis indeholder et `<pb>`: hvis hver tekst står på én
+side, er der ingen interne sideskift at indsætte. Fravær af `<pagebreaks/>` i en
+ældre værkfil betyder derfor »ikke oplyst«, ikke at kilden er uden sideskift.
 
 ### Workhead source
 
@@ -312,6 +333,44 @@ Et citat
 I `<poetry>` laves linjenummerering automatisk. Hver femte linje faar visningsnummer,
 medmindre teksten bruger egne `<num>` eller `<margin>`.
 
+### Sideskift i kilden
+
+Et fysisk sideskift inde i en tekstkrop markeres ved begyndelsen af den nye
+kildeside:
+
+```xml
+Sidste verslinje på den trykte side
+<pb n="12" facs="019.jpg"/>Første verslinje på den næste trykte side
+```
+
+Attributterne har forskellig betydning:
+
+- `n`: den nye trykte sides nummer eller trykte sidebetegnelse. Attributten kan
+  udelades, når siden ikke har en trykt betegnelse.
+- `facs`: det obligatoriske filnavn på facsimilebilledet for den nye side, fx
+  `019.jpg`. Angiv kun filnavnet, ikke en sti. Kalliopes genererede
+  facsimilefiler er nulbaserede, så PDF-side 20 hedder `019.jpg`.
+
+`<pb>` placeres præcis før det første transskriberede tegn eller inline-element
+på den nye side. Hvis en sætning, en verslinje eller et ord fortsætter over
+sideskiftet, står markøren inline på det nøjagtige sted:
+
+```xml
+En verslinje som fort<pb n="12" facs="019.jpg"/>sætter
+```
+
+En `<pb>` må ikke stå på en selvstændig XML-linje i `<poetry>`, fordi den så kan
+forveksles med en vers- eller strofegrænse. Ved sideskift mellem verslinjer eller
+strofer sættes markøren derfor umiddelbart foran den første tekst på den nye
+side. Markøren opretter ikke en verslinje, en blanklinje, en strofe eller et
+prosaafsnit og renderes ikke visuelt.
+
+Der indsættes ikke `<pb>` ved begyndelsen eller slutningen af en `<text>` alene
+for at gentage tekstens `<source pages="...">`. Derfor kan et værk med
+`<pagebreaks/>` lovligt indeholde nul `<pb>`-elementer. I værker med
+`<pagebreaks/>` er `facs` redaktionelt obligatorisk på hvert `<pb>`. Schemaet
+tillader fortsat ældre `<pb>` uden `facs` af hensyn til bagudkompatibilitet.
+
 Særlige linjeformer:
 
 - En blank linje bevares.
@@ -480,7 +539,8 @@ Almindelige inline-tags:
 - `<sc>`: small caps.
 - `<year>`: semantisk aar, renderes som indholdet.
 - `<br/>`
-- `<pb n="..."/>`: sidebrud; renderes ikke visuelt, men kan bruges semantisk.
+- `<pb n="..." facs="..."/>`: fysisk sideskift i kilden; renderes ikke
+  visuelt. Se de fulde regler ovenfor.
 - `<colored color="...">`
 - `<metrik>`: metriske tegn, hvor `u`, `_`, `-` omsaettes til metrikglyphs.
 - `<asterism/>`

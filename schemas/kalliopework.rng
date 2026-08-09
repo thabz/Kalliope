@@ -40,6 +40,7 @@
         <ref name="notes"/>
         <ref name="note"/>
         <ref name="quality"/>
+        <ref name="pagebreaks"/>
         <ref name="pictures"/>
         <ref name="picture"/>
         <ref name="poetry"/>
@@ -263,6 +264,7 @@
   <define name="pb">
     <element name="pb">
       <optional><attribute name="n"><text/></attribute></optional>
+      <optional><attribute name="facs"><text/></attribute></optional>
       <ref name="mixed"/>
     </element>
   </define>
@@ -307,6 +309,7 @@
   <define name="begivenhed"><element name="begivenhed"><ref name="simpleElement"/></element></define>
   <define name="notes"><element name="notes"><ref name="simpleElement"/></element></define>
   <define name="quality"><element name="quality"><ref name="simpleElement"/></element></define>
+  <define name="pagebreaks"><element name="pagebreaks"><empty/></element></define>
   <define name="pictures"><element name="pictures"><ref name="simpleElement"/></element></define>
   <define name="b"><element name="b"><ref name="simpleElement"/></element></define>
   <define name="i">
