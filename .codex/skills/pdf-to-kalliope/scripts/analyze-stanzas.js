@@ -16,6 +16,8 @@ const knownForms = [
   },
 ];
 
+const maxKnownFormBoundaryChanges = 2;
+
 const cumulativeBoundaries = stanzaLengths => {
   const boundaries = [];
   let line = 0;
@@ -143,6 +145,7 @@ const knownFormAnalysis = ({
         expectedBoundaries,
       };
     })
+    .filter(form => form.boundaryChanges <= maxKnownFormBoundaryChanges)
     .sort(
       (left, right) =>
         left.boundaryChanges - right.boundaryChanges ||
