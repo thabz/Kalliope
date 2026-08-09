@@ -1,3 +1,5 @@
+import fs from 'fs';
+
 import {
   analyzeIndentation,
   parseBody,
@@ -8,12 +10,24 @@ const bodyWithProfile = profile =>
     .map((indentation, index) => `${' '.repeat(indentation)}Verslinje ${index + 1}`)
     .join('\n');
 
+const bodyWithStanzaProfiles = profiles =>
+  profiles.map(bodyWithProfile).join('\n\n');
+
+const poetryBodiesFromXml = xml =>
+  [...xml.matchAll(/<poetry\b[^>]*>([\s\S]*?)<\/poetry>/gu)].map(
+    match => match[1]
+  );
+
 describe('indentation profile parsing', () => {
   it('records leading spaces for every verse line', () => {
     const parsed = parseBody('Ingen\n  To\n\n    Fire');
 
     expect(parsed.verseLines.map(line => line.indentation)).toEqual([0, 2, 4]);
     expect(parsed.sections).toHaveLength(1);
+    expect(parsed.sections[0].stanzas.map(stanza => stanza.indentations)).toEqual([
+      [0, 2],
+      [4],
+    ]);
   });
 
   it('expands tabs to four-column tab stops', () => {
@@ -67,6 +81,78 @@ describe('indentation profile parsing', () => {
         verseLineStart: 3,
         verseLineEnd: 3,
       }),
+    ]);
+  });
+
+  it('creates sections for lower-case and Greek centered headings', () => {
+    const parsed = parseBody(
+      [
+        '<nonum><center>a</center></nonum>',
+        'Første',
+        '<nonum><center>β</center></nonum>',
+        'Anden',
+      ].join('\n')
+    );
+
+    expect(parsed.sections.map(section => section.heading)).toEqual(['a', 'β']);
+  });
+
+  it('does not create a section for a centered decoration', () => {
+    const parsed = parseBody(
+      ['Første', '<nonum><center>— — —</center></nonum>', 'Anden'].join('\n')
+    );
+
+    expect(parsed.sections).toHaveLength(1);
+    expect(parsed.sections[0].stanzas).toHaveLength(2);
+  });
+
+  it('ignores non-verse block markup and raw dividers', () => {
+    const parsed = parseBody(
+      [
+        'Første',
+        '<center><nonum><small><i>Går.</i></small></nonum></center>',
+        '<wrap><small>Sceneanvisning</small></wrap>',
+        '---',
+        '  Anden',
+      ].join('\n')
+    );
+
+    expect(parsed.verseLines.map(line => line.text)).toEqual([
+      'Første',
+      'Anden',
+    ]);
+    expect(parsed.verseLines.map(line => line.indentation)).toEqual([0, 2]);
+    expect(parsed.sections).toHaveLength(1);
+  });
+
+  it('treats centered speaker labels as stanza dividers, not sections', () => {
+    const parsed = parseBody(
+      [
+        '<nonum><center><sc>Chor</sc></center></nonum>',
+        'Første',
+        '<nonum><center><sc>Een Stemme</sc></center></nonum>',
+        'Anden',
+      ].join('\n')
+    );
+
+    expect(parsed.sections).toHaveLength(1);
+    expect(parsed.sections[0].heading).toBeNull();
+    expect(parsed.sections[0].stanzas).toHaveLength(2);
+  });
+
+  it('creates sections for uppercase divisions and melody headings', () => {
+    const parsed = parseBody(
+      [
+        '<nonum><center>FØRSTE AFDELING<note>Redaktionel note</note></center></nonum>',
+        'Første',
+        '<nonum><center>Mel.: Folkevise.</center></nonum>',
+        'Anden',
+      ].join('\n')
+    );
+
+    expect(parsed.sections.map(section => section.heading)).toEqual([
+      'FØRSTE AFDELING',
+      'Mel.: Folkevise.',
     ]);
   });
 
@@ -145,6 +231,220 @@ describe('indentation candidate analysis', () => {
     });
 
     expect(result.sections[0].dominant_pattern).toEqual([0, 4, 4, 0]);
+    expect(result.candidates).toEqual([]);
+  });
+
+  it('uses repeated stanza profiles instead of crossing blank-line resets', () => {
+    const result = analyzeIndentation({
+      body: bodyWithStanzaProfiles([
+        [0, 6, 2, 4],
+        [0, 6, 2, 4],
+        [0, 6, 2, 4],
+        [0, 6, 2, 4],
+      ]),
+    });
+
+    expect(result.sections[0]).toMatchObject({
+      analysis_basis: 'stanza',
+      dominant_pattern: [0, 6, 2, 4],
+    });
+    expect(result.candidates).toEqual([]);
+  });
+
+  it('finds an Egelunden-style shift across repeated stanzas', () => {
+    const regular = [0, 15, 9, 9];
+    const shifted = regular.map(indentation => indentation + 14);
+    const result = analyzeIndentation({
+      body: bodyWithStanzaProfiles([
+        regular,
+        regular,
+        regular,
+        shifted,
+        shifted,
+        regular,
+        regular,
+      ]),
+    });
+
+    expect(result.sections[0].analysis_basis).toBe('stanza');
+    expect(result.candidates).toEqual([
+      expect.objectContaining({
+        verse_line_start: 13,
+        verse_line_end: 20,
+        observed_offset: 14,
+        confidence: 'strong',
+      }),
+    ]);
+  });
+
+  it('accepts a regular alternation between stanza baselines', () => {
+    const result = analyzeIndentation({
+      body: bodyWithStanzaProfiles([
+        Array(8).fill(0),
+        Array(8).fill(9),
+        Array(8).fill(0),
+        Array(8).fill(9),
+      ]),
+    });
+
+    expect(result.sections[0].stanza_patterns[0]).toMatchObject({
+      baseline_pattern: [0, 9],
+      occurrences: 4,
+    });
+    expect(result.candidates).toEqual([]);
+  });
+
+  it('learns distinct relative profiles with the same stanza length', () => {
+    const first = [0, 2, 0, 2];
+    const second = [0, 4, 4, 0];
+    const result = analyzeIndentation({
+      body: bodyWithStanzaProfiles([
+        first,
+        second,
+        first,
+        second,
+        first,
+        second,
+      ]),
+    });
+
+    expect(result.sections[0].stanza_patterns).toEqual([
+      expect.objectContaining({ pattern: first, occurrences: 3 }),
+      expect.objectContaining({ pattern: second, occurrences: 3 }),
+    ]);
+    expect(result.candidates).toEqual([]);
+  });
+
+  it('finds partial shifts in a dominant repeated stanza length', () => {
+    const regular = lastIndentation => [
+      0, 15, 0, 15, 0, 15, 0, 15, 9, 9, 9, lastIndentation,
+    ];
+    const shifted = lastIndentation => [
+      14, 29, 14, 29, 14, 29, 14, 29, 9, 9, 9, lastIndentation,
+    ];
+    const result = analyzeIndentation({
+      body: bodyWithStanzaProfiles([
+        regular(9),
+        regular(10),
+        regular(11),
+        shifted(12),
+        shifted(13),
+        regular(14),
+        regular(15),
+      ]),
+    });
+
+    expect(result.sections[0].analysis_basis).toBe('stanza_position');
+    expect(result.candidates).toEqual([
+      expect.objectContaining({
+        verse_line_start: 37,
+        verse_line_end: 44,
+        observed_offset: 14,
+      }),
+      expect.objectContaining({
+        verse_line_start: 49,
+        verse_line_end: 56,
+        observed_offset: 14,
+      }),
+    ]);
+  });
+
+  it('does not flatten several unrelated stanza shapes into one profile', () => {
+    const result = analyzeIndentation({
+      body: bodyWithStanzaProfiles([
+        [0, 2, 0],
+        [8, 8, 8, 8],
+        [0, 3, 1, 3, 0],
+      ]),
+    });
+
+    expect(result.sections[0].analysis_basis).toBeNull();
+    expect(result.candidates).toEqual([]);
+  });
+
+  it('reports an isolated shifted stanza cautiously', () => {
+    const regular = [0, 3, 0, 3];
+    const shifted = regular.map(indentation => indentation + 6);
+    const result = analyzeIndentation({
+      body: bodyWithStanzaProfiles([
+        regular,
+        regular,
+        shifted,
+        regular,
+        regular,
+      ]),
+    });
+
+    expect(result.candidates).toEqual([
+      expect.objectContaining({
+        verse_line_start: 9,
+        verse_line_end: 12,
+        confidence: 'possible',
+      }),
+    ]);
+  });
+
+  it('raises an isolated stanza shift at a known page break', () => {
+    const regular = [0, 3, 0, 3];
+    const shifted = regular.map(indentation => indentation + 6);
+    const result = analyzeIndentation({
+      body: bodyWithStanzaProfiles([
+        regular,
+        regular,
+        shifted,
+        regular,
+        regular,
+      ]),
+      page_breaks: [9],
+    });
+
+    expect(result.candidates).toEqual([
+      expect.objectContaining({
+        verse_line_start: 9,
+        at_page_break: true,
+        confidence: 'likely',
+      }),
+    ]);
+  });
+
+  it('learns different patterns for different stanza lengths', () => {
+    const result = analyzeIndentation({
+      body: bodyWithStanzaProfiles([
+        [0, 2, 0, 2],
+        [0, 4, 4, 0, 2, 2],
+        [0, 2, 0, 2],
+        [0, 4, 4, 0, 2, 2],
+        [0, 2, 0, 2],
+        [0, 4, 4, 0, 2, 2],
+      ]),
+    });
+
+    expect(result.sections[0].stanza_patterns).toEqual([
+      expect.objectContaining({
+        stanza_length: 6,
+        occurrences: 3,
+        pattern: [0, 4, 4, 0, 2, 2],
+      }),
+      expect.objectContaining({
+        stanza_length: 4,
+        occurrences: 3,
+        pattern: [0, 2, 0, 2],
+      }),
+    ]);
+    expect(result.candidates).toEqual([]);
+  });
+
+  it('does not let an isolated stanza length distort repeated stanzas', () => {
+    const result = analyzeIndentation({
+      body: bodyWithStanzaProfiles([
+        [0, 2, 0, 2],
+        [0, 2, 0, 2],
+        [30, 10, 25, 8, 13],
+        [0, 2, 0, 2],
+      ]),
+    });
+
+    expect(result.sections[0].dominant_pattern).toEqual([0, 2, 0, 2]);
     expect(result.candidates).toEqual([]);
   });
 
@@ -304,6 +604,18 @@ describe('indentation candidate analysis', () => {
       analyzeIndentation({ body: bodyWithProfile([0, 2, 0]), page_breaks: [0] })
     ).toThrow(
       'Inputfeltet "page_breaks" skal være en liste af gyldige verslinjenumre.'
+    );
+  });
+
+  it('stays cautious on the reviewed indentation in Oehlenschläger 1803', () => {
+    const xml = fs.readFileSync('fdirs/oehlenschlaeger/1803.xml', 'utf8');
+    const candidates = poetryBodiesFromXml(xml).flatMap(
+      body => analyzeIndentation({ body }).candidates
+    );
+
+    expect(candidates).toHaveLength(4);
+    expect(candidates.every(candidate => candidate.confidence === 'possible')).toBe(
+      true
     );
   });
 });

@@ -26,13 +26,34 @@ const plainText = line =>
     .replace(/&nbsp;/gu, ' ')
     .trim();
 
+const headingText = line =>
+  plainText(line.replace(/<note\b[^>]*>[\s\S]*?<\/note>/gu, ''));
+
 const isSectionHeading = line => {
-  if (!/^\s*<nonum(?:\s|>)/u.test(line)) {
+  if (
+    /<nonum(?:\s|>)/u.test(line) === false ||
+    /<center(?:\s|>)/u.test(line) === false
+  ) {
     return false;
   }
 
-  return /^(?:[IVXLCDM]+|\d+)[.)]?$/u.test(plainText(line));
+  const heading = headingText(line);
+  const letters = heading.match(/\p{L}/gu)?.join('') ?? '';
+  return (
+    /^(?:\d+|[ivxlcdm]+[a-zæøå]?|\p{L})[.)]?$/iu.test(heading) ||
+    /afdeling/iu.test(heading) ||
+    /^mel\s*[.:]/iu.test(heading) ||
+    (letters.length > 1 &&
+      letters === letters.toLocaleUpperCase('da-DK'))
+  );
 };
+
+const isStanzaDivider = line =>
+  line.trim() === '' ||
+  /<nonum(?:\s|>)/u.test(line) ||
+  /^\s*<wrap(?:\s|>)/u.test(line) ||
+  /^\s*-{3,}\s*$/u.test(line) ||
+  plainText(line) === '';
 
 const parseBody = body => {
   if (typeof body !== 'string') {
@@ -44,6 +65,16 @@ const parseBody = body => {
   const sections = [];
   let pendingHeading = null;
   let currentSection = null;
+  let currentStanza = null;
+
+  const finishStanza = () => {
+    if (currentStanza == null) {
+      return;
+    }
+    currentStanza.verseLineEnd =
+      currentStanza.verseLineStart + currentStanza.indentations.length - 1;
+    currentStanza = null;
+  };
 
   const ensureSection = () => {
     if (currentSection != null) {
@@ -52,23 +83,38 @@ const parseBody = body => {
     currentSection = {
       heading: pendingHeading,
       indentations: [],
+      stanzas: [],
       verseLineStart: verseLines.length + 1,
     };
     pendingHeading = null;
     sections.push(currentSection);
   };
 
-  lines.forEach(line => {
-    if (isSectionHeading(line)) {
-      currentSection = null;
-      pendingHeading = plainText(line);
+  const ensureStanza = () => {
+    ensureSection();
+    if (currentStanza != null) {
       return;
     }
-    if (/^\s*<nonum(?:\s|>)/u.test(line) || line.trim() === '') {
+    currentStanza = {
+      indentations: [],
+      verseLineStart: verseLines.length + 1,
+    };
+    currentSection.stanzas.push(currentStanza);
+  };
+
+  lines.forEach(line => {
+    if (isSectionHeading(line)) {
+      finishStanza();
+      currentSection = null;
+      pendingHeading = headingText(line);
+      return;
+    }
+    if (isStanzaDivider(line)) {
+      finishStanza();
       return;
     }
 
-    ensureSection();
+    ensureStanza();
     const indentation = indentationWidth(line);
     verseLines.push({
       indentation,
@@ -76,7 +122,9 @@ const parseBody = body => {
       verseLine: verseLines.length + 1,
     });
     currentSection.indentations.push(indentation);
+    currentStanza.indentations.push(indentation);
   });
+  finishStanza();
 
   sections.forEach((section, index) => {
     section.number = index + 1;
@@ -96,7 +144,11 @@ const constantRuns = residuals => {
     while (end < residuals.length && residuals[end] === offset) {
       end += 1;
     }
-    if (offset !== 0 && end - start >= minimumRunLength) {
+    if (
+      typeof offset === 'number' &&
+      offset !== 0 &&
+      end - start >= minimumRunLength
+    ) {
       runs.push({ end, offset, start });
     }
     start = end;
@@ -174,7 +226,10 @@ const bestPatternModel = profile => {
   return best;
 };
 
-const confidenceForRun = ({ atPageBreak, model, run }) => {
+const confidenceForRun = ({ atPageBreak, model, run, stanzaCount }) => {
+  if (model.basis === 'stanza' && stanzaCount === 1 && !atPageBreak) {
+    return 1;
+  }
   const restoredAfter = run.end < model.residuals.length;
   const establishedBefore = run.start >= model.patternLength * 2;
   if (
@@ -193,13 +248,172 @@ const confidenceForRun = ({ atPageBreak, model, run }) => {
 const publicConfidence = confidence =>
   ['possible', 'likely', 'strong'][confidence - 1];
 
-const analyzeSection = ({ pageBreaks, section }) => {
+const normalizedProfile = profile => {
+  const baseline = Math.min(...profile);
+  return profile.map(indentation => indentation - baseline);
+};
+
+const repeatedSequence = values => {
+  const maximumLength = Math.floor(values.length / 2);
+  for (let length = 1; length <= maximumLength; length += 1) {
+    if (values.every((value, index) => value === values[index % length])) {
+      return values.slice(0, length);
+    }
+  }
+  return null;
+};
+
+const stanzaPatternModel = section => {
+  const byShape = new Map();
+  section.stanzas.forEach(stanza => {
+    const normalized = normalizedProfile(stanza.indentations);
+    const key = `${stanza.indentations.length}:${normalized.join(',')}`;
+    const matching = byShape.get(key) ?? [];
+    matching.push(stanza);
+    byShape.set(key, matching);
+  });
+  const definitions = [...byShape.values()]
+    .filter(stanzas => stanzas.length >= 3)
+    .map(stanzas => {
+      const stanzaLength = stanzas[0].indentations.length;
+      const normalized = normalizedProfile(stanzas[0].indentations);
+      const baselines = stanzas.map(stanza =>
+        Math.min(...stanza.indentations)
+      );
+      const baselinePattern = repeatedSequence(baselines) ?? [median(baselines)];
+      const representativeBaseline = median(baselines);
+      return {
+        baselinePattern,
+        normalized,
+        occurrences: stanzas.length,
+        pattern: normalized.map(
+          indentation => indentation + representativeBaseline
+        ),
+        stanzaLength,
+        stanzas,
+      };
+    })
+    .sort(
+      (left, right) =>
+        right.occurrences * right.stanzaLength -
+          left.occurrences * left.stanzaLength ||
+        left.stanzaLength - right.stanzaLength
+    );
+  if (definitions.length === 0) {
+    return null;
+  }
+
+  const expectedProfile = Array(section.indentations.length).fill(null);
+  definitions.forEach(definition => {
+    definition.stanzas.forEach((stanza, stanzaIndex) => {
+      const offset = stanza.verseLineStart - section.verseLineStart;
+      const baseline =
+        definition.baselinePattern[
+          stanzaIndex % definition.baselinePattern.length
+        ];
+      definition.normalized.forEach((indentation, index) => {
+        expectedProfile[offset + index] = indentation + baseline;
+      });
+    });
+  });
+  const residuals = section.indentations.map((indentation, index) => {
+    const expected = expectedProfile[index];
+    return expected == null ? null : indentation - expected;
+  });
+  return {
+    basis: 'stanza',
+    definitions,
+    expectedProfile,
+    pattern: definitions[0].pattern,
+    patternLength: definitions[0].stanzaLength,
+    residuals,
+    runs: constantRuns(residuals),
+  };
+};
+
+const stanzaPositionPatternModel = section => {
+  const byLength = new Map();
+  section.stanzas.forEach(stanza => {
+    const matching = byLength.get(stanza.indentations.length) ?? [];
+    matching.push(stanza);
+    byLength.set(stanza.indentations.length, matching);
+  });
+  const [stanzaLength, stanzas] = [...byLength.entries()].sort(
+    (left, right) =>
+      right[1].length * right[0] - left[1].length * left[0] ||
+      left[0] - right[0]
+  )[0] ?? [null, []];
+  if (
+    stanzaLength == null ||
+    stanzas.length < 3 ||
+    stanzas.length / section.stanzas.length < 0.75 ||
+    (stanzas.length * stanzaLength) / section.indentations.length < 0.75
+  ) {
+    return null;
+  }
+
+  const pattern = Array.from({ length: stanzaLength }, (_, index) =>
+    median(stanzas.map(stanza => stanza.indentations[index]))
+  );
+  const expectedProfile = Array(section.indentations.length).fill(null);
+  stanzas.forEach(stanza => {
+    const offset = stanza.verseLineStart - section.verseLineStart;
+    pattern.forEach((indentation, index) => {
+      expectedProfile[offset + index] = indentation;
+    });
+  });
+  const residuals = section.indentations.map((indentation, index) => {
+    const expected = expectedProfile[index];
+    return expected == null ? null : indentation - expected;
+  });
+  return {
+    basis: 'stanza_position',
+    definitions: [
+      {
+        baselinePattern: [],
+        occurrences: stanzas.length,
+        pattern,
+        stanzaLength,
+      },
+    ],
+    expectedProfile,
+    pattern,
+    patternLength: stanzaLength,
+    residuals,
+    runs: constantRuns(residuals),
+  };
+};
+
+const periodicPatternModel = section => {
+  if (section.stanzas.length !== 1) {
+    return null;
+  }
   const model = bestPatternModel(section.indentations);
   if (model == null) {
+    return null;
+  }
+  return {
+    ...model,
+    basis: 'periodic',
+    definitions: [],
+    expectedProfile: section.indentations.map(
+      (_, index) => model.pattern[index % model.patternLength]
+    ),
+  };
+};
+
+const analyzeSection = ({ pageBreaks, section }) => {
+  const model =
+    stanzaPatternModel(section) ??
+    stanzaPositionPatternModel(section) ??
+    periodicPatternModel(section);
+  if (model == null) {
     return {
+      analysisBasis: null,
       candidateDetails: [],
       dominantPattern: null,
       patternLength: null,
+      stanzaPatterns: [],
     };
   }
 
@@ -207,9 +421,14 @@ const analyzeSection = ({ pageBreaks, section }) => {
     const verseLineStart = section.verseLineStart + run.start;
     const verseLineEnd = section.verseLineStart + run.end - 1;
     const atPageBreak = pageBreaks.has(verseLineStart);
+    const stanzaCount = section.stanzas.filter(
+      stanza =>
+        stanza.verseLineStart <= verseLineEnd &&
+        stanza.verseLineEnd >= verseLineStart
+    ).length;
     const expectedPattern = Array.from(
       { length: run.end - run.start },
-      (_, index) => model.pattern[(run.start + index) % model.patternLength]
+      (_, index) => model.expectedProfile[run.start + index]
     );
     const observedProfile = section.indentations.slice(run.start, run.end);
     return {
@@ -223,9 +442,9 @@ const analyzeSection = ({ pageBreaks, section }) => {
         observed_profile: observedProfile,
         at_page_break: atPageBreak,
         confidence: publicConfidence(
-          confidenceForRun({ atPageBreak, model, run })
+          confidenceForRun({ atPageBreak, model, run, stanzaCount })
         ),
-        reason: `En sammenhængende passage er forskudt ${run.offset > 0 ? '+' : ''}${run.offset} mellemrum fra afdelingens sandsynlige indrykningsmønster.`,
+        reason: `En sammenhængende passage er forskudt ${run.offset > 0 ? '+' : ''}${run.offset} mellemrum fra afdelingens sandsynlige ${model.basis.startsWith('stanza') ? 'strofebaserede ' : ''}indrykningsmønster.`,
         action:
           'Kontrollér passage og sideskift mod facsimilet; ret kun indrykningen, hvis trykket bekræfter forskydningen.',
       },
@@ -234,15 +453,17 @@ const analyzeSection = ({ pageBreaks, section }) => {
   });
 
   return {
+    analysisBasis: model.basis,
     candidateDetails,
     dominantPattern: model.pattern,
     patternLength: model.patternLength,
+    stanzaPatterns: model.definitions.map(definition => ({
+      baselinePattern: definition.baselinePattern,
+      occurrences: definition.occurrences,
+      pattern: definition.pattern,
+      stanzaLength: definition.stanzaLength,
+    })),
   };
-};
-
-const normalizedPattern = pattern => {
-  const baseline = Math.min(...pattern);
-  return pattern.map(indentation => indentation - baseline);
 };
 
 const sameProfileShape = (left, right) =>
@@ -259,8 +480,8 @@ const sectionBoundaryCandidates = sectionAnalyses => {
       current.dominantPattern == null ||
       previous.patternLength !== current.patternLength ||
       sameProfileShape(
-        normalizedPattern(previous.dominantPattern),
-        normalizedPattern(current.dominantPattern)
+        normalizedProfile(previous.dominantPattern),
+        normalizedProfile(current.dominantPattern)
       ) === false
     ) {
       continue;
@@ -350,6 +571,13 @@ const analyzeIndentation = input => {
       verse_line_end: section.verseLineEnd,
       indentation_profile: section.indentations,
       dominant_pattern: section.dominantPattern,
+      analysis_basis: section.analysisBasis,
+      stanza_patterns: section.stanzaPatterns.map(pattern => ({
+        stanza_length: pattern.stanzaLength,
+        occurrences: pattern.occurrences,
+        pattern: pattern.pattern,
+        baseline_pattern: pattern.baselinePattern,
+      })),
     })),
     candidates,
   };

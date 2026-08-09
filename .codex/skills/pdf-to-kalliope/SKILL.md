@@ -510,7 +510,8 @@ structure solely to make the counts regular.
 Some poems are intentionally irregular. The facsimile remains authoritative.
 
 After the stanza analysis, you MUST also run the bundled indentation analysis
-on the same body while preserving every leading space:
+on the same body while preserving every leading space and every blank stanza
+separator:
 
 ```shell
 node .codex/skills/pdf-to-kalliope/scripts/analyze-indentation.js /tmp/poem.json
