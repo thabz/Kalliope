@@ -7,6 +7,27 @@ som build-systemet laeser i dag.
 Formatet er tilpasset Kalliopes behov: vaerkmetadata, indholdsfortegnelse, digttekster,
 prosa, noter, kilder, faksimiler, varianter, henvisninger og billeder.
 
+## Formatering
+
+Strukturtags står i kolonne 0, også når de er indlejret. Det gælder
+`<workhead>`, `<workbody>`, `<text>`, `<section>`, `<head>`, `<content>`,
+`<body>`, `<poetry>`, `<prose>`, `<quote>` og `<subwork>` samt deres slut-tags.
+Metadatafelter inde i `<head>` og `<workhead>` indrykkes med to mellemrum for
+hvert niveau.
+
+Der skal være én blank linje mellem to `<text>`-elementer og én blank linje før
+og efter et `<section>`-element. Mellemrum og blanke linjer i selve brødteksten
+ændres ikke, fordi de har betydning for tekstens layout og strofestruktur.
+
+En eller flere værkfiler kan formateres uden at ændre brødteksten med:
+
+```sh
+node tools/format-work-xml.js fdirs/<digter>/<vaerk>.xml
+```
+
+Testen i `__tests__/work-xml-formatting.test.js` kontrollerer den strukturelle
+formatering i alle sporede værkfiler.
+
 ## Grundstruktur
 
 En vaerkfil har normalt denne form:
