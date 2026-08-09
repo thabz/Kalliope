@@ -3,7 +3,7 @@
 COMPOSE ?= docker compose
 POETS ?=
 
-.PHONY: help elasticsearch build-static build-static-force-reload \
+.PHONY: help elasticsearch build-static build-static-force-reload sqlite \
 	build-facsimiles extract-facsimiles reextract-facsimiles \
 	sync-facsimiles sync-wikidata app status
 
@@ -12,6 +12,7 @@ help:
 		'make elasticsearch              Start Elasticsearch' \
 		'make build-static              Byg statiske data' \
 		'make build-static-force-reload Byg statiske data uden cachede build-data' \
+		'make sqlite                    Åbn SQLite-databasen i en SQL-session' \
 		'make build-facsimiles          Udtræk facsimiler og byg thumbnails' \
 		'make extract-facsimiles        Udtræk sider fra nye facsimile-PDF’er' \
 		'make reextract-facsimiles      Erstat tidligere udtrukne facsimile-sider' \
@@ -30,6 +31,10 @@ build-static: elasticsearch
 build-static-force-reload: elasticsearch
 	$(COMPOSE) --profile build build static-builder
 	$(COMPOSE) --profile build run --rm --no-deps static-builder npm run build-static-force-reload
+
+sqlite:
+	@test -f public/api/kalliope.sqlite || (echo 'Mangler public/api/kalliope.sqlite; kør først make build-static' >&2; exit 1)
+	sqlite3 public/api/kalliope.sqlite
 
 build-facsimiles:
 	$(COMPOSE) --profile facsimiles run --rm --build facsimile-builder npm run build-facsimiles -- all

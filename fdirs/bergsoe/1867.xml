@@ -875,7 +875,7 @@ De Syge stønner paa Helgenes Grav,
 </body>
 </text>
 
-<text id="bergsoe1999112801">
+<text id="bergsoe1999112801" ignore-tests="repeated-adjacent-word">
 <head>
     <title>Den syge Svale</title>
     <toctitle>Den syge Svale</toctitle>
@@ -1173,7 +1173,7 @@ Og hvis Slag bringer tungere Vee.
    Skoven den fælder, og Mennesket viger
          Bævende bort.
    Markerne gulnes og Engene graane,
-   Solen faaer Glands som den dæmrendeMaane,
+   Solen faaer Glands som den dæmrende Maane,
          Dyrene dødes,
          Jorden forødes,
    Himmelen klæder sin Hvælving i Sort.
@@ -1334,7 +1334,7 @@ Fast maa man troe, Du er dumpet perplex
 Siig, hvad Dig fængsler paa Slottet deroppe!
 Ligger Du og drømmer med Piben i Mund,
 Flyver din ,,Maage" paa Bølgernes Toppe,
-Eller mon Du solder med ,,bröder från Lund"?
+Eller mon Du solder med <span lang="sv">,,bröder från Lund''</span>?
 Eller, I Guder, jeg faaer en Idee!
 Har ved et Piilskud Du tabt Contenancen?
 Saaret til Døde Du ligger maaskee
@@ -3723,7 +3723,7 @@ Dér drage de nu hen, de skinnende Flokke,
 Og svinde i det Fjerne som Sneeskyens Fnokke.
 
 Hen over Skibets Reisning saae jeg dem iilsomt drage;
-Men een var træt og måttet, og den blev tilbage.
+Men een var træt og mattet, og den blev tilbage.
 
 Som Støvgran, der hvirvles i Sollysets Lue,
 Som vingeskudt Maage, som høgslaaet Due,

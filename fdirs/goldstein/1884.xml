@@ -403,7 +403,7 @@ Før det ny kan knejse, det gamle maa falde!
 <text id="goldstein2019041312">
 <head>
     <title>Frihedens Adepter</title>
-    <firstline>Der er en løjerlig Strid i Gemytterne,</firstline>
+    <firstline>Der er en løjerlig Strid i Gemytterne</firstline>
     <source pages="23-24"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -1183,7 +1183,7 @@ mens Maanens Lys sig over Edith sænked'!
 </body>
 </text>
 
-<text id="goldstein2019041328">
+<text id="goldstein2019041328" ignore-tests="repeated-adjacent-word">
 <head>
     <title>En Hexesabbat</title>
     <firstline>Donna Isabella hviler</firstline>

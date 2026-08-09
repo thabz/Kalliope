@@ -16,12 +16,16 @@ Læs den relevante specialdokumentation før ændringer på området:
 - `docs/xml-work-format.md` ved ændringer i XML-værkfiler
 - `docs/facsimile-korrektur.md` ved transskription og fuld korrektur af tekst,
   strofer og typografi mod et facsimile
+- `docs/ocr-korrektur-laerebog.md` ved generelle læringsprincipper for redigering
+  og reparation af OCR-scannede tekster
 - `docs/kalliope-xml-design-v1.1.md` ved ændringer i XML-modellen for
   publikationer, antologier og tekstforekomster
 - `docs/kalliope-masterplan.md` ved arbejde med korpusets afgrænsning,
   kilder, redaktionelle principper eller den langsigtede datastruktur
 - `docs/kb-digital-links.md` ved oprettelse eller audit af digitale kilde- og
   facsimilelinks til Det Kgl. Bibliotek
+- `docs/sqlite-index.md` ved forespørgsler på det genererede korpusindeks,
+  ændringer i SQLite-buildet eller analyseværktøjer
 
 ## GitHub
 

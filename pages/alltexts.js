@@ -113,7 +113,7 @@ const AllTextsPage = (props) => {
       menuItems={tabs}
       selectedMenuItem={type}>
       <div style={{ lineHeight: 1.5 }}>
-        <TwoColumns>{renderedLines}</TwoColumns>
+        <TwoColumns noLinkUnderline>{renderedLines}</TwoColumns>
       </div>
       <div style={{ margin: '40px 0 10px 0', fontSize: '1.5em' }}>
         {letterPicker}

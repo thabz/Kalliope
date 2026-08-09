@@ -1,6 +1,5 @@
 import _ from '../common/translations.js';
 import CommonData from '../common/commondata.js';
-import { ExternalLinkSVG } from './icons.js';
 import { TextInline } from './textcontent.js';
 import Tooltip from './tooltip.js';
 
@@ -19,7 +18,7 @@ const Source = ({ contentHtml, href, lang }) => {
               rel="noopener noreferrer"
               aria-label={label}
               className="source-link">
-              <ExternalLinkSVG />
+              ↬
             </a>
           </Tooltip>
         </>
@@ -31,12 +30,13 @@ const Source = ({ contentHtml, href, lang }) => {
         .source-link {
           color: ${CommonData.linkColor};
           display: inline-block;
-          font-size: 0.68em;
-          font-weight: 900;
-          line-height: 1;
+          font-size: 1.3em;
+          font-weight: 100;
+          opacity: 0.7;
+          line-height: 0.95;
           text-decoration: none;
           position: relative;
-          vertical-align: -0.16em;
+          vertical-align: -0.05em;
         }
       `}</style>
     </div>

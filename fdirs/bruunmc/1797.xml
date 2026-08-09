@@ -1560,7 +1560,7 @@ Den Gamle rysted' Hovedet
 Og sagdes ''Knøs, lad du kun af
 ''Fra denne Fangst! Forsøg kun ei
 ''At jage efter denne Fugl!
-''Flye langt, det er er farligt Dyr.
+''Flye langt, det er et farligt Dyr.
 ''Held dig, om du ei fanger den!
 ''Thi viid, min Beste, denne, som
 ''Nu flyer for dig, vil komme selv,
@@ -3262,7 +3262,7 @@ Lægge i den samme Grav, ved dine Vaaben fældte,
 </body>
 </text>
 
-<text id="bruunmc2018062357">
+<text id="bruunmc2018062357" ignore-tests="repeated-adjacent-word">
 <head>
     <title>Niels Ebbesen</title>
     <subtitle>
@@ -3947,7 +3947,7 @@ Skal gyldne Alders Lyst fornyet lee.
 <text id="bruunmc2018062372">
 <head>
     <title>Chaos</title>
-    <firstline>Morgenen rødmer i Øst! paa Bølgerne gynger sig Dagskjær.</firstline>
+    <firstline>Morgenen rødmer i Øst! paa Bølgerne gynger sig Dagskjær</firstline>
     <source pages="192" facsimile-pages="204" />
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -4635,13 +4635,13 @@ Mit Hierte finder Fred.
 </body>
 </text>
 
-<text id="bruunmc2018062385">
+<text id="bruunmc2018062385" ignore-tests="repeated-adjacent-word">
 <head>
     <title>Mit Vaucluse</title>
     <subtitle>Sonnet</subtitle>
     <firstline>Hvad Guddomsmagt usynligen mig binder?</firstline>
     <source pages="222" facsimile-pages="234" />
-    <keywords>sonnet</keywords>
+    <keywords>sonnet,petrarca</keywords>
     <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
