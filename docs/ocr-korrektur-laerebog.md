@@ -116,6 +116,24 @@ Titler og førstelinjer må aldrig indeholde markup. De skal altid være ren tek
 Strukturelle oplysninger, formatering og semantiske elementer skal placeres i
 de relevante XML-elementer uden for `<title>` og `<firstline>`.
 
+### 12. Bevar interne sideskift semantisk
+
+OCR-arbejdet må ikke udviske, hvor en sammenhængende tekst krydser en fysisk
+sidegrænse. Markér begyndelsen af den nye kildeside med `<pb>` på det præcise
+sted i tekstkroppen. Markøren må ikke i sig selv skabe en ny verslinje, strofe,
+blanklinje eller et nyt prosaafsnit.
+
+Hver ny markør skal have `facs` med filnavnet på den konkrete facsimileside.
+Brug også `n` til den trykte sidebetegnelse, når siden har en. PDF-side,
+facsimilefil og trykt sidetal skal hentes fra sideinventaret og må ikke antages
+at være ens.
+
+Når alle inkluderede tekstkroppe er kontrolleret, skal `<workhead>` indeholde
+`<pagebreaks/>`. Er alle tekster på én side, findes der ingen `<pb>`, men
+`<pagebreaks/>` skal stadig med som erklæring om, at kontrollen er udført. Se
+`docs/xml-work-format.md` og `docs/facsimile-korrektur.md` for placering og den
+fulde XML-kontrakt.
+
 ## Afgrænsning
 
 Enkelte OCR-fejl i ord, tegn eller bogstaver er ikke medtaget her. De kan være
