@@ -49,6 +49,16 @@ describe('stanza candidate analysis', () => {
     ]);
   });
 
+  it.each([[[7, 7]], [[6, 8]], [[14]]])(
+    'does not recognize the 14-line structure %j as a sonnet',
+    stanzaLengths => {
+      const result = analyzeStanzas({ body: bodyWithStanzas(stanzaLengths) });
+
+      expect(result.verse_line_count).toBe(14);
+      expect(result.recognized_forms).toEqual([]);
+    }
+  );
+
   it('finds a missing boundary between two eight-line stanzas', () => {
     const result = analyzeStanzas({ body: bodyWithStanzas([8, 8, 8, 8, 16]) });
 
