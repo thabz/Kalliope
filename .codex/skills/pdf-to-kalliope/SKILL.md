@@ -509,6 +509,25 @@ structure solely to make the counts regular.
 
 Some poems are intentionally irregular. The facsimile remains authoritative.
 
+After the stanza analysis, you MUST also run the bundled indentation analysis
+on the same body while preserving every leading space:
+
+```shell
+node .codex/skills/pdf-to-kalliope/scripts/analyze-indentation.js /tmp/poem.json
+```
+
+The optional JSON field `page_breaks` contains the one-based verse-line numbers
+that begin a new facsimile page. Add it when the page mapping is known. Keep
+numbered division headings such as `<nonum><center>II.</center></nonum>` in the
+body so the tool can assess each division separately. Remove other metadata and
+non-verse lines from the temporary input.
+
+Inspect every reported indentation candidate against the facsimile. A uniform
+offset at a page break is suspicious, but a new numbered division may
+legitimately use its own indentation profile. Rerun the analysis after changing
+indentation. The report is diagnostic only; a stable profile or no candidates
+does not prove that indentation is correct.
+
 Continue structural analysis across page breaks. A page break is not in itself
 a stanza break.
 
@@ -984,6 +1003,9 @@ The task is complete only when all applicable items are true:
 - [ ] Stanza boundaries match the printed source.
 - [ ] The bundled stanza analysis was run for every poem, rerun after stanza
       changes, and every candidate was resolved against the facsimile.
+- [ ] The bundled indentation analysis was run for every poem with leading
+      spaces preserved, rerun after indentation changes, and every candidate
+      was resolved against the facsimile.
 - [ ] Indentation was verified visually and represented with spaces.
 - [ ] Headings, mottoes, numbers and decorations are not ordinary verse lines.
 - [ ] Footnotes are placed at the text locations to which they belong.
