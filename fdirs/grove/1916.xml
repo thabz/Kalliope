@@ -306,7 +306,7 @@ Den gamle Apotheker forstod at vise Vej!
 </head>
 <body>
 <poetry>
-Vesterskoven.
+<nonum><center><i>Vesterskoven.</i></center></nonum>
 
 Højt paa den skovklædte Brink staaer en Indskrift i Sten,
 Minde om Dødsridt ved Isted, om Sejren tillige —
@@ -323,6 +323,10 @@ Duft stiger krydret fra Hø og fra Blomster i Vejret,
 
 <pb n="20" facs="026.jpg"/>Ungkvæg, der vaded ved Strand, slentrer ind nu paa Kjæret, —
 Sagtelig sænker sig Skumring i Kløfternes Skjød. Østerskoven.
+
+---
+
+<nonum><center><i>Østerskoven.</i></center></nonum>
 
 Op imod Stenterne
 Hvidne alt Skrænterne
@@ -407,6 +411,7 @@ Kirketaarnet med Nød og næppe
 Borer sig op
 Gjennem det maanebeskinnede Taagetæppe
 Dybt under Troldkirkens Top.
+
 <pb n="22" facs="028.jpg"/>Er det mon Troldenes Handling,
 Lege de Kispuds med Tiden?
 Hele den bakkede Egn er under Forvandling,
@@ -866,6 +871,17 @@ Danmarks store, stille Søn.
   <title>Professor Frederik Dahl</title>
   <subtitle>10. Februar 1912 *).</subtitle>
   <firstline>Gubbe, ærværdig af Aar, men Yngling i Sjæl og i Hjerte</firstline>
+  <notes>
+    <note>
+*) Fra den 90aarige kom dette Svardigt:
+Dommer og Digter! — mit dobbelte Bogstav- og Enderim sigter
+Netop derpaa, at de To enes saa inderlig godt.
+Hin skal udskille Ondt og Godt af den mystiske Blanding,
+Denne vil gætte sig til Blandingens dybeste Grund.
+Tak, kære Digter og Dommer! at ej De glemte den Gamle,
+Men til hans Livsaften har sendt ham en Solstraale mild!
+    </note>
+  </notes>
   <source pages="32"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -876,16 +892,7 @@ Varm for alt Ædelt og Skjønt, sprudlende frisk som et Væld,
 Lydhør Fortolker af Sproget, vort Fædrelands trofaste Ridder,
 Du, som gav Harder i Vers, skjænked os Platon paa Dansk,
 Du, som har drømt og har digtet en gylden sokratisk Legende,
-
 Hil Dig, Du Gubbe af Aar, Yngling i Aand og i Daad!
-
-<nonum><small>*) Fra den 90aarige kom dette Svardigt:</small></nonum>
-<nonum><small>Dommer og Digter! — mit dobbelte Bogstav- og Enderim sigter</small></nonum>
-<nonum><small>Netop derpaa, at de To enes saa inderlig godt.</small></nonum>
-<nonum><small>Hin skal udskille Ondt og Godt af den mystiske Blanding,</small></nonum>
-<nonum><small>Denne vil gætte sig til Blandingens dybeste Grund.</small></nonum>
-<nonum><small>Tak, kære Digter og Dommer! at ej De glemte den Gamle,</small></nonum>
-<nonum><small>Men til hans Livsaften har sendt ham en Solstraale mild!</small></nonum>
 </poetry>
 </body>
 </text>
@@ -895,6 +902,7 @@ Hil Dig, Du Gubbe af Aar, Yngling i Aand og i Daad!
   <title>Jeppe Aakjær</title>
   <firstline>Som Lærken Du løfted af Muld din Sang</firstline>
   <source pages="32"/>
+  <keywords>aakjaer</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2239,7 +2247,8 @@ Eller som Saales Flod skjænked det rindende Vand?
 Hvor er nu Ukrer og Wilzer og hvor de sagtmodige Serber,
 Hvor vil man blot finde Spor af Obotriternes Folk?
 Vide jeg sendte mit Blik over Slavias arvede Rige,
-Spejded mod Øst og mod Vest Slaver jeg intetsteds fandt! (Af Prologen til »Slávas Datter«.)
+Spejded mod Øst og mod Vest Slaver jeg intetsteds fandt! 
+<right><small>(Af Prologen til »Slávas Datter«.)</small></right>
 </poetry>
 </body>
 </text>
@@ -2561,14 +2570,13 @@ Bøhmerland, mit Hjem, mit Hjem!
 </head>
 <body>
 <poetry>
-Spørgsmaal:
-
+<i>Spørgsmaal:</i>
 To Fakulteter her i Clementinum!
 To Fakulteter hist i Carolinum!
 Hvad hindrer, at der virkes i Forening,
 Og har i Grunden Delingen en Mening?
 
-Svar:
+<i>Svar:</i>
 <pb n="75" facs="081.jpg"/>I Clementinum Aanden bliver dødet,
 I Carolinum gjælder det kun Kjødet!
 </poetry>
@@ -2588,7 +2596,6 @@ Som Kirkens kampberedte Patriark
 Nys Pater Rozen Kjætterne leverede
 Et Hovedslag, idet han publicerede
 Sit Skrift, som var paa hele hundred Ark,
-
 Og tykt var Bindet med Metalbeslag —
 Selvfølgelig han Alle slog i Kvæg!
 </poetry>
@@ -2686,9 +2693,6 @@ At tælle de Dansendes Skare.
 
 Se, Maanen danser i Ring om Jord,
 Vor Jord og Planeterne dreje
-
-(i
-
 <pb n="77" facs="083.jpg"/>I Kredsløb om Solen bestandig rundt
 Paa mægtige lysende Veje,
 Og atter i Kreds om en større maa
@@ -4375,7 +4379,6 @@ I Træernes Løvtag paa tusinde Kanter
 Og Skumhvirvler smykke de jagende Bække.
 Hør Vindene suse,
 Hør Vandene bruse!
-
 Det pladsker og snøfter,
 Det toner og klinger fra Klippernes Kløfter, —
 Mig tykkes, derinde
@@ -4427,7 +4430,6 @@ En Storkesværm i lange Rader trak, —
 Sad Psyche, halvt et Barn og halvt en Jomfru,
 Og vugged sig i sine egne Tanker.
 Hun stirred ned i Flodens dybe Strøm,
-
 <pb n="116" facs="122.jpg"/>Hvis Bølger sig i hvide Skumfnug krused,
 Og, som et Lyn i Juninattens Stilhed
 Mod Azurhimlen lydløst flammer op,
@@ -4465,7 +4467,6 @@ Mod hende ud og smiler. — Strømmen bruste,
 Fuglene kvidrede, fra Skovens Tykning
 Lød Vindens sagte Raslen gjennem Løvet,
 Og over hende fløj de hvide Storke.
-
 <pb n="117" facs="123.jpg"/>»Jorden er skjøn, ja, skjønnere end Himlen,
 Rundtom kun Duft og Jubel, Fred og Ro!
 Og hvilket Liv! Fra Mosset titter frem
@@ -4563,7 +4564,7 @@ Hun var saa hvid og skjær, og han saa smudsig!
 
 Men aldrig mere har det undret Psyche,
 At hendes Ryg med Vinger smaa var smykket.
-
+- - - - - - - - - - - - - - - 
 O, Poesi! Naar Hverdagsstøvet pletter
 Din Skjønhed, og naar plumpe Hænder søge
 At drage Dig med Vold i Skarnet ned,
@@ -4584,7 +4585,6 @@ Tilbage til dit Hjem, Du Himmelbaarne!
 <body>
 <poetry>
 Bag Breddens Siv jeg døser bort den lange, hede Sommer,
-
 <pb n="120" facs="126.jpg"/>Taalmodig venter jeg den Stund, da Druehøsten kommer.
 
 Rundtom mig seer jeg Bjerg og Skov og Havers Blomsterflor,
@@ -4613,6 +4613,7 @@ Mens Floden spejler Aftenhimlens Rødme!
 Mig fængsler mer den dorske Snegl, naar i det bløde Græs
 Med udstrakt Følehorn den slæber frem sit store Læs,
 Og Hvepsen, der vil suge Frugtens Sødme.
+
 <pb n="121" facs="127.jpg"/>Bag Breddens Siv jeg døser bort den lange, hede Sommer,
 Taalmodig venter jeg den Stund, da Druehøsten kommer.
 
@@ -4638,7 +4639,6 @@ Taalmodig venter jeg den Stund, da Druehøsten kommer.
 
 Jeg venter, — følger Skyens Flugt, — seer, hvor fra Jordens Skjød
 Den klare Kilde risler, — stundom selv af Solens Glød
-
 <pb n="122" facs="128.jpg"/>Jeg lokkes til et Bad i Flodens Vande.
 Af Perler drysses Skjægget fuldt om Hage og om Kind,
 Og fugtigt Flodgræs vikler sig i mine Lokker ind,
@@ -4661,7 +4661,6 @@ Giv Plads! Snart drager Glæden ind! Snart funkler Vinen rød!
 Mænaden nys sin Thyrsusstav i Skovens Vildnis brød,
 Den store Morgen mig imøde smiler!
 Vist er jeg raa og hæslig — nu, hvad saa? I Lundens Krat
-
 Jeg Elskende forener i den maanelyse Nat.
 Fryd er jeg! Skjult paa Bægrets Bund jeg hviler.
 
@@ -4693,7 +4692,6 @@ Taalmodig venter jeg den Stund, da Druehøsten kommer.
 Hvor finder jeg et Fristed? Ve mig, ve mig!
 Rundt om mig rødmer Mosset alt af Blod;
 Se Løvet, hvor det pusler sært og rasler —
-
 Det maner mig til Flugt! Dog ve mig, ve mig!
 Bag Dyrehuden Hjertet voldsomt banker,
 Og for hvert Skridt, jeg gjør, jeg filtrer ind
@@ -4711,7 +4709,6 @@ Kun se din evige, din høje Skjønhed
 I al sin nøgne Pragt, ej klinet til
 Af Jagtens Støv og Sved, som naar Du iled
 Saa tidt forbi min Hytte, mens i Solen
-
 <pb n="124" facs="130.jpg"/>De spinkle Birketoppe sov til Middag,
 Og, gyngende paa Flodens mørke Vand,
 Aakanden lukkede sit hvide Øje
@@ -6570,7 +6567,6 @@ Som i sin Varetægt min Lykke har:
 
 »Gaa, gamle Nar! — Dit Lygtelys har løjet!
 Seet gjennem skidne Ruder Alt er stygt,
-
 <pb n="169" facs="175.jpg"/>Og paa din Lygte Støvet faldt saa tykt,
 At falske Billeder den bringer Øjet.
 Selv om jeg gjækkes, vindes Lykkens Havn
