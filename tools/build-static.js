@@ -1113,6 +1113,9 @@ const works_first_pass = (collected) => {
         const title = extractTitle(head, 'title');
         const linktitle = extractTitle(head, 'linktitle');
         const indextitle = extractTitle(head, 'indextitle');
+        const titleElement = getChildByTagName(head, 'title');
+        const indexTitleElement = getChildByTagName(head, 'indextitle');
+        const firstlineElement = getChildByTagName(head, 'firstline');
         const aliases = parseAliases(safeGetAttr(part, 'aliases'));
         const textDates = extractDates(head);
         const textAuthorId = resolveAuthorId(part, poetId);
@@ -1151,6 +1154,12 @@ const works_first_pass = (collected) => {
           hasPoetry: getElementsByTagNames(part, ['poetry']).length > 0,
           hasProse: getElementsByTagNames(part, ['prose']).length > 0,
           skipIndex: safeGetAttr(part, 'skip-index') != null,
+          forceTitleIndex:
+            safeGetAttr(titleElement, 'force-index') != null ||
+            safeGetAttr(indexTitleElement, 'force-index') != null,
+          forceFirstlineIndex:
+            safeGetAttr(firstlineElement, 'force-index') != null,
+          dates: textDates,
           sourceOrder,
         };
         if (anthologyText) {

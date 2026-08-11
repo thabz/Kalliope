@@ -295,7 +295,7 @@
   <define name="year"><element name="year"><ref name="simpleElement"/></element></define>
   <define name="subtitle"><element name="subtitle"><optional><attribute name="lang"><text/></attribute></optional><ref name="simpleElement"/></element></define>
   <define name="suptitle"><element name="suptitle"><ref name="simpleElement"/></element></define>
-  <define name="indextitle"><element name="indextitle"><ref name="simpleElement"/></element></define>
+  <define name="indextitle"><element name="indextitle"><optional><attribute name="force-index"><text/></attribute></optional><ref name="simpleElement"/></element></define>
   <define name="toctitle"><element name="toctitle"><ref name="simpleElement"/></element></define>
   <define name="linktitle"><element name="linktitle"><ref name="simpleElement"/></element></define>
   <define name="breadcrumbtitle"><element name="breadcrumbtitle"><ref name="simpleElement"/></element></define>

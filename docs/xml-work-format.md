@@ -211,9 +211,12 @@ Attributter paa `<text>`:
 
 `<head>` paa en tekst kan indeholde:
 
-- `<title>`: tekstens titel.
-- `<firstline>`: foerstelinje. Maa ikke indeholde markup.
+- `<title>`: tekstens titel. `force-index="true"` viser en ikke-primaer
+  variant i titelindekset.
+- `<firstline>`: foerstelinje. Maa ikke indeholde markup. `force-index="true"`
+  viser en ikke-primaer variant i foerstelinjeindekset.
 - `<indextitle>`: titel brugt i titelindekset, hvis den skal afvige.
+  `force-index="true"` virker som paa `<title>`.
 - `<toctitle>`: titel i vaerkets indholdsfortegnelse.
 - `<linktitle>`: titel i links.
 - `<subtitle>`: undertitel. Kan indeholde flere `<line>`.
