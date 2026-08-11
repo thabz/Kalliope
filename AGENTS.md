@@ -29,6 +29,12 @@ digtere.
 - Databasen bygges med `make build-static` eller `npm run build-static`. Brug
   `make sqlite` for at åbne en lokal SQLite-session efter et build.
 
+## XML-data
+
+- Angiv altid `lang` med en ISO 639-1-sprogkode på `<quote>`, når citatet ikke
+  er på dansk. Gennemgå korte mottoer og enkeltord manuelt; dansk- og
+  norskprægede historiske sprogformer må ikke mærkes uden en sikker vurdering.
+
 ## Git og GitHub
 
 - Hele testpakken skal køres og bestå, før der oprettes en PR.
