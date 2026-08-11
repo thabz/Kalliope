@@ -27,6 +27,7 @@ describe('text refs', () => {
           <xref poem="goethe2001111903" type="translation"/>
           <a poem="goethe2001111904"/>
           <xref bibel="bibeljohannes01,1"/>
+          <a bible="bibeljohannes03,16">Joh 3,16</a>
         </note>
       `)
     ).toEqual([
@@ -35,6 +36,7 @@ describe('text refs', () => {
       { toId: 'goethe2001111903', type: 'translation' },
       { toId: 'goethe2001111904', type: 'mention' },
       { toId: 'bibeljohannes01', type: 'mention' },
+      { toId: 'bibeljohannes03', type: 'mention' },
     ]);
   });
 
