@@ -15,7 +15,7 @@ import {
 } from './xml.js';
 import { sourceWorkFilename } from './anthologies.js';
 
-const textRefTagRegexp = /<(?:xref|a)\b[^>]*(?:\bpoem|\bbibel|\bbible)="[^"]*"[^>]*>/g;
+const textRefTagRegexp = /<(?:xref|a)\b[^>]*(?:\bpoem|\bbible)="[^"]*"[^>]*>/g;
 
 const getAttr = (tag, attrName) => {
   const match = tag.match(new RegExp(`\\b${attrName}="([^"]*)"`));
@@ -25,8 +25,7 @@ const getAttr = (tag, attrName) => {
 const extractTextRefs = xml => {
   return Array.from(xml.matchAll(textRefTagRegexp)).map(match => {
     const tag = match[0];
-    const target =
-      getAttr(tag, 'poem') ?? getAttr(tag, 'bibel') ?? getAttr(tag, 'bible');
+    const target = getAttr(tag, 'poem') ?? getAttr(tag, 'bible');
     return {
       toId: target.replace(/,.*$/, ''),
       type: getAttr(tag, 'type') === 'translation' ? 'translation' : 'mention',

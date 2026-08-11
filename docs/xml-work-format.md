@@ -613,7 +613,7 @@ Links:
 <xref type="translation" poem="heine..."/>
 <xref keyword="romantikken"/>
 <xref dict="..."/>
-<xref bibel="bibeljohn03,16"/>
+<xref bible="bibeljohn03,16"/>
 ```
 
 `type="translation"` paa digtlinks bruges til oversaettelsesrelationer.
