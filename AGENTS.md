@@ -35,7 +35,12 @@ digtere.
 - Når en PR skal lukke et GitHub issue automatisk, skal PR-beskrivelsen bruge GitHubs engelske closing keyword, fx `Fixes #123`. Skriv ikke `Lukker #123`, fordi GitHub ikke auto-lukker issues på dansk.
 - Branch-navne må ikke indeholde `/` eller have et teknisk prefix. Brug et kort,
   beskrivende navn som `robert-burns-ikon`.
-- Commit, push eller amend aldrig kodeændringer, før brugeren eksplicit har læst ændringen og bedt om commit/push. Det gælder også opdateringer til eksisterende PR-branches.
+- Når brugeren beder om at få fikset et GitHub issue, skal arbejdet udføres i et
+  nyt worktree og afsluttes med en PR. Agenten har i denne arbejdsgang automatisk
+  godkendelse til at committe og pushe de nødvendige ændringer for at oprette PR'en.
+- Uden for arbejdsgangen for GitHub issue-fixes må agenten aldrig committe, pushe
+  eller amende kodeændringer, før brugeren eksplicit har læst ændringen og bedt om
+  commit/push. Det gælder også opdateringer til eksisterende PR-branches.
 - Ved `gh issue view ... --comments` kan GitHub CLI i non-TTY give tomt tekstoutput for issues uden kommentarer. Brug enten `--json number,title,state,body,comments` eller kør kommandoen med TTY, når issue-indholdet skal læses.
 - Hvis `gh auth status` melder et ugyldigt token, samtidig med at `gh api` melder en forbindelsesfejl, skal GitHub-forbindelsen testes uden sandboxens netværksbegrænsning, før brugeren bedes logge ind igen. En blokeret API-forbindelse kan ellers fejlagtigt ligne et udløbet token.
 - Når du opretter eller opdaterer en PR, behøver du ikke vente på GitHubs CI, medmindre brugeren eksplicit beder om det.
