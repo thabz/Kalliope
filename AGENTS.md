@@ -32,6 +32,9 @@ digtere.
 ## Git og GitHub
 
 - Hele testpakken skal køres og bestå, før der oprettes en PR.
+- Når brugeren beder om at få fikset et issue, skal agenten starte i et nyt
+  worktree baseret på `origin/master` og først melde arbejdet klar, når GitHub
+  CI er gennemført.
 - Når en PR skal lukke et GitHub issue automatisk, skal PR-beskrivelsen bruge GitHubs engelske closing keyword, fx `Fixes #123`. Skriv ikke `Lukker #123`, fordi GitHub ikke auto-lukker issues på dansk.
 - Branch-navne må ikke indeholde `/` eller have et teknisk prefix. Brug et kort,
   beskrivende navn som `robert-burns-ikon`.
