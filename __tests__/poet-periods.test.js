@@ -24,10 +24,12 @@ describe('gruppering af digtere efter litterær periode', () => {
     const groups = groupsByLiteraryPeriod(
       [
         {
+          countries: ['dk'],
           title: { da: 'Oplysningstid', en: 'Enlightenment' },
           poets: [bellman, baggesen],
         },
         {
+          countries: ['dk'],
           title: { da: 'Romantik', en: 'Romanticism' },
           poets: [aarestrup, baggesen],
         },
@@ -45,13 +47,30 @@ describe('gruppering af digtere efter litterær periode', () => {
   it('udelader tomme perioder og digtere udenfor digteroversigten', () => {
     const groups = groupsByLiteraryPeriod(
       [
-        { title: { da: 'Tom' }, poets: [] },
-        { title: { da: 'Personer' }, poets: [{ ...aarestrup, type: 'person' }] },
+        { countries: ['dk'], title: { da: 'Tom' }, poets: [] },
+        { countries: ['dk'], title: { da: 'Personer' }, poets: [{ ...aarestrup, type: 'person' }] },
       ],
       'da',
       'dk'
     );
 
     expect(groups).toEqual([]);
+  });
+
+  it('viser globale og landets lokale perioder, men ikke andre landes', () => {
+    const groups = groupsByLiteraryPeriod(
+      [
+        { countries: ['dk', 'se'], title: { da: 'Romantik' }, poets: [baggesen] },
+        { countries: ['dk'], title: { da: 'Dansk romantik' }, poets: [baggesen] },
+        { countries: ['se'], title: { da: 'Svensk romantik' }, poets: [bellman] },
+      ],
+      'da',
+      'dk'
+    );
+
+    expect(groups).toEqual([
+      { title: 'Romantik', items: [baggesen] },
+      { title: 'Dansk romantik', items: [baggesen] },
+    ]);
   });
 });

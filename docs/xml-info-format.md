@@ -23,7 +23,7 @@ for navne, lande-/sproggruppering, værklister, biografisider, tidslinjer og eks
       <place>Weimar</place>
     </dead>
   </period>
-  <literary-periods>oplysningstid-og-klassicisme,romantik-og-praeromantik</literary-periods>
+  <literary-periods>dk-oplysningstid,dk-guldalder-og-romantik</literary-periods>
   <works>1795,1808,1819,1832,romi,andre</works>
   <identifiers>
     <wikidata>Q5879</wikidata>
@@ -153,11 +153,17 @@ eller portrætter.
 ## Literary Periods
 
 ```xml
-<literary-periods>romantik-og-praeromantik,det-moderne-gennembrud</literary-periods>
+<literary-periods>romantik-og-praeromantik,dk-guldalder-og-romantik,dk-det-moderne-gennembrud</literary-periods>
 ```
 
-Kommasepareret liste af litteraturperiode-id'er. De valideres mod
-`common/literary-periods.js`.
+Kommasepareret liste af litteraturperiode-id'er. Listen kan indeholde vilkårligt
+mange overlappende, traditionsspecifikke perioder, og medlemskab angives altid
+eksplicit. Perioderne er flade kategorier; der findes ingen globale
+standardperioder eller automatisk medlemskab. Id'erne har traditionens prefix,
+fx `dk-`, `gb-`, `de-`, `es-` eller `sv-fi-`, og må kun bruges for personer i
+periodens angivne landeområde. Det redaktionelle katalog ligger i
+`content/literary-periods.json` og valideres under `build-static`; XML-feltet
+refererer kun til id'erne.
 
 Feltet bruges til `/literary-periods` og til at gruppere digtere efter periode.
 
@@ -262,6 +268,7 @@ Buildet tjekker blandt andet:
 - `country` skal være en kendt landekode.
 - `lang` skal være en kendt sprogkode.
 - `literary-periods` skal bestå af kendte periode-id'er.
+- lokale litteraturperioder skal passe til personens `country`.
 - Hvis `portraits.xml` findes, skal der være et square-portræt.
 - Værk-id'er fra `<works>` bruges til at finde og bygge værkdata.
 

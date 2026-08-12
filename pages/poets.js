@@ -116,6 +116,9 @@ const groupsByYear = (poets, lang, country) => {
 
 const groupsByLiteraryPeriod = (periods, lang, country) => {
   return periods
+    .filter(
+      period => period.countries.includes(country)
+    )
     .map((period) => {
       const items = period.poets
         .filter((poet) => poet.country === country)
