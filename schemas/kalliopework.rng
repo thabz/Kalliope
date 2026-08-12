@@ -248,7 +248,7 @@
   <define name="xref">
     <element name="xref">
       <optional><attribute name="poem"><text/></attribute></optional>
-      <optional><attribute name="bibel"><text/></attribute></optional>
+      <optional><attribute name="bible"><text/></attribute></optional>
       <optional><attribute name="type"><text/></attribute></optional>
       <empty/>
     </element>
