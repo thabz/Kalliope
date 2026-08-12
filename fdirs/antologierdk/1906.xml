@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1906" author="antologierdk" status="complete" type="poetry">
+<kalliopework id="1906" author="antologierdk" status="incomplete" type="poetry">
 <workhead>
   <title>Sangbog for de unges Idræt</title>
   <year>1906</year>
   <pagebreaks/>
-  <notes>
-    <note type="credits">Bidrag fra Jørn Petersen.</note>
-    <note>Udgivet af A. C. Meyer.</note>
-  </notes>
   <pictures>
-    <picture src="1906-p2.jpg">Side 4 i <i>Sangbog for de unges Idræt</i> (1906), med begyndelsen af ,,De raske Drenges Sang''.</picture>
-    <picture src="1906-p3.jpg">Side 5 i <i>Sangbog for de unges Idræt</i> (1906), med fortsættelsen af ,,De raske Drenges Sang''.</picture>
     <picture type="titlepage" src="1906-p1.jpg">Titelbladet til <i>Sangbog for de unges Idræt</i> (1906) lyder ,,Sangbog / for / de unges Idræt / udgivet / af / A. C. Meyer // København / Rud. Bøhms Bogtrykkeri / 1906''.</picture>
   </pictures>
   <source>A. C. Meyer (udg.): <i>Sangbog for de unges Idræt</i>, København, Rud. Bøhms Bogtrykkeri, 1906.</source>
@@ -20,16 +14,21 @@
 
 <text id="antologierdk2026081201" author="drachmann">
 <head>
-  <title>De raske Drenges Sang</title>
+  <title><num>2.</num>De raske Drenges Sang</title>
   <firstline>Kryb aldrig sammen som Mus i Hul</firstline>
+  <subtitle>Mel.: Aa kjøre Vatten, aa kjøre Ved.</subtitle>
   <source pages="4-5"/>
+  <notes>
+    <note type="credits">Bidrag fra Jørn Petersen.</note>
+  </notes>
+  <pictures>
+    <picture src="antologierdk2026081201-p1.jpg">Side 4 i <i>Sangbog for de unges Idræt</i> (1906), med begyndelsen af ,,De raske Drenges Sang''.</picture>
+    <picture src="antologierdk2026081201-p2.jpg">Side 5 i <i>Sangbog for de unges Idræt</i> (1906), med fortsættelsen af ,,De raske Drenges Sang''.</picture>
+  </pictures>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<nonum><center>Nr. 2.</center></nonum>
-<nonum><center>De raske Drenges Sang.</center></nonum>
-<nonum><center>Mel.: Aa kjøre Vatten, aa kjøre Ved.</center></nonum>
 
 Kryb aldrig sammen som Mus i Hul,
 hvad farligt eller fælt der hænder,
@@ -51,13 +50,17 @@ kan Du først le,
 <i>let</i> vil Du se
 den Vægt, Du troed’ svær at bære!
 
+Kryb aldrig sammen - men stræk dit Mod
+og vis, at Musklerne kan spille,
+vær ogsaa hjælpsom og vis Dig god
+mod den, som kun er svag og lille!
 <pb n="5" facs="003.jpg"/>Øv Idræt ej blot for at „kunne slaas“,
 kun Tid og Taalmod fælder en Kolos;
 Vagt i Gevær,
 Drengenes Hær
 mod dem, som vil al Ungdom ilde!
 
-<nonum><right>Holger Drachmann.</right></nonum>
+<nonum><right><i>Holger Drachmann</i>.</right></nonum>
 </poetry>
 </body>
 </text>
