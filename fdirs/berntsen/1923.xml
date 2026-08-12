@@ -3,6 +3,7 @@
 <workhead>
     <title>Ungkarlens Visebog</title>
     <year>1923</year>
+    <pagebreaks/>
     <pictures>
         <picture type="titlepage" src="1923-p1.jpg">Titelbladet til Aage Berntsens <i>Ungkarlens Visebog</i> (1923).</picture>
     </pictures>
@@ -11,12 +12,13 @@
 <workbody>
 <text id="berntsen2026080801">
 <head>
-    <title>Mine Fædre</title>
-    <firstline>I gamle fynske Bønder</firstline>
-    <source pages="7-8" facsimile-pages="14-15"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Mine Fædre</title>
+  <firstline>I gamle fynske Bønder</firstline>
+  <source pages="7-8" facsimile-pages="14-15"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
-<body><poetry>
+<body>
+<poetry>
 I gamle fynske Bønder,
 i Jeres Sind begynder
 min Glæde og min Kraft —
@@ -38,7 +40,7 @@ en KARLESLURK af Kruset
 til Dagens Sulemad
 gør Sjælen mere uforknyt og glad!
 
-I tog Jer milde Koner,
+<pb n="8" facs="014.jpg"/>I tog Jer milde Koner,
 der graaned' som Matroner
 og blev Jer bedste Ven —
 som Hest i samme Sele
@@ -65,17 +67,19 @@ min Frugt er stærk og sund.
 Gid den maa kunne læske
 saa mangen tørstig Mund
 og glæde Mennesker i Hjærtets Grund.
-</poetry></body>
+</poetry>
+</body>
 </text>
 
 <text id="berntsen2026080802">
 <head>
-    <title>Glæden</title>
-    <firstline>Den gode gamle Glæde</firstline>
-    <source pages="9-11" facsimile-pages="16-18"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Glæden</title>
+  <firstline>Den gode gamle Glæde</firstline>
+  <source pages="9-11" facsimile-pages="16-18"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
-<body><poetry>
+<body>
+<poetry>
 Den gode gamle Glæde
 ta'r atter hos mig Sæde
 og slaar mig paa min Skulder
@@ -94,7 +98,7 @@ med Sukken og med Ak'en
 og bøjer dybere sin
 vrantne Næsetip.
 
-Nu vil jeg prise Lyset,
+<pb n="10" facs="016.jpg"/>Nu vil jeg prise Lyset,
 nu vil jeg glemme Gyset
 ved Tanken om en Kistes alt
 for kvalme Laag —
@@ -121,7 +125,7 @@ de muntre Instrumenter,
 mens Solen spejler sig i
 tinnet Bulefad.
 
-Hvem følger Dine Veje
+<pb n="11" facs="017.jpg"/>Hvem følger Dine Veje
 til Toner af Skalmeje:
 Et Pigebarn, der har det rette
 Legesind —
@@ -138,18 +142,20 @@ Kast Vankelmodets Krykke!
 Vi blev jo skabt til Lykke —
 se, vi har VIN og SANG, og vi
 har KÆRLIGHED!
-</poetry></body>
+</poetry>
+</body>
 </text>
 
 <text id="berntsen2026080803">
 <head>
-    <title>Fynsk Foraar</title>
-    <subtitle>Et bukolisk Digt</subtitle>
-    <firstline>Som en græsgrøn Plet, naar Sneen maa tø</firstline>
-    <source pages="12-19" facsimile-pages="19-26"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Fynsk Foraar</title>
+  <subtitle>Et bukolisk Digt</subtitle>
+  <firstline>Som en græsgrøn Plet, naar Sneen maa tø</firstline>
+  <source pages="12-19" facsimile-pages="19-26"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
-<body><poetry>
+<body>
+<poetry>
 <nonum><center>I. DEN FYNSKE Ø</center></nonum>
 Som en græsgrøn Plet, naar Sneen maa tø,
 som et Aakandeblad paa den dybe Sø,
@@ -167,7 +173,7 @@ Og alle Folk synes, at Dagen er sød,
 fra Morgenens Guld og til Aftenrød,
 og de mimrer ved Tanken om Boghvedegrød.
 
-<nonum><center>II. EN UNG PIGE</center></nonum>
+<pb n="13" facs="019.jpg"/><nonum><center>II. EN UNG PIGE</center></nonum>
 Aa se, nu kommer Vaaren
 til Haven og til Gaarden,
 og Luften er saa tynd og klar,
@@ -189,7 +195,7 @@ og Hjærtet løber fuldt af Sang,
 saa det er ved at sprænges —
 er det fordi det længes — —.
 
-<nonum><center>III. EN UNG MAND</center></nonum>
+<pb n="14" facs="020.jpg"/><nonum><center>III. EN UNG MAND</center></nonum>
 Den milde Dag er lys og lang
 og fuld af Sol og Fuglesang,
 og alt er saamænd ganske godt,
@@ -219,7 +225,7 @@ min Ilsebil, min egen Ven —
 det er som selve Solens Skin
 faldt i mit Hjærte ind.
 
-<nonum><center>IV. BØRNENE</center></nonum>
+<pb n="15" facs="021.jpg"/><nonum><center>IV. BØRNENE</center></nonum>
 <nonum>DRENGENE:</nonum>
 Lad os gaa ud at lege —
 her er min nye Top —
@@ -244,7 +250,7 @@ med Pigebørn i Flæng
 og danse rundt og neje,
 er Du en TØSEDRENG!
 
-<nonum><center>V. EN GAMMEL UNGKARL</center></nonum>
+<pb n="16" facs="022.jpg"/><nonum><center>V. EN GAMMEL UNGKARL</center></nonum>
 Dér har vi den aldrende Sol igen,
 velkommen til Gaarden, Du gode Ven!
 Du kommer med Blæst, Du kommer med Støv,
@@ -265,7 +271,7 @@ naar Solen er sunken i Vesterled —
 jeg kigger mod Maanen fra Vinglassets Bund,
 for Piben og Glasset — de deler min Mund.
 
-<nonum><center>VI. DEN BLINDE SPILLEMAND</center></nonum>
+<pb n="17" facs="023.jpg"/><nonum><center>VI. DEN BLINDE SPILLEMAND</center></nonum>
 Nu kysser Solen mit Øjelaag,
 og Luften syder som Vand i Kog.
 Jeg aander fugtige Markers Lugt,
@@ -287,7 +293,7 @@ smaa Hænder søger min gamle Haand,
 det er som rørte jeg Vaarens Aand.
 
 <nonum><center>VII. DE GAMLE</center></nonum>
-Saa sætter vi Piben i Ovnens Krog
+<pb n="18" facs="024.jpg"/>Saa sætter vi Piben i Ovnens Krog
 og lukker den skindklædte Bibelbog.
 Det er den velsignede Foraarstid,
 og Gigten er bleven lidt mere blid.
@@ -303,7 +309,7 @@ for Gammelfolk hælder mod Støvet ned
 og længes mod Hvilen i Evighed.
 
 <nonum><center>VIII. DANSEVISEN</center></nonum>
-Kom med Fiol og Klarinet,
+<pb n="19" facs="025.jpg"/>Kom med Fiol og Klarinet,
 vort Vinterhjærte hungrer,
 og spil os op en Himmelspræt,
 saa hele Øen gungrer.
@@ -330,17 +336,19 @@ af glade Ungdomsdage.
 
 Se — Æbleblomster drysser over Vejen,
 og NATTEN er vor egen —
-</poetry></body>
+</poetry>
+</body>
 </text>
 
 <text id="berntsen2026080804">
 <head>
-    <title>Visen om min Jordemoder</title>
-    <firstline>I denne gode Aften</firstline>
-    <source pages="20-21" facsimile-pages="27-28"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Visen om min Jordemoder</title>
+  <firstline>I denne gode Aften</firstline>
+  <source pages="20-21" facsimile-pages="27-28"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
-<body><poetry>
+<body>
+<poetry>
 I denne gode Aften,
 hvor hvert et Glas er fuldt,
 og Livets Bølger klukke
@@ -362,24 +370,26 @@ og alle Sorgers Hjem —.
 Jeg mumler op i Glassets dybe Bund:
 Velsignet være du, min Fødselsstund!
 
-En KÆMPESLURK, fordi Du
+<pb n="21" facs="027.jpg"/>En KÆMPESLURK, fordi Du
 med samme faste Haand
 fremtrylled' muntre Piger
 med sød, usnærpet Aand!
 Drik, alle gode Venner, nok en Slurk,
 fordi det ikke altid blev en Purk!
-</poetry></body>
+</poetry>
+</body>
 </text>
 
 <text id="berntsen2026080805">
 <head>
-    <title>Bryllupsrejse</title>
-    <subtitle>En Miniature</subtitle>
-    <firstline>Du svang vor store Frokostkurv</firstline>
-    <source pages="22-23" facsimile-pages="29-30"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Bryllupsrejse</title>
+  <subtitle>En Miniature</subtitle>
+  <firstline>Du svang vor store Frokostkurv</firstline>
+  <source pages="22-23" facsimile-pages="29-30"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
-<body><poetry>
+<body>
+<poetry>
 Du svang vor store Frokostkurv
 og satte den med Bump
 og kigged' i dens Herlighed
@@ -403,7 +413,7 @@ saa smøgte vi Tobak,
 
 ----
 
-Der var saa tyst og sommergrønt
+<pb n="23" facs="029.jpg"/>Der var saa tyst og sommergrønt
 i denne Bøgeskov,
 kun Sus af Løv og Myggesur,
 kun Spor af Dyreklov.
@@ -423,17 +433,19 @@ og drilled' mig med dusket Græs,
 der killede min Hud. — —
 Og Myg og Myrer kriblede
 paa BRUDGOM og paa BRUD.
-</poetry></body>
+</poetry>
+</body>
 </text>
 
 <text id="berntsen2026080806">
 <head>
-    <title>Et Afskedsvers, da en af Brødrene skulde giftes</title>
-    <firstline>Nu hælder vi for sidste Gang</firstline>
-    <source pages="24-25" facsimile-pages="31-32"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Et Afskedsvers, da en af Brødrene skulde giftes</title>
+  <firstline>Nu hælder vi for sidste Gang</firstline>
+  <source pages="24-25" facsimile-pages="31-32"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
-<body><poetry>
+<body>
+<poetry>
 Nu hælder vi for sidste Gang
 af Flaskehalsen smal og trang
 de gyldne Læskedraaber —
@@ -455,7 +467,7 @@ nu længes Du mod Reden lun,
 men der er Torne bag dens Dun,
 og tidt bli'r Duen DRAGE.
 
-Nu klapper hun Dit tætte Haar
+<pb n="25" facs="031.jpg"/>Nu klapper hun Dit tætte Haar
 og syer Navn paa Pudevaar
 med sine blide Hænder —
 men — gid min Angst er lutter Løgn,
@@ -468,21 +480,23 @@ og glemte Graad og Klage.
 Se — hvis Dit Leje bli'r med Torn,
 og hvis Din Pande bli'r med Horn,
 kom bare her tilbage!
-</poetry></body>
+</poetry>
+</body>
 </text>
 
 <text id="berntsen2026080807">
 <head>
-    <title>Da Gildet begyndte — og da det endte</title>
-    <firstline>Da Gildet begyndte, Du sejlede ud</firstline>
-    <source pages="26-28" facsimile-pages="33-35"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Da Gildet begyndte — og da det endte</title>
+  <firstline>Da Gildet begyndte, Du sejlede ud</firstline>
+  <source pages="26-28" facsimile-pages="33-35"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
-<body><poetry>
+<body>
+<poetry>
 <nonum><center><i>Tilegnet BRODER F.</i></center></nonum>
 
 Da Gildet begyndte, Du sejlede ud
-som en stolt Fregat.
+<pb n="27" facs="033.jpg"/>som en stolt Fregat.
 Dit Slips var en Vimpel og slet ingen Klud,
 og Din høje Hat
 en Musæumsskat.
@@ -497,7 +511,7 @@ af den dyre Mad
 og talte for KVINDEN med Ynde og Vid,
 Du var god og glad.
 
-Og først var Dit Smil som en hollandsk Dukat,
+<pb n="28" facs="034.jpg"/>Og først var Dit Smil som en hollandsk Dukat,
 som en gylden, stor —
 saa blegnede det som en fladtrykt Oblat —
 fik Du Hikke, Bro'r?
@@ -534,15 +548,16 @@ af en stolt Fregat,
 og BRØDRENE kipped' de flossede Flag,
 da Du tungt blev sat
 i Din egen Hat —
-</poetry></body>
+</poetry>
+</body>
 </text>
 
 <text id="berntsen2026080808">
 <head>
-    <title>Den første Digter</title>
-    <firstline>En dejlig Sommermorgen</firstline>
-    <source pages="29-31" facsimile-pages="36-38"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Den første Digter</title>
+  <firstline>En dejlig Sommermorgen</firstline>
+  <source pages="29-31" facsimile-pages="36-38"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <quote margin-left="30%" font-size="small">
@@ -568,7 +583,7 @@ der højt bag Skyen troned':
 
 „Solen staar frem i sin Vælde
 akba — akbora — min Tunge faar Mæle —
-som en Tyr, der tvinger Koen i Knæ,
+<pb n="30" facs="036.jpg"/>som en Tyr, der tvinger Koen i Knæ,
 Mechüjael, ja som Du!
 
 Jorden er hvid af Blomster,
@@ -596,7 +611,7 @@ lod sine Kinder glide
 mod JUBALs lodne Kinder
 med Kærtegn smaa og blide.
 
-Og gennem Skyen talte
+<pb n="31" facs="037.jpg"/>Og gennem Skyen talte
 JEHOVAs Faderstemme:
 Hav Tak, min Søn, min Lille —
 det skal jeg aldrig glemme.
@@ -610,17 +625,19 @@ Men JUBALs Slægt skal komme
 og sidde om min Trone,
 og hver skal faa en Harpe,
 og hver en Englekrone.
-</poetry></body>
+</poetry>
+</body>
 </text>
 
 <text id="berntsen2026080809">
 <head>
-    <title>Kvindens Skabelse og hvad deraf fulgte</title>
-    <firstline>I PARADISETS HAVE</firstline>
-    <source pages="32-39" facsimile-pages="39-46"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Kvindens Skabelse og hvad deraf fulgte</title>
+  <firstline>I PARADISETS HAVE</firstline>
+  <source pages="32-39" facsimile-pages="39-46"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
-<body><poetry>
+<body>
+<poetry>
 <nonum><center>I. UNGKARLEN</center></nonum>
 I PARADISETS HAVE,
 der var et smukt Enklave,
@@ -642,7 +659,7 @@ om ADAMs Læg og Hælen —
 men intet kunde lindre
 hin Pine i hans Indre.
 
-Han havde ingen Glæde
+<pb n="33" facs="039.jpg"/>Han havde ingen Glæde
 ved det, som man kan æde.
 Han kendte ikke Navnet
 paa Sødmen, som han savned'.
@@ -652,7 +669,7 @@ gik grublende GUDFADER
 i Kaabe sid og læget
 og smilede i Skæget.
 
-<nonum><center>II. KVINDENS SKABELSE</center></nonum>
+<pb n="34" facs="040.jpg"/><nonum><center>II. KVINDENS SKABELSE</center></nonum>
 Og GUD lod Natten komme
 fra Dybets sorte Lomme,
 og Stjærner, dugbestænkte,
@@ -678,7 +695,7 @@ lidt Angst fra Hjortehinden,
 lidt Ingefær og Peber,
 et Stykke Djævlelever.
 
-Og frem af Dampen stiger,
+<pb n="35" facs="041.jpg"/>Og frem af Dampen stiger,
 mens Nattens Skygger viger,
 se, Jordens første KVINDE,
 der famler som i Blinde.
@@ -710,7 +727,7 @@ hun kysser ham paa Kinden.
 
 ----
 
-Han aabner Øjet, lukker
+<pb n="36" facs="042.jpg"/>Han aabner Øjet, lukker
 det til igen og sukker:
 Den Ild i søde Strømme,
 det <i>kan</i> kun være Drømme.
@@ -730,7 +747,7 @@ O Fryd i Mellemgulvet!
 — Og hvor de unge sade,
 blev alle Blomster flade.
 
-<nonum><center>III. SYNDEFALDET</center></nonum>
+<pb n="37" facs="043.jpg"/><nonum><center>III. SYNDEFALDET</center></nonum>
 En Dag i Havens Gange
 traf EVA paa en SLANGE, —
 og Talen blev fortrolig:
@@ -761,7 +778,7 @@ og fryded' sig ved Lugten
 og slikkede en Smule
 paa dette glatte, gule.
 
-Og SLANGEN gled langs Armen
+<pb n="38" facs="044.jpg"/>Og SLANGEN gled langs Armen
 og kildred' over Barmen:
 Se, hvis Du nu tør bide,
 saa faar Du ALT at vide.
@@ -791,7 +808,7 @@ i Buskene bag Stammen
 og følte sig saa nøgne.
 Og EVA fandt paa Løgne,
 
-men ADAM banded' SLANGEN.
+<pb n="39" facs="045.jpg"/>men ADAM banded' SLANGEN.
 Man greb dem en ad Gangen.
 Smaa Engle hulked' stille
 og glemte rent at spille.
@@ -810,17 +827,19 @@ Ved Havens spidse Porte
 stod Folk i gylden Skjorte,
 Og langvejsfra saas Skæret
 af ham med Flammesværdet.
-</poetry></body>
+</poetry>
+</body>
 </text>
 
 <text id="berntsen2026080810">
 <head>
-    <title>Visen om, hvordan det gik Hr. T. i Konsulinde Ørns Kabinet</title>
-    <firstline>I Konsulindens Kabinet</firstline>
-    <source pages="40-41" facsimile-pages="47-48"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Visen om, hvordan det gik Hr. T. i Konsulinde Ørns Kabinet</title>
+  <firstline>I Konsulindens Kabinet</firstline>
+  <source pages="40-41" facsimile-pages="47-48"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
-<body><poetry>
+<body>
+<poetry>
 I Konsulindens Kabinet
 sad stud. polyt. Hr. T.
 med Husets Datter Violet
@@ -840,7 +859,7 @@ Hr. T'ses Overskæg —
 hun dufted' som et Blomstervejr,
 var det med Overlæg?
 
-Det Smilehul, det blonde Haar,
+<pb n="41" facs="047.jpg"/>Det Smilehul, det blonde Haar,
 den mælkehvide Tand!
 Hr. T. var ikke fra i Gaar,
 men en beleven Mand —
@@ -859,17 +878,19 @@ blev Døren sagte listet op
 af Konsulinde Ørn,
 der hulked' af sin fulde Krop:
 <i>Til Lykke, kære Børn!</i>
-</poetry></body>
+</poetry>
+</body>
 </text>
 
 <text id="berntsen2026080811">
 <head>
-    <title>Balladen om Købmand Glad og Hustru</title>
-    <firstline>Der var en Gang i denne Stad</firstline>
-    <source pages="42-44" facsimile-pages="55-57"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Balladen om Købmand Glad og Hustru</title>
+  <firstline>Der var en Gang i denne Stad</firstline>
+  <source pages="42-44" facsimile-pages="55-57"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
-<body><poetry>
+<body>
+<poetry>
 Der var en Gang i denne Stad
 en Købmand, som de kaldte Glad.
 Han handlede med dikomdi
@@ -891,7 +912,7 @@ og dokomdi og dikomdej,
 og raabte Manden: Stop!
 Saa knalded' hun en Kop!
 
-Og dette lille, kære Skarn
+<pb n="43" facs="055.jpg"/>Og dette lille, kære Skarn
 en skønne Dag ham fødte Barn,
 en lille Tøs med dikomdi
 og dokomdi og dikomdej,
@@ -919,7 +940,7 @@ og dokomdi og dikomdej
 og aabned' Dør paa Klem
 og bød ham gæstfrit hjem.
 
-Han halted' paa den ene Fod,
+<pb n="44" facs="056.jpg"/>Han halted' paa den ene Fod,
 hans Slips var plettet som af Blod,
 og i hans Blik var dikomdi
 og dokomdi og dikomdej.
@@ -941,18 +962,20 @@ til Straf for alt det dikomdi
 og dokomdi og dikomdej.
 Men hendes Døtre, Du,
 de lever sgu' endnu!
-</poetry></body>
+</poetry>
+</body>
 </text>
 
 <text id="berntsen2026080812">
 <head>
-    <title>Balladen om Sir John Falstaffs Død</title>
-    <subtitle><line>(WILLIAM SHAKESPEARE: HENRIK D. V.</line><line>II. AKT III. SCENE)</line></subtitle>
-    <firstline>Hvem pusler ved Din Laas</firstline>
-    <source pages="45-47" facsimile-pages="58-60"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Balladen om Sir John Falstaffs Død</title>
+  <subtitle><line>(WILLIAM SHAKESPEARE: HENRIK D. V.</line><line>II. AKT III. SCENE)</line></subtitle>
+  <firstline>Hvem pusler ved Din Laas</firstline>
+  <source pages="45-47" facsimile-pages="58-60"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
-<body><poetry>
+<body>
+<poetry>
 Hvem pusler ved Din Laas,
 Sir John,
 hvem puster paa Din Praas,
@@ -971,7 +994,7 @@ Du smiler til Din Haand,
 der famler langs Din Lagenkant,
 som om den barnligt Blomster bandt.
 
-Du er saa hjælpeløs,
+<pb n="46" facs="058.jpg"/>Du er saa hjælpeløs,
 Sir John,
 Du kalder paa Din Tøs:
 Hej, DORTHE LAGENSPLITTER, kom
@@ -1001,22 +1024,24 @@ en Gulddukat, en tung,
 hun hitter frem med væver Haand
 og gemmer bag sit Strømpebaand.
 
-Saa gyser hun af Skræk,
+<pb n="47" facs="059.jpg"/>Saa gyser hun af Skræk,
 Sir John,
 thi se — som gjort med Blæk
 paa Væggen truer Din Profil
 udover Kroens Huspostil.
-</poetry></body>
+</poetry>
+</body>
 </text>
 
 <text id="berntsen2026080813">
 <head>
-    <title>Zigøjnervisen</title>
-    <firstline>Min Vugge stod i TURKESTAN</firstline>
-    <source pages="48-49" facsimile-pages="61-62"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Zigøjnervisen</title>
+  <firstline>Min Vugge stod i TURKESTAN</firstline>
+  <source pages="48-49" facsimile-pages="61-62"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
-<body><poetry>
+<body>
+<poetry>
 Min Vugge stod i TURKESTAN,
 min Moder kaldtes MALIBRAN,
 hun spaaede i Kort og sang
@@ -1041,7 +1066,7 @@ med hele vores Tingeling
 og Tangelang
 og Ting-Ting-Ting.
 
-Kun Piger smiler, hvor jeg gaar,
+<pb n="49" facs="061.jpg"/>Kun Piger smiler, hvor jeg gaar,
 og glatter hastigt deres Haar,
 og be'r mig spille, hvis jeg vil,
 saa vil de gerne danse til
@@ -1056,17 +1081,19 @@ jeg styrter paa den øde Mark
 med al mit stakkels Tingeling
 og Tangelang
 og Ting-Ting-Ting.
-</poetry></body>
+</poetry>
+</body>
 </text>
 
 <text id="berntsen2026080814">
 <head>
-    <title>Den aldrende Don Juan</title>
-    <firstline>Langs Stadens Mur</firstline>
-    <source pages="50-51" facsimile-pages="63-64"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Den aldrende Don Juan</title>
+  <firstline>Langs Stadens Mur</firstline>
+  <source pages="50-51" facsimile-pages="63-64"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
-<body><poetry>
+<body>
+<poetry>
 Langs Stadens Mur
 gaar Folk adstadigt Tur
 ind under Løvportaler sindrigt skaarne,
@@ -1089,7 +1116,7 @@ mens MANDEN skuler som en skummel Jætte.
 
 ----
 
-Som Dejg er nu den Kind,
+<pb n="51" facs="063.jpg"/>Som Dejg er nu den Kind,
 hvis Smilehul sank ind —.
 O, Du agtværdigt trippende Matrone,
 Dit Haar var som en tung Madonnakrone!
@@ -1108,17 +1135,19 @@ Hun gik forbi,
 forsvandt blandt Folk paa Sti —
 men MANDEN vender sig endnu og skuler
 med Øjne som to uafskudte Kugler —
-</poetry></body>
+</poetry>
+</body>
 </text>
 
 <text id="berntsen2026080815">
 <head>
-    <title>Landevejen</title>
-    <firstline>Jeg bæres af Blæsten</firstline>
-    <source pages="52-54" facsimile-pages="65-67"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Landevejen</title>
+  <firstline>Jeg bæres af Blæsten</firstline>
+  <source pages="52-54" facsimile-pages="65-67"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
-<body><poetry>
+<body>
+<poetry>
 <nonum><center>I. PAA CYKLE I MEDVIND</center></nonum>
 Jeg bæres af Blæsten
 og rører mig næsten ikke.
@@ -1138,13 +1167,13 @@ og lavt over Rugmarkens Flager
 forpjuskede sortegraa Krager
 med Skræppen mod Vindstødet baske.
 
-Og Vejrmøllens Vinger
+<pb n="53" facs="065.jpg"/>Og Vejrmøllens Vinger
 som kantede Klinger hviner.
 Det knirker i Vejrmøllehatten,
 hvis Indre er skummelt som Natten.
 I Døren staar Svenden og griner.
 
-<nonum><center>II. MOD AFTEN</center></nonum>
+<pb n="54" facs="066.jpg"/><nonum><center>II. MOD AFTEN</center></nonum>
 Men Vinden, der blæser,
 saa Vejrmøller hvæser, trættes,
 og Skyer, der krummes som Larver,
@@ -1174,17 +1203,19 @@ som Skyer, der tindre, graane
 i Søvnen, der stiger af Dybet
 velsignet af Sjælen og Krybet
 i Skæret af Stjærne og Maane.
-</poetry></body>
+</poetry>
+</body>
 </text>
 
 <text id="berntsen2026080816">
 <head>
-    <title>Den Barnløse</title>
-    <firstline>Nu dufter Hylden i Aftenfred</firstline>
-    <source pages="55" facsimile-pages="68"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Den Barnløse</title>
+  <firstline>Nu dufter Hylden i Aftenfred</firstline>
+  <source pages="55" facsimile-pages="68"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
-<body><poetry>
+<body>
+<poetry>
 Nu dufter Hylden i Aftenfred
 og taber Stjærner i Gang og Bed.
 Nu sidder Folk foran kalket Hus
@@ -1209,17 +1240,19 @@ Han ser paa Barnet i Havens Gang — —
 og Hylden suser sin Aftensang
 og dufter krydret i Aftenfred
 og taber Stjærner i Gang og Bed — — —
-</poetry></body>
+</poetry>
+</body>
 </text>
 
 <text id="berntsen2026080817">
 <head>
-    <title>Den grimme Pige</title>
-    <firstline>Hun er lille og styg —</firstline>
-    <source pages="56-57" facsimile-pages="69-70"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Den grimme Pige</title>
+  <firstline>Hun er lille og styg —</firstline>
+  <source pages="56-57" facsimile-pages="69-70"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
-<body><poetry>
+<body>
+<poetry>
 Hun er lille og styg —
 naar hun gaar mig forbi, slaar hun Øjnene ned,
 for hun ved,
@@ -1240,7 +1273,7 @@ ja, en Aften, da Himlen var Roser og Blod —
 jeg forstod,
 for jeg saa hendes Sjæl.
 
-Saa forunderligt sky
+<pb n="57" facs="069.jpg"/>Saa forunderligt sky
 har hun løftet sit Blik mod den fremmede Mand;
 om dets Rand
 var der Skygger af Bly.
@@ -1249,17 +1282,19 @@ Kun en eneste Gang —
 men nu slaar hun sit Øje undseeligt ned,
 for hun ved,
 hun er lille og styg —
-</poetry></body>
+</poetry>
+</body>
 </text>
 
 <text id="berntsen2026080818">
 <head>
-    <title>Maaneskin</title>
-    <firstline>Du søger mine Læber</firstline>
-    <source pages="58-59" facsimile-pages="71-72"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Maaneskin</title>
+  <firstline>Du søger mine Læber</firstline>
+  <source pages="58-59" facsimile-pages="71-72"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
-<body><poetry>
+<body>
+<poetry>
 Du søger mine Læber
 og fatter om mit Haar
 med et enfoldigt Kærtegn,
@@ -1282,21 +1317,23 @@ i andre Stuers Skær.
 
 ----
 
-Naar Nattergalen hulker
+<pb n="59" facs="071.jpg"/>Naar Nattergalen hulker
 sit Hjærte halvt itu
 en saadan Maaneaften —
 aa, kom mig da i Hu.
-</poetry></body>
+</poetry>
+</body>
 </text>
 
 <text id="berntsen2026080819">
 <head>
-    <title>I denne Aften</title>
-    <firstline>I denne Aften har jeg set Din Sjæl</firstline>
-    <source pages="60" facsimile-pages="73"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>I denne Aften</title>
+  <firstline>I denne Aften har jeg set Din Sjæl</firstline>
+  <source pages="60" facsimile-pages="73"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
-<body><poetry>
+<body>
+<poetry>
 I denne Aften har jeg set Din Sjæl,
 og den var heltud skøn og heltud god,
 forklaret steg den af Dit Kød og Blod.
@@ -1312,17 +1349,19 @@ den lykkelige, rige Hjærtefred —.
 Den ene Aften var en Evighed,
 fjærnt fra min Barndoms Stjærner bar den Bud —
 i denne Aften har jeg anet GUD —
-</poetry></body>
+</poetry>
+</body>
 </text>
 
 <text id="berntsen2026080820">
 <head>
-    <title>Du sover i Skyggen af Ahorn</title>
-    <firstline>Du sover i Skyggen af Ahorn</firstline>
-    <source pages="61-62" facsimile-pages="74-75"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Du sover i Skyggen af Ahorn</title>
+  <firstline>Du sover i Skyggen af Ahorn</firstline>
+  <source pages="61-62" facsimile-pages="74-75"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
-<body><poetry>
+<body>
+<poetry>
 Du sover i Skyggen af Ahorn,
 det duver, det sortnende Løv.
 Skoven suser saa varsomt
@@ -1343,21 +1382,23 @@ blomstrer nu ene for mig —
 og se — jeg selv er forandret,
 jeg tænker jo kun paa Dig.
 
-Kun gode Ord vil vi tale
+<pb n="62" facs="074.jpg"/>Kun gode Ord vil vi tale
 paa Vejen, vi vandrer nu,
 og skilles vi fra hinanden,
 vi hvisker: Paa Gensyn, Du —.
-</poetry></body>
+</poetry>
+</body>
 </text>
 
 <text id="berntsen2026080821">
 <head>
-    <title>Den gamle Fuglefænger</title>
-    <firstline>Min Ungdom var et vældigt Træ —</firstline>
-    <source pages="63-64" facsimile-pages="76-77"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Den gamle Fuglefænger</title>
+  <firstline>Min Ungdom var et vældigt Træ —</firstline>
+  <source pages="63-64" facsimile-pages="76-77"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
-<body><poetry>
+<body>
+<poetry>
 Min Ungdom var et vældigt Træ —
 aa, om I rigtig vidste —
 og Piger daled' paa mit Knæ,
@@ -1380,7 +1421,7 @@ i gammel Ungkarls Kammer.
 
 ----
 
-En Gang skal om min Kiste staa
+<pb n="64" facs="076.jpg"/>En Gang skal om min Kiste staa
 tre graa og gamle Venner
 med latterlige Hatte paa
 og sorte Handskehænder.
@@ -1394,17 +1435,19 @@ Jeg takker Jer af al min Sjæl,
 I var min Trøst og Glæde,
 skønt Ingen ved min Kistes Fjæl
 skal Enketaarer græde.
-</poetry></body>
+</poetry>
+</body>
 </text>
 
 <text id="berntsen2026080822">
 <head>
-    <title>De bygged' DIG et Bedehus</title>
-    <firstline>De bygged' DIG et Bedehus</firstline>
-    <source pages="65-66" facsimile-pages="78-79"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>De bygged' DIG et Bedehus</title>
+  <firstline>De bygged' DIG et Bedehus</firstline>
+  <source pages="65-66" facsimile-pages="78-79"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
-<body><poetry>
+<body>
+<poetry>
 De bygged' DIG et Bedehus
 af store Klippeblokke.
 Tungt kalder gennem Dagens Brus
@@ -1425,7 +1468,7 @@ i mugne Mures Skygge,
 med Sporeklir, paa Kludefod,
 vi har ej samme Lykke.
 
-Thi jeg blev skabt til Vandringsmand,
+<pb n="66" facs="078.jpg"/>Thi jeg blev skabt til Vandringsmand,
 GUD smilte, da jeg fødtes,
 ad Rosensti, paa Sten og Sand
 min Ungdom sødt forødtes.
@@ -1444,17 +1487,19 @@ Men lad mig tøve lidt endnu
 ved Livets gode Gilde,
 DIN Verden er saa dejlig, DU,
 og vi har Tid at spilde — — —
-</poetry></body>
+</poetry>
+</body>
 </text>
 
 <text id="berntsen2026080823">
 <head>
-    <title>Til mine Venner, naar jeg er død —</title>
-    <firstline>Naar jeg er død, da skal I ikke græde</firstline>
-    <source pages="67-68" facsimile-pages="80-81"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Til mine Venner, naar jeg er død —</title>
+  <firstline>Naar jeg er død, da skal I ikke græde</firstline>
+  <source pages="67-68" facsimile-pages="80-81"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
-<body><poetry>
+<body>
+<poetry>
 Naar jeg er død, da skal I ikke græde,
 med Vin og ej med Taarer skal I væde
 det Bord, hvor vi har talt saa gode Ord,
@@ -1471,14 +1516,15 @@ da gaar jeg til et andet Lag kan hænde —
 at løfte mine Ord
 i Glædeskor.
 
-Gid I maa mindes mig med Smil om Munden —
+<pb n="68" facs="080.jpg"/>Gid I maa mindes mig med Smil om Munden —
 gaa til min Grav i Foraarsaftenstunden,
 strø paa mit Støv det nysudsprungne Løv.
 Thi HAN, som skabte mig, vil naadig smile:
 Kom, hvil Dig efter Dine muntre Mile,
 Du fik jo kun Forstand
 som Spillemand.
-</poetry></body>
+</poetry>
+</body>
 </text>
 </workbody>
 </kalliopework>
