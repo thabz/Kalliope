@@ -2,6 +2,7 @@ import fs from 'fs';
 import {
   literaryPeriods,
   literaryPeriodIds,
+  sortedLiteraryPeriods,
 } from '../../common/literary-periods.js';
 import {
   isFileModified,
@@ -68,7 +69,7 @@ const all_poet_ids = () => {
   return _all_poet_ids;
 };
 
-const parseLiteraryPeriods = (id, value) => {
+const parseLiteraryPeriods = (id, country, value) => {
   if (value == null || value.trim() === '') {
     return [];
   }
@@ -80,9 +81,23 @@ const parseLiteraryPeriods = (id, value) => {
     if (!literaryPeriodIds.has(period)) {
       throw `${id} har ukendt litterær periode: ${period}`;
     }
+    const definition = literaryPeriods.find(item => item.id === period);
+    if (
+      definition.scope === 'local' &&
+      definition.countries.includes(country) === false
+    ) {
+      throw `${id} har lokal litterær periode uden for landeområdet: ${period}`;
+    }
   });
   return periods;
 };
+
+const literaryPeriodForApi = period => ({
+  id: period.id,
+  scope: period.scope,
+  ...(period.scope === 'local' ? { countries: period.countries } : {}),
+  title: period.title,
+});
 
 const build_poets_first_pass = collected => {
   // Returns {has_poems: bool, has_prose: bool,
@@ -146,6 +161,7 @@ const build_poets_first_pass = collected => {
     const works = safeGetText(p, 'works');
     const literary_periods = parseLiteraryPeriods(
       id,
+      country,
       safeGetText(p, 'literary-periods')
     );
     if (!country.match(/(dk|se|no|gb|de|fr|us|it|un)/)) {
@@ -340,7 +356,7 @@ const build_literary_periods_json = collected => {
             },
     };
   };
-  const periods = literaryPeriods.map(period => {
+  const periods = sortedLiteraryPeriods.map(period => {
     const poets = [];
     collected.poets.forEach(poet => {
       if ((poet.literary_periods || []).includes(period.id)) {
@@ -353,7 +369,7 @@ const build_literary_periods_json = collected => {
       return aName.localeCompare(bName, 'da');
     });
     return {
-      ...period,
+      ...literaryPeriodForApi(period),
       poets,
     };
   });
@@ -367,4 +383,6 @@ export {
   build_poets_by_country_json,
   build_literary_periods_json,
   isKnownPoetLanguage,
+  literaryPeriodForApi,
+  parseLiteraryPeriods,
 };

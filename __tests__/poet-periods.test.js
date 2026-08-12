@@ -54,4 +54,21 @@ describe('gruppering af digtere efter litterær periode', () => {
 
     expect(groups).toEqual([]);
   });
+
+  it('viser globale og landets lokale perioder, men ikke andre landes', () => {
+    const groups = groupsByLiteraryPeriod(
+      [
+        { scope: 'global', title: { da: 'Romantik' }, poets: [baggesen] },
+        { scope: 'local', countries: ['dk'], title: { da: 'Dansk romantik' }, poets: [baggesen] },
+        { scope: 'local', countries: ['se'], title: { da: 'Svensk romantik' }, poets: [bellman] },
+      ],
+      'da',
+      'dk'
+    );
+
+    expect(groups).toEqual([
+      { title: 'Romantik', items: [baggesen] },
+      { title: 'Dansk romantik', items: [baggesen] },
+    ]);
+  });
 });

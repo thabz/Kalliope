@@ -153,10 +153,14 @@ eller portrætter.
 ## Literary Periods
 
 ```xml
-<literary-periods>romantik-og-praeromantik,det-moderne-gennembrud</literary-periods>
+<literary-periods>romantik-og-praeromantik,dk-guldalder-og-romantik,dk-det-moderne-gennembrud</literary-periods>
 ```
 
-Kommasepareret liste af litteraturperiode-id'er. De valideres mod
+Kommasepareret liste af litteraturperiode-id'er. Listen kan indeholde vilkårligt
+mange globale og lokale perioder, og medlemskab angives altid eksplicit. Lokale
+perioder er flade kategorier, ikke underperioder af de globale perioder. De har
+et landeprefix, fx `dk-`, `gb-` eller `de-`, og må kun bruges for personer i
+periodens angivne landeområde. Id'erne valideres mod
 `common/literary-periods.js`.
 
 Feltet bruges til `/literary-periods` og til at gruppere digtere efter periode.
@@ -262,6 +266,7 @@ Buildet tjekker blandt andet:
 - `country` skal være en kendt landekode.
 - `lang` skal være en kendt sprogkode.
 - `literary-periods` skal bestå af kendte periode-id'er.
+- lokale litteraturperioder skal passe til personens `country`.
 - Hvis `portraits.xml` findes, skal der være et square-portræt.
 - Værk-id'er fra `<works>` bruges til at finde og bygge værkdata.
 
