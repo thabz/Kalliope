@@ -23,7 +23,7 @@ for navne, lande-/sproggruppering, værklister, biografisider, tidslinjer og eks
       <place>Weimar</place>
     </dead>
   </period>
-  <literary-periods>oplysningstid-og-klassicisme,romantik-og-praeromantik</literary-periods>
+  <literary-periods>dk-oplysningstid,dk-guldalder-og-romantik</literary-periods>
   <works>1795,1808,1819,1832,romi,andre</works>
   <identifiers>
     <wikidata>Q5879</wikidata>
@@ -157,11 +157,13 @@ eller portrætter.
 ```
 
 Kommasepareret liste af litteraturperiode-id'er. Listen kan indeholde vilkårligt
-mange globale og lokale perioder, og medlemskab angives altid eksplicit. Lokale
-perioder er flade kategorier, ikke underperioder af de globale perioder. De har
-et landeprefix, fx `dk-`, `gb-` eller `de-`, og må kun bruges for personer i
-periodens angivne landeområde. Id'erne valideres mod
-`common/literary-periods.js`.
+mange overlappende, traditionsspecifikke perioder, og medlemskab angives altid
+eksplicit. Perioderne er flade kategorier; der findes ingen globale
+standardperioder eller automatisk medlemskab. Id'erne har traditionens prefix,
+fx `dk-`, `gb-`, `de-`, `es-` eller `sv-fi-`, og må kun bruges for personer i
+periodens angivne landeområde. Det redaktionelle katalog ligger i
+`content/literary-periods.json` og valideres under `build-static`; XML-feltet
+refererer kun til id'erne.
 
 Feltet bruges til `/literary-periods` og til at gruppere digtere efter periode.
 

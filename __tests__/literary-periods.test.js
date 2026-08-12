@@ -1,61 +1,42 @@
 import {
   literaryPeriods,
-  sortedLiteraryPeriods,
+  loadLiteraryPeriods,
   validateLiteraryPeriods,
-} from '../common/literary-periods.js';
+} from '../tools/build-static/literary-periods.js';
 import {
   literaryPeriodForApi,
   parseLiteraryPeriods,
 } from '../tools/build-static/poets.js';
 
 describe('litteraturperiodekataloget', () => {
-  const globalIds = [
-    'antikken',
-    'middelalderen',
-    'renaessance-og-humanisme',
-    'barok-og-tidlig-modernitet',
-    'oplysningstid-og-klassicisme',
-    'romantik-og-praeromantik',
-    'realisme-og-naturalisme',
-    'symbolisme-og-fin-de-siecle',
-    'modernisme-og-avantgarde',
-    'efterkrigstid',
-    'postmodernisme',
-    'samtid',
-  ];
-
-  it('bevarer de 12 globale id’er', () => {
-    expect(literaryPeriods.filter(period => period.scope === 'global').map(period => period.id)).toEqual(globalIds);
+  it('læser JSON, validerer og sorterer med katalogrækkefølge som tie-breaker', () => {
+    expect(literaryPeriods.periods.length).toBeGreaterThan(0);
+    expect(literaryPeriods.sorted.map(period => period.sortYear)).toEqual(
+      [...literaryPeriods.sorted].map(period => period.sortYear).sort((a, b) => a - b)
+    );
+    expect(literaryPeriods.periods.some(period => period.id === 'antikken')).toBe(false);
+    expect(literaryPeriods.periods.every(period => period.tradition != null)).toBe(true);
   });
 
-  it('sorterer kronologisk og bevarer katalogrækkefølgen ved lighed', () => {
-    expect(sortedLiteraryPeriods.map(period => period.sortYear)).toEqual(
-      [...sortedLiteraryPeriods].map(period => period.sortYear).sort((a, b) => a - b)
-    );
-    const tied = sortedLiteraryPeriods.filter(period => period.sortYear === 1945);
-    expect(tied.map(period => literaryPeriods.indexOf(period))).toEqual(
-      tied.map(period => literaryPeriods.indexOf(period)).sort((a, b) => a - b)
-    );
+  it('validerer prefix, land, titel, kilde og år', () => {
+    const base = literaryPeriods.periods[0];
+    expect(() => validateLiteraryPeriods({ periods: [{ ...base, id: 'dk-forkert', tradition: 'fr' }] })).toThrow('prefix');
+    expect(() => validateLiteraryPeriods({ periods: [{ ...base, countries: ['xx'] }] })).toThrow('ukendt land');
+    expect(() => validateLiteraryPeriods({ periods: [{ ...base, title: { ...base.title, de: undefined } }] })).toThrow('titel');
+    expect(() => validateLiteraryPeriods({ periods: [{ ...base, sources: [] }] })).toThrow('kilde');
+    expect(() => validateLiteraryPeriods({ periods: [{ ...base, sortYear: '1800' }] })).toThrow('sortYear');
   });
 
-  it('validerer metadata og lokale landeområder', () => {
-    expect(() => validateLiteraryPeriods([{ id: 'x', scope: 'local', sortYear: 1, countries: ['xx'], sources: [], title: { da: 'x', en: 'x', fr: 'x', de: 'x' } }])).toThrow('ukendt land');
+  it('validerer XML-medlemskab mod traditionens land', () => {
     expect(() => parseLiteraryPeriods('test', 'se', 'dk-guldalder-og-romantik')).toThrow('uden for landeområdet');
+    expect(parseLiteraryPeriods('test', 'dk', 'dk-guldalder-og-romantik,dk-det-moderne-gennembrud')).toHaveLength(2);
   });
 
-  it('udelader interne metadata fra API’et', () => {
-    const local = literaryPeriods.find(period => period.id === 'dk-det-moderne-gennembrud');
-    expect(literaryPeriodForApi(local)).toEqual({
-      id: local.id,
-      scope: 'local',
-      countries: ['dk'],
-      title: local.title,
-    });
-    expect(literaryPeriodForApi(local)).not.toHaveProperty('sortYear');
-    expect(literaryPeriodForApi(local)).not.toHaveProperty('sources');
-  });
-
-  it('accepterer flere globale og flere lokale perioder', () => {
-    expect(parseLiteraryPeriods('test', 'dk', 'romantik-og-praeromantik,realisme-og-naturalisme,dk-guldalder-og-romantik,dk-det-moderne-gennembrud')).toHaveLength(4);
+  it('udelader redaktionelle felter fra API’et', () => {
+    const period = literaryPeriods.idMap.get('dk-det-moderne-gennembrud');
+    expect(literaryPeriodForApi(period)).toEqual({ id: period.id, countries: ['dk'], title: period.title });
+    expect(literaryPeriodForApi(period)).not.toHaveProperty('tradition');
+    expect(literaryPeriodForApi(period)).not.toHaveProperty('sortYear');
+    expect(literaryPeriodForApi(period)).not.toHaveProperty('sources');
   });
 });

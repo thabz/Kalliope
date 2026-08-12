@@ -1,9 +1,5 @@
 import fs from 'fs';
-import {
-  literaryPeriods,
-  literaryPeriodIds,
-  sortedLiteraryPeriods,
-} from '../../common/literary-periods.js';
+import { catalogFilename, literaryPeriods } from './literary-periods.js';
 import {
   isFileModified,
   loadCachedJSON,
@@ -78,14 +74,11 @@ const parseLiteraryPeriods = (id, country, value) => {
     .map(period => period.trim())
     .filter(period => period !== '');
   periods.forEach(period => {
-    if (!literaryPeriodIds.has(period)) {
+    if (literaryPeriods.idMap.has(period) === false) {
       throw `${id} har ukendt litterær periode: ${period}`;
     }
-    const definition = literaryPeriods.find(item => item.id === period);
-    if (
-      definition.scope === 'local' &&
-      definition.countries.includes(country) === false
-    ) {
+    const definition = literaryPeriods.idMap.get(period);
+    if (definition.countries.includes(country) === false) {
       throw `${id} har lokal litterær periode uden for landeområdet: ${period}`;
     }
   });
@@ -94,8 +87,7 @@ const parseLiteraryPeriods = (id, country, value) => {
 
 const literaryPeriodForApi = period => ({
   id: period.id,
-  scope: period.scope,
-  ...(period.scope === 'local' ? { countries: period.countries } : {}),
+  countries: period.countries,
   title: period.title,
 });
 
@@ -142,6 +134,7 @@ const build_poets_first_pass = collected => {
     }
     const relevantFiles = [
       infoFilename,
+      catalogFilename,
       `fdirs/${id}/bibliography-primary.xml`,
       `fdirs/${id}/bibliography-secondary.xml`,
       `fdirs/${id}/artwork.xml`,
@@ -356,7 +349,7 @@ const build_literary_periods_json = collected => {
             },
     };
   };
-  const periods = sortedLiteraryPeriods.map(period => {
+  const periods = literaryPeriods.sorted.map(period => {
     const poets = [];
     collected.poets.forEach(poet => {
       if ((poet.literary_periods || []).includes(period.id)) {
