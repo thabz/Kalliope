@@ -263,6 +263,13 @@
 
   <define name="prose">
     <element name="prose">
+      <optional><attribute name="id"><text/></attribute></optional>
+      <optional><attribute name="author"><text/></attribute></optional>
+      <optional><attribute name="variant"><text/></attribute></optional>
+      <optional><attribute name="aliases"><text/></attribute></optional>
+      <optional><attribute name="skip-index"><text/></attribute></optional>
+      <optional><attribute name="lang"><text/></attribute></optional>
+      <optional><attribute name="ignore-tests"><text/></attribute></optional>
       <optional><attribute name="font-size"><text/></attribute></optional>
       <ref name="mixed"/>
     </element>
