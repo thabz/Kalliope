@@ -518,6 +518,19 @@ The page marker does not affect public rendering, but it must remain in the
 source XML for structural analysis, including detection of stanza continuations
 and physical line wrapping.
 
+After the final XML has been assembled, run the targeted page-break test:
+
+```shell
+npm test -- --runInBand __tests__/pagebreaks.test.js
+```
+
+This test reads the serialized XML and rejects a `<pb>` that ends an XML line.
+Every marker must prefix the first text or inline element on its new source page
+on that same XML line. A clean stanza analysis does not replace this check,
+because stanza analysis may remove page-break markup before counting lines.
+Rerun the test after every later change that can move `<pb>` elements or alter
+body whitespace.
+
 ## 9. Reconstruct verse lines correctly
 
 OCR line wrapping is not poetic structure.
@@ -962,6 +975,7 @@ As a current baseline, include the relevant forms of:
 ```shell
 npm run report-ocr-candidates
 xmllint --noout path/to/work.xml
+npm test -- --runInBand __tests__/pagebreaks.test.js
 git diff --check
 npm test -- --runInBand
 ```
@@ -1091,6 +1105,8 @@ The task is complete only when all applicable items are true:
       precisely placed `<pb>`.
 - [ ] Every `<pb>` has a non-empty `facs` containing the correct facsimile page
       filename; `n`, when present, is the printed page label.
+- [ ] Every `<pb>` prefixes the first text or inline element on its new source
+      page on the same serialized XML line, and the page-break test passes.
 - [ ] Arabic `pb/@n` values and numeric `pb/@facs` filenames never decrease in
       document order; gaps are allowed.
 - [ ] `<workhead>` contains `<pagebreaks/>`, including when no included text

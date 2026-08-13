@@ -48,6 +48,14 @@ const parseFacsimilePageNumber = value => {
   return match == null ? null : parseInt(match[1], 10);
 };
 
+const standalonePageBreaks = xml => {
+  const pattern = /<pb\b[^>]*\/>[ \t]*(?=\r?\n|$)/g;
+  return Array.from(xml.matchAll(pattern)).map(match => ({
+    line: xml.slice(0, match.index).split(/\r?\n/).length,
+    markup: match[0].trim(),
+  }));
+};
+
 const textEntries = document => {
   const texts = Array.from(document.getElementsByTagName('text'));
   const proseTexts = Array.from(document.getElementsByTagName('prose')).filter(
@@ -79,6 +87,12 @@ const collectPageBreakIssues = (filename, xml) => {
   if (declarations.length === 0) {
     return issues;
   }
+
+  standalonePageBreaks(xml).forEach(({ line, markup }) => {
+    issues.push(
+      `${filename}:${line}: ${markup} must prefix the first content on its source page on the same XML line.`
+    );
+  });
 
   const pageBreaks = Array.from(document.getElementsByTagName('pb'));
   pageBreaks.forEach(pageBreak => {
@@ -206,6 +220,45 @@ describe('page-break markup', () => {
     expect(collectPageBreakIssues('work.xml', xml)).toContain(
       'work.xml: every <pb> requires a non-empty facs attribute.'
     );
+  });
+
+  it('requires page breaks to prefix same-line content', () => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Digte</title><year>1900</year><pagebreaks/></workhead>
+        <workbody>
+          <text id="digter1900a">
+            <head><firstline>Første linje</firstline><source pages="11-12"/></head>
+            <body><poetry>Første linje
+<pb n="12" facs="019.jpg"/>
+Anden linje</poetry></body>
+          </text>
+        </workbody>
+      </kalliopework>
+    `;
+
+    expect(collectPageBreakIssues('work.xml', xml)).toContain(
+      'work.xml:8: <pb n="12" facs="019.jpg"/> must prefix the first content on its source page on the same XML line.'
+    );
+  });
+
+  it('allows page breaks before text, inline markup and word continuations', () => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Digte</title><year>1900</year><pagebreaks/></workhead>
+        <workbody>
+          <text id="digter1900a">
+            <head><firstline>Første linje</firstline><source pages="11-14"/></head>
+            <body><poetry>Første linje
+<pb n="12" facs="019.jpg"/>Anden linje
+<pb n="13" facs="020.jpg"/><span>Et fremhævet ord</span>
+En linje fort<pb n="14" facs="021.jpg"/>sætter</poetry></body>
+          </text>
+        </workbody>
+      </kalliopework>
+    `;
+
+    expect(collectPageBreakIssues('work.xml', xml)).toEqual([]);
   });
 
   it('requires one page break for each boundary in a page interval', () => {
