@@ -151,21 +151,37 @@ Regler:
 - Det første fundne `square-src` bruges.
 - `square-src` er en manuelt beskåret kvadratisk fil, fx `p1-square.jpg`, på
   højst 600 × 600 px.
-- Brug en naturlig, klassisk portrætkomposition, hvor hele hovedet er synligt;
-  beskær aldrig hårtop, hage eller ansigt.
-- Lad hovedet fylde ca. 55-65 % af kvadratets højde, og placér øjenlinjen ca.
-  38-42 % nede fra billedets overkant. Øjnene skal ikke ligge i kvadratets
-  geometriske centrum.
-- Bevar normalt ca. 5-10 % luft over håret, og medtag hals, krave og noget af
-  skuldrene, når originalen tillader det.
-- Tving ikke ansigtet til at være vandret centreret. Bevar så vidt muligt
-  originalens naturlige komposition og asymmetri, og tag hensyn til blikretning
-  og kroppens placering.
-- Undgå både meget tætte ansigtsudsnit og udsnit med unødigt meget brystkasse
-  eller tom baggrund.
-- Prioritér i denne rækkefølge: naturligt portrætudsnit, passende hovedstørrelse,
-  synligt hoved/hals/skuldre, øjenlinjens placering og først derefter geometrisk
-  centrering.
+
+## Standard for beskæring af portrætter til runde ikoner
+
+Beskær altid portrættet til et **kvadrat**, men optimer beskæringen til den
+**indskrevne cirkel**, da billedet vises som et rundt ikon.
+
+* **Ansigtet skal være hovedmotivet** og være tydeligt læsbart også i lille
+  størrelse.
+* Beskær **relativt stramt**, så hoved og ansigt fylder godt i cirklen.
+* **Hele ansigtet, hårtop og hage** skal være synlige inden for den indskrevne
+  cirkel.
+* **Øjnene placeres lidt over midten**, typisk ca. **40–45 % nede fra toppen**
+  af kvadratet.
+* Medtag gerne lidt **hals og skuldre**, men undgå så meget torso eller baggrund,
+  at ansigtet virker lille.
+* Bevar en **naturlig portrætkomposition**; motivet behøver ikke være matematisk
+  centreret, hvis en let asymmetri giver et bedre resultat.
+* Prioritér motivets placering efter **cirklens synlige flade**, ikke efter
+  kvadratets hjørner.
+* Undgå beskæringer med **for meget tom baggrund**, **for lille ansigt** eller
+  **for tæt udsnit**, hvor hår eller hage presses mod kanten.
+
+### Prioritet
+
+Ved tvivl prioriteres i denne rækkefølge:
+
+1. Tydeligt og genkendeligt ansigt i rund visning
+2. Hele ansigtet synligt inden for cirklen
+3. Passende hovedstørrelse
+4. Naturlig komposition
+5. Hals og skuldre som sekundære elementer
 
 Eksempel:
 
