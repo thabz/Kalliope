@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="watts" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Isaac</firstname>
+    <lastname>Watts</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1674-07-17</date>
+      <place>Southampton, England</place>
+    </born>
+    <dead>
+      <date>1748-11-25</date>
+      <place>Stoke Newington, England</place>
+    </dead>
+  </period>
+  <works>1709</works>
+  <identifiers>
+    <wikidata>Q313283</wikidata>
+    <wikipedia-en>Isaac Watts</wikipedia-en>
+    <viaf>102309678</viaf>
+    <gutenberg-org>13341</gutenberg-org>
+  </identifiers>
+</person>
