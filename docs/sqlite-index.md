@@ -61,9 +61,11 @@ Bygning:
 - `text_search_index`
   - Nøgle: `text_id`
   - Denormaliseret søgeflade med `raw_text`, titler, evt. datoer og nøgleord.
-SQLite-filen er et genereret, internt analyseartefakt; den er ikke en del af
-frontendens API. `caches/sqlite-index-build.sql` er kun en valgfri debug-/
-importcache og skal ikke redigeres som datakilde.
+SQLite-filen er et genereret analyseartefakt. Static-buildet publicerer en kopi
+som del af det versionsmærkede korpusdatasæt under
+`public/api/v1/kalliope.sqlite`; se `docs/corpus-dataset.md` for den offentlige
+kontrakt. `caches/sqlite-index-build.sql` er kun en valgfri debug-/importcache
+og skal ikke redigeres som datakilde.
 ## Relationer
 
 - `poet` 1:N `work`

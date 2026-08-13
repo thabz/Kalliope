@@ -83,6 +83,17 @@ describe('routes', () => {
     });
   });
 
+  it('matches the localized dataset page', () => {
+    expect(matchRoute('/da/dataset')).toEqual({
+      page: '/dataset',
+      query: { lang: 'da' },
+    });
+    expect(matchRoute('/en/dataset/')).toEqual({
+      page: '/dataset',
+      query: { lang: 'en' },
+    });
+  });
+
   it('decodes path parameters and rejects unknown routes', () => {
     expect(matchRoute('/da/keyword/%C3%A6re')).toEqual({
       page: '/keyword',

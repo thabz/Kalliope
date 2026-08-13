@@ -99,6 +99,11 @@ const routeDefinitions = [
     keys: ['lang', 'aboutItemId'],
   },
   {
+    page: '/dataset',
+    regex: new RegExp(`^/(${lang})/dataset/?$`),
+    keys: ['lang'],
+  },
+  {
     page: '/search',
     regex: new RegExp(`^/(${lang})/search/([^/]+)/([^/]+)/?$`),
     keys: ['lang', 'country', 'poetId'],

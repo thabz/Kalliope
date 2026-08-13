@@ -26,6 +26,8 @@ Læs den relevante specialdokumentation før ændringer på området:
   facsimilelinks til Det Kgl. Bibliotek
 - `docs/sqlite-index.md` ved forespørgsler på det genererede korpusindeks,
   ændringer i SQLite-buildet eller analyseværktøjer
+- `docs/corpus-dataset.md` ved ændringer i det offentlige, versionsmærkede
+  korpusdatasæt eller dets discovery-endpoint
 
 ## GitHub
 

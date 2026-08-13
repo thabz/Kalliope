@@ -91,6 +91,8 @@ export const aboutURL = (lang = 'da', aboutText) => {
   return `/${lang}/about/${aboutText}`;
 };
 
+export const datasetURL = (lang = 'da') => `/${lang}/dataset`;
+
 export const museumURL = (lang = 'da', museumId) => {
   return `/${lang}/museum/${museumId}`;
 };

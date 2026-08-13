@@ -121,6 +121,7 @@ import {
   worksForPoet,
 } from './build-static/anthologies.js';
 import { updateSqliteIndex } from './build-static/sqlite-index.js';
+import { buildCorpusDataset } from './build-static/corpus-dataset.js';
 import { findUnlistedWorkFiles } from './build-static/workfiles.js';
 
 const envFlag = (name) => {
@@ -1548,6 +1549,7 @@ const main = async () => {
   await b('build_sitemap_xml', build_sitemap_xml, collected);
   await b('build_anniversaries_ical', build_anniversaries_ical, collected);
   await b('update_sqlite_index', updateSqliteIndex, collected);
+  await b('build_corpus_dataset', buildCorpusDataset, collected);
   refreshFilesModifiedCache();
   if (skipImageThumbnails) {
     console.log('Skipping image thumbnail build.');
