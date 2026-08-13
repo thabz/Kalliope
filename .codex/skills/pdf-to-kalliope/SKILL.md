@@ -411,6 +411,25 @@ Do not deliver a collection of loose poem files.
 
 Include every relevant text in source order.
 
+Generate every new `<text id>` according to the repository's current
+operational convention in `tools/add-poem.rb`:
+
+```text
+<poet-id><YYYYMMDD><NN>
+```
+
+Use the complete poet ID verbatim, including hyphens. `YYYYMMDD` is the date
+the text entry is created, and `NN` is the first unused two-digit sequence
+number for that poet and date. For example, the first new text for poet
+`bie-jacob` on 13 August 2026 is `bie-jacob2026081301`. Apply this rule to
+every `<text>`, including paratext and entries with `skip-index="true"`.
+
+Prefer running `ruby tools/add-poem.rb <poet-id> <work-id>` to allocate each
+ID. For a bulk import, reproducing its allocation algorithm is acceptable,
+but verify the finished IDs against the script before validation. Never derive
+a new text ID from the publication year or invent a work-based form such as
+`<poet><work>t001`.
+
 Fill all fields that can be responsibly established from:
 
 - the publication itself
@@ -1097,6 +1116,9 @@ The task is complete only when all applicable items are true:
       their order in the PDF.
 - [ ] The XML references the correct image basenames and current image types.
 - [ ] Work-level and text-level metadata were actively completed.
+- [ ] Every new text ID follows `tools/add-poem.rb`, preserves the complete
+      poet ID, uses the creation date rather than the publication year, and is
+      globally unique.
 - [ ] Referenced poets, translators and other persons were resolved against the
       corpus where possible.
 - [ ] Translations and adaptations were investigated for originals.
