@@ -151,6 +151,21 @@ Regler:
 - Det første fundne `square-src` bruges.
 - `square-src` er en manuelt beskåret kvadratisk fil, fx `p1-square.jpg`, på
   højst 600 × 600 px.
+- Brug en naturlig, klassisk portrætkomposition, hvor hele hovedet er synligt;
+  beskær aldrig hårtop, hage eller ansigt.
+- Lad hovedet fylde ca. 55-65 % af kvadratets højde, og placér øjenlinjen ca.
+  38-42 % nede fra billedets overkant. Øjnene skal ikke ligge i kvadratets
+  geometriske centrum.
+- Bevar normalt ca. 5-10 % luft over håret, og medtag hals, krave og noget af
+  skuldrene, når originalen tillader det.
+- Tving ikke ansigtet til at være vandret centreret. Bevar så vidt muligt
+  originalens naturlige komposition og asymmetri, og tag hensyn til blikretning
+  og kroppens placering.
+- Undgå både meget tætte ansigtsudsnit og udsnit med unødigt meget brystkasse
+  eller tom baggrund.
+- Prioritér i denne rækkefølge: naturligt portrætudsnit, passende hovedstørrelse,
+  synligt hoved/hals/skuldre, øjenlinjens placering og først derefter geometrisk
+  centrering.
 
 Eksempel:
 
