@@ -501,6 +501,7 @@ const TextPage = (props) => {
             refs={text.translations}
             contentLang={text.content_lang}
             currentPoetId={poet.id}
+            spacing="5px"
           />
         </MetadataGroup>
       ) : null}
