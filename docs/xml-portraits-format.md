@@ -151,6 +151,8 @@ Regler:
 - Det første fundne `square-src` bruges.
 - `square-src` er en manuelt beskåret kvadratisk fil, fx `p1-square.jpg`, på
   højst 600 × 600 px.
+- Beskær portrættet, så øjnenes midtpunkt ligger i kvadratets geometriske
+  centrum.
 
 Eksempel:
 
