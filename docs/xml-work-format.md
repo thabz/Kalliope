@@ -402,10 +402,11 @@ for at gentage tekstens `<source pages="...">`. Derfor kan et værk med
 `<pagebreaks/>` er `facs` redaktionelt obligatorisk på hvert `<pb>`. Schemaet
 tillader fortsat ældre `<pb>` uden `facs` af hensyn til bagudkompatibilitet.
 
-I dokumentrækkefølge må de arabiske værdier i `pb/@n` og de numeriske
-facsimilefilnavne i `pb/@facs` ikke falde gennem værket. Spring er gyldige, fordi
-sideskift mellem to tekstposter ikke får en markør. Romertalsværdier i `n`
-indgår ikke i den maskinelle rækkefølgekontrol.
+Inden for hver tekstpost må de arabiske værdier i `pb/@n` ikke falde. De kan
+begynde forfra ved en ny tekstpost, når kilden har selvstændig paginering. De
+numeriske facsimilefilnavne i `pb/@facs` må ikke falde gennem hele værket.
+Spring er gyldige, fordi sideskift mellem to tekstposter ikke får en markør.
+Romertalsværdier i `n` indgår ikke i den maskinelle rækkefølgekontrol.
 
 Hvis et lovligt sideinterval undtagelsesvis ikke kan omsættes til
 `slutside - startside` interne markører, kan den konkrete tekst bruge

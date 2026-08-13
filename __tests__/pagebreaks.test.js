@@ -101,25 +101,8 @@ const collectPageBreakIssues = (filename, xml) => {
     }
   });
 
-  let previousPrintedPage = null;
   let previousFacsimilePage = null;
   pageBreaks.forEach(pageBreak => {
-    const printedLabel = pageBreak.getAttribute('n');
-    const printedPage =
-      printedLabel == null ? null : parseArabicPageNumber(printedLabel);
-    if (
-      printedPage != null &&
-      previousPrintedPage != null &&
-      printedPage < previousPrintedPage.number
-    ) {
-      issues.push(
-        `${filename}: pb/@n must not decrease through the work: ${previousPrintedPage.label} before ${printedLabel}.`
-      );
-    }
-    if (printedPage != null) {
-      previousPrintedPage = { label: printedLabel, number: printedPage };
-    }
-
     const facs = pageBreak.getAttribute('facs');
     const facsimilePage =
       facs == null ? null : parseFacsimilePageNumber(facs);
@@ -135,6 +118,27 @@ const collectPageBreakIssues = (filename, xml) => {
     if (facsimilePage != null) {
       previousFacsimilePage = { label: facs, number: facsimilePage };
     }
+  });
+
+  textEntries(document).forEach(text => {
+    let previousPrintedPage = null;
+    Array.from(text.getElementsByTagName('pb')).forEach(pageBreak => {
+      const printedLabel = pageBreak.getAttribute('n');
+      const printedPage =
+        printedLabel == null ? null : parseArabicPageNumber(printedLabel);
+      if (
+        printedPage != null &&
+        previousPrintedPage != null &&
+        printedPage < previousPrintedPage.number
+      ) {
+        issues.push(
+          `${filename}: pb/@n must not decrease within a text: ${previousPrintedPage.label} before ${printedLabel}.`
+        );
+      }
+      if (printedPage != null) {
+        previousPrintedPage = { label: printedLabel, number: printedPage };
+      }
+    });
   });
 
   textEntries(document).forEach(text => {
@@ -315,7 +319,7 @@ describe('page-break markup', () => {
     expect(collectPageBreakIssues('work.xml', xml)).toEqual([]);
   });
 
-  it('allows gaps in page sequences but rejects decreases through the work', () => {
+  it('allows printed pagination to restart between texts but rejects decreasing facsimile pages', () => {
     const xml = `
       <kalliopework id="1900" author="digter">
         <workhead><title>Digte</title><year>1900</year><pagebreaks/></workhead>
@@ -339,11 +343,28 @@ describe('page-break markup', () => {
       </kalliopework>
     `;
 
-    expect(collectPageBreakIssues('work.xml', xml)).toEqual(
-      expect.arrayContaining([
-        'work.xml: pb/@n must not decrease through the work: 21 before 16.',
-        'work.xml: pb/@facs must not decrease through the work: 030.jpg before 025.jpg.',
-      ])
+    expect(collectPageBreakIssues('work.xml', xml)).toEqual([
+      'work.xml: pb/@facs must not decrease through the work: 030.jpg before 025.jpg.',
+    ]);
+  });
+
+  it('rejects decreasing printed page numbers within one text', () => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Digte</title><year>1900</year><pagebreaks/></workhead>
+        <workbody>
+          <text id="digter1900a">
+            <head><firstline>Første linje</firstline><source pages="15-21"/></head>
+            <body><poetry>Første linje
+<pb n="21" facs="030.jpg"/>Anden linje
+<pb n="16" facs="031.jpg"/>Tredje linje</poetry></body>
+          </text>
+        </workbody>
+      </kalliopework>
+    `;
+
+    expect(collectPageBreakIssues('work.xml', xml)).toContain(
+      'work.xml: pb/@n must not decrease within a text: 21 before 16.'
     );
   });
 
