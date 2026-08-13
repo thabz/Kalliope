@@ -377,10 +377,5 @@ export const kalliopeMenu = () => {
       title: _('Om', lang),
       url: Links.aboutURL(lang, 'kalliope'),
     },
-    {
-      id: 'dataset',
-      title: _('Data', lang),
-      url: Links.datasetURL(lang),
-    },
   ];
 };
