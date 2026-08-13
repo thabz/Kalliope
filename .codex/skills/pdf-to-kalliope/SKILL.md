@@ -606,6 +606,20 @@ does not prove that indentation is correct.
 Continue structural analysis across page breaks. A page break is not in itself
 a stanza break.
 
+### Rerun structural analysis from the final XML
+
+The first analysis performed during transcription is not the final check.
+After the complete work file has been assembled, page breaks and blank lines
+have been inserted, and all manual or automated rewrites are finished, extract
+each poem body again from the final serialized XML into fresh temporary JSON.
+Run both `analyze-stanzas.js` and `analyze-indentation.js` on every poem.
+
+Check every candidate from this final run against the facsimile and either fix
+it or document why the deviation is intentional. If the XML changes after the
+final run—including restoration, bulk replacement, formatting, or moving a
+`<pb>` element—the results are stale, and both analyses must be rerun on the
+new final file. Include the final results in the review checkpoint.
+
 Keep headings, stanza numbers and decorative lines separate from numbered verse
 lines using the XML structures documented by the repository.
 
