@@ -98,6 +98,7 @@ import {
 } from './build-static/source.js';
 import { mapLimit } from './build-static/concurrency.js';
 import { createProgressReporter } from './build-static/progress.js';
+import { relatedEventEntries } from './build-static/event-date-relations.js';
 import { validateFirstlineMarkup } from './build-static/validation.js';
 import { build_works_toc, build_section_toc } from './build-static/toc.js';
 import { update_elasticsearch } from './build-static/elastic.js';
@@ -955,40 +956,20 @@ const sortCollectedDates = (dates) => {
 };
 
 const relatedTextsForDates = (textId, textDates, collected) => {
-  const variantIds = new Set(resolve_variants(textId, collected) || [textId]);
-  variantIds.add(textId);
-
-  const result = [];
-  const seen = new Set();
-  ['written', 'performed', 'event'].forEach((dateType) => {
-    const date = textDates[dateType] == null ? null : textDates[dateType].trim();
-    if (date == null || date.length === 0) {
-      return;
-    }
-    const items = collected.dates.get(date) || [];
-    items.forEach((item) => {
-      const itemVariantIds = resolve_variants(item.id, collected) || [item.id];
-      const itemVariantKey = itemVariantIds[0];
-      if (
-        itemVariantIds.some((variantId) => variantIds.has(variantId)) ||
-        seen.has(itemVariantKey)
-      ) {
-        return;
-      }
-      seen.add(itemVariantKey);
-      result.push({
-        date,
-        dateType: item.dateType,
-        id: item.id,
-        title: item.title,
-        firstline: item.firstline,
-        poetId: item.poetId,
-        poetName: poetName(collected.poets.get(item.poetId)),
-        workId: item.workId,
-      });
-    });
-  });
-  return result;
+  return relatedEventEntries({
+    textId,
+    textDates,
+    dates: collected.dates,
+    resolveVariants: id => resolve_variants(id, collected),
+  }).map(item => ({
+    id: item.id,
+    title: item.title,
+    poetId: item.poetId,
+    poet: poetName(collected.poets.get(item.poetId)),
+    work: item.workId === 'andre'
+      ? null
+      : workLinkName(collected.works.get(`${item.poetId}/${item.workId}`)),
+  }));
 };
 
 // Constructs collected.works and collected.texts to

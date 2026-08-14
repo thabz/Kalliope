@@ -184,34 +184,19 @@ const KeywordLink = ({ keyword, lang }) => {
   );
 };
 
-const RelatedDateTexts = ({ texts, lang }) => {
+const OccasionTexts = ({ texts, contentLang, currentPoetId, lang }) => {
   if (texts.length === 0) {
     return null;
   }
   return (
-    <div className="related-date-texts">
-      {texts.map((text, i) => {
-        const separator =
-          i === texts.length - 1
-            ? ''
-            : i === texts.length - 2
-            ? ` ${_('og', lang)} `
-            : ', ';
-        return (
-          <span key={text.id}>
-            {text.poetName}:
-            <Link href={Links.textURL(lang, text.id)}>»{text.title}«</Link>
-            {separator}
-          </span>
-        );
-      })}{' '}
-      {_('knytter sig til samme dato.', lang)}
-      <style jsx>{`
-        .related-date-texts {
-          margin-bottom: 30px;
-        }
-      `}</style>
-    </div>
+    <MetadataGroup title={_('Lejlighedsdigte', lang)} printHidden>
+      <Refs
+        refs={texts}
+        contentLang={contentLang}
+        currentPoetId={currentPoetId}
+        spacing="5px"
+      />
+    </MetadataGroup>
   );
 };
 
@@ -520,7 +505,12 @@ const TextPage = (props) => {
       <Stack spacing="20px">
         {renderedNotes}
         {renderedTextMetadata}
-        <RelatedDateTexts texts={text.related_date_texts || []} lang={lang} />
+        <OccasionTexts
+          texts={text.related_date_texts || []}
+          contentLang={text.content_lang}
+          currentPoetId={poet.id}
+          lang={lang}
+        />
         {renderedKeywords}
         {renderedPictures}
       </Stack>
