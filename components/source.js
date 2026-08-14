@@ -1,10 +1,10 @@
-import _ from '../common/translations.js';
 import CommonData from '../common/commondata.js';
+import { sourceLinkLabel } from '../common/source-link.js';
 import { TextInline } from './textcontent.js';
 import Tooltip from './tooltip.js';
 
 const Source = ({ contentHtml, href, lang }) => {
-  const label = _('Digital kilde', lang);
+  const label = sourceLinkLabel(href, lang);
   return (
     <div className="source">
       <TextInline contentHtml={contentHtml} />
