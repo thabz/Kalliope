@@ -4,6 +4,7 @@ import {
   deterministicGzip,
   jsonLines,
   normalizedFullText,
+  buildTextAuditFields,
   buildWorkRecords,
   validateRelations,
   validateRecordShapes,
@@ -43,6 +44,28 @@ describe('versioned corpus dataset', () => {
       title: ' En titel ',
       blocks: [{ lines: [' Første   linje ', { source: 'Anden linje' }] }],
     })).toBe('En titel\nFørste linje\nAnden linje');
+  });
+
+  it('keeps common audit fields in text records', () => {
+    const fields = buildTextAuditFields(
+      {
+        firstline: 'Første linje',
+        dates: { written: ' 1840-01-02 ', performed: '', event: '1841' },
+      },
+      { text: { has_footnotes: 1, footnotes_count: 2 } },
+      { pages: '12–13' },
+    );
+
+    expect(fields).toEqual({
+      firstline: 'Første linje',
+      events: [
+        { type: 'written', date: '1840-01-02' },
+        { type: 'event', date: '1841' },
+      ],
+      has_footnotes: true,
+      footnotes_count: 2,
+      source_pages: '12–13',
+    });
   });
 
   it('rejects dangling poet and work references', () => {

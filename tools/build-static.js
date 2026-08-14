@@ -132,6 +132,7 @@ const envFlag = (name) => {
 
 const skipImageThumbnails = envFlag('KALLIOPE_SKIP_IMAGE_THUMBNAILS');
 const skipElasticsearch = envFlag('KALLIOPE_SKIP_ELASTICSEARCH');
+const buildSqlite = process.argv.includes('--build-sqlite');
 
 let collected = {
   texts: new Map(),
@@ -1548,8 +1549,10 @@ const main = async () => {
   await b('build_redirects_json', build_redirects_json, collected);
   await b('build_sitemap_xml', build_sitemap_xml, collected);
   await b('build_anniversaries_ical', build_anniversaries_ical, collected);
-  await b('update_sqlite_index', updateSqliteIndex, collected);
   await b('build_corpus_dataset', buildCorpusDataset, collected);
+  if (buildSqlite) {
+    await b('update_sqlite_index', updateSqliteIndex, collected);
+  }
   refreshFilesModifiedCache();
   if (skipImageThumbnails) {
     console.log('Skipping image thumbnail build.');
