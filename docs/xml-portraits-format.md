@@ -6,6 +6,17 @@ portraits. Portrætter kan også genbruges fra andre XML-filer via `portrait="di
 
 Se også `docs/style-guide.md` for de generelle regler om billedplacering og GitHub-sprog.
 
+## Formatteringsregel
+
+Kør den fælles metadataformatter efter ændringer i `portraits.xml`:
+
+```sh
+node tools/format-metadata-xml.js fdirs/<id>/portraits.xml
+```
+
+Testpakken håndhæver formatterens output for alle versionsstyrede `portraits.xml`.
+Den samme formatter og kontrol gælder `artwork.xml`.
+
 ## Grundstruktur
 
 ```xml
