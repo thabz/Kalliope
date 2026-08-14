@@ -4,6 +4,18 @@ Dette er et internt overblik over `fdirs/<id>/info.xml`.
 Filen beskriver en person, kunstner, samling eller anden aktør i Kalliope og er grundlaget
 for navne, lande-/sproggruppering, værklister, biografisider, tidslinjer og eksterne links.
 
+## Formatteringsregel
+
+Alle `info.xml` skal bruge to mellemrum pr. indrykningsniveau. Kør formatteren
+efter oprettelse eller redigering:
+
+```sh
+node tools/format-metadata-xml.js fdirs/<id>/info.xml
+```
+
+Testpakken sammenligner alle versionsstyrede `info.xml` med formatterens output,
+så afvigende formatering ikke kan merges.
+
 ## Grundstruktur
 
 ```xml
