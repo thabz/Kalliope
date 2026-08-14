@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <person id="verdelina" country="dk" lang="da" type="poet">
-  <name><firstname>Engelline</firstname><lastname>Verdelin</lastname><pseudonym>Angelica</pseudonym></name>
-  <period><born><date>1820</date></born><dead><date>1904</date></dead></period>
+  <name>
+    <firstname>Engelline</firstname>
+    <lastname>Verdelin</lastname>
+    <pseudonym>Angelica</pseudonym>
+  </name>
+  <period>
+    <born>
+      <date>1820</date>
+    </born>
+    <dead>
+      <date>1904</date>
+    </dead>
+  </period>
   <literary-periods>dk-guldalder-og-romantik</literary-periods>
 </person>

@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <person id="grunejp" country="de" lang="de" type="poet">
-  <name><firstname>J.P.</firstname><lastname>Grüne</lastname></name>
-  <period><born><date>1805</date></born><dead><date>1878</date></dead></period>
+  <name>
+    <firstname>J.P.</firstname>
+    <lastname>Grüne</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1805</date>
+    </born>
+    <dead>
+      <date>1878</date>
+    </dead>
+  </period>
   <literary-periods>de-sturm-und-drang-og-romantik</literary-periods>
 </person>

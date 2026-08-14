@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <person id="koikjaerl" country="dk" lang="da" type="poet">
-  <name><firstname>L.</firstname><lastname>Koikjær</lastname></name>
-  <period><born><date>?</date></born><dead><date>?</date></dead></period>
+  <name>
+    <firstname>L.</firstname>
+    <lastname>Koikjær</lastname>
+  </name>
+  <period>
+    <born>
+      <date>?</date>
+    </born>
+    <dead>
+      <date>?</date>
+    </dead>
+  </period>
   <literary-periods>dk-guldalder-og-romantik</literary-periods>
 </person>
