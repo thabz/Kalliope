@@ -20,14 +20,17 @@ digtere.
 
 ## Forespørgsler på korpusdata
 
-- Brug den genererede SQLite-database `public/api/kalliope.sqlite` til opslag,
-  optællinger, filtrering og audit af korpusdata, når forespørgslen kan løses
-  der. Læs `docs/sqlite-index.md` først.
+- Brug de genererede JSONL-gzipfiler i `public/api/v1/` til opslag,
+  optællinger, filtrering og audit af korpusdata. Læs
+  `docs/corpus-dataset.md` først, og brug streaming med `gzip` og `jq` frem for
+  at pakke hele datasættet ud.
 - Scan ikke alle XML-filer i `fdirs/` eller `content/` som førstevalg. Gå kun
-  til XML, når databasen ikke indeholder de nødvendige felter, eller når den
+  til XML, når bulkfilerne ikke indeholder de nødvendige felter, eller når den
   konkrete opgave kræver kilde-XML'en.
-- Databasen bygges med `make build-static` eller `npm run build-static`. Brug
-  `make sqlite` for at åbne en lokal SQLite-session efter et build.
+- Ved komplekse relationelle audits kan et valgfrit lokalt SQLite-indeks bygges
+  med `make build-sqlite` og åbnes med `make sqlite`. Læs
+  `docs/sqlite-index.md` først. Indekset er ikke en del af standard-buildet
+  eller det offentlige datasæt.
 
 ## XML-data
 

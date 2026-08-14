@@ -13,8 +13,8 @@ filstørrelser, SHA-256-checksummer, antal poster, relationer og genbrugsnoter.
   `{poet_id}/{local_id}`, `poet_id`, værkmetadata og kanonisk URL.
 - `texts.jsonl.gz`: én indekserbar tekstplacering per linje med stabilt `id`,
   `poet_id`, `work_id`, kanonisk URL, direkte URL til den komplette eksisterende
-  JSON-repræsentation, normaliseret fuldtekst, kilde og relationer.
-- `kalliope.sqlite`: det komplette SQLite-indeks fra samme static-build.
+  JSON-repræsentation, normaliseret fuldtekst, førstelinje, datoer,
+  fodnoteindikator, kildesider og relationer.
 
 `id`, `poet_id`, `work_id`, `canonical_text_id`, `canonical_url` og `api_url`
 udgør sammen med de dokumenterede posttyper den offentlige v1-kontrakt.
@@ -44,9 +44,14 @@ datasætkontrakt.
 ## Validering og brug
 
 `schema.json` beskriver de tre JSONL-posttyper. `README.md` i datasættet viser
-streaming med `gzip`, opslag via id-felter og fuldtekstsøgning i SQLite.
+streaming med `gzip` og `jq`, opslag via id-felter og fuldtekstsøgning uden
+udpakket mellemfil.
 Static-buildet afviser ukendte `poet_id`- og `work_id`-referencer og beregner
 checksums efter alle filer er skrevet.
+
+SQLite er ikke del af det offentlige datasæt. Ved lokale, komplekse relationelle
+audits kan et valgfrit indeks bygges med `make build-sqlite`; se
+`docs/sqlite-index.md`.
 
 Kalliopes software er GPL-2.0. Korpusset består hovedsageligt af public
 domain-tekster, men rettigheder til kilder, redaktionelt materiale, billeder og
