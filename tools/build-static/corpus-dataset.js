@@ -7,9 +7,13 @@ import { loadExternalIdentifiers } from './external-identifiers.js';
 import { poetName } from './formatting.js';
 
 const DATASET_VERSION = 'v1';
-const SCHEMA_VERSION = '1.0.0';
+const SCHEMA_VERSION = '1.1.0';
 const SITE_URL = 'https://kalliope.org';
 const OUTPUT_DIRECTORY = `public/api/${DATASET_VERSION}`;
+const LEGACY_SQLITE_FILES = [
+  'public/api/kalliope.sqlite',
+  `${OUTPUT_DIRECTORY}/kalliope.sqlite`,
+];
 
 const sortById = (records) => records.sort((left, right) =>
   left.id.localeCompare(right.id, 'en')
@@ -70,11 +74,9 @@ const fileDescriptor = (filename, recordType = null) => {
     url: `${SITE_URL}/api/${DATASET_VERSION}/${filename}`,
     media_type: filename.endsWith('.gz')
       ? 'application/x-ndjson+gzip'
-      : filename.endsWith('.sqlite')
-        ? 'application/vnd.sqlite3'
-        : filename.endsWith('.md')
-          ? 'text/markdown'
-          : 'application/json',
+      : filename.endsWith('.md')
+        ? 'text/markdown'
+        : 'application/json',
     bytes: fs.statSync(absolutePath).size,
     sha256: checksum(absolutePath),
     record_type: recordType,
@@ -125,6 +127,22 @@ const schema = {
         canonical_url: { type: 'string', format: 'uri' },
         api_url: { type: 'string', format: 'uri' },
         full_text: { type: 'string' },
+        firstline: { type: 'string' },
+        events: {
+          type: 'array',
+          items: {
+            type: 'object',
+            required: ['type', 'date'],
+            properties: {
+              type: { enum: ['written', 'performed', 'event'] },
+              date: { type: 'string' },
+            },
+            additionalProperties: false,
+          },
+        },
+        has_footnotes: { type: 'boolean' },
+        footnotes_count: { type: 'integer', minimum: 0 },
+        source_pages: { type: 'string' },
       },
       additionalProperties: true,
     },
@@ -190,14 +208,10 @@ Stream all text records without unpacking the file first:
 gzip -dc texts.jsonl.gz | while IFS= read -r record; do printf '%s\\n' "$record"; done
 \`\`\`
 
-Search normalized full text in SQLite:
+Search normalized full text while streaming the compressed file:
 
-\`\`\`sql
-SELECT t.text_id, t.title
-FROM text AS t
-JOIN text_content AS c ON c.text_id = t.text_id
-WHERE c.normalized_text LIKE '%hav%'
-ORDER BY t.text_id;
+\`\`\`sh
+gzip -dc texts.jsonl.gz | jq -c 'select(.full_text | contains("hav"))'
 \`\`\`
 
 ## Versioning, selection, and reuse
@@ -249,6 +263,22 @@ const buildWorkRecords = (collected) => sortById(
   })
 );
 
+const buildTextAuditFields = (textMeta, textData, source) => ({
+  firstline: textMeta.firstline,
+  events: ['written', 'performed', 'event'].flatMap((type) => {
+    const date = textMeta.dates?.[type];
+    if (typeof date !== 'string' || date.trim().length === 0) {
+      return [];
+    }
+    return [{ type, date: date.trim() }];
+  }),
+  has_footnotes:
+    textData.text?.has_footnotes === true ||
+    textData.text?.has_footnotes === 1,
+  footnotes_count: textData.text?.footnotes_count ?? 0,
+  source_pages: source.pages,
+});
+
 const buildTextRecords = (collected) => sortById(
   Array.from(collected.texts.values())
     .filter(text => text.indexable !== false)
@@ -273,6 +303,7 @@ const buildTextRecords = (collected) => sortById(
         full_text: normalizedFullText(textData.text ?? {}),
         keywords: textData.text?.keywords ?? [],
         source,
+        ...buildTextAuditFields(textMeta, textData, source),
         canonical_text_id: textMeta.canonicalTextId ?? textMeta.id,
         source_poet_id: textMeta.sourcePoetId,
         source_work_id: textMeta.sourceWorkId,
@@ -316,10 +347,9 @@ const validateRecordShapes = (poets, works, texts) => {
 
 const buildCorpusDataset = (collected, { builtAt = new Date().toISOString() } = {}) => {
   fs.mkdirSync(OUTPUT_DIRECTORY, { recursive: true });
-  const sqliteSource = 'public/api/kalliope.sqlite';
-  if (fs.existsSync(sqliteSource) === false || fs.statSync(sqliteSource).size === 0) {
-    throw new Error('Korpusdatasættet kræver en gyldig public/api/kalliope.sqlite.');
-  }
+  LEGACY_SQLITE_FILES.forEach((filename) => {
+    fs.rmSync(filename, { force: true });
+  });
 
   const poets = buildPoetRecords(collected);
   const works = buildWorkRecords(collected);
@@ -330,7 +360,6 @@ const buildCorpusDataset = (collected, { builtAt = new Date().toISOString() } = 
   writeGzipJsonLines(`${OUTPUT_DIRECTORY}/poets.jsonl.gz`, poets);
   writeGzipJsonLines(`${OUTPUT_DIRECTORY}/works.jsonl.gz`, works);
   writeGzipJsonLines(`${OUTPUT_DIRECTORY}/texts.jsonl.gz`, texts);
-  fs.copyFileSync(sqliteSource, `${OUTPUT_DIRECTORY}/kalliope.sqlite`);
   fs.writeFileSync(`${OUTPUT_DIRECTORY}/schema.json`, `${JSON.stringify(schema, null, 2)}\n`);
   fs.writeFileSync(`${OUTPUT_DIRECTORY}/README.md`, readme);
 
@@ -338,7 +367,6 @@ const buildCorpusDataset = (collected, { builtAt = new Date().toISOString() } = 
     fileDescriptor('poets.jsonl.gz', 'poet'),
     fileDescriptor('works.jsonl.gz', 'work'),
     fileDescriptor('texts.jsonl.gz', 'text'),
-    fileDescriptor('kalliope.sqlite'),
     fileDescriptor('schema.json'),
     fileDescriptor('README.md'),
   ];
@@ -371,6 +399,7 @@ const buildCorpusDataset = (collected, { builtAt = new Date().toISOString() } = 
 export {
   buildCorpusDataset,
   buildPoetRecords,
+  buildTextAuditFields,
   buildTextRecords,
   buildWorkRecords,
   deterministicGzip,
