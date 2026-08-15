@@ -7,6 +7,8 @@ const sortableYear = (year) => {
   return result;
 };
 
+const workSortDate = (work) => work.year ?? work.published;
+
 const sortWorks = (poet, works) => {
   if (poet.id === 'bibel') {
     return [...works];
@@ -24,8 +26,10 @@ const sortWorks = (poet, works) => {
       if (rankDifference !== 0) {
         return rankDifference;
       } else {
-        const aKey = a.year == null ? a.title : sortableYear(a.year) + a.id;
-        const bKey = b.year == null ? b.title : sortableYear(b.year) + b.id;
+        const aDate = workSortDate(a);
+        const bDate = workSortDate(b);
+        const aKey = aDate == null ? a.title : sortableYear(aDate) + a.id;
+        const bKey = bDate == null ? b.title : sortableYear(bDate) + b.id;
         return aKey > bKey ? 1 : -1;
       }
     });
