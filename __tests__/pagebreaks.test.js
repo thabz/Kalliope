@@ -173,7 +173,7 @@ const collectPageBreakIssues = (filename, xml) => {
         issues.push(
           `${filename}: text ${textId} has an uninterpretable pages value: ${pages}.`
         );
-      } else if (pageBreakCount > 0) {
+      } else if (pageBreakCount > 0 && !ignorePageBreakCount) {
         issues.push(
           `${filename}: text ${textId} has ${pageBreakCount} <pb> elements, but no simple pages interval.`
         );
@@ -324,9 +324,22 @@ En linje fort<pb n="14" facs="021.jpg"/>sætter</poetry></body>
       '<text id="digter1900a" ignore-tests="pagebreak-count">',
       '<text id="digter1900a">'
     );
+    const unpaginatedException = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Digte</title><year>1900</year><pagebreaks/></workhead>
+        <workbody>
+          <text id="digter1900a" ignore-tests="pagebreak-count">
+            <head><firstline>Første linje</firstline><source facsimile-pages="8-9"/></head>
+            <body><poetry>Første linje
+<pb facs="008.jpg"/>Anden linje</poetry></body>
+          </text>
+        </workbody>
+      </kalliopework>
+    `;
 
     expect(collectPageBreakIssues('text.xml', textException)).toEqual([]);
     expect(collectPageBreakIssues('work.xml', workException)).toEqual([]);
+    expect(collectPageBreakIssues('unpaginated.xml', unpaginatedException)).toEqual([]);
   });
 
   it('rejects page breaks in a text whose source covers one page', () => {
