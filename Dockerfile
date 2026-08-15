@@ -46,7 +46,7 @@ CMD ["npm", "start"]
 FROM runtime AS static-builder
 
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends git && \
+    apt-get install -y --no-install-recommends git sqlite3 && \
     git config --global --add safe.directory /app && \
     rm -rf /var/lib/apt/lists/*
 

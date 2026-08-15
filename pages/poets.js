@@ -114,8 +114,26 @@ const groupsByYear = (poets, lang, country) => {
   return sortedGroups.sort(Sorting.poetYearSectionsByTitle);
 };
 
+const groupsByLiteraryPeriod = (periods, lang, country) => {
+  return periods
+    .filter(
+      period => period.countries.includes(country)
+    )
+    .map((period) => {
+      const items = period.poets
+        .filter((poet) => poet.country === country)
+        .filter((poet) => poet.type === 'poet')
+        .sort(Sorting.poetsByLastnameForCountry(country));
+      return {
+        title: period.title[lang] ?? period.title.da,
+        items,
+      };
+    })
+    .filter((period) => period.items.length > 0);
+};
+
 const Poets = (props) => {
-  const { country, poets, groupBy, error } = props;
+  const { country, poets, periods, groupBy, error } = props;
   const lang = useContext(LangContext);
 
   if (error) {
@@ -134,11 +152,18 @@ const Poets = (props) => {
       title: _('Efter år', lang),
       url: Links.poetsURL(lang, 'year', country),
     },
+    {
+      id: 'period',
+      title: _('Efter litterær periode', lang),
+      url: Links.poetsURL(lang, 'period', country),
+    },
   ];
   const groups =
     groupBy === 'name'
       ? groupsByLetter(poets, lang, country)
-      : groupsByYear(poets, lang, country);
+      : groupBy === 'year'
+        ? groupsByYear(poets, lang, country)
+        : groupsByLiteraryPeriod(periods, lang, country);
 
   let sections = [];
 
@@ -189,13 +214,20 @@ const Poets = (props) => {
         )}{' '}
         {nonDanishNote}
       </PageLead>
-    ) : (
+    ) : groupBy === 'year' ? (
       <PageLead>
         {_(
           'De {adjective} digtere på Kalliope ordnet efter fødselsår. Oversigten giver et kronologisk indblik i samlingens forfattere.',
           lang,
           { adjective }
         )}{' '}
+        {nonDanishNote}
+      </PageLead>
+    ) : (
+      <PageLead>
+        {_('De {adjective} digtere på Kalliope grupperet efter litterær periode.', lang, {
+          adjective,
+        })}{' '}
         {nonDanishNote}
       </PageLead>
     );
@@ -215,20 +247,33 @@ const Poets = (props) => {
         countryToURL={countryCodeToURL}
         selectedCountry={country}
       />
-      {renderedGroups}
+      <div className="poets-overview">
+        {renderedGroups}
+      </div>
+      <style jsx>{`
+        :global(.poets-overview a) {
+          text-decoration: none;
+        }
+      `}</style>
     </Page>
   );
 };
 
 Poets.getInitialProps = async ({ query: { lang, country, groupBy } }) => {
-  const json = await Client.poets(country);
+  const json =
+    groupBy === 'period'
+      ? await Client.literaryPeriods()
+      : await Client.poets(country);
   return {
     lang,
     country,
     groupBy,
     poets: json.poets == null ? null : json.poets.map(poetListItem),
+    periods: json.periods ?? null,
     error: json.error,
   };
 };
+
+export { groupsByLiteraryPeriod };
 
 export default Poets;

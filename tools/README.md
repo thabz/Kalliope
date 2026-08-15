@@ -45,6 +45,35 @@ npm run report-ocr-candidates
 npm run report-ocr-candidates -- fdirs/digter/vaerk.xml
 ```
 
+### Tekstkvalitetskontrol
+
+`check-text-quality` kører alle tekstkvalitetskontroller (OCR-kandidater + linje-regler) i én kommando og returnerer et stabilt output.
+
+```sh
+npm run check-text-quality
+npm run check-text-quality -- fdirs/digter/vaerk.xml
+```
+
+Med JSON-output:
+
+```sh
+node tools/check-text-quality.js --json
+```
+
+Kontrollen kan afgrænses til tekster fra en bestemt dato og til værker med en
+PDF-facsimile som kilde:
+
+```sh
+npm run check-text-quality -- --min-date 2018-01-01
+npm run check-text-quality -- --facsimile-only
+npm run check-text-quality -- --min-date=2018-01-01 --facsimile-only
+```
+
+`--min-date` medtager tekster, hvis datoen i tekst-id'et er lig med eller senere
+end den angivne dato. Tekst-id'er uden en gyldig dato medtages ikke. Datoen i et
+id som `winther2018081001` er `2018-08-10`. `--facsimile-only` medtager kun
+værkfiler, hvor mindst én `<source>` refererer til en fil med endelsen `.pdf`.
+
 ### Salmonsen-biografier
 
 `report-salmonsen-biographies.js` viser fremdriften for biografier til

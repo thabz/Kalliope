@@ -6,6 +6,17 @@ portraits. Portrætter kan også genbruges fra andre XML-filer via `portrait="di
 
 Se også `docs/style-guide.md` for de generelle regler om billedplacering og GitHub-sprog.
 
+## Formatteringsregel
+
+Kør den fælles metadataformatter efter ændringer i `portraits.xml`:
+
+```sh
+node tools/format-metadata-xml.js fdirs/<id>/portraits.xml
+```
+
+Testpakken håndhæver formatterens output for alle versionsstyrede `portraits.xml`.
+Den samme formatter og kontrol gælder `artwork.xml`.
+
 ## Grundstruktur
 
 ```xml
@@ -151,6 +162,37 @@ Regler:
 - Det første fundne `square-src` bruges.
 - `square-src` er en manuelt beskåret kvadratisk fil, fx `p1-square.jpg`, på
   højst 600 × 600 px.
+
+## Standard for beskæring af portrætter til runde ikoner
+
+Beskær altid portrættet til et **kvadrat**, men optimer beskæringen til den
+**indskrevne cirkel**, da billedet vises som et rundt ikon.
+
+* **Ansigtet skal være hovedmotivet** og være tydeligt læsbart også i lille
+  størrelse.
+* Beskær **relativt stramt**, så hoved og ansigt fylder godt i cirklen.
+* **Hele ansigtet, hårtop og hage** skal være synlige inden for den indskrevne
+  cirkel.
+* **Øjnene placeres lidt over midten**, typisk ca. **40–45 % nede fra toppen**
+  af kvadratet.
+* Medtag gerne lidt **hals og skuldre**, men undgå så meget torso eller baggrund,
+  at ansigtet virker lille.
+* Bevar en **naturlig portrætkomposition**; motivet behøver ikke være matematisk
+  centreret, hvis en let asymmetri giver et bedre resultat.
+* Prioritér motivets placering efter **cirklens synlige flade**, ikke efter
+  kvadratets hjørner.
+* Undgå beskæringer med **for meget tom baggrund**, **for lille ansigt** eller
+  **for tæt udsnit**, hvor hår eller hage presses mod kanten.
+
+### Prioritet
+
+Ved tvivl prioriteres i denne rækkefølge:
+
+1. Tydeligt og genkendeligt ansigt i rund visning
+2. Hele ansigtet synligt inden for cirklen
+3. Passende hovedstørrelse
+4. Naturlig komposition
+5. Hals og skuldre som sekundære elementer
 
 Eksempel:
 
