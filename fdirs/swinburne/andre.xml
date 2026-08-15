@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="andre" author="swinburne" status="incomplete" type="poetry">
 <workhead>
-   <title>Andre digte</title>
-   <quality>korrektur1</quality>
+  <title>Andre digte</title>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
 <text id="swinburne2017100701">
 <head>
-   <title>Evening on the Broads</title>
-   <firstline>Over two shadowless waters, adrift as a pinnace in peril</firstline>
-   <notes>
-       <note>Teksten følger <i>The Poems of Algernon Charles Swinburne</i>, 6 volumes, London: Chatto &amp; Windus, 1904. V, pp. 59-67.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Evening on the Broads</title>
+  <firstline>Over two shadowless waters, adrift as a pinnace in peril</firstline>
+  <source pages="59-67"><i>The Poems of Algernon Charles Swinburne</i>, 6 volumes, London: Chatto &amp; Windus, 1904. V.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -163,9 +161,9 @@ But a sense of the sound of it alway, a spirit unsleeping and deathless,
 
 <text id="swinburne2018011801">
 <head>
-   <title>A Ballad of Burdens</title>
-   <firstline>The burden of fair women. Vain delight</firstline>
-   <quality>korrektur1</quality>
+  <title>A Ballad of Burdens</title>
+  <firstline>The burden of fair women. Vain delight</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -262,8 +260,8 @@ This is the end of every man's desire.
 
 <text id="swinburne2019090901">
 <head>
-    <title>A Ballad of Dreamland</title>
-    <firstline>I hid my heart in a nest of roses</firstline>
+  <title>A Ballad of Dreamland</title>
+  <firstline>I hid my heart in a nest of roses</firstline>
 </head>
 <body>
 <poetry>
@@ -299,8 +297,8 @@ Only the song of a secret bird.
 
 <text id="swinburne2019090902">
 <head>
-    <title>A Forsaken Garden</title>
-    <firstline>In a coign of the cliff between lowland and highland</firstline>
+  <title>A Forsaken Garden</title>
+  <firstline>In a coign of the cliff between lowland and highland</firstline>
 </head>
 <body>
 <poetry>
@@ -399,13 +397,13 @@ As a god self-slain on his own strange altar,
 
 <text id="swinburne2019090903">
 <head>
-    <title>The Last Oracle</title>
-    <subtitle>(A.D. 361)</subtitle>
-    <firstline>Years have risen and fallen in darkness or in twilight</firstline>
-    <!-- TODO: Indsæt græsk motto:
-         eipate tô basilêi, chamai pese daidalos aula;
-         ouketi Phoibos echei kaluban, ou mantida daphnên,
-         ou pagan laleousan; apesbeto kai lalon hudôr. -->
+  <title>The Last Oracle</title>
+  <subtitle>(A.D. 361)</subtitle>
+  <firstline>Years have risen and fallen in darkness or in twilight</firstline>
+  <!-- TODO: Indsæt græsk motto:
+  eipate tô basilêi, chamai pese daidalos aula;
+  ouketi Phoibos echei kaluban, ou mantida daphnên,
+  ou pagan laleousan; apesbeto kai lalon hudôr. -->
 </head>
 <body>
 <poetry>
@@ -564,8 +562,8 @@ Light of eyes that saw thy light, God, king, priest, poet,
 
 <text id="swinburne2019090904">
 <head>
-    <title>At Parting</title>
-    <firstline>For a day and a night Love sang to us, played with us</firstline>
+  <title>At Parting</title>
+  <firstline>For a day and a night Love sang to us, played with us</firstline>
 </head>
 <body>
 <poetry>
@@ -595,8 +593,8 @@ Now let him pass, and the myrtles make way for us;
 
 <text id="swinburne2019090905">
 <head>
-    <title>A Match</title>
-    <firstline>If love were what the rose is</firstline>
+  <title>A Match</title>
+  <firstline>If love were what the rose is</firstline>
 </head>
 <body>
 <poetry>
@@ -659,8 +657,8 @@ If you were queen of pleasure,
 
 <text id="swinburne2019091201">
 <head>
-    <title>Genesis</title>
-    <firstline>In the outer world that was before this earth</firstline>
+  <title>Genesis</title>
+  <firstline>In the outer world that was before this earth</firstline>
 </head>
 <body>
 <poetry>
@@ -749,8 +747,8 @@ So shall a man be after among the dead.
 
 <text id="swinburne2019091202">
 <head>
-    <title>The Pilgrims</title>
-    <firstline>Who is your lady of love, O ye that pass</firstline>
+  <title>The Pilgrims</title>
+  <firstline>Who is your lady of love, O ye that pass</firstline>
 </head>
 <body>
 <poetry>
@@ -858,9 +856,9 @@ That all men born are mortal, but not man:
 
 <text id="swinburne2019091203">
 <head>
-    <title>Hymn to Proserpine</title>
-    <subtitle>(After the Proclamation in Rome of the Christian Faith)</subtitle>
-    <firstline>I have lived long enough, having seen one thing, that love hath an end</firstline>
+  <title>Hymn to Proserpine</title>
+  <subtitle>(After the Proclamation in Rome of the Christian Faith)</subtitle>
+  <firstline>I have lived long enough, having seen one thing, that love hath an end</firstline>
 </head>
 <body>
 <poetry>
@@ -982,8 +980,8 @@ For there is no God found stronger than death; and death is a sleep.
 
 <text id="swinburne2019091204">
 <head>
-    <title>A Leave-Taking</title>
-    <firstline>Let us go hence, my songs; she will not hear</firstline>
+  <title>A Leave-Taking</title>
+  <firstline>Let us go hence, my songs; she will not hear</firstline>
 </head>
 <body>
 <poetry>
@@ -1040,8 +1038,8 @@ Nay, and though all men seeing had pity on me,
 
 <text id="swinburne2022052201">
 <head>
-    <title>Chorus of Atalanta in Calydon</title>
-    <firstline>We have seen thee, O Love, thou art fair; thou art goodly, O Love</firstline>
+  <title>Chorus of Atalanta in Calydon</title>
+  <firstline>We have seen thee, O Love, thou art fair; thou art goodly, O Love</firstline>
 </head>
 <body>
 <poetry>

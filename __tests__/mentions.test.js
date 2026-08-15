@@ -1,15 +1,16 @@
 jest.mock('../tools/libs/caching.js', () => ({
-  isFileModified: () => false,
-  loadCachedJSON: () => null,
-  writeCachedJSON: () => {},
+  isFileModified: jest.fn(() => false),
+  loadCachedJSON: jest.fn(() => null),
+  writeCachedJSON: jest.fn(),
   force_reload: false,
 }));
 
 jest.mock('../tools/libs/helpers.js', () => ({
   safeMkdir: () => {},
   writeJSON: jest.fn(),
+  removeFile: jest.fn(),
   htmlToXml: (html) => html,
-  fileExists: () => false,
+  fileExists: jest.fn(() => false),
 }));
 
 jest.mock('../tools/build-static/xml.js', () => ({
@@ -24,10 +25,20 @@ jest.mock('../tools/build-static/xml.js', () => ({
   safeGetInnerXML: () => '',
 }));
 
-import { writeJSON } from '../tools/libs/helpers.js';
 import {
+  fileExists,
+  removeFile,
+  writeJSON,
+} from '../tools/libs/helpers.js';
+import {
+  loadCachedJSON,
+  writeCachedJSON,
+} from '../tools/libs/caching.js';
+import {
+  build_person_or_keyword_refs,
   build_mentions_data,
   build_mentions_json,
+  collectPersonOrKeywordRefs,
 } from '../tools/build-static/mentions.js';
 
 const poet = (id, firstname, lastname) => ({
@@ -52,6 +63,15 @@ const work = (id, year) => ({
 });
 
 describe('mentions data', () => {
+  beforeEach(() => {
+    fileExists.mockReturnValue(false);
+    removeFile.mockClear();
+    writeJSON.mockClear();
+    loadCachedJSON.mockReset();
+    loadCachedJSON.mockReturnValue(null);
+    writeCachedJSON.mockClear();
+  });
+
   const buildCollected = () => {
     const reboul = poet('reboul', 'Jean', 'Reboul');
     const aarestrup = poet('aarestrup', 'Emil', 'Aarestrup');
@@ -110,6 +130,61 @@ describe('mentions data', () => {
     };
   };
 
+  it('produces unchanged person refs when only source whitespace changes', () => {
+    const entries = [
+      {
+        toKey: 'bango',
+        fromPoemId: 'aarestrup2001061401',
+        type: 'mention',
+      },
+    ];
+    const before = collectPersonOrKeywordRefs(
+      new Map([['fdirs/aarestrup/1863.xml', entries]])
+    );
+    const after = collectPersonOrKeywordRefs(
+      new Map([['fdirs/aarestrup/1863.xml', [...entries]]])
+    );
+
+    expect(after).toEqual(before);
+  });
+
+  it('removes stale person refs with the modified source file', () => {
+    const refs = collectPersonOrKeywordRefs(
+      new Map([['fdirs/aarestrup/1863.xml', []]])
+    );
+
+    expect(refs.has('bango')).toBe(false);
+  });
+
+  it('indsamler refs fra et nyt værk, selv om filen er uændret', () => {
+    loadCachedJSON.mockImplementation((key) => {
+      if (key === 'collected.person_or_keyword_refs') {
+        return [];
+      }
+      if (key === 'collected.person_or_keyword_refs_by_file') {
+        return [['fdirs/aarestrup/1863.xml', []]];
+      }
+      return null;
+    });
+    fileExists.mockReturnValue(true);
+    const collected = {
+      workids: new Map([
+        ['aarestrup', ['1863', 'ny-samling']],
+      ]),
+      texts: new Map(),
+      unlistedWorkFiles: [],
+    };
+
+    build_person_or_keyword_refs(collected);
+
+    expect(writeCachedJSON).toHaveBeenCalledWith(
+      'collected.person_or_keyword_refs_by_file',
+      expect.arrayContaining([
+        ['fdirs/aarestrup/ny-samling.xml', []],
+      ])
+    );
+  });
+
   it('viser oversættelser fra den primære variant', () => {
     const collected = buildCollected();
     const data = build_mentions_data(
@@ -161,5 +236,20 @@ describe('mentions data', () => {
         ]),
       })
     );
+  });
+
+  it('fjerner forældet mentions-json uden henvisninger', () => {
+    const collected = buildCollected();
+    collected.poets.get('reboul').has_mentions = false;
+    fileExists.mockImplementation(
+      filename => filename === 'public/api/reboul/mentions.json'
+    );
+
+    build_mentions_json(collected);
+
+    expect(removeFile).toHaveBeenCalledWith(
+      'public/api/reboul/mentions.json'
+    );
+    expect(writeJSON).not.toHaveBeenCalled();
   });
 });

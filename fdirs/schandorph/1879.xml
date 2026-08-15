@@ -1,28 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1879" author="schandorph" status="complete" type="poetry">
+<kalliopework id="1879" author="schandorph" status="complete" type="poetry" ignore-tests="mixed-aa-circumflex,single-circumflex-a-in-text">
 <workhead>
-    <title>Unge Dage</title>
-    <year>1879</year>
-    <notes>
-        <note>Teksten følger Sophus Schandorph: <i>Unge Dage</i>, 2. oplag, C. A. Reitzels Forlag, Kbh., 1879.</note>
-        <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
-    </notes>
-    <pictures>
-        <picture src="1879-p1.jpg">Titelbladet til <i>Unge Dage</i> (1879) lyder ,,Unge Dage. / Fortælling paa Vers / af / S. Schandorph. // Andet Oplag. // Kjøbenhavn / C. A. Reitzels Forlag. / 1879.''.</picture>
-    </pictures>
-    <source facsimile="115408004919_color.pdf" facsimile-pages-num="242" facsimile-pages-offset="6">Sophus Schandorph: <i>Unge Dage</i>, 2. oplag, C. A. Reitzels Forlag, Kbh., 1879.</source>
+  <title>Unge Dage</title>
+  <year>1879</year>
+  <notes>
+    <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
+  </notes>
+  <pictures>
+    <picture src="1879-p1.jpg">Titelbladet til <i>Unge Dage</i> (1879) lyder ,,Unge Dage. / Fortælling paa Vers / af / S. Schandorph. // Andet Oplag. // Kjøbenhavn / C. A. Reitzels Forlag. / 1879.''.</picture>
+  </pictures>
+  <source facsimile="115408004919_color.pdf" facsimile-pages-num="242" facsimile-pages-offset="6">Sophus Schandorph: <i>Unge Dage</i>, 2. oplag, C. A. Reitzels Forlag, Kbh., 1879.</source>
 </workhead>
 <workbody>
 
 <text id="schandorph2018080301">
 <head>
-    <title><num>1. Sang</num>Den gamle og den unge Krage</title>
-    <toctitle><num>1. Sang</num>Den gamle og den unge Krage</toctitle>
-    <indextitle>Den gamle og den unge Krage</indextitle>
-    <linktitle>Den gamle og den unge Krage</linktitle>
-    <firstline>Det kan vel ligge tyve Aar tilbage</firstline>
-    <source pages="5-11"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>1. Sang</num>Den gamle og den unge Krage</title>
+  <toctitle><num>1. Sang</num>Den gamle og den unge Krage</toctitle>
+  <indextitle>Den gamle og den unge Krage</indextitle>
+  <linktitle>Den gamle og den unge Krage</linktitle>
+  <firstline>Det kan vel ligge tyve Aar tilbage</firstline>
+  <source pages="5-11"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -174,13 +173,13 @@ og slumred ind saa rolig som en Gud.
 
 <text id="schandorph2018080302">
 <head>
-    <title><num>2. Sang</num>Skandalen</title>
-    <toctitle><num>2. Sang</num>Skandalen</toctitle>
-    <indextitle>Skandalen</indextitle>
-    <linktitle>Skandalen</linktitle>
-    <firstline>Salen glimrede de tændte Kroner</firstline>
-    <source pages="12-17"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>2. Sang</num>Skandalen</title>
+  <toctitle><num>2. Sang</num>Skandalen</toctitle>
+  <indextitle>Skandalen</indextitle>
+  <linktitle>Skandalen</linktitle>
+  <firstline>Salen glimrede de tændte Kroner</firstline>
+  <source pages="12-17"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -197,7 +196,7 @@ Man flokkes om ham, man anticiperer
 den store Nydelse med henrykt Sind;
 kun en af Vinen døsig, ung Grosserer
 i Sofahjørnet sagte slumrer ind.
-Skoflikkeren, der Mollberg gav ,,på truten'',
+Skoflikkeren, der Mollberg gav ,,<span lang="sv">på truten</span>'',
 fordi han spillede den polske Dans,
 blev foredragen med en Elegans,
 en let Hengliden, saa at paa Minuten
@@ -324,13 +323,13 @@ at muntre ham - men da var Fuglen fløjet.
 
 <text id="schandorph2018080303">
 <head>
-    <title><num>3. Sang</num>Første Rejseæventyr</title>
-    <toctitle><num>3. Sang</num>Første Rejseæventyr</toctitle>
-    <indextitle>Første Rejseæventyr</indextitle>
-    <linktitle>Første Rejseæventyr</linktitle>
-    <firstline>Hvor bar ham rask afsted hans unge Fod!</firstline>
-    <source pages="18-24"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>3. Sang</num>Første Rejseæventyr</title>
+  <toctitle><num>3. Sang</num>Første Rejseæventyr</toctitle>
+  <indextitle>Første Rejseæventyr</indextitle>
+  <linktitle>Første Rejseæventyr</linktitle>
+  <firstline>Hvor bar ham rask afsted hans unge Fod!</firstline>
+  <source pages="18-24"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -488,14 +487,14 @@ dèr véd jeg da, De har to friske Roser.''
 
 <text id="schandorph2018080304">
 <head>
-    <title><num>4. Sang</num>Fortsættelse. Gammeldags Romantik.</title>
-    <toctitle><num>4. Sang</num>Fortsættelse. Gammeldags Romantik.</toctitle>
-    <indextitle>Fortsættelse. Gammeldags Romantik.</indextitle>
-    <linktitle>Fortsættelse. Gammeldags Romantik.</linktitle>
-    <firstline>Hver Dag randt hen, som om det var en Fest</firstline>
-    <source pages="25-35"/>
-    <keywords>oehlenschlaeger</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>4. Sang</num>Fortsættelse. Gammeldags Romantik.</title>
+  <toctitle><num>4. Sang</num>Fortsættelse. Gammeldags Romantik.</toctitle>
+  <indextitle>Fortsættelse. Gammeldags Romantik.</indextitle>
+  <linktitle>Fortsættelse. Gammeldags Romantik.</linktitle>
+  <firstline>Hver Dag randt hen, som om det var en Fest</firstline>
+  <source pages="25-35"/>
+  <keywords>oehlenschlaeger</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -752,13 +751,13 @@ og trykked Panden mod det vaade Græs.
 
 <text id="schandorph2018080305">
 <head>
-    <title><num>5. Sang</num>Moderne Realisme</title>
-    <toctitle><num>5. Sang</num>Moderne Realisme</toctitle>
-    <indextitle>Moderne Realisme</indextitle>
-    <linktitle>Moderne Realisme</linktitle>
-    <firstline>Mekanisk drog han hjem. Hans Fader skammed</firstline>
-    <source pages="36-41"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>5. Sang</num>Moderne Realisme</title>
+  <toctitle><num>5. Sang</num>Moderne Realisme</toctitle>
+  <indextitle>Moderne Realisme</indextitle>
+  <linktitle>Moderne Realisme</linktitle>
+  <firstline>Mekanisk drog han hjem. Hans Fader skammed</firstline>
+  <source pages="36-41"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -906,13 +905,13 @@ og - lægge vaade Klude paa hans Øje.
 
 <text id="schandorph2018080306">
 <head>
-    <title><num>6. Sang</num>Æneas og Dido i ny Stil</title>
-    <toctitle><num>6. Sang</num>Æneas og Dido i ny Stil</toctitle>
-    <indextitle>Æneas og Dido i ny Stil</indextitle>
-    <linktitle>Æneas og Dido i ny Stil</linktitle>
-    <firstline>Hvorfor er Du saa kjedelig og gnaven</firstline>
-    <source pages="42-49"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>6. Sang</num>Æneas og Dido i ny Stil</title>
+  <toctitle><num>6. Sang</num>Æneas og Dido i ny Stil</toctitle>
+  <indextitle>Æneas og Dido i ny Stil</indextitle>
+  <linktitle>Æneas og Dido i ny Stil</linktitle>
+  <firstline>Hvorfor er Du saa kjedelig og gnaven</firstline>
+  <source pages="42-49"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1095,14 +1094,14 @@ med Fredens milde Smil paa Læben staa:
 
 <text id="schandorph2018080307">
 <head>
-    <title><num>7. Sang</num>Hjemkomst</title>
-    <toctitle><num>7. Sang</num>Hjemkomst</toctitle>
-    <indextitle>Hjemkomst</indextitle>
-    <linktitle>Hjemkomst</linktitle>
-    <firstline>Med en fortrolig Ven, Etatsraad Løve</firstline>
-    <source pages="50-54"/>
-    <keywords>shakespeare</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>7. Sang</num>Hjemkomst</title>
+  <toctitle><num>7. Sang</num>Hjemkomst</toctitle>
+  <indextitle>Hjemkomst</indextitle>
+  <linktitle>Hjemkomst</linktitle>
+  <firstline>Med en fortrolig Ven, Etatsraad Løve</firstline>
+  <source pages="50-54"/>
+  <keywords>shakespeare</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1225,13 +1224,13 @@ Forskjelligt Praktisk <w>jeg</w> skal arrangere.''
 
 <text id="schandorph2018080308">
 <head>
-    <title><num>8. Sang</num>Skridt paa Kunstens Bane</title>
-    <toctitle><num>8. Sang</num>Skridt paa Kunstens Bane</toctitle>
-    <indextitle>Skridt paa Kunstens Bane</indextitle>
-    <linktitle>Skridt paa Kunstens Bane</linktitle>
-    <firstline>Nat, ved Dag han over Bøger ruged</firstline>
-    <source pages="55-64"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>8. Sang</num>Skridt paa Kunstens Bane</title>
+  <toctitle><num>8. Sang</num>Skridt paa Kunstens Bane</toctitle>
+  <indextitle>Skridt paa Kunstens Bane</indextitle>
+  <linktitle>Skridt paa Kunstens Bane</linktitle>
+  <firstline>Nat, ved Dag han over Bøger ruged</firstline>
+  <source pages="55-64"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1468,14 +1467,14 @@ grundet og ledet Aktie-Entreprise!''
 
 <text id="schandorph2018080309">
 <head>
-    <title><num>9. Sang</num>En Prædiken</title>
-    <toctitle><num>9. Sang</num>En Prædiken</toctitle>
-    <indextitle>En Prædiken</indextitle>
-    <linktitle>En Prædiken</linktitle>
-    <firstline>Det var i Skumringen en Vinterdag</firstline>
-    <source pages="65-73"/>
-    <keywords>holberg</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>9. Sang</num>En Prædiken</title>
+  <toctitle><num>9. Sang</num>En Prædiken</toctitle>
+  <indextitle>En Prædiken</indextitle>
+  <linktitle>En Prædiken</linktitle>
+  <firstline>Det var i Skumringen en Vinterdag</firstline>
+  <source pages="65-73"/>
+  <keywords>holberg</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1675,13 +1674,13 @@ De tavse Gader klang af deres Trin.
 
 <text id="schandorph2018080310">
 <head>
-    <title><num>10. Sang</num>Politik. Krig</title>
-    <toctitle><num>10. Sang</num>Politik. Krig</toctitle>
-    <indextitle>Politik. Krig</indextitle>
-    <linktitle>Politik. Krig</linktitle>
-    <firstline>Den ældre Krage havde fattet Had</firstline>
-    <source pages="74-82"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>10. Sang</num>Politik. Krig</title>
+  <toctitle><num>10. Sang</num>Politik. Krig</toctitle>
+  <indextitle>Politik. Krig</indextitle>
+  <linktitle>Politik. Krig</linktitle>
+  <firstline>Den ældre Krage havde fattet Had</firstline>
+  <source pages="74-82"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1887,13 +1886,13 @@ to Hjerter nærmere end mange Aar.
 
 <text id="schandorph2018080311">
 <head>
-    <title><num>11. Sang</num>Kammerater. I Felten</title>
-    <toctitle><num>11. Sang</num>Kammerater. I Felten</toctitle>
-    <indextitle>Kammerater. I Felten</indextitle>
-    <linktitle>Kammerater. I Felten</linktitle>
-    <firstline>Stærkt slingrede den tæt besatte Skude</firstline>
-    <source pages="83-92"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>11. Sang</num>Kammerater. I Felten</title>
+  <toctitle><num>11. Sang</num>Kammerater. I Felten</toctitle>
+  <indextitle>Kammerater. I Felten</indextitle>
+  <linktitle>Kammerater. I Felten</linktitle>
+  <firstline>Stærkt slingrede den tæt besatte Skude</firstline>
+  <source pages="83-92"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2139,15 +2138,15 @@ at der er meget Godt ved Brændevin.''
 </body>
 </text>
 
-<text id="schandorph2018080312">
+<text id="schandorph2018080312" ignore-tests="mixed-aa-circumflex">
 <head>
-    <title><num>12. Sang</num>Paa Vagt. Tilbagetoget</title>
-    <toctitle><num>12. Sang</num>Paa Vagt. Tilbagetoget</toctitle>
-    <indextitle>Paa Vagt. Tilbagetoget</indextitle>
-    <linktitle>Paa Vagt. Tilbagetoget</linktitle>
-    <firstline>Udslidte, gjennemfrosne og forvaagede</firstline>
-    <source pages="93-105"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>12. Sang</num>Paa Vagt. Tilbagetoget</title>
+  <toctitle><num>12. Sang</num>Paa Vagt. Tilbagetoget</toctitle>
+  <indextitle>Paa Vagt. Tilbagetoget</indextitle>
+  <linktitle>Paa Vagt. Tilbagetoget</linktitle>
+  <firstline>Udslidte, gjennemfrosne og forvaagede</firstline>
+  <source pages="93-105"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2464,13 +2463,13 @@ saa faldt han tungt imod den kolde Jord.
 
 <text id="schandorph2018080313">
 <head>
-    <title><num>13. Sang</num>Lazarethet</title>
-    <toctitle><num>13. Sang</num>Lazarethet</toctitle>
-    <indextitle>Lazarethet</indextitle>
-    <linktitle>Lazarethet</linktitle>
-    <firstline>Mens Danmarks Hær veg smertelig tilbage</firstline>
-    <source pages="106-113"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>13. Sang</num>Lazarethet</title>
+  <toctitle><num>13. Sang</num>Lazarethet</toctitle>
+  <indextitle>Lazarethet</indextitle>
+  <linktitle>Lazarethet</linktitle>
+  <firstline>Mens Danmarks Hær veg smertelig tilbage</firstline>
+  <source pages="106-113"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2670,13 +2669,13 @@ og ud af Stuen ilte hun med Hast.
 
 <text id="schandorph2018080314">
 <head>
-    <title><num>14. Sang</num>Tilbageblik</title>
-    <toctitle><num>14. Sang</num>Tilbageblik</toctitle>
-    <indextitle>Tilbageblik</indextitle>
-    <linktitle>Tilbageblik</linktitle>
-    <firstline>Vel fire Aar hun havde gjemt hans Minde</firstline>
-    <source pages="114-128"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>14. Sang</num>Tilbageblik</title>
+  <toctitle><num>14. Sang</num>Tilbageblik</toctitle>
+  <indextitle>Tilbageblik</indextitle>
+  <linktitle>Tilbageblik</linktitle>
+  <firstline>Vel fire Aar hun havde gjemt hans Minde</firstline>
+  <source pages="114-128"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3044,13 +3043,13 @@ og gjorde Tjeneste ved Lazarethet.
 
 <text id="schandorph2018080315">
 <head>
-    <title><num>15. Sang</num>En slagen Kriger</title>
-    <toctitle><num>15. Sang</num>En slagen Kriger</toctitle>
-    <indextitle>En slagen Kriger</indextitle>
-    <linktitle>En slagen Kriger</linktitle>
-    <firstline>Tiden listed sig med Sneglefjed</firstline>
-    <source pages="129-135"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>15. Sang</num>En slagen Kriger</title>
+  <toctitle><num>15. Sang</num>En slagen Kriger</toctitle>
+  <indextitle>En slagen Kriger</indextitle>
+  <linktitle>En slagen Kriger</linktitle>
+  <firstline>Tiden listed sig med Sneglefjed</firstline>
+  <source pages="129-135"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3214,13 +3213,13 @@ i Lille Kongensgade tre og fyrre.''
 
 <text id="schandorph2018080316">
 <head>
-    <title><num>16. Sang</num>Paa Kjælderen</title>
-    <toctitle><num>16. Sang</num>Paa Kjælderen</toctitle>
-    <indextitle>Paa Kjælderen</indextitle>
-    <linktitle>Paa Kjælderen</linktitle>
-    <firstline>Den unge Krage mødte. Lidt forbavset</firstline>
-    <source pages="136-147"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>16. Sang</num>Paa Kjælderen</title>
+  <toctitle><num>16. Sang</num>Paa Kjælderen</toctitle>
+  <indextitle>Paa Kjælderen</indextitle>
+  <linktitle>Paa Kjælderen</linktitle>
+  <firstline>Den unge Krage mødte. Lidt forbavset</firstline>
+  <source pages="136-147"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3513,13 +3512,13 @@ ved Rykket gjennem Gadedørens Karm.
 
 <text id="schandorph2018080317">
 <head>
-    <title><num>17. Sang</num>Debut som Folkedigter</title>
-    <toctitle><num>17. Sang</num>Debut som Folkedigter</toctitle>
-    <indextitle>Debut som Folkedigter</indextitle>
-    <linktitle>Debut som Folkedigter</linktitle>
-    <firstline>Paa Gaden først den unge Krage mærked</firstline>
-    <source pages="148-156"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>17. Sang</num>Debut som Folkedigter</title>
+  <toctitle><num>17. Sang</num>Debut som Folkedigter</toctitle>
+  <indextitle>Debut som Folkedigter</indextitle>
+  <linktitle>Debut som Folkedigter</linktitle>
+  <firstline>Paa Gaden først den unge Krage mærked</firstline>
+  <source pages="148-156"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3752,13 +3751,13 @@ det var hans tredie Fald som Debutant.
 
 <text id="schandorph2018080318">
 <head>
-    <title><num>18. Sang</num>Radikale</title>
-    <toctitle><num>18. Sang</num>Radikale</toctitle>
-    <indextitle>Radikale</indextitle>
-    <linktitle>Radikale</linktitle>
-    <firstline>Men denne Gang han ej var knust og brudt</firstline>
-    <source pages="157-169"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>18. Sang</num>Radikale</title>
+  <toctitle><num>18. Sang</num>Radikale</toctitle>
+  <indextitle>Radikale</indextitle>
+  <linktitle>Radikale</linktitle>
+  <firstline>Men denne Gang han ej var knust og brudt</firstline>
+  <source pages="157-169"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4063,13 +4062,13 @@ var i en Fart han kommen ud ad Døren.
 
 <text id="schandorph2018080319">
 <head>
-    <title><num>19. Sang</num>Socialistfrø</title>
-    <toctitle><num>19. Sang</num>Socialistfrø</toctitle>
-    <indextitle>Socialistfrø</indextitle>
-    <linktitle>Socialistfrø</linktitle>
-    <firstline>Gal leder Blind! ja det er Tidens Pest</firstline>
-    <source pages="170-180"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>19. Sang</num>Socialistfrø</title>
+  <toctitle><num>19. Sang</num>Socialistfrø</toctitle>
+  <indextitle>Socialistfrø</indextitle>
+  <linktitle>Socialistfrø</linktitle>
+  <firstline>Gal leder Blind! ja det er Tidens Pest</firstline>
+  <source pages="170-180"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4348,13 +4347,13 @@ kun Skrueho’der eller Støvlesøm.''
 
 <text id="schandorph2018080320">
 <head>
-    <title><num>20. Sang</num>Nye Planer</title>
-    <toctitle><num>20. Sang</num>Nye Planer</toctitle>
-    <indextitle>Nye Planer</indextitle>
-    <linktitle>Nye Planer</linktitle>
-    <firstline>Det var en Søndag Nat; men Morgenlyset</firstline>
-    <source pages="181-186"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>20. Sang</num>Nye Planer</title>
+  <toctitle><num>20. Sang</num>Nye Planer</toctitle>
+  <indextitle>Nye Planer</indextitle>
+  <linktitle>Nye Planer</linktitle>
+  <firstline>Det var en Søndag Nat; men Morgenlyset</firstline>
+  <source pages="181-186"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4494,13 +4493,13 @@ og vilde straale, naar han længst var død.
 
 <text id="schandorph2018080321">
 <head>
-    <title><num>22. Sang</num>Kristelige Folk</title>
-    <toctitle><num>22. Sang</num>Kristelige Folk</toctitle>
-    <indextitle>Kristelige Folk</indextitle>
-    <linktitle>Kristelige Folk</linktitle>
-    <firstline>Der var en Mand, der nød saa stort et Ry</firstline>
-    <source pages="187-196"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>22. Sang</num>Kristelige Folk</title>
+  <toctitle><num>22. Sang</num>Kristelige Folk</toctitle>
+  <indextitle>Kristelige Folk</indextitle>
+  <linktitle>Kristelige Folk</linktitle>
+  <firstline>Der var en Mand, der nød saa stort et Ry</firstline>
+  <source pages="187-196"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4733,13 +4732,13 @@ for from Velgjørenhed og kristent Sind.
 
 <text id="schandorph2018080322">
 <head>
-    <title><num>22. Sang</num>En kvindelig Tolder</title>
-    <toctitle><num>22. Sang</num>En kvindelig Tolder</toctitle>
-    <indextitle>En kvindelig Tolder</indextitle>
-    <linktitle>En kvindelig Tolder</linktitle>
-    <firstline>Da Krage nu kom hjem og tænkte paa</firstline>
-    <source pages="197-204"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>22. Sang</num>En kvindelig Tolder</title>
+  <toctitle><num>22. Sang</num>En kvindelig Tolder</toctitle>
+  <indextitle>En kvindelig Tolder</indextitle>
+  <linktitle>En kvindelig Tolder</linktitle>
+  <firstline>Da Krage nu kom hjem og tænkte paa</firstline>
+  <source pages="197-204"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4941,13 +4940,13 @@ Slags Toldere, det tilstaar jeg er svært.''
 
 <text id="schandorph2018080323">
 <head>
-    <title><num>23. Sang</num>Paa Havet</title>
-    <toctitle><num>23. Sang</num>Paa Havet</toctitle>
-    <indextitle>Paa Havet</indextitle>
-    <linktitle>Paa Havet</linktitle>
-    <firstline>Alt hylled sig i Disen Stadens Taarne</firstline>
-    <source pages="205-218"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>23. Sang</num>Paa Havet</title>
+  <toctitle><num>23. Sang</num>Paa Havet</toctitle>
+  <indextitle>Paa Havet</indextitle>
+  <linktitle>Paa Havet</linktitle>
+  <firstline>Alt hylled sig i Disen Stadens Taarne</firstline>
+  <source pages="205-218"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5260,13 +5259,13 @@ og Morgenkulden slog om deres Kind.
 
 <text id="schandorph2018080324">
 <head>
-    <title><num>24. Sang</num>Den nye Verden</title>
-    <toctitle><num>24. Sang</num>Den nye Verden</toctitle>
-    <indextitle>Den nye Verden</indextitle>
-    <linktitle>Den nye Verden</linktitle>
-    <firstline>Der var vel femten Mænd og otte Kvinder</firstline>
-    <source pages="219-232"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>24. Sang</num>Den nye Verden</title>
+  <toctitle><num>24. Sang</num>Den nye Verden</toctitle>
+  <indextitle>Den nye Verden</indextitle>
+  <linktitle>Den nye Verden</linktitle>
+  <firstline>Der var vel femten Mænd og otte Kvinder</firstline>
+  <source pages="219-232"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>

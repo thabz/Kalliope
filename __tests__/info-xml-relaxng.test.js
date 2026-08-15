@@ -1,3 +1,4 @@
+import fs from 'fs';
 import { execFileSync } from 'child_process';
 
 const infoXmlFiles = () =>
@@ -6,6 +7,18 @@ const infoXmlFiles = () =>
     .filter(Boolean);
 
 describe('info.xml RELAX NG schema', () => {
+  it('requires literary periods for every poet', () => {
+    const missingLiteraryPeriods = infoXmlFiles().filter(filename => {
+      const xml = fs.readFileSync(filename, 'utf8');
+      const isPoet = /<person\b[^>]*\btype=["']poet["']/.test(xml);
+      const literaryPeriods = xml.match(/<literary-periods>([\s\S]*?)<\/literary-periods>/)?.[1]?.trim();
+
+      return isPoet === true && (literaryPeriods == null || literaryPeriods.length === 0);
+    });
+
+    expect(missingLiteraryPeriods).toEqual([]);
+  });
+
   it('validates all tracked info.xml files', () => {
     const files = infoXmlFiles();
 
@@ -14,7 +27,7 @@ describe('info.xml RELAX NG schema', () => {
     try {
       execFileSync(
         'xmllint',
-        ['--noout', '--relaxng', 'data/info-xml.rng', ...files],
+        ['--noout', '--relaxng', 'schemas/info-xml.rng', ...files],
         { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }
       );
     } catch (error) {

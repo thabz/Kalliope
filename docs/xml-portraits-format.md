@@ -6,6 +6,17 @@ portraits. Portrætter kan også genbruges fra andre XML-filer via `portrait="di
 
 Se også `docs/style-guide.md` for de generelle regler om billedplacering og GitHub-sprog.
 
+## Formatteringsregel
+
+Kør den fælles metadataformatter efter ændringer i `portraits.xml`:
+
+```sh
+node tools/format-metadata-xml.js fdirs/<id>/portraits.xml
+```
+
+Testpakken håndhæver formatterens output for alle versionsstyrede `portraits.xml`.
+Den samme formatter og kontrol gælder `artwork.xml`.
+
 ## Grundstruktur
 
 ```xml
@@ -42,7 +53,7 @@ Attributter:
 - `primary="true"`: markerer portrættet som det primære på biografisiden.
 - `square-src`: kvadratisk fil under `public/images/<id>/`, brugt til social portrait.
 - `year`: år eller årinterval for billedet.
-- `museum`: museums-id fra `data/museums.xml`.
+- `museum`: museums-id fra `content/museums.xml`.
 - `objid`, `invnr`, `wikidata`: bruges til remote museum-link.
 - `clip-path`: CSS clip-path til beskæring.
 
@@ -60,7 +71,7 @@ Et portræt kan pege på et artwork i stedet for at gentage billedmetadata:
 `artwork` har formen:
 
 - `<kunstner-id>/<picture-id>` for `fdirs/<kunstner-id>/artwork.xml`
-- `kunst/<picture-id>` for globale billeder i `data/artwork.xml`
+- `kunst/<picture-id>` for globale billeder i `content/artwork.xml`
 
 Når `artwork` bruges, hentes billedsti, billedtekst, museum, note og kunstnerdata fra
 artwork-posten.
@@ -95,21 +106,19 @@ Den enkle form er tekst direkte i `<picture>`:
 </picture>
 ```
 
-Hvis billedtekst og note skal adskilles, kan man bruge:
+Hvis der skal være interne redaktionelle noter om et portræt, kan de gemmes som XML-kommentarer.
+De skjules for frontend og kan læses i Git, fx:
 
 ```xml
 <picture src="p1.jpg">
   <description>
     Kunstner: <i>Titel</i>, år.
   </description>
-  <picture-note>
-    Ekstra bemærkning om billedet.
-  </picture-note>
+  <!-- Ekstra intern bemærkning om billedet. -->
 </picture>
 ```
 
-Indholdet køres gennem samme inline XML-rendering som andre billedtekster, så fx `<i>`,
-`<a poet="...">` og lignende kan bruges.
+Kommentarer er ikke en del af de renderede billedfelter, så de når ikke ud til brugerne.
 
 ## Museumsdata
 
@@ -127,7 +136,7 @@ Lokale portrætter kan få eksternt museumslink via attributter:
 
 Typiske attributter:
 
-- `museum`: id fra `data/museums.xml`.
+- `museum`: id fra `content/museums.xml`.
 - `objid`: objekt-id hos museet.
 - `invnr`: inventarnummer.
 - `wikidata`: Wikidata-id.
@@ -136,17 +145,54 @@ Remote URL bygges i `tools/build-static/museums.js`.
 
 ## Square portraits
 
-`square-src` bruges til at skabe:
+`square-src` bruges som kilde til et genereret billede:
 
 ```text
 public/images/<id>/social/<id>.jpg
 ```
 
+JPEG-billedet er 600 × 600 px og bruges til Open Graph, Twitter Cards og som
+sideikon i sidens overskrift. Kildebilledet skal derfor være et kvadrat på højst
+600 × 600 px, gemt som JPEG uden overflødige metadata og med anbefalet kvalitet
+omkring 82. Hold kildefilen lille; normalt bør den være under 350 KiB.
+
 Regler:
 
 - Hvis `portraits.xml` findes, skal mindst et billede have `square-src`.
 - Det første fundne `square-src` bruges.
-- `square-src` er normalt en manuelt beskåret kvadratisk fil, fx `p1-square.jpg`.
+- `square-src` er en manuelt beskåret kvadratisk fil, fx `p1-square.jpg`, på
+  højst 600 × 600 px.
+
+## Standard for beskæring af portrætter til runde ikoner
+
+Beskær altid portrættet til et **kvadrat**, men optimer beskæringen til den
+**indskrevne cirkel**, da billedet vises som et rundt ikon.
+
+* **Ansigtet skal være hovedmotivet** og være tydeligt læsbart også i lille
+  størrelse.
+* Beskær **relativt stramt**, så hoved og ansigt fylder godt i cirklen.
+* **Hele ansigtet, hårtop og hage** skal være synlige inden for den indskrevne
+  cirkel.
+* **Øjnene placeres lidt over midten**, typisk ca. **40–45 % nede fra toppen**
+  af kvadratet.
+* Medtag gerne lidt **hals og skuldre**, men undgå så meget torso eller baggrund,
+  at ansigtet virker lille.
+* Bevar en **naturlig portrætkomposition**; motivet behøver ikke være matematisk
+  centreret, hvis en let asymmetri giver et bedre resultat.
+* Prioritér motivets placering efter **cirklens synlige flade**, ikke efter
+  kvadratets hjørner.
+* Undgå beskæringer med **for meget tom baggrund**, **for lille ansigt** eller
+  **for tæt udsnit**, hvor hår eller hage presses mod kanten.
+
+### Prioritet
+
+Ved tvivl prioriteres i denne rækkefølge:
+
+1. Tydeligt og genkendeligt ansigt i rund visning
+2. Hele ansigtet synligt inden for cirklen
+3. Passende hovedstørrelse
+4. Naturlig komposition
+5. Hals og skuldre som sekundære elementer
 
 Eksempel:
 

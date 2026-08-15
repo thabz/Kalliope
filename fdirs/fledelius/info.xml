@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="fledelius" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Jens Christian</firstname>
+    <lastname>Fledelius</lastname>
+    <fullname>Jens Christian Fledelius</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1865-08-08</date>
+      <place>Horsens</place>
+    </born>
+    <dead>
+      <date>1915-12-02</date>
+      <place>Horsens</place>
+    </dead>
+  </period>
+  <literary-periods>dk-halvfemserne-og-symbolismen,dk-tidlig-modernisme</literary-periods>
+  <identifiers>
+    <biografisk-leksikon-lex-dk>Chr._Fledelius</biografisk-leksikon-lex-dk>
+    <danskforfatterleksikon-dk>FChrFledelius</danskforfatterleksikon-dk>
+  </identifiers>
+</person>

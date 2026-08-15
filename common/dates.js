@@ -67,7 +67,7 @@ const parseDate = (date) => {
   return { prefix, year, month, day };
 };
 
-const formattedDate = (date) => {
+const formattedDate = (date, lang = 'da') => {
   if (date == null) {
     return null;
   }
@@ -75,8 +75,11 @@ const formattedDate = (date) => {
 
   let result = null;
 
+  if (prefix != null) {
+    prefix = yearTranslation(lang).circa;
+  }
   if (year < 0) {
-    year = formatYearEra(Math.abs(year), 'bce');
+    year = formatYearEra(Math.abs(year), 'bce', lang);
   }
 
   if (day != null && month != null && year != null) {

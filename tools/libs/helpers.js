@@ -6,6 +6,7 @@ import plimit from 'p-limit';
 import sharp from 'sharp';
 import * as CommonData from '../../common/commondata.js';
 import * as ImagePaths from '../../common/imagepaths.js';
+import { createProgressReporter } from '../build-static/progress.js';
 
 const envInt = (name, fallback) => {
   const value = parseInt(process.env[name], 10);
@@ -29,6 +30,12 @@ const safeMkdir = dirname => {
 
 const fileExists = filename => {
   return fs.existsSync(filename);
+};
+
+const removeFile = filename => {
+  if (fileExists(filename)) {
+    fs.unlinkSync(filename);
+  }
 };
 
 const fileModifiedTime = filename => {
@@ -119,6 +126,18 @@ const replaceDashes = html => {
   );
 };
 
+const splitMultilineLanguageSpans = html =>
+  html.replace(
+    /<span(\s+[^>]*\blang="[^"]+"[^>]*)>([\s\S]*?)<\/span>/g,
+    (_, attributes, content) => {
+      const openingTag = `<span${attributes}>`;
+      return `${openingTag}${content.replaceAll(
+        '\n',
+        `</span>\n${openingTag}`
+      )}</span>`;
+    }
+  );
+
 const htmlToXml = (html, collected, isPoetry) => {
   if (html == null) {
     return null;
@@ -141,25 +160,27 @@ const htmlToXml = (html, collected, isPoetry) => {
       return /^[ \t]+<!--.*?-->[ \t]+$/.test(match) ? ' ' : '';
     })
     .replace(/::NEWLINE-PLACEHOLDER::/g, '\n');
-  let decoded = decodeXmlCharacterReferences(
-    replaceDashes(
-      html
-        .replace(/\n *(----*) *\n/g, (match, p1) => {
-          return `\n<hr width="${p1.length}"/>\n`;
-        })
-        .replace(/\n *(====*) *\n/g, (match, p1) => {
-          return `\n<hr width="${p1.length}" class="double"/>\n`;
-        })
-        .replace(/^( +)/gm, (match, p1) => {
-          return '\u00a0'.repeat(2 * p1.length);
-        })
-        .replace(/^( *[_\*\- ]+ *)$/gm, (match, p1) => {
-          // <nonum> på afskillerlinjer som f.eks. "* * *" eller "___"
-          return `<nonum>${p1}</nonum>`;
-        })
-        .replace(/^\n/, '')
-        .replace(/^ *(<right>.*)$/gm, '$1')
-        .replace(/^ *(<center>.*)$/gm, '$1')
+  let decoded = splitMultilineLanguageSpans(
+    decodeXmlCharacterReferences(
+      replaceDashes(
+        html
+          .replace(/\n *(----*) *\n/g, (match, p1) => {
+            return `\n<hr width="${p1.length}"/>\n`;
+          })
+          .replace(/\n *(====*) *\n/g, (match, p1) => {
+            return `\n<hr width="${p1.length}" class="double"/>\n`;
+          })
+          .replace(/^( +)/gm, (match, p1) => {
+            return '\u00a0'.repeat(2 * p1.length);
+          })
+          .replace(/^( *[_\*\- ]+ *)$/gm, (match, p1) => {
+            // <nonum> på afskillerlinjer som f.eks. "* * *" eller "___"
+            return `<nonum>${p1}</nonum>`;
+          })
+          .replace(/^\n/, '')
+          .replace(/^ *(<right>.*)$/gm, '$1')
+          .replace(/^ *(<center>.*)$/gm, '$1')
+      )
     )
   );
 
@@ -288,12 +309,26 @@ const htmlToXml = (html, collected, isPoetry) => {
   return lines;
 };
 
-const resizeImage = async (inputfile, outputfile, maxWidth) => {
+const resizeImage = async (inputfile, outputfile, maxWidth, options = {}) => {
   try {
-    await sharp(inputfile)
-      .resize({ width: maxWidth, withoutEnlargement: true })
-      .toFile(outputfile);
-    console.log(outputfile);
+    const resizeOptions = {
+      width: maxWidth,
+      withoutEnlargement: true,
+    };
+    if (options.fit != null) {
+      const metadata = await sharp(inputfile).metadata();
+      const squareSize = Math.min(
+        maxWidth,
+        metadata.width ?? maxWidth,
+        metadata.height ?? maxWidth
+      );
+      resizeOptions.width = squareSize;
+      resizeOptions.height = squareSize;
+      resizeOptions.fit = options.fit;
+    }
+    const image = sharp(inputfile).resize(resizeOptions);
+    image.jpeg({ quality: options.quality ?? 82 });
+    await image.toFile(outputfile);
     return outputfile;
   } catch (err) {
     console.log(err);
@@ -322,6 +357,10 @@ const buildThumbnails = async (
   options = {}
 ) => {
   const tasks = [];
+  const progress = createProgressReporter(
+    `Genererede thumbnails i ${topFolder}`,
+    100
+  );
   const thumbnailOutputPath =
     options.thumbnailOutputPath || defaultThumbnailOutputPath;
   const pipeJoinedExts = CommonData.availableImageFormats.join('|');
@@ -364,8 +403,14 @@ const buildThumbnails = async (
                 : sourceMtime > outputMtime)
             ) {
               tasks.push(
-                limit(() => {
-                  return resizeImage(fullFilename, outputfile, width);
+                limit(async () => {
+                  const result = await resizeImage(
+                    fullFilename,
+                    outputfile,
+                    width
+                  );
+                  progress.increment();
+                  return result;
                 })
               );
             }
@@ -378,11 +423,13 @@ const buildThumbnails = async (
   handleDirRecursive(topFolder);
 
   await Promise.all(tasks);
+  progress.finish();
 };
 
 export {
   safeMkdir,
   fileExists,
+  removeFile,
   fileModifiedTime,
   loadJSON,
   loadText,

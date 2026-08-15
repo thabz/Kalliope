@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="1837" author="blicher" status="complete" type="poetry">
 <workhead>
-    <title>Svithiod</title>
-    <year>1837</year>
-    <notes>
-        <note>Teksten følger St. St. Blicher: <i>Svithiod</i>, Fr. Smiths Forlag, Randers, 1837.</note>
-        <note>Noter med en foranstillet asterisk er digterens egne.</note>
-    </notes>
-    <pictures>
-        <picture src="1837-p2.jpg">Forsiden til <i>Svithiod</i> (1837).</picture>
-        <picture src="1837-p1.jpg">Titelbladet til <i>Svithiod</i> (1837) lyder ,,Efteraarserindringer / fra / en Sommerreise i Sverrig / i Aaret 1836. // Randers. / Paa Boghandler Fr. Smiths Forlag trykt / hos J. M. Elmenhoff. / 1837.''</picture>
-    </pictures>
-    <source facsimile="115308045513.pdf" facsimile-pages-num="74" facsimile-pages-offset="6">St. St. Blicher: <i>Svithiod</i>, Fr. Smiths Forlag, Randers, 1837.</source>
+  <title>Svithiod</title>
+  <year>1837</year>
+  <notes>
+    <note>Noter med en foranstillet asterisk er digterens egne.</note>
+  </notes>
+  <pictures>
+    <picture src="1837-p2.jpg">Forsiden til <i>Svithiod</i> (1837).</picture>
+    <picture src="1837-p1.jpg">Titelbladet til <i>Svithiod</i> (1837) lyder ,,Efteraarserindringer / fra / en Sommerreise i Sverrig / i Aaret 1836. // Randers. / Paa Boghandler Fr. Smiths Forlag trykt / hos J. M. Elmenhoff. / 1837.''</picture>
+  </pictures>
+  <source facsimile="115308045513.pdf" facsimile-pages-num="74" facsimile-pages-offset="6">St. St. Blicher: <i>Svithiod</i>, Fr. Smiths Forlag, Randers, 1837.</source>
 </workhead>
 <workbody>
 
 <text id="blicher2019090301">
 <head>
-    <title>Indledning</title>
-    <firstline>Sydvesten skjuler Himlen tykt med Skyer</firstline>
-    <source pages="7-8"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Indledning</title>
+  <firstline>Sydvesten skjuler Himlen tykt med Skyer</firstline>
+  <source pages="7-8"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -66,10 +65,10 @@ Smelt Taagen og belys det dunkle Fjerne!
 
 <text id="blicher2019090302">
 <head>
-    <title>Rommeliklint</title>
-    <firstline>Jeg drømmer tidt endnu, jeg er i Sverrig</firstline>
-    <source pages="9-11"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Rommeliklint</title>
+  <firstline>Jeg drømmer tidt endnu, jeg er i Sverrig</firstline>
+  <source pages="9-11"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -124,10 +123,10 @@ Imod mig truende mod Himlen op.
 
 <text id="blicher2019090303">
 <head>
-    <title>Kullen</title>
-    <firstline>Der stander et Fjeld af hiin haarde Granit</firstline>
-    <source pages="12-14"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Kullen</title>
+  <firstline>Der stander et Fjeld af hiin haarde Granit</firstline>
+  <source pages="12-14"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -196,13 +195,13 @@ Og tænker paa den, det har skrevet.
 
 <text id="blicher2019090304">
 <head>
-    <title>Løberod</title>
-    <firstline>Jeg ogsaa her en Stambog saae</firstline>
-    <notes>
-        <note>* Et Herresæde midt i Skaane, tilhørende den historiske Familie <w>de la Gardie</w>.</note>
-    </notes>
-    <source pages="15-17"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Løberod</title>
+  <firstline>Jeg ogsaa her en Stambog saae</firstline>
+  <notes>
+    <note>* Et Herresæde midt i Skaane, tilhørende den historiske Familie <w>de la Gardie</w>.</note>
+  </notes>
+  <source pages="15-17"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -266,10 +265,10 @@ Eet af <w>Morganas</w> Slotte.
 
 <text id="blicher2019090305">
 <head>
-    <title>Helsingborg og Svarteraae</title>
-    <firstline>Helsingborg og Svarteraae?</firstline>
-    <source pages="18-21"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Helsingborg og Svarteraae</title>
+  <firstline>Helsingborg og Svarteraae?</firstline>
+  <source pages="18-21"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -354,12 +353,18 @@ Sjunger: <w>Nu har Lyset sejret;</w>
 
 <text id="blicher2019090306">
 <head>
-    <title>Karup</title>
-    <firstline>Jeg drømte tidt i Sverrig, jeg var hjemme</firstline>
-    <source pages="22-24"/>
-    <!-- TODO: Find maleriet fra udstillingen på Stockholms Slot 1836. -->
-    <!-- TODO: Tilføj https://commons.wikimedia.org/wiki/File:Johan_Rohde,_Fra_egnen_ved_Karup_Å,_1889,_RKMm0170,_Ribe_Kunstmuseum.jpg -->
-    <quality>korrektur1,kilde,side</quality>
+  <title>Karup</title>
+  <firstline>Jeg drømte tidt i Sverrig, jeg var hjemme</firstline>
+  <source pages="22-24"/>
+  <!-- TODO: Identificér landskabsmaleriet med motiv fra Östra Karup
+  ved Hallandsås, som Blicher så udstillet i Stockholm i 1836.
+  Sandsynligvis vist hos Stockholms Konstförening i Arvfurstens palats.
+  Kontrollér 1836-årgangen af „Förteckning öfver de, i
+  Konstföreningen bortlottade konstarbeten“ og sekundært Emil
+  Hultmark: Kungl. Akademiens för de fria konsterna utställningar
+  1794–1887. -->
+  <!-- TODO: Tilføj https://commons.wikimedia.org/wiki/File:Johan_Rohde,_Fra_egnen_ved_Karup_Å,_1889,_RKMm0170,_Ribe_Kunstmuseum.jpg -->
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -421,13 +426,13 @@ For min Erindring; tidt jeg begge mindes.
 
 <text id="blicher2019090307">
 <head>
-    <title>Gräfsnæs</title>
-    <firstline>Dybt i vilde Skove staaer</firstline>
-    <notes>
-        <note>* I Elfsborg Lehn ikke langt fra Landeveien mellem Stockholm og Götheborg. Der holdt <w>Gustav Vasa</w> Bryllup med sin anden Hustru <w>Margarethe Leionhufvud</w>.</note>
-    </notes>
-    <source pages="25-27"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Gräfsnæs</title>
+  <firstline>Dybt i vilde Skove staaer</firstline>
+  <notes>
+    <note>* I Elfsborg Lehn ikke langt fra Landeveien mellem Stockholm og Götheborg. Der holdt <w>Gustav Vasa</w> Bryllup med sin anden Hustru <w>Margarethe Leionhufvud</w>.</note>
+  </notes>
+  <source pages="25-27"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -478,13 +483,13 @@ Om den Rædselstid, som forestod:
 
 <text id="blicher2019090308">
 <head>
-    <title>Kinnekulle</title>
-    <firstline>Tør en Slettens Søn bestige</firstline>
-    <notes>
-        <note>* Sverrigs højeste Bjerg (med Undtagelse af Nordlandenes) paa en Odde i Venneren, hvorfra Man overseer næsten hele denne store Indsøe; en viid Strækning af Vestergothland, ja endog i klart Vejr øiner <w>Omberg</w> paa Østsiden af Vetteren — et Panorama, hvortil næppe findes Lige. Bjerget bærer paa sin uhyre Krop flere Byer og Herregaarde, og er ombeltet af skjønne Kirsebærskove.</note>
-    </notes>
-    <source pages="28-30"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Kinnekulle</title>
+  <firstline>Tør en Slettens Søn bestige</firstline>
+  <notes>
+    <note>* Sverrigs højeste Bjerg (med Undtagelse af Nordlandenes) paa en Odde i Venneren, hvorfra Man overseer næsten hele denne store Indsøe; en viid Strækning af Vestergothland, ja endog i klart Vejr øiner <w>Omberg</w> paa Østsiden af Vetteren — et Panorama, hvortil næppe findes Lige. Bjerget bærer paa sin uhyre Krop flere Byer og Herregaarde, og er ombeltet af skjønne Kirsebærskove.</note>
+  </notes>
+  <source pages="28-30"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -538,10 +543,10 @@ Da var' Skjaldens Syner meer end Drømme.
 
 <text id="blicher2019090309">
 <head>
-    <title>Stockholm</title>
-    <firstline>Et Panorama løber rundt</firstline>
-    <source pages="31-33"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Stockholm</title>
+  <firstline>Et Panorama løber rundt</firstline>
+  <source pages="31-33"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -603,14 +608,14 @@ Og med Sydvesten bort et Suk
 
 <text id="blicher2019090310">
 <head>
-    <title>Diurgaarden</title>
-    <firstline>Nu seer jeg, det var ikke saa ganske uden Grund</firstline>
-    <notes>
-        <note>* Dyrehaven ved Stockholm.</note>
-    </notes>
-    <source pages="34-35"/>
-    <keywords>bellman</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Diurgaarden</title>
+  <firstline>Nu seer jeg, det var ikke saa ganske uden Grund</firstline>
+  <notes>
+    <note>* Dyrehaven ved Stockholm.</note>
+  </notes>
+  <source pages="34-35"/>
+  <keywords>bellman</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -652,10 +657,10 @@ En Kriger? — ,,Ingenlunde!'' — En Statsmand? — ,,Heller ej!''
 
 <text id="blicher2019090311">
 <head>
-    <title>Haga</title>
-    <firstline>Haga ligger nydeligt i Skoven</firstline>
-    <source pages="36-38"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Haga</title>
+  <firstline>Haga ligger nydeligt i Skoven</firstline>
+  <source pages="36-38"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -715,15 +720,15 @@ Spiret er fra <w>Vasaæten</w> veget.
 
 <text id="blicher2019090312">
 <head>
-    <title>Ulriksdal</title>
-    <firstline>Langt fra Hovedstadens Tummel</firstline>
-    <notes>
-        <note>* Et Stykke fra Haga; i Nærheden er et Invalidehospital.</note>
-    </notes>
-    <source pages="39-40"/>
-    <!-- TODO: Find Tegnérs digt. -->
-    <keywords>tegner</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Ulriksdal</title>
+  <firstline>Langt fra Hovedstadens Tummel</firstline>
+  <notes>
+    <note>* Et Stykke fra Haga; i Nærheden er et Invalidehospital.</note>
+  </notes>
+  <source pages="39-40"/>
+  <!-- TODO: Find Tegnérs digt. -->
+  <keywords>tegner</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -774,10 +779,10 @@ Sjælens Frihed — og udøste
 
 <text id="blicher2019090313">
 <head>
-    <title>Sigtuna</title>
-    <firstline>Nordop til Upsala gik min Fart</firstline>
-    <source pages="41-43"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Sigtuna</title>
+  <firstline>Nordop til Upsala gik min Fart</firstline>
+  <source pages="41-43"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -830,14 +835,14 @@ Til Liv opvaagner hver en Vaar paa ny.
 
 <text id="blicher2019090314">
 <head>
-    <title>Upsala</title>
-    <firstline>Jeg skred henind ad Fyrisaa</firstline>
-    <source pages="44-48"/>
-    <keywords>atterbom</keywords>
-    <notes>
-        <note>Fodnoterne henviser til Per Daniel Amadeus Atterboms <a work="atterbom/1836"><i>Blommor</i> (1836)</a>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Upsala</title>
+  <firstline>Jeg skred henind ad Fyrisaa</firstline>
+  <source pages="44-48"/>
+  <keywords>atterbom</keywords>
+  <notes>
+    <note>Fodnoterne henviser til Per Daniel Amadeus Atterboms <a work="atterbom/1836"><i>Blommor</i> (1836)</a>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -939,13 +944,13 @@ Fra Jord til Himmel Aanden sig opsvinger.
 
 <text id="blicher2019090315">
 <head>
-    <title>Skogkloster</title>
-    <firstline>Formiddagssolen paa Østsidens Vinduer</firstline>
-    <notes>
-        <note>* Eet af de største og skjønneste Herresæder i Sverrig; ligger ved Dampskibsvejen mellem Sigtuna og Upsala, og tilhører Familien Greverne Brahe.</note>
-    </notes>
-    <source pages="49-52"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Skogkloster</title>
+  <firstline>Formiddagssolen paa Østsidens Vinduer</firstline>
+  <notes>
+    <note>* Eet af de største og skjønneste Herresæder i Sverrig; ligger ved Dampskibsvejen mellem Sigtuna og Upsala, og tilhører Familien Greverne Brahe.</note>
+  </notes>
+  <source pages="49-52"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1017,13 +1022,13 @@ Ligesaa hurtigt dem atter for
 
 <text id="blicher2019090316">
 <head>
-    <title>Wreta</title>
-    <firstline>Hvor Roxen sine Bølger slaaer</firstline>
-    <notes>
-        <note>* En Landsbykirke, fordum et Kloster.</note>
-    </notes>
-    <source pages="53-55"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Wreta</title>
+  <firstline>Hvor Roxen sine Bølger slaaer</firstline>
+  <notes>
+    <note>* En Landsbykirke, fordum et Kloster.</note>
+  </notes>
+  <source pages="53-55"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1074,10 +1079,10 @@ See Enden paa al jordisk Magt og Ære.
 
 <text id="blicher2019090317">
 <head>
-    <title>Vetteren</title>
-    <firstline>Dybt udi Østen klarer det til Dag</firstline>
-    <source pages="56-58"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Vetteren</title>
+  <firstline>Dybt udi Østen klarer det til Dag</firstline>
+  <source pages="56-58"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1151,13 +1156,13 @@ Naar Sol bag <w>Vennerhavet</w> synker rød,
 
 <text id="blicher2019090318">
 <head>
-    <title>Leckø</title>
-    <firstline>Er det en Sejler hisset dybt i Vesten?</firstline>
-    <notes>
-        <note>* En meget stor gothisk Borg paa en Klippe ved <w>Kaallandsøe</w> i Venneren; navnkundig i den svenske Historie ved sine mange mægtige Besiddere, og tvende af Disses — en <w>Brahes</w> og en <w>Hogenschild Bjelkes</w> — tragiske Endeligt. Det er — skjøndt endnu heelt og holdent — aldeles ubeboet. — Dampskibet gaaer tæt derforbi.</note>
-    </notes>
-    <source pages="59-61"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Leckø</title>
+  <firstline>Er det en Sejler hisset dybt i Vesten?</firstline>
+  <notes>
+    <note>* En meget stor gothisk Borg paa en Klippe ved <w>Kaallandsøe</w> i Venneren; navnkundig i den svenske Historie ved sine mange mægtige Besiddere, og tvende af Disses — en <w>Brahes</w> og en <w>Hogenschild Bjelkes</w> — tragiske Endeligt. Det er — skjøndt endnu heelt og holdent — aldeles ubeboet. — Dampskibet gaaer tæt derforbi.</note>
+  </notes>
+  <source pages="59-61"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1204,10 +1209,10 @@ Det skjønne <w>Halleberg</w><note>* Ved Sydvestenden af Venneren i Nærheden af
 
 <text id="blicher2019090319">
 <head>
-    <title>Trolhættan</title>
-    <firstline>Her kjender Du, o Digter! først, hvor fattigt</firstline>
-    <source pages="62"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Trolhættan</title>
+  <firstline>Her kjender Du, o Digter! først, hvor fattigt</firstline>
+  <source pages="62"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1237,10 +1242,10 @@ Som Øjet trætter vel, men aldrig mætter.
 
 <text id="blicher2019090320">
 <head>
-    <title>Afreise</title>
-    <firstline>Ved Foden og paa Skrænterne af Fjelde</firstline>
-    <source pages="63-64"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Afreise</title>
+  <firstline>Ved Foden og paa Skrænterne af Fjelde</firstline>
+  <source pages="63-64"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>

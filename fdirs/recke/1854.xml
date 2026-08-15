@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="1854" author="recke" status="incomplete" type="poetry">
 <workhead>
-    <title>Viser af —h—e</title>
-    <year>1854</year>
+  <title>Viser af —h—e</title>
+  <year>1854</year>
 </workhead>
 <workbody>
 
 <text id="recke1999100201">
 <head>
-   <title>Bøn for Danmark</title>
-   <toctitle>Bøn for Danmark</toctitle>
-   <indextitle>Bøn for Danmark</indextitle>
-   <firstline>Kongernes Konge! Ene Du kan</firstline>
-   <notes>
-      <note>Kilde er <i>Den danske lyrik</i>, F. J. Billeskov Jansen (red.), Hans Reitzels forlag 1961.</note>
-      <note type="credits">Bidrag fra Anders Nordentoft.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Bøn for Danmark</title>
+  <toctitle>Bøn for Danmark</toctitle>
+  <indextitle>Bøn for Danmark</indextitle>
+  <firstline>Kongernes Konge! Ene Du kan</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Anders Nordentoft.</note>
+  </notes>
+  <source><i>Den danske lyrik</i>, F. J. Billeskov Jansen (red.), Hans Reitzels forlag 1961.</source>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -47,18 +47,17 @@ Værn om vort herlige og ældgamle Nord!
 </body>
 </text>
 
-
 <text id="recke1999100202">
 <head>
-   <title>Fredericia-Slaget</title>
-   <toctitle>Fredericia-Slaget</toctitle>
-   <indextitle>Fredericia-Slaget</indextitle>
-   <firstline>I Natten klam og kold</firstline>
-   <notes>
-      <note>Kilde er <i>Den danske lyrik</i>, F. J. Billeskov Jansen (red.), Hans Reitzels forlag 1961.</note>
-      <note type="credits">Bidrag fra Anders Nordentoft.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Fredericia-Slaget</title>
+  <toctitle>Fredericia-Slaget</toctitle>
+  <indextitle>Fredericia-Slaget</indextitle>
+  <firstline>I Natten klam og kold</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Anders Nordentoft.</note>
+  </notes>
+  <source><i>Den danske lyrik</i>, F. J. Billeskov Jansen (red.), Hans Reitzels forlag 1961.</source>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -113,18 +112,17 @@ Og viste ham, at saadan kan de Danske slaaes.
 </body>
 </text>
 
-
 <text id="recke2002050901">
 <head>
-   <title>Holmens faste Stok</title>
-   <toctitle>Holmens faste Stok</toctitle>
-   <indextitle>Holmens faste Stok</indextitle>
-   <firstline>Holmens faste Stok</firstline>
-   <notes>
-      <note type="credits">Bidrag fra Sven Sørensen.</note>
-   </notes>
-   <keywords>frederik7,christian4</keywords>
-   <quality>korrektur1</quality>
+  <title>Holmens faste Stok</title>
+  <toctitle>Holmens faste Stok</toctitle>
+  <indextitle>Holmens faste Stok</indextitle>
+  <firstline>Holmens faste Stok</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Sven Sørensen.</note>
+  </notes>
+  <keywords>frederik7,christian4</keywords>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -173,22 +171,21 @@ Hurra, hurra, hurra!
 </body>
 </text>
 
-
 <text id="recke2003040501" variant="recke1999100207">
 <head>
-   <title>Har I læst den Berlingske Avis</title>
-   <subtitle>
-   <line>eller</line>
-   <line>Hertugen af Choiseul Praslin,</line>
-   <line>der ynkelig omkom sin Gemalinde i en Seng; saa og noget om Mamsel Delusi</line>
-   </subtitle>
-   <toctitle>Har I læst den Berlingske Avis</toctitle>
-   <indextitle>Har I læst den Berlingske Avis</indextitle>
-   <firstline>Har I læst den Berlingske Avis</firstline>
-   <notes>
-      <note type="credits">Bidrag fra Margit Ammentorp.</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title>Har I læst den Berlingske Avis</title>
+  <subtitle>
+    <line>eller</line>
+    <line>Hertugen af Choiseul Praslin,</line>
+    <line>der ynkelig omkom sin Gemalinde i en Seng; saa og noget om Mamsel Delusi</line>
+  </subtitle>
+  <toctitle>Har I læst den Berlingske Avis</toctitle>
+  <indextitle>Har I læst den Berlingske Avis</indextitle>
+  <firstline>Har I læst den Berlingske Avis</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+  </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -234,17 +231,17 @@ Kone saa bedrøvet?
 </body>
 </text>
 
-<text id="recke1999100206">
+<text id="recke1999100206" ignore-tests="repeated-adjacent-word">
 <head>
-   <title>Pjaltenborgs Brand</title>
-   <toctitle>Pjaltenborgs Brand</toctitle>
-   <indextitle>Pjaltenborgs Brand</indextitle>
-   <firstline>Julia Julia</firstline>
-   <notes>
-      <note>Kilde er <i>Den danske lyrik</i>, F. J. Billeskov Jansen (red.), Hans Reitzels forlag 1961.</note>
-      <note type="credits">Bidrag fra Anders Nordentoft.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Pjaltenborgs Brand</title>
+  <toctitle>Pjaltenborgs Brand</toctitle>
+  <indextitle>Pjaltenborgs Brand</indextitle>
+  <firstline>Julia Julia</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Anders Nordentoft.</note>
+  </notes>
+  <source><i>Den danske lyrik</i>, F. J. Billeskov Jansen (red.), Hans Reitzels forlag 1961.</source>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>

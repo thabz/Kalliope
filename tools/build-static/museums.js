@@ -12,31 +12,44 @@ import {
   loadXMLDoc,
 } from './xml.js';
 
-// Read /data/museums.xml and produce collected.museums to to used later.
+const validateMuseum = (museum, xmlFilename = 'content/museums.xml') => {
+  if (museum.country == null || museum.country.trim() === '') {
+    throw new Error(
+      `${xmlFilename}: museum ${museum.id ?? '(uden id)'} mangler <country>.`,
+    );
+  }
+};
+
+// Read content/museums.xml and produce collected.museums to be used later.
 const build_museums = () => {
-  const xmlFilename = `data/museums.xml`;
-  let collected_museums = new Map(loadCachedJSON('collected.museums') || []);
+  const xmlFilename = `content/museums.xml`;
+  const cached_museums = new Map(loadCachedJSON('collected.museums') || []);
   if (
     !isFileModified(xmlFilename) &&
     !force_reload &&
-    collected_museums.size !== 0
+    cached_museums.size !== 0
   ) {
-    return collected_museums;
+    cached_museums.forEach(museum => validateMuseum(museum, xmlFilename));
+    return cached_museums;
   }
 
+  const collected_museums = new Map();
   const doc = loadXMLDoc(xmlFilename);
 
   getElementsByTagName(doc, 'museum').map(museum => {
     const id = safeGetAttr(museum, 'id');
     const name = safeGetText(museum, 'name');
     const sortName = safeGetText(museum, 'sort-name') || name;
+    const country = safeGetText(museum, 'country');
     const deepLink = safeGetText(museum, 'deep-link');
     const data = {
       id,
       name,
       sortName,
+      country,
       deepLink,
     };
+    validateMuseum(data, xmlFilename);
     collected_museums.set(id, data);
   });
   writeCachedJSON('collected.museums', Array.from(collected_museums));
@@ -58,6 +71,12 @@ const build_museum_url = (picture, collected) => {
   if (museumId != null && (invNr != null || objId != null)) {
     const museum = collected.museums.get(museumId);
     if (museum != null && museum.deepLink != null) {
+      if (
+        (museum.deepLink.includes('${invNr}') && invNr == null) ||
+        (museum.deepLink.includes('${objId}') && objId == null)
+      ) {
+        return null;
+      }
       return museum.deepLink
         .replace('${invNr}', invNr)
         .replace('${objId}', objId);
@@ -84,7 +103,7 @@ const build_museum_pages = collected => {
       const workFilename = `fdirs/${poetId}/${workId}.xml`;
       found_changes |= isFileModified(workFilename);
     });
-    found_changes |= isFileModified('data/museums.xml');
+    found_changes |= isFileModified('content/museums.xml');
   });
   if (!found_changes) {
     return;
@@ -115,7 +134,6 @@ const build_museum_pages = collected => {
       artwork,
     };
     const path = `public/api/museums/${museumId}.json`;
-    console.log(path);
     writeJSON(path, json);
   });
 };
@@ -124,4 +142,5 @@ export {
   build_museum_url,
   build_museums,
   build_museum_pages,
+  validateMuseum,
 };

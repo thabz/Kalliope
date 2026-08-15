@@ -1,36 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1922" author="strunk" status="complete" type="poetry">
 <workhead>
-    <title>Slagger og Gløder</title>
-    <year>1922</year>
-    <notes>
-        <note>Teksten følger Aage Strunk: <i>Slagger og Gløder</i>, Gyldendalske Boghandel, Kbh., 1922.</note>
-    </notes>
-    <pictures>
-        <picture src="1922-p2.jpg">Titelbladet til <i>Slagger og Gløder</i> (1922) lyder ,,Aage Strunk / Slagger og Gløder // Gyldendalske Boghandel - Nordisk / Forlag - Kjøbenhavn - Kristiania / London - Berlin - MDCCCCXXII''.</picture>
-        <picture src="1922-p1.jpg">Forsiden til <i>Slagger og Gløder</i> (1922).</picture>
-    </pictures>
-    <source facsimile="115408008180-color.pdf" facsimile-pages-num="69" facsimile-pages-offset="7">Aage Strunk: <i>Slagger og Gløder</i>, Gyldendalske Boghandel, Kbh., 1922.</source>
+  <title>Slagger og Gløder</title>
+  <year>1922</year>
+  <pictures>
+    <picture src="1922-p2.jpg">Titelbladet til <i>Slagger og Gløder</i> (1922) lyder ,,Aage Strunk / Slagger og Gløder // Gyldendalske Boghandel - Nordisk / Forlag - Kjøbenhavn - Kristiania / London - Berlin - MDCCCCXXII''.</picture>
+    <picture src="1922-p1.jpg">Forsiden til <i>Slagger og Gløder</i> (1922).</picture>
+  </pictures>
+  <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99126371643205763" facsimile="115408008180-color.pdf" facsimile-pages-num="69" facsimile-pages-offset="7">Aage Strunk: <i>Slagger og Gløder</i>, Gyldendalske Boghandel, Kbh., 1922.</source>
 </workhead>
 <workbody>
 
 <section>
 <head>
-    <title>Slagger</title>
+  <title>Slagger</title>
 </head>
 <content>
 
 <text id="strunk2025060801">
 <head>
-    <title>Paa fyrdørken</title>
-    <toctitle>Paa fyrdørken: I-VI</toctitle>
-    <firstline>Der var skumklædte bølger, som gled og som brød</firstline>
-    <notes>
-        <note>Forfatterens note til titlen: *) dørken = gulvet (her gulvet foran kedlerne).</note>
-    </notes>
-    <source pages="9-17"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Paa fyrdørken</title>
+  <toctitle>Paa fyrdørken: I-VI</toctitle>
+  <firstline>Der var skumklædte bølger, som gled og som brød</firstline>
+  <notes>
+    <note>Forfatterens note til titlen: *) dørken = gulvet (her gulvet foran kedlerne).</note>
+  </notes>
+  <source pages="9-17"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -228,10 +224,10 @@ i løssluppet trods, slejsed jeg solen.
 
 <text id="strunk2025060802">
 <head>
-    <title>Askeophivning</title>
-    <firstline>Aa hive, aa hoj</firstline>
-    <source pages="18-19"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Askeophivning</title>
+  <firstline>Aa hive, aa hoj</firstline>
+  <source pages="18-19"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -275,10 +271,10 @@ for vi, vi er arbejdets mænd.
 
 <text id="strunk2025060803">
 <head>
-    <title>Bevægelsen</title>
-    <firstline>Som et kæmpedyr i parringsakten</firstline>
-    <source pages="20-21"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Bevægelsen</title>
+  <firstline>Som et kæmpedyr i parringsakten</firstline>
+  <source pages="20-21"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -312,10 +308,10 @@ i en storslaaet eenhed - - propellernes hvirvel.
 
 <text id="strunk2025060804">
 <head>
-    <title>For anker</title>
-    <firstline>Oppe ved finlands strand</firstline>
-    <source pages="22-23"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>For anker</title>
+  <firstline>Oppe ved finlands strand</firstline>
+  <source pages="22-23"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -345,10 +341,10 @@ gud! hold Du Din haand over hende.
 
 <text id="strunk2025060805">
 <head>
-    <title>Paa dækket</title>
-    <firstline>Saa gled vi bort fra midnatssol</firstline>
-    <source pages="24-25"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Paa dækket</title>
+  <firstline>Saa gled vi bort fra midnatssol</firstline>
+  <source pages="24-25"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -375,11 +371,11 @@ aa gud! hvor er jeg mat.
 
 <text id="strunk2025060806">
 <head>
-    <title>Om min ven Hilmer</title>
-    <toctitle>Om min ven Hilmer: I-III</toctitle>
-    <firstline>Der staar en lille fyr</firstline>
-    <source pages="26-29"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Om min ven Hilmer</title>
+  <toctitle>Om min ven Hilmer: I-III</toctitle>
+  <firstline>Der staar en lille fyr</firstline>
+  <source pages="26-29"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -458,10 +454,10 @@ saasnart han gaar i land.
 
 <text id="strunk2025060807">
 <head>
-    <title>Salto mortale</title>
-    <firstline>Der er sorte pi’r paa kajen</firstline>
-    <source pages="30-33"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Salto mortale</title>
+  <firstline>Der er sorte pi’r paa kajen</firstline>
+  <source pages="30-33"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -533,10 +529,10 @@ og det galdt sgu liv for liv.
 
 <text id="strunk2025060808">
 <head>
-    <title>De barmhjertige søstre</title>
-    <firstline>Nu lægger damperen atter ind</firstline>
-    <source pages="34-35"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>De barmhjertige søstre</title>
+  <firstline>Nu lægger damperen atter ind</firstline>
+  <source pages="34-35"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -572,16 +568,16 @@ vi gaar til sengs girls til britske piger.
 
 <section>
 <head>
-    <title>Gløder. Kærlighedsdigte</title>
+  <title>Gløder. Kærlighedsdigte</title>
 </head>
 <content>
 
 <text id="strunk2025060809">
 <head>
-    <title>Tjaljelja</title>
-    <firstline>Aa Tjaljelja! hør Dit væsens tone</firstline>
-    <source pages="39-40"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Tjaljelja</title>
+  <firstline>Aa Tjaljelja! hør Dit væsens tone</firstline>
+  <source pages="39-40"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -611,10 +607,10 @@ bred Dit bedetæppe for mig.
 
 <text id="strunk2025060810">
 <head>
-    <title>Perler</title>
-    <firstline>Du ligger saa stille elskede</firstline>
-    <source pages="41-42"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Perler</title>
+  <firstline>Du ligger saa stille elskede</firstline>
+  <source pages="41-42"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -646,10 +642,10 @@ ligesom muslingen tager perlerne fra havet.
 
 <text id="strunk2025060811">
 <head>
-    <title>Elskede</title>
-    <firstline>Elskede! tag sølvnaalen af Dit haar</firstline>
-    <source pages="43-44"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Elskede</title>
+  <firstline>Elskede! tag sølvnaalen af Dit haar</firstline>
+  <source pages="43-44"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -678,10 +674,10 @@ at være mig, at Du kunde glædes ved synet af Dig.
 
 <text id="strunk2025060812">
 <head>
-    <title>Taaren</title>
-    <firstline>Som sørgepilens bark er den bitter</firstline>
-    <source pages="45-46"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Taaren</title>
+  <firstline>Som sørgepilens bark er den bitter</firstline>
+  <source pages="45-46"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -711,10 +707,10 @@ saaledes er taaren.
 
 <text id="strunk2025060813">
 <head>
-    <title>Natten</title>
-    <firstline>Engang spurgte tiggerpræsten</firstline>
-    <source pages="47-48"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Natten</title>
+  <firstline>Engang spurgte tiggerpræsten</firstline>
+  <source pages="47-48"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -743,10 +739,10 @@ natten skabtes for at dagen kunde glemmes.
 
 <text id="strunk2025060814">
 <head>
-    <title>Tanken</title>
-    <firstline>En tanke kan blottes i et eneste nu</firstline>
-    <source pages="49"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Tanken</title>
+  <firstline>En tanke kan blottes i et eneste nu</firstline>
+  <source pages="49"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -769,10 +765,10 @@ som en kær lille kvindes vink.
 
 <text id="strunk2025060815">
 <head>
-    <title>Syg</title>
-    <firstline>Tung var jeg, og træt</firstline>
-    <source pages="50-51"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Syg</title>
+  <firstline>Tung var jeg, og træt</firstline>
+  <source pages="50-51"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -816,10 +812,10 @@ mens Du kærligt klapped min kind.
 
 <text id="strunk2025060816">
 <head>
-    <title>Hospitalsstuen</title>
-    <firstline>Jeg ser kun hvide lagner</firstline>
-    <source pages="52-54"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Hospitalsstuen</title>
+  <firstline>Jeg ser kun hvide lagner</firstline>
+  <source pages="52-54"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>

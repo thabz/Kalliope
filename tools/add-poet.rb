@@ -31,8 +31,8 @@ end
 @fieldvalues = {}
 @fieldvalidations = {
     'Digter-id' => lambda do |id|
-        if File.directory?("fdirs/#{id}")
-            abort "Mappen fdirs/#{id} findes allerede."
+        if File.exist?("fdirs/#{id}/info.xml")
+            abort "fdirs/#{id}/info.xml findes allerede."
         end
     end
 }
@@ -57,7 +57,7 @@ end
 @birthplace = wrapInTag(@fieldvalues['Fødested'], 'place', '      ')
 @deathplace = wrapInTag(@fieldvalues['Dødssted'], 'place', '      ')
 
-Dir.mkdir(@poetFolder)
+Dir.mkdir(@poetFolder) unless File.directory?(@poetFolder)
 
 def writeXML(filename, xml)
     File.open("#{@poetFolder}/#{filename}", 'w') do |file|

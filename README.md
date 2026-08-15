@@ -5,12 +5,13 @@
 ## Udvikling og tekstredigering lokalt
 
 Brug denne arbejdsgang når du udvikler på appen eller redigerer tekster i
-`fdirs/` og `data/`.
+`fdirs/` og `content/`.
 
 Krav:
 
 - Node.js 20 eller nyere
 - Docker, hvis Elasticsearch skal køres lokalt via Compose
+- Make til genvejene omkring Docker Compose
 
 Installer afhængigheder:
 
@@ -21,7 +22,7 @@ npm install
 Start Elasticsearch på `localhost:9200`:
 
 ```shell
-docker compose up -d elasticsearch
+make elasticsearch
 ```
 
 Byg de statiske data og start appen:
@@ -33,7 +34,7 @@ npm run dev
 
 Appen kører på http://localhost:3000/.
 
-Når du ændrer XML-filer i `fdirs/` eller `data/`, skal de statiske data bygges
+Når du ændrer XML-filer i `fdirs/` eller `content/`, skal de statiske data bygges
 igen:
 
 ```shell
@@ -45,6 +46,23 @@ Hvis cachede build-data driller, kan hele static-buildet tvinges igennem:
 ```shell
 npm run build-static-force-reload
 ```
+
+## Forespørgsler i korpusdata
+
+Static-buildet opretter et versionsmærket korpusdatasæt som JSONL-gzipfiler i
+`public/api/v1/`. Se [`docs/corpus-dataset.md`](docs/corpus-dataset.md) for
+felter og eksempler. Ved komplekse relationelle audits kan et valgfrit lokalt
+SQLite-indeks bygges og åbnes med:
+
+```shell
+make build-sqlite
+make sqlite
+```
+
+Se [`docs/sqlite-index.md`](docs/sqlite-index.md) for skema og begrænsninger.
+Brug de genererede bulkfiler før en gennemgang af alle XML-filer; gå kun til
+XML, når de nødvendige oplysninger ikke findes i datasættet, eller når
+kilde-XML'en skal kontrolleres.
 
 Kør testene før større ændringer eller pull requests:
 
@@ -62,19 +80,19 @@ Sync køres fra hosten, så containeren ikke får adgang til lokale SSH-nøgler.
 Udtræk sider fra nye PDF'er:
 
 ```shell
-docker compose --profile facsimiles run --rm --build facsimile-builder npm run build-facsimiles -- extract
+make extract-facsimiles
 ```
 
 Overskriv eksisterende output for fundne PDF'er:
 
 ```shell
-docker compose --profile facsimiles run --rm --build facsimile-builder npm run build-facsimiles -- reextract
+make reextract-facsimiles
 ```
 
 Kør hele kæden med udtrækning og thumbnails:
 
 ```shell
-docker compose --profile facsimiles run --rm --build facsimile-builder npm run build-facsimiles -- all
+make build-facsimiles
 ```
 
 PDF-udtræk bruger som standard `KALLIOPE_FACSIMILE_EXTRACTOR=auto`, som
@@ -105,25 +123,23 @@ git pull --ff-only
 Byg og kør static-builderen:
 
 ```shell
-docker compose up -d elasticsearch
-docker compose --profile build build static-builder
-docker compose --profile build run --rm static-builder
+make build-static
 ```
 
 Byg og genstart appen:
 
 ```shell
-docker compose up --build -d app
+make app
 ```
 
 Tjek at containerne kører:
 
 ```shell
-docker compose ps
+make status
 ```
 
 Ved større dataændringer kan static-buildet køres med fuld reload:
 
 ```shell
-docker compose --profile build run --rm static-builder npm run build-static-force-reload
+make build-static-force-reload
 ```

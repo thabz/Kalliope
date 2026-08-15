@@ -14,6 +14,12 @@
         }
       },
       {
+        "scope": "keyword.other.header.section.kalliope, keyword.other.section.kalliope",
+        "settings": {
+          "foreground": "#569CD6"
+        }
+      },
+      {
         "scope": "keyword.other.header.todo.kalliope",
         "settings": {
           "foreground": "#D7BA7D",

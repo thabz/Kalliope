@@ -7,6 +7,27 @@ som build-systemet laeser i dag.
 Formatet er tilpasset Kalliopes behov: vaerkmetadata, indholdsfortegnelse, digttekster,
 prosa, noter, kilder, faksimiler, varianter, henvisninger og billeder.
 
+## Formatering
+
+Strukturtags står i kolonne 0, også når de er indlejret. Det gælder
+`<workhead>`, `<workbody>`, `<text>`, `<section>`, `<head>`, `<content>`,
+`<body>`, `<poetry>`, `<prose>`, `<quote>` og `<subwork>` samt deres slut-tags.
+Metadatafelter inde i `<head>` og `<workhead>` indrykkes med to mellemrum for
+hvert niveau.
+
+Der skal være én blank linje mellem to `<text>`-elementer og én blank linje før
+og efter et `<section>`-element. Mellemrum og blanke linjer i selve brødteksten
+ændres ikke, fordi de har betydning for tekstens layout og strofestruktur.
+
+En eller flere værkfiler kan formateres uden at ændre brødteksten med:
+
+```sh
+node tools/format-work-xml.js fdirs/<digter>/<vaerk>.xml
+```
+
+Testen i `__tests__/work-xml-formatting.test.js` kontrollerer den strukturelle
+formatering i alle sporede værkfiler.
+
 ## Grundstruktur
 
 En vaerkfil har normalt denne form:
@@ -41,6 +62,8 @@ De guldhenboelgende Vaenge
 - `status`: typisk `complete` eller `incomplete`.
 - `type`: typisk `poetry`; enkelte vaerker bruger `prose`.
 - `parent`: valgfri. Bruges naar et vaerk er en underdel af et andet vaerk hos samme digter.
+- `ignore-tests`: kommaseparerede, navngivne undtagelser fra enkelte semantiske
+  tests. Brug kun en dokumenteret undtagelse og aldrig som generel testafbrydelse.
 
 `<workhead>` indeholder metadata for hele vaerket. `<workbody>` indeholder tekster,
 sektioner og eventuelle underværker.
@@ -59,6 +82,8 @@ Almindelige felter i `<workhead>`:
 - `<pictures>`: billeder knyttet til hele vaerket.
 - `<source>`: kildeangivelser, som tekster kan arve eller referere til.
 - `<dates>`: datoer for vaerket.
+- `<pagebreaks/>`: erklærer, at alle interne sideskift i de inkluderede
+  tekstkroppe er registreret med `<pb>`.
 
 Titelfelter kan bruge `<num>` som prefix:
 
@@ -67,6 +92,25 @@ Titelfelter kan bruge `<num>` som prefix:
 ```
 
 Det bliver splittet i `prefix` og egentlig titel i indholdsfortegnelsen.
+
+### Workhead pagebreaks
+
+Nye værker, der er transskriberet fra et komplet facsimile, skal erklære den
+fuldstændige registrering af sideskift i `<workhead>`:
+
+```xml
+<workhead>
+  <title>Lyngblomster</title>
+  <year>1856</year>
+  <pagebreaks/>
+</workhead>
+```
+
+`<pagebreaks/>` betyder, at alle fysiske sideskift **inde i** hver inkluderet
+tekst er kontrolleret og markeret efter reglerne nedenfor. Elementet betyder
+ikke, at værket nødvendigvis indeholder et `<pb>`: hvis hver tekst står på én
+side, er der ingen interne sideskift at indsætte. Fravær af `<pagebreaks/>` i en
+ældre værkfil betyder derfor »ikke oplyst«, ikke at kilden er uden sideskift.
 
 ### Workhead source
 
@@ -80,12 +124,23 @@ En kilde paa vaerkniveau kan bruges som default for tekster i samme vaerk:
 </source>
 ```
 
+En stabil digitalisering kan tilføjes på kilde-niveau:
+
+```xml
+<source href="https://www.kb.dk/en/..." facsimile="115308051039_color"
+        facsimile-pages-num="66"
+        facsimile-pages-offset="8">
+  Erica: <i>Lyngblomster</i>, 1856.
+</source>
+```
+
 Attributter:
 
 - `id`: valgfri kilde-id. Uden `id` bliver kilden `default`.
 - `facsimile`: mappe/id for faksimile. `.pdf` fjernes automatisk, hvis det er angivet.
 - `facsimile-pages-num`: antal sider i faksimilen. Paakraeves naar `facsimile` bruges.
 - `facsimile-pages-offset`: tal der laegges til trykte sidetal for at finde faksimilesider.
+- `href`: valgfri URL til en stabil digital udgave af teksten.
 
 Flere kilder kan defineres ved at give dem hver deres `id`:
 
@@ -143,19 +198,25 @@ Anden verslinje
 Attributter paa `<text>`:
 
 - `id`: globalt tekst-id. Bruges i URL'er og links.
+- `author`: valgfrit forfatter-id, hvis teksten har en anden forfatter end værket.
 - `variant`: tekst-id for en variant af samme tekst. Variantgrafen bliver symmetrisk.
 - `aliases`: komma-separerede gamle id'er, der skal redirecte til denne tekst.
 - `skip-index`: hvis sat, udelades teksten fra titel/foerstelinjeindekser.
 - `lang`: valgfrit sprog for teksten, hvis den afviger fra digterens `lang`.
-- `ignore-tests`: bruges af tests til enkelte undtagelser.
+- `ignore-tests`: bruges af tests til enkelte dokumenterede undtagelser. Værdien
+  `pagebreak-count` springer kun sammenligningen mellem `source/@pages` og antal
+  `<pb>` over for teksten.
 
 ### Text head
 
 `<head>` paa en tekst kan indeholde:
 
-- `<title>`: tekstens titel.
-- `<firstline>`: foerstelinje. Maa ikke indeholde markup.
+- `<title>`: tekstens titel. `force-index="true"` viser en ikke-primaer
+  variant i titelindekset.
+- `<firstline>`: foerstelinje. Maa ikke indeholde markup. `force-index="true"`
+  viser en ikke-primaer variant i foerstelinjeindekset.
 - `<indextitle>`: titel brugt i titelindekset, hvis den skal afvige.
+  `force-index="true"` virker som paa `<title>`.
 - `<toctitle>`: titel i vaerkets indholdsfortegnelse.
 - `<linktitle>`: titel i links.
 - `<subtitle>`: undertitel. Kan indeholde flere `<line>`.
@@ -182,7 +243,7 @@ Titel-fallbacks:
 
 Hvert id kan vaere:
 
-- et keyword i `data/keywords/*.xml`
+- et keyword i `content/keywords/*.xml`
 - en digter/person i `fdirs/<id>/info.xml`
 - et frit subject-id, hvis ingen af de to findes
 
@@ -197,6 +258,10 @@ En tekstkilde kan bruge default-kilden fra `<workhead>`:
 <source pages="11-12"/>
 ```
 
+```xml
+<source href="https://archive.org/details/..." pages="11-12"/>
+```
+
 Eller en navngivet kilde:
 
 ```xml
@@ -207,8 +272,28 @@ Attributter:
 
 - `in`: kilde-id fra `<workhead><source id="...">`. Uden `in` bruges `default`.
 - `pages`: trykte sidetal.
+- `href`: valgfri URL til teksten eller den digitale udgave. Tilsidesætter evt. `href` på den arvede værkkilde.
 - `facsimile`: override af faksimile.
 - `facsimile-pages`: konkret faksimileside eller interval.
+
+Eksempel (text kilde med arv og override):
+
+```xml
+<source href="https://kb.dk/some-stable-record">...</source>
+<source in="bd2" href="https://kb.dk/manual-override">...</source>
+```
+
+Regler:
+
+- `pages` skal være én fuld sidebetegnelse eller et lukket, ikke-faldende
+  interval. Skriv eksempelvis `102-108`, aldrig den bibliografiske forkortelse
+  `102-08`; åbne intervaller som `106-` er ugyldige.
+- `<workhead><source href="...">` sættes på værkniveau og kan arves af tekster uden egen kilde-href.
+- Et tekstniveau `<source href="...">` erstatter URL'en fra den arvede værk-kilde.
+- `href`: valgfri URL til den digitale kilde for teksten/udgaven.
+
+`href` arves fra den valgte værkkilde, når teksten ikke selv angiver sin egen `href`.
+Hvis teksten angiver en `href`, tilsidesætter den arvet `href`.
 
 Hvis `facsimile-pages` mangler, men `pages` og `facsimile-pages-offset` findes,
 beregnes faksimilesiderne automatisk.
@@ -237,10 +322,11 @@ Understottede felter:
 - `<event>`
 
 `written`, `performed` og `event` samles i `caches/collected.dates.json` og bruges til
-"andre tekster knyttet til samme dato".
+`andre tekster knyttet til samme dato`.
 
-Datoformatet er normalt `YYYY`, `YYYY-MM` eller `YYYY-MM-DD`. Datohjaelperne kender ogsaa
-negative aar og enkelte `ca.`-udtryk.
+For tekst-hoveder (`<text><head><dates>`) skal disse felter som minimum være fulde datoer:
+`YYYY-MM-DD` på formen år-måned-dag.
+Datohjaelperne kender også negative år og enkelte `ca.`-udtryk i andre sammenhænge.
 
 ## Body og tekstblokke
 
@@ -278,6 +364,57 @@ Et citat
 I `<poetry>` laves linjenummerering automatisk. Hver femte linje faar visningsnummer,
 medmindre teksten bruger egne `<num>` eller `<margin>`.
 
+### Sideskift i kilden
+
+Et fysisk sideskift inde i en tekstkrop markeres ved begyndelsen af den nye
+kildeside:
+
+```xml
+Sidste verslinje på den trykte side
+<pb n="12" facs="019.jpg"/>Første verslinje på den næste trykte side
+```
+
+Attributterne har forskellig betydning:
+
+- `n`: den nye trykte sides nummer eller trykte sidebetegnelse. Attributten kan
+  udelades, når siden ikke har en trykt betegnelse.
+- `facs`: det obligatoriske filnavn på facsimilebilledet for den nye side, fx
+  `019.jpg`. Angiv kun filnavnet, ikke en sti. Kalliopes genererede
+  facsimilefiler er nulbaserede, så PDF-side 20 hedder `019.jpg`.
+
+`<pb>` placeres præcis før det første transskriberede tegn eller inline-element
+på den nye side. Hvis en sætning, en verslinje eller et ord fortsætter over
+sideskiftet, står markøren inline på det nøjagtige sted:
+
+```xml
+En verslinje som fort<pb n="12" facs="019.jpg"/>sætter
+```
+
+En `<pb>` må ikke stå på en selvstændig XML-linje i `<poetry>`, fordi den så kan
+forveksles med en vers- eller strofegrænse. Ved sideskift mellem verslinjer eller
+strofer sættes markøren derfor umiddelbart foran den første tekst på den nye
+side. Markøren opretter ikke en verslinje, en blanklinje, en strofe eller et
+prosaafsnit og renderes ikke visuelt.
+
+Der indsættes ikke `<pb>` ved begyndelsen eller slutningen af en `<text>` alene
+for at gentage tekstens `<source pages="...">`. Derfor kan et værk med
+`<pagebreaks/>` lovligt indeholde nul `<pb>`-elementer. I værker med
+`<pagebreaks/>` er `facs` redaktionelt obligatorisk på hvert `<pb>`. Schemaet
+tillader fortsat ældre `<pb>` uden `facs` af hensyn til bagudkompatibilitet.
+
+Inden for hver tekstpost må de arabiske værdier i `pb/@n` ikke falde. De kan
+begynde forfra ved en ny tekstpost, når kilden har selvstændig paginering. De
+numeriske facsimilefilnavne i `pb/@facs` må ikke falde gennem hele værket.
+Spring er gyldige, fordi sideskift mellem to tekstposter ikke får en markør.
+Romertalsværdier i `n` indgår ikke i den maskinelle rækkefølgekontrol.
+
+Hvis et lovligt sideinterval undtagelsesvis ikke kan omsættes til
+`slutside - startside` interne markører, kan den konkrete tekst bruge
+`ignore-tests="pagebreak-count"`. Undtagelsen må ikke bruges til forkortede,
+åbne eller faldende `pages`-værdier og springer ikke kravene til `facs`,
+placering eller rækkefølge over. Sæt kun undtagelsen på `<kalliopework>`, hvis
+den dokumenterede pagineringsafvigelse gælder hele værket.
+
 Særlige linjeformer:
 
 - En blank linje bevares.
@@ -292,7 +429,7 @@ Særlige linjeformer:
 Sektioner grupperer tekster og kan nestes:
 
 ```xml
-<section id="del-1" level="2">
+<section id="del-1" author="hansenfj" level="2">
   <head>
     <title>Foerste del</title>
   </head>
@@ -305,6 +442,9 @@ Sektioner grupperer tekster og kan nestes:
 Attributter paa `<section>`:
 
 - `id`: gor sektionen linkbar og giver den egen tekstside med intern TOC.
+- `author`: valgfrit forfatter-id, som arves af alle tekster og undersektioner.
+  Et `author` direkte paa en indlejret `<section>` eller `<text>` overskriver den
+  arvede forfatter i den paagaeldende gren.
 - `level`: overskriftsniveau i indholdsfortegnelsen.
 - `variant`: variant-id, ligesom paa `<text>`.
 - `aliases`: gamle id'er, ligesom paa `<text>`.
@@ -361,6 +501,11 @@ Attributter paa `<note>`:
 - `lang`: sprog for noten; default er `da`.
 - `unknown-original-by`: digter-id. Giver noten typen `unknown-original` og bruges som oversaettelsesreference.
 
+Brug en tom `<note unknown-original-by="..."/>`, naar originalens ophavsmand er
+kendt, men originalteksten ikke findes i Kalliope. Naar originalteksten findes i
+Kalliope, bruges i stedet en `<xref type="translation" poem="..."/>` i en
+almindelig note.
+
 Noter i selve teksten kan skrives som `<note>` eller `<footnote>` i tekstblokkene:
 
 ```xml
@@ -397,7 +542,7 @@ Portraet:
 Attributter:
 
 - `src`: lokalt billede. Relative paths slaas op under `/images/<digter>`.
-- `artwork`: reference til et billede i `data/artwork.xml` eller `fdirs/<kunstner>/artwork.xml`.
+- `artwork`: reference til et billede i `content/artwork.xml` eller `fdirs/<kunstner>/artwork.xml`.
 - `portrait`: reference til et portraet i `fdirs/<digter>/portraits.xml`.
 - `primary="true"`: markerer primaert billede.
 - `year`: aar for billedet.
@@ -412,14 +557,17 @@ For lokale billeder kan billedteksten enten vaere direkte indhold:
 <picture src="x.jpg">Billedtekst.</picture>
 ```
 
-eller splittes op:
+Eller splittes op:
 
 ```xml
 <picture src="x.jpg">
   <description>Billedtekst.</description>
-  <picture-note>Ekstra note.</picture-note>
+  <!-- Ekstra intern note til redaktøren. -->
 </picture>
 ```
+
+Hvis billedteksten skal opdeles, bruges `description`; der er ikke brug for `<picture-note>`
+til interne redaktionelle kommentarer.
 
 ## Links og inline-tags
 
@@ -428,12 +576,15 @@ Inline XML bliver renderet client-side af `components/textcontent.js`.
 Almindelige inline-tags:
 
 - `<i>`, `<b>`, `<u>`, `<sup>`, `<sub>`, `<strike>`
+- `<span lang="sv">`: markerer et inline-tekststykke på et andet sprog uden
+  at ændre typografien. Brug ISO 639-1-sprogkoder som `sv`, `de` og `fr`.
 - `<s>` og `<small>`
 - `<w>`: spatieret tekst; renderes aktuelt som kursiv.
 - `<sc>`: small caps.
 - `<year>`: semantisk aar, renderes som indholdet.
 - `<br/>`
-- `<pb n="..."/>`: sidebrud; renderes ikke visuelt, men kan bruges semantisk.
+- `<pb n="..." facs="..."/>`: fysisk sideskift i kilden; renderes ikke
+  visuelt. Se de fulde regler ovenfor.
 - `<colored color="...">`
 - `<metrik>`: metriske tegn, hvor `u`, `_`, `-` omsaettes til metrikglyphs.
 - `<asterism/>`
@@ -463,7 +614,7 @@ Links:
 <xref type="translation" poem="heine..."/>
 <xref keyword="romantikken"/>
 <xref dict="..."/>
-<xref bibel="bibeljohn03,16"/>
+<xref bible="bibeljohn03,16"/>
 ```
 
 `type="translation"` paa digtlinks bruges til oversaettelsesrelationer.
@@ -507,5 +658,5 @@ Buildet tjekker blandt andet:
 - `fdirs/ingemann/1832.xml`: stort vaerk med mange tekster.
 - `fdirs/winther/1860-1.xml` og `fdirs/winther/1860-2.xml`: varianter.
 - `fdirs/hugo/portraits.xml`: portraetter, inkl. genbrugt keyword-billede.
-- `data/keywords/rom.xml`: billeder via `artwork`.
-- `data/about/tags.xml`: aeldre, kommenteret oversigt over inline-tags.
+- `content/keywords/rom.xml`: billeder via `artwork`.
+- `content/about/tags.xml`: aeldre, kommenteret oversigt over inline-tags.

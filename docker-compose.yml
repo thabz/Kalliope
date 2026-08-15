@@ -1,3 +1,5 @@
+name: kalliope
+
 services:
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:7.17.20
@@ -59,7 +61,7 @@ services:
     volumes:
       - ./.git:/app/.git:ro
       - ./caches:/app/caches
-      - ./data:/app/data:ro
+      - ./content:/app/content:ro
       - ./fdirs:/app/fdirs:ro
       - ./public:/app/public
     command: >
@@ -79,6 +81,15 @@ services:
       - ./facsimiles:/app/facsimiles
     command: >
       sh -c "npm run build-facsimiles -- all"
+
+  wikidata-sync:
+    build:
+      context: .
+      target: wikidata-sync
+    profiles:
+      - tools
+    volumes:
+      - ./fdirs:/app/fdirs
 
 volumes:
   esdata:

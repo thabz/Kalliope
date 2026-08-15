@@ -1,28 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1905" author="aakjaer" status="complete" type="poetry">
+<kalliopework id="1905" author="aakjaer" status="complete" type="poetry" ignore-tests="mixed-aa-circumflex,single-circumflex-a-in-text">
 <workhead>
-    <title>Fri Felt</title>
-    <year>1905</year>
-    <notes>
-        <note>Teksten følger førsteudgaven af Jeppe Aakjær: <i>Fri Felt</i>, Gyldendalske Boghandel, Kbh., 1905.</note>
-        <note>Vignet: »De røde Plages Rimmen og de blanke Leers Klang, det har jeg søgt at fængsle bag Rytmen i min Sang.«</note>
-    </notes>
-    <pictures>
-       <picture type="titlepage" src="1905-p1.jpg">Titelbladet til <i>Fri Felt</i> (1905) lyder ,,Jeppe Aakjær / Fri Felt / En Digtsamling // Gyldendalske Boghandel / Nordisk Forlag / København Kristiania / 1905''.</picture>
-    </pictures>
-   <source facsimile="11530803730A_color" facsimile-pages-num="206" facsimile-pages-offset="14">Jeppe Aakjær: <i>Fri Felt</i>, Gyldendalske Boghandel, Kbh., 1905.</source>
+  <title>Fri Felt</title>
+  <year>1905</year>
+  <notes>
+    <note>Vignet: »De røde Plages Rimmen og de blanke Leers Klang, det har jeg søgt at fængsle bag Rytmen i min Sang.«</note>
+  </notes>
+  <pictures>
+    <picture type="titlepage" src="1905-p1.jpg">Titelbladet til <i>Fri Felt</i> (1905) lyder ,,Jeppe Aakjær / Fri Felt / En Digtsamling // Gyldendalske Boghandel / Nordisk Forlag / København Kristiania / 1905''.</picture>
+  </pictures>
+  <source facsimile="11530803730A_color" facsimile-pages-num="206" facsimile-pages-offset="14">Jeppe Aakjær: <i>Fri Felt</i>, Gyldendalske Boghandel, Kbh., 1905.</source>
 </workhead>
 <workbody>
 
 <text id="aakjaer20000924b1">
 <head>
-    <title>Til Fri Felt</title>
-    <subtitle>(1904.)</subtitle>
-    <toctitle>Til Fri Felt</toctitle>
-    <indextitle>Til Fri Felt</indextitle>
-    <firstline>Se dig ud en Sommerdag</firstline>
-    <source pages="3-4"/>
-    <quality>korrektur1</quality>
+  <title>Til Fri Felt</title>
+  <subtitle>(1904.)</subtitle>
+  <toctitle>Til Fri Felt</toctitle>
+  <indextitle>Til Fri Felt</indextitle>
+  <firstline>Se dig ud en Sommerdag</firstline>
+  <source pages="3-4"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -76,19 +75,19 @@ om Kvæld, naar Sol gaar under.
 
 <section level="1">
 <head>
-    <toctitle>Hjemstavns-sange.</toctitle>
+  <toctitle>Hjemstavns-sange.</toctitle>
 </head>
 <content>
 
 <text id="aakjaer20000924b2">
 <head>
-    <title>Jylland</title>
-    <subtitle>(1905.)</subtitle>
-    <toctitle>Jylland</toctitle>
-    <indextitle>Jylland</indextitle>
-    <firstline>Der dukker af Disen min Fædrenejord</firstline>
-    <source pages="7-11"/>
-    <quality>korrektur1</quality>
+  <title>Jylland</title>
+  <subtitle>(1905.)</subtitle>
+  <toctitle>Jylland</toctitle>
+  <indextitle>Jylland</indextitle>
+  <firstline>Der dukker af Disen min Fædrenejord</firstline>
+  <source pages="7-11"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -197,13 +196,13 @@ kanske du da skjænker en Grav.
 
 <text id="aakjaer20000924b3">
 <head>
-    <title>Hedelandet</title>
-    <subtitle>(1901.)</subtitle>
-    <toctitle>Hedelandet</toctitle>
-    <indextitle>Hedelandet</indextitle>
-    <firstline>Du sære Land</firstline>
-    <source pages="12-15"/>
-    <quality>korrektur1</quality>
+  <title>Hedelandet</title>
+  <subtitle>(1901.)</subtitle>
+  <toctitle>Hedelandet</toctitle>
+  <indextitle>Hedelandet</indextitle>
+  <firstline>Du sære Land</firstline>
+  <source pages="12-15"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -296,13 +295,13 @@ i egne store Former støbt.
 
 <text id="aakjaer20000924b4">
 <head>
-    <title>Den jyske Lyng</title>
-    <subtitle>(1905.)</subtitle>
-    <toctitle>Den jyske Lyng</toctitle>
-    <indextitle>Den jyske Lyng</indextitle>
-    <firstline>Her har jeg staaet i tusinde Aar</firstline>
-    <source pages="16-18"/>
-    <quality>korrektur1</quality>
+  <title>Den jyske Lyng</title>
+  <subtitle>(1905.)</subtitle>
+  <toctitle>Den jyske Lyng</toctitle>
+  <indextitle>Den jyske Lyng</indextitle>
+  <firstline>Her har jeg staaet i tusinde Aar</firstline>
+  <source pages="16-18"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -371,16 +370,16 @@ Lad mig i Sandet dog Rødderne sprede!
 
 <text id="aakjaer20000924b5">
 <head>
-    <title>Karup Aa</title>
-    <subtitle>(1901.)</subtitle>
-    <toctitle>Karup Aa</toctitle>
-    <indextitle>Karup Aa</indextitle>
-    <firstline>Nu bleges Himlen, for Sol er nede</firstline>
-    <notes>
-      <note>* Vajsen, høj Vej gjennem Engen; <i>klunker</i>, klukker dybt; <i>Stryge</i>, et Hvæsseinstrument for Leen; <i>skjarer</i>, skinner (af Skjær); <i>Knagen</i>, Haandtaget paa Høleen; <i>Svingel</i>, en Græsart; <i>stenter</i>, springer brat afsted.</note>
-    </notes>
-    <source pages="19-22"/>
-    <quality>korrektur1</quality>
+  <title>Karup Aa</title>
+  <subtitle>(1901.)</subtitle>
+  <toctitle>Karup Aa</toctitle>
+  <indextitle>Karup Aa</indextitle>
+  <firstline>Nu bleges Himlen, for Sol er nede</firstline>
+  <notes>
+    <note>* Vajsen, høj Vej gjennem Engen; <i>klunker</i>, klukker dybt; <i>Stryge</i>, et Hvæsseinstrument for Leen; <i>skjarer</i>, skinner (af Skjær); <i>Knagen</i>, Haandtaget paa Høleen; <i>Svingel</i>, en Græsart; <i>stenter</i>, springer brat afsted.</note>
+  </notes>
+  <source pages="19-22"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -470,16 +469,16 @@ du tungt henskridende Karup Aa.
 
 <text id="aakjaer20000924b6">
 <head>
-    <title>Grundlovssang til Fjandboerne</title>
-    <subtitle>(1902.)</subtitle>
-    <toctitle>Grundlovssang til Fjandboerne</toctitle>
-    <indextitle>Grundlovssang til Fjandboerne</indextitle>
-    <firstline>Der er et Land saa indeklemt</firstline>
-    <notes>
-      <note>* <i>Tofler</i>, Bekkasiner; <i>Béd</i>, den Tid Dyrene er i Arbejde; <i>Arker</i>, de hvide Fjerskyer; <i>Drøjsel</i>, Forslag.</note>
-    </notes>
-    <source pages="23-25"/>
-    <quality>korrektur1</quality>
+  <title>Grundlovssang til Fjandboerne</title>
+  <subtitle>(1902.)</subtitle>
+  <toctitle>Grundlovssang til Fjandboerne</toctitle>
+  <indextitle>Grundlovssang til Fjandboerne</indextitle>
+  <firstline>Der er et Land saa indeklemt</firstline>
+  <notes>
+    <note>* <i>Tofler</i>, Bekkasiner; <i>Béd</i>, den Tid Dyrene er i Arbejde; <i>Arker</i>, de hvide Fjerskyer; <i>Drøjsel</i>, Forslag.</note>
+  </notes>
+  <source pages="23-25"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -551,19 +550,19 @@ vil styre Tidens Baad!
 
 <text id="aakjaer20000924b7">
 <head>
-    <title>Salling</title>
-    <subtitle>
-      <line>En Skjæmtevise</line>
-      <line>(1899.)</line>
-    </subtitle>
-    <toctitle>Salling</toctitle>
-    <indextitle>Salling</indextitle>
-    <firstline>Musen sad ved dine Strande</firstline>
-    <notes>
-      <note>Kræn Tyske, en omvandrende Bissekræmmer, som døde i Jebjærg ca. 1900.  <i>Gammeløl</i>, en rusende Drik, der mest udskjænkes om Høsten.</note>
-    </notes>
-    <source pages="26-29"/>
-    <quality>korrektur1</quality>
+  <title>Salling</title>
+  <subtitle>
+    <line>En Skjæmtevise</line>
+    <line>(1899.)</line>
+  </subtitle>
+  <toctitle>Salling</toctitle>
+  <indextitle>Salling</indextitle>
+  <firstline>Musen sad ved dine Strande</firstline>
+  <notes>
+    <note>Kræn Tyske, en omvandrende Bissekræmmer, som døde i Jebjærg ca. 1900.  <i>Gammeløl</i>, en rusende Drik, der mest udskjænkes om Høsten.</note>
+  </notes>
+  <source pages="26-29"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -666,19 +665,19 @@ og de trinde Brude!
 
 <text id="aakjaer20000924b8">
 <head>
-    <title>Ann Mari hinne Filosofi</title>
-    <subtitle>
-      <line>Skotsk Motiv.</line>
-      <line>(1904.)</line>
-    </subtitle>
-    <toctitle>Ann Mari hinne Filosofi</toctitle>
-    <indextitle>Ann Mari hinne Filosofi</indextitle>
-    <firstline>Som a gik med mæ sjel</firstline>
-    <notes>
-      <note>* <i>hinne</i>, hendes; <i>sjel</i>, selv; <i>saa</i>, sa'; <i>Yw'</i>, Øje; <i>nyw'</i> nøje; <i>sæ</i>, sig; <i>en Bett'</i>, en Smule; <i>jet</i>, ét.</note>
-    </notes>
-    <source pages="30"/>
-    <quality>korrektur1</quality>
+  <title>Ann Mari hinne Filosofi</title>
+  <subtitle>
+    <line>Skotsk Motiv.</line>
+    <line>(1904.)</line>
+  </subtitle>
+  <toctitle>Ann Mari hinne Filosofi</toctitle>
+  <indextitle>Ann Mari hinne Filosofi</indextitle>
+  <firstline>Som a gik med mæ sjel</firstline>
+  <notes>
+    <note>* <i>hinne</i>, hendes; <i>sjel</i>, selv; <i>saa</i>, sa'; <i>Yw'</i>, Øje; <i>nyw'</i> nøje; <i>sæ</i>, sig; <i>en Bett'</i>, en Smule; <i>jet</i>, ét.</note>
+  </notes>
+  <source pages="30"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -701,16 +700,16 @@ det er jet og det samm' for mæ!
 
 <text id="aakjaer20000924b9">
 <head>
-    <title>Ann Mari tragter Øl</title>
-    <subtitle>(1905.)</subtitle>
-    <toctitle>Ann Mari tragter Øl</toctitle>
-    <indextitle>Ann Mari tragter Øl</indextitle>
-    <firstline>Nej Fanden sku' fejst' sæ da mir te Jens Kræme'!</firstline>
-    <notes>
-      <note>* <i>Stoder</i>, Stodder; <i>læ' mæ'</i>, lære mig; <i>Flæskbøst</i>, Flæskeside; <i>Laag</i>, Lage; <i>pin'won</i>, paaholdende; <i>løj</i>, lunkne; <i>Vejlo</i>, Vejr; <i>warr'</i>, værre; <i>Lor</i>, Laar; <i>Tow</i>, Uld; <i>vildest</i>, bedste; <i>Enki</i>, baade Enke og Enkemand; <i>Bejt</i>, Ovnfuld Brød; <i>hid' sæ</i>, hed sig; <i>skjelle</i>, skeløjet; <i>skjelt' sæ</i>, liste sig til; <i>tyt</i>, syntes; <i>faale</i>, mer end forfærdeligt; <i>kanter</i>, oplivet; <i>hwell</i>, duelig; <i>spaa'e</i> sparet; <i>haa'e</i>, ha' det; <i>wat</i>, vækkede; <i>Flaani</i>, Flane; <i>drøwsker</i>, higer hæftigt; <i>æ Los</i>, foragtelig Benævnelse paa en ung Kvinde (svarer til det mandlige: Lømmel); <i>tolle</i>, enfoldig; <i>Kos</i>, Kors; <i>Stætt'</i>, Stente; <i>kallepros</i>, meget kjæphøj; <i>æ Buend</i>, Baandene; <i>tær</i>, tør; <i>forsuer'</i>, forsværge; <i>Stø'</i>, Stykke; <i>hed' sæ</i>, pynte sig; <i>sølle Hjavl</i>, sølle én; <i>Hjaani</i>, halvfjantet Fruentimmer; <i>æ Trajt</i>, Tragten.</note>
-    </notes>
-    <source pages="31-34"/>
-    <quality>korrektur1</quality>
+  <title>Ann Mari tragter Øl</title>
+  <subtitle>(1905.)</subtitle>
+  <toctitle>Ann Mari tragter Øl</toctitle>
+  <indextitle>Ann Mari tragter Øl</indextitle>
+  <firstline>Nej Fanden sku' fejst' sæ da mir te Jens Kræme'!</firstline>
+  <notes>
+    <note>* <i>Stoder</i>, Stodder; <i>læ' mæ'</i>, lære mig; <i>Flæskbøst</i>, Flæskeside; <i>Laag</i>, Lage; <i>pin'won</i>, paaholdende; <i>løj</i>, lunkne; <i>Vejlo</i>, Vejr; <i>warr'</i>, værre; <i>Lor</i>, Laar; <i>Tow</i>, Uld; <i>vildest</i>, bedste; <i>Enki</i>, baade Enke og Enkemand; <i>Bejt</i>, Ovnfuld Brød; <i>hid' sæ</i>, hed sig; <i>skjelle</i>, skeløjet; <i>skjelt' sæ</i>, liste sig til; <i>tyt</i>, syntes; <i>faale</i>, mer end forfærdeligt; <i>kanter</i>, oplivet; <i>hwell</i>, duelig; <i>spaa'e</i> sparet; <i>haa'e</i>, ha' det; <i>wat</i>, vækkede; <i>Flaani</i>, Flane; <i>drøwsker</i>, higer hæftigt; <i>æ Los</i>, foragtelig Benævnelse paa en ung Kvinde (svarer til det mandlige: Lømmel); <i>tolle</i>, enfoldig; <i>Kos</i>, Kors; <i>Stætt'</i>, Stente; <i>kallepros</i>, meget kjæphøj; <i>æ Buend</i>, Baandene; <i>tær</i>, tør; <i>forsuer'</i>, forsværge; <i>Stø'</i>, Stykke; <i>hed' sæ</i>, pynte sig; <i>sølle Hjavl</i>, sølle én; <i>Hjaani</i>, halvfjantet Fruentimmer; <i>æ Trajt</i>, Tragten.</note>
+  </notes>
+  <source pages="31-34"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -812,13 +811,13 @@ som blot <i>a</i> haar Ajt!
 
 <text id="aakjaer20000924b10">
 <head>
-    <title>Mens Ræven skriger</title>
-    <subtitle>(1899.)</subtitle>
-    <toctitle>Mens Ræven skriger</toctitle>
-    <indextitle>Mens Ræven skriger</indextitle>
-    <firstline>Sump-Vidjen brummer i Nattens Sus</firstline>
-    <source pages="35-37"/>
-    <quality>korrektur1</quality>
+  <title>Mens Ræven skriger</title>
+  <subtitle>(1899.)</subtitle>
+  <toctitle>Mens Ræven skriger</toctitle>
+  <indextitle>Mens Ræven skriger</indextitle>
+  <firstline>Sump-Vidjen brummer i Nattens Sus</firstline>
+  <source pages="35-37"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -893,16 +892,16 @@ mens Bonden ved Midnat sætter sit Agn,
 
 <text id="aakjaer20000924b11">
 <head>
-    <title>Æ Spøgels'</title>
-    <subtitle>(1905.)</subtitle>
-    <toctitle>Æ Spøgels'</toctitle>
-    <indextitle>Æ Spøgels'</indextitle>
-    <firstline>A kam op ad Resendaal</firstline>
-    <notes>
-      <note> <i>Brow</i>, Bro; <i>Kaal</i>, Karl; <i>kwol</i>, kvalt; <i>bevverist'</i>, skjælve stærkt; <i>koldslavn</i>, greben af Koldsygen; <i>Nøj</i>, Ny; <i>swot</i>, sort; <i>haed'mæ</i>, hade mig; <i>Kwot</i>, Kort; <i>Røj</i>, Røg; <i>Blød'</i>, moradsige Kjær; <i>Døj</i>, Dynd; <i>far</i>, før; <i>aaltar</i>, aldeles tørre; <i>ali'sid'</i>, jævnsides; <i>ski' æ</i>, skete det; <i>Len</i>, Lindring; <i>somm'sind'</i>, undertiden; <i>sak</i>, sank; <i>Lu'</i>, Hue; <i>Hor</i>, Haar; <i>løwt sæ</i>, løftede sig; <i>Skjot</i>, Skjorte; <i>wot</i>, vaad; <i>hejsen</i>, ellers; <i>tint jenn'</i>, tænkte alene ; <i>stented</i>, sprang hæftigt; <i>søen</i>, saaledes; <i>aalste'</i>, alle Steder; <i>æ Pwot lot</i>, Porten lukket; <i>lisse sor'</i>, hvert Øjeblik; <i>Kalgord</i>, Kaalgaard; <i>hejs</i>, ellers, <i>Blaan'</i>, Sky.</note>
-    </notes>
-    <source pages="38-42"/>
-    <quality>korrektur1</quality>
+  <title>Æ Spøgels'</title>
+  <subtitle>(1905.)</subtitle>
+  <toctitle>Æ Spøgels'</toctitle>
+  <indextitle>Æ Spøgels'</indextitle>
+  <firstline>A kam op ad Resendaal</firstline>
+  <notes>
+    <note> <i>Brow</i>, Bro; <i>Kaal</i>, Karl; <i>kwol</i>, kvalt; <i>bevverist'</i>, skjælve stærkt; <i>koldslavn</i>, greben af Koldsygen; <i>Nøj</i>, Ny; <i>swot</i>, sort; <i>haed'mæ</i>, hade mig; <i>Kwot</i>, Kort; <i>Røj</i>, Røg; <i>Blød'</i>, moradsige Kjær; <i>Døj</i>, Dynd; <i>far</i>, før; <i>aaltar</i>, aldeles tørre; <i>ali'sid'</i>, jævnsides; <i>ski' æ</i>, skete det; <i>Len</i>, Lindring; <i>somm'sind'</i>, undertiden; <i>sak</i>, sank; <i>Lu'</i>, Hue; <i>Hor</i>, Haar; <i>løwt sæ</i>, løftede sig; <i>Skjot</i>, Skjorte; <i>wot</i>, vaad; <i>hejsen</i>, ellers; <i>tint jenn'</i>, tænkte alene ; <i>stented</i>, sprang hæftigt; <i>søen</i>, saaledes; <i>aalste'</i>, alle Steder; <i>æ Pwot lot</i>, Porten lukket; <i>lisse sor'</i>, hvert Øjeblik; <i>Kalgord</i>, Kaalgaard; <i>hejs</i>, ellers, <i>Blaan'</i>, Sky.</note>
+  </notes>
+  <source pages="38-42"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1012,16 +1011,16 @@ og a haar brænd' mi' Laad!"
 
 <text id="aakjaer20000924b12">
 <head>
-    <title>Glad Vise</title>
-    <subtitle>
-      <line>Efter det Skotske.</line>
-      <line>(1905.)</line>
-    </subtitle>
-    <toctitle>Glad Vise</toctitle>
-    <indextitle>Glad Vise</indextitle>
-    <firstline>Grønt gror nu Sivet, ja</firstline>
-    <source pages="43"/>
-    <quality>korrektur1</quality>
+  <title>Glad Vise</title>
+  <subtitle>
+    <line>Efter det Skotske.</line>
+    <line>(1905.)</line>
+  </subtitle>
+  <toctitle>Glad Vise</toctitle>
+  <indextitle>Glad Vise</indextitle>
+  <firstline>Grønt gror nu Sivet, ja</firstline>
+  <source pages="43"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1045,13 +1044,13 @@ som Armen om Pigens Liv, trara!
 
 <text id="aakjaer20000924b13">
 <head>
-    <title>Majsang</title>
-    <subtitle>(1904.)</subtitle>
-    <toctitle>Majsang</toctitle>
-    <indextitle>Majsang</indextitle>
-    <firstline>Hej, hvilken herlig Vind!</firstline>
-    <source pages="44-45"/>
-    <quality>korrektur1</quality>
+  <title>Majsang</title>
+  <subtitle>(1904.)</subtitle>
+  <toctitle>Majsang</toctitle>
+  <indextitle>Majsang</indextitle>
+  <firstline>Hej, hvilken herlig Vind!</firstline>
+  <source pages="44-45"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1088,13 +1087,13 @@ under lyse Himle gaar vor Bane!
 
 <text id="aakjaer20000924b14">
 <head>
-    <title>Kilden</title>
-    <subtitle>(1905.)</subtitle>
-    <toctitle>Kilden</toctitle>
-    <indextitle>Kilden</indextitle>
-    <firstline>Jeg nynner, jeg synger ved Gry og ved Kvæld</firstline>
-    <source pages="46-47"/>
-    <quality>korrektur1</quality>
+  <title>Kilden</title>
+  <subtitle>(1905.)</subtitle>
+  <toctitle>Kilden</toctitle>
+  <indextitle>Kilden</indextitle>
+  <firstline>Jeg nynner, jeg synger ved Gry og ved Kvæld</firstline>
+  <source pages="46-47"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1140,16 +1139,16 @@ og rødlige Stjærner tindre.
 
 <text id="aakjaer20000924b15">
 <head>
-    <title>Mens Maanen skjarer -</title>
-    <subtitle>(1905.)</subtitle>
-    <toctitle>Mens Maanen skjarer -</toctitle>
-    <indextitle>Mens Maanen skjarer -</indextitle>
-    <firstline>Og ledes din Sjæl ved Dagens Støj</firstline>
-    <notes>
-      <note>* <i>skjarer</i>, skinner (om Lysets Glimten); <i>Jenbær</i>, Enbær; <i>skrusler</i>, støjer paa en hemmelighedsfuld Maade; <i>Brok</i>, Grævling; <i>Blemmer</i>, enhver stor Lysudfoldelse.</note>
-    </notes>
-    <source pages="48-50"/>
-    <quality>korrektur1</quality>
+  <title>Mens Maanen skjarer -</title>
+  <subtitle>(1905.)</subtitle>
+  <toctitle>Mens Maanen skjarer -</toctitle>
+  <indextitle>Mens Maanen skjarer -</indextitle>
+  <firstline>Og ledes din Sjæl ved Dagens Støj</firstline>
+  <notes>
+    <note>* <i>skjarer</i>, skinner (om Lysets Glimten); <i>Jenbær</i>, Enbær; <i>skrusler</i>, støjer paa en hemmelighedsfuld Maade; <i>Brok</i>, Grævling; <i>Blemmer</i>, enhver stor Lysudfoldelse.</note>
+  </notes>
+  <source pages="48-50"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1212,16 +1211,16 @@ og svinder i Østenblammer,
 
 <text id="aakjaer20000924b16">
 <head>
-    <title>Aften-Gjøgen</title>
-    <subtitle>(1904.)</subtitle>
-    <toctitle>Aften-Gjøgen</toctitle>
-    <indextitle>Aften-Gjøgen</indextitle>
-    <firstline>O, du min Barndoms glade Fugl</firstline>
-    <notes>
-      <note>* <i>Lat</i>, Lærred; <i>Ovnskod</i>, det Redskab hvormed Brødet føres ud og ind af Ovnen; <i>hveger</i>, farer hid og did; <i>Pejers Pig og Mari-Rok</i>, Stjærnebilleder i Orion; <i>dryner</i>, <i>Drynen</i>, kaldes en svag, misfornøjet Klagelyd, en Art undertrykt Brølen hos Køer; <i>Kornmo'</i>, fjærne natlige Høstlyn.</note>
-    </notes>
-    <source pages="51-53"/>
-    <quality>korrektur1</quality>
+  <title>Aften-Gjøgen</title>
+  <subtitle>(1904.)</subtitle>
+  <toctitle>Aften-Gjøgen</toctitle>
+  <indextitle>Aften-Gjøgen</indextitle>
+  <firstline>O, du min Barndoms glade Fugl</firstline>
+  <notes>
+    <note>* <i>Lat</i>, Lærred; <i>Ovnskod</i>, det Redskab hvormed Brødet føres ud og ind af Ovnen; <i>hveger</i>, farer hid og did; <i>Pejers Pig og Mari-Rok</i>, Stjærnebilleder i Orion; <i>dryner</i>, <i>Drynen</i>, kaldes en svag, misfornøjet Klagelyd, en Art undertrykt Brølen hos Køer; <i>Kornmo'</i>, fjærne natlige Høstlyn.</note>
+  </notes>
+  <source pages="51-53"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1284,13 +1283,13 @@ som her den ler i Aften.
 
 <text id="aakjaer20000924b17">
 <head>
-    <title>Efteraarsvise</title>
-    <subtitle>(1903.)</subtitle>
-    <toctitle>Efteraarsvise</toctitle>
-    <indextitle>Efteraarsvise</indextitle>
-    <firstline>Gjøgen galed i Danmarks Lund</firstline>
-    <source pages="54-55"/>
-    <quality>korrektur1</quality>
+  <title>Efteraarsvise</title>
+  <subtitle>(1903.)</subtitle>
+  <toctitle>Efteraarsvise</toctitle>
+  <indextitle>Efteraarsvise</indextitle>
+  <firstline>Gjøgen galed i Danmarks Lund</firstline>
+  <source pages="54-55"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1326,16 +1325,16 @@ og saa gik en Sommer i Vasken.
 
 <text id="aakjaer20000924b18">
 <head>
-    <title>Vinterbilleder</title>
-    <subtitle>(1905.)</subtitle>
-    <toctitle>Vinterbilleder</toctitle>
-    <indextitle>Vinterbilleder</indextitle>
-    <firstline>Nu tager den Bonde Bælgvanter paa</firstline>
-    <notes>
-      <note>* <i>strænge</i>, en Forstærkning af <w>stræng</w>; <i>Klyne</i>, store Mosetørv.</note>
-    </notes>
-    <source pages="56-59"/>
-    <quality>korrektur1</quality>
+  <title>Vinterbilleder</title>
+  <subtitle>(1905.)</subtitle>
+  <toctitle>Vinterbilleder</toctitle>
+  <indextitle>Vinterbilleder</indextitle>
+  <firstline>Nu tager den Bonde Bælgvanter paa</firstline>
+  <notes>
+    <note>* <i>strænge</i>, en Forstærkning af <w>stræng</w>; <i>Klyne</i>, store Mosetørv.</note>
+  </notes>
+  <source pages="56-59"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1432,13 +1431,13 @@ som Øen i Verdenshavet.
 
 <text id="aakjaer20000924b19">
 <head>
-    <title>Juleaften</title>
-    <subtitle>(1902.)</subtitle>
-    <toctitle>Juleaften</toctitle>
-    <indextitle>Juleaften</indextitle>
-    <firstline>Og Far gaar rundt paa Loen</firstline>
-    <source pages="60-64"/>
-    <quality>korrektur1</quality>
+  <title>Juleaften</title>
+  <subtitle>(1902.)</subtitle>
+  <toctitle>Juleaften</toctitle>
+  <indextitle>Juleaften</indextitle>
+  <firstline>Og Far gaar rundt paa Loen</firstline>
+  <source pages="60-64"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1543,16 +1542,16 @@ fra Bønders Julebord.
 
 <text id="aakjaer20000924b20">
 <head>
-    <title>Røter-Anders og hans Mor</title>
-    <subtitle>(1904.)</subtitle>
-    <toctitle>Røter-Anders og hans Mor</toctitle>
-    <indextitle>Røter-Anders og hans Mor</indextitle>
-    <firstline>Tho a er no Røjter, og a er fræ Fløj</firstline>
-    <notes>
-      <note>* <i>Føj</i>, født; <i>døwed</i>, døjet; <i>gløj</i>, glødede; <i>Ja'en</i>, Jærn (Persjærn); <i>nap</i>, knapnok; <i>glaa'</i>, glad; <i>spirrise</i>, spinkel; <i>lilajte</i>, temmelig lille; <i>Finger'</i>, Fingre; <i>Tro'</i>, Traad; <i>Saws</i>, Sax; <i>øwles</i>, overflødig; <i>Tromm'</i>, Garnende; <i>Klaws'</i>, Garnfed'; <i>sto'</i>, stod; <i>Kalgo'</i>, Kaalgaard; <i>Kôl</i>, Kaal; <i>kwed'</i>, kvæde; <i>Dôg</i>, Dug; <i>haaj</i>, havde; <i>Pesja'en</i>, Persjærn; <i>Fowl'</i>, Fugle; <i>stummelwoen</i>, usikker paa Benene; <i>wat mæ</i>, vækkede mig; <i>men'</i>, mens; <i>Gorer</i>, Lyrer (lange hvide Natskyer); <i>nowtid'</i>, nogensinde; <i>Kja'en</i>, Kjærne; <i>høt</i>, højt; <i>Fortrær</i>, Fortræd; <i>Fatte'</i>, Fattig; <i>Hejring</i>, sølle forsømt Skabning; <i>ski</i>, ske; <i>Ferbejring</i>, Forbedring; <i>Gjewt</i>, Givt; <i>Row</i>, Ro; <i>Kyer</i>, Køer.</note>
-    </notes>
-    <source pages="65-67"/>
-    <quality>korrektur1</quality>
+  <title>Røter-Anders og hans Mor</title>
+  <subtitle>(1904.)</subtitle>
+  <toctitle>Røter-Anders og hans Mor</toctitle>
+  <indextitle>Røter-Anders og hans Mor</indextitle>
+  <firstline>Tho a er no Røjter, og a er fræ Fløj</firstline>
+  <notes>
+    <note>* <i>Føj</i>, født; <i>døwed</i>, døjet; <i>gløj</i>, glødede; <i>Ja'en</i>, Jærn (Persjærn); <i>nap</i>, knapnok; <i>glaa'</i>, glad; <i>spirrise</i>, spinkel; <i>lilajte</i>, temmelig lille; <i>Finger'</i>, Fingre; <i>Tro'</i>, Traad; <i>Saws</i>, Sax; <i>øwles</i>, overflødig; <i>Tromm'</i>, Garnende; <i>Klaws'</i>, Garnfed'; <i>sto'</i>, stod; <i>Kalgo'</i>, Kaalgaard; <i>Kôl</i>, Kaal; <i>kwed'</i>, kvæde; <i>Dôg</i>, Dug; <i>haaj</i>, havde; <i>Pesja'en</i>, Persjærn; <i>Fowl'</i>, Fugle; <i>stummelwoen</i>, usikker paa Benene; <i>wat mæ</i>, vækkede mig; <i>men'</i>, mens; <i>Gorer</i>, Lyrer (lange hvide Natskyer); <i>nowtid'</i>, nogensinde; <i>Kja'en</i>, Kjærne; <i>høt</i>, højt; <i>Fortrær</i>, Fortræd; <i>Fatte'</i>, Fattig; <i>Hejring</i>, sølle forsømt Skabning; <i>ski</i>, ske; <i>Ferbejring</i>, Forbedring; <i>Gjewt</i>, Givt; <i>Row</i>, Ro; <i>Kyer</i>, Køer.</note>
+  </notes>
+  <source pages="65-67"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1624,16 +1623,16 @@ for æ Kyer ska'en pass', ja, det ska'en!
 
 <text id="aakjaer2000042202">
 <head>
-    <title>Jenn' Hjemm'</title>
-    <subtitle>(1902.)</subtitle>
-    <toctitle>Jenn' Hjemm'</toctitle>
-    <indextitle>Jenn' Hjemm'</indextitle>
-    <firstline>Æ Blaanner de drywer</firstline>
-    <notes>
-      <note>* <i>Jenn' hjemm'</i>, alene hjemme; <i>æ Blaanner</i>, Skyerne; <i>Fowl'</i>, Fugle; <i>æ Kjar'</i>, Kjærene; <i>salder</i>, aftage; <i>ralder</i>, rasler; <i>sejjer</i>, sidder; <i>æ Skyw</i>, Bordskiven; <i>nær</i>, naar; <i>æ Knoger</i>, Lemmerne; <i>laant</i>, langt; <i>æ Kokk'</i>, Hanerne; <i>bus'</i>, storme (om Vinden); <i>Brok</i>, Grævling; <i>Gord</i>, Gaard; <i>krykker sammel</i>, synker sammen; <i>æ Sals</i>, Stuehuset; <i>Tækki</i>, Taget; <i>røwn</i>, revet; <i>Fløj</i>, Vindfløj; <i>hwæler</i>, helder; <i>Nar</i>, Nord; <i>Kukmand</i>, Gjøg; <i>Kon</i>, Smule; <i>Maag'</i>, Mage; <i>bitte Krumm'</i>, b. Smule; <i>kaare'</i>, kartede; <i>doged</i>, dugget; <i>so'</i>, sad; <i>tront</i>, travlt; <i>pilrer</i>, smaafalder; <i>hwilrer</i>, larmer; <i>drøwn</i>, dreven væk.</note>
-    </notes>
-    <source pages="68-70"/>
-    <quality>korrektur1</quality>
+  <title>Jenn' Hjemm'</title>
+  <subtitle>(1902.)</subtitle>
+  <toctitle>Jenn' Hjemm'</toctitle>
+  <indextitle>Jenn' Hjemm'</indextitle>
+  <firstline>Æ Blaanner de drywer</firstline>
+  <notes>
+    <note>* <i>Jenn' hjemm'</i>, alene hjemme; <i>æ Blaanner</i>, Skyerne; <i>Fowl'</i>, Fugle; <i>æ Kjar'</i>, Kjærene; <i>salder</i>, aftage; <i>ralder</i>, rasler; <i>sejjer</i>, sidder; <i>æ Skyw</i>, Bordskiven; <i>nær</i>, naar; <i>æ Knoger</i>, Lemmerne; <i>laant</i>, langt; <i>æ Kokk'</i>, Hanerne; <i>bus'</i>, storme (om Vinden); <i>Brok</i>, Grævling; <i>Gord</i>, Gaard; <i>krykker sammel</i>, synker sammen; <i>æ Sals</i>, Stuehuset; <i>Tækki</i>, Taget; <i>røwn</i>, revet; <i>Fløj</i>, Vindfløj; <i>hwæler</i>, helder; <i>Nar</i>, Nord; <i>Kukmand</i>, Gjøg; <i>Kon</i>, Smule; <i>Maag'</i>, Mage; <i>bitte Krumm'</i>, b. Smule; <i>kaare'</i>, kartede; <i>doged</i>, dugget; <i>so'</i>, sad; <i>tront</i>, travlt; <i>pilrer</i>, smaafalder; <i>hwilrer</i>, larmer; <i>drøwn</i>, dreven væk.</note>
+  </notes>
+  <source pages="68-70"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1708,15 +1707,15 @@ og den der ett mir faar en Lærki aa hør,
 
 <text id="aakjaer20000924b22">
 <head>
-    <title>Mosepigen</title>
-    <toctitle>Mosepigen</toctitle>
-    <indextitle>Mosepigen</indextitle>
-    <firstline>No søen vil du aaltsaa forlaad' mæ, Jens Fløj</firstline>
-    <notes>
-      <note>* <i>søen</i>, saaledes; <i>sejj'</i>, sidde; <i>jenne</i>, alene; <i>sørr'</i>, sørge; <i>Stripp'</i>, Malkespand; <i>ponne</i>, smaapudsler; <i>jenle</i>, enlig; <i>gan</i>, gaaet; <i>æ Mues</i>, Mosen; <i>laant</i>, langt; <i>aa</i>, at; <i>Rues'</i>, Rose; <i>Daa</i>, Dag; <i>plot</i>, plukked; <i>Krusbær</i>, Tyttebær; <i>Buttel</i>, Bærspand; <i>saa'</i>, sagt; <i>Trow</i>, Tro; <i>haaj</i>, havde; <i>wot</i>, været; <i>aalle</i>, aldrig; <i>løw'</i>, leve; <i>som-mjest</i>, næsten altid; <i>hower</i>, husker; <i>Tor'</i>, Taare; <i>Yw'</i>, Øje, <i>den Bitte</i>, Barnet; <i>føj'</i>, født; <i>en jenle Graan Staând</i>, et Øjeblik; <i>men'</i>, mens; <i>æ Kjar</i>, Kjæret.</note>
-    </notes>
-    <source pages="71-72"/>
-    <quality>korrektur1</quality>
+  <title>Mosepigen</title>
+  <toctitle>Mosepigen</toctitle>
+  <indextitle>Mosepigen</indextitle>
+  <firstline>No søen vil du aaltsaa forlaad' mæ, Jens Fløj</firstline>
+  <notes>
+    <note>* <i>søen</i>, saaledes; <i>sejj'</i>, sidde; <i>jenne</i>, alene; <i>sørr'</i>, sørge; <i>Stripp'</i>, Malkespand; <i>ponne</i>, smaapudsler; <i>jenle</i>, enlig; <i>gan</i>, gaaet; <i>æ Mues</i>, Mosen; <i>laant</i>, langt; <i>aa</i>, at; <i>Rues'</i>, Rose; <i>Daa</i>, Dag; <i>plot</i>, plukked; <i>Krusbær</i>, Tyttebær; <i>Buttel</i>, Bærspand; <i>saa'</i>, sagt; <i>Trow</i>, Tro; <i>haaj</i>, havde; <i>wot</i>, været; <i>aalle</i>, aldrig; <i>løw'</i>, leve; <i>som-mjest</i>, næsten altid; <i>hower</i>, husker; <i>Tor'</i>, Taare; <i>Yw'</i>, Øje, <i>den Bitte</i>, Barnet; <i>føj'</i>, født; <i>en jenle Graan Staând</i>, et Øjeblik; <i>men'</i>, mens; <i>æ Kjar</i>, Kjæret.</note>
+  </notes>
+  <source pages="71-72"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1753,19 +1752,19 @@ men' æ Frøer di' synger i æ Kjar.
 
 <text id="aakjaer20000924b23">
 <head>
-    <title>Mi' Nanne, ja</title>
-    <subtitle>
-      <line>Skotsk Motiv.</line>
-      <line>(1903.)</line>
-    </subtitle>
-    <toctitle>Mi' Nanne, ja</toctitle>
-    <indextitle>Mi' Nanne, ja</indextitle>
-    <firstline>Der gaar en O her vejsterpo</firstline>
-    <notes>
-      <note>* <i>æ O</i>, Aaen; <i>Fleg</i>, bredbladet Græsart; <i>Kwanne</i>, en Skærmplante; <i>Awtensdôg</i>, Aftendugg; <i>Tanne</i>, Terner; <i>Gjej</i>, Gedden; <i>Æl</i>, Byge; <i>Hwæl</i>, Skrig; <i>Row</i>, Ro; <i>wot og wande</i>, vaadt og vandet; <i>Kjar'</i>, Kjær (Flertal); <i>Syk</i>, Synk <i>skjell'</i>, skille; <i>æ Own</i>, Avnerne; <i>Kjanne</i>, Kjærner; <i>gjemmel</i>, gjennem.</note>
-    </notes>
-    <source pages="73-74"/>
-    <quality>korrektur1</quality>
+  <title>Mi' Nanne, ja</title>
+  <subtitle>
+    <line>Skotsk Motiv.</line>
+    <line>(1903.)</line>
+  </subtitle>
+  <toctitle>Mi' Nanne, ja</toctitle>
+  <indextitle>Mi' Nanne, ja</indextitle>
+  <firstline>Der gaar en O her vejsterpo</firstline>
+  <notes>
+    <note>* <i>æ O</i>, Aaen; <i>Fleg</i>, bredbladet Græsart; <i>Kwanne</i>, en Skærmplante; <i>Awtensdôg</i>, Aftendugg; <i>Tanne</i>, Terner; <i>Gjej</i>, Gedden; <i>Æl</i>, Byge; <i>Hwæl</i>, Skrig; <i>Row</i>, Ro; <i>wot og wande</i>, vaadt og vandet; <i>Kjar'</i>, Kjær (Flertal); <i>Syk</i>, Synk <i>skjell'</i>, skille; <i>æ Own</i>, Avnerne; <i>Kjanne</i>, Kjærner; <i>gjemmel</i>, gjennem.</note>
+  </notes>
+  <source pages="73-74"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1809,16 +1808,16 @@ mi' Dawsens Gled', mi' Nanne, ja!
 
 <text id="aakjaer20000924b24">
 <head>
-    <title>Min Hjemmen</title>
-    <subtitle>(1901.)</subtitle>
-    <toctitle>Min Hjemmen</toctitle>
-    <indextitle>Min Hjemmen</indextitle>
-    <firstline>Jeg er født paa Jyllands Sletter</firstline>
-    <notes>
-      <note>* <i>Strippe</i>, Træspand hvoraf den ene af Staverne danner et Haandtag; <i>Dræ</i>, Kornets Støvblomster; <i>Drevl</i>, Dyrets nedhængende Sagl; <i>Frammes</i>, Køkken.</note>
-    </notes>
-    <source pages="75-76"/>
-    <quality>korrektur1</quality>
+  <title>Min Hjemmen</title>
+  <subtitle>(1901.)</subtitle>
+  <toctitle>Min Hjemmen</toctitle>
+  <indextitle>Min Hjemmen</indextitle>
+  <firstline>Jeg er født paa Jyllands Sletter</firstline>
+  <notes>
+    <note>* <i>Strippe</i>, Træspand hvoraf den ene af Staverne danner et Haandtag; <i>Dræ</i>, Kornets Støvblomster; <i>Drevl</i>, Dyrets nedhængende Sagl; <i>Frammes</i>, Køkken.</note>
+  </notes>
+  <source pages="75-76"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1869,21 +1868,21 @@ over brede, tavse Heder.
 
 <section level="1">
 <head>
-    <toctitle>Robert Burns-oversættelser. Fra Skotsk dialekt. (1898.)</toctitle>
+  <toctitle>Robert Burns-oversættelser. Fra Skotsk dialekt. (1898.)</toctitle>
 </head>
 <content>
 
 <text id="aakjaer20000924b25">
 <head>
-    <title>De lystige Tiggere</title>
-    <toctitle>De lystige Tiggere</toctitle>
-    <indextitle>De lystige Tiggere</indextitle>
-    <firstline>En Nat da Løv lig Flagermus</firstline>
-    <notes>
-      <note>Gendigtning af Robert Burns' <xref type="translation" poem="burns2018080203"/>.</note>
-    </notes>
-    <source pages="79-95"/>
-    <quality>korrektur1</quality>
+  <title>De lystige Tiggere</title>
+  <toctitle>De lystige Tiggere</toctitle>
+  <indextitle>De lystige Tiggere</indextitle>
+  <firstline>En Nat da Løv lig Flagermus</firstline>
+  <notes>
+    <note>Gendigtning af Robert Burns' <xref type="translation" poem="burns2018080203"/>.</note>
+  </notes>
+  <source pages="79-95"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -2320,15 +2319,15 @@ Hurra for vort glade Slæng!
 
 <text id="aakjaer20000924b26">
 <head>
-    <title>Finlay</title>
-    <toctitle>Finlay</toctitle>
-    <indextitle>Finlay</indextitle>
-    <firstline>Hvem staar dér ved min Kammerdør?</firstline>
-    <notes>
-      <note>Gendigtning af Robert Burns' <xref type="translation" poem="burns2001052503"/>.</note>
-    </notes>
-    <source pages="96-97"/>
-    <quality>korrektur1</quality>
+  <title>Finlay</title>
+  <toctitle>Finlay</toctitle>
+  <indextitle>Finlay</indextitle>
+  <firstline>Hvem staar dér ved min Kammerdør?</firstline>
+  <notes>
+    <note>Gendigtning af Robert Burns' <xref type="translation" poem="burns2001052503"/>.</note>
+  </notes>
+  <source pages="96-97"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -2364,16 +2363,16 @@ Hurra for vort glade Slæng!
 
 <text id="aakjaer20000924b27">
 <head>
-    <title>Jenny i Rugen</title>
-    <toctitle>Jenny i Rugen</toctitle>
-    <indextitle>Jenny i Rugen</indextitle>
-    <firstline>Vaad til Skindet er nu Glutten</firstline>
-    <notes>
-       <note>* <i>Futten</i>, Kjælenavn for Foden.</note>
-      <note>Gendigtning af Robert Burns' <xref type="translation" poem="burns2018080204"/>.</note>
-    </notes>
-    <source pages="98"/>
-    <quality>korrektur1</quality>
+  <title>Jenny i Rugen</title>
+  <toctitle>Jenny i Rugen</toctitle>
+  <indextitle>Jenny i Rugen</indextitle>
+  <firstline>Vaad til Skindet er nu Glutten</firstline>
+  <notes>
+    <note>* <i>Futten</i>, Kjælenavn for Foden.</note>
+    <note>Gendigtning af Robert Burns' <xref type="translation" poem="burns2018080204"/>.</note>
+  </notes>
+  <source pages="98"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -2407,15 +2406,15 @@ vaad om Hoften, vaad om Futten
 
 <text id="aakjaer20000924b28">
 <head>
-    <title>Jock Rab</title>
-    <toctitle>Jock Rab</toctitle>
-    <indextitle>Jock Rab</indextitle>
-    <firstline>O saa i min Kjærrest, min Eppi' Mac Nab</firstline>
-    <notes>
-      <note>Gendigtning af Robert Burns' <xref type="translation" poem="burns2001052502"/>.</note>
-    </notes>
-    <source pages="99"/>
-    <quality>korrektur1</quality>
+  <title>Jock Rab</title>
+  <toctitle>Jock Rab</toctitle>
+  <indextitle>Jock Rab</indextitle>
+  <firstline>O saa i min Kjærrest, min Eppi' Mac Nab</firstline>
+  <notes>
+    <note>Gendigtning af Robert Burns' <xref type="translation" poem="burns2001052502"/>.</note>
+  </notes>
+  <source pages="99"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -2444,15 +2443,15 @@ Du knuser jo Hjærtet i stakkels Jock Rab!
 
 <text id="aakjaer20000924b29">
 <head>
-    <title>Tibbi Dunbar</title>
-    <toctitle>Tibbi Dunbar</toctitle>
-    <indextitle>Tibbi Dunbar</indextitle>
-    <firstline>O vil du gaa med mig</firstline>
-    <notes>
-      <note>Gendigtning af Robert Burns' <xref type="translation" poem="burns2001052501"/>.</note>
-    </notes>
-    <source pages="100"/>
-    <quality>korrektur1</quality>
+  <title>Tibbi Dunbar</title>
+  <toctitle>Tibbi Dunbar</toctitle>
+  <indextitle>Tibbi Dunbar</indextitle>
+  <firstline>O vil du gaa med mig</firstline>
+  <notes>
+    <note>Gendigtning af Robert Burns' <xref type="translation" poem="burns2001052501"/>.</note>
+  </notes>
+  <source pages="100"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -2479,15 +2478,15 @@ skjøn Tibbi Dunbar!
 
 <text id="aakjaer20000924b30">
 <head>
-    <title>Duncan Gray</title>
-    <toctitle>Duncan Gray</toctitle>
-    <indextitle>Duncan Gray</indextitle>
-    <firstline>Duncan Gray kom her som Fri'r</firstline>
-    <notes>
-      <note>Gendigtning af Robert Burns' <xref type="translation" poem="burns2001052504"/>.</note>
-    </notes>
-    <source pages="101-102"/>
-    <quality>korrektur1</quality>
+  <title>Duncan Gray</title>
+  <toctitle>Duncan Gray</toctitle>
+  <indextitle>Duncan Gray</indextitle>
+  <firstline>Duncan Gray kom her som Fri'r</firstline>
+  <notes>
+    <note>Gendigtning af Robert Burns' <xref type="translation" poem="burns2001052504"/>.</note>
+  </notes>
+  <source pages="101-102"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -2541,15 +2540,15 @@ Nu hun smiler paa hans Skjød -
 
 <text id="aakjaer20000924b31">
 <head>
-    <title>Nancy</title>
-    <toctitle>Nancy</toctitle>
-    <indextitle>Nancy</indextitle>
-    <firstline>Husbond, Husbond, stands dit Kiv</firstline>
-    <notes>
-      <note>Gendigtning af Robert Burns' <xref type="translation" poem="burns2001052505"/>.</note>
-    </notes>
-    <source pages="103-104"/>
-    <quality>korrektur1</quality>
+  <title>Nancy</title>
+  <toctitle>Nancy</toctitle>
+  <indextitle>Nancy</indextitle>
+  <firstline>Husbond, Husbond, stands dit Kiv</firstline>
+  <notes>
+    <note>Gendigtning af Robert Burns' <xref type="translation" poem="burns2001052505"/>.</note>
+  </notes>
+  <source pages="103-104"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -2596,19 +2595,19 @@ flygter Fanden selv sin Vej,
 
 <section level="1">
 <head>
-    <toctitle>Mænd og Meninger.</toctitle>
+  <toctitle>Mænd og Meninger.</toctitle>
 </head>
 <content>
 
 <text id="aakjaer20000924b32">
 <head>
-    <title>Digteren Bjørnstjerne Bjørnson</title>
-    <toctitle>Digteren Bjørnstjerne Bjørnson</toctitle>
-    <indextitle>Digteren Bjørnstjerne Bjørnson</indextitle>
-    <firstline>Hvor Ørnene drømmer bag rimtynget Gren</firstline>
-    <keywords>bjoernson,grundtvig</keywords>
-    <source pages="107-109"/>
-    <quality>korrektur1</quality>
+  <title>Digteren Bjørnstjerne Bjørnson</title>
+  <toctitle>Digteren Bjørnstjerne Bjørnson</toctitle>
+  <indextitle>Digteren Bjørnstjerne Bjørnson</indextitle>
+  <firstline>Hvor Ørnene drømmer bag rimtynget Gren</firstline>
+  <keywords>bjoernson,grundtvig</keywords>
+  <source pages="107-109"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -2662,13 +2661,13 @@ mens Skibe og Skægter gaar rundt om Fjord.
 
 <text id="aakjaer20000924b33">
 <head>
-    <title>Redaktør Viggo Hørup</title>
-    <subtitle>(1902.)</subtitle>
-    <toctitle>Redaktør Viggo Hørup</toctitle>
-    <indextitle>Redaktør Viggo Hørup</indextitle>
-    <firstline>Grøn staar Vinterrugen</firstline>
-    <source pages="110-112"/>
-    <quality>korrektur1</quality>
+  <title>Redaktør Viggo Hørup</title>
+  <subtitle>(1902.)</subtitle>
+  <toctitle>Redaktør Viggo Hørup</toctitle>
+  <indextitle>Redaktør Viggo Hørup</indextitle>
+  <firstline>Grøn staar Vinterrugen</firstline>
+  <source pages="110-112"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -2740,14 +2739,14 @@ og er nu hans Grav.
 
 <text id="aakjaer20000924b34">
 <head>
-    <title>Digteren Sofus Schandorph</title>
-    <subtitle>(1901.)</subtitle>
-    <toctitle>Digteren Sofus Schandorph</toctitle>
-    <indextitle>Digteren Sofus Schandorph</indextitle>
-    <firstline>Saadan som han der fødes ikke mange</firstline>
-    <keywords>schandorph</keywords>
-    <source pages="113-115"/>
-    <quality>korrektur1</quality>
+  <title>Digteren Sofus Schandorph</title>
+  <subtitle>(1901.)</subtitle>
+  <toctitle>Digteren Sofus Schandorph</toctitle>
+  <indextitle>Digteren Sofus Schandorph</indextitle>
+  <firstline>Saadan som han der fødes ikke mange</firstline>
+  <keywords>schandorph</keywords>
+  <source pages="113-115"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -2810,13 +2809,13 @@ Pan sin Discipel atter til sig tog;
 
 <text id="aakjaer20000924b35">
 <head>
-    <title>Landstingsmand og Lægprædikant Søren Olesen</title>
-    <subtitle>(1902.)</subtitle>
-    <toctitle>Landstingsmand og Lægprædikant Søren Olesen</toctitle>
-    <indextitle>Landstingsmand og Lægprædikant Søren Olesen</indextitle>
-    <firstline>Gamle Søren, lad mig mindes</firstline>
-    <source pages="116-118"/>
-    <quality>korrektur1</quality>
+  <title>Landstingsmand og Lægprædikant Søren Olesen</title>
+  <subtitle>(1902.)</subtitle>
+  <toctitle>Landstingsmand og Lægprædikant Søren Olesen</toctitle>
+  <indextitle>Landstingsmand og Lægprædikant Søren Olesen</indextitle>
+  <firstline>Gamle Søren, lad mig mindes</firstline>
+  <source pages="116-118"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -2875,13 +2874,13 @@ og dens Udfald nævnes: <w>Baaren</w>!
 
 <text id="aakjaer20000924b36">
 <head>
-    <title>Afholdsapostelen Ole Nygaard</title>
-    <subtitle>(1904.)</subtitle>
-    <toctitle>Afholdsapostelen Ole Nygaard</toctitle>
-    <indextitle>Afholdsapostelen Ole Nygaard</indextitle>
-    <firstline>Han var en stille Vandringsmand</firstline>
-    <source pages="119-121"/>
-    <quality>korrektur1</quality>
+  <title>Afholdsapostelen Ole Nygaard</title>
+  <subtitle>(1904.)</subtitle>
+  <toctitle>Afholdsapostelen Ole Nygaard</toctitle>
+  <indextitle>Afholdsapostelen Ole Nygaard</indextitle>
+  <firstline>Han var en stille Vandringsmand</firstline>
+  <source pages="119-121"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -2944,16 +2943,16 @@ da vil de ikke glide
 
 <text id="aakjaer20000924b37">
 <head>
-    <title>Mindesamleren Evald Tang Kristensen</title>
-    <subtitle>(1903.)</subtitle>
-    <toctitle>Mindesamleren Evald Tang Kristensen</toctitle>
-    <indextitle>Mindesamleren Evald Tang Kristensen</indextitle>
-    <firstline>Do slæft' med æ Kratt' øwer Jyllands Jurd</firstline>
-    <notes>
-      <note>* <i>æ Kratt</i>, et klodset Redskab af Form som en Kæmptrive med Jærntænder til Stubbernes Afrivning; det slæbtes frem af én Mand med en Sele om Skuldren; <i>Stown</i>, en Stump af et Straa; <i>skjøtted</i>, varede; <i>Rurd</i>, Rod; <i>aa</i>, at; <i>saa'</i>, sa'; <i>aal Slaws Lig'</i>, hvadsomhelst; <i>nø' vringelworn</i>, nogle umedgjørlige; <i>Stræger</i>, Skoser; <i>nywer</i>, nøjere; <i>Rawt</i>, Rafte; <i>Jaen</i>, Jærn; <i>hwel</i>, rosværdigt; <i>sej'</i>, sige; <i>sind'</i> siden.</note>
-    </notes>
-    <source pages="122-123"/>
-    <quality>korrektur1</quality>
+  <title>Mindesamleren Evald Tang Kristensen</title>
+  <subtitle>(1903.)</subtitle>
+  <toctitle>Mindesamleren Evald Tang Kristensen</toctitle>
+  <indextitle>Mindesamleren Evald Tang Kristensen</indextitle>
+  <firstline>Do slæft' med æ Kratt' øwer Jyllands Jurd</firstline>
+  <notes>
+    <note>* <i>æ Kratt</i>, et klodset Redskab af Form som en Kæmptrive med Jærntænder til Stubbernes Afrivning; det slæbtes frem af én Mand med en Sele om Skuldren; <i>Stown</i>, en Stump af et Straa; <i>skjøtted</i>, varede; <i>Rurd</i>, Rod; <i>aa</i>, at; <i>saa'</i>, sa'; <i>aal Slaws Lig'</i>, hvadsomhelst; <i>nø' vringelworn</i>, nogle umedgjørlige; <i>Stræger</i>, Skoser; <i>nywer</i>, nøjere; <i>Rawt</i>, Rafte; <i>Jaen</i>, Jærn; <i>hwel</i>, rosværdigt; <i>sej'</i>, sige; <i>sind'</i> siden.</note>
+  </notes>
+  <source pages="122-123"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -2982,13 +2981,13 @@ og Danmark vil sej' dæ' æ sind'.
 
 <text id="aakjaer20000924b38">
 <head>
-    <title>Hedens Degn</title>
-    <subtitle>(1904.)</subtitle>
-    <toctitle>Hedens Degn</toctitle>
-    <indextitle>Hedens Degn</indextitle>
-    <firstline>Saa synger jeg nu om en gammel Degn</firstline>
-    <source pages="124-126"/>
-    <quality>korrektur1</quality>
+  <title>Hedens Degn</title>
+  <subtitle>(1904.)</subtitle>
+  <toctitle>Hedens Degn</toctitle>
+  <indextitle>Hedens Degn</indextitle>
+  <firstline>Saa synger jeg nu om en gammel Degn</firstline>
+  <source pages="124-126"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -3051,13 +3050,13 @@ min lynggraa, falmede Hat jeg letter
 
 <text id="aakjaer20000924b39">
 <head>
-    <title>Proletar-Borgmesteren</title>
-    <subtitle>(1903.)</subtitle>
-    <toctitle>Proletar-Borgmesteren</toctitle>
-    <indextitle>Proletar-Borgmesteren</indextitle>
-    <firstline>Hvad skal de Fakler ved Raadhusets Port</firstline>
-    <source pages="127-129"/>
-    <quality>korrektur1</quality>
+  <title>Proletar-Borgmesteren</title>
+  <subtitle>(1903.)</subtitle>
+  <toctitle>Proletar-Borgmesteren</toctitle>
+  <indextitle>Proletar-Borgmesteren</indextitle>
+  <firstline>Hvad skal de Fakler ved Raadhusets Port</firstline>
+  <source pages="127-129"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -3125,20 +3124,20 @@ Op alle Mand og drej det ind i <w>vor</w> Meridian!
 
 <section level="1">
 <head>
-    <toctitle>Studentersange.</toctitle>
+  <toctitle>Studentersange.</toctitle>
 </head>
 <content>
 
 <text id="aakjaer20000924b40">
 <head>
-    <title>Russen</title>
-    <subtitle>(1903.)</subtitle>
-    <toctitle>Russen</toctitle>
-    <indextitle>Russen</indextitle>
-    <firstline>Naar Stormen med de røde Teglsten spøger</firstline>
-    <source pages="130-131"/>
-    <quality>korrektur1</quality>
-    <!-- Det er ikke en fejl at det mangler en linje i strofen "Velkommen, Rus, ... -->
+  <title>Russen</title>
+  <subtitle>(1903.)</subtitle>
+  <toctitle>Russen</toctitle>
+  <indextitle>Russen</indextitle>
+  <firstline>Naar Stormen med de røde Teglsten spøger</firstline>
+  <source pages="130-131"/>
+  <quality>korrektur1</quality>
+  <!-- Det er ikke en fejl at det mangler en linje i strofen "Velkommen, Rus, ... -->
 </head>
 <body>
 <poetry>
@@ -3181,13 +3180,13 @@ lad hagle over hver en Eddik'brygger!
 
 <text id="aakjaer20000924b41">
 <head>
-    <title>Bondestudenten</title>
-    <subtitle>(1896.)</subtitle>
-    <toctitle>Bondestudenten</toctitle>
-    <indextitle>Bondestudenten</indextitle>
-    <firstline>Saa tror du, Studenten er tør som en Pind</firstline>
-    <source pages="132-134"/>
-    <quality>korrektur1</quality>
+  <title>Bondestudenten</title>
+  <subtitle>(1896.)</subtitle>
+  <toctitle>Bondestudenten</toctitle>
+  <indextitle>Bondestudenten</indextitle>
+  <firstline>Saa tror du, Studenten er tør som en Pind</firstline>
+  <source pages="132-134"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -3238,13 +3237,13 @@ og drejer din knirkende Kværnsten paany.
 
 <text id="aakjaer20000924b42">
 <head>
-    <title>Studenter-Maj</title>
-    <subtitle>(1897.)</subtitle>
-    <toctitle>Studenter-Maj</toctitle>
-    <indextitle>Studenter-Maj</indextitle>
-    <firstline>I Syden saar man Kanoners Sæd</firstline>
-    <source pages="135-137"/>
-    <quality>korrektur1</quality>
+  <title>Studenter-Maj</title>
+  <subtitle>(1897.)</subtitle>
+  <toctitle>Studenter-Maj</toctitle>
+  <indextitle>Studenter-Maj</indextitle>
+  <firstline>I Syden saar man Kanoners Sæd</firstline>
+  <source pages="135-137"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -3313,13 +3312,13 @@ gid længe dets Kartofler trives!
 
 <text id="aakjaer20000924b43">
 <head>
-    <title>Den Revolutionære Student</title>
-    <subtitle>(1899.)</subtitle>
-    <toctitle>Den Revolutionære Student</toctitle>
-    <indextitle>Den Revolutionære Student</indextitle>
-    <firstline>Om Kvisten der blæser en strygende Vind</firstline>
-    <source pages="138-141"/>
-    <quality>korrektur1</quality>
+  <title>Den Revolutionære Student</title>
+  <subtitle>(1899.)</subtitle>
+  <toctitle>Den Revolutionære Student</toctitle>
+  <indextitle>Den Revolutionære Student</indextitle>
+  <firstline>Om Kvisten der blæser en strygende Vind</firstline>
+  <source pages="138-141"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -3409,13 +3408,13 @@ for det vil vi løfte vort Krus!
 
 <text id="aakjaer20000924b44">
 <head>
-    <title>Brug for Studenter</title>
-    <subtitle>(1903.)</subtitle>
-    <toctitle>Brug for Studenter</toctitle>
-    <indextitle>Brug for Studenter</indextitle>
-    <firstline>Der kom fra Kathedret et gjaldende Raab</firstline>
-    <source pages="142-144"/>
-    <quality>korrektur1</quality>
+  <title>Brug for Studenter</title>
+  <subtitle>(1903.)</subtitle>
+  <toctitle>Brug for Studenter</toctitle>
+  <indextitle>Brug for Studenter</indextitle>
+  <firstline>Der kom fra Kathedret et gjaldende Raab</firstline>
+  <source pages="142-144"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -3478,19 +3477,19 @@ men hvis du tør staa under Stormskyens Bryn
 
 <section level="1">
 <head>
-    <toctitle>Politiske Sange.</toctitle>
+  <toctitle>Politiske Sange.</toctitle>
 </head>
 <content>
 
 <text id="aakjaer20000924b45">
 <head>
-    <title>En Fabel</title>
-    <subtitle>(1901.)</subtitle>
-    <toctitle>En Fabel</toctitle>
-    <indextitle>En Fabel</indextitle>
-    <firstline>Der var engang en Grand danois</firstline>
-    <source pages="145-147"/>
-    <quality>korrektur1</quality>
+  <title>En Fabel</title>
+  <subtitle>(1901.)</subtitle>
+  <toctitle>En Fabel</toctitle>
+  <indextitle>En Fabel</indextitle>
+  <firstline>Der var engang en Grand danois</firstline>
+  <source pages="145-147"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -3559,13 +3558,13 @@ der har de Mopser - Logren.
 
 <text id="aakjaer20000924b46">
 <head>
-    <title>Valgsang</title>
-    <subtitle>(1901.)</subtitle>
-    <toctitle>Valgsang</toctitle>
-    <indextitle>Valgsang</indextitle>
-    <firstline>Store Dag, Alvorsdag</firstline>
-    <source pages="148-150"/>
-    <quality>korrektur1</quality>
+  <title>Valgsang</title>
+  <subtitle>(1901.)</subtitle>
+  <toctitle>Valgsang</toctitle>
+  <indextitle>Valgsang</indextitle>
+  <firstline>Store Dag, Alvorsdag</firstline>
+  <source pages="148-150"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -3637,16 +3636,16 @@ lad den rumme Højres Ben!
 
 <text id="aakjaer20000924b47">
 <head>
-    <title>Venstre-Vise</title>
-    <subtitle>(1902.)</subtitle>
-    <toctitle>Venstre-Vise</toctitle>
-    <indextitle>Venstre-Vise</indextitle>
-    <firstline>Nu har vi læst Aviser nok</firstline>
-    <notes>
-      <note>* <i>krejle</i>, smaahøkre.</note>
-    </notes>
-    <source pages="151-152"/>
-    <quality>korrektur1</quality>
+  <title>Venstre-Vise</title>
+  <subtitle>(1902.)</subtitle>
+  <toctitle>Venstre-Vise</toctitle>
+  <indextitle>Venstre-Vise</indextitle>
+  <firstline>Nu har vi læst Aviser nok</firstline>
+  <notes>
+    <note>* <i>krejle</i>, smaahøkre.</note>
+  </notes>
+  <source pages="151-152"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -3702,19 +3701,19 @@ at ligge her og krejle.
 
 <section level="1">
 <head>
-    <toctitle>Sociale Digte.</toctitle>
+  <toctitle>Sociale Digte.</toctitle>
 </head>
 <content>
 
 <text id="aakjaer20000924b48">
 <head>
-    <title>Til Frederiksbergs borger</title>
-    <subtitle>(1900.)</subtitle>
-    <toctitle>Til Frederiksbergs borger</toctitle>
-    <indextitle>Til Frederiksbergs borger</indextitle>
-    <firstline>Sig mig fortroligt, om Solsortens Toner</firstline>
-    <source pages="153-155"/>
-    <quality>korrektur1</quality>
+  <title>Til Frederiksbergs borger</title>
+  <subtitle>(1900.)</subtitle>
+  <toctitle>Til Frederiksbergs borger</toctitle>
+  <indextitle>Til Frederiksbergs borger</indextitle>
+  <firstline>Sig mig fortroligt, om Solsortens Toner</firstline>
+  <source pages="153-155"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -3786,14 +3785,14 @@ smykke de fagreste Blade.
 
 <text id="aakjaer20000924b49">
 <head>
-    <title>Til Pressen</title>
-    <subtitle>(1902.)</subtitle>
-    <toctitle>Til Pressen</toctitle>
-    <indextitle>Til Pressen</indextitle>
-    <firstline>Fordum Fyrsters kjøbte Slave</firstline>
-    <source pages="156-158"/>
-    <keywords>oersted</keywords>
-    <quality>korrektur1</quality>
+  <title>Til Pressen</title>
+  <subtitle>(1902.)</subtitle>
+  <toctitle>Til Pressen</toctitle>
+  <indextitle>Til Pressen</indextitle>
+  <firstline>Fordum Fyrsters kjøbte Slave</firstline>
+  <source pages="156-158"/>
+  <keywords>oersted</keywords>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -3858,13 +3857,13 @@ Du er Tidens Hejmdalsvagt!
 
 <text id="aakjaer20000924b50">
 <head>
-    <title>Til de syge Typografer</title>
-    <subtitle>(1903.)</subtitle>
-    <toctitle>Til de syge Typografer</toctitle>
-    <indextitle>Til de syge Typografer</indextitle>
-    <firstline>Det er en stille Gjærning den at sætte</firstline>
-    <source pages="159-161"/>
-    <quality>korrektur1</quality>
+  <title>Til de syge Typografer</title>
+  <subtitle>(1903.)</subtitle>
+  <toctitle>Til de syge Typografer</toctitle>
+  <indextitle>Til de syge Typografer</indextitle>
+  <firstline>Det er en stille Gjærning den at sætte</firstline>
+  <source pages="159-161"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -3922,13 +3921,13 @@ thi hør vi Alle ham til Kræfter kalde.
 
 <text id="aakjaer20000924b51">
 <head>
-    <title>Husmandsbryllup</title>
-    <subtitle>(1903.)</subtitle>
-    <toctitle>Husmandsbryllup</toctitle>
-    <indextitle>Husmandsbryllup</indextitle>
-    <firstline>Der er et Ord, som ingen Mand tør glemme</firstline>
-    <source pages="162-163"/>
-    <quality>korrektur1</quality>
+  <title>Husmandsbryllup</title>
+  <subtitle>(1903.)</subtitle>
+  <toctitle>Husmandsbryllup</toctitle>
+  <indextitle>Husmandsbryllup</indextitle>
+  <firstline>Der er et Ord, som ingen Mand tør glemme</firstline>
+  <source pages="162-163"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -3977,13 +3976,13 @@ inde Fred og en Glut i Puden, -
 
 <text id="aakjaer20000924b52">
 <head>
-    <title>Arbejder-Sølvbryllup</title>
-    <subtitle>(1902.)</subtitle>
-    <toctitle>Arbejder-Sølvbryllup</toctitle>
-    <indextitle>Arbejder-Sølvbryllup</indextitle>
-    <firstline>Femogtyve lange Aar</firstline>
-    <source pages="164-166"/>
-    <quality>korrektur1</quality>
+  <title>Arbejder-Sølvbryllup</title>
+  <subtitle>(1902.)</subtitle>
+  <toctitle>Arbejder-Sølvbryllup</toctitle>
+  <indextitle>Arbejder-Sølvbryllup</indextitle>
+  <firstline>Femogtyve lange Aar</firstline>
+  <source pages="164-166"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -4040,13 +4039,13 @@ ind til Evighedens Kaar.
 
 <text id="aakjaer20000924b53">
 <head>
-    <title>Arbejdernes læseselskab</title>
-    <subtitle>(1904.)</subtitle>
-    <toctitle>Arbejdernes læseselskab</toctitle>
-    <indextitle>Arbejdernes læseselskab</indextitle>
-    <firstline>Om Danmarks Strande render den blanke Bølgesnor</firstline>
-    <source pages="167-168"/>
-    <quality>korrektur1</quality>
+  <title>Arbejdernes læseselskab</title>
+  <subtitle>(1904.)</subtitle>
+  <toctitle>Arbejdernes læseselskab</toctitle>
+  <indextitle>Arbejdernes læseselskab</indextitle>
+  <firstline>Om Danmarks Strande render den blanke Bølgesnor</firstline>
+  <source pages="167-168"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -4090,16 +4089,16 @@ vor Fakkelvagt mod Mørket, der knuger Gydens Hjem.
 
 <text id="aakjaer20000924b54">
 <head>
-    <title>Ved Kjedlen</title>
-    <subtitle>(Ferd. Freiligrath.)</subtitle>
-    <toctitle>Ved Kjedlen</toctitle>
-    <indextitle>Ved Kjedlen</indextitle>
-    <firstline>En Damper kom fra Biberich</firstline>
-    <notes>
-      <note>Gendigtning af Freiligraths <xref type="translation" poem="freiligrath2001121501"/>.</note>
-    </notes>
-    <source pages="169-173"/>
-    <quality>korrektur1</quality>
+  <title>Ved Kjedlen</title>
+  <subtitle>(Ferd. Freiligrath.)</subtitle>
+  <toctitle>Ved Kjedlen</toctitle>
+  <indextitle>Ved Kjedlen</indextitle>
+  <firstline>En Damper kom fra Biberich</firstline>
+  <notes>
+    <note>Gendigtning af Freiligraths <xref type="translation" poem="freiligrath2001121501"/>.</note>
+  </notes>
+  <source pages="169-173"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -4173,16 +4172,16 @@ Men med et Blik til Kongens Slot nu Maskinisten aander frem:
 
 <text id="aakjaer20000924b55">
 <head>
-    <title>Sypigen</title>
-    <subtitle>(Thomas Hood.)</subtitle>
-    <toctitle>Sypigen</toctitle>
-    <indextitle>Sypigen</indextitle>
-    <firstline>Med Fingre stive af Stræb</firstline>
-    <notes>
-      <note>Gendigtning af Thomas Hoods <xref type="translation" poem="hood2001121501"/>.</note>
-    </notes>
-    <source pages="174-177"/>
-    <quality>korrektur1</quality>
+  <title>Sypigen</title>
+  <subtitle>(Thomas Hood.)</subtitle>
+  <toctitle>Sypigen</toctitle>
+  <indextitle>Sypigen</indextitle>
+  <firstline>Med Fingre stive af Stræb</firstline>
+  <notes>
+    <note>Gendigtning af Thomas Hoods <xref type="translation" poem="hood2001121501"/>.</note>
+  </notes>
+  <source pages="174-177"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -4291,20 +4290,20 @@ hun sang om Skjorten sin Sang.
 
 <text id="aakjaer20000924b56">
 <head>
-    <title>Omsværm os kun, Fjender. -</title>
-    <subtitle>
-      <line>Nehemias 4. Kap.</line>
-      <line>Arthur Fitger.</line>
-    </subtitle>
-    <toctitle>Omsværm os kun, Fjender. -</toctitle>
-    <indextitle>Omsværm os kun, Fjender. -</indextitle>
-    <firstline>Da nu det sig rygted til Fjendernes By</firstline>
-    <notes>
-      <note>Cf. <xref bibel="bibelnehemias04"/></note>
-      <note>Gendigtning af Arthur Fitgers <xref type="translation" poem="fitger2019100403"/>.</note>
-    </notes>
-    <source pages="178-179"/>
-    <quality>korrektur1</quality>
+  <title>Omsværm os kun, Fjender. -</title>
+  <subtitle>
+    <line>Nehemias 4. Kap.</line>
+    <line>Arthur Fitger.</line>
+  </subtitle>
+  <toctitle>Omsværm os kun, Fjender. -</toctitle>
+  <indextitle>Omsværm os kun, Fjender. -</indextitle>
+  <firstline>Da nu det sig rygted til Fjendernes By</firstline>
+  <notes>
+    <note>Cf. <xref bible="bibelnehemias04"/></note>
+    <note>Gendigtning af Arthur Fitgers <xref type="translation" poem="fitger2019100403"/>.</note>
+  </notes>
+  <source pages="178-179"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -4343,14 +4342,14 @@ og bygger, mens Kalken vi blander med Blod.
 
 <text id="aakjaer20000924b57">
 <head>
-    <title>For vi træder hverandre i Dyndet ned</title>
-    <subtitle>(1904.)</subtitle>
-    <toctitle>For vi træder hverandre i Dyndet ned</toctitle>
-    <indextitle>For vi træder hverandre i Dyndet ned</indextitle>
-    <firstline>Der staa en Purle ved Vejens Sving</firstline>
-    <!-- Nuppet fra debbi.dk -->
-    <source pages="180"/>
-    <quality>korrektur1</quality>
+  <title>For vi træder hverandre i Dyndet ned</title>
+  <subtitle>(1904.)</subtitle>
+  <toctitle>For vi træder hverandre i Dyndet ned</toctitle>
+  <indextitle>For vi træder hverandre i Dyndet ned</indextitle>
+  <firstline>Der staa en Purle ved Vejens Sving</firstline>
+  <!-- Nuppet fra debbi.dk -->
+  <source pages="180"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -4388,13 +4387,13 @@ For vi træder hverandre i Dyndet ned.
 
 <text id="aakjaer20000924b58">
 <head>
-    <title>Arbejdersang</title>
-    <subtitle>(1902.)</subtitle>
-    <toctitle>Arbejdersang</toctitle>
-    <indextitle>Arbejdersang</indextitle>
-    <firstline>Junkerspiren kaster stolt med Nakken</firstline>
-    <source pages="181-183"/>
-    <quality>korrektur1</quality>
+  <title>Arbejdersang</title>
+  <subtitle>(1902.)</subtitle>
+  <toctitle>Arbejdersang</toctitle>
+  <indextitle>Arbejdersang</indextitle>
+  <firstline>Junkerspiren kaster stolt med Nakken</firstline>
+  <source pages="181-183"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -4456,5 +4455,6 @@ fra det <w>nye</w> Samfunds Morgengry.
 </text>
 </content>
 </section>
+
 </workbody>
 </kalliopework>

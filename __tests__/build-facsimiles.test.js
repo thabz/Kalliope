@@ -109,8 +109,8 @@ page   num  type   width height color comp bpc  enc interp  object ID x-ppi y-pp
     expect(
       calls.filter(call => call.cmd === 'pdftoppm').map(call => call.args)
     ).toEqual([
-      expect.arrayContaining(['-f', '1', '-l', '1']),
-      expect.arrayContaining(['-f', '3', '-l', '3']),
+      expect.arrayContaining(['-cropbox', '-f', '1', '-l', '1']),
+      expect.arrayContaining(['-cropbox', '-f', '3', '-l', '3']),
     ]);
   });
 

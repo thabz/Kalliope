@@ -1,7 +1,7 @@
 {
   "name": "kalliope-syntax",
   "displayName": "Kalliope Syntax",
-  "description": "Syntax highlighting for Kalliope old2kalliope text files.",
+  "description": "Syntax highlighting for Kalliope text-format files.",
   "version": "0.0.1",
   "publisher": "thabz",
   "engines": {
@@ -11,7 +11,9 @@
   "activationEvents": [
     "onStartupFinished",
     "onLanguage:plaintext",
-    "onLanguage:kalliope-old"
+    "onLanguage:kalliope-text",
+    "onLanguage:xml",
+    "onCommand:kalliope.showFacsimileForCurrentText"
   ],
   "categories": [
     "Programming Languages"
@@ -19,20 +21,46 @@
   "contributes": {
     "languages": [
       {
-        "id": "kalliope-old",
+        "id": "kalliope-text",
         "aliases": [
-          "Kalliope Old Text",
-          "kalliope-old"
+          "Kalliope Text Format",
+          "kalliope-text"
         ],
-        "configuration": "./language-configuration/kalliope-old.json"
+        "configuration": "./language-configuration/kalliope-text.json"
       }
     ],
     "grammars": [
       {
-        "language": "kalliope-old",
-        "scopeName": "source.kalliope.old",
-        "path": "./syntaxes/kalliope-old.tmLanguage.json"
+        "language": "kalliope-text",
+        "scopeName": "source.kalliope.text",
+        "path": "./syntaxes/kalliope-text.tmLanguage.json"
       }
-    ]
+    ],
+    "commands": [
+      {
+        "command": "kalliope.showFacsimileForCurrentText",
+        "title": "Kalliope: Vis facsimile for aktuelt digt"
+      }
+    ],
+    "configuration": {
+      "title": "Kalliope",
+      "properties": {
+        "kalliope.facsimiles.localRoot": {
+          "type": "string",
+          "default": "facsimiles",
+          "description": "Lokal rodmappe for facsimile-billeder. Relative stier fortolkes fra workspace-roden."
+        },
+        "kalliope.facsimiles.remoteBaseUrl": {
+          "type": "string",
+          "default": "https://kalliope.org/static/facsimiles",
+          "description": "Fallback-URL for facsimile-billeder, når en lokal billedfil ikke findes."
+        },
+        "kalliope.facsimiles.autoUpdate": {
+          "type": "boolean",
+          "default": true,
+          "description": "Opdater det åbne facsimile-split automatisk, når cursoren flyttes."
+        }
+      }
+    }
   }
 }

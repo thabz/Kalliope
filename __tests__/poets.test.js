@@ -5,6 +5,10 @@ describe('poet language validation', () => {
     expect(isKnownPoetLanguage('grc')).toBe(true);
   });
 
+  it('allows Dutch poet language', () => {
+    expect(isKnownPoetLanguage('nl')).toBe(true);
+  });
+
   it('rejects unknown language codes', () => {
     expect(isKnownPoetLanguage('zz')).toBe(false);
   });

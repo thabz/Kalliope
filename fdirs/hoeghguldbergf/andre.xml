@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="andre" author="hoeghguldbergf" status="incomplete" type="poetry">
 <workhead>
-   <title>Andre digte</title>
-   <quality>korrektur1</quality>
+  <title>Andre digte</title>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
 <text id="hoeghguldbergf2017092001">
 <head>
-   <title>Candidaten</title>
-   <firstline>Gud ske Tak! Det er endt! Attestatsen fik jeg omsider</firstline>
-   <notes>
-       <note>Indtastet efter Frederik Høegh-Guldberg: <i>Samlede Digte</i>, Kbh., 1803, bd. 2, pp. 289-298.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Candidaten</title>
+  <firstline>Gud ske Tak! Det er endt! Attestatsen fik jeg omsider</firstline>
+  <source pages="289-298">Frederik Høegh-Guldberg: <i>Samlede Digte</i>, Kbh., 1803, bd. 2.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -196,13 +194,13 @@ fare med Fred jeg bort! og hvile sig Hyrden i Graven
 
 <text id="hoeghguldbergf2017092002">
 <head>
-   <title>Assistentskirkegaarden</title>
-   <firstline>Hil dig, de lykkelige Dødes Hjem!</firstline>
-   <notes>
-       <note>Indtastet efter Frederik Høegh-Guldberg: <i>Samlede Digte</i>, Kbh., 1803, bd. 2, pp. 40-84.</note>
-       <note>Mottoet stammer fra <a poet="herder">Johann Gottfried Herders</a> ,,Ahnungen der eigenen Zukunft, kap. 3: Von der Seelenwanderung.''</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Assistentskirkegaarden</title>
+  <firstline>Hil dig, de lykkelige Dødes Hjem!</firstline>
+  <notes>
+    <note>Mottoet stammer fra <a poet="herder">Johann Gottfried Herders</a> ,,Ahnungen der eigenen Zukunft, kap. 3: Von der Seelenwanderung.''</note>
+  </notes>
+  <source pages="40-84">Frederik Høegh-Guldberg: <i>Samlede Digte</i>, Kbh., 1803, bd. 2.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1015,17 +1013,17 @@ Held Eder! Held, I lykkelige Døde!
 
 <text id="hoeghguldbergf2001071501">
 <head>
-   <title>Af fyldte Bægre vinkes vi</title>
-   <subtitle>Mel.: En Prinds jeg været har i Dag.</subtitle>
-   <toctitle>Af fyldte Bægre vinkes vi</toctitle>
-   <indextitle>Af fyldte Bægre vinkes vi</indextitle>
-   <firstline>Af fyldte Bægre vinkes vi</firstline>
-   <notes>
-      <note type="credits">Bidrag fra Margit Ammentorp.</note>
-      <note>Indtastet fra <i>Digter-Krands - En Samling af udkaarede ældre og nyere Selskabssange</i>, Odense, 1826. Trykker og udgiver er S. Hempel "Eier af Fyens Adressekontoir".</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <keywords>drikkevise</keywords>
+  <title>Af fyldte Bægre vinkes vi</title>
+  <subtitle>Mel.: En Prinds jeg været har i Dag.</subtitle>
+  <toctitle>Af fyldte Bægre vinkes vi</toctitle>
+  <indextitle>Af fyldte Bægre vinkes vi</indextitle>
+  <firstline>Af fyldte Bægre vinkes vi</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+  </notes>
+  <source><i>Digter-Krands - En Samling af udkaarede ældre og nyere Selskabssange</i>, Odense, 1826. Trykker og udgiver er S. Hempel "Eier af Fyens Adressekontoir".</source>
+  <quality>korrektur1,kilde</quality>
+  <keywords>drikkevise</keywords>
 </head>
 <body>
 <poetry>
@@ -1069,17 +1067,17 @@ de tømme Oldefædres Skaal!
 
 <text id="hoeghguldbergf2001071502">
 <head>
-   <title>End smiler Glæden over hele Jorden</title>
-   <subtitle>Mel.: Hvor skjønt sin Pligt osv.</subtitle>
-   <toctitle>End smiler Glæden over hele Jorden</toctitle>
-   <indextitle>End smiler Glæden over hele Jorden</indextitle>
-   <firstline>End smiler Glæden over hele Jorden</firstline>
-   <notes>
-      <note type="credits">Bidrag fra Margit Ammentorp.</note>
-      <note>Indtastet fra <i>Digter-Krands - En Samling af udkaarede ældre og nyere Selskabssange</i>, Odense, 1826. Trykker og udgiver er S. Hempel "Eier af Fyens Adressekontoir".</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <keywords>drikkevise</keywords>
+  <title>End smiler Glæden over hele Jorden</title>
+  <subtitle>Mel.: Hvor skjønt sin Pligt osv.</subtitle>
+  <toctitle>End smiler Glæden over hele Jorden</toctitle>
+  <indextitle>End smiler Glæden over hele Jorden</indextitle>
+  <firstline>End smiler Glæden over hele Jorden</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+  </notes>
+  <source><i>Digter-Krands - En Samling af udkaarede ældre og nyere Selskabssange</i>, Odense, 1826. Trykker og udgiver er S. Hempel "Eier af Fyens Adressekontoir".</source>
+  <quality>korrektur1,kilde</quality>
+  <keywords>drikkevise</keywords>
 </head>
 <body>
 <poetry>
@@ -1130,16 +1128,16 @@ glad følge du dens Vennebud!
 
 <text id="hoeghguldbergf2001071503">
 <head>
-   <title>Til Glæde! til Glæde!</title>
-   <toctitle>Til Glæde! til Glæde!</toctitle>
-   <indextitle>Til Glæde! til Glæde!</indextitle>
-   <firstline>Til Glæde! til Glæde!</firstline>
-   <notes>
-      <note type="credits">Bidrag fra Margit Ammentorp.</note>
-      <note>Indtastet fra <i>Digter-Krands - En Samling af udkaarede ældre og nyere Selskabssange</i>, Odense, 1826. Trykker og udgiver er S. Hempel "Eier af Fyens Adressekontoir".</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <keywords>drikkevise</keywords>
+  <title>Til Glæde! til Glæde!</title>
+  <toctitle>Til Glæde! til Glæde!</toctitle>
+  <indextitle>Til Glæde! til Glæde!</indextitle>
+  <firstline>Til Glæde! til Glæde!</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+  </notes>
+  <source><i>Digter-Krands - En Samling af udkaarede ældre og nyere Selskabssange</i>, Odense, 1826. Trykker og udgiver er S. Hempel "Eier af Fyens Adressekontoir".</source>
+  <quality>korrektur1,kilde</quality>
+  <keywords>drikkevise</keywords>
 </head>
 <body>
 <poetry>
@@ -1184,16 +1182,16 @@ vi gik den nusmilende Vei!
 
 <text id="hoeghguldbergf2001071504">
 <head>
-   <title>Ud til Kampen os Flaskerne byde</title>
-   <toctitle>Ud til Kampen os Flaskerne byde</toctitle>
-   <indextitle>Ud til Kampen os Flaskerne byde</indextitle>
-   <firstline>Ud til Kampen os Flaskerne byde</firstline>
-   <notes>
-      <note type="credits">Bidrag fra Margit Ammentorp.</note>
-      <note>Indtastet fra <i>Digter-Krands - En Samling af udkaarede ældre og nyere Selskabssange</i>, Odense, 1826. Trykker og udgiver er S. Hempel "Eier af Fyens Adressekontoir".</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <keywords>drikkevise</keywords>
+  <title>Ud til Kampen os Flaskerne byde</title>
+  <toctitle>Ud til Kampen os Flaskerne byde</toctitle>
+  <indextitle>Ud til Kampen os Flaskerne byde</indextitle>
+  <firstline>Ud til Kampen os Flaskerne byde</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+  </notes>
+  <source><i>Digter-Krands - En Samling af udkaarede ældre og nyere Selskabssange</i>, Odense, 1826. Trykker og udgiver er S. Hempel "Eier af Fyens Adressekontoir".</source>
+  <quality>korrektur1,kilde</quality>
+  <keywords>drikkevise</keywords>
 </head>
 <body>
 <poetry>

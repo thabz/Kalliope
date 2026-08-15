@@ -47,5 +47,14 @@ describe('helpers', () => {
         ['Anden linje', { num: 2 }],
       ]);
     });
+
+    it('makes a multi-line language span valid on every rendered line', () => {
+      expect(
+        lineTexts('<span lang="sv">första raden\nandra raden</span>')
+      ).toEqual([
+        '<span lang="sv">första raden</span>',
+        '<span lang="sv">andra raden</span>',
+      ]);
+    });
   });
 });
