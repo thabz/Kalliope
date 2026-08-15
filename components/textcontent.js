@@ -519,7 +519,7 @@ const TextContent = (props) => {
   }
 
   let smallClassName = '';
-  if (options.fontSize === 'small') {
+  if (type === 'quote' || options.fontSize === 'small') {
     smallClassName = ' small';
   }
 
@@ -642,10 +642,11 @@ const TextContent = (props) => {
           padding-left: 10px;
         }
         :global(.blockquote) {
-          /*width: calc(100% - ${options.marginLeft} - ${options.marginRight});*/
-          margin-left: ${options.marginLeft};
-          margin-right: ${options.marginRight};
-          font-size: ${options.fontSize};
+          display: block;
+          width: fit-content;
+          max-width: ${options.maxWidth ?? '100%'};
+          margin-inline-start: auto;
+          margin-inline-end: 0;
         }
       `}</style>
     </div>

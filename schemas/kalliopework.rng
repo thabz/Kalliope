@@ -224,8 +224,7 @@
 
   <define name="quote">
     <element name="quote">
-      <optional><attribute name="font-size"><text/></attribute></optional>
-      <optional><attribute name="margin-left"><text/></attribute></optional>
+      <optional><attribute name="max-width"><text/></attribute></optional>
       <optional><attribute name="lang"><text/></attribute></optional>
       <ref name="mixed"/>
     </element>

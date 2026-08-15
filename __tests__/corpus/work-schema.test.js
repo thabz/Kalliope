@@ -58,4 +58,37 @@ describe('kalliopework RELAX NG schema', () => {
       );
     }).toThrow();
   });
+
+  it('accepts quote max-width and rejects quote styling attributes', () => {
+    const baseXml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Digte</title><year>1900</year></workhead>
+        <workbody>
+          <text id="digter1900a">
+            <head><firstline>Første linje</firstline></head>
+            <body><quote max-width="70%" lang="de">Erste Zeile</quote></body>
+          </text>
+        </workbody>
+      </kalliopework>
+    `;
+    const legacyXml = baseXml
+      .replace('max-width="70%"', 'margin-left="30%"')
+      .replace(' lang="de"', ' font-size="small" lang="de"');
+
+    expect(() => {
+      execFileSync(
+        'xmllint',
+        ['--noout', '--relaxng', 'schemas/kalliopework.rng', '-'],
+        { input: baseXml, encoding: 'utf8', stdio: ['pipe', 'pipe', 'pipe'] }
+      );
+    }).not.toThrow();
+
+    expect(() => {
+      execFileSync(
+        'xmllint',
+        ['--noout', '--relaxng', 'schemas/kalliopework.rng', '-'],
+        { input: legacyXml, encoding: 'utf8', stdio: ['pipe', 'pipe', 'pipe'] }
+      );
+    }).toThrow();
+  });
 });

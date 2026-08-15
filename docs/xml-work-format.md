@@ -365,9 +365,10 @@ Datohjaelperne kender også negative år og enkelte `ca.`-udtryk i andre sammenh
 
 Blokattributter:
 
-- `font-size="small"`: mindre skrift.
-- `margin-left="30%"` eller lignende: bruges især paa `<quote>`.
-- `margin-right="..."`: bruges især paa `<quote>`.
+- `max-width="..."`: valgfri maksimal bredde for især `<quote>`.
+
+`<quote>` renderes med mindre skrift, naturlig bredde og placeres mod højre.
+Brug kun `max-width`, når et langt citat skal begrænses yderligere.
 
 Eksempel:
 
@@ -382,7 +383,7 @@ Anden verslinje
 
 Tredje verslinje
   </poetry>
-  <quote margin-left="30%" font-size="small">
+  <quote max-width="70%">
 Et citat
   </quote>
 </body>
