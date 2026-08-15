@@ -5,10 +5,10 @@ const ANTHOLOGY_WORK_TITLE = 'Tekster i andre udgivelser';
 
 const publicationTextId = textId => `${textId}a`;
 
-const isAnthologyText = (textAuthorId, publicationPoetId) =>
-  publicationPoetId != null &&
+const isAnthologyText = (textAuthorId, workAuthorId) =>
+  workAuthorId != null &&
   textAuthorId != null &&
-  textAuthorId !== publicationPoetId;
+  textAuthorId !== workAuthorId;
 
 const resolveAuthorId = (node, fallbackAuthorId) => {
   let current = node;
