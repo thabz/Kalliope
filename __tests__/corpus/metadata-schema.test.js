@@ -4,7 +4,7 @@ import { execFileSync } from 'child_process';
 const infoXmlFiles = () =>
   execFileSync('git', ['ls-files', 'fdirs/*/info.xml'], { encoding: 'utf8' })
     .split('\n')
-    .filter(Boolean);
+    .filter(filename => filename.length > 0);
 
 describe('info.xml RELAX NG schema', () => {
   it('requires literary periods for every poet', () => {
