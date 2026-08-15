@@ -40,6 +40,7 @@
         <ref name="notes"/>
         <ref name="note"/>
         <ref name="quality"/>
+        <ref name="pagebreaks"/>
         <ref name="pictures"/>
         <ref name="picture"/>
         <ref name="poetry"/>
@@ -225,6 +226,7 @@
     <element name="quote">
       <optional><attribute name="font-size"><text/></attribute></optional>
       <optional><attribute name="margin-left"><text/></attribute></optional>
+      <optional><attribute name="lang"><text/></attribute></optional>
       <ref name="mixed"/>
     </element>
   </define>
@@ -246,9 +248,9 @@
   <define name="xref">
     <element name="xref">
       <optional><attribute name="poem"><text/></attribute></optional>
-      <optional><attribute name="bibel"><text/></attribute></optional>
+      <optional><attribute name="bible"><text/></attribute></optional>
       <optional><attribute name="type"><text/></attribute></optional>
-      <ref name="mixed"/>
+      <empty/>
     </element>
   </define>
 
@@ -262,6 +264,7 @@
   <define name="pb">
     <element name="pb">
       <optional><attribute name="n"><text/></attribute></optional>
+      <optional><attribute name="facs"><text/></attribute></optional>
       <ref name="mixed"/>
     </element>
   </define>
@@ -290,9 +293,9 @@
   <define name="content"><element name="content"><ref name="simpleElement"/></element></define>
   <define name="head"><element name="head"><ref name="simpleElement"/></element></define>
   <define name="year"><element name="year"><ref name="simpleElement"/></element></define>
-  <define name="subtitle"><element name="subtitle"><ref name="simpleElement"/></element></define>
+  <define name="subtitle"><element name="subtitle"><optional><attribute name="lang"><text/></attribute></optional><ref name="simpleElement"/></element></define>
   <define name="suptitle"><element name="suptitle"><ref name="simpleElement"/></element></define>
-  <define name="indextitle"><element name="indextitle"><ref name="simpleElement"/></element></define>
+  <define name="indextitle"><element name="indextitle"><optional><attribute name="force-index"><text/></attribute></optional><ref name="simpleElement"/></element></define>
   <define name="toctitle"><element name="toctitle"><ref name="simpleElement"/></element></define>
   <define name="linktitle"><element name="linktitle"><ref name="simpleElement"/></element></define>
   <define name="breadcrumbtitle"><element name="breadcrumbtitle"><ref name="simpleElement"/></element></define>
@@ -306,6 +309,7 @@
   <define name="begivenhed"><element name="begivenhed"><ref name="simpleElement"/></element></define>
   <define name="notes"><element name="notes"><ref name="simpleElement"/></element></define>
   <define name="quality"><element name="quality"><ref name="simpleElement"/></element></define>
+  <define name="pagebreaks"><element name="pagebreaks"><empty/></element></define>
   <define name="pictures"><element name="pictures"><ref name="simpleElement"/></element></define>
   <define name="b"><element name="b"><ref name="simpleElement"/></element></define>
   <define name="i">

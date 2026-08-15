@@ -26,7 +26,12 @@
     "report-salmonsen-biographies": "node tools/report-salmonsen-biographies.js",
     "build-static": "node tools/build-static.js",
     "build-static-force-reload": "node tools/build-static.js --force-reload",
-    "build-facsimiles": "node tools/build-facsimiles.js"
+    "build-sqlite": "node tools/build-static.js --build-sqlite",
+    "build-facsimiles": "node tools/build-facsimiles.js",
+    "check-text-quality": "node tools/check-text-quality.js",
+    "candidate-register": "node tools/candidate-register.js",
+    "collect-wikidata": "node tools/data/indsamling/wikidata/collect.mjs",
+    "collect-dbl": "node tools/collect-dbl.js"
   },
   "dependencies": {
     "@xmldom/xmldom": "^0.9.10",

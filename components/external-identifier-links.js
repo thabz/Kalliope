@@ -36,7 +36,7 @@ const ExternalIdentifierLinks = ({
     return (
       <section className="external-identifiers references" aria-label={heading}>
         <h3>{heading}</h3>
-        <TwoColumns>{items}</TwoColumns>
+        <TwoColumns noLinkUnderline>{items}</TwoColumns>
         <style jsx>{`
           .references {
             margin-bottom: 40px;

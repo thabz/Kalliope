@@ -34,7 +34,10 @@ const FigCaption = (props) => {
       <>
         {' '}
         <Tooltip text={tooltip}>
-          <a href={picture.remoteUrl} aria-label={tooltip}>
+          <a
+            href={picture.remoteUrl}
+            aria-label={tooltip}
+            className="remote-picture-link">
             ⌘
           </a>
         </Tooltip>
@@ -86,6 +89,12 @@ const FigCaption = (props) => {
           margin-top: 8px;
           font-size: 16px;
           line-height: 1.4;
+        }
+        figcaption :global(a) {
+          text-decoration-thickness: 0.5px !important;
+        }
+        figcaption :global(a.remote-picture-link) {
+          text-decoration: none !important;
         }
       `}</style>
     </figcaption>

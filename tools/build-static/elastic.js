@@ -286,10 +286,12 @@ const isElasticsearchUnavailable = error => {
     'ENOTFOUND',
     'EHOSTUNREACH',
     'ETIMEDOUT',
+    'EPERM',
   ]);
-  let current = error;
+  const pending = error == null ? [] : [error];
 
-  while (current != null) {
+  while (pending.length > 0) {
+    const current = pending.pop();
     if (
       unavailableCodes.has(current.code) ||
       unavailableCodes.has(current.errno)
@@ -303,7 +305,12 @@ const isElasticsearchUnavailable = error => {
     ) {
       return true;
     }
-    current = current.cause;
+    if (current.cause != null) {
+      pending.push(current.cause);
+    }
+    if (Array.isArray(current.errors)) {
+      pending.push(...current.errors);
+    }
   }
 
   return false;
