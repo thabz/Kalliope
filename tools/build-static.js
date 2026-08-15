@@ -4,7 +4,12 @@ import path from 'path';
 import mkdirp from 'mkdirp';
 import * as Paths from '../common/paths.js';
 import * as CommonData from '../common/commondata.js';
-import { extractYear, formattedYear } from '../common/dates.js';
+import {
+  compareNormalizedDate,
+  extractYear,
+  formattedYear,
+  normalizeTimelineDate,
+} from '../common/dates.js';
 import { supportedLanguages } from '../common/languages.js';
 import {
   isFileModified,
@@ -362,8 +367,29 @@ const handle_text = async (
   const textRefIdsByType = Array.isArray(textRefs)
     ? { mention: textRefs, translation: [] }
     : textRefs;
+  const sortRefIds = refIds =>
+    [...refIds].sort((a, b) => {
+      const metaA = collected.texts.get(a);
+      const metaB = collected.texts.get(b);
+      const workA = collected.works.get(`${metaA.poetId}/${metaA.workId}`);
+      const workB = collected.works.get(`${metaB.poetId}/${metaB.workId}`);
+      const dateA = normalizeTimelineDate(workA.year);
+      const dateB = normalizeTimelineDate(workB.year);
+      if (dateA == null || dateB == null) {
+        if (dateA == null && dateB != null) {
+          return 1;
+        }
+        if (dateA != null && dateB == null) {
+          return -1;
+        }
+        return a.localeCompare(b);
+      }
+      const dateComparison = compareNormalizedDate(dateA, dateB);
+      return dateComparison === 0 ? a.localeCompare(b) : dateComparison;
+    });
+
   const buildRefsArray = (refIds) =>
-    refIds
+    sortRefIds(refIds)
     .filter((id) => {
       // Hvis en tekst har varianter som også henviser til denne,
       // vil vi kun vise den ældste variant.

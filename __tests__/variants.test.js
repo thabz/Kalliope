@@ -26,7 +26,7 @@ describe('variant resolution helpers', () => {
     expect(resolve_variants('a', collected)).toEqual(['a', 'b', 'c']);
   });
 
-  it('prioritizes text composition and publication dates over work dates', () => {
+  it('sorts variants by the year of their work', () => {
     const dated = {
       variants: new Map([
         ['dated-a', ['dated-b', 'dated-c']],
@@ -56,9 +56,9 @@ describe('variant resolution helpers', () => {
     };
 
     expect(resolve_variants('dated-a', dated)).toEqual([
-      'dated-a',
       'dated-b',
       'dated-c',
+      'dated-a',
     ]);
   });
 
