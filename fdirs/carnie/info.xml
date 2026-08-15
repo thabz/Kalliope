@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="carnie" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>William</firstname>
+    <lastname>Carnie</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1824-11-12</date>
+      <place>Aberdeen</place>
+    </born>
+    <dead>
+      <date>1908-01-02</date>
+    </dead>
+  </period>
+  <literary-periods>gb-victoriansk-litteratur</literary-periods>
+  <works>andre</works>
+</person>
