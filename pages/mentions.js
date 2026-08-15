@@ -49,7 +49,7 @@ const Section = (props) => {
   return (
     <div className="list-section" style={{ marginBottom: '40px' }}>
       <h3 style={{ columnSpan: 'all' }}>{title}</h3>
-      <TwoColumns>{items}</TwoColumns>
+      <TwoColumns noLinkUnderline>{items}</TwoColumns>
       <style jsx>{`
         h3 {
           font-weight: 300;

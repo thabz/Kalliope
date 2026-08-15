@@ -26,6 +26,64 @@ describe('variant resolution helpers', () => {
     expect(resolve_variants('a', collected)).toEqual(['a', 'b', 'c']);
   });
 
+  it('prioritizes text composition and publication dates over work dates', () => {
+    const dated = {
+      variants: new Map([
+        ['dated-a', ['dated-b', 'dated-c']],
+        ['dated-b', ['dated-a']],
+        ['dated-c', ['dated-a']],
+      ]),
+      texts: new Map([
+        [
+          'dated-a',
+          { poetId: 'p1', workId: 'late', dates: { written: '1810-01-01' } },
+        ],
+        [
+          'dated-b',
+          {
+            poetId: 'p1',
+            workId: 'early',
+            dates: { published: '1812-01-01' },
+          },
+        ],
+        ['dated-c', { poetId: 'p1', workId: 'middle', dates: {} }],
+      ]),
+      works: new Map([
+        ['p1/late', { year: '1900', published: '1900' }],
+        ['p1/early', { year: '1800', published: '1800' }],
+        ['p1/middle', { year: '1815', published: '1815' }],
+      ]),
+    };
+
+    expect(resolve_variants('dated-a', dated)).toEqual([
+      'dated-a',
+      'dated-b',
+      'dated-c',
+    ]);
+  });
+
+  it('places undated variants after dated variants', () => {
+    const partlyDated = {
+      variants: new Map([
+        ['undated-a', ['undated-b']],
+        ['undated-b', ['undated-a']],
+      ]),
+      texts: new Map([
+        ['undated-a', { poetId: 'p1', workId: 'unknown' }],
+        ['undated-b', { poetId: 'p1', workId: 'known' }],
+      ]),
+      works: new Map([
+        ['p1/unknown', { year: null }],
+        ['p1/known', { year: '1815' }],
+      ]),
+    };
+
+    expect(resolve_variants('undated-a', partlyDated)).toEqual([
+      'undated-b',
+      'undated-a',
+    ]);
+  });
+
   it('returns the primary variant id', () => {
     expect(primaryTextVariantId('a', collected)).toBe('a');
     expect(primaryTextVariantId('b', collected)).toBe('a');
