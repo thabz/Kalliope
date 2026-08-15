@@ -563,9 +563,8 @@ const handle_text = async (
           rawBlock.indexOf('<footnote') !== -1 ||
           rawBlock.indexOf('<note') !== -1;
         const fontSize = safeGetAttr(block, 'font-size');
-        const marginLeft = safeGetAttr(block, 'margin-left');
-        const marginRight = safeGetAttr(block, 'margin-right');
-        const options = { fontSize, marginLeft, marginRight };
+        const maxWidth = safeGetAttr(block, 'max-width');
+        const options = { fontSize, maxWidth };
         return {
           type,
           lines: htmlToXml(rawBlock, collected, type === 'poetry'),

@@ -403,7 +403,7 @@ Til Hjertet atter tale.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote margin-left="3rem" font-size="small">
+<quote max-width="calc(100% - 3rem)">
 ,,Hvor Mænd i Atlashoser gaae,
 Er ei vor Plads.''
 
