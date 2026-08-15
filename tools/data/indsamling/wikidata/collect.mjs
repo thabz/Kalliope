@@ -50,7 +50,6 @@ const parseWikidataSnapshot = (snapshot, provenance) => {
     const works = unique(bindings.flatMap(binding => valuesOf(binding, 'work', 'works')));
     const dflIds = unique(bindings.flatMap(binding => valuesOf(binding, 'dflId', 'dflIds')));
     const viafIds = unique(bindings.flatMap(binding => valuesOf(binding, 'viaf', 'viafIds')));
-    const gndIds = unique(bindings.flatMap(binding => valuesOf(binding, 'gnd', 'gndIds')));
     const preferred = labels[0] ?? qid;
     return {
       observationId: `wikidata:${qid}`,
@@ -66,7 +65,7 @@ const parseWikidataSnapshot = (snapshot, provenance) => {
         occupationClaims: occupations,
         instanceClaims: instances,
         workClaims: works,
-        externalIds: { dfl: dflIds, viaf: viafIds, gnd: gndIds },
+        externalIds: { dfl: dflIds, viaf: viafIds },
         rawBindings: bindings,
       },
       normalized: {
@@ -76,7 +75,7 @@ const parseWikidataSnapshot = (snapshot, provenance) => {
         birthYear: yearOf(birthDates[0]),
         deathYear: yearOf(deathDates[0]),
         language: languages.includes('http://www.wikidata.org/entity/Q9035') ? 'da' : null,
-        identifiers: { wikidata: qid, ...(dflIds[0] == null ? {} : { 'danskforfatterleksikon-dk': dflIds[0] }), ...(viafIds[0] == null ? {} : { viaf: viafIds[0] }), ...(gndIds[0] == null ? {} : { gnd: gndIds[0] }) },
+        identifiers: { wikidata: qid, ...(dflIds[0] == null ? {} : { 'danskforfatterleksikon-dk': dflIds[0] }), ...(viafIds[0] == null ? {} : { viaf: viafIds[0] }) },
         claims: { occupations, instances, works },
       },
       evidence: {
@@ -115,7 +114,7 @@ const crossReference = (observation, sources) => Object.entries(sources).map(([s
   const wikidataIds = observation.normalized.identifiers;
   for (const record of records) {
     const values = recordValues(record);
-    const idMatch = values.ids.some(id => id === observation.sourceId || id === wikidataIds['danskforfatterleksikon-dk'] || id === wikidataIds.viaf || id === wikidataIds.gnd);
+    const idMatch = values.ids.some(id => id === observation.sourceId || id === wikidataIds['danskforfatterleksikon-dk'] || id === wikidataIds.viaf);
     const nameMatch = values.names.includes(observation.normalized.normalizedName) || observation.normalized.aliases.some(alias => values.names.includes(alias));
     const dateConflict = (values.birthYear != null && observation.normalized.birthYear != null && values.birthYear !== observation.normalized.birthYear) || (values.deathYear != null && observation.normalized.deathYear != null && values.deathYear !== observation.normalized.deathYear);
     if (idMatch) matches.push({ sourceId: record.sourceId ?? record.source_id ?? record.observationId ?? null, status: dateConflict ? 'conflict' : 'strong-match', signals: ['stable-identifier', ...(dateConflict ? ['conflicting-life-date'] : [])] });

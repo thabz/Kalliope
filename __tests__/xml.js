@@ -14,7 +14,7 @@ import {
 } from '../tools/build-static/xml.js';
 
 describe('XML parser', () => {
-  const doc = loadXMLDoc('__tests__/fixtures/xml.xml');
+  const doc = loadXMLDoc('__tests__/xml.xml');
   it('read a file', () => {
     expect(doc).not.toBeNull();
   });

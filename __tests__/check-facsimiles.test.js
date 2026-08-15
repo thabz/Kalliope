@@ -3,7 +3,7 @@ import {
   facsimilePageUrl,
   findFacsimileReferences,
   isWorkFileContent,
-} from '../../tools/check-facsimiles.js';
+} from '../tools/check-facsimiles.js';
 
 describe('facsimile CI check', () => {
   it('recognizes work XML after an XML declaration', () => {

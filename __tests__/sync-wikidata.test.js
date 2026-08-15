@@ -20,6 +20,8 @@ describe('Wikidata sync', () => {
   it('maps GND to its info.xml identifier', () => {
     const script = readFileSync('tools/sync-wikidata.rb', 'utf8');
 
-    expect(script).toContain("addIdentifierNode({ 'gnd' => gndId }, 'gnd', 'gnd', doc, new_identifiers)");
+    expect(script).toContain(
+      "addIdentifierNode(externalIds, 'P227', 'gnd', doc, new_identifiers)",
+    );
   });
 });

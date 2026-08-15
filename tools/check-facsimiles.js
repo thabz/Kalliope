@@ -1,12 +1,9 @@
+import { execFileSync } from 'child_process';
+import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { DOMParser } from '@xmldom/xmldom';
 import plimit from 'p-limit';
-import {
-  isWorkFileContent,
-  loadTrackedWorkFiles,
-} from './libs/work-files.js';
-import { checksForWorkXml } from './work-validation.js';
 
 const defaultBaseUrl = 'https://kalliope.org/facsimiles';
 const configuredRequestConcurrency = parseInt(
@@ -19,6 +16,18 @@ const requestConcurrency =
     ? configuredRequestConcurrency
     : 12;
 
+const isWorkFileContent = content => /<kalliopework\b/.test(content);
+
+const trackedWorkFiles = () =>
+  execFileSync('git', ['ls-files', 'fdirs/*/*.xml'], { encoding: 'utf8' })
+    .split('\n')
+    .filter(filename => filename !== '')
+    .map(filename => ({
+      content: fs.readFileSync(filename, 'utf8'),
+      filename,
+    }))
+    .filter(workFile => isWorkFileContent(workFile.content));
+
 const normalizeFacsimileId = facsimile => facsimile.replace(/\.pdf$/i, '');
 
 const facsimilePageUrl = (baseUrl, poetId, facsimile) => {
@@ -30,25 +39,23 @@ const facsimilePageUrl = (baseUrl, poetId, facsimile) => {
 const findFacsimileReferences = (workFiles, baseUrl = defaultBaseUrl) => {
   const referencesByUrl = new Map();
 
-  workFiles
-    .filter(workFile => checksForWorkXml(workFile.content).facsimiles === true)
-    .forEach(({ content, filename }) => {
-      const document = new DOMParser().parseFromString(content, 'text/xml');
-      const poetId = path.basename(path.dirname(filename));
+  workFiles.forEach(({ content, filename }) => {
+    const document = new DOMParser().parseFromString(content, 'text/xml');
+    const poetId = path.basename(path.dirname(filename));
 
-      Array.from(document.getElementsByTagName('source')).forEach(source => {
-        const facsimile = source.getAttribute('facsimile');
-        if (facsimile == null || facsimile === '') {
-          return;
-        }
+    Array.from(document.getElementsByTagName('source')).forEach(source => {
+      const facsimile = source.getAttribute('facsimile');
+      if (facsimile == null || facsimile === '') {
+        return;
+      }
 
-        const url = facsimilePageUrl(baseUrl, poetId, facsimile);
-        if (referencesByUrl.has(url) === false) {
-          referencesByUrl.set(url, { filenames: new Set(), url });
-        }
-        referencesByUrl.get(url).filenames.add(filename);
-      });
+      const url = facsimilePageUrl(baseUrl, poetId, facsimile);
+      if (referencesByUrl.has(url) === false) {
+        referencesByUrl.set(url, { filenames: new Set(), url });
+      }
+      referencesByUrl.get(url).filenames.add(filename);
     });
+  });
 
   return Array.from(referencesByUrl.values()).map(reference => ({
     ...reference,
@@ -87,7 +94,7 @@ const checkFacsimileReferences = async (
 const run = async () => {
   const baseUrl =
     process.env.KALLIOPE_FACSIMILE_BASE_URL ?? defaultBaseUrl;
-  const references = findFacsimileReferences(loadTrackedWorkFiles(), baseUrl);
+  const references = findFacsimileReferences(trackedWorkFiles(), baseUrl);
   const failures = await checkFacsimileReferences(references);
 
   if (failures.length > 0) {
