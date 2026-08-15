@@ -184,15 +184,19 @@ Eksisterende værks-ID’er som `aarestrup/1838` bevares. Build-processen kan fo
 
 ### Tekst-ID
 
-Hver tekstforekomst får et globalt stabilt ID sammensat af digter-ID'et,
-oprettelsesdatoen i formatet `YYYYMMDD` og et tocifret løbenummer for dagens
-tekster hos digteren:
+Hver tekstforekomst får et globalt stabilt ID sammensat af det effektive
+digter-ID, oprettelsesdatoen i formatet `YYYYMMDD` og et løbenummer på mindst
+to cifre:
 
 ```text
 digterid2026081501
 digterid2026081502
 digterid2026081503
 ```
+
+Det effektive digter-ID er `text/@author`, når attributten findes, og ellers
+værkets `kalliopework/@author`. For antologitekster uden `text/@author` bruges
+samlingens digter-ID `antologierdk`.
 
 Digter-ID'et og oprettelsesdatoen fastlægges, når teksten oprettes. ID'et må
 ikke senere ændres, hvis oplysninger om teksten bliver rettet, herunder:
@@ -356,7 +360,7 @@ Eksemplet bruger pladsholdere, hvor de konkrete bibliografiske eller personmæss
   <workbody>
 
     <text
-        id="person-id2026072001"
+        id="antologierdk2026072001"
         type="preface"
         status="verified">
 
@@ -388,7 +392,7 @@ Forordets tekst …
     </text>
 
     <text
-        id="kendt-person-id2026072001"
+        id="antologierdk2026072002"
         type="poem"
         status="verified">
 
@@ -434,7 +438,7 @@ Som det findes i Kilden.
     </text>
 
     <text
-        id="efterklang-1868-ukendt-person-012026072001"
+        id="antologierdk2026072003"
         type="poem"
         status="unresolved">
 
@@ -470,7 +474,7 @@ Et Ord kan ikke læses:
     </text>
 
     <text
-        id="oversaetter-id2026072001"
+        id="antologierdk2026072004"
         type="poem"
         status="verified">
 
@@ -875,7 +879,7 @@ Eksempel:
 
 ```xml
 <text
-    id="kendt-person-id2026072001"
+    id="antologierdk2026072002"
     type="poem"
     status="verified">
 ```
@@ -2113,7 +2117,7 @@ En tekst:
 
 ```js
 {
-  id: "kendt-person-id2026072001",
+  id: "antologierdk2026072002",
   type: "poem",
   status: "verified",
 
