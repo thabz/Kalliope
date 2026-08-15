@@ -11,7 +11,7 @@ import {
 import {
   checksForWorkXml,
   loadWorkCorpus,
-} from './support/work-corpus.js';
+} from '../../tools/test-support/work-corpus.js';
 
 describe('tracked work corpus', () => {
   let filenames;

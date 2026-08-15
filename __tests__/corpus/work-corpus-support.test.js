@@ -2,7 +2,7 @@ import {
   checksForWorkXml,
   loadWorkCorpus,
   trackedWorkFiles,
-} from './support/work-corpus.js';
+} from '../../tools/test-support/work-corpus.js';
 
 describe('work corpus support', () => {
   it('discovers tracked work files from git output', () => {
