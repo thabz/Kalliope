@@ -13,10 +13,7 @@ import {
 import { loadXMLDoc, safeGetAttr, getElementsByTagNames } from './xml.js';
 import { sourceWorkFilename, sourceWorkKey } from './anthologies.js';
 
-const variantDate = (text, work) =>
-  normalizeTimelineDate(
-    text.dates?.written ?? text.dates?.published ?? work.published ?? work.year
-  );
+const variantDate = work => normalizeTimelineDate(work.year);
 
 const build_variants = (collected) => {
   let variants_map = globalForceReload
@@ -116,8 +113,8 @@ const resolve_variants = (poemId, collected) => {
     }
     const workA = collected.works.get(sourceWorkKey(metaA));
     const workB = collected.works.get(sourceWorkKey(metaB));
-    const dateA = variantDate(metaA, workA);
-    const dateB = variantDate(metaB, workB);
+    const dateA = variantDate(workA);
+    const dateB = variantDate(workB);
     if (dateA == null || dateB == null) {
       if (dateA == null && dateB != null) {
         return 1;
