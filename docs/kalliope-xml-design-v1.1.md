@@ -184,15 +184,18 @@ Eksisterende værks-ID’er som `aarestrup/1838` bevares. Build-processen kan fo
 
 ### Tekst-ID
 
-Hver tekstforekomst får et globalt stabilt ID:
+Hver tekstforekomst får et globalt stabilt ID sammensat af digter-ID'et,
+oprettelsesdatoen i formatet `YYYYMMDD` og et tocifret løbenummer for dagens
+tekster hos digteren:
 
 ```text
-efterklang1868t001
-efterklang1868t002
-efterklang1868t003
+digterid2026081501
+digterid2026081502
+digterid2026081503
 ```
 
-ID’et må ikke afhænge af:
+Digter-ID'et og oprettelsesdatoen fastlægges, når teksten oprettes. ID'et må
+ikke senere ændres, hvis oplysninger om teksten bliver rettet, herunder:
 
 - titel
 - førstelinje
@@ -200,9 +203,10 @@ ID’et må ikke afhænge af:
 - sidenummer
 - teksttype
 
-Disse oplysninger kan senere ændres uden at tekstens identitet ændres.
+Disse oplysninger kan dermed ændres uden at tekstens identitet ændres.
 
-Løbende numre må ikke genbruges, hvis en fejloprettet tekst slettes eller sammenlægges.
+Løbenumre må ikke genbruges, hvis en fejloprettet tekst slettes eller
+sammenlægges.
 
 ### Facsimile-ID
 
@@ -352,7 +356,7 @@ Eksemplet bruger pladsholdere, hvor de konkrete bibliografiske eller personmæss
   <workbody>
 
     <text
-        id="efterklang1868t001"
+        id="person-id2026072001"
         type="preface"
         status="verified">
 
@@ -384,7 +388,7 @@ Forordets tekst …
     </text>
 
     <text
-        id="efterklang1868t002"
+        id="kendt-person-id2026072001"
         type="poem"
         status="verified">
 
@@ -430,7 +434,7 @@ Som det findes i Kilden.
     </text>
 
     <text
-        id="efterklang1868t003"
+        id="efterklang-1868-ukendt-person-012026072001"
         type="poem"
         status="unresolved">
 
@@ -466,7 +470,7 @@ Et Ord kan ikke læses:
     </text>
 
     <text
-        id="efterklang1868t004"
+        id="oversaetter-id2026072001"
         type="poem"
         status="verified">
 
@@ -626,7 +630,7 @@ Eksisterende digtsamlinger skal fortsat kunne stå uændret:
   </workhead>
 
   <workbody>
-    <text id="aarestrup1838t001">
+    <text id="aarestrup2026081501">
       ...
     </text>
   </workbody>
@@ -871,7 +875,7 @@ Eksempel:
 
 ```xml
 <text
-    id="efterklang1868t002"
+    id="kendt-person-id2026072001"
     type="poem"
     status="verified">
 ```
@@ -2109,7 +2113,7 @@ En tekst:
 
 ```js
 {
-  id: "efterklang1868t002",
+  id: "kendt-person-id2026072001",
   type: "poem",
   status: "verified",
 
