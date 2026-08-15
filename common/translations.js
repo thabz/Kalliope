@@ -22,6 +22,7 @@ const translations = {
   'en*Forlæg': 'Source text',
   'en*Kilde': 'Source',
   'en*Digital kilde': 'Digital source',
+  'en*Digital kilde hos {provider}': 'Digital source at {provider}',
   'en*Omtalt i': 'Mentioned in',
   'en*Andre udgaver': 'Other editions',
   'en*Omtaler': 'Mentions',
@@ -35,6 +36,7 @@ const translations = {
   'en*Efter land': 'By country',
   'en*Ukendt land': 'Unknown country',
   'en*Efter år': 'By year',
+  'en*Efter litterær periode': 'By literary period',
   'en*Efter titel': 'By title',
   'en*Efter oversætter': 'By translator',
   'en*er oversat af': 'is translated by',
@@ -73,6 +75,8 @@ const translations = {
     "An alphabetical overview of Kalliope's {adjective} poets. Select a name to see the poet's works, texts, and biographical information.",
   'en*De {adjective} digtere på Kalliope ordnet efter fødselsår. Oversigten giver et kronologisk indblik i samlingens forfattere.':
     "Kalliope's {adjective} poets ordered by birth year. The overview gives a chronological view of the collection's authors.",
+  'en*De {adjective} digtere på Kalliope grupperet efter litterær periode.':
+    "Kalliope's {adjective} poets grouped by literary period.",
   'en*{Adjective} digtere er kun medtaget i begrænset omfang for at belyse den danske digtning.':
     '{Adjective} poets are included only to a limited extent to illuminate Danish poetry.',
   'en*Kalliope er et digitalt bibliotek for poesi og klassisk litteratur. Her finder du digte, oversættelser, forfatterbiografier og litterære noter, frit tilgængeligt og forbundet gennem personer, værker, steder og historiske perioder.':
@@ -137,6 +141,7 @@ const translations = {
   'de*Forlæg': 'Vorlage',
   'de*Kilde': 'Quelle',
   'de*Digital kilde': 'Digitale Quelle',
+  'de*Digital kilde hos {provider}': 'Digitale Quelle bei {provider}',
   'de*Omtalt i': 'Erwähnt in',
   'de*Andre udgaver': 'Andere Ausgaben',
   'de*Omtaler': 'Erwähnungen',
@@ -153,6 +158,7 @@ const translations = {
   'de*Efter land': 'Nach Land',
   'de*Ukendt land': 'Unbekanntes Land',
   'de*Efter år': 'Nach Jahr',
+  'de*Efter litterær periode': 'Nach literarischer Epoche',
   'de*Efter titel': 'Nach Titel',
   'de*Efter oversætter': 'Nach Übersetzer',
   'de*Søg i {genetiveLastName} værker':
@@ -164,6 +170,8 @@ const translations = {
     'Eine alphabetische Übersicht über Kalliopes {adjective} Dichter. Wählen Sie einen Namen, um Werke, Texte und biografische Informationen des Dichters zu sehen.',
   'de*De {adjective} digtere på Kalliope ordnet efter fødselsår. Oversigten giver et kronologisk indblik i samlingens forfattere.':
     'Kalliopes {adjective} Dichter nach Geburtsjahr geordnet. Die Übersicht gibt einen chronologischen Einblick in die Autoren der Sammlung.',
+  'de*De {adjective} digtere på Kalliope grupperet efter litterær periode.':
+    'Kalliopes {adjective} Dichter nach literarischer Epoche gruppiert.',
   'de*{Adjective} digtere er kun medtaget i begrænset omfang for at belyse den danske digtning.':
     '{Adjective} Dichter sind nur in begrenztem Umfang aufgenommen, um die dänische Dichtung zu beleuchten.',
   'de*Kalliope er et digitalt bibliotek for poesi og klassisk litteratur. Her finder du digte, oversættelser, forfatterbiografier og litterære noter, frit tilgængeligt og forbundet gennem personer, værker, steder og historiske perioder.':
@@ -262,6 +270,7 @@ const translations = {
   'fr*Forlæg': 'Texte source',
   'fr*Kilde': 'Source',
   'fr*Digital kilde': 'Source numérique',
+  'fr*Digital kilde hos {provider}': 'Source numérique chez {provider}',
   'fr*Omtalt i': 'Mentionné dans',
   'fr*Andre udgaver': 'Autres éditions',
   'fr*Omtaler': 'Mentions',
@@ -278,6 +287,7 @@ const translations = {
   'fr*Efter land': 'Par pays',
   'fr*Ukendt land': 'Pays inconnu',
   'fr*Efter år': 'Par année',
+  'fr*Efter litterær periode': 'Par période littéraire',
   'fr*Efter titel': 'Par titre',
   'fr*Efter oversætter': 'Par traducteur',
   'fr*Søg i {genetiveLastName} værker':
@@ -289,6 +299,8 @@ const translations = {
     'Un aperçu alphabétique des poètes {adjective} de Kalliope. Choisissez un nom pour voir les œuvres, les textes et les informations biographiques du poète.',
   'fr*De {adjective} digtere på Kalliope ordnet efter fødselsår. Oversigten giver et kronologisk indblik i samlingens forfattere.':
     'Les poètes {adjective} de Kalliope classés par année de naissance. Cet aperçu donne une vue chronologique des auteurs de la collection.',
+  'fr*De {adjective} digtere på Kalliope grupperet efter litterær periode.':
+    'Les poètes {adjective} de Kalliope regroupés par période littéraire.',
   'fr*{Adjective} digtere er kun medtaget i begrænset omfang for at belyse den danske digtning.':
     'Les poètes {adjective} ne sont inclus que dans une mesure limitée afin d’éclairer la poésie danoise.',
   'fr*Kalliope er et digitalt bibliotek for poesi og klassisk litteratur. Her finder du digte, oversættelser, forfatterbiografier og litterære noter, frit tilgængeligt og forbundet gennem personer, værker, steder og historiske perioder.':

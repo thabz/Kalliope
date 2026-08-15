@@ -91,4 +91,12 @@ describe('side metadata', () => {
       '<meta property="og:description" content="En kort tekst."/>'
     );
   });
+
+  it('announces the corpus discovery manifest', () => {
+    const html = renderToStaticMarkup(<Head />);
+
+    expect(html).toContain(
+      '<link rel="describedby" type="application/json" href="/api/manifest.json"/>'
+    );
+  });
 });

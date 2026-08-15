@@ -65,6 +65,11 @@ const Head = ({
       <link rel="mask-icon" href="/favicon-mask.svg" color="black" />
       <link rel="icon" href="/favicon.ico" />
       <link rel="manifest" href="/manifest.json" />
+      <link
+        rel="describedby"
+        type="application/json"
+        href="/api/manifest.json"
+      />
       {criticalFonts.map((href) => (
         <link
           rel="preload"

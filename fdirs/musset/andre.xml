@@ -1,22 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="andre" author="musset" status="incomplete" type="poetry">
 <workhead>
-   <title>Andre digte</title>
-   <quality>korrektur1</quality>
+  <title>Andre digte</title>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
+<text id="musset2026081101">
+<head>
+  <title>Complément de la lettre n° 1</title>
+  <firstline>Sand, quand tu l’écrivais, où donc l’avais-tu vue</firstline>
+  <source pages="1-3">George Sand og Alfred de Musset : <i>Correspondance de George Sand et d’Alfred de Musset</i>, ved Félix Decori, E. Deman, Bruxelles, 1904.</source>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Sand, quand tu l’écrivais, où donc l’avais-tu vue
+Cette scène terrible où Noun à demi nue
+Sur le lit d’Indiana s’enivre avec Raymond ?
+Qui donc te la dictait, cette page brûlante
+Où l’amour cherche en vain d’une main palpitante
+Le fantôme adoré de son illusion ?
+En as-tu dans le cœur la triste expérience ?
+Ce qu’éprouve Raymond, te le rappellais-tu ?
+Et tous ces sentiments d’une vague souffrance,
+Ces plaisirs sans bonheur, si pleins d’un vide immense,
+As-tu rêvé cela, George, ou l’as-tu connu ?
+N’est-ce pas le Réel dans toute sa tristesse
+Que cette pauvre Noun, les yeux baignés de pleurs,
+Versant à son ami le vin de sa maîtresse,
+Croyant que le bonheur c’est une nuit d’ivresse
+Et que la volupté, c’est le parfum des fleurs ?
+
+Et cet être divin, cette femme angélique
+Que dans l’air embaumé Raymond voit voltiger,
+Cette frêle Indiana dont la forme magique
+Erre sur les miroirs comme un spectre léger,
+Ô George ! n’est-ce pas la pâle fiancée
+Dont l’Ange du désir est l’immortel amant ?
+N’est-ce pas l’Idéal, cette amour insensée
+Qui sur tous les amours plane éternellement ?
+Ah, malheur à celui qui lui livre son âme !
+Qui couvre de baisers sur le corps d’une femme
+Le fantôme d’une autre, et qui, sur la beauté.
+Veut boire l’idéal dans la réalité !
+Malheur à l’imprudent qui, lorsque Noun l’embrasse
+Peut penser autre chose en entrant dans son lit,
+Sinon que Noun est belle et que le Temps qui passe,
+A compté sur ses doigts les heures de la nuit !
+Demain viendra le jour, demain, désabusée,
+Noun, la fidèle Noun, par sa douleur brisée,
+Rejoindra sous les eaux l’ombre d’Ophélia.
+Elle abandonnera celui qui la méprise ;
+Et le cœur orgueilleux qui ne l’a pas comprise
+Aimera l’autre en vain – n’est-ce pas, Lélia ?
+
+<nonum><right><small>24 juin 1833.</small></right></nonum>
+</poetry>
+</body>
+</text>
+
 <text id="musset2002021701">
 <head>
-   <title>Au Lecteur</title>
-   <toctitle>Au Lecteur</toctitle>
-   <indextitle>Au Lecteur</indextitle>
-   <firstline>Ce livre est toute ma jeunesse</firstline>
-   <notes>
-      <note type="credits">Bidrag fra Henrik Hjulgaard</note>
-   </notes>
-   <quality>korrektur1</quality>
-   <keywords>sonnet</keywords>
+  <title>Au Lecteur</title>
+  <toctitle>Au Lecteur</toctitle>
+  <indextitle>Au Lecteur</indextitle>
+  <firstline>Ce livre est toute ma jeunesse</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Henrik Hjulgaard</note>
+  </notes>
+  <quality>korrektur1</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -43,8 +97,8 @@ Les derniers à peine d'un homme.
 
 <text id="musset2019051801">
 <head>
-   <title>Etoile du soir</title>
-   <firstline>Pâle étoile du soir, messagère lointaine</firstline>
+  <title>Etoile du soir</title>
+  <firstline>Pâle étoile du soir, messagère lointaine</firstline>
 </head>
 <body>
 <poetry>
@@ -78,8 +132,8 @@ Tomber comme une perle au sein profond des eaux ?
 
 <text id="musset2019083101">
 <head>
-    <title>Mardoche XXXVI</title>
-    <firstline>Révérend, répondit Mardoche, je m'ennuie</firstline>
+  <title>Mardoche XXXVI</title>
+  <firstline>Révérend, répondit Mardoche, je m'ennuie</firstline>
 </head>
 <body>
 <poetry>
@@ -106,8 +160,8 @@ Mardoche, le crâne
 
 <text id="musset2019110501">
 <head>
-    <title>À George Sand I</title>
-    <firstline>Te voilà revenu, dans mes nuits étoilées</firstline>
+  <title>À George Sand I</title>
+  <firstline>Te voilà revenu, dans mes nuits étoilées</firstline>
 </head>
 <body>
 <poetry>
@@ -130,8 +184,8 @@ Nul sur un plus beau front ne t'a jamais baisé !
 
 <text id="musset2019110502">
 <head>
-    <title>À George Sand II</title>
-    <firstline>Telle de l'Angelus, la cloche matinale</firstline>
+  <title>À George Sand II</title>
+  <firstline>Telle de l'Angelus, la cloche matinale</firstline>
 </head>
 <body>
 <poetry>
@@ -158,8 +212,8 @@ Et tes grands yeux rêveurs ne s'en sont pas douté.
 
 <text id="musset2019110503">
 <head>
-    <title>À George Sand III</title>
-    <firstline>Puisque votre moulin tourne avec tous les vents</firstline>
+  <title>À George Sand III</title>
+  <firstline>Puisque votre moulin tourne avec tous les vents</firstline>
 </head>
 <body>
 <poetry>
@@ -186,8 +240,8 @@ En se parlant tout bas, ils souriaient entre eux.
 
 <text id="musset2019110504">
 <head>
-    <title>À George Sand IV</title>
-    <firstline>Il faudra bien t'y faire à cette solitude</firstline>
+  <title>À George Sand IV</title>
+  <firstline>Il faudra bien t'y faire à cette solitude</firstline>
 </head>
 <body>
 <poetry>
@@ -214,8 +268,8 @@ Dans quelque triste lieu qu'on ne te dira pas.
 
 <text id="musset2019110505">
 <head>
-    <title>À George Sand V</title>
-    <firstline>Toi qui me l'as appris, tu ne t'en souviens plus</firstline>
+  <title>À George Sand V</title>
+  <firstline>Toi qui me l'as appris, tu ne t'en souviens plus</firstline>
 </head>
 <body>
 <poetry>
