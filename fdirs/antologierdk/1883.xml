@@ -2085,7 +2085,7 @@ Sov min lille Stump! Sov Moders Stump! Sov!
 </head>
 <content>
 
-<text id="ipsen2026081531" author="ipsen">
+<text id="ipsen2026081531" author="ipsen" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Scene fra den franske Lejr</title>
   <firstline>Franskmænd stormed Ratisbon</firstline>
@@ -4966,7 +4966,7 @@ men det er sødt paa dette Hav at strande.
 </body>
 </text>
 
-<text id="schandorph2026081578" author="schandorph" variant="schandorph2018091223" ignore-tests="single-circumflex-a-in-text">
+<text id="schandorph2026081578" author="schandorph" variant="schandorph2018091223" ignore-tests="single-circumflex-a-in-text,mixed-aa-circumflex">
 <head>
   <title>Silvia</title>
   <firstline>Silvia, kan du huske</firstline>
