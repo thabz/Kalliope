@@ -2,7 +2,7 @@ import {
   collectPoemLineQualityFindings,
   formatPoemLineIssue,
   findPoemLineFindingsInText,
-} from '../tools/text-quality-poem-lines.js';
+} from '../../tools/text-quality-poem-lines.js';
 
 describe('Check workfiles', () => {
   it('has no poem-line quality issues', () => {

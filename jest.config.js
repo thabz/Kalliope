@@ -6,6 +6,7 @@ const createJestConfig = nextJest({
 
 const customJestConfig = {
   testEnvironment: 'node',
+  testMatch: ['**/__tests__/**/*.test.js'],
 };
 
 export default createJestConfig(customJestConfig);
