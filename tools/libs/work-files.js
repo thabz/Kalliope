@@ -1,7 +1,9 @@
 import fs from 'fs';
 import { execFileSync } from 'child_process';
 
-const trackedWorkFiles = ({ execute = execFileSync } = {}) =>
+const isWorkFileContent = content => /<kalliopework\b/.test(content);
+
+const trackedWorkFilenames = ({ execute = execFileSync } = {}) =>
   execute(
     'git',
     [
@@ -17,18 +19,17 @@ const trackedWorkFiles = ({ execute = execFileSync } = {}) =>
     .split('\n')
     .filter(filename => filename.length > 0);
 
-const loadWorkCorpus = ({
-  filenames = trackedWorkFiles(),
+const loadTrackedWorkFiles = ({
+  filenames = trackedWorkFilenames(),
   readFile = fs.readFileSync,
 } = {}) =>
   filenames.map(filename => ({
+    content: readFile(filename, 'utf8'),
     filename,
-    xml: readFile(filename, 'utf8'),
   }));
 
-const checksForWorkXml = xml => ({
-  pageBreaks: /<pagebreaks\b/.test(xml),
-  sources: /<source\b[^>]*\bpages\s*=/.test(xml),
-});
-
-export { checksForWorkXml, loadWorkCorpus, trackedWorkFiles };
+export {
+  isWorkFileContent,
+  loadTrackedWorkFiles,
+  trackedWorkFilenames,
+};

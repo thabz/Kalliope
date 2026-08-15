@@ -1,14 +1,14 @@
 import {
-  checksForWorkXml,
-  loadWorkCorpus,
-  trackedWorkFiles,
-} from '../../tools/test-support/work-corpus.js';
+  loadTrackedWorkFiles,
+  trackedWorkFilenames,
+} from '../../tools/libs/work-files.js';
+import { checksForWorkXml } from '../../tools/work-validation.js';
 
 describe('work corpus support', () => {
   it('discovers tracked work files from git output', () => {
     const execute = jest.fn(() => 'fdirs/poet/one.xml\nfdirs/poet/two.xml\n');
 
-    expect(trackedWorkFiles({ execute })).toEqual([
+    expect(trackedWorkFilenames({ execute })).toEqual([
       'fdirs/poet/one.xml',
       'fdirs/poet/two.xml',
     ]);
@@ -22,27 +22,35 @@ describe('work corpus support', () => {
   it('loads each discovered work exactly once', () => {
     const readFile = jest.fn(filename => `<kalliopework file="${filename}"/>`);
 
-    expect(loadWorkCorpus({
+    expect(loadTrackedWorkFiles({
       filenames: ['first.xml', 'second.xml'],
       readFile,
     })).toEqual([
-      { filename: 'first.xml', xml: '<kalliopework file="first.xml"/>' },
-      { filename: 'second.xml', xml: '<kalliopework file="second.xml"/>' },
+      { content: '<kalliopework file="first.xml"/>', filename: 'first.xml' },
+      { content: '<kalliopework file="second.xml"/>', filename: 'second.xml' },
     ]);
     expect(readFile).toHaveBeenCalledTimes(2);
   });
 
   it('only requests DOM parsing for relevant work checks', () => {
     expect(checksForWorkXml('<kalliopework/>')).toEqual({
+      facsimiles: false,
       pageBreaks: false,
       sources: false,
     });
     expect(checksForWorkXml('<source\n pages="1-2"/>')).toEqual({
+      facsimiles: false,
       pageBreaks: false,
       sources: true,
     });
     expect(checksForWorkXml('<pagebreaks/>')).toEqual({
+      facsimiles: false,
       pageBreaks: true,
+      sources: false,
+    });
+    expect(checksForWorkXml('<source facsimile="scan.pdf"/>')).toEqual({
+      facsimiles: true,
+      pageBreaks: false,
       sources: false,
     });
   });

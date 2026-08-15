@@ -4,14 +4,12 @@ import {
   structuralTagsOutsideColumnZero,
 } from '../../tools/format-work-xml.js';
 import {
+  checksForWorkXml,
   collectPageBreakIssues,
   collectSourceStructureIssues,
   parseWorkXml,
 } from '../../tools/work-validation.js';
-import {
-  checksForWorkXml,
-  loadWorkCorpus,
-} from '../../tools/test-support/work-corpus.js';
+import { loadTrackedWorkFiles } from '../../tools/libs/work-files.js';
 
 describe('tracked work corpus', () => {
   let filenames;
@@ -21,14 +19,14 @@ describe('tracked work corpus', () => {
   let pageOnlySourceIssues;
 
   beforeAll(() => {
-    const works = loadWorkCorpus();
+    const works = loadTrackedWorkFiles();
     filenames = works.map(work => work.filename);
     formattingIssues = [];
     pageBreakIssues = [];
     pageIntervalIssues = [];
     pageOnlySourceIssues = [];
 
-    works.forEach(({ filename, xml }) => {
+    works.forEach(({ content: xml, filename }) => {
       if (
         xml !== formatWorkXml(xml) ||
         structuralTagsOutsideColumnZero(xml).length > 0

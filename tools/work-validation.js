@@ -67,6 +67,12 @@ const textEntries = document => {
 const parseWorkXml = xml =>
   new DOMParser().parseFromString(xml, 'text/xml');
 
+const checksForWorkXml = xml => ({
+  facsimiles: /<source\b[^>]*\bfacsimile\s*=/.test(xml),
+  pageBreaks: /<pagebreaks\b/.test(xml),
+  sources: /<source\b[^>]*\bpages\s*=/.test(xml),
+});
+
 const collectSourceStructureIssues = (filename, document) => {
   const pageOnlySources = [];
   const pageIntervals = [];
@@ -242,6 +248,7 @@ const collectPageBreakIssues = (
 };
 
 export {
+  checksForWorkXml,
   collectPageBreakIssues,
   collectSourceStructureIssues,
   parseWorkXml,
