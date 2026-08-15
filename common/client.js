@@ -1,4 +1,3 @@
-import 'isomorphic-fetch';
 import * as Paths from './paths.js';
 
 export const createURL = (path) => {
@@ -8,7 +7,7 @@ export const createURL = (path) => {
     return `${l.protocol}//${l.host}${path}`;
   } catch (error) {
     // We're running in node.js on the server
-    return `http://localhost:3000${path}`;
+    return `http://localhost:${process.env.PORT ?? 3000}${path}`;
   }
 };
 
@@ -32,6 +31,10 @@ export const poet = async (poetId) => {
 export const poets = async (country) => {
   // flow-disable-next-line
   return fetchJSON(`/api/poets-${country}.json`);
+};
+
+export const literaryPeriods = async () => {
+  return fetchJSON('/api/literary-periods.json');
 };
 
 export const allTexts = async (country, type, letter) => {

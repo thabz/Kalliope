@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="gilm" status="incomplete" type="poetry">
 <workhead>
-    <title>Andre digte</title>
+  <title>Andre digte</title>
+  <source href="https://archive.org/details/gedichte00gilmuoft">Hermann von Gilm: <i>Gedichte</i>, A. G. Liebeskind, Leipzig, 1894</source>
 </workhead>
 <workbody>
 
 <text id="gilm2019112401">
 <head>
-    <title>La renommée</title>
-    <firstline>Du bist einfach, du bist häuslich</firstline>
+  <title>La renommée</title>
+  <firstline>Du bist einfach, du bist häuslich</firstline>
 </head>
 <body>
 <poetry>
@@ -33,7 +33,7 @@ Neigung für bornierte Männer.
 
 <text id="gilm2025081601">
 <head>
-    <firstline>Es sprach das Volk: Ihr schlaft auf weichem Eider</firstline>
+  <firstline>Es sprach das Volk: Ihr schlaft auf weichem Eider</firstline>
 </head>
 <body>
 <poetry>
@@ -51,6 +51,133 @@ Es sprach das Volk: „Ihr trinkt aus goldnen Schalen,
 Uns aber dürstet, wollt uns nicht vergessen!“
 Drauf sprachen sie: „So lindert euch die Qualen
 Und trinkt die Thränen, die wir euch erpressen!“
+</poetry>
+</body>
+</text>
+
+<text id="gilm2026072601" lang="de">
+<head>
+  <title>Niemand weiß</title>
+  <firstline>Niemand weiß von meinem Hasse</firstline>
+  <source pages="187" href="https://books.google.com/books?id=bnegEcl8v0sC&amp;pg=PA187"/>
+  <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Niemand weiß von meinem Hasse,
+Einsam wandl’ ich meine Pfade,
+Nur der Schatten auf der Gasse
+Ist mein stiller Kamerade.
+
+Niemand weiß von meinem Lieben,
+Still, wie sich an heißen Tagen
+Bienen in die Rosen schieben,
+Kann die Sehnsucht leise nagen.
+
+Niemand weiß von meinem Liede,
+Keine Zunft hat’s eingetragen —
+Denn ich ließ bei keinem Schmiede
+Je mein Flügelroß beschlagen.
+</poetry>
+</body>
+</text>
+
+<text id="gilm2026072602" lang="de">
+<head>
+  <title>Wer hat’s gethan?</title>
+  <firstline>Es steht mein Lied in Nacht und Frost</firstline>
+  <source pages="317-318"/>
+  <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Es steht mein Lied in Nacht und Frost,
+Die alles Leben tödten,
+Und harrt vergebens, ob der Ost
+Nicht wieder mag erröthen.
+
+So steht es nun ein ganzes Jahr,
+In dieser Nacht, der kalten,
+Und dennoch grünt’s noch immerdar —
+Wer hat es wohl erhalten?
+
+Du nicht, du nicht, von aller Welt
+Bewundert und beneidet;
+Der hat’s gethan, der auf dem Feld
+Die Lilien bekleidet.
+</poetry>
+</body>
+</text>
+
+<text id="gilm2026072603" lang="de">
+<head>
+  <title>Drei Kränze</title>
+  <firstline>Ich habe drei Kränze gewunden</firstline>
+  <source pages="20"/>
+  <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Ich habe drei Kränze gewunden
+Gleich einer Schäferin
+Und will sie nun vertheilen
+Nach meinem thörichten Sinn.
+
+Den ersten aus Eichenblättern,
+Den drück’ ich dir auf das Haupt;
+Es liegt eine Kraft in der Eiche,
+An die man vertraut und glaubt;
+
+Den zweiten aus wilden Rosen,
+Geb’ ich dem Bächlein im Wald.
+Das färbt mit rosigem Leben
+Die Wangen von Jung und Alt;
+
+Den dritten aus Blumen des Feldes
+Leg’ ich dem Heiland auf’s Haar; —
+Er soll keinen Dornenkranz tragen
+In meinem seligsten Jahr.
+</poetry>
+</body>
+</text>
+
+<text id="gilm2026072604" lang="de">
+<head>
+  <firstline>Es war ein Frühlingsabend</firstline>
+  <source pages="238-239"/>
+  <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Es war ein Frühlingsabend
+Die goldne Sonne schied
+Die Blumen waren durstig
+Die Vögel waren müd’.
+
+Da kam ein Mädchen singend,
+Den Wiesenweg entlang,
+Mit Wolkengold im Haare
+Mit Thau auf seiner Wang’,
+
+Und hundert kleine Blumen,
+Die knieend und gebückt
+Den Abendsegen sprachen,
+Hat boshaft es geknickt.
+
+Und manche arme Grille
+Hat es, noch eh’ die Nacht
+Die Sterne angezündet,
+Zum Waisenkind gemacht.
+
+Dann hat es mich gekreuzigt,
+Mit Dornen mich gekrönt,
+Hat meine Lieb verspottet,
+Hat meinen Schmerz verhöhnt.
+
+Dies hat an diesem Abend
+Ein frommes Kind gethan,
+Dann schlief es fest und ruhig
+Und Niemand sah’s ihm an.
 </poetry>
 </body>
 </text>

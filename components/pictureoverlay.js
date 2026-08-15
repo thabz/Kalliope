@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
 import CommonData from '../common/commondata.js';
+import * as ImagePaths from '../common/imagepaths.js';
 import { CloseButton, DownArrow, LeftArrow, RightArrow } from './icons.js';
 import { FigCaption } from './picture.js';
+import Tooltip from './tooltip.js';
 
 const filenameFromSrc = (src) => {
   const path = src.split('?')[0];
@@ -10,16 +12,15 @@ const filenameFromSrc = (src) => {
 
 const BiggerPicture = ({ picture }) => {
   const src = picture.src;
-  const fallbackSrc = src.replace(/\/([^\/]+).jpg$/, (m, p1) => {
-    return '/t/' + p1 + CommonData.fallbackImagePostfix;
-  });
+  const fallbackSrc = ImagePaths.fallbackThumbnailSrc(
+    src,
+    CommonData.fallbackImagePostfix
+  );
   const srcSet = CommonData.availableImageFormats
     .map((ext) => {
       return CommonData.availableImageWidths
         .map((width) => {
-          const filename = src
-            .replace(/.jpg$/, `-w${width}.${ext}`)
-            .replace(/\/([^\/]+)$/, '/t/$1');
+          const filename = ImagePaths.thumbnailSrc(src, width, ext);
           return `${filename} ${width}w`;
         })
         .join(', ');
@@ -151,14 +152,15 @@ const PictureOverlay = ({ pictures, startIndex, closeCallback }) => {
   }
   const picture = pictures[currentIndex];
   buttons.push(
-    <a
-      className="download-icon"
-      href={picture.src}
-      download={filenameFromSrc(picture.src)}
-      title="Download originalbillede"
-      key="download">
-      <DownArrow />
-    </a>
+    <Tooltip text="Download originalbillede" key="download">
+      <a
+        className="download-icon"
+        href={picture.src}
+        download={filenameFromSrc(picture.src)}
+        aria-label="Download originalbillede">
+        <DownArrow />
+      </a>
+    </Tooltip>
   );
   return (
     <div className="overlay-background" onClick={hideOverlay}>
@@ -175,6 +177,7 @@ const PictureOverlay = ({ pictures, startIndex, closeCallback }) => {
           bottom: 0;
           background-color: rgba(255, 255, 255, 0.9);
           overflow-y: scroll;
+          z-index: 999;
         }
 
         .overlay-background :global(.overlay-container) {
@@ -182,7 +185,6 @@ const PictureOverlay = ({ pictures, startIndex, closeCallback }) => {
           left: 50%;
           top: 50%;
           transform: translate(-50%, -50%);
-          z-index: 999;
         }
 
         .overlay-background .overlay-container :global(.overlay-figure) {

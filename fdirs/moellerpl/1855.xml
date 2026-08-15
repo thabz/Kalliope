@@ -1,31 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1855" author="moellerpl" status="complete" type="poetry">
 <workhead>
-   <title>Løvfald</title>
-   <year>1855</year>
-   <notes>
-        <note>Teksten følger P. L. Møller: <i>Løvfald. Digte af Otto Sommer</i>, Bernhard Bendix' Forlag, Kbh.</note>
-      <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
-      <note>Noter med en foranstillet asterisk er Møllers egne.</note>
-   </notes>
-   <pictures>
-       <picture type="titlepage" src="1855-p1.jpg">Titelbladet til <i>Løvfald</i> (1855) lyder ,,Løvfald. / Digte af Otto Sommer, / udgivne af H. P. Holst. // Kjøbenhavn. / Bernhard Bendix' Forlag. / Salig (?) B. Salomons Tryk. / 1855.''</picture>
-   </pictures>
-   <source facsimile="115308081564_color" facsimile-pages-num="218" facsimile-pages-offset="12">P. L. Møller: <i>Løvfald. Digte af Otto Sommer</i>, Bernhard Bendix' Forlag, Kbh.</source>
+  <title>Løvfald</title>
+  <year>1855</year>
+  <notes>
+    <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
+    <note>Noter med en foranstillet asterisk er Møllers egne.</note>
+  </notes>
+  <pictures>
+    <picture type="titlepage" src="1855-p1.jpg">Titelbladet til <i>Løvfald</i> (1855) lyder ,,Løvfald. / Digte af Otto Sommer, / udgivne af H. P. Holst. // Kjøbenhavn. / Bernhard Bendix' Forlag. / Salig (?) B. Salomons Tryk. / 1855.''</picture>
+  </pictures>
+  <source facsimile="115308081564_color" facsimile-pages-num="218" facsimile-pages-offset="12">P. L. Møller: <i>Løvfald. Digte af Otto Sommer</i>, Bernhard Bendix' Forlag, Kbh.</source>
 </workhead>
 <workbody>
 
 <text id="moellerpl2018010301">
 <head>
-    <title>Til Oehlenschlägers Minde</title>
-    <firstline>I Digterlunden</firstline>
-    <source pages="1-6"/>
-    <dates>
-        <written>1855-01-20</written><!-- Oehl. døde 1850-01-20 -->
-    </dates>
-    <keywords>oehlenschlaeger</keywords>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Til Oehlenschlägers Minde</title>
+  <firstline>I Digterlunden</firstline>
+  <source pages="1-6"/>
+  <dates>
+    <written>1855-01-20</written><!-- Oehl. døde 1850-01-20 -->
+  </dates>
+  <keywords>oehlenschlaeger</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -108,14 +106,14 @@ Paa Adams Grav.
 
 <text id="moellerpl2018010302">
 <head>
-    <title>Arthur</title>
-    <subtitle>Et angelsachsisk Sagn</subtitle>
-    <firstline>Edgar regjerede i Fred</firstline>
-    <notes>
-        <note>* Med Hensyn til Slutningen er det maaskee ikke ufornødent at bemærke, at nærværende Digt oprindelig var bestemt til at danne første Afsnit af en større Digtning, der skulde omfatte de interessanteste Momenter af den berømte Sagncyklus, hvori Kong <w>Arthurs</w> mystiske Personlighed er Midtpunctet.</note>
-    </notes>
-    <source pages="9-63"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Arthur</title>
+  <subtitle>Et angelsachsisk Sagn</subtitle>
+  <firstline>Edgar regjerede i Fred</firstline>
+  <notes>
+    <note>* Med Hensyn til Slutningen er det maaskee ikke ufornødent at bemærke, at nærværende Digt oprindelig var bestemt til at danne første Afsnit af en større Digtning, der skulde omfatte de interessanteste Momenter af den berømte Sagncyklus, hvori Kong <w>Arthurs</w> mystiske Personlighed er Midtpunctet.</note>
+  </notes>
+  <source pages="9-63"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1085,35 +1083,35 @@ Til Hanegalet os kalder!
 
 <section>
 <head>
-    <title>Intermezzo</title>
+  <title>Intermezzo</title>
 </head>
 <content>
 
 <text id="moellerpl2018010303">
 <head>
-    <title>Phønixfuglen</title>
-    <subtitle>En østerlandsk Phantasie</subtitle>
-    <firstline>Ved Orientens fjerne Kyst</firstline>
-    <notes>
-        <note>
-* Denne berømte Mythe, hvis ejendommeligste Forestillinger ere gjengivne i dette Digt, og som, saavidt vides, egentlig først ved <w>Grundtvig</w> er bleven bekjendt i vor Literatur, spillede i Oldtiden en betydelig Rolle, og var Gjenstand for en ganske særegen Yndest, som man kan slutte af den Mængde forskellige Forfattere, der omtale den. Hvad de Gamle egentlig have tænkt sig ved denne Mythe, er saameget vanskeligere at sige, som den forekommer i meget forskjellige Variationer, og i sig selv egner sig til symbolsk Udtryk for de forskelligste Ideer. Den store Majoritet har naturligviis taget Sagnet i ganske bogstavelig Forstand, og det er i og for sig heller ikke utroligere end mange andre naturhistoriske Umuligheder, der berettes <i>bona fide</i> af Herodot og andre Forfattere. Muligen har Ideens første Dannelse sin Grund i noget virkelig Factist, f. Ex. Synet af en i den fjerneste Oldtid allerede sjelden, og nu ganske uddød Kjæmpefugl, som den saakaldte <i>Æpiornis</i>, hvoraf man paa Madagaskar har opdaget Skeletfragmenter og Æg af et ganske uhyre Omfang. Men vist er det, at man i Oldtiden ikke, som i den moderne Tid, i Phønixfuglen saae noget Billede paa den individuelle Menneskesjæls Udødelighed, en Forestilling, de Gamle ikke tillagde samme Betydning som vi, og som i deres mere universelle Naturliv endog forekom dem smaalig. Snarere have de maaskee undertiden herved tænkt paa de menneskelige Generationer eller Civilisationer, der i et mellem 500 og 1000 Aar varierende Tidsrum synes at fremstige, modnes og forsvinde, for atter at vige Pladsen for en ny prædominerende Race. Men i Almindelighed, forsaavidt som man hævede sig over den bogstavelige Tro, har man vel nærmest i Phønixmytben søgt et Udtryk for den dunkle Lyksalighedsdrøm, den længsel efter et fjernt Phantasiland, et tusindaarigt Rige, et jordisk eller himmelsk Paradiis, der til alle Tider har foresvævet og lokket det urolige Menneskehjerte. Saaledes kan det forklares, at Phønixideen efterhaanden blev til en fuldkommen Troesartikel, om hvilken de meest dannede Mennesker ikke tvivlede, om end Ingen havde seet denne mystiske Fugl, eller bestemt kunde angive dens Opholdssted. — Som Beviis paa den overordentlige Popularitet, den i Oldtiden nød, er det maaskee ikke uinteressant at anføre nogle af de mærkeligste Forfattere, som have omtalt den meer og mindre omstændeligt. Allerede i Davids 118de Psalme, 145de Vers findes den antydet; ligesaa hos Herodot (2den Bog) og Plinius (hist. nat. Lib. X, Cap. 2), dog paastaaer denne sidste Forfatter ikke egentlig Noget med Bestemthed, uden dens Alder, som han angiver til 560 Aar. Pomponius Mela (de situ orbis Lib III.) og Ælian (hist. animal. Lib. VI. 58) indrømme den ikke meer end 500 Aar, hvorimod Tacitus (Ann. Lib. VI.) med historisk Nøiagtighed angiver dens levetid til 1461 Aar og Chæremon (hist. chil.) til 6000 Aar. Førft Lactantius, den berømte Kirkefader, fastsætter, i Overensstemmelse med de chiliastiske Ideer, dens Alder til de tusind Aar, som synes at have fundet almindeligst Tiltro. Senere Lærde have udstrakt dette Tal til hele Evigheden med Fradrag af nogle Secunder.
-    Som man kan tænke sig, var det ikke blot Historikerne, men ogsaa Poeterne, der syslede med dette Stof. Ovid har i sine Metamorphoser (Lib. XV., v. 392—400) meddelt i Korthed de væsentligste Momenter af Phønixmythen, som en almindelig bekjendt Sag, og som det synes, blot for Fuldstændigheds Skyld. Den omtales af Statius (Lib. II.) og Martial (Lib. V. epigr. 7), af Sidonins Apollinaris, Ausonius o. fl. stedse som en naturhistorisk Kjendsgjerning, hvorom der ikke kan næres Tvivl. De Poeter, der endnu tilhørte den klassiske Tid, synes ikke ret at have havt Sands for del Ideal-Poetiske i Mythen, og først senere, da den realistiske Classicisme, samtidig med Smagens Fordærvelse, overvandtes af en spiritualistisk Retning, viser sig en Tendents til, ifølge Navne-Ligheden at identificere Phønix med Venusmythen. Den mere poetiske Opfattelse af Phønixmythen viser sig først efter at Christendommen og Nyplatonismen under den gamle Verdens Opløsning havde indført et ganske nyt, poetisk Element, nemlig det <i>romantiske</i>, i Ideernes Verden. Saaledes finde vi de smukkeste og interessanteste Bearbejdelser af Phønixforestillingerne hos den ovenfor nævnte Afrikaner Lactantius (<i>de Phoenice</i>), der døde Aar 325 som Professor i christelig Theologie ved Keiser Erispus's Hof i Trier, samt hos den afrikanske Poet, Claudian, født i Alexandrien 365 og henrettet i Rom 408 tilligemed sin Beskytter Stilico, af Keiser Honorius, der tidligere, saavelsom Arcadius, havde skjænket ham de høieste Æresbeviisninger, og paa Senatets Forslag ladet oprejse hans Statue, der endnu findes i det Farnesiske Palais. I Middelalderen synes Phønixmythen, som saamange andre orientalske Ideer at have havt sin Plads iblandt de christelige Forestillinger. Den omtales af Tertullian, af Johan af Salisbnry (1,13). og af forskjellige christelige Skribenter, som endog undertiden identificerede den med Jomfru Maria, eller som Clemins, Romanus og Rusinus, anførte den som Beviis for Legemernes Opstandelse og den ,,uplettede Undfangelse''. Og ved den nyere franske Poesies Fødsel finde vi den atter udførlig fremstillet af Du Bartas, Forbilledet for vor danske Digter Arreboe, i hans Digt om Skabelsesugen, som atter blev oversat i latinske Vers af Englænderen Lermæns, under Elisabeths Regjering. Kort sagt, ved alle disse lærde Mænds Yttringer var Troen paa Phønixfuglens virkelige Existents bleven saa almindelig, at endog Buffon fandt det Umagen værdt (Om Fuglene III.) at erklære sin Vantro med Hensyn til dette Punct. Forskjellige af de lærde Fortolkere have især dvælet ved Spørgsmaalet om dens Kjøn. De hedenske Poeter Ovid, Statius og Claudian erklære den for en Han. Tertullian mener den er en Hun; Lactantius og efter ham Zeno af Verona erklære den for at være af Intetkjøn, og at reproducere sig ved den af Naturhistorikerne betvivlede <i>generatio æquivoca</i>. Lactantius navnlig udtaler sig med en vis christeligasketisk Begejstring om Phønixfuglens Kjønløshed i et Par latinske Vers, der omtrent kunne gjengives saaledes:
+  <title>Phønixfuglen</title>
+  <subtitle>En østerlandsk Phantasie</subtitle>
+  <firstline>Ved Orientens fjerne Kyst</firstline>
+  <notes>
+    <note>
+      * Denne berømte Mythe, hvis ejendommeligste Forestillinger ere gjengivne i dette Digt, og som, saavidt vides, egentlig først ved <w>Grundtvig</w> er bleven bekjendt i vor Literatur, spillede i Oldtiden en betydelig Rolle, og var Gjenstand for en ganske særegen Yndest, som man kan slutte af den Mængde forskellige Forfattere, der omtale den. Hvad de Gamle egentlig have tænkt sig ved denne Mythe, er saameget vanskeligere at sige, som den forekommer i meget forskjellige Variationer, og i sig selv egner sig til symbolsk Udtryk for de forskelligste Ideer. Den store Majoritet har naturligviis taget Sagnet i ganske bogstavelig Forstand, og det er i og for sig heller ikke utroligere end mange andre naturhistoriske Umuligheder, der berettes <i>bona fide</i> af Herodot og andre Forfattere. Muligen har Ideens første Dannelse sin Grund i noget virkelig Factist, f. Ex. Synet af en i den fjerneste Oldtid allerede sjelden, og nu ganske uddød Kjæmpefugl, som den saakaldte <i>Æpiornis</i>, hvoraf man paa Madagaskar har opdaget Skeletfragmenter og Æg af et ganske uhyre Omfang. Men vist er det, at man i Oldtiden ikke, som i den moderne Tid, i Phønixfuglen saae noget Billede paa den individuelle Menneskesjæls Udødelighed, en Forestilling, de Gamle ikke tillagde samme Betydning som vi, og som i deres mere universelle Naturliv endog forekom dem smaalig. Snarere have de maaskee undertiden herved tænkt paa de menneskelige Generationer eller Civilisationer, der i et mellem 500 og 1000 Aar varierende Tidsrum synes at fremstige, modnes og forsvinde, for atter at vige Pladsen for en ny prædominerende Race. Men i Almindelighed, forsaavidt som man hævede sig over den bogstavelige Tro, har man vel nærmest i Phønixmytben søgt et Udtryk for den dunkle Lyksalighedsdrøm, den længsel efter et fjernt Phantasiland, et tusindaarigt Rige, et jordisk eller himmelsk Paradiis, der til alle Tider har foresvævet og lokket det urolige Menneskehjerte. Saaledes kan det forklares, at Phønixideen efterhaanden blev til en fuldkommen Troesartikel, om hvilken de meest dannede Mennesker ikke tvivlede, om end Ingen havde seet denne mystiske Fugl, eller bestemt kunde angive dens Opholdssted. — Som Beviis paa den overordentlige Popularitet, den i Oldtiden nød, er det maaskee ikke uinteressant at anføre nogle af de mærkeligste Forfattere, som have omtalt den meer og mindre omstændeligt. Allerede i Davids 118de Psalme, 145de Vers findes den antydet; ligesaa hos Herodot (2den Bog) og Plinius (hist. nat. Lib. X, Cap. 2), dog paastaaer denne sidste Forfatter ikke egentlig Noget med Bestemthed, uden dens Alder, som han angiver til 560 Aar. Pomponius Mela (de situ orbis Lib III.) og Ælian (hist. animal. Lib. VI. 58) indrømme den ikke meer end 500 Aar, hvorimod Tacitus (Ann. Lib. VI.) med historisk Nøiagtighed angiver dens levetid til 1461 Aar og Chæremon (hist. chil.) til 6000 Aar. Førft Lactantius, den berømte Kirkefader, fastsætter, i Overensstemmelse med de chiliastiske Ideer, dens Alder til de tusind Aar, som synes at have fundet almindeligst Tiltro. Senere Lærde have udstrakt dette Tal til hele Evigheden med Fradrag af nogle Secunder.
+      Som man kan tænke sig, var det ikke blot Historikerne, men ogsaa Poeterne, der syslede med dette Stof. Ovid har i sine Metamorphoser (Lib. XV., v. 392—400) meddelt i Korthed de væsentligste Momenter af Phønixmythen, som en almindelig bekjendt Sag, og som det synes, blot for Fuldstændigheds Skyld. Den omtales af Statius (Lib. II.) og Martial (Lib. V. epigr. 7), af Sidonins Apollinaris, Ausonius o. fl. stedse som en naturhistorisk Kjendsgjerning, hvorom der ikke kan næres Tvivl. De Poeter, der endnu tilhørte den klassiske Tid, synes ikke ret at have havt Sands for del Ideal-Poetiske i Mythen, og først senere, da den realistiske Classicisme, samtidig med Smagens Fordærvelse, overvandtes af en spiritualistisk Retning, viser sig en Tendents til, ifølge Navne-Ligheden at identificere Phønix med Venusmythen. Den mere poetiske Opfattelse af Phønixmythen viser sig først efter at Christendommen og Nyplatonismen under den gamle Verdens Opløsning havde indført et ganske nyt, poetisk Element, nemlig det <i>romantiske</i>, i Ideernes Verden. Saaledes finde vi de smukkeste og interessanteste Bearbejdelser af Phønixforestillingerne hos den ovenfor nævnte Afrikaner Lactantius (<i>de Phoenice</i>), der døde Aar 325 som Professor i christelig Theologie ved Keiser Erispus's Hof i Trier, samt hos den afrikanske Poet, Claudian, født i Alexandrien 365 og henrettet i Rom 408 tilligemed sin Beskytter Stilico, af Keiser Honorius, der tidligere, saavelsom Arcadius, havde skjænket ham de høieste Æresbeviisninger, og paa Senatets Forslag ladet oprejse hans Statue, der endnu findes i det Farnesiske Palais. I Middelalderen synes Phønixmythen, som saamange andre orientalske Ideer at have havt sin Plads iblandt de christelige Forestillinger. Den omtales af Tertullian, af Johan af Salisbnry (1,13). og af forskjellige christelige Skribenter, som endog undertiden identificerede den med Jomfru Maria, eller som Clemins, Romanus og Rusinus, anførte den som Beviis for Legemernes Opstandelse og den ,,uplettede Undfangelse''. Og ved den nyere franske Poesies Fødsel finde vi den atter udførlig fremstillet af Du Bartas, Forbilledet for vor danske Digter Arreboe, i hans Digt om Skabelsesugen, som atter blev oversat i latinske Vers af Englænderen Lermæns, under Elisabeths Regjering. Kort sagt, ved alle disse lærde Mænds Yttringer var Troen paa Phønixfuglens virkelige Existents bleven saa almindelig, at endog Buffon fandt det Umagen værdt (Om Fuglene III.) at erklære sin Vantro med Hensyn til dette Punct. Forskjellige af de lærde Fortolkere have især dvælet ved Spørgsmaalet om dens Kjøn. De hedenske Poeter Ovid, Statius og Claudian erklære den for en Han. Tertullian mener den er en Hun; Lactantius og efter ham Zeno af Verona erklære den for at være af Intetkjøn, og at reproducere sig ved den af Naturhistorikerne betvivlede <i>generatio æquivoca</i>. Lactantius navnlig udtaler sig med en vis christeligasketisk Begejstring om Phønixfuglens Kjønløshed i et Par latinske Vers, der omtrent kunne gjengives saaledes:
 
-    ,,O, Phønix, du, som uden Kjøn
-    Til Kjærlighed ei kiender,
-    Men uforstyrret, taus, dit Blik
-    Mod Evigheden vender!
+      ,,O, Phønix, du, som uden Kjøn
+      Til Kjærlighed ei kiender,
+      Men uforstyrret, taus, dit Blik
+      Mod Evigheden vender!
 
-    Du er din Fader og din Søn,
-    Du er din egen Broder!
-    Du er din Elsker og din Brud,
-    Din Søster og din Moder!''
+      Du er din Fader og din Søn,
+      Du er din egen Broder!
+      Du er din Elsker og din Brud,
+      Din Søster og din Moder!''
 
-Man seer saaledes, at Phønixfuglen og dens Litteratur afgiver rigeligt Stof til en Doktordisputats, og hvem veed, om den ikke alt har været benyttet til dette Brug.
-        </note>
-    </notes>
-    <source pages="67-79"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+      Man seer saaledes, at Phønixfuglen og dens Litteratur afgiver rigeligt Stof til en Doktordisputats, og hvem veed, om den ikke alt har været benyttet til dette Brug.
+    </note>
+  </notes>
+  <source pages="67-79"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1358,10 +1356,10 @@ Fra Døgnets Qvalm og Mislyd mod
 
 <text id="moellerpl2018010304">
 <head>
-    <title>En tydsk Pige</title>
-    <firstline>Den tyske Jord sig krymped</firstline>
-    <source pages="80-85"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>En tydsk Pige</title>
+  <firstline>Den tyske Jord sig krymped</firstline>
+  <source pages="80-85"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1477,10 +1475,10 @@ I hendes elskte Hjem.
 
 <text id="moellerpl2018010305">
 <head>
-    <title>En Barrikadescene</title>
-    <firstline>De kom med vaiende Fane</firstline>
-    <source pages="86-89"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>En Barrikadescene</title>
+  <firstline>De kom med vaiende Fane</firstline>
+  <source pages="86-89"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1561,10 +1559,10 @@ Og hvo dem hid havde kaldet.
 
 <text id="moellerpl2018010306">
 <head>
-    <title>Digterdød</title>
-    <firstline>O, lad mig døe en Sommerdag</firstline>
-    <source pages="90-92"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Digterdød</title>
+  <firstline>O, lad mig døe en Sommerdag</firstline>
+  <source pages="90-92"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1628,18 +1626,18 @@ Men gjennem Evighedens Nat
 
 <section level="3">
 <head>
-    <title>Moldo-wallachiske Folkesange</title>
+  <title>Moldo-wallachiske Folkesange</title>
 </head>
 <content>
 
 <text id="moellerpl2018010307">
 <head>
-    <title>Folkestemmen</title>
-    <toctitle><num>1.</num>Folkestemmen</toctitle>
-    <subtitle>(la doïna)</subtitle>
-    <firstline>O, hvis en Ungmø jeg havde med Blomster</firstline>
-    <source pages="93-94"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Folkestemmen</title>
+  <toctitle><num>1.</num>Folkestemmen</toctitle>
+  <subtitle>(la doïna)</subtitle>
+  <firstline>O, hvis en Ungmø jeg havde med Blomster</firstline>
+  <source pages="93-94"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1675,11 +1673,11 @@ Freidig da skulde vi kæmpe og Hjemmet
 
 <text id="moellerpl2018010308">
 <head>
-    <title>Gjæt engang!</title>
-    <toctitle><num>2.</num>Gjæt engang</toctitle>
-    <firstline>Til den unge Mø, som hos ham sidder</firstline>
-    <source pages="94-96"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Gjæt engang!</title>
+  <toctitle><num>2.</num>Gjæt engang</toctitle>
+  <firstline>Til den unge Mø, som hos ham sidder</firstline>
+  <source pages="94-96"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1725,11 +1723,11 @@ Og — hun sagte fik et Kys paa <w>Barmen</w>.
 
 <text id="moellerpl2018010309">
 <head>
-    <title>Den gamle Klantza</title>
-    <toctitle><num>3.</num>Den gamle Klantza</toctitle>
-    <firstline>Ved et Markskjæl sidder gamle Klantza</firstline>
-    <source pages="96-101"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Den gamle Klantza</title>
+  <toctitle><num>3.</num>Den gamle Klantza</toctitle>
+  <firstline>Ved et Markskjæl sidder gamle Klantza</firstline>
+  <source pages="96-101"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1828,11 +1826,11 @@ Satan leende i Dybet synker.
 
 <text id="moellerpl2018010310">
 <head>
-    <title>Røversang</title>
-    <toctitle><num>4.</num>Røversang</toctitle>
-    <firstline>Vinteren kommer og Sommeren gaaer</firstline>
-    <source pages="101-103"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Røversang</title>
+  <toctitle><num>4.</num>Røversang</toctitle>
+  <firstline>Vinteren kommer og Sommeren gaaer</firstline>
+  <source pages="101-103"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1891,11 +1889,11 @@ Til Skræk for hver reisende Synder!
 
 <text id="moellerpl2018010311">
 <head>
-    <title>Pigen fra Bjergene</title>
-    <toctitle><num>5.</num>Pigen fra Bjergene</toctitle>
-    <firstline>Mø fra Bjerget, med den blide Røst</firstline>
-    <source pages="104-105"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Pigen fra Bjergene</title>
+  <toctitle><num>5.</num>Pigen fra Bjergene</toctitle>
+  <firstline>Mø fra Bjerget, med den blide Røst</firstline>
+  <source pages="104-105"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1928,11 +1926,11 @@ Søde Elskovstaarer skal du græde!
 
 <text id="moellerpl2018010312">
 <head>
-    <title>Strunga-Skoven</title>
-    <toctitle><num>6.</num>Strunga-Skoven</toctitle>
-    <firstline>Med lange Bøsser og uden Skoe</firstline>
-    <source pages="105-107"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Strunga-Skoven</title>
+  <toctitle><num>6.</num>Strunga-Skoven</toctitle>
+  <firstline>Med lange Bøsser og uden Skoe</firstline>
+  <source pages="105-107"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1989,12 +1987,12 @@ Med tunge spækkede Punge?''
 
 <text id="moellerpl2018010313">
 <head>
-    <title>Søndagsdandsen</title>
-    <toctitle><num>7.</num>Søndagsdandsen</toctitle>
-    <subtitle>(la hora)</subtitle>
-    <firstline>Hist under Egen gaaer Dandsen flink</firstline>
-    <source pages="108-110"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Søndagsdandsen</title>
+  <toctitle><num>7.</num>Søndagsdandsen</toctitle>
+  <subtitle>(la hora)</subtitle>
+  <firstline>Hist under Egen gaaer Dandsen flink</firstline>
+  <source pages="108-110"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2051,11 +2049,11 @@ O, maatte jeg døe i Dandsen med dig,
 
 <text id="moellerpl2018010314">
 <head>
-    <title>Nissen</title>
-    <toctitle><num>8.</num>Nissen</toctitle>
-    <firstline>Lille Søster, saa ung og kjær</firstline>
-    <source pages="110-112"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Nissen</title>
+  <toctitle><num>8.</num>Nissen</toctitle>
+  <firstline>Lille Søster, saa ung og kjær</firstline>
+  <source pages="110-112"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2096,12 +2094,12 @@ Hvor er dine Perler, min Søster?
 
 <text id="moellerpl2018010315">
 <head>
-    <title>Tartaren</title>
-    <toctitle><num>9.</num>Tartaren</toctitle>
-    <subtitle>(Sang fra det 15de Aarhundrede)</subtitle>
-    <firstline>Stakkels Tartar, o tag dig i Agt!</firstline>
-    <source pages="112-113"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Tartaren</title>
+  <toctitle><num>9.</num>Tartaren</toctitle>
+  <subtitle>(Sang fra det 15de Aarhundrede)</subtitle>
+  <firstline>Stakkels Tartar, o tag dig i Agt!</firstline>
+  <source pages="112-113"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2140,10 +2138,10 @@ Stakkels Tartar, ak stakkels Tartar!
 
 <text id="moellerpl2018010316">
 <head>
-    <title>Den venetianske Vandbærerske</title>
-    <firstline>En Aften Vand jeg hented paa Piazetta</firstline>
-    <source pages="114-116"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Den venetianske Vandbærerske</title>
+  <firstline>En Aften Vand jeg hented paa Piazetta</firstline>
+  <source pages="114-116"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2208,20 +2206,20 @@ Roer i den sin elskte Biondinetta!''
 
 <section level="3">
 <head>
-    <title>Tre Sange af Béranger</title>
+  <title>Tre Sange af Béranger</title>
 </head>
 <content>
 
 <text id="moellerpl2018010317">
 <head>
-    <title>Min Kjole</title>
-    <subtitle>(Mon habit)</subtitle>
-    <firstline>O, vær mig tro, som du paa mig kan stole</firstline>
-    <notes>
-        <note>Gendigtning af Pierre-Jean de Béranger: <xref type="translation" poem="beranger2001081901"/>.</note>
-    </notes>
-    <source pages="117-119"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Min Kjole</title>
+  <subtitle>(Mon habit)</subtitle>
+  <firstline>O, vær mig tro, som du paa mig kan stole</firstline>
+  <notes>
+    <note>Gendigtning af Pierre-Jean de Béranger: <xref type="translation" poem="beranger2001081901"/>.</note>
+  </notes>
+  <source pages="117-119"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2275,17 +2273,17 @@ Min gamle Ven, vi følges til min Grav!
 
 <text id="moellerpl2018010318">
 <head>
-    <title>Min Sjæl</title>
-    <subtitle>
-        <line>(Mon âme)</line>
-        <line>1816</line>
-    </subtitle>
-    <firstline>Ved Bordet, sødt beruust af Elskov</firstline>
-    <notes>
-        <note>Gendigtning af Pierre-Jean de Béranger: <xref type="translation" poem="beranger2018010302"/>.</note>
-    </notes>
-    <source pages="119-122"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Min Sjæl</title>
+  <subtitle>
+    <line lang="fr">(Mon âme)</line>
+    <line>1816</line>
+  </subtitle>
+  <firstline>Ved Bordet, sødt beruust af Elskov</firstline>
+  <notes>
+    <note>Gendigtning af Pierre-Jean de Béranger: <xref type="translation" poem="beranger2018010302"/>.</note>
+  </notes>
+  <source pages="119-122"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2354,14 +2352,14 @@ Flyv bort, slyv bort, og stig i Himlen ind!
 
 <text id="moellerpl2018010319">
 <head>
-    <title>Stjerneskuddene</title>
-    <subtitle>(les étoiles qui filent)</subtitle>
-    <firstline>Du siger, Hyrde, at sin Stjerne</firstline>
-    <notes>
-        <note>Gendigtning af Pierre-Jean de Béranger: <xref type="translation" poem="beranger2018010301"/>.</note>
-    </notes>
-    <source pages="123-126"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Stjerneskuddene</title>
+  <subtitle>(les étoiles qui filent)</subtitle>
+  <firstline>Du siger, Hyrde, at sin Stjerne</firstline>
+  <notes>
+    <note>Gendigtning af Pierre-Jean de Béranger: <xref type="translation" poem="beranger2018010301"/>.</note>
+  </notes>
+  <source pages="123-126"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2436,15 +2434,15 @@ Et Glimt, — som ikke meer er til!''
 
 <text id="moellerpl2018010320">
 <head>
-    <title>Napoleon</title>
-    <subtitle>af Victor Hugo.</subtitle>
-    <firstline>Kun ham! overalt kun ham! — hvor helst mit Hjerte banker</firstline>
-    <notes>
-        <note>Gendigtning af Victor Hugo: <xref type="translation" poem="hugo20180206"/>.</note>
-    </notes>
-    <source pages="127-135"/>
-    <keywords>tasso,virgil</keywords>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Napoleon</title>
+  <subtitle>af Victor Hugo.</subtitle>
+  <firstline>Kun ham! overalt kun ham! — hvor helst mit Hjerte banker</firstline>
+  <notes>
+    <note>Gendigtning af Victor Hugo: <xref type="translation" poem="hugo20180206"/>.</note>
+  </notes>
+  <source pages="127-135"/>
+  <keywords>tasso,virgil</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2583,17 +2581,17 @@ Hiin sorte Kæmpe ryge i Horizontens Rand!
 
 <text id="moellerpl2018010321">
 <head>
-    <title>Martha</title>
-    <subtitle>
-        <line>Den Vanvittige</line>
-        <line>En Skizze fra Gascogne</line>
-    </subtitle>
-    <firstline>Forleden Aar, hver Aften, ved smilende Solnedgang</firstline>
-    <notes>
-        <note>* Dette Digt er en temmelig fri Bearbejdelse efter den gasconske Digter <w>Jasmin</w>, hvis Arbejder, skjøndt i en aldeles moderne Aand, atter have skaffet det gamle Troubadoursprog litterair Betydning. Det uregelmæssige og hyppig vexlende Versemaal er en Efterligning af Originalen, hvor det findes omtrent paa lignende Maade, hvilket ikke sjelden forhøier den malende og dramatiske Effect. Denne Forfatters Digte synes især beregnede paa at reciteres offentlig, og Formen er derfor næsten altid en Art Recitativ, som fra den Reciterendes Side udfordrer meer end almindelig Øvelse og Opmærksomhed.</note>
-    </notes>
-    <source pages="139-172"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Martha</title>
+  <subtitle>
+    <line>Den Vanvittige</line>
+    <line>En Skizze fra Gascogne</line>
+  </subtitle>
+  <firstline>Forleden Aar, hver Aften, ved smilende Solnedgang</firstline>
+  <notes>
+    <note>* Dette Digt er en temmelig fri Bearbejdelse efter den gasconske Digter <w>Jasmin</w>, hvis Arbejder, skjøndt i en aldeles moderne Aand, atter have skaffet det gamle Troubadoursprog litterair Betydning. Det uregelmæssige og hyppig vexlende Versemaal er en Efterligning af Originalen, hvor det findes omtrent paa lignende Maade, hvilket ikke sjelden forhøier den malende og dramatiske Effect. Denne Forfatters Digte synes især beregnede paa at reciteres offentlig, og Formen er derfor næsten altid en Art Recitativ, som fra den Reciterendes Side udfordrer meer end almindelig Øvelse og Opmærksomhed.</note>
+  </notes>
+  <source pages="139-172"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2918,7 +2916,7 @@ Lidt endnu — hvad skal man sige? — Lykken
 Er en kostbar Vare ... kjækt, min Datter,
 Hold til Enden ud — end før min Død
 Haaber jeg din Lykke at opleve.
-Han tog feil, den stakkels Gamle, Døden 
+Han tog feil, den stakkels Gamle, Døden
 Næste Maaned lukkede hans Øie. —
 Martha hver Dag gik paa Kirkegaarden
 Ved hans Grav at græde. Dog en Aften
@@ -3245,10 +3243,10 @@ Hende bede fromt paa Knæ om Tilgivelse for Alt —
 
 <text id="moellerpl2018010322">
 <head>
-    <title>Fragment af en Livsphilosophie</title>
-    <firstline>Over dit Hoved Stjerner ile</firstline>
-    <source pages="173-180"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Fragment af en Livsphilosophie</title>
+  <firstline>Over dit Hoved Stjerner ile</firstline>
+  <source pages="173-180"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3392,10 +3390,10 @@ Jeg blomstred og bar Frugt — Farvel.''
 
 <text id="moellerpl2018010323">
 <head>
-    <title>Sydligt Aftenlandskab</title>
-    <firstline>Duften er mørkeblaa, og de smaa hvide Skyer</firstline>
-    <source pages="181-182"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Sydligt Aftenlandskab</title>
+  <firstline>Duften er mørkeblaa, og de smaa hvide Skyer</firstline>
+  <source pages="181-182"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3429,10 +3427,10 @@ Nedstiger pludselig en paradisisk Ro.
 
 <text id="moellerpl2018010324">
 <head>
-    <title>Nordens Dronning</title>
-    <firstline>I Nord, i Nord, kun Iis og Taager svømme</firstline>
-    <source pages="183-185"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Nordens Dronning</title>
+  <firstline>I Nord, i Nord, kun Iis og Taager svømme</firstline>
+  <source pages="183-185"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3481,10 +3479,10 @@ Dets Pust opliver som en ædel Viin.
 
 <text id="moellerpl2018010325">
 <head>
-    <title>Avner</title>
-    <firstline>Den Blomst, som spirer paa din Vei</firstline>
-    <source pages="186-188"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Avner</title>
+  <firstline>Den Blomst, som spirer paa din Vei</firstline>
+  <source pages="186-188"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3592,10 +3590,10 @@ Naar den dig ærlig bydes!
 
 <text id="moellerpl2018010326">
 <head>
-    <title>Moder og Elskerinde</title>
-    <firstline>Siig, har I seet min Elskerinde</firstline>
-    <source pages="191-194"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Moder og Elskerinde</title>
+  <firstline>Siig, har I seet min Elskerinde</firstline>
+  <source pages="191-194"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3676,10 +3674,10 @@ Hun lever i mit Hjertes Slag.
 
 <text id="moellerpl2018010327">
 <head>
-    <title>Folkelykke</title>
-    <firstline>Lykkeligt det Folk, som stolt ved Ploven gaaer</firstline>
-    <source pages="195-197"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Folkelykke</title>
+  <firstline>Lykkeligt det Folk, som stolt ved Ploven gaaer</firstline>
+  <source pages="195-197"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>

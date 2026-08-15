@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="claussen" status="incomplete" type="poetry">
 <workhead>
-   <title>Andre digte</title>
-   <source id="gottschalk-1930" facsimile="gottschalk-1930" facsimile-pages-num="48" facsimile-pages-offset="2">Albert Gottschalk, <i>Den frie Udstilling</i>, katalog, Oktober 1930.</source>
+  <title>Andre digte</title>
+  <source id="gottschalk-1930" facsimile="gottschalk-1930" facsimile-pages-num="48" facsimile-pages-offset="2">Albert Gottschalk, <i>Den frie Udstilling</i>, katalog, Oktober 1930.</source>
 </workhead>
 <workbody>
 
 <text id="claussen2005060601">
 <head>
-   <title>Det gamle Systém</title>
-   <firstline>Paa Dødsseng du ligger, det lakker mod Slut</firstline>
-   <quality>korrektur1</quality>
+  <title>Det gamle Systém</title>
+  <firstline>Paa Dødsseng du ligger, det lakker mod Slut</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -37,16 +36,16 @@ Og pines af vilde, forvirrede Syner.
 Du sér Barrikader, alt lugter du Krudt -
 ,,Skyd ned dem, de Folkeforførere, Jøder!''
 - Saa synker du, kun Latter du møder:
-    Din Livskraft er brudt. 
+    Din Livskraft er brudt.
 </poetry>
 </body>
 </text>
 
 <text id="claussen2005060602">
 <head>
-   <title>Det unge Danmark</title>
-   <firstline>Man laa i Isen frossen med Sné paa alle Sider</firstline>
-   <quality>korrektur1</quality>
+  <title>Det unge Danmark</title>
+  <firstline>Man laa i Isen frossen med Sné paa alle Sider</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -87,16 +86,16 @@ Før jeg paa Livet sér dig bekæmpe dem, du hader,
 før jeg faar sét dig plante et Net af Barrikader -
 
 Og før det gamle Slægtled jeg for din Fod sér ligge
-- tilgiv mig, unge Danmark! tilgiv: jeg tror dig ikke. 
+- tilgiv mig, unge Danmark! tilgiv: jeg tror dig ikke.
 </poetry>
 </body>
 </text>
 
 <text id="claussen2005060603">
 <head>
-   <title>Ved Løvfald</title>
-   <firstline>Der hviler tunge Taager</firstline>
-   <quality>korrektur1</quality>
+  <title>Ved Løvfald</title>
+  <firstline>Der hviler tunge Taager</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -136,12 +135,12 @@ paa Vinterens hvide Rædsel.
 
 <text id="claussen2005060604">
 <head>
-   <title>Til Ingeborg og Viggo Stuckenberg</title>
-   <firstline>Over mig svæver tusinde sprængte</firstline>
-   <notes>
-   <note>Skrevet til <a poet="stuckenberg">Viggo Stuckenberg</a> og hans kone Ingeborg.</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title>Til Ingeborg og Viggo Stuckenberg</title>
+  <firstline>Over mig svæver tusinde sprængte</firstline>
+  <notes>
+    <note>Skrevet til <a poet="stuckenberg">Viggo Stuckenberg</a> og hans kone Ingeborg.</note>
+  </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -191,22 +190,22 @@ aldrig grønnes en Vaar forgæves.
 Mens Græsset spirer med flygtig Duft,
 frit og lyksalig skal Brystet hæves;
 og glade, begærlige Læber vil nippe
-den kvægende, sølvfine Luft. 
+den kvægende, sølvfine Luft.
 </poetry>
 </body>
 </text>
 
 <text id="claussen2001101101">
 <head>
-   <title>Jeg er ombølget af dig</title>
-   <toctitle>Jeg er ombølget af dig</toctitle>
-   <indextitle>Jeg er ombølget af dig</indextitle>
-   <firstline>Jeg er ombølget af dig</firstline>
-   <notes>
-      <note>Kilde er Sophus Claussen: <i>Samlede Digte</i>, I-IV, ved Jørgen Hunosøe, DSL/Gyldendal 2000, bind IV, side 27.</note>
-      <note>Ranet fra Brian Bentsens <a href="http://d2.kalliope.org/~bbb/thepierianspring.dk/">The Pierian Spring</a>.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Jeg er ombølget af dig</title>
+  <toctitle>Jeg er ombølget af dig</toctitle>
+  <indextitle>Jeg er ombølget af dig</indextitle>
+  <firstline>Jeg er ombølget af dig</firstline>
+  <notes>
+    <note>Ranet fra Brian Bentsens <a href="http://d2.kalliope.org/~bbb/thepierianspring.dk/">The Pierian Spring</a>.</note>
+  </notes>
+  <source pages="27">Sophus Claussen: <i>Samlede Digte</i>, I-IV, ved Jørgen Hunosøe, DSL/Gyldendal 2000, bind IV.</source>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -232,10 +231,10 @@ fra dine Øjnes Nat
 
 <text id="claussen2019020901">
 <head>
-   <title>Albert Gottschalk</title>
-   <firstline>Er det hans Liv, hans Farver har i Sinde?</firstline>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
-   <source in="gottschalk-1930" pages="7-8"/>
+  <title>Albert Gottschalk</title>
+  <firstline>Er det hans Liv, hans Farver har i Sinde?</firstline>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+  <source in="gottschalk-1930" pages="7-8"/>
 </head>
 <body>
 <poetry>

@@ -1,29 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1944" author="munk" status="complete" type="poetry">
 <workhead>
-    <title>Sidste Digte</title>
-    <year>1944</year>
-    <dates>
-        <published>1944-12-31</published><!-- Ikke korrekt dato, men skal være efter hans død samme år. -->
-    </dates>
-    <notes>
-        <note>Teksten følger Kaj Munk: <i>Sidste Digte</i>, Nordens Friheds Forlag - Frit Nordisk Forlag, Kbh., 1944.</note>
-        <note>Samlingen indeholder også digtet »Til Kaj Munk«, som er udeladt i Kalliopes udgave, da det ikke er skrevet af Munk.</note>
-        <note>Stavemåde og tegnsætning følger i øvrigt samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
-    </notes>
-    <pictures>
-        <picture src="1944-p1.jpg">Titelbladet til <i>Sidste Digte</i> (1944) lyder ,,Kaj Munk's / Sidste Digte / Den Skjæbne ej til os // Nordens Friheds Forlag - Frit Nordisk Forlag / København 1944''.</picture>
-    </pictures>
-    <source facsimile="1944" facsimile-pages-num="69" facsimile-pages-offset="3">Kaj Munk: <i>Sidste Digte</i>, Nordens Friheds Forlag - Frit Nordisk Forlag, Kbh., 1944.</source>
+  <title>Sidste Digte</title>
+  <year>1944</year>
+  <dates>
+    <published>1944-12-31</published><!-- Ikke korrekt dato, men skal være efter hans død samme år. -->
+  </dates>
+  <notes>
+    <note>Samlingen indeholder også digtet »Til Kaj Munk«, som er udeladt i Kalliopes udgave, da det ikke er skrevet af Munk.</note>
+    <note>Stavemåde og tegnsætning følger i øvrigt samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
+  </notes>
+  <pictures>
+    <picture src="1944-p1.jpg">Titelbladet til <i>Sidste Digte</i> (1944) lyder ,,Kaj Munk's / Sidste Digte / Den Skjæbne ej til os // Nordens Friheds Forlag - Frit Nordisk Forlag / København 1944''.</picture>
+  </pictures>
+  <source facsimile="1944" facsimile-pages-num="69" facsimile-pages-offset="3">Kaj Munk: <i>Sidste Digte</i>, Nordens Friheds Forlag - Frit Nordisk Forlag, Kbh., 1944.</source>
 </workhead>
 <workbody>
 
 <text id="munk2020011901" skip-index="true">
 <head>
-    <title>Forord</title>
-    <source pages="5-6"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Forord</title>
+  <source pages="5-6"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <prose>
@@ -39,11 +37,11 @@
 
 <text id="munk2020011902">
 <head>
-    <title>Tyrtaios: 4 Krigssange</title>
-    <subtitle>Fra det syvende Aarhundrede før Krigeren fra Nazareth.</subtitle>
-    <firstline>Spartas Sønner, gaa frem! gaa frem!</firstline>
-    <source pages="7-12"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Tyrtaios: 4 Krigssange</title>
+  <subtitle>Fra det syvende Aarhundrede før Krigeren fra Nazareth.</subtitle>
+  <firstline>Spartas Sønner, gaa frem! gaa frem!</firstline>
+  <source pages="7-12"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -242,10 +240,10 @@ gaa frem, gaa frem, gaa frem, gaa frem!
 
 <text id="munk2017090202">
 <head>
-    <title>Danmark, vort Liv</title>
-    <firstline>Danmark, besudlet og bundet!</firstline>
-    <source pages="13"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Danmark, vort Liv</title>
+  <firstline>Danmark, besudlet og bundet!</firstline>
+  <source pages="13"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -278,10 +276,10 @@ Danmark, vort Liv.
 
 <text id="munk2017090203">
 <head>
-    <title>Vort danske Kald</title>
-    <firstline>Nu kræver Danmark af os, vi er stærke</firstline>
-    <source pages="14"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Vort danske Kald</title>
+  <firstline>Nu kræver Danmark af os, vi er stærke</firstline>
+  <source pages="14"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -317,10 +315,10 @@ des mere ruster vi de danske Sind.
 
 <text id="munk2020011905">
 <head>
-    <title>Af Vikingæt</title>
-    <firstline>Og der er sunget længe nok</firstline>
-    <source pages="15-16"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Af Vikingæt</title>
+  <firstline>Og der er sunget længe nok</firstline>
+  <source pages="15-16"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -365,10 +363,11 @@ vi er af Vikingæt!
 
 <text id="munk2020011906">
 <head>
-    <title>Danmarkssang</title>
-    <firstline>Danmark, Land af Hav og Himmel</firstline>
-    <source pages="17-18"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Danmarkssang</title>
+  <firstline>Danmark, Land af Hav og Himmel</firstline>
+  <!-- Ikke en variant af munk2020011928: Forskellige lejlighedsdigte med fælles indledning. -->
+  <source pages="17-18"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -440,10 +439,10 @@ Folk og Modersmaal!
 
 <text id="munk2020011907">
 <head>
-    <title>Flaget, der kun lever i sin Kiste</title>
-    <firstline>Hvorfor vil du hejse Flaget, naar du tror, det er en Klud?</firstline>
-    <source pages="19-20"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Flaget, der kun lever i sin Kiste</title>
+  <firstline>Hvorfor vil du hejse Flaget, naar du tror, det er en Klud?</firstline>
+  <source pages="19-20"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -488,10 +487,10 @@ naas den Dag, det atter vajer over Folket højt og frit.
 
 <text id="munk2020011908">
 <head>
-    <title>Jylland</title>
-    <firstline>Fjorde og Skoves</firstline>
-    <source pages="21"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Jylland</title>
+  <firstline>Fjorde og Skoves</firstline>
+  <source pages="21"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -536,10 +535,10 @@ af dit Jylland.
 
 <text id="munk2020011909">
 <head>
-    <title>Hvor mørkt, hvor stort</title>
-    <firstline>Hvor mørkt du ligger, du danske Kyst</firstline>
-    <source pages="22-24"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Hvor mørkt, hvor stort</title>
+  <firstline>Hvor mørkt du ligger, du danske Kyst</firstline>
+  <source pages="22-24"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -620,10 +619,10 @@ til evig Dyst.
 
 <text id="munk2020011910">
 <head>
-    <title>Høfdebyggere</title>
-    <firstline>De bygger Høfder ved Vesterhavet</firstline>
-    <source pages="25-26"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Høfdebyggere</title>
+  <firstline>De bygger Høfder ved Vesterhavet</firstline>
+  <source pages="25-26"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -659,10 +658,10 @@ og ta'r igen, hvad han tog fra os.
 
 <text id="munk2020011911">
 <head>
-    <title>Blæsten og Regnen</title>
-    <firstline>I Danmark bor den stride Vind</firstline>
-    <source pages="26-28"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Blæsten og Regnen</title>
+  <firstline>I Danmark bor den stride Vind</firstline>
+  <source pages="26-28"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -761,10 +760,10 @@ end Hoppen Regn, end Hingsten Blæst?
 
 <text id="den-blaa-anemone" aliases="munk2017090204">
 <head>
-    <title>Den blaa Anemone</title>
-    <firstline>Hvad var det dog, der skete?</firstline>
-    <source pages="29-30"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Den blaa Anemone</title>
+  <firstline>Hvad var det dog, der skete?</firstline>
+  <source pages="29-30"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -823,10 +822,10 @@ hvor er din Skaber stor!
 
 <text id="munk2020011913">
 <head>
-    <title>Manden med Pincetten</title>
-    <firstline>Lidt ubetænksom pigeglad</firstline>
-    <source pages="31-32"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Manden med Pincetten</title>
+  <firstline>Lidt ubetænksom pigeglad</firstline>
+  <source pages="31-32"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -889,10 +888,10 @@ for Manden med Pincetten.
 
 <text id="munk2020011914">
 <head>
-    <title>Tre Slags Landsmænd under Krig</title>
-    <firstline>Der er et gammelt Kærnesprog</firstline>
-    <source pages="33-34"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Tre Slags Landsmænd under Krig</title>
+  <firstline>Der er et gammelt Kærnesprog</firstline>
+  <source pages="33-34"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -936,10 +935,10 @@ fortæl mig, hvad de fejler?
 
 <text id="munk2020011915">
 <head>
-    <title>Den evige Forsigtighed</title>
-    <firstline>De gamle, syge Mænd blev ved at lalle</firstline>
-    <source pages="34"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Den evige Forsigtighed</title>
+  <firstline>De gamle, syge Mænd blev ved at lalle</firstline>
+  <source pages="34"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -963,10 +962,10 @@ Af hvad? selvfølgelig just af Forsigtighed.
 
 <text id="munk2020011916">
 <head>
-    <title>Den Ringe og den Fattige</title>
-    <firstline>Bror Arbejdsmand, ja den er gal</firstline>
-    <source pages="35"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Den Ringe og den Fattige</title>
+  <firstline>Bror Arbejdsmand, ja den er gal</firstline>
+  <source pages="35"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1003,10 +1002,10 @@ der slæber paa Forrædernavn?
 
 <text id="munk2020011917">
 <head>
-    <title>Devancement</title>
-    <firstline>Hvad er det for en Dobbeltmand</firstline>
-    <source pages="36-37"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Devancement</title>
+  <firstline>Hvad er det for en Dobbeltmand</firstline>
+  <source pages="36-37"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1055,10 +1054,10 @@ til Rutchebanekontrollør!
 
 <text id="munk2020011918">
 <head>
-    <title>Kultur</title>
-    <firstline>En Herre med Doktorhat paa sit Haar</firstline>
-    <source pages="37"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Kultur</title>
+  <firstline>En Herre med Doktorhat paa sit Haar</firstline>
+  <source pages="37"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1085,12 +1084,12 @@ Formindsk hos os daglig Kulturen!
 
 <text id="munk2017090207">
 <head>
-    <title>»Vi har det jo godt«</title>
-    <indextitle>Vi har det jo godt</indextitle>
-    <linktitle>Vi har det jo godt</linktitle>
-    <firstline>Hvad rager det mig, det meste af Verden</firstline>
-    <source pages="38-39"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>»Vi har det jo godt«</title>
+  <indextitle>Vi har det jo godt</indextitle>
+  <linktitle>Vi har det jo godt</linktitle>
+  <firstline>Hvad rager det mig, det meste af Verden</firstline>
+  <source pages="38-39"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1135,10 +1134,10 @@ i denne Tang til Tobak.
 
 <text id="munk2017090208">
 <head>
-    <title>Ogsaa han</title>
-    <firstline>Ogsaa han! Som Salt i Hjertets Vunde</firstline>
-    <source pages="39"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Ogsaa han</title>
+  <firstline>Ogsaa han! Som Salt i Hjertets Vunde</firstline>
+  <source pages="39"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1165,10 +1164,10 @@ skal des fastere det friske staa!
 
 <text id="munk2020011921">
 <head>
-    <title>Aabent Brev til en Minister</title>
-    <firstline>Hvad de aldrig forstaar, Hr. Minister</firstline>
-    <source pages="40-41"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Aabent Brev til en Minister</title>
+  <firstline>Hvad de aldrig forstaar, Hr. Minister</firstline>
+  <source pages="40-41"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1222,10 +1221,10 @@ om saa han skal knuse sig selv.
 
 <text id="munk2017090209">
 <head>
-    <title>Brittens Dygtighed</title>
-    <firstline>Af Brittens Dygtighed, stod frem en Stat</firstline>
-    <source pages="41"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Brittens Dygtighed</title>
+  <firstline>Af Brittens Dygtighed, stod frem en Stat</firstline>
+  <source pages="41"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1246,10 +1245,10 @@ kan finde paa at sønderslaa det Rige.
 
 <text id="munk2020011923">
 <head>
-    <title>Sandhed gror</title>
-    <firstline>Ængstelig og uden Ære</firstline>
-    <source pages="42-43"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Sandhed gror</title>
+  <firstline>Ængstelig og uden Ære</firstline>
+  <source pages="42-43"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1303,10 +1302,10 @@ Det er saadan, Sandhed gror.
 
 <text id="munk2020011924">
 <head>
-    <title>Den skjulte Aand</title>
-    <firstline>Vi tror i Dag paa Danmarks skjulte Aand</firstline>
-    <source pages="44-45"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Den skjulte Aand</title>
+  <firstline>Vi tror i Dag paa Danmarks skjulte Aand</firstline>
+  <source pages="44-45"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1357,10 +1356,10 @@ saalænge Stjerner over Himlen gaar.
 
 <text id="munk2020011925">
 <head>
-    <title>Avnerne</title>
-    <firstline>Satan vil sigte sin Hvede</firstline>
-    <source pages="45"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Avnerne</title>
+  <firstline>Satan vil sigte sin Hvede</firstline>
+  <source pages="45"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1387,10 +1386,10 @@ ned i Forkastelsens Baal.
 
 <text id="munk2020011926">
 <head>
-    <title>Alle Fronters Gud</title>
-    <firstline>Jeg er Herren. Ingen ydermere</firstline>
-    <source pages="46-47"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Alle Fronters Gud</title>
+  <firstline>Jeg er Herren. Ingen ydermere</firstline>
+  <source pages="46-47"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1444,10 +1443,10 @@ med Gengældelsernes hvasse Lyn.
 
 <text id="munk2020011927">
 <head>
-    <title>Hyldest til Norge</title>
-    <firstline>Ja, vi elsker dette Landet</firstline>
-    <source pages="48"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Hyldest til Norge</title>
+  <firstline>Ja, vi elsker dette Landet</firstline>
+  <source pages="48"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1483,10 +1482,11 @@ Danmark for sin Bror.
 
 <text id="munk2020011928">
 <head>
-    <title>Danmark og Norden</title>
-    <firstline>Danmark, Land af Hav og Himmel</firstline>
-    <source pages="49-50"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Danmark og Norden</title>
+  <firstline>Danmark, Land af Hav og Himmel</firstline>
+  <!-- Ikke en variant af munk2020011906: Forskellige lejlighedsdigte med fælles indledning. -->
+  <source pages="49-50"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1531,10 +1531,10 @@ ad dig op og ned.
 
 <text id="munk2017090210">
 <head>
-    <title>De faldne</title>
-    <firstline>Drenge, I Drenge, som døde</firstline>
-    <source pages="50"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>De faldne</title>
+  <firstline>Drenge, I Drenge, som døde</firstline>
+  <source pages="50"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1563,10 +1563,10 @@ Gud jer det evigt lønner.
 
 <text id="munk2020011930">
 <head>
-    <title>Min unge elskede kaster op</title>
-    <firstline>Min unge elskede kaster op</firstline>
-    <source pages="51-52"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Min unge elskede kaster op</title>
+  <firstline>Min unge elskede kaster op</firstline>
+  <source pages="51-52"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1611,10 +1611,10 @@ usigeligt jeg dig ærer.
 
 <text id="munk2020011931">
 <head>
-    <title>Lov er Liv</title>
-    <firstline>I kaster mod mit Ansigt Ord af Syre</firstline>
-    <source pages="52-54"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Lov er Liv</title>
+  <firstline>I kaster mod mit Ansigt Ord af Syre</firstline>
+  <source pages="52-54"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1695,9 +1695,9 @@ da blir din Fremtid stor og højt dit Kald.
 
 <text id="munk2020011932" skip-index="true">
 <head>
-    <title>Kaj Munk</title>
-    <source pages="55-60"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Kaj Munk</title>
+  <source pages="55-60"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <prose>
@@ -1723,11 +1723,11 @@ da blir din Fremtid stor og højt dit Kald.
 <!--
 <text id="munk2020011933">
 <head>
-    <title>Til Kaj Munk</title>
-    <subtitle>Nattetanker</subtitle>
-    <firstline>Snart løber Dagens Timer bort</firstline>
-    <source pages="61-62"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Til Kaj Munk</title>
+  <subtitle>Nattetanker</subtitle>
+  <firstline>Snart løber Dagens Timer bort</firstline>
+  <source pages="61-62"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1794,12 +1794,12 @@ Gud glæde Din Sjæl i Himmerig - Amen!
 </text>
 -->
 
-<text id="munk2020011934">
+<text id="munk2020011934" variant="munk2017090205">
 <head>
-    <title>Hjælp mig at følge dig -</title>
-    <firstline>Mester med den tunge Tornekrone</firstline>
-    <source pages="64"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Hjælp mig at følge dig -</title>
+  <firstline>Mester med den tunge Tornekrone</firstline>
+  <source pages="64"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>

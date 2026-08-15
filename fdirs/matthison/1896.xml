@@ -1,30 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1896" author="matthison" status="complete" type="poetry">
 <workhead>
-    <title>Stjærnerne</title>
-    <year>1896</year>
-    <notes>
-        <note>Samlingen bærer dedikationen ,,Hendes Naade Fru Baronesse Siegfriede Reedtz-Thott, f. Komtesse Rantzau venligst og ærbødigst tilegnet.''</note>
-        <note>Teksten følger Aage Matthison-Hansen: <i>Stjærnerne</i>, Axel Andersen, 1896.</note>
-        <note>Noter med en foranstillet asterisk er digterens egne.</note>
-        <!-- TODO: Henvisning til Michelangelos motto på titelbladet. -->
-    </notes>
-    <pictures>
-        <picture src="1896-p1.jpg">Titelbladet til <i>Stjærnerne</i> (1896) lyder ,,Stærnerne / og / andre Digte / af / Aage Matthison-Hansen // »Volo con le vostr’ ali senza piume, / Col vostro ingegno al ciel sempre son mosso, / Dal vostro arbitrio son pallido e rosso, / Freddo al sol, caldo alle piu fredde brume.« / Michelagnolo. / »Sonetto« XII. // København / Axel Andersen / Laur. Madsens Bogrtrykkeri. / 1896.''.</picture>
-    </pictures>
-    <!-- TODO: Tilføj portrættet side 11. -->
-    <source facsimile="115308078002_color" facsimile-pages-num="58" facsimile-pages-offset="4">Aage Matthison-Hansen: <i>Stjærnerne</i>, Axel Andersen, 1896.</source>
+  <title>Stjærnerne</title>
+  <year>1896</year>
+  <notes>
+    <note>Samlingen bærer dedikationen ,,Hendes Naade Fru Baronesse Siegfriede Reedtz-Thott, f. Komtesse Rantzau venligst og ærbødigst tilegnet.''</note>
+    <note>Noter med en foranstillet asterisk er digterens egne.</note>
+    <!-- TODO: Henvisning til Michelangelos motto på titelbladet. -->
+  </notes>
+  <pictures>
+    <picture src="1896-p1.jpg">Titelbladet til <i>Stjærnerne</i> (1896) lyder ,,Stærnerne / og / andre Digte / af / Aage Matthison-Hansen // »Volo con le vostr’ ali senza piume, / Col vostro ingegno al ciel sempre son mosso, / Dal vostro arbitrio son pallido e rosso, / Freddo al sol, caldo alle piu fredde brume.« / Michelagnolo. / »Sonetto« XII. // København / Axel Andersen / Laur. Madsens Bogrtrykkeri. / 1896.''.</picture>
+  </pictures>
+  <!-- TODO: Tilføj portrættet side 11. -->
+  <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122706710305763" facsimile="115308078002_color" facsimile-pages-num="58" facsimile-pages-offset="4">Aage Matthison-Hansen: <i>Stjærnerne</i>, Axel Andersen, 1896.</source>
 </workhead>
 <workbody>
 
 <text id="matthison201905160101">
 <head>
-    <title>Præludium</title>
-    <firstline>Tilhørerinde - du, som selv har lidt</firstline>
-    <source pages="7-9"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Præludium</title>
+  <firstline>Tilhørerinde - du, som selv har lidt</firstline>
+  <source pages="7-9"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -97,11 +95,11 @@ du Glans af Gud i jordisk Klædebon!
 
 <text id="matthison201905160102">
 <head>
-    <title>Vignetter</title>
-    <firstline>End bruser Kilden, som en Foraarsdag</firstline>
-    <source pages="10-12"/>
-    <keywords>staffeldt</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Vignetter</title>
+  <firstline>End bruser Kilden, som en Foraarsdag</firstline>
+  <source pages="10-12"/>
+  <keywords>staffeldt</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -173,10 +171,10 @@ skal han høre Stenene synge.
 
 <text id="matthison201905160103">
 <head>
-    <title>Stjærnerne</title>
-    <firstline>Spredt over Himmelens Mørkeblaa</firstline>
-    <source pages="13-14"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Stjærnerne</title>
+  <firstline>Spredt over Himmelens Mørkeblaa</firstline>
+  <source pages="13-14"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -209,10 +207,10 @@ Stjærner i Lyset kæmpe og fly,
 
 <text id="matthison201905160104">
 <head>
-    <title>Foraar</title>
-    <firstline>Nu bryder Solen sin lynende Klinge</firstline>
-    <source pages="15"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Foraar</title>
+  <firstline>Nu bryder Solen sin lynende Klinge</firstline>
+  <source pages="15"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -236,10 +234,10 @@ og jeg hører Blomsterklokkerne ringe!
 
 <text id="matthison201905160105">
 <head>
-    <title>Ild</title>
-    <firstline>Nat over Engene hviler</firstline>
-    <source pages="16-18"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Ild</title>
+  <firstline>Nat over Engene hviler</firstline>
+  <source pages="16-18"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -299,10 +297,10 @@ gennem min bøjede Arm.
 
 <text id="matthison201905160106">
 <head>
-    <title>Endymion</title>
-    <firstline>Maanen lyser paa Himlen</firstline>
-    <source pages="19"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Endymion</title>
+  <firstline>Maanen lyser paa Himlen</firstline>
+  <source pages="19"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -326,10 +324,10 @@ for dine bedende Øjne.
 
 <text id="matthison201905160107">
 <head>
-    <title>Sfinks</title>
-    <firstline>Hun sad foran mig. Hendes Hænder</firstline>
-    <source pages="20-21"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Sfinks</title>
+  <firstline>Hun sad foran mig. Hendes Hænder</firstline>
+  <source pages="20-21"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -361,10 +359,10 @@ saa ret jeg følte, vi var Hjærtevenner:
 
 <text id="matthison201905160108">
 <head>
-    <title>Den første Blomst</title>
-    <firstline>Kom, Sol og Vaar, med Blomsterduft</firstline>
-    <source pages="22-24"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Den første Blomst</title>
+  <firstline>Kom, Sol og Vaar, med Blomsterduft</firstline>
+  <source pages="22-24"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -423,13 +421,13 @@ og Lærkesangen klinger.
 
 <text id="matthison201905160109">
 <head>
-    <title>Stemninger</title>
-    <firstline>Du tifold lykkelige By, hvis Mure hegne</firstline>
-    <notes>
-        <note>Mottoet stammer fra Staffeldts <xref poem="staffeldt1999080701,23-24"/>.</note>
-    </notes>
-    <source pages="25-27"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Stemninger</title>
+  <firstline>Du tifold lykkelige By, hvis Mure hegne</firstline>
+  <notes>
+    <note>Mottoet stammer fra Staffeldts <xref poem="staffeldt1999080701,23-24"/>.</note>
+  </notes>
+  <source pages="25-27"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -503,10 +501,10 @@ der slumrer i sin Skal bag Stillehavets Vande.
 
 <text id="matthison201905160110">
 <head>
-    <title>Refugium</title>
-    <firstline>Ved Livet led og dog ej rede til at dø</firstline>
-    <source pages="28"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Refugium</title>
+  <firstline>Ved Livet led og dog ej rede til at dø</firstline>
+  <source pages="28"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -533,10 +531,10 @@ lad som en Blomst Passionen springe ud!
 
 <text id="matthison201905160111">
 <head>
-    <title>J. P. E. Hartmann</title>
-    <firstline>Vær hilset, Mester, som fødtes i Maj</firstline>
-    <source pages="29-30"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>J. P. E. Hartmann</title>
+  <firstline>Vær hilset, Mester, som fødtes i Maj</firstline>
+  <source pages="29-30"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -580,10 +578,10 @@ som fyldte vort Hjærte med Glæde.
 
 <text id="matthison201905160112">
 <head>
-    <title>Skyer</title>
-    <firstline>Er Luften kold og Skyen sort</firstline>
-    <source pages="31-32"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Skyer</title>
+  <firstline>Er Luften kold og Skyen sort</firstline>
+  <source pages="31-32"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -619,10 +617,10 @@ som Sol paa Bjærgetoppe.
 
 <text id="matthison201905160113">
 <head>
-    <title>Violer</title>
-    <firstline>Naar alle Længsler vaagner</firstline>
-    <source pages="33"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Violer</title>
+  <firstline>Naar alle Længsler vaagner</firstline>
+  <source pages="33"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -653,10 +651,10 @@ sig Sommerfugle soler.
 
 <text id="matthison201905160114">
 <head>
-    <title>Længsel efter Vaaren</title>
-    <firstline>Bier, Bier!</firstline>
-    <source pages="34"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Længsel efter Vaaren</title>
+  <firstline>Bier, Bier!</firstline>
+  <source pages="34"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -686,10 +684,10 @@ Bier, Bier!
 
 <text id="matthison201905160115">
 <head>
-    <title>Aftensalme</title>
-    <firstline>O, vær mig god, Gud Fader i det Høje</firstline>
-    <source pages="35"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Aftensalme</title>
+  <firstline>O, vær mig god, Gud Fader i det Høje</firstline>
+  <source pages="35"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -712,11 +710,11 @@ sig efter Lyset, der fra Korset flød.
 
 <text id="matthison201905160116">
 <head>
-    <title>Saa er den endt, den Sang -</title>
-    <firstline>Saa er den endt den Sang, som dybt dig saarer</firstline>
-    <source pages="36"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Saa er den endt, den Sang -</title>
+  <firstline>Saa er den endt den Sang, som dybt dig saarer</firstline>
+  <source pages="36"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -743,11 +741,11 @@ og kun med Taarer kan min Sang besvare.
 
 <text id="matthison201905160117">
 <head>
-    <title>Død Sorg</title>
-    <firstline>O, vé mig dog! vé, for mit arme Hjærte</firstline>
-    <source pages="37"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Død Sorg</title>
+  <firstline>O, vé mig dog! vé, for mit arme Hjærte</firstline>
+  <source pages="37"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -774,10 +772,10 @@ til stærke Greb i tusind Hjærtestrænge.
 
 <text id="matthison201905160118">
 <head>
-    <title>Kastales Kilde</title>
-    <firstline>Et Kildevæld er dybt i Sjælen gemt</firstline>
-    <source pages="38"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Kastales Kilde</title>
+  <firstline>Et Kildevæld er dybt i Sjælen gemt</firstline>
+  <source pages="38"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -804,11 +802,11 @@ en rig Erstatning og en bitter Trøst.
 
 <text id="matthison201905160119">
 <head>
-    <title>Strejf dog ej Himlen -</title>
-    <firstline>Strejf dog ej Himlen som et Stjærneskud</firstline>
-    <source pages="39"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Strejf dog ej Himlen -</title>
+  <firstline>Strejf dog ej Himlen som et Stjærneskud</firstline>
+  <source pages="39"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -835,11 +833,11 @@ og alle mine Sanser raabe: Bliv!
 
 <text id="matthison201905160120">
 <head>
-    <title>Sforzato</title>
-    <firstline>Jeg véd, at dit Hjærte kan banke saa hedt</firstline>
-    <source pages="40"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Sforzato</title>
+  <firstline>Jeg véd, at dit Hjærte kan banke saa hedt</firstline>
+  <source pages="40"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -866,11 +864,11 @@ naar Solen aabner sit luende Bæger!
 
 <text id="matthison201905160121">
 <head>
-    <title>Trøst</title>
-    <firstline>Min Sjæl har savnet dig i tunge Dage</firstline>
-    <source pages="41"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Trøst</title>
+  <firstline>Min Sjæl har savnet dig i tunge Dage</firstline>
+  <source pages="41"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -897,11 +895,11 @@ du viste mig, hvor tungt dit Hjærte blødte.
 
 <text id="matthison201905160122">
 <head>
-    <title>Jeg saa mit Billed -</title>
-    <firstline>Jeg saa mit Billed i en Irisbue</firstline>
-    <source pages="42"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Jeg saa mit Billed -</title>
+  <firstline>Jeg saa mit Billed i en Irisbue</firstline>
+  <source pages="42"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -928,11 +926,11 @@ og Livets Bølger gennem Hjærtet gaa.
 
 <text id="matthison201905160123">
 <head>
-    <title>Til Clélia</title>
-    <firstline>Paa dig har aldrig Elskov ødslet sit Geni</firstline>
-    <source pages="43"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Til Clélia</title>
+  <firstline>Paa dig har aldrig Elskov ødslet sit Geni</firstline>
+  <source pages="43"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -959,12 +957,12 @@ mod Evighedens Blomster og høje Kildespring!
 
 <text id="matthison201905160124">
 <head>
-    <title>Til Sophus Michaëlis</title>
-    <subtitle>29. Oktbr. 1895.</subtitle>
-    <firstline>Nu løftes Havet - Floden sætter ind</firstline>
-    <source pages="44"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Til Sophus Michaëlis</title>
+  <subtitle>29. Oktbr. 1895.</subtitle>
+  <firstline>Nu løftes Havet - Floden sætter ind</firstline>
+  <source pages="44"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -991,11 +989,11 @@ Solkongen stiger - Taagesløret letter.
 
 <text id="matthison201905160125">
 <head>
-    <title>Tilbageblik</title>
-    <firstline>Som Strehlenau i Tungsind hyllet ind</firstline>
-    <source pages="45"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Tilbageblik</title>
+  <firstline>Som Strehlenau i Tungsind hyllet ind</firstline>
+  <source pages="45"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1022,11 +1020,11 @@ fra fjærne Dybder og fra Himlens Sale.
 
 <text id="matthison201905160126">
 <head>
-    <title>Eremiten</title>
-    <firstline>Den, som har elsket Verden kysk og stille</firstline>
-    <source pages="46"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Eremiten</title>
+  <firstline>Den, som har elsket Verden kysk og stille</firstline>
+  <source pages="46"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>

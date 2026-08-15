@@ -1,18 +1,18 @@
 #!/usr/bin/ruby
 
 @rules = [
-'\^/ ',    
-'V /V',    
-'A /A',    
-'T /T',    
-'B /B',    
-'D /D',    
-'S /S',    
-'E /E',    
-'H /H',    
-'N /N',    
-'P /P',    
-'T hi/Thi',    
+'\^/ ',
+'V /V',
+'A /A',
+'T /T',
+'B /B',
+'D /D',
+'S /S',
+'E /E',
+'H /H',
+'N /N',
+'P /P',
+'T hi/Thi',
 'oeg/æg',
 'hoi/høi',
 'hoj/høj',
@@ -678,12 +678,12 @@
 'Host(\W)/Høst\1',
 'Hsst(\W)/Høst\1',
 'Rog(\W)/Røg\1',
-'hcd/hed', 
-'dcn/den', 
-'mcd(\W)/med\1', 
-'mcd(\W)/med\1', 
-'tcs(\W)/tes\1', 
-'tcd(\W)/ted\1', 
+'hcd/hed',
+'dcn/den',
+'mcd(\W)/med\1',
+'mcd(\W)/med\1',
+'tcs(\W)/tes\1',
+'tcd(\W)/ted\1',
 'Rogen/Røgen',
 'Troek/Træk',
 'troel/træl',
@@ -771,7 +771,7 @@
 'smulte/smiilte',
 ];
 
-@regexps = @rules.map { |rule| 
+@regexps = @rules.map { |rule|
     m = /(.*)\/(.*)/.match(rule)
     [Regexp.new(m[1]), m[2]];
 }
@@ -783,8 +783,7 @@ end
 
 text = File.open(ARGV[0]).read
 text = text.gsub(/glode/,"gløde")
-@regexps.each { |r| 
+@regexps.each { |r|
     text = text.gsub(r[0],r[1])
 }
 puts text
-

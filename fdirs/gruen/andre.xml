@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="gruen" status="incomplete" type="poetry">
 <workhead>
-   <title>Andre digte</title>
+  <title>Andre digte</title>
 </workhead>
 <workbody>
 
 <text id="gruen2019051301">
 <head>
-   <title>Legende</title>
-   <firstline>Auf eines Berges Rücken</firstline>
-   <quality>korrektur1,kilde,side</quality>
-   <notes>
-       <note>Efter Anastasius Grün: <i>Gesammelte Werke</i>, 1–4, Berlin, 1907, bd. 1, pp. 112-115.</note>
-       <!-- http://www.zeno.org/nid/20004959698 -->
-   </notes>
+  <title>Legende</title>
+  <firstline>Auf eines Berges Rücken</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source href="http://www.zeno.org/nid/20004959698">Anastasius Grün: <i>Gesammelte Werke</i>, 1–4, Berlin, 1907, bd. 1, pp. 112-115.</source>
 </head>
 <body>
 <poetry>
@@ -86,20 +82,17 @@ Ist von der Messe frei.
 So hab' ich dieß Lied gesungen
 Statt eines Gebetes heut',
 Von Sonntagsglocken umklungen,
-Von Blüthen überschneit.    
+Von Blüthen überschneit.
 </poetry>
 </body>
 </text>
 
 <text id="gruen2019051302">
 <head>
-   <title>Der Ring</title>
-   <firstline>Ich saß auf einem Berge</firstline>
-   <quality>korrektur1,kilde,side</quality>
-   <notes>
-       <note>Efter Anastasius Grün: <i>Gesammelte Werke</i>, 1–4, Berlin, 1907, bd. 1, pp. 105-107.</note>
-       <!-- http://www.zeno.org/nid/20004959663 -->
-   </notes>
+  <title>Der Ring</title>
+  <firstline>Ich saß auf einem Berge</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source href="http://www.zeno.org/nid/20004959663">Anastasius Grün: <i>Gesammelte Werke</i>, 1–4, Berlin, 1907, bd. 1, pp. 105-107.</source>
 </head>
 <body>
 <poetry>
@@ -153,9 +146,9 @@ Die Menschen und ihr Land!
 
 <text id="gruen2019051501">
 <head>
-   <title>Drei Wanderer</title>
-   <firstline>Es ziehn drei Gesellen ins Weite hinaus</firstline>
-   <quality>korrektur1</quality>
+  <title>Drei Wanderer</title>
+  <firstline>Es ziehn drei Gesellen ins Weite hinaus</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -187,7 +180,7 @@ Da raubt das Bildniß des Zweiten der Sturm.
 Die Beiden ringen die Hände sich wund,
 Doch jubelnd tönt des Dichters Mund;
 Trägt Namen und Bild ja im Herzen sein,
-Manch schönes Lied noch obendrein.    
+Manch schönes Lied noch obendrein.
 </poetry>
 </body>
 </text>
@@ -195,11 +188,11 @@ Manch schönes Lied noch obendrein.
 <!--
 <text id="gruen2019051501">
 <head>
-   <title></title>
-   <toctitle></toctitle>
-   <indextitle></indextitle>
-   <firstline> </firstline>
-   <quality>korrektur1</quality>
+  <title></title>
+  <toctitle></toctitle>
+  <indextitle></indextitle>
+  <firstline> </firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>

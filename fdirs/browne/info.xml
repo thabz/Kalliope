@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="browne" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Mary Ann</firstname>
+    <lastname>Browne</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1812-09-24</date>
+    </born>
+    <dead>
+      <date>1845-01-28</date>
+    </dead>
+  </period>
+  <literary-periods>gb-romantik</literary-periods>
+  <identifiers>
+    <wikidata>Q18674185</wikidata>
+    <wikipedia-en>Mary Ann Browne</wikipedia-en>
+    <viaf>294350362</viaf>
+  </identifiers>
+</person>

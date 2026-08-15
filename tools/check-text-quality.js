@@ -1,0 +1,180 @@
+import { findOcrCandidates } from './report-ocr-candidates.js';
+import { collectPoemLineQualityFindings } from './text-quality-poem-lines.js';
+import { normalizeMinDate } from './text-quality-filters.js';
+
+const normalizePath = filename => filename.replace(/^\.\//, '').replace(/\\/g, '/');
+
+const parseArgs = () => {
+  const args = process.argv.slice(2);
+  let json = false;
+  let facsimileOnly = false;
+  let minDate = null;
+  const files = [];
+
+  for (let index = 0; index < args.length; index += 1) {
+    const arg = args[index];
+    if (arg === '--json') {
+      json = true;
+    } else if (arg === '--facsimile-only') {
+      facsimileOnly = true;
+    } else if (arg === '--min-date') {
+      index += 1;
+      if (args[index] == null) {
+        throw new Error('--min-date kræver en dato i formatet YYYY-MM-DD.');
+      }
+      minDate = normalizeMinDate(args[index]);
+    } else if (arg.startsWith('--min-date=')) {
+      minDate = normalizeMinDate(arg.slice('--min-date='.length));
+    } else if (arg.startsWith('--')) {
+      throw new Error(`Ukendt option: ${arg}`);
+    } else {
+      files.push(normalizePath(arg));
+    }
+  }
+
+  return {
+    json,
+    minDate,
+    facsimileOnly,
+    files: files.length === 0 ? null : files,
+  };
+};
+
+const compareTextQualityIssues = (a, b) => {
+  if (a.file < b.file) return -1;
+  if (a.file > b.file) return 1;
+  if (a.line < b.line) return -1;
+  if (a.line > b.line) return 1;
+  if (a.rule < b.rule) return -1;
+  if (a.rule > b.rule) return 1;
+  return 0;
+};
+
+const contextAroundMatch = (context, match, wordsOnEachSide = 5) => {
+  if (match == null || match === '') {
+    return context;
+  }
+
+  const matchStart = context.toLocaleLowerCase().indexOf(match.toLocaleLowerCase());
+  if (matchStart === -1) {
+    return context;
+  }
+
+  const matchEnd = matchStart + match.length;
+  const tokens = [...context.matchAll(/[\p{L}\p{N}]+(?:['’’-][\p{L}\p{N}]+)*/gu)].map(token => ({
+    start: token.index,
+    end: token.index + token[0].length,
+  }));
+  const before = tokens.filter(token => token.end <= matchStart).slice(-wordsOnEachSide);
+  const after = tokens.filter(token => token.start >= matchEnd).slice(0, wordsOnEachSide);
+  const start = before[0]?.start ?? matchStart;
+  const end = after.at(-1)?.end ?? matchEnd;
+  const prefix = start > 0 ? '... ' : '';
+  const suffix = end < context.length ? ' ...' : '';
+  return `${prefix}${context.slice(start, end)}${suffix}`;
+};
+
+const asHumanLine = issue =>
+  `${issue.severity}\t${issue.file}:${issue.line ?? ''}\t${issue.rule}\t${issue.textId ?? ''}\t${issue.description}${issue.match == null ? '' : ` [match: ${issue.match}]`}\t${issue.match == null ? issue.excerpt ?? '' : contextAroundMatch(issue.excerpt ?? '', issue.match)}`;
+
+const toOcrIssue = candidate => ({
+  file: candidate.file,
+  line: candidate.line,
+  textId: candidate.textId,
+  rule: candidate.rule,
+  severity: candidate.priority,
+  description: candidate.reason ?? candidate.rule,
+  match: candidate.word,
+  excerpt: candidate.context,
+  source: 'ocr-candidates',
+});
+
+const toPoemLineIssue = issue => ({
+  file: issue.file,
+  line: issue.line,
+  textId: issue.textId,
+  rule: issue.rule,
+  severity: issue.severity,
+  description: issue.description,
+  match: issue.match,
+  excerpt: issue.excerpt,
+  source: 'poem-lines',
+});
+
+const formatSummary = (issues, technicalError = null) => {
+  if (technicalError != null) {
+    return {
+      status: 'technical-error',
+      summary: {
+        qualityIssues: issues.length,
+        technicalError,
+      },
+      issues,
+    };
+  }
+
+  return {
+    status: issues.length > 0 ? 'quality-failure' : 'ok',
+    summary: {
+      qualityIssues: issues.length,
+    },
+    issues,
+  };
+};
+
+const run = () => {
+  const rootDir = process.cwd();
+  let json = false;
+  const result = {
+    issues: [],
+  };
+
+  try {
+    const options = parseArgs();
+    json = options.json;
+    const { files, minDate, facsimileOnly } = options;
+    const ocrCandidates = findOcrCandidates({
+      rootDir,
+      files,
+      minDate,
+      facsimileOnly,
+      disabledTests: process.env.DISABLED_TESTS ?? '',
+    });
+    const poemLineFindings = collectPoemLineQualityFindings({
+      rootDir,
+      files,
+      minDate,
+      facsimileOnly,
+    });
+    result.issues = [...poemLineFindings.map(toPoemLineIssue), ...ocrCandidates.map(toOcrIssue)].sort(compareTextQualityIssues);
+  } catch (error) {
+    const json = process.argv.includes('--json');
+    const summary = formatSummary(result.issues, error.message);
+    if (json) {
+      console.log(JSON.stringify(summary, null, 2));
+    } else {
+      console.error(`Teknisk fejl under tekstkvalitetskontrol: ${error.message}`);
+      if (error.stack != null) {
+        console.error(error.stack);
+      }
+      const text = JSON.stringify(summary, null, 2);
+      console.error(text);
+    }
+    process.exitCode = 2;
+    return;
+  }
+
+  const summary = formatSummary(result.issues);
+  if (json) {
+    console.log(JSON.stringify(summary, null, 2));
+  } else if (result.issues.length > 0) {
+    result.issues.forEach(issue => console.log(asHumanLine(issue)));
+    console.error(`${result.issues.length} tekstkvalitetsfejl fundet.`);
+  } else {
+    console.log('Ingen tekstkvalitetsfejl fundet.');
+  }
+
+  process.exitCode = result.issues.length > 0 ? 1 : 0;
+};
+
+run();

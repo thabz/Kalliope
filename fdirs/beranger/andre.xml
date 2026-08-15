@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="beranger" status="incomplete" type="poetry">
 <workhead>
-   <title>Andre digte</title>
+  <title>Andre digte</title>
 </workhead>
 <workbody>
 
 <text id="beranger2001081901">
 <head>
-   <title>Mon Habit</title>
-   <firstline>Sois-moi fidèle, ô pauvre habit que j'aime !</firstline>
+  <title>Mon Habit</title>
+  <firstline>Sois-moi fidèle, ô pauvre habit que j'aime !</firstline>
 </head>
 <body>
 <poetry>
@@ -65,10 +64,9 @@ Mon vieil ami, ne nous séparons pas.
 <head>
   <title>Les Étoiles qui filent</title>
   <subtitle>Air du ballet des Pierrots</subtitle>
+  <source href="https://fr.wikisource.org/wiki/Les_Étoiles_qui_filent"><i>Œuvres complètes de Béranger</i>, H. Fournier (red.), 1839, bd. 2, pp. 50-52.</source>
   <notes>
-      <note>Janvier 1820.</note>
-      <note>Teksten følger <i>Œuvres complètes de Béranger</i>, H. Fournier (red.), 1839, bd. 2, pp. 50-52.</note>
-      <!-- Stjålet fra https://fr.wikisource.org/wiki/Les_Étoiles_qui_filent -->
+    <note>Janvier 1820.</note>
   </notes>
   <firstline>Berger, tu dis que notre étoile</firstline>
 </head>
@@ -142,14 +140,13 @@ Qui file, file, et disparaît.
 
 <text id="beranger2018010302">
 <head>
-   <title>Mon Âme</title>
-   <firstline>C’est à table, quand je m’enivre</firstline>
-   <subtitle>Air des Scythes et des Amazones</subtitle>
-   <notes>
-      <note>1816.</note>
-      <note>Teksten følger <i>Œuvres complètes de Béranger</i>, H. Fournier (red.), 1839, bd. 1, pp. 238-240.</note>
-      <!-- Stjålet fra https://fr.wikisource.org/wiki/Mon_Âme -->
-   </notes>
+  <title>Mon Âme</title>
+  <firstline>C’est à table, quand je m’enivre</firstline>
+  <subtitle>Air des Scythes et des Amazones</subtitle>
+  <source href="https://fr.wikisource.org/wiki/Mon_Âme"><i>Œuvres complètes de Béranger</i>, H. Fournier (red.), 1839, bd. 1, pp. 238-240.</source>
+  <notes>
+    <note>1816.</note>
+  </notes>
 </head>
 <body>
 <poetry>
@@ -216,16 +213,12 @@ En souriant remontez dans les cieux.
 </body>
 </text>
 
-
 <text id="beranger2018110601">
 <head>
-   <title>Maudit printemps</title>
-   <firstline>Je la voyais de ma fenêtre</firstline>
-   <notes>
-      <note>Teksten følger <i>Œuvres complètes de Béranger</i>, H. Fournier (red.), 1839, bd. 2, pp. 242-243.</note>
-      <!-- Stjålet fra https://fr.wikisource.org/wiki/Œuvres_complètes_de_Béranger/Maudit_Printemps -->
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Maudit printemps</title>
+  <firstline>Je la voyais de ma fenêtre</firstline>
+  <source href="https://fr.wikisource.org/wiki/Œuvres_complètes_de_Béranger/Maudit_Printemps"><i>Œuvres complètes de Béranger</i>, H. Fournier (red.), 1839, bd. 2, pp. 242-243.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -270,14 +263,13 @@ Maudit printemps ! reviendras-tu toujours ?
 
 <text id="beranger2019022001">
 <head>
-   <title>Le Violon Brisé</title>
-   <firstline>Viens, mon chien, viens, ma pauvre bête</firstline>
-   <notes>
-      <note>Teksten følger <i>Œuvres complètes de Béranger</i>, H. Fournier (red.), 1839, bd. 2, pp. 186-188.</note>
-      <!-- Stjålet fra https://fr.wikisource.org/wiki/Œuvres_complètes_de_Béranger/Le_Violon_brisé -->
-      <!-- TODO: Find følgende illustration. Le Violon brise (The broken violin), illustration for a poem by Pierre-Jean de Beranger (1780-1857), drawing by Gustave Dore (1832-1883), illustration from Le Musee Francais, n 45, September 1858. -->
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Le Violon Brisé</title>
+  <firstline>Viens, mon chien, viens, ma pauvre bête</firstline>
+  <source href="https://fr.wikisource.org/wiki/Œuvres_complètes_de_Béranger/Le_Violon_brisé"><i>Œuvres complètes de Béranger</i>, H. Fournier (red.), 1839, bd. 2, pp. 186-188.</source>
+  <notes>
+    <!-- TODO: Find følgende illustration. Le Violon brise (The broken violin), illustration for a poem by Pierre-Jean de Beranger (1780-1857), drawing by Gustave Dore (1832-1883), illustration from Le Musee Francais, n 45, September 1858. -->
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -351,12 +343,10 @@ Demain nous aurons du pain noir.
 
 <text id="beranger2019022002">
 <head>
-   <title>Le Roi d’Yvetot</title>
-   <firstline>Il était un roi d’Yvetot</firstline>
-   <notes>
-      <note>Teksten følger <i>Œuvres complètes de Béranger</i>, H. Fournier (red.), 1839, bd. 1, pp. 1-3.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Le Roi d’Yvetot</title>
+  <firstline>Il était un roi d’Yvetot</firstline>
+  <source pages="1-3"><i>Œuvres complètes de Béranger</i>, H. Fournier (red.), 1839, bd. 1.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -431,16 +421,13 @@ Quel bon petit roi c’était là !
 
 <text id="beranger2019120701">
 <head>
-    <title>La Bonne Fille</title>
-    <subtitle>
-        <line>ou les Mœurs du temps</line>
-        <line>1812</line>
-    </subtitle>
-    <firstline>Je sais fort bien que sur moi l’on babille</firstline>
-    <notes>
-        <note>Teksten følger <i>Œuvres complètes de Béranger</i>, H. Fournier, 1839, bd. 1, pp. 31-33.</note>
-    </notes>
-    <!-- https://fr.wikisource.org/wiki/Œuvres_complètes_de_Béranger/La_Bonne_Fille,_ou_les_Mœurs_du_temps -->
+  <title>La Bonne Fille</title>
+  <subtitle>
+    <line>ou les Mœurs du temps</line>
+    <line>1812</line>
+  </subtitle>
+  <firstline>Je sais fort bien que sur moi l’on babille</firstline>
+  <source href="https://fr.wikisource.org/wiki/Œuvres_complètes_de_Béranger/La_Bonne_Fille,_ou_les_Mœurs_du_temps"><i>Œuvres complètes de Béranger</i>, H. Fournier, 1839, bd. 1, pp. 31-33.</source>
 </head>
 <body>
 <poetry>
@@ -521,19 +508,17 @@ Moi je m’en ris, tant je suis bonne fille.
 
 <text id="beranger2019120702">
 <head>
-    <title>La Chatte</title>
-    <firstline>Tu réveilles ta maîtresse</firstline>
-    <notes>
-        <note>Teksten følger <i>Œuvres complètes de Béranger</i>, H. Fournier, 1839, bd. 1, pp. 135-136.<!-- https://fr.wikisource.org/wiki/Œuvres_complètes_de_Béranger/La_Chatte --></note>
-    </notes>
+  <title>La Chatte</title>
+  <firstline>Tu réveilles ta maîtresse</firstline>
+  <source href="https://fr.wikisource.org/wiki/Œuvres_complètes_de_Béranger/La_Chatte"><i>Œuvres complètes de Béranger</i>, H. Fournier, 1839, bd. 1, pp. 135-136.</source>
 </head>
 <body>
 <poetry>
-Tu réveilles ta maîtresse, 
+Tu réveilles ta maîtresse,
 Minette, par tes longs cris.
 Est-ce la faim qui te presse ?
 Entends-tu quelque souris ?
-Tu veux fuir de ma chambrette, 
+Tu veux fuir de ma chambrette,
 Pour courir je ne sais où.
 Mia-mia-ou ! Que veut minette ?
 Mia-mia-ou ! c’est un matou.
@@ -547,16 +532,16 @@ En prison sous le verrou.
 Mia-mia-ou ! Que veut minette ?
 Mia-mia-ou ! c’est un matou.
 
-Si ton ardeur est extrême, 
+Si ton ardeur est extrême,
 Même ardeur vient me brûler ;
-J’ai certain voisin que j’aime, 
+J’ai certain voisin que j’aime,
 Et que je n’ose appeler.
-Mais pourquoi, sur ma couchette, 
+Mais pourquoi, sur ma couchette,
 Rêver à ce jeune fou !
 Mia-mia-ou ! Que veut minette ?
 Mia-mia-ou ! c’est un matou.
 
-C’est toi, chatte libertine, 
+C’est toi, chatte libertine,
 Qui mets le trouble en mon sein.
 Dans la mansarde voisine
 Du moins réveille Valsain.
@@ -570,32 +555,30 @@ Par les toits il vient ici.
 Vite, ouvrons-lui la fenêtre :
 Toi, Minette, passe aussi.
 Lorsqu’enfin mon cœur se prête
-Aux larcins de ce filou, 
-Mia-mia-ou ! que ma minette, 
-Mia-mia-ou ! trouve un matou.    
+Aux larcins de ce filou,
+Mia-mia-ou ! que ma minette,
+Mia-mia-ou ! trouve un matou.
 </poetry>
 </body>
 </text>
 
 <text id="beranger2019120703">
 <head>
-    <title>Le Docteur et ses Malades</title>
-    <subtitle>
-        <line>À mon médecin</line>
-        <line>Le jour de sa fête</line>
-    </subtitle>
-    <firstline>Saluons de maintes rasades</firstline>
-    <notes>
-        <note>Teksten følger <i>Œuvres complètes de Béranger</i>, H. Fournier, 1839, bd. 1, pp. 176-177.<!-- https://fr.wikisource.org/wiki/Œuvres_complètes_de_Béranger/Le_Docteur_et_ses_Malades --></note>
-    </notes>
+  <title>Le Docteur et ses Malades</title>
+  <subtitle>
+    <line>À mon médecin</line>
+    <line>Le jour de sa fête</line>
+  </subtitle>
+  <firstline>Saluons de maintes rasades</firstline>
+  <source href="https://fr.wikisource.org/wiki/Œuvres_complètes_de_Béranger/Le_Docteur_et_ses_Malades"><i>Œuvres complètes de Béranger</i>, H. Fournier, 1839, bd. 1, pp. 176-177.</source>
 </head>
 <body>
 <poetry>
 Saluons de maintes rasades
 Ce docteur à qui je dois tant.
-Mais, pour visiter ses malades, 
+Mais, pour visiter ses malades,
 Je crains qu’il n’échappe à l’instant.
-À ces soins son art le condamne, 
+À ces soins son art le condamne,
 S’il vient un message ennemi.
 Fiévreux, buvez votre tisane,
 Laissez-nous fêter notre ami.
@@ -604,7 +587,7 @@ Oui, que ses malades attendent ;
 Il est au sein de l’amitié.
 Mais vingt jeunes fous le demandent
 D’un air qui pourtant fait pitié.
-De Vénus amants trop crédules, 
+De Vénus amants trop crédules,
 Sur leur état qu’ils ont gémi !
 Eh ! messieurs, prenez des pilules ;
 Laissez-nous fêter notre ami.
@@ -618,25 +601,23 @@ Les parents même en ont frémi.
 N’accouchez pas, mademoiselle ;
 Laissez-nous fêter notre ami.
 
-Qu’il coule gaîment son automne, 
+Qu’il coule gaîment son automne,
 Que son hiver soit encor loin !
 Puisse-t-il des soins qu’il nous donne
 N’éprouver jamais le besoin !
 Puisqu’enfin dans nos embrassades
-Il n’est point heureux à demi, 
+Il n’est point heureux à demi,
 Mourez sans lui, mourez, malades ;
-Laissez-nous fêter notre ami.    
+Laissez-nous fêter notre ami.
 </poetry>
 </body>
 </text>
 
 <text id="beranger2019120704">
 <head>
-    <title>Jeannette</title>
-    <firstline>Fi des coquettes maniérées</firstline>
-    <notes>
-        <note>Teksten følger <i>Œuvres complètes de Béranger</i>, H. Fournier, 1839, bd. 1, pp. 186-188.<!-- https://fr.wikisource.org/wiki/Œuvres_complètes_de_Béranger/Jeannette --></note>
-    </notes>
+  <title>Jeannette</title>
+  <firstline>Fi des coquettes maniérées</firstline>
+  <source href="https://fr.wikisource.org/wiki/Œuvres complètes_de_Béranger/Jeannette"><i>Œuvres complètes de Béranger</i>, H. Fournier, 1839, bd. 1, pp. 186-188.</source>
 </head>
 <body>
 <poetry>
@@ -645,7 +626,7 @@ Fi des bégueules du grand ton !
 Je préfère à ces mijaurées
 Ma Jeannette, ma Jeanneton.
 
-    Jeune, gentille, et bien faite, 
+    Jeune, gentille, et bien faite,
     Elle est fraîche et rondelette ;
     Son œil noir est pétillant.
     Prudes, vous dites sans cesse
@@ -661,9 +642,9 @@ Ma Jeannette, ma Jeanneton.
     Tout son charme est dans la grâce ;
     Jamais rien ne l’embarrasse :
     Elle est bonne, et toujours rit.
-    Elle dit mainte sottise, 
+    Elle dit mainte sottise,
     À parler jamais n’apprit ;
-    Et cependant, quoi qu’on dise, 
+    Et cependant, quoi qu’on dise,
     Ma Jeannette a de l’esprit.
 
 Fi des coquettes maniérées !
@@ -671,10 +652,10 @@ Fi des bégueules du grand ton !
 Je préfère à ces mijaurées
 Ma Jeannette, ma Jeanneton.
 
-    À table, dans une fête, 
+    À table, dans une fête,
     Cette espiègle me tient tête
     Pour les propos libertins.
-    Elle a la voix juste et pure, 
+    Elle a la voix juste et pure,
     Sait les plus joyeux refrains.
     Quand je l’en prie, elle jure ;
     Elle boit de tous les vins.
@@ -684,12 +665,12 @@ Fi des bégueules du grand ton !
 Je préfère à ces mijaurées
 Ma Jeannette, ma Jeanneton.
 
-    Belle d’amour et de joie, 
+    Belle d’amour et de joie,
     Jamais d’une riche soie
     Son corsage n’est paré.
     Sous une toile proprette
     Son triomphe est assuré ;
-    Et, sans nuire à sa toilette, 
+    Et, sans nuire à sa toilette,
     Je la chiffonne à mon gré.
 
 Fi des coquettes maniérées !
@@ -698,28 +679,26 @@ Je préfère à ces mijaurées
 Ma Jeannette, ma Jeanneton.
 
     La nuit tout me favorise ;
-    Point de voile qui me nuise, 
+    Point de voile qui me nuise,
     Point d’inutiles soupirs.
     Des deux mains et de la bouche
-    Elle attise les désirs, 
+    Elle attise les désirs,
     Et rompit vingt fois sa couche
     Dans l’ardeur de nos plaisirs.
 
 Fi des coquettes maniérées !
 Fi des bégueules du grand ton !
 Je préfère à ces mijaurées
-Ma Jeannette, ma Jeanneton.    
+Ma Jeannette, ma Jeanneton.
 </poetry>
 </body>
 </text>
 
 <text id="beranger2019120705">
 <head>
-    <title>Ma République</title>
-    <firstline>J’ai pris goût à la république</firstline>
-    <notes>
-        <note>Teksten følger <i>Œuvres complètes de Béranger</i>, H. Fournier, 1839, bd. 1, pp. 230-231.<!-- https://fr.wikisource.org/wiki/Œuvres_complètes_de_Béranger/Ma_République --></note>
-    </notes>
+  <title>Ma République</title>
+  <firstline>J’ai pris goût à la république</firstline>
+  <source href="https://fr.wikisource.org/wiki/Œuvres_complètes_de_Béranger/Ma_République"><i>Œuvres complètes de Béranger</i>, H. Fournier, 1839, bd. 1, pp. 230-231.</source>
 </head>
 <body>
 <poetry>
@@ -727,23 +706,23 @@ J’ai pris goût à la république
 Depuis que j’ai vu tant de rois.
 Je m’en fais une, et je m’applique
 À lui donner de bonnes lois.
-On n’y commerce que pour boire, 
+On n’y commerce que pour boire,
 On n’y juge qu’avec gaîté ;
 Ma table est tout son territoire ;
 Sa devise est la liberté.
 
 Amis, prenons tous notre verre :
 Le sénat s’assemble aujourd’hui.
-D’abord, par un arrêt sévère, 
+D’abord, par un arrêt sévère,
 À jamais proscrivons l’ennui.
 Quoi ! proscrire ! Ah ! ce mot doit être
 Inconnu dans notre cité.
 Chez nous l’ennui ne pourra naître :
 Le plaisir suit la liberté.
 
-Du luxe, dont elle est blessée, 
+Du luxe, dont elle est blessée,
 La joie ici défend l’abus ;
-Point d’entraves à la pensée, 
+Point d’entraves à la pensée,
 Par ordonnance de Bacchus.
 À son gré que chacun professe
 Le culte de sa déité ;
@@ -754,47 +733,45 @@ La noblesse est trop abusive :
 Ne parlons point de nos aïeux.
 Point de titre, même au convive
 Qui rit le plus ou boit le mieux.
-Et si quelqu’un, d’humeur traîtresse, 
-Aspirait à la royauté, 
-Plongeons ce César dans l’ivresse, 
+Et si quelqu’un, d’humeur traîtresse,
+Aspirait à la royauté,
+Plongeons ce César dans l’ivresse,
 Nous sauverons la liberté.
 
-Trinquons à notre république, 
+Trinquons à notre république,
 Pour voir son destin affermi.
 Mais ce peuple si pacifique
 Déjà redoute un ennemi.
 C’est Lisette qui nous rappelle
 Sous les lois de la volupté.
 Elle veut régner, elle est belle ;
-C’en est fait de la liberté.    
+C’en est fait de la liberté.
 </poetry>
 </body>
 </text>
 
 <text id="beranger2019120706">
 <head>
-    <title>La Bonne Vieille</title>
-    <firstline>Vous vieillirez, ô ma belle maîtresse !</firstline>
-    <notes>
-        <note>Teksten følger <i>Œuvres complètes de Béranger</i>, H. Fournier, 1839, bd. 1, pp. 270-271.<!-- https://fr.wikisource.org/wiki/Œuvres_complètes_de_Béranger/La_Bonne_Vieille --></note>
-    </notes>
+  <title>La Bonne Vieille</title>
+  <firstline>Vous vieillirez, ô ma belle maîtresse !</firstline>
+  <source href="https://fr.wikisource.org/wiki/Œuvres complètes de Béranger/La_Bonne_Vieille"><i>Œuvres complètes de Béranger</i>, H. Fournier, 1839, bd. 1, pp. 270-271.</source>
 </head>
 <body>
 <poetry>
 Vous vieillirez, ô ma belle maîtresse !
 Vous vieillirez, et je ne serai plus.
-Pour moi le temps semble, dans sa vitesse, 
+Pour moi le temps semble, dans sa vitesse,
 Compter deux fois les jours que j’ai perdus.
 Survivez-moi ; mais que l’âge pénible
 Vous trouve encor fidèle à mes leçons ;
-Et bonne vieille, au coin d’un feu paisible, 
+Et bonne vieille, au coin d’un feu paisible,
 De votre ami répétez les chansons.
 
 Lorsque les yeux chercheront sous vos rides
-Les traits charmants qui m’auront inspiré, 
+Les traits charmants qui m’auront inspiré,
 Des doux récits les jeunes gens avides
 Diront : Quel fut cet ami tant pleuré ?
-De mon amour peignez, s’il est possible, 
+De mon amour peignez, s’il est possible,
 L’ardeur, l’ivresse, et même les soupçons ;
 Et bonne vieille, au coin d’un feu paisible,
 De votre ami répétez les chansons.
@@ -803,52 +780,50 @@ On vous dira : Savait-il être aimable ?
 Et sans rougir vous direz : Je l’aimais.
 D’un trait méchant se montra-t-il capable ?
 Avec orgueil vous répondrez : Jamais.
-Ah ! dites bien qu’amoureux et sensible, 
+Ah ! dites bien qu’amoureux et sensible,
 D’un luth joyeux il attendrit les sons ;
-Et bonne vieille, au coin d’un feu paisible, 
+Et bonne vieille, au coin d’un feu paisible,
 De votre ami répétez les chansons.
 
-Vous que j’appris à pleurer sur la France, 
+Vous que j’appris à pleurer sur la France,
 Dites surtout aux fils des nouveaux preux
 Que j’ai chanté la gloire et l’espérance
 Pour consoler mon pays malheureux.
 Rappelez-leur que l’aquilon terrible,
 De nos lauriers a détruit vingt moissons ;
-Et bonne vieille, au coin d’un feu paisible, 
+Et bonne vieille, au coin d’un feu paisible,
 De votre ami répétez les chansons.
 
 Objet chéri, quand mon renom futile,
 De vos vieux ans charmera les douleurs ;
-À mon portrait, quand votre main débile, 
-Chaque printemps, suspendra quelques fleurs, 
+À mon portrait, quand votre main débile,
+Chaque printemps, suspendra quelques fleurs,
 Levez les yeux vers ce monde invisible
 Où pour toujours nous nous réunissons ;
-Et bonne vieille, au coin d’un feu paisible, 
-De votre ami répétez les chansons.    
+Et bonne vieille, au coin d’un feu paisible,
+De votre ami répétez les chansons.
 </poetry>
 </body>
 </text>
 
 <text id="beranger2019120707">
 <head>
-    <title>La Rêverie</title>
-    <firstline>Loin d’une iris volage</firstline>
-    <notes>
-        <note>Teksten følger <i>Œuvres complètes de Béranger</i>, H. Fournier, 1839, bd. 1, pp. 294-295.<!-- https://fr.wikisource.org/wiki/Œuvres_complètes_de_Béranger/La_Rêverie --></note>
-    </notes>
+  <title>La Rêverie</title>
+  <firstline>Loin d’une iris volage</firstline>
+  <source href="https://fr.wikisource.org/wiki/Œuvres_complètes_de_Béranger/La_Rêverie"><i>Œuvres complètes de Béranger</i>, H. Fournier, 1839, bd. 1, pp. 294-295.</source>
 </head>
 <body>
 <poetry>
 Loin d’une iris volage
-      Qu’un seigneur m’enlevait, 
-      Au printemps, sous l’ombrage, 
+      Qu’un seigneur m’enlevait,
+      Au printemps, sous l’ombrage,
       Un jour mon cœur rêvait.
-      Privé d’une infidèle, 
+      Privé d’une infidèle,
   Il rêvait qu’une autre belle
       Volait à mon secours.
 Venez, venez, venez, mes amours ! (<i>bis.</i>)
 
-      Cette belle était tendre, 
+      Cette belle était tendre,
       Tendre et fière à la fois ;
       Il me semblait l’entendre
       Soupirer dans les bois.
@@ -859,30 +834,30 @@ Venez, venez, venez, mes amours !
 
       Je l’entendais se plaindre
       Du poids de la grandeur.
-      Cessant de me contraindre, 
+      Cessant de me contraindre,
       Je lui peins mon ardeur.
-      Mes yeux versent des larmes, 
+      Mes yeux versent des larmes,
   Ravis de voir tant de charmes
       Sous de si beaux atours.
 Venez, venez, venez, mes amours !
 
       Telle était la merveille
-      Dont je flattais mes sens, 
+      Dont je flattais mes sens,
       Quand soudain mon oreille
       S’ouvre aux plus doux accents.
-      Si c’est vous, ma princesse, 
+      Si c’est vous, ma princesse,
   Des roses de la tendresse
       Venez semer mes jours.
 Venez, venez, venez, mes amours !
 
       Mais non, c’est la coquette
-      Du village voisin, 
+      Du village voisin,
       Qui m’offre une conquête
       En corset de basin.
       Grandeurs, je vous oublie !
   Cette fille est si jolie !
       Ses jupons sont si courts !
-Venez, venez, venez, mes amours !    
+Venez, venez, venez, mes amours !
 </poetry>
 </body>
 </text>

@@ -1,16 +1,14 @@
-const { DOMParser, XMLSerializer } = require('xmldom');
-const { loadText } = require('../libs/helpers.js');
-const { entityMap } = require('./entities.js');
+import {
+  DOMParser,
+  XMLSerializer,
+  onWarningStopParsing,
+} from '@xmldom/xmldom';
+import { loadText } from '../libs/helpers.js';
 
 const parseXMLFragment = xmlString => {
-  const s = xmlString.replace(/&([A-Za-z]+);/g, (m, e) => {
-    const replacement = entityMap[e];
-    if (replacement == null) {
-      throw `Unknown entity &${e};`;
-    }
-    return replacement;
-  });
-  return new DOMParser().parseFromString(s, 'text/xml');
+  return new DOMParser({
+    onError: onWarningStopParsing,
+  }).parseFromString(xmlString, 'text/xml');
 };
 
 const loadXMLDoc = filename => {
@@ -162,7 +160,7 @@ const _sortBySourceOrder = (a, b) => {
   }
 };
 
-module.exports = {
+export {
   loadXMLDoc,
   safeGetText,
   safeGetAttr,

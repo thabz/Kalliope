@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="eventyr" author="andersen" status="incomplete" type="poetry">
 <workhead>
-   <title>Eventyr</title>
-   <quality>korrektur1</quality>
+  <title>Eventyr</title>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
 <text id="andersen2017122001" skip-index="true">
 <head>
-    <title>Den lille Idas Blomster</title>
-    <notes>
-        <note>Teksten følger <i>H. C. Andersens Eventyr</i>, C. A. Reitzel, Kbh., 1990, pp. 43-49.</note>
-        <note>Første gang trykt i H. C. Andersen: <i>Eventyr, fortalte for Børn</i>, 1835, C. A. Reitzel, Kbh., 1. hæfte, pp. 45f.</note>
-    </notes>
+  <title>Den lille Idas Blomster</title>
+  <notes>
+    <note>Første gang trykt i H. C. Andersen: <i>Eventyr, fortalte for Børn</i>, 1835, C. A. Reitzel, Kbh., 1. hæfte, pp. 45f.</note>
+  </notes>
+  <source pages="43-49"><i>H. C. Andersens Eventyr</i>, C. A. Reitzel, Kbh., 1990.</source>
 </head>
 <body>
 <prose>
@@ -64,4 +63,3 @@
 
 </workbody>
 </kalliopework>
-

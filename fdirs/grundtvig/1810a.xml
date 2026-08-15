@@ -1,28 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1810a" author="grundtvig" status="incomplete" type="poetry">
 <workhead>
-   <title>Idunna</title>
-   <subtitle>En Nytaarsgave for 1811</subtitle>
-   <year>1810</year>
+  <title>Idunna</title>
+  <subtitle>En Nytaarsgave for 1811</subtitle>
+  <year>1810</year>
 </workhead>
 <workbody>
 
 <text id="grundtvig2002010101">
 <head>
-   <title>Willemoes</title>
-   <toctitle>Willemoes</toctitle>
-   <indextitle>Willemoes</indextitle>
-   <firstline>Kommer hid, I Piger smaa</firstline>
-   <notes>
-      <note>1808</note>
-      <note>Peter Willemoes (født 1783) omkom 22. marts 1808 under en træfning ved Sjællands Odde. Hans skib, <i>Prins Christian Frederik,</i> blev skudt i sænk af engelske skibe. Læs mere om <a href="http://www.milhist.dk/england/sjodde.html">slaget</a> og <a href="http://www.milhist.dk/soldiers/wille/wille.html">Willemoes</a> på Dansk Militær Historie.</note>
-      <note type="credits">Bidrag fra Sven Sørensen.</note>
-   </notes>
-   <pictures>
-      <picture src="grundtvig2002010101-p1.jpg">Peter Willemoes (1783-1808)</picture>
-   </pictures>
-   <quality>korrektur1</quality>
+  <title>Willemoes</title>
+  <toctitle>Willemoes</toctitle>
+  <indextitle>Willemoes</indextitle>
+  <firstline>Kommer hid, I Piger smaa</firstline>
+  <notes>
+    <note>1808</note>
+    <note>Peter Willemoes (født 1783) omkom 22. marts 1808 under en træfning ved Sjællands Odde. Hans skib, <i>Prins Christian Frederik,</i> blev skudt i sænk af engelske skibe. Læs mere om <a href="http://www.milhist.dk/england/sjodde.html">slaget</a> og <a href="http://www.milhist.dk/soldiers/wille/wille.html">Willemoes</a> på Dansk Militær Historie.</note>
+    <note type="credits">Bidrag fra Sven Sørensen.</note>
+  </notes>
+  <pictures>
+    <picture src="grundtvig2002010101-p1.jpg">Peter Willemoes (1783-1808)</picture>
+  </pictures>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -109,15 +108,12 @@ Voven sagte triller.
 </body>
 </text>
 
-
 <text id="grundtvig2019122905">
 <head>
-    <title>Jørgen Sorterup</title>
-    <firstline>O, Du gamle, kække Skjald!</firstline>
-    <notes>
-        <note>Teksten følger <a href="http://www.grundtvigsværker.dk">grundtvigsværker.dk</a>.</note>
-    </notes>
-    <keywords>sorterup</keywords>
+  <title>Jørgen Sorterup</title>
+  <firstline>O, Du gamle, kække Skjald!</firstline>
+  <source><a href="http://www.grundtvigsværker.dk">Grundtvigsværker.dk</a>.</source>
+  <keywords>sorterup</keywords>
 </head>
 <body>
 <poetry>
@@ -196,7 +192,7 @@ Kæmpeskjald! i høie Sale.
 Glæd Dig, Skjald! den Stund er nær
 Baal nedstyrtes, Herren vinder,
 Alt sig hvæsser Danmarks Sværd,
-Hjertet higer, Gud det finder.    
+Hjertet higer, Gud det finder.
 </poetry>
 </body>
 </text>

@@ -21,6 +21,7 @@ describe('link builders', () => {
     expect(frontPageURL()).toBe('/da/');
     expect(keywordsURL()).toBe('/da/keywords');
     expect(museumsURL('en')).toBe('/en/museums');
+    expect(museumsURL('en', 'country')).toBe('/en/museums/country');
   });
 
   it('builds poet and work urls', () => {
@@ -53,6 +54,7 @@ describe('link builders', () => {
       '/da/texts/dk/titles/A',
     );
     expect(poetsURL('en', 'looks', 'se')).toBe('/en/poets/se/looks');
+    expect(poetsURL('fr', 'period', 'dk')).toBe('/fr/poets/dk/period');
     expect(dictionaryURL('da')).toBe('/da/dict');
     expect(dictionaryURL('da', 'sol')).toBe('/da/dict/sol');
   });

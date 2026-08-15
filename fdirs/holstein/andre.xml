@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="holstein" status="incomplete" type="poetry">
 <workhead>
-   <title>Andre digte</title>
-   <quality>korrektur1</quality>
+  <title>Andre digte</title>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
 
 <text id="holstein2017101502">
 <head>
-   <title>Det er Lærkernes Tid</title>
-   <firstline>Det er Lærkernes Tid!</firstline>
-   <notes>
-       <note>Trykt i <i>Tove. Et Kærlighedsdrama</i>, 1898, p. 45.</note>
-       <note>Teksten følger <i>1000 danske digte</i>, Thomas Bredsdorff og Anne-Marie Mai (red.), Rosinante, Kbh., 2000, s. 850.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Det er Lærkernes Tid</title>
+  <firstline>Det er Lærkernes Tid!</firstline>
+  <notes>
+    <note>Trykt i <i>Tove. Et Kærlighedsdrama</i>, 1898, p. 45.</note>
+  </notes>
+  <source pages="850"><i>1000 danske digte</i>, Thomas Bredsdorff og Anne-Marie Mai (red.), Rosinante, Kbh., 2000.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>

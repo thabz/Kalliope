@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="goethe" author="rosenbergpa" status="incomplete" type="poetry">
 <workhead>
-   <title>Oversættelser af Goethe</title>
+  <title>Oversættelser af Goethe</title>
 </workhead>
 <workbody>
 
 <text id="rosenbergpa2019011801">
 <head>
-    <title>Vandrerens Nattesang</title>
-    <firstline>Du, som bor i Himlens Sal</firstline>
-    <notes>
-        <note>Oversættelse af Goethe: <xref type="translation" poem="goethe2019011801"/>.</note>
-        <note>Teksten følger <i>Goethes Værker</i> ved P.A. Rosenberg, Forlaget Danmark, Kbh., 1924-28, Bd. 1, p. 108.</note>
-    </notes>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Vandrerens Nattesang</title>
+  <firstline>Du, som bor i Himlens Sal</firstline>
+  <notes>
+    <note>Oversættelse af Goethe: <xref type="translation" poem="goethe2019011801"/>.</note>
+  </notes>
+  <source pages="108"><i>Goethes Værker</i> ved P.A. Rosenberg, Forlaget Danmark, Kbh., 1924-28, Bd. 1.</source>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -32,16 +31,15 @@ Kom, o kom til dette Bryst!
 </body>
 </text>
 
-
 <text id="rosenbergpa2019011802">
 <head>
-    <title>En lignende</title>
-    <firstline>Over Høj og Dale</firstline>
-    <notes>
-        <note>Oversættelse af Goethe: <xref type="translation" poem="goethe2002103001"/>.</note>
-        <note>Teksten følger <i>Goethes Værker</i> ved P.A. Rosenberg, Forlaget Danmark, Kbh., 1924-28, Bd. 1, p. 109.</note>
-    </notes>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>En lignende</title>
+  <firstline>Over Høj og Dale</firstline>
+  <notes>
+    <note>Oversættelse af Goethe: <xref type="translation" poem="goethe2002103001"/>.</note>
+  </notes>
+  <source pages="109"><i>Goethes Værker</i> ved P.A. Rosenberg, Forlaget Danmark, Kbh., 1924-28, Bd. 1.</source>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -61,13 +59,13 @@ Hviler du med.
 
 <text id="rosenbergpa2019011301">
 <head>
-    <title>Mignon</title>
-    <firstline>Véd du det Land, hvor Blomst Citronen bær'?</firstline>
-    <notes>
-        <note>Oversættelse af Goethe: <xref type="translation" poem="goethe2001111901"/>.</note>
-        <note>Teksten følger <i>Goethes Værker</i> ved P.A. Rosenberg, Forlaget Danmark, Kbh., 1924-28, Bd. 1, pp. 165-167.</note>
-    </notes>
-    <quality>korrektur1</quality>
+  <title>Mignon</title>
+  <firstline>Véd du det Land, hvor Blomst Citronen bær'?</firstline>
+  <notes>
+    <note>Oversættelse af Goethe: <xref type="translation" poem="goethe2001111901"/>.</note>
+  </notes>
+  <source pages="165-167"><i>Goethes Værker</i> ved P.A. Rosenberg, Forlaget Danmark, Kbh., 1924-28, Bd. 1.</source>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -97,7 +95,7 @@ Gaar nu vor Vej, min Fader og min Ven!
 
 <nonum><center><i>Sangeren.</i></center></nonum>
 
-»Hvad hører jeg for Porten dér 
+»Hvad hører jeg for Porten dér
 Fra Vindebroen klinge?
 Lad Sangen for vort Øre her
 Mod Højenloft sig svinge!«

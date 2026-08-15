@@ -1,0 +1,36 @@
+SELECT ?person (SAMPLE(?personLabel) AS ?personLabel)
+       (GROUP_CONCAT(DISTINCT STR(?alias); separator="|") AS ?aliases)
+       (SAMPLE(?birth) AS ?birth) (SAMPLE(?death) AS ?death)
+       (GROUP_CONCAT(DISTINCT STR(?language); separator="|") AS ?languages)
+       (GROUP_CONCAT(DISTINCT STR(?occupation); separator="|") AS ?occupations)
+       (GROUP_CONCAT(DISTINCT STR(?instance); separator="|") AS ?instances)
+       (GROUP_CONCAT(DISTINCT STR(?work); separator="|") AS ?works)
+       (GROUP_CONCAT(DISTINCT STR(?dflId); separator="|") AS ?dflIds)
+       (GROUP_CONCAT(DISTINCT STR(?viaf); separator="|") AS ?viafIds) WHERE {
+  {
+    SELECT DISTINCT ?person WHERE {
+      ?person wdt:P31 wd:Q5;
+        wdt:P106/wdt:P279* wd:Q49757;
+        wdt:P1412 wd:Q9035;
+        wdt:P569 ?birth.
+      FILTER(
+        EXISTS { ?person wdt:P570 ?knownDeath. FILTER(YEAR(?knownDeath) <= 1955) }
+        || (
+          NOT EXISTS { ?person wdt:P570 ?anyDeath. }
+          && YEAR(?birth) <= 1855
+        )
+      )
+    }
+  }
+  OPTIONAL { ?person wdt:P106 ?occupation. }
+  OPTIONAL { ?person wdt:P31 ?instance. }
+  OPTIONAL { ?person wdt:P800 ?work. }
+  OPTIONAL { ?person wdt:P1412 ?language. }
+  OPTIONAL { ?person wdt:P569 ?birth. }
+  OPTIONAL { ?person wdt:P570 ?death. }
+  OPTIONAL { ?person wdt:P12386 ?dflId. }
+  OPTIONAL { ?person wdt:P214 ?viaf. }
+  OPTIONAL { ?person skos:altLabel ?alias. FILTER(LANG(?alias) = "da") }
+  OPTIONAL { ?person rdfs:label ?personLabel. FILTER(LANG(?personLabel) = "da") }
+}
+GROUP BY ?person

@@ -1,5 +1,5 @@
 // Use poetname.js:poetNameString instead when node.js uses modules
-const { formatTitleAndYear } = require('../../common/dates.js');
+import { formatTitleAndYear } from '../../common/dates.js';
 
 const poetName = poet => {
   if (poet == null) {
@@ -7,6 +7,7 @@ const poetName = poet => {
   }
   const { name } = poet;
   const { firstname, lastname } = name;
+  let namePart;
   if (lastname) {
     if (firstname) {
       namePart = `${firstname} ${lastname}`;
@@ -30,7 +31,7 @@ const workLinkName = work => {
   return formatTitleAndYear(linktitle, year);
 };
 
-module.exports = {
+export {
   poetName,
   workName,
   workLinkName,

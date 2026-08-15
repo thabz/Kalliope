@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="foscolo" status="incomplete" type="poetry">
 <workhead>
-    <title>Andre digte</title>
+  <title>Andre digte</title>
 </workhead>
 <workbody>
 
-    
+
 <text id="foscolo2020020601" skip-index="true">
 <head>
-    <title>A Napoleone Bonaparte liberatore [Brev]</title>
-    <dates>
-        <written>1799-11-27</written>
-    </dates>
-    <notes>
-        <note>Brevet som ledsagede oden <xref poem="foscolo2020020602"/>.</note>
-        <note>Teksten følger Ugo Foscolo: <i>Opere</i>, edizione diretta da Franco Gavazzeni, Riccardo Ricciardi Editore, Milano-Napoli, 1974.</note>
-    </notes>
+  <title>A Napoleone Bonaparte liberatore [Brev]</title>
+  <dates>
+    <written>1799-11-27</written>
+  </dates>
+  <notes>
+    <note>Brevet som ledsagede oden <xref poem="foscolo2020020602"/>.</note>
+  </notes>
+  <source>Ugo Foscolo: <i>Opere</i>, edizione diretta da Franco Gavazzeni, Riccardo Ricciardi Editore, Milano-Napoli, 1974.</source>
 </head>
 <body>
 <prose>
@@ -47,11 +46,9 @@ Anche negli infelicissimi tempi le grandi rivoluzioni destano feroci petti ed al
 
 <text id="foscolo2020020602">
 <head>
-    <title>A Napoleone Bonaparte liberatore</title>
-    <firstline>Dove tu, diva, de l'antica e forte</firstline>
-    <notes>
-        <note>Teksten følger Ugo Foscolo: <i>Opere</i>, edizione diretta da Franco Gavazzeni, Riccardo Ricciardi Editore, Milano-Napoli, 1974.</note>
-    </notes>
+  <title>A Napoleone Bonaparte liberatore</title>
+  <firstline>Dove tu, diva, de l'antica e forte</firstline>
+  <source>Ugo Foscolo: <i>Opere</i>, edizione diretta da Franco Gavazzeni, Riccardo Ricciardi Editore, Milano-Napoli, 1974.</source>
 </head>
 <body>
 <poetry>
@@ -296,16 +293,16 @@ voi non cacciate, e sacerdozie frodi,
 sarete un dì a le età misero esempio:
 vi guata e freme il regnator vicino
 de l'Istro, e anela a farne orrido scempio;
-e un sol Liberator dievvi il destino.    
+e un sol Liberator dievvi il destino.
 </poetry>
 </body>
 </text>
 
 <text id="foscolo2020020603">
 <head>
-    <title>A Luigia Pallavicini</title>
-    <subtitle>Caduta da Cavallo</subtitle>
-    <firstline>I balsami beati</firstline>
+  <title>A Luigia Pallavicini</title>
+  <subtitle>Caduta da Cavallo</subtitle>
+  <firstline>I balsami beati</firstline>
 </head>
 <body>
 <poetry>
@@ -433,7 +430,7 @@ Ma ben piansero il giorno
     Lieta facea ritorno
     Fra le devote vergini,
     E al ciel salìa più bella
-    Di Febo la sorella.    
+    Di Febo la sorella.
 </poetry>
 </body>
 </text>

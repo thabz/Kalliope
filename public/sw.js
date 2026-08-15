@@ -1,9 +1,9 @@
-let version = '0.57';
+let version = '0.58';
+const cacheName = `kalliope-${version}`;
 
 self.addEventListener('install', e => {
-  let timeStamp = Date.now();
   e.waitUntil(
-    caches.open('kalliope').then(cache => {
+    caches.open(cacheName).then(cache => {
       return cache
         .addAll(['/register-sw.js'])
         .then(() => self.skipWaiting());
@@ -12,7 +12,18 @@ self.addEventListener('install', e => {
 });
 
 self.addEventListener('activate', event => {
-  event.waitUntil(self.clients.claim());
+  event.waitUntil(
+    caches
+      .keys()
+      .then(cacheNames => {
+        return Promise.all(
+          cacheNames
+            .filter(name => name.indexOf('kalliope') === 0 && name !== cacheName)
+            .map(name => caches.delete(name))
+        );
+      })
+      .then(() => self.clients.claim())
+  );
 });
 
 self.addEventListener('fetch', event => {

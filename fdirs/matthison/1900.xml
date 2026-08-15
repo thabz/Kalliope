@@ -1,28 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1900" author="matthison" status="complete" type="poetry">
 <workhead>
-    <title>Roserne</title>
-    <year>1900</year>
-    <notes>
-        <note>Dedikationen lyder ,,Til Digteren Dr. Phil <a poet="schandorph">Sophus Schandorph</a> og hans Frue med Beundring og Venskab.''</note>
-        <note>Teksten følger Aage Matthison-Hansen: <i>Roserne</i>, Axel Andersen, Kbh., 1900.</note>
-    </notes>
-    <pictures>
-        <picture src="1900-p1.jpg">Titelbladet til <i>Roserne</i> (1900) lyder ,,Roserne / og / andre Digte / af / Aage Matthison-Hansen // 7de Samling // København / Axel Andersen / Citytrykkeriet (Laur. Madsen &amp; Vald. Carlsen) / 1900''.</picture>
-    </pictures>
-    <!-- TODO: Indsæt citaterne efter dedikationen -->
-    <source facsimile="11530807803B_color" facsimile-pages-num="58" facsimile-pages-offset="4">Aage Matthison-Hansen: <i>Roserne</i>, Axel Andersen, Kbh., 1900.</source>
+  <title>Roserne</title>
+  <year>1900</year>
+  <notes>
+    <note>Dedikationen lyder ,,Til Digteren Dr. Phil <a poet="schandorph">Sophus Schandorph</a> og hans Frue med Beundring og Venskab.''</note>
+  </notes>
+  <pictures>
+    <picture src="1900-p1.jpg">Titelbladet til <i>Roserne</i> (1900) lyder ,,Roserne / og / andre Digte / af / Aage Matthison-Hansen // 7de Samling // København / Axel Andersen / Citytrykkeriet (Laur. Madsen &amp; Vald. Carlsen) / 1900''.</picture>
+  </pictures>
+  <!-- TODO: Indsæt citaterne efter dedikationen -->
+  <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122706688705763" facsimile="11530807803B_color" facsimile-pages-num="58" facsimile-pages-offset="4">Aage Matthison-Hansen: <i>Roserne</i>, Axel Andersen, Kbh., 1900.</source>
 </workhead>
 <workbody>
 
 <text id="matthison2019051701">
 <head>
-    <title>Til Fru Schandorph</title>
-    <firstline>Digterhustru - i hvis Tanker</firstline>
-    <source pages="5-6"/>
-    <keywords>schandorph</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Til Fru Schandorph</title>
+  <firstline>Digterhustru - i hvis Tanker</firstline>
+  <source pages="5-6"/>
+  <keywords>schandorph</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -56,10 +54,10 @@ han jert Digterhjem.
 
 <text id="matthison2019051702">
 <head>
-    <title>Vignetter</title>
-    <firstline>Hver, som elsker eller hader</firstline>
-    <source pages="7-11"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Vignetter</title>
+  <firstline>Hver, som elsker eller hader</firstline>
+  <source pages="7-11"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -187,10 +185,10 @@ let som en Fugl og flygtig som en Spøg?
 
 <text id="matthison2019051703">
 <head>
-    <title>En Stemme fra Villaen</title>
-    <firstline>Tal ikke til mig, udtryk ej i Ord</firstline>
-    <source pages="12"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>En Stemme fra Villaen</title>
+  <firstline>Tal ikke til mig, udtryk ej i Ord</firstline>
+  <source pages="12"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -209,10 +207,10 @@ den bange Fugl med Voldsomhed du skræmmer
 
 <text id="matthison2019051704">
 <head>
-    <title>Foraarsvers</title>
-    <firstline>Højt i Luften Lærken gynger</firstline>
-    <source pages="13"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Foraarsvers</title>
+  <firstline>Højt i Luften Lærken gynger</firstline>
+  <source pages="13"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -239,10 +237,10 @@ fra sit dybe, stille Indre.
 
 <text id="matthison2019051705">
 <head>
-    <title>Roserne</title>
-    <firstline>De vilde Roser</firstline>
-    <source pages="14-15"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Roserne</title>
+  <firstline>De vilde Roser</firstline>
+  <source pages="14-15"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -286,10 +284,10 @@ Solroser, Vinroser!
 
 <text id="matthison2019051706">
 <head>
-    <title>Hvad jeg elsker -</title>
-    <firstline>Haaret med dets mørke Fald</firstline>
-    <source pages="16"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Hvad jeg elsker -</title>
+  <firstline>Haaret med dets mørke Fald</firstline>
+  <source pages="16"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -309,10 +307,10 @@ og den sidste, største Gave
 
 <text id="matthison2019051707">
 <head>
-    <title>Kolibri</title>
-    <firstline>Ak, du min skønne Fugl, min Kolibri</firstline>
-    <source pages="17"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Kolibri</title>
+  <firstline>Ak, du min skønne Fugl, min Kolibri</firstline>
+  <source pages="17"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -331,11 +329,11 @@ en hurtig sluttet, fager Melodi.
 
 <text id="matthison2019051708">
 <head>
-    <title>Sne ved Nat</title>
-    <firstline>Jeg færdes atter paa de trange Veje</firstline>
-    <source pages="18"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Sne ved Nat</title>
+  <firstline>Jeg færdes atter paa de trange Veje</firstline>
+  <source pages="18"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -362,10 +360,10 @@ dit Hoved hvilte som en Blomst i Sneen.
 
 <text id="matthison2019051709">
 <head>
-    <title>Gurre</title>
-    <firstline>Konning Volmer drager ad Gurrevang til</firstline>
-    <source pages="19-20"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Gurre</title>
+  <firstline>Konning Volmer drager ad Gurrevang til</firstline>
+  <source pages="19-20"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -421,11 +419,11 @@ og Taget tjældes paa min Jægerhytte
 
 <text id="matthison2019051710">
 <head>
-    <title>Peruanske Sange</title>
-    <subtitle>(Yarahuis).</subtitle>
-    <firstline>Jeg havde taget en lille Due til mig</firstline>
-    <source pages="21-24"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Peruanske Sange</title>
+  <subtitle>(Yarahuis).</subtitle>
+  <firstline>Jeg havde taget en lille Due til mig</firstline>
+  <source pages="21-24"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -513,11 +511,11 @@ skjul Vejen for hende og før hende hjem til mig.
 
 <text id="matthison2019051711">
 <head>
-    <title>Det tyvende Aarhundrede</title>
-    <firstline>Hvem kender Tiden? - Tiden er som Dugg</firstline>
-    <source pages="25"/>
-    <keywords>oehlenschlaeger,staffeldt</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Det tyvende Aarhundrede</title>
+  <firstline>Hvem kender Tiden? - Tiden er som Dugg</firstline>
+  <source pages="25"/>
+  <keywords>oehlenschlaeger,staffeldt</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -541,10 +539,10 @@ Guldaldertiden varsles ind paany.
 
 <text id="matthison2019051712">
 <head>
-    <title>Efteraar</title>
-    <firstline>Ofte ses et Landskab</firstline>
-    <source pages="26"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Efteraar</title>
+  <firstline>Ofte ses et Landskab</firstline>
+  <source pages="26"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -563,10 +561,10 @@ som til Mulden sparker.
 
 <text id="matthison2019051713">
 <head>
-    <title>Epigram</title>
-    <firstline>Den, som har Vilje og paa Verden tror</firstline>
-    <source pages="27"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Epigram</title>
+  <firstline>Den, som har Vilje og paa Verden tror</firstline>
+  <source pages="27"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -582,10 +580,10 @@ maa færdes gennem Lastens Blomsterflor
 
 <text id="matthison2019051714">
 <head>
-    <title>Novembervise</title>
-    <firstline>Nu sørger vist Enhver af os</firstline>
-    <source pages="28"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Novembervise</title>
+  <firstline>Nu sørger vist Enhver af os</firstline>
+  <source pages="28"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -614,10 +612,10 @@ fordufter Nattens Regn.
 
 <text id="matthison2019051715">
 <head>
-    <title>Strøtanke</title>
-    <firstline>Hvad er vel Sølvet i din Brudekrans</firstline>
-    <source pages="29"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Strøtanke</title>
+  <firstline>Hvad er vel Sølvet i din Brudekrans</firstline>
+  <source pages="29"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -634,10 +632,10 @@ thi Hjertet har sin egen sære Vaar.
 
 <text id="matthison2019051716">
 <head>
-    <title>Stemninger</title>
-    <firstline>At Enhver af os har Venner</firstline>
-    <source pages="30-32"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Stemninger</title>
+  <firstline>At Enhver af os har Venner</firstline>
+  <source pages="30-32"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -699,14 +697,14 @@ paa Nattens dunkle Himmel.
 
 <text id="matthison2019051717">
 <head>
-    <title>Villaen ved Havet</title>
-    <subtitle>(til et Billede af Böcklin.)</subtitle>
-    <firstline>Vildt, vildt, vildt bryder Blæsten om Land</firstline>
-    <source pages="33"/>
-    <pictures>
-        <picture src="matthison2019051717-p1.jpg">Arnold Böcklin: <i>Villa am Meer II</i>, 1865, olie på lærred. Sammlung Schack, München.</picture>
-    </pictures>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Villaen ved Havet</title>
+  <subtitle>(til et Billede af Böcklin.)</subtitle>
+  <firstline>Vildt, vildt, vildt bryder Blæsten om Land</firstline>
+  <source pages="33"/>
+  <pictures>
+    <picture src="matthison2019051717-p1.jpg" museum="schack" objid="k2xnZJgxPd" invnr="11536">Arnold Böcklin: <i>Villa am Meer II</i>, 1865, olie på lærred.</picture>
+  </pictures>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -730,11 +728,11 @@ som et Sørgetog Skyerne skride.
 
 <text id="matthison2019051718">
 <head>
-    <title>Til en ung Pige</title>
-    <subtitle>(Gertrud.)</subtitle>
-    <firstline>Hvor sødt og spørgende du Blikket retter</firstline>
-    <source pages="34"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Til en ung Pige</title>
+  <subtitle>(Gertrud.)</subtitle>
+  <firstline>Hvor sødt og spørgende du Blikket retter</firstline>
+  <source pages="34"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -761,11 +759,11 @@ da er det godt, om du <w>forstaar</w> at drømme.
 
 <text id="matthison2019051719">
 <head>
-    <title>Naar Dagen gry’r -</title>
-    <firstline>Fejlslagne Haab gør Sjælen syg og mat -</firstline>
-    <source pages="35"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Naar Dagen gry’r -</title>
+  <firstline>Fejlslagne Haab gør Sjælen syg og mat -</firstline>
+  <source pages="35"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -792,13 +790,13 @@ naar Solen stiger - Dagen rykker nær!
 
 <text id="matthison2019051720">
 <head>
-    <title>„For I profess not talking“</title>
-    <toctitle>For I profess not talking</toctitle>
-    <indextitle>For I profess not talking</indextitle>
-    <subtitle>Shakespeare »Henry IV«.</subtitle>
-    <firstline>Sænk ej i Skaalen for din søde Lyst</firstline>
-    <source pages="36"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>„For I profess not talking“</title>
+  <toctitle>For I profess not talking</toctitle>
+  <indextitle>For I profess not talking</indextitle>
+  <subtitle>Shakespeare »Henry IV«.</subtitle>
+  <firstline>Sænk ej i Skaalen for din søde Lyst</firstline>
+  <source pages="36"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -825,11 +823,11 @@ hun ser det Land, din Tavshed har begravet.
 
 <text id="matthison2019051721">
 <head>
-    <title>Pejling</title>
-    <firstline>Har Stormen raset og et ublidt Vejr</firstline>
-    <source pages="37"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Pejling</title>
+  <firstline>Har Stormen raset og et ublidt Vejr</firstline>
+  <source pages="37"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -856,11 +854,11 @@ og lad dit Forsæt Staalets Vilje faa,
 
 <text id="matthison2019051722">
 <head>
-    <title>Ved Etlars Baare</title>
-    <subtitle>16. Juni 1900.</subtitle>
-    <firstline>Flagdugen smælder</firstline>
-    <source pages="38-39"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Ved Etlars Baare</title>
+  <subtitle>16. Juni 1900.</subtitle>
+  <firstline>Flagdugen smælder</firstline>
+  <source pages="38-39"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -912,11 +910,11 @@ og aldrig din Digtning hun glemmer.
 
 <text id="matthison2019051723">
 <head>
-    <title>Sigbjørn Obstfelder</title>
-    <firstline>Rustnet er Harpen - Strængene brast</firstline>
-    <source pages="40"/>
-    <keywords>obstfelder</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Sigbjørn Obstfelder</title>
+  <firstline>Rustnet er Harpen - Strængene brast</firstline>
+  <source pages="40"/>
+  <keywords>obstfelder</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -933,10 +931,10 @@ Korset du rakte din blødende Broder.
 
 <text id="matthison2019051724" skip-index="true">
 <head>
-    <title>Bølgeslagene</title>
-    <source pages="41-42"/>
-    <keywords>bang</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Bølgeslagene</title>
+  <source pages="41-42"/>
+  <keywords>bang</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <prose>
@@ -965,11 +963,11 @@ Korset du rakte din blødende Broder.
 
 <text id="matthison2019051725" variant="matthison2019051603">
 <head>
-    <title>En Sommerfugl</title>
-    <subtitle>(Omskrivning af et ældre Digt.)</subtitle>
-    <firstline>Vogt dig, lille Sommerfugl</firstline>
-    <source pages="43-44"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>En Sommerfugl</title>
+  <subtitle>(Omskrivning af et ældre Digt.)</subtitle>
+  <firstline>Vogt dig, lille Sommerfugl</firstline>
+  <source pages="43-44"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1008,14 +1006,14 @@ over Markens Flade.
 
 <text id="matthison2019051726">
 <head>
-    <title>Ved det nye Aarhundredes Komme</title>
-    <subtitle>(Frit efter Fr. v. Schiller.)</subtitle>
-    <firstline>Ædle Ven, hvor aabner sig for Freden</firstline>
-    <source pages="45-47"/>
-    <notes>
-        <note>Gendigtning af Schillers <xref type="translation" poem="schiller2019051701"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Ved det nye Aarhundredes Komme</title>
+  <subtitle>(Frit efter Fr. v. Schiller.)</subtitle>
+  <firstline>Ædle Ven, hvor aabner sig for Freden</firstline>
+  <source pages="45-47"/>
+  <notes>
+    <note>Gendigtning af Schillers <xref type="translation" poem="schiller2019051701"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>

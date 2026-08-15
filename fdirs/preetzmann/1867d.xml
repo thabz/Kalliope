@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1867d" author="preetzmann" status="complete" type="poetry">
 <workhead>
-    <title>Digte og Sange</title>
-    <year>1868</year>
-    <notes>
-        <note>Teksten følger Christian Preetzmann: <i>Digte og Sange</i>, Chr. Steen &amp; Søns Forlag, Kbh., 2. opl., 1868.</note>
-    </notes>
-    <pictures>
-        <picture src="1867d-p1.jpg">Titelbladet til <i>Digte og Sange</i> (1868) lyder ,,Digte og Sange / ved / Caralis. // Andet Oplag / Kjöbenhavn. / Chr. Steen &amp; Søns Forlag. / Thieles Bogtrykkeri. / 1868.''</picture>
-    </pictures>
-    <!-- Thomas Moores samlede: http://www.gutenberg.org/cache/epub/8187/pg8187.txt -->
-    <source facsimile="115408046490" facsimile-pages-num="238" facsimile-pages-offset="24">Christian Preetzmann: <i>Digte og Sange</i>, Chr. Steen &amp; Søns Forlag, Kbh., 2. opl., 1868.</source>
+  <title>Digte og Sange</title>
+  <year>1868</year>
+  <pictures>
+    <picture src="1867d-p1.jpg">Titelbladet til <i>Digte og Sange</i> (1868) lyder ,,Digte og Sange / ved / Caralis. // Andet Oplag / Kjöbenhavn. / Chr. Steen &amp; Søns Forlag. / Thieles Bogtrykkeri. / 1868.''</picture>
+  </pictures>
+  <!-- Thomas Moores samlede: http://www.gutenberg.org/cache/epub/8187/pg8187.txt -->
+  <source facsimile="115408046490" facsimile-pages-num="238" facsimile-pages-offset="24">Christian Preetzmann: <i>Digte og Sange</i>, Chr. Steen &amp; Søns Forlag, Kbh., 2. opl., 1868.</source>
 </workhead>
 <workbody>
 
 <text id="preetzmann2019082301" skip-index="true">
 <head>
-    <title>Forord</title>
-    <source pages="iii-iv" facsimile-pages="17-18"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Forord</title>
+  <source pages="iii-iv" facsimile-pages="17-18"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <prose>
@@ -33,14 +29,14 @@
 
 <text id="preetzmann2019082302">
 <head>
-    <title>Poesien</title>
-    <toctitle>Poesien (M. G. Percival)</toctitle>
-    <firstline>Af Poesi er Verden fuld, dens Aand</firstline>
-    <notes>
-        <note>Gendigtning af James Gates Percival: <xref type="translation" poem="percival201908251"/>.</note>
-    </notes>
-    <source pages="1-7"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Poesien</title>
+  <toctitle>Poesien (M. G. Percival)</toctitle>
+  <firstline>Af Poesi er Verden fuld, dens Aand</firstline>
+  <notes>
+    <note>Gendigtning af James Gates Percival: <xref type="translation" poem="percival201908251"/>.</note>
+  </notes>
+  <source pages="1-7"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -220,14 +216,14 @@ At tolke Følelser, for evig døde.
 
 <text id="preetzmann2019082303">
 <head>
-    <title>Amor og Haabet</title>
-    <toctitle>Amor og Haabet (Thomas Moore)</toctitle>
-    <firstline>En Morgenstund ved Amors Arm:</firstline>
-    <notes>
-        <note>Gendigtning af Thomas Moore: <xref type="translation" poem="moore201908251"/>.</note>
-    </notes>
-    <source pages="8-9"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Amor og Haabet</title>
+  <toctitle>Amor og Haabet (Thomas Moore)</toctitle>
+  <firstline>En Morgenstund ved Amors Arm</firstline>
+  <notes>
+    <note>Gendigtning af Thomas Moore: <xref type="translation" poem="moore201908251"/>.</note>
+  </notes>
+  <source pages="8-9"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -274,14 +270,14 @@ Og Haabets Drøm om Amor randt —
 
 <text id="preetzmann2019082304">
 <head>
-    <title>Mit Høiland</title>
-    <toctitle>Mit Høiland (Robert Burns)</toctitle>
-    <firstline>Mit Høiland jeg elsker, her er ei mit Sind</firstline>
-    <source pages="10"/>
-    <notes>
-        <note>Gendigtning af Robert Burns: <xref type="translation" poem="burns2019090704"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Mit Høiland</title>
+  <toctitle>Mit Høiland (Robert Burns)</toctitle>
+  <firstline>Mit Høiland jeg elsker, her er ei mit Sind</firstline>
+  <source pages="10"/>
+  <notes>
+    <note>Gendigtning af Robert Burns: <xref type="translation" poem="burns2019090704"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -312,14 +308,14 @@ Mit Høiland jeg elsker, hvorhen jeg mon gaae.
 
 <text id="preetzmann2019082305">
 <head>
-    <title>Til Anna</title>
-    <toctitle>Til Anna (Samme)</toctitle>
-    <firstline>Din Skjønhed, Anna! tærer hen</firstline>
-    <source pages="11"/>
-    <notes>
-        <note>Gendigtning af Robert Burns: <xref type="translation" poem="burns2019090703"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Til Anna</title>
+  <toctitle>Til Anna (Samme)</toctitle>
+  <firstline>Din Skjønhed, Anna! tærer hen</firstline>
+  <source pages="11"/>
+  <notes>
+    <note>Gendigtning af Robert Burns: <xref type="translation" poem="burns2019090703"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -339,14 +335,14 @@ Skam var det, kaste Troen bort
 
 <text id="preetzmann2019082306">
 <head>
-    <title>Skovhymne</title>
-    <toctitle>Skovhymne (W. C. Bryant)</toctitle>
-    <firstline>De første Templer til Gud Herrens Ære</firstline>
-    <notes>
-        <note>Gendigtning af William Cullen Bryant: <xref type="translation" poem="bryant2019082905"/>.</note>
-    </notes>
-    <source pages="12-16"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Skovhymne</title>
+  <toctitle>Skovhymne (W. C. Bryant)</toctitle>
+  <firstline>De første Templer til Gud Herrens Ære</firstline>
+  <notes>
+    <note>Gendigtning af William Cullen Bryant: <xref type="translation" poem="bryant2019082905"/>.</note>
+  </notes>
+  <source pages="12-16"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -483,14 +479,14 @@ I Samklang med din Skabnings skjønne Love!
 
 <text id="preetzmann2019082307">
 <head>
-    <title>Det aabne Vindue</title>
-    <toctitle>Det aabne Vindue (H. W. Longfellow)</toctitle>
-    <firstline>Under de tætte Linde</firstline>
-    <notes>
-        <note>Gendigtning af Henry Wadsworth Longfellow: <xref type="translation" poem="longfellow2019072201"/>.</note>
-    </notes>
-    <source pages="17-18"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Det aabne Vindue</title>
+  <toctitle>Det aabne Vindue (H. W. Longfellow)</toctitle>
+  <firstline>Under de tætte Linde</firstline>
+  <notes>
+    <note>Gendigtning af Henry Wadsworth Longfellow: <xref type="translation" poem="longfellow2019072201"/>.</note>
+  </notes>
+  <source pages="17-18"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -531,14 +527,14 @@ Hvi jeg knuged hans Haand mellem mine —
 
 <text id="preetzmann2019082308">
 <head>
-    <title>Skumring</title>
-    <toctitle>Skumring (Samme)</toctitle>
-    <firstline>Tusmørket er trist og skyfuldt</firstline>
-    <notes>
-        <note>Gendigtning af Henry Wadsworth Longfellow: <xref type="translation" poem="longfellow2019090102"/>.</note>
-    </notes>
-    <source pages="19-20"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Skumring</title>
+  <toctitle>Skumring (Samme)</toctitle>
+  <firstline>Tusmørket er trist og skyfuldt</firstline>
+  <notes>
+    <note>Gendigtning af Henry Wadsworth Longfellow: <xref type="translation" poem="longfellow2019090102"/>.</note>
+  </notes>
+  <source pages="19-20"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -579,15 +575,15 @@ Der bryder paa Moderens Hjerte,
 
 <text id="preetzmann2019082309">
 <head>
-    <title>Huuslig Lykke</title>
-    <toctitle>Huuslig Lykke (J. Thomson)</toctitle>
-    <subtitle>(Af ,,Aarstiderne''.)</subtitle>
-    <firstline>O! lykkelige de, hvem milde Stjerner</firstline>
-    <source pages="21-23"/>
-    <notes>
-        <note>Sidste del af James Thomsons <xref type="translation" poem="thomson2017122901,1065-1128"/> gendigtet.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Huuslig Lykke</title>
+  <toctitle>Huuslig Lykke (J. Thomson)</toctitle>
+  <subtitle>(Af ,,Aarstiderne''.)</subtitle>
+  <firstline>O! lykkelige de, hvem milde Stjerner</firstline>
+  <source pages="21-23"/>
+  <notes>
+    <note>Sidste del af James Thomsons <xref type="translation" poem="thomson2017122901,1065-1128"/> gendigtet.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -652,14 +648,14 @@ Hvor Kjærlighed og Lykke evig hersker.
 
 <text id="preetzmann2019082310">
 <head>
-    <title>Barnet og Lilien</title>
-    <toctitle>Barnet og Lilien (W. C. Bryant)</toctitle>
-    <firstline>Uskyldige Glut med den Blomst saa hvid</firstline>
-    <notes>
-        <note>Gendigtning af William Cullen Bryant: <xref type="translation" poem="bryant2019082902"/>.</note>
-    </notes>
-    <source pages="24"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Barnet og Lilien</title>
+  <toctitle>Barnet og Lilien (W. C. Bryant)</toctitle>
+  <firstline>Uskyldige Glut med den Blomst saa hvid</firstline>
+  <notes>
+    <note>Gendigtning af William Cullen Bryant: <xref type="translation" poem="bryant2019082902"/>.</note>
+  </notes>
+  <source pages="24"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -690,14 +686,14 @@ Dit hvide, uskyldige Hjerte hold fast!
 
 <text id="preetzmann2019082311">
 <head>
-    <title>Til Thea</title>
-    <toctitle>Til Thea (Robert Herrick)</toctitle>
-    <firstline>Byd mig at leve, og mit Liv</firstline>
-    <source pages="25-26"/>
-    <notes>
-        <note>Gendigtning af Robert Herrick: <xref type="translation" poem="herrick2019090301"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Til Thea</title>
+  <toctitle>Til Thea (Robert Herrick)</toctitle>
+  <firstline>Byd mig at leve, og mit Liv</firstline>
+  <source pages="25-26"/>
+  <notes>
+    <note>Gendigtning af Robert Herrick: <xref type="translation" poem="herrick2019090301"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -738,14 +734,14 @@ For Liv og Død i dette Bryst —
 
 <text id="preetzmann2019082312">
 <head>
-    <title>Anemonerne</title>
-    <toctitle>Anemonerne (Samme)</toctitle>
-    <firstline>Ak, skjønne Anemoner! hvi</firstline>
-    <source pages="27"/>
-    <notes>
-        <note>Gendigtning af Robert Herrick: <xref type="translation" poem="herrick2019090601"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Anemonerne</title>
+  <toctitle>Anemonerne (Samme)</toctitle>
+  <firstline>Ak, skjønne Anemoner! hvi</firstline>
+  <source pages="27"/>
+  <notes>
+    <note>Gendigtning af Robert Herrick: <xref type="translation" poem="herrick2019090601"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -778,14 +774,14 @@ Som Duggens Perler veires bort
 
 <text id="preetzmann2019082313">
 <head>
-    <title>Den fælleds Skjæbne</title>
-    <toctitle>Den fælleds Skjæbne (J. Montgomery)</toctitle>
-    <firstline>Der levede engang en Mand</firstline>
-    <source pages="28-29"/>
-    <notes>
-        <note>Gendigtning af James Montgomery: <xref type="translation" poem="montgomery2019090701"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Den fælleds Skjæbne</title>
+  <toctitle>Den fælleds Skjæbne (J. Montgomery)</toctitle>
+  <firstline>Der levede engang en Mand</firstline>
+  <source pages="28-29"/>
+  <notes>
+    <note>Gendigtning af James Montgomery: <xref type="translation" poem="montgomery2019090701"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -846,19 +842,19 @@ Mens Slægter fødtes og forsvandt,
 
 <text id="preetzmann2019082314">
 <head>
-    <title>Svar</title>
-    <toctitle>Svar paa ,,Den fælleds Skjæbne'' (Byron)</toctitle>
-    <indextitle>Svar paa ,,Den fælleds Skjæbne''</indextitle>
-    <linktitle>Svar paa ,,Den fælleds Skjæbne''</linktitle>
-    <subtitle>Paa det smukke digt: ''Den fælleds Skjæbne''.</subtitle>
-    <firstline>Sandt nok, Montgomery! Støvets Flugt</firstline>
-    <source pages="30-32"/>
-    <notes>
-        <note>Gendigtning af Lord Byron: <xref type="translation" poem="byron2019090701"/>.</note>
-        <note>Se også oversættelsen <xref poem="preetzmann2019082313"/>.</note>
-    </notes>
-    <keywords>petrarca</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Svar</title>
+  <toctitle>Svar paa ,,Den fælleds Skjæbne'' (Byron)</toctitle>
+  <indextitle>Svar paa ,,Den fælleds Skjæbne''</indextitle>
+  <linktitle>Svar paa ,,Den fælleds Skjæbne''</linktitle>
+  <subtitle>Paa det smukke digt: ''Den fælleds Skjæbne''.</subtitle>
+  <firstline>Sandt nok, Montgomery! Støvets Flugt</firstline>
+  <source pages="30-32"/>
+  <notes>
+    <note>Gendigtning af Lord Byron: <xref type="translation" poem="byron2019090701"/>.</note>
+    <note>Se også oversættelsen <xref poem="preetzmann2019082313"/>.</note>
+  </notes>
+  <keywords>petrarca</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -924,14 +920,14 @@ Der gives dem, hvis Gjernings Frugt
 
 <text id="preetzmann2019082315">
 <head>
-    <title>Hvad skal jeg troe?</title>
-    <toctitle>Hvad skal jeg troe? (Thomas Moore)</toctitle>
-    <firstline>Ifald jeg brugte Venskabs Sprog</firstline>
-    <notes>
-        <note>Gendigtning af Thomas Moore: <xref type="translation" poem="moore201908252"/>.</note>
-    </notes>
-    <source pages="33-34"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Hvad skal jeg troe?</title>
+  <toctitle>Hvad skal jeg troe? (Thomas Moore)</toctitle>
+  <firstline>Ifald jeg brugte Venskabs Sprog</firstline>
+  <notes>
+    <note>Gendigtning af Thomas Moore: <xref type="translation" poem="moore201908252"/>.</note>
+  </notes>
+  <source pages="33-34"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -975,14 +971,14 @@ Elskede, til Eet de To!
 
 <text id="preetzmann2019082316">
 <head>
-    <title>Det gamle Uhr</title>
-    <toctitle>Det gamle Uhr (H. W. Longfellow)</toctitle>
-    <firstline>Tætved en Landsby, graat af Aar</firstline>
-    <notes>
-        <note>Gendigtning af Henry Wadsworth Longfellow: <xref type="translation" poem="longfellow2019082901"/>.</note>
-    </notes>
-    <source pages="35-38"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Det gamle Uhr</title>
+  <toctitle>Det gamle Uhr (H. W. Longfellow)</toctitle>
+  <firstline>Tætved en Landsby, graat af Aar</firstline>
+  <notes>
+    <note>Gendigtning af Henry Wadsworth Longfellow: <xref type="translation" poem="longfellow2019082901"/>.</note>
+  </notes>
+  <source pages="35-38"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1074,14 +1070,14 @@ Evighedens Klokkeklang:
 
 <text id="preetzmann2019082317">
 <head>
-    <title>Vexelsang</title>
-    <toctitle>Vexelsang (Robert Burns)</toctitle>
-    <firstline>Husbond! hold dog op med Kiv!</firstline>
-    <source pages="39-40"/>
-    <notes>
-        <note>Gendigtning af Robert Burns: <xref type="translation" poem="burns2001052505"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Vexelsang</title>
+  <toctitle>Vexelsang (Robert Burns)</toctitle>
+  <firstline>Husbond! hold dog op med Kiv!</firstline>
+  <source pages="39-40"/>
+  <notes>
+    <note>Gendigtning af Robert Burns: <xref type="translation" poem="burns2001052505"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1128,14 +1124,14 @@ Helved flyer af Skræk sin Vei,
 
 <text id="preetzmann2019082318">
 <head>
-    <title>Lykken</title>
-    <toctitle>Lykken (Heber)</toctitle>
-    <firstline>Jeg vandred ud en Dag i Mai</firstline>
-    <source pages="41-42"/>
-    <notes>
-        <note>Gendigtning af Reginald Heber: <xref type="translation" poem="heber2019090701"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Lykken</title>
+  <toctitle>Lykken (Heber)</toctitle>
+  <firstline>Jeg vandred ud en Dag i Mai</firstline>
+  <source pages="41-42"/>
+  <notes>
+    <note>Gendigtning af Reginald Heber: <xref type="translation" poem="heber2019090701"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1196,14 +1192,14 @@ Og svared: ,,Jeg er Lykken, gaaer
 
 <text id="preetzmann2019082319">
 <head>
-    <title>Dødssyn</title>
-    <toctitle>Dødssyn (W. C. Bryant)</toctitle>
-    <firstline>For den, som har Naturen kjær, og først</firstline>
-    <notes>
-        <note>Gendigtning af William Cullen Bryant: <xref type="translation" poem="bryant2019082906"/>.</note>
-    </notes>
-    <source pages="43-46"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Dødssyn</title>
+  <toctitle>Dødssyn (W. C. Bryant)</toctitle>
+  <firstline>For den, som har Naturen kjær, og først</firstline>
+  <notes>
+    <note>Gendigtning af William Cullen Bryant: <xref type="translation" poem="bryant2019082906"/>.</note>
+  </notes>
+  <source pages="43-46"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1297,14 +1293,14 @@ Og lægger sig til Ro, for sødt at drømme.
 
 <text id="preetzmann2019082320">
 <head>
-    <title>Til en Qvinde</title>
-    <toctitle>Til en Qvinde (Th. Parnell)</toctitle>
-    <firstline>Naar, i Skjønhedens Dragt</firstline>
-    <notes>
-        <note>Gendigtning af Thomas Parnell: <xref type="translation" poem="parnell2019082901"/>.</note>
-    </notes>
-    <source pages="47"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Til en Qvinde</title>
+  <toctitle>Til en Qvinde (Th. Parnell)</toctitle>
+  <firstline>Naar, i Skjønhedens Dragt</firstline>
+  <notes>
+    <note>Gendigtning af Thomas Parnell: <xref type="translation" poem="parnell2019082901"/>.</note>
+  </notes>
+  <source pages="47"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1333,14 +1329,14 @@ Mellem Stolthed og Kjærlighed bane sig Vei:
 
 <text id="preetzmann2019082321">
 <head>
-    <title>Enkens Sang</title>
-    <toctitle>Enkens Sang (Edw. C. Pinkney)</toctitle>
-    <firstline>Ei Røg og Duft jeg offrer Dig</firstline>
-    <source pages="48"/>
-    <notes>
-        <note>Gendigtning af Edward Coate Pinkney: <xref type="translation" poem="pinkney2019090701"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Enkens Sang</title>
+  <toctitle>Enkens Sang (Edw. C. Pinkney)</toctitle>
+  <firstline>Ei Røg og Duft jeg offrer Dig</firstline>
+  <source pages="48"/>
+  <notes>
+    <note>Gendigtning af Edward Coate Pinkney: <xref type="translation" poem="pinkney2019090701"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1369,14 +1365,14 @@ Trøstløs og ene sidder nu
 
 <text id="preetzmann2019082322">
 <head>
-    <title>Det gamle Træ</title>
-    <toctitle>Det gamle Træ (George P. Morris)</toctitle>
-    <firstline>O, Skovmand! spar det gamle Træ</firstline>
-    <source pages="49-50"/>
-    <notes>
-        <note>Gendigtning af George Pope Morris: <xref type="translation" poem="morris2019072401"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Det gamle Træ</title>
+  <toctitle>Det gamle Træ (George P. Morris)</toctitle>
+  <firstline>O, Skovmand! spar det gamle Træ</firstline>
+  <source pages="49-50"/>
+  <notes>
+    <note>Gendigtning af George Pope Morris: <xref type="translation" poem="morris2019072401"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1423,14 +1419,14 @@ Mens jeg har Kræfter i min Arm,
 
 <text id="preetzmann2019082323">
 <head>
-    <title>Cloris og Fanny</title>
-    <toctitle>Cloris og Fanny (Thomas Moore)</toctitle>
-    <firstline>Ja, Cloris! var jeg Persiens stolte Drot</firstline>
-    <notes>
-        <note>Gendigtning af Thomas Moore: <xref type="translation" poem="moore201908253"/>.</note>
-    </notes>
-    <source pages="51"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Cloris og Fanny</title>
+  <toctitle>Cloris og Fanny (Thomas Moore)</toctitle>
+  <firstline>Ja, Cloris! var jeg Persiens stolte Drot</firstline>
+  <notes>
+    <note>Gendigtning af Thomas Moore: <xref type="translation" poem="moore201908253"/>.</note>
+  </notes>
+  <source pages="51"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1451,15 +1447,15 @@ Sæt at jeg i en ulyksalig Stund
 
 <text id="preetzmann2019082324">
 <head>
-    <title>Adam og Eva i Paradis</title>
-    <toctitle>Adam og Eva i Paradis (Milton)</toctitle>
-    <subtitle>(Af ,,Det tabte Paradis''.)</subtitle>
-    <firstline>To Væsner, skjønnere end Alt omkring dem</firstline>
-    <source pages="52-53"/>
-    <notes>
-        <note>Gendigtning af del af John Miltons <xref type="translation" poem="milton1999063014,288-334"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Adam og Eva i Paradis</title>
+  <toctitle>Adam og Eva i Paradis (Milton)</toctitle>
+  <subtitle>(Af ,,Det tabte Paradis''.)</subtitle>
+  <firstline>To Væsner, skjønnere end Alt omkring dem</firstline>
+  <source pages="52-53"/>
+  <notes>
+    <note>Gendigtning af del af John Miltons <xref type="translation" poem="milton1999063014,288-334"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1513,15 +1509,15 @@ Paa Sædet blødt som Duun og blomstervirket.
 
 <text id="preetzmann2019082325">
 <head>
-    <title>Eva til Adam</title>
-    <toctitle>Eva til Adam (Samme)</toctitle>
-    <subtitle>(Af Samme.)</subtitle>
-    <firstline>Jeg glemmer Tiden, naar med Dig jeg taler</firstline>
-    <source pages="54"/>
-    <notes>
-        <note>Gendigtning af del af John Miltons <xref type="translation" poem="milton1999063014,639-656"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Eva til Adam</title>
+  <toctitle>Eva til Adam (Samme)</toctitle>
+  <subtitle>(Af Samme.)</subtitle>
+  <firstline>Jeg glemmer Tiden, naar med Dig jeg taler</firstline>
+  <source pages="54"/>
+  <notes>
+    <note>Gendigtning af del af John Miltons <xref type="translation" poem="milton1999063014,639-656"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1551,14 +1547,14 @@ Er sødt foruden Dig!
 
 <text id="preetzmann2019082326">
 <head>
-    <title>Sang</title>
-    <toctitle>Sang (Byron)</toctitle>
-    <firstline>Man siger, Lykken boer i Haabet</firstline>
-    <source pages="55"/>
-    <notes>
-        <note>Gendigtning af Lord Byron: <xref type="translation" poem="byron1999041129"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Sang</title>
+  <toctitle>Sang (Byron)</toctitle>
+  <firstline>Man siger, Lykken boer i Haabet</firstline>
+  <source pages="55"/>
+  <notes>
+    <note>Gendigtning af Lord Byron: <xref type="translation" poem="byron1999041129"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1584,14 +1580,14 @@ Vi kan ei vorde hvad vi drømte.
 
 <text id="preetzmann2019082327">
 <head>
-    <title>Den afrikanske Høvding</title>
-    <toctitle>Den afrikanske Høvding (W. C. Bryant)</toctitle>
-    <firstline>Paa Markedspladsen i Lænker han stod</firstline>
-    <notes>
-        <note>Gendigtning af William Cullen Bryant: <xref type="translation" poem="bryant2019082903"/>.</note>
-    </notes>
-    <source pages="56-58"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Den afrikanske Høvding</title>
+  <toctitle>Den afrikanske Høvding (W. C. Bryant)</toctitle>
+  <firstline>Paa Markedspladsen i Lænker han stod</firstline>
+  <notes>
+    <note>Gendigtning af William Cullen Bryant: <xref type="translation" poem="bryant2019082903"/>.</note>
+  </notes>
+  <source pages="56-58"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1674,14 +1670,14 @@ Da drog man frem ham i Ørkenens Sand —
 
 <text id="preetzmann2019082328">
 <head>
-    <title>Stancer</title>
-    <toctitle>Stancer (Robert Southey)</toctitle>
-    <firstline>Mit Liv iblandt de Døde randt</firstline>
-    <source pages="59-60"/>
-    <notes>
-        <note>Gendigtning af Robert Southey: <xref type="translation" poem="southey2019090701"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Stancer</title>
+  <toctitle>Stancer (Robert Southey)</toctitle>
+  <firstline>Mit Liv iblandt de Døde randt</firstline>
+  <source pages="59-60"/>
+  <notes>
+    <note>Gendigtning af Robert Southey: <xref type="translation" poem="southey2019090701"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1720,14 +1716,14 @@ Skal det til Støv vel smuldre hen?
 
 <text id="preetzmann2019082329">
 <head>
-    <title>Godnat</title>
-    <toctitle>Godnat (Thomas Moore)</toctitle>
-    <firstline>Godnat! Godnat! — Ak! er det saa</firstline>
-    <notes>
-        <note>Gendigtning af Thomas Moore: <xref type="translation" poem="moore201908254"/>.</note>
-    </notes>
-    <source pages="61"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Godnat</title>
+  <toctitle>Godnat (Thomas Moore)</toctitle>
+  <firstline>Godnat! Godnat! — Ak! er det saa</firstline>
+  <notes>
+    <note>Gendigtning af Thomas Moore: <xref type="translation" poem="moore201908254"/>.</note>
+  </notes>
+  <source pages="61"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1759,14 +1755,14 @@ Og da, mit Liv! mit Alt! — Godnat!
 
 <text id="preetzmann2019082330">
 <head>
-    <title>Overløberen</title>
-    <toctitle>Overløberen (Letitia Landon)</toctitle>
-    <firstline>Det var en liflig Sommermorgen — Lærken</firstline>
-    <notes>
-        <note>Gendigtning af Letitia Elizabeth Landon: <xref type="translation" poem="landon2019090102"/>.</note>
-    </notes>
-    <source pages="62-66"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Overløberen</title>
+  <toctitle>Overløberen (Letitia Landon)</toctitle>
+  <firstline>Det var en liflig Sommermorgen — Lærken</firstline>
+  <notes>
+    <note>Gendigtning af Letitia Elizabeth Landon: <xref type="translation" poem="landon2019090102"/>.</note>
+  </notes>
+  <source pages="62-66"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1896,14 +1892,14 @@ Var skudt som Overløber!
 
 <text id="preetzmann2019082331">
 <head>
-    <title>Tungsind</title>
-    <toctitle>Tungsind (R. H. Wilde)</toctitle>
-    <firstline>Mit Liv er Rosen, der i Vaar</firstline>
-    <source pages="67-68"/>
-    <notes>
-        <note>Gendigtning af Richard Henry Wilde: <xref type="translation" poem="wilderh2019090701"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Tungsind</title>
+  <toctitle>Tungsind (R. H. Wilde)</toctitle>
+  <firstline>Mit Liv er Rosen, der i Vaar</firstline>
+  <source pages="67-68"/>
+  <notes>
+    <note>Gendigtning af Richard Henry Wilde: <xref type="translation" poem="wilderh2019090701"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1941,14 +1937,14 @@ For mig vil ingen Sjæl sig klage!
 
 <text id="preetzmann2019082332">
 <head>
-    <title>Nu, søde Fanny!</title>
-    <toctitle>Nu, søde Fanny! (Thomas Moore)</toctitle>
-    <firstline>Nu, søde Fanny, bort med Graad!</firstline>
-    <notes>
-        <note>Gendigtning af anden halvdel af Thomas Moore: <xref type="translation" poem="moore201908225"/>.</note>
-    </notes>
-    <source pages="69-70"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Nu, søde Fanny!</title>
+  <toctitle>Nu, søde Fanny! (Thomas Moore)</toctitle>
+  <firstline>Nu, søde Fanny, bort med Graad!</firstline>
+  <notes>
+    <note>Gendigtning af anden halvdel af Thomas Moore: <xref type="translation" poem="moore201908225"/>.</note>
+  </notes>
+  <source pages="69-70"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1989,14 +1985,14 @@ Den vide Jord og Himles Hær
 
 <text id="preetzmann2019082333">
 <head>
-    <title>Ved Dagbrud</title>
-    <toctitle>Ved Dagbrud (W. C. Bryant)</toctitle>
-    <firstline>Tændes Dagen paa Himmelens sittrende Pande</firstline>
-    <notes>
-        <note>Gendigtning af William Cullen Bryant: <xref type="translation" poem="bryant2019082907"/>.</note>
-    </notes>
-    <source pages="71-72"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Ved Dagbrud</title>
+  <toctitle>Ved Dagbrud (W. C. Bryant)</toctitle>
+  <firstline>Tændes Dagen paa Himmelens sittrende Pande</firstline>
+  <notes>
+    <note>Gendigtning af William Cullen Bryant: <xref type="translation" poem="bryant2019082907"/>.</note>
+  </notes>
+  <source pages="71-72"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2032,14 +2028,14 @@ Maae henover Verden saa lysende smile,
 
 <text id="preetzmann2019082334">
 <head>
-    <title>Længsel</title>
-    <toctitle>Længsel (Robert Burns)</toctitle>
-    <firstline>I hvor jeg end</firstline>
-    <source pages="73-75"/>
-    <notes>
-        <note>Gendigtning af Robert Burns: <xref type="translation" poem="burns2019090707"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Længsel</title>
+  <toctitle>Længsel (Robert Burns)</toctitle>
+  <firstline>I hvor jeg end</firstline>
+  <source pages="73-75"/>
+  <notes>
+    <note>Gendigtning af Robert Burns: <xref type="translation" poem="burns2019090707"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2102,15 +2098,15 @@ Har al min Kjærlighed.
 
 <text id="preetzmann2019082335">
 <head>
-    <title>Til en Tusindfryd</title>
-    <toctitle>Til en Tusindfryd (Samme)</toctitle>
-    <subtitle>(Som Forf. pløiede op af Jorden.)</subtitle>
-    <firstline>Du lille Blomst saa rød og rund!</firstline>
-    <source pages="76-78"/>
-    <notes>
-        <note>Gendigtning af Robert Burns: <xref type="translation" poem="burns2019090708"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Til en Tusindfryd</title>
+  <toctitle>Til en Tusindfryd (Samme)</toctitle>
+  <subtitle>(Som Forf. pløiede op af Jorden.)</subtitle>
+  <firstline>Du lille Blomst saa rød og rund!</firstline>
+  <source pages="76-78"/>
+  <notes>
+    <note>Gendigtning af Robert Burns: <xref type="translation" poem="burns2019090708"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2184,14 +2180,14 @@ Da ligger under Muldens Dække
 
 <text id="preetzmann2019082336">
 <head>
-    <title>Den Landflygtiges Sang</title>
-    <toctitle>Den Landflygtiges Sang (Robert Gilfillan)</toctitle>
-    <firstline>Hvi drog jeg over Dybet</firstline>
-    <notes>
-        <note>Gendigtning af Robert Gilfillan: <xref type="translation" poem="gilfillan2019090901"/>.</note>
-    </notes>
-    <source pages="79-80"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Den Landflygtiges Sang</title>
+  <toctitle>Den Landflygtiges Sang (Robert Gilfillan)</toctitle>
+  <firstline>Hvi drog jeg over Dybet</firstline>
+  <notes>
+    <note>Gendigtning af Robert Gilfillan: <xref type="translation" poem="gilfillan2019090901"/>.</note>
+  </notes>
+  <source pages="79-80"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2238,14 +2234,14 @@ Men aldrig trætte Pilgrim
 
 <text id="preetzmann2019082337">
 <head>
-    <title>Abou Ben Adhem og Engelen</title>
-    <toctitle>Abou Ben Adhem og Engelen (Leigh Hunt)</toctitle>
-    <firstline>Abou Ben Adhem (gid hans Stamme voxe!)</firstline>
-    <notes>
-        <note>Gendigtning af Leigh Hunt: <xref type="translation" poem="hunt2019090101"/>.</note>
-    </notes>
-    <source pages="81"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Abou Ben Adhem og Engelen</title>
+  <toctitle>Abou Ben Adhem og Engelen (Leigh Hunt)</toctitle>
+  <firstline>Abou Ben Adhem (gid hans Stamme voxe!)</firstline>
+  <notes>
+    <note>Gendigtning af Leigh Hunt: <xref type="translation" poem="hunt2019090101"/>.</note>
+  </notes>
+  <source pages="81"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2277,14 +2273,14 @@ Og see! — Ben Adhems Navn i Spidsen stod!
 
 <text id="preetzmann2019082338">
 <head>
-    <title>Gaa — forglem mig!</title>
-    <toctitle>Gaa — forglem mig! (Charles Wolfe)</toctitle>
-    <firstline>Gaa, forglem mig — lad ei Sorgen</firstline>
-    <source pages="82-83"/>
-    <notes>
-        <note>Gendigtning af Charles Wolfe: <xref type="translation" poem="wolfe2019090702"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Gaa — forglem mig!</title>
+  <toctitle>Gaa — forglem mig! (Charles Wolfe)</toctitle>
+  <firstline>Gaa, forglem mig — lad ei Sorgen</firstline>
+  <source pages="82-83"/>
+  <notes>
+    <note>Gendigtning af Charles Wolfe: <xref type="translation" poem="wolfe2019090702"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2322,14 +2318,14 @@ Lad kun ene mig i Mørket,
 
 <text id="preetzmann2019082339">
 <head>
-    <title>Variatio delectat!</title>
-    <toctitle>Variatio delectat! (Thomas Moore)</toctitle>
-    <firstline>Da Du elsked mig — ja, det er sandt</firstline>
-    <notes>
-        <note>Gendigtning af af Thomas Moore: <xref type="translation" poem="moore2019090902"/>.</note>
-    </notes>
-    <source pages="84"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Variatio delectat!</title>
+  <toctitle>Variatio delectat! (Thomas Moore)</toctitle>
+  <firstline>Da Du elsked mig — ja, det er sandt</firstline>
+  <notes>
+    <note>Gendigtning af af Thomas Moore: <xref type="translation" poem="moore2019090902"/>.</note>
+  </notes>
+  <source pages="84"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2350,14 +2346,14 @@ Du var sød vel i Elskovens Ild —
 
 <text id="preetzmann2019082340">
 <head>
-    <title>Faderglæder</title>
-    <toctitle>Faderglæder (G. Massey)</toctitle>
-    <firstline>Sig Sommernatten sænker over Jorden</firstline>
-    <notes>
-        <note>Gendigtning af Gerald Massey: <xref type="translation" poem="massey2019090901"/>.</note>
-    </notes>
-    <source pages="85-87"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Faderglæder</title>
+  <toctitle>Faderglæder (G. Massey)</toctitle>
+  <firstline>Sig Sommernatten sænker over Jorden</firstline>
+  <notes>
+    <note>Gendigtning af Gerald Massey: <xref type="translation" poem="massey2019090901"/>.</note>
+  </notes>
+  <source pages="85-87"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2417,14 +2413,14 @@ Staaer kronet med en solbestraalet Byge!
 
 <text id="preetzmann2019082341">
 <head>
-    <title>Jeg mindes Dig</title>
-    <toctitle>Jeg mindes Dig (Prentice)</toctitle>
-    <firstline>Jeg mindes Dig, naar Morgnen springer</firstline>
-    <notes>
-        <note>Gendigtning af George D. Prentice: <xref type="translation" poem="prentice2019090901"/>.</note>
-    </notes>
-    <source pages="88-89"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Jeg mindes Dig</title>
+  <toctitle>Jeg mindes Dig (Prentice)</toctitle>
+  <firstline>Jeg mindes Dig, naar Morgnen springer</firstline>
+  <notes>
+    <note>Gendigtning af George D. Prentice: <xref type="translation" poem="prentice2019090901"/>.</note>
+  </notes>
+  <source pages="88-89"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2460,14 +2456,14 @@ Hvor Skjønhed selv sit Navn indføied —
 
 <text id="preetzmann2019082342">
 <head>
-    <title>I den ambraciske Bugt</title>
-    <toctitle>I den ambraciske Bugt (Byron)</toctitle>
-    <firstline>Som Sølv lyser Maanen fra Himlen inat</firstline>
-    <source pages="90-91"/>
-    <notes>
-        <note>Gendigtning af Lord Byron: <xref type="translation" poem="byron2019090804"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
+  <title>I den ambraciske Bugt</title>
+  <toctitle>I den ambraciske Bugt (Byron)</toctitle>
+  <firstline>Som Sølv lyser Maanen fra Himlen inat</firstline>
+  <source pages="90-91"/>
+  <notes>
+    <note>Gendigtning af Lord Byron: <xref type="translation" poem="byron2019090804"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2503,14 +2499,14 @@ Men ei for Alverden jeg miste Dig vilde!
 
 <text id="preetzmann2019082343">
 <head>
-    <title>Harpeklang</title>
-    <toctitle>Harpeklang (Ch. F. Hoffman)</toctitle>
-    <firstline>Er Venskabs og Kjærligheds Blomster nedtraadt</firstline>
-    <notes>
-        <note>Gendigtning af Charles Fenno Hoffman: <xref type="translation" poem="hoffman2019090802"/>.</note>
-    </notes>
-    <source pages="92"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Harpeklang</title>
+  <toctitle>Harpeklang (Ch. F. Hoffman)</toctitle>
+  <firstline>Er Venskabs og Kjærligheds Blomster nedtraadt</firstline>
+  <notes>
+    <note>Gendigtning af Charles Fenno Hoffman: <xref type="translation" poem="hoffman2019090802"/>.</note>
+  </notes>
+  <source pages="92"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2536,14 +2532,14 @@ Og bygger i Læ af den ludende Muur.
 
 <text id="preetzmann2019082344">
 <head>
-    <title>Vi har holdt trofast sammen</title>
-    <toctitle>Vi har holdt trofast sammen (Mrs. Norton)</toctitle>
-    <firstline>Vi har holdt trofast sammen</firstline>
-    <notes>
-        <note>Gendigtning af Caroline Norton: <xref type="translation" poem="norton2019090901"/>.</note>
-    </notes>
-    <source pages="93-94"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Vi har holdt trofast sammen</title>
+  <toctitle>Vi har holdt trofast sammen (Mrs. Norton)</toctitle>
+  <firstline>Vi har holdt trofast sammen</firstline>
+  <notes>
+    <note>Gendigtning af Caroline Norton: <xref type="translation" poem="norton2019090901"/>.</note>
+  </notes>
+  <source pages="93-94"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2581,14 +2577,14 @@ Vi have sørget sammen —
 
 <text id="preetzmann2019082345">
 <head>
-    <title>Niagara</title>
-    <toctitle>Niagara (Lydia H. Sigourney)</toctitle>
-    <firstline>Bruus frem for evig i din Hædersdragt</firstline>
-    <source pages="95-96"/>
-    <notes>
-        <note>Gendigtning af Lydia Huntley Sigourney: <xref type="translation" poem="sigourney2019090701"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Niagara</title>
+  <toctitle>Niagara (Lydia H. Sigourney)</toctitle>
+  <firstline>Bruus frem for evig i din Hædersdragt</firstline>
+  <source pages="95-96"/>
+  <notes>
+    <note>Gendigtning af Lydia Huntley Sigourney: <xref type="translation" poem="sigourney2019090701"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2647,14 +2643,14 @@ For gjennem Dig at svare for sin Gud.
 
 <text id="preetzmann2019082346">
 <head>
-    <title>Kom tilbage!</title>
-    <toctitle>Kom tilbage! (Barry Cornwall)</toctitle>
-    <firstline>Kom tilbage! kom tilbage</firstline>
-    <source pages="97"/>
-    <notes>
-        <note>Gendigtning af Barry Cornwall: <xref type="translation" poem="cornwall2019090802"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Kom tilbage!</title>
+  <toctitle>Kom tilbage! (Barry Cornwall)</toctitle>
+  <firstline>Kom tilbage! kom tilbage</firstline>
+  <source pages="97"/>
+  <notes>
+    <note>Gendigtning af Barry Cornwall: <xref type="translation" poem="cornwall2019090802"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2678,14 +2674,14 @@ Du, for hvem vor Taare falder!
 
 <text id="preetzmann2019082347">
 <head>
-    <title>Min Moders Bibel</title>
-    <toctitle>Min Moders Bibel (George P. Morris)</toctitle>
-    <firstline>Af alt mit Eie har jeg nu</firstline>
-    <notes>
-        <note>Gendigtning af George Pope Morris: <xref type="translation" poem="morris2019090901"/>.</note>
-    </notes>
-    <source pages="98-99"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Min Moders Bibel</title>
+  <toctitle>Min Moders Bibel (George P. Morris)</toctitle>
+  <firstline>Af alt mit Eie har jeg nu</firstline>
+  <notes>
+    <note>Gendigtning af George Pope Morris: <xref type="translation" poem="morris2019090901"/>.</note>
+  </notes>
+  <source pages="98-99"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2732,14 +2728,14 @@ Af Dig har Livets Med jeg lært,
 
 <text id="preetzmann2019082348">
 <head>
-    <title>Sømanden</title>
-    <toctitle>Sømanden (Letitia Landon)</toctitle>
-    <firstline>Tilaars var Enken, eet Barn kun hun havde</firstline>
-    <notes>
-        <note>Gendigtning af Letitia Elizabeth Landon: <xref type="translation" poem="landon2019090101"/>.</note>
-    </notes>
-    <source pages="100-104"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Sømanden</title>
+  <toctitle>Sømanden (Letitia Landon)</toctitle>
+  <firstline>Tilaars var Enken, eet Barn kun hun havde</firstline>
+  <notes>
+    <note>Gendigtning af Letitia Elizabeth Landon: <xref type="translation" poem="landon2019090101"/>.</note>
+  </notes>
+  <source pages="100-104"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2865,14 +2861,14 @@ Og ved sin Sømand hviler nu hans Moder.
 
 <text id="preetzmann2019082349">
 <head>
-    <title>Det gamle Aars Død</title>
-    <toctitle>Det gamle Aars Død (Alfred Tennyson)</toctitle>
-    <firstline>Det suser over Mark og Eng</firstline>
-    <notes>
-        <note>Gendigtning af anden halvdel af Alfred Lord Tennyson: <xref type="translation" poem="tennyson2019090301"/>.</note>
-    </notes>
-    <source pages="105-107"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Det gamle Aars Død</title>
+  <toctitle>Det gamle Aars Død (Alfred Tennyson)</toctitle>
+  <firstline>Det suser over Mark og Eng</firstline>
+  <notes>
+    <note>Gendigtning af anden halvdel af Alfred Lord Tennyson: <xref type="translation" poem="tennyson2019090301"/>.</note>
+  </notes>
+  <source pages="105-107"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2943,15 +2939,15 @@ Ham, som staaer ene der
 
 <text id="preetzmann2019082350">
 <head>
-    <title>Sonet</title>
-    <toctitle>Sonet (Shakspeare)</toctitle>
-    <firstline>Ei faaer mit Speil mig til at troe jeg ældes</firstline>
-    <notes>
-        <note>Gendigtning af Shakespeare: <xref type="translation" poem="shakespeare0022"/>.</note>
-    </notes>
-    <source pages="108"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Sonet</title>
+  <toctitle>Sonet (Shakspeare)</toctitle>
+  <firstline>Ei faaer mit Speil mig til at troe jeg ældes</firstline>
+  <notes>
+    <note>Gendigtning af Shakespeare: <xref type="translation" poem="shakespeare0022"/>.</note>
+  </notes>
+  <source pages="108"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2977,14 +2973,14 @@ Dit ømme Hjerte vogter jeg for Fare.
 
 <text id="preetzmann2019082351">
 <head>
-    <title>Endymion</title>
-    <toctitle>Endymion (H. W. Longfellow)</toctitle>
-    <firstline>Sig Maanen hæver rund og fuld</firstline>
-    <notes>
-        <note>Gendigtning af Henry Wadsworth Longfellow: <xref type="translation" poem="longfellow1999063013"/>.</note>
-    </notes>
-    <source pages="109-110"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Endymion</title>
+  <toctitle>Endymion (H. W. Longfellow)</toctitle>
+  <firstline>Sig Maanen hæver rund og fuld</firstline>
+  <notes>
+    <note>Gendigtning af Henry Wadsworth Longfellow: <xref type="translation" poem="longfellow1999063013"/>.</note>
+  </notes>
+  <source pages="109-110"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3040,14 +3036,14 @@ Vil røre Harpen i hans Bryst
 
 <text id="preetzmann2019082352">
 <head>
-    <title>Barnlig Sorg</title>
-    <toctitle>Barnlig Sorg (Felicia Hemans)</toctitle>
-    <firstline>O! kald min Broder dog herhen</firstline>
-    <source pages="111-112"/>
-    <notes>
-        <note>Gendigtning af Felicia Hemans: <xref type="translation" poem="hemans2019090701"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Barnlig Sorg</title>
+  <toctitle>Barnlig Sorg (Felicia Hemans)</toctitle>
+  <firstline>O! kald min Broder dog herhen</firstline>
+  <source pages="111-112"/>
+  <notes>
+    <note>Gendigtning af Felicia Hemans: <xref type="translation" poem="hemans2019090701"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3093,14 +3089,14 @@ Ak! jeg ham elsked altfor lidt,
 
 <text id="preetzmann2019082353">
 <head>
-    <title>En Sang om Øen Pitcairn</title>
-    <toctitle>En Sang om Øen Pitcairn (W. C. Bryant)</toctitle>
-    <firstline>Kom! tag vor Dreng, saa vil vi gaae</firstline>
-    <notes>
-        <note>Gendigtning af William Cullen Bryant: <xref type="translation" poem="bryant2019082901"/>.</note>
-    </notes>
-    <source pages="113-115"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>En Sang om Øen Pitcairn</title>
+  <toctitle>En Sang om Øen Pitcairn (W. C. Bryant)</toctitle>
+  <firstline>Kom! tag vor Dreng, saa vil vi gaae</firstline>
+  <notes>
+    <note>Gendigtning af William Cullen Bryant: <xref type="translation" poem="bryant2019082901"/>.</note>
+  </notes>
+  <source pages="113-115"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3161,14 +3157,14 @@ Har skabt os To vor lille Ø.
 
 <text id="preetzmann2019082354">
 <head>
-    <title>Ved Bækken</title>
-    <toctitle>Ved Bækken (Thomas Moore)</toctitle>
-    <firstline>Jeg saae, mens i Bækken sig Morgenen maled</firstline>
-    <notes>
-        <note>Gendigtning af af Thomas Moore: <xref type="translation" poem="moore2000082972"/>.</note>
-    </notes>
-    <source pages="116"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Ved Bækken</title>
+  <toctitle>Ved Bækken (Thomas Moore)</toctitle>
+  <firstline>Jeg saae, mens i Bækken sig Morgenen maled</firstline>
+  <notes>
+    <note>Gendigtning af af Thomas Moore: <xref type="translation" poem="moore2000082972"/>.</note>
+  </notes>
+  <source pages="116"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3199,14 +3195,14 @@ Og hans Sjæl, som et Ved, der i Flammerne styrkes,
 
 <text id="preetzmann2019082355">
 <head>
-    <title>Drengen</title>
-    <toctitle>Drengen (N. P. Willis)</toctitle>
-    <firstline>Der er et Vist, jeg veed ei hvad</firstline>
-    <notes>
-        <note>Gendigtning af af Nathaniel Parker Willis: <xref type="translation" poem="willis2019090901"/>.</note>
-    </notes>
-    <source pages="117-119"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Drengen</title>
+  <toctitle>Drengen (N. P. Willis)</toctitle>
+  <firstline>Der er et Vist, jeg veed ei hvad</firstline>
+  <notes>
+    <note>Gendigtning af af Nathaniel Parker Willis: <xref type="translation" poem="willis2019090901"/>.</note>
+  </notes>
+  <source pages="117-119"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3271,14 +3267,14 @@ Saa flygtig og fortabt som den.
 
 <text id="preetzmann2019082356">
 <head>
-    <title>Sonet</title>
-    <toctitle>Sonet (Shakspeare)</toctitle>
-    <firstline>Hvor bliver ikke Skjønhed dobbelt skjøn</firstline>
-    <notes>
-        <note>Gendigtning af Shakespeare: <xref type="translation" poem="shakespeare0054"/>.</note>
-    </notes>
-    <source pages="120"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Sonet</title>
+  <toctitle>Sonet (Shakspeare)</toctitle>
+  <firstline>Hvor bliver ikke Skjønhed dobbelt skjøn</firstline>
+  <notes>
+    <note>Gendigtning af Shakespeare: <xref type="translation" poem="shakespeare0054"/>.</note>
+  </notes>
+  <source pages="120"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3304,14 +3300,14 @@ Fortryller med sin Vellugt end vor Sands:
 
 <text id="preetzmann2019082357">
 <head>
-    <title>Marie Stuarts Klage</title>
-    <toctitle>Marie Stuarts Klage (Robert Burns)</toctitle>
-    <firstline>Naturen alt paa nøgne Green</firstline>
-    <source pages="121-123"/>
-    <notes>
-        <note>Gendigtning af Robert Burns: <xref type="translation" poem="burns2019090701"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Marie Stuarts Klage</title>
+  <toctitle>Marie Stuarts Klage (Robert Burns)</toctitle>
+  <firstline>Naturen alt paa nøgne Green</firstline>
+  <source pages="121-123"/>
+  <notes>
+    <note>Gendigtning af Robert Burns: <xref type="translation" poem="burns2019090701"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3385,14 +3381,14 @@ Og næste Foraar Blomster snoe
 
 <text id="preetzmann2019082358">
 <head>
-    <title>Ingen</title>
-    <toctitle>Ingen (Samme)</toctitle>
-    <firstline>Min er Konen, jeg har</firstline>
-    <source pages="124"/>
-    <notes>
-        <note>Gendigtning af Robert Burns: <xref type="translation" poem="burns2019090702"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Ingen</title>
+  <toctitle>Ingen (Samme)</toctitle>
+  <firstline>Min er Konen, jeg har</firstline>
+  <source pages="124"/>
+  <notes>
+    <note>Gendigtning af Robert Burns: <xref type="translation" poem="burns2019090702"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3421,14 +3417,14 @@ Bryder Ingen sig om mig,
 
 <text id="preetzmann2019082359">
 <head>
-    <title>Marcelia</title>
-    <toctitle>Marcelia (Barry Cornwall)</toctitle>
-    <firstline>Uhyggeligt var Stedet. Bækken, som</firstline>
-    <source pages="125-127"/>
-    <notes>
-        <note>Gendigtning af Barry Cornwall: <xref type="translation" poem="cornwall2019090801"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Marcelia</title>
+  <toctitle>Marcelia (Barry Cornwall)</toctitle>
+  <firstline>Uhyggeligt var Stedet. Bækken, som</firstline>
+  <source pages="125-127"/>
+  <notes>
+    <note>Gendigtning af Barry Cornwall: <xref type="translation" poem="cornwall2019090801"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3487,14 +3483,14 @@ Og drukned sig af Kjærlighed.
 
 <text id="preetzmann2019082360">
 <head>
-    <title>Sonet</title>
-    <toctitle>Sonet (Shakspeare)</toctitle>
-    <firstline>Fra disse Læber, Elskov selv har dannet</firstline>
-    <notes>
-        <note>Gendigtning af Shakespeare: <xref type="translation" poem="shakespeare0145"/>.</note>
-    </notes>
-    <source pages="128"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Sonet</title>
+  <toctitle>Sonet (Shakspeare)</toctitle>
+  <firstline>Fra disse Læber, Elskov selv har dannet</firstline>
+  <notes>
+    <note>Gendigtning af Shakespeare: <xref type="translation" poem="shakespeare0145"/>.</note>
+  </notes>
+  <source pages="128"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3520,14 +3516,14 @@ Saadan forandrede medeet hun Talen:
 
 <text id="preetzmann2019082361">
 <head>
-    <title>Hvis Du har tabt en Ven</title>
-    <toctitle>Hvis Du har tabt en Ven (Charles Swain)</toctitle>
-    <firstline>Hvis Du har tabt en Ven</firstline>
-    <notes>
-        <note>Gendigtning af Charles Swain: <xref type="translation" poem="swain2019090901"/>.</note>
-    </notes>
-    <source pages="129-130"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Hvis Du har tabt en Ven</title>
+  <toctitle>Hvis Du har tabt en Ven (Charles Swain)</toctitle>
+  <firstline>Hvis Du har tabt en Ven</firstline>
+  <notes>
+    <note>Gendigtning af Charles Swain: <xref type="translation" poem="swain2019090901"/>.</note>
+  </notes>
+  <source pages="129-130"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3564,14 +3560,14 @@ Gaa! — kald ham til din Favn igjen,
 
 <text id="preetzmann2019082362">
 <head>
-    <title>Sang</title>
-    <toctitle>Sang (Maria Brooks)</toctitle>
-    <firstline>Dag, som Dig i Purpur dukker</firstline>
-    <notes>
-        <note>Gendigtning af Maria Gowen Brooks: <xref type="translation" poem="brooks2019090901"/>.</note>
-    </notes>
-    <source pages="131-132"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Sang</title>
+  <toctitle>Sang (Maria Brooks)</toctitle>
+  <firstline>Dag, som Dig i Purpur dukker</firstline>
+  <notes>
+    <note>Gendigtning af Maria Gowen Brooks: <xref type="translation" poem="brooks2019090901"/>.</note>
+  </notes>
+  <source pages="131-132"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3617,14 +3613,14 @@ Nu jeg Intet kan afslaae Dig:
 
 <text id="preetzmann2019082363">
 <head>
-    <title>Jorden</title>
-    <toctitle>Jorden (W. C. Bryant)</toctitle>
-    <firstline>En sort og skyfuld Midnat staaer paa Himlen</firstline>
-    <notes>
-        <note>Gendigtning af William Cullen Bryant: <xref type="translation" poem="bryant2019082904"/>.</note>
-    </notes>
-    <source pages="133-137"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Jorden</title>
+  <toctitle>Jorden (W. C. Bryant)</toctitle>
+  <firstline>En sort og skyfuld Midnat staaer paa Himlen</firstline>
+  <notes>
+    <note>Gendigtning af William Cullen Bryant: <xref type="translation" poem="bryant2019082904"/>.</note>
+  </notes>
+  <source pages="133-137"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3756,14 +3752,14 @@ Nedskrevne blier, hvorefter Du skal dømmes.
 
 <text id="preetzmann2019082364">
 <head>
-    <title>Paa Søen</title>
-    <toctitle>Paa Søen (Thomas Moore)</toctitle>
-    <firstline>See! under Maanens Straale hvid</firstline>
-    <source pages="138"/>
-    <notes>
-        <note>Gendigtning af af Thomas Moore: <xref type="translation" poem="moore2019090805"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Paa Søen</title>
+  <toctitle>Paa Søen (Thomas Moore)</toctitle>
+  <firstline>See! under Maanens Straale hvid</firstline>
+  <source pages="138"/>
+  <notes>
+    <note>Gendigtning af af Thomas Moore: <xref type="translation" poem="moore2019090805"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3784,14 +3780,14 @@ At glimre der en liden Stund —
 
 <text id="preetzmann2019082365">
 <head>
-    <title>En Nattetanke</title>
-    <toctitle>En Nattetanke (Samme)</toctitle>
-    <firstline>Hvor tidt formørker ei en Sky</firstline>
-    <notes>
-        <note>Gendigtning af af Thomas Moore: <xref type="translation" poem="moore2019082901"/>.</note>
-    </notes>
-    <source pages="139"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>En Nattetanke</title>
+  <toctitle>En Nattetanke (Samme)</toctitle>
+  <firstline>Hvor tidt formørker ei en Sky</firstline>
+  <notes>
+    <note>Gendigtning af af Thomas Moore: <xref type="translation" poem="moore2019082901"/>.</note>
+  </notes>
+  <source pages="139"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3812,14 +3808,14 @@ Mangt Hjerte, som i Liv og Død
 
 <text id="preetzmann2019082366">
 <head>
-    <title>Til Nea</title>
-    <toctitle>Til Nea (Samme)</toctitle>
-    <firstline>O, lad os aldrig meer, min Skat</firstline>
-    <notes>
-        <note>Gendigtning af af Thomas Moore: <xref type="translation" poem="moore2019082902"/>.</note>
-    </notes>
-    <source pages="140-141"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Til Nea</title>
+  <toctitle>Til Nea (Samme)</toctitle>
+  <firstline>O, lad os aldrig meer, min Skat</firstline>
+  <notes>
+    <note>Gendigtning af af Thomas Moore: <xref type="translation" poem="moore2019082902"/>.</note>
+  </notes>
+  <source pages="140-141"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3865,14 +3861,14 @@ Os fandt igjen i dette Krat —
 
 <text id="preetzmann2019082367">
 <head>
-    <title>Forbryderskibet</title>
-    <toctitle>Forbryderskibet (Th. K. Hervey)</toctitle>
-    <firstline>Det dæmrer paa Havet — i Vandenes Skjød</firstline>
-    <notes>
-        <note>Gendigtning af Thomas Kibble Hervey: <xref type="translation" poem="hervey2019090301"/>.</note>
-    </notes>
-    <source pages="142-144"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Forbryderskibet</title>
+  <toctitle>Forbryderskibet (Th. K. Hervey)</toctitle>
+  <firstline>Det dæmrer paa Havet — i Vandenes Skjød</firstline>
+  <notes>
+    <note>Gendigtning af Thomas Kibble Hervey: <xref type="translation" poem="hervey2019090301"/>.</note>
+  </notes>
+  <source pages="142-144"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3936,14 +3932,14 @@ Hvor tabt er med Barndommen Drømmenes Lyst.
 
 <text id="preetzmann2019082368">
 <head>
-    <title>Macauras Grav</title>
-    <toctitle>Macauras Grav (Mrs. Downing)</toctitle>
-    <firstline>Og det er din Grav, Macaura!</firstline>
-    <notes>
-        <note>Gendigtning af Mary Downing: <xref type="translation" poem="downing2019090901"/>.</note>
-    </notes>
-    <source pages="145-146"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Macauras Grav</title>
+  <toctitle>Macauras Grav (Mrs. Downing)</toctitle>
+  <firstline>Og det er din Grav, Macaura!</firstline>
+  <notes>
+    <note>Gendigtning af Mary Downing: <xref type="translation" poem="downing2019090901"/>.</note>
+  </notes>
+  <source pages="145-146"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3990,14 +3986,14 @@ O vee, Macaura! det aldrig meer
 
 <text id="preetzmann2019082369">
 <head>
-    <title>Udvandreren</title>
-    <toctitle>Udvandreren (Lady Dufferin)</toctitle>
-    <firstline>Jeg staaer ved Stænten, Ellen!</firstline>
-    <notes>
-        <note>Gendigtning af Helen Blackwood: <xref type="translation" poem="blackwood2019090901"/>.</note>
-    </notes>
-    <source pages="147-149"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Udvandreren</title>
+  <toctitle>Udvandreren (Lady Dufferin)</toctitle>
+  <firstline>Jeg staaer ved Stænten, Ellen!</firstline>
+  <notes>
+    <note>Gendigtning af Helen Blackwood: <xref type="translation" poem="blackwood2019090901"/>.</note>
+  </notes>
+  <source pages="147-149"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4062,14 +4058,14 @@ Hiin lyse Foraarsmorgen,
 
 <text id="preetzmann2019082370">
 <head>
-    <title>Sonet</title>
-    <toctitle>Sonet (Shakspeare)</toctitle>
-    <firstline>Naar Verden mig med Kulde vender Ryggen</firstline>
-    <notes>
-        <note>Gendigtning af Shakespeare: <xref type="translation" poem="shakespeare0029"/>.</note>
-    </notes>
-    <source pages="150"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Sonet</title>
+  <toctitle>Sonet (Shakspeare)</toctitle>
+  <firstline>Naar Verden mig med Kulde vender Ryggen</firstline>
+  <notes>
+    <note>Gendigtning af Shakespeare: <xref type="translation" poem="shakespeare0029"/>.</note>
+  </notes>
+  <source pages="150"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4095,14 +4091,14 @@ Ved Himlens Port — ei efter Meer den tragter:
 
 <text id="preetzmann2019082371">
 <head>
-    <title>Sonet</title>
-    <toctitle>Sonet (Samme)</toctitle>
-    <firstline>Sørg ikke længer, naar mig Døden rammer</firstline>
-    <notes>
-        <note>Gendigtning af Shakespeare: <xref type="translation" poem="shakespeare0071"/>.</note>
-    </notes>
-    <source pages="151"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Sonet</title>
+  <toctitle>Sonet (Samme)</toctitle>
+  <firstline>Sørg ikke længer, naar mig Døden rammer</firstline>
+  <notes>
+    <note>Gendigtning af Shakespeare: <xref type="translation" poem="shakespeare0071"/>.</note>
+  </notes>
+  <source pages="151"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4128,14 +4124,14 @@ Lad selv mit stakkels Navn ei nævnes meer:
 
 <text id="preetzmann2019082372">
 <head>
-    <title>Godiva</title>
-    <toctitle>Godiva (Alfred Tennyson)</toctitle>
-    <firstline>Jeg vented paa et Tog i Coventry</firstline>
-    <notes>
-        <note>Gendigtning af Alfred Lord Tennyson: <xref type="translation" poem="tennyson2019090302"/>.</note>
-    </notes>
-    <source pages="152-155"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Godiva</title>
+  <toctitle>Godiva (Alfred Tennyson)</toctitle>
+  <firstline>Jeg vented paa et Tog i Coventry</firstline>
+  <notes>
+    <note>Gendigtning af Alfred Lord Tennyson: <xref type="translation" poem="tennyson2019090302"/>.</note>
+  </notes>
+  <source pages="152-155"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4234,14 +4230,14 @@ Og bygged sig et Navn for Evigheden.
 
 <text id="preetzmann2019082373">
 <head>
-    <title>Belsazzars Syn</title>
-    <toctitle>Belsazzars Syn (Byron)</toctitle>
-    <firstline>Belsazzar sad paa Thronen</firstline>
-    <notes>
-        <note>Gendigtning af Lord Byron: <xref type="translation" poem="byron1999041115"/>.</note>
-    </notes>
-    <source pages="156-158"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Belsazzars Syn</title>
+  <toctitle>Belsazzars Syn (Byron)</toctitle>
+  <firstline>Belsazzar sad paa Thronen</firstline>
+  <notes>
+    <note>Gendigtning af Lord Byron: <xref type="translation" poem="byron1999041115"/>.</note>
+  </notes>
+  <source pages="156-158"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4306,14 +4302,14 @@ En Meder ved hans Tærskel,
 
 <text id="preetzmann2019082374">
 <head>
-    <title>Forglem mig ei!</title>
-    <toctitle>Forglem mig ei! (Amelia Opie)</toctitle>
-    <firstline>Gaa, elskte Knøs! Du sagtens finder</firstline>
-    <notes>
-        <note>Gendigtning af Amelia Opie: <xref type="translation" poem="opie2019082901"/>.</note>
-    </notes>
-    <source pages="159"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Forglem mig ei!</title>
+  <toctitle>Forglem mig ei! (Amelia Opie)</toctitle>
+  <firstline>Gaa, elskte Knøs! Du sagtens finder</firstline>
+  <notes>
+    <note>Gendigtning af Amelia Opie: <xref type="translation" poem="opie2019082901"/>.</note>
+  </notes>
+  <source pages="159"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4342,13 +4338,13 @@ Og til en kjærlig Ven Du trænger:
 
 <text id="preetzmann2019082375">
 <head>
-    <title>Mit Svar eengang for Alle</title>
-    <toctitle>Mit Svar eengang for Alle (H. Carey)</toctitle>
-    <subtitle>Til mine Herrer Misundere.</subtitle>
-    <firstline>Med en god gammel Ven og en qvik gammel Sang</firstline>
-    <source pages="160"/>
-    <!-- TODO: Find originalen (H. Carey) -->
-    <quality>korrektur1,kilde,side</quality>
+  <title>Mit Svar eengang for Alle</title>
+  <toctitle>Mit Svar eengang for Alle (H. Carey)</toctitle>
+  <subtitle>Til mine Herrer Misundere.</subtitle>
+  <firstline>Med en god gammel Ven og en qvik gammel Sang</firstline>
+  <source pages="160"/>
+  <!-- TODO: Find originalen (H. Carey) -->
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4374,14 +4370,14 @@ Jomeer hun sig græmmer, desbedre for os!
 
 <text id="preetzmann2019082376">
 <head>
-    <title>Ved en Grav</title>
-    <toctitle>Ved en Grav (W. J. Pabodie)</toctitle>
-    <firstline>Jeg stod hvor han var lagt i Mulde</firstline>
-    <notes>
-        <note>Gendigtning af William Jewett Pabodie: <xref type="translation" poem="pabodie2019090901"/>.</note>
-    </notes>
-    <source pages="161-162"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Ved en Grav</title>
+  <toctitle>Ved en Grav (W. J. Pabodie)</toctitle>
+  <firstline>Jeg stod hvor han var lagt i Mulde</firstline>
+  <notes>
+    <note>Gendigtning af William Jewett Pabodie: <xref type="translation" poem="pabodie2019090901"/>.</note>
+  </notes>
+  <source pages="161-162"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4422,12 +4418,14 @@ Det var saa tungt at gaae tilbage
 
 <text id="preetzmann2019082377">
 <head>
-    <title>Kjærlighed</title>
-    <toctitle>Kjærlighed (Robert Southey)</toctitle>
-    <firstline>Synd er det, hvem der os fortæller</firstline>
-    <source pages="163-164"/>
-    <!-- TODO: Find originalen (Robert Southey) -->
-    <quality>korrektur1,kilde,side</quality>
+  <title>Kjærlighed</title>
+  <toctitle>Kjærlighed (Robert Southey)</toctitle>
+  <firstline>Synd er det, hvem der os fortæller</firstline>
+  <source pages="163-164"/>
+  <notes>
+    <note>Gendigtning af Robert Southeys <xref type="translation" poem="southey2026072601"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4463,12 +4461,14 @@ For hendes Graad og vaagne Nætter,
 
 <text id="preetzmann2019082378">
 <head>
-    <title>Den Forskudte</title>
-    <toctitle>Den Forskudte (Mary Ann Browne)</toctitle>
-    <firstline>Mit Haar før Tiden graaned alt</firstline>
-    <source pages="165-167"/>
-    <!-- TODO: Find originalen (Mary Ann Browne) -->
-    <quality>korrektur1,kilde,side</quality>
+  <title>Den Forskudte</title>
+  <toctitle>Den Forskudte (Mary Ann Browne)</toctitle>
+  <firstline>Mit Haar før Tiden graaned alt</firstline>
+  <source pages="165-167"/>
+  <notes>
+    <note unknown-original-by="browne" />
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4542,14 +4542,14 @@ At evig Tanken Dig forfulgte:
 
 <text id="preetzmann2019082379">
 <head>
-    <title>Kom og hvil ved mit Bryst</title>
-    <toctitle>Kom og hvil ved mit Bryst (Thomas Moore)</toctitle>
-    <firstline>Kom og hvil ved mit Bryst, Du, min anskudte Hind!</firstline>
-    <notes>
-        <note>Gendigtning af anden halvdel af Thomas Moore: <xref type="translation" poem="moore2000082968"/>.</note>
-    </notes>
-    <source pages="168"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Kom og hvil ved mit Bryst</title>
+  <toctitle>Kom og hvil ved mit Bryst (Thomas Moore)</toctitle>
+  <firstline>Kom og hvil ved mit Bryst, Du, min anskudte Hind!</firstline>
+  <notes>
+    <note>Gendigtning af anden halvdel af Thomas Moore: <xref type="translation" poem="moore2000082968"/>.</note>
+  </notes>
+  <source pages="168"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4575,14 +4575,14 @@ For at frelse Dig eller at segne med Dig.
 
 <text id="preetzmann2019082380">
 <head>
-    <title>Barcarole</title>
-    <toctitle>Barcarole (Samme)</toctitle>
-    <firstline>O, kom, naar Solen skjuler sig</firstline>
-    <source pages="169-170"/>
-    <notes>
-        <note>Gendigtning af Thomas Moore: <xref type="translation" poem="moore2019090803"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Barcarole</title>
+  <toctitle>Barcarole (Samme)</toctitle>
+  <firstline>O, kom, naar Solen skjuler sig</firstline>
+  <source pages="169-170"/>
+  <notes>
+    <note>Gendigtning af Thomas Moore: <xref type="translation" poem="moore2019090803"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4619,14 +4619,14 @@ Hvor Baaden gynger sagtelig
 
 <text id="preetzmann2019082381">
 <head>
-    <title>Spaamanden</title>
-    <toctitle>Spaamanden (Samme)</toctitle>
-    <firstline>Mød mig blot iaften i Dalen, min Skat!</firstline>
-    <source pages="171-172"/>
-    <notes>
-        <note>Gendigtning af Thomas Moore: <xref type="translation" poem="moore2019090802"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Spaamanden</title>
+  <toctitle>Spaamanden (Samme)</toctitle>
+  <firstline>Mød mig blot iaften i Dalen, min Skat!</firstline>
+  <source pages="171-172"/>
+  <notes>
+    <note>Gendigtning af Thomas Moore: <xref type="translation" poem="moore2019090802"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4667,14 +4667,14 @@ Jeg i Skjæbnens Bog først inat faaer at see
 
 <text id="preetzmann2019082382">
 <head>
-    <title>Rynkerne</title>
-    <toctitle>Rynkerne (Samme)</toctitle>
-    <firstline>I dit Ansigt jeg Rynker opdaged</firstline>
-    <notes>
-        <note>Gendigtning af Thomas Moore: <xref type="translation" poem="moore2019090901"/>.</note>
-    </notes>
-    <source pages="173"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Rynkerne</title>
+  <toctitle>Rynkerne (Samme)</toctitle>
+  <firstline>I dit Ansigt jeg Rynker opdaged</firstline>
+  <notes>
+    <note>Gendigtning af Thomas Moore: <xref type="translation" poem="moore2019090901"/>.</note>
+  </notes>
+  <source pages="173"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4700,14 +4700,14 @@ I din Aftens synkende Straaler
 
 <text id="preetzmann2019082383">
 <head>
-    <title>Broen</title>
-    <toctitle>Broen (H. W. Longfellow)</toctitle>
-    <firstline>Jeg stod paa Broen ved Midnat</firstline>
-    <notes>
-        <note>Gendigtning af Henry Wadsworth Longfellow: <xref type="translation" poem="longfellow2019090101"/>.</note>
-    </notes>
-    <source pages="174-176"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Broen</title>
+  <toctitle>Broen (H. W. Longfellow)</toctitle>
+  <firstline>Jeg stod paa Broen ved Midnat</firstline>
+  <notes>
+    <note>Gendigtning af Henry Wadsworth Longfellow: <xref type="translation" poem="longfellow2019090101"/>.</note>
+  </notes>
+  <source pages="174-176"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4793,14 +4793,14 @@ Som den evige Kjærlighed hisset
 
 <text id="preetzmann2019082384">
 <head>
-    <title>Hyrdesang</title>
-    <toctitle>Hyrdesang (Robert Burns)</toctitle>
-    <firstline>Pige med den blonde Lok</firstline>
-    <source pages="177-178"/>
-    <notes>
-        <note>Gendigtning af Robert Burns: <xref type="translation" poem="burns2019090705"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Hyrdesang</title>
+  <toctitle>Hyrdesang (Robert Burns)</toctitle>
+  <firstline>Pige med den blonde Lok</firstline>
+  <source pages="177-178"/>
+  <notes>
+    <note>Gendigtning af Robert Burns: <xref type="translation" poem="burns2019090705"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4841,14 +4841,14 @@ Jeg trykker til mit Bryst min Skat
 
 <text id="preetzmann2019082385">
 <head>
-    <title>Livets Vinter</title>
-    <toctitle>Livets Vinter (Samme)</toctitle>
-    <firstline>Nys Skoven i sin Foraarsdragt</firstline>
-    <source pages="179"/>
-    <notes>
-        <note>Gendigtning af Robert Burns: <xref type="translation" poem="burns2019090706"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Livets Vinter</title>
+  <toctitle>Livets Vinter (Samme)</toctitle>
+  <firstline>Nys Skoven i sin Foraarsdragt</firstline>
+  <source pages="179"/>
+  <notes>
+    <note>Gendigtning af Robert Burns: <xref type="translation" poem="burns2019090706"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4877,14 +4877,14 @@ Hvi kommer, gyldne Ungdomstid!
 
 <text id="preetzmann2019082386">
 <head>
-    <title>Karen</title>
-    <toctitle>Karen (Alfred Tennyson)</toctitle>
-    <firstline>Fjernt paa en Avlsgaard boede Ole Knap</firstline>
-    <notes>
-        <note>Gendigtning af Alfred Lord Tennyson: <xref type="translation" poem="tennyson2019090901"/>.</note>
-    </notes>
-    <source pages="180-187"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Karen</title>
+  <toctitle>Karen (Alfred Tennyson)</toctitle>
+  <firstline>Fjernt paa en Avlsgaard boede Ole Knap</firstline>
+  <notes>
+    <note>Gendigtning af Alfred Lord Tennyson: <xref type="translation" poem="tennyson2019090901"/>.</note>
+  </notes>
+  <source pages="180-187"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5088,12 +5088,12 @@ Men Karen leved ugift til sin Død.
 
 <text id="preetzmann2019082387" skip-index="true">
 <head>
-    <title>Oplysninger om Forfatterne</title>
-    <notes>
-        <note>Amerikanske digtere er angivet med asterisk *.</note>
-    </notes>
-    <source pages="191-208"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Oplysninger om Forfatterne</title>
+  <notes>
+    <note>Amerikanske digtere er angivet med asterisk *.</note>
+  </notes>
+  <source pages="191-208"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <prose>

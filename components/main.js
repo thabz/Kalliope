@@ -1,15 +1,15 @@
 const Main = ({ children }) => {
   return (
-    <div>
+    <main>
       {children}
       <style jsx>{`
-        div {
+        main {
           max-width: 880px;
           margin: 0px auto;
           padding: 0 20px;
         }
       `}</style>
-    </div>
+    </main>
   );
 };
 

@@ -1,14 +1,16 @@
 import { useContext } from 'react';
 import * as Client from '../common/client.js';
 import LangContext from '../common/LangContext.js';
+import _ from '../common/translations.js';
 import { kalliopeCrumbs } from '../components/breadcrumbs.js';
-import * as Links from '../components/links';
+import * as Links from '../components/links.js';
 import { kalliopeMenu } from '../components/menu.js';
 import Note from '../components/note.js';
 import Page from '../components/page.js';
-import Picture from '../components/picture.js';
+import PageLead from '../components/pagelead.js';
 import SidebarPictures from '../components/sidebarpictures.js';
 import SidebarSplit from '../components/sidebarsplit.js';
+import Stack from '../components/stack.js';
 import SubHeading from '../components/subheading.js';
 import TextContent from '../components/textcontent.js';
 import TwoColumns from '../components/twocolumns.js';
@@ -24,20 +26,14 @@ const About = (props) => {
     return <ErrorPage error={error} lang={lang} message="Ukendt nøgleord" />;
   }
 
-  const pictures = keyword.pictures.map((p, i) => {
-    return (
-      <Picture
-        key={'pic' + i}
-        pictures={[p]}
-        contentLang={p.content_lang || 'da'}
-        showDropShadow={aboutItemId !== 'kalliope'}
-        clickToZoom={aboutItemId !== 'kalliope'}
-        lang={lang}
-      />
-    );
-  });
   const renderedPictures = (
-    <SidebarPictures key="pictures">{pictures}</SidebarPictures>
+    <SidebarPictures
+      key="pictures"
+      pictures={keyword.pictures}
+      showDropShadow={aboutItemId !== 'kalliope'}
+      clickToZoom={aboutItemId !== 'kalliope'}
+      lang={lang}
+    />
   );
   const renderedNotes = keyword.notes.map((note, i) => {
     return (
@@ -50,15 +46,13 @@ const About = (props) => {
       </Note>
     );
   });
-  let sidebar = [];
-  if (keyword.notes.length > 0 || keyword.pictures.length > 0) {
-    if (keyword.pictures.length > 0) {
-      sidebar = sidebar.concat(renderedPictures);
-    }
-    if (keyword.notes.length > 0) {
-      sidebar = sidebar.concat(renderedNotes);
-    }
-  }
+  const sidebar =
+    keyword.notes.length > 0 || keyword.pictures.length > 0 ? (
+      <Stack spacing="20px">
+        {keyword.pictures.length > 0 ? renderedPictures : null}
+        {renderedNotes}
+      </Stack>
+    ) : null;
   const body = (
     <TextContent
       contentHtml={keyword.content_html}
@@ -68,14 +62,14 @@ const About = (props) => {
   );
   const crumbs = [
     ...kalliopeCrumbs(lang),
-    { url: Links.aboutURL(lang, 'kalliope'), title: 'Om' },
+    { url: Links.aboutURL(lang, 'kalliope'), title: _('Om', lang) },
     { title: keyword.title },
   ];
   let author = null;
   if (keyword.author != null) {
     author = (
       <div style={{ fontSize: '16px', marginBottom: '40px' }}>
-        Af {keyword.author}
+        {_('Af', lang)} {keyword.author}
       </div>
     );
   }
@@ -85,6 +79,12 @@ const About = (props) => {
     pageBody = (
       <div className="thanks-list">
         <SubHeading>{keyword.title}</SubHeading>
+        <PageLead>
+          {_(
+            'Kalliope er gennem årene blevet til med hjælp fra mange læsere og bidragydere. Her takker vi dem, der har sendt digte, billeder, oplysninger og rettelser eller på anden måde har hjulpet samlingen.',
+            lang
+          )}
+        </PageLead>
         <TwoColumns>{body}</TwoColumns>
         <style jsx>{`
           .thanks-list {

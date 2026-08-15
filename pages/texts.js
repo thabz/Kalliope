@@ -7,6 +7,7 @@ import { poetCrumbsWithTitle } from '../components/breadcrumbs.js';
 import * as Links from '../components/links.js';
 import { poetMenu } from '../components/menu.js';
 import Page from '../components/page.js';
+import PageLead from '../components/pagelead.js';
 import { poetNameString } from '../components/poetname-helpers.js';
 import PoetName from '../components/poetname.js';
 import SectionedList from '../components/sectionedlist.js';
@@ -14,25 +15,44 @@ import ErrorPage from './error.js';
 
 const groupLines = (lines, type, contentLang) => {
   let groups = new Map();
-  lines.forEach((linePair) => {
-    let line, alternative;
-    if (type === 'titles') {
-      line = linePair.title;
-      alternative = linePair.firstline;
-    } else {
-      line = linePair.firstline;
-      alternative = linePair.title;
-    }
-    if (line == null || line.length == 0) {
-      return;
-    }
-    line = line.replace(',', '').replace('!', '');
-    linePair['sortBy'] = line + ' [' + alternative + '[' + linePair.id;
-    let letter = Sorting.lineSectionTitleForLang(line, contentLang);
-    let array = groups.get(letter) || [];
-    array.push(linePair);
-    groups.set(letter, array);
-  });
+  const lineIndexField = type === 'titles' ? 'index_title' : 'index_firstline';
+  lines
+    .filter((linePair) => linePair[lineIndexField] !== false)
+    .forEach((linePair) => {
+      let line, alternative;
+      if (type === 'titles') {
+        line = linePair.title;
+        alternative = linePair.firstline;
+      } else {
+        line = linePair.firstline;
+        alternative = linePair.title;
+      }
+      if (line == null || line.length == 0) {
+        return;
+      }
+      line = line.replace(',', '').replace('!', '');
+      linePair['sortBy'] = line + ' [' + alternative + '[' + linePair.id;
+      let letter = Sorting.lineSectionTitleForLang(line, contentLang);
+      if (line.indexOf('Aa') === 0) {
+        letter = 'Å';
+      }
+      if (line.indexOf('Ö') === 0) {
+        letter = 'Ø';
+      }
+      if (line.indexOf('È') === 0) {
+        letter = 'E';
+      }
+      // Oldgræsk. Nedenstående dog virker ikke lige her, men
+      // er OK i Node-terminalen.
+      letter = letter
+        .normalize('NFD') // splitter prækomponerede tegn
+        .replace(/[\u0300-\u036f]/g, '') // fjern kombinerende diakritika
+        .normalize('NFC');
+      letter = letter.toUpperCase();
+      let array = groups.get(letter) || [];
+      array.push(linePair);
+      groups.set(letter, array);
+    });
   let sortedGroups = [];
   groups.forEach((group, key) => {
     sortedGroups.push({
@@ -88,6 +108,24 @@ const TextsPage = (props) => {
 
   const lastCrumbTitle =
     type === 'titles' ? _('Titler', lang) : _('Førstelinjer', lang);
+  const lead =
+    type === 'titles' ? (
+      <PageLead>
+        {_(
+          'Alle digte af {poetName} på Kalliope ordnet alfabetisk efter titel.',
+          lang,
+          { poetName: poetNameString(poet, false, false, lang) }
+        )}
+      </PageLead>
+    ) : (
+      <PageLead>
+        {_(
+          'Alle digte af {poetName} på Kalliope ordnet alfabetisk efter tekstens første linje. Listen kan bruges til at finde et digt, når titlen er ukendt.',
+          lang,
+          { poetName: poetNameString(poet, false, false, lang) }
+        )}
+      </PageLead>
+    );
 
   return (
     <Page
@@ -100,6 +138,7 @@ const TextsPage = (props) => {
       menuItems={poetMenu(poet)}
       poet={poet}
       selectedMenuItem={type}>
+      {lead}
       {renderedGroups}
     </Page>
   );

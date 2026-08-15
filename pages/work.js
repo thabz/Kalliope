@@ -7,16 +7,16 @@ import * as Links from '../components/links.js';
 import { poetMenu } from '../components/menu.js';
 import Note from '../components/note.js';
 import Page from '../components/page.js';
-import Picture from '../components/picture.js';
 import { poetNameString } from '../components/poetname-helpers.js';
 import PoetName from '../components/poetname.js';
 import SidebarPictures from '../components/sidebarpictures.js';
 import SidebarSplit from '../components/sidebarsplit.js';
+import Stack from '../components/stack.js';
 import SubHeading from '../components/subheading.js';
 import TextContent from '../components/textcontent.js';
 import TOC from '../components/toc.js';
 import WorkName, { workTitleString } from '../components/workname.js';
-import WorksList from '../components/workslist';
+import WorksList from '../components/workslist.js';
 import WorkSubtitles from '../components/worksubtitles.js';
 import ErrorPage from './error.js';
 
@@ -51,17 +51,7 @@ const WorkPage = (props) => {
     );
   });
 
-  const workPictures = pictures.map((p, i) => {
-    return (
-      <Picture
-        pictures={[p]}
-        key={'picture' + i}
-        contentLang={p.content_lang || 'da'}
-        lang={lang}
-      />
-    );
-  });
-  const renderedPictures = <SidebarPictures>{workPictures}</SidebarPictures>;
+  const renderedPictures = <SidebarPictures pictures={pictures} lang={lang} />;
   const completedStatus =
     work.status === 'incomplete' && work.id !== 'andre' ? (
       <div>
@@ -72,7 +62,7 @@ const WorkPage = (props) => {
   const modifiedDate =
     modified != null ? (
       <div className="modified">
-        {_('Sidst ændret', lang)} {formattedDate(modified)}.
+        {_('Sidst ændret', lang)} {formattedDate(modified, lang)}.
       </div>
     ) : null;
   let sidebar = null;
@@ -84,10 +74,12 @@ const WorkPage = (props) => {
   ) {
     sidebar = (
       <div>
-        {renderedPictures}
-        {renderedNotes}
-        {completedStatus}
-        {modifiedDate}
+        <Stack spacing="20px">
+          {renderedPictures}
+          {renderedNotes}
+          {completedStatus}
+          {modifiedDate}
+        </Stack>
       </div>
     );
   }
@@ -114,23 +106,28 @@ const WorkPage = (props) => {
   if (prev != null) {
     paging.prev = {
       url: Links.workURL(lang, poet.id, prev.id),
-      title: workTitleString(prev),
+      title: workTitleString(prev, lang),
     };
   }
   if (next != null) {
     paging.next = {
       url: Links.workURL(lang, poet.id, next.id),
-      title: workTitleString(next),
+      title: workTitleString(next, lang),
     };
   }
 
   return (
     <Page
-      headTitle={`${workTitleString(work)} - ${poetNameString(
-        poet
+      headTitle={`${workTitleString(work, lang)} - ${poetNameString(
+        poet,
+        false,
+        false,
+        lang
       )} - Kalliope`}
       ogTitle={
-        poetNameString(poet, false, false) + ': ' + workTitleString(work)
+        poetNameString(poet, false, false, lang) +
+        ': ' +
+        workTitleString(work, lang)
       }
       ogImage={OpenGraph.poetImage(poet)}
       ogDescription={ogDescription}
@@ -156,7 +153,6 @@ const WorkPage = (props) => {
             .modified {
               color: #777;
               font-size: 0.9em;
-              margin-top: 30px;
             }
           `}</style>
         </div>

@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="rubai" author="larsent" status="complete" type="poetry">
 <workhead>
-   <title>Rubaiyat</title>
-   <year>1920</year>
-   <notes>
-      <note>Tilføjet af Henrik Nielsen.</note>
-   </notes>
-   <quality>korrektur1,korrektur2</quality>
+  <title>Rubaiyat</title>
+  <year>1920</year>
+  <notes>
+    <note>Tilføjet af Henrik Nielsen.</note>
+  </notes>
+  <quality>korrektur1,korrektur2</quality>
 </workhead>
 <workbody>
 
 <text id="larsent2001091201" skip-index="true">
 <head>
-   <title>Om Omar</title>
-   <toctitle>Om Omar</toctitle>
-   <indextitle>Om Omar</indextitle>
-   <quality>korrektur1,korrektur2</quality>
+  <title>Om Omar</title>
+  <toctitle>Om Omar</toctitle>
+  <indextitle>Om Omar</indextitle>
+  <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
 <prose>
@@ -32,14 +31,14 @@
 
 <text id="larsent2001091202" skip-index="true">
 <head>
-   <title>Om Fitzgerald</title>
-   <toctitle>Om Fitzgerald</toctitle>
-   <indextitle>Om Fitzgerald</indextitle>
-   <quality>korrektur1,korrektur2</quality>
-   <pictures>
-       <picture ref="kunst/rivett-carnac-edward-fitzgerald-oval"/>
-       <picture src="fitzgerald-title-page.jpg">Titelbladet til Fitzgeralds amerikanske førsteudgave<i>The Rubáiyát / of / Omar Kháyyam</i>, The Astronomer-Poet of Persia. / Rendered into English Verse / First American. / From the third London Editon / Boston: / Houghton, Osgood and Company. / The Riverside Press, Cambridge. / 1878.</picture>
-   </pictures>
+  <title>Om Fitzgerald</title>
+  <toctitle>Om Fitzgerald</toctitle>
+  <indextitle>Om Fitzgerald</indextitle>
+  <quality>korrektur1,korrektur2</quality>
+  <pictures>
+    <picture artwork="kunst/rivett-carnac-edward-fitzgerald-oval"/>
+    <picture src="fitzgerald-title-page.jpg">Titelbladet til Fitzgeralds amerikanske førsteudgave<i>The Rubáiyát / of / Omar Kháyyam</i>, The Astronomer-Poet of Persia. / Rendered into English Verse / First American. / From the third London Editon / Boston: / Houghton, Osgood and Company. / The Riverside Press, Cambridge. / 1878.</picture>
+  </pictures>
 </head>
 <body>
 <prose>
@@ -54,11 +53,11 @@
 
 <text id="larsent2001091203" skip-index="true">
 <head>
-   <title>Om Rubáiyát</title>
-   <toctitle>Om Rubáiyát</toctitle>
-   <indextitle>Om Rubáiyát</indextitle>
-   <keywords>khayyam</keywords>
-   <quality>korrektur1,korrektur2</quality>
+  <title>Om Rubáiyát</title>
+  <toctitle>Om Rubáiyát</toctitle>
+  <indextitle>Om Rubáiyát</indextitle>
+  <keywords>khayyam</keywords>
+  <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
 <prose>
@@ -106,12 +105,12 @@ THØGER LARSEN.
 
 <text id="larsent2001091204">
 <head>
-   <title>Rubáiyát af Omar Khayyam</title>
-   <toctitle>Rubáiyát af Omar Khayyam</toctitle>
-   <indextitle>Rubáiyát af Omar Khayyam</indextitle>
-   <firstline>Vaagn op! En Morgen slyngede paany</firstline>
-   <keywords>khayyam</keywords>
-   <quality>korrektur1,korrektur2</quality>
+  <title>Rubáiyát af Omar Khayyam</title>
+  <toctitle>Rubáiyát af Omar Khayyam</toctitle>
+  <indextitle>Rubáiyát af Omar Khayyam</indextitle>
+  <firstline>Vaagn op! En Morgen slyngede paany</firstline>
+  <keywords>khayyam</keywords>
+  <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -137,7 +136,7 @@ vi vaagner aldrig mer ved Morgen op.«
 Nu vækker Nytaar gammel Drift af Blund -
 den tankefulde fandt en ensom Stund,
 mens Moses' »hvide Haand« af Vaarens Gren
-sprang ud - og Jesus aanded op af Grund.<note><i>Nytaaret</i> begynder i Persien ved Foraarsjævndøgn.<br/><i>Moses' hvide Haand</i> (<xref bibel="bibel2mose04,6"/>) betegner Blomstring. Perserne mente, Jesu helbredende Magt boede i hans Aande.</note>
+sprang ud - og Jesus aanded op af Grund.<note><i>Nytaaret</i> begynder i Persien ved Foraarsjævndøgn.<br/><i>Moses' hvide Haand</i> (<xref bible="bibel2mose04,6"/>) betegner Blomstring. Perserne mente, Jesu helbredende Magt boede i hans Aande.</note>
 
 <nonum>5 (A 5, B 5).</nonum>
 Irám er med dens Roser sunken ned,

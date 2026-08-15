@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="stenhammar" country="se" lang="sv" type="poet">
+  <name>
+    <firstname>Johan</firstname>
+    <lastname>Stenhammar</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1769-06-17</date>
+    </born>
+    <dead>
+      <date>1799-01-31</date>
+    </dead>
+  </period>
+  <literary-periods>se-frihedstid-og-gustaviansk-tid</literary-periods>
+  <identifiers>
+    <wikidata>Q655653</wikidata>
+    <viaf>59350331</viaf>
+  </identifiers>
+</person>

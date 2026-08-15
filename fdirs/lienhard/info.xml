@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="lienhard" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Fritz</firstname>
+    <lastname>Lienhard</lastname>
+    <fullname>Friedrich Lienhard</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1865-10-04</date>
+    </born>
+    <dead>
+      <date>1929-04-30</date>
+    </dead>
+  </period>
+  <literary-periods>de-fin-de-siecle,de-ekspressionisme-og-ny-saglighed</literary-periods>
+  <identifiers>
+    <wikidata>Q91729</wikidata>
+    <wikipedia-en>Friedrich Lienhard</wikipedia-en>
+    <wikipedia-fr>Friedrich Lienhard</wikipedia-fr>
+    <wikipedia-de>Friedrich Lienhard</wikipedia-de>
+    <viaf>19691165</viaf>
+  </identifiers>
+</person>

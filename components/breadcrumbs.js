@@ -6,9 +6,10 @@ import * as Strings from '../common/strings.js';
 import _ from '../common/translations.js';
 import { textLinkTitleString } from '../components/textname.js';
 import * as Links from './links.js';
-import PoetName from './poetname';
+import PoetName from './poetname.js';
 import TextContent from './textcontent.js';
-import WorkName from './workname';
+import Tooltip from './tooltip.js';
+import WorkName from './workname.js';
 
 export const Paging = (props) => {
   const { prev, next } = props;
@@ -50,9 +51,11 @@ export const Paging = (props) => {
     const style = { marginLeft: '16px', fontSize: '18px' };
     return (
       <div style={style} key={i}>
-        <Link href={url} title={title}>
-          {arrow}
-        </Link>
+        <Tooltip text={title} placement="below">
+          <Link href={url} aria-label={title} style={{ textDecoration: 'none' }}>
+            {arrow}
+          </Link>
+        </Tooltip>
       </div>
     );
   });
@@ -202,6 +205,15 @@ const Breadcrumbs = (props) => {
         nav {
           display: flex;
           flex-wrap: wrap;
+          line-height: 19px;
+        }
+        nav :global(a) {
+          text-decoration: none;
+        }
+        nav:empty::before {
+          content: 'Kalliope';
+          visibility: hidden;
+          padding: 4px 0;
         }
         nav > :global(div) {
           flex-shrink: 1;
