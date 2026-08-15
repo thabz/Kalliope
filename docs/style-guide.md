@@ -26,6 +26,8 @@ Læs den relevante specialdokumentation før ændringer på området:
   facsimilelinks til Det Kgl. Bibliotek
 - `docs/sqlite-index.md` ved forespørgsler på det genererede korpusindeks,
   ændringer i SQLite-buildet eller analyseværktøjer
+- `docs/corpus-dataset.md` ved ændringer i det offentlige, versionsmærkede
+  korpusdatasæt eller dets discovery-endpoint
 
 ## GitHub
 
@@ -77,6 +79,8 @@ Læs den relevante specialdokumentation før ændringer på området:
   samme sprog.
 - Brug eksisterende attributter og formater; ukendte `<picture>`-attributter er build-fejl.
 - Alle tekst- og XML-filer skal være UTF-8 encoded. Konvertér gamle Latin-1/ISO-8859-1-filer i stedet for at videreføre dem.
+- Formatér `info.xml`, `portraits.xml` og `artwork.xml` med
+  `node tools/format-metadata-xml.js <fil>`; testpakken håndhæver det kanoniske output.
 - Følg `docs/xml-info-format.md`, `docs/xml-portraits-format.md` eller
   `docs/xml-work-format.md` for det konkrete filformat.
 - Følg `docs/kalliope-xml-design-v1.1.md` ved ændringer i den overordnede

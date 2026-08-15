@@ -64,6 +64,7 @@ const Heading = (props) => {
           line-height: 56px;
           font-size: 56px;
           font-weight: 100;
+          overflow-wrap: anywhere;
           margin-left: -2px;
           transition: font-size 0.2s;
         }

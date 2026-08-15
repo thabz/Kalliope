@@ -44,4 +44,43 @@ describe('Check workfiles', () => {
 
     expect(issues.filter((issue) => issue.rule === 'm-ellipsis')).toHaveLength(1);
   });
+
+  it.each([',', ';', ':'])('reports a firstline ending with %s', punctuation => {
+    const issues = findPoemLineFindingsInText({
+      file: 'fdirs/test/firstline.xml',
+      data: `<text id="firstline"><firstline>En første linje${punctuation}</firstline></text>`,
+      lang: 'da',
+      shouldUseModernFrenchPunctuationSpacing: false,
+    });
+
+    expect(
+      issues.filter(issue => issue.rule === 'firstline-trailing-punctuation')
+    ).toHaveLength(1);
+  });
+
+  it('reports a firstline ending with a period', () => {
+    const issues = findPoemLineFindingsInText({
+      file: 'fdirs/test/firstline.xml',
+      data: '<text id="firstline"><firstline>En første linje.</firstline></text>',
+      lang: 'da',
+      shouldUseModernFrenchPunctuationSpacing: false,
+    });
+
+    expect(
+      issues.filter(issue => issue.rule === 'firstline-trailing-punctuation')
+    ).toHaveLength(1);
+  });
+
+  it('allows a firstline containing spaced dots', () => {
+    const issues = findPoemLineFindingsInText({
+      file: 'fdirs/test/firstline.xml',
+      data: '<text id="firstline"><firstline>Kløften lukker sig, og Stien slipper . . .</firstline></text>',
+      lang: 'da',
+      shouldUseModernFrenchPunctuationSpacing: false,
+    });
+
+    expect(
+      issues.filter(issue => issue.rule === 'firstline-trailing-punctuation')
+    ).toHaveLength(0);
+  });
 });
