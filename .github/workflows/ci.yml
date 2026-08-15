@@ -42,6 +42,9 @@ jobs:
           HEAD_SHA: ${{ github.sha }}
         run: npm run validate-new-text-ids -- "$BASE_SHA" "$HEAD_SHA"
 
+      - name: Check generated and synced facsimiles
+        run: npm run check-facsimiles
+
       - name: Run tests (CI)
         run: npm run test-ci
         env:

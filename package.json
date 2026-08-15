@@ -30,6 +30,7 @@
     "build-static-force-reload": "node tools/build-static.js --force-reload",
     "build-sqlite": "node tools/build-static.js --build-sqlite",
     "build-facsimiles": "node tools/build-facsimiles.js",
+    "check-facsimiles": "node tools/check-facsimiles.js",
     "check-text-quality": "node tools/check-text-quality.js",
     "candidate-register": "node tools/candidate-register.js",
     "collect-wikidata": "node tools/data/indsamling/wikidata/collect.mjs",
