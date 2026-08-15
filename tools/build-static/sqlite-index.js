@@ -150,7 +150,7 @@ CREATE INDEX idx_event_poet_id ON event(poet_id);
 `;
 
 const SQL_CACHE_FILE = path.resolve('caches/sqlite-index-build.sql');
-const SQLITE_PATH = path.resolve('public/api/kalliope.sqlite');
+const SQLITE_PATH = path.resolve('caches/kalliope.sqlite');
 
 const toSqlValue = (value) => {
   if (value == null) {

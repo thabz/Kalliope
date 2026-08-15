@@ -1427,9 +1427,11 @@ lukkede, ikke-faldende intervaller. Forkortede slutpunkter som `140-47`, åbne
 intervaller og numerisk faldende intervaller er ugyldige og skal repareres i
 kildedata.
 
-I dokumentrækkefølge skal arabiske `pb/@n` og numeriske `pb/@facs`-filnavne være
-ikke-faldende gennem værket. Spring er tilladt; romertal i `n` ignoreres af den
-maskinelle rækkefølgekontrol. `ignore-tests="pagebreak-count"` på en tekst eller
+Inden for hver tekstpost skal arabiske `pb/@n` være ikke-faldende; de kan
+begynde forfra ved en ny tekstpost med selvstændig paginering. Numeriske
+`pb/@facs`-filnavne skal være ikke-faldende gennem hele værket. Spring er
+tilladt; romertal i `n` ignoreres af den maskinelle rækkefølgekontrol.
+`ignore-tests="pagebreak-count"` på en tekst eller
 undtagelsesvis hele værket springer kun den aritmetiske sammenligning mellem
 sideinterval og antal `<pb>` over. Den gør ikke et ulovligt interval gyldigt og
 fravælger ikke de øvrige markørkrav.

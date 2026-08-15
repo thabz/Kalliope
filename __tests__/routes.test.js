@@ -29,6 +29,10 @@ describe('routes', () => {
       page: '/poets-looks',
       query: { lang: 'da', country: 'se', groupBy: 'looks' },
     });
+    expect(matchRoute('/en/poets/dk/period')).toEqual({
+      page: '/poets',
+      query: { lang: 'en', country: 'dk', groupBy: 'period' },
+    });
   });
 
   it('matches museum listing routes', () => {

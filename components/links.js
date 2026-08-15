@@ -12,7 +12,7 @@ export const allTextsURL = (lang, country, type, letter = 'A') => {
 
 export const poetsURL = (
   lang = 'da',
-  groupBy = 'name', // 'name' | 'year' | 'looks'
+  groupBy = 'name', // 'name' | 'year' | 'period' | 'looks'
   country = 'dk'
 ) => {
   return `/${lang}/poets/${country}/${groupBy}`;

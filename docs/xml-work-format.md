@@ -211,9 +211,12 @@ Attributter paa `<text>`:
 
 `<head>` paa en tekst kan indeholde:
 
-- `<title>`: tekstens titel.
-- `<firstline>`: foerstelinje. Maa ikke indeholde markup.
+- `<title>`: tekstens titel. `force-index="true"` viser en ikke-primaer
+  variant i titelindekset.
+- `<firstline>`: foerstelinje. Maa ikke indeholde markup. `force-index="true"`
+  viser en ikke-primaer variant i foerstelinjeindekset.
 - `<indextitle>`: titel brugt i titelindekset, hvis den skal afvige.
+  `force-index="true"` virker som paa `<title>`.
 - `<toctitle>`: titel i vaerkets indholdsfortegnelse.
 - `<linktitle>`: titel i links.
 - `<subtitle>`: undertitel. Kan indeholde flere `<line>`.
@@ -399,10 +402,11 @@ for at gentage tekstens `<source pages="...">`. Derfor kan et værk med
 `<pagebreaks/>` er `facs` redaktionelt obligatorisk på hvert `<pb>`. Schemaet
 tillader fortsat ældre `<pb>` uden `facs` af hensyn til bagudkompatibilitet.
 
-I dokumentrækkefølge må de arabiske værdier i `pb/@n` og de numeriske
-facsimilefilnavne i `pb/@facs` ikke falde gennem værket. Spring er gyldige, fordi
-sideskift mellem to tekstposter ikke får en markør. Romertalsværdier i `n`
-indgår ikke i den maskinelle rækkefølgekontrol.
+Inden for hver tekstpost må de arabiske værdier i `pb/@n` ikke falde. De kan
+begynde forfra ved en ny tekstpost, når kilden har selvstændig paginering. De
+numeriske facsimilefilnavne i `pb/@facs` må ikke falde gennem hele værket.
+Spring er gyldige, fordi sideskift mellem to tekstposter ikke får en markør.
+Romertalsværdier i `n` indgår ikke i den maskinelle rækkefølgekontrol.
 
 Hvis et lovligt sideinterval undtagelsesvis ikke kan omsættes til
 `slutside - startside` interne markører, kan den konkrete tekst bruge
@@ -610,7 +614,7 @@ Links:
 <xref type="translation" poem="heine..."/>
 <xref keyword="romantikken"/>
 <xref dict="..."/>
-<xref bibel="bibeljohn03,16"/>
+<xref bible="bibeljohn03,16"/>
 ```
 
 `type="translation"` paa digtlinks bruges til oversaettelsesrelationer.

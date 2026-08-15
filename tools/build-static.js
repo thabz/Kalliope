@@ -121,6 +121,7 @@ import {
   worksForPoet,
 } from './build-static/anthologies.js';
 import { updateSqliteIndex } from './build-static/sqlite-index.js';
+import { buildCorpusDataset } from './build-static/corpus-dataset.js';
 import { findUnlistedWorkFiles } from './build-static/workfiles.js';
 
 const envFlag = (name) => {
@@ -131,6 +132,7 @@ const envFlag = (name) => {
 
 const skipImageThumbnails = envFlag('KALLIOPE_SKIP_IMAGE_THUMBNAILS');
 const skipElasticsearch = envFlag('KALLIOPE_SKIP_ELASTICSEARCH');
+const buildSqlite = process.argv.includes('--build-sqlite');
 
 let collected = {
   texts: new Map(),
@@ -1113,6 +1115,9 @@ const works_first_pass = (collected) => {
         const title = extractTitle(head, 'title');
         const linktitle = extractTitle(head, 'linktitle');
         const indextitle = extractTitle(head, 'indextitle');
+        const titleElement = getChildByTagName(head, 'title');
+        const indexTitleElement = getChildByTagName(head, 'indextitle');
+        const firstlineElement = getChildByTagName(head, 'firstline');
         const aliases = parseAliases(safeGetAttr(part, 'aliases'));
         const textDates = extractDates(head);
         const textAuthorId = resolveAuthorId(part, poetId);
@@ -1151,6 +1156,12 @@ const works_first_pass = (collected) => {
           hasPoetry: getElementsByTagNames(part, ['poetry']).length > 0,
           hasProse: getElementsByTagNames(part, ['prose']).length > 0,
           skipIndex: safeGetAttr(part, 'skip-index') != null,
+          forceTitleIndex:
+            safeGetAttr(titleElement, 'force-index') != null ||
+            safeGetAttr(indexTitleElement, 'force-index') != null,
+          forceFirstlineIndex:
+            safeGetAttr(firstlineElement, 'force-index') != null,
+          dates: textDates,
           sourceOrder,
         };
         if (anthologyText) {
@@ -1538,7 +1549,10 @@ const main = async () => {
   await b('build_redirects_json', build_redirects_json, collected);
   await b('build_sitemap_xml', build_sitemap_xml, collected);
   await b('build_anniversaries_ical', build_anniversaries_ical, collected);
-  await b('update_sqlite_index', updateSqliteIndex, collected);
+  await b('build_corpus_dataset', buildCorpusDataset, collected);
+  if (buildSqlite) {
+    await b('update_sqlite_index', updateSqliteIndex, collected);
+  }
   refreshFilesModifiedCache();
   if (skipImageThumbnails) {
     console.log('Skipping image thumbnail build.');
