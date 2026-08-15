@@ -129,9 +129,10 @@ facsimilefil og trykt sidetal skal hentes fra sideinventaret og må ikke antages
 at være ens.
 
 Skriv `source/@pages` med fulde, lukkede og ikke-faldende intervaller, fx
-`102-108` og ikke `102-08`. Kontrollér desuden, at arabiske `pb/@n` og numeriske
-`pb/@facs`-filnavne aldrig falder i dokumentrækkefølge; spring mellem markører
-er tilladt.
+`102-108` og ikke `102-08`. Kontrollér desuden, at arabiske `pb/@n` aldrig
+falder inden for den enkelte tekstpost; ved selvstændig paginering kan de
+begynde forfra i næste tekstpost. Numeriske `pb/@facs`-filnavne må aldrig falde
+i dokumentrækkefølge. Spring mellem markører er tilladt.
 
 Når alle inkluderede tekstkroppe er kontrolleret, skal `<workhead>` indeholde
 `<pagebreaks/>`. Er alle tekster på én side, findes der ingen `<pb>`, men

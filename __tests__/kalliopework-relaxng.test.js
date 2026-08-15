@@ -39,6 +39,37 @@ describe('kalliopework RELAX NG schema', () => {
     }).not.toThrow();
   });
 
+  it('accepts bible references but rejects the obsolete bibel attribute', () => {
+    const validXml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Digte</title><year>1900</year></workhead>
+        <workbody>
+          <text id="digter1900a">
+            <head><firstline>Første linje</firstline></head>
+            <body><poetry>Første linje<note><xref bible="bibeljohannes03,16"/></note></poetry></body>
+          </text>
+        </workbody>
+      </kalliopework>
+    `;
+    const obsoleteXml = validXml.replace('bible=', 'bibel=');
+
+    expect(() => {
+      execFileSync(
+        'xmllint',
+        ['--noout', '--relaxng', 'schemas/kalliopework.rng', '-'],
+        { input: validXml, encoding: 'utf8', stdio: ['pipe', 'pipe', 'pipe'] }
+      );
+    }).not.toThrow();
+
+    expect(() => {
+      execFileSync(
+        'xmllint',
+        ['--noout', '--relaxng', 'schemas/kalliopework.rng', '-'],
+        { input: obsoleteXml, encoding: 'utf8', stdio: ['pipe', 'pipe', 'pipe'] }
+      );
+    }).toThrow();
+  });
+
   it('validates all tracked work files', () => {
     const files = kalliopeWorkFiles();
 
