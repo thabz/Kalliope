@@ -181,7 +181,7 @@ const matchWorkAuthors = (works, kalliope) => works.map(work => ({
   }),
 }));
 
-const wikidataQuery = `SELECT ?person ?personLabel ?alias ?birth ?death ?language ?dflId ?viaf WHERE {
+const wikidataQuery = `SELECT ?person ?personLabel ?alias ?birth ?death ?language ?dflId ?viaf ?gnd WHERE {
   ?person wdt:P31 wd:Q5;
     wdt:P106/wdt:P279* wd:Q49757.
   OPTIONAL { ?person wdt:P1412 ?language. }
@@ -189,12 +189,17 @@ const wikidataQuery = `SELECT ?person ?personLabel ?alias ?birth ?death ?languag
   OPTIONAL { ?person wdt:P570 ?death. }
   OPTIONAL { ?person wdt:P12386 ?dflId. }
   OPTIONAL { ?person wdt:P214 ?viaf. }
+  OPTIONAL { ?person wdt:P227 ?gnd. }
   OPTIONAL { ?person skos:altLabel ?alias. FILTER(LANG(?alias) = "da") }
   FILTER(!BOUND(?language) || ?language = wd:Q9035)
   SERVICE wikibase:label { bd:serviceParam wikibase:language "da,en". }
 } LIMIT 500`;
 
-const parseWikidata = json => (json.results?.bindings ?? []).map(binding => {
+const parseWikidata = json => {
+  const bindings = Array.isArray(json?.results?.bindings)
+    ? json.results.bindings
+    : json == null || typeof json !== 'object' || json.person == null ? [] : [json];
+  return bindings.map(binding => {
   const preferred = binding.personLabel?.value ?? '';
   const sourceId = binding.person.value.split('/').pop();
   return {
@@ -203,10 +208,11 @@ const parseWikidata = json => (json.results?.bindings ?? []).map(binding => {
     normalizedName: normalizeName(preferred),
     birthDate: binding.birth?.value?.slice(0, 10) ?? null, deathDate: binding.death?.value?.slice(0, 10) ?? null,
     birthYear: yearFromDate(binding.birth?.value), deathYear: yearFromDate(binding.death?.value),
-    language: 'da', country: null, identifiers: { wikidata: sourceId, ...(binding.dflId?.value == null ? {} : { 'danskforfatterleksikon-dk': binding.dflId.value }), ...(binding.viaf?.value == null ? {} : { viaf: binding.viaf.value }) }, works: [],
+    language: 'da', country: null, identifiers: { wikidata: sourceId, ...(binding.dflId?.value == null ? {} : { 'danskforfatterleksikon-dk': binding.dflId.value }), ...(binding.viaf?.value == null ? {} : { viaf: binding.viaf.value }), ...(binding.gnd?.value == null ? {} : { gnd: binding.gnd.value }) }, works: [],
     evidence: { poetry: true, language: true, note: 'occupation poet or subclass' },
   };
-});
+  });
+};
 
 const matchRecord = (record, kalliope) => {
   const byExternalId = kalliope.filter(candidate => Object.entries(record.identifiers ?? {}).some(([key, value]) => value != null && candidate.identifiers[key] === value));

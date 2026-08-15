@@ -24,7 +24,7 @@ til automatisk identitetssammenlægning.
 ## Felter og problemer
 
 Observationerne indeholder Q-ID, URL, rå SPARQL-bindinger, labels/aliaser,
-fødsels- og dødsdata, occupation-/instance-/værkclaims samt VIAF- og DFL-id’er,
+fødsels- og dødsdata, occupation-/instance-/værkclaims samt VIAF-, GND- og DFL-id’er,
 når de findes. Rå og normaliserede værdier er separate. SPARQL-svaret indeholder
 ikke qualifiers og references; det er dokumenteret som en begrænsning og kræver
 en eksplicit EntityData-berigelse i en senere snapshot-version.

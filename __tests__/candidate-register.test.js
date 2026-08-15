@@ -1,4 +1,4 @@
-import { extractDflTitleUrls, matchRecord, normalizeName, parseDfl, parseDflTitles, yearFromDate } from '../tools/candidate-register.js';
+import { extractDflTitleUrls, matchRecord, normalizeName, parseDfl, parseDflTitles, parseWikidata, yearFromDate } from '../tools/candidate-register.js';
 
 describe('candidate register normalization', () => {
   it('normalizes punctuation, whitespace and composed characters without changing source values', () => {
@@ -21,6 +21,17 @@ describe('candidate register normalization', () => {
       'https://danskforfatterleksikon.dk/1850/sk1850tita.htm',
       'https://danskforfatterleksikon.dk/1850/sk1850titb.htm',
     ]);
+  });
+
+  it('parses GND from wikidata query results', () => {
+    const records = parseWikidata({
+      personLabel: { value: 'Niels Bohr' },
+      person: { value: 'https://www.wikidata.org/entity/Q1390' },
+      gnd: { value: '118550173' },
+      birth: { value: '1885-10-07' },
+      death: { value: '1962-11-18' },
+    });
+    expect(records[0]).toMatchObject({ identifiers: { wikidata: 'Q1390', gnd: '118550173' } });
   });
 
   it('extracts Danish poetry works and author provenance from a DFL title page', () => {

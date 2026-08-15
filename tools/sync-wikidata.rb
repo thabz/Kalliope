@@ -85,15 +85,24 @@ def addIdentifierNode(externalIds, pKey, tag, doc, new_identifiers)
   end
 end
 
-def buildIdentifiersXml(poetId, wikidataId, doc)
+def buildIdentifiersXml(poetId, wikidataId, doc, existingIdentifiersNode = nil)
   puts "Building identifiers for #{poetId} with wikidataId #{wikidataId}"
   entity = fetchWikidataEntity(wikidataId)
   externalIds = externalIds(entity)
   wikipediaTitles = wikipediaTitles(entity)
+  existingGnd = existingIdentifiersNode&.xpath('./gnd')&.first&.content&.strip
+  existingGnd = nil if existingGnd == ''
   # Check our id
   if not externalIds['P12404'].nil? and externalIds['P12404'] != poetId
     puts "#{poetId} peger på den forkerte wikidata"
     exit
+  end
+  gndId = externalIds['P227']&.strip
+  if gndId.nil? && existingGnd
+    gndId = existingGnd.strip
+  elsif !gndId.nil? && existingGnd && gndId != existingGnd.strip
+    puts "#{poetId} has GND conflict: wikidata #{gndId} vs existing #{existingGnd.strip}"
+    gndId = existingGnd.strip
   end
   new_identifiers = Nokogiri::XML::Node.new("identifiers", doc)
   wikidataNode = Nokogiri::XML::Node.new('wikidata', doc)
@@ -107,6 +116,7 @@ def buildIdentifiersXml(poetId, wikidataId, doc)
   end
   addIdentifierNode(externalIds, 'P4359', 'gravsted-dk', doc, new_identifiers)
   addIdentifierNode(externalIds, 'P214', 'viaf', doc, new_identifiers)
+  addIdentifierNode({ 'gnd' => gndId }, 'gnd', 'gnd', doc, new_identifiers)
   addIdentifierNode(externalIds, 'P8313', 'lex-dk', doc, new_identifiers)
   addIdentifierNode(externalIds, 'P9466', 'teaterleksikon-lex-dk', doc, new_identifiers)
   addIdentifierNode(externalIds, 'P8341', 'biografisk-leksikon-lex-dk', doc, new_identifiers)
@@ -140,7 +150,7 @@ def handlePoet(poetId)
           puts "#{poetId} has identifiers but no wikidata"
         else
           wikidataId = wikidatanodes.first.content
-          newIdentifiersXml = buildIdentifiersXml(poetId, wikidataId, infoxml)
+          newIdentifiersXml = buildIdentifiersXml(poetId, wikidataId, infoxml, identifiersnodes.first)
           identifiersnodes.first.replace(newIdentifiersXml)
         end
     end
