@@ -25,6 +25,8 @@ The normal deliverables are:
 - every relevant poem and prose text from the publication
 - complete work-level and text-level metadata
 - source and page references
+- exact internal source-page markers with facsimile image filenames
+- a work-level declaration that page-break markup is complete
 - references to existing Kalliope persons and texts
 - translation and original-work relations where they can be established
 - a JPEG of the title page
@@ -79,6 +81,7 @@ Preserve:
 - punctuation
 - verse lines
 - stanza divisions
+- physical page boundaries inside included texts
 - indentation
 - headings and numbering
 - subtitles and supertitles
@@ -124,6 +127,7 @@ Create a temporary page inventory covering every PDF page. Record at least:
 
 - PDF page number
 - printed page number, when present
+- stable facsimile page-image filename, for example `019.jpg`
 - page type
 - text or section represented
 - first and last visible text
@@ -388,6 +392,7 @@ Identify:
 - printed numbering
 - page ranges
 - continuations across page boundaries
+- every internal source-page boundary and its facsimile image filename
 - notes attached to a complete text
 - footnotes attached to specific passages
 
@@ -420,6 +425,7 @@ Actively determine, as applicable:
 - work title and subtitle
 - publication year
 - source and facsimile metadata
+- the `<pagebreaks/>` completeness declaration in the work header
 - title-page and cover pictures
 - section structure
 - text IDs
@@ -444,7 +450,88 @@ Do not fabricate metadata when no responsible answer exists. Use an explicit
 Titles and first lines must remain free of XML markup when the current format
 requires plain text.
 
-## 8. Reconstruct verse lines correctly
+## 8. Encode every internal source-page break
+
+Preserve every physical source-page transition that occurs inside an included
+text body with a Kalliope `<pb>` marker.
+
+After all included bodies have been checked, the work header MUST contain:
+
+```xml
+<pagebreaks/>
+```
+
+This is a completeness declaration. It means that every internal page boundary
+has been considered and encoded where applicable. It does not mean that the XML
+contains at least one `<pb>`. If every poem and prose text fits on one source
+page, the work still requires `<pagebreaks/>` even though it has no `<pb>`
+elements.
+
+At each internal transition, place the marker at the exact beginning of the new
+source page:
+
+```xml
+Last verse line on printed page 11
+<pb n="12" facs="019.jpg"/>First verse line on printed page 12
+```
+
+The attributes have distinct meanings:
+
+- `n` is the printed number or label of the new page. Omit it when the page has
+  no printed label.
+- `facs` is REQUIRED and contains only the stable filename of the facsimile
+  image for the new page, never a path. Kalliope's generated page images are
+  zero-based and use three digits, so PDF page 20 is `019.jpg`.
+
+Take both values from the verified page inventory. Never derive `facs` from the
+printed page number or put the PDF page number in `n`. Verify that the filename
+is the one produced for that PDF page by the repository's facsimile workflow.
+
+If the page changes inside a verse line, prose sentence, word, quotation, note
+or other continuous passage, place `<pb>` inline at the exact point. If it
+changes between verse lines or stanzas, prefix the first content on the new page
+with `<pb>`; never put the marker on an XML line of its own. The marker is
+zero-width semantics. It must not create a verse line, blank line, stanza,
+paragraph or text boundary.
+
+Do not insert `<pb>` merely at the beginning or end of each `<text>` to repeat
+its `<source pages="...">`. A page transition between two separate text entries
+is not internal to either body and therefore does not receive a marker.
+
+Write every text-level `source/@pages` as one full page label or a closed,
+nondecreasing interval. Expand bibliographic abbreviations before writing XML:
+use `102-108`, never `102-08`, and never leave an open value such as `106-`.
+
+Across the complete work in document order, Arabic `pb/@n` values and numeric
+`pb/@facs` filenames must never decrease. Gaps are valid because transitions
+between separate text entries do not receive markers. Roman `n` labels are not
+part of the machine ordering check.
+
+Use `ignore-tests="pagebreak-count"` on one text only when a documented
+pagination anomaly makes a legal page interval differ from the number of
+internal body transitions. Never use it to permit an abbreviated, open or
+decreasing `pages` value. The exception does not relax marker placement,
+`facs`, or ordering requirements. Put it on the work only when the anomaly
+applies throughout the publication.
+
+The page marker does not affect public rendering, but it must remain in the
+source XML for structural analysis, including detection of stanza continuations
+and physical line wrapping.
+
+After the final XML has been assembled, run the targeted page-break test:
+
+```shell
+npm test -- --runInBand __tests__/pagebreaks.test.js
+```
+
+This test reads the serialized XML and rejects a `<pb>` that ends an XML line.
+Every marker must prefix the first text or inline element on its new source page
+on that same XML line. A clean stanza analysis does not replace this check,
+because stanza analysis may remove page-break markup before counting lines.
+Rerun the test after every later change that can move `<pb>` elements or alter
+body whitespace.
+
+## 9. Reconstruct verse lines correctly
 
 OCR line wrapping is not poetic structure.
 
@@ -478,6 +565,26 @@ Pay particular attention to:
 
 Determine the dominant stanza pattern when the poem has one.
 
+After initially structuring each poem, you MUST run the bundled stanza analysis
+with a temporary JSON file containing only that poem's body:
+
+```json
+{
+  "body": "First verse line\nSecond verse line\n\nNext stanza"
+}
+```
+
+```shell
+node .codex/skills/pdf-to-kalliope/scripts/analyze-stanzas.js /tmp/poem.json
+```
+
+Inspect every reported candidate against the facsimile. Run the analysis again
+after changing stanza boundaries. Do not consider a poem structurally checked
+until this command has been run and every candidate has been resolved against
+the facsimile. The report is diagnostic only: a candidate may be a legitimate
+irregularity, and `no_candidates`, `no_stable_pattern` or
+`insufficient_evidence` does not prove that the transcription is correct.
+
 If nearly every stanza contains four verse lines, a transcription showing a
 one-line stanza followed by a three-line stanza is a strong error candidate.
 
@@ -489,13 +596,47 @@ structure solely to make the counts regular.
 
 Some poems are intentionally irregular. The facsimile remains authoritative.
 
+After the stanza analysis, you MUST also run the bundled indentation analysis
+on the same body while preserving every leading space and every blank stanza
+separator:
+
+```shell
+node .codex/skills/pdf-to-kalliope/scripts/analyze-indentation.js /tmp/poem.json
+```
+
+The optional JSON field `page_breaks` contains the one-based verse-line numbers
+that begin a new facsimile page. Add it when the page mapping is known. Keep
+numbered division headings such as `<nonum><center>II.</center></nonum>` in the
+body so the tool can assess each division separately. Remove other metadata and
+non-verse lines from the temporary input.
+
+Inspect every reported indentation candidate against the facsimile. A uniform
+offset at a page break is suspicious, but a new numbered division may
+legitimately use its own indentation profile. Rerun the analysis after changing
+indentation. The report is diagnostic only; a stable profile or no candidates
+does not prove that indentation is correct.
+
 Continue structural analysis across page breaks. A page break is not in itself
 a stanza break.
+
+### Rerun structural analysis from the final XML
+
+The first analysis performed during transcription is not the final check.
+After the complete work file has been assembled, page breaks and blank lines
+have been inserted, and all manual or automated rewrites are finished, extract
+each poem body again from the final serialized XML into fresh temporary JSON.
+Run both `analyze-stanzas.js` and `analyze-indentation.js` on every poem.
+
+Check every candidate from this final run against the facsimile and either fix
+it or document why the deviation is intentional. If the XML changes after the
+final run—including restoration, bulk replacement, formatting, or moving a
+`<pb>` element—the results are stale, and both analyses must be rerun on the
+new final file. Include the final results in the review checkpoint.
 
 Keep headings, stanza numbers and decorative lines separate from numbered verse
 lines using the XML structures documented by the repository.
 
-## 9. Preserve indentation using spaces
+## 10. Preserve indentation using spaces
 
 Indentation is part of the text's visual and poetic structure.
 
@@ -526,7 +667,7 @@ Third line
 
 Preserve genuine irregular indentation when it is visibly present.
 
-## 10. Represent prose correctly
+## 11. Represent prose correctly
 
 Treat prose according to prose structure rather than verse structure.
 
@@ -546,7 +687,7 @@ be represented as its own text entry according to the Kalliope XML format.
 
 Prose must never be silently omitted.
 
-## 11. Handle mottoes, quotations and non-verse lines
+## 12. Handle mottoes, quotations and non-verse lines
 
 Represent mottoes and quotations semantically according to the current XML
 format.
@@ -569,7 +710,7 @@ text block.
 
 Inspect comparable corpus examples when the correct representation is unclear.
 
-## 12. Place notes and footnotes correctly
+## 13. Place notes and footnotes correctly
 
 Distinguish among:
 
@@ -588,7 +729,7 @@ Proofread footnotes and note markers directly against the facsimile.
 
 Preserve the association between each marker and its note.
 
-## 13. Mark unresolved questions with XML TODO notes
+## 14. Mark unresolved questions with XML TODO notes
 
 Do not hide uncertainty behind a plausible guess.
 
@@ -626,7 +767,7 @@ reviewed manually later.
 
 Do not use `TODO:` as a substitute for ordinary research or proofreading.
 
-## 14. Extract dates and other textual metadata
+## 15. Extract dates and other textual metadata
 
 Actively inspect every text for metadata embedded in the printed source.
 
@@ -655,7 +796,7 @@ Also inspect for:
 - variant information
 - relationships to named persons or texts
 
-## 15. Resolve persons through the existing corpus
+## 16. Resolve persons through the existing corpus
 
 Whenever the publication names or refers to a poet, author, translator, editor
 or other relevant person, search the existing Kalliope corpus before creating
@@ -692,7 +833,7 @@ preferred corpus name.
 If a new person genuinely must be created, follow all current person-format,
 source and validation rules.
 
-## 16. Investigate translations and originals
+## 17. Investigate translations and originals
 
 When a text appears to be translated, adapted or based on another work,
 actively investigate:
@@ -719,7 +860,7 @@ the existing Kalliope mechanism for an unknown original where applicable.
 Add a `TODO:` note when the remaining uncertainty requires manual editorial
 review.
 
-## 17. Detect variants and duplicates
+## 18. Detect variants and duplicates
 
 Compare each imported text with the existing corpus using, as appropriate:
 
@@ -752,7 +893,7 @@ relationship.
 
 Do not silently replace an existing occurrence with the new source.
 
-## 18. Perform a separate full proofreading phase
+## 19. Perform a separate full proofreading phase
 
 Generation of plausible XML is not completion.
 
@@ -775,14 +916,21 @@ At minimum:
 12. Read every relevant page directly against the XML.
 13. Verify the beginning and end of every text.
 14. Verify continuations across page boundaries.
-15. Verify that the title page and optional cover images are the correct pages.
+15. Verify every internal page boundary against the page inventory, including
+    each marker's exact position, printed `n` value and required `facs`
+    filename.
+16. Verify that Arabic `pb/@n` values and numeric `pb/@facs` filenames never
+    decrease in document order; gaps are allowed.
+17. Verify that `<workhead>` contains `<pagebreaks/>`, including when no text
+    crosses a page boundary.
+18. Verify that the title page and optional cover images are the correct pages.
 
 The final work must have been checked page by page against the images.
 
 OCR comparison is a supplement to, not a replacement for, direct visual
 proofreading.
 
-## 19. Verify completeness
+## 20. Verify completeness
 
 Before considering the work complete, account for every relevant page and
 textual component.
@@ -799,6 +947,11 @@ Explicitly verify that:
 - relevant editorial notes are included
 - footnotes have not been dropped
 - no continuation over a page boundary is missing
+- every internal source-page transition has exactly one correctly placed `<pb>`
+- every `<pb>` has the correct non-empty `facs` filename
+- Arabic `pb/@n` values and numeric `pb/@facs` filenames never decrease in
+  document order, while gaps are allowed
+- `<workhead>` contains `<pagebreaks/>`, even when there are no `<pb>` elements
 - no heading or numbered section has disappeared
 - source order is preserved
 - advertisements are excluded
@@ -810,7 +963,7 @@ Explicitly verify that:
 
 Completeness is as important as character accuracy.
 
-## 20. Run machine-assisted quality checks
+## 21. Run machine-assisted quality checks
 
 After proofreading, run the current repository checks for OCR candidates and
 common transcription problems.
@@ -822,6 +975,7 @@ As a current baseline, include the relevant forms of:
 ```shell
 npm run report-ocr-candidates
 xmllint --noout path/to/work.xml
+npm test -- --runInBand __tests__/pagebreaks.test.js
 git diff --check
 npm test -- --runInBand
 ```
@@ -842,6 +996,9 @@ Also perform targeted checks for:
 - invalid or duplicate IDs
 - invalid person and text references
 - incorrect page ranges
+- missing, duplicate or misplaced `<pb>` markers compared with the page inventory
+- a `<pb>` with a missing or incorrect `facs` filename
+- a work missing `<pagebreaks/>` after complete page-break review
 - missing mandatory metadata
 - unsupported XML attributes
 - wrong image filenames or paths
@@ -852,7 +1009,7 @@ correction without checking the facsimile.
 
 Do not suppress or bypass a failing test simply to obtain a green build.
 
-## 21. Inspect the final diff and clean the workspace
+## 22. Inspect the final diff and clean the workspace
 
 Before presenting the change:
 
@@ -866,11 +1023,12 @@ Before presenting the change:
 - confirm that only intended files are changed
 - confirm that no source PDF or scratch file has accidentally been added
 - confirm that both JPEG filenames and XML references agree
+- confirm that every `pb/@facs` names the intended facsimile page image
 
 Delete scratch material only through a precise, verified path. Never use a broad
 or ambiguous deletion command.
 
-## 22. Review checkpoint before commit and push
+## 23. Review checkpoint before commit and push
 
 Follow `AGENTS.md`.
 
@@ -882,6 +1040,8 @@ Report concisely:
 - publication imported
 - poet/author ID and work ID
 - source and pages processed
+- number of internal `<pb>` markers, confirmation of their `facs` filenames and
+  presence of `<pagebreaks/>`
 - number of poems
 - number and kinds of prose or paratext entries
 - title-page image created
@@ -895,7 +1055,7 @@ Report concisely:
 Do not commit, amend or push until the user has explicitly reviewed the change
 and requested commit/push, as required by `AGENTS.md`.
 
-## 23. Create the GitHub pull request after approval
+## 24. Create the GitHub pull request after approval
 
 After explicit user approval:
 
@@ -912,6 +1072,8 @@ The PR description must state concretely:
 - which physical publication was transcribed
 - which facsimile or PDF was used
 - which pages were processed
+- how internal page boundaries, `pb/@facs` filenames and `<pagebreaks/>` were
+  verified
 - what poems, prose and paratext were included
 - which material was intentionally excluded
 - how fresh OCR and direct proofreading were performed
@@ -939,6 +1101,16 @@ The task is complete only when all applicable items are true:
 - [ ] Fresh OCR was produced from page images with at least two meaningfully
       different passes or strategies.
 - [ ] Every relevant page was checked directly against the facsimile.
+- [ ] Every internal source-page transition in an included body has exactly one
+      precisely placed `<pb>`.
+- [ ] Every `<pb>` has a non-empty `facs` containing the correct facsimile page
+      filename; `n`, when present, is the printed page label.
+- [ ] Every `<pb>` prefixes the first text or inline element on its new source
+      page on the same serialized XML line, and the page-break test passes.
+- [ ] Arabic `pb/@n` values and numeric `pb/@facs` filenames never decrease in
+      document order; gaps are allowed.
+- [ ] `<workhead>` contains `<pagebreaks/>`, including when no included text
+      crosses a page boundary and the work consequently has no `<pb>`.
 - [ ] Every relevant poem was included.
 - [ ] Every relevant prose text was included as its own text entry.
 - [ ] Relevant introductions, prefaces, afterwords, dedications and mottoes were
@@ -962,6 +1134,11 @@ The task is complete only when all applicable items are true:
 - [ ] Verse lines match the printed source.
 - [ ] Physical line wraps were rejoined to their correct verse lines.
 - [ ] Stanza boundaries match the printed source.
+- [ ] The bundled stanza analysis was run for every poem, rerun after stanza
+      changes, and every candidate was resolved against the facsimile.
+- [ ] The bundled indentation analysis was run for every poem with leading
+      spaces preserved, rerun after indentation changes, and every candidate
+      was resolved against the facsimile.
 - [ ] Indentation was verified visually and represented with spaces.
 - [ ] Headings, mottoes, numbers and decorations are not ordinary verse lines.
 - [ ] Footnotes are placed at the text locations to which they belong.
