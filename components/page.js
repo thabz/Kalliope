@@ -64,6 +64,7 @@ const Heading = (props) => {
           line-height: 56px;
           font-size: 56px;
           font-weight: 100;
+          overflow-wrap: anywhere;
           margin-left: -2px;
           transition: font-size 0.2s;
         }
@@ -204,7 +205,19 @@ const Page = (props) => {
           }
           :global(a) {
             color: ${CommonData.linkColor};
+            text-decoration-thickness: 0.5px !important;
+          }
+          :global(.prose-paragraph a),
+          :global(.poem-line a) {
+            text-decoration: underline;
+            text-underline-offset: 0.12em;
+          }
+          :global(.tabs a) {
             text-decoration: none;
+          }
+          :global(a:focus-visible) {
+            outline: 2px solid ${CommonData.linkColor};
+            outline-offset: 3px;
           }
           :global(a):global(.lighter) {
             color: ${CommonData.lightLinkColor};

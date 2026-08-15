@@ -52,7 +52,7 @@ export const Paging = (props) => {
     return (
       <div style={style} key={i}>
         <Tooltip text={title} placement="below">
-          <Link href={url} aria-label={title}>
+          <Link href={url} aria-label={title} style={{ textDecoration: 'none' }}>
             {arrow}
           </Link>
         </Tooltip>
@@ -206,6 +206,9 @@ const Breadcrumbs = (props) => {
           display: flex;
           flex-wrap: wrap;
           line-height: 19px;
+        }
+        nav :global(a) {
+          text-decoration: none;
         }
         nav:empty::before {
           content: 'Kalliope';

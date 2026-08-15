@@ -143,6 +143,30 @@ const padPageFilename = page => {
   return `${page - 1}`.padStart(3, '0') + '.jpg';
 };
 
+const pageBreakAtOffset = (textNode, offset) => {
+  const pageBreaks = findDescendantsByName(textNode, new Set(['pb']))
+    .filter(pageBreak => pageBreak.start <= offset)
+    .sort((left, right) => right.start - left.start);
+  return pageBreaks[0] || null;
+};
+
+const pageFromPageBreak = pageBreak => {
+  const facs = pageBreak.attrs.facs;
+  if (facs == null || facs.trim() === '') {
+    return null;
+  }
+
+  const filename = path.basename(facs.trim());
+  if (filename !== facs.trim()) {
+    return null;
+  }
+
+  return {
+    page: pageBreak.attrs.n ?? filename,
+    filename,
+  };
+};
+
 const getTitle = (xml, textNode) => {
   const head = childByName(textNode, 'head');
   const title = head ? childByName(head, 'title') : null;
@@ -297,6 +321,21 @@ const resolveFacsimileForPosition = (xml, fileName, offset) => {
       title: getTitle(xml, textNode),
       textId: textNode.attrs.id || null,
       reason: `Facsimile-side ${facsimilePages[1]} er større end kildens ${workSource.facsimilePageCount} sider.`,
+    };
+  }
+
+  const pageBreak = pageBreakAtOffset(textNode, offset);
+  const pageBreakPage = pageBreak == null ? null : pageFromPageBreak(pageBreak);
+  if (pageBreakPage != null) {
+    return {
+      ok: true,
+      ...pathInfo,
+      textId: textNode.attrs.id || null,
+      title: getTitle(xml, textNode),
+      sourceId,
+      facsimile,
+      facsimilePages: [pageBreakPage.page],
+      pages: [pageBreakPage],
     };
   }
 
