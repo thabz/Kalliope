@@ -3,8 +3,7 @@ import { supportedLanguages } from '../common/languages.js';
 
 const urlPrefix = 'https://kalliope.org';
 const defaultDescription =
-  'Kalliope er en database indeholdende ældre dansk lyrik samt biografiske oplysninger om danske digtere. Målet er intet mindre end at samle hele den ældre danske lyrik, men indtil videre indeholder Kalliope et forhåbentligt repræsentativt, og stadigt voksende, udvalg af den danske digtning.';
-const defaultOGURL = urlPrefix;
+  'Kalliope samler ældre dansk lyrik og biografiske oplysninger om danske digtere i en voksende digital database.';
 const defaultOGImage = `${urlPrefix}/touch-icon.png`;
 const criticalFonts = [
   '/fonts/alegreya-sans/alegreya-sans-normal-400-latin.woff2',
@@ -15,7 +14,6 @@ const Head = ({
   ogTitle,
   headTitle,
   description,
-  url,
   ogImage,
   requestPath,
   canonicalPath,
@@ -32,12 +30,12 @@ const Head = ({
       />
     );
   });
-  let ogImageAbsolute = ogImage != null ? ogImage : defaultOGImage;
-  if (!ogImageAbsolute.indexOf('http') === 0) {
+  let ogImageAbsolute = ogImage ?? defaultOGImage;
+  if (/^https?:\/\//.test(ogImageAbsolute) === false) {
     ogImageAbsolute = `${urlPrefix}${ogImageAbsolute}`;
   }
   let hreflangs = [];
-  const metadataPath = canonicalPath || requestPath;
+  const metadataPath = canonicalPath ?? requestPath;
   if (metadataPath != null) {
     hreflangs = supportedLanguages.map((lang) => {
       const alternatePath = metadataPath.replace(/^\/../, '/' + lang);
@@ -57,8 +55,8 @@ const Head = ({
   return (
     <NextHead>
       <meta charSet="UTF-8" />
-      <title>{headTitle || ogTitle || ''}</title>
-      <meta name="description" content={description || defaultDescription} />
+      <title>{headTitle ?? ogTitle ?? ''}</title>
+      <meta name="description" content={description ?? defaultDescription} />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       {noIndex ? <meta name="robots" content="noindex,follow" /> : null}
       <link rel="icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
@@ -67,6 +65,11 @@ const Head = ({
       <link rel="mask-icon" href="/favicon-mask.svg" color="black" />
       <link rel="icon" href="/favicon.ico" />
       <link rel="manifest" href="/manifest.json" />
+      <link
+        rel="describedby"
+        type="application/json"
+        href="/api/manifest.json"
+      />
       {criticalFonts.map((href) => (
         <link
           rel="preload"
@@ -80,19 +83,17 @@ const Head = ({
       {canonical}
       {hreflangs}
       <meta name="theme-color" content="rgb(139, 56, 65)" />
-      <meta property="og:site_name" content="www.kalliope.org" />
-      {/*<meta property="og:url" content={url || defaultOGURL} />*/}
-      <meta property="og:title" content={ogTitle || headTitle || ''} />
+      <meta property="og:site_name" content="Kalliope" />
+      <meta property="og:title" content={ogTitle ?? headTitle ?? ''} />
       <meta
         property="og:description"
-        content={description || defaultDescription}
+        content={description ?? defaultDescription}
       />
       <meta name="twitter:site" content="@kalliope_org" />
-      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:image" content={ogImageAbsolute} />
       <meta property="og:image" content={ogImageAbsolute} />
       <meta property="og:image:width" content="600" />
-      <meta property="og:site_name" content="Kalliope" />
       <meta property="og:type" content="website" />
       {ogURL}
     </NextHead>

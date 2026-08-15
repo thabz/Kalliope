@@ -10,7 +10,7 @@ const routeDefinitions = [
   },
   {
     page: '/poets',
-    regex: new RegExp(`^/(${lang})/poets/([^/]+)/(name|year)/?$`),
+    regex: new RegExp(`^/(${lang})/poets/([^/]+)/(name|year|period)/?$`),
     keys: ['lang', 'country', 'groupBy'],
   },
   {
@@ -22,6 +22,11 @@ const routeDefinitions = [
     page: '/works',
     regex: new RegExp(`^/(${lang})/works/([^/]+)/?$`),
     keys: ['lang', 'poetId'],
+  },
+  {
+    page: '/museums',
+    regex: new RegExp(`^/(${lang})/museums/(name|country)/?$`),
+    keys: ['lang', 'groupBy'],
   },
   {
     page: '/museums',

@@ -47,6 +47,11 @@ it('it formats dates including negative years', () => {
   expect(formattedDate('-100-02-03')).toEqual('3/2 100 f.Kr.');
   expect(formattedDate('-8000-02-03')).toEqual('3/2 8000 f.Kr.');
   expect(formattedDate('ca 1818')).toEqual('c.1818');
+  expect(formattedDate('-100-02-03', 'en')).toEqual('3/2 100 BC');
+  expect(formattedDate('-100-02-03', 'fr')).toEqual('3/2 100 av. J.-C.');
+  expect(formattedDate('-100-02-03', 'de')).toEqual('3/2 100 v. Chr.');
+  expect(formattedDate('ca 1818', 'fr')).toEqual('v.1818');
+  expect(formattedDate('ca 1818', 'de')).toEqual('ca.1818');
 });
 
 it('it formats single years', () => {

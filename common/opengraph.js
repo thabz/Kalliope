@@ -13,7 +13,7 @@ export const trimmedDescription = (content_html) => {
     .replace(/\s\s/g, ' ');
   result = result.replace(/\n/g, ' ').replace(/<br\/>/g, ' ');
   result = result.replace(/<[^>]*>/g, ''); // Remove remaining tags
-  return result.substr(0, 600);
+  return result.slice(0, 125);
 };
 
 export const poetImage = (poet) => {

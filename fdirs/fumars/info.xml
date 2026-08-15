@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="fumars" country="dk" lang="fr" type="poet">
+  <name>
+    <firstname>Étienne</firstname>
+    <lastname>Fumars</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1743-10-22</date>
+    </born>
+    <dead>
+      <date>1806-11-30</date>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid</literary-periods>
+  <identifiers>
+    <wikidata>Q12341930</wikidata>
+    <viaf>215017015</viaf>
+  </identifiers>
+</person>

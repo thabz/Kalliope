@@ -147,11 +147,17 @@ const extractTitle = (head, type) => {
     return null;
   }
   const parts = title.match(/<num>([^<]*)<\/num>(.*)$/);
-  if (parts != null) {
+  if (parts != null && parts[1].trim().length > 0) {
     return {
       prefix: parts[1],
       title: parts[2],
     };
+  } else if (parts != null) {
+    return { title: parts[2] };
+  }
+  const emptyNum = title.match(/<num\s*\/>\s*(.*)$/);
+  if (emptyNum != null) {
+    return { title: emptyNum[1] };
   } else {
     return { title: title };
   }
@@ -219,6 +225,14 @@ const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
   }
 };
 
+const getNoteType = note => {
+  const explicitType = safeGetAttr(note, 'type');
+  const hasTranslationSource = getElementsByTagName(note, 'xref').some(
+    xref => safeGetAttr(xref, 'type') === 'translation'
+  );
+  return explicitType || (hasTranslationSource ? 'translation-source' : null);
+};
+
 // context contains keys for any `${var}` that's to be replaced in the note texts.
 const get_notes = (head, collected, context = {}) => {
   const notes = getChildByTagName(head, 'notes');
@@ -227,7 +241,7 @@ const get_notes = (head, collected, context = {}) => {
   }
   return getChildrenByTagName(notes, 'note').map(note => {
     const lang = safeGetAttr(note, 'lang') || 'da';
-    const type = safeGetAttr(note, 'type');
+    const type = getNoteType(note);
     const unknownOriginalByPoetId = safeGetAttr(note, 'unknown-original-by');
     const replaceContextPlaceholders = s => {
       return s.replace(/\$\{(.*?)\}/g, (_, p1) => {
@@ -278,6 +292,7 @@ export {
   extractTitle,
   extractSubtitles,
   extractDates,
+  getNoteType,
   get_notes,
   get_pictures,
   get_picture,

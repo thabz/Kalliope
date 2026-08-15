@@ -3,11 +3,13 @@ import { useContext, useState } from 'react';
 import CommonData from '../common/commondata.js';
 import * as ImagePaths from '../common/imagepaths.js';
 import LangContext from '../common/LangContext.js';
+import _ from '../common/translations.js';
 import * as Links from './links.js';
 import PictureOverlay from './pictureoverlay.js';
 import PoetName from './poetname.js';
 import Stack from './stack.js';
 import { TextInline } from './textcontent.js';
+import Tooltip from './tooltip.js';
 
 const FigCaption = (props) => {
   const { picture, hideArtist = false, hideMuseum = false } = props;
@@ -27,10 +29,18 @@ const FigCaption = (props) => {
 
   let remoteLink = null;
   if (picture.remoteUrl != null) {
+    const tooltip = _('Se billedet på museets hjemmeside', lang);
     remoteLink = (
       <>
         {' '}
-        <a href={picture.remoteUrl}>⌘</a>
+        <Tooltip text={tooltip}>
+          <a
+            href={picture.remoteUrl}
+            aria-label={tooltip}
+            className="remote-picture-link">
+            ⌘
+          </a>
+        </Tooltip>
       </>
     );
   }
@@ -80,14 +90,60 @@ const FigCaption = (props) => {
           font-size: 16px;
           line-height: 1.4;
         }
+        figcaption :global(a) {
+          text-decoration-thickness: 0.5px !important;
+        }
+        figcaption :global(a.remote-picture-link) {
+          text-decoration: none !important;
+        }
       `}</style>
     </figcaption>
+  );
+};
+
+const ResponsivePicture = ({
+  src,
+  sizes,
+  className,
+  imgClassName = className,
+  style,
+  imgStyle,
+  alt = '',
+  width,
+  onClick,
+}) => {
+  const sources = CommonData.availableImageFormats.map(ext => {
+    const srcSet = CommonData.availableImageWidths.map(width => {
+      const filename = ImagePaths.thumbnailSrc(src, width, ext);
+      return `${filename} ${width}w`;
+    }).join(', ');
+    const type = ext !== 'jpg' ? `image/${ext}` : undefined;
+    return <source key={ext} type={type} srcSet={srcSet} sizes={sizes} />;
+  });
+  const fallbackSrc = ImagePaths.fallbackThumbnailSrc(
+    src,
+    CommonData.fallbackImagePostfix
+  );
+
+  return (
+    <picture className={className} onClick={onClick} style={style}>
+      {sources}
+      <img
+        className={imgClassName}
+        src={fallbackSrc}
+        width={width}
+        style={imgStyle}
+        alt={alt}
+      />
+    </picture>
   );
 };
 
 const Picture = ({
   pictures,
   contentLang,
+  bare = false,
+  imgClassName,
   hideArtist = false,
   hideMuseum = false,
   showDropShadow = true,
@@ -98,25 +154,10 @@ const Picture = ({
   const [overlayShown, showOverlay] = useState(false);
   const picture = pictures[startIndex];
   const src = picture.src;
-  const fallbackSrc = ImagePaths.fallbackThumbnailSrc(
-    src,
-    CommonData.fallbackImagePostfix
-  );
-  let srcsets = {};
-  const sources = CommonData.availableImageFormats.map((ext) => {
-    const srcset = CommonData.availableImageWidths
-      .map((width) => {
-        const filename = ImagePaths.thumbnailSrc(src, width, ext);
-        return `${filename} ${width}w`;
-      })
-      .join(', ');
-    srcsets[ext] = srcset;
-    const type = ext !== 'jpg' ? `image/${ext}` : '';
-    return <source key={ext} type={type} srcSet={srcset} sizes={sizes} />;
-  });
-  const alt = picture.content_html
-    ? '' //Strings.trimHtml(picture.content_html)
-    : 'Billede';
+  const alt =
+    picture.content_html != null
+      ? '' //Strings.trimHtml(picture.content_html)
+      : 'Billede';
 
   let pictureClassName = '';
   if (picture.src.indexOf('-oval.jpg') > -1) {
@@ -147,6 +188,17 @@ const Picture = ({
     }
   };
 
+  if (bare === true) {
+    return (
+      <ResponsivePicture
+        src={src}
+        sizes={sizes}
+        imgClassName={imgClassName}
+        alt={alt}
+      />
+    );
+  }
+
   let pictureOverlay = null;
   if (overlayShown) {
     const onOverlayClose = () => {
@@ -164,24 +216,22 @@ const Picture = ({
   return (
     <div className="sidebar-picture">
       <figure>
-        <picture
+        <ResponsivePicture
+          src={src}
+          sizes={sizes}
           className={pictureClassName}
           onClick={onClick}
-          style={clipPathDropShadowStyle}>
-          {sources}
-          <img
-            className={pictureClassName}
-            src={fallbackSrc}
-            width="100%"
-            style={clipPathStyle}
-            alt={alt}
-          />
-        </picture>
+          style={clipPathDropShadowStyle}
+          imgClassName={pictureClassName}
+          imgStyle={clipPathStyle}
+          width="100%"
+          alt={alt}
+        />
         <FigCaption
           picture={{
             ...picture,
             content_html:
-              picture.miniature_content_html || picture.content_html,
+              picture.miniature_content_html ?? picture.content_html,
           }}
           hideArtist={hideArtist}
           hideMuseum={hideMuseum}
@@ -195,16 +245,15 @@ const Picture = ({
         figure {
           margin: 0;
         }
-        .oval-mask {
+        :global(.sidebar-picture .oval-mask) {
           border-radius: 50%;
         }
-        img {
+        :global(.sidebar-picture img) {
           border: 0;
         }
-        img.with-drop-shadow {
-          box-shadow: 4px 4px 12px #888;
+        :global(.sidebar-picture img.with-drop-shadow) {
         }
-        img.clickable {
+        :global(.sidebar-picture img.clickable) {
           cursor: pointer;
         }
         @media print {

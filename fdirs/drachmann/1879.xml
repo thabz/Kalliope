@@ -1,30 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="1879" author="drachmann" status="complete" type="poetry">
 <workhead>
-   <title>Ungdom i Digt og Sang</title>
-   <year>1879</year>
-    <notes>
-        <note>Teksten følger Holger Drachmann: <i>Ungdom i Digt og Sang</i>, Gyldendal, Kbh., 1879.</note>
-        <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
-        <note>Noter med en foranstillet asterisk er digterens egne.</note>
-    </notes>
-    <pictures>
-        <picture src="1879-p1.jpg">Forsiden til <i>Ungdom i Digt og Sang</i> (1879).</picture>
-    </pictures>
-    <source facsimile="11530805172D_color" facsimile-pages-num="390" facsimile-pages-offset="22">Holger Drachmann: <i>Ungdom i Digt og Sang</i>, Gyldendal, Kbh., 1879.</source>
-    <!-- Der mangler vist et titelblad i bogen - hvilket ikke udgøres af den illustrerede forside. -->
+  <title>Ungdom i Digt og Sang</title>
+  <year>1879</year>
+  <notes>
+    <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
+    <note>Noter med en foranstillet asterisk er digterens egne.</note>
+  </notes>
+  <pictures>
+    <picture src="1879-p1.jpg">Forsiden til <i>Ungdom i Digt og Sang</i> (1879).</picture>
+  </pictures>
+  <source facsimile="11530805172D_color" facsimile-pages-num="390" facsimile-pages-offset="22">Holger Drachmann: <i>Ungdom i Digt og Sang</i>, Gyldendal, Kbh., 1879.</source>
+  <!-- Der mangler vist et titelblad i bogen - hvilket ikke udgøres af den illustrerede forside. -->
 </workhead>
 <workbody>
 
 <text id="drachmann201902231">
 <head>
-   <title>Til Bjørnstjerne Bjørnson</title>
-   <toctitle>Til Bjørnstjerne Bjørnson</toctitle>
-   <indextitle>Til Bjørnstjerne Bjørnson</indextitle>
-   <firstline>Det er, saa tilpas, et Decennium siden</firstline>
-   <source pages="IX-XVI" facsimile-pages="15-22"/>
-   <quality>korrektur1,kilde</quality>
-   <keywords>bjoernson</keywords>
+  <title>Til Bjørnstjerne Bjørnson</title>
+  <toctitle>Til Bjørnstjerne Bjørnson</toctitle>
+  <indextitle>Til Bjørnstjerne Bjørnson</indextitle>
+  <firstline>Det er, saa tilpas, et Decennium siden</firstline>
+  <source pages="IX-XVI" facsimile-pages="15-22"/>
+  <quality>korrektur1,kilde</quality>
+  <keywords>bjoernson</keywords>
 </head>
 <body>
 <poetry>
@@ -198,19 +197,20 @@ Der er Kræfter endnu i Norden!
 
 <section level="1">
 <head>
-   <toctitle>I Panser og Plade</toctitle>
+  <toctitle>I Panser og Plade</toctitle>
 </head>
 <content>
 
 <text id="drachmann201902232">
 <head>
-   <title>Ungdom</title>
-   <subtitle>Den gamle Mesters Syn</subtitle>
-   <toctitle>Ungdom</toctitle>
-   <indextitle>Ungdom</indextitle>
-   <firstline>Hed som en Ovn</firstline>
-   <source pages="3-12"/>
-   <quality>korrektur1,kilde</quality>
+  <title>Ungdom</title>
+  <subtitle>Den gamle Mesters Syn</subtitle>
+  <toctitle>Ungdom</toctitle>
+  <indextitle>Ungdom</indextitle>
+  <firstline>Hed som en Ovn</firstline>
+  <!-- Ikke en variant af drachmann1999111028: Forskellige tekster med fælles indledning. -->
+  <source pages="3-12"/>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -453,12 +453,13 @@ I kalder dem Dukker, men det er Mænd!«
 
 <text id="drachmann201902241">
 <head>
-   <title>Islandsfarten før og siden</title>
-   <toctitle>Islandsfarten før og siden</toctitle>
-   <indextitle>Islandsfarten før og siden</indextitle>
-   <firstline>Hvad er det for en modig Flok</firstline>
-   <source pages="13-19"/>
-   <quality>korrektur1,kilde</quality>
+  <title>Islandsfarten før og siden</title>
+  <toctitle>Islandsfarten før og siden</toctitle>
+  <indextitle>Islandsfarten før og siden</indextitle>
+  <firstline>Hvad er det for en modig Flok</firstline>
+  <!-- Ikke en variant af drachmann1999050304: Forskellige lejlighedsdigte med fælles indledning. -->
+  <source pages="13-19"/>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -652,11 +653,11 @@ nej »Heimdal« skal ham bære!
 
 <text id="drachmann2019101702">
 <head>
-    <title>To Ballonbreve til ,,Morgenbladet''</title>
-    <subtitle>fra Islands Tusindaarsfest</subtitle>
-    <firstline>Nej og nej og atter nej</firstline>
-    <source pages="20-36"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>To Ballonbreve til ,,Morgenbladet''</title>
+  <subtitle>fra Islands Tusindaarsfest</subtitle>
+  <firstline>Nej og nej og atter nej</firstline>
+  <source pages="20-36"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1099,11 +1100,11 @@ var Skarphedin, ham <i>med den tavse Latter.</i>
 
 <text id="drachmann2019101703">
 <head>
-    <title>Plimsoll</title>
-    <subtitle>Juli 1875.</subtitle>
-    <firstline>Her er en Haand og her er et Raab</firstline>
-    <source pages="37-40"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Plimsoll</title>
+  <subtitle>Juli 1875.</subtitle>
+  <firstline>Her er en Haand og her er et Raab</firstline>
+  <source pages="37-40"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1192,11 +1193,11 @@ Husker Du Lønnen, han fik?
 
 <text id="drachmann2019101704">
 <head>
-    <title>Det nye Nationaltheater</title>
-    <subtitle>En Epilog.</subtitle>
-    <firstline>Langs Strandvejen hvirvler de gulnede Blade</firstline>
-    <source pages="41-45"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Det nye Nationaltheater</title>
+  <subtitle>En Epilog.</subtitle>
+  <firstline>Langs Strandvejen hvirvler de gulnede Blade</firstline>
+  <source pages="41-45"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1331,10 +1332,10 @@ han smiler. Det er, som paa Forhaand man fatter
 
 <text id="drachmann2019101705">
 <head>
-    <title>I Høst</title>
-    <firstline>Den løvede Skov er bleven lidt tynd</firstline>
-    <source pages="46-48"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>I Høst</title>
+  <firstline>Den løvede Skov er bleven lidt tynd</firstline>
+  <source pages="46-48"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1418,12 +1419,12 @@ i brune Knopper paa Grenen.
 
 <text id="drachmann2019101706">
 <head>
-    <title>Et Sendebrev</title>
-    <subtitle>Paris. Januar 1877.</subtitle>
-    <firstline>Nu rørte det danske Folk sig der hjemme</firstline>
-    <source pages="49-58"/>
-    <keywords>winther,mueller</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Et Sendebrev</title>
+  <subtitle>Paris. Januar 1877.</subtitle>
+  <firstline>Nu rørte det danske Folk sig der hjemme</firstline>
+  <source pages="49-58"/>
+  <keywords>winther,mueller</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1690,12 +1691,12 @@ os naadig for saadan en Poesi!
 
 <text id="drachmann2019101707">
 <head>
-    <title>Den sidste Skanse</title>
-    <subtitle>September 1877.</subtitle>
-    <firstline>De drog sig tilbage: en sluttet Trop</firstline>
-    <source pages="59-62"/>
-    <keywords>kuplet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Den sidste Skanse</title>
+  <subtitle>September 1877.</subtitle>
+  <firstline>De drog sig tilbage: en sluttet Trop</firstline>
+  <source pages="59-62"/>
+  <keywords>kuplet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1794,11 +1795,11 @@ En nøgen Stang og en øde Skanse.
 
 <text id="drachmann2019101708">
 <head>
-    <title>Svar til Morgenbladet</title>
-    <subtitle>Paris. Decbr. 1877.</subtitle>
-    <firstline>Holla, Du hidsige Morgenblad</firstline>
-    <source pages="63-66"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Svar til Morgenbladet</title>
+  <subtitle>Paris. Decbr. 1877.</subtitle>
+  <firstline>Holla, Du hidsige Morgenblad</firstline>
+  <source pages="63-66"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1888,11 +1889,11 @@ og da staar hans Teltdør aaben.
 
 <text id="drachmann2019101709">
 <head>
-    <title>Et Opraab</title>
-    <subtitle>(»Fædrelandet« 22de Febr. 1878.)</subtitle>
-    <firstline>Jeg sad</firstline>
-    <source pages="67-72"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Et Opraab</title>
+  <subtitle>(»Fædrelandet« 22de Febr. 1878.)</subtitle>
+  <firstline>Jeg sad</firstline>
+  <source pages="67-72"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2046,10 +2047,10 @@ Jeg tænker at høre et Ekko derhjemme.
 
 <text id="drachmann2019090501">
 <head>
-    <title>Rimbrev til Esrom Sø</title>
-    <firstline>Fjærnt fra din Strand, i Verdensbyens Gader</firstline>
-    <source pages="73-84"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Rimbrev til Esrom Sø</title>
+  <firstline>Fjærnt fra din Strand, i Verdensbyens Gader</firstline>
+  <source pages="73-84"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2371,10 +2372,10 @@ jeg haaber det, skal handle om, <w>at nyde</w>.
 
 <text id="drachmann2019101711">
 <head>
-    <title>Pejling</title>
-    <firstline>Der slynger over Søen sig en Sti</firstline>
-    <source pages="85-86"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Pejling</title>
+  <firstline>Der slynger over Søen sig en Sti</firstline>
+  <source pages="85-86"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2409,12 +2410,12 @@ Men op fra Bunden steg, fra Kravlets Bolig,
 
 <text id="drachmann2019101712">
 <head>
-    <title>Hilsen efter Festen</title>
-    <subtitle>Til Bjørnstjerne Bjørnson</subtitle>
-    <firstline>Nej, jeg var ikke med til at skrive</firstline>
-    <source pages="87-90"/>
-    <keywords>bjoernson</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Hilsen efter Festen</title>
+  <subtitle>Til Bjørnstjerne Bjørnson</subtitle>
+  <firstline>Nej, jeg var ikke med til at skrive</firstline>
+  <source pages="87-90"/>
+  <keywords>bjoernson</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2455,7 +2456,7 @@ Selv har jeg sét paa de yderste Skær
 noget, som vinkende funkled for Øjet;
 saa blev jeg »syg«, og jeg krøb i min Skal.
 Jeg er jo den, som kun hidtil har lovet;
-han han kan fylke en Hær.
+han — han kan fylke en Hær.
 Godtfolk, som spaaed hans Fald,
 I har løjet! —
 
@@ -2503,12 +2504,13 @@ Ilden og Døden.
 
 <text id="drachmann2019101713">
 <head>
-    <title>Ved Universitetsjubilæet</title>
-    <subtitle>Juli 1879.</subtitle>
-    <firstline>Lang er den Herre af Lemmer</firstline>
-    <source pages="91-106"/>
-    <keywords>shakespeare,byron,dante,ewald</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Ved Universitetsjubilæet</title>
+  <subtitle>Juli 1879.</subtitle>
+  <firstline>Lang er den Herre af Lemmer</firstline>
+  <!-- Ikke en variant af drachmann1999111032: Forskellige tekster, som genbruger samme indledningslinje. -->
+  <source pages="91-106"/>
+  <keywords>shakespeare,byron,dante,ewald</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2916,16 +2918,16 @@ Fred med Huset, Fred paa Jord!
 
 <section>
 <head>
-    <title>Tidsbilleder og Karakteristiker</title>
+  <title>Tidsbilleder og Karakteristiker</title>
 </head>
 <content>
 
 <text id="drachmann2019101714">
 <head>
-    <title>I Circus maximus</title>
-    <firstline>Tys! - det var Tubaens Lyd</firstline>
-    <source pages="109-113"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>I Circus maximus</title>
+  <firstline>Tys! - det var Tubaens Lyd</firstline>
+  <source pages="109-113"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3051,11 +3053,12 @@ i Hast at faa Ende paa Tiden.
 
 <text id="drachmann1999111028">
 <head>
-   <title>Androkles og Løven</title>
-   <toctitle>Androkles og Løven</toctitle>
-   <indextitle>Androkles og Løven</indextitle>
-   <firstline>Hed som en Ovn</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Androkles og Løven</title>
+  <toctitle>Androkles og Løven</toctitle>
+  <indextitle>Androkles og Løven</indextitle>
+  <firstline>Hed som en Ovn</firstline>
+  <!-- Ikke en variant af drachmann201902232: Forskellige tekster med fælles indledning. -->
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -3406,13 +3409,13 @@ Løven, Androkles' Ven!
 
 <text id="drachmann2019101715">
 <head>
-    <title>,,Den syge Mand''</title>
-    <indextitle>Den syge Mand</indextitle>
-    <linktitle>Den syge Mand</linktitle>
-    <subtitle>Paris. Febr. 77.</subtitle>
-    <firstline>Hør Skovlenes Slag</firstline>
-    <source pages="128-134"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>,,Den syge Mand''</title>
+  <indextitle>Den syge Mand</indextitle>
+  <linktitle>Den syge Mand</linktitle>
+  <subtitle>Paris. Febr. 77.</subtitle>
+  <firstline>Hør Skovlenes Slag</firstline>
+  <source pages="128-134"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3582,12 +3585,12 @@ Min ærede Svoger er gal!
 
 <text id="drachmann2019101716">
 <head>
-    <title>Stormagter!</title>
-    <subtitle>Under Berliner-Konferencen 1878.</subtitle>
-    <firstline>Allah, det Skabtes Fader</firstline>
-    <source pages="135-147"/>
-    <keywords>byron,hardy,shelley</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Stormagter!</title>
+  <subtitle>Under Berliner-Konferencen 1878.</subtitle>
+  <firstline>Allah, det Skabtes Fader</firstline>
+  <source pages="135-147"/>
+  <keywords>byron,hardy,shelley</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3931,14 +3934,14 @@ Jeg har Lodskud; Grunden er pejlet!
 
 <text id="drachmann2019101717">
 <head>
-    <title>Tohundredaars Dagen</title>
-    <subtitle>for Slaget i Køgebugt.</subtitle>
-    <firstline>Smykt som til Fest - og rustet til Slag</firstline>
-    <notes>
-        <note>Mottoet stammer fra Winthers <xref poem="winther1999070607"/>.</note>
-    </notes>
-    <source pages="148-153"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Tohundredaars Dagen</title>
+  <subtitle>for Slaget i Køgebugt.</subtitle>
+  <firstline>Smykt som til Fest - og rustet til Slag</firstline>
+  <notes>
+    <note>Mottoet stammer fra Winthers <xref poem="winther1999070607"/>.</note>
+  </notes>
+  <source pages="148-153"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4096,10 +4099,10 @@ det er Tordnen fra Kogebugt Slaget.
 
 <text id="drachmann2019101718">
 <head>
-    <title>Longobarder</title>
-    <firstline>Er det vel Danmark, det signede Land</firstline>
-    <source pages="154-159"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Longobarder</title>
+  <firstline>Er det vel Danmark, det signede Land</firstline>
+  <source pages="154-159"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4249,12 +4252,12 @@ imod Syden de fri Longobarder.
 
 <text id="drachmann2019101719">
 <head>
-    <title>Chr. Winther †</title>
-    <subtitle>(Ved Digterens Jordefærd i Paris; December 1876.)</subtitle>
-    <firstline>Støvet krævede sin Ret</firstline>
-    <source pages="160-161"/>
-    <keywords>winther</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Chr. Winther †</title>
+  <subtitle>(Ved Digterens Jordefærd i Paris; December 1876.)</subtitle>
+  <firstline>Støvet krævede sin Ret</firstline>
+  <source pages="160-161"/>
+  <keywords>winther</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4299,11 +4302,11 @@ dybtfølt Dig et varigt Minde.
 
 <text id="drachmann2019101720">
 <head>
-    <title>Harald Jerichau</title>
-    <subtitle>† i Rom; Marts 1878.</subtitle>
-    <firstline>Jeg hører, at Harald Jerichau</firstline>
-    <source pages="162-164"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Harald Jerichau</title>
+  <subtitle>† i Rom; Marts 1878.</subtitle>
+  <firstline>Jeg hører, at Harald Jerichau</firstline>
+  <source pages="162-164"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4375,11 +4378,11 @@ i Aftenens evige Røde.
 
 <text id="drachmann2019101721">
 <head>
-    <title>Zoologen Georg Winther og Marinemaleren C. Frederik Sørensen</title>
-    <subtitle>†† i Januar 1879.</subtitle>
-    <firstline>Den store Færgemand har raabt sit Varsko</firstline>
-    <source pages="165-169"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Zoologen Georg Winther og Marinemaleren C. Frederik Sørensen</title>
+  <subtitle>†† i Januar 1879.</subtitle>
+  <firstline>Den store Færgemand har raabt sit Varsko</firstline>
+  <source pages="165-169"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4437,7 +4440,7 @@ Og Himlens høje Loft gav Plads for Skyer,
 som flagred, Fugle lig, henover Sø,
 og Skibe dukked frem ind under Ø,
 en Sejlerskare, som sin Dug fornyer,
-nåar Vinden stiller, eller raadsnar tyer,
+naar Vinden stiller, eller raadsnar tyer,
 naar Stormen farver begsort Kimingranden,
 i sikker Havn hos Landets gæstfri Byer,
 for ej at kastes masteløs paa Stranden.
@@ -4490,11 +4493,11 @@ med Moderhilsen paa den fælles Grav.
 
 <text id="drachmann2019101722">
 <head>
-    <title>Kr. Mantzius</title>
-    <subtitle>† 5. Juni 1879.</subtitle>
-    <firstline>Du Graver, stands et Øjeblik dit Værk</firstline>
-    <source pages="170-173"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Kr. Mantzius</title>
+  <subtitle>† 5. Juni 1879.</subtitle>
+  <firstline>Du Graver, stands et Øjeblik dit Værk</firstline>
+  <source pages="170-173"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4598,14 +4601,14 @@ mens Sol gaar bag den danske Scene ned.
 
 <text id="drachmann1999111027">
 <head>
-    <title>Kong Karl den Tolvte bæres over Grænsen</title>
-    <subtitle>(Til G. O. Cederströms Maleri.)</subtitle>
-    <firstline>Blød og tavs er Bjærgets Sti</firstline>
-    <pictures>
-        <picture src="drachmann1999111027-p1.jpg" museum="natmus.se" objid="18366">Gustaf Cederström (1845-1933): <i>Karl XII:s likfärd</i>, 1878, oliemaleri, 256 × 370 cm. Nationalmuseum, Stockholm.</picture>
-    </pictures>
-    <source pages="174-177"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Kong Karl den Tolvte bæres over Grænsen</title>
+  <subtitle>(Til G. O. Cederströms Maleri.)</subtitle>
+  <firstline>Blød og tavs er Bjærgets Sti</firstline>
+  <pictures>
+    <picture src="drachmann1999111027-p1.jpg" museum="natmus.se" objid="18366">Gustaf Cederström (1845-1933): <i>Karl XII:s likfärd</i>, 1878, oliemaleri, 256 × 370 cm.</picture>
+  </pictures>
+  <source pages="174-177"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4686,11 +4689,11 @@ Men saadan en Konge har Svensken kær,
 
 <text id="drachmann2019101724">
 <head>
-    <title>Den franske Kone i Sorø</title>
-    <subtitle>(Dragonens Ven beretter).</subtitle>
-    <firstline>Han kom fra Frankrige hjem</firstline>
-    <source pages="178-181"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Den franske Kone i Sorø</title>
+  <subtitle>(Dragonens Ven beretter).</subtitle>
+  <firstline>Han kom fra Frankrige hjem</firstline>
+  <source pages="178-181"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4789,10 +4792,10 @@ han kunde ha’ nævnet sig selv!
 
 <text id="drachmann2019101725">
 <head>
-    <title>Grøn Vinter</title>
-    <firstline>Der stod i Kalenderen: Foraarsvejr</firstline>
-    <source pages="182-184"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Grøn Vinter</title>
+  <firstline>Der stod i Kalenderen: Foraarsvejr</firstline>
+  <source pages="182-184"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4861,11 +4864,11 @@ som trodser Vintren og Graven.
 
 <text id="drachmann2019101726">
 <head>
-    <title>Ved danske Kunstneres Julegilde i Paris</title>
-    <subtitle>(Decb. 1877.)</subtitle>
-    <firstline>Giv Plads for en Sang her ved Bordet</firstline>
-    <source pages="185-188"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Ved danske Kunstneres Julegilde i Paris</title>
+  <subtitle>(Decb. 1877.)</subtitle>
+  <firstline>Giv Plads for en Sang her ved Bordet</firstline>
+  <source pages="185-188"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4955,13 +4958,13 @@ i <w>Toppen</w> af Træet!
 
 <text id="drachmann1999110901">
 <head>
-    <title>Da de slettede Paragrafen ud</title>
-    <firstline>Der sidder et Folk ved Bælt og ved Sund</firstline>
-    <notes>
-        <note>Prag-freden (1866) havde en paragraf 5, som gik ud på at Nordslesvig skulle afstås til Danmark, hvis befolkningen ved en afstemning udtrykte ønske herom. Denne paragraf blev i 1878 "udslettet".</note>
-    </notes>
-    <source pages="189-190"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Da de slettede Paragrafen ud</title>
+  <firstline>Der sidder et Folk ved Bælt og ved Sund</firstline>
+  <notes>
+    <note>Prag-freden (1866) havde en paragraf 5, som gik ud på at Nordslesvig skulle afstås til Danmark, hvis befolkningen ved en afstemning udtrykte ønske herom. Denne paragraf blev i 1878 "udslettet".</note>
+  </notes>
+  <source pages="189-190"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5013,16 +5016,16 @@ har ej <w>paa Papirslapper hjemme</w>.
 
 <section>
 <head>
-    <title>Musik og Texter</title>
+  <title>Musik og Texter</title>
 </head>
 <content>
 
 <text id="drachmann2019101728">
 <head>
-    <title>Ved en Fontaine</title>
-    <firstline>Nattens Fest svandt hen</firstline>
-    <source pages="193-194"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Ved en Fontaine</title>
+  <firstline>Nattens Fest svandt hen</firstline>
+  <source pages="193-194"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5062,10 +5065,10 @@ drikker jeg af Dig, før Springet har fortært sig.
 
 <text id="drachmann2019101729">
 <head>
-    <title>Høstaften</title>
-    <firstline>Luften sitred, da Solen gik ned</firstline>
-    <source pages="195-196"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Høstaften</title>
+  <firstline>Luften sitred, da Solen gik ned</firstline>
+  <source pages="195-196"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5107,10 +5110,10 @@ som véd: der er kort kun tilbage!
 
 <text id="drachmann2019101730">
 <head>
-    <title>Ved Smeltehytten</title>
-    <firstline>Vær ikke bange, Veninde</firstline>
-    <source pages="197-198"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Ved Smeltehytten</title>
+  <firstline>Vær ikke bange, Veninde</firstline>
+  <source pages="197-198"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5146,10 +5149,10 @@ om end i Ild den er døbt?
 
 <text id="drachmann2019101731">
 <head>
-    <title>Naar Krabben bider</title>
-    <firstline>Hun er hed af det hastige Løb</firstline>
-    <source pages="199-200"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Naar Krabben bider</title>
+  <firstline>Hun er hed af det hastige Løb</firstline>
+  <source pages="199-200"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5185,10 +5188,10 @@ ja hvad skal en Pige saa gøre?
 
 <text id="drachmann2019101732">
 <head>
-    <title>Over Barren</title>
-    <firstline>Den skulde over Barren, afsted tilhavs</firstline>
-    <source pages="201-202"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Over Barren</title>
+  <firstline>Den skulde over Barren, afsted tilhavs</firstline>
+  <source pages="201-202"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5225,10 +5228,10 @@ den Ild, som besjæler, det Maal, Du vil naa’,
 
 <text id="drachmann2019101733">
 <head>
-    <title>Havets Sang</title>
-    <firstline>Saa var Du kun den smukke, skøre Skal</firstline>
-    <source pages="203-204"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Havets Sang</title>
+  <firstline>Saa var Du kun den smukke, skøre Skal</firstline>
+  <source pages="203-204"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5263,10 +5266,10 @@ Det Vaade var kun egen Svagheds Minde.
 
 <text id="drachmann2019101734">
 <head>
-    <title>Maanenat</title>
-    <firstline>Min Nat har ingen Søvn. Hist bæver Havet</firstline>
-    <source pages="205-206"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Maanenat</title>
+  <firstline>Min Nat har ingen Søvn. Hist bæver Havet</firstline>
+  <source pages="205-206"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5305,10 +5308,10 @@ Thi denne Elsker, i sit Hjærte bly,
 
 <text id="drachmann2019101735">
 <head>
-    <title>Til en Tilhørerinde</title>
-    <firstline>Til En, som hørte, fra ham, som læste</firstline>
-    <source pages="207-208"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Til en Tilhørerinde</title>
+  <firstline>Til En, som hørte, fra ham, som læste</firstline>
+  <source pages="207-208"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5342,10 +5345,10 @@ Jeg laa derude, jeg red for Anker, —
 
 <text id="drachmann2019101736">
 <head>
-    <title>Den store Serenade i Venezia</title>
-    <firstline>Hør, hvor Bølgerne skvulpe</firstline>
-    <source pages="209-217"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Den store Serenade i Venezia</title>
+  <firstline>Hør, hvor Bølgerne skvulpe</firstline>
+  <source pages="209-217"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5561,11 +5564,11 @@ som Vandene gemmer og freder
 
 <text id="drachmann2019101737">
 <head>
-    <title>Foraars-Symfoni</title>
-    <subtitle>(Allegro. Marche. Scherzo. Finale.)</subtitle>
-    <firstline>Det har regnet i Nat</firstline>
-    <source pages="218-225"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Foraars-Symfoni</title>
+  <subtitle>(Allegro. Marche. Scherzo. Finale.)</subtitle>
+  <firstline>Det har regnet i Nat</firstline>
+  <source pages="218-225"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5766,11 +5769,11 @@ en Krans af Duft og Lys og Melodier?
 
 <text id="drachmann2019101738">
 <head>
-    <title>Efteraar</title>
-    <subtitle>(In modo d'una sonata.)</subtitle>
-    <firstline>Min Sang, min Sang</firstline>
-    <source pages="226-232"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Efteraar</title>
+  <subtitle>(In modo d'una sonata.)</subtitle>
+  <firstline>Min Sang, min Sang</firstline>
+  <source pages="226-232"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5935,17 +5938,17 @@ Og saa synger »Brødrene« Amen!
 
 <section>
 <head>
-    <title>Akvareller undervejs</title>
+  <title>Akvareller undervejs</title>
 </head>
 <content>
 
 <text id="drachmann2019101739">
 <head>
-    <title>Viribus unitis</title>
-    <subtitle>(Indskriften paa Verdensudstillingsbygningens Hovedportal.)</subtitle>
-    <firstline>Bag Wurstelprateren, Dyrehavsbakken</firstline>
-    <source pages="235-239"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Viribus unitis</title>
+  <subtitle>(Indskriften paa Verdensudstillingsbygningens Hovedportal.)</subtitle>
+  <firstline>Bag Wurstelprateren, Dyrehavsbakken</firstline>
+  <source pages="235-239"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6071,10 +6074,10 @@ ad <w>disse</w> »Forenede Kræfter«.
 
 <text id="drachmann2019101740">
 <head>
-    <title>De vilde Bæster</title>
-    <firstline>Jeg slentred omkring i den hollandske By</firstline>
-    <source pages="240-242"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>De vilde Bæster</title>
+  <firstline>Jeg slentred omkring i den hollandske By</firstline>
+  <source pages="240-242"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6147,10 +6150,10 @@ bag eller foran et Gitter.
 
 <text id="drachmann2019101741">
 <head>
-    <title>Æneas</title>
-    <firstline>Murene faldt</firstline>
-    <source pages="243-245"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Æneas</title>
+  <firstline>Murene faldt</firstline>
+  <source pages="243-245"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6220,11 +6223,11 @@ som hans Indsidderliv var til Ende.
 
 <text id="drachmann2019101742">
 <head>
-    <title>Til Nogle derhjemme</title>
-    <subtitle>Tyrol. 76.</subtitle>
-    <firstline>Det er let nok at udpege Rifter og Spalter</firstline>
-    <source pages="246"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Til Nogle derhjemme</title>
+  <subtitle>Tyrol. 76.</subtitle>
+  <firstline>Det er let nok at udpege Rifter og Spalter</firstline>
+  <source pages="246"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6246,11 +6249,11 @@ Det er let nok at udpege Rifter og Spalter
 
 <text id="drachmann2019101743">
 <head>
-    <title>Konkylje</title>
-    <subtitle>München. 76. Januar.</subtitle>
-    <firstline>Spærret og lukket af Frost og Sne</firstline>
-    <source pages="247-248"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Konkylje</title>
+  <subtitle>München. 76. Januar.</subtitle>
+  <firstline>Spærret og lukket af Frost og Sne</firstline>
+  <source pages="247-248"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6294,11 +6297,11 @@ Oceanet er med mig paa Rejse!
 
 <text id="drachmann2019101744">
 <head>
-    <title>Sommer i Gurre</title>
-    <subtitle>Juli 1876.</subtitle>
-    <firstline>Solen er til Hvile, den slukte sit Lys</firstline>
-    <source pages="249-255"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Sommer i Gurre</title>
+  <subtitle>Juli 1876.</subtitle>
+  <firstline>Solen er til Hvile, den slukte sit Lys</firstline>
+  <source pages="249-255"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6472,10 +6475,10 @@ det Folk, som har drømt saa længe.<note>længe.] længe</note>
 
 <text id="drachmann2019101745">
 <head>
-    <title>I Jægerherberget</title>
-    <firstline>Skub mig den Kande tilbage</firstline>
-    <source pages="256-258"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>I Jægerherberget</title>
+  <firstline>Skub mig den Kande tilbage</firstline>
+  <source pages="256-258"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6534,10 +6537,10 @@ hvem der var uerfaren som Du! . . . .
 
 <text id="drachmann2019101746">
 <head>
-    <title>Go ahead!</title>
-    <firstline>Fortælle! om hvad? Naa, De mener en Stump</firstline>
-    <source pages="259-261"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Go ahead!</title>
+  <firstline>Fortælle! om hvad? Naa, De mener en Stump</firstline>
+  <source pages="259-261"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6606,10 +6609,10 @@ det var: Baadsmand — Farvel — go ahead!
 
 <text id="drachmann2019101747">
 <head>
-    <title>Henover en Valplads</title>
-    <firstline>Det var aarle om Morgnen, de drog fra deres Hjem</firstline>
-    <source pages="262-263"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Henover en Valplads</title>
+  <firstline>Det var aarle om Morgnen, de drog fra deres Hjem</firstline>
+  <source pages="262-263"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6651,10 +6654,10 @@ og Aftenskyen hørte deres Klage.
 
 <text id="drachmann2019101748">
 <head>
-    <title>I Paradiset</title>
-    <firstline>Som af en Febersøvn var Jorden vaagnet</firstline>
-    <source pages="264-268"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>I Paradiset</title>
+  <firstline>Som af en Febersøvn var Jorden vaagnet</firstline>
+  <source pages="264-268"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6787,10 +6790,10 @@ Hun sov. I Drømme hun til Adam smilte.
 
 <text id="drachmann2019101749">
 <head>
-    <title>Turnéringen</title>
-    <firstline>Herolderne ud med Staven ivejret</firstline>
-    <source pages="269-272"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Turnéringen</title>
+  <firstline>Herolderne ud med Staven ivejret</firstline>
+  <source pages="269-272"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6885,10 +6888,10 @@ men <w>Sangeren</w> større. Og her er hans Løn!«
 
 <text id="drachmann2019101750">
 <head>
-    <title>Rødhuder</title>
-    <firstline>Hvor Alt dog omkring mig er stille</firstline>
-    <source pages="273-277"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Rødhuder</title>
+  <firstline>Hvor Alt dog omkring mig er stille</firstline>
+  <source pages="273-277"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6996,11 +6999,11 @@ de kommer snart hjem igen!
 
 <text id="drachmann2019101751">
 <head>
-    <title>Arc de Triomphe de l'Étoile</title>
-    <subtitle>Paris. Januar 1877.</subtitle>
-    <firstline>Jeg kløved den brusende Menneskeflod</firstline>
-    <source pages="278-280"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Arc de Triomphe de l'Étoile</title>
+  <subtitle>Paris. Januar 1877.</subtitle>
+  <firstline>Jeg kløved den brusende Menneskeflod</firstline>
+  <source pages="278-280"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -7072,22 +7075,22 @@ og synge paa hver en erobret Plet
 
 <section>
 <head>
-    <title>Døgnets Psalmer</title>
+  <title>Døgnets Psalmer</title>
 </head>
 <content>
 
 <section level="2">
 <head>
-    <title>Sange til en Søster</title>
+  <title>Sange til en Søster</title>
 </head>
 <content>
 
 <text id="drachmann1999110903">
 <head>
-    <title><num>Indgang</num>Vidt har jeg flakket i Verden</title>
-    <firstline>Vidt har jeg flakket i Verden</firstline>
-    <source pages="283-284"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>Indgang</num>Vidt har jeg flakket i Verden</title>
+  <firstline>Vidt har jeg flakket i Verden</firstline>
+  <source pages="283-284"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -7123,10 +7126,10 @@ da den rejste Dig denne Sten.
 
 <text id="drachmann1999110904">
 <head>
-    <title><num>1.</num>Jeg lægger Alting for din Fod</title>
-    <firstline>Jeg lægger Alting for din Fod</firstline>
-    <source pages="285-286"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>1.</num>Jeg lægger Alting for din Fod</title>
+  <firstline>Jeg lægger Alting for din Fod</firstline>
+  <source pages="285-286"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -7172,10 +7175,10 @@ saa lad os se, hvor langt der er tilbage!
 
 <text id="drachmann1999110905">
 <head>
-    <title><num>2.</num>Rundtomkring ved Søen</title>
-    <firstline>Rundtomkring ved Søen</firstline>
-    <source pages="287-288"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>2.</num>Rundtomkring ved Søen</title>
+  <firstline>Rundtomkring ved Søen</firstline>
+  <source pages="287-288"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -7224,10 +7227,10 @@ under Aftenvinden
 
 <text id="drachmann1879a0">
 <head>
-    <title><num>3.</num>Jeg hører i Natten</title>
-    <firstline>Jeg hører i Natten</firstline>
-    <source pages="289-290"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>3.</num>Jeg hører i Natten</title>
+  <firstline>Jeg hører i Natten</firstline>
+  <source pages="289-290"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -7272,10 +7275,10 @@ Jeg iler i Natten
 
 <text id="drachmann1999110909">
 <head>
-    <title><num>4.</num>Jeg hører dem alle sige</title>
-    <firstline>Jeg hører dem alle sige</firstline>
-    <source pages="291-292"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>4.</num>Jeg hører dem alle sige</title>
+  <firstline>Jeg hører dem alle sige</firstline>
+  <source pages="291-292"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -7320,10 +7323,10 @@ med stormende Hjærte jeg gik?
 
 <text id="drachmann1999111001">
 <head>
-    <title><num>5.</num>Kan I vel give mig gode Raad</title>
-    <firstline>Kan I vel give mig gode Raad</firstline>
-    <source pages="293"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>5.</num>Kan I vel give mig gode Raad</title>
+  <firstline>Kan I vel give mig gode Raad</firstline>
+  <source pages="293"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -7353,10 +7356,10 @@ brugte mod Livets Braad?
 
 <text id="drachmann1999111002">
 <head>
-    <title><num>6.</num>Jeg tænkte at træde i Kirken ind</title>
-    <firstline>Jeg tænkte at træde i Kirken ind</firstline>
-    <source pages="294-295"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>6.</num>Jeg tænkte at træde i Kirken ind</title>
+  <firstline>Jeg tænkte at træde i Kirken ind</firstline>
+  <source pages="294-295"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -7395,10 +7398,10 @@ og sig selv i Mesteren kender.
 
 <text id="drachmann1999111003">
 <head>
-    <title><num>7.</num>Misund mig ej den Krans, jeg vandt</title>
-    <firstline>Misund mig ej den Krans, jeg vandt</firstline>
-    <source pages="296-297"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>7.</num>Misund mig ej den Krans, jeg vandt</title>
+  <firstline>Misund mig ej den Krans, jeg vandt</firstline>
+  <source pages="296-297"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -7437,11 +7440,11 @@ den plukked jeg paa eders egne Grave.
 
 <text id="drachmann1999111011">
 <head>
-    <title><num>8.</num>Min Kraft er brudt -</title>
-    <firstline>Min Kraft er brudt. Hvem bygger atter op</firstline>
-    <source pages="298"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>8.</num>Min Kraft er brudt -</title>
+  <firstline>Min Kraft er brudt. Hvem bygger atter op</firstline>
+  <source pages="298"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -7468,10 +7471,10 @@ og jeg skal ud til Middag hos min Dronning . . . .!
 
 <text id="drachmann1999111012">
 <head>
-    <title><num>9.</num>Vi lo jo før saa længe</title>
-    <firstline>Vi lo jo før saa længe</firstline>
-    <source pages="299-300"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>9.</num>Vi lo jo før saa længe</title>
+  <firstline>Vi lo jo før saa længe</firstline>
+  <source pages="299-300"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -7507,10 +7510,10 @@ Foroven skærmer Løvet
 
 <text id="drachmann1999111013">
 <head>
-    <title><num>10.</num>Hvorfor vække disse Minder</title>
-    <firstline>Hvorfor vække disse Minder</firstline>
-    <source pages="301-302"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>10.</num>Hvorfor vække disse Minder</title>
+  <firstline>Hvorfor vække disse Minder</firstline>
+  <source pages="301-302"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -7549,10 +7552,10 @@ Hvorfor vække bitre Minder?
 
 <text id="drachmann1999111020">
 <head>
-    <title><num>11.</num>Der spilles et dundrende Stykke</title>
-    <firstline>Der spilles et dundrende Stykke</firstline>
-    <source pages="303-304"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>11.</num>Der spilles et dundrende Stykke</title>
+  <firstline>Der spilles et dundrende Stykke</firstline>
+  <source pages="303-304"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -7588,10 +7591,10 @@ sig selv har i Kampen tabt.
 
 <text id="drachmann1999111021">
 <head>
-    <title><num>12.</num>Jeg hørte - jeg laa selv og blødte ved Siden</title>
-    <firstline>Jeg hørte - jeg laa selv og blødte ved Siden</firstline>
-    <source pages="305-306"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>12.</num>Jeg hørte - jeg laa selv og blødte ved Siden</title>
+  <firstline>Jeg hørte - jeg laa selv og blødte ved Siden</firstline>
+  <source pages="305-306"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -7625,10 +7628,10 @@ jeg gik efter Lyset. Jeg tav, og de sang.
 
 <text id="drachmann1999111022">
 <head>
-    <title><num>13.</num>Din Guddom steg fra Piedestalen ned</title>
-    <firstline>Din Guddom steg fra Piedestalen ned</firstline>
-    <source pages="307"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>13.</num>Din Guddom steg fra Piedestalen ned</title>
+  <firstline>Din Guddom steg fra Piedestalen ned</firstline>
+  <source pages="307"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -7655,10 +7658,10 @@ Vær rolig Du, som har i Gave bragt
 
 <text id="drachmann1999111023">
 <head>
-    <title><num>14.</num>Jeg takker eder -</title>
-    <firstline>Jeg takker eder, I kære Venner</firstline>
-    <source pages="308-309"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>14.</num>Jeg takker eder -</title>
+  <firstline>Jeg takker eder, I kære Venner</firstline>
+  <source pages="308-309"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -7689,10 +7692,10 @@ Hvis end som Skyldner I mig betragter
 
 <text id="drachmann1999111024">
 <head>
-    <title><num>15.</num>Tag imod mig -</title>
-    <firstline>Tag imod mig, tag imod mig</firstline>
-    <source pages="310"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>15.</num>Tag imod mig -</title>
+  <firstline>Tag imod mig, tag imod mig</firstline>
+  <source pages="310"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -7719,10 +7722,10 @@ den er <w>her</w>; vi er dens Blod.
 
 <text id="drachmann1999111025">
 <head>
-    <title><num>16.</num>Kun trofast Kærlighed udslette kan</title>
-    <firstline>Kun trofast Kærlighed udslette kan</firstline>
-    <source pages="311"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>16.</num>Kun trofast Kærlighed udslette kan</title>
+  <firstline>Kun trofast Kærlighed udslette kan</firstline>
+  <source pages="311"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -7745,10 +7748,10 @@ og Rusten gaar vel af engang med Tiden.
 
 <text id="drachmann1999111026">
 <head>
-    <title><num>17.</num>Lad Tiden gaa -</title>
-    <firstline>Lad Tiden gaa, lad Tiden gaa</firstline>
-    <source pages="312-313"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>17.</num>Lad Tiden gaa -</title>
+  <firstline>Lad Tiden gaa, lad Tiden gaa</firstline>
+  <source pages="312-313"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -7790,16 +7793,16 @@ paa Væggen som et Smykke.
 
 <section>
 <head>
-    <title>Af Rejsepostillen</title>
+  <title>Af Rejsepostillen</title>
 </head>
 <content>
 
 <text id="drachmann2019101770">
 <head>
-    <title><num>1.</num>Dér laa den og lod sig af Solen beskinne</title>
-    <firstline>Dér laa den og lod sig af Solen beskinne</firstline>
-    <source pages="314-317"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>1.</num>Dér laa den og lod sig af Solen beskinne</title>
+  <firstline>Dér laa den og lod sig af Solen beskinne</firstline>
+  <source pages="314-317"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -7878,10 +7881,10 @@ nedstemmer jeg ydmyg Tonen.
 
 <text id="drachmann2019101771">
 <head>
-    <title><num>2.</num>Sig, husker Du -</title>
-    <firstline>Sig, husker Du, der var en Mand</firstline>
-    <source pages="318-319"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>2.</num>Sig, husker Du -</title>
+  <firstline>Sig, husker Du, der var en Mand</firstline>
+  <source pages="318-319"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -7912,10 +7915,10 @@ Nu kommer han fra Værket hjem
 
 <text id="drachmann2019101772">
 <head>
-    <title><num>3.</num>Hun var for ringe til at fatte</title>
-    <firstline>Hun var for ringe til at fatte</firstline>
-    <source pages="320-321"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>3.</num>Hun var for ringe til at fatte</title>
+  <firstline>Hun var for ringe til at fatte</firstline>
+  <source pages="320-321"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -7950,10 +7953,10 @@ og saa en Medaljon og nogle Ringe.
 
 <text id="drachmann2019101773">
 <head>
-    <title><num>4.</num>Men Rekonvalescenter</title>
-    <firstline>Men Rekonvalescenter</firstline>
-    <source pages="322-323"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>4.</num>Men Rekonvalescenter</title>
+  <firstline>Men Rekonvalescenter</firstline>
+  <source pages="322-323"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -7987,10 +7990,10 @@ og siden desto sødere man sover.
 
 <text id="drachmann2019101774">
 <head>
-    <title><num>5.</num>Jeg fandt hende ikke -</title>
-    <firstline>Jeg fandt hende ikke. Og Solen steg</firstline>
-    <source pages="324-325"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>5.</num>Jeg fandt hende ikke -</title>
+  <firstline>Jeg fandt hende ikke. Og Solen steg</firstline>
+  <source pages="324-325"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -8034,10 +8037,10 @@ jeg kom, jeg saa’ og — jeg gik.
 
 <text id="drachmann2019101775">
 <head>
-    <title><num>6.</num>Ja, se ham kun -</title>
-    <firstline>Ja, se ham kun, i Kreds med løftet Bæger</firstline>
-    <source pages="326-327"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>6.</num>Ja, se ham kun -</title>
+  <firstline>Ja, se ham kun, i Kreds med løftet Bæger</firstline>
+  <source pages="326-327"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -8073,10 +8076,10 @@ de Allerfleste har jo lært at svømme.
 
 <text id="drachmann2019101776">
 <head>
-    <title><num>7.</num>Og saa -</title>
-    <firstline>Og saa - saa aander op mit Hjærte atter</firstline>
-    <source pages="328-329"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>7.</num>Og saa -</title>
+  <firstline>Og saa - saa aander op mit Hjærte atter</firstline>
+  <source pages="328-329"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -8110,10 +8113,10 @@ og Stemmen kommer nok igen ad Aare.
 
 <text id="drachmann2019101777">
 <head>
-    <title><num>8.</num>Fred med jert Støv!</title>
-    <firstline>Fred med jert Støv</firstline>
-    <source pages="330-332"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>8.</num>Fred med jert Støv!</title>
+  <firstline>Fred med jert Støv</firstline>
+  <source pages="330-332"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -8178,16 +8181,16 @@ I søger, og søger med Rette:
 
 <section>
 <head>
-    <title>Nye Sange ved Havet</title>
+  <title>Nye Sange ved Havet</title>
 </head>
 <content>
 
 <text id="drachmann1999110906">
 <head>
-    <title>Gensyn</title>
-    <firstline>Vær hilset igen</firstline>
-    <source pages="333-335"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Gensyn</title>
+  <firstline>Vær hilset igen</firstline>
+  <source pages="333-335"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -8247,10 +8250,10 @@ anende, Hav, hvor din Lovgiver bor.
 
 <text id="drachmann1999110902">
 <head>
-    <title>Lyse Nætter</title>
-    <firstline>Paa Stranden skælver ej det mindste Blad</firstline>
-    <source pages="336"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Lyse Nætter</title>
+  <firstline>Paa Stranden skælver ej det mindste Blad</firstline>
+  <source pages="336"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -8268,10 +8271,10 @@ Paa Stranden skælver ej det mindste Blad
 
 <text id="drachmann2019101780">
 <head>
-    <title>Skænk mig -</title>
-    <firstline>Skænk mig, Du stolte Hav, din dybe Ro</firstline>
-    <source pages="337-338"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Skænk mig -</title>
+  <firstline>Skænk mig, Du stolte Hav, din dybe Ro</firstline>
+  <source pages="337-338"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -8304,10 +8307,10 @@ At maale sig, Atomet, med en Sum
 
 <text id="drachmann1999110907">
 <head>
-    <title>Anadyomene</title>
-    <firstline>Ja, jeg har elsket, Hav, det skal Du vide</firstline>
-    <source pages="339-340"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Anadyomene</title>
+  <firstline>Ja, jeg har elsket, Hav, det skal Du vide</firstline>
+  <source pages="339-340"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -8340,10 +8343,10 @@ Ja, jeg har elsket. Hav, din store Scene
 
 <text id="drachmann1999110908">
 <head>
-    <title>Pirater</title>
-    <firstline>Jeg grebes ej af Rædsel ved din Stemme</firstline>
-    <source pages="341-342"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Pirater</title>
+  <firstline>Jeg grebes ej af Rædsel ved din Stemme</firstline>
+  <source pages="341-342"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -8395,10 +8398,10 @@ mens Hjemmets Kyster Skibet: Held! tilvinker.
 
 <text id="drachmann2019101783">
 <head>
-    <title>Jeg drømte -</title>
-    <firstline>Jeg drømte, jeg sejled saa sagtelig hen</firstline>
-    <source pages="343-348"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Jeg drømte -</title>
+  <firstline>Jeg drømte, jeg sejled saa sagtelig hen</firstline>
+  <source pages="343-348"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -8553,10 +8556,10 @@ til færøisk Repræsentant.
 
 <text id="drachmann2019101784">
 <head>
-    <title>Og har jeg -</title>
-    <firstline>Og har jeg en skrøbelig Jolle blot</firstline>
-    <source pages="349-350"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Og har jeg -</title>
+  <firstline>Og har jeg en skrøbelig Jolle blot</firstline>
+  <source pages="349-350"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -8596,10 +8599,10 @@ en sjelden duelig Dykker!
 
 <text id="drachmann1999111030">
 <head>
-    <title>Kølvand</title>
-    <firstline>Naar fra Havstokken ud paa det vigende Blaa</firstline>
-    <source pages="351-353"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Kølvand</title>
+  <firstline>Naar fra Havstokken ud paa det vigende Blaa</firstline>
+  <source pages="351-353"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -8665,10 +8668,10 @@ Det stiger der bagved med raslende Brag,
 
 <text id="drachmann2019101786">
 <head>
-    <title>Bryd, Bølger, frem!</title>
-    <firstline>Bryd, Bølger, frem</firstline>
-    <source pages="354-356"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Bryd, Bølger, frem!</title>
+  <firstline>Bryd, Bølger, frem</firstline>
+  <source pages="354-356"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -8744,10 +8747,10 @@ han være sig stor eller liden,
 
 <text id="drachmann1999111010">
 <head>
-    <title>Vale!</title>
-    <firstline>Vel mig, vel Dig, at Havet har lagt</firstline>
-    <source pages="357-359"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Vale!</title>
+  <firstline>Vel mig, vel Dig, at Havet har lagt</firstline>
+  <source pages="357-359"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>

@@ -1,28 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="1796" author="bruunmc" status="incomplete" type="poetry">
 <workhead>
-   <title>Digte fra »Aristokraternes Catechismus«</title>
-   <year>1796</year>
-   <notes>
-      <note>Teksten følger Malthe Conrad Bruun: <i>Akristokraternes Catechismus</i>, K.F. Plesner (red.), Fagskolen for Boghaandværk, Kbh., 1945.</note>
-      <note>Noter og henvisninger skylder til ovenståendes rige noteapparat.</note>
-   </notes>
-   <pictures>
-       <picture type="titlepage" src="1796-p1.jpg">Titelbladet til <i>Aristokraternes Catechismus</i> (1796). ,,Aristokraternes / Catechismus / eller / kort og tydelig Anviisning / til den / aleene saliggørende politiske Troe. / Med et Angang / af aristokratiske Psalmer / Til Troens Bestyrkelse hos de Eenfoldige / og de Vantroendes Omvendelse.''</picture>
-   </pictures>
-   <quality>korrektur1</quality>
-   <!-- TODO: Værket indeholder flere digte indlejret i prosa-teksterne. Disse i ikke medtaget på Kalliope i første omgang. -->
+  <title>Digte fra »Aristokraternes Catechismus«</title>
+  <year>1796</year>
+  <notes>
+    <note>Noter og henvisninger skylder til ovenståendes rige noteapparat.</note>
+  </notes>
+  <source>Malthe Conrad Bruun: <i>Akristokraternes Catechismus</i>, K.F. Plesner (red.), Fagskolen for Boghaandværk, Kbh., 1945.</source>
+  <pictures>
+    <picture type="titlepage" src="1796-p1.jpg">Titelbladet til <i>Aristokraternes Catechismus</i> (1796). ,,Aristokraternes / Catechismus / eller / kort og tydelig Anviisning / til den / aleene saliggørende politiske Troe. / Med et Angang / af aristokratiske Psalmer / Til Troens Bestyrkelse hos de Eenfoldige / og de Vantroendes Omvendelse.''</picture>
+  </pictures>
+  <quality>korrektur1</quality>
+  <!-- TODO: Værket indeholder flere digte indlejret i prosa-teksterne. Disse i ikke medtaget på Kalliope i første omgang. -->
 </workhead>
 <workbody>
 
 <text id="bruunmc2017101302">
 <head>
-    <title>Dedikation</title>
-    <firstline>Ej Kaps, Tokajs og Cyprens Viin</firstline>
-    <notes>
-      <note>Teksten følger Malthe Conrad Bruun: <i>Akristokraternes Catechismus</i>, K.F. Plesner (red.), Fagskolen for Boghaandværk, Kbh., 1945, pp. 5-7.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Dedikation</title>
+  <firstline>Ej Kaps, Tokajs og Cyprens Viin</firstline>
+  <source pages="5-7">Malthe Conrad Bruun: <i>Akristokraternes Catechismus</i>, K.F. Plesner (red.), Fagskolen for Boghaandværk, Kbh., 1945.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -100,13 +98,11 @@ Og ei engang Prolog!
 
 <text id="bruunmc2017101301">
 <head>
-    <title>Fortale</title>
-    <firstline>Genie var fordum Politiets Plage</firstline>
-    <notes>
-      <note>Teksten følger Malthe Conrad Bruun: <i>Akristokraternes Catechismus</i>, K.F. Plesner (red.), Fagskolen for Boghaandværk, Kbh., 1945, pp. 9-12.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
-   <keywords>zetlitz</keywords>
+  <title>Fortale</title>
+  <firstline>Genie var fordum Politiets Plage</firstline>
+  <source pages="9-12">Malthe Conrad Bruun: <i>Akristokraternes Catechismus</i>, K.F. Plesner (red.), Fagskolen for Boghaandværk, Kbh., 1945.</source>
+  <quality>korrektur1,kilde,side</quality>
+  <keywords>zetlitz</keywords>
 </head>
 <body>
 <poetry>
@@ -204,19 +200,17 @@ Paa Friheds Gruus din Marmorthrone staae!
 
 <section>
 <head>
-    <title>Aristokratiske Psalmer</title>
+  <title>Aristokratiske Psalmer</title>
 </head>
 <content>
 
 <text id="bruunmc2017101316">
 <head>
-    <title>Begyndelses-Sang</title>
-    <toctitle><num>1.</num>Begyndelses-Sang</toctitle>
-    <firstline>O Kongemagt, vi love dig</firstline>
-    <notes>
-      <note>Teksten følger Malthe Conrad Bruun: <i>Akristokraternes Catechismus</i>, K.F. Plesner (red.), Fagskolen for Boghaandværk, Kbh., 1945, pp. 31-32.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Begyndelses-Sang</title>
+  <toctitle><num>1.</num>Begyndelses-Sang</toctitle>
+  <firstline>O Kongemagt, vi love dig</firstline>
+  <source pages="31-32">Malthe Conrad Bruun: <i>Akristokraternes Catechismus</i>, K.F. Plesner (red.), Fagskolen for Boghaandværk, Kbh., 1945.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -269,14 +263,14 @@ Skal evig gaae i Børnebaand!
 
 <text id="bruunmc2017101317">
 <head>
-    <title>Daglig Bøn</title>
-    <toctitle><num>2.</num>Daglig Bøn</toctitle>
-    <firstline>Stjerner og Titler</firstline>
-    <notes>
-      <note>Teksten følger Malthe Conrad Bruun: <i>Akristokraternes Catechismus</i>, K.F. Plesner (red.), Fagskolen for Boghaandværk, Kbh., 1945, pp. 32-33..</note>
-      <note>Melodien er fra Rasmus Frankenau: <xref poem="frankenau2001070304"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Daglig Bøn</title>
+  <toctitle><num>2.</num>Daglig Bøn</toctitle>
+  <firstline>Stjerner og Titler</firstline>
+  <notes>
+    <note>Melodien er fra Rasmus Frankenau: <xref poem="frankenau2001070304"/>.</note>
+  </notes>
+  <source>Malthe Conrad Bruun: <i>Akristokraternes Catechismus</i>, K.F. Plesner (red.), Fagskolen for Boghaandværk, Kbh., 1945, pp. 32-33..</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -312,14 +306,12 @@ Om mig jeg skue dem!
 
 <text id="bruunmc2017101318">
 <head>
-    <title>Et stille Suk</title>
-    <subtitle>(naar man læser Aviserne)</subtitle>
-    <toctitle><num>3.</num>Et stille Suk</toctitle>
-    <firstline>Gud, lad dog eengang Hævnens Torden vække</firstline>
-    <notes>
-      <note>Teksten følger Malthe Conrad Bruun: <i>Akristokraternes Catechismus</i>, K.F. Plesner (red.), Fagskolen for Boghaandværk, Kbh., 1945, pp. 33-34..</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Et stille Suk</title>
+  <subtitle>(naar man læser Aviserne)</subtitle>
+  <toctitle><num>3.</num>Et stille Suk</toctitle>
+  <firstline>Gud, lad dog eengang Hævnens Torden vække</firstline>
+  <source>Malthe Conrad Bruun: <i>Akristokraternes Catechismus</i>, K.F. Plesner (red.), Fagskolen for Boghaandværk, Kbh., 1945, pp. 33-34..</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -336,14 +328,14 @@ Udvalgte Hær! Med Trin, som Langulaffers,
 
 <text id="bruunmc2017101319">
 <head>
-    <title>Aristokratiske Skaaler</title>
-    <toctitle><num>4.</num>Aristokratiske Skaaler</toctitle>
-    <firstline>Bort Jacobinskhed fra dette Lag</firstline>
-    <notes>
-      <note>Teksten følger Malthe Conrad Bruun: <i>Akristokraternes Catechismus</i>, K.F. Plesner (red.), Fagskolen for Boghaandværk, Kbh., 1945, pp. 34-37.</note>
-      <note>Melodien er fra Jens Zetlitz' <xref poem="zetlitz2017101301"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Aristokratiske Skaaler</title>
+  <toctitle><num>4.</num>Aristokratiske Skaaler</toctitle>
+  <firstline>Bort Jacobinskhed fra dette Lag</firstline>
+  <notes>
+    <note>Melodien er fra Jens Zetlitz' <xref poem="zetlitz2017101301"/>.</note>
+  </notes>
+  <source pages="34-37">Malthe Conrad Bruun: <i>Akristokraternes Catechismus</i>, K.F. Plesner (red.), Fagskolen for Boghaandværk, Kbh., 1945.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -435,15 +427,15 @@ Til Kamp! Til Kamp imod Kjætterskokken!
 
 <text id="bruunmc2003111001">
 <head>
-   <title>Aristokratisk Bordpsalme</title>
-   <toctitle><num>5.</num>Aristokratisk Bordpsalme</toctitle>
-   <firstline>Hvad bryder jeg om Frihed mig</firstline>
-   <notes>
-      <note>Teksten følger Malthe Conrad Bruun: <i>Akristokraternes Catechismus</i>, K.F. Plesner (red.), Fagskolen for Boghaandværk, Kbh., 1945, pp. 37-39.</note>
-      <note>Melodien er fra Jens Zetlitz' vise <xref poem="zetlitz2001070701"/>.</note>
-      <note type="credits">Bidrag fra Sven Sørensen.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Aristokratisk Bordpsalme</title>
+  <toctitle><num>5.</num>Aristokratisk Bordpsalme</toctitle>
+  <firstline>Hvad bryder jeg om Frihed mig</firstline>
+  <notes>
+    <note>Melodien er fra Jens Zetlitz' vise <xref poem="zetlitz2001070701"/>.</note>
+    <note type="credits">Bidrag fra Sven Sørensen.</note>
+  </notes>
+  <source pages="37-39">Malthe Conrad Bruun: <i>Akristokraternes Catechismus</i>, K.F. Plesner (red.), Fagskolen for Boghaandværk, Kbh., 1945.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>

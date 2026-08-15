@@ -13,6 +13,10 @@ describe('opengraph helpers', () => {
     expect(trimmedDescription(null)).toBeNull();
   });
 
+  it('limits descriptions to 125 characters', () => {
+    expect(trimmedDescription([['a'.repeat(200), {}]])).toHaveLength(125);
+  });
+
   it('builds a poet image url when a square portrait exists', () => {
     expect(
       poetImage({

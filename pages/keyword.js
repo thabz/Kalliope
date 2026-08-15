@@ -8,6 +8,7 @@ import { kalliopeMenu } from '../components/menu.js';
 import Page from '../components/page.js';
 import SidebarPictures from '../components/sidebarpictures.js';
 import SidebarSplit from '../components/sidebarsplit.js';
+import Stack from '../components/stack.js';
 import SubHeading from '../components/subheading.js';
 import TextContent from '../components/textcontent.js';
 import ErrorPage from './error.js';
@@ -25,16 +26,13 @@ const KeywordPage = (props) => {
     <SidebarPictures pictures={keyword.pictures} lang={lang} />
   );
 
-  let sidebar = [];
-
-  if (keyword.has_footnotes || keyword.pictures.length > 0) {
-    if (keyword.has_footnotes) {
-      sidebar.push(<FootnoteList key="footnotelist" />);
-    }
-    if (keyword.pictures.length > 0) {
-      sidebar.push(<div key="sidebarpictures">{renderedPictures}</div>);
-    }
-  }
+  const sidebar =
+    keyword.has_footnotes || keyword.pictures.length > 0 ? (
+      <Stack spacing="20px">
+        {keyword.has_footnotes ? <FootnoteList /> : null}
+        {keyword.pictures.length > 0 ? renderedPictures : null}
+      </Stack>
+    ) : null;
 
   const crumbs = [
     ...kalliopeCrumbs(lang),

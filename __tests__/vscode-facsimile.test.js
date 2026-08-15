@@ -131,4 +131,53 @@ describe('VS Code Kalliope facsimile resolver', () => {
       facsimilePages: [8, 16],
     });
   });
+
+  it('uses the latest page break before the cursor', () => {
+    const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<kalliopework>
+  <workhead>
+    <source facsimile="book.pdf" facsimile-pages-num="40" facsimile-pages-offset="8">Book</source>
+  </workhead>
+  <workbody>
+    <text id="poem1">
+      <head>
+        <title>Poem One</title>
+        <source pages="11-13"/>
+      </head>
+      <body><poetry>første<pb n="12" facs="019.jpg"/>anden<pb n="13" facs="020.jpg"/>sidste</poetry></body>
+    </text>
+  </workbody>
+</kalliopework>`;
+
+    expect(resolveAt(xml, 'første')).toMatchObject({
+      facsimilePages: [19, 21],
+    });
+    expect(resolveAt(xml, 'anden')).toMatchObject({
+      facsimilePages: ['12'],
+      pages: [{ page: '12', filename: '019.jpg' }],
+    });
+    expect(resolveAt(xml, 'sidste')).toMatchObject({
+      facsimilePages: ['13'],
+      pages: [{ page: '13', filename: '020.jpg' }],
+    });
+  });
+
+  it('ignores page breaks without facs and keeps the source interval', () => {
+    const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<kalliopework>
+  <workhead>
+    <source facsimile="book" facsimile-pages-num="40" facsimile-pages-offset="8">Book</source>
+  </workhead>
+  <workbody>
+    <text id="poem1">
+      <head><source pages="11-12"/></head>
+      <body><poetry>første<pb n="12"/>anden</poetry></body>
+    </text>
+  </workbody>
+</kalliopework>`;
+
+    expect(resolveAt(xml, 'anden')).toMatchObject({
+      facsimilePages: [19, 20],
+    });
+  });
 });

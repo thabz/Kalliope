@@ -7,8 +7,10 @@ import * as Links from '../components/links.js';
 import { kalliopeMenu } from '../components/menu.js';
 import Note from '../components/note.js';
 import Page from '../components/page.js';
+import PageLead from '../components/pagelead.js';
 import SidebarPictures from '../components/sidebarpictures.js';
 import SidebarSplit from '../components/sidebarsplit.js';
+import Stack from '../components/stack.js';
 import SubHeading from '../components/subheading.js';
 import TextContent from '../components/textcontent.js';
 import TwoColumns from '../components/twocolumns.js';
@@ -44,15 +46,13 @@ const About = (props) => {
       </Note>
     );
   });
-  let sidebar = [];
-  if (keyword.notes.length > 0 || keyword.pictures.length > 0) {
-    if (keyword.pictures.length > 0) {
-      sidebar = sidebar.concat(renderedPictures);
-    }
-    if (keyword.notes.length > 0) {
-      sidebar = sidebar.concat(renderedNotes);
-    }
-  }
+  const sidebar =
+    keyword.notes.length > 0 || keyword.pictures.length > 0 ? (
+      <Stack spacing="20px">
+        {keyword.pictures.length > 0 ? renderedPictures : null}
+        {renderedNotes}
+      </Stack>
+    ) : null;
   const body = (
     <TextContent
       contentHtml={keyword.content_html}
@@ -79,6 +79,12 @@ const About = (props) => {
     pageBody = (
       <div className="thanks-list">
         <SubHeading>{keyword.title}</SubHeading>
+        <PageLead>
+          {_(
+            'Kalliope er gennem årene blevet til med hjælp fra mange læsere og bidragydere. Her takker vi dem, der har sendt digte, billeder, oplysninger og rettelser eller på anden måde har hjulpet samlingen.',
+            lang
+          )}
+        </PageLead>
         <TwoColumns>{body}</TwoColumns>
         <style jsx>{`
           .thanks-list {
