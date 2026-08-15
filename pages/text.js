@@ -63,7 +63,7 @@ const Bladrer = (props) => {
   );
 };
 
-const Refs = ({ refs, contentLang, currentPoetId }) => {
+const Refs = ({ refs, contentLang, currentPoetId, spacing = '16px' }) => {
   const lang = useContext(LangContext);
   const renderedRefs = refs.map((ref, i) => {
     if (Array.isArray(ref)) {
@@ -98,14 +98,8 @@ const Refs = ({ refs, contentLang, currentPoetId }) => {
 
   return (
     <div className="refs">
-      {renderedRefs}
+      <Stack spacing={spacing}>{renderedRefs}</Stack>
       <style jsx>{`
-        .reference {
-          margin-bottom: 16px;
-        }
-        .reference:last-child {
-          margin-bottom: 0;
-        }
         :global(a.reference-title) {
           display: inline-block;
           hyphens: none;
@@ -497,6 +491,7 @@ const TextPage = (props) => {
             refs={text.refs}
             contentLang={text.content_lang}
             currentPoetId={poet.id}
+            spacing="5px"
           />
         </MetadataGroup>
       ) : null}
@@ -506,6 +501,7 @@ const TextPage = (props) => {
             refs={text.translations}
             contentLang={text.content_lang}
             currentPoetId={poet.id}
+            spacing="5px"
           />
         </MetadataGroup>
       ) : null}
@@ -521,13 +517,13 @@ const TextPage = (props) => {
     textPictures.length > 0
   ) {
     sidebar = (
-      <div>
+      <Stack spacing="20px">
         {renderedNotes}
         {renderedTextMetadata}
         <RelatedDateTexts texts={text.related_date_texts || []} lang={lang} />
         {renderedKeywords}
         {renderedPictures}
-      </div>
+      </Stack>
     );
   }
 
