@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1910" author="claussen" status="complete" type="poetry">
 <workhead>
-   <title>Eroter og Fauner</title>
-   <year>1910</year>
-   <pictures>
-       <picture type="titlepage" src="1910-p1.jpg">Titelbladet til <i>Eroter og Fauner</i> (1910). ,,Sophus Claussen / Eroter og Fauner / En Række Digte // Gyldendalske Boghandel / Nordisk Forlag / MDCCCCX''.</picture>
-   </pictures>
-   <source facsimile="115408049413" facsimile-pages-num="104" facsimile-pages-offset="2">Sophus Claussen: <i>Eroter og Fauner</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910.</source>
+  <title>Eroter og Fauner</title>
+  <year>1910</year>
+  <pictures>
+    <picture type="titlepage" src="1910-p1.jpg">Titelbladet til <i>Eroter og Fauner</i> (1910). ,,Sophus Claussen / Eroter og Fauner / En Række Digte // Gyldendalske Boghandel / Nordisk Forlag / MDCCCCX''.</picture>
+  </pictures>
+  <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122143265405763" facsimile="115408049413" facsimile-pages-num="104" facsimile-pages-offset="2">Sophus Claussen: <i>Eroter og Fauner</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1910.</source>
 </workhead>
 <workbody>
 
 <text id="claussen200104131" variant="claussen2001122316">
 <head>
-   <title>Parken og Staden</title>
-   <toctitle>Parken og Staden</toctitle>
-   <indextitle>Parken og Staden</indextitle>
-   <firstline>Nu fyldes Parken af Skygger</firstline>
-   <source pages="7-8"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Parken og Staden</title>
+  <toctitle>Parken og Staden</toctitle>
+  <indextitle>Parken og Staden</indextitle>
+  <firstline>Nu fyldes Parken af Skygger</firstline>
+  <source pages="7-8"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -62,12 +61,12 @@ søger om deres Sokler.
 
 <text id="claussen200104132" variant="claussen2002012326">
 <head>
-   <title>Der vandrer en Pige</title>
-   <toctitle>Der vandrer en Pige</toctitle>
-   <indextitle>Der vandrer en Pige</indextitle>
-   <firstline>Der vandrer en Pige igennem vor By</firstline>
-   <source pages="9-10"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Der vandrer en Pige</title>
+  <toctitle>Der vandrer en Pige</toctitle>
+  <indextitle>Der vandrer en Pige</indextitle>
+  <firstline>Der vandrer en Pige igennem vor By</firstline>
+  <source pages="9-10"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -121,12 +120,12 @@ da spred nogle Blomster paa mit Bryst
 
 <text id="claussen200104133" variant="claussen2001031913">
 <head>
-   <title>Ringens Magi</title>
-   <toctitle>Ringens Magi</toctitle>
-   <indextitle>Ringens Magi</indextitle>
-   <firstline>Den trolovede Pige</firstline>
-   <source pages="11-12"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Ringens Magi</title>
+  <toctitle>Ringens Magi</toctitle>
+  <indextitle>Ringens Magi</indextitle>
+  <firstline>Den trolovede Pige</firstline>
+  <source pages="11-12"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -177,13 +176,13 @@ Naar Ringen er i Bomuld,
 
 <text id="claussen200104134" variant="claussen2001122325">
 <head>
-   <title>Il letto</title>
-   <subtitle>Til Signora Giovanna -</subtitle>
-   <toctitle>Il letto</toctitle>
-   <indextitle>Il letto</indextitle>
-   <firstline>Den Jærnseng med Kniplingepuder</firstline>
-   <source pages="13-16"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Il letto</title>
+  <subtitle>Til Signora Giovanna -</subtitle>
+  <toctitle>Il letto</toctitle>
+  <indextitle>Il letto</indextitle>
+  <firstline>Den Jærnseng med Kniplingepuder</firstline>
+  <source pages="13-16"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -285,14 +284,15 @@ som Kniplinger fra Valenciennes.
 </body>
 </text>
 
-<text id="claussen200104135">
+<text id="claussen200104135" variant="claussen2001031956">
 <head>
-   <title>I det vildeste Bjærgpas ...</title>
-   <toctitle>I det vildeste Bjærgpas ...</toctitle>
-   <indextitle>I det vildeste Bjærgpas ...</indextitle>
-   <firstline>I det vildeste Bjærgpas i Spanien</firstline>
-   <source pages="17-18"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>I det vildeste Bjærgpas ...</title>
+  <toctitle>I det vildeste Bjærgpas ...</toctitle>
+  <indextitle>I det vildeste Bjærgpas ...</indextitle>
+  <firstline>I det vildeste Bjærgpas i Spanien</firstline>
+  <!-- Ikke en variant af claussen2001031964: Selvstændige dele af samme digtkreds. -->
+  <source pages="17-18"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -336,12 +336,12 @@ Der fandtes Ørnereder
 
 <text id="claussen200104136" variant="claussen2003060121">
 <head>
-   <title>I Marts</title>
-   <toctitle>I Marts</toctitle>
-   <indextitle>I Marts</indextitle>
-   <firstline>Skal jeg mon rejse? skal jeg mon blive?</firstline>
-   <source pages="19"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>I Marts</title>
+  <toctitle>I Marts</toctitle>
+  <indextitle>I Marts</indextitle>
+  <firstline>Skal jeg mon rejse? skal jeg mon blive?</firstline>
+  <source pages="19"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -362,12 +362,12 @@ foraarsberuset hun venter mit Komme ...
 
 <text id="claussen200104137" variant="claussen2001031920">
 <head>
-   <title>I en Frugthave</title>
-   <toctitle>I en Frugthave</toctitle>
-   <indextitle>I en Frugthave</indextitle>
-   <firstline>Faldt der Storm over solstille Flade?</firstline>
-   <source pages="20-21"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>I en Frugthave</title>
+  <toctitle>I en Frugthave</toctitle>
+  <indextitle>I en Frugthave</indextitle>
+  <firstline>Faldt der Storm over solstille Flade?</firstline>
+  <source pages="20-21"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -418,12 +418,12 @@ skal blomstre og bære Frugt.
 
 <text id="claussen200104138" variant="claussen200103193">
 <head>
-   <title>Mos</title>
-   <toctitle>Mos</toctitle>
-   <indextitle>Mos</indextitle>
-   <firstline>Jeg sprang i Høstmorgnens solløse Stund</firstline>
-   <source pages="22"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Mos</title>
+  <toctitle>Mos</toctitle>
+  <indextitle>Mos</indextitle>
+  <firstline>Jeg sprang i Høstmorgnens solløse Stund</firstline>
+  <source pages="22"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -450,12 +450,12 @@ hvor Tanker gro frem mellem Mos og forgaa.
 
 <text id="claussen200104139" variant="claussen2001031933">
 <head>
-   <title>Balaften</title>
-   <toctitle>Balaften</toctitle>
-   <indextitle>Balaften</indextitle>
-   <firstline>Alle Instrumenterne rømmer sig nu</firstline>
-   <source pages="23-25"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Balaften</title>
+  <toctitle>Balaften</toctitle>
+  <indextitle>Balaften</indextitle>
+  <firstline>Alle Instrumenterne rømmer sig nu</firstline>
+  <source pages="23-25"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -539,12 +539,12 @@ sit fine og tænksomme Hoved -?
 
 <text id="claussen2001041310">
 <head>
-   <title>Søvndrukken...</title>
-   <toctitle>Søvndrukken...</toctitle>
-   <indextitle>Søvndrukken...</indextitle>
-   <firstline>Søvndrukken er den dejlige</firstline>
-   <source pages="26"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Søvndrukken...</title>
+  <toctitle>Søvndrukken...</toctitle>
+  <indextitle>Søvndrukken...</indextitle>
+  <firstline>Søvndrukken er den dejlige</firstline>
+  <source pages="26"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -574,12 +574,12 @@ og slæber mod Baadens Side.
 
 <text id="claussen2001041311" variant="claussen2001031915">
 <head>
-   <title>Solskinsvise</title>
-   <toctitle>Solskinsvise</toctitle>
-   <indextitle>Solskinsvise</indextitle>
-   <firstline>Vi har slentret under Løv, naar dit Kammer blev for trangt</firstline>
-   <source pages="27"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Solskinsvise</title>
+  <toctitle>Solskinsvise</toctitle>
+  <indextitle>Solskinsvise</indextitle>
+  <firstline>Vi har slentret under Løv, naar dit Kammer blev for trangt</firstline>
+  <source pages="27"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -603,12 +603,12 @@ og jeg græder for et Glimt af dine solrene Bryn.
 
 <text id="claussen2001041312" variant="claussen2001031921">
 <head>
-   <title>Novelle</title>
-   <toctitle>Novelle</toctitle>
-   <indextitle>Novelle</indextitle>
-   <firstline>Thi saadan er Livet op og ned</firstline>
-   <source pages="28-29"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Novelle</title>
+  <toctitle>Novelle</toctitle>
+  <indextitle>Novelle</indextitle>
+  <firstline>Thi saadan er Livet op og ned</firstline>
+  <source pages="28-29"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -652,12 +652,12 @@ maa tage sin Lod med et skønsomt Sind.
 
 <text id="claussen2001041313" variant="claussen200103197">
 <head>
-   <title>Borte</title>
-   <toctitle>Borte</toctitle>
-   <indextitle>Borte</indextitle>
-   <firstline>Mens fra en Foraarstaage en stille Byge faldt</firstline>
-   <source pages="30"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Borte</title>
+  <toctitle>Borte</toctitle>
+  <indextitle>Borte</indextitle>
+  <firstline>Mens fra en Foraarstaage en stille Byge faldt</firstline>
+  <source pages="30"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -681,12 +681,12 @@ Men i det tomme Hjærte gør Mindet ondt endnu.
 
 <text id="claussen2001041314" variant="claussen200103196">
 <head>
-   <title>Romance</title>
-   <toctitle>Romance</toctitle>
-   <indextitle>Romance</indextitle>
-   <firstline>Min Skat var blond. Hendes Øjnes Blik</firstline>
-   <source pages="31"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Romance</title>
+  <toctitle>Romance</toctitle>
+  <indextitle>Romance</indextitle>
+  <firstline>Min Skat var blond. Hendes Øjnes Blik</firstline>
+  <source pages="31"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -710,12 +710,13 @@ Hun elsker sin daarlige Mand.
 
 <text id="claussen2001041315">
 <head>
-   <title>Tusmørkeféen</title>
-   <toctitle>Tusmørkeféen</toctitle>
-   <indextitle>Tusmørkeféen</indextitle>
-   <firstline>En skummel, graa December. Det hvirvler paany</firstline>
-   <source pages="32-33"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Tusmørkeféen</title>
+  <toctitle>Tusmørkeféen</toctitle>
+  <indextitle>Tusmørkeféen</indextitle>
+  <firstline>En skummel, graa December. Det hvirvler paany</firstline>
+  <!-- Ikke en variant af claussen2001041411: Forskellige digte med genbrugt indledning. -->
+  <source pages="32-33"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -754,12 +755,12 @@ afsindig nøgen strakt blandt sine Flitter.
 
 <text id="claussen2001041316" variant="claussen2001031912">
 <head>
-   <title>Tagdryp</title>
-   <toctitle>Tagdryp</toctitle>
-   <indextitle>Tagdryp</indextitle>
-   <firstline>Mellem Murenes sodede Masser, de røde og graa</firstline>
-   <source pages="34-35"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Tagdryp</title>
+  <toctitle>Tagdryp</toctitle>
+  <indextitle>Tagdryp</indextitle>
+  <firstline>Mellem Murenes sodede Masser, de røde og graa</firstline>
+  <source pages="34-35"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -798,12 +799,12 @@ fra en trebenet Jærnovn, stoppet med halvfugtigt Brænde.
 
 <text id="claussen2001041317" variant="claussen2001031927">
 <head>
-   <title>Ærtebælge</title>
-   <toctitle>Ærtebælge</toctitle>
-   <indextitle>Ærtebælge</indextitle>
-   <firstline>I Herregaardshavens Bede</firstline>
-   <source pages="36-37"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Ærtebælge</title>
+  <toctitle>Ærtebælge</toctitle>
+  <indextitle>Ærtebælge</indextitle>
+  <firstline>I Herregaardshavens Bede</firstline>
+  <source pages="36-37"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -842,12 +843,12 @@ snor ti Gange rundt paa Hælen.
 
 <text id="claussen2001041318" variant="claussen2001031928">
 <head>
-   <title>Flammelille</title>
-   <toctitle>Flammelille</toctitle>
-   <indextitle>Flammelille</indextitle>
-   <firstline>Paa Taa og paa Hæl, paa Hæl og paa Taa</firstline>
-   <source pages="38-39"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Flammelille</title>
+  <toctitle>Flammelille</toctitle>
+  <indextitle>Flammelille</indextitle>
+  <firstline>Paa Taa og paa Hæl, paa Hæl og paa Taa</firstline>
+  <source pages="38-39"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -896,12 +897,12 @@ faar vi Graad i vort Øje og Braad i vor Sjæl.
 
 <text id="claussen2001041319" variant="claussen2001031934">
 <head>
-   <title>Rejseminder</title>
-   <toctitle>Rejseminder</toctitle>
-   <indextitle>Rejseminder</indextitle>
-   <firstline>Og det var paa Skanderborg Station</firstline>
-   <source pages="40-42"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Rejseminder</title>
+  <toctitle>Rejseminder</toctitle>
+  <indextitle>Rejseminder</indextitle>
+  <firstline>Og det var paa Skanderborg Station</firstline>
+  <source pages="40-42"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -980,12 +981,12 @@ der staar de alle tilbage.
 
 <text id="claussen2001041320" variant="claussen2001031930">
 <head>
-   <title>Efteraaret</title>
-   <toctitle>Efteraaret</toctitle>
-   <indextitle>Efteraaret</indextitle>
-   <firstline>Som Stormfugle over det mejede Agerland Timerne flyr</firstline>
-   <source pages="43-44"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Efteraaret</title>
+  <toctitle>Efteraaret</toctitle>
+  <indextitle>Efteraaret</indextitle>
+  <firstline>Som Stormfugle over det mejede Agerland Timerne flyr</firstline>
+  <source pages="43-44"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1014,12 +1015,12 @@ og brydes endnu med en Lykke, som aldrig skal blive fortrudt.
 
 <text id="claussen2001041321" variant="claussen2001031932">
 <head>
-   <title>Ved en Mølle</title>
-   <toctitle>Ved en Mølle</toctitle>
-   <indextitle>Ved en Mølle</indextitle>
-   <firstline>Jeg saa' hendes Hus mod Aften</firstline>
-   <source pages="45-46"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Ved en Mølle</title>
+  <toctitle>Ved en Mølle</toctitle>
+  <indextitle>Ved en Mølle</indextitle>
+  <firstline>Jeg saa' hendes Hus mod Aften</firstline>
+  <source pages="45-46"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1064,13 +1065,13 @@ Sommer-Kantonnement.
 
 <text id="claussen2001041322" variant="claussen2001031944">
 <head>
-   <title>Til hende</title>
-   <toctitle>Til hende</toctitle>
-   <indextitle>Til hende</indextitle>
-   <firstline>Paa dig, min Elskede fra hine Dage</firstline>
-   <source pages="47"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
-   <keywords>sonnet</keywords>
+  <title>Til hende</title>
+  <toctitle>Til hende</toctitle>
+  <indextitle>Til hende</indextitle>
+  <firstline>Paa dig, min Elskede fra hine Dage</firstline>
+  <source pages="47"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1097,13 +1098,13 @@ som Gudskelov er dér, hvor ingen fryser.
 
 <text id="claussen2001041323" variant="claussen2001031947">
 <head>
-   <title>Før Stævnemødet</title>
-   <toctitle>Før Stævnemødet</toctitle>
-   <indextitle>Før Stævnemødet</indextitle>
-   <firstline>Det bliver Aften i Vorherres Gaard</firstline>
-   <source pages="48"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
-   <keywords>sonnet</keywords>
+  <title>Før Stævnemødet</title>
+  <toctitle>Før Stævnemødet</toctitle>
+  <indextitle>Før Stævnemødet</indextitle>
+  <firstline>Det bliver Aften i Vorherres Gaard</firstline>
+  <source pages="48"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1130,13 +1131,13 @@ og taler Hjærteguldets Tungemaal.
 
 <text id="claussen2001041324" variant="claussen2001031948">
 <head>
-   <title>Gensynet</title>
-   <toctitle>Gensynet</toctitle>
-   <indextitle>Gensynet</indextitle>
-   <firstline>Der drypped Blomster røde som en Brand</firstline>
-   <source pages="49"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
-   <keywords>sonnet</keywords>
+  <title>Gensynet</title>
+  <toctitle>Gensynet</toctitle>
+  <indextitle>Gensynet</indextitle>
+  <firstline>Der drypped Blomster røde som en Brand</firstline>
+  <source pages="49"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1163,12 +1164,12 @@ Saa fandt jeg Dobbeltmand min Dobbeltkvinde.
 
 <text id="claussen2001041325" variant="claussen2001031967">
 <head>
-   <title>Se, en Gud...</title>
-   <toctitle>Se, en Gud...</toctitle>
-   <indextitle>Se, en Gud...</indextitle>
-   <firstline>Se, en Gud gaar gennem Verden</firstline>
-   <source pages="50"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Se, en Gud...</title>
+  <toctitle>Se, en Gud...</toctitle>
+  <indextitle>Se, en Gud...</indextitle>
+  <firstline>Se, en Gud gaar gennem Verden</firstline>
+  <source pages="50"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1202,18 +1203,18 @@ som to Hjærter kærest kobler.
 
 <section level="1">
 <head>
-   <toctitle>Røg</toctitle>
+  <toctitle>Røg</toctitle>
 </head>
 <content>
 
 <text id="claussen2001041326a" variant="claussen2001031976">
 <head>
-   <title>Kulrøg</title>
-   <toctitle>Kulrøg</toctitle>
-   <indextitle>Kulrøg</indextitle>
-   <firstline>I Morgenmulmet, naar Lokomotivets</firstline>
-   <source pages="51-55"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Kulrøg</title>
+  <toctitle>Kulrøg</toctitle>
+  <indextitle>Kulrøg</indextitle>
+  <firstline>I Morgenmulmet, naar Lokomotivets</firstline>
+  <source pages="51-55"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1332,12 +1333,12 @@ Ikkun det døde forgaar. Af det levende
 
 <text id="claussen2001041326b" variant="claussen2001031977">
 <head>
-   <title>Festrøg</title>
-   <toctitle>Festrøg</toctitle>
-   <indextitle>Festrøg</indextitle>
-   <firstline>Saa hvide bølger i Nattens Mørke</firstline>
-   <source pages="55-57"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Festrøg</title>
+  <toctitle>Festrøg</toctitle>
+  <indextitle>Festrøg</indextitle>
+  <firstline>Saa hvide bølger i Nattens Mørke</firstline>
+  <source pages="55-57"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1401,12 +1402,12 @@ og tillod mit Liv ubekymret at danne
 
 <text id="claussen2001041327" variant="claussen2001122314">
 <head>
-   <title>Paa de gamle Steder</title>
-   <toctitle>Paa de gamle Steder</toctitle>
-   <indextitle>Paa de gamle Steder</indextitle>
-   <firstline>Alting skifter om, alt er byttet om</firstline>
-   <source pages="58"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Paa de gamle Steder</title>
+  <toctitle>Paa de gamle Steder</toctitle>
+  <indextitle>Paa de gamle Steder</indextitle>
+  <firstline>Alting skifter om, alt er byttet om</firstline>
+  <source pages="58"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1435,12 +1436,12 @@ og mit Pigebarn slet ikke skreg Gevalt.
 
 <text id="claussen2001041328" variant="claussen2001122315">
 <head>
-   <title>Poeten og Naboersken</title>
-   <toctitle>Poeten og Naboersken</toctitle>
-   <indextitle>Poeten og Naboersken</indextitle>
-   <firstline>De Mænd og Koner i sikre Boder</firstline>
-   <source pages="59-61"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Poeten og Naboersken</title>
+  <toctitle>Poeten og Naboersken</toctitle>
+  <indextitle>Poeten og Naboersken</indextitle>
+  <firstline>De Mænd og Koner i sikre Boder</firstline>
+  <source pages="59-61"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1461,7 +1462,7 @@ og klapped vor Nabokats Killinger
    med ivrige Hænder,
 imens hendes Tænder
    - som skrevet staar -
-   (læs Salomons Højsang<note>Se <xref bibel="bibelhoej04,2"/>.</note>)
+   (læs Salomons Højsang<note>Se <xref bible="bibelhoej04,2"/>.</note>)
    var hvide <i>som klippede Faar,</i>
 og naar hun smilte, da <i>fødte de Tvillinger.</i>
    Hun lo af de tusinde Grunde
@@ -1531,12 +1532,12 @@ Men Ryggen er vild Poesi.
 
 <text id="claussen2001041329" variant="claussen2001122317">
 <head>
-   <title>Djævlerier</title>
-   <toctitle>Djævlerier</toctitle>
-   <indextitle>Djævlerier</indextitle>
-   <firstline>I Kirkernes Skjul, medens Præster forkynde</firstline>
-   <source pages="62-63"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Djævlerier</title>
+  <toctitle>Djævlerier</toctitle>
+  <indextitle>Djævlerier</indextitle>
+  <firstline>I Kirkernes Skjul, medens Præster forkynde</firstline>
+  <source pages="62-63"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1587,12 +1588,12 @@ at man hvisker dig Djævle i Øret.
 
 <text id="claussen2001041330a" variant="claussen2001122301">
 <head>
-   <title>Mødet</title>
-   <toctitle>Mødet</toctitle>
-   <indextitle>Mødet</indextitle>
-   <firstline>En sidste Vals, som tungsindig klinger</firstline>
-   <source pages="64-66"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Mødet</title>
+  <toctitle>Mødet</toctitle>
+  <indextitle>Mødet</indextitle>
+  <firstline>En sidste Vals, som tungsindig klinger</firstline>
+  <source pages="64-66"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1672,12 +1673,12 @@ men at Formerne er dine, og du, heldigvis, er Kvinde.
 
 <text id="claussen2001041331" variant="claussen2001122303">
 <head>
-   <title>Skovvise -</title>
-   <toctitle>Skovvise -</toctitle>
-   <indextitle>Skovvise -</indextitle>
-   <firstline>Det er et Vejr, et dejligt Foraarsvejr</firstline>
-   <source pages="67-68"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Skovvise -</title>
+  <toctitle>Skovvise -</toctitle>
+  <indextitle>Skovvise -</indextitle>
+  <firstline>Det er et Vejr, et dejligt Foraarsvejr</firstline>
+  <source pages="67-68"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1713,12 +1714,12 @@ man bliver kæk, naar Mørket falder paa
 
 <text id="claussen2001041332" variant="claussen2001122304">
 <head>
-   <title>Flammen og Kullet</title>
-   <toctitle>Flammen og Kullet</toctitle>
-   <indextitle>Flammen og Kullet</indextitle>
-   <firstline>Hun var et højst koldsindigt Kul</firstline>
-   <source pages="69"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Flammen og Kullet</title>
+  <toctitle>Flammen og Kullet</toctitle>
+  <indextitle>Flammen og Kullet</indextitle>
+  <firstline>Hun var et højst koldsindigt Kul</firstline>
+  <source pages="69"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1753,12 +1754,12 @@ og dør ved hendes Flammers Morgenrøde.
 
 <text id="claussen2001041333" variant="claussen2001122305">
 <head>
-   <title>Midt i den sommergrønne Skov...</title>
-   <toctitle>Midt i den sommergrønne Skov...</toctitle>
-   <indextitle>Midt i den sommergrønne Skov...</indextitle>
-   <firstline>Midt i den sommergrønne Skov</firstline>
-   <source pages="70"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Midt i den sommergrønne Skov...</title>
+  <toctitle>Midt i den sommergrønne Skov...</toctitle>
+  <indextitle>Midt i den sommergrønne Skov...</indextitle>
+  <firstline>Midt i den sommergrønne Skov</firstline>
+  <source pages="70"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1787,12 +1788,12 @@ og fandt hinanden ej.
 
 <text id="claussen2001041334" variant="claussen2001122307">
 <head>
-   <title>Trøst</title>
-   <toctitle>Trøst</toctitle>
-   <indextitle>Trøst</indextitle>
-   <firstline>Vide er den Himmel strakt</firstline>
-   <source pages="71"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Trøst</title>
+  <toctitle>Trøst</toctitle>
+  <indextitle>Trøst</indextitle>
+  <firstline>Vide er den Himmel strakt</firstline>
+  <source pages="71"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1826,12 +1827,12 @@ end at briste for to Straaleøjne.
 
 <text id="claussen2001041335" variant="claussen2001122309">
 <head>
-   <title>Stævnemødet</title>
-   <toctitle>Stævnemødet</toctitle>
-   <indextitle>Stævnemødet</indextitle>
-   <firstline>Den lillebitte Viser</firstline>
-   <source pages="72-74"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Stævnemødet</title>
+  <toctitle>Stævnemødet</toctitle>
+  <indextitle>Stævnemødet</indextitle>
+  <firstline>Den lillebitte Viser</firstline>
+  <source pages="72-74"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1896,12 +1897,12 @@ Og hvor? hvor er den henne,
 
 <text id="claussen2001041336" variant="claussen2001122328">
 <head>
-   <title>Pigen fra Cadix</title>
-   <toctitle>Pigen fra Cadix</toctitle>
-   <indextitle>Pigen fra Cadix</indextitle>
-   <firstline>Jeg hærged din Stad med ungdommeligt Mod</firstline>
-   <source pages="75-77"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Pigen fra Cadix</title>
+  <toctitle>Pigen fra Cadix</toctitle>
+  <indextitle>Pigen fra Cadix</indextitle>
+  <firstline>Jeg hærged din Stad med ungdommeligt Mod</firstline>
+  <source pages="75-77"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1969,12 +1970,12 @@ jeg kyssede dig ved Ebbe og Flod ---
 
 <text id="claussen2001041337" variant="claussen2001122327">
 <head>
-   <title>Til En</title>
-   <toctitle>Til En</toctitle>
-   <indextitle>Til En</indextitle>
-   <firstline>I Gyngestolen i det lyse Hus</firstline>
-   <source pages="78-79"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Til En</title>
+  <toctitle>Til En</toctitle>
+  <indextitle>Til En</indextitle>
+  <firstline>I Gyngestolen i det lyse Hus</firstline>
+  <source pages="78-79"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2016,12 +2017,12 @@ i Sejer bænket nu og alle Dage...
 
 <text id="claussen2001041338" variant="claussen2001122329">
 <head>
-   <title>I Paris</title>
-   <toctitle>I Paris</toctitle>
-   <indextitle>I Paris</indextitle>
-   <firstline>Hun var af de Kvinder</firstline>
-   <source pages="80-81"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>I Paris</title>
+  <toctitle>I Paris</toctitle>
+  <indextitle>I Paris</indextitle>
+  <firstline>Hun var af de Kvinder</firstline>
+  <source pages="80-81"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2070,13 +2071,13 @@ fra de væltede Glas over Bordet.
 
 <text id="claussen2001041339">
 <head>
-   <title>Pariserinde</title>
-   <toctitle>Pariserinde</toctitle>
-   <indextitle>Pariserinde</indextitle>
-   <firstline>Af Garderobe har hun ikke mer paa</firstline>
-   <source pages="82"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
-   <keywords>sonnet</keywords>
+  <title>Pariserinde</title>
+  <toctitle>Pariserinde</toctitle>
+  <indextitle>Pariserinde</indextitle>
+  <firstline>Af Garderobe har hun ikke mer paa</firstline>
+  <source pages="82"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2103,12 +2104,12 @@ og anslaar kun sig selv til nogle Skilling.
 
 <text id="claussen2001041340" variant="claussen2001122306">
 <head>
-   <title>Demaskering</title>
-   <toctitle>Demaskering</toctitle>
-   <indextitle>Demaskering</indextitle>
-   <firstline>Med Tak for Laan af nogen Sorg</firstline>
-   <source pages="83"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Demaskering</title>
+  <toctitle>Demaskering</toctitle>
+  <indextitle>Demaskering</indextitle>
+  <firstline>Med Tak for Laan af nogen Sorg</firstline>
+  <source pages="83"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2137,12 +2138,12 @@ skjuler vort Livs antike Smuds.
 
 <text id="claussen2001041341" variant="claussen2001122326">
 <head>
-   <title>Sorte Blomst</title>
-   <toctitle>Sorte Blomst</toctitle>
-   <indextitle>Sorte Blomst</indextitle>
-   <firstline>Jeg kom som ung til den store Stad</firstline>
-   <source pages="84-88"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Sorte Blomst</title>
+  <toctitle>Sorte Blomst</toctitle>
+  <indextitle>Sorte Blomst</indextitle>
+  <firstline>Jeg kom som ung til den store Stad</firstline>
+  <source pages="84-88"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2257,12 +2258,12 @@ og spiste til Aften med Sorte Blomst.
 
 <text id="claussen2001041342a" variant="claussen2002012320">
 <head>
-   <title>Det tabte Paradis</title>
-   <toctitle>Det tabte Paradis</toctitle>
-   <indextitle>Det tabte Paradis</indextitle>
-   <firstline>I Tidernes Morgen var Paradiset skabt</firstline>
-   <source pages="89-91"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Det tabte Paradis</title>
+  <toctitle>Det tabte Paradis</toctitle>
+  <indextitle>Det tabte Paradis</indextitle>
+  <firstline>I Tidernes Morgen var Paradiset skabt</firstline>
+  <source pages="89-91"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2317,16 +2318,16 @@ og det var idel Himmerig, der hang ved Evas Saaler.
 
 <text id="claussen2001041343">
 <head>
-   <title>En Drøm om Skønhed ...</title>
-   <toctitle>En Drøm om Skønhed ...</toctitle>
-   <indextitle>En Drøm om Skønhed ...</indextitle>
-   <firstline>En Drøm om Skønhed var alt mit Liv...</firstline>
-   <source pages="92"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>En Drøm om Skønhed ...</title>
+  <toctitle>En Drøm om Skønhed ...</toctitle>
+  <indextitle>En Drøm om Skønhed ...</indextitle>
+  <firstline>En Drøm om Skønhed var alt mit Liv . . .</firstline>
+  <source pages="92"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-En Drøm om Skønhed var alt mit Liv...
+En Drøm om Skønhed var alt mit Liv . . .
 Derfor har jeg vandret, derfor har jeg banket,
 derfor har man lukket mig ind.
 
@@ -2342,14 +2343,14 @@ Jeg elsker endnu denne Verden af Synd.
 </body>
 </text>
 
-<text id="claussen2001041344">
+<text id="claussen2001041344" variant="claussen2002012338">
 <head>
-   <title>Den unge Pige i Sommerregnen</title>
-   <toctitle>Den unge Pige i Sommerregnen</toctitle>
-   <indextitle>Den unge Pige i Sommerregnen</indextitle>
-   <firstline>Det bliver mørkt, og Regnen</firstline>
-   <source pages="93-94"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Den unge Pige i Sommerregnen</title>
+  <toctitle>Den unge Pige i Sommerregnen</toctitle>
+  <indextitle>Den unge Pige i Sommerregnen</indextitle>
+  <firstline>Det bliver mørkt, og Regnen</firstline>
+  <source pages="93-94"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2394,12 +2395,12 @@ bør holde tilsammen og have Fred.
 
 <text id="claussen2001041345">
 <head>
-   <title>Bauta</title>
-   <toctitle>Bauta</toctitle>
-   <indextitle>Bauta</indextitle>
-   <firstline>Jeg havde et Kongerige</firstline>
-   <source pages="95-96"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Bauta</title>
+  <toctitle>Bauta</toctitle>
+  <indextitle>Bauta</indextitle>
+  <firstline>Jeg havde et Kongerige</firstline>
+  <source pages="95-96"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>

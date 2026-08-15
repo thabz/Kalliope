@@ -1,26 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
-<kalliopework id="1919" author="roerdam" status="complete" type="poetry">
+<kalliopework id="1919" author="roerdam" status="complete" type="poetry" ignore-tests="single-a-ring-in-text">
 <workhead>
-    <title>Engelske Kærlighedsdigte</title>
-    <year>1919</year>
-    <notes>
-        <note>Teksten følger Valdemar Rørdam: <i>Engelske Kærlighedsdigte</i>, Nyt Nordisk Forlag, Kbh., 1919.</note>
-        <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
-    </notes>
-    <pictures>
-        <picture src="1919-p1.jpg">Titelbladet til <i>Engelske Kærlighedsdigte</i> (1919) lyder ,,Engelske Kærlighedsdigte / ved / Valdemar Rørdam // Nyt Nordisk Forlag - København og Kristiania / MDCCCCXIX''.</picture>
-    </pictures>
-    <source facsimile="11540804662D-color.pdf" facsimile-pages-num="169" facsimile-pages-offset="13">Valdemar Rørdam: <i>Engelske Kærlighedsdigte</i>, Nyt Nordisk Forlag, Kbh., 1919.</source>
+  <title>Engelske Kærlighedsdigte</title>
+  <year>1919</year>
+  <notes>
+    <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
+  </notes>
+  <pictures>
+    <picture src="1919-p1.jpg">Titelbladet til <i>Engelske Kærlighedsdigte</i> (1919) lyder ,,Engelske Kærlighedsdigte / ved / Valdemar Rørdam // Nyt Nordisk Forlag - København og Kristiania / MDCCCCXIX''.</picture>
+  </pictures>
+  <source facsimile="11540804662D-color.pdf" facsimile-pages-num="169" facsimile-pages-offset="13">Valdemar Rørdam: <i>Engelske Kærlighedsdigte</i>, Nyt Nordisk Forlag, Kbh., 1919.</source>
 </workhead>
 <workbody>
 
 <text id="roerdam2022052101">
 <head>
-    <title>Indledning</title>
-    <source pages="1-6"/>
-    <quality>korrektur1,kilde,side</quality>
-    <keywords>moellern,lange</keywords>
+  <title>Indledning</title>
+  <source pages="1-6"/>
+  <quality>korrektur1,kilde,side</quality>
+  <keywords>moellern,lange</keywords>
 </head>
 <body>
 <prose>
@@ -54,20 +52,20 @@ Birkerød, August 1919.
 
 <section>
 <head>
-    <title>Sir Philip Sidney (1554-1586).</title>
+  <title>Sir Philip Sidney (1554-1586).</title>
 </head>
 <content>
 
 <text id="roerdam2022052102">
 <head>
-    <title>Mod sanddru Elskovs Nød</title>
-    <firstline>Mod sanddru Elskovs Nød har jeg søgt Hjælp i Sang</firstline>
-    <notes>
-        <note>Gendigtning af Sidneys <xref poem="sidney2001102501" type="translation"/>.</note>
-    </notes>
-    <source pages="9"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Mod sanddru Elskovs Nød</title>
+  <firstline>Mod sanddru Elskovs Nød har jeg søgt Hjælp i Sang</firstline>
+  <notes>
+    <note>Gendigtning af Sidneys <xref poem="sidney2001102501" type="translation"/>.</note>
+  </notes>
+  <source pages="9"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -92,14 +90,14 @@ jeg slog mig selv af Vrede mod mit forspildte Liv.
 
 <text id="roerdam2022052103">
 <head>
-    <title>Attrå</title>
-    <firstline>Du Blinde-Buk, du Lystens Selvbedrag</firstline>
-    <notes>
-        <note>Gendigtning af Sidneys <xref poem="sidney20011025122" type="translation"/>.</note>
-    </notes>
-    <source pages="10"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Attrå</title>
+  <firstline>Du Blinde-Buk, du Lystens Selvbedrag</firstline>
+  <notes>
+    <note>Gendigtning af Sidneys <xref poem="sidney20011025122" type="translation"/>.</note>
+  </notes>
+  <source pages="10"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -127,17 +125,17 @@ og Kampens Løn er i mit eget Hjerte.
 
 <section>
 <head>
-    <title>Ukendt Forfatter (16de Årh.)</title>
+  <title>Ukendt Forfatter (16de Årh.)</title>
 </head>
 <content>
 
 <text id="roerdam2022052104">
 <head>
-    <title>Elsk mig ej for Gang og Dans</title>
-    <firstline>Elsk mig ej for Gang og Dans</firstline>
-    <source pages="11"/>
-    <!-- TODO: Find originalen -->
-    <quality>korrektur1,kilde,side</quality>
+  <title>Elsk mig ej for Gang og Dans</title>
+  <firstline>Elsk mig ej for Gang og Dans</firstline>
+  <source pages="11"/>
+  <!-- TODO: Find originalen -->
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -160,20 +158,20 @@ Dig skal jeg altid eje!
 
 <section>
 <head>
-    <title>William Shakespeare (1564-1616)</title>
+  <title>William Shakespeare (1564-1616)</title>
 </head>
 <content>
 
 <text id="roerdam2022052105">
 <head>
-    <title>Sonnet III</title>
-    <firstline>Se i dit Spejl, sig den, du ser derinde</firstline>
-    <notes>
-        <note>Gendigtning af Shakespeares <xref poem="shakespeare0003" type="translation"/>.</note>
-    </notes>
-    <source pages="12"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Sonnet III</title>
+  <firstline>Se i dit Spejl, sig den, du ser derinde</firstline>
+  <notes>
+    <note>Gendigtning af Shakespeares <xref poem="shakespeare0003" type="translation"/>.</note>
+  </notes>
+  <source pages="12"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -197,14 +195,14 @@ dø ugift, og dit Billed døer som du.
 
 <text id="roerdam2022052106">
 <head>
-    <title>Sonnet LXXI</title>
-    <firstline>Over min Død skal du ej sørge mer</firstline>
-    <notes>
-        <note>Gendigtning af Shakespeares <xref poem="shakespeare0071" type="translation"/>.</note>
-    </notes>
-    <source pages="13"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Sonnet LXXI</title>
+  <firstline>Over min Død skal du ej sørge mer</firstline>
+  <notes>
+    <note>Gendigtning af Shakespeares <xref poem="shakespeare0071" type="translation"/>.</note>
+  </notes>
+  <source pages="13"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -228,14 +226,14 @@ og spotte dig med mig, skønt jeg er død.
 
 <text id="roerdam2022052107">
 <head>
-    <title>Sonnet XC</title>
-    <firstline>Så had mig, når du vil; men helst idag</firstline>
-    <notes>
-        <note>Gendigtning af Shakespeares <xref poem="shakespeare0090" type="translation"/>.</note>
-    </notes>
-    <source pages="14"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Sonnet XC</title>
+  <firstline>Så had mig, når du vil; men helst idag</firstline>
+  <notes>
+    <note>Gendigtning af Shakespeares <xref poem="shakespeare0090" type="translation"/>.</note>
+  </notes>
+  <source pages="14"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -262,16 +260,16 @@ mod det, at miste dig, slet ingenting.
 
 <section>
 <head>
-    <title>Ben Jonson (15737-1637)</title>
+  <title>Ben Jonson (15737-1637)</title>
 </head>
 <content>
 
 <text id="roerdam2022052108">
 <head>
-    <title>Mandens skygge</title>
-    <firstline>Løb efter Skyggen, og den flyr dig</firstline>
-    <source pages="15"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Mandens skygge</title>
+  <firstline>Løb efter Skyggen, og den flyr dig</firstline>
+  <source pages="15"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -294,10 +292,10 @@ I Kvinder er kun Skygger af os Mænd!
 
 <text id="roerdam2022052109">
 <head>
-    <title>Bestandig pudset og klædt på</title>
-    <firstline>Bestandig pudset og klædt på</firstline>
-    <source pages="16"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Bestandig pudset og klædt på</title>
+  <firstline>Bestandig pudset og klædt på</firstline>
+  <source pages="16"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -323,16 +321,16 @@ mit Blik, og lader Hjertet koldt.
 
 <section>
 <head>
-    <title>Robert Herrick (1591-1674)</title>
+  <title>Robert Herrick (1591-1674)</title>
 </head>
 <content>
 
 <text id="roerdam2022052110">
 <head>
-    <title>Gå, glade Rose</title>
-    <firstline>Gå, glade Rose, gå og vind</firstline>
-    <source pages="17"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Gå, glade Rose</title>
+  <firstline>Gå, glade Rose, gå og vind</firstline>
+  <source pages="17"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -359,10 +357,10 @@ da blev vi brændt op, begge to!
 
 <text id="roerdam2022052111">
 <head>
-    <title>Den vanvittige Piges Sang</title>
-    <firstline>God Morgen, Sol, så højt du står!</firstline>
-    <source pages="18-19"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Den vanvittige Piges Sang</title>
+  <firstline>God Morgen, Sol, så højt du står!</firstline>
+  <source pages="18-19"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -406,10 +404,10 @@ og bær ham hjem! - Å, Gud er streng;
 
 <text id="roerdam2022052112">
 <head>
-    <title>Natstykke, til Julia</title>
-    <firstline>Ildormens Øjne skal føre dig</firstline>
-    <source pages="20-21"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Natstykke, til Julia</title>
+  <firstline>Ildormens Øjne skal føre dig</firstline>
+  <source pages="20-21"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -445,17 +443,17 @@ og min Sjæl skal favne og fylde dig.
 
 <section>
 <head>
-    <title>Thomas Carew (1578?-1639?)</title>
+  <title>Thomas Carew (1578?-1639?)</title>
 </head>
 <content>
 
 <text id="roerdam2022052113">
 <head>
-    <title>Mer Elskov, eller mer Foragt</title>
-    <firstline>Mer Elskov, eller mer Foragt!</firstline>
-    <source pages="22"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Mer Elskov, eller mer Foragt</title>
+  <firstline>Mer Elskov, eller mer Foragt!</firstline>
+  <source pages="22"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -484,16 +482,16 @@ Mer Elskov, eller mer Foragt!
 
 <section>
 <head>
-    <title>Sir John Suckling (1609-1642)</title>
+  <title>Sir John Suckling (1609-1642)</title>
 </head>
 <content>
 
 <text id="roerdam2022052114">
 <head>
-    <title>En trofast Elsker</title>
-    <firstline>Fy for Skam da! Jeg har elsket</firstline>
-    <source pages="23"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>En trofast Elsker</title>
+  <firstline>Fy for Skam da! Jeg har elsket</firstline>
+  <source pages="23"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -525,16 +523,16 @@ havde jeg i den Tid elsket
 
 <section>
 <head>
-    <title>James Graham, Marquis af Montrose (1612-1659)</title>
+  <title>James Graham, Marquis af Montrose (1612-1659)</title>
 </head>
 <content>
 
 <text id="roerdam2022052115">
 <head>
-    <title>Min Elskede, min Eneste</title>
-    <firstline>Min Elskede, min Eneste</firstline>
-    <source pages="24-25"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Min Elskede, min Eneste</title>
+  <firstline>Min Elskede, min Eneste</firstline>
+  <source pages="24-25"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -591,19 +589,19 @@ bestandig mer og mer.
 
 <section>
 <head>
-    <title>Richard Lovelace (1618-1658)</title>
+  <title>Richard Lovelace (1618-1658)</title>
 </head>
 <content>
 
 <text id="roerdam2022052116">
 <head>
-    <title>Til Lucasta: Et Afskedsord</title>
-    <firstline>Sig ikke du, at jeg er hård</firstline>
-    <notes>
-        <note>Gendigtning af Lovelaces <xref poem="lovelace2000082901" type="translation"/>.</note>
-    </notes>
-    <source pages="26"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Til Lucasta: Et Afskedsord</title>
+  <firstline>Sig ikke du, at jeg er hård</firstline>
+  <notes>
+    <note>Gendigtning af Lovelaces <xref poem="lovelace2000082901" type="translation"/>.</note>
+  </notes>
+  <source pages="26"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -630,19 +628,19 @@ Jo mere jeg elsker dig, des mer
 
 <section>
 <head>
-    <title>Sir Charles Sedley (1639?-1701)</title>
+  <title>Sir Charles Sedley (1639?-1701)</title>
 </head>
 <content>
 
 <text id="roerdam2022052117">
 <head>
-    <title>Nej, Celia, sky et sødt Bedrag</title>
-    <firstline>Nej, Celia, sky et sødt Bedrag</firstline>
-    <notes>
-        <note>Gendigtning af Sedleys <xref poem="sedley2021101701" type="translation"/>.</note>
-    </notes>
-    <source pages="27"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Nej, Celia, sky et sødt Bedrag</title>
+  <firstline>Nej, Celia, sky et sødt Bedrag</firstline>
+  <notes>
+    <note>Gendigtning af Sedleys <xref poem="sedley2021101701" type="translation"/>.</note>
+  </notes>
+  <source pages="27"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -674,19 +672,19 @@ Hvo end ej fristes mer til Svig,
 
 <section>
 <head>
-    <title>Allan Ramsay (1686-1758)</title>
+  <title>Allan Ramsay (1686-1758)</title>
 </head>
 <content>
 
 <text id="roerdam2022052118">
 <head>
-    <title>Min Nelly er en Ungdom</title>
-    <firstline>Min Nelly er en Ungdom</firstline>
-    <notes>
-        <note>Gendigtning af Ramsays <xref poem="ramsay2021101701" type="translation"/>.</note>
-    </notes>
-    <source pages="28-29"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Min Nelly er en Ungdom</title>
+  <firstline>Min Nelly er en Ungdom</firstline>
+  <notes>
+    <note>Gendigtning af Ramsays <xref poem="ramsay2021101701" type="translation"/>.</note>
+  </notes>
+  <source pages="28-29"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -734,20 +732,20 @@ som Lærkesang i sollys Vang.
 
 <section>
 <head>
-    <title>William Cowper (1731-1800)</title>
+  <title>William Cowper (1731-1800)</title>
 </head>
 <content>
 
 <text id="roerdam2022052119">
 <head>
-    <title>Skovbækken</title>
-    <subtitle>Til en ung Dame</subtitle>
-    <firstline>Skovbæk med Skygge fuld af Sol</firstline>
-    <notes>
-        <note>Gendigtning af Cowpers <xref poem="cowper2021101702" type="translation"/>.</note>
-    </notes>
-    <source pages="30"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Skovbækken</title>
+  <subtitle>Til en ung Dame</subtitle>
+  <firstline>Skovbæk med Skygge fuld af Sol</firstline>
+  <notes>
+    <note>Gendigtning af Cowpers <xref poem="cowper2021101702" type="translation"/>.</note>
+  </notes>
+  <source pages="30"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -767,13 +765,13 @@ i hendes Blik en himmelsk Drøm.
 
 <text id="roerdam2022052120">
 <head>
-    <title>Mary</title>
-    <firstline>Snart vil det ny Års Klokker gå</firstline>
-    <notes>
-        <note>Gendigtning af Cowpers <xref poem="cowper2021101701" type="translation"/>.</note>
-    </notes>
-    <source pages="31"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Mary</title>
+  <firstline>Snart vil det ny Års Klokker gå</firstline>
+  <notes>
+    <note>Gendigtning af Cowpers <xref poem="cowper2021101701" type="translation"/>.</note>
+  </notes>
+  <source pages="31"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -840,19 +838,19 @@ der gør - trods År og Sygdom - skøn,
 
 <section>
 <head>
-    <title>William Julius Mickle (?) (1755-1788)</title>
+  <title>William Julius Mickle (?) (1755-1788)</title>
 </head>
 <content>
 
 <text id="roerdam2022052121">
 <head>
-    <title>Der er ingenting ved Hus og Hjem</title>
-    <firstline>Er det nu ogsaa rigtig sandt?</firstline>
-    <notes>
-        <note>Gendigtning af Mickles <xref poem="mickle2021101701" type="translation"/>.</note>
-    </notes>
-    <source pages="34-36"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Der er ingenting ved Hus og Hjem</title>
+  <firstline>Er det nu ogsaa rigtig sandt?</firstline>
+  <notes>
+    <note>Gendigtning af Mickles <xref poem="mickle2021101701" type="translation"/>.</note>
+  </notes>
+  <source pages="34-36"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -919,19 +917,19 @@ Det svimler for mig. Jeg må le -
 
 <section>
 <head>
-    <title>William Blake (1757-1827)</title>
+  <title>William Blake (1757-1827)</title>
 </head>
 <content>
 
 <text id="roerdam2022052122">
 <head>
-    <title>Elskovens Lund</title>
-    <firstline>Jeg vandred til Elskovens Lund</firstline>
-    <notes>
-        <note>Gendigtning af Blakes <xref poem="blake1999041338" type="translation"/>.</note>
-    </notes>
-    <source pages="37"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Elskovens Lund</title>
+  <firstline>Jeg vandred til Elskovens Lund</firstline>
+  <notes>
+    <note>Gendigtning af Blakes <xref poem="blake1999041338" type="translation"/>.</note>
+  </notes>
+  <source pages="37"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -958,19 +956,19 @@ og bandt mine gladeste Tanker med Tjørneranker.
 
 <section>
 <head>
-    <title>Robert Burns (fr59-1796)</title>
+  <title>Robert Burns (fr59-1796)</title>
 </head>
 <content>
 
 <text id="roerdam2022052123">
 <head>
-    <title>Min Yndlings-Vind</title>
-    <firstline>Min Yndlings-Vind, min egen Vind</firstline>
-    <notes>
-        <note>Gendigtning af Blakes <xref poem="burns2019090707" type="translation"/>.</note>
-    </notes>
-    <source pages="38"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Min Yndlings-Vind</title>
+  <firstline>Min Yndlings-Vind, min egen Vind</firstline>
+  <notes>
+    <note>Gendigtning af Blakes <xref poem="burns2019090707" type="translation"/>.</note>
+  </notes>
+  <source pages="38"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -997,13 +995,13 @@ Et Fløjt kun fra den solblå Luft:
 
 <text id="roerdam2022052124">
 <head>
-    <title>End et Kys</title>
-    <firstline>End et Kys, før alt vi mister!</firstline>
-    <notes>
-        <note>Gendigtning af Blakes <xref poem="burns2019090714" type="translation"/>.</note>
-    </notes>
-    <source pages="39-40"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>End et Kys</title>
+  <firstline>End et Kys, før alt vi mister!</firstline>
+  <notes>
+    <note>Gendigtning af Blakes <xref poem="burns2019090714" type="translation"/>.</note>
+  </notes>
+  <source pages="39-40"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1037,13 +1035,13 @@ Smertens Bæger ved Lykkens Båre.
 
 <text id="roerdam2022052125">
 <head>
-    <title>Til Mary i Himlen</title>
-    <firstline>Du Strålebro fra Kvæld til Gry</firstline>
-    <notes>
-        <note>Gendigtning af Blakes <xref poem="burns2000083002" type="translation"/>.</note>
-    </notes>
-    <source pages="41-42"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Til Mary i Himlen</title>
+  <firstline>Du Strålebro fra Kvæld til Gry</firstline>
+  <notes>
+    <note>Gendigtning af Blakes <xref poem="burns2000083002" type="translation"/>.</note>
+  </notes>
+  <source pages="41-42"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1091,19 +1089,19 @@ mon du kan se din Elskers Nød
 
 <section>
 <head>
-    <title>William Wordsworth (1770-1850)</title>
+  <title>William Wordsworth (1770-1850)</title>
 </head>
 <content>
 
 <text id="roerdam2022052126">
 <head>
-    <title>Jeg vidste mangen sælsom Vej</title>
-    <firstline>Jeg vidste mangen sælsom Vej</firstline>
-    <notes>
-        <note>Gendigtning af Wordsworths <xref poem="wordsworth2021101701" type="translation"/>.</note>
-    </notes>
-    <source pages="43-44"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Jeg vidste mangen sælsom Vej</title>
+  <firstline>Jeg vidste mangen sælsom Vej</firstline>
+  <notes>
+    <note>Gendigtning af Wordsworths <xref poem="wordsworth2021101701" type="translation"/>.</note>
+  </notes>
+  <source pages="43-44"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1147,13 +1145,13 @@ gør ej en Elskers Nød!
 
 <text id="roerdam2022052127">
 <head>
-    <title>Hun var et luftigt Trylleri</title>
-    <firstline>Hun var et luftigt Trylleri</firstline>
-    <notes>
-        <note>Gendigtning af Wordsworths <xref poem="wordsworth2001062401" type="translation"/>.</note>
-    </notes>
-    <source pages="45-46"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Hun var et luftigt Trylleri</title>
+  <firstline>Hun var et luftigt Trylleri</firstline>
+  <notes>
+    <note>Gendigtning af Wordsworths <xref poem="wordsworth2001062401" type="translation"/>.</note>
+  </notes>
+  <source pages="45-46"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1195,13 +1193,13 @@ fra inden, af et himmelsk Lys.
 
 <text id="roerdam2022052128">
 <head>
-    <title>Grebet af Fryd -</title>
-    <firstline>Grebet af Fryd såe jeg mig hastigt om</firstline>
-    <notes>
-        <note>Gendigtning af Wordsworths <xref poem="wordsworth2021101901" type="translation"/>.</note>
-    </notes>
-    <source pages="47"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Grebet af Fryd -</title>
+  <firstline>Grebet af Fryd såe jeg mig hastigt om</firstline>
+  <notes>
+    <note>Gendigtning af Wordsworths <xref poem="wordsworth2021101901" type="translation"/>.</note>
+  </notes>
+  <source pages="47"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1228,16 +1226,16 @@ men intet bringer mig min Skat tilbage.
 
 <section>
 <head>
-    <title>Walter Savage Landor (1775-1864)</title>
+  <title>Walter Savage Landor (1775-1864)</title>
 </head>
 <content>
 
 <text id="roerdam2022052129">
 <head>
-    <title>Pigens Klage</title>
-    <firstline>Jeg lod ham gå, han var mig til Besvær</firstline>
-    <source pages="48-49"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Pigens Klage</title>
+  <firstline>Jeg lod ham gå, han var mig til Besvær</firstline>
+  <source pages="48-49"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1273,10 +1271,10 @@ Bed for ham, hvo der gæster dette Sted,
 
 <text id="roerdam2022052130">
 <head>
-    <title>Helene står, mens Ilion faldt</title>
-    <firstline>Ilion faldt</firstline>
-    <source pages="50"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Helene står, mens Ilion faldt</title>
+  <firstline>Ilion faldt</firstline>
+  <source pages="50"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1295,10 +1293,10 @@ men unge Hjerter ler påny
 
 <text id="roerdam2022052131">
 <head>
-    <title>Jeg holdt din Hånd - o Lykke-Leg! -</title>
-    <firstline>Jeg holdt din Hånd; - O, Lykke-Leg!</firstline>
-    <source pages="51"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Jeg holdt din Hånd - o Lykke-Leg! -</title>
+  <firstline>Jeg holdt din Hånd; - O, Lykke-Leg!</firstline>
+  <source pages="51"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1316,13 +1314,13 @@ og skyer ej Kys... Jeg kan forstå,
 
 <text id="roerdam2022052132">
 <head>
-    <title>Du rejste</title>
-    <firstline>Du rejste. Siden veed jeg ej</firstline>
-    <notes>
-        <note>Gendigtning af Landors <xref poem="landor2021102001" type="translation"/>.</note>
-    </notes>
-    <source pages="52"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Du rejste</title>
+  <firstline>Du rejste. Siden veed jeg ej</firstline>
+  <notes>
+    <note>Gendigtning af Landors <xref poem="landor2021102001" type="translation"/>.</note>
+  </notes>
+  <source pages="52"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1346,10 +1344,10 @@ Hvi lyder Røster da så råt
 
 <text id="roerdam2022052133">
 <head>
-    <title>Bliv - ej blot i min Ungdoms Vår</title>
-    <firstline>Bliv - ej blot i min Ungdoms Vår</firstline>
-    <source pages="53"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Bliv - ej blot i min Ungdoms Vår</title>
+  <firstline>Bliv - ej blot i min Ungdoms Vår</firstline>
+  <source pages="53"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1371,16 +1369,16 @@ Flygt ej for Dødens dragne Sværd!
 
 <section>
 <head>
-    <title>Georges Gordon, Lord Byron (1788-1824)</title>
+  <title>Georges Gordon, Lord Byron (1788-1824)</title>
 </head>
 <content>
 
 <text id="roerdam2022052134">
 <head>
-    <title>Vi skiltes med Tårer</title>
-    <firstline>Vi skiltes med Tårer</firstline>
-    <source pages="54-55"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Vi skiltes med Tårer</title>
+  <firstline>Vi skiltes med Tårer</firstline>
+  <source pages="54-55"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1403,7 +1401,7 @@ forgæves jeg leder
     om Skjul for din Skam.
 
 Dit Navn i mit Øre
-    slår DommedagssSlag;
+    slår Dommedags-Slag;
 jeg skælver, og hører
     min Skæbne hver Dag.
 De veed ej, hvad sammen
@@ -1425,10 +1423,10 @@ Hvad har jeg da? - Tårer
 
 <text id="roerdam2022052135">
 <head>
-    <title>Som du vil: Vi bliver inde</title>
-    <firstline>Som du vil: Vi bliver inde</firstline>
-    <source pages="56"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Som du vil: Vi bliver inde</title>
+  <firstline>Som du vil: Vi bliver inde</firstline>
+  <source pages="56"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1452,13 +1450,13 @@ og dog stænger vi os inde
 
 <text id="roerdam2022052136">
 <head>
-    <title>Nu Farvel</title>
-    <firstline>Nu Farvel! om så min Smerte</firstline>
-    <notes>
-        <note>Gendigtning af Byrons <xref poem="byron2020041901" type="translation"/>.</note>
-    </notes>
-    <source pages="57-59"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Nu Farvel</title>
+  <firstline>Nu Farvel! om så min Smerte</firstline>
+  <notes>
+    <note>Gendigtning af Byrons <xref poem="byron2020041901" type="translation"/>.</note>
+  </notes>
+  <source pages="57-59"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1540,19 +1538,19 @@ fik for Livets Brød kun Stene,
 
 <section>
 <head>
-    <title>Percy Bysshe Shelley (1792-1822)</title>
+  <title>Percy Bysshe Shelley (1792-1822)</title>
 </head>
 <content>
 
 <text id="roerdam2022052137">
 <head>
-    <title>Indisk Serenade</title>
-    <firstline>Du var hos mig i min Drøm</firstline>
-    <notes>
-        <note>Gendigtning af Shelleys <xref poem="shelley2019090602" type="translation"/>.</note>
-    </notes>
-    <source pages="60-61"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Indisk Serenade</title>
+  <firstline>Du var hos mig i min Drøm</firstline>
+  <notes>
+    <note>Gendigtning af Shelleys <xref poem="shelley2019090602" type="translation"/>.</note>
+  </notes>
+  <source pages="60-61"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1588,13 +1586,13 @@ til det engang forgår.
 
 <text id="roerdam2022052138">
 <head>
-    <title>Til Natten</title>
-    <firstline>Løft dig nu fra din Hule i Vest</firstline>
-    <notes>
-        <note>Gendigtning af Shelleys <xref poem="shelley2019091201" type="translation"/>.</note>
-    </notes>
-    <source pages="62-63"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Til Natten</title>
+  <firstline>Løft dig nu fra din Hule i Vest</firstline>
+  <notes>
+    <note>Gendigtning af Shelleys <xref poem="shelley2019091201" type="translation"/>.</note>
+  </notes>
+  <source pages="62-63"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1624,7 +1622,7 @@ som en Gæst, der ikke vil gaa sin Vej!
 
 Hviskende kaldte din Broder, Død:
         »Jeg gør dig fri!«
-Din Søn kom, Søvn, forpjuskeTsød
+Din Søn kom, Søvn, forpjusket-sød
 og surrede mat, som en Middags-Bi:
 »Sødmefyldt er min Honningsæk!« -
 En vendte jeg Ryggen, en kysted jeg væk:
@@ -1643,10 +1641,10 @@ Skænk mig den, Nat; jeg veed, du vil.
 
 <text id="roerdam2022052139">
 <head>
-    <title>Sangen døde</title>
-    <firstline>Sangen døde, Gæsten gik</firstline>
-    <source pages="64"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Sangen døde</title>
+  <firstline>Sangen døde, Gæsten gik</firstline>
+  <source pages="64"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1665,13 +1663,13 @@ sover sødt min Elskov ind.
 
 <text id="roerdam2022052140">
 <head>
-    <title>Eet Ord profaneres for tit</title>
-    <firstline>Eet Ord profaneres for tit</firstline>
-    <notes>
-        <note>Gendigtning af Shelleys <xref poem="shelley2021102001" type="translation"/>.</note>
-    </notes>
-    <source pages="65"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Eet Ord profaneres for tit</title>
+  <firstline>Eet Ord profaneres for tit</firstline>
+  <notes>
+    <note>Gendigtning af Shelleys <xref poem="shelley2021102001" type="translation"/>.</note>
+  </notes>
+  <source pages="65"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1698,10 +1696,10 @@ Lad mig tilbede dig i det fjerne
 
 <text id="roerdam2022052141">
 <head>
-    <title>Livet kan skifte</title>
-    <firstline>Livet kan skifte, det kan ej forsvinde</firstline>
-    <source pages="66"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Livet kan skifte</title>
+  <firstline>Livet kan skifte, det kan ej forsvinde</firstline>
+  <source pages="66"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1725,13 +1723,13 @@ Elskov sin Bærekraft og Gavmildhed.
 
 <text id="roerdam2022052142">
 <head>
-    <title>Til Jane: Erindringen</title>
-    <firstline>De mange Dage gled forbi</firstline>
-    <notes>
-        <note>Gendigtning af Shelleys <xref poem="shelley2021102002" type="translation"/>.</note>
-    </notes>
-    <source pages="67-70"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Til Jane: Erindringen</title>
+  <firstline>De mange Dage gled forbi</firstline>
+  <notes>
+    <note>Gendigtning af Shelleys <xref poem="shelley2021102002" type="translation"/>.</note>
+  </notes>
+  <source pages="67-70"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1840,19 +1838,19 @@ har Shelleys Sind ej Fred så tit,
 
 <section>
 <head>
-    <title>John Keats (1795-1821)</title>
+  <title>John Keats (1795-1821)</title>
 </head>
 <content>
 
 <text id="roerdam2022052143">
 <head>
-    <title>I en Lys-Fattig December</title>
-    <firstline>I en Lys-Fattig December</firstline>
-    <notes>
-        <note>Gendigtning af Keats' <xref poem="keats2001071119" type="translation"/>.</note>
-    </notes>
-    <source pages="71-72"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>I en Lys-Fattig December</title>
+  <firstline>I en Lys-Fattig December</firstline>
+  <notes>
+    <note>Gendigtning af Keats' <xref poem="keats2001071119" type="translation"/>.</note>
+  </notes>
+  <source pages="71-72"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1888,10 +1886,10 @@ Det kaldes Menneske-Kår!
 
 <text id="roerdam2022052144">
 <head>
-    <title>Alfe-Sang</title>
-    <firstline>Tvivl kun ej! O, tvivl kun ej!</firstline>
-    <source pages="73"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Alfe-Sang</title>
+  <firstline>Tvivl kun ej! O, tvivl kun ej!</firstline>
+  <source pages="73"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1921,13 +1919,13 @@ I Himlens Blå forsvinder jeg. -
 
 <text id="roerdam2022052145">
 <head>
-    <title>La Belle Dame sans merci</title>
-    <firstline>Usalige, hvad søger du</firstline>
-    <notes>
-        <note>Gendigtning af Keats' <xref poem="keats2000012803" type="translation"/>.</note>
-    </notes>
-    <source pages="74-76"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>La Belle Dame sans merci</title>
+  <firstline>Usalige, hvad søger du</firstline>
+  <notes>
+    <note>Gendigtning af Keats' <xref poem="keats2000012803" type="translation"/>.</note>
+  </notes>
+  <source pages="74-76"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1999,20 +1997,20 @@ skønt Fuglen fløj fra de visne Rør
 
 <section>
 <head>
-    <title>Elisabeth Barrett Browning (1806-1861)</title>
+  <title>Elisabeth Barrett Browning (1806-1861)</title>
 </head>
 <content>
 
 <text id="roerdam2022052146">
 <head>
-    <title>Jeg tænkte på Theocritus</title>
-    <firstline>Jeg tænkte på Theocritus, der sang</firstline>
-    <notes>
-        <note>Gendigtning af Elizabeth Barrett Brownings <xref poem="browningeb2021102401" type="translation"/>.</note>
-    </notes>
-    <source pages="77"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Jeg tænkte på Theocritus</title>
+  <firstline>Jeg tænkte på Theocritus, der sang</firstline>
+  <notes>
+    <note>Gendigtning af Elizabeth Barrett Brownings <xref poem="browningeb2021102401" type="translation"/>.</note>
+  </notes>
+  <source pages="77"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2036,14 +2034,14 @@ Svaret kom blidt: »Ej Død, men Kærlighed!«
 
 <text id="roerdam2022052147">
 <head>
-    <title>Elsk mig, ifald du må</title>
-    <firstline>Elsk mig, ifald du må, for intet andet</firstline>
-    <notes>
-        <note>Gendigtning af Elizabeth Barrett Brownings <xref poem="browningeb2021102402" type="translation"/>.</note>
-    </notes>
-    <source pages="78"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Elsk mig, ifald du må</title>
+  <firstline>Elsk mig, ifald du må, for intet andet</firstline>
+  <notes>
+    <note>Gendigtning af Elizabeth Barrett Brownings <xref poem="browningeb2021102402" type="translation"/>.</note>
+  </notes>
+  <source pages="78"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2067,14 +2065,14 @@ da kan du elske mig i Evighed.
 
 <text id="roerdam2022052148">
 <head>
-    <title>Gå fra mig</title>
-    <firstline>Gå fra mig, hvis du må. Jeg veed, jeg står</firstline>
-    <notes>
-        <note>Gendigtning af Elizabeth Barrett Brownings <xref poem="browningeb2021102403" type="translation"/>.</note>
-    </notes>
-    <source pages="79"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Gå fra mig</title>
+  <firstline>Gå fra mig, hvis du må. Jeg veed, jeg står</firstline>
+  <notes>
+    <note>Gendigtning af Elizabeth Barrett Brownings <xref poem="browningeb2021102403" type="translation"/>.</note>
+  </notes>
+  <source pages="79"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2098,14 +2096,14 @@ Han ser, i mine Tårer græder to.
 
 <text id="roerdam2022052149">
 <head>
-    <title>Jeg bortgav ingen Lok</title>
-    <firstline>Jeg bortgav ingen Lok før af mit Hår</firstline>
-    <notes>
-        <note>Gendigtning af Elizabeth Barrett Brownings <xref poem="browningeb2021102404" type="translation"/>.</note>
-    </notes>
-    <source pages="80"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Jeg bortgav ingen Lok</title>
+  <firstline>Jeg bortgav ingen Lok før af mit Hår</firstline>
+  <notes>
+    <note>Gendigtning af Elizabeth Barrett Brownings <xref poem="browningeb2021102404" type="translation"/>.</note>
+  </notes>
+  <source pages="80"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2132,17 +2130,17 @@ det Kys, Moer gav mig dèr, den Dag hun døde.
 
 <section>
 <head>
-    <title>Alfred, Lord Tennyson (1809-1892)</title>
+  <title>Alfred, Lord Tennyson (1809-1892)</title>
 </head>
 <content>
 
 <text id="roerdam2022052150">
 <head>
-    <title>Havmand</title>
-    <firstline>Hvem vilde bo</firstline>
-    <source pages="81-82"/>
-    <!-- TODO: Find originalen -->
-    <quality>korrektur1,kilde,side</quality>
+  <title>Havmand</title>
+  <firstline>Hvem vilde bo</firstline>
+  <source pages="81-82"/>
+  <!-- TODO: Find originalen -->
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2198,13 +2196,13 @@ og hvile vilde vi sødt og tit.
 
 <text id="roerdam2022052151">
 <head>
-    <title>Fatima</title>
-    <firstline>O Elskov, morderiske Magt!</firstline>
-    <notes>
-        <note>Gendigtning af Tennysons <xref poem="tennyson2021102401" type="translation"/>.</note>
-    </notes>
-    <source pages="83-85"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Fatima</title>
+  <firstline>O Elskov, morderiske Magt!</firstline>
+  <notes>
+    <note>Gendigtning af Tennysons <xref poem="tennyson2021102401" type="translation"/>.</note>
+  </notes>
+  <source pages="83-85"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2261,13 +2259,13 @@ Så tag mig, eller slå mig død!
 
 <text id="roerdam2022052152">
 <head>
-    <title>I Haven</title>
-    <firstline>Kom ud i Haven, Maud</firstline>
-    <notes>
-        <note>Gendigtning af Tennysons <xref poem="tennyson2021102402" type="translation"/>.</note>
-    </notes>
-    <source pages="85-88"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>I Haven</title>
+  <firstline>Kom ud i Haven, Maud</firstline>
+  <notes>
+    <note>Gendigtning af Tennysons <xref poem="tennyson2021102402" type="translation"/>.</note>
+  </notes>
+  <source pages="85-88"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2361,13 +2359,13 @@ ved hendes Fodtrin veed jeg, det sprang
 
 <text id="roerdam2022052153">
 <head>
-    <title>Nu blunder den røde Blomst</title>
-    <firstline>Nu blunder den røde Blomst, og nu den hvide</firstline>
-    <notes>
-        <note>Gendigtning af Tennysons <xref poem="tennyson2021102403" type="translation"/>.</note>
-    </notes>
-    <source pages="89"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Nu blunder den røde Blomst</title>
+  <firstline>Nu blunder den røde Blomst, og nu den hvide</firstline>
+  <notes>
+    <note>Gendigtning af Tennysons <xref poem="tennyson2021102403" type="translation"/>.</note>
+  </notes>
+  <source pages="89"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2395,13 +2393,13 @@ dybt i min Favn, bliv borte, bliv i mig!
 
 <text id="roerdam2022052154">
 <head>
-    <title>Bryd, brus, brist</title>
-    <firstline>Bryd, brus, brist</firstline>
-    <notes>
-        <note>Gendigtning af Tennysons <xref poem="tennyson201908241" type="translation"/>.</note>
-    </notes>
-    <source pages="90"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Bryd, brus, brist</title>
+  <firstline>Bryd, brus, brist</firstline>
+  <notes>
+    <note>Gendigtning af Tennysons <xref poem="tennyson201908241" type="translation"/>.</note>
+  </notes>
+  <source pages="90"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2430,13 +2428,13 @@ Jeg søger en lysende Dag, som er død,
 
 <text id="roerdam2022052155">
 <head>
-    <title>Hvad veed vel jeg, hvad disse Tårer vil</title>
-    <firstline>Hvad veed vel jeg, hvad disse Tårer vil</firstline>
-    <notes>
-        <note>Gendigtning af Tennysons <xref poem="tennyson2019072301" type="translation"/>.</note>
-    </notes>
-    <source pages="91-92"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Hvad veed vel jeg, hvad disse Tårer vil</title>
+  <firstline>Hvad veed vel jeg, hvad disse Tårer vil</firstline>
+  <notes>
+    <note>Gendigtning af Tennysons <xref poem="tennyson2019072301" type="translation"/>.</note>
+  </notes>
+  <source pages="91-92"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2472,19 +2470,19 @@ vort døde Liv, o Tid, som er ej mer.
 
 <section>
 <head>
-    <title>Edgar Poe (1809-1849)</title>
+  <title>Edgar Poe (1809-1849)</title>
 </head>
 <content>
 
 <text id="roerdam2022052156">
 <head>
-    <title>Til En i Paradis</title>
-    <firstline>Hvert Savn udfyldte du</firstline>
-    <notes>
-        <note>Gendigtning af Poes <xref poem="poe2021102501" type="translation"/>.</note>
-    </notes>
-    <source pages="93-94"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Til En i Paradis</title>
+  <firstline>Hvert Savn udfyldte du</firstline>
+  <notes>
+    <note>Gendigtning af Poes <xref poem="poe2021102501" type="translation"/>.</note>
+  </notes>
+  <source pages="93-94"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2523,13 +2521,13 @@ dog, hvor er dine Himle
 
 <text id="roerdam2022052157">
 <head>
-    <title>Annabel Lee</title>
-    <firstline>Det var i et Land ved den brusende Sø</firstline>
-    <notes>
-        <note>Gendigtning af Poes <xref poem="poe2002011902" type="translation"/>.</note>
-    </notes>
-    <source pages="95-96"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Annabel Lee</title>
+  <firstline>Det var i et Land ved den brusende Sø</firstline>
+  <notes>
+    <note>Gendigtning af Poes <xref poem="poe2002011902" type="translation"/>.</note>
+  </notes>
+  <source pages="95-96"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2585,13 +2583,13 @@ i den stensatte Grav ved den tordnende Sø.
 
 <text id="roerdam2022052158">
 <head>
-    <title>Til Helen</title>
-    <firstline>Jeg såe dig een Gang - kun den ene Gang</firstline>
-    <notes>
-        <note>Gendigtning af Poes <xref poem="poe2018100501" type="translation"/>.</note>
-    </notes>
-    <source pages="97-100"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Til Helen</title>
+  <firstline>Jeg såe dig een Gang - kun den ene Gang</firstline>
+  <notes>
+    <note>Gendigtning af Poes <xref poem="poe2018100501" type="translation"/>.</note>
+  </notes>
+  <source pages="97-100"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2671,13 +2669,13 @@ en Dobbel-Venus, synlig selv ved Dag.
 
 <text id="roerdam2022052159">
 <head>
-    <title>En Drøm i en Drøm</title>
-    <firstline>Lad mig kysse dig på Panden</firstline>
-    <notes>
-        <note>Gendigtning af Poes <xref poem="poe2021102401" type="translation"/>.</note>
-    </notes>
-    <source pages="101-102"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>En Drøm i en Drøm</title>
+  <firstline>Lad mig kysse dig på Panden</firstline>
+  <notes>
+    <note>Gendigtning af Poes <xref poem="poe2021102401" type="translation"/>.</note>
+  </notes>
+  <source pages="101-102"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2723,19 +2721,19 @@ god og ond, barsk og øm,
 
 <section>
 <head>
-    <title>Robert Browning (1812-1889)</title>
+  <title>Robert Browning (1812-1889)</title>
 </head>
 <content>
 
 <text id="roerdam2022052160">
 <head>
-    <title>Efter Bruddet</title>
-    <firstline>Altså, forbi! Mon nu den bitre</firstline>
-    <notes>
-        <note>Gendigtning af Robert Brownings <xref poem="browningr2022052102" type="translation"/>.</note>
-    </notes>
-    <source pages="103-104"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Efter Bruddet</title>
+  <firstline>Altså, forbi! Mon nu den bitre</firstline>
+  <notes>
+    <note>Gendigtning af Robert Brownings <xref poem="browningr2022052102" type="translation"/>.</note>
+  </notes>
+  <source pages="103-104"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2769,13 +2767,13 @@ og jeg holder din Hånd, som Alverden gør,
 
 <text id="roerdam2022052161">
 <head>
-    <title>Evelyn Hope</title>
-    <firstline>Den yndige Evelyn Hope er død!</firstline>
-    <notes>
-        <note>Gendigtning af Robert Brownings <xref poem="browningr2022052101" type="translation"/>.</note>
-    </notes>
-    <source pages="105-107"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Evelyn Hope</title>
+  <firstline>Den yndige Evelyn Hope er død!</firstline>
+  <notes>
+    <note>Gendigtning af Robert Brownings <xref poem="browningr2022052101" type="translation"/>.</note>
+  </notes>
+  <source pages="105-107"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2847,13 +2845,13 @@ Vi to kun kender det. Sov nu, sov.
 
 <text id="roerdam2022052162">
 <head>
-    <title>Et År</title>
-    <firstline>Aldrig, aldrig mer</firstline>
-    <notes>
-        <note>Gendigtning af Robert Brownings <xref poem="browningr2021102701" type="translation"/>.</note>
-    </notes>
-    <source pages="108-110"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Et År</title>
+  <firstline>Aldrig, aldrig mer</firstline>
+  <notes>
+    <note>Gendigtning af Robert Brownings <xref poem="browningr2021102701" type="translation"/>.</note>
+  </notes>
+  <source pages="108-110"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2904,7 +2902,7 @@ og hvad mer var mit. Var det at synde?
 hvad af Attrå selv jeg havde vakt.
     Han gav glad sit Guld
         for Støv tilspilde -
-var det sært, jeg håndled, som han vilde?
+var det sært, jeg handled, som han vilde?
 
     Rigtigt eller galt -
         Gid end han elsked!
@@ -2932,13 +2930,13 @@ Hjertet, koldt og knust ... Er Gud det næste?
 
 <text id="roerdam2022052163">
 <head>
-    <title>Det sidste Ridt</title>
-    <firstline>Jeg bad: Nu har jeg hørt min Dom</firstline>
-    <notes>
-        <note>Gendigtning af Brownings <xref poem="browningr2021102102" type="translation"/>.</note>
-    </notes>
-    <source pages="111-116"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Det sidste Ridt</title>
+  <firstline>Jeg bad: Nu har jeg hørt min Dom</firstline>
+  <notes>
+    <note>Gendigtning af Brownings <xref poem="browningr2021102102" type="translation"/>.</note>
+  </notes>
+  <source pages="111-116"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2963,7 +2961,7 @@ Godt! - Mit Blod jog atter, vildt:
 Så var min sidste Bøn ej spildt!
 Vi to skal følges end et Ridt
 og ånde sammen, dybt og frit:
-  Jeg ler som en Gud ad min SmertesVunder,
+  Jeg ler som en Gud ad min Smertes Vunder,
   og Verden kan jo inat gå under!
 
 Stille! - Såe du en Sky mod Kvæld,
@@ -3067,13 +3065,13 @@ med Øjeblikket evig klart:
 
 <text id="roerdam2022052164">
 <head>
-    <title>To i Campagnen</title>
-    <firstline>Gad vidst, du har følt, hvad jeg</firstline>
-    <notes>
-        <note>Gendigtning af Brownings <xref poem="browningr2021102101" type="translation"/>.</note>
-    </notes>
-    <source pages="117-120"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>To i Campagnen</title>
+  <firstline>Gad vidst, du har følt, hvad jeg</firstline>
+  <notes>
+    <note>Gendigtning af Brownings <xref poem="browningr2021102101" type="translation"/>.</note>
+  </notes>
+  <source pages="117-120"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3169,19 +3167,19 @@ men Hjertets Rum er trangt.
 
 <section>
 <head>
-    <title>Matthew Arnold (1822-1888)</title>
+  <title>Matthew Arnold (1822-1888)</title>
 </head>
 <content>
 
 <text id="roerdam2022052165">
 <head>
-    <title>Til Marguerite</title>
-    <firstline>Ja! Vi er ene. Ø for Ø</firstline>
-    <notes>
-        <note>Gendigtning af Matthew Arnolds <xref poem="arnold2022052101" type="translation"/>.</note>
-    </notes>
-    <source pages="121-122"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Til Marguerite</title>
+  <firstline>Ja! Vi er ene. Ø for Ø</firstline>
+  <notes>
+    <note>Gendigtning af Matthew Arnolds <xref poem="arnold2022052101" type="translation"/>.</note>
+  </notes>
+  <source pages="121-122"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3221,19 +3219,19 @@ en bundløs, bitter, fremmed Sø.
 
 <section>
 <head>
-    <title>Coventry Patmore (1823-1896)</title>
+  <title>Coventry Patmore (1823-1896)</title>
 </head>
 <content>
 
 <text id="roerdam2022052166">
 <head>
-    <title>Åbenbaringen</title>
-    <firstline>En enkelt Skjald har Syn for sligt</firstline>
-    <notes>
-        <note>Gendigtning af Coventry Patmores <xref poem="patmore2022052101" type="translation"/>.</note>
-    </notes>
-    <source pages="123"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Åbenbaringen</title>
+  <firstline>En enkelt Skjald har Syn for sligt</firstline>
+  <notes>
+    <note>Gendigtning af Coventry Patmores <xref poem="patmore2022052101" type="translation"/>.</note>
+  </notes>
+  <source pages="123"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3260,19 +3258,19 @@ Det, og hvad Barnet fjernt har drømt,
 
 <section>
 <head>
-    <title>Dante Gabriel Rossetti (1828-1882)</title>
+  <title>Dante Gabriel Rossetti (1828-1882)</title>
 </head>
 <content>
 
 <text id="roerdam2022052167">
 <head>
-    <title>Portrættet</title>
-    <firstline>Hvor sælsomt! Kun et Maleri</firstline>
-    <notes>
-        <note>Gendigtning af Dante Gabriel Rossettis <xref poem="rossettid2022052101" type="translation"/>.</note>
-    </notes>
-    <source pages="124-128"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Portrættet</title>
+  <firstline>Hvor sælsomt! Kun et Maleri</firstline>
+  <notes>
+    <note>Gendigtning af Dante Gabriel Rossettis <xref poem="rossettid2022052101" type="translation"/>.</note>
+  </notes>
+  <source pages="124-128"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3401,13 +3399,13 @@ i Kres omkring Den Hellige Grav.
 
 <text id="roerdam2022052168">
 <head>
-    <title>Lysglimt</title>
-    <firstline>Her har jeg været før</firstline>
-    <notes>
-        <note>Gendigtning af Dante Gabriel Rossettis <xref poem="rossettid2022052102" type="translation"/>.</note>
-    </notes>
-    <source pages="129"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Lysglimt</title>
+  <firstline>Her har jeg været før</firstline>
+  <notes>
+    <note>Gendigtning af Dante Gabriel Rossettis <xref poem="rossettid2022052102" type="translation"/>.</note>
+  </notes>
+  <source pages="129"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3434,13 +3432,13 @@ men aldrig brød så dyb og sød en Drøm . . .
 
 <text id="roerdam2022052169">
 <head>
-    <title>Når ser jeg bedst</title>
-    <firstline>Når ser jeg bedst, hvad jeg i dig kun har?</firstline>
-    <notes>
-        <note>Gendigtning af Dante Gabriel Rossettis <xref type="translation" poem="rossettid2022052103"/>.</note>
-    </notes>
-    <source pages="130"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Når ser jeg bedst</title>
+  <firstline>Når ser jeg bedst, hvad jeg i dig kun har?</firstline>
+  <notes>
+    <note>Gendigtning af Dante Gabriel Rossettis <xref type="translation" poem="rossettid2022052103"/>.</note>
+  </notes>
+  <source pages="130"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3465,13 +3463,13 @@ når Håbets visnede Løv blev hvirvlet bort
 
 <text id="roerdam2022052170">
 <head>
-    <title>Endnu en liden Lykke-Stund</title>
-    <firstline>Endnu en liden Lykke-Stund</firstline>
-    <source pages="131-132"/>
-    <notes>
-        <note>Gendigtning af Dante Gabriel Rossettis <xref type="translation" poem="rossettid2022052201"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Endnu en liden Lykke-Stund</title>
+  <firstline>Endnu en liden Lykke-Stund</firstline>
+  <source pages="131-132"/>
+  <notes>
+    <note>Gendigtning af Dante Gabriel Rossettis <xref type="translation" poem="rossettid2022052201"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3510,19 +3508,19 @@ men spørg mig kun, når Timen kom,
 
 <section>
 <head>
-    <title>Christina Rossetti (1830-1894)</title>
+  <title>Christina Rossetti (1830-1894)</title>
 </head>
 <content>
 
 <text id="roerdam2022052171">
 <head>
-    <title>Når jeg er død</title>
-    <firstline>Når jeg er død, mit Hjerte</firstline>
-    <notes>
-        <note>Gendigtning af Christina Rossettis <xref poem="rossettic2001090213" type="translation"/>.</note>
-    </notes>
-    <source pages="133"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Når jeg er død</title>
+  <firstline>Når jeg er død, mit Hjerte</firstline>
+  <notes>
+    <note>Gendigtning af Christina Rossettis <xref poem="rossettic2001090213" type="translation"/>.</note>
+  </notes>
+  <source pages="133"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3549,14 +3547,14 @@ Hvem veed: Måske jeg husker,
 
 <text id="roerdam2022052172">
 <head>
-    <title>Tænk på mig</title>
-    <firstline>Tænk på mig, når engang jeg er forsvundet</firstline>
-    <notes>
-        <note>Gendigtning af Christina Rossettis <xref poem="rossettic2001090210" type="translation"/>.</note>
-    </notes>
-    <source pages="134"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Tænk på mig</title>
+  <firstline>Tænk på mig, når engang jeg er forsvundet</firstline>
+  <notes>
+    <note>Gendigtning af Christina Rossettis <xref poem="rossettic2001090210" type="translation"/>.</note>
+  </notes>
+  <source pages="134"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3581,13 +3579,13 @@ da er det bedre, du har glemt og smiler,
 
 <text id="roerdam2022052173">
 <head>
-    <title>Prinsen, der kom for sent</title>
-    <firstline>For sent til Liv, for sent til Lyst</firstline>
-    <notes>
-        <note>Gendigtning af Christina Rossettis <xref poem="rossettic2022052101" type="translation"/>.</note>
-    </notes>
-    <source pages="135-137"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Prinsen, der kom for sent</title>
+  <firstline>For sent til Liv, for sent til Lyst</firstline>
+  <notes>
+    <note>Gendigtning af Christina Rossettis <xref poem="rossettic2022052101" type="translation"/>.</note>
+  </notes>
+  <source pages="135-137"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3665,23 +3663,23 @@ Rør ej de Liljer, dem for dig
 
 <section>
 <head>
-    <title>Algernon Charles Swinburne (1837-1909)</title>
+  <title>Algernon Charles Swinburne (1837-1909)</title>
 </head>
 <content>
 
 <text id="roerdam2022052174">
 <head>
-    <title>Eros og Afrodite</title>
-    <subtitle>
-        <line>Korsang af Atalanta i Calydon</line>
-        <line>(Brudstykke)</line>
-    </subtitle>
-    <firstline>Vi såe dig, Eros, et Syn, ja, en Guddom at skue</firstline>
-    <source pages="138-140"/>
-    <notes>
-        <note>Gendigtning af Swinburnes <xref poem="swinburne2022052201" type="translation"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Eros og Afrodite</title>
+  <subtitle>
+    <line>Korsang af Atalanta i Calydon</line>
+    <line>(Brudstykke)</line>
+  </subtitle>
+  <firstline>Vi såe dig, Eros, et Syn, ja, en Guddom at skue</firstline>
+  <source pages="138-140"/>
+  <notes>
+    <note>Gendigtning af Swinburnes <xref poem="swinburne2022052201" type="translation"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3751,15 +3749,15 @@ Hun er Livet, vi ventede på! -
 </body>
 </text>
 
-<text id="roerdam2022052175">
+<text id="roerdam2022052175" ignore-tests="repeated-adjacent-word">
 <head>
-    <title>Den forladte Have</title>
-    <firstline>I en klippeskjult Kløft mellem Højland og Lavland</firstline>
-    <source pages="141-144"/>
-    <notes>
-        <note>Gendigtning af Swinburnes <xref poem="swinburne2019090902" type="translation"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Den forladte Have</title>
+  <firstline>I en klippeskjult Kløft mellem Højland og Lavland</firstline>
+  <source pages="141-144"/>
+  <notes>
+    <note>Gendigtning af Swinburnes <xref poem="swinburne2019090902" type="translation"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3810,7 +3808,7 @@ Nu fik de hundrede År til at glemme
 
 Bruste Havet for dem som med Højsangens Salmer?
   Bad han: »Slip disse Blomster, se ud over Sø,
-thi de SkuimBlomster bliver, når Rosens Blomst falmer,
+thi de Skum-Blomster bliver, når Rosens Blomst falmer,
   og løs Elskov er intet, men vor - kan den dø?«
 Og den samme Vind sang, og den samme Sø suste,
   og endnu stod en Rose i duftende Glød:

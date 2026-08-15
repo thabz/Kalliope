@@ -1,15 +1,18 @@
-const { isFileModified } = require('../libs/caching.js');
-const { execFileSync } = require('child_process');
-const {
+import { isFileModified } from '../libs/caching.js';
+import {
   safeMkdir,
   writeJSON,
   htmlToXml,
   replaceDashes,
   fileExists,
-} = require('../libs/helpers.js');
-const { extractTitle, get_notes, get_pictures } = require('./parsing.js');
-const { sortWorks } = require('../../common/worksort.js');
-const {
+} from '../libs/helpers.js';
+import { collect_git_modified_dates } from './git.js';
+import { mapLimit } from './concurrency.js';
+import { createProgressReporter } from './progress.js';
+import { extractTitle, get_notes, get_pictures } from './parsing.js';
+import { workName } from './formatting.js';
+import { sortWorks } from '../../common/worksort.js';
+import {
   loadXMLDoc,
   getChildren,
   tagName,
@@ -17,11 +20,17 @@ const {
   safeGetAttr,
   getChildByTagName,
   getChildrenByTagName,
-} = require('./xml.js');
+} from './xml.js';
+import {
+  isAnthologyText,
+  publicationTextId,
+  resolveAuthorId,
+  worksForPoet,
+} from './anthologies.js';
 
 // Rekursiv function som bruges til at bygge værkers indholdsfortegnelse,
 // men også del-indholdstegnelser til de linkbare sektioner som har en id.
-const build_section_toc = (section) => {
+const build_section_toc = (section, publicationPoetId = null) => {
   let poems = [];
   let proses = [];
   let toc = [];
@@ -29,7 +38,12 @@ const build_section_toc = (section) => {
   getChildren(section).forEach((part) => {
     const partName = tagName(part);
     if (partName === 'text') {
-      const textId = safeGetAttr(part, 'id');
+      const sourceTextId = safeGetAttr(part, 'id');
+      const textAuthorId = resolveAuthorId(part, publicationPoetId);
+      const textId =
+        isAnthologyText(textAuthorId, publicationPoetId) ?
+          publicationTextId(sourceTextId)
+        : sourceTextId;
       const head = getChildByTagName(part, 'head');
       const firstline = extractTitle(head, 'firstline');
       const title = extractTitle(head, 'title') || firstline;
@@ -41,7 +55,10 @@ const build_section_toc = (section) => {
         prefix: replaceDashes(toctitle.prefix),
       });
     } else if (partName === 'section') {
-      const subtoc = build_section_toc(getChildByTagName(part, 'content'));
+      const subtoc = build_section_toc(
+        getChildByTagName(part, 'content'),
+        publicationPoetId
+      );
       const head = getChildByTagName(part, 'head');
       const level = parseInt(safeGetAttr(part, 'level') || '1');
       const sectionId = safeGetAttr(part, 'id');
@@ -71,56 +88,26 @@ const extract_subworks = (poetId, workbody, collected) => {
   });
 };
 
-const collect_git_modified_dates = () => {
-  const log = execFileSync(
-    'git',
-    [
-      '--no-pager',
-      'log',
-      '--pretty=format:%ct',
-      '--name-only',
-      '--',
-      ':(glob)fdirs/**/*.xml',
-    ],
-    { encoding: 'utf8' }
-  );
-  const modifiedDates = new Map();
-  let timestamp = null;
-
-  log.split('\n').forEach((line) => {
-    const trimmed = line.trim();
-    if (trimmed.length === 0) {
-      return;
-    }
-    if (/^\d+$/.test(trimmed)) {
-      timestamp = parseInt(trimmed, 10);
-      return;
-    }
-    if (timestamp != null && !modifiedDates.has(trimmed)) {
-      modifiedDates.set(
-        trimmed,
-        new Date(timestamp * 1000).toISOString().slice(0, 10)
-      );
-    }
-  });
-
-  return modifiedDates;
-};
-
 const build_works_toc = async (collected) => {
-  const modifiedDates = collect_git_modified_dates();
+  let modifiedDates = null;
+  const getModifiedDates = () => {
+    if (modifiedDates == null) {
+      modifiedDates = collect_git_modified_dates();
+    }
+    return modifiedDates;
+  };
+  const progress = createProgressReporter('Skrev toc.json-filer', 100);
 
   const workFilesForPoet = (poetId) => {
-    return collected.workids
-      .get(poetId)
-      .map((workId) => `fdirs/${poetId}/${workId}.xml`)
-      .filter(fileExists);
+    return Array.from(
+      new Set(
+        worksForPoet(collected, poetId).flatMap(work => work.sourceFiles || [])
+      )
+    ).filter(fileExists);
   };
 
   const worksForPaging = (poetId, poet) => {
-    const works = collected.workids
-      .get(poetId)
-      .map((workId) => collected.works.get(`${poetId}/${workId}`))
+    const works = worksForPoet(collected, poetId)
       .filter((work) => work != null && work.parent == null)
       .filter((work) => work.has_content);
     return sortWorks(poet, works);
@@ -162,80 +149,112 @@ const build_works_toc = async (collected) => {
         pictures: [],
       };
     }
-    let toc = build_section_toc(workbody);
+    let toc = build_section_toc(workbody, poetId);
     let subworks = extract_subworks(poetId, workbody, collected);
     return { lines, toc, subworks, notes, pictures };
   };
 
-  return Promise.all(
-    Array.from(collected.poets.entries()).map(async (entry) => {
-      const [poetId, poet] = entry;
-      safeMkdir(`public/api/${poetId}`);
-      const workFilenames = workFilesForPoet(poetId);
-      const poetWorksModified = isFileModified(
+  const poetData = new Map();
+  const jobs = [];
+  collected.poets.forEach((poet, poetId) => {
+    safeMkdir(`public/api/${poetId}`);
+    const workFilenames = workFilesForPoet(poetId);
+    const poetWorksModified =
+      collected.poetMetadataDirty?.has(poetId) ||
+      isFileModified(
+        'tools/build-static/toc.js',
+        'tools/build-static/anthologies.js',
         `fdirs/${poetId}/info.xml`,
         ...workFilenames
       );
-      const pageWorks = worksForPaging(poetId, poet);
+    const pageWorks = worksForPaging(poetId, poet);
+    poetData.set(poetId, { pageWorks, poet, poetWorksModified });
+    worksForPoet(collected, poetId).forEach(work => {
+      jobs.push({ poetId, workId: work.id, work });
+    });
+  });
 
-      return Promise.all(
-        collected.workids.get(poetId).map(async (workId) => {
-          const filename = `fdirs/${poetId}/${workId}.xml`;
-          if (!fileExists(filename)) {
-            return;
-          }
-          if (!poetWorksModified && !isFileModified(filename)) {
-            return;
-          }
-          let doc = loadXMLDoc(filename);
-          const work = getChildByTagName(doc, 'kalliopework');
-          const status = safeGetAttr(work, 'status');
-          const type = safeGetAttr(work, 'type');
-          const parentId = safeGetAttr(work, 'parent');
-          const head = getChildByTagName(work, 'workhead');
-          const title = safeGetText(head, 'title');
-          const toctitle = safeGetText(head, 'toctitle') || title;
-          const linktitle = safeGetText(head, 'linktitle') || title;
-          const breadcrumbtitle = safeGetText(head, 'breadcrumbtitle') || title;
-          const year = safeGetText(head, 'year');
-          const data = {
-            id: workId,
-            title,
-            toctitle,
-            breadcrumbtitle,
-            linktitle,
-            year,
-            status,
-            type,
-          };
-          const work_data = await extract_work_data(work);
-          const parentData = collected.works.get(parentId);
+  const results = await mapLimit(jobs, async ({ poetId, workId, work: workMeta }) => {
+    const { pageWorks, poet, poetWorksModified } = poetData.get(poetId);
+    if (workMeta.virtualType === 'anthology') {
+      if (
+        !poetWorksModified &&
+        !isFileModified(
+          'tools/build-static/toc.js',
+          'tools/build-static/anthologies.js',
+          ...workMeta.sourceFiles
+        )
+      ) {
+        return;
+      }
+      const toc = workMeta.sections.map(section => ({
+        type: 'section',
+        id: null,
+        level: 1,
+        title: htmlToXml(workName(section.work)),
+        content: section.texts.map(text => ({
+          type: 'text',
+          id: text.id,
+          title: htmlToXml(text.tocTitle),
+          prefix: text.tocPrefix,
+        })),
+      }));
+      const { prev, next } = resolvePrevNextWork(pageWorks, workId);
+      const modified = workMeta.sourceFiles
+        .map(filename => getModifiedDates().get(filename))
+        .filter(date => date != null)
+        .sort()
+        .pop();
+      const tocFilename = `public/api/${poetId}/${workId}-toc.json`;
+      writeJSON(tocFilename, {
+        poet,
+        toc,
+        subworks: [],
+        work: workMeta,
+        notes: [],
+        pictures: [],
+        modified,
+        prev,
+        next,
+      });
+      progress.increment();
+      return;
+    }
+    const filename = `fdirs/${poetId}/${workId}.xml`;
+    if (!fileExists(filename)) {
+      return;
+    }
+    if (!poetWorksModified && !isFileModified(filename)) {
+      return;
+    }
+    let doc = loadXMLDoc(filename);
+    const work = getChildByTagName(doc, 'kalliopework');
+    const work_data = await extract_work_data(work);
 
-          if (work_data) {
-            const { prev, next } = resolvePrevNextWork(pageWorks, workId);
-            const toc_file_data = {
-              poet,
-              toc: work_data.toc,
-              subworks: work_data.subworks,
-              work: collected.works.get(`${poetId}/${workId}`),
-              notes: work_data.notes || [],
-              pictures: work_data.pictures || [],
-              modified: modifiedDates.get(filename),
-              prev,
-              next,
-            };
-            const tocFilename = `public/api/${poetId}/${workId}-toc.json`;
-            console.log(tocFilename);
-            writeJSON(tocFilename, toc_file_data);
-          }
-          doc = null;
-        })
-      );
-    })
-  );
+    if (work_data) {
+      const { prev, next } = resolvePrevNextWork(pageWorks, workId);
+      const toc_file_data = {
+        poet,
+        toc: work_data.toc,
+        subworks: work_data.subworks,
+        work: collected.works.get(`${poetId}/${workId}`),
+        notes: work_data.notes || [],
+        pictures: work_data.pictures || [],
+        modified: getModifiedDates().get(filename),
+        prev,
+        next,
+      };
+      const tocFilename = `public/api/${poetId}/${workId}-toc.json`;
+      writeJSON(tocFilename, toc_file_data);
+      progress.increment();
+    }
+    doc = null;
+  });
+  progress.finish();
+  return results;
 };
 
-module.exports = {
+export {
   build_works_toc,
   build_section_toc,
 };

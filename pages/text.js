@@ -9,15 +9,16 @@ import _ from '../common/translations.js';
 import { textCrumbs } from '../components/breadcrumbs.js';
 import { FootnoteContainer, FootnoteList } from '../components/footnotes.js';
 import HelpKalliope from '../components/helpkalliope.js';
-import * as Links from '../components/links';
+import * as Links from '../components/links.js';
 import { poetMenu } from '../components/menu.js';
 import Note from '../components/note.js';
+import SidebarMiniHeading from '../components/sidebarminiheading.js';
 import Page from '../components/page.js';
-import Picture from '../components/picture.js';
 import { poetNameString } from '../components/poetname-helpers.js';
 import PoetName from '../components/poetname.js';
 import SidebarPictures from '../components/sidebarpictures.js';
 import SidebarSplit from '../components/sidebarsplit.js';
+import Source from '../components/source.js';
 import Stack from '../components/stack.js';
 import TextContent from '../components/textcontent.js';
 import TextName, { textLinkTitleString } from '../components/textname.js';
@@ -62,33 +63,53 @@ const Bladrer = (props) => {
   );
 };
 
-const Refs = ({ refs, contentLang }) => {
-  let renderedRefs = null;
-  if (refs.length === 1) {
-    renderedRefs = (
-      <>
-        <TextContent contentHtml={refs[0]} contentLang={contentLang} /> henviser
-        hertil.
-      </>
+const Refs = ({ refs, contentLang, currentPoetId, spacing = '16px' }) => {
+  const lang = useContext(LangContext);
+  const renderedRefs = refs.map((ref, i) => {
+    if (Array.isArray(ref)) {
+      return (
+        <div className="reference" key={i}>
+          <TextContent contentHtml={ref} contentLang={contentLang} />
+        </div>
+      );
+    }
+
+    const metadata = [];
+    if (ref.poetId !== currentPoetId) {
+      metadata.push(ref.poet);
+    }
+    if (ref.work != null) {
+      metadata.push(ref.work);
+    }
+
+    return (
+      <div className="reference" key={ref.id}>
+        <Link
+          href={Links.textURL(lang, ref.id)}
+          className="reference-title">
+          »{ref.title}«
+        </Link>
+        {metadata.length > 0 ? (
+          <div className="reference-metadata">{metadata.join(' · ')}</div>
+        ) : null}
+      </div>
     );
-  } else if (refs.length > 0) {
-    renderedRefs = (
-      <>
-        <p>Henvisninger hertil:</p>
-        {refs.map((ref, i) => {
-          return (
-            <div key={i} style={{ marginBottom: '10px' }}>
-              <TextContent contentHtml={ref} contentLang={contentLang} />
-            </div>
-          );
-        })}
-      </>
-    );
-  }
+  });
+
   return (
     <div className="refs">
-      {renderedRefs}
+      <Stack spacing={spacing}>{renderedRefs}</Stack>
       <style jsx>{`
+        :global(a.reference-title) {
+          display: inline-block;
+          hyphens: none;
+          overflow-wrap: break-word;
+        }
+        .reference-metadata {
+          margin-top: 2px;
+          color: #777;
+          font-size: 0.9em;
+        }
         @media print {
           .refs {
             display: none;
@@ -96,6 +117,40 @@ const Refs = ({ refs, contentLang }) => {
         }
       `}</style>
     </div>
+  );
+};
+
+const MetadataGroup = ({ title, children, printHidden = false }) => {
+  if (children == null) {
+    return null;
+  }
+  const className = `metadata-group${printHidden ? ' print-hidden' : ''}`;
+  return (
+    <section className={className}>
+      <SidebarMiniHeading>{title}</SidebarMiniHeading>
+      {children}
+      <style jsx>{`
+        .metadata-group {
+          margin-bottom: 22px;
+        }
+        .metadata-group:last-child {
+          margin-bottom: 0;
+        }
+        .metadata-group :global(a) {
+          hyphens: none;
+          overflow-wrap: break-word;
+        }
+        .metadata-group :global(p.digital-source) {
+          margin-top: 10px;
+          margin-bottom: 0;
+        }
+        @media print {
+          .metadata-group.print-hidden {
+            display: none;
+          }
+        }
+      `}</style>
+    </section>
   );
 };
 
@@ -126,6 +181,37 @@ const KeywordLink = ({ keyword, lang }) => {
         }
       `}</style>
     </span>
+  );
+};
+
+const RelatedDateTexts = ({ texts, lang }) => {
+  if (texts.length === 0) {
+    return null;
+  }
+  return (
+    <div className="related-date-texts">
+      {texts.map((text, i) => {
+        const separator =
+          i === texts.length - 1
+            ? ''
+            : i === texts.length - 2
+            ? ` ${_('og', lang)} `
+            : ', ';
+        return (
+          <span key={text.id}>
+            {text.poetName}:
+            <Link href={Links.textURL(lang, text.id)}>»{text.title}«</Link>
+            {separator}
+          </span>
+        );
+      })}{' '}
+      {_('knytter sig til samme dato.', lang)}
+      <style jsx>{`
+        .related-date-texts {
+          margin-bottom: 30px;
+        }
+      `}</style>
+    </div>
   );
 };
 
@@ -223,18 +309,28 @@ const TextPage = (props) => {
     };
   }
 
-  const notes = text.notes
-    .filter((note) => note.type !== 'unknown-original')
-    .map((note, i) => {
-      return (
-        <Note key={'note' + i} type={note.type}>
-          <TextContent
-            contentHtml={note.content_html}
-            contentLang={note.content_lang}
-          />
-        </Note>
-      );
-    });
+  const renderNotes = (items, keyPrefix) =>
+    items
+      .filter((note) => note.type !== 'unknown-original')
+      .map((note, i) => {
+        return (
+          <Note key={keyPrefix + i} type={note.type}>
+            <TextContent
+              contentHtml={note.content_html}
+              contentLang={note.content_lang}
+            />
+          </Note>
+        );
+      });
+
+  const translationSourceNotes = renderNotes(
+    text.notes.filter((note) => note.type === 'translation-source'),
+    'translation-source'
+  );
+  const notes = renderNotes(
+    text.notes.filter((note) => note.type !== 'translation-source'),
+    'note'
+  );
 
   text.notes
     .filter(
@@ -242,16 +338,16 @@ const TextPage = (props) => {
         note.type === 'unknown-original' && note.unknownOriginalBy != null
     )
     .map((note, i) => {
-      const poet = note.unknownOriginalBy;
-      if (poet == null) {
+      const originalPoet = note.unknownOriginalBy;
+      if (originalPoet == null) {
         return null;
       }
       const html = _(
         `Oversættelse af et ukendt digt af <a poet="{poetId}">{poetName}</a>.`,
         lang,
         {
-          poetId: poet.id,
-          poetName: poetNameString(poet, false, true),
+          poetId: originalPoet.id,
+          poetName: poetNameString(originalPoet, false, true, lang),
         }
       );
       return (
@@ -261,7 +357,7 @@ const TextPage = (props) => {
               contentHtml={[[html, { html: true }]]}
               contentLang={lang}
             />
-            <HelpKalliope unknownOriginalBy={poet} />
+            <HelpKalliope unknownOriginalBy={originalPoet} lang={lang} />
           </>
         </Note>
       );
@@ -272,47 +368,30 @@ const TextPage = (props) => {
     });
 
   let sourceText = '';
+  let renderedSource = null;
   if (text.source != null) {
     const source = text.source;
-    sourceText = 'Teksten følger ';
-    sourceText += source.source.replace(/\.?$/, ', ');
-    if (source.pages.indexOf('-') > -1) {
-      sourceText += 'pp. ';
-    } else {
-      sourceText += 'p. ';
-    }
-    sourceText += source.pages + '.';
-
-    let className = null;
-    if (text.source.facsimilePages != null) {
-      // Vi har en facsimile, hvorunder vi viser sourceText, så denne note skal kun vises på print.
-      className = 'print-only';
-    }
-    notes.push(
-      <Note className={className} key="source" type="source">
-        <TextContent
+    if (source.source != null && source.source.length > 0) {
+      sourceText = source.source;
+      if (source.pages != null) {
+        sourceText = sourceText.replace(/\.?$/, ', ');
+        sourceText += 's. ' + source.pages + '.';
+      }
+      renderedSource = (
+        <Source
           contentHtml={[[sourceText, { html: true }]]}
-          contentLang="da"
+          href={source.digitalUrl}
+          lang={lang}
         />
-      </Note>
-    );
+      );
+    } else if (source.digitalUrl != null) {
+      renderedSource = (
+        <Source href={source.digitalUrl} lang={lang} />
+      );
+    }
   }
 
-  let renderedNotes = null;
-  if (notes.length > 0) {
-    renderedNotes = <div style={{ marginBottom: '30px' }}>{notes}</div>;
-  }
-
-  let textPictures = text.pictures.map((p, i) => {
-    return (
-      <Picture
-        key={'textpicture' + i}
-        pictures={[p]}
-        contentLang={p.content_lang || 'da'}
-        lang={lang}
-      />
-    );
-  });
+  let textPictures = [...text.pictures];
 
   if (text.source != null && text.source.facsimilePages != null) {
     function pad(num, size) {
@@ -322,7 +401,8 @@ const TextPage = (props) => {
     }
     const firstPageNumber = text.source.facsimilePages[0];
     let facsimilePictures = [];
-    const srcPrefix = `https://kalliope.org/static/facsimiles/${poet.id}/${text.source.facsimile}`;
+    const facsimilePoetId = text.source.facsimilePoetId || poet.id;
+    const srcPrefix = `https://kalliope.org/static/facsimiles/${facsimilePoetId}/${text.source.facsimile}`;
     for (let i = 0; i < text.source.facsimilePageCount; i++) {
       facsimilePictures.push({
         src: srcPrefix + '/' + pad(i, 3) + '.jpg',
@@ -330,98 +410,133 @@ const TextPage = (props) => {
         content_lang: 'da',
       });
     }
-    textPictures.push(
-      <Picture
-        key={'facsimile' + firstPageNumber}
-        pictures={facsimilePictures}
-        startIndex={firstPageNumber - 1}
-        lang="da"
-        contentLang="da"
-      />
-    );
+    facsimilePictures[firstPageNumber - 1].miniature_content_html = [
+      [sourceText, { html: true }],
+    ];
+    textPictures.push({
+      key: 'facsimile' + firstPageNumber,
+      pictures: facsimilePictures,
+      startIndex: firstPageNumber - 1,
+      lang: 'da',
+      contentLang: 'da',
+    });
   }
 
-  const renderedPictures = (
-    <div style={{ marginTop: '30px' }}>
-      <SidebarPictures>{textPictures}</SidebarPictures>
-    </div>
-  );
-
-  const variants = text.variants.map((ref, i) => {
-    return (
-      <div key={i} style={{ marginBottom: '10px' }}>
-        <TextContent contentHtml={ref} contentLang={text.content_lang} />
+  const renderedPictures =
+    textPictures.length > 0 ? (
+      <div>
+        <SidebarPictures pictures={textPictures} lang={lang} />
       </div>
-    );
-  });
+    ) : null;
 
   let renderedKeywords = null;
   if (text.keywords.length > 0) {
     const list = text.keywords.map((k) => {
       return <KeywordLink keyword={k} lang={lang} key={k.id} />;
     });
-    renderedKeywords = <div style={{ marginTop: '30px' }}>{list}</div>;
+    renderedKeywords = (
+      <div style={{ marginTop: '30px', marginBottom: '30px' }}>{list}</div>
+    );
   }
 
-  let renderedVariants = null;
-  if (variants.length > 0) {
-    let heading = null;
-    const varianter = _(
-      pluralize(variants.length, 'Variant', 'Varianter'),
-      lang
-    );
-    if (text.text_type === 'section') {
-      heading = _('{varianter} af denne samling:', lang, { varianter });
-    } else if (text.text_type === 'text') {
-      heading = _('{varianter} af denne tekst:', lang, { varianter });
-    }
-    renderedVariants = (
-      <div className="variants">
-        <p>{heading}</p>
-        {variants}
-        <style jsx>{`
-          @media print {
-            .variants {
-              display: none;
-            }
-          }
-        `}</style>
-      </div>
-    );
-  }
+  const noteCount = notes.length + (text.footnotes_count || 0);
+  const noteHeading = _(pluralize(noteCount, 'Note', 'Noter'), lang);
+  const translationsHeading = _(
+    pluralize(
+      (text.translations || []).length,
+      'Gendigtning',
+      'Gendigtninger'
+    ),
+    lang
+  );
+  const hasAboutText =
+    translationSourceNotes.length > 0 ||
+    renderedSource != null ||
+    notes.length > 0 ||
+    text.has_footnotes ||
+    text.refs.length > 0 ||
+    (text.translations || []).length > 0 ||
+    text.variants.length > 0;
+  const renderedNotes =
+    notes.length > 0 || text.has_footnotes ? (
+      <MetadataGroup title={noteHeading}>
+        {notes}
+        <FootnoteList />
+      </MetadataGroup>
+    ) : null;
+  const renderedTextMetadata = hasAboutText ? (
+    <>
+      {translationSourceNotes.length > 0 ? (
+        <MetadataGroup title={_('Forlæg', lang)}>
+          {translationSourceNotes}
+        </MetadataGroup>
+      ) : null}
+      {renderedSource != null ? (
+        <MetadataGroup title={_('Kilde', lang)}>
+          {renderedSource}
+        </MetadataGroup>
+      ) : null}
+      {text.variants.length > 0 ? (
+        <MetadataGroup title={_('Andre udgaver', lang)} printHidden>
+          <Refs
+            refs={text.variants}
+            contentLang={text.content_lang}
+            currentPoetId={poet.id}
+          />
+        </MetadataGroup>
+      ) : null}
+      {text.refs.length > 0 ? (
+        <MetadataGroup title={_('Omtalt i', lang)} printHidden>
+          <Refs
+            refs={text.refs}
+            contentLang={text.content_lang}
+            currentPoetId={poet.id}
+            spacing="5px"
+          />
+        </MetadataGroup>
+      ) : null}
+      {(text.translations || []).length > 0 ? (
+        <MetadataGroup title={translationsHeading} printHidden>
+          <Refs
+            refs={text.translations}
+            contentLang={text.content_lang}
+            currentPoetId={poet.id}
+            spacing="5px"
+          />
+        </MetadataGroup>
+      ) : null}
+    </>
+  ) : null;
 
   let sidebar = null;
   if (
-    text.refs.length > 0 ||
-    variants.length > 0 ||
-    text.has_footnotes ||
+    hasAboutText ||
     text.pictures.length > 0 ||
-    notes.length > 0 ||
     text.keywords.length > 0 ||
+    (text.related_date_texts || []).length > 0 ||
     textPictures.length > 0
   ) {
     sidebar = (
-      <div>
+      <Stack spacing="20px">
         {renderedNotes}
-        <FootnoteList />
-        <Refs refs={text.refs} contentLang={text.content_lang} />
-        {renderedVariants}
+        {renderedTextMetadata}
+        <RelatedDateTexts texts={text.related_date_texts || []} lang={lang} />
         {renderedKeywords}
         {renderedPictures}
-      </div>
+      </Stack>
     );
   }
 
   let ogTitle = null;
   if (work.id !== 'andre') {
     ogTitle = _(`{poetName}: »{poemTitle}« fra {workTitle}`, lang, {
-      poetName: poetNameString(poet, false, false),
+      poetName: poetNameString(poet, false, false, lang),
       poemTitle: textLinkTitleString(text),
-      workTitle: workTitleString(work),
+      workTitle: workTitleString(work, lang),
     });
   } else {
     ogTitle = _(`{poetName}: »{poemTitle}«`, lang, {
-      poetName: poetNameString(poet, false, false),
+      poetName: poetNameString(poet, false, false, lang),
       poemTitle: textLinkTitleString(text),
     });
   }
@@ -498,11 +613,14 @@ const TextPage = (props) => {
       ogImage={OpenGraph.poetImage(poet)}
       ogDescription={ogDescription}
       requestPath={`/${lang}/text/${text.id}`}
+      canonicalPath={`/${lang}/text/${text.canonical_id || text.id}`}
+      noIndex={text.indexable === false}
       crumbs={textCrumbs(lang, poet, work, section_titles || [], text)}
       paging={paging}
       pageTitle={<PoetName poet={poet} includePeriod />}
       pageSubtitle={_('Værker', lang)}
       menuItems={poetMenu(poet)}
+      poet={poet}
       selectedMenuItem="works">
       <FootnoteContainer key={text.id}>
         <SidebarSplit sidebar={sidebar}>

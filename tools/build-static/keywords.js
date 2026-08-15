@@ -1,23 +1,25 @@
-const fs = require('fs');
-const { safeMkdir, htmlToXml, writeJSON } = require('../libs/helpers.js');
-const {
+import fs from 'fs';
+import { safeMkdir, htmlToXml, writeJSON } from '../libs/helpers.js';
+import {
   isFileModified,
   loadCachedJSON,
   writeCachedJSON,
-} = require('../libs/caching.js');
-const { get_pictures } = require('./parsing.js');
-const {
+} from '../libs/caching.js';
+import { get_pictures } from './parsing.js';
+import {
   loadXMLDoc,
   safeGetInnerXML,
   safeGetText,
   safeGetAttr,
   getChildByTagName,
-} = require('./xml.js');
+} from './xml.js';
+import { mapLimit } from './concurrency.js';
 
 const build_keywords = async collected => {
-  safeMkdir('public/api/keywords');
+  const outputFolder = 'public/api/keywords';
+  safeMkdir(outputFolder);
   let collected_keywords = new Map(loadCachedJSON('collected.keywords') || []);
-  const folder = 'data/keywords';
+  const folder = 'content/keywords';
   const filenames = fs
     .readdirSync(folder)
     .filter(x => x.endsWith('.xml'))
@@ -25,8 +27,10 @@ const build_keywords = async collected => {
   if (collected_keywords.size === 0 || isFileModified(...filenames)) {
     collected_keywords = new Map();
     let keywords_toc = new Array();
-    await Promise.all(
-      filenames.map(async path => {
+    const outputFilenames = new Set();
+    await mapLimit(
+      filenames,
+      async path => {
         if (!path.endsWith('.xml')) {
           return;
         }
@@ -74,20 +78,25 @@ const build_keywords = async collected => {
           redirectURL,
           is_draft,
         });
-        const outFilename = `public/api/keywords/${id}.json`;
-        console.log(outFilename);
+        const outFilename = `${outputFolder}/${id}.json`;
+        outputFilenames.add(`${id}.json`);
         writeJSON(outFilename, data);
         collected_keywords.set(id, { id, title });
-      })
+      }
     );
+    for (const filename of fs.readdirSync(outputFolder)) {
+      if (filename.endsWith('.json') && !outputFilenames.has(filename)) {
+        const staleFilename = `${outputFolder}/${filename}`;
+        fs.unlinkSync(staleFilename);
+      }
+    }
     writeCachedJSON('collected.keywords', Array.from(collected_keywords));
     const outFilename = `public/api/keywords.json`;
-    console.log(outFilename);
     writeJSON(outFilename, keywords_toc);
   }
   return collected_keywords;
 };
 
-module.exports = {
+export {
   build_keywords,
 };

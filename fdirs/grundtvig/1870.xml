@@ -1,36 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1870" author="grundtvig" status="complete" type="poetry" parent="1868-1881">
 <workhead>
-    <title>Psalmer og aandelige Sange</title>
-    <subtitle>Sangværk til den Danske Kirke-Skole</subtitle>
-    <linktitle>Psalmer og aandelige Sange, 2. Bind</linktitle>
-    <toctitle><num>Bind 2.</num>Sangværk til den Danske Kirke-Skole</toctitle>
-    <breadcrumbtitle>Bd. 2</breadcrumbtitle>
-    <year>1870</year>
-    <notes>
-       <note>Teksten følger N.F.S. Grundtvig: <i>Psalmer og aandelige Sange</i>, Bd. 2, Kbh., 1870.</note>
-       <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
-       <note>Noter med en foranstillet asterisk er digterens egne.</note>
-    </notes>
-    <pictures>
-        <picture type="titlepage" src="1870-p1.jpg">Første titelblad lyder ,,Psalmer / og / aandelige Sange. / af / Nik. Fred. Sev. Grundtvig. // Anden Deel. / Sangværket til Kirke-Skolen. // Kjøbenhavn. / C. G. Iversens Boghandel. Karl Schønberg. / Thieles Bogtrykkeri. / 1870.''</picture>
-        <picture src="1870-p2.jpg"></picture>
-        <picture src="1870-p3.jpg">Andet titelblad lyder ,,Sang-Værk / til / Den Danske Kirke-Skole, / samlet / af / Nik. Fred. Sev. Grundtvig. // Kjøbenhavn. / C. G. Iversens Boghandel. Karl Schønberg. / Thieles Bogtrykkeri. / 1870.''</picture>
-    </pictures>
-    <source facsimile="110408055573_color" facsimile-pages-num="434" facsimile-pages-offset="12">N.F.S. Grundtvig: <i>Psalmer og aandelige Sange</i>, Bd. 2, Kbh., 1868.</source>
+  <title>Psalmer og aandelige Sange</title>
+  <subtitle>Sangværk til den Danske Kirke-Skole</subtitle>
+  <linktitle>Psalmer og aandelige Sange, 2. Bind</linktitle>
+  <toctitle><num>Bind 2.</num>Sangværk til den Danske Kirke-Skole</toctitle>
+  <breadcrumbtitle>Bd. 2</breadcrumbtitle>
+  <year>1870</year>
+  <notes>
+    <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
+    <note>Noter med en foranstillet asterisk er digterens egne.</note>
+  </notes>
+  <pictures>
+    <picture type="titlepage" src="1870-p1.jpg">Første titelblad lyder ,,Psalmer / og / aandelige Sange. / af / Nik. Fred. Sev. Grundtvig. // Anden Deel. / Sangværket til Kirke-Skolen. // Kjøbenhavn. / C. G. Iversens Boghandel. Karl Schønberg. / Thieles Bogtrykkeri. / 1870.''</picture>
+    <picture src="1870-p2.jpg"></picture>
+    <picture src="1870-p3.jpg">Andet titelblad lyder ,,Sang-Værk / til / Den Danske Kirke-Skole, / samlet / af / Nik. Fred. Sev. Grundtvig. // Kjøbenhavn. / C. G. Iversens Boghandel. Karl Schønberg. / Thieles Bogtrykkeri. / 1870.''</picture>
+  </pictures>
+  <source facsimile="110408055573_color" facsimile-pages-num="434" facsimile-pages-offset="12">N.F.S. Grundtvig: <i>Psalmer og aandelige Sange</i>, Bd. 2, Kbh., 1868.</source>
 </workhead>
 <workbody>
 
 <text id="grundtvig200106181">
 <head>
-    <title><num>1.</num>Skabelsen</title>
-    <firstline>Hvad er det, vi skue</firstline>
-    <notes>
-      <note>Sangværk til den danske Kirke, 2. Deels 1. Hefte (1839) Nr. 7, noget ændret fra Rudelbachs Theologiske Maanedsskrift 13, Side 147 (1828).</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="1-8"/>
+  <title><num>1.</num>Skabelsen</title>
+  <firstline>Hvad er det, vi skue</firstline>
+  <notes>
+    <note>Sangværk til den danske Kirke, 2. Deels 1. Hefte (1839) Nr. 7, noget ændret fra Rudelbachs Theologiske Maanedsskrift 13, Side 147 (1828).</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="1-8"/>
 </head>
 <body>
 <poetry>
@@ -291,13 +289,13 @@ Paa Jord-Drotten prud.
 
 <text id="grundtvig200106182">
 <head>
-    <title><num>2.</num>Adam og Eva</title>
-    <firstline>Ordet sig hviled</firstline>
-    <notes>
-      <note>Sangværk 2, Nr. 10 forkortet, dog med nyt Slutningsvers fra Theol. Maanedsskrift 13 Side 155.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="8-15"/>
+  <title><num>2.</num>Adam og Eva</title>
+  <firstline>Ordet sig hviled</firstline>
+  <notes>
+    <note>Sangværk 2, Nr. 10 forkortet, dog med nyt Slutningsvers fra Theol. Maanedsskrift 13 Side 155.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="8-15"/>
 </head>
 <body>
 <poetry>
@@ -530,14 +528,14 @@ Salighed spaae!
 
 <text id="grundtvig200106183">
 <head>
-    <title><num>3.</num>Paradiset</title>
-    <subtitle>Mel. af L. M. Lindeman; omkvædet mangler.</subtitle>
-    <firstline>Gud planted en Have fra Øst til Vest</firstline>
-    <notes>
-      <note>Sangværk 2, Nr. 11.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="15-18"/>
+  <title><num>3.</num>Paradiset</title>
+  <subtitle>Mel. af L. M. Lindeman; omkvædet mangler.</subtitle>
+  <firstline>Gud planted en Have fra Øst til Vest</firstline>
+  <notes>
+    <note>Sangværk 2, Nr. 11.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="15-18"/>
 </head>
 <body>
 <poetry>
@@ -648,14 +646,14 @@ Ak! hvorlænge var Adam i Paradis!
 
 <text id="grundtvig200106184">
 <head>
-    <title><num>4.</num>Herren, som raader i Himmerig</title>
-    <firstline>Herren, som raader i Himmerig</firstline>
-    <notes>
-      <note>Efter et Brudstykke hos Angelsachseren Kædmon.</note>
-      <note>Sangværk 2, Nr. 8, efter et Brudstykke hos Kædmon.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="18-22"/>
+  <title><num>4.</num>Herren, som raader i Himmerig</title>
+  <firstline>Herren, som raader i Himmerig</firstline>
+  <notes>
+    <note>Efter et Brudstykke hos Angelsachseren Kædmon.</note>
+    <note>Sangværk 2, Nr. 8, efter et Brudstykke hos Kædmon.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="18-22"/>
 </head>
 <body>
 <poetry>
@@ -824,15 +822,15 @@ Hvor kunne vi Ham fuldtakke!
 
 <text id="grundtvig200106185">
 <head>
-    <title><num>5.</num>Den Luft, hvori vi gaae</title>
-    <subtitle>Mel. Fryd dig, du Christi Brud.</subtitle>
-    <firstline>Den Luft, hvori vi gaae</firstline>
-    <notes>
-      <note>Brorsons, lidt ændret.</note>
-      <note>Sangværk 2, Nr. 9, fra L. E. Hagens Historiske Psalmer og Rim (1832) Nr. 2, efter H. A. Brorson.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="22-25"/>
+  <title><num>5.</num>Den Luft, hvori vi gaae</title>
+  <subtitle>Mel. Fryd dig, du Christi Brud.</subtitle>
+  <firstline>Den Luft, hvori vi gaae</firstline>
+  <notes>
+    <note>Brorsons, lidt ændret.</note>
+    <note>Sangværk 2, Nr. 9, fra L. E. Hagens Historiske Psalmer og Rim (1832) Nr. 2, efter H. A. Brorson.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="22-25"/>
 </head>
 <body>
 <poetry>
@@ -932,14 +930,14 @@ O, gid vi der kun vare!
 
 <text id="grundtvig200106186">
 <head>
-    <title><num>6.</num>Kain og Abel</title>
-    <subtitle>Kan synges som: Dagen gaaer med raske Fjed, af Weyse.</subtitle>
-    <firstline>Kain pløied rask i Vaar</firstline>
-    <notes>
-      <note>Sangværk 2, Nr. 12, fra Theol. Maanedsskrift 13 Side 163, hvor den gaaer i et med den følgende, overskrevet "Patriarcherne".</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="25-27"/>
+  <title><num>6.</num>Kain og Abel</title>
+  <subtitle>Kan synges som: Dagen gaaer med raske Fjed, af Weyse.</subtitle>
+  <firstline>Kain pløied rask i Vaar</firstline>
+  <notes>
+    <note>Sangværk 2, Nr. 12, fra Theol. Maanedsskrift 13 Side 163, hvor den gaaer i et med den følgende, overskrevet "Patriarcherne".</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="25-27"/>
 </head>
 <body>
 <poetry>
@@ -1023,14 +1021,14 @@ Der er ingen Pine!
 
 <text id="grundtvig200106187">
 <head>
-    <title><num>7.</num>Stamfædrene</title>
-    <subtitle>Samme Melodi.</subtitle>
-    <firstline>Ei uddøer den Godes Æt</firstline>
-    <notes>
-      <note>Sangværk 2, Nr. 13, fra Theol. Maanedsskrift 13 Side 165.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="28-30"/>
+  <title><num>7.</num>Stamfædrene</title>
+  <subtitle>Samme Melodi.</subtitle>
+  <firstline>Ei uddøer den Godes Æt</firstline>
+  <notes>
+    <note>Sangværk 2, Nr. 13, fra Theol. Maanedsskrift 13 Side 165.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="28-30"/>
 </head>
 <body>
 <poetry>
@@ -1065,7 +1063,7 @@ Sønnen læmped Strengeleg
 Efter Dødningsangen.
 
 Spillemanden Jubal hed,
-Tubal<note>Cf. <xref bibel="bibel1mose04,22" />.</note> med sin Hammer
+Tubal<note>Cf. <xref bible="bibel1mose04,22" />.</note> med sin Hammer
 Blev den første Vaabensmed,
 Tændte Krigens Flammer!
 
@@ -1109,14 +1107,14 @@ Sjunge Nattergale!
 
 <text id="grundtvig200106188">
 <head>
-    <title><num>8.</num>Syndfloden</title>
-    <subtitle>Egen Melodi af H. Matthison-Hansen.</subtitle>
-    <firstline>Naar Nat udvælder</firstline>
-    <notes>
-      <note>Sangværk 2, Nr. 14, fra Theol. Maanedsskrift 13 Side 168.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="30-42"/>
+  <title><num>8.</num>Syndfloden</title>
+  <subtitle>Egen Melodi af H. Matthison-Hansen.</subtitle>
+  <firstline>Naar Nat udvælder</firstline>
+  <notes>
+    <note>Sangværk 2, Nr. 14, fra Theol. Maanedsskrift 13 Side 168.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="30-42"/>
 </head>
 <body>
 <poetry>
@@ -1557,14 +1555,14 @@ Den Aftenstund!!
 
 <text id="grundtvig200106189">
 <head>
-    <title><num>9.</num>Babels-Taarnet</title>
-    <subtitle>Egen Melodi af C. Barnekow.</subtitle>
-    <firstline>Paa Sletten ved Euphrat i Asialand</firstline>
-    <notes>
-      <note>Sangværk 2, Nr. 15.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="42-43"/>
+  <title><num>9.</num>Babels-Taarnet</title>
+  <subtitle>Egen Melodi af C. Barnekow.</subtitle>
+  <firstline>Paa Sletten ved Euphrat i Asialand</firstline>
+  <notes>
+    <note>Sangværk 2, Nr. 15.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="42-43"/>
 </head>
 <body>
 <poetry>
@@ -1627,14 +1625,14 @@ For Vorherre, Han er deres Mester!
 
 <text id="grundtvig2001061810">
 <head>
-    <title><num>10.</num>Abraham</title>
-    <subtitle>Egen Melodi af C. Barnekow.</subtitle>
-    <firstline>Fra Afguders Altre slog Røgen i Sky</firstline>
-    <notes>
-      <note>Abraham. Sangværk 2, Nr. 16.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="44-45"/>
+  <title><num>10.</num>Abraham</title>
+  <subtitle>Egen Melodi af C. Barnekow.</subtitle>
+  <firstline>Fra Afguders Altre slog Røgen i Sky</firstline>
+  <notes>
+    <note>Abraham. Sangværk 2, Nr. 16.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="44-45"/>
 </head>
 <body>
 <poetry>
@@ -1678,14 +1676,14 @@ Vor Telt i den Høiestes Skygge!
 
 <text id="grundtvig2001061811">
 <head>
-    <title><num>11.</num>Abraham sad i Mamre-Lund</title>
-    <subtitle>Synges efter en gammel Folkemelodi.</subtitle>
-    <firstline>Abraham sad i Mamre-Lund</firstline>
-    <notes>
-      <note>Sangværk 2, Nr. 17, fra Hagens Psalmer og Rim (1832) Nr. 5.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="45-46"/>
+  <title><num>11.</num>Abraham sad i Mamre-Lund</title>
+  <subtitle>Synges efter en gammel Folkemelodi.</subtitle>
+  <firstline>Abraham sad i Mamre-Lund</firstline>
+  <notes>
+    <note>Sangværk 2, Nr. 17, fra Hagens Psalmer og Rim (1832) Nr. 5.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="45-46"/>
 </head>
 <body>
 <poetry>
@@ -1744,14 +1742,14 @@ Med Sønnen af Guds Naade!
 
 <text id="grundtvig2001061812">
 <head>
-    <title><num>12.</num>Isak</title>
-    <subtitle>Egen Melodi af C. Barnekow.</subtitle>
-    <firstline>Der kom et Bud fra Himmerig</firstline>
-    <notes>
-      <note>Isak. Sangværk 2, Nr. 18.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="46-49"/>
+  <title><num>12.</num>Isak</title>
+  <subtitle>Egen Melodi af C. Barnekow.</subtitle>
+  <firstline>Der kom et Bud fra Himmerig</firstline>
+  <notes>
+    <note>Isak. Sangværk 2, Nr. 18.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="46-49"/>
 </head>
 <body>
 <poetry>
@@ -1848,14 +1846,14 @@ Til Arv i Himmerige!
 
 <text id="grundtvig2001061813">
 <head>
-    <title><num>13.</num>Sara var død, i sin Eenlighed</title>
-    <subtitle>Egen Melodi af L. M. Lindeman.</subtitle>
-    <firstline>Sara var død, i sin Eenlighed</firstline>
-    <notes>
-      <note>Sangværk 2, Nr. 19, med et nyt Vers indskudt (Vers 23?).</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="49-53"/>
+  <title><num>13.</num>Sara var død, i sin Eenlighed</title>
+  <subtitle>Egen Melodi af L. M. Lindeman.</subtitle>
+  <firstline>Sara var død, i sin Eenlighed</firstline>
+  <notes>
+    <note>Sangværk 2, Nr. 19, med et nyt Vers indskudt (Vers 23?).</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="49-53"/>
 </head>
 <body>
 <poetry>
@@ -2032,14 +2030,14 @@ Rebekke, hun var Livet i Huset!
 
 <text id="grundtvig2001061814">
 <head>
-    <title><num>14.</num>Jakob og Esau</title>
-    <subtitle>Kan synges som: Abraham sad i Mamre Lund.</subtitle>
-    <firstline>Esau var en Skytte vild</firstline>
-    <notes>
-      <note>Sangværk til den danske Kirke, 2. Binds 2. Hefte (1841) Nr. 20.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="54-56"/>
+  <title><num>14.</num>Jakob og Esau</title>
+  <subtitle>Kan synges som: Abraham sad i Mamre Lund.</subtitle>
+  <firstline>Esau var en Skytte vild</firstline>
+  <notes>
+    <note>Sangværk til den danske Kirke, 2. Binds 2. Hefte (1841) Nr. 20.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="54-56"/>
 </head>
 <body>
 <poetry>
@@ -2138,17 +2136,17 @@ Gud frelste den fromme Hyrde!
 
 <text id="grundtvig2001061815">
 <head>
-    <title><num>15.</num>Jakobs Drøm</title>
-    <subtitle>
-      <line>Egen Melodi af L. M. Lindeman. Kan ogsaa synges som:</line>
-      <line>Kommer hid, I Piger smaa, af Weyse.</line>
-    </subtitle>
-    <firstline>Op ad Bjerg og ned i Dal</firstline>
-    <notes>
-      <note>Sangværk 2, Nr. 21.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="56-60"/>
+  <title><num>15.</num>Jakobs Drøm</title>
+  <subtitle>
+    <line>Egen Melodi af L. M. Lindeman. Kan ogsaa synges som:</line>
+    <line>Kommer hid, I Piger smaa, af Weyse.</line>
+  </subtitle>
+  <firstline>Op ad Bjerg og ned i Dal</firstline>
+  <notes>
+    <note>Sangværk 2, Nr. 21.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="56-60"/>
 </head>
 <body>
 <poetry>
@@ -2285,14 +2283,14 @@ Offrer Ham det Bedste.
 
 <text id="grundtvig2001061816">
 <head>
-    <title><num>16.</num>Jakob og Rakel</title>
-    <subtitle>Egen Melodi af Johanne Fenger.</subtitle>
-    <firstline>Solen er heed</firstline>
-    <notes>
-      <note>Sangværk 2, Nr. 22.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="60-64"/>
+  <title><num>16.</num>Jakob og Rakel</title>
+  <subtitle>Egen Melodi af Johanne Fenger.</subtitle>
+  <firstline>Solen er heed</firstline>
+  <notes>
+    <note>Sangværk 2, Nr. 22.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="60-64"/>
 </head>
 <body>
 <poetry>
@@ -2445,14 +2443,14 @@ For i Hjertet, der har Livet sin Kilde!
 
 <text id="grundtvig2001061817">
 <head>
-    <title><num>17.</num>Jakobs Nattekamp</title>
-    <subtitle>Egen Melodi af L. M. Lindeman.</subtitle>
-    <firstline>Som Ørnen sidder paa høien Hald</firstline>
-    <notes>
-      <note>Sangværk 2, Nr. 23.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="64-67"/>
+  <title><num>17.</num>Jakobs Nattekamp</title>
+  <subtitle>Egen Melodi af L. M. Lindeman.</subtitle>
+  <firstline>Som Ørnen sidder paa høien Hald</firstline>
+  <notes>
+    <note>Sangværk 2, Nr. 23.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="64-67"/>
 </head>
 <body>
 <poetry>
@@ -2556,14 +2554,14 @@ Han leder dem som Vandbække!
 
 <text id="grundtvig2001061818">
 <head>
-    <title><num>18.</num>Josef i Fængselet</title>
-    <subtitle>Egen Melodi af H. Nutzhorn.</subtitle>
-    <firstline>Der sad en Svend i det sorte Hul</firstline>
-    <notes>
-      <note>Sangværk 2, Nr. 24, med et nyt Vers indskudt (Vers 6.).</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="67-70"/>
+  <title><num>18.</num>Josef i Fængselet</title>
+  <subtitle>Egen Melodi af H. Nutzhorn.</subtitle>
+  <firstline>Der sad en Svend i det sorte Hul</firstline>
+  <notes>
+    <note>Sangværk 2, Nr. 24, med et nyt Vers indskudt (Vers 6.).</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="67-70"/>
 </head>
 <body>
 <poetry>
@@ -2692,14 +2690,14 @@ At vinde ved Intet at vove!
 
 <text id="grundtvig2001061819">
 <head>
-    <title><num>19.</num>Josefs Ophøielse</title>
-    <subtitle>Samme Melodi.</subtitle>
-    <firstline>Kong Pharao vaagned en Morgenstund</firstline>
-    <notes>
-      <note>Sangværk 2, Nr. 24, Side 117, hvor den gaaer i et med den foregaaende. See P. O. Boisens bibelske og kirkehistoriske Psalmer og Sange (1853) Nr. 15.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="71-74"/>
+  <title><num>19.</num>Josefs Ophøielse</title>
+  <subtitle>Samme Melodi.</subtitle>
+  <firstline>Kong Pharao vaagned en Morgenstund</firstline>
+  <notes>
+    <note>Sangværk 2, Nr. 24, Side 117, hvor den gaaer i et med den foregaaende. See P. O. Boisens bibelske og kirkehistoriske Psalmer og Sange (1853) Nr. 15.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="71-74"/>
 </head>
 <body>
 <poetry>
@@ -2828,14 +2826,14 @@ Faaer Lykken til Ledsagerinde!
 
 <text id="grundtvig2001061820">
 <head>
-    <title><num>20.</num>Jakob og hans tolv Sønner</title>
-    <subtitle>Mel. Visen om Axel og Valborg, eller: Egen Melodi af L. M. Lindeman.</subtitle>
-    <firstline>Gud naade mig stakkels gamle Mand!</firstline>
-    <notes>
-      <note>Sangværk 2, Nr. 25.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="74-76"/>
+  <title><num>20.</num>Jakob og hans tolv Sønner</title>
+  <subtitle>Mel. Visen om Axel og Valborg, eller: Egen Melodi af L. M. Lindeman.</subtitle>
+  <firstline>Gud naade mig stakkels gamle Mand!</firstline>
+  <notes>
+    <note>Sangværk 2, Nr. 25.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="74-76"/>
 </head>
 <body>
 <poetry>
@@ -2922,14 +2920,14 @@ Saa Lykken, hun vender sig ofte om!
 
 <text id="grundtvig2001061821">
 <head>
-    <title><num>21.</num>Moses og Pharao</title>
-    <subtitle>Egen Melodi.</subtitle>
-    <firstline>Kong Pharao var en ugudelig Krop</firstline>
-    <notes>
-      <note>Sangværk 2, Nr. 26, med Udeladelse af de tre Slutningsvers, som i Boisens bibelske Sange Nr. 17.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="77-78"/>
+  <title><num>21.</num>Moses og Pharao</title>
+  <subtitle>Egen Melodi.</subtitle>
+  <firstline>Kong Pharao var en ugudelig Krop</firstline>
+  <notes>
+    <note>Sangværk 2, Nr. 26, med Udeladelse af de tre Slutningsvers, som i Boisens bibelske Sange Nr. 17.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="77-78"/>
 </head>
 <body>
 <poetry>
@@ -2983,14 +2981,14 @@ Han nødes til selv dem at fremme.
 
 <text id="grundtvig2001061822">
 <head>
-    <title><num>22.</num>Moses-Kvadet</title>
-    <subtitle>Egen Melodi af C Barnekow.</subtitle>
-    <firstline>Der toner et Kvad over Tidens Hav</firstline>
-    <notes>
-      <note>Grundtvigs Krønikerim til levende Skolebrug 2. Udgave (1842) Side 18, med et nyt Indgangsvers.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="78-79"/>
+  <title><num>22.</num>Moses-Kvadet</title>
+  <subtitle>Egen Melodi af C Barnekow.</subtitle>
+  <firstline>Der toner et Kvad over Tidens Hav</firstline>
+  <notes>
+    <note>Grundtvigs Krønikerim til levende Skolebrug 2. Udgave (1842) Side 18, med et nyt Indgangsvers.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="78-79"/>
 </head>
 <body>
 <poetry>
@@ -3039,14 +3037,14 @@ Det er Navnet, som evig mig følger!
 
 <text id="grundtvig2001061823">
 <head>
-    <title><num>23.</num>Moses i Ørken</title>
-    <subtitle>Kan synges som: Abraham sad i Mamre Lund.</subtitle>
-    <firstline>Der gik en Hyrde og vogted Faar</firstline>
-    <notes>
-      <note>Sangværk 2, Nr. 27.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="79-84"/>
+  <title><num>23.</num>Moses i Ørken</title>
+  <subtitle>Kan synges som: Abraham sad i Mamre Lund.</subtitle>
+  <firstline>Der gik en Hyrde og vogted Faar</firstline>
+  <notes>
+    <note>Sangværk 2, Nr. 27.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="79-84"/>
 </head>
 <body>
 <poetry>
@@ -3220,14 +3218,14 @@ Skal svinge til Jærtegn mange.
 
 <text id="grundtvig2001061824">
 <head>
-    <title><num>24.</num>Ebræernes Plage</title>
-    <subtitle>Egen Melodi af C. Barnekow.</subtitle>
-    <firstline>Et Paradis var Gosen</firstline>
-    <notes>
-      <note>Sangværk 2, Nr. 29.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="84-88"/>
+  <title><num>24.</num>Ebræernes Plage</title>
+  <subtitle>Egen Melodi af C. Barnekow.</subtitle>
+  <firstline>Et Paradis var Gosen</firstline>
+  <notes>
+    <note>Sangværk 2, Nr. 29.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="84-88"/>
 </head>
 <body>
 <poetry>
@@ -3361,14 +3359,14 @@ Hans Løfter glippe ei!
 
 <text id="grundtvig2001061825">
 <head>
-    <title><num>25.</num>Ebræernes Udgang af Ægypten</title>
-    <subtitle>Egen Melodi af J. P. E. Hartmann.</subtitle>
-    <firstline>Ægypten var plaget saa saare</firstline>
-    <notes>
-      <note>Sangværk 2, Nr. 30.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="88-90"/>
+  <title><num>25.</num>Ebræernes Udgang af Ægypten</title>
+  <subtitle>Egen Melodi af J. P. E. Hartmann.</subtitle>
+  <firstline>Ægypten var plaget saa saare</firstline>
+  <notes>
+    <note>Sangværk 2, Nr. 30.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="88-90"/>
 </head>
 <body>
 <poetry>
@@ -3462,13 +3460,13 @@ Da stod de ved Nildalens Skiel.
 
 <text id="grundtvig2001061826">
 <head>
-    <title><num>26.</num>Overgangen i det røde Hav</title>
-    <firstline>Pharao sidder i Høielofts-Sal</firstline>
-    <notes>
-      <note>Sangværk 2, Nr. 31.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="91-93"/>
+  <title><num>26.</num>Overgangen i det røde Hav</title>
+  <firstline>Pharao sidder i Høielofts-Sal</firstline>
+  <notes>
+    <note>Sangværk 2, Nr. 31.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="91-93"/>
 </head>
 <body>
 <poetry>
@@ -3573,14 +3571,14 @@ Og nu driver Ulven paa hviden Sand fra Norden.
 
 <text id="grundtvig2001061827">
 <head>
-    <title><num>27.</num>Som Solen oprinder morgenrød</title>
-    <subtitle>Egen Melodi af C. Barnekow.</subtitle>
-    <firstline>Som Solen oprinder morgenrød</firstline>
-    <notes>
-      <note>Sangværk 2, Nr. 32.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="94-95"/>
+  <title><num>27.</num>Som Solen oprinder morgenrød</title>
+  <subtitle>Egen Melodi af C. Barnekow.</subtitle>
+  <firstline>Som Solen oprinder morgenrød</firstline>
+  <notes>
+    <note>Sangværk 2, Nr. 32.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="94-95"/>
 </head>
 <body>
 <poetry>
@@ -3634,13 +3632,13 @@ Hans Fædre var det, som sang i Kor:
 
 <text id="grundtvig2001061828">
 <head>
-    <title><num>28.</num>Kom, lad os synge Vorherre en Sang!</title>
-    <firstline>Kom, lad os synge Vorherre en Sang!</firstline>
-    <notes>
-      <note>Sangværk 2, Nr. 33.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="95-97"/>
+  <title><num>28.</num>Kom, lad os synge Vorherre en Sang!</title>
+  <firstline>Kom, lad os synge Vorherre en Sang!</firstline>
+  <notes>
+    <note>Sangværk 2, Nr. 33.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="95-97"/>
 </head>
 <body>
 <poetry>
@@ -3719,14 +3717,14 @@ Han gik tørsko't paa Bunden af Havet!
 
 <text id="grundtvig2001061829">
 <head>
-    <title><num>29.</num>Lovgivningen paa Sinai</title>
-    <subtitle>Egen Melodi af J. P. E. Hartmann.</subtitle>
-    <firstline>Jehovah nedfoer fra det Høie</firstline>
-    <notes>
-      <note>Sangværk 2, Nr. 34.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="97-99"/>
+  <title><num>29.</num>Lovgivningen paa Sinai</title>
+  <subtitle>Egen Melodi af J. P. E. Hartmann.</subtitle>
+  <firstline>Jehovah nedfoer fra det Høie</firstline>
+  <notes>
+    <note>Sangværk 2, Nr. 34.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="97-99"/>
 </head>
 <body>
 <poetry>
@@ -3810,14 +3808,14 @@ Dit Bud vi vil lyde som Guds.
 
 <text id="grundtvig2001061830">
 <head>
-    <title><num>30.</num>Oprøret i Leiren</title>
-    <subtitle>Egen Melodi af C. Barnekow.</subtitle>
-    <firstline>Da Soel gik ned i Banke</firstline>
-    <notes>
-      <note>Sangværk 2, Nr. 35.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="99-105"/>
+  <title><num>30.</num>Oprøret i Leiren</title>
+  <subtitle>Egen Melodi af C. Barnekow.</subtitle>
+  <firstline>Da Soel gik ned i Banke</firstline>
+  <notes>
+    <note>Sangværk 2, Nr. 35.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="99-105"/>
 </head>
 <body>
 <poetry>
@@ -4021,14 +4019,14 @@ Gik fyrretive Aar!
 
 <text id="grundtvig2001061831">
 <head>
-    <title><num>31.</num>Guldkalven</title>
-    <subtitle>Mel. Jeg veed et evigt Himmerig.</subtitle>
-    <firstline>Da Moses ned ad Bjerget steg</firstline>
-    <notes>
-      <note>Sangværk 2, Nr. 38.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="105-109"/>
+  <title><num>31.</num>Guldkalven</title>
+  <subtitle>Mel. Jeg veed et evigt Himmerig.</subtitle>
+  <firstline>Da Moses ned ad Bjerget steg</firstline>
+  <notes>
+    <note>Sangværk 2, Nr. 38.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="105-109"/>
 </head>
 <body>
 <poetry>
@@ -4172,13 +4170,13 @@ Paa Trods i Tider fjerne!
 
 <text id="grundtvig2001061832">
 <head>
-    <title><num>32.</num>Korah, Dathan og Abiram</title>
-    <firstline>Thronen under Kerubimer</firstline>
-    <notes>
-      <note>Sangværk 2, Nr. 39.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="109-113"/>
+  <title><num>32.</num>Korah, Dathan og Abiram</title>
+  <firstline>Thronen under Kerubimer</firstline>
+  <notes>
+    <note>Sangværk 2, Nr. 39.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="109-113"/>
 </head>
 <body>
 <poetry>
@@ -4334,13 +4332,13 @@ Aandens Bog-Stav er en Pave
 
 <text id="grundtvig2001061833">
 <head>
-    <title><num>33.</num>Bileam</title>
-    <firstline>Kong Balak han sendte sine ridende Bud</firstline>
-    <notes>
-      <note>Sangværk 2, Nr. 40.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="114-122"/>
+  <title><num>33.</num>Bileam</title>
+  <firstline>Kong Balak han sendte sine ridende Bud</firstline>
+  <notes>
+    <note>Sangværk 2, Nr. 40.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="114-122"/>
 </head>
 <body>
 <poetry>
@@ -4649,13 +4647,13 @@ Uretfærdigheds Løn er Ulykke.
 
 <text id="grundtvig2001061834">
 <head>
-    <title><num>34.</num>Moses Eftermæle</title>
-    <firstline>Moses var gammel, af Verdens Uro</firstline>
-    <notes>
-      <note>Sangværk 2, Nr. 36.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="123-124"/>
+  <title><num>34.</num>Moses Eftermæle</title>
+  <firstline>Moses var gammel, af Verdens Uro</firstline>
+  <notes>
+    <note>Sangværk 2, Nr. 36.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="123-124"/>
 </head>
 <body>
 <poetry>
@@ -4724,13 +4722,13 @@ Var dog Luther en Christelig Moses!
 
 <text id="grundtvig2001061835">
 <head>
-    <title><num>35.</num>Moses Svanesang</title>
-    <firstline>Hører Seer-Skjaldens Ord</firstline>
-    <notes>
-      <note>Sangværk 2, Nr. 37 (Slutningsverset udeladt).</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="125-133"/>
+  <title><num>35.</num>Moses Svanesang</title>
+  <firstline>Hører Seer-Skjaldens Ord</firstline>
+  <notes>
+    <note>Sangværk 2, Nr. 37 (Slutningsverset udeladt).</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="125-133"/>
 </head>
 <body>
 <poetry>
@@ -5009,16 +5007,16 @@ Og blomstre for Hans Øie!
 
 <text id="grundtvig2001061836">
 <head>
-    <title><num>36.</num>Rahab</title>
-    <subtitle>Egen Melodi af H. Nutzhorn.</subtitle>
-    <firstline>Der laa en Stad paa Marken</firstline>
-    <notes>
-      <note>Efter Josva. 2 og Matth. 1.</note>
-      <note>P. O. Boisens bibelske og kirkehistoriske Psalmer og Sange (1853) Nr. 28, forkortet fra Sangværk 2, 2. (1841) Nr. 41, hvor slutningen dog fattes.</note>
-      <note>Cf. <xref bibel="bibeljosua02"/> og <xref bibel="bibelmatt01,5"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="133-136"/>
+  <title><num>36.</num>Rahab</title>
+  <subtitle>Egen Melodi af H. Nutzhorn.</subtitle>
+  <firstline>Der laa en Stad paa Marken</firstline>
+  <notes>
+    <note>Efter Josva. 2 og Matth. 1.</note>
+    <note>P. O. Boisens bibelske og kirkehistoriske Psalmer og Sange (1853) Nr. 28, forkortet fra Sangværk 2, 2. (1841) Nr. 41, hvor slutningen dog fattes.</note>
+    <note>Cf. <xref bible="bibeljosua02"/> og <xref bible="bibelmatt01,5"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="133-136"/>
 </head>
 <body>
 <poetry>
@@ -5135,14 +5133,14 @@ Gik deres Arvetal!
 
 <text id="grundtvig2001061837">
 <head>
-    <title><num>37.</num>Jordans Flod</title>
-    <subtitle>Mel. Jeg veed et evigt Himmerig.</subtitle>
-    <firstline>Det var i Hvede-Høstens Tid</firstline>
-    <notes>
-      <note>Dansk Kirketidende 7, Nr. 39, 1852.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="136-138"/>
+  <title><num>37.</num>Jordans Flod</title>
+  <subtitle>Mel. Jeg veed et evigt Himmerig.</subtitle>
+  <firstline>Det var i Hvede-Høstens Tid</firstline>
+  <notes>
+    <note>Dansk Kirketidende 7, Nr. 39, 1852.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="136-138"/>
 </head>
 <body>
 <poetry>
@@ -5226,14 +5224,14 @@ Hans Kraft man dog maa sande.
 
 <text id="grundtvig2001061838">
 <head>
-    <title><num>38.</num>Josvas Syn</title>
-    <subtitle>Egen Melodi af A. Winding.</subtitle>
-    <firstline>Josva gik i Palmelunden</firstline>
-    <notes>
-      <note>Dansk Kirketidende 7, Nr. 39, 1852.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="138-141"/>
+  <title><num>38.</num>Josvas Syn</title>
+  <subtitle>Egen Melodi af A. Winding.</subtitle>
+  <firstline>Josva gik i Palmelunden</firstline>
+  <notes>
+    <note>Dansk Kirketidende 7, Nr. 39, 1852.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="138-141"/>
 </head>
 <body>
 <poetry>
@@ -5346,14 +5344,14 @@ Seire her i Jesu Navn!
 
 <text id="grundtvig2001061839">
 <head>
-    <title><num>39.</num>Jeriko</title>
-    <subtitle>Kan synges som: Abraham sad i Mamre Lund.</subtitle>
-    <firstline>Jeriko var en Stad saa fast</firstline>
-    <notes>
-      <note>Dansk Kirketidende 7, Nr. 39, 1852 (de to sidste Vers udeladte).</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="141-143"/>
+  <title><num>39.</num>Jeriko</title>
+  <subtitle>Kan synges som: Abraham sad i Mamre Lund.</subtitle>
+  <firstline>Jeriko var en Stad saa fast</firstline>
+  <notes>
+    <note>Dansk Kirketidende 7, Nr. 39, 1852 (de to sidste Vers udeladte).</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="141-143"/>
 </head>
 <body>
 <poetry>
@@ -5417,14 +5415,14 @@ Naar derved den styrter sammen!
 
 <text id="grundtvig2001061840">
 <head>
-    <title><num>40.</num>Josvas Farvel</title>
-    <subtitle>Egen Melodi af J. C. Gebauer.</subtitle>
-    <firstline>Josva med Arken Guds Folk baned Vei</firstline>
-    <notes>
-      <note>Hidtil utrykt.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="143-145"/>
+  <title><num>40.</num>Josvas Farvel</title>
+  <subtitle>Egen Melodi af J. C. Gebauer.</subtitle>
+  <firstline>Josva med Arken Guds Folk baned Vei</firstline>
+  <notes>
+    <note>Hidtil utrykt.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="143-145"/>
 </head>
 <body>
 <poetry>
@@ -5499,13 +5497,13 @@ Guds-Aanden kun færdes med Frihed!
 
 <text id="grundtvig2001061841">
 <head>
-    <title><num>41.</num>Seerinden Debore</title>
-    <firstline>Om Helte mange</firstline>
-    <notes>
-      <note>Hidtil utrykt.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="145-148"/>
+  <title><num>41.</num>Seerinden Debore</title>
+  <firstline>Om Helte mange</firstline>
+  <notes>
+    <note>Hidtil utrykt.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="145-148"/>
 </head>
 <body>
 <poetry>
@@ -5610,13 +5608,13 @@ Og øver Storværk med Smil om Mund!
 
 <text id="grundtvig2001061842">
 <head>
-    <title><num>42.</num>Gideon</title>
-    <firstline>Midianiten som en Tyrk</firstline>
-    <notes>
-      <note>Hidtil utrykt.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="148-151"/>
+  <title><num>42.</num>Gideon</title>
+  <firstline>Midianiten som en Tyrk</firstline>
+  <notes>
+    <note>Hidtil utrykt.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="148-151"/>
 </head>
 <body>
 <poetry>
@@ -5730,14 +5728,14 @@ Gideons-Luren var Herrens Basun!
 
 <text id="grundtvig2001061843">
 <head>
-    <title><num>43.</num>Samson</title>
-    <subtitle>Mel. Hr. Peder kasted Runer over Spange.</subtitle>
-    <firstline>Der var en Kæmpe over Kæmper alle</firstline>
-    <notes>
-      <note>I forkortet Skikkelse trykt i Boisens bibelske Sange (1853) Nr. 31.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="151-155"/>
+  <title><num>43.</num>Samson</title>
+  <subtitle>Mel. Hr. Peder kasted Runer over Spange.</subtitle>
+  <firstline>Der var en Kæmpe over Kæmper alle</firstline>
+  <notes>
+    <note>I forkortet Skikkelse trykt i Boisens bibelske Sange (1853) Nr. 31.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="151-155"/>
 </head>
 <body>
 <poetry>
@@ -5886,14 +5884,14 @@ Fagre Ord har forvoldt mig Smerte,
 
 <text id="grundtvig2001061844">
 <head>
-    <title><num>44.</num>Samsons Død</title>
-    <subtitle>Egen Melodi af C. Barnekow.</subtitle>
-    <firstline>Samson var Træl i Filisternes Land</firstline>
-    <notes>
-      <note>Hidtil utrykt. (See dog tolv bibelske og kirkehistoriske Sange af N. F. S. Grundtvig, med Melodier af Chr. Barnekow, Nr. 6, 1868).</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="155-157"/>
+  <title><num>44.</num>Samsons Død</title>
+  <subtitle>Egen Melodi af C. Barnekow.</subtitle>
+  <firstline>Samson var Træl i Filisternes Land</firstline>
+  <notes>
+    <note>Hidtil utrykt. (See dog tolv bibelske og kirkehistoriske Sange af N. F. S. Grundtvig, med Melodier af Chr. Barnekow, Nr. 6, 1868).</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="155-157"/>
 </head>
 <body>
 <poetry>
@@ -5972,14 +5970,14 @@ Med Samson det hele Filister-Huus!
 
 <text id="grundtvig2001061845">
 <head>
-    <title><num>45.</num>Ruth</title>
-    <subtitle>Egen Melodi af H. Matthison-Hansen.</subtitle>
-    <firstline>I Dommertiden i Bethlehem</firstline>
-    <notes>
-      <note>Boisens bibelske Sange Nr. 29.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="157-161"/>
+  <title><num>45.</num>Ruth</title>
+  <subtitle>Egen Melodi af H. Matthison-Hansen.</subtitle>
+  <firstline>I Dommertiden i Bethlehem</firstline>
+  <notes>
+    <note>Boisens bibelske Sange Nr. 29.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="157-161"/>
 </head>
 <body>
 <poetry>
@@ -6132,14 +6130,14 @@ Som faaer kun i Sky sin fulde Klang;
 
 <text id="grundtvig2001061846">
 <head>
-    <title><num>46.</num>Eli og Samuel</title>
-    <subtitle>Egen Melodi af L. M. Lindeman.</subtitle>
-    <firstline>Det var saa stille ved Midjenat</firstline>
-    <notes>
-      <note>Boisens bibelske Sange Nr. 32.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="162-165"/>
+  <title><num>46.</num>Eli og Samuel</title>
+  <subtitle>Egen Melodi af L. M. Lindeman.</subtitle>
+  <firstline>Det var saa stille ved Midjenat</firstline>
+  <notes>
+    <note>Boisens bibelske Sange Nr. 32.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="162-165"/>
 </head>
 <body>
 <poetry>
@@ -6256,14 +6254,14 @@ Fra Seer-Læben, i Ord som Lyn,
 
 <text id="grundtvig2001061847">
 <head>
-    <title><num>47.</num>Kong David</title>
-    <subtitle>Egen Melodi af C. Barnekow.</subtitle>
-    <firstline>Jeg gik i Marken og vogtede Faar</firstline>
-    <notes>
-      <note>Krønikerim, 2. Udgave Side 20.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="165-166"/>
+  <title><num>47.</num>Kong David</title>
+  <subtitle>Egen Melodi af C. Barnekow.</subtitle>
+  <firstline>Jeg gik i Marken og vogtede Faar</firstline>
+  <notes>
+    <note>Krønikerim, 2. Udgave Side 20.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="165-166"/>
 </head>
 <body>
 <poetry>
@@ -6317,15 +6315,15 @@ Davids-Harpen gaaer aldrig ad Glemme!
 
 <text id="grundtvig2001061848">
 <head>
-    <title><num>48.</num>Davids Seiers-Sang,</title>
-    <subtitle>Egen Melodi af J. P.E. Hartmann.</subtitle>
-    <firstline>Mellem Brødre kaldt den Lille</firstline>
-    <notes>
-      <note>Efter den 151. Dav. Ps.</note>
-      <note>Hagens Psalmer og Rim (1832) Nr. 7, efter den 151. Davids-Psalme hos de Halvfjerds.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="166-167"/>
+  <title><num>48.</num>Davids Seiers-Sang,</title>
+  <subtitle>Egen Melodi af J. P.E. Hartmann.</subtitle>
+  <firstline>Mellem Brødre kaldt den Lille</firstline>
+  <notes>
+    <note>Efter den 151. Dav. Ps.</note>
+    <note>Hagens Psalmer og Rim (1832) Nr. 7, efter den 151. Davids-Psalme hos de Halvfjerds.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="166-167"/>
 </head>
 <body>
 <poetry>
@@ -6369,13 +6367,13 @@ Israel afstrøg sin Skam!
 
 <text id="grundtvig2001061849">
 <head>
-    <title><num>49.</num>Davids Klage over Jonathan</title>
-    <firstline>Israels Hæder</firstline>
-    <notes>
-      <note>Grundtvigs Kort Begreb af Verdens Krønike, 1814, Side 356.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="168-169"/>
+  <title><num>49.</num>Davids Klage over Jonathan</title>
+  <firstline>Israels Hæder</firstline>
+  <notes>
+    <note>Grundtvigs Kort Begreb af Verdens Krønike, 1814, Side 356.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="168-169"/>
 </head>
 <body>
 <poetry>
@@ -6438,13 +6436,13 @@ Hvad haver saadanne Stridsvaaben døvet?
 
 <text id="grundtvig2001061850">
 <head>
-    <title><num>50.</num>Kong Salomon</title>
-    <firstline>Af Lyst til Vidskab uden Mage</firstline>
-    <notes>
-      <note>Krønikerim, 2. Udgave Side 21.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="169-171"/>
+  <title><num>50.</num>Kong Salomon</title>
+  <firstline>Af Lyst til Vidskab uden Mage</firstline>
+  <notes>
+    <note>Krønikerim, 2. Udgave Side 21.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="169-171"/>
 </head>
 <body>
 <poetry>
@@ -6498,16 +6496,16 @@ Forklar hvad evig bliver sandt!
 
 <text id="grundtvig2001061851">
 <head>
-    <title><num>51.</num>Hungers-Nøden</title>
-    <subtitle>Mel. Jeg veed et evigt Himmerig.</subtitle>
-    <firstline>Der kom tre svare Hungers-Aar</firstline>
-    <notes>
-      <note>1. Kong. B. Kap. 17.</note>
-      <note>Boisens bibelske Sange Nr. 39.</note>
-      <note>Cf. <xref bibel="bibel1konge17"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="171-173"/>
+  <title><num>51.</num>Hungers-Nøden</title>
+  <subtitle>Mel. Jeg veed et evigt Himmerig.</subtitle>
+  <firstline>Der kom tre svare Hungers-Aar</firstline>
+  <notes>
+    <note>1. Kong. B. Kap. 17.</note>
+    <note>Boisens bibelske Sange Nr. 39.</note>
+    <note>Cf. <xref bible="bibel1konge17"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="171-173"/>
 </head>
 <body>
 <poetry>
@@ -6586,14 +6584,14 @@ Som Straaler gaae fra Sole!
 
 <text id="grundtvig2001061852">
 <head>
-    <title><num>52.</num>Naboths Viingaard</title>
-    <subtitle>Egen Melodi af C. Barnekow.</subtitle>
-    <firstline>Naboths Viingaard grændsed tæt</firstline>
-    <notes>
-      <note>Boisens bibelske Sange Nr. 40.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="173-175"/>
+  <title><num>52.</num>Naboths Viingaard</title>
+  <subtitle>Egen Melodi af C. Barnekow.</subtitle>
+  <firstline>Naboths Viingaard grændsed tæt</firstline>
+  <notes>
+    <note>Boisens bibelske Sange Nr. 40.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="173-175"/>
 </head>
 <body>
 <poetry>
@@ -6674,15 +6672,15 @@ Evig i Afgrunden!
 
 <text id="grundtvig2001061853">
 <head>
-    <title><num>53.</num>Nebukadnesars Drøm</title>
-    <subtitle>Egen Melodi af L. M. Lindeman.</subtitle>
-    <firstline>Jeg drømte en Drøm, som blev borte igjen</firstline>
-    <notes>
-      <note>Daniel 2.</note>
-      <note>Boisens Bibelske Sange Nr. 47.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="175-177"/>
+  <title><num>53.</num>Nebukadnesars Drøm</title>
+  <subtitle>Egen Melodi af L. M. Lindeman.</subtitle>
+  <firstline>Jeg drømte en Drøm, som blev borte igjen</firstline>
+  <notes>
+    <note>Daniel 2.</note>
+    <note>Boisens Bibelske Sange Nr. 47.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="175-177"/>
 </head>
 <body>
 <poetry>
@@ -6771,14 +6769,14 @@ Lovsjungende prise vor Lykke!
 
 <text id="grundtvig2001061854">
 <head>
-    <title><num>54.</num>Ezechiel</title>
-    <subtitle>Kan synges som: Sin vogn gjør han af Skyer blaa.</subtitle>
-    <firstline>Der var en gammel Præste-Søn</firstline>
-    <notes>
-      <note>Sangværk 2, 1 (1839) Nr. 1, med et nyt Vers (Vers 8) indskudt.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="178-182"/>
+  <title><num>54.</num>Ezechiel</title>
+  <subtitle>Kan synges som: Sin vogn gjør han af Skyer blaa.</subtitle>
+  <firstline>Der var en gammel Præste-Søn</firstline>
+  <notes>
+    <note>Sangværk 2, 1 (1839) Nr. 1, med et nyt Vers (Vers 8) indskudt.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="178-182"/>
 </head>
 <body>
 <poetry>
@@ -6930,14 +6928,14 @@ Almægtig vor Gjenløser!
 
 <text id="grundtvig2001061855">
 <head>
-    <title><num>55.</num>Serubabel</title>
-    <subtitle>Egen Melodi af H. Matthison-Hansen.</subtitle>
-    <firstline>Herrens Huus var lagt i Støvet</firstline>
-    <notes>
-      <note>Krønikerim, 2. Udgave Side 23.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="182-183"/>
+  <title><num>55.</num>Serubabel</title>
+  <subtitle>Egen Melodi af H. Matthison-Hansen.</subtitle>
+  <firstline>Herrens Huus var lagt i Støvet</firstline>
+  <notes>
+    <note>Krønikerim, 2. Udgave Side 23.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="182-183"/>
 </head>
 <body>
 <poetry>
@@ -6981,14 +6979,14 @@ Hyttetag til Høitidsdage!
 
 <text id="grundtvig2001061856">
 <head>
-    <title><num>56.</num>Kom, lad os prise de herlige Mænd</title>
-    <firstline>Kom, lad os prise de herlige Mænd</firstline>
-    <notes>
-      <note>Efter Syrachs Lovsang Kap. 44-50.</note>
-      <note>Sangværk 2,1. Nr. 6.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="183-195"/>
+  <title><num>56.</num>Kom, lad os prise de herlige Mænd</title>
+  <firstline>Kom, lad os prise de herlige Mænd</firstline>
+  <notes>
+    <note>Efter Syrachs Lovsang Kap. 44-50.</note>
+    <note>Sangværk 2,1. Nr. 6.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="183-195"/>
 </head>
 <body>
 <poetry>
@@ -7417,14 +7415,14 @@ Og nyde den evige Glæde!
 
 <text id="grundtvig2001061857">
 <head>
-    <title><num>57.</num>Præsten Sakarias</title>
-    <subtitle>Kan synges som: Midt iblandt os er Guds Rige.</subtitle>
-    <firstline>I det andet Tempels Dage</firstline>
-    <notes>
-      <note>Hidtil utrykt.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="195-196"/>
+  <title><num>57.</num>Præsten Sakarias</title>
+  <subtitle>Kan synges som: Midt iblandt os er Guds Rige.</subtitle>
+  <firstline>I det andet Tempels Dage</firstline>
+  <notes>
+    <note>Hidtil utrykt.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="195-196"/>
 </head>
 <body>
 <poetry>
@@ -7488,14 +7486,14 @@ Himmel-Røst i Jordens Ørk!
 
 <text id="grundtvig2001061858">
 <head>
-    <title><num>58.</num>Jomfru Maria</title>
-    <subtitle>Mel. Navnet over alle Navne.</subtitle>
-    <firstline>Herren Moder Eva loved</firstline>
-    <notes>
-      <note>Hidtil utrykt.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="197-198"/>
+  <title><num>58.</num>Jomfru Maria</title>
+  <subtitle>Mel. Navnet over alle Navne.</subtitle>
+  <firstline>Herren Moder Eva loved</firstline>
+  <notes>
+    <note>Hidtil utrykt.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="197-198"/>
 </head>
 <body>
 <poetry>
@@ -7559,14 +7557,14 @@ Moder til Gud-Faders Søn!
 
 <text id="grundtvig2001061859" variant="grundtvig1837a12">
 <head>
-    <title><num>59.</num>Barnet i Betlehem</title>
-    <subtitle>Egen Folkemelodi.</subtitle>
-    <firstline>Et Barn er født i Bethlehem</firstline>
-    <notes>
-      <note>Gammel Psalme, fornyet. Kiøbenhavns Skilderi (Nr. 103) for 23. December 1820. Hagens Psalmer og Rim (1832) Nr. 12.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="198-199"/>
+  <title><num>59.</num>Barnet i Betlehem</title>
+  <subtitle>Egen Folkemelodi.</subtitle>
+  <firstline>Et Barn er født i Bethlehem</firstline>
+  <notes>
+    <note>Gammel Psalme, fornyet. Kiøbenhavns Skilderi (Nr. 103) for 23. December 1820. Hagens Psalmer og Rim (1832) Nr. 12.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="198-199"/>
 </head>
 <body>
 <poetry>
@@ -7605,14 +7603,14 @@ For Frelser bold og Broder blid! Halleluja!
 
 <text id="grundtvig2001061860">
 <head>
-    <title><num>60.</num>Marie, hun sad paa Hø og Straa</title>
-    <subtitle>Mel. Jeg veed et evigt Himmerig.</subtitle>
-    <firstline>Marie, hun sad paa Hø og Straa</firstline>
-    <notes>
-      <note>J. F. og R. Th. Fengers Psalmer og Sange til Julen (1845) Nr. 18, forkortet fra Julesange for Dronning Caroline Amalies Asylbørn, 1842. Jvfr. Boisens bibelske Sange Nr. 50, hvor den har tre nye Slutningsvers.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="199-201"/>
+  <title><num>60.</num>Marie, hun sad paa Hø og Straa</title>
+  <subtitle>Mel. Jeg veed et evigt Himmerig.</subtitle>
+  <firstline>Marie, hun sad paa Hø og Straa</firstline>
+  <notes>
+    <note>J. F. og R. Th. Fengers Psalmer og Sange til Julen (1845) Nr. 18, forkortet fra Julesange for Dronning Caroline Amalies Asylbørn, 1842. Jvfr. Boisens bibelske Sange Nr. 50, hvor den har tre nye Slutningsvers.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="199-201"/>
 </head>
 <body>
 <poetry>
@@ -7681,15 +7679,15 @@ Gienlyder Engle-Sangen!
 
 <text id="grundtvig2001061861">
 <head>
-    <title><num>61.</num>De Vise fra Østen</title>
-    <subtitle>Egen Melodi af C. E. F. Weyse; eller egen Folkemelodi.</subtitle>
-    <firstline>Deilig er den Himmel blaa</firstline>
-    <notes>
-      <note>K. L. Rahbek: Sandsigeren 1811, Nr. 12. Grundtvigs Kvædlinger 1815, Side 229.</note>
-      <note>Første gang trykt i <a person="rahbek">Rahbeks</a> tidsskrift <i>Sandsigeren</i> i 1811 under titlen "De hellige tre Konger" med undertitlen "En barnesang".</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="201-204"/>
+  <title><num>61.</num>De Vise fra Østen</title>
+  <subtitle>Egen Melodi af C. E. F. Weyse; eller egen Folkemelodi.</subtitle>
+  <firstline>Deilig er den Himmel blaa</firstline>
+  <notes>
+    <note>K. L. Rahbek: Sandsigeren 1811, Nr. 12. Grundtvigs Kvædlinger 1815, Side 229.</note>
+    <note>Første gang trykt i <a person="rahbek">Rahbeks</a> tidsskrift <i>Sandsigeren</i> i 1811 under titlen "De hellige tre Konger" med undertitlen "En barnesang".</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="201-204"/>
 </head>
 <body>
 <poetry>
@@ -7812,15 +7810,15 @@ Som han os lod aabenbare
 
 <text id="grundtvig2001061862">
 <head>
-    <title><num>62.</num>Simeon</title>
-    <subtitle>Mel. Kirken den er et gammelt Huus.</subtitle>
-    <firstline>Simeon tog Guds lille Søn</firstline>
-    <notes>
-      <note>Festpsalmer, 7. Oplag, 1856, Nr. 762.</note>
-      <note>Cf. <xref bibel="bibellukas02,25-35"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="205"/>
+  <title><num>62.</num>Simeon</title>
+  <subtitle>Mel. Kirken den er et gammelt Huus.</subtitle>
+  <firstline>Simeon tog Guds lille Søn</firstline>
+  <notes>
+    <note>Festpsalmer, 7. Oplag, 1856, Nr. 762.</note>
+    <note>Cf. <xref bible="bibellukas02,25-35"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="205"/>
 </head>
 <body>
 <poetry>
@@ -7853,14 +7851,14 @@ Synge Gudsbarnet til Ære!
 
 <text id="grundtvig2001061863">
 <head>
-    <title><num>63.</num>Flugten til Ægypten</title>
-    <subtitle>Egen Melodi af J. P. E. Hartmann.</subtitle>
-    <firstline>Vorherre, han var et lille Barn</firstline>
-    <notes>
-      <note>Fengernes Julehefter Nr. 25.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="206-208"/>
+  <title><num>63.</num>Flugten til Ægypten</title>
+  <subtitle>Egen Melodi af J. P. E. Hartmann.</subtitle>
+  <firstline>Vorherre, han var et lille Barn</firstline>
+  <notes>
+    <note>Fengernes Julehefter Nr. 25.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="206-208"/>
 </head>
 <body>
 <poetry>
@@ -7941,14 +7939,14 @@ Thi vor Fader i det Høie :|: Han lever! :|:
 
 <text id="grundtvig2001061864">
 <head>
-    <title><num>64.</num>Jesu Barndom</title>
-    <subtitle>Egen Melodi af L. M. Lindeman; eller: Som Hønen klukker mindelig, af A. Winding.</subtitle>
-    <firstline>I Nasaret der var saa smukt</firstline>
-    <notes>
-      <note>Fengernes Julehefte Nr. 26, 1845; de sidste syv Vers efter Festpsalmer, 5. Oplag, 1853, Nr. 714.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="208-211"/>
+  <title><num>64.</num>Jesu Barndom</title>
+  <subtitle>Egen Melodi af L. M. Lindeman; eller: Som Hønen klukker mindelig, af A. Winding.</subtitle>
+  <firstline>I Nasaret der var saa smukt</firstline>
+  <notes>
+    <note>Fengernes Julehefte Nr. 26, 1845; de sidste syv Vers efter Festpsalmer, 5. Oplag, 1853, Nr. 714.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="208-211"/>
 </head>
 <body>
 <poetry>
@@ -8061,13 +8059,13 @@ Til evig Fred og Glæde!
 
 <text id="grundtvig2001061865">
 <head>
-    <title><num>65.</num>Den tolvaars Jesus</title>
-    <firstline>Ungdom og Viisdom, de fulgdes ad</firstline>
-    <notes>
-      <note>Hidtil utrykt.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="211-213"/>
+  <title><num>65.</num>Den tolvaars Jesus</title>
+  <firstline>Ungdom og Viisdom, de fulgdes ad</firstline>
+  <notes>
+    <note>Hidtil utrykt.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="211-213"/>
 </head>
 <body>
 <poetry>
@@ -8161,14 +8159,14 @@ Kun een Gang en Tredages-Kvide!
 
 <text id="grundtvig2001061866">
 <head>
-    <title><num>66.</num>Johannes den Døber</title>
-    <subtitle>Mel. Livsalig Paaskedag.</subtitle>
-    <firstline>Kom, følg i Aanden med</firstline>
-    <notes>
-      <note>Festpsalmer, 5. Oplag, 1853, Nr. 712.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="214-215"/>
+  <title><num>66.</num>Johannes den Døber</title>
+  <subtitle>Mel. Livsalig Paaskedag.</subtitle>
+  <firstline>Kom, følg i Aanden med</firstline>
+  <notes>
+    <note>Festpsalmer, 5. Oplag, 1853, Nr. 712.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="214-215"/>
 </head>
 <body>
 <poetry>
@@ -8188,7 +8186,7 @@ Guds-Husets Dør staae aaben!
 
 Det gamle Testament,
 Med Herrens Lampe tændt,
-Er her i Engle-Manden<note>Cf. <xref bibel="bibelmalakias03,1"/>.</note>
+Er her i Engle-Manden<note>Cf. <xref bible="bibelmalakias03,1"/>.</note>
 Lyslevende opstanden!
 Her seer du over Daaben
 Guds-Husets Dør staae aaben!
@@ -8240,14 +8238,14 @@ Guds-Husets Dør staae aaben!
 
 <text id="grundtvig2001061867">
 <head>
-    <title><num>67.</num>Himmerigs Port engang fløi op</title>
-    <subtitle>Mel. Glødende Tunger kom til Jord</subtitle>
-    <firstline>Himmerigs Port engang fløi op</firstline>
-    <notes>
-      <note>Festpsalmer, 7. Oplag, 1856, Nr. 773, dog tildels som ny.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="216"/>
+  <title><num>67.</num>Himmerigs Port engang fløi op</title>
+  <subtitle>Mel. Glødende Tunger kom til Jord</subtitle>
+  <firstline>Himmerigs Port engang fløi op</firstline>
+  <notes>
+    <note>Festpsalmer, 7. Oplag, 1856, Nr. 773, dog tildels som ny.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="216"/>
 </head>
 <body>
 <poetry>
@@ -8280,14 +8278,14 @@ Abba! med Sønnen vi raabe.
 
 <text id="grundtvig2001061868">
 <head>
-    <title><num>68.</num>Der var paa Jord en Guds Engel saa fiin</title>
-    <subtitle>Egen Melodi af J. P. E. Hartmann.</subtitle>
-    <firstline>Der var paa Jord en Guds Engel saa fiin</firstline>
-    <notes>
-      <note>Dansk Kirketidende 3, Nr. 16, 1848; afkortet mod Slutn.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="217-220"/>
+  <title><num>68.</num>Der var paa Jord en Guds Engel saa fiin</title>
+  <subtitle>Egen Melodi af J. P. E. Hartmann.</subtitle>
+  <firstline>Der var paa Jord en Guds Engel saa fiin</firstline>
+  <notes>
+    <note>Dansk Kirketidende 3, Nr. 16, 1848; afkortet mod Slutn.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="217-220"/>
 </head>
 <body>
 <poetry>
@@ -8433,14 +8431,14 @@ Englene pege paa Jesus.
 
 <text id="grundtvig2001061869">
 <head>
-    <title><num>69.</num>Herrens Daab</title>
-    <subtitle>Egen Melodi af L. M. Lindemann; eller som: Hos Herren paa det Høie.</subtitle>
-    <firstline>Ved Jordans Færgestæder</firstline>
-    <notes>
-      <note>Th. Oldenburk P. Chr. Kierkegaards Nordisk Tidskr. for christelig Theologi 2, Side 165, 1840.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="221-225"/>
+  <title><num>69.</num>Herrens Daab</title>
+  <subtitle>Egen Melodi af L. M. Lindemann; eller som: Hos Herren paa det Høie.</subtitle>
+  <firstline>Ved Jordans Færgestæder</firstline>
+  <notes>
+    <note>Th. Oldenburk P. Chr. Kierkegaards Nordisk Tidskr. for christelig Theologi 2, Side 165, 1840.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="221-225"/>
 </head>
 <body>
 <poetry>
@@ -8599,14 +8597,14 @@ I den Eenbaarnes Favn!
 
 <text id="grundtvig2001061870">
 <head>
-    <title><num>70.</num>Herrens Fristelse</title>
-    <subtitle>Egen Melodi af J. P. E. Hartmann.</subtitle>
-    <firstline>Alt paa den vilde Hede</firstline>
-    <notes>
-      <note>Dansk Kirketidende 1, Nr. 25, 1846; de to sidste Vers ombyttede med nye.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="225-228"/>
+  <title><num>70.</num>Herrens Fristelse</title>
+  <subtitle>Egen Melodi af J. P. E. Hartmann.</subtitle>
+  <firstline>Alt paa den vilde Hede</firstline>
+  <notes>
+    <note>Dansk Kirketidende 1, Nr. 25, 1846; de to sidste Vers ombyttede med nye.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="225-228"/>
 </head>
 <body>
 <poetry>
@@ -8725,13 +8723,13 @@ Som Guds eenbaarne Søn!
 
 <text id="grundtvig2001061871">
 <head>
-    <title><num>71.</num>Herrens Lærdom</title>
-    <firstline>Frelseren i sin Moders By</firstline>
-    <notes>
-      <note>Hidtil utrykt.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="228-230"/>
+  <title><num>71.</num>Herrens Lærdom</title>
+  <firstline>Frelseren i sin Moders By</firstline>
+  <notes>
+    <note>Hidtil utrykt.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="228-230"/>
 </head>
 <body>
 <poetry>
@@ -8790,14 +8788,14 @@ Livet er Troens Naadeløn!
 
 <text id="grundtvig2001061872">
 <head>
-    <title><num>72.</num>Nathanael</title>
-    <subtitle>Egen Melodi af C. Barnekow.</subtitle>
-    <firstline>Der vandred en Yngling saa tankefuld</firstline>
-    <notes>
-      <note>Dansk Kirketidende 1, Nr. 47, 1846.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="230-233"/>
+  <title><num>72.</num>Nathanael</title>
+  <subtitle>Egen Melodi af C. Barnekow.</subtitle>
+  <firstline>Der vandred en Yngling saa tankefuld</firstline>
+  <notes>
+    <note>Dansk Kirketidende 1, Nr. 47, 1846.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="230-233"/>
 </head>
 <body>
 <poetry>
@@ -8902,15 +8900,15 @@ Jordklimpen af Engle omsvævet!
 
 <text id="grundtvig2001061873">
 <head>
-    <title><num>73.</num>Brylluppet i Kana</title>
-    <subtitle>Kan synges som: Sara var død, i sin Eenlighed.</subtitle>
-    <firstline>Brudgom taler til Bruden sin</firstline>
-    <notes>
-      <note>Brylluppet i Kana. Boisens bibelske Sange (1853) Nr. 61.</note>
-      <note>Cf. <xref bibel="bibeldaniel02"/></note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="233-235"/>
+  <title><num>73.</num>Brylluppet i Kana</title>
+  <subtitle>Kan synges som: Sara var død, i sin Eenlighed.</subtitle>
+  <firstline>Brudgom taler til Bruden sin</firstline>
+  <notes>
+    <note>Brylluppet i Kana. Boisens bibelske Sange (1853) Nr. 61.</note>
+    <note>Cf. <xref bible="bibeldaniel02"/></note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="233-235"/>
 </head>
 <body>
 <poetry>
@@ -9001,15 +8999,15 @@ Det Bryllup gaaer aldrig ad Glemme.
 
 <text id="grundtvig2001061874">
 <head>
-    <title><num>74.</num>Simon Peders Kald</title>
-    <subtitle>Egen Melodi af J. P. E. Hartmann.</subtitle>
-    <firstline>Der sad en Fisker saa tankefuld</firstline>
-    <notes>
-      <note>Nordisk Kirketidende 1838, Nr. 29, med Overskrift "Aandelig Fiskervise"; tredie sidste Vers udeladt.</note>
-      <note>Cf. <xref bibel="bibellukas05,1-11"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="235-237"/>
+  <title><num>74.</num>Simon Peders Kald</title>
+  <subtitle>Egen Melodi af J. P. E. Hartmann.</subtitle>
+  <firstline>Der sad en Fisker saa tankefuld</firstline>
+  <notes>
+    <note>Nordisk Kirketidende 1838, Nr. 29, med Overskrift "Aandelig Fiskervise"; tredie sidste Vers udeladt.</note>
+    <note>Cf. <xref bible="bibellukas05,1-11"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="235-237"/>
 </head>
 <body>
 <poetry>
@@ -9064,7 +9062,7 @@ Fra Alt hvad end sit han kaldte!
 Saa fulgde Simon Vorherres Kald,
 Hos Ordet gik han i Skole,
 Og Folk han fanged i Tusindtal,
-De skinne nu klart som Sole,<note>Cf. <xref bibel="bibelmatt13,43"/>.</note>
+De skinne nu klart som Sole,<note>Cf. <xref bible="bibelmatt13,43"/>.</note>
 Og end er ikke paa Jord forbi
 Det store Menneske-Fiskeri,
 Som Herren og Simon grunded.
@@ -9098,14 +9096,14 @@ Ham griber da ei vor Tale!
 
 <text id="grundtvig2001061875">
 <head>
-    <title><num>75.</num>Seer du Ham paa Fiskerbaaden!</title>
-    <subtitle>Kan synges som: Søndagmorgen fra de Døde, af A. P. Berggreen.</subtitle>
-    <firstline>Seer du Ham paa Fiskerbaaden!</firstline>
-    <notes>
-      <note>Med Overskrift "Den himmelske Taler" i Kierkegaards Nordiske Tidsskrift 3, Side 161, 1841, med Udeladelse af de 3 sidste Vers.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="238-240"/>
+  <title><num>75.</num>Seer du Ham paa Fiskerbaaden!</title>
+  <subtitle>Kan synges som: Søndagmorgen fra de Døde, af A. P. Berggreen.</subtitle>
+  <firstline>Seer du Ham paa Fiskerbaaden!</firstline>
+  <notes>
+    <note>Med Overskrift "Den himmelske Taler" i Kierkegaards Nordiske Tidsskrift 3, Side 161, 1841, med Udeladelse af de 3 sidste Vers.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="238-240"/>
 </head>
 <body>
 <poetry>
@@ -9191,14 +9189,14 @@ Og i Liv sig aabenbarer.
 
 <text id="grundtvig2001061876">
 <head>
-    <title><num>76.</num>Den blodsottige Kvinde</title>
-    <subtitle>Egen Melodi af H. Nutzhorn.</subtitle>
-    <firstline>Kvinden paa sin Krykke</firstline>
-    <notes>
-      <note>Kierkegaards Nordiske Tidsskrift 4, Side 1, 1842, med udeladelse af sidste Vers.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="240-243"/>
+  <title><num>76.</num>Den blodsottige Kvinde</title>
+  <subtitle>Egen Melodi af H. Nutzhorn.</subtitle>
+  <firstline>Kvinden paa sin Krykke</firstline>
+  <notes>
+    <note>Kierkegaards Nordiske Tidsskrift 4, Side 1, 1842, med udeladelse af sidste Vers.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="240-243"/>
 </head>
 <body>
 <poetry>
@@ -9307,14 +9305,14 @@ Flyder af Hans Ord!
 
 <text id="grundtvig2001061877">
 <head>
-    <title><num>77.</num>Jairs Datter</title>
-    <subtitle>Egen Melodi af J. P. E. Hartmann.</subtitle>
-    <firstline>Blomst kan visne før Sol nedgaaer</firstline>
-    <notes>
-      <note>Boisens bibelske Sange.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="243-245"/>
+  <title><num>77.</num>Jairs Datter</title>
+  <subtitle>Egen Melodi af J. P. E. Hartmann.</subtitle>
+  <firstline>Blomst kan visne før Sol nedgaaer</firstline>
+  <notes>
+    <note>Boisens bibelske Sange.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="243-245"/>
 </head>
 <body>
 <poetry>
@@ -9385,14 +9383,14 @@ Det hændte sig i Kapernaum, hvor Frelseren dvæled!
 
 <text id="grundtvig2001061878">
 <head>
-    <title><num>78.</num>Høvedsmanden i Kapernaum</title>
-    <subtitle>Egen Melodi af L. M. Lindeman.</subtitle>
-    <firstline>Om en Hedning vil vi sjunge</firstline>
-    <notes>
-      <note>Boisens bibelske Sange, Nr. 66, med et nyt Slutningsvers.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="245-247"/> <!-- Gætværk, pdf'en mangler sider. -->
+  <title><num>78.</num>Høvedsmanden i Kapernaum</title>
+  <subtitle>Egen Melodi af L. M. Lindeman.</subtitle>
+  <firstline>Om en Hedning vil vi sjunge</firstline>
+  <notes>
+    <note>Boisens bibelske Sange, Nr. 66, med et nyt Slutningsvers.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="245-247"/> <!-- Gætværk, pdf'en mangler sider. -->
 </head>
 <body>
 <poetry>
@@ -9463,14 +9461,14 @@ Perlen er god hvor den findes.
 
 <text id="grundtvig2001061879">
 <head>
-    <title><num>79.</num>Enkens Søn i Nain</title>
-    <subtitle>Egen Melodi af L. M. Lindeman.</subtitle>
-    <firstline>Aanden opgav Enkesønnen</firstline>
-    <notes>
-      <note>Boisens bibelske Sange, Nr. 67.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="247-248"/> <!-- Gætværk, pdf'en mangler sider. -->
+  <title><num>79.</num>Enkens Søn i Nain</title>
+  <subtitle>Egen Melodi af L. M. Lindeman.</subtitle>
+  <firstline>Aanden opgav Enkesønnen</firstline>
+  <notes>
+    <note>Boisens bibelske Sange, Nr. 67.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="247-248"/> <!-- Gætværk, pdf'en mangler sider. -->
 </head>
 <body>
 <poetry>
@@ -9527,14 +9525,14 @@ Tørrer alle Taarer af.
 
 <text id="grundtvig2001061880">
 <head>
-    <title><num>80.</num>Den kananæiske Kvinde</title>
-    <subtitle>Egen Melodi af P. Heise eller L. M. Lindeman.</subtitle>
-    <firstline>Paa Hedenskabets Grændser</firstline>
-    <notes>
-      <note>Boisens bibelske Sange, Nr. 70.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="249-250"/>
+  <title><num>80.</num>Den kananæiske Kvinde</title>
+  <subtitle>Egen Melodi af P. Heise eller L. M. Lindeman.</subtitle>
+  <firstline>Paa Hedenskabets Grændser</firstline>
+  <notes>
+    <note>Boisens bibelske Sange, Nr. 70.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="249-250"/>
 </head>
 <body>
 <poetry>
@@ -9591,13 +9589,13 @@ Ved Herrens Naadebord!
 
 <text id="grundtvig2001061881">
 <head>
-    <title><num>81.</num>Jærtegnet i Bethanien</title>
-    <firstline>Lazarus laae paa Sotteseng</firstline>
-    <notes>
-      <note>Dansk Kirketidende 1857, Nr. 49; to Vers udeladte mod Slutningen.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="250-252"/>
+  <title><num>81.</num>Jærtegnet i Bethanien</title>
+  <firstline>Lazarus laae paa Sotteseng</firstline>
+  <notes>
+    <note>Dansk Kirketidende 1857, Nr. 49; to Vers udeladte mod Slutningen.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="250-252"/>
 </head>
 <body>
 <poetry>
@@ -9662,14 +9660,14 @@ Skiænkes med Guds eenbaarne Søn!
 
 <text id="grundtvig2001061882">
 <head>
-    <title><num>82.</num>See, hvor nu Jesus træder</title>
-    <subtitle>Mel. Den bittre Død Dig trængde.</subtitle>
-    <firstline>See, hvor nu Jesus træder</firstline>
-    <notes>
-      <note>Efter Kingo, Festpsalmer, Tillæg til 7. Oplag, 1860, Nr. 850.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="252"/>
+  <title><num>82.</num>See, hvor nu Jesus træder</title>
+  <subtitle>Mel. Den bittre Død Dig trængde.</subtitle>
+  <firstline>See, hvor nu Jesus træder</firstline>
+  <notes>
+    <note>Efter Kingo, Festpsalmer, Tillæg til 7. Oplag, 1860, Nr. 850.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="252"/>
 </head>
 <body>
 <poetry>
@@ -9693,14 +9691,14 @@ Hvad Kiærlighed formaaer!
 
 <text id="grundtvig2001061883">
 <head>
-    <title><num>83.</num>Vor Frelser frit sin Fiende</title>
-    <subtitle>Mel. Alt paa den vilde Hede.</subtitle>
-    <firstline>Vor Frelser frit sin Fiende</firstline>
-    <notes>
-      <note>Efter Kingo, Festpsalmer, Tillæg til 7. Oplag, 1861, Nr. 851.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="253"/>
+  <title><num>83.</num>Vor Frelser frit sin Fiende</title>
+  <subtitle>Mel. Alt paa den vilde Hede.</subtitle>
+  <firstline>Vor Frelser frit sin Fiende</firstline>
+  <notes>
+    <note>Efter Kingo, Festpsalmer, Tillæg til 7. Oplag, 1861, Nr. 851.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="253"/>
 </head>
 <body>
 <poetry>
@@ -9734,14 +9732,14 @@ Guld-Kronen klar hos sig!
 
 <text id="grundtvig2001061884">
 <head>
-    <title><num>84.</num>Jesus Christus, Livets Drot</title>
-    <subtitle>Mel. Frygt mit Barn den sande Gud.</subtitle>
-    <firstline>Jesus Christus, Livets Drot</firstline>
-    <notes>
-      <note>Kirkepsalmer til Prøve, 1845, Nr. 20.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="254"/>
+  <title><num>84.</num>Jesus Christus, Livets Drot</title>
+  <subtitle>Mel. Frygt mit Barn den sande Gud.</subtitle>
+  <firstline>Jesus Christus, Livets Drot</firstline>
+  <notes>
+    <note>Kirkepsalmer til Prøve, 1845, Nr. 20.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="254"/>
 </head>
 <body>
 <poetry>
@@ -9774,15 +9772,15 @@ Kom for evig ham ihu!
 
 <text id="grundtvig2001061885" variant="grundtvig20010107260">
 <head>
-    <title><num>85.</num>Christus, vor Gienløser blid</title>
-    <subtitle>Mel. Ind i Haven Jesus gik.</subtitle>
-    <firstline>Christus, vor Gienløser blid</firstline>
-    <notes>
-      <note>De Bøhmiske Brødres "Christus, der uns selig macht" frit fordansket og afkortet.</note>
-      <note>Sangværk til den danske Kirke 1, Nr. 200 (1837), efter det Tyske.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="255-256"/>
+  <title><num>85.</num>Christus, vor Gienløser blid</title>
+  <subtitle>Mel. Ind i Haven Jesus gik.</subtitle>
+  <firstline>Christus, vor Gienløser blid</firstline>
+  <notes>
+    <note>De Bøhmiske Brødres "Christus, der uns selig macht" frit fordansket og afkortet.</note>
+    <note>Sangværk til den danske Kirke 1, Nr. 200 (1837), efter det Tyske.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="255-256"/>
 </head>
 <body>
 <poetry>
@@ -9845,15 +9843,15 @@ Naar vi fare heden!
 
 <text id="grundtvig2001061886" variant="grundtvig20010107266">
 <head>
-    <title><num>86.</num>Idag opstod den Herre Christ</title>
-    <subtitle>Mel: Et Barn er født i Bethlehem; eller: Egen Melodi af L. M. Lindeman.</subtitle>
-    <firstline>Idag opstod den Herre Christ</firstline>
-    <notes>
-      <note>* Oprindelige paa Munke-Latin "Surrexit Christus hodie" hos os "Fra Døde opstod den Herre Christ".</note>
-      <note>* Sangværk 1, Nr. 266, efter en gammel Psalme.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="256-257"/>
+  <title><num>86.</num>Idag opstod den Herre Christ</title>
+  <subtitle>Mel: Et Barn er født i Bethlehem; eller: Egen Melodi af L. M. Lindeman.</subtitle>
+  <firstline>Idag opstod den Herre Christ</firstline>
+  <notes>
+    <note>* Oprindelige paa Munke-Latin "Surrexit Christus hodie" hos os "Fra Døde opstod den Herre Christ".</note>
+    <note>* Sangværk 1, Nr. 266, efter en gammel Psalme.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="256-257"/>
 </head>
 <body>
 <poetry>
@@ -9892,14 +9890,14 @@ Nu løste os af Dødens Baand!
 
 <text id="grundtvig2001061887">
 <head>
-    <title><num>87.</num>Som Foraars-Solen morgenrød</title>
-    <subtitle>Egen Melodi af Emil Hartmann.</subtitle>
-    <firstline>Som Foraars-Solen morgenrød</firstline>
-    <notes>
-      <note>Fengernes Psalmer og Sange til den stille Uge og Paasken, 1846, Nr. 39. Se "Paaske-Cantate", Text af Grundtvig (Slotskirken, første Paaskedag 1846).</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="257-258"/>
+  <title><num>87.</num>Som Foraars-Solen morgenrød</title>
+  <subtitle>Egen Melodi af Emil Hartmann.</subtitle>
+  <firstline>Som Foraars-Solen morgenrød</firstline>
+  <notes>
+    <note>Fengernes Psalmer og Sange til den stille Uge og Paasken, 1846, Nr. 39. Se "Paaske-Cantate", Text af Grundtvig (Slotskirken, første Paaskedag 1846).</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="257-258"/>
 </head>
 <body>
 <poetry>
@@ -9929,14 +9927,14 @@ Som aarle, saa og silde!
 
 <text id="grundtvig2001061888">
 <head>
-    <title><num>88.</num>Marie Magdalene</title>
-    <subtitle>Mel. Aanden opgav Enkesønnen.</subtitle>
-    <firstline>Paaskemorgen Magdalene</firstline>
-    <notes>
-      <note>Dansk Kirketidende 2, Nr. 28, 1847; næstsidste Vers udeladt, men et nyt indskudt som det tredie sidste.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="258-261"/>
+  <title><num>88.</num>Marie Magdalene</title>
+  <subtitle>Mel. Aanden opgav Enkesønnen.</subtitle>
+  <firstline>Paaskemorgen Magdalene</firstline>
+  <notes>
+    <note>Dansk Kirketidende 2, Nr. 28, 1847; næstsidste Vers udeladt, men et nyt indskudt som det tredie sidste.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="258-261"/>
 </head>
 <body>
 <poetry>
@@ -10041,14 +10039,14 @@ Svinge sig i Jesu Navn!
 
 <text id="grundtvig2001061889">
 <head>
-    <title><num>89.</num>De to Disciplers Gang til Emaus</title>
-    <subtitle>Mel. Jeg veed et evigt Himmerig.</subtitle>
-    <firstline>Luk Øine op, al Christenhed!</firstline>
-    <notes>
-      <note>Dansk Kirketidende 1, Nr. 31, 1846, med Overskrift "Opstandelsen; Vers 1 og 22 udeladte, og i Steden for Vers 24, 25 og 26 et nyt Vers, der alt findes brugt i Boisens bibelske sange 1853, Nr. 86.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="261-267"/>
+  <title><num>89.</num>De to Disciplers Gang til Emaus</title>
+  <subtitle>Mel. Jeg veed et evigt Himmerig.</subtitle>
+  <firstline>Luk Øine op, al Christenhed!</firstline>
+  <notes>
+    <note>Dansk Kirketidende 1, Nr. 31, 1846, med Overskrift "Opstandelsen; Vers 1 og 22 udeladte, og i Steden for Vers 24, 25 og 26 et nyt Vers, der alt findes brugt i Boisens bibelske sange 1853, Nr. 86.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="261-267"/>
 </head>
 <body>
 <poetry>
@@ -10262,14 +10260,14 @@ Skal see ham selv og funkle!
 
 <text id="grundtvig2001061890">
 <head>
-    <title><num>90.</num>Thomas</title>
-    <subtitle>Egen Melodi af A. Winding.</subtitle>
-    <firstline>O hør det Thomas og troe det dog</firstline>
-    <notes>
-      <note>Fengernes Paaskehefte, Nr. 43.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="267-269"/>
+  <title><num>90.</num>Thomas</title>
+  <subtitle>Egen Melodi af A. Winding.</subtitle>
+  <firstline>O hør det Thomas og troe det dog</firstline>
+  <notes>
+    <note>Fengernes Paaskehefte, Nr. 43.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="267-269"/>
 </head>
 <body>
 <poetry>
@@ -10359,14 +10357,14 @@ Du lever os evig til Baade!
 
 <text id="grundtvig2001061891" variant="grundtvig20010107267">
 <head>
-    <title><num>91.</num>Til Himmels foer den Ærens Drot</title>
-    <subtitle>Mel. Et Barn er født i Bethlehem; eller: Idag opstod den Herre Christ.</subtitle>
-    <firstline>Til Himmels foer den Ærens Drot</firstline>
-    <notes>
-      <note>Sangværk 1, Nr. 267, fra Latin.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="269-270"/>
+  <title><num>91.</num>Til Himmels foer den Ærens Drot</title>
+  <subtitle>Mel. Et Barn er født i Bethlehem; eller: Idag opstod den Herre Christ.</subtitle>
+  <firstline>Til Himmels foer den Ærens Drot</firstline>
+  <notes>
+    <note>Sangværk 1, Nr. 267, fra Latin.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="269-270"/>
 </head>
 <body>
 <poetry>
@@ -10415,14 +10413,14 @@ Med Straale-Krands paa Rosen-Sky!
 
 <text id="grundtvig2001061892">
 <head>
-    <title><num>92.</num>Apostlerne sad i Jerusalem</title>
-    <subtitle>Synges som: Abraham sad i Mamre-Lund; eller paa egen Melodi af L. M. Lindeman.</subtitle>
-    <firstline>Apostlerne sad i Jerusalem</firstline>
-    <notes>
-      <note>Fengernes Psalmer til Himmelfartsfesten og Pindsen, 1846, Nr. 10, fra Grundtvigs utrykte Psalmesamling "Psalmeblade til Kirkebod" 1843.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="271-272"/>
+  <title><num>92.</num>Apostlerne sad i Jerusalem</title>
+  <subtitle>Synges som: Abraham sad i Mamre-Lund; eller paa egen Melodi af L. M. Lindeman.</subtitle>
+  <firstline>Apostlerne sad i Jerusalem</firstline>
+  <notes>
+    <note>Fengernes Psalmer til Himmelfartsfesten og Pindsen, 1846, Nr. 10, fra Grundtvigs utrykte Psalmesamling "Psalmeblade til Kirkebod" 1843.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="271-272"/>
 </head>
 <body>
 <poetry>
@@ -10491,18 +10489,18 @@ At Himmerigs Klokker kime!
 
 <text id="grundtvig2001061893" variant="grundtvig1837a5">
 <head>
-    <title><num>93.</num>Var I ikke Galilæer!</title>
-    <subtitle>
-      <line>Mel. Kommer, Sjæle dyrekjøbte, af J. P. E. Hartmann;</line>
-      <line>eller egen Melodi af C. Balle.</line>
-    </subtitle>
-    <firstline>Var I ikke Galilæer!</firstline>
-    <notes>
-      <note>Kirkepsalmer til Prøve 1845, Nr. 107, ændret og forkortet fra Sangværk 1, Nr. 24 (1836).</note>
-      <note>'Korsets Ord' alluderer til <xref bibel="bibel1korint01,18"/>: 'Thi Korsets Ord er vel for dem, som fortabes, en Daarskab, men for dem, som frelses, for os er det en Guds Kraft.' <i>Ordbog over det danske sprog</i> [under <i>Kors,</i> sp. 143] angiver at talen er om 'Kristi ord paa korset.' Men dette er en ren misforståelse: Meningen er 'ordet om korset,' (således da også i 1948-oversættelsen af Ny Testamente), eller, frit oversat, 'forkyndelsen af Kristi død på korset.' (Der er ingen vidnesbyrd om at Paulus har kendt evangeliernes traditioner om Jesu ord på korset.) - Sven Sørensen</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="273-274"/>
+  <title><num>93.</num>Var I ikke Galilæer!</title>
+  <subtitle>
+    <line>Mel. Kommer, Sjæle dyrekjøbte, af J. P. E. Hartmann;</line>
+    <line>eller egen Melodi af C. Balle.</line>
+  </subtitle>
+  <firstline>Var I ikke Galilæer!</firstline>
+  <notes>
+    <note>Kirkepsalmer til Prøve 1845, Nr. 107, ændret og forkortet fra Sangværk 1, Nr. 24 (1836).</note>
+    <note>'Korsets Ord' alluderer til <xref bible="bibel1korint01,18"/>: 'Thi Korsets Ord er vel for dem, som fortabes, en Daarskab, men for dem, som frelses, for os er det en Guds Kraft.' <i>Ordbog over det danske sprog</i> [under <i>Kors,</i> sp. 143] angiver at talen er om 'Kristi ord paa korset.' Men dette er en ren misforståelse: Meningen er 'ordet om korset,' (således da også i 1948-oversættelsen af Ny Testamente), eller, frit oversat, 'forkyndelsen af Kristi død på korset.' (Der er ingen vidnesbyrd om at Paulus har kendt evangeliernes traditioner om Jesu ord på korset.) - Sven Sørensen</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="273-274"/>
 </head>
 <body>
 <poetry>
@@ -10567,14 +10565,14 @@ Det af Sions Heltesang!
 
 <text id="grundtvig2001061894">
 <head>
-    <title><num>94.</num>Ebræer-Menigheden</title>
-    <subtitle>Kan synges som: Sin Vogn giør Han af Skyer blaa.</subtitle>
-    <firstline>Hvor Abraham i Hyrdehjem</firstline>
-    <notes>
-      <note>Hidtil utrykt.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="274-277"/>
+  <title><num>94.</num>Ebræer-Menigheden</title>
+  <subtitle>Kan synges som: Sin Vogn giør Han af Skyer blaa.</subtitle>
+  <firstline>Hvor Abraham i Hyrdehjem</firstline>
+  <notes>
+    <note>Hidtil utrykt.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="274-277"/>
 </head>
 <body>
 <poetry>
@@ -10671,14 +10669,14 @@ Paa Christus-Modersmaalet.
 
 <text id="grundtvig2001061895">
 <head>
-    <title><num>95.</num>Petrus, Paulus og Johannes</title>
-    <subtitle>Kan synges som: Søndag Morgen fra de Døde.</subtitle>
-    <firstline>Nøgen, under Torne-Krone</firstline>
-    <notes>
-      <note>Krønikerim 2. Udg. 1842, Side 71.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="277-280"/>
+  <title><num>95.</num>Petrus, Paulus og Johannes</title>
+  <subtitle>Kan synges som: Søndag Morgen fra de Døde.</subtitle>
+  <firstline>Nøgen, under Torne-Krone</firstline>
+  <notes>
+    <note>Krønikerim 2. Udg. 1842, Side 71.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="277-280"/>
 </head>
 <body>
 <poetry>
@@ -10799,15 +10797,15 @@ Helst vil døe for Livets Herre!
 
 <text id="grundtvig2001061896">
 <head>
-    <title><num>96.</num>Stefan</title>
-    <subtitle>Mel. Tag det sorte Kors fra Graven</subtitle>
-    <firstline>Søde Jesus, Julens Fyrste</firstline>
-    <notes>
-      <note>Kingos, lidt ændret.</note>
-      <note>Hagens Psalmer og Rim, 1832, Nr. 53, efter Kingo.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="280-282"/>
+  <title><num>96.</num>Stefan</title>
+  <subtitle>Mel. Tag det sorte Kors fra Graven</subtitle>
+  <firstline>Søde Jesus, Julens Fyrste</firstline>
+  <notes>
+    <note>Kingos, lidt ændret.</note>
+    <note>Hagens Psalmer og Rim, 1832, Nr. 53, efter Kingo.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="280-282"/>
 </head>
 <body>
 <poetry>
@@ -10870,14 +10868,14 @@ Saa vort Løb med Lyst at ende!
 
 <text id="grundtvig2001061897">
 <head>
-    <title><num>97.</num>Kammersvenden fra Morland</title>
-    <subtitle>Egen Melodi af J. P. E. Hartmann.</subtitle>
-    <firstline>Der sad en Svend i Blaamænds Land</firstline>
-    <notes>
-      <note>Hagens Psalmer og Rim, Nr. 54, forkortet fra Grundtvigs Kvædlinger (skrevet 1812) Side 320.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="282-288"/>
+  <title><num>97.</num>Kammersvenden fra Morland</title>
+  <subtitle>Egen Melodi af J. P. E. Hartmann.</subtitle>
+  <firstline>Der sad en Svend i Blaamænds Land</firstline>
+  <notes>
+    <note>Hagens Psalmer og Rim, Nr. 54, forkortet fra Grundtvigs Kvædlinger (skrevet 1812) Side 320.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="282-288"/>
 </head>
 <body>
 <poetry>
@@ -11094,14 +11092,14 @@ Blandt Frelserens Apostler.
 
 <text id="grundtvig2001061898">
 <head>
-    <title><num>98.</num>Cornelius</title>
-    <subtitle>Mel. I Vittenberg i Sachsenland, af L. M. Lindeman.</subtitle>
-    <firstline>Du sande Gud! hør Du min Bøn</firstline>
-    <notes>
-      <note>Fengernes Pindsehefte, Nr. 15.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="288-290"/>
+  <title><num>98.</num>Cornelius</title>
+  <subtitle>Mel. I Vittenberg i Sachsenland, af L. M. Lindeman.</subtitle>
+  <firstline>Du sande Gud! hør Du min Bøn</firstline>
+  <notes>
+    <note>Fengernes Pindsehefte, Nr. 15.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="288-290"/>
 </head>
 <body>
 <poetry>
@@ -11180,14 +11178,14 @@ Det er saa tungt at tvivle!
 
 <text id="grundtvig2001061899">
 <head>
-    <title><num>99.</num>Reent og Ureent</title>
-    <subtitle>Kan synges som: Med sin Alabaster-Krukke.</subtitle>
-    <firstline>Underveis var til St. Peder</firstline>
-    <notes>
-      <note>Dansk Kirketidende, 1857, Nr. 16.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="290-293"/>
+  <title><num>99.</num>Reent og Ureent</title>
+  <subtitle>Kan synges som: Med sin Alabaster-Krukke.</subtitle>
+  <firstline>Underveis var til St. Peder</firstline>
+  <notes>
+    <note>Dansk Kirketidende, 1857, Nr. 16.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="290-293"/>
 </head>
 <body>
 <poetry>
@@ -11292,14 +11290,14 @@ Nytaars-Dagens Morgengry!
 
 <text id="grundtvig20010618100" variant="grundtvig1837a1">
 <head>
-    <title><num>100.</num>Antiochia</title>
-    <subtitle>Egen Melodi af C. Barnekow.</subtitle>
-    <firstline>Der ligger en Stad i det Tyrkiske Land</firstline>
-    <notes>
-      <note>Sangværk 1, Nr. 2, (1836).</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="293-295"/>
+  <title><num>100.</num>Antiochia</title>
+  <subtitle>Egen Melodi af C. Barnekow.</subtitle>
+  <firstline>Der ligger en Stad i det Tyrkiske Land</firstline>
+  <notes>
+    <note>Sangværk 1, Nr. 2, (1836).</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="293-295"/>
 </head>
 <body>
 <poetry>
@@ -11364,14 +11362,14 @@ Til Himmerigs Porte oplades!
 
 <text id="grundtvig20010618101">
 <head>
-    <title><num>101.</num>St. Peders Fængsling</title>
-    <subtitle>Egen Melodi af L. M. Lindeman.</subtitle>
-    <firstline>Sankt Peder, han ligger i Bolt og Jern</firstline>
-    <notes>
-      <note>Boisens bibelske Sange, Nr. 96.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="295-297"/>
+  <title><num>101.</num>St. Peders Fængsling</title>
+  <subtitle>Egen Melodi af L. M. Lindeman.</subtitle>
+  <firstline>Sankt Peder, han ligger i Bolt og Jern</firstline>
+  <notes>
+    <note>Boisens bibelske Sange, Nr. 96.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="295-297"/>
 </head>
 <body>
 <poetry>
@@ -11455,13 +11453,13 @@ I Fængsels Baand og Kvide!
 
 <text id="grundtvig20010618102">
 <head>
-    <title><num>102.</num>Johannes' Aabenbaring</title>
-    <firstline>Johannes var Vorherres Ven</firstline>
-    <notes>
-      <note>Hidtil utrykt. Udvidet og omarbejdet, med Overskrift "Hyrde-Brevene", i Kierkegaards Nordiske Tidsskrift 3, Side 1 (1841), Nr. 97.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="297-301"/>
+  <title><num>102.</num>Johannes' Aabenbaring</title>
+  <firstline>Johannes var Vorherres Ven</firstline>
+  <notes>
+    <note>Hidtil utrykt. Udvidet og omarbejdet, med Overskrift "Hyrde-Brevene", i Kierkegaards Nordiske Tidsskrift 3, Side 1 (1841), Nr. 97.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="297-301"/>
 </head>
 <body>
 <poetry>
@@ -11614,15 +11612,15 @@ I Guds vor Faders Rige!
 
 <text id="grundtvig20010618103">
 <head>
-    <title><num>103.</num>Kong Agger i Edessa</title>
-    <subtitle>Mel. vor Alderdoms Trøst og støttestav, af C. Barnekow.</subtitle>
-    <firstline>Der sad en Drot ved Eufrats Rand</firstline>
-    <notes>
-      <note>Edessa havde omtrent samme Beliggenhed som nu Orfa, og blev paa det store Korstog indtaget tilligemed Antiokien og Jerusalem.</note>
-      <note>Hidtil utrykt.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="302-304"/>
+  <title><num>103.</num>Kong Agger i Edessa</title>
+  <subtitle>Mel. vor Alderdoms Trøst og støttestav, af C. Barnekow.</subtitle>
+  <firstline>Der sad en Drot ved Eufrats Rand</firstline>
+  <notes>
+    <note>Edessa havde omtrent samme Beliggenhed som nu Orfa, og blev paa det store Korstog indtaget tilligemed Antiokien og Jerusalem.</note>
+    <note>Hidtil utrykt.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="302-304"/>
 </head>
 <body>
 <poetry>
@@ -11711,14 +11709,14 @@ Flyv frit i Jesus-Navnet!
 
 <text id="grundtvig20010618104">
 <head>
-    <title><num>104.</num>Polykarp</title>
-    <subtitle>Kan synges som: Alt paa den vilde Hede.</subtitle>
-    <firstline>Der var en gammel Hyrde</firstline>
-    <notes>
-      <note>Boisens bibelske Sange, Nr. 98.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="304-306"/> <!-- Gætværk, da siderne mangler -->
+  <title><num>104.</num>Polykarp</title>
+  <subtitle>Kan synges som: Alt paa den vilde Hede.</subtitle>
+  <firstline>Der var en gammel Hyrde</firstline>
+  <notes>
+    <note>Boisens bibelske Sange, Nr. 98.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="304-306"/> <!-- Gætværk, da siderne mangler -->
 </head>
 <body>
 <poetry>
@@ -11777,14 +11775,14 @@ Og vil for Hjorden døe.
 
 <text id="grundtvig20010618105">
 <head>
-    <title><num>105.</num>Konstantin den Store</title>
-    <subtitle>Mel. Herrens Huus var lagt i støvet.</subtitle>
-    <firstline>Purpur-Kaaben, tit opfarvet</firstline>
-    <notes>
-      <note>Krønikerim 1829, Side 44.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="306-308"/> <!-- Gætværk, da siderne mangler -->
+  <title><num>105.</num>Konstantin den Store</title>
+  <subtitle>Mel. Herrens Huus var lagt i støvet.</subtitle>
+  <firstline>Purpur-Kaaben, tit opfarvet</firstline>
+  <notes>
+    <note>Krønikerim 1829, Side 44.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="306-308"/> <!-- Gætværk, da siderne mangler -->
 </head>
 <body>
 <poetry>
@@ -11870,14 +11868,14 @@ Seierrig for Kronen strider!
 
 <text id="grundtvig20010618106">
 <head>
-    <title><num>106.</num>Anglerne</title>
-    <subtitle>Egen Melodi af L.M.Lindeman.</subtitle>
-    <firstline>Der ligger en Ø i Vesterhav</firstline>
-    <notes>
-      <note>Boisens bibelske Sange, Nr. 99.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="308-310"/>
+  <title><num>106.</num>Anglerne</title>
+  <subtitle>Egen Melodi af L.M.Lindeman.</subtitle>
+  <firstline>Der ligger en Ø i Vesterhav</firstline>
+  <notes>
+    <note>Boisens bibelske Sange, Nr. 99.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="308-310"/>
 </head>
 <body>
 <poetry>
@@ -11966,14 +11964,14 @@ Fra Vesten til Nørreleden!
 
 <text id="grundtvig20010618107">
 <head>
-    <title><num>107.</num>Kong Edvin</title>
-    <firstline>Jeg førte ret et Konge-Liv</firstline>
-    <subtitle>Egen Melodi af L. M. Lindeman.</subtitle>
-    <notes>
-      <note>Krønikerim, 2. Udg. 1842, Side 103.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="311-312"/>
+  <title><num>107.</num>Kong Edvin</title>
+  <firstline>Jeg førte ret et Konge-Liv</firstline>
+  <subtitle>Egen Melodi af L. M. Lindeman.</subtitle>
+  <notes>
+    <note>Krønikerim, 2. Udg. 1842, Side 103.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="311-312"/>
 </head>
 <body>
 <poetry>
@@ -12042,17 +12040,17 @@ Og red til Christnes Himle!
 
 <text id="grundtvig20010618108">
 <head>
-    <title><num>108.</num>Villibrud</title>
-    <subtitle>
-      <line>Mel. Alle Christne Fødselsdag, af L. M. Lindeman; eller:</line>
-      <line>Blomstre som en Rosengaard, af J. P. E. Hartmann.</line>
-    </subtitle>
-    <firstline>I de dybe Hjerters Tid</firstline>
-    <notes>
-      <note>Hidtil utrykt.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="313-316"/>
+  <title><num>108.</num>Villibrud</title>
+  <subtitle>
+    <line>Mel. Alle Christne Fødselsdag, af L. M. Lindeman; eller:</line>
+    <line>Blomstre som en Rosengaard, af J. P. E. Hartmann.</line>
+  </subtitle>
+  <firstline>I de dybe Hjerters Tid</firstline>
+  <notes>
+    <note>Hidtil utrykt.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="313-316"/>
 </head>
 <body>
 <poetry>
@@ -12181,14 +12179,14 @@ Blidt i Aftenstunden.
 
 <text id="grundtvig20010618109">
 <head>
-    <title><num>109.</num>Ebbe og Harald Klak</title>
-    <subtitle>Mel. Hos Fyrsterne sad tæt i Ring, af L. M. Lindeman.</subtitle>
-    <firstline>Der er saa bredt et Land bag Rhin</firstline>
-    <notes>
-      <note>Uddraget af "Jyllands Rimkrønike" i Heimdall, Nyaarsgave for 1816, Side 138 til 161.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="316-323"/>
+  <title><num>109.</num>Ebbe og Harald Klak</title>
+  <subtitle>Mel. Hos Fyrsterne sad tæt i Ring, af L. M. Lindeman.</subtitle>
+  <firstline>Der er saa bredt et Land bag Rhin</firstline>
+  <notes>
+    <note>Uddraget af "Jyllands Rimkrønike" i Heimdall, Nyaarsgave for 1816, Side 138 til 161.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="316-323"/>
 </head>
 <body>
 <poetry>
@@ -12438,14 +12436,14 @@ End Korset er at skue.
 
 <text id="grundtvig20010618110">
 <head>
-    <title><num>110.</num>Ansgar og Ødbert</title>
-    <subtitle>Egen Melodi af L. M. Lindeman eller C. Barnekow.</subtitle>
-    <firstline>Hos Fyrsterne sad tæt i Ring</firstline>
-    <notes>
-      <note>Uddraget af "Jyllands Rimkrønike" i Heimdall, Side 162 til 170.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="323-328"/>
+  <title><num>110.</num>Ansgar og Ødbert</title>
+  <subtitle>Egen Melodi af L. M. Lindeman eller C. Barnekow.</subtitle>
+  <firstline>Hos Fyrsterne sad tæt i Ring</firstline>
+  <notes>
+    <note>Uddraget af "Jyllands Rimkrønike" i Heimdall, Side 162 til 170.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="323-328"/>
 </head>
 <body>
 <poetry>
@@ -12638,14 +12636,14 @@ Som tømre lod den Kirke.
 
 <text id="grundtvig20010618111">
 <head>
-    <title><num>111.</num>Ansgars Død</title>
-    <subtitle>Mel. Hos Fyrsterne sad tæt i Ring, af C. Barnekow.</subtitle>
-    <firstline>Ansgar han laae paa Sotteseng</firstline>
-    <notes>
-      <note>Uddraget af "Jyllands Rimkrønike" i Heimdall, Side 174 til 177.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="329-330"/>
+  <title><num>111.</num>Ansgars Død</title>
+  <subtitle>Mel. Hos Fyrsterne sad tæt i Ring, af C. Barnekow.</subtitle>
+  <firstline>Ansgar han laae paa Sotteseng</firstline>
+  <notes>
+    <note>Uddraget af "Jyllands Rimkrønike" i Heimdall, Side 174 til 177.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="329-330"/>
 </head>
 <body>
 <poetry>
@@ -12710,13 +12708,13 @@ I Verden skal udtrykke.
 
 <text id="grundtvig20010618112">
 <head>
-    <title><num>112.</num>Den Danske Menighed</title>
-    <firstline>Der throned en Keiser i Englehjem</firstline>
-    <notes>
-      <note>Under Overskriften "Nordens Evangelier" i Dansk Kirketidende 2, Nr. 35, 1847.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="331-333"/>
+  <title><num>112.</num>Den Danske Menighed</title>
+  <firstline>Der throned en Keiser i Englehjem</firstline>
+  <notes>
+    <note>Under Overskriften "Nordens Evangelier" i Dansk Kirketidende 2, Nr. 35, 1847.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="331-333"/>
 </head>
 <body>
 <poetry>
@@ -12816,14 +12814,14 @@ Saa Hjertet kan juble ved Englespil!"
 
 <text id="grundtvig20010618113">
 <head>
-    <title><num>113.</num>Hildebrand</title>
-    <subtitle>Kan synges som: Alt paa den vilde Hede.</subtitle>
-    <firstline>Med Korset og Krumstaven</firstline>
-    <notes>
-      <note>Krønikerim, 2. Udg. Side 124.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="334-338"/>
+  <title><num>113.</num>Hildebrand</title>
+  <subtitle>Kan synges som: Alt paa den vilde Hede.</subtitle>
+  <firstline>Med Korset og Krumstaven</firstline>
+  <notes>
+    <note>Krønikerim, 2. Udg. Side 124.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="334-338"/>
 </head>
 <body>
 <poetry>
@@ -12982,14 +12980,14 @@ Haandgribeligt blev Alt!
 
 <text id="grundtvig20010618114">
 <head>
-    <title><num>114.</num>Korstogs-Prædikanten</title>
-    <subtitle>Kan synges som: Der ligger en stad i det tyrkiske Land.</subtitle>
-    <firstline>Hvem monne det være, der ganger saa hvast</firstline>
-    <notes>
-      <note>Grundtvigs <i>Nordiske Smaadigte</i>, 1838, Side 67, med Overskrift "Pillegrimen", med et nyt Slutningsvers. Jævnfør "Peter Eremit" i Idunna, Nyaarsgave for 1811, Side 131.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="338-341"/>
+  <title><num>114.</num>Korstogs-Prædikanten</title>
+  <subtitle>Kan synges som: Der ligger en stad i det tyrkiske Land.</subtitle>
+  <firstline>Hvem monne det være, der ganger saa hvast</firstline>
+  <notes>
+    <note>Grundtvigs <i>Nordiske Smaadigte</i>, 1838, Side 67, med Overskrift "Pillegrimen", med et nyt Slutningsvers. Jævnfør "Peter Eremit" i Idunna, Nyaarsgave for 1811, Side 131.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="338-341"/>
 </head>
 <body>
 <poetry>
@@ -13086,14 +13084,14 @@ Hvor Livet opstiger af Graven!
 
 <text id="grundtvig20010618115">
 <head>
-    <title><num>115.</num>Det store Korstog</title>
-    <subtitle>Kan synges som: Jeg veed et evigt Himmerig.</subtitle>
-    <firstline>Vor Gud er død hinsides Hav</firstline>
-    <notes>
-      <note>Krønikerim, 2. Udg. Side 128.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="341-344"/>
+  <title><num>115.</num>Det store Korstog</title>
+  <subtitle>Kan synges som: Jeg veed et evigt Himmerig.</subtitle>
+  <firstline>Vor Gud er død hinsides Hav</firstline>
+  <notes>
+    <note>Krønikerim, 2. Udg. Side 128.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="341-344"/>
 </head>
 <body>
 <poetry>
@@ -13232,14 +13230,14 @@ Af Paver og Normanner!
 
 <text id="grundtvig20010618116">
 <head>
-    <title><num>116.</num>Den hellige Grav</title>
-    <subtitle>Egen Melodi af Johanne Fenger.</subtitle>
-    <firstline>Det var i gamle Dage</firstline>
-    <notes>
-      <note>Dansk Kirketidende 1856, Nr. 41, Sp. 641 til 646.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="345-351"/>
+  <title><num>116.</num>Den hellige Grav</title>
+  <subtitle>Egen Melodi af Johanne Fenger.</subtitle>
+  <firstline>Det var i gamle Dage</firstline>
+  <notes>
+    <note>Dansk Kirketidende 1856, Nr. 41, Sp. 641 til 646.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="345-351"/>
 </head>
 <body>
 <poetry>
@@ -13464,14 +13462,14 @@ Det glemmes aldrig i Verden!
 
 <text id="grundtvig20010618117">
 <head>
-    <title><num>117.</num>Jorsal-Farerne</title>
-    <subtitle>Egen Melodi af C. Barnekow.</subtitle>
-    <firstline>Her er saa stille, her er saa tyst</firstline>
-    <notes>
-      <note>Nordiske Smaadigte, Side 70, under Overskrift "Korstoget", udarbeidet fra Idunna, Side 136.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="351-353"/>
+  <title><num>117.</num>Jorsal-Farerne</title>
+  <subtitle>Egen Melodi af C. Barnekow.</subtitle>
+  <firstline>Her er saa stille, her er saa tyst</firstline>
+  <notes>
+    <note>Nordiske Smaadigte, Side 70, under Overskrift "Korstoget", udarbeidet fra Idunna, Side 136.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="351-353"/>
 </head>
 <body>
 <poetry>
@@ -13552,14 +13550,14 @@ Hvor alle Guds Engle svæve!
 
 <text id="grundtvig20010618118">
 <head>
-    <title><num>118.</num>Hussiterne</title>
-    <subtitle>Egen Melodi af A. Winding.</subtitle>
-    <firstline>Da mørkest det saae i Verden ud</firstline>
-    <notes>
-      <note>Hidtil utrykt.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="353-355"/>
+  <title><num>118.</num>Hussiterne</title>
+  <subtitle>Egen Melodi af A. Winding.</subtitle>
+  <firstline>Da mørkest det saae i Verden ud</firstline>
+  <notes>
+    <note>Hidtil utrykt.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="353-355"/>
 </head>
 <body>
 <poetry>
@@ -13640,14 +13638,14 @@ I Kirken for Brødet kun Stene!
 
 <text id="grundtvig20010618119" variant="grundtvig200101078">
 <head>
-    <title><num>119.</num>Vittenberg</title>
-    <subtitle>Egen Melodi af H. Matthison-Hansen eller L. M. Lindeman.</subtitle>
-    <firstline>I Vittenberg, i Sachsen-Land</firstline>
-    <notes>
-      <note>Sangværk 1, Nr. 8, forkortet fra Grundtvigs "Hvorfor kaldes vi Lutheranere?" 1812, Side 351.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="355-358"/>
+  <title><num>119.</num>Vittenberg</title>
+  <subtitle>Egen Melodi af H. Matthison-Hansen eller L. M. Lindeman.</subtitle>
+  <firstline>I Vittenberg, i Sachsen-Land</firstline>
+  <notes>
+    <note>Sangværk 1, Nr. 8, forkortet fra Grundtvigs "Hvorfor kaldes vi Lutheranere?" 1812, Side 351.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="355-358"/>
 </head>
 <body>
 <poetry>
@@ -13746,14 +13744,14 @@ Det fattes her en Hytte!
 
 <text id="grundtvig20010618120">
 <head>
-    <title><num>120.</num>Luther og Guds-Ordet</title>
-    <subtitle>Kan synges som: Paa Hedenskabets Grændser.</subtitle>
-    <firstline>Da Huss blev brændt paa Baalet</firstline>
-    <notes>
-      <note>Hidtil utrykt.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="358-360"/>
+  <title><num>120.</num>Luther og Guds-Ordet</title>
+  <subtitle>Kan synges som: Paa Hedenskabets Grændser.</subtitle>
+  <firstline>Da Huss blev brændt paa Baalet</firstline>
+  <notes>
+    <note>Hidtil utrykt.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="358-360"/>
 </head>
 <body>
 <poetry>
@@ -13826,14 +13824,14 @@ Til Troens Paradis.
 
 <text id="grundtvig20010618121">
 <head>
-    <title><num>121.</num>Luther i Worms</title>
-    <subtitle>Egen Melodi af C. Barnekow.</subtitle>
-    <firstline>Jeg var en Munk i Sachsenland</firstline>
-    <notes>
-      <note>Krønikerim, 2. Udg., Side 161.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="360-363"/>
+  <title><num>121.</num>Luther i Worms</title>
+  <subtitle>Egen Melodi af C. Barnekow.</subtitle>
+  <firstline>Jeg var en Munk i Sachsenland</firstline>
+  <notes>
+    <note>Krønikerim, 2. Udg., Side 161.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="360-363"/>
 </head>
 <body>
 <poetry>
@@ -13952,14 +13950,14 @@ Som Potten og som Panden!
 
 <text id="grundtvig20010618122" variant="grundtvig1837a2">
 <head>
-    <title><num>122.</num>Kirkens Værn</title>
-    <subtitle>Mel. vor Gud han er saa fast en Borg.</subtitle>
-    <firstline>Guds Kirke er vor Klippe-Borg</firstline>
-    <notes>
-      <note>Fri Fordanskning af Luthers "Ein feste Burg ist unser Gott", i Sangværk 1, Nr. 3 (1836); først trykt i Psalmer ved Jubelfesten 1817 (se ogsaa Kiøbenhavns Skilderi for 28. Oktober 1817, Nr. 86).</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="363-365"/>
+  <title><num>122.</num>Kirkens Værn</title>
+  <subtitle>Mel. vor Gud han er saa fast en Borg.</subtitle>
+  <firstline>Guds Kirke er vor Klippe-Borg</firstline>
+  <notes>
+    <note>Fri Fordanskning af Luthers "Ein feste Burg ist unser Gott", i Sangværk 1, Nr. 3 (1836); først trykt i Psalmer ved Jubelfesten 1817 (se ogsaa Kiøbenhavns Skilderi for 28. Oktober 1817, Nr. 86).</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="363-365"/>
 </head>
 <body>
 <poetry>
@@ -14018,14 +14016,14 @@ Det i vor Æt nedarves!
 
 <text id="grundtvig20010618123">
 <head>
-    <title><num>123.</num>Sangværket</title>
-    <subtitle>Egen Melodi af L. M. Lindeman.</subtitle>
-    <firstline>Thomas Kingo er Psalmisten</firstline>
-    <notes>
-      <note>Sangværket. Under Overskriften "Thomas Kingo" i Grundtvigs Danskeren 2, Side 352, (1849), hvor den har et Vers mere end i C. J. Brandt Rim og Sange 2, Side 92 (1849), som den fra først af var skrevet til.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="365-366"/>
+  <title><num>123.</num>Sangværket</title>
+  <subtitle>Egen Melodi af L. M. Lindeman.</subtitle>
+  <firstline>Thomas Kingo er Psalmisten</firstline>
+  <notes>
+    <note>Sangværket. Under Overskriften "Thomas Kingo" i Grundtvigs Danskeren 2, Side 352, (1849), hvor den har et Vers mere end i C. J. Brandt Rim og Sange 2, Side 92 (1849), som den fra først af var skrevet til.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="365-366"/>
 </head>
 <body>
 <poetry>
@@ -14076,14 +14074,14 @@ Som et christnet Dannevirke!
 
 <text id="grundtvig20010618124">
 <head>
-    <title><num>124.</num>Brun og Balle</title>
-    <subtitle>Egen Melodi af Johanne Fenger.</subtitle>
-    <firstline>Der stod en Gran saa rank og skiøn</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <notes>
-        <note>Brun og Balle. Af "Nicolai Edinger Balles Amindelse i Dannevirke 2, Side 48 til 55, 1817.</note>
-    </notes>
-    <source pages="366-371"/>
+  <title><num>124.</num>Brun og Balle</title>
+  <subtitle>Egen Melodi af Johanne Fenger.</subtitle>
+  <firstline>Der stod en Gran saa rank og skiøn</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <notes>
+    <note>Brun og Balle. Af "Nicolai Edinger Balles Amindelse i Dannevirke 2, Side 48 til 55, 1817.</note>
+  </notes>
+  <source pages="366-371"/>
 </head>
 <body>
 <poetry>
@@ -14274,19 +14272,19 @@ Med Kingo høit vi sjunge!
 
 <text id="grundtvig20010618125">
 <head>
-    <title><num>125.</num>Herrens Røst</title>
-    <subtitle>Egen Melodi af A. Winding.</subtitle>
-    <firstline>Herren taler: Øer, hører!</firstline>
-    <notes>
-      <note>Se Esaias 49</note>
-      <note>Under Overskrift "Ansgars-Trøsten" i Dansk Kirketidende, 1866, Nr. 36.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="372-373"/>
+  <title><num>125.</num>Herrens Røst</title>
+  <subtitle>Egen Melodi af A. Winding.</subtitle>
+  <firstline>Herren taler: Øer, hører!</firstline>
+  <notes>
+    <note>Se Esaias 49</note>
+    <note>Under Overskrift "Ansgars-Trøsten" i Dansk Kirketidende, 1866, Nr. 36.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="372-373"/>
 </head>
 <body>
 <poetry>
-Herren taler: Øer, hører!<note>Cf. <xref bibel="bibelesajas49,1"/>.</note>
+Herren taler: Øer, hører!<note>Cf. <xref bible="bibelesajas49,1"/>.</note>
 Hver som Øren har at høre med!
 Ordet, Livets Ord han fører,
 Som han vil og kan til Tid og Sted,
@@ -14347,14 +14345,14 @@ Herrens Røst med Aand og Liv!
 
 <text id="grundtvig20010618126">
 <head>
-    <title><num>126.</num>Ansgars Minde</title>
-    <subtitle>Mel. Blomstre som en Rosengaard, af J. P. E. Hartmann.</subtitle>
-    <firstline>Han var ingen mægtig Aand</firstline>
-    <notes>
-      <note>Særskilt trykt til Ansgars Mindefest, 3. Februar 1865. Se Dansk Kirketidende 1865, Nr. 8.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="374-375"/>
+  <title><num>126.</num>Ansgars Minde</title>
+  <subtitle>Mel. Blomstre som en Rosengaard, af J. P. E. Hartmann.</subtitle>
+  <firstline>Han var ingen mægtig Aand</firstline>
+  <notes>
+    <note>Særskilt trykt til Ansgars Mindefest, 3. Februar 1865. Se Dansk Kirketidende 1865, Nr. 8.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="374-375"/>
 </head>
 <body>
 <poetry>
@@ -14427,14 +14425,14 @@ Banen paa det Jævne!
 
 <text id="grundtvig20010618127">
 <head>
-    <title><num>127.</num>Dannekvinden</title>
-    <subtitle>Mel. vær lovet Du, som evig vaager, af J. C. Gebauer.</subtitle>
-    <firstline>Opløft din Røst, du gamle Kvinde</firstline>
-    <notes>
-      <note>Under Overskriften "Luthers Minde" i Nordisk Kirketidende 1840, Nr. 43.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="376-378"/>
+  <title><num>127.</num>Dannekvinden</title>
+  <subtitle>Mel. vær lovet Du, som evig vaager, af J. C. Gebauer.</subtitle>
+  <firstline>Opløft din Røst, du gamle Kvinde</firstline>
+  <notes>
+    <note>Under Overskriften "Luthers Minde" i Nordisk Kirketidende 1840, Nr. 43.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="376-378"/>
 </head>
 <body>
 <poetry>
@@ -14527,14 +14525,14 @@ Hver Giæst, som gaaer i Luthers Spor!
 
 <text id="grundtvig20010618128">
 <head>
-    <title><num>128.</num>Luthers Minde</title>
-    <subtitle>Mel. Op al den Ting, som Gud har gjort. af A. P. Berggreen.</subtitle>
-    <firstline>Der sad en Svend i Munkebur</firstline>
-    <notes>
-      <note>Særskilt trykt til Luthers Mindefest i Vartov Kirke (1849). Dansk Kirketidende 5, Nr. 5, 1849. Festpsalmer (1. Oplag 1850) Nr. 647.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="378-380"/>
+  <title><num>128.</num>Luthers Minde</title>
+  <subtitle>Mel. Op al den Ting, som Gud har gjort. af A. P. Berggreen.</subtitle>
+  <firstline>Der sad en Svend i Munkebur</firstline>
+  <notes>
+    <note>Særskilt trykt til Luthers Mindefest i Vartov Kirke (1849). Dansk Kirketidende 5, Nr. 5, 1849. Festpsalmer (1. Oplag 1850) Nr. 647.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="378-380"/>
 </head>
 <body>
 <poetry>
@@ -14598,14 +14596,14 @@ Gak til din Herres Glæde!
 
 <text id="grundtvig20010618129">
 <head>
-    <title><num>129.</num>Den Danske Christendom</title>
-    <subtitle>Mel. Jeg veed et evigt Himmerig.</subtitle>
-    <firstline>Der ligger et Land vel lavt i Nord</firstline>
-    <notes>
-      <note>Dansk Kirketidende 2, Nr. 35, 1847.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="380-383"/>
+  <title><num>129.</num>Den Danske Christendom</title>
+  <subtitle>Mel. Jeg veed et evigt Himmerig.</subtitle>
+  <firstline>Der ligger et Land vel lavt i Nord</firstline>
+  <notes>
+    <note>Dansk Kirketidende 2, Nr. 35, 1847.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="380-383"/>
 </head>
 <body>
 <poetry>
@@ -14734,13 +14732,13 @@ De svare "Fred med Eder!"
 
 <text id="grundtvig20010618130">
 <head>
-    <title><num>130.</num>Fornyelsen</title>
-    <firstline>Det var i vore Dage</firstline>
-    <notes>
-      <note>Dansk Kirketidende 1856, Nr. 41, Sp. 646 til 654, som andet Afsnit af "Den hellige Grav". Se Nr. 116.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="384-394"/>
+  <title><num>130.</num>Fornyelsen</title>
+  <firstline>Det var i vore Dage</firstline>
+  <notes>
+    <note>Dansk Kirketidende 1856, Nr. 41, Sp. 646 til 654, som andet Afsnit af "Den hellige Grav". Se Nr. 116.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="384-394"/>
 </head>
 <body>
 <poetry>
@@ -15134,15 +15132,15 @@ Det glemmes aldrig i Himlen!
 
 <text id="grundtvig20010618131">
 <head>
-    <title><num>131.</num>Livets Vei</title>
-    <subtitle>Egen Melodi af J. P. E. Hartmann.</subtitle>
-    <firstline>Op dog, Sion! seer du ei</firstline>
-    <notes>
-      <note>Festpsalmer Nr. 833, trykt paa Tillægsblad til 7. Oplag (1857). Et Tillægshefte med Psalmer samlede 1851 eller 1852 af P. Rørdam i Mern (Nr. 692), Dansk Kirketidende 6, Nr. 41, 1851, hvor den er et Vers Længere. Sammenlign H. A. Brorsons med samme Begyndelse i Svanesangen.</note>
-      <note>Cf. Brorsons <xref poem="brorson1765a1"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="395"/>
+  <title><num>131.</num>Livets Vei</title>
+  <subtitle>Egen Melodi af J. P. E. Hartmann.</subtitle>
+  <firstline>Op dog, Sion! seer du ei</firstline>
+  <notes>
+    <note>Festpsalmer Nr. 833, trykt paa Tillægsblad til 7. Oplag (1857). Et Tillægshefte med Psalmer samlede 1851 eller 1852 af P. Rørdam i Mern (Nr. 692), Dansk Kirketidende 6, Nr. 41, 1851, hvor den er et Vers Længere. Sammenlign H. A. Brorsons med samme Begyndelse i Svanesangen.</note>
+    <note>Cf. Brorsons <xref poem="brorson1765a1"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="395"/>
 </head>
 <body>
 <poetry>
@@ -15181,14 +15179,14 @@ Til Vorherres Glæde ind!
 
 <text id="grundtvig20010618132" variant="grundtvig1837a4">
 <head>
-    <title><num>132.</num>Lovsangen</title>
-    <subtitle>Egen Melodi.</subtitle>
-    <firstline>Herren, han har besøgt sit Folk</firstline>
-    <notes>
-      <note>Festpsalmer, Nr. 726, 5. Oplag, 1853. Sammenlign Sangværket 1, Nr. 23.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="396-397"/>
+  <title><num>132.</num>Lovsangen</title>
+  <subtitle>Egen Melodi.</subtitle>
+  <firstline>Herren, han har besøgt sit Folk</firstline>
+  <notes>
+    <note>Festpsalmer, Nr. 726, 5. Oplag, 1853. Sammenlign Sangværket 1, Nr. 23.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="396-397"/>
 </head>
 <body>
 <poetry>
@@ -15242,14 +15240,14 @@ Glæden vor Psalme-Tone!
 
 <text id="grundtvig20010618133" variant="grundtvig20010107230">
 <head>
-    <title><num>133.</num>Dannebrog</title>
-    <subtitle>Egen Melodi af J. P. E. Hartmann.</subtitle>
-    <firstline>Hil dig, vor Fane!</firstline>
-    <notes>
-      <note>Psalmer for Danske Krigere, samlede af P. Rørdam, Nr. 40, 1864. Festpsalmer Nr. 910, 8. Oplag, 1864. Se Sangværk 1, Nr. 230.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="397-398"/>
+  <title><num>133.</num>Dannebrog</title>
+  <subtitle>Egen Melodi af J. P. E. Hartmann.</subtitle>
+  <firstline>Hil dig, vor Fane!</firstline>
+  <notes>
+    <note>Psalmer for Danske Krigere, samlede af P. Rørdam, Nr. 40, 1864. Festpsalmer Nr. 910, 8. Oplag, 1864. Se Sangværk 1, Nr. 230.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="397-398"/>
 </head>
 <body>
 <poetry>
@@ -15298,15 +15296,15 @@ Seieren følger dig frit!
 
 <text id="grundtvig20010618134">
 <head>
-    <title><num>134.</num>Christus-Riget</title>
-    <subtitle>Egen Melodi af C. Barnekow.</subtitle>
-    <firstline>Vidunderligst af Alt paa Jord</firstline>
-    <notes>
-      <note>Boisens bibelske Sange, Nr. 108, 1853. Festpsalmer Nr. 729, 5. Oplag 1853. Med et Vers indskudt mellem Vers 6 og 7. Sammenlign "Den Christne Tro" i Krønikerim 1829, Side 131.</note>
-      <note>Cf. Brorsons <xref poem="brorson1739b2"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="398-400"/>
+  <title><num>134.</num>Christus-Riget</title>
+  <subtitle>Egen Melodi af C. Barnekow.</subtitle>
+  <firstline>Vidunderligst af Alt paa Jord</firstline>
+  <notes>
+    <note>Boisens bibelske Sange, Nr. 108, 1853. Festpsalmer Nr. 729, 5. Oplag 1853. Med et Vers indskudt mellem Vers 6 og 7. Sammenlign "Den Christne Tro" i Krønikerim 1829, Side 131.</note>
+    <note>Cf. Brorsons <xref poem="brorson1739b2"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="398-400"/>
 </head>
 <body>
 <poetry>

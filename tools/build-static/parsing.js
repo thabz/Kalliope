@@ -1,7 +1,6 @@
-const entities = require('entities');
-const { htmlToXml } = require('../libs/helpers.js');
-const { build_museum_link, build_museum_url } = require('./museums.js');
-const {
+import { htmlToXml } from '../libs/helpers.js';
+import { build_museum_url } from './museums.js';
+import {
   getChildByTagName,
   getChildrenByTagName,
   getElementByTagName,
@@ -10,11 +9,131 @@ const {
   safeGetAttr,
   safeGetInnerXML,
   safeTrim,
-} = require('./xml.js');
-const { poetName } = require('./formatting.js');
-const { imageSizeSync } = require('./image.js');
+} from './xml.js';
+import { poetName } from './formatting.js';
+import { imageSizeSync } from './image.js';
+import { mapLimit } from './concurrency.js';
 
 const publicPathFromSrc = src => `public${src}`;
+
+const knownPictureAttrs = new Set([
+  // Reference to a shared artwork entry, e.g. "cranach/luther".
+  'artwork',
+  // Optional CSS clip-path used to crop the displayed image.
+  'clip-path',
+  // Local image id, primarily in artwork and portrait registries.
+  'id',
+  // Museum inventory number.
+  'invnr',
+  // Language for image text or description content.
+  'lang',
+  // Museum id used for remote collection links.
+  'museum',
+  // Museum object id used for remote collection links.
+  'objid',
+  // Reference to a shared portrait entry, e.g. "hugo/p1".
+  'portrait',
+  // Marks the preferred image when several pictures are available.
+  'primary',
+  // Legacy generic picture reference.
+  'ref',
+  // Alternative source used when a square crop is needed.
+  'square-src',
+  // Direct image source path.
+  'src',
+  // Artwork subject id, primarily in artwork registries.
+  'subject',
+  // Local picture type/classification.
+  'type',
+  // Wikidata entity id for external lookup.
+  'wikidata',
+  // Artwork or portrait year.
+  'year',
+]);
+
+const validate_picture_attrs = (pictureNode, onError) => {
+  for (let i = 0; i < pictureNode.attributes.length; i++) {
+    const attrName = pictureNode.attributes.item(i).name;
+    if (!knownPictureAttrs.has(attrName)) {
+      onError(`fandt ukendt picture-attribut "${attrName}"`);
+    }
+  }
+};
+
+const get_local_picture_content = (pictureNode) => {
+  if (getChildByTagName(pictureNode, 'description') != null) {
+    return {
+      description: safeGetInnerXML(
+        getChildByTagName(pictureNode, 'description')
+      ),
+      note: safeGetInnerXML(getChildByTagName(pictureNode, 'picture-note')),
+    };
+  }
+  return {
+    description: safeTrim(safeGetInnerXML(pictureNode)),
+    note: null,
+  };
+};
+
+const get_artwork_picture = async (
+  pictureNode,
+  artworkRef,
+  collected,
+  onError
+) => {
+  if (artworkRef.indexOf('/') === -1) {
+    onError(`fandt en ulovlig artwork "${artworkRef}" uden mappe-angivelse`);
+  }
+  const artwork = collected.artwork.get(artworkRef);
+  if (artwork == null) {
+    onError(
+      `fandt en artwork "${artworkRef}" som ikke matcher noget kendt billede.`
+    );
+  }
+  const primary = safeGetAttr(pictureNode, 'primary') == 'true';
+  const year = safeGetAttr(pictureNode, 'year');
+  const clipPath = safeGetAttr(pictureNode, 'clip-path');
+  const artist = collected.poets.get(artwork.artistId);
+  return {
+    artist,
+    lang: artwork.lang,
+    src: artwork.src,
+    year,
+    clipPath,
+    size: await imageSizeSync(publicPathFromSrc(artwork.src)),
+    remoteUrl: artwork.remoteUrl,
+    museum: artwork.museum,
+    content_lang: artwork.content_lang,
+    content_html: artwork.content_html,
+    note_html: artwork.note_html,
+    primary,
+  };
+};
+
+const get_portrait_picture = async (
+  pictureNode,
+  portraitRef,
+  collected,
+  onError
+) => {
+  if (portraitRef.indexOf('/') === -1) {
+    onError(`fandt en ulovlig portrait "${portraitRef}" uden mappe-angivelse`);
+  }
+  const [poetId, portraitId] = portraitRef.split('/');
+  const portrait =
+    collected.artwork.get(`portrait/${poetId}/${portraitId}`) ||
+    collected.artwork.get(`portrait/${poetId}/${portraitId}.jpg`);
+  if (portrait == null) {
+    onError(
+      `fandt en portrait "${portraitRef}" som ikke matcher noget kendt portræt.`
+    );
+  }
+  const primary = safeGetAttr(pictureNode, 'primary') == 'true';
+  return {
+    ...portrait,
+    primary: primary || portrait.primary,
+  };
+};
 
 // Returns raw {title: string, prefix?: string}
 // Both can be converted to xml using htmlToXml(...)
@@ -28,11 +147,17 @@ const extractTitle = (head, type) => {
     return null;
   }
   const parts = title.match(/<num>([^<]*)<\/num>(.*)$/);
-  if (parts != null) {
+  if (parts != null && parts[1].trim().length > 0) {
     return {
       prefix: parts[1],
       title: parts[2],
     };
+  } else if (parts != null) {
+    return { title: parts[2] };
+  }
+  const emptyNum = title.match(/<num\s*\/>\s*(.*)$/);
+  if (emptyNum != null) {
+    return { title: emptyNum[1] };
   } else {
     return { title: title };
   }
@@ -53,24 +178,19 @@ const extractSubtitles = (head, tag = 'subtitle', collected) => {
 };
 
 const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
+  validate_picture_attrs(pictureNode, onError);
+
   const primary = safeGetAttr(pictureNode, 'primary') == 'true';
   let src = safeGetAttr(pictureNode, 'src');
-  const ref = safeGetAttr(pictureNode, 'ref');
+  const artworkRef =
+    safeGetAttr(pictureNode, 'artwork') || safeGetAttr(pictureNode, 'ref');
+  const portraitRef = safeGetAttr(pictureNode, 'portrait');
   const year = safeGetAttr(pictureNode, 'year');
   const museumId = safeGetAttr(pictureNode, 'museum');
   const clipPath = safeGetAttr(pictureNode, 'clip-path');
   const remoteUrl = build_museum_url(pictureNode, collected);
   if (src != null) {
-    let description = null;
-    let note = null;
-    if (getChildByTagName(pictureNode, 'description') != null) {
-      description = safeGetInnerXML(
-        getChildByTagName(pictureNode, 'description')
-      );
-      note = safeGetInnerXML(getChildByTagName(pictureNode, 'picture-note'));
-    } else {
-      description = safeTrim(safeGetInnerXML(pictureNode));
-    }
+    const { description, note } = get_local_picture_content(pictureNode);
     const lang = safeGetAttr(pictureNode, 'lang') || 'da';
     if (src.charAt(0) !== '/') {
       src = srcPrefix + '/' + src;
@@ -88,30 +208,29 @@ const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
       note_html: htmlToXml(note, collected),
       primary,
     };
-  } else if (ref != null) {
-    if (ref.indexOf('/') === -1) {
-      onError(`fandt en ulovlig ref "${ref}" uden mappe-angivelse`);
-    }
-    const artwork = collected.artwork.get(ref);
-    if (artwork == null) {
-      onError(`fandt en ref "${ref}" som ikke matcher noget kendt billede.`);
-    }
-    const artist = collected.poets.get(artwork.artistId);
-    return {
-      artist,
-      lang: artwork.lang,
-      src: artwork.src,
-      year,
-      clipPath,
-      size: await imageSizeSync(publicPathFromSrc(artwork.src)),
-      remoteUrl: artwork.remoteUrl,
-      museum: artwork.museum,
-      content_lang: artwork.content_lang,
-      content_html: artwork.content_html,
-      note_html: artwork.note_html,
-      primary,
-    };
+  } else if (artworkRef != null) {
+    return await get_artwork_picture(
+      pictureNode,
+      artworkRef,
+      collected,
+      onError
+    );
+  } else if (portraitRef != null) {
+    return await get_portrait_picture(
+      pictureNode,
+      portraitRef,
+      collected,
+      onError
+    );
   }
+};
+
+const getNoteType = note => {
+  const explicitType = safeGetAttr(note, 'type');
+  const hasTranslationSource = getElementsByTagName(note, 'xref').some(
+    xref => safeGetAttr(xref, 'type') === 'translation'
+  );
+  return explicitType || (hasTranslationSource ? 'translation-source' : null);
 };
 
 // context contains keys for any `${var}` that's to be replaced in the note texts.
@@ -122,7 +241,7 @@ const get_notes = (head, collected, context = {}) => {
   }
   return getChildrenByTagName(notes, 'note').map(note => {
     const lang = safeGetAttr(note, 'lang') || 'da';
-    const type = safeGetAttr(note, 'type');
+    const type = getNoteType(note);
     const unknownOriginalByPoetId = safeGetAttr(note, 'unknown-original-by');
     const replaceContextPlaceholders = s => {
       return s.replace(/\$\{(.*?)\}/g, (_, p1) => {
@@ -149,10 +268,11 @@ const get_pictures = (head, srcPrefix, xmlFilename, collected) => {
   const onError = message => {
     throw `${xmlFilename}: ${message}`;
   };
-  return Promise.all(
-    getElementsByTagName(head, 'picture').map(async p => {
+  return mapLimit(
+    getElementsByTagName(head, 'picture'),
+    async p => {
       return await get_picture(p, srcPrefix, collected, onError);
-    })
+    }
   );
 };
 
@@ -162,16 +282,19 @@ const extractDates = head => {
   if (dates != null) {
     result.published = safeGetText(dates, 'published');
     result.event = safeGetText(dates, 'event');
+    result.performed = safeGetText(dates, 'performed');
     result.written = safeGetText(dates, 'written');
   }
   return result;
 };
 
-module.exports = {
+export {
   extractTitle,
   extractSubtitles,
   extractDates,
+  getNoteType,
   get_notes,
   get_pictures,
   get_picture,
+  validate_picture_attrs,
 };

@@ -1,4 +1,4 @@
-const { translatePlace } = require('../common/place-names.js');
+import { translatePlace } from '../common/place-names.js';
 
 describe('place names', () => {
   it('translates Danish place names for English display', () => {

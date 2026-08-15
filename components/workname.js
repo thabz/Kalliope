@@ -12,11 +12,13 @@ const WorkName = ({ work, cursive = false, useTitle = 'title' }) => {
 
   if (work.id == 'andre') {
     titleTranslated = _('Andre digte', lang);
+  } else if (work.virtualType === 'anthology' || work.id === 'antologier') {
+    titleTranslated = _('Tekster i andre udgivelser', lang);
   }
   let titlePart = <span>{titleTranslated}</span>;
   let yearPart = null;
   if (year != null) {
-    yearPart = <span>({formattedYear(year)})</span>;
+    yearPart = <span>({formattedYear(year, lang)})</span>;
   }
 
   const parts = [titlePart, yearPart].map((p, i) => {
@@ -52,7 +54,11 @@ const WorkName = ({ work, cursive = false, useTitle = 'title' }) => {
 
 export default WorkName;
 
-export function workTitleString(work) {
-  const { title, year } = work;
-  return Dates.formatTitleAndYear(title, year);
+export function workTitleString(work, lang = 'da') {
+  const { year } = work;
+  const title =
+    work.virtualType === 'anthology' || work.id === 'antologier'
+      ? _('Tekster i andre udgivelser', lang)
+      : work.title;
+  return Dates.formatTitleAndYear(title, year, lang);
 }

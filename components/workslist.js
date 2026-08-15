@@ -9,6 +9,8 @@ const workNameTranslated = (work, lang) => {
   let result = work.toctitle;
   if (work.id == 'andre') {
     return _('Andre digte', lang);
+  } else if (work.virtualType === 'anthology' || work.id === 'antologier') {
+    return _('Tekster i andre udgivelser', lang);
   } else {
     return work.toctitle.title;
   }
@@ -31,7 +33,7 @@ const WorksList = ({ lang, poet, works }) => {
       yearRendered = (
         <span key="year" className="lighter">
           {' '}
-          ({formattedYear(year)})
+          ({formattedYear(year, lang)})
         </span>
       );
     }

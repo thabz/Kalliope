@@ -1,31 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1860-7" author="winther" status="complete" type="poetry" parent="1860">
 <workhead>
-    <title>Samlede Digtninger</title>
-    <subtitle>
-        <line>Syvende Bind. Hjortens Flugt</line>
-    </subtitle>
-    <linktitle>Samlede Digtninger, 7. Bind</linktitle>
-    <toctitle><num>Bind 7.</num>Hjortens Flugt</toctitle>
-    <breadcrumbtitle>Bd. 7</breadcrumbtitle>
-    <year>1860</year>
-    <notes>
-        <note>Teksten følger Christian Winther: <i>Samlede Digtninger</i>, bd. 7, C.A. Reitzels Forlag, Kbh., 1860.</note>
-    </notes>
-    <pictures>
-        <picture src="1860-7-p1.jpg">Titelbladet til <i>Samlede Digtninger, Syvende Bind</i> (1860) lyder ,,Christian Winthers / Samlede Digtninger. // Syvende Bind. / Hjortens Flugt. // Kjøbenhavn. / C. A. Reitzels Forlag. / 1860.''</picture>
-    </pictures>
-    <source facsimile="4135818335_color" facsimile-pages-num="348" facsimile-pages-offset="14">Christian Winther: <i>Samlede Digtninger</i>, bd. 7, C.A. Reitzels Forlag, Kbh., 1860.</source>
+  <title>Samlede Digtninger</title>
+  <subtitle>
+    <line>Syvende Bind. Hjortens Flugt</line>
+  </subtitle>
+  <linktitle>Samlede Digtninger, 7. Bind</linktitle>
+  <toctitle><num>Bind 7.</num>Hjortens Flugt</toctitle>
+  <breadcrumbtitle>Bd. 7</breadcrumbtitle>
+  <year>1860</year>
+  <pictures>
+    <picture src="1860-7-p1.jpg">Titelbladet til <i>Samlede Digtninger, Syvende Bind</i> (1860) lyder ,,Christian Winthers / Samlede Digtninger. // Syvende Bind. / Hjortens Flugt. // Kjøbenhavn. / C. A. Reitzels Forlag. / 1860.''</picture>
+  </pictures>
+  <source facsimile="4135818335_color" facsimile-pages-num="348" facsimile-pages-offset="14">Christian Winther: <i>Samlede Digtninger</i>, bd. 7, C.A. Reitzels Forlag, Kbh., 1860.</source>
 </workhead>
 <workbody>
 
 <text id="winther2018100601" variant="winther2001081905">
 <head>
-   <title>Forspil</title>
-   <firstline>Paa denne Kildemarkedsplads</firstline>
-   <source pages="1-4"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Forspil</title>
+  <firstline>Paa denne Kildemarkedsplads</firstline>
+  <source pages="1-4"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -91,10 +87,10 @@ Før Nattens sorte Slør os skiller.
 
 <text id="winther2018100602" variant="winther1999091701">
 <head>
-   <title>Flugten</title>
-   <firstline>End dækked Nattens Teppe</firstline>
-   <source pages="5-21"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Flugten</title>
+  <firstline>End dækked Nattens Teppe</firstline>
+  <source pages="5-21"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -553,10 +549,10 @@ Og glemte al sin Nød.
 
 <text id="winther2018100603" variant="winther2001081901">
 <head>
-   <title>I Møllen</title>
-   <firstline>Hvor klare Skovbæk risler</firstline>
-   <source pages="22-33"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>I Møllen</title>
+  <firstline>Hvor klare Skovbæk risler</firstline>
+  <source pages="22-33"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -871,10 +867,10 @@ En Fader kunde see.
 
 <text id="winther2018100604" variant="winther1999091702">
 <head>
-   <title>Rhitra</title>
-   <firstline>Den Møller stod paa Høien</firstline>
-   <source pages="34-48"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Rhitra</title>
+  <firstline>Den Møller stod paa Høien</firstline>
+  <source pages="34-48"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1279,10 +1275,10 @@ Kjøkkenrøg opsteeg.
 
 <text id="winther2018100605" variant="winther1999091703">
 <head>
-   <title>Den vandrende Sanger</title>
-   <firstline>Storken, den kloge Fugl</firstline>
-   <source pages="49-55"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Den vandrende Sanger</title>
+  <firstline>Storken, den kloge Fugl</firstline>
+  <source pages="49-55"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1383,7 +1379,7 @@ Der sorgløst flyve hen:
 De sprede ei, de høste ei,
 De sanke ei til Bo;
 En Herre lader op sin Haand
-Og fylder deres Kro.<note>Cf. <xref bibel="bibelmatt06,26"/>.</note>
+Og fylder deres Kro.<note>Cf. <xref bible="bibelmatt06,26"/>.</note>
 
 Saa mener jeg, Du har vel og
 En Herre riig og stor,
@@ -1453,10 +1449,10 @@ I Krogen, som han sad.
 
 <text id="winther2018100606" variant="winther1999091704">
 <head>
-   <title>I Kongsgaarden</title>
-   <firstline>Kong Erik sad paa Gurve</firstline>
-   <source pages="56-76"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>I Kongsgaarden</title>
+  <firstline>Kong Erik sad paa Gurve</firstline>
+  <source pages="56-76"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2014,10 +2010,10 @@ Og hans flagrende Baand.
 
 <text id="winther2018100607" variant="winther2001081903">
 <head>
-   <title>Gulitza</title>
-   <firstline>Novemberstormen havde sig</firstline>
-   <source pages="77-98"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Gulitza</title>
+  <firstline>Novemberstormen havde sig</firstline>
+  <source pages="77-98"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2593,10 +2589,10 @@ Saa vide Veie gaae.
 
 <text id="winther2018100608" variant="winther2001081904">
 <head>
-   <title>Jørgen og Anna</title>
-   <firstline>Naar Bækken risler lystig</firstline>
-   <source pages="99-112"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Jørgen og Anna</title>
+  <firstline>Naar Bækken risler lystig</firstline>
+  <source pages="99-112"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2956,10 +2952,10 @@ Hvor Eensomheden boer.
 
 <text id="winther2018100609" variant="winther1999091706">
 <head>
-   <title>Skovbroderen</title>
-   <firstline>Den korte, lyse Mainat</firstline>
-   <source pages="113-122"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Skovbroderen</title>
+  <firstline>Den korte, lyse Mainat</firstline>
+  <source pages="113-122"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3220,10 +3216,10 @@ Og Droslerne sang.
 
 <text id="winther2018100610" variant="winther1999091707">
 <head>
-   <title>Hr. Peder Jernskjæg</title>
-   <firstline>Den Eftermiddags Luft</firstline>
-   <source pages="123-153"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Hr. Peder Jernskjæg</title>
+  <firstline>Den Eftermiddags Luft</firstline>
+  <source pages="123-153"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4051,10 +4047,10 @@ Hen over Skov og Dal.
 
 <text id="winther2018100611" variant="winther1999091709">
 <head>
-   <title>Paa Herreborgen</title>
-   <firstline>Og det var de Bønder</firstline>
-   <source pages="154-170"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Paa Herreborgen</title>
+  <firstline>Og det var de Bønder</firstline>
+  <source pages="154-170"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4513,10 +4509,10 @@ Forfriskning og Ro.
 
 <text id="winther2018100612" variant="winther1999091710">
 <head>
-   <title>Eselet</title>
-   <firstline>Under Bislag, ved Huset</firstline>
-   <source pages="171-194"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Eselet</title>
+  <firstline>Under Bislag, ved Huset</firstline>
+  <source pages="171-194"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5164,10 +5160,10 @@ Som en broget Urtekrands.
 
 <text id="winther2018100613" variant="winther1999091711">
 <head>
-   <title>I Jægerhuset</title>
-   <firstline>En Rast fra Kongeborgen</firstline>
-   <source pages="195-210"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>I Jægerhuset</title>
+  <firstline>En Rast fra Kongeborgen</firstline>
+  <source pages="195-210"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5599,10 +5595,10 @@ Den Tredie slumred ind.
 
 <text id="winther2018100614" variant="winther1999091712">
 <head>
-   <title>St. Hans' Aften</title>
-   <firstline>I Skoven tæt ved Gurve</firstline>
-   <source pages="211-219"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>St. Hans' Aften</title>
+  <firstline>I Skoven tæt ved Gurve</firstline>
+  <source pages="211-219"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5688,7 +5684,7 @@ Sødt toned da Musiken
 Paa Konningens Vink.
 
 Han qvæged sine Øine
-Og sin sin elskovssyge Aand
+Og sin elskovssyge Aand
 I hendes Lueblikke.
 Saa greeb han hendes Haand
 Og traadte hen i Kredsen
@@ -5827,10 +5823,10 @@ I Drottens høie Sal.
 
 <text id="winther2018100615" variant="winther1999091713">
 <head>
-   <title>Uglens Hjerte</title>
-   <firstline>Den morgenglade Lærke</firstline>
-   <source pages="220-231"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Uglens Hjerte</title>
+  <firstline>Den morgenglade Lærke</firstline>
+  <source pages="220-231"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6154,10 +6150,10 @@ Hr. Folmers Pudel sprang.
 
 <text id="winther2018100616" variant="winther1999091714">
 <head>
-   <title>Befrielsen</title>
-   <firstline>Høit paa en nøgen Banke</firstline>
-   <source pages="232-253"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Befrielsen</title>
+  <firstline>Høit paa en nøgen Banke</firstline>
+  <source pages="232-253"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6733,10 +6729,10 @@ Med hende, kan kuns jeg!''
 
 <text id="winther2018100617" variant="winther1999091715">
 <head>
-   <title>I Riddersalen</title>
-   <firstline>Naar blygraae Skyer skjule</firstline>
-   <source pages="254-272"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>I Riddersalen</title>
+  <firstline>Naar blygraae Skyer skjule</firstline>
+  <source pages="254-272"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -7240,10 +7236,10 @@ Fik sagt: ,,Vi sees!'' - ,,Vi sees!''
 
 <text id="winther2018100618" variant="winther1999091716">
 <head>
-   <title>I Fruerburet</title>
-   <firstline>I stille Lønkammer</firstline>
-   <source pages="273-282"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>I Fruerburet</title>
+  <firstline>I stille Lønkammer</firstline>
+  <source pages="273-282"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -7504,10 +7500,10 @@ Som paa Havet en Storm.
 
 <text id="winther2018100619" variant="winther1999091717">
 <head>
-   <title>Moder og Datter</title>
-   <firstline>Det Huus i Lindegyden</firstline>
-   <source pages="283-292"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Moder og Datter</title>
+  <firstline>Det Huus i Lindegyden</firstline>
+  <source pages="283-292"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -7777,10 +7773,10 @@ Tilsidst hun drog af Led.
 
 <text id="winther2018100620" variant="winther1999091718">
 <head>
-   <title>Korset</title>
-   <firstline>Det var en Morgen tidlig</firstline>
-   <source pages="293-305"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Korset</title>
+  <firstline>Det var en Morgen tidlig</firstline>
+  <source pages="293-305"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -8131,10 +8127,10 @@ Til Jægerens Bo.
 
 <text id="winther2018100621" variant="winther2001081902">
 <head>
-   <title>Tvekampen</title>
-   <firstline>Han havde seet sin Haarlok</firstline>
-   <source pages="306-327"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Tvekampen</title>
+  <firstline>Han havde seet sin Haarlok</firstline>
+  <source pages="306-327"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -8224,7 +8220,7 @@ Mod Klippen Dalens Elv
 Den gamle Ridder kjæmped
 Forbittret mod sig selv;
 Og Kampen var fortvivlet
-Som Eens imod imod en Hær,
+Som Eens imod en Hær,
 Thi vaabenløs var han,
 Og Fienden var saa nær.
 
@@ -8332,10 +8328,10 @@ Han venter Dommens Dag.
 
 <text id="winther2018100622" variant="winther1999091720">
 <head>
-   <title>Et Farvel</title>
-   <firstline>Saa gik der da en Vinter</firstline>
-   <source pages="314-327"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Et Farvel</title>
+  <firstline>Saa gik der da en Vinter</firstline>
+  <source pages="314-327"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>

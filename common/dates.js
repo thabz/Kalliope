@@ -2,6 +2,41 @@ const defaultTranslate = (text, lang, vars = {}) => {
   return text.replace(/\{(.*?)\}/g, (match, key) => vars[key] ?? match);
 };
 
+const yearTranslations = {
+  da: {
+    bce: 'f.Kr.',
+    ce: 'e.Kr.',
+    circa: 'c.',
+    unknownYear: 'Ukendt år',
+    unknownLifetime: 'Ukendt levetid',
+  },
+  de: {
+    bce: 'v. Chr.',
+    ce: 'n. Chr.',
+    circa: 'ca.',
+    unknownYear: 'Unbekanntes Jahr',
+    unknownLifetime: 'Unbekannte Lebenszeit',
+  },
+  en: {
+    bce: 'BC',
+    ce: 'AD',
+    circa: 'c.',
+    unknownYear: 'Unknown year',
+    unknownLifetime: 'Unknown lifetime',
+  },
+  fr: {
+    bce: 'av. J.-C.',
+    ce: 'apr. J.-C.',
+    circa: 'v.',
+    unknownYear: 'Année inconnue',
+    unknownLifetime: 'Durée de vie inconnue',
+  },
+};
+
+const yearTranslation = (lang = 'da') => {
+  return yearTranslations[lang] || yearTranslations.da;
+};
+
 const parseDate = (date) => {
   if (date == null) {
     return null;
@@ -32,7 +67,7 @@ const parseDate = (date) => {
   return { prefix, year, month, day };
 };
 
-const formattedDate = (date) => {
+const formattedDate = (date, lang = 'da') => {
   if (date == null) {
     return null;
   }
@@ -40,8 +75,11 @@ const formattedDate = (date) => {
 
   let result = null;
 
+  if (prefix != null) {
+    prefix = yearTranslation(lang).circa;
+  }
   if (year < 0) {
-    year = formatYearEra(Math.abs(year), 'bce');
+    year = formatYearEra(Math.abs(year), 'bce', lang);
   }
 
   if (day != null && month != null && year != null) {
@@ -54,12 +92,13 @@ const formattedDate = (date) => {
   return `${prefix ?? ''}${result}`;
 };
 
-const formatYearEra = (year, era) => {
+const formatYearEra = (year, era, lang = 'da') => {
+  const translations = yearTranslation(lang);
   if (era === 'bce') {
-    return `${year} f.Kr.`;
+    return `${year} ${translations.bce}`;
   }
   if (era === 'ce') {
-    return `${year} e.Kr.`;
+    return `${year} ${translations.ce}`;
   }
   return year;
 };
@@ -83,15 +122,15 @@ const formatYearInterval = (startYear, endYear) => {
   return `${startYear} - ${endYear}`;
 };
 
-const formatTitleAndYear = (title, date) => {
-  const [year, numericYear, , bce] = extractYear(date, null);
+const formatTitleAndYear = (title, date, lang = 'da') => {
+  const [year, numericYear, , bce] = extractYear(date, null, lang);
   if (numericYear == null) {
     return title;
   }
-  return `${title} (${formatYearEra(year, bce ? 'bce' : null)})`;
+  return `${title} (${formatYearEra(year, bce ? 'bce' : null, lang)})`;
 };
 
-const extractYear = (date, unknownYear = 'Ukendt år') => {
+const extractYear = (date, unknownYear = 'Ukendt år', lang = 'da') => {
   let m = null,
     numericYear = null,
     prefix = null,
@@ -102,7 +141,7 @@ const extractYear = (date, unknownYear = 'Ukendt år') => {
     numericYear = parseInt(m[1]);
   }
   if ((m = date.match(/ca/i))) {
-    prefix = 'c. ';
+    prefix = yearTranslation(lang).circa + ' ';
   }
   if (numericYear == null) {
     return [unknownYear, null, true];
@@ -114,24 +153,33 @@ const extractYear = (date, unknownYear = 'Ukendt år') => {
   return [`${prefix ?? ''}${numericYear}`, numericYear, prefix != null, bce];
 };
 
-const formattedYear = (date) => {
-  const [formatted, x, y, bce] = extractYear(date);
-  return formatYearEra(formatted, bce ? 'bce' : null);
+const formattedYear = (date, lang = 'da') => {
+  const [formatted, x, y, bce] = extractYear(
+    date,
+    yearTranslation(lang).unknownYear,
+    lang
+  );
+  return formatYearEra(formatted, bce ? 'bce' : null, lang);
 };
 
-const formattedYearRange = (born, dead, unknownLifetime = 'Ukendt levetid') => {
+const formattedYearRange = (
+  born,
+  dead,
+  lang = 'da',
+  unknownLifetime = yearTranslation(lang).unknownLifetime
+) => {
   const [
     bornYearFormatted,
     bornYearNumeric,
     bornYearApproximated,
     bornYearBCE,
-  ] = extractYear(born);
+  ] = extractYear(born, yearTranslation(lang).unknownYear, lang);
   const [
     deadYearFormatted,
     deadYearNumeric,
     deadYearApproximated,
     deadYearBCE,
-  ] = extractYear(dead);
+  ] = extractYear(dead, yearTranslation(lang).unknownYear, lang);
   if (bornYearNumeric == null && deadYearNumeric == null) {
     return `(${unknownLifetime})`;
   } else {
@@ -159,8 +207,13 @@ const formattedYearRange = (born, dead, unknownLifetime = 'Ukendt levetid') => {
     }
     return `(${formatYearEra(
       bornYearFormatted,
-      bornYearEra
-    )}–${formatYearEra(deadYearShortened.toLowerCase(), deadYearEra)})`;
+      bornYearEra,
+      lang
+    )}–${formatYearEra(
+      deadYearShortened.toLowerCase(),
+      deadYearEra,
+      lang
+    )})`;
   }
 };
 
@@ -257,7 +310,22 @@ const compareNormalizedDate = (a, b) => {
   return 0;
 };
 
-module.exports = {
+export {
+  compareNormalizedDate,
+  extractYear,
+  formatYearInterval,
+  formatYearEra,
+  formatTitleAndYear,
+  formattedAge,
+  formattedDate,
+  formattedYear,
+  formattedYearRange,
+  normalizeTimelineDate,
+  normalizedYear,
+  parseDate,
+};
+
+export default {
   compareNormalizedDate,
   extractYear,
   formatYearInterval,

@@ -1,15 +1,28 @@
-const fs = require('fs');
-const entities = require('entities');
-const { DOMParser } = require('xmldom');
-const bible = require('./bible-abbr.js');
-const path = require('path');
-const plimit = require('p-limit');
-const jimp = require('jimp');
-const CommonData = require('../../common/commondata.js');
+import fs from 'fs';
+import { DOMParser } from '@xmldom/xmldom';
+import * as bible from './bible-abbr.js';
+import path from 'path';
+import plimit from 'p-limit';
+import sharp from 'sharp';
+import * as CommonData from '../../common/commondata.js';
+import * as ImagePaths from '../../common/imagepaths.js';
+import { createProgressReporter } from '../build-static/progress.js';
+
+const envInt = (name, fallback) => {
+  const value = parseInt(process.env[name], 10);
+  return Number.isNaN(value) ? fallback : value;
+};
+
+sharp.cache({
+  memory: Math.max(0, envInt('KALLIOPE_SHARP_CACHE_MEMORY', 64)),
+  files: Math.max(0, envInt('KALLIOPE_SHARP_CACHE_FILES', 0)),
+  items: Math.max(0, envInt('KALLIOPE_SHARP_CACHE_ITEMS', 0)),
+});
+sharp.concurrency(Math.max(1, envInt('KALLIOPE_SHARP_CONCURRENCY', 1)));
 
 const safeMkdir = dirname => {
   try {
-    fs.mkdirSync(dirname);
+    fs.mkdirSync(dirname, { recursive: true });
   } catch (err) {
     if (err.code !== 'EEXIST') throw err;
   }
@@ -17,6 +30,12 @@ const safeMkdir = dirname => {
 
 const fileExists = filename => {
   return fs.existsSync(filename);
+};
+
+const removeFile = filename => {
+  if (fileExists(filename)) {
+    fs.unlinkSync(filename);
+  }
 };
 
 const fileModifiedTime = filename => {
@@ -58,30 +77,66 @@ const writeText = (filename, text) => {
   fs.writeFileSync(filename, text);
 };
 
+const xmlEntityMap = {
+  amp: '&',
+  apos: "'",
+  gt: '>',
+  lt: '<',
+  quot: '"',
+};
+
+const decodeXmlCharacterReferences = text =>
+  text.replace(/&(#x[0-9a-fA-F]+|#[0-9]+|[A-Za-z][A-Za-z0-9]+);/g, (m, e) => {
+    if (e.startsWith('#x')) {
+      return String.fromCodePoint(parseInt(e.slice(2), 16));
+    }
+    if (e.startsWith('#')) {
+      return String.fromCodePoint(parseInt(e.slice(1), 10));
+    }
+    if (xmlEntityMap[e] != null) {
+      return xmlEntityMap[e];
+    }
+    throw new Error(`Unknown XML entity ${m}`);
+  });
+
 const replaceDashes = html => {
   if (html == null) {
     return null;
   }
-  return entities.decodeHTML(
+  return decodeXmlCharacterReferences(
     html
-      .replace(/ -&nbsp;/g, ' —&nbsp;')
+      .replace(/ -&#160;/g, ' —&#160;')
+      .replace(/ -\u00a0/g, ' —\u00a0')
       .replace(/ - /g, ' — ')
       .replace(/ -/g, ' —')
       .replace(/^- /gm, '— ')
       .replace(/>- /g, '>— ')
       .replace(/,,- /g, ',,— ')
-      .replace(/,,/g, '&bdquo;')
-      .replace(/''/g, '&rdquo;')
-      .replace(/``/g, '&ldquo;')
-      .replace(/'/g, '&rsquo;')
-      .replace(/&nbsp;- /g, '&nbsp;— ')
-      .replace(/ -&ldquo;/g, ' —&ldquo;')
+      .replace(/,,/g, '„')
+      .replace(/''/g, '”')
+      .replace(/``/g, '“')
+      .replace(/'/g, '’')
+      .replace(/&#160;- /g, '&#160;— ')
+      .replace(/\u00a0- /g, '\u00a0— ')
+      .replace(/ -“/g, ' —“')
       .replace(/ -$/gm, ' —')
       .replace(/ -([\!;\?\.»«,:\n])/g, / —$1/)
-      .replace(/ \. \. \./gm, '&nbsp;.&nbsp;.&nbsp;.') // Undgå ombrydning af ". . ."
-      .replace(/ —/g, '&nbsp;—') // Undgå tankestreger som ombrydes til sin egen linje
+      .replace(/ \. \. \./gm, '\u00a0.\u00a0.\u00a0.') // Undgå ombrydning af ". . ."
+      .replace(/ —/g, '\u00a0—') // Undgå tankestreger som ombrydes til sin egen linje
   );
 };
+
+const splitMultilineLanguageSpans = html =>
+  html.replace(
+    /<span(\s+[^>]*\blang="[^"]+"[^>]*)>([\s\S]*?)<\/span>/g,
+    (_, attributes, content) => {
+      const openingTag = `<span${attributes}>`;
+      return `${openingTag}${content.replaceAll(
+        '\n',
+        `</span>\n${openingTag}`
+      )}</span>`;
+    }
+  );
 
 const htmlToXml = (html, collected, isPoetry) => {
   if (html == null) {
@@ -96,28 +151,36 @@ const htmlToXml = (html, collected, isPoetry) => {
       .replace(/^\[(\d+\.?)\]\s*$/gm, '<versenum>[$1]</versenum>');
   }
   html = html
-    .replace(/\n/g, '::NEWLINE-PLACEHOLDER::') // Regexp nedenunder spænder ikke over flere linjer... underligt.
-    .replace(/<!--.*?-->/g, '')
+    .replace(/\n/g, '::NEWLINE-PLACEHOLDER::')
+    .replace(
+      /(^|::NEWLINE-PLACEHOLDER::)[ \t]*<!--.*?-->[ \t]*(::NEWLINE-PLACEHOLDER::|$)/g,
+      (match, before) => before
+    )
+    .replace(/[ \t]*<!--.*?-->[ \t]*/g, match => {
+      return /^[ \t]+<!--.*?-->[ \t]+$/.test(match) ? ' ' : '';
+    })
     .replace(/::NEWLINE-PLACEHOLDER::/g, '\n');
-  let decoded = entities.decodeHTML(
-    replaceDashes(
-      html
-        .replace(/\n *(----*) *\n/g, (match, p1) => {
-          return `\n<hr width="${p1.length}"/>\n`;
-        })
-        .replace(/\n *(====*) *\n/g, (match, p1) => {
-          return `\n<hr width="${p1.length}" class="double"/>\n`;
-        })
-        .replace(/^( +)/gm, (match, p1) => {
-          return '&nbsp;'.repeat(2 * p1.length);
-        })
-        .replace(/^( *[_\*\- ]+ *)$/gm, (match, p1) => {
-          // <nonum> på afskillerlinjer som f.eks. "* * *" eller "___"
-          return `<nonum>${p1}</nonum>`;
-        })
-        .replace(/^\n/, '')
-        .replace(/^ *(<right>.*)$/gm, '$1')
-        .replace(/^ *(<center>.*)$/gm, '$1')
+  let decoded = splitMultilineLanguageSpans(
+    decodeXmlCharacterReferences(
+      replaceDashes(
+        html
+          .replace(/\n *(----*) *\n/g, (match, p1) => {
+            return `\n<hr width="${p1.length}"/>\n`;
+          })
+          .replace(/\n *(====*) *\n/g, (match, p1) => {
+            return `\n<hr width="${p1.length}" class="double"/>\n`;
+          })
+          .replace(/^( +)/gm, (match, p1) => {
+            return '\u00a0'.repeat(2 * p1.length);
+          })
+          .replace(/^( *[_\*\- ]+ *)$/gm, (match, p1) => {
+            // <nonum> på afskillerlinjer som f.eks. "* * *" eller "___"
+            return `<nonum>${p1}</nonum>`;
+          })
+          .replace(/^\n/, '')
+          .replace(/^ *(<right>.*)$/gm, '$1')
+          .replace(/^ *(<center>.*)$/gm, '$1')
+      )
     )
   );
 
@@ -187,7 +250,7 @@ const htmlToXml = (html, collected, isPoetry) => {
     decoded.indexOf('<num>') > -1 || decoded.indexOf('<margin>') > -1;
 
   let lineNum = 1;
-  lines = decoded.split('\n').map(l => {
+  const lines = decoded.split('\n').map(l => {
     let options = {};
     if (l.indexOf('<resetnum/>') > -1) {
       lineNum = 1;
@@ -246,39 +309,60 @@ const htmlToXml = (html, collected, isPoetry) => {
   return lines;
 };
 
-const resizeImage = async (inputfile, outputfile, maxWidth) => {
-  return new Promise((resolve, reject) => {
-    const task = { inputfile, outputfile, maxWidth };
-    jimp
-      .read(task.inputfile)
-      .then(image => {
-        if (image.bitmap.width < maxWidth) {
-          image.writeAsync(task.outputfile).then(() => {
-            console.log(outputfile);
-            resolve(outputfile);
-          });
-        } else {
-          image
-            .resize(task.maxWidth, jimp.AUTO)
-            .writeAsync(task.outputfile)
-            .then(() => {
-              console.log(outputfile);
-              resolve(outputfile);
-            });
-        }
-      })
-      .catch(err => {
-        console.log(err);
-        console.log(task.outputfile);
-        reject(err);
-      });
-  });
+const resizeImage = async (inputfile, outputfile, maxWidth, options = {}) => {
+  try {
+    const resizeOptions = {
+      width: maxWidth,
+      withoutEnlargement: true,
+    };
+    if (options.fit != null) {
+      const metadata = await sharp(inputfile).metadata();
+      const squareSize = Math.min(
+        maxWidth,
+        metadata.width ?? maxWidth,
+        metadata.height ?? maxWidth
+      );
+      resizeOptions.width = squareSize;
+      resizeOptions.height = squareSize;
+      resizeOptions.fit = options.fit;
+    }
+    const image = sharp(inputfile).resize(resizeOptions);
+    image.jpeg({ quality: options.quality ?? 82 });
+    await image.toFile(outputfile);
+    return outputfile;
+  } catch (err) {
+    console.log(err);
+    console.log(outputfile);
+    throw err;
+  }
 };
 
-const limit = plimit(5);
+const thumbnailConcurrency = Math.max(
+  1,
+  parseInt(process.env.KALLIOPE_THUMBNAIL_CONCURRENCY, 10) || 1
+);
+const limit = plimit(thumbnailConcurrency);
 
-const buildThumbnails = async (topFolder, isFileModifiedMethod) => {
+const defaultThumbnailOutputPath = (fullFilename, width, ext) => {
+  return `public${ImagePaths.thumbnailSrc(
+    fullFilename.replace(/^public/, ''),
+    width,
+    ext
+  )}`;
+};
+
+const buildThumbnails = async (
+  topFolder,
+  isFileModifiedMethod,
+  options = {}
+) => {
   const tasks = [];
+  const progress = createProgressReporter(
+    `Genererede thumbnails i ${topFolder}`,
+    100
+  );
+  const thumbnailOutputPath =
+    options.thumbnailOutputPath || defaultThumbnailOutputPath;
   const pipeJoinedExts = CommonData.availableImageFormats.join('|');
   const skipRegExps = new RegExp(`-w\\d+\\.(${pipeJoinedExts})$`);
 
@@ -303,22 +387,30 @@ const buildThumbnails = async (topFolder, isFileModifiedMethod) => {
         filename.endsWith('.jpg') &&
         !skipRegExps.test(filename)
       ) {
-        if (
-          isFileModifiedMethod != null &&
-          !isFileModifiedMethod(fullFilename)
-        ) {
-          return;
-        }
+        const hasModificationCache = isFileModifiedMethod != null;
+        const sourceModified =
+          hasModificationCache && isFileModifiedMethod(fullFilename);
+        const sourceMtime = fileModifiedTime(fullFilename);
         CommonData.availableImageFormats.forEach((ext, i) => {
           CommonData.availableImageWidths.forEach(width => {
-            const outputfile = fullFilename
-              .replace(/\.jpg$/, `-w${width}.${ext}`)
-              .replace(/\/([^\/]+)$/, '/t/$1');
+            const outputfile = thumbnailOutputPath(fullFilename, width, ext);
             safeMkdir(outputfile.replace(/\/[^\/]+?$/, ''));
-            if (!fileExists(outputfile)) {
+            const outputMtime = fileModifiedTime(outputfile);
+            if (
+              outputMtime == null ||
+              (hasModificationCache
+                ? sourceModified
+                : sourceMtime > outputMtime)
+            ) {
               tasks.push(
-                limit(() => {
-                  return resizeImage(fullFilename, outputfile, width);
+                limit(async () => {
+                  const result = await resizeImage(
+                    fullFilename,
+                    outputfile,
+                    width
+                  );
+                  progress.increment();
+                  return result;
                 })
               );
             }
@@ -331,11 +423,13 @@ const buildThumbnails = async (topFolder, isFileModifiedMethod) => {
   handleDirRecursive(topFolder);
 
   await Promise.all(tasks);
+  progress.finish();
 };
 
-module.exports = {
+export {
   safeMkdir,
   fileExists,
+  removeFile,
   fileModifiedTime,
   loadJSON,
   loadText,

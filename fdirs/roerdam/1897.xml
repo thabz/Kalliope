@@ -1,26 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1897" author="roerdam" status="complete" type="poetry">
 <workhead>
-   <title>Tre Strænge</title>
-   <year>1897</year>
-   <notes>
-        <note>Teksten følger førsteudgaven af Valdemar Rørdam: <i>Tre Strænge</i>, Det Nordiske Forlag, Kbh., 1897.</note>
-   </notes>
-   <pictures>
-       <picture type="titlepage" src="1897-p1.jpg">Titelbladet til <i>Tre Strænge</i> (1897). ,,Valdemar Rørdam / Tre Strænge / Digte // København / Det Nordiske Forlag / Bogforlaget: Ernst Bojesen / 1897''.</picture>
-   </pictures>
-   <source facsimile="11540800372E_color" facsimile-pages-num="124" facsimile-pages-offset="16">Valdemar Rørdam: <i>Tre Strænge</i>, Det Nordiske Forlag, Kbh., 1897.</source>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Tre Strænge</title>
+  <year>1897</year>
+  <pictures>
+    <picture type="titlepage" src="1897-p1.jpg">Titelbladet til <i>Tre Strænge</i> (1897). ,,Valdemar Rørdam / Tre Strænge / Digte // København / Det Nordiske Forlag / Bogforlaget: Ernst Bojesen / 1897''.</picture>
+  </pictures>
+  <source facsimile="11540800372E_color" facsimile-pages-num="124" facsimile-pages-offset="16">Valdemar Rørdam: <i>Tre Strænge</i>, Det Nordiske Forlag, Kbh., 1897.</source>
+  <quality>korrektur1,kilde,side</quality>
 </workhead>
 <workbody>
 
-<text id="roerdam2017112701" skip-index="true">
+<text id="roerdam2017112801" skip-index="true">
 <head>
-    <title>[Reckes forord]</title>
-    <source pages="i" facsimile-pages="11"/>
-    <quality>korrektur1,kilde,side</quality>
-    <keywords>reckee</keywords>
+  <title>[Reckes forord]</title>
+  <source pages="i" facsimile-pages="11"/>
+  <quality>korrektur1,kilde,side</quality>
+  <keywords>reckee</keywords>
 </head>
 <body>
 <prose>
@@ -32,13 +28,13 @@ Da man har anmodet mig om at ledsage denne Digtsamling med et Forord, undlader j
 </body>
 </text>
 
-<text id="roerdam2017112702">
+<text id="roerdam2017112802">
 <head>
-    <title>Forspil</title>
-    <firstline>Paa Landevejen hitted jeg en gammel Violin</firstline>
-    <source pages="iii" facsimile-pages="13"/>
-    <quality>korrektur1,kilde,side</quality>
-    <keywords>kuplet</keywords>
+  <title>Forspil</title>
+  <firstline>Paa Landevejen hitted jeg en gammel Violin</firstline>
+  <source pages="iii" facsimile-pages="13"/>
+  <quality>korrektur1,kilde,side</quality>
+  <keywords>kuplet</keywords>
 </head>
 <body>
 <poetry>
@@ -62,16 +58,16 @@ Men Skælmen gi’r, hvad ej han har. Jeg stryger mine tre!
 
 <section>
 <head>
-    <title>Friluft</title>
+  <title>Friluft</title>
 </head>
 <content>
 
-<text id="roerdam2017112703">
+<text id="roerdam2017112803">
 <head>
-    <title>Der gaar en Mand</title>
-    <firstline>Der gaar en Mand og pløjer sin Vaarsæds Vang</firstline>
-    <source pages="1-2"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Der gaar en Mand</title>
+  <firstline>Der gaar en Mand og pløjer sin Vaarsæds Vang</firstline>
+  <source pages="1-2"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -98,12 +94,12 @@ Svært at pløje, hvis aldrig en Lærke sang!
 </body>
 </text>
 
-<text id="roerdam2017112704">
+<text id="roerdam2017112804">
 <head>
-    <title>Aa se -!</title>
-    <firstline>Aa se mod Plankeværkets Tjærebrædder</firstline>
-    <source pages="3-4"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Aa se -!</title>
+  <firstline>Aa se mod Plankeværkets Tjærebrædder</firstline>
+  <source pages="3-4"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -130,12 +126,12 @@ mod Solen løfter jeg de hede Kinder.
 </body>
 </text>
 
-<text id="roerdam2017112705">
+<text id="roerdam2017112805">
 <head>
-    <title>Stemning</title>
-    <firstline>Luften er blød og regnfaldslun</firstline>
-    <source pages="5"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Stemning</title>
+  <firstline>Luften er blød og regnfaldslun</firstline>
+  <source pages="5"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -152,12 +148,12 @@ langt skal i Mørket jeg ensom gaa.
 </body>
 </text>
 
-<text id="roerdam2017112706">
+<text id="roerdam2017112806">
 <head>
-    <title>Min Baad</title>
-    <firstline>Septemberaften paa Vesterhav</firstline>
-    <source pages="6-7"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Min Baad</title>
+  <firstline>Septemberaften paa Vesterhav</firstline>
+  <source pages="6-7"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -209,12 +205,12 @@ over Havdybets Afgrund mig føre!»
 </body>
 </text>
 
-<text id="roerdam2017112707">
+<text id="roerdam2017112807">
 <head>
-    <title>En lystig Blæst -</title>
-    <firstline>En lystig Blæst, en frisk Nordvest</firstline>
-    <source pages="8"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>En lystig Blæst -</title>
+  <firstline>En lystig Blæst, en frisk Nordvest</firstline>
+  <source pages="8"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -239,12 +235,12 @@ og Løvfaldstid i Lande.
 </body>
 </text>
 
-<text id="roerdam2017112708">
+<text id="roerdam2017112808">
 <head>
-    <title>Den fløj forbi -</title>
-    <firstline>Den fløj forbi, Anemonernes Vaar</firstline>
-    <source pages="9"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Den fløj forbi -</title>
+  <firstline>Den fløj forbi, Anemonernes Vaar</firstline>
+  <source pages="9"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -269,12 +265,12 @@ hvor har du gjort af min Glæde?
 </body>
 </text>
 
-<text id="roerdam2017112709">
+<text id="roerdam2017112809">
 <head>
-    <title>Oktoberskov</title>
-    <firstline>Jeg elsker denne Lyd af visne Blade</firstline>
-    <source pages="10-11"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Oktoberskov</title>
+  <firstline>Jeg elsker denne Lyd af visne Blade</firstline>
+  <source pages="10-11"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -316,12 +312,12 @@ og det er ikke dig, som er min Mester!
 </body>
 </text>
 
-<text id="roerdam2017112710">
+<text id="roerdam2017112810">
 <head>
-    <title>Tjørnen er nøgen -</title>
-    <firstline>Tjørnen er nøgen, dens visnede Blade</firstline>
-    <source pages="12-13"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Tjørnen er nøgen -</title>
+  <firstline>Tjørnen er nøgen, dens visnede Blade</firstline>
+  <source pages="12-13"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -368,12 +364,12 @@ For mig skal din Dør dog ej stænges?»
 </body>
 </text>
 
-<text id="roerdam2017112711">
+<text id="roerdam2017112811">
 <head>
-    <title>Havbrus</title>
-    <firstline>Saa gaar jeg her</firstline>
-    <source pages="14-15"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Havbrus</title>
+  <firstline>Saa gaar jeg her</firstline>
+  <source pages="14-15"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -418,12 +414,12 @@ min Sjæl er syg af Lede.
 </body>
 </text>
 
-<text id="roerdam2017112712">
+<text id="roerdam2017112812">
 <head>
-    <title>En vindstille, vinterlig Nat -</title>
-    <firstline>En vindstille, vinterlig Nat</firstline>
-    <source pages="16-17"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>En vindstille, vinterlig Nat -</title>
+  <firstline>En vindstille, vinterlig Nat</firstline>
+  <source pages="16-17"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -466,12 +462,12 @@ som Klokker fra Himmerigs Tind - -
 </body>
 </text>
 
-<text id="roerdam2017112713">
+<text id="roerdam2017112813">
 <head>
-    <title>Nattegang</title>
-    <firstline>Det er den sorte Vinternat</firstline>
-    <source pages="18-19"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Nattegang</title>
+  <firstline>Det er den sorte Vinternat</firstline>
+  <source pages="18-19"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -506,12 +502,12 @@ for Evighedens Skranke.
 </body>
 </text>
 
-<text id="roerdam2017112714">
+<text id="roerdam2017112814">
 <head>
-    <title>Paa Heden</title>
-    <firstline>Skal det ske</firstline>
-    <source pages="20-22"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Paa Heden</title>
+  <firstline>Skal det ske</firstline>
+  <source pages="20-22"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -593,16 +589,16 @@ men hvile jeg vil paa Heden.
 
 <section>
 <head>
-    <title>Mellem Mure</title>
+  <title>Mellem Mure</title>
 </head>
 <content>
 
-<text id="roerdam2017112715">
+<text id="roerdam2017112815">
 <head>
-    <title>Vaarnat</title>
-    <firstline>Jeg vandrer ud ved Nattetide silde</firstline>
-    <source pages="25-27"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Vaarnat</title>
+  <firstline>Jeg vandrer ud ved Nattetide silde</firstline>
+  <source pages="25-27"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -661,12 +657,12 @@ for bort mod andre Verdener at fare!
 </body>
 </text>
 
-<text id="roerdam2017112716">
+<text id="roerdam2017112816">
 <head>
-    <title>I Lindeduft</title>
-    <firstline>En Lindeduft! — Helt op igennem Gaden</firstline>
-    <source pages="28-30"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>I Lindeduft</title>
+  <firstline>En Lindeduft! — Helt op igennem Gaden</firstline>
+  <source pages="28-30"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -723,12 +719,12 @@ Hvis ikke det var for de blomsterduftende Linde — —
 </body>
 </text>
 
-<text id="roerdam2017112717">
+<text id="roerdam2017112817">
 <head>
-    <title>Her ved Stadens Grænserande -</title>
-    <firstline>Her ved Stadens Grænserande</firstline>
-    <source pages="31-32"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Her ved Stadens Grænserande -</title>
+  <firstline>Her ved Stadens Grænserande</firstline>
+  <source pages="31-32"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -760,12 +756,12 @@ Haabet fremad mod Imorgen.
 </body>
 </text>
 
-<text id="roerdam2017112718">
+<text id="roerdam2017112818">
 <head>
-    <title>Septemberaften i Alleen</title>
-    <firstline>Saa klar og fin som Æblevin</firstline>
-    <source pages="33-34"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Septemberaften i Alleen</title>
+  <firstline>Saa klar og fin som Æblevin</firstline>
+  <source pages="33-34"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -799,12 +795,12 @@ og nu er Suk for silde.
 </body>
 </text>
 
-<text id="roerdam2017112719">
+<text id="roerdam2017112819">
 <head>
-    <title>Paa Banegaarden</title>
-    <firstline>Under en køligstjærnet, høstlig Himmel</firstline>
-    <source pages="35-36"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Paa Banegaarden</title>
+  <firstline>Under en køligstjærnet, høstlig Himmel</firstline>
+  <source pages="35-36"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -839,12 +835,12 @@ og da jeg saa mig om, var han forsvunden.
 </body>
 </text>
 
-<text id="roerdam2017112720">
+<text id="roerdam2017112820">
 <head>
-    <title>I Snevejr</title>
-    <firstline>En Nat med klirrende Lygter og hvirvlende Sne</firstline>
-    <source pages="37-39"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>I Snevejr</title>
+  <firstline>En Nat med klirrende Lygter og hvirvlende Sne</firstline>
+  <source pages="37-39"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -911,12 +907,12 @@ Jeg vandred hjemad, men ikke saa let som før.
 </body>
 </text>
 
-<text id="roerdam2017112721">
+<text id="roerdam2017112821">
 <head>
-    <title>Aften i Februar</title>
-    <firstline>Perlegraaning i den snævre Gade</firstline>
-    <source pages="40"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Aften i Februar</title>
+  <firstline>Perlegraaning i den snævre Gade</firstline>
+  <source pages="40"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -944,12 +940,12 @@ som i Nat vil skygge for mit Leje.
 </body>
 </text>
 
-<text id="roerdam2017112722">
+<text id="roerdam2017112822">
 <head>
-    <title>Hjemve</title>
-    <firstline>En køligt lysende Solfaldshimmel</firstline>
-    <source pages="41-42"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Hjemve</title>
+  <firstline>En køligt lysende Solfaldshimmel</firstline>
+  <source pages="41-42"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -991,12 +987,12 @@ dem aldrig Mørket for evig tvinger.
 </body>
 </text>
 
-<text id="roerdam2017112723">
+<text id="roerdam2017112823">
 <head>
-    <title>Villaen</title>
-    <firstline>Her har jeg Aften efter Aften vanket</firstline>
-    <source pages="43"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Villaen</title>
+  <firstline>Her har jeg Aften efter Aften vanket</firstline>
+  <source pages="43"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1019,12 +1015,12 @@ Men i Havens Mørke Hvisken og lønlig Latter.
 </body>
 </text>
 
-<text id="roerdam2017112724">
+<text id="roerdam2017112824">
 <head>
-    <title>Iaften hører jeg -</title>
-    <firstline>Iaften hører jeg første Gang</firstline>
-    <source pages="44-45"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Iaften hører jeg -</title>
+  <firstline>Iaften hører jeg første Gang</firstline>
+  <source pages="44-45"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1056,16 +1052,16 @@ som Violens svulmende Hjærteblad.
 
 <section>
 <head>
-    <title>Tanker og Tegninger</title>
+  <title>Tanker og Tegninger</title>
 </head>
 <content>
 
-<text id="roerdam2017112725">
+<text id="roerdam2017112825">
 <head>
-    <title>Eva Virgo</title>
-    <firstline>Højt i den hvide Birk</firstline>
-    <source pages="49-55"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Eva Virgo</title>
+  <firstline>Højt i den hvide Birk</firstline>
+  <source pages="49-55"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1221,13 +1217,13 @@ der aldrig var sagt.
 </body>
 </text>
 
-<text id="roerdam2017112726">
+<text id="roerdam2017112826">
 <head>
-    <title>Til en Mand</title>
-    <firstline>Jeg ser ved Sommertid kun Træets Blade</firstline>
-    <source pages="56"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Til en Mand</title>
+  <firstline>Jeg ser ved Sommertid kun Træets Blade</firstline>
+  <source pages="56"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1252,12 +1248,12 @@ naar Stormen tvang din Smerte til at tone.
 </body>
 </text>
 
-<text id="roerdam2017112727">
+<text id="roerdam2017112827">
 <head>
-    <title>Hos Bedstemor</title>
-    <firstline>Roser klatrer op ad Muren</firstline>
-    <source pages="57-59"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Hos Bedstemor</title>
+  <firstline>Roser klatrer op ad Muren</firstline>
+  <source pages="57-59"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1313,12 +1309,12 @@ rank af Sind trods Alders Vægt!
 </body>
 </text>
 
-<text id="roerdam2017112728">
+<text id="roerdam2017112828">
 <head>
-    <title>La France</title>
-    <firstline>La France, du Rosernes Rose, svulmende fast</firstline>
-    <source pages="60-61"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>La France</title>
+  <firstline>La France, du Rosernes Rose, svulmende fast</firstline>
+  <source pages="60-61"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1357,12 +1353,12 @@ saa har du levet dit Liv, som Roser skal.
 </body>
 </text>
 
-<text id="roerdam2017112729">
+<text id="roerdam2017112829">
 <head>
-    <title>Stjærner</title>
-    <firstline>Derfor elsker jeg dem de straalende Stjærner</firstline>
-    <source pages="62-63"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Stjærner</title>
+  <firstline>Derfor elsker jeg dem de straalende Stjærner</firstline>
+  <source pages="62-63"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1406,12 +1402,12 @@ til lysende Liv efter Liv, som jeg skal eje.
 </body>
 </text>
 
-<text id="roerdam2017112730">
+<text id="roerdam2017112830">
 <head>
-    <title>Min Ungdoms Drøm</title>
-    <firstline>Ingen véd, hvor du var dejlig</firstline>
-    <source pages="64-66"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Min Ungdoms Drøm</title>
+  <firstline>Ingen véd, hvor du var dejlig</firstline>
+  <source pages="64-66"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1490,13 +1486,13 @@ mens jeg lytter paa.
 </body>
 </text>
 
-<text id="roerdam2017112731">
+<text id="roerdam2017112831">
 <head>
-    <title>Ole Hou med det røde Skæg</title>
-    <subtitle>(Motiv fra Souvestres bretagniske Æventyr.)</subtitle>
-    <firstline>Det er den hellige Paaskenat</firstline>
-    <source pages="67-82"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Ole Hou med det røde Skæg</title>
+  <subtitle>(Motiv fra Souvestres bretagniske Æventyr.)</subtitle>
+  <firstline>Det er den hellige Paaskenat</firstline>
+  <source pages="67-82"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1855,12 +1851,12 @@ af min Ven, den farende Blæst.
 </body>
 </text>
 
-<text id="roerdam2017112732">
+<text id="roerdam2017112832">
 <head>
-    <title>Det hvide Ansigt</title>
-    <firstline>Hvile! Hvile! Jeg vented længe</firstline>
-    <source pages="83-85"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Det hvide Ansigt</title>
+  <firstline>Hvile! Hvile! Jeg vented længe</firstline>
+  <source pages="83-85"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1911,12 +1907,12 @@ træt i Synet og tungt af Sorg.»
 </body>
 </text>
 
-<text id="roerdam2017112733">
+<text id="roerdam2017112833">
 <head>
-    <title>En Svend var stævnet</title>
-    <firstline>En Svend var stævnet for Døden</firstline>
-    <source pages="86"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>En Svend var stævnet</title>
+  <firstline>En Svend var stævnet for Døden</firstline>
+  <source pages="86"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1938,13 +1934,13 @@ kom til og slog ham ned.
 </body>
 </text>
 
-<text id="roerdam2017112734">
+<text id="roerdam2017112834">
 <head>
-    <title>I Skoven</title>
-    <subtitle>(Til Rigmor Rørdam.)</subtitle>
-    <firstline>Vindene blunder. Skoven er hvid</firstline>
-    <source pages="87-100"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>I Skoven</title>
+  <subtitle>(Til Rigmor Rørdam.)</subtitle>
+  <firstline>Vindene blunder. Skoven er hvid</firstline>
+  <source pages="87-100"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2273,12 +2269,12 @@ hvid af Vinter som før.
 </body>
 </text>
 
-<text id="roerdam2017112735">
+<text id="roerdam2017112835">
 <head>
-    <title>Hyazinthen</title>
-    <firstline>O Fryd og Lærkesang! Den frostblaa Vinter</firstline>
-    <source pages="101-102"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Hyazinthen</title>
+  <firstline>O Fryd og Lærkesang! Den frostblaa Vinter</firstline>
+  <source pages="101-102"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>

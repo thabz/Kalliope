@@ -3,12 +3,12 @@ import * as OpenGraph from '../common/opengraph.js';
 import _ from '../common/translations.js';
 import { kalliopeCrumbs } from '../components/breadcrumbs.js';
 import { FootnoteContainer, FootnoteList } from '../components/footnotes.js';
-import * as Links from '../components/links';
+import * as Links from '../components/links.js';
 import { kalliopeMenu } from '../components/menu.js';
 import Page from '../components/page.js';
-import Picture from '../components/picture.js';
 import SidebarPictures from '../components/sidebarpictures.js';
 import SidebarSplit from '../components/sidebarsplit.js';
+import Stack from '../components/stack.js';
 import SubHeading from '../components/subheading.js';
 import TextContent from '../components/textcontent.js';
 import ErrorPage from './error.js';
@@ -22,28 +22,17 @@ const KeywordPage = (props) => {
 
   const requestPath = `/${lang}/keyword/${keyword.id}`;
 
-  const pictures = keyword.pictures.map((p, i) => {
-    return (
-      <Picture
-        key={i}
-        pictures={[p]}
-        contentLang={p.content_lang || 'da'}
-        lang={lang}
-      />
-    );
-  });
-  const renderedPictures = <SidebarPictures>{pictures}</SidebarPictures>;
+  const renderedPictures = (
+    <SidebarPictures pictures={keyword.pictures} lang={lang} />
+  );
 
-  let sidebar = [];
-
-  if (keyword.has_footnotes || keyword.pictures.length > 0) {
-    if (keyword.has_footnotes) {
-      sidebar.push(<FootnoteList key="footnotelist" />);
-    }
-    if (keyword.pictures.length > 0) {
-      sidebar.push(<div key="sidebarpictures">{renderedPictures}</div>);
-    }
-  }
+  const sidebar =
+    keyword.has_footnotes || keyword.pictures.length > 0 ? (
+      <Stack spacing="20px">
+        {keyword.has_footnotes ? <FootnoteList /> : null}
+        {keyword.pictures.length > 0 ? renderedPictures : null}
+      </Stack>
+    ) : null;
 
   const crumbs = [
     ...kalliopeCrumbs(lang),

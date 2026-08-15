@@ -1,21 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="burger" status="incomplete" type="poetry">
 <workhead>
-   <title>Andre digte</title>
-   <quality>korrektur1</quality>
+  <title>Andre digte</title>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
+<text id="burger2026072301">
+<head>
+  <title>Trost</title>
+  <firstline>Wenn dich die Lästerzunge sticht</firstline>
+  <source pages="126">Gottfried August Bürger: <i>Gedichte</i>, Bd. II, Bauer, Wien, 1816.</source>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Wenn dich die Lästerzunge sticht,
+So laß dir dieß zum Troste sagen:
+Die schlecht’sten Früchte sind es nicht,
+Woran die Wespen nagen.
+</poetry>
+</body>
+</text>
+
 <text id="burger2018041201">
 <head>
-   <title>Leonore</title>
-   <firstline>Lenore fuhr um’s Morgenroth</firstline>
-   <notes>
-       <note>Skrevet 1773 og udgivet 1774 i tidsskriftet <i>Göttinger Musenalmanach</i>.</note>
-       <note>Teksten følger Gottfried August Bürger: <i>Gedichte</i>, Dieterichsche Buchhandlung, Göttingen, 1817, pp. 68–83.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Leonore</title>
+  <firstline>Lenore fuhr um’s Morgenroth</firstline>
+  <notes>
+    <note>Skrevet 1773 og udgivet 1774 i tidsskriftet <i>Göttinger Musenalmanach</i>.</note>
+  </notes>
+  <source pages="68-83">Gottfried August Bürger: <i>Gedichte</i>, Dieterichsche Buchhandlung, Göttingen, 1817.</source>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -312,9 +328,9 @@ Gott sey der Seele gnädig!“
 
 <text id="burger2019021201">
 <head>
-   <title>Der Kaiser und der Abt</title>
-   <firstline>Ich will euch erzählen ein Märchen, gar schnurrig</firstline>
-   <quality>korrektur1</quality>
+  <title>Der Kaiser und der Abt</title>
+  <firstline>Ich will euch erzählen ein Märchen, gar schnurrig</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -518,9 +534,9 @@ Umsonst, bis an seinen sanftseligen Tod."
 
 <text id="burger2019021301">
 <head>
-   <title>Sinnesänderung</title>
-   <firstline>Ich war wohl Jungfer Eigensinn</firstline>
-   <quality>korrektur1</quality>
+  <title>Sinnesänderung</title>
+  <firstline>Ich war wohl Jungfer Eigensinn</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -571,9 +587,9 @@ Daß ich so willig gab und nahm.
 
 <text id="burger2019021901">
 <head>
-   <title>Herr Bacchus</title>
-   <firstline>Herr Bacchus ist ein braver Mann</firstline>
-   <quality>korrektur1</quality>
+  <title>Herr Bacchus</title>
+  <firstline>Herr Bacchus ist ein braver Mann</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -642,9 +658,9 @@ Uns in die Arme springen.
 
 <text id="burger2019030301">
 <head>
-   <title>Die Esel und die Nachtigallen</title>
-   <firstline>Es gibt der Esel welche wollen</firstline>
-   <quality>korrektur1</quality>
+  <title>Die Esel und die Nachtigallen</title>
+  <firstline>Es gibt der Esel welche wollen</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -660,9 +676,9 @@ Nicht, daß die Esel singen sollen.
 
 <text id="burger2019080301">
 <head>
-   <title>Lenardo und Blandine</title>
-   <firstline>Blandine sah her, Lenardo sah hin</firstline>
-   <quality>korrektur1</quality>
+  <title>Lenardo und Blandine</title>
+  <firstline>Blandine sah her, Lenardo sah hin</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1081,11 +1097,9 @@ Worein er die Leichen der Liebenden barg.
 
 <text id="burger2019091901">
 <head>
-    <title>Des armen Suschens Traum</title>
-    <firstline>Ich träumte, wie um Mitternacht</firstline>
-    <notes>
-        <note>Teksten følger <i>Bürgers Gedichte in zwei Teilen</i>, Teil 1: Gedichte 1789. Berlin, Leipzig, Wien, Stuttgart, 1914, pp. 138-139.</note>
-    </notes>
+  <title>Des armen Suschens Traum</title>
+  <firstline>Ich träumte, wie um Mitternacht</firstline>
+  <source pages="138-139"><i>Bürgers Gedichte in zwei Teilen</i>, Teil 1: Gedichte 1789. Berlin, Leipzig, Wien, Stuttgart, 1914.</source>
 </head>
 <body>
 <poetry>
@@ -1134,11 +1148,9 @@ Der Ring, der Ring ist hin!
 
 <text id="burger2019091902">
 <head>
-    <title>Der wilde Jäger</title>
-    <firstline>Der Wild- und Rheingraf stieß ins Horn</firstline>
-    <notes>
-        <note>Teksten følger <i>Bürgers Gedichte in zwei Teilen</i>, Teil 1: Gedichte 1789. Berlin, Leipzig, Wien, Stuttgart, 1914, pp. 187-192.<!-- http://www.zeno.org/nid/20004640527 --></note>
-    </notes>
+  <title>Der wilde Jäger</title>
+  <firstline>Der Wild- und Rheingraf stieß ins Horn</firstline>
+  <source href="http://www.zeno.org/nid/20004640527"><i>Bürgers Gedichte in zwei Teilen</i>, Teil 1: Gedichte 1789. Berlin, Leipzig, Wien, Stuttgart, 1914, pp. 187-192.</source>
 </head>
 <body>
 <poetry>
@@ -1399,11 +1411,9 @@ Wohl manches Jägers Mund bezeugen.
 
 <text id="burger2019091903">
 <head>
-    <title>Das Lied vom braven Manne</title>
-    <firstline>Hoch klingt das Lied vom braven Mann</firstline>
-    <notes>
-        <note>Teksten følger <i>Bürgers Gedichte in zwei Teilen</i>, Teil 1: Gedichte 1789. Berlin, Leipzig, Wien, Stuttgart, 1914, pp. 164-168.<!-- http://www.zeno.org/nid/20004640470 --></note>
-    </notes>
+  <title>Das Lied vom braven Manne</title>
+  <firstline>Hoch klingt das Lied vom braven Mann</firstline>
+  <source href="http://www.zeno.org/nid/20004640470"><i>Bürgers Gedichte in zwei Teilen</i>, Teil 1: Gedichte 1789. Berlin, Leipzig, Wien, Stuttgart, 1914, pp. 164-168.</source>
 </head>
 <body>
 <poetry>
@@ -1550,77 +1560,24 @@ Unsterblich zu preisen den braven Mann.
 </body>
 </text>
 
-<text id="burger2019091901">
-<head>
-    <title>Des armen Suschens Traum</title>
-    <firstline>Ich träumte, wie um Mitternacht</firstline>
-    <notes>
-        <note>Teksten følger <i>Bürgers Gedichte in zwei Teilen</i>, Teil 1: Gedichte 1789. Berlin, Leipzig, Wien, Stuttgart, 1914, pp. 138-139.</note>
-    </notes>
-</head>
-<body>
-<poetry>
-Ich träumte, wie um Mitternacht
-Mein Falscher mir erschien.
-Fast schwür' ich, daß ich hell gewacht,
-So hell erblickt' ich ihn.
-
-Er zog den Treuring von der Hand
-Und ach! zerbrach ihn mir.
-Ein Wasserhelles Perlenband
-Warf er mir hin dafür.
-
-D'rauf ging ich wohl ans Gartenbeet,
-Zu schau'n mein Myrtenreis,
-Das ich zum Kränzchen pflanzen thät,
-Und pflegen thät mit Fleiß.
-
-Da riß entzwei mein Perlenband,
-Und eh ich's mich versah,
-Entrollten all' in Erd' und Sand,
-Und keine war mehr da.
-
-Ich sucht' und sucht' in Angst und Schweiß,
-Umsonst, umsonst! Da schien
-Verwandelt mein geliebtes Reis
-In dunkeln Rosmarin.
-
-Erfüllt ist längst das Nachtgesicht,
-Ach! längst erfüllt genau.
-Das Traumbuch frag' ich weiter nicht,
-Und keine weise Frau.
-
-Nun brich, o Herz, der Ring ist hin!
-Die Perlen sind geweint![138]
-Statt Myrt' erwuchs dir Rosmarin!
-Der Traum hat Tod gemeint.
-
-Brich, armes Herz! Zur Totenkron'
-Erwuchs dir Rosmarin.
-Verweint sind deine Perlen schon,
-Der Ring, der Ring ist hin!    
-</poetry>
-</body>
-</text>
-
 <text id="burger2019090801">
 <head>
-    <title>Die Entführung,</title>
-    <subtitle>
-        <line>oder</line>
-        <line>Ritter Karl von Eichenhorst</line>
-        <line>und</line>
-        <line>Fräulein Gertrude von Hochburg.</line>
-        <line>Im Jänner 1778.</line>
-    </subtitle>
-    <toctitle>Die Entführung</toctitle>
-    <linktitle>Die Entführung</linktitle>
-    <indextitle>Die Entführung</indextitle>
-    <firstline>Knap, satt’le mir mein Dänenros</firstline>
-    <!-- https://de.wikisource.org/wiki/Die_Entf%C3%BChrung_(B%C3%BCrger) -->
-    <notes>
-        <note>Gendigtning af Thomas Percys <xref type="translation" poem="percy2019090802"/>.</note>
-    </notes>
+  <title>Die Entführung,</title>
+  <subtitle>
+    <line>oder</line>
+    <line>Ritter Karl von Eichenhorst</line>
+    <line>und</line>
+    <line>Fräulein Gertrude von Hochburg.</line>
+    <line>Im Jänner 1778.</line>
+  </subtitle>
+  <toctitle>Die Entführung</toctitle>
+  <linktitle>Die Entführung</linktitle>
+  <indextitle>Die Entführung</indextitle>
+  <firstline>Knap, satt’le mir mein Dänenros</firstline>
+  <source href="https://de.wikisource.org/wiki/Die_Entf%C3%BChrung_(B%C3%BCrger)">Gottfried August Bürger: <i>Die Entführung</i>.</source>
+  <notes>
+    <note>Gendigtning af Thomas Percys <xref type="translation" poem="percy2019090802"/>.</note>
+  </notes>
 </head>
 <body>
 <poetry>
@@ -1631,7 +1588,7 @@ Ich wil und mus ins Weite!“ –
 So rief der Ritter Karl in Hast,
 Vol Angst und Ahndung, sonder Rast.
 Es schien ihn so zu plagen,
-Als hätt’ er Wen erschlagen.    
+Als hätt’ er Wen erschlagen.
 
     Er sprengte, daß es Funken stob,
 Hinunter von dem Hofe;

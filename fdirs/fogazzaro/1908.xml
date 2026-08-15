@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1908" author="fogazzaro" status="incomplete" type="poetry">
 <workhead>
-    <title>Le Poesie</title>
-    <year>1908</year>
-    <picture type="titlepage" src="1908-p1.jpg">Titelbladet til <i>Le Poesie</i> (1908) lyder ,,Antonio Fogazzaro // Le poesie // Milano // Casa Editrice Baldini, Castoldi &amp; C.º / Galleria Vittirio Emanuele, 17 e 80 // 1908''.</picture>
-    <source facsimile="1908" facsimile-pages-num="458" facsimile-pages-offset="14">Antonio Fogazzaro: <i>Le Poesie</i>, Baldini, Milano, 1908.</source>
+  <title>Le Poesie</title>
+  <year>1908</year>
+  <picture type="titlepage" src="1908-p1.jpg">Titelbladet til <i>Le Poesie</i> (1908) lyder ,,Antonio Fogazzaro // Le poesie // Milano // Casa Editrice Baldini, Castoldi &amp; C.º / Galleria Vittirio Emanuele, 17 e 80 // 1908''.</picture>
+  <source facsimile="1908" facsimile-pages-num="458" facsimile-pages-offset="14">Antonio Fogazzaro: <i>Le Poesie</i>, Baldini, Milano, 1908.</source>
 </workhead>
 <workbody>
 
 <text id="fogazzaro2020042901">
 <head>
-    <title>Silenzio</title>
-    <firstline>A mezza notte il Papa, in Vaticano</firstline>
-    <notes>
-        <note type="credits">Bidrag fra Giada Saturno.</note>
-    </notes>
-    <source pages="198" />
+  <title>Silenzio</title>
+  <firstline>A mezza notte il Papa, in Vaticano</firstline>
+  <!-- Ikke en variant af fogazzaro2020042904: Forskellige digte med genbrugt indledning. -->
+  <notes>
+    <note type="credits">Bidrag fra Giada Saturno.</note>
+  </notes>
+  <source pages="198" />
 </head>
 <body>
 <poetry>
@@ -41,16 +41,14 @@ A fior dell'acque vitrëe, lontano.
 </body>
 </text>
 
-
-
 <text id="fogazzaro2020042902">
 <head>
-    <title>Mi grandeggia nell'ombre della sera</title>
-    <firstline>Mi grandeggia nell'ombre della sera</firstline>
-    <notes>
-        <note type="credits">Bidrag fra Giada Saturno.</note>
-    </notes>
-    <source pages="204" />
+  <title>Mi grandeggia nell'ombre della sera</title>
+  <firstline>Mi grandeggia nell'ombre della sera</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Giada Saturno.</note>
+  </notes>
+  <source pages="204" />
 </head>
 <body>
 <poetry>
@@ -74,12 +72,12 @@ Senza parlar ci guarderemmo allora.
 
 <text id="fogazzaro2020042903">
 <head>
-    <title>La rondine degli scogli</title>
-    <firstline>Fuggon nei rai lucenti</firstline>
-    <notes>
-        <note type="credits">Bidrag fra Giada Saturno.</note>
-    </notes>
-    <source pages="227" />
+  <title>La rondine degli scogli</title>
+  <firstline>Fuggon nei rai lucenti</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Giada Saturno.</note>
+  </notes>
+  <source pages="227" />
 </head>
 <body>
 <poetry>
@@ -107,19 +105,19 @@ S'aman per questo.
 </body>
 </text>
 
-
 <text id="fogazzaro2020042904">
 <head>
-    <title>Papa Leon X</title>
-    <firstline>A mezza notte il Papa, in Vaticano</firstline>
-    <notes>
-        <note type="credits">Bidrag fra Giada Saturno.</note>
-    </notes>
-    <pictures>
-        <picture ref="kunst/rafael-leone-x-1518" />
-        <picture ref="kunst/cranach-luther" />
-    </pictures>
-    <source pages="331" />
+  <title>Papa Leon X</title>
+  <firstline>A mezza notte il Papa, in Vaticano</firstline>
+  <!-- Ikke en variant af fogazzaro2020042901: Forskellige digte med genbrugt indledning. -->
+  <notes>
+    <note type="credits">Bidrag fra Giada Saturno.</note>
+  </notes>
+  <pictures>
+    <picture artwork="kunst/rafael-leone-x-1518" />
+    <picture artwork="kunst/cranach-luther" />
+  </pictures>
+  <source pages="331" />
 </head>
 <body>
 <poetry>
@@ -144,18 +142,17 @@ Il duro frate guarda il Papa in faccia.
 </body>
 </text>
 
-
 <text id="fogazzaro2020042905">
 <head>
-    <title>Scenda la sera</title>
-    <firstline>Scende la sera ed io</firstline>
-    <notes>
-        <note type="credits">Bidrag fra Giada Saturno.</note>
-    </notes>
-    <source pages="431-432" />
+  <title>Scenda la sera</title>
+  <firstline>Scende la sera ed io</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Giada Saturno.</note>
+  </notes>
+  <source pages="431-432" />
 </head>
 <body>
-<quote font-size="small" margin-left="40%">
+<quote font-size="small" margin-left="40%" lang="it">
 <wrap>. . Ove si pugna, un posto Serbato m'è.</wrap>
 <right><sc>Valsolua.</sc></right>
 </quote>
@@ -200,4 +197,3 @@ Versi la vita estrema.
 
 </workbody>
 </kalliopework>
-

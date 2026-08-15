@@ -1,8 +1,8 @@
-const {
+import {
   poetName,
   workLinkName,
   workName,
-} = require('../tools/build-static/formatting.js');
+} from '../tools/build-static/formatting.js';
 
 describe('build-static formatting helpers', () => {
   it('formats poet names for static output', () => {

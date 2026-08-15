@@ -1,36 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1648" author="terkelsen" status="incomplete" type="poetry">
 <workhead>
-   <title>Astree Siunge-Choer</title>
-   <year>1648-54</year>
-   <notes>
-      <note>Dette værk udkom som tre bind i hhv. 1648, 1653 og 1654, og består af oversættelser af bla. <a person="rist">Johan Rist</a> og <a person="voigtlaender">Gabriel Voigtländers</a> tyske hyrdedigtning.</note>
-      <note>De fulde titler er <i>Astree Siunge-Choer. Eller Allehaande artige och lystige ny Verdslige Viser / med deris Melodier. Første Snees</i> samt hhv. <i>... Anden Snees</i> og <i>... Tredie Snees</i>.</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title>Astree Siunge-Choer</title>
+  <year>1648-54</year>
+  <notes>
+    <note>Dette værk udkom som tre bind i hhv. 1648, 1653 og 1654, og består af oversættelser af bla. <a person="rist">Johan Rist</a> og <a person="voigtlaender">Gabriel Voigtländers</a> tyske hyrdedigtning.</note>
+    <note>De fulde titler er <i>Astree Siunge-Choer. Eller Allehaande artige och lystige ny Verdslige Viser / med deris Melodier. Første Snees</i> samt hhv. <i>... Anden Snees</i> og <i>... Tredie Snees</i>.</note>
+  </notes>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
 <section level="1">
 <head>
-   <toctitle>Bind I (1648)</toctitle>
+  <toctitle>Bind I (1648)</toctitle>
 </head>
 <content>
 
 <text id="terkelsen2002111102">
 <head>
-   <title>Denne kand ingentijd faa sin Kiæriste lystig</title>
-   <subtitle><i>Gabr. Vogtl.</i></subtitle>
-   <toctitle><num>I.</num>Denne kand ingentijd faa sin Kiæriste lystig</toctitle>
-   <indextitle>Denne kand ingentijd faa sin Kiæriste lystig</indextitle>
-   <firstline>En Hyrde-Svend hand gick engang</firstline>
-   <notes>
-      <note>Oversættelse af Voigtländer: »Ein junger Schäffer gieng einmahl« som er »Nr. XXXIII« i <i>Allerhand Oden vnnd Lieder</i> (1642).</note>
-      <note>Efter Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1, pp. 32-34.</note>
-   </notes>
-   <keywords>voigtlaender</keywords>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Denne kand ingentijd faa sin Kiæriste lystig</title>
+  <subtitle><i>Gabr. Vogtl.</i></subtitle>
+  <toctitle><num>I.</num>Denne kand ingentijd faa sin Kiæriste lystig</toctitle>
+  <indextitle>Denne kand ingentijd faa sin Kiæriste lystig</indextitle>
+  <firstline>En Hyrde-Svend hand gick engang</firstline>
+  <notes>
+    <note>Oversættelse af Voigtländer: »Ein junger Schäffer gieng einmahl« som er »Nr. XXXIII« i <i>Allerhand Oden vnnd Lieder</i> (1642).</note>
+  </notes>
+  <source pages="32-34">Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1.</source>
+  <keywords>voigtlaender</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -116,19 +115,19 @@ at rætte an it venligt Spill.
 
 <text id="terkelsen2002111001">
 <head>
-   <title>Daphnissis bekymrede Kiærligheds Tancker</title>
-   <subtitle>
-      <line>Der hand icke kunde være hos sin Galathee</line>
-      <line><i>Joh. Rist.</i></line>
-   </subtitle>
-   <toctitle><num>II.</num>Daphnissis bekymrede Kiærligheds Tancker</toctitle>
-   <indextitle>Daphnissis bekymrede Kiærligheds Tancker</indextitle>
-   <firstline>Daphnis gick for nogle Dage</firstline>
-   <notes>
-      <note>Oversættelse af første sang, <xref type="translation" poem="rist2020030801"/>, i Johan Rist: <a work="rist/1642"><i>Des Daphnis aus Cimbrien Galathee</i> (1642)</a>.</note>
-      <note>Efter Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1, pp. 35-36.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Daphnissis bekymrede Kiærligheds Tancker</title>
+  <subtitle>
+    <line>Der hand icke kunde være hos sin Galathee</line>
+    <line><i>Joh. Rist.</i></line>
+  </subtitle>
+  <toctitle><num>II.</num>Daphnissis bekymrede Kiærligheds Tancker</toctitle>
+  <indextitle>Daphnissis bekymrede Kiærligheds Tancker</indextitle>
+  <firstline>Daphnis gick for nogle Dage</firstline>
+  <notes>
+    <note>Oversættelse af første sang, <xref type="translation" poem="rist2020030801"/>, i Johan Rist: <a work="rist/1642"><i>Des Daphnis aus Cimbrien Galathee</i> (1642)</a>.</note>
+  </notes>
+  <source pages="35-36">Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -217,17 +216,17 @@ da tag Budets Ord for fulde /
 
 <text id="terkelsen2002111011">
 <head>
-   <title>Mangen ynsker och begierer meget / maa dog nøyes med det hand faar</title>
-   <subtitle><i>Gabr. Vogtl.</i></subtitle>
-   <toctitle><num>III.</num>Mangen ynsker och begierer meget / maa dog nøyes med det hand faar</toctitle>
-   <indextitle>Mangen ynsker och begierer meget / maa dog nøyes med det hand faar</indextitle>
-   <firstline>Saa skal hun være vist / dend Pige som ieg faar</firstline>
-   <notes>
-      <note>Oversættelse af Voigtländer: »Nr. LXIII« i <i>Allerhand Oden vnnd Lieder</i> (1642).</note>
-      <note>Efter Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1, pp. 37-39.</note>
-   </notes>
-   <keywords>voigtlaender</keywords>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Mangen ynsker och begierer meget / maa dog nøyes med det hand faar</title>
+  <subtitle><i>Gabr. Vogtl.</i></subtitle>
+  <toctitle><num>III.</num>Mangen ynsker och begierer meget / maa dog nøyes med det hand faar</toctitle>
+  <indextitle>Mangen ynsker och begierer meget / maa dog nøyes med det hand faar</indextitle>
+  <firstline>Saa skal hun være vist / dend Pige som ieg faar</firstline>
+  <notes>
+    <note>Oversættelse af Voigtländer: »Nr. LXIII« i <i>Allerhand Oden vnnd Lieder</i> (1642).</note>
+  </notes>
+  <source pages="37-39">Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1.</source>
+  <keywords>voigtlaender</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -338,17 +337,17 @@ at Himmelen / aff Gunst / vil mig til egen giffve
 
 <text id="terkelsen2001030801">
 <head>
-   <title>Det er farligt, når piger er for næsvise</title>
-   <toctitle><num>IV.</num>Det er farligt, når piger er for næsvise</toctitle>
-   <indextitle>Det er farligt, når piger er for næsvise</indextitle>
-   <firstline>Fillis sad udi en skøjte</firstline>
-   <notes>
-      <note>Oversættelse af en hyrdevise af Gabriel Voigtländer: Nr. LXVIII: »Wenn Fillis wehr zu Hause blieben / so wehr sie nit vmb jhr EhrenKräntzlein kommen«.</note>
-      <note>Indtastet af Margit Ammentorp, som skriver: »Jeg ved ikke om dette digt kan bruges, Det er ihvertfald moderniseret i sproget (noget hårdhændet synes jeg, af hvem ved jeg ikke, jeg har en gang fået det udleveret til noget danskundervisning som dublikat, det stammer formodentlig fra en bog til undervisning. Det er et herligt drønsjofelt digt, og det er fra Terkelsens Astree siunge-choer.«</note>
-      <note>strofe 1: skøjte = båd; strofe 5: bløde = gå ud i vandet og blive våd.</note>
-   </notes>
-   <keywords>voigtlaender</keywords>
-   <quality>korrektur1</quality>
+  <title>Det er farligt, når piger er for næsvise</title>
+  <toctitle><num>IV.</num>Det er farligt, når piger er for næsvise</toctitle>
+  <indextitle>Det er farligt, når piger er for næsvise</indextitle>
+  <firstline>Fillis sad udi en skøjte</firstline>
+  <notes>
+    <note>Oversættelse af en hyrdevise af Gabriel Voigtländer: Nr. LXVIII: »Wenn Fillis wehr zu Hause blieben / so wehr sie nit vmb jhr EhrenKräntzlein kommen«.</note>
+    <note>Indtastet af Margit Ammentorp, som skriver: »Jeg ved ikke om dette digt kan bruges, Det er ihvertfald moderniseret i sproget (noget hårdhændet synes jeg, af hvem ved jeg ikke, jeg har en gang fået det udleveret til noget danskundervisning som dublikat, det stammer formodentlig fra en bog til undervisning. Det er et herligt drønsjofelt digt, og det er fra Terkelsens Astree siunge-choer.«</note>
+    <note>strofe 1: skøjte = båd; strofe 5: bløde = gå ud i vandet og blive våd.</note>
+  </notes>
+  <keywords>voigtlaender</keywords>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -493,19 +492,19 @@ efter ungersvendens fløjt.
 
 <text id="terkelsen2002111101">
 <head>
-   <title>Myrtillo Klage-Vise</title>
-   <subtitle>
-      <line>Til sin allerkiæreste Amaryllis / der hun en Tijdland var forreist paa fremmede Steder.</line>
-      <line><i>Joh. R.</i></line>
-   </subtitle>
-   <toctitle><num>VIII.</num>Myrtillo Klage-Vise</toctitle>
-   <indextitle>Myrtillo Klage-Vise</indextitle>
-   <firstline>Ach Amaryllis har du nu</firstline>
-   <notes>
-      <note>Oversættelse af Johan Rists <xref type="translation" poem="rist2017101901"/> som er Nr. 6 i <i>Des Daphnis aus Cimbrien Galathee</i> (1642).</note>
-      <note>Efter Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1, pp. 43-44.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Myrtillo Klage-Vise</title>
+  <subtitle>
+    <line>Til sin allerkiæreste Amaryllis / der hun en Tijdland var forreist paa fremmede Steder.</line>
+    <line><i>Joh. R.</i></line>
+  </subtitle>
+  <toctitle><num>VIII.</num>Myrtillo Klage-Vise</toctitle>
+  <indextitle>Myrtillo Klage-Vise</indextitle>
+  <firstline>Ach Amaryllis har du nu</firstline>
+  <notes>
+    <note>Oversættelse af Johan Rists <xref type="translation" poem="rist2017101901"/> som er Nr. 6 i <i>Des Daphnis aus Cimbrien Galathee</i> (1642).</note>
+  </notes>
+  <source pages="43-44">Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -587,20 +586,18 @@ i Jld och Gnister staar: Saa och naar du mig plager /
 
 <section level="1">
 <head>
-   <toctitle>Bind II (1653)</toctitle>
+  <toctitle>Bind II (1653)</toctitle>
 </head>
 <content>
 
 <text id="terkelsen2002111002">
 <head>
-   <title>Til en gruelig gild Pige</title>
-   <toctitle><num>III.</num>Til en gruelig gild Pige</toctitle>
-   <indextitle>Til en gruelig gild Pige</indextitle>
-   <firstline>Hvor kand dig dog / Pige / Plage so Hoffmod?</firstline>
-   <notes>
-      <note>Efter Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1, pp. 45-46.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til en gruelig gild Pige</title>
+  <toctitle><num>III.</num>Til en gruelig gild Pige</toctitle>
+  <indextitle>Til en gruelig gild Pige</indextitle>
+  <firstline>Hvor kand dig dog / Pige / Plage so Hoffmod?</firstline>
+  <source pages="45-46">Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -659,15 +656,13 @@ Gack dog snart fra mig / Pfy! pfy!
 
 <text id="terkelsen2002111010">
 <head>
-   <title>Til sine Tancker</title>
-   <subtitle>En Vaar-Vise. <i>Aff Anapestiske Vers</i>.</subtitle>
-   <toctitle><num>IV.</num>Til sine Tancker</toctitle>
-   <indextitle>Til sine Tancker</indextitle>
-   <firstline>Op mine faa Tancker, so lystig' aff Hierte</firstline>
-   <notes>
-      <note>Efter Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1, p. 47.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til sine Tancker</title>
+  <subtitle>En Vaar-Vise. <i>Aff Anapestiske Vers</i>.</subtitle>
+  <toctitle><num>IV.</num>Til sine Tancker</toctitle>
+  <indextitle>Til sine Tancker</indextitle>
+  <firstline>Op mine faa Tancker, so lystig' aff Hierte</firstline>
+  <source pages="47">Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -716,19 +711,17 @@ Forjager fra eder all Sorrig oc Smerte:
 
 <text id="terkelsen2002111103">
 <head>
-   <title>Kyssen har oc so Betænckning</title>
-   <subtitle>
-      <line>Samtale imellom forelskte Personer</line>
-      <line></line>
-      <line><i>En Vaar-Vise aff Anapestiske Vers.</i></line>
-   </subtitle>
-   <toctitle><num>IX.</num>Kyssen har oc so Betænckning</toctitle>
-   <indextitle>Kyssen har oc so Betænckning</indextitle>
-   <firstline>Mjn Skiønne: Ej! seer dog / hvor alting er lystig at dandse /</firstline>
-   <notes>
-      <note>Efter Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1, p. 48-50.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Kyssen har oc so Betænckning</title>
+  <subtitle>
+    <line>Samtale imellom forelskte Personer</line>
+    <line></line>
+    <line><i>En Vaar-Vise aff Anapestiske Vers.</i></line>
+  </subtitle>
+  <toctitle><num>IX.</num>Kyssen har oc so Betænckning</toctitle>
+  <indextitle>Kyssen har oc so Betænckning</indextitle>
+  <firstline>Mjn Skiønne: Ej! seer dog / hvor alting er lystig at dandse /</firstline>
+  <source pages="48-50">Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -821,19 +814,19 @@ Betæncker hvor villig jeg eder de Kysser nu borger /
 
 <text id="terkelsen2002111104">
 <head>
-   <title>Hyrde-Klage</title>
-   <subtitle>
-      <line>Offver dend ubarmhiertige Død / der icke vil skille en glatt ung Hyrdinde ved sin gammel Rustefijl.</line>
-      <line><i>I. R.</i></line>
-   </subtitle>
-   <toctitle><num>XIX.</num>Hyrde-Klage</toctitle>
-   <indextitle>Hyrde-Klage</indextitle>
-   <firstline>Allerskiønnest' at jeg dig</firstline>
-   <notes>
-      <note>Oversættelse af Johan Rists <a type="translation" poem="rist2020030802">»Allerschönste dass ich dich«</a> som er nr. 18 hans <i>Des edlen Dafnis aus Cimbrien besungene Florabella</i> (1651).</note>
-      <note>Efter Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1, pp. 51-54.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Hyrde-Klage</title>
+  <subtitle>
+    <line>Offver dend ubarmhiertige Død / der icke vil skille en glatt ung Hyrdinde ved sin gammel Rustefijl.</line>
+    <line><i>I. R.</i></line>
+  </subtitle>
+  <toctitle><num>XIX.</num>Hyrde-Klage</toctitle>
+  <indextitle>Hyrde-Klage</indextitle>
+  <firstline>Allerskiønnest' at jeg dig</firstline>
+  <notes>
+    <note>Oversættelse af Johan Rists <a type="translation" poem="rist2020030802">»Allerschönste dass ich dich«</a> som er nr. 18 hans <i>Des edlen Dafnis aus Cimbrien besungene Florabella</i> (1651).</note>
+  </notes>
+  <source pages="51-54">Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -979,27 +972,27 @@ Udi Sorrig alt vor Tijd /
 
 <section level="1">
 <head>
-   <toctitle>Bind III (1654)</toctitle>
+  <toctitle>Bind III (1654)</toctitle>
 </head>
 <content>
 
 <text id="terkelsen2002111008">
 <head>
-   <title>Til dend skiønne Fyllis</title>
-   <subtitle>
-      <line>Der hendis utroelige Haardhed gandske ingen Gienkiærlighed vilde bevise hannem.</line>
-      <line></line>
-      <line><i>Joh. Rist.</i></line>
-   </subtitle>
-   <toctitle><num>I.</num>Til dend skiønne Fyllis</toctitle>
-   <indextitle>Til dend skiønne Fyllis</indextitle>
-   <firstline>O Allerskiønneste Hyrdind'</firstline>
-   <notes>
-      <note>Oversættelse af Johan Rists »O Allerschönste Schäfferinn«, 19. sang i <a work="rist/1642"><i>Des Daphnis aus Cimbrien Galathee</i> (1642)</a>.</note>
-      <note>Efter Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1, pp. 55-56.</note>
-   </notes>
-   <keywords>rist</keywords>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til dend skiønne Fyllis</title>
+  <subtitle>
+    <line>Der hendis utroelige Haardhed gandske ingen Gienkiærlighed vilde bevise hannem.</line>
+    <line></line>
+    <line><i>Joh. Rist.</i></line>
+  </subtitle>
+  <toctitle><num>I.</num>Til dend skiønne Fyllis</toctitle>
+  <indextitle>Til dend skiønne Fyllis</indextitle>
+  <firstline>O Allerskiønneste Hyrdind'</firstline>
+  <notes>
+    <note>Oversættelse af Johan Rists »O Allerschönste Schäfferinn«, 19. sang i <a work="rist/1642"><i>Des Daphnis aus Cimbrien Galathee</i> (1642)</a>.</note>
+  </notes>
+  <source pages="55-56">Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1.</source>
+  <keywords>rist</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1048,14 +1041,12 @@ Ach! Vær dog noget mild!
 
 <text id="terkelsen2002111009">
 <head>
-   <title>Det er intet raadeligt at træde Cupido for nær</title>
-   <toctitle><num>IV.</num>Det er intet raadeligt at træde Cupido for nær</toctitle>
-   <indextitle>Det er intet raadeligt at træde Cupido for nær</indextitle>
-   <firstline>Der Kupido engang aff Kæde</firstline>
-   <notes>
-      <note>Efter Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1, pp. 57-58.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Det er intet raadeligt at træde Cupido for nær</title>
+  <toctitle><num>IV.</num>Det er intet raadeligt at træde Cupido for nær</toctitle>
+  <indextitle>Det er intet raadeligt at træde Cupido for nær</indextitle>
+  <firstline>Der Kupido engang aff Kæde</firstline>
+  <source pages="57-58">Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1136,18 +1127,16 @@ At du til andre dig oc Vender;
 
 <text id="terkelsen2002111007">
 <head>
-   <title>Jt trofast Hierte gaar for Alting</title>
-   <subtitle>
-      <line><i>A. H. S.</i></line>
-      <line>Denne kand ocsaa siungis som: Gaar i Hoffmænd / Løber alle / etc.</line>
-   </subtitle>
-   <toctitle><num>VI.</num>Jt trofast Hierte gaar for Alting</toctitle>
-   <indextitle>Jt trofast Hierte gaar for Alting</indextitle>
-   <firstline>Jt ræt trofast Hiert' at vide</firstline>
-   <notes>
-      <note>Efter Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1, pp. 59-60.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Jt trofast Hierte gaar for Alting</title>
+  <subtitle>
+    <line><i>A. H. S.</i></line>
+    <line>Denne kand ocsaa siungis som: Gaar i Hoffmænd / Løber alle / etc.</line>
+  </subtitle>
+  <toctitle><num>VI.</num>Jt trofast Hierte gaar for Alting</toctitle>
+  <indextitle>Jt trofast Hierte gaar for Alting</indextitle>
+  <firstline>Jt ræt trofast Hiert' at vide</firstline>
+  <source pages="59-60">Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1200,14 +1189,12 @@ Thi jeg veed it troefast Hierte.
 
 <text id="terkelsen2002111006">
 <head>
-   <title>Mand maa undertiden Verie oc Hæffne sig</title>
-   <toctitle><num>VIII.</num>Mand maa undertiden Verie oc Hæffne sig</toctitle>
-   <indextitle>Mand maa undertiden Verie oc Hæffne sig</indextitle>
-   <firstline>Lvcidor / som maatte gaa</firstline>
-   <notes>
-      <note>Efter Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1, pp. 61-62.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Mand maa undertiden Verie oc Hæffne sig</title>
+  <toctitle><num>VIII.</num>Mand maa undertiden Verie oc Hæffne sig</toctitle>
+  <indextitle>Mand maa undertiden Verie oc Hæffne sig</indextitle>
+  <firstline>Lvcidor / som maatte gaa</firstline>
+  <source pages="61-62">Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1280,15 +1267,13 @@ Jntet bliffver Jeg fra dig.
 
 <text id="terkelsen2002111005">
 <head>
-   <title>Denne holder med de Soerte</title>
-   <subtitle>Kand siungis / som: Gaar J Hofmænd / løber alle osv.</subtitle>
-   <toctitle><num>XI.</num>Denne holder med de Soerte</toctitle>
-   <indextitle>Denne holder med de Soerte</indextitle>
-   <firstline>Nv vi ere fra hver andre</firstline>
-   <notes>
-      <note>Efter Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1, p. 63.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Denne holder med de Soerte</title>
+  <subtitle>Kand siungis / som: Gaar J Hofmænd / løber alle osv.</subtitle>
+  <toctitle><num>XI.</num>Denne holder med de Soerte</toctitle>
+  <indextitle>Denne holder med de Soerte</indextitle>
+  <firstline>Nv vi ere fra hver andre</firstline>
+  <source pages="63">Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1332,14 +1317,12 @@ Er dend største Lyst paa Jorde.
 
 <text id="terkelsen2002111004">
 <head>
-   <title>Dyden gaar for Alting</title>
-   <toctitle><num>XV.</num>Dyden gaar for Alting</toctitle>
-   <indextitle>Dyden gaar for Alting</indextitle>
-   <firstline>Dyden udi Lifve</firstline>
-   <notes>
-      <note>Efter Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1, p. 64.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Dyden gaar for Alting</title>
+  <toctitle><num>XV.</num>Dyden gaar for Alting</toctitle>
+  <indextitle>Dyden gaar for Alting</indextitle>
+  <firstline>Dyden udi Lifve</firstline>
+  <source pages="64">Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1388,18 +1371,16 @@ Hos mig inde-lucke;
 
 <text id="terkelsen2002111105">
 <head>
-   <title>Æren / Redelighed oc en goed Samvittighed gaa for alting</title>
-   <subtitle>
-      <line>Denne har Jeg vel hørt en Goed Venn siunge / som:</line>
-      <line>Ach Amaryllis har du nu / osv.</line>
-   </subtitle>
-   <toctitle><num>XVIII.</num>Æren / Redelighed oc en goed Samvittighed gaa for alting</toctitle>
-   <indextitle>Æren / Redelighed oc en goed Samvittighed gaa for alting</indextitle>
-   <firstline>Mjg bruger Lycken som en Bold</firstline>
-   <notes>
-      <note>Efter Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1, p. 65-68.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Æren / Redelighed oc en goed Samvittighed gaa for alting</title>
+  <subtitle>
+    <line>Denne har Jeg vel hørt en Goed Venn siunge / som:</line>
+    <line>Ach Amaryllis har du nu / osv.</line>
+  </subtitle>
+  <toctitle><num>XVIII.</num>Æren / Redelighed oc en goed Samvittighed gaa for alting</toctitle>
+  <indextitle>Æren / Redelighed oc en goed Samvittighed gaa for alting</indextitle>
+  <firstline>Mjg bruger Lycken som en Bold</firstline>
+  <source pages="65-68">Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1528,15 +1509,13 @@ Vel dend der nøjes med sin Lyck'
 
 <text id="terkelsen2002111003">
 <head>
-   <title>For Kiærlighed hører Kiærlighed</title>
-   <subtitle>Kand siungis / som Jeg har oft' oc længe siden / o. s. v.</subtitle>
-   <toctitle><num>XIX.</num>For Kiærlighed hører Kiærlighed</toctitle>
-   <indextitle>For Kiærlighed hører Kiærlighed</indextitle>
-   <firstline>Mjt Hiert' er nu forlaaren</firstline>
-   <notes>
-      <note>Efter Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1, p. 69.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>For Kiærlighed hører Kiærlighed</title>
+  <subtitle>Kand siungis / som Jeg har oft' oc længe siden / o. s. v.</subtitle>
+  <toctitle><num>XIX.</num>For Kiærlighed hører Kiærlighed</toctitle>
+  <indextitle>For Kiærlighed hører Kiærlighed</indextitle>
+  <firstline>Mjt Hiert' er nu forlaaren</firstline>
+  <source pages="69">Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1579,5 +1558,6 @@ Om Jeg dig faar at volde /
 </text>
 </content>
 </section>
+
 </workbody>
 </kalliopework>

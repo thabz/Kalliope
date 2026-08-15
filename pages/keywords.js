@@ -1,4 +1,3 @@
-import 'isomorphic-fetch';
 import { useContext } from 'react';
 import { createURL } from '../common/client.js';
 import LangContext from '../common/LangContext.js';
@@ -6,9 +5,10 @@ import * as Sorting from '../common/sorting.js';
 import _ from '../common/translations.js';
 import { kalliopeCrumbs } from '../components/breadcrumbs.js';
 import LangSelect from '../components/langselect.js';
-import * as Links from '../components/links';
+import * as Links from '../components/links.js';
 import { kalliopeMenu } from '../components/menu.js';
 import Page from '../components/page.js';
+import PageLead from '../components/pagelead.js';
 import SectionedList from '../components/sectionedlist.js';
 
 const groupsByLetter = (keywords) => {
@@ -64,6 +64,12 @@ const Keywords = (props) => {
       pageTitle={_('Nøgleord', lang)}
       menuItems={kalliopeMenu()}
       selectedMenuItem="keywords">
+      <PageLead>
+        {_(
+          'Her finder du Kalliopes artikler om litterære perioder, genrer, versformer, begreber og andre emner med tilknytning til digtningen.',
+          lang
+        )}
+      </PageLead>
       {renderedGroups}
       <LangSelect path={requestPath} />
     </Page>

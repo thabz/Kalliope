@@ -3,8 +3,8 @@ import { useContext } from 'react';
 import CommonData from '../common/commondata.js';
 import LangContext from '../common/LangContext.js';
 import { Footnote } from './footnotes.js';
-import * as Links from './links';
-var DOMParser = require('xmldom').DOMParser;
+import * as Links from './links.js';
+import { DOMParser } from '@xmldom/xmldom';
 
 // Render xml
 const renderXmlString = (inputString) => {
@@ -144,7 +144,17 @@ const renderXmlString = (inputString) => {
       case 'pb':
         return null;
       case 'i':
-        return <i key={keySeq++}>{handle_nodes(node.childNodes)}</i>;
+        return (
+          <i key={keySeq++} lang={node.getAttribute('lang') || undefined}>
+            {handle_nodes(node.childNodes)}
+          </i>
+        );
+      case 'span':
+        return (
+          <span key={keySeq++} lang={node.getAttribute('lang') || undefined}>
+            {handle_nodes(node.childNodes)}
+          </span>
+        );
       case 'b':
         return <b key={keySeq++}>{handle_nodes(node.childNodes)}</b>;
       case 'u':
@@ -340,7 +350,8 @@ const renderXmlString = (inputString) => {
   };
 
   const frag = new DOMParser().parseFromString(
-    '<content>' + inputString + '</content>'
+    '<content>' + inputString + '</content>',
+    'text/xml'
   );
   return handle_nodes(frag.childNodes);
 };

@@ -1,34 +1,33 @@
-const { safeMkdir, writeJSON, htmlToXml } = require('../libs/helpers.js');
-const { isFileModified } = require('../libs/caching.js');
-const {
+import { safeMkdir, writeJSON, htmlToXml } from '../libs/helpers.js';
+import { isFileModified } from '../libs/caching.js';
+import {
   compareNormalizedDate,
   normalizeTimelineDate,
-} = require('../../common/dates.js');
-const {
+} from '../../common/dates.js';
+import {
   safeGetAttr,
   safeGetInnerXML,
   getChildByTagName,
   loadXMLDoc,
   getElementsByTagName,
-} = require('./xml.js');
-const { get_picture } = require('./parsing.js');
+} from './xml.js';
+import { get_picture } from './parsing.js';
+import { mapLimit } from './concurrency.js';
 
-const normalize_timeline_date = normalizeTimelineDate;
-const compare_normalized_date = compareNormalizedDate;
-
-const sorted_timeline = (timeline) => {
+const sortedTimeline = (timeline) => {
   return timeline.sort((a, b) =>
-    compare_normalized_date(a.normalized_date, b.normalized_date)
+    compareNormalizedDate(a.normalized_date, b.normalized_date)
   );
 };
 
-const load_timeline = async (filename, collected) => {
+const loadTimeline = async (filename, collected) => {
   let doc = loadXMLDoc(filename);
   if (doc == null) {
     return [];
   }
-  return Promise.all(
-    getElementsByTagName(doc, 'entry').map(async (event) => {
+  return mapLimit(
+    getElementsByTagName(doc, 'entry'),
+    async (event) => {
       const type = safeGetAttr(event, 'type');
       const date = safeGetAttr(event, 'date');
       let data = {
@@ -61,11 +60,11 @@ const load_timeline = async (filename, collected) => {
         data.content_html = htmlToXml(safeGetInnerXML(html).trim(), collected);
       }
       return data;
-    })
+    }
   );
 };
 
-const cover_picture = async (poetId, workId, collected) => {
+const coverPicture = async (poetId, workId, collected) => {
   const filename = `fdirs/${poetId}/${workId}.xml`;
   const doc = loadXMLDoc(filename);
   if (doc == null) {
@@ -90,11 +89,11 @@ const cover_picture = async (poetId, workId, collected) => {
   return get_picture(pictureNode, `/images/${poetId}`, collected, onError);
 };
 
-const build_global_timeline = async (collected) => {
-  return load_timeline('data/events.xml', collected);
+const buildGlobalTimeline = async (collected) => {
+  return loadTimeline('content/events.xml', collected);
 };
 
-const build_poet_timeline_json = async (poet, collected) => {
+const buildPoetTimelineJson = async (poet, collected) => {
   const inonToString = (inon, lang) => {
     const translations = {
       'da*in': 'i',
@@ -109,56 +108,48 @@ const build_poet_timeline_json = async (poet, collected) => {
 
   let items = [];
   if (poet.type !== 'collection') {
-    const workItems = await Promise.all(
-      collected.workids
-        .get(poet.id)
-        .filter((workId) => {
-          // Vi vil ikke have underværkerne i tidslinjen
-          const work = collected.works.get(`${poet.id}/${workId}`);
-          return work.parent == null;
-        })
-        .map(async (workId) => {
-          const work = collected.works.get(`${poet.id}/${workId}`);
-          if (work.year != null) {
-            const workName = work.has_content
-              ? `<a work="${poet.id}/${workId}">${work.title}</a>`
-              : work.title;
-            const coverPicture = await cover_picture(
-              poet.id,
-              workId,
-              collected
-            );
-            const contentHtml = [
-              [`${poet.name.lastname}: ${workName}.`, { html: true }],
-            ];
-            const textItem = {
-              date: work.published,
-              normalized_date: normalize_timeline_date(work.published),
-              type: 'text',
-              content_lang: 'da',
-              is_history_item: false,
-              content_html: contentHtml,
-            };
-            if (coverPicture == null) {
-              return [textItem];
-            }
-            return [
-              {
-                date: work.published,
-                normalized_date: normalize_timeline_date(work.published),
-                type: 'image',
-                is_history_item: false,
-                src: coverPicture.src,
-                content_lang: coverPicture.content_lang,
-                lang: coverPicture.lang,
-                content_html: coverPicture.content_html,
-                miniature_content_html: contentHtml,
-              },
-            ];
-          }
-          return [];
-        })
-    );
+    const timelineWorkIds = collected.workids.get(poet.id).filter((workId) => {
+      // Vi vil ikke have underværkerne i tidslinjen
+      const work = collected.works.get(`${poet.id}/${workId}`);
+      return work.parent == null;
+    });
+    const workItems = await mapLimit(timelineWorkIds, async (workId) => {
+      const work = collected.works.get(`${poet.id}/${workId}`);
+      if (work.year != null) {
+        const workName = work.has_content
+          ? `<a work="${poet.id}/${workId}">${work.title}</a>`
+          : work.title;
+        const coverPictureData = await coverPicture(poet.id, workId, collected);
+        const contentHtml = [
+          [`${poet.name.lastname}: ${workName}.`, { html: true }],
+        ];
+        const textItem = {
+          date: work.published,
+          normalized_date: normalizeTimelineDate(work.published),
+          type: 'text',
+          content_lang: 'da',
+          is_history_item: false,
+          content_html: contentHtml,
+        };
+        if (coverPictureData == null) {
+          return [textItem];
+        }
+        return [
+          {
+            date: work.published,
+            normalized_date: normalizeTimelineDate(work.published),
+            type: 'image',
+            is_history_item: false,
+            src: coverPictureData.src,
+            content_lang: coverPictureData.content_lang,
+            lang: coverPictureData.lang,
+            content_html: coverPictureData.content_html,
+            miniature_content_html: contentHtml,
+          },
+        ];
+      }
+      return [];
+    });
     items = items.concat([].concat(...workItems));
     if (poet.period.born.date !== '?') {
       const place = (
@@ -172,7 +163,7 @@ const build_poet_timeline_json = async (poet, collected) => {
       ).replace(/\.*$/, '.'); // Kbh. giver ekstra punktum.
       items.push({
         date: poet.period.born.date,
-        normalized_date: normalize_timeline_date(poet.period.born.date),
+        normalized_date: normalizeTimelineDate(poet.period.born.date),
         type: 'text',
         is_history_item: false,
         content_lang: 'da',
@@ -192,7 +183,7 @@ const build_poet_timeline_json = async (poet, collected) => {
       ).replace(/\.*$/, '.'); // Kbh. giver ekstra punktum.;
       items.push({
         date: poet.period.dead.date,
-        normalized_date: normalize_timeline_date(poet.period.dead.date),
+        normalized_date: normalizeTimelineDate(poet.period.dead.date),
         type: 'text',
         is_history_item: false,
         content_lang: 'da',
@@ -201,35 +192,35 @@ const build_poet_timeline_json = async (poet, collected) => {
         ],
       });
     }
-    let poet_events = (
-      await load_timeline(`fdirs/${poet.id}/events.xml`, collected)
+    let poetEvents = (
+      await loadTimeline(`fdirs/${poet.id}/events.xml`, collected)
     ).map((e) => {
       e.is_history_item = false;
-      e.normalized_date = normalize_timeline_date(e.date);
+      e.normalized_date = normalizeTimelineDate(e.date);
       return e;
     });
-    items = [...items, ...poet_events];
-    items = sorted_timeline(items);
+    items = [...items, ...poetEvents];
+    items = sortedTimeline(items);
   }
   if (items.length >= 2) {
-    const start_date = items[0].normalized_date;
-    let end_date = items[items.length - 1].normalized_date;
+    const startDate = items[0].normalized_date;
+    let endDate = items[items.length - 1].normalized_date;
     if (poet.period.dead.date !== '?') {
-      end_date = normalize_timeline_date(poet.period.dead.date);
+      endDate = normalizeTimelineDate(poet.period.dead.date);
     }
     let globalItems = collected.timeline
       .map((e) => {
-        e.normalized_date = normalize_timeline_date(e.date);
+        e.normalized_date = normalizeTimelineDate(e.date);
         return e;
       })
       .filter((e) => {
         return (
-          compare_normalized_date(e.normalized_date, start_date) === 1 &&
-          compare_normalized_date(e.normalized_date, end_date) === -1
+          compareNormalizedDate(e.normalized_date, startDate) === 1 &&
+          compareNormalizedDate(e.normalized_date, endDate) === -1
         );
       });
     items = [...globalItems, ...items];
-    items = sorted_timeline(items);
+    items = sortedTimeline(items);
   }
   if (items.length == 1) {
     // We only have a single born or dead event. Not an interesting timeline,
@@ -239,10 +230,10 @@ const build_poet_timeline_json = async (poet, collected) => {
   return items;
 };
 
-module.exports = {
-  build_global_timeline,
-  build_poet_timeline_json,
-  normalize_timeline_date,
-  compare_normalized_date,
-  sorted_timeline,
+export {
+  buildGlobalTimeline,
+  buildPoetTimelineJson,
+  normalizeTimelineDate,
+  compareNormalizedDate,
+  sortedTimeline,
 };

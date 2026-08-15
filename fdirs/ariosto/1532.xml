@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1532" author="ariosto" status="complete" type="poetry">
 <workhead>
-    <title>Orlando Furioso</title>
-    <year>1532</year>
-    <notes>
-        <note>Første udgave af <i>Orlando Furioso</i> i 40 sange udkom 1516. Denne, tredje og sidste udgave, i 46 sange, udkom 8. september 1532.</note>
-    </notes>
-    <!-- Teksten skyldes Gutenberg http://www.gutenberg.org/files/3747/3747-0.txt -->
+  <title>Orlando Furioso</title>
+  <year>1532</year>
+  <notes>
+    <note>Første udgave af <i>Orlando Furioso</i> i 40 sange udkom 1516. Denne, tredje og sidste udgave, i 46 sange, udkom 8. september 1532.</note>
+  </notes>
+  <source href="http://www.gutenberg.org/files/3747/3747-0.txt">Ludovico Ariosto: <i>Orlando Furioso</i>.</source>
 </workhead>
 <workbody>
 
 <text id="ariosto2020042501">
 <head>
-    <title><num>1.</num>Canto primo</title>
-    <firstline>Le donne, i cavallier, l'arme, gli amori</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>1.</num>Canto primo</title>
+  <firstline>Le donne, i cavallier, l'arme, gli amori</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -753,9 +752,9 @@ vo' che per l'altro canto si riserbi.
 
 <text id="ariosto2020042502">
 <head>
-    <title><num>2.</num>Canto secondo</title>
-    <firstline>Ingiustissimo Amor, perché sì raro</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>2.</num>Canto secondo</title>
+  <firstline>Ingiustissimo Amor, perché sì raro</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1448,9 +1447,9 @@ come io vi seguirò ne l'altro canto.
 
 <text id="ariosto2020042503">
 <head>
-    <title><num>3.</num>Canto terzo</title>
-    <firstline>Chi mi darà la voce e le parole</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>3.</num>Canto terzo</title>
+  <firstline>Chi mi darà la voce e le parole</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2152,9 +2151,9 @@ ch'avrò fatto al cantar debita pausa.
 
 <text id="ariosto2020042504">
 <head>
-    <title><num>4.</num>Canto quarto</title>
-    <firstline>Quantunque il simular sia le più volte</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>4.</num>Canto quarto</title>
+  <firstline>Quantunque il simular sia le più volte</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2811,9 +2810,9 @@ quel ch'io vo' all'altro canto differire.
 
 <text id="ariosto2020042505">
 <head>
-    <title><num>5.</num>Canto quinto</title>
-    <firstline>Tutti gli altri animai che sono in terra,</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>5.</num>Canto quinto</title>
+  <firstline>Tutti gli altri animai che sono in terra</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3650,9 +3649,9 @@ se grata vi sarà l'istoria udire.
 
 <text id="ariosto2020042506">
 <head>
-    <title><num>6.</num>Canto sesto</title>
-    <firstline>Miser chi mal oprando si confida</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>6.</num>Canto sesto</title>
+  <firstline>Miser chi mal oprando si confida</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4390,9 +4389,9 @@ come Ruggier con lei si pose a risco.
 
 <text id="ariosto2020042507">
 <head>
-    <title><num>7.</num>Canto settimo</title>
-    <firstline>Chi va lontan da la sua patria, vede</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>7.</num>Canto settimo</title>
+  <firstline>Chi va lontan da la sua patria, vede</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5121,9 +5120,9 @@ poi come a Logistilla se ne venne.
 
 <text id="ariosto2020042508">
 <head>
-    <title><num>8.</num>Canto ottavo</title>
-    <firstline>Oh quante sono incantatrici, oh quanti</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>8.</num>Canto ottavo</title>
+  <firstline>Oh quante sono incantatrici, oh quanti</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5951,9 +5950,9 @@ Quel che seguì, ne l'altro canto è scritto.
 
 <text id="ariosto2020042509">
 <head>
-    <title><num>9.</num>Canto nono</title>
-    <firstline>Che non può far d'un cor ch'abbia suggetto</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>9.</num>Canto nono</title>
+  <firstline>Che non può far d'un cor ch'abbia suggetto</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6808,9 +6807,9 @@ s'all'altro canto mi verrete a udire.
 
 <text id="ariosto2020042510">
 <head>
-    <title><num>10.</num>Canto decimo</title>
-    <firstline>Fra quanti amor, fra quante fede al mondo</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>10.</num>Canto decimo</title>
+  <firstline>Fra quanti amor, fra quante fede al mondo</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -7854,9 +7853,9 @@ in altro tempo che più grata sia.
 
 <text id="ariosto2020042511">
 <head>
-    <title><num>11.</num>Canto undicesimo</title>
-    <firstline>Quantunque debil freno a mezzo il corso</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>11.</num>Canto undicesimo</title>
+  <firstline>Quantunque debil freno a mezzo il corso</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -8612,9 +8611,9 @@ quel che seguì, se mi vorrete udire.
 
 <text id="ariosto2020042512">
 <head>
-    <title><num>12.</num>Canto dodicesimo</title>
-    <firstline>Cerere, poi che da la madre Idea</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>12.</num>Canto dodicesimo</title>
+  <firstline>Cerere, poi che da la madre Idea</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -9469,9 +9468,9 @@ Signor, che tempo è ormai di finir questo.
 
 <text id="ariosto2020042513">
 <head>
-    <title><num>13.</num>Canto tredicesimo</title>
-    <firstline>Ben furo aventurosi i cavallieri</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>13.</num>Canto tredicesimo</title>
+  <firstline>Ben furo aventurosi i cavallieri</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -10227,9 +10226,9 @@ ne l'altro canto l'ordine e la mostra.
 
 <text id="ariosto2020042514">
 <head>
-    <title><num>14.</num>Canto quattordicesimo</title>
-    <firstline>Nei molti assalti e nei crudel conflitti,</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>14.</num>Canto quattordicesimo</title>
+  <firstline>Nei molti assalti e nei crudel conflitti</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -11444,9 +11443,9 @@ ch'io son già rauco e vo' posarmi alquanto.
 
 <text id="ariosto2020042515">
 <head>
-    <title><num>15.</num>Canto quindicesimo</title>
-    <firstline>Fu il vincer sempremai laudabil cosa,</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>15.</num>Canto quindicesimo</title>
+  <firstline>Fu il vincer sempremai laudabil cosa</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -12400,9 +12399,9 @@ nell'altro canto, e ciò che ne successe.
 
 <text id="ariosto2020042516">
 <head>
-    <title><num>16.</num>Canto sedicesimo</title>
-    <firstline>Gravi pene in amor si provan molte,</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>16.</num>Canto sedicesimo</title>
+  <firstline>Gravi pene in amor si provan molte</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -13212,9 +13211,9 @@ chi voluntier la bella istoria ascolta.
 
 <text id="ariosto2020042517">
 <head>
-    <title><num>17.</num>Canto diciassettesimo</title>
-    <firstline>Il giusto Dio, quando i peccati nostri</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>17.</num>Canto diciassettesimo</title>
+  <firstline>Il giusto Dio, quando i peccati nostri</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -14438,9 +14437,9 @@ che tempo è omai, Signor, di finir questo.
 
 <text id="ariosto2020042518">
 <head>
-    <title><num>18.</num>Canto diciottesimo</title>
-    <firstline>Magnanimo Signore, ogni vostro atto</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>18.</num>Canto diciottesimo</title>
+  <firstline>Magnanimo Signore, ogni vostro atto</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -16177,9 +16176,9 @@ un'altra volta ad ascoltarlo aspetto.
 
 <text id="ariosto2020042519">
 <head>
-    <title><num>19.</num>Canto diciannovesimo</title>
-    <firstline>Alcun non può saper da chi sia amato,</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>19.</num>Canto diciannovesimo</title>
+  <firstline>Alcun non può saper da chi sia amato</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -17160,9 +17159,9 @@ ne l'altro canto ad ascoltar v'aspetto.
 
 <text id="ariosto2020042520">
 <head>
-    <title><num>20.</num>Canto ventesimo</title>
-    <firstline>Le donne antique hanno mirabil cose</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>20.</num>Canto ventesimo</title>
+  <firstline>Le donne antique hanno mirabil cose</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -18467,9 +18466,9 @@ Quel che seguì, ne l'altro canto è chiaro.
 
 <text id="ariosto2020042521">
 <head>
-    <title><num>21.</num>Canto ventunesimo</title>
-    <firstline>Né fune intorto crederò che stringa</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>21.</num>Canto ventunesimo</title>
+  <firstline>Né fune intorto crederò che stringa</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -19126,9 +19125,9 @@ Di quel ch'avvenne, all'altro canto io parlo.
 
 <text id="ariosto2020042522">
 <head>
-    <title><num>22.</num>Canto ventiduesimo</title>
-    <firstline>Cortesi donne e grate al vostro amante,</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>22.</num>Canto ventiduesimo</title>
+  <firstline>Cortesi donne e grate al vostro amante</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -20019,9 +20018,9 @@ chi de l'istoria mia prende diletto.
 
 <text id="ariosto2020042523">
 <head>
-    <title><num>23.</num>Canto ventitreesimo</title>
-    <firstline>Studisi ognun giovare altrui; che rade</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>23.</num>Canto ventitreesimo</title>
+  <firstline>Studisi ognun giovare altrui; che rade</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -21254,9 +21253,9 @@ che v'abbia per lunghezza a fastidire.
 
 <text id="ariosto2020042524">
 <head>
-    <title><num>24.</num>Canto ventiquattresimo</title>
-    <firstline>Chi mette il piè su l'amorosa pania,</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>24.</num>Canto ventiquattresimo</title>
+  <firstline>Chi mette il piè su l'amorosa pania</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -22300,9 +22299,9 @@ sì ch'io farò, con vostra grazia, punto.
 
 <text id="ariosto2020042525">
 <head>
-    <title><num>25.</num>Canto venticinquesimo</title>
-    <firstline>Oh gran contrasto in giovenil pensiero,</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>25.</num>Canto venticinquesimo</title>
+  <firstline>Oh gran contrasto in giovenil pensiero</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -23184,9 +23183,9 @@ di questo canto, e riposarmi chieggio.
 
 <text id="ariosto2020042526">
 <head>
-    <title><num>26.</num>Canto ventiseiesimo</title>
-    <firstline>Cortesi donne ebbe l'antiqua etade,</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>26.</num>Canto ventiseiesimo</title>
+  <firstline>Cortesi donne ebbe l'antiqua etade</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -24428,9 +24427,9 @@ ambe le coppie fer, di ch'io vi parlo.
 
 <text id="ariosto2020042527">
 <head>
-    <title><num>27.</num>Canto ventisettesimo</title>
-    <firstline>Molti consigli de le donne sono</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>27.</num>Canto ventisettesimo</title>
+  <firstline>Molti consigli de le donne sono</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -25699,9 +25698,9 @@ quel che fe' l'oste a Rodomonte udire.
 
 <text id="ariosto2020042528">
 <head>
-    <title><num>28.</num>Canto ventottesimo</title>
-    <firstline>Donne, e voi che le donne avete in pregio,</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>28.</num>Canto ventottesimo</title>
+  <firstline>Donne, e voi che le donne avete in pregio</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -26628,9 +26627,9 @@ quel che per troppo dire accade al vecchio.
 
 <text id="ariosto2020042529">
 <head>
-    <title><num>29.</num>Canto ventinovesimo</title>
-    <firstline>O degli uomini inferma e instabil mente!</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>29.</num>Canto ventinovesimo</title>
+  <firstline>O degli uomini inferma e instabil mente!</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -27305,9 +27304,9 @@ acciò men sia noioso a chi l'ascolta.
 
 <text id="ariosto2020042530">
 <head>
-    <title><num>30.</num>Canto trentesimo</title>
-    <firstline>Quando vincer da l'impeto e da l'ira</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>30.</num>Canto trentesimo</title>
+  <firstline>Quando vincer da l'impeto e da l'ira</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -28171,9 +28170,9 @@ Carlo aiutò, vi dirà l'altro canto.
 
 <text id="ariosto2020042531">
 <head>
-    <title><num>31.</num>Canto trentunesimo</title>
-    <firstline>Che dolce più, che più giocondo stato</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>31.</num>Canto trentunesimo</title>
+  <firstline>Che dolce più, che più giocondo stato</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -29172,9 +29171,9 @@ vi voglio a un'altra volta differire.
 
 <text id="ariosto2020042532">
 <head>
-    <title><num>32.</num>Canto trentaduesimo</title>
-    <firstline>Soviemmi che cantar io vi dovea</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>32.</num>Canto trentaduesimo</title>
+  <firstline>Soviemmi che cantar io vi dovea</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -30173,9 +30172,9 @@ Quel che seguì dirò ne l'altro canto.
 
 <text id="ariosto2020042533">
 <head>
-    <title><num>33.</num>Canto trentatreesimo</title>
-    <firstline>Timagora, Parrasio, Polignoto,</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>33.</num>Canto trentatreesimo</title>
+  <firstline>Timagora, Parrasio, Polignoto</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -31336,9 +31335,9 @@ finire il canto, e riposar mi voglio.
 
 <text id="ariosto2020042534">
 <head>
-    <title><num>34.</num>Canto trentaquattresimo</title>
-    <firstline>Oh famelice, inique e fiere arpie</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>34.</num>Canto trentaquattresimo</title>
+  <firstline>Oh famelice, inique e fiere arpie</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -32175,9 +32174,9 @@ con quella grata udienza che solete.
 
 <text id="ariosto2020042535">
 <head>
-    <title><num>35.</num>Canto trentacinquesimo</title>
-    <firstline>Chi salirà per me, madonna, in cielo</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>35.</num>Canto trentacinquesimo</title>
+  <firstline>Chi salirà per me, madonna, in cielo</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -32906,9 +32905,9 @@ poi ne seguì, lo serbo all'altro canto.
 
 <text id="ariosto2020042536">
 <head>
-    <title><num>36.</num>Canto trentaseiesimo</title>
-    <firstline>Convien ch'ovunque sia, sempre cortese</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>36.</num>Canto trentaseiesimo</title>
+  <firstline>Convien ch'ovunque sia, sempre cortese</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -33673,9 +33672,9 @@ s'all'altro canto mi verrete a udire.
 
 <text id="ariosto2020042537">
 <head>
-    <title><num>37.</num>Canto trentasettesimo</title>
-    <firstline>Se, come in acquistar qualch'altro dono</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>37.</num>Canto trentasettesimo</title>
+  <firstline>Se, come in acquistar qualch'altro dono</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -34782,9 +34781,9 @@ Ruggiero; ed io il mio canto ho qui finito.
 
 <text id="ariosto2020042538">
 <head>
-    <title><num>38.</num>Canto trentottesimo</title>
-    <firstline>Cortesi donne, che benigna udienza</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>38.</num>Canto trentottesimo</title>
+  <firstline>Cortesi donne, che benigna udienza</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -35603,9 +35602,9 @@ s'udir ne l'altro canto mi vorrete.
 
 <text id="ariosto2020042539">
 <head>
-    <title><num>39.</num>Canto trentanovesimo</title>
-    <firstline>L'affanno di Ruggier ben veramente</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>39.</num>Canto trentanovesimo</title>
+  <firstline>L'affanno di Ruggier ben veramente</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -36388,9 +36387,9 @@ tanto, che v'annoiasse il troppo dire.
 
 <text id="ariosto2020042540">
 <head>
-    <title><num>40.</num>Canto quarantesimo</title>
-    <firstline>Lungo sarebbe, se i diversi casi</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>40.</num>Canto quarantesimo</title>
+  <firstline>Lungo sarebbe, se i diversi casi</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -37137,9 +37136,9 @@ io differisco il canto a un'altra volta.
 
 <text id="ariosto2020042541">
 <head>
-    <title><num>41.</num>Canto quarantunesimo</title>
-    <firstline>L'odor ch'è sparso in ben notrita e bella</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>41.</num>Canto quarantunesimo</title>
+  <firstline>L'odor ch'è sparso in ben notrita e bella</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -38066,9 +38065,9 @@ Ma tempo è ormai che fine al canto io metta.
 
 <text id="ariosto2020042542">
 <head>
-    <title><num>42.</num>Canto quarantaduesimo</title>
-    <firstline>Qual duro freno o qual ferrigno nodo,</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>42.</num>Canto quarantaduesimo</title>
+  <firstline>Qual duro freno o qual ferrigno nodo</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -39013,9 +39012,9 @@ poi dirò quel che 'l paladin rispose.
 
 <text id="ariosto2020042543">
 <head>
-    <title><num>43.</num>Canto quarantatreesimo</title>
-    <firstline>O esecrabile Avarizia, o ingorda</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>43.</num>Canto quarantatreesimo</title>
+  <firstline>O esecrabile Avarizia, o ingorda</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -40815,9 +40814,9 @@ ne l'altro canto, se 'l vorrete udire.
 
 <text id="ariosto2020042544">
 <head>
-    <title><num>44.</num>Canto quarantaquattresimo</title>
-    <firstline>Spesso in poveri alberghi e in picciol tetti,</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>44.</num>Canto quarantaquattresimo</title>
+  <firstline>Spesso in poveri alberghi e in picciol tetti</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -41762,9 +41761,9 @@ io mi riserbo a dir ne l'altro canto.
 
 <text id="ariosto2020042545">
 <head>
-    <title><num>45.</num>Canto quarantacinquesimo</title>
-    <firstline>Quanto più su l'instabil ruota vedi</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>45.</num>Canto quarantacinquesimo</title>
+  <firstline>Quanto più su l'instabil ruota vedi</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -42826,9 +42825,9 @@ mi serbo a farvi udir ne l'altro canto.
 
 <text id="ariosto2020042546">
 <head>
-    <title><num>46.</num>Canto quarantaseiesimo</title>
-    <firstline>Or, se mi mostra la mia carta il vero,</firstline>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>46.</num>Canto quarantaseiesimo</title>
+  <firstline>Or, se mi mostra la mia carta il vero</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>

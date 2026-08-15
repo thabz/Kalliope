@@ -1,24 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1918" author="henriksen" status="complete" type="poetry">
 <workhead>
-    <title>Romantiske Digte</title>
-    <year>1918</year>
-    <notes>
-        <note>Teksten følger Hans Henriksen: <i>Romantiske Digte</i>, E. Jespersens Forlag, Kbh., 1918.</note>
-    </notes>
-    <pictures>
-        <picture src="1918-p1.jpg">Titelbladet til <i>Romantiske Digte</i> (1918) lyder ,,Hans Henriksen / Romantiske Digte / E. Jespersens Forlag · København / Cammermeyers Bogh., Kristiania. Hovedkommissionær / for Norge.''.</picture>
-    </pictures>
-    <source facsimile="130023570883_color" facsimile-pages-num="78" facsimile-pages-offset="6">Hans Henriksen: <i>Romantiske Digte</i>, E. Jespersens Forlag, Kbh., 1918.</source>
+  <title>Romantiske Digte</title>
+  <year>1918</year>
+  <pictures>
+    <picture src="1918-p1.jpg">Titelbladet til <i>Romantiske Digte</i> (1918) lyder ,,Hans Henriksen / Romantiske Digte / E. Jespersens Forlag · København / Cammermeyers Bogh., Kristiania. Hovedkommissionær / for Norge.''.</picture>
+  </pictures>
+  <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122321044105763" facsimile="130023570883_color" facsimile-pages-num="78" facsimile-pages-offset="6">Hans Henriksen: <i>Romantiske Digte</i>, E. Jespersens Forlag, Kbh., 1918.</source>
 </workhead>
 <workbody>
 
 <text id="henriksen2019072101" skip-index="true">
 <head>
-    <title>[Forord]</title>
-    <source pages="5"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>[Forord]</title>
+  <source pages="5"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <prose>
@@ -41,25 +37,25 @@ blive til Glæde for de mange - om de naar ud til dem.
 
 <section>
 <head>
-    <title>England</title>
+  <title>England</title>
 </head>
 <content>
 
 <section level="2">
 <head>
-    <title>John Clare (1793-1864)</title>
+  <title>John Clare (1793-1864)</title>
 </head>
 <content>
 
 <text id="henriksen2019072102">
 <head>
-    <title>Kærlighedslandet</title>
-    <firstline>O, Verden er for haard for Dig, med Møje og Besvær</firstline>
-    <notes>
-        <note>Gendigtning af John Clare: <xref type="translation" poem="clare2019072101"/>.</note>
-    </notes>
-    <source pages="9-10"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Kærlighedslandet</title>
+  <firstline>O, Verden er for haard for Dig, med Møje og Besvær</firstline>
+  <notes>
+    <note>Gendigtning af John Clare: <xref type="translation" poem="clare2019072101"/>.</note>
+  </notes>
+  <source pages="9-10"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -96,22 +92,22 @@ naar Eden blomstred frem paany i Kærlighedens Spor.
 
 <section level="2">
 <head>
-    <title>Alfred Tennyson (1809-1892)</title>
+  <title>Alfred Tennyson (1809-1892)</title>
 </head>
 <content>
 
 <text id="henriksen2019072103">
 <head>
-    <title><num>I.</num>O, Tid, der er ej mer!</title>
-    <toctitle><num>I.</num>O, Tid, der er ej mer!</toctitle>
-    <indextitle>O, Tid, der er ej mer!</indextitle>
-    <linktitle>O, Tid, der er ej mer!</linktitle>
-    <firstline>Forgæves Graad - ej véd jeg, hvad Du vil</firstline>
-    <notes>
-        <note>Gendigtning af Alfred Lord Tennyson: <xref type="translation" poem="tennyson2019072301"/>.</note>
-    </notes>
-    <source pages="11-12"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>I.</num>O, Tid, der er ej mer!</title>
+  <toctitle><num>I.</num>O, Tid, der er ej mer!</toctitle>
+  <indextitle>O, Tid, der er ej mer!</indextitle>
+  <linktitle>O, Tid, der er ej mer!</linktitle>
+  <firstline>Forgæves Graad - ej véd jeg, hvad Du vil</firstline>
+  <notes>
+    <note>Gendigtning af Alfred Lord Tennyson: <xref type="translation" poem="tennyson2019072301"/>.</note>
+  </notes>
+  <source pages="11-12"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -144,16 +140,16 @@ o, Død i Liv - o, Tid, der er ej mer!
 
 <text id="henriksen2019072104">
 <head>
-    <title><num>II.</num>Et Farvel</title>
-    <toctitle><num>II.</num>Et Farvel</toctitle>
-    <indextitle>Et Farvel</indextitle>
-    <linktitle>Et Farvel</linktitle>
-    <firstline>Flyd, køle Bæk, mod Havets Favn</firstline>
-    <notes>
-        <note>Gendigtning af Alfred Lord Tennyson: <xref type="translation" poem="tennyson2019072101"/>.</note>
-    </notes>
-    <source pages="13"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>II.</num>Et Farvel</title>
+  <toctitle><num>II.</num>Et Farvel</toctitle>
+  <indextitle>Et Farvel</indextitle>
+  <linktitle>Et Farvel</linktitle>
+  <firstline>Flyd, køle Bæk, mod Havets Favn</firstline>
+  <notes>
+    <note>Gendigtning af Alfred Lord Tennyson: <xref type="translation" poem="tennyson2019072101"/>.</note>
+  </notes>
+  <source pages="13"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -185,19 +181,19 @@ nu og for alle Dage.
 
 <section level="2">
 <head>
-    <title>Arthur Hugh Clough (1819-1861)</title>
+  <title>Arthur Hugh Clough (1819-1861)</title>
 </head>
 <content>
 
 <text id="henriksen2019072105">
 <head>
-    <title>Alt bliver godt!</title>
-    <firstline>Har Drømmen fyldt med Tvivl dit Sind</firstline>
-    <notes>
-        <note>Gendigtning af Arthur Hugh Clough: <xref type="translation" poem="clough2019072101"/>.</note>
-    </notes>
-    <source pages="14"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Alt bliver godt!</title>
+  <firstline>Har Drømmen fyldt med Tvivl dit Sind</firstline>
+  <notes>
+    <note>Gendigtning af Arthur Hugh Clough: <xref type="translation" poem="clough2019072101"/>.</note>
+  </notes>
+  <source pages="14"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -225,22 +221,22 @@ hvem véd hvorfra, hvorhen, hvornaar?
 
 <section level="2">
 <head>
-    <title>George Eliot (1819-1890)</title>
+  <title>George Eliot (1819-1890)</title>
 </head>
 <content>
 
 <text id="henriksen2019072106">
 <head>
-    <title><num>I.</num>O, blev jeg en af dem -</title>
-    <toctitle><num>I.</num>O, blev jeg en af dem -</toctitle>
-    <indextitle>O, blev jeg en af dem -</indextitle>
-    <linktitle>O, blev jeg en af dem -</linktitle>
-    <firstline>O, blev jeg en af dem, der sammenbinder</firstline>
-    <notes>
-        <note>Gendigtning af George Eliot: <xref type="translation" poem="eliot2019072101"/>.</note>
-    </notes>
-    <source pages="15-16"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>I.</num>O, blev jeg en af dem -</title>
+  <toctitle><num>I.</num>O, blev jeg en af dem -</toctitle>
+  <indextitle>O, blev jeg en af dem -</indextitle>
+  <linktitle>O, blev jeg en af dem -</linktitle>
+  <firstline>O, blev jeg en af dem, der sammenbinder</firstline>
+  <notes>
+    <note>Gendigtning af George Eliot: <xref type="translation" poem="eliot2019072101"/>.</note>
+  </notes>
+  <source pages="15-16"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -295,16 +291,16 @@ hvis Sammensang skal være Verdens Fryd.
 
 <text id="henriksen2019072107">
 <head>
-    <title><num>II.</num>Dag kommer og Dag gaar, Ven!</title>
-    <toctitle><num>II.</num>Dag kommer og Dag gaar, Ven!</toctitle>
-    <indextitle>Dag kommer og Dag gaar, Ven!</indextitle>
-    <linktitle>Dag kommer og Dag gaar, Ven!</linktitle>
-    <firstline>Dag kommer og Dag gaar, Ven</firstline>
-    <notes>
-        <note>Gendigtning af George Eliot: <xref type="translation" poem="eliot2018021001"/>.</note>
-    </notes>
-    <source pages="17"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>II.</num>Dag kommer og Dag gaar, Ven!</title>
+  <toctitle><num>II.</num>Dag kommer og Dag gaar, Ven!</toctitle>
+  <indextitle>Dag kommer og Dag gaar, Ven!</indextitle>
+  <linktitle>Dag kommer og Dag gaar, Ven!</linktitle>
+  <firstline>Dag kommer og Dag gaar, Ven</firstline>
+  <notes>
+    <note>Gendigtning af George Eliot: <xref type="translation" poem="eliot2018021001"/>.</note>
+  </notes>
+  <source pages="17"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -336,19 +332,19 @@ Vil Gud, den Dag Du ej skal se,
 
 <section level="2">
 <head>
-    <title>Alexander Smith (1830-1867)</title>
+  <title>Alexander Smith (1830-1867)</title>
 </head>
 <content>
 
 <text id="henriksen2019072108">
 <head>
-    <title>Barbara</title>
-    <firstline>Under Søndagsklokkens Klang</firstline>
-    <notes>
-        <note>Gendigtning af Alexander Smith: <xref type="translation" poem="smith2019072101"/>.</note>
-    </notes>
-    <source pages="18-21"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Barbara</title>
+  <firstline>Under Søndagsklokkens Klang</firstline>
+  <notes>
+    <note>Gendigtning af Alexander Smith: <xref type="translation" poem="smith2019072101"/>.</note>
+  </notes>
+  <source pages="18-21"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -424,22 +420,22 @@ Barbara!
 
 <section level="2">
 <head>
-    <title>Christina Rossetti (1830-1894)</title>
+  <title>Christina Rossetti (1830-1894)</title>
 </head>
 <content>
 
 <text id="henriksen2019072109">
 <head>
-    <title><num>I.</num>Svunden Sommer</title>
-    <toctitle><num>I.</num>Svunden Sommer</toctitle>
-    <indextitle>Svunden Sommer</indextitle>
-    <linktitle>Svunden Sommer</linktitle>
-    <firstline>Flet ingen Liljer i mit Haar</firstline>
-    <notes>
-        <note unknown-original-by="rossettic" />
-    </notes>
-    <source pages="22"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>I.</num>Svunden Sommer</title>
+  <toctitle><num>I.</num>Svunden Sommer</toctitle>
+  <indextitle>Svunden Sommer</indextitle>
+  <linktitle>Svunden Sommer</linktitle>
+  <firstline>Flet ingen Liljer i mit Haar</firstline>
+  <notes>
+    <note>Gendigtning af Christina Rossettis <xref type="translation" poem="rossettic2026072601"/>.</note>
+  </notes>
+  <source pages="22"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -466,16 +462,16 @@ saa lad kun Taaren tindre
 
 <text id="henriksen2019072110">
 <head>
-    <title><num>II.</num>Den sidste Søvn</title>
-    <toctitle><num>II.</num>Den sidste Søvn</toctitle>
-    <indextitle>Den sidste Søvn</indextitle>
-    <linktitle>Den sidste Søvn</linktitle>
-    <firstline>Den sidste Søvn, ej Tvivl og Tynge mer</firstline>
-    <notes>
-        <note>Gendigtning af Christina Rossetti: <xref type="translation" poem="rossettic2019072101"/>.</note>
-    </notes>
-    <source pages="23"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>II.</num>Den sidste Søvn</title>
+  <toctitle><num>II.</num>Den sidste Søvn</toctitle>
+  <indextitle>Den sidste Søvn</indextitle>
+  <linktitle>Den sidste Søvn</linktitle>
+  <firstline>Den sidste Søvn, ej Tvivl og Tynge mer</firstline>
+  <notes>
+    <note>Gendigtning af Christina Rossetti: <xref type="translation" poem="rossettic2019072101"/>.</note>
+  </notes>
+  <source pages="23"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -504,25 +500,25 @@ Du sover under Roser Tiden lang.
 
 <section>
 <head>
-    <title>Tyskland</title>
+  <title>Tyskland</title>
 </head>
 <content>
 
 <section level="2">
 <head>
-    <title>Justinus Kerner (1786-1862)</title>
+  <title>Justinus Kerner (1786-1862)</title>
 </head>
 <content>
 
 <text id="henriksen2019072111">
 <head>
-    <title>Konge og Sanger</title>
-    <firstline>Der staar to Kister alene</firstline>
-    <notes>
-        <note>Gendigtning af Justinus Kerner: <xref type="translation" poem="kerner2019072101"/>.</note>
-    </notes>
-    <source pages="24"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Konge og Sanger</title>
+  <firstline>Der staar to Kister alene</firstline>
+  <notes>
+    <note>Gendigtning af Justinus Kerner: <xref type="translation" poem="kerner2019072101"/>.</note>
+  </notes>
+  <source pages="24"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -559,19 +555,19 @@ i Tidernes Evighed.
 
 <section level="2">
 <head>
-    <title>Joseph v. Eichendorff (1788-1857)</title>
+  <title>Joseph v. Eichendorff (1788-1857)</title>
 </head>
 <content>
 
 <text id="henriksen2019072112">
 <head>
-    <title>Nat</title>
-    <firstline>Jeg dvæler i Skovens Skygge</firstline>
-    <notes>
-        <note>Gendigtning af Joseph von Eichendorff: <xref type="translation" poem="eichendorff2019072301"/>.</note>
-    </notes>
-    <source pages="26"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Nat</title>
+  <firstline>Jeg dvæler i Skovens Skygge</firstline>
+  <notes>
+    <note>Gendigtning af Joseph von Eichendorff: <xref type="translation" poem="eichendorff2019072301"/>.</note>
+  </notes>
+  <source pages="26"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -598,19 +594,19 @@ og signer det stille Land.
 
 <section level="2">
 <head>
-    <title>Theodor Fontane (1819-1898)</title>
+  <title>Theodor Fontane (1819-1898)</title>
 </head>
 <content>
 
 <text id="henriksen2019072113">
 <head>
-    <title>Archibald Douglas</title>
-    <firstline>Nu har jeg det baaret i otte Aar</firstline>
-    <notes>
-        <note>Gendigtning af Theodor Fontane: <xref type="translation" poem="fontane2019072101"/>.</note>
-    </notes>
-    <source pages="27-30"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Archibald Douglas</title>
+  <firstline>Nu har jeg det baaret i otte Aar</firstline>
+  <notes>
+    <note>Gendigtning af Theodor Fontane: <xref type="translation" poem="fontane2019072101"/>.</note>
+  </notes>
+  <source pages="27-30"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -720,22 +716,22 @@ som engang i vor Ungdoms Aar!''
 
 <section level="2">
 <head>
-    <title>Artur Fitger (1840-1909)</title>
+  <title>Artur Fitger (1840-1909)</title>
 </head>
 <content>
 
 <text id="henriksen2019072114">
 <head>
-    <title><num>I.</num>Skovens Æventyr</title>
-    <toctitle><num>I.</num>Skovens Æventyr</toctitle>
-    <indextitle>Skovens Æventyr</indextitle>
-    <linktitle>Skovens Æventyr</linktitle>
-    <firstline>Han vandred ud i Verden vid</firstline>
-    <notes>
-        <note>Gendigtning af Arthur Fitger: <xref type="translation" poem="fitger2019081301"/>.</note>
-    </notes>
-    <source pages="31-32"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>I.</num>Skovens Æventyr</title>
+  <toctitle><num>I.</num>Skovens Æventyr</toctitle>
+  <indextitle>Skovens Æventyr</indextitle>
+  <linktitle>Skovens Æventyr</linktitle>
+  <firstline>Han vandred ud i Verden vid</firstline>
+  <notes>
+    <note>Gendigtning af Arthur Fitger: <xref type="translation" poem="fitger2019081301"/>.</note>
+  </notes>
+  <source pages="31-32"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -774,16 +770,16 @@ Naturens Hjærte nær.
 
 <text id="henriksen2019072115">
 <head>
-    <title><num>II.</num>Den skønne Lore</title>
-    <toctitle><num>II.</num>Den skønne Lore</toctitle>
-    <indextitle>Den skønne Lore</indextitle>
-    <linktitle>Den skønne Lore</linktitle>
-    <firstline>I Spillemænd! Tag Fedelen og gaa</firstline>
-    <source pages="33-34"/>
-    <quality>korrektur1,kilde,side</quality>
-    <notes>
-        <note>Gendigtning af Arthur Fitger: <xref type="translation" poem="fitger2019081302"/>.</note>
-    </notes>
+  <title><num>II.</num>Den skønne Lore</title>
+  <toctitle><num>II.</num>Den skønne Lore</toctitle>
+  <indextitle>Den skønne Lore</indextitle>
+  <linktitle>Den skønne Lore</linktitle>
+  <firstline>I Spillemænd! Tag Fedelen og gaa</firstline>
+  <source pages="33-34"/>
+  <quality>korrektur1,kilde,side</quality>
+  <notes>
+    <note>Gendigtning af Arthur Fitger: <xref type="translation" poem="fitger2019081302"/>.</note>
+  </notes>
 </head>
 <body>
 <poetry>
@@ -816,16 +812,16 @@ Nu er den skønne Lore lagt paa Straa.
 
 <text id="henriksen2019072116">
 <head>
-    <title><num>III.</num>Højt, saa højt —</title>
-    <toctitle><num>III.</num>Højt, saa højt —</toctitle>
-    <indextitle>Højt, saa højt —</indextitle>
-    <linktitle>Højt, saa højt —</linktitle>
-    <firstline>Højt, saa højt over Heden</firstline>
-    <notes>
-        <note>Gendigtning af Arthur Fitger: <xref type="translation" poem="fitger2019072302"/>.</note>
-    </notes>
-    <source pages="35-36"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>III.</num>Højt, saa højt —</title>
+  <toctitle><num>III.</num>Højt, saa højt —</toctitle>
+  <indextitle>Højt, saa højt —</indextitle>
+  <linktitle>Højt, saa højt —</linktitle>
+  <firstline>Højt, saa højt over Heden</firstline>
+  <notes>
+    <note>Gendigtning af Arthur Fitger: <xref type="translation" poem="fitger2019072302"/>.</note>
+  </notes>
+  <source pages="35-36"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -864,22 +860,22 @@ Porte til Paradis.
 
 <section level="2">
 <head>
-    <title>Detlev v. Liliencron (1844-1909)</title>
+  <title>Detlev v. Liliencron (1844-1909)</title>
 </head>
 <content>
 
 <text id="henriksen2019072117">
 <head>
-    <title><num>I.</num>En Sommer lang</title>
-    <toctitle><num>I.</num>En Sommer lang</toctitle>
-    <indextitle>En Sommer lang</indextitle>
-    <linktitle>En Sommer lang</linktitle>
-    <firstline>Mellem Hasselhæk og Rugmark</firstline>
-    <notes>
-        <note>Gendigtning af Detlev von Liliencron: <xref type="translation" poem="liliencron2019072101"/>.</note>
-    </notes>
-    <source pages="37-38"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>I.</num>En Sommer lang</title>
+  <toctitle><num>I.</num>En Sommer lang</toctitle>
+  <indextitle>En Sommer lang</indextitle>
+  <linktitle>En Sommer lang</linktitle>
+  <firstline>Mellem Hasselhæk og Rugmark</firstline>
+  <notes>
+    <note>Gendigtning af Detlev von Liliencron: <xref type="translation" poem="liliencron2019072101"/>.</note>
+  </notes>
+  <source pages="37-38"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -918,16 +914,16 @@ Sommertiden lang!
 
 <text id="henriksen2019072118">
 <head>
-    <title><num>II.</num>Tidens Gang</title>
-    <toctitle><num>II.</num>Tidens Gang</toctitle>
-    <indextitle>Tidens Gang</indextitle>
-    <linktitle>Tidens Gang</linktitle>
-    <firstline>Der staar det i det unge Gry</firstline>
-    <notes>
-        <note unknown-original-by="liliencron" />
-    </notes>
-    <source pages="39"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>II.</num>Tidens Gang</title>
+  <toctitle><num>II.</num>Tidens Gang</toctitle>
+  <indextitle>Tidens Gang</indextitle>
+  <linktitle>Tidens Gang</linktitle>
+  <firstline>Der staar det i det unge Gry</firstline>
+  <notes>
+    <note>Gendigtning af Detlev von Liliencrons <xref type="translation" poem="liliencron2026072601"/>.</note>
+  </notes>
+  <source pages="39"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -960,19 +956,19 @@ af Evighedens Moderjord.
 
 <section level="2">
 <head>
-    <title>Ricarda Huch (1864-)</title>
+  <title>Ricarda Huch (1864-)</title>
 </head>
 <content>
 
 <text id="henriksen2019072119">
 <head>
-    <title>I Stormen</title>
-    <firstline>O, brusende Sø, o, brølende Storm</firstline>
-    <notes>
-        <note>Gendigtning af Richarda Huch: <xref type="translation" poem="huch2019072101"/>.</note>
-    </notes>
-    <source pages="40"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>I Stormen</title>
+  <firstline>O, brusende Sø, o, brølende Storm</firstline>
+  <notes>
+    <note>Gendigtning af Richarda Huch: <xref type="translation" poem="huch2019072101"/>.</note>
+  </notes>
+  <source pages="40"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1002,28 +998,28 @@ Kun kæmpe, og selv om jeg segner mat,
 
 <section>
 <head>
-    <title>Finland</title>
+  <title>Finland</title>
 </head>
 <content>
 
 <section level="2">
 <head>
-    <title>Zachris Topelius (1818-1898)</title>
+  <title>Zachris Topelius (1818-1898)</title>
 </head>
 <content>
 
 <text id="henriksen2019072120">
 <head>
-    <title><num>I.</num>Paa Roines Strand</title>
-    <toctitle><num>I.</num>Paa Roines Strand</toctitle>
-    <indextitle>Paa Roines Strand</indextitle>
-    <linktitle>Paa Roines Strand</linktitle>
-    <firstline>Hjorden græsser og Klokken klinger</firstline>
-    <notes>
-        <note>Gendigtning af Zacharias Topelius: <xref type="translation" poem="topelius2019081301"/>.</note>
-    </notes>
-    <source pages="41-42"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>I.</num>Paa Roines Strand</title>
+  <toctitle><num>I.</num>Paa Roines Strand</toctitle>
+  <indextitle>Paa Roines Strand</indextitle>
+  <linktitle>Paa Roines Strand</linktitle>
+  <firstline>Hjorden græsser og Klokken klinger</firstline>
+  <notes>
+    <note>Gendigtning af Zacharias Topelius: <xref type="translation" poem="topelius2019081301"/>.</note>
+  </notes>
+  <source pages="41-42"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1059,16 +1055,16 @@ synger ensom paa Roines Strand.
 
 <text id="henriksen2019072121">
 <head>
-    <title><num>II.</num>En lille Dreng</title>
-    <toctitle><num>II.</num>En lille Dreng</toctitle>
-    <indextitle>En lille Dreng</indextitle>
-    <linktitle>En lille Dreng</linktitle>
-    <firstline>Du skulde blevet en ædel Mand</firstline>
-    <notes>
-        <note>Gendigtning af Zacharias Topelius: <xref type="translation" poem="topelius2019081302"/>.</note>
-    </notes>
-    <source pages="43-45"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>II.</num>En lille Dreng</title>
+  <toctitle><num>II.</num>En lille Dreng</toctitle>
+  <indextitle>En lille Dreng</indextitle>
+  <linktitle>En lille Dreng</linktitle>
+  <firstline>Du skulde blevet en ædel Mand</firstline>
+  <notes>
+    <note>Gendigtning af Zacharias Topelius: <xref type="translation" poem="topelius2019081302"/>.</note>
+  </notes>
+  <source pages="43-45"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1134,19 +1130,19 @@ nu kan den os ej bedrage.
 
 <section level="2">
 <head>
-    <title>Karl A. Tavaststjerna (1860-1898)</title>
+  <title>Karl A. Tavaststjerna (1860-1898)</title>
 </head>
 <content>
 
 <text id="henriksen2019072122">
 <head>
-    <title>Nat ved Tennforsen</title>
-    <firstline>Sommernatten kommer uden Stjærner</firstline>
-    <source pages="46"/>
-    <quality>korrektur1,kilde,side</quality>
-    <notes>
-        <note>Gendigtning af Karl August Tavaststjerna: <xref type="translation" poem="tavaststjerna2019081301"/>.</note>
-    </notes>
+  <title>Nat ved Tennforsen</title>
+  <firstline>Sommernatten kommer uden Stjærner</firstline>
+  <source pages="46"/>
+  <quality>korrektur1,kilde,side</quality>
+  <notes>
+    <note>Gendigtning af Karl August Tavaststjerna: <xref type="translation" poem="tavaststjerna2019081301"/>.</note>
+  </notes>
 </head>
 <body>
 <poetry>
@@ -1179,28 +1175,28 @@ Tennforsen spiller Sommernatten lang.
 
 <section>
 <head>
-    <title>Sverrig</title>
+  <title>Sverrig</title>
 </head>
 <content>
 
 <section level="2">
 <head>
-    <title>Carl Snoilsky (1841-1903)</title>
+  <title>Carl Snoilsky (1841-1903)</title>
 </head>
 <content>
 
 <text id="henriksen2019072123">
 <head>
-    <title><num>I.</num>Gamle Kong Gøsta</title>
-    <toctitle><num>I.</num>Gamle Kong Gøsta</toctitle>
-    <indextitle>Gamle Kong Gøsta</indextitle>
-    <linktitle>Gamle Kong Gøsta</linktitle>
-    <firstline>Der læser vi om Kong Gøsta</firstline>
-    <notes>
-        <note>Gendigtning af Carl Snoilsky: <xref type="translation" poem="snoilsky2019072101"/>.</note>
-    </notes>
-    <source pages="47-52"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>I.</num>Gamle Kong Gøsta</title>
+  <toctitle><num>I.</num>Gamle Kong Gøsta</toctitle>
+  <indextitle>Gamle Kong Gøsta</indextitle>
+  <linktitle>Gamle Kong Gøsta</linktitle>
+  <firstline>Der læser vi om Kong Gøsta</firstline>
+  <notes>
+    <note>Gendigtning af Carl Snoilsky: <xref type="translation" poem="snoilsky2019072101"/>.</note>
+  </notes>
+  <source pages="47-52"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1335,16 +1331,16 @@ fra Sangen i Nord.
 
 <text id="henriksen2019072124">
 <head>
-    <title><num>II.</num>Sorte Svaner</title>
-    <toctitle><num>II.</num>Sorte Svaner</toctitle>
-    <indextitle>Sorte Svaner</indextitle>
-    <linktitle>Sorte Svaner</linktitle>
-    <firstline>Sorte Svaner, sorte Svaner</firstline>
-    <notes>
-        <note>Gendigtning af Carl Snoilsky: <xref type="translation" poem="snoilsky2019072102"/>.</note>
-    </notes>
-    <source pages="53"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>II.</num>Sorte Svaner</title>
+  <toctitle><num>II.</num>Sorte Svaner</toctitle>
+  <indextitle>Sorte Svaner</indextitle>
+  <linktitle>Sorte Svaner</linktitle>
+  <firstline>Sorte Svaner, sorte Svaner</firstline>
+  <notes>
+    <note>Gendigtning af Carl Snoilsky: <xref type="translation" poem="snoilsky2019072102"/>.</note>
+  </notes>
+  <source pages="53"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1371,19 +1367,19 @@ ud, I Børn af Nat og Glød!
 
 <section level="2">
 <head>
-    <title>C. D. af Wirsén (1842-1912)</title>
+  <title>C. D. af Wirsén (1842-1912)</title>
 </head>
 <content>
 
 <text id="henriksen2019072125">
 <head>
-    <title>Bogen og Kærligheden</title>
-    <firstline>Naar stum Du sidder ved dit Arbejdsbord</firstline>
-    <notes>
-        <note>Gendigtning af Carl David af Wirsén: <xref type="translation" poem="wirsen2019072101"/>.</note>
-    </notes>
-    <source pages="54-55"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Bogen og Kærligheden</title>
+  <firstline>Naar stum Du sidder ved dit Arbejdsbord</firstline>
+  <notes>
+    <note>Gendigtning af Carl David af Wirsén: <xref type="translation" poem="wirsen2019072101"/>.</note>
+  </notes>
+  <source pages="54-55"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1419,22 +1415,22 @@ et Englehoved vinkende skal staa.
 
 <section level="2">
 <head>
-    <title>Gustaf Fröding (1860-1911)</title>
+  <title>Gustaf Fröding (1860-1911)</title>
 </head>
 <content>
 
 <text id="henriksen2019072126">
 <head>
-    <title><num>I.</num>Der burde været Stjærner</title>
-    <toctitle><num>I.</num>Der burde været Stjærner</toctitle>
-    <indextitle>Der burde været Stjærner</indextitle>
-    <linktitle>Der burde været Stjærner</linktitle>
-    <firstline>Der burde været Stjærner, hvis Straaler sig blande</firstline>
-    <notes>
-        <note>Gendigtning af Gustaf Fröding: <xref type="translation" poem="froeding2006071401"/>.</note>
-    </notes>
-    <source pages="56-58"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>I.</num>Der burde været Stjærner</title>
+  <toctitle><num>I.</num>Der burde været Stjærner</toctitle>
+  <indextitle>Der burde været Stjærner</indextitle>
+  <linktitle>Der burde været Stjærner</linktitle>
+  <firstline>Der burde været Stjærner, hvis Straaler sig blande</firstline>
+  <notes>
+    <note>Gendigtning af Gustaf Fröding: <xref type="translation" poem="froeding2006071401"/>.</note>
+  </notes>
+  <source pages="56-58"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1499,16 +1495,16 @@ Jeg mindes Dig: en Stjærne, en Saga, en Sang.
 
 <text id="henriksen2019072127">
 <head>
-    <title><num>II.</num>Titania</title>
-    <toctitle><num>II.</num>Titania</toctitle>
-    <indextitle>Titania</indextitle>
-    <linktitle>Titania</linktitle>
-    <firstline>En Klang, som af smaa Violiner</firstline>
-    <notes>
-        <note>Gendigtning af Gustaf Fröding: <xref type="translation" poem="froeding2006071402"/>.</note>
-    </notes>
-    <source pages="59"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>II.</num>Titania</title>
+  <toctitle><num>II.</num>Titania</toctitle>
+  <indextitle>Titania</indextitle>
+  <linktitle>Titania</linktitle>
+  <firstline>En Klang, som af smaa Violiner</firstline>
+  <notes>
+    <note>Gendigtning af Gustaf Fröding: <xref type="translation" poem="froeding2006071402"/>.</note>
+  </notes>
+  <source pages="59"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1536,22 +1532,22 @@ i Midnattens Time, i Maanesølvssal?
 
 <section level="2">
 <head>
-    <title>Erik Axel Karlfeldt (1864-)</title>
+  <title>Erik Axel Karlfeldt (1864-)</title>
 </head>
 <content>
 
 <text id="henriksen2019072128">
 <head>
-    <title><num>I.</num>Tidlig Vaar</title>
-    <toctitle><num>I.</num>Tidlig Vaar</toctitle>
-    <indextitle>Tidlig Vaar</indextitle>
-    <linktitle>Tidlig Vaar</linktitle>
-    <firstline>Intet er som Solbrudstider</firstline>
-    <notes>
-        <note>Gendigtning af Erik Axel Karlfeldt: <xref type="translation" poem="karlfeldt2019072101"/>.</note>
-    </notes>
-    <source pages="60-61"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>I.</num>Tidlig Vaar</title>
+  <toctitle><num>I.</num>Tidlig Vaar</toctitle>
+  <indextitle>Tidlig Vaar</indextitle>
+  <linktitle>Tidlig Vaar</linktitle>
+  <firstline>Intet er som Solbrudstider</firstline>
+  <notes>
+    <note>Gendigtning af Erik Axel Karlfeldt: <xref type="translation" poem="karlfeldt2019072101"/>.</note>
+  </notes>
+  <source pages="60-61"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1584,16 +1580,16 @@ og se Birken løves dér.
 
 <text id="henriksen2019072129">
 <head>
-    <title><num>II.</num>Bøljeby-Vals</title>
-    <toctitle><num>II.</num>Bøljeby-Vals</toctitle>
-    <indextitle>Bøljeby-Vals</indextitle>
-    <linktitle>Bøljeby-Vals</linktitle>
-    <firstline>Syng, syng i Dalene</firstline>
-    <notes>
-        <note>Gendigtning af Erik Axel Karlfeldt: <xref type="translation" poem="karlfeldt2019072102"/>.</note>
-    </notes>
-    <source pages="62-63"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>II.</num>Bøljeby-Vals</title>
+  <toctitle><num>II.</num>Bøljeby-Vals</toctitle>
+  <indextitle>Bøljeby-Vals</indextitle>
+  <linktitle>Bøljeby-Vals</linktitle>
+  <firstline>Syng, syng i Dalene</firstline>
+  <notes>
+    <note>Gendigtning af Erik Axel Karlfeldt: <xref type="translation" poem="karlfeldt2019072102"/>.</note>
+  </notes>
+  <source pages="62-63"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1641,19 +1637,19 @@ Stormsang, og Stormdans bare.
 
 <section level="2">
 <head>
-    <title>Verner v. Heidenstam (1859-)</title>
+  <title>Verner v. Heidenstam (1859-)</title>
 </head>
 <content>
 
 <text id="henriksen2019072130">
 <head>
-    <title>Solen</title>
-    <firstline>Du Sol, som aabenbarer</firstline>
-    <notes>
-        <note>Gendigtning af anden strofe af Verner von Heidenstam: <xref type="translation" poem="heidenstam2019072101,25-44"/>.</note>
-    </notes>
-    <source pages="64"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Solen</title>
+  <firstline>Du Sol, som aabenbarer</firstline>
+  <notes>
+    <note>Gendigtning af anden strofe af Verner von Heidenstam: <xref type="translation" poem="heidenstam2019072101,25-44"/>.</note>
+  </notes>
+  <source pages="64"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>

@@ -1,27 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
-<kalliopework id="1886" author="schandorph" status="complete" type="poetry">
+<kalliopework id="1886" author="schandorph" status="complete" type="poetry" ignore-tests="mixed-aa-circumflex,single-circumflex-a-in-text">
 <workhead>
-    <title>Fest- og Søgnedage</title>
-    <year>1886</year>
-    <notes>
-        <note>Teksten følger Sophus Schandorph: <i>Fest- og Søgnedage</i>, C.A. Reitzels Forlag, Kbh., 1886.</note>
-        <note>Bogen bærer dedikationen ,,Til min Ven / Dr. Georg Brandes / med mange Aars Taknemmelighed / i Følge / fra / Forfatteren.''</note>
-        <note>Noter med en foranstillet asterisk er digterens egne.</note>
-    </notes>
-    <pictures>
-        <picture src="1886-p1.jpg">Titelbladet til <i>Fest- og Søgnedage</i> (1886) lyder ,,Fest- og Søgnedage. / Digte og Sange / af / S. Schandorph. // Kjøbenhavn. / C. A. Reitzels Forlag. / 1886.''</picture>
-    </pictures>
-    <source facsimile="115408004955_color" facsimile-pages-num="202" facsimile-pages-offset="20">Sophus Schandorph: <i>Fest- og Søgnedage</i>, C.A. Reitzels Forlag, Kbh., 1886.</source>
+  <title>Fest- og Søgnedage</title>
+  <year>1886</year>
+  <notes>
+    <note>Bogen bærer dedikationen ,,Til min Ven / Dr. Georg Brandes / med mange Aars Taknemmelighed / i Følge / fra / Forfatteren.''</note>
+    <note>Noter med en foranstillet asterisk er digterens egne.</note>
+  </notes>
+  <pictures>
+    <picture src="1886-p1.jpg">Titelbladet til <i>Fest- og Søgnedage</i> (1886) lyder ,,Fest- og Søgnedage. / Digte og Sange / af / S. Schandorph. // Kjøbenhavn. / C. A. Reitzels Forlag. / 1886.''</picture>
+  </pictures>
+  <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122320884405763" facsimile="115408004955_color" facsimile-pages-num="202" facsimile-pages-offset="20">Sophus Schandorph: <i>Fest- og Søgnedage</i>, C.A. Reitzels Forlag, Kbh., 1886.</source>
 </workhead>
 <workbody>
 
 <text id="schandorph2019010201">
 <head>
-    <title>Til George Brandes</title>
-    <firstline>Ene og uden Støtte, mod Herskerne vendt, jeg stod!</firstline>
-    <source pages="i-v" facsimile-pages="15" />
-    <quality>korrektur1,kilde,side</quality>
+  <title>Til George Brandes</title>
+  <firstline>Ene og uden Støtte, mod Herskerne vendt, jeg stod!</firstline>
+  <source pages="i-v" facsimile-pages="15" />
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -70,10 +68,10 @@ lystige Hug, hvis Ekko endnu gjennem Luftrummet klingre.
 
 <text id="schandorph2019010202">
 <head>
-    <title>Hilsen</title>
-    <firstline>Vær hilset Enhver, som til Løsen har: ,,Frem!''</firstline>
-    <source pages="1-2"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Hilsen</title>
+  <firstline>Vær hilset Enhver, som til Løsen har: ,,Frem!''</firstline>
+  <source pages="1-2"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -110,10 +108,10 @@ til en straalende Sejr for dets hellige Sag!
 
 <text id="schandorph2019010203">
 <head>
-    <title>Rokoko</title>
-    <firstline>I den fremmede By</firstline>
-    <source pages="3-8"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Rokoko</title>
+  <firstline>I den fremmede By</firstline>
+  <source pages="3-8"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -233,22 +231,22 @@ venlige Sind.
 
 <section level="3">
 <head>
-    <title>Fra Holbergsfesten 1884</title>
+  <title>Fra Holbergsfesten 1884</title>
 </head>
 <content>
 
 <text id="schandorph2019010204">
 <head>
-    <title><num>I.</num>Prolog paa Folketheatret.</title>
-    <toctitle><num>I.</num>Prolog paa Folketheatret.</toctitle>
-    <indextitle>Prolog paa Folketheatret.</indextitle>
-    <linktitle>Prolog paa Folketheatret.</linktitle>
-    <firstline>Komediens Mestre, de gamle</firstline>
-    <notes>
-        <note>* Der opførtes Stykker af Plautus, <a poet="moliere">Molière</a> og <a poet="holberg">Holberg</a>.</note>
-    </notes>
-    <source pages="9-12"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>I.</num>Prolog paa Folketheatret.</title>
+  <toctitle><num>I.</num>Prolog paa Folketheatret.</toctitle>
+  <indextitle>Prolog paa Folketheatret.</indextitle>
+  <linktitle>Prolog paa Folketheatret.</linktitle>
+  <firstline>Komediens Mestre, de gamle</firstline>
+  <notes>
+    <note>* Der opførtes Stykker af Plautus, <a poet="moliere">Molière</a> og <a poet="holberg">Holberg</a>.</note>
+  </notes>
+  <source pages="9-12"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -332,15 +330,15 @@ dejlige, dumme Filistre.
 </body>
 </text>
 
-<text id="schandorph2019010205">
+<text id="schandorph2019010205" ignore-tests="repeated-adjacent-word">
 <head>
-    <title><num>II.</num>Ved Soranernes Holberg-Fest</title>
-    <toctitle><num>II.</num>Ved Soranernes Holberg-Fest</toctitle>
-    <indextitle>Ved Soranernes Holberg-Fest</indextitle>
-    <linktitle>Ved Soranernes Holberg-Fest</linktitle>
-    <firstline>Som Skoledreng han rendte om i Bergen</firstline>
-    <source pages="13-18"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>II.</num>Ved Soranernes Holberg-Fest</title>
+  <toctitle><num>II.</num>Ved Soranernes Holberg-Fest</toctitle>
+  <indextitle>Ved Soranernes Holberg-Fest</indextitle>
+  <linktitle>Ved Soranernes Holberg-Fest</linktitle>
+  <firstline>Som Skoledreng han rendte om i Bergen</firstline>
+  <source pages="13-18"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -449,12 +447,12 @@ med dig, vor Fa'er, saa nær i Slægt ...
 
 <text id="schandorph2019010206">
 <head>
-    <title>P. A. Heiberg.</title>
-    <subtitle>Prolog til de Vonner og Vanner</subtitle>
-    <firstline>Et ypperligt Hoved, en fuldlødig Mand</firstline>
-    <source pages="19-22"/>
-    <keywords>heibergpa</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>P. A. Heiberg.</title>
+  <subtitle>Prolog til de Vonner og Vanner</subtitle>
+  <firstline>Et ypperligt Hoved, en fuldlødig Mand</firstline>
+  <source pages="19-22"/>
+  <keywords>heibergpa</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -524,11 +522,11 @@ en straalende Renæssance.
 
 <text id="schandorph2019010207">
 <head>
-    <title>Romersk Karneval</title>
-    <subtitle>(1879)</subtitle>
-    <firstline>Solglimt og Skygger i Fangedans spiller</firstline>
-    <source pages="23-24"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Romersk Karneval</title>
+  <subtitle>(1879)</subtitle>
+  <firstline>Solglimt og Skygger i Fangedans spiller</firstline>
+  <source pages="23-24"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -565,10 +563,10 @@ Livsparodien sin Orgie fejrer.
 
 <text id="schandorph2019010208">
 <head>
-    <title>Hvad kigger de efter?</title>
-    <firstline>Se, hvor de femtenaars Piger tre</firstline>
-    <source pages="25-26"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Hvad kigger de efter?</title>
+  <firstline>Se, hvor de femtenaars Piger tre</firstline>
+  <source pages="25-26"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -607,11 +605,11 @@ brænder paa én Gang en Salve af.
 
 <text id="schandorph2019010209">
 <head>
-    <title>Grevinden drømmer</title>
-    <firstline>Hun sidder saa lunt paa Borgen derinde</firstline>
-    <source pages="27-35"/>
-    <keywords>oehlenschlaeger,lamartine</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Grevinden drømmer</title>
+  <firstline>Hun sidder saa lunt paa Borgen derinde</firstline>
+  <source pages="27-35"/>
+  <keywords>oehlenschlaeger,lamartine</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -805,21 +803,21 @@ som synger saa kjønt for en gammel Kvinde''.
 
 <section level="3">
 <head>
-    <title>Spanske Motiver</title>
+  <title>Spanske Motiver</title>
 </head>
 <content>
 
 <text id="schandorph2019010210">
 <head>
-    <title><num>I.</num>En gammel ,,Gitana'' synger</title>
-    <toctitle><num>I.</num>En gammel ,,Gitana'' synger</toctitle>
-    <indextitle>En gammel ,,Gitana'' synger</indextitle>
-    <linktitle>En gammel ,,Gitana'' synger</linktitle>
-    <subtitle>rygende sin Cigaret paa en Balkon:</subtitle>
-    <firstline>Piger, som danser dernede</firstline>
-    <source pages="36"/>
-    <keywords>* Ginata ↄ: Zigøjnerske.</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>I.</num>En gammel ,,Gitana'' synger</title>
+  <toctitle><num>I.</num>En gammel ,,Gitana'' synger</toctitle>
+  <indextitle>En gammel ,,Gitana'' synger</indextitle>
+  <linktitle>En gammel ,,Gitana'' synger</linktitle>
+  <subtitle>rygende sin Cigaret paa en Balkon:</subtitle>
+  <firstline>Piger, som danser dernede</firstline>
+  <source pages="36"/>
+  <keywords>* Ginata ↄ: Zigøjnerske.</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -850,13 +848,13 @@ Mandfolk, de er inderlig dumme -
 
 <text id="schandorph2019010211">
 <head>
-    <title><num>II.</num>Spansk Model</title>
-    <toctitle><num>II.</num>Spansk Model</toctitle>
-    <indextitle>Spansk Model</indextitle>
-    <linktitle>Spansk Model</linktitle>
-    <firstline>Det er skrækkelig kjedsomt at sidde Model og tie.</firstline>
-    <source pages="37-39"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>II.</num>Spansk Model</title>
+  <toctitle><num>II.</num>Spansk Model</toctitle>
+  <indextitle>Spansk Model</indextitle>
+  <linktitle>Spansk Model</linktitle>
+  <firstline>Det er skrækkelig kjedsomt at sidde Model og tie</firstline>
+  <source pages="37-39"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -910,11 +908,11 @@ Det er jo Løgn, hvert eneste Ord!
 
 <text id="schandorph2019010212">
 <head>
-    <title>For de Fattige</title>
-    <subtitle>(Vinteren 1886.)</subtitle>
-    <firstline>Vi har sprængt St. Gothard, sprængt Mont-Cenis!</firstline>
-    <source pages="40-42"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>For de Fattige</title>
+  <subtitle>(Vinteren 1886.)</subtitle>
+  <firstline>Vi har sprængt St. Gothard, sprængt Mont-Cenis!</firstline>
+  <source pages="40-42"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -960,12 +958,12 @@ tilsidst dog den Stenklumps Sprængning mægter.
 </body>
 </text>
 
-<text id="schandorph2019010213">
+<text id="schandorph2019010213" ignore-tests="mixed-aa-circumflex">
 <head>
-    <title>Studium</title>
-    <firstline>Ja, det kniber for Per Larsen. Haardt han maa sit Hoved bryde.</firstline>
-    <source pages="43-45"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Studium</title>
+  <firstline>Ja, det kniber for Per Larsen. Haardt han maa sit Hoved bryde</firstline>
+  <source pages="43-45"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -999,11 +997,11 @@ gamle Peder Larsen Vejmand, er dog ikke rent et Kvæg.''
 
 <text id="schandorph2019010214">
 <head>
-    <title>Gamle Sorø</title>
-    <subtitle>(Sommeren 1884)</subtitle>
-    <firstline>Jeg har kysset Jorden, min Moder</firstline>
-    <source pages="46-57"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Gamle Sorø</title>
+  <subtitle>(Sommeren 1884)</subtitle>
+  <firstline>Jeg har kysset Jorden, min Moder</firstline>
+  <source pages="46-57"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1254,11 +1252,11 @@ er Døtre af min Ungdoms ,,unge Piger''.
 
 <text id="schandorph2019010215" variant="schandorph2018080214">
 <head>
-    <title>J. C. Schiødte</title>
-    <subtitle>1815-1884</subtitle>
-    <firstline>Høj over Bryst og bred over Skulder</firstline>
-    <source pages="58-65"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>J. C. Schiødte</title>
+  <subtitle>1815-1884</subtitle>
+  <firstline>Høj over Bryst og bred over Skulder</firstline>
+  <source pages="58-65"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1401,17 +1399,17 @@ og jeg vil dø som Filosof!'''
     gik Smertens bitreste Veje.
     Det var med Møje, at Døden sled
     Livet ud af dets mægtige Leje.
-    
+
     Kjærlighed lagde sin Haand saa blød
     paa Forskerens kolde Pande;
     Varme den ned til Hjærtet gød:
     ømheds Vælde han dybt maatte sande.
-    
+
     Derfor til sidst fra hans Hjærte klang
     længe urørte Strænge.
     Taarer sig ned ad hans Kinder tvang
     som Kildebrud paa det stenede Vænge.
-    
+
     Smerteløst ramte det sidste Hug,
     medens han blunded i Dvale.
     Kjærlighed fanged hans sidste Suk
@@ -1422,10 +1420,10 @@ og jeg vil dø som Filosof!'''
 
 <text id="schandorph2019010216">
 <head>
-    <title>Anna Schiødte</title>
-    <firstline>Hun kan ,,kjøbe ind'' i Byen</firstline>
-    <source pages="66"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Anna Schiødte</title>
+  <firstline>Hun kan ,,kjøbe ind'' i Byen</firstline>
+  <source pages="66"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1443,12 +1441,12 @@ hidsig, lystig, klog og klar ...
 
 <text id="schandorph2019010217" variant="schandorph2018080212">
 <head>
-    <title>Victor Hugo</title>
-    <subtitle>1802-1885</subtitle>
-    <firstline>Der var aldrig hørt en Tone tilforn</firstline>
-    <source pages="67-75"/>
-    <keywords>hugo</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Victor Hugo</title>
+  <subtitle>1802-1885</subtitle>
+  <firstline>Der var aldrig hørt en Tone tilforn</firstline>
+  <source pages="67-75"/>
+  <keywords>hugo</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1614,11 +1612,11 @@ Profeter som <w>Victor Hugo.</w>
 
 <text id="schandorph2019010218">
 <head>
-    <title>Byg dig et Bedekammer</title>
-    <firstline>Byg dig et Bedekammer</firstline>
-    <source pages="76-82"/>
-    <keywords>shakespeare,holberg,goethe</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Byg dig et Bedekammer</title>
+  <firstline>Byg dig et Bedekammer</firstline>
+  <source pages="76-82"/>
+  <keywords>shakespeare,holberg,goethe</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1754,11 +1752,11 @@ skal du drage til Strid under Sollysets Flammer!
 
 <text id="schandorph2019010219">
 <head>
-    <title>Ved et Rusgilde</title>
-    <firstline>Russer! God Aften saa faa, som I er</firstline>
-    <source pages="83-85"/>
-    <keywords>cicero,virgil</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Ved et Rusgilde</title>
+  <firstline>Russer! God Aften saa faa, som I er</firstline>
+  <source pages="83-85"/>
+  <keywords>cicero,virgil</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1809,14 +1807,14 @@ vingesnelt gjennem Stormvindens Sus
 
 <text id="schandorph2019010220" variant="schandorph2018080218">
 <head>
-    <title>Til Komponisten J. P. E. Hartmann</title>
-    <subtitle>(Til hans 80-aarige Fødselsdag 14. Maj 1885.)</subtitle>
-    <firstline>Havde jeg Sorg i Sinde, gik ud i Mark og Lund</firstline>
-    <source pages="86"/>
-    <dates>
-        <event>1885-05-14</event>
-    </dates>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Til Komponisten J. P. E. Hartmann</title>
+  <subtitle>(Til hans 80-aarige Fødselsdag 14. Maj 1885.)</subtitle>
+  <firstline>Havde jeg Sorg i Sinde, gik ud i Mark og Lund</firstline>
+  <source pages="86"/>
+  <dates>
+    <event>1885-05-14</event>
+  </dates>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1834,14 +1832,14 @@ faldt en af Hartmanns Sange mig næsten altid ind.
 
 <text id="schandorph2019010221" variant="schandorph2018080215">
 <head>
-    <title>Da jeg sidste Gang saâ J. P. Jacobsen</title>
-    <firstline>Den tindred koldt den Dag i April</firstline>
-    <source pages="87-91"/>
-    <dates>
-        <event>1884-04-07</event>
-    </dates>
-    <keywords>jacobsen</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Da jeg sidste Gang saâ J. P. Jacobsen</title>
+  <firstline>Den tindred koldt den Dag i April</firstline>
+  <source pages="87-91"/>
+  <dates>
+    <event>1884-04-07</event>
+  </dates>
+  <keywords>jacobsen</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1915,25 +1913,25 @@ saa snart som vi vandt det Vejr, som længe har manglet os begge''.
 
 <section level="2">
 <head>
-    <title>Fra Italien</title>
+  <title>Fra Italien</title>
 </head>
 <content>
 
 <section level="3">
 <head>
-    <title>I. Efter Giuseppe Giusti</title>
+  <title>I. Efter Giuseppe Giusti</title>
 </head>
 <content>
 
 <text id="schandorph2019010222">
 <head>
-    <title><num>1.</num>Erindringer fra Pisa</title>
-    <toctitle><num>1.</num>Erindringer fra Pisa</toctitle>
-    <indextitle>Erindringer fra Pisa</indextitle>
-    <linktitle>Erindringer fra Pisa</linktitle>
-    <firstline>Stedse en Tanke</firstline>
-    <source pages="92-101"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>1.</num>Erindringer fra Pisa</title>
+  <toctitle><num>1.</num>Erindringer fra Pisa</toctitle>
+  <indextitle>Erindringer fra Pisa</indextitle>
+  <linktitle>Erindringer fra Pisa</linktitle>
+  <firstline>Stedse en Tanke</firstline>
+  <source pages="92-101"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2128,16 +2126,16 @@ med Galskab at prise.
 
 <text id="schandorph2019010223">
 <head>
-    <title><num>2.</num>Dies iræ</title>
-    <toctitle><num>2.</num>Dies iræ</toctitle>
-    <indextitle>Dies iræ</indextitle>
-    <linktitle>Dies iræ</linktitle>
-    <firstline>Dies iræ! I sin Glorie</firstline>
-    <notes>
-        <note>* Skrevet 1835 efter den østerrigske Kejser Frans I's, Italiens Undertrykkers og Tyrans Død.</note>
-    </notes>
-    <source pages="102-105"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>2.</num>Dies iræ</title>
+  <toctitle><num>2.</num>Dies iræ</toctitle>
+  <indextitle>Dies iræ</indextitle>
+  <linktitle>Dies iræ</linktitle>
+  <firstline>Dies iræ! I sin Glorie</firstline>
+  <notes>
+    <note>* Skrevet 1835 efter den østerrigske Kejser Frans I's, Italiens Undertrykkers og Tyrans Død.</note>
+  </notes>
+  <source pages="102-105"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2225,23 +2223,23 @@ skød en anden op paa Thronen:
 
 <section level="3">
 <head>
-    <title>II. Efter Giosué Carducci</title>
+  <title>II. Efter Giosué Carducci</title>
 </head>
 <content>
 
 <text id="schandorph2019010224">
 <head>
-    <title><num>1.</num>I en gothisk Kirke</title>
-    <toctitle><num>1.</num>I en gothisk Kirke</toctitle>
-    <indextitle>I en gothisk Kirke</indextitle>
-    <linktitle>I en gothisk Kirke</linktitle>
-    <firstline>Rankt de rejse sig, spredes i Grene</firstline>
-    <notes>
-        <note>Gendigtning af Carducci: <xref type="translation" poem="carducci2019021201"/>.</note>
-    </notes>
-    <source pages="106-110"/>
-    <keywords>dante</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>1.</num>I en gothisk Kirke</title>
+  <toctitle><num>1.</num>I en gothisk Kirke</toctitle>
+  <indextitle>I en gothisk Kirke</indextitle>
+  <linktitle>I en gothisk Kirke</linktitle>
+  <firstline>Rankt de rejse sig, spredes i Grene</firstline>
+  <notes>
+    <note>Gendigtning af Carducci: <xref type="translation" poem="carducci2019021201"/>.</note>
+  </notes>
+  <source pages="106-110"/>
+  <keywords>dante</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2330,16 +2328,16 @@ lyde Paianens helleniske Klang.
 
 <text id="schandorph2019010225">
 <head>
-    <title><num>2.</num>Paa Jærnbanegaarden</title>
-    <toctitle><num>2.</num>Paa Jærnbanegaarden</toctitle>
-    <indextitle>Paa Jærnbanegaarden</indextitle>
-    <linktitle>Paa Jærnbanegaarden</linktitle>
-    <firstline>Uh - hvor dovent glor dog Lygterne</firstline>
-    <notes>
-        <note>Gendigtning af Carducci: <xref type="translation" poem="carducci2019021202"/>.</note>
-    </notes>
-    <source pages="111-114"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>2.</num>Paa Jærnbanegaarden</title>
+  <toctitle><num>2.</num>Paa Jærnbanegaarden</toctitle>
+  <indextitle>Paa Jærnbanegaarden</indextitle>
+  <linktitle>Paa Jærnbanegaarden</linktitle>
+  <firstline>Uh - hvor dovent glor dog Lygterne</firstline>
+  <notes>
+    <note>Gendigtning af Carducci: <xref type="translation" poem="carducci2019021202"/>.</note>
+  </notes>
+  <source pages="111-114"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2426,16 +2424,16 @@ ind i en evig varende Lede.
 
 <section level="3">
 <head>
-    <title>III. Efter L. M. Corgnetti</title>
+  <title>III. Efter L. M. Corgnetti</title>
 </head>
 <content>
 
 <text id="schandorph2019010226">
 <head>
-    <title>Jeg vilde gjærne dø</title>
-    <firstline>Jeg vilde gjærne dø den Tid af Aaret</firstline>
-    <source pages="115"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Jeg vilde gjærne dø</title>
+  <firstline>Jeg vilde gjærne dø den Tid af Aaret</firstline>
+  <source pages="115"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2465,10 +2463,10 @@ saa bliver jeg saa angst for Dødens Kulde.
 
 <text id="schandorph2019010227">
 <head>
-    <title>Fra Lazarethet</title>
-    <firstline>Hans venstre Arm var knust</firstline>
-    <source pages="116-121"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Fra Lazarethet</title>
+  <firstline>Hans venstre Arm var knust</firstline>
+  <source pages="116-121"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2591,10 +2589,10 @@ alt som han kunde bedst.
 
 <text id="schandorph2019010228">
 <head>
-    <title>Til en gammel Veninde</title>
-    <firstline>En Strøm mig driver tilbage</firstline>
-    <source pages="122-126"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Til en gammel Veninde</title>
+  <firstline>En Strøm mig driver tilbage</firstline>
+  <source pages="122-126"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2694,14 +2692,14 @@ forinden de blev til.
 
 <text id="schandorph2019010229">
 <head>
-    <title>C. Berg</title>
-    <subtitle>Ved hans Sølvbryllup 22. Maj 1886</subtitle>
-    <firstline>Bredt skaaren med mægtigt Vejr i Lungen</firstline>
-    <source pages="127-130"/>
-    <dates>
-        <event>1886-05-22</event>
-    </dates>
-    <quality>korrektur1,kilde,side</quality>
+  <title>C. Berg</title>
+  <subtitle>Ved hans Sølvbryllup 22. Maj 1886</subtitle>
+  <firstline>Bredt skaaren med mægtigt Vejr i Lungen</firstline>
+  <source pages="127-130"/>
+  <dates>
+    <event>1886-05-22</event>
+  </dates>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2785,15 +2783,15 @@ som har fulgt ham paa hver hans Vej.
 
 <text id="schandorph2019010230">
 <head>
-    <title>Theodor Reitzel</title>
-    <subtitle>(Firmaet C. A. Reitzels Skaal paa den ældste Søns Sølvbryllupsdag den 6te Juni 1886.)</subtitle>
-    <firstline>Den første halve Del af vort Aarhundred</firstline>
-    <source pages="131-136"/>
-    <dates>
-        <event>1886-06-06</event>
-    </dates>
-    <keywords>oehlenschlaeger,winther,heibergjl,hauch,hertzh,andersen</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Theodor Reitzel</title>
+  <subtitle>(Firmaet C. A. Reitzels Skaal paa den ældste Søns Sølvbryllupsdag den 6te Juni 1886.)</subtitle>
+  <firstline>Den første halve Del af vort Aarhundred</firstline>
+  <source pages="131-136"/>
+  <dates>
+    <event>1886-06-06</event>
+  </dates>
+  <keywords>oehlenschlaeger,winther,heibergjl,hauch,andersen</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2900,10 +2898,10 @@ Hurra for begge <w>C. A. Reitzels Sønner.</w>
 
 <text id="schandorph2019010231">
 <head>
-    <title>Ungdomssang</title>
-    <firstline>Stilstand er for unge Hjærter Døden</firstline>
-    <source pages="137-139"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Ungdomssang</title>
+  <firstline>Stilstand er for unge Hjærter Døden</firstline>
+  <source pages="137-139"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2948,10 +2946,10 @@ ved de spredte, lyse Kornmods-Glimt!
 
 <text id="schandorph2019010232">
 <head>
-    <title>Drage vi vil paa Erobringstog</title>
-    <firstline>Drage vi vil paa Erobringstog</firstline>
-    <source pages="140-146"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Drage vi vil paa Erobringstog</title>
+  <firstline>Drage vi vil paa Erobringstog</firstline>
+  <source pages="140-146"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3088,10 +3086,10 @@ Alt Sejerens Fane vajer!
 
 <text id="schandorph2019010233">
 <head>
-    <title>Fru Julie Hegel</title>
-    <firstline>Saa fin, saa lille, saa barnebly</firstline>
-    <source pages="147-152"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Fru Julie Hegel</title>
+  <firstline>Saa fin, saa lille, saa barnebly</firstline>
+  <source pages="147-152"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3206,13 +3204,13 @@ hilste vi med Haabets Sange.
 
 <text id="schandorph2019010234" variant="schandorph2018080211">
 <head>
-    <title>,,Gamle Neve''</title>
-    <toctitle>,,Gamle Neve''</toctitle>
-    <indextitle>Gamle Neve</indextitle>
-    <linktitle>Gamle Neve</linktitle>
-    <firstline>Hver gammel Lærer husker den lyserøde Sal</firstline>
-    <source pages="153-155"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>,,Gamle Neve''</title>
+  <toctitle>,,Gamle Neve''</toctitle>
+  <indextitle>Gamle Neve</indextitle>
+  <linktitle>Gamle Neve</linktitle>
+  <firstline>Hver gammel Lærer husker den lyserøde Sal</firstline>
+  <source pages="153-155"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3261,20 +3259,20 @@ det sunde og det sande - den ,,gamle Neves'' Aand.
 
 <text id="schandorph2019010235">
 <head>
-    <title>Kantate</title>
-    <toctitle>Kantate ved Efterslægtselskabets Skoles Fest</toctitle>
-    <indextitle>Kantate ved Efterslægtselskabets Skoles Fest</indextitle>
-    <linktitle>Kantate ved Efterslægtselskabets Skoles Fest</linktitle>
-    <subtitle>
-        <line>ved Efterslægtselskabets Skoles Fest</line>
-        <line>den 4. Marts 1885.</line>
-    </subtitle>
-    <firstline>Vær hilset, du Dag, da vort Skolehus løfted sin Tinde</firstline>
-    <source pages="156-159"/>
-    <dates>
-        <event>1885-03-04</event>
-    </dates>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Kantate</title>
+  <toctitle>Kantate ved Efterslægtselskabets Skoles Fest</toctitle>
+  <indextitle>Kantate ved Efterslægtselskabets Skoles Fest</indextitle>
+  <linktitle>Kantate ved Efterslægtselskabets Skoles Fest</linktitle>
+  <subtitle>
+    <line>ved Efterslægtselskabets Skoles Fest</line>
+    <line>den 4. Marts 1885.</line>
+  </subtitle>
+  <firstline>Vær hilset, du Dag, da vort Skolehus løfted sin Tinde</firstline>
+  <source pages="156-159"/>
+  <dates>
+    <event>1885-03-04</event>
+  </dates>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3336,7 +3334,7 @@ med vidt aaben Dør for hver Luftning fra Sandhedens Kyster!
         vil det gjærne flyve
         hen til Skolens Gaard.
 
----        
+---
 
 Vær hilset, du Dag, da vort Skolehus løfted sin Tinde!
 Gid det maa staa fast, medens Aarene komme og gaa!
@@ -3348,20 +3346,20 @@ med Mindets betagende Glans maa vor Livsvej beskinne!
 
 <section level="3">
 <head>
-    <title>Fra Norge</title>
+  <title>Fra Norge</title>
 </head>
 <content>
 
 <text id="schandorph2019010236">
 <head>
-    <title><num>I.</num>I en ung norsk Dames Stambog</title>
-    <toctitle><num>I.</num>I en ung norsk Dames Stambog</toctitle>
-    <indextitle>I en ung norsk Dames Stambog</indextitle>
-    <linktitle>I en ung norsk Dames Stambog</linktitle>
-    <subtitle>(Tonsaasen 1886)</subtitle>
-    <firstline>Livet har meget Solskin Dem givet</firstline>
-    <source pages="160"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>I.</num>I en ung norsk Dames Stambog</title>
+  <toctitle><num>I.</num>I en ung norsk Dames Stambog</toctitle>
+  <indextitle>I en ung norsk Dames Stambog</indextitle>
+  <linktitle>I en ung norsk Dames Stambog</linktitle>
+  <subtitle>(Tonsaasen 1886)</subtitle>
+  <firstline>Livet har meget Solskin Dem givet</firstline>
+  <source pages="160"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3379,22 +3377,22 @@ for Dem, mens de glider ad Aarenes Vande
 
 <text id="schandorph2019010237">
 <head>
-    <title><num>II.</num>Fru Greta Værn</title>
-    <toctitle><num>II.</num>Fru Greta Værn</toctitle>
-    <indextitle>Fru Greta Værn</indextitle>
-    <linktitle>Fru Greta Værn</linktitle>
-    <subtitle>(Tonsaasen)</subtitle>
-    <firstline>Jeg saâ mellem Fjelde</firstline>
-    <notes>
-        <note>Mottoet stammer fra den svenske folkevise <xref poem="anonymse2019010201"/>.</note>
-    </notes>
-    <source pages="161"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>II.</num>Fru Greta Værn</title>
+  <toctitle><num>II.</num>Fru Greta Værn</toctitle>
+  <indextitle>Fru Greta Værn</indextitle>
+  <linktitle>Fru Greta Værn</linktitle>
+  <subtitle>(Tonsaasen)</subtitle>
+  <firstline>Jeg saâ mellem Fjelde</firstline>
+  <notes>
+    <note>Mottoet stammer fra den svenske folkevise <xref poem="anonymse2019010201"/>.</note>
+  </notes>
+  <source pages="161"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<nonum><small><right>Kristallen den fina</right></small></nonum>
-<nonum><small><right>som solen månd skina.</right></small></nonum>
+<nonum><small><right lang="sv">Kristallen den fina</right></small></nonum>
+<nonum><small><right lang="sv">som solen månd skina.</right></small></nonum>
 
     Jeg saâ mellem Fjelde
     i en yndig Gazelle,
@@ -3419,14 +3417,14 @@ til rene Toner og klare. Tanker,
 
 <text id="schandorph2019010238">
 <head>
-    <title><num>III.</num>General-Postdirektør Roos</title>
-    <toctitle><num>III.</num>General-Postdirektør Roos</toctitle>
-    <indextitle>General-Postdirektør Roos</indextitle>
-    <linktitle>General-Postdirektør Roos</linktitle>
-    <subtitle>(Tonsaasen)</subtitle>
-    <firstline>Jeg har kjendt saa mangen ældre Herre</firstline>
-    <source pages="162-163"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>III.</num>General-Postdirektør Roos</title>
+  <toctitle><num>III.</num>General-Postdirektør Roos</toctitle>
+  <indextitle>General-Postdirektør Roos</indextitle>
+  <linktitle>General-Postdirektør Roos</linktitle>
+  <subtitle>(Tonsaasen)</subtitle>
+  <firstline>Jeg har kjendt saa mangen ældre Herre</firstline>
+  <source pages="162-163"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3465,14 +3463,14 @@ i den lange, smertelige Kamp.
 
 <text id="schandorph2019010239" variant="schandorph2018080213">
 <head>
-    <title><num>IV.</num>Bjørnstjerne Bjørnson</title>
-    <toctitle><num>IV.</num>Bjørnstjerne Bjørnson</toctitle>
-    <indextitle>Bjørnstjerne Bjørnson</indextitle>
-    <linktitle>Bjørnstjerne Bjørnson</linktitle>
-    <firstline>Vej-Spiralen snor sig om Fjælde</firstline>
-    <source pages="164-173"/>
-    <keywords>bjoernson,wergeland</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>IV.</num>Bjørnstjerne Bjørnson</title>
+  <toctitle><num>IV.</num>Bjørnstjerne Bjørnson</toctitle>
+  <indextitle>Bjørnstjerne Bjørnson</indextitle>
+  <linktitle>Bjørnstjerne Bjørnson</linktitle>
+  <firstline>Vej-Spiralen snor sig om Fjælde</firstline>
+  <source pages="164-173"/>
+  <keywords>bjoernson,wergeland</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>

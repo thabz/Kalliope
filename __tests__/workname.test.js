@@ -10,6 +10,9 @@ describe('work name helpers', () => {
     expect(workTitleString({ title: 'Digte', year: '1818' })).toBe(
       'Digte (1818)'
     );
+    expect(workTitleString({ title: 'Digte', year: '-0100' }, 'en')).toBe(
+      'Digte (100 BC)'
+    );
   });
 
   it('always formats work dates as years only', () => {

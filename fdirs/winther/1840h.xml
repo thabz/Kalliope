@@ -1,27 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1840h" author="winther" status="complete" type="poetry">
 <workhead>
-   <title>Haandtegninger</title>
-   <year>1840</year>
-   <notes>
-       <note>Teksten følger <i>Haandtegninger</i>, P.G. Philipsen, Kbh., 1840.</note>
-       <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun indlysende fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
-   </notes>
-   <pictures>
-       <picture type="titlepage" src="1840h-p1.jpg">Titelbladet til <i>Haandtegninger</i> (1840) lyder ,,Haandtegninger. // Digte / af / Christian Winther. // Kjøbenhavn. / Forlagt af P. G. Philipsen. / Trykt hos Bianco Luno. / 1840.''</picture>
-   </pictures>
-   <quality>korrektur1</quality>
-   <source facsimile="11540801527A" facsimile-pages-num="74" facsimile-pages-offset="10">Christian Winther: <i>Haandtegninger</i>, P.G. Philipsen, Kbh., 1840.</source>
+  <title>Haandtegninger</title>
+  <year>1840</year>
+  <notes>
+    <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun indlysende fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
+  </notes>
+  <pictures>
+    <picture type="titlepage" src="1840h-p1.jpg">Titelbladet til <i>Haandtegninger</i> (1840) lyder ,,Haandtegninger. // Digte / af / Christian Winther. // Kjøbenhavn. / Forlagt af P. G. Philipsen. / Trykt hos Bianco Luno. / 1840.''</picture>
+  </pictures>
+  <quality>korrektur1</quality>
+  <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122885012905763" facsimile="11540801527A" facsimile-pages-num="74" facsimile-pages-offset="10">Christian Winther: <i>Haandtegninger</i>, P.G. Philipsen, Kbh., 1840.</source>
 </workhead>
 <workbody>
 
 <text id="winther2018081101">
 <head>
-   <title>Til Læseren</title>
-   <firstline>Med Graad paa Kind, med tunge Fjed</firstline>
-   <quality>korrektur1,kilde,side</quality>
-   <source pages="1-5"/>
+  <title>Til Læseren</title>
+  <firstline>Med Graad paa Kind, med tunge Fjed</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="1-5"/>
 </head>
 <body>
 <poetry>
@@ -90,14 +88,14 @@ Modtag de blege Blade!
 
 <text id="winther2002062329">
 <head>
-   <title>Kong Saul og Sangeren</title>
-   <firstline>Hvad glimter hist langs Bjergets Rand</firstline>
-   <notes>
-      <note>Se <xref bibel="bibel1samuel16"/>.</note>
-      <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
-   </notes>
-   <source pages="6-15"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Kong Saul og Sangeren</title>
+  <firstline>Hvad glimter hist langs Bjergets Rand</firstline>
+  <notes>
+    <note>Se <xref bible="bibel1samuel16"/>.</note>
+    <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
+  </notes>
+  <source pages="6-15"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -274,17 +272,17 @@ Jehovas Seier og hans Fienders Fald!
 
 <section id="winther20180905150" level="2">
 <head>
-   <title>Hjertesorg</title>
-   <source pages="16-28"/>
+  <title>Hjertesorg</title>
+  <source pages="16-28"/>
 </head>
 <content>
 
 <text id="winther2018081102">
 <head>
-   <title>Hans</title>
-   <firstline>Du spørger mig, hvorfor mit Sind</firstline>
-   <quality>korrektur1,kilde,side</quality>
-   <source pages="16-23"/>
+  <title>Hans</title>
+  <firstline>Du spørger mig, hvorfor mit Sind</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="16-23"/>
 </head>
 <body>
 <poetry>
@@ -398,10 +396,10 @@ Min Fred for evig spildt.
 
 <text id="winther2018081103">
 <head>
-   <title>Hendes</title>
-   <firstline>Han kom til min Moders Bolig</firstline>
-   <quality>korrektur1,kilde,side</quality>
-   <source pages="24-28"/>
+  <title>Hendes</title>
+  <firstline>Han kom til min Moders Bolig</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="24-28"/>
 </head>
 <body>
 <poetry>
@@ -478,10 +476,10 @@ Tilsidst i min Moders Bolig
 
 <text id="winther2002112602">
 <head>
-   <title>To Elskende</title>
-   <firstline>To Elskende sad</firstline>
-   <quality>korrektur1,kilde,side</quality>
-   <source pages="29-37"/>
+  <title>To Elskende</title>
+  <firstline>To Elskende sad</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="29-37"/>
 </head>
 <body>
 <poetry>
@@ -618,16 +616,15 @@ Sin Ven haver mist!''
 </body>
 </text>
 
-
 <text id="winther2002062330">
 <head>
-   <title>Ridderen og hans Datter</title>
-   <firstline>Engang i gamle Dage</firstline>
-   <notes>
-      <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
-   </notes>
-   <source pages="38-60"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Ridderen og hans Datter</title>
+  <firstline>Engang i gamle Dage</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
+  </notes>
+  <source pages="38-60"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>

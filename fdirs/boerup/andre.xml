@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="boerup" status="incomplete" type="poetry">
 <workhead>
-   <title>Andre digte</title>
+  <title>Andre digte</title>
 </workhead>
 <workbody>
 
 <text id="boerup2006060401">
 <head>
-   <title>Veris aduentus</title>
-   <firstline>In uernalis temporis</firstline>
-   <notes>
-      <note>Digtet er forfattet omkring år 1500.</note>
-      <note>Efter <i>Udvalgte stykker af latinske forfattere fra middelalderen og den nyere tid</i>, red. Gertz o.a., 2. udg., 1912.</note>
-      <note type="credits">Bidrag fra Ejnar Nørager Pedersen.</note>
-      <quality>korrektur1,kilde</quality>
-   </notes>
+  <title>Veris aduentus</title>
+  <firstline>In uernalis temporis</firstline>
+  <notes>
+    <note>Digtet er forfattet omkring år 1500.</note>
+    <note type="credits">Bidrag fra Ejnar Nørager Pedersen.</note>
+    <quality>korrektur1,kilde</quality>
+  </notes>
+  <source><i>Udvalgte stykker af latinske forfattere fra middelalderen og den nyere tid</i>, red. Gertz o.a., 2. udg., 1912.</source>
 </head>
 <body>
 <poetry>
@@ -57,15 +56,15 @@ noctis et diei.
 
 <text id="boerup2002072501">
 <head>
-   <title>Foraarssang</title>
-   <toctitle>Foraarssang</toctitle>
-   <indextitle>Foraarssang</indextitle>
-   <firstline>Vaaren! Vaaren er i Brudd!</firstline>
-   <notes>
-      <note>Teksten blev af Morten Børup skrevet på latin (»VERIS ADVENTVS«), som var sproget for alle dannede mænd af den tid. Den ældste kilde til teksten er et manuskript fra Gl. kgl. Samling og oversættelsen her er af Marinus Børup (1891-1959).</note>
-      <note>Se <xref poem="boerup2006060401"/> for den latinske original.</note>
-       <!-- Efter Billen -->
-   </notes>
+  <title>Foraarssang</title>
+  <toctitle>Foraarssang</toctitle>
+  <indextitle>Foraarssang</indextitle>
+  <firstline>Vaaren! Vaaren er i Brudd!</firstline>
+  <notes>
+    <note>Teksten blev af Morten Børup skrevet på latin (»VERIS ADVENTVS«), som var sproget for alle dannede mænd af den tid. Den ældste kilde til teksten er et manuskript fra Gl. kgl. Samling og oversættelsen her er af Marinus Børup (1891-1959).</note>
+    <note>Se <xref poem="boerup2006060401"/> for den latinske original.</note>
+    <!-- Efter Billen -->
+  </notes>
 </head>
 <body>
 <poetry>

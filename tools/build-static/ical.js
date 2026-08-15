@@ -1,6 +1,6 @@
-const ics = require('ics');
-const { poetName } = require('./formatting.js');
-const { writeText } = require('../libs/helpers.js');
+import ics from 'ics';
+import { poetName } from './formatting.js';
+import { writeText } from '../libs/helpers.js';
 
 const build_anniversaries_ical = collected => {
   let events = [];
@@ -61,6 +61,6 @@ const build_anniversaries_ical = collected => {
   writeText('public/Kalliope.ics', value);
 };
 
-module.exports = {
+export {
   build_anniversaries_ical,
 };

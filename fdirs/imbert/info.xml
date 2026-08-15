@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="imbert" country="fr" lang="fr" type="poet">
+  <name>
+    <firstname>Barthélemy</firstname>
+    <lastname>Imbert</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1747-03-16</date>
+    </born>
+    <dead>
+      <date>1790-08-23</date>
+    </dead>
+  </period>
+  <literary-periods>fr-oplysningstid</literary-periods>
+  <identifiers>
+    <wikidata>Q2885973</wikidata>
+    <viaf>66600460</viaf>
+  </identifiers>
+</person>

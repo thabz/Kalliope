@@ -47,18 +47,30 @@ it('it formats dates including negative years', () => {
   expect(formattedDate('-100-02-03')).toEqual('3/2 100 f.Kr.');
   expect(formattedDate('-8000-02-03')).toEqual('3/2 8000 f.Kr.');
   expect(formattedDate('ca 1818')).toEqual('c.1818');
+  expect(formattedDate('-100-02-03', 'en')).toEqual('3/2 100 BC');
+  expect(formattedDate('-100-02-03', 'fr')).toEqual('3/2 100 av. J.-C.');
+  expect(formattedDate('-100-02-03', 'de')).toEqual('3/2 100 v. Chr.');
+  expect(formattedDate('ca 1818', 'fr')).toEqual('v.1818');
+  expect(formattedDate('ca 1818', 'de')).toEqual('ca.1818');
 });
 
 it('it formats single years', () => {
   expect(formattedYear('1818')).toEqual('1818');
   expect(formattedYear('-0100')).toEqual('100 f.Kr.');
   expect(formattedYear('ca 1818')).toEqual('c. 1818');
+  expect(formattedYear('-0100', 'en')).toEqual('100 BC');
+  expect(formattedYear('-0100', 'fr')).toEqual('100 av. J.-C.');
+  expect(formattedYear('-0100', 'de')).toEqual('100 v. Chr.');
+  expect(formattedYear('ca 1818', 'fr')).toEqual('v. 1818');
 });
 
 it('it formats year eras', () => {
   expect(formatYearEra('100', 'bce')).toEqual('100 f.Kr.');
   expect(formatYearEra('20', 'ce')).toEqual('20 e.Kr.');
   expect(formatYearEra('1818', null)).toEqual('1818');
+  expect(formatYearEra('100', 'bce', 'en')).toEqual('100 BC');
+  expect(formatYearEra('20', 'ce', 'fr')).toEqual('20 apr. J.-C.');
+  expect(formatYearEra('100', 'bce', 'de')).toEqual('100 v. Chr.');
 });
 
 it('it formats year intervals', () => {
@@ -98,6 +110,21 @@ it('it formats age', () => {
       dead: { date: '0020-10-23' },
     })
   ).toEqual('(blev 58 år)');
+  expect(
+    formattedAge({
+      born: { date: '1818-11-29' },
+      dead: { date: null },
+    })
+  ).toEqual(null);
+  expect(
+    formattedAge(
+      {
+        born: { date: '1818' },
+        dead: { date: '1901' },
+      },
+      'en'
+    )
+  ).toEqual('(age c. 82 years)');
 });
 
 it('it formats year ranges', () => {
@@ -106,4 +133,12 @@ it('it formats year ranges', () => {
   expect(formattedYearRange('-0100', '-0050')).toEqual('(100–50 f.Kr.)');
   expect(formattedYearRange('-0030', '0020')).toEqual('(30 f.Kr.–20 e.Kr.)');
   expect(formattedYearRange('?', '?')).toEqual('(Ukendt levetid)');
+  expect(formattedYearRange('-0030', '0020', 'en')).toEqual('(30 BC–20 AD)');
+  expect(formattedYearRange('-0030', '0020', 'fr')).toEqual(
+    '(30 av. J.-C.–20 apr. J.-C.)'
+  );
+  expect(formattedYearRange('-0030', '0020', 'de')).toEqual(
+    '(30 v. Chr.–20 n. Chr.)'
+  );
+  expect(formattedYearRange('?', '?', 'en')).toEqual('(Unknown lifetime)');
 });
