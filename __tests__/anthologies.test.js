@@ -77,6 +77,7 @@ describe('antologiplaceringer', () => {
     expect(isAnthologyText('arnesen-kall', 'antologierdk')).toBe(true);
     expect(isAnthologyText('antologierdk', 'antologierdk')).toBe(false);
     expect(isAnthologyText(null, 'antologierdk')).toBe(false);
+    expect(isAnthologyText('winther', null)).toBe(false);
     expect(publicationTextId('antologierdk2026071901')).toBe(
       'antologierdk2026071901a'
     );

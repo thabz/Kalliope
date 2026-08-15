@@ -523,7 +523,7 @@ const handle_text = async (
       throw `fdirs/${sourcePoetId}/${sourceWorkId}: section ${sourceTextId} mangler title.`;
     }
     const content = getChildByTagName(text, 'content');
-    toc = build_section_toc(content);
+    toc = build_section_toc(content, sourcePoetId);
   } else {
     // prose or poem
     const body = getChildByTagName(text, 'body');
