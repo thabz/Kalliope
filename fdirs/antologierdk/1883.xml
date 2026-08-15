@@ -12,36 +12,37 @@
 
 <text id="antologierdk2026081501" skip-index="true">
 <head>
-  <title>[Forord]</title>
-  <source facsimile-pages="8"/>
+  <title>Forord</title>
+  <source facsimile-pages="9"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <prose>
-Disse Linier skulle tjene til Undskyldning for,
-at der i den foreliggende Samling er medtaget
-nogle Digte, der ikke i strængere Forstand ville lade
-sig indpasse i den ved Titelen givne Ramme,
-nemlig en Del Digte fra det spanske Sydamerika
-og et enkelt Digt af Longfellow fra Nordamerika.
-Udgiveren søger en Undskyldning i den Omstændighed,
-at disse Digte ogsaa ere skrevne i evropæiske Sprog,
-og hvis denne Motivering findes utilstrækkelig, bedes
-Publikum betragte de omhandlede Partier som et Anneks til de vedkommende
-evropæiske Lande, om de end ikke i Bogen selv
-udtrykkelig ere betegnede som saadanne.
+  Disse Linier skulle tjene til Undskyldning for, at der i den foreliggende Samling er medtaget nogle Digte, der ikke i strængere Forstand ville lade sig indpasse i den ved Titelen givne Ramme, nemlig en Del Digte fra det spanske Sydamerika og et enkelt Digt af Longfellow fra Nordamerika. Udgiveren søger en Undskyldning i den Omstændighed, at disse Digte ogsaa ere skrevne i evropæiske Sprog, og hvis denne Motivering findes utilstrækkelig, bedes Publikum betragte de omhandlede Partier som et Anneks til de vedkommende evropæiske Lande, om de end ikke i Bogen selv udtrykkelig ere betegnede som saadanne.
 
-Udgiveren.
+<right>Udgiveren.</right>
 </prose>
 </body>
 </text>
+
+<section level="1">
+<head>
+  <title>Island</title>
+</head>
+<content>
+
+<section level="2">
+<head>
+  <title>Bjarni Thorarensen</title>
+</head>
+<content>
 
 <text id="rosenberg2026081502" author="rosenberg">
 <head>
   <title>Sang til Sigrun</title>
   <firstline>Ve Du nys mig voldte</firstline>
   <source pages="3-5"/>
-  <notes><note>Af Bjarni Thorarensen. Oversat af C. Rosenberg.</note></notes>
+  <notes><note>Af Bjarni Thorarensen.</note></notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -111,10 +112,10 @@ at let jeg kan Dig følge.
 
 Saa skal vi bort over Bjærge og Dale
 i brændende Favntag, ad Luftveje svale
-paa Nordlysets Guldheste storme afsted.
+    paa Nordlysets Guldheste storme afsted.
 Væne, som Smaablus i Vindhjem mon prange,
 ad Vinterens Sti skal vi dansende gange
-og blunde paa Sneskyers Bolstre i Fred.
+    og blunde paa Sneskyers Bolstre i Fred.
 </poetry>
 </body>
 </text>
@@ -124,7 +125,7 @@ og blunde paa Sneskyers Bolstre i Fred.
   <title>Mindedigt over en islandsk Læge</title>
   <firstline>Ingen dadler</firstline>
   <source pages="6-8"/>
-  <notes><note>Af Bjarni Thorarensen. Oversat af Kr. Arentzen.</note></notes>
+  <notes><note>Af Bjarni Thorarensen.</note></notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -213,12 +214,30 @@ Fossen springer!
 </body>
 </text>
 
+</content>
+</section>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>Sverige</title>
+</head>
+<content>
+
+<section level="2">
+<head>
+  <title>Viktor Rydberg</title>
+</head>
+<content>
+
 <text id="antologierdk2026081504">
 <head>
   <title>Den flyvende Hollænder</title>
   <firstline>Der er et Skib, som gaar og gaar</firstline>
   <source pages="11-19"/>
-  <notes><note>Oversat af Otto Borchsenius.</note></notes>
+  <notes><note unknown-original-by="rydberg"/><note>Oversat af Otto Borchsenius.</note></notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -474,7 +493,7 @@ i Horisonten staar.
   <title>Klokkerne</title>
   <firstline>Over Tidernes Hav der knejser i Bølgeskummets</firstline>
   <source pages="19-21"/>
-  <notes><note>Oversat af Otto Borchsenius.</note></notes>
+  <notes><note unknown-original-by="rydberg"/><note>Oversat af Otto Borchsenius.</note></notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -542,10 +561,20 @@ da skjælver Verden og vakler i sin dybeste Grund.
 </body>
 </text>
 
-<text id="snoilsky2026081506" author="snoilsky">
+</content>
+</section>
+
+<section level="2">
+<head>
+  <title>Carl Snoilsky</title>
+</head>
+<content>
+
+<text id="ipsen2026081506" author="ipsen">
 <head>
   <title>Eremitagen</title>
   <firstline>I Skovens Mørke jeg véd en Plet</firstline>
+  <notes><note unknown-original-by="snoilsky"/></notes>
   <source pages="22-23"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -582,10 +611,11 @@ i Christian Winther'ske Toner?
 </body>
 </text>
 
-<text id="snoilsky2026081507" author="snoilsky">
+<text id="ipsen2026081507" author="ipsen">
 <head>
   <title>Regnvejr i Rom</title>
   <firstline>Som ud af en Vandspand det plasker</firstline>
+  <notes><note unknown-original-by="snoilsky"/></notes>
   <source pages="23-25"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -675,7 +705,25 @@ fy skam Dig, Briccone!
 </body>
 </text>
 
-<text id="antologierdk2026081508">
+</content>
+</section>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>Tyskland</title>
+</head>
+<content>
+
+<section level="2">
+<head>
+  <title>Frantz Dingelstedt</title>
+</head>
+<content>
+
+<text id="ipsen2026081508" author="ipsen">
 <head>
   <title>Julenat</title>
   <firstline>Det er den helligstille Nat</firstline>
@@ -760,7 +808,16 @@ men Dagen - naar vil Dagen komme?
 </body>
 </text>
 
-<text id="antologierdk2026081509">
+</content>
+</section>
+
+<section level="2">
+<head>
+  <title>Georg Herwegh</title>
+</head>
+<content>
+
+<text id="ipsen2026081509" author="ipsen">
 <head>
   <title>Opraab</title>
   <firstline>Se kun Solen hist opstaa</firstline>
@@ -813,7 +870,16 @@ Perser - og i Skyggen mangen Grav.
 </body>
 </text>
 
-<text id="antologierdk2026081510">
+</content>
+</section>
+
+<section level="2">
+<head>
+  <title>Theodor Storm</title>
+</head>
+<content>
+
+<text id="ipsen2026081510" author="ipsen">
 <head>
   <title>Afsides</title>
   <firstline>Det er saa stille fjærnt og nær</firstline>
@@ -854,7 +920,7 @@ en Gjenlyd af den travle Tid.
 </body>
 </text>
 
-<text id="antologierdk2026081511">
+<text id="ipsen2026081511" author="ipsen">
 <head>
   <title>Hyazinther</title>
   <firstline>Fjærnt lyder end Musikens Lyd; men her</firstline>
@@ -886,7 +952,16 @@ nu gad jeg sove helst — men Du, Du danser.
 </body>
 </text>
 
-<text id="antologierdk2026081512">
+</content>
+</section>
+
+<section level="2">
+<head>
+  <title>Gottfried Keller</title>
+</head>
+<content>
+
+<text id="ipsen2026081512" author="ipsen">
 <head>
   <title>I Skoven</title>
   <firstline>Arm i Arm har Egeskoven trodset mangen vestlig</firstline>
@@ -926,7 +1001,7 @@ dukkende i grønne Dybder drikke de hans Melodier.
 </body>
 </text>
 
-<text id="antologierdk2026081513">
+<text id="ipsen2026081513" author="ipsen">
 <head>
   <title>Reformation</title>
   <firstline>Som Pyramiderne — i gamle Grave</firstline>
@@ -957,7 +1032,16 @@ og atter udsaa Livets Ord paa Jorden?
 </body>
 </text>
 
-<text id="antologierdk2026081514">
+</content>
+</section>
+
+<section level="2">
+<head>
+  <title>Friedrich Bodenstedt</title>
+</head>
+<content>
+
+<text id="ipsen2026081514" author="ipsen">
 <head>
   <title>Serbisk Sang</title>
   <firstline>Pigen lignede sig selv med Solen</firstline>
@@ -976,7 +1060,6 @@ der i Skarer vanke om paa Himlen,
 lig en Faareflok, som Hyrden leder.
 Flux da Solen gik til Gud og klaged:
 »Hvordan straffe denne slemme Pige?«
-
 Dog stilfærdig svared Himlens Herre :
 »Klare Sol, mit Barn, mit dyrebare,'
 slaa Dig kun til Ro, lad Vreden fare,
@@ -990,7 +1073,7 @@ Brat sit Overmod hun skal fortryde!
 </body>
 </text>
 
-<text id="antologierdk2026081515">
+<text id="ipsen2026081515" author="ipsen">
 <head>
   <title>Gasel</title>
   <firstline>Dit sidste Brev, mit kjære Barn</firstline>
@@ -1018,7 +1101,7 @@ med allerstørste Grundighed.
 </body>
 </text>
 
-<text id="antologierdk2026081516">
+<text id="ipsen2026081516" author="ipsen">
 <head>
   <title>Af „Edlitams Bog“</title>
   <firstline>Den mørke Nat indhyllede mit Hoved</firstline>
@@ -1032,6 +1115,7 @@ Den mørke Nat indhyllede mit Hoved,
 og atter fandt jeg Græmmelsen og Sorgen,
 der tidlig mørknede mig Livets Morgen,
 og Skjæbnen holdt ej, hvad den havde lovet.
+
 Du var den første Stjærne i min Nat —
 Bliv og den sidste! Kjærlighedens Stjærne,
 der smiler først, naar Sol har os forladt,
@@ -1041,7 +1125,16 @@ og slukkes sildigst i den blege Nat!
 </body>
 </text>
 
-<text id="antologierdk2026081517">
+</content>
+</section>
+
+<section level="2">
+<head>
+  <title>Hieronymus Lorm</title>
+</head>
+<content>
+
+<text id="ipsen2026081517" author="ipsen">
 <head>
   <title>To Vandrere</title>
   <firstline>Der skred igjennem Skoven hen</firstline>
@@ -1081,7 +1174,16 @@ En Kiste tømrede man paa.
 </body>
 </text>
 
-<text id="antologierdk2026081518">
+</content>
+</section>
+
+<section level="2">
+<head>
+  <title>Moritz Hartmann</title>
+</head>
+<content>
+
+<text id="ipsen2026081518" author="ipsen">
 <head>
   <title>Symfoni</title>
   <firstline>Hvordan jeg elsker Dig?</firstline>
@@ -1215,13 +1317,12 @@ paa dit blomstrende Ejland,
 hvorhen Stormene have baaret
 Dig, den Lidende,
 hvorhen vi aldrig naa,
-
 vi, de Kæmpende.
 </poetry>
 </body>
 </text>
 
-<text id="antologierdk2026081519">
+<text id="ipsen2026081519" author="ipsen">
 <head>
   <title>En Sorg</title>
   <firstline>Haardt er mit Hjærte blevet</firstline>
@@ -1259,7 +1360,7 @@ for Sjælens Øje staar.
 </body>
 </text>
 
-<text id="antologierdk2026081520">
+<text id="ipsen2026081520" author="ipsen">
 <head>
   <title>Morgen ved Stranden</title>
   <firstline>En Morgenstund ved Havets Strand</firstline>
@@ -1287,7 +1388,16 @@ da ser jeg Freden rundtom smile.
 </body>
 </text>
 
-<text id="antologierdk2026081521">
+</content>
+</section>
+
+<section level="2">
+<head>
+  <title>Paul Heyse</title>
+</head>
+<content>
+
+<text id="ipsen2026081521" author="ipsen">
 <head>
   <title>Af „Neues Leben“</title>
   <firstline>Skiller jer stundom</firstline>
@@ -1297,6 +1407,8 @@ da ser jeg Freden rundtom smile.
 </head>
 <body>
 <poetry>
+<nonum><center>I.</center></nonum>
+
 Skiller jer stundom,
 I lykkelig Elskende.
 Ak, kun i Fjærnhed
@@ -1332,10 +1444,10 @@ der langsomt modnes
 i Længselsdage
 lig Blomsten ene,
 blandt kolde Stene
-
 til Klippen lænket,
 til Farver rene
 den vorder skænket.
+
 Skilles da stundom,
 I lykkelig Elskende!
 Bedre at skilles
@@ -1353,6 +1465,10 @@ magisk forenes.
 Ak, kun i Længsel
 mødes I helt!
 
+---
+
+<nonum><center>II.</center></nonum>
+
 Før Morgen mig vækked
 mit Hjærtes Slag.
 Mit Hjærte, hvi slaar Du
@@ -1365,12 +1481,10 @@ sov hen i det Blaa.
 
 Men, lyt! Under Spaantaget
 lister en Maar,
-
 en sovende Svale
 kan hænde den faar.
-<pb n="50" facs="067.jpg"/>lyskland.
 
-Og Vildbækken styrter
+<pb n="50" facs="067.jpg"/>Og Vildbækken styrter
 saa travlt, som den plejer,
 og Møllehjulet
 sig søvndrukkent drejer.
@@ -1379,6 +1493,7 @@ Nu galer Hanen,
 det dages saa smaat.
 O, Dag, hvor dit Ansigt
 er hæsligt og graat.
+
 Ukjærligt Du skiller
 to Elskende ad.
 Til Gjensynets Time
@@ -1387,7 +1502,7 @@ nu sove jeg gad.
 </body>
 </text>
 
-<text id="antologierdk2026081522">
+<text id="ipsen2026081522" author="ipsen">
 <head>
   <title>Paa Højderne</title>
   <firstline>Højt over Klostret</firstline>
@@ -1435,7 +1550,7 @@ af himmelhøj Lyst.
 </body>
 </text>
 
-<text id="antologierdk2026081523">
+<text id="ipsen2026081523" author="ipsen">
 <head>
   <title>Tankesprog</title>
   <firstline>Mankevildt er en egen Slags</firstline>
@@ -1448,7 +1563,6 @@ af himmelhøj Lyst.
 Mankevildt er en egen Slags,
 jager Du det, saa flygter det strax;
 men se saa med roligt Smil dets Færd,
-
 saa taber det Frygten og kommer Dig nær;
 en stille Vandrer kan Vildtet tæmme
 til at æde af Haand og være som hjemme.
@@ -1456,7 +1570,16 @@ til at æde af Haand og være som hjemme.
 </body>
 </text>
 
-<text id="antologierdk2026081524">
+</content>
+</section>
+
+<section level="2">
+<head>
+  <title>Hans Hopfen</title>
+</head>
+<content>
+
+<text id="ipsen2026081524" author="ipsen">
 <head>
   <title>Undervejs</title>
   <firstline>Naar Du med Iltog fremad hasted</firstline>
@@ -1477,7 +1600,6 @@ et Vogterhus ved Vejens Kant,
 hvor selve Vogteren, den brave,
 stod rank og rettet som en Stok,
 og tæt ved i en lille Have
-
 stod Mutter med sin Børneflok.
 I Husets Indre, blankt og skuret,
 Du skimted Spejlet, Sengen, Uhret.
@@ -1493,7 +1615,7 @@ mens end et Blik derpaa Du kasted;
 </body>
 </text>
 
-<text id="antologierdk2026081525">
+<text id="ipsen2026081525" author="ipsen">
 <head>
   <title>Paa Gjensyn</title>
   <firstline>Abu el Hassan Ali os fortæller</firstline>
@@ -1569,10 +1691,20 @@ har Plads til alle fromme Sjæles Vrimmel.
 </body>
 </text>
 
-<text id="fitger2026081526" author="fitger">
+</content>
+</section>
+
+<section level="2">
+<head>
+  <title>Arthur Fitger</title>
+</head>
+<content>
+
+<text id="ipsen2026081526" author="ipsen">
 <head>
   <title>Døden</title>
   <firstline>Højest blandt Menneskebørnenes Venner</firstline>
+  <notes><note unknown-original-by="fitger"/></notes>
   <source pages="55-57"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1658,10 +1790,11 @@ dobbelt saa kjær.
 </body>
 </text>
 
-<text id="fitger2026081527" author="fitger">
+<text id="ipsen2026081527" author="ipsen">
 <head>
   <title>Middagssøvn</title>
   <firstline>Ak, Vaaren har forhexet mig!</firstline>
+  <notes><note unknown-original-by="fitger"/></notes>
   <source pages="58-59"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1706,10 +1839,11 @@ en Fugl, jeg aldrig kan fange!
 </body>
 </text>
 
-<text id="fitger2026081528" author="fitger">
+<text id="ipsen2026081528" author="ipsen">
 <head>
   <title>Tre Ryttere</title>
   <firstline>Der sprængte tre lystige Svende afsted</firstline>
+  <notes><note unknown-original-by="fitger"/></notes>
   <source pages="59-60"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1753,80 +1887,85 @@ hvor finder jeg Dig, Du hellige Grâl?«
 </body>
 </text>
 
-<text id="tennyson2026081529" author="tennyson">
+</content>
+</section>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>England</title>
+</head>
+<content>
+
+<section level="2">
+<head>
+  <title>Alfred Tennyson</title>
+</head>
+<content>
+
+<text id="ipsen2026081529" author="ipsen">
 <head>
   <title>Majdronningen</title>
   <firstline>Væk mig tidlig, søde Moder, væk mig før Sol opstaar!</firstline>
+  <notes><note unknown-original-by="tennyson"/></notes>
   <source pages="63-68"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<nonum><center>1, Valborgaften.</center></nonum>
+<nonum><center>I. Valborgaften.</center></nonum>
+
 Væk mig tidlig, søde Moder, væk mig før Sol opstaar!
 I Morgen er min bedste Dag i det hele, nye Aar.
 Af hele det glade Nytaar min bedste Dag er nær,
-for i Morgen skal jeg være Dronning, Majdronning,
-Moder kjær.
+for i Morgen skal jeg være Dronning, Majdronning, Moder kjær.
 
-Der er mange straalende Piger, der er Mary og
-Ann' Kath'rin;
-men de sige, søde Moder, der er ingen saa pæn
-som din,
+Der er mange straalende Piger, der er Mary og Ann' Kath'rin;
+men de sige, søde Moder, der er ingen saa pæn som din,
 <pb n="64" facs="081.jpg"/>ingen som lille Alice i hele Omegnen her,
-og derfor skal jeg være Dronning, Majdronning,
-Moder kjær.
+og derfor skal jeg være Dronning, Majdronning, Moder kjær.
 
 Aa, hvor jeg i Nat skal sove, jeg vaagner vist aldrig mer,
 hvis ikke Du kalder mig rigtig højt, saa saare Solen den ler,
 for jeg skal ha'e plukket Blomster, de kjønneste Marken bær,
+og i Morgen skal jeg være Dronning, Majdronning, Moder kjær.
 
-og i Morgen skal jeg være Dronning, Majdronning,
-Moder kjær.
-
-Da jeg kom op ad Gaden nys, hvem tror Du der
-jeg saa'?
+Da jeg kom op ad Gaden nys, hvem tror Du der jeg saa'?
 Dér stod Robert ved Svinget og stirred op i det Blaa;
 jeg har været lidt slem imod ham, jeg syntes, han var saa sær,
-og i Morgen skal jeg være Dronning, Majdronning,
-Moder kjær.
+og i Morgen skal jeg være Dronning, Majdronning,Moder kjær.
 
 Han troede vist, jeg var en Aand, for jeg var klædt i Hvidt,
-
 og jeg foer som en Vind forbi ham, jeg fortnede mine Skridt.
 De siger, at jeg er grusom, det tager jeg mig ej nær,
-for i Morgen skal jeg være Dronning, Majdronning,
-Moder kjær.
+for i Morgen skal jeg være Dronning, Majdronning, Moder kjær.
+
 <pb n="65" facs="082.jpg"/>Jeg har meget Andet at passe end at være ham til Behag,
 de siger, han dør af Elskov — det maa være hans egen Sag.
 Jeg har mangen stoltere Bejler omkring i Byerne her,
-og i Morgen skal jeg være Dronning, Majdronning,
-Moder kjær.
+og i Morgen skal jeg være Dronning, Majdronning, Moder kjær.
+
 Og lille Effie skal følge til Gildepladsen mig ud,
 og Du maa komme, Moder, at se mig i Dronningskrud,
-og de unge Hyrdeknøse vil komme fra fjærn og
-nær,
-for i Morgen skal jeg: være Dronning, Majdronning,
-Moder kjær.
+og de unge Hyrdeknøse vil komme fra fjærn og nær,
+for i Morgen skal jeg: være Dronning, Majdronning, Moder kjær.
 
 I Haven har Kaprifolien tændt sin lysende Brand,
-og Kukkerurten i Engen pranger langs Grøftens
-Kand,
+og Kukkerurten i Engen pranger langs Grøftens Rand,
 af guldgule Kabbelejer der findes en duftende Hær,
-og i Morgen skal jeg være Dronning, Majdronning,
-Moder kjær.
-Og Natvinden gaar og kommer, den har ej Rast
-eller Hvil,
-'og de klare Stjærner paa Himlen vandre forbi med Smil,
+og i Morgen skal jeg være Dronning, Majdronning, Moder kjær.
+
+Og Natvinden gaar og kommer, den har ej Rast eller Hvil,
+og de klare Stjærner paa Himlen vandre forbi med Smil,
 og i Morgen vil Solen skinne, det bliver straalende Vejr,
-og i Morgen skal jeg være Dronning, Majdronning,
-Moder kjær.
+og i Morgen skal jeg være Dronning, Majdronning, Moder kjær.
+
 <pb n="66" facs="083.jpg"/>Og hele Dalen, Moder, vil straale i Sommerpragt,
 Kodriver og gule Ranunkler er over Højene lagt,
 og Aaen dernede i Slugten vil glimte med Sølver-Skjær,
-
-og i Morgen skal jeg være Dronning, Majdronning,
-Moder kjær.
+og i Morgen skal jeg være Dronning, Majdronning, Moder kjær.
 
 Saa væk mig rigtig tidlig, væk mig før Sol opstaar!
 I Morgen er min bedste Dag i det hele, lange Aar,
@@ -1834,16 +1973,17 @@ af hele det glade Nytaar min bedste Dag er nær,
 for i Morgen skal jeg være Dronning, Majdronning,
 Moder kjær.
 
+---
+
 <nonum><center>2, Nytaarsaften.</center></nonum>
+
 Kald mig tidlig, søde Moder, kald mig før Sol opstaar,
 jeg maa se den Sol, der bringer os det glade, nye Aar.
 Det bli'er det sidste Nytaar, jeg her i Verden ser,
 snart lægge I mig dybt i Muld og huske mig ej mer.
 
 Da Solen sluktes ud i Gaar, da slukkedes med den
-det gamle Aar, den gamle Tid — de komme ej
-
-igjen.
+det gamle Aar, den gamle Tid — de komme ej igjen.
 Snart tændes Nytaarssolen; men jeg skal aldrig se
 Rødtjørnens Blomsterklynger eller Æbletræets Sne.
 
@@ -1876,17 +2016,14 @@ Og Hvidtjørnsbuskens Krone vil strø sin hvide Pragt,
 og Du vil komme, søde Mo'er, at se, hvor jeg er lagt.
 Jeg hører, naar du kommer, for jeg kjender dine Trin,
 da jubler jeg dernede: »Nu kommer Moder min!«
+
 <pb n="68" facs="085.jpg"/>Tilgiv mig, lille Mo'er, jeg har været styg og vild!
 Et Kys, min egen Mo'er, skjønt din Læbe er som Ild!
 Nej, fy, maa ikke græde — ikke græde, søde Du!
 O Du har jo lille Effie, Mo'er, Du har jo én endnu.
 
-Og jeg vil komme, søde Mo'er, jeg kommer, om
-
-jeg maa,
-jeg kommer til Jer mangen Stund, naar Aft'nen
-falder paa,
-
+Og jeg vil komme, søde Mo'er, jeg kommer, om jeg maa,
+jeg kommer til Jer mangen Stund, naar Aft'nen falder paa,
 og, skjønt I ikke ser mig, kan jeg høre hvert et Ord
 og sidder mellem Jer som før, naar allermindst I tror.
 
@@ -1908,10 +2045,11 @@ men væk mig rigtig tidlig, væk mig tidlig, Moder kjær!
 </body>
 </text>
 
-<text id="tennyson2026081530" author="tennyson">
+<text id="ipsen2026081530" author="ipsen">
 <head>
   <title>Vuggesang</title>
   <firstline>Let og tyst, let og tyst</firstline>
+  <notes><note unknown-original-by="tennyson"/></notes>
   <source pages="69"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1938,17 +2076,26 @@ Sov min lille Stump! Sov Moders Stump! Sov!
 </body>
 </text>
 
-<text id="browningr2026081531" author="browningr">
+</content>
+</section>
+
+<section level="2">
+<head>
+  <title>Robert Browning</title>
+</head>
+<content>
+
+<text id="ipsen2026081531" author="ipsen">
 <head>
   <title>Scene fra den franske Lejr</title>
   <firstline>Franskmænd stormed Ratisbon</firstline>
+  <notes><note unknown-original-by="browningr"/></notes>
   <source pages="70-71"/>
-  <notes><note>Ratisbon er det franske Navn for Regensburg.</note></notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Franskmænd stormed Ratisbon,
+Franskmænd stormed Ratisbon<footnote>Ratisbon er det franske Navn for Regensburg.</footnote>,
 og just som Kuglen højest sang,
 Napoleon stod paa en Høj
 og vogted derfra Kampens Gang.
@@ -1967,7 +2114,7 @@ og standsed Hesten med et Ryk,
 hvor Kejs'ren holdt paa Højens Top.
 
 Af Hesten svang han sig i Hast
-- en Dreng ; thi Andet var han ej —
+- en Dreng; thi Andet var han ej —
 ved Hestens Manke støtted han
 og stod der rank og retted sig.
 <pb n="71" facs="088.jpg"/>Han slutted sine Læber fast;
@@ -1996,10 +2143,20 @@ han sammen for sin Kejsers Fod.
 </body>
 </text>
 
-<text id="arnold2026081532" author="arnold">
+</content>
+</section>
+
+<section level="2">
+<head>
+  <title>Matthew Arnold</title>
+</head>
+<content>
+
+<text id="ipsen2026081532" author="ipsen">
 <head>
   <title>Trøst</title>
   <firstline>Hedt brænder Solen</firstline>
+  <notes><note unknown-original-by="arnold"/></notes>
   <source pages="72-75"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2104,10 +2261,11 @@ en Lykkens Stund.
 </body>
 </text>
 
-<text id="arnold2026081533" author="arnold">
+<text id="ipsen2026081533" author="ipsen">
 <head>
   <title>Requiescat</title>
   <firstline>Dæk hende med Roser, Roser</firstline>
+  <notes><note unknown-original-by="arnold"/></notes>
   <source pages="75-76"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2136,10 +2294,11 @@ Dødens den vide Sal.
 </body>
 </text>
 
-<text id="arnold2026081534" author="arnold">
+<text id="ipsen2026081534" author="ipsen">
 <head>
   <title>Ungdommens Forsvinden</title>
   <firstline>Naar om en halv Snes Aar jeg ser mig skilt</firstline>
+  <notes><note unknown-original-by="arnold"/></notes>
   <source pages="76"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2166,12 +2325,21 @@ at hver en Alders Lod er Utilfredshed.
 </body>
 </text>
 
-<text id="rossettid2026081535" author="rossettid">
+</content>
+</section>
+
+<section level="2">
+<head>
+  <title>Dante Gabriel Rossetti</title>
+</head>
+<content>
+
+<text id="ipsen2026081535" author="ipsen">
 <head>
   <title>En Nytaarssang</title>
   <firstline>Det vugger i Bølger, det grønne Korn</firstline>
   <source pages="77-78"/>
-  <notes><note>Rossetti var baade Maler og Digter — først Maler — og betragtes som Nestor for den unge engelske Digterskole, hvis Taknemlighed og Beundring for ham ingen Grænser kjende.</note></notes>
+  <notes><note unknown-original-by="rossettid"/><note>Rossetti var baade Maler og Digter — først Maler — og betragtes som Nestor for den unge engelske Digterskole, hvis Taknemlighed og Beundring for ham ingen Grænser kjende.</note></notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2203,10 +2371,11 @@ Den Elskov, som var en Gang vor, men falmed paa vor Vej.
 </body>
 </text>
 
-<text id="rossettid2026081536" author="rossettid">
+<text id="ipsen2026081536" author="ipsen">
 <head>
   <title>Strejflys</title>
   <firstline>Jeg har været her før</firstline>
+  <notes><note unknown-original-by="rossettid"/></notes>
   <source pages="78"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2217,29 +2386,30 @@ o, jeg husker, som var det i Gaar,
 dette Græs for din Dør,
 denne krydrede Duft fra min Vaar,
 denne klagende Klang i Smaabølgernes Sang
-under Kyst.
+      under Kyst.
 
 Min var Du en Gang;
 men det blegned saa regnbuesnart,
 just som Svanen sig svang
 os forbi i sin pilsnare Fart,
 da faldt der et Slør, hvad jeg anede før
-blev mig klart.
+      blev mig klart.
 
 Thi jeg vidste det før
 i vor Kjærligheds anende Gry;
 men en Gang, før vi dør,
 skal vor Kjærlighed fødes paa Ny.
 Endnu Tidernes Strøm skal mig skjænke en Drøm
-ved dit Bryst.
+      ved dit Bryst.
 </poetry>
 </body>
 </text>
 
-<text id="rossettid2026081537" author="rossettid">
+<text id="ipsen2026081537" author="ipsen">
 <head>
   <title>Skjønhed</title>
   <firstline>Som Blomsten i høje Grene, der uset aabner sin Knop</firstline>
+  <notes><note unknown-original-by="rossettid"/></notes>
   <source pages="79"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2258,12 +2428,13 @@ til dens Krone er traadt i Støvet, til Ingen kjender dens Sted.
 </body>
 </text>
 
-<text id="rossettid2026081538" author="rossettid">
+<text id="ipsen2026081538" author="ipsen">
 <head>
   <title>I Urtegaarden</title>
+  <subtitle>Bearbejdelse af en gl. fransk Folkevise.</subtitle>
   <firstline>Hist i min Faders Urtegaard</firstline>
+  <notes><note unknown-original-by="rossettid"/></notes>
   <source pages="79-80"/>
-  <notes><note>Bearbejdelse af en gl. fransk Folkevise.</note></notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2303,10 +2474,20 @@ saa er mit Hjærte dog hans!
 </body>
 </text>
 
-<text id="swinburne2026081539" author="swinburne">
+</content>
+</section>
+
+<section level="2">
+<head>
+  <title>Algernon Charles Swinburne</title>
+</head>
+<content>
+
+<text id="ipsen2026081539" author="ipsen">
 <head>
   <title>Rondo</title>
   <firstline>Ved hendes Fod jeg sad som i en Drøm</firstline>
+  <notes><note unknown-original-by="swinburne"/></notes>
   <source pages="81"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2329,10 +2510,11 @@ ved hendes Fod.
 </body>
 </text>
 
-<text id="swinburne2026081540" author="swinburne">
+<text id="ipsen2026081540" author="ipsen">
 <head>
   <title>Sapphiske Vers</title>
   <firstline>Hele Natten, Søvn! fra mit Leje veg Du</firstline>
+  <notes><note unknown-original-by="swinburne"/></notes>
   <source pages="81-84"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2441,7 +2623,16 @@ klagende Sange.
 </body>
 </text>
 
-<text id="antologierdk2026081541">
+</content>
+</section>
+
+<section level="2">
+<head>
+  <title>Edmund W. Gosse</title>
+</head>
+<content>
+
+<text id="ipsen2026081541" author="ipsen">
 <head>
   <title>Kronborg</title>
   <firstline>Jeg sad paa Kronborgs Volde</firstline>
@@ -2514,7 +2705,7 @@ af det lønlige Kys, hun gav.
 </body>
 </text>
 
-<text id="antologierdk2026081542">
+<text id="ipsen2026081542" author="ipsen">
 <head>
   <title>Liggende i Græsset</title>
   <firstline>Henstrakt i Græsset efter vanlig Skik</firstline>
@@ -2619,7 +2810,16 @@ Høstfolkene forsvandt, og jeg maa gaa.
 </body>
 </text>
 
-<text id="antologierdk2026081543">
+</content>
+</section>
+
+<section level="2">
+<head>
+  <title>Philip Bourke Marston</title>
+</head>
+<content>
+
+<text id="ipsen2026081543" author="ipsen">
 <head>
   <title>Hilsen</title>
   <firstline>Rejs Dig, min Sang! Spred Vingen ud til Flugt</firstline>
@@ -2636,7 +2836,6 @@ Du da maa kysse hendes Øjne smukt,
 og bed, før Nattens Syner helt er slukt,
 at hun bevarer dybt i Sjælens Grund
 en stille Tanke for en ensom Stund
-
 om én, hvis Taaresæd blev uden Frugt.
 Og hvisk i hendes Øre sødt og blidt,
 det er for hendes Skyld, at han har lidt,
@@ -2648,12 +2847,12 @@ som af Medlidenhed en Dag hun bærer.
 </body>
 </text>
 
-<text id="antologierdk2026081544">
+<text id="ipsen2026081544" author="ipsen">
 <head>
   <title>En Anelse</title>
   <firstline>Jeg tænkte, da jeg drog Dig til mit Bryst</firstline>
   <source pages="91"/>
-  <notes><note>Af Philip Bourke Marston.</note><note>Marston er nu blind. Dette Digt er formodenlig blevet til paa et Tidspunkt, da han havde den første Anelse om den kommende Ulykke.</note></notes>
+  <notes><note>Af Philip Bourke Marston.</note></notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2665,22 +2864,31 @@ og rev for evig bort mit Øjes Lyst,
 det gyldne Haar, saa mangen Gang min Trøst,
 dit Blik, hvor Haabet mig sin Stjærne tændte,
 din smidig-varme Hals, hvis Ild mig brændte,
-
 din hvide Arm, der drog mig tæt og tyst.
 Hvor kunde jeg da sidde her som før,
 din Skjønhed skjult som bag et evigt Slør,
 et Væld, der Andres Øjne skulde mætte,
 og ikke vide, hvor dit Øje saa',
 og om det just var mig, det hviled paa,
-- dræb mig, o Gud; men skaan mig kun for dette.
+- dræb mig, o Gud; men skaan mig kun for dette.<footnote>Marston er nu blind. Dette Digt er formodenlig bleven til paa et Tidspunkt, da han havde den første Anelse om den kommende Ulykke.</footnote>
 </poetry>
 </body>
 </text>
 
-<text id="longfellow2026081545" author="longfellow">
+</content>
+</section>
+
+<section level="2">
+<head>
+  <title>Henry Wadsworth Longfellow</title>
+</head>
+<content>
+
+<text id="ipsen2026081545" author="ipsen">
 <head>
   <title>Midnatsmesse for det døende Aar</title>
   <firstline>Nu er Aaret en gammel Mand</firstline>
+  <notes><note unknown-original-by="longfellow"/></notes>
   <source pages="92-94"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2762,10 +2970,29 @@ Christe, elejson!
 </body>
 </text>
 
-<text id="hugo2026081546" author="hugo">
+</content>
+</section>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>Frankrig</title>
+</head>
+<content>
+
+<section level="2">
+<head>
+  <title>Victor Hugo</title>
+</head>
+<content>
+
+<text id="ipsen2026081546" author="ipsen">
 <head>
   <title>Barnet</title>
   <firstline>Alt er Øde og Tomhed, hvor Tyrken har plantet</firstline>
+  <notes><note unknown-original-by="hugo"/></notes>
   <source pages="97-99"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2778,8 +3005,7 @@ Chios, der spejled i Bølgen sine Kyster, sin høje Skov,
 sine hvide Paladser, og om Aftnen, naar Vinden sov,
 et Kor af unge Piger, der dansed.
 
-Og dog - blandt de rygende Tomter — nær
-Dødens stivnede Skræk
+Og dog - blandt de rygende Tomter — nær Dødens stivnede Skræk
 sidder et blaaøjet Barn, en Dreng med de græske Trak,
 <pb n="98" facs="115.jpg"/>bleg som en Blomst, som Stormen har knækket.
 En Hvidtjørnbusk har skjult ham under sin Krones Skjærm,
@@ -2787,53 +3013,42 @@ gjemt bag de blomstrende Grene for Fjendens rasende Sværm,
 han selv en Blomst af Blomsterne dækket.
 
 Hvad vil Du, stakkels Barn, der sidder bleg uden Trøst,
-sammensunket i Graad paa Klippens det nøgne
-Bryst
-
+sammensunket i Graad paa Klippens det nøgne Bryst
 - det tunge Hoved i Hænderne bøjet?
 Hvad vil Du, for at Glæden skal farve paa Ny din Kind,
 skal gjennembryde den Sky, skal flænge det Taagespind,
 som dine Taarer har lagt Dig for Øjet?
+
 Ønsker Du én af de Lilier, der pryde Persiens Jord,
 der gror i de mørke Brønde og med sit himmelblaa Flor vinder om Irans Væld sit Vidundersmykke?
 Eller ønsker Du en Frugt af Tubatræet, der slaar
 sin løvede Skjærm saa vidt, at det varer hundrede Aar,
 før en Hest i Løb naar ud af dets Skygge?
 
-stakkels Barn? Vil Du have den
-Fugl, hvis Sang
-opfylder Skoven med Vellyd, skjøn som Oboens
-Klang,
-<pb n="99" facs="116.jpg"/>ee TEE rm Een
-
-der alle Sangere overdøver?
+Hvad vil Du, stakkels Barn? Vil Du have den Fugl, hvis Sang
+opfylder Skoven med Vellyd, skjøn som Oboens Klang,
+<pb n="99" facs="116.jpg"/>der alle Sangere overdøver?
 Sig, vilde Du atter smile, hvis hine Gaver Du fik?
-Nej, svarer Grækerdrengen med Taarer endnu i
-sit Blik;
+Nej, svarer Grækerdrengen med Taarer endnu i sit Blik;
 det er Kugler og Krudt, det er det, jeg behøver.
 </poetry>
 </body>
 </text>
 
-<text id="hugo2026081547" author="hugo">
+<text id="ipsen2026081547" author="ipsen">
 <head>
   <title>Gamle Breve</title>
   <firstline>I mine Breve fra Ungdommens Aar</firstline>
+  <notes><note unknown-original-by="hugo"/></notes>
   <source pages="99-100"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-<poetry>
-<nonum>
 <quote lang="it">
 Oh primavera! gioventù dell' anno!
-</quote>
-</nonum>
-<nonum>
-<quote lang="it">
 Oh gioventù, primavera della vita!
 </quote>
-</nonum>
+<poetry>
 I mine Breve fra Ungdommens Aar,
 hvilken Duft, hvilke Toner i Møde mig slaar
 fra jert gule, forkrøllede Blad.
@@ -2886,10 +3101,11 @@ som skuffende Skygger paa Sand.
 </body>
 </text>
 
-<text id="hugo2026081548" author="hugo">
+<text id="ipsen2026081548" author="ipsen">
 <head>
   <title>Ekstase</title>
   <firstline>Paa Stranden højt over Havet en stjærneklar Nat</firstline>
+  <notes><note unknown-original-by="hugo"/></notes>
   <source pages="101"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2899,8 +3115,7 @@ Paa Stranden højt over Havet en stjærneklar Nat jeg stod;
 ej en Sky var at se paa Himlen, ej et Sejl paa den spejlblanke Flod,
 da aabnedes mit Øje, en anden Verden jeg saa',
 og Skove og Bjærge talte, igjennem Luften der brød
-et Kor af mumlende Stemmer, en dæmpet Spørgen
-der lød,
+et Kor af mumlende Stemmer, en dæmpet Spørgen der lød,
 mod Havet, mod Himlen den blaa.
 
 Og Stjærnernes Legioner begyndte at nynne en Sang,
@@ -2913,12 +3128,21 @@ Det er Herren, det er Herren vor Gud!
 </body>
 </text>
 
+</content>
+</section>
+
+<section level="2">
+<head>
+  <title>Alfred de Musset</title>
+</head>
+<content>
+
 <text id="schandorph2026081549" author="schandorph">
 <head>
   <title>Kom mig i Hu</title>
   <firstline>Kom mig i Hu, naar Morgenrøden fjærner</firstline>
   <source pages="102-103"/>
-  <notes><note>Oversat af S. Schandorph.</note></notes>
+  <notes><note unknown-original-by="musset"/></notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2929,9 +3153,9 @@ Kom mig i Hu, naar under Krans af Stjærner
 den tankefulde Nat sin Vandring gaar!
 Naar højt dit Hjærte slaar, naar Jublens Stemmer lyde,
 naar Aftenskyggerne dig bløde Drømme byde,
-da hvisker det i Lund
-i Aftnens tavse Stund:
-Kom mig i Hu!
+        da hvisker det i Lund
+        i Aftnens tavse Stund:
+            Kom mig i Hu!
 
 Kom mig i Hu, naar Skjæbnens Vold ad Aare
 har vore Veje skilt for evig Tid,
@@ -2939,9 +3163,9 @@ naar Aar, Landflygtighed og Sorger saare
 mit Hjærte dødeligt i Livets Strid.
 Tænk paa min Kjærlighed - paa mit Farvel, det sidste!
 Min Elskov skal ej Tid, ej Rum af Hjærtet vriste.
-Saa længe det kan slaa,
-dets Raab vil til dig naa:
-Kom mig i Hu!
+        Saa længe det kan slaa,
+        dets Raab vil til dig naa:
+            Kom mig i Hu!
 
 Kom mig i Hu, naar paa den sorte Tilje
 mit brustne Hjærte sover under Muld!
@@ -2949,19 +3173,19 @@ mit brustne Hjærte sover under Muld!
 sig paa min Tue aabner vemodsfuld!
 Jeg skal ej se dig mer, men, naar du gaar til Hvile,
 skal som en Søster tro min Sjæl imod dig ile,
-da lyde skal dens Røst,
-som Suk fra Nattens Bryst:
-Kom mig i Hu!
+        da lyde skal dens Røst,
+        som Suk fra Nattens Bryst:
+            Kom mig i Hu!
 </poetry>
 </body>
 </text>
 
-<text id="schandorph2026081550" author="schandorph">
+<text id="richter2026081550" author="richter">
 <head>
   <title>Til Ninon</title>
   <firstline>Hvis dog jeg sagde dig: »Jeg har dig kjær«</firstline>
   <source pages="103-105"/>
-  <notes><note>Oversat af S. Schandorph.</note></notes>
+  <notes><note unknown-original-by="musset"/></notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3029,12 +3253,12 @@ hvem véd, Ninon, hvad da du vilde svare?
 </body>
 </text>
 
-<text id="schandorph2026081551" author="schandorph">
+<text id="richter2026081551" author="richter">
 <head>
   <title>Ossiansk Efterklang</title>
   <firstline>Ensomme Aftenstjærne, fjærnt vandrende Sendebud</firstline>
   <source pages="105-106"/>
-  <notes><note>Oversat af S. Schandorph.</note></notes>
+  <notes><note unknown-original-by="musset"/></notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3069,10 +3293,11 @@ Kjærligheds Stjærne, dal ej endnu!
 </body>
 </text>
 
-<text id="musset2026081552" author="musset">
+<text id="ipsen2026081552" author="ipsen">
 <head>
   <title>Til Pepita</title>
   <firstline>Sig mig, Pepita, hver Gang Dagen viger</firstline>
+  <notes><note unknown-original-by="musset"/></notes>
   <source pages="106-107"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -3111,7 +3336,16 @@ maaske med mig — maaske med Ingenting.
 </body>
 </text>
 
-<text id="antologierdk2026081553">
+</content>
+</section>
+
+<section level="2">
+<head>
+  <title>François Coppée</title>
+</head>
+<content>
+
+<text id="ipsen2026081553" author="ipsen">
 <head>
   <title>Ringen</title>
   <firstline>Naar man forstyrrer gamle Graves Ro</firstline>
@@ -3157,12 +3391,21 @@ Mindet om Dig, som i Hjærtet jeg gjemmer.
 </body>
 </text>
 
+</content>
+</section>
+
+<section level="2">
+<head>
+  <title>Émile Zola</title>
+</head>
+<content>
+
 <text id="schandorph2026081554" author="schandorph">
 <head>
   <title>Hvad ønsker jeg?</title>
   <firstline>Hvad ønsker jeg paa Bjærgets Hang?</firstline>
   <source pages="109-110"/>
-  <notes><note>Af Émile Zola. Oversat af S. Schandorph.</note></notes>
+  <notes><note>Af Émile Zola.</note></notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3220,7 +3463,16 @@ i Mosset præger knap et Mærke.
 </body>
 </text>
 
-<text id="antologierdk2026081555">
+</content>
+</section>
+
+<section level="2">
+<head>
+  <title>Guy de Maupassant</title>
+</head>
+<content>
+
+<text id="ipsen2026081555" author="ipsen">
 <head>
   <title>Vildgjæssene</title>
   <firstline>Er Alting til Ro, selv Spurven pipper ej længer</firstline>
@@ -3234,15 +3486,18 @@ Er Alting til Ro, selv Spurven pipper ej længer,
 over den øde Mark truende Sneskyen hænger,
 kun den graadige Krage finder for Sulten ej Hvile,
 idelig med sit Næb løfter den Snelagnets Flig.
+
 Men hør i Horisonten lyder et skingert Skrig,
 hist dukker af Skyen frem en flyvende Vildgæskile,
 alle med udstrakt Hals, linieret som en Snor,
 bruser den fejende Flok over den slumrende Jord,
 piskende Luftens Strøm under den susende Vinge.
+
 Og Føreren for dette Luftverdenens Pilegrimstog
 udsender nu og da i Stammens det vilde Sprog
 et gjennemtrængende Skrig, dybt fra den fjædrede Bringe,
 der trænger vidt og bredt gjennem det stille Rum.
+
 Og med forstærket Fart den lille Karavane
 fortsætter uforsagt ad Syden til sin Bane
 og lader Sletten bag sig dobbelt øde og stum.
@@ -3251,6 +3506,7 @@ Men sé deres fangne Brødre, som slentre om dernede,
 halvt stivnede af Kulden hjem til den lune Sti,
 ført af en pjaltet Vogter, der fløjter en Melodi,
 vralte de langsomt fremad i Vejens Hjulspor brede.
+
 <pb n="112" facs="129.jpg"/>Da rammes deres Øre af de flyvende Brødres Skrig,
 de løfte Hovedet op, forbavset et Blik de sende
 efter disse frie Fugle, der ingen Vogtere kjende,
@@ -3267,12 +3523,30 @@ der lader Sletten bag sig dobbelt øde og stum.
 </body>
 </text>
 
-<text id="antologierdk2026081556">
+</content>
+</section>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>Spanien</title>
+</head>
+<content>
+
+<section level="2">
+<head>
+  <title>Don Angel de Saavedra</title>
+</head>
+<content>
+
+<text id="richter2026081556" author="richter">
 <head>
   <title>Romance</title>
   <firstline>Ser du ikke, min Olympia</firstline>
   <source pages="115-117"/>
-  <notes><note>Af Don Ángel de Saavedra. Oversat af A. Richter.</note></notes>
+  <notes><note>Af Don Angel de Saavedra.</note></notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3307,7 +3581,6 @@ ser mit Blik nu sunkne sammen
 og af Tiden tørret ud.
 Alle hine stolte Borge,
 der paa disse Bredder knejsed,
-
 ser jeg ligge i Ruiner -
 ak, det Syn gjør Hjærtet Ve!
 Og hovmodige Kolosser,
@@ -3342,13 +3615,23 @@ saa forenede som de!
 </body>
 </text>
 
-<text id="antologierdk2026081557">
+</content>
+</section>
+
+<section level="2">
+<head>
+  <title>Don Fermin de la Puente</title>
+</head>
+<content>
+
+<text id="richter2026081557" author="richter">
 <head>
   <title>Sonet</title>
   <firstline>Du skjønne Drøm fra mine Barndomsdage</firstline>
   <source pages="118"/>
-  <notes><note>Af Don Fermín de la Puente y Apezechea. Oversat af A. Richter.</note></notes>
+  <notes><note>Af Don Fermin de la Puente y Apezechea.</note></notes>
   <quality>korrektur1,kilde,side</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -3373,12 +3656,21 @@ hos Gud vi bliver Et med vore Kjære.
 </body>
 </text>
 
-<text id="antologierdk2026081558">
+</content>
+</section>
+
+<section level="2">
+<head>
+  <title>Don Ramón Campoamor</title>
+</head>
+<content>
+
+<text id="richter2026081558" author="richter">
 <head>
   <title>Bækken</title>
   <firstline>O beskedne Bæk, som flyder</firstline>
   <source pages="119-121"/>
-  <notes><note>Oversat af A. Richter.</note></notes>
+  <notes><note unknown-original-by="campoamor"/></notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3456,12 +3748,12 @@ o Ve! for ej at høre mine Klager.
 </body>
 </text>
 
-<text id="antologierdk2026081559">
+<text id="richter2026081559" author="richter">
 <head>
   <title>Lykken er Døden</title>
   <firstline>Du spæde Barn, i Moderarmen vugget</firstline>
   <source pages="121-122"/>
-  <notes><note>Oversat af A. Richter.</note></notes>
+  <notes><note unknown-original-by="campoamor"/></notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3473,42 +3765,57 @@ den Lykke gjemt, hvorefter jeg har sukket!
 
 <nonum><center>Moderen.</center></nonum>
 Ser du ej, Barnet græder i min Favn?
-Gaa længer frem!
+    Gaa længer frem!
+
 <pb n="122" facs="139.jpg"/><nonum><center>2.</center></nonum>
 
 I unge Piger, som fik Skjønheds Smykke,
 giv mig, som søgte Lykken fjærnt og nær,
 i eders Kjærlighed en varig Lykke!
+
 <nonum><center>De unge Piger.</center></nonum>
 Usalig den, som har en Anden kjær!
-Gaa længer frem!
+    Gaa længer frem!
 
 <nonum><center>3.</center></nonum>
+
 Til eder, Rigmænd, jeg mit Haab vil vende;
 jeg efter Lykken jog fra Kyst til Kyst;
 hvis Guld gi'er Lykke, giv mig Guld i Hænde!
 
 <nonum><center>De Rige.</center></nonum>
+
 Ser du ej Dolken rettet mod vort Bryst?
-Gaa længer frem!
+      Gaa længer frem!
 
 <nonum><center>4.</center></nonum>
+
 Saa tal, I Oldinge! Jeg har i Blinde
 søgt Lykken febersyg fra Land til Land;
 sig, om ved Gravens Rand den er at finde?
+
 <nonum><center>De Gamle.</center></nonum>
 Den findes ej en Gang ved Gravens Rand.
-Gaa længer frem!!
+      Gaa længer frem!!
 </poetry>
 </body>
 </text>
 
-<text id="antologierdk2026081560">
+</content>
+</section>
+
+<section level="2">
+<head>
+  <title>Don Antonio de Trueba</title>
+</head>
+<content>
+
+<text id="richter2026081560" author="richter">
 <head>
   <title>For oven og for neden</title>
   <firstline>Højt paa de knejsende Bjærge</firstline>
   <source pages="123-124"/>
-  <notes><note>Af Don Antonio de Trueba. Oversat af A. Richter.</note></notes>
+  <notes><note>Af Don Antonio de Trueba.</note></notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3556,12 +3863,21 @@ end dybt i det flade Land.
 </body>
 </text>
 
-<text id="antologierdk2026081561">
+</content>
+</section>
+
+<section level="2">
+<head>
+  <title>Don Juan Valera</title>
+</head>
+<content>
+
+<text id="richter2026081561" author="richter">
 <head>
   <title>Sonet</title>
   <firstline>Naar Tiden grumt din Skjønhed søndertræder</firstline>
   <source pages="124-125"/>
-  <notes><note>Af Don Juan Valera. Oversat af A. Richter.</note></notes>
+  <notes><note>Af Don Juan Valera.</note></notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3588,12 +3904,21 @@ et Tempel dér, som aldrig lægges øde.
 </body>
 </text>
 
-<text id="antologierdk2026081562">
+</content>
+</section>
+
+<section level="2">
+<head>
+  <title>Don Gaspar Núñez de Arce</title>
+</head>
+<content>
+
+<text id="richter2026081562" author="richter">
 <head>
   <title>Tusmørke</title>
   <firstline>Solen var ved sin Nedgang</firstline>
   <source pages="125-126"/>
-  <notes><note>Af Don Gaspar Núñez de Arce. Oversat af A. Richter.</note></notes>
+  <notes><note>Af Don Gaspar Núñez de Arce.</note></notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3631,13 +3956,14 @@ og i vor Samvittighed Nat.
 </body>
 </text>
 
-<text id="antologierdk2026081563">
+<text id="richter2026081563" author="richter">
 <head>
   <title>Sonet</title>
   <firstline>Har jeg med Oprørs Smuds din Renhed blandet</firstline>
   <source pages="126-127"/>
-  <notes><note>Af Don Gaspar Núñez de Arce. Oversat af A. Richter.</note></notes>
+  <notes><note>Af Don Gaspar Núñez de Arce.</note></notes>
   <quality>korrektur1,kilde,side</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -3662,12 +3988,21 @@ jo mer hun sveg, jo mer hun os fortryller.
 </body>
 </text>
 
-<text id="antologierdk2026081564">
+</content>
+</section>
+
+<section level="2">
+<head>
+  <title>Gustavo Adolfo Bécquer</title>
+</head>
+<content>
+
+<text id="richter2026081564" author="richter">
 <head>
   <title>I den mørke Krog i Salonen</title>
   <firstline>I den mørke Krog i Salonen</firstline>
   <source pages="127-128"/>
-  <notes><note>Af Gustavo Adolfo Bécquer. Oversat af A. Richter.</note></notes>
+  <notes><note>Af Gustavo Adolfo Bécquer.</note></notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3690,12 +4025,12 @@ der siger: »Stat op og gaa!«
 </body>
 </text>
 
-<text id="antologierdk2026081565">
+<text id="richter2026081565" author="richter">
 <head>
   <title>Snart komme Svalerne</title>
   <firstline>Snart komme Svalerne igjen tilbage</firstline>
   <source pages="128-129"/>
-  <notes><note>Af Gustavo Adolfo Bécquer. Oversat af A. Richter.</note></notes>
+  <notes><note>Af Gustavo Adolfo Bécquer.</note></notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3733,54 +4068,55 @@ vil kunne elske dig.
 </body>
 </text>
 
-<text id="antologierdk2026081566">
+<text id="richter2026081566" author="richter">
 <head>
   <title>Jeg véd, at jeg skal dø før du</title>
   <firstline>Jeg véd, at jeg skal dø før du; til Maalet</firstline>
   <source pages="129-130"/>
-  <notes><note>Af Gustavo Adolfo Bécquer. Oversat af A. Richter.</note></notes>
+  <notes><note>Af Gustavo Adolfo Bécquer.</note></notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Jeg véd, at jeg skal dø før du; til Maalet
-min Bane hastig gaar;
+    min Bane hastig gaar;
 thi dybt har i mit Bryst du trykket Staalet,
-der gav mig Ulivssaar.
+    der gav mig Ulivssaar.
 
 Da vil min Aand, som aldrig Modstand kjendte
-og til sig selv har Lid,
+    og til sig selv har Lid,
 sætte sig ned ved Dødens Port og vente,
-til du er kommen did.
+    til du er kommen did.
 
 Og mens jeg venter dér med trofast Tanke,
-vil Aar for Aar gaa hen,
+    vil Aar for Aar gaa hen,
 og endelig vil du paa Porten banke —
-Hvo banker ej paa den?
+    Hvo banker ej paa den?
 
 Og da, idet din Skyld vil vorde slettet,
-naar du til Syndebod
+    naar du til Syndebod
 i Dødens rene Vande dig har tvættet
-som i en Jordans Flod —
+    som i en Jordans Flod —
+
 <pb n="130" facs="147.jpg"/>vil dér, hvor Livets Larm med Et forstummer,
-naar den mod Graven slaar,
+    naar den mod Graven slaar,
 lig Bølgen, der med Støj mod Bredden skummer,
-men derpaa tavs forgaar —
+    men derpaa tavs forgaar —
 
 dér, hvor vor Sjæl er for hvert Baand befriet,
-i Evighedens Skjær —:
+    i Evighedens Skjær —:
 Alt, hvad vi To i Livet har fortiet,
-vil vi udtale dér.
+    vil vi udtale dér.
 </poetry>
 </body>
 </text>
 
-<text id="antologierdk2026081567">
+<text id="richter2026081567" author="richter">
 <head>
   <title>Jeg stilled Lyset bort</title>
   <firstline>Jeg stilled Lyset bort; paa Sengekanten</firstline>
   <source pages="130"/>
-  <notes><note>Af Gustavo Adolfo Bécquer. Oversat af A. Richter.</note></notes>
+  <notes><note>Af Gustavo Adolfo Bécquer.</note></notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3803,12 +4139,21 @@ og at i samme Nat mit Haar blev graat.
 </body>
 </text>
 
-<text id="antologierdk2026081568">
+</content>
+</section>
+
+<section level="2">
+<head>
+  <title>Don Manuel José Cortés</title>
+</head>
+<content>
+
+<text id="richter2026081568" author="richter">
 <head>
   <title>Til Illimanni</title>
   <firstline>Vær hilset, Illimanni, du, som skuer</firstline>
   <source pages="131-134"/>
-  <notes><note>Af Manuel José Cortés. Oversat af A. Richter.</note></notes>
+  <notes><note>* Illimanni: En Andestop i Bolivia.</note><note>Af Manuel José Cortés.</note></notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3834,7 +4179,7 @@ og ved din Fod du trindt det Liv udbreder,
 hvis rige Kim du i dit Indre dølger.
 
 I tavse Skove, strækkende sig vide,
-Pinjers og stolte Cedres Kroner gynge<footnote>En Andestop i Bolivia.</footnote>;
+Pinjers og stolte Cedres Kroner gynge;
 <pb n="132" facs="149.jpg"/>blege Akasier, røde Rosers Klynge
 ses voxe dér ved Ananasens Side.
 
@@ -3911,12 +4256,21 @@ som Skibes hvide Sejl i Havets Bøiger.
 </body>
 </text>
 
-<text id="antologierdk2026081569">
+</content>
+</section>
+
+<section level="2">
+<head>
+  <title>Don Ricardo Bustamante</title>
+</head>
+<content>
+
+<text id="richter2026081569" author="richter">
 <head>
   <title>Serenade</title>
   <firstline>Medens de natlige Skygger</firstline>
   <source pages="134-135"/>
-  <notes><note>Af Ricardo Bustamante. Oversat af A. Richter.</note></notes>
+  <notes><note>Af Ricardo Bustamante.</note></notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3942,6 +4296,7 @@ hvorfor har kun du alene
 lukket for den dit Bryst? —
 Vaagn op! Forbarm dig, du Grumme;
 kom til Vindvet og lyt til min Røst!
+
 Før du det mærker, vil Tiden
 virke paa vanlig Vis;
 Skuffelser fører den med sig,
@@ -3952,6 +4307,7 @@ og hamrer dens Kno paa Døren,
 da hjælper ej Laas eller Slaa. —
 Saa vaagn og luk op, før de komme;
 lad ej Kjærlighed udenfor staa!
+
 Og naar efter sorgfulde Dage
 mod Graven din Fod bliver vendt,
 da dør du, og da har du ikke
@@ -3966,56 +4322,73 @@ kom til Vindvet og pin mig ej mer!
 </body>
 </text>
 
-<text id="antologierdk2026081570">
+</content>
+</section>
+
+<section level="2">
+<head>
+  <title>Don Guillermo Blest Gana</title>
+</head>
+<content>
+
+<text id="richter2026081570" author="richter">
 <head>
   <title>Haab!</title>
-  <firstline>„Haab, Søster!“ — siger Vinden</firstline>
+  <firstline>Haab, Søster! — siger Vinden</firstline>
   <source pages="136-137"/>
-  <notes><note>Af Guillermo Blest Gana. Oversat af A. Richter.</note></notes>
+  <notes><note>Af Guillermo Blest Gana.</note></notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
-„Haab, Søster!“ — siger Vinden
+      „Haab, Søster!“ — siger Vinden
 til Blomsten, som i Sommeraft'nens Hede
 føler i Afmagt Kræfternes Forsvinden. —
-»Giv ikke tabt i Nøden!
+      »Giv ikke tabt i Nøden!
 En liflig Draabe Dug alt holdes rede,
 og jeg skal bringe den med Morgenrøden.«
 
 Da ser den visne Blomst med løftet Pande
 mod Solen, som gaar ned bag fjærne Strande.
 
-»Haab!« - siger Herrens Stemme
+      »Haab!« - siger Herrens Stemme
 til den Forladte. — »Ikke mer du græde!
 stands dine Suk og søg din Sorg at glemme!
-Bed! thi en Bøn fra Hjærtet
+      Bed! thi en Bøn fra Hjærtet
 kan opnaa Alt, og fra mit hellige Sæde
 jeg sender Haab, naar Modgang dig har smærtet.«
 
 Da glemmer han sin Sorg, og mod det Høje
 han hæver atter tillidsfuld sit Øje.
 
-Til mig en elsket Læbe
+      Til mig en elsket Læbe
 sagde det Samme: — »Haab!« — i Afskedsstunden,
 da Smærten trued med mit Mod at dræbe.
-»Haab! thi maa nu du lide,
-<pb n="137" facs="154.jpg"/>RE eee ee Tre
-
-skal snart, naar kun en føje Tid er svunden,
+      »Haab! thi maa nu du lide,
+<pb n="137" facs="154.jpg"/>skal snart, naar kun en føje Tid er svunden,
 den, som du elsker, være ved din Side!«
+
 Og uden Klage gjør jeg, hvad der kræves;
 jeg haaber altid, altid dog forgjæves.
 </poetry>
 </body>
 </text>
 
-<text id="antologierdk2026081571">
+</content>
+</section>
+
+<section level="2">
+<head>
+  <title>Don Manuel Nicolás Corpancho</title>
+</head>
+<content>
+
+<text id="richter2026081571" author="richter">
 <head>
   <title>Til Aftenstjærnen</title>
   <firstline>Sønderriv den dunkle Taage</firstline>
   <source pages="137-138"/>
-  <notes><note>Af Manuel Nicolás Corpancho. Oversat af A. Richter.</note></notes>
+  <notes><note>Af Manuel Nicolás Corpancho.</note></notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4059,12 +4432,21 @@ ogsaa fremad mod min Grav.
 </body>
 </text>
 
-<text id="antologierdk2026081572">
+</content>
+</section>
+
+<section level="2">
+<head>
+  <title>Don Benjamín Vicuña Solar</title>
+</head>
+<content>
+
+<text id="richter2026081572" author="richter">
 <head>
   <title>Til Gertrudis</title>
   <firstline>Som Svalen, naar det favre Foraar kommer</firstline>
   <source pages="139"/>
-  <notes><note>Af Benjamín Vicuña Solar. Oversat af A. Richter.</note></notes>
+  <notes><note>Af Benjamín Vicuña Solar.</note></notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4072,89 +4454,110 @@ ogsaa fremad mod min Grav.
 Som Svalen, naar det favre Foraar kommer,
 søger til Barndomsreden snelt tilbage,
 saaledes du, hvis Længsler hjem dig drage,
-forlader os i Kvæld.
+        forlader os i Kvæld.
 
 Og jeg, din Ven, som bliver her bedrøvet
 og nu først fatter, hvad i dig jeg mister,
 jeg sender i den bitre Sorg, jeg frister,
-til dig et ømt Farvel.
+        til dig et ømt Farvel.
 
 Kun nogle korte Timer var vi sammen,
 men afgjort blev min Lod i dette Møde;
 jeg véd, at uden dig mit Liv er øde,
-og skilles dog fra dig
+        og skilles dog fra dig
 
 Du, som saa medynksfuld, saa god og kjærlig
 kan med din Trøst hver fremmed Sorg husvale,
 glem ikke i det Fjærne disse Dale,
-glem ikke mig!
+        glem ikke mig!
 </poetry>
 </body>
 </text>
 
-<text id="antologierdk2026081573">
+<text id="richter2026081573" author="richter">
 <head>
   <title>Til min Hest</title>
   <firstline>Hver Gang jeg sørger og ved Livet væmmes</firstline>
   <source pages="140-141"/>
-  <notes><note>Af Benjamín Vicuña Solar. Oversat af A. Richter.</note></notes>
+  <notes><note>Af Benjamín Vicuña Solar.</note></notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Hver Gang jeg sørger og ved Livet væmmes,
-har du mig stedse trøstet;
+        har du mig stedse trøstet;
 ved Synet af din Kraft, som aldrig tæmmes,
 voxer min Energi paa Ny i Brystet.
+
 Bjærge og Dale ser jeg snelt forsvinde,
-naar vi forbi dem sprænge;
+        naar vi forbi dem sprænge;
 imod min Pande slaa de friske Vinde,
 og Solens Straaler til mit Hjærte trænge.
-»Stræk ud, min Hingst,« jeg raaber, kjærlig bøjet over din skjønne Manke,
+
+»Stræk ud, min Hingst,« jeg raaber, kjærlig bøjet
+        over din skjønne Manke,
 og flux du lystrer, dansende fornøjet,
 fyrig og stolt og hurtig som min Tanke.
 
 Og fremad da, mens du med Nakken knejser,
-i Vindens Spor du løber,
+        i Vindens Spor du løber,
 og med din jærnbeslagne Hov du rejser
 en Sky af Støv, der tæt om os sig svøber.
+
 Da glemmer jeg hver Skuffelse, der mødte
-mig i min Kamp med Krybet,
+        mig i min Kamp med Krybet,
 saa stolt som Englen, hvem et Magtbud stødte
 en Gang fra Himlen ned til Afgrundsdybet.
+
 Med ingen jordisk Magt jeg vilde bytte
-den Salighed, der fylder
+        den Salighed, der fylder
 mit Bryst, saa snart jeg ser den kjære Hytte,
 som Aftensolen rødmende forgylder.
+
 <pb n="141" facs="158.jpg"/>Il, Kammerat! Forkort den Vej, der fjærner
-mig fra min Lykkes Eden,
-at snelt jeg naar det Hus, hvor tvende Stjærner lyse saa mildt for mig og Kjærligheden!
+        mig fra min Lykkes Eden,
+at snelt jeg naar det Hus, hvor tvende Stjærner
+lyse saa mildt for mig og Kjærligheden!
 
 Ja, lad din Manke frit for Vinden flagre,
-idet du fremad iler!
+        idet du fremad iler!
 Da skal du se, hvor glad jeg i min fagre
 Venindes Favn igjen mit Hoved hviler.
 </poetry>
 </body>
 </text>
 
+</content>
+</section>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>Italien</title>
+</head>
+<content>
+
+<section level="2">
+<head>
+  <title>Alessandro Manzoni</title>
+</head>
+<content>
+
 <text id="schandorph2026081574" author="schandorph">
 <head>
   <title>Korsang af Tragedien „Adelchi“</title>
   <firstline>(Karl den Store har slaaet Longobarderkongen Desiderius</firstline>
   <source pages="145-148"/>
-  <notes><note>Oversat af S. Schandorph.</note></notes>
+  <notes><note unknown-original-by="manzoni"/></notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<prose>
+(Karl den Store har slaaet Longobarderkongen Desiderius og hans Søn Adelchi. Den latinsk-italienske oprindelige Befolkning anser Frankerne for Befriere fra Longobardernes Aag. Koret udtaler, at der er Intet for Latinerne at haabe af de ny Erobrere, der ville forene sig med de gamle til den oprindelige Befolknings Undertrykkelse.)
+</prose>
 <poetry>
-(Karl den Store har slaaet Longobarderkongen Desiderius
-og hans Søn Adelchi. Den latinsk-italienske oprindelige
-Befolkning anser Frankerne for Befriere fra Longobardernes
-Aag. Koret udtaler, at der er Intet for Latinerne at haabe
-af de ny Erobrere, der ville forene sig med de gamle til
-den oprindelige Befolknings Undertrykkelse.)
-
 Fra mosdækte Atrier, revnede Haller,
 fra Skove, fra Smedier, hvor Hammerslag gjalder,
 fra Marker, som vandes af Slavernes Sved,
@@ -4238,9 +4641,10 @@ og bygge paa Marken, som rødmer af Blod.
 <text id="schandorph2026081575" author="schandorph">
 <head>
   <title>Opstandelsen</title>
+  <subtitle>Paaskehymne</subtitle>
   <firstline>Se, han opstod! Har den sorte</firstline>
   <source pages="148-152"/>
-  <notes><note>Oversat af S. Schandorph.</note></notes>
+  <notes><note unknown-original-by="manzoni"/></notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4252,6 +4656,7 @@ Har han mod den Vold, han fristed,
 sejerstærk sig vidst at værge?
 - Ja ved Ham jeg tør det sværge,
 som ham har af Døden vakt.
+
 Se, han opstod! Linets Folder
 ej det fagre Hoved skjule.
 Se, han opstod! Ej ham holder
@@ -4259,6 +4664,7 @@ mer den tomme Klippehule.
 Kistens Laag staar brudt i Krogen,
 Herren rejste sig — lysvaagen —
 som en Kæmpe fra en Rus.
+
 I har set, naar Vandringsmanden
 ved en Rysten med sit Hoved,
 fjærner hastig bort fra Panden
@@ -4266,6 +4672,7 @@ Bladet, som, mens han har sovet,
 ned fra høje Kviste svang sig
 og tilsidst mod Jorden tvang sig
 i et mat og langsomt Fald;
+
 <pb n="149" facs="166.jpg"/>saa den stærke Kæmpe kasted
 bort den sorte Blok fra Graven,
 da hans Sjæl i Flugt var hastet
@@ -4281,6 +4688,7 @@ nys de stærke Porte sprængte!
 I, som haabløst maatte vente,
 Sorgens tunge Aar er endte,
 - her er Eders Frelsermand!
+
 Op, hvor Himlens Sal sig hvælved,
 først af Alle han sig hæved,
 han steg ned til stumme Helved
@@ -4288,6 +4696,7 @@ og de gamle Fædre kræved,
 Han - de svundne Tiders Længsel,
 Han - den onde Fjendes Trængsel,
 Han - Forjættelsernes Helt!
+
 Som en Fader, der fortæller
 Børnene om svundne Dage,
 saa om fjerne Fremtid melder
@@ -4295,6 +4704,7 @@ Seerskaren uden Mage.
 Om den Sol, som højt skal gløde,
 Herrens Ord i Talen løde
 med en Ed til Jordens Børn.
+
 <pb n="150" facs="167.jpg"/>Den Gang højt for Jorderige
 Haggaj og Jesaia tolked,
 at den Savnede skal stige
@@ -4310,6 +4720,7 @@ Se - da bæver Zions Stene,
 Hedningvagten Spotten glemmer,
 Dødens Rædsel den fornemmer
 isne gjennem Marv og Ben.
+
 Man en sælsom Yngling skued,
 siddende paa Dødningmindet;
 som et Lyn hans Aasyn lued,
@@ -4317,6 +4728,7 @@ og hans Skrud som Sneen skinned.
 Kvindens Taareblik sig klared,
 da han hendes Ord besvared:
 »Herren opstod — er ej her.«
+
 Bort med Dødens Dragt, den stygge!
 Bort med Sorgens Flor, det sorte!
 Straal med Glans hvert gyldent Smykke!
@@ -4324,6 +4736,7 @@ Præst! tag paa din Messeskjorte!
 Herrens Legem skal du bære
 frem til den Opstandnes Ære
 under Alterkjærters Glans!
+
 <pb n="151" facs="168.jpg"/>Højt fra Altret klinger Ordet:
 »Himlens Dronning — dig ske Hæder!
 thi den Gud, som sig omgjorded
@@ -4339,6 +4752,7 @@ Gjæstebud hvert Hus bereder.
 Hver en Moder vil med Glæde
 i den bedste Kjortel klæde
 sine søde Glutter paa.
+
 Rigmænds Maaltid lidt vil spare,
 at hvert Hus kan mættet vorde,
 Gaverne som fordum vare
@@ -4346,6 +4760,7 @@ nægtede fra høje Borde,
 nu til lave Hytter ile,
 saa den bredte Dug kan smile
 mildt idag til Fattigmand.
+
 Bort med Kaadheds Færd, den vilde,
 Larm og Skrig er nu uværdig.
 Ton nu frem, du salig-stille
@@ -4353,6 +4768,7 @@ Fryd, som fylder hver Retfærdig,
 denne Fryd, som ejer Freden,
 den, som himmelsk alt herneden
 varsler Evighedens Fryd.
+
 <pb n="152" facs="169.jpg"/>Pragtfuld Festens Sol skal skinne,
 Salige, for Eders Øje!
 Vé Enhver, som fræk i Sinde
@@ -4364,141 +4780,150 @@ skal med Herren stande op.
 </body>
 </text>
 
+</content>
+</section>
+
+<section level="2">
+<head>
+  <title>Giacomo Leopardi</title>
+</head>
+<content>
+
 <text id="schandorph2026081576" author="schandorph">
 <head>
   <title>Brutus den Yngre</title>
   <firstline>Da først Italiens Kraft laa knust og styrtet</firstline>
   <source pages="152-156"/>
-  <notes><note>Oversat af S. Schandorph.</note></notes>
+  <notes><note unknown-original-by="leopardi"/></notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Da først Italiens Kraft laa knust og styrtet
-- end vældig som Ruin —
+      - end vældig som Ruin —
 i Thraciens Støv, da turde Skjæbnen vove
 imod Hesperiens Vang og Tibrens Bred
 at sende ud fra Nordens nøgne Skove,
 hvor Bjørnestjærnen bleg paa Sneen glimter,
-Barbarers Rytterflokke
+      Barbarers Rytterflokke
 og lade Romas højt berømte Mure
-for Gothersværdet synke.
+      for Gothersværdet synke.
 Da var det Brutus sad paa enlig Tue
 i bælgmørk Nat, besprængt med Broderblodet,
 paa Død beredt. Men paa de grumme Guder
-<pb n="153" facs="170.jpg"/>og Hades højt han skjælder,
-og vildt fra trodsig Tunge
+<pb n="153" facs="170.jpg"/>      og Hades højt han skjælder,
+      og vildt fra trodsig Tunge
 i døve Luft de tomme Trusler runge:
 
 O Dyd! du tomme Ord, som stammer fra
-de hule Skyer, fra Ørkner,
+      de hule Skyer, fra Ørkner,
 hvor travle Skygger vrimle! Anger vorder
 din Dyrkers Løn! — I kolde Marmorguder,
 hvad enten dybt i Flegethon I huse,
 hvad eller over Skyen — grusomt lege
-I med den arme Slægt,
+      I med den arme Slægt,
 af hvem I fordre Templer, hvem I haane
-med svigefulde Love.
+      med svigefulde Love.
 Det er jo jordisk Fromhed just, som vækker
 et himmelsk Had, og altsaa troner du,
 du Zeus! som Værn for Onde. Naar fra Skyen
 din Straale knitrer, og din Torden ruller,
-med dine hellige Flammer
+      med dine hellige Flammer
 de Fromme og Retfærdige du rammer!
 
 En jernhaard, ubønhørlig Skjæbne tynger
-paa Dødens usle Trælle.
+      paa Dødens usle Trælle.
 Den sløve Hob, som ej kan slippe bort
 fra Aagets Tryk, sig trøster med: Nødvendigt
 er dette Aag! - Er Ondet mindre haardt,
 som ej kan ændres? Føle vi ej Smærte,
-skjønt Haabet er os røvet?
+      skjønt Haabet er os røvet?
 En Krig paa Liv og Død den Kjække fører
-med dig, du onde Skjæbne!
+      med dig, du onde Skjæbne!
 Han har ej lært at fly; — men naar din Haand
 ham rammer og med Kæmpetag ham ryster,
 <pb n="154" facs="171.jpg"/>med Haan du over Helten triumferer.
-Men mod hans stolte Hjærte
-det skarpe Staal alt iler,
+      Men mod hans stolte Hjærte
+      det skarpe Staal alt iler,
 og længselsfuld mod Dødens Mulm han smiler.
 
 Dog - Guder afsky den, som voldsomt bryder
-i Hades ind. Den Kjækhed
+      i Hades ind. Den Kjækhed
 ej fattes af de bløde Gudehjærter.
 Vi véd jo, Himlen kaaret har vor Liden,
 vor bitre Vanfred, vore dybe Smærter
 til Skuespil for sig i Mag at more.
-En Tid Naturen hersked
+      En Tid Naturen hersked
 i Gyldenaldren uden Skyld og Sorg
 som Skovens Huldgudinde, Livets Dronning;
 men Ondskab styrted hendes ædle Trone,
 og strax det golde Liv fik andre Love.
-Naar nu en mandig Sjæl
-vil fly de onde Dage,
+      Naar nu en mandig Sjæl
+      vil fly de onde Dage,
 tør du, Natur, hans Sværd, hans Mod anklage?
 
 Uvidende om Kval og Skyld og Brøde,
-de vilde Dyr i Skoven
+      de vilde Dyr i Skoven
 mod sildig Alder uformærket glide.
 Men selv om og de vilde knuse Panden
 mod stenhaard Træbul eller Fjeldets Side
 og lade Vinden sprede deres Lemmer,
-naar Vanheld dem betvang,
+      naar Vanheld dem betvang,
 ej nogen lønlig Lov dem skulde rokke,
-ej fejge Overlæg
+      ej fejge Overlæg
 dem skræmme fra at lyde Smærtens Attraa.
 <pb n="155" facs="172.jpg"/>Men I - Promethevs' Børn! - hvor under Himlen
 I Lyset end har skuet — overalt
-er Livet Jer til Lede.
-Og naar saa Døden tøver
+      er Livet Jer til Lede.
+      Og naar saa Døden tøver
 selv Zevs til Karons Strøm Jer Adgang røver.
 
 Stig, hvide Maane, op af Havets Skjød,
-som nys har slugt vort Blod!
+      som nys har slugt vort Blod!
 Se paa hin Slette, som Ausoniens Hæder
 saa fjendtlig var! Lys i den vilde Nat!
 Den Sejrende paa Brødres Nakke træder;
 syv Høje skjælve, og det gamle Romas
-skyhøje Tinder styrte.
+      skyhøje Tinder styrte.
 Hvi staar du nu saa rolig? Du, som saa'
-Lavinias Afkom fødes,
+      Lavinias Afkom fødes,
 som saa' dets Haab om evig grønne Lavrbær!
 Og, lige tavs, du samme Glans vil gyde
 hen over Alperne, naar Romas Navn
-af Trældom er besudlet,
-og naar dets øde Sted
+      af Trældom er besudlet,
+      og naar dets øde Sted
 højt drøner af Barbarers tunge Fjed.
 
 Ak, se det vilde Dyr paa nøgne Klipper,
-Fuglen paa grønne Grene!
+      Fuglen paa grønne Grene!
 Ej deres Dvaleliv kan føle Sorgen.
 Lad Verdner falde, og lad Skjæbner vexle
 - de mærke Intet . . . Se, i tidlig Morgen,
 naar Solens første Skjær paa Hytten spiller,
 den travle Landmand vækker
-den tavse Dal med Morgensangens Toner
-<pb n="156" facs="173.jpg"/>og driver ud til Græsning
+      den tavse Dal med Morgensangens Toner
+<pb n="156" facs="173.jpg"/>      og driver ud til Græsning
 sin lille Faarehjord paa Bjærgets Aase.
 Men vi - den stolte Slægt — er Skjæbnens Udskud!
 Ej Kampestenens Blok, ej Bjærgets dybe
-og ekkosvangre Huler
-ynkes ved Jordens Sukke,
+      og ekkosvangre Huler
+      ynkes ved Jordens Sukke,
 og Jordens Graad ej Stjærnens Glans kan slukke.
 
 Olympens og Kokytos' døve Drotter!
-du onde Jord, du Nat!
+      du onde Jord, du Nat!
 ej i min Dødsstund knæler jeg for Eder,
 og ej for Trøstens Glimt i Dødens Mulm:
 det store Fremtidsry. Og ej jeg beder
 den dumme Hob min nøgne Grav at hædre
-med Hylen og med Ofre.
+      med Hylen og med Ofre.
 Tilbage Tiden gaar, og daarlig kan man
-til Fremtids Dværgeyngel
+      til Fremtids Dværgeyngel
 de store Sjæles Ære efterlade
 og de Ulykkeliges sidste Hævn.
 Lad nu de sorte Ravne om mig kredse,
-lad Ulvetand og Regnskyl
-mit glemte Lig fortære,
+      lad Ulvetand og Regnskyl
+      mit glemte Lig fortære,
 lad Stormen bort mit Navn, mit Minde bære!
 </poetry>
 </body>
@@ -4509,7 +4934,7 @@ lad Stormen bort mit Navn, mit Minde bære!
   <title>Det Uendelige</title>
   <firstline>Jeg elsked altid denne øde Høj</firstline>
   <source pages="157"/>
-  <notes><note>Oversat af S. Schandorph.</note></notes>
+  <notes><note unknown-original-by="leopardi"/></notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4533,81 +4958,83 @@ men det er sødt paa dette Hav at strande.
 </body>
 </text>
 
-<text id="schandorph2026081578" author="schandorph">
+<text id="schandorph2026081578" author="schandorph" ignore-tests="single-circumflex-a-in-text">
 <head>
   <title>Silvia</title>
   <firstline>Silvia, kan du huske</firstline>
   <source pages="157-159"/>
-  <notes><note>Oversat af S. Schandorph.</note></notes>
+  <notes><note unknown-original-by="leopardi"/></notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Silvia, kan du huske
+      Silvia, kan du huske
 dit svundne Jordeliv, da Skjønhed straalte
-i dine klare Øjne,
+      i dine klare Øjne,
 som fôr saa muntert om og altid smilte,
 da glad og tankefuld ind i din Ungdom
-med lette Trin du ilte?
-<pb n="158" facs="175.jpg"/>Ud fra din lille Stue
-fløj Tonerne saa vide;
-du sang og sang bestandig,
+      med lette Trin du ilte?
+<pb n="158" facs="175.jpg"/>      Ud fra din lille Stue
+      fløj Tonerne saa vide;
+      du sang og sang bestandig,
 naar over Vævens Ramme du sad bøjet,
-saa hjærtelig fornøjet
+      saa hjærtelig fornøjet
 ved Tanken om, at du en Fremtid ejed
 saa sød som Duft i Maj. Saalunde plejed
-hver Dag for dig at glide.
+      hver Dag for dig at glide.
 
-Da lagde jeg til Side
+      Da lagde jeg til Side
 de kjære Studier i gamle Hefter,
-som jeg saa længe ofred
+      som jeg saa længe ofred
 Blomsten af mine Aar og mine Kræfter.
 Og fra Balkonen paa min Fædrebolig
 jeg fanged dine Sange med mit Øre
-og lytted for at høre
+      og lytted for at høre
 din Haand, der løb saa flittig langs ad Væven.
-Det gyldne Solskin leged
-paa Veje, grønne Haver;
-hist saa's det fjerne Hav, her fjerne Bjærge.
-Ak ingen Tunge tolker,
-hvad da mit Bryst bevæged.
+      Det gyldne Solskin leged
+      paa Veje, grønne Haver;
+hist saâs det fjerne Hav, her fjerne Bjærge.
+      Ak ingen Tunge tolker,
+      hvad da mit Bryst bevæged.
 
-Min Silvia, hvor var vi
+      Min Silvia, hvor var vi
 dog begge fyldt af Haab, af Længsler søde,
-hvor lo os dog imøde
-den hele Verdens Rige!
+      hvor lo os dog imøde
+      den hele Verdens Rige!
 Naar nu hint stolte Haab jeg atter mindes,
-i Tanker ind jeg spindes,
-saa bitre, smertelige,
+      i Tanker ind jeg spindes,
+      saa bitre, smertelige,
 at strax min grumme Skjæbne Graad mig volder.
-<pb n="159" facs="176.jpg"/>O sig mig, Liv: hvi holder
-du ej, hvad hine Dage
+<pb n="159" facs="176.jpg"/>      O sig mig, Liv: hvi holder
+      du ej, hvad hine Dage
 du loved os? Hvorfor vil Jordens Sønner
-saa grusomt du bedrage?
+      saa grusomt du bedrage?
+
 Ak, før for Vintrens Aande Græsset visned,
 du overvunden blev, du spæde Pige,
 af lang og lønlig Sygdom. Ej du skued
-Blomsten af dine Dage,
-din Sjæl blev ej husvalet
+      Blomsten af dine Dage,
+      din Sjæl blev ej husvalet
 af fagre Ord om dine blonde Lokker,
 om dine bly og elskovsfulde Blikke,
 og paa din Bryllupsdag har ej Veninder
-om Elskov med dig talet.
-Jeg blev ej mindre skuffet!
-Jeg saa' mit søde Haab saa hastig blegne,
-thi Skjæbnen mine Dage
-den friske Ungdom røved.
-I Grav du maatte segne,
+      om Elskov med dig talet.
+
+      Jeg blev ej mindre skuffet!
+Jeg saâ mit søde Haab saa hastig blegne,
+      thi Skjæbnen mine Dage
+      den friske Ungdom røved.
+      I Grav du maatte segne,
 du, som min Alders Vaar saa venlig fulgte,
-du Haab, af Taarer vædet!
-Er det den rige Verden
+      du Haab, af Taarer vædet!
+      Er <w>det</w> den rige Verden
 af Elskov, Lykke, glansfuld Daad oplivet,
 hvortil vi den Gang begge To os glæded?
 Nej — Jordens Børn en anden Lod blev givet!
-Hint var kun tomme Drømme.
+      Hint var kun tomme Drømme.
 Se Dagen kom! Da slukkedes din Stjærne,
 mod blege Død og golde Grav jeg ser dig
-nu pege fra det Fjærne.
+      nu pege fra det Fjærne.
 </poetry>
 </body>
 </text>
@@ -4617,143 +5044,156 @@ nu pege fra det Fjærne.
   <title>Elskov og Død</title>
   <firstline>Elskov blev født som Dødens Tvillingbroder</firstline>
   <source pages="160-164"/>
-  <notes><note>Oversat af S. Schandorph.</note></notes>
+  <notes><note unknown-original-by="leopardi"/></notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
+<quote>
+<span lang="da">Ὃν οἱ θεοὶ φιλοῦσιν ἀποθνῄσκει νέος.</span>
+<span>(Hvem Guderne elske, dør ung.) Menandros.</span>
+</quote>
 <poetry>
 Elskov blev født som Dødens Tvillingbroder
-af Skjæbnen, deres Moder.
-Ej Jords, ej Stjærners Rige
+      af Skjæbnen, deres Moder.
+      Ej Jords, ej Stjærners Rige
 i Skjønhed ejer Døds og Elskovs Lige.
-Fra Elskov stammer Glæden,
-den største for vort Hjærte,
+      Fra Elskov stammer Glæden,
+      den største for vort Hjærte,
 som det paa Verdens vide Hav kan vinde;
-men Lindring for vor Smærte
-kun Døden véd at finde.
-Hun er en dejlig Kvinde,
+      men Lindring for vor Smærte
+      kun Døden véd at finde.
+      Hun er en dejlig Kvinde,
 skjønt ej hun males saa af Sjæle svage.
-Og Elskovs Gud den fagre
-hun gjerne vil ledsage,
+      Og Elskovs Gud den fagre
+      hun gjerne vil ledsage,
 og ædle Hjærter højt af Længsel lue,
 naar Haand i Haand de over Jorden flagre.
-Naar Elskov dybt os rammer,
+      Naar Elskov dybt os rammer,
 da svulmer Hjærtet højt, og det foragter
-vort Liv, saa ej det tænker
-paa Farerne, som true.
+      vort Liv, saa ej det tænker
+      paa Farerne, som true.
 For denne Hersker glad til Kamp det stunder.
-Hvor du os Hjælpen skjænker,
-o Elskov, mægtig flammer
+      Hvor du os Hjælpen skjænker,
+      o Elskov, mægtig flammer
 det gjenopvakte Mod, og kjækt at handle
 - ej blot som før at gruble frugtløst — mægter nu Menneskenes Slægter.
-<pb n="161" facs="178.jpg"/>Naar Elskovsmorgenrøden
-lysner fra Dæmringsgrunden
-i Sjælens Dyb derinde,
+<pb n="161" facs="178.jpg"/>      Naar Elskovsmorgenrøden
+      lysner fra Dæmringsgrunden
+      i Sjælens Dyb derinde,
 i Sambo med den i vort Bryst vi finde
 en træt, en stille Længsel efter Døden.
-Jeg véd ej, hvorfor stedse
+      Jeg véd ej, hvorfor stedse
 den Længsel maa med Elskov sig forbinde.
-Maaske vort Øje bæver
+      Maaske vort Øje bæver
 for Verdens Ørk, maaske vi se, at Jorden
-er tom og gold foruden
-den ny, uendelige
+      er tom og gold foruden
+      den ny, uendelige
 og høje Lykke, som for Tanken svæver,
 men høre fjærnt de vilde Stormes Tuden
-og spejde efter Fristed
-for denne vilde Attraa,
+      og spejde efter Fristed
+      for denne vilde Attraa,
 der alt sit Skrig fra Sjælens Natmulm hæver.
 
-Men naar hin Magt, den stærke,
-Alt hvirvler ned i Støvet,
+      Men naar hin Magt, den stærke,
+      Alt hvirvler ned i Støvet,
 og Smærtens grumme Lyn sit Offer kræver,
-hvor tidt har da en Elsker
-med inderlig Begjær,
+      hvor tidt har da en Elsker
+      med inderlig Begjær,
 o Død! ej anraabt dig om Bod for Sorgen!
-Hver Aften og hver Morgen,
+      Hver Aften og hver Morgen,
 mens end hans trætte Lemmer Livet ejed,
 han sagde: Salig var jeg, om jeg aldrig
-rejste mig mer fra Lejet
+      rejste mig mer fra Lejet
 og mod det onde Lys mit Øje vendte!
 
 Og tidt naar Ligfærdsklokkens Klang han hørte
-til Sangen, som skal hente
+      til Sangen, som skal hente
 <pb n="162" facs="179.jpg"/>de Døde ned til evig, evig Glemsel,
-med hede Længsels Sukke
-af Hjærtet han misundte
+      med hede Længsels Sukke
+      af Hjærtet han misundte
 dem, som til Skyggelandet maatte vige.
-Ja selv den ringe Bonde,
-der aldrig har erfaret
+      Ja selv den ringe Bonde,
+      der aldrig har erfaret
 den Kraft, som sprudler højt i Aandens Rige,
 ja selv den bly, den bange unge Pige,
-hvis Lok af Skræk sig rørte,
-naar Dødens Navn hun hørte,
+      hvis Lok af Skræk sig rørte,
+      naar Dødens Navn hun hørte,
 tør hen imod sin Grav, sit Dødningklæde,
 saa kjække, faste Blikke lade vanke.
-Og i sin Enfolds Tanke
-hun vover selv at grunde
-paa Gift og blodig Vunde
+      Og i sin Enfolds Tanke
+      hun vover selv at grunde
+      paa Gift og blodig Vunde
 og fatter nu, at Døden har sin Glæde.
-Saadan mod Døden spores
+      Saadan mod Døden spores
 vi under Elskovs Tugt. Vi se, hvorlunde
 det svage Legem under Kummers Byrde,
 naar centnertung den sig til Sjælen hefter,
-maa stønne, give efter,
+      maa stønne, give efter,
 naar mer end Dødeliges Kraft den kræver.
 Saa vinder Døden Sejr ved Brod'rens Kræfter.
 Se, hvor den jævne Almusmand selv iler
 til Døden under Elskovs skarpe Spore!
-Og se, med kjække Hænder
-tør Pigen selv, den svage,
+      Og se, med kjække Hænder
+      tør Pigen selv, den svage,
 til Gravens Jord sit unge Legem give.
-- Den kloge Verden smiler —
+      - Den kloge Verden smiler —
 den give Himlen Fred og mange Dage!
-<pb n="163" facs="180.jpg"/>Men de begejstringsfulde
-og ædelbaarne Sjæle,
+<pb n="163" facs="180.jpg"/>      Men de begejstringsfulde
+      og ædelbaarne Sjæle,
 dem stille Skjæbnen under en af Eder,
-I Herskere saa hulde
-mod Jordens stakkels Slægter,
+      I Herskere saa hulde
+      mod Jordens stakkels Slægter,
 saa stærke, at ej anden Hersker mægter
 i hele Verden over Jer at byde
 end Skjæbnen selv — dens Bud I kun maa lyde!
 Du, som jeg paakaldt har fra Ungdoms Tide
-og holdt saa højt i Ære,
-du skjønne Død, som ene
+      og holdt saa højt i Ære,
+      du skjønne Død, som ene
 har Medynk med de Dødeliges Kvide!
-O, hvis jeg nogensinde
+      O, hvis jeg nogensinde
 har prist dig og din Guddomshæder skjærmet,
-naar Hoben dig fornærmed,
-uskjønsom udi Sinde;
-saa tøv ej, lad dig bøje
-ved længe spildte Bønner,
-du Tidens Herskerinde,
+      naar Hoben dig fornærmed,
+      uskjønsom udi Sinde;
+      saa tøv ej, lad dig bøje
+      ved længe spildte Bønner,
+      du Tidens Herskerinde,
 o luk for Lyset til mit trætte Øje.
 Du finder mig beredt, hvad Stund du folder
 din Vinge ud og al min Tryglen lønner.
-Rustet, med løftet Pande
-jeg skal mod Skjæbnen stande.
+      Rustet, med løftet Pande
+      jeg skal mod Skjæbnen stande.
 Den Haand, som over Skyldfri Svøben holder,
-som tidt mit Blod har farvet,
-skal ej med Kys jeg hædre
-og takke den — det er jo
+      som tidt mit Blod har farvet,
+      skal ej med Kys jeg hædre
+      og takke den — det er jo
 den gamle Fejghed, som vor Slægt har arvet.
 Hvert usselt Haab, hvormed Alverdens Taaber
-<pb n="164" facs="181.jpg"/>som store Børn kan lege,
-skal ingen Trøst mig skjænke.
+<pb n="164" facs="181.jpg"/>      som store Børn kan lege,
+      skal ingen Trøst mig skjænke.
 Det vil jeg kaste bort. Paa dig alene
-paa Dig, o Død! jeg haaber,
-at du dig vil forbarme
+      paa Dig, o Død! jeg haaber,
+      at du dig vil forbarme
 og snart mit Hoved ned til Slummer sænke
-i dine Jomfruarme!
+      i dine Jomfruarme!
 </poetry>
 </body>
 </text>
+
+</content>
+</section>
+
+<section level="2">
+<head>
+  <title>Giuseppe Giusti</title>
+</head>
+<content>
 
 <text id="schandorph2026081580" author="schandorph">
 <head>
   <title>Erindringer fra Pisa</title>
   <firstline>Stedse min Tanke</firstline>
   <source pages="164-170"/>
-  <notes><note>Af Giuseppe Giusti. Oversat af S. Schandorph.</note></notes>
+  <notes><note>Af Giuseppe Giusti.</note></notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4916,7 +5356,7 @@ Pæne Studenter,
 som skyede Rusen,
 men som fik travlt med
 Lytten og Snusen,
-naar - for utrumque jus
+naar - for <i lang="la">utrumque jus</i>
 til stor Skandale -
 vi sang Trikoloren,
 som vi var gale
@@ -4947,6 +5387,24 @@ med Galskab at prise.
 </poetry>
 </body>
 </text>
+
+</content>
+</section>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>Grækenland</title>
+</head>
+<content>
+
+<section level="2">
+<head>
+  <title>Dionisios Solomos</title>
+</head>
+<content>
 
 <text id="antologierdk2026081581">
 <head>
@@ -4984,6 +5442,7 @@ Og forgjæves paa dit Komme
 vented Hellas Dag fra Dag:
 under Hændervrid, fortvivlet,
 opgav ganske det sin Sag.
+
 Naar skal, sukked Du, mit Hoved
 atter frit dog hæve sig?
 Men kun Graad og Skrig og Lænker
@@ -5001,6 +5460,7 @@ Ensom ud Du maatte vandre!
 ensom hjem Du maatte gaa!
 Ak, thi gjærne Døren stænges
 for den Nød, der banker paa.
+
 <pb n="175" facs="192.jpg"/>Én din Barm med Taarer væder,
 men om Lindring ej et Ord!
 Hjælpen hist en Anden lover,
@@ -5018,6 +5478,7 @@ Mens dit Hoved sorgbetynget
 bøjer sig i Ydmyghed,
 som den usle Tiggerkvindes,
 der af Livets Kamp er kjed!
+
 Se dog nu, hver Søn, Du ejer,
 stormer frem til Hjælp i Nød!
 Overalt et Raab nu lyder:
@@ -5029,6 +5490,15 @@ hil dig, Frihed, hil Dig, hil!
 </poetry>
 </body>
 </text>
+
+</content>
+</section>
+
+<section level="2">
+<head>
+  <title>Julius Typaldos</title>
+</head>
+<content>
 
 <text id="antologierdk2026081582">
 <head>
@@ -5078,12 +5548,30 @@ to Jomfrulæber smaa.
 </body>
 </text>
 
+</content>
+</section>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>Rusland</title>
+</head>
+<content>
+
+<section level="2">
+<head>
+  <title>Grev Alexis Tolstoy</title>
+</head>
+<content>
+
 <text id="lange2026081583" author="lange">
 <head>
   <title>Rugewit</title>
   <firstline>Hvor lyse Bøge dristigt frem sig bøje</firstline>
   <source pages="181-183"/>
-  <notes><note>Af Grev Alexis Tolstoy. Oversat af Thor Lange.</note></notes>
+  <notes><note>Af Grev Alexis Tolstoy.</note></notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5156,7 +5644,7 @@ Du faldne Rugewit flyd bort, flyd bort.
   <title>Pannychiden</title>
   <firstline>Hvo har paa Jord en Glæde smagt</firstline>
   <source pages="183-186"/>
-  <notes><note>Af Grev Alexis Tolstoy. Oversat af Thor Lange.</note></notes>
+  <notes><note>Af Grev Alexis Tolstoy.</note></notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5249,17 +5737,27 @@ i Lys til Dig blandt Helgen alle!
 </body>
 </text>
 
+</content>
+</section>
+
+<section level="2">
+<head>
+  <title>Alexander Maikoff</title>
+</head>
+<content>
+
 <text id="lange2026081585" author="lange">
 <head>
   <title>Digte</title>
   <firstline>Tit mangen Gang i Skovens Indre</firstline>
   <source pages="186-189"/>
-  <notes><note>Af Alexander Maikoff. Oversat af Thor Lange.</note></notes>
+  <notes><note>Af Alexander Maikoff.</note></notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
 <nonum><center>I.</center></nonum>
+
 Tit mangen Gang i Skovens Indre
 en Jomfrurøst forfulgt mig har,
 snart hørlig mer, snart hørlig mindre,
@@ -5269,6 +5767,7 @@ Snart højt i Gjenlyd Stemmen gjalder
 nær Krattets Bryn og hendør blidt,
 naar Sol gaar ned og Lyset falder
 blandt ranke Birke rødt paa hvidt.
+
 <pb n="187" facs="204.jpg"/>Snart slaar den ud med dæmpet Styrke
 fra Fyrreskovens dunkle Hal
 og vælder frem af fugtigt Mørke
@@ -5280,6 +5779,7 @@ hvad eller dybt et Billed gjemme,
 jeg selv har skabt af Stemmens Klang?
 
 <nonum><center>II.</center></nonum>
+
 Langt inde mellem Fyr og El
 er skjult en lille, kredsrund Plads.
 Dér pibler frem et Kildevæld
@@ -5310,8 +5810,8 @@ forfulgt af fjendske Øjekast
 er selv jeg tavs og ikke tryg.
 
 <nonum><center>III.</center></nonum>
-Solen, Solen kommer!
 
+Solen, Solen kommer!
 Ud i Lys af Dagen
 flyve gyldne Boldte,
 lette Skyer i Flokke.
@@ -5333,8 +5833,8 @@ kun Profilets Træk
 og Barmens Omrids bløde.
 
 <nonum><center>IV.</center></nonum>
-End er jeg stemt og stærkt betagen
 
+End er jeg stemt og stærkt betagen
 af En, der kom og snart forsvandt,
 som om en Engel, blank som Dagen
 os havde staaet midt iblandt.
@@ -5345,6 +5845,7 @@ jeg samler op de gyldne Fjedre,
 som fra dens Solskinsvinger faldt.
 
 <nonum><center>V.</center></nonum>
+
 Himmelhøjt sig Bølgen vælter
 stærkt bevæget, elskovsfuld,
 og en enlig Stjærne smelter
@@ -5356,6 +5857,12 @@ op til Dig og hente Dig.
 </poetry>
 </body>
 </text>
+
+</content>
+</section>
+
+</content>
+</section>
 
 </workbody>
 </kalliopework>
