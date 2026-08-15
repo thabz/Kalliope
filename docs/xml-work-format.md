@@ -207,6 +207,33 @@ Attributter paa `<text>`:
   `pagebreak-count` springer kun sammenligningen mellem `source/@pages` og antal
   `<pb>` over for teksten.
 
+#### Tekst-id
+
+Nye tekst-id'er består af tekstens effektive digter-id, oprettelsesdatoen i
+formatet `YYYYMMDD` og et løbenummer på mindst to cifre:
+
+```text
+winther2018081001
+winther2018081002
+```
+
+Det effektive digter-id er `text/@author`, når attributten findes, og ellers
+værkets `kalliopework/@author`. En tekst uden `author` i et værk med
+`author="antologierdk"` får derfor eksempelvis id'et
+`antologierdk2026081501`. Løbenumre må ikke genbruges, hvis en tekst slettes
+eller sammenlægges.
+
+Næste ledige id kan genereres uden at ændre værkfilen:
+
+```sh
+npm run new-text-id -- fdirs/antologierdk/1872.xml
+npm run new-text-id -- fdirs/antologierdk/1872.xml --author aarestrup
+```
+
+CI sammenligner tekst-id'erne semantisk mellem base- og HEAD-committen. Kun
+id'er, der ikke fandtes i base-committen, håndhæves efter dette format, så
+historiske id-formater fortsat kan bevares uændret.
+
 ### Text head
 
 `<head>` paa en tekst kan indeholde:

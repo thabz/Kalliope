@@ -107,7 +107,31 @@ ruby tools/add-poem.rb DIGTER-ID [VAERK-ID]
 
 `add-poet.rb` spørger interaktivt efter persondata. `add-work.rb` opretter et
 værk og føjer det til digterens `info.xml`. `add-poem.rb` tilføjer en tom tekst
-til det angivne værk; standardværket er `andre`.
+til det angivne værk; standardværket er `andre`. `add-poem.rb` bruger den
+fælles tekst-id-generator.
+
+Generatoren kan også køres selvstændigt. Den ændrer ikke værkfilen, men
+udskriver næste ledige id for dags dato:
+
+```sh
+npm run new-text-id -- fdirs/antologierdk/1872.xml
+npm run new-text-id -- fdirs/antologierdk/1872.xml --author aarestrup
+```
+
+Uden `--author` bruges værkets `author`. Med `--author` bruges den eksplicitte
+tekstforfatter. Generatoren undersøger hele korpusset og vælger et nummer efter
+dagens højeste eksisterende løbenummer, så huller ikke genbruges. En bestemt
+dato kan angives ved test og kontrollerede importer med `--date YYYY-MM-DD`.
+
+CI-valideringen kan køres lokalt mellem to commits:
+
+```sh
+npm run validate-new-text-ids -- BASE-REF [HEAD-REF]
+```
+
+Validatoren sammenligner de parsede tekst-id'er i de to commits og kontrollerer
+kun nye id'er. `text/@author` bruges som prefix, når attributten findes; ellers
+bruges `kalliopework/@author`.
 
 `add-poet.rb` og `add-work.rb` kræver Ruby-pakken Nokogiri. `add-poem.rb` kan
 også kræve Nokogiri, hvis det først skal oprette `andre.xml` via `add-work.rb`.
