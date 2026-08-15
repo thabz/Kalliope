@@ -192,6 +192,14 @@ server, der er angivet i scriptet. Inden synkronisering sættes lokale mapper ti
 `755` og filer til `644`. `rsync` overfører derefter rettighederne, så
 webserveren også kan læse nye facsimiler oprettet af Docker.
 
+CI kontrollerer, at hvert facsimile, som et versionsstyret XML-værk angiver i
+en `source`, har en genereret `000.jpg` på Kalliope-serveren. Kontrollen kan
+køres manuelt med:
+
+```sh
+npm run check-facsimiles
+```
+
 ## Editorintegrationer
 
 `vscode-kalliope-syntax/` indeholder Kalliopes VS Code-extension med
