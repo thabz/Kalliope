@@ -10,7 +10,14 @@
 </workhead>
 <workbody>
 
-<text id="antologierdk2026081501" skip-index="true"><head><title>[Forord]</title><source facsimile-pages="8"/><quality>korrektur1,kilde,side</quality></head><body><prose>
+<text id="antologierdk2026081501" skip-index="true">
+<head>
+  <title>[Forord]</title>
+  <source facsimile-pages="8"/>
+  <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<prose>
 Disse Linier skulle tjene til Undskyldning for,
 at der i den foreliggende Samling er medtaget
 nogle Digte, der ikke i strængere Forstand ville lade
@@ -25,7 +32,9 @@ evropæiske Lande, om de end ikke i Bogen selv
 udtrykkelig ere betegnede som saadanne.
 
 Udgiveren.
-</prose></body></text>
+</prose>
+</body>
+</text>
 
 <text id="antologierdk2026081502" author="rosenberg">
 <head>
@@ -670,7 +679,7 @@ fy skam Dig, Briccone!
 <head>
   <title>Julenat</title>
   <firstline>Det er den helligstille Nat</firstline>
-  <source pages="29-32"/>
+  <source pages="29-31"/>
   <notes><note>Af Frantz Dingelstedt.</note></notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -747,7 +756,6 @@ De toned: Ære være Gud
 og Menneskene Fred og Fromme.
 De sidste Stjærner sluktes ud;
 men Dagen - naar vil Dagen komme?
-<pb n="32" facs="049.jpg"/>
 </poetry>
 </body>
 </text>
@@ -1933,13 +1941,14 @@ Sov min lille Stump! Sov Moders Stump! Sov!
 <text id="antologierdk2026081531" author="browningr">
 <head>
   <title>Scene fra den franske Lejr</title>
-  <firstline>Franskmænd stormed Ratisbon*)</firstline>
+  <firstline>Franskmænd stormed Ratisbon</firstline>
   <source pages="70-71"/>
+  <notes><note>Ratisbon er det franske Navn for Regensburg.</note></notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Franskmænd stormed Ratisbon<footnote>Ratisbon er det franske Navn for Regensburg.</footnote>,
+Franskmænd stormed Ratisbon,
 og just som Kuglen højest sang,
 Napoleon stod paa en Høj
 og vogted derfra Kampens Gang.
@@ -2815,8 +2824,16 @@ det er Kugler og Krudt, det er det, jeg behøver.
 </head>
 <body>
 <poetry>
-<nonum><quote lang="it">Oh primavera! gioventù dell' anno!</quote></nonum>
-<nonum><quote lang="it">Oh gioventù, primavera della vita!</quote></nonum>
+<nonum>
+<quote lang="it">
+Oh primavera! gioventù dell' anno!
+</quote>
+</nonum>
+<nonum>
+<quote lang="it">
+Oh gioventù, primavera della vita!
+</quote>
+</nonum>
 I mine Breve fra Ungdommens Aar,
 hvilken Duft, hvilke Toner i Møde mig slaar
 fra jert gule, forkrøllede Blad.
@@ -3457,8 +3474,7 @@ den Lykke gjemt, hvorefter jeg har sukket!
 <nonum><center>Moderen.</center></nonum>
 Ser du ej, Barnet græder i min Favn?
 Gaa længer frem!
-<pb n="122" facs="139.jpg"/>
-<nonum><center>2.</center></nonum>
+<pb n="122" facs="139.jpg"/><nonum><center>2.</center></nonum>
 
 I unge Piger, som fik Skjønheds Smykke,
 giv mig, som søgte Lykken fjærnt og nær,
@@ -3746,9 +3762,7 @@ Og da, idet din Skyld vil vorde slettet,
 naar du til Syndebod
 i Dødens rene Vande dig har tvættet
 som i en Jordans Flod —
-<pb n="130" facs="147.jpg"/>
-
-vil dér, hvor Livets Larm med Et forstummer,
+<pb n="130" facs="147.jpg"/>vil dér, hvor Livets Larm med Et forstummer,
 naar den mod Graven slaar,
 lig Bølgen, der med Støj mod Bredden skummer,
 men derpaa tavs forgaar —
@@ -4938,7 +4952,7 @@ med Galskab at prise.
 <head>
   <title>Nygræsk Hymne til Friheden</title>
   <firstline>Jeg Dig kjender grant af Sværdets</firstline>
-  <source pages="173-176"/>
+  <source pages="173-175"/>
   <notes><note>Af Dionisios Solomos. Oversat af Jean Pio.</note></notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -5012,7 +5026,6 @@ Af Helleners Oldtidsgrave
 steg Du frem med Sejerssmil,
 og saa modig som i Fortid,
 hil dig, Frihed, hil Dig, hil!
-<pb n="176" facs="193.jpg"/>
 </poetry>
 </body>
 </text>
