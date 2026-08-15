@@ -644,7 +644,7 @@ const TextContent = (props) => {
         :global(.blockquote) {
           display: block;
           width: fit-content;
-          max-width: ${options.maxWidth ?? '100%'};
+          max-width: ${options.maxWidth ?? '70%'};
           margin-inline-start: auto;
           margin-inline-end: 0;
         }
