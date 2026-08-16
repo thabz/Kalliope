@@ -94,8 +94,10 @@
 
   <define name="workhead">
     <element name="workhead">
-      <ref name="mixed"/>
-      <optional><ref name="workheadIdentifiers"/></optional>
+      <interleave>
+        <ref name="mixed"/>
+        <optional><ref name="workheadIdentifiers"/></optional>
+      </interleave>
     </element>
   </define>
   <define name="workbody"><element name="workbody"><ref name="mixed"/></element></define>
