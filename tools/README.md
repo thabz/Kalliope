@@ -175,6 +175,23 @@ værker. Wikidata-kandidater klassificeres først som work-level, source-level
 (konkret udgave/version/oversættelse) eller individuelt indhold som digte,
 sange og noveller. Kun work-level-kandidater kan få status `MATCH`.
 
+Digtere og kunstværker kan afstemmes med samme værktøj og får separate lokale
+rapporter:
+
+```sh
+python3 tools/identifier-reconciliation/identifier_reconciliation.py \
+  . --entity-type poet -o reports/identifier-reconciliation/poet-identifiers.csv
+
+python3 tools/identifier-reconciliation/identifier_reconciliation.py \
+  . --entity-type artwork -o reports/identifier-reconciliation/artwork-identifiers.csv
+```
+
+`poet` gennemgår kun `info.xml`-poster med `type="poet"`. Personmatch kræver et
+Wikidata-signal for menneske/person, mens `artwork` bruger billedets titel,
+kunstner, årstal og Wikidata-værktyper (`P31`); `P170` bruges som skabersignal,
+når kunstnerens Wikidata-id er kendt. Usikre kandidater får `NO_MATCH` eller
+`REVIEW` og skal vurderes manuelt.
+
 Kør en kontrol fra repository-roden:
 
 ```sh
