@@ -36,6 +36,8 @@ const knownPoetLanguages = new Set([
   'fa',
   'es',
   'nl',
+  'is',
+  'cs',
   'un',
   'it',
 ]);
@@ -157,7 +159,7 @@ const build_poets_first_pass = collected => {
       country,
       safeGetText(p, 'literary-periods')
     );
-    if (!country.match(/(dk|se|no|gb|de|fr|us|it|un)/)) {
+    if (!country.match(/^(dk|se|no|is|cz|gb|de|fr|us|it|un)$/)) {
       throw `${id} har ukendt land: ${country}`;
     }
     if (!isKnownPoetLanguage(lang)) {
