@@ -85,6 +85,25 @@ Almindelige felter i `<workhead>`:
 - `<pagebreaks/>`: erklærer, at alle interne sideskift i de inkluderede
   tekstkroppe er registreret med `<pb>`.
 
+Et værks metadata kan have typevaliderede eksterne identifikatorer:
+
+```xml
+<workhead>
+  <title>Lyngblomster</title>
+  <year>1856</year>
+  <identifiers>
+    <wikidata>Q123</wikidata>
+    <openlibrary-work>OL4525390W</openlibrary-work>
+  </identifiers>
+</workhead>
+```
+
+Identifikatorerne gemmes separat i work-metadata.
+
+For værker er `wikidata`, `dbc-work`, `openlibrary-work` og
+`dansklitteraturshistorie-lex-dk` tilladt. For konkrete source-udgaver er
+`wikidata`, `kb-alma`, `dbc-pid` og `openlibrary-edition` tilladt.
+
 Titelfelter kan bruge `<num>` som prefix:
 
 ```xml
@@ -113,6 +132,18 @@ side, er der ingen interne sideskift at indsætte. Fravær af `<pagebreaks/>` i 
 ældre værkfil betyder derfor »ikke oplyst«, ikke at kilden er uden sideskift.
 
 ### Workhead source
+
+En kilde kan have typevaliderede eksterne identifikatorer. I første version er
+kun `<wikidata>` tilladt:
+
+```xml
+<source>
+  Erica: <i>Lyngblomster</i>, 1856.
+  <identifiers><wikidata>Q123</wikidata></identifiers>
+</source>
+```
+
+Identifikatorerne gemmes separat fra den synlige kildeangivelse.
 
 En kilde paa vaerkniveau kan bruges som default for tekster i samme vaerk:
 
@@ -574,7 +605,7 @@ Attributter:
 - `portrait`: reference til et portraet i `fdirs/<digter>/portraits.xml`.
 - `primary="true"`: markerer primaert billede.
 - `year`: aar for billedet.
-- `museum`, `objid`, `invnr`, `wikidata`: bruges til museumslinks.
+- `museum`, `objid`, `invnr`: bruges til museumslinks.
 - `clip-path`: bruges til visuel beskæring.
 - `type`: fri type, fx `titlepage`, `frontpage`, `illustration`.
 - `lang`: sprog for lokal billedtekst; default er `da`.

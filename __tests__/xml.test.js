@@ -10,8 +10,11 @@ import {
   tagName,
   safeGetOuterXML,
   safeGetInnerXML,
+  safeGetInnerXMLWithout,
+  getIdentifiers,
   loadXMLDoc,
 } from '../tools/build-static/xml.js';
+import { DOMParser } from '@xmldom/xmldom';
 
 describe('XML parser', () => {
   const doc = loadXMLDoc('__tests__/fixtures/xml.xml');
@@ -78,6 +81,29 @@ describe('XML parser', () => {
     const source = getElementByTagName(doc, 'source');
     const sourceInner = safeGetInnerXML(source);
     expect(sourceInner).toEqual('Ingemann: <i>Digte</i>');
+  });
+
+  it('extracts identifiers separately from mixed content', () => {
+    const source = new DOMParser().parseFromString(
+      '<source>Tekst <i>med markup</i> tekst <identifiers><wikidata> Q123 </wikidata></identifiers></source>',
+      'text/xml',
+    ).documentElement;
+
+    expect(getIdentifiers(source)).toEqual({ wikidata: 'Q123' });
+    expect(safeGetInnerXMLWithout(source, ['identifiers'])).toBe(
+      'Tekst <i>med markup</i> tekst ',
+    );
+  });
+
+  it('rejects identifiers outside the entity allowlist', () => {
+    const source = new DOMParser().parseFromString(
+      '<source><identifiers><oclc>1</oclc></identifiers></source>',
+      'text/xml',
+    ).documentElement;
+
+    expect(() => getIdentifiers(source)).toThrow(
+      'ikke-tilladt identifikator <oclc>',
+    );
   });
 
   it('understands direct children named', () => {
