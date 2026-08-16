@@ -64,6 +64,29 @@ const textEntries = document => {
   return [...texts, ...proseTexts];
 };
 
+const textEntryAncestor = node => {
+  let current = node.parentNode;
+  while (current != null) {
+    if (
+      current.nodeName === 'text' ||
+      (current.nodeName === 'prose' &&
+        directChild(current, 'head') != null &&
+        directChild(current, 'body') != null)
+    ) {
+      return current;
+    }
+    current = current.parentNode;
+  }
+  return null;
+};
+
+const facsimileSourceId = pageBreak => {
+  const textEntry = textEntryAncestor(pageBreak);
+  const head = textEntry == null ? null : directChild(textEntry, 'head');
+  const source = head == null ? null : directChild(head, 'source');
+  return source?.getAttribute('in') ?? '';
+};
+
 const parseWorkXml = xml =>
   new DOMParser().parseFromString(xml, 'text/xml');
 
@@ -170,21 +193,26 @@ const collectPageBreakIssues = (
     }
   });
 
-  let previousFacsimilePage = null;
+  const previousFacsimilePages = new Map();
   pageBreaks.forEach(pageBreak => {
     const facs = pageBreak.getAttribute('facs');
     const facsimilePage = facs == null ? null : parseFacsimilePageNumber(facs);
+    const sourceId = facsimileSourceId(pageBreak);
+    const previousFacsimilePage = previousFacsimilePages.get(sourceId) ?? null;
     if (
       facsimilePage != null &&
       previousFacsimilePage != null &&
       facsimilePage < previousFacsimilePage.number
     ) {
       issues.push(
-        `${filename}: pb/@facs must not decrease through the work: ${previousFacsimilePage.label} before ${facs}.`,
+        `${filename}: pb/@facs must not decrease within one source: ${previousFacsimilePage.label} before ${facs}.`,
       );
     }
     if (facsimilePage != null) {
-      previousFacsimilePage = { label: facs, number: facsimilePage };
+      previousFacsimilePages.set(sourceId, {
+        label: facs,
+        number: facsimilePage,
+      });
     }
   });
 

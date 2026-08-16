@@ -152,9 +152,11 @@ Sideintervallet skal skrives med fulde endepunkter, fx `102-108`, ikke
 `102-08`, og skal være lukket og ikke-faldende. Inden for hver tekstpost skal
 arabiske `pb/@n` være ikke-faldende. Sidetallet kan begynde forfra ved en ny
 tekstpost, når kilden har selvstændig paginering. De numeriske
-`pb/@facs`-filnavne skal være ikke-faldende gennem hele værket; der må gerne
-være spring mellem markørerne. Romertal i `n` ignoreres af den maskinelle
-rækkefølgekontrol.
+`pb/@facs`-filnavne skal være ikke-faldende inden for samme facsimilekilde; der
+må gerne være spring mellem markørerne. I ældre værkfiler med flere kilder
+begynder en ny rækkefølge, når tekstens `source/@in` skifter. Uden
+`source/@in` gælder én rækkefølge for hele værket. Romertal i `n` ignoreres af
+den maskinelle rækkefølgekontrol.
 
 En konkret tekst med en dokumenteret pagineringsafvigelse kan bruge
 `ignore-tests="pagebreak-count"`, hvis det lovlige sideinterval ikke bestemmer
