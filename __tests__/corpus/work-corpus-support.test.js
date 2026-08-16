@@ -2,7 +2,11 @@ import {
   loadTrackedWorkFiles,
   trackedWorkFilenames,
 } from '../../tools/libs/work-files.js';
-import { checksForWorkXml } from '../../tools/work-validation.js';
+import {
+  checksForWorkXml,
+  collectTextStructureIssues,
+  parseWorkXml,
+} from '../../tools/work-validation.js';
 
 describe('work corpus support', () => {
   it('discovers tracked work files from git output', () => {
@@ -37,21 +41,53 @@ describe('work corpus support', () => {
       facsimiles: false,
       pageBreaks: false,
       sources: false,
+      textStructure: false,
     });
     expect(checksForWorkXml('<source\n pages="1-2"/>')).toEqual({
       facsimiles: false,
       pageBreaks: false,
       sources: true,
+      textStructure: false,
     });
     expect(checksForWorkXml('<pagebreaks/>')).toEqual({
       facsimiles: false,
       pageBreaks: true,
       sources: false,
+      textStructure: false,
     });
     expect(checksForWorkXml('<source facsimile="scan.pdf"/>')).toEqual({
       facsimiles: true,
       pageBreaks: false,
       sources: false,
+      textStructure: false,
     });
+  });
+
+  it('rejects first lines on prose-only text bodies', () => {
+    const xml = `
+      <kalliopework>
+        <text id="prose-text">
+          <head><title>Titel</title><firstline>Første linje</firstline></head>
+          <body><prose>Prosa</prose></body>
+        </text>
+      </kalliopework>
+    `;
+
+    expect(collectTextStructureIssues('work.xml', parseWorkXml(xml))).toEqual([
+      'work.xml: text prose-text has only <prose> in <body> and must not have <firstline> in <head>.',
+    ]);
+  });
+
+  it('allows first lines when the body contains poetry', () => {
+    const xml = `
+      <kalliopework>
+        <text id="poem-text">
+          <head><title>Titel</title><firstline>Første linje</firstline></head>
+          <body><poetry>Vers</poetry></body>
+        </text>
+      </kalliopework>
+    `;
+
+    expect(collectTextStructureIssues('work.xml', parseWorkXml(xml))).toEqual([]);
   });
 });
