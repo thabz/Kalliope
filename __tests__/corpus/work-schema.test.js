@@ -8,7 +8,7 @@ describe('kalliopework RELAX NG schema', () => {
           <title>Digte</title><year>1900</year>
           <source>Tekst <i>med markup</i><identifiers><kb-alma>A1</kb-alma><dbc-pid>P1</dbc-pid><openlibrary-edition>OL1M</openlibrary-edition></identifiers></source>
           <picture src="cover.jpg"><identifiers><wikidata>Q2</wikidata><smk>S1</smk><kid>K1</kid></identifiers></picture>
-          <identifiers><wikidata>Q3</wikidata><dbc-work>work-of:1</dbc-work><openlibrary-work>OL1W</openlibrary-work><dansklitteraturshistorie-lex-dk>kapitel</dansklitteraturshistorie-lex-dk></identifiers>
+          <identifiers><wikidata>Q3</wikidata><dbc-work>work-of:1</dbc-work><openlibrary-work>OL1W</openlibrary-work><dansklitteraturshistorie-lex-dk>kapitel</dansklitteraturshistorie-lex-dk><runeberg-book>digte</runeberg-book></identifiers>
         </workhead>
       </kalliopework>
     `;

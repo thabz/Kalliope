@@ -100,8 +100,8 @@ Et værks metadata kan have typevaliderede eksterne identifikatorer:
 
 Identifikatorerne gemmes separat i work-metadata.
 
-For værker er `wikidata`, `dbc-work`, `openlibrary-work` og
-`dansklitteraturshistorie-lex-dk` tilladt. For konkrete source-udgaver er
+For værker er `wikidata`, `dbc-work`, `openlibrary-work`,
+`dansklitteraturshistorie-lex-dk` og `runeberg-book` tilladt. For konkrete source-udgaver er
 `wikidata`, `kb-alma`, `dbc-pid` og `openlibrary-edition` tilladt.
 
 Titelfelter kan bruge `<num>` som prefix:

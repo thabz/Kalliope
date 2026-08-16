@@ -237,6 +237,7 @@
       <optional><ref name="dbcWorkIdentifier"/></optional>
       <optional><ref name="openlibraryWorkIdentifier"/></optional>
       <optional><ref name="dansklitteraturshistorieIdentifier"/></optional>
+      <optional><ref name="runebergBookIdentifier"/></optional>
     </element>
   </define>
 
@@ -246,6 +247,7 @@
   <define name="dbcWorkIdentifier"><element name="dbc-work"><text/></element></define>
   <define name="openlibraryWorkIdentifier"><element name="openlibrary-work"><text/></element></define>
   <define name="dansklitteraturshistorieIdentifier"><element name="dansklitteraturshistorie-lex-dk"><text/></element></define>
+  <define name="runebergBookIdentifier"><element name="runeberg-book"><text/></element></define>
   <define name="kbAlmaIdentifier"><element name="kb-alma"><text/></element></define>
   <define name="dbcPidIdentifier"><element name="dbc-pid"><text/></element></define>
   <define name="openlibraryEditionIdentifier"><element name="openlibrary-edition"><text/></element></define>

@@ -137,7 +137,7 @@ const safeGetInnerXML = element => {
 };
 
 const identifierAllowlist = Object.freeze({
-  workhead: ['wikidata', 'dbc-work', 'openlibrary-work', 'dansklitteraturshistorie-lex-dk'],
+  workhead: ['wikidata', 'dbc-work', 'openlibrary-work', 'dansklitteraturshistorie-lex-dk', 'runeberg-book'],
   source: ['wikidata', 'kb-alma', 'dbc-pid', 'openlibrary-edition'],
   picture: ['wikidata', 'smk', 'kid'],
   museum: ['wikidata'],
