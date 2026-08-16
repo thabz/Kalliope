@@ -11,7 +11,6 @@
         <ref name="workhead"/>
         <ref name="workbody"/>
         <ref name="textElement"/>
-        <ref name="poem"/>
         <ref name="prose"/>
         <ref name="prosa"/>
         <ref name="section"/>
@@ -114,13 +113,6 @@
     </element>
   </define>
 
-  <define name="poem">
-    <element name="poem">
-      <optional><attribute name="id"><text/></attribute></optional>
-      <ref name="mixed"/>
-    </element>
-  </define>
-
   <define name="section">
     <element name="section">
       <optional><attribute name="id"><text/></attribute></optional>
@@ -149,7 +141,13 @@
           </choice>
         </attribute>
       </optional>
-      <ref name="mixed"/>
+      <zeroOrMore>
+        <choice>
+          <ref name="poetry"/>
+          <ref name="prose"/>
+          <ref name="quote"/>
+        </choice>
+      </zeroOrMore>
     </element>
   </define>
 

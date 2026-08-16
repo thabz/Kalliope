@@ -23,4 +23,5 @@ describe('build-static validation', () => {
       )
     ).not.toThrow();
   });
+
 });

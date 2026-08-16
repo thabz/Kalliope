@@ -150,4 +150,57 @@ describe('kalliopework RELAX NG schema', () => {
       );
     }).toThrow();
   });
+
+  it('rejects unsupported blocks directly in a text body', () => {
+    const validXml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Digte</title><year>1900</year></workhead>
+        <workbody>
+          <text id="digter1900a">
+            <head><firstline>Første linje</firstline></head>
+            <body><prose>Første afsnit</prose><poetry>Første verslinje</poetry><quote>Citat</quote></body>
+          </text>
+        </workbody>
+      </kalliopework>
+    `;
+    const invalidXml = validXml.replace('<poetry>', '<poem>').replace('</poetry>', '</poem>');
+
+    expect(() => {
+      execFileSync(
+        'xmllint',
+        ['--noout', '--relaxng', 'schemas/kalliopework.rng', '-'],
+        { input: validXml, encoding: 'utf8', stdio: ['pipe', 'pipe', 'pipe'] }
+      );
+    }).not.toThrow();
+
+    expect(() => {
+      execFileSync(
+        'xmllint',
+        ['--noout', '--relaxng', 'schemas/kalliopework.rng', '-'],
+        { input: invalidXml, encoding: 'utf8', stdio: ['pipe', 'pipe', 'pipe'] }
+      );
+    }).toThrow();
+  });
+
+  it('rejects the obsolete poem wrapper', () => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Digte</title><year>1900</year></workhead>
+        <workbody>
+          <poem id="digter1900a">
+            <head><firstline>Første linje</firstline></head>
+            <body><poetry>Første linje</poetry></body>
+          </poem>
+        </workbody>
+      </kalliopework>
+    `;
+
+    expect(() => {
+      execFileSync(
+        'xmllint',
+        ['--noout', '--relaxng', 'schemas/kalliopework.rng', '-'],
+        { input: xml, encoding: 'utf8', stdio: ['pipe', 'pipe', 'pipe'] }
+      );
+    }).toThrow();
+  });
 });
