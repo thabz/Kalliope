@@ -10,16 +10,15 @@ Denne pakke indeholder et minimalt reproducerbart flow til at finde uopdagede KB
 - MARC-udtræk fra hits med fokus på Alma-E/online-signaler
 - Rekonstrueret facsimile-permalink per hit
 - Matchning med styrke-signaler (ikke baseret på navn alene)
-- Snapshot/cache for reproducerbar offline-kørsel
+- Cache af online-svar for at undgå unødige gentagne forespørgsler
 
 Standardafvikling er pilotbaseret med tre digtere i `fixtures/pilot-targets.json`.
 
 ## Brug i praksis
 
 ```sh
-node tools/alma-z3950/cli.js --offline \
+node tools/alma-z3950/cli.js \
   --targets tools/alma-z3950/fixtures/pilot-targets.json \
-  --snapshot tools/alma-z3950/fixtures/pilot-snapshots/pilot-offline-run.json \
   --jsonl-output /tmp/alma-z3950.ndjson \
   --report /tmp/alma-z3950-report.md
 ```
@@ -30,16 +29,8 @@ Scope-eksempler:
 - `--scope one --poet-id winther` eller `--scope one --index 2`: ét mål.
 - `--scope slice --slice 0:2`: udsnit af mållisten (end eksklusiv).
 
-Med netadgang kan snapshot fjernes og `--offline` udelades. Mangler Z39.50-klienten, får du en klar fejl med besked om installering.
-
-## Reproducerbar snapshot
-
-`fixtures/pilot-snapshots/` indeholder:
-
-- pilotmanifest med tre digtere (`pilot-targets.json`)
-- en snapshot med MARC-rådata per query (`pilot-offline-run.json`)
-
-Manifestet indeholder også afledt `queryHash`, så cache/replay kan køre deterministisk.
+Kørsel kræver netadgang og en installeret Z39.50-klient. Cachelagret bruges kun
+til at reducere gentagne forespørgsler i den aktuelle online-kørsel.
 
 ## Udfaldsformat
 

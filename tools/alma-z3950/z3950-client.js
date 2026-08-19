@@ -4,7 +4,7 @@ import { fileURLToPath } from 'url';
 const moduleRoot = path.join(fileURLToPath(import.meta.url), '..', '..');
 
 const z3950DependencyMessage =
-  'Z39.50-klientmodul mangler (fx node-z3950). Installer et kompatibelt modul eller brug --offline med snapshot.';
+  'Z39.50-klientmodul mangler (fx node-z3950). Installer et kompatibelt modul for online-kørsel.';
 
 const getClientConfig = () => ({
   timeoutMs: Number(process.env.KALLIOPE_KB_Z3950_TIMEOUT_MS ?? 15000),

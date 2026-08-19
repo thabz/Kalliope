@@ -1,4 +1,3 @@
-import { spawnSync } from 'child_process';
 import fs from 'fs';
 import os from 'os';
 import path from 'path';
@@ -11,15 +10,19 @@ import {
   loadTargets,
   parseMarcXmlRecord,
   runDiscovery,
+  writeMachineOutput,
 } from '../tools/alma-z3950/index.js';
 import { parseArgs } from '../tools/alma-z3950/cli.js';
 
 const targetsPath = path.join('tools', 'alma-z3950', 'fixtures', 'pilot-targets.json');
 const fixturesPath = path.join('tools', 'alma-z3950', 'fixtures');
 
-const snapshotPath = path.join(fixturesPath, 'pilot-snapshots', 'pilot-offline-run.json');
+const responseFixturePath = path.join(fixturesPath, 'pilot-marc-responses.json');
+const responseFixture = JSON.parse(fs.readFileSync(responseFixturePath, 'utf8'));
+const onlineSearch = async query =>
+  responseFixture.entries.find(entry => entry.query?.title === query.title)?.records ?? [];
 
-describe('Alma Z39.50 discovery, offline parsing og rapportering', () => {
+describe('Alma Z39.50 discovery, online parsing og rapportering', () => {
   it('parser CLI-argumenter for scope, force-reload og slice', () => {
     const parsed = parseArgs([
       '--scope',
@@ -66,8 +69,7 @@ describe('Alma Z39.50 discovery, offline parsing og rapportering', () => {
   });
 
   it('parser MARC-xml og udleder permalinksignaler', () => {
-    const snapshot = JSON.parse(fs.readFileSync(snapshotPath, 'utf8'));
-    const firstRecord = snapshot.entries[0].records[0];
+    const firstRecord = responseFixture.entries[0].records[0];
     const parsed = parseMarcXmlRecord(firstRecord);
 
     expect(parsed.control001).toBe('99122806920105763');
@@ -156,16 +158,13 @@ describe('Alma Z39.50 discovery, offline parsing og rapportering', () => {
     expect(recordMatchNoVerify.verification.status).toBe('needs-review');
   });
 
-  it('kører pilot-dokumentation med tre digtere mod offline snapshot', async () => {
+  it('kører pilot-dokumentation med tre digtere via online-søgeadapteren', async () => {
     const targets = loadTargets(targetsPath);
-    const snapshot = JSON.parse(fs.readFileSync(snapshotPath, 'utf8'));
-    expect(snapshot.entries).toHaveLength(3);
-    expect(snapshot.entries[0]).toHaveProperty('queryHash');
 
     const result = await runDiscovery({
       targets,
-      offline: true,
-      snapshotPath,
+      z3950Search: onlineSearch,
+      cacheDir: fs.mkdtempSync(path.join(os.tmpdir(), 'kalliope-alma-cache-')),
       forceReload: true,
     });
 
@@ -175,32 +174,17 @@ describe('Alma Z39.50 discovery, offline parsing og rapportering', () => {
     expect(result.discoveries[0].best?.queryHit?.permalink).toContain('1o797oc');
   });
 
-  it('sparer maskinoutput og kort rapport via CLI', () => {
+  it('sparer maskinoutput med kandidatproveniens', async () => {
     const tempdir = fs.mkdtempSync(path.join(os.tmpdir(), 'kalliope-alma-z3950-'));
     const machinePath = path.join(tempdir, 'output.ndjson');
-    const reportPath = path.join(tempdir, 'report.md');
-
-    const response = spawnSync(
-      'node',
-      [
-        'tools/alma-z3950/cli.js',
-        '--offline',
-        '--targets',
-        path.join('tools', 'alma-z3950', 'fixtures', 'pilot-targets.json'),
-        '--snapshot',
-        snapshotPath,
-        '--jsonl-output',
-        machinePath,
-        '--report',
-        reportPath,
-      ],
-      {
-        encoding: 'utf8',
-      },
-    );
-
-    expect(response.status).toBe(0);
-    expect(fs.readFileSync(reportPath, 'utf8')).toContain('Samlet');
+    const targets = loadTargets(targetsPath);
+    const discovery = await runDiscovery({
+      targets,
+      z3950Search: onlineSearch,
+      cacheDir: tempdir,
+      forceReload: true,
+    });
+    await writeMachineOutput(machinePath, discovery);
     const ndjson = fs
       .readFileSync(machinePath, 'utf8')
       .trim()
@@ -219,77 +203,4 @@ describe('Alma Z39.50 discovery, offline parsing og rapportering', () => {
     expect(buildQuerySignature({ title: 'Digte', author: 'Christian Winther' })).toHaveLength(40);
   });
 
-  it('respekterer CLI-scope for ét mål via poet-id', () => {
-    const tempdir = fs.mkdtempSync(path.join(os.tmpdir(), 'kalliope-alma-z3950-'));
-    const machinePath = path.join(tempdir, 'one.ndjson');
-
-    const response = spawnSync(
-      'node',
-      [
-        'tools/alma-z3950/cli.js',
-        '--offline',
-        '--scope',
-        'one',
-        '--poet-id',
-        'winther',
-        '--targets',
-        path.join('tools', 'alma-z3950', 'fixtures', 'pilot-targets.json'),
-        '--snapshot',
-        snapshotPath,
-        '--jsonl-output',
-        machinePath,
-      ],
-      {
-        encoding: 'utf8',
-      },
-    );
-
-    expect(response.status).toBe(0);
-    const lines = fs
-      .readFileSync(machinePath, 'utf8')
-      .trim()
-      .split('\n')
-      .filter(line => line !== '')
-      .map(line => JSON.parse(line));
-    expect(lines).toHaveLength(1);
-    expect(lines[0].target.poetId).toBe('winther');
-    expect(lines[0].candidates).toHaveLength(1);
-  });
-
-  it('respekterer CLI-scope for udsnit via --scope slice', () => {
-    const tempdir = fs.mkdtempSync(path.join(os.tmpdir(), 'kalliope-alma-z3950-'));
-    const machinePath = path.join(tempdir, 'slice.ndjson');
-
-    const response = spawnSync(
-      'node',
-      [
-        'tools/alma-z3950/cli.js',
-        '--offline',
-        '--scope',
-        'slice',
-        '--slice',
-        '0:2',
-        '--targets',
-        path.join('tools', 'alma-z3950', 'fixtures', 'pilot-targets.json'),
-        '--snapshot',
-        snapshotPath,
-        '--jsonl-output',
-        machinePath,
-      ],
-      {
-        encoding: 'utf8',
-      },
-    );
-
-    expect(response.status).toBe(0);
-    const ndjson = fs
-      .readFileSync(machinePath, 'utf8')
-      .trim()
-      .split('\n')
-      .filter(line => line !== '')
-      .map(line => JSON.parse(line));
-    expect(ndjson).toHaveLength(2);
-    expect(ndjson[0].target.poetId).toBe('ahlmann');
-    expect(ndjson[1].target.poetId).toBe('ingemann');
-  });
 });

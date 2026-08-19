@@ -5,7 +5,6 @@ import { fileURLToPath } from 'url';
 import {
   DEFAULT_CACHE_DIR,
   DEFAULT_CONTEXT_ID,
-  DEFAULT_SNAPSHOT,
   DEFAULT_TARGETS,
   formatReport,
   loadTargets,
@@ -18,13 +17,11 @@ const usage = `
 Usage: node tools/alma-z3950/cli.js [options]
 
 Options:
-  --offline                Brug reproducerbar snapshot og lad ikke Z39.50 køre.
   --scope <all|one|slice>  Vælg kørsel omfang (default: all).
   --poet-id <id>           Kør et enkelt mål (bruges med --scope one).
   --index <n>              Kør et enkelt mål efter listeindeks (bruges med --scope one).
   --slice <start>:<end>    Kør interval af mål, fx 0:10 (bruges med --scope slice).
   --targets <path>         Pilotmål i JSON (default: tools/alma-z3950/fixtures/pilot-targets.json)
-  --snapshot <path>        Snapshot med MARC-hits (default: tools/alma-z3950/fixtures/pilot-snapshots/pilot-offline-run.json)
   --cache-dir <path>       Cache-lager til forespørgsler.
   --force-reload           Ignorer cache og genhent hvert lookup fra Z39.50.
   --jsonl-output <path>    NDJSON-maskinoutput (default: stdout hvis udvidet, ellers ingen fil)
@@ -85,10 +82,8 @@ const applyScope = (targets, args) => {
 
 const parseArgs = argv => {
   const args = {};
-  args.offline = false;
   args.scope = 'all';
   args.targets = DEFAULT_TARGETS;
-  args.snapshot = DEFAULT_SNAPSHOT;
   args.cacheDir = DEFAULT_CACHE_DIR;
   args.contextId = DEFAULT_CONTEXT_ID;
   args.jsonlOutput = null;
@@ -99,10 +94,6 @@ const parseArgs = argv => {
     const arg = argv[index];
     if (arg === '--help') {
       args.help = true;
-      continue;
-    }
-    if (arg === '--offline') {
-      args.offline = true;
       continue;
     }
     if (arg === '--force-reload') {
@@ -131,11 +122,6 @@ const parseArgs = argv => {
     }
     if (arg === '--targets') {
       args.targets = argv[index + 1];
-      index += 1;
-      continue;
-    }
-    if (arg === '--snapshot') {
-      args.snapshot = argv[index + 1];
       index += 1;
       continue;
     }
@@ -180,14 +166,12 @@ const run = async (argv = process.argv.slice(2)) => {
   const scopedTargets = applyScope(targets, args);
   const discovery = await runDiscovery({
     targets: scopedTargets,
-    snapshotPath: args.snapshot,
     cacheDir: args.cacheDir,
     contextId: args.contextId,
     forceReload: args.forceReload,
-    offline: args.offline,
-    z3950Search: args.offline ? null : searchWithOptionalClient,
+    z3950Search: searchWithOptionalClient,
   }).catch(error => {
-    if (args.offline || error.message.includes('Z39.50-klientmodul mangler')) {
+    if (error.message.includes('Z39.50-klientmodul mangler')) {
       throw error;
     }
     throw new Error(`${z3950DependencyMessage}\nÅrsag: ${error.message}`);

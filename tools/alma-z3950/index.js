@@ -11,7 +11,6 @@ const DEFAULT_CONTEXT_ID = '1o797oc';
 const KB_PERMALINK_PREFIX = 'https://soeg.kb.dk/permalink/45KBDK_KGL';
 const DEFAULT_CACHE_DIR = path.join(rootDir, '.cache', 'alma-z3950');
 const DEFAULT_TARGETS = path.join(packageDir, 'fixtures', 'pilot-targets.json');
-const DEFAULT_SNAPSHOT = path.join(packageDir, 'fixtures', 'pilot-snapshots', 'pilot-offline-run.json');
 
 const BIB1_ATTRIBUTES = {
   TITLE: 1003,
@@ -598,39 +597,6 @@ const loadTargets = filename => {
   return parsed.map(buildTarget);
 };
 
-const loadSnapshot = filename => {
-  if (filename == null || filename === '') {
-    return null;
-  }
-  return readJson(filename);
-};
-
-const readSnapshots = snapshot => {
-  if (snapshot == null) {
-    return [];
-  }
-  if (Array.isArray(snapshot.entries) === false) {
-    return [];
-  }
-  return snapshot.entries.map(entry => ({
-    queryId: entry.queryId ?? '',
-    query: entry.query ?? {},
-    queryHash: entry.queryHash ?? '',
-    records: Array.isArray(entry.records) ? entry.records : [],
-    recordsXML: Array.isArray(entry.recordsXML) ? entry.recordsXML : [],
-    fetchedAt: entry.fetchedAt ?? null,
-  }));
-};
-
-const findSnapshotForTarget = (snapshots, target, query) => {
-  const targetSignature = canonicalizeQuery(query);
-  const targetHash = buildQuerySignature(query);
-  return snapshots.find(snapshot =>
-    snapshot.queryHash === targetHash ||
-    stableStringify(canonicalizeQuery(snapshot.query ?? {})) === stableStringify(targetSignature)
-  ) ?? null;
-};
-
 const writeCacheFile = async (cacheDir, queryHash, payload) => {
   const filename = path.join(cacheDir, `${queryHash}.json`);
   ensureDir(filename);
@@ -645,8 +611,8 @@ const loadCacheFile = async (cacheDir, queryHash) => {
   return JSON.parse(await fs.promises.readFile(filename, 'utf8'));
 };
 
-const normalizeHitRecords = snapshot => {
-  const records = snapshot.records ?? snapshot.recordsXML ?? [];
+const normalizeHitRecords = payload => {
+  const records = payload.records ?? payload.recordsXML ?? payload;
   if (Array.isArray(records) === false) {
     return [];
   }
@@ -655,52 +621,30 @@ const normalizeHitRecords = snapshot => {
 
 const runDiscovery = async ({
   targets,
-  snapshotPath = null,
   cacheDir = DEFAULT_CACHE_DIR,
   forceReload = false,
-  offline = false,
   contextId = DEFAULT_CONTEXT_ID,
-  z3950Search = null,
+  z3950Search,
 }) => {
-  const snapshot = loadSnapshot(snapshotPath);
-  const entries = readSnapshots(snapshot);
+  if (typeof z3950Search !== 'function') {
+    throw new Error('Kan ikke udføre online søgning: Z39.50-klient mangler.');
+  }
   const results = [];
 
   for (const target of targets) {
     const query = buildSearchContext(target);
     let recordsXML = [];
 
-    if (offline === true) {
-      const replay = findSnapshotForTarget(entries, target, {
-        title: target.title,
-        author: target.poetName,
-        year: target.year,
-        publisher: target.publisher,
-      });
-      if (replay == null) {
-        throw new Error(
-          `Fejl: offline snapshot mangler match for ${target.title} (${target.poetName}). Kør med en komplet snapshot eller uden --offline.`,
-        );
-      }
-      recordsXML = normalizeHitRecords(replay);
-    } else {
-      if (typeof z3950Search !== 'function') {
-        throw new Error('Kan ikke udføre online søgning: Z39.50-klient mangler.');
-      }
-      const cacheKey = query.hash;
-      const cached = forceReload !== true ? await loadCacheFile(cacheDir, cacheKey) : null;
-      const payload = cached == null ? await z3950Search(query) : cached;
-      if (payload == null) {
-        throw new Error(`Z39.50-søgning returnerede tom payload for ${query.hash}`);
-      }
-      if (cached == null && Array.isArray(payload) === true) {
-        await writeCacheFile(cacheDir, cacheKey, payload);
-      }
-      recordsXML = normalizeHitRecords(payload);
-      if (recordsXML.length === 0 && Array.isArray(payload.records) === true) {
-        recordsXML = normalizeHitRecords(payload.records);
-      }
+    const cacheKey = query.hash;
+    const cached = forceReload !== true ? await loadCacheFile(cacheDir, cacheKey) : null;
+    const payload = cached == null ? await z3950Search(query) : cached;
+    if (payload == null) {
+      throw new Error(`Z39.50-søgning returnerede tom payload for ${query.hash}`);
     }
+    if (cached == null) {
+      await writeCacheFile(cacheDir, cacheKey, payload);
+    }
+    recordsXML = normalizeHitRecords(payload);
 
     const parsed = recordsXML.map(parseMarcXmlRecord);
     const candidates = buildCandidates(target, parsed, contextId);
@@ -805,7 +749,6 @@ const loadJsonFile = (filename) => {
 export {
   DEFAULT_CONTEXT_ID,
   DEFAULT_CACHE_DIR,
-  DEFAULT_SNAPSHOT,
   DEFAULT_TARGETS,
   KB_PERMALINK_PREFIX,
   buildBib1Query,
@@ -819,10 +762,8 @@ export {
   formatReport,
   loadCacheFile,
   loadJsonFile,
-  loadSnapshot,
   loadTargets,
   parseMarcXmlRecord,
-  readSnapshots,
   runDiscovery,
   writeMachineOutput,
 };
