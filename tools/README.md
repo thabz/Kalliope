@@ -162,6 +162,49 @@ ruby tools/fraktur-ocr-cleanup.rb input.txt > output.txt
 Reglerne er brede og ordnede; gennemgå derfor outputtet manuelt, før det bruges
 som kildetekst.
 
+## Afstemning af eksterne identifikatorer
+
+`identifier-reconciliation/identifier_reconciliation.py` er det fælles
+Python-værktøj til at afstemme eksterne identifikatorer mod Kalliopes
+personer, værker og senere kunstposter. Værktøjet ændrer ikke XML uden
+`--apply`; standardkørslen skriver en lokal CSV-rapport til
+`reports/identifier-reconciliation/work-identifiers.csv`.
+
+Den nuværende afstemning dækker Wikidata-, Open Library- og Runeberg-id’er for
+værker. Wikidata-kandidater klassificeres først som work-level, source-level
+(konkret udgave/version/oversættelse) eller individuelt indhold som digte,
+sange og noveller. Kun work-level-kandidater kan få status `MATCH`.
+
+Digtere og kunstværker kan afstemmes med samme værktøj og får separate lokale
+rapporter:
+
+```sh
+python3 tools/identifier-reconciliation/identifier_reconciliation.py \
+  . --entity-type poet -o reports/identifier-reconciliation/poet-identifiers.csv
+
+python3 tools/identifier-reconciliation/identifier_reconciliation.py \
+  . --entity-type artwork -o reports/identifier-reconciliation/artwork-identifiers.csv
+```
+
+`poet` gennemgår kun `info.xml`-poster med `type="poet"`. Personmatch kræver et
+Wikidata-signal for menneske/person, mens `artwork` bruger billedets titel,
+kunstner, årstal og Wikidata-værktyper (`P31`); `P170` bruges som skabersignal,
+når kunstnerens Wikidata-id er kendt. Usikre kandidater får `NO_MATCH` eller
+`REVIEW` og skal vurderes manuelt.
+
+Kør en kontrol fra repository-roden:
+
+```sh
+python3 tools/identifier-reconciliation/identifier_reconciliation.py \
+  ~/src/kalliope
+```
+
+Brug `--apply` for at indsætte manglende work-level-id’er og fjerne
+eksisterende Wikidata-id’er, som dokumenteres at være source-level eller
+individuelt indhold. Brug `--verbose` til at se, om svar kommer fra cache eller
+netværk, samt kandidatens type-, form- og klassifikationssignaler. Den lokale
+HTTP-cache ligger i `.cache/kalliope-work-identifiers/`.
+
 ## Synkronisering
 
 ### Wikidata

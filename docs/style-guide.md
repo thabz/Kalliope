@@ -78,6 +78,7 @@ Læs den relevante specialdokumentation før ændringer på området:
   ISO 639-1-sprogkode. Sæt fortsat `lang` på `<text>`, når hele teksten har
   samme sprog.
 - Brug eksisterende attributter og formater; ukendte `<picture>`-attributter er build-fejl.
+- Identifikatorer på museum, picture og source valideres særskilt pr. entity-type.
 - Alle tekst- og XML-filer skal være UTF-8 encoded. Konvertér gamle Latin-1/ISO-8859-1-filer i stedet for at videreføre dem.
 - Formatér `info.xml`, `portraits.xml` og `artwork.xml` med
   `node tools/format-metadata-xml.js <fil>`; testpakken håndhæver det kanoniske output.

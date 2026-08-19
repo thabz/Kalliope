@@ -12,10 +12,10 @@ const formatWithXmllint = xml =>
 const xmlDeclarationPattern = /(?=<\?xml\s)/;
 
 const pictureStructuralTagPattern =
-  /(<\/?(?:pictures|picture|picture-note|description)(?=\s|\/?>)[^>]*>)/g;
+  /(<\/?(?:pictures|picture|picture-note|description|identifiers)(?=\s|\/?\s*>|>)[^>]*>)/g;
 
 const isPictureStructuralTag = part =>
-  /^<\/?(?:pictures|picture|picture-note|description)(?=\s|\/?>)/.test(part);
+  /^<\/?(?:pictures|picture|picture-note|description|identifiers)(?=\s|\/?\s*>|>)/.test(part);
 
 const normalizeTag = tag =>
   tag

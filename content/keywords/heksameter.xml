@@ -4,9 +4,12 @@
     <title>Heksameter</title>
     <author>Henrik Nielsen</author>
     <pictures>
-        <picture src="homer.jpg" wikidata="Q9509393" museum="louvre" objid="cl010277994" invnr="MR 530; N 323; Ma 440">
+        <picture src="homer.jpg" museum="louvre" objid="cl010277994" invnr="MR 530; N 323; Ma 440">
           <i>Portræt af Homer</i>, romersk kopi af græsk original fra omkring 150 f.Kr. Louvre.
           <!-- metadata checked: 2026-08-11 -->
+        <identifiers>
+          <wikidata>Q9509393</wikidata>
+        </identifiers>
         </picture>
     </pictures>
     <related>verseformer</related>

@@ -92,7 +92,14 @@
     </element>
   </define>
 
-  <define name="workhead"><element name="workhead"><ref name="mixed"/></element></define>
+  <define name="workhead">
+    <element name="workhead">
+      <interleave>
+        <ref name="mixed"/>
+        <optional><ref name="workheadIdentifiers"/></optional>
+      </interleave>
+    </element>
+  </define>
   <define name="workbody"><element name="workbody"><ref name="mixed"/></element></define>
 
   <define name="textElement">
@@ -172,6 +179,7 @@
       <optional><attribute name="facsimile-pages-num"><text/></attribute></optional>
       <optional><attribute name="facsimile-pages-offset"><text/></attribute></optional>
       <ref name="mixed"/>
+      <optional><ref name="sourceIdentifiers"/></optional>
     </element>
   </define>
 
@@ -201,10 +209,50 @@
       <optional><attribute name="museum"><text/></attribute></optional>
       <optional><attribute name="invnr"><text/></attribute></optional>
       <optional><attribute name="objid"><text/></attribute></optional>
-      <optional><attribute name="wikidata"><text/></attribute></optional>
       <ref name="mixed"/>
+      <optional><ref name="pictureIdentifiers"/></optional>
     </element>
   </define>
+
+  <define name="sourceIdentifiers">
+    <element name="identifiers">
+      <optional><ref name="wikidataIdentifier"/></optional>
+      <optional><ref name="kbAlmaIdentifier"/></optional>
+      <optional><ref name="dbcPidIdentifier"/></optional>
+      <optional><ref name="openlibraryEditionIdentifier"/></optional>
+    </element>
+  </define>
+
+  <define name="pictureIdentifiers">
+    <element name="identifiers">
+      <optional><ref name="wikidataIdentifier"/></optional>
+      <optional><ref name="smkIdentifier"/></optional>
+      <optional><ref name="kidIdentifier"/></optional>
+    </element>
+  </define>
+
+  <define name="workheadIdentifiers">
+    <element name="identifiers">
+      <optional><ref name="wikidataIdentifier"/></optional>
+      <optional><ref name="dbcWorkIdentifier"/></optional>
+      <optional><ref name="openlibraryWorkIdentifier"/></optional>
+      <optional><ref name="dansklitteraturshistorieIdentifier"/></optional>
+      <optional><ref name="runebergBookIdentifier"/></optional>
+    </element>
+  </define>
+
+  <define name="wikidataIdentifier">
+    <element name="wikidata"><text/></element>
+  </define>
+  <define name="dbcWorkIdentifier"><element name="dbc-work"><text/></element></define>
+  <define name="openlibraryWorkIdentifier"><element name="openlibrary-work"><text/></element></define>
+  <define name="dansklitteraturshistorieIdentifier"><element name="dansklitteraturshistorie-lex-dk"><text/></element></define>
+  <define name="runebergBookIdentifier"><element name="runeberg-book"><text/></element></define>
+  <define name="kbAlmaIdentifier"><element name="kb-alma"><text/></element></define>
+  <define name="dbcPidIdentifier"><element name="dbc-pid"><text/></element></define>
+  <define name="openlibraryEditionIdentifier"><element name="openlibrary-edition"><text/></element></define>
+  <define name="smkIdentifier"><element name="smk"><text/></element></define>
+  <define name="kidIdentifier"><element name="kid"><text/></element></define>
 
   <define name="poetry">
     <element name="poetry">
