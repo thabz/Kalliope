@@ -138,6 +138,13 @@ const splitMultilineLanguageSpans = html =>
     }
   );
 
+const collapseMultilineNotes = html =>
+  html.replace(
+    /<(footnote|note)(\s+[^>]*)?>([\s\S]*?)<\/\1>/g,
+    (_, tagName, attributes = '', content) =>
+      `<${tagName}${attributes}>${content.replace(/\s*\n\s*/g, ' ')}</${tagName}>`
+  );
+
 const htmlToXml = (html, collected, isPoetry) => {
   if (html == null) {
     return null;
@@ -160,6 +167,7 @@ const htmlToXml = (html, collected, isPoetry) => {
       return /^[ \t]+<!--.*?-->[ \t]+$/.test(match) ? ' ' : '';
     })
     .replace(/::NEWLINE-PLACEHOLDER::/g, '\n');
+  html = collapseMultilineNotes(html);
   let decoded = splitMultilineLanguageSpans(
     decodeXmlCharacterReferences(
       replaceDashes(
