@@ -58,6 +58,7 @@ const SidebarSplit = ({
             border-left: 0;
             width: 100%;
             padding: 20px 0 0 0;
+            color: black;
           }
 
           div.sidebar-spl.reverse-split > :global(div:first-child) {
