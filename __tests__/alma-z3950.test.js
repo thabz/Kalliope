@@ -7,12 +7,13 @@ import {
   buildSearchContext,
   buildQuerySignature,
   evaluateMatch,
-  loadTargets,
+  extractPdfUrls,
+  loadSearchProfiles,
   parseMarcXmlRecord,
   runDiscovery,
   writeMachineOutput,
 } from '../tools/alma-z3950/index.js';
-import { parseArgs } from '../tools/alma-z3950/cli.js';
+import { defaultOutputBase, parseArgs } from '../tools/alma-z3950/cli.js';
 import {
   buildYazCommands,
   findYazFailure,
@@ -20,7 +21,6 @@ import {
   runYazClient,
 } from '../tools/alma-z3950/z3950-client.js';
 
-const targetsPath = path.join('tools', 'alma-z3950', 'fixtures', 'pilot-targets.json');
 const fixturesPath = path.join('tools', 'alma-z3950', 'fixtures');
 
 const responseFixturePath = path.join(fixturesPath, 'pilot-marc-responses.json');
@@ -29,20 +29,19 @@ const onlineSearch = async query =>
   responseFixture.entries.find(entry => entry.query?.title === query.title)?.records ?? [];
 
 describe('Alma Z39.50 discovery, online parsing og rapportering', () => {
-  it('parser CLI-argumenter for scope, force-reload og slice', () => {
+  it('parser CLI-argumenter for én digter eller hele korpusset', () => {
     const parsed = parseArgs([
-      '--scope',
-      'one',
       '--poet-id',
-      'winther',
+      'baggesen',
       '--force-reload',
-      '--slice',
-      '1:2',
     ]);
-    expect(parsed.scope).toBe('one');
-    expect(parsed.poetId).toBe('winther');
+    expect(parsed.poetId).toBe('baggesen');
     expect(parsed.forceReload).toBe(true);
-    expect(parsed.sliceRange).toEqual({ start: 1, end: 2 });
+    expect(() => parseArgs([])).toThrow('præcis én');
+    expect(() => parseArgs(['--all', '--poet-id', 'baggesen'])).toThrow('præcis én');
+    expect(parseArgs(['--all']).all).toBe(true);
+    expect(defaultOutputBase(parsed)).toBe('/tmp/alma-z3950-baggesen');
+    expect(defaultOutputBase(parseArgs(['--all']))).toBe('/tmp/alma-z3950-all');
   });
 
   it('bygger PQF med dokumenteret Digitalisering + title + year + surname', () => {
@@ -87,6 +86,9 @@ describe('Alma Z39.50 discovery, online parsing og rapportering', () => {
     expect(parsed.rawFields.rawQuerySignals.almaE).toBe(true);
     expect(parsed.rawFields.onlineLinkLabels).toContain('Link til elektronisk udgave');
     expect(parsed.onlineLinkLabels).toHaveLength(1);
+    expect(extractPdfUrls(parsed.onlineLinks)).toEqual([
+      'https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122806920105763.pdf',
+    ]);
   });
 
   it('bygger en YAZ-session med KBs dokumenterede Alma-forbindelse', () => {
@@ -207,17 +209,36 @@ describe('Alma Z39.50 discovery, online parsing og rapportering', () => {
     expect(recordMatchNoVerify.verification.status).toBe('needs-review');
   });
 
-  it('kører pilot-dokumentation med tre digtere via online-søgeadapteren', async () => {
-    const targets = loadTargets(targetsPath);
+  it('bygger søgeprofiler direkte fra korpussets poet- og værkfiler', async () => {
+    const profiles = await loadSearchProfiles({ poetId: 'baggesen' });
+
+    expect(profiles.length).toBeGreaterThan(0);
+    expect(profiles.every(profile => profile.poetId === 'baggesen')).toBe(true);
+    expect(profiles).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        poetName: 'Jens Baggesen',
+        title: 'Comiske Fortællinger',
+        year: '1785',
+        workId: 'baggesen/1785',
+      }),
+    ]));
+  });
+
+  it('kører korpusprofiler via online-søgeadapteren', async () => {
+    const profiles = [
+      { poetId: 'ahlmann', poetName: 'Hans Ahlmann', workId: 'ahlmann/ungdoms-legende', workUrl: '', title: 'Ungdoms Legende', year: '1907', publisher: '' },
+      { poetId: 'ingemann', poetName: 'Bernhard Severin Ingemann', workId: 'ingemann/flyvende-sommer', workUrl: '', title: 'Flyvende Sommer', year: '1867', publisher: '' },
+      { poetId: 'winther', poetName: 'Christian Winther', workId: 'winther/1828', workUrl: '', title: 'Digte', year: '1828', publisher: '' },
+    ];
 
     const result = await runDiscovery({
-      targets,
+      profiles,
       z3950Search: onlineSearch,
       cacheDir: fs.mkdtempSync(path.join(os.tmpdir(), 'kalliope-alma-cache-')),
       forceReload: true,
     });
 
-    expect(result.summary.totalTargets).toBe(3);
+    expect(result.summary.totalProfiles).toBe(3);
     expect(result.summary.strongMatches).toBe(3);
     expect(result.discoveries[0].best?.queryHit?.facsimileId).toContain('alma');
     expect(result.discoveries[0].best?.queryHit?.permalink).toContain('1o797oc');
@@ -226,9 +247,9 @@ describe('Alma Z39.50 discovery, online parsing og rapportering', () => {
   it('sparer maskinoutput med kandidatproveniens', async () => {
     const tempdir = fs.mkdtempSync(path.join(os.tmpdir(), 'kalliope-alma-z3950-'));
     const machinePath = path.join(tempdir, 'output.ndjson');
-    const targets = loadTargets(targetsPath);
+    const profiles = [{ poetId: 'ahlmann', poetName: 'Hans Ahlmann', workId: 'ahlmann/ungdoms-legende', workUrl: '', title: 'Ungdoms Legende', year: '1907', publisher: '' }];
     const discovery = await runDiscovery({
-      targets,
+      profiles,
       z3950Search: onlineSearch,
       cacheDir: tempdir,
       forceReload: true,
@@ -241,14 +262,16 @@ describe('Alma Z39.50 discovery, online parsing og rapportering', () => {
       .filter(line => line !== '')
       .map(line => JSON.parse(line));
 
-    expect(ndjson).toHaveLength(3);
+    expect(ndjson).toHaveLength(1);
     expect(ndjson[0].poetId).toBe('ahlmann');
+    expect(ndjson[0]).toHaveProperty('work.id', 'ahlmann/ungdoms-legende');
     expect(ndjson[0]).toHaveProperty('candidates');
     expect(ndjson[0].candidates).toHaveLength(1);
     expect(ndjson[0].candidates[0]).toHaveProperty('provenance.rawFields.control001');
     expect(ndjson[0].candidates[0]).toHaveProperty('provenance.rawFields.rawQuerySignals.almaE');
     expect(ndjson[0].candidates[0]).toHaveProperty('verification.status');
     expect(ndjson[0].candidates[0]).toHaveProperty('verification.reason');
+    expect(ndjson[0].candidates[0]).toHaveProperty('pdfUrls.0', 'https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122806920105763.pdf');
     expect(buildQuerySignature({ title: 'Digte', author: 'Christian Winther' })).toHaveLength(40);
   });
 

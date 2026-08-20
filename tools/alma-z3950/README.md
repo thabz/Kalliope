@@ -1,33 +1,37 @@
 # Alma/Z39.50 discovery (KB-facsimiler)
 
-Denne pakke indeholder et minimalt reproducerbart flow til at finde uopdagede KB-facsimiler for danske digtere:
+Værktøjet finder mulige, endnu uregistrerede KB-facsimiler for Kalliopes
+digtsamlinger. Det læser digtere og værker direkte fra det versionsmærkede
+korpus i `public/api/v1/`; ingen særskilt målfil skal vedligeholdes.
 
-- Z39.50/PQF-forespørgsel med dokumenterede Bib-1-attributter:
-  - titel (`1003`)
-  - forfatter (**efternavn**) (`1004`) som målretning efter KB-workflow
-  - år (`31`)
-  - "digitalisering" (`1016`)
-- MARC-udtræk fra hits med fokus på Alma-E/online-signaler
-- Rekonstrueret facsimile-permalink per hit
-- Matchning med styrke-signaler (ikke baseret på navn alene)
-- Cache af online-svar for at undgå unødige gentagne forespørgsler
+## Brug
 
-Standardafvikling er pilotbaseret med tre digtere i `fixtures/pilot-targets.json`.
-
-## Brug i praksis
+Find facsimiler for én digter:
 
 ```sh
-node tools/alma-z3950/cli.js \
-  --targets tools/alma-z3950/fixtures/pilot-targets.json \
-  --jsonl-output /tmp/alma-z3950.ndjson \
-  --report /tmp/alma-z3950-report.md
+node tools/alma-z3950/cli.js --poet-id baggesen
 ```
 
-Scope-eksempler:
+Find facsimiler for hele korpusset:
 
-- `--scope all` (standard): alle mål.
-- `--scope one --poet-id winther` eller `--scope one --index 2`: ét mål.
-- `--scope slice --slice 0:2`: udsnit af mållisten (end eksklusiv).
+```sh
+node tools/alma-z3950/cli.js --all
+```
+
+Vælg præcis én af `--poet-id <id>` og `--all`. Kun værker med typen `poetry`
+undersøges. Hver forespørgsel kombinerer værktitel, digterens efternavn og
+udgivelsesår; forlag indgår ikke, fordi det ikke er et stabilt felt i det
+offentlige korpusdatasæt.
+
+Begge outputfiler skrives altid. Standardstierne er:
+
+- `/tmp/alma-z3950-<poet-id>.ndjson` og `/tmp/alma-z3950-<poet-id>.md` for én digter
+- `/tmp/alma-z3950-all.ndjson` og `/tmp/alma-z3950-all.md` for hele korpusset
+
+Stierne kan tilsidesættes med `--jsonl-output <sti>` og `--report <sti>`.
+NDJSON-filen indeholder både permalink og konkrete PDF-URL’er i kandidatens
+`pdfUrls`; rapporten viser PDF-URL’er under hvert fund, når MARC-posten angiver
+dem.
 
 Kørsel kræver netadgang og YAZ-værktøjet `yaz-client` i `PATH`:
 
@@ -36,62 +40,15 @@ brew install yaz            # macOS
 sudo apt install yaz        # Debian/Ubuntu
 ```
 
-Værktøjet forbinder som standard til den Alma-server, der er dokumenteret i
-issue #1579: `kbdk-kgl.alma.exlibrisgroup.com:1921/45KBDK_KGL`. Host, port og
-database kan overskrives med henholdsvis `KALLIOPE_KB_Z3950_HOST`,
+Værktøjet forbinder som standard til `kbdk-kgl.alma.exlibrisgroup.com:1921/45KBDK_KGL`.
+Host, port og database kan overskrives med `KALLIOPE_KB_Z3950_HOST`,
 `KALLIOPE_KB_Z3950_PORT` og `KALLIOPE_KB_Z3950_DB`.
 
-Cachelagret bruges til at reducere gentagne forespørgsler til KB.
+## Matchning og verifikation
 
-## Udfaldsformat
+Automatisk stærkt match kræver titelmatch, et sikkert efternavnsmatch,
+digitaliseringssignaler og online-verifikation. Et navn alene er aldrig nok.
+Kandidater uden entydig online-evidens bliver markeret `needs-review`.
 
-CLI'en producerer to lag:
-
-- maskin-output i NDJSON, én linje pr. mål (`--jsonl-output`)
-- kort kort rapport i markdown (`--report`)
-
-Maskin-linjerne indeholder pr. mål:
-
-- poet-id og titel
-- match-status / confidence
-- bedste hit (`best`)
-- alle kandidater i `candidates`, herunder `queryHit` og `provenance`
-
-## Matching- og verifikationspolitik
-
-`evaluateMatch` kræver som minimum:
-
-- kendt titelmatch
-- entydig efternavns-match mod MARC-authorfelt
-- stærke digitaliseringssignaler (`Alma-E` eller digital link)
-- og verifikation af online-tilgængelighed
-
-`queryHit.verification` og kandidatniveau'et indeholder:
-
-- `status`: `verified`, `needs-review` eller `missing`
-- `reason`: fx `marc-permalink-and-vis-online` eller `online-evidence-incomplete`
-- `expectedPermalink`: den afledte permalinkkandidat
-- `source`: `marc`
-
-Når verifikationen ikke kan fuldføres fra MARC/PNX, forbliver kandidaten `needs-review` med begrundet årsag.
-
-## Matchregler
-
-Automatisk match kræver tydelig titelmatch og stærke signaler:
-
-- Alma-E
-- elektronisk link
-- supplerende publikationshints (år/publisher/beskrivelse)
-
-Forfatternavn alene kan aldrig udløse et match. Et tydeligt efternavn-signal er indgående i `strong-match`.
-
-## Udviklernoter
-
-- `index.js` indeholder domænelogik, parser og rapportering.
-- `z3950-client.js` styrer `yaz-client` over stdin/stdout og udtrækker MARCXML.
-  - manglende YAZ giver installationsvejledning for macOS og Debian/Ubuntu.
-  - timeout, retry og exponential backoff ved transient fejl (`ENOTFOUND`, `ETIMEDOUT`, `ECONNRESET` m.fl.).
-- `cli.js` understøtter:
-  - `--scope all|one|slice`
-  - `--poet-id`, `--index`, `--slice`
-  - `--force-reload` for at ignorere cache.
+Et KB-permalink er ikke i sig selv en PDF. `pdfUrls` indeholder kun de fulde
+PDF-adresser, som forekommer i MARC-postens elektroniske links.

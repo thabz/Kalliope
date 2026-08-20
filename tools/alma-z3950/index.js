@@ -1,6 +1,8 @@
 import fs from 'fs';
 import path from 'path';
 import crypto from 'crypto';
+import readline from 'readline';
+import zlib from 'zlib';
 import { fileURLToPath } from 'url';
 import { DOMParser } from '@xmldom/xmldom';
 
@@ -10,7 +12,8 @@ const rootDir = path.join(packageDir, '..', '..');
 const DEFAULT_CONTEXT_ID = '1o797oc';
 const KB_PERMALINK_PREFIX = 'https://soeg.kb.dk/permalink/45KBDK_KGL';
 const DEFAULT_CACHE_DIR = path.join(rootDir, '.cache', 'alma-z3950');
-const DEFAULT_TARGETS = path.join(packageDir, 'fixtures', 'pilot-targets.json');
+const DEFAULT_POETS_FILE = path.join(rootDir, 'public', 'api', 'v1', 'poets.jsonl.gz');
+const DEFAULT_WORKS_FILE = path.join(rootDir, 'public', 'api', 'v1', 'works.jsonl.gz');
 
 const BIB1_ATTRIBUTES = {
   TITLE: 1003,
@@ -186,10 +189,7 @@ const collectOnlineLinks = recordNode => {
   const links = [];
   const fields = groupByTag(recordNode, '856');
   for (const field of fields) {
-    const u = collectFieldText(field, 'u').map(value => value.trim()).filter(Boolean);
-    const y = collectFieldText(field, 'y').map(value => value.trim()).filter(Boolean);
-    const z = collectFieldText(field, 'z').map(value => value.trim()).filter(Boolean);
-    for (const value of [...u, ...y, ...z]) {
+    for (const value of collectFieldText(field, 'u').map(value => value.trim()).filter(Boolean)) {
       if (value !== '') {
         links.push(value);
       }
@@ -327,8 +327,8 @@ const derivePermalink = (record, contextId = DEFAULT_CONTEXT_ID) => {
   return `${KB_PERMALINK_PREFIX}/${contextId}/${base}`;
 };
 
-const evaluateIdentitySignals = (target, record) => {
-  const targetSurname = toSurname(target?.poetName ?? '');
+const evaluateIdentitySignals = (profile, record) => {
+  const targetSurname = toSurname(profile?.poetName ?? '');
   const recordSurname = toSurname(record?.author ?? '');
   const hasSurname = targetSurname !== '' && recordSurname !== '';
   const hasSurnameMatch = hasSurname && targetSurname === recordSurname;
@@ -386,38 +386,49 @@ const verifyOnlineAccess = (record, contextId = DEFAULT_CONTEXT_ID) => {
   };
 };
 
-const buildTarget = input => ({
+const extractPdfUrls = onlineLinks =>
+  [...new Set((onlineLinks ?? []).filter(link => {
+    try {
+      const url = new URL(link);
+      return /\.pdf(?:$|[?#])/i.test(url.href);
+    } catch {
+      return false;
+    }
+  }))];
+
+const buildSearchProfile = input => ({
   poetId: input?.poetId ?? '',
   poetName: input?.poetName ?? '',
+  workId: input?.workId ?? '',
+  workUrl: input?.workUrl ?? '',
   title: input?.title ?? '',
   year: input?.year ?? '',
-  publisher: input?.publisher ?? '',
-  sourceId: input?.sourceId ?? null,
+  publisher: '',
   sourceFile: input?.sourceFile ?? null,
 });
 
-const buildSearchContext = target => ({
-  title: target.title,
-  author: target.poetName,
-  year: target.year,
-  publisher: target.publisher,
+const buildSearchContext = profile => ({
+  title: profile.title,
+  author: profile.poetName,
+  year: profile.year,
+  publisher: profile.publisher,
   pqf: buildBib1Query({
-    title: target.title,
-    author: toSurname(target.poetName),
-    publisher: target.publisher,
-    year: target.year,
+    title: profile.title,
+    author: toSurname(profile.poetName),
+    publisher: profile.publisher,
+    year: profile.year,
   }),
   hash: buildQuerySignature({
-    title: target.title,
-    author: target.poetName,
-    year: target.year,
-    publisher: target.publisher,
+    title: profile.title,
+    author: profile.poetName,
+    year: profile.year,
+    publisher: profile.publisher,
   }),
 });
 
-const evaluateMatch = (target, record) => {
-  const identity = evaluateIdentitySignals(target, record);
-  const targetNormalized = normalizeText(target.title);
+const evaluateMatch = (profile, record) => {
+  const identity = evaluateIdentitySignals(profile, record);
+  const targetNormalized = normalizeText(profile.title);
   const recordNormalized = normalizeText(record.title);
   const targetHasTitle = targetNormalized !== '';
   const hasTitleMatch =
@@ -427,20 +438,20 @@ const evaluateMatch = (target, record) => {
       targetNormalized.startsWith(recordNormalized) ||
       recordNormalized.startsWith(targetNormalized));
   const hasYearMatch =
-    target.year !== '' &&
-    (target.year === record.publicationYear ||
-      normalizeText(record.publicationYear) === normalizeText(target.year));
+    profile.year !== '' &&
+    (profile.year === record.publicationYear ||
+      normalizeText(record.publicationYear) === normalizeText(profile.year));
   const hasPublisherMatch =
-    record.publisher !== '' && target.publisher !== ''
-      ? normalizeText(record.publisher).includes(normalizeText(target.publisher)) ||
-        normalizeText(target.publisher).includes(normalizeText(record.publisher))
+    record.publisher !== '' && profile.publisher !== ''
+      ? normalizeText(record.publisher).includes(normalizeText(profile.publisher)) ||
+        normalizeText(profile.publisher).includes(normalizeText(record.publisher))
       : false;
   const hasDescMatch =
     record.description !== ''
       ?
         [normalizeText(record.description)].some(value =>
           value.includes(targetNormalized) ||
-          (target.year !== '' && value.includes(normalizeText(target.year)))
+          (profile.year !== '' && value.includes(normalizeText(profile.year)))
         )
       : false;
   if (targetHasTitle === false) {
@@ -454,7 +465,7 @@ const evaluateMatch = (target, record) => {
   }
 
   const hasNameOnly =
-    normalizeText(target.poetName) !== '' &&
+    normalizeText(profile.poetName) !== '' &&
     identity.hasSurnameMatch === false &&
     normalizeText(record.author) !== '';
   const hasStrongSignals = hasTitleMatch &&
@@ -545,10 +556,10 @@ const evaluateMatch = (target, record) => {
   };
 };
 
-const buildCandidates = (target, records, contextId = DEFAULT_CONTEXT_ID) =>
+const buildCandidates = (profile, records, contextId = DEFAULT_CONTEXT_ID) =>
   records
     .map(record => {
-      const matched = evaluateMatch(target, record);
+      const matched = evaluateMatch(profile, record);
       return {
       ...matched,
       title: record.title,
@@ -558,6 +569,7 @@ const buildCandidates = (target, records, contextId = DEFAULT_CONTEXT_ID) =>
       isAlmaE: record.isAlmaE,
       hasOnlineSignals: record.hasOnlineSignals,
       onlineLinks: record.onlineLinks,
+      pdfUrls: extractPdfUrls(record.onlineLinks),
       onlineLinkLabels: record.onlineLinkLabels,
       verification: matched.verification ?? verifyOnlineAccess(record, contextId),
       queryHit: {
@@ -589,12 +601,61 @@ const buildCandidates = (target, records, contextId = DEFAULT_CONTEXT_ID) =>
       return 0;
     });
 
-const loadTargets = filename => {
-  const parsed = readJson(filename);
-  if (Array.isArray(parsed) === false) {
-    throw new Error('Pilot-fil er tom eller ugyldigt format');
+const readJsonlGzip = async function* (filename) {
+  if (fs.existsSync(filename) !== true) {
+    throw new Error(`Korpusfilen findes ikke: ${filename}`);
   }
-  return parsed.map(buildTarget);
+  const input = fs.createReadStream(filename);
+  const gzip = zlib.createGunzip();
+  const lines = readline.createInterface({ input: input.pipe(gzip), crlfDelay: Infinity });
+  for await (const line of lines) {
+    if (line.trim() !== '') {
+      yield JSON.parse(line);
+    }
+  }
+};
+
+const loadSearchProfiles = async ({
+  poetId = null,
+  all = false,
+  poetsFile = DEFAULT_POETS_FILE,
+  worksFile = DEFAULT_WORKS_FILE,
+} = {}) => {
+  const hasPoetId = poetId != null && poetId !== '';
+  if ((hasPoetId && all === true) || (hasPoetId === false && all === false)) {
+    throw new Error('Angiv præcis én af --poet-id eller --all.');
+  }
+
+  const poets = new Map();
+  for await (const poet of readJsonlGzip(poetsFile)) {
+    if (poet.type === 'poet' && (all === true || poet.id === poetId)) {
+      poets.set(poet.id, poet);
+    }
+  }
+  if (hasPoetId && poets.has(poetId) === false) {
+    throw new Error(`Ingen digter med poet-id ${poetId} i korpusdatasættet.`);
+  }
+
+  const profiles = [];
+  for await (const work of readJsonlGzip(worksFile)) {
+    const poet = poets.get(work.poet_id);
+    if (poet == null || work.type !== 'poetry' || typeof work.title !== 'string' || work.title.trim() === '') {
+      continue;
+    }
+    profiles.push(buildSearchProfile({
+      poetId: poet.id,
+      poetName: poet.name,
+      workId: work.id,
+      workUrl: work.canonical_url,
+      title: work.title,
+      year: work.year ?? work.published ?? '',
+      sourceFile: 'public/api/v1/works.jsonl.gz',
+    }));
+  }
+  if (hasPoetId && profiles.length === 0) {
+    throw new Error(`Digteren ${poetId} har ingen søgbare digtværker i korpusdatasættet.`);
+  }
+  return profiles;
 };
 
 const writeCacheFile = async (cacheDir, queryHash, payload) => {
@@ -620,7 +681,7 @@ const normalizeHitRecords = payload => {
 };
 
 const runDiscovery = async ({
-  targets,
+  profiles,
   cacheDir = DEFAULT_CACHE_DIR,
   forceReload = false,
   contextId = DEFAULT_CONTEXT_ID,
@@ -631,8 +692,8 @@ const runDiscovery = async ({
   }
   const results = [];
 
-  for (const target of targets) {
-    const query = buildSearchContext(target);
+  for (const profile of profiles) {
+    const query = buildSearchContext(profile);
     let recordsXML = [];
 
     const cacheKey = query.hash;
@@ -647,10 +708,10 @@ const runDiscovery = async ({
     recordsXML = normalizeHitRecords(payload);
 
     const parsed = recordsXML.map(parseMarcXmlRecord);
-    const candidates = buildCandidates(target, parsed, contextId);
+    const candidates = buildCandidates(profile, parsed, contextId);
     const best = candidates[0] ?? null;
     results.push({
-      target,
+      profile,
       query,
       candidates,
       best,
@@ -658,10 +719,10 @@ const runDiscovery = async ({
   }
 
   return {
-    targets: targets.length,
+    profiles: profiles.length,
     discoveries: results,
     summary: {
-      totalTargets: results.length,
+      totalProfiles: results.length,
       totalCandidates: results.reduce((acc, item) => acc + item.candidates.length, 0),
       strongMatches: results.filter(item => item.best?.status === 'strong-match').length,
       review: results.filter(item => item.best?.status === 'needs-review').length,
@@ -677,19 +738,23 @@ const formatReport = ({ summary, discoveries }) => {
     `Genereret: ${new Date().toISOString()}`,
     '',
     '## Samlet',
-    `- Målte digtere/tekster: ${summary.totalTargets}`,
+    `- Undersøgte værker: ${summary.totalProfiles}`,
     `- Kandidathits fundet: ${summary.totalCandidates}`,
     `- Stærke match: ${summary.strongMatches}`,
     `- Manuelle gennemgange: ${summary.review}`,
     `- Ingen match: ${summary.noMatch}`,
     '',
-    '## Pilot (3 digtere)',
+    '## Fund',
     ...discoveries.map(item => {
       const status = item.best?.status ?? 'no-match';
       const matchType = item.best?.confidence ?? 'none';
-      const targetId = `${item.target.poetId}-${item.target.title}`;
-      const link = item.best?.queryHit?.permalink ?? 'ikke fundet';
-      return `- ${targetId}: ${status}/${matchType}. ${link}`;
+      const profile = item.profile;
+      const permalink = item.best?.queryHit?.permalink ?? 'ikke fundet';
+      const pdfUrls = item.best?.pdfUrls ?? [];
+      return [
+        `- ${profile.poetName}: *${profile.title}* (${profile.year || 'ukendt år'}) — ${status}/${matchType}. ${permalink}`,
+        ...pdfUrls.map(url => `  - PDF: ${url}`),
+      ].join('\n');
     }),
     '',
     '## Matchregler',
@@ -702,15 +767,14 @@ const formatReport = ({ summary, discoveries }) => {
 
 const writeMachineOutput = async (filename, discoveries) => {
   const payload = discoveries.discoveries.map(discovery => ({
-    poetId: discovery.target.poetId,
-    target: {
-      poetId: discovery.target.poetId,
-      poetName: discovery.target.poetName,
-      title: discovery.target.title,
-      year: discovery.target.year,
-      publisher: discovery.target.publisher,
-      sourceId: discovery.target.sourceId,
-      sourceFile: discovery.target.sourceFile,
+    poetId: discovery.profile.poetId,
+    work: {
+      id: discovery.profile.workId,
+      url: discovery.profile.workUrl,
+      title: discovery.profile.title,
+      year: discovery.profile.year,
+      poetName: discovery.profile.poetName,
+      sourceFile: discovery.profile.sourceFile,
     },
     query: discovery.query,
     summary: {
@@ -731,10 +795,12 @@ const writeMachineOutput = async (filename, discoveries) => {
       evidence: candidate.evidence,
       isAlmaE: candidate.isAlmaE,
       hasOnlineSignals: candidate.hasOnlineSignals,
+      pdfUrls: candidate.pdfUrls,
       queryHit: candidate.queryHit,
       provenance: candidate.provenance ?? null,
     })),
   }));
+  ensureDir(filename);
   await fs.promises.writeFile(filename, `${payload.map(item => JSON.stringify(item)).join('\n')}\n`);
 };
 
@@ -749,20 +815,22 @@ const loadJsonFile = (filename) => {
 export {
   DEFAULT_CONTEXT_ID,
   DEFAULT_CACHE_DIR,
-  DEFAULT_TARGETS,
+  DEFAULT_POETS_FILE,
+  DEFAULT_WORKS_FILE,
   KB_PERMALINK_PREFIX,
   buildBib1Query,
   buildSearchContext,
-  buildTarget,
+  buildSearchProfile,
   buildCandidates,
   buildQuerySignature,
   collectOnlineLinks,
   derivePermalink,
   evaluateMatch,
+  extractPdfUrls,
   formatReport,
   loadCacheFile,
   loadJsonFile,
-  loadTargets,
+  loadSearchProfiles,
   parseMarcXmlRecord,
   runDiscovery,
   writeMachineOutput,
