@@ -13,6 +13,12 @@ import {
   writeMachineOutput,
 } from '../tools/alma-z3950/index.js';
 import { parseArgs } from '../tools/alma-z3950/cli.js';
+import {
+  buildYazCommands,
+  findYazFailure,
+  parseYazRecords,
+  runYazClient,
+} from '../tools/alma-z3950/z3950-client.js';
 
 const targetsPath = path.join('tools', 'alma-z3950', 'fixtures', 'pilot-targets.json');
 const fixturesPath = path.join('tools', 'alma-z3950', 'fixtures');
@@ -81,6 +87,49 @@ describe('Alma Z39.50 discovery, online parsing og rapportering', () => {
     expect(parsed.rawFields.rawQuerySignals.almaE).toBe(true);
     expect(parsed.rawFields.onlineLinkLabels).toContain('Link til elektronisk udgave');
     expect(parsed.onlineLinkLabels).toHaveLength(1);
+  });
+
+  it('bygger en YAZ-session med KBs dokumenterede Alma-forbindelse', () => {
+    const commands = buildYazCommands(
+      { pqf: '@attr 1=1003 "digte"' },
+      {
+        host: 'kbdk-kgl.alma.exlibrisgroup.com',
+        port: 1921,
+        database: '45KBDK_KGL',
+        maxRecords: 25,
+      },
+    );
+
+    expect(commands).toContain('format xml');
+    expect(commands).toContain('elements marcxml');
+    expect(commands).toContain('open kbdk-kgl.alma.exlibrisgroup.com:1921/45KBDK_KGL');
+    expect(commands).toContain('find @attr 1=1003 "digte"');
+    expect(commands).not.toContain('show');
+  });
+
+  it('udtrækker MARCXML-poster fra YAZ-output', () => {
+    const record = responseFixture.entries[0].records[0];
+    const output = `Connecting...OK.\n[45KBDK_KGL]Record type: XML\n${record}\nZ>`;
+
+    expect(parseYazRecords(output)).toEqual([record]);
+  });
+
+  it('genkender forbindelsesfejl trods YAZ-prompter på samme linje', () => {
+    expect(findYazFailure('Z> Z> Z> Connecting...error = System (lower-layer) error\nZ>'))
+      .toBe('error = System (lower-layer) error');
+  });
+
+  it('giver installationsvejledning når yaz-client mangler', async () => {
+    await expect(runYazClient(
+      { pqf: '@attr 1=1003 "digte"' },
+      {
+        binary: 'kalliope-test-yaz-client-findes-ikke',
+        host: 'localhost',
+        port: 210,
+        database: 'test',
+        timeoutMs: 1000,
+      },
+    )).rejects.toThrow('brew install yaz');
   });
 
   it('kræver efternavn-validering før stærkt match', () => {
