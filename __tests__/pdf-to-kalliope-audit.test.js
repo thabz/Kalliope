@@ -148,6 +148,28 @@ describe('historical OCR candidate profile', () => {
       expect.objectContaining({ rule: 'implausible-ending', match: 'Ordxxx' }),
     ]));
   });
+
+  it('reports Fraktur word-shaped candidates without normalizing historical forms', () => {
+    const xml = workXml.replace('Første paa elleve', 'forst gjor det fkal voere klart.');
+    const inventory = buildPageInventory({ xml });
+    const candidates = historicalOcrCandidates({ xml, inventory });
+
+    expect(candidates).toEqual(expect.arrayContaining([
+      expect.objectContaining({ rule: 'historical-wordform', match: 'forst' }),
+      expect.objectContaining({ rule: 'fraktur-letter-confusion', match: 'gjor' }),
+      expect.objectContaining({ rule: 'likely-long-s-substitution', match: 'fkal' }),
+      expect.objectContaining({ rule: 'fraktur-letter-confusion', match: 'voere' }),
+    ]));
+
+    const historicalXml = workXml.replace('Første paa elleve', 'høi skiøn kiær giøre maaskee.');
+    expect(historicalOcrCandidates({
+      xml: historicalXml,
+      inventory: buildPageInventory({ xml: historicalXml }),
+    })).not.toEqual(expect.arrayContaining([
+      expect.objectContaining({ rule: 'fraktur-letter-confusion' }),
+      expect.objectContaining({ rule: 'historical-wordform' }),
+    ]));
+  });
 });
 
 describe('findings registry and frozen checkpoint', () => {

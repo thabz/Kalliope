@@ -385,6 +385,35 @@ Keep generated page images, OCR outputs, crops and reports in a clearly
 contained scratch location. They must not enter the pull request unless the
 repository explicitly requires a particular generated asset.
 
+### Fraktur-OCR profile
+
+For historical Danish Fraktur, run the side-aware OCR candidate audit in
+addition to the ordinary checks:
+
+```shell
+node .codex/skills/pdf-to-kalliope/scripts/audit-ocr-candidates.js \
+  path/to/work.xml path/to/inventory.jsonl > /tmp/<work>-ocr-candidates.jsonl
+```
+
+Use its Fraktur profile to prioritise visual inspection of likely recognition
+errors, especially long-s and related `f`/`s` readings, `c`/`e`, `æ`/`a`/`e`,
+`ø`/`o`, `oe`/`aa` and `skj`/`sj` confusions, inserted spaces, digits or
+symbols inside words, broken quotation marks and duplicated lines. It also
+flags recurring word-shaped signals such as `forst`/`først` and `gjor`/`gjør`.
+
+The audit produces candidates only. Never apply its readings as global
+substitutions. Historical forms such as `høi`, `skiøn`, `kiær`, `giøre` and
+`maaskee` may be correct in the source, and a modern spelling or dictionary
+cannot overrule the facsimile. Check the complete local context, capitalization,
+word boundary and printed glyph before changing XML. If the facsimile does not
+settle the reading, preserve the uncertainty with a `TODO:` note or finding
+rather than guessing.
+
+The detailed general rules for facsimile proofreading, stanza structure,
+indentation and page coverage remain in `docs/facsimile-korrektur.md` and
+`docs/ocr-korrektur-laerebog.md`; consult those documents instead of duplicating
+their full procedures here.
+
 ## Auditable side and review records
 
 Before editing the transcription, create two machine-readable scratch files:
@@ -1008,30 +1037,11 @@ Generation of plausible XML is not completion.
 After the initial XML exists, perform a separate systematic proofreading pass
 following `docs/facsimile-korrektur.md`.
 
-At minimum:
-
-1. Compare the transcription with both fresh OCR results.
-2. Create or inspect a discrepancy list.
-3. Resolve every discrepancy against the facsimile.
-4. Inspect suspicious stanza lengths and sequence numbering.
-5. Check every wrapped or unusually short line.
-6. Check all indentation.
-7. Check headings, mottoes, signatures and separators.
-8. Check punctuation, quotation marks, apostrophes and dashes.
-9. Check italics, small capitals, spacing and other supported typography.
-10. Check every footnote and note marker.
-11. Check the first and last visible text on every relevant page.
-12. Read every relevant page directly against the XML.
-13. Verify the beginning and end of every text.
-14. Verify continuations across page boundaries.
-15. Verify every internal page boundary against the page inventory, including
-    each marker's exact position, printed `n` value and required `facs`
-    filename.
-16. Verify that Arabic `pb/@n` values and numeric `pb/@facs` filenames never
-    decrease in document order; gaps are allowed.
-17. Verify that `<workhead>` contains `<pagebreaks/>`, including when no text
-    crosses a page boundary.
-18. Verify that the title page and optional cover images are the correct pages.
+Use `docs/facsimile-korrektur.md` as the complete proofreading checklist. In
+this skill, the mandatory outcomes are: every relevant page is read directly
+against the XML, every discrepancy is resolved against the facsimile, and the
+side inventory, structural analyses, notes, typography and page-break audit are
+all reconciled with the final file.
 
 The final work must have been checked page by page against the images.
 

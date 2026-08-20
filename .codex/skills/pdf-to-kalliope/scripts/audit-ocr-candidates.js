@@ -13,6 +13,8 @@ const rules = [
   ['long-s-parenthesis', /\([a-zæøå]/gu, 'Mulig lang-s-fejllæsning som parentes'],
   ['long-s-brace', /\{[a-zæøå]/gu, 'Mulig lang-s-fejllæsning som klammeparentes'],
   ['likely-long-s-substitution', /\b(?:diffe|faa|faae|fig|fin|flig|fkal|fkulle|fom)\b/giu, 'Sandsynlig lang-s-fejllæsning som f'],
+  ['fraktur-letter-confusion', /\b(?:oeg|hoj|hoi|skjon|skion|kjoer|kierr|gjor|gjort|voere)\b/giu, 'Mulig Fraktur-glyphforveksling'],
+  ['historical-wordform', /\b(?:forst|forste|sial|stulde|vane)\b/giu, 'Mulig Fraktur-ordforveksling'],
   ['singleton', /(?:^|\s)[bcdfghjklmnpqrstvwxz](?=\s|[.,;:!?]|$)/gimu, 'Usandsynligt enkeltbogstav'],
   ['implausible-ending', /\b\p{L}{3,}([bcdfghjklmnpqrstvwxz])\1{2,}\b/giu, 'Usandsynlig gentaget ordendelse'],
 ];
