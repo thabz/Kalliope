@@ -33,6 +33,11 @@ NDJSON-filen indeholder både permalink og konkrete PDF-URL’er i kandidatens
 `pdfUrls`; rapporten viser PDF-URL’er under hvert fund, når MARC-posten angiver
 dem.
 
+Brug `-v` (eller `--verbose`) for at se korpusfund, de præcise PQF-søgninger,
+cache-hits, antal MARC-hits og eventuelle Alma-fejl. En timeout på Alma stopper
+ikke outputtet: fejlen registreres pr. værk, og efter en upstream-timeout springes
+resterende netværkskald over, så begge filer stadig bliver skrevet.
+
 Kørsel kræver netadgang og YAZ-værktøjet `yaz-client` i `PATH`:
 
 ```sh
