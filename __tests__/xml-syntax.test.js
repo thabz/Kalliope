@@ -1,6 +1,4 @@
-import fs from 'fs';
 import { execFileSync } from 'child_process';
-import { DOMParser } from '@xmldom/xmldom';
 
 const sourceXmlFilenames = () =>
   execFileSync(
@@ -17,40 +15,23 @@ const sourceXmlFilenames = () =>
     .split('\0')
     .filter(filename => filename.endsWith('.xml'));
 
-const parseXmlErrors = xml => {
-  const errors = [];
+const validateXmlSyntax = filenames => {
   try {
-    new DOMParser({
-      onError(level, message) {
-        if (level !== 'warning') {
-          errors.push(message);
-        }
-      },
-    }).parseFromString(xml, 'text/xml');
+    execFileSync('xmllint', ['--noout', ...filenames], {
+      encoding: 'utf8',
+      stdio: ['ignore', 'ignore', 'pipe'],
+    });
+    return null;
   } catch (error) {
-    errors.push(error.message);
+    return error.stderr || error.message;
   }
-  return errors;
 };
 
 describe('XML syntax', () => {
-  it('reports recoverable XML parser errors', () => {
-    expect(parseXmlErrors('<root>&unknown;</root>')).toEqual([
-      'entity not found:&unknown;',
-    ]);
-  });
-
   it('parses every tracked Kalliope source XML file', () => {
-    const errors = [];
     const filenames = sourceXmlFilenames();
 
     expect(filenames.length).toBeGreaterThan(0);
-
-    for (const filename of filenames) {
-      for (const error of parseXmlErrors(fs.readFileSync(filename, 'utf8'))) {
-        errors.push(`${filename}: ${error}`);
-      }
-    }
-    expect(errors).toEqual([]);
+    expect(validateXmlSyntax(filenames)).toBeNull();
   });
 });
