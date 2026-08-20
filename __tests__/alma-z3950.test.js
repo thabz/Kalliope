@@ -37,6 +37,7 @@ describe('Alma Z39.50 discovery, online parsing og rapportering', () => {
     ]);
     expect(parsed.poetId).toBe('baggesen');
     expect(parsed.forceReload).toBe(true);
+    expect(parseArgs(['--poet-id', 'baggesen', '-v']).verbose).toBe(true);
     expect(() => parseArgs([])).toThrow('præcis én');
     expect(() => parseArgs(['--all', '--poet-id', 'baggesen'])).toThrow('præcis én');
     expect(parseArgs(['--all']).all).toBe(true);
@@ -242,6 +243,27 @@ describe('Alma Z39.50 discovery, online parsing og rapportering', () => {
     expect(result.summary.strongMatches).toBe(3);
     expect(result.discoveries[0].best?.queryHit?.facsimileId).toContain('alma');
     expect(result.discoveries[0].best?.queryHit?.permalink).toContain('1o797oc');
+  });
+
+  it('bevarer output når en enkelt online-søgning fejler', async () => {
+    const profiles = [{ poetId: 'baggesen', poetName: 'Jens Baggesen', workId: 'baggesen/1785', workUrl: '', title: 'Comiske Fortællinger', year: '1785', publisher: '' }];
+    const result = await runDiscovery({
+      profiles,
+      z3950Search: async () => {
+        const error = new Error('YAZ-søgningen timede ud efter 30000 ms.');
+        error.code = 'ETIMEDOUT';
+        throw error;
+      },
+      cacheDir: fs.mkdtempSync(path.join(os.tmpdir(), 'kalliope-alma-cache-')),
+      forceReload: true,
+    });
+
+    expect(result.summary.errors).toBe(1);
+    expect(result.discoveries[0].error).toEqual({
+      message: 'YAZ-søgningen timede ud efter 30000 ms.',
+      code: 'ETIMEDOUT',
+    });
+    expect(result.discoveries[0].best).toBeNull();
   });
 
   it('sparer maskinoutput med kandidatproveniens', async () => {

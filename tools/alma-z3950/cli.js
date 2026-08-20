@@ -21,6 +21,7 @@ Udvælgelse:
 Øvrige indstillinger:
   --cache-dir <path>       Cache-lager til forespørgsler.
   --force-reload           Ignorer cache og genhent hvert lookup fra Z39.50.
+  -v, --verbose            Vis korpusfund, søgninger, cache og resultater.
   --jsonl-output <path>    NDJSON-maskinoutput (default: /tmp/alma-z3950-<valg>.ndjson).
   --report <path>          Markdown-rapport (default: /tmp/alma-z3950-<valg>.md).
   --context <1o797oc>      Vælg KB-permalinkkontekst for afledte facsimiler.
@@ -33,6 +34,7 @@ const parseArgs = argv => {
     cacheDir: DEFAULT_CACHE_DIR,
     contextId: DEFAULT_CONTEXT_ID,
     forceReload: false,
+    verbose: false,
     jsonlOutput: null,
     reportPath: null,
   };
@@ -45,6 +47,8 @@ const parseArgs = argv => {
       args.all = true;
     } else if (arg === '--force-reload') {
       args.forceReload = true;
+    } else if (arg === '-v' || arg === '--verbose') {
+      args.verbose = true;
     } else if (arg === '--poet-id' || arg === '--cache-dir' || arg === '--jsonl-output' || arg === '--report' || arg === '--context') {
       const value = argv[index + 1];
       if (value == null || value.startsWith('--')) {
@@ -80,11 +84,16 @@ const run = async (argv = process.argv.slice(2)) => {
   }
 
   const profiles = await loadSearchProfiles({ poetId: args.poetId, all: args.all });
+  const log = args.verbose === true ? message => process.stderr.write(`[alma-z3950] ${message}\n`) : null;
+  if (log != null) {
+    log(`Korpusfund: ${profiles.length} søgbare digtværker.`);
+  }
   const discovery = await runDiscovery({
     profiles,
     cacheDir: args.cacheDir,
     contextId: args.contextId,
     forceReload: args.forceReload,
+    log,
     z3950Search: searchWithYaz,
   });
   const outputBase = defaultOutputBase(args);

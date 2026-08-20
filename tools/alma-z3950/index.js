@@ -680,32 +680,68 @@ const normalizeHitRecords = payload => {
   return records.filter(value => typeof value === 'string');
 };
 
+const isUnavailableSearchError = error =>
+  error?.code === 'ETIMEDOUT' ||
+  error?.code === 'ECONNREFUSED' ||
+  error?.code === 'ENETUNREACH' ||
+  `${error?.message ?? ''}`.toLocaleLowerCase('da-DK').includes('timede ud');
+
 const runDiscovery = async ({
   profiles,
   cacheDir = DEFAULT_CACHE_DIR,
   forceReload = false,
   contextId = DEFAULT_CONTEXT_ID,
   z3950Search,
+  log = null,
 }) => {
   if (typeof z3950Search !== 'function') {
     throw new Error('Kan ikke udføre online søgning: Z39.50-klient mangler.');
   }
   const results = [];
+  let upstreamUnavailable = null;
 
-  for (const profile of profiles) {
+  for (const [index, profile] of profiles.entries()) {
     const query = buildSearchContext(profile);
     let recordsXML = [];
 
+    const writeLog = message => {
+      if (typeof log === 'function') {
+        log(message);
+      }
+    };
+    writeLog(`Søgning ${index + 1}/${profiles.length}: ${profile.poetName} — ${profile.title} (${profile.year || 'ukendt år'})`);
+    writeLog(`PQF: ${query.pqf}`);
+
     const cacheKey = query.hash;
     const cached = forceReload !== true ? await loadCacheFile(cacheDir, cacheKey) : null;
-    const payload = cached == null ? await z3950Search(query) : cached;
+    if (cached != null) {
+      writeLog(`Cache-hit: ${cacheKey}`);
+    }
+    let payload = cached;
+    let error = null;
     if (payload == null) {
-      throw new Error(`Z39.50-søgning returnerede tom payload for ${query.hash}`);
+      if (upstreamUnavailable != null) {
+        error = new Error(`Søgning ikke forsøgt: Alma/Z39.50 er utilgængelig (${upstreamUnavailable.message}).`);
+        error.code = 'SKIPPED_UPSTREAM_FAILURE';
+        writeLog(`Sprunget over: ${error.message}`);
+      } else {
+        try {
+          payload = await z3950Search(query);
+          if (payload == null) {
+            throw new Error(`Z39.50-søgning returnerede tom payload for ${query.hash}`);
+          }
+          await writeCacheFile(cacheDir, cacheKey, payload);
+        } catch (caughtError) {
+          error = caughtError;
+          if (isUnavailableSearchError(caughtError)) {
+            upstreamUnavailable = caughtError;
+          }
+          writeLog(`Fejl: ${caughtError.message}`);
+        }
+      }
     }
-    if (cached == null) {
-      await writeCacheFile(cacheDir, cacheKey, payload);
-    }
-    recordsXML = normalizeHitRecords(payload);
+    recordsXML = error == null ? normalizeHitRecords(payload) : [];
+    writeLog(`MARC-hits: ${recordsXML.length}`);
 
     const parsed = recordsXML.map(parseMarcXmlRecord);
     const candidates = buildCandidates(profile, parsed, contextId);
@@ -715,6 +751,7 @@ const runDiscovery = async ({
       query,
       candidates,
       best,
+      error: error == null ? null : { message: error.message, code: error.code ?? null },
     });
   }
 
@@ -727,6 +764,7 @@ const runDiscovery = async ({
       strongMatches: results.filter(item => item.best?.status === 'strong-match').length,
       review: results.filter(item => item.best?.status === 'needs-review').length,
       noMatch: results.filter(item => item.best == null || item.best.status === 'no-match').length,
+      errors: results.filter(item => item.error != null).length,
     },
     producedAt: new Date().toISOString(),
   };
@@ -743,6 +781,7 @@ const formatReport = ({ summary, discoveries }) => {
     `- Stærke match: ${summary.strongMatches}`,
     `- Manuelle gennemgange: ${summary.review}`,
     `- Ingen match: ${summary.noMatch}`,
+    `- Søgefejl: ${summary.errors}`,
     '',
     '## Fund',
     ...discoveries.map(item => {
@@ -751,8 +790,9 @@ const formatReport = ({ summary, discoveries }) => {
       const profile = item.profile;
       const permalink = item.best?.queryHit?.permalink ?? 'ikke fundet';
       const pdfUrls = item.best?.pdfUrls ?? [];
+      const error = item.error?.message == null ? '' : ` Søgefejl: ${item.error.message}`;
       return [
-        `- ${profile.poetName}: *${profile.title}* (${profile.year || 'ukendt år'}) — ${status}/${matchType}. ${permalink}`,
+        `- ${profile.poetName}: *${profile.title}* (${profile.year || 'ukendt år'}) — ${status}/${matchType}. ${permalink}${error}`,
         ...pdfUrls.map(url => `  - PDF: ${url}`),
       ].join('\n');
     }),
@@ -780,6 +820,7 @@ const writeMachineOutput = async (filename, discoveries) => {
     summary: {
       status: discovery.best?.status ?? 'no-match',
       confidence: discovery.best?.confidence ?? 'none',
+      error: discovery.error,
     },
     best: discovery.best?.queryHit ? {
       ...discovery.best,
