@@ -77,7 +77,7 @@ const FootnoteList = () => {
           padding-right: 7px;
         }
         :global(.footnote .footnote-num a) {
-          color: #666;
+          color: black;
         }
         :global(.footnote .footnote-text) {
           flex-grow: 1;
