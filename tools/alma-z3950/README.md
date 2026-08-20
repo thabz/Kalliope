@@ -29,8 +29,19 @@ Scope-eksempler:
 - `--scope one --poet-id winther` eller `--scope one --index 2`: ét mål.
 - `--scope slice --slice 0:2`: udsnit af mållisten (end eksklusiv).
 
-Kørsel kræver netadgang og en installeret Z39.50-klient. Cachelagret bruges kun
-til at reducere gentagne forespørgsler i den aktuelle online-kørsel.
+Kørsel kræver netadgang og YAZ-værktøjet `yaz-client` i `PATH`:
+
+```sh
+brew install yaz            # macOS
+sudo apt install yaz        # Debian/Ubuntu
+```
+
+Værktøjet forbinder som standard til den Alma-server, der er dokumenteret i
+issue #1579: `kbdk-kgl.alma.exlibrisgroup.com:1921/45KBDK_KGL`. Host, port og
+database kan overskrives med henholdsvis `KALLIOPE_KB_Z3950_HOST`,
+`KALLIOPE_KB_Z3950_PORT` og `KALLIOPE_KB_Z3950_DB`.
+
+Cachelagret bruges til at reducere gentagne forespørgsler til KB.
 
 ## Udfaldsformat
 
@@ -77,7 +88,8 @@ Forfatternavn alene kan aldrig udløse et match. Et tydeligt efternavn-signal er
 ## Udviklernoter
 
 - `index.js` indeholder domænelogik, parser og rapportering.
-- `z3950-client.js` indlæser valgfri Z39.50-klient med klar fejlmelding hvis fraværende.
+- `z3950-client.js` styrer `yaz-client` over stdin/stdout og udtrækker MARCXML.
+  - manglende YAZ giver installationsvejledning for macOS og Debian/Ubuntu.
   - timeout, retry og exponential backoff ved transient fejl (`ENOTFOUND`, `ETIMEDOUT`, `ECONNRESET` m.fl.).
 - `cli.js` understøtter:
   - `--scope all|one|slice`

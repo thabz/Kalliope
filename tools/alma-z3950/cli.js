@@ -11,7 +11,7 @@ import {
   runDiscovery,
   writeMachineOutput,
 } from './index.js';
-import { searchWithOptionalClient, z3950DependencyMessage } from './z3950-client.js';
+import { searchWithYaz } from './z3950-client.js';
 
 const usage = `
 Usage: node tools/alma-z3950/cli.js [options]
@@ -169,12 +169,7 @@ const run = async (argv = process.argv.slice(2)) => {
     cacheDir: args.cacheDir,
     contextId: args.contextId,
     forceReload: args.forceReload,
-    z3950Search: searchWithOptionalClient,
-  }).catch(error => {
-    if (error.message.includes('Z39.50-klientmodul mangler')) {
-      throw error;
-    }
-    throw new Error(`${z3950DependencyMessage}\nÅrsag: ${error.message}`);
+    z3950Search: searchWithYaz,
   });
 
   if (args.jsonlOutput != null && args.jsonlOutput !== '') {
