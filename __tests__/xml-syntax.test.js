@@ -9,13 +9,13 @@ const sourceXmlFilenames = () =>
       'ls-files',
       '-z',
       '--',
-      ':(glob)fdirs/**/*.xml',
-      ':(glob)content/**/*.xml',
+      'fdirs',
+      'content',
     ],
     { encoding: 'utf8' },
   )
     .split('\0')
-    .filter(filename => filename.length > 0);
+    .filter(filename => filename.endsWith('.xml'));
 
 const parseXmlErrors = xml => {
   const errors = [];
