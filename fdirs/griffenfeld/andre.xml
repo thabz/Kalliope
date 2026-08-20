@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="andre" author="griffenfeld" status="incomplete" type="poetry">
 <workhead>
-   <title>Andre digte</title>
-   <quality>korrektur1</quality>
+  <title>Andre digte</title>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
 <text id="griffenfeld2002032001">
 <head>
-   <title>Drikkevise</title>
-   <toctitle>Drikkevise</toctitle>
-   <indextitle>Drikkevise</indextitle>
-   <firstline>Op, du søde Dulcian! med festlig Klang!</firstline>
-   <notes>
-      <note>Efter Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1, p. 249-251, som angiver <i>Udvalg af Danske Viser</i>, Rasm. Nyerup og P. Rasmussen (red.), II, 1821, p. 78, som eneste kilde.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Drikkevise</title>
+  <toctitle>Drikkevise</toctitle>
+  <indextitle>Drikkevise</indextitle>
+  <firstline>Op, du søde Dulcian! med festlig Klang!</firstline>
+  <source>Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1, p. 249-251, som angiver <i>Udvalg af Danske Viser</i>, Rasm. Nyerup og P. Rasmussen (red.), II, 1821, p. 78, som eneste kilde.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -76,7 +74,7 @@ Vil derfor ej drikke mere end tilpas:
    Rejsen at jeg skal antræde
    Bort fra Verdens falske Glæde,
       Som mig kysser, bider dog.
-Jeg seer, Døden kommer paa den blege Hest,<note>Cf. <xref bibel="bibelaabenbaringen06,8"/>.</note>
+Jeg seer, Døden kommer paa den blege Hest,<note>Cf. <xref bible="bibelaabenbaringen06,8"/>.</note>
 Jeg ophør derfor, mens Legen den er best.
 </poetry>
 </body>
@@ -84,15 +82,15 @@ Jeg ophør derfor, mens Legen den er best.
 
 <text id="griffenfeld2002032002">
 <head>
-   <title>Epigram</title>
-   <toctitle>Epigram</toctitle>
-   <indextitle>Epigram</indextitle>
-   <firstline>Da verden blev mig vred, da lærte jeg at kende</firstline>
-   <notes>
-      <note>Dette skulle være skrevet 2. juni 1676, to dage før den planlagte henrettelse af Griffenfeld. Verset er overleveret som del af et større digt »Se hvad er verden dog« af Henrik Højer.</note>
-      <note>Efter Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1, p. 251.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Epigram</title>
+  <toctitle>Epigram</toctitle>
+  <indextitle>Epigram</indextitle>
+  <firstline>Da verden blev mig vred, da lærte jeg at kende</firstline>
+  <notes>
+    <note>Dette skulle være skrevet 2. juni 1676, to dage før den planlagte henrettelse af Griffenfeld. Verset er overleveret som del af et større digt »Se hvad er verden dog« af Henrik Højer.</note>
+  </notes>
+  <source pages="251">Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>

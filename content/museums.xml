@@ -3,107 +3,619 @@
   <museum id="hirschsprungske">
     <name>Den Hirschsprungske Samling</name>
     <sort-name>Hirschsprungske Samling, Den</sort-name>
+    <country>dk</country>
     <link>https://hirschsprung.dk/</link>
+    <identifiers>
+      <wikidata>Q2982867</wikidata>
+    </identifiers>
   </museum>
   <museum id="skagen">
     <name>Skagens Museum</name>
+    <country>dk</country>
     <link>https://skagensmuseum.dk/</link>
+    <identifiers>
+      <wikidata>Q3555520</wikidata>
+    </identifiers>
   </museum>
   <museum id="thorvaldsens">
     <name>Thorvaldsens Museum</name>
+    <country>dk</country>
     <link>https://www.thorvaldsensmuseum.dk/</link>
     <deep-link>http://thorvaldsensmuseum.dk/samlingerne/vaerk/${invNr}</deep-link>
+    <identifiers>
+      <wikidata>Q1992413</wikidata>
+    </identifiers>
   </museum>
   <museum id="nivaagaard">
     <name>Nivaagaards Malerisamling</name>
+    <country>dk</country>
     <link>https://nivaagaard.dk/</link>
     <deep-link>http://www.nivaagaard.dk/samling-da/${objId}</deep-link>
+    <identifiers>
+      <wikidata>Q10601378</wikidata>
+    </identifiers>
   </museum>
   <museum id="kb">
     <name>Det kongelige Bibliotek</name>
     <sort-name>Kongelige Bibliotek</sort-name>
+    <country>dk</country>
     <link>https://www.kb.dk/</link>
     <deep-link>https://digitalesamlinger.kb.dk/images/billed/2010/okt/billeder/object${objId}/da/</deep-link>
+    <identifiers>
+      <wikidata>Q867885</wikidata>
+    </identifiers>
   </museum>
   <museum id="smk">
     <name>Statens Museum for Kunst</name>
+    <country>dk</country>
     <link>https://www.smk.dk/</link>
     <deep-link>http://collection.smk.dk/#/detail/${invNr}</deep-link>
+    <identifiers>
+      <wikidata>Q671384</wikidata>
+    </identifiers>
   </museum>
   <museum id="gleimhaus">
     <name>Gleimhaus, Halberstadt</name>
+    <country>de</country>
     <link>https://www.gleimhaus.de/</link>
     <deep-link>https://www.museum-digital.de/nat/index.php?t=objekt&amp;oges=${objId}</deep-link>
+    <identifiers>
+      <wikidata>Q1530437</wikidata>
+    </identifiers>
   </museum>
   <museum id="ribe">
     <name>Ribe Kunstmuseum</name>
+    <country>dk</country>
     <link>https://www.ribekunstmuseum.dk/</link>
     <deep-link>https://ribekunstmuseum.dk/samling/${invNr}</deep-link>
+    <identifiers>
+      <wikidata>Q7322280</wikidata>
+    </identifiers>
   </museum>
   <museum id="smb">
     <name>Staatliche Museen zu Berlin</name>
+    <country>de</country>
     <link>https://www.smb.museum/home/</link>
-    <deep-link>http://www.smb-digital.de/eMuseumPlus?objectId=${objId}</deep-link>
+    <deep-link>https://search.smb.museum/object/obj-${objId}</deep-link>
+    <identifiers>
+      <wikidata>Q700216</wikidata>
+    </identifiers>
   </museum>
   <museum id="md">
+    <country>de</country>
     <link>https://www.museum-digital.de/</link>
     <deep-link>https://www.museum-digital.de/nat/index.php?t=objekt&amp;oges=${objId}</deep-link>
+    <identifiers>
+      <wikidata>Q1360745</wikidata>
+    </identifiers>
   </museum>
   <museum id="npg">
     <name>National Portrait Gallery, London</name>
+    <country>gb</country>
     <link>https://www.npg.org.uk/</link>
     <deep-link>https://www.npg.org.uk/collections/search/portrait/${objId}</deep-link>
+    <identifiers>
+      <wikidata>Q238587</wikidata>
+    </identifiers>
   </museum>
   <museum id="natmus.se">
     <name>Nationalmuseum, Stockholm</name>
+    <country>se</country>
     <link>https://www.nationalmuseum.se/</link>
     <deep-link>http://collection.nationalmuseum.se/eMP/eMuseumPlus?service=ExternalInterface&amp;module=collection&amp;objectId=${objId}&amp;viewType=detailView</deep-link>
+    <identifiers>
+      <wikidata>Q842858</wikidata>
+    </identifiers>
   </museum>
   <museum id="digitalmuseum.no">
+    <country>no</country>
     <link>https://digitaltmuseum.no/</link>
     <deep-link>https://digitaltmuseum.no/${objId}/maleri</deep-link>
+    <identifiers>
+      <wikidata>Q11125708</wikidata>
+    </identifiers>
   </museum>
   <museum id="digitalmuseum.se">
+    <country>se</country>
     <link>https://digitaltmuseum.se/</link>
     <deep-link>https://digitaltmuseum.se/${objId}/maleri</deep-link>
+    <identifiers>
+      <wikidata>Q11125708</wikidata>
+    </identifiers>
   </museum>
   <museum id="fnm">
     <name>Frederiksborg Nationalhistorisk Museum</name>
+    <country>dk</country>
     <link>https://frederiksborg.dk/</link>
+    <identifiers>
+      <wikidata>Q3078776</wikidata>
+    </identifiers>
   </museum>
   <museum id="glyptoteket">
     <name>Ny Carlsberg Glyptotek</name>
+    <country>dk</country>
     <link>https://glyptoteket.dk/</link>
+    <!-- Museets offentlige samlingsside har ingen stabile objektsider pr. 2026-08-11. -->
+    <identifiers>
+      <wikidata>Q1140507</wikidata>
+    </identifiers>
   </museum>
   <museum id="louvre">
     <name>Musée du Louvre</name>
+    <country>fr</country>
     <link>https://www.louvre.fr/</link>
     <deep-link>https://collections.louvre.fr/ark:/53355/${objId}</deep-link>
+    <identifiers>
+      <wikidata>Q19675</wikidata>
+    </identifiers>
   </museum>
   <museum id="rijksmuseum">
     <name>Rijksmuseum</name>
+    <country>nl</country>
     <link>https://www.rijksmuseum.nl/nl</link>
     <deep-link>https://www.rijksmuseum.nl/nl/collectie/object/${objId}</deep-link>
+    <identifiers>
+      <wikidata>Q190804</wikidata>
+    </identifiers>
   </museum>
   <museum id="mauritshuis">
     <name>Mauritshuis</name>
+    <country>nl</country>
     <link>https://www.mauritshuis.nl/</link>
     <deep-link>https://www.mauritshuis.nl/nl-nl/verdiep/de-collectie/kunstwerken/${objId}/</deep-link>
+    <identifiers>
+      <wikidata>Q221092</wikidata>
+    </identifiers>
   </museum>
   <museum id="nationalgallery">
     <name>The National Gallery, London</name>
     <sort-name>National Gallery, London</sort-name>
+    <country>gb</country>
     <link>https://www.nationalgallery.org.uk/</link>
     <deep-link>https://www.nationalgallery.org.uk/paintings/${invNr}</deep-link>
+    <identifiers>
+      <wikidata>Q180788</wikidata>
+    </identifiers>
   </museum>
   <museum id="uffizi">
-    <name>Galleria degli Uffizi</name>
+    <name>Galleria degli Uffizi, Firenze</name>
+    <country>it</country>
     <link>https://www.uffizi.it/</link>
-    <deep-link>https://fotoinventari.uffizi.it/it/ricerca-opere?isPostBack=1&amp;numero_opera=${invNr}</deep-link>
+    <deep-link>https://www.uffizi.it/opere/${objId}</deep-link>
+    <identifiers>
+      <wikidata>Q16335227</wikidata>
+    </identifiers>
   </museum>
   <museum id="tate">
-    <name>Tate</name>
+    <name>Tate, London</name>
+    <country>gb</country>
     <link>https://www.tate.org.uk/</link>
     <deep-link>https://www.tate.org.uk/art/artworks/${invNr}</deep-link>
+    <identifiers>
+      <wikidata>Q430682</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="borghese">
+    <name>Galleria Borghese, Rom</name>
+    <country>it</country>
+    <identifiers>
+      <wikidata>Q841506</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="nga">
+    <name>National Gallery of Art, Washington, D.C.</name>
+    <country>us</country>
+    <deep-link>https://www.nga.gov/artworks/${objId}</deep-link>
+    <identifiers>
+      <wikidata>Q214867</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="kunstpalast">
+    <name>Kunstpalast, Düsseldorf</name>
+    <country>de</country>
+    <identifiers>
+      <wikidata>Q461277</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="picardie">
+    <name>Musée de Picardie, Amiens</name>
+    <country>fr</country>
+    <identifiers>
+      <wikidata>Q3107709</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="khm">
+    <name>Kunsthistorisches Museum Wien</name>
+    <country>at</country>
+    <identifiers>
+      <wikidata>Q95569</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="vatican">
+    <name>Musei Vaticani</name>
+    <country>va</country>
+    <identifiers>
+      <wikidata>Q182955</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="kelvingrove">
+    <name>Kelvingrove Art Gallery and Museum, Glasgow</name>
+    <country>gb</country>
+    <identifiers>
+      <wikidata>Q1061094</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="high">
+    <name>High Museum of Art, Atlanta</name>
+    <country>us</country>
+    <identifiers>
+      <wikidata>Q953345</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="hunterian">
+    <name>The Hunterian, University of Glasgow</name>
+    <country>gb</country>
+    <identifiers>
+      <wikidata>Q1465387</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="ima">
+    <name>Indianapolis Museum of Art at Newfields</name>
+    <country>us</country>
+    <identifiers>
+      <wikidata>Q1117704</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="branitz">
+    <name>Fürst-Pückler-Museum Park und Schloss Branitz</name>
+    <country>de</country>
+    <identifiers>
+      <wikidata>Q21706666</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="orsay">
+    <name>Musée d'Orsay, Paris</name>
+    <country>fr</country>
+    <deep-link>https://www.musee-orsay.fr/fr/oeuvres/${objId}</deep-link>
+    <identifiers>
+      <wikidata>Q23402</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="norton">
+    <name>Norton Museum of Art</name>
+    <country>us</country>
+    <identifiers>
+      <wikidata>Q3878590</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="oslo">
+    <name>Oslo Museum</name>
+    <country>no</country>
+    <identifiers>
+      <wikidata>Q6877320</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="ngv">
+    <name>National Gallery of Victoria, Melbourne</name>
+    <country>au</country>
+    <deep-link>https://www.ngv.vic.gov.au/explore/collection/work/${objId}/</deep-link>
+    <identifiers>
+      <wikidata>Q1464509</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="ashmolean">
+    <name>Ashmolean Museum, Oxford</name>
+    <country>gb</country>
+    <identifiers>
+      <wikidata>Q636400</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="prado">
+    <name>Museo Nacional del Prado</name>
+    <country>es</country>
+    <deep-link>https://www.museodelprado.es/en/the-collection/art-work/${objId}</deep-link>
+    <identifiers>
+      <wikidata>Q160112</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="scotnpg">
+    <name>Scottish National Portrait Gallery, Edinburgh</name>
+    <country>gb</country>
+    <identifiers>
+      <wikidata>Q2441562</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="willumsens">
+    <name>J.F. Willumsens Museum</name>
+    <country>dk</country>
+    <identifiers>
+      <wikidata>Q3368135</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="falkenberg">
+    <name>Falkenbergs museum</name>
+    <country>se</country>
+    <identifiers>
+      <wikidata>Q10493739</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="capodimonte">
+    <name>Museo e Real Bosco di Capodimonte</name>
+    <country>it</country>
+    <identifiers>
+      <wikidata>Q290549</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="kunsten">
+    <name>Kunsten Museum of Modern Art Aalborg</name>
+    <country>dk</country>
+    <identifiers>
+      <wikidata>Q1802939</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="staedel">
+    <name>Städel Museum, Frankfurt</name>
+    <country>de</country>
+    <identifiers>
+      <wikidata>Q163804</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="dhm">
+    <name>Deutsches Historisches Museum, Berlin</name>
+    <country>de</country>
+    <identifiers>
+      <wikidata>Q688335</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="neuepinakothek">
+    <name>Neue Pinakothek, München</name>
+    <country>de</country>
+    <identifiers>
+      <wikidata>Q170152</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="lascala">
+    <name>Museo Teatrale alla Scala, Milano</name>
+    <country>it</country>
+    <identifiers>
+      <wikidata>Q51099</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="munch">
+    <name>MUNCH, Oslo</name>
+    <country>no</country>
+    <identifiers>
+      <wikidata>Q844926</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="hamburgerkunsthalle">
+    <name>Hamburger Kunsthalle</name>
+    <country>de</country>
+    <identifiers>
+      <wikidata>Q169542</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="barberinicorsini">
+    <name>Gallerie Nazionali d'Arte Antica</name>
+    <country>it</country>
+    <identifiers>
+      <wikidata>Q2266081</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="pushkin">
+    <name>The Pushkin State Museum of Fine Arts, Moskva</name>
+    <country>ru</country>
+    <identifiers>
+      <wikidata>Q4872</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="capitolini">
+    <name>Musei Capitolini, Rom</name>
+    <country>it</country>
+    <identifiers>
+      <wikidata>Q333906</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="fabre">
+    <name>Musée Fabre, Montpellier</name>
+    <country>fr</country>
+    <identifiers>
+      <wikidata>Q1519002</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="reventlow">
+    <name>Reventlow-Museet Pederstrup</name>
+    <country>dk</country>
+    <identifiers>
+      <wikidata>Q12333332</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="hcandersen">
+    <name>H.C. Andersens Hus</name>
+    <country>dk</country>
+    <identifiers>
+      <wikidata>Q490485</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="johanneslarsen">
+    <name>Johannes Larsen Museet</name>
+    <country>dk</country>
+    <identifiers>
+      <wikidata>Q12320093</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="dulwich">
+    <name>Dulwich Picture Gallery, London</name>
+    <country>gb</country>
+    <identifiers>
+      <wikidata>Q1241163</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="kirstenkjaer">
+    <name>Kirsten Kjærs Museum</name>
+    <country>dk</country>
+    <identifiers>
+      <wikidata>Q29917905</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="bolognaarchaeological">
+    <name>Museo Civico Archeologico di Bologna</name>
+    <country>it</country>
+    <identifiers>
+      <wikidata>Q2358398</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="kolumba">
+    <name>Kolumba, Köln</name>
+    <country>de</country>
+    <identifiers>
+      <wikidata>Q1621165</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="conde">
+    <name>Musée Condé</name>
+    <country>fr</country>
+    <identifiers>
+      <wikidata>Q1236032</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="operaduomo">
+    <name>Museo dell'Opera del Duomo, Firenze</name>
+    <country>it</country>
+    <identifiers>
+      <wikidata>Q1200696</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="novalis">
+    <name>Novalis-Museum Schloss Oberwiederstedt</name>
+    <country>de</country>
+    <identifiers>
+      <wikidata>Q1612256</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="behnhaus">
+    <name>Museum Behnhaus Drägerhaus, Lübeck</name>
+    <country>de</country>
+    <identifiers>
+      <wikidata>Q814533</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="moderna">
+    <name>Moderna Museet, Stockholm</name>
+    <country>se</country>
+    <identifiers>
+      <wikidata>Q1274511</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="britishmuseum">
+    <name>The British Museum</name>
+    <country>gb</country>
+    <deep-link>https://www.britishmuseum.org/collection/object/${objId}</deep-link>
+    <identifiers>
+      <wikidata>Q6373</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="tesse">
+    <name>Musée de Tessé, Le Mans</name>
+    <country>fr</country>
+    <identifiers>
+      <wikidata>Q3329758</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="skd">
+    <name>Staatliche Kunstsammlungen Dresden</name>
+    <country>de</country>
+    <identifiers>
+      <wikidata>Q653002</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="met">
+    <name>The Metropolitan Museum of Art</name>
+    <country>us</country>
+    <deep-link>https://www.metmuseum.org/art/collection/search/${objId}</deep-link>
+    <identifiers>
+      <wikidata>Q160236</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="leeds">
+    <name>Leeds Art Gallery</name>
+    <country>gb</country>
+    <identifiers>
+      <wikidata>Q6515835</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="ago">
+    <name>Art Gallery of Ontario, Toronto</name>
+    <country>ca</country>
+    <identifiers>
+      <wikidata>Q670250</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="helsinkiuni">
+    <name>Helsinki University Museum, Helsinki</name>
+    <country>fi</country>
+    <identifiers>
+      <wikidata>Q3329065</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="smithsoniannpg">
+    <name>National Portrait Gallery, Smithsonian Institution, Washington, D.C.</name>
+    <country>us</country>
+    <identifiers>
+      <wikidata>Q1967614</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="brou">
+    <name>Musée du monastère royal de Brou, Bourg-en-Bresse</name>
+    <country>fr</country>
+    <identifiers>
+      <wikidata>Q3330655</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="wallace">
+    <name>The Wallace Collection, London</name>
+    <country>gb</country>
+    <deep-link>https://wallacelive.wallacecollection.org/eMP/eMuseumPlus?module=collection&amp;objectId=${objId}&amp;service=ExternalInterface</deep-link>
+    <identifiers>
+      <wikidata>Q1327919</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="nlw">
+    <name>National Library of Wales</name>
+    <country>gb</country>
+    <identifiers>
+      <wikidata>Q666063</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="schack">
+    <name>Sammlung Schack</name>
+    <country>de</country>
+    <deep-link>https://www.sammlung.pinakothek.de/de/artwork/${objId}</deep-link>
+    <identifiers>
+      <wikidata>Q523652</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="sydvestjyske">
+    <name>Sydvestjyske Museer</name>
+    <country>dk</country>
+    <identifiers>
+      <wikidata>Q12338118</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="cornell">
+    <name>Cornell University Library</name>
+    <country>us</country>
+    <identifiers>
+      <wikidata>Q5171572</wikidata>
+    </identifiers>
+  </museum>
+  <museum id="taft">
+    <name>Taft Museum of Art</name>
+    <country>us</country>
+    <link>https://www.taftmuseum.org/</link>
+    <deep-link>https://webkiosk.taftmuseum.org/objects-1/info?objectName=${objId}</deep-link>
+    <identifiers>
+      <wikidata>Q7675043</wikidata>
+    </identifiers>
   </museum>
 </museums>

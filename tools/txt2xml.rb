@@ -91,18 +91,19 @@ def printHeader()
     puts %Q|<workhead>|
     puts %Q|    <title>#{title}</title>|
     puts %Q|    <year>#{year}</year>|
-    puts %Q|    <notes>|
-    @worknotes.each { |noteline|
-      puts "        <note>#{noteline}</note>"
-    }
-    puts %Q|        <note>Teksten følger #{@source}</note>|
-    if @found_corrections
-        puts %Q|        <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>|
+    if @worknotes.length > 0 or @found_corrections or @found_poet_notes
+      puts %Q|    <notes>|
+      @worknotes.each { |noteline|
+        puts "        <note>#{noteline}</note>"
+      }
+      if @found_corrections
+          puts %Q|        <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>|
+      end
+      if @found_poet_notes
+          puts %Q|        <note>Noter med en foranstillet asterisk er digterens egne.</note>|
+      end
+      puts %Q|    </notes>|
     end
-    if @found_poet_notes
-        puts %Q|        <note>Noter med en foranstillet asterisk er digterens egne.</note>|
-    end
-    puts %Q|    </notes>|
     puts %Q|    <pictures>|
     puts %Q|        <picture src="#{@workid}-p1.jpg">Titelbladet til <i>#{title}</i> (#{year}) lyder ,,#{@titlepage}''.</picture>|
     puts %Q|    </pictures>|

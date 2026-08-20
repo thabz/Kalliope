@@ -67,6 +67,10 @@ class Txt2XmlTest < Minitest::Test
     assert_equal 'scan.pdf', REXML::XPath.first(workhead, 'source').attributes['facsimile']
     assert_equal '20', REXML::XPath.first(workhead, 'source').attributes['facsimile-pages-num']
     assert_equal '2', REXML::XPath.first(workhead, 'source').attributes['facsimile-pages-offset']
+    work_source = REXML::XPath.first(workhead, 'source')
+    assert_equal 'Digte', REXML::XPath.first(work_source, 'i').text
+    assert_equal ['Værknote'], REXML::XPath.match(workhead, 'notes/note').map(&:text)
+    refute_includes workhead.text, 'Teksten følger'
 
     assert_equal 'solnedgang', text.attributes['id']
     assert_equal 'hansenfj', text.attributes['author']

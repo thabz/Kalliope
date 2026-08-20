@@ -1,24 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="1814" author="baggesen" status="incomplete" type="poetry">
 <workhead>
-   <title>Poetiske Epistler</title>
-   <year>1814</year>
-   <quality>korrektur1</quality>
+  <title>Poetiske Epistler</title>
+  <year>1814</year>
+  <identifiers>
+    <openlibrary-work>OL4409453W</openlibrary-work>
+  </identifiers>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
 <text id="baggesen2002022401">
 <head>
-   <title>Paradiisfuglen</title>
-   <subtitle>Til Frøken Adelaide Brun</subtitle>
-   <toctitle>Paradiisfuglen</toctitle>
-   <indextitle>Paradiisfuglen</indextitle>
-   <firstline>Du med Edens reene Melodier</firstline>
-   <notes>
-      <note>Adelaide (Ida) Brun er datter af <a person="brunf">Friederike Brun</a>.</note>
-      <note>Førstetrykket i tidsskriftet <i>Athene</i>, juli 1813, har titlen »Frierbrevet« med undertitlen »Til Frøken Adelaide Brun. Kiøbenhavn, d. 15. Marts 1813.«</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title>Paradiisfuglen</title>
+  <subtitle>Til Frøken Adelaide Brun</subtitle>
+  <toctitle>Paradiisfuglen</toctitle>
+  <indextitle>Paradiisfuglen</indextitle>
+  <firstline>Du med Edens reene Melodier</firstline>
+  <notes>
+    <note>Adelaide (Ida) Brun er datter af <a person="brunf">Friederike Brun</a>.</note>
+    <note>Førstetrykket i tidsskriftet <i>Athene</i>, juli 1813, har titlen »Frierbrevet« med undertitlen »Til Frøken Adelaide Brun. Kiøbenhavn, d. 15. Marts 1813.«</note>
+  </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -82,17 +85,17 @@ Jeg er din Veninde - <i>Poesie.</i>
 
 <text id="baggesen2002062301">
 <head>
-   <title>De glemte Støvler</title>
-   <subtitle>Til Digteren Øhlenschlæger</subtitle>
-   <toctitle>De glemte Støvler</toctitle>
-   <indextitle>De glemte Støvler</indextitle>
-   <firstline>Jeg er ei rigtig i min Krop</firstline>
-   <notes>
-      <note>Fodnoten er Baggesens egen.</note>
-      <note>Kilde er <i>Riimbreve og Poetiske Epistler af Jens Baggesen. Første Samling 1784 - 1808.</i>, Ved A. Arlaud, Kjøbenhavn. Forlagt af I. H. Schubothes Boghandel. Græbes Bogtrykkeri. 1891.</note>
-      <note type="credits">Indtastet af Svend Andersen.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>De glemte Støvler</title>
+  <subtitle>Til Digteren Øhlenschlæger</subtitle>
+  <toctitle>De glemte Støvler</toctitle>
+  <indextitle>De glemte Støvler</indextitle>
+  <firstline>Jeg er ei rigtig i min Krop</firstline>
+  <notes>
+    <note>Fodnoten er Baggesens egen.</note>
+    <note type="credits">Indtastet af Svend Andersen.</note>
+  </notes>
+  <source><i>Riimbreve og Poetiske Epistler af Jens Baggesen. Første Samling 1784 - 1808.</i>, Ved A. Arlaud, Kjøbenhavn. Forlagt af I. H. Schubothes Boghandel. Græbes Bogtrykkeri. 1891.</source>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -142,26 +145,26 @@ Med Sluddren i Billetten her!
 
 <text id="baggesen2002041308">
 <head>
-   <title>Sophienholms Erindring</title>
-   <subtitle>
-      <line>Til Musen</line>
-      <line></line>
-      <line>Paa Frue Conferentsraadinde Bruns Fødselsdag</line>
-      <line></line>
-      <line>1813</line>
-   </subtitle>
-   <keywords>brunf</keywords>
-   <toctitle>Sophienholms Erindring</toctitle>
-   <indextitle>Sophienholms Erindring</indextitle>
-   <firstline>Du, som fangen, under Tag</firstline>
-   <notes>
-      <note>Kilde er Jens Baggesen: <i>Udvalgte Værker</i>, fra serien <i>Litteraturens Mesterværker</i>, Kunstforlaget ,,Danmark'', Kbh. 1914.</note>
-      <note type="credits">Bidrag fra Svend Olav Andersen.</note>
-   </notes>
-   <pictures>
-      <picture artwork="lund/sophienholm"/>
-   </pictures>
-   <quality>korrektur1,kilde</quality>
+  <title>Sophienholms Erindring</title>
+  <subtitle>
+    <line>Til Musen</line>
+    <line></line>
+    <line>Paa Frue Conferentsraadinde Bruns Fødselsdag</line>
+    <line></line>
+    <line>1813</line>
+  </subtitle>
+  <keywords>brunf</keywords>
+  <toctitle>Sophienholms Erindring</toctitle>
+  <indextitle>Sophienholms Erindring</indextitle>
+  <firstline>Du, som fangen, under Tag</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <source>Jens Baggesen: <i>Udvalgte Værker</i>, fra serien <i>Litteraturens Mesterværker</i>, Kunstforlaget ,,Danmark'', Kbh. 1914.</source>
+  <pictures>
+    <picture artwork="lund/sophienholm"/>
+  </pictures>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -236,22 +239,22 @@ Blot - en Taare og et Smiil!
 
 <text id="baggesen2002062302">
 <head>
-   <title>Den danske Matros</title>
-   <subtitle>
-      <line>eller</line>
-      <line>Flaskebrevet.</line>
-      <line></line>
-      <line>Til Commandeur Jessen, Ridder af Dannebrog.</line>
-      <line></line>
-      <line>1808.</line>
-   </subtitle>
-   <toctitle>Den danske Matros</toctitle>
-   <indextitle>Den danske Matros</indextitle>
-   <firstline>Ihvo du er paa denne Jord</firstline>
-   <notes>
-      <note>Indtastet af Svend Andersen efter <i>Riimbreve og Poetiske Epistler af Jens Baggesen. Første Samling 1784 - 1808.</i>, Ved A. Arlaud, Kjøbenhavn. Forlagt af I. H. Schubothes Boghandel. Græbes Bogtrykkeri. 1891.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Den danske Matros</title>
+  <subtitle>
+    <line>eller</line>
+    <line>Flaskebrevet.</line>
+    <line></line>
+    <line>Til Commandeur Jessen, Ridder af Dannebrog.</line>
+    <line></line>
+    <line>1808.</line>
+  </subtitle>
+  <toctitle>Den danske Matros</toctitle>
+  <indextitle>Den danske Matros</indextitle>
+  <firstline>Ihvo du er paa denne Jord</firstline>
+  <notes>
+    <note>Indtastet af Svend Andersen efter <i>Riimbreve og Poetiske Epistler af Jens Baggesen. Første Samling 1784 - 1808.</i>, Ved A. Arlaud, Kjøbenhavn. Forlagt af I. H. Schubothes Boghandel. Græbes Bogtrykkeri. 1891.</note>
+  </notes>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -924,20 +927,20 @@ Og syng den Vise til min Roes:
 
 <text id="baggesen2002062303">
 <head>
-   <title>Den vakte Knud</title>
-   <subtitle>
-      <line>eller</line>
-      <line>Bombardementets muelige Følger.</line>
-      <line>Til Slotsfuldmægtig Øhlenschlæger paa Fredriksberg.</line>
-   </subtitle>
-   <toctitle>Den vakte Knud</toctitle>
-   <indextitle>Den vakte Knud</indextitle>
-   <firstline>O! du, som staaer i Krig og Fred</firstline>
-   <notes>
-      <note>Fodnoten er Baggesens egen.</note>
-      <note>Indtastet af Svend Andersen efter <i>Riimbreve og Poetiske Epistler af Jens Baggesen. Første Samling 1784 - 1808.</i>, Ved A. Arlaud, Kjøbenhavn. Forlagt af I. H. Schubothes Boghandel. Græbes Bogtrykkeri. 1891.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Den vakte Knud</title>
+  <subtitle>
+    <line>eller</line>
+    <line>Bombardementets muelige Følger.</line>
+    <line>Til Slotsfuldmægtig Øhlenschlæger paa Fredriksberg.</line>
+  </subtitle>
+  <toctitle>Den vakte Knud</toctitle>
+  <indextitle>Den vakte Knud</indextitle>
+  <firstline>O! du, som staaer i Krig og Fred</firstline>
+  <notes>
+    <note>Fodnoten er Baggesens egen.</note>
+    <note>Indtastet af Svend Andersen efter <i>Riimbreve og Poetiske Epistler af Jens Baggesen. Første Samling 1784 - 1808.</i>, Ved A. Arlaud, Kjøbenhavn. Forlagt af I. H. Schubothes Boghandel. Græbes Bogtrykkeri. 1891.</note>
+  </notes>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -1646,19 +1649,19 @@ Thi det fik ellers aldrig Ende.
 
 <text id="baggesen2002062304">
 <head>
-   <title>Det tilgivelige Tyverie</title>
-   <subtitle>
-      <line>Til Fru Cicilia v. X.</line>
-      <line>(I et Exemplar af mine Digte.)</line>
-      <line>1806.</line>
-   </subtitle>
-   <toctitle>Det tilgivelige Tyverie</toctitle>
-   <indextitle>Det tilgivelige Tyverie</indextitle>
-   <firstline>Dig, mellem mine danske Læserinder</firstline>
-   <notes>
-      <note>Indtastet af Svend Andersen efter <i>Riimbreve og Poetiske Epistler af Jens Baggesen. Første Samling 1784 - 1808.</i>, Ved A. Arlaud, Kjøbenhavn. Forlagt af I. H. Schubothes Boghandel. Græbes Bogtrykkeri. 1891.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Det tilgivelige Tyverie</title>
+  <subtitle>
+    <line>Til Fru Cicilia v. X.</line>
+    <line>(I et Exemplar af mine Digte.)</line>
+    <line>1806.</line>
+  </subtitle>
+  <toctitle>Det tilgivelige Tyverie</toctitle>
+  <indextitle>Det tilgivelige Tyverie</indextitle>
+  <firstline>Dig, mellem mine danske Læserinder</firstline>
+  <notes>
+    <note>Indtastet af Svend Andersen efter <i>Riimbreve og Poetiske Epistler af Jens Baggesen. Første Samling 1784 - 1808.</i>, Ved A. Arlaud, Kjøbenhavn. Forlagt af I. H. Schubothes Boghandel. Græbes Bogtrykkeri. 1891.</note>
+  </notes>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -1726,19 +1729,19 @@ Paa den af Digteren til Musen stiaalne Sang.
 
 <text id="baggesen2002062305">
 <head>
-   <title>Første Efterretning om Kiøbenhavns Bombardering</title>
-   <subtitle>
-      <line>Til Publicisten Malthe Bruun i Paris.</line>
-      <line>1807.</line>
-   </subtitle>
-   <toctitle>Første Efterretning om Kiøbenhavns Bombardering</toctitle>
-   <indextitle>Første Efterretning om Kiøbenhavns Bombardering</indextitle>
-   <firstline>Du, som til Seinens Harpes Klang</firstline>
-   <notes>
-      <note>Indtastet af Svend Andersen efter <i>Riimbreve og Poetiske Epistler af Jens Baggesen. Første Samling 1784 - 1808.</i>, Ved A. Arlaud, Kjøbenhavn. Forlagt af I. H. Schubothes Boghandel. Græbes Bogtrykkeri. 1891.</note>
-   </notes>
-   <keywords>bruunmc</keywords>
-   <quality>korrektur1,kilde</quality>
+  <title>Første Efterretning om Kiøbenhavns Bombardering</title>
+  <subtitle>
+    <line>Til Publicisten Malthe Bruun i Paris.</line>
+    <line>1807.</line>
+  </subtitle>
+  <toctitle>Første Efterretning om Kiøbenhavns Bombardering</toctitle>
+  <indextitle>Første Efterretning om Kiøbenhavns Bombardering</indextitle>
+  <firstline>Du, som til Seinens Harpes Klang</firstline>
+  <notes>
+    <note>Indtastet af Svend Andersen efter <i>Riimbreve og Poetiske Epistler af Jens Baggesen. Første Samling 1784 - 1808.</i>, Ved A. Arlaud, Kjøbenhavn. Forlagt af I. H. Schubothes Boghandel. Græbes Bogtrykkeri. 1891.</note>
+  </notes>
+  <keywords>bruunmc</keywords>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -1980,21 +1983,21 @@ At skrive nogen blot Kopie.
 
 <text id="baggesen2002062306">
 <head>
-   <title>Jens Napoleon</title>
-   <subtitle>
-      <line>eller</line>
-      <line>Fadder-Herlighed og Navnværdie.</line>
-      <line>Til Capitain Astrup.</line>
-      <line>(Svar paa hans Indbydelse i Vers til at staae Fadder til hans første Søn Jens.)</line>
-   </subtitle>
-   <toctitle>Jens Napoleon</toctitle>
-   <indextitle>Jens Napoleon</indextitle>
-   <firstline>At Skrædder i Korsøer et Skrædder-Embryon</firstline>
-   <notes>
-      <note>Fodnoten er Baggesens egen.</note>
-      <note>Indtastet af Svend Andersen efter <i>Riimbreve og Poetiske Epistler af Jens Baggesen. Første Samling 1784 - 1808.</i>, Ved A. Arlaud, Kjøbenhavn. Forlagt af I. H. Schubothes Boghandel. Græbes Bogtrykkeri. 1891.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Jens Napoleon</title>
+  <subtitle>
+    <line>eller</line>
+    <line>Fadder-Herlighed og Navnværdie.</line>
+    <line>Til Capitain Astrup.</line>
+    <line>(Svar paa hans Indbydelse i Vers til at staae Fadder til hans første Søn Jens.)</line>
+  </subtitle>
+  <toctitle>Jens Napoleon</toctitle>
+  <indextitle>Jens Napoleon</indextitle>
+  <firstline>At Skrædder i Korsøer et Skrædder-Embryon</firstline>
+  <notes>
+    <note>Fodnoten er Baggesens egen.</note>
+    <note>Indtastet af Svend Andersen efter <i>Riimbreve og Poetiske Epistler af Jens Baggesen. Første Samling 1784 - 1808.</i>, Ved A. Arlaud, Kjøbenhavn. Forlagt af I. H. Schubothes Boghandel. Græbes Bogtrykkeri. 1891.</note>
+  </notes>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -2207,20 +2210,20 @@ Alvorlig den Uskyldige velsigne.
 
 <text id="baggesen2002062307">
 <head>
-   <title>Rimbrevpennen</title>
-   <subtitle>
-      <line>eller</line>
-      <line>den Korsøerske Svane.</line>
-      <line>Til Digteren Øhlenschlæger i Paris.</line>
-   </subtitle>
-   <toctitle>Rimbrevpennen</toctitle>
-   <indextitle>Rimbrevpennen</indextitle>
-   <firstline>Jeg skriver dig igien et Brev</firstline>
-   <notes>
-      <note>Indtastet af Svend Andersen efter <i>Riimbreve og Poetiske Epistler af Jens Baggesen. Første Samling 1784 - 1808.</i>, Ved A. Arlaud, Kjøbenhavn. Forlagt af I. H. Schubothes Boghandel. Græbes Bogtrykkeri. 1891.</note>
-   </notes>
-   <keywords>klopstock,ewald,milton</keywords>
-   <quality>korrektur1,kilde</quality>
+  <title>Rimbrevpennen</title>
+  <subtitle>
+    <line>eller</line>
+    <line>den Korsøerske Svane.</line>
+    <line>Til Digteren Øhlenschlæger i Paris.</line>
+  </subtitle>
+  <toctitle>Rimbrevpennen</toctitle>
+  <indextitle>Rimbrevpennen</indextitle>
+  <firstline>Jeg skriver dig igien et Brev</firstline>
+  <notes>
+    <note>Indtastet af Svend Andersen efter <i>Riimbreve og Poetiske Epistler af Jens Baggesen. Første Samling 1784 - 1808.</i>, Ved A. Arlaud, Kjøbenhavn. Forlagt af I. H. Schubothes Boghandel. Græbes Bogtrykkeri. 1891.</note>
+  </notes>
+  <keywords>klopstock,ewald,milton</keywords>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -2402,18 +2405,18 @@ Derfor forvar mig den, som sagt!
 
 <text id="baggesen2002062308">
 <head>
-   <title>Runen</title>
-   <subtitle>
-      <line>Litterarisk Efterretning fra Daraussen.</line>
-      <line>Til Professor Rasmus Nyerup</line>
-   </subtitle>
-   <toctitle>Runen</toctitle>
-   <indextitle>Runen</indextitle>
-   <firstline>Ved mine sidste Samlinger af Ord</firstline>
-   <notes>
-      <note>Indtastet af Svend Andersen efter <i>Riimbreve og Poetiske Epistler af Jens Baggesen. Første Samling 1784 - 1808.</i>, Ved A. Arlaud, Kjøbenhavn. Forlagt af I. H. Schubothes Boghandel. Græbes Bogtrykkeri. 1891.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Runen</title>
+  <subtitle>
+    <line>Litterarisk Efterretning fra Daraussen.</line>
+    <line>Til Professor Rasmus Nyerup</line>
+  </subtitle>
+  <toctitle>Runen</toctitle>
+  <indextitle>Runen</indextitle>
+  <firstline>Ved mine sidste Samlinger af Ord</firstline>
+  <notes>
+    <note>Indtastet af Svend Andersen efter <i>Riimbreve og Poetiske Epistler af Jens Baggesen. Første Samling 1784 - 1808.</i>, Ved A. Arlaud, Kjøbenhavn. Forlagt af I. H. Schubothes Boghandel. Græbes Bogtrykkeri. 1891.</note>
+  </notes>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -2554,18 +2557,18 @@ Er reent forbi.
 
 <text id="baggesen2002062309">
 <head>
-   <title>Selvindbydelse</title>
-   <subtitle>
-      <line>Til Fru Cicilia v. X.</line>
-      <line>1806.</line>
-   </subtitle>
-   <toctitle>Selvindbydelse</toctitle>
-   <indextitle>Selvindbydelse</indextitle>
-   <firstline>Cicilia! jeg zittrer ved</firstline>
-   <notes>
-      <note>Indtastet af Svend Andersen efter <i>Riimbreve og Poetiske Epistler af Jens Baggesen. Første Samling 1784 - 1808.</i>, Ved A. Arlaud, Kjøbenhavn. Forlagt af I. H. Schubothes Boghandel. Græbes Bogtrykkeri. 1891.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Selvindbydelse</title>
+  <subtitle>
+    <line>Til Fru Cicilia v. X.</line>
+    <line>1806.</line>
+  </subtitle>
+  <toctitle>Selvindbydelse</toctitle>
+  <indextitle>Selvindbydelse</indextitle>
+  <firstline>Cicilia! jeg zittrer ved</firstline>
+  <notes>
+    <note>Indtastet af Svend Andersen efter <i>Riimbreve og Poetiske Epistler af Jens Baggesen. Første Samling 1784 - 1808.</i>, Ved A. Arlaud, Kjøbenhavn. Forlagt af I. H. Schubothes Boghandel. Græbes Bogtrykkeri. 1891.</note>
+  </notes>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -2618,19 +2621,19 @@ Faaer Krampe, Sting, og Slag, og døer.
 
 <text id="baggesen2002062310">
 <head>
-   <title>Væddeløbet i det Lave</title>
-   <subtitle>
-      <line>Til Digteren Øhlenschlæger i Paris.</line>
-      <line>,,Tel brille au second rang, qui s'éclipse au premier'' -</line>
-      <line>Det gielder omvendt tidt, naar den, som græder, leer.</line>
-   </subtitle>
-   <toctitle>Væddeløbet i det Lave</toctitle>
-   <indextitle>Væddeløbet i det Lave</indextitle>
-   <firstline>Tak for den Tilskrivt, som din Skiærts</firstline>
-   <notes>
-      <note>Indtastet af Svend Andersen efter <i>Riimbreve og Poetiske Epistler af Jens Baggesen. Første Samling 1784 - 1808.</i>, Ved A. Arlaud, Kjøbenhavn. Forlagt af I. H. Schubothes Boghandel. Græbes Bogtrykkeri. 1891.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Væddeløbet i det Lave</title>
+  <subtitle>
+    <line>Til Digteren Øhlenschlæger i Paris.</line>
+    <line>,,Tel brille au second rang, qui s'éclipse au premier'' -</line>
+    <line>Det gielder omvendt tidt, naar den, som græder, leer.</line>
+  </subtitle>
+  <toctitle>Væddeløbet i det Lave</toctitle>
+  <indextitle>Væddeløbet i det Lave</indextitle>
+  <firstline>Tak for den Tilskrivt, som din Skiærts</firstline>
+  <notes>
+    <note>Indtastet af Svend Andersen efter <i>Riimbreve og Poetiske Epistler af Jens Baggesen. Første Samling 1784 - 1808.</i>, Ved A. Arlaud, Kjøbenhavn. Forlagt af I. H. Schubothes Boghandel. Græbes Bogtrykkeri. 1891.</note>
+  </notes>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -2957,18 +2960,18 @@ Og vov dig sielden til det Mindre.
 
 <text id="baggesen2001112601">
 <head>
-   <title>Alleenekampen</title>
-   <subtitle>
-      <line>eller</line>
-      <line>Apologie for Litteraturbladene</line>
-   </subtitle>
-   <toctitle>Alleenekampen eller Apologie for Litteraturbladene</toctitle>
-   <indextitle>Alleenekampen eller Apologie for Litteraturbladene</indextitle>
-   <firstline>I Trende, hvor som helst, hvem her med reene Haand</firstline>
-   <notes>
-      <note type="credits">Bidrag fra Svend Olav Andersen.</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title>Alleenekampen</title>
+  <subtitle>
+    <line>eller</line>
+    <line>Apologie for Litteraturbladene</line>
+  </subtitle>
+  <toctitle>Alleenekampen eller Apologie for Litteraturbladene</toctitle>
+  <indextitle>Alleenekampen eller Apologie for Litteraturbladene</indextitle>
+  <firstline>I Trende, hvor som helst, hvem her med reene Haand</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -3268,15 +3271,15 @@ Naar Sangforfølgelsen bag Graven er forbi.
 
 <text id="baggesen2001112604">
 <head>
-   <title>Den danske Naso i det tydske Tomi</title>
-   <subtitle>Til Professor Olufsen i Kiøbenhavn</subtitle>
-   <toctitle>Den danske Naso i det tydske Tomi</toctitle>
-   <indextitle>Den danske Naso i det tydske Tomi</indextitle>
-   <firstline>Sex Uger - naar jeg seer tilbage</firstline>
-   <notes>
-      <note type="credits">Bidrag fra Svend Olav Andersen.</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title>Den danske Naso i det tydske Tomi</title>
+  <subtitle>Til Professor Olufsen i Kiøbenhavn</subtitle>
+  <toctitle>Den danske Naso i det tydske Tomi</toctitle>
+  <indextitle>Den danske Naso i det tydske Tomi</indextitle>
+  <firstline>Sex Uger - naar jeg seer tilbage</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -3665,20 +3668,21 @@ Men hils især med meer end alle Kys
 
 <text id="baggesen2001112605">
 <head>
-   <title>Elleskovs Mysterier</title>
-   <subtitle>
-      <line>Til Fru Conferentsraadinde Brun</line>
-      <line>Med en Afskrift af de følgende Breve</line>
-   </subtitle>
-   <toctitle>Elleskovs Mysterier</toctitle>
-   <indextitle>Elleskovs Mysterier</indextitle>
-   <firstline>Hvilken Najas tør sin Skaal vel gyde</firstline>
-   <notes>
-      <note>Citerer Baggesens <xref poem="baggesen2002092812"/>.</note>
-      <note>,,De følgende Breve'', dvs. ned til og med <i>Hilsenen fra Hovedstaden</i>.</note>
-      <note type="credits">Bidrag fra Svend Olav Andersen.</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title>Elleskovs Mysterier</title>
+  <subtitle>
+    <line>Til Fru Conferentsraadinde Brun</line>
+    <line>Med en Afskrift af de følgende Breve</line>
+  </subtitle>
+  <toctitle>Elleskovs Mysterier</toctitle>
+  <indextitle>Elleskovs Mysterier</indextitle>
+  <firstline>Hvilken Najas tør sin Skaal vel gyde</firstline>
+  <!-- Ikke en variant af baggesen2002092812: Citat eller genbrug i et andet digt, ikke en tekstvariant. -->
+  <notes>
+    <note>Citerer Baggesens <xref poem="baggesen2002092812"/>.</note>
+    <note>,,De følgende Breve'', dvs. ned til og med <i>Hilsenen fra Hovedstaden</i>.</note>
+    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -3875,15 +3879,15 @@ Udentvivl veed meer end jeg.
 
 <text id="baggesen2001112606">
 <head>
-   <title>Brudevielsen i Fior</title>
-   <subtitle>Til Frøken Ellina v. Astrup</subtitle>
-   <toctitle>Brudevielsen i Fior</toctitle>
-   <indextitle>Brudevielsen i Fior</indextitle>
-   <firstline>Min elskede - (bliv ikke bange!</firstline>
-   <notes>
-      <note type="credits">Bidrag fra Svend Olav Andersen.</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title>Brudevielsen i Fior</title>
+  <subtitle>Til Frøken Ellina v. Astrup</subtitle>
+  <toctitle>Brudevielsen i Fior</toctitle>
+  <indextitle>Brudevielsen i Fior</indextitle>
+  <firstline>Min elskede - (bliv ikke bange!</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -3999,15 +4003,15 @@ Og som dig snart vil nynne noget meere.
 
 <text id="baggesen2001112607">
 <head>
-   <title>Den forgiæves Anraabelse</title>
-   <subtitle>Til Fru v. Astrup, paa hendes Fødselsdag</subtitle>
-   <toctitle>Den forgiæves Anraabelse</toctitle>
-   <indextitle>Den forgiæves Anraabelse</indextitle>
-   <firstline>Tre Gange jeg i Morges anraabt har</firstline>
-   <notes>
-      <note type="credits">Bidrag fra Svend Olav Andersen.</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title>Den forgiæves Anraabelse</title>
+  <subtitle>Til Fru v. Astrup, paa hendes Fødselsdag</subtitle>
+  <toctitle>Den forgiæves Anraabelse</toctitle>
+  <indextitle>Den forgiæves Anraabelse</indextitle>
+  <firstline>Tre Gange jeg i Morges anraabt har</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -4063,15 +4067,15 @@ Det ellers fra?
 
 <text id="baggesen2001112608">
 <head>
-   <title>Den mistænkelige Tandpine</title>
-   <subtitle>Til Samme</subtitle>
-   <toctitle>Den mistænkelige Tandpine</toctitle>
-   <indextitle>Den mistænkelige Tandpine</indextitle>
-   <firstline>Nu har jeg spiist og slukket Tørsten efter</firstline>
-   <notes>
-      <note type="credits">Bidrag fra Svend Olav Andersen.</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title>Den mistænkelige Tandpine</title>
+  <subtitle>Til Samme</subtitle>
+  <toctitle>Den mistænkelige Tandpine</toctitle>
+  <indextitle>Den mistænkelige Tandpine</indextitle>
+  <firstline>Nu har jeg spiist og slukket Tørsten efter</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -4275,18 +4279,18 @@ Med blotte Ord har smigret mig?
 
 <text id="baggesen2001112609">
 <head>
-   <title>Sextendeelen</title>
-   <subtitle>
-      <line>Til Jomfru C***</line>
-      <line>Da hun i en Juleleeg havde skænket mig Sextendeelen af hendes Hierte</line>
-   </subtitle>
-   <toctitle>Sextendeelen</toctitle>
-   <indextitle>Sextendeelen</indextitle>
-   <firstline>Sextendedeelen kun af en fortryllende Maaned</firstline>
-   <notes>
-      <note type="credits">Bidrag fra Svend Olav Andersen.</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title>Sextendeelen</title>
+  <subtitle>
+    <line>Til Jomfru C***</line>
+    <line>Da hun i en Juleleeg havde skænket mig Sextendeelen af hendes Hierte</line>
+  </subtitle>
+  <toctitle>Sextendeelen</toctitle>
+  <indextitle>Sextendeelen</indextitle>
+  <firstline>Sextendedeelen kun af en fortryllende Maaned</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -4317,18 +4321,18 @@ Danmarks yndigste Møer og Danmarks ædleste Koner,
 
 <text id="baggesen2001112610">
 <head>
-   <title>Hierte-Parcellerne</title>
-   <subtitle>
-      <line>Til Frøken Ellina v. Astrup</line>
-      <line>Da hun, isteden for en Sextendedeel, skiænkede mig sytten Deele</line>
-   </subtitle>
-   <toctitle>Hierte-Parcellerne</toctitle>
-   <indextitle>Hierte-Parcellerne</indextitle>
-   <firstline>Hvis nogensinde var i noget Huus</firstline>
-   <notes>
-      <note type="credits">Bidrag fra Svend Olav Andersen.</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title>Hierte-Parcellerne</title>
+  <subtitle>
+    <line>Til Frøken Ellina v. Astrup</line>
+    <line>Da hun, isteden for en Sextendedeel, skiænkede mig sytten Deele</line>
+  </subtitle>
+  <toctitle>Hierte-Parcellerne</toctitle>
+  <indextitle>Hierte-Parcellerne</indextitle>
+  <firstline>Hvis nogensinde var i noget Huus</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -4489,15 +4493,15 @@ Naar man er overmaade død.
 
 <text id="baggesen2002112612">
 <head>
-   <title>Uglerne i Ellemosen</title>
-   <subtitle>Til samme</subtitle>
-   <toctitle>Uglerne i Ellemosen</toctitle>
-   <indextitle>Uglerne i Ellemosen</indextitle>
-   <firstline>Nys skreg jeg ud min Glædes Raserie</firstline>
-   <notes>
-      <note type="credits">Bidrag fra Svend Olav Andersen.</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title>Uglerne i Ellemosen</title>
+  <subtitle>Til samme</subtitle>
+  <toctitle>Uglerne i Ellemosen</toctitle>
+  <indextitle>Uglerne i Ellemosen</indextitle>
+  <firstline>Nys skreg jeg ud min Glædes Raserie</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -4627,16 +4631,16 @@ Hvad Musen dig herefter skriver.
 
 <text id="baggesen2002112613">
 <head>
-   <title>Min egentlige Genialitet</title>
-   <subtitle>Til Kammerjunker Jacob v. Benzon i Odensee</subtitle>
-   <toctitle>Min egentlige Genialitet</toctitle>
-   <indextitle>Min egentlige Genialitet</indextitle>
-   <firstline>Du, som blandt alle Nordens Mænd</firstline>
-   <notes>
-      <note type="credits">Bidrag fra Svend Olav Andersen.</note>
-   </notes>
-   <keywords>grundtvig</keywords>
-   <quality>korrektur1</quality>
+  <title>Min egentlige Genialitet</title>
+  <subtitle>Til Kammerjunker Jacob v. Benzon i Odensee</subtitle>
+  <toctitle>Min egentlige Genialitet</toctitle>
+  <indextitle>Min egentlige Genialitet</indextitle>
+  <firstline>Du, som blandt alle Nordens Mænd</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <keywords>grundtvig</keywords>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -4946,15 +4950,15 @@ Herfra til Kiøbenhavn igien.
 
 <text id="baggesen2002112614">
 <head>
-   <title>Det slette Skrivertøi</title>
-   <subtitle>Til Fru v. Astrup i Elleskov</subtitle>
-   <toctitle>Det slette Skrivertøi</toctitle>
-   <indextitle>Det slette Skrivertøi</indextitle>
-   <firstline>O du, dit Kiøns, det elskeliges, Ziir!</firstline>
-   <notes>
-      <note type="credits">Bidrag fra Svend Olav Andersen.</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title>Det slette Skrivertøi</title>
+  <subtitle>Til Fru v. Astrup i Elleskov</subtitle>
+  <toctitle>Det slette Skrivertøi</toctitle>
+  <indextitle>Det slette Skrivertøi</indextitle>
+  <firstline>O du, dit Kiøns, det elskeliges, Ziir!</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -5035,15 +5039,15 @@ I sød Uddunsten ei kan give Luft.
 
 <text id="baggesen2002112615">
 <head>
-   <title>Den betydningsfulde Taushed</title>
-   <subtitle>Til Frøken Ellina v. Astrup i Elleskov</subtitle>
-   <toctitle>Den betydningsfulde Taushed</toctitle>
-   <indextitle>Den betydningsfulde Taushed</indextitle>
-   <firstline>Umuelig kan jeg lade reise</firstline>
-   <notes>
-      <note type="credits">Bidrag fra Svend Olav Andersen.</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title>Den betydningsfulde Taushed</title>
+  <subtitle>Til Frøken Ellina v. Astrup i Elleskov</subtitle>
+  <toctitle>Den betydningsfulde Taushed</toctitle>
+  <indextitle>Den betydningsfulde Taushed</indextitle>
+  <firstline>Umuelig kan jeg lade reise</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -5128,15 +5132,15 @@ Min søde Line, slut dig til!
 
 <text id="baggesen2002112616">
 <head>
-   <title>Hilsenen fra Hovedstaden</title>
-   <subtitle>Til Fru v. Astrup i Elleskov</subtitle>
-   <toctitle>Hilsenen fra Hovedstaden</toctitle>
-   <indextitle>Hilsenen fra Hovedstaden</indextitle>
-   <firstline>Skiøndt fiernet fra min Sangs Elysium</firstline>
-   <notes>
-      <note type="credits">Bidrag fra Svend Olav Andersen.</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title>Hilsenen fra Hovedstaden</title>
+  <subtitle>Til Fru v. Astrup i Elleskov</subtitle>
+  <toctitle>Hilsenen fra Hovedstaden</toctitle>
+  <indextitle>Hilsenen fra Hovedstaden</indextitle>
+  <firstline>Skiøndt fiernet fra min Sangs Elysium</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -5253,23 +5257,23 @@ Er ikke synderligen at beklage.
 
 <text id="baggesen2002112617">
 <head>
-   <title>Hesten Abildgraa</title>
-   <subtitle>
-      <line>eller</line>
-      <line>Loven er ærlig</line>
-      <line>Til Grosserer Nathanson i Kiøbenhavn</line>
-   </subtitle>
-   <toctitle>Hesten Abildgraa eller Loven er ærlig</toctitle>
-   <indextitle>Hesten Abildgraa eller Loven er ærlig</indextitle>
-   <firstline>Min vakkre Nathanson, der (som jeg troer</firstline>
-   <notes>
-      <note type="credits">Bidrag fra Svend Olav Andersen.</note>
-   </notes>
-   <pictures>
-       <picture artwork="eckersberg/familien-nathanson-1818" />
-       <picture artwork="eckersberg/bella-hanna-1820" />
-   </pictures>
-   <quality>korrektur1</quality>
+  <title>Hesten Abildgraa</title>
+  <subtitle>
+    <line>eller</line>
+    <line>Loven er ærlig</line>
+    <line>Til Grosserer Nathanson i Kiøbenhavn</line>
+  </subtitle>
+  <toctitle>Hesten Abildgraa eller Loven er ærlig</toctitle>
+  <indextitle>Hesten Abildgraa eller Loven er ærlig</indextitle>
+  <firstline>Min vakkre Nathanson, der (som jeg troer</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <pictures>
+    <picture artwork="eckersberg/familien-nathanson-1818" />
+    <picture artwork="eckersberg/bella-hanna-1820" />
+  </pictures>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -5505,19 +5509,19 @@ Saa dog (da denne Plads er, troer jeg, end in blanco)
 
 <text id="baggesen2002112621">
 <head>
-   <title>Min Gienganger-Spøg</title>
-   <subtitle>
-      <line>eller</line>
-      <line>Den søde Kniv</line>
-      <line>Til Etatsraad Stoud i Kiøbenhavn</line>
-   </subtitle>
-   <toctitle>Min Gienganger-Spøg, eller Den søde Kniv</toctitle>
-   <indextitle>Min Gienganger-Spøg, eller Den søde Kniv</indextitle>
-   <firstline>Der er, min Stoud, en Ven i Kiøbenhavn</firstline>
-   <notes>
-      <note type="credits">Bidrag fra Svend Olav Andersen.</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title>Min Gienganger-Spøg</title>
+  <subtitle>
+    <line>eller</line>
+    <line>Den søde Kniv</line>
+    <line>Til Etatsraad Stoud i Kiøbenhavn</line>
+  </subtitle>
+  <toctitle>Min Gienganger-Spøg, eller Den søde Kniv</toctitle>
+  <indextitle>Min Gienganger-Spøg, eller Den søde Kniv</indextitle>
+  <firstline>Der er, min Stoud, en Ven i Kiøbenhavn</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -5918,15 +5922,15 @@ Sig styrtende med Skiold og Spyd deri.
 
 <text id="baggesen2002112622">
 <head>
-   <title>Nytaarsmødet</title>
-   <subtitle>Til General-Krigs-Commissair Astrup, paa Aarets, hans Kones, og hans Søns Fødselsdag</subtitle>
-   <toctitle>Nytaarsmødet</toctitle>
-   <indextitle>Nytaarsmødet</indextitle>
-   <firstline>Naar jeg lidt dybt paa det, jeg sidder i</firstline>
-   <notes>
-      <note type="credits">Bidrag fra Svend Olav Andersen.</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title>Nytaarsmødet</title>
+  <subtitle>Til General-Krigs-Commissair Astrup, paa Aarets, hans Kones, og hans Søns Fødselsdag</subtitle>
+  <toctitle>Nytaarsmødet</toctitle>
+  <indextitle>Nytaarsmødet</indextitle>
+  <firstline>Naar jeg lidt dybt paa det, jeg sidder i</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -6052,15 +6056,15 @@ Lig salig Lazarus i Abrams Skiød.
 
 <text id="baggesen2002112623">
 <head>
-   <title>Parnas-Dommen</title>
-   <subtitle>Til Conferentsraad Schlegel i Odense</subtitle>
-   <toctitle>Parnas-Dommen</toctitle>
-   <indextitle>Parnas-Dommen</indextitle>
-   <firstline>Som Resultat af dit til visse heel Trebazizke</firstline>
-   <notes>
-      <note type="credits">Bidrag fra Svend Olav Andersen.</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title>Parnas-Dommen</title>
+  <subtitle>Til Conferentsraad Schlegel i Odense</subtitle>
+  <toctitle>Parnas-Dommen</toctitle>
+  <indextitle>Parnas-Dommen</indextitle>
+  <firstline>Som Resultat af dit til visse heel Trebazizke</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -6154,15 +6158,15 @@ Og nu maaskee opholder sig i Fyen.
 
 <text id="baggesen2002112624">
 <head>
-   <title>Remmen af Huden</title>
-   <subtitle>Til Cancellieraad Lautrup</subtitle>
-   <toctitle>Remmen af Huden</toctitle>
-   <indextitle>Remmen af Huden</indextitle>
-   <firstline>Du melder mig, angaaende de Klæder</firstline>
-   <notes>
-      <note type="credits">Bidrag fra Svend Olav Andersen.</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title>Remmen af Huden</title>
+  <subtitle>Til Cancellieraad Lautrup</subtitle>
+  <toctitle>Remmen af Huden</toctitle>
+  <indextitle>Remmen af Huden</indextitle>
+  <firstline>Du melder mig, angaaende de Klæder</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -6333,19 +6337,24 @@ Indtil jeg synder næste Gang.
 
 <text id="baggesen2002112630">
 <head>
-   <title>Tilegnelse</title>
-   <subtitle>
-      <line>Fortsættelsen af Da jeg var lille</line>
-      <line>Til Etatsraad G. H. Olsen</line>
-   </subtitle>
-   <toctitle>Tilegnelse</toctitle>
-   <indextitle>Tilegnelse</indextitle>
-   <firstline>Der var en Tid, da jeg var meget lille</firstline>
-   <notes>
-       <note>Cf. Baggesens oprindelige <xref poem="baggesen2019080323"/>.</note>
-      <note type="credits">Bidrag fra Svend Olav Andersen.</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title>Tilegnelse</title>
+  <subtitle>
+    <line>Fortsættelsen af Da jeg var lille</line>
+    <line>Til Etatsraad G. H. Olsen</line>
+  </subtitle>
+  <toctitle>Tilegnelse</toctitle>
+  <indextitle>Tilegnelse</indextitle>
+  <firstline>Der var en Tid, da jeg var meget lille</firstline>
+  <!-- Ikke varianter af:
+  baggesen2002103106: Citat eller genbrug i et andet digt, ikke en tekstvariant.
+  baggesen2001082701: Citat eller genbrug i et andet digt, ikke en tekstvariant.
+  baggesen2019080323: Citat eller genbrug i et andet digt, ikke en tekstvariant.
+  -->
+  <notes>
+    <note>Cf. Baggesens oprindelige <xref poem="baggesen2019080323"/>.</note>
+    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>

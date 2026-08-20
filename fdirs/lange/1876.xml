@@ -1,35 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="1876" author="lange" status="complete" type="poetry">
 <workhead>
-    <title>Fra fremmede Lande</title>
-    <year>1876</year>
-    <notes>
-        <note>Teksten følger Thor Lange: <i>Fra fremmede Lande</i>, Gyldendalske Boghandel, Kbh., 1876.</note>
-    </notes>
-    <pictures>
-        <picture src="1876-p1.jpg">Forsiden til <i>Fra fremmede Lande</i> (1876).</picture>
-        <picture src="1876-p2.jpg">Titelbladet til <i>Fra fremmede Lande</i> (1876) lyder ,,Fra fremmede Lande / Digte / oversatte og efterlignede / af / Thor Lange. / Kjøbenhavn. /''.</picture>
-    </pictures>
-    <!-- TODO: Opret note som viser afsnittenes mottoer. -->
-    <source facsimile="115308000074" facsimile-pages-num="104" facsimile-pages-offset="14">Thor Lange: <i>Fra fremmede Lande</i>, Gyldendalske Boghandel, Kbh., 1876.</source>
+  <title>Fra fremmede Lande</title>
+  <year>1876</year>
+  <pictures>
+    <picture src="1876-p1.jpg">Forsiden til <i>Fra fremmede Lande</i> (1876).</picture>
+    <picture src="1876-p2.jpg">Titelbladet til <i>Fra fremmede Lande</i> (1876) lyder ,,Fra fremmede Lande / Digte / oversatte og efterlignede / af / Thor Lange. / Kjøbenhavn. /''.</picture>
+  </pictures>
+  <!-- TODO: Opret note som viser afsnittenes mottoer. -->
+  <source facsimile="115308000074" facsimile-pages-num="104" facsimile-pages-offset="14">Thor Lange: <i>Fra fremmede Lande</i>, Gyldendalske Boghandel, Kbh., 1876.</source>
 </workhead>
 <workbody>
 
 <section>
 <head>
-    <title>Rimfri Kunstdigtning</title>
+  <title>Rimfri Kunstdigtning</title>
 </head>
 <content>
 
 <text id="lange2019101401">
 <head>
-    <title>Hymne</title>
-    <firstline>Min Himmels Engleskarer!</firstline>
-    <notes>
-        <note>Gendigtning af Miltons <xref type="translation" poem="milton1999063013,343-415"/>.</note>
-    </notes>
-    <source pages="3-7"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Hymne</title>
+  <firstline>Min Himmels Engleskarer!</firstline>
+  <notes>
+    <note>Gendigtning af Miltons <xref type="translation" poem="milton1999063013,343-415"/>.</note>
+  </notes>
+  <source pages="3-7"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -123,13 +120,13 @@ Og aldrig skilles fra din Faders Ære.
 
 <text id="lange2019101402">
 <head>
-    <title>Barnebruden</title>
-    <firstline>Dig, o Himmelens Søn! lyseste Guddom, Dig</firstline>
-    <source pages="8-9"/>
-    <notes>
-        <note unknown-original-by="nervander" />
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Barnebruden</title>
+  <firstline>Dig, o Himmelens Søn! lyseste Guddom, Dig</firstline>
+  <source pages="8-9"/>
+  <notes>
+    <note unknown-original-by="nervander" />
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -170,13 +167,13 @@ Lægger Haand paa mit Bryst og slukker Faklen ud —
 
 <text id="lange2019101403">
 <head>
-    <title>Chariterne</title>
-    <firstline>Svæv, min Sang, paa din lette Flugt</firstline>
-    <source pages="10-12"/>
-    <notes>
-        <note>Gendigtning af Friedrich Leopold Graf zu Stolberg: <xref type="translation" poem="stolbergf2020011901"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Chariterne</title>
+  <firstline>Svæv, min Sang, paa din lette Flugt</firstline>
+  <source pages="10-12"/>
+  <notes>
+    <note>Gendigtning af Friedrich Leopold Graf zu Stolberg: <xref type="translation" poem="stolbergf2020011901"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -237,13 +234,13 @@ Vil de hellige Tre synge min Vuggesang.
 
 <text id="lange2019101404">
 <head>
-    <title>Mindet</title>
-    <firstline>Sol for min Sjæl! Hil Dig, Du Mindets Gudinde!</firstline>
-    <source pages="13-14"/>
-    <notes>
-        <note>Gendigtning af Johann Gaudenz von Salis-Seewis: <xref type="translation" poem="salis2019122603"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Mindet</title>
+  <firstline>Sol for min Sjæl! Hil Dig, Du Mindets Gudinde!</firstline>
+  <source pages="13-14"/>
+  <notes>
+    <note>Gendigtning af Johann Gaudenz von Salis-Seewis: <xref type="translation" poem="salis2019122603"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -284,13 +281,13 @@ Høje Veninde, Du er evindelig tro!
 
 <text id="lange2019101405">
 <head>
-    <title>Amor og Psyche</title>
-    <firstline>Tidt har paa Grave jeg seet to sammenslyngede Hænder</firstline>
-    <source pages="15-16"/>
-    <notes>
-        <note unknown-original-by="herder" />
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Amor og Psyche</title>
+  <firstline>Tidt har paa Grave jeg seet to sammenslyngede Hænder</firstline>
+  <source pages="15-16"/>
+  <notes>
+    <note>Gendigtning af Johann Gottfried von Herders <xref type="translation" poem="herder2026081101"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -310,13 +307,13 @@ Husk, at naar Du døer, at række din Haand til En, som du elsker.
 
 <text id="lange2019101406">
 <head>
-    <title>Hyldest</title>
-    <firstline>Blandt alle dem, dit Komme bringer Dagen</firstline>
-    <notes>
-        <note>Gendigtning af Edgar Allan Poe <xref type="translation" poem="poe2019101401"/>.</note>
-    </notes>
-    <source pages="17-18"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Hyldest</title>
+  <firstline>Blandt alle dem, dit Komme bringer Dagen</firstline>
+  <notes>
+    <note>Gendigtning af Edgar Allan Poe <xref type="translation" poem="poe2019101401"/>.</note>
+  </notes>
+  <source pages="17-18"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -347,13 +344,13 @@ Min Tanke taler nu til en Forklaret!
 
 <text id="lange2019101407">
 <head>
-    <title>Lykken</title>
-    <firstline>Salig er den, der, før han var født, blev Gudernes Yndling</firstline>
-    <notes>
-        <note>Gendigtning af Schillers <xref type="translation" poem="schiller2019101402"/>.</note>
-    </notes>
-    <source pages="19-24"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Lykken</title>
+  <firstline>Salig er den, der, før han var født, blev Gudernes Yndling</firstline>
+  <notes>
+    <note>Gendigtning af Schillers <xref type="translation" poem="schiller2019101402"/>.</note>
+  </notes>
+  <source pages="19-24"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -425,13 +422,13 @@ Rustet med Ægis ethvert straalende Visdommens Ord.
 
 <text id="lange2019101408">
 <head>
-    <title>Havet</title>
-    <firstline>Himmelafspejlende, maalløse Hav</firstline>
-    <source pages="25-26"/>
-    <notes>
-        <note>Mottoet er fra J.L. Heibergs <xref poem="heiberg2002011324,5-6"/>.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Havet</title>
+  <firstline>Himmelafspejlende, maalløse Hav</firstline>
+  <source pages="25-26"/>
+  <notes>
+    <note>Mottoet er fra J.L. Heibergs <xref poem="heiberg2002011324,5-6"/>.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -475,13 +472,13 @@ Men ængstes for det, som Du aldrig kan naa.
 
 <text id="lange2019101409">
 <head>
-    <title>Idealet</title>
-    <firstline>Vig er end ellers Kvinde for Mand — i det, som er højest</firstline>
-    <notes>
-        <note>Gendigtning af Schillers <xref type="translation" poem="schiller2019101401"/>.</note>
-    </notes>
-    <source pages="27-28"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Idealet</title>
+  <firstline>Vig er end ellers Kvinde for Mand — i det, som er højest</firstline>
+  <notes>
+    <note>Gendigtning af Schillers <xref type="translation" poem="schiller2019101401"/>.</note>
+  </notes>
+  <source pages="27-28"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -505,13 +502,13 @@ Her er forenet til Et: Blomst og den blussende Frugt!
 
 <text id="lange2019101410">
 <head>
-    <title>Kvindens Skabelse</title>
-    <firstline>Nu bringer jeg Dig, Adam, al din Glæde</firstline>
-    <source pages="29-32"/>
-    <notes>
-        <note>Gendigtning af del af Miltons <xref type="translation" poem="milton1999063017,1086-1157"/> fra <i>Paradise Lost</i> (1667).</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Kvindens Skabelse</title>
+  <firstline>Nu bringer jeg Dig, Adam, al din Glæde</firstline>
+  <source pages="29-32"/>
+  <notes>
+    <note>Gendigtning af del af Miltons <xref type="translation" poem="milton1999063017,1086-1157"/> fra <i>Paradise Lost</i> (1667).</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -599,16 +596,16 @@ Paa Bjergets Tind at staa som Brudelampe.
 
 <section>
 <head>
-    <title>Folkesange</title>
+  <title>Folkesange</title>
 </head>
 <content>
 
 <text id="lange2019101411">
 <head>
-    <title>Romance</title>
-    <firstline>Der skulde to Søstre til Kilden gaa</firstline>
-    <source pages="35-36"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Romance</title>
+  <firstline>Der skulde to Søstre til Kilden gaa</firstline>
+  <source pages="35-36"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -651,10 +648,10 @@ Hun lod deres Bryllup med Ære bo.
 
 <text id="lange2019101412">
 <head>
-    <title>Nu hilser jeg alle Jomfruer smaa!</title>
-    <firstline>Der red en Svend over Heden ud</firstline>
-    <source pages="37-39"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Nu hilser jeg alle Jomfruer smaa!</title>
+  <firstline>Der red en Svend over Heden ud</firstline>
+  <source pages="37-39"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -705,10 +702,10 @@ Og hun er min Inderligkjære!
 
 <text id="lange2019101413">
 <head>
-    <title>Lord Lundies Datter</title>
-    <firstline>Hr. William var en Ungersvend</firstline>
-    <source pages="40-43"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Lord Lundies Datter</title>
+  <firstline>Hr. William var en Ungersvend</firstline>
+  <source pages="40-43"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -794,10 +791,10 @@ Saa nødig, som jeg det vilde!«
 
 <text id="lange2019101414">
 <head>
-    <title>Unge Pige, Du min hvide Blomst</title>
-    <firstline>Unge Pige, Du min hvide Blomst</firstline>
-    <source pages="44"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Unge Pige, Du min hvide Blomst</title>
+  <firstline>Unge Pige, Du min hvide Blomst</firstline>
+  <source pages="44"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -822,10 +819,10 @@ Faur og fin, fordi jeg saa paa <w>Dig!</w>
 
 <text id="lange2019101415">
 <head>
-    <title>Store Glæder vil jeg Dig fortælle!</title>
-    <firstline>Fjernt paa Marken staaer den slanke Hvidbirk</firstline>
-    <source pages="45"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Store Glæder vil jeg Dig fortælle!</title>
+  <firstline>Fjernt paa Marken staaer den slanke Hvidbirk</firstline>
+  <source pages="45"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -851,10 +848,10 @@ Hun, Du elsker, vil din Hustru være!
 
 <text id="lange2019101416">
 <head>
-    <title>Alt mit Liv paa Jord var at elske Dig</title>
-    <firstline>Vent mig ikke, Skat, i den stille Kvæld</firstline>
-    <source pages="46-47"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Alt mit Liv paa Jord var at elske Dig</title>
+  <firstline>Vent mig ikke, Skat, i den stille Kvæld</firstline>
+  <source pages="46-47"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -901,10 +898,10 @@ Og paa Bordet staaer hendes Kiste redt.
 
 <text id="lange2019101417">
 <head>
-    <title>Nu rid kun langt herfra til fjerne Lande</title>
-    <firstline>Der sad en Brud og skjar sin Brudgom Klæder</firstline>
-    <source pages="48"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Nu rid kun langt herfra til fjerne Lande</title>
+  <firstline>Der sad en Brud og skjar sin Brudgom Klæder</firstline>
+  <source pages="48"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -931,10 +928,10 @@ Saa det kan være nok, indtil Du kommer.
 
 <text id="lange2019101418">
 <head>
-    <title>Sig, naar jeg maa vente Dig</title>
-    <firstline>Hørt jeg har, en Fader drev sin Søn fra Gaard</firstline>
-    <source pages="49"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Sig, naar jeg maa vente Dig</title>
+  <firstline>Hørt jeg har, en Fader drev sin Søn fra Gaard</firstline>
+  <source pages="49"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -960,10 +957,10 @@ Aldrig flyder Stenen op fra Flodens Bund!
 
 <text id="lange2019101419">
 <head>
-    <title>Skin, Du varme Sol, paa Rønnebærret!</title>
-    <firstline>Skin, Du varme Sol, paa Rønnebærret!</firstline>
-    <source pages="50"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Skin, Du varme Sol, paa Rønnebærret!</title>
+  <firstline>Skin, Du varme Sol, paa Rønnebærret!</firstline>
+  <source pages="50"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -987,10 +984,10 @@ For hans Hjerte havde sovet i ham.
 
 <text id="lange2019101420">
 <head>
-    <title>Jeg vil aldrig vredes paa min Hjertenskjære</title>
-    <firstline>Alle tro Veninder, mine Plejemødre</firstline>
-    <source pages="51-52"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Jeg vil aldrig vredes paa min Hjertenskjære</title>
+  <firstline>Alle tro Veninder, mine Plejemødre</firstline>
+  <source pages="51-52"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1028,10 +1025,10 @@ Jeg vil aldrig vredes paa min Hjertenskjære!
 
 <text id="lange2019101421">
 <head>
-    <title>Allevegnefra trak der Taager op</title>
-    <firstline>Allevegne trak der Taager op</firstline>
-    <source pages="53-54"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Allevegnefra trak der Taager op</title>
+  <firstline>Allevegne trak der Taager op</firstline>
+  <source pages="53-54"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1067,10 +1064,10 @@ At hos mig paa Jord Du igjen maa bo!
 
 <text id="lange2019101422">
 <head>
-    <title>Sig mig kun, hvorfor Du sørger!</title>
-    <firstline>Hampen staaer i lange Rækker</firstline>
-    <source pages="55-56"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Sig mig kun, hvorfor Du sørger!</title>
+  <firstline>Hampen staaer i lange Rækker</firstline>
+  <source pages="55-56"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1101,10 +1098,10 @@ Saa han troer Dig selv at høre!« -
 
 <text id="lange2019101423">
 <head>
-    <title>Aldrig fik jeg Dig igjen</title>
-    <firstline>Hvorfor staa de fjerne Bjerge sorte, som de bar en Sorg?</firstline>
-    <source pages="57-58"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Aldrig fik jeg Dig igjen</title>
+  <firstline>Hvorfor staa de fjerne Bjerge sorte, som de bar en Sorg?</firstline>
+  <source pages="57-58"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1129,10 +1126,10 @@ Kom din Brud og tog Dig fra mig — aldrig fik jeg Dig igjen!««
 
 <text id="lange2019101424">
 <head>
-    <title>Der rinder en Bæk under Lide</title>
-    <firstline>Der rinder en Bæk under Lide</firstline>
-    <source pages="59"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Der rinder en Bæk under Lide</title>
+  <firstline>Der rinder en Bæk under Lide</firstline>
+  <source pages="59"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1158,10 +1155,10 @@ Som jeg maatte aldrig faa.
 
 <text id="lange2019101425">
 <head>
-    <title>Hr. Johnstone</title>
-    <firstline>Hr. Johnstone og hans unge Maag</firstline>
-    <source pages="60-65"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Hr. Johnstone</title>
+  <firstline>Hr. Johnstone og hans unge Maag</firstline>
+  <source pages="60-65"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1300,20 +1297,20 @@ Og hav Du aldrig Taare paa Kind,
 
 <section>
 <head>
-    <title>Sonnetter</title>
+  <title>Sonnetter</title>
 </head>
 <content>
 
 <text id="lange2019101426">
 <head>
-    <title><num>I.</num>Du høje Helgenbilled i mit Sind!</title>
-    <firstline>Du høje Helgenbilled i mit Sind!</firstline>
-    <notes>
-        <note unknown-original-by="ariosto" />
-    </notes>
-    <source pages="70"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>I.</num>Du høje Helgenbilled i mit Sind!</title>
+  <firstline>Du høje Helgenbilled i mit Sind!</firstline>
+  <notes>
+    <note>Gendigtning af Ludovico Ariosto: <xref type="translation" poem="ariosto2026081101"/>.</note>
+  </notes>
+  <source pages="70"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1342,14 +1339,14 @@ Kun et er større: hvor jeg var Dig tro!
 
 <text id="lange2019101427">
 <head>
-    <title><num>II.</num>Sæt mig, hvor Solen svider hvert et Straa</title>
-    <firstline>Sæt mig, hvor Solen svider hvert et Straa</firstline>
-    <source pages="71"/>
-    <notes>
-        <note>Gendigtning af Henry Howard, Earl of Surrey <xref type="translation" poem="howard2002031704"/>.</note>
-    </notes>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>II.</num>Sæt mig, hvor Solen svider hvert et Straa</title>
+  <firstline>Sæt mig, hvor Solen svider hvert et Straa</firstline>
+  <source pages="71"/>
+  <notes>
+    <note>Gendigtning af Henry Howard, Earl of Surrey <xref type="translation" poem="howard2002031704"/>.</note>
+  </notes>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1378,14 +1375,14 @@ Du var min Tanke, hvor Du end mig fandt!
 
 <text id="lange2019101428">
 <head>
-    <title><num>III.</num>Nu har jeg ledt om hende allevegne</title>
-    <firstline>Nu har jeg ledt om hende allevegne</firstline>
-    <notes>
-        <note>Gendigtning af Edmund Spenser: <xref type="translation" poem="spenser2002020578"/>.</note>
-    </notes>
-    <source pages="72"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>III.</num>Nu har jeg ledt om hende allevegne</title>
+  <firstline>Nu har jeg ledt om hende allevegne</firstline>
+  <notes>
+    <note>Gendigtning af Edmund Spenser: <xref type="translation" poem="spenser2002020578"/>.</note>
+  </notes>
+  <source pages="72"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1414,14 +1411,14 @@ Og lad min Sjæl det klare Billed gjemme.
 
 <text id="lange2019101429">
 <head>
-    <title><num>IV.</num>Betragt det Smil, hun har omkring sin Mund</title>
-    <firstline>Betragt det Smil, hun har omkring sin Mund</firstline>
-    <notes>
-        <note>Gendigtning af Edmund Spenser: <xref type="translation" poem="spenser2002020540"/>.</note>
-    </notes>
-    <source pages="73"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>IV.</num>Betragt det Smil, hun har omkring sin Mund</title>
+  <firstline>Betragt det Smil, hun har omkring sin Mund</firstline>
+  <notes>
+    <note>Gendigtning af Edmund Spenser: <xref type="translation" poem="spenser2002020540"/>.</note>
+  </notes>
+  <source pages="73"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1450,14 +1447,14 @@ Hvergang et Smil om hendes Mund jeg saa!
 
 <text id="lange2019101430">
 <head>
-    <title><num>V.</num>Et herligt Syn, naar frit hun lader gynge</title>
-    <firstline>Et herligt Syn, naar frit hun lader gynge</firstline>
-    <notes>
-        <note>Gendigtning af Edmund Spenser: <xref type="translation" poem="spenser2002020581"/>.</note>
-    </notes>
-    <source pages="74"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>V.</num>Et herligt Syn, naar frit hun lader gynge</title>
+  <firstline>Et herligt Syn, naar frit hun lader gynge</firstline>
+  <notes>
+    <note>Gendigtning af Edmund Spenser: <xref type="translation" poem="spenser2002020581"/>.</note>
+  </notes>
+  <source pages="74"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1486,14 +1483,14 @@ Og alt det andet kan en anden hædre!
 
 <text id="lange2019101431">
 <head>
-    <title><num>VI.</num>Du kaldes skjøn, det maa Du sagtens tro</title>
-    <firstline>Du kaldes skjøn, det maa Du sagtens tro</firstline>
-    <notes>
-        <note>Gendigtning af Edmund Spenser: <xref type="translation" poem="spenser2002020579"/>.</note>
-    </notes>
-    <source pages="75"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>VI.</num>Du kaldes skjøn, det maa Du sagtens tro</title>
+  <firstline>Du kaldes skjøn, det maa Du sagtens tro</firstline>
+  <notes>
+    <note>Gendigtning af Edmund Spenser: <xref type="translation" poem="spenser2002020579"/>.</note>
+  </notes>
+  <source pages="75"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1522,14 +1519,14 @@ Naar hvert et jordisk Billed blegne maa!
 
 <text id="lange2019101432">
 <head>
-    <title><num>VII.</num>Lad Tvang og Trængsel for min Lykke stænge</title>
-    <firstline>Lad Tvang og Trængsel for min Lykke stænge</firstline>
-    <notes>
-        <note>Gendigtning af Edmund Spenser: <xref type="translation" poem="spenser2002020573"/>.</note>
-    </notes>
-    <source pages="76"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>VII.</num>Lad Tvang og Trængsel for min Lykke stænge</title>
+  <firstline>Lad Tvang og Trængsel for min Lykke stænge</firstline>
+  <notes>
+    <note>Gendigtning af Edmund Spenser: <xref type="translation" poem="spenser2002020573"/>.</note>
+  </notes>
+  <source pages="76"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1558,14 +1555,14 @@ At synge, som den vilde, til din Ære!
 
 <text id="lange2019101433">
 <head>
-    <title><num>VIII.</num>En Svane flyver under Himlens Hvælv</title>
-    <firstline>En Svane flyver under Himlens Hvælv</firstline>
-    <notes>
-        <note>En særdeles fri gendigtning af Michael Draytons <xref type="translation" poem="drayton2002020356"/>.</note>
-    </notes>
-    <source pages="77"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>VIII.</num>En Svane flyver under Himlens Hvælv</title>
+  <firstline>En Svane flyver under Himlens Hvælv</firstline>
+  <notes>
+    <note>En særdeles fri gendigtning af Michael Draytons <xref type="translation" poem="drayton2002020356"/>.</note>
+  </notes>
+  <source pages="77"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1594,14 +1591,14 @@ Naar Sol og alle Stjerner er brændt ud!
 
 <text id="lange2019101434">
 <head>
-    <title><num>IX.</num>Du klare Strøm, hvor hun, min Helgeninde</title>
-    <firstline>Du klare Strøm, hvor hun, min Helgeninde</firstline>
-    <notes>
-        <note>Fri gendigtning af Michael Draytons <xref type="translation" poem="drayton2002020353"/>.</note>
-    </notes>
-    <source pages="78"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>IX.</num>Du klare Strøm, hvor hun, min Helgeninde</title>
+  <firstline>Du klare Strøm, hvor hun, min Helgeninde</firstline>
+  <notes>
+    <note>Fri gendigtning af Michael Draytons <xref type="translation" poem="drayton2002020353"/>.</note>
+  </notes>
+  <source pages="78"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1630,14 +1627,14 @@ Vær hilset, Du min Musas Hippocrene!
 
 <text id="lange2019101435">
 <head>
-    <title><num>X.</num>Skal jeg Dig ligne ved en Sommerdag?</title>
-    <firstline>Skal jeg Dig ligne ved en Sommerdag?</firstline>
-    <notes>
-        <note>Gendigtning af Shakespeares <xref type="translation" poem="shakespeare0018"/>.</note>
-    </notes>
-    <source pages="79"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>X.</num>Skal jeg Dig ligne ved en Sommerdag?</title>
+  <firstline>Skal jeg Dig ligne ved en Sommerdag?</firstline>
+  <notes>
+    <note>Gendigtning af Shakespeares <xref type="translation" poem="shakespeare0018"/>.</note>
+  </notes>
+  <source pages="79"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1666,14 +1663,14 @@ Saa lever den, og Du, som boer deri!
 
 <text id="lange2019101436">
 <head>
-    <title><num>XI.</num>Vel maa min Musa være prægtig smykket!</title>
-    <firstline>Vel maa min Musa være prægtig smykket!</firstline>
-    <notes>
-        <note>Gendigtning af Shakespeares <xref type="translation" poem="shakespeare0038"/>.</note>
-    </notes>
-    <source pages="80"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>XI.</num>Vel maa min Musa være prægtig smykket!</title>
+  <firstline>Vel maa min Musa være prægtig smykket!</firstline>
+  <notes>
+    <note>Gendigtning af Shakespeares <xref type="translation" poem="shakespeare0038"/>.</note>
+  </notes>
+  <source pages="80"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1702,14 +1699,14 @@ Var Stemmen min — men Æren din alene!
 
 <text id="lange2019101437">
 <head>
-    <title><num>XII.</num>Du rummer Alt, der er mig dyrebart!</title>
-    <firstline>Du rummer Alt, der er mig dyrebart!</firstline>
-    <notes>
-        <note>Gendigtning af Shakespeares <xref type="translation" poem="shakespeare0031"/>.</note>
-    </notes>
-    <source pages="81"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>XII.</num>Du rummer Alt, der er mig dyrebart!</title>
+  <firstline>Du rummer Alt, der er mig dyrebart!</firstline>
+  <notes>
+    <note>Gendigtning af Shakespeares <xref type="translation" poem="shakespeare0031"/>.</note>
+  </notes>
+  <source pages="81"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1738,14 +1735,14 @@ Du er dem alle — tag mit Hjerte helt!
 
 <text id="lange2019101438">
 <head>
-    <title><num>XIII.</num>I Fortids Rim jeg læste mange Gange</title>
-    <firstline>I Fortids Rim jeg læste mange Gange</firstline>
-    <notes>
-        <note>Gendigtning af Shakespeares <xref type="translation" poem="shakespeare0106"/>.</note>
-    </notes>
-    <source pages="82"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>XIII.</num>I Fortids Rim jeg læste mange Gange</title>
+  <firstline>I Fortids Rim jeg læste mange Gange</firstline>
+  <notes>
+    <note>Gendigtning af Shakespeares <xref type="translation" poem="shakespeare0106"/>.</note>
+  </notes>
+  <source pages="82"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1774,14 +1771,14 @@ Beundre Dig — til mér er vi for svage.
 
 <text id="lange2019101439">
 <head>
-    <title><num>XIV.</num>Min Musa var for svag, den bliver træt</title>
-    <firstline>Min Musa var for svag, den bliver træt</firstline>
-    <notes>
-        <note>Gendigtning af Shakespeares <xref type="translation" poem="shakespeare0103"/>.</note>
-    </notes>
-    <source pages="83"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>XIV.</num>Min Musa var for svag, den bliver træt</title>
+  <firstline>Min Musa var for svag, den bliver træt</firstline>
+  <notes>
+    <note>Gendigtning af Shakespeares <xref type="translation" poem="shakespeare0103"/>.</note>
+  </notes>
+  <source pages="83"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1810,14 +1807,14 @@ Kan selv Du se, naar paa Dig selv Du seer!
 
 <text id="lange2019101440">
 <head>
-    <title><num>XV.</num>Jeg véd et Baand, der Sjæl til Sjæl kan føje</title>
-    <firstline>Jeg véd et Baand, der Sjæl til Sjæl kan føje</firstline>
-    <notes>
-        <note>Gendigtning af Shakespeares <xref type="translation" poem="shakespeare0116"/>.</note>
-    </notes>
-    <source pages="84"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>XV.</num>Jeg véd et Baand, der Sjæl til Sjæl kan føje</title>
+  <firstline>Jeg véd et Baand, der Sjæl til Sjæl kan føje</firstline>
+  <notes>
+    <note>Gendigtning af Shakespeares <xref type="translation" poem="shakespeare0116"/>.</note>
+  </notes>
+  <source pages="84"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>

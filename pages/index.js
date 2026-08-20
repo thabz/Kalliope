@@ -11,6 +11,7 @@ import SidebarSplit from '../components/sidebarsplit.js';
 import SplitWhenSmall from '../components/split-when-small.js';
 import SubHeading from '../components/subheading.js';
 import TextContent from '../components/textcontent.js';
+import Tooltip from '../components/tooltip.js';
 
 const TodaysEvents = ({ events }) => {
   const lang = useContext(LangContext);
@@ -23,11 +24,16 @@ const TodaysEvents = ({ events }) => {
     .filter((item) => item.type !== 'image')
     .map((item, i) => {
       const yearsAgo = nowYear - parseInt(item.date.substring(0, 4));
+      const date = formattedDate(item.date, lang);
+      const tooltip = _('{yearsAgo} år siden i dag', lang, { yearsAgo });
       const yearHtml = (
-        <div
-          className="today-date"
-          title={_('{yearsAgo} år siden i dag', lang, { yearsAgo })}>
-          {formattedDate(item.date)}
+        <div className="today-date">
+          <Tooltip
+            text={tooltip}
+            ariaLabel={`${date} – ${tooltip}`}
+            focusable>
+            {date}
+          </Tooltip>
         </div>
       );
       const html = (
@@ -107,7 +113,7 @@ const News = ({ news }) => {
               lang={lang}
             />
           </div>
-          <div className="news-date">{formattedDate(date)}</div>
+          <div className="news-date">{formattedDate(date, lang)}</div>
           <style jsx>{`
             div.news-item {
               margin-bottom: 20px;
@@ -168,17 +174,19 @@ let Index = (props) => {
       menuItems={kalliopeMenu()}
       selectedMenuItem="index"
       paging={paging}>
-      <PageLead>
-        {_(
-          'Kalliope er et digitalt bibliotek for poesi og klassisk litteratur. Her finder du digte, oversættelser, forfatterbiografier og litterære noter, frit tilgængeligt og forbundet gennem personer, værker, steder og historiske perioder.',
-          lang
-        )}
-      </PageLead>
-      <SidebarSplit sidebar={sidebar}>
-        <div>
-          <News news={news} lang={lang} />
-        </div>
-      </SidebarSplit>
+      <div className="front-page">
+        <PageLead>
+          {_(
+            'Kalliope er et digitalt bibliotek for poesi og klassisk litteratur. Her finder du digte, oversættelser, forfatterbiografier og litterære noter, frit tilgængeligt og forbundet gennem personer, værker, steder og historiske perioder.',
+            lang
+          )}
+        </PageLead>
+        <SidebarSplit sidebar={sidebar}>
+          <div>
+            <News news={news} lang={lang} />
+          </div>
+        </SidebarSplit>
+      </div>
     </Page>
   );
 };

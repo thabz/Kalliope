@@ -309,11 +309,26 @@ const htmlToXml = (html, collected, isPoetry) => {
   return lines;
 };
 
-const resizeImage = async (inputfile, outputfile, maxWidth) => {
+const resizeImage = async (inputfile, outputfile, maxWidth, options = {}) => {
   try {
-    await sharp(inputfile)
-      .resize({ width: maxWidth, withoutEnlargement: true })
-      .toFile(outputfile);
+    const resizeOptions = {
+      width: maxWidth,
+      withoutEnlargement: true,
+    };
+    if (options.fit != null) {
+      const metadata = await sharp(inputfile).metadata();
+      const squareSize = Math.min(
+        maxWidth,
+        metadata.width ?? maxWidth,
+        metadata.height ?? maxWidth
+      );
+      resizeOptions.width = squareSize;
+      resizeOptions.height = squareSize;
+      resizeOptions.fit = options.fit;
+    }
+    const image = sharp(inputfile).resize(resizeOptions);
+    image.jpeg({ quality: options.quality ?? 82 });
+    await image.toFile(outputfile);
     return outputfile;
   } catch (err) {
     console.log(err);

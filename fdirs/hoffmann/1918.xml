@@ -1,31 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="1918" author="hoffmann" status="complete" type="poetry">
 <workhead>
-    <title>Den store Vaar</title>
-    <year>1918</year>
-    <notes>
-        <note>Teksten følger Kai Hoffmann: <i>Den store Vaar</i>, V. Pios Boghandel, Kbh., 1918.</note>
-    </notes>
-    <pictures>
-        <picture src="1918-p1.jpg">Titelbladet til <i>Den store Vaar</i> (1918) lyder ,,''.</picture>
-    </pictures>
-    <!-- TODO: Indsæt forsiden. -->
-    <source facsimile="115308063059_color" facsimile-pages-num="130" facsimile-pages-offset="4">Kai Hoffmann: <i>Den store Vaar</i>, V. Pios Boghandel, Kbh., 1918.</source>
+  <title>Den store Vaar</title>
+  <year>1918</year>
+  <pictures>
+    <picture src="1918-p1.jpg">Titelbladet til <i>Den store Vaar</i> (1918) lyder ,,''.</picture>
+  </pictures>
+  <!-- TODO: Indsæt forsiden. -->
+  <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122373623805763" facsimile="115308063059_color" facsimile-pages-num="130" facsimile-pages-offset="4">Kai Hoffmann: <i>Den store Vaar</i>, V. Pios Boghandel, Kbh., 1918.</source>
 </workhead>
 <workbody>
 
 <section>
 <head>
-    <title>I Danmark</title>
+  <title>I Danmark</title>
 </head>
 <content>
 
 <text id="hoffmann2019041801">
 <head>
-    <title>Svanerne</title>
-    <firstline>Det Brus - o, det vilde og klingre -</firstline>
-    <source pages="13-14"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Svanerne</title>
+  <firstline>Det Brus - o, det vilde og klingre -</firstline>
+  <source pages="13-14"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -54,10 +51,10 @@ med Brus gennem Ætheren gaar . . .
 
 <text id="hoffmann2019041802">
 <head>
-    <title>Min Moder</title>
-    <firstline>Min Moder gaar i Morgenskær</firstline>
-    <source pages="15-16"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Min Moder</title>
+  <firstline>Min Moder gaar i Morgenskær</firstline>
+  <source pages="15-16"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -96,10 +93,10 @@ hun er dog midt i alt, som sker . . .
 
 <text id="hoffmann2019041803">
 <head>
-    <title>Christianshavn</title>
-    <firstline>Der er Master og Taarne</firstline>
-    <source pages="17-18"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Christianshavn</title>
+  <firstline>Der er Master og Taarne</firstline>
+  <source pages="17-18"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -153,10 +150,10 @@ hvor Drømmeren gaar .
 
 <text id="hoffmann2019041804">
 <head>
-    <title>Alle Vorherres Fugle</title>
-    <firstline>Alle Vorherres Fugle</firstline>
-    <source pages="19"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Alle Vorherres Fugle</title>
+  <firstline>Alle Vorherres Fugle</firstline>
+  <source pages="19"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -183,10 +180,10 @@ den sødeste Glædesgraad . . .
 
 <text id="hoffmann2019041805">
 <head>
-    <title>Svalernes Farvel</title>
-    <firstline>Nu er det, at Svalerne samles</firstline>
-    <source pages="20-21"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Svalernes Farvel</title>
+  <firstline>Nu er det, at Svalerne samles</firstline>
+  <source pages="20-21"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -216,10 +213,10 @@ og Mørket skal opæde Jorden . . .
 
 <text id="hoffmann2019041806">
 <head>
-    <title>Dalgas</title>
-    <firstline>Ak, stumt, forstenet stirrer</firstline>
-    <source pages="22-23"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Dalgas</title>
+  <firstline>Ak, stumt, forstenet stirrer</firstline>
+  <source pages="22-23"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -263,13 +260,13 @@ bliv Liv, som gyldent bølger . . .''
 
 <text id="hoffmann2019041807">
 <head>
-    <title>Carl Castenschiold</title>
-    <firstline>Imellem de gode og tapre</firstline>
-    <notes>
-        <note>Carl Castenschiold (1837-1819), dansk officer og krigshelt fra 1864.</note>
-    </notes>
-    <source pages="24"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Carl Castenschiold</title>
+  <firstline>Imellem de gode og tapre</firstline>
+  <notes>
+    <note>Carl Castenschiold (1837-1819), dansk officer og krigshelt fra 1864.</note>
+  </notes>
+  <source pages="24"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -289,10 +286,10 @@ og Herre, som Danmark har haft . . .
 
 <text id="hoffmann2019041808">
 <head>
-    <title>Flyverne</title>
-    <firstline>Baad under Bølgen og Baad i det Høje</firstline>
-    <source pages="25"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Flyverne</title>
+  <firstline>Baad under Bølgen og Baad i det Høje</firstline>
+  <source pages="25"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -316,11 +313,11 @@ Danmark, o Danmark, er endelig Du!
 
 <text id="hoffmann2019041809">
 <head>
-    <title>Den gamle Konge</title>
-    <firstline>Vi husker den gamle Konge</firstline>
-    <source pages="26-27"/>
-    <keywords>christian9</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Den gamle Konge</title>
+  <firstline>Vi husker den gamle Konge</firstline>
+  <source pages="26-27"/>
+  <keywords>christian9</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -349,10 +346,10 @@ af Danmark, der ligger og gror . . .
 
 <text id="hoffmann2019041810">
 <head>
-    <title>Jeg har staaet engang</title>
-    <firstline>Jeg har staaet engang paa en græsgrøn Vold</firstline>
-    <source pages="28-29"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Jeg har staaet engang</title>
+  <firstline>Jeg har staaet engang paa en græsgrøn Vold</firstline>
+  <source pages="28-29"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -391,10 +388,10 @@ for den Drøm gælder mere end alt . . .
 
 <text id="hoffmann2019041811">
 <head>
-    <title>Kalundborg Fjord</title>
-    <firstline>Ud mod det blæsende Vest</firstline>
-    <source pages="30-31"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Kalundborg Fjord</title>
+  <firstline>Ud mod det blæsende Vest</firstline>
+  <source pages="30-31"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -445,10 +442,10 @@ gaber den skummende Fjord . . .
 
 <text id="hoffmann2019041812">
 <head>
-    <title>Mit Land</title>
-    <firstline>Jevnt skraaner Vejen - mod Himlen og ned</firstline>
-    <source pages="32-33"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Mit Land</title>
+  <firstline>Jevnt skraaner Vejen - mod Himlen og ned</firstline>
+  <source pages="32-33"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -482,12 +479,12 @@ Jeg er, hver Tøddel og Tomme, det Lands . . .
 
 <text id="hoffmann2019041813">
 <head>
-    <title>I Danmark</title>
-    <subtitle>Til Thøger Larsen</subtitle>
-    <firstline>I Danmark - paa Ternernes</firstline>
-    <source pages="34-35"/>
-    <keywords>larsent</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>I Danmark</title>
+  <subtitle>Til Thøger Larsen</subtitle>
+  <firstline>I Danmark - paa Ternernes</firstline>
+  <source pages="34-35"/>
+  <keywords>larsent</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -544,16 +541,16 @@ Paradisland . . .
 
 <section>
 <head>
-    <title>Julen</title>
+  <title>Julen</title>
 </head>
 <content>
 
 <text id="hoffmann2019041814">
 <head>
-    <title>Klokkerne</title>
-    <firstline>Det er Luften, som skælver og klinger</firstline>
-    <source pages="39-40"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Klokkerne</title>
+  <firstline>Det er Luften, som skælver og klinger</firstline>
+  <source pages="39-40"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -583,10 +580,10 @@ det er Julen, hvor Klokkerne kime.
 
 <text id="hoffmann2019041815">
 <head>
-    <title>Billedbogen</title>
-    <firstline>Det er en Billedbog med mange Blade</firstline>
-    <source pages="41-42"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Billedbogen</title>
+  <firstline>Det er en Billedbog med mange Blade</firstline>
+  <source pages="41-42"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -640,11 +637,11 @@ og de, hvis Smil for os blev Livets Fryd!
 
 <text id="hoffmann2019041816">
 <head>
-    <title>Det er i Aften -</title>
-    <toctitle>Det er i aften</toctitle>
-    <firstline>Det er i Aften</firstline>
-    <source pages="43-45"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Det er i Aften -</title>
+  <toctitle>Det er i aften</toctitle>
+  <firstline>Det er i Aften</firstline>
+  <source pages="43-45"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -707,11 +704,11 @@ Marie Moder,
 
 <text id="hoffmann2019041817">
 <head>
-    <title>Mens udenfor -</title>
-    <toctitle>Mens udenfor</toctitle>
-    <firstline>Mens udenfor, mens udenfor</firstline>
-    <source pages="46-47"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Mens udenfor -</title>
+  <toctitle>Mens udenfor</toctitle>
+  <firstline>Mens udenfor, mens udenfor</firstline>
+  <source pages="46-47"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -760,10 +757,10 @@ hin Fabelstjerne staa . . .
 
 <text id="hoffmann2019041818">
 <head>
-    <title>Se, jeg forkynder</title>
-    <firstline>At Jorden er ikke fordømt, forladt -</firstline>
-    <source pages="48-49"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Se, jeg forkynder</title>
+  <firstline>At Jorden er ikke fordømt, forladt -</firstline>
+  <source pages="48-49"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -802,13 +799,13 @@ af Engel <i>Skønhed</i> og Engel <i>Tro</i> . . .
 
 <text id="hoffmann2019041819">
 <head>
-    <title>I skønne Lys -</title>
-    <toctitle>I skønne Lys</toctitle>
-    <indextitle>I skønne Lys</indextitle>
-    <linktitle>I skønne Lys</linktitle>
-    <firstline>I skønne Lys, der brænder</firstline>
-    <source pages="50"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>I skønne Lys -</title>
+  <toctitle>I skønne Lys</toctitle>
+  <indextitle>I skønne Lys</indextitle>
+  <linktitle>I skønne Lys</linktitle>
+  <firstline>I skønne Lys, der brænder</firstline>
+  <source pages="50"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -835,16 +832,16 @@ Der er - for os i Verden
 
 <section>
 <head>
-    <title>To Bryllupssange</title>
+  <title>To Bryllupssange</title>
 </head>
 <content>
 
 <text id="hoffmann2019041820">
 <head>
-    <title>Se, nu staar Glans over grønne, grønne Sletter</title>
-    <firstline>Se, nu staar Glans over grønne, grønne Sletter</firstline>
-    <source pages="53-54"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Se, nu staar Glans over grønne, grønne Sletter</title>
+  <firstline>Se, nu staar Glans over grønne, grønne Sletter</firstline>
+  <source pages="53-54"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -889,10 +886,10 @@ ud mod det evige Blaa!
 
 <text id="hoffmann2019041821">
 <head>
-    <title>Den sorte Solsorts søde Sang</title>
-    <firstline>Den sorte Solsorts søde Sang</firstline>
-    <source pages="55-56"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Den sorte Solsorts søde Sang</title>
+  <firstline>Den sorte Solsorts søde Sang</firstline>
+  <source pages="55-56"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -940,17 +937,17 @@ nu hilser vi Jer her!
 
 <section>
 <head>
-    <title>Hyldest</title>
+  <title>Hyldest</title>
 </head>
 <content>
 
 <text id="hoffmann2019041822">
 <head>
-    <title>Sophus Claussen</title>
-    <firstline>En dyb, fuldmandig Røst, der dybest inde</firstline>
-    <source pages="59"/>
-    <keywords>claussen</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Sophus Claussen</title>
+  <firstline>En dyb, fuldmandig Røst, der dybest inde</firstline>
+  <source pages="59"/>
+  <keywords>claussen</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -967,11 +964,11 @@ Naturens Tveklang er i denne Røst . . .
 
 <text id="hoffmann2019041823">
 <head>
-    <title>H. V. Kaalund</title>
-    <firstline>Læs atter disse Vers</firstline>
-    <source pages="60-61"/>
-    <keywords>kaalund</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>H. V. Kaalund</title>
+  <firstline>Læs atter disse Vers</firstline>
+  <source pages="60-61"/>
+  <keywords>kaalund</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1010,13 +1007,13 @@ var han Yngling, var han Elsker.
 
 <text id="hoffmann2019041824">
 <head>
-    <title>Olaf Poulsen</title>
-    <firstline>Don Quichote og Sancho Panza</firstline>
-    <notes>
-        <note>Olaf Poulsen (1849-1923), kgl. skuespiller som regnedes for mesteren udi det komiske fag.</note>
-    </notes>
-    <source pages="62-63"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Olaf Poulsen</title>
+  <firstline>Don Quichote og Sancho Panza</firstline>
+  <notes>
+    <note>Olaf Poulsen (1849-1923), kgl. skuespiller som regnedes for mesteren udi det komiske fag.</note>
+  </notes>
+  <source pages="62-63"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1050,14 +1047,14 @@ Broder - er til!
 
 <text id="hoffmann2019041825">
 <head>
-    <title>Émile Verhaeren</title>
-    <firstline>Du greb Strengelegen</firstline>
-    <notes>
-        <note>Émile Verhaeren (1855-1916), belgisk digter.</note>
-    </notes>
-    <source pages="64-65"/>
-    <keywords>baudelaire</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Émile Verhaeren</title>
+  <firstline>Du greb Strengelegen</firstline>
+  <notes>
+    <note>Émile Verhaeren (1855-1916), belgisk digter.</note>
+  </notes>
+  <source pages="64-65"/>
+  <keywords>baudelaire</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1101,16 +1098,16 @@ Lyren - de Eviges Trolddom.
 
 <section>
 <head>
-    <title>Mænds Verden</title>
+  <title>Mænds Verden</title>
 </head>
 <content>
 
 <text id="hoffmann2019041826">
 <head>
-    <title>Nytaarsgry</title>
-    <firstline>Mærk dette disede, rimhvide Gry’s</firstline>
-    <source pages="69-70"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Nytaarsgry</title>
+  <firstline>Mærk dette disede, rimhvide Gry’s</firstline>
+  <source pages="69-70"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1151,10 +1148,10 @@ kend denne Solopgangs rislende Gys!
 
 <text id="hoffmann2019041827">
 <head>
-    <title>Højt hænger Nyet</title>
-    <firstline>Højt hænger Nyet som en Skaal og  lyser</firstline>
-    <source pages="71"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Højt hænger Nyet</title>
+  <firstline>Højt hænger Nyet som en Skaal og  lyser</firstline>
+  <source pages="71"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1178,11 +1175,11 @@ Kom, Mænd og Konger - alt, hvad Mørket gemmer!
 
 <text id="hoffmann2019041828">
 <head>
-    <title>Rytteren</title>
-    <firstline>I den kolde og susende Aften</firstline>
-    <source pages="72-74"/>
-    <!-- TODO: Find mottoet -->
-    <quality>korrektur1,kilde,side</quality>
+  <title>Rytteren</title>
+  <firstline>I den kolde og susende Aften</firstline>
+  <source pages="72-74"/>
+  <!-- TODO: Find mottoet -->
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1245,10 +1242,10 @@ mod det fjerne og flammende Skær . . .
 
 <text id="hoffmann2019041829">
 <head>
-    <title>Skjalden</title>
-    <firstline>Jeg er ikke den vandrende Sanger</firstline>
-    <source pages="75-79"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Skjalden</title>
+  <firstline>Jeg er ikke den vandrende Sanger</firstline>
+  <source pages="75-79"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1383,10 +1380,10 @@ er jeg Sværd, er jeg Sang, til jeg dør!
 
 <text id="hoffmann2019041830">
 <head>
-    <title>Vinen</title>
-    <firstline>Hamlet - nervøst forfinet</firstline>
-    <source pages="80-83"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Vinen</title>
+  <firstline>Hamlet - nervøst forfinet</firstline>
+  <source pages="80-83"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1494,10 +1491,10 @@ som nu er Væld af Lys . . .
 
 <text id="hoffmann2019041831">
 <head>
-    <title>Den simple sorte Skraa</title>
-    <firstline>Foragtet af den hvide</firstline>
-    <source pages="84-87"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Den simple sorte Skraa</title>
+  <firstline>Foragtet af den hvide</firstline>
+  <source pages="84-87"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1596,10 +1593,10 @@ er den simple sorte Skraa.
 
 <text id="hoffmann2019041832">
 <head>
-    <title>Den mørke Pige</title>
-    <firstline>Jeg er kun en Mand, der sejler</firstline>
-    <source pages="88-92"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Den mørke Pige</title>
+  <firstline>Jeg er kun en Mand, der sejler</firstline>
+  <source pages="88-92"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1711,16 +1708,16 @@ som er En i Evighed.
 
 <section>
 <head>
-    <title>Drømmen</title>
+  <title>Drømmen</title>
 </head>
 <content>
 
 <text id="hoffmann2019041833">
 <head>
-    <title>I Vinterskoven</title>
-    <firstline>Se Vinterens Stammer og Stier</firstline>
-    <source pages="95"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>I Vinterskoven</title>
+  <firstline>Se Vinterens Stammer og Stier</firstline>
+  <source pages="95"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1740,10 +1737,10 @@ usynlige gaar os forbi.
 
 <text id="hoffmann2019041834">
 <head>
-    <title>Sommerens Byer</title>
-    <firstline>Under et Blaa uden Skyer</firstline>
-    <source pages="96-97"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Sommerens Byer</title>
+  <firstline>Under et Blaa uden Skyer</firstline>
+  <source pages="96-97"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1777,10 +1774,10 @@ hører jeg Orgelet tone . . .
 
 <text id="hoffmann2019041835">
 <head>
-    <title>Under Høsthimlen</title>
-    <firstline>Solen har skinnet</firstline>
-    <source pages="98-99"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Under Høsthimlen</title>
+  <firstline>Solen har skinnet</firstline>
+  <source pages="98-99"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1829,10 +1826,10 @@ syngende saa . . .
 
 <text id="hoffmann2019041836">
 <head>
-    <title>Ved Arnens Ild</title>
-    <firstline>I Skumringsmørket</firstline>
-    <source pages="100-101"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Ved Arnens Ild</title>
+  <firstline>I Skumringsmørket</firstline>
+  <source pages="100-101"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1886,10 +1883,10 @@ mod Livets Gry.
 
 <text id="hoffmann2019041837">
 <head>
-    <title>Vinterskumring</title>
-    <firstline>De skumrende Stuer og Stalde</firstline>
-    <source pages="102-103"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Vinterskumring</title>
+  <firstline>De skumrende Stuer og Stalde</firstline>
+  <source pages="102-103"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1943,10 +1940,10 @@ den svimlende Evighed kalder . . .
 
 <text id="hoffmann2019041838">
 <head>
-    <title>I Fædrenes By</title>
-    <firstline>Hvor er det henne nu - Huset</firstline>
-    <source pages="104-105"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>I Fædrenes By</title>
+  <firstline>Hvor er det henne nu - Huset</firstline>
+  <source pages="104-105"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1975,13 +1972,13 @@ strømmer mit Hjerte i Møde . . .
 
 <text id="hoffmann2019041839">
 <head>
-    <title>Ikke hos Gud -</title>
-    <toctitle>Ikke hos Gud</toctitle>
-    <indextitle>Ikke hos Gud</indextitle>
-    <linktitle>Ikke hos Gud</linktitle>
-    <firstline>Ikke hos Gud skal vi finde</firstline>
-    <source pages="106"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Ikke hos Gud -</title>
+  <toctitle>Ikke hos Gud</toctitle>
+  <indextitle>Ikke hos Gud</indextitle>
+  <linktitle>Ikke hos Gud</linktitle>
+  <firstline>Ikke hos Gud skal vi finde</firstline>
+  <source pages="106"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2005,10 +2002,10 @@ og vi er evigt fortabte . . .
 
 <text id="hoffmann2019041840">
 <head>
-    <title>Kun ved dit Bryst</title>
-    <firstline>Kun ved dit Bryst er jeg hjemme</firstline>
-    <source pages="107-109"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Kun ved dit Bryst</title>
+  <firstline>Kun ved dit Bryst er jeg hjemme</firstline>
+  <source pages="107-109"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2070,10 +2067,10 @@ Dèr, i den Duft, er jeg hjemme.
 
 <text id="hoffmann2019041841">
 <head>
-    <title>Det blaa Hus</title>
-    <firstline>Blaat i det hvide</firstline>
-    <source pages="110-111"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Det blaa Hus</title>
+  <firstline>Blaat i det hvide</firstline>
+  <source pages="110-111"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2117,10 +2114,10 @@ som de havblaa Ruder dér . . .
 
 <text id="hoffmann2019041842">
 <head>
-    <title>Drømmen</title>
-    <firstline>Hvad jeg aldrig kan forklare</firstline>
-    <source pages="112-113"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Drømmen</title>
+  <firstline>Hvad jeg aldrig kan forklare</firstline>
+  <source pages="112-113"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2165,10 +2162,10 @@ til den <i>Drøm</i>, som er - maaské - mit rette Hjem . . .
 
 <text id="hoffmann2019041843">
 <head>
-    <title>Bagved de mørke Bjerge</title>
-    <firstline>Bagved de mørke Bjerge</firstline>
-    <source pages="114-115"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Bagved de mørke Bjerge</title>
+  <firstline>Bagved de mørke Bjerge</firstline>
+  <source pages="114-115"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2205,10 +2202,10 @@ blomstrer dets Rosenskær.
 
 <text id="hoffmann2019041844">
 <head>
-    <title>Den store Vaar</title>
-    <firstline>Det skete en Aften, da Sol gik ned</firstline>
-    <source pages="116-117"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Den store Vaar</title>
+  <firstline>Det skete en Aften, da Sol gik ned</firstline>
+  <source pages="116-117"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>

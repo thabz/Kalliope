@@ -1,32 +1,28 @@
 <?xml version="1.0"?>
 <kalliopework id="1895-2" author="richardt" status="complete" type="poetry" parent="1895">
-  <workhead>
-    <title>Anden Deel</title>
-    <year>1895</year>
-    <notes>
-        <note>Teksten følger Christian Richardt: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, Kbh., 1895, 2. del.</note>
-    </notes>
-    <pictures>
-        <picture type="titlepage" src="1895-p2.jpg">Titelbladet til <i>Samlede Digte</i> (1895) lyder ,,Samlede Digte / af / Chr. Richardt. / Anden Deel. / Kjøbenhavn. / Gyldendalske Boghandels Forlag (F. Hegel &amp; Søn) / Trykt hos J. Jørgensen &amp; Co (M. A. Hannover) / 1895.''</picture>
-    </pictures>
-    <source facsimile="1895-2" facsimile-pages-num="407" facsimile-pages-offset="10">Christian Richardt: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, Kbh., 1895, 2. del.</source>
-  </workhead>
-  <workbody>
-
+<workhead>
+  <title>Anden Deel</title>
+  <year>1895</year>
+  <pictures>
+    <picture type="titlepage" src="1895-p2.jpg">Titelbladet til <i>Samlede Digte</i> (1895) lyder ,,Samlede Digte / af / Chr. Richardt. / Anden Deel. / Kjøbenhavn. / Gyldendalske Boghandels Forlag (F. Hegel &amp; Søn) / Trykt hos J. Jørgensen &amp; Co (M. A. Hannover) / 1895.''</picture>
+  </pictures>
+  <source facsimile="1895-2" facsimile-pages-num="407" facsimile-pages-offset="10">Christian Richardt: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, Kbh., 1895, 2. del.</source>
+</workhead>
+<workbody>
 
 <section level="3">
 <head>
-    <title>Billedtexter</title>
-    <toctitle>Billedtexter 1-3</toctitle>
+  <title>Billedtexter</title>
+  <toctitle>Billedtexter 1-3</toctitle>
 </head>
 <content>
 
 <text id="richardt201907312">
 <head>
-    <title><num>I.</num>Overraskelse</title>
-    <firstline>Herr Andrik og hans Viv Andrikke</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="1-2"/>
+  <title><num>I.</num>Overraskelse</title>
+  <firstline>Herr Andrik og hans Viv Andrikke</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="1-2"/>
 </head>
 <body>
 <poetry>
@@ -73,10 +69,10 @@ Fornøjelsen var <i>ikke</i> stor!
 
 <text id="richardt201907313">
 <head>
-    <title><num>II.</num>Betids</title>
-    <firstline>Tænk, Fastelavn er kommen igjen!</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="2-4"/>
+  <title><num>II.</num>Betids</title>
+  <firstline>Tænk, Fastelavn er kommen igjen!</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="2-4"/>
 </head>
 <body>
 <poetry>
@@ -127,12 +123,14 @@ dine Boller, dem har Du ærligt fortjent!
 
 <text id="richardt201907314">
 <head>
-    <title><num>III.</num>Patient</title>
-    <subtitle>Motivet fra et Maleri af Jan Sten.</subtitle>
-    <firstline>Hvor er hun ung og yndig</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <!-- TODO: Dette maleri er vist nævnt i et andet digt, som vist stadig befinder sig i et pullrequest. -->
-    <source pages="4-7"/>
+  <title><num>III.</num>Patient</title>
+  <subtitle>Motivet fra et Maleri af Jan Sten.</subtitle>
+  <firstline>Hvor er hun ung og yndig</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <pictures>
+    <picture artwork="kunst/jan-steen-doktorsbesoeg-1663"/>
+  </pictures>
+  <source pages="4-7"/>
 </head>
 <body>
 <poetry>
@@ -234,10 +232,10 @@ en postillon d'amour!«
 
 <text id="richardt201907315">
 <head>
-    <title>En Valplads</title>
-    <firstline>Der kæmped en Damper med Storm og Nød</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="7-11"/>
+  <title>En Valplads</title>
+  <firstline>Der kæmped en Damper med Storm og Nød</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="7-11"/>
 </head>
 <body>
 <poetry>
@@ -349,7 +347,7 @@ overalt blev hun ene, tilside de gik,
 da fik hun sit Svar af Kaptajnens Blik,
 hun blev saa bleg.
 
-EtHaandtryk, - med Haandtrykket fulgte en Pung.
+Et Haandtryk, - med Haandtrykket fulgte en Pung.
 Hun brast i Graad.
 »Det lette Dig lidt din Vej saa tung!
 Til <i>ham</i> har vi Gjæld, baade Gammel og Ung,
@@ -366,10 +364,10 @@ hans Fa'r var en Helt!«
 
 <text id="richardt201907316">
 <head>
-    <title>Hugormen</title>
-    <firstline>Den Lille laa og leged</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="11-12"/>
+  <title>Hugormen</title>
+  <firstline>Den Lille laa og leged</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="11-12"/>
 </head>
 <body>
 <poetry>
@@ -393,10 +391,10 @@ end lokket af Slangen.
 
 <text id="richardt201907317">
 <head>
-    <title>Pigen ved Brønden</title>
-    <firstline>Hver Dag jeg maa til Brønden</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="12"/>
+  <title>Pigen ved Brønden</title>
+  <firstline>Hver Dag jeg maa til Brønden</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="12"/>
 </head>
 <body>
 <poetry>
@@ -420,10 +418,10 @@ stil Du mit Hjertes Vover!
 
 <text id="richardt201907318">
 <head>
-    <title>I Schweiz</title>
-    <firstline>Jeg laa paa den grønne Matte</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="12-14"/>
+  <title>I Schweiz</title>
+  <firstline>Jeg laa paa den grønne Matte</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="12-14"/>
 </head>
 <body>
 <poetry>
@@ -492,13 +490,13 @@ forjættelsesrige Stund!
 
 <text id="richardt201907319">
 <head>
-    <title>Sejrs-Bud</title>
-    <firstline>Den havde svunget hvasse Sværd</firstline>
-    <notes>
-        <note>* Skrevet i Foraaret 1872.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="14-20"/>
+  <title>Sejrs-Bud</title>
+  <firstline>Den havde svunget hvasse Sværd</firstline>
+  <notes>
+    <note>* Skrevet i Foraaret 1872.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="14-20"/>
 </head>
 <body>
 <poetry>
@@ -677,10 +675,10 @@ at gaa herfra med Raabet <i>Sejr!«</i>
 
 <text id="richardt2019073110">
 <head>
-    <title>Paradisets Fugle</title>
-    <firstline>Toner, I som mægtig svulme</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="20-21"/>
+  <title>Paradisets Fugle</title>
+  <firstline>Toner, I som mægtig svulme</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="20-21"/>
 </head>
 <body>
 <poetry>
@@ -724,10 +722,10 @@ og de Salige husvale.
 
 <text id="richardt2019073111">
 <head>
-    <title>En Længsel</title>
-    <firstline>Jeg længes stundum efter Sorgen</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="21-22"/>
+  <title>En Længsel</title>
+  <firstline>Jeg længes stundum efter Sorgen</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="21-22"/>
 </head>
 <body>
 <poetry>
@@ -761,10 +759,10 @@ kom Sorgen til mig som en Ven.
 
 <text id="richardt2019073112">
 <head>
-    <title>Jakob i Hebron</title>
-    <firstline>Over Hebrons grønne Dale</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="22-28"/>
+  <title>Jakob i Hebron</title>
+  <firstline>Over Hebrons grønne Dale</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="22-28"/>
 </head>
 <body>
 <poetry>
@@ -973,11 +971,11 @@ hen at see ham, før jeg døer!
 
 <text id="richardt2019073113">
 <head>
-    <title>Judith</title>
-    <subtitle>Et bibelsk Heltedigt i ni Sange</subtitle>
-    <firstline>Fjenden er i Landet. Assur vælter</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="29-63"/>
+  <title>Judith</title>
+  <subtitle>Et bibelsk Heltedigt i ni Sange</subtitle>
+  <firstline>Fjenden er i Landet. Assur vælter</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="29-63"/>
 </head>
 <body>
 <poetry>
@@ -2064,11 +2062,11 @@ Isra'ls Gud vil give Sejr!«
 
 <text id="richardt2019073114">
 <head>
-    <title>Bønnen</title>
-    <firstline>Naar Jorden stønner blussende og hed</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="64"/>
-    <keywords>sonnet</keywords>
+  <title>Bønnen</title>
+  <firstline>Naar Jorden stønner blussende og hed</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="64"/>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2095,10 +2093,10 @@ blev ved Guds Faderfavn en Fredens Kilde.
 
 <text id="richardt2019073115">
 <head>
-    <title>Takken</title>
-    <firstline>Naar jeg tænker paa Langfredagssorgen</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="65"/>
+  <title>Takken</title>
+  <firstline>Naar jeg tænker paa Langfredagssorgen</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="65"/>
 </head>
 <body>
 <poetry>
@@ -2126,10 +2124,10 @@ og hvad selv Du gav, - tag det i Gave!
 
 <text id="richardt2019073116">
 <head>
-    <title>Peters Befrielse</title>
-    <firstline>I Fangelænker Peter laa</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="65-70"/>
+  <title>Peters Befrielse</title>
+  <firstline>I Fangelænker Peter laa</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="65-70"/>
 </head>
 <body>
 <poetry>
@@ -2300,10 +2298,10 @@ hvor Livets Roser gløde!
 
 <text id="richardt2019073117">
 <head>
-    <title>Areopagos</title>
-    <firstline>Hvor Athenens Mure slippe</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="71-73"/>
+  <title>Areopagos</title>
+  <firstline>Hvor Athenens Mure slippe</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="71-73"/>
 </head>
 <body>
 <poetry>
@@ -2393,11 +2391,11 @@ lær os elske, lær os lide!
 
 <text id="richardt2019073118">
 <head>
-    <title>Bosporos</title>
-    <subtitle>Blade af Constantinopels Krønike</subtitle>
-    <firstline>Bosporos, skjønne</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="73-91"/>
+  <title>Bosporos</title>
+  <subtitle>Blade af Constantinopels Krønike</subtitle>
+  <firstline>Bosporos, skjønne</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="73-91"/>
 </head>
 <body>
 <poetry>
@@ -2963,10 +2961,10 @@ arve sin Jord.
 
 <text id="richardt2019073119">
 <head>
-    <title>Ved Tanganika-Søen</title>
-    <firstline>Der knalder en Champagneprop</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="91-96"/>
+  <title>Ved Tanganika-Søen</title>
+  <firstline>Der knalder en Champagneprop</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="91-96"/>
 </head>
 <body>
 <poetry>
@@ -3137,10 +3135,10 @@ i Søen, hvor I sad!
 
 <text id="richardt2019073120">
 <head>
-    <title>Missions-Psalme</title>
-    <firstline>Dit Rige komme, Fader vor!</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="97"/>
+  <title>Missions-Psalme</title>
+  <firstline>Dit Rige komme, Fader vor!</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="97"/>
 </head>
 <body>
 <poetry>
@@ -3179,10 +3177,10 @@ med Stefans Juleglæde!
 
 <text id="richardt2019073121">
 <head>
-    <title>Paaskemorgen</title>
-    <firstline>Du lyse Morgens Frydebud</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="98-100"/>
+  <title>Paaskemorgen</title>
+  <firstline>Du lyse Morgens Frydebud</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="98-100"/>
 </head>
 <body>
 <poetry>
@@ -3272,10 +3270,10 @@ hin store Paaskemorgen!
 
 <text id="richardt2019073122">
 <head>
-    <title>Det ubekjendte Land</title>
-    <firstline>Paa Havet Carabevellen</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="100-109"/>
+  <title>Det ubekjendte Land</title>
+  <firstline>Paa Havet Carabevellen</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="100-109"/>
 </head>
 <body>
 <poetry>
@@ -3556,11 +3554,11 @@ skal selv Du sætte Foden paa <i>Hellig Frelsers Ø!</i>
 
 <text id="richardt2019073123">
 <head>
-    <title>Snestorm i Maj</title>
-    <subtitle>(1871.)</subtitle>
-    <firstline>Snee paa Tage midt i Maj</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="109-111"/>
+  <title>Snestorm i Maj</title>
+  <subtitle>(1871.)</subtitle>
+  <firstline>Snee paa Tage midt i Maj</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="109-111"/>
 </head>
 <body>
 <poetry>
@@ -3614,14 +3612,14 @@ der vil komme dog en Pintse!
 
 <text id="richardt2019073124">
 <head>
-    <title>Til Overvejelse</title>
-    <firstline>Dreng! stig op paa Klippetinden</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <notes>
-        <note>* Skrevet i Høsten 1877; meddelt i »Fædrelandet« iste November.</note>
-        <note>Mottoet stammer fra <xref bibel="bibel2mose32,6"/>.</note>
-    </notes>
-    <source pages="111-118"/>
+  <title>Til Overvejelse</title>
+  <firstline>Dreng! stig op paa Klippetinden</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <notes>
+    <note>* Skrevet i Høsten 1877; meddelt i »Fædrelandet« iste November.</note>
+    <note>Mottoet stammer fra <xref bible="bibel2mose32,6"/>.</note>
+  </notes>
+  <source pages="111-118"/>
 </head>
 <body>
 <poetry>
@@ -3851,11 +3849,11 @@ vælde ned Velsignelsen!
 
 <text id="richardt2019073125">
 <head>
-    <title>Sønderjydens Sang</title>
-    <subtitle>(1878.)</subtitle>
-    <firstline>Saa langt og saa længe som Magt er bleven Ret</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="118-120"/>
+  <title>Sønderjydens Sang</title>
+  <subtitle>(1878.)</subtitle>
+  <firstline>Saa langt og saa længe som Magt er bleven Ret</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="118-120"/>
 </head>
 <body>
 <poetry>
@@ -3904,10 +3902,10 @@ til Dannebrog igjen fra Himlen falder!
 
 <text id="richardt2019073126">
 <head>
-    <title>Foraars-Gry</title>
-    <firstline>Gjern Kane nu og Kjelke</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="120-121"/>
+  <title>Foraars-Gry</title>
+  <firstline>Gjern Kane nu og Kjelke</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="120-121"/>
 </head>
 <body>
 <poetry>
@@ -3970,11 +3968,11 @@ Opstandelsernes Fest!
 
 <text id="richardt2019073127">
 <head>
-    <title>Opfarten til Upsal</title>
-    <subtitle>(Et Dagbogsblad fra Studentermødet i Juni 1875.)</subtitle>
-    <firstline>Frisk afsted, med Sang og Klang!</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="122-127"/>
+  <title>Opfarten til Upsal</title>
+  <subtitle>(Et Dagbogsblad fra Studentermødet i Juni 1875.)</subtitle>
+  <firstline>Frisk afsted, med Sang og Klang!</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="122-127"/>
 </head>
 <body>
 <poetry>
@@ -4153,14 +4151,14 @@ Krakes unge Ætt!
 
 <text id="richardt2019073128">
 <head>
-    <title>Ved Dannemora</title>
-    <subtitle>(Den 5. Juni 1875.)</subtitle>
-    <firstline>En Urskov uden Kroner</firstline>
-    <dates>
-        <event>1875-06-05</event>
-    </dates>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="127-129"/>
+  <title>Ved Dannemora</title>
+  <subtitle>(Den 5. Juni 1875.)</subtitle>
+  <firstline>En Urskov uden Kroner</firstline>
+  <dates>
+    <event>1875-06-05</event>
+  </dates>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="127-129"/>
 </head>
 <body>
 <poetry>
@@ -4214,14 +4212,14 @@ min Gud, da var Du dér!«
 
 <text id="richardt2019073129">
 <head>
-    <title>Til Nordens Ungdom</title>
-    <subtitle>(Den 7. Juni 1875.)</subtitle>
-    <firstline>Godt I Unge, lydt at sjunge</firstline>
-    <dates>
-        <event>1875-06-07</event>
-    </dates>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="129-130"/>
+  <title>Til Nordens Ungdom</title>
+  <subtitle>(Den 7. Juni 1875.)</subtitle>
+  <firstline>Godt I Unge, lydt at sjunge</firstline>
+  <dates>
+    <event>1875-06-07</event>
+  </dates>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="129-130"/>
 </head>
 <body>
 <poetry>
@@ -4263,11 +4261,11 @@ smede Skjold for Nordens Aand!
 
 <text id="richardt2019073130">
 <head>
-    <title>Fjeld og Dal</title>
-    <subtitle>Norges Ungdom tilegnet</subtitle>
-    <firstline>Fjeld og Dal er Mand og Kvinde!</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="130-135"/>
+  <title>Fjeld og Dal</title>
+  <subtitle>Norges Ungdom tilegnet</subtitle>
+  <firstline>Fjeld og Dal er Mand og Kvinde!</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="130-135"/>
 </head>
 <body>
 <poetry>
@@ -4453,10 +4451,10 @@ i det øde Himmelrum!
 
 <text id="richardt2019073131">
 <head>
-    <title>Frembrud</title>
-    <firstline>Uberegnelige Maj</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="135-137"/>
+  <title>Frembrud</title>
+  <firstline>Uberegnelige Maj</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="135-137"/>
 </head>
 <body>
 <poetry>
@@ -4531,11 +4529,11 @@ lad dem vælde, lad dem vælde!
 
 <text id="richardt2019073132">
 <head>
-    <title>Ved Kysthospitalets Indvielse</title>
-    <subtitle>(17. Oktober 1875.)</subtitle>
-    <firstline>Paa Refsnæs Havets Vind</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="138-141"/>
+  <title>Ved Kysthospitalets Indvielse</title>
+  <subtitle>(17. Oktober 1875.)</subtitle>
+  <firstline>Paa Refsnæs Havets Vind</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="138-141"/>
 </head>
 <body>
 <poetry>
@@ -4647,14 +4645,14 @@ det Kjærlighedens Værk!
 
 <text id="richardt2019073133">
 <head>
-    <title>Ved Emmaus-Kirkens Indvielse</title>
-    <subtitle>(31. December 1876.)</subtitle>
-    <firstline>See, jeg er Herrens Tjenerinde</firstline>
-    <dates>
-        <event>1876-12-31</event>
-    </dates>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="141-144"/>
+  <title>Ved Emmaus-Kirkens Indvielse</title>
+  <subtitle>(31. December 1876.)</subtitle>
+  <firstline>See, jeg er Herrens Tjenerinde</firstline>
+  <dates>
+    <event>1876-12-31</event>
+  </dates>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="141-144"/>
 </head>
 <body>
 <poetry>
@@ -4740,12 +4738,12 @@ ved det store Nytaars-Ny!
 
 <text id="richardt2019073134">
 <head>
-    <title>Stævns</title>
-    <subtitle>Storehedinge Menighed tilegnet.</subtitle>
-    <firstline>Du som saa højt Dig bryster</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <keywords>syv,sorterup</keywords>
-    <source pages="144-145"/>
+  <title>Stævns</title>
+  <subtitle>Storehedinge Menighed tilegnet.</subtitle>
+  <firstline>Du som saa højt Dig bryster</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <keywords>syv,sorterup</keywords>
+  <source pages="144-145"/>
 </head>
 <body>
 <poetry>
@@ -4844,18 +4842,18 @@ Jert vindomsuste Hjem!
 
 <section level="3">
 <head>
-    <title>Mindesange</title>
-    <toctitle>Mindesange 1-3</toctitle>
+  <title>Mindesange</title>
+  <toctitle>Mindesange 1-3</toctitle>
 </head>
 <content>
 
 <text id="richardt2019073136">
 <head>
-    <title>† Frederik Hammerich</title>
-    <indextitle>Frederik Hammerich</indextitle>
-    <firstline>Ja, læg kun Arbejds-Spaden hen</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="147-148"/>
+  <title>† Frederik Hammerich</title>
+  <indextitle>Frederik Hammerich</indextitle>
+  <firstline>Ja, læg kun Arbejds-Spaden hen</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="147-148"/>
 </head>
 <body>
 <poetry>
@@ -4894,11 +4892,11 @@ med Fred og evig Glæde!
 
 <text id="richardt2019073137">
 <head>
-    <title>† H. N. Clausen</title>
-    <indextitle>H. N. Clausen</indextitle>
-    <firstline>Tak skal lyde ved din Grav</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="148-150"/>
+  <title>† H. N. Clausen</title>
+  <indextitle>H. N. Clausen</indextitle>
+  <firstline>Tak skal lyde ved din Grav</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="148-150"/>
 </head>
 <body>
 <poetry>
@@ -4959,12 +4957,12 @@ hvor hans Frelste paaskeglædes!
 
 <text id="richardt2019073138">
 <head>
-    <title>† Frederik Paludan-Müller</title>
-    <indextitle>Frederik Paludan-Müller</indextitle>
-    <firstline>Ak, hvor Sangens Trækfuglskare har forladt os inden kort</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <keywords>mueller</keywords>
-    <source pages="150-151"/>
+  <title>† Frederik Paludan-Müller</title>
+  <indextitle>Frederik Paludan-Müller</indextitle>
+  <firstline>Ak, hvor Sangens Trækfuglskare har forladt os inden kort</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <keywords>mueller</keywords>
+  <source pages="150-151"/>
 </head>
 <body>
 <poetry>
@@ -5006,11 +5004,11 @@ Svanehammen, Du har kastet, løfte os til ædel Daad!
 
 <text id="richardt2019073139">
 <head>
-    <title>Ved Aften</title>
-    <subtitle>(Til et Beethovensk Thema.)</subtitle>
-    <firstline>Solen sank, og Vinden taug</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="152"/>
+  <title>Ved Aften</title>
+  <subtitle>(Til et Beethovensk Thema.)</subtitle>
+  <firstline>Solen sank, og Vinden taug</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="152"/>
 </head>
 <body>
 <poetry>
@@ -5034,10 +5032,10 @@ luttres ogsaa jeg til Fred.«
 
 <text id="richardt2019073140">
 <head>
-    <title>Vinter og Vaar</title>
-    <firstline>Vaar og Vinter føre Krig</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="153-156"/>
+  <title>Vinter og Vaar</title>
+  <firstline>Vaar og Vinter føre Krig</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="153-156"/>
 </head>
 <body>
 <poetry>
@@ -5164,10 +5162,10 @@ Solen er paa Vaarens Side!
 
 <text id="richardt2019073141">
 <head>
-    <title>Drot og Folk</title>
-    <firstline>I gamle Dage, er det os fortalt</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="156-157"/>
+  <title>Drot og Folk</title>
+  <firstline>I gamle Dage, er det os fortalt</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="156-157"/>
 </head>
 <body>
 <poetry>
@@ -5190,10 +5188,10 @@ det var dog vist med Sorgløshed at rutte.
 
 <text id="richardt2019073142">
 <head>
-    <title>Nattergalen</title>
-    <firstline>Hvor hun dog iaftes silde</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="157"/>
+  <title>Nattergalen</title>
+  <firstline>Hvor hun dog iaftes silde</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="157"/>
 </head>
 <body>
 <poetry>
@@ -5222,18 +5220,18 @@ helst i Skygge Dagen lang!
 
 <section id="richardt2019073143" level="3">
 <head>
-    <title>Billed-Texter</title>
-    <toctitle>Billedtexter 1-5</toctitle>
-    <subtitle>Til givne Tegninger</subtitle>
+  <title>Billed-Texter</title>
+  <toctitle>Billedtexter 1-5</toctitle>
+  <subtitle>Til givne Tegninger</subtitle>
 </head>
 <content>
 
 <text id="richardt2019073144">
 <head>
-    <title><num>I.</num>Nisse-Frieri</title>
-    <firstline>Far Niss, Far Niss! her ligger jeg</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="158-160"/>
+  <title><num>I.</num>Nisse-Frieri</title>
+  <firstline>Far Niss, Far Niss! her ligger jeg</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="158-160"/>
 </head>
 <body>
 <poetry>
@@ -5307,10 +5305,10 @@ at vi forstaar at drille!
 
 <text id="richardt2019073145">
 <head>
-    <title><num>II.</num>Hund og Krage</title>
-    <firstline>Snap, med et lækkert Been belæsset</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="160-161"/>
+  <title><num>II.</num>Hund og Krage</title>
+  <firstline>Snap, med et lækkert Been belæsset</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="160-161"/>
 </head>
 <body>
 <poetry>
@@ -5355,10 +5353,10 @@ Du har jo fire Been endnu!«
 
 <text id="richardt2019073146">
 <head>
-    <title>Tamt og vildt</title>
-    <firstline>Padre Giuseppe, han er ikke magelig</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="162-164"/>
+  <title>Tamt og vildt</title>
+  <firstline>Padre Giuseppe, han er ikke magelig</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="162-164"/>
 </head>
 <body>
 <poetry>
@@ -5446,13 +5444,13 @@ og saadan slap vor Padre af sin Klemme.
 
 <text id="richardt2006052502">
 <head>
-    <title><num>IV.</num>Naar jeg bli'r stor</title>
-    <firstline>Naar jeg bli'r stor</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <notes>
-        <note type="credits">Bidrag fra Thomas Richardt.<!-- Oprindeligt efter <i>Digte for Børn</i> (1895), Gyldendalske Boghandel, 1908.--></note>
-   </notes>
-    <source pages="164-165"/>
+  <title><num>IV.</num>Naar jeg bli'r stor</title>
+  <firstline>Naar jeg bli'r stor</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <notes>
+    <note type="credits">Bidrag fra Thomas Richardt.<!-- Oprindeligt efter <i>Digte for Børn</i> (1895), Gyldendalske Boghandel, 1908.--></note>
+  </notes>
+  <source pages="164-165"/>
 </head>
 <body>
 <poetry>
@@ -5496,10 +5494,10 @@ saa <i>vil</i> jeg ikke ha' Buxer paa!«
 
 <text id="richardt2019073148">
 <head>
-    <title><num>V.</num>Pigen med Katten</title>
-    <firstline>Naar kun hun har sin store røde</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="166"/>
+  <title><num>V.</num>Pigen med Katten</title>
+  <firstline>Naar kun hun har sin store røde</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="166"/>
 </head>
 <body>
 <poetry>
@@ -5529,10 +5527,10 @@ paa <i>ham</i> hun har sin første Ømhed ødet,
 
 <text id="richardt2019073149">
 <head>
-    <title>Møllen og Kirken</title>
-    <firstline>Jeg veed et Sted i Lunden</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="167-168"/>
+  <title>Møllen og Kirken</title>
+  <firstline>Jeg veed et Sted i Lunden</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="167-168"/>
 </head>
 <body>
 <poetry>
@@ -5577,10 +5575,10 @@ som Tid og Evighed.
 
 <text id="richardt2019073150" variant="richardt2000062501">
 <head>
-    <title>I Høst</title>
-    <firstline>En stille, høstlig Brusen</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="168-170"/>
+  <title>I Høst</title>
+  <firstline>En stille, høstlig Brusen</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="168-170"/>
 </head>
 <body>
 <poetry>
@@ -5637,10 +5635,10 @@ bring Hjertet Fred og Trøst!
 
 <text id="richardt2019073151">
 <head>
-    <title>Korn i Hus</title>
-    <firstline>Stormen jog</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="170-173"/>
+  <title>Korn i Hus</title>
+  <firstline>Stormen jog</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="170-173"/>
 </head>
 <body>
 <poetry>
@@ -5751,10 +5749,10 @@ og sank engang os i din Lade!
 
 <text id="richardt2019073152">
 <head>
-    <title>Ved Allehelgenstid</title>
-    <firstline>Stærkt det gaar mod Allehelgen</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="173-175"/>
+  <title>Ved Allehelgenstid</title>
+  <firstline>Stærkt det gaar mod Allehelgen</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="173-175"/>
 </head>
 <body>
 <poetry>
@@ -5810,10 +5808,10 @@ og en evig Sommer bære!
 
 <text id="richardt2019073153">
 <head>
-    <title>Vierwaldstädter-Søen</title>
-    <firstline>Jeg saae Dig i Dagens fulde Glans</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="175-176"/>
+  <title>Vierwaldstädter-Søen</title>
+  <firstline>Jeg saae Dig i Dagens fulde Glans</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="175-176"/>
 </head>
 <body>
 <poetry>
@@ -5846,10 +5844,10 @@ med Vaar i Vinterens Billed!
 
 <text id="richardt2019073154">
 <head>
-    <title>Kamar</title>
-    <firstline>Ved Syriens mørkeblaa Middelhavs-Strand</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="176-178"/>
+  <title>Kamar</title>
+  <firstline>Ved Syriens mørkeblaa Middelhavs-Strand</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="176-178"/>
 </head>
 <body>
 <poetry>
@@ -5943,22 +5941,22 @@ Den Dumrian! den Morian! hvor, hvor blev han af?
 
 <section level="3">
 <head>
-    <title>Fest-Sange</title>
-    <toctitle>Festsange 1-4</toctitle>
+  <title>Fest-Sange</title>
+  <toctitle>Festsange 1-4</toctitle>
 </head>
 <content>
 
 <text id="richardt2019073156">
 <head>
-    <title><num>I.</num>Til H. C. Andersen</title>
-    <subtitle>2. April 1875</subtitle>
-    <firstline>Et Leve for Helten af anden April</firstline>
-    <dates>
-        <event>1875-04-02</event>
-    </dates>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="179-180"/>
-    <keywords>andersen</keywords>
+  <title><num>I.</num>Til H. C. Andersen</title>
+  <subtitle>2. April 1875</subtitle>
+  <firstline>Et Leve for Helten af anden April</firstline>
+  <dates>
+    <event>1875-04-02</event>
+  </dates>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="179-180"/>
+  <keywords>andersen</keywords>
 </head>
 <body>
 <poetry>
@@ -6002,14 +6000,14 @@ Gud glæde din Alderdoms Dage!
 
 <text id="richardt2019073157">
 <head>
-    <title><num>II.</num>Ved Indvielsen af N. Zahles Skoler</title>
-    <subtitle>10. Oktober 1877.</subtitle>
-    <firstline>For Barn og for Jomfru paa Barndommens Skjel</firstline>
-    <dates>
-        <event>1877-10-10</event>
-    </dates>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="180-181"/>
+  <title><num>II.</num>Ved Indvielsen af N. Zahles Skoler</title>
+  <subtitle>10. Oktober 1877.</subtitle>
+  <firstline>For Barn og for Jomfru paa Barndommens Skjel</firstline>
+  <dates>
+    <event>1877-10-10</event>
+  </dates>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="180-181"/>
 </head>
 <body>
 <poetry>
@@ -6050,14 +6048,14 @@ og dybest en Bøn, at han fører det ud,
 
 <text id="richardt2019073158">
 <head>
-    <title><num>III.</num>Ved Præsten P. A. Fengers Embeds-Jubilæum</title>
-    <subtitle>15. Juli 1877.</subtitle>
-    <firstline>I Livets Gry Du fandt din Herre</firstline>
-    <dates>
-        <event>1877-07-15</event>
-    </dates>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="182-183"/>
+  <title><num>III.</num>Ved Præsten P. A. Fengers Embeds-Jubilæum</title>
+  <subtitle>15. Juli 1877.</subtitle>
+  <firstline>I Livets Gry Du fandt din Herre</firstline>
+  <dates>
+    <event>1877-07-15</event>
+  </dates>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="182-183"/>
 </head>
 <body>
 <poetry>
@@ -6101,14 +6099,14 @@ med den, Sankt Stefans Øje saae!
 
 <text id="richardt2019073159">
 <head>
-    <title><num>IV.</num>Til Santal-Missionæren H. P. Børresen</title>
-    <subtitle>Ved hans Afrejse 21. Novbr. 1877.</subtitle>
-    <firstline>Du, som i din Barndoms Dage</firstline>
-    <dates>
-        <event>1877-11-21</event>
-    </dates>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="183-184"/>
+  <title><num>IV.</num>Til Santal-Missionæren H. P. Børresen</title>
+  <subtitle>Ved hans Afrejse 21. Novbr. 1877.</subtitle>
+  <firstline>Du, som i din Barndoms Dage</firstline>
+  <dates>
+    <event>1877-11-21</event>
+  </dates>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="183-184"/>
 </head>
 <body>
 <poetry>
@@ -6160,10 +6158,10 @@ i det store Englekor!
 
 <text id="richardt2019073160">
 <head>
-    <title>Mumie-Kornet</title>
-    <firstline>I Pyramidens gamle Mumie-Grav</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="185-186"/>
+  <title>Mumie-Kornet</title>
+  <firstline>I Pyramidens gamle Mumie-Grav</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="185-186"/>
 </head>
 <body>
 <poetry>
@@ -6200,10 +6198,10 @@ og dø som den, der visselig skal leve!
 
 <text id="richardt2019073161">
 <head>
-    <title>Spørgsmaal</title>
-    <firstline>I som sige: der er ingen</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="186-187"/>
+  <title>Spørgsmaal</title>
+  <firstline>I som sige: der er ingen</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="186-187"/>
 </head>
 <body>
 <poetry>
@@ -6248,10 +6246,10 @@ uden Synd? og uden Naade?
 
 <text id="richardt2019073162">
 <head>
-    <title>Den trange Vej</title>
-    <firstline>Hvorfor er Vejen vel saa smal</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="187-188"/>
+  <title>Den trange Vej</title>
+  <firstline>Hvorfor er Vejen vel saa smal</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="187-188"/>
 </head>
 <body>
 <poetry>
@@ -6280,10 +6278,10 @@ min Gud, og saa mit Hjertes Tro.
 
 <text id="richardt2019073163">
 <head>
-    <title>Gjertrud Rask</title>
-    <firstline>Hvem var hun? Hans Egedes</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="188-191"/>
+  <title>Gjertrud Rask</title>
+  <firstline>Hvem var hun? Hans Egedes</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="188-191"/>
 </head>
 <body>
 <poetry>
@@ -6382,10 +6380,10 @@ ham elsker jeg i Eder.
 
 <text id="richardt2019073164">
 <head>
-    <title>Glem og husk!</title>
-    <firstline>Glem Døden, naar det gaar tilstorms</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="191-192"/>
+  <title>Glem og husk!</title>
+  <firstline>Glem Døden, naar det gaar tilstorms</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="191-192"/>
 </head>
 <body>
 <poetry>
@@ -6424,10 +6422,10 @@ den Indskrift: Glem ej Døden!
 
 <text id="richardt2019073165">
 <head>
-    <title>Effata!</title>
-    <firstline>Effata!</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="192-193"/>
+  <title>Effata!</title>
+  <firstline>Effata!</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="192-193"/>
 </head>
 <body>
 <poetry>
@@ -6476,10 +6474,10 @@ i et sødt Halleluja!
 
 <text id="richardt2019073166">
 <head>
-    <title>Træet og Grenene</title>
-    <firstline>Gak ud i Skovens Hal, betragt dens Stammer!</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="193-194"/>
+  <title>Træet og Grenene</title>
+  <firstline>Gak ud i Skovens Hal, betragt dens Stammer!</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="193-194"/>
 </head>
 <body>
 <poetry>
@@ -6523,10 +6521,10 @@ I <i>ham</i> og udaf ham vi Frugter bære:
 
 <text id="richardt2019073167">
 <head>
-    <title>Bethanien</title>
-    <firstline>Paa Oliebjergets jevne Skrænt</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="195-197"/>
+  <title>Bethanien</title>
+  <firstline>Paa Oliebjergets jevne Skrænt</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="195-197"/>
 </head>
 <body>
 <poetry>
@@ -6605,12 +6603,12 @@ den lukker op for Naaden.
 
 <text id="richardt2019073168">
 <head>
-    <title>»Asenindens Føl«</title>
-    <linktitle>Asenindens Føl</linktitle>
-    <indextitle>Asenindens Føl</indextitle>
-    <firstline>De flokkedes omkring Ham</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="197-199"/>
+  <title>»Asenindens Føl«</title>
+  <linktitle>Asenindens Føl</linktitle>
+  <indextitle>Asenindens Føl</indextitle>
+  <firstline>De flokkedes omkring Ham</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="197-199"/>
 </head>
 <body>
 <poetry>
@@ -6700,10 +6698,10 @@ af Asenindens Fole?
 
 <text id="richardt2019073169">
 <head>
-    <title>Røveren paa Korset</title>
-    <firstline>Trindtom der høres Spottesange</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="199-200"/>
+  <title>Røveren paa Korset</title>
+  <firstline>Trindtom der høres Spottesange</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="199-200"/>
 </head>
 <body>
 <poetry>
@@ -6747,10 +6745,10 @@ at ogsaa jeg hos Dig skal bo!
 
 <text id="richardt2019073170">
 <head>
-    <title>Vasen</title>
-    <firstline>En Kunstner stod engang ved Smelteovnen</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="201-204"/>
+  <title>Vasen</title>
+  <firstline>En Kunstner stod engang ved Smelteovnen</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="201-204"/>
 </head>
 <body>
 <poetry>
@@ -6873,10 +6871,10 @@ i <i>Leret</i> vilde Sønnens Billed møde?
 
 <text id="richardt2019073171">
 <head>
-    <title>Spirerne</title>
-    <firstline>I bløde Spirer bag Hegn og Gjærde</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="204-205"/>
+  <title>Spirerne</title>
+  <firstline>I bløde Spirer bag Hegn og Gjærde</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="204-205"/>
 </head>
 <body>
 <poetry>
@@ -6905,13 +6903,13 @@ Han har mod Lyset os Vej bered', -
 
 <text id="richardt2019073172">
 <head>
-    <title>Præstevalget</title>
-    <firstline>I sin Løvhytte sidder den gamle Præst</firstline>
-    <notes>
-        <note>* Digtets Motiv er en kirkehistorisk Anekdote om den Würtembergske Psalmedigter F. F. Hiller († 1769). Sagnet er frit omdigtet.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="205-218"/>
+  <title>Præstevalget</title>
+  <firstline>I sin Løvhytte sidder den gamle Præst</firstline>
+  <notes>
+    <note>* Digtets Motiv er en kirkehistorisk Anekdote om den Würtembergske Psalmedigter F. F. Hiller († 1769). Sagnet er frit omdigtet.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="205-218"/>
 </head>
 <body>
 <poetry>
@@ -7296,10 +7294,10 @@ vidt ud over Neckars Strande.
 
 <text id="richardt2019073173">
 <head>
-    <title>Vinterens Begravelse</title>
-    <firstline>Det er saa yndig en Foraarsdag</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="218-220"/>
+  <title>Vinterens Begravelse</title>
+  <firstline>Det er saa yndig en Foraarsdag</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="218-220"/>
 </head>
 <body>
 <poetry>
@@ -7375,14 +7373,14 @@ for nu er Vintren død, død.
 
 <text id="richardt2019073174">
 <head>
-    <title>Et Møde i Rom</title>
-    <subtitle>Aar 1510.</subtitle>
-    <firstline>For Mariekirkens Alter</firstline>
-    <notes>
-        <note>* For Digtningen ligger ingen historisk Efterretning til Grund, - men vel en historisk Mulighed.</note>
-    </notes>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="220-239"/>
+  <title>Et Møde i Rom</title>
+  <subtitle>Aar 1510.</subtitle>
+  <firstline>For Mariekirkens Alter</firstline>
+  <notes>
+    <note>* For Digtningen ligger ingen historisk Efterretning til Grund, - men vel en historisk Mulighed.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="220-239"/>
 </head>
 <body>
 <poetry>
@@ -7974,11 +7972,11 @@ I skal være med at præd'ke
 
 <text id="richardt2019073175">
 <head>
-    <title>For Kjøbenhavns Universitet</title>
-    <subtitle>4. Juni 1879</subtitle>
-    <firstline>Frostnatten ruged over Aandens Sletter</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="239-244"/>
+  <title>For Kjøbenhavns Universitet</title>
+  <subtitle>4. Juni 1879</subtitle>
+  <firstline>Frostnatten ruged over Aandens Sletter</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="239-244"/>
 </head>
 <body>
 <poetry>
@@ -8129,14 +8127,15 @@ graaner af Ælde, men gjemmer Vaar!
 
 <text id="richardt2019073176">
 <head>
-    <title>For Studenterne</title>
-    <subtitle>Ved Studenterfesten paa Klampenborg, 4. Juni 1879</subtitle>
-    <firstline>Vaaren er kommet, og ind hun nu henter</firstline>
-    <dates>
-        <event>1879-06-04</event>
-    </dates>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="244-245"/>
+  <title>For Studenterne</title>
+  <subtitle>Ved Studenterfesten paa Klampenborg, 4. Juni 1879</subtitle>
+  <firstline>Vaaren er kommet, og ind hun nu henter</firstline>
+  <dates>
+    <event>1879-06-04</event>
+  </dates>
+  <keywords>oersted</keywords>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="244-245"/>
 </head>
 <body>
 <poetry>
@@ -8181,17 +8180,17 @@ Skaal nu for Danmarks Studenter!
 
 <text id="richardt2019073177">
 <head>
-    <title>Ved Promotionsfesten</title>
-    <subtitle>
-        <line>5. Juni 1879.</line>
-        <line>Musiken af Niels W. Gade.</line>
-    </subtitle>
-    <firstline>Aldrig din higende Attraa Du stiller</firstline>
-    <dates>
-        <event>1879-06-05</event>
-    </dates>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="245-250"/>
+  <title>Ved Promotionsfesten</title>
+  <subtitle>
+    <line>5. Juni 1879.</line>
+    <line>Musiken af Niels W. Gade.</line>
+  </subtitle>
+  <firstline>Aldrig din higende Attraa Du stiller</firstline>
+  <dates>
+    <event>1879-06-05</event>
+  </dates>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="245-250"/>
 </head>
 <body>
 <poetry>
@@ -8325,10 +8324,10 @@ Og, synes stundum Svar mod Svar at glamme,
 
 <text id="richardt2019073179">
 <head>
-    <title>Theologien</title>
-    <firstline>Det Ord, hun hørte bag Judæas Ranker</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="250"/>
+  <title>Theologien</title>
+  <firstline>Det Ord, hun hørte bag Judæas Ranker</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="250"/>
 </head>
 <body>
 <poetry>
@@ -8350,10 +8349,10 @@ da kjendes det, at Troen flytter Bjerge.
 
 <text id="richardt2019073180">
 <head>
-    <title>Retsvidenskaben</title>
-    <firstline>Skjøndt ammet op i Sydens Marmorsale</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="250"/>
+  <title>Retsvidenskaben</title>
+  <firstline>Skjøndt ammet op i Sydens Marmorsale</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="250"/>
 </head>
 <body>
 <poetry>
@@ -8375,10 +8374,10 @@ og peger tyst paa Loven i vort Hjerte.
 
 <text id="richardt2019073181">
 <head>
-    <title>Lægevidenskaben</title>
-    <firstline>En Vingaardsmø med arbejdsvante Hænder</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="251"/>
+  <title>Lægevidenskaben</title>
+  <firstline>En Vingaardsmø med arbejdsvante Hænder</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="251"/>
 </head>
 <body>
 <poetry>
@@ -8401,10 +8400,10 @@ da planter Troen sine Kors paa Graven.
 
 <text id="richardt2019073182">
 <head>
-    <title>Filosofien</title>
-    <firstline>Ad Tidens Strøm, hvis Kyster hun vil tegne</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="251-252"/>
+  <title>Filosofien</title>
+  <firstline>Ad Tidens Strøm, hvis Kyster hun vil tegne</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="251-252"/>
 </head>
 <body>
 <poetry>
@@ -8426,10 +8425,10 @@ Men, øjner hun, hvor Livets Kilder springe,
 
 <text id="richardt2019073183">
 <head>
-    <title>Naturvidenskaben</title>
-    <firstline>Hun, vort Aarhundreds kjække Yndlings-Terne</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="252"/>
+  <title>Naturvidenskaben</title>
+  <firstline>Hun, vort Aarhundreds kjække Yndlings-Terne</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="252"/>
 </head>
 <body>
 <poetry>
@@ -8451,10 +8450,10 @@ dog er det Skaberen, hvis Værk hun lover,
 
 <text id="richardt2019073184">
 <head>
-    <title>Slutnings-Kor</title>
-    <firstline>Her saa' vi gjennem Kundskabs Glar</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="252-253"/>
+  <title>Slutnings-Kor</title>
+  <firstline>Her saa' vi gjennem Kundskabs Glar</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="252-253"/>
 </head>
 <body>
 <poetry>
@@ -8473,10 +8472,10 @@ saa vist al Sandheds Gud er <i>en!</i>
 
 <text id="richardt2019073185">
 <head>
-    <title>Sverig-Norges Universiteter</title>
-    <firstline>Tre Fyr i høje Nord er sat</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="253-254"/>
+  <title>Sverig-Norges Universiteter</title>
+  <firstline>Tre Fyr i høje Nord er sat</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="253-254"/>
 </head>
 <body>
 <poetry>
@@ -8521,14 +8520,14 @@ er revet ud af Mørke!
 
 <text id="richardt2019073186">
 <head>
-    <title>Ved Studenter-Sangforeningens Fest</title>
-    <subtitle>16. December 1879.</subtitle>
-    <firstline>Herlige Sang</firstline>
-    <dates>
-        <event>1879-12-16</event>
-    </dates>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="254-258"/>
+  <title>Ved Studenter-Sangforeningens Fest</title>
+  <subtitle>16. December 1879.</subtitle>
+  <firstline>Herlige Sang</firstline>
+  <dates>
+    <event>1879-12-16</event>
+  </dates>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="254-258"/>
 </head>
 <body>
 <poetry>
@@ -8656,11 +8655,11 @@ en sagnrig Oldtid fast til Nutid binder.
 
 <text id="richardt2019073187">
 <head>
-    <title>Ved Indvielsen af Fredericias nye Skolebygning</title>
-    <subtitle>28. September 1880.</subtitle>
-    <firstline>Hil Dig vor gamle Skole</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="258-259"/>
+  <title>Ved Indvielsen af Fredericias nye Skolebygning</title>
+  <subtitle>28. September 1880.</subtitle>
+  <firstline>Hil Dig vor gamle Skole</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="258-259"/>
 </head>
 <body>
 <poetry>
@@ -8714,11 +8713,11 @@ i Herrens Varetægt!
 
 <text id="richardt2019073188">
 <head>
-    <title>Danmark</title>
-    <subtitle>Foraaret 1879.</subtitle>
-    <firstline>Du Land fra Oldtids Dage</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="260-261"/>
+  <title>Danmark</title>
+  <subtitle>Foraaret 1879.</subtitle>
+  <firstline>Du Land fra Oldtids Dage</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="260-261"/>
 </head>
 <body>
 <poetry>
@@ -8763,11 +8762,11 @@ bevar vort gamle Land!
 
 <text id="richardt2019073189">
 <head>
-    <title>Paragraf 5</title>
-    <subtitle>Vinteren 1879.</subtitle>
-    <firstline>De sletted ud en Paragraf</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="261"/>
+  <title>Paragraf 5</title>
+  <subtitle>Vinteren 1879.</subtitle>
+  <firstline>De sletted ud en Paragraf</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="261"/>
 </head>
 <body>
 <poetry>
@@ -8791,12 +8790,12 @@ skal Herren smedde Hævnersværd!
 
 <text id="richardt2019073190">
 <head>
-    <title>Carl Ploug</title>
-    <subtitle>1829-79</subtitle>
-    <firstline>Jylland, Jylland var hans Vugge</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="262-263"/>
-    <keywords>plough</keywords>
+  <title>Carl Ploug</title>
+  <subtitle>1829-79</subtitle>
+  <firstline>Jylland, Jylland var hans Vugge</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="262-263"/>
+  <keywords>plough</keywords>
 </head>
 <body>
 <poetry>
@@ -8869,12 +8868,12 @@ tro mod det Banner, han hylded som Svend.
 
 <text id="richardt2019073191">
 <head>
-    <title>C. Hostrup</title>
-    <subtitle>Juni 1880.</subtitle>
-    <firstline>En Sangspildigter - bort til Præste-Pligter!</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="264-266"/>
-    <keywords>hostrup</keywords>
+  <title>C. Hostrup</title>
+  <subtitle>Juni 1880.</subtitle>
+  <firstline>En Sangspildigter - bort til Præste-Pligter!</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="264-266"/>
+  <keywords>hostrup</keywords>
 </head>
 <body>
 <poetry>
@@ -8966,14 +8965,14 @@ Gud give ham en varm og lys September!
 
 <text id="richardt2019073192">
 <head>
-    <title>Ved Helligaands-Kirkens Fornyelse</title>
-    <subtitle>6. Maj 1880.</subtitle>
-    <firstline>Spiret blinker højt i Sky</firstline>
-    <dates>
-        <event>1880-05-06</event>
-    </dates>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="266-268"/>
+  <title>Ved Helligaands-Kirkens Fornyelse</title>
+  <subtitle>6. Maj 1880.</subtitle>
+  <firstline>Spiret blinker højt i Sky</firstline>
+  <dates>
+    <event>1880-05-06</event>
+  </dates>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="266-268"/>
 </head>
 <body>
 <poetry>
@@ -9043,15 +9042,15 @@ tjene Dig i Liv og Død!
 
 <text id="richardt2019073193">
 <head>
-    <suptitle>Til</suptitle>
-    <title>H. L. Martensen</title>
-    <subtitle>15. April 1879</subtitle>
-    <firstline>Det stormer over Verdens Strand</firstline>
-    <dates>
-        <event>1879-04-15</event>
-    </dates>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="268-270"/>
+  <suptitle>Til</suptitle>
+  <title>H. L. Martensen</title>
+  <subtitle>15. April 1879</subtitle>
+  <firstline>Det stormer over Verdens Strand</firstline>
+  <dates>
+    <event>1879-04-15</event>
+  </dates>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="268-270"/>
 </head>
 <body>
 <poetry>
@@ -9100,22 +9099,22 @@ en Kveld som hin i Emaus!
 
 <section level="3">
 <head>
-    <title>Mindesange</title>
-    <toctitle>Mindesange 1-3</toctitle>
+  <title>Mindesange</title>
+  <toctitle>Mindesange 1-3</toctitle>
 </head>
 <content>
 
 <text id="richardt2019073195">
 <head>
-    <title>† Rudolf Frimodt</title>
-    <indextitle>Rudolf Frimodt</indextitle>
-    <subtitle>21. Marts 1879.</subtitle>
-    <firstline>Hyrde var han, en af dem</firstline>
-    <dates>
-        <event>1879-03-21</event>
-    </dates>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="271-272"/>
+  <title>† Rudolf Frimodt</title>
+  <indextitle>Rudolf Frimodt</indextitle>
+  <subtitle>21. Marts 1879.</subtitle>
+  <firstline>Hyrde var han, en af dem</firstline>
+  <dates>
+    <event>1879-03-21</event>
+  </dates>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="271-272"/>
 </head>
 <body>
 <poetry>
@@ -9166,16 +9165,16 @@ Sank os, Synd og Død til Trods!
 
 <text id="richardt2019073196">
 <head>
-    <title>† Gotfred Benjamin Rode</title>
-    <subtitle>12. September 1878.</subtitle>
-    <indextitle>Gotfred Benjamin Rode</indextitle>
-    <firstline>Kun Natten hørte Sukket</firstline>
-    <dates>
-        <event>1878-09-12</event>
-    </dates>
-    <quality>korrektur1,kilde,side</quality>
-    <keywords>rodeg</keywords>
-    <source pages="273-274"/>
+  <title>† Gotfred Benjamin Rode</title>
+  <subtitle>12. September 1878.</subtitle>
+  <indextitle>Gotfred Benjamin Rode</indextitle>
+  <firstline>Kun Natten hørte Sukket</firstline>
+  <dates>
+    <event>1878-09-12</event>
+  </dates>
+  <quality>korrektur1,kilde,side</quality>
+  <keywords>rodeg</keywords>
+  <source pages="273-274"/>
 </head>
 <body>
 <poetry>
@@ -9220,15 +9219,15 @@ til hellig Takkesang!
 
 <text id="richardt2019073197">
 <head>
-    <title>† Peter Arnold Heise</title>
-    <indextitle>Peter Arnold Heise</indextitle>
-    <subtitle>12. September 1879.</subtitle>
-    <firstline>De tyste Tonestrømme</firstline>
-    <dates>
-        <event>1879-09-12</event>
-    </dates>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="274-275"/>
+  <title>† Peter Arnold Heise</title>
+  <indextitle>Peter Arnold Heise</indextitle>
+  <subtitle>12. September 1879.</subtitle>
+  <firstline>De tyste Tonestrømme</firstline>
+  <dates>
+    <event>1879-09-12</event>
+  </dates>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="274-275"/>
 </head>
 <body>
 <poetry>
@@ -9267,10 +9266,10 @@ med Trøst for Sorg og Savn!
 
 <text id="richardt2019073198">
 <head>
-    <title>Maanebroen</title>
-    <firstline>Maanen lægger sin Straalebro</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="276-277"/>
+  <title>Maanebroen</title>
+  <firstline>Maanen lægger sin Straalebro</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="276-277"/>
 </head>
 <body>
 <poetry>
@@ -9309,10 +9308,10 @@ den gled mod de evige Strande.
 
 <text id="richardt2019073199">
 <head>
-    <title>Hvad hjalp det mig </title>
-    <firstline>Hvad hjalp det mig, om Stjernerne jeg kjendte</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="277-278"/>
+  <title>Hvad hjalp det mig </title>
+  <firstline>Hvad hjalp det mig, om Stjernerne jeg kjendte</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="277-278"/>
 </head>
 <body>
 <poetry>
@@ -9345,10 +9344,10 @@ Steentavlens Trusel smelter hen i Trøst!
 
 <text id="richardt20190731100">
 <head>
-    <title>Christus-Troen</title>
-    <firstline>Tro, som overvinder Alt!</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="278-279"/>
+  <title>Christus-Troen</title>
+  <firstline>Tro, som overvinder Alt!</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="278-279"/>
 </head>
 <body>
 <poetry>
@@ -9402,10 +9401,10 @@ og bebud os Paaskesolen!
 
 <text id="richardt20190731101">
 <head>
-    <title>Bøn og Arbejd!</title>
-    <firstline>Kommer det end ej til Knælen</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="279-281"/>
+  <title>Bøn og Arbejd!</title>
+  <firstline>Kommer det end ej til Knælen</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="279-281"/>
 </head>
 <body>
 <poetry>
@@ -9459,10 +9458,10 @@ Midt i Arbejdsdagens Hede
 
 <text id="richardt20190731102">
 <head>
-    <title>Kjærlighed</title>
-    <firstline>Kjærlighed er Lovens Fylde</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="281-282"/>
+  <title>Kjærlighed</title>
+  <firstline>Kjærlighed er Lovens Fylde</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="281-282"/>
 </head>
 <body>
 <poetry>
@@ -9491,10 +9490,10 @@ kjender kun af Vintren Hvilen,
 
 <text id="richardt20190731103">
 <head>
-    <title>Matthæus</title>
-    <firstline>Hvor Bjerg og Bølge knyttes</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="282-283"/>
+  <title>Matthæus</title>
+  <firstline>Hvor Bjerg og Bølge knyttes</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="282-283"/>
 </head>
 <body>
 <poetry>
@@ -9557,10 +9556,10 @@ til Lys og Liv og Fred!
 
 <text id="richardt20190731104">
 <head>
-    <title>Paulus i Cæsarea</title>
-    <firstline>Paulus er i Baand og Lænker</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="284-289"/>
+  <title>Paulus i Cæsarea</title>
+  <firstline>Paulus er i Baand og Lænker</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="284-289"/>
 </head>
 <body>
 <poetry>
@@ -9731,10 +9730,10 @@ i et Hjerte fæster Rod.
 
 <text id="richardt20190731105">
 <head>
-    <title>Ydre Mission</title>
-    <firstline>Naar Svenden gaar i Kampen</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="289-290"/>
+  <title>Ydre Mission</title>
+  <firstline>Naar Svenden gaar i Kampen</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="289-290"/>
 </head>
 <body>
 <poetry>
@@ -9788,10 +9787,10 @@ vi er med <i>dem</i> i Pagt!
 
 <text id="richardt20190731106">
 <head>
-    <title>Indre Mission</title>
-    <firstline>I Herrens Vingaards-Svende</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="290-292"/>
+  <title>Indre Mission</title>
+  <firstline>I Herrens Vingaards-Svende</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="290-292"/>
 </head>
 <body>
 <poetry>
@@ -9845,10 +9844,10 @@ os Smaa i Arbejdsflokken!
 
 <text id="richardt20190731107">
 <head>
-    <title>Spejling</title>
-    <firstline>Naar Midsommersolens Straaler</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="292-293"/>
+  <title>Spejling</title>
+  <firstline>Naar Midsommersolens Straaler</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="292-293"/>
 </head>
 <body>
 <poetry>
@@ -9884,13 +9883,13 @@ kan vorde Guds Naades Spejl.
 
 <text id="richardt20190731108">
 <head>
-    <title>»Foraar begynder«</title>
-    <indextitle>Foraar begynder</indextitle>
-    <linktitle>Foraar begynder</linktitle>
-    <subtitle>1879.</subtitle>
-    <firstline>Jeg længes efter Foraar!</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="293-295"/>
+  <title>»Foraar begynder«</title>
+  <indextitle>Foraar begynder</indextitle>
+  <linktitle>Foraar begynder</linktitle>
+  <subtitle>1879.</subtitle>
+  <firstline>Jeg længes efter Foraar!</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="293-295"/>
 </head>
 <body>
 <poetry>
@@ -9963,10 +9962,10 @@ foran Velsignelsen!
 
 <text id="richardt20190731109">
 <head>
-    <title>Børn</title>
-    <firstline>Hvor kan et Barn dog glæde sig</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="295-297"/>
+  <title>Børn</title>
+  <firstline>Hvor kan et Barn dog glæde sig</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="295-297"/>
 </head>
 <body>
 <poetry>
@@ -10020,17 +10019,17 @@ som Dammens stille Glar.
 
 <section level="3">
 <head>
-    <title>Af en Opera</title>
-    <toctitle>Af en Opera 1-3</toctitle>
+  <title>Af en Opera</title>
+  <toctitle>Af en Opera 1-3</toctitle>
 </head>
 <content>
 
 <text id="richardt20190731111">
 <head>
-    <title><num>I.</num>Laugenes Fanetog</title>
-    <firstline>Hvem bygger Ridderen en Borg?</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="297-299"/>
+  <title><num>I.</num>Laugenes Fanetog</title>
+  <firstline>Hvem bygger Ridderen en Borg?</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="297-299"/>
 </head>
 <body>
 <poetry>
@@ -10109,10 +10108,10 @@ og sjunger om sin Manddomsfærd,
 
 <text id="richardt20190731112">
 <head>
-    <title><num>II.</num>Sang</title>
-    <firstline>Jeg fanged engang en ædel Falk</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="299-300"/>
+  <title><num>II.</num>Sang</title>
+  <firstline>Jeg fanged engang en ædel Falk</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="299-300"/>
 </head>
 <body>
 <poetry>
@@ -10142,10 +10141,10 @@ jeg tæmmer vel ogsaa hende!
 
 <text id="richardt20190731113">
 <head>
-    <title><num>III.</num>I Kongens Kjøkken</title>
-    <firstline>Brygge, bage, koge, smage</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="300-302"/>
+  <title><num>III.</num>I Kongens Kjøkken</title>
+  <firstline>Brygge, bage, koge, smage</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="300-302"/>
 </head>
 <body>
 <poetry>
@@ -10218,10 +10217,10 @@ Og Kokkene har vasket sig?
 
 <text id="richardt20190731114">
 <head>
-    <title>Fyens Hegn</title>
-    <firstline>Der vinder sig om Fyens Land</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="303-305"/>
+  <title>Fyens Hegn</title>
+  <firstline>Der vinder sig om Fyens Land</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="303-305"/>
 </head>
 <body>
 <poetry>
@@ -10293,10 +10292,10 @@ det rette grønne Fyen.
 
 <text id="richardt20190731115">
 <head>
-    <title>Uglen og Smaafuglene</title>
-    <firstline>Jeg er Visdommens Fugl!</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="305-307"/>
+  <title>Uglen og Smaafuglene</title>
+  <firstline>Jeg er Visdommens Fugl!</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="305-307"/>
 </head>
 <body>
 <poetry>
@@ -10359,10 +10358,10 @@ da spared Du vist din Vredes Ild!
 
 <text id="richardt20190731116">
 <head>
-    <title>Mit Piletræ</title>
-    <firstline>Mit Piletræ, Du fryder mig</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="307-308"/>
+  <title>Mit Piletræ</title>
+  <firstline>Mit Piletræ, Du fryder mig</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="307-308"/>
 </head>
 <body>
 <poetry>
@@ -10401,10 +10400,10 @@ seet Nedgangs-Timen sammen!
 
 <text id="richardt20190731117">
 <head>
-    <title>Herodes' Død</title>
-    <firstline>Om Jericho de sidste Straaler sank</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="308-311"/>
+  <title>Herodes' Død</title>
+  <firstline>Om Jericho de sidste Straaler sank</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="308-311"/>
 </head>
 <body>
 <poetry>
@@ -10509,11 +10508,11 @@ Ved <i>Mariamnes</i> Navn hans Øjne briste.
 
 <text id="richardt20190731118">
 <head>
-    <title>I Bergen</title>
-    <subtitle>Et Blad af Kong Christierns Saga</subtitle>
-    <firstline>Om Bryggen er der Tummel og Markedsliv og Støj</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="311-322"/>
+  <title>I Bergen</title>
+  <subtitle>Et Blad af Kong Christierns Saga</subtitle>
+  <firstline>Om Bryggen er der Tummel og Markedsliv og Støj</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="311-322"/>
 </head>
 <body>
 <poetry>
@@ -10851,10 +10850,10 @@ hvad kan jeg for, at han er Drot!
 
 <text id="richardt20190731119">
 <head>
-    <title>Mand overbord</title>
-    <firstline>Gyngende skød sig Briggen</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="322-330"/>
+  <title>Mand overbord</title>
+  <firstline>Gyngende skød sig Briggen</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="322-330"/>
 </head>
 <body>
 <poetry>
@@ -11108,11 +11107,11 @@ det klang som »Sjæl iland!«
 
 <text id="richardt20190731120">
 <head>
-    <title>Luther i Worms</title>
-    <firstline>For Kejser og Rige staar en Mand</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <keywords>luther</keywords>
-    <source pages="330-334"/>
+  <title>Luther i Worms</title>
+  <firstline>For Kejser og Rige staar en Mand</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <keywords>luther</keywords>
+  <source pages="330-334"/>
 </head>
 <body>
 <poetry>
@@ -11233,14 +11232,14 @@ i Thüringer-Landets Skove.
 
 <text id="richardt20190731121">
 <head>
-    <title>De tvende Taarne</title>
-    <subtitle>
-        <line>Til Danmarks Rigsdag.</line>
-        <line>December 1882.</line>
-    </subtitle>
-    <firstline>Husker I den gamle Sage</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="334-336"/>
+  <title>De tvende Taarne</title>
+  <subtitle>
+    <line>Til Danmarks Rigsdag.</line>
+    <line>December 1882.</line>
+  </subtitle>
+  <firstline>Husker I den gamle Sage</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="334-336"/>
 </head>
 <body>
 <poetry>
@@ -11296,10 +11295,10 @@ skal vi møde Kampens Dag -
 
 <text id="richardt20190731122">
 <head>
-    <title>Hans Kryger</title>
-    <firstline>Hvor Brændingerne hvide</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="336-337"/>
+  <title>Hans Kryger</title>
+  <firstline>Hvor Brændingerne hvide</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="336-337"/>
 </head>
 <body>
 <poetry>
@@ -11344,11 +11343,11 @@ hvor længst har været Flod!
 
 <text id="richardt20190731123">
 <head>
-    <title>Steen Steensen Blicher</title>
-    <firstline>Du Landmand, Skytte, Landsbypræst</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="337-339"/>
-    <keywords>blicher</keywords>
+  <title>Steen Steensen Blicher</title>
+  <firstline>Du Landmand, Skytte, Landsbypræst</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="337-339"/>
+  <keywords>blicher</keywords>
 </head>
 <body>
 <poetry>
@@ -11417,11 +11416,11 @@ for Laugets yngste Skole.
 
 <text id="richardt20190731124">
 <head>
-    <title>N. F. S. Grundtvig</title>
-    <firstline>Den Grundtvig, som i Anno Ti</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="339-343"/>
-    <keywords>grundtvig</keywords>
+  <title>N. F. S. Grundtvig</title>
+  <firstline>Den Grundtvig, som i Anno Ti</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="339-343"/>
+  <keywords>grundtvig</keywords>
 </head>
 <body>
 <poetry>
@@ -11539,18 +11538,18 @@ og Norden ingen flere!
 
 <section level="3">
 <head>
-    <title>Foraar</title>
-    <toctitle>Foraar 1-7</toctitle>
-    <subtitle>Variationer over et gammelt Thema</subtitle>
+  <title>Foraar</title>
+  <toctitle>Foraar 1-7</toctitle>
+  <subtitle>Variationer over et gammelt Thema</subtitle>
 </head>
 <content>
 
 <text id="richardt20190731126">
 <head>
-    <title><num>I.</num>Bebudelse</title>
-    <firstline>Der fløjter en Solsort saa sødt, saa sødt</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="343-344"/>
+  <title><num>I.</num>Bebudelse</title>
+  <firstline>Der fløjter en Solsort saa sødt, saa sødt</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="343-344"/>
 </head>
 <body>
 <poetry>
@@ -11574,10 +11573,10 @@ de synger egentlig om det Samme.
 
 <text id="richardt20190731127">
 <head>
-    <title><num>II.</num>Vaagnende Vaar</title>
-    <firstline>Hvor er det dog en dejlig Tid</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="344-345"/>
+  <title><num>II.</num>Vaagnende Vaar</title>
+  <firstline>Hvor er det dog en dejlig Tid</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="344-345"/>
 </head>
 <body>
 <poetry>
@@ -11635,10 +11634,10 @@ kun bier paa sin Time.
 
 <text id="richardt20190731128">
 <head>
-    <title><num>III.</num>Visne Blade</title>
-    <firstline>I visne Blade, Du tørre Løv</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="346"/>
+  <title><num>III.</num>Visne Blade</title>
+  <firstline>I visne Blade, Du tørre Løv</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="346"/>
 </head>
 <body>
 <poetry>
@@ -11671,10 +11670,10 @@ hos sin Barndoms rynkede Amme.
 
 <text id="richardt20190731129">
 <head>
-    <title><num>IV.</num>Vindenes Værk</title>
-    <firstline>Stormens Konge, Luftens Drot</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="347-348"/>
+  <title><num>IV.</num>Vindenes Værk</title>
+  <firstline>Stormens Konge, Luftens Drot</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="347-348"/>
 </head>
 <body>
 <poetry>
@@ -11727,10 +11726,10 @@ Venter mit Signal!
 
 <text id="richardt20190731130">
 <head>
-    <title><num>V.</num>Gaaet ud</title>
-    <firstline>I Nøddegangen ud mod Hvedemarken</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="348-349"/>
+  <title><num>V.</num>Gaaet ud</title>
+  <firstline>I Nøddegangen ud mod Hvedemarken</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="348-349"/>
 </head>
 <body>
 <poetry>
@@ -11759,10 +11758,10 @@ og paa sin Lykkes Løvværk trøstig væve.
 
 <text id="richardt20190731131">
 <head>
-    <title><num>VI.</num>Forvandling</title>
-    <firstline>Eja, nu er det Foraar</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="349-350"/>
+  <title><num>VI.</num>Forvandling</title>
+  <firstline>Eja, nu er det Foraar</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="349-350"/>
 </head>
 <body>
 <poetry>
@@ -11789,10 +11788,10 @@ Livs-Fornyelsens Elv.
 
 <text id="richardt20190731132">
 <head>
-    <title><num>VII.</num>Vaarens Fylde</title>
-    <firstline>Nu drysser det med fine Dun</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="350-351"/>
+  <title><num>VII.</num>Vaarens Fylde</title>
+  <firstline>Nu drysser det med fine Dun</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="350-351"/>
 </head>
 <body>
 <poetry>
@@ -11846,10 +11845,10 @@ hvor Du er hastig omme!
 
 <text id="richardt20190731133">
 <head>
-    <title>Hvad Tiden fordrer</title>
-    <firstline>Det raabes ud fra hver en Kant</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="351-353"/>
+  <title>Hvad Tiden fordrer</title>
+  <firstline>Det raabes ud fra hver en Kant</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="351-353"/>
 </head>
 <body>
 <poetry>
@@ -11903,10 +11902,10 @@ og den har høje Ordrer.
 
 <text id="richardt20190731134">
 <head>
-    <title>Hvem er Han?</title>
-    <firstline>Hvem er han? spørger Folket</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="353-355"/>
+  <title>Hvem er Han?</title>
+  <firstline>Hvem er han? spørger Folket</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="353-355"/>
 </head>
 <body>
 <poetry>
@@ -11996,10 +11995,10 @@ Guds Salvede! Guds Søn!
 
 <text id="richardt20190731135">
 <head>
-    <title>Derfor!</title>
-    <firstline>Vor Tro, den er vor Fortids Arv</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="356-357"/>
+  <title>Derfor!</title>
+  <firstline>Vor Tro, den er vor Fortids Arv</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="356-357"/>
 </head>
 <body>
 <poetry>
@@ -12062,10 +12061,10 @@ derfor til Korset svor jeg -
 
 <text id="richardt20190731136">
 <head>
-    <title>Salvingen i Bethania</title>
-    <firstline>Hvad har dog Maria fore</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="357-359"/>
+  <title>Salvingen i Bethania</title>
+  <firstline>Hvad har dog Maria fore</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="357-359"/>
 </head>
 <body>
 <poetry>
@@ -12114,21 +12113,21 @@ ofre, hvad vi ofre skal!
 
 <section id="richardt20190731137" level="3">
 <head>
-    <title>Mindesange</title>
-    <toctitle>Mindesange 1-4</toctitle>
+  <title>Mindesange</title>
+  <toctitle>Mindesange 1-4</toctitle>
 </head>
 <content>
 
 <text id="richardt20190731138">
 <head>
-    <suptitle>†</suptitle>
-    <title>Martin Hammerich</title>
-    <toctitle>† Martin Hammerich</toctitle>
-    <linktitle>† Martin Hammerich</linktitle>
-    <subtitle>4. Decbr. 1811 - 20. Septb. 1881.</subtitle>
-    <firstline>Før Stormen slog sit Jævndøgns-Slag</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="359-360"/>
+  <suptitle>†</suptitle>
+  <title>Martin Hammerich</title>
+  <toctitle>† Martin Hammerich</toctitle>
+  <linktitle>† Martin Hammerich</linktitle>
+  <subtitle>4. Decbr. 1811 - 20. Septb. 1881.</subtitle>
+  <firstline>Før Stormen slog sit Jævndøgns-Slag</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="359-360"/>
 </head>
 <body>
 <poetry>
@@ -12179,13 +12178,13 @@ lær Lovsang os at sjunge!
 
 <text id="richardt20190731139">
 <head>
-    <suptitle>†</suptitle>
-    <title>H. L. Martensen</title>
-    <toctitle>† H. L. Martensen</toctitle>
-    <subtitle>19. Aug. 1808 - 3. Febr. 1884.</subtitle>
-    <firstline>Nu drog det Forhæng sig tilside</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="360-362"/>
+  <suptitle>†</suptitle>
+  <title>H. L. Martensen</title>
+  <toctitle>† H. L. Martensen</toctitle>
+  <subtitle>19. Aug. 1808 - 3. Febr. 1884.</subtitle>
+  <firstline>Nu drog det Forhæng sig tilside</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="360-362"/>
 </head>
 <body>
 <poetry>
@@ -12229,12 +12228,12 @@ hver Hyrdestav med Kraft og Fred!
 
 <text id="richardt20190731140">
 <head>
-    <suptitle>Ved Afdækning af Mindestenen for</suptitle>
-    <title>Enkedronning Caroline Amalie</title>
-    <subtitle>(28. Juni. 1882.)</subtitle>
-    <firstline>Saa lyser under Bøgens Grene</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="362"/>
+  <suptitle>Ved Afdækning af Mindestenen for</suptitle>
+  <title>Enkedronning Caroline Amalie</title>
+  <subtitle>(28. Juni. 1882.)</subtitle>
+  <firstline>Saa lyser under Bøgens Grene</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="362"/>
 </head>
 <body>
 <poetry>
@@ -12264,16 +12263,16 @@ om Dronningen paa Sorgenfri!
 
 <text id="richardt20190731141">
 <head>
-    <title>Ved N. F. S. Grundtvigs Hundredaarsfest i Udby</title>
-    <toctitle>N. F. S. Grundtvig</toctitle>
-    <subtitle>(10. Septbr. 1883.)</subtitle>
-    <firstline>Ja her er Grundtvig voxet op</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <dates>
-        <event>1883-09-10</event>
-    </dates>
-    <source pages="363-364"/>
-    <keywords>grundtvig</keywords>
+  <title>Ved N. F. S. Grundtvigs Hundredaarsfest i Udby</title>
+  <toctitle>N. F. S. Grundtvig</toctitle>
+  <subtitle>(10. Septbr. 1883.)</subtitle>
+  <firstline>Ja her er Grundtvig voxet op</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <dates>
+    <event>1883-09-10</event>
+  </dates>
+  <source pages="363-364"/>
+  <keywords>grundtvig</keywords>
 </head>
 <body>
 <poetry>
@@ -12330,11 +12329,11 @@ i Danmarks Kirkeklokke!
 
 <text id="richardt20190731142">
 <head>
-    <title>Ved Missionshuset »Bethanias« Indvielse</title>
-    <subtitle>(Odense - Juni 1883.)</subtitle>
-    <firstline>Lad Verdens-Elven jage</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="364-366"/>
+  <title>Ved Missionshuset »Bethanias« Indvielse</title>
+  <subtitle>(Odense - Juni 1883.)</subtitle>
+  <firstline>Lad Verdens-Elven jage</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="364-366"/>
 </head>
 <body>
 <poetry>
@@ -12388,11 +12387,11 @@ om Hvem det er, vi troer!
 
 <text id="richardt20190731143">
 <head>
-    <title>Tyendeliv</title>
-    <subtitle>(Ved en Belønningsforenings Aarsmøde.)</subtitle>
-    <firstline>Himlens Sol og Stjerneskarer</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="366-367"/>
+  <title>Tyendeliv</title>
+  <subtitle>(Ved en Belønningsforenings Aarsmøde.)</subtitle>
+  <firstline>Himlens Sol og Stjerneskarer</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="366-367"/>
 </head>
 <body>
 <poetry>
@@ -12429,10 +12428,10 @@ Hvad end Tjenesten omkredser -
 
 <text id="richardt20190731144">
 <head>
-    <title>Tro og Gjerning</title>
-    <firstline>At ville vælge mellem Tro og Gjerning</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="367"/>
+  <title>Tro og Gjerning</title>
+  <firstline>At ville vælge mellem Tro og Gjerning</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="367"/>
 </head>
 <body>
 <poetry>
@@ -12456,10 +12455,10 @@ det var jo <i>det</i>, som Sæden skulde.
 
 <text id="richardt20190731145">
 <head>
-    <title>Under fremmed Navn</title>
-    <firstline>Da Himlen og sin Faders Favn</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="367-368"/>
+  <title>Under fremmed Navn</title>
+  <firstline>Da Himlen og sin Faders Favn</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="367-368"/>
 </head>
 <body>
 <poetry>
@@ -12490,10 +12489,10 @@ med Hilsen fra det Høje.
 
 <text id="richardt20190731146">
 <head>
-    <title>Pløjetid</title>
-    <firstline>Fra Marken komme Karl og Heste trætte</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="368-369"/>
+  <title>Pløjetid</title>
+  <firstline>Fra Marken komme Karl og Heste trætte</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="368-369"/>
 </head>
 <body>
 <poetry>
@@ -12529,17 +12528,17 @@ vi <i>kan</i> ej være Smerterne foruden.
 
 <section level="3">
 <head>
-    <title>Fra Aarets Tider</title>
-    <toctitle>Fra Aarets Tider 1-5</toctitle>
+  <title>Fra Aarets Tider</title>
+  <toctitle>Fra Aarets Tider 1-5</toctitle>
 </head>
 <content>
 
 <text id="richardt20190731148">
 <head>
-    <title><num>I.</num>Koldt Foraar</title>
-    <firstline>Lærken løfter sin Klokke-Røst</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="369-370"/>
+  <title><num>I.</num>Koldt Foraar</title>
+  <firstline>Lærken løfter sin Klokke-Røst</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="369-370"/>
 </head>
 <body>
 <poetry>
@@ -12573,10 +12572,10 @@ vi Sommeren kan møde!
 
 <text id="richardt20190731149">
 <head>
-    <title><num>II.</num>Somrens Farvel</title>
-    <firstline>Nu drager Danmarks Sommer bort</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="370-372"/>
+  <title><num>II.</num>Somrens Farvel</title>
+  <firstline>Nu drager Danmarks Sommer bort</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="370-372"/>
 </head>
 <body>
 <poetry>
@@ -12648,10 +12647,10 @@ til hendes næste Komme!
 
 <text id="richardt20190731150">
 <head>
-    <title><num>III.</num>Ved Juletid</title>
-    <firstline>Den hvide Snee har lagt sig</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="373-375"/>
+  <title><num>III.</num>Ved Juletid</title>
+  <firstline>Den hvide Snee har lagt sig</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="373-375"/>
 </head>
 <body>
 <poetry>
@@ -12750,10 +12749,10 @@ Freden fra Gud!
 
 <text id="richardt20190731151">
 <head>
-    <title><num>IV.</num>Efter Snestorm</title>
-    <firstline>Hu, hvor Stormen dog har føget</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="376-377"/>
+  <title><num>IV.</num>Efter Snestorm</title>
+  <firstline>Hu, hvor Stormen dog har føget</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="376-377"/>
 </head>
 <body>
 <poetry>
@@ -12804,10 +12803,10 @@ snart kun Smuds der er at see
 
 <text id="richardt20190731152">
 <head>
-    <title><num>V.</num>Skovens Saga</title>
-    <firstline>Hvor mindes jeg, Du skjønne Bøgelund</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="377-380"/>
+  <title><num>V.</num>Skovens Saga</title>
+  <firstline>Hvor mindes jeg, Du skjønne Bøgelund</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="377-380"/>
 </head>
 <body>
 <poetry>
@@ -12897,15 +12896,15 @@ vil blive læseligt i Maj sols-Varmen.
 
 <text id="richardt20190731153">
 <head>
-    <title>Til Kong Christian IX</title>
-    <subtitle>
-        <line>Med Soldaterbladet »Danebrog«.</line>
-        <line>Oktober 1880.</line>
-    </subtitle>
-    <firstline>Vi komme uden Vaaben</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="380-382"/>
-    <keywords>christian9</keywords>
+  <title>Til Kong Christian IX</title>
+  <subtitle>
+    <line>Med Soldaterbladet »Danebrog«.</line>
+    <line>Oktober 1880.</line>
+  </subtitle>
+  <firstline>Vi komme uden Vaaben</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="380-382"/>
+  <keywords>christian9</keywords>
 </head>
 <body>
 <poetry>
@@ -12968,11 +12967,11 @@ til Fredens trygge Borg!
 
 <text id="richardt20190731154">
 <head>
-    <title>For Danmark</title>
-    <subtitle>Juli 1883</subtitle>
-    <firstline>O Danmark i din Sommerpragt</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="382-383"/>
+  <title>For Danmark</title>
+  <subtitle>Juli 1883</subtitle>
+  <firstline>O Danmark i din Sommerpragt</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="382-383"/>
 </head>
 <body>
 <poetry>
@@ -13026,14 +13025,14 @@ at ej vor Saga ender!
 
 <text id="richardt20190731155">
 <head>
-    <title>Til Kongen</title>
-    <subtitle>Paa Grundlovsdagen 5. Juni 1884</subtitle>
-    <firstline>Skjærsommerdagen lys og god</firstline>
-    <dates>
-        <event>1884-06-05</event>
-    </dates>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="383-384"/>
+  <title>Til Kongen</title>
+  <subtitle>Paa Grundlovsdagen 5. Juni 1884</subtitle>
+  <firstline>Skjærsommerdagen lys og god</firstline>
+  <dates>
+    <event>1884-06-05</event>
+  </dates>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="383-384"/>
 </head>
 <body>
 <poetry>
@@ -13074,18 +13073,18 @@ for din og vor og Danmarks Sag!
 
 <section level="3">
 <head>
-    <title>Festsange</title>
-    <toctitle>Festsange 1-4</toctitle>
+  <title>Festsange</title>
+  <toctitle>Festsange 1-4</toctitle>
 </head>
 <content>
 
 <text id="richardt20190731157">
 <head>
-    <title><num>I.</num>For Universitetet</title>
-    <subtitle>(Ved et Studenter-Jubilæum).</subtitle>
-    <firstline>Højskole hist, hvor som dunede Russer</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="385-386"/>
+  <title><num>I.</num>For Universitetet</title>
+  <subtitle>(Ved et Studenter-Jubilæum).</subtitle>
+  <firstline>Højskole hist, hvor som dunede Russer</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="385-386"/>
 </head>
 <body>
 <poetry>
@@ -13142,11 +13141,11 @@ vrage det Falske med aandelig Sans -
 
 <text id="richardt20190731158">
 <head>
-    <title><num>II.</num>Ved Velgjørenheds-Selskabets Skoles Jubilæum</title>
-    <subtitle>(2. Marts 1884.)</subtitle>
-    <firstline>Hvem vil ikke gjerne prise</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="386-388"/>
+  <title><num>II.</num>Ved Velgjørenheds-Selskabets Skoles Jubilæum</title>
+  <subtitle>(2. Marts 1884.)</subtitle>
+  <firstline>Hvem vil ikke gjerne prise</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="386-388"/>
 </head>
 <body>
 <poetry>
@@ -13200,14 +13199,14 @@ i »Velgjørenheden«!
 
 <text id="richardt20190731159">
 <head>
-    <title><num>III.</num>Forlæggernes Skaal</title>
-    <subtitle>
-        <line>Ved Nordisk Boghandler-Møde.</line>
-        <line>Juli 1884.</line>
-    </subtitle>
-    <firstline>Forfatter og Forlægger</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="388-390"/>
+  <title><num>III.</num>Forlæggernes Skaal</title>
+  <subtitle>
+    <line>Ved Nordisk Boghandler-Møde.</line>
+    <line>Juli 1884.</line>
+  </subtitle>
+  <firstline>Forfatter og Forlægger</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="388-390"/>
 </head>
 <body>
 <poetry>
@@ -13264,21 +13263,21 @@ af Aand - og Vid - og Mønt!
 
 <section level="3">
 <head>
-    <title>Billedtexter</title>
-    <toctitle>Billedtexter 1-3</toctitle>
+  <title>Billedtexter</title>
+  <toctitle>Billedtexter 1-3</toctitle>
 </head>
 <content>
 
 <text id="richardt20190731161">
 <head>
-    <title><num>I.</num>Ubudne Gjæster</title>
-    <subtitle>(Til et Billede af Edv. Petersen.)</subtitle>
-    <firstline>Ak, Sant' Agate! hvilken Tort!</firstline>
-    <pictures>
-        <picture src="richardt20190731161-p1.jpg" museum="smk" invnr="KKS9632h">F. Hendriksen (efter forlæg af Edvard Petersen): <i>Ubudne gæster</i>, efter 1870, xylografi, 205 × 175 mm.</picture>
-    </pictures>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="390-391"/>
+  <title><num>I.</num>Ubudne Gjæster</title>
+  <subtitle>(Til et Billede af Edv. Petersen.)</subtitle>
+  <firstline>Ak, Sant' Agate! hvilken Tort!</firstline>
+  <pictures>
+    <picture src="richardt20190731161-p1.jpg" museum="smk" invnr="KKS9632h">F. Hendriksen (efter forlæg af Edvard Petersen): <i>Ubudne gæster</i>, efter 1870, xylografi, 205 × 175 mm.</picture>
+  </pictures>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="390-391"/>
 </head>
 <body>
 <poetry>
@@ -13310,12 +13309,12 @@ Fortjenesten gik reent i Vasken!
 
 <text id="richardt20190731162">
 <head>
-    <title><num>II.</num>Tiggeri</title>
-    <subtitle>(Til en Skizze af C. Bloch.)</subtitle>
-    <firstline>Tommaso har idag havt med sig Lykken</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="391-392"/>
-    <!-- TODO: Find skitsen. -->
+  <title><num>II.</num>Tiggeri</title>
+  <subtitle>(Til en Skizze af C. Bloch.)</subtitle>
+  <firstline>Tommaso har idag havt med sig Lykken</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="391-392"/>
+  <!-- TODO: Find skitsen. -->
 </head>
 <body>
 <poetry>
@@ -13362,12 +13361,12 @@ det Blik er altfor u-uimodstaaeligt!
 
 <text id="richardt20190731163">
 <head>
-    <title><num>III.</num>Dørvogteren</title>
-    <subtitle>(Til et Billede af Bloch.)</subtitle>
-    <firstline>Hans! Deres Naade! Lad Bob faae sin Mad</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="392-393"/>
-    <!-- TODO: Find skitsen. -->
+  <title><num>III.</num>Dørvogteren</title>
+  <subtitle>(Til et Billede af Bloch.)</subtitle>
+  <firstline>Hans! Deres Naade! Lad Bob faae sin Mad</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="392-393"/>
+  <!-- TODO: Find skitsen. -->
 </head>
 <body>
 <poetry>
@@ -13415,11 +13414,11 @@ men saa blev nok Døren lukket <i>i</i> for <i>mig!</i>
 
 <text id="richardt20190731164">
 <head>
-    <title>Rejsebrev</title>
-    <subtitle>til min Hustru.</subtitle>
-    <firstline>Min egen M . . .</firstline>
-    <quality>korrektur1,kilde,side</quality>
-    <source pages="394-397"/>
+  <title>Rejsebrev</title>
+  <subtitle>til min Hustru.</subtitle>
+  <firstline>Min egen M . . .</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="394-397"/>
 </head>
 <body>
 <poetry>

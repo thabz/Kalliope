@@ -15,8 +15,10 @@ import Page from '../components/page.js';
 import Picture from '../components/picture.js';
 import { poetNameString } from '../components/poetname-helpers.js';
 import PoetName from '../components/poetname.js';
+import SidebarMiniHeading from '../components/sidebarminiheading.js';
 import SidebarSplit from '../components/sidebarsplit.js';
 import SplitWhenSmall from '../components/split-when-small.js';
+import Source from '../components/source.js';
 import TextContent from '../components/textcontent.js';
 import TwoColumns from '../components/twocolumns.js';
 import ErrorPage from './error.js';
@@ -29,7 +31,7 @@ const dateAndPlace = (datePlace, lang, age) => {
   if (datePlace.date === '?') {
     result.push(_('Ukendt år', lang));
   } else {
-    result.push(formattedDate(datePlace.date));
+    result.push(formattedDate(datePlace.date, lang));
   }
   if (datePlace.place != null) {
     result.push(
@@ -47,17 +49,13 @@ const PersonMetaLine = ({ label, value }) => {
     return null;
   }
   const styles = {
-    key: {
-      fontWeight: 'bold',
-      fontSize: '0.8em',
-    },
     item: {
-      marginBottom: '10px',
+      marginBottom: '22px',
     },
   };
   return (
     <div style={styles.item}>
-      <div style={styles.key}>{label}</div>
+      <SidebarMiniHeading>{label}</SidebarMiniHeading>
       <div>{value}</div>
     </div>
   );
@@ -196,6 +194,35 @@ const Timeline = ({ timeline, lang }) => {
   );
 };
 
+const BiographySources = ({ sources, lang }) => {
+  if (sources == null || sources.length === 0) {
+    return null;
+  }
+  return (
+    <footer className="biography-sources" aria-label={_('Kilde', lang)}>
+      {sources.map((source, index) => (
+        <div className="source" key={index}>
+          <Source
+            contentHtml={source.content_html}
+            href={source.href}
+            lang={lang}
+          />
+        </div>
+      ))}
+      <style jsx>{`
+        .biography-sources {
+          margin-bottom: 40px;
+          font-size: 0.8em;
+          text-align: right;
+        }
+        .source {
+          margin-top: 0.6em;
+        }
+      `}</style>
+    </footer>
+  );
+};
+
 const BioPage = (props) => {
   const {
     lang,
@@ -203,6 +230,7 @@ const BioPage = (props) => {
     portraits,
     content_html,
     content_lang,
+    sources,
     timeline,
     identifiers,
     error,
@@ -245,6 +273,7 @@ const BioPage = (props) => {
             contentLang={content_lang}
             className="bio-text"
           />
+          <BiographySources sources={sources} lang={lang} />
           <Timeline timeline={timeline} lang={lang} />
           <style jsx>{`
             :global(.bio-text) {
@@ -271,6 +300,7 @@ BioPage.getInitialProps = async ({ query: { lang, poetId } }) => {
     poet: json.poet,
     content_html: json.content_html,
     content_lang: json.content_lang,
+    sources: json.sources,
     timeline: json.timeline,
     identifiers: json.identifiers,
     error: json.error,

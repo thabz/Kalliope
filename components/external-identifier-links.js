@@ -1,6 +1,8 @@
 import { buildExternalIdentifierLinks } from '../common/external-identifiers.js';
 import _ from '../common/translations.js';
+import Tooltip from './tooltip.js';
 import TwoColumns from './twocolumns.js';
+import SidebarMiniHeading from './sidebarminiheading.js';
 
 const ExternalIdentifierLinks = ({
   identifiers,
@@ -34,7 +36,7 @@ const ExternalIdentifierLinks = ({
     return (
       <section className="external-identifiers references" aria-label={heading}>
         <h3>{heading}</h3>
-        <TwoColumns>{items}</TwoColumns>
+        <TwoColumns noLinkUnderline>{items}</TwoColumns>
         <style jsx>{`
           .references {
             margin-bottom: 40px;
@@ -56,26 +58,22 @@ const ExternalIdentifierLinks = ({
     <section
       className="external-identifiers"
       aria-label={heading}>
-      <div className="heading">{heading}</div>
+      <SidebarMiniHeading>{heading}</SidebarMiniHeading>
       <div className="links">
         {links.map((link) => (
-          <a key={link.id} href={link.href} title={link.label}>
-            <span className={`icon icon-${link.id}`} aria-hidden="true">
-              {link.shortLabel}
-            </span>
-            <span className="visually-hidden">{link.label}</span>
-          </a>
+          <Tooltip text={link.label} key={link.id}>
+            <a href={link.href}>
+              <span className={`icon icon-${link.id}`} aria-hidden="true">
+                {link.shortLabel}
+              </span>
+              <span className="visually-hidden">{link.label}</span>
+            </a>
+          </Tooltip>
         ))}
       </div>
       <style jsx>{`
         .external-identifiers {
           margin-top: 28px;
-        }
-        .heading {
-          margin-bottom: 8px;
-          color: #666;
-          font-size: 0.8em;
-          font-weight: bold;
         }
         .links {
           display: flex;
