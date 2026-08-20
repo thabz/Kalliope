@@ -76,8 +76,10 @@ const FootnoteList = () => {
           text-align: right;
           padding-right: 7px;
         }
-        :global(.footnote .footnote-num a) {
-          color: black;
+        @media print {
+          :global(.footnote .footnote-num a) {
+            color: black;
+          }
         }
         :global(.footnote .footnote-text) {
           flex-grow: 1;
