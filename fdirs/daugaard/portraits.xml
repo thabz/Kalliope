@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pictures>
-  <picture src="p1.jpg" wikidata="Q40237114" primary="true" square-src="p1-square.jpg" year="1900" museum="ribe" invnr="RKMm0235">
-      Carl Thomsen: <i>Frk. Daugård i sit hjem i Ribe</i>, 1900, olie på lærred, 56×47cm.
+  <picture src="p1.jpg" primary="true" square-src="p1-square.jpg" year="1900" museum="ribe" invnr="RKMm0235">
+    Carl Thomsen: <i>Frk. Daugård i sit hjem i Ribe</i>, 1900, olie på lærred, 56×47cm.
+    <identifiers>
+      <wikidata>Q40237114</wikidata>
+    </identifiers>
   </picture>
-  <picture src="p2.jpg" wikidata="Q40288635" year="1906" museum="ribe" invnr="RKMm0162">
-      Caja Prytz (1877-1916): <i>Forfatterinden frk. Christine Daugaard</i>, 1906, olie på lærred, 27 × 26,5 cm.
+  <picture src="p2.jpg" year="1906" museum="ribe" invnr="RKMm0162">
+    Caja Prytz (1877-1916): <i>Forfatterinden frk. Christine Daugaard</i>, 1906, olie på lærred, 27 × 26,5 cm.
+    <identifiers>
+      <wikidata>Q40288635</wikidata>
+    </identifiers>
   </picture>
 </pictures>

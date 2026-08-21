@@ -1,0 +1,1836 @@
+{
+  "periods": [
+    {
+      "id": "grc-arkaisk-og-klassisk-tid",
+      "tradition": "grc",
+      "countries": [
+        "un"
+      ],
+      "title": {
+        "da": "Græsk arkaisk og klassisk tid",
+        "en": "Greek Archaic and Classical periods",
+        "fr": "Époques grecques archaïque et classique",
+        "de": "Griechische Archaik und Klassik"
+      },
+      "sortYear": -750,
+      "sources": [
+        {
+          "title": "Greek literature",
+          "url": "https://www.britannica.com/art/Greek-literature"
+        }
+      ]
+    },
+    {
+      "id": "la-romersk-litteratur",
+      "tradition": "la",
+      "countries": [
+        "un"
+      ],
+      "title": {
+        "da": "Romersk litteratur på latin",
+        "en": "Roman literature in Latin",
+        "fr": "Littérature romaine en latin",
+        "de": "Römische Literatur in lateinischer Sprache"
+      },
+      "sortYear": -240,
+      "sources": [
+        {
+          "title": "Latin literature",
+          "url": "https://www.britannica.com/art/Latin-literature"
+        }
+      ]
+    },
+    {
+      "id": "fa-klassisk-persisk-litteratur",
+      "tradition": "fa",
+      "countries": [
+        "un"
+      ],
+      "title": {
+        "da": "Klassisk persisk litteratur",
+        "en": "Classical Persian literature",
+        "fr": "Littérature persane classique",
+        "de": "Klassische persische Literatur"
+      },
+      "sortYear": 900,
+      "sources": [
+        {
+          "title": "Persian literature",
+          "url": "https://www.britannica.com/art/Persian-literature"
+        }
+      ]
+    },
+    {
+      "id": "it-middelalderlitteratur",
+      "tradition": "it",
+      "countries": [
+        "it"
+      ],
+      "title": {
+        "da": "Italiensk middelalderlitteratur",
+        "en": "Italian medieval literature",
+        "fr": "Littérature médiévale italienne",
+        "de": "Italienische Literatur des Mittelalters"
+      },
+      "sortYear": 1200,
+      "sources": [
+        {
+          "title": "Italian literature",
+          "url": "https://www.britannica.com/art/Italian-literature"
+        }
+      ]
+    },
+    {
+      "id": "gb-middelalderlitteratur",
+      "tradition": "gb",
+      "countries": [
+        "gb"
+      ],
+      "title": {
+        "da": "Engelsk middelalderlitteratur",
+        "en": "English medieval literature",
+        "fr": "Littérature médiévale anglaise",
+        "de": "Englische Literatur des Mittelalters"
+      },
+      "sortYear": 1066,
+      "sources": [
+        {
+          "title": "English literature",
+          "url": "https://www.britannica.com/art/English-literature"
+        }
+      ]
+    },
+    {
+      "id": "it-renaessance",
+      "tradition": "it",
+      "countries": [
+        "it"
+      ],
+      "title": {
+        "da": "Italiensk renæssance",
+        "en": "Italian Renaissance",
+        "fr": "Renaissance italienne",
+        "de": "Italienische Renaissance"
+      },
+      "sortYear": 1350,
+      "sources": [
+        {
+          "title": "Italian literature",
+          "url": "https://www.britannica.com/art/Italian-literature"
+        }
+      ]
+    },
+    {
+      "id": "fr-renaessance",
+      "tradition": "fr",
+      "countries": [
+        "fr"
+      ],
+      "title": {
+        "da": "Fransk renæssance",
+        "en": "French Renaissance",
+        "fr": "Renaissance française",
+        "de": "Französische Renaissance"
+      },
+      "sortYear": 1500,
+      "sources": [
+        {
+          "title": "French literature",
+          "url": "https://www.britannica.com/art/French-literature"
+        }
+      ]
+    },
+    {
+      "id": "gb-renaessance",
+      "tradition": "gb",
+      "countries": [
+        "gb"
+      ],
+      "title": {
+        "da": "Engelsk renæssance",
+        "en": "English Renaissance",
+        "fr": "Renaissance anglaise",
+        "de": "Englische Renaissance"
+      },
+      "sortYear": 1500,
+      "sources": [
+        {
+          "title": "English literature",
+          "url": "https://www.britannica.com/art/English-literature"
+        }
+      ]
+    },
+    {
+      "id": "es-guldalder",
+      "tradition": "es",
+      "countries": [
+        "un"
+      ],
+      "title": {
+        "da": "Spansk guldalder",
+        "en": "Spanish Golden Age",
+        "fr": "Siècle d’or espagnol",
+        "de": "Spanisches Goldenes Zeitalter"
+      },
+      "sortYear": 1500,
+      "sources": [
+        {
+          "title": "Spanish literature",
+          "url": "https://www.britannica.com/art/Spanish-literature"
+        }
+      ]
+    },
+    {
+      "id": "de-humanisme-og-reformation",
+      "tradition": "de",
+      "countries": [
+        "de",
+        "un"
+      ],
+      "title": {
+        "da": "Tysk humanisme og reformation",
+        "en": "German humanism and Reformation",
+        "fr": "Humanisme et Réforme allemands",
+        "de": "Deutscher Humanismus und Reformation"
+      },
+      "sortYear": 1500,
+      "sources": [
+        {
+          "title": "German literature",
+          "url": "https://www.britannica.com/art/German-literature"
+        }
+      ]
+    },
+    {
+      "id": "dk-renaessance-og-reformation",
+      "tradition": "dk",
+      "countries": [
+        "dk"
+      ],
+      "title": {
+        "da": "Dansk renæssance og reformation",
+        "en": "Danish Renaissance and Reformation",
+        "fr": "Renaissance et Réforme danoises",
+        "de": "Dänische Renaissance und Reformation"
+      },
+      "sortYear": 1500,
+      "sources": [
+        {
+          "title": "Dansk litteraturs historie",
+          "url": "https://dansklitteraturshistorie.lex.dk/Om_Dansk_litteraturs_historie"
+        }
+      ]
+    },
+    {
+      "id": "se-renaessance-og-reformation",
+      "tradition": "se",
+      "countries": [
+        "se"
+      ],
+      "title": {
+        "da": "Svensk renæssance og reformation",
+        "en": "Swedish Renaissance and Reformation",
+        "fr": "Renaissance et Réforme suédoises",
+        "de": "Schwedische Renaissance und Reformation"
+      },
+      "sortYear": 1500,
+      "sources": [
+        {
+          "title": "Swedish literature",
+          "url": "https://www.britannica.com/art/Swedish-literature"
+        }
+      ]
+    },
+    {
+      "id": "no-renaessance-og-reformation",
+      "tradition": "no",
+      "countries": [
+        "no"
+      ],
+      "title": {
+        "da": "Norsk renæssance og reformation",
+        "en": "Norwegian Renaissance and Reformation",
+        "fr": "Renaissance et Réforme norvégiennes",
+        "de": "Norwegische Renaissance und Reformation"
+      },
+      "sortYear": 1500,
+      "sources": [
+        {
+          "title": "Norwegian literature",
+          "url": "https://www.britannica.com/art/Norwegian-literature"
+        }
+      ]
+    },
+    {
+      "id": "gb-restauration-og-barok",
+      "tradition": "gb",
+      "countries": [
+        "gb"
+      ],
+      "title": {
+        "da": "Engelsk barok og restaurationstid",
+        "en": "English Baroque and Restoration",
+        "fr": "Baroque et Restauration anglaises",
+        "de": "Englischer Barock und Restauration"
+      },
+      "sortYear": 1600,
+      "sources": [
+        {
+          "title": "English literature",
+          "url": "https://www.britannica.com/art/English-literature"
+        }
+      ]
+    },
+    {
+      "id": "de-barok",
+      "tradition": "de",
+      "countries": [
+        "de",
+        "un"
+      ],
+      "title": {
+        "da": "Tysk barok",
+        "en": "German Baroque",
+        "fr": "Baroque allemand",
+        "de": "Deutscher Barock"
+      },
+      "sortYear": 1600,
+      "sources": [
+        {
+          "title": "German literature",
+          "url": "https://www.britannica.com/art/German-literature"
+        }
+      ]
+    },
+    {
+      "id": "dk-barok",
+      "tradition": "dk",
+      "countries": [
+        "dk"
+      ],
+      "title": {
+        "da": "Dansk barok",
+        "en": "Danish Baroque",
+        "fr": "Baroque danois",
+        "de": "Dänischer Barock"
+      },
+      "sortYear": 1600,
+      "sources": [
+        {
+          "title": "Dansk litteraturs historie",
+          "url": "https://dansklitteraturshistorie.lex.dk/Om_Dansk_litteraturs_historie"
+        }
+      ]
+    },
+    {
+      "id": "se-stormagtstid",
+      "tradition": "se",
+      "countries": [
+        "se"
+      ],
+      "title": {
+        "da": "Svensk stormagtstid",
+        "en": "Swedish Age of Greatness",
+        "fr": "Ère suédoise de la grandeur",
+        "de": "Schwedische Großmachtzeit"
+      },
+      "sortYear": 1611,
+      "sources": [
+        {
+          "title": "Swedish literature",
+          "url": "https://www.britannica.com/art/Swedish-literature"
+        }
+      ]
+    },
+    {
+      "id": "no-barok",
+      "tradition": "no",
+      "countries": [
+        "no"
+      ],
+      "title": {
+        "da": "Norsk barok",
+        "en": "Norwegian Baroque",
+        "fr": "Baroque norvégien",
+        "de": "Norwegischer Barock"
+      },
+      "sortYear": 1600,
+      "sources": [
+        {
+          "title": "Norwegian literature",
+          "url": "https://www.britannica.com/art/Norwegian-literature"
+        }
+      ]
+    },
+    {
+      "id": "fr-klassicisme",
+      "tradition": "fr",
+      "countries": [
+        "fr"
+      ],
+      "title": {
+        "da": "Fransk klassicisme",
+        "en": "French Classicism",
+        "fr": "Classicisme français",
+        "de": "Französische Klassik"
+      },
+      "sortYear": 1660,
+      "sources": [
+        {
+          "title": "French literature",
+          "url": "https://www.britannica.com/art/French-literature"
+        }
+      ]
+    },
+    {
+      "id": "gb-augustansk-litteratur",
+      "tradition": "gb",
+      "countries": [
+        "gb"
+      ],
+      "title": {
+        "da": "Britisk augustansk litteratur",
+        "en": "British Augustan literature",
+        "fr": "Littérature augustéenne britannique",
+        "de": "Britische augusteische Literatur"
+      },
+      "sortYear": 1680,
+      "sources": [
+        {
+          "title": "English literature",
+          "url": "https://www.britannica.com/art/English-literature"
+        }
+      ]
+    },
+    {
+      "id": "fr-oplysningstid",
+      "tradition": "fr",
+      "countries": [
+        "fr"
+      ],
+      "title": {
+        "da": "Fransk oplysningstid",
+        "en": "French Enlightenment",
+        "fr": "Lumières françaises",
+        "de": "Französische Aufklärung"
+      },
+      "sortYear": 1715,
+      "sources": [
+        {
+          "title": "French literature",
+          "url": "https://www.britannica.com/art/French-literature"
+        }
+      ]
+    },
+    {
+      "id": "us-kolonitid-og-oplysning",
+      "tradition": "us",
+      "countries": [
+        "us"
+      ],
+      "title": {
+        "da": "Amerikansk kolonitid og oplysning",
+        "en": "American colonial period and Enlightenment",
+        "fr": "Période coloniale et Lumières américaines",
+        "de": "Amerikanische Kolonialzeit und Aufklärung"
+      },
+      "sortYear": 1700,
+      "sources": [
+        {
+          "title": "American literature",
+          "url": "https://www.britannica.com/art/American-literature"
+        }
+      ]
+    },
+    {
+      "id": "de-oplysning-og-weimarklassik",
+      "tradition": "de",
+      "countries": [
+        "de",
+        "un"
+      ],
+      "title": {
+        "da": "Tysk oplysning og Weimarklassik",
+        "en": "German Enlightenment and Weimar Classicism",
+        "fr": "Lumières allemandes et classicisme de Weimar",
+        "de": "Deutsche Aufklärung und Weimarer Klassik"
+      },
+      "sortYear": 1720,
+      "sources": [
+        {
+          "title": "German literature",
+          "url": "https://www.britannica.com/art/German-literature"
+        }
+      ]
+    },
+    {
+      "id": "dk-oplysningstid",
+      "tradition": "dk",
+      "countries": [
+        "dk"
+      ],
+      "title": {
+        "da": "Dansk oplysningstid",
+        "en": "Danish Enlightenment",
+        "fr": "Lumières danoises",
+        "de": "Dänische Aufklärung"
+      },
+      "sortYear": 1720,
+      "sources": [
+        {
+          "title": "Dansk litteraturs historie",
+          "url": "https://dansklitteraturshistorie.lex.dk/Om_Dansk_litteraturs_historie"
+        }
+      ]
+    },
+    {
+      "id": "se-frihedstid-og-gustaviansk-tid",
+      "tradition": "se",
+      "countries": [
+        "se"
+      ],
+      "title": {
+        "da": "Svensk frihedstid og gustaviansk tid",
+        "en": "Swedish Age of Liberty and Gustavian era",
+        "fr": "Ère suédoise de la liberté et époque gustavienne",
+        "de": "Schwedische Freiheitszeit und Gustavianische Zeit"
+      },
+      "sortYear": 1720,
+      "sources": [
+        {
+          "title": "Swedish literature",
+          "url": "https://www.britannica.com/art/Swedish-literature"
+        }
+      ]
+    },
+    {
+      "id": "no-oplysningstid",
+      "tradition": "no",
+      "countries": [
+        "no"
+      ],
+      "title": {
+        "da": "Norsk oplysningstid",
+        "en": "Norwegian Enlightenment",
+        "fr": "Lumières norvégiennes",
+        "de": "Norwegische Aufklärung"
+      },
+      "sortYear": 1720,
+      "sources": [
+        {
+          "title": "Norwegian literature",
+          "url": "https://www.britannica.com/art/Norwegian-literature"
+        }
+      ]
+    },
+    {
+      "id": "it-oplysning-og-nyklassicisme",
+      "tradition": "it",
+      "countries": [
+        "it"
+      ],
+      "title": {
+        "da": "Italiensk oplysning og nyklassicisme",
+        "en": "Italian Enlightenment and Neoclassicism",
+        "fr": "Lumières et néoclassicisme italiens",
+        "de": "Italienische Aufklärung und Klassizismus"
+      },
+      "sortYear": 1740,
+      "sources": [
+        {
+          "title": "Italian literature",
+          "url": "https://www.britannica.com/art/Italian-literature"
+        }
+      ]
+    },
+    {
+      "id": "de-sturm-und-drang-og-romantik",
+      "tradition": "de",
+      "countries": [
+        "de",
+        "un"
+      ],
+      "title": {
+        "da": "Tysk Sturm und Drang og romantik",
+        "en": "German Sturm und Drang and Romanticism",
+        "fr": "Sturm und Drang et romantisme allemands",
+        "de": "Deutscher Sturm und Drang und Romantik"
+      },
+      "sortYear": 1770,
+      "sources": [
+        {
+          "title": "German literature",
+          "url": "https://www.britannica.com/art/German-literature"
+        }
+      ]
+    },
+    {
+      "id": "gb-romantik",
+      "tradition": "gb",
+      "countries": [
+        "gb"
+      ],
+      "title": {
+        "da": "Britisk romantik",
+        "en": "British Romanticism",
+        "fr": "Romantisme britannique",
+        "de": "Britische Romantik"
+      },
+      "sortYear": 1780,
+      "sources": [
+        {
+          "title": "English literature",
+          "url": "https://www.britannica.com/art/English-literature"
+        }
+      ]
+    },
+    {
+      "id": "us-amerikansk-romantik",
+      "tradition": "us",
+      "countries": [
+        "us"
+      ],
+      "title": {
+        "da": "Amerikansk romantik",
+        "en": "American Romanticism",
+        "fr": "Romantisme américain",
+        "de": "Amerikanische Romantik"
+      },
+      "sortYear": 1800,
+      "sources": [
+        {
+          "title": "American literature",
+          "url": "https://www.britannica.com/art/American-literature"
+        }
+      ]
+    },
+    {
+      "id": "dk-guldalder-og-romantik",
+      "tradition": "dk",
+      "countries": [
+        "dk"
+      ],
+      "title": {
+        "da": "Dansk guldalder og romantik",
+        "en": "Danish Golden Age and Romanticism",
+        "fr": "Âge d’or et romantisme danois",
+        "de": "Dänisches Goldenes Zeitalter und Romantik"
+      },
+      "sortYear": 1800,
+      "sources": [
+        {
+          "title": "Dansk litteraturs historie",
+          "url": "https://dansklitteraturshistorie.lex.dk/Om_Dansk_litteraturs_historie"
+        }
+      ]
+    },
+    {
+      "id": "no-nationalromantik",
+      "tradition": "no",
+      "countries": [
+        "no"
+      ],
+      "title": {
+        "da": "Norsk nationalromantik",
+        "en": "Norwegian National Romanticism",
+        "fr": "Romantisme national norvégien",
+        "de": "Norwegische Nationalromantik"
+      },
+      "sortYear": 1814,
+      "sources": [
+        {
+          "title": "Norwegian literature",
+          "url": "https://www.britannica.com/art/Norwegian-literature"
+        }
+      ]
+    },
+    {
+      "id": "se-romantik",
+      "tradition": "se",
+      "countries": [
+        "se"
+      ],
+      "title": {
+        "da": "Svensk romantik",
+        "en": "Swedish Romanticism",
+        "fr": "Romantisme suédois",
+        "de": "Schwedische Romantik"
+      },
+      "sortYear": 1800,
+      "sources": [
+        {
+          "title": "Swedish literature",
+          "url": "https://www.britannica.com/art/Swedish-literature"
+        }
+      ]
+    },
+    {
+      "id": "sv-fi-nationalromantik",
+      "tradition": "sv-fi",
+      "countries": [
+        "un"
+      ],
+      "title": {
+        "da": "Finlandssvensk nationalromantik",
+        "en": "Finland-Swedish National Romanticism",
+        "fr": "Romantisme national finlandais de langue suédoise",
+        "de": "Finnlandschwedische Nationalromantik"
+      },
+      "sortYear": 1800,
+      "sources": [
+        {
+          "title": "Swedish literature",
+          "url": "https://www.britannica.com/art/Swedish-literature"
+        }
+      ]
+    },
+    {
+      "id": "fr-romantik",
+      "tradition": "fr",
+      "countries": [
+        "fr"
+      ],
+      "title": {
+        "da": "Fransk romantik",
+        "en": "French Romanticism",
+        "fr": "Romantisme français",
+        "de": "Französische Romantik"
+      },
+      "sortYear": 1820,
+      "sources": [
+        {
+          "title": "French literature",
+          "url": "https://www.britannica.com/art/French-literature"
+        }
+      ]
+    },
+    {
+      "id": "it-romantik-og-risorgimento",
+      "tradition": "it",
+      "countries": [
+        "it"
+      ],
+      "title": {
+        "da": "Italiensk romantik og Risorgimento",
+        "en": "Italian Romanticism and Risorgimento",
+        "fr": "Romantisme italien et Risorgimento",
+        "de": "Italienische Romantik und Risorgimento"
+      },
+      "sortYear": 1815,
+      "sources": [
+        {
+          "title": "Italian literature",
+          "url": "https://www.britannica.com/art/Italian-literature"
+        }
+      ]
+    },
+    {
+      "id": "gb-victoriansk-litteratur",
+      "tradition": "gb",
+      "countries": [
+        "gb"
+      ],
+      "title": {
+        "da": "Britisk victoriansk litteratur",
+        "en": "British Victorian literature",
+        "fr": "Littérature victorienne britannique",
+        "de": "Britische Literatur des Viktorianischen Zeitalters"
+      },
+      "sortYear": 1837,
+      "sources": [
+        {
+          "title": "English literature",
+          "url": "https://www.britannica.com/art/English-literature"
+        }
+      ]
+    },
+    {
+      "id": "us-realisme-og-naturalisme",
+      "tradition": "us",
+      "countries": [
+        "us"
+      ],
+      "title": {
+        "da": "Amerikansk realisme og naturalisme",
+        "en": "American Realism and Naturalism",
+        "fr": "Réalisme et naturalisme américains",
+        "de": "Amerikanischer Realismus und Naturalismus"
+      },
+      "sortYear": 1865,
+      "sources": [
+        {
+          "title": "American literature",
+          "url": "https://www.britannica.com/art/American-literature"
+        }
+      ]
+    },
+    {
+      "id": "fr-realisme-og-naturalisme",
+      "tradition": "fr",
+      "countries": [
+        "fr"
+      ],
+      "title": {
+        "da": "Fransk realisme og naturalisme",
+        "en": "French Realism and Naturalism",
+        "fr": "Réalisme et naturalisme français",
+        "de": "Französischer Realismus und Naturalismus"
+      },
+      "sortYear": 1848,
+      "sources": [
+        {
+          "title": "French literature",
+          "url": "https://www.britannica.com/art/French-literature"
+        }
+      ]
+    },
+    {
+      "id": "de-poetisk-realisme-og-naturalisme",
+      "tradition": "de",
+      "countries": [
+        "de",
+        "un"
+      ],
+      "title": {
+        "da": "Tysk poetisk realisme og naturalisme",
+        "en": "German Poetic Realism and Naturalism",
+        "fr": "Réalisme poétique et naturalisme allemands",
+        "de": "Deutscher poetischer Realismus und Naturalismus"
+      },
+      "sortYear": 1848,
+      "sources": [
+        {
+          "title": "German literature",
+          "url": "https://www.britannica.com/art/German-literature"
+        }
+      ]
+    },
+    {
+      "id": "dk-det-moderne-gennembrud",
+      "tradition": "dk",
+      "countries": [
+        "dk"
+      ],
+      "title": {
+        "da": "Det moderne gennembrud i Danmark",
+        "en": "The Danish Modern Breakthrough",
+        "fr": "La Percée moderne danoise",
+        "de": "Der moderne Durchbruch in Dänemark"
+      },
+      "sortYear": 1870,
+      "sources": [
+        {
+          "title": "Dansk litteraturs historie",
+          "url": "https://dansklitteraturshistorie.lex.dk/Om_Dansk_litteraturs_historie"
+        }
+      ]
+    },
+    {
+      "id": "no-realisme-og-naturalisme",
+      "tradition": "no",
+      "countries": [
+        "no"
+      ],
+      "title": {
+        "da": "Norsk realisme og naturalisme",
+        "en": "Norwegian Realism and Naturalism",
+        "fr": "Réalisme et naturalisme norvégiens",
+        "de": "Norwegischer Realismus und Naturalismus"
+      },
+      "sortYear": 1870,
+      "sources": [
+        {
+          "title": "Norwegian literature",
+          "url": "https://www.britannica.com/art/Norwegian-literature"
+        }
+      ]
+    },
+    {
+      "id": "se-det-moderne-gennembrud",
+      "tradition": "se",
+      "countries": [
+        "se"
+      ],
+      "title": {
+        "da": "Det moderne gennembrud i Sverige",
+        "en": "The Swedish Modern Breakthrough",
+        "fr": "La Percée moderne suédoise",
+        "de": "Der moderne Durchbruch in Schweden"
+      },
+      "sortYear": 1870,
+      "sources": [
+        {
+          "title": "Swedish literature",
+          "url": "https://www.britannica.com/art/Swedish-literature"
+        }
+      ]
+    },
+    {
+      "id": "it-verisme",
+      "tradition": "it",
+      "countries": [
+        "it"
+      ],
+      "title": {
+        "da": "Italiensk verisme",
+        "en": "Italian Verismo",
+        "fr": "Vérisme italien",
+        "de": "Italienischer Verismus"
+      },
+      "sortYear": 1870,
+      "sources": [
+        {
+          "title": "Italian literature",
+          "url": "https://www.britannica.com/art/Italian-literature"
+        }
+      ]
+    },
+    {
+      "id": "es-realisme-og-naturalisme",
+      "tradition": "es",
+      "countries": [
+        "un"
+      ],
+      "title": {
+        "da": "Spansk realisme og naturalisme",
+        "en": "Spanish Realism and Naturalism",
+        "fr": "Réalisme et naturalisme espagnols",
+        "de": "Spanischer Realismus und Naturalismus"
+      },
+      "sortYear": 1840,
+      "sources": [
+        {
+          "title": "Spanish literature",
+          "url": "https://www.britannica.com/art/Spanish-literature"
+        }
+      ]
+    },
+    {
+      "id": "fr-symbolisme",
+      "tradition": "fr",
+      "countries": [
+        "fr"
+      ],
+      "title": {
+        "da": "Fransk symbolisme",
+        "en": "French Symbolism",
+        "fr": "Symbolisme français",
+        "de": "Französischer Symbolismus"
+      },
+      "sortYear": 1860,
+      "sources": [
+        {
+          "title": "French literature",
+          "url": "https://www.britannica.com/art/French-literature"
+        }
+      ]
+    },
+    {
+      "id": "gb-aestheticisme-og-dekadence",
+      "tradition": "gb",
+      "countries": [
+        "gb"
+      ],
+      "title": {
+        "da": "Britisk æsteticisme og dekadence",
+        "en": "British Aestheticism and Decadence",
+        "fr": "Esthétisme et décadence britanniques",
+        "de": "Britischer Ästhetizismus und Dekadenz"
+      },
+      "sortYear": 1860,
+      "sources": [
+        {
+          "title": "English literature",
+          "url": "https://www.britannica.com/art/English-literature"
+        }
+      ]
+    },
+    {
+      "id": "dk-halvfemserne-og-symbolismen",
+      "tradition": "dk",
+      "countries": [
+        "dk"
+      ],
+      "title": {
+        "da": "Dansk halvfemserlitteratur og symbolisme",
+        "en": "Danish 1890s literature and Symbolism",
+        "fr": "Littérature danoise des années 1890 et symbolisme",
+        "de": "Dänische Literatur der 1890er und Symbolismus"
+      },
+      "sortYear": 1890,
+      "sources": [
+        {
+          "title": "Dansk litteraturs historie",
+          "url": "https://dansklitteraturshistorie.lex.dk/Om_Dansk_litteraturs_historie"
+        }
+      ]
+    },
+    {
+      "id": "se-nittitalisme",
+      "tradition": "se",
+      "countries": [
+        "se"
+      ],
+      "title": {
+        "da": "Svensk nittitalisme",
+        "en": "Swedish 1890s literature",
+        "fr": "Littérature suédoise des années 1890",
+        "de": "Schwedische Literatur der 1890er"
+      },
+      "sortYear": 1890,
+      "sources": [
+        {
+          "title": "Swedish literature",
+          "url": "https://www.britannica.com/art/Swedish-literature"
+        }
+      ]
+    },
+    {
+      "id": "no-nyromantik",
+      "tradition": "no",
+      "countries": [
+        "no"
+      ],
+      "title": {
+        "da": "Norsk nyromantik",
+        "en": "Norwegian Neo-Romanticism",
+        "fr": "Néoromantisme norvégien",
+        "de": "Norwegische Neuromantik"
+      },
+      "sortYear": 1890,
+      "sources": [
+        {
+          "title": "Norwegian literature",
+          "url": "https://www.britannica.com/art/Norwegian-literature"
+        }
+      ]
+    },
+    {
+      "id": "de-fin-de-siecle",
+      "tradition": "de",
+      "countries": [
+        "de",
+        "un"
+      ],
+      "title": {
+        "da": "Tysk fin de siècle",
+        "en": "German fin de siècle",
+        "fr": "Fin de siècle allemand",
+        "de": "Deutsches Fin de Siècle"
+      },
+      "sortYear": 1890,
+      "sources": [
+        {
+          "title": "German literature",
+          "url": "https://www.britannica.com/art/German-literature"
+        }
+      ]
+    },
+    {
+      "id": "nl-tachtigers",
+      "tradition": "nl",
+      "countries": [
+        "un"
+      ],
+      "title": {
+        "da": "Nederlandske Tachtigers",
+        "en": "Dutch Tachtigers",
+        "fr": "Tachtigers néerlandais",
+        "de": "Niederländische Tachtigers"
+      },
+      "sortYear": 1880,
+      "sources": [
+        {
+          "title": "Dutch literature",
+          "url": "https://www.britannica.com/art/Dutch-literature"
+        }
+      ]
+    },
+    {
+      "id": "gb-modernisme",
+      "tradition": "gb",
+      "countries": [
+        "gb"
+      ],
+      "title": {
+        "da": "Britisk modernisme",
+        "en": "British Modernism",
+        "fr": "Modernisme britannique",
+        "de": "Britische Moderne"
+      },
+      "sortYear": 1900,
+      "sources": [
+        {
+          "title": "English literature",
+          "url": "https://www.britannica.com/art/English-literature"
+        }
+      ]
+    },
+    {
+      "id": "us-modernisme",
+      "tradition": "us",
+      "countries": [
+        "us"
+      ],
+      "title": {
+        "da": "Amerikansk modernisme",
+        "en": "American Modernism",
+        "fr": "Modernisme américain",
+        "de": "Amerikanische Moderne"
+      },
+      "sortYear": 1900,
+      "sources": [
+        {
+          "title": "American literature",
+          "url": "https://www.britannica.com/art/American-literature"
+        }
+      ]
+    },
+    {
+      "id": "fr-modernisme-og-avantgarde",
+      "tradition": "fr",
+      "countries": [
+        "fr"
+      ],
+      "title": {
+        "da": "Fransk modernisme og avantgarde",
+        "en": "French Modernism and avant-garde",
+        "fr": "Modernisme et avant-garde français",
+        "de": "Französische Moderne und Avantgarde"
+      },
+      "sortYear": 1900,
+      "sources": [
+        {
+          "title": "French literature",
+          "url": "https://www.britannica.com/art/French-literature"
+        }
+      ]
+    },
+    {
+      "id": "de-ekspressionisme-og-ny-saglighed",
+      "tradition": "de",
+      "countries": [
+        "de",
+        "un"
+      ],
+      "title": {
+        "da": "Tysk ekspressionisme og ny saglighed",
+        "en": "German Expressionism and New Objectivity",
+        "fr": "Expressionnisme et Nouvelle Objectivité allemands",
+        "de": "Deutscher Expressionismus und Neue Sachlichkeit"
+      },
+      "sortYear": 1910,
+      "sources": [
+        {
+          "title": "German literature",
+          "url": "https://www.britannica.com/art/German-literature"
+        }
+      ]
+    },
+    {
+      "id": "dk-tidlig-modernisme",
+      "tradition": "dk",
+      "countries": [
+        "dk"
+      ],
+      "title": {
+        "da": "Dansk tidlig modernisme",
+        "en": "Danish early Modernism",
+        "fr": "Premier modernisme danois",
+        "de": "Dänische frühe Moderne"
+      },
+      "sortYear": 1900,
+      "sources": [
+        {
+          "title": "Dansk litteraturs historie",
+          "url": "https://dansklitteraturshistorie.lex.dk/Om_Dansk_litteraturs_historie"
+        }
+      ]
+    },
+    {
+      "id": "no-modernisme",
+      "tradition": "no",
+      "countries": [
+        "no"
+      ],
+      "title": {
+        "da": "Norsk modernisme",
+        "en": "Norwegian Modernism",
+        "fr": "Modernisme norvégien",
+        "de": "Norwegische Moderne"
+      },
+      "sortYear": 1890,
+      "sources": [
+        {
+          "title": "Norwegian literature",
+          "url": "https://www.britannica.com/art/Norwegian-literature"
+        }
+      ]
+    },
+    {
+      "id": "se-modernisme",
+      "tradition": "se",
+      "countries": [
+        "se"
+      ],
+      "title": {
+        "da": "Svensk modernisme",
+        "en": "Swedish Modernism",
+        "fr": "Modernisme suédois",
+        "de": "Schwedische Moderne"
+      },
+      "sortYear": 1900,
+      "sources": [
+        {
+          "title": "Swedish literature",
+          "url": "https://www.britannica.com/art/Swedish-literature"
+        }
+      ]
+    },
+    {
+      "id": "sv-fi-modernisme",
+      "tradition": "sv-fi",
+      "countries": [
+        "un"
+      ],
+      "title": {
+        "da": "Finlandssvensk modernisme",
+        "en": "Finland-Swedish Modernism",
+        "fr": "Modernisme finlandais de langue suédoise",
+        "de": "Finnlandschwedische Moderne"
+      },
+      "sortYear": 1910,
+      "sources": [
+        {
+          "title": "Swedish literature",
+          "url": "https://www.britannica.com/art/Swedish-literature"
+        }
+      ]
+    },
+    {
+      "id": "it-modernisme-og-futurisme",
+      "tradition": "it",
+      "countries": [
+        "it"
+      ],
+      "title": {
+        "da": "Italiensk modernisme og futurisme",
+        "en": "Italian Modernism and Futurism",
+        "fr": "Modernisme et futurisme italiens",
+        "de": "Italienische Moderne und Futurismus"
+      },
+      "sortYear": 1900,
+      "sources": [
+        {
+          "title": "Italian literature",
+          "url": "https://www.britannica.com/art/Italian-literature"
+        }
+      ]
+    },
+    {
+      "id": "dk-efterkrigsmodernisme",
+      "tradition": "dk",
+      "countries": [
+        "dk"
+      ],
+      "title": {
+        "da": "Dansk efterkrigsmodernisme",
+        "en": "Danish post-war Modernism",
+        "fr": "Modernisme danois d’après-guerre",
+        "de": "Dänische Nachkriegsmoderne"
+      },
+      "sortYear": 1945,
+      "sources": [
+        {
+          "title": "Dansk litteraturs historie",
+          "url": "https://dansklitteraturshistorie.lex.dk/Om_Dansk_litteraturs_historie"
+        }
+      ]
+    },
+    {
+      "id": "gb-efterkrigslitteratur",
+      "tradition": "gb",
+      "countries": [
+        "gb"
+      ],
+      "title": {
+        "da": "Britisk efterkrigslitteratur",
+        "en": "British post-war literature",
+        "fr": "Littérature britannique d’après-guerre",
+        "de": "Britische Nachkriegsliteratur"
+      },
+      "sortYear": 1945,
+      "sources": [
+        {
+          "title": "English literature",
+          "url": "https://www.britannica.com/art/English-literature"
+        }
+      ]
+    },
+    {
+      "id": "us-efterkrigslitteratur",
+      "tradition": "us",
+      "countries": [
+        "us"
+      ],
+      "title": {
+        "da": "Amerikansk efterkrigslitteratur",
+        "en": "American post-war literature",
+        "fr": "Littérature américaine d’après-guerre",
+        "de": "Amerikanische Nachkriegsliteratur"
+      },
+      "sortYear": 1945,
+      "sources": [
+        {
+          "title": "American literature",
+          "url": "https://www.britannica.com/art/American-literature"
+        }
+      ]
+    },
+    {
+      "id": "fr-efterkrigslitteratur",
+      "tradition": "fr",
+      "countries": [
+        "fr"
+      ],
+      "title": {
+        "da": "Fransk efterkrigslitteratur",
+        "en": "French post-war literature",
+        "fr": "Littérature française d’après-guerre",
+        "de": "Französische Nachkriegsliteratur"
+      },
+      "sortYear": 1945,
+      "sources": [
+        {
+          "title": "French literature",
+          "url": "https://www.britannica.com/art/French-literature"
+        }
+      ]
+    },
+    {
+      "id": "de-efterkrigslitteratur",
+      "tradition": "de",
+      "countries": [
+        "de",
+        "un"
+      ],
+      "title": {
+        "da": "Tysk efterkrigslitteratur",
+        "en": "German post-war literature",
+        "fr": "Littérature allemande d’après-guerre",
+        "de": "Deutsche Nachkriegsliteratur"
+      },
+      "sortYear": 1945,
+      "sources": [
+        {
+          "title": "German literature",
+          "url": "https://www.britannica.com/art/German-literature"
+        }
+      ]
+    },
+    {
+      "id": "no-efterkrigsmodernisme",
+      "tradition": "no",
+      "countries": [
+        "no"
+      ],
+      "title": {
+        "da": "Norsk efterkrigsmodernisme",
+        "en": "Norwegian post-war Modernism",
+        "fr": "Modernisme norvégien d’après-guerre",
+        "de": "Norwegische Nachkriegsmoderne"
+      },
+      "sortYear": 1945,
+      "sources": [
+        {
+          "title": "Norwegian literature",
+          "url": "https://www.britannica.com/art/Norwegian-literature"
+        }
+      ]
+    },
+    {
+      "id": "se-efterkrigsmodernisme",
+      "tradition": "se",
+      "countries": [
+        "se"
+      ],
+      "title": {
+        "da": "Svensk efterkrigsmodernisme",
+        "en": "Swedish post-war Modernism",
+        "fr": "Modernisme suédois d’après-guerre",
+        "de": "Schwedische Nachkriegsmoderne"
+      },
+      "sortYear": 1945,
+      "sources": [
+        {
+          "title": "Swedish literature",
+          "url": "https://www.britannica.com/art/Swedish-literature"
+        }
+      ]
+    },
+    {
+      "id": "it-efterkrigslitteratur",
+      "tradition": "it",
+      "countries": [
+        "it"
+      ],
+      "title": {
+        "da": "Italiensk efterkrigslitteratur",
+        "en": "Italian post-war literature",
+        "fr": "Littérature italienne d’après-guerre",
+        "de": "Italienische Nachkriegsliteratur"
+      },
+      "sortYear": 1945,
+      "sources": [
+        {
+          "title": "Italian literature",
+          "url": "https://www.britannica.com/art/Italian-literature"
+        }
+      ]
+    },
+    {
+      "id": "dk-postmodernisme",
+      "tradition": "dk",
+      "countries": [
+        "dk"
+      ],
+      "title": {
+        "da": "Dansk postmodernisme",
+        "en": "Danish Postmodernism",
+        "fr": "Postmodernisme danois",
+        "de": "Dänische Postmoderne"
+      },
+      "sortYear": 1960,
+      "sources": [
+        {
+          "title": "Dansk litteraturs historie",
+          "url": "https://dansklitteraturshistorie.lex.dk/Om_Dansk_litteraturs_historie"
+        }
+      ]
+    },
+    {
+      "id": "gb-postmodernisme",
+      "tradition": "gb",
+      "countries": [
+        "gb"
+      ],
+      "title": {
+        "da": "Britisk postmodernisme",
+        "en": "British Postmodernism",
+        "fr": "Postmodernisme britannique",
+        "de": "Britische Postmoderne"
+      },
+      "sortYear": 1960,
+      "sources": [
+        {
+          "title": "English literature",
+          "url": "https://www.britannica.com/art/English-literature"
+        }
+      ]
+    },
+    {
+      "id": "us-postmodernisme",
+      "tradition": "us",
+      "countries": [
+        "us"
+      ],
+      "title": {
+        "da": "Amerikansk postmodernisme",
+        "en": "American Postmodernism",
+        "fr": "Postmodernisme américain",
+        "de": "Amerikanische Postmoderne"
+      },
+      "sortYear": 1960,
+      "sources": [
+        {
+          "title": "American literature",
+          "url": "https://www.britannica.com/art/American-literature"
+        }
+      ]
+    },
+    {
+      "id": "fr-postmodernisme",
+      "tradition": "fr",
+      "countries": [
+        "fr"
+      ],
+      "title": {
+        "da": "Fransk postmodernisme",
+        "en": "French Postmodernism",
+        "fr": "Postmodernisme français",
+        "de": "Französische Postmoderne"
+      },
+      "sortYear": 1960,
+      "sources": [
+        {
+          "title": "French literature",
+          "url": "https://www.britannica.com/art/French-literature"
+        }
+      ]
+    },
+    {
+      "id": "de-postmodernisme",
+      "tradition": "de",
+      "countries": [
+        "de",
+        "un"
+      ],
+      "title": {
+        "da": "Tysk postmodernisme",
+        "en": "German Postmodernism",
+        "fr": "Postmodernisme allemand",
+        "de": "Deutsche Postmoderne"
+      },
+      "sortYear": 1960,
+      "sources": [
+        {
+          "title": "German literature",
+          "url": "https://www.britannica.com/art/German-literature"
+        }
+      ]
+    },
+    {
+      "id": "no-postmodernisme",
+      "tradition": "no",
+      "countries": [
+        "no"
+      ],
+      "title": {
+        "da": "Norsk postmodernisme",
+        "en": "Norwegian Postmodernism",
+        "fr": "Postmodernisme norvégien",
+        "de": "Norwegische Postmoderne"
+      },
+      "sortYear": 1960,
+      "sources": [
+        {
+          "title": "Norwegian literature",
+          "url": "https://www.britannica.com/art/Norwegian-literature"
+        }
+      ]
+    },
+    {
+      "id": "se-postmodernisme",
+      "tradition": "se",
+      "countries": [
+        "se"
+      ],
+      "title": {
+        "da": "Svensk postmodernisme",
+        "en": "Swedish Postmodernism",
+        "fr": "Postmodernisme suédois",
+        "de": "Schwedische Postmoderne"
+      },
+      "sortYear": 1960,
+      "sources": [
+        {
+          "title": "Swedish literature",
+          "url": "https://www.britannica.com/art/Swedish-literature"
+        }
+      ]
+    },
+    {
+      "id": "it-postmodernisme",
+      "tradition": "it",
+      "countries": [
+        "it"
+      ],
+      "title": {
+        "da": "Italiensk postmodernisme",
+        "en": "Italian Postmodernism",
+        "fr": "Postmodernisme italien",
+        "de": "Italienische Postmoderne"
+      },
+      "sortYear": 1960,
+      "sources": [
+        {
+          "title": "Italian literature",
+          "url": "https://www.britannica.com/art/Italian-literature"
+        }
+      ]
+    },
+    {
+      "id": "dk-samtidslitteratur",
+      "tradition": "dk",
+      "countries": [
+        "dk"
+      ],
+      "title": {
+        "da": "Dansk samtidslitteratur",
+        "en": "Danish contemporary literature",
+        "fr": "Littérature danoise contemporaine",
+        "de": "Dänische Gegenwartsliteratur"
+      },
+      "sortYear": 1990,
+      "sources": [
+        {
+          "title": "Dansk litteraturs historie",
+          "url": "https://dansklitteraturshistorie.lex.dk/Om_Dansk_litteraturs_historie"
+        }
+      ]
+    },
+    {
+      "id": "gb-samtidslitteratur",
+      "tradition": "gb",
+      "countries": [
+        "gb"
+      ],
+      "title": {
+        "da": "Britisk samtidslitteratur",
+        "en": "British contemporary literature",
+        "fr": "Littérature britannique contemporaine",
+        "de": "Britische Gegenwartsliteratur"
+      },
+      "sortYear": 1990,
+      "sources": [
+        {
+          "title": "English literature",
+          "url": "https://www.britannica.com/art/English-literature"
+        }
+      ]
+    },
+    {
+      "id": "us-samtidslitteratur",
+      "tradition": "us",
+      "countries": [
+        "us"
+      ],
+      "title": {
+        "da": "Amerikansk samtidslitteratur",
+        "en": "American contemporary literature",
+        "fr": "Littérature américaine contemporaine",
+        "de": "Amerikanische Gegenwartsliteratur"
+      },
+      "sortYear": 1990,
+      "sources": [
+        {
+          "title": "American literature",
+          "url": "https://www.britannica.com/art/American-literature"
+        }
+      ]
+    },
+    {
+      "id": "fr-samtidslitteratur",
+      "tradition": "fr",
+      "countries": [
+        "fr"
+      ],
+      "title": {
+        "da": "Fransk samtidslitteratur",
+        "en": "French contemporary literature",
+        "fr": "Littérature française contemporaine",
+        "de": "Französische Gegenwartsliteratur"
+      },
+      "sortYear": 1990,
+      "sources": [
+        {
+          "title": "French literature",
+          "url": "https://www.britannica.com/art/French-literature"
+        }
+      ]
+    },
+    {
+      "id": "de-samtidslitteratur",
+      "tradition": "de",
+      "countries": [
+        "de",
+        "un"
+      ],
+      "title": {
+        "da": "Tysk samtidslitteratur",
+        "en": "German contemporary literature",
+        "fr": "Littérature allemande contemporaine",
+        "de": "Deutsche Gegenwartsliteratur"
+      },
+      "sortYear": 1990,
+      "sources": [
+        {
+          "title": "German literature",
+          "url": "https://www.britannica.com/art/German-literature"
+        }
+      ]
+    },
+    {
+      "id": "no-samtidslitteratur",
+      "tradition": "no",
+      "countries": [
+        "no"
+      ],
+      "title": {
+        "da": "Norsk samtidslitteratur",
+        "en": "Norwegian contemporary literature",
+        "fr": "Littérature norvégienne contemporaine",
+        "de": "Norwegische Gegenwartsliteratur"
+      },
+      "sortYear": 1990,
+      "sources": [
+        {
+          "title": "Norwegian literature",
+          "url": "https://www.britannica.com/art/Norwegian-literature"
+        }
+      ]
+    },
+    {
+      "id": "se-samtidslitteratur",
+      "tradition": "se",
+      "countries": [
+        "se"
+      ],
+      "title": {
+        "da": "Svensk samtidslitteratur",
+        "en": "Swedish contemporary literature",
+        "fr": "Littérature suédoise contemporaine",
+        "de": "Schwedische Gegenwartsliteratur"
+      },
+      "sortYear": 1990,
+      "sources": [
+        {
+          "title": "Swedish literature",
+          "url": "https://www.britannica.com/art/Swedish-literature"
+        }
+      ]
+    },
+    {
+      "id": "it-samtidslitteratur",
+      "tradition": "it",
+      "countries": [
+        "it"
+      ],
+      "title": {
+        "da": "Italiensk samtidslitteratur",
+        "en": "Italian contemporary literature",
+        "fr": "Littérature italienne contemporaine",
+        "de": "Italienische Gegenwartsliteratur"
+      },
+      "sortYear": 1990,
+      "sources": [
+        {
+          "title": "Italian literature",
+          "url": "https://www.britannica.com/art/Italian-literature"
+        }
+      ]
+    },
+    {
+      "id": "dk-middelalderlitteratur",
+      "tradition": "dk",
+      "countries": [
+        "dk"
+      ],
+      "title": {
+        "da": "Dansk middelalderlitteratur",
+        "en": "Danish medieval literature",
+        "fr": "Littérature médiévale danoise",
+        "de": "Dänische Literatur des Mittelalters"
+      },
+      "sortYear": 1100,
+      "sources": [
+        {
+          "title": "Dansk litteraturs historie",
+          "url": "https://dansklitteraturshistorie.lex.dk/Om_Dansk_litteraturs_historie"
+        }
+      ]
+    },
+    {
+      "id": "de-middelalderlitteratur",
+      "tradition": "de",
+      "countries": [
+        "de",
+        "un"
+      ],
+      "title": {
+        "da": "Tysk middelalderlitteratur",
+        "en": "German medieval literature",
+        "fr": "Littérature médiévale allemande",
+        "de": "Deutsche Literatur des Mittelalters"
+      },
+      "sortYear": 750,
+      "sources": [
+        {
+          "title": "German literature",
+          "url": "https://www.britannica.com/art/German-literature"
+        }
+      ]
+    },
+    {
+      "id": "fr-middelalderlitteratur",
+      "tradition": "fr",
+      "countries": [
+        "fr"
+      ],
+      "title": {
+        "da": "Fransk middelalderlitteratur",
+        "en": "French medieval literature",
+        "fr": "Littérature médiévale française",
+        "de": "Französische Literatur des Mittelalters"
+      },
+      "sortYear": 1050,
+      "sources": [
+        {
+          "title": "French literature",
+          "url": "https://www.britannica.com/art/French-literature"
+        }
+      ]
+    },
+    {
+      "id": "es-romantik",
+      "tradition": "es",
+      "countries": [
+        "un"
+      ],
+      "title": {
+        "da": "Spansk romantik",
+        "en": "Spanish Romanticism",
+        "fr": "Romantisme espagnol",
+        "de": "Spanische Romantik"
+      },
+      "sortYear": 1800,
+      "sources": [
+        {
+          "title": "Spanish literature",
+          "url": "https://www.britannica.com/art/Spanish-literature"
+        }
+      ]
+    },
+    {
+      "id": "la-nylatinsk-litteratur",
+      "tradition": "la",
+      "countries": [
+        "un"
+      ],
+      "title": {
+        "da": "Nylatinsk litteratur",
+        "en": "Neo-Latin literature",
+        "fr": "Littérature néo-latine",
+        "de": "Neulateinische Literatur"
+      },
+      "sortYear": 1400,
+      "sources": [
+        {
+          "title": "Latin literature",
+          "url": "https://www.britannica.com/art/Latin-literature"
+        }
+      ]
+    },
+    {
+      "id": "sv-fi-realisme-og-nittitalisme",
+      "tradition": "sv-fi",
+      "countries": [
+        "un"
+      ],
+      "title": {
+        "da": "Finlandssvensk realisme og nittitalisme",
+        "en": "Finland-Swedish Realism and 1890s literature",
+        "fr": "Réalisme et littérature finlandaise de langue suédoise des années 1890",
+        "de": "Finnlandschwedischer Realismus und Literatur der 1890er"
+      },
+      "sortYear": 1870,
+      "sources": [
+        {
+          "title": "Swedish literature",
+          "url": "https://www.britannica.com/art/Swedish-literature"
+        }
+      ]
+    }
+  ]
+}
+

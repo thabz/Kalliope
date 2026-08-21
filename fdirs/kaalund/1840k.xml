@@ -1,25 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="1840k" author="kaalund" status="complete" type="poetry">
 <workhead>
-    <title>Kong Haldan den Stærke</title>
-    <year>1840</year>
-    <notes>
-        <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
-        <note>Bidrag fra Henrik Nielsen.</note>
-    </notes>
-    <pictures>
-        <picture src="1840k-p1.jpg">Titelbladet til <i>Kong Haldan den Stærke</i> (1840) lyder ,,Kong / Haldan den Stærke. // Romantisk Epos / af / H. W. Kaalund. // Kjøbenhavn. / Forlagt af Bog- og Papirhandler C. Steen. / Trykt i Bianco Lunos bogtrykkeri. / 1840.''.</picture>
-    </pictures>
-    <source facsimile="115308071047_color" facsimile-pages-num="154" facsimile-pages-offset="10">H.V. Kaalund: <i>Kong Haldan den Stærke</i>, C. Steen, Kbh., 1840.</source>
+  <title>Kong Haldan den Stærke</title>
+  <year>1840</year>
+  <identifiers>
+    <runeberg-book>konghaldan</runeberg-book>
+  </identifiers>
+  <notes>
+    <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
+    <note>Bidrag fra Henrik Nielsen.</note>
+  </notes>
+  <pictures>
+    <picture src="1840k-p1.jpg">Titelbladet til <i>Kong Haldan den Stærke</i> (1840) lyder ,,Kong / Haldan den Stærke. // Romantisk Epos / af / H. W. Kaalund. // Kjøbenhavn. / Forlagt af Bog- og Papirhandler C. Steen. / Trykt i Bianco Lunos bogtrykkeri. / 1840.''.</picture>
+  </pictures>
+  <source facsimile="115308071047_color" facsimile-pages-num="154" facsimile-pages-offset="10">H.V. Kaalund: <i>Kong Haldan den Stærke</i>, C. Steen, Kbh., 1840.</source>
 </workhead>
 <workbody>
 
 <text id="kaalund2018061701">
 <head>
-    <title>Forord</title>
-    <firstline>Jeg elsker Alt, hvad muntert, stort og smukt</firstline>
-    <source pages="1-4"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Forord</title>
+  <firstline>Jeg elsker Alt, hvad muntert, stort og smukt</firstline>
+  <source pages="1-4"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -109,10 +112,10 @@ Og dermed Ankret lettet: — Gud i Vold!
 
 <text id="kaalund2018061702">
 <head>
-    <title>Parret paa Leire</title>
-    <firstline>Valkyrier i vilden Sky</firstline>
-    <source pages="5-7"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Parret paa Leire</title>
+  <firstline>Valkyrier i vilden Sky</firstline>
+  <source pages="5-7"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -177,10 +180,10 @@ Hos <w>Odin</w> og hos <w>Frigge</w>.
 
 <text id="kaalund2018061703">
 <head>
-    <title>Haldans Barndom</title>
-    <firstline>Med revne Klæder og filtret Haar</firstline>
-    <source pages="7-15"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Haldans Barndom</title>
+  <firstline>Med revne Klæder og filtret Haar</firstline>
+  <source pages="7-15"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -405,10 +408,10 @@ Men <w>Haldan</w> ud til sin Bamse gik:
 
 <text id="kaalund2018061704a">
 <head>
-    <title>Hyldingen</title>
-    <firstline>Af Skjoldungeblod</firstline>
-    <source pages="16-19"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Hyldingen</title>
+  <firstline>Af Skjoldungeblod</firstline>
+  <source pages="16-19"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -508,10 +511,10 @@ Og tyssed' med Sang hendes Klage.
 
 <text id="kaalund2018061705">
 <head>
-    <title>Havfruens Spaadom</title>
-    <firstline>Atter Naturen sig reiste fra Baaren</firstline>
-    <source pages="20-27"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Havfruens Spaadom</title>
+  <firstline>Atter Naturen sig reiste fra Baaren</firstline>
+  <source pages="20-27"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -702,10 +705,10 @@ Kinden, det aned man ei! —
 
 <text id="kaalund2018061706">
 <head>
-    <title>Haldans første Bedrift</title>
-    <firstline>Ind ad Isefjordens Speil</firstline>
-    <source pages="27-32"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Haldans første Bedrift</title>
+  <firstline>Ind ad Isefjordens Speil</firstline>
+  <source pages="27-32"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -840,10 +843,10 @@ Hanen reiser Kam i Æg!''
 
 <text id="kaalund2018061707">
 <head>
-    <title>Haldan vil hente sin Bedstefaders Sværd</title>
-    <firstline>Hvad Sangens Guldfugl om Drothe kvad</firstline>
-    <source pages="32-35"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Haldan vil hente sin Bedstefaders Sværd</title>
+  <firstline>Hvad Sangens Guldfugl om Drothe kvad</firstline>
+  <source pages="32-35"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -950,10 +953,10 @@ Han fløi, saa let som et Pileskud,
 
 <text id="kaalund2018061708">
 <head>
-    <title>Reisen til Norge</title>
-    <firstline>Høit over Havets Kæmpespeil</firstline>
-    <source pages="36-39"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Reisen til Norge</title>
+  <firstline>Høit over Havets Kæmpespeil</firstline>
+  <source pages="36-39"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1052,10 +1055,10 @@ Paa Slætten se'r man Solens Guld,
 
 <text id="kaalund2018061709">
 <head>
-    <title>Haldan ved Maalet for sit Æventyr</title>
-    <firstline>Over Fjeldets sorte Stene</firstline>
-    <source pages="40-45"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Haldan ved Maalet for sit Æventyr</title>
+  <firstline>Over Fjeldets sorte Stene</firstline>
+  <source pages="40-45"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1192,10 +1195,10 @@ Bragte han Kong' <w>Regnolds</w> Sværd!
 
 <text id="kaalund2018061710">
 <head>
-    <title>Gyritha og Haldan</title>
-    <firstline>Nys gik Gyritha som Barn ved Sø</firstline>
-    <source pages="45-48"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Gyritha og Haldan</title>
+  <firstline>Nys gik Gyritha som Barn ved Sø</firstline>
+  <source pages="45-48"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1284,10 +1287,10 @@ En Kampevise han hørte sjunge.
 
 <text id="kaalund2018061711a">
 <head>
-    <title>Borkords sidste Seier</title>
-    <firstline>Paa det vide Hav i Norden hærgede en Vikingsmand</firstline>
-    <source pages="48-57"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Borkords sidste Seier</title>
+  <firstline>Paa det vide Hav i Norden hærgede en Vikingsmand</firstline>
+  <source pages="48-57"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1467,10 +1470,10 @@ Engang tidlig eller sildig skal vi Alle samme Vei.
 
 <text id="kaalund2018061712">
 <head>
-    <title>Borkords Jordefærd</title>
-    <firstline>Saa seiled' de med Borkords Liig</firstline>
-    <source pages="58-59"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Borkords Jordefærd</title>
+  <firstline>Saa seiled' de med Borkords Liig</firstline>
+  <source pages="58-59"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1524,10 +1527,10 @@ Og om den Helt fra Leire.
 
 <text id="kaalund2018061713">
 <head>
-    <title>Haldan bortjager Sorgen</title>
-    <firstline>Saavidt i Nord</firstline>
-    <source pages="60-61"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Haldan bortjager Sorgen</title>
+  <firstline>Saavidt i Nord</firstline>
+  <source pages="60-61"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1584,10 +1587,10 @@ Og Gangere og Vaaben.
 
 <text id="kaalund2018061714">
 <head>
-    <title>Haldan som Lurer</title>
-    <firstline>Vildt voxed' Bøg og Ege paa Sjølunds grønne Ø</firstline>
-    <source pages="62-67"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Haldan som Lurer</title>
+  <firstline>Vildt voxed' Bøg og Ege paa Sjølunds grønne Ø</firstline>
+  <source pages="62-67"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1741,10 +1744,10 @@ Som vaagnet af en Drøm han i Lunden sig sandt.
 
 <text id="kaalund2018061715">
 <head>
-    <title>Heltedandsen i Skoven</title>
-    <firstline>Som Jætter, saa store</firstline>
-    <source pages="68-75"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Heltedandsen i Skoven</title>
+  <firstline>Som Jætter, saa store</firstline>
+  <source pages="68-75"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1940,10 +1943,10 @@ Som død blev han bragt.
 
 <text id="kaalund2018061716">
 <head>
-    <title>Haldans Kjerlighed</title>
-    <firstline>Paa blodig Vinge over Norden</firstline>
-    <source pages="75-82"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Haldans Kjerlighed</title>
+  <firstline>Paa blodig Vinge over Norden</firstline>
+  <source pages="75-82"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2132,10 +2135,10 @@ Da hun ei meer sin <w>Odur</w> fandt.
 
 <text id="kaalund2018061717">
 <head>
-    <title>Drothes Svanesang</title>
-    <firstline>Paa sine Snekker Haldan foer</firstline>
-    <source pages="82-85"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Drothes Svanesang</title>
+  <firstline>Paa sine Snekker Haldan foer</firstline>
+  <source pages="82-85"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2225,10 +2228,10 @@ Om <w>Borkord</w> og hans Mage!''
 
 <text id="kaalund2018061718">
 <head>
-    <title>Haldan paa Havet</title>
-    <firstline>Lystigt og let for den susende Vind</firstline>
-    <source pages="85-89"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Haldan paa Havet</title>
+  <firstline>Lystigt og let for den susende Vind</firstline>
+  <source pages="85-89"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2346,10 +2349,10 @@ Og en Skaal for de evige Guder!''
 
 <text id="kaalund2018061719">
 <head>
-    <title>Haldan træffer sin Broder</title>
-    <firstline>Paa Garderika's Sletter</firstline>
-    <source pages="90-107"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Haldan træffer sin Broder</title>
+  <firstline>Paa Garderika's Sletter</firstline>
+  <source pages="90-107"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2835,10 +2838,10 @@ Om den forsvundne Tid!
 
 <text id="kaalund2018061720">
 <head>
-    <title>Nyt fra Hjemmet</title>
-    <firstline>Saa gik han ned, hvor hans Snekker laae</firstline>
-    <source pages="108-116"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Nyt fra Hjemmet</title>
+  <firstline>Saa gik han ned, hvor hans Snekker laae</firstline>
+  <source pages="108-116"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3067,10 +3070,10 @@ Han hvisked' og gik i Hallen ind.
 
 <text id="kaalund2018061721">
 <head>
-    <title>Haldan som ubuden Gjæst</title>
-    <firstline>Derinde i sin Helterad</firstline>
-    <source pages="116-123"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Haldan som ubuden Gjæst</title>
+  <firstline>Derinde i sin Helterad</firstline>
+  <source pages="116-123"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3282,10 +3285,10 @@ Skal mellem os sig stille!
 
 <text id="kaalund2018061722">
 <head>
-    <title>Hylding og Bryllup</title>
-    <firstline>Den næste Dag paa Thinget</firstline>
-    <source pages="124-129"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Hylding og Bryllup</title>
+  <firstline>Den næste Dag paa Thinget</firstline>
+  <source pages="124-129"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3451,10 +3454,10 @@ Og vug dig sorgløs paa Blomstersivet!
 
 <text id="kaalund2018061723a">
 <head>
-    <title>Kong Haldans Død</title>
-    <firstline>Ti Somre Himlens Sol sig svang</firstline>
-    <source pages="130-138"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Kong Haldans Død</title>
+  <firstline>Ti Somre Himlens Sol sig svang</firstline>
+  <source pages="130-138"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>

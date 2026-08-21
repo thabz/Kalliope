@@ -8,7 +8,28 @@ import {
 
 const flatten = array => [].concat(...array);
 
-const lineNumberAt = (text, index) => text.slice(0, index).split('\n').length;
+const lineStarts = text => {
+  const starts = [0];
+  let index = -1;
+  while ((index = text.indexOf('\n', index + 1)) !== -1) {
+    starts.push(index + 1);
+  }
+  return starts;
+};
+
+const lineNumberAt = (starts, index) => {
+  let low = 0;
+  let high = starts.length;
+  while (low < high) {
+    const middle = Math.floor((low + high) / 2);
+    if (starts[middle] <= index) {
+      low = middle + 1;
+    } else {
+      high = middle;
+    }
+  }
+  return low;
+};
 
 const parseIntOrNull = value => {
   const parsed = parseInt(value, 10);
@@ -29,6 +50,13 @@ const normalizeFileName = filename =>
   filename.replace(/^\.\//, '').replace(/^fdirs\//, '').replace(/\\/g, '/');
 
 const stripXmlComments = data => data.replace(/<!--[\s\S]*?-->/g, '');
+
+const createTextContext = data => ({
+  data,
+  lines: data.split('\n'),
+  lineStarts: lineStarts(data),
+  withoutComments: stripXmlComments(data),
+});
 
 const parsePoetWorkFiles = (rootDir = process.cwd()) => {
   const fdirs = path.join(rootDir, 'fdirs');
@@ -86,16 +114,20 @@ const parsePoetWorkFiles = (rootDir = process.cwd()) => {
   return metadata;
 };
 
-const collectTextIds = data =>
-  Array.from(stripXmlComments(data).matchAll(/<(?:text|section)\b[^>]*\sid="([^"]+)"/g)).map(
+const collectTextIds = context =>
+  Array.from(context.withoutComments.matchAll(
+    /<(?:text|section)\b[^>]*\sid="([^"]+)"/g,
+  )).map(
     (match) => ({
       id: match[1],
-      line: lineNumberAt(data, match.index),
+      line: lineNumberAt(context.lineStarts, match.index),
     })
   );
 
-const collectTextAliases = data =>
-  Array.from(stripXmlComments(data).matchAll(/<(?:text|section)\b[^>]*>/g)).flatMap(
+const collectTextAliases = context =>
+  Array.from(context.withoutComments.matchAll(
+    /<(?:text|section)\b[^>]*>/g,
+  )).flatMap(
     (partMatch) => {
       const part = partMatch[0];
       const idMatch = part.match(/\sid="([^"]+)"/);
@@ -112,12 +144,13 @@ const collectTextAliases = data =>
         .map((alias) => ({
           id: idMatch[1],
           alias,
-          line: lineNumberAt(data, partMatch.index),
+          line: lineNumberAt(context.lineStarts, partMatch.index),
         }));
     }
   );
 
-const checkNotesGroups = (filename, data) => {
+const checkNotesGroups = (filename, context) => {
+  const { data } = context;
   const headRegexp = /<(workhead|head)>[\s\S]*?<\/\1>/g;
   const idRegexp = /<(?:text|section)[^>]*\sid="([^"]+)"/g;
   let currentId = 'workhead';
@@ -134,7 +167,7 @@ const checkNotesGroups = (filename, data) => {
     if (notesGroups.length > 1) {
       return {
         file: filename,
-        line: lineNumberAt(data, headMatch.index),
+        line: lineNumberAt(context.lineStarts, headMatch.index),
         rule: 'notes-groups',
         severity: 'high',
         description: `${filename} ${currentId} has ${notesGroups.length} <notes> groups.`,
@@ -168,21 +201,14 @@ const findMissingModernFrenchSpacing = data => {
   return null;
 };
 
-const ignoredTestsAtLine = data => {
+const ignoredTestsAtLine = context => {
   const partRegexp = /<(?:text|section)\b[^>]*>/g;
-  const lineStarts = [0];
-  let lineBreakIndex = -1;
-
-  while ((lineBreakIndex = data.indexOf('\n', lineBreakIndex + 1)) !== -1) {
-    lineStarts.push(lineBreakIndex + 1);
-  }
-
-  const ignoredAtLine = new Map();
+  const ignoredAtLine = [];
   let currentIgnoredTests = [];
   let partIndex = 0;
-  const parts = Array.from(data.matchAll(partRegexp));
+  const parts = Array.from(context.data.matchAll(partRegexp));
 
-  lineStarts.forEach((lineStart, lineIndex) => {
+  context.lineStarts.forEach(lineStart => {
     while (partIndex < parts.length && parts[partIndex].index <= lineStart) {
       const ignoreTestsMatch = parts[partIndex][0].match(
         /\signore-tests="([^"]*)"/
@@ -196,7 +222,7 @@ const ignoredTestsAtLine = data => {
               .filter((testName) => testName.length > 0);
       partIndex += 1;
     }
-    ignoredAtLine.set(lineIndex, currentIgnoredTests);
+    ignoredAtLine.push(currentIgnoredTests);
   });
 
   return ignoredAtLine;
@@ -214,6 +240,11 @@ const regexps = [
   },
   { testName: 'leading-dash', regexp: /^-[a-zæøåA-ZÆØÅ]/m },
   { testName: 'empty-firstline', regexp: /<firstline><\/firstline>/ },
+  {
+    testName: 'firstline-trailing-punctuation',
+    regexp: /<firstline>[^<]*[.,;:]\s*<\/firstline>/,
+    whitelist: [/<firstline>[^<]*\.\s+\.\s+\.\s*<\/firstline>/],
+  },
   { testName: 'missing-source-pages', regexp: /<source pages=""\/>/ },
   { testName: 'dot-followed-by-lowercase', regexp: /^.*[^\.]\.\s*[a-z;]\s*$/ },
   {
@@ -299,10 +330,11 @@ const findPoemLineFindingsInText = ({
   data,
   lang,
   shouldUseModernFrenchPunctuationSpacing,
+  context = createTextContext(data),
 }) => {
   const issues = [];
-  const ignoredTests = ignoredTestsAtLine(data);
-  const lineData = data.split('\n');
+  const ignoredTests = ignoredTestsAtLine(context);
+  const lineData = context.lines;
 
   for (const rule of regexps) {
     const regexp = rule.regexp;
@@ -320,7 +352,7 @@ const findPoemLineFindingsInText = ({
         if (
           regexp.test(line) &&
           (rule.testName == null ||
-            ignoredTests.get(lineIndex).indexOf(rule.testName) === -1) &&
+            ignoredTests[lineIndex].indexOf(rule.testName) === -1) &&
           !whitelist.find((w) => w.test(line))
         ) {
           issues.push({
@@ -382,8 +414,10 @@ const collectPoemLineQualityFindings = ({
     if (facsimileOnly && !hasPdfFacsimile(data)) {
       continue;
     }
+    const filteredData = filterTextDataByMinDate(data, minDate);
     fileByFilename.set(item.filename, {
-      data: filterTextDataByMinDate(data, minDate),
+      data: filteredData,
+      context: createTextContext(filteredData),
       ...item,
       path: relativePath,
     });
@@ -391,14 +425,20 @@ const collectPoemLineQualityFindings = ({
 
   const textIds = flatten(
     Array.from(fileByFilename.entries()).map(([filename, entry]) =>
-      collectTextIds(entry.data).map((textId) => ({ ...textId, file: filename }))
-    )
+      collectTextIds(entry.context).map(textId => ({
+        ...textId,
+        file: filename,
+      })),
+    ),
   );
 
   const aliases = flatten(
     Array.from(fileByFilename.entries()).map(([filename, entry]) =>
-      collectTextAliases(entry.data).map((alias) => ({ ...alias, file: filename }))
-    )
+      collectTextAliases(entry.context).map(alias => ({
+        ...alias,
+        file: filename,
+      })),
+    ),
   );
 
   textIds.forEach(({ id, line, file }) => {
@@ -452,7 +492,7 @@ const collectPoemLineQualityFindings = ({
       return;
     }
 
-    const notesIssue = checkNotesGroups(entry.path, entry.data);
+    const notesIssue = checkNotesGroups(entry.path, entry.context);
     if (notesIssue != null) {
       issues.push({
         ...notesIssue,
@@ -469,6 +509,7 @@ const collectPoemLineQualityFindings = ({
       ...findPoemLineFindingsInText({
         file: entry.path,
         data: entry.data,
+        context: entry.context,
         lang: entry.lang,
         shouldUseModernFrenchPunctuationSpacing,
       })

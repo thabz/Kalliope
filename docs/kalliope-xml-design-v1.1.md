@@ -2,8 +2,11 @@
 
 ## Status
 
-**Besluttet design, version 1.1**  
+**Besluttet design, version 1.1**
+
 **Dato: 20. juli 2026**
+
+**Opdateret: 9. august 2026**
 
 Dette dokument omsætter masterplanen til en konkret XML-model, der kan implementeres trinvist i Kalliopes nuværende repository.
 
@@ -181,15 +184,22 @@ Eksisterende værks-ID’er som `aarestrup/1838` bevares. Build-processen kan fo
 
 ### Tekst-ID
 
-Hver tekstforekomst får et globalt stabilt ID:
+Hver tekstforekomst får et globalt stabilt ID sammensat af det effektive
+digter-ID, oprettelsesdatoen i formatet `YYYYMMDD` og et løbenummer på mindst
+to cifre:
 
 ```text
-efterklang1868t001
-efterklang1868t002
-efterklang1868t003
+digterid2026081501
+digterid2026081502
+digterid2026081503
 ```
 
-ID’et må ikke afhænge af:
+Det effektive digter-ID er `text/@author`, når attributten findes, og ellers
+værkets `kalliopework/@author`. For antologitekster uden `text/@author` bruges
+samlingens digter-ID `antologierdk`.
+
+Digter-ID'et og oprettelsesdatoen fastlægges, når teksten oprettes. ID'et må
+ikke senere ændres, hvis oplysninger om teksten bliver rettet, herunder:
 
 - titel
 - førstelinje
@@ -197,9 +207,10 @@ ID’et må ikke afhænge af:
 - sidenummer
 - teksttype
 
-Disse oplysninger kan senere ændres uden at tekstens identitet ændres.
+Disse oplysninger kan dermed ændres uden at tekstens identitet ændres.
 
-Løbende numre må ikke genbruges, hvis en fejloprettet tekst slettes eller sammenlægges.
+Løbenumre må ikke genbruges, hvis en fejloprettet tekst slettes eller
+sammenlægges.
 
 ### Facsimile-ID
 
@@ -325,6 +336,8 @@ Eksemplet bruger pladsholdere, hvor de konkrete bibliografiske eller personmæss
 
     </facsimiles>
 
+    <pagebreaks/>
+
     <coverage status="in-progress" updated="2026-07-20">
 
       <scope type="page-inventory" status="in-progress"/>
@@ -347,7 +360,7 @@ Eksemplet bruger pladsholdere, hvor de konkrete bibliografiske eller personmæss
   <workbody>
 
     <text
-        id="efterklang1868t001"
+        id="antologierdk2026072001"
         type="preface"
         status="verified">
 
@@ -379,7 +392,7 @@ Forordets tekst …
     </text>
 
     <text
-        id="efterklang1868t002"
+        id="antologierdk2026072002"
         type="poem"
         status="verified">
 
@@ -425,7 +438,7 @@ Som det findes i Kilden.
     </text>
 
     <text
-        id="efterklang1868t003"
+        id="antologierdk2026072003"
         type="poem"
         status="unresolved">
 
@@ -461,7 +474,7 @@ Et Ord kan ikke læses:
     </text>
 
     <text
-        id="efterklang1868t004"
+        id="antologierdk2026072004"
         type="poem"
         status="verified">
 
@@ -621,7 +634,7 @@ Eksisterende digtsamlinger skal fortsat kunne stå uændret:
   </workhead>
 
   <workbody>
-    <text id="aarestrup1838t001">
+    <text id="aarestrup2026081501">
       ...
     </text>
   </workbody>
@@ -866,7 +879,7 @@ Eksempel:
 
 ```xml
 <text
-    id="efterklang1868t002"
+    id="antologierdk2026072002"
     type="poem"
     status="verified">
 ```
@@ -1374,6 +1387,63 @@ En eksplicit `<page>`-mapping har altid forrang.
 
 En matchende `<range>` har forrang frem for det generelle `offset`.
 
+### Sideskift inde i tekstforekomster
+
+Alle nye, komplette facsimiletransskriptioner skal bevare de fysiske
+sidegrænser inde i en tekstforekomst:
+
+```xml
+<pb n="12" facs="019.jpg"/>
+```
+
+Markøren står præcis ved begyndelsen af den nye kildeside. `n` er den trykte
+sidebetegnelse, når siden har en. `facs` er obligatorisk og indeholder kun det
+stabile filnavn på den samme facsimileside. Med den eksisterende nulbaserede
+filnavngivning svarer PDF-side 20 til `019.jpg`.
+
+Der indsættes kun `<pb>` ved interne sideskift i den sammenhængende tekstkrop,
+ikke automatisk ved begyndelsen eller slutningen af hver `<text>`. Et værk med
+tekster, der alle står på én side, kan derfor have nul `<pb>`.
+
+Når alle inkluderede tekstkroppe er kontrolleret, erklæres det i værkets hoved:
+
+```xml
+<pagebreaks/>
+```
+
+Elementet er en komplethedserklæring og betyder ikke, at der findes mindst én
+`<pb>`. Fravær i en ældre værkfil betyder »ikke oplyst«. Dette følger designets
+princip om trinvis migration.
+
+Relax NG understøtter erklæringen sådan:
+
+```xml
+<define name="pagebreaks">
+  <element name="pagebreaks">
+    <empty/>
+  </element>
+</define>
+```
+
+`pb/@facs` forbliver valgfri i Relax NG af hensyn til eksisterende
+legacy-markører. Den semantiske validator skal kræve en ikke-tom `facs` på hver
+`<pb>` i et værk med `<pagebreaks/>` og kontrollere, at værdien er et filnavn,
+der svarer til den relevante facsimileside.
+
+Alle `source/@pages` på tekstforekomster skal være fulde sidebetegnelser eller
+lukkede, ikke-faldende intervaller. Forkortede slutpunkter som `140-47`, åbne
+intervaller og numerisk faldende intervaller er ugyldige og skal repareres i
+kildedata.
+
+Inden for hver tekstpost skal arabiske `pb/@n` være ikke-faldende; de kan
+begynde forfra ved en ny tekstpost med selvstændig paginering. Numeriske
+`pb/@facs`-filnavne skal være ikke-faldende gennem hele værket. Spring er
+tilladt; romertal i `n` ignoreres af den maskinelle rækkefølgekontrol.
+`ignore-tests="pagebreak-count"` på en tekst eller
+undtagelsesvis hele værket springer kun den aritmetiske sammenligning mellem
+sideinterval og antal `<pb>` over. Den gør ikke et ulovligt interval gyldigt og
+fravælger ikke de øvrige markørkrav.
+
 ### Bagudkompatibilitet
 
 Eksisterende:
@@ -1773,6 +1843,7 @@ Følgende referencer skal tilføjes:
 <ref name="pageMap"/>
 <ref name="pageMapRange"/>
 <ref name="pageMapPage"/>
+<ref name="pagebreaks"/>
 <ref name="relations"/>
 <ref name="relation"/>
 <ref name="coverage"/>
@@ -1945,6 +2016,20 @@ Relax NG kontrollerer XML-strukturen. En særskilt validator skal kontrollere be
 30. `status="verified"` må ikke have ubehandlede produktionsproblemer.
 31. En tekst med et redaktionelt accepteret `<gap>` kan godt være verificeret.
 
+### Sideskift
+
+- `<pagebreaks/>` må kun bruges som komplethedserklæring i `<workhead>`.
+- Alle interne sidegrænser i inkluderede tekstkroppe skal da have præcis én
+  korrekt placeret `<pb>`.
+- Hver `<pb>` skal have en ikke-tom `facs` med facsimilesidens filnavn.
+- `n`, når den findes, skal være den trykte sidebetegnelse og må ikke udfyldes
+  med PDF-siden eller facsimilefilens nummer.
+- Arabiske `n`-værdier og numeriske `facs`-filnavne må ikke falde gennem
+  værket; spring er tilladt.
+- `ignore-tests="pagebreak-count"` må kun fravælge antalskontrollen for en
+  dokumenteret pagineringsafvigelse.
+- Nul `<pb>` er gyldigt, når ingen inkluderet tekst krydser en sidegrænse.
+
 ### Personer
 
 32. En uidentificeret person skal have `status="unresolved"` eller `stub`.
@@ -1989,6 +2074,7 @@ Efter parsing kan en publikation repræsenteres omtrent sådan:
 
   title: "Efterklang",
   year: 1868,
+  pageBreaksComplete: true,
 
   explicitContributors: [],
   effectiveContributors: [],
@@ -2031,7 +2117,7 @@ En tekst:
 
 ```js
 {
-  id: "efterklang1868t002",
+  id: "antologierdk2026072002",
   type: "poem",
   status: "verified",
 
@@ -2135,6 +2221,7 @@ En senere version kan omdøbe `fdirs`, indføre flere publikationskategorier ell
 - tilføj semantiske kildeelementer
 - tilføj imprint og publikationsidentifikatorer
 - tilføj facsimiles og page-map
+- tilføj `<pagebreaks/>` og `pb/@facs`
 - tilføj relations
 - tilføj gap og supplied
 - tilføj coverage
@@ -2153,6 +2240,8 @@ En senere version kan omdøbe `fdirs`, indføre flere publikationskategorier ell
 - opret manglende personposter
 - registrer det primære facsimile
 - registrer trykte sider
+- registrer alle interne sideskift med `n` og `facs`
+- erklær den fuldstændige registrering med `<pagebreaks/>`
 - markér `[ulæseligt]` med `<gap>`
 
 ### Trin 4: Indekser
@@ -2213,6 +2302,10 @@ Første implementation er færdig, når `Efterklang` kan repræsenteres sådan, 
 19. Ulæselige steder gemmes semantisk og vises som `[ulæseligt]`.
 20. Offentlig dækningsstatus kan genereres.
 21. Relax NG og den semantiske validator består.
+22. Alle interne sideskift er bevaret med præcist placerede `<pb>`.
+23. Hver ny `<pb>` har `facs` med det korrekte facsimilefilnavn.
+24. `<pagebreaks/>` kan erklære komplet registrering, også når ingen tekst
+    krydser en sidegrænse.
 
 ---
 
@@ -2233,6 +2326,10 @@ Følgende beslutninger betragtes som låste i version 1.1:
 - Tekstforekomster er knyttet til fysiske publikationer.
 - Samme tekst i forskellige fysiske publikationer er forskellige tekster.
 - Flere facsimiler af samme publikation giver ikke flere tekster.
+- Interne fysiske sideskift bevares med `<pb n="..." facs="..."/>`.
+- `<pagebreaks/>` i `<workhead>` erklærer fuldstændig registrering og kan stå i
+  et værk uden `<pb>`.
+- `facs` er obligatorisk på nye `<pb>` og angiver facsimilesidens filnavn.
 - `original-author` og `translation-of` må forekomme samtidigt.
 - Der valideres konsistens mellem dem.
 - Den trykte originalforfatternavneform bevares.

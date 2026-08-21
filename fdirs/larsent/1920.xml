@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="1920" author="larsent" status="complete" type="poetry">
 <workhead>
-   <title>I Danmarks Navn</title>
-   <year>1920</year>
-   <quality>korrektur1</quality>
+  <title>I Danmarks Navn</title>
+  <year>1920</year>
+  <identifiers>
+    <openlibrary-work>OL12897710W</openlibrary-work>
+  </identifiers>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
 <text id="larsen2001030400" skip-index="true">
 <head>
-   <title>Forord</title>
-   <toctitle>Forord</toctitle>
-   <indextitle>Forord</indextitle>
-   <quality>korrektur1</quality>
+  <title>Forord</title>
+  <toctitle>Forord</toctitle>
+  <indextitle>Forord</indextitle>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <prose>
@@ -29,11 +32,11 @@ Lemvig, August 1920. Thøger Larsen.
 
 <text id="larsent200103041">
 <head>
-   <title>Til min Hustru</title>
-   <toctitle>Til min Hustru</toctitle>
-   <indextitle>Til min Hustru</indextitle>
-   <firstline>Du fulgte mig tro gennem trange Aar</firstline>
-   <quality>korrektur1</quality>
+  <title>Til min Hustru</title>
+  <toctitle>Til min Hustru</toctitle>
+  <indextitle>Til min Hustru</indextitle>
+  <firstline>Du fulgte mig tro gennem trange Aar</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -67,17 +70,17 @@ det smuldrer der.
 
 <section level="1">
 <head>
-   <toctitle>Tid og Id</toctitle>
+  <toctitle>Tid og Id</toctitle>
 </head>
 <content>
 
 <text id="larsent200103042">
 <head>
-   <title>Danmark</title>
-   <toctitle>Danmark</toctitle>
-   <indextitle>Danmark</indextitle>
-   <firstline>Danmark fødte svimmel</firstline>
-   <quality>korrektur1</quality>
+  <title>Danmark</title>
+  <toctitle>Danmark</toctitle>
+  <indextitle>Danmark</indextitle>
+  <firstline>Danmark fødte svimmel</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -149,11 +152,11 @@ alle dine Børn.
 
 <text id="larsent200103043">
 <head>
-   <title>Vintersolhverv</title>
-   <toctitle>Vintersolhverv</toctitle>
-   <indextitle>Vintersolhverv</indextitle>
-   <firstline>Nu mørkner Vindens Stemme</firstline>
-   <quality>korrektur1</quality>
+  <title>Vintersolhverv</title>
+  <toctitle>Vintersolhverv</toctitle>
+  <indextitle>Vintersolhverv</indextitle>
+  <firstline>Nu mørkner Vindens Stemme</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -210,11 +213,11 @@ sene Somres Fugle synge.
 
 <text id="larsent200103044">
 <head>
-   <title>Foraarsmorgen</title>
-   <toctitle>Foraarsmorgen</toctitle>
-   <indextitle>Foraarsmorgen</indextitle>
-   <firstline>Nu skinner Sol over Mark og Eng</firstline>
-   <quality>korrektur1</quality>
+  <title>Foraarsmorgen</title>
+  <toctitle>Foraarsmorgen</toctitle>
+  <indextitle>Foraarsmorgen</indextitle>
+  <firstline>Nu skinner Sol over Mark og Eng</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -238,11 +241,11 @@ som hilst af syngende Aander gaar.
 
 <text id="larsent200103045">
 <head>
-   <title>Høstnat</title>
-   <toctitle>Høstnat</toctitle>
-   <indextitle>Høstnat</indextitle>
-   <firstline>Dagens Travlhed døde</firstline>
-   <quality>korrektur1</quality>
+  <title>Høstnat</title>
+  <toctitle>Høstnat</toctitle>
+  <indextitle>Høstnat</indextitle>
+  <firstline>Dagens Travlhed døde</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -278,11 +281,11 @@ Gudebaad i Land.
 
 <text id="larsent200103046">
 <head>
-   <title>Julenat</title>
-   <toctitle>Julenat</toctitle>
-   <indextitle>Julenat</indextitle>
-   <firstline>Mørket, som ud over Sø og Sletter</firstline>
-   <quality>korrektur1</quality>
+  <title>Julenat</title>
+  <toctitle>Julenat</toctitle>
+  <indextitle>Julenat</indextitle>
+  <firstline>Mørket, som ud over Sø og Sletter</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -327,11 +330,11 @@ evig og salig med gyldne Kinder.
 
 <text id="larsent200103047" variant="larsent2002042804">
 <head>
-   <title>Fiskersang</title>
-   <toctitle>Fiskersang</toctitle>
-   <indextitle>Fiskersang</indextitle>
-   <firstline>Rundt om Folkets Hjem og Færden</firstline>
-   <quality>korrektur1</quality>
+  <title>Fiskersang</title>
+  <toctitle>Fiskersang</toctitle>
+  <indextitle>Fiskersang</indextitle>
+  <firstline>Rundt om Folkets Hjem og Færden</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -376,15 +379,15 @@ mumler Havets Vrede.
 
 <text id="larsent200103048">
 <head>
-   <title>Stjernernes Kamp, før Verdens Ende</title>
-   <subtitle>Slutningen af de sibyllinske Oraklers 5. Bog. Oversættelse fra Græsk.</subtitle>
-   <toctitle>Stjernernes Kamp, før Verdens Ende</toctitle>
-   <indextitle>Stjernernes Kamp, før Verdens Ende</indextitle>
-   <firstline>Hisset i Stjernerne saa' jeg den klare þálios' Trusel</firstline>
-   <notes>
-      <note>[1] Tilbagevendelsesdagen</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title>Stjernernes Kamp, før Verdens Ende</title>
+  <subtitle>Slutningen af de sibyllinske Oraklers 5. Bog. Oversættelse fra Græsk.</subtitle>
+  <toctitle>Stjernernes Kamp, før Verdens Ende</toctitle>
+  <indextitle>Stjernernes Kamp, før Verdens Ende</indextitle>
+  <firstline>Hisset i Stjernerne saa' jeg den klare þálios' Trusel</firstline>
+  <notes>
+    <note>[1] Tilbagevendelsesdagen</note>
+  </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -418,17 +421,17 @@ Jorden i Brand, og der blev kun en stjerneløs Æter tilbage.
 
 <section level="1">
 <head>
-   <toctitle>Sønderjylland</toctitle>
+  <toctitle>Sønderjylland</toctitle>
 </head>
 <content>
 
 <text id="larsent200103049">
 <head>
-   <title>Sønderjylland</title>
-   <toctitle>Sønderjylland</toctitle>
-   <indextitle>Sønderjylland</indextitle>
-   <firstline>Bort fra Danmark flængtes</firstline>
-   <quality>korrektur1</quality>
+  <title>Sønderjylland</title>
+  <toctitle>Sønderjylland</toctitle>
+  <indextitle>Sønderjylland</indextitle>
+  <firstline>Bort fra Danmark flængtes</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -464,11 +467,11 @@ Efteraar 1919.
 
 <text id="larsent2001030410">
 <head>
-   <title>Alle danskes Dag</title>
-   <toctitle>Alle danskes Dag</toctitle>
-   <indextitle>Alle danskes Dag</indextitle>
-   <firstline>Nu vaje i Vinden hvert Danebrogsflag</firstline>
-   <quality>korrektur1</quality>
+  <title>Alle danskes Dag</title>
+  <toctitle>Alle danskes Dag</toctitle>
+  <indextitle>Alle danskes Dag</indextitle>
+  <firstline>Nu vaje i Vinden hvert Danebrogsflag</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -496,11 +499,11 @@ Velkommen - med Ar efter Korset og Blodet!
 
 <text id="larsent2001030411">
 <head>
-   <title>Den store Vaar</title>
-   <toctitle>Den store Vaar</toctitle>
-   <indextitle>Den store Vaar</indextitle>
-   <firstline>Alt ofte vandt den grønne Vaar</firstline>
-   <quality>korrektur1</quality>
+  <title>Den store Vaar</title>
+  <toctitle>Den store Vaar</toctitle>
+  <indextitle>Den store Vaar</indextitle>
+  <firstline>Alt ofte vandt den grønne Vaar</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -541,17 +544,17 @@ i Toner og i Tale!
 
 <section level="1">
 <head>
-   <toctitle>Skæmt og Satire</toctitle>
+  <toctitle>Skæmt og Satire</toctitle>
 </head>
 <content>
 
 <text id="larsent2001030412">
 <head>
-   <title>Til Piben</title>
-   <toctitle>Til Piben</toctitle>
-   <indextitle>Til Piben</indextitle>
-   <firstline>En Pibe er Sjælens Arnested</firstline>
-   <quality>korrektur1</quality>
+  <title>Til Piben</title>
+  <toctitle>Til Piben</toctitle>
+  <indextitle>Til Piben</indextitle>
+  <firstline>En Pibe er Sjælens Arnested</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -588,11 +591,11 @@ naar Aanden er syg og Piben sur.
 
 <text id="larsent2001030413">
 <head>
-   <title>Efter Syndfloden</title>
-   <toctitle>Efter Syndfloden</toctitle>
-   <indextitle>Efter Syndfloden</indextitle>
-   <firstline>I Helved-Slammet</firstline>
-   <quality>korrektur1</quality>
+  <title>Efter Syndfloden</title>
+  <toctitle>Efter Syndfloden</toctitle>
+  <indextitle>Efter Syndfloden</indextitle>
+  <firstline>I Helved-Slammet</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -611,21 +614,21 @@ men Løven og Katten morer sig bedst.
 
 <section level="1">
 <head>
-   <toctitle>Fest og Hyldest</toctitle>
+  <toctitle>Fest og Hyldest</toctitle>
 </head>
 <content>
 
 <text id="larsent2001030414">
 <head>
-   <title>H. Sønderup</title>
-   <subtitle>
-      <line>Danmarks største Sommerfuglesamler.</line>
-      <line>Ved Afskedsfesten i Lemvig 10. Februar 1909.</line>
-   </subtitle>
-   <toctitle>H. Sønderup</toctitle>
-   <indextitle>H. Sønderup</indextitle>
-   <firstline>Har han fanget Griller</firstline>
-   <quality>korrektur1</quality>
+  <title>H. Sønderup</title>
+  <subtitle>
+    <line>Danmarks største Sommerfuglesamler.</line>
+    <line>Ved Afskedsfesten i Lemvig 10. Februar 1909.</line>
+  </subtitle>
+  <toctitle>H. Sønderup</toctitle>
+  <indextitle>H. Sønderup</indextitle>
+  <firstline>Har han fanget Griller</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -652,13 +655,13 @@ Mindesværm vil med.
 
 <text id="larsent2001030415">
 <head>
-   <title>Sophus Claussen 1</title>
-   <subtitle>1865 - 12. September - 1915.</subtitle>
-   <toctitle>Sophus Claussen 1</toctitle>
-   <indextitle>Sophus Claussen 1</indextitle>
-   <firstline>I Septembers vemodige Sol</firstline>
-    <keywords>claussen</keywords>
-   <quality>korrektur1</quality>
+  <title>Sophus Claussen 1</title>
+  <subtitle>1865 - 12. September - 1915.</subtitle>
+  <toctitle>Sophus Claussen 1</toctitle>
+  <indextitle>Sophus Claussen 1</indextitle>
+  <firstline>I Septembers vemodige Sol</firstline>
+  <keywords>claussen</keywords>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -692,12 +695,12 @@ paa Sangens fortærende Baal.
 
 <text id="larsent2001030416">
 <head>
-   <title>Sophus Claussen 2</title>
-   <toctitle>Sophus Claussen 2</toctitle>
-   <indextitle>Sophus Claussen 2</indextitle>
-   <firstline>Halvhundred Gange rundt om Solens Kerte</firstline>
-    <keywords>claussen</keywords>
-   <quality>korrektur1</quality>
+  <title>Sophus Claussen 2</title>
+  <toctitle>Sophus Claussen 2</toctitle>
+  <indextitle>Sophus Claussen 2</indextitle>
+  <firstline>Halvhundred Gange rundt om Solens Kerte</firstline>
+  <keywords>claussen</keywords>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -741,13 +744,13 @@ rækker dig Kransen her en Dag i Høsten,
 
 <text id="larsent2001030417">
 <head>
-   <title>Jeppe Aakjær 1</title>
-   <subtitle>1866 - 10. September - 1916.</subtitle>
-   <toctitle>Jeppe Aakjær 1</toctitle>
-   <indextitle>Jeppe Aakjær 1</indextitle>
-   <firstline>Du gik som Pan under Maanens Horn</firstline>
-    <keywords>aakjaer</keywords>
-   <quality>korrektur1</quality>
+  <title>Jeppe Aakjær 1</title>
+  <subtitle>1866 - 10. September - 1916.</subtitle>
+  <toctitle>Jeppe Aakjær 1</toctitle>
+  <indextitle>Jeppe Aakjær 1</indextitle>
+  <firstline>Du gik som Pan under Maanens Horn</firstline>
+  <keywords>aakjaer</keywords>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -781,12 +784,12 @@ hvorved i Evighed alt skal gro.
 
 <text id="larsent2001030418">
 <head>
-   <title>Jeppe Aakjær 2</title>
-   <toctitle>Jeppe Aakjær 2</toctitle>
-   <indextitle>Jeppe Aakjær 2</indextitle>
-   <firstline>Danmark laa bølgende rigt i dit Sind</firstline>
-    <keywords>aakjaer</keywords>
-   <quality>korrektur1</quality>
+  <title>Jeppe Aakjær 2</title>
+  <toctitle>Jeppe Aakjær 2</toctitle>
+  <indextitle>Jeppe Aakjær 2</indextitle>
+  <firstline>Danmark laa bølgende rigt i dit Sind</firstline>
+  <keywords>aakjaer</keywords>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -816,15 +819,15 @@ giver Kræfter.
 
 <text id="larsent2001030419">
 <head>
-   <title>L. Mylius Eriksen</title>
-   <subtitle>Ved Afsløringen af hans Statue i Ringkøbing 15. Oktober 1916.</subtitle>
-   <toctitle>L. Mylius Eriksen</toctitle>
-   <indextitle>L. Mylius Eriksen</indextitle>
-   <firstline>Ild fra dit Øje, Ordet fra din Tunge</firstline>
-   <notes>
-      <note><a person="mylius">Ludvig Mylius-Erichsen</a> (1872-1907) var dansk grønlandsfarer og forfatter.</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title>L. Mylius Eriksen</title>
+  <subtitle>Ved Afsløringen af hans Statue i Ringkøbing 15. Oktober 1916.</subtitle>
+  <toctitle>L. Mylius Eriksen</toctitle>
+  <indextitle>L. Mylius Eriksen</indextitle>
+  <firstline>Ild fra dit Øje, Ordet fra din Tunge</firstline>
+  <notes>
+    <note><a person="mylius">Ludvig Mylius-Erichsen</a> (1872-1907) var dansk grønlandsfarer og forfatter.</note>
+  </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -868,14 +871,14 @@ Regnen skal rinde nedad dine Sider
 
 <text id="larsent2001030420">
 <head>
-   <title>Jakob Knudsens Død</title>
-   <toctitle>Jakob Knudsens Død</toctitle>
-   <indextitle>Jakob Knudsens Død</indextitle>
-   <firstline>Dødens Gerning i hans Kammer</firstline>
-   <notes>
-      <note>Digteren <a person="knudsen">Jakob Knudsen</a> døde 21. januar 1917.</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title>Jakob Knudsens Død</title>
+  <toctitle>Jakob Knudsens Død</toctitle>
+  <indextitle>Jakob Knudsens Død</indextitle>
+  <firstline>Dødens Gerning i hans Kammer</firstline>
+  <notes>
+    <note>Digteren <a person="knudsen">Jakob Knudsen</a> døde 21. januar 1917.</note>
+  </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -899,12 +902,12 @@ sig et hjemløst Sus.
 
 <text id="larsent2001030421">
 <head>
-   <title>Indenrigsminister Ove Rode</title>
-   <subtitle>1867 - 31. August - 1917.</subtitle>
-   <toctitle>Indenrigsminister Ove Rode</toctitle>
-   <indextitle>Indenrigsminister Ove Rode</indextitle>
-   <firstline>Den unge Digter øjned</firstline>
-   <quality>korrektur1</quality>
+  <title>Indenrigsminister Ove Rode</title>
+  <subtitle>1867 - 31. August - 1917.</subtitle>
+  <toctitle>Indenrigsminister Ove Rode</toctitle>
+  <indextitle>Indenrigsminister Ove Rode</indextitle>
+  <firstline>Den unge Digter øjned</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -953,12 +956,12 @@ fik frem af Jorden bragt.
 
 <text id="larsent2001030422">
 <head>
-   <title>En Mindedag</title>
-   <subtitle>Fhv. Højskoleforstander N. C. Nielsens 75-Aars Fødselsdag.</subtitle>
-   <toctitle>En Mindedag</toctitle>
-   <indextitle>En Mindedag</indextitle>
-   <firstline>Aand med unge Vinger</firstline>
-   <quality>korrektur1</quality>
+  <title>En Mindedag</title>
+  <subtitle>Fhv. Højskoleforstander N. C. Nielsens 75-Aars Fødselsdag.</subtitle>
+  <toctitle>En Mindedag</toctitle>
+  <indextitle>En Mindedag</indextitle>
+  <firstline>Aand med unge Vinger</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1002,15 +1005,15 @@ og den Tro, som trak.
 
 <text id="larsent2001030423">
 <head>
-   <title>Konfirmationssange 1</title>
-   <subtitle>
-      <line>Til Carl Bülow Aaberg.</line>
-      <line>8. April 1918.</line>
-   </subtitle>
-   <toctitle>Konfirmationssange 1</toctitle>
-   <indextitle>Konfirmationssange 1</indextitle>
-   <firstline>Barndommens Rigdom</firstline>
-   <quality>korrektur1</quality>
+  <title>Konfirmationssange 1</title>
+  <subtitle>
+    <line>Til Carl Bülow Aaberg.</line>
+    <line>8. April 1918.</line>
+  </subtitle>
+  <toctitle>Konfirmationssange 1</toctitle>
+  <indextitle>Konfirmationssange 1</indextitle>
+  <firstline>Barndommens Rigdom</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1046,15 +1049,15 @@ ved deres Bord.
 
 <text id="larsent2001030424">
 <head>
-   <title>Konfirmationssange 2</title>
-   <subtitle>
-      <line>Til Else Buhl.</line>
-      <line>6. Oktober 1918.</line>
-   </subtitle>
-   <toctitle>Konfirmationssange 2</toctitle>
-   <indextitle>Konfirmationssange 2</indextitle>
-   <firstline>Din Barndom sejler i Drømme glad</firstline>
-   <quality>korrektur1</quality>
+  <title>Konfirmationssange 2</title>
+  <subtitle>
+    <line>Til Else Buhl.</line>
+    <line>6. Oktober 1918.</line>
+  </subtitle>
+  <toctitle>Konfirmationssange 2</toctitle>
+  <indextitle>Konfirmationssange 2</indextitle>
+  <firstline>Din Barndom sejler i Drømme glad</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1095,12 +1098,12 @@ og gid din Lykke i Sommerland
 
 <text id="larsent2001030425">
 <head>
-   <title>Herredsdommer T. Balthazar-Christensen</title>
-   <subtitle>Ved Afskedsfesten i Lemvig 26. Maj 1920 i Anledning af Forflyttelse til Haderslev</subtitle>
-   <toctitle>Herredsdommer T. Balthazar-Christensen</toctitle>
-   <indextitle>Herredsdommer T. Balthazar-Christensen</indextitle>
-   <firstline>Hist fra en venlig Strand</firstline>
-   <quality>korrektur1</quality>
+  <title>Herredsdommer T. Balthazar-Christensen</title>
+  <subtitle>Ved Afskedsfesten i Lemvig 26. Maj 1920 i Anledning af Forflyttelse til Haderslev</subtitle>
+  <toctitle>Herredsdommer T. Balthazar-Christensen</toctitle>
+  <indextitle>Herredsdommer T. Balthazar-Christensen</indextitle>
+  <firstline>Hist fra en venlig Strand</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1137,12 +1140,12 @@ jydske Brødres Hilsen tusindtunget.
 
 <text id="larsent2001030426">
 <head>
-   <title>Til Komponisten Grethe Sawyer</title>
-   <subtitle>Ved hendes Bryllup i Paris med Maleren Kurt Jungstedt 15. Juni 1920.</subtitle>
-   <toctitle>Til Komponisten Grethe Sawyer</toctitle>
-   <indextitle>Til Komponisten Grethe Sawyer</indextitle>
-   <firstline>Fra Toners Højder</firstline>
-   <quality>korrektur1</quality>
+  <title>Til Komponisten Grethe Sawyer</title>
+  <subtitle>Ved hendes Bryllup i Paris med Maleren Kurt Jungstedt 15. Juni 1920.</subtitle>
+  <toctitle>Til Komponisten Grethe Sawyer</toctitle>
+  <indextitle>Til Komponisten Grethe Sawyer</indextitle>
+  <firstline>Fra Toners Højder</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1186,13 +1189,13 @@ og Floden kommer.
 
 <text id="larsent2001030427">
 <head>
-   <title>H. C. Ørsted</title>
-   <subtitle>Ved 100-Aars Festen for Opdagelsen af Elektromagnetismen</subtitle>
-   <toctitle>H. C. Ørsted</toctitle>
-   <indextitle>H. C. Ørsted</indextitle>
-   <firstline>Hundred Aar slaar Mennesket i Støvet</firstline>
-   <keywords>oersted</keywords>
-   <quality>korrektur1</quality>
+  <title>H. C. Ørsted</title>
+  <subtitle>Ved 100-Aars Festen for Opdagelsen af Elektromagnetismen</subtitle>
+  <toctitle>H. C. Ørsted</toctitle>
+  <indextitle>H. C. Ørsted</indextitle>
+  <firstline>Hundred Aar slaar Mennesket i Støvet</firstline>
+  <keywords>oersted</keywords>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1218,5 +1221,6 @@ priser vi Hans Christian Ørsteds Navn.
 </text>
 </content>
 </section>
+
 </workbody>
 </kalliopework>

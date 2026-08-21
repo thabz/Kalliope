@@ -11,6 +11,9 @@ import {
   loadXMLDoc,
   safeGetAttr,
   safeGetInnerXML,
+  safeGetInnerXMLWithout,
+  getIdentifiers,
+  identifierAllowlist,
   getElementsByTagName,
   getChildByTagName,
   safeTrim,
@@ -48,7 +51,7 @@ const readArtworkFile = async (personId, artworkFilename, collected) => {
         );
         note = safeGetInnerXML(getChildByTagName(picture, 'picture-note'));
       } else {
-        description = safeTrim(safeGetInnerXML(picture));
+        description = safeTrim(safeGetInnerXMLWithout(picture, ['identifiers']));
       }
 
       const src = `/images/${personId}/${pictureId}.jpg`;
@@ -56,7 +59,7 @@ const readArtworkFile = async (personId, artworkFilename, collected) => {
       const remoteUrl = build_museum_url(picture, collected);
       const museumId = safeGetAttr(picture, 'museum');
       const clipPath = safeGetAttr(picture, 'clip-path');
-      const content_raw = safeGetInnerXML(picture).trim();
+      const content_raw = safeGetInnerXMLWithout(picture, ['identifiers']).trim();
       const result = {
         id: `${personId}/${pictureId}`,
         remoteUrl,
@@ -69,6 +72,7 @@ const readArtworkFile = async (personId, artworkFilename, collected) => {
         content_raw,
         content_html: htmlToXml(description, collected),
         note_html: htmlToXml(note, collected),
+        identifiers: getIdentifiers(picture, identifierAllowlist.picture),
       };
       if (personId != 'kunst') {
         result.artist = collected.poets.get(personId);
