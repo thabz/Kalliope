@@ -56,5 +56,9 @@ digtere.
 - Ved `gh issue view ... --comments` kan GitHub CLI i non-TTY give tomt tekstoutput for issues uden kommentarer. Brug enten `--json number,title,state,body,comments` eller kør kommandoen med TTY, når issue-indholdet skal læses.
 - Hvis `gh auth status` melder et ugyldigt token, samtidig med at `gh api` melder en forbindelsesfejl, skal GitHub-forbindelsen testes uden sandboxens netværksbegrænsning, før brugeren bedes logge ind igen. En blokeret API-forbindelse kan ellers fejlagtigt ligne et udløbet token.
 - Når du opretter eller opdaterer en PR, behøver du ikke vente på GitHubs CI, medmindre brugeren eksplicit beder om det.
+- Når brugeren siger "commit og push", skal agenten efter push vente, til alle
+  påkrævede GitHub CI-checks er gennemført og grønne. Fejlende checks skal
+  undersøges og rettes; rettelserne skal testes, committes og pushes, og CI skal
+  overvåges igen. Opgaven må ikke meldes færdig, mens CI er ventende eller fejler.
 - Når brugeren beder dig merge en PR, skal det ske som squash merge.
 - Ved `gh pr create`, `gh issue create`, `gh pr comment` og `gh issue comment` skal brødteksten skrives til en midlertidig fil og sendes med `--body-file`. Skriv ikke markdown direkte i shell-argumenter, fordi backticks og anden shell-syntaks kan blive evalueret som kommandoer.
