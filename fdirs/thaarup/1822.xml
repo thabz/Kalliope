@@ -7,7 +7,7 @@
   <pictures>
     <picture src="1822-p1.jpg" type="titlepage">Titelbladet til <i>Efterladte poetiske Skrifter</i> (1822) lyder ,,Thomas Thaarups / efterladte poetiske / Skrifter. / Samlede og udgivne / af / K. L. Rahbek, / Professor og Theaterdirecteur, Ridder af Dannebrog. / Kjøbenhavn. / Trykt i det Schultziske Officin. / Paa Arvingernes Forlag. / 1822.''.</picture>
   </pictures>
-  <source href="https://books.google.dk/books?id=H4QOAAAAYAAJ" facsimile="1822" facsimile-pages-num="577" facsimile-pages-offset="29">Thomas Thaarup: <i>Efterladte poetiske Skrifter</i>, samlet og udgivet af K. L. Rahbek, Det Schultziske Officin, Kjøbenhavn, 1822.</source>
+  <source href="https://books.google.dk/books?id=H4QOAAAAYAAJ" facsimile="H4QOAAAAYAAJ" facsimile-pages-num="577" facsimile-pages-offset="29">Thomas Thaarup: <i>Efterladte poetiske Skrifter</i>, samlet og udgivet af K. L. Rahbek, Det Schultziske Officin, Kjøbenhavn, 1822.</source>
 </workhead>
 <workbody>
 
@@ -1758,7 +1758,7 @@ Dem lykønske vi,
 </body>
 </text>
 
-<text id="thaarup2026082004">
+<text id="thaarup2026082004" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Peters Bryllup</title>
   <firstline>O hvad kan min Glæde ligne</firstline>
@@ -3902,7 +3902,7 @@ Bo Velstand, Glæde, Fred!
 </body>
 </text>
 
-<text id="thaarup2026082006">
+<text id="thaarup2026082006" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Hjemkomsten</title>
   <subtitle>Et Syngespil i een Akt</subtitle>
@@ -6151,7 +6151,7 @@ Pind se hy in ne
 </body>
 </text>
 
-<text id="thaarup2026082013">
+<text id="thaarup2026082013" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Pintse-Hymne med Choral</title>
   <firstline>Da throner i en evig Straalepragt</firstline>
@@ -11089,7 +11089,7 @@ En Fader din Konge, en Broder hans Søn,
 </body>
 </text>
 
-<text id="thaarup2026082079">
+<text id="thaarup2026082079" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Velkomstsang i Skuespilhuset den 28 Januar 1816</title>
   <firstline>Konge dig velkommen byder</firstline>
@@ -11215,14 +11215,14 @@ At gaae i Eders Fjed. ” …'' （: -,,,,
 </body>
 </text>
 
-<text id="thaarup2026082082">
+<text id="thaarup2026082082" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Prindsesse Caroline Amalie</title>
   <subtitle>ved Hendes Komme til Sorgenfri,</subtitle>
   <firstline>Christians fyrstelige Mage</firstline>
   <source pages="392-393"/>
   <dates>
-    <event>den 18 Julii 1815</event>
+    <event>1815-07-18</event>
   </dates>
   <quality>korrektur1,kilde,side</quality>
 </head>
