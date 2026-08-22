@@ -140,7 +140,8 @@ const build_poets_first_pass = collected => {
       `fdirs/${id}/artwork.xml`,
       `fdirs/${id}/portraits.xml`,
     ];
-    if (!force_reload && !isFileModified(...relevantFiles)) {
+    const relevantFilesModified = isFileModified(...relevantFiles);
+    if (!force_reload && !relevantFilesModified) {
       return;
     }
     found_changes = true;
