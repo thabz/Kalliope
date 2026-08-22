@@ -218,21 +218,22 @@ const build_bio_json = async (collected) => {
     async (entry) => {
       const [poetId, poet] = entry;
       const poetMetadataModified = collected.poetMetadataDirty?.has(poetId);
+      const bioSourceModified = isFileModified(
+        'content/events.xml',
+        ...worksForPoet(collected, poetId).flatMap(
+          work => work.sourceFiles || []
+        ),
+        `fdirs/${poet.id}/info.xml`,
+        `fdirs/${poet.id}/events.xml`,
+        `fdirs/${poet.id}/portraits.xml`,
+        `fdirs/${poet.id}/bio.xml`,
+      );
       // Skip if all of the participating xml files aren't modified
       if (
         !poetMetadataModified &&
         !codeModified &&
         !artworkModified &&
-        !isFileModified(
-          'content/events.xml',
-          ...worksForPoet(collected, poetId).flatMap(
-            work => work.sourceFiles || []
-          ),
-          `fdirs/${poet.id}/info.xml`,
-          `fdirs/${poet.id}/events.xml`,
-          `fdirs/${poet.id}/portraits.xml`,
-          `fdirs/${poet.id}/bio.xml`,
-        )
+        !bioSourceModified
       ) {
         return;
       }

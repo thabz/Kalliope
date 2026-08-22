@@ -70,10 +70,13 @@ const loadJSON = filename => {
 
 const writeJSON = (filename, data) => {
   const json = JSON.stringify(data, null, 2);
-  fs.writeFileSync(filename, json);
+  writeText(filename, json);
 };
 
 const writeText = (filename, text) => {
+  if (fileExists(filename) && loadText(filename) === text) {
+    return;
+  }
   fs.writeFileSync(filename, text);
 };
 
