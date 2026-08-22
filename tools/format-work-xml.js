@@ -25,6 +25,33 @@ const anyStructuralTagPattern = new RegExp(
   'g',
 );
 
+const metadataFields = [
+  'breadcrumbtitle',
+  'dates',
+  'firstline',
+  'indextitle',
+  'keywords',
+  'linktitle',
+  'nofirstline',
+  'notes',
+  'pagebreaks',
+  'pictures',
+  'quality',
+  'source',
+  'subtitle',
+  'suptitle',
+  'title',
+  'toctitle',
+  'year',
+];
+
+const metadataFieldPattern = metadataFields.join('|');
+const adjacentMetadataFieldsPattern = new RegExp(
+  `(<(?:${metadataFieldPattern})(?:[ \\t][^<>]*)?\\/>|` +
+    `<\\/(?:${metadataFieldPattern})>)(?=<(?:${metadataFieldPattern})(?:[ \\t>/]))`,
+  'g',
+);
+
 export const structuralTagsOutsideColumnZero = xml => {
   const violations = [];
   let match;
@@ -55,6 +82,9 @@ const addSectionSpacing = xml =>
       /(<\/section>)\r?\n(?:[ \t]*\r?\n)*/g,
       '$1\n\n',
     );
+
+const splitAdjacentMetadataFields = xml =>
+  xml.replace(adjacentMetadataFieldsPattern, '$1\n');
 
 const indentMetadata = xml => {
   let metadataDepth = 0;
@@ -99,7 +129,10 @@ const indentMetadata = xml => {
 
 export const formatWorkXml = xml => {
   const withoutStructuralIndentation = xml.replace(structuralTagPattern, '');
-  const withMetadataIndentation = indentMetadata(withoutStructuralIndentation);
+  const withSplitMetadata = splitAdjacentMetadataFields(
+    withoutStructuralIndentation,
+  );
+  const withMetadataIndentation = indentMetadata(withSplitMetadata);
   return addSectionSpacing(addTextSpacing(withMetadataIndentation))
     .trimEnd() + '\n';
 };
