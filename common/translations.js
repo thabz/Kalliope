@@ -1,4 +1,6 @@
 const translations = {
+  'da*Side': 's.',
+  'da*Sider': 's.',
   'en*Digtere': 'Poets',
   'en*Personer': 'Persons',
   'en*Kunstnere': 'Artists',
@@ -17,6 +19,15 @@ const translations = {
   'en*Henvisninger': 'References',
   'en*Gendigtning': 'Adaptation',
   'en*Gendigtninger': 'Adaptations',
+  'en*Skrevet af <a poet="{poetId}">{poetName}</a>.':
+    'Written by <a poet="{poetId}">{poetName}</a>.',
+  'en*Fra <a work="{workId}"><i>{workTitle}</i>{workYear}</a>.':
+    'From <a work="{workId}"><i>{workTitle}</i>{workYear}</a>.',
+  'en*Oversættelse af': 'Translation of',
+  'en*Gendigtning af': 'Adaptation of',
+  'en* fra ': ' from ',
+  'en*Side': 'p.',
+  'en*Sider': 'pp.',
   'en*Note': 'Note',
   'en*Noter': 'Notes',
   'en*Forlæg': 'Source text',
@@ -136,6 +147,15 @@ const translations = {
   'de*Henvisninger': 'Verweise',
   'de*Gendigtning': 'Nachdichtung',
   'de*Gendigtninger': 'Nachdichtungen',
+  'de*Skrevet af <a poet="{poetId}">{poetName}</a>.':
+    'Verfasst von <a poet="{poetId}">{poetName}</a>.',
+  'de*Fra <a work="{workId}"><i>{workTitle}</i>{workYear}</a>.':
+    'Aus <a work="{workId}"><i>{workTitle}</i>{workYear}</a>.',
+  'de*Oversættelse af': 'Übersetzung von',
+  'de*Gendigtning af': 'Nachdichtung von',
+  'de* fra ': ' aus ',
+  'de*Side': 'S.',
+  'de*Sider': 'S.',
   'de*Note': 'Anmerkung',
   'de*Noter': 'Anmerkungen',
   'de*Forlæg': 'Vorlage',
@@ -265,6 +285,15 @@ const translations = {
   'fr*Henvisninger': 'Références',
   'fr*Gendigtning': 'Adaptation',
   'fr*Gendigtninger': 'Adaptations',
+  'fr*Skrevet af <a poet="{poetId}">{poetName}</a>.':
+    'Écrit par <a poet="{poetId}">{poetName}</a>.',
+  'fr*Fra <a work="{workId}"><i>{workTitle}</i>{workYear}</a>.':
+    'De <a work="{workId}"><i>{workTitle}</i>{workYear}</a>.',
+  'fr*Oversættelse af': 'Traduction de',
+  'fr*Gendigtning af': 'Adaptation de',
+  'fr* fra ': ' de ',
+  'fr*Side': 'p.',
+  'fr*Sider': 'pp.',
   'fr*Note': 'Note',
   'fr*Noter': 'Notes',
   'fr*Forlæg': 'Texte source',

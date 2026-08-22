@@ -18,6 +18,10 @@ describe('translations helper', () => {
     expect(_('Eksterne ressourcer', 'fr')).toBe('Ressources externes');
     expect(_('Forlæg', 'de')).toBe('Vorlage');
     expect(_('Andre udgaver', 'fr')).toBe('Autres éditions');
+    expect(_('Oversættelse af', 'en')).toBe('Translation of');
+    expect(_('Gendigtning af', 'de')).toBe('Nachdichtung von');
+    expect(_('Side', 'fr')).toBe('p.');
+    expect(_('Sider', 'en')).toBe('pp.');
   });
 
   it('falls back to the original string when missing', () => {
@@ -36,5 +40,9 @@ describe('translations helper', () => {
     expect(_('Søg i {genetiveLastName} værker', 'fr', {
       genetiveLastName: 'de Reboul',
     })).toBe('Rechercher dans les œuvres de Reboul');
+    expect(_('Skrevet af <a poet="{poetId}">{poetName}</a>.', 'en', {
+      poetId: 'schandorph',
+      poetName: 'Sophus Schandorph',
+    })).toBe('Written by <a poet="schandorph">Sophus Schandorph</a>.');
   });
 });

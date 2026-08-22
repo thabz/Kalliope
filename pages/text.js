@@ -313,11 +313,52 @@ const TextPage = (props) => {
     items
       .filter((note) => note.type !== 'unknown-original')
       .map((note, i) => {
+        let contentHtml = note.content_html;
+        let contentLang = note.content_lang;
+        if (note.type === 'translation-source' && note.content_lang === 'da') {
+          contentHtml = note.content_html.map(([content, options]) => {
+            if (typeof content !== 'string') {
+              return [content, options];
+            }
+            return [
+              content
+                .replace(/^Gendigtning af/, _('Gendigtning af', lang))
+                .replace(/^Oversættelse af/, _('Oversættelse af', lang))
+                .replace(/ fra /g, _(' fra ', lang)),
+              options,
+            ];
+          });
+          contentLang = lang;
+        }
+        if (note.system_note != null) {
+          const data = note.system_note;
+          if (data.type === 'written-by') {
+            contentHtml = [[
+              _(
+                'Skrevet af <a poet="{poetId}">{poetName}</a>.',
+                lang,
+                data
+              ),
+              { html: true },
+            ]];
+            contentLang = lang;
+          } else if (data.type === 'from-work') {
+            contentHtml = [[
+              _(
+                'Fra <a work="{workId}"><i>{workTitle}</i>{workYear}</a>.',
+                lang,
+                data
+              ),
+              { html: true },
+            ]];
+            contentLang = lang;
+          }
+        }
         return (
           <Note key={keyPrefix + i} type={note.type}>
             <TextContent
-              contentHtml={note.content_html}
-              contentLang={note.content_lang}
+              contentHtml={contentHtml}
+              contentLang={contentLang}
             />
           </Note>
         );
@@ -375,7 +416,10 @@ const TextPage = (props) => {
       sourceText = source.source;
       if (source.pages != null) {
         sourceText = sourceText.replace(/\.?$/, ', ');
-        sourceText += 's. ' + source.pages + '.';
+        const pageLabel = /[-–]/.test(source.pages)
+          ? _('Sider', lang)
+          : _('Side', lang);
+        sourceText += pageLabel + ' ' + source.pages + '.';
       }
       renderedSource = (
         <Source

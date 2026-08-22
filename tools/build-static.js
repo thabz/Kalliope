@@ -635,10 +635,11 @@ const handle_work = async (work) => {
   const workId = safeGetAttr(work, 'id');
   let lines = [];
 
-  const systemNote = html => ({
+  const systemNote = (html, systemNoteData) => ({
     type: 'anthology',
     content_lang: 'da',
     content_html: htmlToXml(html, collected),
+    system_note: systemNoteData,
   });
   const escapeXml = value =>
     String(value)
@@ -735,7 +736,12 @@ const handle_work = async (work) => {
                 systemNote: systemNote(
                   `Fra <a work="${poetId}/${workId}"><i>${escapeXml(
                     sourceWork.title
-                  )}</i>${escapeXml(sourceWorkYear)}</a>.`
+                  )}</i>${escapeXml(sourceWorkYear)}</a>.`, {
+                    type: 'from-work',
+                    workId: `${poetId}/${workId}`,
+                    workTitle: escapeXml(sourceWork.title),
+                    workYear: escapeXml(sourceWorkYear),
+                  }
                 ),
               }
             );
@@ -757,7 +763,11 @@ const handle_work = async (work) => {
                 systemNote: systemNote(
                   `Skrevet af <a poet="${textAuthorId}">${escapeXml(
                     poetName(author)
-                  )}</a>.`
+                  )}</a>.`, {
+                    type: 'written-by',
+                    poetId: textAuthorId,
+                    poetName: escapeXml(poetName(author)),
+                  }
                 ),
               }
             );
