@@ -1,0 +1,4 @@
+interface:
+  display_name: "Kalliope-mellemleder"
+  short_description: "Fordel Kalliope-opgaver mellem synlige CMUX-agenter"
+  default_prompt: "Brug $kalliope-mellemleder til at fordele denne opgave mellem et synligt 2x2-grid af Codex-agenter med uafhængig slutkontrol."

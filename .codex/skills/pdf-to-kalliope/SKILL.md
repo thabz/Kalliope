@@ -112,6 +112,18 @@ Before processing the PDF:
 4. Read comparable work XML files.
 5. Determine which repository files and image directories will be affected.
 6. Check `git status --short`.
+7. Check required dependencies before OCR or editing begins. At minimum verify
+   the repository's Node dependencies and the PDF/XML commands used by the
+   chosen workflow, for example:
+
+   ```shell
+   npm install
+   command -v node pdfimages pdftoppm xmllint
+   ```
+
+   Also verify every selected OCR engine, such as `tesseract`. Stop and report
+   a missing required dependency immediately; do not discover it after a
+   partial transcription or at the review checkpoint.
 
 If the ordinary worktree contains unrelated changes, use an appropriate
 separate worktree or otherwise ensure that unrelated changes cannot enter the
@@ -372,6 +384,118 @@ does not overrule the facsimile.
 Keep generated page images, OCR outputs, crops and reports in a clearly
 contained scratch location. They must not enter the pull request unless the
 repository explicitly requires a particular generated asset.
+
+### Fraktur-OCR profile
+
+For historical Danish Fraktur, run the side-aware OCR candidate audit in
+addition to the ordinary checks:
+
+```shell
+node .codex/skills/pdf-to-kalliope/scripts/audit-ocr-candidates.js \
+  path/to/work.xml path/to/inventory.jsonl > /tmp/<work>-ocr-candidates.jsonl
+```
+
+Use its Fraktur profile to prioritise visual inspection of likely recognition
+errors, especially long-s and related `f`/`s` readings, `c`/`e`, `æ`/`a`/`e`,
+`ø`/`o`, `oe`/`aa` and `skj`/`sj` confusions, inserted spaces, digits or
+symbols inside words, broken quotation marks and duplicated lines. It also
+flags recurring word-shaped signals such as `forst`/`først` and `gjor`/`gjør`.
+
+The audit produces candidates only. Never apply its readings as global
+substitutions. Historical forms such as `høi`, `skiøn`, `kiær`, `giøre` and
+`maaskee` may be correct in the source, and a modern spelling or dictionary
+cannot overrule the facsimile. Check the complete local context, capitalization,
+word boundary and printed glyph before changing XML. If the facsimile does not
+settle the reading, preserve the uncertainty with a `TODO:` note or finding
+rather than guessing.
+
+The detailed general rules for facsimile proofreading, stanza structure,
+indentation and page coverage remain in `docs/facsimile-korrektur.md` and
+`docs/ocr-korrektur-laerebog.md`; consult those documents instead of duplicating
+their full procedures here.
+
+## Auditable side and review records
+
+Before editing the transcription, create two machine-readable scratch files:
+
+```shell
+node .codex/skills/pdf-to-kalliope/scripts/build-page-inventory.js \
+  fdirs/<poet>/<work>.xml /tmp/<work>-pages.jsonl
+touch /tmp/<work>-findings.jsonl
+```
+
+The inventory contains one JSON object per printed page with the text ID,
+printed page, facsimile filename, first and last transcribed line, expected
+transition (`text-start`, `pb` or `pb-within-word`), review status, reviewer
+and disposition. The generated rows are a starting point, not source evidence:
+compare every row with the facsimile, correct its anchors and facsimile mapping,
+then set `status` to `reviewed`. A page that starts a new `<text>` remains an
+explicit `text-start` exception and must not acquire a synthetic `<pb>`.
+
+These files and commands are process-neutral. They do not depend on Codex,
+CMUX, a particular agent, or any number of editors. A single editor can use
+them alone; a distributed review can assign non-overlapping page ranges using
+arbitrary stable reviewer IDs. Coordination messages are outside the data
+contract. When the surrounding workflow provides a coordination channel such
+as CMUX, report blockers, decisions and review milestones there, but do not
+make any audit command depend on that channel.
+
+During distributed review, designate exactly one XML editor. All other
+reviewers work read-only and add findings to the shared contract through the
+coordinator or another serialized update path. Never allow concurrent XML
+writers.
+
+Record every review finding as one JSONL object. Each object MUST have a stable
+`id`, `batch`, `reviewer`, `text_id`, `printed_page`, `facsimile`, stable
+`anchor`, `severity`, `description`, `status`, `disposition`, `evidence` and
+the commit or diff `snapshot` it concerns. Legal statuses are `open`, `fixed`,
+`rejected`, `withdrawn` and `verified`. Never delete withdrawn findings; retain
+the withdrawal reason and evidence. Validate the register with:
+
+```shell
+node .codex/skills/pdf-to-kalliope/scripts/findings-register.js validate \
+  /tmp/<work>-findings.jsonl
+```
+
+The command exits unsuccessfully for malformed records or any open finding.
+Use the `status` subcommand to make an auditable status transition instead of
+rewriting IDs:
+
+```shell
+node .codex/skills/pdf-to-kalliope/scripts/findings-register.js status \
+  /tmp/<work>-findings.jsonl FINDING-ID fixed \
+  'Rettet mod facsimilet' 'facs 019.jpg, før/efter ...' DIFF-SHA
+```
+
+After each editing batch, run the semantic page audit against the independently
+reviewed inventory:
+
+```shell
+node .codex/skills/pdf-to-kalliope/scripts/audit-pagebreaks.js \
+  fdirs/<poet>/<work>.xml /tmp/<work>-pages.jsonl
+```
+
+It checks complete page coverage, exact text-start exceptions, the first and
+last line assigned to each page, marker type, printed page and facsimile. It
+therefore detects a missing or duplicate transition, a marker on the wrong
+page, lines left on the preceding page, and a marker that wrongly splits or
+fails to preserve a word. The inventory is the facsimile-backed semantic
+contract; generating it from the same bad XML and accepting it without visual
+review is not an audit.
+
+Run the side-aware historical OCR profile as a separate candidate pass:
+
+```shell
+node .codex/skills/pdf-to-kalliope/scripts/audit-ocr-candidates.js \
+  fdirs/<poet>/<work>.xml /tmp/<work>-pages.jsonl \
+  > /tmp/<work>-ocr-candidates.jsonl
+```
+
+It reports stable anchors with text ID, printed page and facsimile for OCR
+symbols such as `{ } % $`, an `Image` token, digits inside words, suspicious
+internal spaces, long-s substitutions, adjacent duplicate lines, punctuation
+without spacing and implausible singleton characters. Every candidate still
+requires direct facsimile review.
 
 ## 6. Segment the publication before final transcription
 
@@ -635,6 +759,19 @@ new final file. Include the final results in the review checkpoint.
 
 Keep headings, stanza numbers and decorative lines separate from numbered verse
 lines using the XML structures documented by the repository.
+
+Use the bundled whole-work wrapper for the final run instead of manually
+omitting poems:
+
+```shell
+node .codex/skills/pdf-to-kalliope/scripts/analyze-whole-work.js \
+  fdirs/<poet>/<work>.xml > /tmp/<work>-structure.json
+```
+
+The wrapper extracts every `<poetry>` block from the final XML, invokes both
+existing analyzers, preserves text ID and page range, aggregates all candidates
+and flags a very long block with no stanza boundaries. Resolve every reported
+candidate in the findings register.
 
 ## 10. Preserve indentation using spaces
 
@@ -900,30 +1037,11 @@ Generation of plausible XML is not completion.
 After the initial XML exists, perform a separate systematic proofreading pass
 following `docs/facsimile-korrektur.md`.
 
-At minimum:
-
-1. Compare the transcription with both fresh OCR results.
-2. Create or inspect a discrepancy list.
-3. Resolve every discrepancy against the facsimile.
-4. Inspect suspicious stanza lengths and sequence numbering.
-5. Check every wrapped or unusually short line.
-6. Check all indentation.
-7. Check headings, mottoes, signatures and separators.
-8. Check punctuation, quotation marks, apostrophes and dashes.
-9. Check italics, small capitals, spacing and other supported typography.
-10. Check every footnote and note marker.
-11. Check the first and last visible text on every relevant page.
-12. Read every relevant page directly against the XML.
-13. Verify the beginning and end of every text.
-14. Verify continuations across page boundaries.
-15. Verify every internal page boundary against the page inventory, including
-    each marker's exact position, printed `n` value and required `facs`
-    filename.
-16. Verify that Arabic `pb/@n` values and numeric `pb/@facs` filenames never
-    decrease in document order; gaps are allowed.
-17. Verify that `<workhead>` contains `<pagebreaks/>`, including when no text
-    crosses a page boundary.
-18. Verify that the title page and optional cover images are the correct pages.
+Use `docs/facsimile-korrektur.md` as the complete proofreading checklist. In
+this skill, the mandatory outcomes are: every relevant page is read directly
+against the XML, every discrepancy is resolved against the facsimile, and the
+side inventory, structural analyses, notes, typography and page-break audit are
+all reconciled with the final file.
 
 The final work must have been checked page by page against the images.
 
@@ -974,6 +1092,10 @@ As a current baseline, include the relevant forms of:
 
 ```shell
 npm run report-ocr-candidates
+node .codex/skills/pdf-to-kalliope/scripts/audit-ocr-candidates.js WORK.xml INVENTORY.jsonl
+node .codex/skills/pdf-to-kalliope/scripts/audit-pagebreaks.js WORK.xml INVENTORY.jsonl
+node .codex/skills/pdf-to-kalliope/scripts/analyze-whole-work.js WORK.xml
+node .codex/skills/pdf-to-kalliope/scripts/findings-register.js validate FINDINGS.jsonl
 xmllint --noout path/to/work.xml
 npm test -- --runInBand __tests__/pagebreaks.test.js
 git diff --check
@@ -1031,6 +1153,40 @@ or ambiguous deletion command.
 ## 23. Review checkpoint before commit and push
 
 Follow `AGENTS.md`.
+
+READY requires complete inventory coverage, no open findings and recorded
+passing tests. Put a small JSON file in scratch space with `tests` and
+`reviewer_ranges`, then create the frozen checkpoint outside the worktree.
+Each range has a stable `reviewer`, `facsimile_from` and `facsimile_to`; ranges
+must not overlap, must cover the complete inventory and must agree with each
+inventory row's reviewer. For example:
+
+```json
+{
+  "tests": [{"command": "npm test -- --runInBand", "status": "passed"}],
+  "reviewer_ranges": [
+    {"reviewer": "reviewer-a", "facsimile_from": "000.jpg", "facsimile_to": "049.jpg"},
+    {"reviewer": "reviewer-b", "facsimile_from": "050.jpg", "facsimile_to": "099.jpg"}
+  ]
+}
+```
+
+Create and verify the checkpoint with:
+
+```shell
+node .codex/skills/pdf-to-kalliope/scripts/review-checkpoint.js create \
+  /tmp/<work>-checkpoint.json /tmp/<work>-findings.jsonl \
+  /tmp/<work>-pages.jsonl /tmp/<work>-review.json
+node .codex/skills/pdf-to-kalliope/scripts/review-checkpoint.js verify \
+  /tmp/<work>-checkpoint.json
+```
+
+The checkpoint records HEAD, a diff hash, changed files and their hashes,
+tests, finding counts and hash, inventory coverage and hash, and reviewer page
+ranges. Any later file or diff change invalidates the checkpoint and all prior
+approvals; rerun the applicable audits and create a new checkpoint. The
+checkpoint command refuses READY when a finding remains open, a page remains
+unreviewed or a recorded test has not passed.
 
 Prepare and validate the complete change, then present it to the user before
 committing or pushing.
@@ -1097,6 +1253,10 @@ The task is complete only when all applicable items are true:
 - [ ] `AGENTS.md`, the style guide and relevant special documentation were read.
 - [ ] The complete PDF was inventoried.
 - [ ] Every PDF page was classified or otherwise accounted for.
+- [ ] The JSONL page inventory covers every relevant printed page and every row
+      is marked reviewed against the facsimile.
+- [ ] The findings JSONL register preserves every finding and has no open
+      status.
 - [ ] The PDF's existing OCR layer was not trusted as the transcription source.
 - [ ] Fresh OCR was produced from page images with at least two meaningfully
       different passes or strategies.
@@ -1149,6 +1309,11 @@ The task is complete only when all applicable items are true:
       `TODO:`.
 - [ ] The complete XML validates.
 - [ ] OCR candidate checks were reviewed.
+- [ ] The semantic page audit and side-aware historical OCR profile were run on
+      the final XML.
+- [ ] The whole-work wrapper analyzed every poetry block and all candidates
+      were dispositioned.
+- [ ] A frozen review checkpoint was created and still verifies unchanged.
 - [ ] The complete repository test suite passes.
 - [ ] `git diff --check` passes.
 - [ ] Temporary OCR and scratch files were removed.

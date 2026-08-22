@@ -50,6 +50,9 @@ import {
   getElementByTagName,
   getElementsByTagNames,
   safeGetInnerXML,
+  safeGetInnerXMLWithout,
+  getIdentifiers,
+  identifierAllowlist,
   tagName,
 } from './build-static/xml.js';
 import { build_sitemap_xml } from './build-static/sitemap.js';
@@ -252,8 +255,12 @@ const build_bio_json = async (collected) => {
         data.content_lang = 'da';
         data.sources = (getChildrenByTagName(head, 'source') || []).map(
           source => ({
-            content_html: htmlToXml(safeGetInnerXML(source), collected),
+            content_html: htmlToXml(
+              safeGetInnerXMLWithout(source, ['identifiers']),
+              collected,
+            ),
             href: safeGetAttr(source, 'href'),
+            identifiers: getIdentifiers(source, identifierAllowlist.source),
           })
         );
       }
@@ -476,7 +483,7 @@ const handle_text = async (
     let pages = null;
     const pagesAttr = safeGetAttr(sourceNode, 'pages');
     let sourceBookRef = workSource == null ? null : workSource.source;
-    const sourceNodeInner = safeGetInnerXML(sourceNode);
+    const sourceNodeInner = safeGetInnerXMLWithout(sourceNode, ['identifiers']);
     if (sourceNodeInner.length > 0) {
       sourceBookRef = sourceNodeInner;
     }
@@ -525,6 +532,7 @@ const handle_text = async (
     }
     source = {
       source: sourceBookRef,
+    identifiers: getIdentifiers(sourceNode, identifierAllowlist.source),
       pages: pagesAttr,
       digitalUrl,
       facsimilePageCount:
@@ -563,9 +571,8 @@ const handle_text = async (
           rawBlock.indexOf('<footnote') !== -1 ||
           rawBlock.indexOf('<note') !== -1;
         const fontSize = safeGetAttr(block, 'font-size');
-        const marginLeft = safeGetAttr(block, 'margin-left');
-        const marginRight = safeGetAttr(block, 'margin-right');
-        const options = { fontSize, marginLeft, marginRight };
+        const maxWidth = safeGetAttr(block, 'max-width');
+        const options = { fontSize, maxWidth };
         return {
           type,
           lines: htmlToXml(rawBlock, collected, type === 'poetry'),
@@ -1341,12 +1348,16 @@ const works_second_pass = async (collected) => {
       const work = getChildByTagName(doc, 'kalliopework');
       const head = getChildByTagName(work, 'workhead');
       const data = collected.works.get(`${poetId}/${workId}`);
+      data.identifiers = getIdentifiers(head, identifierAllowlist.workhead);
       let sources = {};
       getChildrenByTagName(head, 'source').forEach((sourceNode) => {
         let source = null;
-        const sourceInner = safeGetInnerXML(sourceNode);
+        const sourceInner = safeGetInnerXMLWithout(sourceNode, ['identifiers']);
         if (sourceInner != null && sourceInner.length > 0) {
-          source = { source: sourceInner };
+          source = {
+            source: sourceInner,
+            identifiers: getIdentifiers(sourceNode, identifierAllowlist.source),
+          };
         }
         if (source == null || source.source == null) {
           throw new Error(
