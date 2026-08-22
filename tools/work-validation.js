@@ -71,7 +71,35 @@ const checksForWorkXml = xml => ({
   facsimiles: /<source\b[^>]*\bfacsimile\s*=/.test(xml),
   pageBreaks: /<pagebreaks\b/.test(xml),
   sources: /<source\b[^>]*\bpages\s*=/.test(xml),
+  textStructure: /<text\b/.test(xml),
 });
+
+const collectTextStructureIssues = (filename, document) => {
+  const issues = [];
+
+  Array.from(document.getElementsByTagName('text')).forEach(text => {
+    const head = directChild(text, 'head');
+    const body = directChild(text, 'body');
+    if (head == null || body == null || directChild(head, 'firstline') == null) {
+      return;
+    }
+
+    const bodyElements = Array.from(body.childNodes).filter(
+      child => child.nodeType === 1,
+    );
+    if (
+      bodyElements.length > 0 &&
+      bodyElements.every(element => element.nodeName === 'prose')
+    ) {
+      const textId = text.getAttribute('id') ?? '(missing id)';
+      issues.push(
+        `${filename}: text ${textId} has only <prose> in <body> and must not have <firstline> in <head>.`,
+      );
+    }
+  });
+
+  return issues;
+};
 
 const collectSourceStructureIssues = (filename, document) => {
   const pageOnlySources = [];
@@ -251,5 +279,6 @@ export {
   checksForWorkXml,
   collectPageBreakIssues,
   collectSourceStructureIssues,
+  collectTextStructureIssues,
   parseWorkXml,
 };

@@ -7,6 +7,7 @@ import {
   checksForWorkXml,
   collectPageBreakIssues,
   collectSourceStructureIssues,
+  collectTextStructureIssues,
   parseWorkXml,
 } from '../../tools/work-validation.js';
 import { loadTrackedWorkFiles } from '../../tools/libs/work-files.js';
@@ -17,6 +18,7 @@ describe('tracked work corpus', () => {
   let pageBreakIssues;
   let pageIntervalIssues;
   let pageOnlySourceIssues;
+  let textStructureIssues;
 
   beforeAll(() => {
     const works = loadTrackedWorkFiles();
@@ -25,6 +27,7 @@ describe('tracked work corpus', () => {
     pageBreakIssues = [];
     pageIntervalIssues = [];
     pageOnlySourceIssues = [];
+    textStructureIssues = [];
 
     works.forEach(({ content: xml, filename }) => {
       if (
@@ -35,11 +38,20 @@ describe('tracked work corpus', () => {
       }
 
       const checks = checksForWorkXml(xml);
-      if (checks.sources !== true && checks.pageBreaks !== true) {
+      if (
+        checks.sources !== true &&
+        checks.pageBreaks !== true &&
+        checks.textStructure !== true
+      ) {
         return;
       }
 
       const document = parseWorkXml(xml);
+      if (checks.textStructure === true) {
+        textStructureIssues.push(
+          ...collectTextStructureIssues(filename, document),
+        );
+      }
       if (checks.sources === true) {
         const sourceIssues = collectSourceStructureIssues(filename, document);
         pageIntervalIssues.push(...sourceIssues.pageIntervals);
@@ -67,6 +79,10 @@ describe('tracked work corpus', () => {
 
   it('requires legal page intervals on text sources', () => {
     expect(pageIntervalIssues).toEqual([]);
+  });
+
+  it('does not assign first lines to prose-only texts', () => {
+    expect(textStructureIssues).toEqual([]);
   });
 
   it('keeps declared page-break markup consistent', () => {

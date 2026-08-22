@@ -365,7 +365,7 @@
   </define>
   <define name="span">
     <element name="span">
-      <attribute name="lang"><text/></attribute>
+      <optional><attribute name="lang"><text/></attribute></optional>
       <ref name="simpleElement"/>
     </element>
   </define>
