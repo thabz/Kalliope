@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="lauri" country="it" lang="it" type="artist">
+  <name>
+    <firstname>Filippo</firstname>
+    <lastname>Lauri</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1623-08-25</date>
+      <place>Rom</place>
+    </born>
+    <dead>
+      <date>1694-12-12</date>
+      <place>Rom</place>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q3071902</wikidata>
+    <wikipedia-en>Filippo Lauri</wikipedia-en>
+    <wikipedia-fr>Filippo Lauri</wikipedia-fr>
+    <viaf>71663629</viaf>
+  </identifiers>
+</person>
