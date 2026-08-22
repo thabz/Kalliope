@@ -54,7 +54,16 @@ const jsonLines = (records) => `${records.map(record => JSON.stringify(record)).
 const writeGzipJsonLines = (filename, records) => {
   const content = jsonLines(records);
   const compressed = deterministicGzip(content);
-  fs.writeFileSync(filename, compressed);
+  return writeFileIfChanged(filename, compressed);
+};
+
+const writeFileIfChanged = (filename, content) => {
+  const buffer = Buffer.isBuffer(content) ? content : Buffer.from(content);
+  if (fs.existsSync(filename) && fs.readFileSync(filename).equals(buffer)) {
+    return false;
+  }
+  fs.writeFileSync(filename, buffer);
+  return true;
 };
 
 const deterministicGzip = (content) => zlib.gzipSync(content, {
@@ -357,11 +366,13 @@ const buildCorpusDataset = (collected, { builtAt = new Date().toISOString() } = 
   validateRelations(poets, works, texts);
   validateRecordShapes(poets, works, texts);
 
-  writeGzipJsonLines(`${OUTPUT_DIRECTORY}/poets.jsonl.gz`, poets);
-  writeGzipJsonLines(`${OUTPUT_DIRECTORY}/works.jsonl.gz`, works);
-  writeGzipJsonLines(`${OUTPUT_DIRECTORY}/texts.jsonl.gz`, texts);
-  fs.writeFileSync(`${OUTPUT_DIRECTORY}/schema.json`, `${JSON.stringify(schema, null, 2)}\n`);
-  fs.writeFileSync(`${OUTPUT_DIRECTORY}/README.md`, readme);
+  const dataChanged = [
+    writeGzipJsonLines(`${OUTPUT_DIRECTORY}/poets.jsonl.gz`, poets),
+    writeGzipJsonLines(`${OUTPUT_DIRECTORY}/works.jsonl.gz`, works),
+    writeGzipJsonLines(`${OUTPUT_DIRECTORY}/texts.jsonl.gz`, texts),
+    writeFileIfChanged(`${OUTPUT_DIRECTORY}/schema.json`, `${JSON.stringify(schema, null, 2)}\n`),
+    writeFileIfChanged(`${OUTPUT_DIRECTORY}/README.md`, readme),
+  ].some(changed => changed);
 
   const files = [
     fileDescriptor('poets.jsonl.gz', 'poet'),
@@ -370,11 +381,14 @@ const buildCorpusDataset = (collected, { builtAt = new Date().toISOString() } = 
     fileDescriptor('schema.json'),
     fileDescriptor('README.md'),
   ];
+  const previousManifest = fs.existsSync(`${OUTPUT_DIRECTORY}/manifest.json`)
+    ? JSON.parse(fs.readFileSync(`${OUTPUT_DIRECTORY}/manifest.json`, 'utf-8'))
+    : null;
   const manifest = {
     dataset: 'kalliope-corpus',
     dataset_version: DATASET_VERSION,
     schema_version: SCHEMA_VERSION,
-    built_at: builtAt,
+    built_at: dataChanged ? builtAt : (previousManifest?.built_at ?? builtAt),
     counts: { poets: poets.length, works: works.length, texts: texts.length },
     relations: {
       'work.poet_id': 'poet.id',
@@ -388,8 +402,8 @@ const buildCorpusDataset = (collected, { builtAt = new Date().toISOString() } = 
     },
     files,
   };
-  fs.writeFileSync(`${OUTPUT_DIRECTORY}/manifest.json`, `${JSON.stringify(manifest, null, 2)}\n`);
-  fs.writeFileSync('public/api/manifest.json', `${JSON.stringify({
+  writeFileIfChanged(`${OUTPUT_DIRECTORY}/manifest.json`, `${JSON.stringify(manifest, null, 2)}\n`);
+  writeFileIfChanged('public/api/manifest.json', `${JSON.stringify({
     current_version: DATASET_VERSION,
     manifest_url: `${SITE_URL}/api/${DATASET_VERSION}/manifest.json`,
   }, null, 2)}\n`);
