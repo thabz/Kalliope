@@ -204,8 +204,33 @@ En linje fort<pb n="14" facs="021.jpg"/>sætter</poetry></body>
     `;
 
     expect(collectPageBreakIssues('work.xml', xml)).toEqual([
-      'work.xml: pb/@facs must not decrease through the work: 030.jpg before 025.jpg.',
+      'work.xml: pb/@facs must not decrease within one source: 030.jpg before 025.jpg.',
     ]);
+  });
+
+  it('allows facsimile page numbers to restart for a new source', () => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead>
+          <title>Samlede værker</title><year>1900</year>
+          <source id="bind1"/><source id="bind2"/><pagebreaks/>
+        </workhead>
+        <workbody>
+          <text id="digter1900a">
+            <head><firstline>Første linje</firstline><source in="bind1" pages="11-12"/></head>
+            <body><poetry>Første linje
+<pb n="12" facs="030.jpg"/>Anden linje</poetry></body>
+          </text>
+          <text id="digter1900b">
+            <head><firstline>Første linje</firstline><source in="bind2" pages="7-8"/></head>
+            <body><poetry>Første linje
+<pb n="8" facs="017.jpg"/>Anden linje</poetry></body>
+          </text>
+        </workbody>
+      </kalliopework>
+    `;
+
+    expect(collectPageBreakIssues('work.xml', xml)).toEqual([]);
   });
 
   it('rejects decreasing printed page numbers within one text', () => {
