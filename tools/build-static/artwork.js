@@ -109,10 +109,10 @@ const build_artwork = async (collected) => {
       const artworkFilename = `fdirs/${personId}/artwork.xml`;
       const portraitsFile = `fdirs/${personId}/portraits.xml`;
       const artworkFileChanged =
+        isFileModified(artworkFilename) ||
         force_reload ||
         codeModified ||
-        museumsModified ||
-        isFileModified(artworkFilename);
+        museumsModified;
 
       if (artworkFileChanged) {
         found_changes = true;
@@ -132,10 +132,10 @@ const build_artwork = async (collected) => {
         }
       }
       if (
+        isFileModified(portraitsFile) ||
         force_reload ||
         codeModified ||
-        museumsModified ||
-        isFileModified(portraitsFile)
+        museumsModified
       ) {
         found_changes = true;
         // Fjern eksisterende portraits fra cache (i tilfælde af id er slettet)
@@ -191,10 +191,10 @@ const build_artwork = async (collected) => {
         async (workId) => {
           const workFilename = `fdirs/${personId}/${workId}.xml`;
           if (
+            isFileModified(workFilename) ||
             force_reload ||
             codeModified ||
-            museumsModified ||
-            isFileModified(workFilename)
+            museumsModified
           ) {
             found_changes = true;
             // Fjern eksisterende work pictures fra cache
@@ -247,10 +247,10 @@ const build_artwork = async (collected) => {
   );
 
   if (
+    isFileModified('content/artwork.xml') ||
     force_reload ||
     codeModified ||
-    museumsModified ||
-    isFileModified('content/artwork.xml')
+    museumsModified
   ) {
     found_changes = true;
     Array.from(collected_artwork.keys())

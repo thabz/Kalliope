@@ -35,7 +35,8 @@ const build_variants = (collected) => {
       if (!fileExists(filename)) {
         return;
       }
-      if (!force_reload && !isFileModified(filename)) {
+      const fileModified = isFileModified(filename);
+      if (!force_reload && !fileModified) {
         return;
       }
       let doc = loadXMLDoc(filename);

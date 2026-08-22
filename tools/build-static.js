@@ -286,7 +286,7 @@ const build_poet_workids = () => {
     if (!fs.existsSync(infoFilename)) {
       throw new Error(`Missing info.xml in fdirs/${poetId}.`);
     }
-    if (globalForceReload || isFileModified(infoFilename)) {
+    if (isFileModified(infoFilename) || globalForceReload) {
       const doc = loadXMLDoc(infoFilename);
       const workIds = safeGetText(doc, 'works') || '';
       let items = workIds.split(',').filter((x) => x.length > 0);
@@ -1058,7 +1058,7 @@ const works_first_pass = (collected) => {
       (workId) => `fdirs/${poetId}/${workId}.xml`,
     );
     const poetHasChangedWorks =
-      force_reload || isFileModified(...workFilenames);
+      isFileModified(...workFilenames) || force_reload;
 
     workIds.forEach((workId) => {
       const workFilename = `fdirs/${poetId}/${workId}.xml`;
