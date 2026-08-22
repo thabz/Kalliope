@@ -1437,8 +1437,11 @@ kildedata.
 
 Inden for hver tekstpost skal arabiske `pb/@n` være ikke-faldende; de kan
 begynde forfra ved en ny tekstpost med selvstændig paginering. Numeriske
-`pb/@facs`-filnavne skal være ikke-faldende gennem hele værket. Spring er
-tilladt; romertal i `n` ignoreres af den maskinelle rækkefølgekontrol.
+`pb/@facs`-filnavne skal være ikke-faldende inden for samme facsimilekilde. I
+ældre værkfiler med flere kilder begynder en ny rækkefølge, når tekstens
+`source/@in` skifter. Uden `source/@in` gælder én rækkefølge for hele værket.
+Spring er tilladt; romertal i `n` ignoreres af den maskinelle
+rækkefølgekontrol.
 `ignore-tests="pagebreak-count"` på en tekst eller
 undtagelsesvis hele værket springer kun den aritmetiske sammenligning mellem
 sideinterval og antal `<pb>` over. Den gør ikke et ulovligt interval gyldigt og

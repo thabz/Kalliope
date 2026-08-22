@@ -201,8 +201,10 @@ Tekstdatoer beskrives nedenfor. De tre sidste samles ogsaa i `caches/collected.d
 
 `<workbody>` kan indeholde:
 
-- `<text>`: en normal tekst/digtpost.
-- `<prose>`: en selvstaendig prosatekst med `head` og `body`.
+- `<text>`: en normal tekst- eller digtpost. Selvstændig prosa registreres også
+  som `<text>` med brødteksten i `<body><prose>...</prose></body>`.
+- `<prose>`: en ældre form for selvstændige prosatekster. Brug `<text>` ved nye
+  eller redigerede tekstforekomster.
 - `<section>`: en gruppe tekster, eventuelt linkbar hvis den har `id`.
 - `<subwork ref="..."/>`: henviser til et andet vaerk hos samme digter.
 
@@ -463,9 +465,12 @@ tillader fortsat ældre `<pb>` uden `facs` af hensyn til bagudkompatibilitet.
 
 Inden for hver tekstpost må de arabiske værdier i `pb/@n` ikke falde. De kan
 begynde forfra ved en ny tekstpost, når kilden har selvstændig paginering. De
-numeriske facsimilefilnavne i `pb/@facs` må ikke falde gennem hele værket.
-Spring er gyldige, fordi sideskift mellem to tekstposter ikke får en markør.
-Romertalsværdier i `n` indgår ikke i den maskinelle rækkefølgekontrol.
+numeriske facsimilefilnavne i `pb/@facs` må ikke falde inden for den samme
+facsimilekilde. I ældre værkfiler med flere kilder begynder en ny rækkefølge,
+når tekstens `source/@in` skifter. Uden `source/@in` gælder én rækkefølge for
+hele værket. Spring er gyldige, fordi sideskift mellem to tekstposter ikke får
+en markør. Romertalsværdier i `n` indgår ikke i den maskinelle
+rækkefølgekontrol.
 
 Hvis et lovligt sideinterval undtagelsesvis ikke kan omsættes til
 `slutside - startside` interne markører, kan den konkrete tekst bruge
