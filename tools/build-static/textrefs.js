@@ -94,7 +94,8 @@ const build_textrefs = collected => {
         return;
       }
       knownFiles.add(filename);
-      if (!force_reload && !isFileModified(filename)) {
+      const fileModified = isFileModified(filename);
+      if (!force_reload && !fileModified) {
         return;
       } else {
         found_changes = true;

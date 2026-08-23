@@ -12,6 +12,7 @@ import {
   safeGetText,
   safeGetAttr,
   getChildByTagName,
+  getChildrenByTagName,
 } from './xml.js';
 import { mapLimit } from './concurrency.js';
 
@@ -58,6 +59,12 @@ const build_keywords = async collected => {
           const author = safeGetText(head, 'author');
           const rawBody = safeGetInnerXML(body) || '';
           const content_html = htmlToXml(rawBody, collected);
+          const sources = (getChildrenByTagName(head, 'source') || []).map(
+            source => ({
+              content_html: htmlToXml(safeGetInnerXML(source), collected),
+              href: safeGetAttr(source, 'href'),
+            })
+          );
           const has_footnotes =
             rawBody.indexOf('<footnote') !== -1 ||
             rawBody.indexOf('<note') !== -1;
@@ -65,6 +72,7 @@ const build_keywords = async collected => {
             ...data,
             is_draft,
             author,
+            sources,
             pictures,
             has_footnotes,
             content_lang: 'da',

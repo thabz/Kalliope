@@ -3,6 +3,9 @@
 <workhead>
   <title>Dæmpede Melodier</title>
   <year>1875</year>
+  <identifiers>
+    <openlibrary-work>OL3078309W</openlibrary-work>
+  </identifiers>
   <notes>
     <note type="credits">Bidrag fra Henrik Nielsen.</note>
     <note>Gengivet efter førsteudgaven af Holger Drachmann:  <i>Dæmpede Melodier</i>, Den gyldendalske Boghandel, Kbh., 1875.</note>
@@ -2623,11 +2626,11 @@ En Haabende blandt Haabets sidste Rester.
 </head>
 <body>
 <poetry>
-<nonum><small><right>Soll Spot und Hohn getragen sein,</right></small></nonum>
-<nonum><small><right>Trag' ich allein den Hohn;</right></small></nonum>
-<nonum><small><right>Ich kenn' ihn wohl, er kennt mich wohl</right></small></nonum>
-<nonum><small><right>Und Gott weiss auch davon.</right></small></nonum>
-<nonum><small><right><w>Goethe.</w></right></small></nonum>
+<nonum><right><small>Soll Spot und Hohn getragen sein,</small></right></nonum>
+<nonum><right><small>Trag' ich allein den Hohn;</small></right></nonum>
+<nonum><right><small>Ich kenn' ihn wohl, er kennt mich wohl</small></right></nonum>
+<nonum><right><small>Und Gott weiss auch davon.</small></right></nonum>
+<nonum><right><small><w>Goethe.</w></small></right></nonum>
 
 Se Solen synker. Vidt i Luften runger
 Et samlet Kor af Kjæmpebyens Stemmer.
@@ -3071,11 +3074,11 @@ Og Svaret det samme: Stene!
 </head>
 <body>
 <poetry>
-<nonum><small><right>Er war nunmehr der Länder satt,</right></small></nonum>
-<nonum><small><right>Wo man so viele Kreuze hat</right></small></nonum>
-<nonum><small><right>Und man, für lauter Kreuz und Christ,</right></small></nonum>
-<nonum><small><right>Ihn eben und sein Kreuz vergiszt.</right></small></nonum>
-<nonum><small><right><i>Goethe.</i></right></small></nonum>
+<nonum><right><small>Er war nunmehr der Länder satt,</small></right></nonum>
+<nonum><right><small>Wo man so viele Kreuze hat</small></right></nonum>
+<nonum><right><small>Und man, für lauter Kreuz und Christ,</small></right></nonum>
+<nonum><right><small>Ihn eben und sein Kreuz vergiszt.</small></right></nonum>
+<nonum><right><small><i>Goethe.</i></small></right></nonum>
 
 Hvor i fredlyst Urskovsstilhed
 Kjæmpesøilers Kirkeecho
@@ -3442,16 +3445,19 @@ I La Plataflodens Vande.
   <firstline>Som Baaden, der sagte glider</firstline>
   <source pages="139-141"/>
   <pictures>
-    <picture src="drachmann2018012928-p1.jpg" wikidata="Q24413307" museum="louvre" objid="cl010065885" invnr="INV 10039">
+    <picture src="drachmann2018012928-p1.jpg" museum="louvre" objid="cl010065885" invnr="INV 10039">
       Marc Gabriel Charles Gleyre: <i>Le Soir Ou Les Illusions Perdues</i>, ca. 1843, olie på lærred, 238 × 157 cm. Louvre.
       <!-- metadata checked: 2026-08-11 -->
+      <identifiers>
+        <wikidata>Q24413307</wikidata>
+      </identifiers>
     </picture>
   </pictures>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<nonum><small><center>efter Gleyres Maleri i Luxembourg »Les illusions perdues«.</center></small></nonum>
+<nonum><center><small>efter Gleyres Maleri i Luxembourg »Les illusions perdues«.</small></center></nonum>
 
 Som Baaden, der sagte glider
 Henad de blanke Strømme,

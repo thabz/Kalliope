@@ -2,6 +2,9 @@
 <kalliopework id="commedia" author="dante" status="incomplete" type="poetry">
 <workhead>
   <title>La divina commedia</title>
+  <identifiers>
+    <openlibrary-work>OL26005803W</openlibrary-work>
+  </identifiers>
   <notes>
   </notes>
 </workhead>
@@ -1086,14 +1089,21 @@ con li occhi vòlti a chi del fango ingozza.
   <indextitle>Canto VIII</indextitle>
   <firstline>Io dico, seguitando, ch'assai prima</firstline>
   <pictures>
-    <picture src="dante2005050108-p1.jpg" wikidata="Q2354251" museum="louvre" objid="cl010065871" invnr="INV 3820">
+    <picture src="dante2005050108-p1.jpg" museum="louvre" objid="cl010065871" invnr="INV 3820">
       Eugène Delacroix: <i>La Barque de Dante</i>, 1822, olie på lærred, 189×246 cm.
       <!-- metadata checked: 2026-07-16 -->
+      <identifiers>
+        <wikidata>Q2354251</wikidata>
+      </identifiers>
     </picture>
-    <picture src="dante2005050108-p2.jpg" wikidata="Q2665048" museum="orsay" objid="dante-et-virgile-153692">
+    <picture src="dante2005050108-p2.jpg" museum="orsay" objid="dante-et-virgile-153692">
       William-Adolphe Bouguereau: <i>Dante et Virgile</i>, 1850, olie på lærred, 280.5×225.3 cm.
       <!-- metadata checked: 2026-07-16 -->
+      <identifiers>
+        <wikidata>Q2665048</wikidata>
+      </identifiers>
     </picture>
+    <picture artwork="weie/dante-virgil-underverdenen"/>
   </pictures>
 </head>
 <body>
@@ -5217,6 +5227,7 @@ che porta 'l ciel, per un pertugio tondo.
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
 
@@ -14987,6 +14998,9 @@ speculi fatti s'ha in che si spezza,
   <toctitle>Canto XXX</toctitle>
   <indextitle>Canto XXX</indextitle>
   <firstline>Forse semilia miglia di lontano</firstline>
+  <pictures>
+    <picture artwork="christiansenps/1895-dante-beatrice-paradis"/>
+  </pictures>
 </head>
 <body>
 <poetry>

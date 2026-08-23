@@ -85,6 +85,25 @@ Almindelige felter i `<workhead>`:
 - `<pagebreaks/>`: erklærer, at alle interne sideskift i de inkluderede
   tekstkroppe er registreret med `<pb>`.
 
+Et værks metadata kan have typevaliderede eksterne identifikatorer:
+
+```xml
+<workhead>
+  <title>Lyngblomster</title>
+  <year>1856</year>
+  <identifiers>
+    <wikidata>Q123</wikidata>
+    <openlibrary-work>OL4525390W</openlibrary-work>
+  </identifiers>
+</workhead>
+```
+
+Identifikatorerne gemmes separat i work-metadata.
+
+For værker er `wikidata`, `dbc-work`, `openlibrary-work`,
+`dansklitteraturshistorie-lex-dk` og `runeberg-book` tilladt. For konkrete source-udgaver er
+`wikidata`, `kb-alma`, `dbc-pid` og `openlibrary-edition` tilladt.
+
 Titelfelter kan bruge `<num>` som prefix:
 
 ```xml
@@ -113,6 +132,18 @@ side, er der ingen interne sideskift at indsætte. Fravær af `<pagebreaks/>` i 
 ældre værkfil betyder derfor »ikke oplyst«, ikke at kilden er uden sideskift.
 
 ### Workhead source
+
+En kilde kan have typevaliderede eksterne identifikatorer. I første version er
+kun `<wikidata>` tilladt:
+
+```xml
+<source>
+  Erica: <i>Lyngblomster</i>, 1856.
+  <identifiers><wikidata>Q123</wikidata></identifiers>
+</source>
+```
+
+Identifikatorerne gemmes separat fra den synlige kildeangivelse.
 
 En kilde paa vaerkniveau kan bruges som default for tekster i samme vaerk:
 
@@ -170,8 +201,10 @@ Tekstdatoer beskrives nedenfor. De tre sidste samles ogsaa i `caches/collected.d
 
 `<workbody>` kan indeholde:
 
-- `<text>`: en normal tekst/digtpost.
-- `<prose>`: en selvstaendig prosatekst med `head` og `body`.
+- `<text>`: en normal tekst- eller digtpost. Selvstændig prosa registreres også
+  som `<text>` med brødteksten i `<body><prose>...</prose></body>`.
+- `<prose>`: en ældre form for selvstændige prosatekster. Brug `<text>` ved nye
+  eller redigerede tekstforekomster.
 - `<section>`: en gruppe tekster, eventuelt linkbar hvis den har `id`.
 - `<subwork ref="..."/>`: henviser til et andet vaerk hos samme digter.
 
@@ -206,6 +239,33 @@ Attributter paa `<text>`:
 - `ignore-tests`: bruges af tests til enkelte dokumenterede undtagelser. Værdien
   `pagebreak-count` springer kun sammenligningen mellem `source/@pages` og antal
   `<pb>` over for teksten.
+
+#### Tekst-id
+
+Nye tekst-id'er består af tekstens effektive digter-id, oprettelsesdatoen i
+formatet `YYYYMMDD` og et løbenummer på mindst to cifre:
+
+```text
+winther2018081001
+winther2018081002
+```
+
+Det effektive digter-id er `text/@author`, når attributten findes, og ellers
+værkets `kalliopework/@author`. En tekst uden `author` i et værk med
+`author="antologierdk"` får derfor eksempelvis id'et
+`antologierdk2026081501`. Løbenumre må ikke genbruges, hvis en tekst slettes
+eller sammenlægges.
+
+Næste ledige id kan genereres uden at ændre værkfilen:
+
+```sh
+npm run new-text-id -- fdirs/antologierdk/1872.xml
+npm run new-text-id -- fdirs/antologierdk/1872.xml --author aarestrup
+```
+
+CI sammenligner tekst-id'erne semantisk mellem base- og HEAD-committen. Kun
+id'er, der ikke fandtes i base-committen, håndhæves efter dette format, så
+historiske id-formater fortsat kan bevares uændret.
 
 ### Text head
 
@@ -338,9 +398,10 @@ Datohjaelperne kender også negative år og enkelte `ca.`-udtryk i andre sammenh
 
 Blokattributter:
 
-- `font-size="small"`: mindre skrift.
-- `margin-left="30%"` eller lignende: bruges især paa `<quote>`.
-- `margin-right="..."`: bruges især paa `<quote>`.
+- `max-width="..."`: valgfri maksimal bredde for især `<quote>`.
+
+`<quote>` renderes med mindre skrift, naturlig bredde og placeres mod højre.
+Brug kun `max-width`, når et langt citat skal begrænses yderligere.
 
 Eksempel:
 
@@ -355,7 +416,7 @@ Anden verslinje
 
 Tredje verslinje
   </poetry>
-  <quote margin-left="30%" font-size="small">
+  <quote max-width="70%">
 Et citat
   </quote>
 </body>
@@ -404,9 +465,12 @@ tillader fortsat ældre `<pb>` uden `facs` af hensyn til bagudkompatibilitet.
 
 Inden for hver tekstpost må de arabiske værdier i `pb/@n` ikke falde. De kan
 begynde forfra ved en ny tekstpost, når kilden har selvstændig paginering. De
-numeriske facsimilefilnavne i `pb/@facs` må ikke falde gennem hele værket.
-Spring er gyldige, fordi sideskift mellem to tekstposter ikke får en markør.
-Romertalsværdier i `n` indgår ikke i den maskinelle rækkefølgekontrol.
+numeriske facsimilefilnavne i `pb/@facs` må ikke falde inden for den samme
+facsimilekilde. I ældre værkfiler med flere kilder begynder en ny rækkefølge,
+når tekstens `source/@in` skifter. Uden `source/@in` gælder én rækkefølge for
+hele værket. Spring er gyldige, fordi sideskift mellem to tekstposter ikke får
+en markør. Romertalsværdier i `n` indgår ikke i den maskinelle
+rækkefølgekontrol.
 
 Hvis et lovligt sideinterval undtagelsesvis ikke kan omsættes til
 `slutside - startside` interne markører, kan den konkrete tekst bruge
@@ -546,7 +610,7 @@ Attributter:
 - `portrait`: reference til et portraet i `fdirs/<digter>/portraits.xml`.
 - `primary="true"`: markerer primaert billede.
 - `year`: aar for billedet.
-- `museum`, `objid`, `invnr`, `wikidata`: bruges til museumslinks.
+- `museum`, `objid`, `invnr`: bruges til museumslinks.
 - `clip-path`: bruges til visuel beskæring.
 - `type`: fri type, fx `titlepage`, `frontpage`, `illustration`.
 - `lang`: sprog for lokal billedtekst; default er `da`.
@@ -629,6 +693,17 @@ Disse tags paavirker linjenummerering eller linjelayout:
 - `<resetnum/>`: nulstiller automatisk linjenummerering til 1.
 - `<wrap>...</wrap>`: undgaar poesilinje-layout for lange linjer.
 - `<center>...</center>` og `<right>...</right>`: linjejustering.
+
+`<nonum>` er den yderste markør for en unummereret linje. En eventuel
+linjejustering står inden i `<nonum>`, og typografiske markører står inderst:
+
+```xml
+<nonum><right><i>F. H. Guldberg</i></right></nonum>
+```
+
+En linje må højst have én linjejustering og må derfor aldrig indeholde både
+`<right>` og `<center>`. Typografiske markører som `<i>`, `<small>`, `<w>`,
+`<b>` og `<sc>` kan indlejres i vilkårlig rækkefølge.
 
 Hvis en linje indeholder `<num>` eller `<margin>`, regnes teksten for at have egne
 visningsnumre, og automatisk visning af hver femte linje slaas fra.

@@ -184,15 +184,22 @@ Eksisterende værks-ID’er som `aarestrup/1838` bevares. Build-processen kan fo
 
 ### Tekst-ID
 
-Hver tekstforekomst får et globalt stabilt ID:
+Hver tekstforekomst får et globalt stabilt ID sammensat af det effektive
+digter-ID, oprettelsesdatoen i formatet `YYYYMMDD` og et løbenummer på mindst
+to cifre:
 
 ```text
-efterklang1868t001
-efterklang1868t002
-efterklang1868t003
+digterid2026081501
+digterid2026081502
+digterid2026081503
 ```
 
-ID’et må ikke afhænge af:
+Det effektive digter-ID er `text/@author`, når attributten findes, og ellers
+værkets `kalliopework/@author`. For antologitekster uden `text/@author` bruges
+samlingens digter-ID `antologierdk`.
+
+Digter-ID'et og oprettelsesdatoen fastlægges, når teksten oprettes. ID'et må
+ikke senere ændres, hvis oplysninger om teksten bliver rettet, herunder:
 
 - titel
 - førstelinje
@@ -200,9 +207,10 @@ ID’et må ikke afhænge af:
 - sidenummer
 - teksttype
 
-Disse oplysninger kan senere ændres uden at tekstens identitet ændres.
+Disse oplysninger kan dermed ændres uden at tekstens identitet ændres.
 
-Løbende numre må ikke genbruges, hvis en fejloprettet tekst slettes eller sammenlægges.
+Løbenumre må ikke genbruges, hvis en fejloprettet tekst slettes eller
+sammenlægges.
 
 ### Facsimile-ID
 
@@ -352,7 +360,7 @@ Eksemplet bruger pladsholdere, hvor de konkrete bibliografiske eller personmæss
   <workbody>
 
     <text
-        id="efterklang1868t001"
+        id="antologierdk2026072001"
         type="preface"
         status="verified">
 
@@ -384,7 +392,7 @@ Forordets tekst …
     </text>
 
     <text
-        id="efterklang1868t002"
+        id="antologierdk2026072002"
         type="poem"
         status="verified">
 
@@ -430,7 +438,7 @@ Som det findes i Kilden.
     </text>
 
     <text
-        id="efterklang1868t003"
+        id="antologierdk2026072003"
         type="poem"
         status="unresolved">
 
@@ -466,7 +474,7 @@ Et Ord kan ikke læses:
     </text>
 
     <text
-        id="efterklang1868t004"
+        id="antologierdk2026072004"
         type="poem"
         status="verified">
 
@@ -626,7 +634,7 @@ Eksisterende digtsamlinger skal fortsat kunne stå uændret:
   </workhead>
 
   <workbody>
-    <text id="aarestrup1838t001">
+    <text id="aarestrup2026081501">
       ...
     </text>
   </workbody>
@@ -871,7 +879,7 @@ Eksempel:
 
 ```xml
 <text
-    id="efterklang1868t002"
+    id="antologierdk2026072002"
     type="poem"
     status="verified">
 ```
@@ -1429,8 +1437,11 @@ kildedata.
 
 Inden for hver tekstpost skal arabiske `pb/@n` være ikke-faldende; de kan
 begynde forfra ved en ny tekstpost med selvstændig paginering. Numeriske
-`pb/@facs`-filnavne skal være ikke-faldende gennem hele værket. Spring er
-tilladt; romertal i `n` ignoreres af den maskinelle rækkefølgekontrol.
+`pb/@facs`-filnavne skal være ikke-faldende inden for samme facsimilekilde. I
+ældre værkfiler med flere kilder begynder en ny rækkefølge, når tekstens
+`source/@in` skifter. Uden `source/@in` gælder én rækkefølge for hele værket.
+Spring er tilladt; romertal i `n` ignoreres af den maskinelle
+rækkefølgekontrol.
 `ignore-tests="pagebreak-count"` på en tekst eller
 undtagelsesvis hele værket springer kun den aritmetiske sammenligning mellem
 sideinterval og antal `<pb>` over. Den gør ikke et ulovligt interval gyldigt og
@@ -2109,7 +2120,7 @@ En tekst:
 
 ```js
 {
-  id: "efterklang1868t002",
+  id: "antologierdk2026072002",
   type: "poem",
   status: "verified",
 
