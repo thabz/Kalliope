@@ -220,7 +220,7 @@ for Engle maa der Engle til at synge.
 </body>
 </text>
 
-<text id="drachmann2026080202">
+<text id="drachmann2026080202" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Første Sang</title>
   <firstline>En Helt jeg savner: sælsomt nok, ej sandt?</firstline>
@@ -2865,7 +2865,7 @@ Er det ej sundt — ja saa er Livet sygt.
 </body>
 </text>
 
-<text id="drachmann2026080404">
+<text id="drachmann2026080404" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Anden Sang</title>
   <firstline>O I, som tugter op en ædel Fole</firstline>
@@ -6748,7 +6748,7 @@ Stedet taget fra Suetonius. — «Og dog var der En og Anden, som i lang Tid pyn
 </body>
 </text>
 
-<text id="drachmann2026080406">
+<text id="drachmann2026080406" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Fjerde Sang</title>
   <firstline>Begynde paa en Sang: hvad blev for os</firstline>
@@ -9672,7 +9672,7 @@ imens hun faar en Lur sig, som Homer.
 </body>
 </text>
 
-<text id="drachmann2026082205">
+<text id="drachmann2026082205" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Anmærkninger til femte Sang</title>
   <source pages="369-378"/>
@@ -9894,7 +9894,7 @@ Denne Stanze, som Byron (efter hans egne Ord) skrev paa Sengen — Febr. 27. 182
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-<quote margin-left="30%" font-size="small">
+<quote>
 <center><w>Herr Tobias.</w></center>
 Tro Du, fordi Du er dydig, at der ingen Kringler og Krydderøl skal være til mere?
 
