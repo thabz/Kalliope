@@ -554,11 +554,12 @@ const TextContent = (props) => {
           content: attr(data-num);
           color: black;
           margin-right: 1em;
-          width: 1.5em;
+          width: 3.5em;
+          white-space: nowrap;
           font-size: 1em;
           text-align: right;
           display: inline-block;
-          margin-left: -2.5em;
+          margin-left: -4.5em;
           vertical-align: top;
           margin-top: 0;
         }

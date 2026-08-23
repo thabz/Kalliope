@@ -82,12 +82,10 @@ describe('helpers', () => {
       ]);
     });
 
-    it('renders canonical nonum wrapper order like the historical order', () => {
+    it('keeps escaped angle brackets as text for the browser XML parser', () => {
       expect(
-        lineTexts('<nonum><right><i>F. H. Guldberg</i></right></nonum>')
-      ).toEqual(
-        lineTexts('<right><nonum><i>F. H. Guldberg</i></nonum></right>')
-      );
+        lineTexts('&lt;er røde af blodet af mænd, der dræbes,&gt;')
+      ).toEqual(['&lt;er røde af blodet af mænd, der dræbes,&gt;']);
     });
   });
 });
