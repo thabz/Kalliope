@@ -152,6 +152,11 @@ const htmlToXml = (html, collected, isPoetry) => {
   if (html == null) {
     return null;
   }
+  const escapedLessThanPlaceholder = '\uE000KALLIOPE_LT\uE001';
+  const escapedGreaterThanPlaceholder = '\uE000KALLIOPE_GT\uE001';
+  html = html
+    .replace(/&lt;/g, escapedLessThanPlaceholder)
+    .replace(/&gt;/g, escapedGreaterThanPlaceholder);
   const regexp = /<xref.*?(digt|poem|keyword|work|bibel|dict)=['"]([^'"]*)['"][^>]*>/;
   if (isPoetry) {
     // Marker strofe numre
@@ -194,6 +199,9 @@ const htmlToXml = (html, collected, isPoetry) => {
       )
     )
   );
+  decoded = decoded
+    .replaceAll(escapedLessThanPlaceholder, '&lt;')
+    .replaceAll(escapedGreaterThanPlaceholder, '&gt;');
 
   while (decoded.match(regexp)) {
     decoded = decoded.replace(regexp, (_, type, id) => {
