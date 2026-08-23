@@ -56,6 +56,7 @@ import {
   tagName,
 } from './build-static/xml.js';
 import { build_sitemap_xml } from './build-static/sitemap.js';
+import { buildBiographies } from './build-static/biographies.js';
 import { build_keywords } from './build-static/keywords.js';
 import { build_about_pages } from './build-static/about.js';
 import { build_portraits_json } from './build-static/portraits.js';
@@ -242,28 +243,13 @@ const build_bio_json = async (collected) => {
       const bioXmlPath = `fdirs/${poet.id}/bio.xml`;
       const data = {
         poet,
-        content_html: null,
-        sources: [],
+        biographies: [],
         identifiers: loadExternalIdentifiers(poet.id),
       };
       const doc = loadXMLDoc(bioXmlPath);
       if (doc != null) {
         const bio = getChildByTagName(doc, 'bio');
-        const head = getChildByTagName(bio, 'head');
-        const body = getChildByTagName(bio, 'body');
-        let author = safeGetText(head, 'author');
-        data.content_html = htmlToXml(safeGetInnerXML(body), collected);
-        data.content_lang = 'da';
-        data.sources = (getChildrenByTagName(head, 'source') || []).map(
-          source => ({
-            content_html: htmlToXml(
-              safeGetInnerXMLWithout(source, ['identifiers']),
-              collected,
-            ),
-            href: safeGetAttr(source, 'href'),
-            identifiers: getIdentifiers(source, identifierAllowlist.source),
-          })
-        );
+        data.biographies = buildBiographies(bio, collected);
       }
       data.timeline = await buildPoetTimelineJson(poet, collected);
       data.portraits = await build_portraits_json(poet, collected);
