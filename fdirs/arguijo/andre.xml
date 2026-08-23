@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="andre" author="arguijo" status="incomplete" type="poetry">
-<workhead><title>Andre digte</title></workhead>
-  <workbody>
-    <text id="arguijo2026082301" lang="es">
+<workhead>
+  <title>Andre digte</title>
+</workhead>
+<workbody>
+<text id="arguijo2026082301" lang="es">
 <head>
   <title>A la mudanza de la fortuna</title>
   <firstline>Yo vi del rojo sol la luz serena</firstline>
+  <keywords>sonnet</keywords>
   <source>Juan de Arguijo: <a href="https://www.biblioteca-antologica.org/es/wp-content/uploads/2019/08/ARGUIJO-Sonetos.pdf"><i>Sonetos</i></a>, “A la mudanza de la fortuna”.</source>
 </head>
-<body><poetry>
+<body>
+<poetry>
 Yo vi del rojo sol la luz serena
 turbarse, y que en un punto desaparece
 su alegre faz, y en torno se oscurece
@@ -26,7 +30,8 @@ restituirse alegre el claro día,
 Y de nuevo esplendor ornado el cielo
 miré, y dije: ¿Quién sabe si le espera
 igual mudanza a la fortuna mía?
-</poetry></body>
+</poetry>
+</body>
 </text>
 </workbody>
 </kalliopework>
