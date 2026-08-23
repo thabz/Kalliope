@@ -68,7 +68,7 @@ export const structuralTagsOutsideColumnZero = xml => {
 
 const addTextSpacing = xml =>
   xml.replace(
-    /(<\/text>)\r?\n(?:[ \t]*\r?\n)*(?=<text(?:[ \t>]))/g,
+    /(<\/text>)\r?\n(?:[ \t]*\r?\n)*/g,
     '$1\n\n',
   );
 

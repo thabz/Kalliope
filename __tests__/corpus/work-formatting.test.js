@@ -53,6 +53,13 @@ Et citat
     expect(structuralTagsOutsideColumnZero(formatted)).toEqual([]);
   });
 
+  it('always leaves a blank line after text and section elements', () => {
+    expect(formatWorkXml('<workbody>\n<text>Tekst</text>\n</workbody>\n'))
+      .toContain('</text>\n\n</workbody>');
+    expect(formatWorkXml('<workbody>\n<section>Del</section>\n</workbody>\n'))
+      .toContain('</section>\n\n</workbody>');
+  });
+
   it('puts poetry content and nonum lines on separate lines', () => {
     const xml = `<text>
 <body>
