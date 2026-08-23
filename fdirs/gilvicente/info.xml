@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="gilvicente" country="un" lang="es" type="poet">
+  <name>
+    <firstname>Gil</firstname>
+    <lastname>Vicente</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1465 ca.</date>
+    </born>
+    <dead>
+      <date>1536 ca.</date>
+    </dead>
+  </period>
+  <works>andre</works>
+  <identifiers>
+    <wikidata>Q360383</wikidata>
+    <wikipedia-en>Gil Vicente</wikipedia-en>
+    <wikipedia-de>Gil Vicente</wikipedia-de>
+    <viaf>9854778</viaf>
+    <gnd>118804383</gnd>
+  </identifiers>
+</person>
