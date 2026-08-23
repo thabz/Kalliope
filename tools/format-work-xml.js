@@ -86,10 +86,77 @@ const addSectionSpacing = xml =>
 const splitAdjacentMetadataFields = xml =>
   xml.replace(adjacentMetadataFieldsPattern, '$1\n');
 
+const nonumWrapperNames = [
+  'center',
+  'right',
+  'wrap',
+  'small',
+  'i',
+  'w',
+  'b',
+  'sc',
+  'span',
+];
+const nonumWrapperAlternation = nonumWrapperNames.join('|');
+const wrappedNonumPattern = new RegExp(
+  `((?:<(?:${nonumWrapperAlternation})(?:[ \\t][^<>]*)?>)+)` +
+    `<nonum>([^\\r\\n]*?)<\\/nonum>` +
+    `((?:<\\/(?:${nonumWrapperAlternation})>)+)`,
+  'g',
+);
+
+const normalizeNonumWrappers = xml =>
+  xml.replace(wrappedNonumPattern, (match, openingMarkup, content, closingMarkup) => {
+    const openings = [...openingMarkup.matchAll(
+      new RegExp(`<(${nonumWrapperAlternation})(?:[ \\t][^<>]*)?>`, 'g'),
+    )].map(wrapper => ({ markup: wrapper[0], name: wrapper[1] }));
+    const closings = [...closingMarkup.matchAll(
+      new RegExp(`<\\/(${nonumWrapperAlternation})>`, 'g'),
+    )].map(wrapper => wrapper[1]);
+
+    if (
+      openings.length !== closings.length ||
+      openings.some((wrapper, index) =>
+        wrapper.name !== closings[closings.length - index - 1]
+      )
+    ) {
+      return match;
+    }
+
+    const alignments = openings.filter(
+      wrapper => wrapper.name === 'center' || wrapper.name === 'right',
+    );
+    const appearances = openings.filter(
+      wrapper => wrapper.name !== 'center' && wrapper.name !== 'right',
+    );
+    const canonicalWrappers = [...alignments, ...appearances];
+    const canonicalOpening = canonicalWrappers.map(wrapper => wrapper.markup).join('');
+    const canonicalClosing = canonicalWrappers
+      .toReversed()
+      .map(wrapper => `</${wrapper.name}>`)
+      .join('');
+
+    return `<nonum>${canonicalOpening}${content}${canonicalClosing}</nonum>`;
+  });
+
 const splitPoetryLines = xml =>
-  xml
+  normalizeNonumWrappers(xml)
     .replace(/(<poetry(?:[ \t][^<>]*)?>)(?!\r?\n)/g, '$1\n')
     .replace(/<\/nonum>(?!\r?\n)/g, '</nonum>\n');
+
+export const poetryAlignmentConflicts = xml => {
+  const conflicts = [];
+
+  for (const poetry of xml.matchAll(/<poetry(?:[ \t][^<>]*)?>([\s\S]*?)<\/poetry>/g)) {
+    poetry[1].split(/\r?\n/).forEach(line => {
+      if (/<right(?:[ \t>])/.test(line) && /<center(?:[ \t>])/.test(line)) {
+        conflicts.push(line);
+      }
+    });
+  }
+
+  return conflicts;
+};
 
 const indentMetadata = xml => {
   let metadataDepth = 0;

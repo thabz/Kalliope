@@ -694,6 +694,17 @@ Disse tags paavirker linjenummerering eller linjelayout:
 - `<wrap>...</wrap>`: undgaar poesilinje-layout for lange linjer.
 - `<center>...</center>` og `<right>...</right>`: linjejustering.
 
+`<nonum>` er den yderste markør for en unummereret linje. En eventuel
+linjejustering står inden i `<nonum>`, og typografiske markører står inderst:
+
+```xml
+<nonum><right><i>F. H. Guldberg</i></right></nonum>
+```
+
+En linje må højst have én linjejustering og må derfor aldrig indeholde både
+`<right>` og `<center>`. Typografiske markører som `<i>`, `<small>`, `<w>`,
+`<b>` og `<sc>` kan indlejres i vilkårlig rækkefølge.
+
 Hvis en linje indeholder `<num>` eller `<margin>`, regnes teksten for at have egne
 visningsnumre, og automatisk visning af hver femte linje slaas fra.
 

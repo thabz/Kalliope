@@ -81,5 +81,13 @@ describe('helpers', () => {
           'andre drog fra borgen ned,',
       ]);
     });
+
+    it('renders canonical nonum wrapper order like the historical order', () => {
+      expect(
+        lineTexts('<nonum><right><i>F. H. Guldberg</i></right></nonum>')
+      ).toEqual(
+        lineTexts('<right><nonum><i>F. H. Guldberg</i></nonum></right>')
+      );
+    });
   });
 });
