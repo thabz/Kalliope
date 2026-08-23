@@ -14,6 +14,7 @@ Læs den relevante specialdokumentation før ændringer på området:
 - `docs/xml-portraits-format.md` ved ændringer i `portraits.xml`,
   portrætreferencer eller kvadratiske portrætter
 - `docs/xml-work-format.md` ved ændringer i XML-værkfiler
+- `docs/xml-biographies-format.md` ved ændringer i `fdirs/<id>/bio.xml`
 - `docs/facsimile-korrektur.md` ved transskription og fuld korrektur af tekst,
   strofer og typografi mod et facsimile
 - `docs/ocr-korrektur-laerebog.md` ved generelle læringsprincipper for redigering
