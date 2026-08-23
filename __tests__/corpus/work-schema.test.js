@@ -1,6 +1,24 @@
 import { execFileSync } from 'child_process';
 
 describe('kalliopework RELAX NG schema', () => {
+  const poetryWork = content => `
+    <kalliopework id="1900" author="digter">
+      <workhead><title>Digte</title><year>1900</year></workhead>
+      <workbody>
+        <text id="digter1900a">
+          <head><firstline>Første linje</firstline></head>
+          <body><poetry>${content}</poetry></body>
+        </text>
+      </workbody>
+    </kalliopework>
+  `;
+
+  const validate = xml => execFileSync(
+    'xmllint',
+    ['--noout', '--relaxng', 'schemas/kalliopework.rng', '-'],
+    { input: xml, encoding: 'utf8', stdio: ['pipe', 'pipe', 'pipe'] },
+  );
+
   it('accepts type-specific identifiers on workhead, source and picture', () => {
     const xml = `
       <kalliopework id="1900" author="digter">
@@ -85,6 +103,30 @@ describe('kalliopework RELAX NG schema', () => {
         { input: xml, encoding: 'utf8', stdio: ['pipe', 'pipe', 'pipe'] }
       );
     }).not.toThrow();
+  });
+
+  it('accepts a page break immediately before a canonical nonum line', () => {
+    const xml = poetryWork(
+      '<pb n="49" facs="055.jpg"/><nonum><center>2</center></nonum>',
+    );
+
+    expect(() => validate(xml)).not.toThrow();
+  });
+
+  it('accepts canonical nonum alignment with nested appearance markup', () => {
+    const xml = poetryWork(
+      '<nonum><right><small><i>F. H. Guldberg</i></small></right></nonum>',
+    );
+
+    expect(() => validate(xml)).not.toThrow();
+  });
+
+  it.each([
+    '<right><nonum>Signatur</nonum></right>',
+    '<nonum><small><right>Signatur</right></small></nonum>',
+    '<nonum><right><center>Signatur</center></right></nonum>',
+  ])('rejects non-canonical poetry line markup: %s', content => {
+    expect(() => validate(poetryWork(content))).toThrow();
   });
 
   it('accepts bible references but rejects the obsolete bibel attribute', () => {

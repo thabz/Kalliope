@@ -86,6 +86,79 @@ const addSectionSpacing = xml =>
 const splitAdjacentMetadataFields = xml =>
   xml.replace(adjacentMetadataFieldsPattern, '$1\n');
 
+const nonumWrapperNames = [
+  'nonum',
+  'center',
+  'right',
+  'wrap',
+  'small',
+  'i',
+  'w',
+  'b',
+  'sc',
+  'span',
+];
+const nonumWrapperAlternation = nonumWrapperNames.join('|');
+
+const normalizeLineWrappers = xml => xml.split(/\r?\n/).map(line => {
+  const pageBreakPrefix = line.match(/^(?:<pb\b[^>]*\/>)+/)?.[0] ?? '';
+  let content = line.slice(pageBreakPrefix.length);
+  const wrappers = [];
+  const openingPattern = new RegExp(
+    `^<(${nonumWrapperAlternation})(?:[ \\t][^<>]*)?>`,
+  );
+
+  while (true) {
+    const opening = content.match(openingPattern);
+    if (opening == null) {
+      break;
+    }
+    const closingMarkup = `</${opening[1]}>`;
+    if (content.endsWith(closingMarkup) !== true) {
+      break;
+    }
+    wrappers.push({ markup: opening[0], name: opening[1] });
+    content = content.slice(opening[0].length, -closingMarkup.length);
+  }
+
+  if (wrappers.length === 0) {
+    return line;
+  }
+
+  const lineMarkers = wrappers.filter(wrapper => wrapper.name === 'nonum');
+  const alignments = wrappers.filter(
+    wrapper => wrapper.name === 'center' || wrapper.name === 'right',
+  );
+  const wraps = wrappers.filter(wrapper => wrapper.name === 'wrap');
+  const appearances = wrappers.filter(
+    wrapper =>
+      wrapper.name !== 'nonum' &&
+      wrapper.name !== 'center' &&
+      wrapper.name !== 'right' &&
+      wrapper.name !== 'wrap',
+  );
+  const canonicalWrappers = [
+    ...lineMarkers,
+    ...alignments,
+    ...wraps,
+    ...appearances,
+  ];
+  const canonicalOpening = canonicalWrappers
+    .map(wrapper => wrapper.markup)
+    .join('');
+  const canonicalClosing = canonicalWrappers
+    .toReversed()
+    .map(wrapper => `</${wrapper.name}>`)
+    .join('');
+
+  return `${pageBreakPrefix}${canonicalOpening}${content}${canonicalClosing}`;
+}).join('\n');
+
+const splitPoetryLines = xml =>
+  normalizeLineWrappers(xml)
+    .replace(/(<poetry(?:[ \t][^<>]*)?>)(?!\r?\n)/g, '$1\n')
+    .replace(/<\/nonum>(?!\r?\n)/g, '</nonum>\n');
+
 const indentMetadata = xml => {
   let metadataDepth = 0;
   let withinMetadata = false;
@@ -132,7 +205,8 @@ export const formatWorkXml = xml => {
   const withSplitMetadata = splitAdjacentMetadataFields(
     withoutStructuralIndentation,
   );
-  const withMetadataIndentation = indentMetadata(withSplitMetadata);
+  const withPoetryLines = splitPoetryLines(withSplitMetadata);
+  const withMetadataIndentation = indentMetadata(withPoetryLines);
   return addSectionSpacing(addTextSpacing(withMetadataIndentation))
     .trimEnd() + '\n';
 };

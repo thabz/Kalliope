@@ -69,5 +69,25 @@ describe('helpers', () => {
         'Næste verslinje',
       ]);
     });
+
+    it('preserves line indentation after a page break', () => {
+      expect(
+        lineTexts(
+          '<pb n="18" facs="024.jpg"/>        andre drog fra borgen ned,'
+        )
+      ).toEqual([
+        '<pb n="18" facs="024.jpg"/>' +
+          '\u00a0'.repeat(16) +
+          'andre drog fra borgen ned,',
+      ]);
+    });
+
+    it('renders canonical nonum wrapper order like the historical order', () => {
+      expect(
+        lineTexts('<nonum><right><i>F. H. Guldberg</i></right></nonum>')
+      ).toEqual(
+        lineTexts('<right><nonum><i>F. H. Guldberg</i></nonum></right>')
+      );
+    });
   });
 });

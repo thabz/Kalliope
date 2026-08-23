@@ -52,4 +52,43 @@ Et citat
     );
     expect(structuralTagsOutsideColumnZero(formatted)).toEqual([]);
   });
+
+  it('puts poetry content and nonum lines on separate lines', () => {
+    const xml = `<text>
+<body>
+<poetry><nonum><center>I</center></nonum><nonum><center>a</center></nonum>Første verslinje
+</poetry>
+</body>
+</text>
+`;
+
+    expect(formatWorkXml(xml)).toContain(
+      '<poetry>\n' +
+        '<nonum><center>I</center></nonum>\n' +
+        '<nonum><center>a</center></nonum>\n' +
+        'Første verslinje',
+    );
+  });
+
+  it('puts nonum outside alignment and appearance markup', () => {
+    const xml = '<poetry>\n<right><small><i><nonum>Signatur</nonum></i></small></right>\n</poetry>\n';
+
+    expect(formatWorkXml(xml)).toBe(
+      '<poetry>\n<nonum><right><small><i>Signatur</i></small></right></nonum>\n</poetry>\n',
+    );
+  });
+
+  it('puts alignment outside appearance markup without reordering appearances', () => {
+    const xml = '<poetry>\n<nonum><w><i><center>Scene</center></i></w></nonum>\n</poetry>\n';
+
+    expect(formatWorkXml(xml)).toBe(
+      '<poetry>\n<nonum><center><w><i>Scene</i></w></center></nonum>\n</poetry>\n',
+    );
+  });
+
+  it('formats canonical nonum markup idempotently', () => {
+    const xml = '<poetry>\n<nonum><right><i><small>Signatur</small></i></right></nonum>\n</poetry>\n';
+
+    expect(formatWorkXml(formatWorkXml(xml))).toBe(xml);
+  });
 });
