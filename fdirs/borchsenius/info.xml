@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="borchsenius" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Otto</firstname>
+    <lastname>Borchsenius</lastname>
+    <fullname>Otto Frederik Christian William Borchsenius</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1844-03-17</date>
+      <place>Ringsted</place>
+    </born>
+    <dead>
+      <date>1925-02-26</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <literary-periods>dk-det-moderne-gennembrud</literary-periods>
+  <identifiers>
+    <wikidata>Q5582220</wikidata>
+    <viaf>2568027</viaf>
+    <biografisk-leksikon-lex-dk>Otto_Borchsenius</biografisk-leksikon-lex-dk>
+    <danskforfatterleksikon-dk>BOttoBorchsenius</danskforfatterleksikon-dk>
+  </identifiers>
+</person>

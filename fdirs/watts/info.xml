@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="watts" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Isaac</firstname>
+    <lastname>Watts</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1674-07-17</date>
+      <place>Southampton, England</place>
+    </born>
+    <dead>
+      <date>1748-11-25</date>
+      <place>Stoke Newington, England</place>
+    </dead>
+  </period>
+  <literary-periods>gb-augustansk-litteratur</literary-periods>
+  <works>1709</works>
+  <identifiers>
+    <wikidata>Q313283</wikidata>
+    <wikipedia-da>Jamie Campbell Bower</wikipedia-da>
+    <wikipedia-en>Jamie Campbell Bower</wikipedia-en>
+    <wikipedia-fr>Jamie Campbell Bower</wikipedia-fr>
+    <wikipedia-de>Jamie Campbell Bower</wikipedia-de>
+    <viaf>231653191</viaf>
+    <gnd>1048715264</gnd>
+  </identifiers>
+</person>

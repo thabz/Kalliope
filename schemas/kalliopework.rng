@@ -11,7 +11,6 @@
         <ref name="workhead"/>
         <ref name="workbody"/>
         <ref name="textElement"/>
-        <ref name="poem"/>
         <ref name="prose"/>
         <ref name="prosa"/>
         <ref name="section"/>
@@ -40,6 +39,7 @@
         <ref name="notes"/>
         <ref name="note"/>
         <ref name="quality"/>
+        <ref name="pagebreaks"/>
         <ref name="pictures"/>
         <ref name="picture"/>
         <ref name="poetry"/>
@@ -92,7 +92,14 @@
     </element>
   </define>
 
-  <define name="workhead"><element name="workhead"><ref name="mixed"/></element></define>
+  <define name="workhead">
+    <element name="workhead">
+      <interleave>
+        <ref name="mixed"/>
+        <optional><ref name="workheadIdentifiers"/></optional>
+      </interleave>
+    </element>
+  </define>
   <define name="workbody"><element name="workbody"><ref name="mixed"/></element></define>
 
   <define name="textElement">
@@ -104,13 +111,6 @@
       <optional><attribute name="skip-index"><text/></attribute></optional>
       <optional><attribute name="lang"><text/></attribute></optional>
       <optional><attribute name="ignore-tests"><text/></attribute></optional>
-      <ref name="mixed"/>
-    </element>
-  </define>
-
-  <define name="poem">
-    <element name="poem">
-      <optional><attribute name="id"><text/></attribute></optional>
       <ref name="mixed"/>
     </element>
   </define>
@@ -143,7 +143,13 @@
           </choice>
         </attribute>
       </optional>
-      <ref name="mixed"/>
+      <zeroOrMore>
+        <choice>
+          <ref name="poetry"/>
+          <ref name="prose"/>
+          <ref name="quote"/>
+        </choice>
+      </zeroOrMore>
     </element>
   </define>
 
@@ -173,6 +179,7 @@
       <optional><attribute name="facsimile-pages-num"><text/></attribute></optional>
       <optional><attribute name="facsimile-pages-offset"><text/></attribute></optional>
       <ref name="mixed"/>
+      <optional><ref name="sourceIdentifiers"/></optional>
     </element>
   </define>
 
@@ -202,10 +209,50 @@
       <optional><attribute name="museum"><text/></attribute></optional>
       <optional><attribute name="invnr"><text/></attribute></optional>
       <optional><attribute name="objid"><text/></attribute></optional>
-      <optional><attribute name="wikidata"><text/></attribute></optional>
       <ref name="mixed"/>
+      <optional><ref name="pictureIdentifiers"/></optional>
     </element>
   </define>
+
+  <define name="sourceIdentifiers">
+    <element name="identifiers">
+      <optional><ref name="wikidataIdentifier"/></optional>
+      <optional><ref name="kbAlmaIdentifier"/></optional>
+      <optional><ref name="dbcPidIdentifier"/></optional>
+      <optional><ref name="openlibraryEditionIdentifier"/></optional>
+    </element>
+  </define>
+
+  <define name="pictureIdentifiers">
+    <element name="identifiers">
+      <optional><ref name="wikidataIdentifier"/></optional>
+      <optional><ref name="smkIdentifier"/></optional>
+      <optional><ref name="kidIdentifier"/></optional>
+    </element>
+  </define>
+
+  <define name="workheadIdentifiers">
+    <element name="identifiers">
+      <optional><ref name="wikidataIdentifier"/></optional>
+      <optional><ref name="dbcWorkIdentifier"/></optional>
+      <optional><ref name="openlibraryWorkIdentifier"/></optional>
+      <optional><ref name="dansklitteraturshistorieIdentifier"/></optional>
+      <optional><ref name="runebergBookIdentifier"/></optional>
+    </element>
+  </define>
+
+  <define name="wikidataIdentifier">
+    <element name="wikidata"><text/></element>
+  </define>
+  <define name="dbcWorkIdentifier"><element name="dbc-work"><text/></element></define>
+  <define name="openlibraryWorkIdentifier"><element name="openlibrary-work"><text/></element></define>
+  <define name="dansklitteraturshistorieIdentifier"><element name="dansklitteraturshistorie-lex-dk"><text/></element></define>
+  <define name="runebergBookIdentifier"><element name="runeberg-book"><text/></element></define>
+  <define name="kbAlmaIdentifier"><element name="kb-alma"><text/></element></define>
+  <define name="dbcPidIdentifier"><element name="dbc-pid"><text/></element></define>
+  <define name="openlibraryEditionIdentifier"><element name="openlibrary-edition"><text/></element></define>
+  <define name="smkIdentifier"><element name="smk"><text/></element></define>
+  <define name="kidIdentifier"><element name="kid"><text/></element></define>
 
   <define name="poetry">
     <element name="poetry">
@@ -216,6 +263,13 @@
 
   <define name="prose">
     <element name="prose">
+      <optional><attribute name="id"><text/></attribute></optional>
+      <optional><attribute name="author"><text/></attribute></optional>
+      <optional><attribute name="variant"><text/></attribute></optional>
+      <optional><attribute name="aliases"><text/></attribute></optional>
+      <optional><attribute name="skip-index"><text/></attribute></optional>
+      <optional><attribute name="lang"><text/></attribute></optional>
+      <optional><attribute name="ignore-tests"><text/></attribute></optional>
       <optional><attribute name="font-size"><text/></attribute></optional>
       <ref name="mixed"/>
     </element>
@@ -223,8 +277,8 @@
 
   <define name="quote">
     <element name="quote">
-      <optional><attribute name="font-size"><text/></attribute></optional>
-      <optional><attribute name="margin-left"><text/></attribute></optional>
+      <optional><attribute name="max-width"><text/></attribute></optional>
+      <optional><attribute name="lang"><text/></attribute></optional>
       <ref name="mixed"/>
     </element>
   </define>
@@ -246,9 +300,9 @@
   <define name="xref">
     <element name="xref">
       <optional><attribute name="poem"><text/></attribute></optional>
-      <optional><attribute name="bibel"><text/></attribute></optional>
+      <optional><attribute name="bible"><text/></attribute></optional>
       <optional><attribute name="type"><text/></attribute></optional>
-      <ref name="mixed"/>
+      <empty/>
     </element>
   </define>
 
@@ -262,6 +316,7 @@
   <define name="pb">
     <element name="pb">
       <optional><attribute name="n"><text/></attribute></optional>
+      <optional><attribute name="facs"><text/></attribute></optional>
       <ref name="mixed"/>
     </element>
   </define>
@@ -290,9 +345,9 @@
   <define name="content"><element name="content"><ref name="simpleElement"/></element></define>
   <define name="head"><element name="head"><ref name="simpleElement"/></element></define>
   <define name="year"><element name="year"><ref name="simpleElement"/></element></define>
-  <define name="subtitle"><element name="subtitle"><ref name="simpleElement"/></element></define>
+  <define name="subtitle"><element name="subtitle"><optional><attribute name="lang"><text/></attribute></optional><ref name="simpleElement"/></element></define>
   <define name="suptitle"><element name="suptitle"><ref name="simpleElement"/></element></define>
-  <define name="indextitle"><element name="indextitle"><ref name="simpleElement"/></element></define>
+  <define name="indextitle"><element name="indextitle"><optional><attribute name="force-index"><text/></attribute></optional><ref name="simpleElement"/></element></define>
   <define name="toctitle"><element name="toctitle"><ref name="simpleElement"/></element></define>
   <define name="linktitle"><element name="linktitle"><ref name="simpleElement"/></element></define>
   <define name="breadcrumbtitle"><element name="breadcrumbtitle"><ref name="simpleElement"/></element></define>
@@ -306,6 +361,7 @@
   <define name="begivenhed"><element name="begivenhed"><ref name="simpleElement"/></element></define>
   <define name="notes"><element name="notes"><ref name="simpleElement"/></element></define>
   <define name="quality"><element name="quality"><ref name="simpleElement"/></element></define>
+  <define name="pagebreaks"><element name="pagebreaks"><empty/></element></define>
   <define name="pictures"><element name="pictures"><ref name="simpleElement"/></element></define>
   <define name="b"><element name="b"><ref name="simpleElement"/></element></define>
   <define name="i">
@@ -316,7 +372,7 @@
   </define>
   <define name="span">
     <element name="span">
-      <attribute name="lang"><text/></attribute>
+      <optional><attribute name="lang"><text/></attribute></optional>
       <ref name="simpleElement"/>
     </element>
   </define>

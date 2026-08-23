@@ -4,6 +4,18 @@ Dette er et internt overblik over `fdirs/<id>/info.xml`.
 Filen beskriver en person, kunstner, samling eller anden aktør i Kalliope og er grundlaget
 for navne, lande-/sproggruppering, værklister, biografisider, tidslinjer og eksterne links.
 
+## Formatteringsregel
+
+Alle `info.xml` skal bruge to mellemrum pr. indrykningsniveau. Kør formatteren
+efter oprettelse eller redigering:
+
+```sh
+node tools/format-metadata-xml.js fdirs/<id>/info.xml
+```
+
+Testpakken sammenligner alle versionsstyrede `info.xml` med formatterens output,
+så afvigende formatering ikke kan merges.
+
 ## Grundstruktur
 
 ```xml
@@ -23,11 +35,12 @@ for navne, lande-/sproggruppering, værklister, biografisider, tidslinjer og eks
       <place>Weimar</place>
     </dead>
   </period>
-  <literary-periods>oplysningstid-og-klassicisme,romantik-og-praeromantik</literary-periods>
+  <literary-periods>dk-oplysningstid,dk-guldalder-og-romantik</literary-periods>
   <works>1795,1808,1819,1832,romi,andre</works>
   <identifiers>
     <wikidata>Q5879</wikidata>
     <viaf>24602065</viaf>
+    <gnd>1073490319</gnd>
   </identifiers>
 </person>
 ```
@@ -153,11 +166,17 @@ eller portrætter.
 ## Literary Periods
 
 ```xml
-<literary-periods>romantik-og-praeromantik,det-moderne-gennembrud</literary-periods>
+<literary-periods>romantik-og-praeromantik,dk-guldalder-og-romantik,dk-det-moderne-gennembrud</literary-periods>
 ```
 
-Kommasepareret liste af litteraturperiode-id'er. De valideres mod
-`common/literary-periods.js`.
+Kommasepareret liste af litteraturperiode-id'er. Listen kan indeholde vilkårligt
+mange overlappende, traditionsspecifikke perioder, og medlemskab angives altid
+eksplicit. Perioderne er flade kategorier; der findes ingen globale
+standardperioder eller automatisk medlemskab. Id'erne har traditionens prefix,
+fx `dk-`, `gb-`, `de-`, `es-` eller `sv-fi-`, og må kun bruges for personer i
+periodens angivne landeområde. Det redaktionelle katalog ligger i
+`content/literary-periods.json` og valideres under `build-static`; XML-feltet
+refererer kun til id'erne.
 
 Feltet bruges til `/literary-periods` og til at gruppere digtere efter periode.
 
@@ -192,6 +211,7 @@ portrætter, artwork, bio eller mentions.
   <wikipedia-de>Hans Christian Andersen</wikipedia-de>
   <gravsted-dk>hcandersen</gravsted-dk>
   <viaf>4925902</viaf>
+  <gnd>1073490319</gnd>
   <lex-dk>H.C._Andersen</lex-dk>
   <teaterleksikon-lex-dk>H.C._Andersen</teaterleksikon-lex-dk>
   <biografisk-leksikon-lex-dk>H.C._Andersen</biografisk-leksikon-lex-dk>
@@ -210,6 +230,7 @@ Almindelige felter:
 - `<wikidata>`
 - `<wikipedia-da>`, `<wikipedia-en>`, `<wikipedia-fr>` og `<wikipedia-de>`
 - `<viaf>`
+- `<gnd>`
 - `<gravsted-dk>`
 - `<lex-dk>`
 - `<teaterleksikon-lex-dk>`
@@ -262,6 +283,7 @@ Buildet tjekker blandt andet:
 - `country` skal være en kendt landekode.
 - `lang` skal være en kendt sprogkode.
 - `literary-periods` skal bestå af kendte periode-id'er.
+- lokale litteraturperioder skal passe til personens `country`.
 - Hvis `portraits.xml` findes, skal der være et square-portræt.
 - Værk-id'er fra `<works>` bruges til at finde og bygge værkdata.
 

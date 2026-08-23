@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
@@ -27,6 +29,21 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+
+      - name: Check text quality
+        run: |
+          output="$(npm run check-text-quality -- --min-date=2021-01-01)"
+          printf '%s\n' "$output"
+          grep -Fq "Ingen tekstkvalitetsfejl fundet." <<< "$output"
+
+      - name: Validate new text ids
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+          HEAD_SHA: ${{ github.sha }}
+        run: npm run validate-new-text-ids -- "$BASE_SHA" "$HEAD_SHA"
+
+      - name: Check generated and synced facsimiles
+        run: npm run check-facsimiles
 
       - name: Run tests (CI)
         run: npm run test-ci
@@ -48,8 +65,8 @@ jobs:
       - name: Run txt2xml tests
         run: ruby test/txt2xml_test.rb
 
-  build-static:
-    name: Run build-static smoke
+  build-app:
+    name: Build app and check pages
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -75,3 +92,53 @@ jobs:
           KALLIOPE_SKIP_IMAGE_THUMBNAILS: true
           KALLIOPE_SHARP_CACHE_MEMORY: 64
           KALLIOPE_SHARP_CONCURRENCY: 1
+
+      - name: Build container image
+        run: docker build --target runtime -t kalliope-ci-app .
+
+      - name: Start app in container and check homepage
+        run: |
+          set -e
+
+          container_name="kalliope-ci-app-container"
+          docker run --detach --name "$container_name" -p 3000:3000 \
+            -v "$PWD/public/api:/app/public/api:ro" \
+            -e KALLIOPE_SKIP_ELASTICSEARCH=true \
+            -e KALLIOPE_SKIP_IMAGE_THUMBNAILS=true \
+            -e KALLIOPE_SHARP_CACHE_MEMORY=64 \
+            -e KALLIOPE_SHARP_CONCURRENCY=1 \
+            kalliope-ci-app sh -c "npm run build && npm start"
+          trap 'docker stop "$container_name" >/dev/null 2>&1 || true' EXIT
+
+          for i in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:3000/ >/tmp/homepage.html; then
+              echo "Homepage responds."
+              break
+            fi
+            if ! docker inspect "$container_name" >/dev/null 2>&1; then
+              echo "Container failed during startup."
+              docker logs "$container_name"
+              exit 1
+            fi
+            sleep 2
+          done
+
+          if ! curl -fsS http://127.0.0.1:3000/ >/dev/null; then
+            echo "Homepage did not respond within timeout."
+            docker logs "$container_name"
+            exit 1
+          fi
+
+          for path in \
+            /da/poets/dk/name \
+            /da/keyword/romantikken \
+            /da/text/guldhornene \
+            /da/work/oehlenschlaeger/1803 \
+            /da/bio/staffeldt; do
+            echo "Checking $path"
+            if ! curl -fsS "http://127.0.0.1:3000$path" >/dev/null; then
+              echo "Smoke test failed for $path."
+              docker logs "$container_name"
+              exit 1
+            fi
+          done

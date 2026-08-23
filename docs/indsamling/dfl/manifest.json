@@ -1,0 +1,21 @@
+{
+  "source": "danskforfatterleksikon",
+  "status": "snapshot",
+  "generatedAt": "2026-08-07T10:19:21.941Z",
+  "method": "bounded HTML fetch of known index files and linked author pages",
+  "baseUrl": "https://danskforfatterleksikon.dk/1850/",
+  "rawCache": [
+    "tools/data/indsamling/dfl/raw/dfl-index.html",
+    "tools/data/indsamling/dfl/raw/dfl-title-index.html",
+    "tools/data/indsamling/dfl/raw/titles/",
+    "tools/data/indsamling/dfl/raw/authors/"
+  ],
+  "parsedSnapshots": [
+    "authors.json",
+    "works.json"
+  ],
+  "records": {
+    "authors": 3205,
+    "works": 11203
+  }
+}

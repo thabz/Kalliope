@@ -1,26 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="1910" author="gjellerup" status="complete" type="poetry">
 <workhead>
-   <title>Fra Vaar til Høst</title>
-   <notes>
-      <note>Noter med en foranstillet asterisk er Gjellerups egne.</note>
-      <note>*  ,,Fra Vaar til Høst'' bringer dels et Udvalg af Karl Gjellerups tidligere trykte Digte (i Samlingen <i>Rødtjørn</i>, <i>Min Kærligheds Bog</i> og <i>Fabler</i> samt forskjellige Tidsskrifter) dels en Række hidtil ikke offentliggjorte Digte. Disse sidste er i Indholdsfortegnelsen mærket med *, de i Tidsskrifter trykte med †.</note>
-      <note>I Kalliopes udgave af <i>Fra Vaar til Høst</i> medtages kun digte, som ikke har været trykt i tidligere samlinger.</note>
-   </notes>
-   <pictures>
-       <picture type="titlepage" src="1910-p1.jpg">Titelbladet til <i>Fra Vaar til Høst</i> (1910). ,,Karl Gjellerup / Fra Vaar til Høst // København og Kristiania / Gyldendalske Boghandel / Nordisk Forlag / MDCCCCX''.</picture>
-   </pictures>
-   <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122143076005763" facsimile="115308056597_color" facsimile-pages-num="138" facsimile-pages-offset="4">Karl Gjellerup: <i>Fra Vaar til Høst</i>, Gyldendalske Boghandel, Kbh., 1910.</source>
-   <year>1910</year>
+  <title>Fra Vaar til Høst</title>
+  <notes>
+    <note>Noter med en foranstillet asterisk er Gjellerups egne.</note>
+    <note>*  ,,Fra Vaar til Høst'' bringer dels et Udvalg af Karl Gjellerups tidligere trykte Digte (i Samlingen <i>Rødtjørn</i>, <i>Min Kærligheds Bog</i> og <i>Fabler</i> samt forskjellige Tidsskrifter) dels en Række hidtil ikke offentliggjorte Digte. Disse sidste er i Indholdsfortegnelsen mærket med *, de i Tidsskrifter trykte med †.</note>
+    <note>I Kalliopes udgave af <i>Fra Vaar til Høst</i> medtages kun digte, som ikke har været trykt i tidligere samlinger.</note>
+  </notes>
+  <pictures>
+    <picture type="titlepage" src="1910-p1.jpg">Titelbladet til <i>Fra Vaar til Høst</i> (1910). ,,Karl Gjellerup / Fra Vaar til Høst // København og Kristiania / Gyldendalske Boghandel / Nordisk Forlag / MDCCCCX''.</picture>
+  </pictures>
+  <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122143076005763" facsimile="115308056597_color" facsimile-pages-num="138" facsimile-pages-offset="4">Karl Gjellerup: <i>Fra Vaar til Høst</i>, Gyldendalske Boghandel, Kbh., 1910.</source>
+  <year>1910</year>
+  <identifiers>
+    <openlibrary-work>OL6048876W</openlibrary-work>
+  </identifiers>
 </workhead>
 <workbody>
 
 <text id="gjellerup2017120601">
 <head>
-    <title>Det sidste Apollotempel</title>
-    <firstline>Hvor høit paa Bjergets Tinde</firstline>
-    <source pages="7-14"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Det sidste Apollotempel</title>
+  <firstline>Hvor høit paa Bjergets Tinde</firstline>
+  <source pages="7-14"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -255,11 +258,11 @@ den ene, sande Gud!'' —
 
 <text id="gjellerup2017120602">
 <head>
-    <title>Artemis' Jagt</title>
-    <subtitle>Fuga qvasi antiqva</subtitle>
-    <firstline>Fra Dagmaals-Taager til Solrøst-Dampe</firstline>
-    <source pages="29-43"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Artemis' Jagt</title>
+  <subtitle>Fuga qvasi antiqva</subtitle>
+  <firstline>Fra Dagmaals-Taager til Solrøst-Dampe</firstline>
+  <source pages="29-43"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -675,10 +678,10 @@ vi, hvis Leie Bølgen redte,
 
 <text id="gjellerup2017120603">
 <head>
-    <title>Venetiansk Serenade</title>
-    <firstline>Svende! mand Gondolen, — Pragtgondolen!</firstline>
-    <source pages="43-44"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Venetiansk Serenade</title>
+  <firstline>Svende! mand Gondolen, — Pragtgondolen!</firstline>
+  <source pages="43-44"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -717,10 +720,10 @@ i Cupidos Navn, Elskovsflaadens gyldne Pragtgalei!
 
 <text id="gjellerup2017120604">
 <head>
-    <title>Ungdom, glade Ungdom</title>
-    <firstline>Jeg sad alene i Albanos Kro</firstline>
-    <source pages="53-57"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Ungdom, glade Ungdom</title>
+  <firstline>Jeg sad alene i Albanos Kro</firstline>
+  <source pages="53-57"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -862,13 +865,13 @@ som raabte Vaarens Nat paa dig, du flygtende
 </body>
 </text>
 
-<text id="gjellerup2017120605">
+<text id="gjellerup2017120605" ignore-tests="suspicious-wordform">
 <head>
-    <title>Vølsungerne i Rom</title>
-    <subtitle>Strofer skrevne efter Opførelsen af Wagners ,,Niebelungens Ring'' i Rom, 1883.</subtitle>
-    <firstline>Den lavagule Tiber forbi mit Vindue flød</firstline>
-    <source pages="58-62"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Vølsungerne i Rom</title>
+  <subtitle>Strofer skrevne efter Opførelsen af Wagners ,,Niebelungens Ring'' i Rom, 1883.</subtitle>
+  <firstline>Den lavagule Tiber forbi mit Vindue flød</firstline>
+  <source pages="58-62"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1013,12 +1016,12 @@ kan kaste den i Støvet for Kunstens hellige Grâl.
 
 <text id="gjellerup2017120606">
 <head>
-    <title>Cor cordium</title>
-    <subtitle>Stanser, skrevne efter et Besøg ved Shelleys Grav</subtitle>
-    <firstline>Jeg vandred mellem Grave, speided om</firstline>
-    <source pages="62-67"/>
-    <keywords>shelley</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Cor cordium</title>
+  <subtitle>Stanser, skrevne efter et Besøg ved Shelleys Grav</subtitle>
+  <firstline>Jeg vandred mellem Grave, speided om</firstline>
+  <source pages="62-67"/>
+  <keywords>shelley</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1184,11 +1187,11 @@ som min, der sent forlod den dobbelt hellige Grav.
 
 <text id="gjellerup2017120607">
 <head>
-    <title>Giordano Bruno</title>
-    <subtitle>Linjer, skrevne ved Efterretningen om Monumentets Afsløring</subtitle>
-    <firstline>Som Kjætter brændt af kronet Munkehad</firstline>
-    <source pages="68"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Giordano Bruno</title>
+  <subtitle>Linjer, skrevne ved Efterretningen om Monumentets Afsløring</subtitle>
+  <firstline>Som Kjætter brændt af kronet Munkehad</firstline>
+  <source pages="68"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1216,15 +1219,15 @@ Ondskab om Trinet af dit Monument.
 
 <text id="gjellerup2017120608">
 <head>
-    <title>Niels W. Gade</title>
-    <toctitle>N. W. Gade</toctitle>
-    <subtitle>Prolog ved Mindefesten i Det kongelige Theater d. 7. Januar 1891 (efter Ossian-Ouverturen)</subtitle>
-    <firstline>Vel rørte sig til Bifald eders Hænder</firstline>
-    <source pages="69-73"/>
-    <dates>
-        <performed>1891-01-07</performed>
-    </dates>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Niels W. Gade</title>
+  <toctitle>N. W. Gade</toctitle>
+  <subtitle>Prolog ved Mindefesten i Det kongelige Theater d. 7. Januar 1891 (efter Ossian-Ouverturen)</subtitle>
+  <firstline>Vel rørte sig til Bifald eders Hænder</firstline>
+  <source pages="69-73"/>
+  <dates>
+    <performed>1891-01-07</performed>
+  </dates>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1359,11 +1362,11 @@ da hædres <i>den forevigede Mester</i>.
 
 <text id="gjellerup2017120609">
 <head>
-    <title>Ved Keiser Friedrichs Død</title>
-    <subtitle>Trykt i Nationaltidende Juni 1888</subtitle>
-    <firstline>Jeg havde stemt en Luth til kjælen Leg</firstline>
-    <source pages="73-78"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Ved Keiser Friedrichs Død</title>
+  <subtitle>Trykt i Nationaltidende Juni 1888</subtitle>
+  <firstline>Jeg havde stemt en Luth til kjælen Leg</firstline>
+  <source pages="73-78"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1509,11 +1512,11 @@ sit stive Blik frem mod den nære Krig.
 
 <text id="gjellerup2017120610">
 <head>
-    <title>Ode til Wartburg</title>
-    <subtitle>Ved to Elskendes Besøg</subtitle>
-    <firstline>Wartburg, du klippebaarne!</firstline>
-    <source pages="96-98"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Ode til Wartburg</title>
+  <subtitle>Ved to Elskendes Besøg</subtitle>
+  <firstline>Wartburg, du klippebaarne!</firstline>
+  <source pages="96-98"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1594,10 +1597,10 @@ sit Billed hilser den i dig, Wartburg, du minde-kaarne!
 
 <text id="gjellerup2017120611">
 <head>
-    <title>Foraar</title>
-    <firstline>Over Markerne stryger en Søndenvind</firstline>
-    <source pages="98-100"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Foraar</title>
+  <firstline>Over Markerne stryger en Søndenvind</firstline>
+  <source pages="98-100"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1648,10 +1651,10 @@ een Vaar af dine, de talte, mindre du har
 
 <text id="gjellerup2017120612">
 <head>
-    <title>Høstskov</title>
-    <firstline>Der var saa dunkelt allerede ude</firstline>
-    <source pages="100-101"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Høstskov</title>
+  <firstline>Der var saa dunkelt allerede ude</firstline>
+  <source pages="100-101"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1700,10 +1703,10 @@ naar vore Aar er i det gule Løv? —
 
 <text id="gjellerup2017120613">
 <head>
-    <title>I Bjergskoven</title>
-    <firstline>Hvad suse gyngende Graner?</firstline>
-    <source pages="101-104"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>I Bjergskoven</title>
+  <firstline>Hvad suse gyngende Graner?</firstline>
+  <source pages="101-104"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1778,17 +1781,17 @@ Thi lad os lytte og forske, vi to;
 
 <section>
 <head>
-    <title>Penater</title>
+  <title>Penater</title>
 </head>
 <content>
 
 <text id="gjellerup2017120614">
 <head>
-    <title>Fødselsdagen</title>
-    <toctitle><num>I.</num>Fødselsdagen</toctitle>
-    <firstline>Se dér, den overflødige! thi hvem</firstline>
-    <source pages="104-107"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Fødselsdagen</title>
+  <toctitle><num>I.</num>Fødselsdagen</toctitle>
+  <firstline>Se dér, den overflødige! thi hvem</firstline>
+  <source pages="104-107"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1879,7 +1882,7 @@ af hvad din Tro som Livets Indhold priste.
 Saaledes var det, men det <i>er</i> ei saa.
 Nu føler du dig først forstaaet og skattet
 af En, du selv kan skatte og forstaa.
-Din Tro, der fast af Skuffelser var måttet,
+Din Tro, der fast af Skuffelser var mattet,
 vil Haand i Haand med hans vel fremad naa
 og se, at Livet selv som <i>sit</i> bekræfter
 hvad Stort og Skjønt din Sjæl har længtes efter.
@@ -1905,11 +1908,11 @@ videre frem mod Fredens sikre Havn.
 
 <text id="gjellerup2017120615">
 <head>
-    <title>Nytaarsaften i Dresden</title>
-    <toctitle><num>II.</num>Nytaarsaften i Dresden</toctitle>
-    <firstline>Sylvester har tændt sine Stjerner blaa</firstline>
-    <source pages="108-110"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Nytaarsaften i Dresden</title>
+  <toctitle><num>II.</num>Nytaarsaften i Dresden</toctitle>
+  <firstline>Sylvester har tændt sine Stjerner blaa</firstline>
+  <source pages="108-110"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2001,11 +2004,11 @@ til dit nye Hjem i din gamle By!
 
 <text id="gjellerup2017120616">
 <head>
-    <title>Fangen</title>
-    <toctitle><num>III.</num>Fangen</toctitle>
-    <firstline>Saa gaar jeg atter i Havens Gange</firstline>
-    <source pages="111"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Fangen</title>
+  <toctitle><num>III.</num>Fangen</toctitle>
+  <firstline>Saa gaar jeg atter i Havens Gange</firstline>
+  <source pages="111"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2034,11 +2037,11 @@ din Troskab monne den ene være,
 
 <text id="gjellerup2017120617">
 <head>
-    <title>Husnisserne</title>
-    <toctitle><num>IV.</num>Husnisserne</toctitle>
-    <firstline>Paa denne Dag for to Aar siden</firstline>
-    <source pages="111-115"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Husnisserne</title>
+  <toctitle><num>IV.</num>Husnisserne</toctitle>
+  <firstline>Paa denne Dag for to Aar siden</firstline>
+  <source pages="111-115"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2150,12 +2153,12 @@ er brave Folk. —
 
 <text id="gjellerup2017120618">
 <head>
-    <title>Gjæsten</title>
-    <toctitle><num>V.</num>Gjæsten</toctitle>
-    <subtitle>Fantasi over et Fragment. —</subtitle>
-    <firstline>Blæsten er tung af tøet Sne</firstline>
-    <source pages="115-122"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Gjæsten</title>
+  <toctitle><num>V.</num>Gjæsten</toctitle>
+  <subtitle>Fantasi over et Fragment. —</subtitle>
+  <firstline>Blæsten er tung af tøet Sne</firstline>
+  <source pages="115-122"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2373,11 +2376,11 @@ Hvad jeg <i>er</i> — lad det gjæste hvad jeg <i>var!</i>
 
 <text id="gjellerup2017120619">
 <head>
-    <title>Den fyrretyvende Fødselsdag</title>
-    <toctitle><num>VI.</num>Den fyrretyvende Fødselsdag</toctitle>
-    <firstline>Saa mange Aar, som Jacob, Patriarken</firstline>
-    <source pages="122-127"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Den fyrretyvende Fødselsdag</title>
+  <toctitle><num>VI.</num>Den fyrretyvende Fødselsdag</toctitle>
+  <firstline>Saa mange Aar, som Jacob, Patriarken</firstline>
+  <source pages="122-127"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2511,10 +2514,10 @@ udhviler i den evig-mørke Krybt ...
 
 <text id="gjellerup2017120620">
 <head>
-    <title>Efterskrift</title>
-    <firstline>Ti Aar — saa ubegribeligt det synes!</firstline>
-    <source pages="127-128"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Efterskrift</title>
+  <firstline>Ti Aar — saa ubegribeligt det synes!</firstline>
+  <source pages="127-128"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>

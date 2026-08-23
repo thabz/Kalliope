@@ -11,6 +11,7 @@ import { poetNameString } from '../components/poetname-helpers.js';
 import PoetName from '../components/poetname.js';
 import SidebarPictures from '../components/sidebarpictures.js';
 import SidebarSplit from '../components/sidebarsplit.js';
+import Stack from '../components/stack.js';
 import SubHeading from '../components/subheading.js';
 import TextContent from '../components/textcontent.js';
 import TOC from '../components/toc.js';
@@ -73,10 +74,12 @@ const WorkPage = (props) => {
   ) {
     sidebar = (
       <div>
-        {renderedPictures}
-        {renderedNotes}
-        {completedStatus}
-        {modifiedDate}
+        <Stack spacing="20px">
+          {renderedPictures}
+          {renderedNotes}
+          {completedStatus}
+          {modifiedDate}
+        </Stack>
       </div>
     );
   }
@@ -150,7 +153,6 @@ const WorkPage = (props) => {
             .modified {
               color: #777;
               font-size: 0.9em;
-              margin-top: 30px;
             }
           `}</style>
         </div>

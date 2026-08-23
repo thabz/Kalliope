@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="1875" author="boedtcher" status="complete" type="poetry">
 <workhead>
-   <title>Sidste Digte</title>
-   <year>1875</year>
-   <pictures>
-       <picture type="frontpage" src="1875-p1.jpg">Forsiden til <i>Sidste Digte</i> (1875).</picture>
-       <picture type="titlepage" src="1875-p2.jpg">Titelbladet til <i>Sidste Digte</i> (1875) lyder ,,Ludvig Bøtchers / Sidste Digte, / udgivne af / Thorvald Smit. // Kjøbenhavn. / C. A. Reitzels Forlag. / 1875.''</picture>
-   </pictures>
-   <source facsimile="115308048708_color" facsimile-pages-num="124" facsimile-pages-offset="16">Ludvig Bødtcher: <i>Sidste Digte</i>, Thorvald Smit (red.), C.A. Reitzels Forlag, Kbh., 1875..</source>
+  <title>Sidste Digte</title>
+  <year>1875</year>
+  <pictures>
+    <picture type="frontpage" src="1875-p1.jpg">Forsiden til <i>Sidste Digte</i> (1875).</picture>
+    <picture type="titlepage" src="1875-p2.jpg">Titelbladet til <i>Sidste Digte</i> (1875) lyder ,,Ludvig Bøtchers / Sidste Digte, / udgivne af / Thorvald Smit. // Kjøbenhavn. / C. A. Reitzels Forlag. / 1875.''</picture>
+  </pictures>
+  <source facsimile="115308048708_color" facsimile-pages-num="124" facsimile-pages-offset="16">Ludvig Bødtcher: <i>Sidste Digte</i>, Thorvald Smit (red.), C.A. Reitzels Forlag, Kbh., 1875..</source>
 </workhead>
 <workbody>
 
 <text id="smit2018100901" skip-index="true">
 <head>
-   <title>Forord</title>
-   <source pages="i-iv" facsimile-pages="11-14"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Forord</title>
+  <source pages="i-iv" facsimile-pages="11-14"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <prose>
@@ -33,10 +33,10 @@ Det er nu et Aar, siden <w>Ludvig Bødtcher</w> endte sit stille, ensomme Liv, o
 
 <text id="boedtcher2018100902" variant="boedtcher2003010347">
 <head>
-   <title>Den Gamles Bøn</title>
-   <firstline>Send, Ungdom! mig de lyse Minder</firstline>
-   <source pages="1"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Den Gamles Bøn</title>
+  <firstline>Send, Ungdom! mig de lyse Minder</firstline>
+  <source pages="1"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -60,12 +60,12 @@ Som før i Nattens blege Flamme!
 
 <text id="boedtcher2018100903" variant="boedtcher2003010337">
 <head>
-   <title>Til en gammel Ven!</title>
-   <toctitle>Til en gammel Ven</toctitle>
-   <firstline>Nu voxe Aftenskyggerne, Du Kjære!</firstline>
-   <source pages="2-4"/>
-   <keywords>rahbek</keywords>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Til en gammel Ven!</title>
+  <toctitle>Til en gammel Ven</toctitle>
+  <firstline>Nu voxe Aftenskyggerne, Du Kjære!</firstline>
+  <source pages="2-4"/>
+  <keywords>rahbek</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -129,13 +129,13 @@ Gid Haanden klappe maa, naar Tæppet falder!
 
 <text id="boedtcher2018100904" variant="boedtcher2003010334">
 <head>
-   <title>Englen Israfil</title>
-   <subtitle>Mythe</subtitle>
-   <toctitle>Englen Israfil, Mythe</toctitle>
-   <indextitle>Englen Israfil</indextitle>
-   <firstline>Da Herren vendte bort sit Aasyns Straaler</firstline>
-   <source pages="5-7"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Englen Israfil</title>
+  <subtitle>Mythe</subtitle>
+  <toctitle>Englen Israfil, Mythe</toctitle>
+  <indextitle>Englen Israfil</indextitle>
+  <firstline>Da Herren vendte bort sit Aasyns Straaler</firstline>
+  <source pages="5-7"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -190,14 +190,14 @@ Og bringer taus til Himmerig den Lille.
 
 <text id="boedtcher2018100905" variant="boedtcher2003010308">
 <head>
-   <title>Ved et 50 aarigt Studenterjubilæum</title>
-   <!-- Anderledes toctitle? -->
-   <firstline>Nu foldes festligt med Jubel ud</firstline>
-   <dates>
-       <event>1862-10-23</event>
-   </dates>
-   <source pages="8-10"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Ved et 50 aarigt Studenterjubilæum</title>
+  <!-- Anderledes toctitle? -->
+  <firstline>Nu foldes festligt med Jubel ud</firstline>
+  <dates>
+    <event>1862-10-23</event>
+  </dates>
+  <source pages="8-10"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -256,13 +256,13 @@ Du bringer atter Nordens Stamme!
 
 <text id="boedtcher2018100906" variant="boedtcher2003010318">
 <head>
-   <title>Guldbryllupsbrev</title>
-   <subtitle>i April 1869</subtitle>
-   <!--<subtitle>til Gjentofte Præstegaard i April 1869</subtitle>-->
-   <toctitle>Guldbryllupsbrev, i April 1869</toctitle>
-   <firstline>Kan vel en Blind om Farver tale?</firstline>
-   <source pages="11-12"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Guldbryllupsbrev</title>
+  <subtitle>i April 1869</subtitle>
+  <!--<subtitle>til Gjentofte Præstegaard i April 1869</subtitle>-->
+  <toctitle>Guldbryllupsbrev, i April 1869</toctitle>
+  <firstline>Kan vel en Blind om Farver tale?</firstline>
+  <source pages="11-12"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -309,10 +309,10 @@ Ved Kjærlighedens Flamme!
 
 <text id="boedtcher2018100907" variant="boedtcher2003010340">
 <head>
-   <title>En Tyv i Rom</title>
-   <firstline>Endt var Osteriets Gilde</firstline>
-   <source pages="13-19"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>En Tyv i Rom</title>
+  <firstline>Endt var Osteriets Gilde</firstline>
+  <source pages="13-19"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -483,15 +483,15 @@ Men jeg var dog glad ved Byttet.
 
 <text id="boedtcher2018100908" variant="boedtcher2003010303">
 <head>
-   <title>,,Sophieshaab''</title>
-   <subtitle>(September 1856)</subtitle>
-   <toctitle>Sophieshaab (September 1856)</toctitle>
-   <indextitle>Sophieshaab</indextitle>
-   <linktitle>Sophieshaab</linktitle>
-   <firstline>Til Højre, der hvor Vejen glider</firstline>
-   <source pages="20-21"/>
-   <keywords>rahbekk</keywords>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>,,Sophieshaab''</title>
+  <subtitle>(September 1856)</subtitle>
+  <toctitle>Sophieshaab (September 1856)</toctitle>
+  <indextitle>Sophieshaab</indextitle>
+  <linktitle>Sophieshaab</linktitle>
+  <firstline>Til Højre, der hvor Vejen glider</firstline>
+  <source pages="20-21"/>
+  <keywords>rahbekk</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -536,10 +536,10 @@ Men - Kammas Aand er ej forsvunden.
 
 <text id="boedtcher2018100909" variant="boedtcher2001082601">
 <head>
-   <title>April</title>
-   <firstline>Mit Hjerte hilser Dig, April!</firstline>
-   <source pages="22-23"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>April</title>
+  <firstline>Mit Hjerte hilser Dig, April!</firstline>
+  <source pages="22-23"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -569,12 +569,12 @@ I Evighedens Sommer!
 
 <text id="boedtcher2018100910">
 <head>
-   <title>Camachos Bryllup</title>
-   <toctitle>Camachos Bryllup (Fragment fra 1823)</toctitle>
-   <subtitle>(Fragment fra 1823)</subtitle>
-   <firstline>O, fryd Dig, Skov, med dine Stammer!</firstline>
-   <source pages="24-26"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Camachos Bryllup</title>
+  <toctitle>Camachos Bryllup (Fragment fra 1823)</toctitle>
+  <subtitle>(Fragment fra 1823)</subtitle>
+  <firstline>O, fryd Dig, Skov, med dine Stammer!</firstline>
+  <source pages="24-26"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -671,10 +671,10 @@ Druens Rosenblod.
 
 <text id="boedtcher2018100911" variant="boedtcher2003010316">
 <head>
-   <title>Til min egen Dreng</title>
-   <firstline>I din Haand, du Lille! blinker</firstline>
-   <source pages="27-28"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Til min egen Dreng</title>
+  <firstline>I din Haand, du Lille! blinker</firstline>
+  <source pages="27-28"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -713,12 +713,12 @@ Een, blot <w>Een, som holder Stik!</w>
 
 <text id="boedtcher2018100912" variant="boedtcher2003010320">
 <head>
-   <title>Skriftestolen</title>
-   <subtitle>En Jule-Fortælling</subtitle>
-   <toctitle>Skriftestolen. En Jule-Fortælling</toctitle>
-   <firstline>Det var just en Julekvæld</firstline>
-   <source pages="29-43"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Skriftestolen</title>
+  <subtitle>En Jule-Fortælling</subtitle>
+  <toctitle>Skriftestolen. En Jule-Fortælling</toctitle>
+  <firstline>Det var just en Julekvæld</firstline>
+  <source pages="29-43"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1060,11 +1060,11 @@ Og var smuttet - ,,ovenpaa''.
 
 <text id="boedtcher2018100913" variant="boedtcher2003010339">
 <head>
-   <title>Somme Dage</title>
-   <firstline>Naar blandt Nattens Stjernevrimmel</firstline>
-   <source pages="44-45"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
-   <keywords>brahe</keywords>
+  <title>Somme Dage</title>
+  <firstline>Naar blandt Nattens Stjernevrimmel</firstline>
+  <source pages="44-45"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+  <keywords>brahe</keywords>
 </head>
 <body>
 <poetry>
@@ -1109,10 +1109,10 @@ Stærkere end Nattens Lyn!
 
 <text id="boedtcher2018100914" variant="boedtcher2003010348">
 <head>
-   <title>Et Møde</title>
-   <firstline>Du Ensomhedens Sødme</firstline>
-   <source pages="46-50"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Et Møde</title>
+  <firstline>Du Ensomhedens Sødme</firstline>
+  <source pages="46-50"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1206,12 +1206,12 @@ Mig endnu mangt et Aar!
 
 <text id="boedtcher2018100915" variant="boedtcher2003010321">
 <head>
-   <title>Notturno</title>
-   <toctitle>Notturno</toctitle>
-   <indextitle>Notturno</indextitle>
-   <firstline>Intet Lys mit Øje skimter</firstline>
-   <source pages="51-52"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Notturno</title>
+  <toctitle>Notturno</toctitle>
+  <indextitle>Notturno</indextitle>
+  <firstline>Intet Lys mit Øje skimter</firstline>
+  <source pages="51-52"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1252,13 +1252,13 @@ Tak, og hvil nu sødt paany!
 
 <text id="boedtcher2018100916" variant="boedtcher2000082203">
 <head>
-   <title>En Aften i Hjemmet</title>
-   <firstline>Det flammer i Kaminen</firstline>
-   <source pages="53-57"/>
-   <notes>
-      <note type="credits">Bidrag fra Asger Schnack.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>En Aften i Hjemmet</title>
+  <firstline>Det flammer i Kaminen</firstline>
+  <source pages="53-57"/>
+  <notes>
+    <note type="credits">Bidrag fra Asger Schnack.</note>
+  </notes>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1365,10 +1365,10 @@ Om Roser og - om <w>Dig!</w>
 
 <text id="boedtcher2018100917" variant="boedtcher2003010331">
 <head>
-   <title>Violerne</title>
-   <firstline>Dybt indaander jeg med Lyst</firstline>
-   <source pages="58-62"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Violerne</title>
+  <firstline>Dybt indaander jeg med Lyst</firstline>
+  <source pages="58-62"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1485,10 +1485,10 @@ Men endnu mig glæder Duften!
 
 <text id="boedtcher2018100918" variant="boedtcher2003010326">
 <head>
-   <title>Foraarshilsen</title>
-   <firstline>Din varme Puls, du gyldne Maj!</firstline>
-   <source pages="63-65"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Foraarshilsen</title>
+  <firstline>Din varme Puls, du gyldne Maj!</firstline>
+  <source pages="63-65"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1546,11 +1546,11 @@ Og dine Læbers Varme!
 
 <text id="boedtcher2018100919" variant="boedtcher2003010329">
 <head>
-   <title>I en lille Piges Album</title>
-   <firstline>Dig selv, mit Barn, jeg kjender ej</firstline>
-   <source pages="66-68"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
-   <keywords>stambog</keywords>
+  <title>I en lille Piges Album</title>
+  <firstline>Dig selv, mit Barn, jeg kjender ej</firstline>
+  <source pages="66-68"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+  <keywords>stambog</keywords>
 </head>
 <body>
 <poetry>
@@ -1604,10 +1604,10 @@ Imellem Dig og Jordens Glæde!
 
 <text id="boedtcher2018100920" variant="boedtcher2003010317">
 <head>
-   <title>Vejen spærret</title>
-   <firstline>Min Tanke fløj som Falken ud</firstline>
-   <source pages="69-70"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Vejen spærret</title>
+  <firstline>Min Tanke fløj som Falken ud</firstline>
+  <source pages="69-70"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1651,10 +1651,10 @@ Hvor Haabet med sin Rigdom boer!
 
 <text id="boedtcher2018100921" variant="boedtcher2002122522">
 <head>
-   <title>Kom, o kom!</title>
-   <firstline>Aftenvinde Svæve, svinde</firstline>
-   <source pages="71"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Kom, o kom!</title>
+  <firstline>Aftenvinde Svæve, svinde</firstline>
+  <source pages="71"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1681,10 +1681,10 @@ Mit eget Hjertes varme Slag!
 
 <text id="boedtcher2018100922" variant="boedt1999092501">
 <head>
-   <title>Hvordan hun er</title>
-   <firstline>Hendes Øje er blaat og saa fuldt af Tugt</firstline>
-   <source pages="72"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Hvordan hun er</title>
+  <firstline>Hendes Øje er blaat og saa fuldt af Tugt</firstline>
+  <source pages="72"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1708,14 +1708,14 @@ Hvisker kjærlig og blid med blussende Mund
 
 <text id="boedtcher2018100923" variant="boedtcher2003010332">
 <head>
-   <title>Bryllupsdigt</title>
-   <!--<subtitle>Den 21. November 1872</subtitle>-->
-   <firstline>Rig var vor Glæde, let paa Skjæbnens Bølge</firstline>
-   <dates>
-       <event>1872-11-21</event>
-   </dates>
-   <source pages="73"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Bryllupsdigt</title>
+  <!--<subtitle>Den 21. November 1872</subtitle>-->
+  <firstline>Rig var vor Glæde, let paa Skjæbnens Bølge</firstline>
+  <dates>
+    <event>1872-11-21</event>
+  </dates>
+  <source pages="73"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1744,10 +1744,10 @@ Aldrig formørkes, smile med en Flamme,
 
 <text id="boedtcher2018100924" variant="boedtcher2003010311">
 <head>
-   <title>Til en ung Musiker</title>
-   <firstline>Til ingen Dødelig den Magt blev givet</firstline>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
-   <source pages="74"/>
+  <title>Til en ung Musiker</title>
+  <firstline>Til ingen Dødelig den Magt blev givet</firstline>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+  <source pages="74"/>
 </head>
 <body>
 <poetry>
@@ -1767,15 +1767,15 @@ Dig blive til en jordisk blid Finale.
 
 <text id="boedtcher2018100925" variant="boedtcherandrea1">
 <head>
-   <title>Til en Dame</title>
-   <subtitle>med et Exemplar af Holberg</subtitle>
-   <toctitle>Til en Dame, med et Exemplar af Holberg</toctitle>
-   <indextitle>Til en Dame, med et Exemplar af Holberg</indextitle>
-   <linktitle>Til en Dame, med et Exemplar af Holberg</linktitle>
-   <firstline>Man siger Holberg ynded ikke Qvinden</firstline>
-   <source pages="75"/>
-   <keywords>holberg</keywords>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Til en Dame</title>
+  <subtitle>med et Exemplar af Holberg</subtitle>
+  <toctitle>Til en Dame, med et Exemplar af Holberg</toctitle>
+  <indextitle>Til en Dame, med et Exemplar af Holberg</indextitle>
+  <linktitle>Til en Dame, med et Exemplar af Holberg</linktitle>
+  <firstline>Man siger Holberg ynded ikke Qvinden</firstline>
+  <source pages="75"/>
+  <keywords>holberg</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1801,18 +1801,18 @@ Ifald han levede og kjendte Dem.
 
 <text id="boedtcher2018100926" variant="boedtcher2003010310">
 <head>
-   <title>Hannibal Leth</title>
-   <subtitle>død i Athen 1865</subtitle>
-   <!--<subtitle>død i Athen den 13. April 1865</subtitle>-->
-   <toctitle>Hannibal Leth, død i Athen 1865</toctitle>
-   <indextitle>Hannibal Leth</indextitle>
-   <firstline>Jeg saae Dig ej paa denne dunkle Jord</firstline>
-   <source pages="76"/>
-   <dates>
-       <event>1865-04-13</event>
-   </dates>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
-   <keywords>gravskrift</keywords>
+  <title>Hannibal Leth</title>
+  <subtitle>død i Athen 1865</subtitle>
+  <!--<subtitle>død i Athen den 13. April 1865</subtitle>-->
+  <toctitle>Hannibal Leth, død i Athen 1865</toctitle>
+  <indextitle>Hannibal Leth</indextitle>
+  <firstline>Jeg saae Dig ej paa denne dunkle Jord</firstline>
+  <source pages="76"/>
+  <dates>
+    <event>1865-04-13</event>
+  </dates>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+  <keywords>gravskrift</keywords>
 </head>
 <body>
 <poetry>
@@ -1835,13 +1835,13 @@ Og kysser Stenen, som Du hviler under!
 
 <text id="boedtcher2018100927" variant="boedtcher2003010335">
 <head>
-   <title>Efter Sorgen</title>
-   <!--<subtitle>(Til Frederikke Leth d. 13de April 1873)</subtitle>-->
-   <toctitle>Efter Sorgen</toctitle>
-   <indextitle>Efter Sorgen</indextitle>
-   <firstline>Blidt kommer efter Sorgens Nat</firstline>
-   <source pages="77"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Efter Sorgen</title>
+  <!--<subtitle>(Til Frederikke Leth d. 13de April 1873)</subtitle>-->
+  <toctitle>Efter Sorgen</toctitle>
+  <indextitle>Efter Sorgen</indextitle>
+  <firstline>Blidt kommer efter Sorgens Nat</firstline>
+  <source pages="77"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1863,10 +1863,10 @@ Hvor Aand kan sværme ømt med Aand.
 
 <text id="boedtcher2018100928" variant="boedtcher2002122521">
 <head>
-   <title>Til en ung Moder</title>
-   <firstline>Nu knoppes Træet atter hist i Haven</firstline>
-   <source pages="78"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Til en ung Moder</title>
+  <firstline>Nu knoppes Træet atter hist i Haven</firstline>
+  <source pages="78"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1888,13 +1888,12 @@ Saa sandt skal Frugten smile Dig imøde!
 </body>
 </text>
 
-
 <text id="boedtcher2018100929" variant="boedtcher2003010346">
 <head>
-   <title>Det er en yndig Tid</title>
-   <firstline>Det er en yndig Tid, naar Vaaren blid sig nærmer</firstline>
-   <source pages="79"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Det er en yndig Tid</title>
+  <firstline>Det er en yndig Tid, naar Vaaren blid sig nærmer</firstline>
+  <source pages="79"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1918,12 +1917,12 @@ Til alle Hjerters Lyst!
 
 <text id="boedtcher2018100930" variant="boedtcher2002122524">
 <head>
-   <title>Til en Confirmantinde</title>
-   <subtitle>med en Blomsterbuket</subtitle>
-   <toctitle>Til en Confirmantinde, med en Blomsterbuket</toctitle>
-   <firstline>Du selv, en Blomst fra Jordens Have</firstline>
-   <source pages="80-81"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Til en Confirmantinde</title>
+  <subtitle>med en Blomsterbuket</subtitle>
+  <toctitle>Til en Confirmantinde, med en Blomsterbuket</toctitle>
+  <firstline>Du selv, en Blomst fra Jordens Have</firstline>
+  <source pages="80-81"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1953,12 +1952,12 @@ En yndig duftende Buket.
 
 <text id="boedtcher2018100931" variant="boedtcher2003010336">
 <head>
-   <title>Ved en Confirmation</title>
-   <subtitle>i April 1873</subtitle>
-   <toctitle>Ved en Confirmation i April 1873</toctitle>
-   <firstline>Ak, hvad er vel min svage Sang</firstline>
-   <source pages="82-83"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Ved en Confirmation</title>
+  <subtitle>i April 1873</subtitle>
+  <toctitle>Ved en Confirmation i April 1873</toctitle>
+  <firstline>Ak, hvad er vel min svage Sang</firstline>
+  <source pages="82-83"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1987,15 +1986,15 @@ Og Himlen selv vil Dig beskjærme!
 
 <text id="boedtcher2018100932" variant="boedtcher2002122523">
 <head>
-   <title>Sølvbryllupssang</title>
-   <subtitle>1839</subtitle>
-   <!--<subtitle>paa Nebbegaard, den 15de Marts 1839</subtitle>-->
-   <firstline>Der er en Tid, da frisk Begejstring kalder</firstline>
-   <source pages="84-85"/>
-   <dates>
-       <event>1839-03-15</event>
-   </dates>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Sølvbryllupssang</title>
+  <subtitle>1839</subtitle>
+  <!--<subtitle>paa Nebbegaard, den 15de Marts 1839</subtitle>-->
+  <firstline>Der er en Tid, da frisk Begejstring kalder</firstline>
+  <source pages="84-85"/>
+  <dates>
+    <event>1839-03-15</event>
+  </dates>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2031,10 +2030,10 @@ Og i en skjøn Natur et virksomt Liv!
 
 <text id="boedtcher2018100933" variant="boedtcher2003010309">
 <head>
-   <title>En Jubelskaal</title>
-   <firstline>Naar Skoven grønnes og Droslen slaaer</firstline>
-   <source pages="86-87"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>En Jubelskaal</title>
+  <firstline>Naar Skoven grønnes og Droslen slaaer</firstline>
+  <source pages="86-87"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2083,10 +2082,10 @@ Og fjerne Maalet paa hans Bane.
 
 <text id="boedtcher2018100934" variant="boedtcher2003010302">
 <head>
-   <title>Et fortroligt Øjeblik</title>
-   <firstline>Hvad tænker Du nu paa? Du stirrer tankefuld</firstline>
-   <source pages="88-92"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Et fortroligt Øjeblik</title>
+  <firstline>Hvad tænker Du nu paa? Du stirrer tankefuld</firstline>
+  <source pages="88-92"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2181,10 +2180,10 @@ Men - af et himmelsk Slags''.
 
 <text id="boedtcher2018100935" variant="boedtcher2002122526">
 <head>
-   <title>Med en Pennevisker</title>
-   <firstline>Har Pennen gjort sit sidste Træk</firstline>
-   <source pages="93"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Med en Pennevisker</title>
+  <firstline>Har Pennen gjort sit sidste Træk</firstline>
+  <source pages="93"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2198,10 +2197,10 @@ Som dengang ikke blev til Tanker.
 
 <text id="boedtcher2018100936" variant="boedtcher2002122525">
 <head>
-   <title>Epigram</title>
-   <firstline>Hvor vrangt og efter eget blinde Tykke</firstline>
-   <source pages="94"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Epigram</title>
+  <firstline>Hvor vrangt og efter eget blinde Tykke</firstline>
+  <source pages="94"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2216,14 +2215,14 @@ Og dog han lever glimrende og stort: -
 
 <text id="boedtcher2018100937" variant="boedtcher2002122528">
 <head>
-   <title>Strikkebreve</title>
-   <toctitle>Strikkebreve, 1 og 2</toctitle>
-   <firstline>Hvor sig Skjæbnen hurtig vender!</firstline>
-   <notes>
-       <note>* Efter en gammel Skik, der mulig ikke længere er i Brug, lægges det Stykke Papir, paa hvilket «Strikkebrevet» er nedskrevet, saaledes sammen, at det kan bruges som Vindsel. Man vinder dernæst Garn om det og giver det til en Dame; Digtet maa først læses, naar Garnet er brugt op. Udg. Anm.</note>
-   </notes>
-   <source pages="95-98"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Strikkebreve</title>
+  <toctitle>Strikkebreve, 1 og 2</toctitle>
+  <firstline>Hvor sig Skjæbnen hurtig vender!</firstline>
+  <notes>
+    <note>* Efter en gammel Skik, der mulig ikke længere er i Brug, lægges det Stykke Papir, paa hvilket «Strikkebrevet» er nedskrevet, saaledes sammen, at det kan bruges som Vindsel. Man vinder dernæst Garn om det og giver det til en Dame; Digtet maa først læses, naar Garnet er brugt op. Udg. Anm.</note>
+  </notes>
+  <source pages="95-98"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2283,10 +2282,10 @@ Hvordan Du mig i Haanden fik.
 
 <text id="boedtcher2018100938" variant="boedtcher2003010349">
 <head>
-   <title>Sangfuglen</title>
-   <firstline>Jeg hvilte under Bøgens Skjul</firstline>
-   <source pages="99-100"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Sangfuglen</title>
+  <firstline>Jeg hvilte under Bøgens Skjul</firstline>
+  <source pages="99-100"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>

@@ -33,6 +33,10 @@ export const poets = async (country) => {
   return fetchJSON(`/api/poets-${country}.json`);
 };
 
+export const literaryPeriods = async () => {
+  return fetchJSON('/api/literary-periods.json');
+};
+
 export const allTexts = async (country, type, letter) => {
   return fetchJSON(`/api/alltexts/${country}-${type}-${letter}.json`);
 };

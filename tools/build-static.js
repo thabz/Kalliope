@@ -4,7 +4,12 @@ import path from 'path';
 import mkdirp from 'mkdirp';
 import * as Paths from '../common/paths.js';
 import * as CommonData from '../common/commondata.js';
-import { extractYear, formattedYear } from '../common/dates.js';
+import {
+  compareNormalizedDate,
+  extractYear,
+  formattedYear,
+  normalizeTimelineDate,
+} from '../common/dates.js';
 import { supportedLanguages } from '../common/languages.js';
 import {
   isFileModified,
@@ -45,6 +50,9 @@ import {
   getElementByTagName,
   getElementsByTagNames,
   safeGetInnerXML,
+  safeGetInnerXMLWithout,
+  getIdentifiers,
+  identifierAllowlist,
   tagName,
 } from './build-static/xml.js';
 import { build_sitemap_xml } from './build-static/sitemap.js';
@@ -75,7 +83,10 @@ import {
   workName,
   workLinkName,
 } from './build-static/formatting.js';
-import { pageOnlySourceError } from './build-static/source-validation.js';
+import {
+  pageIntervalError,
+  pageOnlySourceError,
+} from './build-static/source-validation.js';
 import {
   build_global_lines_json,
   build_poet_lines_json,
@@ -117,6 +128,8 @@ import {
   sourceFilesForText,
   worksForPoet,
 } from './build-static/anthologies.js';
+import { updateSqliteIndex } from './build-static/sqlite-index.js';
+import { buildCorpusDataset } from './build-static/corpus-dataset.js';
 import { findUnlistedWorkFiles } from './build-static/workfiles.js';
 
 const envFlag = (name) => {
@@ -127,6 +140,7 @@ const envFlag = (name) => {
 
 const skipImageThumbnails = envFlag('KALLIOPE_SKIP_IMAGE_THUMBNAILS');
 const skipElasticsearch = envFlag('KALLIOPE_SKIP_ELASTICSEARCH');
+const buildSqlite = process.argv.includes('--build-sqlite');
 
 let collected = {
   texts: new Map(),
@@ -204,21 +218,22 @@ const build_bio_json = async (collected) => {
     async (entry) => {
       const [poetId, poet] = entry;
       const poetMetadataModified = collected.poetMetadataDirty?.has(poetId);
+      const bioSourceModified = isFileModified(
+        'content/events.xml',
+        ...worksForPoet(collected, poetId).flatMap(
+          work => work.sourceFiles || []
+        ),
+        `fdirs/${poet.id}/info.xml`,
+        `fdirs/${poet.id}/events.xml`,
+        `fdirs/${poet.id}/portraits.xml`,
+        `fdirs/${poet.id}/bio.xml`,
+      );
       // Skip if all of the participating xml files aren't modified
       if (
         !poetMetadataModified &&
         !codeModified &&
         !artworkModified &&
-        !isFileModified(
-          'content/events.xml',
-          ...worksForPoet(collected, poetId).flatMap(
-            work => work.sourceFiles || []
-          ),
-          `fdirs/${poet.id}/info.xml`,
-          `fdirs/${poet.id}/events.xml`,
-          `fdirs/${poet.id}/portraits.xml`,
-          `fdirs/${poet.id}/bio.xml`,
-        )
+        !bioSourceModified
       ) {
         return;
       }
@@ -241,8 +256,12 @@ const build_bio_json = async (collected) => {
         data.content_lang = 'da';
         data.sources = (getChildrenByTagName(head, 'source') || []).map(
           source => ({
-            content_html: htmlToXml(safeGetInnerXML(source), collected),
+            content_html: htmlToXml(
+              safeGetInnerXMLWithout(source, ['identifiers']),
+              collected,
+            ),
             href: safeGetAttr(source, 'href'),
+            identifiers: getIdentifiers(source, identifierAllowlist.source),
           })
         );
       }
@@ -268,7 +287,7 @@ const build_poet_workids = () => {
     if (!fs.existsSync(infoFilename)) {
       throw new Error(`Missing info.xml in fdirs/${poetId}.`);
     }
-    if (globalForceReload || isFileModified(infoFilename)) {
+    if (isFileModified(infoFilename) || globalForceReload) {
       const doc = loadXMLDoc(infoFilename);
       const workIds = safeGetText(doc, 'works') || '';
       let items = workIds.split(',').filter((x) => x.length > 0);
@@ -315,6 +334,7 @@ const handle_text = async (
 
   const head = getChildByTagName(text, 'head');
   const textDates = extractDates(head);
+  validateTextDates(textDates, sourcePoetId, sourceWorkId, sourceTextId);
   const firstline = extractTitle(head, 'firstline');
   let title = extractTitle(head, 'title') || firstline; // {title: xxx, prefix: xxx}
   let indextitle = extractTitle(head, 'indextitle') || title;
@@ -355,8 +375,29 @@ const handle_text = async (
   const textRefIdsByType = Array.isArray(textRefs)
     ? { mention: textRefs, translation: [] }
     : textRefs;
+  const sortRefIds = refIds =>
+    [...refIds].sort((a, b) => {
+      const metaA = collected.texts.get(a);
+      const metaB = collected.texts.get(b);
+      const workA = collected.works.get(`${metaA.poetId}/${metaA.workId}`);
+      const workB = collected.works.get(`${metaB.poetId}/${metaB.workId}`);
+      const dateA = normalizeTimelineDate(workA.year);
+      const dateB = normalizeTimelineDate(workB.year);
+      if (dateA == null || dateB == null) {
+        if (dateA == null && dateB != null) {
+          return 1;
+        }
+        if (dateA != null && dateB == null) {
+          return -1;
+        }
+        return a.localeCompare(b);
+      }
+      const dateComparison = compareNormalizedDate(dateA, dateB);
+      return dateComparison === 0 ? a.localeCompare(b) : dateComparison;
+    });
+
   const buildRefsArray = (refIds) =>
-    refIds
+    sortRefIds(refIds)
     .filter((id) => {
       // Hvis en tekst har varianter som også henviser til denne,
       // vil vi kun vise den ældste variant.
@@ -415,6 +456,14 @@ const handle_text = async (
   let source = null;
   let workSource = null;
   if (sourceNode != null) {
+    const intervalError = pageIntervalError({
+      filename: `fdirs/${sourcePoetId}/${sourceWorkId}.xml`,
+      textId: sourceTextId,
+      textSource: sourceNode,
+    });
+    if (intervalError != null) {
+      throw new Error(intervalError);
+    }
     const pageOnlyError = pageOnlySourceError({
       filename: `fdirs/${sourcePoetId}/${sourceWorkId}.xml`,
       textId: sourceTextId,
@@ -435,7 +484,7 @@ const handle_text = async (
     let pages = null;
     const pagesAttr = safeGetAttr(sourceNode, 'pages');
     let sourceBookRef = workSource == null ? null : workSource.source;
-    const sourceNodeInner = safeGetInnerXML(sourceNode);
+    const sourceNodeInner = safeGetInnerXMLWithout(sourceNode, ['identifiers']);
     if (sourceNodeInner.length > 0) {
       sourceBookRef = sourceNodeInner;
     }
@@ -484,6 +533,7 @@ const handle_text = async (
     }
     source = {
       source: sourceBookRef,
+    identifiers: getIdentifiers(sourceNode, identifierAllowlist.source),
       pages: pagesAttr,
       digitalUrl,
       facsimilePageCount:
@@ -508,7 +558,7 @@ const handle_text = async (
       throw `fdirs/${sourcePoetId}/${sourceWorkId}: section ${sourceTextId} mangler title.`;
     }
     const content = getChildByTagName(text, 'content');
-    toc = build_section_toc(content);
+    toc = build_section_toc(content, sourcePoetId);
   } else {
     // prose or poem
     const body = getChildByTagName(text, 'body');
@@ -522,9 +572,8 @@ const handle_text = async (
           rawBlock.indexOf('<footnote') !== -1 ||
           rawBlock.indexOf('<note') !== -1;
         const fontSize = safeGetAttr(block, 'font-size');
-        const marginLeft = safeGetAttr(block, 'margin-left');
-        const marginRight = safeGetAttr(block, 'margin-right');
-        const options = { fontSize, marginLeft, marginRight };
+        const maxWidth = safeGetAttr(block, 'max-width');
+        const options = { fontSize, maxWidth };
         return {
           type,
           lines: htmlToXml(rawBlock, collected, type === 'poetry'),
@@ -850,6 +899,37 @@ const validateWorkYear = (year, filename) => {
   }
 };
 
+const fullDatePattern = /^-?\d{3,4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$/;
+
+const validateTextDate = (date, tagName, sourcePoetId, sourceWorkId, textId) => {
+  const value = date == null ? null : date.trim();
+  if (value == null || value.length === 0) {
+    return;
+  }
+  if (!fullDatePattern.test(value)) {
+    throw new Error(
+      `fdirs/${sourcePoetId}/${sourceWorkId}.xml (${textId}) has invalid <${tagName}> in <dates>: ${value}. Expected YYYY-MM-DD.`
+    );
+  }
+};
+
+const validateTextDates = (
+  textDates,
+  sourcePoetId,
+  sourceWorkId,
+  sourceTextId
+) => {
+  ['published', 'written', 'performed', 'event'].forEach((type) => {
+    validateTextDate(
+      textDates[type],
+      type,
+      sourcePoetId,
+      sourceWorkId,
+      sourceTextId
+    );
+  });
+};
+
 const removeWorkDates = (dates, poetId, workId) => {
   dates.forEach((items, date) => {
     const filtered = items.filter(
@@ -979,7 +1059,7 @@ const works_first_pass = (collected) => {
       (workId) => `fdirs/${poetId}/${workId}.xml`,
     );
     const poetHasChangedWorks =
-      force_reload || isFileModified(...workFilenames);
+      isFileModified(...workFilenames) || force_reload;
 
     workIds.forEach((workId) => {
       const workFilename = `fdirs/${poetId}/${workId}.xml`;
@@ -1069,6 +1149,9 @@ const works_first_pass = (collected) => {
         const title = extractTitle(head, 'title');
         const linktitle = extractTitle(head, 'linktitle');
         const indextitle = extractTitle(head, 'indextitle');
+        const titleElement = getChildByTagName(head, 'title');
+        const indexTitleElement = getChildByTagName(head, 'indextitle');
+        const firstlineElement = getChildByTagName(head, 'firstline');
         const aliases = parseAliases(safeGetAttr(part, 'aliases'));
         const textDates = extractDates(head);
         const textAuthorId = resolveAuthorId(part, poetId);
@@ -1107,6 +1190,12 @@ const works_first_pass = (collected) => {
           hasPoetry: getElementsByTagNames(part, ['poetry']).length > 0,
           hasProse: getElementsByTagNames(part, ['prose']).length > 0,
           skipIndex: safeGetAttr(part, 'skip-index') != null,
+          forceTitleIndex:
+            safeGetAttr(titleElement, 'force-index') != null ||
+            safeGetAttr(indexTitleElement, 'force-index') != null,
+          forceFirstlineIndex:
+            safeGetAttr(firstlineElement, 'force-index') != null,
+          dates: textDates,
           sourceOrder,
         };
         if (anthologyText) {
@@ -1260,12 +1349,16 @@ const works_second_pass = async (collected) => {
       const work = getChildByTagName(doc, 'kalliopework');
       const head = getChildByTagName(work, 'workhead');
       const data = collected.works.get(`${poetId}/${workId}`);
+      data.identifiers = getIdentifiers(head, identifierAllowlist.workhead);
       let sources = {};
       getChildrenByTagName(head, 'source').forEach((sourceNode) => {
         let source = null;
-        const sourceInner = safeGetInnerXML(sourceNode);
+        const sourceInner = safeGetInnerXMLWithout(sourceNode, ['identifiers']);
         if (sourceInner != null && sourceInner.length > 0) {
-          source = { source: sourceInner };
+          source = {
+            source: sourceInner,
+            identifiers: getIdentifiers(sourceNode, identifierAllowlist.source),
+          };
         }
         if (source == null || source.source == null) {
           throw new Error(
@@ -1494,6 +1587,10 @@ const main = async () => {
   await b('build_redirects_json', build_redirects_json, collected);
   await b('build_sitemap_xml', build_sitemap_xml, collected);
   await b('build_anniversaries_ical', build_anniversaries_ical, collected);
+  await b('build_corpus_dataset', buildCorpusDataset, collected);
+  if (buildSqlite) {
+    await b('update_sqlite_index', updateSqliteIndex, collected);
+  }
   refreshFilesModifiedCache();
   if (skipImageThumbnails) {
     console.log('Skipping image thumbnail build.');

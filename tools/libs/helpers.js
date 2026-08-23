@@ -70,10 +70,13 @@ const loadJSON = filename => {
 
 const writeJSON = (filename, data) => {
   const json = JSON.stringify(data, null, 2);
-  fs.writeFileSync(filename, json);
+  writeText(filename, json);
 };
 
 const writeText = (filename, text) => {
+  if (fileExists(filename) && loadText(filename) === text) {
+    return;
+  }
   fs.writeFileSync(filename, text);
 };
 
@@ -138,6 +141,13 @@ const splitMultilineLanguageSpans = html =>
     }
   );
 
+const collapseMultilineNotes = html =>
+  html.replace(
+    /<(footnote|note)(\s+[^>]*)?>([\s\S]*?)<\/\1>/g,
+    (_, tagName, attributes = '', content) =>
+      `<${tagName}${attributes}>${content.replace(/\s*\n\s*/g, ' ')}</${tagName}>`
+  );
+
 const htmlToXml = (html, collected, isPoetry) => {
   if (html == null) {
     return null;
@@ -160,6 +170,7 @@ const htmlToXml = (html, collected, isPoetry) => {
       return /^[ \t]+<!--.*?-->[ \t]+$/.test(match) ? ' ' : '';
     })
     .replace(/::NEWLINE-PLACEHOLDER::/g, '\n');
+  html = collapseMultilineNotes(html);
   let decoded = splitMultilineLanguageSpans(
     decodeXmlCharacterReferences(
       replaceDashes(

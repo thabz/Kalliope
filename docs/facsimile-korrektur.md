@@ -46,6 +46,7 @@ over alle relevante sider med mindst:
 
 - trykt sidetal
 - PDF-side eller billedfil
+- facsimilebilledets stabile filnavn, fx `019.jpg`
 - tekst eller afsnit
 - første og sidste synlige verslinje
 - status for strukturkontrol
@@ -116,6 +117,63 @@ Ved sideskift skal optællingen fortsætte på tværs af siden. Afgør ud fra
 facsimilet, strofeformen og den løbende tekst, om den første linje på den nye
 side fortsætter en strofe eller begynder en ny. En ny fysisk side er ikke i sig
 selv en strofegrænse.
+
+### Registrér alle interne sideskift
+
+Ved en komplet PDF-transskription skal alle fysiske sideskift inde i de
+inkluderede tekstkroppe bevares semantisk med `<pb>`. Markøren står ved
+begyndelsen af den nye kildeside:
+
+```xml
+Sidste verslinje på side 11
+<pb n="12" facs="019.jpg"/>Første verslinje på side 12
+```
+
+`n` er den nye sides trykte nummer eller betegnelse. Det kan udelades på en
+unummereret side. `facs` er altid obligatorisk og er filnavnet på den samme
+facsimileside uden sti. Kalliopes genererede sidebilleder er nulbaserede:
+PDF-side 20 svarer derfor til `019.jpg`. Aflæs filnavnet i sideinventaret; udled
+det ikke af det trykte sidetal.
+
+Placér `<pb>` præcis før det første transskriberede tegn eller inline-element på
+den nye side. Hvis sideskiftet falder inde i en verslinje, en prosasætning, et
+ord, en note eller et andet sammenhængende tekstforløb, skal markøren stå inline
+på det nøjagtige sted. Ved et skift mellem verslinjer eller strofer sættes den
+foran første tekst på den nye side og aldrig på en selvstændig XML-linje.
+Markøren må ikke skabe eller fjerne en verslinje, blanklinje, strofe eller et
+prosaafsnit.
+
+Der indsættes ikke en markør alene ved begyndelsen eller slutningen af hver
+`<text>`; tekstens sideinterval ligger fortsat i `<source pages="...">`. Et værk,
+hvor alle tekster står på én side, kan derfor være fuldt sideopmærket uden at
+indeholde nogen `<pb>`.
+
+Sideintervallet skal skrives med fulde endepunkter, fx `102-108`, ikke
+`102-08`, og skal være lukket og ikke-faldende. Inden for hver tekstpost skal
+arabiske `pb/@n` være ikke-faldende. Sidetallet kan begynde forfra ved en ny
+tekstpost, når kilden har selvstændig paginering. De numeriske
+`pb/@facs`-filnavne skal være ikke-faldende inden for samme facsimilekilde; der
+må gerne være spring mellem markørerne. I ældre værkfiler med flere kilder
+begynder en ny rækkefølge, når tekstens `source/@in` skifter. Uden
+`source/@in` gælder én rækkefølge for hele værket. Romertal i `n` ignoreres af
+den maskinelle rækkefølgekontrol.
+
+En konkret tekst med en dokumenteret pagineringsafvigelse kan bruge
+`ignore-tests="pagebreak-count"`, hvis det lovlige sideinterval ikke bestemmer
+antallet af interne markører. Undtagelsen fritager kun for antalskontrollen og
+må aldrig skjule et ulovligt `pages`, en manglende `facs`, forkert placering
+eller faldende markørværdier.
+
+Når alle inkluderede tekstkroppe er kontrolleret, skal værkets `<workhead>`
+indeholde:
+
+```xml
+<pagebreaks/>
+```
+
+Elementet erklærer, at registreringen er komplet; det erklærer ikke, at der
+findes mindst ét sideskift. En ældre fil uden `<pagebreaks/>` har ukendt status.
+Følg `docs/xml-work-format.md` for den fulde XML-kontrakt.
 
 Kontrollér nummerering på hvert hierarkisk niveau for sig. Et langt digt kan
 eksempelvis have romertal som hovedafsnit og arabertal som underafsnit, så
@@ -213,6 +271,8 @@ Kontrollér særskilt:
 - åbnende og lukkende anførselstegn
 - kursiv, spatiering og anden fremhævelse
 - indrykninger, centrerede linjer og signaturer
+- at hvert internt sideskift har en korrekt placeret `<pb>` med det rigtige
+  `facs`-filnavn
 
 Tegnfejl er ofte sværere for OCR end ordfejl. Et pass kan gengive alle bogstaver
 rigtigt og stadig miste en tankestreg, vende et anførselstegn eller forveksle
@@ -265,6 +325,16 @@ Kør også en domænespecifik kontrol af strofeantal, stroferækkefølge og
 verslinjer pr. strofe, når formen tillader det. En lille midlertidig parser er
 ofte mere pålidelig end manuel optælling i et langt værk.
 
+Sammenhold desuden sideinventaret med XML'en og kontrollér, at:
+
+- hvert internt sideskift i en inkluderet tekst har præcis én `<pb>`
+- ingen `<pb>` er indsat blot ved begyndelsen eller slutningen af en tekst
+- alle `<pb>` har en ikke-tom `facs`-attribut med det korrekte filnavn
+- `n`, når den findes, er den trykte sidebetegnelse og ikke PDF-siden
+- arabiske `n`-værdier og numeriske `facs`-filnavne er ikke-faldende gennem
+  værket; spring er tilladt
+- `<workhead>` indeholder `<pagebreaks/>`, når kontrollen er fuldført
+
 Hele testsuiten skal bestå før PR-oprettelse. Tjek til sidst `git status --short`
 og bekræft, at kun de tilsigtede filer er med.
 
@@ -279,6 +349,7 @@ Afleveringen skal oplyse:
 - hvilke trykte sider der er gennemgået
 - om hele teksten er læst direkte mod facsimilet
 - hvordan strofer og overskrifter er valideret
+- hvordan sideskift, `facs`-filnavne og `<pagebreaks/>` er valideret
 - hvilke automatiske kontroller der er kørt
 - om der findes uløste læsninger
 - hvilke filer der er ændret
@@ -293,6 +364,9 @@ godkendelse til at publicere den.
 - [ ] Alle relevante sider er registreret og gennemgået.
 - [ ] Første og sidste tekstlinje stemmer med facsimilet.
 - [ ] Strofegrænser følger trykket, også ved uregelmæssige former.
+- [ ] Alle interne sideskift er markeret med præcist placerede `<pb>`.
+- [ ] Hver `<pb>` har korrekt `facs`; `n` følger den trykte sidebetegnelse.
+- [ ] `<workhead>` indeholder `<pagebreaks/>`, også når der ikke findes `<pb>`.
 - [ ] Regelmæssige strofer har korrekt linjeantal og ubrudte overskrifter.
 - [ ] Overskrifter og dekorationer tælles ikke som verslinjer.
 - [ ] Historisk ortografi og tegnsætning er bevaret.

@@ -56,5 +56,18 @@ describe('helpers', () => {
         '<span lang="sv">andra raden</span>',
       ]);
     });
+
+    it('keeps a multi-line footnote valid as one rendered line', () => {
+      expect(
+        lineTexts(
+          'Verslinje<footnote>Første linje\n' +
+            'anden <span lang="la"><i>linje</i></span>.</footnote>\n' +
+            'Næste verslinje'
+        )
+      ).toEqual([
+        'Verslinje<footnote>Første linje anden <span lang="la"><i>linje</i></span>.</footnote>',
+        'Næste verslinje',
+      ]);
+    });
   });
 });

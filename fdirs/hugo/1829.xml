@@ -1,17 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="1829" author="hugo" status="incomplete" type="poetry">
 <workhead>
-   <title>Les Orientales</title>
-   <year>1829</year>
-   <source href="https://fr.m.wikisource.org/wiki/Les_Orientales">Victor Hugo : <i>Les Orientales</i>, 1829.</source>
+  <title>Les Orientales</title>
+  <year>1829</year>
+  <identifiers>
+    <wikidata>Q3085613</wikidata>
+    <openlibrary-work>OL19922716W</openlibrary-work>
+  </identifiers>
+  <source href="https://fr.m.wikisource.org/wiki/Les_Orientales">Victor Hugo : <i>Les Orientales</i>, 1829.</source>
 </workhead>
 <workbody>
 
 <text id="hugo2018111002">
 <head>
-    <title><num>VIII.</num>Chanson de pirates</title>
-    <firstline>Nous emmenions en esclavage</firstline>
-    <quality>korrektur1</quality>
+  <title><num>VIII.</num>Chanson de pirates</title>
+  <firstline>Nous emmenions en esclavage</firstline>
+  <dates>
+    <written>1828-03-12</written>
+  </dates>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -70,9 +77,9 @@ Nous étions quatrevingts rameurs
 
 <text id="hugo20181109">
 <head>
-    <title><num>XX.</num>Attente</title>
-    <firstline>Monte, écureuil, monte au grand chêne</firstline>
-    <quality>korrektur1</quality>
+  <title><num>XX.</num>Attente</title>
+  <firstline>Monte, écureuil, monte au grand chêne</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -109,9 +116,9 @@ Et revenir mon bien-aimé ?
 
 <text id="hugo2018111001">
 <head>
-    <title><num>XXII.</num>La Sultane favorite</title>
-    <firstline>N’ai-je pas pour toi, belle juive</firstline>
-    <quality>korrektur1</quality>
+  <title><num>XXII.</num>La Sultane favorite</title>
+  <firstline>N’ai-je pas pour toi, belle juive</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -209,21 +216,21 @@ Il faut des perles au poignard !
 
 <text id="hugo2018111003">
 <head>
-    <title><num>XXVI.</num>Les Tronçons du serpent</title>
-    <firstline>Je veille, et nuit et jour mon front rêve enflammé</firstline>
-    <notes>
-        <note>Mottoet stammer fra en fransk oversættelse af persiske <a poet="saadi">Saadi</a> : <i>Gulistan</i> (1258).</note>
-        </notes>
-    <pictures>
-        <picture src="hugo2018111003-p1.jpg" museum="fabre">
-            Alexandre Cabanel: <i>Albaydé</i>, 1848, olie på lærred, 98×80 cm.</picture>
-        <!-- https://commons.wikimedia.org/wiki/File:Alexandre_Cabanel_-_Albayde.jpg -->
-        <!-- 'Albaydé' (1848) by Alexandre Cabanel. Oil on canvas. 98 × 80 cm (38.6 × 31.5 in). Location: Musée Fabre, Montpellier, France (le Midi, or southern France). // This portrait is included in the feature, 'The Portrait Gallery' by Sasha Soren, author of 'Random Magic.' // About the portrait: A lush and sensual tableau, depicting an enigmatic woman, whom we gradually realize has already died. Curiouser still, she’s never actually lived; the portrait is based, not on a real woman, but a character - Albaydé. She appears in writer Victor Hugo’s book of poems, 'Les Orientales' (1829). // The character of Albaydé is mentioned in 'Les tronçons du serpent' ('Sections of the Serpent'). The narrator of the poem pities a snake torn into pieces, but - somewhat surreally - the dying serpent speaks to him, saying: Ta plaie est plus cruelle/Car ton Albaydé dans la tombe a fermé/Ses beaux yeux de gazelle. (Your wound is more cruel than mine/ because in the tomb has your Albaydé closed/her beautiful eyes, that were like those of a gazelle.) // Found by @RandomMagicTour - Sasha Soren -->
+  <title><num>XXVI.</num>Les Tronçons du serpent</title>
+  <firstline>Je veille, et nuit et jour mon front rêve enflammé</firstline>
+  <notes>
+    <note>Mottoet stammer fra en fransk oversættelse af persiske <a poet="saadi">Saadi</a> : <i>Gulistan</i> (1258).</note>
+  </notes>
+  <pictures>
+    <picture src="hugo2018111003-p1.jpg" museum="fabre">
+      Alexandre Cabanel: <i>Albaydé</i>, 1848, olie på lærred, 98×80 cm.</picture>
+      <!-- https://commons.wikimedia.org/wiki/File:Alexandre_Cabanel_-_Albayde.jpg -->
+      <!-- 'Albaydé' (1848) by Alexandre Cabanel. Oil on canvas. 98 × 80 cm (38.6 × 31.5 in). Location: Musée Fabre, Montpellier, France (le Midi, or southern France). // This portrait is included in the feature, 'The Portrait Gallery' by Sasha Soren, author of 'Random Magic.' // About the portrait: A lush and sensual tableau, depicting an enigmatic woman, whom we gradually realize has already died. Curiouser still, she’s never actually lived; the portrait is based, not on a real woman, but a character - Albaydé. She appears in writer Victor Hugo’s book of poems, 'Les Orientales' (1829). // The character of Albaydé is mentioned in 'Les tronçons du serpent' ('Sections of the Serpent'). The narrator of the poem pities a snake torn into pieces, but - somewhat surreally - the dying serpent speaks to him, saying: Ta plaie est plus cruelle/Car ton Albaydé dans la tombe a fermé/Ses beaux yeux de gazelle. (Your wound is more cruel than mine/ because in the tomb has your Albaydé closed/her beautiful eyes, that were like those of a gazelle.) // Found by @RandomMagicTour - Sasha Soren -->
     </pictures>
     <quality>korrektur1</quality>
 </head>
 <body>
-<quote font-size="small" margin-left="20%">
+<quote lang="fr">
 D’ailleurs les sages ont dit : Il ne faut point attacher son cœur aux choses passagères.
 <right>Sadi. <i>Gulistan.</i></right>
 </quote>
@@ -290,9 +297,9 @@ Sans pouvoir réunir ses tronçons mutilés
 
 <text id="hugo2019021202">
 <head>
-    <title><num>XXX.</num>Romance mauresque</title>
-    <firstline>Don Rodrigue est à la chasse</firstline>
-    <quality>korrektur1</quality>
+  <title><num>XXX.</num>Romance mauresque</title>
+  <firstline>Don Rodrigue est à la chasse</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -417,12 +424,70 @@ Eût ta gorge pour fourreau.
 </body>
 </text>
 
+<text id="hugo2026081501">
+<head>
+  <title><num>XVIII.</num>L’Enfant</title>
+  <firstline>Les turcs ont passé là. Tout est ruine et deuil</firstline>
+  <quality>korrektur1,kilde</quality>
+  <source href="https://fr.wikisource.org/wiki/Les_Orientales/L%E2%80%99Enfant">Victor Hugo : <i>Les Orientales</i>, XVIII. «L’Enfant».</source>
+</head>
+<body>
+<poetry>
+<nonum><right><small>O horror ! horror ! horror !</small></right></nonum>
+<nonum><right><small><i>Shakespeare. Macbeth.</i></small></right></nonum>
+
+Les turcs ont passé là. Tout est ruine et deuil.
+Chio, l’île des vins, n’est plus qu’un sombre écueil,
+Chio, qu’ombrageaient les charmilles,
+Chio, qui dans les flots reflétait ses grands bois,
+Ses coteaux, ses palais, et le soir quelquefois
+Un chœur dansant de jeunes filles.
+
+Tout est désert. Mais non ; seul près des murs noircis,
+Un enfant aux yeux bleus, un enfant grec, assis,
+Courbait sa tête humiliée ;
+Il avait pour asile, il avait pour appui
+Une blanche aubépine, une fleur, comme lui
+Dans le grand ravage oubliée.
+
+Ah ! pauvre enfant, pieds nus sur les rocs anguleux !
+Hélas ! pour essuyer les pleurs de tes yeux bleus
+Comme le ciel et comme l’onde,
+Pour que dans leur azur, de larmes orageux,
+Passe le vif éclair de la joie et des jeux,
+Pour relever ta tête blonde,
+
+Que veux-tu ? Bel enfant, que te faut-il donner
+Pour rattacher gaîment et gaîment ramener
+En boucles sur ta blanche épaule
+Ces cheveux, qui du fer n’ont pas subi l’affront,
+Et qui pleurent épars autour de ton beau front,
+Comme les feuilles sur le saule ?
+
+Qui pourrait dissiper tes chagrins nébuleux ?
+Est-ce d’avoir ce lys, bleu comme tes yeux bleus,
+Qui d’Iran borde le puits sombre ?
+Ou le fruit du tuba, de cet arbre si grand,
+Qu’un cheval au galop met, toujours en courant,
+Cent ans à sortir de son ombre ?
+
+Veux-tu, pour me sourire, un bel oiseau des bois,
+Qui chante avec un chant plus doux que le hautbois,
+Plus éclatant que les cymbales ?
+Que veux-tu ? fleur, beau fruit, ou l’oiseau merveilleux ?
+— Ami, dit l’enfant grec, dit l’enfant aux yeux bleus,
+Je veux de la poudre et des balles.
+
+<nonum><center><small>8-10 juin 1828.</small></center></nonum>
+</poetry>
+</body>
+</text>
 
 <text id="hugo2019021201">
 <head>
-    <title><num>XXXVII.</num>Extase</title>
-    <firstline>J’étais seul près des flots, par une nuit d’étoiles</firstline>
-    <quality>korrektur1</quality>
+  <title><num>XXXVII.</num>Extase</title>
+  <firstline>J’étais seul près des flots, par une nuit d’étoiles</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -450,9 +515,9 @@ Disaient, en recourbant l’écume de leur crête :
 
 <text id="hugo20180206">
 <head>
-    <title><num>XL.</num>Lui</title>
-    <firstline>Toujours lui ! Lui partout ! - Ou brûlante ou glacée</firstline>
-    <quality>korrektur1</quality>
+  <title><num>XL.</num>Lui</title>
+  <firstline>Toujours lui ! Lui partout ! - Ou brûlante ou glacée</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>

@@ -47,6 +47,23 @@ Hvis cachede build-data driller, kan hele static-buildet tvinges igennem:
 npm run build-static-force-reload
 ```
 
+## Forespørgsler i korpusdata
+
+Static-buildet opretter et versionsmærket korpusdatasæt som JSONL-gzipfiler i
+`public/api/v1/`. Se [`docs/corpus-dataset.md`](docs/corpus-dataset.md) for
+felter og eksempler. Ved komplekse relationelle audits kan et valgfrit lokalt
+SQLite-indeks bygges og åbnes med:
+
+```shell
+make build-sqlite
+make sqlite
+```
+
+Se [`docs/sqlite-index.md`](docs/sqlite-index.md) for skema og begrænsninger.
+Brug de genererede bulkfiler før en gennemgang af alle XML-filer; gå kun til
+XML, når de nødvendige oplysninger ikke findes i datasættet, eller når
+kilde-XML'en skal kontrolleres.
+
 Kør testene før større ændringer eller pull requests:
 
 ```shell

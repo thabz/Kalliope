@@ -301,8 +301,9 @@
      <html>Den franske oplysningsfilosof og forfatter Denis Diderot født. (død 1784)</html>
    </entry>
    <entry date="1719" type="image">
-       <picture src="kunst/balthasar-denner-tordenskiold.jpg" museum="fnm">
+       <picture src="kunst/balthasar-denner-tordenskiold.jpg" year="1719" museum="fnm">
            Balthasar Denner: <i>Peter Wessel Tordenskiold</i>, 1719. Det Nationalhistoriske Museum på Frederiksborg Slot.
+           <!-- Museets offentlige site har ingen individuel katalogpost; inventarnummeret er derfor ikke verificeret. -->
        </picture>
    </entry>
    <entry date="1720" type="text">
@@ -392,8 +393,11 @@
      <html><a poet="heibergpa">P. A. Heiberg</a> idømmes landsforvisning pga. artiklerne »Politisk Dispache« og »Sprog-Granskning«.</html>
    </entry>
    <entry date="1801-4-2" type="image">
-       <picture src="kunst/lorentzen_slaget_paa_rheden.jpg" museum="fnm">
+       <picture src="kunst/lorentzen_slaget_paa_rheden.jpg" year="1802" museum="fnm" invnr="G 98">
          C. A. Lorentzen: <i>Slaget paa Rheden 2. april 1801</i>, 1802, Frederiksborg Museum.
+       <identifiers>
+         <wikidata>Q21130200</wikidata>
+       </identifiers>
        </picture>
    </entry>
    <entry date="1802-12-15" type="text">
