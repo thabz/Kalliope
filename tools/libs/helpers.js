@@ -181,8 +181,8 @@ const htmlToXml = (html, collected, isPoetry) => {
           .replace(/\n *(====*) *\n/g, (match, p1) => {
             return `\n<hr width="${p1.length}" class="double"/>\n`;
           })
-          .replace(/^( +)/gm, (match, p1) => {
-            return '\u00a0'.repeat(2 * p1.length);
+          .replace(/^((?:<pb\b[^>]*\/>)*)( +)/gm, (match, prefix, spaces) => {
+            return prefix + '\u00a0'.repeat(2 * spaces.length);
           })
           .replace(/^( *[_\*\- ]+ *)$/gm, (match, p1) => {
             // <nonum> på afskillerlinjer som f.eks. "* * *" eller "___"

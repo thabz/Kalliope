@@ -52,4 +52,21 @@ Et citat
     );
     expect(structuralTagsOutsideColumnZero(formatted)).toEqual([]);
   });
+
+  it('puts poetry content and nonum lines on separate lines', () => {
+    const xml = `<text>
+<body>
+<poetry><nonum><center>I</center></nonum><nonum><center>a</center></nonum>Første verslinje
+</poetry>
+</body>
+</text>
+`;
+
+    expect(formatWorkXml(xml)).toContain(
+      '<poetry>\n' +
+        '<nonum><center>I</center></nonum>\n' +
+        '<nonum><center>a</center></nonum>\n' +
+        'Første verslinje',
+    );
+  });
 });

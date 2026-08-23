@@ -69,5 +69,17 @@ describe('helpers', () => {
         'Næste verslinje',
       ]);
     });
+
+    it('preserves line indentation after a page break', () => {
+      expect(
+        lineTexts(
+          '<pb n="18" facs="024.jpg"/>        andre drog fra borgen ned,'
+        )
+      ).toEqual([
+        '<pb n="18" facs="024.jpg"/>' +
+          '\u00a0'.repeat(16) +
+          'andre drog fra borgen ned,',
+      ]);
+    });
   });
 });

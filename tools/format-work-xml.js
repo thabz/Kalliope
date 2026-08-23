@@ -86,6 +86,11 @@ const addSectionSpacing = xml =>
 const splitAdjacentMetadataFields = xml =>
   xml.replace(adjacentMetadataFieldsPattern, '$1\n');
 
+const splitPoetryLines = xml =>
+  xml
+    .replace(/(<poetry(?:[ \t][^<>]*)?>)(?!\r?\n)/g, '$1\n')
+    .replace(/<\/nonum>(?!\r?\n)/g, '</nonum>\n');
+
 const indentMetadata = xml => {
   let metadataDepth = 0;
   let withinMetadata = false;
@@ -132,7 +137,8 @@ export const formatWorkXml = xml => {
   const withSplitMetadata = splitAdjacentMetadataFields(
     withoutStructuralIndentation,
   );
-  const withMetadataIndentation = indentMetadata(withSplitMetadata);
+  const withPoetryLines = splitPoetryLines(withSplitMetadata);
+  const withMetadataIndentation = indentMetadata(withPoetryLines);
   return addSectionSpacing(addTextSpacing(withMetadataIndentation))
     .trimEnd() + '\n';
 };
