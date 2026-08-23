@@ -97,6 +97,43 @@ class Txt2XmlTest < Minitest::Test
     assert_equal %w[i w b], REXML::XPath.match(text, 'body/poetry/*').map(&:name)
   end
 
+  def test_emits_canonical_work_xml_format
+    output, error, status = convert(<<~TEXT)
+      KILDE:Red.: <i>Digte</i>, København, 1852.
+      DIGTER:digter
+      FACSIMILE:scan.pdf
+      FACSIMILE-SIDER:20
+      FACSIMILE-OFFSET:2
+      TITELBLAD:Digte / 1852
+
+      SEKTION:En afdeling
+
+      T:Solnedgang
+      U:Første undertitel
+      U:Anden undertitel
+      F:Det spredes meer og meer
+      NOTE:Tekstnote
+      SIDE:3
+      FACSIMILE-SIDE:5
+      SKREVET:1851
+
+      Det spredes meer og meer
+      SLUTSEKTION
+      SLUT
+    TEXT
+
+    assert status.success?, error
+    assert_includes output, "<workhead>\n  <title>Digte</title>"
+    assert_includes output, "  <pictures>\n    <picture type=\"titlepage\""
+    assert_includes output, "<section>\n<head>\n  <title>En afdeling</title>"
+    assert_includes output, "  <subtitle>\n    <line>Første undertitel</line>"
+    assert_includes output, "  <notes>\n    <note>Tekstnote</note>\n  </notes>"
+    assert_includes output, '<source pages="3" facsimile-pages="5"/>'
+    assert_includes output, "  <dates>\n    <written>1851</written>\n  </dates>"
+    refute_match(/^[ \t]+<\/?(?:body|content|head|poetry|prose|quote|section|text|workbody|workhead)(?:[ \t>\/])/m, output)
+    refute_includes output, ' />'
+  end
+
   def test_escapes_bare_ampersands_without_double_escaping_entities
     document = convert_and_parse(<<~TEXT)
       KILDE:Red.: <i>Digte &amp; Sange</i>, Forlag & Søn, 1900.
