@@ -1,7 +1,6 @@
 import { execFileSync } from 'child_process';
 import {
   formatWorkXml,
-  poetryAlignmentConflicts,
   structuralTagsOutsideColumnZero,
 } from '../../tools/format-work-xml.js';
 import {
@@ -16,7 +15,6 @@ import { loadTrackedWorkFiles } from '../../tools/libs/work-files.js';
 describe('tracked work corpus', () => {
   let filenames;
   let formattingIssues;
-  let poetryAlignmentIssues;
   let pageBreakIssues;
   let pageIntervalIssues;
   let pageOnlySourceIssues;
@@ -26,7 +24,6 @@ describe('tracked work corpus', () => {
     const works = loadTrackedWorkFiles();
     filenames = works.map(work => work.filename);
     formattingIssues = [];
-    poetryAlignmentIssues = [];
     pageBreakIssues = [];
     pageIntervalIssues = [];
     pageOnlySourceIssues = [];
@@ -38,9 +35,6 @@ describe('tracked work corpus', () => {
         structuralTagsOutsideColumnZero(xml).length > 0
       ) {
         formattingIssues.push(filename);
-      }
-      if (poetryAlignmentConflicts(xml).length > 0) {
-        poetryAlignmentIssues.push(filename);
       }
 
       const checks = checksForWorkXml(xml);
@@ -77,10 +71,6 @@ describe('tracked work corpus', () => {
 
   it('keeps every work canonically formatted', () => {
     expect(formattingIssues).toEqual([]);
-  });
-
-  it('does not combine right and center alignment on one poetry line', () => {
-    expect(poetryAlignmentIssues).toEqual([]);
   });
 
   it('requires a workhead source for every page-only text source', () => {

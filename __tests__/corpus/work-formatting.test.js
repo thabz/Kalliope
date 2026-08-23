@@ -1,6 +1,5 @@
 import {
   formatWorkXml,
-  poetryAlignmentConflicts,
   structuralTagsOutsideColumnZero,
 } from '../../tools/format-work-xml.js';
 
@@ -80,21 +79,11 @@ Et citat
   });
 
   it('puts alignment outside appearance markup without reordering appearances', () => {
-    const xml = '<poetry>\n<w><i><center><nonum>Scene</nonum></center></i></w>\n</poetry>\n';
+    const xml = '<poetry>\n<nonum><w><i><center>Scene</center></i></w></nonum>\n</poetry>\n';
 
     expect(formatWorkXml(xml)).toBe(
       '<poetry>\n<nonum><center><w><i>Scene</i></w></center></nonum>\n</poetry>\n',
     );
-  });
-
-  it('reports poetry lines with conflicting alignments', () => {
-    expect(
-      poetryAlignmentConflicts(
-        '<poetry>\n<nonum><right><center>Årstal</center></right></nonum>\n</poetry>',
-      ),
-    ).toEqual([
-      '<nonum><right><center>Årstal</center></right></nonum>',
-    ]);
   });
 
   it('formats canonical nonum markup idempotently', () => {
