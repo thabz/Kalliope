@@ -8,6 +8,7 @@ require 'tempfile'
 class Txt2XmlTest < Minitest::Test
   ROOT = File.expand_path('..', __dir__)
   CONVERTER = File.join(ROOT, 'tools', 'txt2xml.rb')
+  FORMATTER = File.join(ROOT, 'tools', 'format-work-xml.js')
 
   def test_prints_a_template_without_an_input_file
     output, error, status = Open3.capture3(RbConfig.ruby, CONVERTER)
@@ -132,6 +133,17 @@ class Txt2XmlTest < Minitest::Test
     assert_includes output, "  <dates>\n    <written>1851</written>\n  </dates>"
     refute_match(/^[ \t]+<\/?(?:body|content|head|poetry|prose|quote|section|text|workbody|workhead)(?:[ \t>\/])/m, output)
     refute_includes output, ' />'
+
+    Tempfile.create(['txt2xml-output', '.xml']) do |file|
+      file.write(output)
+      file.flush
+
+      _formatter_output, formatter_error, formatter_status =
+        Open3.capture3('node', FORMATTER, file.path)
+
+      assert formatter_status.success?, formatter_error
+      assert_equal output, File.read(file.path)
+    end
   end
 
   def test_escapes_bare_ampersands_without_double_escaping_entities
