@@ -23,6 +23,7 @@
     "test-ci": "jest",
     "test2": "next test",
     "new-text-id": "node tools/new-text-id.js",
+    "analyse-metre": "node tools/analyse-metre.js",
     "validate-new-text-ids": "node tools/validate-new-text-ids.js",
     "report-ocr-candidates": "DISABLED_TESTS=\"repeated-adjacent-word\" node tools/report-ocr-candidates.js",
     "report-salmonsen-biographies": "node tools/report-salmonsen-biographies.js",

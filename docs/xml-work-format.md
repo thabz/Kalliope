@@ -287,6 +287,36 @@ historiske id-formater fortsat kan bevares uændret.
 - `<pictures>`: billeder til teksten.
 - `<source>`: kilde for teksten.
 - `<dates>`: datoer for teksten.
+- `<metre>`: en eller flere automatiske, reproducerbare metriske analyser.
+
+### Automatisk metrisk analyse
+
+Et kvalificeret automatisk gæt på digtets grundmeter gemmes i tekstens `<head>`:
+
+```xml
+<metre>
+  <analysis pattern="iambic-pentameter" confidence="0.91"/>
+  <analysis pattern="hendecasyllabic" confidence="0.84"/>
+</metre>
+```
+
+`confidence` er et decimaltal mellem 0 og 1, og analyserne står med den højeste
+confidence først. Flere analyser bruges kun, når en rytmisk og en
+stavelsesbaseret beskrivelse er kompatible. Eksisterende `<metre>` betragtes som
+manuelt kurateret og overskrives ikke af analyseværktøjet.
+
+Kør analysen på hele korpus eller et udvalg med:
+
+```sh
+npm run analyse-metre -- --dry-run
+npm run analyse-metre -- --poet oehlenschlaeger --debug
+npm run analyse-metre -- --work oehlenschlaeger/1803.xml --min-confidence 0.80
+```
+
+`--only-missing` kan angives eksplicit; værktøjet springer af hensyn til manuelt
+kuraterede oplysninger altid tekster med eksisterende `<metre>` over. Den
+danske trykheuristik springer desuden tekster over, når tekstens eller digterens
+metadata angiver et andet sprog end `da`.
 
 Titel-fallbacks:
 

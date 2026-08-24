@@ -105,6 +105,33 @@ describe('kalliopework RELAX NG schema', () => {
     }).not.toThrow();
   });
 
+  it('accepts metre analyses with confidence from zero to one', () => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Digte</title><year>1900</year></workhead>
+        <workbody>
+          <text id="digter1900a">
+            <head><firstline>Første linje</firstline><metre><analysis pattern="iambic-pentameter" confidence="0.91"/><analysis pattern="hendecasyllabic" confidence="1"/></metre></head>
+            <body><poetry>Første linje</poetry></body>
+          </text>
+        </workbody>
+      </kalliopework>
+    `;
+
+    expect(() => validate(xml)).not.toThrow();
+  });
+
+  it.each(['-0.01', '1.01', 'sikker'])('rejects invalid metre confidence %s', confidence => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Digte</title><year>1900</year></workhead>
+        <workbody><text><head><metre><analysis pattern="iambic-pentameter" confidence="${confidence}"/></metre></head></text></workbody>
+      </kalliopework>
+    `;
+
+    expect(() => validate(xml)).toThrow();
+  });
+
   it('accepts a page break immediately before a canonical nonum line', () => {
     const xml = poetryWork(
       '<pb n="49" facs="055.jpg"/><nonum><center>2</center></nonum>',
