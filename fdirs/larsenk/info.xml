@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="larsenk" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Karl</firstname>
+    <lastname>Larsen</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1860-07-28</date>
+    </born>
+    <dead>
+      <date>1931-07-11</date>
+    </dead>
+  </period>
+  <literary-periods>dk-det-moderne-gennembrud</literary-periods>
+  <identifiers>
+    <danskforfatterleksikon-dk>LKarlLarsen</danskforfatterleksikon-dk>
+  </identifiers>
+</person>
