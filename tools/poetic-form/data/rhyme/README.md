@@ -1,7 +1,7 @@
 # Corpus-lært rimmodel
 
 `corpus-model.json.gz` genereres deterministisk fra Kalliopes egne dansksprogede
-digte med `npm run train-rhyme-model`. Udvalget omfatter værker fra 1820 til
+digte med `node tools/poetic-form/train-rhyme-model.js`. Udvalget omfatter værker fra 1820 til
 1880 og digte med mindst fem strofer, hvor alle strofer har samme længde på
 mindst fire linjer.
 
@@ -27,7 +27,7 @@ en hård nedre beslutningsgrænse på 0,80 og kalibreres til mindst 95 procent
 vægtet præcision, fordi falske rim er mere skadelige end manglende rim.
 
 Perioden 1881–1920 indgår ikke i træningen og kan måles som tidsligt benchmark
-med `npm run evaluate-rhyme -- --from-year=1881 --to-year=1920`.
+med `node tools/poetic-form/evaluate-rhyme.js --from-year=1881 --to-year=1920`.
 
 Et lille sæt redaktionelt bekræftede positive og negative rimpar i træneren
 fungerer som ankre for sjældne historiske rim. De er også dækket af

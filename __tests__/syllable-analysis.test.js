@@ -5,12 +5,12 @@ import {
   analyzeSyllables,
   estimateLine,
   estimateWord,
-} from '../tools/syllable-analysis.js';
+} from '../tools/poetic-form/syllable-analysis.js';
 import {
   analyzeWorkXml,
   parseArgs,
   run,
-} from '../tools/analyse-syllables.js';
+} from '../tools/poetic-form/analyse-syllables.js';
 
 const elevenSyllables = 'Skoven vågner under månens stille lys';
 const tenSyllables = 'Skoven vågner under månens stille';

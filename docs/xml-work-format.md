@@ -288,8 +288,56 @@ historiske id-formater fortsat kan bevares uændret.
 - `<source>`: kilde for teksten.
 - `<dates>`: datoer for teksten.
 - `<metre>`: en eller flere automatiske, reproducerbare metriske analyser.
+- `<form>`: en eller flere automatiske, reproducerbare klassifikationer af
+  poetisk form.
 - `<structure>`: den observerede, reproducerbare strofe- og linjestruktur.
 - `<syllables>`: en eller flere automatiske analyser af digtets stavelsesmønster.
+
+### Automatisk formklassifikation
+
+Formklassifikatoren kombinerer de uafhængige analyser af struktur, rim, metrik
+og stavelsesantal. Den genkender sonetter samt petrarcanske og shakespeareske
+undertyper, terza rima, ottava rima, rime royal, balladestrofer, distika,
+quatrains, blankvers og knittelvers:
+
+```xml
+<form>
+  <analysis pattern="sonnet" confidence="0.99"/>
+  <analysis pattern="petrarchan-sonnet" confidence="0.96"/>
+</form>
+```
+
+Fjorten linjer er et stærkt, men ikke tilstrækkeligt signal. Manglende
+strofegrænser sænker sikkerheden uden automatisk at diskvalificere digtet, og
+undertypen udelades, når kun den overordnede form er sikker. Eksisterende
+`<form>` betragtes som manuelt kurateret og overskrives aldrig.
+
+De specifikke rimformer kræver deres karakteristiske lokale rimskema og
+strofestruktur. Distikon og quatrain beskriver derimod først og fremmest den
+observerede strofestruktur og kan derfor foreslås uden enderim. Blankvers kræver
+både jambisk pentameter og fravær af systematisk enderim. Knittelvers kræver
+parrim og et sikkert firefodsmål. Rimanalysen klassificerer hver strofe lokalt;
+et terza-rima-gæt kan derfor genkende `ABA`-terzetterne, men ikke i sig selv
+bevise rimkæden mellem to nabostrofer.
+
+Uden `--form` vurderes og gemmes alle sikre former; en balladestrofe kan derfor
+også få den bredere klassifikation `quatrain`. `--form` begrænser både søgning
+og foreslået XML til det valgte mønster.
+
+De understøttede mønsternavne er `sonnet`, `terza-rima`, `ottava-rima`,
+`rime-royal`, `ballad-stanza`, `distich`, `quatrain`, `blank-verse` og
+`knittelvers`.
+
+En samlet, skrivebeskyttet rapport for ét digt-id viser alle delanalyser og den
+resulterende formklassifikation:
+
+```sh
+npm run poetic-form -- oehlen1999062839
+```
+
+De underliggende værktøjer til at skrive, afgrænse, evaluere og træne
+analyserne køres direkte med Node og er dokumenteret i
+[`tools/poetic-form/README.md`](../tools/poetic-form/README.md).
 
 ### Automatisk metrisk analyse
 
@@ -306,14 +354,6 @@ Et kvalificeret automatisk gæt på digtets grundmeter gemmes i tekstens `<head>
 confidence først. Flere analyser bruges kun, når en rytmisk og en
 stavelsesbaseret beskrivelse er kompatible. Eksisterende `<metre>` betragtes som
 manuelt kurateret og overskrives ikke af analyseværktøjet.
-
-Kør analysen på hele korpus eller et udvalg med:
-
-```sh
-npm run analyse-metre -- --dry-run
-npm run analyse-metre -- --poet oehlenschlaeger --debug
-npm run analyse-metre -- --work oehlenschlaeger/1803.xml --min-confidence 0.80
-```
 
 `--only-missing` kan angives eksplicit; værktøjet springer af hensyn til manuelt
 kuraterede oplysninger altid tekster med eksisterende `<metre>` over. Den
@@ -337,14 +377,6 @@ Tomme linjer og semantiske speciallinjer som `<nonum>`, `<versenum>`, `<hr>` og
 `<metrik>` afgrænser strofer, men tæller ikke som verslinjer. Inline noter,
 linjenumre og sideskift tæller heller ikke som selvstændige verslinjer.
 
-Kør analysen på hele korpus eller ét værk med:
-
-```sh
-npm run analyse-structure -- --dry-run
-npm run analyse-structure -- --work oehlenschlaeger/1803.xml --debug
-npm run analyse-structure -- --only-missing
-```
-
 Analysen er deterministisk for korrekt XML og får derfor `confidence="1.0"`.
 Uden `--only-missing` erstattes en eksisterende strukturanalyse med den aktuelt
 observerede struktur. `--dry-run` viser antallet af foreslåede analyser uden at
@@ -365,15 +397,6 @@ Analysen kombinerer et lille udtaleleksikon med regler for moderne og historisk
 dansk og en fallback for ukendte ord. Confidence afspejler linjernes
 regelmæssighed, udtaleusikkerheden og antallet af analyserede linjer. Naboantal
 kan begge gemmes, når fx maskuline og feminine linjeudgange gør dem plausible.
-
-Kør værktøjet direkte eller via npm:
-
-```sh
-node tools/analyse-syllables.js --dry-run
-node tools/analyse-syllables.js --poet oehlenschlaeger --debug
-node tools/analyse-syllables.js --work oehlenschlaeger/1803.xml --min-confidence 0.80
-npm run analyse-syllables -- --only-missing
-```
 
 Værktøjet overskriver aldrig et eksisterende `<syllables>`-element og springer
 tekster over, når tekstens eller digterens metadata angiver et andet sprog end

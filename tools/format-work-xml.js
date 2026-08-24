@@ -29,6 +29,7 @@ const metadataFields = [
   'breadcrumbtitle',
   'dates',
   'firstline',
+  'form',
   'indextitle',
   'keywords',
   'linktitle',
@@ -92,7 +93,7 @@ const splitAdjacentMetadataFields = xml =>
 
 const splitAnalysisMetadata = xml => xml
   .replace(
-    /(<(?:metre|rhyme|structure|syllables)(?:[ \t][^<>]*)?>)(?!\r?\n)/g,
+    /(<(?:form|metre|rhyme|structure|syllables)(?:[ \t][^<>]*)?>)(?!\r?\n)/g,
     '$1\n',
   )
   .replace(/(<analysis\b[^<>]*\/>)(?!\r?\n)/g, '$1\n');
