@@ -148,6 +148,17 @@ describe('kalliopework RELAX NG schema', () => {
     expect(() => validate(xml)).not.toThrow();
   });
 
+  it('accepts one or more syllable analyses with bounded confidence', () => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Digte</title><year>1900</year></workhead>
+        <workbody><text><head><syllables><analysis pattern="decasyllabic" confidence="0.94"/><analysis pattern="hendecasyllabic" confidence="0.81"/></syllables></head></text></workbody>
+      </kalliopework>
+    `;
+
+    expect(() => validate(xml)).not.toThrow();
+  });
+
   it.each(['4--4', '0-4', 'ABBA'])('rejects invalid structure pattern %s', pattern => {
     const xml = `
       <kalliopework id="1900" author="digter">
@@ -164,6 +175,17 @@ describe('kalliopework RELAX NG schema', () => {
       <kalliopework id="1900" author="digter">
         <workhead><title>Digte</title><year>1900</year></workhead>
         <workbody><text><head><structure><analysis pattern="4-4" confidence="${confidence}"/></structure></head></text></workbody>
+      </kalliopework>
+    `;
+
+    expect(() => validate(xml)).toThrow();
+  });
+
+  it.each(['-0.01', '1.01', 'sikker'])('rejects invalid syllable confidence %s', confidence => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Digte</title><year>1900</year></workhead>
+        <workbody><text><head><syllables><analysis pattern="hendecasyllabic" confidence="${confidence}"/></syllables></head></text></workbody>
       </kalliopework>
     `;
 

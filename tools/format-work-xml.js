@@ -43,6 +43,7 @@ const metadataFields = [
   'structure',
   'subtitle',
   'suptitle',
+  'syllables',
   'title',
   'toctitle',
   'year',
@@ -89,16 +90,11 @@ const addSectionSpacing = xml =>
 const splitAdjacentMetadataFields = xml =>
   xml.replace(adjacentMetadataFieldsPattern, '$1\n');
 
-const splitMetreAnalyses = xml => xml
-  .replace(/(<metre(?:[ \t][^<>]*)?>)(?!\r?\n)/g, '$1\n')
-  .replace(/(<analysis\b[^<>]*\/>)(?!\r?\n)/g, '$1\n');
-
-const splitRhymeAnalyses = xml => xml
-  .replace(/(<rhyme(?:[ \t][^<>]*)?>)(?!\r?\n)/g, '$1\n')
-  .replace(/(<analysis\b[^<>]*\/>)(?!\r?\n)/g, '$1\n');
-
-const splitStructureAnalysis = xml => xml
-  .replace(/(<structure(?:[ \t][^<>]*)?>)(?!\r?\n)/g, '$1\n')
+const splitAnalysisMetadata = xml => xml
+  .replace(
+    /(<(?:metre|rhyme|structure|syllables)(?:[ \t][^<>]*)?>)(?!\r?\n)/g,
+    '$1\n',
+  )
   .replace(/(<analysis\b[^<>]*\/>)(?!\r?\n)/g, '$1\n');
 
 const nonumWrapperNames = [
@@ -220,11 +216,7 @@ export const formatWorkXml = xml => {
   const withSplitMetadata = splitAdjacentMetadataFields(
     withoutStructuralIndentation,
   );
-  const withPoetryLines = splitPoetryLines(
-    splitStructureAnalysis(
-      splitRhymeAnalyses(splitMetreAnalyses(withSplitMetadata)),
-    ),
-  );
+  const withPoetryLines = splitPoetryLines(splitAnalysisMetadata(withSplitMetadata));
   const withMetadataIndentation = indentMetadata(withPoetryLines);
   return addSectionSpacing(addTextSpacing(withMetadataIndentation))
     .trimEnd() + '\n';

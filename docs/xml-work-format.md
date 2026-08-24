@@ -289,6 +289,7 @@ historiske id-formater fortsat kan bevares uændret.
 - `<dates>`: datoer for teksten.
 - `<metre>`: en eller flere automatiske, reproducerbare metriske analyser.
 - `<structure>`: den observerede, reproducerbare strofe- og linjestruktur.
+- `<syllables>`: en eller flere automatiske analyser af digtets stavelsesmønster.
 
 ### Automatisk metrisk analyse
 
@@ -348,6 +349,36 @@ Analysen er deterministisk for korrekt XML og får derfor `confidence="1.0"`.
 Uden `--only-missing` erstattes en eksisterende strukturanalyse med den aktuelt
 observerede struktur. `--dry-run` viser antallet af foreslåede analyser uden at
 ændre værkfilerne.
+
+### Automatisk stavelsesanalyse
+
+Et gennemgående stavelsestal gemmes uafhængigt af den rytmiske analyse:
+
+```xml
+<syllables>
+  <analysis pattern="decasyllabic" confidence="0.94"/>
+  <analysis pattern="hendecasyllabic" confidence="0.81"/>
+</syllables>
+```
+
+Analysen kombinerer et lille udtaleleksikon med regler for moderne og historisk
+dansk og en fallback for ukendte ord. Confidence afspejler linjernes
+regelmæssighed, udtaleusikkerheden og antallet af analyserede linjer. Naboantal
+kan begge gemmes, når fx maskuline og feminine linjeudgange gør dem plausible.
+
+Kør værktøjet direkte eller via npm:
+
+```sh
+node tools/analyse-syllables.js --dry-run
+node tools/analyse-syllables.js --poet oehlenschlaeger --debug
+node tools/analyse-syllables.js --work oehlenschlaeger/1803.xml --min-confidence 0.80
+npm run analyse-syllables -- --only-missing
+```
+
+Værktøjet overskriver aldrig et eksisterende `<syllables>`-element og springer
+tekster over, når tekstens eller digterens metadata angiver et andet sprog end
+`da`. `--debug` viser stavelsestallet for hver linje og markerer ord, der er
+behandlet med de mindre sikre historiske regler eller elisionsregler.
 
 Titel-fallbacks:
 
