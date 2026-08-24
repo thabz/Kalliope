@@ -23,6 +23,7 @@
     "test-ci": "jest",
     "test2": "next test",
     "new-text-id": "node tools/new-text-id.js",
+    "analyse-syllables": "node tools/analyse-syllables.js",
     "analyse-metre": "node tools/analyse-metre.js",
     "analyse-rhyme": "node tools/analyse-rhyme.js",
     "analyse-structure": "node tools/analyse-structure.js",
