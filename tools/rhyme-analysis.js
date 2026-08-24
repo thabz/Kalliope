@@ -167,13 +167,16 @@ const assistWithPoemConsensus = (stanzas, prepared, rawResults, model) => {
     const stanzaLength = stanzas[indexes[0]].length;
     for (let left = 0; left < stanzaLength; left += 1) {
       for (let right = left + 1; right < stanzaLength; right += 1) {
-        const matches = indexes.filter(index => {
-          const labels = rawResults[index].labels;
-          return labels[left] !== 'X' && labels[left] === labels[right];
-        }).length;
-        const support = matches / indexes.length;
-        if (matches < 2 || support < requiredSupport) continue;
         indexes.forEach(index => {
+          const labels = rawResults[index].labels;
+          if (labels[left] !== 'X' && labels[left] === labels[right]) return;
+          const otherIndexes = indexes.filter(otherIndex => otherIndex !== index);
+          const matches = otherIndexes.filter(otherIndex => {
+            const otherLabels = rawResults[otherIndex].labels;
+            return otherLabels[left] !== 'X' && otherLabels[left] === otherLabels[right];
+          }).length;
+          const support = matches / otherIndexes.length;
+          if (matches < 2 || support < requiredSupport) return;
           const local = matrices[index][left][right];
           if (local == null || local.score >= threshold || local.score < floor) return;
           const score = threshold + 0.001 + Math.min(0.009, support * 0.01);

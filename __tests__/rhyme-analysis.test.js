@@ -1,6 +1,6 @@
 import { analyzeRhyme } from '../tools/rhyme-analysis.js';
 import { analyzeWorkXml } from '../tools/analyse-rhyme.js';
-import { rhymePairKey } from '../tools/rhyme-model.js';
+import { rhymePairKey, sequenceRuleKey } from '../tools/rhyme-model.js';
 
 describe('rhyme analysis', () => {
   test('finds rhyme relations and resets labels for each stanza', () => {
@@ -67,6 +67,7 @@ describe('rhyme analysis', () => {
 
   test('uses repeated stanza positions to help a borderline rhyme', () => {
     const model = {
+      consensusSupport: 0.65,
       operations: {},
       pairs: { [rhymePairKey('og', 'aag')]: 0.7 },
       threshold: 0.76,
@@ -74,12 +75,12 @@ describe('rhyme analysis', () => {
     const result = analyzeRhyme([
       ['land', 'rose', 'strand', 'rose'],
       ['sind', 'måne', 'vind', 'måne'],
-      ['hest', 'gren', 'fest', 'gren'],
+      ['hest', 'hest', 'gren', 'gren'],
       ['Tog', 'havn', 'Laag', 'havn'],
     ], { minConfidence: 0, model });
 
-    expect(result.rawPattern).toBe('ABAB ABAB ABAB XAXA');
-    expect(result.pattern).toBe('ABAB ABAB ABAB ABAB');
+    expect(result.rawPattern).toBe('ABAB ABAB AABB XAXA');
+    expect(result.pattern).toBe('ABAB ABAB AABB ABAB');
     expect(result.consensusAdjustedPairs).toBe(1);
     expect(result.endings[12].method).toBe('poem-consensus');
   });
@@ -99,6 +100,33 @@ describe('rhyme analysis', () => {
 
     expect(result.pattern).toBe('ABAB ABAB ABAB AABB');
     expect(result.consensusAdjustedPairs).toBe(2);
+  });
+
+  test('applies a learned contextual ending sequence', () => {
+    const model = {
+      operations: {},
+      pairs: {},
+      sequences: { [sequenceRuleKey('esk', 'æsk')]: 0.9 },
+      threshold: 0.76,
+    };
+    const result = analyzeRhyme([['pittoresk', 'Græsk']], { minConfidence: 0, model });
+
+    expect(result.pattern).toBe('AA');
+    expect(result.endings[0].method).toBe('corpus-sequence');
+  });
+
+  test('uses the classifier with its calibrated decision threshold', () => {
+    const model = {
+      classifier: { threshold: 0.8, weights: [2, 0, 0, 0, 0, 0, 0, 0] },
+      operations: {},
+      pairs: {},
+      sequences: {},
+      threshold: 0.76,
+    };
+    const result = analyzeRhyme([['måne', 'hest']], { minConfidence: 0, model });
+
+    expect(result.pattern).toBe('AA');
+    expect(result.endings[0].method).toBe('corpus-classifier');
   });
 
   test('normalizes historical g/t and aaer spellings', () => {

@@ -9,8 +9,10 @@ import { selectRhymeTrainingPoems, summarizeRhymeTrainingPoems } from './rhyme-c
 import {
   bestCandidatePair,
   endingCandidates,
+  rhymeFeatureVector,
   rhymeModelFilename,
   rhymePairKey,
+  sequenceRuleKey,
 } from './rhyme-model.js';
 
 const increment = (map, key, amount = 1) => map.set(key, (map.get(key) ?? 0) + amount);
@@ -33,12 +35,19 @@ const verifiedNonRhymes = [
   ['luer', 'banker'],
 ];
 
-const modalPattern = patterns => {
+const modalPattern = (patterns, minShare = 0.6) => {
   const counts = new Map();
   patterns.forEach(pattern => increment(counts, pattern));
   const ranked = [...counts].sort((left, right) => right[1] - left[1] || left[0].localeCompare(right[0]));
   if (ranked.length === 0 || (ranked[1]?.[1] ?? 0) === ranked[0][1]) return null;
-  return ranked[0][0];
+  const share = ranked[0][1] / patterns.length;
+  if (share < minShare) return null;
+  return {
+    deviations: patterns.length - ranked[0][1],
+    hits: ranked[0][1],
+    pattern: ranked[0][0],
+    share,
+  };
 };
 
 const alignmentOperations = (left, right) => {
@@ -83,6 +92,8 @@ const collectExamples = (poems, model = null) => {
   const negativePairs = new Map();
   const positiveOperations = new Map();
   const negativeOperations = new Map();
+  const positiveSequences = new Map();
+  const negativeSequences = new Map();
   let labelledPoems = 0;
   poems.forEach(poem => {
     const analysis = analyzeRhyme(poem.stanzas, {
@@ -93,41 +104,54 @@ const collectExamples = (poems, model = null) => {
     const patterns = analysis.stanzaPatterns;
     const mode = modalPattern(patterns);
     if (mode == null) return;
+    const modeLabels = analysis.stanzaAnalyses[patterns.indexOf(mode.pattern)].labels;
     labelledPoems += 1;
-    poem.stanzas.forEach(stanza => {
+    const deviationWeight = 1 / Math.max(1, mode.deviations);
+    poem.stanzas.forEach((stanza, stanzaIndex) => {
+      const stanzaWeight = patterns[stanzaIndex] === mode.pattern
+        ? 1
+        : 1 + deviationWeight;
       const candidates = stanza.map(endingCandidates);
       for (let left = 0; left < stanza.length; left += 1) {
         for (let right = left + 1; right < stanza.length; right += 1) {
-          if (mode[left] === 'X' || mode[right] === 'X') continue;
-          const sameClass = mode[left] === mode[right];
+          if (modeLabels[left] === 'X' || modeLabels[right] === 'X') continue;
+          const sameClass = modeLabels[left] === modeLabels[right];
           const best = bestCandidatePair(candidates[left], candidates[right], null);
           if (best == null) continue;
           const key = rhymePairKey(best.left.tail, best.right.tail);
           const pairMap = sameClass ? positivePairs : negativePairs;
           const operationMap = sameClass ? positiveOperations : negativeOperations;
-          increment(pairMap, key);
+          const sequenceMap = sameClass ? positiveSequences : negativeSequences;
+          increment(pairMap, key, stanzaWeight);
           alignmentOperations(best.left.tail, best.right.tail).forEach(operation =>
-            increment(operationMap, operation));
+            increment(operationMap, operation, stanzaWeight));
+          const sequence = sequenceRuleKey(best.left.tail, best.right.tail);
+          if (sequence != null) increment(sequenceMap, sequence, stanzaWeight);
         }
       }
     });
   });
-  [[verifiedRhymes, positivePairs, positiveOperations],
-    [verifiedNonRhymes, negativePairs, negativeOperations]].forEach(([pairs, pairMap, operationMap]) => {
-    pairs.forEach(([left, right]) => {
-      const best = bestCandidatePair(endingCandidates(left), endingCandidates(right), null);
-      if (best == null) return;
-      increment(pairMap, rhymePairKey(best.left.tail, best.right.tail), 20);
-      alignmentOperations(best.left.tail, best.right.tail).forEach(operation =>
-        increment(operationMap, operation, 20));
+  [[verifiedRhymes, positivePairs, positiveOperations, positiveSequences],
+    [verifiedNonRhymes, negativePairs, negativeOperations, negativeSequences]]
+    .forEach(([pairs, pairMap, operationMap, sequenceMap]) => {
+      pairs.forEach(([left, right]) => {
+        const best = bestCandidatePair(endingCandidates(left), endingCandidates(right), null);
+        if (best == null) return;
+        increment(pairMap, rhymePairKey(best.left.tail, best.right.tail), 20);
+        alignmentOperations(best.left.tail, best.right.tail).forEach(operation =>
+          increment(operationMap, operation, 20));
+        const sequence = sequenceRuleKey(best.left.tail, best.right.tail);
+        if (sequence != null) increment(sequenceMap, sequence, 20);
+      });
     });
-  });
   return {
     labelledPoems,
     negativeOperations,
     negativePairs,
     positiveOperations,
     positivePairs,
+    positiveSequences,
+    negativeSequences,
   };
 };
 
@@ -161,6 +185,86 @@ const trainedOperations = examples => Object.fromEntries([...examples.positiveOp
   })
   .sort(([left], [right]) => left.localeCompare(right)));
 
+const trainedSequences = examples => Object.fromEntries([...examples.positiveSequences]
+  .flatMap(([sequence, positive]) => {
+    const negative = examples.negativeSequences.get(sequence) ?? 0;
+    const reliability = positive / Math.max(1, positive + negative);
+    if (positive < 1.5 || reliability < 0.8) return [];
+    const support = Math.min(1, Math.log2(positive + 1) / 4);
+    const score = Math.min(0.96, 0.73 + reliability * 0.15 + support * 0.08);
+    return [[sequence, Math.round(score * 1000) / 1000]];
+  })
+  .sort(([left], [right]) => left.localeCompare(right)));
+
+const classifierFeatureNames = [
+  'bias', 'baseSimilarity', 'weightedSimilarity', 'sequenceScore',
+  'lengthSimilarity', 'sameNucleus', 'sameFinal', 'sharedSuffix',
+];
+
+const trainClassifier = (examples, model) => {
+  const keys = new Set([...examples.positivePairs.keys(), ...examples.negativePairs.keys()]);
+  const rankedSamples = [...keys].map(key => {
+    const [left, right] = key.split('\u0000');
+    const positive = examples.positivePairs.get(key) ?? 0;
+    const negative = examples.negativePairs.get(key) ?? 0;
+    const total = positive + negative;
+    return {
+      features: rhymeFeatureVector(left, right, model),
+      importance: Math.log2(total + 1),
+      target: positive / Math.max(1, total),
+    };
+  }).sort((left, right) => right.importance - left.importance);
+  const samples = [
+    ...rankedSamples.filter(sample => sample.target >= 0.5).slice(0, 6000),
+    ...rankedSamples.filter(sample => sample.target < 0.5).slice(0, 6000),
+  ];
+  let weights = [-4, 1.5, 2, 1.5, 0.2, 0.5, 0.3, 0.5];
+  const totalImportance = samples.reduce((sum, sample) => sum + sample.importance, 0);
+  for (let epoch = 0; epoch < 80; epoch += 1) {
+    const gradient = Array(weights.length).fill(0);
+    samples.forEach(sample => {
+      const linear = sample.features.reduce((sum, feature, index) => sum + feature * weights[index], 0);
+      const prediction = 1 / (1 + Math.exp(-linear));
+      sample.features.forEach((feature, index) => {
+        gradient[index] += (prediction - sample.target) * feature * sample.importance;
+      });
+    });
+    const learningRate = 0.35 / (1 + epoch / 40);
+    weights = weights.map((weight, index) => weight - learningRate *
+      (gradient[index] / Math.max(1, totalImportance) + (index === 0 ? 0 : weight * 0.002)));
+  }
+  const scored = samples.map(sample => {
+    const linear = sample.features.reduce((sum, feature, index) => sum + feature * weights[index], 0);
+    return { ...sample, probability: 1 / (1 + Math.exp(-linear)) };
+  });
+  let bestThreshold = { precision: 1, recall: 0, value: 0.95 };
+  for (let threshold = 0.8; threshold <= 0.95; threshold += 0.01) {
+    let truePositive = 0;
+    let falsePositive = 0;
+    let falseNegative = 0;
+    scored.forEach(sample => {
+      const positive = sample.importance * sample.target;
+      const negative = sample.importance * (1 - sample.target);
+      if (sample.probability >= threshold) {
+        truePositive += positive;
+        falsePositive += negative;
+      } else falseNegative += positive;
+    });
+    const precision = truePositive / Math.max(1, truePositive + falsePositive);
+    const recall = truePositive / Math.max(1, truePositive + falseNegative);
+    if (precision >= 0.95 && recall > bestThreshold.recall) {
+      bestThreshold = { precision, recall, value: threshold };
+    }
+  }
+  return {
+    features: classifierFeatureNames,
+    precision: Math.round(bestThreshold.precision * 10000) / 10000,
+    recall: Math.round(bestThreshold.recall * 10000) / 10000,
+    threshold: Math.round(bestThreshold.value * 100) / 100,
+    weights: weights.map(weight => Math.round(weight * 10000) / 10000),
+  };
+};
+
 const trainIterations = poems => {
   let model = null;
   let previousFingerprint = null;
@@ -168,11 +272,14 @@ const trainIterations = poems => {
   let iterations = 0;
   for (let iteration = 1; iteration <= 10; iteration += 1) {
     const examples = collectExamples(poems, model);
+    const operations = trainedOperations(examples);
+    const sequences = trainedSequences(examples);
     const nextModel = {
       consensusFloor: 0.61,
       consensusSupport: 0.6,
-      operations: trainedOperations(examples),
+      operations,
       pairs: trainedPairs(examples),
+      sequences,
       threshold: 0.76,
     };
     const fingerprint = crypto.createHash('sha256')
@@ -184,7 +291,9 @@ const trainIterations = poems => {
     if (fingerprint === previousFingerprint) break;
     previousFingerprint = fingerprint;
   }
-  return { ...model, iterations, labelledPoems };
+  const finalExamples = collectExamples(poems, model);
+  const classifier = trainClassifier(finalExamples, model);
+  return { ...model, classifier, iterations, labelledPoems };
 };
 
 const scorePoems = (poems, model) => {
@@ -235,13 +344,14 @@ export const trainRhymeModel = (rootDir = process.cwd()) => {
   const validation = scorePoems(validationPoems, developmentModel);
   const model = trainIterations(poems);
   return {
-    format: 1,
+    format: 2,
     corpus: {
       ...summary,
       fromYear: 1820,
       toYear: 1880,
-      minStanzas: 9,
+      minStanzas: 5,
       minLinesPerStanza: 4,
+      minModalShare: 0.6,
       sha256: corpusHash.digest('hex'),
     },
     developmentPoems: developmentPoems.length,
@@ -271,6 +381,8 @@ if (process.argv[1] != null && fileURLToPath(import.meta.url) === process.argv[1
     iterations: model.iterations,
     operations: Object.keys(model.operations).length,
     pairs: Object.keys(model.pairs).length,
+    sequences: Object.keys(model.sequences).length,
+    classifier: model.classifier,
     output: path.relative(process.cwd(), rhymeModelFilename),
   }, null, 2));
 }

@@ -40,7 +40,7 @@ const publicationYear = document => {
 export const selectRhymeTrainingPoems = (rootDir, {
   fromYear = 1820,
   toYear = 1880,
-  minStanzas = 9,
+  minStanzas = 5,
   minLinesPerStanza = 4,
 } = {}) => {
   const serializer = new XMLSerializer();

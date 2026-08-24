@@ -8,18 +8,20 @@ const poem = (id, stanzas, attributes = '') =>
   `<text id="${id}"${attributes}><head/><body><poetry>${stanzas}</poetry></body></text>`;
 
 describe('rhyme corpus', () => {
-  test('selects poems in the year range with nine equally long stanzas', () => {
+  test('selects poems in the year range with five equally long stanzas', () => {
     const root = fs.mkdtempSync(path.join(os.tmpdir(), 'kalliope-rhyme-corpus-'));
     const directory = path.join(root, 'fdirs', 'testpoet');
     fs.mkdirSync(directory, { recursive: true });
     const validStanza = 'En rose\nEn rand\nEn rose\nEt land';
-    const invalidStanza = 'En rose\nEn rand\nEt land';
+    const shortStanza = 'En rose\nEn rand\nEt land';
+    const mixedStanza = `${validStanza}\nEn måne`;
     fs.writeFileSync(path.join(directory, 'info.xml'),
       '<person id="testpoet" country="gb" lang="en" type="poet"/>');
     const xml = `<kalliopework id="1850" author="testpoet"><workhead><year>1850</year></workhead><workbody>
-${poem('foreign', Array.from({ length: 9 }, () => validStanza).join('\n\n'))}
-${poem('valid', Array.from({ length: 9 }, () => validStanza).join('\n\n'), ' lang="da"')}
-${poem('invalid', Array.from({ length: 9 }, () => invalidStanza).join('\n\n'))}
+${poem('foreign', Array.from({ length: 5 }, () => validStanza).join('\n\n'))}
+${poem('valid', Array.from({ length: 5 }, () => validStanza).join('\n\n'), ' lang="da"')}
+${poem('short', Array.from({ length: 5 }, () => shortStanza).join('\n\n'))}
+${poem('mixed', [...Array.from({ length: 4 }, () => validStanza), mixedStanza].join('\n\n'), ' lang="da"')}
 </workbody></kalliopework>`;
     fs.writeFileSync(path.join(directory, '1850.xml'), xml);
 
@@ -27,7 +29,7 @@ ${poem('invalid', Array.from({ length: 9 }, () => invalidStanza).join('\n\n'))}
 
     expect(selected.map(candidate => candidate.id)).toEqual(['valid']);
     expect(summarizeRhymeTrainingPoems(selected)).toEqual({
-      poems: 1, works: 1, poets: 1, stanzas: 9, lines: 36,
+      poems: 1, works: 1, poets: 1, stanzas: 5, lines: 20,
     });
   });
 

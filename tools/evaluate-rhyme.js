@@ -14,8 +14,14 @@ const modalPattern = patterns => {
   };
 };
 
-export const evaluateRhymeCorpus = (rootDir = process.cwd(), { bootstrap = false } = {}) => {
-  const poems = selectRhymeTrainingPoems(rootDir);
+export const evaluateRhymeCorpus = (rootDir = process.cwd(), {
+  bootstrap = false,
+  fromYear = 1820,
+  minLinesPerStanza = 4,
+  minStanzas = 5,
+  toYear = 1880,
+} = {}) => {
+  const poems = selectRhymeTrainingPoems(rootDir, { fromYear, minLinesPerStanza, minStanzas, toYear });
   const missingPairs = new Map();
   const extraPairs = new Map();
   const details = poems.map(poem => {
@@ -23,14 +29,15 @@ export const evaluateRhymeCorpus = (rootDir = process.cwd(), { bootstrap = false
     const results = analysis.stanzaAnalyses;
     const mode = modalPattern(analysis.stanzaPatterns);
     const rawMode = modalPattern(analysis.rawStanzaPatterns);
+    const modeLabels = analysis.stanzaAnalyses[analysis.stanzaPatterns.indexOf(mode.pattern)].labels;
     const lineCount = poem.stanzas.length * poem.linesPerStanza;
     const unmatched = analysis.stanzaPatterns.reduce((sum, pattern) =>
       sum + (pattern.match(/X/gu) ?? []).length, 0);
     if (mode.ambiguous === false) results.forEach((result, stanzaIndex) => {
       for (let left = 0; left < result.labels.length; left += 1) {
         for (let right = left + 1; right < result.labels.length; right += 1) {
-          if (mode.pattern[left] === 'X' || mode.pattern[right] === 'X') continue;
-          const expected = mode.pattern[left] === mode.pattern[right];
+          if (modeLabels[left] === 'X' || modeLabels[right] === 'X') continue;
+          const expected = modeLabels[left] === modeLabels[right];
           const observed = result.labels[left] !== 'X' && result.labels[left] === result.labels[right];
           if (expected === observed) continue;
           const words = [cleanRhymeWord(poem.stanzas[stanzaIndex][left]),
@@ -50,6 +57,7 @@ export const evaluateRhymeCorpus = (rootDir = process.cwd(), { bootstrap = false
       id: poem.id,
       lineCount,
       mode: mode.pattern,
+      deviations: poem.stanzas.length - mode.hits,
       rawHits: rawMode.hits,
       share: mode.hits / poem.stanzas.length,
       stanzas: poem.stanzas.length,
@@ -67,6 +75,9 @@ export const evaluateRhymeCorpus = (rootDir = process.cwd(), { bootstrap = false
     summary: {
       ...totals,
       ambiguousPoems: details.filter(detail => detail.ambiguous).length,
+      securePoems: details.filter(detail => detail.ambiguous === false && detail.share >= 0.6).length,
+      oneDeviationPoems: details.filter(detail => detail.deviations === 1).length,
+      twoDeviationPoems: details.filter(detail => detail.deviations === 2).length,
       modalAgreement: Math.round(modalHits / Math.max(1, totals.stanzas) * 10000) / 10000,
       rawModalAgreement: Math.round(rawModalHits / Math.max(1, totals.stanzas) * 10000) / 10000,
       consensusAdjustedPairs,
@@ -83,5 +94,15 @@ export const evaluateRhymeCorpus = (rootDir = process.cwd(), { bootstrap = false
 
 if (process.argv[1] != null && fileURLToPath(import.meta.url) === process.argv[1]) {
   const bootstrap = process.argv.includes('--bootstrap');
-  console.log(JSON.stringify(evaluateRhymeCorpus(process.cwd(), { bootstrap }), null, 2));
+  const numberOption = (name, fallback) => {
+    const prefix = `--${name}=`;
+    const value = process.argv.find(argument => argument.startsWith(prefix));
+    return value == null ? fallback : Number(value.slice(prefix.length));
+  };
+  console.log(JSON.stringify(evaluateRhymeCorpus(process.cwd(), {
+    bootstrap,
+    fromYear: numberOption('from-year', 1820),
+    minStanzas: numberOption('min-stanzas', 5),
+    toYear: numberOption('to-year', 1880),
+  }), null, 2));
 }
