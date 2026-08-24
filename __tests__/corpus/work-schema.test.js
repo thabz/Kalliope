@@ -132,6 +132,44 @@ describe('kalliopework RELAX NG schema', () => {
     expect(() => validate(xml)).toThrow();
   });
 
+  it('accepts structure analysis with positive stanza lengths', () => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Digte</title><year>1900</year></workhead>
+        <workbody>
+          <text id="digter1900a">
+            <head><firstline>Første linje</firstline><structure><analysis pattern="4-4-3-3" confidence="1.0"/></structure></head>
+            <body><poetry>Første linje</poetry></body>
+          </text>
+        </workbody>
+      </kalliopework>
+    `;
+
+    expect(() => validate(xml)).not.toThrow();
+  });
+
+  it.each(['4--4', '0-4', 'ABBA'])('rejects invalid structure pattern %s', pattern => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Digte</title><year>1900</year></workhead>
+        <workbody><text><head><structure><analysis pattern="${pattern}" confidence="1"/></structure></head></text></workbody>
+      </kalliopework>
+    `;
+
+    expect(() => validate(xml)).toThrow();
+  });
+
+  it.each(['-0.01', '1.01', 'sikker'])('rejects invalid structure confidence %s', confidence => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Digte</title><year>1900</year></workhead>
+        <workbody><text><head><structure><analysis pattern="4-4" confidence="${confidence}"/></structure></head></text></workbody>
+      </kalliopework>
+    `;
+
+    expect(() => validate(xml)).toThrow();
+  });
+
   it('accepts a page break immediately before a canonical nonum line', () => {
     const xml = poetryWork(
       '<pb n="49" facs="055.jpg"/><nonum><center>2</center></nonum>',

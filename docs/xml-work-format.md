@@ -288,6 +288,7 @@ historiske id-formater fortsat kan bevares uændret.
 - `<source>`: kilde for teksten.
 - `<dates>`: datoer for teksten.
 - `<metre>`: en eller flere automatiske, reproducerbare metriske analyser.
+- `<structure>`: den observerede, reproducerbare strofe- og linjestruktur.
 
 ### Automatisk metrisk analyse
 
@@ -317,6 +318,36 @@ npm run analyse-metre -- --work oehlenschlaeger/1803.xml --min-confidence 0.80
 kuraterede oplysninger altid tekster med eksisterende `<metre>` over. Den
 danske trykheuristik springer desuden tekster over, når tekstens eller digterens
 metadata angiver et andet sprog end `da`.
+
+### Automatisk strukturanalyse
+
+Den observerede strofe- og linjestruktur gemmes i tekstens `<head>`:
+
+```xml
+<structure>
+  <analysis pattern="4-4-3-3" confidence="1.0"/>
+</structure>
+```
+
+Tallene er antallet af egentlige verslinjer i hver eksplicit afgrænset strofe.
+Et digt med 14 sammenhængende linjer får derfor mønsteret `14`; værktøjet
+gætter ikke strofegrænser for at få teksten til at passe til en kendt versform.
+Tomme linjer og semantiske speciallinjer som `<nonum>`, `<versenum>`, `<hr>` og
+`<metrik>` afgrænser strofer, men tæller ikke som verslinjer. Inline noter,
+linjenumre og sideskift tæller heller ikke som selvstændige verslinjer.
+
+Kør analysen på hele korpus eller ét værk med:
+
+```sh
+npm run analyse-structure -- --dry-run
+npm run analyse-structure -- --work oehlenschlaeger/1803.xml --debug
+npm run analyse-structure -- --only-missing
+```
+
+Analysen er deterministisk for korrekt XML og får derfor `confidence="1.0"`.
+Uden `--only-missing` erstattes en eksisterende strukturanalyse med den aktuelt
+observerede struktur. `--dry-run` viser antallet af foreslåede analyser uden at
+ændre værkfilerne.
 
 Titel-fallbacks:
 
