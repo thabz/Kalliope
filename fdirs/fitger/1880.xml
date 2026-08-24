@@ -10,6 +10,9 @@
 <head>
   <title>Der Tod</title>
   <firstline>Unter den Freunden der erdumwohnenden</firstline>
+  <rhyme>
+    <analysis pattern="AXAABBCDCD EFEEFXAGAG EXEEHHAIAI AJAAJJEKEK EXEEXXELEL AXAAMMANAN CXCCOOEPEP" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -101,6 +104,9 @@ Lieblicher macht.
   <notes>
     <note>Cf. <xref bible="bibelnehemias04"/></note>
   </notes>
+  <rhyme>
+    <analysis pattern="XXAAXXXXBBCCDDXX BBEEFFBB" confidence="0.88"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -137,6 +143,9 @@ Und mischen mit Blute den Mörtel noch heut.
 <head>
   <title>Die schöne Lore</title>
   <firstline>Ihr lieben Spielleut' stellt das Fiedeln ein</firstline>
+  <rhyme>
+    <analysis pattern="AAA BBB CCC DDD EEE AAA" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -171,6 +180,9 @@ Die schöne Lore liegt im Todtenschrein.
 <head>
   <title>Waldmärchen</title>
   <firstline>War einst ein jung, jung Königssohn</firstline>
+  <rhyme>
+    <analysis pattern="ABXX ACXC XDXD AEBE XXCX XFXF" confidence="0.85"/>
+  </rhyme>
 </head>
 <body>
 <poetry>

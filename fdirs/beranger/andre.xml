@@ -9,6 +9,9 @@
 <head>
   <title>Mon Habit</title>
   <firstline>Sois-moi fidèle, ô pauvre habit que j'aime !</firstline>
+  <rhyme>
+    <analysis pattern="ABABACAD AEAEADAD AFAFADAD AXAXACAD GHGHADAD" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -69,6 +72,9 @@ Mon vieil ami, ne nous séparons pas.
     <note>Janvier 1820.</note>
   </notes>
   <firstline>Berger, tu dis que notre étoile</firstline>
+  <rhyme>
+    <analysis pattern="ABABAXAC ADADAEAC ADADAXAC AXAXAEAC AFAFAEAC GFGFAEAC AHAHAEAC" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -147,6 +153,9 @@ Qui file, file, et disparaît.
   <notes>
     <note>1816.</note>
   </notes>
+  <rhyme>
+    <analysis pattern="ABABACACC AXAXACACC AXAXACACC DXDCACACC AXAXACACC AEAEACACC" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -219,6 +228,9 @@ En souriant remontez dans les cieux.
   <firstline>Je la voyais de ma fenêtre</firstline>
   <source href="https://fr.wikisource.org/wiki/Œuvres_complètes_de_Béranger/Maudit_Printemps"><i>Œuvres complètes de Béranger</i>, H. Fournier (red.), 1839, bd. 2, pp. 242-243.</source>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="AXAXABAB ACACABAB AXAXABAB AXAXABAB" confidence="0.93"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -270,6 +282,9 @@ Maudit printemps ! reviendras-tu toujours ?
     <!-- TODO: Find følgende illustration. Le Violon brise (The broken violin), illustration for a poem by Pierre-Jean de Beranger (1780-1857), drawing by Gustave Dore (1832-1883), illustration from Le Musee Francais, n 45, September 1858. -->
   </notes>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAC ADAD AEAE AFAF AGAG AHAH ABAB AXAD IFIF AHAX AJAJ ACAC ABAB" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -347,6 +362,9 @@ Demain nous aurons du pain noir.
   <firstline>Il était un roi d’Yvetot</firstline>
   <source pages="1-3"><i>Œuvres complètes de Béranger</i>, H. Fournier (red.), 1839, bd. 1.</source>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABXBCCCDXE FBFBGGGDXE HBHBXAXDXE IBIBJJXDXE KBKBEEEDXE XBXBXLLDXE" confidence="0.92"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -428,6 +446,9 @@ Quel bon petit roi c’était là !
   </subtitle>
   <firstline>Je sais fort bien que sur moi l’on babille</firstline>
   <source href="https://fr.wikisource.org/wiki/Œuvres_complètes_de_Béranger/La_Bonne_Fille,_ou_les_Mœurs_du_temps"><i>Œuvres complètes de Béranger</i>, H. Fournier, 1839, bd. 1, pp. 31-33.</source>
+  <rhyme>
+    <analysis pattern="ABBBAXCA ACCCADDA AEXEAFFA AGGGAHHA ACCCAEXA ABBBAIIA AJJJAXXA AKKKALLA" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -511,6 +532,9 @@ Moi je m’en ris, tant je suis bonne fille.
   <title>La Chatte</title>
   <firstline>Tu réveilles ta maîtresse</firstline>
   <source href="https://fr.wikisource.org/wiki/Œuvres_complètes_de_Béranger/La_Chatte"><i>Œuvres complètes de Béranger</i>, H. Fournier, 1839, bd. 1, pp. 135-136.</source>
+  <rhyme>
+    <analysis pattern="ABABAXAC ADADACAC ADADACAC AEAEACAC AFAFACAC" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -571,6 +595,9 @@ Mia-mia-ou ! trouve un matou.
   </subtitle>
   <firstline>Saluons de maintes rasades</firstline>
   <source href="https://fr.wikisource.org/wiki/Œuvres_complètes_de_Béranger/Le_Docteur_et_ses_Malades"><i>Œuvres complètes de Béranger</i>, H. Fournier, 1839, bd. 1, pp. 176-177.</source>
+  <rhyme>
+    <analysis pattern="ABABCDCD EFEFADAD CGCGCDCD CHCHADAD" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -618,6 +645,9 @@ Laissez-nous fêter notre ami.
   <title>Jeannette</title>
   <firstline>Fi des coquettes maniérées</firstline>
   <source href="https://fr.wikisource.org/wiki/Œuvres complètes_de_Béranger/Jeannette"><i>Œuvres complètes de Béranger</i>, H. Fournier, 1839, bd. 1, pp. 186-188.</source>
+  <rhyme>
+    <analysis pattern="ABAB CCDCDCD ABAB CCECECE ABAB CCFCFCF ABAB CCXCXCX ABAB CCGCGCG ABAB" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -699,6 +729,9 @@ Ma Jeannette, ma Jeanneton.
   <title>Ma République</title>
   <firstline>J’ai pris goût à la république</firstline>
   <source href="https://fr.wikisource.org/wiki/Œuvres_complètes_de_Béranger/Ma_République"><i>Œuvres complètes de Béranger</i>, H. Fournier, 1839, bd. 1, pp. 230-231.</source>
+  <rhyme>
+    <analysis pattern="ABABAXAC ADADAEAC AFAFAEAC AGAGAXAC ADADAXAC" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -755,6 +788,9 @@ C’en est fait de la liberté.
   <title>La Bonne Vieille</title>
   <firstline>Vous vieillirez, ô ma belle maîtresse !</firstline>
   <source href="https://fr.wikisource.org/wiki/Œuvres complètes de Béranger/La_Bonne_Vieille"><i>Œuvres complètes de Béranger</i>, H. Fournier, 1839, bd. 1, pp. 270-271.</source>
+  <rhyme>
+    <analysis pattern="ABABACAC DXDXACAC AEAEACAC AFAFACAC AGAGACAC" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -811,6 +847,9 @@ De votre ami répétez les chansons.
   <title>La Rêverie</title>
   <firstline>Loin d’une iris volage</firstline>
   <source href="https://fr.wikisource.org/wiki/Œuvres_complètes_de_Béranger/La_Rêverie"><i>Œuvres complètes de Béranger</i>, H. Fournier, 1839, bd. 1, pp. 294-295.</source>
+  <rhyme>
+    <analysis pattern="ABABAACD ADADAACC AEAEFFCC AXAXAACC AGAGAAXC" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>

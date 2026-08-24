@@ -20,6 +20,9 @@
   <indextitle>Bundeslied der Galgenbrüder</indextitle>
   <firstline>O schauerliche Lebenswirrn</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="XXXX AABB AAXX" confidence="0.83"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -48,6 +51,9 @@ da taut's, da graut's, da braut's, da blaut's!
   <indextitle>Galgenbruders Lied an Sophie</indextitle>
   <firstline>Sophie, mein Henkersmädel</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AABBA AAXXA AAXXA" confidence="0.91"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -79,6 +85,9 @@ doch du bist gut und edel!
   <indextitle>Nein!</indextitle>
   <firstline>Pfeift der Sturm</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AABBA X CCDXXDDD" confidence="0.93"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -109,6 +118,9 @@ nach dem nächsten Brunnen lechzte
   <indextitle>Das Gebet</indextitle>
   <firstline>Die Rehlein beten zur Nacht</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AA X X X X X AABB" confidence="0.84"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -140,6 +152,9 @@ die Rehlein.
   <indextitle>Das Große Lalula</indextitle>
   <firstline>Kroklokwafzi? Se¯eme¯i!</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABABC DXDXC EAEAC" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -171,6 +186,9 @@ Lalu lalu lalu lalu la!
   <indextitle>Der Zwölf-Elf</indextitle>
   <firstline>Der Zwölf-Elf hebt die linke Hand</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AA BB XX CC DD EE FF BB XX GG HH AA" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -220,6 +238,9 @@ Und wieder schläft das ganze Land.
   <indextitle>Das Mondschaf</indextitle>
   <firstline>Das Mondschaf steht auf weiter Flur</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AAB CCB DDB EEB" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -249,6 +270,9 @@ Das Mondschaf.
   <indextitle>Lunovis</indextitle>
   <firstline>Lunovis in planitie stat</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AAB CCB DDB EEB" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -278,6 +302,9 @@ Lunovis.
   <indextitle>Der Rabe Ralf</indextitle>
   <firstline>Der Rabe Ralf</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABABCCDB BBBBEEDB XBXBFFDB" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -345,6 +372,9 @@ du du
   <indextitle>Galgenbruders Frühlingslied</indextitle>
   <firstline>Es lenzet auch auf unserm Spahn</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABAB CDDC" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -368,6 +398,9 @@ der ich doch nicht mehr bin . . .
   <indextitle>Das Hemmed</indextitle>
   <firstline>Kennst du das einsame Hemmed</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AB XB CD CD CA" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -396,6 +429,9 @@ Hemmed.
   <indextitle>Das Problem</indextitle>
   <firstline>Der Zwölf-Elf kam auf sein Problem</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AAXX XX" confidence="0.77"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -439,6 +475,9 @@ W.</center>
   <indextitle>Der Tanz</indextitle>
   <firstline>Ein Vierviertelschwein und eine Auftakteule</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AABAAB CDCXEED CXXCFFC" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -475,6 +514,9 @@ und dann war nichts weiter zu beweisen.
   <indextitle>Das Knie</indextitle>
   <firstline>Ein Knie geht einsam durch die Welt</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABAB XCXC ABAB" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -503,6 +545,9 @@ Es ist ein Knie, sonst nichts.
   <indextitle>Der Seufzer</indextitle>
   <firstline>Ein Seufzer lief Schlittschuh auf nächtlichem Eis</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="XAXA XBXB" confidence="0.83"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -526,6 +571,9 @@ und er sank - und ward nimmer gesehen.
   <indextitle>Bim, Bam, Bum</indextitle>
   <firstline>Ein Glockenton fliegt durch die Nacht</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABAB XCXC XCXC XCXC ADAD" confidence="0.90"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -564,6 +612,9 @@ er fliegt in falscher Richtung.
   <indextitle>Das æsthetische Wiesel</indextitle>
   <firstline>Ein Wiesel</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AAA XB BXC DDC" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -593,6 +644,9 @@ tat's um des Reimes willen.
   <indextitle>Der Schaukelstuhl</indextitle>
   <firstline>Ich bin ein einsamer Schaukelstuhl</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AB AB CBCB" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -617,6 +671,9 @@ im Winde, im Winde, im Winde.''
   <indextitle>Die Beichte des Wurms</indextitle>
   <firstline>Es lebt in einer Muschel</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABXB CDCD ABAB" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -645,6 +702,9 @@ sein Herze offenbart.
   <indextitle>Das Weiblein mit der Kunkel</indextitle>
   <firstline>Um 'stille Stübel schleicht des Monds</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABCB XDXD ABCB" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -673,6 +733,9 @@ Das Weiblein mit der Kunkel.
   <indextitle>Die Mitternactsmaus</indextitle>
   <firstline>Wenn's mitternächtigt und nicht Mond</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="XXAA BBAA CCAA" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -701,6 +764,9 @@ die Mitternachtsmaus.
   <indextitle>Mondendinge</indextitle>
   <firstline>Dinge gehen vor im Mond</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AB CD EE FF AB CD" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -732,6 +798,9 @@ liegen heulend auf den Knien ...
   <indextitle>Der Gingganz</indextitle>
   <firstline>Ein Stiefel wandern und sein Knecht</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AA XX BB CC DD EE FF" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -766,6 +835,9 @@ Und weiter zieht das Paar fürbaß.
   <indextitle>Der Lattenzaun</indextitle>
   <firstline>Es war einmal ein Lattenzaun</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AA XX BB XX CC XX" confidence="0.83"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -797,6 +869,9 @@ nach Afri - od - Ameriko.
   <indextitle>Die beiden Flaschen</indextitle>
   <firstline>Zwei Flaschen stehn auf einer Bank</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AABB BXXB" confidence="0.91"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -820,6 +895,9 @@ und kopuliert die beiden.
   <indextitle>Das Lied vom blonden Korken</indextitle>
   <firstline>Ein blonder Korke spiegelt sich</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AXAX BXBX ACAC" confidence="0.88"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -848,6 +926,9 @@ ganz in demselben Fall?
   <indextitle>Der Würfel</indextitle>
   <firstline>Ein Würfel sprach zu sich: Ich bin</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="XX ABAB AA CDCD EE" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -880,6 +961,9 @@ hat sich nicht weiter drauf verteidigt.
   <indextitle>Kronprätendenten</indextitle>
   <firstline>Ich bin der Graf von Réaumur</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="XAXA BCBC" confidence="0.91"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -903,6 +987,9 @@ die man nach mir gemessen!''
   <indextitle>Die Weste</indextitle>
   <firstline>Es lebt in Süditalien eine Weste</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABABABCC" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -925,6 +1012,9 @@ vom Geist von gestern auf den Wanst von morgen.
   <indextitle>Philanthropisch</indextitle>
   <firstline>Ein nervöser Mensch auf einer Wiese</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AXAX BCBC ADAD" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -953,6 +1043,9 @@ und dafür in andre Paradiese
   <indextitle>Der Mond</indextitle>
   <firstline>Als Gott den lieben Mond erschuf</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AA BB XX XX" confidence="0.83"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -978,6 +1071,9 @@ ein völlig deutscher Gegenstand.
   <indextitle>Die Westküsten</indextitle>
   <firstline>Die Westküsten traten eines Tages zusammen</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AAAA ABBA AAAA CCAA AAAA XXDD AAEE FFXX GGXX" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1036,6 +1132,9 @@ Und die Resolution, die blieb unversandt.
   <indextitle>Unter Zeiten</indextitle>
   <firstline>Das Perfekt und das Imperfekt</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AAXX BB" confidence="0.88"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1057,6 +1156,9 @@ blinzten nur.
   <indextitle>Unter Schwarzkünstlern</indextitle>
   <firstline>Eines Mittags las man</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="XXXA BBCC DDEXXX XXEXXE AAFF GGHH IIJJ X" confidence="0.88"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1112,6 +1214,9 @@ Wasmann hatte gesiegt.
   <indextitle>Palmström</indextitle>
   <firstline>Palmström steht an einem Teiche</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABAB CCDD CECE" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1166,6 +1271,9 @@ an deinen Dienst, Zä-zi-li-é!''
   <indextitle>Das Nasobém</indextitle>
   <firstline>Auf seinen Nasen schreitet</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABAX CDCD AXAB" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1194,6 +1302,9 @@ einher das Nasobém
   <indextitle>Anto-logie</indextitle>
   <firstline>Im Anfang lebte, wie bekannt</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="XX AA BB CC DD EE XX FF AA GG XX FF" confidence="0.91"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1243,6 +1354,9 @@ als Nulel-ant wird stumm verschwinden.
   <indextitle>Die Hystrix</indextitle>
   <firstline>Das hinterindische Stachelschwein</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AXAX XBXB CXCX XDXD XXXX" confidence="0.79"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1281,6 +1395,9 @@ und büßt.
   <indextitle>Die Probe</indextitle>
   <firstline>Zu einem seltsamen Versuch</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AA BB CC XX DD XX EE XX FF XX" confidence="0.86"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1324,6 +1441,9 @@ und sagte nichts als: Wehe mir!
   <indextitle>Im Jahre 19000</indextitle>
   <firstline>Die Ameisen oder Emsen</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AABB CCAA DDXX EEFF AAXC" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1362,6 +1482,9 @@ und verwünschen ihre Reiter.
   <indextitle>Der Gaul</indextitle>
   <firstline>Es lautet beim Professor Stein</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABAC XXXC DXDE FEFC GCGB XCAX" confidence="0.91"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1405,6 +1528,9 @@ ein unerhörtes Erlebnis!..
   <indextitle>Der heroische Pudel</indextitle>
   <firstline>Ein schwarzer Pudel, dessen Haar</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="XXXABAABA" confidence="0.88"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1428,6 +1554,9 @@ mit einer silberweißen Mähne.
   <indextitle>Das Huhn</indextitle>
   <firstline>In der Bahnhofhalle, nicht für es gebaut</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABXXBXAXX" confidence="0.81"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1451,6 +1580,9 @@ selbst an dieser Stätte, wo es - stört'!
   <indextitle>Möwenlied</indextitle>
   <firstline>Die Möwen sehen alle aus</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABAB CBCB DBDB" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1479,6 +1611,9 @@ zufrieden, ihr zu gleichen.
   <indextitle>Igel und Agel</indextitle>
   <firstline>Ein Igel saß auf einem Stein</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AABCCADX EEBFFXDXX" confidence="0.92"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1511,6 +1646,9 @@ tü tü.
   <indextitle>Der Werwolf</indextitle>
   <firstline>Ein Werwolf eines Nachts entwich</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABBA CCDD EEXX FFGG FFHH IIDD" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1554,6 +1692,9 @@ so schied er dankend und ergeben.
   <indextitle>Die Fingur</indextitle>
   <firstline>Es lacht die Nachtalp-Henne</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABAB CDCD EFEF" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1582,6 +1723,9 @@ die Fingur und ihr Volk ...
   <indextitle>Km 21</indextitle>
   <firstline>Ein Rabe saß auf einem Meilenstein</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AA AA AA AA BB AA" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1613,6 +1757,9 @@ Ka-em-zwei-ein, Ka-em-Ka-em-zwei-ein ..
   <indextitle>Geiß und Schleiche</indextitle>
   <firstline>Die Schleiche singt ihr Nachtgebet</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="XX XX AA BB" confidence="0.83"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1638,6 +1785,9 @@ Die Geiß geht sinnend durch den Wald.
   <indextitle>Der Purzelbaum</indextitle>
   <firstline>Ein Purzelbaum trat vor mich hin</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABAB CDCD EFEF GHGH" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1671,6 +1821,9 @@ und lästre dein Geschlecht nicht.
   <indextitle>Die zwei Wurzeln</indextitle>
   <firstline>Zwei Tannenwurzeln groß und alt</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="XX AA BB CC" confidence="0.91"/>
+  </rhyme>
 </head>
 <body>
 <poetry>

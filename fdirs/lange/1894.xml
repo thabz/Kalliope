@@ -21,6 +21,9 @@
   <firstline>Du friske Nat, som kysser ungt og ømt</firstline>
   <source pages="1"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB CBCB DBDB" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -48,6 +51,9 @@ paa Rosenvinger gjennem Dæmring glide!
   <firstline>Ud om Søen slaar sig Nattens Rosenslør</firstline>
   <source pages="2"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB XCXC DBDB" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -84,6 +90,9 @@ ufravendt to mørke Øjne paa mig stirre.
   <firstline>Paa det dybe Vand, det dunkle</firstline>
   <source pages="3"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB CDCD AEAE" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -114,6 +123,9 @@ i et stille Fadervor.
   <firstline>Vilde Skov af mørke Graner</firstline>
   <source pages="4"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABBA CDDC CEEC CFFC" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -149,6 +161,9 @@ al din Sorg, den redningsløse.
   <firstline>Dvæl paa mig, Du dunkle øje</firstline>
   <source pages="5"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB ACAC" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -174,6 +189,9 @@ vidt omkring mig tyst og tæt!
   <firstline>Det suser mig for øret af gamle Melodier</firstline>
   <source pages="6-7"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABABA BABAB ACACA BABBA" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -210,6 +228,9 @@ Det suser mig for øret af gamle Melodier.
   <firstline>Var jeg en Lærke graa</firstline>
   <source pages="8"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="AABXXB XXCDDC EEFGGF" confidence="0.92"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -245,6 +266,9 @@ Alt, jeg af Elskov veed,
   <firstline>Kjære lille Moder, se, hvad Ingen aner</firstline>
   <source pages="9"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB ACAC" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -269,6 +293,9 @@ derfor ser Du Blomster mellem Is og Sne.
   <!-- TODO: Hvem er Elisa v. P.? -->
   <source pages="10-11"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="AAA BBB CCC DDD EEE FFF" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -307,6 +334,9 @@ Du Hjerte, som sprænges af indestængt Nød,
   <!-- TODO: Find originalerne -->
   <source pages="12-13"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="AA BB CC DD EE FF GG EEEE HEEH EEEE" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -360,6 +390,9 @@ mig i Klangrus og Farverus gynge.
   <firstline>Jeg gik en Aften sent langs den øde, krumme Strand</firstline>
   <source pages="14"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB XBXB CBCB" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -388,6 +421,9 @@ og Stranden gav til Svar: ,,Jeg veed det ikke.''
   <firstline>Stille sødt og Hjertet svalende</firstline>
   <source pages="15"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB ACAC ADAD" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -417,6 +453,9 @@ Ungdomsdrøm og Haab var spildt.
   <source pages="16"/>
   <quality>korrektur1,kilde,side</quality>
   <!-- Korrekturen nedenfor er håndskrevet -->
+  <rhyme>
+    <analysis pattern="AXAX XBXB CDCD" confidence="0.88"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -444,6 +483,9 @@ Hjælp, Gud, hvad jeg forbrød!
   <firstline>En dunkel Kyst, hvis Bjerge blaaligt gløde</firstline>
   <source pages="17"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB CDCD CECE" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -471,6 +513,9 @@ staar Stjernen foran stille, stor og rød.
   <firstline>Kongen lader paa Tromme slaa</firstline>
   <source pages="18"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="AABB CCBB DDEE FFBB" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -504,6 +549,9 @@ daanede Damen til Jord og døde.
   <firstline>Gjennem Slotshavens Gange</firstline>
   <source pages="19-20"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABA ABA ABA ABA ABA ABA ABAABA" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -556,6 +604,9 @@ falde Skyggerne lange.
   <firstline>Lyd af en Hund, der glammer</firstline>
   <source pages="21"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABABBAAB CDCDDCCD" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -590,6 +641,9 @@ stiger et Suk, et Spørgsmaal at raade,
   <firstline>Det er den evige Dame i Hvidt</firstline>
   <source pages="22"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABBA ABAB AXBAA" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -621,6 +675,9 @@ Det er den evige Dame i Hvidt.
   <firstline>Sin Sjæl aander ud den bedaarende Bregne</firstline>
   <source pages="22-23"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB BAAB BAABA" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -652,6 +709,9 @@ sin Sjæl aander ud den bedaarende Bregne.
   <firstline>Den lyver ikke, den indre Stemme</firstline>
   <source pages="23-24"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABBA BAAB BAAXA" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -683,6 +743,9 @@ da flammer Brøden bevidst, bevidst!
   <firstline>Himlen ulmer svagt i Flammerødt</firstline>
   <source pages="25"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB CBCB DBDB" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -710,6 +773,9 @@ tvangløst i din dybe Smerte hvilende!
   <firstline>O ve for Lys og Lue, der gjør mig ør og vild</firstline>
   <source pages="26"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="AA BB CC DD XX" confidence="0.93"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -737,6 +803,9 @@ en Stjerne bliv paa Himlen, og vent mig, vent mig der!
   <firstline>Paa Mosen langs den tavse Lunds</firstline>
   <source pages="27"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB CDCD EDED" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -777,6 +846,9 @@ og Nattens Syner om mig stige.
   </notes>
   <source pages="28"/>
   <quality>korrektur1,kilde</quality>
+  <rhyme>
+    <analysis pattern="ABAB CDCD AEAE" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -811,6 +883,9 @@ noget jordisk Foraar mer behov.
   </notes>
   <source pages="29"/>
   <quality>korrektur1,kilde</quality>
+  <rhyme>
+    <analysis pattern="ABAC ABAC" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -840,6 +915,9 @@ i dine milde Øjne i det milde Maaneskin.
   </notes>
   <source pages="29-30"/>
   <quality>korrektur1,kilde</quality>
+  <rhyme>
+    <analysis pattern="ABAB AXAX ACAC" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -874,6 +952,9 @@ for Slaget frem i hellig, frigjort Ild!
   </notes>
   <source pages="30"/>
   <quality>korrektur1,kilde</quality>
+  <rhyme>
+    <analysis pattern="ABBACCCA DCCDCCCD" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -911,6 +992,9 @@ vi skal ogsaa finde Gud!
   </notes>
   <source pages="31"/>
   <quality>korrektur1,kilde</quality>
+  <rhyme>
+    <analysis pattern="XAXA BABA CDCD" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -945,6 +1029,9 @@ Sov i Skjæret af den fromme Lampe!
   </notes>
   <source pages="31-32"/>
   <quality>korrektur1,kilde</quality>
+  <rhyme>
+    <analysis pattern="ABAB CBCB" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -970,6 +1057,9 @@ Steppe, Storm og Mørke!
   <firstline>Hvor Vandet til Broslusen strømmer</firstline>
   <source pages="32-33"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB CDCD AXAX CECE FGFG AHAH FIFI" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1020,6 +1110,9 @@ kun mindes jeg ikke, hvornaar.
   <firstline>To Tidender ginge til Haand Hertug Knud</firstline>
   <source pages="33-40"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB CBCB DBDB EBFB GBGB HBHB IBIB JKJK LMLM NKNK GBGB COCO XBMB XBXB BOBO PMPM ABAB KKKK QBQB BBXB FBEB NBNB RBRB SBSB TBTB UBUB VBVB FBFB WKWK LBLB XBXB XKXK CBCB YKYK LBLB ZBZB" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1215,6 +1308,9 @@ og Skyerne male sig røde.
   <firstline>Hvor lyse Bøge dristigt frem sig bøje</firstline>
   <source pages="41-43"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAAB CDCCD AEAAE FGFFG AXAAX AHAAH CXCCX AIAAI AJAAJ KXKKX" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1291,6 +1387,9 @@ Du faldne Rugewit, flyd bort, flyd bort!
   <firstline>Hvo har paa Jord en Glæde smagt</firstline>
   <source pages="43-46"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABBACDDCECECFCFC GCCGHIIHJCCJKCKC LHHLCMMCNCNCOCOC PCCPCQQCCOOCRCRC SBBSCTTCUCCUFCFC" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1391,6 +1490,9 @@ i Lys til Dig blandt Helgen alle!
   <firstline>Efter Skriftemaalets Trøst</firstline>
   <source pages="47"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="XAXABAAABCDCDEAAAE" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1425,6 +1527,9 @@ tag din Tjener bort i Fred!
   <firstline>Naar de sidste røde Sømme</firstline>
   <source pages="48"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="AAAAA BCCBC" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1449,6 +1554,9 @@ fra hvis Himmel jeg er falden.
   <firstline>Det skumrer; Jord og Himmel i Graat tilsammen flød</firstline>
   <source pages="49"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="AABCCB DDEXXE" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1475,6 +1583,9 @@ og som jeg vidste nok jeg maatte møde.
   <firstline>Jeg sluges af Drømmenes rivende Flod</firstline>
   <source pages="50"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB CDCD" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1507,6 +1618,9 @@ en Fortids fantastiske Liv, af hvis Pragt
   <firstline>Piletræet bøjer sig</firstline>
   <source pages="51-52"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="XABA ABAB XAXA AAAA" confidence="0.93"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1542,6 +1656,9 @@ kan intetsteds I finde.
   <firstline>Blæsten hvirvler det tørre Blad i Kredse paa Marken rundt</firstline>
   <source pages="52-53"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="XX AA BB CC DD" confidence="0.93"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1572,6 +1689,9 @@ er i Verden Du vorden født, i Verden leve Du. maa.
   <firstline>Spinkle Stjernestraaler trænge</firstline>
   <source pages="54"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="AXAX ABAB CDCD" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1600,6 +1720,9 @@ i de blanke Strenges Guld.
   <firstline>Jeg tør Ingen betro, hvor jeg elsker Dig ømt</firstline>
   <source pages="55"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABCC ABCC ABCC" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1627,6 +1750,9 @@ af sin Saligheds Overmaal briste.
   <firstline>Der sang en fager Fugl, og jeg lyttede derpaa</firstline>
   <source pages="56-57"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAC DBDC EBEC FBFC ABXC" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1673,6 +1799,9 @@ de tænke paa den Sommer, der sammen os saae.
   <firstline>Om Himlens Rand har Natten lagt et Belte</firstline>
   <source pages="58"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB ACAC ADAD" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1703,6 +1832,9 @@ O, drag mig med ad morgenrøde Veje
   <firstline>Der blinker højtoppe to Stjerner, to blide</firstline>
   <source pages="59"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB ABAB AAAA" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1733,6 +1865,9 @@ min Ungdom og Elskov, som vender tilbage! —
   <firstline>Hvor dødstræt Alt ser ud! Hvor Himlens Lød er mat!</firstline>
   <source pages="59-60"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB CBCB" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1758,6 +1893,9 @@ en gammel søvnløs Sorg, der sukker efter Hvile!
   <firstline>Hver signet Stund, naar frit og uden Hindring</firstline>
   <source pages="60"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB CDCD EFEF" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1788,6 +1926,9 @@ paa Navnets underfulde Klang.
   <firstline>Paa Havens hvide Grus og hvide Birke stirred</firstline>
   <source pages="61"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB CDCX DEFEF" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1816,6 +1957,9 @@ og nu staar Verden tom, thi ene jeg var til.''
   <firstline>Højt og flammet Aftenskjæret staar</firstline>
   <source pages="62"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB CBCB DBDB" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1844,6 +1988,9 @@ klare Klokke, viede, velsignede!
   <firstline>Det er ensomt, og sagtelig rindende</firstline>
   <source pages="63-64"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB ACAC ADAD AEAE FGFG" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1887,6 +2034,9 @@ flygter til Himlen min Kjærlighed.
   <firstline>Min Sjæl var syg, min Tanke lagt i Dvale</firstline>
   <source pages="65-66"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB ABXAB XCBCXB BABAB" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1924,6 +2074,9 @@ det Liv, hvis Fred er ingen jordisk Drøm.
   <firstline>Ak, rind op, rind op</firstline>
   <source pages="67"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="XABA XCXC BAXA" confidence="0.88"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1960,6 +2113,9 @@ knug mig ind ustandseligt mig kyssende!
   <firstline>Derude Støj og Tummel og Støv</firstline>
   <source pages="68"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB CBCB" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1985,6 +2141,9 @@ af Syner for mig alene.
   <firstline>Den straalende Stjernenat blinker</firstline>
   <source pages="68-69"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB CDCD EFEF" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2015,6 +2174,9 @@ min elskende Sjæl maa forgaa.
   <firstline>Langs med Aaen de gulnede fjorgamle Rør</firstline>
   <source pages="69-70"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB XCXC DEDE FGFG" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2050,6 +2212,9 @@ hvor min Drøms Fantasiblomster gro.
   <firstline>Lidt vissent Løv er strøet paa Vejen, hvor vi træde</firstline>
   <source pages="70-71"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB ACAC ADAD" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2080,6 +2245,9 @@ endnu en Gang, en Gang endnu!
   <firstline>Der svæver et Smil omkring din Mund</firstline>
   <source pages="71"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB ACAC" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2105,6 +2273,9 @@ har lagt mine Tanker øde.
   <firstline>Den Sang, jeg tror bag din Læbe gjemt</firstline>
   <source pages="71-72"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB CDCD" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2130,6 +2301,9 @@ for den, der hildes deri.
   <firstline>Jeg veed i Skoven et lønligt Slot</firstline>
   <source pages="72-73"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="XAXA BCBC DEDE FGDFG" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2166,6 +2340,9 @@ og stum staar Støtten af Sten.
   <firstline>Højt gjennem Ætheren sejler den sølvblanke Maane</firstline>
   <source pages="74"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABBA ACCX ABBA" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2194,6 +2371,9 @@ hen over Enge, hvor Duggen i Dæmringen skinner!
   <firstline>Det klemter bag skumrende Pinier</firstline>
   <source pages="75"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB CDCD AXAX" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2230,6 +2410,9 @@ med Slør af Skam og af Skyld.
   <firstline>Det var i den triste Tvelysstund</firstline>
   <source pages="76-77"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABABXCXC DBDBEXEX FBFBXGXG" confidence="0.91"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2275,6 +2458,9 @@ og Skumringen bliver til Nat.
   </notes>
   <source pages="77"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB CDCD" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2300,6 +2486,9 @@ danset ihjel og dødt!
   <firstline>Menneskers Ord falde tungt og tæt</firstline>
   <source pages="78"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABXAB BBBBB" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2327,6 +2516,9 @@ svulmende, dulmende, dragende
   <firstline>Far vel, min Rose, rød og prud</firstline>
   <source pages="78-79"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="AXAB CDCD EFEF XABA" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2362,6 +2554,9 @@ min Rose rød og prud!
   <firstline>Et Skjær blandt øde Vover</firstline>
   <source pages="79-80"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB CDCD CECE AFAF" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2398,6 +2593,9 @@ med hvide Svanedun.
   <firstline>Intet Vingeslag i Mark og Skov</firstline>
   <source pages="81"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB CDCD EFEF GHGH" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2433,6 +2631,9 @@ aldrig Angsten, som i øjet laa.
   <source pages="82"/>
   <keywords>heine</keywords>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB ACAC" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2458,6 +2659,9 @@ deres øjne lukkes i.
   <source pages="83"/>
   <keywords>heine</keywords>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB CDCD AEAE" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2494,6 +2698,9 @@ for mig Du, min Kjærlighed?
   <firstline>Paa min Bænk jeg sidder</firstline>
   <source pages="84-85"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="AXBCCBBBXBXXAABXBCCBX" confidence="0.90"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2531,6 +2738,9 @@ ved det store Grantræ.
   <firstline>Hvor skal jeg Pige løbe bort fra Sorgen?</firstline>
   <source pages="85"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="AXBBXXBBAXXBAAAXA" confidence="0.88"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2564,6 +2774,9 @@ Nu har jeg faaet Pigen lagt i Jorden!
   <firstline>Sus ej saa højt, min Moder, Du grønne Skov</firstline>
   <source pages="86"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="XXXXABXACXAXXXXXCBXAXX" confidence="0.78"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2602,6 +2815,9 @@ to lige Bjælker opad og en paa tværs.
   <firstline>Ak, min Stjerne, Du min Stjerne klar</firstline>
   <source pages="87"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABXXCDXXBDXEBCXXEAFXXCAFX" confidence="0.86"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2644,6 +2860,9 @@ slaa Du ned paa Jord, knus min Svigermor!
   <firstline>Vifter, Vejr og vilde Vind</firstline>
   <source pages="88"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="XAAA XAXA XAXA" confidence="0.85"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2675,6 +2894,9 @@ har Intet mer tilbage.
   <firstline>Ak, Du dybe Møllesluse</firstline>
   <source pages="89"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="AAAA BABA AAAA" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2706,6 +2928,9 @@ ingen Steder hjemme.
   <firstline>Hen over Glimmersand og skarpe Stene</firstline>
   <source pages="90"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="AAAABBAACC" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2732,6 +2957,9 @@ og spørger: ,,Sig, min Guldfisk, sig, min Søster,
   <firstline>Du Zions Konge, Herre, vort Haab</firstline>
   <source pages="91"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABABBB CDCDBB EFEFBB" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2769,6 +2997,9 @@ til Dig og lyse Helgen fromme!
   </notes>
   <source pages="92-93"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABABBCC DEDEEFF GEGEEHH" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2805,6 +3036,9 @@ jeg kvæde Christ og Dig en Julesang.
   <firstline>Jeg plukker tre frosne Kviste</firstline>
   <source pages="94"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB XCAC XDXD" confidence="0.91"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2832,6 +3066,9 @@ ham giver jeg nu min Tro.
   <firstline>Der staar et gammelt Kors af Sten</firstline>
   <source pages="95"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB CXCX DEDE FGFG" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2865,6 +3102,9 @@ for hele Verdens Herlighed
   <firstline>Engel fra Edens Have</firstline>
   <source pages="96-97"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABABCDCD EFEFAGAG HIHIAJAJ" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2913,6 +3153,9 @@ sonende Kjærlighed!
   <firstline>Dybe Nat, som Jordens Hvile værner</firstline>
   <source pages="98-99"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB CDCD EFEF EGEG EHEH" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2953,6 +3196,9 @@ hvide, bløde Blomster drysse ned.
   <firstline>Kom, Kjærlighed, jeg glædes ved</firstline>
   <source pages="99-100"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB CDCD EFEF AGAG" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2992,6 +3238,9 @@ og Vandet friskt og frit!
   </notes>
   <source pages="101-102"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="AABCCB DDBEEB FFBGGB XXBHHB IIBAAB" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -3048,6 +3297,9 @@ og Vandet friskt og frit!
   <firstline>Alt mangen Gang i Skovens Indre</firstline>
   <source pages="103"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB CDCD AEAE AFAF" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -3083,6 +3335,9 @@ jeg selv har skabt af Stemmens Klang?
   <firstline>Langt inde mellem Fyr og El</firstline>
   <source pages="104-105"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="XXXXXAXABCBCDEDEFGFGCXCXHIHI" confidence="0.90"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -3127,6 +3382,9 @@ er selv jeg tavs og ikke tryg.
   <firstline>Himmelhøjt sig Bølgen vælter</firstline>
   <source pages="105"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABABCDCD" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -3160,6 +3418,9 @@ op til Dig og hente Dig.
   <firstline>Der grønnes en Grav paa lønlig Sti</firstline>
   <source pages="106"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="AA BB CC DD EE" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -3190,6 +3451,9 @@ før vi turde frem for Guds Aasyn staa.
   <firstline>Din Strid er endt, men jeg har min at friste</firstline>
   <source pages="107"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB ACAC ADAD" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -3220,6 +3484,9 @@ derhen, hvor Du nu er, derhen, derhen!
   <firstline>Luk Dig, Du dragende, stirrende</firstline>
   <source pages="107-107"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAABA ACDACD" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -3249,6 +3516,9 @@ Mulm, hvor i Lag over Lag
   <firstline>Vær hilset mildt igjen, ung Varja, min Veninde</firstline>
   <source pages="108"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB ACAC ADAD" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -3279,6 +3549,9 @@ forbarm af Naade Dig, forbarm!
   <firstline>Hellige Christ i Himmelens Sal</firstline>
   <source pages="109"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABBA CBBC" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -3304,6 +3577,9 @@ Du, som vor Trang til at se Dig har skabt!
   <firstline>Jeg drømte om en hellig, himmelsk Lund</firstline>
   <source pages="110"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABBA CBBC BBBB DBBD" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -3336,6 +3612,9 @@ kun din, alene din, alene din!
   <firstline>Hil Dig, Gud, som lod Dig føde</firstline>
   <source pages="111-112"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="AABCCB AADAAD AAEAAE AAFAAF" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -3377,6 +3656,9 @@ i din Favn — thi Du er Gud!
   <firstline>Barn Jesus lod en Have gro</firstline>
   <source pages="113"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB CDCD EFEF GHGH" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -3410,6 +3692,9 @@ ham levnet blev af Israels Børn.
   <firstline>Hil Dig, Havets Stjerne</firstline>
   <source pages="114-115"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="AABA CAAA AAAA ACBX C" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -3444,6 +3729,9 @@ Gud og Frelser!
   <firstline>Før min Sjæl for Solskin lukkes</firstline>
   <source pages="116"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB BCBC" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -3466,6 +3754,9 @@ som Sanct Georg over Dragen!
   <firstline>Hil Dig, Herrens Legem, baaret</firstline>
   <source pages="117"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABABCDCD" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -3493,6 +3784,9 @@ ind i Himlens Herlighed.
   <!-- Håndskrevet note siger vistnok "[Sar Marodack-Peladan]" -->
   <source pages="118-119"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="XAXA BCBC DEDE FGFG HIHI" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -3530,6 +3824,9 @@ Hans gyldne Kalk, Sanct Gral!''
   <firstline>Lov, Pris og evig Ære være Gud</firstline>
   <source pages="120"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="AA BB CC DD EE FF" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -3564,6 +3861,9 @@ lad frelst mig dog tilsidst dit Aasyn se!
   </notes>
   <source pages="121-122"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABABCDCDEFEF GHGHIJIJKLKL MNMNOCOC PKPK XX" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>

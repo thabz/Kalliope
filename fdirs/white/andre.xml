@@ -9,6 +9,9 @@
 <head>
   <title>The Shipwrecked Solitary's Song to the Night</title>
   <firstline>Thou, spirit of the spangled night!</firstline>
+  <rhyme>
+    <analysis pattern="XAXX XBCC XDXX EXEF GXXC ABHI HXGJ GGXI XGGF XGXX GJGX XXEX XXXD" confidence="0.85"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -84,6 +87,9 @@ The brook's eternal flow, and oft
 <head>
   <title>Canzonet</title>
   <firstline>Maiden! wrap thy mantle round thee</firstline>
+  <rhyme>
+    <analysis pattern="AXAXAAB ACACAAB" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>

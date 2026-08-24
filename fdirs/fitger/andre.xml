@@ -9,6 +9,9 @@
 <head>
   <title>Einem Toten</title>
   <firstline>Solch reichen Blütenbaum zerknickte</firstline>
+  <rhyme>
+    <analysis pattern="AXAX BCBC BXBX BDBD BXBX" confidence="0.90"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -44,6 +47,9 @@ In Sturm und Sieg - es ist doch schön.
 <head>
   <title>Singend über die Heide</title>
   <firstline>Singend über die Heide</firstline>
+  <rhyme>
+    <analysis pattern="ABABCCAX DEDEFFDX GHGHXXGH" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -81,6 +87,9 @@ Pforten zum Paradies.
 <head>
   <title>Unfreiheit</title>
   <firstline>Ach, lieber Herr Amtmann, habet Geduld!</firstline>
+  <rhyme>
+    <analysis pattern="ABAB CDCD EFEF GHGH IFIF" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -117,6 +126,9 @@ Aus unwiderstehlichem Drange.«
   <title>Mittagsschlaf</title>
   <firstline>Ach hat es der Frühling angethan</firstline>
   <source href="https://archive.org/details/fahrendesvolkged00fitguoft">Arthur Fitger, <i>Fahrendes Volk: Gedichte</i>, 1873.</source>
+  <rhyme>
+    <analysis pattern="XAXAXXBB CACADDAA EAEAFFAA GAGAXXHH" confidence="0.93"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -164,6 +176,9 @@ Das beste der Lieder im Schlummer.)
   <title>Drei Reiter</title>
   <firstline>Es ritten drei Reiter zum Thore hinaus</firstline>
   <source href="https://archive.org/details/fahrendesvolkged00fitguoft">Arthur Fitger, <i>Fahrendes Volk: Gedichte</i>, 1873.</source>
+  <rhyme>
+    <analysis pattern="XXAABB XXXXBB AAXXBB CCDDBB EEFFBB" confidence="0.91"/>
+  </rhyme>
 </head>
 <body>
 <poetry>

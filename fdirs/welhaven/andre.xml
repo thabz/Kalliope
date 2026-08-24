@@ -13,6 +13,9 @@
   <indextitle>Sang i Dalen</indextitle>
   <firstline>Den Egn, hvori min Vei er lagt</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABAB CXCX DEDE FGFG HIHI JKJK XXXX LMLM NONO XPXP QCQC ABAB" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -86,6 +89,9 @@ Der voxer Aar for Aar.
   <indextitle>Den dunkle Sti</indextitle>
   <firstline>I Sorgens Dal jeg stirred</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABCB DADA EFEF CGXG" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -119,6 +125,9 @@ Min Gang i Sorgens Dal.
   <indextitle>Taushed</indextitle>
   <firstline>Her er ingen Fugle-Trille</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AAAA BABA ABAB ACAC AAAA" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -164,6 +173,9 @@ Taushed, Stumhed er det Bedste.
     <note type="credits">Bidrag fra Sven Sørensen.</note>
   </notes>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABABCDDX EFEFBGGB HCHCIJJI KFKFFLLF MFMFFNNF OFOFFXXF PIPIFXXF" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>

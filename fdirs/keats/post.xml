@@ -15,6 +15,9 @@
   <firstline>Fill for me a brimming bowl</firstline>
   <source>John Keats: <i>Complete Poems</i>, ed. Jack Stillinger, The Belknap Press of Harvard University Press, 1982.</source>
   <quality>korrektur1,kilde</quality>
+  <rhyme>
+    <analysis pattern="XXXXAAXXXXXX BBXB CCBB DDEEXXBX" confidence="0.83"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -61,6 +64,9 @@ The halo of my memory.
   <firstline>My spirit is too weak - mortality</firstline>
   <quality>korrektur1</quality>
   <keywords>sonnet</keywords>
+  <rhyme>
+    <analysis pattern="ABBCABBCDXDCDC" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -89,6 +95,9 @@ Wasting of old time - with a billowy main -
   <indextitle>In drear nighted December</indextitle>
   <firstline>In drear nighted December</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABACDDDB AEAEFFFB CCCCGGGB" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -130,6 +139,9 @@ Nor numbed sense to steel it,
   <firstline>O golden-tongued Romance, with serene lute!</firstline>
   <quality>korrektur1</quality>
   <keywords>sonnet</keywords>
+  <rhyme>
+    <analysis pattern="ABBAABBXXAAXAA" confidence="0.93"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -160,6 +172,9 @@ Give me new phoenix wings to fly at my desire.
   <source>John Keats: <i>Complete Poems</i>, ed. Jack Stillinger, The Belknap Press of Harvard University Press, 1982.</source>
   <quality>korrektur1,kilde</quality>
   <keywords>sonnet</keywords>
+  <rhyme>
+    <analysis pattern="ABXBAAAAXAXACC" confidence="0.93"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -189,6 +204,9 @@ Till love and fame to nothingness do sink.
   <firstline>Time's sea hath been five years at its slow ebb</firstline>
   <quality>korrektur1</quality>
   <keywords>sonnet</keywords>
+  <rhyme>
+    <analysis pattern="XAXAXBCBXXXCDD" confidence="0.85"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -217,6 +235,9 @@ And grief unto my darling joys dost bring.
   <indextitle>Asleep! O sleep a little while, white pearl</indextitle>
   <firstline>Asleep! O sleep a little while, white pearl</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="XAXXXXA" confidence="0.75"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -239,6 +260,9 @@ My sudden adoration, my great love!
   <firstline>Four seasons fill the measure of the year</firstline>
   <quality>korrektur1</quality>
   <keywords>sonnet</keywords>
+  <rhyme>
+    <analysis pattern="ABABXXCXDEDECC" confidence="0.93"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -268,6 +292,9 @@ Or else he would forget his mortal nature.
   <firstline>Standing aloof in giant ignorance</firstline>
   <quality>korrektur1</quality>
   <keywords>sonnet</keywords>
+  <rhyme>
+    <analysis pattern="AXAXBABACDCDXX" confidence="0.90"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -297,6 +324,9 @@ To Dian, Queen of Earth, and Heaven, and Hell.
   <firstline>Why did I laugh tonight? No voice will tell</firstline>
   <quality>korrektur1</quality>
   <keywords>sonnet</keywords>
+  <rhyme>
+    <analysis pattern="ABABBCXCBXBXDD" confidence="0.93"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -326,6 +356,9 @@ But death intenser - death is life's high meed.
   <firstline>Bright star, would I were stedfast as thou art</firstline>
   <quality>korrektur1</quality>
   <keywords>sonnet</keywords>
+  <rhyme>
+    <analysis pattern="AXABCXCXBXXXDD" confidence="0.85"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -358,6 +391,9 @@ And so live ever - or else swoon to death.
     <picture src="keats2000012803-p1.jpg">John William Waterhouse (<year>1849</year>-<year>1917</year>): »La Belle Dame Sans Merci« (<year>1893</year>), oliemaleri, 112 × 81 cm, Hessisches Landesmuseum, Darmstadt.</picture>
   </pictures>
   <quality>korrektur1,kilde</quality>
+  <rhyme>
+    <analysis pattern="ABCB ACXC XDCE XFXF XCCX XGBG XDXC XCXX XCXC EHXH XCCC CBCB" confidence="0.88"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -444,6 +480,9 @@ Though the sedge is wither'd from the lake,
   <firstline>O soft embalmer of the still midnight</firstline>
   <quality>korrektur1</quality>
   <keywords>sonnet</keywords>
+  <rhyme>
+    <analysis pattern="AXABBCXCDBDX" confidence="0.91"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -472,6 +511,9 @@ Turn the key deftly in the oiled wards,
   <firstline>One morn before me were three figures seen</firstline>
   <quality>korrektur1</quality>
   <keywords>ode</keywords>
+  <rhyme>
+    <analysis pattern="XABACBBCBB DBDXXBEXBE FBFBBGBBGH IJIJHKBHKB BLXLMHBHMB BXBBBCNBNC" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>

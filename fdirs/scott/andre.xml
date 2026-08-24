@@ -11,6 +11,9 @@
   <firstline>I’ll give thee, good fellow, a twelvemonth or twain</firstline>
   <source href="https://www.gutenberg.org/files/82/82-h/82-h.htm">Walter Scott: <i>Ivanhoe</i>, 1819.</source>
   <quality>korrektur1,kilde</quality>
+  <rhyme>
+    <analysis pattern="AABC XCDE FFBC BFDE DXBC GGBC BBCC" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -59,6 +62,9 @@ Is granted alone to the Barefooted Friar.
   <firstline>My wayward fate I needs must plain</firstline>
   <source pages="342-344">Walter Scott: <i>The Poetical Works</i>, Bd. I, Lea &amp; Blanchard, Philadelphia, 1839.</source>
   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAXCBCB XBXBCDCB XEBEFXFB GHGHBBBB IAIAJDJB KLKLBBXB" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -125,6 +131,9 @@ They seek no loves—no more will I—
   <toctitle>County Guy</toctitle>
   <indextitle>County Guy</indextitle>
   <firstline>Ah! County Guy, the hour is nigh</firstline>
+  <rhyme>
+    <analysis pattern="ABCBDAXD EXACEDXD" confidence="0.93"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -155,6 +164,9 @@ And high and low the influence know--
   <toctitle>Jock of Hazeldean</toctitle>
   <indextitle>Jock of Hazeldean</indextitle>
   <firstline>Why weep ye by the tide, ladie</firstline>
+  <rhyme>
+    <analysis pattern="AABAACDE AABADCDE XFXFDCDE AFAADCDE" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -203,6 +215,9 @@ She's o'er the Border and awa'
   <toctitle>Lullaby of an Infant Chief</toctitle>
   <indextitle>Lullaby of an Infant Chief</indextitle>
   <firstline>O hush thee, my babie, thy sire was a knight</firstline>
+  <rhyme>
+    <analysis pattern="AABBCC XBDDCC BXEECC" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -234,6 +249,9 @@ For strife comes with manhood, and waking with day.
 <head>
   <title>The dying Bard</title>
   <firstline>Dinas Emlinn, lament; for the moment is nigh</firstline>
+  <rhyme>
+    <analysis pattern="XAAA AAAX AAAA BBAA AXCC XXDD" confidence="0.93"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -275,6 +293,9 @@ Farewell, my loved Harp! my last treasure, farewell!
   <title>The Palmer</title>
   <firstline>O, open the door, some pity to show</firstline>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB CXCC XDCD CXCX EBEB XCXC XDXD FCFC XDED GXGC" confidence="0.91"/>
+  </rhyme>
 </head>
 <body>
 <poetry>

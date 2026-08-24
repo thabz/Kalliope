@@ -10,6 +10,9 @@
   <title>A World for Love</title>
   <firstline>Oh, the world is all too rude for thee, with much ado and care</firstline>
   <source href="http://www.gutenberg.org/ebooks/52601">John Clare: <i>A World for Love</i>.</source>
+  <rhyme>
+    <analysis pattern="AXBB XXAA AACC DDEE FFAA" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -45,6 +48,9 @@ Herself grow Eden once again, possest of Love and thee.
 <head>
   <title>My Early Home</title>
   <firstline>Here sparrows build upon the trees</firstline>
+  <rhyme>
+    <analysis pattern="XABAXCBD EXEXXCXD BFBXFCFD" confidence="0.90"/>
+  </rhyme>
 </head>
 <body>
 <poetry>

@@ -19,6 +19,9 @@
     <note>DSLs udgave baserer sig på Blichers manuskript fra 1846, og ikke det senere tryk i Aalborg Stiftstidende, som indeholder små afvigelser.</note>
   </notes>
   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="AABB XXCC DDEE" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -51,6 +54,9 @@ Haall sæ ve, te aalt faagoer!
     <note type="credits">Bidrag fra Sven Sørensen.</note>
   </notes>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABAAX CDCCD AEAAE CBCCB" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -92,6 +98,9 @@ I slynge dem væk og beholde jer Kans.
     <note><a poet="boerup">Morten Børup</a> (ca. 1446–1526) var rektor for Aarhus Katedralskole og digter af latinske vers og skuespil.</note>
   </notes>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABAB ACAC DADA EXEX XFGF DHDH AFAF AAAA DEDE GIGI DJDJ AKAK ELEL AHAH EMEM ENEN AFAF" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -194,6 +203,9 @@ i Stedet for dem at slaa.
     <note type="credits">Bidrag fra Sven Sørensen.</note>
   </notes>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AABB AAXX CCDD XXEE XXFF" confidence="0.90"/>
+  </rhyme>
 </head>
 <body>
 <poetry>

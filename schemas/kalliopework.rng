@@ -41,6 +41,7 @@
         <ref name="note"/>
         <ref name="quality"/>
         <ref name="metre"/>
+        <ref name="rhyme"/>
         <ref name="pagebreaks"/>
         <ref name="pictures"/>
         <ref name="picture"/>
@@ -369,6 +370,23 @@
     </element>
   </define>
   <define name="metreAnalysis">
+    <element name="analysis">
+      <attribute name="pattern"><text/></attribute>
+      <attribute name="confidence">
+        <data type="decimal">
+          <param name="minInclusive">0</param>
+          <param name="maxInclusive">1</param>
+        </data>
+      </attribute>
+      <empty/>
+    </element>
+  </define>
+  <define name="rhyme">
+    <element name="rhyme">
+      <oneOrMore><ref name="rhymeAnalysis"/></oneOrMore>
+    </element>
+  </define>
+  <define name="rhymeAnalysis">
     <element name="analysis">
       <attribute name="pattern"><text/></attribute>
       <attribute name="confidence">

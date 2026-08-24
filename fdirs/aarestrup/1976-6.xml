@@ -52,6 +52,9 @@ Saa loe I til I sprak ihjel.
   <quality>korrektur1,korrektur2</quality>
   <keywords>sonnet</keywords>
   <source pages="3"/>
+  <rhyme>
+    <analysis pattern="ABBA ABBA BBA BBA" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -83,6 +86,9 @@ Dig, hulde Genius, Dig har han rakt den!
   <firstline>Hvis jeg ei skrev et Brev til min Cousine</firstline>
   <quality>korrektur1,korrektur2</quality>
   <source pages="4"/>
+  <rhyme>
+    <analysis pattern="AAAABBBBBBBAAACCCDDEEAAAAAA" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -123,6 +129,9 @@ See, saa nu fik jeg dog et Brev til min Cousine!
   <firstline>Cousine, Legesøster og Veninde!</firstline>
   <quality>korrektur1,korrektur2</quality>
   <source pages="5"/>
+  <rhyme>
+    <analysis pattern="AABCDDABCX CX" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -164,6 +173,9 @@ Af Kjærlighed og Held!
   <firstline>Du ser i mine Digte</firstline>
   <quality>korrektur1,korrektur2</quality>
   <source pages="7"/>
+  <rhyme>
+    <analysis pattern="AABA XCXC XBXB ABAB" confidence="0.91"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -202,6 +214,9 @@ Conchylie, der koger.
   </dates>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="7-8"/>
+  <rhyme>
+    <analysis pattern="ABABACAC ADADAEAE AFAFGHGH IJIJAKAK" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>

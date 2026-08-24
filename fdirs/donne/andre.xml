@@ -13,6 +13,9 @@
   <indextitle>Song</indextitle>
   <firstline>Go and catch a falling star</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABCBDDEEE FCFCCCACX XGXGHHCCC" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -56,6 +59,9 @@ False, ere I come, to two or three.
   <indextitle>A Hymn to God the Father</indextitle>
   <firstline>Wilt thou forgive that sin where I begun</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABABBB CXABBB ABCBBB" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -90,6 +96,9 @@ I fear no more.
   <indextitle>Death, Be Not Proud</indextitle>
   <firstline>Death, be not proud, though some have called thee</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABCAACBDEFFEDA" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -118,6 +127,9 @@ And death shall be no more; Death, thou shalt die.
   <indextitle>Confined Love</indextitle>
   <firstline>Some man unworthy to be possessor</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="XAXABBX CDCDEEE XXXXFFF" confidence="0.88"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -155,6 +167,9 @@ But doth waste with greediness.
   <indextitle>The Dissolution</indextitle>
   <firstline>She's dead; and all which die</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AABCADBCEEADEXXFFGGAHHAA" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -193,6 +208,9 @@ A latter bullet may o'ertake, the powder being more.
   <indextitle>Oh my black soul! thou art now summoned</indextitle>
   <firstline>Oh my black soul! now art thou summoned</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABCAXBBADEDEXC" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -221,6 +239,9 @@ That being red, it dyes red souls to white.
   <indextitle>Father, part of his double interest</indextitle>
   <firstline>Father, part of his double interest</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABCAABCAXXXXDD" confidence="0.90"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -249,6 +270,9 @@ Is all but love; Oh let this last Will stand!
   <indextitle>A Hymn to Christ at the Author's Last Going into Germany</indextitle>
   <firstline>In what torn ship soever I embark</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AABBCDDC CCCCEXXE XXXECXCC FFCCGGCG" confidence="0.93"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -297,6 +321,9 @@ An Everlasting night.
   <firstline>I wonder by my troth, what thou, and I</firstline>
   <quality>korrektur1</quality>
   <source href="http://www.bartleby.com/105/1.html">John Donne: <i>The Good-Morrow</i>.</source>
+  <rhyme>
+    <analysis pattern="ABCBDDD EDEDDDD EFEFCAD" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -363,6 +390,9 @@ Another man may be sick too, and sick to death, and this affliction may lie in h
   <firstline>MArke but this flea, and marke in this</firstline>
   <quality>korrektur1</quality>
   <source href="https://github.com/textcreationpartnership/A69225/blob/master/A69225.xml">John Donne: <i>Poems</i>, 1633, s. 230–231.</source>
+  <rhyme>
+    <analysis pattern="AABBXXCXC BBAADDBBB BBBBXXBBB" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>

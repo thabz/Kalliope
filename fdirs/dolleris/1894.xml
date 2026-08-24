@@ -18,6 +18,9 @@
   <firstline>Du straalende Dag</firstline>
   <source pages="3-6"/>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABXCABDC EFXGXBHG HBXEXDHE BBBIFHXI XBBJXHXJ KHHABHHA BDJKHDXK BHBLHHXL BHXAXHHA" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -125,6 +128,9 @@ og vies til din Tjener,
   <keywords>winther</keywords>
   <source pages="11-14"/>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="AAAAAAAAA BXBXACCA DDAXXAEEFDDF AAAXXGGAX AHHAIAIA BJJBKLKK L" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <quote>
@@ -215,6 +221,9 @@ blev <i>Christian Winthers Bøgetræ paa Graven!</i>
   <firstline>For Dagen og for Livet</firstline>
   <source pages="15-16"/>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB CBCB DBDB EBEB FBFB" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -252,6 +261,9 @@ Fra Dagen og fra Livet vil Graverkarlens Stab
   <firstline>Naar du flytter din Fod fra Vejle By</firstline>
   <source pages="17-19"/>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABABCCCDDEE XFGFGHIIJJKLKL MXMNOONN PPQQRRRFFFHH" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -317,6 +329,9 @@ for den æltende Lervogn - - evindelig rundt!
   <firstline>Om hundrede Aar, naar denne Skov</firstline>
   <source pages="20-22"/>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB CXXC DEDE DFFG HIHI JKJK LDLG MNMN OPOP P BABA" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -388,6 +403,9 @@ skal bære det Skabtes Lov!
   <!-- TODO: Find alle Richardt referencerne -->
   <keywords>richardt</keywords>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="AABB CCDD XXEE FFGG CCFF HHBX" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -431,6 +449,9 @@ Jeg min sidste Tak Dig bringer for den Haand, Du mig har rakt!
   <firstline>Paa den uhyre Valplads</firstline>
   <source pages="26-28"/>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABXCBBDC ABDEXBXE AFGEDFBE XBDHXDCH XBGXGBXX" confidence="0.92"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -488,6 +509,9 @@ Og saa sænker jeg Fanen
   <firstline>En Cirkus-Pyramide</firstline>
   <source pages="29-32"/>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABCACDEECFGFF HHIJI KKLLJGGMNNM OOPP QQABACRRACDXEC FFAF GXSSFHFMMTT UVVWWUUU TTT XX" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -590,6 +614,9 @@ om du rejser dit Selv paa dit Livs Ruin!
   <firstline>Trækfuglene drage</firstline>
   <source pages="33"/>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABAAB ACAAAC AAAAAA" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -629,6 +656,9 @@ thi jeg har hjemme i Somren, hvor Roserne gløde,
   </dates>
   <keywords>plough</keywords>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABABACAC DEFEDFFF AGFGAHFH IJKJILKL AMAMANAN AOAOAPAP FQAQFRAR ISISITIT" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -721,6 +751,9 @@ Nu, mens Dagen til Hvile ganger,
   </dates>
   <keywords>winther,blicher</keywords>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="AAXXBAAX XCCDXXBD" confidence="0.87"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -755,6 +788,9 @@ end den, der holdt Indtog
     <written>1893-12-01</written>
   </dates>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABCCBDADDX X XXBBEFFGGHHIIEJJKK FFIIGGLLMMM NNNNNN IIOOOFFF PPXXFQQXNNRR II" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -851,6 +887,9 @@ paa hans Hoved skal vi sanke de gloende Kul:
   <firstline>Den Vej, som fra Barnets Vugge gaar</firstline>
   <source pages="43"/>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="AAB CCB DDB EEB" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -880,6 +919,9 @@ og Aftnen skal Lysene tænde.
   <firstline>Naar Dagens travle Værksted har lukket sin Dør</firstline>
   <source pages="44-46"/>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABA B XCX C DBD B ECE C FGF G HBH B XIX I JBJ B" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -942,6 +984,9 @@ Og saa: Hurra for begge de Kjære!
   <firstline>Jeg tror paa Lykken for det unge Mod</firstline>
   <source pages="47-48"/>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="AA BB CC DD EE FF GG HH II" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -991,6 +1036,9 @@ maa Hammerslaget give Rhytmen Klang!
   <firstline>Efter Livets Storme, naar en</firstline>
   <source pages="49"/>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABAX ABAC DBDC" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1018,6 +1066,9 @@ af Forraadnelsen dit Navn.
   <firstline>Se, de flokkes, Skovens travle</firstline>
   <source pages="50"/>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABAX CBCD CCCD" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1045,6 +1096,9 @@ Nat er evig — Dag et Nu!
   <firstline>Nattens Vaaning til Facade</firstline>
   <source pages="51"/>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="AAAX AAAB CACB" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1072,6 +1126,9 @@ Livets store Æresskrift!
   <firstline>Op fra Skræntens brune Flade</firstline>
   <source pages="52"/>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="AAAX BABC BABC" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1102,6 +1159,9 @@ gjennemtoner alt mit Sind.
   <firstline>Jeg gik i et sildigt Efteraar</firstline>
   <source pages="53-57"/>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="XXAABBBCCDDEEFFGGHHIAJJDDDXXXKKAALLMMM NNOOPPDD QRXXRRQSS HHHTFFXXAIUUVVWW XYYXZZ A27TXXA27TA27A28LA28L" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1214,6 +1274,9 @@ for al Skabningens Sol i Fortærelsens Brand!
   <!-- TODO: Find folkevisen »Det haver saa nyligen regnet«. -->
   <source pages="58-60"/>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABXB CXDD DEAE AFXF GHCH AIXI CJDJ AKGK CLAL DMDM DKAK ANAN" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1286,6 +1349,9 @@ der flammer dybt i din Sjæl!
   <firstline>Jeg føler mig saa ung, saa glad</firstline>
   <source pages="61-62"/>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABBABAAB CBBCBCCB DEEDEDDE" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1325,6 +1391,9 @@ jeg elsker eder begge!
   <firstline>For dine Ungdomskræfter</firstline>
   <source pages="63-65"/>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABCB CDCD AEXE CXAX AFAF GHAH GIAI" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1379,6 +1448,9 @@ da fatter du og elsker
   <!-- TODO: Find Carl Thomsens billede. -->
   <source pages="65"/>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="XX AA BB CC" confidence="0.91"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1405,6 +1477,9 @@ Saa flytter hun varsomt Foden fra Havens Rosenpark.
   <firstline>Saa tidt har jeg staaet ved et Jernbaneled</firstline>
   <source pages="66-67"/>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABCAB DECDE FACFA GCCGC" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1442,6 +1517,9 @@ Da saa’ jeg de Travle staa lænet og glo
   <firstline>De raaber: Vend Deres Øje mod Øst</firstline>
   <source pages="68-71"/>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABABCDCCD XEXEFGFFG HEHEIJIIJ KLKLMNMMN OPOPQRQQR STSTUVUUV WXWXYWYXW" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1529,6 +1607,9 @@ og dikterede dette Brev!
   <source pages="72-77"/>
   <keywords>tasso,ewald,mueller,ariosto,thorvaldsen</keywords>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="AAABAB ACCDAD EAAFEF AAAGAG AAAHAH IAAJIJ AAAKAK LLLALA ACCMEM LLLNLN LIIXLK AAAOAO CAAPCP QAARQR AAASAS AAATAT LXAFLF" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <quote>
@@ -1675,6 +1756,9 @@ med Hæder Tusind Aar!
   <firstline>Ej paa et kongeligt Domæne</firstline>
   <source pages="78"/>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB AAAA AAAA AAAA" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1722,6 +1806,9 @@ velkommen i min Dagligstue!
   <!-- TODO: Find mottoet. Er det et digt af Hostrup? -->
   <keywords>hostrup</keywords>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB CDCD EXEX FXFX GHGH IJIJ KXKA XLXL MNMN" confidence="0.93"/>
+  </rhyme>
 </head>
 <body>
 <quote>
@@ -1796,6 +1883,9 @@ der har Sands for sit Livs Poesi.
     <written>1893-04-20</written>
   </dates>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABABCDCD CECEFGFG CHCHCXCX CICIAJAJ FKFKFLFL" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1857,6 +1947,9 @@ Barneøjets Stjerner spille Dig imod, —
     <written>1893-06-04</written>
   </dates>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABABACAC DEDEAFAF DGDGAHAH IXIXAJAJ AKAKDEDE" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1918,6 +2011,9 @@ i Tidens store, end uskrevne Bog,
     <written>1893-08-01</written>
   </dates>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABABCDCD AAAAEFEF GAGAHFHF GIGIXJXJ DKDKLGLG" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1979,6 +2075,9 @@ der skal staa Luthers ved Siden.
     <written>1893-08-15</written>
   </dates>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="AABCBCAAD AABEBEFFD AAFXFGAAG AAHIHIFFJ AAACACFFJ" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2045,6 +2144,9 @@ Brug din Dag — den, som følger efter,
     <written>1893-08-19</written>
   </dates>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABXBCDAD CECEXFXF AGAGAHAH CXCXIJXJ EKXKIFXF" confidence="0.93"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2106,6 +2208,9 @@ da gaar Jer Fremtids Arbejdsvej
     <written>1893-10-19</written>
   </dates>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="AXAXBABA CDCDEAEA AFAFGAGA AHAHIJIJ JXJXKAKX" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2167,6 +2272,9 @@ Tanke og Tak holde Mødel
     <written>1894-06-05</written>
   </dates>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABXBXCDC DEFEGHIH XJKJDLHL XMGMKCXC XNXNFCFC AOKOXXXX GXIXACXC" confidence="0.91"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2249,6 +2357,9 @@ da synger Alt, hvad Danmarks er,
     <written>1894-08-01</written>
   </dates>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABXCABBC BDEFBDBF GGXXGGXX XXHHIIJJXXKXLLMMEXXKEENNXX OOPPQQ RBRB QBQB SBSB TBTB CBCB NBNB" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2363,6 +2474,9 @@ Saa grib da al Sommerens Lære!
   <firstline>Danske Land!</firstline>
   <source pages="112-115"/>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABCCBDEDE XXXCXFGFG XAHHAIJIJ KLCCLCMCM KKNNKNONO XECCECPCP" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2438,6 +2552,9 @@ Dagens Værk med dig i Pagt!
     <written>1894-09-08</written>
   </dates>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABABCXCX AXAXADAD EFEFCGCG AHAHAIAI CXCXACAX AJAJAKAK" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <quote>
@@ -2517,6 +2634,9 @@ Himlenes Fugle, Fiskene i Hav,
     <written>1894-09-23</written>
   </dates>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABABABAB ACACADAD EFEFEXEF ECECECEC" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2585,6 +2705,9 @@ for vort Møde paa den lyse Jord!
   </notes>
   <source pages="123"/>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABBA CDDC DEF DEF" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2616,6 +2739,9 @@ thi de har Livet selv til Kildespring.
   <firstline>Vel har jeg vugget mig i Drømmens Rige</firstline>
   <source pages="124"/>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABBA ABBA CAC CAC" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2647,6 +2773,9 @@ Til Arbejd med din Aand og dine Næver!
   <firstline>Det lære skal hver Dødelig at stave</firstline>
   <source pages="125"/>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABBA ABBA CAD CAD" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2682,6 +2811,9 @@ da tag Parti for Livet og dets Sag!
   </notes>
   <source pages="126"/>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="AAAA AAAA BBC BBC" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <quote>
@@ -2719,6 +2851,9 @@ Dem bygges en Sonet af Takkens Ord!
   <firstline>Som Rosenknoppen, der i Mosset boer</firstline>
   <source pages="127"/>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="XAAX BAAB CDE CDE" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2752,6 +2887,9 @@ du bladet har i Vejles Skjønhedsbog.
   <source pages="128"/>
   <keywords>boedtcher</keywords>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABBA ABBX BBC BBC" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2783,6 +2921,9 @@ som den forynget har hin Digters Sind!
   <firstline>Jeg sidder her, fordybet i min Lykke</firstline>
   <source pages="129"/>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABBA ABBA AAA AAA" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2816,6 +2957,9 @@ ja, højere idag end nogensinde!«
   <!-- https://en.wikipedia.org/wiki/PerHasselberg#/media/File:Svöklockan2010.jpg -->
   <source pages="130"/>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABBA ABBA ACX ACX" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2847,6 +2991,9 @@ gi'er Barnehjerters Tak min Tanke Flugt.
   <firstline>Tilfældigt er det, hvor mit Digt skal strande</firstline>
   <source pages="131"/>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABBA ABBA ACD ACD" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2881,6 +3028,9 @@ Jeg <w>tror</w>, der er en Lov for Slægtens Færden!
     <written>1894-03-21</written>
   </dates>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABBA ABBA CBD CBD" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2919,6 +3069,9 @@ paa Fjeldet — paa det store Ocean!
   <source pages="133-135"/>
   <keywords>richardt</keywords>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABABABAA CDCDCDAA AEEAEAFF GAAGGAAA AHAHAHII" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2977,6 +3130,9 @@ Lyst og Alvor — mødes med Honnør!
   <firstline>Den lyse Sommer har Farvellet sukket</firstline>
   <source pages="136-137"/>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABABABAB BCBCBCBC CDCDCDCD" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -3017,6 +3173,9 @@ den skal tilbedes, æres og besynges!
   <firstline>Jeg kaldte Dig min Haves Tusindfryd</firstline>
   <source pages="138-140"/>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABABBCBCC DBDBBEBEE FBFBBGBGG ABABBHBHH" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -3070,6 +3229,9 @@ det bli’er min Rhytmes Takt: at øve Dagens Pligt!
   <firstline>Hør, Dampen messer i hver Skorstenspibe</firstline>
   <source pages="141-143"/>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABCABC CABBAC CCAABB BCBCAA ABACCB BACBCA AAC" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -3132,6 +3294,9 @@ Mens frem der løbes, da skal Sejren kjøbes!
   <source pages="144-145"/>
   <keywords>ibsen,terziner</keywords>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABA BCB CDC DED EBX B FDF DDD DDD D" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -3187,6 +3352,9 @@ Din Kamp er Jordens, — dens din Sejr skal blive!
   <source pages="146-147"/>
   <keywords>terziner</keywords>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABA BCB CBC BDB DBD BBB BEB EBE EBE B" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -3238,6 +3406,9 @@ Om Vej og Tanke skal til Maalet føre!
   <firstline>Du, som de bløde Hynder har tilhuse</firstline>
   <source pages="148-149"/>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="AAA BBB AAA CCC BBB BAB AAA BXB" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -3300,6 +3471,9 @@ ja <i>med</i> — i et brøstfældigt Kammer og — et Køkken!
     <written>1894-08-11</written>
   </dates>
   <quality>korrektur1,korrektur2,side,side</quality>
+  <rhyme>
+    <analysis pattern="ABBABBBCDDCD CCACCAADCCDC CCECCEEACCAC ACAAC" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>

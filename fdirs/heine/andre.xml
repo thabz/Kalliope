@@ -13,6 +13,9 @@
   <indextitle>Im Hafen</indextitle>
   <firstline>Glücklich der Mann, der den Hafen erreicht hat</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="XAXB CDXXEAXBXBX AAEXFABBAXXXBD BGBAAACBCXGCGGXGHABXBXH CXFADXXB BBBBAXAD" confidence="0.90"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -100,6 +103,9 @@ Dreht sich die ganze betrunkene Welt.
   <indextitle>Auf den Flügeln des Gesanges</indextitle>
   <firstline>Auf den Flügeln des Gesanges</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABAB CDCD CXCX CCCC CECE" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -139,6 +145,9 @@ Dreht sich die ganze betrunkene Welt.
   <indextitle>Lied der Marketenderin</indextitle>
   <firstline>Und die Husaren lieb ich sehr</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABXB ACXC CBCD XBXB XEDE XCXC XCXC XCXC" confidence="0.88"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -189,6 +198,9 @@ Aus einer frischen Tonne.
 <head>
   <firstline>Eingehüllt in graue Wolken</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABAB AAXA XBXB" confidence="0.91"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -215,6 +227,9 @@ Um zu schlafen wie die Götter.
   <firstline>Schöne, helle, goldne Sterne</firstline>
   <quality>korrektur1</quality>
   <!-- fra Tragödien nebst einem lyrischen Intermezzo, Dümmler, Berlin, 1823, p. 94. -->
+  <rhyme>
+    <analysis pattern="AAXX" confidence="0.83"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -231,6 +246,9 @@ Herzekrank und bleich und treu.
   <title>Himmel grau und wochentäglich!</title>
   <firstline>Himmel grau und wochentäglich!</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABAB CDCD AEXE" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -257,6 +275,9 @@ Wiederseh, und dieses Wetter!
   <title>Zur Notiz</title>
   <firstline>Die Philister, die Beschränkten</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AAAAAA" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -275,6 +296,9 @@ Lieb und Freundschaft zu entdecken.
   <title>Träumereien</title>
   <subtitle>Zu »In der Fremde«</subtitle>
   <firstline>Mir träumte von einem schönen Kind</firstline>
+  <rhyme>
+    <analysis pattern="ABAB CBCB XDXD" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -300,6 +324,9 @@ Seh ich die Sterne funkeln.
 <head>
   <title>Doktrin</title>
   <firstline>Schlage die Trommel und fürchte dich nicht</firstline>
+  <rhyme>
+    <analysis pattern="XABC XBXB XCXA" confidence="0.85"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -324,6 +351,9 @@ Und weil ich ein guter Tambour bin.
 <text id="heine2022052201">
 <head>
   <firstline>Auf den Wolken ruht der Mond</firstline>
+  <rhyme>
+    <analysis pattern="XAXA XBXB XBXB XBXB" confidence="0.83"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -353,6 +383,9 @@ Küßt mir aus der Brust das Leben!
 <text id="heine2022052202">
 <head>
   <firstline>Es war ein alter König</firstline>
+  <rhyme>
+    <analysis pattern="ABAB CXCX DXDX" confidence="0.88"/>
+  </rhyme>
 </head>
 <body>
 <poetry>

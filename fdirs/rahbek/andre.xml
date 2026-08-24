@@ -16,6 +16,9 @@
   </notes>
   <quality>korrektur1,kilde,side</quality>
   <source in="wilhelm-meister-1801" pages="3-4"/>
+  <rhyme>
+    <analysis pattern="AABBCC DDEECC FFGGCC" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -59,6 +62,9 @@ Gaaer vores Vei! o Fader drag didhen.
   </notes>
   <source pages="48">Elisabeth Birkeland: <i>En miskendt thybo</i>, 1982.</source>
   <firstline>Baltias Thermopyle! som byder</firstline>
+  <rhyme>
+    <analysis pattern="AXXABXCBCBC" confidence="0.90"/>
+  </rhyme>
 </head>
 <body>
 <poetry>

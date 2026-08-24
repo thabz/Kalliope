@@ -25,6 +25,9 @@
   <title><num>Nr. 1</num>Til Cajsa Stina</title>
   <firstline>Gutår båd natt och dag</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AABBAABBBA CCDDCCEEEC" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -68,6 +71,9 @@ Då gör jag min svane-sång.
   <title><num>Nr. 2</num>Til Fader Berg, rörande Fiolen</title>
   <firstline>Nå skrufva Fiolen</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABBBCAXXXCDCDCEED CFFXCCGGGCHCHCIIH CJJJCCKKKCXCXCCCX" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -137,6 +143,9 @@ Och ha sin flicka,
   <title><num>Nr. 3</num>Til en och hvar af systrarna, men enkannerligen til Ulla Winblad</title>
   <firstline>Fader Berg i hornet stöter</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AAXBBXBBBCC AADAADAAAEE FFGAAGBBBHH EEIAAIEEEJJ" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -202,6 +211,9 @@ Står jag i Charons båt.
   <title><num>Nr. 4</num>Enkannerligen til Anna Stina</title>
   <firstline>Hej Musikanter ge Valdthornen väder</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABABCDDDC ABABCDDDC EBEBFAAAF" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -247,6 +259,9 @@ Och gator och gränder och stolar och bord.
   <title><num>Nr. 5</num>Til the trogne Bröder på Terra Nova i Gaffelgränden</title>
   <firstline>Käre bröder, så låtom oss supa i frid</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AABBBBAXCBBBBC DDBBBBDEEBBBBE FFGGBBFHHIIJJH" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -308,6 +323,9 @@ Och viner.
   <firstline>Käraste Bröder Systrar och Vänner</firstline>
   <!-- Ikke en variant af bellman2001061309: Forskellige sange med formelagtig indledning. -->
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABAAABCDEDEFFFFX GHGGGHCDCDXIIIIX" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -355,6 +373,9 @@ Bindas i sängar, på ängar och fjälar. <i>[D.C.]</i>
   <title><num>Nr. 7</num>Som synes vara en Elegie, skrifven vid Ulla Winblads säng, sent om Aftonen</title>
   <firstline>Fram med Bas-Fiolen, knäpp och skrufva</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABABAXAX CXCDCXCX AEAEFGFG FHFHDXDX IJIJCECE" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -419,6 +440,9 @@ Qvickna åter i din graf.
   <title><num>Nr. 8</num>Til Corporal Mollberg</title>
   <firstline>Dörrarna öpna, Fiolerna klara</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABABCAAAAC DBDBXDDDDX ABABEAAAAE ABABFAAAAF" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -481,6 +505,9 @@ Och håll nu din trut.
   <firstline>Käraste bröder, systrar och vänner</firstline>
   <!-- Ikke en variant af bellman2001061306: Forskellige sange med formelagtig indledning. -->
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AABCBBBCDBDBDDCEEFFE BBAGAAAGDBDBDDGHHFFX AAFIBBFIJFJFFFIKKAAK BBLMAALMBABAFFMNNBBN" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -576,6 +603,9 @@ här är allting - här är jag.
   <title><num>Nr. 10</num>Klingar väl vid Flöjtraver</title>
   <firstline>Systrar hören min musik</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABBAACCXD EBBEEFFXD XBBXXFFXD GBBGGCCXD" confidence="0.93"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -634,6 +664,9 @@ Glöm alt lifs besvär.
   <subtitle>Klingar väl vid Valdthorn</subtitle>
   <firstline>Hej! sade Fredman hvar gång han hörde Valdthorn börja skråla</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABABXACC ABABXADD ABABXAEE FBFBXFXX ABABXAXX GBGBXGDD" confidence="0.93"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -709,6 +742,9 @@ Ser du Cupidos Altar, släpp in den dägliga Nunnan,
   <title><num>Nr. 12</num>Elegi öfver slagsmålet på Gröna Lund</title>
   <firstline>Gråt, fader Berg, och spela</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AXXAXXABABAX CDDCEEFGFGFG AHHAIIFJFJFJ KLLKFFAXAXAX" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -772,6 +808,9 @@ har jag lärt.
   <title><num>Nr. 13</num>Till brodern Bredström</title>
   <firstline>Nå, ä´ nu alla församlade här</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="XAXXBCCBDDXEFEFGGGG HXXHIIIIJJIKFKFLLLL MMMMGGGGFFGDFDFNNNN OOOOPPPPQQPKRKRXAXX SSSSXXXXFFXXDXDXXDX" confidence="0.93"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -884,6 +923,9 @@ Men balen slutad är.
   <subtitle>Klingar väl på alla instrumenter, men isynnerhet vid knäppning på basfiol</subtitle>
   <firstline>Hör, I Orfei drängar</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AABCDDBCEEE BBFGFFFGDDD AAFHFFFHIII FFFJAAFJKKK FFFDBBFDXXX FFLMFFLMNNX" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -967,6 +1009,9 @@ drick, bror Wetz - du är poet!
   <title><num>Nr. 15</num>Enkannerligen til Theophilum Skomakar-Gesäll, under dess förföljelse skrifven til tröst och hugsvalelse</title>
   <firstline>Käraste min Theophile</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABBXXBBXCCCX ADDEEDDECCCE ACCFFCCFFFFF AFFXXFFXFFFX XCCGGCCGFFFG" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1044,6 +1089,9 @@ Din Skomakar-lurk.
   <subtitle>Klingar väl på Oboe</subtitle>
   <firstline>Fader Bergström fingra ditt Oboe, blås</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AABBXCDD XXEEFCGG BBHHXCII JJKKXCLL XXFFXCMM" confidence="0.93"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1100,6 +1148,9 @@ Hvad slår nu klockan? hon slår Tolf.
   <title><num>Nr. 17</num>Til Syster Lisa</title>
   <firstline>Systrar och Vänner</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AABCDCCBEDFFD CCGCDHHGCDXXD HHXCDEEXCDXXD AAICDJJIHDKKD EEFEDHHFHDLLD AAFADCCFADMMD" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1195,6 +1246,9 @@ Hvem vill bli Brudgum? här har ni brud. - - - <i>[Timp.]</i>
   <title><num>Nr. 18</num>Til Gubbarna på Terra Nova i Gaffelgränden vid Skeppsbron</title>
   <firstline>Gubbarna satt sig at dricka</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AAAAXAXA AAAABCBC DDDDEBEB AAAAFCFC DDDDGHGH DDDDIJIJ" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1260,6 +1314,9 @@ Skälm den som laget nu rubbar.
   <title><num>Nr. 19</num>Til Systrarna på then Konungsliga Djurgården</title>
   <firstline>Trumslagarn kommer, flickor god dag</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AAXXXX XXAABB CCDDEE FFXXGG HHIIJJ" confidence="0.91"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1306,6 +1363,9 @@ Denna Epistel, ja Amen! Trurunt.
   <title><num>Nr. 20</num>Til Fader Berg och Jergen Puckel</title>
   <firstline>Står du och gråter</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABACDBDEXFFEEX GBGCGBGHHGGAAX FBFCEBEIIAAAAX EBECFBFJJAADDX" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1377,6 +1437,9 @@ Käre Vänner Bacchus rår,
   <title><num>Nr. 21</num>Skyarna tjockna</title>
   <firstline>Skyarna tjockna</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AABAABAACDDC EEXFFXAAGAAG DDHDDHEEXDDX AAIJJIKKLAALMMNAANEEOEEO" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1454,6 +1517,9 @@ tumlar med nymfen i sängen där står.
   <title><num>Nr. 22</num>Til the Nybyggare på Gröna Lund.</title>
   <firstline>Glasen darra mellan knogen</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AAAABA X CCCCBC XXX" confidence="0.91"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1487,6 +1553,9 @@ sup mig til.
   <title><num>Nr. 23</num>Som är ett soliloquium, då Fredman låg vid krogen Kryp-in, gent emot bankohuset, en sommarnatt år 1768.</title>
   <firstline>Ack, du min moder, säj vem dig sände</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AXAXBBCBBCDD AEAEFFGHHGIII JKJKKKLFFLMMM BNBNHHOBBOPPP HQHQFFDFFDRR SXSXBBTUUTXVV BWBWAAXCCXJJJ FXFXBBJSSJYYY" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1608,6 +1677,9 @@ och som jag så full.
   <title><num>Nr. 24</num>Till kära mor på Bruna Dörren</title>
   <firstline>Kära syster</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AAXXBBXXXXAACCBBXDBX AAEEFFGGGGAAAAFFAHFIDDJJFFIIHHDDDDDDDXDX" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1681,6 +1753,9 @@ Hit en sup, jag törstar ihjäl.
   <title><num>Nr. 25</num>Som är ett försök til en pastoral i bacchanalisk smak, skriven vid Ulla Winblads överfart til Djurgården</title>
   <firstline>Blåsen nu alla</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AABABCCDCDEEEFF XAGAGAACACXXXHH IIJIJAAXAXXKKXX AALALCCMCMNNNXX IIOIOPPQPQRRRSS AATATUUXUXXXXBB CCXCXIIHIHVVVBB AAWAWAAXAXYYYXX" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1820,6 +1895,9 @@ och lär.
   <title><num>Nr. 26</num>Rörande mutter Berg och angående Lotta i Kolmätargränden och vad som passerat</title>
   <firstline>Var står fiolen - säj, min son?</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="XABBAACCXXDDEEFFGG HHBBHHIIJJGGXKKLL XXMMXXNNOOPPEEQQPX" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1887,6 +1965,9 @@ Mutter, i går gick hon ... med en palt.
   <title><num>Nr. 27</num>Som är dess sista tankar</title>
   <firstline>Gubben är gammal, urverket dras</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABABCCBDEDEFFE GHGHIIH" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1921,6 +2002,9 @@ detta mitt stoft få sig blanda!
   <title><num>Nr. 28</num>Om ett anställt försåt emot Ulla Winblad</title>
   <firstline>I går såg jag ditt barn, min Fröja</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AXAXBXBX AXAXBXBX BCBCBDBD BEBEAXAX AFAFAGAG" confidence="0.91"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1977,6 +2061,9 @@ och lycklig bliv!
   <title><num>Nr. 29</num>Till de förnäma</title>
   <firstline>Movitz, tag dina pinnar</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AABBCDDEECFFFGGGEEHHG IIIICHHHHCXXXXJJKKIIJ DDDDCIIDDCDDDDLXMMDDL" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2055,6 +2142,9 @@ kränkes en ann!''
   <firstline>Drick ur ditt glas, se döden på dig väntar</firstline>
   <quality>korrektur1</quality>
   <keywords>elegi</keywords>
+  <rhyme>
+    <analysis pattern="ABABCCB DEDEFFE DGDGFFG HIHIFFI DBDBFFB" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2106,6 +2196,9 @@ Skull' du åstunda
   <title><num>Nr. 31</num>Över Movitz, då han blev uppiskad på gatan, för det kvinten sprang på basfiolen, en sommarafton 1769</title>
   <firstline>Ob solum punctum caruit Robertus asello</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABXBXBXXB BCBCDEED FGFGHXXH DXDXDAAD IJIJKXK DLDLDXXD HMHMDNND FOFODPPD DQDQHRRH DSDSFTTF" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2207,6 +2300,9 @@ Tvi sådan batalje!
   <title><num>Nr. 32</num>Till fader Movitz, varutinnan han liknar honom vid ett skepp</title>
   <firstline>Kors, utan glas du ser ut, din kanalje</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABABCXXX DEDECFFF DGDGCHHH" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2245,6 +2341,9 @@ tag til valet en sup!
   <title><num>Nr. 33</num>1:o om fader Movitz' överfart til Djurgården och 2:o om den dygdiga Susanna</title>
   <firstline>Stolta stad</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AABBCCDDDXEE FF GGXXHHIIIJJJ XAKXLXFKLMF NNOOPPXXXQQQ LLMMXXRRRXXX" confidence="0.92"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2325,6 +2424,9 @@ i dessa böljor dö
   <title><num>Nr. 34</num>Till Movitz, när elden var lös i hans kvarter uti Kolmätargränden</title>
   <firstline>Ack, vad för en usel koja!</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABABCBBCB DEDEAEEAE FXFXGXXGX HIHIGIIGI AJAJAJJAJ FXFXGKKGK GLGLFLLFL GXGXCXXXX HMHMHMMHM ANANHNNHN AIAIHIIHI" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2446,6 +2548,9 @@ somnar vid ett sexörsljus.
   <title><num>Nr. 35</num>Angående sin sköna och hennes obeständighet</title>
   <firstline>Bröderna fara väl vilse ibland</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABAAABAACBCC DEDXDEDDXEEE FGFFFGFFBGBX HEHHHEHHIEII JKJJJKJJLKLL" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2522,6 +2627,9 @@ Slå, kypare, i! - Det är nog.
   <title><num>Nr. 36</num>Rörande Ulla Winblads flykt</title>
   <firstline>Vår Ulla låg i sängen och sov</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABABCDCDEBEBBBFGGF HBHBXDXDIDIDBBJBBJ KDKDXLXLGBGBMMXGGX NGNGXBXBOBOBDDNBBN PBPBQBQBRBRBBBLIIL SGSGTUTUVWVWWWXGGX YDYDZBZBHBHBGGA27WWA27 A28LA28LA29BA29BELELDDA30UUA30 XBXBXGXGA31BA31BGGA32LLA32" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2705,6 +2813,9 @@ i sitt paradis!
   <title><num>Nr. 37</num>Till Mollberg på post vid Kungsträdgården</title>
   <firstline>Mollberg, stå stilla, stå stilla vid grind</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABABCBBC DBDBXEEX FBFBXGGX XHXHXBBX BGBGXIIH JHJHEEEE XIXIKBBK LBLBXMMX NBNBOEEO XGXGXBBX PIPIQRRQ" confidence="0.93"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2815,6 +2926,9 @@ brandvakten ropar på slaktarhusbron."
   <title><num>Nr. 38</num>Rörande Mollbergs paradering vid korporal Bomans grav</title>
   <firstline>Undan ur vägen - se hur profossen med plymager</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AXAXBCBC ADADBXBX AEAEAAAA BXBXAFAF AGAGHIHI JKJKLXLX HXHDJMJM HANHNHOHO PXPXAQAQ" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2908,6 +3022,9 @@ tack för god vakt!
   <title><num>Nr. 39</num>Öfver Bergströmskans Porträt på Liljans krog, i Torshella</title>
   <firstline>Storm och böjlor tystna ren</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AABBCCCXXCCDDDEXEXDFFDAAD DDDDDDDGGDDHHHIJIJKLLKMMX XXDDBBBNNOOCCCPQPQCRRCSSH HHAAHHHTTKKAKAXUXUAVVAAXX" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -3029,6 +3146,9 @@ Fader Bergström lefver än.
   <title><num>Nr. 40</num>Angående bröllopet hos Bensvarvarns</title>
   <firstline>Ge rum i bröllopsgåln, din hund</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABCCABBDDEFFEE GHDDGHHDXIIXX JDFFJDDDDKDDKK LMHHLMMDDNFFDN OFHHOFFIIPQQPP RSFFRSSBBXHHXX XHFFXHHTTEHHEE UFDDUFFDDXFFVV XDDDIDDDDWBBWW" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -3174,6 +3294,9 @@ prästen två. Sen skildes de åt.
   <title><num>Nr. 41</num>Vid et tilfälle då Christian Wingmark miste sin nattkappa i Slagsmålet med Mollberg</title>
   <firstline>Mollberg satt i paulun</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AAAABBBBCCDD EEEEFFFFGGXX HHHHIIIICCEE JJJJKLLKMMHH NNNNMMMMOOEE PPPPQQQQEEXX" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -3263,6 +3386,9 @@ Hustru min slår mig ihjäl.
   <title><num>Nr. 42</num>Rörande Kortspelet på Klubben</title>
   <firstline>Ren Calad jag spår och tror</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AABBAXXCCDEEX XXFFXGGHHGEEG BBCCBEEEEEBBE IIDDIEEDDECCE JJBBJXXEEXBBX XXEEXXXKKXBBX LLBBLMMDDMDDM XXKKXXXDDXEEX XNHHNOOKKOEEO PPKKPQQBBQDDQ" confidence="0.93"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -3414,6 +3540,9 @@ Hvem skal blanda? Jag.
   <title><num>Nr. 43</num>Til Ulla Winblad, skrifven vid et ömt tilfälle</title>
   <firstline>Värm mer Öl och Bröd</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="XAAABXCCCXXAAAX XAAABDEEEDDAAAX" confidence="0.92"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -3457,6 +3586,9 @@ Masken dold i blomman bådar blommans död. <i>[D.C.]</i>
   <title><num>Nr. 44</num>Öfver Bredströmskans och Movitz melancholi</title>
   <firstline>Movitz helt allena</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABACABABXXDDX EFECEFEFGGEEX HIHCHIHIJJKKX ALACALALXXEEX KHKCKHKHEEKKX" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -3538,6 +3670,9 @@ Spelar psalmen om igen. <i>[D.C.]</i>
   <title><num>Nr. 45</num>Till fader Mollberg rörande hans harpa, och tillika ett slags ad notitiam, att Mollberg led oskyldigt på krogen Rostock</title>
   <firstline>Tjänare, Mollberg, hur är det fatt</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AABBCCDDEEE FFGGHHXXXXX IIXFAAJJEEE KKIILLGGXXX MMXXNNOOEEE XXPPQQGGRRR" confidence="0.93"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -3621,6 +3756,9 @@ Följ mig, Apollo! Pling plingeli plang.
   <title><num>Nr. 46</num>Huru Mollberg skal bjuda til begrafning efter Mutter på Krogen Wismar, och om hans affärd ifrån Sterbhuset</title>
   <firstline>Undan ur vägen, ge rum för Courirn, gå ur</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="XAXABBAACCDEEEDFDFGXGX XXXXHXHXFFGIIIGJGJDXDX XDDDDDDDKKHLLLHMHMNONO" confidence="0.93"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -3701,6 +3839,9 @@ Och vil ensam bli.
   <title><num>Nr. 47</num>Angående Mollbergs återkomst til Sterbhuset på Krogen Wismar</title>
   <firstline>Kommer intet Mollberg? Jo nyss på stund</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AAAABBBBCCCC XXXXDDDDEEEE FFFFGGGGHHHH IIIIXXXXJJJJ" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -3764,6 +3905,9 @@ Och torka din Fåle och drick.
   <title><num>Nr. 48</num>Hvaruti afmålas Ulla Winblads hemresa från Hessingen i Mälaren en sommar-morgon 1769</title>
   <firstline>Solen glimmar blank och trind</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABABCCCB XDXDEEED CDCDFFFD GDGDHHHD IJIJXXXJ KJKJLXLJ MDMDNNXD OLOLPPPL XDXDIIID CJCJQQQJ RDRDLLLD SJSJTTUJ XMXMXHUM VDVDWXWD LDLDSSSD XLXLXXXL SMSMCCCM XDXDCCCD CJCJXXXJ YUYUZZZU A27UA27DA28A28A28D" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -4004,6 +4148,9 @@ Hör ju til oss alla.
   <title><num>Nr. 49</num>Angående Landstigningen vid Klubben i Mälaren en sommar-afton 1769</title>
   <firstline>Mamsell Ulla, märk Mamsell</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="XXAAXXXAAXAAX XXBBXXXCCXDDX EEFFEGGBBGBBG HHIIHJJFFJBBJ AAIIAEEKKEDDE LLFFLMMKKMBBM NNBBNCCDDCIIC OOIIXPPDDPBBP" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -4127,6 +4274,9 @@ Vivat Bacchi bygd!
   <title><num>Nr. 50</num>Om des sista Ögnekast på Ulla Winblad vid Hännes återfart ifrån Djurgården</title>
   <firstline>Phoebus förnyar</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AAAXBBBCAAAAAAAXADEDADDADBBFFGHGHDHGE AAAXHHHCIIBBBBBXBJEJBJJBXHHFFBHBHBHBE" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -4214,6 +4364,9 @@ Farväl min Nymph! blåsen Musikanter. - - <i>[Corno.]</i>
   <title><num>Nr. 51</num>Angående Concerten på Tre Byttor</title>
   <firstline>Movitz blåste en Concert</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="XAXABCXCDDXX EAEAFGFGDDHX IJIJDKDKDDHH XACALALAHHCC MJMJNANAHHOO PGPGQJQJHDBB" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -4304,6 +4457,9 @@ Vi dricka skålen med högmod och rang.
   <firstline>Movitz, mitt hjerta blöder</firstline>
   <quality>korrektur1</quality>
   <keywords>elegi</keywords>
+  <rhyme>
+    <analysis pattern="ABAACAAAAC DEDDXFFFFX FAFFXEEEEA FEFFGFFFFG FBFFXFFFFX" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -4370,6 +4526,9 @@ Nu är du fri min Son. :||:
   <title><num>Nr. 53</num>Angående Slagsmålet nedanför Danto-Bommen hos T. en höstnatt</title>
   <firstline>Vid et stop Öl och några Supar</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AXAXBBCC DEDEBBFF GCGCBBXX AHAHBBII DJDJBBKX DLDLBBMM KNKNBBOO PKPKBBXX DQDQBBRR KSKSBBLL ATATBBUU LVLVBBPP KXKXBBXX HWHWBBXX" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -4507,6 +4666,9 @@ Slå'n i hjernan! Slå'n - Nej hålt!
   <title><num>Nr. 54</num>På St. Cathrina Kyrkogård</title>
   <firstline>Aldrig en Iris på dessa bleka fält</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="XAXBABCCDD EFEGFGCCHH DIDJIJFFKK LCLMCMGGNX OFONFNCCII PCPQCQCCRR" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -4587,6 +4749,9 @@ I en fållbänk välj en ny Corporal.
     <picture src="bellman2001061355-p1.jpg">Mollberg spiller kegler. Bellman står i midten iført den svenske dragt, og Kempenskölds tjenestepige, Catharina, sidder i gyngen. Illustrationen indgår i <i>Tjälvestasamlingen</i> (1792) og er tydeligt inspireret af Fredmans Epistel nr. 55. Lavering af Pehr Hilleström. Stockholms Stadsmuseum.</picture>
   </pictures>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABBABXAB CDDCDDCD AEEAEEAE FXXFXXFX CGGCGGCG AHHAHHAH FIIFIIFI CAACAACA CJJCJJCJ CKKCKKCK CFFCXXCX CLLCLLCL CMMCXXCM" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -4715,6 +4880,9 @@ Vi ha krans kring hjessan fått.
   <title><num>Nr. 56</num>Angående Mor Maja på Förgylda Bägaren</title>
   <firstline>Se Mollberg med svart Råck och Flor</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AAAAAAABBBBBBBCCDEEDD XXXFXFXXGGGGGGX DDDDDDDXXXXXXXX HHHHHHHIIIIIIIX" confidence="0.92"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -4796,6 +4964,9 @@ Men Clotho med sin sax &amp;c.
   <title><num>Nr. 57</num>Om Barnsölet</title>
   <firstline>Allting är rigtigt clarerat och gjort</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABABBCBCDEDEFGFGHHHH IBIBFCFCFXFXJKJKHHHH LJLJBXBXFMFMDNDNHHHH OBOBBPBPJXJXFQFQHHHH" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -4892,6 +5063,9 @@ Smäll nu i luften ett skott af pistoln.
   <firstline>Hjertat mig klämmer</firstline>
   <quality>korrektur1</quality>
   <keywords>elegi</keywords>
+  <rhyme>
+    <analysis pattern="AABCCBAAAB DDBEEBEEEX FFBGGBCCCX HHBFFBFFFX" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -4947,6 +5121,9 @@ Bränvins förbudet må nu gärna vara.
   <title><num>Nr. 59</num>Til Lo-Katten</title>
   <firstline>Båtsman tag nu din lufva</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABBBCCABBBXXDDDXX ABBBEEABBBFFBBBFF" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -4998,6 +5175,9 @@ Bränvins förbudet må nu gärna vara.
   <title><num>Nr. 60</num>Til Bränvins-Advocaten Fader Kulkus om något som passerat</title>
   <firstline>Sitter du ännu och ljuger</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AAAABBBACBA AAAXDDDXCXX EEEFEEEFCAX" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -5045,6 +5225,9 @@ Hvälf om stopet hvälf.
   <title><num>Nr. 61</num>Til K. Mor på Fyrkanten</title>
   <firstline>Kära Mor</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABBACDDCDDC XAAXXBBEFFE" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -5082,6 +5265,9 @@ Brutna ben i Caprioler
   <title><num>Nr. 62</num>Angående sista Balen på Gröna Lund</title>
   <firstline>Movitz Valdthornet proberar</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABACDDBEEB ACACFFCFFC AEACFFEGGE EXECFFHFFX DXDCDDXFFX AIACEEIEEI AJDCFFJFFJ FXFCAAXFFX FKFCDDKAAK FLFCDDLMML EDECEEDDDD FNFCEENEEN AXACEEEGGE FOFCPPHDDO HQHCAAQEEQ DRDCEEREER FSFCMMSDDS" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -5312,6 +5498,9 @@ Brutna ben i Caprioler
   <title><num>Nr. 63</num>Diktad midt i veckan</title>
   <firstline>Fader Bergström, stäm up och klinga</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AAABCCCBAAABDEDECFCFGGGF GGGHGGGHCCCHIJIJAXAXAAAX" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -5375,6 +5564,9 @@ Win och Flickor och Fredmans Stråka
   <title><num>Nr. 64</num>Rörande sista Balen hos Frömans i Horns-Kroken</title>
   <firstline>Fäll dina ögon och skäms nu din tåssa</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABABBXXXCCDCCD EFEXXXGGCCHCCH IFIXXXXXCCGCCG AFAJJXKKCCLCCL" confidence="0.93"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -5452,6 +5644,9 @@ Paltarna skyldra, Bacchus ropar drick.
   <title><num>Nr. 65</num>Om Styrmans-Dottren Gretgens död på Fabriken</title>
   <firstline>Movitz med flor om armen, hålt</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="XXABBBCDX XXAEEEXX FFAGGGXX HHAIIIXCX JJAXXXXDX KKALLLCX" confidence="0.88"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -5530,6 +5725,9 @@ Vid glas vi vår sorgesång förklara. <i>[D.C.]</i>
   <title><num>Nr. 66</num>Til Movitz Målare</title>
   <firstline>Se hvar Movitz sitter där</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="XXAXBBABCDCDDD EECEFFAFAXAXXX GGHGIIHIAXAXXX XXCXJJCJKLKLLH XXAXMMAMCNCNNN" confidence="0.92"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -5624,6 +5822,9 @@ Narrar gubben från sin tafla stiga opp,
   <title><num>Nr. 67</num>Til Mutter på Tuppen</title>
   <firstline>Fader Movitz, Bror</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AAABBBCDCXEEE FFFGGGCXCXHHH XXIIIICXCXJJJ KKKXLLCMCMNNN AAADDDCXCXOOO OOOPPPCQCQXXX" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -5729,6 +5930,9 @@ Har Movitz sin Mamsell.
   <title><num>Nr. 68</num>Angående sista balen på Grönlund</title>
   <firstline>Movitz, i afton står Baln</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AABBCDDEEDDEEC XXFFCGGFFGGHHX IIHHCXXJJKKLLX MMHHCCCEECHLLX FFFFCNNOONNLLX" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -5823,6 +6027,9 @@ Har Movitz sin Mamsell.
   <title><num>Nr. 69</num>Om Mollberg Dansmästare</title>
   <firstline>Se Dansmästaren Mollberg, Bröder</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABACBBBCDEDEEEEC FGFHGAAHIGIGBBBX AJAKJGGKXAXABBBK EBELBEELJEJEGGGL AEAMEBBJXAEABBBM AGANGOONJBMBBBBN" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -5946,6 +6153,9 @@ Dansa, sjung och drick.
   <title><num>Nr. 70</num>Om något som passerade i Artilleri-Lägret Anno 1773</title>
   <firstline>Movitz vik mössan högt öfver öra</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AXAXAAAAXX ABABCCCCAB DEDEAAAAFE AAAACCCCXA GGGGAAAAXG AXAXGGGGHX HXHXAAAAFX" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -6047,6 +6257,9 @@ Ren kring luntan Hymens Facklor brinna;
   <subtitle>Pastoral, dedicerad til herr assessor Lundström.</subtitle>
   <firstline>Ulla, min Ulla, säj, får jag dig bjuda</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABABACACDADDEAEAAAA AFAFAABDADDEAEAAAA AGAGAHAHDADDEAEAAAA" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -6117,6 +6330,9 @@ gudomliga!''
   <title><num>Nr. 72</num>Lämnad vid Cajsa Lisas säng, sent om en afton</title>
   <firstline>Glimmande nymf, blixtrande öga</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AAAABBCCXDD AAEEFFAAXXX AAGGHHIIJJJ" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -6164,6 +6380,9 @@ Håll med fioln; god natt!
   <title><num>Nr. 73</num>Angående Jergen som förskref sig til Fan</title>
   <firstline>Fan i Fauteuillerna! stolarna kullra</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AAAABCBCBDDBDEDEFGFGDFG AAAAXFXFXAAXDHDHDIDIDDH" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -6226,6 +6445,9 @@ Manu mea propria, auf Kruken Rosenthal.
   <subtitle>Dedicerad til Herr Professoren och Ridd. Sergel</subtitle>
   <firstline>Min Son!</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABCCBABBCDXXEFEFX GGHHIIJJBBXXBBKKBBXXLLHHIIMMBB NLOOLNLLNDBBXPXPXQQXXX" confidence="0.93"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -6314,6 +6536,9 @@ Hvar är min sabel? Marsch! - - - -
   <subtitle>Dedicerad til Kongl. Capellmästaren Kraus.</subtitle>
   <firstline>Skratta mina barn och vänner</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AAABCCBDEDEAAB FFFGDDEFEFEAAG FFFHGGHDEDEFFH AAAIJJIFEFEAAI" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -6391,6 +6616,9 @@ Kärleks harm och qual.
   <title><num>Nr. 76</num>Til Mutter på Wismar, rörande Hans Jergen, då han blev utpiskad ifrån Balen</title>
   <firstline>Se Hans Jergen hur han sig bockar</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABABCCCDX EFEFGGGGG CHCHIIDJI KBKBXXDXD EJEJLDDDL" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -6460,6 +6688,9 @@ Hohl mich der Teuffel! Hundschfott, Carnalje,
   <title><num>Nr. 77</num>Angående Jungfru Sophia på Lokatten och om något som passerat</title>
   <firstline>Klang mina Flickor! se skyarna glimma</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABABCDCD EFEFXAXA AGAGBHBH DIDIJKJK KXKXJEJE KXKXXAXA ELELXAXA AMAMIAIA" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -6551,6 +6782,9 @@ Mer skall i Lakanen spöka.
   <subtitle> På Fader Didriks Namnsdag år 1780, sammanstämt på Amsterdam, et Näringsställe i Stora Hopar gränd.</subtitle>
   <firstline>Knapt Jeppe hant ur gluggen gå in</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="XXAAXXXXBBXXCCDD EEFFGGHHIIXXJJKK LLMMNNGGOOXXPPQQ XXRRNNSSXGTTUUVV" confidence="0.92"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -6636,6 +6870,9 @@ Hurra och hurra för vår ädla Madam
   <title><num>Nr. 79</num>Afsked til Matronorna, synnerligen til Mor Maja Myra i Solgränden vid Stortorget, Anno 1785.</title>
   <firstline>Charo i Luren tutar</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABACABACDDEEBBFFC BBBGBBBGHHIIHHAAG JDJXJDJXAADDHHKKX DADHDADHBBHHBBXXH HAHFHAHXBBDDBBLLJ" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -6747,6 +6984,9 @@ Tils i den svarta skuggan inga himlar syns;
   <firstline>Liksom en Herdinna, högtidsklädd</firstline>
   <keywords>kellgren</keywords>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="XAXABBCC XDXDEEFF XXXXGGHH IJIJKKLL XMXMXXNN OPOPQQRR KSKSTTUU" confidence="0.93"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -6834,6 +7074,9 @@ Med Mollberg hon snarkar ännu.
   <subtitle>Diktad vid Grafven. Dedicerad til Doctor Blad.</subtitle>
   <firstline>Märk hur' vår skugga, märk Movitz Mon Frere</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="XAXAXXBXB CACADDADA XEXEFFAFA GHGHIIHIH" confidence="0.93"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -6892,6 +7135,9 @@ Vi ä torstiga alla.
   <subtitle>Pastoral, dedicerad til Kgl. Secreteraren Leopoldt.</subtitle>
   <firstline>Hvila vid denna källa</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AAABAAABBABAXC AAAXDDDXXAXAXC EEEFAAAFFEFEFC GGGXGGGXXGXGXC GGGFEEEFFGFGFC AAAHEEEHHAHAHC" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>

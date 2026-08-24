@@ -46,6 +46,9 @@ Det var nærv. Udgivers oprindelige Haab at meddele alle de paa forskjellige Ste
   <title>Motto</title>
   <toctitle>Motto</toctitle>
   <firstline>Stille og mørkladen er vel min Hede</firstline>
+  <rhyme>
+    <analysis pattern="ABAB" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -69,6 +72,9 @@ Og sine Triller i Ørkenen Slaaer.
   <subtitle>1810</subtitle>
   <firstline>Endnu engang, I længst henfarne Dage!</firstline>
   <source in="bd1" pages="1-5"/>
+  <rhyme>
+    <analysis pattern="ABAC ADAD ECEE FGFG HEHC FIFI AJAJ HKHK ALAJ AMAM ENEN AXAB FOFO EPEP AKAK EQEQ RKRK ASAS AAAA TSTS FEFE AXAG ALAJ AEAE TUTU" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -210,6 +216,9 @@ Naar ingen veed hvor Skjaldens Gravhøj findes,
     <note>* Paa Møen.</note>
   </notes>
   <source in="bd1" pages="5-10"/>
+  <rhyme>
+    <analysis pattern="ABBACCDBBDEFFEFGGFFAAFHAAHXFFE FIFIAJAJKLKLFMFMBNBNAGAGAOAOBPBXFQFQARARKEKSBCBCAXAMAMAMAPAPBTBTBUBUBXBXBXBRAGAGBJ BJAGAGVFVFBIBIBWBWBFBFBXBXAUAUBDBDAYAYBXBXZBZS" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -385,6 +394,9 @@ Dens Mulm er meer end Livets Solglands værd.
   <subtitle>(Et jydsk Sagn)</subtitle>
   <firstline>Den rige Mand triner af Døren ud</firstline>
   <source in="bd1" pages="10-12"/>
+  <rhyme>
+    <analysis pattern="AABB CDEF GGHH HHFE EECX BBII DDII JJKK LLAA BBXX" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -448,6 +460,9 @@ Da faldt den rige Mand død til Jord.
   <indextitle>Ynglingen i den store Stad</indextitle>
   <firstline>Jeg vanked med Bøssen under min Arm</firstline>
   <source in="bd1" pages="12-15"/>
+  <rhyme>
+    <analysis pattern="ABABCC BDBDEE FGHGII JKJKBB JKJKBB LMFMNN FOXOXX PXQXBB BGBGXX RMRMQP SHSHBX XHBLTT BPBQUU" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -552,6 +567,9 @@ Jeg vendte mit Ansigt omkring og græd.
   <indextitle>Min Yndlingsdal</indextitle>
   <firstline>Hvor est du, elskte Plet! hvad er dit Navn?</firstline>
   <source in="bd1" pages="15-17"/>
+  <rhyme>
+    <analysis pattern="ABAB XCXC DEDE FBFB DBDB GBGB BBBB FDXD HIHI JCJC KCKC" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -620,6 +638,9 @@ Jeg hvirvles bort i mine Dages Strøm,
   <indextitle>Gjenfærd</indextitle>
   <firstline>Vægteren vaager den Nat saa lang</firstline>
   <source in="bd1" pages="17-18"/>
+  <rhyme>
+    <analysis pattern="ABAC DEDE XFXF XGXG HIHI JXJX KCKB" confidence="0.93"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -668,6 +689,9 @@ Men ej for Samvittigheds hvasse Braad,
   <indextitle>La Cours Død</indextitle>
   <firstline>Min Ven er død! lad Taaren flyde!</firstline>
   <source in="bd1" pages="18-19"/>
+  <rhyme>
+    <analysis pattern="AABB AABB BBXX AACC BBDD EEFF GGHH" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -720,6 +744,9 @@ Engang det blier i Graven ogsaa Morgen:
     <note>Fri gendigtning af Goethes <xref type="translation" poem="goethe2000010805"/>.</note>
   </notes>
   <source in="bd1" pages="20-21"/>
+  <rhyme>
+    <analysis pattern="AABB CCDD CCEX FFGG XXDD HHEE IIJJ KKLL" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -775,6 +802,9 @@ Da var den Pige af Døden bleg.
     <note>Gendigtning af Schillers <xref type="translation" poem="schiller2018100401"/>.</note>
   </notes>
   <source in="bd1" pages="21-27"/>
+  <rhyme>
+    <analysis pattern="ABABCC DEDECC FGFHII JKJKII FLFLII IMIMCC NOPOII QDQDRR BSBSCC QTQTCC UEUECC IVIVCC CPCNII WXWXII IMIMCC NYNOFF ZOZYCC A27SA27SCC GXHMII BLBLCC A27A28A27A28CC A29GA29HII QDQDCC A29A30A29A30II QLQLCC" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -963,6 +993,9 @@ Men Dykkeren bringer den aldrig tilbage.
   <indextitle>Skieløberen</indextitle>
   <firstline>Bjergsøen er med Iis belagt</firstline>
   <source in="bd1" pages="27-30"/>
+  <rhyme>
+    <analysis pattern="ABABCC DEDECC XFXFCC GFGFEE HIHIEE JGKGCC AEAECC JLJMCC JNKNEE JLJMCC JNKNOO PXPJEE PQPQCC RSRSEE" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1077,6 +1110,9 @@ Den Yngling saae man aldrig mere.
     <note>Catharine Wernicke (<year>1789</year>-<year>1862</year>), dansk pianist. Blicher skrev dette digt, da han i <year>1812</year> havde hørt hende spille ved en koncert i Århus.</note>
   </notes>
   <source in="bd1" pages="30-32"/>
+  <rhyme>
+    <analysis pattern="AXBCBXBDBXEXBCBAEDBDBXBXBXAXEABXEXAXBDBXBX" confidence="0.89"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1136,6 +1172,9 @@ Cathrina Wernicke! bort til Udødelighed.
     <note>* Ved Gersdorpslund i Jylland.</note>
   </notes>
   <source in="bd1" pages="32-36"/>
+  <rhyme>
+    <analysis pattern="ABABCC DCDCCC ECECCC FBFBCC CCCCCC GCGCCC HCHCCC IJIJKK ECECCC LCLCBB MBMBCC NCNCBB OCOCCC DCDCCC PCPCCC ACABCC" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1261,6 +1300,9 @@ I Sangen lever dog Oldtidens Minde.
   <indextitle>Najaden</indextitle>
   <firstline>Løft dit Hoved, Dovrefjeld!</firstline>
   <source in="bd1" pages="36-38"/>
+  <rhyme>
+    <analysis pattern="XABBA AXCCX XDBBD EFBBF BGBBH XIJJI XKCCK BLCCL XMCCM XXNNF XMBBM GIEEI XCBBH" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1355,6 +1397,9 @@ Meer end Livet værd.
     <note>* Paa Jyllands Vestkyst i December 1811.</note>
   </notes>
   <source in="bd1" pages="39-42"/>
+  <rhyme>
+    <analysis pattern="XAAAAB XCAACD XXCCAX CCAAXB EACCAE XCCCAX XAAACX XCAAAX XACCAX FAGGCF CADDCH XAAACB XCCCCH" confidence="0.93"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1464,6 +1509,9 @@ Naar Himlenes Herre bevæger sin Haand.
   <title><num>I.</num>Schveitzeren i Paris</title>
   <firstline>Er det Skyer</firstline>
   <source in="bd1" pages="42-44"/>
+  <rhyme>
+    <analysis pattern="AXBCDXCDBXCXECEXXFEXABXXCGGCXCXAAXEEAAXHDDAAXCECFAACCH" confidence="0.91"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1530,6 +1578,9 @@ O Schweitz! mit Fødeland!
   <title><num>II.</num>Provençalen i Engelland</title>
   <firstline>Spred dig, o spred dig</firstline>
   <source in="bd1" pages="44-45"/>
+  <rhyme>
+    <analysis pattern="ABXBXXBBXCCBBCBBXBBXXXXDCEXBDBXEAABXBX" confidence="0.88"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1580,6 +1631,9 @@ O, du mit Fødeland!
   <title><num>III.</num>Araberen i Schveitz</title>
   <firstline>Døvende Torden!</firstline>
   <source in="bd1" pages="45-46"/>
+  <rhyme>
+    <analysis pattern="ABBBBCDADXECDXXXXXDXXXXXXXE" confidence="0.83"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1619,6 +1673,9 @@ O, Du mit Fødeland!
   <title><num>IV.</num>Huroneren i Arabien</title>
   <firstline>Lumre Sandørken</firstline>
   <source in="bd1" pages="46-47"/>
+  <rhyme>
+    <analysis pattern="ABCBXXBXDEFXXGADCFECFBGFFFFBX" confidence="0.93"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1660,6 +1717,9 @@ Herlige Fødeland!
   <title><num>V.</num>Hollænderen i Norge</title>
   <firstline>Bort, bort fra disse</firstline>
   <source in="bd1" pages="47-48"/>
+  <rhyme>
+    <analysis pattern="AAAAAXAAAXAXXXAX" confidence="0.87"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1688,6 +1748,9 @@ Signede Fødeland!
   <title><num>VI.</num>Nordmanden i Holland</title>
   <firstline>Løft dig af Sumperne</firstline>
   <source in="bd1" pages="48-49"/>
+  <rhyme>
+    <analysis pattern="AAABAXBAXCCDCXCBXABBXEEXBBXXXXXCCCCAD" confidence="0.90"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1737,6 +1800,9 @@ Herlige Klippeland!
   <title><num>VII.</num>Kjær est du Fødeland, sødt er dit Navn</title>
   <firstline>Kjær est du Fødeland, sødt er dit Navn</firstline>
   <source in="bd1" pages="49-50"/>
+  <rhyme>
+    <analysis pattern="ABABCDCDEDEDFGFGHGHG" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1774,6 +1840,9 @@ Blandt mine Fædres lyngbegroede Grave!
   <indextitle>Til Glæden</indextitle>
   <firstline>Hulde Engel! Du min Barndoms Ven!</firstline>
   <source in="bd1" pages="50-51"/>
+  <rhyme>
+    <analysis pattern="ABAB CBCB DBXB EBEB FGFG DBDB HBHB EBEB ABAB" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1832,6 +1901,9 @@ Eller til det ny du snart mig drage!
   <indextitle>Til Sorgen</indextitle>
   <firstline>Du som taus med sænket Hoved staaer</firstline>
   <source in="bd1" pages="51-52"/>
+  <rhyme>
+    <analysis pattern="XAXA BCBC XDXD EDED BDBD FGFG" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1875,6 +1947,9 @@ Du mit Øje fra dit Mørke hæver!
   <indextitle>Til Valmuen</indextitle>
   <firstline>For dig, hvis Saft fra tusind Penne flyder</firstline>
   <source in="bd1" pages="53-55"/>
+  <rhyme>
+    <analysis pattern="ABAB ACAD CECE CFCF GXGX CHCH IJIJ IDIC AIAI AHAH AKAK ABAB ACAC ALAL CMCM CNCN IXIX ODOD" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1978,6 +2053,9 @@ Hjælp dem! og lad min Ringhed være fri!
   <indextitle>Skjaldens Embede</indextitle>
   <firstline>Du, som kun agter nyttig Daad i Livet</firstline>
   <source in="bd1" pages="56-59"/>
+  <rhyme>
+    <analysis pattern="AABBBBCCDDEEFFGGBBBBBBBBHIJJKKLL BBBBBBBBMMFFNNOO CCCCCCBBPPQXIHNN CCCCCCCCRRSSTTFF BBBBCCBBIIQQUUFF" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2092,6 +2170,9 @@ Og jublende ledsager den med Sang.
   <indextitle>Digterrang</indextitle>
   <firstline>Du spørger mig, hvem jeg tør kalde størst</firstline>
   <source in="bd1" pages="59-73"/>
+  <rhyme>
+    <analysis pattern="ABAB CCCC DCDC ECEC FCFC BGBG HBHBIBIB EJEJGCGC GBKBXCXCLGLGMCMCNBNB DBOBHCHCPGPGGGGGXCJCXQXQRCRC LCLCSCSCEGEG TCTCUJUSXBXB VCVCTBTBWJWJXCXCKCKCXYXYSCXCZGZGFGFG A27CA27CBCBCTCKC CGCGZGZGCCCCOCDCA28GA28GXCXC TCTCA29GA29GA30CA31C KCKCA32GA32GA33BA33BBGBGA34BA34BGGGG A35CA35CHGHG KCKCA36JA36J XCXCA37GA37GA30GA31G XBGBFCFCSGSGXBXBOBDB A38CA38CA31GA31GA39GA39G A40GA40G JGJGOCOCA28A41A28A41 BBBB OCDC BCBC A42GA42G TCTC LCLC PCPC MCMC KGKG SGSGXJRJJCJC UCUCTCTCA37JA37JA43CA43CWGA44GZCZC A45CA45CMBMBEGEGA46BA46BMGMG HGHG A47CA47CWJA44J" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2547,6 +2628,9 @@ Og viis og god indblæst sin Aand i Støvet!
   <title><num>1.</num>En Reise</title>
   <firstline>En Vej er Livet, hvis Begyndelse</firstline>
   <source in="bd1" pages="73-75"/>
+  <rhyme>
+    <analysis pattern="ABCADAXACEBXAAXXAAEXAADAXFEF EAXAAAAEXXXEXAEEE" confidence="0.91"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2605,6 +2689,9 @@ Jeg ,,Lykke paa din Rejse!'' Dig tilraaber.
   <title><num>2.</num>En Seilads</title>
   <firstline>Du farer, min Gut! paa et uroligt Hav</firstline>
   <source in="bd1" pages="75-76"/>
+  <rhyme>
+    <analysis pattern="AABBCCDDEEFFGGHHIIJJKKKKKKLLMMJJNNXXOO" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2655,6 +2742,9 @@ Han tryggelig styrer din Snekke til Havn.
   <title><num>3.</num>Et Spil</title>
   <firstline>Man Kalder Livet og et Lykkespil</firstline>
   <source in="bd1" pages="76-77"/>
+  <rhyme>
+    <analysis pattern="AABBCCDDEEFFGGHHIIEECCJJKKLLXEXD" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2699,6 +2789,9 @@ Ej Bankerot Du skalt af Spillet gaae.
   <title><num>4.</num>Et Gjæstebud</title>
   <firstline>At ligne Livet ved et Gjæstebud</firstline>
   <source in="bd1" pages="77-78"/>
+  <rhyme>
+    <analysis pattern="AABCCB XXDXED BBFXFF EEDGGD HHDIID" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2745,6 +2838,9 @@ Som hungrig eller overmæt Dig klage.
   <title><num>5.</num>En Jagt</title>
   <firstline>Det femte Billed, Du skuer - giv Agt!</firstline>
   <source in="bd1" pages="79-80"/>
+  <rhyme>
+    <analysis pattern="AABXXB CCDEED FFGXXG HHGXXG DDGIIG" confidence="0.93"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2791,6 +2887,9 @@ Din Afsked fra Jagten kan tage!
   <title><num>6.</num>En Have</title>
   <firstline>Tidt ved et Blomsterbed man ligned Livet</firstline>
   <source in="bd1" pages="80-81"/>
+  <rhyme>
+    <analysis pattern="AXAXBCBC BDBDEE EFEFEGEG EHEHBB BXBXII" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2841,6 +2940,9 @@ Da finder Du en Blomst for Evigheden!
   <title><num>7.</num>Et Skuespil</title>
   <firstline>Vor Jord en Skueplads man og med Rette kalder</firstline>
   <source in="bd1" pages="81-82"/>
+  <rhyme>
+    <analysis pattern="AABBAA BBAABB CCAAAA BBXA BBBBXXAA AA" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2890,6 +2992,9 @@ Med Bifald vel fortjent Du Scenen da forlader.
   <title><num>8.</num>En Skole</title>
   <firstline>Livet er en Skole, som Alle søge maae</firstline>
   <source in="bd1" pages="82-83"/>
+  <rhyme>
+    <analysis pattern="AABB CCDD EEXXFF XXGGAA HH" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2928,6 +3033,9 @@ Med Ære da tilvise Du af Skolen skal udskrives.
   <title><num>9.</num>En Krig</title>
   <firstline>Din Levetid Du Strid paa Strid</firstline>
   <source in="bd1" pages="83-84"/>
+  <rhyme>
+    <analysis pattern="AABCCB DDBEEB FFGHHG IIBJJB" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2967,6 +3075,9 @@ Til evig Fred skal vandre!
   <title><num>10.</num>En Drøm</title>
   <firstline>En Drøm? - ,,En Drøm? og intet meer?</firstline>
   <source in="bd1" pages="84-86"/>
+  <rhyme>
+    <analysis pattern="ABABCCBB DADAEEFF XBXBGGBB HBHBIIJJ KAKALLBB" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -3028,6 +3139,9 @@ Og puster til det slappe Sejl:
   <indextitle>Doxologia</indextitle>
   <firstline>Hvi skjælver Du, naar sig Orkanen hæver</firstline>
   <source in="bd1" pages="86-87"/>
+  <rhyme>
+    <analysis pattern="AAAABB AAAACC DDEEEE AAEEAA" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -3069,6 +3183,9 @@ Saavidt hans Almagts Skabning sig udbreder
   <indextitle>Til en ung tungsindig Digter</indextitle>
   <firstline>Hvad hører jeg? hvis er den Harpeklang</firstline>
   <source in="bd1" pages="87-91"/>
+  <rhyme>
+    <analysis pattern="ABABXCXC DEDEFEFE GHGHICIC JCJC KBKB LELE MCMC XBCBNBNBBCNC OCOCPCPC MHMHJQJQEBXB RHRH XBJB SBSB TCTC LCLC UBUBVBVB SCSC" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -3203,6 +3320,9 @@ Og med de Saliges din Stemme blande!
   <indextitle>Den unge Lærkes Foraarssang</indextitle>
   <firstline>Blæs Søndenvind! lad Søen høre Dig!</firstline>
   <source in="bd1" pages="91-93"/>
+  <rhyme>
+    <analysis pattern="ABAB CDCD EDED FBFB GDGD HDHD XBXB IBIB JDJD KDKD CDCD LDLD" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -3276,6 +3396,9 @@ Og hilse Solen i de grønne Dale.
   <indextitle>Den gamle Lærkes Efteraarssang</indextitle>
   <firstline>Den mørke Skye hen over Ørken gaaer</firstline>
   <source in="bd1" pages="93-95"/>
+  <rhyme>
+    <analysis pattern="ABAB XCBC XCXC XDXD EBEB FBFB GBGB HIHI FDFD CBCB JDJD KBKB FCFC" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -3354,6 +3477,9 @@ Snart med min Død den mørke Vinter kommer.
   <indextitle>Nytaarsmorgen</indextitle>
   <firstline>Hvor Tiden gaaer!</firstline>
   <source in="bd1" pages="95-99"/>
+  <rhyme>
+    <analysis pattern="ABCCDDE ABEEFFE GGEEHHEIICCCCE BBCCJJCKKCCLLC MMEEBACJJNNOOC PPEEQQERRCCSSE ABTTIIEABEEUUE VVCCWWCXXCCXYC YYCCHHTXICCFFT" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -3496,6 +3622,9 @@ Fremgryer en evig Nytaarsmorgen.
   <indextitle>Aften</indextitle>
   <firstline>Fra Tordenskyen synker Solen rød</firstline>
   <source in="bd1" pages="99-110"/>
+  <rhyme>
+    <analysis pattern="ABABCDCDEDEDFDFDGBGBHBHB IDIDJDJDCDCD KDLDDBMBNDNDOBOBPBPB DDMDQRQR SDSDTDTD GBGBUBUB NBNBVWVWXDXDYWYW ZDZDXRRRA27BA27BA28BA28BDA29XA29A30DA30D SBSBA31RA31RA32RA32RA33RA33RA34DA34D CA35CA35A36DA37DRBRBPDPDRDRDHBHBA38BA38B A39RA39RXDA40DA41WA41WNDNDYDA40DX BA42BXDXDA43BA43BA44BA44BA39BA39B A45DA45DMWXWXBXBA46XA46XA47BA47BNBNBOBOBA48WA48WKBLB A49DA49DA50RA50RA51DA51DABABA45BA45BA44DA44DA39WA39W TDTDA43WA43WA46BA46BA47BA47BDDDD A39A35A39A35A42DA50DWBXBA36BA37B A37BA37BA43DA43DTRTRA52DA52DA46RXR" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -3854,6 +3983,9 @@ Men efter begge bli'er det atter Morgen.
   <indextitle>Midnat</indextitle>
   <firstline>Blegt glimte Stjernerne i mørke Nat</firstline>
   <source in="bd1" pages="110-119"/>
+  <rhyme>
+    <analysis pattern="ABABCDCDEFBFGDGDHDHDIJIJKDLDMJMJCDCD XBNBFBFBBBBBODODEDXDHBHB LDLDPDPDHQHQ RBRBSDSDTDTDEDEDMBDBSBSBJBJBUDUDVQVQBDWD XBXB YDYDZBZBXDND YQYQA27BA27B A28BA28BBDWD A29DA29DA30DA30D JQJQA31JA32JQXQXD A33FA33F A34JA34QBBBBA35BA35B A36FA36F A37BA37BA38DA38DA39DA40DHDHDJFJFA41DA41DA40BA39BXDEDVBVBA42DA42DKDKD A43BA43BYDYDA44BA44BHBHB SBSBA30DA30DFDFDA32DA31D" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -4144,6 +4276,9 @@ Tungsindigen om sunkne Verdner runge.
   <indextitle>Morgen</indextitle>
   <firstline>Nu skyder Lyset sig i Østen op</firstline>
   <source in="bd1" pages="119-128"/>
+  <rhyme>
+    <analysis pattern="ABAB CBCB DEDEFFECECEBEBE GEHEIJIJKBXBLBLBMEME NBNBOBOBPJPJQEQEOBOB RBRBCESE BBCBDTDTUBUB VEWEXBXB PEPEYBYB ZBZBA27JA27JKA28KA28WBVBXEA29E BEBEA30EA30EGJHJA27BA27BABABA31BA31B A32BA32BTETEA33EA33E KEKECEBE CBCB A33EA33E A34A34B TBTBUBUB VEVE A35BA35B A36EA36E RBRBTJTJ A37EA38E A37BA38BUBUB HEGE A39EA39EA29JA29JOJOJSBCBGBGBA40A40BA31BXB XEEE A41EA41E" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -4440,6 +4575,9 @@ Og vandrer fro mod Østens Morgenrøde.
   <indextitle>Til det gjenfødte Grækenland</indextitle>
   <firstline>Saa est Du da omsider vaagnet op!</firstline>
   <source in="bd1" pages="128-133"/>
+  <rhyme>
+    <analysis pattern="ABAB XCXC XBXB DEDE CFCF GHGH IFIF JBJB KHKH DBDB LELE LBLB MBMB XBBB BFXF FEFE XFNF OBOB ABAB XEEE PBPB QBQB QBQB MBMB RBRB RBXB STST XEXE UFUF VBVB WCWC XBXB SBSB ECEC OBOB NBGB" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -4634,6 +4772,9 @@ I frihed skal din frelste Søn dog leve.
   <indextitle>Nygrækernes Sejershymne</indextitle>
   <firstline>Løft din Isse, Pindus! Du est fri</firstline>
   <source in="bd1" pages="134-137"/>
+  <rhyme>
+    <analysis pattern="ABAB CBCB DBDE ABAB FGFG HIHI JIJI KBKB LBLB MEME EINI XBXB OGOG NENE EHNH PBPB HQHQ RBRB SGSG QIQI" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -4747,6 +4888,9 @@ Han gav Haab og Mod og Sejr i Striden.
   <indextitle>Ipsara</indextitle>
   <firstline>Halvmaanen over Askedynger staaer</firstline>
   <source in="bd1" pages="137-140"/>
+  <rhyme>
+    <analysis pattern="ABAB CBCB DEDE FGFG XHXH IBIB JHJH XHXH KBKB LHLH MHMH ABXB NHNH JBJB OBOB DHDH HBHB PHPH" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -4854,6 +4998,9 @@ Skal Sejerskrandsen til Din Isse binde.
   <indextitle>Navarinoslaget</indextitle>
   <firstline>Der var en Tid, da Hellas som en Have</firstline>
   <source in="bd1" pages="140-144"/>
+  <rhyme>
+    <analysis pattern="ABABAA ACACDD DEDEAA AFAFAA GHGHAA AIAIJJ JJJJJJGG JJJJAAJJ JJKKAAGG AAAAAAJJ AAJJJJGG JJJJGG ALALKK JEJEAA GGKKAA" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -4983,6 +5130,9 @@ Først da opstander Phønix af sin Aske!
   <indextitle>De Indmurede</indextitle>
   <firstline>Hør: Vinterstormen tuder huult derude</firstline>
   <source in="bd1" pages="144-163"/>
+  <rhyme>
+    <analysis pattern="AABBCCDD AAEEFFCCGGHH BBIIAAJJKLAACC MMAANNOOCC AAXPCCQQCAAOOBB RRSS AACCCCCCTT CCAAAAUU CCVVDDWWCC LLCC XXBB AAYYZZ A27A27CC A28A28X CCA29A29XE LLCCA30A30A28A28CC A31A31A32A32CLCCCC CCAAMMA28A28DD CCLLC CAAAACCAAAAVVAA AAA33MEECCA34A34A35A35CC AAGAAA XA36CCA32A32 A30A30AAMM AAAGAAA37A37AA MMCCA28A28AAAAAA AAAACCLLOO AAFF CCA38A39 CCZZCCA40A41 AACCIIAA AACCAA DDCCAACC MA33CCAAAAAA CCKKDDD DA42A42A43A43 CCOOBBAA CCPPA37A37A44A44 CCA45XPP AAA46A46AAA47A47A ACCA48A48AA BBAACCA49A49AA BBA50A51CCA49A49AA DDCCA44A44AA LLA28A28QQA28 XCCCC CCA39A38AAA50A51 AAA50A50AA CCA42A42II AAAACCA50A50 CCA48A48LA52AA AAA53A53CC LLCCB BCCOOAAA31A31A52LAAA54A54AAA43A43CCA55A55A56A56A57A57BB MA33A36A36CC CCUUCCCC DDAA AAA27A27 UUAAA28A28A45A45BB AAA38A39CCDDAAA58A58AAZZ CCA59A59BLL AAVVAA CCA41A40A31A31A32A32CCA60A60CCA44A44 AAMMAAAAMA33 A59XAACCA41A41CCA32A32" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -5606,6 +5756,9 @@ Og hvor hans sidste Dage sødelig henrandt.
   <indextitle>Faderkjerlighed</indextitle>
   <firstline>Da Harald hiin haarfagre</firstline>
   <source in="bd1" pages="164-167"/>
+  <rhyme>
+    <analysis pattern="ABAC DEDE AFAF XGXG AXAB AHAH AIAB AXAX AJAJ DKDK DJAJ ALAL AIAC AMAM DNDE AOAO DPDP DQDQ AXAX DRDR DSDS DNDE ATAT DCDI ADAD" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -5744,6 +5897,9 @@ Jeg Dig fortalte her.
   <indextitle>Snedkersang</indextitle>
   <firstline>Af sorg der ej findes i Verden saa lidt</firstline>
   <source in="bd1" pages="168-169"/>
+  <rhyme>
+    <analysis pattern="ABABCD EBEBFF GBGBCD HIHIJJ KLKLDC MBMBII" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -5799,6 +5955,9 @@ Herover Du aldrig beklager Dig meer.
   <indextitle>Laternen og Fyret</indextitle>
   <firstline>Mørk er Natten; Blæsten tuder</firstline>
   <source in="bd1" pages="169-171"/>
+  <rhyme>
+    <analysis pattern="AXAX BCBC DEDE FXFG AXAX AAAA FHFH AIAI FXFX AAAA FGFG AJAJ" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -5872,6 +6031,9 @@ Sikkert og snart det i frelsende Havn.
   <indextitle>Juletanker</indextitle>
   <firstline>Midt i Natten, midt i Vinters Hjerte</firstline>
   <source in="bd1" pages="171-175"/>
+  <rhyme>
+    <analysis pattern="AABCCB AAXDDX CCEAAE AACFFX AAGAAG AAHCCH AAIAAI AAJAAJ CCKAAK CCLAAL FFMAAM AAXEEX DDNCCN AAOAAO AAPAAP CCXCCA CCECCE" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -6003,6 +6165,9 @@ See den Sol, som aldrig meer gaaer ned.
   <subtitle>(Digteroldingen Faye tilegnet)</subtitle>
   <firstline>Flyd sødt og sagtelig, min stille Sang!</firstline>
   <source in="bd1" pages="175-179"/>
+  <rhyme>
+    <analysis pattern="ABABCCDD EEEECCFF GCGCCCHH XIXICCJJ KCKCIILL MBMBCCNN OIPIIIQQ RCRCCCAA SESXCCPO TCTCCCUU VCVCCCLF WIWICCXX YIYIZZA27A27" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -6140,6 +6305,9 @@ Ej før forglemmes. gode Planter, Du!
   <indextitle>Til Danmarks Ungdom</indextitle>
   <firstline>Unge Danske! træd ærbødig ind</firstline>
   <source in="bd1" pages="180-182"/>
+  <rhyme>
+    <analysis pattern="ABAB CBCB DBDB EFXF GFGF HCHC IBIB JEJE KLKL MBMB NBNB DBXB OBOB XBXB PBPB XLXL" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -6232,6 +6400,9 @@ Gjennem Døden til Udødligheden!
   <title><num>I.</num>Saxo</title>
   <firstline>Risle venligt, Roars Kilde klar!</firstline>
   <source in="bd1" pages="182-184"/>
+  <rhyme>
+    <analysis pattern="AABCCB DDEFFE DDEGGE EXEHHE CCEIIE JJEKKE LLMNNM" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -6292,6 +6463,9 @@ Medens Vand til Issefjorden rinder.
   <title><num>II.</num>Snorro</title>
   <firstline>Højt oppe imod Norden der ligger et Land</firstline>
   <source in="bd1" pages="184-186"/>
+  <rhyme>
+    <analysis pattern="ABAB CBCB DEDE FBFB GGGG HGHG IGJG KGKG LGLG XGXG MGMG DNDN XGXG LBLB IGJG OGOG" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -6383,6 +6557,9 @@ Det nordiske Hjerte Du fryde!
   <title><num>III.</num>Niels Ebbesen</title>
   <firstline>Hvi seer Du, danske Mand</firstline>
   <source in="bd1" pages="187-192"/>
+  <rhyme>
+    <analysis pattern="AABCCBDDXEEF XGEHHEEEIEEI EJEKEE BIBIEE LMLMDD BNBNEE EAEXEE DODODD DPDPBB BQBQBB EFEFEE BRBREE EKEJEE STSTBB AAETTEEEUEEU GGEKJEVVAEEA WWEXXEEEXEEX UUEXKEEEGEEG" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -6556,6 +6733,9 @@ For os og vore Børn af Heltebryst!
   <title><num>IV.</num>Tygge Brahe</title>
   <firstline>Jorden sover, Natten dækker over</firstline>
   <source in="bd1" pages="192-195"/>
+  <rhyme>
+    <analysis pattern="AABAAB CCDCCD EEFEEB EEGHHG EEIEEI EEXCCX CCJCCJ KKLKKL CCBAAF CCLEEL AAACCX CCBAAF EEFEEB EEMEEM" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -6665,6 +6845,9 @@ Brahes Minde over Død og Grav!
   <title><num>V.</num>Griffenfeld</title>
   <firstline>Som et Frø af ædel Art</firstline>
   <source in="bd1" pages="195-197"/>
+  <rhyme>
+    <analysis pattern="ABABCC DCDCBB EBEBBB FCFCCC XCXCGG HCHCII JKJKCC LCLCCC" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -6736,6 +6919,9 @@ Griffenfelder ingen mere.
   </notes>
   <firstline>Niels Juel gav Agt paa Stormens Brag</firstline>
   <source in="bd1" pages="197-199"/>
+  <rhyme>
+    <analysis pattern="ABAAXBAAB ABAAABAAB CDCCCDCCX EFEEEFEEF GHGGGHGGH IJIIIJIIJ" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -6810,6 +6996,9 @@ Med Sværd i Haand, og Fod ved Fod,
     <note><a poet="boerup">Morten Børup</a> (ca. 1446–1526) var rektor for Aarhus Katedralskole og digter af latinske vers og skuespil.</note>
   </notes>
   <source in="bd1" pages="199-205"/>
+  <rhyme>
+    <analysis pattern="ABAB ACAC ADAD EAEA DFDF GHGH EIEJ EKEK AKAH AAAA EDED LMLM ENEN AOAO EPEP DQDQ AJAI ARAR DSDS ETET AUAU EVEV APAP AWAW EXEX EYEY AFAX ASAS EIEJ DZDZ AKAK EA27EA27 DA28DA28 DA29DA29 AA30AA30 DADA LGLG DXDD" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -7012,6 +7201,9 @@ Ham vækker til Livet igien.
   <firstline>Ingen Himmelstorm paa Fjeldet</firstline>
   <keywords>holberg</keywords>
   <source in="bd1" pages="205-208"/>
+  <rhyme>
+    <analysis pattern="AABCCB DDXDDD DDECCE FFGDDG FFHFFI CCJCCJ CCKAAK CCLMML NNLDDL DDODDO CCPCCP CCICCH DDFCCF" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -7114,6 +7306,9 @@ Danebardens Bautasteen.
   <title><num>IX.</num>Tyge Rothe</title>
   <firstline>Der er et lys, som her i Verden brænder</firstline>
   <source in="bd1" pages="208-209"/>
+  <rhyme>
+    <analysis pattern="ABAB AXAX CDCD CCCX AXAX CDCX" confidence="0.91"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -7155,6 +7350,9 @@ Hvad som en Gnist i Natten her Du saae.
   <title><num>X.</num>Bernstorff</title>
   <firstline>For din Griffenfeld saa god</firstline>
   <source in="bd1" pages="209-211"/>
+  <rhyme>
+    <analysis pattern="ABABCDCD ABAEFEF ABABBGBGXHXHBIBI JBJBBFBF KBKBBLBL" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -7219,6 +7417,9 @@ Du tilgive Fædres Brøst!
   <firstline>Ligger Du her under græsklædte Tue</firstline>
   <keywords>tode</keywords>
   <source in="bd1" pages="211-212"/>
+  <rhyme>
+    <analysis pattern="ABABCDCDAEAEAFAFAEAEAGAGABAXAHAHEIEIAJAJAKAK" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -7275,6 +7476,9 @@ Alfader glæde din venlige Aand!
   <title><num>XII.</num>Birckner</title>
   <firstline>Der er en Kilde dybt i Jordens Skjød</firstline>
   <source in="bd1" pages="213-214"/>
+  <rhyme>
+    <analysis pattern="ABAB CBCB DEDE FEFE GEGE HEHE FIFI JEJE" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -7329,6 +7533,9 @@ Hvad her Du som en Draabe saae opstige.
     <note>* Gouverneur paa Kysten Guinea</note>
   </notes>
   <source in="bd1" pages="214-216"/>
+  <rhyme>
+    <analysis pattern="AABCCB CCDCCD AAECCE CCFCCF CCXAAX CCGCCG HHXIIX AABJJB AAKAAK CCGCCG" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -7413,6 +7620,9 @@ Disse Runer paa hans Bautastene
     <note>* Missionair i Grønland</note>
   </notes>
   <source in="bd1" pages="216-217"/>
+  <rhyme>
+    <analysis pattern="AABCCB DDEFFE GGEHHE IIBXXB AAEJJE" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -7459,6 +7669,9 @@ Tegnet staaer i Evighed
   <title><num>XIV.</num>Pfingsten</title>
   <firstline>Der er en Dannemand i Nord</firstline>
   <source in="bd1" pages="218-219"/>
+  <rhyme>
+    <analysis pattern="XXABBA CCADDA EEAFFA DDAGGA HHIJJI DDKLLK MMANNA" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -7519,6 +7732,9 @@ Din rette Dagløn skalt Du først modtage.
   <title><num>XV.</num>Holm</title>
   <firstline>Græd ej, Qvinde, for din Søn!</firstline>
   <source in="bd1" pages="219-220"/>
+  <rhyme>
+    <analysis pattern="XABBX ACAAC XDAAD XDAAD" confidence="0.93"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -7556,6 +7772,9 @@ Og i troløs Afgrund segner
   <title><num>XVI.</num>Buhl</title>
   <firstline>Glat var din Kind, da første gang</firstline>
   <source in="bd1" pages="221-223"/>
+  <rhyme>
+    <analysis pattern="AABBCC AAXXDD AAEECC AAFFCC AAEECC AAGGHH AAIICC AAJJKK AALLHH XXBBHH" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -7640,6 +7859,9 @@ Slaae, eller falde under Sværdet.
     <note>* Captain, Eier af Vibygaard ved Roeskilde; faldt i Slaget ved Kjøge 1807, (See ,,Gamle og nye noveller'' af Blicher 1ste Deel. S. XVI).</note>
   </notes>
   <source in="bd1" pages="223-226"/>
+  <rhyme>
+    <analysis pattern="ABABCC DADAEE FAFAGG GHGHAA IAIAAA AJAJAA KAKAII CLCLAA AMAMAA NCNCOO APAPCC QCQCCC ARARGG GXGXAA" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -7752,6 +7974,9 @@ Det haver Roes og evigt Eftermæle.
     <note>* Lærd Astronom og Oldgrandsker. Skrev en aandfuld Afhandling om Guldhornene. Døde som Capellan i Aalborg 1832 i høj Alder.</note>
   </notes>
   <source in="bd1" pages="226-228"/>
+  <rhyme>
+    <analysis pattern="AXAX BCBC DEDE FGBG AHAH FIFI JKJK JXJJ JLJM FNFN JOJO JPJP AQAQ JMJL ABAB ARAR" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -7846,6 +8071,9 @@ O Vandrer! naar Du hjem fra Højen gaaer. <note>* Med dette sidste Vers, som er 
   </notes>
   <firstline>Man bygger op med stor Umag</firstline>
   <source in="bd1" pages="229-230"/>
+  <rhyme>
+    <analysis pattern="ABAB XBXB XCXC DBDB DBDB ECEC XCDC FCDC GBGB HCHC XCXC DDFD" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -7917,6 +8145,9 @@ Jeg hænger den paa Stenen.
   <title><num>XX.</num>Søren Kanne</title>
   <firstline>Det blæste en Storm udi Kattegat</firstline>
   <source in="bd1" pages="231-234"/>
+  <rhyme>
+    <analysis pattern="ABAB CBCB DBDB EBEB FGFG HGHG IBIB JBJB KLKL XLXL MLML NONO PBPB QBQB JBJB ALAL RORO SBSB TBTB XLLL UBUB VBVB" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -8043,6 +8274,9 @@ Og Alle til Enighed føre!
   </notes>
   <keywords>frederik6</keywords>
   <source in="bd1" pages="234"/>
+  <rhyme>
+    <analysis pattern="AABBCCDDEEXXFFXGG" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -8099,6 +8333,9 @@ Gud Signe din Slægt og din Eftermand!
   <subtitle>(En kjer Frænde helliget)</subtitle>
   <firstline>Eensom jeg laae paa min lynggro'de Bakke</firstline>
   <source in="bd2" pages="1-5"/>
+  <rhyme>
+    <analysis pattern="ABAB CDCD AEAE AFAF CGCH AIAI CXCJ CKCK ALAL AMAM ACAC CJCX NONO APAP ANAN AQAQ AAAA ARAR ADAD CGCH ASAS ABAB ADAD ATAT ARAR" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -8237,6 +8474,9 @@ Lærken blandt Gravene bygger sit Rede,
   <indextitle>Første Døgn</indextitle>
   <firstline>Farvel, farvel da, du røgindhyllede Tue!</firstline>
   <source in="bd2" pages="5-16"/>
+  <rhyme>
+    <analysis pattern="ABXXCDAXAAAE FFGFBXHBXFADAAXFBXFXFAXABBBBXBBBF AIAXBBB FFGFABFBABGBGBGHAFBJBBGCFXGBIEGHDK AABBGBCFACCABAEFFXXAXBBHJCFKBBAGLAABAXBGALBXBCAABBHBABBFBFBFXAAAMBLXABBBGABFAXXBNBBBBXBBABFBABAOAAXBBBFBABFBFGBFAFAFBFBBBFABABABABAFBBBFAABGABFCABXFBAABBAABBAAAFABBXFFFBGGBFAAANAB GGJAJ BBOFFO BBPNNP BBXFFX GGQBBQ GGRAAR AAMBBM BBSFFS BBTBBT BBUFFU" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -8588,6 +8828,9 @@ Saa staaer dit Rede trygt og fast.
   <title>Andet Døgn</title>
   <firstline>Saa tidlig paa Dækket? - Hvi bæver Smilet ustadigt</firstline>
   <source in="bd2" pages="16-28"/>
+  <rhyme>
+    <analysis pattern="ABAACDDADAXECCXADCC FGHH IIJJ GGDD HHII KKLD MMGG NNOP QQII RRSS EEKK DLEE TTMM NNUU GGLD VVWW XXMM YYGG UUZZ EEXA27 A28A28YY A29A29YY UUTT TTA30A30 GA31QQ YYQQ KKQQ A27A27TT MMA32A32 UUA33A34 WXA33A33 A35A35MM VAA32A32 NNA30A30 APFO NNXD QQJJ A36A36QQ KKNN A37A37DD UUA30A30 AVQQ YYII D A38CCAACA39AACCA40C XA32DCXXA41A42A39AAACXAA41 AXA38X DDDXXZA41CCCCADCCCDCBCA42XCCA39XCCA41XCA32CDA41A43UCCA33CCCAA40DXA44A40ACCACXACCDA43A41A31 ACA41CX DCC AD DCC AX DCCICA44XCA41DA32XCASA42XCACCA34CDXA42CDCCCA41A32DACUCCABAXAXCA39DDCA43CSA34" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -9007,6 +9250,9 @@ Paa Landevejen, der løber fra Aarhuus til Grennaae!
   <indextitle>Tredie Døgn</indextitle>
   <firstline>Borte er Søvnens Børn, - ufuldendte Gestalter</firstline>
   <source in="bd2" pages="28-37"/>
+  <rhyme>
+    <analysis pattern="AABCAAAAABBDBBCECAAXAXABABBACABFBBBBBADXXAABB CABACBAGBHBACB AB CBA AX CABAIDABBBABEHBBBIXBBABBGBAAAXAAJAKBBBBBXBXALHBGBBJEXGBBBXXXXAACACHABAXBHAAXACBHJCBBBABDAAGBXBAAAAAXMCAABCBJABHAALXFCAABAAAABAGAXGANAAXKXMBAC ABXB CBBCJBBC ABACAAAABACBBABBN AGHABBBCBBABBLXBAACBABXXBBAABBBF" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -9297,6 +9543,9 @@ Frihed og Ære og Skjaldesange skal vindes! <note>* See <a poem="blicher20190104
   <title>Fjerde Døgn</title>
   <firstline>Hvi raaber den Sanger saa højt paa ensomme Hede?</firstline>
   <source in="bd2" pages="37-51"/>
+  <rhyme>
+    <analysis pattern="ABCCD CEB ABCF CXBBGCGCBBAXABCBCCBBBCCCHBCCCBCBCBBBBCXIXJACB AKDHLXCXABD A XBMNA B OOBPXP OOBPXP OOAPCP QQCPRP SSXPTP UUHPVP VVXPXP APWB CCAXBCCHAAUCBLGC AOOYYBBZZAAA27A27A28A28AA A29A29HHPPA30A30 CCTTA31A31AA DDCCGGCCAAA32A32GGCCCCAACCA33A33AACCAACVAAA34XJJCCBBA35MBBRRRRA36A36BXAAXNSSA37A37VCBBBBUUCCIVA29A29CCBA38A38A28A28A39A39BBA40A40 A41A41BB QQBBA42A42XXBBAAWWBBUUVIAABBA39A39A43A43SSAABBCCAA33A44A44BBCCBBBBA45A45BBBBBBBBA46A46BBBBBBAAXA34IVBBBBCCA47A47CCBBA48A48A49A49XXEA50UUOOA35A35A50EA51A51XXCCUUCCCXA28A28A39A39 CBLCA43HACCBWCBABCBGXCXBBXKFBUCBC AB CW" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -9755,6 +10004,9 @@ Blicher.
   <indextitle>Femte Døgn</indextitle>
   <firstline>O! I Poeternes Tjenestepiger!</firstline>
   <source in="bd2" pages="51-77"/>
+  <rhyme>
+    <analysis pattern="ABBCDAABBEEEEEEEEBEEFEEEGGEEEEHXXXIIEJKKLLEELLEEEEEXXJEAAAABBEEEEMMEENNAAEEEEXOPPQQBBRESSEEAAAA TTUUBB VVAABB WWEEXYXX BBBB QQEEZZA27A27A28A28PP A29A29A30A30 BBPP BBEE A31XA32X A33A33A29A29 EENN DX JJYX A34A34EE EEBB EE A29A29BB YXBBBBBBEZZ A29A29BE EEXY PP PPA28EE BB XIDN A29S AAA35A35 BB A36A36A37A37 EEXY BBA38A38 CCEEA39A39EEEE EEA29A29 BBA40A40 BBII A41A41A29A29EE A41A41AA JEBB A42A42EE EENX BBA37A37 EEFF BBBB BBPPBB XXA42A42 A28A28A28A28A43A43 LLXC XAAA PPEE BBDN EA44 PEE A42A42EE AAA45A45 BBKKA46A46A45A45A29A29KKEEBBA44A44EEA47A47EEXOEEPPEEPPA48A48AAAAEEEEBBAABBBBEEBBA49A49PA28A50A50XXAAA51A51XXA52A52A53A53XXA54A54A55A55AAA37A37AAEEAAAASA29VVBBAALLEEA56A56EEAAAAXAA A57A57YXA30A30A58A58 B NENE A59EA59E A60EA60E A29EA29E IEXE A28EA28E LEAE A61EA61E A29EA29E A62EA62E A31A31EEBBBBEEBBEEEEA48A48NNEEA63A63BBNN A64A64BBPPA50A50IIEEEEEEA43A43RXAAEEEE E AAEEFEEEEEEAAANNLE AAEEA36A36XEEEEEEEA65A65A49E AAEEA31A31A32EBBBPPPA28A28XE A66A66EEA28A28A39EEEEEEEA67A67XE A66A66A48A48EEA45A45 A66 A29A29A35X YYA65A65 A42A42A54A54 A68A68A66A66 A50A61A29A29 A69A69XJ A70A70A66A66 A71A71A29A29 AAEEEEAAEEPPEQQA28A28CCA45A45EEBBA35A35AAXXEEA66A66A36A36A29A29DNA43A43A36A36KKAA40EEHHEEAAMMAA A70 XRREV" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -10582,6 +10834,9 @@ Hjemad til Nibe! - Nu Snapsting! Adio!
   <indextitle>Sjette Døgn</indextitle>
   <firstline>Hil dig mit Fødeland, Fædrenes mørkbrune Gravmark</firstline>
   <source in="bd2" pages="77-87"/>
+  <rhyme>
+    <analysis pattern="A BCDCACEAXCCXXCAXEDAXAFEXDCCCAECDGAHIEAJEXCCACACACCDCCKAECCXECCCEACIKBXACGAAAACCADKAADCCCLECKCXCEECEACACCKCLKECCCCXECCDCCCADCEGCEAACEDXLLCAAGXCACGCCXECCAAAMCECLCAAKXAGCCEXCCLNCGCCDCXIAOXAAJACGFDCCPDCAAHECAXKCCXCEACEAAAALACOCEECCCQ XRRFF SSTT UUVV FFEE WWRQ XXHH RQFF YZFF MMZY A27A27A28A28 ZZQQ GGWW NXYZ A29A29RQ A30A30PA28" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -10913,6 +11168,9 @@ Til bedre Glæder en bedre Harpe slaae!
   <indextitle>Digterens Lyksalighed</indextitle>
   <firstline>Lyksalig den, hvem Phæbos Harpen rækker!</firstline>
   <source in="bd2" pages="88-90"/>
+  <rhyme>
+    <analysis pattern="AAXX AAAA BBAA CCAA AADD EEAA FFGG FFXX HHAA XXFF IIFF AAAA" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -10984,6 +11242,9 @@ Man tusind Blomster paa hans Bane strøer -
   <title>Adskillige Evigheder</title>
   <firstline>Naar Ungesvend og Mø hverandre møde</firstline>
   <source in="bd2" pages="90-91"/>
+  <rhyme>
+    <analysis pattern="AABBXX CCAACC CCAACC AADDEE CCFFGG XXDDCC" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -11039,6 +11300,9 @@ Som Urtekræmmeren og Møl det sparer.
   <indextitle>Rang og Fortjenester</indextitle>
   <firstline>Der var en Tid paa denne Klode</firstline>
   <source in="bd2" pages="91-93"/>
+  <rhyme>
+    <analysis pattern="AAAABBCCADADXAAEEFFGHIIAACCFFAAJJKKLLFFMMHGAAJJ" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -11104,6 +11368,9 @@ De har Fortjenester!
     <note>Gendigtning af John Gay: <xref type="translation" poem="gay2005052801"/>.</note>
   </notes>
   <source in="bd2" pages="93-94"/>
+  <rhyme>
+    <analysis pattern="AABB CCDDXX EEDDFFEEEE" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -11141,6 +11408,9 @@ Og siger: ,, Laan os dine Huggetænder!
   <indextitle>Bien og Myggen</indextitle>
   <firstline>En Myg tilfældigviis blev Vidne til</firstline>
   <source in="bd2" pages="94-95"/>
+  <rhyme>
+    <analysis pattern="ABCDEEFEXXXABBXCBXEFDBXBXXXDE" confidence="0.89"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -11185,6 +11455,9 @@ At Bier stak en Mand tildøde.
   <firstline>Hvad er det, man ved Obis kolde Elv -
   </firstline>
   <source in="bd2" pages="95-96"/>
+  <rhyme>
+    <analysis pattern="ABABCDCDBXBXEBEBFBF" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -11217,6 +11490,9 @@ Og i en Lyd det Hele svinder bort.
   <subtitle>(Localiseret)</subtitle>
   <firstline>Hvi vil dog Deres Exellence faa</firstline>
   <source in="bd2" pages="96-100"/>
+  <rhyme>
+    <analysis pattern="XABBCCD DCXXBBCCEECCBBBBBBFGHHBBAAIIJJBBKKCCLLCCMMNNN NBBCCIINBBKKCCXOXLBBPPCCBBBBBIICCLLBBQQCCGFNAARRCCSSIIFGLLTTCO" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -11348,6 +11624,9 @@ Ja sund endogsaa - paa lidt Snue nær.
   <indextitle>Jægersange</indextitle>
   <firstline>Løft højt det blanke Bæger</firstline>
   <source in="bd2" pages="100-103"/>
+  <rhyme>
+    <analysis pattern="AABAABCC DDEAAXF DDGAGF AAHAAHF IIJAAKF AABDDBF AABAABF KAJALL MAMANN DADAEX ODODLL JPJPQQ" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -11463,6 +11742,9 @@ Mig et venligt Monument.
     <note>* Trykt i ,,Sneklokken'' 1826.</note>
   </notes>
   <source in="bd2" pages="104-110"/>
+  <rhyme>
+    <analysis pattern="AABBCCAADDXAAAEEFFAAGHHIIJJKKAALLAAGGAAGGXXAAMMAAAAMMNNGGOOAAAAPPNQPPAAAAAAHHPPRRHHAASSAAHHAAAAPPTTJJKKXHHUUNNGGXGGGGGGGAAOOHHVVHHOOWWHHAAXXOOXXGGGGXXAAHHQQGGCCXXAAWWYYAXZZPPAAAAA27A27A28A28GGA29A29WWHHA30A30MMXXDD" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -11678,6 +11960,9 @@ Naar selv man ej mægter at flyve derop. <note>* Jeg har oplevet den Glæde: at 
     <note>* Efter et nordamerikansk Digt.</note>
   </notes>
   <source in="bd2" pages="110-111"/>
+  <rhyme>
+    <analysis pattern="AXXA BCCB DAAD DEED BFFB" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -11720,6 +12005,9 @@ Tør paa imorgen sin Fortrøstning bygge.
     <note>Se <xref poem="blicher2003091595"/>.</note>
   </notes>
   <source in="bd2" pages="111-112"/>
+  <rhyme>
+    <analysis pattern="ABABCC DXDXCC CXCXCC DEDECC ADADCC" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -11769,6 +12057,9 @@ Der kommer en evig og herlig imorgen.
   <indextitle>Tiden, Kjerligheden og Venskab</indextitle>
   <firstline>En Olding, som man Tiden kalder</firstline>
   <source in="bd2" pages="113-114"/>
+  <rhyme>
+    <analysis pattern="AXAXBXBX BCBCACAC ADADAXAX EFEFBGBG AHAHACAC" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -11825,6 +12116,9 @@ En yndig Mø mod Tiden frem.
   <title>Hvo har Ret?</title>
   <firstline>Til Dagen Orden i hver Zone</firstline>
   <source in="bd2" pages="114-116"/>
+  <rhyme>
+    <analysis pattern="AXAX BXBC DXDX ACAB BEBE BABA AFAF BGBG BHBH IJIJ AKAK ALAL AIAI" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -11905,6 +12199,9 @@ Ret og forsigtigen.
     <note>Gendigtning af John Gay: <xref type="translation" poem="gay2005052802"/>.</note>
   </notes>
   <source in="bd2" pages="117-118"/>
+  <rhyme>
+    <analysis pattern="AABBBBCCDDEE FFCCFFBBFFBBGG CCHH IICCBB XXBBXJ CCBBJJBX" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -11978,6 +12275,9 @@ Og raaber: Ven! Du kjender nok mit Hjerte,
     <note>Fri gendigtning af Gottlieb Konrad Pfeffel: <xref type="translation" poem="pfeffel2019010901"/>.</note>
   </notes>
   <source in="bd2" pages="119-120"/>
+  <rhyme>
+    <analysis pattern="ABAB CBCB DBDB EFGF HIHI JBJB KFKF GE" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -12033,6 +12333,9 @@ Og med det Hele løb sin Vej.
     <note>Se Sir Edward Dyers <xref poem="dyer2003091501"/>.</note>
   </notes>
   <source in="bd2" pages="120-122"/>
+  <rhyme>
+    <analysis pattern="XAXAAA BABAAA CDCDEE FEFEEE GEGEEE HAHAEE IEXEEE JAJAEE KEKEEE IAIAAA" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -12122,6 +12425,9 @@ Et nøjsomt Sind er Jordens største Lykke.
   </pictures>
   <!-- TODO: Hvem er P. Sp.? -->
   <source in="bd2" pages="122-123"/>
+  <rhyme>
+    <analysis pattern="AABBBBCCBBDDEE" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -12150,6 +12456,9 @@ At levende til Himlen jeg opfoer.
   <indextitle>Ode til Løgnen</indextitle>
   <firstline>Kryb, o Du min Sang, i krumme Slangebugter!</firstline>
   <source in="bd2" pages="123-125"/>
+  <rhyme>
+    <analysis pattern="AXXA ABCA ACCC ABAX AADC CAXC AEDA AFFA GAAA XCCE XCGA CCCC" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -12223,6 +12532,9 @@ Siig i mit Navn: ,,Du Ringhedens Datter!
   <indextitle>Den største Nar</indextitle>
   <firstline>Fuld af Narre er vor lille Jord</firstline>
   <source in="bd2" pages="125-128"/>
+  <rhyme>
+    <analysis pattern="ABCCDDDDEE FFCC BAGGDDHH IIDDIIJJKK CCDDLLDDCCCC DDDDDDMM NNDDOO DDKKAB MMDD" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -12311,6 +12623,9 @@ At til Vise han forvandler Taaber.
   <title>Politisk Gnavpose</title>
   <firstline>At Politiken er et Spil</firstline>
   <source in="bd2" pages="128-131"/>
+  <rhyme>
+    <analysis pattern="AABBBB CCBBXBBBBAABB BBBBDDBBEEBBBBFFXGXH AAII DHJJGGBBKKLLGGJJGGBBMBBBB HHGGNNII BBOOBBXH MFBBII PPBBFFQQRRSS" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -12434,6 +12749,9 @@ Og - tager Potten hjem.
   <subtitle>Ideen tildeleels af det Tydske</subtitle>
   <firstline>Det første Spil af alle Whist dog bliver</firstline>
   <source in="bd2" pages="132-134"/>
+  <rhyme>
+    <analysis pattern="ABAACDCD AEAEAFAF ADADAAB AGAXAHAH CICICCCX AJAJKGKG CXCBCLCL CLCLCDCD AMAMKNKN CDCDAOAO" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -12536,6 +12854,9 @@ Med een man nøjes for det hele Liv.
   <indextitle>Kjerlighedsdalen</indextitle>
   <firstline>Blandt grønklædte Bakker der ligger en Dal</firstline>
   <source in="bd2" pages="135-137"/>
+  <rhyme>
+    <analysis pattern="AABB CCDD EEFF XXGG HHII XJKK FXLL MMNN JJOO XPQQ AAXL PPRR SSOO" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -12617,6 +12938,9 @@ Som Dalen har fundet - og mistet igjen.
   </notes>
   <keywords>ingemann</keywords>
   <source in="bd2" pages="137-139"/>
+  <rhyme>
+    <analysis pattern="AABBCCDE FFGGXXAA XHIIAAJJ KKLMNNFF OOIXEDPP XQRRSSTT UULLVVWW QQXXHHLM" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -12706,6 +13030,9 @@ Sødt, naar Solen daler, Du Dine Triller slaae!
     <note>* Omarbejdet efter et gammelengelsk Digt. Denne er den samme <w>Robin Hood</w>, der under det falske Navn ,,Lockley'' spiller saa vigtig en Rolle i <a poet="scott">W. Scotts</a> ,,Ivanhoe''. Han er Helten i mange Ballader, og udgjør med sine Kammerater: <w>Little John</w> og <w>Scharlet</w> et Kløverblad Mage til: <w>Adam Bell</w>, <w>Clym</w> af <w>Stone</w> og <w>Cloudesly</w>.</note>
   </notes>
   <source in="bd2" pages="139-147"/>
+  <rhyme>
+    <analysis pattern="ABAB CDED FGFG HEHE IIJI KDKD GGGL EICI MIMI ENEN OPOP DEDE QKQK RIRI CICI ASAS TUVU WXWX BDBD UYUY ZCZE LA27LA28 VA29TA29 OIOI A30A31A30A31 HMHM A32IA32I XIXI A31ZA31G A33A34A33X EA27CA28 A35A36A35A36 A37ZA37G A38IA38I XWXW A39CA39C A40IA40I JVJV A34IA34I A31A37A31A37 MIMJ CZCZ A41ZA41G A42A34A42A34 A43A32A43A32 WIWI A44A45A44A45 JA31IA31 A40HA40H" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -12978,6 +13305,9 @@ Med Pilen udi sin Bag.
     <note>Efter Popes <xref type="translation" poem="pope2003091502"/>.</note>
   </notes>
   <source in="bd2" pages="147-152"/>
+  <rhyme>
+    <analysis pattern="AABBAAAACAADDEEFFGGGGGGGGDXAXHIIJJFFAAKKAAGGAALLGGCCMMAAGGJJGGAAGGAAAAGGGGAAFFXAAGGAAAAXKAHHXXNNXCGLLHHAAGGKKAAKKBBXXOOGGPPAAGGQQAARRGGAKGG" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -13134,6 +13464,9 @@ Skjøndt Jomfru Betty Æren derfor nyder.
     <note>Efter Popes <xref type="translation" poem="pope2003091503"/>.</note>
   </notes>
   <source in="bd2" pages="152-157"/>
+  <rhyme>
+    <analysis pattern="ABCCDDCCEEDDFFCCDDCCCCGGCCDDBACCHHIIDDJJKKHHLLDDDDMMNNCCDDOOPPXXDDPPCCCCQQDDCCRRMMDDDDQQSSNNOOCCCCCCMMCCCCTTCCCCCLLUUJJCCNVCCMMCCWWNVCCCXXDDRRXXPPPPXXCCCCDDABCC" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -13311,6 +13644,9 @@ De alle Skjæbnens Slag imøde see.
     <note>Efter Popes <xref type="translation" poem="pope2003091504"/>.</note>
   </notes>
   <source in="bd2" pages="157-163"/>
+  <rhyme>
+    <analysis pattern="AABBAACCCCCCDDXAAEEFFGGCCHAAAIICCCCCCA AJJKKAAAACCLLXXAACCMMNNCCAAOPHHAAAACCAAQHAARRCCAAAAPOAAAAAACSSAAAATTAACCUUAAAAHQCCAAAAVVEEWWAAEECCCCXXYYZZCCRRA27A27AAQQCCAAA27A27QHCCCCCCCA28A28A29A29QH" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -13504,6 +13840,9 @@ Saa høres Sejerherren stolt udbryde:
     <note>Efter Popes <xref type="translation" poem="pope2003091505"/>.</note>
   </notes>
   <source in="bd2" pages="163-169"/>
+  <rhyme>
+    <analysis pattern="XXAABBCCDDAAAABBBBAABBEEFFBBAAAABBAAAAAAAXXGGHHAABBBBAABBIIJJKKAABBAAAABBAACCAAAALLMNBBOOBBBBLLDMBBAAAAPPQQCCAABBRSCCHHAABBTTAAAAAAUUBBAAVVNNWWCCMMHHAAAASRAAAACCAACCXXBBAAAAYYAAAABBZZAA" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -13706,6 +14045,9 @@ Med Suk hun løfted det og talte saa:
     <note>Efter Popes <xref type="translation" poem="pope2003091506"/>.</note>
   </notes>
   <source in="bd2" pages="169-175"/>
+  <rhyme>
+    <analysis pattern="AABBXCAABBBBDDBBEEBBAXFFBBBBBGGBBFFBBBBHHAABBAAAAHHIXAADDAADDAAJJAAAAKKLLAAMXAAAANNHHCCAAHHOOBBPIAAAAAAAAQQIPBBAABXBXXIIBBABBBBRRHHBBSSTTAAAABBAAAAXBGGUUVVBBBBAABBBBGGAABBMMDBB" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -13900,6 +14242,9 @@ Og mellem Stjernerne dit Navn indføre.
     <written>1824-10-11</written>
   </dates>
   <source in="bd2" pages="175-180"/>
+  <rhyme>
+    <analysis pattern="AABC DDEE FFGG HHII JJKK LMNN BBOO PPQQ RRML SSTT PPUU VVWW XXYY ZA27QQ ZZA28A28 RRWW A29A29NN A30A30AA XXNN A31A31CC AAQA32 A33A34QQ A35A35BB A36A36A27A27 A37A37A38A38 RRA27Z DDVV A31A31QA32 A39A39A40A40 PPA41A41 DDA42A42 A33A34A43A43 QA32A42A42" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -14088,6 +14433,9 @@ Samles maae, for ej at skilles meer!
   <title><num>1.</num>Ved Forestillingen af en Forfatters første dramatiske Forsøg</title>
   <firstline>Modtag med fordomsfrie Blik</firstline>
   <source in="bd2" pages="181-182"/>
+  <rhyme>
+    <analysis pattern="ABABCC DBDCC CECECC FDFDFF CFCFBB GHGHBB" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -14143,6 +14491,9 @@ Kan Ungdomsgnist oppustes dog til Lue.
   <firstline>Ud gaaer Du nu paa Livets Vej</firstline>
   <keywords>stambog</keywords>
   <source in="bd2" pages="182-184"/>
+  <rhyme>
+    <analysis pattern="AA BB CC CC CC AA DD CC CC EE FF XX XX CC GG HH II" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -14206,6 +14557,9 @@ Da gaaer Du ikke hen, men hjem.
   <firstline>Vort Liv ved Billeder betegnes maae</firstline>
   <keywords>stambog</keywords>
   <source in="bd2" pages="184-185"/>
+  <rhyme>
+    <analysis pattern="AA BB CC DD BB EE DD FF BB GG" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -14250,6 +14604,9 @@ Saa skal din Rejse endes glædelig
   <subtitle>(Forsang til en Nytaarsgave under denne titel. 1826.)</subtitle>
   <firstline>Naar alle Blomster slumme i kolde Vintergrav</firstline>
   <source in="bd2" pages="185-186"/>
+  <rhyme>
+    <analysis pattern="XXXABBCCDEFFEDGGHHIIAAJJ" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -14289,6 +14646,9 @@ Et kjerligt Hjerte tænker paa Vintrens blege Søn.
   <indextitle>Epilog</indextitle>
   <firstline>Ej blot til Lyst! saa sige vi, naar lystig Skjemt</firstline>
   <source in="bd2" pages="186-187"/>
+  <rhyme>
+    <analysis pattern="AABBBBCCDDXECCFFGGBBHHIIJJBBCCEE" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -14336,6 +14696,9 @@ Det var - skjøndt kun et Digt - dog ikke blot til Lyst.
   <indextitle>Prolog</indextitle>
   <firstline>Højtærede Herrer og Danneqvinder!</firstline>
   <source in="bd2" pages="187-189"/>
+  <rhyme>
+    <analysis pattern="AABBCCDDAAEEFFGGHH IIJJDDAAXKLLAALLFFXXLLXMMNN LLII LLKKLLAAOO" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -14413,6 +14776,9 @@ Vi Samle os ofte og glade som nu!
     <note>* Epilog, fremsagt paa Viborg Privattheater den 27de Oktober 1822, efter en Holbergsk Comoedie ved Digterens 100aars Jubilæum.</note>
   </notes>
   <source in="bd2" pages="190-192"/>
+  <rhyme>
+    <analysis pattern="AABCCB DDEFFE GGBCCB HHIJJI KKELLE MMEJJE EGEGIXIX EMEMEXEX BXBXENEN" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -14494,6 +14860,9 @@ Ludvig Holberg, Scenens Konge!
   <subtitle>(Ved Saisonens Aabning den 28de October med en Holbergsk Comoedie)</subtitle>
   <firstline>God Aften Allesammen! og mange Tak for sidst!</firstline>
   <source in="bd2" pages="192-193"/>
+  <rhyme>
+    <analysis pattern="XXAABBCCDDEEXXFFGGHHIIJJKK" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -14533,6 +14902,9 @@ Og blander han sin Stemme med det almene Raab:
   <subtitle>(Skreveti Aaret 1811 til Jens Lyngbye, da kaldet Sognepræst til Thunøe)</subtitle>
   <firstline>Goddag Hr, Jens! Velkommen hid til Thunøe Land!</firstline>
   <source in="bd2" pages="193-196"/>
+  <rhyme>
+    <analysis pattern="ABBXCDDBBEEBBFFBBGGHHBBFFFFFFFFBBFFBBFFFFIIECGGXCXXFFBBFFFFJJFFKKFXBAXFFFFFFBB" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -14627,6 +14999,9 @@ Kun ikke for Besøg udaf din Ven Steen Blicher.
   </notes>
   <keywords>ingemann</keywords>
   <source in="bd2" pages="196-198"/>
+  <rhyme>
+    <analysis pattern="ABAB CDCD XEXE FGFG XHXH IHIH JBJB KHXH CHCH XHXH LBLB KHKH MBMB NBNB OHOH BCBC" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -14719,6 +15094,9 @@ Og nu Farvel! - I højen Himmelbue
   <subtitle>(Den 28de October 1823)</subtitle>
   <firstline>Snart for Indbildningen det trætte Forhæng drages</firstline>
   <source in="bd2" pages="198-199"/>
+  <rhyme>
+    <analysis pattern="AABBCCDDEEFFCCBBEGXGCCEE" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -14759,6 +15137,9 @@ Hurra, Hurra for Kongens Hustru og hans Datter!
   <indextitle>Vise til en Farvers Bryllup</indextitle>
   <firstline>Yndig er vor gamle Jord</firstline>
   <source in="bd2" pages="199-202"/>
+  <rhyme>
+    <analysis pattern="ABABCDCD EBEBFBFB GBGBHBHB IDIDGJGJ KDLDXBXB MBMBJBJB GBGBNBNB XDXDODOD XDXDKBLB" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -14852,6 +15233,9 @@ Skal dem alle nyde!
   <subtitle>(efter Holbergs ,,Hexeri og blind allarm,'' givet paa et Privarttheater, til Bedste for en trængende Familie)</subtitle>
   <firstline>Her har skyldfri Skjemt sin Bolig</firstline>
   <source in="bd2" pages="202-203"/>
+  <rhyme>
+    <analysis pattern="ABABCDCD EBEBEDED EFEFEDED CGGHDHD" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -14899,6 +15283,9 @@ Var dog meer end blind Allarm.
   <subtitle>(ved en Krigscommissærs Fuldmægtigs Bryllup).</subtitle>
   <firstline>Hr. Visekrigscom'sarius!</firstline>
   <source in="bd2" pages="203-205"/>
+  <rhyme>
+    <analysis pattern="XAXABCBC DCDCEFEF GHGHICIC JKJKLCLC MKMKNANA XKNKOKOK XKXKXCXC" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -14975,6 +15362,9 @@ I Glæde I tilsammen boe,
   <subtitle>(indrykket i Randers Avis)</subtitle>
   <firstline>Henholdende mig til min ældre Kundgjørelse</firstline>
   <source in="bd2" pages="205-207"/>
+  <rhyme>
+    <analysis pattern="AAABABA CCCC CCACC AABBDDDDAAXXAABBAA CCEEXX FFAABBGG" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -15041,6 +15431,9 @@ Og Sjelen sig føler paa Timen i Ruus hensat.
   <title><num>16.</num>Nytaarsønsker</title>
   <firstline>Det er en gammel skik - og megen skjøn tillige</firstline>
   <source in="bd2" pages="207-208"/>
+  <rhyme>
+    <analysis pattern="AAXXXXAAXXBBBBAACCAAAAXXAAAAAABBDDEEEBBFF" confidence="0.93"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -15101,6 +15494,9 @@ De, der fra Dør til Dør hvert Nytaar bæres om.
   </dates>
   <keywords>frederik6</keywords>
   <source in="bd2" pages="208-209"/>
+  <rhyme>
+    <analysis pattern="ABBACCDEED ABBXFFBAXB ABBXXGBBG" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -15147,6 +15543,9 @@ Der er Fred og Fylde i hans Norden!
     <event>1839-05-28</event>
   </dates>
   <source in="bd2" pages="210"/>
+  <rhyme>
+    <analysis pattern="ABABXBAB CDCDEDED XFFFGBGB" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -15185,6 +15584,9 @@ Staae Fjeld og Mark hverandre bi,
   <title><num>19.</num>Hans Brøckner i Elbek</title>
   <firstline>Hvor der er vakkert i den Præstegaard!</firstline>
   <source in="bd2" pages="211-212"/>
+  <rhyme>
+    <analysis pattern="XXABBCCADD CCBEEXXBFF GGAHHBBAII JKHKJXXHLL" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -15243,6 +15645,9 @@ Det store hist han nu imøde gik.
     <note>* Justidsraad, Bureauchef, R. af D. stræbte med ædel Iver, men forgjæves, at saae istandbragt et Asyl for faldne Piger - liig Magdalene-Stiftelsen i Englland, m.fl. I denne Anledning frifindes det her saa snart begrædte Venskab. (Jvfr. Dansk Minerva 1815, S. 523 og Tilskueren 1816, nr. 12 -13.</note>
   </notes>
   <source in="bd2" pages="212-214"/>
+  <rhyme>
+    <analysis pattern="AABB AACC DDXX AAEE FFGG AAXX AAHH AAII AAAA JJFF AAKK LLMM DDNN AALL" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -15327,6 +15732,9 @@ Gud Fader glæde ham, og trøste Dig!
     <note>* Districtslæge, en mand god og glad som Tode, og velgjørende som han; døde uventet den samme Dag, paa hvilken hans Sølvbryllup skulde være fejret.</note>
   </notes>
   <source in="bd2" pages="215-216"/>
+  <rhyme>
+    <analysis pattern="ABAB CBCB DCXC EFEF DGDG CGCG" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -15370,6 +15778,9 @@ Thi stilled han og alle dem, han kunde.
   <subtitle>(Hans Helmuth v. Lüttigchaus Efterladte helliget)</subtitle>
   <firstline>Dagen skimter, Morgenstjernen glimter</firstline>
   <source in="bd2" pages="216-219"/>
+  <rhyme>
+    <analysis pattern="AABAAC AADEED EEFAAF GGHAAH GGIGGI GGGEEG GGBAAC JJKEEK GGEAAE EELAAL EEMJJM AAXAAA AANOON AAPAAP AAQGGQ" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -15486,6 +15897,9 @@ Slumre her i Jordens Taagedal.
   <title><num>23.</num>Farvel, Hans Christian!</title>
   <firstline>Farvel Hans Christian! ogsaa Du gaaer bort!</firstline>
   <source in="bd2" pages="210-221"/>
+  <rhyme>
+    <analysis pattern="ABAB CBCB DEDE FBFB EBEB GBGB HBHB IBIB CBCB EJEJ" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -15548,6 +15962,9 @@ Naar Dødens Engel ogsaa mig tilsmiler.
   <title><num>24.</num>Over en værdig Kone</title>
   <firstline>Den stolte Flod, som spreder Frugtbarhed</firstline>
   <source in="bd2" pages="221"/>
+  <rhyme>
+    <analysis pattern="ABAB CBCB DBDB EBEB" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -15580,6 +15997,9 @@ Din Aand opsteg til Støvets, Aandens Skaber.
   <subtitle>1838</subtitle>
   <firstline>Der var en Tid, da Du, i Skjønheds Fylde</firstline>
   <source in="bd2" pages="222-223"/>
+  <rhyme>
+    <analysis pattern="ABAB ACAC ADAD EFEF GHGH IHIH JXJX KAKA LALA XAXA MAMA NENE OAOA" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -15665,6 +16085,9 @@ Mit Afskedssuk skal over Graven bølge.
   <title>Til Aftenstjernen</title>
   <firstline>Yndigt er dit Lys, o Aftenstjerne!</firstline>
   <source in="bd2" pages="224"/>
+  <rhyme>
+    <analysis pattern="AAXBBA BBCBBC BBDBBD" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -15697,6 +16120,9 @@ Fortids Minde røres i hans Bryst.
   <title>Til Maanen</title>
   <firstline>Hil Dig atter, Himlens faure Datter!</firstline>
   <source in="bd2" pages="225-226"/>
+  <rhyme>
+    <analysis pattern="AABAAB CCDAAD AAXEEX CCFAAF AAGAAG HHXCCX AAIAAI CCXEEX" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -15764,6 +16190,9 @@ Trille klare sine Bølger smaa!
   <title>Til Solen</title>
   <firstline>O Du, som ruller højt paa Himlens Bue</firstline>
   <source in="bd2" pages="227-228"/>
+  <rhyme>
+    <analysis pattern="AABCCBDD DDEDDEAA DDFAAFDD DDGDDGDD AAXDDXAA DDHDDHDD" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -15835,6 +16264,9 @@ Midt paa sin Vej han gyser.
     <picture artwork="abildgaard/1782-ossian-svanesang"/>
   </pictures>
   <source in="bd2" pages="228-231"/>
+  <rhyme>
+    <analysis pattern="AAAABBAACCDD AAAAXE CCAAFFAA AAXGHH CCIIAACCJJ CCCCXKCCCCXE CCHHGGAACCLL CCMMKK CCCCE" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -15945,6 +16377,9 @@ Hoverende i alle Storme staaer.
   </subtitle>
   <firstline>En Vise vil vi nu sjunge</firstline>
   <source in="bd2" pages="232-236"/>
+  <rhyme>
+    <analysis pattern="AABBA AABBA CCB AAB AAB AABB AABBA AAB AAB AABB AAB CCBB AAX DDB CCB CCB CCBBA CCB AAB CCB AABB CCB CCB AAB AABBA AAB EEB ACBBA" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -16087,6 +16522,9 @@ Jeg vover de danske Drenge.
   <keywords>christian4</keywords>
   <quality>korrektur1,korrektur2</quality>
   <source in="bd2" pages="236-239"/>
+  <rhyme>
+    <analysis pattern="AABBCC DDEECC AAAACC AABBCC AADDCC BBAACC AADDCC AAAACC DDDDCC FFBBCC AAGGCC FFAAHH" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -16182,6 +16620,9 @@ Tidsrøsten jo haver os vækket:
   <title><num>3.</num>Et dansk Kløverblad</title>
   <firstline>Steenvinkel, Rostgaard og Gerner</firstline>
   <source in="bd2" pages="239-243"/>
+  <rhyme>
+    <analysis pattern="ABAB BCBC BDBD EFEF EGEG BHBH BIBI BDBD AJAJ BKBK BLBL BMBM NONO BBBB BXBX APAP AXAH BXBB BEBX BMBM NQNQ BRBR NSNS LTLT BGBG" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -16321,6 +16762,9 @@ Som deres, hvem vi maae kalde
   <linktitle>Prinds Christian</linktitle>
   <firstline>Ved Christianssand</firstline>
   <source in="bd2" pages="243-246"/>
+  <rhyme>
+    <analysis pattern="AABXB CCBCB XDBDB EEFEF GXBGB CCBCB HHBHB IIFIF JXKJK LLKLK MMBMB NNKXK OOPXP QQBQB AABAB RXKRK" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -16428,6 +16872,9 @@ Dens Drapa nu er sjungen.
   <title><num>5.</num>Peder Lykke</title>
   <firstline>Den Nordsø! det er et uroligt Vand</firstline>
   <source in="bd2" pages="246-249"/>
+  <rhyme>
+    <analysis pattern="ABAB CDCD EFEF AGAG HFHF IGIG XGXG XFXF ADAD JFJF KFKF XFXF LDLD MFMF NFNF XGXG OFOF OPOP QFQF RFRF AFAF" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -16552,6 +16999,9 @@ Med Alle skal stædes i Fare?
   <linktitle>En ganske ny Vise om en Kroermand og han Søn</linktitle>
   <firstline>De Bønder de sidde saa tykt over Bord</firstline>
   <source in="bd2" pages="249-253"/>
+  <rhyme>
+    <analysis pattern="ABAB CDCD EDED FBFB GBGB HDHD ABXB XDXD IBIB JBJB KLKL MBMB NDND ODOD LLLL CBCB PBPB MDDD QBQB RLRL IBIB SLSL TDTD UBUB XBQB XBXB" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -16696,6 +17146,9 @@ Som Dreng han med Døden maa spøge.
   <indextitle>Krigssange</indextitle>
   <firstline>Tilhest! tilhest nu, Du jydske Dragon!</firstline>
   <source in="bd2" pages="254-256"/>
+  <rhyme>
+    <analysis pattern="ABABCC DEDEBB FBFBDD EBCBGG HIHIJJ EKEKBLBL BMBMNDND BOBOBPBP BEBXBQBQ IRIRBSBS" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -16794,6 +17247,9 @@ Snart Solen skal fremtræde,
   <subtitle>(Værnersang)</subtitle>
   <firstline>Nu hvile mange trætte Lemmer</firstline>
   <source in="bd2" pages="256-257"/>
+  <rhyme>
+    <analysis pattern="ABABXX CDCDEE CFCFXG GHGHII CXCXJJ" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -16841,6 +17297,9 @@ Den hører Danskens Sejerssang!
   <subtitle>(Den 1ste August 1840.)</subtitle>
   <firstline>Op af Nordhavs dybe Vander knejser</firstline>
   <source in="bd2" pages="257-259"/>
+  <rhyme>
+    <analysis pattern="AABBC AACCB BBBBB CDCD AXAX BXBX BEBEBBBB CFCFBBBB AEAEBBBB AEAEBBBB CCGGB GXGD HIHHHXJJI" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -16959,6 +17418,9 @@ Skal staae!
   <indextitle>Din Skaal og min Skaal</indextitle>
   <firstline>Din Skaal og min Skaal!</firstline>
   <source in="bd2" pages="259-260"/>
+  <rhyme>
+    <analysis pattern="AABBC CDDD AAEEFFDDD AABBGGHHH" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -17004,6 +17466,9 @@ Skal fridig lyde Sangen!
     <note>* Jfr. ,,Min Svanesang! (i I.H. Hansens Maigave 1839, siden i ,,Nyeste Noveller og digte'' 1840), skrevet 1838, som det synes, i en senere Sygdom.</note>
   </notes>
   <source in="bd2" pages="260-261"/>
+  <rhyme>
+    <analysis pattern="ABABCCB DBDBEEB FGFGHHB IBIBJJB KBKBEEB" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -17061,6 +17526,9 @@ Til evig Glædes rige!
     <note>* Jfr. Gl. o. n. Novell. 1, S 16. og Kbhs. Morgenbl. 1839, Nr. 59.</note>
   </notes>
   <source in="bd2" pages="262-263"/>
+  <rhyme>
+    <analysis pattern="AABBCCDDBBEEFFXXGGXHIIJJK KXXLLIIEEMMNNHHOOBBPPIIQQBB" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -17129,6 +17597,9 @@ Han har jo forvundet sin bittreste Nød.
   <indextitle>Mit Modersmaal</indextitle>
   <firstline>Du dyrebare Tolk før mine Tanker</firstline>
   <source in="bd2" pages="263-264"/>
+  <rhyme>
+    <analysis pattern="AABAAB CDEDCE AAFGGF HHXHHX HHIDDI HHJAAJ" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>

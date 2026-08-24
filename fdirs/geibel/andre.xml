@@ -10,6 +10,9 @@
   <title>Die Sonnenblume</title>
   <firstline>O Rosen, die mit Ruhme</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABAB CDCD AXAX AXAX CECE CFCF AFAF" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -56,6 +59,9 @@ Und selig bin auch ich.
   <title>Minnelied</title>
   <firstline>Es gibt wohl manches, was entzücket</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AXABCCXCCX DEDEDDFDDF CBCXCCGDDG DHDHIIXDDJ DXDXDDKJJK DLDLDDXDDX DMDMDDNOON PQPQDDXCCX" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>

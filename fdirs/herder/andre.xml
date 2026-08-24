@@ -13,6 +13,9 @@
   <indextitle>Der Mond</indextitle>
   <firstline>Und grämt dich, Edler, noch ein Wort</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABABAB" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -34,6 +37,9 @@ Was Nacht ist, aufzuhellen.
   <indextitle>Die Fahrt zur Geliebten</indextitle>
   <firstline>Sonne, wirf den hellesten Strahl auf den Orra-See!</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABA CX AC BA BX AAC XX CXC AC AA CX" confidence="0.92"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -83,6 +89,9 @@ So weiß ich, ich finde den rechten Weg.
   <indextitle>Verklärung</indextitle>
   <firstline>Lebensfunke, vom Himmel entglüht</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="XXAABCCB XXCCXD XXXXCCXD" confidence="0.84"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -122,6 +131,9 @@ Wo ist dein Pfeil, o Tod?«
     <note>Cf. folkevisen <xref poem="folke2001042101"/>.</note>
   </notes>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="XABBCC DDCCEE DDCCXX CCFFXX XXGGGG AAHHII EEHHJJ" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -185,6 +197,9 @@ Da lag Herr Oluf und war tot.
   <indextitle>Ännchen von Tharau</indextitle>
   <firstline>Ännchen von Tharau ist, die mir gefällt</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="XX AA BB CC XX XX XX DD EE XX XC FF XX XX BB XX GG" confidence="0.83"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -249,6 +264,9 @@ Durch Zanken wird es der Hölle gleich.
   <indextitle>In Mitte der Ewigkeit</indextitle>
   <firstline>Ein Traum, ein Traum ist unser Leben</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AXAXBCBC" confidence="0.91"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -272,6 +290,9 @@ der Ewigkeit ...
   <indextitle>Dein Schwert, wie ist's von Blut so rot</indextitle>
   <firstline>Dein Schwert, wie ist's von Blut so rot</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABAC ADAC ABAC ADAC ABAC ADAC EBEC FDFC GBGC GDGC HBHC IDIC EBEC FDFC" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -355,6 +376,9 @@ Denn ihr, ihr rietet's mir! O!
   <indextitle>Erlkönigs Tochter</indextitle>
   <firstline>Herr Oluf reitet spät und weit</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="XA BB XC DD CC EE DD CC XX CC FF XX XX GG GG AA HH II EE HH JJ" confidence="0.93"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -434,6 +458,9 @@ Da lag Herr Oluf, und er war tot.
     <note>Oversat efter Sappho.</note>
   </notes>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AXBX XCXC DEBA DBBBX EEEEXEEXE" confidence="0.91"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -488,6 +515,9 @@ im Heer der dunklen Schatten.
   </pictures>
   <keywords>andersen</keywords>
   <quality>korrektur1,korrektur2,kilde</quality>
+  <rhyme>
+    <analysis pattern="XAXAB CDXDX CEFEF XGBGX GHGH" confidence="0.91"/>
+  </rhyme>
 </head>
 <body>
 <poetry>

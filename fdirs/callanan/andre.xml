@@ -9,6 +9,9 @@
 <head>
   <title>Serenade</title>
   <firstline>The blue waves are sleeping</firstline>
+  <rhyme>
+    <analysis pattern="ABABCDXD XDXXDEXE DDXDXDDD DFXFDGDG XCXDDHDH" confidence="0.91"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -64,6 +67,9 @@ Farewell then my dear one,
 <head>
   <title>The Outlaw of Loch Lene</title>
   <firstline>O many a day have I made good ale in the glen</firstline>
+  <rhyme>
+    <analysis pattern="AABB CCDD EEBB FFGG" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -94,6 +100,9 @@ The birds go to sleep by the sweet wild twist of her song.
 <head>
   <title>The Night was Still</title>
   <firstline>The night was still,—the air was balm</firstline>
+  <rhyme>
+    <analysis pattern="ABABXCDC XBDBECEC" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>

@@ -9,6 +9,9 @@
 <head>
   <title>Après la bataille</title>
   <firstline>Mon père, ce héros au sourire si doux</firstline>
+  <rhyme>
+    <analysis pattern="XXAABBAACCAAXXAADDAA" confidence="0.93"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -40,6 +43,9 @@ Et que le cheval fit un écart en arrière.
 <head>
   <title>La fiancée du timbalier</title>
   <firstline>Monseigneur le duc de Bretagne</firstline>
+  <rhyme>
+    <analysis pattern="ABAAB CXCCD AEAAE AFAAF AXAAX AGAAG CBCCB AHAAH AXAAD AIAAI CHCCH AXAAX AJAAJ AGAAG CXCCX AXAAX CJCCJ AJAAJ CBCCB AXAAX" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -170,6 +176,9 @@ Les timbaliers étaient passés.
 <head>
   <title>La Fée et la Péri</title>
   <firstline>Enfants ! si vous mouriez, gardez bien qu'un esprit</firstline>
+  <rhyme>
+    <analysis pattern="ABABABXCCDBBD BEBBE BFBBF BGBBG BHBBH BGBBG BIBIJJKCCK BXBXBBXBBL CHCMBBNBBN BBGBBG BBMCCM CCOBBO BBPBBP BBLCCL BBQCCQ CCRCCR CCKCCJ BBSBBS BBXBBX BBJBBK CCEBBE BBTBBT BBTCCT CCUBBU CCUCCU BBXBBM BBXCCD CCVBBV CCNCCN BBUCCU BNBBN" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>

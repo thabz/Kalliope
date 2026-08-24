@@ -19,6 +19,9 @@
   </notes>
   <quality>korrektur1,korrektur2</quality>
   <keywords>stambog</keywords>
+  <rhyme>
+    <analysis pattern="ABABAXAX" confidence="0.91"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -38,6 +41,9 @@ Fort in den Süden wiederum einmal!"
 <head>
   <title>Der ausgewanderte Dichter III</title>
   <firstline>Und als wir watend durch die Furt nun setzten</firstline>
+  <rhyme>
+    <analysis pattern="ABAB CCCC AAAA CACA ACAC ADAD CACA CBCC ACAC EAEA CACA CBCB AAAA AAAA ACAC AAAA CBCB AFAF CACA ACAC AAAA AAAA GHGH CACA AAAA" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -179,6 +185,9 @@ War: "Krieger, o, nach Morgen laßt mich schauen!"
 <head>
   <title>O lieb, solang du lieben kannst!</title>
   <firstline>O lieb, solang du lieben kannst!</firstline>
+  <rhyme>
+    <analysis pattern="ABCB XXXX XXXX XDED ABCB XXXX FEFE GXGX XHXH ABCB" confidence="0.85"/>
+  </rhyme>
 </head>
 <body>
 <poetry>

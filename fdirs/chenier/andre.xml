@@ -11,6 +11,9 @@
   <title>A la liberté</title>
   <firstline>Descends, ô liberté ! fille de la nature</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABAB AXAC ADAD AEAE ACAX" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -46,6 +49,9 @@ Les peuples vont jurer la paix.
 <head>
   <title>Le Chant du départ</title>
   <firstline>La victoire en chantant</firstline>
+  <rhyme>
+    <analysis pattern="XAXXAXABAB ACAC DEDEAFAF DXDXAFAF DGDGAEAE AXAXDHDX DEDEAXAH" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>

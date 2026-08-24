@@ -38,6 +38,7 @@ const metadataFields = [
   'pagebreaks',
   'pictures',
   'quality',
+  'rhyme',
   'source',
   'subtitle',
   'suptitle',
@@ -89,6 +90,10 @@ const splitAdjacentMetadataFields = xml =>
 
 const splitMetreAnalyses = xml => xml
   .replace(/(<metre(?:[ \t][^<>]*)?>)(?!\r?\n)/g, '$1\n')
+  .replace(/(<analysis\b[^<>]*\/>)(?!\r?\n)/g, '$1\n');
+
+const splitRhymeAnalyses = xml => xml
+  .replace(/(<rhyme(?:[ \t][^<>]*)?>)(?!\r?\n)/g, '$1\n')
   .replace(/(<analysis\b[^<>]*\/>)(?!\r?\n)/g, '$1\n');
 
 const nonumWrapperNames = [
@@ -210,7 +215,7 @@ export const formatWorkXml = xml => {
   const withSplitMetadata = splitAdjacentMetadataFields(
     withoutStructuralIndentation,
   );
-  const withPoetryLines = splitPoetryLines(splitMetreAnalyses(withSplitMetadata));
+  const withPoetryLines = splitPoetryLines(splitRhymeAnalyses(splitMetreAnalyses(withSplitMetadata)));
   const withMetadataIndentation = indentMetadata(withPoetryLines);
   return addSectionSpacing(addTextSpacing(withMetadataIndentation))
     .trimEnd() + '\n';

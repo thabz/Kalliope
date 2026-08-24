@@ -21,6 +21,9 @@
     <note>Tilegnelse med "Nyere Digte".</note>
   </notes>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="XAXA BCBC" confidence="0.91"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -44,6 +47,9 @@ Med sine kjendte Toner til dit Bryst.
   <indextitle>En Vaar-Nat</indextitle>
   <firstline>Vaar-Natten stille og sval</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AABBBBB CCDDBBD EEBBBBB FFBBBBB" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -89,6 +95,9 @@ Smerten i dit Savn og i din Klage.
   <indextitle>Digtets Aand</indextitle>
   <firstline>Hvad ei med Ord kan nævnes</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABCB XDCD EFGH GICI AJCJ CKEK ALCL MNON GPOP AHEF GQCQ CRCR ASCS MTCT XUGU" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -175,6 +184,9 @@ Hans Verk et evigt Liv.
   <title>Elveløbet</title>
   <firstline>Elven er aldrig saa kjæk og strid</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABABA CDCDX XBEBE FXFFF GBGBG HBHBH" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>

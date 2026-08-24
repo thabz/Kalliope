@@ -9,6 +9,9 @@
 <head>
   <title>Einen Sommer lang</title>
   <firstline>Zwischen Roggenfeld und Hecken</firstline>
+  <rhyme>
+    <analysis pattern="ABAB AXAX CXCX CXCX DXDX ABAB" confidence="0.88"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -49,6 +52,9 @@ Einen Sommer lang.
 <head>
   <title>Du mein Vaterland</title>
   <firstline>Es schillert um mich glänzend bunt Gefieder</firstline>
+  <rhyme>
+    <analysis pattern="AAAA BCBC BDBD BXBX BEBE FGFG" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -89,6 +95,9 @@ Noch einmal rascheln hören meinen Schritt.
 <head>
   <title>Für und für</title>
   <firstline>Im ersten matten Dämmer thront</firstline>
+  <rhyme>
+    <analysis pattern="ABCCXXDDEEABFF" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>

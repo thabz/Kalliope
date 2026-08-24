@@ -16,6 +16,9 @@
     <note>Skrevet 1807, først trykt i 1830.</note>
   </notes>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AABBBB AAAABB XXXXBB CCAABB AAXXBB AAAABB" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -71,6 +74,9 @@ Will ne'er desert its pledge, my Boy!
   <indextitle>The isles of Greece</indextitle>
   <firstline>The isles of Greece!</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABABCC AAAADD XXAAAA EFEFGG XAEAAA AAAAAX DXXHAX IHIHAX XAJAIX CACAAA AAAJKK ALJLMM AAAANN OPOPXH AAAXJJ QXQAAA" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -197,6 +203,9 @@ Dash down yon cup of Samian wine!
     <note>Skrevet 1809.</note>
   </notes>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABACABAB ABXBDBXB EFXFXCFC AAAAGHGH ADADIJIJ KEKELJLJ AJAJXCAC" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -271,6 +280,9 @@ May match the dark-eyed Girl of Cadiz.
   <title>Farewell! If ever fondest prayer</title>
   <firstline>Farewell! If ever fondest prayer</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="XAXBACXC BDBDDXDC" confidence="0.91"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -304,6 +316,9 @@ I only feel – Farewell! – Farewell!
     <note>Fra <i>The works of Lord Byron</i>, Ernest Hartley Coleridge (ed.), volume 3. John Murray, 1898.</note>
   </notes>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="XAXBCCDDEEEEFF GGHHIIEEJJKKDD EEFEFLFEFFFFXMINOOEE EOEOEIEICCEEPPQQ RESEXXTFOFKKUUVV PBPAWXEEEEEEXXEYEYZZEA27A28A28EE LEEA29EA30EEA31A32A32RR A33A33XA34A35IIA36A37XCC FEFEEA29A29A38A38EEEEEX FWEWA39EA30A39A30A40XEA41FFXXA29CEEEEFEEA42A42A31A31EEXXQQ A40RA40RRXIEEEEXXRE FA27FEEEEEREAA30DA30DLXEESTOREE EA31A31A31EA43A43A44A44EELEEA38A38EELA45A45EEEESSEEA43EEA43A46XXA46A42EEEEA41OTEEA47A47A48A48FFEEA49A49OOEEEEEEPPEEEA41EA27A50XA27A27XXA30A30OORQEQEEEEA27EA51A52 A46RRRRA46EEQQEEEEEA51A53A53CA54A54CEKELA55EA36A35EA41EEA56A56CA29A27A27EEA31A31EEA36A36LLQQA51A52ELA33REFRA57A58A58EMA36E A56XA56A52A52A56XA52A50XXEEA33A33FFEA51II DDFFRSA56A56UUFFA30A30A29EA41EIIEA59A59 IIRRRRA47A47EEERFERRA57A57LLEEA54SEEA60A60A31A31IIEERA54A61A56A56NNA29IEEA33A33 LLA55A55RRROEYYA29A62A62XA52A34A30A30A27EIA29OO NIA30A30CCEA27FFFA54A54ESA58A58A37A37EEYYEEXXA34 EEEEEFA61RRA63A63EEA57A57A34XXEDDA64A64EEXXRRA65A65PPRSEERRA66A66A31A31EEEEQQEEEELEXX" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -962,6 +977,9 @@ And never more a leaf reveals.
   <title>Stanzas Composed During A Thunderstorm</title>
   <firstline>Chill and mirk is the nightly blast</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABAC DEDE FXXX GXGB HIHI BJXJ BKCK XXXX LFLM NBBB OPOP FQMQ BKEX GBGN CECX RBRB XEBB QBQB" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1066,6 +1084,9 @@ And mourns in search of thine.
     <note>December 6, 1811.</note>
   </notes>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="XAXAXBCB XXDXCEFE GHGHCCCX IJIJFDFD" confidence="0.92"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1112,6 +1133,9 @@ That scatter'd gladness o'er his path.
 <head>
   <title>Stanzas To Augusta</title>
   <firstline>When all around grew drear and dark</firstline>
+  <rhyme>
+    <analysis pattern="ABAB CDCD EFEF GHGX HBHB HXHH HIBI JHJH GKHK HXHH HHXH" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1181,6 +1205,9 @@ Earth is no desert—e’en to me.
   <notes>
     <note>Cf. James Montgomery: <xref poem="montgomery2019090701"/>.</note>
   </notes>
+  <rhyme>
+    <analysis pattern="ABAB XCXC XBXB BDBD BEBE FGFG HIHI BXXB HBHG JKJK ABAB" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1246,6 +1273,9 @@ Some few who ne’er will be forgot
 <head>
   <title>When I Roved a Young Highlander</title>
   <firstline>When I rov'd a young Highlander o'er the dark heath</firstline>
+  <rhyme>
+    <analysis pattern="ABABCDCE FGFGHDHE FIFIFDFE FFFFJDJE XXFFKFKE FBFXXEXE" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1310,6 +1340,9 @@ No home in the forest shall shelter my head,—
 <head>
   <title>I would I were a Careless Child</title>
   <firstline>I would I were a careless child</firstline>
+  <rhyme>
+    <analysis pattern="ABABBCBX DEDEBXBB XBXBFXFX BXBXXGCG BXXXHBHB XIJIXXBJ KLKLKMKM" confidence="0.91"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1383,6 +1416,9 @@ Then would I cleave the vault of Heaven,
 <head>
   <title>On Parting</title>
   <firstline>The kiss, dear maid! thy lip has left</firstline>
+  <rhyme>
+    <analysis pattern="XAXA BABA XAXX ACXC XAXA" confidence="0.86"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1418,6 +1454,9 @@ Must bear the love it cannot show,
 <head>
   <title>Stanzas written in passing the Ambracian Gulf</title>
   <firstline>Through cloudless skies, in silvery sheen</firstline>
+  <rhyme>
+    <analysis pattern="AXAX BCBC DEDE FFFF GXGX" confidence="0.93"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1453,6 +1492,9 @@ I cannot lose a <i>world</i> for thee,
 <head>
   <title>Stanzas for Music</title>
   <firstline>There's not a joy the world can give like that it takes away</firstline>
+  <rhyme>
+    <analysis pattern="AABB CCDD EEFF BXGG XHHH" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1500,6 +1542,9 @@ So, midst the withered waste of life, those tears would flow to me.
   <notes>
     <note>Fra <i>Childe Harold's Pilgrimage</i>, Canto I.</note>
   </notes>
+  <rhyme>
+    <analysis pattern="AABXCDAD AXEXFAFA AXAAAGHG IJXJAAAA HKIKLALH MAMAAXAX FAFANHNH XXEXABAB ACMAKOKO PAPAEDED" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1603,6 +1648,9 @@ Welcome, ye deserts, and ye caves!
   <dates>
     <written>1809-09-14</written>
   </dates>
+  <rhyme>
+    <analysis pattern="AXAA BXBA" confidence="0.91"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1626,6 +1674,9 @@ Reflect on me as on the dead,
   <title>The Vision of Judgment</title>
   <firstline>Saint Peter sat by the celestial gate</firstline>
   <source href="http://www.jacklynch.net/Texts/vision.html">George Gordon Byron: <i>The Vision of Judgment</i>.</source>
+  <rhyme>
+    <analysis pattern="ABABCBDD AEFEFAGA HIDJDKLL MNOPOPXX QEQRQESS TGUVTGFF AWAWAWXX YAYZYAA27A27 A28FA28FXFOO A29IXKA29IA30A30 CACA31CADD AA32AA32FA32FA33 DA32A34A32A34A32FF IUEUIUA35A A36A37XA37XA37DA AAAAA38A39A40A40 AA35AAA41A35A42A42 A43AA44AA43AA35A35 AA45AA45AA45A46A46 A47A48A47A48A47A48UA43 OA49OA49OA49II PAPANAAE A33A27A33AA33A27A50A50 A51UA52UUUAA AA48AA48AA48A53A53 A42A54A42A54A42XA35A35 RA35AA35RA35A55A55 A56CA56CA56CA56A56 IAIAA57AA58A58 A59DA59DA59DA42A42 AXAUAXHD A60A32A60A32A60A32MA35 IDEDIDOA61 A62A63A62A63A62A63FF AA64XA64AA65A66A66 JA67IA67IA67A33A33 IA59IXKUA68A68 A33A32A33A32A33GDD ASA69SA69SAA A70A71A70A71XA71A72A72 EA43JA43EA43AA A48A73A74A73A48A73AA A30A75A30A76A30A76AA A52A77A52AUA77A74A48 AA78DAAA78A79A79 A45TAA80A45TAA XA71A35A71A35A71AA A30UA30TA30UFF A70A81AAAA81A82A82 AAAAAAQQ GFGFVFAA35 A46A35A46A35A46A35A68A68 XFXFXFAA DDXDDAA35A A49UA49XVUA69A AAA83AA83ADD AUA35UAUA69A42 A50A35XAA50AAA BABABA69A66A66 AA35A48A35A74A35EJ ACGCACRA DA57DKA34IA64A65 AA33AA33AQAD A64RA64A57A64JAA41 UA29UA29UA29DD AA84AA84AA84A38A XA29A85A29A85XA38A A72EA72IA72IA27A27 A86A44A87A43AA43AZ A52DA52A34A52DAA A66A56A66A56A66A48QQ A64UA65AA64AA88A88 A83DA83DXDLL UAUAUA35A42A42 AA28A88A89A42A89DD A66AA66AA66A69A42A42 CA90CA52CUA48A48 AA42FA42FA42A91A91 A92A93A92A93A36A93A35A64 A45A69AA42A45A69A29A29 ARAEDAA42A53 A44AAAA44AA42A42 A52A87A52A86A52A86A39A39 A60AA60AA60AA80U A44A51AA51A44A51AA UA40UA40UA40VA A46A31A46AA46A31AX A30AA30AA30A69UT AA35FA35ZA35DD A63IXKXIA42A31 UDA80DTDA90A90 A84FA84FA84FA38A38 A57AA57AXAAA AAAAAAAA AAAA43AUAA A44DA43DA43DRE AA42AA42UA42A48A48 A48UQUQUAA41 A55A61A55A35A55OA94A95 JARARAA45A45 FA29FA29FA29AA EA95EA94IA94A96A96 A49A68A49A68A49A68EI A45A93A45AA45A35A42A A97A82A97A82XA82FA33 FAFA45FAA75A75" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2696,6 +2747,9 @@ I left him practising the hundredth psalm.
 <head>
   <title>Ode to Napoleon Buonaparte</title>
   <firstline>Tis done—but yesterday a King!</firstline>
+  <rhyme>
+    <analysis pattern="ABABCCBDD EBEBBBBFF GBGBHIBJJ JBJBJJBBJ BKBKBBBBB GLBLMMLJJ NBNBXBXOP JQJQXXQKB RSRSNNSHX XKXBDDKEE BIBICBITT UJUJVBJXN PBOBBXBWW BXBBRRBXX BBBBYBBZZ HA27HA27XXA27BX OBPXBBBBB AA28AXBDA28JJ BVXBA28A28BYB" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2896,6 +2950,9 @@ To make man blush there was but one!
 <head>
   <title>Fare Thee Well</title>
   <firstline>Fare thee well! and if for ever</firstline>
+  <rhyme>
+    <analysis pattern="AXAX BCBC ADAE BDBX BFBF GHGH IXII DXDJ ADAE BKBK BBBB XDXE LDLD BMBM JBJB" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2984,6 +3041,9 @@ Sear’d in heart, and lone, and blighted,
   <indextitle>Stanzas for Music</indextitle>
   <firstline>There be none of Beauty's daughters</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABABCCCC CDCDBBXX" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>

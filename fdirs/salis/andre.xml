@@ -10,6 +10,9 @@
   <title>Mailied</title>
   <firstline>Der Apfelbaum prangt grün und weiß</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="XAXAXBXB CBCBDBDB XAXAEAEA XBXBFAFA XBXBXBXB" confidence="0.90"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -66,6 +69,9 @@ Folgt uns zum bessern Leben.
   <title>Ins stille Land!</title>
   <firstline>Ins stille Land! </firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABBAABA ACCAACA ADDXADA" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -100,6 +106,9 @@ Ins stille Land.
 <head>
   <title>Das Grab ist tief und stille</title>
   <firstline>Das Grab ist tief und stille</firstline>
+  <rhyme>
+    <analysis pattern="ABAB CXCX CDCD AXAX CXCX" confidence="0.90"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -135,6 +144,9 @@ Nur, wo es nicht mehr schlägt.
 <head>
   <title>Frühlingslied</title>
   <firstline>Unsre Wiesen grünen wieder</firstline>
+  <rhyme>
+    <analysis pattern="ABABACAC DEDEFGFG FXFXAXAX" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -174,6 +186,9 @@ Fühlet, was noch fühlen kann.
   <firstline>Süßer Wehmut Gefährtin, Erinn'rung</firstline>
   <source pages="272-273"><i>Deutsche Nationalliteratur</i>, Band 41, Stuttgart [o.J.].</source>
   <source href="http://www.zeno.org/nid/2000557563X">Johann Gaudenz von Salis-Seewis: <i>An die Erinnerung</i>.</source>
+  <rhyme>
+    <analysis pattern="XXXX XXXA XXBX BACX CXXX XXBX" confidence="0.75"/>
+  </rhyme>
 </head>
 <body>
 <poetry>

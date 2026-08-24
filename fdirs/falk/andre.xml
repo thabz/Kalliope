@@ -9,6 +9,9 @@
 <head>
   <title>An die Geduld</title>
   <firstline>Ich will die schönste Tugend singen</firstline>
+  <rhyme>
+    <analysis pattern="AAXX AABB AAXX CCDD AAEE AAFF GGXX AAHH AAFF" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -64,6 +67,9 @@ Wir seh'n uns wieder, nur Geduld!
 <head>
   <title>O du fröhliche</title>
   <firstline>O du fröhliche, o du selige</firstline>
+  <rhyme>
+    <analysis pattern="ABCB ABCB ABAB" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>

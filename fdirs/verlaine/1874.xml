@@ -27,6 +27,9 @@
   </subtitle>
   <firstline>C'est l'extase langoureuse</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AAXBBX AACAAC AADAAD" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -59,6 +62,9 @@ Par ce tiède soir, tout bas ?
   <title><num>II.</num>Je devine, à travers un murmure</title>
   <firstline>Je devine, à travers un murmure</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABBA BAAB ABBA" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -90,6 +96,9 @@ O mourir de cette escarpolette !
   <firstline>Il pleure dans mon coeur</firstline>
   <keywords>rimbaud</keywords>
   <quality>korrektur1,korrektur2</quality>
+  <rhyme>
+    <analysis pattern="ABAA BXBB CBCC BXBB" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -125,6 +134,9 @@ Mon coeur a tant de peine !
   </subtitle>
   <firstline>Il faut, voyez-vous, nous pardonner les choses</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AAAA ABAB AAAA" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -155,6 +167,9 @@ Sans même savoir qu'elles sont pardonnées.
   </subtitle>
   <firstline>Le piano que baise une main frêle</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABAXBA CACCAC" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -180,6 +195,9 @@ Ouverte un peu sur le petit jardin ?
   <title><num>VI.</num>C'est le chien de Jean de Nivelle</title>
   <firstline>C'est le chien de Jean de Nivelle</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AXXA XAAX AXXA XAAX ABBA BAAX AXXA AXXA" confidence="0.86"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -231,6 +249,9 @@ François-les-bas-bleus s'en égaie.
   <title><num>VII.</num>O triste, triste était mon âme</title>
   <firstline>O triste, triste était mon âme</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AA BC AA BC AA DD AA XX" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -266,6 +287,9 @@ Encore que loin en allés ?
   <title><num>VIII.</num>Dans l'interminable</title>
   <firstline>Dans l'interminable</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AAAA AAAA BBBB AAAA ABBA AAAA" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -312,6 +336,9 @@ Luit comme du sable.
   </subtitle>
   <firstline>L'ombre des arbres dans la rivière embrumée</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AABB AABB X" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -346,6 +373,9 @@ Mai, juin 72.
   <indextitle>Walcourt</indextitle>
   <firstline>Briques et tuiles</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABAB ACAC ACAC AXAB X" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -381,6 +411,9 @@ Juillet 72.
   <indextitle>Charleroi</indextitle>
   <firstline>Dans l'herbe noire</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABCA DAAX EFFE GDDG EXXE HAAH ABCA" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -429,6 +462,9 @@ Pleure, on veut croire.
   <indextitle>Bruxelles - Simples Fresques</indextitle>
   <firstline>La fuite est verdâtre et rose</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AAB ABAB CBCB DDEXXE FFGHHG IIXJJX X" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -490,6 +526,9 @@ Estaminet du Jeune Renard, août 72.
   <indextitle>Bruxelles - Chevaux de bois</indextitle>
   <firstline>Tournez, tournez, bons chevaux de bois</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABBA CCCC DAAD CCCC EXXE CCCC BXXB X" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -540,6 +579,9 @@ Champ de foire de Saint-Gilles, août 72.
   <indextitle>Malines</indextitle>
   <firstline>Vers les prés le vent cherche noise</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABBAB CDDCD AECAE AFFAF X" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -579,6 +621,9 @@ Août 72
   <indextitle>Birds in the Night</indextitle>
   <firstline>Vous n'avez pas eu toute patience</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AAAA BXBX CACA DEED AAAA FDFD AAAA GHGH AAAA XIXI AAAA FJFJ AAAA KLKL AAAA XXXX AAAA MNMN AAAA BXBX AAAA A" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -708,6 +753,9 @@ Bruxelles. Londres, septembre - octobre 72
   <indextitle>Green</indextitle>
   <firstline>Voici des fruits, des fleurs, des feuilles et des branches</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AXAX BCBC BXBA" confidence="0.91"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -736,6 +784,9 @@ Et que je dorme un peu puisque vous reposez.
   <indextitle>Spleen</indextitle>
   <firstline>Les roses étaient toutes rouges</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AB AB CX CX CD CD" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -767,6 +818,9 @@ Et de tout, fors de vous, hélas !
   <indextitle>Streets</indextitle>
   <firstline>Dansons la gigue !</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="A BBB A XCC A DDD A EEE A X AAXAAX AAFAAF X" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -828,6 +882,9 @@ Paddington.
   <indextitle>Child Wife</indextitle>
   <firstline>Vous n'avez rien compris à ma simplicité</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABAB CDCD EBEB CXCX CFCF X" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -868,6 +925,9 @@ Londres, 2 avril 1873
   <indextitle>A poor young Shepard</indextitle>
   <firstline>J'ai peur d'un baiser</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABBAA BCBCB DBDBD BXBXB ABBAA" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -911,6 +971,9 @@ J'ai peur d'un baiser
   <indextitle>Beams</indextitle>
   <firstline>Elle voulut aller sur les flots de la mer</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABBA BCCB DEED BXXB BX" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>

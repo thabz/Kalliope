@@ -15,6 +15,9 @@
   <firstline>Ja vist saa er de feede</firstline>
   <source>Niels Simonsen: <i>Verdslig Barok</i>, 1985, p. 216, som igen angiver Vid. Selskab, Trondheim, Ms. 8° 421, s. 120, som tekstgrundlag.</source>
   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="AABCCB X DADA" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -46,6 +49,9 @@ Men Kys mig i mit Hul,
   </notes>
   <source>Niels Simonsen: <i>Verdslig Barok</i>, 1985, p. 217, som igen angiver Thott 4° 1528 c.v. 10, som tekstgrundlag.</source>
   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -67,6 +73,9 @@ Hver en Pige lader tage
     <note>Nordrup tilskrives sædvanligvis dette smædevers opslået på døren hos Københavns politimester Ole Rømer.</note>
   </notes>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="XAXA XBXB" confidence="0.83"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -94,6 +103,9 @@ Din dolcke oddet Kock!
   </notes>
   <source pages="495-496">Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1.</source>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABABACACAXAADEDEDFDFDXDXDGDGDADXDGDGDHDHDIDIDJDJDXDXDKDKDXDXDLXL" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -173,6 +185,9 @@ Saa maa mig Døden giæsten
   <indextitle>Røt hoved ieg bærer</indextitle>
   <firstline>Røt hoved ieg bærer</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AABCCB DDEAAE AAFDDF DDGDDG" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -218,6 +233,9 @@ I brude-seng gaar.
     <note>Om Dina og Sichem, se <xref bible="bibel1mose34"/>.</note>
   </notes>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="AABB CCDD EEFF CCGG EEHH CCII CCJJ CCKK AALL CCMM EENN CCOO AAEX" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>

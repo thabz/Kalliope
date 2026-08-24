@@ -18,6 +18,9 @@
   <firstline>Zum Haupte der Schlange</firstline>
   <source pages="11-12"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="AXAX BCBC DXDX EXEX FXFX EGEG FCFC" confidence="0.90"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -65,6 +68,9 @@ Ein ſcharfer Blick.
   <firstline>Die gute That thut's nicht allein</firstline>
   <source pages="16"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="AABB CCAAXXDDEEBBFF" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>

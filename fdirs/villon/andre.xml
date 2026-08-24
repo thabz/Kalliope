@@ -16,6 +16,9 @@
     <note type="credits">Bidrag fra Henrik Hjulgaard</note>
   </notes>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="XAXAABAB XACAABAB CACAABAB X ABAB" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -61,6 +64,9 @@ Mais où sont les neiges d'antan!
   <title>Ballade Villon</title>
   <firstline>Je meurs de soif auprès de la fontaine</firstline>
   <quality>korrektur1</quality>
+  <rhyme>
+    <analysis pattern="ABABBCCDCD ABABBCCDCD AEAEECCDCD X CCDCD" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -115,6 +121,9 @@ Bien recueilly, debouté de chascun.
   <notes>
     <note>Skrevet 1456.</note>
   </notes>
+  <rhyme>
+    <analysis pattern="XABAACAC DEFEEAEA EGEGGCHC IJIKKLDL MCMCCNCN ONONNMNX ICICCICI PQPLQBLB CRCRRERE STSTTUTU DVDVVDVD DCDCCWCW ACACCXCX CFCFFYFY CZCZZCZC CA27CA27A28YA28Y ECECCCCC CA29CA29A29NA29N UEUEEXEX AQAQQCQC A30AA30AAYAY A31BA31BBA31XA31 DCDCCACA A31A28RXA28A32A28A32 A33A34A33WWAWA A29VA29VVGVG EA35EA35A35WA35A34 QUQUUNUN CCCCCCCC HCHCCWCW AGAGGCXC JYJYYMYM A36CA36CCXCB A37GA37GGCGC DCDCCRCR XCA33CCYCY CFCFFA38FB A39CA39CCCCC A40XA40XXAXA CECEEA38EA38 E" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>

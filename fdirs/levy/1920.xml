@@ -16,6 +16,9 @@
   <firstline>Denne Taage, denne Taage</firstline>
   <source pages="5"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="AA" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -31,6 +34,9 @@ Hører I mit Hjerte banke fra en 5te Sal?
   <firstline>En Blomst skal blomstre</firstline>
   <source pages="5-6"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="AABB CCDD" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -53,6 +59,9 @@ har jeg af Evighedsblomsten lært.
   <firstline>Der vokser ad Bjergets</firstline>
   <source pages="6-7"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABXB ACCC" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -75,6 +84,9 @@ Min stakkels vildfarne Hjærtensven!
   <firstline>Af grønne Løvværks-</firstline>
   <source pages="8-10"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB AXAX CDCD EFEF AGAG AHAH" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -117,6 +129,9 @@ kurrer en Skovdue trygt.
   <firstline>Jeanne d’Arc ved din</firstline>
   <source pages="10-11"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="AAAABB" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -136,6 +151,9 @@ og Bønderne kalder dig Jomfrusærk.
   <firstline>Muslingen dybt paa Havets</firstline>
   <source pages="11-12"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="XXAA BBCC DD" confidence="0.93"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -161,6 +179,9 @@ som den Musling, hun træder under sin Fod.
   <firstline>Lille milde</firstline>
   <source pages="13"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="AXXX ABAB ACCC" confidence="0.91"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -189,6 +210,9 @@ kan du elske den?
   <source pages="14-15"/>
   <keywords>sonnet</keywords>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB BABA CAA AAC" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -219,6 +243,9 @@ en mægtig Lidenskab forener to.
   <firstline>Der er saa trangt hernede</firstline>
   <source pages="16"/>
   <quality>korrektur1,kilde,side</quality>
+  <rhyme>
+    <analysis pattern="ABAB CDCD" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>

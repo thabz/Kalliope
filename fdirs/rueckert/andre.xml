@@ -10,6 +10,9 @@
   <title>Vor den Thüren</title>
   <firstline>Ich habe geklopft an des Reichthums Haus</firstline>
   <source><a href="https://www.e-rara.ch/download/pdf/27760921.pdf">Digitaliseret udgave hos e-rara</a>, s. 211.</source>
+  <rhyme>
+    <analysis pattern="AA XX BB CC DD EE FF" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -41,6 +44,9 @@ Doch ist für Viele im Grab noch Rast.
 <head>
   <title>Mich hat der Herbst betrogen</title>
   <firstline>Mich hat der Herbst betrogen</firstline>
+  <rhyme>
+    <analysis pattern="ABAB ACAC" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -62,6 +68,9 @@ Werd' ich gestorben sein.
   <title>Der abgebrannte Bart</title>
   <firstline>Ein Professor hochgelehrt</firstline>
   <!-- Denne hører til Sieben Bücher Morgenländischer Sagen und Geschichten (1837) -->
+  <rhyme>
+    <analysis pattern="ABCCDDXXEEXXFFGGHHIIDDXXAB" confidence="0.92"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -101,6 +110,9 @@ Ohne jetzt wie sonst mit Bart.
   <toctitle>Ich bin der Welt abhanden gekommen</toctitle>
   <indextitle>Ich bin der Welt abhanden gekommen</indextitle>
   <firstline>Ich bin der Welt abhanden gekommen</firstline>
+  <rhyme>
+    <analysis pattern="AAAA AXAX BXBX" confidence="0.88"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -132,6 +144,9 @@ In meinem Lieben, in meinem Lied!
     <note>Taget fra <i>Deutschlands Balladen- und Romanzen-Dichter</i>, red. Ignaz Hub, Würzburg, Karlsruhe 1859.</note>
   </notes>
   <quality>kilde</quality>
+  <rhyme>
+    <analysis pattern="ABABBABA XCXCCXXX DEDEEDED FGFGGFGF HIHIIXXH JKJKLJLJ MNMNOMOM PQRQQPQP SKSKKTKT GGGGGGXG UPURPUPU LNXNNKNK RVRXVRVR WXWXXWXW XYZYYZYZ A27A28XA28A28A27A28A27 A29XA29XXA29XA29 XA30XA31A30XA31X A32XA32A33A33A32XA32 A34A35A34A35A35A34A35A34 CLCKKCKC" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -333,6 +348,9 @@ Die sein Wunder preist.
   <toctitle>Um Mitternacht</toctitle>
   <indextitle>Um Mitternacht</indextitle>
   <firstline>Um Mitternacht</firstline>
+  <rhyme>
+    <analysis pattern="AABBAA AACCAA AAXXAA AACCAA AACCAA" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -380,6 +398,9 @@ Um Mitternacht!
   <toctitle>Zum Schluß</toctitle>
   <indextitle>Zum Schluß</indextitle>
   <firstline>Hier in diesen erdbeklommnen Lüften</firstline>
+  <rhyme>
+    <analysis pattern="ABAB ABAB" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -402,6 +423,9 @@ Schwester, Braut!
   <toctitle>Ich atmet' einen linden Duft!</toctitle>
   <indextitle>Ich atmet' einen linden Duft!</indextitle>
   <firstline>Ich atmet' einen linden Duft!</firstline>
+  <rhyme>
+    <analysis pattern="ABCCBA ADCDCA" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -428,6 +452,9 @@ Der Liebe linden Duft.
   <toctitle>Gestillte Sehnsucht</toctitle>
   <indextitle>Gestillte Sehnsucht</indextitle>
   <firstline>In gold'nen Abendschein getauchet</firstline>
+  <rhyme>
+    <analysis pattern="ABABCC AXAXCC DEDECC FGFGCC" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -468,6 +495,9 @@ Mit meinem Sehnen mein Leben ein.
   <toctitle>Herbstlied</toctitle>
   <indextitle>Herbstlied</indextitle>
   <firstline>Herz, nun so alt und noch immer nicht klug</firstline>
+  <rhyme>
+    <analysis pattern="ABAB CBCB CDCD" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -495,6 +525,9 @@ Was wir geliebt und gedichtet.
   <toctitle>Erscheinung der Schnitterengel</toctitle>
   <indextitle>Erscheinung der Schnitterengel</indextitle>
   <firstline>Die Mägdelein</firstline>
+  <rhyme>
+    <analysis pattern="AABCCBBBBBDDBEEBBBBBFFBGGBBBBBHHIJJIBBIBKKBXXBLLBL" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -558,6 +591,9 @@ Und als nun gar
   <toctitle>Die glückliche Gärtnerhand</toctitle>
   <indextitle>Die glückliche Gärtnerhand</indextitle>
   <firstline>Welch ein Gärtner auf Erden kann sich rühmen</firstline>
+  <rhyme>
+    <analysis pattern="AXXAAXA" confidence="0.85"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -578,6 +614,9 @@ Mir zwei Äpfelchen in die Hand gewachsen.
   <toctitle>Der furchtsame Riese</toctitle>
   <indextitle>Der furchtsame Riese</indextitle>
   <firstline>Sonne stand am Himmel schief</firstline>
+  <rhyme>
+    <analysis pattern="ABBA" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -595,6 +634,9 @@ sah die Schatten und entlief.
   <toctitle>Nun will die Sonn' so hell aufgehn</toctitle>
   <indextitle>Nun will die Sonn' so hell aufgehn</indextitle>
   <firstline>Nun will die Sonn' so hell aufgehn</firstline>
+  <rhyme>
+    <analysis pattern="AABBCCDD" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -616,6 +658,9 @@ Heil sei dem Freudenlicht der Welt!
   <toctitle>Chidher</toctitle>
   <indextitle>Chidher</indextitle>
   <firstline>Chidher, der ewig junge, sprach</firstline>
+  <rhyme>
+    <analysis pattern="ABABCCCDDXBXBCXCDD EBEBCCCDD FBFBCCCDD GBGBCCCDD" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -677,6 +722,9 @@ Da fand ich eine Stadt, und laut
   <toctitle>Der Frost hat mir bereifet des Hauses Dach</toctitle>
   <indextitle>Der Frost hat mir bereifet des Hauses Dach</indextitle>
   <firstline>Der Frost hat mir bereifet des Hauses Dach</firstline>
+  <rhyme>
+    <analysis pattern="AAXA XAXA XAXA XAXA XAXX" confidence="0.83"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -714,6 +762,9 @@ will ich dir singen Jugend und Liebesweh.
   <toctitle>Amor ein Besenbinder</toctitle>
   <indextitle>Amor ein Besenbinder</indextitle>
   <firstline>Ich, der schönste Besenbinder</firstline>
+  <rhyme>
+    <analysis pattern="ABABCCXX CDCDCCXA EXEXEEFF EGEGEEHH EXEXEEII CXCXAAJJ CKCKCCLL CMCMNNOO" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -798,6 +849,9 @@ Feg auch mich als Kehricht aus!
   <toctitle>Ich hab' in mich gesogen</toctitle>
   <indextitle>Ich hab' in mich gesogen</indextitle>
   <firstline>Ich hab' in mich gesogen</firstline>
+  <rhyme>
+    <analysis pattern="ABAB CDCD EFEF AGAG HCHX AIAI" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -840,6 +894,9 @@ Die Welt, ein Frühlingstraum.
   <toctitle>Die verzaubert Jungfrau</toctitle>
   <indextitle>Die verzaubert Jungfrau</indextitle>
   <firstline>Die Jungfrau, die verzaubert dort</firstline>
+  <rhyme>
+    <analysis pattern="ABABCCBDDDDEEDFGFGHHGIGIGJJGXGXGKKG" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -888,6 +945,9 @@ Die Jungfrau wird zum Krokodil,
   <toctitle>Der Jasminenstrauch</toctitle>
   <indextitle>Der Jasminenstrauch</indextitle>
   <firstline>Grün ist der Jasminenstrauch</firstline>
+  <rhyme>
+    <analysis pattern="ABABCCBB" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -909,6 +969,9 @@ die im Frühling träumen!
   <toctitle>Mit vierzig Jahren</toctitle>
   <indextitle>Mit vierzig Jahren</indextitle>
   <firstline>Mit vierzig Jahren ist der Berg erstiegen</firstline>
+  <rhyme>
+    <analysis pattern="AXAX BCBC ADAD" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -936,6 +999,9 @@ Und eh' du's denkst, bist du im Port.
   <toctitle>Rose, Meer und Sonne</toctitle>
   <indextitle>Rose, Meer und Sonne</indextitle>
   <firstline>Rose, Meer und Sonne</firstline>
+  <rhyme>
+    <analysis pattern="ABAB CDCD CECE ABAB CFCF CGCG ABAB CHCH CICI ABAB" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -998,6 +1064,9 @@ Faßt mein ganzes Leben ein.
   <toctitle>Oft denk' ich, sie sind nur ausgegangen!</toctitle>
   <indextitle>Oft denk' ich, sie sind nur ausgegangen!</indextitle>
   <firstline>Oft denk' ich, sie sind nur ausgegangen!</firstline>
+  <rhyme>
+    <analysis pattern="AABBAAXAAXXX" confidence="0.88"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1023,6 +1092,9 @@ Der Tag is schön auf jenen Höh'n!
   <toctitle>Nun seh' ich wohl, warum so dunkle Flammen</toctitle>
   <indextitle>Nun seh' ich wohl, warum so dunkle Flammen</indextitle>
   <firstline>Nun seh' ich wohl, warum so dunkle Flammen</firstline>
+  <rhyme>
+    <analysis pattern="ABABA ABBAAB ABAB" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1053,6 +1125,9 @@ In künft'gen Nächten sind es dir nur Sterne.
   <toctitle>Nach Tschelaleddin Rumi</toctitle>
   <indextitle>Nach Tschelaleddin Rumi</indextitle>
   <firstline>Wohl endet Tod des Lebens Not</firstline>
+  <rhyme>
+    <analysis pattern="AX XA XX XA XA" confidence="0.79"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1080,6 +1155,9 @@ Und atme frei im Morgenrot.
   <toctitle>Klage</toctitle>
   <indextitle>Klage</indextitle>
   <firstline>So weit nun hab ichs schon gebracht</firstline>
+  <rhyme>
+    <analysis pattern="AABB BBAA" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1102,6 +1180,9 @@ Soweit hab ichs noch nicht gebracht.
   <toctitle>Auf Erden gehest du</toctitle>
   <indextitle>Auf Erden gehest du</indextitle>
   <firstline>Auf Erden gehest du und bist der Erden Geist</firstline>
+  <rhyme>
+    <analysis pattern="AA AA AA AA AA" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1129,6 +1210,9 @@ Und dich erkennt das Herz, das dich mit Liebe preist.
   <toctitle>Barbarossa</toctitle>
   <indextitle>Barbarossa</indextitle>
   <firstline>Der alte Barbarossa</firstline>
+  <rhyme>
+    <analysis pattern="XABACDCDCECEFXFXBXCXBGBGCHCHCXCX" confidence="0.92"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1174,6 +1258,9 @@ Und wenn die alten Raben
   <toctitle>Ursprung der Rose</toctitle>
   <indextitle>Ursprung der Rose</indextitle>
   <firstline>Den Rosenzweig benagt ein Lämmchen auf der Weide</firstline>
+  <rhyme>
+    <analysis pattern="AABBCCDDEE" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1197,6 +1284,9 @@ Da ist am Rosendorn vor Lust die Ros entsprungen!
   <toctitle>Liebst du</toctitle>
   <indextitle>Liebst du</indextitle>
   <firstline>Liebst du um Schönheit, o nicht mich liebe!</firstline>
+  <rhyme>
+    <analysis pattern="AX AX AB AB" confidence="0.91"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1221,6 +1311,9 @@ Liebe mich immer, dich lieb' ich immerdar.
   <toctitle>Lachen und Weinen</toctitle>
   <indextitle>Lachen und Weinen</indextitle>
   <firstline>Lachen und Weinen zu jeglicher Stunde</firstline>
+  <rhyme>
+    <analysis pattern="AAXAAX AABCCB" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1247,6 +1340,9 @@ Muß ich dich fragen, o Herz.
   <toctitle>Widmung</toctitle>
   <indextitle>Widmung</indextitle>
   <firstline>Du meine Seele, du mein Herz</firstline>
+  <rhyme>
+    <analysis pattern="AABBCC DDXXEE" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1273,6 +1369,9 @@ mein guter Geist, mein beßres Ich!
   <toctitle>Sei mir gegrüßt</toctitle>
   <indextitle>Sei mir gegrüßt</indextitle>
   <firstline>O du Entrißne mir und meinem Kusse</firstline>
+  <rhyme>
+    <analysis pattern="ABAB CXAB XXAB AXAB CXAB" confidence="0.91"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1310,6 +1409,9 @@ Sei mir gegrüßt, sei mir geküßt!
   <toctitle>Parabel</toctitle>
   <indextitle>Parabel</indextitle>
   <firstline>Es ging ein Mann im Syrerland</firstline>
+  <rhyme>
+    <analysis pattern="AABBBBCXBBDDEEFFCCGGBBHHHHIIXXBBBBJJHHKLMMHHBBNNOOBBBBNNBB JJPPQQLKBBBBRRBBSSTTKXRRUU" confidence="0.98"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1408,6 +1510,9 @@ Aus Grabes Brunnenritzen naschest.
   <toctitle>Blicke mir nicht in die Lieder!</toctitle>
   <indextitle>Blicke mir nicht in die Lieder!</indextitle>
   <firstline>Blicke mir nicht in die Lieder!</firstline>
+  <rhyme>
+    <analysis pattern="AAB CCB CCD CCD" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1436,6 +1541,9 @@ Dann vor allen nasche du!
   <toctitle>Aus den östlichen Rosen</toctitle>
   <indextitle>Aus den östlichen Rosen</indextitle>
   <firstline>Ich sende einen Gruß wie Duft der Rosen</firstline>
+  <rhyme>
+    <analysis pattern="ABAB ABAB" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1458,6 +1566,9 @@ So wird der Himmel meiner Nächte licht.
   <toctitle>Kleiner Haushalt</toctitle>
   <indextitle>Kleiner Haushalt</indextitle>
   <firstline>Einen Haushalt klein und fein</firstline>
+  <rhyme>
+    <analysis pattern="ABAX CCDDEE FGGFXX HH IIJJ JJKK GGAA IILL IIJJJJ MMGG NNXOO PP FJFJHH JBJX XX QQKKRR XXSSJJTT" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1564,6 +1675,9 @@ So finden wir unter Blumen ein Grab.
   <toctitle>Der Himmel hat eine Träne geweint</toctitle>
   <indextitle>Der Himmel hat eine Träne geweint</indextitle>
   <firstline>Der Himmel hat eine Träne geweint</firstline>
+  <rhyme>
+    <analysis pattern="AABBCCDDEE" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1587,6 +1701,9 @@ Den reinsten deiner Tropfen hüte.
   <toctitle>Des Glockenthürmers Töchterlein</toctitle>
   <indextitle>Des Glockenthürmers Töchterlein</indextitle>
   <firstline>Mein hochgebornes Schätzelein</firstline>
+  <rhyme>
+    <analysis pattern="AABBA AABBA AABBA AACCA AADDA AXACCA" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1636,6 +1753,9 @@ Will dein zu eb'ner Erde sein.''
   <toctitle>In diesem Wetter, in diesem Braus</toctitle>
   <indextitle>In diesem Wetter, in diesem Braus</indextitle>
   <firstline>In diesem Wetter, in diesem Braus</firstline>
+  <rhyme>
+    <analysis pattern="AAAB AABB AABB AABB AAACCA" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1675,6 +1795,9 @@ Sie ruh'n wie in der Mutter Haus.
   <toctitle>Herbsthauch</toctitle>
   <indextitle>Herbsthauch</indextitle>
   <firstline>Herz, nun so alt und noch immer nicht klug</firstline>
+  <rhyme>
+    <analysis pattern="ABABCBCBCDCD" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1700,6 +1823,9 @@ Was wir geliebt und gedichtet.
   <toctitle>Seufzend sprach ich zu der Liebe</toctitle>
   <indextitle>Seufzend sprach ich zu der Liebe</indextitle>
   <firstline>Seufzend sprach ich zu der Liebe</firstline>
+  <rhyme>
+    <analysis pattern="ABAB CDCD EFEF" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1727,6 +1853,9 @@ Angesichte hängt der Flor.
   <toctitle>Siebenschläfer</toctitle>
   <indextitle>Siebenschläfer</indextitle>
   <firstline>Ein Hündlein, das einst Wache that bei Schäfern</firstline>
+  <rhyme>
+    <analysis pattern="AABBCC" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1746,6 +1875,9 @@ Ward es zu einem Leu'n an Gottes Throne.
   <toctitle>Gräme dich nicht!</toctitle>
   <indextitle>Gräme dich nicht!</indextitle>
   <firstline>Jakob! dein verlorener Sohn</firstline>
+  <rhyme>
+    <analysis pattern="XABXAB CDXCDB EDXEDB FAFFAB GDXGDB" confidence="0.94"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1793,6 +1925,9 @@ O gräme dich nicht.
   <toctitle>Die Stern ob mir</toctitle>
   <indextitle>Die Stern ob mir</indextitle>
   <firstline>Die Stern ob mir, sie gehn am Himmel heiter hin</firstline>
+  <rhyme>
+    <analysis pattern="AAXA" confidence="0.91"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1810,6 +1945,9 @@ So stell in meinen Traum auch Jakobs Leiter hin.
   <toctitle>Wenn dein Mütterlein tritt zur Tür herein</toctitle>
   <indextitle>Wenn dein Mütterlein tritt zur Tür herein</indextitle>
   <firstline>Wenn dein Mütterlein tritt zur Tür herein</firstline>
+  <rhyme>
+    <analysis pattern="ABXBAAA ACACBA" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1837,6 +1975,9 @@ Ach, zu schnell erloschner Freudenschein!
   <toctitle>Rüstigkeit</toctitle>
   <indextitle>Rüstigkeit</indextitle>
   <firstline>Frisch gethan und nicht gesäumt!</firstline>
+  <rhyme>
+    <analysis pattern="AABBAA CCAADD" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1863,6 +2004,9 @@ Was du thust, darauf gieb acht.
   <toctitle>Was sagt' der Herbst der Ros' ins Ohr</toctitle>
   <indextitle>Was sagt' der Herbst der Ros' ins Ohr</indextitle>
   <firstline>Was sagt' der Herbst der Ros' ins Ohr</firstline>
+  <rhyme>
+    <analysis pattern="ABXBXBXBXBXBXBXBXBXAXACBXBXBXBXBCBXBXB" confidence="0.85"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1914,6 +2058,9 @@ denn auch im Frühling seufzt ein Tor.
   <toctitle>Du bist die Ruh, der Friede mild</toctitle>
   <indextitle>Du bist die Ruh, der Friede mild</indextitle>
   <firstline>Du bist die Ruh</firstline>
+  <rhyme>
+    <analysis pattern="XXAX BCXC BABA CDCD XEXE" confidence="0.90"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1952,6 +2099,9 @@ O füll es ganz!
   <notes>
     <note>Abū Naṣr Muḥammad ibn Muḥammad Al Fārābī (persisk: ابو نصر محمد بن محمد فارابي, ca. 872 - ca. 950), arabisk filosof, jurist og musiker.</note>
   </notes>
+  <rhyme>
+    <analysis pattern="AXXXXXXXXXAXBXCXCXXDEXEDXBXDXX" confidence="0.78"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -1993,6 +2143,9 @@ Eines Menschen Lebenslauf?
 <head>
   <title>Die goldne Zeit</title>
   <firstline>Die goldne Zeit ist nicht entschwunden</firstline>
+  <rhyme>
+    <analysis pattern="ABAB CDCD CECE CFCF AGAG" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2028,6 +2181,9 @@ Sich jeder seine goldne Zeit!
 <head>
   <title>Der Faun</title>
   <firstline>Ich war als Faun geboren</firstline>
+  <rhyme>
+    <analysis pattern="ABAB CXCX DEDE FGFG AXAX AHAH DIDI" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2073,6 +2229,9 @@ Soll träufeln Thränenwein.
 <head>
   <title>Katerstolz und Fuchses Rat</title>
   <firstline>Vernimm vom Katerstolz, wie er auf Fuchses Rat</firstline>
+  <rhyme>
+    <analysis pattern="AABBCCDDDDCCDDEECCDDFFCCDDGGCCDDDDCC" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2120,6 +2279,9 @@ So will ich lieber doch der Katze Tochter frei'n.
 <head>
   <title>Haltet aus!</title>
   <firstline>Haltet aus, o ihr liebenden Herzen</firstline>
+  <rhyme>
+    <analysis pattern="AXXA AXXA" confidence="0.83"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2140,6 +2302,9 @@ O verschließt nicht im Herzen,
 <head>
   <title>Der Hofpoet</title>
   <firstline>Vor der Pforte des Chalifen</firstline>
+  <rhyme>
+    <analysis pattern="AXBXAX BCDX AEAEFX AGDG AHAHFH AXBX AHXCXH AHBX" confidence="0.91"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2198,6 +2363,9 @@ Auch der Hahn im Korbe mir.
 <head>
   <title>Komm verhüllte Schöne!</title>
   <firstline>Komm verhüllte Schöne!</firstline>
+  <rhyme>
+    <analysis pattern="ABABCDCDAEAEFGFGHCHXAIAIAJAJHXHXAKAK" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2245,6 +2413,9 @@ Und vor'm Abendsterne
 <head>
   <title>Hormusan</title>
   <firstline>Hormusan der edle Perser ist gebunden und geschnürt</firstline>
+  <rhyme>
+    <analysis pattern="XXAABBCCXXDDAAEEFFGGDXHHHXII" confidence="0.93"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2284,6 +2455,9 @@ Durst'ger diesen andern Becher reich ich dir nun, meinem Gast,
 <head>
   <title>Ich hört' oft genug</title>
   <firstline>Ich hört' oft genug</firstline>
+  <rhyme>
+    <analysis pattern="ABABCXBBBBDDBBEEFFBBGGBBFHFHIGGIBBJJBKBKKKLLCMMC" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2342,6 +2516,9 @@ Hier, Glück, ist mein Haus,
 <text id="rueckert2019013101">
 <head>
   <firstline>Ich wohn' in meiner Liebsten Brust</firstline>
+  <rhyme>
+    <analysis pattern="ABAB ABAB ABAB ABAB" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -2372,6 +2549,9 @@ in ihren stillen Träumen.
 <head>
   <title>Ich stand auf Berges Halde</title>
   <firstline>Ich stand auf Berges Halde</firstline>
+  <rhyme>
+    <analysis pattern="ABAB CXCX AXAX CDCD AEAE FGFG CACX HIHI CJCJ" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>

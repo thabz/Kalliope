@@ -9,6 +9,9 @@
 <head>
   <title>The Soldier's Dream</title>
   <firstline>Our bugles sang truce—for the night-cloud had lowered</firstline>
+  <rhyme>
+    <analysis pattern="ABAC DEDE BFBF GHGH CIXI JBJB" confidence="0.99"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -49,6 +52,9 @@ But sorrow returned with the dawning of morn,
 <head>
   <title>Gilderoy</title>
   <firstline>The last, the fatal hour is come</firstline>
+  <rhyme>
+    <analysis pattern="AAXA BABA XXXX CBCB CXCX ADXD XAXX EFAF GEGE DEDE" confidence="0.90"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -109,6 +115,9 @@ And weep and linger on the ground,
 <head>
   <title>The Harper</title>
   <firstline>On the green banks of Shannon, when Sheelah was nigh</firstline>
+  <rhyme>
+    <analysis pattern="XXAA BBAA CXAA DDAA CCAA EEAA" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -149,6 +158,9 @@ I can never more return with my poor dog Tray.
 <head>
   <title>Lines Written on Visiting a Scene in Argyleshire</title>
   <firstline>At the silence of twilight’s contemplative hour</firstline>
+  <rhyme>
+    <analysis pattern="XAXABBXBX CDCDBEBBE FGFGHXHHX XBXBIBIIB" confidence="0.92"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -199,6 +211,9 @@ Shall awake not the sigh of remembrance again:
 <head>
   <title>Song</title>
   <firstline>Oh, how hard it is to find</firstline>
+  <rhyme>
+    <analysis pattern="AABBBB BBBCCB" confidence="1.00"/>
+  </rhyme>
 </head>
 <body>
 <poetry>

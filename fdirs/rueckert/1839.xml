@@ -16,6 +16,9 @@
 <head>
   <title><num>13.</num>Der alte König ruht in seinem Schlafgemache</title>
   <firstline>Der alte König ruht in seinem Schlafgemache</firstline>
+  <rhyme>
+    <analysis pattern="AA BB CC AA XX DD EE FF AA GG DD DD DD XX DD" confidence="0.95"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -71,6 +74,9 @@ Wenn Menschen zwar nicht mehr, doch noch die Thiere klagen.
 <head>
   <title><num>56.</num>Es wohnt ein armer Mann in einer niedern Hütte</title>
   <firstline>Es wohnt ein armer Mann in einer niedern Hütte</firstline>
+  <rhyme>
+    <analysis pattern="AA XX AA BB CC DD EE FF GG HH GA AA" confidence="0.97"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -120,6 +126,9 @@ Zum Weibe, das mich bald erfreu' mit solchem Kinde.
   <notes>
     <note>Det kunne ligne at tredje strofe mangler et vers, men alle kilder er enige. Aarestrups oversættelse udelader det løse vers.</note>
   </notes>
+  <rhyme>
+    <analysis pattern="XX AA A BB AA CC DD XX" confidence="0.91"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
@@ -153,6 +162,9 @@ Und meldet drinnen mich bei meinem Herrn, dem Herrn!
 <head>
   <title><num>117.</num>Ein Gärtner ladete die Nachbarn groß und klein</title>
   <firstline>Ein Gärtner ladete die Nachbarn groß und klein</firstline>
+  <rhyme>
+    <analysis pattern="AA BB CC DD XX BB DD EE" confidence="0.96"/>
+  </rhyme>
 </head>
 <body>
 <poetry>
