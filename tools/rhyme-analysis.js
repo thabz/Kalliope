@@ -8,10 +8,10 @@ const phonetic = word => {
   let value = word.toLocaleLowerCase('da-DK').replace(/[’']/gu, '');
   [
     ['sch', 'sk'], ['ph', 'f'], ['th', 't'], ['ch', 'k'], ['qu', 'kv'],
-    ['ck', 'k'], ['dt', 't'], ['gh', 'g'], ['oe', 'ø'], ['ae', 'æ'],
+    ['ck', 'k'], ['dt', 't'], ['gh', 'g'], ['aae', 'åe'], ['oe', 'ø'], ['ae', 'æ'],
     ['aa', 'å'], ['c', 'k'], ['x', 'ks'], ['z', 's'],
   ].forEach(([from, to]) => { value = value.replaceAll(from, to); });
-  return value;
+  return value.replaceAll('æ', 'e');
 };
 
 export const cleanRhymeWord = line => (line.match(WORD) ?? []).at(-1) ?? null;
@@ -22,8 +22,15 @@ const endingForWord = word => {
   const vowelIndexes = [...value].flatMap((character, index) =>
     VOWELS.includes(character) ? [index] : []);
   if (vowelIndexes.length === 0) return { signature: null, method: 'unanalysable', gender: null };
-  const nucleus = vowelIndexes.at(-1);
-  const signature = value.slice(nucleus);
+  const lastVowel = vowelIndexes.at(-1);
+  // Final e is normally a weak schwa in Danish.  This also covers the
+  // common inflectional ending -er: skuer/luer must not rhyme merely because
+  // their spelling ends like ranker/banker.
+  const weakEnding = value.endsWith('e') || value.endsWith('er');
+  const nucleus = weakEnding && vowelIndexes.length > 1
+    ? vowelIndexes.at(-2)
+    : lastVowel;
+  const signature = value.slice(nucleus).replace(weakEnding && value.endsWith('e') ? /e$/u : /$^/u, '');
   return {
     signature,
     method: 'phonetic-rules',

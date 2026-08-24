@@ -7,12 +7,13 @@ import { analyzeRhyme } from './rhyme-analysis.js';
 import { poetryStanzasFromXml } from './metre-analysis.js';
 
 const parseArgs = (args = process.argv.slice(2)) => {
-  const options = { debug: false, dryRun: false, minConfidence: 0.75, onlyMissing: false, poet: null, work: null };
+  const options = { debug: false, dryRun: false, minConfidence: 0.75, onlyMissing: false, refresh: false, poet: null, work: null };
   for (let index = 0; index < args.length; index += 1) {
     const arg = args[index];
     if (arg === '--debug') options.debug = true;
     else if (arg === '--dry-run') options.dryRun = true;
     else if (arg === '--only-missing') options.onlyMissing = true;
+    else if (arg === '--refresh') options.refresh = true;
     else if (['--poet', '--work', '--min-confidence'].includes(arg)) {
       const value = args[++index];
       if (value == null) throw new Error(`${arg} kræver en værdi.`);
@@ -57,7 +58,8 @@ export const analyzeWorkXml = (xml, options = {}) => {
     const head = Array.from(text.childNodes).find(node => node.nodeName === 'head');
     const body = Array.from(text.childNodes).find(node => node.nodeName === 'body');
     const poetry = body == null ? null : Array.from(body.childNodes).find(node => node.nodeName === 'poetry');
-    if (head == null || poetry == null || Array.from(head.childNodes).some(node => node.nodeName === 'rhyme')) return;
+    if (head == null || poetry == null ||
+      (options.refresh !== true && Array.from(head.childNodes).some(node => node.nodeName === 'rhyme'))) return;
     const result = analyzeRhyme(poetryStanzasFromXml(serializer.serializeToString(poetry)), options);
     if (result.accepted !== true) return;
     const rhyme = document.createElement('rhyme');
@@ -68,7 +70,10 @@ export const analyzeWorkXml = (xml, options = {}) => {
     head.appendChild(rhyme);
     const fragment = textFragments[index];
     const rhymeXml = serializer.serializeToString(rhyme);
-    changed = changed.replace(fragment, fragment.replace('</head>', `${rhymeXml}\n</head>`));
+    const withoutOldRhyme = options.refresh === true
+      ? fragment.replace(/\s*<rhyme\b[^>]*>[\s\S]*?<\/rhyme>/i, '')
+      : fragment;
+    changed = changed.replace(fragment, withoutOldRhyme.replace('</head>', `${rhymeXml}\n</head>`));
     reports.push({ textId: text.getAttribute('id') ?? '(uden id)', result, status: 'proposed' });
   });
   return { xml: changed, reports };

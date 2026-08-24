@@ -27,7 +27,7 @@
   </dates>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABBA ABBA BBC BBC" confidence="1.00"/>
+    <analysis pattern="ABBA ABBA CDE CDE" confidence="1.00"/>
   </rhyme>
 </head>
 <body>
@@ -63,7 +63,7 @@ En duftsød Reseda maa staae for mig!
   <keywords>holberg</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="AABBBBCCDDEEBBFFGGHHGGGC" confidence="1.00"/>
+    <analysis pattern="AABBBBCCDDEEBBXXFFGGHHCC" confidence="0.97"/>
   </rhyme>
 </head>
 <body>
@@ -103,7 +103,7 @@ Det kjære Instrument, som var hans Holberg kjær.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="4-5"/>
   <rhyme>
-    <analysis pattern="AXABCDCA EFEFGHGH DEDEIJIJ KLKLAMAM NONOGBGB" confidence="0.99"/>
+    <analysis pattern="ABABCDCD EFEFGHGH DEDEIJIJ KLKLMNMN OPOPQBQB" confidence="1.00"/>
   </rhyme>
 </head>
 <body>
@@ -167,7 +167,7 @@ Ahnende ved Graven staae.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="6-7"/>
   <rhyme>
-    <analysis pattern="AXAXAA ABABCC CDCDAA CECXAA AFAFAA AEACAA AGAGAA CHCHAA CICIAA" confidence="0.98"/>
+    <analysis pattern="AXAXBB CDCDEE FGFGHH IXIXJJ HKHKAA XXXXLL DMDMNN OPOPBX QRQRHH" confidence="0.94"/>
   </rhyme>
 </head>
 <body>
@@ -245,7 +245,7 @@ Græd! ak, men fortvivl kun ikke!
   <source pages="8-9"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="AABCCBBDDB EEFXDFFGGF XXHIIHJJJJ BBJXXJBKKB" confidence="0.96"/>
+    <analysis pattern="AABCCBDEED FFGXEGGHHG XXIJJIKKKK LLKXXKMNNM" confidence="0.96"/>
   </rhyme>
 </head>
 <body>
@@ -306,7 +306,7 @@ Han leer fra sin Sky, naar I dingle.
   <source pages="9-10"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABCB DEDE XFXF XGXG DEDE AHCH" confidence="0.94"/>
+    <analysis pattern="XABA CDED XFXF XGXG CDED XHBH" confidence="0.91"/>
   </rhyme>
 </head>
 <body>
@@ -353,7 +353,7 @@ Dybe Ro.
   <source pages="10-13"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="AAAAAA BBACXA BBABBA DDDDDD DDADDA DDADDA AABAAB DDADDA AABAAB AACAAC BBAAAA" confidence="0.99"/>
+    <analysis pattern="AABCCB DDBEXB DDFDDF GGHIIH JJKLLK MMNOON PPDQQD RRSTTS UUDCCD VVEWWE DDXYYX" confidence="0.99"/>
   </rhyme>
 </head>
 <body>
@@ -447,7 +447,7 @@ Men han — Guds Vidne — smiilte.
   <source pages="13"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABXB XXXX XCXC ADXD" confidence="0.83"/>
+    <analysis pattern="ABXB XCXC XDXD AEXE" confidence="0.87"/>
   </rhyme>
 </head>
 <body>
@@ -485,7 +485,7 @@ Og halvt i Himlen bragt.
   <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABBA ABBA AAA AAA" confidence="1.00"/>
+    <analysis pattern="XAAB BAAB CDD CEE" confidence="0.98"/>
   </rhyme>
 </head>
 <body>
@@ -521,7 +521,7 @@ Med Andre dit, men du har mit det hele.''
   <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="AAAA AAAA BCB CCC" confidence="1.00"/>
+    <analysis pattern="ABBA ABBA CDC DEE" confidence="1.00"/>
   </rhyme>
 </head>
 <body>
@@ -557,7 +557,7 @@ Min arme Sjæl med Kjærlighed husvale.
   <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABBA ABBA BBC BCB" confidence="1.00"/>
+    <analysis pattern="ABBA ABBA CDE DEC" confidence="1.00"/>
   </rhyme>
 </head>
 <body>
@@ -595,7 +595,7 @@ Og Maanskin er her jo, og Dødes Sjæle.''
   </dates>
   <source pages="16"/>
   <rhyme>
-    <analysis pattern="ABABBBB" confidence="1.00"/>
+    <analysis pattern="ABABCBC" confidence="1.00"/>
   </rhyme>
 </head>
 <body>
@@ -621,7 +621,7 @@ Da see vi Venskabsstjernen stort at tindre.
   <keywords>sonnet</keywords>
   <source pages="16-17"/>
   <rhyme>
-    <analysis pattern="AAAA AAAA BCC AAB" confidence="1.00"/>
+    <analysis pattern="ABBA ABBA CDD EEC" confidence="1.00"/>
   </rhyme>
 </head>
 <body>
@@ -657,7 +657,7 @@ O Coelestine! har du glemt det alt?
   <keywords>sonnet</keywords>
   <source pages="17"/>
   <rhyme>
-    <analysis pattern="ABBA ABBA CAA CDD" confidence="1.00"/>
+    <analysis pattern="ABBA ABBA CDD CEE" confidence="1.00"/>
   </rhyme>
 </head>
 <body>
@@ -693,7 +693,7 @@ Maa vige Sædet med sin Liliestengel.
   <keywords>sonnet</keywords>
   <source pages="18"/>
   <rhyme>
-    <analysis pattern="AAAA AAAA BBA BAB" confidence="1.00"/>
+    <analysis pattern="ABBA ABXA CDE CED" confidence="0.98"/>
   </rhyme>
 </head>
 <body>
@@ -729,7 +729,7 @@ Nu hos en anden halvt mit Hjerte bygger.
   <keywords>sonnet</keywords>
   <source pages="18-19"/>
   <rhyme>
-    <analysis pattern="AAAA AAAA AAA AAA" confidence="1.00"/>
+    <analysis pattern="ABBA ABXA CDE CDE" confidence="0.98"/>
   </rhyme>
 </head>
 <body>
@@ -764,7 +764,7 @@ Men, Elskte, jeg er aldrig meer alene.
   <source pages="19-20"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABABXCXDDXBCXXACCCCAXX" confidence="0.89"/>
+    <analysis pattern="XAXAXBXCCXXBXXXBBBBXXX" confidence="0.81"/>
   </rhyme>
 </head>
 <body>
@@ -830,7 +830,7 @@ Er Sjælene i Dødens Ro.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="20-22"/>
   <rhyme>
-    <analysis pattern="ABAB CXCX CXCX CXCA DEDE CFCF DGDG CHCH CICI" confidence="0.95"/>
+    <analysis pattern="ABAB CDCD EXEX FXFA GXGX HHHH IXIJ KLKL JMJM" confidence="0.94"/>
   </rhyme>
 </head>
 <body>
@@ -891,7 +891,7 @@ End en Klog kan svare paa.
   <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="AAAA AAAA BAA BAA" confidence="1.00"/>
+    <analysis pattern="ABBA ABBA CDD CEE" confidence="1.00"/>
   </rhyme>
 </head>
 <body>
@@ -927,7 +927,7 @@ Det var hun aldrig i det Virkelige.
   <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABBA ABBA BAC BAC" confidence="1.00"/>
+    <analysis pattern="ABCA ACBA DXE DXE" confidence="0.95"/>
   </rhyme>
 </head>
 <body>
@@ -967,7 +967,7 @@ Og Piger strømme, for at see dig, til mig.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="23-24"/>
   <rhyme>
-    <analysis pattern="AAXXBBBBCCDDEXEEEE" confidence="0.94"/>
+    <analysis pattern="AABBCCDDEEFFXXGGHH" confidence="0.96"/>
   </rhyme>
 </head>
 <body>
@@ -1025,7 +1025,7 @@ Og har det Haab, der er en Evighed.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="24-25"/>
   <rhyme>
-    <analysis pattern="XABA ACXC BCCC BDAD" confidence="0.96"/>
+    <analysis pattern="XAXA AXXX XBXB XCAC" confidence="0.83"/>
   </rhyme>
 </head>
 <body>
@@ -1060,7 +1060,7 @@ Vover Livet for at naae dem.
   <source pages="25-26"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="AAAA BBBB BBBB XCBC" confidence="0.98"/>
+    <analysis pattern="ABAB CDCD EXEX XFXF" confidence="0.91"/>
   </rhyme>
 </head>
 <body>
@@ -1096,7 +1096,7 @@ Tung af Sødme, skjønhedsdrukken.
   <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABBA ABBA BBB BBB" confidence="1.00"/>
+    <analysis pattern="ABBA ACCA DED EDD" confidence="1.00"/>
   </rhyme>
 </head>
 <body>
@@ -1130,7 +1130,7 @@ Tilgiv - jeg ændsed ei din Aftenrøde!
   <keywords>sonnet</keywords>
   <source pages="27"/>
   <rhyme>
-    <analysis pattern="ABBA ABBA ACA BCB" confidence="1.00"/>
+    <analysis pattern="ABBA ABBA CDC EDE" confidence="1.00"/>
   </rhyme>
 </head>
 <body>
@@ -1164,7 +1164,7 @@ Og dog et smukt og snevert, i Sonetter.
   <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="AAAA AAAA BAA AAB" confidence="1.00"/>
+    <analysis pattern="ABBA ABBA CDE EDC" confidence="1.00"/>
   </rhyme>
 </head>
 <body>
@@ -1197,7 +1197,7 @@ Til et Slags Tungemaal, saa stumt som yndigt.
   <source pages="28"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="XABA AABA AAAA AAXA" confidence="0.96"/>
+    <analysis pattern="XABA XCBC XDAD XEXE" confidence="0.89"/>
   </rhyme>
 </head>
 <body>
@@ -1232,7 +1232,7 @@ At jeg endnu kan leve?
   <source pages="29-30"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABAB CBCB DACA DCXC DEBE CBCB CCCC BBCB DCCC" confidence="0.99"/>
+    <analysis pattern="ABAB CDCD EAXA EFXF EGXG CHCH CICI XJXJ EKXK" confidence="0.94"/>
   </rhyme>
 </head>
 <body>
@@ -1292,7 +1292,7 @@ Er langt fra min Pude.
   <source pages="30-32"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABAB CDCD ACAC XADA EAEA CCCC CCCC AFAF EAEA ECEC EAEA GCGC" confidence="0.99"/>
+    <analysis pattern="ABAB CDCD EFEF XXDX GHGH IXIX JKJK LMLM GNGN GXGX GOGO PQPQ" confidence="0.95"/>
   </rhyme>
 </head>
 <body>
@@ -1413,7 +1413,7 @@ Sommerlæ hedder mit Træ.
   <source pages="33-35"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="AABBCCDAEEFFGGCXHHADXXXXIIXXJJKKXXLLMMADNNXXXXXXOOCCLL MM" confidence="0.91"/>
+    <analysis pattern="AABBCCDAEEFFGGCXHHADXXXXIIJJKKLLXXMMNNADOOXXXXXXPPCCMM QQ" confidence="0.92"/>
   </rhyme>
 </head>
 <body>
@@ -1486,7 +1486,7 @@ Det Gale fra det Kloge ei at kjende.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="35-39"/>
   <rhyme>
-    <analysis pattern="AABA CADA EFFF FFEF AGAG EFFF AADA FFHF AAFA AEFE DFAF FFFF FFAF AFXF ABHB IBEB ABXB AAAA FABA BAEA AEFE CEXE IFBF EJXJ AFXF" confidence="0.98"/>
+    <analysis pattern="AABA CADA XEXE XXXF AGAG XHXH AADA IHJH AAXA AKXK DHAH XAIA XLAL AMXM ABJB NBXB ABXB AAAA XABA BAXA AOXO CPXP NQBQ XRXR AXFX" confidence="0.92"/>
   </rhyme>
 </head>
 <body>
@@ -1636,7 +1636,7 @@ Jeg er en Drøm, en Skygge!
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="39-40"/>
   <rhyme>
-    <analysis pattern="AXAAXXB XXAACCB DDEEFFB AGAAXGB" confidence="0.93"/>
+    <analysis pattern="AXAAXXB CCDDEEB FFGGHHB IJIIXJB" confidence="0.95"/>
   </rhyme>
 </head>
 <body>
@@ -1683,7 +1683,7 @@ Trav, Ganger, trav!
   <source pages="40"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="AAAA AAAA AAAA AAAA" confidence="1.00"/>
+    <analysis pattern="ABAB CDCD BXBX ABAB" confidence="0.96"/>
   </rhyme>
 </head>
 <body>
@@ -1718,7 +1718,7 @@ Vær for mig det Virkelige!
   <source pages="41-42"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="AAAA BACA XDAD BEAE DDED EAAA ACXC AEDE CCEC" confidence="0.98"/>
+    <analysis pattern="XABA CXDX BEXE CFXF EEXE XGXG XDXD XHEH DDXD" confidence="0.88"/>
   </rhyme>
 </head>
 <body>
@@ -1778,7 +1778,7 @@ Med Længsel Naadestødet?
   <source pages="42-43"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABBB CADA EFEF ABAB ADFD XAAA DACA ABFB EAAA DBXB" confidence="0.98"/>
+    <analysis pattern="XAAA BCXC DEDE XAXA XFEF XGXG XHBH XAEA DIXI XAXA" confidence="0.90"/>
   </rhyme>
 </head>
 <body>
@@ -1843,7 +1843,7 @@ Naar det er tømt til Bunden.
   <source pages="44"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABAB CCCC BCCC CACA CACA XCBC" confidence="0.99"/>
+    <analysis pattern="ABAB CDCD BXXX DADA XAXA XEBE" confidence="0.91"/>
   </rhyme>
 </head>
 <body>
@@ -1888,7 +1888,7 @@ Hør, hvor de andre sjunge!
   <source pages="45"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABAB CAAA CBBB DBCB BBBB XDBD" confidence="0.99"/>
+    <analysis pattern="XAXA BXXX BCXC DEBE XFXF XDXD" confidence="0.85"/>
   </rhyme>
 </head>
 <body>
@@ -1933,7 +1933,7 @@ Staaer Glæden uforfærdet.
   <source pages="46"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABAB CDCD CDCD CECE CXCX" confidence="0.97"/>
+    <analysis pattern="ABAB CDCD EDED FGFG HIHI" confidence="1.00"/>
   </rhyme>
 </head>
 <body>
@@ -1974,7 +1974,7 @@ Vi støie, larme, sukke og forgaae.
   <keywords>sonnet</keywords>
   <source pages="47"/>
   <rhyme>
-    <analysis pattern="AAAA AAAA BBB BCC" confidence="1.00"/>
+    <analysis pattern="ABBA ABBA CCC CDD" confidence="1.00"/>
   </rhyme>
 </head>
 <body>
@@ -2012,7 +2012,7 @@ Hvor man kan være svag og hjertesvimmel!
   </dates>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="AAAA ABAB ABCB AAAA AAXA CACA" confidence="0.99"/>
+    <analysis pattern="ABXB ACDC XCXC XXXX XEXE XDXD" confidence="0.84"/>
   </rhyme>
 </head>
 <body>
@@ -2059,7 +2059,7 @@ Dit Bryst, din Arm, din Læbe.
   <source pages="48-49"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="XABA XBCB BXBX XDBD XEBE XFBF EGCG" confidence="0.91"/>
+    <analysis pattern="XAXA XBCB XDXD XEXE XFXF XGXG FHCH" confidence="0.86"/>
   </rhyme>
 </head>
 <body>
@@ -2114,7 +2114,7 @@ Og vækker og kysser din Mund?
   </dates>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="AABCDDBEFFAAEE GGHCIIHXXXAAEE XJKCXXKCJJLLCC MHHCNNHMXXCC OOMCPPMHOOPPMH" confidence="0.96"/>
+    <analysis pattern="AABCDDBEFFAAEE GGHCIIHXXXAAEE XJKCXXKCJJLLCC HHHCMMHHXXCC NNHCOOHHNNOOHH" confidence="0.96"/>
   </rhyme>
 </head>
 <body>
@@ -2204,7 +2204,7 @@ Gid altid vort Venskab bestaae!
   <source pages="52-54"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="AABCCBXX CCDEEDFD CCGAAGFG CCHAAHFH AAIAAIFF AAXAAJFJ AAKAAKFK" confidence="0.98"/>
+    <analysis pattern="AABCCBXX CCDEEDFD CCGHHGFG CCIJJIFI KKLXXLFF MMXNNOFO PPQXXQFQ" confidence="0.96"/>
   </rhyme>
 </head>
 <body>
@@ -2291,7 +2291,7 @@ Ham styrke Druens Blod!
   <source pages="54-55"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="AABB CCDD EEFF GGBB HHDD IIJJ KKBB" confidence="1.00"/>
+    <analysis pattern="AAXX BBCC DDEE FFGG HHII JJKK LLMM" confidence="0.98"/>
   </rhyme>
 </head>
 <body>
@@ -2363,7 +2363,7 @@ End i de Andres Første-Draaber.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="55-56"/>
   <rhyme>
-    <analysis pattern="AAA BCB AAA AXA CCC" confidence="0.98"/>
+    <analysis pattern="AXA BCB DXD EXE CCC" confidence="0.93"/>
   </rhyme>
 </head>
 <body>
@@ -2408,7 +2408,7 @@ I er af hines Qvad kun Efterrunget.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="56-57"/>
   <rhyme>
-    <analysis pattern="ABCB ADED DDED EBBB EFEF ECXC DDBD FEEE" confidence="0.99"/>
+    <analysis pattern="ABCB ADXD XEXE XBBB FGXG XCXC XHBH GFXF" confidence="0.90"/>
   </rhyme>
 </head>
 <body>
@@ -2468,7 +2468,7 @@ I Skyggen hen og sover.
   </dates>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABBB CDXD ACAC BAAA ECBC ABAB ABBB AABA ABBB DBCB DABA XAXA FAXA BACA XBAB CCAC AEXE FAXA CCBC BAGA GCAC CBDB" confidence="0.97"/>
+    <analysis pattern="AXBX CDXD XCEC XFXF GCBC XXAX EBXB XHBH XIXI DBCB DJXJ XKXL MAXA XXCX XNFN CCXC XGFG MOXO CCXC XKPL PCXC CQDQ" confidence="0.89"/>
   </rhyme>
 </head>
 <body>
@@ -2595,7 +2595,7 @@ En raa, barbarisk Latter.
   <source pages="61-63"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABCB XBXB AAXA BCDC EAEA BADA BACA BADA CDDF BAAA AGXG CAAA ABAB BBCB EAAA BFGF BFBF XFXF" confidence="0.97"/>
+    <analysis pattern="ABXB XXXX AAXA XCDC EAEA XADA XAXA FADA XDDG XAAA AHXH XAAA AIAI XFXX EAAA EGHG XGXG XGXG" confidence="0.90"/>
   </rhyme>
 </head>
 <body>
@@ -2702,7 +2702,7 @@ Som fra din Tærskel svæved.
   <source pages="64"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="AXAX BCBC DEDE XFXF XAXA AGAG" confidence="0.91"/>
+    <analysis pattern="ABAB CDCD EFEF XGXG HAHA AIAI" confidence="0.97"/>
   </rhyme>
 </head>
 <body>
@@ -2752,7 +2752,7 @@ Hun ændsede ei, at en Sjæl forgik,
   </dates>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="AXXX XXXX XBXB XXCX ADCD" confidence="0.79"/>
+    <analysis pattern="AXXX XXXX XBXB XCDC AEDE" confidence="0.83"/>
   </rhyme>
 </head>
 <body>
@@ -2818,7 +2818,7 @@ Blot et Ord, blot et Blik, saa er det Hele forspildt.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="66-67"/>
   <rhyme>
-    <analysis pattern="ABAB XCDC XEDE AFAF" confidence="0.96"/>
+    <analysis pattern="XAXA XBCB XDCD XEXE" confidence="0.87"/>
   </rhyme>
 </head>
 <body>
@@ -2857,7 +2857,7 @@ Min Djævlefrækhed og min Spot.
   </notes>
   <source pages="67"/>
   <rhyme>
-    <analysis pattern="ABAB AXAX ACAC DXDX AEAE" confidence="0.93"/>
+    <analysis pattern="ABAB CDCD EFEF GXGX HIHI" confidence="0.97"/>
   </rhyme>
 </head>
 <body>
@@ -2902,7 +2902,7 @@ At tyde dine Rynkers Runeskrift!
   </dates>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABAB ACAC" confidence="1.00"/>
+    <analysis pattern="ABAB AXAX" confidence="0.91"/>
   </rhyme>
 </head>
 <body>
@@ -2931,7 +2931,7 @@ Steen og Stænger skal du see.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="68-69"/>
   <rhyme>
-    <analysis pattern="XAXA XBCB CXBB BDCD" confidence="0.91"/>
+    <analysis pattern="XAXA XBCB CBXB XDCD" confidence="0.89"/>
   </rhyme>
 </head>
 <body>
@@ -2968,7 +2968,7 @@ Poeter kalde skjønt og godt.
   <source pages="69-72"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABACBCDEFGGHHEDFXXIIJXJFFXEDDKLLKFFMNMFOXOPPXNQQRRSS OLOTTUUVLWXVVWYXZZVOVOA27VA27VYXX A28A28OOBBA29A29XVV" confidence="0.97"/>
+    <analysis pattern="ABACBCDDEFFGGDDEXXHHIXIEEXDDDJKKJEELMLENXNOOXMPPQQRR NKNSSTTUKVWUUVXWYYZNZNA27A28A27A28XXX A29A29NNBBA30A30XA31A31" confidence="0.97"/>
   </rhyme>
 </head>
 <body>
@@ -3080,7 +3080,7 @@ Jeg vaagnede - jeg drømte ikke.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="72-75"/>
   <rhyme>
-    <analysis pattern="ABBB CDEX DDFD ADDX GEDH CDEG BXEB AXGE GEBD IBBD DFXB BDGA AIDD CEXD BDBB CEBX AECE XJBJ JBJE EBAH" confidence="0.97"/>
+    <analysis pattern="AXBX CDXE DDFD ADDX EXDG CDXE BXXX AXEX EXXD HXXD DFXX XDEA AHDD CXXD XDIX CXXI AXCX XJXJ JXJX XXAG" confidence="0.86"/>
   </rhyme>
 </head>
 <body>
@@ -3195,7 +3195,7 @@ Evig er min Elskov, evig!
   <source pages="75-76"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABXB BCBC BBAB BBBB CBXB CBCB" confidence="0.97"/>
+    <analysis pattern="ABXB XCXC XDAD XEXE FGXG FEXE" confidence="0.88"/>
   </rhyme>
 </head>
 <body>
@@ -3245,7 +3245,7 @@ Lyse Kjærlighed til Ære!
   </dates>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="AAXAXAXXXAXXXAXA" confidence="0.80"/>
+    <analysis pattern="AAXAXAXBXAXBXAXA" confidence="0.85"/>
   </rhyme>
 </head>
 <body>
@@ -3282,7 +3282,7 @@ At det Hjerte, som vil briste, kunde trøstes af en Ven?
   </dates>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="AAXAXAXAXABAXABABA" confidence="0.90"/>
+    <analysis pattern="AAXAXAXAXAXAXAXAXA" confidence="0.84"/>
   </rhyme>
 </head>
 <body>
@@ -3318,7 +3318,7 @@ Trods din Vægring, hvilken Dyst endnu af mig skal prøves.
   <source pages="77-78"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="AAAA AAAA BCB CBC" confidence="1.00"/>
+    <analysis pattern="ABBA ABBA CDC DCD" confidence="1.00"/>
   </rhyme>
 </head>
 <body>
@@ -3356,7 +3356,7 @@ Som Liv og Død, saa uadskillelige.
   </dates>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="AXBXCXCXXCAXBDBAXXDXCXXEFEXXBXCXCXXXXXFXCX" confidence="0.82"/>
+    <analysis pattern="AXBXXXXCXXAXBDBAXXDXXXXEFEXCBXXXXXXXXXFXXX" confidence="0.77"/>
   </rhyme>
 </head>
 <body>
@@ -3423,7 +3423,7 @@ Send os en yndig Bouquet friske og duftende Ord!
   <keywords>lejlighedsdigtning</keywords>
   <source pages="80-81"/>
   <rhyme>
-    <analysis pattern="ABCDDCEFEGHHH IIHGFHJKJKLLM NNMABMEOEOPXP XXOAAXEQEQRRR" confidence="0.97"/>
+    <analysis pattern="ABCDDCEFEGHHH IIHGFHJKJKLLM NNMABMOPOPQXQ XXPAAXERERSSS" confidence="0.97"/>
   </rhyme>
 </head>
 <body>
@@ -3496,7 +3496,7 @@ Bland Roserne med Guld!
   <source pages="82"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABXBXA CBABAC ACDCDA EBFBFE" confidence="0.97"/>
+    <analysis pattern="AXXXXA BCACAB ADEDEA FCGCGF" confidence="0.94"/>
   </rhyme>
 </head>
 <body>
@@ -3541,7 +3541,7 @@ Tør du? har du Mod?
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="83"/>
   <rhyme>
-    <analysis pattern="AABA CDXD XBXB ABXB XACA" confidence="0.91"/>
+    <analysis pattern="XAXA BCXC XDXD EFXF XEBE" confidence="0.88"/>
   </rhyme>
 </head>
 <body>
@@ -3583,7 +3583,7 @@ Men kun, kun ved dit Øre.
   <source pages="84-85"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABABCBCB DEDEEFEF GBGBEEEE XHXHEEXE XBBBIEIE XBXBJBJB KBKBABAB" confidence="0.96"/>
+    <analysis pattern="ABABCXCX DXDXEFEF GHGHEIEI XJXJEKXK LXLXMIMI XXXXNONO PQPQABAB" confidence="0.92"/>
   </rhyme>
 </head>
 <body>
@@ -3663,7 +3663,7 @@ Lad Glasset frimodigen runge!
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="86"/>
   <rhyme>
-    <analysis pattern="AXBC ADCD XXBX BEBE AFXF" confidence="0.91"/>
+    <analysis pattern="XXXA XBAB XXXX XCXC XDXD" confidence="0.79"/>
   </rhyme>
 </head>
 <body>
@@ -3708,7 +3708,7 @@ Mit sidste Digts Ildtulipan.
   </dates>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABAB ACDC AEDE AFDF AGXG AHIH AJAJ AKIK" confidence="0.99"/>
+    <analysis pattern="XABA XCDC XBDB EFDF XGEG XHXH XIXI XJXJ" confidence="0.89"/>
   </rhyme>
 </head>
 <body>
@@ -3765,7 +3765,7 @@ Svinde lad min Sorg!
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="88-89"/>
   <rhyme>
-    <analysis pattern="AABA AAAA ABBB BABA XBXB BBBB" confidence="0.97"/>
+    <analysis pattern="XAXA XBXB XCXC XDXD XEXE XFXF" confidence="0.83"/>
   </rhyme>
 </head>
 <body>
@@ -3815,7 +3815,7 @@ Disse tause, døde Steder.
   </dates>
   <source pages="89-90"/>
   <rhyme>
-    <analysis pattern="ABAB BCBC BBBB DCDC BBBB BBBB BBBB" confidence="1.00"/>
+    <analysis pattern="ABAB CDCD EFEF XDXD GHGH IJIJ EKEK" confidence="0.98"/>
   </rhyme>
 </head>
 <body>
@@ -3870,7 +3870,7 @@ Som en Ulv i Lænker, brumme.
   </dates>
   <source pages="90-91"/>
   <rhyme>
-    <analysis pattern="ABAB CDCD EXEX XFXF GHGH IJIJ KLKL" confidence="0.95"/>
+    <analysis pattern="ABAB CDCD EFEF XGXG HIHI JKJK LMLM" confidence="0.98"/>
   </rhyme>
 </head>
 <body>
@@ -3925,7 +3925,7 @@ Min Mund, den var saa kold som Snee -
   </dates>
   <source pages="91-92"/>
   <rhyme>
-    <analysis pattern="AXAXBCBC ADADBCBC AXAXBCBC" confidence="0.94"/>
+    <analysis pattern="ABABCDCD EFEFCDCD GXGXCDCD" confidence="0.97"/>
   </rhyme>
 </head>
 <body>
@@ -3972,7 +3972,7 @@ Elsk mig lidt og elsk mig længe!
   </dates>
   <source pages="92-93"/>
   <rhyme>
-    <analysis pattern="ABAB BAXA BAXA ACCC" confidence="0.96"/>
+    <analysis pattern="XAXA XBXB XCXC XDDD" confidence="0.85"/>
   </rhyme>
 </head>
 <body>
@@ -4009,7 +4009,7 @@ Hvad nytter det, man holder Ho'edet?
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="93-96"/>
   <rhyme>
-    <analysis pattern="ABAB CDED XCAC XFGF GHGH GXEX AIEI GJEJ JKGK ELXL EXJX XJGJ AMAM XNGN EAEA GOAO APXP AQAQ GRGR XLAL GSGS" confidence="0.95"/>
+    <analysis pattern="ABAB CDED XCXC XFXF XGXG HXEX XIEI JKEK KLXL EMXM ENKN IKXK XOXO XJXJ EPEP XXXQ QRHR XSXS XTXT XMXM XUXU" confidence="0.89"/>
   </rhyme>
 </head>
 <body>
@@ -4129,7 +4129,7 @@ Alle Venner snart mig glemt!
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="96-98"/>
   <rhyme>
-    <analysis pattern="ABAX ACXC BDDD DACA BCXC CCCC ADAD CEBE XACA DFXF XGAG CCCC" confidence="0.96"/>
+    <analysis pattern="ABAC ADED BXXX XAXA BFXF XECE AGAG XHBH XAXA XIXI XJAJ XXXX" confidence="0.88"/>
   </rhyme>
 </head>
 <body>
@@ -4207,7 +4207,7 @@ Dødfrossen og stille.
   <!-- Sidste halvdel af digtet findes fuldstændigt anderledes i en senere udgivelse. -->
   <source pages="98-99"/>
   <rhyme>
-    <analysis pattern="AAAA ABXB AABA XABA CCBC DAAA DACA AAXA" confidence="0.97"/>
+    <analysis pattern="ABXB ACXC XDCD XECE XFCF GHXH GIXI XJXJ" confidence="0.90"/>
   </rhyme>
 </head>
 <body>
@@ -4266,7 +4266,7 @@ I Evighed kan miste.
   </dates>
   <source pages="99-101"/>
   <rhyme>
-    <analysis pattern="ABABCC DEDEFF DGDGHH AIAIJJ AKAKLL DMDMNN AJAJOO AXAXPP" confidence="0.99"/>
+    <analysis pattern="XAXABB CDCDEE CFCFGG HIHIJJ KLKLMM CNCNOO PJPJQQ RXRXSS" confidence="0.97"/>
   </rhyme>
 </head>
 <body>
@@ -4345,7 +4345,7 @@ Haabet leve! Danmarks Skaal!
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="101-104"/>
   <rhyme>
-    <analysis pattern="ABAB ACAC DXDX AEAE CFCF GHGH CICI JXJA AKAK LMLM NXNC JOJO AHAX AXAX LHLH LXLX APAP CXCX AQAQ ARAR" confidence="0.95"/>
+    <analysis pattern="ABAB CDCD EXEX FGFG DHDH IJIJ DKDK LMLM NONO PQPQ RXRD LSLS TJTX UXUX VJVJ WXWX XYXY DZDZ IA27IA27 A28A29A28A29" confidence="0.97"/>
   </rhyme>
 </head>
 <body>
@@ -4469,7 +4469,7 @@ Hvile Lægehaanden ud!
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="104-107"/>
   <rhyme>
-    <analysis pattern="AAAA AAAA BBB BBB BBBB BBBB AAB BBB BBBB BBBB BCB BCB CCCC CCCC DBA DBA" confidence="1.00"/>
+    <analysis pattern="ABBA ABBA CCD EED FGHF FGHF IIJ KKJ LMML LMML NLO NLO LLLL LLLL PQR PQR" confidence="1.00"/>
   </rhyme>
 </head>
 <body>
@@ -4678,7 +4678,7 @@ Om den veed ikkun Guderne Besked.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="109-111"/>
   <rhyme>
-    <analysis pattern="AABBCCXXDDEEFFGGHHAXFFIIJJKKLLLLBBLLLLLLKMXXNNMXKKLLLLOOPPFFQQRR" confidence="0.97"/>
+    <analysis pattern="AABBCCDDEEFFGGHHIIAXGGJJKKLLMMNNBBOOPPJJQQRRMMXXSSTTUUVVUUGGWWXX" confidence="0.98"/>
   </rhyme>
 </head>
 <body>
@@ -4760,7 +4760,7 @@ Et ubetydeligt, et ringe Aften-Tidsfordriv.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="112-113"/>
   <rhyme>
-    <analysis pattern="ABAB ACAC DADX EXFX EAAA FAXX EAXA" confidence="0.93"/>
+    <analysis pattern="ABXB ACXC DEDX XXFX XXXX FXXX XEXE" confidence="0.81"/>
   </rhyme>
 </head>
 <body>
@@ -4815,7 +4815,7 @@ Er i Nattens Mulm at see.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="113-114"/>
   <rhyme>
-    <analysis pattern="ABAB CBCB DBDB EBEB FBFB GHGH" confidence="1.00"/>
+    <analysis pattern="ABAB CDCD EFEF GHGH IXIX JKJK" confidence="0.97"/>
   </rhyme>
 </head>
 <body>
@@ -4930,7 +4930,7 @@ At du vil ogsaa lære mig at græde!
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="115-116"/>
   <rhyme>
-    <analysis pattern="ABAB BABA BBBB ACXC XBBB" confidence="0.97"/>
+    <analysis pattern="XAXA XXXX XBXB XCXC XDXD" confidence="0.79"/>
   </rhyme>
 </head>
 <body>
@@ -4975,7 +4975,7 @@ I en simpel Ho'dvandsflaske.
   </dates>
   <source pages="116-117"/>
   <rhyme>
-    <analysis pattern="AXAXXXBXXABXBXACXXXXAXBXAXACAX" confidence="0.81"/>
+    <analysis pattern="AXXBXXCXXDCXCXXAXXXXXBCXDXXAXX" confidence="0.78"/>
   </rhyme>
 </head>
 <body>
@@ -5025,7 +5025,7 @@ Fagre Veninde, mit Digts stille lykønskende Ord!
   </dates>
   <source pages="117-119"/>
   <rhyme>
-    <analysis pattern="AABACACAXACAAADAAABAAABABAAABADAXAAA AACAAAXAXAXABAAAAAAA" confidence="0.97"/>
+    <analysis pattern="AAXABABAXABAXACAXAXAXAXAXAXAXACAXAXA XABABAXAXAXAXAXAXAXA" confidence="0.88"/>
   </rhyme>
 </head>
 <body>
@@ -5108,7 +5108,7 @@ En fattig Digters ufuldførte Klade!
   <source pages="119-121"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABABACAC ADADEFEF AGAGAXAX HIHIHJHX KHKXAJAJ AXAXAXAA ALALHHHH" confidence="0.96"/>
+    <analysis pattern="ABABCDCD EFEFGHGH IJIJKXKX LMLMNONX PQPQRORO AXAKSTST QUQUVWVW" confidence="0.98"/>
   </rhyme>
 </head>
 <body>
@@ -5186,7 +5186,7 @@ At Hædersaar dig skjænkes fleer og fleer!
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="121-122"/>
   <rhyme>
-    <analysis pattern="ABXB CADA XDDD DDXD DEDE DDCD XDDD" confidence="0.95"/>
+    <analysis pattern="ABXB CAXA XDXD XEXE FFGF XHCH XIGI" confidence="0.90"/>
   </rhyme>
 </head>
 <body>
@@ -5240,7 +5240,7 @@ Og turde ei paa Porten kime.
   <keywords>lejlighedsdigtning,thovaldsen,sonnet</keywords>
   <source pages="122-123"/>
   <rhyme>
-    <analysis pattern="ABBA ABBA BCB CBC" confidence="1.00"/>
+    <analysis pattern="ABBA ABBA CDC DCD" confidence="1.00"/>
   </rhyme>
 </head>
 <body>
@@ -5273,7 +5273,7 @@ Og af den Dyd, hvorom kun sjelden tales.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="123-124"/>
   <rhyme>
-    <analysis pattern="ABAB CCCC DDDD ECEC CCXC" confidence="0.98"/>
+    <analysis pattern="ABAB XCXC DDDD EFEF XGXG" confidence="0.93"/>
   </rhyme>
 </head>
 <body>
@@ -5315,7 +5315,7 @@ Til sin Ørkens vilde Hule.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="124-125"/>
   <rhyme>
-    <analysis pattern="ABBB ABAB BCXC XBBB BBXB" confidence="0.95"/>
+    <analysis pattern="XAXA XAXA XBXB XCXC XDXD" confidence="0.83"/>
   </rhyme>
 </head>
 <body>
@@ -5360,7 +5360,7 @@ Thi hun elsker sit Uhyre.
   <keywords>lejlighedsdigtning,sonnet</keywords>
   <source pages="125"/>
   <rhyme>
-    <analysis pattern="ABBA ABBA CCC CCC" confidence="1.00"/>
+    <analysis pattern="ABBA ABBA CDD EEC" confidence="1.00"/>
   </rhyme>
 </head>
 <body>
@@ -5393,7 +5393,7 @@ Som Brud og Viv det skjønne Engestofte.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="126-128"/>
   <rhyme>
-    <analysis pattern="ABAB CDCD EFEF GXGX HIHI XJXJ XKXK LMLM HNHN XXAX LOLO LPLP LQLQ XPLP IRIR STST LULU VWVW VSVS AEAE" confidence="0.96"/>
+    <analysis pattern="ABAB CDCD EFEF GXGX HIHI XJXJ KLKL MNMN HOHO XXAX MXMX MPMP MQMQ MPMP IRIR STST MUMU VWVW VSVS AEAE" confidence="0.96"/>
   </rhyme>
 </head>
 <body>
@@ -5509,7 +5509,7 @@ Vi stille mødtes - Mund paa Mund -
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="129-131"/>
   <rhyme>
-    <analysis pattern="ABAB BCBC ABAB BBBB ACDC EFEF BBBB BABA FBFB DCDC CBCB FCFC BBBB" confidence="1.00"/>
+    <analysis pattern="ABAB CDCD AEAE XFXF ADGD HXHX IJIJ KAKA LMLM GDGD DNDN ODOD PQPQ" confidence="0.97"/>
   </rhyme>
 </head>
 <body>
@@ -5596,7 +5596,7 @@ Ham disse Linier min Hilsen bringe!
   </dates>
   <source pages="131-132" />
   <rhyme>
-    <analysis pattern="ABCB DCCC EEDE ECAC CCDC XFCF CCEC" confidence="0.99"/>
+    <analysis pattern="XAXA BCXC DDBD DEXE XFBF XGXG XFDF" confidence="0.90"/>
   </rhyme>
 </head>
 <body>
@@ -5649,7 +5649,7 @@ Det var mig nok - jeg drømte.
   <!-- Afviger en del fra en senere udgivelse. -->
   <source pages="132-133"/>
   <rhyme>
-    <analysis pattern="ABBA BBBB CCCC DAAD BCCB CBBC AEEA" confidence="1.00"/>
+    <analysis pattern="ABBA CDDC EFFE GAAG HIIH JKKJ ALLA" confidence="1.00"/>
   </rhyme>
 </head>
 <body>
@@ -5701,7 +5701,7 @@ Farvel, naar Stjernen leder dig om Natten!
   <source pages="133-134"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABAB ACAC DXDX DADA EFEF GAGA HXHX" confidence="0.95"/>
+    <analysis pattern="ABAB CDCD EXEX EFEF GHGH IFIF JXJX" confidence="0.95"/>
   </rhyme>
 </head>
 <body>
@@ -5754,7 +5754,7 @@ Den Skabers selv, der fandt, at Alt var vel.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="134-136" />
   <rhyme>
-    <analysis pattern="AAAAAAAA BCBCBAA ADADADEE DADADADD FCFCFCAA" confidence="1.00"/>
+    <analysis pattern="ABABABCC DEDEDXX FGFGFGHH GIGIGIGG JKJKJKBB" confidence="0.98"/>
   </rhyme>
 </head>
 <body>
@@ -5819,7 +5819,7 @@ Hans Aand, der gaaer igjen i Slottets Sale.
   <keywords>lejlighedsdigtning</keywords>
   <source pages="136"/>
   <rhyme>
-    <analysis pattern="ABABCCDEDEDDCDCFFC" confidence="1.00"/>
+    <analysis pattern="ABABCCDEDEDDFDXGGF" confidence="0.98"/>
   </rhyme>
 </head>
 <body>
@@ -5859,7 +5859,7 @@ Med min Erindrings Lykke.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="137-138"/>
   <rhyme>
-    <analysis pattern="AXAXBCBC ADAEBFBF GXGXAXAX BHBHAIAX JIJIJKJK AEADALAL" confidence="0.95"/>
+    <analysis pattern="XXXXABAB CDCDEFEF GXGXHXHX IJIJFKFX LKLKLMLM NDNDOPOP" confidence="0.93"/>
   </rhyme>
 </head>
 <body>
@@ -5928,7 +5928,7 @@ Og bryde herligt frem!
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="139-141"/>
   <rhyme>
-    <analysis pattern="AAAA AAAA BCBC AABA AAAA ADAD AABA AAXA EBAB EFDF GAAA XFHF BACA AFAF HAAA GBBB" confidence="0.99"/>
+    <analysis pattern="ABXB XCXC XDXD XEXE FGXG AHXH XIXI CJXJ KLFL KMHM NOXO XMPM XCDC AMXM PQXQ NRXR" confidence="0.90"/>
   </rhyme>
 </head>
 <body>
@@ -6029,7 +6029,7 @@ Der ved Siden af sin Beiler.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="141-143"/>
   <rhyme>
-    <analysis pattern="AABBXBBXAXCDXAXCBAA XDADABBECXXAAXXAAFXFGXBXGXXH HCBAAAE" confidence="0.90"/>
+    <analysis pattern="XXXXXXXXXXABXXXAXXC XBDBXXXEAXXXXXXDFGXGHXXXHXXC CAXXXFE" confidence="0.78"/>
   </rhyme>
 </head>
 <body>
@@ -6109,7 +6109,7 @@ For dine Efterladtes ædle Kreds.
   <keywords>sonnet</keywords>
   <source pages="143-144"/>
   <rhyme>
-    <analysis pattern="AAAA AAAA AAA ABB" confidence="1.00"/>
+    <analysis pattern="ABBA ABBA CCD DEE" confidence="1.00"/>
   </rhyme>
 </head>
 <body>
@@ -6143,7 +6143,7 @@ Som Heliotropen vender sig mod Solen?
   <!-- Fjerde strofe udladt i senere udgivelse. -->
   <source pages="144"/>
   <rhyme>
-    <analysis pattern="ABBA CAAC DCCD BDDB BBBB" confidence="1.00"/>
+    <analysis pattern="ABBA CAAC DXXD BEEB BBBB" confidence="0.97"/>
   </rhyme>
 </head>
 <body>
@@ -6186,7 +6186,7 @@ Hvor Leda i sin Uskyld klapped Svanen.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="145-147"/>
   <rhyme>
-    <analysis pattern="AAAB ACAC CACA CADA AAAA BAXA AEAE AAAA FGFG GAGA GCGC ABAB ABAB ACAC CADA BABA ADAD" confidence="0.99"/>
+    <analysis pattern="XXXA BCBC CXCX CDED FGFG AHXH IJIJ FGFG KLKL XMXM NCNC MAMA OAOA PCPC CXEX AQAQ XEXE" confidence="0.94"/>
   </rhyme>
 </head>
 <body>
@@ -6290,7 +6290,7 @@ Var ei min Søn, men var en Fremmed.''
   <keywords>sonnet</keywords>
   <source pages="147-148"/>
   <rhyme>
-    <analysis pattern="ABBA ABBA AAA CAC" confidence="1.00"/>
+    <analysis pattern="ABBA ABBA CDC EDE" confidence="1.00"/>
   </rhyme>
 </head>
 <body>
@@ -6368,7 +6368,7 @@ Sig Krigens Gud, med heelt opsmøgne Ærmer.
   <keywords>sonnet</keywords>
   <source pages="149"/>
   <rhyme>
-    <analysis pattern="ABBA ABBA CDC CDC" confidence="1.00"/>
+    <analysis pattern="ABBA ABBA CDC EDE" confidence="1.00"/>
   </rhyme>
 </head>
 <body>
@@ -6407,7 +6407,7 @@ Hvad greb du der? Ih, fy for en Ulykke!
   <keywords>sonnet</keywords>
   <source pages="149-150"/>
   <rhyme>
-    <analysis pattern="ABBA ABBA CCD DAA" confidence="1.00"/>
+    <analysis pattern="XAAB BAAB CCD DEE" confidence="0.98"/>
   </rhyme>
 </head>
 <body>
@@ -6449,7 +6449,7 @@ See saa! Lad nu en Anden gaae iblinde!
   <keywords>sonnet</keywords>
   <source pages="150-151"/>
   <rhyme>
-    <analysis pattern="ABBA ABBA CCA DDA" confidence="1.00"/>
+    <analysis pattern="ABBA ABBA CCD EED" confidence="1.00"/>
   </rhyme>
 </head>
 <body>
@@ -6493,7 +6493,7 @@ En Bitterhed, hvis Ret jeg ei benegter.
   <keywords>sonnet</keywords>
   <source pages="151"/>
   <rhyme>
-    <analysis pattern="AAAA AAAA XAA AAA" confidence="0.98"/>
+    <analysis pattern="ABBX ABBA XCD XCD" confidence="0.93"/>
   </rhyme>
 </head>
 <body>
@@ -6533,7 +6533,7 @@ Saa tælle Peer og Povl paa deres Knapper.
   <keywords>sonnet</keywords>
   <source pages="152"/>
   <rhyme>
-    <analysis pattern="ABBA ABBA CBC CBC" confidence="1.00"/>
+    <analysis pattern="AXBA ABBA CDC CDC" confidence="0.98"/>
   </rhyme>
 </head>
 <body>
@@ -6566,7 +6566,7 @@ En sagte Bøn, men som i Himlen høres.
   <source pages="152-155"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="A BCDACEAFGHX BAAXAXAAIDXBBDIADBIHXFDBDDBAADBXAXXAIXXGIXXDXDBXXDXXDDXDAHDEXXX" confidence="0.90"/>
+    <analysis pattern="X ABXCBDXEFGX AXCXXXXXHXIAAIHXXAHGXEJAKKALLXAMLXXXHXXFHXXXXXAXXNXXXXXMXGXDJXN" confidence="0.84"/>
   </rhyme>
 </head>
 <body>
@@ -6662,7 +6662,7 @@ Fuldt af Erkjendtlighed og Velbehag!
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="155-156"/>
   <rhyme>
-    <analysis pattern="ABCB XBDB DEXE CDAD CDDD BBCB EBDB BBBB" confidence="0.98"/>
+    <analysis pattern="ABCB XDED XFEF CGAG CXXX XHCH FIEI XJXJ" confidence="0.91"/>
   </rhyme>
 </head>
 <body>
@@ -6719,7 +6719,7 @@ Og Legemet kun vaager.
   <source pages="156-158"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="XAXABXBC DADAEEEC FAFAGGGC HIHIJJJC XAXAKKKA" confidence="0.96"/>
+    <analysis pattern="ABABCCXD EFEFGGGD HIHIJJJD KLKLMMMD XNXNOOOX" confidence="0.97"/>
   </rhyme>
 </head>
 <body>
@@ -6786,7 +6786,7 @@ De gode gamle Skikke leve!
   <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="AAAA AAAA BBC DDC" confidence="1.00"/>
+    <analysis pattern="ABBA AXBA CCD EED" confidence="0.98"/>
   </rhyme>
 </head>
 <body>
@@ -6826,7 +6826,7 @@ Af Stjerner, skjønnere end selv de Glades.
   </notes>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="XABAXCDDX XEXEBFXXF GEGEHHIIA JEJECCFBE" confidence="0.93"/>
+    <analysis pattern="XAXABBCCX XDXDEEXXX FXFXGGHHA IJIJBBEEX" confidence="0.89"/>
   </rhyme>
 </head>
 <body>
@@ -6884,7 +6884,7 @@ Vor Vert og vor Vertinde leve!
   </dates>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABABCDCD AEAEAFAF CXCAAGAG AHAHAAAA" confidence="0.99"/>
+    <analysis pattern="ABABCDCD XEXEFGFG HIHIJKJK LMLMNINI" confidence="0.98"/>
   </rhyme>
 </head>
 <body>
@@ -6937,7 +6937,7 @@ Fordi, Pauline Holsten! du er her.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="161-163"/>
   <rhyme>
-    <analysis pattern="ABAB CBDB BDBD DBCB XBAB BBCB AEDE XAXA ABAB BBBB AFAF XAXA" confidence="0.96"/>
+    <analysis pattern="XAXA BCDC XDXD DEBE XFXF XGBG XHDH XIXI XJXJ KLXL XKXK XMXM" confidence="0.88"/>
   </rhyme>
 </head>
 <body>
@@ -7017,7 +7017,7 @@ Verset her paa Bladet slutter.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="163-164"/>
   <rhyme>
-    <analysis pattern="ABAB CCCC DCDC CCCC" confidence="1.00"/>
+    <analysis pattern="ABAB CDCD EFEF GXGX" confidence="0.96"/>
   </rhyme>
 </head>
 <body>
@@ -7054,7 +7054,7 @@ Hvordan du kan fortumle og fortrylle.
   <source pages="164-165"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABAB CDCD AEAE FGFG AHAH AIAI AJAJ AKAK CLCL" confidence="1.00"/>
+    <analysis pattern="XAXA BCBC DEDE FAFA XGXG HIHI XJXJ KLKL MNMN" confidence="0.94"/>
   </rhyme>
 </head>
 <body>
@@ -7114,7 +7114,7 @@ Du favner grædende et Liig.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="165-166"/>
   <rhyme>
-    <analysis pattern="AXAXABAB AXAXCDCD AEAECXCX" confidence="0.91"/>
+    <analysis pattern="ABABCDCD EFEFGHGH XIXIJXJX" confidence="0.94"/>
   </rhyme>
 </head>
 <body>
@@ -7156,7 +7156,7 @@ Som huldt I mindes Furresøens Kyst!
   <source pages="166-169"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABAB XCXC DEDX XFXF GBGB HIHI JEJE KEKE LMLM MEME XEEE BEBE ENEN EEEE XHXH EMEM" confidence="0.96"/>
+    <analysis pattern="ABAB CDCD EFEF XGXG HIHI JKJK LMLM NONO PQPQ QRQR STST UVUV RWRW XYXY ZJZJ A27QA27Q" confidence="0.99"/>
   </rhyme>
 </head>
 <body>
@@ -7281,7 +7281,7 @@ Og dig intet Slemt har truffet!
   <source pages="169-186"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="AAA ABA ACA ADA AXA AXA ADA AAA ADA AEA AXA DED ADA DED ECE DBD DED DXD ACA DDD DCD ACA AAA AAA DDD ADA AFA EDE DXD AAA EEE DCD DDD EDE EDE CEC AEA ADA AAA DDD EEE CCC GGG HHH DCD AAA DED DCD EXE ADA CBI HXH IAC DCD DDD CBC DDD AAA DDD EEE JXJ AAA ADA DKD EEE DDD DAD IDC CCC AXA AEA DCD DDD DED DED LXL GDG DDD DED MCM EXE GXG DDD GXG CBC DAD DDD IAC GDG DED IXC EEE DID DGD CEC DAD CAC EAE EEE IDC IDC EDE AAA DDD DDDD AAA DED DDD DDD DFD DAD NFN ECE CDC HECE DCD DDD DDD DID DKD DID DCA OAO DCD DD AHA DDD DDD HEH CAC GGG FDF DDD DED EDE ADA" confidence="0.99"/>
+    <analysis pattern="AAA ABA ACA AXA ADA AXA AXA AAA AXA AXA AEA FXF AXA GHG XCX IBI JXJ KXK ACA LLL MCM ACA AAA AAA NXN AXA AOA PQP EXE AAA RXR SCS TXT UXU VXV CXC AXA AWA AAA XXX XXX CCC YYY ZZZ XCA27 AAA DHD A28CA28 A29XA29 AA30A CBA31 ZXZ A31AC A32CA32 A33A34A33 CBC A35A35A35 AAA A35XA35 A36A37A36 A38A39A38 AAA AA34A A40A41A40 A42XA42 AXA A43AA43 A31XC CCC AXA AXA QCQ A44QA44 WA37W A45XA45 A30A46A30 YA34Y A47XA47 A34XA34 A48CA48 A49XA49 YXY A50XA50 YXY CBC A51AA46 WA39W A31AC YXY A34XA34 A31XC A52XA52 A32A31A32 A53YA53 CXC YAY CAC A54AA54 A55HA55 A31MC A31XC A56XA56 AAA QQQ A57A57A57A57 AAA YXY A58A58A58 A59A59A59 GOG DAD A60OA60 A61CA61 CXC ZA62CA62 A63CA63 A34SA34 XA34A34 A64A31A64 A65A41A65 A32A31A32 XCA A66AA66 FCF A51A51 AZA A27XA27 A34A34A34 ZXZ CAC YYY OXO FXF XXX XYX AQA" confidence="0.95"/>
   </rhyme>
 </head>
 <body>
@@ -7972,7 +7972,7 @@ Digternes Prydelse, - de danske Hjerters Næring og bedste Nydelse, - Christian 
   <source pages="201-202"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABCB XDCD XEFE CGFG CAFA AGFG" confidence="0.97"/>
+    <analysis pattern="ABXB XCXC XDXD XEXE XAXA AEXE" confidence="0.85"/>
   </rhyme>
 </head>
 <body>
@@ -8024,7 +8024,7 @@ Fører et elendigt Liv.
   <source pages="202-203"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="AXAXBCXC XDXDDEXE FDXDXGXG HIBIXJXJ XKXKXLXL HMXMENFN" confidence="0.88"/>
+    <analysis pattern="ABABCDXD XEXEEFXF GEXEXHXH IJCJXKXK XLXLXMXM INXNFOGO" confidence="0.90"/>
   </rhyme>
 </head>
 <body>
@@ -8099,7 +8099,7 @@ Ved et saa sødt Bedrag.
   <source pages="204-205"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABABCDCD CECEDDDD CXCXADAD FGFGCDCD" confidence="0.98"/>
+    <analysis pattern="ABABCDCD XEXEDDDD FXFXADAD GHGHIDID" confidence="0.96"/>
   </rhyme>
 </head>
 <body>
@@ -8157,7 +8157,7 @@ Fordømte Vaar! er du alt der igjen?
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="205-206"/>
   <rhyme>
-    <analysis pattern="XAXABCDC XEXEXFEF XGXGCXXX XHXHBCDC" confidence="0.87"/>
+    <analysis pattern="XAXABCDC XEXEXFEF XGXGCHXH XIXIBCDC" confidence="0.89"/>
   </rhyme>
 </head>
 <body>
@@ -8255,7 +8255,7 @@ Om det var titusind Miil.
   <source pages="207-226"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABACDDEEFFGGHH XXDDIIJJDDKAD AALLMMAAJNJNJJAAOOJJ PJPJCCJJJJCCJJAA DXDQDDJJCCDDJJJJDCDBRRJJAASSAATDDTRRUUJJXX VJVJDJJAAJJWP XXAAJJJJDDJJ JJYPGGZJJJJJJAA A27A27PWA28JJA28A28YJJPJJA29A29A28A28A28JJPPDDDDA30A30TTPPDD YPA31A31JJJJA32A32A32JJJJ A33A33AAAA34AA34VAVAA35A35DDXA32A32JTBCTJJ AA36A36A36A29AA29WWDD AJJWWA37A37JXJJSUJJJGGTTA38A38JA36A36PPA39A40A41A39A40A41A28A28DDLLA42A42TTA43A43A44A45TTJJA28A28VVA44A44DDA32A32UUA41A41JJJJJJA45HHA44AKRRXXAAA46A46 JA38A38JJJJJA47A48A27A30XA36A49DA38A38WWA50JA50JBCA36A36AAA51PWA52A52A51A28A28AAQA30JA46JA46A53AA53AA32A32A42A42KXPWJJA54A54JJJJA28X DA55DA55A27JJA30A49A49A49A27JAAA56A56A57A57A35A35 WWXFTTA58A58WWDDA27A30WWJJJJJRR AAJJA51A51AAA59A59JJSSA60A60JJA38A38HHJJWPA61A61WWJJ JJA51A51A51JJA47A48JJWPAA JJRJXJRZNNJJA41PA41PDDDDHHA43A43JJ A56JJA56JJUUA35A27A35A27A30XXEEA62A62JJJA36JA36JJJ A46A46A59A59HHHJJA63A63A33AA33AXXJJJJA64A64A35A35A65A65PPA35A35A42A42JJJJA35A35A59A59A66A66AABBJJWA67A67WJDJD" confidence="0.99"/>
+    <analysis pattern="ABACDDEEFFGGHH XIJJKKIILLMAX AANNOOAAPQPQRRAASSTT UVUVCCWWXXCCYYAA ZXZA27A28A28A29A29CCA30A30A31A31A32A32XCXBA33A33A34A34AAA35A35AAA36A37A37A36A33A33A38A38A39A39XX A40PA40PTA41A41AAA42A42A43U A44A44AAA40MMA40XXA45A45 A46A46UUGGA47A36A31A36A43A31A43AA A48A48UA43A49XA50A49A49UA51A51UA52A52A53A53A49A49A49A27A27UUA54A54XXA48A48A36A36UUA55A55 UUA56A56A57A57A41A41A46A46A46A58A59A58A59 A32A32AAAA60AA60A40AA40AA61A61TTA62A46A46A62A36BCA36A63A63 AA64A64A64A53AA53A43A43A65A65 AA66A66A43A43A67A67A39XA39TA35A38TA36A36GGA36A36A68A68XA64A64UUA69A70A50A69A70A50A49A49A71A71NNA72A72A36A36A73A73A74VA36A36OOA49A49A40A40A74A74A75A75A46A46A38A38A50A50A76A76A77A77A43A43VHHA74AMA33A33A42A42AAA78A78 A31A68A68A45SA31SA45A79A80A48A48XA64XA55A68A68A43A43A59XA59XBCA64A64AAA81UA43A82A82A81A49A49AAA27A48A42A78A42A78A83AA83AA46A46A72A72MMUA43A84A84A29A29MMA66A66A49X A85A39A85A39A48A43A43A48A86A86A86XA58AAA87A87A66A66A61A61 A43A43XFA36A36WWA43A43A88A88A48A48A43A43A66A66A89A89A66A33A33 AAVVA81A81AAA76A76A66A66A35A35A90A90A91A92A68A68HHA93A93A43UA84A84A43A43A92A92 A94A94A81A81A81A95A95A79A80A96A96A43UAA A91A92A33A42XA42A33A47QQA97A97A50UA50UA75A75A98A98HHA73A73A74V A87A99A99A87A45A45A38A38A61A48A61A48A48A44A44EEA96A96A100A101A100A64A101A64A66A66A66 A78A78A76A76HHHA102A102A103A103A32AA32AXXA39A39VA74A104A104A61A61A105A105UUA61A61A72A72A92A91A106A106A61A61A76A76A107A107AABBA36A36A43A108A108A43A100A109A100A109" confidence="0.99"/>
   </rhyme>
 </head>
 <body>
@@ -8886,7 +8886,7 @@ Og aldrig meer et Løv sig kruser.
   <source pages="226-229"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABAB CDCD EFGF HIHI JGJG KLKL MNMN OPOP QMQM RSXS TUTU MVMV SWSW XYXY ZSZS RXRX ESGS A27UA27U" confidence="0.99"/>
+    <analysis pattern="ABAB CDCD EFEF GHGH IEIE JKJK LMLM NONO PLPL XQRQ STST LULU QVQV WXWX YQYQ XZRZ EQEQ A27TA27T" confidence="0.99"/>
   </rhyme>
 </head>
 <body>
@@ -8998,7 +8998,7 @@ Tungsindig efter din.
   <keywords>drikkevise</keywords>
   <source pages="229-230"/>
   <rhyme>
-    <analysis pattern="AAAABCBC DEDEXFXF ACACGFGF" confidence="0.97"/>
+    <analysis pattern="ABABCDCD BEBEXFXF GHGHIFIF" confidence="0.97"/>
   </rhyme>
 </head>
 <body>
@@ -9046,7 +9046,7 @@ Drik og drukn i Glæde Verden!
   <source pages="230-231"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABCBAA DEXEFF XGCGXX BHXHDX XIXIXX" confidence="0.88"/>
+    <analysis pattern="XAXABB CDXDEE XFBFXX AGXGCX XHXHII" confidence="0.88"/>
   </rhyme>
 </head>
 <body>
@@ -9102,7 +9102,7 @@ Den kan vort Elskovsblik forstaae.
   <source pages="231-232"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="XAXABAAA BAAACDAD AAXAEAXA EFXFCAXA CADAEADA" confidence="0.95"/>
+    <analysis pattern="XAXABCDC BEXEFGXG XHXHIJXJ IKXKFJDJ FLXLIJXJ" confidence="0.91"/>
   </rhyme>
 </head>
 <body>
@@ -9165,7 +9165,7 @@ Den kjække Hak Humle.
   <source pages="233-234"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="AA BB CC XD XX BB BX EE FF EE GG HH DD" confidence="0.95"/>
+    <analysis pattern="AA BB CC XD XX EE FF GG HH GG II JJ DD" confidence="0.96"/>
   </rhyme>
 </head>
 <body>
@@ -9226,7 +9226,7 @@ At savne sit lille spæde Noer.''
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="234-235"/>
   <rhyme>
-    <analysis pattern="AABAAB CCDDDD AAEAAE AAFAAF" confidence="1.00"/>
+    <analysis pattern="AABCCB DDXEEF FFGHHG IIJKKJ" confidence="0.99"/>
   </rhyme>
 </head>
 <body>
@@ -9276,7 +9276,7 @@ Mind mig om Lykke og om Lyst!
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="235"/>
   <rhyme>
-    <analysis pattern="ABAB CDCD EFEF ADAA" confidence="1.00"/>
+    <analysis pattern="ABAB CDCD EFEF GHGH" confidence="1.00"/>
   </rhyme>
 </head>
 <body>
@@ -9355,7 +9355,7 @@ O Elskte, kom - o kom igjen!
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="236-237"/>
   <rhyme>
-    <analysis pattern="XABC CDXD XXEX XFEF XGXG AHXH BIBI XXFX" confidence="0.87"/>
+    <analysis pattern="XABA ACXC XXDX XEDE XFXF AGXG XHBH XXEX" confidence="0.86"/>
   </rhyme>
 </head>
 <body>
@@ -9416,7 +9416,7 @@ Saalænge jeg har Lyst.''
   <source pages="238-240"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABABCC XDXDEE FGFGGG HBHBII JDJDXX KBKBXX LKLKMM XBXBBB CDCDNN" confidence="0.95"/>
+    <analysis pattern="ABABCC XDXDEE FGFGHH IBIBJJ KDKDLL MBMBXX NMNMOO XBXBBB CXCXPP" confidence="0.95"/>
   </rhyme>
 </head>
 <body>
@@ -9506,7 +9506,7 @@ Mit stille Haab, min bange Tro!
   <source pages="240-241"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABAB CBCB DEDE FGFG HBHB XGXG EBEB IBIB JKJK KBKB LBLB" confidence="0.98"/>
+    <analysis pattern="ABAB CDCD EFEF GHGH IJIJ KLKL FMFM NONO PQPQ QQQQ JRJR" confidence="1.00"/>
   </rhyme>
 </head>
 <body>
@@ -9582,7 +9582,7 @@ Til Klokken skal ham hente.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="242"/>
   <rhyme>
-    <analysis pattern="XAAA AAXA" confidence="0.91"/>
+    <analysis pattern="XAXA ABXB" confidence="0.87"/>
   </rhyme>
 </head>
 <body>
@@ -9613,7 +9613,7 @@ Urnen med min Elskovs Aske.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="242-243"/>
   <rhyme>
-    <analysis pattern="XAXA BABA XAXA CACA" confidence="0.91"/>
+    <analysis pattern="XXAX BCBC XDXD EAEA" confidence="0.89"/>
   </rhyme>
 </head>
 <body>
@@ -9654,7 +9654,7 @@ Vi blive rolig dernede.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="243"/>
   <rhyme>
-    <analysis pattern="ABXB CXAX XCCC ADAD CECE" confidence="0.93"/>
+    <analysis pattern="XAXA XXXX XBXB XCXC XDXD" confidence="0.79"/>
   </rhyme>
 </head>
 <body>
@@ -9700,7 +9700,7 @@ Og drømme en salig Drøm.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="244"/>
   <rhyme>
-    <analysis pattern="ABAB ACAC ADAD" confidence="1.00"/>
+    <analysis pattern="ABAB CDCD EFEF" confidence="1.00"/>
   </rhyme>
 </head>
 <body>
@@ -9736,7 +9736,7 @@ Saa var der slet intet at holde sig til.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="244-245"/>
   <rhyme>
-    <analysis pattern="ABAB ACAC AXAX" confidence="0.94"/>
+    <analysis pattern="ABAB CDCD AXAX" confidence="0.94"/>
   </rhyme>
 </head>
 <body>
@@ -9772,7 +9772,7 @@ Græd over saadan en Konst.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="245"/>
   <rhyme>
-    <analysis pattern="ABAB ACAC AXXX ADAD" confidence="0.93"/>
+    <analysis pattern="ABAB CDCD XEXE FGFG" confidence="0.96"/>
   </rhyme>
 </head>
 <body>
@@ -9813,7 +9813,7 @@ Er hændet mig eengang før.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="246"/>
   <rhyme>
-    <analysis pattern="AABA AABA BBXB" confidence="0.97"/>
+    <analysis pattern="XAXA XBXB XCXC" confidence="0.83"/>
   </rhyme>
 </head>
 <body>
@@ -9849,7 +9849,7 @@ For, som Guderne, at sove.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="246-247"/>
   <rhyme>
-    <analysis pattern="ABAB XBXB CBCB XDXD" confidence="0.91"/>
+    <analysis pattern="ABAC DEDE BBBC XFXF" confidence="0.96"/>
   </rhyme>
 </head>
 <body>
@@ -9890,7 +9890,7 @@ Spillet den døende Gladiator.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="247"/>
   <rhyme>
-    <analysis pattern="AABA BABA BABA" confidence="1.00"/>
+    <analysis pattern="XABA BAXA BAXA" confidence="0.91"/>
   </rhyme>
 </head>
 <body>
@@ -9926,7 +9926,7 @@ Elskede! hvad vil du meer?
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="248"/>
   <rhyme>
-    <analysis pattern="AAXA XBXB" confidence="0.87"/>
+    <analysis pattern="XAXA XBXB" confidence="0.83"/>
   </rhyme>
 </head>
 <body>
@@ -9957,7 +9957,7 @@ Kun din arme Næse blodig.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="248"/>
   <rhyme>
-    <analysis pattern="ABXB ACXC XDXD" confidence="0.88"/>
+    <analysis pattern="XAXA XBXB XCXC" confidence="0.83"/>
   </rhyme>
 </head>
 <body>
@@ -10059,7 +10059,7 @@ Og Solen smiilte, Fuglene sang.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="250"/>
   <rhyme>
-    <analysis pattern="AABCCB DDBXXB" confidence="0.94"/>
+    <analysis pattern="AABCCB DDEXXE" confidence="0.94"/>
   </rhyme>
 </head>
 <body>
@@ -10094,7 +10094,7 @@ Henrykt med Stjernerne talte?
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="250"/>
   <rhyme>
-    <analysis pattern="ABBB ACAC" confidence="1.00"/>
+    <analysis pattern="XAAA XBXB" confidence="0.87"/>
   </rhyme>
 </head>
 <body>
@@ -10125,7 +10125,7 @@ Den trykkede vi itu.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="251"/>
   <rhyme>
-    <analysis pattern="ABXB ACXC XXAX" confidence="0.85"/>
+    <analysis pattern="XAXA XBXB XXXX" confidence="0.77"/>
   </rhyme>
 </head>
 <body>
@@ -10161,7 +10161,7 @@ Og for Poesie det gaaer.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="251"/>
   <rhyme>
-    <analysis pattern="XAAA AAAA" confidence="0.96"/>
+    <analysis pattern="XABA BCXC" confidence="0.91"/>
   </rhyme>
 </head>
 <body>
@@ -10192,7 +10192,7 @@ Troer jeg, er med blandt de Sammensvorne.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="252"/>
   <rhyme>
-    <analysis pattern="ABCB DXDE ADDD EFDF EGXG CXDX" confidence="0.94"/>
+    <analysis pattern="ABCB XDXD AEXE FGXG XHFH CXXX" confidence="0.88"/>
   </rhyme>
 </head>
 <body>
@@ -10274,7 +10274,7 @@ Udvider atter sig Sjælen.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="253-254"/>
   <rhyme>
-    <analysis pattern="ABBB XCAC CBBB ABXB" confidence="0.96"/>
+    <analysis pattern="XABA XCXC CBXB XXXX" confidence="0.83"/>
   </rhyme>
 </head>
 <body>
@@ -10315,7 +10315,7 @@ Amor troer jeg at han hedder.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="254-255"/>
   <rhyme>
-    <analysis pattern="ABXXCDDEFXAX CEEDX XFXDBABAXE FXFDE" confidence="0.90"/>
+    <analysis pattern="ABXXCXXDXXAX CDDXX XXXXBABAXD XXXAD" confidence="0.81"/>
   </rhyme>
 </head>
 <body>
@@ -10372,7 +10372,7 @@ Læse med Jubel Himmelordene:
   <source pages="255-257"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABCA CDXBEBAAXFX BBDXBBABBCCXAG ABXEFBGECBBCX HXBIHBXBXX CIXBXBXA ABBABXBA" confidence="0.92"/>
+    <analysis pattern="AABA BCDXEXAAXFX XDCXDXADGBBXAH AXXEFIHEBXXBX IXGXIEXXXX BXXFXIXA AXXAJXJA" confidence="0.87"/>
   </rhyme>
 </head>
 <body>
@@ -10509,7 +10509,7 @@ Hvor er det høie Hav?
   <source pages="258-259"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="XABA XACA XAXA XACA BAXA" confidence="0.90"/>
+    <analysis pattern="XABA XCDC XEXE XFDF BGXG" confidence="0.90"/>
   </rhyme>
 </head>
 <body>
@@ -10555,7 +10555,7 @@ Og snapper dennem baade.
   <source pages="259-260"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="AABCCCB AADAAAD EEFAAAF" confidence="1.00"/>
+    <analysis pattern="AABCCCB DDEFFXE GGHIIIH" confidence="0.98"/>
   </rhyme>
 </head>
 <body>
@@ -10602,7 +10602,7 @@ Strakt mod Hjemmet med min Mand?
   <source pages="260-263"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABAAB ACAAC DEDDE AFAAA GHGGH AXAAX AIAAI GJGGJ GFGGX GKGGK GLGGL MNMMN GIGGI GOGGO" confidence="0.99"/>
+    <analysis pattern="ABAAB ACAAC DEDDE FGFFG HIHHI JJJJX KFKKF LMLLM NGNNX OPOOP QRQQR STSST UFUUF VWVXW" confidence="0.99"/>
   </rhyme>
 </head>
 <body>
@@ -10710,7 +10710,7 @@ En Dolk det perlesmukte Skaft.
   <source pages="263-265"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABAB CDCD EFEF GBGH AGAG IFIF JFJF KBKB LFLF XMXM HMHM" confidence="0.98"/>
+    <analysis pattern="ABAB CDCD EFEF GBGH AGAG IJIJ KLKL MBMB NONO XPXP HAHA" confidence="0.98"/>
   </rhyme>
 </head>
 <body>
@@ -10786,7 +10786,7 @@ Og kan ei samle meer de sønderhugne Led,
   <source pages="265-266"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABBACDDC EXXEFDDC AGGAFDDC AHHACDDC AIIACDDC" confidence="0.98"/>
+    <analysis pattern="XAAXBCCB DXXDECCB FGGFECCB HIIHBCCB JKKJBCCB" confidence="0.97"/>
   </rhyme>
 </head>
 <body>
@@ -10852,7 +10852,7 @@ Er lutter tappre Mænd ombord.
   <source pages="266-267"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABCB AAXA CACA" confidence="0.97"/>
+    <analysis pattern="ABXB AAXA XAXA" confidence="0.88"/>
   </rhyme>
 </head>
 <body>
@@ -11100,7 +11100,7 @@ Paany fortryllet, flyer til dig!
   <source pages="271-272"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABAB CXCX DEDE XBBB" confidence="0.93"/>
+    <analysis pattern="ABAB CXCX DXDX EFEF" confidence="0.91"/>
   </rhyme>
 </head>
 <body>
@@ -11141,7 +11141,7 @@ Paa Baalet, som jeg selv mig tændte!
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="272"/>
   <rhyme>
-    <analysis pattern="AABB CCDD EEFF GGHH" confidence="1.00"/>
+    <analysis pattern="AABB CCDD EEFF GGXX" confidence="0.96"/>
   </rhyme>
 </head>
 <body>
@@ -11182,7 +11182,7 @@ Er du fjern, tone Sorg, tone Lyst, er du nær.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="273"/>
   <rhyme>
-    <analysis pattern="ABAB CACA" confidence="1.00"/>
+    <analysis pattern="ABAB CDCD" confidence="1.00"/>
   </rhyme>
 </head>
 <body>
@@ -11249,7 +11249,7 @@ Undtagen dem af Himlens Vinde?
   <source pages="274"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="XXXXX ABXAB XCDDC" confidence="0.84"/>
+    <analysis pattern="XXAAX BCXBC XDEED" confidence="0.88"/>
   </rhyme>
 </head>
 <body>
@@ -11288,7 +11288,7 @@ Saa sødt, som de har skuffet mig.
   <source pages="274-276"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABXB CDAD CXCX XEAE FGEG XXFA AHAH XXAC AIAI AJFJ" confidence="0.93"/>
+    <analysis pattern="XAXA XBCB XXXX XDXD EFDF XGEG XHCH XIXI XJXJ XKEK" confidence="0.86"/>
   </rhyme>
 </head>
 <body>
@@ -11359,7 +11359,7 @@ O, Cara! er der Tegn til Liv?
   <source pages="276"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="AABAABCC AADAADEE" confidence="1.00"/>
+    <analysis pattern="AABCCBDD EEFGGFHH" confidence="1.00"/>
   </rhyme>
 </head>
 <body>
@@ -11467,7 +11467,7 @@ Og roe deres hvide Kanoe.
   <source pages="278-279"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABAB ACAC AAAA XDXD EEEF AGAG HXHX EFEX EXEX" confidence="0.93"/>
+    <analysis pattern="ABAB CDCD EFEF GHGH IEIE JKJK LXLX XXXX MXMX" confidence="0.92"/>
   </rhyme>
 </head>
 <body>
@@ -11533,7 +11533,7 @@ Og saadan - kysser jeg din Mund.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="280"/>
   <rhyme>
-    <analysis pattern="ABAB CBCB XBXB" confidence="0.94"/>
+    <analysis pattern="ABAB CDCD XXXX" confidence="0.88"/>
   </rhyme>
 </head>
 <body>
@@ -11569,7 +11569,7 @@ Du har jo lært mig det i Mørke!''
   <source pages="280-281"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABCBXDXDBBBB AEXECBXBBBBB XBABXFXFBBBB" confidence="0.93"/>
+    <analysis pattern="ABCBXDXDEFGF AHXHCIXIEFGF XJAJXKXKEFGF" confidence="0.93"/>
   </rhyme>
 </head>
 <body>
@@ -11629,7 +11629,7 @@ Med eet: o Gud tilgive dig!
   <source pages="282-283"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="AAXX BBCCDDEEFFGGHHEEII XXEEJJKKJJ" confidence="0.96"/>
+    <analysis pattern="AAXX BBCCDDEEFFGGHHFFII JJKKLLMMLL" confidence="0.98"/>
   </rhyme>
 </head>
 <body>
@@ -11685,7 +11685,7 @@ Saasnart han siger Sandhed til dig!
   <source pages="283"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="XXAX BBAC BBAC DDAX" confidence="0.91"/>
+    <analysis pattern="XXAX BBAC DDAC EEAX" confidence="0.91"/>
   </rhyme>
 </head>
 <body>
@@ -11726,7 +11726,7 @@ End duftende Roser og selv dine Kys!
   <source pages="284-285"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="AABCDBECDE XXFGHFEGHE IIBJJBEJJE" confidence="0.98"/>
+    <analysis pattern="AABCDBECDE XXFGHFEGHE IIJKKJEKKE" confidence="0.98"/>
   </rhyme>
 </head>
 <body>
@@ -11780,7 +11780,7 @@ Skulde just sige Nei til sin Beiler - o Fanny!
   <source pages="285-286"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="AAAABXBXBCBC ADADAEAEBCBC" confidence="0.97"/>
+    <analysis pattern="ABABCXCXDEDE FGFGHIHIDEDE" confidence="0.97"/>
   </rhyme>
 </head>
 <body>
@@ -11827,7 +11827,7 @@ Men gjem blot Taarerne til mig!
   <source pages="286"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="AABBBB CCBDDB BBBEEB" confidence="1.00"/>
+    <analysis pattern="AABXXB CCBDDB EEBFFB" confidence="0.96"/>
   </rhyme>
 </head>
 <body>
@@ -11912,7 +11912,7 @@ Eet Himmellegeme mere, du!
   <source pages="287-288"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="AXAXBCBC DEDEFXFX" confidence="0.91"/>
+    <analysis pattern="ABABCDCD EFEFGHGH" confidence="1.00"/>
   </rhyme>
 </head>
 <body>
@@ -11951,7 +11951,7 @@ Før jaged Ingen der.
   <source pages="288"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="AABBBB CCDADA" confidence="1.00"/>
+    <analysis pattern="AABCBC DDEFEF" confidence="1.00"/>
   </rhyme>
 </head>
 <body>
@@ -11986,7 +11986,7 @@ Være hos dig! Hvis Forandring,
   <source pages="289"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="AXAXBBCD AEAEXXCD" confidence="0.91"/>
+    <analysis pattern="ABABCCDE FGFGHHDE" confidence="1.00"/>
   </rhyme>
 </head>
 <body>
@@ -12103,7 +12103,7 @@ Som Dag og Nat for Damernes, hvad var for Engle vi!
   <source pages="291"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABABCDCDABAB XDXDDEDEABAB" confidence="0.97"/>
+    <analysis pattern="ABABCDCDABAB XEXEXFXFABAB" confidence="0.94"/>
   </rhyme>
 </head>
 <body>
@@ -12150,7 +12150,7 @@ Naar det er sødest, døer det.
   <source pages="292"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="AABXBCCB CCDDEFFE BBGGHHCCIXXI" confidence="0.96"/>
+    <analysis pattern="AABBBCCB CCDDEFFE BBGGHHCCIXXI" confidence="0.98"/>
   </rhyme>
 </head>
 <body>
@@ -12202,7 +12202,7 @@ Langt mere end hans egen den klædte ham godt.
   <source pages="293"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABABCXCXABAB XCXCDEDEABAB" confidence="0.94"/>
+    <analysis pattern="ABABCXCXABAB DCDCEFEFABAB" confidence="0.97"/>
   </rhyme>
 </head>
 <body>
@@ -12249,7 +12249,7 @@ Og nød som sin hver Frugt.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="294"/>
   <rhyme>
-    <analysis pattern="AAXXX BBCCB" confidence="0.90"/>
+    <analysis pattern="AABBA CCDDC" confidence="1.00"/>
   </rhyme>
 </head>
 <body>
@@ -12325,7 +12325,7 @@ Og som Natten vor Død nærmes hellig og mild.
   <source pages="295-296"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABABCDCDEBFB DGXGHXHXEBFB" confidence="0.96"/>
+    <analysis pattern="AXABCDCDEBFB DXXXGXGXEBFB" confidence="0.91"/>
   </rhyme>
 </head>
 <body>
@@ -12372,7 +12372,7 @@ Har at elske de Læber, som komme os nær!
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="296-297"/>
   <rhyme>
-    <analysis pattern="XAXAXBXBCDEED FBFBGHGHCDIID XJXJKLKLCDEED" confidence="0.95"/>
+    <analysis pattern="XAXAXBXBCDEED FGFGHIHICDJJD XKXKLMLMCDEED" confidence="0.95"/>
   </rhyme>
 </head>
 <body>
@@ -12435,7 +12435,7 @@ Som varmer dine Blik, o Nora Creina.
   <source pages="297-299"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABABCXCD EXEXFGFG XHXHIJIJ BKBKJLJL XDDDMNMN OPOPCQCQ" confidence="0.96"/>
+    <analysis pattern="ABABCDCD EXEXFGFG XHXHIJIJ BKBKJLJL XDDDMNMN OPOPCQCQ" confidence="0.96"/>
   </rhyme>
 </head>
 <body>
@@ -12510,7 +12510,7 @@ Til Bod er jeg svøbt i dit Haar.
   <source pages="299-300"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="AAAABCBC DEDEFGFG XCXCHCHC IGIGJCJC" confidence="0.98"/>
+    <analysis pattern="AAAAXXXX BCBCDEDE XFXFGHGH IEIEJKJK" confidence="0.93"/>
   </rhyme>
 </head>
 <body>
@@ -12593,7 +12593,7 @@ Og ingen Snak meer om saa lidt!
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="301"/>
   <rhyme>
-    <analysis pattern="ABAB CDCD" confidence="1.00"/>
+    <analysis pattern="XAXA BCBC" confidence="0.91"/>
   </rhyme>
 </head>
 <body>
@@ -12625,7 +12625,7 @@ Er Livets Sol alt gaaet bort!
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="301-302"/>
   <rhyme>
-    <analysis pattern="ABCB DXDX CECE CFCF AGDG CFCF" confidence="0.97"/>
+    <analysis pattern="ABXB CDCD XEXE FGFG AHCH XGXG" confidence="0.93"/>
   </rhyme>
 </head>
 <body>
@@ -12676,7 +12676,7 @@ End hører jeg det suse:
   <source pages="302-303"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="AA BB CC DD XX CC BB EE FF CC EE BB BB BB BB" confidence="0.98"/>
+    <analysis pattern="AA BB CC DD XX EE XX FF GG HH FF II BB JJ GG" confidence="0.95"/>
   </rhyme>
 </head>
 <body>
@@ -12742,7 +12742,7 @@ Naar, om ei Mennesker, saa Dyrene dog klage.
   <source pages="304-305"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="AA BB BB BB XX BB BB XX BB BB BB CC" confidence="0.94"/>
+    <analysis pattern="AA BB CC DD XX EE FF XX CC GG HH II" confidence="0.94"/>
   </rhyme>
 </head>
 <body>
@@ -12925,7 +12925,7 @@ Spøger med Kjærligheds Smerter.
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="307-308"/>
   <rhyme>
-    <analysis pattern="ABAB CXCX AXAX DEDE DFDF AGAG DHDH AXAX AIAI" confidence="0.94"/>
+    <analysis pattern="ABAB CXCX DEDE FGFG HIHI JKJK LMLM NXNX OPOP" confidence="0.96"/>
   </rhyme>
 </head>
 <body>
@@ -12991,7 +12991,7 @@ Seer den fra sin Sky.
   <source pages="309-311"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABAB CDAD EFGF CHAH AAXA XXIX EJIJ EDAD EKCK LFHF GEAE LMEM ANAN AOCO" confidence="0.98"/>
+    <analysis pattern="XAXA BCXC XDED BFGF XHXH XXIX XJIJ XCXC XKBK LDFD EMGM LNXN XOXO XPBP" confidence="0.89"/>
   </rhyme>
 </head>
 <body>
@@ -13082,7 +13082,7 @@ Glad ved Livet, uden Frygt.''''
   <source pages="311-312"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABBA CDCD EFFE EGGE HEHE DDDD IDDI XDEE EBEX JJKK LLII MDMD" confidence="0.99"/>
+    <analysis pattern="ABBA CDCD EFFE EGGE HEHE IIJJ DKKD LLEE EXEX MMNN OODD IPIP" confidence="0.99"/>
   </rhyme>
 </head>
 <body>
@@ -13163,7 +13163,7 @@ Hvis ikke, bliv ude!
   <source pages="313"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABAB ACAC DXDX EFEF" confidence="0.96"/>
+    <analysis pattern="ABAB CDCD EXEX FGFG" confidence="0.96"/>
   </rhyme>
 </head>
 <body>
@@ -13204,7 +13204,7 @@ Har dræbt en enkelt Nattergal.
   <source pages="313-315"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABABC XBXBC XDXDC EBEBC FBFBC GHGHC IDIDC ABXBC" confidence="0.96"/>
+    <analysis pattern="ABABC XXXXC DEDEC FGFGC HIHIC JKJKC LELEC AXXXC" confidence="0.94"/>
   </rhyme>
 </head>
 <body>
@@ -13276,7 +13276,7 @@ Tilsidst maa det dog fremad rykke:
   <source pages="315-316"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABAB XBXB CDCD DXXE XEXE XBXB XFXF GHGH" confidence="0.89"/>
+    <analysis pattern="ABAB CDCD EFEF GXGH XHXH XIXI XJXJ KLKL" confidence="0.92"/>
   </rhyme>
 </head>
 <body>
@@ -13334,7 +13334,7 @@ Tilbede kun Naturens Gud.
   <source pages="316-318"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABXB BCXC ABBB DCBC BCBC CCCC BECE DCCC BFXF AGCG CBAB EFCF XCCC" confidence="0.97"/>
+    <analysis pattern="ABXB XCXC ADXD EFXF XGXG XHIH XJXJ EKXK XLXL AIXI MBAB JLKL XMXM" confidence="0.89"/>
   </rhyme>
 </head>
 <body>
@@ -13420,7 +13420,7 @@ Gaae paa Gangene og lytte.
   <source pages="318-320"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="AABB AACC AADD EEFF AAXB AAXX AAGG AAHH IIDD AAJJ" confidence="0.97"/>
+    <analysis pattern="AABB CCDD EEFF XXGG HHXB IIXX HHJJ DDKK LLFF MMNN" confidence="0.96"/>
   </rhyme>
 </head>
 <body>
@@ -13491,7 +13491,7 @@ For en Faareost sat i Pant. <!-- Ulæselig faksimile, men Samlede Digte (1877), 
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="320-322"/>
   <rhyme>
-    <analysis pattern="ABCB DEFE XGXG FHXH IHJH FXKL JMAX XHMH DCXC NOLO XPCP XBXB IXQQ XHFK XNXN XRXR DFSSR" confidence="0.92"/>
+    <analysis pattern="ABCB DEFE XGXG FHXH IHJH FXKL JMAX XHMH DCXC XNLN XXCX XBXB IXOO XHFK XPXP XQXQ DFRRQ" confidence="0.90"/>
   </rhyme>
 </head>
 <body>
@@ -13598,7 +13598,7 @@ Som før: ,,,,Nei, vi er Syv!''''
   <source pages="323-325"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABXB CCCC DABA ABXB BACA CBBB CBBB CBCB CCDC BACA XBCB XBXB CBXB BCXC CABA" confidence="0.96"/>
+    <analysis pattern="ABXB XCDC EAXA AFXF XAXA GHXH XIXI JKXK GJEJ XAXA XFDF XLXL XMXM XXXA XAXA" confidence="0.87"/>
   </rhyme>
 </head>
 <body>
@@ -13692,7 +13692,7 @@ Ved Midnatstid i Byen.
   <source pages="325-326"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="XAXA XBXB XCCC XDXD XCXC XCXC" confidence="0.84"/>
+    <analysis pattern="XAXA XBXB XCXC XDXD XEXE XFXF" confidence="0.83"/>
   </rhyme>
 </head>
 <body>
@@ -13747,7 +13747,7 @@ Saa heed, saa strid af Smerte.
   <source pages="326-333"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="AABA CC BC DC DC XC XC EFEF GFHF XFXF XFXF IFHF EFEF AGAG XHCH AAAA JKLXADAKKXMKBKAAKD AAAA AABA BAXA KNAN BHAN BAMN OXBN PXKN AAQABBQJKKHKKAAXII NPND AAAA AEGA AKKK OAK AAAKK XLXL XRXR AAAAAAAA" confidence="0.96"/>
+    <analysis pattern="XABA CC BC DC DC XC XC EFEF GFHF IFXF XFXF JFHF EFEF KGKG XHCH AALL MNOXMDXXXXPXBXXBXD EQCQ RRBR BSXS XTXT BHCT BXPT UVBT WXXT XQXQBBXMYYHZZVVXJJ TWTD A27XA27A27 XEGA27 XA28XA28 UMA29 XA30A30NA29 XOA31O XA32XA32 IIXIXIXA31" confidence="0.92"/>
   </rhyme>
 </head>
 <body>
@@ -14035,7 +14035,7 @@ Min Hvile - o hvor fri og stolt!
   <source pages="333-335"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABBB CDED DCCC CEEE XEXE EBEB XBBB XAXX XXXXFAXXDXXFXB" confidence="0.89"/>
+    <analysis pattern="ABXB CDXD DCCC CEXE XFXF XGXG XHXH XAXX XXXGIAXXDXXIXA" confidence="0.85"/>
   </rhyme>
 </head>
 <body>
@@ -14115,7 +14115,7 @@ Engang i hede Helvede.
   <source pages="335-336"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABAB XBXB XCXC BBDD XBXB" confidence="0.90"/>
+    <analysis pattern="ABAB XCXC XDXD EEFF XGXG" confidence="0.90"/>
   </rhyme>
 </head>
 <body>
@@ -14188,7 +14188,7 @@ Fordoblet dine Dage.
   <source pages="339-343"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <rhyme>
-    <analysis pattern="ABAB ACAC AAAA CACA ADAD AAAA DDDD ADAD DADA CAEA AAAA BAFA DADA ABAB ADAD AGAG AAAA HDHD CACA BDFD DDDD DADA DCDC ABAB ABAB ACAC CAEA BABA AEAE" confidence="1.00"/>
+    <analysis pattern="XAXA BCBC DEDE CXCX FGFG DHDH IJIJ KLKL MNMN COFO PQPQ ARSR MTMT UAUA VWVW XYXY PQPQ ZA27ZA27 CKCK AA28SA28 A29A30A29A30 XTXT A31CA31C TATA A32AA32A A33CA33C CXFX AA34AA34 XFXF" confidence="0.97"/>
   </rhyme>
 </head>
 <body>
@@ -14351,7 +14351,7 @@ Var ei min Søn, men var en Fremmed.''
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <source pages="343-344"/>
   <rhyme>
-    <analysis pattern="ABAB CBXB BDBD DBCB BABA ABAB BBBB AEDE BBBB AEBE" confidence="0.99"/>
+    <analysis pattern="XAXA BCXC XDXD DEBE XFXF XGXG XHXH XIDI XJXJ XIXI" confidence="0.86"/>
   </rhyme>
 </head>
 <body>
