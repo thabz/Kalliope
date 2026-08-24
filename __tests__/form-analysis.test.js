@@ -100,6 +100,70 @@ describe('klassifikation af sonetter', () => {
   });
 });
 
+describe('klassifikation af andre poetiske former', () => {
+  const confidence = (result, pattern) => result.analyses
+    .find(analysis => analysis.pattern === pattern).confidence;
+
+  test.each([
+    ['terza-rima', '3-3-3-2', 'ABA BCB CDC DD', 'iambic-pentameter'],
+    ['ottava-rima', '8-8', 'ABABABCC DEDEDEFF', 'hendecasyllabic'],
+    ['rime-royal', '7-7', 'ABABBCC DEDEEFF', 'iambic-pentameter'],
+    ['ballad-stanza', '4-4-4', 'ABCB DEFE GHGH', 'iambic-trimeter'],
+    ['knittelvers', '4-4', 'AABB CCDD', 'iambic-tetrameter'],
+  ])('identificerer %s ud fra struktur, rim og metrik',
+    (pattern, structurePattern, rhymePattern, metrePattern) => {
+      const result = classifyPoeticForm(signals({
+        metre: [{ pattern: metrePattern, confidence: 0.91 }],
+        rhyme: { pattern: rhymePattern, confidence: 0.96 },
+        structure: { pattern: structurePattern, confidence: 1 },
+        syllables: [],
+      }));
+
+      expect(confidence(result, pattern)).toBeGreaterThanOrEqual(0.9);
+      expect(result.formSignals[pattern].length).toBeGreaterThan(0);
+    });
+
+  it('identificerer distika ud fra gentagne tolinjede strofer', () => {
+    const result = classifyPoeticForm(signals({
+      metre: [],
+      rhyme: { pattern: 'XX XX XX', confidence: 0.45 },
+      structure: { pattern: '2-2-2', confidence: 1 },
+      syllables: [],
+    }));
+
+    expect(confidence(result, 'distich')).toBeGreaterThanOrEqual(0.8);
+  });
+
+  it('identificerer quatrains ud fra gentagne firelinjede strofer', () => {
+    const result = classifyPoeticForm(signals({
+      metre: [],
+      rhyme: { pattern: 'XXXX XXXX', confidence: 0.45 },
+      structure: { pattern: '4-4', confidence: 1 },
+      syllables: [],
+    }));
+
+    expect(confidence(result, 'quatrain')).toBeGreaterThanOrEqual(0.8);
+  });
+
+  it('kræver både jambisk pentameter og fravær af enderim for blankvers', () => {
+    const blank = classifyPoeticForm(signals({
+      metre: [{ pattern: 'iambic-pentameter', confidence: 0.93 }],
+      rhyme: { pattern: 'XXXXXXXXXXXX', confidence: 0.45 },
+      structure: { pattern: '12', confidence: 1 },
+      syllables: [],
+    }));
+    const rhymed = classifyPoeticForm(signals({
+      metre: [{ pattern: 'iambic-pentameter', confidence: 0.93 }],
+      rhyme: { pattern: 'ABABCDCDEFEF', confidence: 0.95 },
+      structure: { pattern: '12', confidence: 1 },
+      syllables: [],
+    }));
+
+    expect(confidence(blank, 'blank-verse')).toBeGreaterThanOrEqual(0.9);
+    expect(confidence(rhymed, 'blank-verse')).toBeLessThan(0.8);
+  });
+});
+
 describe('formanalyse i XML og CLI', () => {
   it('gemmer både overordnet form og en sikker subtype', () => {
     const result = analyzeWorkXml(workXml(), { minConfidence: 0.8 });
@@ -107,6 +171,26 @@ describe('formanalyse i XML og CLI', () => {
     expect(result.xml).toContain('<form>');
     expect(result.xml).toContain('pattern="sonnet" confidence="0.99"');
     expect(result.xml).toContain('pattern="petrarchan-sonnet" confidence="0.99"');
+  });
+
+  it('gemmer kun den valgte nye form', () => {
+    const xml = workXml({ pattern: 'ABABABCC DEDEDEFF' })
+      .replace('pattern="4-4-3-3"', 'pattern="8-8"')
+      .replace('pattern="iambic-pentameter"', 'pattern="hendecasyllabic"');
+    const result = analyzeWorkXml(xml, { form: 'ottava-rima', minConfidence: 0.8 });
+
+    expect(result.xml).toContain('pattern="ottava-rima"');
+    expect(result.xml).not.toContain('pattern="sonnet"');
+  });
+
+  it('gemmer både en specifik form og dens strukturelle overkategori', () => {
+    const xml = workXml({ pattern: 'ABCB DEFE GHGH' })
+      .replace('pattern="4-4-3-3"', 'pattern="4-4-4"')
+      .replace('pattern="iambic-pentameter"', 'pattern="iambic-trimeter"');
+    const result = analyzeWorkXml(xml, { minConfidence: 0.8 });
+
+    expect(result.xml).toContain('pattern="ballad-stanza"');
+    expect(result.xml).toContain('pattern="quatrain"');
   });
 
   it('overskriver aldrig eksisterende formmetadata', () => {
@@ -135,6 +219,12 @@ describe('formanalyse i XML og CLI', () => {
       poet: 'digter',
       work: null,
     });
+  });
+
+  it('accepterer de nye former som CLI-filter', () => {
+    expect(parseArgs(['--find', 'terza-rima']).form).toBe('terza-rima');
+    expect(parseArgs(['--form', 'blank-verse']).form).toBe('blank-verse');
+    expect(parseArgs(['--form', 'knittelvers']).form).toBe('knittelvers');
   });
 
   it('viser find-resultater sorteret og ændrer ikke XML', () => {

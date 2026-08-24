@@ -24,12 +24,24 @@ const analysisElements = (head, name) => {
 
 const normalizePath = filename => filename.replace(/\\/g, '/').replace(/^\.\//, '');
 
+export const supportedForms = new Set([
+  'sonnet',
+  'terza-rima',
+  'ottava-rima',
+  'rime-royal',
+  'ballad-stanza',
+  'distich',
+  'quatrain',
+  'blank-verse',
+  'knittelvers',
+]);
+
 export const parseArgs = (args = process.argv.slice(2)) => {
   const options = {
     debug: false,
     dryRun: false,
     find: null,
-    form: 'sonnet',
+    form: null,
     minConfidence: 0.8,
     onlyMissing: false,
     poet: null,
@@ -59,13 +71,17 @@ export const parseArgs = (args = process.argv.slice(2)) => {
       options.minConfidence < 0 || options.minConfidence > 1) {
     throw new Error('--min-confidence skal være et tal mellem 0 og 1.');
   }
-  if (options.form !== 'sonnet' || (options.find != null && options.find !== 'sonnet')) {
-    throw new Error('Første version understøtter kun formen sonnet.');
+  if ((options.form != null && supportedForms.has(options.form) !== true) ||
+      (options.find != null && supportedForms.has(options.find) !== true)) {
+    throw new Error(`Ukendt form. Understøttede former: ${[...supportedForms].join(', ')}.`);
   }
   if (options.poet != null && options.work != null) {
     throw new Error('--poet og --work kan ikke bruges samtidig.');
   }
-  if (options.find != null) options.dryRun = true;
+  if (options.find != null) {
+    options.dryRun = true;
+    options.form = options.find;
+  }
   return options;
 };
 
@@ -133,17 +149,26 @@ const analyzeTextXml = (textXml, language, options) => {
   const existingForm = directChildren(head, 'form').length > 0;
   const sourceAnalyses = computedSignals(head, poetryBlocks, language);
   const result = classifyPoeticForm(sourceAnalyses);
+  const requestedForm = options.form ?? null;
   const analyses = result.analyses.filter(analysis =>
     analysis.confidence > 0 &&
     analysis.confidence >= options.minConfidence &&
-    (analysis.pattern === 'sonnet' || analysis.pattern.endsWith('-sonnet')));
+    (requestedForm == null || (requestedForm === 'sonnet'
+      ? analysis.pattern === 'sonnet' || analysis.pattern.endsWith('-sonnet')
+      : analysis.pattern === requestedForm)));
   const sonnet = result.analyses.find(analysis => analysis.pattern === 'sonnet');
+  const selected = requestedForm == null
+    ? result.analyses[0]
+    : result.analyses.find(analysis => analysis.pattern === requestedForm);
+  const selectedForm = requestedForm ?? selected.pattern;
   const report = {
     analyses,
     existingForm,
     formXml: analyses.length > 0 ? formatFormXml(analyses) : null,
     result,
+    selectedForm,
     sourceAnalyses,
+    formConfidence: selected?.confidence ?? 0,
     sonnetConfidence: sonnet.confidence,
     status: existingForm ? 'existing-form' : analyses.length > 0 ? 'proposed' : 'below-threshold',
     textId: text.getAttribute('id') || '(uden id)',
@@ -181,13 +206,19 @@ export const analyzeWorkXml = (xml, options = {}) => {
 };
 
 const formatExplanation = report => {
+  const explanationForm = report.selectedForm.endsWith('-sonnet')
+    ? 'sonnet'
+    : report.selectedForm;
+  const explanationSignals = report.result.formSignals[explanationForm] ?? [];
   const lines = [
-    `SONNET: ${report.sonnetConfidence.toFixed(2)}`,
+    `${report.selectedForm.toUpperCase()}: ${report.formConfidence.toFixed(2)}`,
     '',
-    ...report.result.signals.map(signal =>
+    ...explanationSignals.map(signal =>
       `${signal.contribution >= 0 ? '+' : '-'} ${signal.description}`),
   ];
-  const subtype = report.analyses.find(analysis => analysis.pattern !== 'sonnet');
+  const subtype = report.selectedForm === 'sonnet'
+    ? report.analyses.find(analysis => analysis.pattern !== 'sonnet')
+    : null;
   if (subtype != null) {
     lines.push('', 'Subtype:', `${subtype.pattern}: ${subtype.confidence.toFixed(2)}`);
   }
@@ -218,12 +249,12 @@ export const run = (args = process.argv.slice(2), rootDir = process.cwd()) => {
   });
 
   const candidates = reports
-    .filter(report => report.sonnetConfidence >= options.minConfidence)
-    .sort((left, right) => right.sonnetConfidence - left.sonnetConfidence ||
+    .filter(report => report.formConfidence >= options.minConfidence)
+    .sort((left, right) => right.formConfidence - left.formConfidence ||
       left.filename.localeCompare(right.filename) || left.textId.localeCompare(right.textId));
   if (options.find != null) {
     candidates.forEach(report => console.log(
-      `${report.sonnetConfidence.toFixed(2)}  ${report.filename} (${report.textId})`,
+      `${report.formConfidence.toFixed(2)}  ${report.filename} (${report.textId})`,
     ));
   } else {
     candidates.forEach(report => {

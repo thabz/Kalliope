@@ -296,8 +296,9 @@ historiske id-formater fortsat kan bevares uændret.
 ### Automatisk formklassifikation
 
 Formklassifikatoren kombinerer de uafhængige analyser af struktur, rim, metrik
-og stavelsesantal. Første version genkender sonetter samt petrarcanske og
-shakespeareske undertyper:
+og stavelsesantal. Den genkender sonetter samt petrarcanske og shakespeareske
+undertyper, terza rima, ottava rima, rime royal, balladestrofer, distika,
+quatrains, blankvers og knittelvers:
 
 ```xml
 <form>
@@ -311,14 +312,30 @@ strofegrænser sænker sikkerheden uden automatisk at diskvalificere digtet, og
 undertypen udelades, når kun den overordnede form er sikker. Eksisterende
 `<form>` betragtes som manuelt kurateret og overskrives aldrig.
 
+De specifikke rimformer kræver deres karakteristiske lokale rimskema og
+strofestruktur. Distikon og quatrain beskriver derimod først og fremmest den
+observerede strofestruktur og kan derfor foreslås uden enderim. Blankvers kræver
+både jambisk pentameter og fravær af systematisk enderim. Knittelvers kræver
+parrim og et sikkert firefodsmål. Rimanalysen klassificerer hver strofe lokalt;
+et terza-rima-gæt kan derfor genkende `ABA`-terzetterne, men ikke i sig selv
+bevise rimkæden mellem to nabostrofer.
+
 Værktøjet kan skrive forslag, vise en forklaring eller blot finde kandidater:
 
 ```sh
 npm run analyse-form -- --only-missing
-npm run analyse-form -- --form sonnet --min-confidence 0.80
+npm run analyse-form -- --form ottava-rima --min-confidence 0.80
 npm run analyse-form -- --dry-run --debug
-npm run analyse-form -- --find sonnet
+npm run analyse-form -- --find blank-verse
 ```
+
+Uden `--form` vurderes og gemmes alle sikre former; en balladestrofe kan derfor
+også få den bredere klassifikation `quatrain`. `--form` begrænser både søgning
+og foreslået XML til det valgte mønster.
+
+De understøttede mønsternavne er `sonnet`, `terza-rima`, `ottava-rima`,
+`rime-royal`, `ballad-stanza`, `distich`, `quatrain`, `blank-verse` og
+`knittelvers`.
 
 En samlet, skrivebeskyttet rapport for ét digt-id viser alle delanalyser og den
 resulterende formklassifikation:

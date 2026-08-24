@@ -24,7 +24,12 @@ const formattedAnalyses = analyses => analyses.length === 0
 
 export const formatPoeticFormReport = ({ filename, report, rootDir }) => {
   const source = report.sourceAnalyses;
-  const formAnalyses = report.result.analyses.filter(analysis => analysis.confidence > 0);
+  const formAnalyses = report.result.analyses.filter(analysis => analysis.confidence >= 0.5);
+  const strongestForm = formAnalyses[0] ?? report.result.analyses[0];
+  const explanationForm = strongestForm.pattern.endsWith('-sonnet')
+    ? 'sonnet'
+    : strongestForm.pattern;
+  const explanationSignals = report.result.formSignals[explanationForm] ?? [];
   const lines = [
     `Digt: ${report.textId}`,
     `Værk: ${normalizePath(path.relative(path.join(rootDir, 'fdirs'), filename))}`,
@@ -49,7 +54,8 @@ export const formatPoeticFormReport = ({ filename, report, rootDir }) => {
     ...formattedAnalyses(formAnalyses),
     '',
     'BEGRUNDELSE',
-    ...report.result.signals.map(signal =>
+    `  ${strongestForm.pattern}`,
+    ...explanationSignals.map(signal =>
       `  ${signal.contribution >= 0 ? '+' : '-'} ${signal.description}`),
   ];
   if (report.existingForm === true) lines.push('', 'Eksisterende <form> er bevaret.');
