@@ -84,7 +84,8 @@ const formatReport = (filename, report, debug) => {
   const lines = [filename, `Detected rhyme scheme: ${result.pattern}`, `Confidence: ${result.confidence.toFixed(2)}`];
   if (debug) result.lines.forEach((line, index) => {
     const ending = result.endings[index];
-    lines.push(`${String(index + 1).padStart(2, '0')}  ${line}  -> ${ending.signature ?? '-'} [${result.methods[index]}, ${ending.gender ?? '-'}]`);
+    const rules = ending.rules?.length > 0 ? `; ${ending.rules.join(', ')}` : '';
+    lines.push(`${String(index + 1).padStart(2, '0')}  ${line}  -> ${ending.signature ?? '-'} [${result.methods[index]}, ${ending.gender ?? '-'}${rules}]`);
   });
   return lines.join('\n');
 };

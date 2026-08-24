@@ -41,12 +41,26 @@ describe('rhyme analysis', () => {
     const result = analyzeRhyme([['formilde', 'Lille']], { minConfidence: 0 });
 
     expect(result.pattern).toBe('AA');
+    expect(result.endings[0].rules).toEqual(expect.arrayContaining(['ld→ll før svagt e']));
   });
 
   test('normalizes historical g/t and aaer spellings', () => {
     const result = analyzeRhyme([['strakt', 'foragt', 'staaer', 'Haar']], { minConfidence: 0 });
 
     expect(result.pattern).toBe('AABB');
+  });
+
+  test('keeps stressed -aven apart from Ven and igjen', () => {
+    const result = analyzeRhyme([['Graven', 'Ven', 'igjen', 'Paradishaven']], { minConfidence: 0 });
+
+    expect(result.pattern).toBe('ABBA');
+  });
+
+  test('keeps orthographic fallback out of rhyme classes', () => {
+    const result = analyzeRhyme([['qz', 'qz']], { minConfidence: 0 });
+
+    expect(result.pattern).toBe('XX');
+    expect(result.methods).toEqual(['unanalysable', 'unanalysable']);
   });
 
   test('does not overwrite existing rhyme metadata', () => {
