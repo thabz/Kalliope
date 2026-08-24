@@ -11,7 +11,7 @@ const phonetic = word => {
     ['ck', 'k'], ['dt', 't'], ['gh', 'g'], ['aae', 'åe'], ['oe', 'ø'], ['ae', 'æ'],
     ['aa', 'å'], ['c', 'k'], ['x', 'ks'], ['z', 's'],
   ].forEach(([from, to]) => { value = value.replaceAll(from, to); });
-  return value.replaceAll('æ', 'e');
+  return value.replaceAll(/ld(?=e)/gu, 'll').replaceAll('æ', 'e');
 };
 
 export const cleanRhymeWord = line => (line.match(WORD) ?? []).at(-1) ?? null;

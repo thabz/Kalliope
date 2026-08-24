@@ -37,6 +37,12 @@ describe('rhyme analysis', () => {
     expect(result.pattern).toBe('AABB');
   });
 
+  test('normalizes silent d before a weak e', () => {
+    const result = analyzeRhyme([['formilde', 'Lille']], { minConfidence: 0 });
+
+    expect(result.pattern).toBe('AA');
+  });
+
   test('does not overwrite existing rhyme metadata', () => {
     const xml = `<kalliopework><workbody><text id="x"><head><rhyme><analysis pattern="ABBA" confidence="0.91"/></rhyme></head><body><poetry>land
 strand
