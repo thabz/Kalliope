@@ -1,14 +1,9 @@
-import { poetryStanzasFromXml } from './metre-analysis.js';
+import { bestCandidatePair, endingCandidates, loadRhymeModel } from './rhyme-model.js';
 
 const WORD = /[\p{L}]+(?:['’][\p{L}]+)?/gu;
 const VOWELS = 'aeiouyæøå';
 const clamp = value => Math.max(0, Math.min(1, value));
 
-// Enderim vurderes fra sidste trykstærke vokal til ordets slutning. Se
-// https://ordnet.dk/ddo/ordbog/11011302 ("enderim"). Stavningen alene er
-// derfor ikke tilstrækkelig, især ikke i historiske danske tekster; se også
-// https://ordnet.dk/ods/hjaelp/lydskrift/ og
-// https://www.dansksproghistorie.dk/42/.
 const HISTORICAL_SUBSTITUTIONS = [
   ['sch', 'sk', 'sch→sk'], ['ph', 'f', 'ph→f'], ['th', 't', 'th→t'],
   ['ch', 'k', 'ch→k'], ['qu', 'kv', 'qu→kv'], ['ck', 'k', 'ck→k'],
@@ -39,7 +34,7 @@ const normalizeHistoricalDanish = word => {
 
 export const cleanRhymeWord = line => (line.match(WORD) ?? []).at(-1) ?? null;
 
-const endingForWord = word => {
+const bootstrapEnding = word => {
   if (word == null) return { signature: null, method: 'unanalysable', gender: null, rules: [] };
   const normalized = normalizeHistoricalDanish(word);
   const { value } = normalized;
@@ -48,76 +43,134 @@ const endingForWord = word => {
   if (vowelIndexes.length === 0) {
     return { signature: null, method: 'unanalysable', gender: null, rules: [] };
   }
-  const lastVowel = vowelIndexes.at(-1);
-  // Final e is normally a weak schwa in Danish.  This also covers the
-  // common inflectional ending -er: skuer/luer must not rhyme merely because
-  // their spelling ends like ranker/banker.
   const weakEn = value.endsWith('en') && vowelIndexes.length > 1 &&
-    !HISTORICAL_EXCEPTIONS_WITH_FINAL_STRESS.has(value);
-  const weakEnding = value.endsWith('e') || value.endsWith('er') || weakEn;
+    HISTORICAL_EXCEPTIONS_WITH_FINAL_STRESS.has(value) === false;
+  const weakEnding = value.endsWith('e') || value.endsWith('er') || value.endsWith('et') ||
+    value.endsWith('ed') || value.endsWith('end') || weakEn;
   if (weakEnding) normalized.rules.push('svag slutendelse');
-  const nucleus = weakEnding && vowelIndexes.length > 1
+  let nucleus = weakEnding && vowelIndexes.length > 1
     ? vowelIndexes.at(-2)
-    : lastVowel;
+    : vowelIndexes.at(-1);
+  while (nucleus > 0 && VOWELS.includes(value[nucleus - 1])) nucleus -= 1;
   const signature = value.slice(nucleus).replace(weakEnding && value.endsWith('e') ? /e$/u : /$^/u, '');
   return {
     signature,
-    method: 'phonetic-rules',
+    method: 'bootstrap-rules',
     rules: normalized.rules,
-    gender: signature.endsWith('e') && vowelIndexes.length > 1 ? 'feminine' : 'masculine',
+    gender: weakEnding ? 'feminine' : 'masculine',
   };
 };
 
-const orthographicEnding = word => {
-  if (word == null) return null;
-  const value = word.toLocaleLowerCase('da-DK');
-  const index = [...value].findLastIndex(character => VOWELS.includes(character));
-  return index < 0 ? null : value.slice(index);
-};
-
-export const analyzeRhyme = (stanzas, { minConfidence = 0.75 } = {}) => {
-  const lines = stanzas.flat();
-  const endings = lines.map(line => ({
-    word: cleanRhymeWord(line),
-    ...endingForWord(cleanRhymeWord(line)),
-  }));
+const labelsForSignatures = signatures => {
   const counts = new Map();
-  endings.forEach(({ signature }) => {
+  signatures.forEach(signature => {
     if (signature != null) counts.set(signature, (counts.get(signature) ?? 0) + 1);
   });
   const classes = new Map();
   let nextClass = 0;
-  const methods = [];
-  const labels = endings.map(ending => {
-    let signature = ending.signature;
-    if (signature == null || (counts.get(signature) ?? 0) < 2) {
-      signature = orthographicEnding(ending.word);
-      methods.push(signature == null ? 'unanalysable' : 'orthographic-fallback');
-      return 'X';
-    }
-    methods.push(ending.method);
-    if (!classes.has(signature)) {
-      classes.set(signature, nextClass < 26 ? String.fromCharCode(65 + nextClass) : `A${nextClass + 1}`);
+  return signatures.map(signature => {
+    if (signature == null || (counts.get(signature) ?? 0) < 2) return 'X';
+    if (classes.has(signature) === false) {
+      classes.set(signature, String.fromCharCode(65 + nextClass));
       nextClass += 1;
     }
     return classes.get(signature);
   });
-  const pattern = [];
-  let offset = 0;
-  stanzas.forEach(stanza => {
-    pattern.push(labels.slice(offset, offset + stanza.length).join(''));
-    offset += stanza.length;
+};
+
+const bootstrapStanza = stanza => {
+  const endings = stanza.map(line => {
+    const word = cleanRhymeWord(line);
+    return { word, ...bootstrapEnding(word), score: 1 };
   });
-  const paired = [...counts.values()].filter(count => count >= 2)
-    .reduce((sum, count) => sum + count, 0);
-  const coverage = lines.length > 0 ? paired / lines.length : 0;
-  const phoneticCoverage = methods.filter(method => method === 'phonetic-rules').length /
-    Math.max(1, paired);
-  const confidence = lines.length > 0
-    ? Math.round(clamp(0.45 + coverage * 0.35 + phoneticCoverage * 0.2) * 100) / 100
-    : 0;
+  return { endings, labels: labelsForSignatures(endings.map(ending => ending.signature)) };
+};
+
+const pairMatrix = (candidates, model) => candidates.map((left, leftIndex) =>
+  candidates.map((right, rightIndex) => leftIndex === rightIndex
+    ? { left: left[0] ?? null, method: 'identity', right: right[0] ?? null, score: 1 }
+    : bestCandidatePair(left, right, model)));
+
+const clusterLines = (matrix, threshold) => {
+  const clusters = matrix.map((_, index) => [index]);
+  while (true) {
+    let best = null;
+    for (let leftIndex = 0; leftIndex < clusters.length; leftIndex += 1) {
+      for (let rightIndex = leftIndex + 1; rightIndex < clusters.length; rightIndex += 1) {
+        const scores = clusters[leftIndex].flatMap(left =>
+          clusters[rightIndex].map(right => matrix[left][right]?.score ?? 0));
+        const minimum = Math.min(...scores);
+        const average = scores.reduce((sum, score) => sum + score, 0) / scores.length;
+        if (minimum < threshold) continue;
+        if (best == null || minimum > best.minimum ||
+          (minimum === best.minimum && average > best.average)) {
+          best = { average, leftIndex, minimum, rightIndex };
+        }
+      }
+    }
+    if (best == null) break;
+    clusters[best.leftIndex] = [...clusters[best.leftIndex], ...clusters[best.rightIndex]].sort((a, b) => a - b);
+    clusters.splice(best.rightIndex, 1);
+  }
+  return clusters.sort((left, right) => left[0] - right[0]);
+};
+
+const modelStanza = (stanza, model) => {
+  const candidates = stanza.map(endingCandidates);
+  const matrix = pairMatrix(candidates, model);
+  const clusters = clusterLines(matrix, model?.threshold ?? 0.72);
+  const labels = Array(stanza.length).fill('X');
+  let nextClass = 0;
+  clusters.filter(cluster => cluster.length >= 2).forEach(cluster => {
+    const label = nextClass < 26 ? String.fromCharCode(65 + nextClass) : `A${nextClass + 1}`;
+    nextClass += 1;
+    cluster.forEach(index => { labels[index] = label; });
+  });
+  const endings = stanza.map((line, index) => {
+    const cluster = clusters.find(candidate => candidate.includes(index));
+    const partner = cluster?.find(candidate => candidate !== index);
+    const match = partner == null ? null : matrix[index][partner];
+    const candidate = match?.left ?? candidates[index][0] ?? null;
+    return {
+      word: cleanRhymeWord(line),
+      phrase: candidate?.phrase ?? null,
+      signature: candidate?.tail ?? null,
+      method: match?.method ?? (candidate == null ? 'unanalysable' : 'unmatched'),
+      rules: match == null ? [] : [`score=${match.score.toFixed(3)}`],
+      gender: null,
+      score: match?.score ?? 0,
+    };
+  });
+  return { endings, labels };
+};
+
+export const analyzeRhyme = (stanzas, {
+  bootstrap = false,
+  minConfidence = 0.75,
+  model = undefined,
+} = {}) => {
+  // Bootstrap-reglerne bruges kun til den første træningsrunde. Normal analyse
+  // bruger den lille, versionsstyrede korpusmodel.
+  const activeModel = bootstrap ? null : (model === undefined ? loadRhymeModel() : model);
+  const stanzaResults = stanzas.map(stanza => bootstrap
+    ? bootstrapStanza(stanza)
+    : modelStanza(stanza, activeModel));
+  const pattern = stanzaResults.map(result => result.labels.join('')).join(' ');
+  const lines = stanzas.flat();
+  const endings = stanzaResults.flatMap(result => result.endings);
+  const methods = endings.map(ending => ending.method);
+  const matched = stanzaResults.reduce((sum, result) =>
+    sum + result.labels.filter(label => label !== 'X').length, 0);
+  const coverage = lines.length === 0 ? 0 : matched / lines.length;
+  const matchedScores = endings.filter(ending => ending.score > 0).map(ending => ending.score);
+  const meanScore = matchedScores.length === 0
+    ? 0
+    : matchedScores.reduce((sum, score) => sum + score, 0) / matchedScores.length;
+  const confidence = lines.length === 0
+    ? 0
+    : Math.round(clamp(0.45 + coverage * 0.35 + meanScore * 0.2) * 100) / 100;
   return {
-    pattern: pattern.join(' '),
+    pattern,
     confidence,
     lines,
     endings,

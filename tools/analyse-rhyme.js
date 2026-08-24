@@ -55,6 +55,11 @@ export const analyzeWorkXml = (xml, options = {}) => {
   const textFragments = xml.match(/<text\b[^>]*>[\s\S]*?<\/text>/gi) ?? [];
   let changed = xml;
   Array.from(document.getElementsByTagName('text')).forEach((text, index) => {
+    const explicitLanguage = text.getAttribute('lang');
+    const language = explicitLanguage != null && explicitLanguage !== ''
+      ? explicitLanguage
+      : options.language ?? 'da';
+    if (language !== 'da') return;
     const head = Array.from(text.childNodes).find(node => node.nodeName === 'head');
     const body = Array.from(text.childNodes).find(node => node.nodeName === 'body');
     const poetry = body == null ? null : Array.from(body.childNodes).find(node => node.nodeName === 'poetry');
@@ -96,7 +101,13 @@ export const run = (args = process.argv.slice(2), rootDir = process.cwd()) => {
   let proposed = 0;
   workFiles(rootDir, options).forEach(filename => {
     const original = fs.readFileSync(filename, 'utf8');
-    const analyzed = analyzeWorkXml(original, options);
+    const author = original.match(/<kalliopework\b[^>]*\bauthor="([^"]+)"/u)?.[1];
+    const infoFilename = author == null ? null : path.join(rootDir, 'fdirs', author, 'info.xml');
+    const info = infoFilename != null && fs.existsSync(infoFilename)
+      ? fs.readFileSync(infoFilename, 'utf8')
+      : '';
+    const language = info.match(/<person\b[^>]*\blang="([^"]+)"/u)?.[1] ?? 'da';
+    const analyzed = analyzeWorkXml(original, { ...options, language });
     analyzed.reports.forEach(report => { console.log(`${formatReport(filename, report, options.debug)}\n`); });
     if (analyzed.xml !== original) {
       changedFiles += 1;
