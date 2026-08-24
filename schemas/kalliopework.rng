@@ -42,6 +42,7 @@
         <ref name="quality"/>
         <ref name="metre"/>
         <ref name="rhyme"/>
+        <ref name="structure"/>
         <ref name="pagebreaks"/>
         <ref name="pictures"/>
         <ref name="picture"/>
@@ -396,6 +397,24 @@
         </data>
       </attribute>
       <empty/>
+    </element>
+  </define>
+  <define name="structure">
+    <element name="structure">
+      <element name="analysis">
+        <attribute name="pattern">
+          <data type="string">
+            <param name="pattern">[1-9][0-9]*(-[1-9][0-9]*)*</param>
+          </data>
+        </attribute>
+        <attribute name="confidence">
+          <data type="decimal">
+            <param name="minInclusive">0</param>
+            <param name="maxInclusive">1</param>
+          </data>
+        </attribute>
+        <empty/>
+      </element>
     </element>
   </define>
   <define name="pagebreaks"><element name="pagebreaks"><empty/></element></define>
