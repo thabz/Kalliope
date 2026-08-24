@@ -232,7 +232,7 @@ const stripIgnoredMarkup = line => {
     .replace(/<[^>]+>/g, '');
 };
 
-export const poetryLinesFromXml = poetryXml => {
+export const poetryStanzasFromXml = poetryXml => {
   let content = poetryXml
     .replace(/^<poetry\b[^>]*>/i, '')
     .replace(/<\/poetry>$/i, '');
@@ -242,15 +242,24 @@ export const poetryLinesFromXml = poetryXml => {
     previous = content;
     content = content.replace(ignoredLinePattern, '');
   } while (content !== previous);
-  return content
-    .split(/\r?\n/)
-    .map(line => stripIgnoredMarkup(line).trim())
-    .filter(line => line.length > 0 && /^[-–—_=*\dIVXLCDM. ]+$/iu.test(line) !== true)
-    .map(line => {
-      const document = new DOMParser().parseFromString(`<line>${line}</line>`, 'text/xml');
-      return document.documentElement.textContent.trim();
-    });
+  const stanzas = [];
+  let stanza = [];
+  content.split(/\r?\n/).forEach(rawLine => {
+    const line = stripIgnoredMarkup(rawLine).trim();
+    if (line.length === 0) {
+      if (stanza.length > 0) stanzas.push(stanza);
+      stanza = [];
+      return;
+    }
+    if (/^[-–—_=*\dIVXLCDM. ]+$/iu.test(line) === true) return;
+    const document = new DOMParser().parseFromString(`<line>${line}</line>`, 'text/xml');
+    stanza.push(document.documentElement.textContent.trim());
+  });
+  if (stanza.length > 0) stanzas.push(stanza);
+  return stanzas;
 };
+
+export const poetryLinesFromXml = poetryXml => poetryStanzasFromXml(poetryXml).flat();
 
 export const formatMetreXml = analyses => [
   '<metre>',
