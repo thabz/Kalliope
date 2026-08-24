@@ -13,11 +13,15 @@ const weakWords = new Set([
 ]);
 
 const weakPrefixes = ['be', 'ge', 'er', 'for'];
-const ignoredLineElements = ['footnote', 'note', 'nonum', 'margin', 'num'];
+const ignoredLineElements = [
+  'footnote', 'note', 'nonum', 'margin', 'num', 'versenum', 'metrik',
+];
 const ignoredLinePattern = new RegExp(
   `<(?:${ignoredLineElements.join('|')})\\b[^>]*>[\\s\\S]*?<\\/(?:${ignoredLineElements.join('|')})>`,
   'gi',
 );
+const ignoredLineMarkersPattern = /<(?:pb|br|hr|img|resetnum|asterism)\b[^>]*\/?\s*>/gi;
+const xmlCommentPattern = /<!--[\s\S]*?-->/g;
 
 const roundConfidence = value => Math.round(value * 100) / 100;
 const clamp = value => Math.max(0, Math.min(1, value));
@@ -224,7 +228,7 @@ const stripIgnoredMarkup = line => {
     result = result.replace(ignoredLinePattern, '');
   } while (result !== previous);
   return result
-    .replace(/<(?:pb|br|hr|img|resetnum)\b[^>]*\/?\s*>/gi, '')
+    .replace(ignoredLineMarkersPattern, '')
     .replace(/<[^>]+>/g, '');
 };
 
@@ -232,6 +236,7 @@ export const poetryLinesFromXml = poetryXml => {
   let content = poetryXml
     .replace(/^<poetry\b[^>]*>/i, '')
     .replace(/<\/poetry>$/i, '');
+  content = content.replace(xmlCommentPattern, '');
   let previous;
   do {
     previous = content;

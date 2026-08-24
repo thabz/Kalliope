@@ -85,10 +85,34 @@ describe('metrisk analyse', () => {
   it('udelader redaktionelle linjer, noter og sideskift', () => {
     const lines = poetryLinesFromXml(`<poetry>
 <nonum><center>I</center></nonum>
+<versenum>1.</versenum>
+<num>17</num><margin>17</margin>
 Første <i>verslinje</i><note>lang
 note</note>
-<pb n="2" facs="001.jpg"/>Anden verslinje
+<pb n="2" facs="001.jpg"/><br/><hr/><asterism/>Anden verslinje
 ----</poetry>`);
+
+    expect(lines).toEqual(['Første verslinje', 'Anden verslinje']);
+  });
+
+  it('udelader flerlinjede XML-kommentarer', () => {
+    const lines = poetryLinesFromXml(`<poetry>
+Første verslinje
+<!--
+Denne redaktionelle kommentar er ikke en verslinje.
+-->
+Anden verslinje
+</poetry>`);
+
+    expect(lines).toEqual(['Første verslinje', 'Anden verslinje']);
+  });
+
+  it('udelader flerlinjede fodnoter fra metrisk analyse', () => {
+    const lines = poetryLinesFromXml(`<poetry>
+Første verslinje<footnote>En fodnote
+med flere linjer.</footnote>
+Anden verslinje
+</poetry>`);
 
     expect(lines).toEqual(['Første verslinje', 'Anden verslinje']);
   });
