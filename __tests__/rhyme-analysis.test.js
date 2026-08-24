@@ -1,5 +1,6 @@
 import { analyzeRhyme } from '../tools/rhyme-analysis.js';
 import { analyzeWorkXml } from '../tools/analyse-rhyme.js';
+import { rhymePairKey } from '../tools/rhyme-model.js';
 
 describe('rhyme analysis', () => {
   test('finds rhyme relations and resets labels for each stanza', () => {
@@ -62,6 +63,42 @@ describe('rhyme analysis', () => {
     const result = analyzeRhyme([['måne', 'rose', 'hest', 'land']], { minConfidence: 0 });
 
     expect(result.pattern).toBe('XXXX');
+  });
+
+  test('uses repeated stanza positions to help a borderline rhyme', () => {
+    const model = {
+      operations: {},
+      pairs: { [rhymePairKey('og', 'aag')]: 0.7 },
+      threshold: 0.76,
+    };
+    const result = analyzeRhyme([
+      ['land', 'rose', 'strand', 'rose'],
+      ['sind', 'måne', 'vind', 'måne'],
+      ['hest', 'gren', 'fest', 'gren'],
+      ['Tog', 'havn', 'Laag', 'havn'],
+    ], { minConfidence: 0, model });
+
+    expect(result.rawPattern).toBe('ABAB ABAB ABAB XAXA');
+    expect(result.pattern).toBe('ABAB ABAB ABAB ABAB');
+    expect(result.consensusAdjustedPairs).toBe(1);
+    expect(result.endings[12].method).toBe('poem-consensus');
+  });
+
+  test('preserves a stanza with strong evidence for an intentional variation', () => {
+    const model = {
+      operations: {},
+      pairs: { [rhymePairKey('and', 'est')]: 0.7 },
+      threshold: 0.76,
+    };
+    const result = analyzeRhyme([
+      ['land', 'rose', 'strand', 'rose'],
+      ['sind', 'måne', 'vind', 'måne'],
+      ['hest', 'gren', 'fest', 'gren'],
+      ['land', 'land', 'hest', 'hest'],
+    ], { minConfidence: 0, model });
+
+    expect(result.pattern).toBe('ABAB ABAB ABAB AABB');
+    expect(result.consensusAdjustedPairs).toBe(2);
   });
 
   test('normalizes historical g/t and aaer spellings', () => {

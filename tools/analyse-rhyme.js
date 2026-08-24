@@ -87,6 +87,9 @@ export const analyzeWorkXml = (xml, options = {}) => {
 const formatReport = (filename, report, debug) => {
   const { result } = report;
   const lines = [filename, `Detected rhyme scheme: ${result.pattern}`, `Confidence: ${result.confidence.toFixed(2)}`];
+  if (result.rawPattern !== result.pattern) {
+    lines.push(`Raw rhyme scheme: ${result.rawPattern}`, `Poem-consensus adjustments: ${result.consensusAdjustedPairs}`);
+  }
   if (debug) result.lines.forEach((line, index) => {
     const ending = result.endings[index];
     const rules = ending.rules?.length > 0 ? `; ${ending.rules.join(', ')}` : '';

@@ -85,8 +85,12 @@ const collectExamples = (poems, model = null) => {
   const negativeOperations = new Map();
   let labelledPoems = 0;
   poems.forEach(poem => {
-    const patterns = poem.stanzas.map(stanza =>
-      analyzeRhyme([stanza], { bootstrap: model == null, minConfidence: 0, model }).pattern);
+    const analysis = analyzeRhyme(poem.stanzas, {
+      bootstrap: model == null,
+      minConfidence: 0,
+      model,
+    });
+    const patterns = analysis.stanzaPatterns;
     const mode = modalPattern(patterns);
     if (mode == null) return;
     labelledPoems += 1;
@@ -165,6 +169,8 @@ const trainIterations = poems => {
   for (let iteration = 1; iteration <= 10; iteration += 1) {
     const examples = collectExamples(poems, model);
     const nextModel = {
+      consensusFloor: 0.61,
+      consensusSupport: 0.6,
       operations: trainedOperations(examples),
       pairs: trainedPairs(examples),
       threshold: 0.76,
@@ -183,15 +189,22 @@ const trainIterations = poems => {
 
 const scorePoems = (poems, model) => {
   let modalHits = 0;
+  let rawModalHits = 0;
+  let consensusAdjustedPairs = 0;
   let stanzas = 0;
   let unmatched = 0;
   let lines = 0;
   poems.forEach(poem => {
-    const patterns = poem.stanzas.map(stanza =>
-      analyzeRhyme([stanza], { minConfidence: 0, model }).pattern);
+    const analysis = analyzeRhyme(poem.stanzas, { minConfidence: 0, model });
+    const patterns = analysis.stanzaPatterns;
+    const rawPatterns = analysis.rawStanzaPatterns;
     const counts = new Map();
+    const rawCounts = new Map();
     patterns.forEach(pattern => increment(counts, pattern));
+    rawPatterns.forEach(pattern => increment(rawCounts, pattern));
     modalHits += Math.max(...counts.values());
+    rawModalHits += Math.max(...rawCounts.values());
+    consensusAdjustedPairs += analysis.consensusAdjustedPairs;
     stanzas += patterns.length;
     patterns.forEach(pattern => { unmatched += (pattern.match(/X/gu) ?? []).length; });
     lines += patterns.length * poem.linesPerStanza;
@@ -199,6 +212,8 @@ const scorePoems = (poems, model) => {
   return {
     lines,
     modalAgreement: Math.round(modalHits / Math.max(1, stanzas) * 10000) / 10000,
+    rawModalAgreement: Math.round(rawModalHits / Math.max(1, stanzas) * 10000) / 10000,
+    consensusAdjustedPairs,
     poems: poems.length,
     stanzas,
     xLineShare: Math.round(unmatched / Math.max(1, lines) * 10000) / 10000,

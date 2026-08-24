@@ -115,10 +115,8 @@ const clusterLines = (matrix, threshold) => {
   return clusters.sort((left, right) => left[0] - right[0]);
 };
 
-const modelStanza = (stanza, model) => {
-  const candidates = stanza.map(endingCandidates);
-  const matrix = pairMatrix(candidates, model);
-  const clusters = clusterLines(matrix, model?.threshold ?? 0.72);
+const renderModelStanza = (stanza, candidates, matrix, threshold) => {
+  const clusters = clusterLines(matrix, threshold);
   const labels = Array(stanza.length).fill('X');
   let nextClass = 0;
   clusters.filter(cluster => cluster.length >= 2).forEach(cluster => {
@@ -136,7 +134,10 @@ const modelStanza = (stanza, model) => {
       phrase: candidate?.phrase ?? null,
       signature: candidate?.tail ?? null,
       method: match?.method ?? (candidate == null ? 'unanalysable' : 'unmatched'),
-      rules: match == null ? [] : [`score=${match.score.toFixed(3)}`],
+      rules: match == null ? [] : [
+        `score=${match.score.toFixed(3)}`,
+        ...(match.rawScore == null ? [] : [`rå score=${match.rawScore.toFixed(3)}`]),
+      ],
       gender: null,
       score: match?.score ?? 0,
     };
@@ -144,17 +145,71 @@ const modelStanza = (stanza, model) => {
   return { endings, labels };
 };
 
+const prepareModelStanza = (stanza, model) => {
+  const candidates = stanza.map(endingCandidates);
+  return { candidates, matrix: pairMatrix(candidates, model) };
+};
+
+const assistWithPoemConsensus = (stanzas, prepared, rawResults, model) => {
+  const threshold = model?.threshold ?? 0.72;
+  const floor = model?.consensusFloor ?? threshold - 0.15;
+  const requiredSupport = model?.consensusSupport ?? 0.6;
+  const matrices = prepared.map(result => result.matrix.map(row => [...row]));
+  let adjustedPairs = 0;
+  const lengthGroups = new Map();
+  stanzas.forEach((stanza, index) => {
+    const indexes = lengthGroups.get(stanza.length) ?? [];
+    indexes.push(index);
+    lengthGroups.set(stanza.length, indexes);
+  });
+  lengthGroups.forEach(indexes => {
+    if (indexes.length < 3) return;
+    const stanzaLength = stanzas[indexes[0]].length;
+    for (let left = 0; left < stanzaLength; left += 1) {
+      for (let right = left + 1; right < stanzaLength; right += 1) {
+        const matches = indexes.filter(index => {
+          const labels = rawResults[index].labels;
+          return labels[left] !== 'X' && labels[left] === labels[right];
+        }).length;
+        const support = matches / indexes.length;
+        if (matches < 2 || support < requiredSupport) continue;
+        indexes.forEach(index => {
+          const local = matrices[index][left][right];
+          if (local == null || local.score >= threshold || local.score < floor) return;
+          const score = threshold + 0.001 + Math.min(0.009, support * 0.01);
+          matrices[index][left][right] = { ...local, method: 'poem-consensus', rawScore: local.score, score };
+          const reverse = matrices[index][right][left];
+          matrices[index][right][left] = { ...reverse, method: 'poem-consensus', rawScore: reverse.score, score };
+          adjustedPairs += 1;
+        });
+      }
+    }
+  });
+  return { adjustedPairs, matrices };
+};
+
 export const analyzeRhyme = (stanzas, {
   bootstrap = false,
   minConfidence = 0.75,
   model = undefined,
+  poemConsensus = true,
 } = {}) => {
   // Bootstrap-reglerne bruges kun til den første træningsrunde. Normal analyse
   // bruger den lille, versionsstyrede korpusmodel.
   const activeModel = bootstrap ? null : (model === undefined ? loadRhymeModel() : model);
-  const stanzaResults = stanzas.map(stanza => bootstrap
+  const prepared = bootstrap ? [] : stanzas.map(stanza => prepareModelStanza(stanza, activeModel));
+  const rawStanzaResults = stanzas.map((stanza, index) => bootstrap
     ? bootstrapStanza(stanza)
-    : modelStanza(stanza, activeModel));
+    : renderModelStanza(stanza, prepared[index].candidates, prepared[index].matrix,
+      activeModel?.threshold ?? 0.72));
+  const assisted = bootstrap || poemConsensus === false
+    ? { adjustedPairs: 0, matrices: prepared.map(result => result.matrix) }
+    : assistWithPoemConsensus(stanzas, prepared, rawStanzaResults, activeModel);
+  const stanzaResults = assisted.adjustedPairs === 0
+    ? rawStanzaResults
+    : stanzas.map((stanza, index) => renderModelStanza(stanza, prepared[index].candidates,
+      assisted.matrices[index], activeModel?.threshold ?? 0.72));
+  const rawPattern = rawStanzaResults.map(result => result.labels.join('')).join(' ');
   const pattern = stanzaResults.map(result => result.labels.join('')).join(' ');
   const lines = stanzas.flat();
   const endings = stanzaResults.flatMap(result => result.endings);
@@ -171,6 +226,12 @@ export const analyzeRhyme = (stanzas, {
     : Math.round(clamp(0.45 + coverage * 0.35 + meanScore * 0.2) * 100) / 100;
   return {
     pattern,
+    rawPattern,
+    stanzaPatterns: stanzaResults.map(result => result.labels.join('')),
+    rawStanzaPatterns: rawStanzaResults.map(result => result.labels.join('')),
+    stanzaAnalyses: stanzaResults,
+    rawStanzaAnalyses: rawStanzaResults,
+    consensusAdjustedPairs: assisted.adjustedPairs,
     confidence,
     lines,
     endings,
