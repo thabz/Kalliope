@@ -9,7 +9,7 @@ describe('work XML formatting', () => {
   <workbody>
     <text>
       <head>
-        <title>Æbler, øer og åer</title><firstline>Første linje</firstline><source pages="1"/><quality>korrektur1</quality>
+        <title>Æbler, øer og åer</title><firstline>Første linje</firstline><source pages="1"/><quality>korrektur1</quality><metre><analysis pattern="iambic-pentameter" confidence="0.91"/></metre>
       </head>
       <body>
         <prose>
@@ -42,6 +42,9 @@ Et citat
         '  <firstline>Første linje</firstline>\n' +
         '  <source pages="1"/>\n' +
         '  <quality>korrektur1</quality>\n' +
+        '  <metre>\n' +
+        '    <analysis pattern="iambic-pentameter" confidence="0.91"/>\n' +
+        '  </metre>\n' +
         '</head>',
     );
     expect(formatted).toContain('</text>\n\n<text>');
