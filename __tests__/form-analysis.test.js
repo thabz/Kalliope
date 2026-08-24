@@ -1,9 +1,9 @@
 import fs from 'fs';
 import os from 'os';
 import path from 'path';
-import { analyzeWorkXml, parseArgs, run } from '../tools/analyse-form.js';
-import { classifyPoeticForm } from '../tools/form-analysis.js';
-import { run as runPoeticForm } from '../tools/poetic-form.js';
+import { analyzeWorkXml, parseArgs, run } from '../tools/poetic-form/analyse-form.js';
+import { classifyPoeticForm } from '../tools/poetic-form/form-analysis.js';
+import { run as runPoeticForm } from '../tools/poetic-form/poetic-form.js';
 
 const signals = ({
   metre = [{ pattern: 'iambic-pentameter', confidence: 0.91 }],

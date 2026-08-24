@@ -3,12 +3,12 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { DOMParser, XMLSerializer } from '@xmldom/xmldom';
+import { poetryLinesFromXml } from './metre-analysis.js';
 import {
-  analyzePoem,
-  formatMetreXml,
-  poetryLinesFromXml,
-} from './metre-analysis.js';
-import { formatWorkXml } from './format-work-xml.js';
+  analyzeSyllables,
+  formatSyllablesXml,
+} from './syllable-analysis.js';
+import { formatWorkXml } from '../format-work-xml.js';
 
 const normalizePath = filename => filename.replace(/\\/g, '/').replace(/^\.\//, '');
 
@@ -21,23 +21,23 @@ export const parseArgs = (args = process.argv.slice(2)) => {
     poet: null,
     work: null,
   };
-
   for (let index = 0; index < args.length; index += 1) {
     const arg = args[index];
     if (arg === '--debug') options.debug = true;
     else if (arg === '--dry-run') options.dryRun = true;
     else if (arg === '--only-missing') options.onlyMissing = true;
-    else if (arg === '--poet' || arg === '--work' || arg === '--min-confidence') {
-      index += 1;
-      if (args[index] == null) throw new Error(`${arg} kræver en værdi.`);
-      const key = arg === '--poet' ? 'poet' : arg === '--work' ? 'work' : 'minConfidence';
-      options[key] = key === 'minConfidence' ? Number(args[index]) : args[index];
+    else if (['--poet', '--work', '--min-confidence'].includes(arg)) {
+      const value = args[++index];
+      if (value == null) throw new Error(`${arg} kræver en værdi.`);
+      if (arg === '--poet') options.poet = value;
+      else if (arg === '--work') options.work = value;
+      else options.minConfidence = Number(value);
     } else if (arg.startsWith('--poet=')) options.poet = arg.slice(7);
     else if (arg.startsWith('--work=')) options.work = arg.slice(7);
-    else if (arg.startsWith('--min-confidence=')) options.minConfidence = Number(arg.slice(17));
-    else throw new Error(`Ukendt option: ${arg}`);
+    else if (arg.startsWith('--min-confidence=')) {
+      options.minConfidence = Number(arg.slice(17));
+    } else throw new Error(`Ukendt option: ${arg}`);
   }
-
   if (Number.isFinite(options.minConfidence) !== true ||
       options.minConfidence < 0 || options.minConfidence > 1) {
     throw new Error('--min-confidence skal være et tal mellem 0 og 1.');
@@ -52,8 +52,8 @@ const walkXmlFiles = directory => fs.readdirSync(directory, { withFileTypes: tru
   .flatMap(entry => {
     const filename = path.join(directory, entry.name);
     if (entry.isDirectory()) return walkXmlFiles(filename);
-    return entry.isFile() && entry.name.endsWith('.xml') && entry.name !== 'info.xml' &&
-      entry.name !== 'bio.xml' && entry.name !== 'portraits.xml' && entry.name !== 'artwork.xml'
+    const excluded = ['info.xml', 'bio.xml', 'portraits.xml', 'artwork.xml'];
+    return entry.isFile() && entry.name.endsWith('.xml') && excluded.includes(entry.name) !== true
       ? [filename]
       : [];
   });
@@ -67,45 +67,49 @@ export const resolveWorkFiles = ({ rootDir, poet, work }) => {
     }
     return [filename];
   }
-  if (poet != null) {
-    const directory = path.join(rootDir, 'fdirs', poet);
-    if (fs.existsSync(directory) !== true || fs.statSync(directory).isDirectory() !== true) {
-      throw new Error(`Digtermappen findes ikke: ${poet}`);
-    }
-    return walkXmlFiles(directory).sort();
+  const directory = path.join(rootDir, 'fdirs', poet ?? '');
+  if (fs.existsSync(directory) !== true || fs.statSync(directory).isDirectory() !== true) {
+    throw new Error(`Digtermappen findes ikke: ${poet}`);
   }
-  return walkXmlFiles(path.join(rootDir, 'fdirs')).sort();
+  return walkXmlFiles(directory).sort();
 };
 
 const directChildren = (node, name) => Array.from(node.childNodes)
   .filter(child => child.nodeType === 1 && child.nodeName === name);
 
-const analyzeTextBlock = (textXml, options, language = null) => {
+const analyzeTextBlock = (textXml, language, options) => {
   const document = new DOMParser().parseFromString(textXml, 'text/xml');
   const text = document.documentElement;
-  const textId = text.getAttribute('id') ?? '(uden id)';
+  const id = text.getAttribute('id');
+  const textId = id !== '' ? id : '(uden id)';
   const head = directChildren(text, 'head')[0] ?? null;
   const body = directChildren(text, 'body')[0] ?? null;
   if (head == null || body == null) return { textXml, report: null };
-  if (directChildren(head, 'metre').length > 0) {
-    return { textXml, report: { textId, status: 'existing-metre', result: null } };
+  if (directChildren(head, 'syllables').length > 0) {
+    return { textXml, report: { textId, status: 'existing-syllables', result: null } };
   }
   if (language != null && language !== 'da') {
-    return { textXml, report: { textId, status: `unsupported-language:${language}`, result: null } };
+    return {
+      textXml,
+      report: { textId, status: `unsupported-language:${language}`, result: null },
+    };
   }
 
   const serializer = new XMLSerializer();
   const rawLines = directChildren(body, 'poetry')
     .flatMap(poetry => poetryLinesFromXml(serializer.serializeToString(poetry)));
   if (rawLines.length === 0) return { textXml, report: null };
-  const result = analyzePoem(rawLines, { minConfidence: options.minConfidence });
+  const result = analyzeSyllables(rawLines, { minConfidence: options.minConfidence });
   if (result.analyses.length === 0) {
     return { textXml, report: { textId, status: result.reason, result } };
   }
 
-  const metreXml = formatMetreXml(result.analyses);
-  const changed = textXml.replace(/<\/head>/, `${metreXml}\n</head>`);
-  return { textXml: changed, report: { textId, status: 'proposed', result, metreXml } };
+  const syllablesXml = formatSyllablesXml(result.analyses);
+  const changed = textXml.replace(/<\/head>/, `${syllablesXml}\n</head>`);
+  return {
+    textXml: changed,
+    report: { textId, status: 'proposed', result, syllablesXml },
+  };
 };
 
 export const analyzeWorkXml = (xml, options = {}) => {
@@ -116,14 +120,21 @@ export const analyzeWorkXml = (xml, options = {}) => {
     let current = text;
     let author = null;
     while (current != null && author == null) {
-      author = current.getAttribute?.('author') ?? null;
+      const attribute = current.getAttribute?.('author');
+      author = attribute != null && attribute !== '' ? attribute : null;
       current = current.parentNode;
     }
-    return text.getAttribute('lang') ?? normalizedOptions.languageForPoet?.(author) ?? null;
+    const explicitLanguage = text.getAttribute('lang');
+    if (explicitLanguage !== '') return explicitLanguage;
+    return normalizedOptions.languageForPoet?.(author) ?? null;
   });
   let textIndex = 0;
   const changedXml = xml.replace(/<text\b[^>]*>[\s\S]*?<\/text>/g, textXml => {
-    const analyzed = analyzeTextBlock(textXml, normalizedOptions, textLanguages[textIndex] ?? null);
+    const analyzed = analyzeTextBlock(
+      textXml,
+      textLanguages[textIndex] ?? null,
+      normalizedOptions,
+    );
     textIndex += 1;
     if (analyzed.report != null) reports.push(analyzed.report);
     return analyzed.textXml;
@@ -131,22 +142,31 @@ export const analyzeWorkXml = (xml, options = {}) => {
   return { xml: formatWorkXml(changedXml), reports };
 };
 
-const formatReport = (filename, report, { debug }) => {
+const formatReport = (filename, report, debug) => {
   if (debug !== true && report.status !== 'proposed') return null;
   const lines = [`${filename} (${report.textId})`, `Status: ${report.status}`];
-  if (report.result != null) {
-    lines.push(`Lines analysed: ${report.result.lines.length}`);
-    const shown = debug === true
-      ? report.result.candidates
-      : report.result.analyses;
-    shown.forEach(candidate => {
+  if (debug === true && report.result != null) {
+    report.result.lines.forEach((line, index) => {
+      const uncertain = line.words
+        .filter(word => word.confidence < 0.8)
+        .map(word => word.word);
+      const suffix = uncertain.length > 0 ? `  [${uncertain.join(', ')}]` : '';
       lines.push(
-        `${candidate.pattern}: matching lines ${candidate.matchingLines}/${report.result.lines.length}, ` +
-        `mean line score ${candidate.meanLineScore.toFixed(2)}, poem confidence ${candidate.confidence.toFixed(2)}`,
+        `${String(index + 1).padStart(2, '0')}  ` +
+        `${String(line.syllables).padStart(2, ' ')}  ${line.text}${suffix}`,
       );
     });
   }
-  if (report.metreXml != null) lines.push('Proposed XML:', report.metreXml);
+  if (report.result?.analyses.length > 0) {
+    lines.push('', 'Dominant pattern:');
+    report.result.analyses.forEach(analysis => {
+      lines.push(
+        `${analysis.pattern} ${analysis.confidence.toFixed(2)} ` +
+        `(${analysis.matchingLines}/${report.result.lines.length} exact lines)`,
+      );
+    });
+  }
+  if (report.syllablesXml != null) lines.push('Proposed XML:', report.syllablesXml);
   return lines.join('\n');
 };
 
@@ -162,8 +182,12 @@ export const run = (args = process.argv.slice(2), rootDir = process.cwd()) => {
       languages.set(poetId, null);
       return null;
     }
-    const info = new DOMParser().parseFromString(fs.readFileSync(infoFilename, 'utf8'), 'text/xml');
-    const language = info.documentElement.getAttribute('lang');
+    const info = new DOMParser().parseFromString(
+      fs.readFileSync(infoFilename, 'utf8'),
+      'text/xml',
+    );
+    const attribute = info.documentElement.getAttribute('lang');
+    const language = attribute !== '' ? attribute : null;
     languages.set(poetId, language);
     return language;
   };
@@ -175,7 +199,7 @@ export const run = (args = process.argv.slice(2), rootDir = process.cwd()) => {
     const analyzed = analyzeWorkXml(original, { ...options, languageForPoet });
     const relative = normalizePath(path.relative(rootDir, filename));
     analyzed.reports.forEach(report => {
-      const output = formatReport(relative, report, options);
+      const output = formatReport(relative, report, options.debug);
       if (output != null) console.log(`${output}\n`);
       if (report.status === 'proposed') proposedPoems += 1;
     });
@@ -190,12 +214,11 @@ export const run = (args = process.argv.slice(2), rootDir = process.cwd()) => {
   return { changedFiles, proposedPoems };
 };
 
-const isMainModule = process.argv[1] != null && fileURLToPath(import.meta.url) === process.argv[1];
-if (isMainModule) {
+if (process.argv[1] != null && fileURLToPath(import.meta.url) === process.argv[1]) {
   try {
     run();
   } catch (error) {
-    console.error(`Metrisk analyse fejlede: ${error.message}`);
+    console.error(`Stavelsesanalyse fejlede: ${error.message}`);
     process.exitCode = 2;
   }
 }

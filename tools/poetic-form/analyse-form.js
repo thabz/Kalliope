@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url';
 import { DOMParser, XMLSerializer } from '@xmldom/xmldom';
 import { analyzePoetryBlocks } from './analyse-structure.js';
 import { classifyPoeticForm, formatFormXml } from './form-analysis.js';
-import { formatWorkXml } from './format-work-xml.js';
+import { formatWorkXml } from '../format-work-xml.js';
 import { analyzePoem, poetryStanzasFromXml } from './metre-analysis.js';
 import { analyzeRhyme } from './rhyme-analysis.js';
 import { analyzeSyllables } from './syllable-analysis.js';
@@ -213,8 +213,10 @@ const formatExplanation = report => {
   const lines = [
     `${report.selectedForm.toUpperCase()}: ${report.formConfidence.toFixed(2)}`,
     '',
-    ...explanationSignals.map(signal =>
-      `${signal.contribution >= 0 ? '+' : '-'} ${signal.description}`),
+    ...explanationSignals.map(signal => {
+      const marker = signal.contribution > 0 ? '+' : signal.contribution < 0 ? '-' : '·';
+      return `${marker} ${signal.description}`;
+    }),
   ];
   const subtype = report.selectedForm === 'sonnet'
     ? report.analyses.find(analysis => analysis.pattern !== 'sonnet')

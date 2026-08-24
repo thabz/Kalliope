@@ -55,8 +55,10 @@ export const formatPoeticFormReport = ({ filename, report, rootDir }) => {
     '',
     'BEGRUNDELSE',
     `  ${strongestForm.pattern}`,
-    ...explanationSignals.map(signal =>
-      `  ${signal.contribution >= 0 ? '+' : '-'} ${signal.description}`),
+    ...explanationSignals.map(signal => {
+      const marker = signal.contribution > 0 ? '+' : signal.contribution < 0 ? '-' : '·';
+      return `  ${marker} ${signal.description}`;
+    }),
   ];
   if (report.existingForm === true) lines.push('', 'Eksisterende <form> er bevaret.');
   return lines.join('\n');

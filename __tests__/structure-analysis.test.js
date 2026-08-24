@@ -4,7 +4,10 @@ import os from 'os';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-const script = fileURLToPath(new URL('../tools/analyse-structure.js', import.meta.url));
+const script = fileURLToPath(new URL(
+  '../tools/poetic-form/analyse-structure.js',
+  import.meta.url,
+));
 
 const createWork = poetry => {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), 'kalliope-structure-'));

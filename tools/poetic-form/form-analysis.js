@@ -417,7 +417,7 @@ export const classifyPoeticForm = ({
     metre: scoredSignal(
       knittelMetre > 0,
       0.4 * knittelMetre,
-      `iambic tetrameter (${knittelMetre.toFixed(2)})`,
+      `compatible four-beat metre (${knittelMetre.toFixed(2)})`,
       'no compatible four-beat metre',
     ),
     sample: scoredSignal(

@@ -1,8 +1,11 @@
 import fs from 'fs';
 import os from 'os';
 import path from 'path';
-import { selectRhymeTrainingPoems, summarizeRhymeTrainingPoems } from '../tools/rhyme-corpus.js';
-import { writeRhymeModel } from '../tools/train-rhyme-model.js';
+import {
+  selectRhymeTrainingPoems,
+  summarizeRhymeTrainingPoems,
+} from '../tools/poetic-form/rhyme-corpus.js';
+import { writeRhymeModel } from '../tools/poetic-form/train-rhyme-model.js';
 
 const poem = (id, stanzas, attributes = '') =>
   `<text id="${id}"${attributes}><head/><body><poetry>${stanzas}</poetry></body></text>`;
