@@ -40,6 +40,7 @@
         <ref name="notes"/>
         <ref name="note"/>
         <ref name="quality"/>
+        <ref name="form"/>
         <ref name="metre"/>
         <ref name="syllables"/>
         <ref name="rhyme"/>
@@ -366,6 +367,29 @@
   <define name="begivenhed"><element name="begivenhed"><ref name="simpleElement"/></element></define>
   <define name="notes"><element name="notes"><ref name="simpleElement"/></element></define>
   <define name="quality"><element name="quality"><ref name="simpleElement"/></element></define>
+  <define name="form">
+    <element name="form">
+      <oneOrMore><ref name="formAnalysis"/></oneOrMore>
+    </element>
+  </define>
+  <define name="formAnalysis">
+    <element name="analysis">
+      <attribute name="pattern">
+        <choice>
+          <value>sonnet</value>
+          <value>petrarchan-sonnet</value>
+          <value>shakespearean-sonnet</value>
+        </choice>
+      </attribute>
+      <attribute name="confidence">
+        <data type="decimal">
+          <param name="minInclusive">0</param>
+          <param name="maxInclusive">1</param>
+        </data>
+      </attribute>
+      <empty/>
+    </element>
+  </define>
   <define name="metre">
     <element name="metre">
       <oneOrMore><ref name="metreAnalysis"/></oneOrMore>

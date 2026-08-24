@@ -121,6 +121,39 @@ describe('kalliopework RELAX NG schema', () => {
     expect(() => validate(xml)).not.toThrow();
   });
 
+  it('accepts compatible form analyses with bounded confidence', () => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Digte</title><year>1900</year></workhead>
+        <workbody><text><head><form><analysis pattern="sonnet" confidence="0.99"/><analysis pattern="petrarchan-sonnet" confidence="0.96"/></form></head></text></workbody>
+      </kalliopework>
+    `;
+
+    expect(() => validate(xml)).not.toThrow();
+  });
+
+  it.each(['-0.01', '1.01', 'sikker'])('rejects invalid form confidence %s', confidence => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Digte</title><year>1900</year></workhead>
+        <workbody><text><head><form><analysis pattern="sonnet" confidence="${confidence}"/></form></head></text></workbody>
+      </kalliopework>
+    `;
+
+    expect(() => validate(xml)).toThrow();
+  });
+
+  it('rejects an unknown form analysis pattern', () => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Digte</title><year>1900</year></workhead>
+        <workbody><text><head><form><analysis pattern="fourteen-lines" confidence="0.9"/></form></head></text></workbody>
+      </kalliopework>
+    `;
+
+    expect(() => validate(xml)).toThrow();
+  });
+
   it.each(['-0.01', '1.01', 'sikker'])('rejects invalid metre confidence %s', confidence => {
     const xml = `
       <kalliopework id="1900" author="digter">

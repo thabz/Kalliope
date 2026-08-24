@@ -288,8 +288,44 @@ historiske id-formater fortsat kan bevares uændret.
 - `<source>`: kilde for teksten.
 - `<dates>`: datoer for teksten.
 - `<metre>`: en eller flere automatiske, reproducerbare metriske analyser.
+- `<form>`: en eller flere automatiske, reproducerbare klassifikationer af
+  poetisk form.
 - `<structure>`: den observerede, reproducerbare strofe- og linjestruktur.
 - `<syllables>`: en eller flere automatiske analyser af digtets stavelsesmønster.
+
+### Automatisk formklassifikation
+
+Formklassifikatoren kombinerer de uafhængige analyser af struktur, rim, metrik
+og stavelsesantal. Første version genkender sonetter samt petrarcanske og
+shakespeareske undertyper:
+
+```xml
+<form>
+  <analysis pattern="sonnet" confidence="0.99"/>
+  <analysis pattern="petrarchan-sonnet" confidence="0.96"/>
+</form>
+```
+
+Fjorten linjer er et stærkt, men ikke tilstrækkeligt signal. Manglende
+strofegrænser sænker sikkerheden uden automatisk at diskvalificere digtet, og
+undertypen udelades, når kun den overordnede form er sikker. Eksisterende
+`<form>` betragtes som manuelt kurateret og overskrives aldrig.
+
+Værktøjet kan skrive forslag, vise en forklaring eller blot finde kandidater:
+
+```sh
+npm run analyse-form -- --only-missing
+npm run analyse-form -- --form sonnet --min-confidence 0.80
+npm run analyse-form -- --dry-run --debug
+npm run analyse-form -- --find sonnet
+```
+
+En samlet, skrivebeskyttet rapport for ét digt-id viser alle delanalyser og den
+resulterende formklassifikation:
+
+```sh
+npm run poetic-form -- oehlenschlaeger1803000101
+```
 
 ### Automatisk metrisk analyse
 
