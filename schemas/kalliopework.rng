@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
   <start>
     <ref name="kalliopework"/>
   </start>
@@ -39,6 +40,11 @@
         <ref name="notes"/>
         <ref name="note"/>
         <ref name="quality"/>
+        <ref name="form"/>
+        <ref name="metre"/>
+        <ref name="syllables"/>
+        <ref name="rhyme"/>
+        <ref name="structure"/>
         <ref name="pagebreaks"/>
         <ref name="pictures"/>
         <ref name="picture"/>
@@ -263,6 +269,13 @@
 
   <define name="prose">
     <element name="prose">
+      <optional><attribute name="id"><text/></attribute></optional>
+      <optional><attribute name="author"><text/></attribute></optional>
+      <optional><attribute name="variant"><text/></attribute></optional>
+      <optional><attribute name="aliases"><text/></attribute></optional>
+      <optional><attribute name="skip-index"><text/></attribute></optional>
+      <optional><attribute name="lang"><text/></attribute></optional>
+      <optional><attribute name="ignore-tests"><text/></attribute></optional>
       <optional><attribute name="font-size"><text/></attribute></optional>
       <ref name="mixed"/>
     </element>
@@ -354,44 +367,181 @@
   <define name="begivenhed"><element name="begivenhed"><ref name="simpleElement"/></element></define>
   <define name="notes"><element name="notes"><ref name="simpleElement"/></element></define>
   <define name="quality"><element name="quality"><ref name="simpleElement"/></element></define>
+  <define name="form">
+    <element name="form">
+      <oneOrMore><ref name="formAnalysis"/></oneOrMore>
+    </element>
+  </define>
+  <define name="formAnalysis">
+    <element name="analysis">
+      <attribute name="pattern">
+        <choice>
+          <value>sonnet</value>
+          <value>petrarchan-sonnet</value>
+          <value>shakespearean-sonnet</value>
+        </choice>
+      </attribute>
+      <attribute name="confidence">
+        <data type="decimal">
+          <param name="minInclusive">0</param>
+          <param name="maxInclusive">1</param>
+        </data>
+      </attribute>
+      <empty/>
+    </element>
+  </define>
+  <define name="metre">
+    <element name="metre">
+      <oneOrMore><ref name="metreAnalysis"/></oneOrMore>
+    </element>
+  </define>
+  <define name="metreAnalysis">
+    <element name="analysis">
+      <attribute name="pattern"><text/></attribute>
+      <attribute name="confidence">
+        <data type="decimal">
+          <param name="minInclusive">0</param>
+          <param name="maxInclusive">1</param>
+        </data>
+      </attribute>
+      <empty/>
+    </element>
+  </define>
+  <define name="rhyme">
+    <element name="rhyme">
+      <oneOrMore><ref name="rhymeAnalysis"/></oneOrMore>
+    </element>
+  </define>
+  <define name="syllables">
+    <element name="syllables">
+      <oneOrMore><ref name="syllablesAnalysis"/></oneOrMore>
+    </element>
+  </define>
+  <define name="syllablesAnalysis">
+    <element name="analysis">
+      <attribute name="pattern"><text/></attribute>
+      <attribute name="confidence">
+        <data type="decimal">
+          <param name="minInclusive">0</param>
+          <param name="maxInclusive">1</param>
+        </data>
+      </attribute>
+      <empty/>
+    </element>
+  </define>
+  <define name="rhymeAnalysis">
+    <element name="analysis">
+      <attribute name="pattern"><text/></attribute>
+      <attribute name="confidence">
+        <data type="decimal">
+          <param name="minInclusive">0</param>
+          <param name="maxInclusive">1</param>
+        </data>
+      </attribute>
+      <empty/>
+    </element>
+  </define>
+  <define name="structure">
+    <element name="structure">
+      <element name="analysis">
+        <attribute name="pattern">
+          <data type="string">
+            <param name="pattern">[1-9][0-9]*(-[1-9][0-9]*)*</param>
+          </data>
+        </attribute>
+        <attribute name="confidence">
+          <data type="decimal">
+            <param name="minInclusive">0</param>
+            <param name="maxInclusive">1</param>
+          </data>
+        </attribute>
+        <empty/>
+      </element>
+    </element>
+  </define>
   <define name="pagebreaks"><element name="pagebreaks"><empty/></element></define>
   <define name="pictures"><element name="pictures"><ref name="simpleElement"/></element></define>
-  <define name="b"><element name="b"><ref name="simpleElement"/></element></define>
+  <define name="inlineWithoutLineMarkers">
+    <zeroOrMore>
+      <choice>
+        <text/>
+        <ref name="a"/>
+        <ref name="xref"/>
+        <ref name="b"/>
+        <ref name="i"/>
+        <ref name="span"/>
+        <ref name="sc"/>
+        <ref name="small"/>
+        <ref name="sup"/>
+        <ref name="s"/>
+        <ref name="u"/>
+        <ref name="num"/>
+        <ref name="resetnum"/>
+        <ref name="margin"/>
+        <ref name="metrik"/>
+        <ref name="line"/>
+        <ref name="br"/>
+        <ref name="hr"/>
+        <ref name="pb"/>
+        <ref name="img"/>
+        <ref name="colored"/>
+        <ref name="note"/>
+        <ref name="footnote"/>
+        <ref name="biblio"/>
+        <ref name="asterism"/>
+        <ref name="block-center"/>
+        <ref name="two-columns"/>
+        <ref name="column"/>
+        <ref name="w"/>
+        <ref name="wrap"/>
+      </choice>
+    </zeroOrMore>
+  </define>
+
+  <define name="b"><element name="b"><ref name="inlineWithoutLineMarkers"/></element></define>
   <define name="i">
     <element name="i">
       <optional><attribute name="lang"><text/></attribute></optional>
-      <ref name="simpleElement"/>
+      <ref name="inlineWithoutLineMarkers"/>
     </element>
   </define>
   <define name="span">
     <element name="span">
-      <attribute name="lang"><text/></attribute>
-      <ref name="simpleElement"/>
+      <optional><attribute name="lang"><text/></attribute></optional>
+      <ref name="inlineWithoutLineMarkers"/>
     </element>
   </define>
-  <define name="sc"><element name="sc"><ref name="simpleElement"/></element></define>
+  <define name="sc"><element name="sc"><ref name="inlineWithoutLineMarkers"/></element></define>
   <define name="small">
     <element name="small">
       <optional><attribute name="lang"><text/></attribute></optional>
-      <ref name="simpleElement"/>
+      <ref name="inlineWithoutLineMarkers"/>
     </element>
   </define>
   <define name="sup"><element name="sup"><ref name="simpleElement"/></element></define>
   <define name="s"><element name="s"><ref name="simpleElement"/></element></define>
   <define name="u"><element name="u"><ref name="simpleElement"/></element></define>
   <define name="num"><element name="num"><ref name="simpleElement"/></element></define>
-  <define name="nonum"><element name="nonum"><ref name="simpleElement"/></element></define>
+  <define name="nonum">
+    <element name="nonum">
+      <choice>
+        <ref name="inlineWithoutLineMarkers"/>
+        <ref name="center"/>
+        <ref name="right"/>
+      </choice>
+    </element>
+  </define>
   <define name="resetnum"><element name="resetnum"><ref name="simpleElement"/></element></define>
-  <define name="center"><element name="center"><ref name="simpleElement"/></element></define>
+  <define name="center"><element name="center"><ref name="inlineWithoutLineMarkers"/></element></define>
   <define name="right">
     <element name="right">
       <optional><attribute name="lang"><text/></attribute></optional>
-      <ref name="simpleElement"/>
+      <ref name="inlineWithoutLineMarkers"/>
     </element>
   </define>
   <define name="margin"><element name="margin"><ref name="simpleElement"/></element></define>
   <define name="metrik"><element name="metrik"><ref name="simpleElement"/></element></define>
-  <define name="wrap"><element name="wrap"><ref name="simpleElement"/></element></define>
+  <define name="wrap"><element name="wrap"><ref name="inlineWithoutLineMarkers"/></element></define>
   <define name="line">
     <element name="line">
       <optional><attribute name="lang"><text/></attribute></optional>
@@ -408,7 +558,7 @@
   <define name="w">
     <element name="w">
       <optional><attribute name="lang"><text/></attribute></optional>
-      <ref name="simpleElement"/>
+      <ref name="inlineWithoutLineMarkers"/>
     </element>
   </define>
 </grammar>

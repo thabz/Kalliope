@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bio>
+  <biographies>
+    <biography hidden="true">
+      <head>
+        <author>Sven Sørensen</author>
+      </head>
+      <body>
+Forfatter, dramatiker, translatør. 1799 landsforvist for sine skrifters revolutionære tendenser. Boede til sin død i Paris; 1800-17 ansat ved det franske udenrigsministerium. Fik med <a poet="gyllembourg">Thomasine Gyllembourg</a> sønnen <a poet="heibergjl">J. L. Heiberg</a>.
+      </body>
+    </biography>
+    <biography>
   <head>
     <source href="https://www.rosekamp.dk/DBL_All/dansk_biografisk_leksikon.htm">Paul V. Rubow in: <i>Dansk biografisk Lexikon</i>, Gyldendalske Boghandels Forlag, Kbh., 2. udg., 1932-44, bd. IX pp. 579-586.</source>
   </head>
@@ -27,8 +37,7 @@ Heiberg glimrer som Forfatter paa Baggrund af 1790'ernes oftest udvandede og kæ
 1878. Paul V. Rubow i Danske i Paris gennem Tiderne, I, 1936. -->
 
 </body>
-</bio>
 
-<!--
-Forfatter, dramatiker, translatør. 1799 landsforvist for sine skrifters revolutionære tendenser. Boede til sin død i Paris; 1800-17 ansat ved det franske udenrigsministerium. Fik med <a poet="gyllembourg">Thomasine Gyllembourg</a> sønnen <a poet="heibergjl">J. L. Heiberg</a>.
--->
+    </biography>
+  </biographies>
+</bio>

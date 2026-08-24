@@ -1,6 +1,24 @@
 import { execFileSync } from 'child_process';
 
 describe('kalliopework RELAX NG schema', () => {
+  const poetryWork = content => `
+    <kalliopework id="1900" author="digter">
+      <workhead><title>Digte</title><year>1900</year></workhead>
+      <workbody>
+        <text id="digter1900a">
+          <head><firstline>Første linje</firstline></head>
+          <body><poetry>${content}</poetry></body>
+        </text>
+      </workbody>
+    </kalliopework>
+  `;
+
+  const validate = xml => execFileSync(
+    'xmllint',
+    ['--noout', '--relaxng', 'schemas/kalliopework.rng', '-'],
+    { input: xml, encoding: 'utf8', stdio: ['pipe', 'pipe', 'pipe'] },
+  );
+
   it('accepts type-specific identifiers on workhead, source and picture', () => {
     const xml = `
       <kalliopework id="1900" author="digter">
@@ -85,6 +103,150 @@ describe('kalliopework RELAX NG schema', () => {
         { input: xml, encoding: 'utf8', stdio: ['pipe', 'pipe', 'pipe'] }
       );
     }).not.toThrow();
+  });
+
+  it('accepts metre analyses with confidence from zero to one', () => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Digte</title><year>1900</year></workhead>
+        <workbody>
+          <text id="digter1900a">
+            <head><firstline>Første linje</firstline><metre><analysis pattern="iambic-pentameter" confidence="0.91"/><analysis pattern="hendecasyllabic" confidence="1"/></metre></head>
+            <body><poetry>Første linje</poetry></body>
+          </text>
+        </workbody>
+      </kalliopework>
+    `;
+
+    expect(() => validate(xml)).not.toThrow();
+  });
+
+  it('accepts compatible form analyses with bounded confidence', () => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Digte</title><year>1900</year></workhead>
+        <workbody><text><head><form><analysis pattern="sonnet" confidence="0.99"/><analysis pattern="petrarchan-sonnet" confidence="0.96"/></form></head></text></workbody>
+      </kalliopework>
+    `;
+
+    expect(() => validate(xml)).not.toThrow();
+  });
+
+  it.each(['-0.01', '1.01', 'sikker'])('rejects invalid form confidence %s', confidence => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Digte</title><year>1900</year></workhead>
+        <workbody><text><head><form><analysis pattern="sonnet" confidence="${confidence}"/></form></head></text></workbody>
+      </kalliopework>
+    `;
+
+    expect(() => validate(xml)).toThrow();
+  });
+
+  it('rejects an unknown form analysis pattern', () => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Digte</title><year>1900</year></workhead>
+        <workbody><text><head><form><analysis pattern="fourteen-lines" confidence="0.9"/></form></head></text></workbody>
+      </kalliopework>
+    `;
+
+    expect(() => validate(xml)).toThrow();
+  });
+
+  it.each(['-0.01', '1.01', 'sikker'])('rejects invalid metre confidence %s', confidence => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Digte</title><year>1900</year></workhead>
+        <workbody><text><head><metre><analysis pattern="iambic-pentameter" confidence="${confidence}"/></metre></head></text></workbody>
+      </kalliopework>
+    `;
+
+    expect(() => validate(xml)).toThrow();
+  });
+
+  it('accepts structure analysis with positive stanza lengths', () => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Digte</title><year>1900</year></workhead>
+        <workbody>
+          <text id="digter1900a">
+            <head><firstline>Første linje</firstline><structure><analysis pattern="4-4-3-3" confidence="1.0"/></structure></head>
+            <body><poetry>Første linje</poetry></body>
+          </text>
+        </workbody>
+      </kalliopework>
+    `;
+
+    expect(() => validate(xml)).not.toThrow();
+  });
+
+  it('accepts one or more syllable analyses with bounded confidence', () => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Digte</title><year>1900</year></workhead>
+        <workbody><text><head><syllables><analysis pattern="decasyllabic" confidence="0.94"/><analysis pattern="hendecasyllabic" confidence="0.81"/></syllables></head></text></workbody>
+      </kalliopework>
+    `;
+
+    expect(() => validate(xml)).not.toThrow();
+  });
+
+  it.each(['4--4', '0-4', 'ABBA'])('rejects invalid structure pattern %s', pattern => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Digte</title><year>1900</year></workhead>
+        <workbody><text><head><structure><analysis pattern="${pattern}" confidence="1"/></structure></head></text></workbody>
+      </kalliopework>
+    `;
+
+    expect(() => validate(xml)).toThrow();
+  });
+
+  it.each(['-0.01', '1.01', 'sikker'])('rejects invalid structure confidence %s', confidence => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Digte</title><year>1900</year></workhead>
+        <workbody><text><head><structure><analysis pattern="4-4" confidence="${confidence}"/></structure></head></text></workbody>
+      </kalliopework>
+    `;
+
+    expect(() => validate(xml)).toThrow();
+  });
+
+  it.each(['-0.01', '1.01', 'sikker'])('rejects invalid syllable confidence %s', confidence => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Digte</title><year>1900</year></workhead>
+        <workbody><text><head><syllables><analysis pattern="hendecasyllabic" confidence="${confidence}"/></syllables></head></text></workbody>
+      </kalliopework>
+    `;
+
+    expect(() => validate(xml)).toThrow();
+  });
+
+  it('accepts a page break immediately before a canonical nonum line', () => {
+    const xml = poetryWork(
+      '<pb n="49" facs="055.jpg"/><nonum><center>2</center></nonum>',
+    );
+
+    expect(() => validate(xml)).not.toThrow();
+  });
+
+  it('accepts canonical nonum alignment with nested appearance markup', () => {
+    const xml = poetryWork(
+      '<nonum><right><small><i>F. H. Guldberg</i></small></right></nonum>',
+    );
+
+    expect(() => validate(xml)).not.toThrow();
+  });
+
+  it.each([
+    '<right><nonum>Signatur</nonum></right>',
+    '<nonum><small><right>Signatur</right></small></nonum>',
+    '<nonum><right><center>Signatur</center></right></nonum>',
+  ])('rejects non-canonical poetry line markup: %s', content => {
+    expect(() => validate(poetryWork(content))).toThrow();
   });
 
   it('accepts bible references but rejects the obsolete bibel attribute', () => {

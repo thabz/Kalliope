@@ -64,6 +64,29 @@ const textEntries = document => {
   return [...texts, ...proseTexts];
 };
 
+const textEntryAncestor = node => {
+  let current = node.parentNode;
+  while (current != null) {
+    if (
+      current.nodeName === 'text' ||
+      (current.nodeName === 'prose' &&
+        directChild(current, 'head') != null &&
+        directChild(current, 'body') != null)
+    ) {
+      return current;
+    }
+    current = current.parentNode;
+  }
+  return null;
+};
+
+const facsimileSourceId = pageBreak => {
+  const textEntry = textEntryAncestor(pageBreak);
+  const head = textEntry == null ? null : directChild(textEntry, 'head');
+  const source = head == null ? null : directChild(head, 'source');
+  return source?.getAttribute('in') ?? '';
+};
+
 const parseWorkXml = xml =>
   new DOMParser().parseFromString(xml, 'text/xml');
 
@@ -71,7 +94,35 @@ const checksForWorkXml = xml => ({
   facsimiles: /<source\b[^>]*\bfacsimile\s*=/.test(xml),
   pageBreaks: /<pagebreaks\b/.test(xml),
   sources: /<source\b[^>]*\bpages\s*=/.test(xml),
+  textStructure: /<text\b/.test(xml),
 });
+
+const collectTextStructureIssues = (filename, document) => {
+  const issues = [];
+
+  Array.from(document.getElementsByTagName('text')).forEach(text => {
+    const head = directChild(text, 'head');
+    const body = directChild(text, 'body');
+    if (head == null || body == null || directChild(head, 'firstline') == null) {
+      return;
+    }
+
+    const bodyElements = Array.from(body.childNodes).filter(
+      child => child.nodeType === 1,
+    );
+    if (
+      bodyElements.length > 0 &&
+      bodyElements.every(element => element.nodeName === 'prose')
+    ) {
+      const textId = text.getAttribute('id') ?? '(missing id)';
+      issues.push(
+        `${filename}: text ${textId} has only <prose> in <body> and must not have <firstline> in <head>.`,
+      );
+    }
+  });
+
+  return issues;
+};
 
 const collectSourceStructureIssues = (filename, document) => {
   const pageOnlySources = [];
@@ -170,21 +221,26 @@ const collectPageBreakIssues = (
     }
   });
 
-  let previousFacsimilePage = null;
+  const previousFacsimilePages = new Map();
   pageBreaks.forEach(pageBreak => {
     const facs = pageBreak.getAttribute('facs');
     const facsimilePage = facs == null ? null : parseFacsimilePageNumber(facs);
+    const sourceId = facsimileSourceId(pageBreak);
+    const previousFacsimilePage = previousFacsimilePages.get(sourceId) ?? null;
     if (
       facsimilePage != null &&
       previousFacsimilePage != null &&
       facsimilePage < previousFacsimilePage.number
     ) {
       issues.push(
-        `${filename}: pb/@facs must not decrease through the work: ${previousFacsimilePage.label} before ${facs}.`,
+        `${filename}: pb/@facs must not decrease within one source: ${previousFacsimilePage.label} before ${facs}.`,
       );
     }
     if (facsimilePage != null) {
-      previousFacsimilePage = { label: facs, number: facsimilePage };
+      previousFacsimilePages.set(sourceId, {
+        label: facs,
+        number: facsimilePage,
+      });
     }
   });
 
@@ -251,5 +307,6 @@ export {
   checksForWorkXml,
   collectPageBreakIssues,
   collectSourceStructureIssues,
+  collectTextStructureIssues,
   parseWorkXml,
 };
