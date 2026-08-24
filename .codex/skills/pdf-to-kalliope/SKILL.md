@@ -574,6 +574,14 @@ Do not fabricate metadata when no responsible answer exists. Use an explicit
 Titles and first lines must remain free of XML markup when the current format
 requires plain text.
 
+Title metadata must also omit terminal punctuation. Remove a final period,
+comma, colon, semicolon, question mark or exclamation mark from `title` and its
+index, table-of-contents, link and breadcrumb variants even when it appears in
+the printed heading. This normalization does not apply to subtitles,
+supertitles or the diplomatic body transcription, whose source punctuation
+must still be preserved. Follow `docs/xml-work-format.md` for the complete list
+of affected title fields.
+
 ## 8. Encode every internal source-page break
 
 Preserve every physical source-page transition that occurs inside an included

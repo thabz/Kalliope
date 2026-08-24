@@ -293,6 +293,13 @@ Titel-fallbacks:
 - `linktitle` falder tilbage til `indextitle` og derefter `title`.
 - `toctitle` falder tilbage til `title`.
 
+Titelfelter er redaktionelle metadata og skrives uden afsluttende tegnsætning.
+Fjern derfor punktum, komma, kolon, semikolon, spørgsmålstegn og udråbstegn til
+sidst i `<title>`, `<indextitle>`, `<toctitle>`, `<linktitle>` og
+`<breadcrumbtitle>`, også når tegnet står i den trykte overskrift. Reglen gælder
+ikke `<subtitle>`, `<suptitle>` eller den diplomatiske transskription i
+tekstlegemet, hvor kildens tegnsætning bevares.
+
 ### Keywords
 
 ```xml
