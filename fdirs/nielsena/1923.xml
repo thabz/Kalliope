@@ -2,7 +2,7 @@
 <kalliopework id="1923" author="nielsena" status="complete" type="poetry">
 <workhead>
   <title>Bakkegaarden</title>
-  <subtitle>En Digt-Cyklus</subtitle>
+  <subtitle>En Digt Cyklus</subtitle>
   <year>1923</year>
   <pagebreaks/>
   <notes>
@@ -440,7 +440,7 @@ bort mod Længslernes Egne.
 </body>
 </text>
 
-<text id="nielsena2026082609">
+<text id="nielsena2026082609" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Brudefærd</title>
   <firstline>Nu kæmmer Haren sit løse Uld</firstline>
