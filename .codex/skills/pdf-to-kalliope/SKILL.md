@@ -346,6 +346,11 @@ replace fresh OCR from the page images or direct visual proofreading.
 Follow `docs/facsimile-korrektur.md` when extracting embedded images or
 rendering PDF pages.
 
+Render the page images used as OCR input at 300 DPI. This requirement applies
+to OCR working images, not to the published facsimile extraction: generate the
+published facsimiles with the repository's ordinary facsimile tool and its
+established extraction policy.
+
 Maintain an explicit mapping between:
 
 - printed page
@@ -1215,9 +1220,8 @@ and requested commit/push, as required by `AGENTS.md`.
 
 After explicit user approval:
 
-1. Generate the complete facsimile directory from the source PDF at 300 DPI
-   with the repository's facsimile tool. Do not lower the resolution to reduce
-   upload size; Kalliope's published facsimile pages require 300 DPI.
+1. Generate the complete facsimile directory from the source PDF with the
+   repository's facsimile tool.
 2. Synchronize it with `./tools/sync-facsimiler.sh`.
 3. Run `npm run check-facsimiles` and verify that the public `000.jpg` for the
    new `source/@facsimile` returns successfully. Do this before opening the PR;
@@ -1265,9 +1269,9 @@ The task is complete only when all applicable items are true:
 - [ ] The findings JSONL register preserves every finding and has no open
       status.
 - [ ] The PDF's existing OCR layer was not trusted as the transcription source.
-- [ ] The facsimile pages were generated at 300 DPI, synchronized to the
-      Kalliope server, and `npm run check-facsimiles` passed against the public
-      `000.jpg`.
+- [ ] OCR working images were rendered at 300 DPI.
+- [ ] The generated facsimile was synchronized to the Kalliope server and
+      `npm run check-facsimiles` passed against the public `000.jpg`.
 - [ ] Fresh OCR was produced from page images with at least two meaningfully
       different passes or strategies.
 - [ ] Every relevant page was checked directly against the facsimile.
