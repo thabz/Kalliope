@@ -41,6 +41,12 @@ digtere.
 ## Git og GitHub
 
 - Hele testpakken skal køres og bestå, før der oprettes en PR.
+- Når en ændring tilføjer eller ændrer en `source/@facsimile`, skal facsimilet
+  genereres med repositoryets værktøj, synkroniseres med
+  `./tools/sync-facsimiler.sh` og verificeres med
+  `npm run check-facsimiles`, før PR'en oprettes eller CI genstartes. En lokal
+  PDF eller lokal billedmappe er ikke tilstrækkelig, fordi CI kontrollerer den
+  offentlige `000.jpg` på Kalliope-serveren.
 - Når brugeren beder om at få fikset et issue, skal agenten starte i et nyt
   worktree baseret på `origin/master` og først melde arbejdet klar, når GitHub
   CI er gennemført.

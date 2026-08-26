@@ -1215,11 +1215,17 @@ and requested commit/push, as required by `AGENTS.md`.
 
 After explicit user approval:
 
-1. Create or use an appropriate branch following `AGENTS.md`.
-2. Commit the complete intended change.
-3. Push the branch.
-4. Create the GitHub pull request.
-5. Follow all repository conventions for the branch, title and description.
+1. Generate the complete facsimile directory from the source PDF with the
+   repository's facsimile tool.
+2. Synchronize it with `./tools/sync-facsimiler.sh`.
+3. Run `npm run check-facsimiles` and verify that the public `000.jpg` for the
+   new `source/@facsimile` returns successfully. Do this before opening the PR;
+   CI checks the public server, not merely the local PDF or image directory.
+4. Create or use an appropriate branch following `AGENTS.md`.
+5. Commit the complete intended change.
+6. Push the branch.
+7. Create the GitHub pull request.
+8. Follow all repository conventions for the branch, title and description.
 
 The PR title and description must be in Danish.
 
@@ -1258,6 +1264,8 @@ The task is complete only when all applicable items are true:
 - [ ] The findings JSONL register preserves every finding and has no open
       status.
 - [ ] The PDF's existing OCR layer was not trusted as the transcription source.
+- [ ] The generated facsimile was synchronized to the Kalliope server and
+      `npm run check-facsimiles` passed against the public `000.jpg`.
 - [ ] Fresh OCR was produced from page images with at least two meaningfully
       different passes or strategies.
 - [ ] Every relevant page was checked directly against the facsimile.
