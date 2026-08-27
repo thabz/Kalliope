@@ -9,6 +9,15 @@ Disse regler gælder for AI-agenter og automatiserede assistenter, der arbejder 
 - Læs derefter den specialdokumentation, som stilguiden henviser til for det
   relevante område.
 
+## Repository-skills
+
+- Brug `$add-kalliope-work`, når et nyt værk skal indsættes og afleveres som
+  en pull request.
+- Brug også `$pdf-to-kalliope`, når kilden er en komplet scannet PDF, der skal
+  OCR-behandles eller transskriberes. I den arbejdsgang styrer
+  `$pdf-to-kalliope` selve PDF-, transskriptions- og korrekturarbejdet, mens
+  `$add-kalliope-work` styrer PR-checklisten og overdragelsen til brugeren.
+
 ## Kalliopes dækningsmål
 
 Ved arbejde med personer, værker, kilder og import skal
