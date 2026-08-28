@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="arguijo" country="un" lang="es" type="poet">
+  <name>
+    <firstname>Juan de</firstname>
+    <lastname>Arguijo</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1567</date>
+      <place>Sevilla</place>
+    </born>
+    <dead>
+      <date>1622-08-07</date>
+      <place>Sevilla</place>
+    </dead>
+  </period>
+  <literary-periods>es-guldalder</literary-periods>
+  <works>andre</works>
+  <identifiers>
+    <wikidata>Q3810934</wikidata>
+    <wikipedia-en>Juan de Arguijo</wikipedia-en>
+  </identifiers>
+</person>

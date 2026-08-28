@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="marston" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>John</firstname>
+    <lastname>Marston</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1576</date>
+    </born>
+    <dead>
+      <date>1634-06-25</date>
+      <place>London</place>
+    </dead>
+  </period>
+  <literary-periods>gb-renaessance</literary-periods>
+  <works>andre</works>
+  <identifiers>
+    <wikidata>Q918279</wikidata>
+    <wikipedia-en>John Marston (playwright)</wikipedia-en>
+  </identifiers>
+</person>

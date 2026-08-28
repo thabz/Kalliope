@@ -647,7 +647,7 @@ const TextPage = (props) => {
                   font-family: 'Alegreya SC';
                 }
                 @media print {
-                  font-size: 8pt;
+                  font-size: 10pt;
                   line-height: 1.5;
                 }
               `}</style>

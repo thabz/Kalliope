@@ -107,7 +107,31 @@ ruby tools/add-poem.rb DIGTER-ID [VAERK-ID]
 
 `add-poet.rb` spørger interaktivt efter persondata. `add-work.rb` opretter et
 værk og føjer det til digterens `info.xml`. `add-poem.rb` tilføjer en tom tekst
-til det angivne værk; standardværket er `andre`.
+til det angivne værk; standardværket er `andre`. `add-poem.rb` bruger den
+fælles tekst-id-generator.
+
+Generatoren kan også køres selvstændigt. Den ændrer ikke værkfilen, men
+udskriver næste ledige id for dags dato:
+
+```sh
+npm run new-text-id -- fdirs/antologierdk/1872.xml
+npm run new-text-id -- fdirs/antologierdk/1872.xml --author aarestrup
+```
+
+Uden `--author` bruges værkets `author`. Med `--author` bruges den eksplicitte
+tekstforfatter. Generatoren undersøger hele korpusset og vælger et nummer efter
+dagens højeste eksisterende løbenummer, så huller ikke genbruges. En bestemt
+dato kan angives ved test og kontrollerede importer med `--date YYYY-MM-DD`.
+
+CI-valideringen kan køres lokalt mellem to commits:
+
+```sh
+npm run validate-new-text-ids -- BASE-REF [HEAD-REF]
+```
+
+Validatoren sammenligner de parsede tekst-id'er i de to commits og kontrollerer
+kun nye id'er. `text/@author` bruges som prefix, når attributten findes; ellers
+bruges `kalliopework/@author`.
 
 `add-poet.rb` og `add-work.rb` kræver Ruby-pakken Nokogiri. `add-poem.rb` kan
 også kræve Nokogiri, hvis det først skal oprette `andre.xml` via `add-work.rb`.
@@ -138,6 +162,49 @@ ruby tools/fraktur-ocr-cleanup.rb input.txt > output.txt
 Reglerne er brede og ordnede; gennemgå derfor outputtet manuelt, før det bruges
 som kildetekst.
 
+## Afstemning af eksterne identifikatorer
+
+`identifier-reconciliation/identifier_reconciliation.py` er det fælles
+Python-værktøj til at afstemme eksterne identifikatorer mod Kalliopes
+personer, værker og senere kunstposter. Værktøjet ændrer ikke XML uden
+`--apply`; standardkørslen skriver en lokal CSV-rapport til
+`reports/identifier-reconciliation/work-identifiers.csv`.
+
+Den nuværende afstemning dækker Wikidata-, Open Library- og Runeberg-id’er for
+værker. Wikidata-kandidater klassificeres først som work-level, source-level
+(konkret udgave/version/oversættelse) eller individuelt indhold som digte,
+sange og noveller. Kun work-level-kandidater kan få status `MATCH`.
+
+Digtere og kunstværker kan afstemmes med samme værktøj og får separate lokale
+rapporter:
+
+```sh
+python3 tools/identifier-reconciliation/identifier_reconciliation.py \
+  . --entity-type poet -o reports/identifier-reconciliation/poet-identifiers.csv
+
+python3 tools/identifier-reconciliation/identifier_reconciliation.py \
+  . --entity-type artwork -o reports/identifier-reconciliation/artwork-identifiers.csv
+```
+
+`poet` gennemgår kun `info.xml`-poster med `type="poet"`. Personmatch kræver et
+Wikidata-signal for menneske/person, mens `artwork` bruger billedets titel,
+kunstner, årstal og Wikidata-værktyper (`P31`); `P170` bruges som skabersignal,
+når kunstnerens Wikidata-id er kendt. Usikre kandidater får `NO_MATCH` eller
+`REVIEW` og skal vurderes manuelt.
+
+Kør en kontrol fra repository-roden:
+
+```sh
+python3 tools/identifier-reconciliation/identifier_reconciliation.py \
+  ~/src/kalliope
+```
+
+Brug `--apply` for at indsætte manglende work-level-id’er og fjerne
+eksisterende Wikidata-id’er, som dokumenteres at være source-level eller
+individuelt indhold. Brug `--verbose` til at se, om svar kommer fra cache eller
+netværk, samt kandidatens type-, form- og klassifikationssignaler. Den lokale
+HTTP-cache ligger i `.cache/kalliope-work-identifiers/`.
+
 ## Synkronisering
 
 ### Wikidata
@@ -167,6 +234,14 @@ Scriptet bruger SSH og rsync fra værtsmaskinen og forudsætter adgang til den
 server, der er angivet i scriptet. Inden synkronisering sættes lokale mapper til
 `755` og filer til `644`. `rsync` overfører derefter rettighederne, så
 webserveren også kan læse nye facsimiler oprettet af Docker.
+
+CI kontrollerer, at hvert facsimile, som et versionsstyret XML-værk angiver i
+en `source`, har en genereret `000.jpg` på Kalliope-serveren. Kontrollen kan
+køres manuelt med:
+
+```sh
+npm run check-facsimiles
+```
 
 ## Editorintegrationer
 
