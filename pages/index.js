@@ -13,6 +13,8 @@ import SubHeading from '../components/subheading.js';
 import TextContent from '../components/textcontent.js';
 import Tooltip from '../components/tooltip.js';
 
+export const config = { unstable_runtimeJS: false };
+
 const TodaysEvents = ({ events }) => {
   const lang = useContext(LangContext);
 
@@ -64,6 +66,8 @@ const TodaysEvents = ({ events }) => {
             pictures={[picture]}
             lang={lang}
             contentLang={item.content_lang}
+            loading="lazy"
+            clickToZoom={false}
           />
         </div>
       );
@@ -173,6 +177,7 @@ let Index = (props) => {
       requestPath={requestPath}
       menuItems={kalliopeMenu()}
       selectedMenuItem="index"
+      staticSearch={true}
       paging={paging}>
       <div className="front-page">
         <PageLead>
@@ -225,7 +230,7 @@ Index.getInitialProps = async ({ query: { lang, date } }) => {
   const todayResponse = await todayPromise;
   const newsResponse = await newsPromise;
   const todaysEvents = await todayResponse.json();
-  const news = await newsResponse.json();
+  const news = (await newsResponse.json()).slice(0, 5);
 
   return { lang, country, news, todaysEvents, pagingContext };
 };

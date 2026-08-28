@@ -12,10 +12,10 @@ import Main from './main.js';
 import Picture from './picture.js';
 import Tabs from './menu.js';
 
-const Heading = (props) => {
+export const Heading = (props) => {
   const { title, poet, iconSrc: customIconSrc } = props;
   const [kalliopeIconSrc, setKalliopeIconSrc] = useState(
-    '/images/about/poet.jpg'
+    () => getKalliopeIconSrc(new Date())
   );
   useEffect(() => {
     const iconDate = getKalliopeIconDate(window.location.search);
@@ -154,6 +154,7 @@ const Page = (props) => {
     iconSrc,
     menuItems,
     selectedMenuItem,
+    staticSearch,
     query,
   } = props;
   const lang = useContext(LangContext);
@@ -188,6 +189,7 @@ const Page = (props) => {
           poet={poet}
           lang={lang}
           requestPath={requestPath}
+          staticSearch={staticSearch}
         />
         {children}
         <LangSelect lang={lang} path={requestPath} />

@@ -101,7 +101,7 @@ const FigCaption = (props) => {
   );
 };
 
-const ResponsivePicture = ({
+export const ResponsivePicture = ({
   src,
   sizes,
   className,
@@ -110,6 +110,7 @@ const ResponsivePicture = ({
   imgStyle,
   alt = '',
   width,
+  loading,
   onClick,
 }) => {
   const sources = CommonData.availableImageFormats.map(ext => {
@@ -132,6 +133,7 @@ const ResponsivePicture = ({
         className={imgClassName}
         src={fallbackSrc}
         width={width}
+        loading={loading}
         style={imgStyle}
         alt={alt}
       />
@@ -149,6 +151,7 @@ const Picture = ({
   showDropShadow = true,
   clickToZoom = true,
   startIndex = 0,
+  loading,
   sizes = '(max-width: 767px) 47vw, 250px',
 }) => {
   const [overlayShown, showOverlay] = useState(false);
@@ -194,6 +197,7 @@ const Picture = ({
         src={src}
         sizes={sizes}
         imgClassName={imgClassName}
+        loading={loading}
         alt={alt}
       />
     );
@@ -225,6 +229,7 @@ const Picture = ({
           imgClassName={pictureClassName}
           imgStyle={clipPathStyle}
           width="100%"
+          loading={loading}
           alt={alt}
         />
         <FigCaption

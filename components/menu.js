@@ -15,7 +15,8 @@ const pathWithoutQuery = url => url.split(/[?#]/, 1)[0];
 const Tabs = (props) => {
   let searchField;
 
-  const { items, selected, poet, lang, query, requestPath } = props;
+  const { items, selected, poet, lang, query, requestPath, staticSearch } =
+    props;
   let country = props.country;
   if (country == null) {
     country = lang === 'da' ? 'dk' : 'gb';
@@ -201,9 +202,17 @@ const Tabs = (props) => {
     <div className="tabs-container">
       {leftSide}
       <div className="svg-container" style={{ alignSelf: 'flex-start' }}>
-        <span onClick={onLoupeClick} style={{ cursor: 'pointer' }}>
-          <LoupeSVG color={showSearchField ? 'black' : '#707070'} />
-        </span>
+        {staticSearch ? (
+          <Link
+            href={Links.searchURL(lang, '', country)}
+            aria-label={_('Søg i Kalliope', lang)}>
+            <LoupeSVG color="#707070" />
+          </Link>
+        ) : (
+          <span onClick={onLoupeClick} style={{ cursor: 'pointer' }}>
+            <LoupeSVG color={showSearchField ? 'black' : '#707070'} />
+          </span>
+        )}
       </div>
       <style jsx>{`
           .tabs-container {
