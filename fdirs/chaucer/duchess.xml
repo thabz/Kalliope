@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="duchess" author="chaucer" status="incomplete" type="poetry">
 <workhead>
-   <title>Book of the Duchess</title>
-   <year>?</year>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+  <title>Book of the Duchess</title>
+  <identifiers>
+    <openlibrary-work>OL30092326W</openlibrary-work>
+  </identifiers>
 </workhead>
 </kalliopework>

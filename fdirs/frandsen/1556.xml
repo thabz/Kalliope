@@ -1,28 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1556" author="frandsen" status="incomplete" type="poetry">
 <workhead>
-   <title>De oculorum fabricatione et coloribus</title>
-   <year>1556</year>
-   <cvs-timestamp>$Id$</cvs-timestamp>
-   <notes>
-      <note>Titlen kan oversættes: "Om øjnenes dele og om farverne".</note>
-      <note>Den fulde titel på denne nu sjældne bog lyder: <i>De oculorum fabricatione et coloribus liber, elegiaco carmine conscriptus, autore Johanne Francisco Ripensi.</i> Witebergæ [Wittenberg] excudebant hæredes Georgii Rhavv Anno M. D. LVI. [1556].</note>
-      <note>Her indtastet efter <i>Fasciculus gratulatorius in honorem K.K.K.  Lundsgaard,</i> Kbh. 1927, side 267-276.</note>
+  <title>De oculorum fabricatione et coloribus</title>
+  <year>1556</year>
+  <notes>
+    <note>Titlen kan oversættes: "Om øjnenes dele og om farverne".</note>
+    <note>Den fulde titel på denne nu sjældne bog lyder: <i>De oculorum fabricatione et coloribus liber, elegiaco carmine conscriptus, autore Johanne Francisco Ripensi.</i> Witebergæ [Wittenberg] excudebant hæredes Georgii Rhavv Anno M. D. LVI. [1556].</note>
 
-     <note>Ortografiske småting er stiltiende normaliseret (u &gt; v; quoq; &gt; quoque; osv.).</note>
-      <note type="credits">Bidrag fra Sven Sørensen.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+    <note>Ortografiske småting er stiltiende normaliseret (u &gt; v; quoq; &gt; quoque; osv.).</note>
+    <note type="credits">Bidrag fra Sven Sørensen.</note>
+  </notes>
+  <source pages="267-276"><i>Fasciculus gratulatorius in honorem K.K.K.  Lundsgaard,</i> Kbh. 1927.</source>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </workhead>
 <workbody>
 
 <text id="frandsen2003032301">
 <head>
-   <title>Nonne juvat varias rerum cognoscere causas?</title>
-   <toctitle>Nonne juvat varias rerum cognoscere causas?</toctitle>
-   <indextitle>Nonne juvat varias rerum cognoscere causas?</indextitle>
-   <firstline>Nonne juvat varias rerum cognoscere causas?</firstline>
+  <title>Nonne juvat varias rerum cognoscere causas?</title>
+  <toctitle>Nonne juvat varias rerum cognoscere causas?</toctitle>
+  <indextitle>Nonne juvat varias rerum cognoscere causas?</indextitle>
+  <firstline>Nonne juvat varias rerum cognoscere causas?</firstline>
 </head>
 <body>
 <poetry>
@@ -110,10 +108,10 @@ Has igitur tandem laudes o Musa relinque,
 
 <text id="frandsen2003032302">
 <head>
-   <title>De situ</title>
-   <toctitle>De situ</toctitle>
-   <indextitle>De situ</indextitle>
-   <firstline>Cum situs incæpti primus sit in ordine nostri</firstline>
+  <title>De situ</title>
+  <toctitle>De situ</toctitle>
+  <indextitle>De situ</indextitle>
+  <firstline>Cum situs incæpti primus sit in ordine nostri</firstline>
 </head>
 <body>
 <poetry>
@@ -163,13 +161,13 @@ Sensibus hoc differt reliquis sed nomine tactus,
 
 <text id="frandsen2003032303">
 <head>
-   <title>De partibus</title>
-   <toctitle>De partibus</toctitle>
-   <indextitle>De partibus</indextitle>
-   <firstline>Lumina suprema frontis cavitate locata</firstline>
-   <notes>
-   <note>En tysk oversættelse af digtets begyndelse findes her: <a href="http://www.phil-hum-ren.uni-muenchen.de/GermLat/Acta/Coppel.htm#_ftnref26">Coppel</a>.</note>
-   </notes>
+  <title>De partibus</title>
+  <toctitle>De partibus</toctitle>
+  <indextitle>De partibus</indextitle>
+  <firstline>Lumina suprema frontis cavitate locata</firstline>
+  <notes>
+    <note>En tysk oversættelse af digtets begyndelse findes her: <a href="http://www.phil-hum-ren.uni-muenchen.de/GermLat/Acta/Coppel.htm#_ftnref26">Coppel</a>.</note>
+  </notes>
 </head>
 <body>
 <poetry>
@@ -253,13 +251,12 @@ Sic partes oculi tenui dictante Minerva,
 </body>
 </text>
 
-
 <text id="frandsen2003032304">
 <head>
-   <title>De forma et figura</title>
-   <toctitle>De forma et figura</toctitle>
-   <indextitle>De forma et figura</indextitle>
-   <firstline>Quis rogo vel formas oculorum, sive figuras</firstline>
+  <title>De forma et figura</title>
+  <toctitle>De forma et figura</toctitle>
+  <indextitle>De forma et figura</indextitle>
+  <firstline>Quis rogo vel formas oculorum, sive figuras</firstline>
 </head>
 <body>
 <poetry>
@@ -287,16 +284,15 @@ Hanc igitur formam quis non contenderit aptam,
 </body>
 </text>
 
-
 <text id="frandsen2003032305">
 <head>
-   <title>De coloribus</title>
-   <toctitle>De coloribus</toctitle>
-   <indextitle>De coloribus</indextitle>
-   <firstline>Ultima sit species variorum cura colorum</firstline>
-   <notes>
-      <note>To brudstykker af dette digt er aftrykt i N.M. Petersen, <i>Den danske Literaturs Historie,</i> bind 2 (1867), side 44.</note>
-   </notes>
+  <title>De coloribus</title>
+  <toctitle>De coloribus</toctitle>
+  <indextitle>De coloribus</indextitle>
+  <firstline>Ultima sit species variorum cura colorum</firstline>
+  <notes>
+    <note>To brudstykker af dette digt er aftrykt i N.M. Petersen, <i>Den danske Literaturs Historie,</i> bind 2 (1867), side 44.</note>
+  </notes>
 </head>
 <body>
 <poetry>
@@ -458,4 +454,3 @@ Sic cecini quæ sint laudes et luminis usus,
 
 </workbody>
 </kalliopework>
-

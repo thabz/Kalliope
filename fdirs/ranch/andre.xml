@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="ranch" status="incomplete" type="poetry">
 <workhead>
-   <title>Andre digte</title>
-   <year>?</year>
-   <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+  <title>Andre digte</title>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
 <text id="ranch2002072701">
 <head>
-   <title>Fuglevise</title>
-   <toctitle>Fuglevise</toctitle>
-   <indextitle>Fuglevise</indextitle>
-   <firstline>Vi ville gaa at spadsere</firstline>
-   <quality>korrektur1</quality>
-   <!-- # Dappet efter Billens DdL, I, p. 65ff.-->
+  <title>Fuglevise</title>
+  <toctitle>Fuglevise</toctitle>
+  <indextitle>Fuglevise</indextitle>
+  <firstline>Vi ville gaa at spadsere</firstline>
+  <quality>korrektur1</quality>
+  <!-- # Dappet efter Billens DdL, I, p. 65ff.-->
 </head>
 <body>
 <poetry>
@@ -442,5 +439,6 @@ saa drikke vi af Helding.
 </poetry>
 </body>
 </text>
+
 </workbody>
 </kalliopework>

@@ -1,21 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="vogelweide" status="incomplete" type="poetry">
 <workhead>
-   <title>Andre digte</title>
-   <year>?</year>
-   <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+  <title>Andre digte</title>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
+<text id="vogelweide2026082301" lang="de">
+<head>
+  <title>Der stuol ze Rôme ist allerêrst berihtet rehte</title>
+  <firstline>Der stuol ze Rôme ist allerêrst berihtet rehte</firstline>
+  <source><a href="https://www.tha.de/~harsch/germanica/Chronologie/13Jh/Walther/wal_ge16.html">Bibliotheca Augustana</a>: <i>Politische Sprüche XVI</i>.</source>
+</head>
+<body>
+<poetry>
+Der stuol ze Rôme ist allerêrst berihtet rehte,
+als hie vor bî einem zouberære Gêrbrehte.
+der selbe gap ze valle wan sîn eines leben:
+sô wil sich dirre und al die kristenheit ze valle geben.
+alle zungen suln ze gote schrîen wâfen,
+und rüefen ime, wie lange er welle slâfen.
+si widerwürkent sîniu werc und felschent sîniu wort.
+sîn kamerære stilt im sînen himelhort,
+sîn süener mordet hie und roubet dort,
+sîn hirte ist zeinem wolve im worden under sînen schâfen.
+</poetry>
+</body>
+</text>
+
 <text id="vogel2000070901">
 <head>
-   <title>Under der linden</title>
-   <toctitle>Under der linden</toctitle>
-   <indextitle>Under der linden</indextitle>
-   <firstline>Under der linden</firstline>
-   <quality>korrektur1</quality>
+  <title>Under der linden</title>
+  <toctitle>Under der linden</toctitle>
+  <indextitle>Under der linden</indextitle>
+  <firstline>Under der linden</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -64,11 +83,11 @@ daz mac wol getriuwe sîn.
 
 <text id="vogel2000070902">
 <head>
-   <title>Ich sach mit mînen ougen</title>
-   <toctitle>Ich sach mit mînen ougen</toctitle>
-   <indextitle>Ich sach mit mînen ougen</indextitle>
-   <firstline>Ich sach mit mînen ougen</firstline>
-   <quality>korrektur1</quality>
+  <title>Ich sach mit mînen ougen</title>
+  <toctitle>Ich sach mit mînen ougen</toctitle>
+  <indextitle>Ich sach mit mînen ougen</indextitle>
+  <firstline>Ich sach mit mînen ougen</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -103,11 +122,11 @@ hilf, hêrre, dîner kristenheit!'
 
 <text id="vogel2000070903">
 <head>
-   <title>Ich saz ûf einem Steine</title>
-   <toctitle>Ich saz ûf einem Steine</toctitle>
-   <indextitle>Ich saz ûf einem Steine</indextitle>
-   <firstline>Ich saz ûf einem Steine</firstline>
-   <quality>korrektur1</quality>
+  <title>Ich saz ûf einem Steine</title>
+  <toctitle>Ich saz ûf einem Steine</toctitle>
+  <indextitle>Ich saz ûf einem Steine</indextitle>
+  <firstline>Ich saz ûf einem Steine</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -141,11 +160,11 @@ diu zwei enwerden ê gesunt.
 
 <text id="vogel2001102401">
 <head>
-   <title>Der keiser als spileman</title>
-   <toctitle>Der keiser als spileman</toctitle>
-   <indextitle>Der keiser als spileman</indextitle>
-   <firstline>Ob ich mich selben rüemen sol</firstline>
-   <quality>korrektur1</quality>
+  <title>Der keiser als spileman</title>
+  <toctitle>Der keiser als spileman</toctitle>
+  <indextitle>Der keiser als spileman</indextitle>
+  <firstline>Ob ich mich selben rüemen sol</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -198,14 +217,14 @@ dâ keiser spil. nein, hêrre keiser, anderswâ!
 
 <text id="vogel2001102402">
 <head>
-   <title>Ir sult sprechen willekomen</title>
-   <toctitle>Ir sult sprechen willekomen</toctitle>
-   <indextitle>Ir sult sprechen willekomen</indextitle>
-   <firstline>Ir sult sprechen willekomen</firstline>
-   <pictures>
-      <picture src="vogel2001102402-1.jpg">Detalje af digtets manuskript</picture>
-   </pictures>
-   <quality>korrektur1</quality>
+  <title>Ir sult sprechen willekomen</title>
+  <toctitle>Ir sult sprechen willekomen</toctitle>
+  <indextitle>Ir sult sprechen willekomen</indextitle>
+  <firstline>Ir sult sprechen willekomen</firstline>
+  <pictures>
+    <picture src="vogel2001102402-1.jpg">Detalje af digtets manuskript</picture>
+  </pictures>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -267,9 +286,9 @@ her nâch mac si sichs bekêren.
 
 <text id="vogel2017120201">
 <head>
-   <title>Halmorakel</title>
-   <firstline>In einem zwîvellîchen wân</firstline>
-   <quality>korrektur1</quality>
+  <title>Halmorakel</title>
+  <firstline>In einem zwîvellîchen wân</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -281,7 +300,7 @@ Trôst mag ez rehte niht geheizen, ôwê des!
 ez ist vil kûme ein kleinez troestelîn,
 sô kleine, swenne ichz iu gesage, ir spottet mîn.
 doch fröut sich lützel ieman, er enwizze wes.
- 
+
 Mich hât ein halm gemachet frô:
 er giht, ich sül genâde vinden.
 Ich maz daz selbe kleine strô,
@@ -296,9 +315,9 @@ daz troestet mich: dâ hoeret ouch geloube zuo.
 
 <text id="vogel2017120202">
 <head>
-   <title>Bin ich dir unmære</title>
-   <firstline>Bin ich dir unmære</firstline>
-   <quality>korrektur1</quality>
+  <title>Bin ich dir unmære</title>
+  <firstline>Bin ich dir unmære</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>

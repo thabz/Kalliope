@@ -1,18 +1,12 @@
-// @flow
-
-import React from 'react';
-import type { Poet, Lang } from '../common/types.js';
+import { useContext } from 'react';
+import LangContext from '../common/LangContext.js';
 import { poetNameParts } from './poetname-helpers.js';
 
-type PoetNameProps = {
-  poet: Poet,
-  lastNameFirst?: boolean,
-  includePeriod?: boolean,
-};
-const PoetName = (props: PoetNameProps) => {
+const PoetName = (props) => {
   const { poet, lastNameFirst, includePeriod } = props;
+  const lang = useContext(LangContext);
   let pp = null;
-  const p = poetNameParts(poet, lastNameFirst, includePeriod);
+  const p = poetNameParts(poet, lastNameFirst, includePeriod, lang);
   const p0 =
     p[0] != null ? (
       <span key={0} className="name">

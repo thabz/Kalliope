@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="marot" status="incomplete" type="poetry">
 <workhead>
-   <title>Andre digte</title>
-   <year>?</year>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+  <title>Andre digte</title>
 </workhead>
 <workbody>
 
 <text id="marot2001081301">
 <head>
-   <title>A une damoyselle malade</title>
-   <toctitle>A une damoyselle malade</toctitle>
-   <indextitle>A une damoyselle malade</indextitle>
-   <firstline>Ma mignonne</firstline>
+  <title>A une damoyselle malade</title>
+  <toctitle>A une damoyselle malade</toctitle>
+  <indextitle>A une damoyselle malade</indextitle>
+  <firstline>Ma mignonne</firstline>
 </head>
 <body>
 <poetry>
@@ -48,5 +45,6 @@ Ma mignonne.
 </poetry>
 </body>
 </text>
+
 </workbody>
 </kalliopework>

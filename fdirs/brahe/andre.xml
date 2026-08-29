@@ -1,27 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="brahe" status="incomplete" type="poetry">
 <workhead>
-   <title>Andre digte</title>
-   <year>?</year>
-   <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+  <title>Andre digte</title>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
 <text id="brahe2003011501" lang="la">
 <head>
-   <title>Ad Daniam elegia</title>
-   <toctitle>Ad Daniam elegia</toctitle>
-   <indextitle>Ad Daniam elegia</indextitle>
-   <firstline>Dania quid merui, quo te mea Patria læsi</firstline>
-   <notes>
-      <note>Tycho nedskrev dette digt i sin observationsprotokol, da han i 1597 efter at have forladt Danmark opholdt sig i Wandsbeck i Holsten.</note>
-      <note>Kilde: <i>Tychonis Brahe Dani opera omnia,</i> Bd. 9 (1927), side 208-211.</note>
-      <note>En dansk oversættelse er i uddrag aftrykt i Carl S. Petersen, <i>Illustreret dansk Litteraturhistorie,</i> bind 1 (1929), side 367-368.</note>
-      <note type="credits">Bidrag fra Sven Sørensen.</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title>Ad Daniam elegia</title>
+  <toctitle>Ad Daniam elegia</toctitle>
+  <indextitle>Ad Daniam elegia</indextitle>
+  <firstline>Dania quid merui, quo te mea Patria læsi</firstline>
+  <notes>
+    <note>Tycho nedskrev dette digt i sin observationsprotokol, da han i 1597 efter at have forladt Danmark opholdt sig i Wandsbeck i Holsten.</note>
+    <note>En dansk oversættelse er i uddrag aftrykt i Carl S. Petersen, <i>Illustreret dansk Litteraturhistorie,</i> bind 1 (1929), side 367-368.</note>
+    <note type="credits">Bidrag fra Sven Sørensen.</note>
+  </notes>
+  <source pages="208-211"><i>Tychonis Brahe Dani opera omnia,</i> Bd. 9 (1927).</source>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -131,20 +128,19 @@ Quin tua Ranzovi, donec sibi sidera coelum
 </body>
 </text>
 
-
 <text id="brahe2003032301" lang="la">
 <head>
-   <title>Gravskrift over Hans Frandsen</title>
-   <toctitle>Gravskrift over Hans Frandsen</toctitle>
-   <indextitle>Gravskrift over Hans Frandsen</indextitle>
-   <firstline>Si mortale nihil deceat perferre Camoenas</firstline>
-   <notes>
-      <note>Gravskrift over latindigteren <a poet="frandsen">Hans Frandsen</a>.</note>
-      <note>Først trykt i P. Gassendi, <i>Tychonis Brahei Vita,</i> Paris 1654. Her efter <i>Tychonis Brahe Dani opera omnia,</i> Bd. 9 (1927), side 178.</note>
-      <note type="credits">Bidrag fra Sven Sørensen.</note>
-   </notes>
-   <keywords>gravskrift</keywords>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Gravskrift over Hans Frandsen</title>
+  <toctitle>Gravskrift over Hans Frandsen</toctitle>
+  <indextitle>Gravskrift over Hans Frandsen</indextitle>
+  <firstline>Si mortale nihil deceat perferre Camoenas</firstline>
+  <notes>
+    <note>Gravskrift over latindigteren <a poet="frandsen">Hans Frandsen</a>.</note>
+    <note>Først trykt i P. Gassendi, <i>Tychonis Brahei Vita,</i> Paris 1654. Her efter <i>Tychonis Brahe Dani opera omnia,</i> Bd. 9 (1927), side 178.</note>
+    <note type="credits">Bidrag fra Sven Sørensen.</note>
+  </notes>
+  <keywords>gravskrift</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>

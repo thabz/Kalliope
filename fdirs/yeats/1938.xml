@@ -1,25 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1938" author="yeats" status="incomplete" type="poetry">
 <workhead>
-   <title>Last Poems</title>
-   <year>1938-39</year>
-   <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+  <title>Last Poems</title>
+  <year>1938-39</year>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
 <text id="yeats2002012801">
 <head>
-   <title>Under Ben Bulben</title>
-   <toctitle>Under Ben Bulben</toctitle>
-   <indextitle>Under Ben Bulben</indextitle>
-   <firstline>Swear by what the sages spoke</firstline>
-   <notes>
-      <note>Kilden er W.B. Yeats, <i>The Poems</i>, ed. Richard J. Finneran, Simon &amp; Schuster, 1997, p. 333-36.</note>
-      <note type="credits">Indtastet af Brian Bentsen.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Under Ben Bulben</title>
+  <toctitle>Under Ben Bulben</toctitle>
+  <indextitle>Under Ben Bulben</indextitle>
+  <firstline>Swear by what the sages spoke</firstline>
+  <notes>
+    <note type="credits">Indtastet af Brian Bentsen.</note>
+  </notes>
+  <source pages="333-336">W.B. Yeats, <i>The Poems</i>, ed. Richard J. Finneran, Simon &amp; Schuster, 1997.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -145,5 +143,6 @@ By his command these words are cut:
 </poetry>
 </body>
 </text>
+
 </workbody>
 </kalliopework>

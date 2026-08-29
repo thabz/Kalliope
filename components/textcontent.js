@@ -1,24 +1,16 @@
-// @flow
-import React, { useContext } from 'react';
-import { Link } from '../routes';
-var DOMParser = require('xmldom').DOMParser;
-import LangContext from '../common/LangContext.js';
-import type {
-  Text,
-  TextLang,
-  Lang,
-  TextContentOptions,
-  TextContentType,
-} from '../common/types.js';
-import { Footnote } from './footnotes.js';
-import * as Links from './links';
+import Link from 'next/link';
+import { useContext } from 'react';
 import CommonData from '../common/commondata.js';
+import LangContext from '../common/LangContext.js';
+import { Footnote } from './footnotes.js';
+import * as Links from './links.js';
+import { DOMParser } from '@xmldom/xmldom';
 
 // Render xml
-const renderXmlString = (inputString: string) => {
+const renderXmlString = (inputString) => {
   const lang = useContext(LangContext);
 
-  const handle_metrik = (s: string) => {
+  const handle_metrik = (s) => {
     // Disse metrik symboler ligger i Unicode 23Dx
     // http://www.unicode.org/charts/PDF/U2300.pdf
     const unicode = s
@@ -45,78 +37,103 @@ const renderXmlString = (inputString: string) => {
     );
   };
 
-  const handle_a = (node: any) => {
+  const handle_hash_link_click = (event, href) => {
+    if (typeof window === 'undefined' || href.indexOf('#') === -1) {
+      return;
+    }
+    event.preventDefault();
+
+    const target = new URL(href, window.location.href);
+    if (
+      target.pathname === window.location.pathname &&
+      target.search === window.location.search
+    ) {
+      window.location.hash = target.hash;
+      window.location.reload();
+    } else {
+      window.location.href = target.toString();
+    }
+  };
+
+  const handle_link = (href, children) => {
+    const key = keySeq++;
+    if (href.indexOf('#') > -1) {
+      return (
+        <a
+          key={key}
+          href={href}
+          onClick={(e) => handle_hash_link_click(e, href)}>
+          {children}
+        </a>
+      );
+    }
+    return (
+      <Link key={key} href={href}>
+        {children}
+      </Link>
+    );
+  };
+
+  const handle_a = (node) => {
     if (node.hasAttribute('person')) {
       const poetId = node.getAttribute('person');
-      return (
-        <Link key={keySeq++} route={Links.poetURL(lang, poetId)}>
-          <a>{handle_nodes(node.childNodes)}</a>
-        </Link>
+      return handle_link(
+        Links.poetURL(lang, poetId),
+        handle_nodes(node.childNodes)
       );
     } else if (node.hasAttribute('poet')) {
       const poetId = node.getAttribute('poet');
-      return (
-        <Link key={keySeq++} route={Links.poetURL(lang, poetId)}>
-          <a>{handle_nodes(node.childNodes)}</a>
-        </Link>
+      return handle_link(
+        Links.poetURL(lang, poetId),
+        handle_nodes(node.childNodes)
       );
     } else if (node.hasAttribute('poem')) {
       const textId = node.getAttribute('poem');
-      return (
-        <Link key={keySeq++} route={Links.textURL(lang, textId)}>
-          <a>{handle_nodes(node.childNodes)}</a>
-        </Link>
+      return handle_link(
+        Links.textURL(lang, textId),
+        handle_nodes(node.childNodes)
       );
     } else if (node.hasAttribute('text')) {
       const textId = node.getAttribute('text');
-      return (
-        <Link key={keySeq++} route={Links.textURL(lang, textId)}>
-          <a>{handle_nodes(node.childNodes)}</a>
-        </Link>
+      return handle_link(
+        Links.textURL(lang, textId),
+        handle_nodes(node.childNodes)
       );
     } else if (node.hasAttribute('keyword')) {
       const keywordId = node.getAttribute('keyword');
-      return (
-        <Link key={keySeq++} route={Links.keywordURL(lang, keywordId)}>
-          <a>{handle_nodes(node.childNodes)}</a>
-        </Link>
+      return handle_link(
+        Links.keywordURL(lang, keywordId),
+        handle_nodes(node.childNodes)
       );
     } else if (node.hasAttribute('dict')) {
       const keywordId = node.getAttribute('dict');
-      return (
-        <Link key={keySeq++} route={Links.dictionaryURL(lang, keywordId)}>
-          <a>{handle_nodes(node.childNodes)}</a>
-        </Link>
+      return handle_link(
+        Links.dictionaryURL(lang, keywordId),
+        handle_nodes(node.childNodes)
       );
     } else if (node.hasAttribute('work')) {
       const parts = node.getAttribute('work').split('/');
       const poetId = parts[0];
       const workId = parts[1];
-      return (
-        <Link key={keySeq++} route={Links.workURL(lang, poetId, workId)}>
-          <a>{handle_nodes(node.childNodes)}</a>
-        </Link>
+      return handle_link(
+        Links.workURL(lang, poetId, workId),
+        handle_nodes(node.childNodes)
       );
     } else if (node.hasAttribute('href')) {
       const href = node.getAttribute('href');
-      return (
-        <Link key={keySeq++} route={href}>
-          <a>{handle_nodes(node.childNodes)}</a>
-        </Link>
-      );
+      return handle_link(href, handle_nodes(node.childNodes));
     } else if (node.hasAttribute('bible')) {
       const bibleId = node.getAttribute('bible');
-      return (
-        <Link key={keySeq++} route={Links.bibleURL(lang, bibleId)}>
-          <a>{handle_nodes(node.childNodes)}</a>
-        </Link>
+      return handle_link(
+        Links.bibleURL(lang, bibleId),
+        handle_nodes(node.childNodes)
       );
     } else {
       return <code key={keySeq++}>{node.toString()}</code>;
     }
   };
 
-  const handle_node = (node: any) => {
+  const handle_node = (node) => {
     switch (node.nodeName) {
       case 'br':
         return <br key={keySeq++} />;
@@ -127,7 +144,17 @@ const renderXmlString = (inputString: string) => {
       case 'pb':
         return null;
       case 'i':
-        return <i key={keySeq++}>{handle_nodes(node.childNodes)}</i>;
+        return (
+          <i key={keySeq++} lang={node.getAttribute('lang') || undefined}>
+            {handle_nodes(node.childNodes)}
+          </i>
+        );
+      case 'span':
+        return (
+          <span key={keySeq++} lang={node.getAttribute('lang') || undefined}>
+            {handle_nodes(node.childNodes)}
+          </span>
+        );
       case 'b':
         return <b key={keySeq++}>{handle_nodes(node.childNodes)}</b>;
       case 'u':
@@ -312,7 +339,7 @@ const renderXmlString = (inputString: string) => {
     }
   };
 
-  const handle_nodes = (nodes: any) => {
+  const handle_nodes = (nodes) => {
     let collected = [];
     for (let i = 0; i < nodes.length; i++) {
       const node = nodes.item(i);
@@ -323,18 +350,19 @@ const renderXmlString = (inputString: string) => {
   };
 
   const frag = new DOMParser().parseFromString(
-    '<content>' + inputString + '</content>'
+    '<content>' + inputString + '</content>',
+    'text/xml'
   );
   return handle_nodes(frag.childNodes);
 };
 export { renderXmlString };
 
 // Fiks bindestreger mellem årstal, sidetal osv.
-const replaceHyphens = (s: string) => {
+const replaceHyphens = (s) => {
   return s.replace(/(\d)-(\d)/g, '$1–$2'); // Hyphen/minus (U+002D) to en-dash (U+2013)
 };
 
-const TextInline = (props: TextContentPropsType) => {
+const TextInline = (props) => {
   const { contentHtml } = props;
   if (contentHtml == null) {
     return null;
@@ -346,16 +374,8 @@ const TextInline = (props: TextContentPropsType) => {
 export { TextInline };
 
 let keySeq = 1;
-type TextContentPropsType = {
-  contentHtml: ?TextContentType,
-  contentLang: TextLang,
-  options?: TextContentOptions,
-  style?: Object,
-  className?: string,
-  type?: 'prose' | 'poetry' | 'quote',
-  keyPrefix?: string, // Ved bladring hopper linjenumrene hvis alle digtes linjer har samme key.
-};
-const TextContent = (props: TextContentPropsType) => {
+
+const TextContent = (props) => {
   const lang = useContext(LangContext);
 
   const {
@@ -499,7 +519,7 @@ const TextContent = (props: TextContentPropsType) => {
   }
 
   let smallClassName = '';
-  if (options.fontSize === 'small') {
+  if (type === 'quote' || options.fontSize === 'small') {
     smallClassName = ' small';
   }
 
@@ -534,11 +554,12 @@ const TextContent = (props: TextContentPropsType) => {
           content: attr(data-num);
           color: black;
           margin-right: 1em;
-          width: 1.5em;
+          width: 3.5em;
+          white-space: nowrap;
           font-size: 1em;
           text-align: right;
           display: inline-block;
-          margin-left: -2.5em;
+          margin-left: -4.5em;
           vertical-align: top;
           margin-top: 0;
         }
@@ -622,10 +643,11 @@ const TextContent = (props: TextContentPropsType) => {
           padding-left: 10px;
         }
         :global(.blockquote) {
-          /*width: calc(100% - ${options.marginLeft} - ${options.marginRight});*/
-          margin-left: ${options.marginLeft};
-          margin-right: ${options.marginRight};
-          font-size: ${options.fontSize};
+          display: block;
+          width: fit-content;
+          max-width: ${options.maxWidth ?? '70%'};
+          margin-inline-start: auto;
+          margin-inline-end: 0;
         }
       `}</style>
     </div>

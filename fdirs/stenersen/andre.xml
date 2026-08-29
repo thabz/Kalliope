@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="stenersen" status="incomplete" type="poetry">
 <workhead>
-   <title>Andre digte</title>
-   <year>?</year>
-   <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+  <title>Andre digte</title>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
 <text id="stenersen1999031101">
 <head>
-   <title>Ode til Selskabsbrødrene</title>
-   <toctitle>Ode til Selskabsbrødrene</toctitle>
-   <indextitle>Ode til Selskabsbrødrene</indextitle>
-   <firstline>Druernes Kræfter presses til vor Glæde</firstline>
-   <quality>korrektur1</quality>
-   <keywords>norskeselskab,ode</keywords>
+  <title>Ode til Selskabsbrødrene</title>
+  <toctitle>Ode til Selskabsbrødrene</toctitle>
+  <indextitle>Ode til Selskabsbrødrene</indextitle>
+  <firstline>Druernes Kræfter presses til vor Glæde</firstline>
+  <quality>korrektur1</quality>
+  <keywords>norskeselskab,ode</keywords>
 </head>
 <body>
 <poetry>
@@ -92,5 +89,6 @@ Unge ham ærer.
 </poetry>
 </body>
 </text>
+
 </workbody>
 </kalliopework>

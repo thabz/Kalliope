@@ -1,33 +1,60 @@
-const fs = require('fs');
-const {
+import fs from 'fs';
+import { catalogFilename, literaryPeriods } from './literary-periods.js';
+import {
   isFileModified,
   loadCachedJSON,
   writeCachedJSON,
-  force_reload: globalForceReload,
-} = require('../libs/caching.js');
-const {
+  force_reload as globalForceReload,
+} from '../libs/caching.js';
+import {
   fileExists,
+  fileModifiedTime,
   safeMkdir,
   writeJSON,
   resizeImage,
-} = require('../libs/helpers.js');
-const {
+} from '../libs/helpers.js';
+import {
   loadXMLDoc,
   safeGetText,
   safeGetAttr,
   getChildByTagName,
   getElementsByTagName,
-} = require('./xml.js');
+} from './xml.js';
+import { hasExternalIdentifiers } from './external-identifiers.js';
+import { worksForPoet } from './anthologies.js';
+
+const knownPoetLanguages = new Set([
+  'da',
+  'sv',
+  'no',
+  'en',
+  'de',
+  'fr',
+  'la',
+  'grc',
+  'el',
+  'fa',
+  'es',
+  'nl',
+  'un',
+  'it',
+]);
+
+const isKnownPoetLanguage = lang => knownPoetLanguages.has(lang);
 
 const create_poet_square_thumb = (poetId, square_path) => {
-  const path = `static/images/${poetId}/${square_path}`;
-  const destFolder = `static/images/${poetId}/social`;
-  const destPath = `${destFolder}/${poetId}.jpg`;
-  if (!fileExists(destPath)) {
+  const path = `public/images/${poetId}/${square_path}`;
+  const destFolder = `public/generated/images/${poetId}/social`;
+  const jpegPath = `${destFolder}/${poetId}.jpg`;
+  const destinationModifiedTime = fileModifiedTime(jpegPath);
+  if (
+    destinationModifiedTime == null ||
+    fileModifiedTime(path) > destinationModifiedTime
+  ) {
     safeMkdir(destFolder);
-    resizeImage(path, destPath, 600);
+    resizeImage(path, jpegPath, 600, { fit: 'cover', quality: 82 });
   }
-  return `social/${poetId}.jpg`;
+  return `/generated/images/${poetId}/social/${poetId}.jpg`;
 };
 
 let _all_poet_ids = null;
@@ -37,6 +64,32 @@ const all_poet_ids = () => {
   }
   return _all_poet_ids;
 };
+
+const parseLiteraryPeriods = (id, country, value) => {
+  if (value == null || value.trim() === '') {
+    return [];
+  }
+  const periods = value
+    .split(',')
+    .map(period => period.trim())
+    .filter(period => period !== '');
+  periods.forEach(period => {
+    if (literaryPeriods.idMap.has(period) === false) {
+      throw `${id} har ukendt litterær periode: ${period}`;
+    }
+    const definition = literaryPeriods.idMap.get(period);
+    if (definition.countries.includes(country) === false) {
+      throw `${id} har lokal litterær periode uden for landeområdet: ${period}`;
+    }
+  });
+  return periods;
+};
+
+const literaryPeriodForApi = period => ({
+  id: period.id,
+  countries: period.countries,
+  title: period.title,
+});
 
 const build_poets_first_pass = collected => {
   // Returns {has_poems: bool, has_prose: bool,
@@ -81,12 +134,14 @@ const build_poets_first_pass = collected => {
     }
     const relevantFiles = [
       infoFilename,
+      catalogFilename,
       `fdirs/${id}/bibliography-primary.xml`,
       `fdirs/${id}/bibliography-secondary.xml`,
       `fdirs/${id}/artwork.xml`,
       `fdirs/${id}/portraits.xml`,
     ];
-    if (!force_reload && !isFileModified(...relevantFiles)) {
+    const relevantFilesModified = isFileModified(...relevantFiles);
+    if (!force_reload && !relevantFilesModified) {
       return;
     }
     found_changes = true;
@@ -98,11 +153,16 @@ const build_poets_first_pass = collected => {
     const nameE = getChildByTagName(p, 'name');
     const periodE = getChildByTagName(p, 'period');
     const works = safeGetText(p, 'works');
+    const literary_periods = parseLiteraryPeriods(
+      id,
+      country,
+      safeGetText(p, 'literary-periods')
+    );
     if (!country.match(/(dk|se|no|gb|de|fr|us|it|un)/)) {
       throw `${id} har ukendt land: ${country}`;
     }
-    if (!lang.match(/(da|sv|no|en|de|fr||un|it)/)) {
-      throw `${id} har ukendt sprog: ${country}`;
+    if (!isKnownPoetLanguage(lang)) {
+      throw `${id} har ukendt sprog: ${lang}`;
     }
 
     let square_portrait = null;
@@ -180,6 +240,7 @@ const build_poets_first_pass = collected => {
         sortname,
       },
       period,
+      literary_periods,
       has_portraits,
       has_square_portrait,
       has_works: has.has_works,
@@ -205,25 +266,42 @@ const build_poets_first_pass = collected => {
 };
 
 const build_poets_json = collected => {
-  let found_changes = false;
-  all_poet_ids().forEach(id => {
-    const poet = collected.poets.get(id);
-
+  const poetMetadataDirty = new Set();
+  collected.poets.forEach((poet, id) => {
     const mentions = collected.person_or_keyword_refs.get(id);
     const has_mentions =
       (mentions != null &&
         (mentions.mention.length > 0 || mentions.translation.length > 0)) ||
       fileExists(`fdirs/${id}/bibliography-primary.xml`) ||
-      fileExists(`fdirs/${id}/bibliography-secondary.xml`);
-    if (has_mentions !== poet.has_mentions) {
+      fileExists(`fdirs/${id}/bibliography-secondary.xml`) ||
+      hasExternalIdentifiers(id, 'reference');
+    const mentionsChanged = has_mentions !== poet.has_mentions;
+    if (mentionsChanged) {
       poet.has_mentions = has_mentions;
-      writeJSON(`static/api/${poet.id}.json`, poet);
+      poetMetadataDirty.add(id);
       collected.poets.set(id, poet);
     }
+    const sourceFiles = Array.from(
+      new Set(
+        worksForPoet(collected, id).flatMap(work => work.sourceFiles || [])
+      )
+    );
+    const outputFilename = `public/api/${poet.id}.json`;
+    if (
+      mentionsChanged ||
+      !fileExists(outputFilename) ||
+      isFileModified(
+        'tools/build-static.js',
+        'tools/build-static/anthologies.js',
+        `fdirs/${id}/info.xml`,
+        ...sourceFiles
+      )
+    ) {
+      writeJSON(outputFilename, poet);
+    }
   });
-  if (found_changes) {
-    writeCachedJSON('collected.poets', Array.from(collected.poets));
-  }
+  writeCachedJSON('collected.poets', Array.from(collected.poets));
+  return poetMetadataDirty;
 };
 
 const build_poets_by_country_json = collected => {
@@ -241,13 +319,64 @@ const build_poets_by_country_json = collected => {
     const data = {
       poets: sorted,
     };
-    writeJSON(`static/api/poets-${country}.json`, data);
+    writeJSON(`public/api/poets-${country}.json`, data);
   });
 };
 
-module.exports = {
+const build_literary_periods_json = collected => {
+  const poetListItem = poet => {
+    return {
+      id: poet.id,
+      type: poet.type,
+      country: poet.country,
+      lang: poet.lang,
+      name: {
+        firstname: poet.name.firstname,
+        lastname: poet.name.lastname,
+        sortname: poet.name.sortname,
+      },
+      period:
+        poet.period == null
+          ? null
+          : {
+              born:
+                poet.period.born == null
+                  ? null
+                  : { date: poet.period.born.date },
+              dead:
+                poet.period.dead == null
+                  ? null
+                  : { date: poet.period.dead.date },
+            },
+    };
+  };
+  const periods = literaryPeriods.sorted.map(period => {
+    const poets = [];
+    collected.poets.forEach(poet => {
+      if ((poet.literary_periods || []).includes(period.id)) {
+        poets.push(poetListItem(poet));
+      }
+    });
+    poets.sort((a, b) => {
+      const aName = a.name.sortname || a.name.lastname || a.id;
+      const bName = b.name.sortname || b.name.lastname || b.id;
+      return aName.localeCompare(bName, 'da');
+    });
+    return {
+      ...literaryPeriodForApi(period),
+      poets,
+    };
+  });
+  writeJSON('public/api/literary-periods.json', { periods });
+};
+
+export {
   all_poet_ids,
   build_poets_json,
   build_poets_first_pass,
   build_poets_by_country_json,
+  build_literary_periods_json,
+  isKnownPoetLanguage,
+  literaryPeriodForApi,
+  parseLiteraryPeriods,
 };

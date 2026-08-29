@@ -1,17 +1,20 @@
-// @flow
+const TwoColumns = (props) => {
+  const className = props.noLinkUnderline
+    ? 'two-columns no-link-underline'
+    : 'two-columns';
 
-import React from 'react';
-import type { Node } from 'react';
-
-const TwoColumns = (props: { children: Node }) => {
   return (
-    <div className="two-columns">
+    <div className={className}>
       {props.children}
       <style jsx>{`
         div.two-columns {
           width: 100%;
           columns: 2;
           column-gap: 30px;
+        }
+
+        div.two-columns.no-link-underline :global(a) {
+          text-decoration: none;
         }
 
         @media (max-width: 480px) {

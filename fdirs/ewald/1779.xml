@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1779" author="ewald" status="incomplete" type="poetry">
 <workhead>
-   <title>Fiskerne</title>
-   <year>1779</year>
-   <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+  <title>Fiskerne</title>
+  <year>1779</year>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
 <text id="ewald1999082203">
 <head>
-   <title>Arioso</title>
-   <toctitle>Arioso</toctitle>
-   <indextitle>Arioso</indextitle>
-   <firstline>En Bonde seer fra Ploven</firstline>
-   <quality>korrektur1</quality>
+  <title>Arioso</title>
+  <toctitle>Arioso</toctitle>
+  <indextitle>Arioso</indextitle>
+  <firstline>En Bonde seer fra Ploven</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -41,11 +39,11 @@ Den trodser alle Vinde,
 
 <text id="ewald1999082204">
 <head>
-   <title>Arioso</title>
-   <toctitle>Arioso</toctitle>
-   <indextitle>Arioso</indextitle>
-   <firstline>En Søemand, med et modigt Bryst</firstline>
-   <quality>korrektur1</quality>
+  <title>Arioso</title>
+  <toctitle>Arioso</toctitle>
+  <indextitle>Arioso</indextitle>
+  <firstline>En Søemand, med et modigt Bryst</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -75,11 +73,11 @@ Og setter Boven-Bram-Seil til,
 
 <text id="ewald1999082205">
 <head>
-   <title>Arie</title>
-   <toctitle>Arie</toctitle>
-   <indextitle>Arie</indextitle>
-   <firstline>Naar Syd-Vinden kuler</firstline>
-   <quality>korrektur1</quality>
+  <title>Arie</title>
+  <toctitle>Arie</toctitle>
+  <indextitle>Arie</indextitle>
+  <firstline>Naar Syd-Vinden kuler</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -109,15 +107,15 @@ Og eier du Dyder,
 
 <text id="ewlad1999022205">
 <head>
-   <title>Romance</title>
-   <toctitle>Romance</toctitle>
-   <indextitle>Romance</indextitle>
-   <firstline>Kong Christjan stoed ved høien Mast</firstline>
-   <pictures>
-       <picture ref="marstrand/christian4-1863"/>
-   </pictures>
-   <keywords>christian4</keywords>
-   <quality>korrektur1</quality>
+  <title>Romance</title>
+  <toctitle>Romance</toctitle>
+  <indextitle>Romance</indextitle>
+  <firstline>Kong Christjan stoed ved høien Mast</firstline>
+  <pictures>
+    <picture artwork="marstrand/christian4-1863"/>
+  </pictures>
+  <keywords>christian4</keywords>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -166,14 +164,14 @@ Og Kamp og Seier føer mig til
 
 <text id="ewald1999022204">
 <head>
-   <title>Romance</title>
-   <toctitle>Romance</toctitle>
-   <indextitle>Romance</indextitle>
-   <firstline>Liden Gunver vandrer som helst i Qveld</firstline>
-   <notes>
-      <note>Se folkevisen <xref poem="folke2000013101"/>.</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title>Romance</title>
+  <toctitle>Romance</toctitle>
+  <indextitle>Romance</indextitle>
+  <firstline>Liden Gunver vandrer som helst i Qveld</firstline>
+  <notes>
+    <note>Se folkevisen <xref poem="agnete-og-havmanden"/>.</note>
+  </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -225,11 +223,11 @@ O vogt dig, mit Barn, for de falske Mandfolk!
 
 <text id="ewald1999022002">
 <head>
-   <title>Romance</title>
-   <toctitle>Romance</toctitle>
-   <indextitle>Romance</indextitle>
-   <firstline>En Edder-Fugl var haardt i Klemme</firstline>
-   <quality>korrektur1</quality>
+  <title>Romance</title>
+  <toctitle>Romance</toctitle>
+  <indextitle>Romance</indextitle>
+  <firstline>En Edder-Fugl var haardt i Klemme</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -248,5 +246,6 @@ Ha grumme Haand, som toeg min Varme,
 </poetry>
 </body>
 </text>
+
 </workbody>
 </kalliopework>

@@ -1,25 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1768" author="wieland" status="complete" type="poetry">
 <workhead>
-   <title>Musarion</title>
-   <year>1768</year>
-   <notes>
-      <note>Tilføjet af Henrik Nielsen.</note>
-   </notes>
-   <pictures>
-      <picture type="titlepage" src="1768-1.jpg">Titelblad fra 1. udgave af <i>Musarion</i></picture>
-   </pictures>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+  <title>Musarion</title>
+  <year>1768</year>
+  <identifiers>
+    <openlibrary-work>OL1551785W</openlibrary-work>
+  </identifiers>
+  <notes>
+    <note>Tilføjet af Henrik Nielsen.</note>
+  </notes>
+  <pictures>
+    <picture type="titlepage" src="1768-1.jpg">Titelblad fra 1. udgave af <i>Musarion</i></picture>
+  </pictures>
 </workhead>
 <workbody>
 
 <text id="wieland2001102406" skip-index="true">
 <head>
-   <title>Widmungsvorrede an Chr. F. Weisse(von 1769)</title>
-   <subtitle>An Herrn Creyßsteuereinnehmer Weisse in Leipzig</subtitle>
-   <toctitle>Widmungsvorrede an Chr. F. Weisse(von 1769)</toctitle>
-   <indextitle>Widmungsvorrede an Chr. F. Weisse(von 1769)</indextitle>
+  <title>Widmungsvorrede an Chr. F. Weisse(von 1769)</title>
+  <subtitle>An Herrn Creyßsteuereinnehmer Weisse in Leipzig</subtitle>
+  <toctitle>Widmungsvorrede an Chr. F. Weisse(von 1769)</toctitle>
+  <indextitle>Widmungsvorrede an Chr. F. Weisse(von 1769)</indextitle>
 </head>
 <body>
 <prose>
@@ -95,10 +96,10 @@
 
 <text id="wieland2001102407">
 <head>
-   <title>In einem Hain, der einer Wildniß glich</title>
-   <toctitle>Erster Buch</toctitle>
-   <indextitle>In einem Hain, der einer Wildniß glich</indextitle>
-   <firstline>In einem Hain, der einer Wildniß glich</firstline>
+  <title>In einem Hain, der einer Wildniß glich</title>
+  <toctitle>Erster Buch</toctitle>
+  <indextitle>In einem Hain, der einer Wildniß glich</indextitle>
+  <firstline>In einem Hain, der einer Wildniß glich</firstline>
 </head>
 <body>
 <poetry>
@@ -763,10 +764,10 @@ Die der Philosophie nicht allzu rühmlich war.
 
 <text id="wieland2001102408">
 <head>
-   <title>Was, beym Anubis! konnte das</title>
-   <toctitle>Zweyter Buch</toctitle>
-   <indextitle>Was, beym Anubis! konnte das</indextitle>
-   <firstline>Was, beym Anubis! konnte das</firstline>
+  <title>Was, beym Anubis! konnte das</title>
+  <toctitle>Zweyter Buch</toctitle>
+  <indextitle>Was, beym Anubis! konnte das</indextitle>
+  <firstline>Was, beym Anubis! konnte das</firstline>
 </head>
 <body>
 <poetry>
@@ -1237,10 +1238,10 @@ Und lachend wünschet man einander gute Nacht.
 
 <text id="wieland2001102409">
 <head>
-   <title>Die Schöne lag auf ihrem Ruhebette</title>
-   <toctitle>Dritter Buch</toctitle>
-   <indextitle>Die Schöne lag auf ihrem Ruhebette</indextitle>
-   <firstline>Die Schöne lag auf ihrem Ruhebette</firstline>
+  <title>Die Schöne lag auf ihrem Ruhebette</title>
+  <toctitle>Dritter Buch</toctitle>
+  <indextitle>Die Schöne lag auf ihrem Ruhebette</indextitle>
+  <firstline>Die Schöne lag auf ihrem Ruhebette</firstline>
 </head>
 <body>
 <poetry>
@@ -1636,5 +1637,6 @@ Kurz, er verschwand, und ward nicht mehr gesehn.
 </poetry>
 </body>
 </text>
+
 </workbody>
 </kalliopework>

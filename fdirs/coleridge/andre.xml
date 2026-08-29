@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="coleridge" status="incomplete" type="poetry">
 <workhead>
-   <title>Andre digte</title>
-   <year>?</year>
-   <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+  <title>Andre digte</title>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
 <text id="coleridge2001062401">
 <head>
-   <title>Kubla Khan</title>
-   <toctitle>Kubla Khan</toctitle>
-   <indextitle>Kubla Khan</indextitle>
-   <firstline>In Xanadu did Kubla Khan</firstline>
-   <quality>korrektur1</quality>
+  <title>Kubla Khan</title>
+  <toctitle>Kubla Khan</toctitle>
+  <indextitle>Kubla Khan</indextitle>
+  <firstline>In Xanadu did Kubla Khan</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -81,11 +78,11 @@ And drunk the milk of Paradise.
 
 <text id="coleridge2001062402">
 <head>
-   <title>Love</title>
-   <toctitle>Love</toctitle>
-   <indextitle>Love</indextitle>
-   <firstline>All thoughts, all passions, all delights</firstline>
-   <quality>korrektur1</quality>
+  <title>Love</title>
+  <toctitle>Love</toctitle>
+  <indextitle>Love</indextitle>
+  <firstline>All thoughts, all passions, all delights</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -214,11 +211,11 @@ My bright and beauteous Bride.
 
 <text id="coleridge2001062403">
 <head>
-   <title>Frost at Midnight</title>
-   <toctitle>Frost at Midnight</toctitle>
-   <indextitle>Frost at Midnight</indextitle>
-   <firstline>The Frost performs its secret ministry</firstline>
-   <quality>korrektur1</quality>
+  <title>Frost at Midnight</title>
+  <toctitle>Frost at Midnight</toctitle>
+  <indextitle>Frost at Midnight</indextitle>
+  <firstline>The Frost performs its secret ministry</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -306,11 +303,11 @@ Quietly shining to the quiet Moon.
 
 <text id="coleridge2001062404">
 <head>
-   <title>The Pains of Sleep</title>
-   <toctitle>The Pains of Sleep</toctitle>
-   <indextitle>The Pains of Sleep</indextitle>
-   <firstline>Ere on my bed my limbs I lay</firstline>
-   <quality>korrektur1</quality>
+  <title>The Pains of Sleep</title>
+  <toctitle>The Pains of Sleep</toctitle>
+  <indextitle>The Pains of Sleep</indextitle>
+  <firstline>Ere on my bed my limbs I lay</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -374,11 +371,11 @@ And whom I love, I love indeed.
 
 <text id="coleridge2001062405">
 <head>
-   <title>Work Without Hope</title>
-   <toctitle>Work Without Hope</toctitle>
-   <indextitle>Work Without Hope</indextitle>
-   <firstline>All Nature seems at work. Slugs leave their lair</firstline>
-   <quality>korrektur1</quality>
+  <title>Work Without Hope</title>
+  <toctitle>Work Without Hope</toctitle>
+  <indextitle>Work Without Hope</indextitle>
+  <firstline>All Nature seems at work. Slugs leave their lair</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -403,11 +400,11 @@ And Hope without an object cannot live.
 
 <text id="coleridge2001062406">
 <head>
-   <title>Constancy to an Ideal Object</title>
-   <toctitle>Constancy to an Ideal Object</toctitle>
-   <indextitle>Constancy to an Ideal Object</indextitle>
-   <firstline>Since all that beat about in Nature's range</firstline>
-   <quality>korrektur1</quality>
+  <title>Constancy to an Ideal Object</title>
+  <toctitle>Constancy to an Ideal Object</toctitle>
+  <indextitle>Constancy to an Ideal Object</indextitle>
+  <firstline>Since all that beat about in Nature's range</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -447,11 +444,12 @@ Nor knows he makes the shadow, he pursues!
 </poetry>
 </body>
 </text>
+
 <text id="coleridge2019102101">
 <head>
-    <title>The Ballad Of The Dark Ladie</title>
-    <subtitle>A Fragment</subtitle>
-    <firstline>Beneath yon birch with silver bark</firstline>
+  <title>The Ballad Of The Dark Ladie</title>
+  <subtitle>A Fragment</subtitle>
+  <firstline>Beneath yon birch with silver bark</firstline>
 </head>
 <body>
 <poetry>
@@ -530,18 +528,17 @@ Strewing buds and flowers!
 'And then my love and I shall pace,
 My jet black hair in pearly braids,
 Between our comely bachelors
-And blushing bridal maids.'    
+And blushing bridal maids.'
 
 <nonum><center>* * * * *</center></nonum>
 </poetry>
 </body>
 </text>
 
-
 <text id="coleridge2020042301">
 <head>
-    <title>The Rime of the Ancient Mariner</title>
-    <firstline>It is an ancient mariner</firstline>
+  <title>The Rime of the Ancient Mariner</title>
+  <firstline>It is an ancient mariner</firstline>
 </head>
 <body>
 <poetry>
@@ -1068,7 +1065,8 @@ And penance more will do.'
 
 <nonum><center><b>Part VI</b></center></nonum>
 
-<nonum><center><sc>First voice</sc></center></nonum>}
+<nonum><center><sc>First voice</sc></center></nonum>
+}
 
 'But tell me, tell me! speak again,
 Thy soft response renewing—
@@ -1345,7 +1343,7 @@ Turned from the bridegroom's door.
 He went like one that hath been stunned,
 And is of sense forlorn:
 A sadder and a wiser man,
-He rose the morrow morn.    
+He rose the morrow morn.
 </poetry>
 </body>
 </text>

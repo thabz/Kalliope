@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pictures>
-  <picture src="p1.jpg" primary="true" square-src="p1-square.jpg">
-      Budtz Müller &amp; Co.: <i>Johannes Fibiger</i>, ukendt år, fotografi. Det Kongelige Bibliotek.
+  <picture src="p1.jpg" primary="true" square-src="p1-square.jpg" museum="kb" objid="451394">
+    Budtz Müller &amp; Co.: <i>Johannes Fibiger</i>, ukendt år, fotografi.
   </picture>
-  <picture src="p2.jpg">
-      <i>Johannes Fibiger</i>, ukendt år, fotografi. Det Kongelige Bibliotek.
+  <picture src="p2.jpg" museum="kb">
+    <i>Johannes Fibiger</i>, ukendt år, fotografi.
+    <!-- Entydig identificering af dette billede for p2 lykkedes ikke i den gennemgåede KB-søgning. -->
   </picture>
 </pictures>
-

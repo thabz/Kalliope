@@ -1,31 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="bagger" status="incomplete" type="poetry">
 <workhead>
-   <title>Andre digte</title>
-   <year>?</year>
-   <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+  <title>Andre digte</title>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
 <text id="bagger2002011001">
 <head>
-   <title>Til Digteren Andersen</title>
-   <subtitle>
-      <line>fra hans Ven,</line>
-      <line>Carl Bagger</line>
-   </subtitle>
-   <toctitle>Til Digteren Andersen</toctitle>
-   <indextitle>Til Digteren Andersen</indextitle>
-   <firstline>Du træder paa en farlig Bane</firstline>
-   <notes>
-      <note>Bagger skrev dette digt til HCAs stambog i maj 1826, da denne som latinskoleelev skulle flytte med rektor Meisling fra Slagelse til Helsingør.</note>
-      <note>Trykt i <i>Mit Livs Eventyr</i> (1855). Her indtastet efter originalen i <i>H. C. Andersen Album</i> (1980), side 191. Også trykt i Baggers <i>Samlede Værker,</i> bind 2 (1867).</note>
-      <note type="credits">Bidrag fra Sven Sørensen.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
-   <keywords>stambog,andersen</keywords>
+  <title>Til Digteren Andersen</title>
+  <subtitle>
+    <line>fra hans Ven,</line>
+    <line>Carl Bagger</line>
+  </subtitle>
+  <toctitle>Til Digteren Andersen</toctitle>
+  <indextitle>Til Digteren Andersen</indextitle>
+  <firstline>Du træder paa en farlig Bane</firstline>
+  <notes>
+    <note>Bagger skrev dette digt til HCAs stambog i maj 1826, da denne som latinskoleelev skulle flytte med rektor Meisling fra Slagelse til Helsingør.</note>
+    <note>Trykt i <i>Mit Livs Eventyr</i> (1855). Her indtastet efter originalen i <i>H. C. Andersen Album</i> (1980), side 191. Også trykt i Baggers <i>Samlede Værker,</i> bind 2 (1867).</note>
+    <note type="credits">Bidrag fra Sven Sørensen.</note>
+  </notes>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+  <keywords>stambog,andersen</keywords>
 </head>
 <body>
 <poetry>
@@ -64,21 +61,21 @@ Som Mange ønske, Faa kun naaer. -
 
 <section level="1">
 <head>
-   <toctitle>Af Samlede Værker (1867)</toctitle>
+  <toctitle>Af Samlede Værker (1867)</toctitle>
 </head>
 <content>
 
 <text id="bagger2002121501">
 <head>
-   <title>Da Thora var syg</title>
-   <toctitle>Da Thora var syg</toctitle>
-   <indextitle>Da Thora var syg</indextitle>
-   <firstline>Thora, da de mumled her</firstline>
-   <notes>
-      <note>Digterens første frierbrev, skrevet ved juletid 1827.</note>
-      <note>Tekst og note gengivet efter førstetrykket, som er <i>Samlede Værker</i>, Bd. II, Vilh. Møller (red.), Kbh., 1867, pp. 288-290.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Da Thora var syg</title>
+  <toctitle>Da Thora var syg</toctitle>
+  <indextitle>Da Thora var syg</indextitle>
+  <firstline>Thora, da de mumled her</firstline>
+  <notes>
+    <note>Digterens første frierbrev, skrevet ved juletid 1827.</note>
+    <note>Tekst og note gengivet efter førstetrykket, som er <i>Samlede Værker</i>, Bd. II, Vilh. Møller (red.), Kbh., 1867, pp. 288-290.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -129,14 +126,14 @@ Elske vil jeg ikkun Dig.
 
 <text id="bagger2002121502">
 <head>
-   <title>Søfuglen</title>
-   <toctitle>Søfuglen</toctitle>
-   <indextitle>Søfuglen</indextitle>
-   <firstline>Hvide Søfugl, stands din Flugt</firstline>
-   <notes>
-      <note>Gengivet efter førstetrykket, som er <i>Samlede Værker</i>, Bd. II, Vilh. Møller (red.), Kbh., 1867, pp. 290-291.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Søfuglen</title>
+  <toctitle>Søfuglen</toctitle>
+  <indextitle>Søfuglen</indextitle>
+  <firstline>Hvide Søfugl, stands din Flugt</firstline>
+  <notes>
+    <note>Gengivet efter førstetrykket, som er <i>Samlede Værker</i>, Bd. II, Vilh. Møller (red.), Kbh., 1867, pp. 290-291.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -187,14 +184,14 @@ Hvad i Næb Dig Fuglen bragte.
 
 <text id="bagger2002121503">
 <head>
-   <title>Prolog</title>
-   <toctitle>Prolog</toctitle>
-   <indextitle>Prolog</indextitle>
-   <firstline>Jeg følte en uendlig, stille Stræben</firstline>
-   <notes>
-      <note>Gengivet efter førstetrykket, som er <i>Samlede Værker</i>, Bd. II, Vilh. Møller (red.), Kbh., 1867, pp. 310-312.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Prolog</title>
+  <toctitle>Prolog</toctitle>
+  <indextitle>Prolog</indextitle>
+  <firstline>Jeg følte en uendlig, stille Stræben</firstline>
+  <notes>
+    <note>Gengivet efter førstetrykket, som er <i>Samlede Værker</i>, Bd. II, Vilh. Møller (red.), Kbh., 1867, pp. 310-312.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -266,14 +263,14 @@ Ak, kunde den fra mig til Andre strømme!
 
 <text id="bagger2002121504">
 <head>
-   <title>En Vision</title>
-   <toctitle>En Vision</toctitle>
-   <indextitle>En Vision</indextitle>
-   <firstline>To store Dyr i Luften tumle sig</firstline>
-   <notes>
-      <note>Gengivet efter førstetrykket, som er <i>Samlede Værker</i>, Bd. II, Vilh. Møller (red.), Kbh., 1867, pp. 473-477.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>En Vision</title>
+  <toctitle>En Vision</toctitle>
+  <indextitle>En Vision</indextitle>
+  <firstline>To store Dyr i Luften tumle sig</firstline>
+  <notes>
+    <note>Gengivet efter førstetrykket, som er <i>Samlede Værker</i>, Bd. II, Vilh. Møller (red.), Kbh., 1867, pp. 473-477.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -395,14 +392,14 @@ Naar Engle veed ei Meer, end stakkels jeg.
 
 <text id="bagger2002121505">
 <head>
-   <title>Et Svar til min Svoger</title>
-   <toctitle>Et Svar til min Svoger</toctitle>
-   <indextitle>Et Svar til min Svoger</indextitle>
-   <firstline>At oversætte Byron!« - Søde Bro'er!</firstline>
-   <notes>
-      <note>Gengivet efter førstetrykket, som er <i>Samlede Værker</i>, Bd. II, Vilh. Møller (red.), Kbh., 1867, pp. 522-524.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Et Svar til min Svoger</title>
+  <toctitle>Et Svar til min Svoger</toctitle>
+  <indextitle>Et Svar til min Svoger</indextitle>
+  <firstline>At oversætte Byron!« - Søde Bro'er!</firstline>
+  <notes>
+    <note>Gengivet efter førstetrykket, som er <i>Samlede Værker</i>, Bd. II, Vilh. Møller (red.), Kbh., 1867, pp. 522-524.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -483,7 +480,9 @@ Paa en uhjemlig, om end vakker Bred.
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
+
 </workbody>
 </kalliopework>

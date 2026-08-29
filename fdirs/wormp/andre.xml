@@ -1,26 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="wormp" status="incomplete" type="poetry">
 <workhead>
-   <title>Andre digte</title>
-   <year>?</year>
-   <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+  <title>Andre digte</title>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
 <text id="worm2003030201">
 <head>
-   <title>Til en Brud</title>
-   <toctitle>Til en Brud</toctitle>
-   <subtitle>(Den 1ste Juni)</subtitle>
-   <indextitle>Til en Brud</indextitle>
-   <firstline>Smaa Brudeterners Klynge</firstline>
-   <quality>korrektur1,kilde</quality>
-   <notes>
-      <note>Teksten følger <i>Nytaarsgave</i>, Foreningen "Fremtiden", Fjerde Aargang, S. L. Møllers Bogtrykkeri, 1869.</note>
-      <note type="credits">Bidrag fra Margit Ammentorp.</note>
-   </notes>
+  <title>Til en Brud</title>
+  <toctitle>Til en Brud</toctitle>
+  <subtitle>(Den 1ste Juni)</subtitle>
+  <indextitle>Til en Brud</indextitle>
+  <firstline>Smaa Brudeterners Klynge</firstline>
+  <quality>korrektur1,kilde</quality>
+  <notes>
+    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+  </notes>
+  <source><i>Nytaarsgave</i>, Foreningen "Fremtiden", Fjerde Aargang, S. L. Møllers Bogtrykkeri, 1869.</source>
 </head>
 <body>
 <poetry>
@@ -67,18 +64,17 @@ Er Sang om Kjærlighed.
 </body>
 </text>
 
-
 <text id="worm2003030202">
 <head>
-   <title>Vort fjerde Bud</title>
-   <toctitle>Vort fjerde Bud</toctitle>
-   <indextitle>Vort fjerde Bud</indextitle>
-   <firstline>Danske yngling, vil du længe</firstline>
-   <quality>korrektur1,kilde</quality>
-   <notes>
-      <note>Teksten følger <i>Nytaarsgave</i>, Foreningen "Fremtiden", Fjerde Aargang, S. L. Møllers Bogtrykkeri, 1869.</note>
-      <note type="credits">Bidrag fra Margit Ammentorp.</note>
-   </notes>
+  <title>Vort fjerde Bud</title>
+  <toctitle>Vort fjerde Bud</toctitle>
+  <indextitle>Vort fjerde Bud</indextitle>
+  <firstline>Danske yngling, vil du længe</firstline>
+  <quality>korrektur1,kilde</quality>
+  <notes>
+    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+  </notes>
+  <source><i>Nytaarsgave</i>, Foreningen "Fremtiden", Fjerde Aargang, S. L. Møllers Bogtrykkeri, 1869.</source>
 </head>
 <body>
 <poetry>
@@ -115,4 +111,3 @@ Styres af den samme Gud.
 
 </workbody>
 </kalliopework>
-

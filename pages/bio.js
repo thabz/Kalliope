@@ -1,50 +1,29 @@
-// @flow
-
-import React from 'react';
-import Page from '../components/page.js';
-import Main from '../components/main.js';
-import { poetCrumbsWithTitle } from '../components/breadcrumbs.js';
-import SidebarSplit from '../components/sidebarsplit.js';
-import LangSelect from '../components/langselect';
-import { poetMenu } from '../components/menu.js';
-import PoetName from '../components/poetname.js';
-import {
-  poetNameString,
-  poetLastNameString,
-} from '../components/poetname-helpers.js';
-import WorkName from '../components/workname.js';
-import Picture from '../components/picture.js';
-import TextContent from '../components/textcontent.js';
-import SplitWhenSmall from '../components/split-when-small.js';
-import {
-  formattedDate,
-  parseDate,
-  extractYear,
-} from '../components/formatteddate.js';
-import TwoColumns from '../components/twocolumns.js';
-import ErrorPage from './error.js';
-import * as Links from '../components/links';
 import * as Client from '../common/client.js';
 import * as OpenGraph from '../common/opengraph.js';
+import { translatePlace } from '../common/place-names.js';
 import _ from '../common/translations.js';
+import { poetCrumbsWithTitle } from '../components/breadcrumbs.js';
+import ExternalIdentifierLinks from '../components/external-identifier-links.js';
+import {
+  extractYear,
+  formattedAge,
+  formattedDate,
+  formatYearEra,
+} from '../components/formatteddate.js';
+import { poetMenu } from '../components/menu.js';
+import Page from '../components/page.js';
+import Picture from '../components/picture.js';
+import { poetNameString } from '../components/poetname-helpers.js';
+import PoetName from '../components/poetname.js';
+import SidebarMiniHeading from '../components/sidebarminiheading.js';
+import SidebarSplit from '../components/sidebarsplit.js';
+import SplitWhenSmall from '../components/split-when-small.js';
+import Source from '../components/source.js';
+import TextContent from '../components/textcontent.js';
+import TwoColumns from '../components/twocolumns.js';
+import ErrorPage from './error.js';
 
-import type {
-  Lang,
-  Poet,
-  DateWithPlace,
-  PictureItem,
-  TimelineItem,
-  TextContentType,
-  TextLang,
-  Error,
-} from '../common/types.js';
-import { createURL } from '../common/client.js';
-
-const dateAndPlace = (
-  datePlace: ?DateWithPlace,
-  lang: Lang,
-  age?: ?number
-): Array<?React$Element<*> | string> | string => {
+const dateAndPlace = (datePlace, lang, age) => {
   if (datePlace == null) {
     return _('Ukendt år', lang);
   }
@@ -52,10 +31,12 @@ const dateAndPlace = (
   if (datePlace.date === '?') {
     result.push(_('Ukendt år', lang));
   } else {
-    result.push(formattedDate(datePlace.date));
+    result.push(formattedDate(datePlace.date, lang));
   }
   if (datePlace.place != null) {
-    result.push(<span key="place">{', ' + datePlace.place}</span>);
+    result.push(
+      <span key="place">{', ' + translatePlace(datePlace.place, lang)}</span>
+    );
   }
   if (age != null) {
     result.push(<span key="age"> {age}</span>);
@@ -63,243 +44,193 @@ const dateAndPlace = (
   return result;
 };
 
-type PersonMetaLineProps = {
-  label: string,
-  value: ?string | ?React$Element<*> | ?Array<?React$Element<*> | string>,
+const PersonMetaLine = ({ label, value }) => {
+  if (value == null) {
+    return null;
+  }
+  const styles = {
+    item: {
+      marginBottom: '22px',
+    },
+  };
+  return (
+    <div style={styles.item}>
+      <SidebarMiniHeading>{label}</SidebarMiniHeading>
+      <div>{value}</div>
+    </div>
+  );
 };
-class PersonMetaLine extends React.Component<PersonMetaLineProps> {
-  render() {
-    const { label, value } = this.props;
-    if (value == null) {
-      return null;
-    }
-    const styles = {
-      key: {
-        fontWeight: 'bold',
-        fontSize: '0.8em',
-      },
-      item: {
-        marginBottom: '10px',
-      },
-    };
-    return (
-      <div style={styles.item}>
-        <div style={styles.key}>{label}</div>
-        <div>{value}</div>
-      </div>
+
+const PersonMeta = ({ poet, lang }) => {
+  if (poet.type === 'collection') {
+    return null;
+  }
+  const name = <PoetName poet={poet} />;
+
+  // Age when dead
+  let age = formattedAge(poet.period, lang);
+
+  let born = poet.period == null ? null : dateAndPlace(poet.period.born, lang);
+  let dead =
+    poet.period == null ? null : dateAndPlace(poet.period.dead, lang, age);
+
+  const christened =
+    poet.name.christened == null ? poet.name.realname : poet.name.christened;
+  let coronationMetaLine = null;
+  if (poet.period != null && poet.period.coronation != null) {
+    const coronation =
+      poet.period == null ? null : dateAndPlace(poet.period.coronation, lang);
+    coronationMetaLine = (
+      <PersonMetaLine value={coronation} label={_('Tiltrådt', lang)} />
     );
   }
-}
-
-type PersonMetaProps = {
-  poet: Poet,
-  lang: Lang,
-};
-class PersonMeta extends React.Component<PersonMetaProps> {
-  render() {
-    const { poet, lang } = this.props;
-    if (poet.type === 'collection') {
-      return null;
-    }
-    const name = <PoetName poet={poet} />;
-
-    // Age when dead
-    let age = null;
-    if (
-      poet.period != null &&
-      poet.period.born != null &&
-      poet.period.dead != null &&
-      poet.period.born.date != null &&
-      poet.period.dead.date != null &&
-      poet.period.born.date !== '?' &&
-      poet.period.dead.date !== '?'
-    ) {
-      const lastName = poetLastNameString(poet);
-      let born = parseDate(poet.period.born.date);
-      const dead = parseDate(poet.period.dead.date);
-      born.month = born.month || 0;
-      born.day = born.day || 0;
-      dead.month = dead.month || 0;
-      dead.day = dead.day || 0;
-      if (born != null && dead != null) {
-        let yearDiff = dead.year - born.year;
-        const deadBeforeBirthday =
-          dead.month < born.month ||
-          (born.month == dead.month && dead.day <= born.day);
-        if (deadBeforeBirthday) {
-          yearDiff -= 1;
-        }
-        let ca: string = '';
-        if (
-          born.prefix != null ||
-          dead.prefix != null ||
-          born.month === 0 ||
-          dead.month === 0 ||
-          born.day === 0 ||
-          dead.day === 0
-        ) {
-          ca = _('ca.', lang) + ' ';
-        }
-        age = _(`(blev {ca}{yearDiff} år)`, lang, {
-          ca,
-          yearDiff: yearDiff + '',
-        });
-      }
-    }
-
-    let born =
-      poet.period == null ? null : dateAndPlace(poet.period.born, lang);
-    let dead =
-      poet.period == null ? null : dateAndPlace(poet.period.dead, lang, age);
-
-    const christened =
-      poet.name.christened == null ? poet.name.realname : poet.name.christened;
-    let coronationMetaLine = null;
-    if (poet.period != null && poet.period.coronation != null) {
-      const coronation =
-        poet.period == null ? null : dateAndPlace(poet.period.coronation, lang);
-      coronationMetaLine = (
-        <PersonMetaLine value={coronation} label={_('Tiltrådt', lang)} />
-      );
-    }
-    return (
-      <div>
-        <PersonMetaLine value={name} label={_('Navn', lang)} />
-        <PersonMetaLine
-          value={poet.name.fullname}
-          label={_('Fulde navn', lang)}
-        />
-        <PersonMetaLine value={christened} label={_('Døbt', lang)} />
-        <PersonMetaLine
-          value={poet.name.pseudonym}
-          label={_('Pseudonym', lang)}
-        />
-        <PersonMetaLine value={born} label={_('Født', lang)} />
-        {coronationMetaLine}
-        <PersonMetaLine value={dead} label={_('Død', lang)} />
-      </div>
-    );
-  }
-}
-
-type PersonPortraitProps = {
-  poet: Poet,
-  lang: Lang,
-  portraits?: Array<PictureItem>,
-};
-class PersonPortrait extends React.Component<PersonPortraitProps> {
-  render() {
-    const { portraits, poet, lang } = this.props;
-    if (!poet.has_portraits || portraits == null) {
-      return null;
-    }
-    let primaryIndex = 0;
-    const primary = portraits.filter((p, i) => {
-      if (p.primary == true) {
-        primaryIndex = i;
-      }
-      return p.primary;
-    })[0];
-    return (
-      <Picture
-        pictures={portraits}
-        startIndex={primaryIndex}
-        lang={lang}
-        contentLang={primary.content_lang || 'da'}
+  return (
+    <div>
+      <PersonMetaLine value={name} label={_('Navn', lang)} />
+      <PersonMetaLine
+        value={poet.name.fullname}
+        label={_('Fulde navn', lang)}
       />
-    );
-  }
-}
-type TimelineProps = {
-  timeline: Array<TimelineItem>,
-  lang: Lang,
+      <PersonMetaLine value={christened} label={_('Døbt', lang)} />
+      <PersonMetaLine
+        value={poet.name.pseudonym}
+        label={_('Pseudonym', lang)}
+      />
+      <PersonMetaLine value={born} label={_('Født', lang)} />
+      {coronationMetaLine}
+      <PersonMetaLine value={dead} label={_('Død', lang)} />
+    </div>
+  );
 };
-class Timeline extends React.Component<TimelineProps> {
-  render() {
-    const { timeline, lang } = this.props;
-    if (timeline.length === 0) {
-      return null;
+
+const PersonPortrait = ({ portraits, poet, lang }) => {
+  if (!poet.has_portraits || portraits == null) {
+    return null;
+  }
+  let primaryIndex = 0;
+  const primary = portraits.filter((p, i) => {
+    if (p.primary == true) {
+      primaryIndex = i;
     }
-    let prevYearNumeric = null;
-    const items = timeline.map((item, i) => {
-      const [curYearFormatted, curYearNumeric] = extractYear(item.date);
-      let year = null;
-      if (prevYearNumeric !== curYearNumeric) {
-        year = curYearFormatted;
-      }
-      prevYearNumeric = curYearNumeric;
+    return p.primary;
+  })[0];
+  return (
+    <Picture
+      pictures={portraits}
+      startIndex={primaryIndex}
+      lang={lang}
+      contentLang={primary.content_lang || 'da'}
+    />
+  );
+};
 
-      let html = null;
-      if (item.type === 'image' && item.src != null) {
-        const picture: PictureItem = {
-          src: item.src,
-          lang: lang,
-          content_lang: item.content_lang,
-          content_html: item.content_html,
-        };
-        html = (
-          <div style={{ paddingTop: '0.37em' }}>
-            <Picture
-              pictures={[picture]}
-              lang={lang}
-              contentLang={picture.content_lang || 'da'}
-            />
-          </div>
-        );
-      } else {
-        html = (
-          <TextContent
-            contentHtml={item.content_html}
-            contentLang={item.content_lang}
+const Timeline = ({ timeline, lang }) => {
+  if (timeline.length === 0) {
+    return null;
+  }
+  let prevYearNumeric = null;
+  const items = timeline.map((item, i) => {
+    const [curYearFormatted, curYearNumeric, x, bce] = extractYear(item.date);
+    let year = null;
+    if (prevYearNumeric !== curYearNumeric) {
+      year = formatYearEra(curYearFormatted, bce ? 'bce' : null, lang);
+    }
+    prevYearNumeric = curYearNumeric;
+
+    let html = null;
+    if (item.type === 'image' && item.src != null) {
+      const picture = {
+        src: item.src,
+        lang: lang,
+        content_lang: item.content_lang,
+        content_html: item.content_html,
+        miniature_content_html: item.miniature_content_html,
+      };
+      html = (
+        <div style={{ paddingTop: '0.37em' }}>
+          <Picture
+            pictures={[picture]}
             lang={lang}
+            contentLang={picture.content_lang || 'da'}
           />
-        );
-      }
-
-      return (
-        <div
-          key={i}
-          style={{
-            marginBottom: '10px',
-            breakInside: 'avoid',
-            lineHeight: '22px',
-          }}>
-          <div style={{ float: 'left', fontSize: '15px' }}>{year}</div>
-          <div
-            style={{
-              marginLeft: '50px',
-              fontSize: '16px',
-              color: item.is_history_item ? '#666' : 'black',
-            }}>
-            {html}
-          </div>
         </div>
       );
-    });
+    } else {
+      html = (
+        <TextContent
+          contentHtml={item.content_html}
+          contentLang={item.content_lang}
+          lang={lang}
+        />
+      );
+    }
+
     return (
-      <div className="timeline">
-        <TwoColumns>{items}</TwoColumns>
+      <div
+        key={i}
+        style={{
+          marginBottom: '10px',
+          breakInside: 'avoid',
+          lineHeight: '22px',
+        }}>
+        <div style={{ float: 'left', fontSize: '15px' }}>
+          {year == null ? null : year}
+        </div>
+        <div
+          style={{
+            marginLeft: '50px',
+            fontSize: '16px',
+            color: item.is_history_item ? '#666' : 'black',
+          }}>
+          {html}
+        </div>
       </div>
     );
-  }
-}
-type BioProps = {
-  lang: Lang,
-  portraits?: Array<PictureItem>,
-  poet: Poet,
-  timeline: Array<TimelineItem>,
-  content_html: TextContentType,
-  content_lang: TextLang,
-  error: ?Error,
+  });
+  return (
+    <div className="timeline">
+      <TwoColumns>{items}</TwoColumns>
+    </div>
+  );
 };
-const BioPage = (props: BioProps) => {
+
+const BiographySources = ({ sources, lang }) => {
+  if (sources == null || sources.length === 0) {
+    return null;
+  }
+  return (
+    <footer className="biography-sources" aria-label={_('Kilde', lang)}>
+      {sources.map((source, index) => (
+        <div className="source" key={index}>
+          <Source
+            contentHtml={source.content_html}
+            href={source.href}
+            lang={lang}
+          />
+        </div>
+      ))}
+      <style jsx>{`
+        .biography-sources {
+          margin-bottom: 40px;
+          font-size: 0.8em;
+          text-align: right;
+        }
+        .source {
+          margin-top: 0.6em;
+        }
+      `}</style>
+    </footer>
+  );
+};
+
+const BioPage = (props) => {
   const {
     lang,
     poet,
     portraits,
-    content_html,
-    content_lang,
+    biographies,
     timeline,
+    identifiers,
     error,
   } = props;
 
@@ -311,6 +242,11 @@ const BioPage = (props: BioProps) => {
       <PersonMeta poet={poet} lang={lang} />
       <div style={{ width: '100%', marginTop: '40px' }}>
         <PersonPortrait poet={poet} portraits={portraits} lang={lang} />
+        <ExternalIdentifierLinks
+          identifiers={identifiers}
+          lang={lang}
+          category="authority"
+        />
       </div>
     </SplitWhenSmall>
   );
@@ -320,7 +256,9 @@ const BioPage = (props: BioProps) => {
       headTitle={`${_('Biografi', lang)} - ${poetNameString(poet)} - Kalliope`}
       ogTitle={poetNameString(poet, false, false) + ' ' + _('biografi', lang)}
       ogImage={OpenGraph.poetImage(poet)}
-      ogDescription={OpenGraph.trimmedDescription(content_html)}
+      ogDescription={OpenGraph.trimmedDescription(
+        biographies[0]?.content_html
+      )}
       requestPath={`/${lang}/bio/${poet.id}`}
       crumbs={poetCrumbsWithTitle(lang, poet, _('Biografi', lang))}
       pageTitle={<PoetName poet={poet} includePeriod />}
@@ -330,18 +268,23 @@ const BioPage = (props: BioProps) => {
       selectedMenuItem="bio">
       <SidebarSplit sidebar={sidebarItems} sidebarOnTopWhenSplit={true}>
         <div style={{ lineHeight: '1.6' }}>
-          <TextContent
-            contentHtml={content_html}
-            contentLang={content_lang}
-            className="bio-text"
-          />
+          {biographies.map((biography, index) => (
+            <div className="biography" key={index}>
+              <TextContent
+                contentHtml={biography.content_html}
+                contentLang={biography.content_lang}
+                className="bio-text"
+              />
+              <BiographySources sources={biography.sources} lang={lang} />
+            </div>
+          ))}
           <Timeline timeline={timeline} lang={lang} />
           <style jsx>{`
-            :global(.bio-text) {
+            .biography {
               margin-bottom: 40px;
             }
             @media (max-width: 600px) {
-              :global(.bio-text) {
+              .biography {
                 border-bottom: 1px solid #666;
                 padding-bottom: 30px;
               }
@@ -353,19 +296,15 @@ const BioPage = (props: BioProps) => {
   );
 };
 
-BioPage.getInitialProps = async ({
-  query: { lang, poetId },
-}: {
-  query: { lang: Lang, poetId: string },
-}) => {
+BioPage.getInitialProps = async ({ query: { lang, poetId } }) => {
   const json = await Client.bio(poetId);
   return {
     lang,
     portraits: json.portraits,
     poet: json.poet,
-    content_html: json.content_html,
-    content_lang: json.content_lang,
+    biographies: json.biographies ?? [],
     timeline: json.timeline,
+    identifiers: json.identifiers,
     error: json.error,
   };
 };

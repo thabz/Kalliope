@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="boedtcher" status="complete" type="poetry">
 <workhead>
-   <title>Andre digte</title>
-   <year>?</year>
-   <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+  <title>Andre digte</title>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
 <text id="boedtcher2018121901" variant="boedtcher1870a42">
 <head>
-   <title>Ved et Tab</title>
-   <firstline>Hvad her vi elske, ejes kun paa Borg</firstline>
-   <quality>korrektur1,kilde</quality>
-   <notes>
-       <note>I denne form blev »Ved et Tab« trykt første gang i <a poet="richardt">Christian Richardts</a> digtantologi <i>Fra danske Forfattere, Digte og Skizzer</i> udgivet 1867.</note>
-   </notes>
+  <title>Ved et Tab</title>
+  <firstline>Hvad her vi elske, ejes kun paa Borg</firstline>
+  <quality>korrektur1,kilde</quality>
+  <notes>
+    <note>I denne form blev »Ved et Tab« trykt første gang i <a poet="richardt">Christian Richardts</a> digtantologi <i>Fra danske Forfattere, Digte og Skizzer</i> udgivet 1867.</note>
+  </notes>
 </head>
 <body>
 <poetry>
@@ -32,7 +29,6 @@ Og derfor skal du - elske her paa Jorden!
 </poetry>
 </body>
 </text>
-
 
 </workbody>
 </kalliopework>

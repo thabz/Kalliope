@@ -1,26 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="judichaer" status="incomplete" type="poetry">
 <workhead>
-   <title>Andre digte</title>
-   <year>?</year>
-   <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+  <title>Andre digte</title>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
 <text id="judichaer2002032101">
 <head>
-   <title>Om Slangerup</title>
-   <subtitle>Sonnet.</subtitle>
-   <toctitle>Om Slangerup</toctitle>
-   <indextitle>Om Slangerup</indextitle>
-   <firstline>Slangerup paltet udvortis vel seer</firstline>
-   <notes>
-      <note>Indtastet efter Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1, p. 29.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
-   <keywords>sonnet</keywords>
+  <title>Om Slangerup</title>
+  <subtitle>Sonnet.</subtitle>
+  <toctitle>Om Slangerup</toctitle>
+  <indextitle>Om Slangerup</indextitle>
+  <firstline>Slangerup paltet udvortis vel seer</firstline>
+  <source pages="29">Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1.</source>
+  <quality>korrektur1,kilde,side</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -44,16 +39,14 @@ Derfor bør ingen at laste dend Stad.
 
 <text id="judichaer2002032102">
 <head>
-   <title>Om Slangerup</title>
-   <subtitle>Sonnet.</subtitle>
-   <toctitle>Om Slangerup</toctitle>
-   <indextitle>Om Slangerup</indextitle>
-   <firstline>Du ædle Slangerup / maa ynckelig dig klage</firstline>
-   <notes>
-      <note>Indtastet efter Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1, p. 29.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
-   <keywords>sonnet</keywords>
+  <title>Om Slangerup</title>
+  <subtitle>Sonnet.</subtitle>
+  <toctitle>Om Slangerup</toctitle>
+  <indextitle>Om Slangerup</indextitle>
+  <firstline>Du ædle Slangerup / maa ynckelig dig klage</firstline>
+  <source pages="29">Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1.</source>
+  <quality>korrektur1,kilde,side</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -74,5 +67,6 @@ At dend retferdige Gud hâr end saa længe sparet.
 </poetry>
 </body>
 </text>
+
 </workbody>
 </kalliopework>

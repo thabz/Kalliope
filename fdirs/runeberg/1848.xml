@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1848" author="runeberg" status="incomplete" type="poetry">
 <workhead>
-    <title>Fänrik Ståls sägner</title>
-    <year>1848</year>
+  <title>Fänrik Ståls sägner</title>
+  <year>1848</year>
+  <identifiers>
+    <wikidata>Q1478754</wikidata>
+  </identifiers>
 </workhead>
 <workbody>
 
 <text id="runeberg20190313">
 <head>
-   <title>Vårt land</title>
-   <firstline>Vårt land, vårt land, vårt fosterland</firstline>
-   <note>
-       <note>Den finske nationalsang.</note>
-   </note>
-   <!-- http://runeberg.org/fstal/ -->
+  <title>Vårt land</title>
+  <firstline>Vårt land, vårt land, vårt fosterland</firstline>
+  <note>
+    <note>Den finske nationalsang.</note>
+  </note>
+  <source href="http://runeberg.org/fstal/">Johan Ludvig Runeberg: <i>Fänrik Ståls sägner</i>.</source>
 </head>
 <body>
 <poetry>

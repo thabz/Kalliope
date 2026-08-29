@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1833" author="mueller" status="complete" type="poetry">
 <workhead>
-   <title>Dandserinden</title>
-   <year>1833</year>
-   <notes>
-      <note>Udkom særskilt i 1833, i anden udgave 1834 og i tredie udgave 1837 sammen med "Amor og Psyche". Trykt fjerde gang 1847 i "Ungdomsarbeider", femte gang 1854, sjette gang 1861, syvende gang 1872 i "Ungdomsskrifter", ottende gang 1879 i "Poetiske Skrifter", niende gang 1883 i "Dandserinden og Amor og Psyche", tiende gang 1900 i "Gyldendals Bibliothek for Hjemmet".</note>
-      <note>Denne tekst stammer fra førsteudgaven.</note>
-   </notes>
-   <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
-   <keywords>ottaven</keywords>
+  <title>Dandserinden</title>
+  <year>1833</year>
+  <identifiers>
+    <openlibrary-work>OL6094213W</openlibrary-work>
+  </identifiers>
+  <notes>
+    <note>Udkom særskilt i 1833, i anden udgave 1834 og i tredie udgave 1837 sammen med "Amor og Psyche". Trykt fjerde gang 1847 i "Ungdomsarbeider", femte gang 1854, sjette gang 1861, syvende gang 1872 i "Ungdomsskrifter", ottende gang 1879 i "Poetiske Skrifter", niende gang 1883 i "Dandserinden og Amor og Psyche", tiende gang 1900 i "Gyldendals Bibliothek for Hjemmet".</note>
+    <note>Denne tekst stammer fra førsteudgaven.</note>
+  </notes>
+  <quality>korrektur1</quality>
+  <keywords>ottaven</keywords>
 </workhead>
 <workbody>
 
 <text id="mueller1833a0">
 <head>
-   <title>Dandserinden - 1. Sang</title>
-   <toctitle>Dandserinden - 1. Sang</toctitle>
-   <indextitle>Dandserinden - 1. Sang</indextitle>
-   <firstline>Forbi er Efterhøsten, Bladet falder</firstline>
-   <quality>korrektur1</quality>
-   <keywords>ottaven</keywords>
+  <title>Dandserinden - 1. Sang</title>
+  <toctitle>Dandserinden - 1. Sang</toctitle>
+  <indextitle>Dandserinden - 1. Sang</indextitle>
+  <firstline>Forbi er Efterhøsten, Bladet falder</firstline>
+  <quality>korrektur1</quality>
+  <keywords>ottaven</keywords>
 </head>
 <body>
 <poetry>
@@ -1060,12 +1061,12 @@ Du stille, stolte, straalerige Stjerne!
 
 <text id="mueller1833b0">
 <head>
-   <title>Dandserinden - 2. Sang</title>
-   <toctitle>Dandserinden - 2. Sang</toctitle>
-   <indextitle>Dandserinden - 2. Sang</indextitle>
-   <firstline>Hver fik sin Lod i Fru Fortunas Pose</firstline>
-   <quality>korrektur1</quality>
-   <keywords>ottaven</keywords>
+  <title>Dandserinden - 2. Sang</title>
+  <toctitle>Dandserinden - 2. Sang</toctitle>
+  <indextitle>Dandserinden - 2. Sang</indextitle>
+  <firstline>Hver fik sin Lod i Fru Fortunas Pose</firstline>
+  <quality>korrektur1</quality>
+  <keywords>ottaven</keywords>
 </head>
 <body>
 <poetry>
@@ -1434,7 +1435,7 @@ Og fra sin Divan Fruen Alt behersker,
 Som klogest General hun styrer Alt;
 Hun krydrer Spøgen naar den altfor fersk er,
 Og vækker Geisten, som i Stave faldt.
-Ei binder til hun Oxens Mund, der tærsker,<note>Se <xref bibel="bibel5mose25,4"/>.</note>
+Ei binder til hun Oxens Mund, der tærsker,<note>Se <xref bible="bibel5mose25,4"/>.</note>
 Nei Høsten sanker hun af Attisk Salt,
 Og lokker frem hvert Hoveds skjulte Kraft
 Med Skjemt og Spørgsmaal, Thee og Druesaft.
@@ -2744,12 +2745,12 @@ I Taushed ved Diones Brudeseng. -
 
 <text id="mueller1833c0">
 <head>
-   <title>Dandserinden - 3. Sang</title>
-   <toctitle>Dandserinden - 3. Sang</toctitle>
-   <indextitle>Dandserinden - 3. Sang</indextitle>
-   <firstline>Let Tiden ruller, hvad den med sig bringer</firstline>
-   <quality>korrektur1</quality>
-   <keywords>ottaven</keywords>
+  <title>Dandserinden - 3. Sang</title>
+  <toctitle>Dandserinden - 3. Sang</toctitle>
+  <indextitle>Dandserinden - 3. Sang</indextitle>
+  <firstline>Let Tiden ruller, hvad den med sig bringer</firstline>
+  <quality>korrektur1</quality>
+  <keywords>ottaven</keywords>
 </head>
 <body>
 <poetry>
@@ -4215,5 +4216,6 @@ Som fik sin Glands af Evighedens Bølger. -
 </poetry>
 </body>
 </text>
+
 </workbody>
 </kalliopework>

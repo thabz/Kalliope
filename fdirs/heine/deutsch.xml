@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="deutsch" author="heine" status="complete" type="poetry">
 <workhead>
-   <title>Deutschland. Ein Wintermärchen</title>
-   <year>1844</year>
-   <notes>
-      <note>Tilføjet af Henrik Nielsen.</note>
-   </notes>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+  <title>Deutschland. Ein Wintermärchen</title>
+  <year>1844</year>
+  <notes>
+    <note>Tilføjet af Henrik Nielsen.</note>
+  </notes>
 </workhead>
 <workbody>
 
 <text id="heine2001102262a" skip-index="true">
 <head>
-   <title>Vorwort</title>
-   <toctitle>Vorwort</toctitle>
-   <indextitle>Vorwort</indextitle>
+  <title>Vorwort</title>
+  <toctitle>Vorwort</toctitle>
+  <indextitle>Vorwort</indextitle>
+  <dates>
+    <written>1844-09-17</written>
+  </dates>
 </head>
 <body>
 <prose>
@@ -31,10 +32,10 @@ Hamburg, den 17. September 1844
 
 <text id="heine2001102263a">
 <head>
-   <title>Im traurigen Monat November war's</title>
-   <toctitle>Caput I</toctitle>
-   <indextitle>Im traurigen Monat November war's</indextitle>
-   <firstline>Im traurigen Monat November war's</firstline>
+  <title>Im traurigen Monat November war's</title>
+  <toctitle>Caput I</toctitle>
+  <indextitle>Im traurigen Monat November war's</indextitle>
+  <firstline>Im traurigen Monat November war's</firstline>
 </head>
 <body>
 <poetry>
@@ -138,10 +139,10 @@ Und es wuchsen ihm neu die Kräfte.
 
 <text id="heine2001102264a">
 <head>
-   <title>Während die Kleine von Himmelslust</title>
-   <toctitle>Caput II</toctitle>
-   <indextitle>Während die Kleine von Himmelslust</indextitle>
-   <firstline>Während die Kleine von Himmelslust</firstline>
+  <title>Während die Kleine von Himmelslust</title>
+  <toctitle>Caput II</toctitle>
+  <indextitle>Während die Kleine von Himmelslust</indextitle>
+  <firstline>Während die Kleine von Himmelslust</firstline>
 </head>
 <body>
 <poetry>
@@ -205,10 +206,10 @@ Einig nach außen und innen."
 
 <text id="heine2001102265a">
 <head>
-   <title>Zu Aachen, im alten Dome, liegt</title>
-   <toctitle>Caput III</toctitle>
-   <indextitle>Zu Aachen, im alten Dome, liegt</indextitle>
-   <firstline>Zu Aachen, im alten Dome, liegt</firstline>
+  <title>Zu Aachen, im alten Dome, liegt</title>
+  <toctitle>Caput III</toctitle>
+  <indextitle>Zu Aachen, im alten Dome, liegt</indextitle>
+  <firstline>Zu Aachen, im alten Dome, liegt</firstline>
 </head>
 <body>
 <poetry>
@@ -312,10 +313,10 @@ Und rufen: "Es lebe der König!"
 
 <text id="heine2001102266a">
 <head>
-   <title>Zu Köllen kam ich spätabends an</title>
-   <toctitle>Caput IV</toctitle>
-   <indextitle>Zu Köllen kam ich spätabends an</indextitle>
-   <firstline>Zu Köllen kam ich spätabends an</firstline>
+  <title>Zu Köllen kam ich spätabends an</title>
+  <toctitle>Caput IV</toctitle>
+  <indextitle>Zu Köllen kam ich spätabends an</indextitle>
+  <firstline>Zu Köllen kam ich spätabends an</firstline>
 </head>
 <body>
 <poetry>
@@ -459,10 +460,10 @@ Belohnt sein Volk, die Toren!
 
 <text id="heine2001102267a">
 <head>
-   <title>Und als ich an die Rheinbrück' kam</title>
-   <toctitle>Caput V</toctitle>
-   <indextitle>Und als ich an die Rheinbrück' kam</indextitle>
-   <firstline>Und als ich an die Rheinbrück' kam</firstline>
+  <title>Und als ich an die Rheinbrück' kam</title>
+  <toctitle>Caput V</toctitle>
+  <indextitle>Und als ich an die Rheinbrück' kam</indextitle>
+  <firstline>Und als ich an die Rheinbrück' kam</firstline>
 </head>
 <body>
 <poetry>
@@ -576,10 +577,10 @@ Leb wohl, wir sehen uns wieder."
 
 <text id="heine2001102268a">
 <head>
-   <title>Den Paganini begleitete stets</title>
-   <toctitle>Caput VI</toctitle>
-   <indextitle>Den Paganini begleitete stets</indextitle>
-   <firstline>Den Paganini begleitete stets</firstline>
+  <title>Den Paganini begleitete stets</title>
+  <toctitle>Caput VI</toctitle>
+  <indextitle>Den Paganini begleitete stets</indextitle>
+  <firstline>Den Paganini begleitete stets</firstline>
 </head>
 <body>
 <poetry>
@@ -678,10 +679,10 @@ Die Tat von deinem Gedanken."
 
 <text id="heine2001102269a">
 <head>
-   <title>Ich ging nach Haus und schlief, als ob</title>
-   <toctitle>Caput VII</toctitle>
-   <indextitle>Ich ging nach Haus und schlief, als ob</indextitle>
-   <firstline>Ich ging nach Haus und schlief, als ob</firstline>
+  <title>Ich ging nach Haus und schlief, als ob</title>
+  <toctitle>Caput VII</toctitle>
+  <indextitle>Ich ging nach Haus und schlief, als ob</indextitle>
+  <firstline>Ich ging nach Haus und schlief, als ob</firstline>
 </head>
 <body>
 <poetry>
@@ -835,10 +836,10 @@ Und ich erwachte plötzlich.
 
 <text id="heine2001102270a">
 <head>
-   <title>Von Köllen bis Hagen kostet die Post</title>
-   <toctitle>Caput VIII</toctitle>
-   <indextitle>Von Köllen bis Hagen kostet die Post</indextitle>
-   <firstline>Von Köllen bis Hagen kostet die Post</firstline>
+  <title>Von Köllen bis Hagen kostet die Post</title>
+  <toctitle>Caput VIII</toctitle>
+  <indextitle>Von Köllen bis Hagen kostet die Post</indextitle>
+  <firstline>Von Köllen bis Hagen kostet die Post</firstline>
 </head>
 <body>
 <poetry>
@@ -932,10 +933,10 @@ Das "Vive l' Empereur!", vernommen.
 
 <text id="heine2001102271a">
 <head>
-   <title>Von Köllen war ich drei Viertel auf acht</title>
-   <toctitle>Caput IX</toctitle>
-   <indextitle>Von Köllen war ich drei Viertel auf acht</indextitle>
-   <firstline>Von Köllen war ich drei Viertel auf acht</firstline>
+  <title>Von Köllen war ich drei Viertel auf acht</title>
+  <toctitle>Caput IX</toctitle>
+  <indextitle>Von Köllen war ich drei Viertel auf acht</indextitle>
+  <firstline>Von Köllen war ich drei Viertel auf acht</firstline>
 </head>
 <body>
 <poetry>
@@ -989,10 +990,10 @@ Mit Lorbeerblättern den Rüssel.
 
 <text id="heine2001102272">
 <head>
-   <title>Dicht hinter Hagen ward es Nacht</title>
-   <toctitle>Caput X</toctitle>
-   <indextitle>Dicht hinter Hagen ward es Nacht</indextitle>
-   <firstline>Dicht hinter Hagen ward es Nacht</firstline>
+  <title>Dicht hinter Hagen ward es Nacht</title>
+  <toctitle>Caput X</toctitle>
+  <indextitle>Dicht hinter Hagen ward es Nacht</indextitle>
+  <firstline>Dicht hinter Hagen ward es Nacht</firstline>
 </head>
 <body>
 <poetry>
@@ -1046,10 +1047,10 @@ Unter die Haube - Amen!
 
 <text id="heine2001102273">
 <head>
-   <title>Das ist der Teutoburger Wald</title>
-   <toctitle>Caput XI</toctitle>
-   <indextitle>Das ist der Teutoburger Wald</indextitle>
-   <firstline>Das ist der Teutoburger Wald</firstline>
+  <title>Das ist der Teutoburger Wald</title>
+  <toctitle>Caput XI</toctitle>
+  <indextitle>Das ist der Teutoburger Wald</indextitle>
+  <firstline>Das ist der Teutoburger Wald</firstline>
 </head>
 <body>
 <poetry>
@@ -1138,10 +1139,10 @@ Hab selber subskribieret.
 
 <text id="heine2001102274">
 <head>
-   <title>Im nächtlichen Walde humpelt dahin</title>
-   <toctitle>Caput XII</toctitle>
-   <indextitle>Im nächtlichen Walde humpelt dahin</indextitle>
-   <firstline>Im nächtlichen Walde humpelt dahin</firstline>
+  <title>Im nächtlichen Walde humpelt dahin</title>
+  <toctitle>Caput XII</toctitle>
+  <indextitle>Im nächtlichen Walde humpelt dahin</indextitle>
+  <firstline>Im nächtlichen Walde humpelt dahin</firstline>
 </head>
 <body>
 <poetry>
@@ -1220,10 +1221,10 @@ In der "Allgemeinen Zeitung".
 
 <text id="heine2001102275">
 <head>
-   <title>Die Sonne ging auf bei Paderborn</title>
-   <toctitle>Caput XIII</toctitle>
-   <indextitle>Die Sonne ging auf bei Paderborn</indextitle>
-   <firstline>Die Sonne ging auf bei Paderborn</firstline>
+  <title>Die Sonne ging auf bei Paderborn</title>
+  <toctitle>Caput XIII</toctitle>
+  <indextitle>Die Sonne ging auf bei Paderborn</indextitle>
+  <firstline>Die Sonne ging auf bei Paderborn</firstline>
 </head>
 <body>
 <poetry>
@@ -1282,10 +1283,10 @@ Als warnendes Exempel!
 
 <text id="heine2001102276">
 <head>
-   <title>Ein feuchter Wind, ein kahles Land</title>
-   <toctitle>Caput XIV</toctitle>
-   <indextitle>Ein feuchter Wind, ein kahles Land</indextitle>
-   <firstline>Ein feuchter Wind, ein kahles Land</firstline>
+  <title>Ein feuchter Wind, ein kahles Land</title>
+  <toctitle>Caput XIV</toctitle>
+  <indextitle>Ein feuchter Wind, ein kahles Land</indextitle>
+  <firstline>Ein feuchter Wind, ein kahles Land</firstline>
 </head>
 <body>
 <poetry>
@@ -1444,10 +1445,10 @@ Mein abergläubisches Herze jauchzt:
 
 <text id="heine2001102277">
 <head>
-   <title>Ein feiner Regen prickelt herab</title>
-   <toctitle>Caput XV</toctitle>
-   <indextitle>Ein feiner Regen prickelt herab</indextitle>
-   <firstline>Ein feiner Regen prickelt herab</firstline>
+  <title>Ein feiner Regen prickelt herab</title>
+  <toctitle>Caput XV</toctitle>
+  <indextitle>Ein feiner Regen prickelt herab</indextitle>
+  <firstline>Ein feiner Regen prickelt herab</firstline>
 </head>
 <body>
 <poetry>
@@ -1556,10 +1557,10 @@ Das Sprüchwort im römischen Reiche."
 
 <text id="heine2001102278">
 <head>
-   <title>Das Stoßen des Wagens weckte mich auf</title>
-   <toctitle>Caput XVI</toctitle>
-   <indextitle>Das Stoßen des Wagens weckte mich auf</indextitle>
-   <firstline>Das Stoßen des Wagens weckte mich auf</firstline>
+  <title>Das Stoßen des Wagens weckte mich auf</title>
+  <toctitle>Caput XVI</toctitle>
+  <indextitle>Das Stoßen des Wagens weckte mich auf</indextitle>
+  <firstline>Das Stoßen des Wagens weckte mich auf</firstline>
 </head>
 <body>
 <poetry>
@@ -1688,10 +1689,10 @@ So brauchen wir gar keinen Kaiser."
 
 <text id="heine2001102279">
 <head>
-   <title>Ich habe mich mit dem Kaiser gezankt</title>
-   <toctitle>Caput XVII</toctitle>
-   <indextitle>Ich habe mich mit dem Kaiser gezankt</indextitle>
-   <firstline>Ich habe mich mit dem Kaiser gezankt</firstline>
+  <title>Ich habe mich mit dem Kaiser gezankt</title>
+  <toctitle>Caput XVII</toctitle>
+  <indextitle>Ich habe mich mit dem Kaiser gezankt</indextitle>
+  <firstline>Ich habe mich mit dem Kaiser gezankt</firstline>
 </head>
 <body>
 <poetry>
@@ -1760,10 +1761,10 @@ Komme du bald, o Kaiser!"
 
 <text id="heine2001102280">
 <head>
-   <title>Minden ist eine feste Burg</title>
-   <toctitle>Caput XVIII</toctitle>
-   <indextitle>Minden ist eine feste Burg</indextitle>
-   <firstline>Minden ist eine feste Burg</firstline>
+  <title>Minden ist eine feste Burg</title>
+  <toctitle>Caput XVIII</toctitle>
+  <indextitle>Minden ist eine feste Burg</indextitle>
+  <firstline>Minden ist eine feste Burg</firstline>
 </head>
 <body>
 <poetry>
@@ -1857,10 +1858,10 @@ Auf bückeburg'schem Boden.
 
 <text id="heine2001102281">
 <head>
-   <title>Oh, Danton, du hast dich sehr geirrt</title>
-   <toctitle>Caput XIX</toctitle>
-   <indextitle>Oh, Danton, du hast dich sehr geirrt</indextitle>
-   <firstline>Oh, Danton, du hast dich sehr geirrt</firstline>
+  <title>Oh, Danton, du hast dich sehr geirrt</title>
+  <toctitle>Caput XIX</toctitle>
+  <indextitle>Oh, Danton, du hast dich sehr geirrt</indextitle>
+  <firstline>Oh, Danton, du hast dich sehr geirrt</firstline>
 </head>
 <body>
 <poetry>
@@ -1929,10 +1930,10 @@ Für seine kranken Hunde."
 
 <text id="heine2001102282">
 <head>
-   <title>Von Harburg fuhr ich in einer Stund'</title>
-   <toctitle>Caput XX</toctitle>
-   <indextitle>Von Harburg fuhr ich in einer Stund'</indextitle>
-   <firstline>Von Harburg fuhr ich in einer Stund'</firstline>
+  <title>Von Harburg fuhr ich in einer Stund'</title>
+  <toctitle>Caput XX</toctitle>
+  <indextitle>Von Harburg fuhr ich in einer Stund'</indextitle>
+  <firstline>Von Harburg fuhr ich in einer Stund'</firstline>
 </head>
 <body>
 <poetry>
@@ -2011,10 +2012,10 @@ Und ich lasse die Schalen liegen."
 
 <text id="heine2001102283">
 <head>
-   <title>Die Stadt, zur Hälfte abgebrannt</title>
-   <toctitle>Caput XXI</toctitle>
-   <indextitle>Die Stadt, zur Hälfte abgebrannt</indextitle>
-   <firstline>Die Stadt, zur Hälfte abgebrannt</firstline>
+  <title>Die Stadt, zur Hälfte abgebrannt</title>
+  <toctitle>Caput XXI</toctitle>
+  <indextitle>Die Stadt, zur Hälfte abgebrannt</indextitle>
+  <firstline>Die Stadt, zur Hälfte abgebrannt</firstline>
 </head>
 <body>
 <poetry>
@@ -2113,10 +2114,10 @@ Das Essen in meinem Magen."
 
 <text id="heine2001102284">
 <head>
-   <title>Noch mehr verändert als die Stadt</title>
-   <toctitle>Caput XXII</toctitle>
-   <indextitle>Noch mehr verändert als die Stadt</indextitle>
-   <firstline>Noch mehr verändert als die Stadt</firstline>
+  <title>Noch mehr verändert als die Stadt</title>
+  <toctitle>Caput XXII</toctitle>
+  <indextitle>Noch mehr verändert als die Stadt</indextitle>
+  <firstline>Noch mehr verändert als die Stadt</firstline>
 </head>
 <body>
 <poetry>
@@ -2210,10 +2211,10 @@ Man heißt sie geräucherte Sprotte.
 
 <text id="heine2001102285">
 <head>
-   <title>Als Republik war Hamburg nie</title>
-   <toctitle>Caput XXIII</toctitle>
-   <indextitle>Als Republik war Hamburg nie</indextitle>
-   <firstline>Als Republik war Hamburg nie</firstline>
+  <title>Als Republik war Hamburg nie</title>
+  <toctitle>Caput XXIII</toctitle>
+  <indextitle>Als Republik war Hamburg nie</indextitle>
+  <firstline>Als Republik war Hamburg nie</firstline>
 </head>
 <body>
 <poetry>
@@ -2368,10 +2369,10 @@ Und ging' es in die Hölle!"
 
 <text id="heine2001102286">
 <head>
-   <title>Wie ich die enge Sahltrepp' hinauf</title>
-   <toctitle>Caput XXIV</toctitle>
-   <indextitle>Wie ich die enge Sahltrepp' hinauf</indextitle>
-   <firstline>Wie ich die enge Sahltrepp' hinauf</firstline>
+  <title>Wie ich die enge Sahltrepp' hinauf</title>
+  <toctitle>Caput XXIV</toctitle>
+  <indextitle>Wie ich die enge Sahltrepp' hinauf</indextitle>
+  <firstline>Wie ich die enge Sahltrepp' hinauf</firstline>
 </head>
 <body>
 <poetry>
@@ -2495,10 +2496,10 @@ Du mußt ihn mit Rum vermischen."
 
 <text id="heine2001102287">
 <head>
-   <title>Die Göttin hat mir Tee gekocht</title>
-   <toctitle>Caput XXV</toctitle>
-   <indextitle>Die Göttin hat mir Tee gekocht</indextitle>
-   <firstline>Die Göttin hat mir Tee gekocht</firstline>
+  <title>Die Göttin hat mir Tee gekocht</title>
+  <toctitle>Caput XXV</toctitle>
+  <indextitle>Die Göttin hat mir Tee gekocht</indextitle>
+  <firstline>Die Göttin hat mir Tee gekocht</firstline>
 </head>
 <body>
 <poetry>
@@ -2632,10 +2633,10 @@ In Reden und in Schriften.
 
 <text id="heine2001102288">
 <head>
-   <title>Die Wangen der Göttin glühten so rot</title>
-   <toctitle>Caput XXVI</toctitle>
-   <indextitle>Die Wangen der Göttin glühten so rot</indextitle>
-   <firstline>Die Wangen der Göttin glühten so rot</firstline>
+  <title>Die Wangen der Göttin glühten so rot</title>
+  <toctitle>Caput XXVI</toctitle>
+  <indextitle>Die Wangen der Göttin glühten so rot</indextitle>
+  <firstline>Die Wangen der Göttin glühten so rot</firstline>
 </head>
 <body>
 <poetry>
@@ -2774,10 +2775,10 @@ Es war die beste Stelle."
 
 <text id="heine2001102289">
 <head>
-   <title>Was sich in jener Wundernacht</title>
-   <toctitle>Caput XXVII</toctitle>
-   <indextitle>Was sich in jener Wundernacht</indextitle>
-   <firstline>Was sich in jener Wundernacht</firstline>
+  <title>Was sich in jener Wundernacht</title>
+  <toctitle>Caput XXVII</toctitle>
+  <indextitle>Was sich in jener Wundernacht</indextitle>
+  <firstline>Was sich in jener Wundernacht</firstline>
 </head>
 <body>
 <poetry>
@@ -2893,5 +2894,6 @@ Zu solcher Hölle verdammen.
 </poetry>
 </body>
 </text>
+
 </workbody>
 </kalliopework>

@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1907" author="rilke" status="incomplete" type="poetry">
 <workhead>
-   <title>Neue Gedichte</title>
-   <year>1907</year>
-   <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+  <title>Neue Gedichte</title>
+  <year>1907</year>
+  <identifiers>
+    <wikidata>Q7011009</wikidata>
+  </identifiers>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
 <text id="rilke2000031711">
 <head>
-   <title>Römische Fontäne</title>
-   <subtitle>Borghese</subtitle>
-   <toctitle>Römische Fontäne</toctitle>
-   <indextitle>Römische Fontäne</indextitle>
-   <firstline>Zwei Becken, eins das andre übersteigend</firstline>
-   <quality>korrektur1</quality>
-   <keywords>rom,sonnet</keywords>
+  <title>Römische Fontäne</title>
+  <subtitle>Borghese</subtitle>
+  <toctitle>Römische Fontäne</toctitle>
+  <indextitle>Römische Fontäne</indextitle>
+  <firstline>Zwei Becken, eins das andre übersteigend</firstline>
+  <quality>korrektur1</quality>
+  <keywords>rom,sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -41,5 +42,6 @@ von unten lächeln macht mit Übergängen.
 </poetry>
 </body>
 </text>
+
 </workbody>
 </kalliopework>

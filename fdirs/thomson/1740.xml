@@ -1,24 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1740" author="thomson" status="incomplete" type="poetry">
 <workhead>
-   <title>The Masque of Alfred</title>
-   <year>1740</year>
-   <notes>
-      <note>Skrevet sammen med digteren David Malloch.</note>
-   </notes>
-   <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+  <title>The Masque of Alfred</title>
+  <year>1740</year>
+  <notes>
+    <note>Skrevet sammen med digteren David Malloch.</note>
+  </notes>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
 <text id="thomson2000091901">
 <head>
-   <title>Rule Britannia</title>
-   <toctitle>Rule Britannia</toctitle>
-   <indextitle>Rule Britannia</indextitle>
-   <firstline>When Britain first, at Heaven's command</firstline>
-   <quality>korrektur1</quality>
+  <title>Rule Britannia</title>
+  <toctitle>Rule Britannia</toctitle>
+  <indextitle>Rule Britannia</indextitle>
+  <firstline>When Britain first, at Heaven's command</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -66,5 +64,6 @@ Blest isle! with matchless beauty crown'd,
 </poetry>
 </body>
 </text>
+
 </workbody>
 </kalliopework>

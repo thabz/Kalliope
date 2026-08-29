@@ -1,33 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1832" author="holst" status="complete" type="poetry">
 <workhead>
-   <title>Fædrenelandske Romancer</title>
-   <year>1832</year>
-   <notes>
-        <note>Forlægget er H. P. Holst: <i>Fædrenelandske Romancer</i>, Kbh., 1832.</note>
-        <note>Noter med foranstillet asterisk er Holsts egne.</note>
-   </notes>
-   <pictures>
-       <picture type="titlepage" src="1832-p1.jpg">Titelbladet til <i>Fædrenelandske Romancer</i> (1832) lyder ,,Fædrenelandske / Romancer / af / H. P. Holst, / Studios. theol. // Kannst Du nicht Allen gefallen durch Deine That und Dein Kunstwerk, / Mach'es Weningen recht; Vielen gefallen, ist schlimm. / Schiller // Kjöbenhavn / Trykt i det Christensenske Officin ved J. D. Qvist, / Østergade Nr. 52. / 1832.''.</picture>
-   </pictures>
-   <source facsimile="115308065430_color" facsimile-pages-num="54" facsimile-pages-offset="6">H. P. Holst: <i>Fædrenelandske Romancer</i>, Kbh., 1832.</source>
+  <title>Fædrenelandske Romancer</title>
+  <year>1832</year>
+  <notes>
+    <note>Noter med foranstillet asterisk er Holsts egne.</note>
+  </notes>
+  <pictures>
+    <picture type="titlepage" src="1832-p1.jpg">Titelbladet til <i>Fædrenelandske Romancer</i> (1832) lyder ,,Fædrenelandske / Romancer / af / H. P. Holst, / Studios. theol. // Kannst Du nicht Allen gefallen durch Deine That und Dein Kunstwerk, / Mach'es Weningen recht; Vielen gefallen, ist schlimm. / Schiller // Kjöbenhavn / Trykt i det Christensenske Officin ved J. D. Qvist, / Østergade Nr. 52. / 1832.''.</picture>
+  </pictures>
+  <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122178987505763" facsimile="115308065430_color" facsimile-pages-num="54" facsimile-pages-offset="6">H. P. Holst: <i>Fædrenelandske Romancer</i>, Kbh., 1832.</source>
 </workhead>
 <workbody>
 
 <text id="holst2018030701">
 <head>
-    <title>Svend Tveskjæg</title>
-    <toctitle><num>I.</num>Svend Tveskjæg</toctitle>
-    <firstline>Hvor Sundet bredt sig belter</firstline>
-    <source pages="5-15"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Svend Tveskjæg</title>
+  <toctitle><num>I.</num>Svend Tveskjæg</toctitle>
+  <firstline>Hvor Sundet bredt sig belter</firstline>
+  <source pages="5-15"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<nonum><small><right>Det danske Piger var, som Danmarks Konning Svend</right></small></nonum>
-<nonum><small><right>Tveskjæg Frihed gav.</right></small></nonum>
-<nonum><small><right><w>J. L. Heiberg.</w></right></small></nonum>
+<nonum><right><small>Det danske Piger var, som Danmarks Konning Svend</small></right></nonum>
+<nonum><right><small>Tveskjæg Frihed gav.</small></right></nonum>
+<nonum><right><small><w>J. L. Heiberg.</w></small></right></nonum>
 
 Hvor Sundet bredt sig belter
 Om Sjellands Blomsterkyst,
@@ -268,23 +266,23 @@ De Piger i vort Nord! —
 
 <text id="holst2018030702">
 <head>
-    <title>Njörrunga-Slaget</title>
-    <!-- TODO: Jeg kan ikke gennemskue titlens fraktur. Mjö eller Njö eller ...? -->
-    <toctitle><num>II.</num>Njörrunga-Slaget</toctitle>
-    <firstline>Mens Soel i Østerlide alt farver Himlen rød</firstline>
-    <notes>
-        <note>Mottoet stammer fra Oehlenschlägers <xref poem="oehlen2000032701,1-4"/> fra <i>Nordens Guder</i> (1819).</note>
-    </notes>
-    <source pages="16-24"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Njörrunga-Slaget</title>
+  <!-- TODO: Jeg kan ikke gennemskue titlens fraktur. Mjö eller Njö eller ...? -->
+  <toctitle><num>II.</num>Njörrunga-Slaget</toctitle>
+  <firstline>Mens Soel i Østerlide alt farver Himlen rød</firstline>
+  <notes>
+    <note>Mottoet stammer fra Oehlenschlägers <xref poem="oehlen2000032701,1-4"/> fra <i>Nordens Guder</i> (1819).</note>
+  </notes>
+  <source pages="16-24"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<nonum><small><right>Et Sagn, fuldt værd at høre</right></small></nonum>
-<nonum><small><right>Med gamle Runer staaer;</right></small></nonum>
-<nonum><small><right>Laaner mig Eders Øre,</right></small></nonum>
-<nonum><small><right>Mens jeg Guldharpen slaaer.</right></small></nonum>
-<nonum><small><right><w>A. Oehlenschläger.</w></right></small></nonum>
+<nonum><right><small>Et Sagn, fuldt værd at høre</small></right></nonum>
+<nonum><right><small>Med gamle Runer staaer;</small></right></nonum>
+<nonum><right><small>Laaner mig Eders Øre,</small></right></nonum>
+<nonum><right><small>Mens jeg Guldharpen slaaer.</small></right></nonum>
+<nonum><right><small><w>A. Oehlenschläger.</w></small></right></nonum>
 
 Mens Soel i Østerlide alt farver Himlen rød,
 Fremdukke Vikingsnekker af Issefjordens Skjød,
@@ -476,17 +474,17 @@ Mens blot et Glimt i Norden af Oldtids Kraft er til.«
 
 <text id="holst2018030703">
 <head>
-    <title>Knud Lavard</title>
-    <toctitle><num>III.</num>Knud Lavard</toctitle>
-    <firstline>Der risler en Kilde i Haraldstedskov</firstline>
-    <source pages="25-31"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Knud Lavard</title>
+  <toctitle><num>III.</num>Knud Lavard</toctitle>
+  <firstline>Der risler en Kilde i Haraldstedskov</firstline>
+  <source pages="25-31"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<nonum><small><right>Hvad Tidens er, det maa forgaae,</right></small></nonum>
-<nonum><small><right>Hvad Livets er maa leve.</right></small></nonum>
-<nonum><small><right><w>Chr. Wilster.</w></right></small></nonum>
+<nonum><right><small>Hvad Tidens er, det maa forgaae,</small></right></nonum>
+<nonum><right><small>Hvad Livets er maa leve.</small></right></nonum>
+<nonum><right><small><w>Chr. Wilster.</w></small></right></nonum>
 
 Der risler en Kilde i Haraldstedskov
     Blandt Roser, saa dunkle, saa røde,
@@ -628,17 +626,17 @@ Af Skov og af Kilde udslettes hvert Spoer,
 
 <text id="holst2018030704">
 <head>
-    <title>Otto Rud</title>
-    <toctitle><num>IV.</num>Otto Rud</toctitle>
-    <firstline>Med tvende Skibe stikker</firstline>
-    <source pages="32-36"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Otto Rud</title>
+  <toctitle><num>IV.</num>Otto Rud</toctitle>
+  <firstline>Med tvende Skibe stikker</firstline>
+  <source pages="32-36"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<nonum><small><right>Vort Fødeland var altid rigt</right></small></nonum>
-<nonum><small><right>Paa raske Orlogshelte.</right></small></nonum>
-<nonum><small><right><w>K. L. Rahbek.</w></right></small></nonum>
+<nonum><right><small>Vort Fødeland var altid rigt</small></right></nonum>
+<nonum><right><small>Paa raske Orlogshelte.</small></right></nonum>
+<nonum><right><small><w>K. L. Rahbek.</w></small></right></nonum>
 
 Med tvende Skibe stikker
 Herr <w>Otto Rud</w> i aaben Søe,

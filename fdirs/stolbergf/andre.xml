@@ -1,21 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="stolbergf" status="incomplete" type="poetry">
 <workhead>
-   <title>Andre digte</title>
-   <year>?</year>
-   <quality>korrektur1</quality>
+  <title>Andre digte</title>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
+<text id="stolbergf2026072301">
+<head>
+  <title>Frauenlob</title>
+  <firstline>Traun, der Mann ist Neides werth</firstline>
+  <source pages="19-20"><i>Sämmtliche Gedichte der Brüder Christian und Friedrich Leopold Grafen zu Stolberg</i>, ny forøget udgave, Frankfurt og Leipzig, 1783.</source>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Traun, der Mann ist Neides werth,
+Dem sein Gott ein Weib bescheert,
+Schön und klug und tugendreich,
+Sonder Falsch, den Täublein gleich!
+
+Seiner Wonne Maaß ist groß!
+Seine Ruhe wechsellos!
+Denn kein Kummer nagt den Mann,
+Den solch Weiblein trösten kan!
+
+Gleich des Mondes Silberblick,
+Lächelt sie den Gram zurück;
+Küßt des Mannes Thränen auf,
+Streut mit Blumen seinen Lauf.
+
+Wenn ihn jäher Mut empört,
+Er nicht mehr des Freundes hört,
+Wenn von Zorn die Brust ihm glüht,
+Und sein Auge Feuer sprüht;
+
+O! dann schleicht sie weinend nach,
+Sänftigt ihn mit einem Ach!
+Also kühlt der Abendthau
+Die versengte Blumenau!
+
+Keine Mühe wird ihm schwer!
+Keine Stunde freudenleer!
+Denn nach jeder Arbeit Last
+Harret sein die süsse Rast.
+
+Engel fördern ihre Ruh,
+Drücken beider Augen zu!
+Ihrer keuschen Ehe Band
+Knüpfte Gottes Vaterhand!
+
+Gott giebt ihren Söhnen Mut,
+Für die Tugend reges Blut!
+Stärket ihren jungen Arm,
+Macht ihr Herz für Freiheit warm!
+
+Mit verschämten Reizen blühn
+Ihres Bettes Töchter! glühn
+Mit der Mutter Unschuld, rein
+Wie ein Quell im Sonnenschein!
+
+Drob erfreut der Vater sich,
+Drob die Mutter inniglich;
+Ihr vereintes Dankgebet
+Preist den Geber früh und spät!
+
+Gold hat keinen noch beglückt;
+Falscher Ehre Lorbeer drückt;
+Wer nach Würden hascht greift Sand;
+Wissenschaft ist oft ein Tand:
+
+Aber Weiber giebt uns Gott!
+Ohne sie ist Leben Tod!
+Weiber leichten jedes Joch,
+Lieben uns im Himmel noch!
+</poetry>
+</body>
+</text>
+
 <text id="stolberg2018052901">
 <head>
-   <title>Die Natur</title>
-   <firstline>Er sei mein Freund nicht, welcher die göttliche</firstline>
-   <quality>korrektur1,kilde,side</quality>
-   <notes>
-       <note>Teksten følger <i>Deutsche Nationalliteratur</i>, B. 50,2, Stuttgart [o.J.], pp. 41-43.</note> <!-- http://www.zeno.org/nid/20005722861 -->
-   </notes>
+  <title>Die Natur</title>
+  <firstline>Er sei mein Freund nicht, welcher die göttliche</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source href="http://www.zeno.org/nid/20005722861"><i>Deutsche Nationalliteratur</i>, B. 50,2, Stuttgart [o.J.], pp. 41-43.</source>
 </head>
 <body>
 <poetry>
@@ -76,12 +144,10 @@ Kürzere Locken die Scheitel schmücken!
 
 <text id="stolberg2018073101">
 <head>
-   <title>Der Felsenstrom</title>
-   <firstline>Unsterblicher Jüngling!</firstline>
-   <quality>korrektur1,kilde,side</quality>
-   <notes>
-       <note>Teksten følger <i>Deutsche Nationalliteratur</i>, B. 50,2, Stuttgart [o.J.], pp. 75-76.</note> <!-- http://www.zeno.org/Literatur/M/Stolberg,+Friedrich+Leopold+Graf+zu/Gedichte/Gedichte/34.+Der+Felsenstrom -->
-   </notes>
+  <title>Der Felsenstrom</title>
+  <firstline>Unsterblicher Jüngling!</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source href="http://www.zeno.org/Literatur/M/Stolberg,+Friedrich+Leopold+Graf+zu/Gedichte/Gedichte/34.+Der+Felsenstrom"><i>Deutsche Nationalliteratur</i>, B. 50,2, Stuttgart [o.J.], pp. 75-76.</source>
 </head>
 <body>
 <poetry>
@@ -146,13 +212,12 @@ Frei wie ein Gott!
 </body>
 </text>
 
-
 <text id="stolbergf2018040901">
 <head>
-   <title>An den Abendstern</title>
-   <subtitle>6. Januar 1773</subtitle>
-   <firstline>Ehmals winktest du mir, Führer des schweigenden</firstline>
-   <quality>korrektur1</quality>
+  <title>An den Abendstern</title>
+  <subtitle>6. Januar 1773</subtitle>
+  <firstline>Ehmals winktest du mir, Führer des schweigenden</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -186,11 +251,11 @@ Welchem folget kein Morgenrot!
 
 <text id="stolbergf2018071901">
 <head>
-   <title>Die Schwalbe und die Nachtigall</title>
-   <subtitle>1795</subtitle>
-   <firstline>Progne und Philomele sind Schwestern; die eine verkündet</firstline>
-   <quality>korrektur1</quality>
-   <!-- http://www.zeno.org/nid/20005723760 -->
+  <title>Die Schwalbe und die Nachtigall</title>
+  <subtitle>1795</subtitle>
+  <firstline>Progne und Philomele sind Schwestern; die eine verkündet</firstline>
+  <quality>korrektur1</quality>
+  <source href="http://www.zeno.org/nid/20005723760">Friedrich Leopold Graf zu Stolberg: <i>Die Schwalbe und die Nachtigall</i>.</source>
 </head>
 <body>
 <poetry>
@@ -211,24 +276,21 @@ Sehnsucht, doch kennen wir den, welcher die Sehnsucht uns ließ!
 Sehnsucht ist Morgenröte; noch weilet unter dem Himmel
 Unsre Sonne – sie kommt! Himmel und Erde! sie kommt!
 Heil dir, Herrliche! Tritt aus deinem heiligen Osten!
-Wahrheit strahlet dein Licht! Lieb' ist der Herrlichen Glut.    
+Wahrheit strahlet dein Licht! Lieb' ist der Herrlichen Glut.
 </poetry>
 </body>
 </text>
 
 <text id="stolbergf2018081001">
 <head>
-   <title>Sie an ihn</title>
-   <subtitle>
-       <line>Auf der Reise</line>
-       <line>Herbst 1782</line>
-   </subtitle>
-   <firstline>Der Abend sinkt</firstline>
-   <!-- http://www.zeno.org/nid/20005723558 -->
-   <notes>
-       <note>Følger <i>Deutsche Nationalliteratur</i>, bd. 50,2, Stuttgart, pp. 142-143.</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title>Sie an ihn</title>
+  <subtitle>
+    <line>Auf der Reise</line>
+    <line>Herbst 1782</line>
+  </subtitle>
+  <firstline>Der Abend sinkt</firstline>
+  <quality>korrektur1</quality>
+  <source href="http://www.zeno.org/nid/20005723558"><i>Deutsche Nationalliteratur</i>, bd. 50,2, Stuttgart, pp. 142-143.</source>
 </head>
 <body>
 <poetry>
@@ -254,18 +316,18 @@ So wall' ich gern,
 Von allen fern,
 Auch ohne Stern;
 Wenn nur bei Nacht
-Die Liebe wacht.    
+Die Liebe wacht.
 </poetry>
 </body>
 </text>
 
 <text id="stolbergf2018073101">
 <head>
-   <title>Hellebek, eine seeländische Gegend</title>
-   <subtitle>1776</subtitle>
-   <firstline>Die mich oft auf wehenden Flügeln des rosigen Morgens</firstline>
-   <quality>korrektur1</quality>
-   <!-- http://www.zeno.org/Literatur/M/Stolberg,+Friedrich+Leopold+Graf+zu/Gedichte/Gedichte/46.+Hellebek,+eine+seeländische+Gegend -->
+  <title>Hellebek, eine seeländische Gegend</title>
+  <subtitle>1776</subtitle>
+  <firstline>Die mich oft auf wehenden Flügeln des rosigen Morgens</firstline>
+  <quality>korrektur1</quality>
+  <source href="http://www.zeno.org/Literatur/M/Stolberg,+Friedrich+Leopold+Graf+zu/Gedichte/Gedichte/46.+Hellebek,+eine+seeländische+Gegend">Friedrich Leopold Graf zu Stolberg: <i>Hellebek, eine seeländische Gegend</i>.</source>
 </head>
 <body>
 <poetry>
@@ -428,11 +490,9 @@ Kehre wieder und bald aus deiner tönenden Halle!
 
 <text id="stolbergf2020011901">
 <head>
-    <title>An die Grazien</title>
-    <firstline>Leicht, wie Hauche des Abendwinds</firstline>
-    <notes>
-        <note>Teksten følger <i>Deutsche Nationalliteratur</i>, B. 50,2, Stuttgart [o.J.], pp. 86-87.</note> <!-- http://www.zeno.org/nid/20005723213 -->
-    </notes>
+  <title>An die Grazien</title>
+  <firstline>Leicht, wie Hauche des Abendwinds</firstline>
+  <source href="http://www.zeno.org/nid/20005723213"><i>Deutsche Nationalliteratur</i>, B. 50,2, Stuttgart [o.J.], pp. 86-87.</source>
 </head>
 <body>
 <poetry>

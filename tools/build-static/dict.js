@@ -1,10 +1,10 @@
-const {
+import {
   isFileModified,
   loadCachedJSON,
   writeCachedJSON,
-} = require('../libs/caching.js');
-const { safeMkdir, writeJSON, htmlToXml } = require('../libs/helpers.js');
-const {
+} from '../libs/caching.js';
+import { safeMkdir, writeJSON, htmlToXml } from '../libs/helpers.js';
+import {
   safeGetAttr,
   safeGetText,
   getElementsByTagName,
@@ -13,16 +13,16 @@ const {
   tagName,
   safeGetInnerXML,
   loadXMLDoc,
-} = require('./xml.js');
+} from './xml.js';
 
 const build_dict_first_pass = collected => {
-  const path = `data/dict.xml`;
+  const path = `content/dict.xml`;
   if (!isFileModified(path)) {
     collected.dict = new Map(loadCachedJSON('collected.dict'));
     return;
   }
 
-  safeMkdir('static/api/dict');
+  safeMkdir('public/api/dict');
   const doc = loadXMLDoc(path);
   getElementsByTagName(doc, 'entry').forEach(item => {
     const id = safeGetAttr(item, 'id');
@@ -37,17 +37,18 @@ const build_dict_first_pass = collected => {
 };
 
 const build_dict_second_pass = collected => {
-  const path = `data/dict.xml`;
+  const path = `content/dict.xml`;
   if (!isFileModified(path)) {
     return;
   }
   console.log('Building dict');
-  safeMkdir('static/api/dict');
+  safeMkdir('public/api/dict');
 
   let items = new Array();
 
   const createItem = (id, title, phrase, variants, body, collected) => {
-    const content_html = htmlToXml(safeGetInnerXML(body), collected);
+    const bodyXml = typeof body === 'string' ? body : safeGetInnerXML(body);
+    const content_html = htmlToXml(bodyXml, collected);
     const has_footnotes =
       content_html.indexOf('<footnote') !== -1 ||
       content_html.indexOf('<note') !== -1;
@@ -61,7 +62,7 @@ const build_dict_second_pass = collected => {
         content_html,
       },
     };
-    writeJSON(`static/api/dict/${id}.json`, data);
+    writeJSON(`public/api/dict/${id}.json`, data);
     const simpleData = {
       id,
       title,
@@ -91,10 +92,10 @@ const build_dict_second_pass = collected => {
     });
     createItem(id, title, phrase, variants, body, collected);
   });
-  writeJSON(`static/api/dict.json`, items);
+  writeJSON(`public/api/dict.json`, items);
 };
 
-module.exports = {
+export {
   build_dict_first_pass,
   build_dict_second_pass,
 };

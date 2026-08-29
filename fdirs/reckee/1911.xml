@@ -1,42 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1911" author="reckee" status="complete" type="poetry">
 <workhead>
-    <title>Digte</title>
-    <year>1911</year>
-    <notes>
-        <note>Titelbladet motto stammer fra Ludwig Uhlands <xref poem="uhland2019083101"/>.</note>
-        <note>Teksten følger Ernst von der Recke: <i>Digte</i>, Gyldendalske Boghandel, Kbh., 1911.</note>
-        <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
-        <note>Noter med en foranstillet asterisk er digterens egne.</note>
-    </notes>
-    <pictures>
-        <picture src="1911-p1.jpg">Titelbladet til <i>Digte</i> (1911) lyder ,,Ernst von der Recke / Digte / Syvende Samling // Wohl hab' ich euer Grüßen, / Ihr Heldengeister, gehört; / Eure Reihe soll ich schließen; Heil mir! ich bin es wert. // København og Kristiania / Gyldendalske Boghandel / Nordisk Forlag / 1911''.</picture>
-    </pictures>
-    <source facsimile="115408001419_color" facsimile-pages-num="214" facsimile-pages-offset="14">Ernst von der Recke: <i>Digte</i>, Gyldendalske Boghandel, Kbh., 1911.</source>
+  <title>Digte</title>
+  <year>1911</year>
+  <notes>
+    <note>Titelbladet motto stammer fra Ludwig Uhlands <xref poem="uhland2019083101"/>.</note>
+    <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
+    <note>Noter med en foranstillet asterisk er digterens egne.</note>
+  </notes>
+  <pictures>
+    <picture src="1911-p1.jpg">Titelbladet til <i>Digte</i> (1911) lyder ,,Ernst von der Recke / Digte / Syvende Samling // Wohl hab' ich euer Grüßen, / Ihr Heldengeister, gehört; / Eure Reihe soll ich schließen; Heil mir! ich bin es wert. // København og Kristiania / Gyldendalske Boghandel / Nordisk Forlag / 1911''.</picture>
+  </pictures>
+  <source facsimile="115408001419_color" facsimile-pages-num="214" facsimile-pages-offset="14">Ernst von der Recke: <i>Digte</i>, Gyldendalske Boghandel, Kbh., 1911.</source>
 </workhead>
 <workbody>
 
 <section>
 <head>
-    <title>I. Fest- og Mindedigte</title>
+  <title>I. Fest- og Mindedigte</title>
 </head>
 <content>
 
 <text id="reckee2019082901">
 <head>
-    <title>Cantate ved Hundredaarsfesten for Slaget paa Rheden</title>
-    <firstline>Kirkens Klokker atter ringe</firstline>
-    <notes>
-        <note>* Viken, tidens flyktiga minnen (Karl XII.s Marsch.)</note>
-        <note>* Om Strømmen mod dig bruser, vov at staae (Heise).</note>
-        <note>* Udrust dig, Helt fra Golgatha (Gade). (Jvf. <xref poem="ewaldandrea9"/>.)</note>
-        <note>* Den signede Dag med Fryd vi seer (<a person="weyse">Weyse</a>).</note>
-        <note>* Herre, jeg har handlet ilde (Crüger).</note>
-    </notes>
-    <source pages="3-7"/>
-    <keywords>lejlighedsdigtning</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Cantate ved Hundredaarsfesten for Slaget paa Rheden</title>
+  <firstline>Kirkens Klokker atter ringe</firstline>
+  <notes>
+    <note>* Viken, tidens flyktiga minnen (Karl XII.s Marsch.)</note>
+    <note>* Om Strømmen mod dig bruser, vov at staae (Heise).</note>
+    <note>* Udrust dig, Helt fra Golgatha (Gade). (Jvf. <xref poem="ewaldandrea9"/>.)</note>
+    <note>* Den signede Dag med Fryd vi seer (<a person="weyse">Weyse</a>).</note>
+    <note>* Herre, jeg har handlet ilde (Crüger).</note>
+  </notes>
+  <source pages="3-7"/>
+  <keywords>lejlighedsdigtning</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -157,15 +155,15 @@ Mænd af Mod og Mænd af Ære!
 
 <text id="reckee2019082902">
 <head>
-    <title>Cantate paa Søcadetcorpsets 200-Aars Stiftelsesdag, 26/4 1901</title>
-    <subtitle>Musik af Thorvald Hansen</subtitle>
-    <firstline>Danmark, du, hvis Kyster randes</firstline>
-    <dates>
-        <event>1901-04-26</event>
-    </dates>
-    <source pages="8-13"/>
-    <keywords>lejlighedsdigtning</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Cantate paa Søcadetcorpsets 200-Aars Stiftelsesdag, 26/4 1901</title>
+  <subtitle>Musik af Thorvald Hansen</subtitle>
+  <firstline>Danmark, du, hvis Kyster randes</firstline>
+  <dates>
+    <event>1901-04-26</event>
+  </dates>
+  <source pages="8-13"/>
+  <keywords>lejlighedsdigtning</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -301,13 +299,13 @@ Og synke med Flag under Gaffel!
 </body>
 </text>
 
-<text id="reckee2019082903">
+<text id="reckee2019082903" ignore-tests="repeated-adjacent-word">
 <head>
-    <title>Ved det nordiske Skyttemøde 1901</title>
-    <firstline>Velkommen, I, der stævned hid</firstline>
-    <source pages="14-16"/>
-    <keywords>lejlighedsdigtning,ottaven</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Ved det nordiske Skyttemøde 1901</title>
+  <firstline>Velkommen, I, der stævned hid</firstline>
+  <source pages="14-16"/>
+  <keywords>lejlighedsdigtning,ottaven</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -361,11 +359,11 @@ Gjør nu som vi jert Bedste!
 
 <text id="reckee2019082904">
 <head>
-    <title>Cantate ved ,,Dansk Concert-Forening''s Aabningsfest, 1901</title>
-    <firstline>Der ligger et Land i Vesterled</firstline>
-    <source pages="17-22"/>
-    <keywords>lejlighedsdigtning</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Cantate ved ,,Dansk Concert-Forening''s Aabningsfest, 1901</title>
+  <firstline>Der ligger et Land i Vesterled</firstline>
+  <source pages="17-22"/>
+  <keywords>lejlighedsdigtning</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -500,14 +498,14 @@ Danske Toner kjær!
 
 <text id="reckee2019082905">
 <head>
-    <title>Ved Afsløringen af Absalons Rytterstatue</title>
-    <firstline>Nød i Landet var til Huse</firstline>
-    <notes>
-        <note>* En højtidelig Afsløring af Absalons Rytterstatue maatte i sidste Øjeblik paa Grund af indtrufne Vanskeligheder opgives; de S. 23-26 trykte Sange forbleve desaarsag ubenyttede.</note>
-    </notes>
-    <source pages="23-26"/>
-    <keywords>lejlighedsdigtning,ottaven</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Ved Afsløringen af Absalons Rytterstatue</title>
+  <firstline>Nød i Landet var til Huse</firstline>
+  <notes>
+    <note>* En højtidelig Afsløring af Absalons Rytterstatue maatte i sidste Øjeblik paa Grund af indtrufne Vanskeligheder opgives; de S. 23-26 trykte Sange forbleve desaarsag ubenyttede.</note>
+  </notes>
+  <source pages="23-26"/>
+  <keywords>lejlighedsdigtning,ottaven</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -601,11 +599,11 @@ Som Skjold for Danmark frem!
 
 <text id="reckee2019082906">
 <head>
-    <title>Ved det tredie nordiske akademiske Møde, 1902</title>
-    <firstline>Fremad ruller Tiden i sin Bane</firstline>
-    <source pages="27-29"/>
-    <keywords>lejlighedsdigtning,ottaven</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Ved det tredie nordiske akademiske Møde, 1902</title>
+  <firstline>Fremad ruller Tiden i sin Bane</firstline>
+  <source pages="27-29"/>
+  <keywords>lejlighedsdigtning,ottaven</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -659,12 +657,12 @@ Hvad vi love her med Haand og Mund!
 
 <text id="reckee2019082907">
 <head>
-    <title>Cantate ved Odd-Fellow-Ordenens Jubilæum, 1903</title>
-    <subtitle>Musik af Otto Malling</subtitle>
-    <firstline>Der meldes om mørke Tider</firstline>
-    <source pages="30-35"/>
-    <keywords>lejlighedsdigtning,ottaven</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Cantate ved Odd-Fellow-Ordenens Jubilæum, 1903</title>
+  <subtitle>Musik af Otto Malling</subtitle>
+  <firstline>Der meldes om mørke Tider</firstline>
+  <source pages="30-35"/>
+  <keywords>lejlighedsdigtning,ottaven</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -797,15 +795,15 @@ En anden, større Leir!
 
 <text id="reckee2019082908">
 <head>
-    <title>Cantate ved Festen i Odense paa H. C. Andersens 100-Aars Fødselsdag, 2/4 1905</title>
-    <subtitle>Musik af P. E. Lange-Müller</subtitle>
-    <firstline>De vilde Svaner svæve</firstline>
-    <dates>
-        <event>1905-04-02</event>
-    </dates>
-    <source pages="36-40"/>
-    <keywords>lejlighedsdigtning,andersen</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Cantate ved Festen i Odense paa H. C. Andersens 100-Aars Fødselsdag, 2/4 1905</title>
+  <subtitle>Musik af P. E. Lange-Müller</subtitle>
+  <firstline>De vilde Svaner svæve</firstline>
+  <dates>
+    <event>1905-04-02</event>
+  </dates>
+  <source pages="36-40"/>
+  <keywords>lejlighedsdigtning,andersen</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -925,12 +923,12 @@ Hans Hæder vil uskadt gjemmes!
 
 <text id="reckee2019082909">
 <head>
-    <title>Cantate ved Odd-Fellow-Ordenens Sørgefest for Kong Christian den Niende, 1906</title>
-    <subtitle>Musik af Otto Malling</subtitle>
-    <firstline>Kongers Konge, Du, hvis Hænder</firstline>
-    <source pages="41-45"/>
-    <keywords>lejlighedsdigtning,christian9,ottaven,kuplet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Cantate ved Odd-Fellow-Ordenens Sørgefest for Kong Christian den Niende, 1906</title>
+  <subtitle>Musik af Otto Malling</subtitle>
+  <firstline>Kongers Konge, Du, hvis Hænder</firstline>
+  <source pages="41-45"/>
+  <keywords>lejlighedsdigtning,christian9,ottaven,kuplet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1031,7 +1029,7 @@ Og give dem Himmerigs Glæde!
 
 Herre, Du som Mandens Stræben
 Ænser mer end Mandens Daad,
-Mer end Ord, ban har paa Læben,
+Mer end Ord, han har paa Læben,
 Veier Hjertets skjulte Raad, —
 Giv ham hisset i Din Naade
 Fred, som her han eftertraaede!
@@ -1055,14 +1053,14 @@ Kjærlighed og Fred og Lykke!
 
 <text id="reckee2019082910">
 <head>
-    <title>Ved Indvielsen af det Kgl. Bibliotheks nye Bygning, 1906</title>
-    <firstline>De naae os sent, de milde Røster</firstline>
-    <notes>
-        <note>* Til Forklaring paa, hvad for Indviede let forstaaeligt er sammentrængt i Strophen nederst S. 47, bemærkes, at en Hylde i en — vistnok nu forsvunden — Reol i «Store Sal» 1807 var splintret af en engelsk Brandgranat; den stod i min Bibliothekstid trods Pladsmangelen vedvarende tom, som Minde om den undgaaede Fare. I samme Rum begyndte Griffenfeldt sin Løbebane som Kongens Bibliothekar; i det nu ombyggede Cabinet, der hovedsagelig udgjør Rigsarchivets Forstue, arresteredes han sluttelig for (gjennem det endnu existerende Trapperum, ad en Portbue, der nu er Vindue) at føres i Baad til Cittadellet. I det sidst som «Danske Sal» kjendte Rum ovenover forefandtes forhen «Kunstkammeret», hvori Guldhornstyveriet fandt Sted.<br/>S. 46: Bald prangt, den Morgen zu verkünden (Mozart, transp. f. Mandschor).<br/>S. 47: Flygtige Telt for en flygtig Flok (J. P. E. Hartmann).<br/>S. 48: Hil dem, som kæmped (<a person="weyse">Weyse</a>).</note>
-    </notes>
-    <source pages="46-49"/>
-    <keywords>lejlighedsdigtning,ottaven</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Ved Indvielsen af det Kgl. Bibliotheks nye Bygning, 1906</title>
+  <firstline>De naae os sent, de milde Røster</firstline>
+  <notes>
+    <note>* Til Forklaring paa, hvad for Indviede let forstaaeligt er sammentrængt i Strophen nederst S. 47, bemærkes, at en Hylde i en — vistnok nu forsvunden — Reol i «Store Sal» 1807 var splintret af en engelsk Brandgranat; den stod i min Bibliothekstid trods Pladsmangelen vedvarende tom, som Minde om den undgaaede Fare. I samme Rum begyndte Griffenfeldt sin Løbebane som Kongens Bibliothekar; i det nu ombyggede Cabinet, der hovedsagelig udgjør Rigsarchivets Forstue, arresteredes han sluttelig for (gjennem det endnu existerende Trapperum, ad en Portbue, der nu er Vindue) at føres i Baad til Cittadellet. I det sidst som «Danske Sal» kjendte Rum ovenover forefandtes forhen «Kunstkammeret», hvori Guldhornstyveriet fandt Sted.<br/>S. 46: Bald prangt, den Morgen zu verkünden (Mozart, transp. f. Mandschor).<br/>S. 47: Flygtige Telt for en flygtig Flok (J. P. E. Hartmann).<br/>S. 48: Hil dem, som kæmped (<a person="weyse">Weyse</a>).</note>
+  </notes>
+  <source pages="46-49"/>
+  <keywords>lejlighedsdigtning,ottaven</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1157,11 +1155,11 @@ Dem, som har tænkt, og dem, som villigt gav,
 
 <text id="reckee2019082911">
 <head>
-    <title>Til Islænderne ved deres Besøg i Kjøbenhavn 1906</title>
-    <firstline>Brødre, som os sjeldent gjæster</firstline>
-    <source pages="50-51"/>
-    <keywords>lejlighedsdigtning,ottaven</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Til Islænderne ved deres Besøg i Kjøbenhavn 1906</title>
+  <firstline>Brødre, som os sjeldent gjæster</firstline>
+  <source pages="50-51"/>
+  <keywords>lejlighedsdigtning,ottaven</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1206,14 +1204,14 @@ Os som Brødre mindes!
 
 <text id="reckee2019082912">
 <head>
-    <title>Ved Nedlæggelsen af Grundstenen til Christiansborg, 15/11 1907</title>
-    <firstline>Holm ved Havn, vort Riges Fæste</firstline>
-    <source pages="52-56"/>
-    <dates>
-        <event>1907-11-15</event>
-    </dates>
-    <keywords>lejlighedsdigtning,ottaven</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Ved Nedlæggelsen af Grundstenen til Christiansborg, 15/11 1907</title>
+  <firstline>Holm ved Havn, vort Riges Fæste</firstline>
+  <source pages="52-56"/>
+  <dates>
+    <event>1907-11-15</event>
+  </dates>
+  <keywords>lejlighedsdigtning,ottaven</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1331,14 +1329,14 @@ Og ene vore Sind!
 
 <text id="reckee2019082913">
 <head>
-    <title>Prolog ved det Kgl. Theaters Festforestilling for Studenter og Soldater, 11. Febr. 1909</title>
-    <firstline>Det var en Stormnat, fyldt af Gru og Blod</firstline>
-    <dates>
-        <event>1909-02-11</event>
-    </dates>
-    <source pages="57-59"/>
-    <keywords>lejlighedsdigtning,ottaven</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Prolog ved det Kgl. Theaters Festforestilling for Studenter og Soldater, 11. Febr. 1909</title>
+  <firstline>Det var en Stormnat, fyldt af Gru og Blod</firstline>
+  <dates>
+    <event>1909-02-11</event>
+  </dates>
+  <source pages="57-59"/>
+  <keywords>lejlighedsdigtning,ottaven</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1392,11 +1390,11 @@ At Danmarks Fremtid er kun I, dets Sønner!
 
 <text id="reckee2019082914">
 <head>
-    <title>Prolog ved en Concert til Fordel for Fregatten ,,Jylland''s Bevarelse</title>
-    <firstline>Tre Snekker stevned en Foraarsdag</firstline>
-    <source pages="60-62"/>
-    <keywords>lejlighedsdigtning,kuplet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Prolog ved en Concert til Fordel for Fregatten ,,Jylland''s Bevarelse</title>
+  <firstline>Tre Snekker stevned en Foraarsdag</firstline>
+  <source pages="60-62"/>
+  <keywords>lejlighedsdigtning,kuplet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1473,11 +1471,11 @@ Vi venter, I gjør jer Pligt Enhver!»
 
 <text id="reckee2019082915">
 <head>
-    <title>For Høires Arbeider- og Vælgerforenings Sangchor</title>
-    <firstline>Sang, du Himmelbaarne, Milde</firstline>
-    <source pages="63-66"/>
-    <keywords>lejlighedsdigtning,ottaven</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>For Høires Arbeider- og Vælgerforenings Sangchor</title>
+  <firstline>Sang, du Himmelbaarne, Milde</firstline>
+  <source pages="63-66"/>
+  <keywords>lejlighedsdigtning,ottaven</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1567,11 +1565,11 @@ Skal dig vor Hylding kranse!
 
 <text id="reckee2019082916">
 <head>
-    <title>Prolog ved Musikforeningens 75-Aars Stiftelsesfest, Marts 1911</title>
-    <firstline>Saa mindes Weyses Fødselsdag igjen</firstline>
-    <source pages="67-72"/>
-    <keywords>lejlighedsdigtning,terziner</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Prolog ved Musikforeningens 75-Aars Stiftelsesfest, Marts 1911</title>
+  <firstline>Saa mindes Weyses Fødselsdag igjen</firstline>
+  <source pages="67-72"/>
+  <keywords>lejlighedsdigtning,terziner</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1698,11 +1696,11 @@ Den blive tro sit Maal og sine Minder!
 
 <text id="reckee2019082917">
 <head>
-    <title>Ved Cæciliaforeningens 50-Aars Fest, 1903</title>
-    <firstline>Det er saa blandede Strenges Lyd</firstline>
-    <source pages="73-77"/>
-    <keywords>lejlighedsdigtning</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Ved Cæciliaforeningens 50-Aars Fest, 1903</title>
+  <firstline>Det er saa blandede Strenges Lyd</firstline>
+  <source pages="73-77"/>
+  <keywords>lejlighedsdigtning</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1828,12 +1826,12 @@ Den skylder den <w>Henrik Rung</w>.
 
 <text id="reckee2019082918">
 <head>
-    <title>Cæciliaforeningens Festsang</title>
-    <subtitle>Ny Text ved Henrik Rungs 100-Aars-Fest</subtitle>
-    <firstline>Flok dig, vor Skare, ved Festsangens Toner</firstline>
-    <source pages="78-79"/>
-    <keywords>lejlighedsdigtning</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Cæciliaforeningens Festsang</title>
+  <subtitle>Ny Text ved Henrik Rungs 100-Aars-Fest</subtitle>
+  <firstline>Flok dig, vor Skare, ved Festsangens Toner</firstline>
+  <source pages="78-79"/>
+  <keywords>lejlighedsdigtning</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1875,17 +1873,17 @@ Fast som det staaer, med Helgennavnet smykt, —
 
 <text id="reckee2019082919">
 <head>
-    <title>Til Bibliothekar Johannes Vahl, 3/1 1901</title>
-    <firstline>Saa gik et Hundredaar i Grav</firstline>
-    <notes>
-        <note>* Kæmpearbeidet ved Ordningen af det Kgl. Bibliotheks danske Afdeling er Vahls Værk. De to sidste Linier paa Siden sigte til, at alle Smaatryk, derunder alle Lejlighedssange, skulle tilstilles Politiet, fra hvem de senere indgaae til Bibliotheket. Tryksager indsendes ellers masseviis halvaarlig direkte fra Trykkerierne.</note>
-    </notes>
-    <dates>
-        <event>1901-01-03</event>
-    </dates>
-    <source pages="80-82"/>
-    <keywords>lejlighedsdigtning,ottaven</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Til Bibliothekar Johannes Vahl, 3/1 1901</title>
+  <firstline>Saa gik et Hundredaar i Grav</firstline>
+  <notes>
+    <note>* Kæmpearbeidet ved Ordningen af det Kgl. Bibliotheks danske Afdeling er Vahls Værk. De to sidste Linier paa Siden sigte til, at alle Smaatryk, derunder alle Lejlighedssange, skulle tilstilles Politiet, fra hvem de senere indgaae til Bibliotheket. Tryksager indsendes ellers masseviis halvaarlig direkte fra Trykkerierne.</note>
+  </notes>
+  <dates>
+    <event>1901-01-03</event>
+  </dates>
+  <source pages="80-82"/>
+  <keywords>lejlighedsdigtning,ottaven</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1939,12 +1937,12 @@ Med Lovord, som er sande!
 
 <text id="reckee2019082920">
 <head>
-    <title>Sven af Hedin</title>
-    <subtitle>Geographisk Selskab 1902</subtitle>
-    <firstline>Har vi ham virkelig her i vor Skare</firstline>
-    <source pages="83-85"/>
-    <keywords>lejlighedsdigtning,ottaven</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Sven af Hedin</title>
+  <subtitle>Geographisk Selskab 1902</subtitle>
+  <firstline>Har vi ham virkelig her i vor Skare</firstline>
+  <source pages="83-85"/>
+  <keywords>lejlighedsdigtning,ottaven</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1998,12 +1996,12 @@ Leve han selv som hans Hæder!
 
 <text id="reckee2019082921">
 <head>
-    <title>Til Samme</title>
-    <subtitle>Ved hans Gjenkomst 1909</subtitle>
-    <firstline>Saa sidder, hjemvendt nu fra Strid</firstline>
-    <source pages="85-86"/>
-    <keywords>lejlighedsdigtning,ottaven</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Til Samme</title>
+  <subtitle>Ved hans Gjenkomst 1909</subtitle>
+  <firstline>Saa sidder, hjemvendt nu fra Strid</firstline>
+  <source pages="85-86"/>
+  <keywords>lejlighedsdigtning,ottaven</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2048,11 +2046,11 @@ Ved Enden af hans Bane!
 
 <text id="reckee2019082922">
 <head>
-    <title>Ved Afsløringen af Mindestenen for Georg St. Bricka</title>
-    <firstline>Hvad er det, som vil blive</firstline>
-    <source pages="87-89"/>
-    <keywords>lejlighedsdigtning,ottaven</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Ved Afsløringen af Mindestenen for Georg St. Bricka</title>
+  <firstline>Hvad er det, som vil blive</firstline>
+  <source pages="87-89"/>
+  <keywords>lejlighedsdigtning,ottaven</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2106,11 +2104,11 @@ Som hans i Hjerter ind.
 
 <text id="reckee2019082923">
 <head>
-    <title>Prolog paa 25-Aars-Dagen for Opførelsen af ,,Drot og Marks'', 1903</title>
-    <firstline>Den hører alt nu os Ældre til</firstline>
-    <source pages="90-94"/>
-    <keywords>lejlighedsdigtning</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Prolog paa 25-Aars-Dagen for Opførelsen af ,,Drot og Marks'', 1903</title>
+  <firstline>Den hører alt nu os Ældre til</firstline>
+  <source pages="90-94"/>
+  <keywords>lejlighedsdigtning</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2224,14 +2222,14 @@ Og snoe en Krans om hans Navn.
 
 <text id="reckee2019082924">
 <head>
-    <title>Elise Ploug</title>
-    <firstline>Nu bæres hun bort, mens hun slumrer kvær</firstline>
-    <notes>
-        <note>* Fru Ploug havde gjemt sit Brudeslør og begravedes efter sit Ønske indhyllet deri.</note>
-    </notes>
-    <source pages="95-97"/>
-    <keywords>elegi</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Elise Ploug</title>
+  <firstline>Nu bæres hun bort, mens hun slumrer kvær</firstline>
+  <notes>
+    <note>* Fru Ploug havde gjemt sit Brudeslør og begravedes efter sit Ønske indhyllet deri.</note>
+  </notes>
+  <source pages="95-97"/>
+  <keywords>elegi</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2290,14 +2288,14 @@ Staaer han og siger med Smil om Mund
 
 <text id="reckee2019082925">
 <head>
-    <title>Ved J. P. E. Hartmanns Hundredaarsfest i Musikforeningen</title>
-    <firstline>Vort Fædreland, hvor Ættehøie kneise</firstline>
-    <notes>
-        <note>* Musiken er et Uddrag af «Tonernes Verden», Text af Richardt, Hartmanns Op. 82, componeret 1886 til Musikforeningens 50-Aars Jubilæum.</note>
-    </notes>
-    <source pages="98-100"/>
-    <keywords>lejlighedsdigtning</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Ved J. P. E. Hartmanns Hundredaarsfest i Musikforeningen</title>
+  <firstline>Vort Fædreland, hvor Ættehøie kneise</firstline>
+  <notes>
+    <note>* Musiken er et Uddrag af «Tonernes Verden», Text af Richardt, Hartmanns Op. 82, componeret 1886 til Musikforeningens 50-Aars Jubilæum.</note>
+  </notes>
+  <source pages="98-100"/>
+  <keywords>lejlighedsdigtning</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2354,14 +2352,14 @@ Paa Kunstens høie Bane!
 
 <text id="reckee2019082926">
 <head>
-    <title>Til Kommandør Otto Irminger i Geographisk Selskab, 21/11 1906</title>
-    <firstline>Paa Søen, naar den brummer vredt</firstline>
-    <dates>
-        <event>1906-11-21</event>
-    </dates>
-    <source pages="101-102"/>
-    <keywords>lejlighedsdigtning,ottaven</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Til Kommandør Otto Irminger i Geographisk Selskab, 21/11 1906</title>
+  <firstline>Paa Søen, naar den brummer vredt</firstline>
+  <dates>
+    <event>1906-11-21</event>
+  </dates>
+  <source pages="101-102"/>
+  <keywords>lejlighedsdigtning,ottaven</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2406,16 +2404,16 @@ Som samles ham til Ære!
 
 <text id="reckee2019082927">
 <head>
-    <title>Impromptu</title>
-    <subtitle>Ved Casino's Forestilling for ,,Hvile og Recreationshjem for Kvinder,'' skrevet for Fru Hennings</subtitle>
-    <firstline>Jeg læste om — jeg læste</firstline>
-    <notes>
-        <note>* Blev i Fru Hennings’ Forfald fremsagt af Frk. Ellen Diedrich.</note>
-        <note>I trykket er titlen fejlagtigt stavet »Inpromptu«.</note>
-    </notes>
-    <source pages="103-108"/>
-    <keywords>lejlighedsdigtning</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Impromptu</title>
+  <subtitle>Ved Casino's Forestilling for ,,Hvile og Recreationshjem for Kvinder,'' skrevet for Fru Hennings</subtitle>
+  <firstline>Jeg læste om — jeg læste</firstline>
+  <notes>
+    <note>* Blev i Fru Hennings’ Forfald fremsagt af Frk. Ellen Diedrich.</note>
+    <note>I trykket er titlen fejlagtigt stavet »Inpromptu«.</note>
+  </notes>
+  <source pages="103-108"/>
+  <keywords>lejlighedsdigtning</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2557,17 +2555,17 @@ Som samles ham til Ære!
 
 <section>
 <head>
-    <title>II. Blandede Digte</title>
+  <title>II. Blandede Digte</title>
 </head>
 <content>
 
 <text id="reckee2019082928">
 <head>
-    <title>Abild</title>
-    <firstline>I søde Abildblomster, I, der soler</firstline>
-    <source pages="111-112"/>
-    <keywords>terziner</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Abild</title>
+  <firstline>I søde Abildblomster, I, der soler</firstline>
+  <source pages="111-112"/>
+  <keywords>terziner</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2606,11 +2604,11 @@ At I er Vaar, — kun Vaar, og idel Vaar!
 
 <text id="reckee2019082929">
 <head>
-    <title>Julepsalme</title>
-    <firstline>Nat det var om Jorderige</firstline>
-    <source pages="113-114"/>
-    <keywords>ottaven</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Julepsalme</title>
+  <firstline>Nat det var om Jorderige</firstline>
+  <source pages="113-114"/>
+  <keywords>ottaven</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2646,10 +2644,10 @@ Hos os selv dig atter føde!
 
 <text id="reckee2019082930">
 <head>
-    <title>Til Anna!</title>
-    <firstline>Her sidder jeg alene</firstline>
-    <source pages="115-117"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Til Anna!</title>
+  <firstline>Her sidder jeg alene</firstline>
+  <source pages="115-117"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2718,10 +2716,10 @@ Igjen staae op til Live.
 
 <text id="reckee2019082931">
 <head>
-    <title>Skjæbner</title>
-    <firstline>Han kom fra fjerne Lande</firstline>
-    <source pages="118-120"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Skjæbner</title>
+  <firstline>Han kom fra fjerne Lande</firstline>
+  <source pages="118-120"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2776,11 +2774,11 @@ Men Ingen er deri.
 
 <text id="reckee2019082932">
 <head>
-    <title>Billedtext</title>
-    <firstline>Høstkarlen meied med sin skarpe Le</firstline>
-    <source pages="121"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Billedtext</title>
+  <firstline>Høstkarlen meied med sin skarpe Le</firstline>
+  <source pages="121"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2807,11 +2805,11 @@ Saa tænk kun fremad, mens du seer tilbage!
 
 <text id="reckee2019082933">
 <head>
-    <title>Ved Vintersolhverv</title>
-    <firstline>Om tvende Støtter Solens Vognløb svinger</firstline>
-    <source pages="122-124"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Ved Vintersolhverv</title>
+  <firstline>Om tvende Støtter Solens Vognløb svinger</firstline>
+  <source pages="122-124"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2880,11 +2878,11 @@ Kan altid skuffes — og kan altid haabe.
 
 <text id="reckee2019082934">
 <head>
-    <title>Digtertrøst</title>
-    <firstline>Det prophetere de, der blev forsmaaede</firstline>
-    <source pages="125"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Digtertrøst</title>
+  <firstline>Det prophetere de, der blev forsmaaede</firstline>
+  <source pages="125"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2911,15 +2909,15 @@ End mindre, hvad af Sligt der følger efter.
 
 <text id="reckee2019082935">
 <head>
-    <title>Ved Sankt Hans 1905</title>
-    <firstline>Den røde Dæmring drager sig</firstline>
-    <source pages="126-127"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Ved Sankt Hans 1905</title>
+  <firstline>Den røde Dæmring drager sig</firstline>
+  <source pages="126-127"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Den røde Dæmring drager sig
-I Nord bag Kulien ind;
+I Nord bag Kullen ind;
 Her paa min Strandbred sidder jeg
 I Dagens sidste Skin.
 
@@ -2934,7 +2932,7 @@ Saa har jeg glemt, det er Sankt Hans
 Hvis Aften alt vi har:
 
 Kvasbunker høit i Flammer slaaer
-Lånes Sundets dunkle Rand;
+Langs Sundets dunkle Rand;
 Saadan har nu i tusind Aar
 De lyst fra Strand til Strand.
 
@@ -2963,11 +2961,11 @@ At holde sammen fast.
 
 <text id="reckee2019082936">
 <head>
-    <title>Med ,,Det lukkede Land''</title>
-    <firstline>Der gives - mig fjernt - et lukket Land</firstline>
-    <source pages="128-129"/>
-    <keywords>sonnet,ottaven</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Med ,,Det lukkede Land''</title>
+  <firstline>Der gives - mig fjernt - et lukket Land</firstline>
+  <source pages="128-129"/>
+  <keywords>sonnet,ottaven</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3016,17 +3014,17 @@ Jeg sender denne Bog til Landets Fee.
 
 <text id="reckee2019082937">
 <head>
-    <title>En Gaade</title>
-    <firstline>Jeg ligger paa Leiet Natten lang</firstline>
-    <notes>
-        <note>*Sigter til Gravstenen i Vestervig, hvis ulæselige Begyndelse, som paaviist af mig i «Nogle Folkeviseredaktioner«, 1905, indeholder et Kvinde- og et Mandsnavn, der Intet have at gjøre med Buris og Liden Kirsten; disses Roman vil hermed være endt.</note>
-    </notes>
-    <source pages="130-131"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>En Gaade</title>
+  <firstline>Jeg ligger paa Leiet Natten lang</firstline>
+  <notes>
+    <note>*Sigter til Gravstenen i Vestervig, hvis ulæselige Begyndelse, som paaviist af mig i «Nogle Folkeviseredaktioner«, 1905, indeholder et Kvinde- og et Mandsnavn, der Intet have at gjøre med Buris og Liden Kirsten; disses Roman vil hermed være endt.</note>
+  </notes>
+  <source pages="130-131"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<nonum><small><center>(Berl. Tid., 14/2 1906.)</center></small></nonum>
+<nonum><center><small>(Berl. Tid., 14/2 1906.)</small></center></nonum>
 
 Jeg ligger paa Leiet Natten lang
    Og kan ikke sove;
@@ -3068,10 +3066,10 @@ Thyre og Tandruppe-Tove!
 
 <text id="reckee2019082938">
 <head>
-    <title>Til Marie Villads'</title>
-    <firstline>De bad mig skrive et Forord</firstline>
-    <source pages="132-135"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Til Marie Villads'</title>
+  <firstline>De bad mig skrive et Forord</firstline>
+  <source pages="132-135"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3150,10 +3148,10 @@ Og føler mig tryg, hvis De siger:
 
 <text id="reckee2019082939">
 <head>
-    <title>Du er et Kvad</title>
-    <firstline>Du er et Kvad, en Foraarsklang</firstline>
-    <source pages="136-137"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Du er et Kvad</title>
+  <firstline>Du er et Kvad, en Foraarsklang</firstline>
+  <source pages="136-137"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3187,10 +3185,10 @@ Omkring mig, hvor jeg gaaer.
 
 <text id="reckee2019082940">
 <head>
-    <title>Ved Lejlighed</title>
-    <firstline>Hun har taget - staar Noget paa Jorden fast</firstline>
-    <source pages="138-139"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Ved Lejlighed</title>
+  <firstline>Hun har taget - staar Noget paa Jorden fast</firstline>
+  <source pages="138-139"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3239,11 +3237,11 @@ Du selv kan da synge som Svanesang:
 
 <text id="reckee2019082941">
 <head>
-    <title>Folkevise</title>
-    <subtitle>Ny Variant af et gammelt Thema</subtitle>
-    <firstline>I danser os, Ridder', igjen</firstline>
-    <source pages="140-142"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Folkevise</title>
+  <subtitle>Ny Variant af et gammelt Thema</subtitle>
+  <firstline>I danser os, Ridder', igjen</firstline>
+  <source pages="140-142"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3303,15 +3301,15 @@ Og Odden drak hans Hjerteblod.
 
 <text id="reckee2019082942">
 <head>
-    <title>Til Thor Lange</title>
-    <subtitle>Albumsblad, frit efter «Harald», Uhland</subtitle>
-    <firstline>Der rider i Aftenens Solfaldsstund</firstline>
-    <source pages="143-146"/>
-    <notes>
-        <note>Se Ludwig Uhland: <xref poem="uhland2019083102"/>.</note>
-    </notes>
-    <keywords>lange,kuplet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Til Thor Lange</title>
+  <subtitle>Albumsblad, frit efter «Harald», Uhland</subtitle>
+  <firstline>Der rider i Aftenens Solfaldsstund</firstline>
+  <source pages="143-146"/>
+  <notes>
+    <note>Se Ludwig Uhland: <xref poem="uhland2019083102"/>.</note>
+  </notes>
+  <keywords>lange,kuplet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3398,20 +3396,21 @@ Er <w>Folkesangens</w> sølvklare Strøm.
 
 <section>
 <head>
-    <title>III. Strid og Fred, en Sonetkrans, til Annette</title>
+  <title>III. Strid og Fred, en Sonetkrans, til Annette</title>
 </head>
 <content>
 
 <text id="reckee2019082943">
 <head>
-    <title><num>I.</num>Hvor fjernt vi er fra Fredens lyse Rige</title>
-    <toctitle><num>I.</num>Hvor fjernt vi er fra Fredens lyse Rige</toctitle>
-    <indextitle>Hvor fjernt vi er fra Fredens lyse Rige</indextitle>
-    <linktitle>Hvor fjernt vi er fra Fredens lyse Rige</linktitle>
-    <firstline>Hvor fjernt vi er fra Fredens lyse Rige</firstline>
-    <source pages="149"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>I.</num>Hvor fjernt vi er fra Fredens lyse Rige</title>
+  <toctitle><num>I.</num>Hvor fjernt vi er fra Fredens lyse Rige</toctitle>
+  <indextitle>Hvor fjernt vi er fra Fredens lyse Rige</indextitle>
+  <linktitle>Hvor fjernt vi er fra Fredens lyse Rige</linktitle>
+  <firstline>Hvor fjernt vi er fra Fredens lyse Rige</firstline>
+  <!-- Ikke en variant af reckee2019082957: Selvstændige numre i samme digtkreds. -->
+  <source pages="149"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3438,14 +3437,14 @@ Hvor lang og tung vi end skal Veien finde?
 
 <text id="reckee2019082944">
 <head>
-    <title><num>II.</num>Hvor lang og tung vi end skal Veien finde</title>
-    <toctitle><num>II.</num>Hvor lang og tung vi end skal Veien finde</toctitle>
-    <indextitle>Hvor lang og tung vi end skal Veien finde</indextitle>
-    <linktitle>Hvor lang og tung vi end skal Veien finde</linktitle>
-    <firstline>Hvor lang og tung vi end skal Veien finde</firstline>
-    <source pages="150"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>II.</num>Hvor lang og tung vi end skal Veien finde</title>
+  <toctitle><num>II.</num>Hvor lang og tung vi end skal Veien finde</toctitle>
+  <indextitle>Hvor lang og tung vi end skal Veien finde</indextitle>
+  <linktitle>Hvor lang og tung vi end skal Veien finde</linktitle>
+  <firstline>Hvor lang og tung vi end skal Veien finde</firstline>
+  <source pages="150"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3472,14 +3471,14 @@ Fra Dalens Skumring op til Lysets Tinde?
 
 <text id="reckee2019082945">
 <head>
-    <title><num>III.</num>Fra Dalens Skumring op til Lysets Tinde</title>
-    <toctitle><num>III.</num>Fra Dalens Skumring op til Lysets Tinde</toctitle>
-    <indextitle>Fra Dalens Skumring op til Lysets Tinde</indextitle>
-    <linktitle>Fra Dalens Skumring op til Lysets Tinde</linktitle>
-    <firstline>Fra Dalens Skumring op til Lysets Tinde</firstline>
-    <source pages="151"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>III.</num>Fra Dalens Skumring op til Lysets Tinde</title>
+  <toctitle><num>III.</num>Fra Dalens Skumring op til Lysets Tinde</toctitle>
+  <indextitle>Fra Dalens Skumring op til Lysets Tinde</indextitle>
+  <linktitle>Fra Dalens Skumring op til Lysets Tinde</linktitle>
+  <firstline>Fra Dalens Skumring op til Lysets Tinde</firstline>
+  <source pages="151"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3506,14 +3505,14 @@ Et Bud staaer fast: at vi tør ikke vige.
 
 <text id="reckee2019082946">
 <head>
-    <title><num>IV.</num>Et Bud staaer fast: at vi tør ikke vige</title>
-    <toctitle><num>IV.</num>Et Bud staaer fast: at vi tør ikke vige</toctitle>
-    <indextitle>Et Bud staaer fast: at vi tør ikke vige</indextitle>
-    <linktitle>Et Bud staaer fast: at vi tør ikke vige</linktitle>
-    <firstline>Et Bud staaer fast: at vi tør ikke vige</firstline>
-    <source pages="152"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>IV.</num>Et Bud staaer fast: at vi tør ikke vige</title>
+  <toctitle><num>IV.</num>Et Bud staaer fast: at vi tør ikke vige</toctitle>
+  <indextitle>Et Bud staaer fast: at vi tør ikke vige</indextitle>
+  <linktitle>Et Bud staaer fast: at vi tør ikke vige</linktitle>
+  <firstline>Et Bud staaer fast: at vi tør ikke vige</firstline>
+  <source pages="152"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3540,14 +3539,14 @@ Det gjælder her om Mer end blot at hige.
 
 <text id="reckee2019082947">
 <head>
-    <title><num>V.</num>Det gjælder her om Mer end blot at hige</title>
-    <toctitle><num>V.</num>Det gjælder her om Mer end blot at hige</toctitle>
-    <indextitle>Det gjælder her om Mer end blot at hige</indextitle>
-    <linktitle>Det gjælder her om Mer end blot at hige</linktitle>
-    <firstline>Det gjælder her om Mer end blot at hige</firstline>
-    <source pages="153"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>V.</num>Det gjælder her om Mer end blot at hige</title>
+  <toctitle><num>V.</num>Det gjælder her om Mer end blot at hige</toctitle>
+  <indextitle>Det gjælder her om Mer end blot at hige</indextitle>
+  <linktitle>Det gjælder her om Mer end blot at hige</linktitle>
+  <firstline>Det gjælder her om Mer end blot at hige</firstline>
+  <source pages="153"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3574,14 +3573,14 @@ Som Fugl, bag Burets Stænger lukket inde.
 
 <text id="reckee2019082948">
 <head>
-    <title><num>VI.</num>Som Fugl, bag Burets Stænger lukket inde</title>
-    <toctitle><num>VI.</num>Som Fugl, bag Burets Stænger lukket inde</toctitle>
-    <indextitle>Som Fugl, bag Burets Stænger lukket inde</indextitle>
-    <linktitle>Som Fugl, bag Burets Stænger lukket inde</linktitle>
-    <firstline>Som Fugl, bag Burets Stænger lukket inde</firstline>
-    <source pages="154"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>VI.</num>Som Fugl, bag Burets Stænger lukket inde</title>
+  <toctitle><num>VI.</num>Som Fugl, bag Burets Stænger lukket inde</toctitle>
+  <indextitle>Som Fugl, bag Burets Stænger lukket inde</indextitle>
+  <linktitle>Som Fugl, bag Burets Stænger lukket inde</linktitle>
+  <firstline>Som Fugl, bag Burets Stænger lukket inde</firstline>
+  <source pages="154"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3608,14 +3607,14 @@ Det gjælder om at ville for at vinde.
 
 <text id="reckee2019082949">
 <head>
-    <title><num>VII.</num>Det gjælder om at ville for at vinde</title>
-    <toctitle><num>VII.</num>Det gjælder om at ville for at vinde</toctitle>
-    <indextitle>Det gjælder om at ville for at vinde</indextitle>
-    <linktitle>Det gjælder om at ville for at vinde</linktitle>
-    <firstline>Det gjælder om at ville for at vinde</firstline>
-    <source pages="155"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>VII.</num>Det gjælder om at ville for at vinde</title>
+  <toctitle><num>VII.</num>Det gjælder om at ville for at vinde</toctitle>
+  <indextitle>Det gjælder om at ville for at vinde</indextitle>
+  <linktitle>Det gjælder om at ville for at vinde</linktitle>
+  <firstline>Det gjælder om at ville for at vinde</firstline>
+  <source pages="155"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3642,14 +3641,14 @@ Vil blot vi ret, kan ikke Haabet svige.
 
 <text id="reckee2019082950">
 <head>
-    <title><num>VIII.</num>Vil blot vi ret, kan ikke Haabet svige</title>
-    <toctitle><num>VIII.</num>Vil blot vi ret, kan ikke Haabet svige</toctitle>
-    <indextitle>Vil blot vi ret, kan ikke Haabet svige</indextitle>
-    <linktitle>Vil blot vi ret, kan ikke Haabet svige</linktitle>
-    <firstline>Vil blot vi ret, kan ikke Haabet svige</firstline>
-    <source pages="156"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>VIII.</num>Vil blot vi ret, kan ikke Haabet svige</title>
+  <toctitle><num>VIII.</num>Vil blot vi ret, kan ikke Haabet svige</toctitle>
+  <indextitle>Vil blot vi ret, kan ikke Haabet svige</indextitle>
+  <linktitle>Vil blot vi ret, kan ikke Haabet svige</linktitle>
+  <firstline>Vil blot vi ret, kan ikke Haabet svige</firstline>
+  <source pages="156"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3676,14 +3675,14 @@ Til vore Fødder Veiens Dynd sig klynger.
 
 <text id="reckee2019082951">
 <head>
-    <title><num>IX.</num>Til vore Fødder Veiens Dynd sig klynger</title>
-    <toctitle><num>IX.</num>Til vore Fødder Veiens Dynd sig klynger</toctitle>
-    <indextitle>Til vore Fødder Veiens Dynd sig klynger</indextitle>
-    <linktitle>Til vore Fødder Veiens Dynd sig klynger</linktitle>
-    <firstline>Til vore Fødder Veiens Dynd sig klynger</firstline>
-    <source pages="157"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>IX.</num>Til vore Fødder Veiens Dynd sig klynger</title>
+  <toctitle><num>IX.</num>Til vore Fødder Veiens Dynd sig klynger</toctitle>
+  <indextitle>Til vore Fødder Veiens Dynd sig klynger</indextitle>
+  <linktitle>Til vore Fødder Veiens Dynd sig klynger</linktitle>
+  <firstline>Til vore Fødder Veiens Dynd sig klynger</firstline>
+  <source pages="157"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3710,14 +3709,14 @@ Kun Fod for Fod tør frem mod Maalet vindes.
 
 <text id="reckee2019082952">
 <head>
-    <title><num>X.</num>Kun Fod for Fod tør frem mod Maalet vindes</title>
-    <toctitle><num>X.</num>Kun Fod for Fod tør frem mod Maalet vindes</toctitle>
-    <indextitle>Kun Fod for Fod tør frem mod Maalet vindes</indextitle>
-    <linktitle>Kun Fod for Fod tør frem mod Maalet vindes</linktitle>
-    <firstline>Kun Fod for Fod tør frem mod Maalet vindes</firstline>
-    <source pages="158"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>X.</num>Kun Fod for Fod tør frem mod Maalet vindes</title>
+  <toctitle><num>X.</num>Kun Fod for Fod tør frem mod Maalet vindes</toctitle>
+  <indextitle>Kun Fod for Fod tør frem mod Maalet vindes</indextitle>
+  <linktitle>Kun Fod for Fod tør frem mod Maalet vindes</linktitle>
+  <firstline>Kun Fod for Fod tør frem mod Maalet vindes</firstline>
+  <source pages="158"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3744,14 +3743,14 @@ Om Seirens Roser Tornes Skov sig fletter.
 
 <text id="reckee2019082953">
 <head>
-    <title><num>XI.</num>Om Seirens Roser Tornes Skov sig fletter</title>
-    <toctitle><num>XI.</num>Om Seirens Roser Tornes Skov sig fletter</toctitle>
-    <indextitle>Om Seirens Roser Tornes Skov sig fletter</indextitle>
-    <linktitle>Om Seirens Roser Tornes Skov sig fletter</linktitle>
-    <firstline>Om Seirens Roser Tornes Skov sig fletter</firstline>
-    <source pages="159"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>XI.</num>Om Seirens Roser Tornes Skov sig fletter</title>
+  <toctitle><num>XI.</num>Om Seirens Roser Tornes Skov sig fletter</toctitle>
+  <indextitle>Om Seirens Roser Tornes Skov sig fletter</indextitle>
+  <linktitle>Om Seirens Roser Tornes Skov sig fletter</linktitle>
+  <firstline>Om Seirens Roser Tornes Skov sig fletter</firstline>
+  <source pages="159"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3778,14 +3777,14 @@ I Kamp med Baand, som hæmmer, Stof, som tynger?
 
 <text id="reckee2019082954">
 <head>
-    <title><num>XII.</num>I Kamp med Baand, som hæmmer, Stof, som tynger</title>
-    <toctitle><num>XII.</num>I Kamp med Baand, som hæmmer, Stof, som tynger</toctitle>
-    <indextitle>I Kamp med Baand, som hæmmer, Stof, som tynger</indextitle>
-    <linktitle>I Kamp med Baand, som hæmmer, Stof, som tynger</linktitle>
-    <firstline>I Kamp med Baand, som hæmmer, Stof, som tynger</firstline>
-    <source pages="160"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>XII.</num>I Kamp med Baand, som hæmmer, Stof, som tynger</title>
+  <toctitle><num>XII.</num>I Kamp med Baand, som hæmmer, Stof, som tynger</toctitle>
+  <indextitle>I Kamp med Baand, som hæmmer, Stof, som tynger</indextitle>
+  <linktitle>I Kamp med Baand, som hæmmer, Stof, som tynger</linktitle>
+  <firstline>I Kamp med Baand, som hæmmer, Stof, som tynger</firstline>
+  <source pages="160"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3812,14 +3811,14 @@ Vil Lykken naaes, vil Seierskransen bindes.
 
 <text id="reckee2019082955">
 <head>
-    <title><num>XIII.</num>Vil Lykken naaes, vil Seierskransen bindes</title>
-    <toctitle><num>XIII.</num>Vil Lykken naaes, vil Seierskransen bindes</toctitle>
-    <indextitle>Vil Lykken naaes, vil Seierskransen bindes</indextitle>
-    <linktitle>Vil Lykken naaes, vil Seierskransen bindes</linktitle>
-    <firstline>Vil Lykken naaes, vil Seierskransen bindes</firstline>
-    <source pages="161"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>XIII.</num>Vil Lykken naaes, vil Seierskransen bindes</title>
+  <toctitle><num>XIII.</num>Vil Lykken naaes, vil Seierskransen bindes</toctitle>
+  <indextitle>Vil Lykken naaes, vil Seierskransen bindes</indextitle>
+  <linktitle>Vil Lykken naaes, vil Seierskransen bindes</linktitle>
+  <firstline>Vil Lykken naaes, vil Seierskransen bindes</firstline>
+  <source pages="161"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3846,14 +3845,14 @@ Som denne Krans, jeg binder af Sonetter.
 
 <text id="reckee2019082956">
 <head>
-    <title><num>XIV.</num>Som denne Krans, jeg binder af Sonetter</title>
-    <toctitle><num>XIV.</num>Som denne Krans, jeg binder af Sonetter</toctitle>
-    <indextitle>Som denne Krans, jeg binder af Sonetter</indextitle>
-    <linktitle>Som denne Krans, jeg binder af Sonetter</linktitle>
-    <firstline>Som denne Krans, jeg binder af Sonetter</firstline>
-    <source pages="162"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>XIV.</num>Som denne Krans, jeg binder af Sonetter</title>
+  <toctitle><num>XIV.</num>Som denne Krans, jeg binder af Sonetter</toctitle>
+  <indextitle>Som denne Krans, jeg binder af Sonetter</indextitle>
+  <linktitle>Som denne Krans, jeg binder af Sonetter</linktitle>
+  <firstline>Som denne Krans, jeg binder af Sonetter</firstline>
+  <source pages="162"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3880,14 +3879,15 @@ Hvor fjernt vi er fra Fredens lyse Rige.
 
 <text id="reckee2019082957">
 <head>
-    <title><num>XV.</num>Hvor fjernt vi er fra Fredens lyse Rige</title>
-    <toctitle><num>XV.</num>Hvor fjernt vi er fra Fredens lyse Rige</toctitle>
-    <indextitle>Hvor fjernt vi er fra Fredens lyse Rige</indextitle>
-    <linktitle>Hvor fjernt vi er fra Fredens lyse Rige</linktitle>
-    <firstline>Hvor fjernt vi er fra Fredens lyse Rige</firstline>
-    <source pages="163"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>XV.</num>Hvor fjernt vi er fra Fredens lyse Rige</title>
+  <toctitle><num>XV.</num>Hvor fjernt vi er fra Fredens lyse Rige</toctitle>
+  <indextitle>Hvor fjernt vi er fra Fredens lyse Rige</indextitle>
+  <linktitle>Hvor fjernt vi er fra Fredens lyse Rige</linktitle>
+  <firstline>Hvor fjernt vi er fra Fredens lyse Rige</firstline>
+  <!-- Ikke en variant af reckee2019082943: Selvstændige numre i samme digtkreds. -->
+  <source pages="163"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3917,21 +3917,21 @@ Som denne Krans, jeg binder af Sonetter.
 
 <section>
 <head>
-    <title>IV. Episke Digte</title>
+  <title>IV. Episke Digte</title>
 </head>
 <content>
 
 <text id="reckee2019082958">
 <head>
-    <title>Kæmpedatterens Legetøi</title>
-    <firstline>I Saxland er der bygget</firstline>
-    <notes>
-        <note>* Modstykke til Chamisso’s «Das Riesenspielzeug«. Se iøvrigt Bartsch, Sagen . . . aus Meklenburg, Wien 1879, I, S. 26.</note>
-        <note>Se Adelbert Von Chamissos <xref poem="chamisso2019083101"/>.</note>
-    </notes>
-    <source pages="167-172"/>
-    <keywords>ottaven</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Kæmpedatterens Legetøi</title>
+  <firstline>I Saxland er der bygget</firstline>
+  <notes>
+    <note>* Modstykke til Chamisso’s «Das Riesenspielzeug«. Se iøvrigt Bartsch, Sagen . . . aus Meklenburg, Wien 1879, I, S. 26.</note>
+    <note>Se Adelbert Von Chamissos <xref poem="chamisso2019083101"/>.</note>
+  </notes>
+  <source pages="167-172"/>
+  <keywords>ottaven</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4066,15 +4066,15 @@ Men ellers Ingen mer.
 
 <text id="reckee2019082959">
 <head>
-    <title>Herrerne af Windeck</title>
-    <subtitle>Et rhinlandsk Sagn</subtitle>
-    <firstline>I Odenwald, ved Weinheim</firstline>
-    <notes>
-        <note>* Motivet se Geib, Die Sagen und Geschichten des Rheinlandes. 2. Aufl. 1844. S. 172.</note>
-    </notes>
-    <source pages="173-178"/>
-    <keywords>ottaven</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Herrerne af Windeck</title>
+  <subtitle>Et rhinlandsk Sagn</subtitle>
+  <firstline>I Odenwald, ved Weinheim</firstline>
+  <notes>
+    <note>* Motivet se Geib, Die Sagen und Geschichten des Rheinlandes. 2. Aufl. 1844. S. 172.</note>
+  </notes>
+  <source pages="173-178"/>
+  <keywords>ottaven</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4209,14 +4209,14 @@ Mod Faren nu end før.
 
 <text id="reckee2019082960">
 <head>
-    <title>Ridder von der Reckes Dame</title>
-    <firstline>Ved Gildesbord i Aachen</firstline>
-    <notes>
-        <note>* Grässe, Sagenbuch des preuss. Staates I. Glogau 1868. S. 754. Se endvidere Geschichte d. Herren v. d. Recke, S. 125.</note>
-    </notes>
-    <source pages="179-187"/>
-    <keywords>ottaven</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Ridder von der Reckes Dame</title>
+  <firstline>Ved Gildesbord i Aachen</firstline>
+  <notes>
+    <note>* Grässe, Sagenbuch des preuss. Staates I. Glogau 1868. S. 754. Se endvidere Geschichte d. Herren v. d. Recke, S. 125.</note>
+  </notes>
+  <source pages="179-187"/>
+  <keywords>ottaven</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>

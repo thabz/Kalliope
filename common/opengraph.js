@@ -1,8 +1,4 @@
-// @flow
-
-import type { Poet, TextContentType } from './types.js';
-
-export const trimmedDescription = (content_html: ?TextContentType): ?string => {
+export const trimmedDescription = (content_html) => {
   if (content_html == null) {
     return null;
   }
@@ -17,13 +13,13 @@ export const trimmedDescription = (content_html: ?TextContentType): ?string => {
     .replace(/\s\s/g, ' ');
   result = result.replace(/\n/g, ' ').replace(/<br\/>/g, ' ');
   result = result.replace(/<[^>]*>/g, ''); // Remove remaining tags
-  return result.substr(0, 600);
+  return result.slice(0, 125);
 };
 
-export const poetImage = (poet: Poet): ?string => {
+export const poetImage = (poet) => {
   if (poet.has_square_portrait) {
     const thumb = poet.square_portrait;
-    return `/static/images/${poet.id}/${thumb}`;
+    return thumb.startsWith('/') ? thumb : `/images/${poet.id}/${thumb}`;
   } else {
     return null;
   }

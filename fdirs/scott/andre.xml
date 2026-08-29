@@ -1,19 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="scott" status="incomplete" type="poetry">
 <workhead>
-   <title>Andre digte</title>
-   <year>?</year>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+  <title>Andre digte</title>
 </workhead>
 <workbody>
 
+<text id="scott2026080801">
+<head>
+  <title>The Barefooted Friar</title>
+  <firstline>I’ll give thee, good fellow, a twelvemonth or twain</firstline>
+  <source href="https://www.gutenberg.org/files/82/82-h/82-h.htm">Walter Scott: <i>Ivanhoe</i>, 1819.</source>
+  <quality>korrektur1,kilde</quality>
+</head>
+<body>
+<poetry>
+I’ll give thee, good fellow, a twelvemonth or twain,
+To search Europe through, from Byzantium to Spain;
+But ne’er shall you find, should you search till you tire,
+So happy a man as the Barefooted Friar.
+
+Your knight for his lady pricks forth in career,
+And is brought home at even-song prick’d through with a spear;
+I confess him in haste—for his lady desires
+No comfort on earth save the Barefooted Friar’s.
+
+Your monarch?—Pshaw! many a prince has been known
+To barter his robes for our cowl and our gown,
+But which of us e’er felt the idle desire
+To exchange for a crown the grey hood of a Friar!
+
+The Friar has walk’d out, and where’er he has gone,
+The land and its fatness is mark’d for his own;
+He can roam where he lists, he can stop when he tires,
+For every man’s house is the Barefooted Friar’s.
+
+He’s expected at noon, and no wight till he comes
+May profane the great chair, or the porridge of plums
+For the best of the cheer, and the seat by the fire,
+Is the undenied right of the Barefooted Friar.
+
+He’s expected at night, and the pasty’s made hot,
+They broach the brown ale, and they fill the black pot,
+And the goodwife would wish the goodman in the mire,
+Ere he lack’d a soft pillow, the Barefooted Friar.
+
+Long flourish the sandal, the cord, and the cope,
+The dread of the devil and trust of the Pope;
+For to gather life’s roses, unscathed by the briar,
+Is granted alone to the Barefooted Friar.
+</poetry>
+</body>
+</text>
+
+<text id="scott2026072301">
+<head>
+  <title>The Resolve</title>
+  <subtitle>In Imitation of an Old English Poem.—1809</subtitle>
+  <firstline>My wayward fate I needs must plain</firstline>
+  <source pages="342-344">Walter Scott: <i>The Poetical Works</i>, Bd. I, Lea &amp; Blanchard, Philadelphia, 1839.</source>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+My wayward fate I needs must plain,
+   Though bootless be the theme;
+I loved, and was beloved again,
+   Yet all was but a dream:
+For, as her love was quickly got,
+   So it was quickly gone;
+No more I'll bask in flame so hot,
+   But coldly dwell alone.
+
+Not maid more bright than maid was e'er
+   My fancy shall beguile,
+By flattering word, or feigned tear,
+   By gesture, look, or smile:
+No more I'll call the shaft fair shot,
+   Till it has fairly flown,
+Nor scorch me at a flame so hot;—
+   I'll rather freeze alone.
+
+Each ambush'd Cupid I'll defy,
+   In cheek, or chin, or brow,
+And deem the glance of woman's eye
+   As weak as woman's vow:
+I'll lightly hold the lady's heart,
+   That is but lightly won;
+I'll steel my breast to beauty's art,
+   And learn to live alone.
+
+The flaunting torch soon blazes out,
+   The diamond's ray abides;
+The flame its glory hurls about,
+   The gem its lustre hides;
+Such gem I fondly deem'd was mine,
+   And glow'd a diamond stone,
+But, since each eye may see it shine,
+   I'll darkling dwell alone.
+
+No waking dream shall tinge my thought
+   With dyes so bright and vain,
+No silken net, so slightly wrought,
+   Shall tangle me again:
+No more I'll pay so dear for wit,
+   I'll live upon mine own,
+Nor shall wild passion trouble it,—
+   I'll rather dwell alone.
+
+And thus I'll hush my heart to rest,—
+   “Thy loving labour's lost;
+Thou shalt no more be wildly blest,
+   To be so strangely crost:
+The widow'd turtles mateless die,
+   The phoenix is but one;
+They seek no loves—no more will I—
+   I'll rather dwell alone.”
+</poetry>
+</body>
+</text>
+
 <text id="scott2001081501">
 <head>
-   <title>County Guy</title>
-   <toctitle>County Guy</toctitle>
-   <indextitle>County Guy</indextitle>
-   <firstline>Ah! County Guy, the hour is nigh</firstline>
+  <title>County Guy</title>
+  <toctitle>County Guy</toctitle>
+  <indextitle>County Guy</indextitle>
+  <firstline>Ah! County Guy, the hour is nigh</firstline>
 </head>
 <body>
 <poetry>
@@ -40,10 +151,10 @@ And high and low the influence know--
 
 <text id="scott2001081502">
 <head>
-   <title>Jock of Hazeldean</title>
-   <toctitle>Jock of Hazeldean</toctitle>
-   <indextitle>Jock of Hazeldean</indextitle>
-   <firstline>Why weep ye by the tide, ladie</firstline>
+  <title>Jock of Hazeldean</title>
+  <toctitle>Jock of Hazeldean</toctitle>
+  <indextitle>Jock of Hazeldean</indextitle>
+  <firstline>Why weep ye by the tide, ladie</firstline>
 </head>
 <body>
 <poetry>
@@ -88,10 +199,10 @@ She's o'er the Border and awa'
 
 <text id="scott2001081503">
 <head>
-   <title>Lullaby of an Infant Chief</title>
-   <toctitle>Lullaby of an Infant Chief</toctitle>
-   <indextitle>Lullaby of an Infant Chief</indextitle>
-   <firstline>O hush thee, my babie, thy sire was a knight</firstline>
+  <title>Lullaby of an Infant Chief</title>
+  <toctitle>Lullaby of an Infant Chief</toctitle>
+  <indextitle>Lullaby of an Infant Chief</indextitle>
+  <firstline>O hush thee, my babie, thy sire was a knight</firstline>
 </head>
 <body>
 <poetry>
@@ -121,8 +232,8 @@ For strife comes with manhood, and waking with day.
 
 <text id="scott2019021301">
 <head>
-   <title>The dying Bard</title>
-   <firstline>Dinas Emlinn, lament; for the moment is nigh</firstline>
+  <title>The dying Bard</title>
+  <firstline>Dinas Emlinn, lament; for the moment is nigh</firstline>
 </head>
 <body>
 <poetry>
@@ -154,16 +265,16 @@ And sage Taliessin, high harping to hold.
 <num>VI.</num>And Adieu, Dinas Emlinn! still green be thy shades,
 Unconquer'd thy warriors, and matchless thy maids!
 And thou, whose faint warblings my weakness can tell,
-Farewell, my loved Harp! my last treasure, farewell!     
+Farewell, my loved Harp! my last treasure, farewell!
 </poetry>
 </body>
 </text>
 
 <text id="scott2019021302">
 <head>
-   <title>The Palmer</title>
-   <firstline>O, open the door, some pity to show</firstline>
-   <quality>korrektur1,kilde,side</quality>
+  <title>The Palmer</title>
+  <firstline>O, open the door, some pity to show</firstline>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -182,7 +293,7 @@ I wander for my sin;
 O, open, for our Lady's sake!
 A pilgrim's blessing win!
 
-'I'll give you pardons from the Pope, 
+'I'll give you pardons from the Pope,
 And reliques from o'er the sea,-
 Or if for these you will not ope,
 Yet open for charity.
@@ -194,7 +305,7 @@ No shelter can I find.
 
 'You hear the Ettrick's sullen roar,
 Dark, deep, and strong is he,
-And I must ford the Ettrick o'er, 
+And I must ford the Ettrick o'er,
 Unless you pity me.
 
 'The iron gate is bolted hard,
@@ -215,7 +326,7 @@ He'll hear that voice again:
 For lo, when through the vapours dank,
 Morn shone on Ettrick fair,
 A corpse amid the alders rank,
-The Palmer welter'd there.     
+The Palmer welter'd there.
 </poetry>
 </body>
 </text>

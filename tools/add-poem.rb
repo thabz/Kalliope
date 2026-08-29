@@ -1,5 +1,7 @@
 #!/usr/bin/ruby
 
+require 'open3'
+
 poetid = ''
 workid = 'andre'
 
@@ -16,7 +18,7 @@ end
 folder = "fdirs/#{poetid}"
 workfilename = "#{folder}/#{workid}.xml"
 
-if (!File.directory?(folder)) 
+if (!File.directory?(folder))
     abort("Mappen #{folder} findes ikke.")
 end
 
@@ -27,21 +29,9 @@ elsif !File.file?(workfilename)
 end
 
 
-allcontents = Dir["#{folder}/*.xml"].map{ |f|
-    File.read(f)
-}.join " "
-poemId = '';
-date = Time.now.strftime("%Y%m%d")
-num = 1
-done = false
-while (!done)
-    poemId = "#{poetid}#{date}%02d" % [num]
-    if not allcontents.include? poemId
-        done = true
-    else 
-        num += 1
-    end
-end
+poemId, error, status = Open3.capture3('node', 'tools/new-text-id.js', workfilename)
+abort(error.strip) unless status.success?
+poemId = poemId.strip
 
 puts "Poem id #{poemId}"
 
@@ -69,4 +59,3 @@ contents.gsub! "</workbody>", textxml
 File.open(workfilename, "w") { |file|
     file.write(contents)
 }
-

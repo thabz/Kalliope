@@ -1,27 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="ibsen" status="incomplete" type="poetry">
 <workhead>
-   <title>Andre digte</title>
-   <year>?</year>
-   <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+  <title>Andre digte</title>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
 <text id="ibsen2002010601">
 <head>
-   <title>Rimbrev til fru Heiberg</title>
-   <subtitle>Dresden, i påskeugen 1871</subtitle>
-   <toctitle>Rimbrev til fru Heiberg</toctitle>
-   <indextitle>Rimbrev til fru Heiberg</indextitle>
-   <firstline>Havde jeg på engang sendt</firstline>
-   <notes>
-      <note>Skrevet i Dresden i påskeugen 1871 og kort efter afsendelsen trykt i <i>Digte</i> af Henrik Ibsen, Kbhvn. 1871. Her indtastet efter <i>Samlede Værker,</i> bind 4, 1899, side 392-404.</note>
-      <note><a person="heibergjohanne">Johanne Luise Heiberg (1812-90)</a> boede efter sin mand, <a person="heibergjl">J. L. Heibergs</a> død i sin villa i Rosenvænget, hvor der dengang var vid udsigt over Øresund. Fru Heiberg havde i 1870 iscenesat <i>De unges forbund,</i> det første af Ibsens dramaer som opførtes på Det kgl. Teater, og Ibsen havde i den anledning også været hendes gæst. I rimbrevet alluderes til en række af Fru Heibergs vigtigste roller: Agnete i Heibergs <i>Elverhøi</i>, titelrollen i <a person="oehlenschlaeger">Oehlenschlägers</a> <i>Dina,</i> Jolanthe i <i>Kong René's Datter</i> af <a person="hertzh">Hertz</a>, Ragnhild i samme digters <i>Svend Dyrings Huus,</i> og Ophelia i <a person="shakespeare">Shakespeares</a> <i>Hamlet</i>.</note>
-      <note type="credits">Bidrag fra Sven Sørensen.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Rimbrev til fru Heiberg</title>
+  <subtitle>Dresden, i påskeugen 1871</subtitle>
+  <toctitle>Rimbrev til fru Heiberg</toctitle>
+  <indextitle>Rimbrev til fru Heiberg</indextitle>
+  <firstline>Havde jeg på engang sendt</firstline>
+  <notes>
+    <note>Skrevet i Dresden i påskeugen 1871 og kort efter afsendelsen trykt i <i>Digte</i> af Henrik Ibsen, Kbhvn. 1871. Her indtastet efter <i>Samlede Værker,</i> bind 4, 1899, side 392-404.</note>
+    <note><a person="heibergjohanne">Johanne Luise Heiberg (1812-90)</a> boede efter sin mand, <a person="heibergjl">J. L. Heibergs</a> død i sin villa i Rosenvænget, hvor der dengang var vid udsigt over Øresund. Fru Heiberg havde i 1870 iscenesat <i>De unges forbund,</i> det første af Ibsens dramaer som opførtes på Det kgl. Teater, og Ibsen havde i den anledning også været hendes gæst. I rimbrevet alluderes til en række af Fru Heibergs vigtigste roller: Agnete i Heibergs <i>Elverhøi</i>, titelrollen i <a person="oehlenschlaeger">Oehlenschlägers</a> <i>Dina,</i> Jolanthe i <i>Kong René's Datter</i> af <a person="hertzh">Hertz</a>, Ragnhild i samme digters <i>Svend Dyrings Huus,</i> og Ophelia i <a person="shakespeare">Shakespeares</a> <i>Hamlet</i>.</note>
+    <note type="credits">Bidrag fra Sven Sørensen.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -329,14 +326,14 @@ under mindets stjerner høje!
 
 <text id="ibsen2005112901">
 <head>
-   <title>Terje Vigen</title>
-   <firstline>Der bode en underlig gråsprængt en</firstline>
-   <notes>
-      <note>Skrevet 1862.</note>
-      <note>Teksten følger <i>Haandbog i den danske Litteratur</i>, ved Sigurd Müller, Kbh., 1880.</note>
-      <note type="credits">Bidrag fra Niels Aarup.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Terje Vigen</title>
+  <firstline>Der bode en underlig gråsprængt en</firstline>
+  <notes>
+    <note>Skrevet 1862.</note>
+    <note type="credits">Bidrag fra Niels Aarup.</note>
+  </notes>
+  <source><i>Haandbog i den danske Litteratur</i>, ved Sigurd Müller, Kbh., 1880.</source>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -775,14 +772,14 @@ Men med vilde blomster iblandt.
 
 <text id="ibsen2018042401">
 <head>
-   <title>I en komponists stambog</title>
-   <firstline>Orpheus slog med toner rene</firstline>
-   <quality></quality>
+  <title>I en komponists stambog</title>
+  <firstline>Orpheus slog med toner rene</firstline>
+  <quality></quality>
 </head>
 <body>
 <poetry>
 Orpheus slog med toner rene
-ånd i vilddyr, ild i stene.	 
+ånd i vilddyr, ild i stene.
 
 Stene har vort Norge nok af;
 vilddyr har vi og en flok af.

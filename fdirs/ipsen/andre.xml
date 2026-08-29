@@ -1,24 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="ipsen" status="incomplete" type="poetry">
 <workhead>
-   <title>Andre digte</title>
-   <year>?</year>
-   <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+  <title>Andre digte</title>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
 <text id="ipsen2005032101">
 <head>
-   <title>Hvert Land paa Jorden producerer Sit</title>
-   <firstline>Hvert Land paa Jorden producerer Sit</firstline>
-   <notes>
-      <note>Kilde er PHans.IDL.III.782f</note>
-      <note type="credits">Bidrag fra Sven Sørensen.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
-   <keywords>sonnet</keywords>
+  <title>Hvert Land paa Jorden producerer Sit</title>
+  <firstline>Hvert Land paa Jorden producerer Sit</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Sven Sørensen.</note>
+  </notes>
+  <source href="https://runeberg.org/ildalihi/3/" pages="782-783">P. Hansen: <i>Illustreret dansk Litteraturhistorie</i>, 2. udg., bd. III, 1902.</source>
+  <quality>korrektur1,kilde,side</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -42,6 +39,6 @@ I Danmark produceres der Doktriner.
 </poetry>
 </body>
 </text>
+
 </workbody>
 </kalliopework>
-

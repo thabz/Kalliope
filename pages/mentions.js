@@ -1,31 +1,20 @@
-// @flow
-
-import React, { useState, Fragment } from 'react';
-import Page from '../components/page.js';
-import { poetCrumbsWithTitle } from '../components/breadcrumbs.js';
+import Link from 'next/link';
+import { Fragment, useState } from 'react';
+import * as Client from '../common/client.js';
+import * as OpenGraph from '../common/opengraph.js';
+import { poetsByLastname } from '../common/sorting.js';
 import _ from '../common/translations.js';
-import { Link } from '../routes';
-import LangSelect from '../components/langselect';
+import { poetCrumbsWithTitle } from '../components/breadcrumbs.js';
+import ExternalIdentifierLinks from '../components/external-identifier-links.js';
+import * as Links from '../components/links.js';
 import { poetMenu } from '../components/menu.js';
-import PoetName from '../components/poetname.js';
+import Page from '../components/page.js';
+import PageLead from '../components/pagelead.js';
 import { poetNameString } from '../components/poetname-helpers.js';
-import TextContent, { TextInline } from '../components/textcontent.js';
+import PoetName from '../components/poetname.js';
+import { TextInline } from '../components/textcontent.js';
 import TwoColumns from '../components/twocolumns.js';
 import ErrorPage from './error.js';
-import * as Links from '../components/links';
-import * as Client from '../common/client.js';
-import type {
-  Lang,
-  Text,
-  TextId,
-  Poet,
-  Work,
-  TextContentType,
-  Error,
-} from '../common/types.js';
-import { poetsByLastname } from '../common/sorting.js';
-import { createURL } from '../common/client.js';
-import * as OpenGraph from '../common/opengraph.js';
 
 const joinedByComma = (items, lang) => {
   let result = [];
@@ -60,7 +49,7 @@ const Section = (props) => {
   return (
     <div className="list-section" style={{ marginBottom: '40px' }}>
       <h3 style={{ columnSpan: 'all' }}>{title}</h3>
-      <TwoColumns>{items}</TwoColumns>
+      <TwoColumns noLinkUnderline>{items}</TwoColumns>
       <style jsx>{`
         h3 {
           font-weight: 300;
@@ -91,29 +80,13 @@ const Item = (props) => {
   );
 };
 
-const PoemLink = (props: { poem: Text, lang: Lang }) => {
+const PoemLink = (props) => {
   const { poem, lang } = props;
   const url = Links.textURL(lang, poem.id);
-  return (
-    <Link route={url}>
-      <a>»{poem.linkTitle}«</a>
-    </Link>
-  );
+  return <Link href={url}>»{poem.linkTitle}«</Link>;
 };
 
-type PoemType = {
-  poet: Poet,
-  poem: Text,
-};
-type TranslationsProps = {
-  lang: Lang,
-  translations: Array<{
-    translated?: PoemType,
-    translation: PoemType,
-  }>,
-};
-
-const TranslationsGroupedByTranslated = (props: TranslationsProps) => {
+const TranslationsGroupedByTranslated = (props) => {
   const { translations, lang } = props;
 
   const byTranslated = {};
@@ -164,7 +137,7 @@ const TranslationsGroupedByTranslated = (props: TranslationsProps) => {
   );
 };
 
-const TranslationsGroupedByTranslator = (props: TranslationsProps) => {
+const TranslationsGroupedByTranslator = (props) => {
   const { translations, lang } = props;
 
   const byTranslator = {};
@@ -266,16 +239,43 @@ const TranslationsSection = (props) => {
   return <Section title={title} items={items} />;
 };
 
-type MentionsProps = {
-  lang: Lang,
-  poet: Poet,
-  mentions: Array<TextContentType>,
-  translations: Array<TextContentType>,
-  primary: Array<TextContentType>,
-  secondary: Array<TextContentType>,
-  error: ?Error,
+const MentionsLead = (props) => {
+  const { hasReferences, hasTranslations, lang, poet } = props;
+  const poetName = poetNameString(poet, false, false, lang);
+  if (hasReferences && hasTranslations) {
+    return (
+      <PageLead>
+        {_(
+          'Her finder du tekster af andre forfattere, som omtaler eller henvender sig til {poetName}, samt oversættelser af digterens tekster til andre sprog.',
+          lang,
+          { poetName }
+        )}
+      </PageLead>
+    );
+  }
+  if (hasTranslations) {
+    return (
+      <PageLead>
+        {_(
+          'Her finder du oversættelser af tekster af {poetName} til andre sprog.',
+          lang,
+          { poetName }
+        )}
+      </PageLead>
+    );
+  }
+  return (
+    <PageLead>
+      {_(
+        'Her finder du tekster af andre forfattere, som omtaler eller henvender sig til {poetName}.',
+        lang,
+        { poetName }
+      )}
+    </PageLead>
+  );
 };
-const MentionsPage = (props: MentionsProps) => {
+
+const MentionsPage = (props) => {
   const {
     lang,
     poet,
@@ -283,6 +283,7 @@ const MentionsPage = (props: MentionsProps) => {
     translations,
     primary,
     secondary,
+    identifiers,
     error,
   } = props;
 
@@ -317,6 +318,19 @@ const MentionsPage = (props: MentionsProps) => {
       />
     );
   }
+  const hasReferences =
+    mentions.length > 0 || primary.length > 0 || secondary.length > 0;
+  const hasTranslations = translations.length > 0;
+
+  sections.push(
+    <ExternalIdentifierLinks
+      identifiers={identifiers}
+      lang={lang}
+      category="reference"
+      variant="references"
+      key="external-identifiers"
+    />
+  );
 
   return (
     <Page
@@ -332,16 +346,18 @@ const MentionsPage = (props: MentionsProps) => {
       menuItems={poetMenu(poet)}
       poet={poet}
       selectedMenuItem="mentions">
+      <MentionsLead
+        hasReferences={hasReferences}
+        hasTranslations={hasTranslations}
+        lang={lang}
+        poet={poet}
+      />
       <div style={{ paddingTop: '3px' }}>{sections}</div>
     </Page>
   );
 };
 
-MentionsPage.getInitialProps = async ({
-  query: { lang, poetId },
-}: {
-  query: { lang: Lang, poetId: string },
-}) => {
+MentionsPage.getInitialProps = async ({ query: { lang, poetId } }) => {
   const json = await Client.mentions(poetId);
   return {
     lang,
@@ -350,6 +366,7 @@ MentionsPage.getInitialProps = async ({
     translations: json.translations || [],
     primary: json.primary || [],
     secondary: json.secondary || [],
+    identifiers: json.identifiers || {},
     error: json.error,
   };
 };

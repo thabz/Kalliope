@@ -1,8 +1,13 @@
-import { poetNameString } from '../components/poetname-helpers.js';
+import {
+  poetGenetiveLastName,
+  poetLastNameString,
+  poetNameParts,
+  poetNameString,
+} from '../components/poetname-helpers.js';
 
 describe('String method', () => {
   it('outputs correctly when having full name and period', () => {
-    const poet: Poet = {
+    const poet = {
       name: {
         firstname: 'Emil',
         lastname: 'Aarestrup',
@@ -26,7 +31,7 @@ describe('String method', () => {
     );
   });
   it('outputs correctly when having full name and unknown birthday', () => {
-    const poet: Poet = {
+    const poet = {
       name: {
         firstname: 'Emil',
         lastname: 'Aarestrup',
@@ -45,7 +50,7 @@ describe('String method', () => {
     );
   });
   it('outputs correctly when having full name and unknown lifespan', () => {
-    const poet: Poet = {
+    const poet = {
       name: {
         firstname: 'Emil',
         lastname: 'Aarestrup',
@@ -61,6 +66,89 @@ describe('String method', () => {
     };
     expect(poetNameString(poet, false, true)).toEqual(
       'Emil Aarestrup (Ukendt levetid)'
+    );
+  });
+
+  it('handles missing name parts', () => {
+    expect(
+      poetNameString({
+        name: {
+          firstname: 'Emil',
+        },
+      })
+    ).toEqual('Emil');
+    expect(
+      poetNameString({
+        name: {
+          lastname: 'Aarestrup',
+        },
+      })
+    ).toEqual('Aarestrup');
+    expect(
+      poetNameString({
+        name: {},
+      })
+    ).toEqual('');
+  });
+
+  it('returns name parts and last names consistently', () => {
+    const poet = {
+      name: {
+        firstname: 'Emil',
+        lastname: 'Aarestrup',
+      },
+      period: {
+        born: {
+          date: '1800-12-04',
+        },
+        dead: {
+          date: '1856-07-21',
+        },
+      },
+    };
+
+    expect(poetNameParts(poet, false, true)).toEqual([
+      'Emil Aarestrup',
+      '(1800–56)',
+    ]);
+    expect(poetLastNameString(poet)).toEqual('Aarestrup');
+    expect(poetLastNameString({ name: { firstname: 'Emil' } })).toEqual('Emil');
+    expect(poetLastNameString({ name: {} })).toEqual('Ukendt');
+  });
+
+  it('formats genitive last names', () => {
+    expect(poetGenetiveLastName({ name: { lastname: 'Petersen' } }, 'da')).toBe(
+      'Petersens'
+    );
+    expect(poetGenetiveLastName({ name: { lastname: 'Sax' } }, 'da')).toBe(
+      'Sax’'
+    );
+    expect(poetGenetiveLastName({ name: { lastname: 'Petersen' } }, 'en')).toBe(
+      'Petersen’s'
+    );
+    expect(poetGenetiveLastName({ name: { lastname: 'Dickens' } }, 'en')).toBe(
+      'Dickens’'
+    );
+    expect(poetGenetiveLastName({ name: { lastname: 'Marx' } }, 'en')).toBe(
+      'Marx’s'
+    );
+    expect(poetGenetiveLastName({ name: { lastname: 'Berlioz' } }, 'en')).toBe(
+      'Berlioz’s'
+    );
+    expect(poetGenetiveLastName({ name: { lastname: 'Goethe' } }, 'de')).toBe(
+      'von Goethe'
+    );
+    expect(poetGenetiveLastName({ name: { lastname: 'Reboul' } }, 'fr')).toBe(
+      'de Reboul'
+    );
+    expect(
+      poetGenetiveLastName({ name: { lastname: 'Aarestrup' } }, 'fr')
+    ).toBe('d’Aarestrup');
+    expect(poetGenetiveLastName({ name: { lastname: "d'Urfé" } }, 'fr')).toBe(
+      'd’Urfé'
+    );
+    expect(() => poetGenetiveLastName({ name: {} }, 'it')).toThrow(
+      'Ukendt sprog: it'
     );
   });
 });

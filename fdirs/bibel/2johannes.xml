@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="2johannes" author="bibel" status="complete" type="poetry">
 <workhead>
-   <title>Johannes's andet Brev</title>
-   <year>?</year>
-   <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+  <title>Johannes's andet Brev</title>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
 <text id="bibel2johannes" skip-index="true">
 <head>
-   <title>Johannes' andet Brev</title>
-   <toctitle>Johannes' andet Brev</toctitle>
-   <indextitle>Johannes' andet Brev</indextitle>
-   <firstline>Den Ældste til den udvalgte Frue og hendes Børn</firstline>
-   <quality>korrektur1</quality>
+  <title>Johannes' andet Brev</title>
+  <toctitle>Johannes' andet Brev</toctitle>
+  <indextitle>Johannes' andet Brev</indextitle>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <prose>
@@ -35,5 +31,6 @@
 </prose>
 </body>
 </text>
+
 </workbody>
 </kalliopework>

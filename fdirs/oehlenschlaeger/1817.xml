@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1817" author="oehlenschlaeger" status="incomplete" type="poetry">
 <workhead>
-   <title>Hroars Saga</title>
-   <year>1817</year>
-   <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+  <title>Hroars Saga</title>
+  <year>1817</year>
+  <identifiers>
+    <openlibrary-work>OL4525367W</openlibrary-work>
+  </identifiers>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
 <text id="oehlen2002010101">
 <head>
-   <title>Fiskerens Vise</title>
-   <firstline>Har jeg min Baad, mit Seil og mit Næt</firstline>
-   <notes>
-      <note>Kilde er C. E. F. Weyse: <i>Romancer og Sange</i>, u.å.</note>
-      <note type="credits">Bidrag fra Sven Sørensen.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Fiskerens Vise</title>
+  <firstline>Har jeg min Baad, mit Seil og mit Næt</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Sven Sørensen.</note>
+  </notes>
+  <source>C. E. F. Weyse: <i>Romancer og Sange</i>, 1852.</source>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -62,12 +63,10 @@ Her er min Høieloftssal.
 
 <text id="oehlen2005050703">
 <head>
-   <title>Fiskerkonens Sang</title>
-   <firstline>Paa Stranden staae de grønne Træ'r</firstline>
-   <notes>
-      <note>Efter Adam Oehlenschläger: <i>Poetiske Skrifter</i>, Bd. 1., Topsøe-Jensen (red.), Holbergselskabet, 1926-30, pp. 97-99</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Fiskerkonens Sang</title>
+  <firstline>Paa Stranden staae de grønne Træ'r</firstline>
+  <source pages="97-99">Adam Oehlenschläger: <i>Poetiske Skrifter</i>, Bd. 1., Topsøe-Jensen (red.), Holbergselskabet, 1926-30.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -84,7 +83,7 @@ Maa jeg det Ryggen vende.
 Vel alle Blade voxe grønt,
 Som var Ethvert det samme;
 Men intet voxer mig saa skiønt,
-Som paa min gamle Stamme. 
+Som paa min gamle Stamme.
 
 Det holder mig i kiærlig Favn,
 Alt med sin Green, saa kroget;
@@ -151,12 +150,10 @@ Staaer ved den første Hytte!
 
 <text id="oehlen2005050704">
 <head>
-   <title>Hranes Elskovskvad</title>
-   <firstline>Før smelted mig hver Foraarsbæk</firstline>
-   <notes>
-      <note>Efter Adam Oehlenschläger: <i>Poetiske Skrifter</i>, Bd. 1., Topsøe-Jensen (red.), Holbergselskabet, 1926-30, pp. 99-102</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Hranes Elskovskvad</title>
+  <firstline>Før smelted mig hver Foraarsbæk</firstline>
+  <source pages="99-102">Adam Oehlenschläger: <i>Poetiske Skrifter</i>, Bd. 1., Topsøe-Jensen (red.), Holbergselskabet, 1926-30.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>

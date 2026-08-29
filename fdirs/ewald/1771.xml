@@ -1,29 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1771" author="ewald" status="complete" type="poetry">
 <workhead>
-   <title>Hedningernes Frelse</title>
-   <subtitle>Et Passions-Oratorium</subtitle>
-   <year>1771</year>
-   <notes>
-      <note type="credits">Indtastet af Henrik Nielsen.</note>
-      <note>Teksten er rettet ind efter <i>Den danske lyrik</i>, bind 1 (»Før 1800«), red. F.J. Billeskov Jansen, 1963.</note>
-   </notes>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+  <title>Hedningernes Frelse</title>
+  <subtitle>Et Passions-Oratorium</subtitle>
+  <year>1771</year>
+  <notes>
+    <note type="credits">Indtastet af Henrik Nielsen.</note>
+    <note>Teksten er rettet ind efter <i>Den danske lyrik</i>, bind 1 (»Før 1800«), red. F.J. Billeskov Jansen, 1963.</note>
+  </notes>
 </workhead>
 <workbody>
 
 <text id="ewald2001081801">
 <head>
-   <title>Hedningernes Frelse</title>
-   <subtitle>Et Passions Oratorium</subtitle>
-   <toctitle>Hedningernes Frelse</toctitle>
-   <indextitle>Hedningernes Frelse</indextitle>
-   <firstline>O Nat! - Nu seer jeg Dig! - nu seer jeg Intet!</firstline>
-   <notes>
-      <note>Trykt i <i>Bibliothek for nyttige Skrifter</i>, 1772, nr. 21.</note>
-   </notes>
-   <!-- Elendig udgave snuppet fra Billeskov -->
+  <title>Hedningernes Frelse</title>
+  <subtitle>Et Passions Oratorium</subtitle>
+  <toctitle>Hedningernes Frelse</toctitle>
+  <indextitle>Hedningernes Frelse</indextitle>
+  <firstline>O Nat! - Nu seer jeg Dig! - nu seer jeg Intet!</firstline>
+  <notes>
+    <note>Trykt i <i>Bibliothek for nyttige Skrifter</i>, 1772, nr. 21.</note>
+  </notes>
+  <!-- Elendig udgave snuppet fra Billeskov -->
 </head>
 <body>
 <poetry>
@@ -409,5 +407,6 @@ Styrk vort Bryst, og styrk vort Øye,
 </poetry>
 </body>
 </text>
+
 </workbody>
 </kalliopework>

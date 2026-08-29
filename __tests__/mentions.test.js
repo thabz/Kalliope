@@ -1,0 +1,255 @@
+jest.mock('../tools/libs/caching.js', () => ({
+  isFileModified: jest.fn(() => false),
+  loadCachedJSON: jest.fn(() => null),
+  writeCachedJSON: jest.fn(),
+  force_reload: false,
+}));
+
+jest.mock('../tools/libs/helpers.js', () => ({
+  safeMkdir: () => {},
+  writeJSON: jest.fn(),
+  removeFile: jest.fn(),
+  htmlToXml: (html) => html,
+  fileExists: jest.fn(() => false),
+}));
+
+jest.mock('../tools/build-static/xml.js', () => ({
+  loadXMLDoc: () => null,
+  safeGetText: () => null,
+  safeGetAttr: () => null,
+  getElementsByTagNames: () => [],
+  getElementsByTagName: () => [],
+  getChildrenByTagName: () => [],
+  getChildByTagName: () => null,
+  safeGetOuterXML: () => '',
+  safeGetInnerXML: () => '',
+}));
+
+import {
+  fileExists,
+  removeFile,
+  writeJSON,
+} from '../tools/libs/helpers.js';
+import {
+  loadCachedJSON,
+  writeCachedJSON,
+} from '../tools/libs/caching.js';
+import {
+  build_person_or_keyword_refs,
+  build_mentions_data,
+  build_mentions_json,
+  collectPersonOrKeywordRefs,
+} from '../tools/build-static/mentions.js';
+
+const poet = (id, firstname, lastname) => ({
+  id,
+  name: {
+    firstname,
+    lastname,
+  },
+});
+
+const text = (id, poetId, workId, title = id) => ({
+  id,
+  title,
+  poetId,
+  workId,
+});
+
+const work = (id, year) => ({
+  id,
+  year,
+  title: id,
+});
+
+describe('mentions data', () => {
+  beforeEach(() => {
+    fileExists.mockReturnValue(false);
+    removeFile.mockClear();
+    writeJSON.mockClear();
+    loadCachedJSON.mockReset();
+    loadCachedJSON.mockReturnValue(null);
+    writeCachedJSON.mockClear();
+  });
+
+  const buildCollected = () => {
+    const reboul = poet('reboul', 'Jean', 'Reboul');
+    const aarestrup = poet('aarestrup', 'Emil', 'Aarestrup');
+    const lamartine = poet('lamartine', 'Alphonse de', 'Lamartine');
+
+    return {
+      poets: new Map([
+        ['reboul', reboul],
+        ['aarestrup', aarestrup],
+        ['lamartine', lamartine],
+      ]),
+      texts: new Map([
+        [
+          'aarestrup2018110521',
+          text('aarestrup2018110521', 'aarestrup', '1863', 'En Engel stod'),
+        ],
+        [
+          'aarestrup20190130175',
+          text('aarestrup20190130175', 'aarestrup', '1976-5', 'En Engel stod'),
+        ],
+        [
+          'reboul2019013101',
+          text('reboul2019013101', 'reboul', 'andre', "L'Ange et l'enfant"),
+        ],
+      ]),
+      works: new Map([
+        ['aarestrup/1863', work('1863', '1863')],
+        ['aarestrup/1976-5', work('1976-5', '1976')],
+        ['reboul/andre', work('andre', '1828')],
+      ]),
+      variants: new Map([
+        ['aarestrup2018110521', ['aarestrup20190130175']],
+        ['aarestrup20190130175', ['aarestrup2018110521']],
+      ]),
+      person_or_keyword_refs: new Map([
+        [
+          'reboul',
+          {
+            mention: [],
+            translation: [
+              {
+                translationPoemId: 'aarestrup20190130175',
+                translatedPoemId: 'reboul2019013101',
+              },
+            ],
+          },
+        ],
+        [
+          'lamartine',
+          {
+            mention: ['aarestrup20190130175'],
+            translation: [],
+          },
+        ],
+      ]),
+    };
+  };
+
+  it('produces unchanged person refs when only source whitespace changes', () => {
+    const entries = [
+      {
+        toKey: 'bango',
+        fromPoemId: 'aarestrup2001061401',
+        type: 'mention',
+      },
+    ];
+    const before = collectPersonOrKeywordRefs(
+      new Map([['fdirs/aarestrup/1863.xml', entries]])
+    );
+    const after = collectPersonOrKeywordRefs(
+      new Map([['fdirs/aarestrup/1863.xml', [...entries]]])
+    );
+
+    expect(after).toEqual(before);
+  });
+
+  it('removes stale person refs with the modified source file', () => {
+    const refs = collectPersonOrKeywordRefs(
+      new Map([['fdirs/aarestrup/1863.xml', []]])
+    );
+
+    expect(refs.has('bango')).toBe(false);
+  });
+
+  it('indsamler refs fra et nyt værk, selv om filen er uændret', () => {
+    loadCachedJSON.mockImplementation((key) => {
+      if (key === 'collected.person_or_keyword_refs') {
+        return [];
+      }
+      if (key === 'collected.person_or_keyword_refs_by_file') {
+        return [['fdirs/aarestrup/1863.xml', []]];
+      }
+      return null;
+    });
+    fileExists.mockReturnValue(true);
+    const collected = {
+      workids: new Map([
+        ['aarestrup', ['1863', 'ny-samling']],
+      ]),
+      texts: new Map(),
+      unlistedWorkFiles: [],
+    };
+
+    build_person_or_keyword_refs(collected);
+
+    expect(writeCachedJSON).toHaveBeenCalledWith(
+      'collected.person_or_keyword_refs_by_file',
+      expect.arrayContaining([
+        ['fdirs/aarestrup/ny-samling.xml', []],
+      ])
+    );
+  });
+
+  it('viser oversættelser fra den primære variant', () => {
+    const collected = buildCollected();
+    const data = build_mentions_data(
+      collected.poets.get('reboul'),
+      'reboul',
+      collected,
+      (poemId) => [[poemId]]
+    );
+
+    expect(data.translations).toHaveLength(1);
+    expect(data.translations[0].translation.poem.id).toBe(
+      'aarestrup2018110521'
+    );
+    expect(data.translations[0].translated.poem.id).toBe('reboul2019013101');
+  });
+
+  it('viser mentions fra den primære variant', () => {
+    const collected = buildCollected();
+    const data = build_mentions_data(
+      collected.poets.get('lamartine'),
+      'lamartine',
+      collected,
+      (poemId) => [[poemId]]
+    );
+
+    expect(data.mentions).toEqual([[['aarestrup2018110521']]]);
+  });
+
+  it('skriver manglende mentions-json fra eksisterende refs', () => {
+    const collected = buildCollected();
+    collected.poets.get('reboul').has_mentions = true;
+    const consoleLogSpy = jest.spyOn(console, 'log').mockImplementation(() => {});
+
+    try {
+      build_mentions_json(collected);
+    } finally {
+      consoleLogSpy.mockRestore();
+    }
+
+    expect(writeJSON).toHaveBeenCalledWith(
+      'public/api/reboul/mentions.json',
+      expect.objectContaining({
+        translations: expect.arrayContaining([
+          expect.objectContaining({
+            translation: expect.objectContaining({
+              poem: expect.objectContaining({ id: 'aarestrup2018110521' }),
+            }),
+          }),
+        ]),
+      })
+    );
+  });
+
+  it('fjerner forældet mentions-json uden henvisninger', () => {
+    const collected = buildCollected();
+    collected.poets.get('reboul').has_mentions = false;
+    fileExists.mockImplementation(
+      filename => filename === 'public/api/reboul/mentions.json'
+    );
+
+    build_mentions_json(collected);
+
+    expect(removeFile).toHaveBeenCalledWith(
+      'public/api/reboul/mentions.json'
+    );
+    expect(writeJSON).not.toHaveBeenCalled();
+  });
+});

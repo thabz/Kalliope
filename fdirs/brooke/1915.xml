@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1915" author="brooke" status="incomplete" type="poetry">
 <workhead>
-   <title>1914 and Other Poems</title>
-   <year>1915</year>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+  <title>1914 and Other Poems</title>
+  <year>1915</year>
+  <identifiers>
+    <openlibrary-work>OL42504199W</openlibrary-work>
+  </identifiers>
 </workhead>
 <workbody>
 
 <section level="1">
 <head>
-   <toctitle>Five Sonnets</toctitle>
+  <toctitle>Five Sonnets</toctitle>
 </head>
 <content>
 
 <text id="brooke200109021">
 <head>
-   <title>Peace</title>
-   <toctitle>I. Peace</toctitle>
-   <indextitle>Peace</indextitle>
-   <firstline>Now, God be thanked Who has matched us with His hour</firstline>
-   <keywords>sonnet</keywords>
+  <title>Peace</title>
+  <toctitle>I. Peace</toctitle>
+  <indextitle>Peace</indextitle>
+  <firstline>Now, God be thanked Who has matched us with His hour</firstline>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -45,11 +46,11 @@ Nothing to shake the laughing heart's long peace there
 
 <text id="brooke200109022">
 <head>
-   <title>Safety</title>
-   <toctitle>II. Safety</toctitle>
-   <indextitle>Safety</indextitle>
-   <firstline>Dear! of all happy in the hour, most blest</firstline>
-   <keywords>sonnet</keywords>
+  <title>Safety</title>
+  <toctitle>II. Safety</toctitle>
+  <indextitle>Safety</indextitle>
+  <firstline>Dear! of all happy in the hour, most blest</firstline>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -73,11 +74,11 @@ And if these poor limbs die, safest of all.
 
 <text id="brooke200109023">
 <head>
-   <title>The Dead</title>
-   <toctitle>III. The Dead</toctitle>
-   <indextitle>The Dead</indextitle>
-   <firstline>Blow out, you bugles, over the rich Dead!</firstline>
-   <keywords>sonnet</keywords>
+  <title>The Dead</title>
+  <toctitle>III. The Dead</toctitle>
+  <indextitle>The Dead</indextitle>
+  <firstline>Blow out, you bugles, over the rich Dead!</firstline>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -102,11 +103,11 @@ And Nobleness walks in our ways again;
 
 <text id="brooke200109024">
 <head>
-   <title>The Dead</title>
-   <toctitle>IV. The Dead</toctitle>
-   <indextitle>The Dead</indextitle>
-   <firstline>These hearts were woven of human joys and cares</firstline>
-   <keywords>sonnet</keywords>
+  <title>The Dead</title>
+  <toctitle>IV. The Dead</toctitle>
+  <indextitle>The Dead</indextitle>
+  <firstline>These hearts were woven of human joys and cares</firstline>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -131,11 +132,11 @@ A width, a shining peace, under the night.
 
 <text id="brooke200109025">
 <head>
-   <title>The Soldier</title>
-   <toctitle>V. The Soldier</toctitle>
-   <indextitle>The Soldier</indextitle>
-   <firstline>If I should die, think only this of me</firstline>
-   <keywords>sonnet</keywords>
+  <title>The Soldier</title>
+  <toctitle>V. The Soldier</toctitle>
+  <indextitle>The Soldier</indextitle>
+  <firstline>If I should die, think only this of me</firstline>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -157,16 +158,17 @@ Her sights and sounds; dreams happy as her day;
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
 
 <text id="brooke200109026">
 <head>
-   <title>The Old Vicarage</title>
-   <subtitle>Grantchester</subtitle>
-   <toctitle>The Old Vicarage</toctitle>
-   <indextitle>The Old Vicarage</indextitle>
-   <firstline>Just now the lilac is in bloom</firstline>
+  <title>The Old Vicarage</title>
+  <subtitle>Grantchester</subtitle>
+  <toctitle>The Old Vicarage</toctitle>
+  <indextitle>The Old Vicarage</indextitle>
+  <firstline>Just now the lilac is in bloom</firstline>
 </head>
 <body>
 <poetry>
@@ -321,10 +323,10 @@ And is there honey still for tea?
 
 <text id="brooke200109027">
 <head>
-   <title>Heaven</title>
-   <toctitle>Heaven</toctitle>
-   <indextitle>Heaven</indextitle>
-   <firstline>Fish (fly-replete, in depth of June</firstline>
+  <title>Heaven</title>
+  <toctitle>Heaven</toctitle>
+  <indextitle>Heaven</indextitle>
+  <firstline>Fish (fly-replete, in depth of June</firstline>
 </head>
 <body>
 <poetry>
@@ -368,10 +370,10 @@ There shall be no more land, say fish.
 
 <text id="brooke200109028">
 <head>
-   <title>Tiare Tahiti</title>
-   <toctitle>Tiare Tahiti</toctitle>
-   <indextitle>Tiare Tahiti</indextitle>
-   <firstline>Mamua, when our laughter ends</firstline>
+  <title>Tiare Tahiti</title>
+  <toctitle>Tiare Tahiti</toctitle>
+  <indextitle>Tiare Tahiti</indextitle>
+  <firstline>Mamua, when our laughter ends</firstline>
 </head>
 <body>
 <poetry>
@@ -457,5 +459,6 @@ There's little comfort in the wise.
 </poetry>
 </body>
 </text>
+
 </workbody>
 </kalliopework>

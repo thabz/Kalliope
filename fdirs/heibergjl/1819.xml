@@ -1,24 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1819" author="heibergjl" status="incomplete" type="poetry">
 <workhead>
-   <title>Poetisk Kalender</title>
-   <year>1819</year>
-   <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+  <title>Poetisk Kalender</title>
+  <year>1819</year>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
 <text id="heibergjl1999041501">
 <head>
-   <title>Liden Kirsten</title>
-   <toctitle>Liden Kirsten</toctitle>
-   <indextitle>Liden Kirsten</indextitle>
-   <firstline>De Bølger rulle saa tungt afsted</firstline>
-   <notes>
-      <note>Efter Heibergs <i>Poetiske Skrifter</i> (1862), bind 9.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde</quality>
+  <title>Liden Kirsten</title>
+  <toctitle>Liden Kirsten</toctitle>
+  <indextitle>Liden Kirsten</indextitle>
+  <firstline>De Bølger rulle saa tungt afsted</firstline>
+  <source>Heibergs <i>Poetiske Skrifter</i> (1862), bind 9.</source>
+  <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -66,5 +62,6 @@ Hun nævner sagte sin Frelsers Navn
 </poetry>
 </body>
 </text>
+
 </workbody>
 </kalliopework>

@@ -1,37 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1872" author="winther" status="complete" type="poetry">
 <workhead>
-    <title>En Samling Vers</title>
-    <year>1872</year>
-    <notes>
-        <note>Teksten følger Christian Winther: <i>En Samling Vers</i>, C.A. Reitzels Forlag, Kbh., 1872.</note>
-        <note>Noter med en foranstillet asterisk er digterens egne.</note>
-        <note>Winthers <a work="winther/1860"><i>Samlede Digtninger</i></a>, bd. 1-9, Winther og Liebenberg (red.), C.A. Reitzels Forlag, Kbh., udkom 1860. <a work="winther/1865"><i>Brogede Blade</i> (1865)</a> fungerede som bind 10, og nærværende <i>En Samling Vers</i> (1872) fungerede som bind 11.</note>
-    </notes>
-    <pictures>
-        <picture src="1872-p1.jpg">Titelbladet til <i>En Samling Vers</i> (1872) lyder ,,En Samling Vers / af / Christian Winther. // Kjøbenhavn. / C. A. Reitzels Forlag. / 1872.''</picture>
-    </pictures>
-    <source facsimile="4135818351_color" facsimile-pages-num="624" facsimile-pages-offset="374">Christian Winther: <i>En Samling Vers</i>, C.A. Reitzels Forlag, Kbh., 1872.</source>
+  <title>En Samling Vers</title>
+  <year>1872</year>
+  <notes>
+    <note>Noter med en foranstillet asterisk er digterens egne.</note>
+    <note>Winthers <a work="winther/1860"><i>Samlede Digtninger</i></a>, bd. 1-9, Winther og Liebenberg (red.), C.A. Reitzels Forlag, Kbh., udkom 1860. <a work="winther/1865"><i>Brogede Blade</i> (1865)</a> fungerede som bind 10, og nærværende <i>En Samling Vers</i> (1872) fungerede som bind 11.</note>
+  </notes>
+  <pictures>
+    <picture src="1872-p1.jpg">Titelbladet til <i>En Samling Vers</i> (1872) lyder ,,En Samling Vers / af / Christian Winther. // Kjøbenhavn. / C. A. Reitzels Forlag. / 1872.''</picture>
+  </pictures>
+  <source facsimile="4135818351_color" facsimile-pages-num="624" facsimile-pages-offset="374">Christian Winther: <i>En Samling Vers</i>, C.A. Reitzels Forlag, Kbh., 1872.</source>
 </workhead>
 <workbody>
 
 <section id="winther2018090102" variant="winther2018083103">
 <head>
-    <title>Til Een</title>
-    <notes>
-        <note>Addendum til »Til Een« fra <i>Digtninger</i> (1843).</note> 
-    </notes>
-    <source pages="1-77"/>
+  <title>Til Een</title>
+  <notes>
+    <note>Addendum til »Til Een« fra <i>Digtninger</i> (1843).</note>
+  </notes>
+  <source pages="1-77"/>
 </head>
 <content>
 
 <text id="winther2018082601">
 <head>
-    <title>Tilegnelse</title>
-    <firstline>Der flyver mangen Fugl omkring</firstline>
-    <source pages="3-4"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Tilegnelse</title>
+  <firstline>Der flyver mangen Fugl omkring</firstline>
+  <source pages="3-4"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -53,8 +51,8 @@ Dulgt under Vaarens Blade,
 Begynder, hvor i Høst den slap,
 Med sine Triller glade.
 
-Min Sang, om er <w>din</w> Eiendom,
-So naaer til Fleres Øre,
+Min Sang, som er <w>din</w> Eiendom,
+Jo naaer til Fleres Øre,
 Som fagtens ville enes om
 Den frem til Doms at føre.
 Ren kan jeg om <w>din</w> læbe see
@@ -67,15 +65,15 @@ Det agter jeg kun føie.
 
 <text id="winther2018082602">
 <head>
-    <title><num>1.</num>Besøg paa Parnas</title>
-    <toctitle><num>1.</num>Besøg paa Parnas</toctitle>
-    <indextitle>Besøg paa Parnas</indextitle>
-    <linktitle>Besøg paa Parnas</linktitle>
-    <subtitle>Den 7de December 1858.</subtitle>
-    <firstline>Forleden gik jeg op til Parnas</firstline>
-    <source pages="5-25"/>
-    <keywords>petrarca</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>1.</num>Besøg paa Parnas</title>
+  <toctitle><num>1.</num>Besøg paa Parnas</toctitle>
+  <indextitle>Besøg paa Parnas</indextitle>
+  <linktitle>Besøg paa Parnas</linktitle>
+  <subtitle>Den 7de December 1858.</subtitle>
+  <firstline>Forleden gik jeg op til Parnas</firstline>
+  <source pages="5-25"/>
+  <keywords>petrarca</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -258,15 +256,15 @@ Die Sprache? - ach, ich brauche jede!
 Drann soll Er keinen Anstoß nehmen.
 Aus Leipzig, Hamburg, Stuttgart, Bremen
 Viele Dichter, Kind und Weib und Mann,
-Mich gingen jüngst um Hülfe an.
+Mich gingen jüngst um Hülfe an.
 Sie haben lange hier gezandert,
 Und vielfach wurde denn geplaudert;
-Hab' auch den Schiller jüngst gelesen,
+Hab' auch den Schiller jüngst gelesen,
 Daher kömmt mir das deutsche Wesen.
 Doch laß' Er deshalb sich nicht stören,
 Ich mag wohl auch mal Dänisch hören.
 Er will ein Lied zum neuen Jahr
-Für die Frau Liebste? - das ist klar.
+Für die Frau Liebste? - das ist klar.
 Er soll es haben,'' sagde hun
 Og rørte sagte ved min Mund
 Med gyldne Plecter, og nu foer
@@ -605,14 +603,14 @@ End denne lange, tørre Jyde.
 
 <text id="winther2018082603">
 <head>
-    <title><num>2.</num>Med Johan Ludvig Heibergs Buste</title>
-    <toctitle><num>2.</num>Med Johan Ludvig Heibergs Buste</toctitle>
-    <indextitle>Med Johan Ludvig Heibergs Buste</indextitle>
-    <linktitle>Med Johan Ludvig Heibergs Buste</linktitle>
-    <subtitle>Den 7de December 1860</subtitle>
-    <firstline>Med bedre Gave knap jeg kan</firstline>
-    <source pages="26-28"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>2.</num>Med Johan Ludvig Heibergs Buste</title>
+  <toctitle><num>2.</num>Med Johan Ludvig Heibergs Buste</toctitle>
+  <indextitle>Med Johan Ludvig Heibergs Buste</indextitle>
+  <linktitle>Med Johan Ludvig Heibergs Buste</linktitle>
+  <subtitle>Den 7de December 1860</subtitle>
+  <firstline>Med bedre Gave knap jeg kan</firstline>
+  <source pages="26-28"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -686,13 +684,13 @@ Du sender vel en venlig Tanke?
 
 <text id="winther2018082604">
 <head>
-    <title><num>3.</num>Med et Compas</title>
-    <toctitle><num>3.</num>Med et Compas</toctitle>
-    <indextitle>Med et Compas</indextitle>
-    <linktitle>Med et Compas</linktitle>
-    <firstline>Os drive Skjebnens Vinde</firstline>
-    <source pages="29-31"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>3.</num>Med et Compas</title>
+  <toctitle><num>3.</num>Med et Compas</toctitle>
+  <indextitle>Med et Compas</indextitle>
+  <linktitle>Med et Compas</linktitle>
+  <firstline>Os drive Skjebnens Vinde</firstline>
+  <source pages="29-31"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -761,14 +759,14 @@ Dine Blomster - og Du!
 
 <text id="winther2018082605">
 <head>
-    <title><num>4.</num>Den 1ste Januar 1862</title>
-    <toctitle><num>4.</num>Den 1ste Januar 1862</toctitle>
-    <indextitle>Den 1ste Januar 1862</indextitle>
-    <linktitle>Den 1ste Januar 1862</linktitle>
-    <subtitle>Den 1ste Januar 1862</subtitle>
-    <firstline>Ak! Livet er kort</firstline>
-    <source pages="32-33"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>4.</num>Den 1ste Januar 1862</title>
+  <toctitle><num>4.</num>Den 1ste Januar 1862</toctitle>
+  <indextitle>Den 1ste Januar 1862</indextitle>
+  <linktitle>Den 1ste Januar 1862</linktitle>
+  <subtitle>Den 1ste Januar 1862</subtitle>
+  <firstline>Ak! Livet er kort</firstline>
+  <source pages="32-33"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -822,13 +820,13 @@ Hvor langt Du saa gaaer!
 
 <text id="winther2018082606">
 <head>
-    <title><num>5.</num>Med en Solskjerm</title>
-    <toctitle><num>5.</num>Med en Solskjerm</toctitle>
-    <indextitle>Med en Solskjerm</indextitle>
-    <linktitle>Med en Solskjerm</linktitle>
-    <firstline>Over dit Hoved, over din Fod</firstline>
-    <source pages="34-35"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>5.</num>Med en Solskjerm</title>
+  <toctitle><num>5.</num>Med en Solskjerm</toctitle>
+  <indextitle>Med en Solskjerm</indextitle>
+  <linktitle>Med en Solskjerm</linktitle>
+  <firstline>Over dit Hoved, over din Fod</firstline>
+  <source pages="34-35"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -867,13 +865,13 @@ Men møde Dig i Evigheden!
 
 <text id="winther2018082607">
 <head>
-    <title><num>6.</num>Med et Maleri</title>
-    <toctitle><num>6.</num>Med et Maleri</toctitle>
-    <indextitle>Med et Maleri</indextitle>
-    <linktitle>Med et Maleri</linktitle>
-    <firstline>Føler Du den svale Luft</firstline>
-    <source pages="36-37"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>6.</num>Med et Maleri</title>
+  <toctitle><num>6.</num>Med et Maleri</toctitle>
+  <indextitle>Med et Maleri</indextitle>
+  <linktitle>Med et Maleri</linktitle>
+  <firstline>Føler Du den svale Luft</firstline>
+  <source pages="36-37"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -922,13 +920,13 @@ Huldt af Vaarens Nattergale!
 
 <text id="winther2018082608" variant="winther2018081216">
 <head>
-    <title><num>7.</num>Med en Vifte</title>
-    <toctitle><num>7.</num>Med en Vifte</toctitle>
-    <indextitle>Med en Vifte</indextitle>
-    <linktitle>Med en Vifte</linktitle>
-    <firstline>Jeg er Dig en Ven, som aldrig svigter</firstline>
-    <source pages="38"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>7.</num>Med en Vifte</title>
+  <toctitle><num>7.</num>Med en Vifte</toctitle>
+  <indextitle>Med en Vifte</indextitle>
+  <linktitle>Med en Vifte</linktitle>
+  <firstline>Jeg er Dig en Ven, som aldrig svigter</firstline>
+  <source pages="38"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -945,13 +943,13 @@ Ad et jammerligt Vers og - dets Digter.
 
 <text id="winther2018082609">
 <head>
-    <title><num>8.</num>Sæbekuglen taler</title>
-    <toctitle><num>8.</num>Sæbekuglen taler</toctitle>
-    <indextitle>Sæbekuglen taler</indextitle>
-    <linktitle>Sæbekuglen taler</linktitle>
-    <firstline>Vor Skjebne er kun den at svinde</firstline>
-    <source pages="39"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>8.</num>Sæbekuglen taler</title>
+  <toctitle><num>8.</num>Sæbekuglen taler</toctitle>
+  <indextitle>Sæbekuglen taler</indextitle>
+  <linktitle>Sæbekuglen taler</linktitle>
+  <firstline>Vor Skjebne er kun den at svinde</firstline>
+  <source pages="39"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -975,13 +973,13 @@ At svinde mellem <w>dine</w> Hænder!
 
 <text id="winther2018082610">
 <head>
-    <title><num>9.</num>Med en Æske Lak</title>
-    <toctitle><num>9.</num>Med en Æske Lak</toctitle>
-    <indextitle>Med en Æske Lak</indextitle>
-    <linktitle>Med en Æske Lak</linktitle>
-    <firstline>Modtag den Laas, som snart maa lukke</firstline>
-    <source pages="40"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>9.</num>Med en Æske Lak</title>
+  <toctitle><num>9.</num>Med en Æske Lak</toctitle>
+  <indextitle>Med en Æske Lak</indextitle>
+  <linktitle>Med en Æske Lak</linktitle>
+  <firstline>Modtag den Laas, som snart maa lukke</firstline>
+  <source pages="40"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1009,13 +1007,13 @@ Med Længsels Hast man Seglet brækker, -
 
 <text id="winther2018082611">
 <head>
-    <title><num>10.</num>Freidigt Mod</title>
-    <toctitle><num>10.</num>Freidigt Mod</toctitle>
-    <indextitle>Freidigt Mod</indextitle>
-    <linktitle>Freidigt Mod</linktitle>
-    <firstline>Saalænge jeg kan drage Veiret</firstline>
-    <source pages="41-42"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>10.</num>Freidigt Mod</title>
+  <toctitle><num>10.</num>Freidigt Mod</toctitle>
+  <indextitle>Freidigt Mod</indextitle>
+  <linktitle>Freidigt Mod</linktitle>
+  <firstline>Saalænge jeg kan drage Veiret</firstline>
+  <source pages="41-42"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1048,13 +1046,13 @@ Der tændes ny bag Dødens Blund.
 
 <text id="winther2018082612">
 <head>
-    <title><num>11.</num>Juleaften 1864</title>
-    <toctitle><num>11.</num>Juleaften 1864</toctitle>
-    <indextitle>Juleaften 1864</indextitle>
-    <linktitle>Juleaften 1864</linktitle>
-    <firstline>Min Hilsen først ved Julens Fest</firstline>
-    <source pages="43-45"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>11.</num>Juleaften 1864</title>
+  <toctitle><num>11.</num>Juleaften 1864</toctitle>
+  <indextitle>Juleaften 1864</indextitle>
+  <linktitle>Juleaften 1864</linktitle>
+  <firstline>Min Hilsen først ved Julens Fest</firstline>
+  <source pages="43-45"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1130,13 +1128,13 @@ Langt meer end Sanggudindens Naade!
 
 <text id="winther2018082613">
 <head>
-    <title><num>12.</num>Den 7de December 1865</title>
-    <toctitle><num>12.</num>Den 7de December 1865</toctitle>
-    <indextitle>Den 7de December 1865</indextitle>
-    <linktitle>Den 7de December 1865</linktitle>
-    <firstline>Som Lærken hilser Morgengry</firstline>
-    <source pages="46-47"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>12.</num>Den 7de December 1865</title>
+  <toctitle><num>12.</num>Den 7de December 1865</toctitle>
+  <indextitle>Den 7de December 1865</indextitle>
+  <linktitle>Den 7de December 1865</linktitle>
+  <firstline>Som Lærken hilser Morgengry</firstline>
+  <source pages="46-47"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1177,17 +1175,17 @@ Til Trøst og Glæde for os Andre!
 
 <text id="winther2018082614">
 <head>
-    <title><num>13.</num>December 1866.</title>
-    <toctitle><num>13.</num>December 1866.</toctitle>
-    <indextitle>December 1866.</indextitle>
-    <linktitle>December 1866.</linktitle>
-    <firstline>I Blindhed famled jeg paa hine Strænge</firstline>
-    <source pages="48-50"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>13.</num>December 1866.</title>
+  <toctitle><num>13.</num>December 1866.</toctitle>
+  <indextitle>December 1866.</indextitle>
+  <linktitle>December 1866.</linktitle>
+  <firstline>I Blindhed famled jeg paa hine Strænge</firstline>
+  <source pages="48-50"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<nonum><small><center>1.</center></small></nonum>
+<nonum><center><small>1.</small></center></nonum>
 
 I Blindhed famled jeg paa hine Strænge,
   Som jeg saa ofte bragte til at klinge,
@@ -1209,7 +1207,7 @@ Og naar hun banker paa, jeg er ei hjemme!
 
 ---
 
-<nonum><small><center>2.</center></small></nonum>
+<nonum><center><small>2.</small></center></nonum>
 
 O, kunde jeg blot pløie, saae og harve,
   Hvad eller Støvlen over Læsten spande,
@@ -1231,7 +1229,7 @@ Saa skulde strax jeg tænde Glædens Bauner
 
 ---
 
-<nonum><small><center>3.</center></small></nonum>
+<nonum><center><small>3.</small></center></nonum>
 
 Dengang jeg <w>saae,</w> det Eneste, jeg kunde,
   Det Eneste, der syntes mig at lykkes,
@@ -1256,13 +1254,13 @@ Seer Du ei selv, hvor mine Vers er slette?
 
 <text id="winther2018082615">
 <head>
-    <title><num>14.</num>Den 7de December 1867</title>
-    <toctitle><num>14.</num>Den 7de December 1867</toctitle>
-    <indextitle>Den 7de December 1867</indextitle>
-    <linktitle>Den 7de December 1867</linktitle>
-    <firstline>Denne ene Dag i Aaret</firstline>
-    <source pages="51-52"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>14.</num>Den 7de December 1867</title>
+  <toctitle><num>14.</num>Den 7de December 1867</toctitle>
+  <indextitle>Den 7de December 1867</indextitle>
+  <linktitle>Den 7de December 1867</linktitle>
+  <firstline>Denne ene Dag i Aaret</firstline>
+  <source pages="51-52"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1313,13 +1311,13 @@ Hvis Velsignelse jeg før ei kjendte!
 
 <text id="winther2018082616">
 <head>
-    <title><num>15.</num>I Fécamp, August 1868</title>
-    <toctitle><num>15.</num>I Fécamp, August 1868</toctitle>
-    <indextitle>I Fécamp, August 1868</indextitle>
-    <linktitle>I Fécamp, August 1868</linktitle>
-    <firstline>Du vil, jeg skal forynge</firstline>
-    <source pages="53-56"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>15.</num>I Fécamp, August 1868</title>
+  <toctitle><num>15.</num>I Fécamp, August 1868</toctitle>
+  <indextitle>I Fécamp, August 1868</indextitle>
+  <linktitle>I Fécamp, August 1868</linktitle>
+  <firstline>Du vil, jeg skal forynge</firstline>
+  <source pages="53-56"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1418,14 +1416,14 @@ Til Forsvar tage dem.
 
 <text id="winther2018082617">
 <head>
-    <title><num>16.</num>Den broderede Hue</title>
-    <toctitle><num>16.</num>Den broderede Hue</toctitle>
-    <indextitle>Den broderede Hue</indextitle>
-    <linktitle>Den broderede Hue</linktitle>
-    <subtitle>Fécamp, September 1868</subtitle>
-    <firstline>Den Hue, Du har foræret mig</firstline>
-    <source pages="57-58"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>16.</num>Den broderede Hue</title>
+  <toctitle><num>16.</num>Den broderede Hue</toctitle>
+  <indextitle>Den broderede Hue</indextitle>
+  <linktitle>Den broderede Hue</linktitle>
+  <subtitle>Fécamp, September 1868</subtitle>
+  <firstline>Den Hue, Du har foræret mig</firstline>
+  <source pages="57-58"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1459,17 +1457,17 @@ Og smukt i Riimlænker slaae!
 
 <text id="winther2018082618">
 <head>
-    <title><num>17.</num>I Paris, December 1868</title>
-    <toctitle><num>17.</num>I Paris, December 1868</toctitle>
-    <indextitle>I Paris, December 1868</indextitle>
-    <linktitle>I Paris, December 1868</linktitle>
-    <firstline>Naar jeg skal synge her, saa maa jeg drømme</firstline>
-    <source pages="59-60"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>17.</num>I Paris, December 1868</title>
+  <toctitle><num>17.</num>I Paris, December 1868</toctitle>
+  <indextitle>I Paris, December 1868</indextitle>
+  <linktitle>I Paris, December 1868</linktitle>
+  <firstline>Naar jeg skal synge her, saa maa jeg drømme</firstline>
+  <source pages="59-60"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<nonum><small><center>1.</center></small></nonum>
+<nonum><center><small>1.</small></center></nonum>
 
 Naar jeg skal synge <w>her</w>, saa maa jeg drømme
   Mig hist, hvor Sundets Bølger gaae og lade
@@ -1491,7 +1489,7 @@ Mit Inderstes Natur jeg blindt adlyder;
 
 ---
 
-<nonum><small><center>2.</center></small></nonum>
+<nonum><center><small>2.</small></center></nonum>
 
 Du hilses fra det Glade og det Tvære:
   Fra Urterne, der ligge nu og sove,
@@ -1516,14 +1514,14 @@ Der Intet er, som holder sig tilbage;
 
 <text id="winther2018082619">
 <head>
-    <title><num>18.</num>Nytaars Morgen</title>
-    <toctitle><num>18.</num>Nytaars Morgen</toctitle>
-    <indextitle>Nytaars Morgen</indextitle>
-    <linktitle>Nytaars Morgen</linktitle>
-    <subtitle>Paris 1869</subtitle>
-    <firstline>Det gamle Aar paa sine trætte Vinger</firstline>
-    <source pages="61-62"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>18.</num>Nytaars Morgen</title>
+  <toctitle><num>18.</num>Nytaars Morgen</toctitle>
+  <indextitle>Nytaars Morgen</indextitle>
+  <linktitle>Nytaars Morgen</linktitle>
+  <subtitle>Paris 1869</subtitle>
+  <firstline>Det gamle Aar paa sine trætte Vinger</firstline>
+  <source pages="61-62"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1555,15 +1553,15 @@ Har vi en fattig, men en sikker Glæde, -
 
 <text id="winther2018082620">
 <head>
-    <title><num>19.</num>Til Natten</title>
-    <toctitle><num>19.</num>Til Natten</toctitle>
-    <indextitle>Til Natten</indextitle>
-    <linktitle>Til Natten</linktitle>
-    <subtitle>Paris, Januar 1869</subtitle>
-    <firstline>O Du, som, hvergang Aftenklokken ringer</firstline>
-    <source pages="63"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>19.</num>Til Natten</title>
+  <toctitle><num>19.</num>Til Natten</toctitle>
+  <indextitle>Til Natten</indextitle>
+  <linktitle>Til Natten</linktitle>
+  <subtitle>Paris, Januar 1869</subtitle>
+  <firstline>O Du, som, hvergang Aftenklokken ringer</firstline>
+  <source pages="63"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1590,13 +1588,13 @@ Vær mild og god, lad Hendes Hjerte smile
 
 <text id="winther2018082621">
 <head>
-    <title><num>20.</num>Den 7de December 1869</title>
-    <toctitle><num>20.</num>Den 7de December 1869</toctitle>
-    <indextitle>Den 7de December 1869</indextitle>
-    <linktitle>Den 7de December 1869</linktitle>
-    <firstline>Naar der paa Gaderne er Ro</firstline>
-    <source pages="64-66"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>20.</num>Den 7de December 1869</title>
+  <toctitle><num>20.</num>Den 7de December 1869</toctitle>
+  <indextitle>Den 7de December 1869</indextitle>
+  <linktitle>Den 7de December 1869</linktitle>
+  <firstline>Naar der paa Gaderne er Ro</firstline>
+  <source pages="64-66"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1650,13 +1648,13 @@ Vor Fremtids dunkle Taager!
 
 <text id="winther2018082622">
 <head>
-    <title><num>21.</num>Haab i Vaaren</title>
-    <toctitle><num>21.</num>Haab i Vaaren</toctitle>
-    <indextitle>Haab i Vaaren</indextitle>
-    <linktitle>Haab i Vaaren</linktitle>
-    <firstline>I Haab alt Rosens Hjerte banker</firstline>
-    <source pages="67-68"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>21.</num>Haab i Vaaren</title>
+  <toctitle><num>21.</num>Haab i Vaaren</toctitle>
+  <indextitle>Haab i Vaaren</indextitle>
+  <linktitle>Haab i Vaaren</linktitle>
+  <firstline>I Haab alt Rosens Hjerte banker</firstline>
+  <source pages="67-68"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1692,14 +1690,14 @@ Fra Ham, som vil - og som har Magt?
 
 <text id="winther2018082623">
 <head>
-    <title><num>22.</num>Den 7de December, 1870</title>
-    <toctitle><num>22.</num>Den 7de December, 1870</toctitle>
-    <indextitle>Den 7de December, 1870</indextitle>
-    <linktitle>Den 7de December, 1870</linktitle>
-    <subtitle>Med en Bouquet</subtitle>
-    <firstline>Vi komme, som vore Søstre kom</firstline>
-    <source pages="69-70"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>22.</num>Den 7de December, 1870</title>
+  <toctitle><num>22.</num>Den 7de December, 1870</toctitle>
+  <indextitle>Den 7de December, 1870</indextitle>
+  <linktitle>Den 7de December, 1870</linktitle>
+  <subtitle>Med en Bouquet</subtitle>
+  <firstline>Vi komme, som vore Søstre kom</firstline>
+  <source pages="69-70"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1731,13 +1729,13 @@ Med Kjærlighed - med Sommervarmen.
 
 <text id="winther2018082624">
 <head>
-    <title><num>23.</num>Til min velvilligste Læserinde</title>
-    <toctitle><num>23.</num>Til min velvilligste Læserinde</toctitle>
-    <indextitle>Til min velvilligste Læserinde</indextitle>
-    <linktitle>Til min velvilligste Læserinde</linktitle>
-    <firstline>Min Flugt var aldrig kjæk og høi</firstline>
-    <source pages="71-74"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>23.</num>Til min velvilligste Læserinde</title>
+  <toctitle><num>23.</num>Til min velvilligste Læserinde</toctitle>
+  <indextitle>Til min velvilligste Læserinde</indextitle>
+  <linktitle>Til min velvilligste Læserinde</linktitle>
+  <firstline>Min Flugt var aldrig kjæk og høi</firstline>
+  <source pages="71-74"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1830,13 +1828,13 @@ Fuldtroe Ledsagerinde!
 
 <text id="winther2018082625">
 <head>
-    <title><num>24.</num>Af et Brev</title>
-    <toctitle><num>24.</num>Af et Brev</toctitle>
-    <indextitle>Af et Brev</indextitle>
-    <linktitle>Af et Brev</linktitle>
-    <firstline>Som en Trækfugl, der forsinket</firstline>
-    <source pages="75-77"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>24.</num>Af et Brev</title>
+  <toctitle><num>24.</num>Af et Brev</toctitle>
+  <indextitle>Af et Brev</indextitle>
+  <linktitle>Af et Brev</linktitle>
+  <firstline>Som en Trækfugl, der forsinket</firstline>
+  <source pages="75-77"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1920,26 +1918,26 @@ Kom fra Hjertet, - hvor det brænder!
 
 <section>
 <head>
-    <title>Blandede Vers</title>
+  <title>Blandede Vers</title>
 </head>
 <content>
 
 <section level="2">
 <head>
-    <title>Digte til min Datter</title>
+  <title>Digte til min Datter</title>
 </head>
 <content>
 
 <text id="winther2018082626">
 <head>
-    <title><num>1.</num>I hendes Stambog</title>
-    <toctitle><num>1.</num>I hendes Stambog</toctitle>
-    <indextitle>I hendes Stambog</indextitle>
-    <linktitle>I hendes Stambog</linktitle>
-    <subtitle>1857</subtitle>
-    <firstline>Gid Livet Dig maa vorde et deiligt Juletræ</firstline>
-    <source pages="81-82"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>1.</num>I hendes Stambog</title>
+  <toctitle><num>1.</num>I hendes Stambog</toctitle>
+  <indextitle>I hendes Stambog</indextitle>
+  <linktitle>I hendes Stambog</linktitle>
+  <subtitle>1857</subtitle>
+  <firstline>Gid Livet Dig maa vorde et deiligt Juletræ</firstline>
+  <source pages="81-82"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1968,17 +1966,17 @@ Der modnes i Evighedens Sommer!
 
 <text id="winther2018082627">
 <head>
-    <title><num>2.</num>Med en Broche, hvorpaa en Svale</title>
-    <toctitle><num>2.</num>Med en Broche, hvorpaa en Svale</toctitle>
-    <indextitle>Med en Broche, hvorpaa en Svale</indextitle>
-    <linktitle>Med en Broche, hvorpaa en Svale</linktitle>
-    <subtitle>
-        <line>(Fra hendes Moder)</line>
-        <line>1864</line>
-    </subtitle>
-    <firstline>I sagte Flugt sig Svalen svinger</firstline>
-    <source pages="83"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>2.</num>Med en Broche, hvorpaa en Svale</title>
+  <toctitle><num>2.</num>Med en Broche, hvorpaa en Svale</toctitle>
+  <indextitle>Med en Broche, hvorpaa en Svale</indextitle>
+  <linktitle>Med en Broche, hvorpaa en Svale</linktitle>
+  <subtitle>
+    <line>(Fra hendes Moder)</line>
+    <line>1864</line>
+  </subtitle>
+  <firstline>I sagte Flugt sig Svalen svinger</firstline>
+  <source pages="83"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1997,14 +1995,14 @@ Til Fred og Ro en Talisman.
 
 <text id="winther2018082628">
 <head>
-    <title><num>3.</num>Med et lille Smykke</title>
-    <toctitle><num>3.</num>Med et lille Smykke</toctitle>
-    <indextitle>Med et lille Smykke</indextitle>
-    <linktitle>Med et lille Smykke</linktitle>
-    <subtitle>1864</subtitle>
-    <firstline>Man siger: Lægedom der boer</firstline>
-    <source pages="84"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>3.</num>Med et lille Smykke</title>
+  <toctitle><num>3.</num>Med et lille Smykke</toctitle>
+  <indextitle>Med et lille Smykke</indextitle>
+  <linktitle>Med et lille Smykke</linktitle>
+  <subtitle>1864</subtitle>
+  <firstline>Man siger: Lægedom der boer</firstline>
+  <source pages="84"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2031,14 +2029,14 @@ Du snart ei trængte meer til Læge!
 
 <text id="winther2018082629">
 <head>
-    <title><num>4.</num>Med Ludvig Holbergs Portrait</title>
-    <toctitle><num>4.</num>Med Ludvig Holbergs Portrait</toctitle>
-    <indextitle>Med Ludvig Holbergs Portrait</indextitle>
-    <linktitle>Med Ludvig Holbergs Portrait</linktitle>
-    <firstline>Et Billed bringes Dig idag</firstline>
-    <source pages="85"/>
-    <keywords>holberg</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>4.</num>Med Ludvig Holbergs Portrait</title>
+  <toctitle><num>4.</num>Med Ludvig Holbergs Portrait</toctitle>
+  <indextitle>Med Ludvig Holbergs Portrait</indextitle>
+  <linktitle>Med Ludvig Holbergs Portrait</linktitle>
+  <firstline>Et Billed bringes Dig idag</firstline>
+  <source pages="85"/>
+  <keywords>holberg</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2065,14 +2063,14 @@ En dygtig Latter er saa sund!
 
 <text id="winther2018082630">
 <head>
-    <title><num>5.</num>Med Emil Aarestrups Digte</title>
-    <toctitle><num>5.</num>Med Emil Aarestrups Digte</toctitle>
-    <indextitle>Med Emil Aarestrups Digte</indextitle>
-    <linktitle>Med Emil Aarestrups Digte</linktitle>
-    <firstline>Det fryser nu, her er saa koldt</firstline>
-    <source pages="86-87"/>
-    <keywords>aarestrup</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>5.</num>Med Emil Aarestrups Digte</title>
+  <toctitle><num>5.</num>Med Emil Aarestrups Digte</toctitle>
+  <indextitle>Med Emil Aarestrups Digte</indextitle>
+  <linktitle>Med Emil Aarestrups Digte</linktitle>
+  <firstline>Det fryser nu, her er saa koldt</firstline>
+  <source pages="86-87"/>
+  <keywords>aarestrup</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2116,13 +2114,13 @@ Langt mere sød end svenske Banco.
 
 <text id="winther2018082631">
 <head>
-    <title><num>6.</num>Med et Etui</title>
-    <toctitle><num>6.</num>Med et Etui</toctitle>
-    <indextitle>Med et Etui</indextitle>
-    <linktitle>Med et Etui</linktitle>
-    <firstline>En broget Fugl fra Østerlide</firstline>
-    <source pages="88"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title><num>6.</num>Med et Etui</title>
+  <toctitle><num>6.</num>Med et Etui</toctitle>
+  <indextitle>Med et Etui</indextitle>
+  <linktitle>Med et Etui</linktitle>
+  <firstline>En broget Fugl fra Østerlide</firstline>
+  <source pages="88"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2152,16 +2150,16 @@ Til Livets Vandringsgang.''
 
 <text id="winther2018082632">
 <head>
-    <title>Til Thora Petersen</title>
-    <toctitle>Til Thora Petersen, 1870</toctitle>
-    <indextitle>Til Thora Petersen, 1870</indextitle>
-    <subtitle>Den 18de August 1870</subtitle>
-    <firstline>Jeg sendte Dig fordum i Alvor og Skjers</firstline>
-    <source pages="89-90"/>
-    <dates>
-        <event>1870-08-18</event>
-    </dates>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Til Thora Petersen</title>
+  <toctitle>Til Thora Petersen, 1870</toctitle>
+  <indextitle>Til Thora Petersen, 1870</indextitle>
+  <subtitle>Den 18de August 1870</subtitle>
+  <firstline>Jeg sendte Dig fordum i Alvor og Skjers</firstline>
+  <source pages="89-90"/>
+  <dates>
+    <event>1870-08-18</event>
+  </dates>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2210,17 +2208,17 @@ Som han var min Ven, - o, vær Du min Veninde!
 
 <text id="winther2018082633">
 <head>
-    <title>Til Thora Petersen</title>
-    <toctitle>Til Samme, 1871</toctitle>
-    <indextitle>Til Thora Petersen, 1871</indextitle>
-    <subtitle>Den 18de August 1871</subtitle>
-    <firstline>Af Aarets Dage er der faa saa glade</firstline>
-    <source pages="91"/>
-    <dates>
-        <event>1871-08-18</event>
-    </dates>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Til Thora Petersen</title>
+  <toctitle>Til Samme, 1871</toctitle>
+  <indextitle>Til Thora Petersen, 1871</indextitle>
+  <subtitle>Den 18de August 1871</subtitle>
+  <firstline>Af Aarets Dage er der faa saa glade</firstline>
+  <source pages="91"/>
+  <dates>
+    <event>1871-08-18</event>
+  </dates>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2247,17 +2245,17 @@ For Dig en Fremtid til et Fredens Tempel!
 
 <text id="winther2018082634">
 <head>
-    <title>Til Constantin Hansen</title>
-    <toctitle>Til Constantin Hansen, 1867</toctitle>
-    <indextitle>Til Constantin Hansen, 1867</indextitle>
-    <subtitle>Den 3die November 1867</subtitle>
-    <firstline>Mørk var Natten, tung var Skyen</firstline>
-    <source pages="92-95"/>
-    <dates>
-        <event>1867-11-03</event>
-    </dates>
-    <keywords>hansenc</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Til Constantin Hansen</title>
+  <toctitle>Til Constantin Hansen, 1867</toctitle>
+  <indextitle>Til Constantin Hansen, 1867</indextitle>
+  <subtitle>Den 3die November 1867</subtitle>
+  <firstline>Mørk var Natten, tung var Skyen</firstline>
+  <source pages="92-95"/>
+  <dates>
+    <event>1867-11-03</event>
+  </dates>
+  <keywords>hansenc</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2342,13 +2340,13 @@ Som Beundrere - og <w>Venner!</w>
 
 <text id="winther2018082635">
 <head>
-    <title>Hilsener</title>
-    <subtitle>(Brudstykke af et Brev fra Paris til Const. Hansen)</subtitle>
-    <toctitle>Hilsener. (Af et Brev til Samme)</toctitle>
-    <firstline>Jeg beder Dem at hilse hjemme</firstline>
-    <source pages="96-97"/>
-    <keywords>hansenc</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Hilsener</title>
+  <subtitle>(Brudstykke af et Brev fra Paris til Const. Hansen)</subtitle>
+  <toctitle>Hilsener. (Af et Brev til Samme)</toctitle>
+  <firstline>Jeg beder Dem at hilse hjemme</firstline>
+  <source pages="96-97"/>
+  <keywords>hansenc</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2402,17 +2400,17 @@ Nei, lad ham drømme - lad ham drømme!
 
 <text id="winther2018082636">
 <head>
-    <title>Til Constantin Hansen</title>
-    <subtitle>Den 3die November 1869</subtitle>
-    <toctitle>Til Samme, 1869</toctitle>
-    <indextitle>Til Constantin Hansen, 1869</indextitle>
-    <firstline>Hen over de slumrende Blomsters Grave</firstline>
-    <source pages="98-99"/>
-    <dates>
-        <event>1869-11-03</event>
-    </dates>
-    <keywords>hansenc</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Til Constantin Hansen</title>
+  <subtitle>Den 3die November 1869</subtitle>
+  <toctitle>Til Samme, 1869</toctitle>
+  <indextitle>Til Constantin Hansen, 1869</indextitle>
+  <firstline>Hen over de slumrende Blomsters Grave</firstline>
+  <source pages="98-99"/>
+  <dates>
+    <event>1869-11-03</event>
+  </dates>
+  <keywords>hansenc</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2452,13 +2450,13 @@ Fra første Januar til sidste December!
 
 <text id="winther2018082637">
 <head>
-    <title>Tak for en Indbydelse</title>
-    <subtitle>(Til Const. Hansen)</subtitle>
-    <toctitle>Tak for en Indbydelse. (Til Samme)</toctitle>
-    <firstline>Du, som Intet vilde heller</firstline>
-    <source pages="100-101"/>
-    <keywords>hansenc</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Tak for en Indbydelse</title>
+  <subtitle>(Til Const. Hansen)</subtitle>
+  <toctitle>Tak for en Indbydelse. (Til Samme)</toctitle>
+  <firstline>Du, som Intet vilde heller</firstline>
+  <source pages="100-101"/>
+  <keywords>hansenc</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2494,15 +2492,15 @@ Men sov aldrig Rusen ud!
 
 <text id="winther2018082638">
 <head>
-    <title>Til F. L. Liebenberg</title>
-    <toctitle>Til F. L. Liebenberg, 1871</toctitle>
-    <subtitle>Den 16de August 1871</subtitle>
-    <firstline>Hvad tør man ønske Dem idag?</firstline>
-    <source pages="102-103"/>
-    <dates>
-        <written>1871-08-16</written>
-    </dates>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Til F. L. Liebenberg</title>
+  <toctitle>Til F. L. Liebenberg, 1871</toctitle>
+  <subtitle>Den 16de August 1871</subtitle>
+  <firstline>Hvad tør man ønske Dem idag?</firstline>
+  <source pages="102-103"/>
+  <dates>
+    <written>1871-08-16</written>
+  </dates>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2535,11 +2533,11 @@ Mod mig! - jeg veed, den mig ei glipper.
 
 <text id="winther1999070718">
 <head>
-    <title>Juli Maaned</title>
-    <subtitle>1868</subtitle>
-    <firstline>Aarets rige, varme Hjerte!</firstline>
-    <source pages="104-105"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Juli Maaned</title>
+  <subtitle>1868</subtitle>
+  <firstline>Aarets rige, varme Hjerte!</firstline>
+  <source pages="104-105"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2587,15 +2585,15 @@ Aarets rige, varme Hjerte!
 
 <text id="winther2018082640">
 <head>
-    <title>Af Reinekes Memoirer</title>
-    <toctitle>Af Reinekes Memoirer, tredie Fragm.</toctitle>
-    <subtitle>Tredie Fragment</subtitle>
-    <firstline>Det var en deilig Sommerdag</firstline>
-    <notes>
-        <note>* See <a poem="winther2018081948">første og andet Fragment</a> i Nye Digtninger 1853.</note>
-    </notes>
-    <source pages="106-114"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Af Reinekes Memoirer</title>
+  <toctitle>Af Reinekes Memoirer, tredie Fragm.</toctitle>
+  <subtitle>Tredie Fragment</subtitle>
+  <firstline>Det var en deilig Sommerdag</firstline>
+  <notes>
+    <note>* See <a poem="winther2018081948">første og andet Fragment</a> i Nye Digtninger 1853.</note>
+  </notes>
+  <source pages="106-114"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2814,10 +2812,10 @@ Maaskee som ellers lod sig fange.''
 
 <text id="winther2018082641">
 <head>
-    <title>Et Landskab</title>
-    <firstline>Jeg sidder her og seer</firstline>
-    <source pages="115-118"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Et Landskab</title>
+  <firstline>Jeg sidder her og seer</firstline>
+  <source pages="115-118"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2901,11 +2899,11 @@ Vil man vel nok erfare.
 
 <text id="winther1999070719">
 <head>
-    <title>En Smagssag</title>
-    <firstline>Jeg tør og vil mig aldrig rose</firstline>
-    <source pages="119-122"/>
-    <keywords>heibergjl</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>En Smagssag</title>
+  <firstline>Jeg tør og vil mig aldrig rose</firstline>
+  <source pages="119-122"/>
+  <keywords>heibergjl</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2998,11 +2996,11 @@ De samme To - i Stort og Smaat.
 
 <text id="winther1999070720">
 <head>
-    <title>Fransk og Dansk</title>
-    <subtitle>Paris 1869</subtitle>
-    <firstline>Nei, dette Maal, som her de taler</firstline>
-    <source pages="123-124"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Fransk og Dansk</title>
+  <subtitle>Paris 1869</subtitle>
+  <firstline>Nei, dette Maal, som her de taler</firstline>
+  <source pages="123-124"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3041,10 +3039,10 @@ Fremgaaer et Hjertes bedste Sang!
 
 <text id="winther1999070721">
 <head>
-    <title>Polka</title>
-    <firstline>Læg Maalen bort, lad Rokken staae</firstline>
-    <source pages="125-126"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Polka</title>
+  <firstline>Læg Maalen bort, lad Rokken staae</firstline>
+  <source pages="125-126"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3098,10 +3096,10 @@ Og rødmed i hans Arme.
 
 <text id="winther2018082645">
 <head>
-    <title>Et Besøg</title>
-    <firstline>Jeg var alene, det var Nat</firstline>
-    <source pages="127-128"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Et Besøg</title>
+  <firstline>Jeg var alene, det var Nat</firstline>
+  <source pages="127-128"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3158,10 +3156,10 @@ Og lod mig ene med min Smerte.
 
 <text id="winther1999070722">
 <head>
-    <title>Smaa Riim</title>
-    <firstline>I Taalmod maa sig øve</firstline>
-    <source pages="129-130"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Smaa Riim</title>
+  <firstline>I Taalmod maa sig øve</firstline>
+  <source pages="129-130"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3211,14 +3209,14 @@ Gjør Gavn - og driv saa!
 
 <text id="winther2018082647">
 <head>
-    <title>Mylord til Fruen</title>
-    <subtitle>Den 7de December 1861</subtitle>
-    <firstline>Med hvilket Navn skal jeg Dig kalde?</firstline>
-    <source pages="131-132"/>
-    <dates>
-        <written>1861-12-07</written>
-    </dates>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Mylord til Fruen</title>
+  <subtitle>Den 7de December 1861</subtitle>
+  <firstline>Med hvilket Navn skal jeg Dig kalde?</firstline>
+  <source pages="131-132"/>
+  <dates>
+    <written>1861-12-07</written>
+  </dates>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3264,17 +3262,17 @@ Jeg lægger ydmygt for din Fod
 En Flacon, som ret skal være god. - -
 Tillad mig saa din Haand at kysse.
 Jeg er din Mylord, kaldet
-<nonum><small><right>Mysse.</right></small></nonum>
+<nonum><right><small>Mysse.</small></right></nonum>
 </poetry>
 </body>
 </text>
 
 <text id="winther2018082648">
 <head>
-    <title>Om Mylord</title>
-    <firstline>Nu er han død, den smukke, kloge Hund</firstline>
-    <source pages="133-134"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Om Mylord</title>
+  <firstline>Nu er han død, den smukke, kloge Hund</firstline>
+  <source pages="133-134"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3318,16 +3316,16 @@ Tør Du bebreide mig <w>de</w> Vers med Ret?
 
 <section>
 <head>
-    <title>Rimede Fortællinger</title>
+  <title>Rimede Fortællinger</title>
 </head>
 <content>
 
 <text id="winther2018082649">
 <head>
-    <title>Onkels Lise</title>
-    <firstline>Decemberstormen Sneen feied</firstline>
-    <source pages="137-155"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Onkels Lise</title>
+  <firstline>Decemberstormen Sneen feied</firstline>
+  <source pages="137-155"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3788,10 +3786,10 @@ Saa slog han mig sin Haand i Haanden:
 
 <text id="winther2018082650">
 <head>
-    <title>En Sanger</title>
-    <firstline>I Elverhøi indtagen</firstline>
-    <source pages="156-162"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>En Sanger</title>
+  <firstline>I Elverhøi indtagen</firstline>
+  <source pages="156-162"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3951,11 +3949,11 @@ Men Sangen aldrig ham forlod.
 
 <text id="winther2018082651">
 <head>
-    <title>Konge-Egen</title>
-    <subtitle>En Fortælling</subtitle>
-    <firstline>Al Drosselslægten qviddred</firstline>
-    <source pages="163-173"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Konge-Egen</title>
+  <subtitle>En Fortælling</subtitle>
+  <firstline>Al Drosselslægten qviddred</firstline>
+  <source pages="163-173"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4224,10 +4222,10 @@ Det skal han faae, - <i>parole d'honneur!</i>''
 
 <text id="winther2018082652">
 <head>
-    <title>C. A. Lang &amp; Co.</title>
-    <firstline>Den rige Sommersol bestraalte</firstline>
-    <source pages="174-186"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>C. A. Lang &amp; Co.</title>
+  <firstline>Den rige Sommersol bestraalte</firstline>
+  <source pages="174-186"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4553,10 +4551,10 @@ Til Paukers og Trompeters Klang.
 
 <text id="winther2018082653">
 <head>
-    <title>En skummel Begivenhed</title>
-    <firstline>Tolv Slag der lød fra Skoleflokken</firstline>
-    <source pages="187-208"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>En skummel Begivenhed</title>
+  <firstline>Tolv Slag der lød fra Skoleflokken</firstline>
+  <source pages="187-208"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5119,10 +5117,10 @@ Der gaaer min Huusbond, Major <w>Grant!</w>''
 
 <text id="winther2018082654">
 <head>
-    <title>En Forlover</title>
-    <firstline>Fra lange Reiser hjem han kom</firstline>
-    <source pages="209-213"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>En Forlover</title>
+  <firstline>Fra lange Reiser hjem han kom</firstline>
+  <source pages="209-213"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5236,20 +5234,20 @@ Forynget - ved en Vugge.
 
 <section level="2" id="winther2018090101">
 <head>
-    <title>To Ord</title>
-    <notes>
-        <note>* Een af mine Venner, hvem jeg forelæste den rimede Fortælling ,,To Ord'', sagde mig, at han for lang Tid siden havde læst en Roman eller Novelle af lignende Indhold, kun at Tiden, Lokaliteterne, Costumet o. s. v. vare andre. - Naar jeg nu herved erklærer, at jeg ikke har kjendt hiint Værk, men at det her behandlede Sujet i Eet og Alt er min egen Opfindelse, saa har jeg - mener jeg - skjellig Grund til at antage, at man vil troe mig paa mit Ord.</note>
-    </notes>
-    <source pages="214-241"/>
+  <title>To Ord</title>
+  <notes>
+    <note>* Een af mine Venner, hvem jeg forelæste den rimede Fortælling ,,To Ord'', sagde mig, at han for lang Tid siden havde læst en Roman eller Novelle af lignende Indhold, kun at Tiden, Lokaliteterne, Costumet o. s. v. vare andre. - Naar jeg nu herved erklærer, at jeg ikke har kjendt hiint Værk, men at det her behandlede Sujet i Eet og Alt er min egen Opfindelse, saa har jeg - mener jeg - skjellig Grund til at antage, at man vil troe mig paa mit Ord.</note>
+  </notes>
+  <source pages="214-241"/>
 </head>
 <content>
 
 <text id="winther2018082655">
 <head>
-    <title>Paa et Bal</title>
-    <firstline>Som Virak let mod Tempelbuer</firstline>
-    <source pages="214-217"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Paa et Bal</title>
+  <firstline>Som Virak let mod Tempelbuer</firstline>
+  <source pages="214-217"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5333,10 +5331,10 @@ Tilpas i Valsen begge To.
 
 <text id="winther2018082656">
 <head>
-    <title>Hos Pæhtau</title>
-    <firstline>Tilbords sad der to unge Venner</firstline>
-    <source pages="218-220"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Hos Pæhtau</title>
+  <firstline>Tilbords sad der to unge Venner</firstline>
+  <source pages="218-220"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5415,10 +5413,10 @@ Før vi tør mødes her igjen.''
 
 <text id="winther2018082657">
 <head>
-    <title>Fylla</title>
-    <firstline>Hun heised alle sine Klude</firstline>
-    <source pages="221-226"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Fylla</title>
+  <firstline>Hun heised alle sine Klude</firstline>
+  <source pages="221-226"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5572,10 +5570,10 @@ Og det var Fyllas sidste Spor.
 
 <text id="winther2018082658">
 <head>
-    <title>Paa Øen</title>
-    <firstline>Til Ro den vilde Havets Vove</firstline>
-    <source pages="227-235"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Paa Øen</title>
+  <firstline>Til Ro den vilde Havets Vove</firstline>
+  <source pages="227-235"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5804,10 +5802,10 @@ Han førte dem saa bort derfra.
 
 <text id="winther2018082659">
 <head>
-    <title>I Kjøbenhavn</title>
-    <firstline>Hun paa sin Moders Fløiels Sæder</firstline>
-    <source pages="236-241"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>I Kjøbenhavn</title>
+  <firstline>Hun paa sin Moders Fløiels Sæder</firstline>
+  <source pages="236-241"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>

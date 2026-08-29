@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="kaalund" status="incomplete" type="poetry">
 <workhead>
-   <title>Andre digte</title>
-   <year>?</year>
-   <quality>korrektur1</quality>
-   <source id="1898" facsimile="130023270839_color" facsimile-pages-num="462" facsimile-pages-offset="12">H. V. Kaalund: <i>Samlede Digte</i>, Otto Borchsenius (red.), Gyldendalske Boghandels Forlag, Kbh., 1898.</source>
-   <!-- Digtene heri, er første gang udgivet med Samlede Digte (1898), så når denne tilføjes, kan andre.xml nedlægges. Husk dog, at overføre id'er. -->
+  <title>Andre digte</title>
+  <quality>korrektur1</quality>
+  <source id="1898" facsimile="130023270839_color" facsimile-pages-num="462" facsimile-pages-offset="12">H. V. Kaalund: <i>Samlede Digte</i>, Otto Borchsenius (red.), Gyldendalske Boghandels Forlag, Kbh., 1898.</source>
+  <!-- Digtene heri, er første gang udgivet med Samlede Digte (1898), så når denne tilføjes, kan andre.xml nedlægges. Husk dog, at overføre id'er. -->
 </workhead>
 <workbody>
 
 <text id="kaalund2001061702">
 <head>
-   <title>Eventyret</title>
-   <subtitle>(Til en Radering af Retsch: Pigen med Hexemasken)</subtitle>
-   <firstline>Lig en gammel tandløs Krykkemo'er</firstline>
-   <source in="1898" pages="49-50"/>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Eventyret</title>
+  <subtitle>(Til en Radering af Retsch: Pigen med Hexemasken)</subtitle>
+  <firstline>Lig en gammel tandløs Krykkemo'er</firstline>
+  <source in="1898" pages="49-50"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -77,13 +75,13 @@ rige Skjønhed Ansigt tæt til Ansigt.
 
 <text id="kaalund2001062102">
 <head>
-   <title>I Staden og paa Landet</title>
-   <subtitle>(For Børn)</subtitle>
-   <toctitle>I Staden og paa Landet</toctitle>
-   <indextitle>I Staden og paa Landet</indextitle>
-   <firstline>Prægtigt det er dog at bo i Staden</firstline>
-   <source in="1898" pages="83-85"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>I Staden og paa Landet</title>
+  <subtitle>(For Børn)</subtitle>
+  <toctitle>I Staden og paa Landet</toctitle>
+  <indextitle>I Staden og paa Landet</indextitle>
+  <firstline>Prægtigt det er dog at bo i Staden</firstline>
+  <source in="1898" pages="83-85"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -162,10 +160,10 @@ fik jeg en Mark og en straatækt Hytte
 
 <text id="kaalund2001062601">
 <head>
-   <title>St. Johannes</title>
-   <firstline>St. Johannes, Jesu fromme Ven</firstline>
-   <source in="1898" pages="109"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>St. Johannes</title>
+  <firstline>St. Johannes, Jesu fromme Ven</firstline>
+  <source in="1898" pages="109"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -199,15 +197,14 @@ for hans Storhed i det lille Kryb.''
 </body>
 </text>
 
-
 <text id="kaalund2001070120">
 <head>
-   <title>Til Kong Frederik den Syvende</title>
-   <subtitle>(Ved hans Thronbestigelse)</subtitle>
-   <firstline>Du Drot, som nu throner i høje Sale</firstline>
-   <source in="1898" pages="165-172"/>
-   <quality>korrektur1,kilde,side</quality>
-   <keywords>frederik7</keywords>
+  <title>Til Kong Frederik den Syvende</title>
+  <subtitle>(Ved hans Thronbestigelse)</subtitle>
+  <firstline>Du Drot, som nu throner i høje Sale</firstline>
+  <source in="1898" pages="165-172"/>
+  <quality>korrektur1,kilde,side</quality>
+  <keywords>frederik7</keywords>
 </head>
 <body>
 <poetry>
@@ -409,14 +406,14 @@ Ja, Herre Konge, det ske! det ske!
 
 <text id="kaalund2001061301">
 <head>
-   <title>Til min Hustru!</title>
-   <firstline>Hvis jeg har endnu tilbage</firstline>
-   <!-- Teksten følger Samlede Digte (1898), hvor den er indsat som indledning til _Et Efteraar_. Måske dette fra en senere udgave af sidstnævnte. -->
-   <source in="1898" pages="245"/>
-   <notes>
-      <note>Det omtalte digt <xref poem="kaalund2001061303"/> findes i <a work="kaalund/1858"><i>Et Foraar</i></a>.</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title>Til min Hustru!</title>
+  <firstline>Hvis jeg har endnu tilbage</firstline>
+  <!-- Teksten følger Samlede Digte (1898), hvor den er indsat som indledning til _Et Efteraar_. Måske dette fra en senere udgave af sidstnævnte. -->
+  <source in="1898" pages="245"/>
+  <notes>
+    <note>Det omtalte digt <xref poem="kaalund2001061303"/> findes i <a work="kaalund/1858"><i>Et Foraar</i></a>.</note>
+  </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -440,7 +437,7 @@ Ja, Herre Konge, det ske! det ske!
     Dig tilhører helt mit Liv,
     min beskedne, stille Viv!
 
-<nonum><i>Vridsløselille i Julen 1877.</i></nonum>    
+<nonum><i>Vridsløselille i Julen 1877.</i></nonum>
 
 <nonum><right><b>H. V. K.</b></right></nonum>
 </poetry>

@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="shakespeare" status="incomplete" type="poetry">
 <workhead>
-   <title>Andre digte</title>
-   <year>?</year>
-   <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+  <title>Andre digte</title>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
 <text id="shakespeare2019010901">
 <head>
-   <title>Funeral Song</title>
-   <firstline>Fear no more the heat o' the sun</firstline>
-   <notes>
-       <note>Fra <i>Cymbeline</i>, Akt IV, Scene 2.</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title>Funeral Song</title>
+  <firstline>Fear no more the heat o' the sun</firstline>
+  <notes>
+    <note>Fra <i>Cymbeline</i>, Akt IV, Scene 2.</note>
+  </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -53,19 +50,19 @@ And renowned be thy grave.
 
 <text id="shakespeare2019011001">
 <head>
-   <title>Willow Song</title>
-   <firstline>The poor soul sat sighing by a sycamore tree</firstline>
-   <notes>
-       <note>Desdemonas sang fra <i>Othello</i>, Akt IV, Scene 3.</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title>Willow Song</title>
+  <firstline>The poor soul sat sighing by a sycamore tree</firstline>
+  <notes>
+    <note>Desdemonas sang fra <i>Othello</i>, Akt IV, Scene 3.</note>
+  </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
 The poor soul sat sighing by a sycamore tree,
 (Sing all a green willow, willow willow willow,)
 With his hand in his bosom and his head upon his knee.
-(Oh willow, willow, willow 
+(Oh willow, willow, willow
 Shall be my garland.)
 
 He sighed in his singing and made a great moan...
@@ -87,11 +84,10 @@ Let nobody chide her, her scorns I approve...
 She was born to be false, and I to die for her love...
 
 Take this for my farewell and latest adieu...
-Write this on my tomb, that in love I was true...    
+Write this on my tomb, that in love I was true...
 </poetry>
 </body>
 </text>
-
 
 </workbody>
 </kalliopework>

@@ -1,16 +1,14 @@
-const { DOMParser, XMLSerializer } = require('xmldom');
-const { loadText } = require('../libs/helpers.js');
-const { entityMap } = require('./entities.js');
+import {
+  DOMParser,
+  XMLSerializer,
+  onWarningStopParsing,
+} from '@xmldom/xmldom';
+import { loadText } from '../libs/helpers.js';
 
 const parseXMLFragment = xmlString => {
-  const s = xmlString.replace(/&([A-Za-z]+);/g, (m, e) => {
-    const replacement = entityMap[e];
-    if (replacement == null) {
-      throw `Unknown entity &${e};`;
-    }
-    return replacement;
-  });
-  return new DOMParser().parseFromString(s, 'text/xml');
+  return new DOMParser({
+    onError: onWarningStopParsing,
+  }).parseFromString(xmlString, 'text/xml');
 };
 
 const loadXMLDoc = filename => {
@@ -138,6 +136,48 @@ const safeGetInnerXML = element => {
     .replace('<' + t + '/>', '');
 };
 
+const identifierAllowlist = Object.freeze({
+  workhead: ['wikidata', 'dbc-work', 'openlibrary-work', 'dansklitteraturshistorie-lex-dk', 'runeberg-book'],
+  source: ['wikidata', 'kb-alma', 'dbc-pid', 'openlibrary-edition'],
+  picture: ['wikidata', 'smk', 'kid'],
+  museum: ['wikidata'],
+});
+
+const safeGetInnerXMLWithout = (element, excludedTags) => {
+  if (element == null) {
+    return null;
+  }
+  const excluded = new Set(excludedTags);
+  return Array.from(element.childNodes)
+    .filter(child => child.nodeType !== 1 || !excluded.has(child.tagName))
+    .map(child => new XMLSerializer().serializeToString(child))
+    .join('');
+};
+
+const getIdentifiers = (element, allowedIds = ['wikidata']) => {
+  const identifiersElement = getChildByTagName(element, 'identifiers');
+  if (identifiersElement == null) {
+    return {};
+  }
+  const allowed = new Set(allowedIds);
+  const identifiers = {};
+  for (const child of Array.from(identifiersElement.childNodes)) {
+    if (child.nodeType !== 1) {
+      continue;
+    }
+    if (!allowed.has(child.tagName)) {
+      throw new Error(
+        `<${element.tagName}> har en ikke-tilladt identifikator <${child.tagName}>.`,
+      );
+    }
+    const value = child.textContent.trim();
+    if (value.length > 0) {
+      identifiers[child.tagName] = value;
+    }
+  }
+  return identifiers;
+};
+
 const safeGetAttr = (element, attrName) => {
   if (element && element.hasAttribute(attrName)) {
     return element.getAttribute(attrName);
@@ -162,7 +202,7 @@ const _sortBySourceOrder = (a, b) => {
   }
 };
 
-module.exports = {
+export {
   loadXMLDoc,
   safeGetText,
   safeGetAttr,
@@ -177,4 +217,7 @@ module.exports = {
   tagName,
   safeGetOuterXML,
   safeGetInnerXML,
+  safeGetInnerXMLWithout,
+  getIdentifiers,
+  identifierAllowlist,
 };

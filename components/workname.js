@@ -1,32 +1,24 @@
-// @flow
-import React, { useContext } from 'react';
-import type { Work, Lang } from '../common/types.js';
+import { useContext } from 'react';
 import CommonData from '../common/commondata.js';
-import _ from '../common/translations.js';
+import Dates from '../common/dates.js';
 import LangContext from '../common/LangContext.js';
+import _ from '../common/translations.js';
+import { formattedYear } from '../components/formatteddate.js';
 
-type WorkNameProps = {
-  work: Work,
-  cursive?: boolean,
-  useTitle?: 'title' | 'toctitle' | 'linktitle' | 'breadcrumbtitle',
-};
-
-const WorkName = ({
-  work,
-  cursive = false,
-  useTitle = 'title',
-}: WorkNameProps) => {
+const WorkName = ({ work, cursive = false, useTitle = 'title' }) => {
   const { year } = work;
-  var titleTranslated: string = work[useTitle];
+  var titleTranslated = work[useTitle];
   const lang = useContext(LangContext);
 
   if (work.id == 'andre') {
     titleTranslated = _('Andre digte', lang);
+  } else if (work.virtualType === 'anthology' || work.id === 'antologier') {
+    titleTranslated = _('Tekster i andre udgivelser', lang);
   }
   let titlePart = <span>{titleTranslated}</span>;
   let yearPart = null;
-  if (year != null && year !== '?') {
-    yearPart = <span>({year})</span>;
+  if (year != null) {
+    yearPart = <span>({formattedYear(year, lang)})</span>;
   }
 
   const parts = [titlePart, yearPart].map((p, i) => {
@@ -62,11 +54,11 @@ const WorkName = ({
 
 export default WorkName;
 
-export function workTitleString(work: Work): string {
-  const { title, year } = work;
-  let yearPart = '';
-  if (year != null && year !== '?') {
-    yearPart = ` (${year})`;
-  }
-  return title + yearPart;
+export function workTitleString(work, lang = 'da') {
+  const { year } = work;
+  const title =
+    work.virtualType === 'anthology' || work.id === 'antologier'
+      ? _('Tekster i andre udgivelser', lang)
+      : work.title;
+  return Dates.formatTitleAndYear(title, year, lang);
 }

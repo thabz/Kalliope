@@ -1,31 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1593" author="vedel" status="complete" type="poetry">
 <workhead>
-    <title>Siu Gudelige Penitentze Psalmer</title>
-    <year>1593</year>
-    <notes>
-        <note>For læsbarhedens skyld benyttes indledende J i transkriptionen fra fraktur til latinsk skrift.</note>
-        <note>Teksten følger Anders Sørensen Vedel: <i>Siu Gudelige Penitentze Psalmer</i>, Hans Stockelman, Kbh., 1593.</note>
-            
-    </notes>
-    <!-- The Penitential Psalms or Psalms of Confession, so named in Cassiodorus's commentary of the 6th century AD, are the Psalms 6, 31, 37, 50, 101, 129, and 142. -->
-    <pictures>
-        <picture src="1593-p1.jpg">Titelbladet til <i>Siu Gudelige Penitentze Psalmer</i> (1593) lyder ,,Siu Gudelige / Peniteentze / Psalmer // Som ere skreffne aff den høylærde oc naffnkundige / Francisco Petrarca Florentino, mere end for tu hundrede Aar / forleden // mit vdi Paffuedommet. / Nu nylige fordansket. // Anno / M. D. XCIII.''.</picture>
-    </pictures>
-    <source facsimile="1593.pdf" facsimile-pages-num="61" facsimile-pages-offset="6">Anders Sørensen Vedel: <i>Siu Gudelige Penitentze Psalmer</i>, Hans Stockelman, Kbh., 1593.</source>
+  <title>Siu Gudelige Penitentze Psalmer</title>
+  <year>1593</year>
+  <notes>
+    <note>For læsbarhedens skyld benyttes indledende J i transkriptionen fra fraktur til latinsk skrift.</note>
+
+  </notes>
+  <!-- The Penitential Psalms or Psalms of Confession, so named in Cassiodorus's commentary of the 6th century AD, are the Psalms 6, 31, 37, 50, 101, 129, and 142. -->
+  <pictures>
+    <picture src="1593-p1.jpg">Titelbladet til <i>Siu Gudelige Penitentze Psalmer</i> (1593) lyder ,,Siu Gudelige / Peniteentze / Psalmer // Som ere skreffne aff den høylærde oc naffnkundige / Francisco Petrarca Florentino, mere end for tu hundrede Aar / forleden // mit vdi Paffuedommet. / Nu nylige fordansket. // Anno / M. D. XCIII.''.</picture>
+  </pictures>
+  <source facsimile="1593.pdf" facsimile-pages-num="61" facsimile-pages-offset="6">Anders Sørensen Vedel: <i>Siu Gudelige Penitentze Psalmer</i>, Hans Stockelman, Kbh., 1593.</source>
 </workhead>
 <workbody>
 
 <text id="vedel2020042701">
 <head>
-    <title>Den Første Psalme</title>
-    <firstline>Ah ieg elendige Menniske, at ieg haffuer fortørnit min Frelsere</firstline>
-    <notes>
-        <note>Gendigtning af Petrarcas latinske <xref type="translation" poem="petrarca2020042901"/>.</note>
-    </notes>
-    <source pages="2-10"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Den Første Psalme</title>
+  <notes>
+    <note>Gendigtning af Petrarcas latinske <xref type="translation" poem="petrarca2020042901"/>.</note>
+  </notes>
+  <source pages="2-10"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <prose font-size="small">
@@ -68,13 +65,12 @@ Dette Første Psalme er en ydmyg bekiendelse / i huilcken hand bekiender for Gud
 
 <text id="vedel2020042702">
 <head>
-    <title>Den Anden Psalme</title>
-    <firstline>Jeg vil paakalde haanom, som ieg haffuer fortørnit tilforn</firstline>
-    <notes>
-        <note>Gendigtning af Petrarcas latinske <xref type="translation" poem="petrarca2020042902"/>.</note>
-    </notes>
-    <source pages="10-16"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Den Anden Psalme</title>
+  <notes>
+    <note>Gendigtning af Petrarcas latinske <xref type="translation" poem="petrarca2020042902"/>.</note>
+  </notes>
+  <source pages="10-16"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <prose font-size="small">
@@ -108,13 +104,12 @@ DEnne Psalme er en ydmyg oc alvorlig Bøn / vdi huilcken hand priser Guds Naade 
 
 <text id="vedel2020042703">
 <head>
-    <title>Den Tredie Psalme</title>
-    <firstline>O HERRE forbarme dig offuer mig sorgfulde oc bedrøffude Syndere</firstline>
-    <notes>
-        <note>Gendigtning af Petrarcas latinske <xref type="translation" poem="petrarca2020042903"/>.</note>
-    </notes>
-    <source pages="16-21"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Den Tredie Psalme</title>
+  <notes>
+    <note>Gendigtning af Petrarcas latinske <xref type="translation" poem="petrarca2020042903"/>.</note>
+  </notes>
+  <source pages="16-21"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <prose font-size="small">
@@ -142,13 +137,12 @@ DEnne Psalme er it klagemaal / vdi huilcket hand klager offuer all den Anfecting
 
 <text id="vedel2020042704">
 <head>
-    <title>Den Fierde Psalme</title>
-    <firstline>O Gud, Jeg vil betencke oc opregne dine Velgierninger</firstline>
-    <notes>
-        <note>Gendigtning af Petrarcas latinske <xref type="translation" poem="petrarca2020042904"/>.</note>
-    </notes>
-    <source pages="21-29"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Den Fierde Psalme</title>
+  <notes>
+    <note>Gendigtning af Petrarcas latinske <xref type="translation" poem="petrarca2020042904"/>.</note>
+  </notes>
+  <source pages="21-29"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <prose font-size="small">
@@ -186,13 +180,12 @@ DEnne Fierde Psalme / Er en Tacksigelse / for alle de mangfoldige Velgierninger 
 
 <text id="vedel2020042705">
 <head>
-    <title>Den Femte Psalme</title>
-    <firstline>Mine Nætter drager ieg igennom vdi idel bedrøffuelse</firstline>
-    <notes>
-        <note>Gendigtning af Petrarcas latinske <xref type="translation" poem="petrarca2020042905"/>.</note>
-    </notes>
-    <source pages="30-33"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Den Femte Psalme</title>
+  <notes>
+    <note>Gendigtning af Petrarcas latinske <xref type="translation" poem="petrarca2020042905"/>.</note>
+  </notes>
+  <source pages="30-33"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <prose font-size="small">
@@ -218,13 +211,12 @@ DEnne Psalme er moxen eens met den Tredie. Thi han opregnes her / som tilforn / 
 
 <text id="vedel2020042706">
 <head>
-    <title>Den Siette Psalme</title>
-    <firstline>Mine Modstandere haffue slagit deris Vognborg omkring mig</firstline>
-    <notes>
-        <note>Gendigtning af Petrarcas latinske <xref type="translation" poem="petrarca2020042906"/>.</note>
-    </notes>
-    <source pages="33-38"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Den Siette Psalme</title>
+  <notes>
+    <note>Gendigtning af Petrarcas latinske <xref type="translation" poem="petrarca2020042906"/>.</note>
+  </notes>
+  <source pages="33-38"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <prose font-size="small">
@@ -242,7 +234,7 @@ HAnd klager atter vdi denne Siette Psalme / offuer sin egen forseelse oc Naturs 
 <num>9.</num>Der raadner den gamle skade allermest / der befrycter ieg mig / at ieg haffuer mit Banesaar / Ja den visse død vdi Henderne pa mig. HERRE / før Raad oc Lægedom der til / met det første.
 <num>10.</num>Thi du min kiere Frelsere leffuer / oc endog du saast alt dette aff den høye Himmel / saa tagde du dog stille / oc lodst dit taal her til. Thi det vaar min fortiente løn.
 <num>11.</num>Maa vel ske / du haffuer end vel selff metynck offuer mig / oc tilsteder dem icke / at de faa fremgang til at endeligen forderffue mig. Thi Døden lyder oc frycter ingen / vden dig / du Allmectige allene.
-<num>12.</num>Du skalt affuerie de de Blodgerige / som tørste effter min forderffuelse.Thi mit Haab er stort til dig. Du skalt frelse mig fra de wgudeligis Hender.
+<num>12.</num>Du skalt affuerie de Blodgerige / som tørste effter min forderffuelse.Thi mit Haab er stort til dig. Du skalt frelse mig fra de wgudeligis Hender.
 </prose>
 <prose font-size="small">
 Ære være Gud Fader / Søn / oc hellig Aand / som verit haffuer aff begyndelsen / oc nu er / altid oc euindelig / Amen.
@@ -252,13 +244,12 @@ HAnd klager atter vdi denne Siette Psalme / offuer sin egen forseelse oc Naturs 
 
 <text id="vedel2020042707">
 <head>
-    <title>Den Siuende Psalme</title>
-    <firstline>JEG tenckte at staa der ieg falt</firstline>
-    <notes>
-        <note>Gendigtning af Petrarcas latinske <xref type="translation" poem="petrarca2020042907"/>.</note>
-    </notes>
-    <source pages="38-46"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Den Siuende Psalme</title>
+  <notes>
+    <note>Gendigtning af Petrarcas latinske <xref type="translation" poem="petrarca2020042907"/>.</note>
+  </notes>
+  <source pages="38-46"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <prose font-size="small">
@@ -296,14 +287,14 @@ VDi denne Siuende Psalme siger hand / huad Aarsag der haffuer verit til hans man
 
 <text id="vedel2020042708">
 <head>
-    <title>En Gudelig Bøn</title>
-    <subtitle>til at bede Gud om Syndernis forladelse.</subtitle>
-    <firstline>O BArmhiertige Naadefulde trofaste Gud</firstline>
-    <notes>
-        <note>Linjeskift indsat for læsebarhedens skyld.</note>
-    </notes>
-    <source pages="47-50"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>En Gudelig Bøn</title>
+  <subtitle>til at bede Gud om Syndernis forladelse.</subtitle>
+  <firstline>O BArmhiertige Naadefulde trofaste Gud</firstline>
+  <notes>
+    <note>Linjeskift indsat for læsebarhedens skyld.</note>
+  </notes>
+  <source pages="47-50"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>

@@ -1,12 +1,6 @@
-// @flow
-
 import * as React from 'react';
 
-type StackProps = {
-  spacing?: string,
-  children: React.Node,
-};
-const Stack = (props: StackProps) => {
+const Stack = (props) => {
   let { children, spacing } = { spacing: '15px', ...props };
 
   const childrenArray = React.Children.toArray(children);

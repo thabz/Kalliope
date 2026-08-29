@@ -1,24 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="wivallius" status="incomplete" type="poetry">
 <workhead>
-   <title>Andre digte</title>
-   <year>?</year>
-   <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+  <title>Andre digte</title>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
 <text id="wivallius2001051001">
 <head>
-   <title>Klage-Wijsa Öfwer Thenna torra och kalla Wååhr</title>
-   <toctitle>Klage-Wijsa Öfwer Thenna torra och kalla Wååhr</toctitle>
-   <indextitle>Klage-Wijsa Öfwer Thenna torra och kalla Wååhr</indextitle>
-   <firstline>En torr och kall wåhr</firstline>
-   <notes>
-      <note>Trykt i Stockholm, 1642</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title>Klage-Wijsa Öfwer Thenna torra och kalla Wååhr</title>
+  <toctitle>Klage-Wijsa Öfwer Thenna torra och kalla Wååhr</toctitle>
+  <indextitle>Klage-Wijsa Öfwer Thenna torra och kalla Wååhr</indextitle>
+  <firstline>En torr och kall wåhr</firstline>
+  <notes>
+    <note>Trykt i Stockholm, 1642</note>
+  </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -274,11 +271,11 @@ Som aldrigh hielpa siukt heela.
 
 <text id="wivallius2001061301">
 <head>
-   <title>Visa, när han fördes uthij fängelsett 1634.</title>
-   <toctitle>Visa, när han fördes uthij fängelsett 1634.</toctitle>
-   <indextitle>Visa, när han fördes uthij fängelsett 1634.</indextitle>
-   <firstline>Warer nu glad, mina fiender all</firstline>
-   <quality>korrektur1</quality>
+  <title>Visa, när han fördes uthij fängelsett 1634.</title>
+  <toctitle>Visa, när han fördes uthij fängelsett 1634.</toctitle>
+  <indextitle>Visa, när han fördes uthij fängelsett 1634.</indextitle>
+  <firstline>Warer nu glad, mina fiender all</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -410,5 +407,6 @@ Som aldrigh hielpa siukt heela.
 </poetry>
 </body>
 </text>
+
 </workbody>
 </kalliopework>

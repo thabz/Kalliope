@@ -2,9 +2,12 @@
 <pictures>
   <picture src="p1.jpg">
   </picture>
-  <picture ref="bissen/heibergjl-1860" />
+  <picture artwork="bissen/heibergjl-1860"/>
   <picture src="p3.jpg" primary="true" square-src="p3-square.jpg" museum="fnm" invnr="a-2533">
     Sophus Schack: <i>Johan Ludvig Heiberg</i>.
+    <identifiers>
+      <wikidata>Q104177493</wikidata>
+    </identifiers>
   </picture>
   <picture src="p4.jpg">
     <i>J.L. Heiberg</i>, litografi af Emil Bæretnzen efter maleri af D. Monies.

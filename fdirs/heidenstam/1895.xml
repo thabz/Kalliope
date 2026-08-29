@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1895" author="heidenstam" status="incomplete" type="poetry">
 <workhead>
-    <title>Dikter</title>
-    <year>1895</year>
+  <title>Dikter</title>
+  <year>1895</year>
+  <identifiers>
+    <wikidata>Q10472594</wikidata>
+    <openlibrary-work>OL43958124W</openlibrary-work>
+  </identifiers>
 </workhead>
 <workbody>
 
 <text id="heidenstam2019072401">
 <head>
-    <title>Önskan</title>
-    <firstline>Om du, om bara du till evigt lefde</firstline>
-    <notes>
-        <note>Teksten følger Verner von Heidenstam: <i>Dikter</i>, Albert Bonniers förlag, Stockholm, 1895, pp. 138-139.</note>
-    </notes>
-    <!-- https://litteraturbanken.se/forfattare/HeidenstamV/titlar/Dikter/sida/III/etext -->
-    <quality>korrektur1,kilde,side</quality>
+  <title>Önskan</title>
+  <firstline>Om du, om bara du till evigt lefde</firstline>
+  <source href="https://litteraturbanken.se/forfattare/HeidenstamV/titlar/Dikter/sida/III/etext">Verner von Heidenstam: <i>Dikter</i>, Albert Bonniers förlag, Stockholm, 1895, pp. 138-139.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>

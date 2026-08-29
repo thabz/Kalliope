@@ -1,12 +1,19 @@
-const {
+import {
   isFileModified,
   loadCachedJSON,
   writeCachedJSON,
   markFileDirty,
-  force_reload: globalForceReload,
-} = require('../libs/caching.js');
-const { fileExists } = require('../libs/helpers.js');
-const { loadXMLDoc, safeGetAttr, getElementsByTagNames } = require('./xml.js');
+  force_reload as globalForceReload,
+} from '../libs/caching.js';
+import { fileExists } from '../libs/helpers.js';
+import {
+  compareNormalizedDate,
+  normalizeTimelineDate,
+} from '../../common/dates.js';
+import { loadXMLDoc, safeGetAttr, getElementsByTagNames } from './xml.js';
+import { sourceWorkFilename, sourceWorkKey } from './anthologies.js';
+
+const variantDate = work => normalizeTimelineDate(work.year);
 
 const build_variants = (collected) => {
   let variants_map = globalForceReload
@@ -14,7 +21,7 @@ const build_variants = (collected) => {
     : new Map(loadCachedJSON('collected.variants') || []);
   const force_reload = variants_map.size === 0;
 
-  register_variant = (from, to) => {
+  const register_variant = (from, to) => {
     let array = variants_map.get(from) || [];
     if (array.indexOf(to) === -1) {
       array.push(to);
@@ -28,7 +35,8 @@ const build_variants = (collected) => {
       if (!fileExists(filename)) {
         return;
       }
-      if (!force_reload && !isFileModified(filename)) {
+      const fileModified = isFileModified(filename);
+      if (!force_reload && !fileModified) {
         return;
       }
       let doc = loadXMLDoc(filename);
@@ -51,9 +59,7 @@ const build_variants = (collected) => {
           // Mark work containing variantId dirty
           const variantData = collected.texts.get(variantId);
           if (variantData != null) {
-            markFileDirty(
-              `fdirs/${variantData.poetId}/${variantData.workId}.xml`
-            );
+            markFileDirty(sourceWorkFilename(variantData));
           }
         });
     });
@@ -106,9 +112,21 @@ const resolve_variants = (poemId, collected) => {
         `The unknown text "${b}" is listed as a variant of "${poemId}".`
       );
     }
-    const workA = collected.works.get(metaA.poetId + '/' + metaA.workId);
-    const workB = collected.works.get(metaB.poetId + '/' + metaB.workId);
-    return workA.year > workB.year ? 1 : -1;
+    const workA = collected.works.get(sourceWorkKey(metaA));
+    const workB = collected.works.get(sourceWorkKey(metaB));
+    const dateA = variantDate(workA);
+    const dateB = variantDate(workB);
+    if (dateA == null || dateB == null) {
+      if (dateA == null && dateB != null) {
+        return 1;
+      }
+      if (dateA != null && dateB == null) {
+        return -1;
+      }
+      return a.localeCompare(b);
+    }
+    const dateComparison = compareNormalizedDate(dateA, dateB);
+    return dateComparison === 0 ? a.localeCompare(b) : dateComparison;
   });
   resolve_variants_cache[poemId] = result;
   return result;
@@ -128,7 +146,7 @@ const primaryTextVariantId = (textId, collected) => {
   }
 };
 
-module.exports = {
+export {
   build_variants,
   resolve_variants,
   primaryTextVariantId,

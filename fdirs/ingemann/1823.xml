@@ -1,32 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1823" author="ingemann" status="complete" type="poetry">
 <workhead>
-   <title>Morgensalmer til Brug for Eleverne i Sorøe Academies Skole</title>
-   <year>1823</year>
-   <notes>
-      <note>Et lille hæfte med syv lovsange over dagens komme, een til hver dag i ugen.</note>
-   </notes>
-   <pictures>
-       <picture type="titlepage" src="1823-p1.jpg">Titelbladet lyder ,,Morgenpsalmer / til Brug for / Eleverne / i / Sorøe Adacemies Skole / Af / B. S. Ingemann. // Kjøbenhavn 1823. / Trykt hos Boas Brunnich, / Kongelig Hofbogtrykker.''</picture>
-   </pictures>
-   <quality>korrektur1</quality>
-   <keywords>salme</keywords>
+  <title>Morgensalmer til Brug for Eleverne i Sorøe Academies Skole</title>
+  <year>1823</year>
+  <notes>
+    <note>Et lille hæfte med syv lovsange over dagens komme, een til hver dag i ugen.</note>
+  </notes>
+  <pictures>
+    <picture type="titlepage" src="1823-p1.jpg">Titelbladet lyder ,,Morgenpsalmer / til Brug for / Eleverne / i / Sorøe Adacemies Skole / Af / B. S. Ingemann. // Kjøbenhavn 1823. / Trykt hos Boas Brunnich, / Kongelig Hofbogtrykker.''</picture>
+  </pictures>
+  <quality>korrektur1</quality>
+  <keywords>salme</keywords>
 </workhead>
 <workbody>
 
 
 <text id="ingemann2018032701">
 <head>
-    <title>Søndagspsalme</title>
-    <toctitle><num>I.</num>Søndagspsalme</toctitle>
-    <subtitle>Mel. Af Helheden oprunden er etc.</subtitle>
-    <firstline>En hellig Morgensol opstaaer</firstline>
-    <notes>
-        <note>Teksten følger B. S. Ingemann: <i>Morgenpsalmer til Brug for Eleverne Sorøe Academies Skole</i>, Kbh., 1823, pp. 3-4.</note>
-    </notes>
-    <keywords>salme</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Søndagspsalme</title>
+  <toctitle><num>I.</num>Søndagspsalme</toctitle>
+  <subtitle>Mel. Af Helheden oprunden er etc.</subtitle>
+  <firstline>En hellig Morgensol opstaaer</firstline>
+  <source pages="3-4">B. S. Ingemann: <i>Morgenpsalmer til Brug for Eleverne Sorøe Academies Skole</i>, Kbh., 1823.</source>
+  <keywords>salme</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -57,15 +54,13 @@ Med Søndagssolen han opstod,
 
 <text id="ingemann2018032702">
 <head>
-    <title>Vær lovet Du, som evig vaager</title>
-    <toctitle><num>II.</num>Vær lovet Du, som evig vaager</toctitle>
-    <subtitle>Mel. Hvo ikkun lader Herren raade.</subtitle>
-    <firstline>Vær lovet Du, som evig vaager</firstline>
-    <notes>
-        <note>Teksten følger B. S. Ingemann: <i>Morgenpsalmer til Brug for Eleverne Sorøe Academies Skole</i>, Kbh., 1823, pp. 5-6.</note>
-    </notes>
-    <keywords>salme</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Vær lovet Du, som evig vaager</title>
+  <toctitle><num>II.</num>Vær lovet Du, som evig vaager</toctitle>
+  <subtitle>Mel. Hvo ikkun lader Herren raade.</subtitle>
+  <firstline>Vær lovet Du, som evig vaager</firstline>
+  <source pages="5-6">B. S. Ingemann: <i>Morgenpsalmer til Brug for Eleverne Sorøe Academies Skole</i>, Kbh., 1823.</source>
+  <keywords>salme</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -95,15 +90,13 @@ Lad det til Dig, vor Gud, os føre!
 
 <text id="ingemann2018032703">
 <head>
-    <title>Vaagn og bryd i Lovsang ud</title>
-    <toctitle><num>III.</num>Vaagn og bryd i Lovsang ud</toctitle>
-    <subtitle>Mel. Rind nu op i Jesu Navn.</subtitle>
-    <firstline>Vaagn og bryd i Lovsang ud</firstline>
-    <notes>
-        <note>Teksten følger B. S. Ingemann: <i>Morgenpsalmer til Brug for Eleverne Sorøe Academies Skole</i>, Kbh., 1823, pp. 7-8.</note>
-    </notes>
-    <keywords>salme</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Vaagn og bryd i Lovsang ud</title>
+  <toctitle><num>III.</num>Vaagn og bryd i Lovsang ud</toctitle>
+  <subtitle>Mel. Rind nu op i Jesu Navn.</subtitle>
+  <firstline>Vaagn og bryd i Lovsang ud</firstline>
+  <source pages="7-8">B. S. Ingemann: <i>Morgenpsalmer til Brug for Eleverne Sorøe Academies Skole</i>, Kbh., 1823.</source>
+  <keywords>salme</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -130,15 +123,13 @@ Tak og Priis i Evighed!
 
 <text id="ingemann1822a0">
 <head>
-    <title>Bleg Morgenstjernen smiler og forsvinder</title>
-    <toctitle><num>IV.</num>Bleg Morgenstjernen smiler og forsvinder</toctitle>
-    <subtitle>Mel.  Vreden din afvend.</subtitle>
-    <firstline>Bleg Morgenstjernen smiler og forsvinder</firstline>
-    <notes>
-        <note>Teksten følger B. S. Ingemann: <i>Morgenpsalmer til Brug for Eleverne Sorøe Academies Skole</i>, Kbh., 1823, pp. 9-10.</note>
-    </notes>
-    <keywords>salme</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Bleg Morgenstjernen smiler og forsvinder</title>
+  <toctitle><num>IV.</num>Bleg Morgenstjernen smiler og forsvinder</toctitle>
+  <subtitle>Mel.  Vreden din afvend.</subtitle>
+  <firstline>Bleg Morgenstjernen smiler og forsvinder</firstline>
+  <source pages="9-10">B. S. Ingemann: <i>Morgenpsalmer til Brug for Eleverne Sorøe Academies Skole</i>, Kbh., 1823.</source>
+  <keywords>salme</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -162,15 +153,13 @@ Vær lovet, Gud, for Himmel-Morgenstunden!
 
 <text id="ingemann1822a1">
 <head>
-    <title>Lover Herren! han er nær</title>
-    <toctitle><num>V.</num>Lover Herren! han er nær</toctitle>
-    <subtitle>Mel. Søde Jesu, vi er her.</subtitle>
-    <firstline>Lover Herren! han er nær</firstline>
-    <notes>
-        <note>Teksten følger B. S. Ingemann: <i>Morgenpsalmer til Brug for Eleverne Sorøe Academies Skole</i>, Kbh., 1823, p. 11.</note>
-    </notes>
-    <keywords>salme</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Lover Herren! han er nær</title>
+  <toctitle><num>V.</num>Lover Herren! han er nær</toctitle>
+  <subtitle>Mel. Søde Jesu, vi er her.</subtitle>
+  <firstline>Lover Herren! han er nær</firstline>
+  <source pages="11">B. S. Ingemann: <i>Morgenpsalmer til Brug for Eleverne Sorøe Academies Skole</i>, Kbh., 1823.</source>
+  <keywords>salme</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -193,15 +182,13 @@ Til vi see Dig i dit Rige!
 
 <text id="ingemann2018032706">
 <head>
-    <title>Herre, Fader! lad min Tunge</title>
-    <toctitle><num>VI.</num>Herre, Fader! lad min Tunge</toctitle>
-    <subtitle>Mel. Nu velan vær frisk tilmode.</subtitle>
-    <firstline>Herre, Fader! lad min Tunge</firstline>
-    <notes>
-        <note>Teksten følger B. S. Ingemann: <i>Morgenpsalmer til Brug for Eleverne Sorøe Academies Skole</i>, Kbh., 1823, pp. 12-13.</note>
-    </notes>
-    <keywords>salme</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Herre, Fader! lad min Tunge</title>
+  <toctitle><num>VI.</num>Herre, Fader! lad min Tunge</toctitle>
+  <subtitle>Mel. Nu velan vær frisk tilmode.</subtitle>
+  <firstline>Herre, Fader! lad min Tunge</firstline>
+  <source pages="12-13">B. S. Ingemann: <i>Morgenpsalmer til Brug for Eleverne Sorøe Academies Skole</i>, Kbh., 1823.</source>
+  <keywords>salme</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -228,16 +215,16 @@ Hilse Lyset om din Throne!
 
 <text id="ingemann2018032707">
 <head>
-    <title>Paa Ugens sidste Morgen</title>
-    <toctitle><num>VII.</num>Paa Ugens sidste Morgen</toctitle>
-    <subtitle>Mel. Hvo veed hvor nær mig er min Ende.</subtitle>
-    <firstline>Stig frem, o Dag med Dødens Minde!</firstline>
-    <notes>
-        <note>Melodi som salmen <xref poem="rostgaard2019022601"/>.</note>
-        <note>Teksten følger B. S. Ingemann: <i>Morgenpsalmer til Brug for Eleverne Sorøe Academies Skole</i>, Kbh., 1823, pp. 14-15.</note>
-    </notes>
-    <keywords>salme</keywords>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Paa Ugens sidste Morgen</title>
+  <toctitle><num>VII.</num>Paa Ugens sidste Morgen</toctitle>
+  <subtitle>Mel. Hvo veed hvor nær mig er min Ende.</subtitle>
+  <firstline>Stig frem, o Dag med Dødens Minde!</firstline>
+  <notes>
+    <note>Melodi som salmen <xref poem="rostgaard2019022601"/>.</note>
+  </notes>
+  <source pages="14-15">B. S. Ingemann: <i>Morgenpsalmer til Brug for Eleverne Sorøe Academies Skole</i>, Kbh., 1823.</source>
+  <keywords>salme</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>

@@ -1,25 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="julesalmer" author="grundtvig" status="incomplete" type="poetry">
 <workhead>
-   <title>Julesalmer</title>
-   <year>?</year>
-   <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+  <title>Julesalmer</title>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
 <text id="grundtvigjulesalmera4">
 <head>
-   <title>Nu kom her Bud fra Engle-Kor</title>
-   <subtitle><i>(Kingos, med samme Begyndelse, forandret)</i></subtitle>
-   <toctitle>Nu kom her Bud fra Engle-Kor</toctitle>
-   <indextitle>Nu kom her Bud fra Engle-Kor</indextitle>
-   <firstline>Nu kom her Bud fra Engle-Kor</firstline>
-   <notes>
-      <note>Cf. <xref bibel="bibellukas01,26-38"/>.</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title>Nu kom her Bud fra Engle-Kor</title>
+  <subtitle><i>(Kingos, med samme Begyndelse, forandret)</i></subtitle>
+  <toctitle>Nu kom her Bud fra Engle-Kor</toctitle>
+  <indextitle>Nu kom her Bud fra Engle-Kor</indextitle>
+  <firstline>Nu kom her Bud fra Engle-Kor</firstline>
+  <notes>
+    <note>Cf. <xref bible="bibellukas01,26-38"/>.</note>
+  </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -84,11 +81,11 @@ Saa frydelig sig skynde!
 
 <text id="grundtvig2001080401">
 <head>
-   <title>Hyrderne ved Bethlehem</title>
-   <toctitle>Hyrderne ved Bethlehem</toctitle>
-   <indextitle>Hyrderne ved Bethlehem</indextitle>
-   <firstline>Nat i Østen er ei saa lang</firstline>
-   <quality>korrektur1</quality>
+  <title>Hyrderne ved Bethlehem</title>
+  <toctitle>Hyrderne ved Bethlehem</toctitle>
+  <indextitle>Hyrderne ved Bethlehem</indextitle>
+  <firstline>Nat i Østen er ei saa lang</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -213,5 +210,6 @@ I Hjertekammerets Krybberum!
 </poetry>
 </body>
 </text>
+
 </workbody>
 </kalliopework>

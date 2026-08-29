@@ -1,26 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="metam" author="holberg" status="incomplete" type="poetry">
 <workhead>
-   <title>Metamorphosis</title>
-   <subtitle>Eller Forvandlinger</subtitle>
-   <year>?</year>
-   <notes>
-      <note>Kilde er Ludvig Holbergs <i>Mindre Poetiske Skrifter</i>, F. L. Liebenberg (red.),  Kbh., Forlagt af Samfundet til den danske Literaturs Fremme, Thieles Bogtrykkeri, 1866.</note>
-      <note>Med mindre andet er angivet er fodnoterne Holbergs egne.</note>
-      <note type="credits">Bidrag fra Svend Andersen.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+  <title>Metamorphosis</title>
+  <subtitle>Eller Forvandlinger</subtitle>
+  <notes>
+    <note>Med mindre andet er angivet er fodnoterne Holbergs egne.</note>
+    <note type="credits">Bidrag fra Svend Andersen.</note>
+  </notes>
+  <source>Ludvig Holbergs <i>Mindre Poetiske Skrifter</i>, F. L. Liebenberg (red.),  Kbh., Forlagt af Samfundet til den danske Literaturs Fremme, Thieles Bogtrykkeri, 1866.</source>
+  <quality>korrektur1,kilde</quality>
 </workhead>
 <workbody>
 
 <text id="holberg2002112601" skip-index="true">
 <head>
-   <title>Fortale</title>
-   <toctitle>Fortale</toctitle>
-   <indextitle>Fortale</indextitle>
-   <quality>korrektur1,kilde</quality>
+  <title>Fortale</title>
+  <toctitle>Fortale</toctitle>
+  <indextitle>Fortale</indextitle>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <prose>
@@ -34,12 +31,12 @@ Man skriver saa meget om Mennesker, men forsømmer gandske Dyrenes Historie, hvo
 
 <text id="holberg2002112602" skip-index="true">
 <head>
-   <title>Just Justesens</title>
-   <subtitle>Betænkning over dette Heroiske Poema.</subtitle>
-   <toctitle>Just Justesens Betænkning</toctitle>
-   <indextitle>Just Justesens Betænkning</indextitle>
-   <linktitle>Just Justesens Betænkning</linktitle>
-   <quality>korrektur1,kilde</quality>
+  <title>Just Justesens</title>
+  <subtitle>Betænkning over dette Heroiske Poema.</subtitle>
+  <toctitle>Just Justesens Betænkning</toctitle>
+  <indextitle>Just Justesens Betænkning</indextitle>
+  <linktitle>Just Justesens Betænkning</linktitle>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <prose>
@@ -50,18 +47,18 @@ Man skriver saa meget om Mennesker, men forsømmer gandske Dyrenes Historie, hvo
 
 <section level="1">
 <head>
-   <toctitle>Den første Bog.</toctitle>
+  <toctitle>Den første Bog.</toctitle>
 </head>
 <content>
 
 <text id="holberg2002112603">
 <head>
-   <title>Den 1. Fabel.</title>
-   <subtitle>Om den Tiid da Dyrene kunde tale.</subtitle>
-   <toctitle><num>Fab. 1.</num>Om den Tid da Dyrene kand tale.</toctitle>
-   <indextitle>Den 1. Fabel.</indextitle>
-   <firstline>Jeg, som mod Mennesker og Verdens onde Sæder</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Den 1. Fabel.</title>
+  <subtitle>Om den Tiid da Dyrene kunde tale.</subtitle>
+  <toctitle><num>Fab. 1.</num>Om den Tid da Dyrene kand tale.</toctitle>
+  <indextitle>Den 1. Fabel.</indextitle>
+  <firstline>Jeg, som mod Mennesker og Verdens onde Sæder</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -183,12 +180,12 @@ Cupido øved' og sin Tyrannie og Magt.
 
 <text id="holberg2002112604">
 <head>
-   <title>Den 2. Fabel.</title>
-   <subtitle>Om Drys, samt hans Kierlighed og Forvandling.</subtitle>
-   <toctitle><num>Fab. 2.</num>Om Eegen Drys, hans Kierlighed til Nive og Forvandling.</toctitle>
-   <indextitle>Den 2. Fabel.</indextitle>
-   <firstline>Den Elskov, som jeg først maa i min Sang beskrive</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Den 2. Fabel.</title>
+  <subtitle>Om Drys, samt hans Kierlighed og Forvandling.</subtitle>
+  <toctitle><num>Fab. 2.</num>Om Eegen Drys, hans Kierlighed til Nive og Forvandling.</toctitle>
+  <indextitle>Den 2. Fabel.</indextitle>
+  <firstline>Den Elskov, som jeg først maa i min Sang beskrive</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -342,12 +339,12 @@ Smaa andre kloge Folk af ringe, fattig Stand.
 
 <text id="holberg2002112605">
 <head>
-   <title>Den 3. Fabel</title>
-   <subtitle>Om Nives og Hyrdens Tityri Fald og Forvandling.</subtitle>
-   <toctitle><num>Fab. 3.</num>Om Eegindens Nives og Hyrdens Tityri Fald og Forvandling.</toctitle>
-   <indextitle>Den 3. Fabel</indextitle>
-   <firstline>Ved dette store Mord Gudindens Hevn blev mætted</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Den 3. Fabel</title>
+  <subtitle>Om Nives og Hyrdens Tityri Fald og Forvandling.</subtitle>
+  <toctitle><num>Fab. 3.</num>Om Eegindens Nives og Hyrdens Tityri Fald og Forvandling.</toctitle>
+  <indextitle>Den 3. Fabel</indextitle>
+  <firstline>Ved dette store Mord Gudindens Hevn blev mætted</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -561,12 +558,12 @@ Er Locris Plante, og af hende stiger ned.
 
 <text id="holberg2002112606">
 <head>
-   <title>Den 4. Fabel.</title>
-   <subtitle>Om Cokkyx eller Gøgens Brøde, saa og hvorledes han straffes og forvandles.</subtitle>
-   <toctitle><num>Fab. 4.</num>Om Cokkyks eller Gøgens Misgierning, saa og hvorledes han straffes og forvandles.</toctitle>
-   <indextitle>Den 4. Fabel.</indextitle>
-   <firstline>I Skovens Middelpunct Fru Fama haver Sæde</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Den 4. Fabel.</title>
+  <subtitle>Om Cokkyx eller Gøgens Brøde, saa og hvorledes han straffes og forvandles.</subtitle>
+  <toctitle><num>Fab. 4.</num>Om Cokkyks eller Gøgens Misgierning, saa og hvorledes han straffes og forvandles.</toctitle>
+  <indextitle>Den 4. Fabel.</indextitle>
+  <firstline>I Skovens Middelpunct Fru Fama haver Sæde</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -720,12 +717,12 @@ Fremture derudi, og Folk bevise Got.
 
 <text id="holberg2002112607">
 <head>
-   <title>Den 5. Fabel.</title>
-   <subtitle>Om Kittæ Giæstebud og Ædderkoppens Forvandling.</subtitle>
-   <toctitle><num>Fab. 5.</num>Om Skadens, Kittæ, Giæstebud og Ædderkoppens Forvandling.</toctitle>
-   <indextitle>Den 5. Fabel.</indextitle>
-   <firstline>Men Cokkyks Undergang dog kunde ey udslette</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Den 5. Fabel.</title>
+  <subtitle>Om Kittæ Giæstebud og Ædderkoppens Forvandling.</subtitle>
+  <toctitle><num>Fab. 5.</num>Om Skadens, Kittæ, Giæstebud og Ædderkoppens Forvandling.</toctitle>
+  <indextitle>Den 5. Fabel.</indextitle>
+  <firstline>Men Cokkyks Undergang dog kunde ey udslette</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -933,12 +930,12 @@ End det til intet sig, som Ædderkoppen, spinder.
 
 <text id="holberg2002112608">
 <head>
-   <title>Den 6. Fabel.</title>
-   <subtitle>Om Kittæ Død og Forvandling.</subtitle>
-   <toctitle><num>Fab. 6.</num>Om Kittæ Død og Forvandling.</toctitle>
-   <indextitle>Den 6. Fabel.</indextitle>
-   <firstline>Men Kitta endda med nedslaged Hoved stod</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Den 6. Fabel.</title>
+  <subtitle>Om Kittæ Død og Forvandling.</subtitle>
+  <toctitle><num>Fab. 6.</num>Om Kittæ Død og Forvandling.</toctitle>
+  <indextitle>Den 6. Fabel.</indextitle>
+  <firstline>Men Kitta endda med nedslaged Hoved stod</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -990,12 +987,12 @@ Ja samme Embed har, som Skaden før blant Dyr.
 
 <text id="holberg2002112609">
 <head>
-   <title>Den 7. Fabel.</title>
-   <subtitle>Sylvani og Floræ Krigs-Rustning ved Pans Myndighed bilagt, saa og Alopex Forvandling.</subtitle>
-   <toctitle><num>Fab. 7.</num>Sylvani og Floræ Krigs-Rustning, ved Pans Myndighed bilagt, samt Alopexes eller Rævens Forvandling.</toctitle>
-   <indextitle>Den 7. Fabel.</indextitle>
-   <firstline>Sylvanus pønsed nu paa aabenbare Feyde</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Den 7. Fabel.</title>
+  <subtitle>Sylvani og Floræ Krigs-Rustning ved Pans Myndighed bilagt, saa og Alopex Forvandling.</subtitle>
+  <toctitle><num>Fab. 7.</num>Sylvani og Floræ Krigs-Rustning, ved Pans Myndighed bilagt, samt Alopexes eller Rævens Forvandling.</toctitle>
+  <indextitle>Den 7. Fabel.</indextitle>
+  <firstline>Sylvanus pønsed nu paa aabenbare Feyde</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -1196,12 +1193,12 @@ Og som Gesandten selv, maa ikke røres ved.
 
 <text id="holberg2002112610">
 <head>
-   <title>Den 8. Fabel.</title>
-   <subtitle>Coraxes Forvandling, og Slutning paa den første Bog.</subtitle>
-   <toctitle><num>Fab. 8.</num>Coraxes eller Ravnens Forvandling, og Slutning paa den første Bog.</toctitle>
-   <indextitle>Den 8. Fabel.</indextitle>
-   <firstline>Sligt skede. Man end saae blandt Aadsler, døde Kroppe</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Den 8. Fabel.</title>
+  <subtitle>Coraxes Forvandling, og Slutning paa den første Bog.</subtitle>
+  <toctitle><num>Fab. 8.</num>Coraxes eller Ravnens Forvandling, og Slutning paa den første Bog.</toctitle>
+  <indextitle>Den 8. Fabel.</indextitle>
+  <firstline>Sligt skede. Man end saae blandt Aadsler, døde Kroppe</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -1232,23 +1229,24 @@ Og ansaae som en Straf, at Dyret Mennesk blev.
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
 
 <section level="1">
 <head>
-   <toctitle>Den anden Bog.</toctitle>
+  <toctitle>Den anden Bog.</toctitle>
 </head>
 <content>
 
 <text id="holberg2002112611">
 <head>
-   <title>Den 1. Fabel.</title>
-   <subtitle>Pans Lov-Sang og Freds-Fest, samt Karkini eller Krebsens Forvandling.</subtitle>
-   <toctitle><num>Fab. 1.</num>Pans Lovsang og Freds-Fest, samt Karkini eller Krebsens Forvandling.</toctitle>
-   <indextitle>Den 1. Fabel.</indextitle>
-   <firstline>Saa ved sin Myndighed Skov-Guden Krigen endte</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Den 1. Fabel.</title>
+  <subtitle>Pans Lov-Sang og Freds-Fest, samt Karkini eller Krebsens Forvandling.</subtitle>
+  <toctitle><num>Fab. 1.</num>Pans Lovsang og Freds-Fest, samt Karkini eller Krebsens Forvandling.</toctitle>
+  <indextitle>Den 1. Fabel.</indextitle>
+  <firstline>Saa ved sin Myndighed Skov-Guden Krigen endte</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -1372,12 +1370,12 @@ Slig Krebse-Hud har Navn af Skredder-Liberie.
 
 <text id="holberg2002112612">
 <head>
-   <title>Den 2. Fabel.</title>
-   <subtitle>Gudindens Thetis Vrede, samt Asenets Misgierning og Forvandling.</subtitle>
-   <toctitle><num>Fab. 2.</num>Gudindens Thetis Vrede, samt Asenets Onos Misgierning og Forvandling.</toctitle>
-   <indextitle>Den 2. Fabel.</indextitle>
-   <firstline>Da saadan Hendelse Fru Thetis kom for Øre</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Den 2. Fabel.</title>
+  <subtitle>Gudindens Thetis Vrede, samt Asenets Misgierning og Forvandling.</subtitle>
+  <toctitle><num>Fab. 2.</num>Gudindens Thetis Vrede, samt Asenets Onos Misgierning og Forvandling.</toctitle>
+  <indextitle>Den 2. Fabel.</indextitle>
+  <firstline>Da saadan Hendelse Fru Thetis kom for Øre</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -1483,12 +1481,12 @@ At disse konstler meer, og Tremulanter skiær.
 
 <text id="holberg2002112613">
 <head>
-   <title>Den 3. Fabel.</title>
-   <subtitle>Thetis lader Udyder regne; Ophis overnaturlige Kierlighed, formastelige Foretagende med Hieracis Hielp, saavelsom hans Fald; Ichtys Død og Forvandling.</subtitle>
-   <toctitle><num>Fab. 3.</num>Thetis faaer Pandoræ Æske, og lader Udyder regne; Ophis eller Slangens unaturlige Kierlighed til Nattergalen, formastelige Foretagende med Hieracis eller Høgens Hielp, saa og hans Fald; tillige med Fiskens Ictys Død og Forvandling.</toctitle>
-   <indextitle>Den 3. Fabel.</indextitle>
-   <firstline>Da Hevnen stilled var, hun Søvnens Gud anmoder</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Den 3. Fabel.</title>
+  <subtitle>Thetis lader Udyder regne; Ophis overnaturlige Kierlighed, formastelige Foretagende med Hieracis Hielp, saavelsom hans Fald; Ichtys Død og Forvandling.</subtitle>
+  <toctitle><num>Fab. 3.</num>Thetis faaer Pandoræ Æske, og lader Udyder regne; Ophis eller Slangens unaturlige Kierlighed til Nattergalen, formastelige Foretagende med Hieracis eller Høgens Hielp, saa og hans Fald; tillige med Fiskens Ictys Død og Forvandling.</toctitle>
+  <indextitle>Den 3. Fabel.</indextitle>
+  <firstline>Da Hevnen stilled var, hun Søvnens Gud anmoder</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -1738,12 +1736,12 @@ Man bag en Bog-Stol for Zirat dem ikkun seer.
 
 <text id="holberg2002112614">
 <head>
-   <title>Den 4. Fabel.</title>
-   <subtitle>Om den ædle Ophis Forvandling.</subtitle>
-   <toctitle><num>Fab. 4.</num>Om den ædle Ophis Forvandling.</toctitle>
-   <indextitle>Den 4. Fabel.</indextitle>
-   <firstline>Det store Ictys Fald i Floden hastig rygted,</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Den 4. Fabel.</title>
+  <subtitle>Om den ædle Ophis Forvandling.</subtitle>
+  <toctitle><num>Fab. 4.</num>Om den ædle Ophis Forvandling.</toctitle>
+  <indextitle>Den 4. Fabel.</indextitle>
+  <firstline>Det store Ictys Fald i Floden hastig rygted</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -1781,12 +1779,12 @@ Som zirer Jorden mest, og Kierne er i Land.
 
 <text id="holberg2002112615">
 <head>
-   <title>Den 5. Fabel.</title>
-   <subtitle>Om Hieracis eller Høgens Straf og Forvandling.</subtitle>
-   <toctitle><num>Fab. 5.</num>Hieracis eller Høgens Straf og Forvandling.</toctitle>
-   <indextitle>Den 5. Fabel.</indextitle>
-   <firstline>Den kiekke Slanges Fald Apollinem bevæger</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Den 5. Fabel.</title>
+  <subtitle>Om Hieracis eller Høgens Straf og Forvandling.</subtitle>
+  <toctitle><num>Fab. 5.</num>Hieracis eller Høgens Straf og Forvandling.</toctitle>
+  <indextitle>Den 5. Fabel.</indextitle>
+  <firstline>Den kiekke Slanges Fald Apollinem bevæger</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -1812,12 +1810,12 @@ Saa Bønder, Hyrder fast som Pest en Skov-Fogd skyr.
 
 <text id="holberg2002112616">
 <head>
-   <title>Den 6. Fabel.</title>
-   <subtitle>Hvorledes Nattergalen omkommer og forvandles.</subtitle>
-   <toctitle><num>Fab. 6.</num>Hvorledes Nattergalen Aëdon omkommer og forvandles.</toctitle>
-   <indextitle>Den 6. Fabel.</indextitle>
-   <firstline>Til disse Sørge-Spill vor Nattergal var Kilde</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Den 6. Fabel.</title>
+  <subtitle>Hvorledes Nattergalen omkommer og forvandles.</subtitle>
+  <toctitle><num>Fab. 6.</num>Hvorledes Nattergalen Aëdon omkommer og forvandles.</toctitle>
+  <indextitle>Den 6. Fabel.</indextitle>
+  <firstline>Til disse Sørge-Spill vor Nattergal var Kilde</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -1843,12 +1841,12 @@ Og all slags Elskere er hele Aar til Trøst.
 
 <text id="holberg2002112617">
 <head>
-   <title>Den 7. Fabel.</title>
-   <subtitle>Om Buses og Boeidions Kierlighed og ulykkelige Skiæbne; saa og Soelsikkens Forvandling.</subtitle>
-   <toctitle><num>Fab. 7.</num>Om Bus og Boeidions, Studens og Qviens, Kierlighed og ulykkelige Skiebne, samt Soelsikkens Forvandling.</toctitle>
-   <indextitle>Den 7. Fabel.</indextitle>
-   <firstline>Man hørte andet ey i Skoven, end Ulykke</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Den 7. Fabel.</title>
+  <subtitle>Om Buses og Boeidions Kierlighed og ulykkelige Skiæbne; saa og Soelsikkens Forvandling.</subtitle>
+  <toctitle><num>Fab. 7.</num>Om Bus og Boeidions, Studens og Qviens, Kierlighed og ulykkelige Skiebne, samt Soelsikkens Forvandling.</toctitle>
+  <indextitle>Den 7. Fabel.</indextitle>
+  <firstline>Man hørte andet ey i Skoven, end Ulykke</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -2060,12 +2058,12 @@ Ved et u-naadigt Blink de visner, tørres bort.
 
 <text id="holberg2002112618">
 <head>
-   <title>Den 8. Fabel.</title>
-   <subtitle>Hvorledes Bus bliver forvandlet.</subtitle>
-   <toctitle><num>Fab. 8.</num>Hvorledes Bus bliver forvandlet.</toctitle>
-   <indextitle>Den 8. Fabel.</indextitle>
-   <firstline>De to Forliebtes Død Bubona gik til Hierte</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Den 8. Fabel.</title>
+  <subtitle>Hvorledes Bus bliver forvandlet.</subtitle>
+  <toctitle><num>Fab. 8.</num>Hvorledes Bus bliver forvandlet.</toctitle>
+  <indextitle>Den 8. Fabel.</indextitle>
+  <firstline>De to Forliebtes Død Bubona gik til Hierte</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -2103,12 +2101,12 @@ De fra Stam-Faderen i Tale, Sæder gaaer.
 
 <text id="holberg2002112619">
 <head>
-   <title>Den 9. Fabel.</title>
-   <subtitle>Om Psylli og Psyllæ Kierlighed og Blodskam, samt den førstes Forvandling.</subtitle>
-   <toctitle><num>Fab. 9.</num>Om Psylli og Psyllæ, Loppens og Lopindens, Kierlighed og Blodskam, samt den førstes Forvandling.</toctitle>
-   <indextitle>Den 9. Fabel.</indextitle>
-   <firstline>Saa Mord, Fortvivlelse man alle Vegne hørte;</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Den 9. Fabel.</title>
+  <subtitle>Om Psylli og Psyllæ Kierlighed og Blodskam, samt den førstes Forvandling.</subtitle>
+  <toctitle><num>Fab. 9.</num>Om Psylli og Psyllæ, Loppens og Lopindens, Kierlighed og Blodskam, samt den førstes Forvandling.</toctitle>
+  <indextitle>Den 9. Fabel.</indextitle>
+  <firstline>Saa Mord, Fortvivlelse man alle Vegne hørte</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -2304,12 +2302,12 @@ Blant Nympher, sær naar der i Landet ey er Krig.
 
 <text id="holberg2002112620">
 <head>
-   <title>Den 10. Fabel.</title>
-   <subtitle>Om Psyllæ Foster, Padde-Hatten, dens Kierlighed til sig selv og underlige Forvandling.</subtitle>
-   <toctitle><num>Fab. 10.</num>Om Psyllæ Foster, Padde-Hatten, dens Kierlighed til sig selv og underlige Forvandling.</toctitle>
-   <indextitle>Den 10. Fabel.</indextitle>
-   <firstline>Nu Tiden stunded til, at Psylla skulde føde.</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Den 10. Fabel.</title>
+  <subtitle>Om Psyllæ Foster, Padde-Hatten, dens Kierlighed til sig selv og underlige Forvandling.</subtitle>
+  <toctitle><num>Fab. 10.</num>Om Psyllæ Foster, Padde-Hatten, dens Kierlighed til sig selv og underlige Forvandling.</toctitle>
+  <indextitle>Den 10. Fabel.</indextitle>
+  <firstline>Nu Tiden stunded til, at Psylla skulde føde</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -2485,12 +2483,12 @@ Nu børster Støvler, Skoe, nu staaer paa Ærens Top.  <note>Derfor siger Boilea
 
 <text id="holberg2002112621">
 <head>
-   <title>Den 11. Fabel.</title>
-   <subtitle>Om Tragi Ambassade til Pluto og Pandora, samt hans Forvandling; Jovis Dom, og Slutning.</subtitle>
-   <toctitle><num>Fab. 11.</num>Om Bukkens, Tragi, Ambassade til Pluto og Pandora, saa og hans Forvandling; tillige med Jovis Dom og Slutningen.</toctitle>
-   <indextitle>Den 11. Fabel.</indextitle>
-   <firstline>Saa syndig Lyst tog til med tusinde Ulykker</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Den 11. Fabel.</title>
+  <subtitle>Om Tragi Ambassade til Pluto og Pandora, samt hans Forvandling; Jovis Dom, og Slutning.</subtitle>
+  <toctitle><num>Fab. 11.</num>Om Bukkens, Tragi, Ambassade til Pluto og Pandora, saa og hans Forvandling; tillige med Jovis Dom og Slutningen.</toctitle>
+  <indextitle>Den 11. Fabel.</indextitle>
+  <firstline>Saa syndig Lyst tog til med tusinde Ulykker</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -2685,16 +2683,17 @@ Og udi Stridbarhed Stamfadren slægte paa.
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
 
 <text id="holberg2002112622">
 <head>
-   <title>Slutning.</title>
-   <toctitle>Slutning.</toctitle>
-   <indextitle>Slutning.</indextitle>
-   <firstline>Nu efter Jovis Bud Skov-Guder og Gudinder</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Slutning.</title>
+  <toctitle>Slutning.</toctitle>
+  <indextitle>Slutning.</indextitle>
+  <firstline>Nu efter Jovis Bud Skov-Guder og Gudinder</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -2721,5 +2720,6 @@ Og Skov-Veltalenhed forvandlet blev til Lyd.
 </poetry>
 </body>
 </text>
+
 </workbody>
 </kalliopework>

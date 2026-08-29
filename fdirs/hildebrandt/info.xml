@@ -7,7 +7,8 @@
   </name>
   <period>
     <born>
-      <date>1898-08-18</date><!-- ikke 1899 iflg. Danske Litteraturpriser -->
+      <date>1898-08-18</date>
+      <!-- ikke 1899 iflg. Danske Litteraturpriser -->
       <place>Glamsbjerg</place>
     </born>
     <dead>
@@ -15,5 +16,10 @@
       <place>København</place>
     </dead>
   </period>
+  <literary-periods>dk-tidlig-modernisme,dk-efterkrigsmodernisme</literary-periods>
   <works>1935,1937,1942,1945,1949</works>
+  <identifiers>
+    <wikidata>Q4953958</wikidata>
+    <danskforfatterleksikon-dk>HKarenHildebrandt</danskforfatterleksikon-dk>
+  </identifiers>
 </person>

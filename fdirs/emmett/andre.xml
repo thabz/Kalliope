@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="emmett" status="incomplete" type="poetry">
 <workhead>
-   <title>Andre digte</title>
-   <year>?</year>
-   <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+  <title>Andre digte</title>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
 <text id="emmett2001122101">
 <head>
-   <title>Dixie's Land</title>
-   <toctitle>Dixie's Land</toctitle>
-   <indextitle>Dixie's Land</indextitle>
-   <firstline>I wish I was in de land ob cotton</firstline>
-   <quality>korrektur1</quality>
+  <title>Dixie's Land</title>
+  <toctitle>Dixie's Land</toctitle>
+  <indextitle>Dixie's Land</indextitle>
+  <firstline>I wish I was in de land ob cotton</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -81,5 +78,6 @@ To Dixie's land I'm bound to trabble;
 </poetry>
 </body>
 </text>
+
 </workbody>
 </kalliopework>

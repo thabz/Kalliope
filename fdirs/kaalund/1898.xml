@@ -1,48 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1898" author="kaalund" status="complete" type="poetry">
 <workhead>
-   <title>Samlede Digte</title>
-   <year>1898</year>
-   <pictures>
-       <picture type="titlepage" src="1845-p1.jpg">Titelbladet til <i>Fabler for Børn</i> (1845). ,,Fabler for Børn / af / H. V. Kaalund / og / J. C. Lundbye. // Kjøbenhavn. / Paa P. G. Philipsens Forlag. / Billederne lithographerede af Kittendorff i Em. Bærentzen &amp; Co. / lith. Institut. / Texten trykt i Bianco Lunos Bogtrykkeri. // 1845.''</picture>
-   </pictures>
-   <quality>korrektur1</quality>
+  <title>Samlede Digte</title>
+  <year>1898</year>
+  <identifiers>
+    <openlibrary-work>OL12297114W</openlibrary-work>
+    <runeberg-book>khvsamlede</runeberg-book>
+  </identifiers>
+  <source>H.V. Kaalund: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, 1898, udgivet ved Otto Borchsenius.</source>
+  <pictures>
+    <picture type="titlepage" src="1845-p1.jpg">Titelbladet til <i>Fabler for Børn</i> (1845). ,,Fabler for Børn / af / H. V. Kaalund / og / J. C. Lundbye. // Kjøbenhavn. / Paa P. G. Philipsens Forlag. / Billederne lithographerede af Kittendorff i Em. Bærentzen &amp; Co. / lith. Institut. / Texten trykt i Bianco Lunos Bogtrykkeri. // 1845.''</picture>
+  </pictures>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
-<!-- TODO: Husk at tildele nye id'er (erstat datoen). Bemærk, »Forord« har anden dato end resten. -->    
+<!-- TODO: Husk at tildele nye id'er (erstat datoen). Bemærk, »Forord« har anden dato end resten. -->
 <!-- Enkelte digte her, findes i andre.xml, så når denne Samlede Digte tilføjes, kan andre.xml nedlægges. Husk dog, at overføre id'er. -->
 
 <section level="1">
 <head>
-   <toctitle>Fabler for Børn</toctitle>
+  <toctitle>Fabler for Børn</toctitle>
 </head>
 <content>
 
 <text id="kaalund2018011701">
 <head>
-   <title>Forord</title>
-   <firstline>Det er den herligste Tidsfordriv</firstline>
-   <notes>
-       <note type="credits">Bidrag fra Lodrö Sangpo Joergen Larsen.</note>.
-   </notes>
-   <quality>korrektur1</quality>
+  <title>Forord</title>
+  <firstline>Det er den herligste Tidsfordriv</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Lodrö Sangpo Joergen Larsen.</note>.
+  </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
 Det er den herligste Tidsfordriv,
 At agte paa Dyrenes Færden og Liv!
-At see, hvor de flokkes om Menneskets Hytte, 
+At see, hvor de flokkes om Menneskets Hytte,
 Nogle til Glæde og Andre til Nytte,
-I Skov, paa Mark, i Stald og i Buur, 
+I Skov, paa Mark, i Stald og i Buur,
 Hvert med sin egen Drift og Natur.
 
 Og kan ikke Dyret græde og lee,
-Det kan dog kjærligt paa Mennesket see. 
-Det bringer sin Tak og klager sin Nød, 
+Det kan dog kjærligt paa Mennesket see.
+Det bringer sin Tak og klager sin Nød,
 Og elsker den Haand, som rækker det Brød;
-Og derfor skal Mennesket Dyret agte, 
+Og derfor skal Mennesket Dyret agte,
 Og gjerne dets venlige Færd betragte.
 </poetry>
 </body>
@@ -50,11 +54,11 @@ Og gjerne dets venlige Færd betragte.
 
 <text id="kaalund2003010401">
 <head>
-   <title>Spædkalven</title>
-   <toctitle>Spædkalven</toctitle>
-   <indextitle>Spædkalven</indextitle>
-   <firstline>Kalv, Du raver som Du er fuld</firstline>
-   <quality>korrektur1</quality>
+  <title>Spædkalven</title>
+  <toctitle>Spædkalven</toctitle>
+  <indextitle>Spædkalven</indextitle>
+  <firstline>Kalv, Du raver som Du er fuld</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -77,11 +81,11 @@ Det var da nok en rigtig Kommers.
 
 <text id="kaalund2003010402">
 <head>
-   <title>Konen og Hesten</title>
-   <toctitle>Konen og Hesten</toctitle>
-   <indextitle>Konen og Hesten</indextitle>
-   <firstline>I Skoven ligger en ensom Hytte</firstline>
-   <quality>korrektur1</quality>
+  <title>Konen og Hesten</title>
+  <toctitle>Konen og Hesten</toctitle>
+  <indextitle>Konen og Hesten</indextitle>
+  <firstline>I Skoven ligger en ensom Hytte</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -104,11 +108,11 @@ De To, de har kun i Verden hinanden.
 
 <text id="kaalund2003010403">
 <head>
-   <title>Pudelhunden</title>
-   <toctitle>Pudelhunden</toctitle>
-   <indextitle>Pudelhunden</indextitle>
-   <firstline>En Pudelhund havde mistet sin Kjole</firstline>
-   <quality>korrektur1</quality>
+  <title>Pudelhunden</title>
+  <toctitle>Pudelhunden</toctitle>
+  <indextitle>Pudelhunden</indextitle>
+  <firstline>En Pudelhund havde mistet sin Kjole</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -131,11 +135,11 @@ den tænkte: hvor Pokker blev Solen af?
 
 <text id="kaalund1999031703">
 <head>
-   <title>Maagen</title>
-   <toctitle>Maagen</toctitle>
-   <indextitle>Maagen</indextitle>
-   <firstline>Maagen skreg over Havets Speil</firstline>
-   <quality>korrektur1</quality>
+  <title>Maagen</title>
+  <toctitle>Maagen</toctitle>
+  <indextitle>Maagen</indextitle>
+  <firstline>Maagen skreg over Havets Speil</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -160,11 +164,11 @@ Da kløede sig Skipperen bag sit Øre.
 
 <text id="kaalund2003010404">
 <head>
-   <title>Skraldemandshesten</title>
-   <toctitle>Skraldemandshesten</toctitle>
-   <indextitle>Skraldemandshesten</indextitle>
-   <firstline>En Skraldemandshest over Torvet drog</firstline>
-   <quality>korrektur1</quality>
+  <title>Skraldemandshesten</title>
+  <toctitle>Skraldemandshesten</toctitle>
+  <indextitle>Skraldemandshesten</indextitle>
+  <firstline>En Skraldemandshest over Torvet drog</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -187,15 +191,15 @@ da peged han paa sin gamle Hest.
 
 <text id="kaalund2003010405">
 <head>
-   <title>Vinteren</title>
-   <toctitle>Vinteren</toctitle>
-   <indextitle>Vinteren</indextitle>
-   <firstline>Nej se, nej se</firstline>
-   <quality>korrektur1</quality>
+  <title>Vinteren</title>
+  <toctitle>Vinteren</toctitle>
+  <indextitle>Vinteren</indextitle>
+  <firstline>Nej se, nej se</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
-<w><center><nonum>Moderen:</nonum></center></w>
+<nonum><center><w>Moderen:</w></center></nonum>
 
 Nej se, nej se,
 der har vi da den første Sne!
@@ -216,11 +220,11 @@ og titted igjen i Flammens Skin.
 
 <text id="kaalund2003010441">
 <head>
-   <title>Slagsmaalet</title>
-   <toctitle>Slagsmaalet</toctitle>
-   <indextitle>Slagsmaalet</indextitle>
-   <firstline>Jeg er klippet, jeg er umaadelig fin</firstline>
-   <quality>korrektur1</quality>
+  <title>Slagsmaalet</title>
+  <toctitle>Slagsmaalet</toctitle>
+  <indextitle>Slagsmaalet</indextitle>
+  <firstline>Jeg er klippet, jeg er umaadelig fin</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -245,11 +249,11 @@ Mig synes, Du glemte Knebelsbarten!
 
 <text id="kaalund2003010442">
 <head>
-   <title>Lænkegrisen</title>
-   <toctitle>Lænkegrisen</toctitle>
-   <indextitle>Lænkegrisen</indextitle>
-   <firstline>Porthunden døde af Alderdom</firstline>
-   <quality>korrektur1</quality>
+  <title>Lænkegrisen</title>
+  <toctitle>Lænkegrisen</toctitle>
+  <indextitle>Lænkegrisen</indextitle>
+  <firstline>Porthunden døde af Alderdom</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -272,11 +276,11 @@ det var en egen Lænkehund, den.
 
 <text id="kaalund2003010443">
 <head>
-   <title>Hanekyllingerne</title>
-   <toctitle>Hanekyllingerne</toctitle>
-   <indextitle>Hanekyllingerne</indextitle>
-   <firstline>Min Kam er meget større end din</firstline>
-   <quality>korrektur1</quality>
+  <title>Hanekyllingerne</title>
+  <toctitle>Hanekyllingerne</toctitle>
+  <indextitle>Hanekyllingerne</indextitle>
+  <firstline>Min Kam er meget større end din</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -310,11 +314,11 @@ det skulde nu være som deres Fa'er.
 
 <text id="kaalund2003010406">
 <head>
-   <title>Kilden</title>
-   <toctitle>Kilden</toctitle>
-   <indextitle>Kilden</indextitle>
-   <firstline>Du vevre, Du lille</firstline>
-   <quality>korrektur1</quality>
+  <title>Kilden</title>
+  <toctitle>Kilden</toctitle>
+  <indextitle>Kilden</indextitle>
+  <firstline>Du vevre, Du lille</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -336,11 +340,11 @@ med det dejlige, klare Kildevand.
 
 <text id="kaalund1999031704">
 <head>
-   <title>Væderen og Grisen</title>
-   <toctitle>Væderen og Grisen</toctitle>
-   <indextitle>Væderen og Grisen</indextitle>
-   <firstline>Med krøllet Hale og næsevis</firstline>
-   <quality>korrektur1</quality>
+  <title>Væderen og Grisen</title>
+  <toctitle>Væderen og Grisen</toctitle>
+  <indextitle>Væderen og Grisen</indextitle>
+  <firstline>Med krøllet Hale og næsevis</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -364,11 +368,11 @@ At holde de gamle Folk i Ære!
 
 <text id="kaalund2003010407">
 <head>
-   <title>Hanen</title>
-   <toctitle>Hanen</toctitle>
-   <indextitle>Hanen</indextitle>
-   <firstline>Det blæser og regner om Bondens Gaard</firstline>
-   <quality>korrektur1</quality>
+  <title>Hanen</title>
+  <toctitle>Hanen</toctitle>
+  <indextitle>Hanen</indextitle>
+  <firstline>Det blæser og regner om Bondens Gaard</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -391,11 +395,11 @@ de tænke: er Hanen mon fra Forstanden!
 
 <text id="kaalund2003010408">
 <head>
-   <title>Fiolen</title>
-   <toctitle>Fiolen</toctitle>
-   <indextitle>Fiolen</indextitle>
-   <firstline>Du lille Fiol, kom frem! kom frem!</firstline>
-   <quality>korrektur1</quality>
+  <title>Fiolen</title>
+  <toctitle>Fiolen</toctitle>
+  <indextitle>Fiolen</indextitle>
+  <firstline>Du lille Fiol, kom frem! kom frem!</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -422,11 +426,11 @@ mens Draaberne maattte fra Bladet trille.
 
 <text id="kaalund2003010409">
 <head>
-   <title>Aftenstunden</title>
-   <toctitle>Aftenstunden</toctitle>
-   <indextitle>Aftenstunden</indextitle>
-   <firstline>Bølge, Du grumme, Du stolte, Du vilde</firstline>
-   <quality>korrektur1</quality>
+  <title>Aftenstunden</title>
+  <toctitle>Aftenstunden</toctitle>
+  <indextitle>Aftenstunden</indextitle>
+  <firstline>Bølge, Du grumme, Du stolte, Du vilde</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -454,11 +458,11 @@ hilste ham Bonden mildt: Guds Fred!
 
 <text id="kaalund2003010410">
 <head>
-   <title>Skaden og Grisen</title>
-   <toctitle>Skaden og Grisen</toctitle>
-   <indextitle>Skaden og Grisen</indextitle>
-   <firstline>Skaden flagred i Gaarden ind</firstline>
-   <quality>korrektur1</quality>
+  <title>Skaden og Grisen</title>
+  <toctitle>Skaden og Grisen</toctitle>
+  <indextitle>Skaden og Grisen</indextitle>
+  <firstline>Skaden flagred i Gaarden ind</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -481,11 +485,11 @@ til hver af Skindet beholdt sit Stykke.
 
 <text id="kaalund2003010411">
 <head>
-   <title>De to Katte</title>
-   <toctitle>De to Katte</toctitle>
-   <indextitle>De to Katte</indextitle>
-   <firstline>Hankatten sidder paa Gaardens Mur</firstline>
-   <quality>korrektur1</quality>
+  <title>De to Katte</title>
+  <toctitle>De to Katte</toctitle>
+  <indextitle>De to Katte</indextitle>
+  <firstline>Hankatten sidder paa Gaardens Mur</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -508,11 +512,11 @@ Som Visen Du sang, Herr Mons, var Takken!
 
 <text id="kaalund1999031701">
 <head>
-   <title>Den dræbte And</title>
-   <toctitle>Den dræbte And</toctitle>
-   <indextitle>Den dræbte And</indextitle>
-   <firstline>I Skoven risled den klare Aa</firstline>
-   <quality>korrektur1</quality>
+  <title>Den dræbte And</title>
+  <toctitle>Den dræbte And</toctitle>
+  <indextitle>Den dræbte And</indextitle>
+  <firstline>I Skoven risled den klare Aa</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -534,11 +538,11 @@ O, har du en Moder, da skjøn derpaa!
 
 <text id="kaalund1999031702">
 <head>
-   <title>Hunden ved Stranden</title>
-   <toctitle>Hunden ved Stranden</toctitle>
-   <indextitle>Hunden ved Stranden</indextitle>
-   <firstline>Saa ti dog, Hund, med den evige Gjøen!</firstline>
-   <quality>korrektur1</quality>
+  <title>Hunden ved Stranden</title>
+  <toctitle>Hunden ved Stranden</toctitle>
+  <indextitle>Hunden ved Stranden</indextitle>
+  <firstline>Saa ti dog, Hund, med den evige Gjøen!</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -564,11 +568,11 @@ For sin Troskab et hædrende Gravmonument.
 
 <text id="kaalund2003010412">
 <head>
-   <title>Kjøreturen</title>
-   <toctitle>Kjøreturen</toctitle>
-   <indextitle>Kjøreturen</indextitle>
-   <firstline>Du, Moppe, er Prins, og jeg er din Kudsk</firstline>
-   <quality>korrektur1</quality>
+  <title>Kjøreturen</title>
+  <toctitle>Kjøreturen</toctitle>
+  <indextitle>Kjøreturen</indextitle>
+  <firstline>Du, Moppe, er Prins, og jeg er din Kudsk</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -593,11 +597,11 @@ han troede, at Moppen sad i Kassen.
 
 <text id="kaalund2003010413">
 <head>
-   <title>Bien</title>
-   <toctitle>Bien</toctitle>
-   <indextitle>Bien</indextitle>
-   <firstline>God Nat, lille Bi</firstline>
-   <quality>korrektur1</quality>
+  <title>Bien</title>
+  <toctitle>Bien</toctitle>
+  <indextitle>Bien</indextitle>
+  <firstline>God Nat, lille Bi</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -622,11 +626,11 @@ da flagrede Bien til Gartneren hen:
 
 <text id="kaalund2003010414">
 <head>
-   <title>Posten</title>
-   <toctitle>Posten</toctitle>
-   <indextitle>Posten</indextitle>
-   <firstline>Hvi staar Du i Hø, Du lange Post?</firstline>
-   <quality>korrektur1</quality>
+  <title>Posten</title>
+  <toctitle>Posten</toctitle>
+  <indextitle>Posten</indextitle>
+  <firstline>Hvi staar Du i Hø, Du lange Post?</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -660,11 +664,11 @@ jeg tror, det kunde have fyldt en Spand.
 
 <text id="kaalund2003010415">
 <head>
-   <title>Hønen og Koen</title>
-   <toctitle>Hønen og Koen</toctitle>
-   <indextitle>Hønen og Koen</indextitle>
-   <firstline>En lille, vanskabt løjerlig Ting</firstline>
-   <quality>korrektur1</quality>
+  <title>Hønen og Koen</title>
+  <toctitle>Hønen og Koen</toctitle>
+  <indextitle>Hønen og Koen</indextitle>
+  <firstline>En lille, vanskabt løjerlig Ting</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -687,11 +691,11 @@ dér jaged den bort baade Fluer og Myg.
 
 <text id="kaalund2003010416">
 <head>
-   <title>Hjorden</title>
-   <toctitle>Hjorden</toctitle>
-   <indextitle>Hjorden</indextitle>
-   <firstline>Og har Du aldrig set det før</firstline>
-   <quality>korrektur1</quality>
+  <title>Hjorden</title>
+  <toctitle>Hjorden</toctitle>
+  <indextitle>Hjorden</indextitle>
+  <firstline>Og har Du aldrig set det før</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -714,11 +718,11 @@ af deres Hoves Sparken.
 
 <text id="kaalund1999031705">
 <head>
-   <title>Hundehvalpen</title>
-   <toctitle>Hundehvalpen</toctitle>
-   <indextitle>Hundehvalpen</indextitle>
-   <firstline>Den var saa buttet, saa trind og blød</firstline>
-   <quality>korrektur1</quality>
+  <title>Hundehvalpen</title>
+  <toctitle>Hundehvalpen</toctitle>
+  <indextitle>Hundehvalpen</indextitle>
+  <firstline>Den var saa buttet, saa trind og blød</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -740,11 +744,11 @@ Det spaaede dens Moder sig Meget af.
 
 <text id="kaalund2003010417">
 <head>
-   <title>Spurveungen</title>
-   <toctitle>Spurveungen</toctitle>
-   <indextitle>Spurveungen</indextitle>
-   <firstline>En Spurveunge, en nøgen En</firstline>
-   <quality>korrektur1</quality>
+  <title>Spurveungen</title>
+  <toctitle>Spurveungen</toctitle>
+  <indextitle>Spurveungen</indextitle>
+  <firstline>En Spurveunge, en nøgen En</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -767,11 +771,11 @@ den kvidred sin Tak til ham i Solen.
 
 <text id="kaalund2003010418">
 <head>
-   <title>Lammene</title>
-   <toctitle>Lammene</toctitle>
-   <indextitle>Lammene</indextitle>
-   <firstline>En Kæmpehøj paa Marken staar</firstline>
-   <quality>korrektur1</quality>
+  <title>Lammene</title>
+  <toctitle>Lammene</toctitle>
+  <indextitle>Lammene</indextitle>
+  <firstline>En Kæmpehøj paa Marken staar</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -793,11 +797,11 @@ og slumre sorgløst paa Kæmpens Grav.
 
 <text id="kaalund2003010419">
 <head>
-   <title>Skaden</title>
-   <toctitle>Skaden</toctitle>
-   <indextitle>Skaden</indextitle>
-   <firstline>I Kroen de havde en tæmmet Skade</firstline>
-   <quality>korrektur1</quality>
+  <title>Skaden</title>
+  <toctitle>Skaden</toctitle>
+  <indextitle>Skaden</indextitle>
+  <firstline>I Kroen de havde en tæmmet Skade</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -820,11 +824,11 @@ men Tordnen hørte kun lidt derefter.
 
 <text id="kaalund2003010420">
 <head>
-   <title>Kattene</title>
-   <toctitle>Kattene</toctitle>
-   <indextitle>Kattene</indextitle>
-   <firstline>Tre, fire Katte hinanden mødte</firstline>
-   <quality>korrektur1</quality>
+  <title>Kattene</title>
+  <toctitle>Kattene</toctitle>
+  <indextitle>Kattene</indextitle>
+  <firstline>Tre, fire Katte hinanden mødte</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -847,11 +851,11 @@ pas paa, han giver os Ingenting!
 
 <text id="kaalund2003010421">
 <head>
-   <title>Rotterne</title>
-   <toctitle>Rotterne</toctitle>
-   <indextitle>Rotterne</indextitle>
-   <firstline>Rotte, Du Tyv, hvor kunde Du flytte</firstline>
-   <quality>korrektur1</quality>
+  <title>Rotterne</title>
+  <toctitle>Rotterne</toctitle>
+  <indextitle>Rotterne</indextitle>
+  <firstline>Rotte, Du Tyv, hvor kunde Du flytte</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -874,11 +878,11 @@ saa kjørte et Æg de bort ad Gangen.
 
 <text id="kaalund1999031706">
 <head>
-   <title>Bjørnen</title>
-   <toctitle>Bjørnen</toctitle>
-   <indextitle>Bjørnen</indextitle>
-   <firstline>Bjørnen sidder ved Strømmens Skum</firstline>
-   <quality>korrektur1</quality>
+  <title>Bjørnen</title>
+  <toctitle>Bjørnen</toctitle>
+  <indextitle>Bjørnen</indextitle>
+  <firstline>Bjørnen sidder ved Strømmens Skum</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -900,11 +904,11 @@ Du kunde jo ladt mig være.''
 
 <text id="kaalund2003010422">
 <head>
-   <title>Rumlepotten</title>
-   <toctitle>Rumlepotten</toctitle>
-   <indextitle>Rumlepotten</indextitle>
-   <firstline>Rumlepotten rendte omkring</firstline>
-   <quality>korrektur1</quality>
+  <title>Rumlepotten</title>
+  <toctitle>Rumlepotten</toctitle>
+  <indextitle>Rumlepotten</indextitle>
+  <firstline>Rumlepotten rendte omkring</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -927,11 +931,11 @@ elske den gamle Knurrepotte.
 
 <text id="kaalund2003010423">
 <head>
-   <title>De to Venner</title>
-   <toctitle>De to Venner</toctitle>
-   <indextitle>De to Venner</indextitle>
-   <firstline>Med Killingen voxede Hvalpen op</firstline>
-   <quality>korrektur1</quality>
+  <title>De to Venner</title>
+  <toctitle>De to Venner</toctitle>
+  <indextitle>De to Venner</indextitle>
+  <firstline>Med Killingen voxede Hvalpen op</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -954,11 +958,11 @@ de spiste og sov ved hinandens Side.
 
 <text id="kaalund1999031707">
 <head>
-   <title>Kyllingerne</title>
-   <toctitle>Kyllingerne</toctitle>
-   <indextitle>Kyllingerne</indextitle>
-   <firstline>Jeg fryser, Moder, om mine Ben</firstline>
-   <quality>korrektur1</quality>
+  <title>Kyllingerne</title>
+  <toctitle>Kyllingerne</toctitle>
+  <indextitle>Kyllingerne</indextitle>
+  <firstline>Jeg fryser, Moder, om mine Ben</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -983,11 +987,11 @@ Smaakyllingerne under den bløde Dyne.
 
 <text id="kaalund2003010424">
 <head>
-   <title>Edderkoppen</title>
-   <toctitle>Edderkoppen</toctitle>
-   <indextitle>Edderkoppen</indextitle>
-   <firstline>Du Edderkop, vil Du til Hækken spinde?</firstline>
-   <quality>korrektur1</quality>
+  <title>Edderkoppen</title>
+  <toctitle>Edderkoppen</toctitle>
+  <indextitle>Edderkoppen</indextitle>
+  <firstline>Du Edderkop, vil Du til Hækken spinde?</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1010,11 +1014,11 @@ nu sad den derovre i Aftenrøden.
 
 <text id="kaalund2003010425">
 <head>
-   <title>Svinet og Anden</title>
-   <toctitle>Svinet og Anden</toctitle>
-   <indextitle>Svinet og Anden</indextitle>
-   <firstline>Hønen gaar saa vever og ren</firstline>
-   <quality>korrektur1</quality>
+  <title>Svinet og Anden</title>
+  <toctitle>Svinet og Anden</toctitle>
+  <indextitle>Svinet og Anden</indextitle>
+  <firstline>Hønen gaar saa vever og ren</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1037,11 +1041,11 @@ det kan man kalde at høste og pløje!
 
 <text id="kaalund2003010426">
 <head>
-   <title>Lækatten</title>
-   <toctitle>Lækatten</toctitle>
-   <indextitle>Lækatten</indextitle>
-   <firstline>Den Lækat titter fra Gjærdet ud</firstline>
-   <quality>korrektur1</quality>
+  <title>Lækatten</title>
+  <toctitle>Lækatten</toctitle>
+  <indextitle>Lækatten</indextitle>
+  <firstline>Den Lækat titter fra Gjærdet ud</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1064,11 +1068,11 @@ dér sad det og saae paa Nytaarsnyet.
 
 <text id="kaalund2003010427">
 <head>
-   <title>Grisene</title>
-   <toctitle>Grisene</toctitle>
-   <indextitle>Grisene</indextitle>
-   <firstline>Skammer Jer, Børn, vort Liv er for kort</firstline>
-   <quality>korrektur1</quality>
+  <title>Grisene</title>
+  <toctitle>Grisene</toctitle>
+  <indextitle>Grisene</indextitle>
+  <firstline>Skammer Jer, Børn, vort Liv er for kort</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1093,11 +1097,11 @@ end faa sig for Tørsten en Taar at drikke.
 
 <text id="kaalund2003010428">
 <head>
-   <title>Hesten og Føllet</title>
-   <toctitle>Hesten og Føllet</toctitle>
-   <indextitle>Hesten og Føllet</indextitle>
-   <firstline>Moder, jeg længes, faar jeg ej Lov</firstline>
-   <quality>korrektur1</quality>
+  <title>Hesten og Føllet</title>
+  <toctitle>Hesten og Føllet</toctitle>
+  <indextitle>Hesten og Føllet</indextitle>
+  <firstline>Moder, jeg længes, faar jeg ej Lov</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1125,11 +1129,11 @@ skjøndt Pisken var Silke og Sporen forgyldt.
 
 <text id="kaalund2003010429">
 <head>
-   <title>Bissekræmmeren og hans Hund</title>
-   <toctitle>Bissekræmmeren og hans Hund</toctitle>
-   <indextitle>Bissekræmmeren og hans Hund</indextitle>
-   <firstline>Hunden vil gjerne hos Mennesket bo</firstline>
-   <quality>korrektur1</quality>
+  <title>Bissekræmmeren og hans Hund</title>
+  <toctitle>Bissekræmmeren og hans Hund</toctitle>
+  <indextitle>Bissekræmmeren og hans Hund</indextitle>
+  <firstline>Hunden vil gjerne hos Mennesket bo</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1152,11 +1156,11 @@ et Stykke han først til Hunden byder.
 
 <text id="kaalund2003010430">
 <head>
-   <title>Abekatten</title>
-   <toctitle>Abekatten</toctitle>
-   <indextitle>Abekatten</indextitle>
-   <firstline>Ved Havet vandred en Abekat</firstline>
-   <quality>korrektur1</quality>
+  <title>Abekatten</title>
+  <toctitle>Abekatten</toctitle>
+  <indextitle>Abekatten</indextitle>
+  <firstline>Ved Havet vandred en Abekat</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1179,11 +1183,11 @@ han sagde: Herr Østers, Tak for Mad!
 
 <text id="kaalund2003010431">
 <head>
-   <title>Nissen</title>
-   <toctitle>Nissen</toctitle>
-   <indextitle>Nissen</indextitle>
-   <firstline>Du lille Nisse med Huen rød</firstline>
-   <quality>korrektur1</quality>
+  <title>Nissen</title>
+  <toctitle>Nissen</toctitle>
+  <indextitle>Nissen</indextitle>
+  <firstline>Du lille Nisse med Huen rød</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1211,11 +1215,11 @@ Hvo uden Nissen kan Grøden spise!
 
 <text id="kaalund2003010432">
 <head>
-   <title>Stormen</title>
-   <toctitle>Stormen</toctitle>
-   <indextitle>Stormen</indextitle>
-   <firstline>Hu, hu! hvor Du bider, Du skarpe Vind</firstline>
-   <quality>korrektur1</quality>
+  <title>Stormen</title>
+  <toctitle>Stormen</toctitle>
+  <indextitle>Stormen</indextitle>
+  <firstline>Hu, hu! hvor Du bider, Du skarpe Vind</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1255,11 +1259,11 @@ men Storm og Solskin maa følges ad.
 
 <text id="kaalund2003010433">
 <head>
-   <title>God Nat!</title>
-   <toctitle>God Nat!</toctitle>
-   <indextitle>God Nat!</indextitle>
-   <firstline>Nu lægger sig hele Naturen til Ro</firstline>
-   <quality>korrektur1</quality>
+  <title>God Nat!</title>
+  <toctitle>God Nat!</toctitle>
+  <indextitle>God Nat!</indextitle>
+  <firstline>Nu lægger sig hele Naturen til Ro</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1284,11 +1288,11 @@ Sov sødeligt Alle! god Nat! god Nat!
 
 <text id="kaalund2003010434">
 <head>
-   <title>Vogterdrengen</title>
-   <toctitle>Vogterdrengen</toctitle>
-   <indextitle>Vogterdrengen</indextitle>
-   <firstline>Deroppe bag den høje Allé</firstline>
-   <quality>korrektur1</quality>
+  <title>Vogterdrengen</title>
+  <toctitle>Vogterdrengen</toctitle>
+  <indextitle>Vogterdrengen</indextitle>
+  <firstline>Deroppe bag den høje Allé</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1311,11 +1315,11 @@ sine Træsko med samt den røde Hue.
 
 <text id="kaalund2003010435">
 <head>
-   <title>Tudsen</title>
-   <toctitle>Tudsen</toctitle>
-   <indextitle>Tudsen</indextitle>
-   <firstline>Jeg er styg og rynket, jeg véd det nok</firstline>
-   <quality>korrektur1</quality>
+  <title>Tudsen</title>
+  <toctitle>Tudsen</toctitle>
+  <indextitle>Tudsen</indextitle>
+  <firstline>Jeg er styg og rynket, jeg véd det nok</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1338,11 +1342,11 @@ hilse paa deres Moder dernede.
 
 <text id="kaalund2003010436">
 <head>
-   <title>De to Heste</title>
-   <toctitle>De to Heste</toctitle>
-   <indextitle>De to Heste</indextitle>
-   <firstline>Naar Godtfolk mødes, de hilse: God Dag!</firstline>
-   <quality>korrektur1</quality>
+  <title>De to Heste</title>
+  <toctitle>De to Heste</toctitle>
+  <indextitle>De to Heste</indextitle>
+  <firstline>Naar Godtfolk mødes, de hilse: God Dag!</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1365,11 +1369,11 @@ Tjenstvillighed lære Dig disse Heste.
 
 <text id="kaalund2003010437">
 <head>
-   <title>Møllehesten</title>
-   <toctitle>Møllehesten</toctitle>
-   <indextitle>Møllehesten</indextitle>
-   <firstline>Hvi stirrer Du, Hest, fra det gamle Skur</firstline>
-   <quality>korrektur1</quality>
+  <title>Møllehesten</title>
+  <toctitle>Møllehesten</toctitle>
+  <indextitle>Møllehesten</indextitle>
+  <firstline>Hvi stirrer Du, Hest, fra det gamle Skur</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1392,11 +1396,11 @@ end at ødsle i Møllen sit Mod, sin Kraft.
 
 <text id="kaalund2003010438">
 <head>
-   <title>Ræven</title>
-   <toctitle>Ræven</toctitle>
-   <indextitle>Ræven</indextitle>
-   <firstline>Ræven lister sig til sin Hule</firstline>
-   <quality>korrektur1</quality>
+  <title>Ræven</title>
+  <toctitle>Ræven</toctitle>
+  <indextitle>Ræven</indextitle>
+  <firstline>Ræven lister sig til sin Hule</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1419,11 +1423,11 @@ mens Ungerne valsed omkring i Græsset.
 
 <text id="kaalund2003010439">
 <head>
-   <title>Duerne</title>
-   <toctitle>Duerne</toctitle>
-   <indextitle>Duerne</indextitle>
-   <firstline>Duerne sidde paa Husets Tag</firstline>
-   <quality>korrektur1</quality>
+  <title>Duerne</title>
+  <toctitle>Duerne</toctitle>
+  <indextitle>Duerne</indextitle>
+  <firstline>Duerne sidde paa Husets Tag</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1446,11 +1450,11 @@ Nu kunde Røveren ha'e det saa godt.
 
 <text id="kaalund2003010440">
 <head>
-   <title>Hønsene og Ænderne</title>
-   <toctitle>Hønsene og Ænderne</toctitle>
-   <indextitle>Hønsene og Ænderne</indextitle>
-   <firstline>I Luften taarner sig Sky ved Sky</firstline>
-   <quality>korrektur1</quality>
+  <title>Hønsene og Ænderne</title>
+  <toctitle>Hønsene og Ænderne</toctitle>
+  <indextitle>Hønsene og Ænderne</indextitle>
+  <firstline>I Luften taarner sig Sky ved Sky</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1476,17 +1480,17 @@ end at lade af Regnen sig vaske og væde.
 
 <section level="1">
 <head>
-   <toctitle>Epigrammer</toctitle>
+  <toctitle>Epigrammer</toctitle>
 </head>
 <content>
 
 <text id="kaalund2001062501">
 <head>
-   <title>Naar Du er dum</title>
-   <toctitle>Naar Du er dum</toctitle>
-   <indextitle>Naar Du er dum</indextitle>
-   <firstline>Naar Du er dum</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Naar Du er dum</title>
+  <toctitle>Naar Du er dum</toctitle>
+  <indextitle>Naar Du er dum</indextitle>
+  <firstline>Naar Du er dum</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -1502,11 +1506,11 @@ og tænker Død og Pine!
 
 <text id="kaalund2001062502">
 <head>
-   <title>Jeg, raabte Vintren</title>
-   <toctitle>&bdquo;Jeg&ldquo;, raabte Vintren</toctitle>
-   <indextitle>Jeg, raabte Vintren</indextitle>
-   <firstline>Jeg, raabte Vintren, klæder Jorder af</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Jeg, raabte Vintren</title>
+  <toctitle>„Jeg“, raabte Vintren</toctitle>
+  <indextitle>Jeg, raabte Vintren</indextitle>
+  <firstline>Jeg, raabte Vintren, klæder Jorder af</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -1521,11 +1525,11 @@ og derfor Skabningen mig priser.''
 
 <text id="kaalund2001062503">
 <head>
-   <title>O Pige! jeg vil ikke sé</title>
-   <toctitle>O Pige! jeg vil ikke sé</toctitle>
-   <indextitle>O Pige! jeg vil ikke sé</indextitle>
-   <firstline>O Pige! jeg vil ikke sé</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>O Pige! jeg vil ikke sé</title>
+  <toctitle>O Pige! jeg vil ikke sé</toctitle>
+  <indextitle>O Pige! jeg vil ikke sé</indextitle>
+  <firstline>O Pige! jeg vil ikke sé</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -1539,11 +1543,11 @@ og kan med Hjertet græde.
 
 <text id="kaalund2001062504">
 <head>
-   <title>Den Mand er ikke stort bevendt, som praler af sin Hjerne</title>
-   <toctitle>Den Mand er ikke stort bevendt, som praler af sin Hjerne</toctitle>
-   <indextitle>Den Mand er ikke stort bevendt, som praler af sin Hjerne</indextitle>
-   <firstline>Den Mand er ikke stort bevendt, som praler af sin Hjerne</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Den Mand er ikke stort bevendt, som praler af sin Hjerne</title>
+  <toctitle>Den Mand er ikke stort bevendt, som praler af sin Hjerne</toctitle>
+  <indextitle>Den Mand er ikke stort bevendt, som praler af sin Hjerne</indextitle>
+  <firstline>Den Mand er ikke stort bevendt, som praler af sin Hjerne</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -1555,11 +1559,11 @@ det er jo kun den skrumpne Nød, som rasler med sin Kjærne.
 
 <text id="kaalund2001062505">
 <head>
-   <title>Natur, hvor lidt har Mennesket Du paa dets Vandring givet</title>
-   <toctitle>Natur, hvor lidt har Mennesket Du paa dets Vandring givet</toctitle>
-   <indextitle>Natur, hvor lidt har Mennesket Du paa dets Vandring givet</indextitle>
-   <firstline>Natur, hvor lidt har Mennesket Du paa dets Vandring givet</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Natur, hvor lidt har Mennesket Du paa dets Vandring givet</title>
+  <toctitle>Natur, hvor lidt har Mennesket Du paa dets Vandring givet</toctitle>
+  <indextitle>Natur, hvor lidt har Mennesket Du paa dets Vandring givet</indextitle>
+  <firstline>Natur, hvor lidt har Mennesket Du paa dets Vandring givet</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -1577,11 +1581,11 @@ Her har en Regning jeg igjen nu faaet fra min Skræder!
 
 <text id="kaalund2001062506">
 <head>
-   <title>Af Recensent faar man Navnet nu</title>
-   <toctitle>Af Recensent faar man Navnet nu</toctitle>
-   <indextitle>Af Recensent faar man Navnet nu</indextitle>
-   <firstline>Af Recensent faar man Navnet nu</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Af Recensent faar man Navnet nu</title>
+  <toctitle>Af Recensent faar man Navnet nu</toctitle>
+  <indextitle>Af Recensent faar man Navnet nu</indextitle>
+  <firstline>Af Recensent faar man Navnet nu</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -1595,11 +1599,11 @@ som ej har Marv til et Træ.
 
 <text id="kaalund2001062507">
 <head>
-   <title>Ja, Stof til Sang har hver en Tid</title>
-   <toctitle>Ja, Stof til Sang har hver en Tid</toctitle>
-   <indextitle>Ja, Stof til Sang har hver en Tid</indextitle>
-   <firstline>Ja, Stof til Sang har hver en Tid</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Ja, Stof til Sang har hver en Tid</title>
+  <toctitle>Ja, Stof til Sang har hver en Tid</toctitle>
+  <indextitle>Ja, Stof til Sang har hver en Tid</indextitle>
+  <firstline>Ja, Stof til Sang har hver en Tid</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -1613,11 +1617,11 @@ saa dog ved sine Narres.
 
 <text id="kaalund2001062508">
 <head>
-   <title>Tag denne farvede Devise</title>
-   <toctitle>Tag denne farvede Devise</toctitle>
-   <indextitle>Tag denne farvede Devise</indextitle>
-   <firstline>Tag denne farvede Devise</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Tag denne farvede Devise</title>
+  <toctitle>Tag denne farvede Devise</toctitle>
+  <indextitle>Tag denne farvede Devise</indextitle>
+  <firstline>Tag denne farvede Devise</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -1631,11 +1635,11 @@ og saa, saa ligger Tanken indeni.
 
 <text id="kaalund2001062509">
 <head>
-   <title>Jeg, raabte højt en Skralde</title>
-   <toctitle>&bdquo;Jeg&ldquo;, raabte højt en Skralde</toctitle>
-   <indextitle>Jeg, raabte højt en Skralde</indextitle>
-   <firstline>Jeg, raabte højt en Skralde</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Jeg, raabte højt en Skralde</title>
+  <toctitle>„Jeg“, raabte højt en Skralde</toctitle>
+  <indextitle>Jeg, raabte højt en Skralde</indextitle>
+  <firstline>Jeg, raabte højt en Skralde</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -1651,11 +1655,11 @@ Lad sé - da var det Snavs.
 
 <text id="kaalund2001062510">
 <head>
-   <title>Et Sildehoved i Mørket laa</title>
-   <toctitle>Et Sildehoved i Mørket laa</toctitle>
-   <indextitle>Et Sildehoved i Mørket laa</indextitle>
-   <firstline>Et Sildehoved i Mørket laa</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Et Sildehoved i Mørket laa</title>
+  <toctitle>Et Sildehoved i Mørket laa</toctitle>
+  <indextitle>Et Sildehoved i Mørket laa</indextitle>
+  <firstline>Et Sildehoved i Mørket laa</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -1671,12 +1675,12 @@ det lyse Hoved ej lyste mér.
 
 <text id="kaalund2001062511">
 <head>
-   <title>Shakespeare</title>
-   <toctitle>Shakespeare</toctitle>
-   <indextitle>Shakespeare</indextitle>
-   <firstline>Lér jeg af Hjertet med Dig, jeg kunde bevæget dog græde</firstline>
-   <keywords>shakespeare</keywords>
-   <quality>korrektur1,kilde</quality>
+  <title>Shakespeare</title>
+  <toctitle>Shakespeare</toctitle>
+  <indextitle>Shakespeare</indextitle>
+  <firstline>Lér jeg af Hjertet med Dig, jeg kunde bevæget dog græde</firstline>
+  <keywords>shakespeare</keywords>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -1690,12 +1694,12 @@ bøjer min Alvor i Smil og smelter i Taarer min Latter.
 
 <text id="kaalund2001062512">
 <head>
-   <title>Grundtvig</title>
-   <toctitle>Grundtvig</toctitle>
-   <indextitle>Grundtvig</indextitle>
-   <firstline>Hel sælsomt det i Verden gaar</firstline>
-   <keywords>grundtvig</keywords>
-   <quality>korrektur1,kilde</quality>
+  <title>Grundtvig</title>
+  <toctitle>Grundtvig</toctitle>
+  <indextitle>Grundtvig</indextitle>
+  <firstline>Hel sælsomt det i Verden gaar</firstline>
+  <keywords>grundtvig</keywords>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -1709,12 +1713,12 @@ det har jeg aldrig rigtig vidst!
 
 <text id="kaalund2001062513">
 <head>
-   <title>Voltaire</title>
-   <toctitle>Voltaire</toctitle>
-   <indextitle>Voltaire</indextitle>
-   <firstline>En Digter sang: Hvor Smaa kan være store</firstline>
-   <keywords>voltaire</keywords>
-   <quality>korrektur1,kilde</quality>
+  <title>Voltaire</title>
+  <toctitle>Voltaire</toctitle>
+  <indextitle>Voltaire</indextitle>
+  <firstline>En Digter sang: Hvor Smaa kan være store</firstline>
+  <keywords>voltaire</keywords>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -1728,13 +1732,13 @@ jeg synger: Ak, hvor Store tidt er smaa!
 
 <text id="kaalund2001062514">
 <head>
-   <title>Schack Staffeldt</title>
-   <firstline>Schack Staffeldt, de dybeste drømmende Savn</firstline>
-   <notes>
-      <note>Staffeldt er <a person="staffeldt">A. W. Schack von Staffeldt</a> (1769-1826).</note>
-   </notes>
-   <keywords>staffeldt</keywords>
-   <quality>korrektur1,kilde</quality>
+  <title>Schack Staffeldt</title>
+  <firstline>Schack Staffeldt, de dybeste drømmende Savn</firstline>
+  <notes>
+    <note>Staffeldt er <a person="staffeldt">A. W. Schack von Staffeldt</a> (1769-1826).</note>
+  </notes>
+  <keywords>staffeldt</keywords>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -1751,17 +1755,17 @@ Naar gik det ej saadan det Himmelske her!
 
 <section level="1">
 <head>
-    <toctitle>Et Foraar</toctitle>
+  <toctitle>Et Foraar</toctitle>
 </head>
 <content>
 
 <text id="kaalund2001061401">
 <head>
-   <title>Sommerfuglene</title>
-   <toctitle>Sommerfuglene</toctitle>
-   <indextitle>Sommerfuglene</indextitle>
-   <firstline>En Sommerfuglesamling er disse Sange</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Sommerfuglene</title>
+  <toctitle>Sommerfuglene</toctitle>
+  <indextitle>Sommerfuglene</indextitle>
+  <firstline>En Sommerfuglesamling er disse Sange</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -1815,13 +1819,13 @@ maaske skal ud de flyve som jublende Sange!
 
 <text id="kaalund2001061402">
 <head>
-   <title>Til Adam Oehlenschläger</title>
-   <subtitle>Tilegnelsesdigt med min første Digtsamling.</subtitle>
-   <toctitle>Til Adam Oehlenschläger</toctitle>
-   <indextitle>Til Adam Oehlenschläger</indextitle>
-   <firstline>Nordens Homeros! Hvad kan jeg Dig sige</firstline>
-   <keywords>oehlenschlaeger</keywords>
-   <quality>korrektur1,kilde</quality>
+  <title>Til Adam Oehlenschläger</title>
+  <subtitle>Tilegnelsesdigt med min første Digtsamling.</subtitle>
+  <toctitle>Til Adam Oehlenschläger</toctitle>
+  <indextitle>Til Adam Oehlenschläger</indextitle>
+  <firstline>Nordens Homeros! Hvad kan jeg Dig sige</firstline>
+  <keywords>oehlenschlaeger</keywords>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -1893,16 +1897,16 @@ endnu som Barnet har kjær!
 
 <text id="kaalund2001061403">
 <head>
-   <title>Hilsen til Thorvaldsen</title>
-   <subtitle>1838</subtitle>
-   <toctitle>Hilsen til Thorvaldsen</toctitle>
-   <indextitle>Hilsen til Thorvaldsen</indextitle>
-   <firstline>Vær velkommen, Søn af gamle Norden</firstline>
-   <notes>
-      <note>Billedhuggeren Bertel Thorvaldsen (1770-1844) vendte i 1838 tilbage til Danmark fra Rom, hvor han havde boet og virket i fyrre år.</note>
-   </notes>
-   <keywords>thorvaldsen</keywords>
-   <quality>korrektur1,kilde</quality>
+  <title>Hilsen til Thorvaldsen</title>
+  <subtitle>1838</subtitle>
+  <toctitle>Hilsen til Thorvaldsen</toctitle>
+  <indextitle>Hilsen til Thorvaldsen</indextitle>
+  <firstline>Vær velkommen, Søn af gamle Norden</firstline>
+  <notes>
+    <note>Billedhuggeren Bertel Thorvaldsen (1770-1844) vendte i 1838 tilbage til Danmark fra Rom, hvor han havde boet og virket i fyrre år.</note>
+  </notes>
+  <keywords>thorvaldsen</keywords>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -1989,11 +1993,11 @@ med dit Øjes blaa Forglemmigej!
 
 <text id="kaalund2001061404">
 <head>
-   <title>Thorvaldsens &bdquo;Psyche sælger Amoriner&ldquo;</title>
-   <toctitle>Thorvaldsens &bdquo;Psyche sælger Amoriner&ldquo;</toctitle>
-   <indextitle>Thorvaldsens &bdquo;Psyche sælger Amoriner&ldquo;</indextitle>
-   <firstline>Hver Gang, o Du herlige Mester</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Thorvaldsens „Psyche sælger Amoriner“</title>
+  <toctitle>Thorvaldsens „Psyche sælger Amoriner“</toctitle>
+  <indextitle>Thorvaldsens „Psyche sælger Amoriner“</indextitle>
+  <firstline>Hver Gang, o Du herlige Mester</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -2128,12 +2132,12 @@ Vorherre os Alle bevare
 
 <text id="kaalund2001061405">
 <head>
-   <title>Kvindens Skabelse</title>
-   <toctitle>Kvindens Skabelse</toctitle>
-   <indextitle>Kvindens Skabelse</indextitle>
-   <firstline>Tidens Morgen frembrød i straalende Glans over Eden</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>heksameter</keywords>
+  <title>Kvindens Skabelse</title>
+  <toctitle>Kvindens Skabelse</toctitle>
+  <indextitle>Kvindens Skabelse</indextitle>
+  <firstline>Tidens Morgen frembrød i straalende Glans over Eden</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>heksameter</keywords>
 </head>
 <body>
 <poetry>
@@ -2153,11 +2157,11 @@ Englen, ved hvilken er tabt, men atter gjenfundet et Eden!
 
 <text id="kaalund2001061406">
 <head>
-   <title>Aftenskumring</title>
-   <toctitle>Aftenskumring</toctitle>
-   <indextitle>Aftenskumring</indextitle>
-   <firstline>Hver en Smaafugl blunder</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Aftenskumring</title>
+  <toctitle>Aftenskumring</toctitle>
+  <indextitle>Aftenskumring</indextitle>
+  <firstline>Hver en Smaafugl blunder</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -2193,11 +2197,11 @@ ak, kun stakket Frist!
 
 <text id="kaalund2001061407">
 <head>
-   <title>Alverden er syg</title>
-   <toctitle>Alverden er syg</toctitle>
-   <indextitle>Alverden er syg</indextitle>
-   <firstline>Alverden er syg, Alverden er mat</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Alverden er syg</title>
+  <toctitle>Alverden er syg</toctitle>
+  <indextitle>Alverden er syg</indextitle>
+  <firstline>Alverden er syg, Alverden er mat</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -2226,13 +2230,13 @@ da, syge Verden: Godnat!
 
 <text id="kaalund2001061408">
 <head>
-   <title>Til Nic. Fred. Sev. Grundtvig</title>
-   <subtitle>Afsunget ved Slutningen af hans historiske Forelæsninger paa Borch's Kollegium den 26de November 1838.</subtitle>
-   <toctitle>Til Nic. Fred. Sev. Grundtvig</toctitle>
-   <indextitle>Til Nic. Fred. Sev. Grundtvig</indextitle>
-   <firstline>Kæmpeaand af Kraftens Alder</firstline>
-   <keywords>grundtvig</keywords>
-   <quality>korrektur1,kilde</quality>
+  <title>Til Nic. Fred. Sev. Grundtvig</title>
+  <subtitle>Afsunget ved Slutningen af hans historiske Forelæsninger paa Borch's Kollegium den 26de November 1838.</subtitle>
+  <toctitle>Til Nic. Fred. Sev. Grundtvig</toctitle>
+  <indextitle>Til Nic. Fred. Sev. Grundtvig</indextitle>
+  <firstline>Kæmpeaand af Kraftens Alder</firstline>
+  <keywords>grundtvig</keywords>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -2304,11 +2308,11 @@ og hvert Hjerte røres!
 
 <text id="kaalund2001061409">
 <head>
-   <title>Efemer-Glæden</title>
-   <toctitle>Efemer-Glæden</toctitle>
-   <indextitle>Efemer-Glæden</indextitle>
-   <firstline>Klart straaler Slottet i festlig Glans</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Efemer-Glæden</title>
+  <toctitle>Efemer-Glæden</toctitle>
+  <indextitle>Efemer-Glæden</indextitle>
+  <firstline>Klart straaler Slottet i festlig Glans</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -2342,11 +2346,11 @@ Men alle de skulle Dig følge!''
 
 <text id="kaalund2001061410">
 <head>
-   <title>Frydensborg</title>
-   <toctitle>Frydensborg</toctitle>
-   <indextitle>Frydensborg</indextitle>
-   <firstline>Et Sted i Jylland, jeg véd ej hvor</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Frydensborg</title>
+  <toctitle>Frydensborg</toctitle>
+  <indextitle>Frydensborg</indextitle>
+  <firstline>Et Sted i Jylland, jeg véd ej hvor</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -2390,12 +2394,12 @@ Vorherre nok sørger for Resten!''
 
 <text id="kaalund2001061411">
 <head>
-   <title>Niels Ebbesens Mindestøtte</title>
-   <subtitle>1838</subtitle>
-   <toctitle>Niels Ebbesens Mindestøtte</toctitle>
-   <indextitle>Niels Ebbesens Mindestøtte</indextitle>
-   <firstline>En Bautasten paa gammel ærlig Vis</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Niels Ebbesens Mindestøtte</title>
+  <subtitle>1838</subtitle>
+  <toctitle>Niels Ebbesens Mindestøtte</toctitle>
+  <indextitle>Niels Ebbesens Mindestøtte</indextitle>
+  <firstline>En Bautasten paa gammel ærlig Vis</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -2493,11 +2497,11 @@ da over Dig Du fejgt vil bryde Staven!
 
 <text id="kaalund2001061502">
 <head>
-   <title>Konen ved Ledet i Frederiksdal</title>
-   <toctitle>Konen ved Ledet i Frederiksdal</toctitle>
-   <indextitle>Konen ved Ledet i Frederiksdal</indextitle>
-   <firstline>Naar gjennem det dejlige Frederiksdal</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Konen ved Ledet i Frederiksdal</title>
+  <toctitle>Konen ved Ledet i Frederiksdal</toctitle>
+  <indextitle>Konen ved Ledet i Frederiksdal</indextitle>
+  <firstline>Naar gjennem det dejlige Frederiksdal</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -2576,12 +2580,12 @@ hvormed hun den bedre kan pryde.
 
 <text id="kaalund2001061503">
 <head>
-   <title>Ved Frederik den sjettes Død</title>
-   <toctitle>Ved Frederik den sjettes Død</toctitle>
-   <indextitle>Ved Frederik den sjettes Død</indextitle>
-   <firstline>En Sfinx med Fingeren paa sin Mund</firstline>
-   <keywords>frederik6</keywords><!-- der nævnes flere gamle konger... -->
-   <quality>korrektur1,kilde</quality>
+  <title>Ved Frederik den sjettes Død</title>
+  <toctitle>Ved Frederik den sjettes Død</toctitle>
+  <indextitle>Ved Frederik den sjettes Død</indextitle>
+  <firstline>En Sfinx med Fingeren paa sin Mund</firstline>
+  <keywords>frederik6</keywords><!-- der nævnes flere gamle konger... -->
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -2698,13 +2702,13 @@ sit Hoved til Folket kan hælde!''
 
 <text id="kaalund2001061504">
 <head>
-   <title>Til Historiemaler, Professor Eckersberg</title>
-   <subtitle>Ved hans Halvhundredaars Jubilæum</subtitle>
-   <toctitle>Til Historiemaler, Professor Eckersberg</toctitle>
-   <indextitle>Til Historiemaler, Professor Eckersberg</indextitle>
-   <firstline>Vi bringe Dig vor Hylding, kjære Gamle</firstline>
-   <keywords>eckersberg,thorvaldsen,kuchler,marstrand,bendz</keywords>
-   <quality>korrektur1,kilde</quality>
+  <title>Til Historiemaler, Professor Eckersberg</title>
+  <subtitle>Ved hans Halvhundredaars Jubilæum</subtitle>
+  <toctitle>Til Historiemaler, Professor Eckersberg</toctitle>
+  <indextitle>Til Historiemaler, Professor Eckersberg</indextitle>
+  <firstline>Vi bringe Dig vor Hylding, kjære Gamle</firstline>
+  <keywords>eckersberg,thorvaldsen,kuchler,marstrand,bendz</keywords>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -2758,11 +2762,11 @@ vor Ven, vor elskelige Eckersberg!
 
 <text id="kaalund2001061505">
 <head>
-   <title>Kjærligheds Trang</title>
-   <toctitle>Kjærligheds Trang</toctitle>
-   <indextitle>Kjærligheds Trang</indextitle>
-   <firstline>Dig, Kjærligheds vemodsfulde</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Kjærligheds Trang</title>
+  <toctitle>Kjærligheds Trang</toctitle>
+  <indextitle>Kjærligheds Trang</indextitle>
+  <firstline>Dig, Kjærligheds vemodsfulde</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -2831,11 +2835,11 @@ skal ej i Natten den sorte
 
 <text id="kaalund2001061506">
 <head>
-   <title>Aftenskyerne</title>
-   <toctitle>Aftenskyerne</toctitle>
-   <indextitle>Aftenskyerne</indextitle>
-   <firstline>Naar Aftnen breder om Jorden sit Slør</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Aftenskyerne</title>
+  <toctitle>Aftenskyerne</toctitle>
+  <indextitle>Aftenskyerne</indextitle>
+  <firstline>Naar Aftnen breder om Jorden sit Slør</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -2879,11 +2883,11 @@ hvad skulde jeg Daare i Englenes By!
 
 <text id="kaalund2001061601">
 <head>
-   <title>Den stumme Sorg</title>
-   <toctitle>Den stumme Sorg</toctitle>
-   <indextitle>Den stumme Sorg</indextitle>
-   <firstline>Kom, liden Thora, kom og sid</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Den stumme Sorg</title>
+  <toctitle>Den stumme Sorg</toctitle>
+  <indextitle>Den stumme Sorg</indextitle>
+  <firstline>Kom, liden Thora, kom og sid</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -2977,11 +2981,11 @@ mindes mig da som Søster!
 
 <text id="kaalund2001061602">
 <head>
-   <title>Fortrøstning</title>
-   <toctitle>Fortrøstning</toctitle>
-   <indextitle>Fortrøstning</indextitle>
-   <firstline>Jeg sad og saae</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Fortrøstning</title>
+  <toctitle>Fortrøstning</toctitle>
+  <indextitle>Fortrøstning</indextitle>
+  <firstline>Jeg sad og saae</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -3030,11 +3034,11 @@ i Østen som for tusind Aar!
 
 <text id="kaalund2001061603">
 <head>
-   <title>Vor Tid</title>
-   <toctitle>Vor Tid</toctitle>
-   <indextitle>Vor Tid</indextitle>
-   <firstline>Nu skriver fast Alle den dejligste Stil</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Vor Tid</title>
+  <toctitle>Vor Tid</toctitle>
+  <indextitle>Vor Tid</indextitle>
+  <firstline>Nu skriver fast Alle den dejligste Stil</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -3127,11 +3131,11 @@ jeg jubler som den dog for Livets Væld!
 
 <text id="kaalund2001061701">
 <head>
-   <title>Den sande Fryd</title>
-   <toctitle>Den sande Fryd</toctitle>
-   <indextitle>Den sande Fryd</indextitle>
-   <firstline>Kom, glade Overgivenhed</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Den sande Fryd</title>
+  <toctitle>Den sande Fryd</toctitle>
+  <indextitle>Den sande Fryd</indextitle>
+  <firstline>Kom, glade Overgivenhed</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -3210,12 +3214,12 @@ og Fryd for Ingenting!
 
 <text id="kaalund2001061702">
 <head>
-   <title>Eventyret</title>
-   <subtitle>Til en Radering af Retsch: Pigen med Hexemasken</subtitle>
-   <toctitle>Eventyret</toctitle>
-   <indextitle>Eventyret</indextitle>
-   <firstline>Lig en gammel tandløs Krykkemo'er</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Eventyret</title>
+  <subtitle>Til en Radering af Retsch: Pigen med Hexemasken</subtitle>
+  <toctitle>Eventyret</toctitle>
+  <indextitle>Eventyret</indextitle>
+  <firstline>Lig en gammel tandløs Krykkemo'er</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -3276,11 +3280,11 @@ rige Skjønhed Ansigt tæt til Ansigt.
 
 <text id="kaalund2001061703">
 <head>
-   <title>Før hun var voxen</title>
-   <toctitle>Før hun var voxen</toctitle>
-   <indextitle>Før hun var voxen</indextitle>
-   <firstline>Naar før til Valsen</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Før hun var voxen</title>
+  <toctitle>Før hun var voxen</toctitle>
+  <indextitle>Før hun var voxen</indextitle>
+  <firstline>Naar før til Valsen</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -3349,11 +3353,11 @@ jeg strax - betalt!
 
 <text id="kaalund2001061704">
 <head>
-   <title>Da hun var voxen</title>
-   <toctitle>Da hun var voxen</toctitle>
-   <indextitle>Da hun var voxen</indextitle>
-   <firstline>Med milde Blikke</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Da hun var voxen</title>
+  <toctitle>Da hun var voxen</toctitle>
+  <indextitle>Da hun var voxen</indextitle>
+  <firstline>Med milde Blikke</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -3392,11 +3396,11 @@ saa dybt til Dig.
 
 <text id="kaalund2001061705">
 <head>
-   <title>Naar Du er træt</title>
-   <toctitle>Naar Du er træt</toctitle>
-   <indextitle>Naar Du er træt</indextitle>
-   <firstline>Naar Du er træt, naar Du er kjed</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Naar Du er træt</title>
+  <toctitle>Naar Du er træt</toctitle>
+  <indextitle>Naar Du er træt</indextitle>
+  <firstline>Naar Du er træt, naar Du er kjed</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -3450,11 +3454,11 @@ og Du vil finde Verden skjøn.
 
 <text id="kaalund2001061706">
 <head>
-   <title>Naturens Uforanderlighed</title>
-   <toctitle>Naturens Uforanderlighed</toctitle>
-   <indextitle>Naturens Uforanderlighed</indextitle>
-   <firstline>I Verden op og ned det gaar</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Naturens Uforanderlighed</title>
+  <toctitle>Naturens Uforanderlighed</toctitle>
+  <indextitle>Naturens Uforanderlighed</indextitle>
+  <firstline>I Verden op og ned det gaar</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -3513,11 +3517,11 @@ saa varmt paa Livets Mund.
 
 <text id="kaalund2001061501">
 <head>
-   <title>Den flyvende Sommer</title>
-   <toctitle>Den flyvende Sommer</toctitle>
-   <indextitle>Den flyvende Sommer</indextitle>
-   <firstline>En Spindelvæv flagrer i Solens Skin</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Den flyvende Sommer</title>
+  <toctitle>Den flyvende Sommer</toctitle>
+  <indextitle>Den flyvende Sommer</indextitle>
+  <firstline>En Spindelvæv flagrer i Solens Skin</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -3546,15 +3550,15 @@ min Sangs den ustadige Lykke.
 
 <text id="kaalund2001061707">
 <head>
-   <title>Farum</title>
-   <subtitle>
-      <line>Sat i Musik af Komponisten til: ,,Danmark, dejligst Vang og Vænge, Auditør Poul Rasmussen i Farum.</line>
-      <line><year>1842</year>.</line>
-   </subtitle>
-   <toctitle>Farum</toctitle>
-   <indextitle>Farum</indextitle>
-   <firstline>Her i Farums skovomkranste Eden</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Farum</title>
+  <subtitle>
+    <line>Sat i Musik af Komponisten til: ,,Danmark, dejligst Vang og Vænge, Auditør Poul Rasmussen i Farum.</line>
+    <line><year>1842</year>.</line>
+  </subtitle>
+  <toctitle>Farum</toctitle>
+  <indextitle>Farum</indextitle>
+  <firstline>Her i Farums skovomkranste Eden</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -3635,11 +3639,11 @@ Skjønne Farum! fra din Blomstervrimmel
 
 <text id="kaalund2001061708">
 <head>
-   <title>Tankespillet</title>
-   <toctitle>Tankespillet</toctitle>
-   <indextitle>Tankespillet</indextitle>
-   <firstline>Kjender Du det Tankespil, som, sindrigt</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Tankespillet</title>
+  <toctitle>Tankespillet</toctitle>
+  <indextitle>Tankespillet</indextitle>
+  <firstline>Kjender Du det Tankespil, som, sindrigt</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -3676,11 +3680,11 @@ sammensætte mig mit Eden atter.
 
 <text id="kaalund2001061709">
 <head>
-   <title>En Drøm</title>
-   <toctitle>En Drøm</toctitle>
-   <indextitle>En Drøm</indextitle>
-   <firstline>Et Samlingspunkt jeg trængte til</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>En Drøm</title>
+  <toctitle>En Drøm</toctitle>
+  <indextitle>En Drøm</indextitle>
+  <firstline>Et Samlingspunkt jeg trængte til</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -3734,11 +3738,11 @@ den klare Nattens Stjerne.
 
 <text id="kaalund2001061710">
 <head>
-   <title>Efteraarsnaturen</title>
-   <toctitle>Efteraarsnaturen</toctitle>
-   <indextitle>Efteraarsnaturen</indextitle>
-   <firstline>Saa vidt mit Øje skuer</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Efteraarsnaturen</title>
+  <toctitle>Efteraarsnaturen</toctitle>
+  <indextitle>Efteraarsnaturen</indextitle>
+  <firstline>Saa vidt mit Øje skuer</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -3810,11 +3814,11 @@ mit Øje forbi.
 
 <text id="kaalund2001061711">
 <head>
-   <title>Forbandet Kain udi Ørknen gik</title>
-   <toctitle>Forbandet Kain udi Ørknen gik</toctitle>
-   <indextitle>Forbandet Kain udi Ørknen gik</indextitle>
-   <firstline>Forbandet Kain udi Ørknen gik</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Forbandet Kain udi Ørknen gik</title>
+  <toctitle>Forbandet Kain udi Ørknen gik</toctitle>
+  <indextitle>Forbandet Kain udi Ørknen gik</indextitle>
+  <firstline>Forbandet Kain udi Ørknen gik</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -3848,11 +3852,11 @@ men naar, naar flyder den sidste?
 
 <text id="kaalund2001061712">
 <head>
-   <title>O, jeg har siddet engang som Drot</title>
-   <toctitle>O, jeg har siddet engang som Drot</toctitle>
-   <indextitle>O, jeg har siddet engang som Drot</indextitle>
-   <firstline>O, jeg har siddet engang som Drot</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>O, jeg har siddet engang som Drot</title>
+  <toctitle>O, jeg har siddet engang som Drot</toctitle>
+  <indextitle>O, jeg har siddet engang som Drot</indextitle>
+  <firstline>O, jeg har siddet engang som Drot</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -3871,11 +3875,11 @@ at jeg er en falden Konge.
 
 <text id="kaalund2001061713">
 <head>
-   <title>Til Trankebar!</title>
-   <toctitle>Til Trankebar!</toctitle>
-   <indextitle>Til Trankebar!</indextitle>
-   <firstline>Til Trankebar, til Trankebar</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Til Trankebar!</title>
+  <toctitle>Til Trankebar!</toctitle>
+  <indextitle>Til Trankebar!</indextitle>
+  <firstline>Til Trankebar, til Trankebar</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -3944,11 +3948,11 @@ de syge Griller af mit Sind.
 
 <text id="kaalund2001061714">
 <head>
-   <title>Eftersommeren</title>
-   <toctitle>Eftersommeren</toctitle>
-   <indextitle>Eftersommeren</indextitle>
-   <firstline>Her, hvor den græsrige Slette</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Eftersommeren</title>
+  <toctitle>Eftersommeren</toctitle>
+  <indextitle>Eftersommeren</indextitle>
+  <firstline>Her, hvor den græsrige Slette</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -4012,11 +4016,11 @@ salig i Livet om mig.
 
 <text id="kaalund2001061715">
 <head>
-   <title>Før Søvnen</title>
-   <toctitle>Før Søvnen</toctitle>
-   <indextitle>Før Søvnen</indextitle>
-   <firstline>Paa mit Kammer jeg nu Lyset slukker</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Før Søvnen</title>
+  <toctitle>Før Søvnen</toctitle>
+  <indextitle>Før Søvnen</indextitle>
+  <firstline>Paa mit Kammer jeg nu Lyset slukker</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -4045,11 +4049,11 @@ Moderen Godnat!
 
 <text id="kaalund2001061801">
 <head>
-   <title>Friskt Vejr</title>
-   <toctitle>Friskt Vejr</toctitle>
-   <indextitle>Friskt Vejr</indextitle>
-   <firstline>Det dufter til Regn</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Friskt Vejr</title>
+  <toctitle>Friskt Vejr</toctitle>
+  <indextitle>Friskt Vejr</indextitle>
+  <firstline>Det dufter til Regn</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -4130,11 +4134,11 @@ og længes i Striden at ile.
 
 <text id="kaalund2001061802">
 <head>
-   <title>Sommeraftnens Tusmørke</title>
-   <toctitle>Sommeraftnens Tusmørke</toctitle>
-   <indextitle>Sommeraftnens Tusmørke</indextitle>
-   <firstline>Jeg Baaden har paa Land nu sat</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Sommeraftnens Tusmørke</title>
+  <toctitle>Sommeraftnens Tusmørke</toctitle>
+  <indextitle>Sommeraftnens Tusmørke</indextitle>
+  <firstline>Jeg Baaden har paa Land nu sat</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -4188,11 +4192,11 @@ i Intets store Grav.
 
 <text id="kaalund2001061803">
 <head>
-   <title>Mismod</title>
-   <toctitle>Mismod</toctitle>
-   <indextitle>Mismod</indextitle>
-   <firstline>Tungt paa den vaade Skovvej Vognen henrasler</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Mismod</title>
+  <toctitle>Mismod</toctitle>
+  <indextitle>Mismod</indextitle>
+  <firstline>Tungt paa den vaade Skovvej Vognen henrasler</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -4221,11 +4225,11 @@ i den vilde, den tungsindige Aften!
 
 <text id="kaalund2001062101">
 <head>
-   <title>Kejseren og den fattige Kone</title>
-   <toctitle>Kejseren og den fattige Kone</toctitle>
-   <indextitle>Kejseren og den fattige Kone</indextitle>
-   <firstline>En Kejser lod bygge et Tempel til Guds Ære</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Kejseren og den fattige Kone</title>
+  <toctitle>Kejseren og den fattige Kone</toctitle>
+  <indextitle>Kejseren og den fattige Kone</indextitle>
+  <firstline>En Kejser lod bygge et Tempel til Guds Ære</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -4321,12 +4325,12 @@ da hun et Halmstraa ofred til Himmelens Ære!''
 
 <text id="kaalund2001062102">
 <head>
-   <title>I Staden og paa Landet</title>
-   <subtitle>For Børn</subtitle>
-   <toctitle>I Staden og paa Landet</toctitle>
-   <indextitle>I Staden og paa Landet</indextitle>
-   <firstline>Prægtigt det er dog at bo i Staden</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>I Staden og paa Landet</title>
+  <subtitle>For Børn</subtitle>
+  <toctitle>I Staden og paa Landet</toctitle>
+  <indextitle>I Staden og paa Landet</indextitle>
+  <firstline>Prægtigt det er dog at bo i Staden</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -4405,11 +4409,11 @@ fik jeg en Mark og en straatækt Hytte
 
 <text id="kaalund2001062103">
 <head>
-   <title>Til Baronesse Marie L.</title>
-   <toctitle>Til Baronesse Marie L.</toctitle>
-   <indextitle>Til Baronesse Marie L.</indextitle>
-   <firstline>Baronesse, De, som tvinger</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Til Baronesse Marie L.</title>
+  <toctitle>Til Baronesse Marie L.</toctitle>
+  <indextitle>Til Baronesse Marie L.</indextitle>
+  <firstline>Baronesse, De, som tvinger</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -4515,7 +4519,7 @@ Signes og skjøn Valborgs Søster!
 Hvor kan vel den rige Sjæl
 Stadens tomme Glæder savne!
 Lig Maria - Deres Navne -
-valgte De den bedre Del;<note>Cf. <xref bibel="bibellukas10,42"/>.</note>
+valgte De den bedre Del;<note>Cf. <xref bible="bibellukas10,42"/>.</note>
 Deres Verden har De hjemme;
 og den Fremmede, der kom
 indenfor dens Helligdom,
@@ -4527,11 +4531,11 @@ hvor hans Fod end vandrer om!
 
 <text id="kaalund2001062515">
 <head>
-   <title>Hvor skal jeg søge Sandhed?</title>
-   <toctitle>Hvor skal jeg søge Sandhed?</toctitle>
-   <indextitle>Hvor skal jeg søge Sandhed?</indextitle>
-   <firstline>Hvor skal jeg søge Sandhed, hvor?</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Hvor skal jeg søge Sandhed?</title>
+  <toctitle>Hvor skal jeg søge Sandhed?</toctitle>
+  <indextitle>Hvor skal jeg søge Sandhed?</indextitle>
+  <firstline>Hvor skal jeg søge Sandhed, hvor?</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -4585,11 +4589,11 @@ jeg fulgte dog min Engels Vej!
 
 <text id="kaalund2001062516">
 <head>
-   <title>Orgelet</title>
-   <toctitle>Orgelet</toctitle>
-   <indextitle>Orgelet</indextitle>
-   <firstline>Det er mig engang for Sandhed sagt</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Orgelet</title>
+  <toctitle>Orgelet</toctitle>
+  <indextitle>Orgelet</indextitle>
+  <firstline>Det er mig engang for Sandhed sagt</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -4643,11 +4647,11 @@ jeg tror, det sprængte mig Brystet.
 
 <text id="kaalund2001062517">
 <head>
-   <title>I Efteraaret</title>
-   <toctitle>I Efteraaret</toctitle>
-   <indextitle>I Efteraaret</indextitle>
-   <firstline>Jeg svøber mig i Kappen lunt og tæt</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>I Efteraaret</title>
+  <toctitle>I Efteraaret</toctitle>
+  <indextitle>I Efteraaret</indextitle>
+  <firstline>Jeg svøber mig i Kappen lunt og tæt</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -4856,11 +4860,11 @@ i Undergangen peger op mod Gud!
 
 <text id="kaalund2001062518">
 <head>
-   <title>Efter Uvejret</title>
-   <toctitle>Efter Uvejret</toctitle>
-   <indextitle>Efter Uvejret</indextitle>
-   <firstline>Renset er Luften. Naturen som gjenfødt sig fryder</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Efter Uvejret</title>
+  <toctitle>Efter Uvejret</toctitle>
+  <indextitle>Efter Uvejret</indextitle>
+  <firstline>Renset er Luften. Naturen som gjenfødt sig fryder</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -4924,11 +4928,11 @@ nu som det gladeste Barn maa jeg jublende hælde
 
 <text id="kaalund2001062519">
 <head>
-   <title>Mørk Himmel</title>
-   <toctitle>Mørk Himmel</toctitle>
-   <indextitle>Mørk Himmel</indextitle>
-   <firstline>Novemberaftenen bruser mørk</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Mørk Himmel</title>
+  <toctitle>Mørk Himmel</toctitle>
+  <indextitle>Mørk Himmel</indextitle>
+  <firstline>Novemberaftenen bruser mørk</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -4962,11 +4966,11 @@ paa Himmelens mørke Bue!
 
 <text id="kaalund2001062601">
 <head>
-   <title>St. Johannes</title>
-   <toctitle>St. Johannes</toctitle>
-   <indextitle>St. Johannes</indextitle>
-   <firstline>St. Johannes, Jesu fromme Ven</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>St. Johannes</title>
+  <toctitle>St. Johannes</toctitle>
+  <indextitle>St. Johannes</indextitle>
+  <firstline>St. Johannes, Jesu fromme Ven</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -5002,11 +5006,11 @@ for hans Storhed i det lille Kryb.''
 
 <text id="kaalund2001062602">
 <head>
-   <title>Nisserne paa Vandring</title>
-   <toctitle>Nisserne paa Vandring</toctitle>
-   <indextitle>Nisserne paa Vandring</indextitle>
-   <firstline>De stakkels Smaanisser, de undes ej Ro</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Nisserne paa Vandring</title>
+  <toctitle>Nisserne paa Vandring</toctitle>
+  <indextitle>Nisserne paa Vandring</indextitle>
+  <firstline>De stakkels Smaanisser, de undes ej Ro</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -5135,11 +5139,11 @@ som viser den Vej, de har vandret.
 
 <text id="kaalund2001062603">
 <head>
-   <title>Lysets Flugt</title>
-   <toctitle>Lysets Flugt</toctitle>
-   <indextitle>Lysets Flugt</indextitle>
-   <firstline>Sagtelig den sorte Nat</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Lysets Flugt</title>
+  <toctitle>Lysets Flugt</toctitle>
+  <indextitle>Lysets Flugt</indextitle>
+  <firstline>Sagtelig den sorte Nat</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -5224,11 +5228,11 @@ glimre end dets Straaler smukt.
 
 <text id="kaalund2001062604">
 <head>
-   <title>Nu suser den kolde Oktoberblæst</title>
-   <toctitle>Nu suser den kolde Oktoberblæst</toctitle>
-   <indextitle>Nu suser den kolde Oktoberblæst</indextitle>
-   <firstline>Nu suser den kolde Oktoberblæst</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Nu suser den kolde Oktoberblæst</title>
+  <toctitle>Nu suser den kolde Oktoberblæst</toctitle>
+  <indextitle>Nu suser den kolde Oktoberblæst</indextitle>
+  <firstline>Nu suser den kolde Oktoberblæst</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -5292,11 +5296,11 @@ dér er den lystige Jæger!
 
 <text id="kaalund2001062605">
 <head>
-   <title>Den firbenede Proletar</title>
-   <toctitle>Den firbenede Proletar</toctitle>
-   <indextitle>Den firbenede Proletar</indextitle>
-   <firstline>Sé Pudlen med det purrede Skind</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Den firbenede Proletar</title>
+  <toctitle>Den firbenede Proletar</toctitle>
+  <indextitle>Den firbenede Proletar</indextitle>
+  <firstline>Sé Pudlen med det purrede Skind</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -5396,12 +5400,12 @@ de foragte ham ej for Kjolen.
 
 <text id="kaalund2001062801">
 <head>
-   <title>Bjørnen som Rytter</title>
-   <subtitle>Fortælling for Børn</subtitle>
-   <toctitle>Bjørnen som Rytter</toctitle>
-   <indextitle>Bjørnen som Rytter</indextitle>
-   <firstline>En Bjørn engang gik ud paa Rov</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Bjørnen som Rytter</title>
+  <subtitle>Fortælling for Børn</subtitle>
+  <toctitle>Bjørnen som Rytter</toctitle>
+  <indextitle>Bjørnen som Rytter</indextitle>
+  <firstline>En Bjørn engang gik ud paa Rov</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -5534,11 +5538,11 @@ sin raske, lille Nordbag takke.
 
 <text id="kaalund2001062802">
 <head>
-   <title>Til Familien i Præstegaarden</title>
-   <toctitle>Til Familien i Præstegaarden</toctitle>
-   <indextitle>Til Familien i Præstegaarden</indextitle>
-   <firstline>Her sidder jeg stakkels Spøgefugl</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Til Familien i Præstegaarden</title>
+  <toctitle>Til Familien i Præstegaarden</toctitle>
+  <indextitle>Til Familien i Præstegaarden</indextitle>
+  <firstline>Her sidder jeg stakkels Spøgefugl</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -5707,11 +5711,11 @@ et Blad, som en Arkens Due!
 
 <text id="kaalund2001063001">
 <head>
-   <title>Naturens Graad</title>
-   <toctitle>Naturens Graad</toctitle>
-   <indextitle>Naturens Graad</indextitle>
-   <firstline>O Menneske, Du Jordens halve Gud</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Naturens Graad</title>
+  <toctitle>Naturens Graad</toctitle>
+  <indextitle>Naturens Graad</indextitle>
+  <firstline>O Menneske, Du Jordens halve Gud</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -5765,11 +5769,11 @@ og trøsted sig ved Nattergalens Trille.
 
 <text id="kaalund2001063002">
 <head>
-   <title>Kejserkronen</title>
-   <toctitle>Kejserkronen</toctitle>
-   <indextitle>Kejserkronen</indextitle>
-   <firstline>Sé, hvilken Blomst, hvor rank og skjøn</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Kejserkronen</title>
+  <toctitle>Kejserkronen</toctitle>
+  <indextitle>Kejserkronen</indextitle>
+  <firstline>Sé, hvilken Blomst, hvor rank og skjøn</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -5798,11 +5802,11 @@ men hvad den skjuler sér man ikke.''
 
 <text id="kaalund2001063003">
 <head>
-   <title>Edderkoppen</title>
-   <toctitle>Edderkoppen</toctitle>
-   <indextitle>Edderkoppen</indextitle>
-   <firstline>Du Edderkop, vil Du til Hækken spinde</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Edderkoppen</title>
+  <toctitle>Edderkoppen</toctitle>
+  <indextitle>Edderkoppen</indextitle>
+  <firstline>Du Edderkop, vil Du til Hækken spinde</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -5832,11 +5836,11 @@ paa Himmelens Hjælp kan meget bygges!
 
 <text id="kaalund2001063004">
 <head>
-   <title>Billedstøtten</title>
-   <toctitle>Billedstøtten</toctitle>
-   <indextitle>Billedstøtten</indextitle>
-   <firstline>Til Stranden skylled op et halvfuldent</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Billedstøtten</title>
+  <toctitle>Billedstøtten</toctitle>
+  <indextitle>Billedstøtten</indextitle>
+  <firstline>Til Stranden skylled op et halvfuldent</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -5875,11 +5879,11 @@ og kalder saa den slebne Dukke dannet.
 
 <text id="kaalund2001063005">
 <head>
-   <title>Solen og dens Skygge</title>
-   <toctitle>Solen og dens Skygge</toctitle>
-   <indextitle>Solen og dens Skygge</indextitle>
-   <firstline>Engang faldt Solen paa</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Solen og dens Skygge</title>
+  <toctitle>Solen og dens Skygge</toctitle>
+  <indextitle>Solen og dens Skygge</indextitle>
+  <firstline>Engang faldt Solen paa</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -5903,11 +5907,11 @@ han havde heller ingen.
 
 <text id="kaalund2001063006">
 <head>
-   <title>Indsigt og Oversigt</title>
-   <toctitle>Indsigt og Oversigt</toctitle>
-   <indextitle>Indsigt og Oversigt</indextitle>
-   <firstline>En Træorm i en Vinduespost</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Indsigt og Oversigt</title>
+  <toctitle>Indsigt og Oversigt</toctitle>
+  <indextitle>Indsigt og Oversigt</indextitle>
+  <firstline>En Træorm i en Vinduespost</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -5941,11 +5945,11 @@ at den og jeg vi høre sammen!
 
 <text id="kaalund2001063007">
 <head>
-   <title>Kokosnødden</title>
-   <toctitle>Kokosnødden</toctitle>
-   <indextitle>Kokosnødden</indextitle>
-   <firstline>En Kokosnød</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Kokosnødden</title>
+  <toctitle>Kokosnødden</toctitle>
+  <indextitle>Kokosnødden</indextitle>
+  <firstline>En Kokosnød</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -6017,11 +6021,11 @@ kan Sandhedsordet blive!
 
 <text id="kaalund2001063008">
 <head>
-   <title>Planeten og Kometen</title>
-   <toctitle>Planeten og Kometen</toctitle>
-   <indextitle>Planeten og Kometen</indextitle>
-   <firstline>I sit System en lille Biplanet</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Planeten og Kometen</title>
+  <toctitle>Planeten og Kometen</toctitle>
+  <indextitle>Planeten og Kometen</indextitle>
+  <firstline>I sit System en lille Biplanet</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -6060,11 +6064,11 @@ sin uudgrundelige Bane skriver.''
 
 <text id="kaalund2001063009">
 <head>
-   <title>Nøddeknækkeren</title>
-   <toctitle>Nøddeknækkeren</toctitle>
-   <indextitle>Nøddeknækkeren</indextitle>
-   <firstline>Nøddeknækker, hvor er Du stiv</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Nøddeknækkeren</title>
+  <toctitle>Nøddeknækkeren</toctitle>
+  <indextitle>Nøddeknækkeren</indextitle>
+  <firstline>Nøddeknækker, hvor er Du stiv</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -6087,11 +6091,11 @@ han agted kun lidt, at Kjærnen er lækker,
 
 <text id="kaalund2001063010">
 <head>
-   <title>Uvejrsskyen</title>
-   <toctitle>Uvejrsskyen</toctitle>
-   <indextitle>Uvejrsskyen</indextitle>
-   <firstline>O Menneske, hvor vil Du fly</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Uvejrsskyen</title>
+  <toctitle>Uvejrsskyen</toctitle>
+  <indextitle>Uvejrsskyen</indextitle>
+  <firstline>O Menneske, hvor vil Du fly</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -6140,11 +6144,11 @@ staar hævet over Jordens Sky!''
 
 <text id="kaalund2001063011">
 <head>
-   <title>Guldfiskene</title>
-   <toctitle>Guldfiskene</toctitle>
-   <indextitle>Guldfiskene</indextitle>
-   <firstline>En dobbelt Boble, hvælvet af Krystal</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Guldfiskene</title>
+  <toctitle>Guldfiskene</toctitle>
+  <indextitle>Guldfiskene</indextitle>
+  <firstline>En dobbelt Boble, hvælvet af Krystal</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -6183,11 +6187,11 @@ Og sig mig, har Du aldrig tænkt som Svalen?
 
 <text id="kaalund2001063012">
 <head>
-   <title>Oldingen og Pogen</title>
-   <toctitle>Oldingen og Pogen</toctitle>
-   <indextitle>Oldingen og Pogen</indextitle>
-   <firstline>Paa Grenen højt en Pære hang</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Oldingen og Pogen</title>
+  <toctitle>Oldingen og Pogen</toctitle>
+  <indextitle>Oldingen og Pogen</indextitle>
+  <firstline>Paa Grenen højt en Pære hang</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -6236,11 +6240,11 @@ I steg paa eders Fædres Skuldre.
 
 <text id="kaalund2001063013">
 <head>
-   <title>Sommerfugl og Østers</title>
-   <toctitle>Sommerfugl og Østers</toctitle>
-   <indextitle>Sommerfugl og Østers</indextitle>
-   <firstline>Hvad fik hin Østers Skallen til</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Sommerfugl og Østers</title>
+  <toctitle>Sommerfugl og Østers</toctitle>
+  <indextitle>Sommerfugl og Østers</indextitle>
+  <firstline>Hvad fik hin Østers Skallen til</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -6269,11 +6273,11 @@ gid Pokker Østers være!''
 
 <text id="kaalund2001063014">
 <head>
-   <title>Den højere Dressur</title>
-   <toctitle>Den højere Dressur</toctitle>
-   <indextitle>Den højere Dressur</indextitle>
-   <firstline>Mellem Fjælebodens Aber</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Den højere Dressur</title>
+  <toctitle>Den højere Dressur</toctitle>
+  <indextitle>Den højere Dressur</indextitle>
+  <firstline>Mellem Fjælebodens Aber</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -6318,11 +6322,11 @@ for med dem at pudse Katten.
 
 <text id="kaalund2001070101">
 <head>
-   <title>Til Rosen</title>
-   <toctitle>Til Rosen</toctitle>
-   <indextitle>Til Rosen</indextitle>
-   <firstline>Rose, yndige Rose! naar jeg Dig sér</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Til Rosen</title>
+  <toctitle>Til Rosen</toctitle>
+  <indextitle>Til Rosen</indextitle>
+  <firstline>Rose, yndige Rose! naar jeg Dig sér</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -6371,11 +6375,11 @@ sér og længes og bliver saa underlig øm,
 
 <text id="kaalund1999031201">
 <head>
-   <title>Efter Maskeraden</title>
-   <toctitle>Efter Maskeraden</toctitle>
-   <indextitle>Efter Maskeraden</indextitle>
-   <firstline>Her sidder jeg alene</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Efter Maskeraden</title>
+  <toctitle>Efter Maskeraden</toctitle>
+  <indextitle>Efter Maskeraden</indextitle>
+  <firstline>Her sidder jeg alene</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -6404,12 +6408,12 @@ mig selv, mig selv igjen!
 
 <text id="kaalund2001070102">
 <head>
-   <title>Revolutionstiden</title>
-   <subtitle>1848</subtitle>
-   <toctitle>Revolutionstiden</toctitle>
-   <indextitle>Revolutionstiden</indextitle>
-   <firstline>Giganten var styrtet; paa ensom Ø</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Revolutionstiden</title>
+  <subtitle>1848</subtitle>
+  <toctitle>Revolutionstiden</toctitle>
+  <indextitle>Revolutionstiden</indextitle>
+  <firstline>Giganten var styrtet; paa ensom Ø</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -6705,13 +6709,13 @@ smuldre vi i vore Grave.
 
 <text id="kaalund2001070120">
 <head>
-   <title>Til Kong Frederik den Syvende</title>
-   <subtitle>Ved hans Thronbestigelse</subtitle>
-   <toctitle>Til Kong Frederik den Syvende</toctitle>
-   <indextitle>Til Kong Frederik den Syvende</indextitle>
-   <firstline>Du Drot, som nu throner i høje Sale</firstline>
-   <keywords>frederik7</keywords>
-   <quality>korrektur1,kilde</quality>
+  <title>Til Kong Frederik den Syvende</title>
+  <subtitle>Ved hans Thronbestigelse</subtitle>
+  <toctitle>Til Kong Frederik den Syvende</toctitle>
+  <indextitle>Til Kong Frederik den Syvende</indextitle>
+  <firstline>Du Drot, som nu throner i høje Sale</firstline>
+  <keywords>frederik7</keywords>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -6913,12 +6917,12 @@ Ja, Herre Konge, det ske! det ske!
 
 <text id="kaalund2001070103">
 <head>
-   <title>Sang for det danske Folk</title>
-   <subtitle>Den 22de Marts 1848</subtitle>
-   <toctitle>Sang for det danske Folk</toctitle>
-   <indextitle>Sang for det danske Folk</indextitle>
-   <firstline>Opmand Dig, Du Danske! lad Verden dog sé</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Sang for det danske Folk</title>
+  <subtitle>Den 22de Marts 1848</subtitle>
+  <toctitle>Sang for det danske Folk</toctitle>
+  <indextitle>Sang for det danske Folk</indextitle>
+  <firstline>Opmand Dig, Du Danske! lad Verden dog sé</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -6962,12 +6966,12 @@ og Ryggen mod Verdens Tyranner!
 
 <text id="kaalund2001070104">
 <head>
-   <title>Ved Adam Oehlenschlägers Død</title>
-   <toctitle>Ved Adam Oehlenschlägers Død</toctitle>
-   <indextitle>Ved Adam Oehlenschlägers Død</indextitle>
-   <firstline>Ak, det herlige Lys er slukket</firstline>
-   <keywords>oehlenschlaeger</keywords>
-   <quality>korrektur1,kilde</quality>
+  <title>Ved Adam Oehlenschlägers Død</title>
+  <toctitle>Ved Adam Oehlenschlägers Død</toctitle>
+  <indextitle>Ved Adam Oehlenschlägers Død</indextitle>
+  <firstline>Ak, det herlige Lys er slukket</firstline>
+  <keywords>oehlenschlaeger</keywords>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -7016,11 +7020,11 @@ græder Norden for Hakons Skjald.
 
 <text id="kaalund2001070105">
 <head>
-   <title>Den brudte Straale</title>
-   <toctitle>Den brudte Straale</toctitle>
-   <indextitle>Den brudte Straale</indextitle>
-   <firstline>Du priser kun Skjalde af første Rang</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Den brudte Straale</title>
+  <toctitle>Den brudte Straale</toctitle>
+  <indextitle>Den brudte Straale</indextitle>
+  <firstline>Du priser kun Skjalde af første Rang</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -7050,11 +7054,11 @@ og bereder den Verden, som kommer!
 
 <text id="kaalund2001070106">
 <head>
-   <title>De to Kamre</title>
-   <toctitle>De to Kamre</toctitle>
-   <indextitle>De to Kamre</indextitle>
-   <firstline>Tvende Kamre har mit Hjerte</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>De to Kamre</title>
+  <toctitle>De to Kamre</toctitle>
+  <indextitle>De to Kamre</indextitle>
+  <firstline>Tvende Kamre har mit Hjerte</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -7103,11 +7107,11 @@ førend hele Huset falder.
 
 <text id="kaalund2001070107">
 <head>
-   <title>Kaos</title>
-   <toctitle>Kaos</toctitle>
-   <indextitle>Kaos</indextitle>
-   <firstline>Styrtet er min drømte Verden, tabt</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Kaos</title>
+  <toctitle>Kaos</toctitle>
+  <indextitle>Kaos</indextitle>
+  <firstline>Styrtet er min drømte Verden, tabt</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -7136,11 +7140,11 @@ Ak, og naar skal Hviledagen komme?
 
 <text id="kaalund2001070108">
 <head>
-   <title>Rastløs Higen</title>
-   <toctitle>Rastløs Higen</toctitle>
-   <indextitle>Rastløs Higen</indextitle>
-   <firstline>Ved hvert Maal, hvortil jeg higer</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Rastløs Higen</title>
+  <toctitle>Rastløs Higen</toctitle>
+  <indextitle>Rastløs Higen</indextitle>
+  <firstline>Ved hvert Maal, hvortil jeg higer</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -7176,11 +7180,11 @@ vækker mig til Strid igjen!
 
 <text id="kaalund2001070109">
 <head>
-   <title>Det gamle Øg</title>
-   <toctitle>Det gamle Øg</toctitle>
-   <indextitle>Det gamle Øg</indextitle>
-   <firstline>Det suser saa tungt i den visnende Bøg</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Det gamle Øg</title>
+  <toctitle>Det gamle Øg</toctitle>
+  <indextitle>Det gamle Øg</indextitle>
+  <firstline>Det suser saa tungt i den visnende Bøg</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -7244,11 +7248,11 @@ Hurra! mod den evige Morgen.
 
 <text id="kaalund2001070110">
 <head>
-   <title>Kun en Draabe</title>
-   <toctitle>Kun en Draabe</toctitle>
-   <indextitle>Kun en Draabe</indextitle>
-   <firstline>Tag friske Rosenblade - hundred Pund</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Kun en Draabe</title>
+  <toctitle>Kun en Draabe</toctitle>
+  <indextitle>Kun en Draabe</indextitle>
+  <firstline>Tag friske Rosenblade - hundred Pund</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -7297,11 +7301,11 @@ og svundne Seklers Duft i Sagn og Sange.
 
 <text id="kaalund2001070111">
 <head>
-   <title>Fredspiben</title>
-   <toctitle>Fredspiben</toctitle>
-   <indextitle>Fredspiben</indextitle>
-   <firstline>Jeg var en Vild, som Fuglen fri</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Fredspiben</title>
+  <toctitle>Fredspiben</toctitle>
+  <indextitle>Fredspiben</indextitle>
+  <firstline>Jeg var en Vild, som Fuglen fri</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -7325,11 +7329,11 @@ en Fredspibe med min Fjende.
 
 <text id="kaalund2001070112">
 <head>
-   <title>Lærken</title>
-   <toctitle>Lærken</toctitle>
-   <indextitle>Lærken</indextitle>
-   <firstline>Det lakked hen mod Pintse, dog laa paa Marken Sne</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Lærken</title>
+  <toctitle>Lærken</toctitle>
+  <indextitle>Lærken</indextitle>
+  <firstline>Det lakked hen mod Pintse, dog laa paa Marken Sne</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -7373,11 +7377,11 @@ at synge profetisk med jublende Tro
 
 <text id="kaalund2001070113">
 <head>
-   <title>Helligkilden</title>
-   <toctitle>Helligkilden</toctitle>
-   <indextitle>Helligkilden</indextitle>
-   <firstline>Gjennem Hedelyng og Sand</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Helligkilden</title>
+  <toctitle>Helligkilden</toctitle>
+  <indextitle>Helligkilden</indextitle>
+  <firstline>Gjennem Hedelyng og Sand</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -7465,11 +7469,11 @@ Kuren er for Alle fri!
 
 <text id="kaalund2001070114">
 <head>
-   <title>Den lille Evadatter</title>
-   <toctitle>Den lille Evadatter</toctitle>
-   <indextitle>Den lille Evadatter</indextitle>
-   <firstline>Overgiven er Du, ellevild</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Den lille Evadatter</title>
+  <toctitle>Den lille Evadatter</toctitle>
+  <indextitle>Den lille Evadatter</indextitle>
+  <firstline>Overgiven er Du, ellevild</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -7583,11 +7587,11 @@ kan med Smil Dig ind i Øjet skue.
 
 <text id="kaalund2001070115">
 <head>
-   <title>Til Naturen</title>
-   <toctitle>Til Naturen</toctitle>
-   <indextitle>Til Naturen</indextitle>
-   <firstline>O store, herlige Natur</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Til Naturen</title>
+  <toctitle>Til Naturen</toctitle>
+  <indextitle>Til Naturen</indextitle>
+  <firstline>O store, herlige Natur</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -7626,11 +7630,11 @@ en Plads ved Livets Fest for mig?
 
 <text id="kaalund2001070116">
 <head>
-   <title>Livet</title>
-   <toctitle>Livet</toctitle>
-   <indextitle>Livet</indextitle>
-   <firstline>En Tyran, forfærdelig og grum</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Livet</title>
+  <toctitle>Livet</toctitle>
+  <indextitle>Livet</indextitle>
+  <firstline>En Tyran, forfærdelig og grum</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -7705,11 +7709,11 @@ der sig taber ud i Evigheden!
 
 <text id="kaalund2001070117">
 <head>
-   <title>Kontrasterne</title>
-   <toctitle>Kontrasterne</toctitle>
-   <indextitle>Kontrasterne</indextitle>
-   <firstline>Du stødes ved min Tale</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Kontrasterne</title>
+  <toctitle>Kontrasterne</toctitle>
+  <indextitle>Kontrasterne</indextitle>
+  <firstline>Du stødes ved min Tale</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -7783,11 +7787,11 @@ er Mønten dog den samme.
 
 <text id="kaalund2001070118">
 <head>
-   <title>Maaske!</title>
-   <toctitle>Maaske!</toctitle>
-   <indextitle>Maaske!</indextitle>
-   <firstline>Jeg vil et Ord Dem nævne</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Maaske!</title>
+  <toctitle>Maaske!</toctitle>
+  <indextitle>Maaske!</indextitle>
+  <firstline>Jeg vil et Ord Dem nævne</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -7831,11 +7835,11 @@ for mig kun et Maaske.
 
 <text id="kaalund2001061303">
 <head>
-   <title>Til Hende</title>
-   <toctitle>Til Hende</toctitle>
-   <indextitle>Til Hende</indextitle>
-   <firstline>Mens Vintersolen daler bag den rødmende Sky</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Til Hende</title>
+  <toctitle>Til Hende</toctitle>
+  <indextitle>Til Hende</indextitle>
+  <firstline>Mens Vintersolen daler bag den rødmende Sky</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -7925,11 +7929,11 @@ sin søde, lille Mage, og gjør ligesaa -
 
 <text id="kaalund2001070119">
 <head>
-   <title>De grønne Blade</title>
-   <toctitle>De grønne Blade</toctitle>
-   <indextitle>De grønne Blade</indextitle>
-   <firstline>Igjennem Plantens Liv der gaar en Længsel</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>De grønne Blade</title>
+  <toctitle>De grønne Blade</toctitle>
+  <indextitle>De grønne Blade</indextitle>
+  <firstline>Igjennem Plantens Liv der gaar en Længsel</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -7976,21 +7980,21 @@ min Digterlængsels Krone, jeg vil naae!
 
 <section level="1">
 <head>
-   <toctitle>En Eftervaar</toctitle>
+  <toctitle>En Eftervaar</toctitle>
 </head>
 <content>
 
 <text id="kaalund2001061301">
 <head>
-   <title>Til min Hustru!</title>
-   <subtitle>Vridsløselille i Julen 1877.</subtitle>
-   <toctitle>Til min Hustru!</toctitle>
-   <indextitle>Til min Hustru!</indextitle>
-   <firstline>Hvis jeg har endnu tilbage</firstline>
-   <notes>
-      <note>Det omtalte digt <xref poem="kaalund2001061303"/> findes i <a work="kaalund/1858"><i>Et Foraar</i></a>.</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title>Til min Hustru!</title>
+  <subtitle>Vridsløselille i Julen 1877.</subtitle>
+  <toctitle>Til min Hustru!</toctitle>
+  <indextitle>Til min Hustru!</indextitle>
+  <firstline>Hvis jeg har endnu tilbage</firstline>
+  <notes>
+    <note>Det omtalte digt <xref poem="kaalund2001061303"/> findes i <a work="kaalund/1858"><i>Et Foraar</i></a>.</note>
+  </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -8021,10 +8025,10 @@ min beskedne, stille Viv!
 
 <text id="kaalund2001081501">
 <head>
-   <title>Stæren</title>
-   <firstline>Ved Tøbrudstid fløjter Stæren sin Sang</firstline>
-   <source pages="7-8"/>
-   <quality>korrektur1</quality>
+  <title>Stæren</title>
+  <firstline>Ved Tøbrudstid fløjter Stæren sin Sang</firstline>
+  <source pages="7-8"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -8073,11 +8077,11 @@ da jeg faar min Stemme tilbage!
 
 <text id="kaalund1999030801">
 <head>
-   <title>Til Virkeligheden</title>
-   <toctitle>Til Virkeligheden</toctitle>
-   <indextitle>Til Virkeligheden</indextitle>
-   <firstline>Min Tugtemester, min store Lærer</firstline>
-   <quality>korrektur1</quality>
+  <title>Til Virkeligheden</title>
+  <toctitle>Til Virkeligheden</toctitle>
+  <indextitle>Til Virkeligheden</indextitle>
+  <firstline>Min Tugtemester, min store Lærer</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -8214,11 +8218,11 @@ naar jeg rykker op i en højere Klasse!
 
 <text id="kaalund2001081502">
 <head>
-   <title>I en Solskinskrog</title>
-   <toctitle>I en Solskinskrog</toctitle>
-   <indextitle>I en Solskinskrog</indextitle>
-   <firstline>Bestraalet af den milde Foraarssol</firstline>
-   <quality>korrektur1</quality>
+  <title>I en Solskinskrog</title>
+  <toctitle>I en Solskinskrog</toctitle>
+  <indextitle>I en Solskinskrog</indextitle>
+  <firstline>Bestraalet af den milde Foraarssol</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -8267,11 +8271,11 @@ for hvad der ellers Smaabørn kun fortryller!
 
 <text id="kaalund2001081503">
 <head>
-   <title>Løven i Slippen</title>
-   <toctitle>Løven i Slippen</toctitle>
-   <indextitle>Løven i Slippen</indextitle>
-   <firstline>En Gang - ja, det er nu langt tilbage</firstline>
-   <quality>korrektur1</quality>
+  <title>Løven i Slippen</title>
+  <toctitle>Løven i Slippen</toctitle>
+  <indextitle>Løven i Slippen</indextitle>
+  <firstline>En Gang - ja, det er nu langt tilbage</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -8391,11 +8395,11 @@ den stakkels sovende Løve i Slippen!
 
 <text id="kaalund2001081504">
 <head>
-   <title>Vinteraften paa Landet</title>
-   <toctitle>Vinteraften paa Landet</toctitle>
-   <indextitle>Vinteraften paa Landet</indextitle>
-   <firstline>Nu skal alt Skodden lukkes</firstline>
-   <quality>korrektur1</quality>
+  <title>Vinteraften paa Landet</title>
+  <toctitle>Vinteraften paa Landet</toctitle>
+  <indextitle>Vinteraften paa Landet</indextitle>
+  <firstline>Nu skal alt Skodden lukkes</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -8484,11 +8488,11 @@ hvor Lysene blænde!
 
 <text id="kaalund2001081701">
 <head>
-   <title>Paa Grænsen mellem Stad og Land</title>
-   <toctitle>Paa Grænsen mellem Stad og Land</toctitle>
-   <indextitle>Paa Grænsen mellem Stad og Land</indextitle>
-   <firstline>Paa Grænsen mellem Stad og Land</firstline>
-   <quality>korrektur1</quality>
+  <title>Paa Grænsen mellem Stad og Land</title>
+  <toctitle>Paa Grænsen mellem Stad og Land</toctitle>
+  <indextitle>Paa Grænsen mellem Stad og Land</indextitle>
+  <firstline>Paa Grænsen mellem Stad og Land</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -8547,11 +8551,11 @@ paa Grænsen mellem Land og By!
 
 <text id="kaalund2001081702">
 <head>
-   <title>Ensomt Liv</title>
-   <toctitle>Ensomt Liv</toctitle>
-   <indextitle>Ensomt Liv</indextitle>
-   <firstline>Jeg sad alene paa en øde Gaard</firstline>
-   <quality>korrektur1</quality>
+  <title>Ensomt Liv</title>
+  <toctitle>Ensomt Liv</toctitle>
+  <indextitle>Ensomt Liv</indextitle>
+  <firstline>Jeg sad alene paa en øde Gaard</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -8635,15 +8639,13 @@ og sér den skjulte Verdenspendel svinge.
 
 <text id="kaalund2002122801">
 <head>
-   <title>Til Nordens Folk</title>
-   <subtitle>(I December 1863.)</subtitle>
-   <toctitle>Til Nordens Folk</toctitle>
-   <indextitle>Til Nordens Folk</indextitle>
-   <firstline>Vil ingen nævne et vækkende Ord!</firstline>
-   <notes>
-      <note>N:Indtastet efter H.V. Kaalund: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, 1898, udgivet ved Otto Borchsenius, pp. 267-271.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Nordens Folk</title>
+  <subtitle>(I December 1863.)</subtitle>
+  <toctitle>Til Nordens Folk</toctitle>
+  <indextitle>Til Nordens Folk</indextitle>
+  <firstline>Vil ingen nævne et vækkende Ord!</firstline>
+  <source pages="267-271">H.V. Kaalund: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, 1898, udgivet ved Otto Borchsenius.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -8742,15 +8744,13 @@ vil med uplettet Hæder vi falde!
 
 <text id="kaalund2002122803">
 <head>
-   <title>I Farens Stund</title>
-   <subtitle>(Januar 1864).</subtitle>
-   <toctitle>I Farens Stund</toctitle>
-   <indextitle>I Farens Stund</indextitle>
-   <firstline>Varsler denne sære Stilhed</firstline>
-   <notes>
-      <note>Indtastet efter H.V. Kaalund: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, 1898, udgivet ved Otto Borchsenius, pp. 271-275.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>I Farens Stund</title>
+  <subtitle>(Januar 1864).</subtitle>
+  <toctitle>I Farens Stund</toctitle>
+  <indextitle>I Farens Stund</indextitle>
+  <firstline>Varsler denne sære Stilhed</firstline>
+  <source pages="271-275">H.V. Kaalund: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, 1898, udgivet ved Otto Borchsenius.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -8858,14 +8858,12 @@ og fra Tvivlens fule Pest!
 
 <text id="kaalund2002052501">
 <head>
-   <title>Kaalormen</title>
-   <toctitle>Kaalormen</toctitle>
-   <indextitle>Kaalormen</indextitle>
-   <firstline>Om Landsbyhaverne Kampen stod</firstline>
-   <notes>
-      <note>Indtastet efter H.V. Kaalund: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, 1898, udgivet ved Otto Borchsenius, pp. 275-277.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Kaalormen</title>
+  <toctitle>Kaalormen</toctitle>
+  <indextitle>Kaalormen</indextitle>
+  <firstline>Om Landsbyhaverne Kampen stod</firstline>
+  <source pages="275-277">H.V. Kaalund: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, 1898, udgivet ved Otto Borchsenius.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -8924,14 +8922,12 @@ mod Opstandelses-Morgenrøden!
 
 <text id="kaalund2002122804">
 <head>
-   <title>Et Fugleskjul</title>
-   <toctitle>Et Fugleskjul</toctitle>
-   <indextitle>Et Fugleskjul</indextitle>
-   <firstline>Blandt Kugler og Kanoner</firstline>
-   <notes>
-      <note>Indtastet efter H.V. Kaalund: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, 1898, udgivet ved Otto Borchsenius, pp. 277-280.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Et Fugleskjul</title>
+  <toctitle>Et Fugleskjul</toctitle>
+  <indextitle>Et Fugleskjul</indextitle>
+  <firstline>Blandt Kugler og Kanoner</firstline>
+  <source pages="277-280">H.V. Kaalund: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, 1898, udgivet ved Otto Borchsenius.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -9030,14 +9026,12 @@ som denne maatte fyldes!''
 
 <text id="kaalund2002122805">
 <head>
-   <title>Rejsetummel</title>
-   <toctitle>Rejsetummel</toctitle>
-   <indextitle>Rejsetummel</indextitle>
-   <firstline>Jeg har rejst! - Jeg har været i fremmede Byer!</firstline>
-   <notes>
-      <note>Indtastet efter H.V. Kaalund: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, 1898, udgivet ved Otto Borchsenius, pp. 281-285.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Rejsetummel</title>
+  <toctitle>Rejsetummel</toctitle>
+  <indextitle>Rejsetummel</indextitle>
+  <firstline>Jeg har rejst! - Jeg har været i fremmede Byer!</firstline>
+  <source pages="281-285">H.V. Kaalund: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, 1898, udgivet ved Otto Borchsenius.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -9151,14 +9145,12 @@ da Du atter gjenfødes i Daad og i Sang!
 
 <text id="kaalund2002052502">
 <head>
-   <title>Hvorledes man kan narre et Æsel</title>
-   <toctitle>Hvorledes man kan narre et Æsel</toctitle>
-   <indextitle>Hvorledes man kan narre et Æsel</indextitle>
-   <firstline>Omdanset af de lette Myg</firstline>
-   <notes>
-      <note>Indtastet efter H.V. Kaalund: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, 1898, udgivet ved Otto Borchsenius, pp. 285-287.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Hvorledes man kan narre et Æsel</title>
+  <toctitle>Hvorledes man kan narre et Æsel</toctitle>
+  <indextitle>Hvorledes man kan narre et Æsel</indextitle>
+  <firstline>Omdanset af de lette Myg</firstline>
+  <source pages="285-287">H.V. Kaalund: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, 1898, udgivet ved Otto Borchsenius.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -9227,16 +9219,16 @@ saa Skovens Ekko klang!
 
 <text id="kaalund2002052503">
 <head>
-   <title>Ved et Kunstnerpars Sølvbryllup</title>
-   <toctitle>Ved et Kunstnerpars Sølvbryllup</toctitle>
-   <indextitle>Ved et Kunstnerpars Sølvbryllup</indextitle>
-   <firstline>Nær ved Lillebælts Strand stod hans Vugge paa Fyen</firstline>
-   <notes>
-      <note>Indtastet efter H.V. Kaalund: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, 1898, udgivet ved Otto Borchsenius, pp. 288-289.</note>
-      <note>Kunstnerparret var billedhuggeren Jens Adolf Jerichau (1816-83) og den polskfødte malerinde Elisabeth Jerichau-Baumann (1819-81). De blev gift i 1846, og digtet er altså fra 1871.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
-   <keywords>rom</keywords>
+  <title>Ved et Kunstnerpars Sølvbryllup</title>
+  <toctitle>Ved et Kunstnerpars Sølvbryllup</toctitle>
+  <indextitle>Ved et Kunstnerpars Sølvbryllup</indextitle>
+  <firstline>Nær ved Lillebælts Strand stod hans Vugge paa Fyen</firstline>
+  <notes>
+    <note>Kunstnerparret var billedhuggeren Jens Adolf Jerichau (1816-83) og den polskfødte malerinde Elisabeth Jerichau-Baumann (1819-81). De blev gift i 1846, og digtet er altså fra 1871.</note>
+  </notes>
+  <source pages="288-289">H.V. Kaalund: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, 1898, udgivet ved Otto Borchsenius.</source>
+  <quality>korrektur1,kilde,side</quality>
+  <keywords>rom</keywords>
 </head>
 <body>
 <poetry>
@@ -9280,14 +9272,12 @@ og hvad Livet har skjønnest og bedst!
 
 <text id="kaalund2002122802">
 <head>
-   <title>I Sommernatten</title>
-   <toctitle>I Sommernatten</toctitle>
-   <indextitle>I Sommernatten</indextitle>
-   <firstline>Ved Vindvet Poplen sukker</firstline>
-   <notes>
-      <note>Indtastet efter H.V. Kaalund: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, 1898, udgivet ved Otto Borchsenius, pp. 289-291.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>I Sommernatten</title>
+  <toctitle>I Sommernatten</toctitle>
+  <indextitle>I Sommernatten</indextitle>
+  <firstline>Ved Vindvet Poplen sukker</firstline>
+  <source pages="289-291">H.V. Kaalund: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, 1898, udgivet ved Otto Borchsenius.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -9341,15 +9331,13 @@ til saa at være svag!
 
 <text id="kaalund2002122806">
 <head>
-   <title>Ved en Vens Afrejse til Udlandet</title>
-   <subtitle>1872.</subtitle>
-   <toctitle>Ved en Vens Afrejse til Udlandet</toctitle>
-   <indextitle>Ved en Vens Afrejse til Udlandet</indextitle>
-   <firstline>At udbringe Skaaler er ej mit Fag</firstline>
-   <notes>
-      <note>Indtastet efter H.V. Kaalund: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, 1898, udgivet ved Otto Borchsenius, pp. 291-293</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Ved en Vens Afrejse til Udlandet</title>
+  <subtitle>1872.</subtitle>
+  <toctitle>Ved en Vens Afrejse til Udlandet</toctitle>
+  <indextitle>Ved en Vens Afrejse til Udlandet</indextitle>
+  <firstline>At udbringe Skaaler er ej mit Fag</firstline>
+  <source pages="291-293">H.V. Kaalund: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, 1898, udgivet ved Otto Borchsenius.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -9412,14 +9400,12 @@ over Døgnets Taage og Skraalet!
 
 <text id="kaalund2002122807">
 <head>
-   <title>Ved Stranden</title>
-   <toctitle>Ved Stranden</toctitle>
-   <indextitle>Ved Stranden</indextitle>
-   <firstline>Ensom i Aftenens dæmrende Stund</firstline>
-   <notes>
-      <note>Indtastet efter H.V. Kaalund: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, 1898, udgivet ved Otto Borchsenius, pp. 294-296.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Ved Stranden</title>
+  <toctitle>Ved Stranden</toctitle>
+  <indextitle>Ved Stranden</indextitle>
+  <firstline>Ensom i Aftenens dæmrende Stund</firstline>
+  <source pages="294-296">H.V. Kaalund: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, 1898, udgivet ved Otto Borchsenius.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -9491,14 +9477,12 @@ som min Sjæl har i Nuet fornummet!
 
 <text id="kaalund2002122808">
 <head>
-   <title>Det sidste Følge</title>
-   <toctitle>Det sidste Følge</toctitle>
-   <indextitle>Det sidste Følge</indextitle>
-   <firstline>De skulde bære den Døde bort</firstline>
-   <notes>
-      <note>Indtastet efter H.V. Kaalund: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, 1898, udgivet ved Otto Borchsenius, pp. 296-299.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Det sidste Følge</title>
+  <toctitle>Det sidste Følge</toctitle>
+  <indextitle>Det sidste Følge</indextitle>
+  <firstline>De skulde bære den Døde bort</firstline>
+  <source pages="296-299">H.V. Kaalund: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, 1898, udgivet ved Otto Borchsenius.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -9587,14 +9571,12 @@ af hundrede Fugle om Graven!
 
 <text id="kaalund2002122809">
 <head>
-   <title>&bdquo;Araberen&ldquo;</title>
-   <toctitle>&bdquo;Araberen&ldquo;</toctitle>
-   <indextitle>Araberen</indextitle>
-   <firstline>Føret var prægtigt, Vejret smukt</firstline>
-   <notes>
-      <note>Indtastet efter H.V. Kaalund: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, 1898, udgivet ved Otto Borchsenius, pp. 300-304.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>„Araberen“</title>
+  <toctitle>„Araberen“</toctitle>
+  <indextitle>Araberen</indextitle>
+  <firstline>Føret var prægtigt, Vejret smukt</firstline>
+  <source pages="300-304">H.V. Kaalund: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, 1898, udgivet ved Otto Borchsenius.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -9714,14 +9696,12 @@ til den højeste Ret paa Dommens Dag!
 
 <text id="kaalund2002122810">
 <head>
-   <title>Elefanten</title>
-   <toctitle>Elefanten</toctitle>
-   <indextitle>Elefanten</indextitle>
-   <firstline>Den var bragt over Sø og salten Vand</firstline>
-   <notes>
-      <note>Indtastet efter H.V. Kaalund: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, 1898, udgivet ved Otto Borchsenius, pp. 304-308.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Elefanten</title>
+  <toctitle>Elefanten</toctitle>
+  <indextitle>Elefanten</indextitle>
+  <firstline>Den var bragt over Sø og salten Vand</firstline>
+  <source pages="304-308">H.V. Kaalund: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, 1898, udgivet ved Otto Borchsenius.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -9838,11 +9818,11 @@ Respekt for de Smaa - for <i>Mængden!</i>
 
 <text id="kaalund2003010444">
 <head>
-   <title>Bjørnejagt</title>
-   <toctitle>Bjørnejagt</toctitle>
-   <indextitle>Bjørnejagt</indextitle>
-   <firstline>Jeg véd en pudsig Maade</firstline>
-   <quality>korrektur1</quality>
+  <title>Bjørnejagt</title>
+  <toctitle>Bjørnejagt</toctitle>
+  <indextitle>Bjørnejagt</indextitle>
+  <firstline>Jeg véd en pudsig Maade</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -9968,11 +9948,11 @@ deroppe i sit Tov!
 
 <text id="kaalund2003010445">
 <head>
-   <title>Manden paa Dueslaget</title>
-   <toctitle>Manden paa Dueslaget</toctitle>
-   <indextitle>Manden paa Dueslaget</indextitle>
-   <firstline>Fra femte Stokværk til Husets Kvist</firstline>
-   <quality>korrektur1</quality>
+  <title>Manden paa Dueslaget</title>
+  <toctitle>Manden paa Dueslaget</toctitle>
+  <indextitle>Manden paa Dueslaget</indextitle>
+  <firstline>Fra femte Stokværk til Husets Kvist</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -10071,11 +10051,11 @@ og er ikke rigtig i Ho'det.
 
 <text id="kaalund2003010446">
 <head>
-   <title>Ravnen</title>
-   <toctitle>Ravnen</toctitle>
-   <indextitle>Ravnen</indextitle>
-   <firstline>Da paa Solferinos Høje Kampens store Stund var nær</firstline>
-   <quality>korrektur1</quality>
+  <title>Ravnen</title>
+  <toctitle>Ravnen</toctitle>
+  <indextitle>Ravnen</indextitle>
+  <firstline>Da paa Solferinos Høje Kampens store Stund var nær</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -10114,11 +10094,11 @@ Aadselsravnen - Ørnens Skygge - Dødens Fugl saa sort som Sod!
 
 <text id="kaalund2003010447">
 <head>
-   <title>Kilden</title>
-   <toctitle>Kilden</toctitle>
-   <indextitle>Kilden</indextitle>
-   <firstline>Af Kilderne smaa</firstline>
-   <quality>korrektur1</quality>
+  <title>Kilden</title>
+  <toctitle>Kilden</toctitle>
+  <indextitle>Kilden</indextitle>
+  <firstline>Af Kilderne smaa</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -10155,11 +10135,11 @@ og strøm saa i Havet med Ære!
 
 <text id="kaalund2003010448">
 <head>
-   <title>Da de rev Voldene ned</title>
-   <toctitle>Da de rev Voldene ned</toctitle>
-   <indextitle>Da de rev Voldene ned</indextitle>
-   <firstline>Hvad gaar der af Dig, min Fødeby?</firstline>
-   <quality>korrektur1</quality>
+  <title>Da de rev Voldene ned</title>
+  <toctitle>Da de rev Voldene ned</toctitle>
+  <indextitle>Da de rev Voldene ned</indextitle>
+  <firstline>Hvad gaar der af Dig, min Fødeby?</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -10348,11 +10328,11 @@ før de forsvinder!
 
 <text id="kaalund2003010449">
 <head>
-   <title>Til en Ven og en Veninde</title>
-   <toctitle>Til en Ven og en Veninde</toctitle>
-   <indextitle>Til en Ven og en Veninde</indextitle>
-   <firstline>Modtag, min unge, varme Ven</firstline>
-   <quality>korrektur1</quality>
+  <title>Til en Ven og en Veninde</title>
+  <toctitle>Til en Ven og en Veninde</toctitle>
+  <indextitle>Til en Ven og en Veninde</indextitle>
+  <firstline>Modtag, min unge, varme Ven</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -10458,12 +10438,12 @@ og mér end tyve Aar!
 
 <text id="kaalund2003010450">
 <head>
-   <title>Et Vinterbillede</title>
-   <subtitle>(Text til et Træsnit, tegnet af H. Friis.)</subtitle>
-   <toctitle>Et Vinterbillede</toctitle>
-   <indextitle>Et Vinterbillede</indextitle>
-   <firstline>Jeg synes, som før jeg det Gjærde har sét</firstline>
-   <quality>korrektur1</quality>
+  <title>Et Vinterbillede</title>
+  <subtitle>(Text til et Træsnit, tegnet af H. Friis.)</subtitle>
+  <toctitle>Et Vinterbillede</toctitle>
+  <indextitle>Et Vinterbillede</indextitle>
+  <firstline>Jeg synes, som før jeg det Gjærde har sét</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -10576,11 +10556,11 @@ mig betragter med ærlige Øjne.
 
 <text id="kaalund2001071801">
 <head>
-   <title>Paa det Jevne</title>
-   <toctitle>Paa det Jevne</toctitle>
-   <indextitle>Paa det Jevne</indextitle>
-   <firstline>Paa det Jevne, paa det Jevne!</firstline>
-   <quality>korrektur1</quality>
+  <title>Paa det Jevne</title>
+  <toctitle>Paa det Jevne</toctitle>
+  <indextitle>Paa det Jevne</indextitle>
+  <firstline>Paa det Jevne, paa det Jevne!</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -10643,11 +10623,11 @@ Det er Livets Sejerssang!
 
 <text id="kaalund2003010451">
 <head>
-   <title>Til Fru .....</title>
-   <toctitle>Til Fru .....</toctitle>
-   <indextitle>Til Fru .....</indextitle>
-   <firstline>Til Dem, som tidt har skjændt</firstline>
-   <quality>korrektur1</quality>
+  <title>Til Fru .....</title>
+  <toctitle>Til Fru .....</toctitle>
+  <indextitle>Til Fru .....</indextitle>
+  <firstline>Til Dem, som tidt har skjændt</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -10782,11 +10762,11 @@ med Hjertet paa Læben,
 
 <text id="kaalund2003010452">
 <head>
-   <title>Den brogede Verden</title>
-   <toctitle>Den brogede Verden</toctitle>
-   <indextitle>Den brogede Verden</indextitle>
-   <firstline>Jeg elsker den brogede Verden</firstline>
-   <quality>korrektur1</quality>
+  <title>Den brogede Verden</title>
+  <toctitle>Den brogede Verden</toctitle>
+  <indextitle>Den brogede Verden</indextitle>
+  <firstline>Jeg elsker den brogede Verden</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>

@@ -1,32 +1,19 @@
-// @flow
-
-import React, { useContext } from 'react';
-import Page from '../components/page.js';
-import { kalliopeMenu } from '../components/menu.js';
-import LangSelect from '../components/langselect';
-import { kalliopeCrumbs } from '../components/breadcrumbs';
-import SubHeading from '../components/subheading.js';
-import SidebarSplit from '../components/sidebarsplit.js';
-import * as Links from '../components/links';
-import TextContent from '../components/textcontent.js';
-import SplitWhenSmall from '../components/split-when-small.js';
-import Picture from '../components/picture.js';
-import { formattedDate } from '../components/formatteddate.js';
-import type {
-  Lang,
-  NewsItem,
-  TimelineItem,
-  PictureItem,
-} from '../common/types.js';
+import { useContext } from 'react';
 import { createURL } from '../common/client.js';
 import LangContext from '../common/LangContext.js';
 import _ from '../common/translations.js';
-import 'isomorphic-fetch';
+import { formattedDate } from '../components/formatteddate.js';
+import { kalliopeMenu } from '../components/menu.js';
+import Page from '../components/page.js';
+import PageLead from '../components/pagelead.js';
+import Picture from '../components/picture.js';
+import SidebarSplit from '../components/sidebarsplit.js';
+import SplitWhenSmall from '../components/split-when-small.js';
+import SubHeading from '../components/subheading.js';
+import TextContent from '../components/textcontent.js';
+import Tooltip from '../components/tooltip.js';
 
-type TodaysEventsProps = {
-  events: Array<TimelineItem>,
-};
-const TodaysEvents = ({ events }: TodaysEventsProps) => {
+const TodaysEvents = ({ events }) => {
   const lang = useContext(LangContext);
 
   if (events == null || events.length == 0) {
@@ -34,12 +21,19 @@ const TodaysEvents = ({ events }: TodaysEventsProps) => {
   }
   const nowYear = new Date().getFullYear();
   const renderedEvents = events
-    .filter(item => item.type !== 'image')
+    .filter((item) => item.type !== 'image')
     .map((item, i) => {
       const yearsAgo = nowYear - parseInt(item.date.substring(0, 4));
+      const date = formattedDate(item.date, lang);
+      const tooltip = _('{yearsAgo} år siden i dag', lang, { yearsAgo });
       const yearHtml = (
-        <div className="today-date" title={yearsAgo + ' år siden i dag'}>
-          {formattedDate(item.date)}
+        <div className="today-date">
+          <Tooltip
+            text={tooltip}
+            ariaLabel={`${date} – ${tooltip}`}
+            focusable>
+            {date}
+          </Tooltip>
         </div>
       );
       const html = (
@@ -57,9 +51,9 @@ const TodaysEvents = ({ events }: TodaysEventsProps) => {
       );
     });
   let pictureItems = events
-    .filter(item => item.type === 'image' && item.src != null)
+    .filter((item) => item.type === 'image' && item.src != null)
     .map((item, i) => {
-      const picture: PictureItem = {
+      const picture = {
         src: item.src || '',
         lang: item.content_lang,
         content_html: item.content_html,
@@ -82,7 +76,7 @@ const TodaysEvents = ({ events }: TodaysEventsProps) => {
   let pictureItem = pictureItems.length > 0 ? pictureItems[0] : null;
   return (
     <div>
-      <SubHeading>Dagen i dag</SubHeading>
+      <SubHeading>{_('Dagen i dag', lang)}</SubHeading>
       <SplitWhenSmall>
         <div>{renderedEvents}</div>
         <div style={{ marginTop: '40px' }}>{pictureItem}</div>
@@ -103,23 +97,14 @@ const TodaysEvents = ({ events }: TodaysEventsProps) => {
   );
 };
 
-type NewsProps = {
-  news: Array<NewsItem>,
-};
-const News = ({ news }: NewsProps) => {
+const News = ({ news }) => {
   const lang = useContext(LangContext);
 
   const items = news
-    .filter((_, i) => i < 5)
     .map((item, i) => {
-      const { date, content_html, content_lang, title } = item;
-      let renderedTitle = null;
-      if (i === 0 && title != null) {
-        renderedTitle = <h3>{title}</h3>;
-      }
+      const { date, content_html, content_lang } = item;
       return (
         <div className="news-item" key={date + i}>
-          {renderedTitle}
           <div className="news-body">
             <TextContent
               contentHtml={content_html}
@@ -127,22 +112,10 @@ const News = ({ news }: NewsProps) => {
               lang={lang}
             />
           </div>
-          <div className="news-date">{formattedDate(date)}</div>
+          <div className="news-date">{formattedDate(date, lang)}</div>
           <style jsx>{`
             div.news-item {
               margin-bottom: 20px;
-            }
-            div.news-item:first-child {
-              padding-bottom: 40px;
-              border-bottom: 1px solid #757575;
-              margin-bottom: 50px;
-            }
-
-            :global(div.news-item h3) {
-              font-weight: 100;
-              font-size: 26px;
-              margin: 0 0 20px 0;
-              padding: 0;
             }
             div.news-body {
               line-height: 1.6;
@@ -151,29 +124,26 @@ const News = ({ news }: NewsProps) => {
               margin-top: 5px;
               font-size: 0.9em;
               color: #757575;
+              text-align: right;
             }
           `}</style>
         </div>
       );
     });
 
-  return <div>{items}</div>;
+  return (
+    <div>
+      <SubHeading>{_('Seneste nyt', lang)}</SubHeading>
+      {items}
+    </div>
+  );
 };
 
-const zeroPad = (n: number) => {
+const zeroPad = (n) => {
   return n < 10 ? `0${n}` : `${n}`;
 };
 
-type IndexProps = {
-  news: Array<NewsItem>,
-  todaysEvents: Array<TimelineItem>,
-  pagingContext: ?{
-    prev: string, // mm-dd
-    next: string, // mm-dd
-  },
-};
-
-let Index = (props: IndexProps) => {
+let Index = (props) => {
   const { news, todaysEvents, pagingContext } = props;
   const lang = useContext(LangContext);
 
@@ -184,11 +154,11 @@ let Index = (props: IndexProps) => {
       ? {
           prev: {
             url: `/${lang}/?date=${pagingContext.prev}`,
-            title: 'En dag tilbage',
+            title: _('En dag tilbage', lang),
           },
           next: {
             url: `/${lang}/?date=${pagingContext.next}`,
-            title: 'En dag frem',
+            title: _('En dag frem', lang),
           },
         }
       : null;
@@ -200,24 +170,27 @@ let Index = (props: IndexProps) => {
       headTitle="Kalliope"
       pageTitle="Kalliope"
       requestPath={requestPath}
-      crumbs={kalliopeCrumbs(lang)}
       menuItems={kalliopeMenu()}
       selectedMenuItem="index"
       paging={paging}>
-      <SidebarSplit sidebar={sidebar}>
-        <div>
-          <News news={news} lang={lang} />
-        </div>
-      </SidebarSplit>
+      <div className="front-page">
+        <PageLead>
+          {_(
+            'Kalliope er et digitalt bibliotek for poesi og klassisk litteratur. Her finder du digte, oversættelser, forfatterbiografier og litterære noter, frit tilgængeligt og forbundet gennem personer, værker, steder og historiske perioder.',
+            lang
+          )}
+        </PageLead>
+        <SidebarSplit sidebar={sidebar}>
+          <div>
+            <News news={news} lang={lang} />
+          </div>
+        </SidebarSplit>
+      </div>
     </Page>
   );
 };
 
-Index.getInitialProps = async ({
-  query: { lang, date },
-}: {
-  query: { lang: Lang, date?: string },
-}) => {
+Index.getInitialProps = async ({ query: { lang, date } }) => {
   if (lang == null) {
     lang = 'da';
   }
@@ -244,14 +217,14 @@ Index.getInitialProps = async ({
       next: `${zeroPad(next.getMonth() + 1)}-${zeroPad(next.getDate())}`,
     };
   }
-  const newsPromise = fetch(createURL(`/static/api/news_${lang}.json`));
+  const newsPromise = fetch(createURL(`/api/news_${lang}.json`));
   const todayPromise = fetch(
-    createURL(`/static/api/today/${lang}/${dayAndMonth}.json`)
+    createURL(`/api/today/${lang}/${dayAndMonth}.json`)
   );
   const todayResponse = await todayPromise;
   const newsResponse = await newsPromise;
-  const todaysEvents: Array<TimelineItem> = await todayResponse.json();
-  const news: Array<NewsItem> = await newsResponse.json();
+  const todaysEvents = await todayResponse.json();
+  const news = await newsResponse.json();
 
   return { lang, country, news, todaysEvents, pagingContext };
 };

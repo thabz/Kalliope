@@ -1,29 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="reenberg" status="incomplete" type="poetry">
 <workhead>
-   <title>Andre digte</title>
-   <year>?</year>
-   <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+  <title>Andre digte</title>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
 <text id="reenberg2002103106">
 <head>
-   <title>Verdens Daarekiste</title>
-   <subtitle>
-      <line><i>Til Gregers Friis</i></line>
-      <line></line>
-      <line>(in Martio 1699.)</line>
-   </subtitle>
-   <toctitle>Verdens Daarekiste</toctitle>
-   <indextitle>Verdens Daarekiste</indextitle>
-   <firstline>Hvis ey mit Haab og Christendom</firstline>
-   <notes>
-      <note>Indtastet efter Tøger Reenberg: <i>Ars Poetica</i>, Per Stig Møller (red.), Munksgaards Baroktekster, 1972, pp. 75-82.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Verdens Daarekiste</title>
+  <subtitle>
+    <line><i>Til Gregers Friis</i></line>
+    <line></line>
+    <line>(in Martio 1699.)</line>
+  </subtitle>
+  <toctitle>Verdens Daarekiste</toctitle>
+  <indextitle>Verdens Daarekiste</indextitle>
+  <firstline>Hvis ey mit Haab og Christendom</firstline>
+  <source pages="75-82">Tøger Reenberg: <i>Ars Poetica</i>, Per Stig Møller (red.), Munksgaards Baroktekster, 1972.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -94,7 +89,7 @@ Ey Rang, ey Gang, ey noget, som
 Naar hørtest blandt de vilde Dyr,
    Som ufornuftig kaldes,
 En <i>Abner</i> udi Vens Postyr <!-- side 77 -->
-   Af <i>Joab</i> overfaldes<note><xref bibel="bibel2samuel03,27"/></note>
+   Af <i>Joab</i> overfaldes<note><xref bible="bibel2samuel03,27"/></note>
 Hvad hine giøre, skeer af Trang,
    At de sig kunde mætte:
 Men vi foruden Nød og Tvang
@@ -299,17 +294,16 @@ De Ører, som hans Moder bær,
 </body>
 </text>
 
-<text id="reenbergandrea0">
+<text id="reenbergandrea0" variant="reenberg2001062301">
 <head>
-   <title>I et Viinhus jeg skal sige</title>
-   <toctitle>I et Viinhus jeg skal sige</toctitle>
-   <indextitle>I et Viinhus jeg skal sige</indextitle>
-   <firstline>I et Viinhus jeg skal sige</firstline>
-   <notes>
-       <note>Dateret til November 1702 i Tøger Reenbergs <i>Poetiske Skrifter i tvende Deele</i> (1769). Oversættelse af en fransk drikkevise <xref poem="anonym2017082101"/>.</note>
-      <note>Cf. Reenbergs <xref poem="reenberg2001062301"/> for en alternativ udgave af denne vise.</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title>I et Viinhus jeg skal sige</title>
+  <toctitle>I et Viinhus jeg skal sige</toctitle>
+  <indextitle>I et Viinhus jeg skal sige</indextitle>
+  <firstline>I et Viinhus jeg skal sige</firstline>
+  <notes>
+    <note>Dateret til November 1702 i Tøger Reenbergs <i>Poetiske Skrifter i tvende Deele</i> (1769). Oversættelse af en fransk drikkevise <xref poem="anonym2017082101"/>.</note>
+  </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -361,78 +355,13 @@ Vederqvæge maa sin Tunge,
 </body>
 </text>
 
-<text id="reenberg2001062301">
-<head>
-   <title>I et Viinhus vil jeg sige</title>
-   <toctitle>I et Viinhus vil jeg sige</toctitle>
-   <indextitle>I et Viinhus vil jeg sige</indextitle>
-   <firstline>I et Viinhus vil jeg sige</firstline>
-   <notes>
-       <note>Visen enten en oversættelse eller en gendigtning af en fransk drikkevise <xref poem="anonym2017082101"/>. Det vides ikke, hvem der har skrevet den franske drikkevise, og hvornår.</note>
-      <note>Indtastet fra <i>Digter-Krands - En Samling af udkaarede ældre og nyere Selskabssange</i>, Odense, 1826. Trykker og udgiver er S. Hempel "Eier af Fyens Adressekontoir".</note>
-      <note type="credits">Bidrag fra Margit Ammentorp.</note>
-      <note>Cf. Reenbergs <xref poem="reenbergandrea0"/> for en alternativ udgave af denne vise.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
-   <keywords>drikkevise</keywords>
-</head>
-<body>
-<poetry>
-I et Viinhus vil jeg sige
-mit Farvel og lægges ned,
-under Tønden vil jeg ligge,
-under Tappen Hovedet;
-Munden maa staae spærret aaben,
-det maa observeres, thi
-ellers torde Tappedråben
-gaae min tørre Hals forbi.
-
-Der skal ringes med Boutellier,
-naar Man bær mig til min Grav;
-fiir og tyve drukne Seller
-skal gaae for med Krands paa Stav;
-de skal drikke, Viser Sjunge,
-og ophænge rundtenom
-alle mine Pengepunge,
-som de hjalp at gjøre tom.
-
-Alt mit Gods ved Testamente
-skjænker jeg en Kjeldersvend,
-for den Viin, han lod mig hente
-paa Kredit i Kjelderen.
-Al min Rigdom er en Skjorte,
-som er gammel og forslidt;
-hvis den ikke alt er borte,
-maa han have den for sit.
-
-Alle mine Kammerater,
-som mig hjalp at distilleer'
-mine arvede Dukater,
-til jeg havde ingen fleer;
-ned paa Knæ de skulle sjunge:
-han er død, men gid han der
-vederqvæge maa sin Tunge,
-som han fordum gjorde her!
-
-Saa tilkommer mig med rette
-et fortrefligt Monument,
-som Man over mig skal sætte,
-thi jeg har det vel fortjent;
-med den Gravskrift oven over,
-som bør skrives paa Latin:
-"under denne Tønde sover
-et forfyldt, fordrukket Sviin."
-</poetry>
-</body>
-</text>
-
 <text id="reenberg1999031401">
 <head>
-   <title>Foraarsjagt</title>
-   <toctitle>Foraarsjagt</toctitle>
-   <indextitle>Foraarsjagt</indextitle>
-   <firstline>Aprilis du smukke! du deilige Vaar!</firstline>
-   <quality>korrektur1</quality>
+  <title>Foraarsjagt</title>
+  <toctitle>Foraarsjagt</toctitle>
+  <indextitle>Foraarsjagt</indextitle>
+  <firstline>Aprilis du smukke! du deilige Vaar!</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -461,15 +390,13 @@ Med Blye og Salpeter til Døde dig støder.
 
 <text id="reenberg2002103105">
 <head>
-   <title>Til Justitz-Raad Rostgaard</title>
-   <subtitle>(Februar. 1703.)</subtitle>
-   <toctitle>Til Justitz-Raad Rostgaard</toctitle>
-   <indextitle>Til Justitz-Raad Rostgaard</indextitle>
-   <firstline>Det gaaer mig, som den Græker, der</firstline>
-   <notes>
-      <note>Indtastet efter Tøger Reenberg: <i>Ars Poetica</i>, Per Stig Møller (red.), Munksgaards Baroktekster, 1972, pp. 99-100.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Justitz-Raad Rostgaard</title>
+  <subtitle>(Februar. 1703.)</subtitle>
+  <toctitle>Til Justitz-Raad Rostgaard</toctitle>
+  <indextitle>Til Justitz-Raad Rostgaard</indextitle>
+  <firstline>Det gaaer mig, som den Græker, der</firstline>
+  <source pages="99-100">Tøger Reenberg: <i>Ars Poetica</i>, Per Stig Møller (red.), Munksgaards Baroktekster, 1972.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -507,15 +434,15 @@ At, skiønt han meget var belæst,
 
 <text id="reenberg2002103101">
 <head>
-   <title>Løven og Æselet paa Jagt</title>
-   <toctitle>Løven og Æselet paa Jagt</toctitle>
-   <indextitle>Løven og Æselet paa Jagt</indextitle>
-   <firstline>Løven lysted' Dyr at beede</firstline>
-   <notes>
-      <note>Skrevet efter 1710.</note>
-      <note>Indtastet efter Tøger Reenberg: <i>Ars Poetica</i>, Per Stig Møller (red.), Munksgaards Baroktekster, 1972, pp. 86-87.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Løven og Æselet paa Jagt</title>
+  <toctitle>Løven og Æselet paa Jagt</toctitle>
+  <indextitle>Løven og Æselet paa Jagt</indextitle>
+  <firstline>Løven lysted' Dyr at beede</firstline>
+  <notes>
+    <note>Skrevet efter 1710.</note>
+  </notes>
+  <source pages="86-87">Tøger Reenberg: <i>Ars Poetica</i>, Per Stig Møller (red.), Munksgaards Baroktekster, 1972.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -566,16 +493,16 @@ Knebelbarter op at sætte,
 
 <text id="reenberg2002103102">
 <head>
-   <title>Til Friherrinde Güldencrone</title>
-   <subtitle>(in Julio 1714.)</subtitle>
-   <toctitle>Til Friherrinde Güldencrone</toctitle>
-   <indextitle>Til Friherrinde Güldencrone</indextitle>
-   <firstline>Homerus og hans heele Chor</firstline>
-   <notes>
-      <note><i>Amalia Margrete Moth</i>, Geheime-Raad og Stiftbefalingsmand i <i>Wiborg</i>, Baron <i>Christian Gyldencrones,</i> Frue.</note>
-      <note>Indtastet efter Tøger Reenberg: <i>Ars Poetica</i>, Per Stig Møller (red.), Munksgaards Baroktekster, 1972, pp. 105-106.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Friherrinde Güldencrone</title>
+  <subtitle>(in Julio 1714.)</subtitle>
+  <toctitle>Til Friherrinde Güldencrone</toctitle>
+  <indextitle>Til Friherrinde Güldencrone</indextitle>
+  <firstline>Homerus og hans heele Chor</firstline>
+  <notes>
+    <note><i>Amalia Margrete Moth</i>, Geheime-Raad og Stiftbefalingsmand i <i>Wiborg</i>, Baron <i>Christian Gyldencrones,</i> Frue.</note>
+  </notes>
+  <source pages="105-106">Tøger Reenberg: <i>Ars Poetica</i>, Per Stig Møller (red.), Munksgaards Baroktekster, 1972.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -641,15 +568,13 @@ At intet er paa Jorden, som
 
 <text id="reenberg2002103104">
 <head>
-   <title>Til Oberste Lange</title>
-   <subtitle>(d. 31 Decembr. 1720.)</subtitle>
-   <toctitle>Til Oberste Lange</toctitle>
-   <indextitle>Til Oberste Lange</indextitle>
-   <firstline>Som jeg i Dag det gamle Aar</firstline>
-   <notes>
-      <note>Indtastet efter Tøger Reenberg: <i>Ars Poetica</i>, Per Stig Møller (red.), Munksgaards Baroktekster, 1972, pp. 101-102.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Oberste Lange</title>
+  <subtitle>(d. 31 Decembr. 1720.)</subtitle>
+  <toctitle>Til Oberste Lange</toctitle>
+  <indextitle>Til Oberste Lange</indextitle>
+  <firstline>Som jeg i Dag det gamle Aar</firstline>
+  <source pages="101-102">Tøger Reenberg: <i>Ars Poetica</i>, Per Stig Møller (red.), Munksgaards Baroktekster, 1972.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -701,15 +626,13 @@ Jeg svarer: Den, mig kiærest er,
 
 <text id="reenberg2002103103">
 <head>
-   <title>Over Udvælgelsen</title>
-   <subtitle>(October 1725.)</subtitle>
-   <toctitle>Over Udvælgelsen</toctitle>
-   <indextitle>Over Udvælgelsen</indextitle>
-   <firstline>Hvi tvistes med Geneve om</firstline>
-   <notes>
-      <note>Indtastet efter Tøger Reenberg: <i>Ars Poetica</i>, Per Stig Møller (red.), Munksgaards Baroktekster, 1972, p. 107.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Over Udvælgelsen</title>
+  <subtitle>(October 1725.)</subtitle>
+  <toctitle>Over Udvælgelsen</toctitle>
+  <indextitle>Over Udvælgelsen</indextitle>
+  <firstline>Hvi tvistes med Geneve om</firstline>
+  <source pages="107">Tøger Reenberg: <i>Ars Poetica</i>, Per Stig Møller (red.), Munksgaards Baroktekster, 1972.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -751,16 +674,16 @@ Og frygt ey for, Guds strenge Dom
 
 <text id="reenberg2002103107">
 <head>
-   <title>Til Oberste Werner Parsberg</title>
-   <toctitle>Til Oberste Werner Parsberg</toctitle>
-   <indextitle>Til Oberste Werner Parsberg</indextitle>
-   <firstline>Min Hilsen her, med Haand og Fod</firstline>
-   <notes>
-      <note>Skrevet før 1703.</note>
-      <note>Herre til <i>Skivehuus, Bistrup</i> og <i>Eskiær</i>, hvor han døde den <i>7. Nov. 1719.</i></note>
-      <note>Indtastet efter Tøger Reenberg: <i>Ars Poetica</i>, Per Stig Møller (red.), Munksgaards Baroktekster, 1972, pp. 95-98.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Oberste Werner Parsberg</title>
+  <toctitle>Til Oberste Werner Parsberg</toctitle>
+  <indextitle>Til Oberste Werner Parsberg</indextitle>
+  <firstline>Min Hilsen her, med Haand og Fod</firstline>
+  <notes>
+    <note>Skrevet før 1703.</note>
+    <note>Herre til <i>Skivehuus, Bistrup</i> og <i>Eskiær</i>, hvor han døde den <i>7. Nov. 1719.</i></note>
+  </notes>
+  <source pages="95-98">Tøger Reenberg: <i>Ars Poetica</i>, Per Stig Møller (red.), Munksgaards Baroktekster, 1972.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -878,15 +801,15 @@ Hvad er jeg? Paa min sande Troe!
 
 <text id="reenberg2002110201">
 <head>
-   <title>Juuletanke</title>
-   <toctitle>Juuletanke</toctitle>
-   <indextitle>Juuletanke</indextitle>
-   <firstline>Hvad er Verdens pragt og Vælde</firstline>
-   <notes>
-      <note>Forfattet i 1691.</note>
-      <note>Efter Niels Simonsen: <i>Verdslig Barok</i>, 1985, pp. 121-122, som igen angiver Nks. 4&deg; 4812, s. 205, som tekstgrundlag.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Juuletanke</title>
+  <toctitle>Juuletanke</toctitle>
+  <indextitle>Juuletanke</indextitle>
+  <firstline>Hvad er Verdens pragt og Vælde</firstline>
+  <notes>
+    <note>Forfattet i 1691.</note>
+  </notes>
+  <source>Niels Simonsen: <i>Verdslig Barok</i>, 1985, pp. 121-122, som igen angiver Nks. 4° 4812, s. 205, som tekstgrundlag.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -925,15 +848,15 @@ Som paa Gud vil sig forlade,
 
 <text id="reenberg2002110202">
 <head>
-   <title>Panegyricus Generosi Philax</title>
-   <toctitle>Panegyricus Generosi Philax</toctitle>
-   <indextitle>Panegyricus Generosi Philax</indextitle>
-   <firstline>Jeg kravled op af Leje-trang</firstline>
-   <notes>
-      <note>Uddrag.</note>
-      <note>Efter Niels Simonsen: <i>Verdslig Barok</i>, 1985, pp. 125-126, som igen angiver J. J. Høpffner: <i>Udvalde danske Riim</i>, 1728, III, s. 181, som tekstgrundlag.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Panegyricus Generosi Philax</title>
+  <toctitle>Panegyricus Generosi Philax</toctitle>
+  <indextitle>Panegyricus Generosi Philax</indextitle>
+  <firstline>Jeg kravled op af Leje-trang</firstline>
+  <notes>
+    <note>Uddrag.</note>
+  </notes>
+  <source>Niels Simonsen: <i>Verdslig Barok</i>, 1985, pp. 125-126, som igen angiver J. J. Høpffner: <i>Udvalde danske Riim</i>, 1728, III, s. 181, som tekstgrundlag.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -982,16 +905,16 @@ Hand aldrig stander op heraf,
 
 <text id="reenberg2002110203">
 <head>
-   <title>Til Brostorph d. 26. Dec: 1701</title>
-   <toctitle>Til Brostorph d. 26. Dec: 1701</toctitle>
-   <indextitle>Til Brostorph d. 26. Dec: 1701</indextitle>
-   <firstline>Men naar enhver med sit far vel</firstline>
-   <notes>
-      <note>Forfattet 1701.</note>
-      <note>Efter Niels Simonsen: <i>Verdslig Barok</i>, 1985, p. 127, som igen angiver Rostg. 4&deg; 264, s. 148, som tekstgrundlag.</note>
-      <note>Brostorph er iflg. Simonsen Reenbergs svoger, Brostrup Albertin, godsejer og jurist.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Brostorph d. 26. Dec: 1701</title>
+  <toctitle>Til Brostorph d. 26. Dec: 1701</toctitle>
+  <indextitle>Til Brostorph d. 26. Dec: 1701</indextitle>
+  <firstline>Men naar enhver med sit far vel</firstline>
+  <notes>
+    <note>Forfattet 1701.</note>
+    <note>Brostorph er iflg. Simonsen Reenbergs svoger, Brostrup Albertin, godsejer og jurist.</note>
+  </notes>
+  <source>Niels Simonsen: <i>Verdslig Barok</i>, 1985, p. 127, som igen angiver Rostg. 4° 264, s. 148, som tekstgrundlag.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1020,14 +943,12 @@ Jeg mig min brudeseng til straf
 
 <text id="reenberg2002110204">
 <head>
-   <title>Daglige Forretninger</title>
-   <toctitle>Daglige Forretninger</toctitle>
-   <indextitle>Daglige Forretninger</indextitle>
-   <firstline>Naar Klocken er 6 ieg først vogner op</firstline>
-   <notes>
-      <note>Efter Niels Simonsen: <i>Verdslig Barok</i>, 1985, pp. 119-120, som igen angiver Rostg. 4&deg; 264, s. 50, som tekstgrundlag.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Daglige Forretninger</title>
+  <toctitle>Daglige Forretninger</toctitle>
+  <indextitle>Daglige Forretninger</indextitle>
+  <firstline>Naar Klocken er 6 ieg først vogner op</firstline>
+  <source>Niels Simonsen: <i>Verdslig Barok</i>, 1985, pp. 119-120, som igen angiver Rostg. 4° 264, s. 50, som tekstgrundlag.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1079,17 +1000,17 @@ At sove, til 6 ieg mig reiser igien.
 
 <text id="reenberg2002110205">
 <head>
-   <title>Til Brostorph Albertin in Aug: 1703</title>
-   <toctitle>Til Brostorph Albertin in Aug: 1703</toctitle>
-   <indextitle>Til Brostorph Albertin in Aug: 1703</indextitle>
-   <firstline>Lycksalig den som ikke veed</firstline>
-   <notes>
-      <note>Skrevet 1703.</note>
-      <note>Efter Niels Simonsen: <i>Verdslig Barok</i>, 1985, pp. 128-130, som igen angiver Rostg. 4&deg; 264, s. 166, som tekstgrundlag.</note>
-      <note>Noterne  på grundlag af Simonsen.</note>
-      <note>Om Brostorph, se <xref poem="reenberg2002110203"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Brostorph Albertin in Aug: 1703</title>
+  <toctitle>Til Brostorph Albertin in Aug: 1703</toctitle>
+  <indextitle>Til Brostorph Albertin in Aug: 1703</indextitle>
+  <firstline>Lycksalig den som ikke veed</firstline>
+  <notes>
+    <note>Skrevet 1703.</note>
+    <note>Noterne  på grundlag af Simonsen.</note>
+    <note>Om Brostorph, se <xref poem="reenberg2002110203"/>.</note>
+  </notes>
+  <source>Niels Simonsen: <i>Verdslig Barok</i>, 1985, pp. 128-130, som igen angiver Rostg. 4° 264, s. 166, som tekstgrundlag.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1153,14 +1074,12 @@ I er unyttigt tids fordriv
 
 <text id="reenberg2002111701">
 <head>
-   <title>Forsamling paa Parnasso</title>
-   <toctitle>Forsamling paa Parnasso</toctitle>
-   <indextitle>Forsamling paa Parnasso</indextitle>
-   <firstline>Siig, gode Bording! siig mig dog</firstline>
-   <notes>
-      <note>Efter Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1, pp. 453-464.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Forsamling paa Parnasso</title>
+  <toctitle>Forsamling paa Parnasso</toctitle>
+  <indextitle>Forsamling paa Parnasso</indextitle>
+  <firstline>Siig, gode Bording! siig mig dog</firstline>
+  <source pages="453-464">Erik Sønderholm (red.): <i>Dansk Barokdigtning 1600-1750</i>, 1969, bd. 1.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1261,7 +1180,7 @@ Sæt <i>Nomen</i> her, sæt <i>Verbum</i> der,
 Du strax Poet og Riimer er,
    Og idel Vers udspytter.
 Bort <b>A-B</b> det er jo saa riigt,
-   Dermed du <i>Ph&oelig;bus</i> tvinger,
+   Dermed du <i>Phœbus</i> tvinger,
 Og skal vel <i>Pegasus</i> ved sligt
    Dig laane sine Vinger.
 Men vogte dig for Eftersmek:
@@ -1348,12 +1267,12 @@ Til den, som kunde riime best,
    Og vidste ret at skrive.
 Thi blev opsat en Riime-Fest:
    Hver skulde sig begive
-Til <i>Helicon</i>. Did <i>Ph&oelig;bus</i> kom,
+Til <i>Helicon</i>. Did <i>Phœbus</i> kom,
    Med <i>Pallas</i> den Gudinde,
 At sidde Ret, og sige Dom,
    Hvo Pladsen burde vinde.
 Nu Tiiden kom, og Retten sat;
-   Af <i>Ph&oelig;bus</i>, og af andre
+   Af <i>Phœbus</i>, og af andre
 Hans <i>Assessores</i>, blev tilladt <!-- side 458 -->
    De Danske frem at vandre.
 Der vrimled' ind en gandske Flok,
@@ -1412,7 +1331,7 @@ For mange Vers, han viiste frem,
    I Prent og Manuscripter,
 Og (de som havde største Klem)
    Sin Fødebyes Bedrifter.<note>Omtalte er <a person="rostock">Mads Pedersen Rostock</a> som skrev <a work="rostock/ribe"><i>Den gamle og navnkundige Kiøbstad Ribe</i></a>.</note>
-Ney! svarte <i>Ph&oelig;bus:</i> Skulde man
+Ney! svarte <i>Phœbus:</i> Skulde man
    Saaledes Krandser give;
 Hver Laurbær-Træ paa dette Land
    Pilskalled maatte blive.
@@ -1427,7 +1346,7 @@ For Retten frem: Hun, uden Vey,
 Og, som hun var af dette Slags,
    Der artig kunde snakke;
 Hun tog til Ord, og sagde strax:
-   Herr <i>Ph&oelig;bus!</i> tag til Takke
+   Herr <i>Phœbus!</i> tag til Takke
 Med disse Vers! Jeg meener vel,
    Du, som en billig Dommer,
 Skal kiende, jeg med Ret og Skiel
@@ -1440,7 +1359,7 @@ Mit Rygte saa hos alle staaer: <!-- side 460 -->
    Omskiønt jeg er en Qvinde;
 Dog siges om mig: Hisset gaaer
    Den Danske Poetinde.
-Holdt! svarte <i>Ph&oelig;bus</i>, holdt! Hvorhen?
+Holdt! svarte <i>Phœbus</i>, holdt! Hvorhen?
    Lad Verset for sig tale;
 Det sige skal, om du est den,
    Som du vil dig afmale.
@@ -1452,7 +1371,7 @@ Og, sagde han, med Billedhed
    Du est en Poetinde;
 Dog naaer du ikke denne Sted,
    Som <i>Arboe</i> lod herinde.
-Hun neiede. Men <i>Ph&oelig;bus</i> bad,
+Hun neiede. Men <i>Phœbus</i> bad,
    Hun ikke skulde glemme
 At vare Qvinde-Kiønnet ad:
    Omskiøndt de havde Nemme,
@@ -1478,7 +1397,7 @@ Med disse Bolte Vidne bær,
    At jeg er Sandheds Marter.
 Han kortelig erindrede
    Sin store Nød og Qvide;
-Bad, <i>Ph&oelig;bus</i> vilde sig omsee, <!-- side 461 -->
+Bad, <i>Phœbus</i> vilde sig omsee, <!-- side 461 -->
    Om han det burde lide:
 Formeente, sig at nyde Sted
    Hos <i>Flaccus, Juvenalis,</i> <note><i>Flaccus:</i> Horats.</note>
@@ -1502,7 +1421,7 @@ En Skalk vil kaldes ærlig Mand;
    En Hore gaae for Pige.
 De bablede flux meere frem,
    En skaante Mand, ey Qvinde;
-Og stod det haart, at <i>Ph&oelig;bus</i> dem
+Og stod det haart, at <i>Phœbus</i> dem
    Med gode kunde vinde.
 Han loved' strax: Hvis denne var
    Uskyldig dømt fra Ære,
@@ -1526,7 +1445,7 @@ Til galind Mand, hvormed han sig
    I Rasendhed afliver.
 Han blev forbittret, dyre foer:
    Endnu han vilde skrive,
-Saa <i>Ph&oelig;bus</i>, og hans heel Chor,
+Saa <i>Phœbus</i>, og hans heel Chor,
    Beskæmmet skulde blive.
 Men <i>Musæ</i> loe. Der han gik bort,
    En anden sees at trine
@@ -1592,7 +1511,7 @@ Omskiønt jeg bad ham tie qvær,
    Dog blev han ved at sige:
 At den berømte Danske der
    Ey nogen vilde vige.<note><a person="kingo">Thomas Kingo</a> (1634-1703)</note>
-Ja! sagde <i>Ph&oelig;bus</i>, sæt sig hos!
+Ja! sagde <i>Phœbus</i>, sæt sig hos!
    (Den Ære, som bør Ære!)
 Den store Mand, <i>Ovidius</i>,
    Skal her din Naboe være.
@@ -1601,7 +1520,7 @@ Men du, som han, os love maa:
 Du dine Riim skal lade gaae
    Vel ofte giennem Sigte.
 Hvad? sagde jeg til <i>Bording</i> da, <!-- side 464 -->
-   Jeg troer, at <i>Ph&oelig;bus</i> primer:
+   Jeg troer, at <i>Phœbus</i> primer:
 Vil nogen tage denne fra,
    Han jo er Mester-Riimer?
 I samme Stund og Øyeblik
@@ -1639,5 +1558,6 @@ Der giver Jernet Odd og Egg,
 </poetry>
 </body>
 </text>
+
 </workbody>
 </kalliopework>

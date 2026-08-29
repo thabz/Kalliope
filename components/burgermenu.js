@@ -1,25 +1,18 @@
-// @flow
-
-import React, { useState } from 'react';
-import { BurgerSVG, CrossSVG } from './icons.js';
-import type { BreadcrumbItem } from './breadcrumbs.js';
-import { Link, Router } from '../routes';
-import * as Links from './links.js';
-import LangContext from '../common/LangContext.js';
-import { useContext } from 'react';
+import Link from 'next/link';
+import { useContext, useState } from 'react';
 import CommonData from '../common/commondata.js';
+import LangContext from '../common/LangContext.js';
+import { BurgerSVG, CrossSVG } from './icons.js';
+import * as Links from './links.js';
 
-const MenuLink = props => {
+const MenuLink = (props) => {
   const { url, title, close } = props;
 
-  const onClick = e => {
-    close();
-  };
   return (
     <div>
       {url != null ? (
-        <Link route={url} onClick={close}>
-          <a title={title}>{title}</a>
+        <Link href={url} title={title} onClick={close}>
+          {title}
         </Link>
       ) : (
         title
@@ -28,25 +21,18 @@ const MenuLink = props => {
   );
 };
 
-type Props = {
-  items: Array<{ id: string, url: string, title: string, hide?: boolean }>,
-  selected: string,
-  crumbs: Array<BreadcrumbItem>,
-  close: () => void,
-};
-
-const Menu = (props: Props) => {
+const Menu = (props) => {
   const { items, crumbs, selected, close } = props;
-  const itemsRendered = items.map(item => {
+  const itemsRendered = items.map((item) => {
     const { id, url, title } = item;
     return <MenuLink url={url} title={title} close={close} key={url + id} />;
   });
-  const crumbsRendered = crumbs.map(crumb => {
+  const crumbsRendered = crumbs.map((crumb) => {
     const { url, title } = crumb;
     return <MenuLink url={url} title={title} close={close} key={url} />;
   });
 
-  const onBackgroundClick = e => {
+  const onBackgroundClick = (e) => {
     close();
     e.preventDefault();
   };
@@ -93,7 +79,7 @@ const Menu = (props: Props) => {
   );
 };
 
-const BurgerMenu = (props: Props) => {
+const BurgerMenu = (props) => {
   const [show, setShow] = useState(false);
   const lang = useContext(LangContext);
 
@@ -116,10 +102,8 @@ const BurgerMenu = (props: Props) => {
           width: '100%',
           alignItems: 'center',
         }}>
-        <Link route={Links.frontPageURL(lang)}>
-          <a title="Gå til forsiden">
-            <h2 style={{ fontWeight: 300, padding: 0, margin: 0 }}>Kalliope</h2>
-          </a>
+        <Link href={Links.frontPageURL(lang)} title="Gå til forsiden">
+          <h2 style={{ fontWeight: 300, padding: 0, margin: 0 }}>Kalliope</h2>
         </Link>
         <BurgerSVG
           onClick={onClick}

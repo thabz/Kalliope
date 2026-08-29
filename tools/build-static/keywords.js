@@ -1,23 +1,26 @@
-const fs = require('fs');
-const { safeMkdir, htmlToXml, writeJSON } = require('../libs/helpers.js');
-const {
+import fs from 'fs';
+import { safeMkdir, htmlToXml, writeJSON } from '../libs/helpers.js';
+import {
   isFileModified,
   loadCachedJSON,
   writeCachedJSON,
-} = require('../libs/caching.js');
-const { get_pictures } = require('./parsing.js');
-const {
+} from '../libs/caching.js';
+import { get_pictures } from './parsing.js';
+import {
   loadXMLDoc,
   safeGetInnerXML,
   safeGetText,
   safeGetAttr,
   getChildByTagName,
-} = require('./xml.js');
+  getChildrenByTagName,
+} from './xml.js';
+import { mapLimit } from './concurrency.js';
 
 const build_keywords = async collected => {
-  safeMkdir('static/api/keywords');
+  const outputFolder = 'public/api/keywords';
+  safeMkdir(outputFolder);
   let collected_keywords = new Map(loadCachedJSON('collected.keywords') || []);
-  const folder = 'data/keywords';
+  const folder = 'content/keywords';
   const filenames = fs
     .readdirSync(folder)
     .filter(x => x.endsWith('.xml'))
@@ -25,8 +28,10 @@ const build_keywords = async collected => {
   if (collected_keywords.size === 0 || isFileModified(...filenames)) {
     collected_keywords = new Map();
     let keywords_toc = new Array();
-    await Promise.all(
-      filenames.map(async path => {
+    const outputFilenames = new Set();
+    await mapLimit(
+      filenames,
+      async path => {
         if (!path.endsWith('.xml')) {
           return;
         }
@@ -47,13 +52,19 @@ const build_keywords = async collected => {
         } else {
           const pictures = await get_pictures(
             head,
-            '/static/images/keywords',
+            '/images/keywords',
             path,
             collected
           );
           const author = safeGetText(head, 'author');
           const rawBody = safeGetInnerXML(body) || '';
           const content_html = htmlToXml(rawBody, collected);
+          const sources = (getChildrenByTagName(head, 'source') || []).map(
+            source => ({
+              content_html: htmlToXml(safeGetInnerXML(source), collected),
+              href: safeGetAttr(source, 'href'),
+            })
+          );
           const has_footnotes =
             rawBody.indexOf('<footnote') !== -1 ||
             rawBody.indexOf('<note') !== -1;
@@ -61,6 +72,7 @@ const build_keywords = async collected => {
             ...data,
             is_draft,
             author,
+            sources,
             pictures,
             has_footnotes,
             content_lang: 'da',
@@ -74,20 +86,25 @@ const build_keywords = async collected => {
           redirectURL,
           is_draft,
         });
-        const outFilename = `static/api/keywords/${id}.json`;
-        console.log(outFilename);
+        const outFilename = `${outputFolder}/${id}.json`;
+        outputFilenames.add(`${id}.json`);
         writeJSON(outFilename, data);
         collected_keywords.set(id, { id, title });
-      })
+      }
     );
+    for (const filename of fs.readdirSync(outputFolder)) {
+      if (filename.endsWith('.json') && !outputFilenames.has(filename)) {
+        const staleFilename = `${outputFolder}/${filename}`;
+        fs.unlinkSync(staleFilename);
+      }
+    }
     writeCachedJSON('collected.keywords', Array.from(collected_keywords));
-    const outFilename = `static/api/keywords.json`;
-    console.log(outFilename);
+    const outFilename = `public/api/keywords.json`;
     writeJSON(outFilename, keywords_toc);
   }
   return collected_keywords;
 };
 
-module.exports = {
+export {
   build_keywords,
 };

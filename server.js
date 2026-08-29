@@ -1,14 +1,27 @@
 // server.js
-const next = require('next');
-const routes = require('./routes');
-const fs = require('fs');
-const { parse } = require('url');
-const { join } = require('path');
-const { createServer } = require('http');
+import next from 'next';
+import * as routes from './routes.js';
+import fs from 'fs';
+import { createReadStream } from 'fs';
+import { extname, resolve, sep } from 'path';
+import { createServer } from 'http';
+import { dirname } from 'path';
+import { fileURLToPath } from 'url';
+import elasticSearchClient from './tools/libs/elasticsearch-client.js';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const publicDirectory = resolve(__dirname, 'public');
 const dev = process.env.NODE_ENV !== 'production';
+const port = Number(process.argv[2] ?? process.env.PORT ?? 3000);
+
+if (!Number.isInteger(port) || port < 1 || port > 65535) {
+  throw new Error(`Invalid port: ${process.argv[2] ?? process.env.PORT}`);
+}
+
+process.env.PORT = String(port);
+
 const app = next({ dev });
 const handler = routes.getRequestHandler(app);
-const elasticSearchClient = require('./tools/libs/elasticsearch-client.js');
 const rootStaticFiles = [
   '/sw.js',
   '/favicon.ico',
@@ -24,7 +37,18 @@ const rootStaticFiles = [
   '/apple-touch-icon.png', // 180x180
 ];
 
-const worksRedirects = JSON.parse(fs.readFileSync('static/api/redirects.json'));
+const readJSONIfExists = (path, fallback) => {
+  try {
+    return JSON.parse(fs.readFileSync(path));
+  } catch (err) {
+    if (err.code === 'ENOENT') {
+      return fallback;
+    }
+    throw err;
+  }
+};
+
+const worksRedirects = readJSONIfExists('public/api/redirects.json', {});
 const redirects = [
   {
     from: /\/(..)\/ffront.cgi/,
@@ -122,7 +146,7 @@ const redirects = [
   },
   {
     from: /\/..\/work\/([^\/]+)\/(.*?)\.xml/,
-    to: '/static/api/$1/$2.xml',
+    to: '/api/$1/$2.xml',
   },
   {
     from: /(.*)\/winter(.*)/,
@@ -131,14 +155,104 @@ const redirects = [
 ];
 
 const cleanUpRedirectURLRegExp = /[^0-9a-zA-Z\-_\/]/g;
+const rootStaticContentTypes = {
+  '.html': 'text/html; charset=utf-8',
+  '.gz': 'application/x-ndjson',
+  '.ico': 'image/x-icon',
+  '.json': 'application/json; charset=utf-8',
+  '.js': 'application/javascript; charset=utf-8',
+  '.md': 'text/markdown; charset=utf-8',
+  '.png': 'image/png',
+  '.svg': 'image/svg+xml',
+  '.sqlite': 'application/vnd.sqlite3',
+  '.txt': 'text/plain; charset=utf-8',
+  '.xml': 'application/xml; charset=utf-8',
+};
+
+const cacheControlForPath = pathname => {
+  if (dev) {
+    return 'no-cache';
+  }
+  if (pathname.indexOf('/_next/static/') === 0) {
+    // 31536000 seconds = 365 days. Next.js filenames are content-hashed.
+    return 'public, max-age=31536000, immutable';
+  }
+  if (
+    pathname.indexOf('/api/') === 0 ||
+    pathname.indexOf('/generated/') === 0 ||
+    pathname === '/sitemap.xml'
+  ) {
+    // 43200 seconds = 12 hours. Build-static data changes when the XML changes.
+    return 'public, max-age=43200';
+  }
+  if (
+    pathname.indexOf('/images/') === 0 ||
+    pathname.indexOf('/kunst/') === 0 ||
+    pathname.indexOf('/fonts/') === 0 ||
+    rootStaticFiles.indexOf(pathname) > -1
+  ) {
+    // 2592000 seconds = 30 days. These assets are comparatively stable.
+    return 'public, max-age=2592000';
+  }
+
+  return 'no-cache';
+};
+
+const setCacheHeaders = (pathname, res) => {
+  res.setHeader('Cache-Control', cacheControlForPath(pathname));
+  res.setHeader(
+    'Link',
+    '</api/manifest.json>; rel="describedby"; type="application/json"'
+  );
+};
+
+const serveRootStaticFile = (pathname, res) => {
+  let decodedPathname;
+  try {
+    decodedPathname = decodeURIComponent(pathname);
+  } catch {
+    res.writeHead(400);
+    res.end();
+    return;
+  }
+  const path = resolve(publicDirectory, `.${decodedPathname}`);
+  if (path.startsWith(`${publicDirectory}${sep}`) === false) {
+    res.writeHead(403);
+    res.end();
+    return;
+  }
+  const stream = createReadStream(path);
+
+  stream.on('open', () => {
+    const contentType = rootStaticContentTypes[extname(path)];
+    if (contentType != null) {
+      res.setHeader('Content-Type', contentType);
+    }
+    stream.pipe(res);
+  });
+  stream.on('error', err => {
+    res.writeHead(err.code === 'ENOENT' ? 404 : 500);
+    res.end();
+  });
+};
 
 app.prepare().then(() => {
   createServer((req, res) => {
-    const { pathname, query } = parse(req.url, true);
+    const requestUrl = new URL(req.url, 'http://localhost');
+    const { pathname } = requestUrl;
+    const query = Object.fromEntries(requestUrl.searchParams);
+    setCacheHeaders(pathname, res);
 
-    if (rootStaticFiles.indexOf(pathname) > -1) {
-      const path = join(__dirname, 'static', pathname);
-      app.serveStatic(req, res, path);
+    if (pathname.indexOf('/static/') === 0) {
+      const location = req.url.replace(/^\/static/, '');
+      res.writeHead(301, { Location: location });
+      res.end();
+      return;
+    } else if (
+      rootStaticFiles.indexOf(pathname) > -1 ||
+      pathname.indexOf('/api/') === 0
+    ) {
+      serveRootStaticFile(pathname, res);
       return;
     } else if (
       pathname.indexOf('.cgi') > -1 ||
@@ -204,9 +318,9 @@ app.prepare().then(() => {
       //      }
       handler(req, res);
     }
-  }).listen(3000, err => {
+  }).listen(port, err => {
     if (err) throw err;
-    console.log('> Ready on http://localhost:3000');
+    console.log(`> Ready on http://localhost:${port}`);
   });
 });
 

@@ -1,25 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="anonym1500dk" status="incomplete" type="poetry">
 <workhead>
-   <title>Andre digte</title>
-   <year>?</year>
-   <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+  <title>Andre digte</title>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
 <text id="anonym2001101101">
 <head>
-   <title>Lad fare, min Sjæl, din høje Attraa</title>
-   <toctitle>Lad fare, min Sjæl, din høje Attraa</toctitle>
-   <indextitle>Lad fare, min Sjæl, din høje Attraa</indextitle>
-   <firstline>Lad fare, min Sjæl, din høje Attraa</firstline>
-   <notes>
-      <note>Kilde er <i>Den Danske Lyrik før 1800</i>, ved F.J. Billeskov Jansen, Hans Reitzel 1967, side 72.</note>
-      <note>Ranet fra Brian Bentsens <a href="http://d2.kalliope.org/~bbb/thepierianspring.dk/">The Pierian Spring</a>.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Lad fare, min Sjæl, din høje Attraa</title>
+  <toctitle>Lad fare, min Sjæl, din høje Attraa</toctitle>
+  <indextitle>Lad fare, min Sjæl, din høje Attraa</indextitle>
+  <firstline>Lad fare, min Sjæl, din høje Attraa</firstline>
+  <notes>
+    <note>Ranet fra Brian Bentsens <a href="http://d2.kalliope.org/~bbb/thepierianspring.dk/">The Pierian Spring</a>.</note>
+  </notes>
+  <source pages="72"><i>Den Danske Lyrik før 1800</i>, ved F.J. Billeskov Jansen, Hans Reitzel 1967.</source>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -37,7 +34,7 @@ saa løser du Fængsel mine.
 Hvi bær du Ved saa til den Baal,
 som kan dig selver brænde;
 naar det optænder den varme Sol,
-det staar ej til at vende. &mdash;
+det staar ej til at vende. —
 
 O ringe Kreatur, elendig Trøst,
 o fattige Hu og Sinde,
@@ -115,15 +112,15 @@ viise Skæmt er Alvors Svenke.
 
 <text id="anonym2002072701">
 <head>
-   <title>Visen om Danyser</title>
-   <toctitle>Visen om Danyser</toctitle>
-   <indextitle>Visen om Danyser</indextitle>
-   <firstline>Velan jeg her begynde vil</firstline>
-   <notes>
-      <note>Denne vise, hvis kilde stammer fra flyveblade omkring 1580, må med rette siges at være en dansk (liberal) bearbejdelse af en nedertysk vise Tännhauser i Venusbjerget-sagnet (ca. 1520). Sagnet kendes ligeledes fra en højtysk vise (ca. 1515).</note>
-      <!-- Billen -->
-   </notes>
-   <quality>korrektur1</quality>
+  <title>Visen om Danyser</title>
+  <toctitle>Visen om Danyser</toctitle>
+  <indextitle>Visen om Danyser</indextitle>
+  <firstline>Velan jeg her begynde vil</firstline>
+  <notes>
+    <note>Denne vise, hvis kilde stammer fra flyveblade omkring 1580, må med rette siges at være en dansk (liberal) bearbejdelse af en nedertysk vise Tännhauser i Venusbjerget-sagnet (ca. 1520). Sagnet kendes ligeledes fra en højtysk vise (ca. 1515).</note>
+    <!-- Billen -->
+  </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -287,14 +284,14 @@ thi vogte sig hver for Skade.
 
 <text id="anonym2002073101">
 <head>
-   <title>Nu vil jeg for Eder kvæde</title>
-   <toctitle>Nu vil jeg for Eder kvæde</toctitle>
-   <indextitle>Nu vil jeg for Eder kvæde</indextitle>
-   <firstline>Nu vil jeg for Eder kvæde</firstline>
-   <notes>
-      <note>Den første kendte kilde til denne vise har været at finde i <i>Ide Giøes Haandskrift</i> fra omkring 1630.</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title>Nu vil jeg for Eder kvæde</title>
+  <toctitle>Nu vil jeg for Eder kvæde</toctitle>
+  <indextitle>Nu vil jeg for Eder kvæde</indextitle>
+  <firstline>Nu vil jeg for Eder kvæde</firstline>
+  <notes>
+    <note>Den første kendte kilde til denne vise har været at finde i <i>Ide Giøes Haandskrift</i> fra omkring 1630.</note>
+  </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -557,5 +554,6 @@ og Himlen med Stjerner sat.
 </poetry>
 </body>
 </text>
+
 </workbody>
 </kalliopework>

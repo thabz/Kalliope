@@ -1,24 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="stuckenberg" status="incomplete" type="poetry">
 <workhead>
-   <title>Digte og Prosa fra Tilskueren og Taarnet</title>
-   <year>?</year>
-   <notes>
-       <note>Teksterne stammer fra Viggo Stuckenberg: <i>Samlede Værker</i>, Gyldendalske Boghandel, 1910, bd. 2, side 371-413.</note>
-   </notes>       
-   <quality>korrektur1</quality>
+  <title>Digte og Prosa fra Tilskueren og Taarnet</title>
+  <notes>
+    <note>Teksterne stammer fra Viggo Stuckenberg: <i>Samlede Værker</i>, Gyldendalske Boghandel, 1910, bd. 2, side 371-413.</note>
+  </notes>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
 <text id="stuckenberg20170917346">
 <head>
-    <title>Af et Æventyrdigt</title>
-    <subtitle>Forspil</subtitle>
-    <firstline>Højt oppe, midt i det sommerstærke</firstline>
-    <notes>
-      <note>Teksten følger Viggo Stuckenberg: <i>Samlede Værker</i>, Gyldendalske Boghandel, 1910, bd. 2, side 371-397.</note>
-    </notes>       
+  <title>Af et Æventyrdigt</title>
+  <subtitle>Forspil</subtitle>
+  <firstline>Højt oppe, midt i det sommerstærke</firstline>
+  <source pages="371-397">Viggo Stuckenberg: <i>Samlede Værker</i>, Gyldendalske Boghandel, 1910, bd. 2.</source>
 </head>
 <body>
 <poetry>
@@ -197,7 +193,7 @@ Som frostslagent Løv hans Læber dirrer;
     ud efter ham, der i Dagen gik,
     i Slettens Taager han stirrer.
 
-<center><nonum><small>Efter at have forladt Skoven kommer Esben ud paa et aabent Overdrev, hvor han ved Solnedgang træffer paa Knud Hyrde, der driver Bykvæget hjem. Knud Hyrde, som tager ham for en forklædt ung og uerfaren Junker, bilder ham adskilligt ind og trækker ham med hjem, hvor han overlader Esben til "Prinsessen", der tager Esben med Vold. Næste Morgen kaster Knud Hyrde og hans Kvind Esben paa Døren, da de finder ham ganske uden Guld. Esben løber i Regnvejr ind i Skoven, der ligger bag Byen.</small></nonum></center>
+<nonum><center><small>Efter at have forladt Skoven kommer Esben ud paa et aabent Overdrev, hvor han ved Solnedgang træffer paa Knud Hyrde, der driver Bykvæget hjem. Knud Hyrde, som tager ham for en forklædt ung og uerfaren Junker, bilder ham adskilligt ind og trækker ham med hjem, hvor han overlader Esben til "Prinsessen", der tager Esben med Vold. Næste Morgen kaster Knud Hyrde og hans Kvind Esben paa Døren, da de finder ham ganske uden Guld. Esben løber i Regnvejr ind i Skoven, der ligger bag Byen.</small></center></nonum>
 
 
 <nonum><center>Af III Sang</center></nonum>
@@ -427,7 +423,7 @@ Vaarens Dage var længst forbi
 
 da var det som Vaaren atter mig tog
     med Eders Arme, - skinnende hvælved
-    sig Himlen! og naar I tåled,
+    sig Himlen! og naar I taled,
     Luften omkring mig af Sommer skælved.
 
 I gav mig tilbage min Sommer, min Sol!
@@ -510,7 +506,7 @@ Og Esben glider fra Løjbænken ned
     stille sit Hoved i hendes Skød,
     mens Skumringen Solskjolden dækker.
 
-<center><nonum><small>Esben lever som Ægteherre og pligtbunden Konge Døgn og Aar til Ende.</small></nonum></center>
+<nonum><center><small>Esben lever som Ægteherre og pligtbunden Konge Døgn og Aar til Ende.</small></center></nonum>
 
 <nonum><center>V.</center></nonum>
 
@@ -708,7 +704,7 @@ og leget med Guld af Nød.'' -
 
 Hun bøjed sit Hoved, sin smidige Haand
 hun stille for Bryst ham stemmer,
-- ,,Hvad vil du? - hvem er I, Herre? - 
+- ,,Hvad vil du? - hvem er I, Herre? -
 nej intet af Eders jeg gemmer!'' -
 
 Let over hendes hans Fingre
@@ -821,11 +817,9 @@ løber de stille Stammer forbi.
 
 <text id="stuckenberg20170917351">
 <head>
-    <title>Af Esbens Sange</title>
-    <firstline>Nu rinder Sol over Skovenes Kamme</firstline>
-    <notes>
-      <note>Teksten følger Viggo Stuckenberg: <i>Samlede Værker</i>, Gyldendalske Boghandel, 1910, bd. 2, side 398-401.</note>
-    </notes>       
+  <title>Af Esbens Sange</title>
+  <firstline>Nu rinder Sol over Skovenes Kamme</firstline>
+  <source pages="398-401">Viggo Stuckenberg: <i>Samlede Værker</i>, Gyldendalske Boghandel, 1910, bd. 2.</source>
 </head>
 <body>
 <poetry>
@@ -958,13 +952,11 @@ i maabende Tavshed,
 </body>
 </text>
 
-<text id="stuckenberg20170917356">
+<text id="stuckenberg20170917356" variant="stuckenberg20000924127">
 <head>
-    <title>Grøn Skov</title>
-    <firstline>Hvor er der langt til Livets Larm</firstline>
-    <notes>
-      <note>Teksten følger Viggo Stuckenberg: <i>Samlede Værker</i>, Gyldendalske Boghandel, 1910, bd. 2, side 402.</note>
-    </notes>       
+  <title>Grøn Skov</title>
+  <firstline>Hvor er der langt til Livets Larm</firstline>
+  <source pages="402">Viggo Stuckenberg: <i>Samlede Værker</i>, Gyldendalske Boghandel, 1910, bd. 2.</source>
 </head>
 <body>
 <poetry>
@@ -993,11 +985,9 @@ saa tro som ingen Barndomsven,
 
 <text id="stuckenberg20170917357" skip-index="true">
 <head>
-    <title>Den hvide Dør</title>
-    <subtitle>November (1892).</subtitle>
-    <notes>
-      <note>Teksten følger Viggo Stuckenberg: <i>Samlede Værker</i>, Gyldendalske Boghandel, 1910, bd. 2, side 403-410.</note>
-    </notes>       
+  <title>Den hvide Dør</title>
+  <subtitle>November (1892).</subtitle>
+  <source pages="403-410">Viggo Stuckenberg: <i>Samlede Værker</i>, Gyldendalske Boghandel, 1910, bd. 2.</source>
 </head>
 <body>
 <prose>
@@ -1029,7 +1019,7 @@ saa tro som ingen Barndomsven,
     Jeg gik ud paa Gangen. Derude havde han, inden han gik, aabnet en Dør ind til Soveværelset, og jeg blev staaende et Øje- blik og saa derind. Der stod to Senge derinde dækkede med hvide Tæpper, og midt paa den ene Sengs hvide Tæppe laa en Ligkrans af rustede Jærntraade samlede under en Buket falmede, kunstige Blomster.
     Og da jeg kom ud og gik langs Huset, fandt jeg i Græsset under det lave Sovekammervindue lange, blonde, afredte Kvindehaar, vaade af Regn og viklede sammen som omkring en Finger.
     I Aften - for en Time siden - kom han ind til mig nede i Gæstestuen.
-    - Naa, sagde han og stirrede længe paa mig, - naa, har De set Dem om - hjemme? 
+    - Naa, sagde han og stirrede længe paa mig, - naa, har De set Dem om - hjemme?
     Jeg nikkede tavs.
     - Lad os sidde lidt, før vi gaar hjem, bad han. Det er min Fødselsdag i Dag, - der er noget, jeg maa sige Dem, - hør et Øjeblik taalmodigt paa mig, - og gaa saa hjem med mig!
     Han lænede sit svære Legeme frem over Bordet og gjorde en Bevægelse, som vilde han rakt mig sin Haand. Og saa be- gyndte han at tale, hastigt, hviskende næsten, og saa' imens paa mig, som vilde han med sine Øjne vaage over, at hans Ord naaede mig og mig alene.
@@ -1049,11 +1039,9 @@ saa tro som ingen Barndomsven,
 
 <text id="stuckenberg20170917358" skip-index="true">
 <head>
-    <title>Maaneskinspassiar</title>
-    <subtitle>Med mine Drenge</subtitle>
-    <notes>
-      <note>Teksten følger Viggo Stuckenberg: <i>Samlede Værker</i>, Gyldendalske Boghandel, 1910, bd. 2, side 410-413.</note>
-    </notes>       
+  <title>Maaneskinspassiar</title>
+  <subtitle>Med mine Drenge</subtitle>
+  <source pages="410-413">Viggo Stuckenberg: <i>Samlede Værker</i>, Gyldendalske Boghandel, 1910, bd. 2.</source>
 </head>
 <body>
 <prose>
@@ -1077,8 +1065,6 @@ saa tro som ingen Barndomsven,
 </prose>
 </body>
 </text>
-
-    
 
 </workbody>
 </kalliopework>

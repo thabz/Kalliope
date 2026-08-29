@@ -1,55 +1,15 @@
-// @flow
-
-import React from 'react';
-import Page from '../components/page.js';
-import Main from '../components/main.js';
-import { Link } from '../routes';
-import * as Links from '../components/links';
-import { kalliopeCrumbs } from '../components/breadcrumbs.js';
-import LangSelect from '../components/langselect.js';
-import CountryPicker from '../components/countrypicker.js';
-import PoetName from '../components/poetname.js';
-import TwoColumns from '../components/twocolumns';
-import * as Sorting from '../common/sorting.js';
+import Link from 'next/link';
+import * as Client from '../common/client.js';
+import CommonData from '../common/commondata.js';
 import * as Strings from '../common/strings.js';
 import _ from '../common/translations.js';
-import CommonData from '../common/commondata.js';
+import { kalliopeCrumbs } from '../components/breadcrumbs.js';
+import * as Links from '../components/links.js';
+import Page from '../components/page.js';
+import TwoColumns from '../components/twocolumns.js';
 import ErrorPage from './error.js';
-import * as Client from '../common/client.js';
-import { createURL } from '../common/client.js';
-import type {
-  Lang,
-  Country,
-  Section,
-  Poet,
-  LinesType,
-  Error,
-  PoetId,
-  WorkId,
-} from '../common/types.js';
 
-type LineRecord = {
-  poet: {
-    id: PoetId,
-    name: string,
-  },
-  work: {
-    id: WorkId,
-    title: string,
-  },
-  line: string,
-  textId: string,
-};
-type AllTextsProps = {
-  lang: Lang,
-  country: Country,
-  letter: string,
-  type: LinesType,
-  lines: Array<LineRecord>,
-  letters: Array<string>,
-  error?: Error,
-};
-const AllTextsPage = (props: AllTextsProps) => {
+const AllTextsPage = (props) => {
   const { lang, country, type, letter, lines, letters, error } = props;
 
   if (error) {
@@ -68,36 +28,12 @@ const AllTextsPage = (props: AllTextsProps) => {
       url: Links.allTextsURL(lang, country, 'first', 'A'),
     },
   ];
-  const compareLocales = {
-    dk: 'da-DK',
-    de: 'de',
-    fr: 'fr-FR',
-    gb: 'en-GB',
-    us: 'en-US',
-    it: 'it-IT',
-    un: 'da-DK' /* Tager bare en tilfældig, da un er alle sprog */,
-    se: 'se',
-    no:
-      'da-DK' /* no-NO locale virker ikke, men sortering er ligesom 'da-DK' */,
-  };
-  const locale = compareLocales[country] || 'da-DK';
-
-  const renderedLines = lines
-    .sort((a, b) => {
-      if (a.line === b.line) {
-        return a.poet.name.localeCompare(b.poet.name, locale);
-      } else {
-        return a.line.localeCompare(b.line, locale);
-      }
-    })
-    .map(line => {
+  const renderedLines = lines.map((line) => {
       const url = Links.textURL(lang, line.textId);
       const postfix = ` - ${line.poet.name}: ${line.work.title}`;
       return (
         <div key={line.textId} className="line">
-          <Link to={url}>
-            <a>{line.line}</a>
-          </Link>
+          <Link href={url}>{line.line}</Link>
           {postfix}
           <style jsx>{`
             div.line {
@@ -110,11 +46,9 @@ const AllTextsPage = (props: AllTextsProps) => {
           `}</style>
         </div>
       );
-    });
+  });
 
-  const letterPicker = letters
-    .sort((a, b) => a.localeCompare(b, locale))
-    .map(l => {
+  const letterPicker = letters.map((l) => {
       const url = Links.allTextsURL(lang, country, type, l);
       const shownLetter = l === '_' ? 'Tegn' : l;
       const style = {
@@ -123,23 +57,17 @@ const AllTextsPage = (props: AllTextsProps) => {
         fontWeight: l === letter ? 'bold' : 'normal',
       };
       const link =
-        l === letter ? (
-          shownLetter
-        ) : (
-          <Link to={url}>
-            <a>{shownLetter}</a>
-          </Link>
-        );
+        l === letter ? shownLetter : <Link href={url}>{shownLetter}</Link>;
       return (
         <span key={l} style={style}>
           {link}
         </span>
       );
-    });
+  });
 
   let pageTitle = null;
   if (country !== 'dk') {
-    const cn = CommonData.countries.filter(c => {
+    const cn = CommonData.countries.filter((c) => {
       return c.code === country;
     })[0];
     pageTitle =
@@ -149,7 +77,7 @@ const AllTextsPage = (props: AllTextsProps) => {
   }
   pageTitle += ': ' + letter;
 
-  const countryToURL = country => {
+  const countryToURL = (country) => {
     return Links.allTextsURL(lang, country, type, 'A');
   };
 
@@ -162,7 +90,7 @@ const AllTextsPage = (props: AllTextsProps) => {
       menuItems={tabs}
       selectedMenuItem={type}>
       <div style={{ lineHeight: 1.5 }}>
-        <TwoColumns>{renderedLines}</TwoColumns>
+        <TwoColumns noLinkUnderline>{renderedLines}</TwoColumns>
       </div>
       <div style={{ margin: '40px 0 10px 0', fontSize: '1.5em' }}>
         {letterPicker}
@@ -173,8 +101,6 @@ const AllTextsPage = (props: AllTextsProps) => {
 
 AllTextsPage.getInitialProps = async ({
   query: { lang, country, type, letter },
-}: {
-  query: { lang: Lang, country: Country, type: LinesType, letter: string },
 }) => {
   const json = await Client.allTexts(country, type, letter);
   return {

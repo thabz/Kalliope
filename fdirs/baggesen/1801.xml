@@ -1,36 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1801" author="baggesen" status="complete" type="poetry">
 <workhead>
-   <title>Samtlige Værker I</title>
-   <year>1801</year>
-   <notes>
-      <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en foreslået læsemåde.</note>
-   </notes>
-   <pictures>
-      <picture type="titlepage" src="1801-p1.jpg">Titelbladets ordlyd er ,,Jens Baggesens / Samtlige Værker / udgivne af ham selv. / I. Bind. / Kiöbenhavn / 1801. / Paa Frederik Brummers Forlag / hos E. M. Cohen.''</picture>
-   </pictures>
-   <source facsimile="11530804103B_color" facsimile-pages-num="354" facsimile-pages-offset="14">Jens Baggesen: <i>Samtlige Værker, Bd. I</i>, Fr. Brummers Forlag, Kbh., 1801.</source> 
+  <title>Samtlige Værker I</title>
+  <year>1801</year>
+  <notes>
+    <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en foreslået læsemåde.</note>
+  </notes>
+  <pictures>
+    <picture type="titlepage" src="1801-p1.jpg">Titelbladets ordlyd er ,,Jens Baggesens / Samtlige Værker / udgivne af ham selv. / I. Bind. / Kiöbenhavn / 1801. / Paa Frederik Brummers Forlag / hos E. M. Cohen.''</picture>
+  </pictures>
+  <source facsimile="11530804103B_color" facsimile-pages-num="354" facsimile-pages-offset="14">Jens Baggesen: <i>Samtlige Værker, Bd. I</i>, Fr. Brummers Forlag, Kbh., 1801.</source>
 </workhead>
 <workbody>
 
 <section level="1">
 <head>
-   <toctitle>Hymner</toctitle>
+  <toctitle>Hymner</toctitle>
 </head>
 <content>
 
 <text id="baggesen2002092001">
 <head>
-   <title>Den Eneste Gud</title>
-   <toctitle>Den eeneste Gud</toctitle>
-   <indextitle>Den Eneste Gud</indextitle>
-   <firstline>Tier, alle Muser! Hellas Toner</firstline>
-   <notes>
-      <note>Tidligere trykt i <i>Minerva</i> (juni 1791).</note>
-   </notes>
-   <source pages="3-12"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Den Eneste Gud</title>
+  <toctitle>Den eeneste Gud</toctitle>
+  <indextitle>Den Eneste Gud</indextitle>
+  <firstline>Tier, alle Muser! Hellas Toner</firstline>
+  <notes>
+    <note>Tidligere trykt i <i>Minerva</i> (juni 1791).</note>
+  </notes>
+  <source pages="3-12"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -210,15 +209,15 @@ Jeg har nok! jeg har mig selv!
 
 <text id="baggesen2002092002">
 <head>
-   <title>Morgenlovsang</title>
-   <toctitle>Morgenlovsang</toctitle>
-   <indextitle>Morgenlovsang</indextitle>
-   <firstline>Du stiger, Almagts Sendebud!</firstline>
-   <notes>
-      <note>Tidligere trykt i <i>Ungdomsarbeider</i> (1791), under titlen ,,Morgensang. Polyhymnias Yndling J. A. P. Schultz helliget''.</note>
-   </notes>
-   <source pages="13-17"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Morgenlovsang</title>
+  <toctitle>Morgenlovsang</toctitle>
+  <indextitle>Morgenlovsang</indextitle>
+  <firstline>Du stiger, Almagts Sendebud!</firstline>
+  <notes>
+    <note>Tidligere trykt i <i>Ungdomsarbeider</i> (1791), under titlen ,,Morgensang. Polyhymnias Yndling J. A. P. Schultz helliget''.</note>
+  </notes>
+  <source pages="13-17"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -307,12 +306,12 @@ Som Engle hisset siunge!
 
 <text id="baggesen2002092003">
 <head>
-   <title>Siælens Høisang</title>
-   <toctitle>Siælens Høisang</toctitle>
-   <indextitle>Siælens Høisang</indextitle>
-   <firstline>I dig lever og frydes min Aand, usynlige Guddom!</firstline>
-   <source pages="18-20"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Siælens Høisang</title>
+  <toctitle>Siælens Høisang</toctitle>
+  <indextitle>Siælens Høisang</indextitle>
+  <firstline>I dig lever og frydes min Aand, usynlige Guddom!</firstline>
+  <source pages="18-20"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -361,15 +360,15 @@ Og jeg finder dig, Aandernes Aand! og føler dig evig
 
 <text id="baggesen2002092004">
 <head>
-   <title>Forløsnings-Jubel, eller Christi Død</title>
-   <toctitle>Forløsningsjubel, eller Christi Død</toctitle>
-   <indextitle>Forløsnings-Jubel, eller Christi Død</indextitle>
-   <firstline>Skue hans Qvaler, Evighøie!</firstline>
-   <notes>
-      <note>Tidligere udgivet som særtryk: <i>Christi Død. Et Passions-Oratorium, som opføres i Fasten 1792</i> (1792).</note>
-   </notes>
-   <source pages="21-29"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Forløsnings-Jubel, eller Christi Død</title>
+  <toctitle>Forløsningsjubel, eller Christi Død</toctitle>
+  <indextitle>Forløsnings-Jubel, eller Christi Død</indextitle>
+  <firstline>Skue hans Qvaler, Evighøie!</firstline>
+  <notes>
+    <note>Tidligere udgivet som særtryk: <i>Christi Død. Et Passions-Oratorium, som opføres i Fasten 1792</i> (1792).</note>
+  </notes>
+  <source pages="21-29"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -524,15 +523,15 @@ Halleluja!
 
 <text id="baggesen2002092005">
 <head>
-   <title>Skabningens Halleluja</title>
-   <toctitle>Skabningens Halleluja</toctitle>
-   <indextitle>Skabningens Halleluja</indextitle>
-   <firstline>Bryd, o Støv, i Lovsang ud!</firstline>
-   <notes>
-      <note>Tidligere trykt i <i>Minerva</i> (april 1797) og <i>Skabningens Hallelujah. Hymne. Opført ved Hoffet i Fasten 1797</i> (1797).</note>
-   </notes>
-   <source pages="30-40"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Skabningens Halleluja</title>
+  <toctitle>Skabningens Halleluja</toctitle>
+  <indextitle>Skabningens Halleluja</indextitle>
+  <firstline>Bryd, o Støv, i Lovsang ud!</firstline>
+  <notes>
+    <note>Tidligere trykt i <i>Minerva</i> (april 1797) og <i>Skabningens Hallelujah. Hymne. Opført ved Hoffet i Fasten 1797</i> (1797).</note>
+  </notes>
+  <source pages="30-40"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -739,16 +738,16 @@ Vor Gud!
 
 <text id="baggesen2002092006">
 <head>
-   <title>Dannemarks Lovsang</title>
-   <subtitle>1793</subtitle>
-   <toctitle>Dannemarks Lovsang</toctitle>
-   <indextitle>Dannemarks Lovsang</indextitle>
-   <firstline>Vi love dig, Gud! i foreenede Chor</firstline>
-   <notes>
-      <note>Tidligere udgivet som særtryk: <i>Lovsang paa Kongens Fødselsdag. Opført i Slotskirken den 3. Februar 1793</i> (1793).</note>
-   </notes>
-   <source pages="41-46"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Dannemarks Lovsang</title>
+  <subtitle>1793</subtitle>
+  <toctitle>Dannemarks Lovsang</toctitle>
+  <indextitle>Dannemarks Lovsang</indextitle>
+  <firstline>Vi love dig, Gud! i foreenede Chor</firstline>
+  <notes>
+    <note>Tidligere udgivet som særtryk: <i>Lovsang paa Kongens Fødselsdag. Opført i Slotskirken den 3. Februar 1793</i> (1793).</note>
+  </notes>
+  <source pages="41-46"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -855,15 +854,15 @@ I Evighed!
 
 <text id="baggesen2002092007">
 <head>
-   <title>Hymne til Fornuften</title>
-   <toctitle>Hymne til Fornuften</toctitle>
-   <indextitle>Hymne til Fornuften</indextitle>
-   <firstline>Du Menneskets Guddom, hvis himmelske Haand</firstline>
-   <notes>
-      <note>Tidligere trykt i <i>Skandinavisk Museum</i> (1800), under titlen ,,Ode til Fornuften''.</note>
-   </notes>
-   <source pages="47-51"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Hymne til Fornuften</title>
+  <toctitle>Hymne til Fornuften</toctitle>
+  <indextitle>Hymne til Fornuften</indextitle>
+  <firstline>Du Menneskets Guddom, hvis himmelske Haand</firstline>
+  <notes>
+    <note>Tidligere trykt i <i>Skandinavisk Museum</i> (1800), under titlen ,,Ode til Fornuften''.</note>
+  </notes>
+  <source pages="47-51"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -944,12 +943,12 @@ Paa Randen af Svælget den Offrende brænder.
 
 <text id="baggesen2002092201">
 <head>
-   <title>Andagtshymne</title>
-   <toctitle>Andagtshymne</toctitle>
-   <indextitle>Andagtshymne</indextitle>
-   <firstline>Dig alt Levendes Væld, dig, Aandernes evige Kilde</firstline>
-   <source pages="52-56"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Andagtshymne</title>
+  <toctitle>Andagtshymne</toctitle>
+  <indextitle>Andagtshymne</indextitle>
+  <firstline>Dig alt Levendes Væld, dig, Aandernes evige Kilde</firstline>
+  <source pages="52-56"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1005,24 +1004,25 @@ Tændte til Bøn i Tilbederens Haab, som lyder, og troer dig.
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
 
 <section level="1">
 <head>
-   <toctitle>Oder</toctitle>
+  <toctitle>Oder</toctitle>
 </head>
 <content>
 
 <text id="baggesen2002092202">
 <head>
-   <title>Hellebeks Harpe</title>
-   <subtitle>Sapphisk Ode til Ernst, Greve af Schimmelmann</subtitle>
-   <toctitle>Hellebeks Harpe</toctitle>
-   <indextitle>Hellebeks Harpe</indextitle>
-   <firstline>Schimmelmann, din Lyra jeg fandt (o Held mig!)</firstline>
-   <source pages="59-61"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Hellebeks Harpe</title>
+  <subtitle>Sapphisk Ode til Ernst, Greve af Schimmelmann</subtitle>
+  <toctitle>Hellebeks Harpe</toctitle>
+  <indextitle>Hellebeks Harpe</indextitle>
+  <firstline>Schimmelmann, din Lyra jeg fandt (o Held mig!)</firstline>
+  <source pages="59-61"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1081,16 +1081,16 @@ Stille, høitidsfuldeste <i>Hellig! Hellig!</i>
 
 <text id="baggesen1801a0">
 <head>
-   <title>Primula</title>
-   <subtitle>1780</subtitle>
-   <toctitle>Primula</toctitle>
-   <indextitle>Primula</indextitle>
-   <firstline>Er jeg rolig, er jeg bange</firstline>
-   <notes>
-      <note>Tidligere trykt i Iversens <i>Samling af Poesier. Nytaarsgave</i> (1783), under titlen ,,Til Henriette''.</note>
-   </notes>
-   <source pages="62-63"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Primula</title>
+  <subtitle>1780</subtitle>
+  <toctitle>Primula</toctitle>
+  <indextitle>Primula</indextitle>
+  <firstline>Er jeg rolig, er jeg bange</firstline>
+  <notes>
+    <note>Tidligere trykt i Iversens <i>Samling af Poesier. Nytaarsgave</i> (1783), under titlen ,,Til Henriette''.</note>
+  </notes>
+  <source pages="62-63"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1127,12 +1127,12 @@ Sidste Blun er Henriette.
 
 <text id="baggesen2002092203">
 <head>
-   <title>Til Døden</title>
-   <toctitle>Til Døden</toctitle>
-   <indextitle>Til Døden</indextitle>
-   <firstline>I Livets Torden-Nat, hvor alt omhyller</firstline>
-   <source pages="64-66"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Døden</title>
+  <toctitle>Til Døden</toctitle>
+  <indextitle>Til Døden</indextitle>
+  <firstline>I Livets Torden-Nat, hvor alt omhyller</firstline>
+  <source pages="64-66"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1191,15 +1191,15 @@ De Skridt, hvis Spor hun farver med sit Blod.
 
 <text id="baggesen2002092204">
 <head>
-   <title>Digtertryghed</title>
-   <toctitle>Digtertryghed</toctitle>
-   <indextitle>Digtertryghed</indextitle>
-   <firstline>Den, hvis Samvittighed Dyder omgiærde</firstline>
-   <notes>
-      <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1785), under titlen ,,Efter Horaz''.</note>
-   </notes>
-   <source pages="67-68"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Digtertryghed</title>
+  <toctitle>Digtertryghed</toctitle>
+  <indextitle>Digtertryghed</indextitle>
+  <firstline>Den, hvis Samvittighed Dyder omgiærde</firstline>
+  <notes>
+    <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1785), under titlen ,,Efter Horaz''.</note>
+  </notes>
+  <source pages="67-68"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1243,19 +1243,19 @@ Der skal jeg dog et Elysium finde
 
 <text id="baggesen2002092205">
 <head>
-   <title>Horaz og Lydia</title>
-   <toctitle>Horaz og Lydia</toctitle>
-   <indextitle>Horaz og Lydia</indextitle>
-   <firstline>Før, naar jeg tryllet ved dit Bryst</firstline>
-   <notes>
-      <note>Tidligere trykt i <i>Minerva</i> (august 1785) og <i>Ungdomsarbeider</i> (1791), med undertitlen ,,Efter Horaz''.</note>
-   </notes>
-   <source pages="69-72"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Horaz og Lydia</title>
+  <toctitle>Horaz og Lydia</toctitle>
+  <indextitle>Horaz og Lydia</indextitle>
+  <firstline>Før, naar jeg tryllet ved dit Bryst</firstline>
+  <notes>
+    <note>Tidligere trykt i <i>Minerva</i> (august 1785) og <i>Ungdomsarbeider</i> (1791), med undertitlen ,,Efter Horaz''.</note>
+  </notes>
+  <source pages="69-72"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<center><nonum><sc>Han</sc></nonum></center>
+<nonum><center><sc>Han</sc></center></nonum>
     Før, naar jeg tryllet ved dit Bryst
 Dig, Falske, hørte kielent sige,
 At mine Kys var Nektar, uden Lige,
@@ -1263,7 +1263,7 @@ Og eene jeg var al din Lyst;
 Jeg i din Favn da tænkte med Foragt
 Paa Persiens Despot, og al hans Magt.
 
-<center><nonum><sc>Hun</sc></nonum></center>
+<nonum><center><sc>Hun</sc></center></nonum>
     Før, naar din Mund kun aabned sig,
 For mig med Amors egne Kys at sige,
 Jeg var din evig elskte beste Pige,
@@ -1271,7 +1271,7 @@ Selv ingen Venus lignte mig;
 Stolt af min Elskers hele Kiærlighed
 Jeg selv paa Roms Gudinde skued ned.
 
-<center><nonum><sc>Han</sc></nonum></center>
+<nonum><center><sc>Han</sc></center></nonum>
     For Cloe slaaer nu dette Bryst;
 Nu lærer hun mig at foragte Throner,
 Naar jeg ved hendes Stemmes søde Toner
@@ -1279,7 +1279,7 @@ Hensmelter i elysisk Lyst.
 Med Glæde jeg modtager Dødens Slag,
 Naar det min Cloe kiøber kun en Dag.
 
-<center><nonum><sc>Hun</sc></nonum></center>
+<nonum><center><sc>Hun</sc></center></nonum>
     For Cephalus jeg brænder nu,
 Kun ham jeg ønsker, ham min Længsel favner;
 Jeg paa hans Skiød engang dig aldrig savner;
@@ -1287,7 +1287,7 @@ Han ligner Amor meer end du.
 Tre Gange døer jeg glad, naar ved min Død
 Jeg ham kun giør en Time dobbelt sød!
 
-<center><nonum><sc>Han</sc></nonum></center>
+<nonum><center><sc>Han</sc></center></nonum>
     Men, om min Kiærlighed paa nye
 Med fulde Flammer atter kom tilbage,
 Hvis, for dig, uophørlig at behage,
@@ -1295,7 +1295,7 @@ Jeg evig vilde Cloe flye?
 Hvis jeg med tusind Kysse sletted ud,
 O skiønne Lydia! mit Elskovsbrud?
 
-<center><nonum><sc>Hun</sc></nonum></center>
+<nonum><center><sc>Hun</sc></center></nonum>
     Skiøndt Cephalus er Solen lig,
 Naar den gaaer ned bag Tibrens gyldne Bredde;
 Skiøndt du, Horaz, er let, som Vind, til Vrede,
@@ -1308,15 +1308,15 @@ Skal Døden selv din Elskte vorde sød!
 
 <text id="baggesen2002092206">
 <head>
-   <title>Erato</title>
-   <toctitle>Erato</toctitle>
-   <indextitle>Erato</indextitle>
-   <firstline>Langt fra det støiende Bulder af Vinens</firstline>
-   <notes>
-      <note>Tidligere trykt i Iversens <i>Samling af Poesier. Nytaarsgave</i> (1783), under titlen ,,Ode til Venus''.</note>
-   </notes>
-   <source pages="73-75"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Erato</title>
+  <toctitle>Erato</toctitle>
+  <indextitle>Erato</indextitle>
+  <firstline>Langt fra det støiende Bulder af Vinens</firstline>
+  <notes>
+    <note>Tidligere trykt i Iversens <i>Samling af Poesier. Nytaarsgave</i> (1783), under titlen ,,Ode til Venus''.</note>
+  </notes>
+  <source pages="73-75"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1370,16 +1370,17 @@ Fylde, de nektarinddyppede Piles
 
 <text id="baggesen2002092301">
 <head>
-   <title>Til Pram</title>
-   <toctitle>Til Pram</toctitle>
-   <indextitle>Til Pram</indextitle>
-   <firstline>O du, hvis muntre Smil, da jeg den første Gang</firstline>
-   <notes>
-      <note>Tidligere trykt i Iversens <i>Samling af Poesier. Nytaarsgave</i> (1783), under titlen ,,Efter Horazes I. 1. Til min Ven *...''.</note>
-   </notes>
-   <source pages="76-79"/>
-   <keywords>pram</keywords>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Pram</title>
+  <toctitle>Til Pram</toctitle>
+  <indextitle>Til Pram</indextitle>
+  <firstline>O du, hvis muntre Smil, da jeg den første Gang</firstline>
+  <notes>
+    <note>Tidligere trykt i Iversens <i>Samling af Poesier. Nytaarsgave</i> (1783), under titlen ,,Efter Horazes I. 1. Til min Ven *...''.</note>
+    <note>Variation over Horats' <xref type="translation" poem="horats2026010304"/>.</note>
+  </notes>
+  <source pages="76-79"/>
+  <keywords>pram,anakreon</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1448,15 +1449,15 @@ Og kun Horaz og du da tolkede min Lyst.
 
 <text id="baggesen2002092302">
 <head>
-   <title>Hymenæe</title>
-   <toctitle>Hymenæe</toctitle>
-   <indextitle>Hymenæe</indextitle>
-   <firstline>O! hvilken Følelse strømmer i dette Bryst!</firstline>
-   <notes>
-      <note>Tidligere trykt i Iversens <i>Samling af Poesier. Nytaarsgave</i> (1784), under titlen ,,Ode paa den 14de Maji 1783''.</note>
-   </notes>
-   <source pages="80-81"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Hymenæe</title>
+  <toctitle>Hymenæe</toctitle>
+  <indextitle>Hymenæe</indextitle>
+  <firstline>O! hvilken Følelse strømmer i dette Bryst!</firstline>
+  <notes>
+    <note>Tidligere trykt i Iversens <i>Samling af Poesier. Nytaarsgave</i> (1784), under titlen ,,Ode paa den 14de Maji 1783''.</note>
+  </notes>
+  <source pages="80-81"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1500,15 +1501,16 @@ Dagen nedsynker; de zittre; nu knæle de
 
 <text id="baggesen2002092501">
 <head>
-   <title>Til Musen</title>
-   <toctitle>Til Musen</toctitle>
-   <indextitle>Til Musen</indextitle>
-   <firstline>Mig, som en Ven af den rolige Muse</firstline>
-   <notes>
-      <note>Tidligere trykt i:<br/>- Iversens <i>Samling af Poesier. Nytaarsgave</i> (1784), under titlen ,,Ode til Musen efter Horaz's 1ste Bogs 26de Ode''.<br/>- <i>Ungdomsarbeider</i> (1791), under titlen ,,Digterviise. Efter Horaz''.</note>
-   </notes>
-   <source pages="82-85"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Musen</title>
+  <toctitle>Til Musen</toctitle>
+  <indextitle>Til Musen</indextitle>
+  <firstline>Mig, som en Ven af den rolige Muse</firstline>
+  <notes>
+    <note>Tidligere trykt i:<br/>- Iversens <i>Samling af Poesier. Nytaarsgave</i> (1784), under titlen ,,Ode til Musen efter Horaz's 1ste Bogs 26de Ode''.<br/>- <i>Ungdomsarbeider</i> (1791), under titlen ,,Digterviise. Efter Horaz''.</note>
+    <note>Variation over Horats' <xref type="translation" poem="horats2026010313"/>.</note>
+  </notes>
+  <source pages="82-85"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1577,12 +1579,12 @@ Høre med lyttende Vellyst hans Sang.
 
 <text id="baggesen2002092502">
 <head>
-   <title>Tidsfordriv</title>
-   <toctitle>Tidsfordriv</toctitle>
-   <indextitle>Tidsfordriv</indextitle>
-   <firstline>Naar Solen vækker mig til Dagens Sysler</firstline>
-   <source pages="86-88"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Tidsfordriv</title>
+  <toctitle>Tidsfordriv</toctitle>
+  <indextitle>Tidsfordriv</indextitle>
+  <firstline>Naar Solen vækker mig til Dagens Sysler</firstline>
+  <source pages="86-88"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1631,16 +1633,16 @@ Hvis overalt min Siel var ei hos dig.
 
 <text id="baggesen2002092503">
 <head>
-   <title>Til Helgesen</title>
-   <toctitle>Til Helgesen</toctitle>
-   <indextitle>Til Helgesen</indextitle>
-   <firstline>Et Blun forsvandt, o Ven, den Tid, som hidtil skabte</firstline>
-   <notes>
-      <note>Tidligere trykt i Iversens <i>Samling af Poesier. Nytaarsgave</i> (1784), under titlen ,,Til Hr. H*** da han foer ud paa Havet''.</note>
-      <note>,,Digtet er skrevet til en ung norsk Skibskapitain Olaf Helgesen, hvis Bekjendtskab Baggesen havde gjort i Efteraaret 1783 under et Besøg hos sine Forældre i Korsør, hvor Helgesen dengang laae med sit Skib i Havnen.'' (A. Arlaud).</note>
-   </notes>
-   <source pages="89-91"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Helgesen</title>
+  <toctitle>Til Helgesen</toctitle>
+  <indextitle>Til Helgesen</indextitle>
+  <firstline>Et Blun forsvandt, o Ven, den Tid, som hidtil skabte</firstline>
+  <notes>
+    <note>Tidligere trykt i Iversens <i>Samling af Poesier. Nytaarsgave</i> (1784), under titlen ,,Til Hr. H*** da han foer ud paa Havet''.</note>
+    <note>,,Digtet er skrevet til en ung norsk Skibskapitain Olaf Helgesen, hvis Bekjendtskab Baggesen havde gjort i Efteraaret 1783 under et Besøg hos sine Forældre i Korsør, hvor Helgesen dengang laae med sit Skib i Havnen.'' (A. Arlaud).</note>
+  </notes>
+  <source pages="89-91"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1704,15 +1706,15 @@ Did, hvor du ønsker dig.
 
 <text id="baggesen2002092504">
 <head>
-   <title>Selvindbydelse</title>
-   <toctitle>Selvindbydelse</toctitle>
-   <indextitle>Selvindbydelse</indextitle>
-   <firstline>Du seer hvor grimt den kolde Stormens Gud</firstline>
-   <notes>
-      <note>Tidligere trykt i:<br/>- Iversens <i>Samling af Poesier. Nytaarsgave</i> (1784), under titlen ,,Til Hr. A*****. Efter Horaz''.<br/>- <i>Ungdomsarbeider</i> (1791), under titlen ,,Selvindbydelse. Efter Horaz''.</note>
-   </notes>
-   <source pages="92-93"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Selvindbydelse</title>
+  <toctitle>Selvindbydelse</toctitle>
+  <indextitle>Selvindbydelse</indextitle>
+  <firstline>Du seer hvor grimt den kolde Stormens Gud</firstline>
+  <notes>
+    <note>Tidligere trykt i:<br/>- Iversens <i>Samling af Poesier. Nytaarsgave</i> (1784), under titlen ,,Til Hr. A*****. Efter Horaz''.<br/>- <i>Ungdomsarbeider</i> (1791), under titlen ,,Selvindbydelse. Efter Horaz''.</note>
+  </notes>
+  <source pages="92-93"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1756,15 +1758,15 @@ Og Skiebnen raade for i Morgen!
 
 <text id="baggesen2001060803" variant="baggesen2002122401">
 <head>
-   <title>Digterdrømmen</title>
-   <toctitle>Digterdrømmen</toctitle>
-   <indextitle>Digterdrømmen</indextitle>
-   <firstline>Den eensomme Skov</firstline>
-   <notes>
-      <note>Tidligere trykt i Iversens <i>Samling af Poesier. Nytaarsgave</i> (1783), under titlen ,,Den sovende Zemire eller Synet''.</note>
-   </notes>
-   <source pages="94-99"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Digterdrømmen</title>
+  <toctitle>Digterdrømmen</toctitle>
+  <indextitle>Digterdrømmen</indextitle>
+  <firstline>Den eensomme Skov</firstline>
+  <notes>
+    <note>Tidligere trykt i Iversens <i>Samling af Poesier. Nytaarsgave</i> (1783), under titlen ,,Den sovende Zemire eller Synet''.</note>
+  </notes>
+  <source pages="94-99"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1877,16 +1879,16 @@ Var Synet og Liren forsvunden.
 
 <text id="baggesen1801a2">
 <head>
-   <title>Idealia</title>
-   <subtitle>1783</subtitle>
-   <toctitle>Idealia</toctitle>
-   <indextitle>Idealia</indextitle>
-   <firstline>Skiøn og kielen, som Cythere</firstline>
-   <notes>
-      <note>Tidligere trykt i:<br/>- Iversens <i>Samling af Poesier</i> (1785), under titlen ,,Lydia''.<br/>- <i>Ungdomsarbeider</i> (1791), også under titlen ,,Lydia''.</note>
-   </notes>
-   <source pages="100-103"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Idealia</title>
+  <subtitle>1783</subtitle>
+  <toctitle>Idealia</toctitle>
+  <indextitle>Idealia</indextitle>
+  <firstline>Skiøn og kielen, som Cythere</firstline>
+  <notes>
+    <note>Tidligere trykt i:<br/>- Iversens <i>Samling af Poesier</i> (1785), under titlen ,,Lydia''.<br/>- <i>Ungdomsarbeider</i> (1791), også under titlen ,,Lydia''.</note>
+  </notes>
+  <source pages="100-103"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1955,15 +1957,15 @@ Drømmer neppe, jeg er til!
 
 <text id="baggesen2002092505">
 <head>
-   <title>Elskovsjubel</title>
-   <toctitle>Elskovsjubel</toctitle>
-   <indextitle>Elskovsjubel</indextitle>
-   <firstline>Lig en Tordenskye, naar til gyldne Høie</firstline>
-   <notes>
-      <note>Tidligere trykt i <i>Minerva</i> (november 1785), under titlen ,,Jubel''.</note>
-   </notes>
-   <source pages="104-105"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Elskovsjubel</title>
+  <toctitle>Elskovsjubel</toctitle>
+  <indextitle>Elskovsjubel</indextitle>
+  <firstline>Lig en Tordenskye, naar til gyldne Høie</firstline>
+  <notes>
+    <note>Tidligere trykt i <i>Minerva</i> (november 1785), under titlen ,,Jubel''.</note>
+  </notes>
+  <source pages="104-105"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2007,15 +2009,15 @@ See hun smiler! alting smiler med.
 
 <text id="baggesen2002092506">
 <head>
-   <title>Til Venus</title>
-   <toctitle>Til Venus</toctitle>
-   <indextitle>Til Venus</indextitle>
-   <firstline>Cyprens skiønne Herskerinde</firstline>
-   <notes>
-      <note>Tidligere trykt i:<br/>- <i>Minerva</i> (november 1785).<br/>- <i>Ungdomsarbeider</i> (1791).</note>
-   </notes>
-   <source pages="106-109"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Venus</title>
+  <toctitle>Til Venus</toctitle>
+  <indextitle>Til Venus</indextitle>
+  <firstline>Cyprens skiønne Herskerinde</firstline>
+  <notes>
+    <note>Tidligere trykt i:<br/>- <i>Minerva</i> (november 1785).<br/>- <i>Ungdomsarbeider</i> (1791).</note>
+  </notes>
+  <source pages="106-109"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2080,16 +2082,16 @@ Meer end dig i hende der.
 
 <text id="baggesen2002092507">
 <head>
-   <title>Ved Herman Henrik Kønnemans Død</title>
-   <toctitle>Ved H. H. Kønnemans Død</toctitle>
-   <indextitle>Ved Herman Henrik Kønnemans Død</indextitle>
-   <firstline>Jeg leies ei til Sang. Min Muse lyder</firstline>
-   <notes>
-      <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1785).</note>
-      <note>,,Den her Besungne var en Søn af daværende Justitsraad og Justitssekretær i Høiesteret Hermann Henrik Køneman og Hustru Barbara Cathrine f. Schønheyder. Denne 'Viisdoms unge Helt,' som døde d. 12 Novbr. 1784, opnaaede ikkun en Alder af - 6 Aar og 12 Uger.'' (A. Arlaud)</note>
-   </notes>
-   <source pages="110-112"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Ved Herman Henrik Kønnemans Død</title>
+  <toctitle>Ved H. H. Kønnemans Død</toctitle>
+  <indextitle>Ved Herman Henrik Kønnemans Død</indextitle>
+  <firstline>Jeg leies ei til Sang. Min Muse lyder</firstline>
+  <notes>
+    <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1785).</note>
+    <note>,,Den her Besungne var en Søn af daværende Justitsraad og Justitssekretær i Høiesteret Hermann Henrik Køneman og Hustru Barbara Cathrine f. Schønheyder. Denne 'Viisdoms unge Helt,' som døde d. 12 Novbr. 1784, opnaaede ikkun en Alder af - 6 Aar og 12 Uger.'' (A. Arlaud)</note>
+  </notes>
+  <source pages="110-112"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2151,18 +2153,18 @@ Ved Vinket, og udgav sin Aand.
 </body>
 </text>
 
-<text id="baggesen2002092508">
+<text id="baggesen2002092508" variant="baggesen2019080349">
 <head>
-   <title>Til Balladebarden</title>
-   <subtitle>Da han holdt op at qvæde</subtitle>
-   <toctitle>Til Balladebarden</toctitle>
-   <indextitle>Til Balladebarden</indextitle>
-   <firstline>Til Pindi stjernekronte Top</firstline>
-   <notes>
-      <note>Tidligere trykt i:<br/>- <i>Minerva</i> (juli 1785), under titlen ,,Hymne til Ballademesteren''.<br/>- <i>Ungdomsarbeider</i> (1791), under titlen ,,Jubelsang til Ballademesteren''.</note>
-   </notes>
-   <source pages="113-118"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Balladebarden</title>
+  <subtitle>Da han holdt op at qvæde</subtitle>
+  <toctitle>Til Balladebarden</toctitle>
+  <indextitle>Til Balladebarden</indextitle>
+  <firstline>Til Pindi stjernekronte Top</firstline>
+  <notes>
+    <note>Tidligere trykt i:<br/>- <i>Minerva</i> (juli 1785), under titlen ,,Hymne til Ballademesteren''.<br/>- <i>Ungdomsarbeider</i> (1791), under titlen ,,Jubelsang til Ballademesteren''.</note>
+  </notes>
+  <source pages="113-118"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2270,16 +2272,16 @@ Ved at forlade Hippocrene!
 
 <text id="baggesen2002092509">
 <head>
-   <title>Til Faye</title>
-   <toctitle>Til Faye</toctitle>
-   <indextitle>Til Faye</indextitle>
-   <firstline>I Kummer svunde bort din Ungdoms Dage</firstline>
-   <notes>
-      <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1786), under titlen ,,I en Vens Stambog''.</note>
-      <note>,,<a poet="faye"><i>Gerhard Faye</i></a>, en norsk Præstesøn, f. 1760, blev Student 1780, tog dansk-juridisk Examen 1790, blev Aaret efter Forvalter paa de kgl. Godser paa Falster og udnævntes 1805 til Amtmand i Thisted Amt; han døde i Thisted 1845 som Kftsrd. og Komm. af Dbg. Om noget nærmere Forhold imellem ham og Baggesen vides forøvrigt Intet. Han optraadte ogsaa som Digter; i Minerva for Sept. 1785 havde der saaledes staaet et længere Digt af ham, 'Udsigter over mit Liv', i hvilket han giver en elegisk Skildring af sit sørgelige Ungdomsliv.'' (A. Arlaud)</note>
-   </notes>
-   <source pages="119-120"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Faye</title>
+  <toctitle>Til Faye</toctitle>
+  <indextitle>Til Faye</indextitle>
+  <firstline>I Kummer svunde bort din Ungdoms Dage</firstline>
+  <notes>
+    <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1786), under titlen ,,I en Vens Stambog''.</note>
+    <note>,,<a poet="faye"><i>Gerhard Faye</i></a>, en norsk Præstesøn, f. 1760, blev Student 1780, tog dansk-juridisk Examen 1790, blev Aaret efter Forvalter paa de kgl. Godser paa Falster og udnævntes 1805 til Amtmand i Thisted Amt; han døde i Thisted 1845 som Kftsrd. og Komm. af Dbg. Om noget nærmere Forhold imellem ham og Baggesen vides forøvrigt Intet. Han optraadte ogsaa som Digter; i Minerva for Sept. 1785 havde der saaledes staaet et længere Digt af ham, 'Udsigter over mit Liv', i hvilket han giver en elegisk Skildring af sit sørgelige Ungdomsliv.'' (A. Arlaud)</note>
+  </notes>
+  <source pages="119-120"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2318,15 +2320,15 @@ Ulykkelig, som du.
 
 <text id="baggesen2002092510">
 <head>
-   <title>Til Psycharion</title>
-   <toctitle>Til Psycharion</toctitle>
-   <indextitle>Til Psycharion</indextitle>
-   <firstline>Munter iler du dit Maal imod</firstline>
-   <notes>
-      <note>Tidligere trykt i <i>Ungdomsarbeider</i> (1791).</note>
-   </notes>
-   <source pages="121-122"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Psycharion</title>
+  <toctitle>Til Psycharion</toctitle>
+  <indextitle>Til Psycharion</indextitle>
+  <firstline>Munter iler du dit Maal imod</firstline>
+  <notes>
+    <note>Tidligere trykt i <i>Ungdomsarbeider</i> (1791).</note>
+  </notes>
+  <source pages="121-122"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2357,16 +2359,16 @@ Evas Døttre mellem Adams Sønner!
 
 <text id="baggesen2002092511">
 <head>
-   <title>Til Hanna Braem</title>
-   <toctitle>Til Hanna Braem</toctitle>
-   <indextitle>Til Hanna Braem</indextitle>
-   <firstline>Den Sindets Ro, som jeg skal aldrig smage</firstline>
-   <notes>
-      <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1786), under titlen ,,I en Venindes Stambog''.</note>
-      <note>,,<i>Johanna</i> Christiane <i>Braem</i>, Datter af Sognepræst i Korsør, Konsistorialraad Johan B. (død 1764) og Hustru Christiane Rodsteen Pors, var født i Korsør d. 21. Novbr. 1764 og døde ugift, ligeledes i Korsør, d. 26 Marts 1786.'' (A. Arlaud).</note>
-   </notes>
-   <source pages="121-122"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Hanna Braem</title>
+  <toctitle>Til Hanna Braem</toctitle>
+  <indextitle>Til Hanna Braem</indextitle>
+  <firstline>Den Sindets Ro, som jeg skal aldrig smage</firstline>
+  <notes>
+    <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1786), under titlen ,,I en Venindes Stambog''.</note>
+    <note>,,<i>Johanna</i> Christiane <i>Braem</i>, Datter af Sognepræst i Korsør, Konsistorialraad Johan B. (død 1764) og Hustru Christiane Rodsteen Pors, var født i Korsør d. 21. Novbr. 1764 og døde ugift, ligeledes i Korsør, d. 26 Marts 1786.'' (A. Arlaud).</note>
+  </notes>
+  <source pages="121-122"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2430,16 +2432,16 @@ For Lydias ulykkelige Ven.
 
 <text id="baggesen2002092511a">
 <head>
-   <title>Til Amor</title>
-   <subtitle>Da hun seilede</subtitle>
-   <toctitle>Til Amor</toctitle>
-   <indextitle>Til Amor</indextitle>
-   <firstline>See, hun seiler bort! mit Øie følger</firstline>
-   <notes>
-      <note>Tidligere trykt i:<br/>- Ribers <i>Samling af Poesier</i> (1786), under titlen ,,Da Zeline seilede''.<br/>- <i>Ungdomsarbeider</i> (1791), under titlen ,,Seiladsen''.</note>
-   </notes>
-   <source pages="126-127"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Amor</title>
+  <subtitle>Da hun seilede</subtitle>
+  <toctitle>Til Amor</toctitle>
+  <indextitle>Til Amor</indextitle>
+  <firstline>See, hun seiler bort! mit Øie følger</firstline>
+  <notes>
+    <note>Tidligere trykt i:<br/>- Ribers <i>Samling af Poesier</i> (1786), under titlen ,,Da Zeline seilede''.<br/>- <i>Ungdomsarbeider</i> (1791), under titlen ,,Seiladsen''.</note>
+  </notes>
+  <source pages="126-127"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2478,17 +2480,17 @@ Snart tilbage til sin ømme Ven.
 
 <text id="baggesen2002092512">
 <head>
-   <title>Trøsten</title>
-   <subtitle>Til min Ven, ved hans Elskedes Død</subtitle>
-   <toctitle>Trøsten</toctitle>
-   <indextitle>Trøsten</indextitle>
-   <firstline>Vis er Døden. Salig Slummer</firstline>
-   <notes>
-      <note>Tidligere trykt i:<br/>- Ribers <i>Samling af Poesier</i> (1788), under titlen ,,Elegie. Til - -''.<br/>- <i>Ungdomsarbeider</i> (1791).</note>
-      <note>Digtet er skrevet til Baggesens ven Frederik Plum, der i 1786 havde mistet sin forlovede, Johanne Braem.</note>
-   </notes>
-   <source pages="128-133"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Trøsten</title>
+  <subtitle>Til min Ven, ved hans Elskedes Død</subtitle>
+  <toctitle>Trøsten</toctitle>
+  <indextitle>Trøsten</indextitle>
+  <firstline>Vis er Døden. Salig Slummer</firstline>
+  <notes>
+    <note>Tidligere trykt i:<br/>- Ribers <i>Samling af Poesier</i> (1788), under titlen ,,Elegie. Til - -''.<br/>- <i>Ungdomsarbeider</i> (1791).</note>
+    <note>Digtet er skrevet til Baggesens ven Frederik Plum, der i 1786 havde mistet sin forlovede, Johanne Braem.</note>
+  </notes>
+  <source pages="128-133"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2602,12 +2604,12 @@ Ingen Ord dig tolke her.
 
 <text id="baggesen2002092513">
 <head>
-   <title>Til Søvnen</title>
-   <toctitle>Til Søvnen</toctitle>
-   <indextitle>Til Søvnen</indextitle>
-   <firstline>Eeneste blandt Edens Saligheder</firstline>
-   <source pages="134-135"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Søvnen</title>
+  <toctitle>Til Søvnen</toctitle>
+  <indextitle>Til Søvnen</indextitle>
+  <firstline>Eeneste blandt Edens Saligheder</firstline>
+  <source pages="134-135"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2644,17 +2646,17 @@ Mig, og Slangen i mit Hierte dølger.
 
 <text id="baggesen2002092514">
 <head>
-   <title>Til Bredsdorf</title>
-   <toctitle>Til Bredsdorf</toctitle>
-   <indextitle>Til Bredsdorf</indextitle>
-   <firstline>Held følge dig, min Ven! hvorhen du vandrer!</firstline>
-   <notes>
-      <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1785), under titlen ,,I en Vens Stambog, som reiste til Byen''.</note>
-      <note>,,Digtet er skrevet til Baggesens Ven <i>Morten Thomsen Bredsdorff</i> - i hvis Stambog det findes indført - i Anledning af hans Afreise til Fyen, hvor han d. 31. Marts 1784 var bleven udnævnt til sin Faders Eftermand som Sognepræst i Vester-Skjerninge, hvilket Embede han beklædte indtil 1834, da han efter Ansøgning blev entlediget. Han var født i 1757 og døde 1841. Baggesen havde i Slagelse Skole været Ven og Skolekammerat med hans yngre Broder <i>Christian Johan Br.</i> (...) og kom igjennem ham i Forbindelse med hele den Bredsdorffske Kreds, som han i en længere Aarrække sluttede sig nøie til.'' (A. Arlaud).</note>
-   </notes>
-   <source pages="136-137"/>
-   <quality>korrektur1,kilde,side</quality>
-   <keywords>stambog</keywords>
+  <title>Til Bredsdorf</title>
+  <toctitle>Til Bredsdorf</toctitle>
+  <indextitle>Til Bredsdorf</indextitle>
+  <firstline>Held følge dig, min Ven! hvorhen du vandrer!</firstline>
+  <notes>
+    <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1785), under titlen ,,I en Vens Stambog, som reiste til Byen''.</note>
+    <note>,,Digtet er skrevet til Baggesens Ven <i>Morten Thomsen Bredsdorff</i> - i hvis Stambog det findes indført - i Anledning af hans Afreise til Fyen, hvor han d. 31. Marts 1784 var bleven udnævnt til sin Faders Eftermand som Sognepræst i Vester-Skjerninge, hvilket Embede han beklædte indtil 1834, da han efter Ansøgning blev entlediget. Han var født i 1757 og døde 1841. Baggesen havde i Slagelse Skole været Ven og Skolekammerat med hans yngre Broder <i>Christian Johan Br.</i> (...) og kom igjennem ham i Forbindelse med hele den Bredsdorffske Kreds, som han i en længere Aarrække sluttede sig nøie til.'' (A. Arlaud).</note>
+  </notes>
+  <source pages="136-137"/>
+  <quality>korrektur1,kilde,side</quality>
+  <keywords>stambog</keywords>
 </head>
 <body>
 <poetry>
@@ -2688,17 +2690,17 @@ Sig over Belt og Siælland, til din Ven.
 
 <text id="baggesen2002092601">
 <head>
-   <title>Aabenbarelsen</title>
-   <subtitle>Til Hanna Hornemann</subtitle>
-   <toctitle>Aabenbarelsen</toctitle>
-   <indextitle>Aabenbarelsen</indextitle>
-   <firstline>Tung af mange mørke Dages Kummer</firstline>
-   <notes>
-      <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1788), under titlen ,,Elegie. Til en Veninde i hendes Stambog''.</note>
-      <note>,,Karen <i>Johanne Hornemann</i>, en Datter af Pastor Jacob H. i Marstal paa Ærø, var født 1765 eller 1766 (døbt d. 5. Jan. 1766) og blev gift d. 12. Novbr. 1788 med daværende Sognepræst (...) Pastor Jens Bindesbøll (død 1830). Hun døde d. 30 Jan. 1807.'' (A. Arlaud).</note>
-   </notes>
-   <source pages="138-143"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Aabenbarelsen</title>
+  <subtitle>Til Hanna Hornemann</subtitle>
+  <toctitle>Aabenbarelsen</toctitle>
+  <indextitle>Aabenbarelsen</indextitle>
+  <firstline>Tung af mange mørke Dages Kummer</firstline>
+  <notes>
+    <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1788), under titlen ,,Elegie. Til en Veninde i hendes Stambog''.</note>
+    <note>,,Karen <i>Johanne Hornemann</i>, en Datter af Pastor Jacob H. i Marstal paa Ærø, var født 1765 eller 1766 (døbt d. 5. Jan. 1766) og blev gift d. 12. Novbr. 1788 med daværende Sognepræst (...) Pastor Jens Bindesbøll (død 1830). Hun døde d. 30 Jan. 1807.'' (A. Arlaud).</note>
+  </notes>
+  <source pages="138-143"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2751,7 +2753,7 @@ Samler alle sine Børn til sig.
 End er Længsel i mit glade Hierte,
 Skiønt den ei er tung som Støvets Smerte.''
 
-    ,,Fredrik,'' blev hun ved, ,,at Fredrik græder &mdash;<note>,,Fredrik,'' blev hun ved, ,,at] ,,Fredrik, blev hun ved, at</note>
+    ,,Fredrik,'' blev hun ved, ,,at Fredrik græder —<note>,,Fredrik,'' blev hun ved, ,,at] ,,Fredrik, blev hun ved, at</note>
 Thi jeg elsker evig, evig nu;
 Det er bittert, midt i mine Glæder
 Kommer jeg det sørgelig ihu;
@@ -2819,16 +2821,16 @@ Ak! til Lys og Tanke, Dag og Kummer.
 
 <text id="baggesen2002092602">
 <head>
-   <title>Afslaget</title>
-   <subtitle>Til Grevinde Charlotte Schimmelmann</subtitle>
-   <toctitle>Afslaget</toctitle>
-   <indextitle>Afslaget</indextitle>
-   <firstline>Jeg stod, paa Bredden af Castale</firstline>
-   <notes>
-      <note>Tidligere trykt i Poulsens <i>Nytaarsgave for Damer</i> (1792).</note>
-   </notes>
-   <source pages="144-148"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Afslaget</title>
+  <subtitle>Til Grevinde Charlotte Schimmelmann</subtitle>
+  <toctitle>Afslaget</toctitle>
+  <indextitle>Afslaget</indextitle>
+  <firstline>Jeg stod, paa Bredden af Castale</firstline>
+  <notes>
+    <note>Tidligere trykt i Poulsens <i>Nytaarsgave for Damer</i> (1792).</note>
+  </notes>
+  <source pages="144-148"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2914,17 +2916,17 @@ Hos hvem de alle samled var!
 
 <text id="baggesen2002092603">
 <head>
-   <title>Formastelsen</title>
-   <subtitle>Til Grev Frederik Leopold Stolberg</subtitle>
-   <toctitle>Formastelsen</toctitle>
-   <indextitle>Formastelsen</indextitle>
-   <firstline>Som det uskyldige, tryllende, himmelske</firstline>
-   <notes>
-      <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1788), under titlen ,,Fristelsen''.</note>
-   </notes>
-   <source pages="149-151"/>
-   <keywords>stolbergf</keywords>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Formastelsen</title>
+  <subtitle>Til Grev Frederik Leopold Stolberg</subtitle>
+  <toctitle>Formastelsen</toctitle>
+  <indextitle>Formastelsen</indextitle>
+  <firstline>Som det uskyldige, tryllende, himmelske</firstline>
+  <notes>
+    <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1788), under titlen ,,Fristelsen''.</note>
+  </notes>
+  <source pages="149-151"/>
+  <keywords>stolbergf</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2983,15 +2985,15 @@ Ikarus lig, og i Støvet med Taushed
 
 <text id="baggesen2002092604">
 <head>
-   <title>Trolleborg</title>
-   <toctitle>Trolleborg</toctitle>
-   <indextitle>Trolleborg</indextitle>
-   <firstline>Hvor var du, glade Siel! hvor endte sig</firstline>
-   <notes>
-      <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1788), under titlen ,,Ludvigslund''.</note>
-   </notes>
-   <source pages="152-154"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Trolleborg</title>
+  <toctitle>Trolleborg</toctitle>
+  <indextitle>Trolleborg</indextitle>
+  <firstline>Hvor var du, glade Siel! hvor endte sig</firstline>
+  <notes>
+    <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1788), under titlen ,,Ludvigslund''.</note>
+  </notes>
+  <source pages="152-154"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3040,12 +3042,12 @@ Og daaner mattet i uvante Glæder.
 
 <text id="baggesen2002092605">
 <head>
-   <title>Til Skibet, som førte Kronprindsen over Havet</title>
-   <toctitle>Til Skibet, som førte Kronprindsen over Havet</toctitle>
-   <indextitle>Til Skibet, som førte Kronprindsen over Havet</indextitle>
-   <firstline>Taarn høie Hvirvler op, o Bølgevrimmel!</firstline>
-   <source pages="155-156"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Skibet, som førte Kronprindsen over Havet</title>
+  <toctitle>Til Skibet, som førte Kronprindsen over Havet</toctitle>
+  <indextitle>Til Skibet, som førte Kronprindsen over Havet</indextitle>
+  <firstline>Taarn høie Hvirvler op, o Bølgevrimmel!</firstline>
+  <source pages="155-156"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3079,20 +3081,20 @@ Thi Danmarks Styrer, Fredens Gud i Norden,
 
 <text id="baggesen2002092606">
 <head>
-   <title>Roserne</title>
-   <subtitle>Til Grevinde Sybille Reventlou</subtitle>
-   <toctitle>Roserne</toctitle>
-   <indextitle>Roserne</indextitle>
-   <firstline>Skiønne, kielne Roser! visner ikke!</firstline>
-   <notes>
-      <note>Tidligere trykt i:<br/>- <i>Minerva</i> (juli 1787).<br/>- <i>Ungdomsarbeider</i> (1791).</note>
-   </notes>
-   <source pages="157-159"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Roserne</title>
+  <subtitle>Til Grevinde Sybille Reventlou</subtitle>
+  <toctitle>Roserne</toctitle>
+  <indextitle>Roserne</indextitle>
+  <firstline>Skiønne, kielne Roser! visner ikke!</firstline>
+  <notes>
+    <note>Tidligere trykt i:<br/>- <i>Minerva</i> (juli 1787).<br/>- <i>Ungdomsarbeider</i> (1791).</note>
+  </notes>
+  <source pages="157-159"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<center><nonum><sc>Da jeg fik dem</sc></nonum></center>
+<nonum><center><sc>Da jeg fik dem</sc></center></nonum>
     Skiønne, kielne Roser! visner ikke!
 Blomstrer trygge her hos eders Ven!
 Eders spæde Torne frit ham stikke,
@@ -3111,7 +3113,7 @@ Og opvarmer mildt den kolde Luft;
 Naar dens første Blik til Jorden smiler,
 Lad det vække mig i eders Duft!
 
-<center><nonum><sc>Da de visnede</sc></nonum></center>
+<nonum><center><sc>Da de visnede</sc></center></nonum>
     Røde Roser! Eders Purpur blegner;
 Hvide Roser! Eders Snee blev graa.
 Ak! saa falmer, svinder, mattes, segner
@@ -3135,19 +3137,19 @@ Grumme Sanger! derfor døe vi nu.
 
 <text id="baggesen2002092607">
 <head>
-   <title>Til Kronprindsen</title>
-   <subtitle>
-      <line>(Ved hans Hiemkomst fra Sverrig)</line>
-      <line>1788</line>
-   </subtitle>
-   <toctitle>Til Kronprindsen</toctitle>
-   <indextitle>Til Kronprindsen</indextitle>
-   <firstline>Lad Kampens Helt, i Vaabens Larm</firstline>
-   <notes>
-      <note>Tidligere trykt i:<br/>- <i>Borger-Sang. I anledning af Kronprindsens Hiemkomst den 7de December 1788</i> (1788).<br/>- <i>Minerva</i> (december 1788).<br/>- <i>Ungdomsarbeider</i> (1791), under titlen ,,Sang for Freden. Ved Kronprindsens Hiemkomst''.</note>
-   </notes>
-   <source pages="160-163"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Kronprindsen</title>
+  <subtitle>
+    <line>(Ved hans Hiemkomst fra Sverrig)</line>
+    <line>1788</line>
+  </subtitle>
+  <toctitle>Til Kronprindsen</toctitle>
+  <indextitle>Til Kronprindsen</indextitle>
+  <firstline>Lad Kampens Helt, i Vaabens Larm</firstline>
+  <notes>
+    <note>Tidligere trykt i:<br/>- <i>Borger-Sang. I anledning af Kronprindsens Hiemkomst den 7de December 1788</i> (1788).<br/>- <i>Minerva</i> (december 1788).<br/>- <i>Ungdomsarbeider</i> (1791), under titlen ,,Sang for Freden. Ved Kronprindsens Hiemkomst''.</note>
+  </notes>
+  <source pages="160-163"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3219,16 +3221,16 @@ Dit elskte Navn.
 
 <text id="baggesen2002092608">
 <head>
-   <title>Tilegnelse</title>
-   <subtitle>Til Kronprindsesse Lovisa Augusta</subtitle>
-   <toctitle>Tilegnelse</toctitle>
-   <indextitle>Tilegnelse</indextitle>
-   <firstline>Thronens Glands og Hoffets Pragt ei blinde</firstline>
-   <notes>
-      <note>Tidligere trykt som tilegnelsesdigtet i Baggesens opera <i>Holger Danske</i> (1787), med titlen ,,Til Hendes Kongelige Høihed, Kronprindsessen''.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
-   <source pages="164"/>
+  <title>Tilegnelse</title>
+  <subtitle>Til Kronprindsesse Lovisa Augusta</subtitle>
+  <toctitle>Tilegnelse</toctitle>
+  <indextitle>Tilegnelse</indextitle>
+  <firstline>Thronens Glands og Hoffets Pragt ei blinde</firstline>
+  <notes>
+    <note>Tidligere trykt som tilegnelsesdigtet i Baggesens opera <i>Holger Danske</i> (1787), med titlen ,,Til Hendes Kongelige Høihed, Kronprindsessen''.</note>
+  </notes>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="164"/>
 </head>
 <body>
 <poetry>
@@ -3252,16 +3254,16 @@ Med en Krands din Ynde mere værd.
 
 <text id="baggesen2002092701" variant="baggesen2019080319">
 <head>
-   <title>Landforvandlingen</title>
-   <subtitle>(Skreven i en huul Eeg i Skoven ved Christianssæde)</subtitle>
-   <toctitle>Landforvandlingen</toctitle>
-   <indextitle>Landforvandlingen</indextitle>
-   <firstline>Hvilken salig Glands mit Blik omhyller?</firstline>
-   <notes>
-      <note>Godset Christianssæde på Lolland ejedes af statsminister Christian Reventlow, og var på denne ø det første, hvor hoveriet ophævedes; den hule eg stod i mange år som ,,Baggesens Eg''.</note>
-   </notes>
-   <source pages="165-170"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Landforvandlingen</title>
+  <subtitle>(Skreven i en huul Eeg i Skoven ved Christianssæde)</subtitle>
+  <toctitle>Landforvandlingen</toctitle>
+  <indextitle>Landforvandlingen</indextitle>
+  <firstline>Hvilken salig Glands mit Blik omhyller?</firstline>
+  <notes>
+    <note>Godset Christianssæde på Lolland ejedes af statsminister Christian Reventlow, og var på denne ø det første, hvor hoveriet ophævedes; den hule eg stod i mange år som ,,Baggesens Eg''.</note>
+  </notes>
+  <source pages="165-170"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3360,15 +3362,15 @@ Stor, som Du, i alle Danskes Bryst.
 
 <text id="baggesen2002092702">
 <head>
-   <title>Til min Søster</title>
-   <toctitle>Til min Søster</toctitle>
-   <indextitle>Til min Søster</indextitle>
-   <firstline>Skiøn er Purpur-Rosen, naar dens Mund</firstline>
-   <notes>
-      <note>Tidligere trykt i Poulsens <i>Nytaarsgave for Damer</i> (1793), under titlen ,,Til Marylli paa hendes Confirmationsdag''.</note>
-   </notes>
-   <source pages="171-173"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til min Søster</title>
+  <toctitle>Til min Søster</toctitle>
+  <indextitle>Til min Søster</indextitle>
+  <firstline>Skiøn er Purpur-Rosen, naar dens Mund</firstline>
+  <notes>
+    <note>Tidligere trykt i Poulsens <i>Nytaarsgave for Damer</i> (1793), under titlen ,,Til Marylli paa hendes Confirmationsdag''.</note>
+  </notes>
+  <source pages="171-173"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3413,16 +3415,16 @@ Her og hisset signe dig, som Fader.
 
 <text id="baggesen2002092703">
 <head>
-   <title>Til Laville</title>
-   <subtitle>Da han reiste til Norge</subtitle>
-   <toctitle>Til Laville</toctitle>
-   <indextitle>Til Laville</indextitle>
-   <firstline>Vee Støvet, hvis i denne Livets Scene</firstline>
-   <notes>
-      <note>Tidligere trykt i Poulsens <i>Nytaarsgave for Damer</i> (1793), under titlen ,,Til en Ven, som reiste til Norge''.</note>
-   </notes>
-   <source pages="174-175"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Laville</title>
+  <subtitle>Da han reiste til Norge</subtitle>
+  <toctitle>Til Laville</toctitle>
+  <indextitle>Til Laville</indextitle>
+  <firstline>Vee Støvet, hvis i denne Livets Scene</firstline>
+  <notes>
+    <note>Tidligere trykt i Poulsens <i>Nytaarsgave for Damer</i> (1793), under titlen ,,Til en Ven, som reiste til Norge''.</note>
+  </notes>
+  <source pages="174-175"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3456,16 +3458,16 @@ Mig ingen sydlig Vind saa let borttager.
 
 <text id="baggesen2002092704">
 <head>
-   <title>Begeistringen</title>
-   <subtitle>Til Hertuginden Lovisa Augusta</subtitle>
-   <toctitle>Begeistringen</toctitle>
-   <indextitle>Begeistringen</indextitle>
-   <firstline>Min Røst var saa svag, min Sang var mat</firstline>
-   <notes>
-      <note>Tidligere trykt i Poulsens <i>Nytaarsgave for Damer</i> (1792).</note>
-   </notes>
-   <source pages="176-178"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Begeistringen</title>
+  <subtitle>Til Hertuginden Lovisa Augusta</subtitle>
+  <toctitle>Begeistringen</toctitle>
+  <indextitle>Begeistringen</indextitle>
+  <firstline>Min Røst var saa svag, min Sang var mat</firstline>
+  <notes>
+    <note>Tidligere trykt i Poulsens <i>Nytaarsgave for Damer</i> (1792).</note>
+  </notes>
+  <source pages="176-178"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3519,15 +3521,15 @@ Dit Tempels Alter nærme sig?
 
 <text id="baggesen2001060802">
 <head>
-   <title>Harpeklang</title>
-   <toctitle>Harpeklang</toctitle>
-   <indextitle>Harpeklang</indextitle>
-   <firstline>Hvor er du, salige Lyst?</firstline>
-   <notes>
-      <note>Tidligere trykt i <i>Labyrinten</i> (1793).</note>
-   </notes>
-   <source pages="179-180"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Harpeklang</title>
+  <toctitle>Harpeklang</toctitle>
+  <indextitle>Harpeklang</indextitle>
+  <firstline>Hvor er du, salige Lyst?</firstline>
+  <notes>
+    <note>Tidligere trykt i <i>Labyrinten</i> (1793).</note>
+  </notes>
+  <source pages="179-180"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3547,19 +3549,19 @@ Tag tæt ved mit Hierte dit Sæde!
 Saa vinkte Gudinden for Latter;
 Jeg loe - men, og Vee!
 Det ikke var Himmelens Datter.
-        Dlim&nbsp;-&nbsp;-&nbsp;-&nbsp;
+        Dlim&#160;-&#160;-&#160;-&#160;
 
     ,,Kom! favn mig! omsving mig og larm!''
 Saa hopped en anden, og spøgte;
 Jeg sprang - men o Harm!
 Det var ikke hende, jeg søgte -
-        Dlim&nbsp;-&nbsp;-&nbsp;-&nbsp;
+        Dlim&#160;-&#160;-&#160;-&#160;
 
     ,,Kom! kys mig! og smelt i min Lyst!''
 Saa tonte den tredde Gundinde;
 Jeg sang - men mit Bryst
 Blev tomt, det var ei min Veninde!
-        Dlim&nbsp;-&nbsp;-&nbsp;-&nbsp;
+        Dlim&#160;-&#160;-&#160;-&#160;
 
     Da tav det; en Perle nedrandt;
 Det smilte, som Englene græde.
@@ -3572,15 +3574,15 @@ Min søgte, min himmelske Glæde!
 
 <text id="baggesenandrea4">
 <head>
-   <title>Paa Spidsen af St. Gottard</title>
-   <toctitle>Paa Spidsen af St. Gottard</toctitle>
-   <indextitle>Paa Spidsen af St. Gottard</indextitle>
-   <firstline>Støvet tav; og det sidste, det svageste Lisplen af Bækken</firstline>
-   <notes>
-      <note>Tidligere trykt i <i>Minerva</i> (1791).</note>
-   </notes>
-   <source pages="181-182"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Paa Spidsen af St. Gottard</title>
+  <toctitle>Paa Spidsen af St. Gottard</toctitle>
+  <indextitle>Paa Spidsen af St. Gottard</indextitle>
+  <firstline>Støvet tav; og det sidste, det svageste Lisplen af Bækken</firstline>
+  <notes>
+    <note>Tidligere trykt i <i>Minerva</i> (1791).</note>
+  </notes>
+  <source pages="181-182"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3613,16 +3615,16 @@ Favned i Glandsens omhyllende Straaler
 
 <text id="baggesen2002092705">
 <head>
-   <title>Den visnede Maiblomst</title>
-   <subtitle>Til Grevinde Charlotte Schimmelmann</subtitle>
-   <toctitle>Den visnede Maiblomst</toctitle>
-   <indextitle>Den visnede Maiblomst</indextitle>
-   <firstline>Jeg spired frem til moden Duft</firstline>
-   <notes>
-      <note>Tidligere trykt i Poulsens <i>Nytaarsgave for Damer</i> (1792), under titlen ,,Den visnede Mayblomst i Blomsterglasset''.</note>
-   </notes>
-   <source pages="183-186"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Den visnede Maiblomst</title>
+  <subtitle>Til Grevinde Charlotte Schimmelmann</subtitle>
+  <toctitle>Den visnede Maiblomst</toctitle>
+  <indextitle>Den visnede Maiblomst</indextitle>
+  <firstline>Jeg spired frem til moden Duft</firstline>
+  <notes>
+    <note>Tidligere trykt i Poulsens <i>Nytaarsgave for Damer</i> (1792), under titlen ,,Den visnede Mayblomst i Blomsterglasset''.</note>
+  </notes>
+  <source pages="183-186"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3685,12 +3687,12 @@ Den Blomst hun traadte paa.
 
 <text id="baggesen2002092801">
 <head>
-   <title>Tordenen paa Toppen af Grimsel</title>
-   <toctitle>Tordenen, paa Toppen af Grimsel</toctitle>
-   <indextitle>Tordenen paa Toppen af Grimsel</indextitle>
-   <firstline>Høit opløftet over Jordens Tuer</firstline>
-   <source pages="187-189"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Tordenen paa Toppen af Grimsel</title>
+  <toctitle>Tordenen, paa Toppen af Grimsel</toctitle>
+  <indextitle>Tordenen paa Toppen af Grimsel</indextitle>
+  <firstline>Høit opløftet over Jordens Tuer</firstline>
+  <source pages="187-189"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3751,15 +3753,15 @@ Thi jeg er udødelig!
 
 <text id="baggesen2002092802">
 <head>
-   <title>Serenade</title>
-   <toctitle>Serenade</toctitle>
-   <indextitle>Serenade</indextitle>
-   <firstline>Lyt, Elskede! lyt!</firstline>
-   <notes>
-      <note>Tidligere trykt i <i>Labyrinten</i> (1793).</note>
-   </notes>
-   <source pages="190-192"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Serenade</title>
+  <toctitle>Serenade</toctitle>
+  <indextitle>Serenade</indextitle>
+  <firstline>Lyt, Elskede! lyt!</firstline>
+  <notes>
+    <note>Tidligere trykt i <i>Labyrinten</i> (1793).</note>
+  </notes>
+  <source pages="190-192"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3810,15 +3812,15 @@ Sov sødelig sagte! drøm salige Drømme!
 
 <text id="baggesen2002092803">
 <head>
-   <title>Til Palmine</title>
-   <toctitle>Til Palmine</toctitle>
-   <indextitle>Til Palmine</indextitle>
-   <firstline>Palmine! vi vil elske, være glade</firstline>
-   <notes>
-      <note>Tidligere trykt i Rahbeks <i>Charis</i> (1797).</note>
-   </notes>
-   <source pages="193-194"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Palmine</title>
+  <toctitle>Til Palmine</toctitle>
+  <indextitle>Til Palmine</indextitle>
+  <firstline>Palmine! vi vil elske, være glade</firstline>
+  <notes>
+    <note>Tidligere trykt i Rahbeks <i>Charis</i> (1797).</note>
+  </notes>
+  <source pages="193-194"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3852,13 +3854,13 @@ Vi, Elskte! ville kysse, vi.
 
 <text id="baggesen2002092804" variant="baggesen2003022002">
 <head>
-   <title>Krandsen</title>
-   <subtitle>Til Grevinde Charlotte Schimmelmann</subtitle>
-   <toctitle>Krandsen</toctitle>
-   <indextitle>Krandsen</indextitle>
-   <firstline>Jeg ofred til Apoll paa Bredden af Castale</firstline>
-   <source pages="195-196"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Krandsen</title>
+  <subtitle>Til Grevinde Charlotte Schimmelmann</subtitle>
+  <toctitle>Krandsen</toctitle>
+  <indextitle>Krandsen</indextitle>
+  <firstline>Jeg ofred til Apoll paa Bredden af Castale</firstline>
+  <source pages="195-196"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3897,16 +3899,16 @@ Jeg saae dem række Dig min Krands.
 
 <text id="baggesen2002092804a">
 <head>
-   <title>Helbredelsen</title>
-   <subtitle>Til Palmine</subtitle>
-   <toctitle>Helbredelsen</toctitle>
-   <indextitle>Helbredelsen</indextitle>
-   <firstline>Solen mig ei bragte Glæde</firstline>
-   <notes>
-      <note>Tidligere trykt i:<br/>- Ribers <i>Samling af Poesier</i> (1786), under titlen ,,Til Zeline''.<br/>- <i>Ungdomsarbeider</i> (1791).</note>
-   </notes>
-   <source pages="197-199"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Helbredelsen</title>
+  <subtitle>Til Palmine</subtitle>
+  <toctitle>Helbredelsen</toctitle>
+  <indextitle>Helbredelsen</indextitle>
+  <firstline>Solen mig ei bragte Glæde</firstline>
+  <notes>
+    <note>Tidligere trykt i:<br/>- Ribers <i>Samling af Poesier</i> (1786), under titlen ,,Til Zeline''.<br/>- <i>Ungdomsarbeider</i> (1791).</note>
+  </notes>
+  <source pages="197-199"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3964,15 +3966,15 @@ I de sidste Suk til Gud.
 
 <text id="baggesen2002092805">
 <head>
-   <title>Himlen i Draaben</title>
-   <toctitle>Himlen i Draaben</toctitle>
-   <indextitle>Himlen i Draaben</indextitle>
-   <firstline>Dagbebudende Glands omskimrede Jorden</firstline>
-   <notes>
-      <note>Tidligere trykt i <i>Minerva</i> (juli 1791), under titlen ,,Dugdraaben''.</note>
-   </notes>
-   <source pages="200-202"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Himlen i Draaben</title>
+  <toctitle>Himlen i Draaben</toctitle>
+  <indextitle>Himlen i Draaben</indextitle>
+  <firstline>Dagbebudende Glands omskimrede Jorden</firstline>
+  <notes>
+    <note>Tidligere trykt i <i>Minerva</i> (juli 1791), under titlen ,,Dugdraaben''.</note>
+  </notes>
+  <source pages="200-202"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4023,15 +4025,15 @@ Draabens, som Ætherens Glarhav,
 
 <text id="baggesen2002092806">
 <head>
-   <title>Palmines Smiil</title>
-   <toctitle>Palmines Smiil</toctitle>
-   <indextitle>Palmines Smiil</indextitle>
-   <firstline>Elsk Dyden! lød en ukiendt Røst</firstline>
-   <notes>
-      <note>Tidligere trykt i:<br/>- Rahbeks <i>Danske Tilskuer</i> (7. april 1791), under titlen ,,Dyden''.<br/>- <i>Ungdomsarbeider</i> (1791).</note>
-   </notes>
-   <source pages="203-205"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Palmines Smiil</title>
+  <toctitle>Palmines Smiil</toctitle>
+  <indextitle>Palmines Smiil</indextitle>
+  <firstline>Elsk Dyden! lød en ukiendt Røst</firstline>
+  <notes>
+    <note>Tidligere trykt i:<br/>- Rahbeks <i>Danske Tilskuer</i> (7. april 1791), under titlen ,,Dyden''.<br/>- <i>Ungdomsarbeider</i> (1791).</note>
+  </notes>
+  <source pages="203-205"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4096,12 +4098,12 @@ Jeg uophørlig skal tilbede.
 
 <text id="baggesen2002092806a">
 <head>
-   <title>Mirabeaus Død</title>
-   <toctitle>Mirabeaus Død</toctitle>
-   <indextitle>Mirabeaus Død</indextitle>
-   <firstline>Riqvetti døde. Høit fra Zoner indtil Zoner</firstline>
-   <source pages="206-209"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Mirabeaus Død</title>
+  <toctitle>Mirabeaus Død</toctitle>
+  <indextitle>Mirabeaus Død</indextitle>
+  <firstline>Riqvetti døde. Høit fra Zoner indtil Zoner</firstline>
+  <source pages="206-209"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4160,15 +4162,15 @@ Skal Lysets Venner end i høie Jubler tone,
 
 <text id="baggesen2002092807">
 <head>
-   <title>Revolutionen</title>
-   <toctitle>Revolutionen</toctitle>
-   <indextitle>Revolutionen</indextitle>
-   <firstline>Himmelen tordner, ei Jorden. I Tordenen ruller os Skiæbnens</firstline>
-   <notes>
-      <note>Tidligere trykt i <i>Labyrinten</i> (1793).</note>
-   </notes>
-   <source pages="210-213"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Revolutionen</title>
+  <toctitle>Revolutionen</toctitle>
+  <indextitle>Revolutionen</indextitle>
+  <firstline>Himmelen tordner, ei Jorden. I Tordenen ruller os Skiæbnens</firstline>
+  <notes>
+    <note>Tidligere trykt i <i>Labyrinten</i> (1793).</note>
+  </notes>
+  <source pages="210-213"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4249,15 +4251,15 @@ Priser da Tordnerens Gang!
 
 <text id="baggesen2002092808">
 <head>
-   <title>Digtekunstens Undfangelse</title>
-   <toctitle>Digtekunstens Undfangelse</toctitle>
-   <indextitle>Digtekunstens Undfangelse</indextitle>
-   <firstline>Begeistring! i Skiønheds uskyldige Skiød</firstline>
-   <notes>
-      <note>Tidligere trykt i Rahbeks <i>Charis</i> (1797), under titlen ,,Fantasie paa Bredden af Thunersøen''.</note>
-   </notes>
-   <source pages="214-215"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Digtekunstens Undfangelse</title>
+  <toctitle>Digtekunstens Undfangelse</toctitle>
+  <indextitle>Digtekunstens Undfangelse</indextitle>
+  <firstline>Begeistring! i Skiønheds uskyldige Skiød</firstline>
+  <notes>
+    <note>Tidligere trykt i Rahbeks <i>Charis</i> (1797), under titlen ,,Fantasie paa Bredden af Thunersøen''.</note>
+  </notes>
+  <source pages="214-215"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4296,18 +4298,18 @@ En skiønnere Verden, hvor tusind Fortryllelser vrimle.
 
 <text id="baggesen20011110101" variant="baggesen2019080340">
 <head>
-   <title>Kyssene</title>
-   <subtitle>Til Palmine</subtitle>
-   <toctitle>Kyssene</toctitle>
-   <indextitle>Kyssene</indextitle>
-   <firstline>Giv mig, Palmine! tusind Kys, og atter</firstline>
-   <notes>
-      <note>Tidligere trykt i:<br/>- Ribers <i>Samling af Poesier</i> (1786), under titlen ,,Til Zeline. Efter Catullus''.<br/>- <i>Ungdomsarbeider</i> (1791), under titlen ,,Til Serene. Efter Catull''.</note>
-      <note>En fri gendigtning af Catuls berømte femte ode, ,,Vivamus, mea Lesbia, atqua amemus'', der i Otto Gelsteds oversættelse lyder:<br/>Lad os leve, min Lesbia, lad os elske, / ikke regne de strenge oldinges onde / rygtesnak for mere værd end en skilling. / Solens ild kan dø og atter fødes, / men når livets korte lys er slukket / venter os kun en evig nat og slummer. / Giv mig tusind kys og siden hundred, / derpå tusind andre og derpå hundred, / så endnu en gang tusind og så hundred! / Når vi har vekslet endnu et tusind, / vil vi blande dem sammen og glemme tallet, / så at ingen misundelig volder os skade, / når han erfarer hvor mange kys vi har vekslet.</note>
-      <note type="credits">Bidrag fra Sven Sørensen.</note>
-   </notes>
-   <source pages="216-217"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Kyssene</title>
+  <subtitle>Til Palmine</subtitle>
+  <toctitle>Kyssene</toctitle>
+  <indextitle>Kyssene</indextitle>
+  <firstline>Giv mig, Palmine! tusind Kys, og atter</firstline>
+  <notes>
+    <note>Tidligere trykt i:<br/>- Ribers <i>Samling af Poesier</i> (1786), under titlen ,,Til Zeline. Efter Catullus''.<br/>- <i>Ungdomsarbeider</i> (1791), under titlen ,,Til Serene. Efter Catull''.</note>
+    <note>En fri gendigtning af Catuls berømte femte ode, ,,Vivamus, mea Lesbia, atqua amemus'', der i Otto Gelsteds oversættelse lyder:<br/>Lad os leve, min Lesbia, lad os elske, / ikke regne de strenge oldinges onde / rygtesnak for mere værd end en skilling. / Solens ild kan dø og atter fødes, / men når livets korte lys er slukket / venter os kun en evig nat og slummer. / Giv mig tusind kys og siden hundred, / derpå tusind andre og derpå hundred, / så endnu en gang tusind og så hundred! / Når vi har vekslet endnu et tusind, / vil vi blande dem sammen og glemme tallet, / så at ingen misundelig volder os skade, / når han erfarer hvor mange kys vi har vekslet.</note>
+    <note type="credits">Bidrag fra Sven Sørensen.</note>
+  </notes>
+  <source pages="216-217"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4331,14 +4333,14 @@ Saa mange Gange hun ham kysset har.
 
 <text id="baggesen2002092809">
 <head>
-   <title>Til Schleppegrell</title>
-   <subtitle>(Under Evalds Haab og Erindring i hans Stambog)</subtitle>
-   <firstline>Lig Memnons Støtte, kold, og uden Liv</firstline>
-   <notes>
-      <note>Tidligere trykt i Rahbeks <i>Charis</i> (1797), under titlen ,,I Schleppegrells Stambog''.</note>
-   </notes>
-   <source pages="218-219"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Schleppegrell</title>
+  <subtitle>(Under Evalds Haab og Erindring i hans Stambog)</subtitle>
+  <firstline>Lig Memnons Støtte, kold, og uden Liv</firstline>
+  <notes>
+    <note>Tidligere trykt i Rahbeks <i>Charis</i> (1797), under titlen ,,I Schleppegrells Stambog''.</note>
+  </notes>
+  <source pages="218-219"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4367,17 +4369,17 @@ Var Evalds Sang til <i>Schleppegrell</i>.
 
 <text id="baggesen2002092810">
 <head>
-   <title>Til mit Fædreneland</title>
-   <subtitle>1796</subtitle>
-   <toctitle>Til mit Fædreneland</toctitle>
-   <indextitle>Til mit Fædreneland</indextitle>
-   <firstline>Du Plet af Jord, hvor første Gang mit Øie</firstline>
-   <notes>
-      <note>Tidligere trykt i Rahbeks <i>Charis</i> (1797), under titlen ,,Giensyn og Tilbageblik''.</note>
-      <note>I hele teksten alluderes til Thomas Thaarups <xref poem="thaarup2019021901"/>.</note>
-   </notes>
-   <source pages="220-224"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til mit Fædreneland</title>
+  <subtitle>1796</subtitle>
+  <toctitle>Til mit Fædreneland</toctitle>
+  <indextitle>Til mit Fædreneland</indextitle>
+  <firstline>Du Plet af Jord, hvor første Gang mit Øie</firstline>
+  <notes>
+    <note>Tidligere trykt i Rahbeks <i>Charis</i> (1797), under titlen ,,Giensyn og Tilbageblik''.</note>
+    <note>I hele teksten alluderes til Thomas Thaarups <xref poem="thaarup2019021901"/>.</note>
+  </notes>
+  <source pages="220-224"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4464,16 +4466,16 @@ Min Frydhavns stille Havblik! speilt i dig.
 
 <text id="baggesen2002092811">
 <head>
-   <title>Palmines Bortgang</title>
-   <toctitle>Palmines Bortgang</toctitle>
-   <indextitle>Palmines Bortgang</indextitle>
-   <firstline>Her svandt hun, Rosen falmer, Løvet bæver</firstline>
-   <notes>
-      <note>Tidligere trykt i Poulsens <i>Nytaarsgave for Damer</i> (1797), under titlen ,,Dafnes Bortgang''.</note>
-      <note>Under navnet <i>Palmine</i> besynger Baggesen sin første hustru, Sophie Haller.</note>
-   </notes>
-   <source pages="225-226"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Palmines Bortgang</title>
+  <toctitle>Palmines Bortgang</toctitle>
+  <indextitle>Palmines Bortgang</indextitle>
+  <firstline>Her svandt hun, Rosen falmer, Løvet bæver</firstline>
+  <notes>
+    <note>Tidligere trykt i Poulsens <i>Nytaarsgave for Damer</i> (1797), under titlen ,,Dafnes Bortgang''.</note>
+    <note>Under navnet <i>Palmine</i> besynger Baggesen sin første hustru, Sophie Haller.</note>
+  </notes>
+  <source pages="225-226"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4517,17 +4519,18 @@ Opgiver sødt min Aand.
 
 <text id="baggesen2002092812">
 <head>
-   <title>Til Frue Frederike Brun</title>
-   <subtitle>(I et Exemplar af Erik Eiegod)</subtitle>
-   <toctitle>Til Frue Frederike Brun</toctitle>
-   <indextitle>Til Frue Frederike Brun</indextitle>
-   <firstline>Hvilken Najas tør sin Skaal vel gyde</firstline>
-   <notes>
-      <note>Tidligere trykt i Rahbeks <i>Charis</i> (1800).</note>
-   </notes>
-   <keywords>brunf</keywords>
-   <source pages="227-228"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Frue Frederike Brun</title>
+  <subtitle>(I et Exemplar af Erik Eiegod)</subtitle>
+  <toctitle>Til Frue Frederike Brun</toctitle>
+  <indextitle>Til Frue Frederike Brun</indextitle>
+  <firstline>Hvilken Najas tør sin Skaal vel gyde</firstline>
+  <!-- Ikke en variant af baggesen2001112605: Citat eller genbrug i et andet digt, ikke en tekstvariant. -->
+  <notes>
+    <note>Tidligere trykt i Rahbeks <i>Charis</i> (1800).</note>
+  </notes>
+  <keywords>brunf</keywords>
+  <source pages="227-228"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4556,51 +4559,51 @@ Eiegode! tag min <i>Eiegod</i>.
 
 <text id="baggesen2002092813">
 <head>
-   <title>Skilsmissen</title>
-   <toctitle>Skilsmissen</toctitle>
-   <indextitle>Skilsmissen</indextitle>
-   <firstline>Snart hæves jeg til Lysets Sæde</firstline>
-   <notes>
-      <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1788), under titlen ,,Skilsmissen efter -''.</note>
-   </notes>
-   <source pages="229-230"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Skilsmissen</title>
+  <toctitle>Skilsmissen</toctitle>
+  <indextitle>Skilsmissen</indextitle>
+  <firstline>Snart hæves jeg til Lysets Sæde</firstline>
+  <notes>
+    <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1788), under titlen ,,Skilsmissen efter -''.</note>
+  </notes>
+  <source pages="229-230"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<center><nonum><sc>Hun</sc></nonum></center>
+<nonum><center><sc>Hun</sc></center></nonum>
 Snart hæves jeg til Lysets Sæde;
 Mig Gravens Mørke skrækker ei;
 O! doppelt døde jeg med Glæde,
 Hvis nogen elskte dig, som jeg.
 
-<center><nonum><sc>Han</sc></nonum></center>
+<nonum><center><sc>Han</sc></center></nonum>
 Ved Dig kun dette Hierte hænger;
 Dit Billed kun mit Øie seer;
 Hvis Du mig ei kan elske længer,
 Jeg Elskov ei behøver meer.
 
-<center><nonum><sc>Hun</sc></nonum></center>
+<nonum><center><sc>Hun</sc></center></nonum>
 O! meer og meer, og uden Ende
 Jeg hist vil elske dig, min Ven!
 Mit Hiertes Ild skal doppelt brænde,
 Hvor ingen Smerte dæmper den.
 
-<center><nonum><sc>Han</sc></nonum></center>
+<nonum><center><sc>Han</sc></center></nonum>
 Din Stemme dæmpes; men dit Øie
 Mig smiler doppelt hvert et Ord;
 
-<center><nonum><sc>Hun</sc></nonum></center>
+<nonum><center><sc>Hun</sc></center></nonum>
 Jeg nærmer mig den Evighøie;
 Den synker alt, den mørke Jord.
 
-<center><nonum><sc>Han</sc></nonum></center>
+<nonum><center><sc>Han</sc></center></nonum>
 O Gud! o Smil! o kom tilbage!
 
-<center><nonum><sc>Hun</sc></nonum></center>
+<nonum><center><sc>Hun</sc></center></nonum>
 Jeg elsker dig i Himlens Skiød .....
 
-<center><nonum><sc>Han</sc></nonum></center>
+<nonum><center><sc>Han</sc></center></nonum>
 O! rinder Taarer! rinder Dage!
 O! rind mit Liv! o favn mig, Død!
 </poetry>
@@ -4609,13 +4612,13 @@ O! rind mit Liv! o favn mig, Død!
 
 <text id="baggesen2002092814">
 <head>
-   <title>Til Bonaparte</title>
-   <subtitle>Digtet paa Toppen af St. Bernhardsbierget i Foraaret 1799</subtitle>
-   <toctitle>Til Bonaparte</toctitle>
-   <indextitle>Til Bonaparte</indextitle>
-   <firstline>Hvilken Mand, Helt, Gud, o du Lyd fra Pindus</firstline>
-   <source pages="231-235"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Bonaparte</title>
+  <subtitle>Digtet paa Toppen af St. Bernhardsbierget i Foraaret 1799</subtitle>
+  <toctitle>Til Bonaparte</toctitle>
+  <indextitle>Til Bonaparte</indextitle>
+  <firstline>Hvilken Mand, Helt, Gud, o du Lyd fra Pindus</firstline>
+  <source pages="231-235"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4709,16 +4712,16 @@ Iil, Olympskioldrustede hiem, og styrt den
 
 <text id="baggesen2002092901">
 <head>
-   <title>Taus Tilbedelse</title>
-   <subtitle>Til Fanny</subtitle>
-   <toctitle>Taus Tilbedelse</toctitle>
-   <indextitle>Taus Tilbedelse</indextitle>
-   <firstline>Den høieste Begeistrings Himmel-Elv</firstline>
-   <notes>
-      <note>Tidligere trykt i Rahbeks <i>Charis</i> (1797), under titlen ,,Endelig Erklæring''.</note>
-   </notes>
-   <source pages="236-240"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Taus Tilbedelse</title>
+  <subtitle>Til Fanny</subtitle>
+  <toctitle>Taus Tilbedelse</toctitle>
+  <indextitle>Taus Tilbedelse</indextitle>
+  <firstline>Den høieste Begeistrings Himmel-Elv</firstline>
+  <notes>
+    <note>Tidligere trykt i Rahbeks <i>Charis</i> (1797), under titlen ,,Endelig Erklæring''.</note>
+  </notes>
+  <source pages="236-240"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4807,15 +4810,15 @@ Den brænder, nært af dig, men ene seet af Gud.
 
 <text id="baggesen2002092902" variant="baggesen2019080326">
 <head>
-   <title>Bønhørelsen</title>
-   <toctitle>Bønhørelsen</toctitle>
-   <indextitle>Bønhørelsen</indextitle>
-   <firstline>O! jeg lyksalige! Fanny bønhører mig!</firstline>
-   <notes>
-      <note>Tidligere trykt i:<br/>- Ribers <i>Samling af Poesier</i> (1786), under titlen ,,Lycas til Lycilis''.<br/>- <i>Ungdomsarbeider</i> (1791), under titlen ,,Den glade Lycas''.</note>
-   </notes>
-   <source pages="241-242"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Bønhørelsen</title>
+  <toctitle>Bønhørelsen</toctitle>
+  <indextitle>Bønhørelsen</indextitle>
+  <firstline>O! jeg lyksalige! Fanny bønhører mig!</firstline>
+  <notes>
+    <note>Tidligere trykt i:<br/>- Ribers <i>Samling af Poesier</i> (1786), under titlen ,,Lycas til Lycilis''.<br/>- <i>Ungdomsarbeider</i> (1791), under titlen ,,Den glade Lycas''.</note>
+  </notes>
+  <source pages="241-242"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4852,19 +4855,19 @@ Fanny! jeg døer i din Arm.
 
 <text id="baggesen2002092903">
 <head>
-   <title>Til Freden</title>
-   <subtitle>
-      <line>Paa Kongens Fødselsdag</line>
-      <line>1800</line>
-   </subtitle>
-   <toctitle>Til Freden</toctitle>
-   <indextitle>Til Freden</indextitle>
-   <firstline>Krigens Larm og Skrækkens Bulder</firstline>
-   <notes>
-      <note>Tidligere trykt i:<br/>- <i>Kreds-Sang for Det Harmoniske Selskab paa Kongens Fødselsdag den 29 Januar 1800</i> (1800).<br/>- <i>Minerva</i> (januar 1800).</note>
-   </notes>
-   <source pages="243-245"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Freden</title>
+  <subtitle>
+    <line>Paa Kongens Fødselsdag</line>
+    <line>1800</line>
+  </subtitle>
+  <toctitle>Til Freden</toctitle>
+  <indextitle>Til Freden</indextitle>
+  <firstline>Krigens Larm og Skrækkens Bulder</firstline>
+  <notes>
+    <note>Tidligere trykt i:<br/>- <i>Kreds-Sang for Det Harmoniske Selskab paa Kongens Fødselsdag den 29 Januar 1800</i> (1800).<br/>- <i>Minerva</i> (januar 1800).</note>
+  </notes>
+  <source pages="243-245"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4921,16 +4924,16 @@ Signet være <i>Christian!</i>
 
 <text id="baggesen2002092903a">
 <head>
-   <title>Til Kronprindsen</title>
-   <subtitle>1800</subtitle>
-   <toctitle>Til Kronprindsen</toctitle>
-   <indextitle>Til Kronprindsen</indextitle>
-   <firstline>Din Morgenrøde hilset blev</firstline>
-   <notes>
-      <note>Tidligere trykt som særtryk: <i>Sang i Anledning af Hans Kongelige Høihed Kronprindsens Fødselsdag</i> (1800).</note>
-   </notes>
-   <source pages="246-248"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Kronprindsen</title>
+  <subtitle>1800</subtitle>
+  <toctitle>Til Kronprindsen</toctitle>
+  <indextitle>Til Kronprindsen</indextitle>
+  <firstline>Din Morgenrøde hilset blev</firstline>
+  <notes>
+    <note>Tidligere trykt som særtryk: <i>Sang i Anledning af Hans Kongelige Høihed Kronprindsens Fødselsdag</i> (1800).</note>
+  </notes>
+  <source pages="246-248"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4975,15 +4978,15 @@ Dit Hiertes Løn!
 
 <text id="baggesen2002092904">
 <head>
-   <title>Venskab og Kiærlighed</title>
-   <toctitle>Venskab og Kierlighed</toctitle>
-   <indextitle>Venskab og Kiærlighed</indextitle>
-   <firstline>O du, som medsmilende leer</firstline>
-   <notes>
-      <note>Tidligere trykt i Rahbeks <i>Charis</i> (1800), under titlen ,,Sonnet''.</note>
-   </notes>
-   <source pages="249"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Venskab og Kiærlighed</title>
+  <toctitle>Venskab og Kierlighed</toctitle>
+  <indextitle>Venskab og Kiærlighed</indextitle>
+  <firstline>O du, som medsmilende leer</firstline>
+  <notes>
+    <note>Tidligere trykt i Rahbeks <i>Charis</i> (1800), under titlen ,,Sonnet''.</note>
+  </notes>
+  <source pages="249"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5010,15 +5013,15 @@ Og med Dig i min Vellyst jeg græder.
 
 <text id="baggesen2002092905">
 <head>
-   <title>Til Fanny</title>
-   <toctitle>Til Fanny</toctitle>
-   <indextitle>Til Fanny</indextitle>
-   <firstline>Skal jeg da skylde dig mit Væsens hele Vel?</firstline>
-   <notes>
-      <note>Tidligere trykt i Poulsens <i>Nytaarsgave for Damer</i> (1793), under titlen ,,Til Psyche''.</note>
-   </notes>
-   <source pages="250-252"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Fanny</title>
+  <toctitle>Til Fanny</toctitle>
+  <indextitle>Til Fanny</indextitle>
+  <firstline>Skal jeg da skylde dig mit Væsens hele Vel?</firstline>
+  <notes>
+    <note>Tidligere trykt i Poulsens <i>Nytaarsgave for Damer</i> (1793), under titlen ,,Til Psyche''.</note>
+  </notes>
+  <source pages="250-252"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5069,16 +5072,16 @@ At over dig jeg ei skal glemme Gud!
 
 <text id="baggesen2002092906">
 <head>
-   <title>Digterfortvivlelse</title>
-   <subtitle>Svanesang</subtitle>
-   <toctitle>Digterfortvivlelse</toctitle>
-   <indextitle>Digterfortvivlelse</indextitle>
-   <firstline>Nei! længer vil jeg ei min vilde Smerte styre</firstline>
-   <notes>
-      <note>Tidligere trykt i <i>Charis</i> (1797), med undertitlen ,,Da hun yttrede, at hun heller læste Prosa end Poesie''.</note>
-   </notes>
-   <source pages="253-256"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Digterfortvivlelse</title>
+  <subtitle>Svanesang</subtitle>
+  <toctitle>Digterfortvivlelse</toctitle>
+  <indextitle>Digterfortvivlelse</indextitle>
+  <firstline>Nei! længer vil jeg ei min vilde Smerte styre</firstline>
+  <notes>
+    <note>Tidligere trykt i <i>Charis</i> (1797), med undertitlen ,,Da hun yttrede, at hun heller læste Prosa end Poesie''.</note>
+  </notes>
+  <source pages="253-256"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5149,27 +5152,28 @@ Døe paa min Læbe, du min sidste Sang!
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
 
 <section level="1">
 <head>
-   <toctitle>Elegier</toctitle>
+  <toctitle>Elegier</toctitle>
 </head>
 <content>
 
 <text id="baggesen2002092907">
 <head>
-   <title>Til Menander</title>
-   <subtitle>1782</subtitle>
-   <toctitle>Til Menander</toctitle>
-   <indextitle>Til Menander</indextitle>
-   <firstline>Du glade Ven! som i din Elsktes Arm</firstline>
-   <notes>
-      <note>Tidligere trykt i Iversens <i>Samling af Poesier</i> (1785), under titlen ,,Til min Ven''.</note>
-   </notes>
-   <source pages="259-264"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Menander</title>
+  <subtitle>1782</subtitle>
+  <toctitle>Til Menander</toctitle>
+  <indextitle>Til Menander</indextitle>
+  <firstline>Du glade Ven! som i din Elsktes Arm</firstline>
+  <notes>
+    <note>Tidligere trykt i Iversens <i>Samling af Poesier</i> (1785), under titlen ,,Til min Ven''.</note>
+  </notes>
+  <source pages="259-264"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5269,16 +5273,16 @@ Min Gud, mig selv og min <i>Menander</i> værd.
 
 <text id="baggesen2002092908">
 <head>
-   <title>Det første Haandtryk</title>
-   <subtitle>Til Seline</subtitle>
-   <toctitle>Det første Haandtryk</toctitle>
-   <indextitle>Det første Haandtryk</indextitle>
-   <firstline>Nei! bort med Trøst! paa denne Jord</firstline>
-   <notes>
-      <note>Tidligere trykt i <i>Minerva</i> (august 1785), under titlen ,,Til Zeline''.</note>
-   </notes>
-   <source pages="265-270"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Det første Haandtryk</title>
+  <subtitle>Til Seline</subtitle>
+  <toctitle>Det første Haandtryk</toctitle>
+  <indextitle>Det første Haandtryk</indextitle>
+  <firstline>Nei! bort med Trøst! paa denne Jord</firstline>
+  <notes>
+    <note>Tidligere trykt i <i>Minerva</i> (august 1785), under titlen ,,Til Zeline''.</note>
+  </notes>
+  <source pages="265-270"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5377,15 +5381,15 @@ Ras Skiebne! lad dit Lyn ned slaae!
 
 <text id="baggesen2002092909">
 <head>
-   <title>Til Seline</title>
-   <toctitle>Til Seline</toctitle>
-   <indextitle>Til Seline</indextitle>
-   <firstline>Sig, Elskede! den Mand, til hvem dit Øie</firstline>
-   <notes>
-      <note>Tidligere trykt i Poulsens <i>Nytaarsgave for Damer</i> (1797), under titlen ,,Elegie''.</note>
-   </notes>
-   <source pages="271-273"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Seline</title>
+  <toctitle>Til Seline</toctitle>
+  <indextitle>Til Seline</indextitle>
+  <firstline>Sig, Elskede! den Mand, til hvem dit Øie</firstline>
+  <notes>
+    <note>Tidligere trykt i Poulsens <i>Nytaarsgave for Damer</i> (1797), under titlen ,,Elegie''.</note>
+  </notes>
+  <source pages="271-273"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5443,16 +5447,16 @@ Men med det alt, fortiente jeg din Lige;
 
 <text id="baggesenandrea2">
 <head>
-   <title>Min anden Skabelse</title>
-   <subtitle>Til Seline</subtitle>
-   <toctitle>Min anden Skabelse</toctitle>
-   <indextitle>Min anden Skabelse</indextitle>
-   <firstline>Udannet sprang jeg af min Moders Arme</firstline>
-   <notes>
-      <note>Tidligere trykt i <i>Minerva</i> (juli 1785), under titlen ,,Til Zeline''.</note>
-   </notes>
-   <source pages="274-279"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Min anden Skabelse</title>
+  <subtitle>Til Seline</subtitle>
+  <toctitle>Min anden Skabelse</toctitle>
+  <indextitle>Min anden Skabelse</indextitle>
+  <firstline>Udannet sprang jeg af min Moders Arme</firstline>
+  <notes>
+    <note>Tidligere trykt i <i>Minerva</i> (juli 1785), under titlen ,,Til Zeline''.</note>
+  </notes>
+  <source pages="274-279"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5550,16 +5554,16 @@ At elskes af den fierne Fremtids Sønner,
 
 <text id="baggesen2002100201">
 <head>
-   <title>Erklæringen</title>
-   <subtitle>Til Seline</subtitle>
-   <toctitle>Erklæringen</toctitle>
-   <indextitle>Erklæringen</indextitle>
-   <firstline>Naar Morgenrødens første Smiil indbyde</firstline>
-   <notes>
-      <note>Tidligere trykt i Iversens <i>Samling af Poesier</i> (1785), under titlen ,,Zeline''.</note>
-   </notes>
-   <source pages="280-282"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Erklæringen</title>
+  <subtitle>Til Seline</subtitle>
+  <toctitle>Erklæringen</toctitle>
+  <indextitle>Erklæringen</indextitle>
+  <firstline>Naar Morgenrødens første Smiil indbyde</firstline>
+  <notes>
+    <note>Tidligere trykt i Iversens <i>Samling af Poesier</i> (1785), under titlen ,,Zeline''.</note>
+  </notes>
+  <source pages="280-282"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5613,15 +5617,15 @@ Jeg kan jo synge dig og dine Dyder,
 
 <text id="baggesen2002100202">
 <head>
-   <title>Elskerens Ønske</title>
-   <toctitle>Elskerens Ønske</toctitle>
-   <indextitle>Elskerens Ønske</indextitle>
-   <firstline>Om dig, om dig er alle mine Bønner</firstline>
-   <notes>
-      <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1786), under titlen ,,Til Zeline. Efter Tibullus's 3 Bogs 3 Elegie''.</note>
-   </notes>
-   <source pages="283-285"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Elskerens Ønske</title>
+  <toctitle>Elskerens Ønske</toctitle>
+  <indextitle>Elskerens Ønske</indextitle>
+  <firstline>Om dig, om dig er alle mine Bønner</firstline>
+  <notes>
+    <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1786), under titlen ,,Til Zeline. Efter Tibullus's 3 Bogs 3 Elegie''.</note>
+  </notes>
+  <source pages="283-285"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5679,13 +5683,13 @@ Snart, snart, o! Pluto! lad mig Arme stige
 
 <text id="baggesen2002100203">
 <head>
-   <title>Bønnerne</title>
-   <subtitle>Til Seline</subtitle>
-   <toctitle>Bønnerne</toctitle>
-   <indextitle>Bønnerne</indextitle>
-   <firstline>Gjet, Elskede! hvorom din Elsker beder</firstline>
-   <source pages="286-289"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Bønnerne</title>
+  <subtitle>Til Seline</subtitle>
+  <toctitle>Bønnerne</toctitle>
+  <indextitle>Bønnerne</indextitle>
+  <firstline>Gjet, Elskede! hvorom din Elsker beder</firstline>
+  <source pages="286-289"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5747,16 +5751,16 @@ Og beder blot, at giennem Evigheden
 
 <text id="baggesen2002100204">
 <head>
-   <title>Sværmerie</title>
-   <subtitle>Til Seline</subtitle>
-   <toctitle>Sværmerie</toctitle>
-   <indextitle>Sværmerie</indextitle>
-   <firstline>Gid alle Jordens Kroner vare dine!</firstline>
-   <notes>
-      <note>Tidligere trykt i <i>Minerva</i> (marts 1786), under titlen ,,Til Zeline''.</note>
-   </notes>
-   <source pages="290-293"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Sværmerie</title>
+  <subtitle>Til Seline</subtitle>
+  <toctitle>Sværmerie</toctitle>
+  <indextitle>Sværmerie</indextitle>
+  <firstline>Gid alle Jordens Kroner vare dine!</firstline>
+  <notes>
+    <note>Tidligere trykt i <i>Minerva</i> (marts 1786), under titlen ,,Til Zeline''.</note>
+  </notes>
+  <source pages="290-293"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5818,13 +5822,13 @@ Ved under en Gudindes Skierm at nyde
 
 <text id="baggesen2002100205">
 <head>
-   <title>Kierlighedseden</title>
-   <subtitle>Til Seline</subtitle>
-   <toctitle>Kierlighedseden</toctitle>
-   <indextitle>Kierlighedseden</indextitle>
-   <firstline>Lad Venus mig en Huldgudinde sende</firstline>
-   <source pages="294-297"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Kierlighedseden</title>
+  <subtitle>Til Seline</subtitle>
+  <toctitle>Kierlighedseden</toctitle>
+  <indextitle>Kierlighedseden</indextitle>
+  <firstline>Lad Venus mig en Huldgudinde sende</firstline>
+  <source pages="294-297"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5890,13 +5894,13 @@ Af Guders Lyst skal dette Hierte bæve,
 
 <text id="baggesen2002100206">
 <head>
-   <title>Overalt den Elskede</title>
-   <subtitle>Til Seline</subtitle>
-   <toctitle>Overalt den Elskede</toctitle>
-   <indextitle>Overalt den Elskede</indextitle>
-   <firstline>Tæl Engens Blomstre, Skyggelundens Blade</firstline>
-   <source pages="298-299"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Overalt den Elskede</title>
+  <subtitle>Til Seline</subtitle>
+  <toctitle>Overalt den Elskede</toctitle>
+  <indextitle>Overalt den Elskede</indextitle>
+  <firstline>Tæl Engens Blomstre, Skyggelundens Blade</firstline>
+  <source pages="298-299"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5934,13 +5938,13 @@ Mit Øre blot et dunkelt Bulder saarer;
 
 <text id="baggesen2002100207">
 <head>
-   <title>Udelukkende Hyldest</title>
-   <subtitle>Til Seline</subtitle>
-   <toctitle>Udelukkende Hyldest</toctitle>
-   <indextitle>Udelukkende Hyldest</indextitle>
-   <firstline>Seline! du skal ene mig behage</firstline>
-   <source pages="300-303"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Udelukkende Hyldest</title>
+  <subtitle>Til Seline</subtitle>
+  <toctitle>Udelukkende Hyldest</toctitle>
+  <indextitle>Udelukkende Hyldest</indextitle>
+  <firstline>Seline! du skal ene mig behage</firstline>
+  <source pages="300-303"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6010,15 +6014,15 @@ Og nyde salig i sin hele Vidde
 
 <text id="baggesen2002100301">
 <head>
-   <title>Til Sangen</title>
-   <toctitle>Til Sangen</toctitle>
-   <indextitle>Til Sangen</indextitle>
-   <firstline>Gaae, lykkelige Sang! til min Seline</firstline>
-   <notes>
-      <note>Tidligere trykt i <i>Minerva</i> (september 1787), under titlen ,,Elegie''.</note>
-   </notes>
-   <source pages="304-305"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Sangen</title>
+  <toctitle>Til Sangen</toctitle>
+  <indextitle>Til Sangen</indextitle>
+  <firstline>Gaae, lykkelige Sang! til min Seline</firstline>
+  <notes>
+    <note>Tidligere trykt i <i>Minerva</i> (september 1787), under titlen ,,Elegie''.</note>
+  </notes>
+  <source pages="304-305"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6060,16 +6064,16 @@ Dig, hellige! som nød min drømte Lykke,
 
 <text id="baggesen2002100208">
 <head>
-   <title>Da hun skulde reise</title>
-   <subtitle>Til Seline</subtitle>
-   <toctitle>Da hun skulde reise</toctitle>
-   <indextitle>Da hun skulde reise</indextitle>
-   <firstline>Hvad Mørke for min Siel udbreder sig!</firstline>
-   <notes>
-      <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1788).</note>
-   </notes>
-   <source pages="306-307"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Da hun skulde reise</title>
+  <subtitle>Til Seline</subtitle>
+  <toctitle>Da hun skulde reise</toctitle>
+  <indextitle>Da hun skulde reise</indextitle>
+  <firstline>Hvad Mørke for min Siel udbreder sig!</firstline>
+  <notes>
+    <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1788).</note>
+  </notes>
+  <source pages="306-307"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6097,16 +6101,16 @@ Fortrolig kun med Mørket, Lasten lig,
 
 <text id="baggesen2002100209">
 <head>
-   <title>Da hun var bortreist</title>
-   <subtitle>Til Seline</subtitle>
-   <toctitle>Da hun var bortreist</toctitle>
-   <indextitle>Da hun var bortreist</indextitle>
-   <firstline>O! hvor er Glimt af Trøst? Omsonst mit Øie</firstline>
-   <notes>
-      <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1788).</note>
-   </notes>
-   <source pages="308-310"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Da hun var bortreist</title>
+  <subtitle>Til Seline</subtitle>
+  <toctitle>Da hun var bortreist</toctitle>
+  <indextitle>Da hun var bortreist</indextitle>
+  <firstline>O! hvor er Glimt af Trøst? Omsonst mit Øie</firstline>
+  <notes>
+    <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1788).</note>
+  </notes>
+  <source pages="308-310"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6148,16 +6152,16 @@ For, tryllet af den Redning Haabet spaaer,
 
 <text id="baggesen1801a3">
 <head>
-   <title>Savnet</title>
-   <subtitle>Til Seline</subtitle>
-   <toctitle>Savnet</toctitle>
-   <indextitle>Savnet</indextitle>
-   <firstline>Af ængstlig Længsel nu mit Hjerte gyser</firstline>
-   <notes>
-      <note>Tidligere trykt i <i>Minerva</i> (september 1787), under titlen ,,Elegie''.</note>
-   </notes>
-   <source pages="311-313"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Savnet</title>
+  <subtitle>Til Seline</subtitle>
+  <toctitle>Savnet</toctitle>
+  <indextitle>Savnet</indextitle>
+  <firstline>Af ængstlig Længsel nu mit Hjerte gyser</firstline>
+  <notes>
+    <note>Tidligere trykt i <i>Minerva</i> (september 1787), under titlen ,,Elegie''.</note>
+  </notes>
+  <source pages="311-313"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6199,15 +6203,15 @@ Og i mit Helved længselfuld omfavne
 
 <text id="baggesen2002100210">
 <head>
-   <title>Til Richardsons Clarissa</title>
-   <toctitle>Til Richardsons Klarisse</toctitle>
-   <indextitle>Til Richardsons Clarissa</indextitle>
-   <firstline>O du! som ofte saae min Taare rinde</firstline>
-   <notes>
-      <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1788), under titlen ,,Elegie. Til et Exemplar af Zadig''.</note>
-   </notes>
-   <source pages="314-319"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Richardsons Clarissa</title>
+  <toctitle>Til Richardsons Klarisse</toctitle>
+  <indextitle>Til Richardsons Clarissa</indextitle>
+  <firstline>O du! som ofte saae min Taare rinde</firstline>
+  <notes>
+    <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1788), under titlen ,,Elegie. Til et Exemplar af Zadig''.</note>
+  </notes>
+  <source pages="314-319"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6305,15 +6309,15 @@ Og festlig andagtsfuld i dig tilbede
 
 <text id="baggesen2002100211">
 <head>
-   <title>Selines Tab</title>
-   <toctitle>Selines Tab</toctitle>
-   <indextitle>Selines Tab</indextitle>
-   <firstline>Taus er Naturen, Skabningen er øde</firstline>
-   <notes>
-      <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1788), under titlen ,,Elegie''.</note>
-   </notes>
-   <source pages="320-323"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Selines Tab</title>
+  <toctitle>Selines Tab</toctitle>
+  <indextitle>Selines Tab</indextitle>
+  <firstline>Taus er Naturen, Skabningen er øde</firstline>
+  <notes>
+    <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1788), under titlen ,,Elegie''.</note>
+  </notes>
+  <source pages="320-323"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6375,15 +6379,15 @@ O vee mig! vee! mit hele Hierte gyser;
 
 <text id="baggesen2002100212">
 <head>
-   <title>Til Apollo</title>
-   <toctitle>Til Apollo</toctitle>
-   <indextitle>Til Apollo</indextitle>
-   <firstline>Til nogle Himlen Septer gav og Krone</firstline>
-   <notes>
-      <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1788).</note>
-   </notes>
-   <source pages="324-325"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Apollo</title>
+  <toctitle>Til Apollo</toctitle>
+  <indextitle>Til Apollo</indextitle>
+  <firstline>Til nogle Himlen Septer gav og Krone</firstline>
+  <notes>
+    <note>Tidligere trykt i Ribers <i>Samling af Poesier</i> (1788).</note>
+  </notes>
+  <source pages="324-325"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6421,15 +6425,19 @@ Thi Musen steeg til mig fra mørke Grave,
 
 <text id="baggesen2001082701">
 <head>
-   <title>Da jeg var lille</title>
-   <toctitle>Da jeg var lille</toctitle>
-   <indextitle>Da jeg var lille</indextitle>
-   <firstline>Der var en Tid, da jeg var meget lille</firstline>
-   <notes>
-      <note>Tidligere trykt i:<br/>- Ribers <i>Samling af Poesier</i> (1785).<br/>- <i>Ungdomsarbeider</i> (1791).</note>
-   </notes>
-   <source pages="326-328"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Da jeg var lille</title>
+  <toctitle>Da jeg var lille</toctitle>
+  <indextitle>Da jeg var lille</indextitle>
+  <firstline>Der var en Tid, da jeg var meget lille</firstline>
+  <!-- Ikke varianter af:
+  baggesen2002103106: Citat eller genbrug i et andet digt, ikke en tekstvariant.
+  baggesen2002112630: Citat eller genbrug i et andet digt, ikke en tekstvariant.
+  -->
+  <notes>
+    <note>Tidligere trykt i:<br/>- Ribers <i>Samling af Poesier</i> (1785).<br/>- <i>Ungdomsarbeider</i> (1791).</note>
+  </notes>
+  <source pages="326-328"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6483,15 +6491,15 @@ Gud lad mig aldrig, aldrig tabe den!
 
 <text id="baggesen2002100213">
 <head>
-   <title>Ved Bergers Død</title>
-   <toctitle>Ved Bergers Død</toctitle>
-   <indextitle>Ved Bergers Død</indextitle>
-   <firstline>Ei Lægen blot, som hans Exempel lærte</firstline>
-   <notes>
-      <note>Tidligere trykt i <i>Ungdomsarbeider</i> (1791), under titlen ,,Til Dydens Ven ved Bergers Død''.</note>
-   </notes>
-   <source pages="329-330"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Ved Bergers Død</title>
+  <toctitle>Ved Bergers Død</toctitle>
+  <indextitle>Ved Bergers Død</indextitle>
+  <firstline>Ei Lægen blot, som hans Exempel lærte</firstline>
+  <notes>
+    <note>Tidligere trykt i <i>Ungdomsarbeider</i> (1791), under titlen ,,Til Dydens Ven ved Bergers Død''.</note>
+  </notes>
+  <source pages="329-330"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6529,15 +6537,15 @@ Min <i>Callisen</i>, saa sang Hygæa, lever;
 
 <text id="baggesen2002100214">
 <head>
-   <title>Minonas Fraværelse</title>
-   <toctitle>Minonas Fraværelse</toctitle>
-   <indextitle>Minonas Fraværelse</indextitle>
-   <firstline>Fra den sørgende Stund, da Minona forlod dine Bredde</firstline>
-   <notes>
-      <note>Tidligere trykt i Poulsens <i>Nytaarsgave for Damer</i> (1797).</note>
-   </notes>
-   <source pages="331-332"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Minonas Fraværelse</title>
+  <toctitle>Minonas Fraværelse</toctitle>
+  <indextitle>Minonas Fraværelse</indextitle>
+  <firstline>Fra den sørgende Stund, da Minona forlod dine Bredde</firstline>
+  <notes>
+    <note>Tidligere trykt i Poulsens <i>Nytaarsgave for Damer</i> (1797).</note>
+  </notes>
+  <source pages="331-332"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6563,15 +6571,15 @@ Da skal den memnonske Støtte, din Skiald, oplives og tone
 
 <text id="baggesen2002100215">
 <head>
-   <title>Til Palmine</title>
-   <toctitle>Til Palmine</toctitle>
-   <indextitle>Til Palmine</indextitle>
-   <firstline>Skaberens blindende Glands gienstraaler utallige Speile</firstline>
-   <notes>
-      <note>Tidligere trykt i Rahbeks <i>Charis</i> (1797).</note>
-   </notes>
-   <source pages="333-334"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Palmine</title>
+  <toctitle>Til Palmine</toctitle>
+  <indextitle>Til Palmine</indextitle>
+  <firstline>Skaberens blindende Glands gienstraaler utallige Speile</firstline>
+  <notes>
+    <note>Tidligere trykt i Rahbeks <i>Charis</i> (1797).</note>
+  </notes>
+  <source pages="333-334"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6591,13 +6599,13 @@ Ham vil jeg elske som dig, og dig, som man ham bør at elske:
 
 <text id="baggesen2002100216">
 <head>
-   <title>Til Søvnen</title>
-   <subtitle>(Da hun var syg)</subtitle>
-   <toctitle>Til Søvnen</toctitle>
-   <indextitle>Til Søvnen</indextitle>
-   <firstline>Iil, kiærligste blandt alle milde Guder</firstline>
-   <source pages="335-336"/>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Søvnen</title>
+  <subtitle>(Da hun var syg)</subtitle>
+  <toctitle>Til Søvnen</toctitle>
+  <indextitle>Til Søvnen</indextitle>
+  <firstline>Iil, kiærligste blandt alle milde Guder</firstline>
+  <source pages="335-336"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6620,7 +6628,9 @@ Men skal <i>Palmines</i> Øie vaagent græde,
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
+
 </workbody>
 </kalliopework>

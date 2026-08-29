@@ -1,27 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1837h" author="ingemann" status="complete" type="poetry">
 <workhead>
-   <title>Holger Danske</title>
-   <year>1837</year>
-   <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+  <title>Holger Danske</title>
+  <year>1837</year>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
 <section level="1">
 <head>
-   <toctitle>I. Hjemmet. Udgang i Verden.</toctitle>
+  <toctitle>I. Hjemmet. Udgang i Verden.</toctitle>
 </head>
 <content>
 
 <text id="ingemann1837ha1">
 <head>
-   <title>Hilsen til Frænderne</title>
-   <toctitle>Hilsen til Frænderne</toctitle>
-   <indextitle>Hilsen til Frænderne</indextitle>
-   <firstline>Vær hilset, mit gamle Fædreland!</firstline>
-   <quality>korrektur1</quality>
+  <title>Hilsen til Frænderne</title>
+  <toctitle>Hilsen til Frænderne</toctitle>
+  <indextitle>Hilsen til Frænderne</indextitle>
+  <firstline>Vær hilset, mit gamle Fædreland!</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -65,15 +63,15 @@ Jeg er din fuldtroe Hjelper i Nød
 
 <text id="ingemann2002011509">
 <head>
-   <title>Holger paa Kæmpehøien</title>
-   <toctitle>Holger paa Kæmpehøien</toctitle>
-   <indextitle>Holger paa Kæmpehøien</indextitle>
-   <firstline>Hvergang jeg seer over Marken</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</note>
-      <note type="credits">Bidrag fra Svend Andersen.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Holger paa Kæmpehøien</title>
+  <toctitle>Holger paa Kæmpehøien</toctitle>
+  <indextitle>Holger paa Kæmpehøien</indextitle>
+  <firstline>Hvergang jeg seer over Marken</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Andersen.</note>
+  </notes>
+  <source>B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</source>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -102,15 +100,15 @@ I Kæmpernes Fædreland
 
 <text id="ingemann2002011503">
 <head>
-   <title>Fordum og nu</title>
-   <toctitle>Fordum og nu</toctitle>
-   <indextitle>Fordum og nu</indextitle>
-   <firstline>Kæmperne var heelt vilde</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</note>
-      <note type="credits">Bidrag fra Svend Andersen.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Fordum og nu</title>
+  <toctitle>Fordum og nu</toctitle>
+  <indextitle>Fordum og nu</indextitle>
+  <firstline>Kæmperne var heelt vilde</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Andersen.</note>
+  </notes>
+  <source>B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</source>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -139,11 +137,11 @@ Fordi de har sig barbeert.
 
 <text id="ingemann1837ha0">
 <head>
-   <title>Sangens Fugl</title>
-   <toctitle>Sangens Fugl</toctitle>
-   <indextitle>Sangens Fugl</indextitle>
-   <firstline>Til Sagn og Sange og Eventyr</firstline>
-   <quality>korrektur1</quality>
+  <title>Sangens Fugl</title>
+  <toctitle>Sangens Fugl</toctitle>
+  <indextitle>Sangens Fugl</indextitle>
+  <firstline>Til Sagn og Sange og Eventyr</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -167,12 +165,10 @@ Hvor Sangen trænger til Barnets Sind
 
 <text id="ingemann2005051101">
 <head>
-   <title>Holgers Sang om hans Moder</title>
-   <firstline>Jeg sprang til Verden - jeg var ej sen -</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893, p. 14.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Holgers Sang om hans Moder</title>
+  <firstline>Jeg sprang til Verden - jeg var ej sen -</firstline>
+  <source pages="14">B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -199,18 +195,18 @@ Men kærligst favned mig dog hin Arm,
 En Krigsmand blev jeg, helt barsk og streng;
    Dog blev jeg om Hjertet blød,
 Hver Gang jeg skued en liden Dreng,
-   Som sprælled paa Moders Skød.   
+   Som sprælled paa Moders Skød.
 </poetry>
 </body>
 </text>
 
 <text id="ingemann1837ha2">
 <head>
-   <title>Holger Danskes Vugge</title>
-   <toctitle>Holger Danskes Vugge</toctitle>
-   <indextitle>Holger Danskes Vugge</indextitle>
-   <firstline>Ved Leire græsse nu Faar paa Vold</firstline>
-   <quality>korrektur1</quality>
+  <title>Holger Danskes Vugge</title>
+  <toctitle>Holger Danskes Vugge</toctitle>
+  <indextitle>Holger Danskes Vugge</indextitle>
+  <firstline>Ved Leire græsse nu Faar paa Vold</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -249,15 +245,15 @@ Og hvergang jeg hørte Skjoldets Klang
 
 <text id="ingemann2002011501">
 <head>
-   <title>Barndomsdrømme</title>
-   <toctitle>Barndomsdrømme</toctitle>
-   <indextitle>Barndomsdrømme</indextitle>
-   <firstline>Hvad Holger Danske hørte og saae</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</note>
-      <note type="credits">Bidrag fra Svend Andersen.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Barndomsdrømme</title>
+  <toctitle>Barndomsdrømme</toctitle>
+  <indextitle>Barndomsdrømme</indextitle>
+  <firstline>Hvad Holger Danske hørte og saae</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Andersen.</note>
+  </notes>
+  <source>B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</source>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -284,12 +280,10 @@ Til Liv blev de levende Drømme.
 
 <text id="ingemann2005051102">
 <head>
-   <title>Feerne ved Holgers Vugge</title>
-   <firstline>Seks Feer stod ved min Vugge og sang</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893, pp. 16-18.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Feerne ved Holgers Vugge</title>
+  <firstline>Seks Feer stod ved min Vugge og sang</firstline>
+  <source pages="16-18">B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -337,12 +331,10 @@ Hvad Feerne saaede med Sang i mit Bryst.
 
 <text id="ingemann2005051103">
 <head>
-   <title>Anelsen i Guder-Lunden</title>
-   <firstline>I Herthas susende Skove</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893, pp. 18-19.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Anelsen i Guder-Lunden</title>
+  <firstline>I Herthas susende Skove</firstline>
+  <source pages="18-19">B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -378,12 +370,10 @@ Dog dybest klang mig de Stemmer,
 
 <text id="ingemann2005051104">
 <head>
-   <title>Holgers Sang om Wittekind</title>
-   <firstline>I Trug paa Issefjordvoven</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893, pp. 19-21.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Holgers Sang om Wittekind</title>
+  <firstline>I Trug paa Issefjordvoven</firstline>
+  <source pages="19-21">B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -455,15 +445,15 @@ Men Dankongen trodsed den Kejser,
 
 <text id="ingemann2002011513">
 <head>
-   <title>Holgers Bortsendelse</title>
-   <toctitle>Holgers Bortsendelse</toctitle>
-   <indextitle>Holgers Bortsendelse</indextitle>
-   <firstline>Kong Gøttrik sad ene paa Leire Borg</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</note>
-      <note type="credits">Bidrag fra Svend Andersen.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Holgers Bortsendelse</title>
+  <toctitle>Holgers Bortsendelse</toctitle>
+  <indextitle>Holgers Bortsendelse</indextitle>
+  <firstline>Kong Gøttrik sad ene paa Leire Borg</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Andersen.</note>
+  </notes>
+  <source>B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</source>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -497,12 +487,10 @@ Og Havet ved Bøgenes Ø.
 
 <text id="ingemann2005051106">
 <head>
-   <title>Daaben i Rin</title>
-   <firstline>Der fløj gennem Verden en Tanke</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893, pp. 22-23.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Daaben i Rin</title>
+  <firstline>Der fløj gennem Verden en Tanke</firstline>
+  <source pages="22-23">B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -556,12 +544,10 @@ I Rinen sprang Holger Danske -
 
 <text id="ingemann2005051107">
 <head>
-   <title>Skriveren og Kejserens Datter</title>
-   <firstline>Jeg stod en Vinteraften i Frankernes Stad</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893, p. 23-25.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Skriveren og Kejserens Datter</title>
+  <firstline>Jeg stod en Vinteraften i Frankernes Stad</firstline>
+  <source pages="23-25">B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -621,22 +607,22 @@ Hele Verden saa <w>Eginhards</w> Lykke.
 
 <section level="1">
 <head>
-   <toctitle>II. Holgers Ungdom.</toctitle>
+  <toctitle>II. Holgers Ungdom.</toctitle>
 </head>
 <content>
 
 
 <text id="ingemann2002011516">
 <head>
-   <title>Holgers første Bedrift</title>
-   <toctitle>Holgers første Bedrift</toctitle>
-   <indextitle>Holgers første Bedrift</indextitle>
-   <firstline>Kong Gøttrik brød Tro og Love</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</note>
-      <note type="credits">Bidrag fra Svend Andersen.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Holgers første Bedrift</title>
+  <toctitle>Holgers første Bedrift</toctitle>
+  <indextitle>Holgers første Bedrift</indextitle>
+  <firstline>Kong Gøttrik brød Tro og Love</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Andersen.</note>
+  </notes>
+  <source>B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</source>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -705,12 +691,10 @@ Han tog Holger Danske i Favn.
 
 <text id="ingemann2005051105">
 <head>
-   <title>Holger Danskes Bro</title>
-   <firstline>Karl sejred ved Romas Porte</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893, p. 27.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Holger Danskes Bro</title>
+  <firstline>Karl sejred ved Romas Porte</firstline>
+  <source pages="27">B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -734,15 +718,15 @@ Den Vej til Sejer og Hæder
 
 <text id="ingemann2002011508">
 <head>
-   <title>Holger og den indiske  Fyrste</title>
-   <toctitle>Holger og den indiske  Fyrste</toctitle>
-   <indextitle>Holger og den indiske  Fyrste</indextitle>
-   <firstline>Jeg saae Fyrst Carvel ved Tiberens Rand</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</note>
-      <note type="credits">Bidrag fra Svend Andersen.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Holger og den indiske  Fyrste</title>
+  <toctitle>Holger og den indiske  Fyrste</toctitle>
+  <indextitle>Holger og den indiske  Fyrste</indextitle>
+  <firstline>Jeg saae Fyrst Carvel ved Tiberens Rand</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Andersen.</note>
+  </notes>
+  <source>B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</source>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -806,12 +790,10 @@ Han svømmed til - Christenleiren.
 
 <text id="ingemann2005051201">
 <head>
-   <title>Holger og Prinsesse Gloriant</title>
-   <firstline>Blandt Hedninger laa jeg i Bast og Baand</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893, pp. 29-31.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Holger og Prinsesse Gloriant</title>
+  <firstline>Blandt Hedninger laa jeg i Bast og Baand</firstline>
+  <source pages="29-31">B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -860,15 +842,15 @@ Men - aldrig var jeg i hedere Ild,
 
 <text id="ingemann2002011504">
 <head>
-   <title>Glæden i Fængslet</title>
-   <toctitle>Glæden i Fængslet</toctitle>
-   <indextitle>Glæden i Fængslet</indextitle>
-   <firstline>Sjæle-Gammen i min Trængsel</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</note>
-      <note type="credits">Bidrag fra Svend Andersen.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Glæden i Fængslet</title>
+  <toctitle>Glæden i Fængslet</toctitle>
+  <indextitle>Glæden i Fængslet</indextitle>
+  <firstline>Sjæle-Gammen i min Trængsel</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Andersen.</note>
+  </notes>
+  <source>B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</source>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -895,15 +877,15 @@ Fryd og Trængsel hos Veninden
 
 <text id="ingemann2002011517">
 <head>
-   <title>Holgers Liv i Fængslet</title>
-   <toctitle>Holgers Liv i Fængslet</toctitle>
-   <indextitle>Holgers Liv i Fængslet</indextitle>
-   <firstline>De Døgn, jeg sad i Fængsel, jeg giver ei bort</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</note>
-      <note type="credits">Bidrag fra Svend Andersen.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Holgers Liv i Fængslet</title>
+  <toctitle>Holgers Liv i Fængslet</toctitle>
+  <indextitle>Holgers Liv i Fængslet</indextitle>
+  <firstline>De Døgn, jeg sad i Fængsel, jeg giver ei bort</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Andersen.</note>
+  </notes>
+  <source>B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</source>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -937,11 +919,11 @@ Min Elskov var dog stum hos den Skjønne.
 
 <text id="ingemann1837ha4">
 <head>
-   <title>Det Skjønneste</title>
-   <toctitle>Det Skjønneste</toctitle>
-   <indextitle>Det Skjønneste</indextitle>
-   <firstline>Til Rosengaarden gik jeg i Jomfruens Baand</firstline>
-   <quality>korrektur1</quality>
+  <title>Det Skjønneste</title>
+  <toctitle>Det Skjønneste</toctitle>
+  <indextitle>Det Skjønneste</indextitle>
+  <firstline>Til Rosengaarden gik jeg i Jomfruens Baand</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -970,11 +952,11 @@ Meer skjønt dog var Jomfruens tindrende Blik,
 
 <text id="ingemann1837ha5">
 <head>
-   <title>Gloriants Priis</title>
-   <toctitle>Gloriants Priis</toctitle>
-   <indextitle>Gloriants Priis</indextitle>
-   <firstline>Haand! du deilige Haand, som leged paa Strænge!</firstline>
-   <quality>korrektur1</quality>
+  <title>Gloriants Priis</title>
+  <toctitle>Gloriants Priis</toctitle>
+  <indextitle>Gloriants Priis</indextitle>
+  <firstline>Haand! du deilige Haand, som leged paa Strænge!</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1013,15 +995,15 @@ Sjæl! du flyvende Sjæl! du kjærlige høie!
 
 <text id="ingemann2002011514">
 <head>
-   <title>Holgers Drøm i Fængslet</title>
-   <toctitle>Holgers Drøm i Fængslet</toctitle>
-   <indextitle>Holgers Drøm i Fængslet</indextitle>
-   <firstline>Ei Sol i Taarnet jeg skimted</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</note>
-      <note type="credits">Bidrag fra Svend Andersen.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Holgers Drøm i Fængslet</title>
+  <toctitle>Holgers Drøm i Fængslet</toctitle>
+  <indextitle>Holgers Drøm i Fængslet</indextitle>
+  <firstline>Ei Sol i Taarnet jeg skimted</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Andersen.</note>
+  </notes>
+  <source>B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</source>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -1060,16 +1042,16 @@ Jeg hørte mit danske Navn.
 
 <text id="ingemann2002011505">
 <head>
-   <title>Holger Danske og Burmand</title>
-   <toctitle>Holger Danske og Burmand</toctitle>
-   <indextitle>Holger Danske og Burmand</indextitle>
-   <firstline>Her klang til Danmark en Kæmpesang</firstline>
-   <notes>
-      <note>Se folkevisen <xref poem="folke2018040401"/>.</note>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</note>
-      <note type="credits">Bidrag fra Svend Andersen.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Holger Danske og Burmand</title>
+  <toctitle>Holger Danske og Burmand</toctitle>
+  <indextitle>Holger Danske og Burmand</indextitle>
+  <firstline>Her klang til Danmark en Kæmpesang</firstline>
+  <notes>
+    <note>Se folkevisen <xref poem="folke2018040401"/>.</note>
+    <note type="credits">Bidrag fra Svend Andersen.</note>
+  </notes>
+  <source>B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</source>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -1128,15 +1110,15 @@ Det Glavind var af de Danske.
 
 <text id="ingemann2002011511">
 <head>
-   <title>Holgers Besøg i Keiserleiren</title>
-   <toctitle>Holgers Besøg i Keiserleiren</toctitle>
-   <indextitle>Holgers Besøg i Keiserleiren</indextitle>
-   <firstline>Burmand laae paa Tiberøen</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</note>
-      <note type="credits">Bidrag fra Svend Andersen.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Holgers Besøg i Keiserleiren</title>
+  <toctitle>Holgers Besøg i Keiserleiren</toctitle>
+  <indextitle>Holgers Besøg i Keiserleiren</indextitle>
+  <firstline>Burmand laae paa Tiberøen</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Andersen.</note>
+  </notes>
+  <source>B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</source>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -1205,12 +1187,10 @@ Jeg kom med til Kroningsfest.
 
 <text id="ingemann2005051202">
 <head>
-   <title>Kroningsdagen</title>
-   <firstline>Der var Pragt i Pavestaden</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893, pp. 38-39.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Kroningsdagen</title>
+  <firstline>Der var Pragt i Pavestaden</firstline>
+  <source pages="38-39">B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1239,15 +1219,15 @@ Men blandt alle skønne smiled
 
 <text id="ingemann2002011502">
 <head>
-   <title>Brudeparret</title>
-   <toctitle>Brudeparret</toctitle>
-   <indextitle>Brudeparret</indextitle>
-   <firstline>Keiseren undte Fyrst Carvel det godt</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</note>
-      <note type="credits">Bidrag fra Svend Andersen.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Brudeparret</title>
+  <toctitle>Brudeparret</toctitle>
+  <indextitle>Brudeparret</indextitle>
+  <firstline>Keiseren undte Fyrst Carvel det godt</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Andersen.</note>
+  </notes>
+  <source>B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</source>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -1291,12 +1271,10 @@ Det mindes jeg alle Dage.
 
 <text id="ingemann2005051501">
 <head>
-   <title>Trylleslottet</title>
-   <firstline>Jeg stod i den venlige Sommerkvæld</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893, pp. 40-41.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Trylleslottet</title>
+  <firstline>Jeg stod i den venlige Sommerkvæld</firstline>
+  <source pages="40-41">B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1351,21 +1329,18 @@ Men herligt af Sjælens Dyb det oprandt,
 </content>
 </section>
 
-
 <section level="1">
 <head>
-   <toctitle>III. Heltelivet.</toctitle>
+  <toctitle>III. Heltelivet.</toctitle>
 </head>
 <content>
 
 <text id="ingemann2005051203">
 <head>
-   <title>Holger Danskes Vej</title>
-   <firstline>Jeg frit mig tumled i Verden om</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893, p. 42.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Holger Danskes Vej</title>
+  <firstline>Jeg frit mig tumled i Verden om</firstline>
+  <source pages="42">B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1394,15 +1369,15 @@ Jeg kom dog længst paa den <w>lige</w> Vej;
 
 <text id="ingemann2002011519">
 <head>
-   <title>Keiser Carl</title>
-   <toctitle>Keiser Carl</toctitle>
-   <indextitle>Keiser Carl</indextitle>
-   <firstline>Saa venlig en Drot jeg aldrig saae</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</note>
-      <note type="credits">Bidrag fra Svend Andersen.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Keiser Carl</title>
+  <toctitle>Keiser Carl</toctitle>
+  <indextitle>Keiser Carl</indextitle>
+  <firstline>Saa venlig en Drot jeg aldrig saae</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Andersen.</note>
+  </notes>
+  <source>B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</source>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -1441,12 +1416,10 @@ Mod Aanden, jeg saae i den Stores Øie.
 
 <text id="ingemann2005051601">
 <head>
-   <title>De tolv Jævninger</title>
-   <firstline>Tolv Riddere sad ved Kejserens Bord</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893, pp. 43-44.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>De tolv Jævninger</title>
+  <firstline>Tolv Riddere sad ved Kejserens Bord</firstline>
+  <source pages="43-44">B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1495,14 +1468,12 @@ Min Sjæl jo kommer Roland i Hu.
 
 <text id="ingemann2002092010">
 <head>
-   <title>Vaabenhvile</title>
-   <toctitle>Vaabenhvile</toctitle>
-   <indextitle>Vaabenhvile</indextitle>
-   <firstline>Mod Mænd var Holger lidt mut iblandt</firstline>
-   <notes>
-      <note>Efter B. S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Det Reitzelske Forlag, Kbh. 1893, s. 45.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Vaabenhvile</title>
+  <toctitle>Vaabenhvile</toctitle>
+  <indextitle>Vaabenhvile</indextitle>
+  <firstline>Mod Mænd var Holger lidt mut iblandt</firstline>
+  <source pages="45">B. S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Det Reitzelske Forlag, Kbh. 1893.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1531,12 +1502,10 @@ Ad Dværgenes Avindsblik vi lo
 
 <text id="ingemann2005051702">
 <head>
-   <title>Triumfdagen</title>
-   <firstline>Carolus bar Verdenskronen</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893, pp. 45-46.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Triumfdagen</title>
+  <firstline>Carolus bar Verdenskronen</firstline>
+  <source pages="45-46">B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1590,12 +1559,10 @@ I Knæ sank Tyskernes Kæmpe,
 
 <text id="ingemann2005051701">
 <head>
-   <title>Løftet i Lejren</title>
-   <firstline>Kejseren gav mig Borg og Len</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893, pp. 47-49.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Løftet i Lejren</title>
+  <firstline>Kejseren gav mig Borg og Len</firstline>
+  <source pages="47-49">B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1668,7 +1635,7 @@ Længe jeg husked den dyre Ed;
    Jeg kold hvert Saar lod brænde.
 Til sidst blev Holger Danske dog vred,
    Og brat havde Tvisten Ende.
-   
+
 Aldrig saa jeg en værre Dag:
    Mit Liv jeg vilde værne;
 Men aldrig slog jeg et værre Slag -
@@ -1679,12 +1646,10 @@ Men aldrig slog jeg et værre Slag -
 
 <text id="ingemann2005051603">
 <head>
-   <title>Holgers Anger</title>
-   <firstline>Tit jeg stod, hvor Kæmper blødte</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893, pp. 49-51.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Holgers Anger</title>
+  <firstline>Tit jeg stod, hvor Kæmper blødte</firstline>
+  <source pages="49-51">B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1694,7 +1659,7 @@ Brustne Øjnes Blik mig mødte -
    Let dog aanded Holgers Bryst.
 Tungt jeg drog fra Brystet Aanden,
    Med ung Carlots Lig ved Fod;
-Hvor mig Sværdet sank af Haanden, 
+Hvor mig Sværdet sank af Haanden,
    Brændte mig hint unge Blod.
 
 Dag blev Nat for Holgers Øje;
@@ -1729,12 +1694,10 @@ Døden saa jeg i dets Lue -
 
 <text id="ingemann2005051507">
 <head>
-   <title>Rolands Forbøn</title>
-   <firstline>Roland var Holger Danskes Ven</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893, pp. 50-51.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Rolands Forbøn</title>
+  <firstline>Roland var Holger Danskes Ven</firstline>
+  <source pages="50-51">B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1778,12 +1741,10 @@ Den var Dødsens, der nævned en Stund
 
 <text id="ingemann2005051602">
 <head>
-   <title>Holger i Hungerstaarnet</title>
-   <firstline>Jeg svelted i Taarnet: det skorted paa Brød</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893, pp. 51-52.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Holger i Hungerstaarnet</title>
+  <firstline>Jeg svelted i Taarnet: det skorted paa Brød</firstline>
+  <source pages="51-52">B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1836,12 +1797,10 @@ Om Sol og Maane spurgte jeg ikke.
 
 <text id="ingemann2005051801">
 <head>
-   <title>Den fangne Holger i Spanieland</title>
-   <firstline>I Modgang lo jeg vel mangen Gang</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893, pp. 52-54.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Den fangne Holger i Spanieland</title>
+  <firstline>I Modgang lo jeg vel mangen Gang</firstline>
+  <source pages="52-54">B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1915,12 +1874,10 @@ Fri gik jeg ud af den sprængte Mur;
 
 <text id="ingemann2005051508">
 <head>
-   <title>Kampen med Maurerne</title>
-   <firstline>Jeg red mellem Roland og Bispen med Lyst</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893, pp. 54-55.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Kampen med Maurerne</title>
+  <firstline>Jeg red mellem Roland og Bispen med Lyst</firstline>
+  <source pages="54-55">B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1959,12 +1916,10 @@ Hvor Maurerne peb, og hvor Frankerne sang.
 
 <text id="ingemann2005051802">
 <head>
-   <title>Sejersfesten i Zaragosa</title>
-   <firstline>Zaragoza saa jeg prange</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893, pp. 55-57.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Sejersfesten i Zaragosa</title>
+  <firstline>Zaragoza saa jeg prange</firstline>
+  <source pages="55-57">B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2008,20 +1963,20 @@ Aldrig glemmer jeg hin Gammen
    I de stolte Maurers Hal.
 Sidste Gang ved Fakkelflammen
 Saa mit Øje glad tilsammen
-   Dem, som faldt paa Ronceval.   
+   Dem, som faldt paa Ronceval.
 </poetry>
 </body>
 </text>
 
 <text id="ingemann2005051605">
 <head>
-   <title>Ronceval</title>
-   <firstline>Højt paa Pyrenæers Fjælde</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893, pp. 57-62.</note>
-      <note>Ronceval (eller Roncevaux) er Navnet paa en lille Dal i Pyrenæerne, nogle Mil Nord for Pamplona; den er bleven udødelig i Frankrigs Historie paa Grund af den frygtelige Ulykke, som fandt Sted dér den 15de August 778, da hele Bagtroppen af Karl den Stores Hær blev nedhugget af Baskerne efter et fortvivlet Forsvar. Blandt de faldne var Markgreven Roland, der snart efter blev besungen i talrige Ridderdigte som Frankrings Nationalhelt.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Ronceval</title>
+  <firstline>Højt paa Pyrenæers Fjælde</firstline>
+  <notes>
+    <note>Ronceval (eller Roncevaux) er Navnet paa en lille Dal i Pyrenæerne, nogle Mil Nord for Pamplona; den er bleven udødelig i Frankrigs Historie paa Grund af den frygtelige Ulykke, som fandt Sted dér den 15de August 778, da hele Bagtroppen af Karl den Stores Hær blev nedhugget af Baskerne efter et fortvivlet Forsvar. Blandt de faldne var Markgreven Roland, der snart efter blev besungen i talrige Ridderdigte som Frankrings Nationalhelt.</note>
+  </notes>
+  <source pages="57-62">B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2215,12 +2170,10 @@ De, som ej laa knust for Sværdet,
 
 <text id="ingemann2005051604">
 <head>
-   <title>Rolands Sværd</title>
-   <firstline>Hver Gang Dyrendal blev nævnet</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893, pp. 62-63.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Rolands Sværd</title>
+  <firstline>Hver Gang Dyrendal blev nævnet</firstline>
+  <source pages="62-63">B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2264,12 +2217,10 @@ Roland i hans Haand lod falde -
 
 <text id="ingemann2005051803">
 <head>
-   <title>Ærkebiskop Turpin</title>
-   <firstline>Vi sørged for de døde</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893, pp. 63-64.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Ærkebiskop Turpin</title>
+  <firstline>Vi sørged for de døde</firstline>
+  <source pages="63-64">B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2318,14 +2269,12 @@ Turpin gik stille til sin Grav med Krykke.
 
 <text id="ingemann2002092009">
 <head>
-   <title>De elleve Jævningers Jordefærd</title>
-   <toctitle>De elleve Jævningers Jordefærd</toctitle>
-   <indextitle>De elleve Jævningers Jordefærd</indextitle>
-   <firstline>Faner vifted over Skjolde</firstline>
-   <notes>
-      <note>Efter B. S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Det Reitzelske Forlag, Kbh. 1893, s. 65.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>De elleve Jævningers Jordefærd</title>
+  <toctitle>De elleve Jævningers Jordefærd</toctitle>
+  <indextitle>De elleve Jævningers Jordefærd</indextitle>
+  <firstline>Faner vifted over Skjolde</firstline>
+  <source pages="65">B. S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Det Reitzelske Forlag, Kbh. 1893.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2361,26 +2310,27 @@ Aldrig Verdens Hersker glemte
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
 
 <section level="1">
 <head>
-   <toctitle>IV. Holger i Norden og Østen</toctitle>
+  <toctitle>IV. Holger i Norden og Østen</toctitle>
 </head>
 <content>
 
 <text id="ingemann2002011518">
 <head>
-   <title>Holgers Orlov og Hjemkomst</title>
-   <toctitle>Holgers Orlov og Hjemkomst</toctitle>
-   <indextitle>Holgers Orlov og Hjemkomst</indextitle>
-   <firstline>Vi red over Bjerg til Keiserens Stad</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</note>
-      <note type="credits">Bidrag fra Svend Andersen.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Holgers Orlov og Hjemkomst</title>
+  <toctitle>Holgers Orlov og Hjemkomst</toctitle>
+  <indextitle>Holgers Orlov og Hjemkomst</indextitle>
+  <firstline>Vi red over Bjerg til Keiserens Stad</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Andersen.</note>
+  </notes>
+  <source>B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</source>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -2431,12 +2381,10 @@ Fra Danmark til Jorderigs Ende.
 
 <text id="ingemann2005051502">
 <head>
-   <title>Holger i Offerlunden</title>
-   <firstline>Jeg stod en Sommermorgen i Herthas grønne Lund</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893, pp. 67-68.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Holger i Offerlunden</title>
+  <firstline>Jeg stod en Sommermorgen i Herthas grønne Lund</firstline>
+  <source pages="67-68">B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2481,12 +2429,10 @@ Mit Korsbanner vajed i Lunden.
 
 <text id="ingemann2005051901">
 <head>
-   <title>Nattebesøget paa Kongsgaarden</title>
-   <firstline>Jeg stod paa Lejreborgen</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893, pp. 68-70.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Nattebesøget paa Kongsgaarden</title>
+  <firstline>Jeg stod paa Lejreborgen</firstline>
+  <source pages="68-70">B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2567,11 +2513,11 @@ Da fly'de ræd den anden -
 
 <text id="ingemann1837ha3">
 <head>
-   <title>Holger Danskes Mærke</title>
-   <toctitle>Holger Danskes Mærke</toctitle>
-   <indextitle>Holger Danskes Mærke</indextitle>
-   <firstline>I alle de Riger og Lande</firstline>
-   <quality>korrektur1</quality>
+  <title>Holger Danskes Mærke</title>
+  <toctitle>Holger Danskes Mærke</toctitle>
+  <indextitle>Holger Danskes Mærke</indextitle>
+  <firstline>I alle de Riger og Lande</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -2600,15 +2546,15 @@ Jeg veed, hans Aand er ei ægte -
 
 <text id="ingemann2002011512">
 <head>
-   <title>Holgers Bortreise</title>
-   <toctitle>Holgers Bortreise</toctitle>
-   <indextitle>Holgers Bortreise</indextitle>
-   <firstline>Min Sjæl sig tumled fornøiet</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</note>
-      <note type="credits">Bidrag fra Svend Andersen.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Holgers Bortreise</title>
+  <toctitle>Holgers Bortreise</toctitle>
+  <indextitle>Holgers Bortreise</indextitle>
+  <firstline>Min Sjæl sig tumled fornøiet</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Andersen.</note>
+  </notes>
+  <source>B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</source>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -2672,15 +2618,15 @@ Jeg seiled med Pilgrimsstav.
 
 <text id="ingemann2002011510">
 <head>
-   <title>Holger paa Valfartsskibet</title>
-   <toctitle>Holger paa Valfartsskibet</toctitle>
-   <indextitle>Holger paa Valfartsskibet</indextitle>
-   <firstline>I Mulm over Bølgernes Bjerge jeg foer</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</note>
-      <note type="credits">Bidrag fra Svend Andersen.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Holger paa Valfartsskibet</title>
+  <toctitle>Holger paa Valfartsskibet</toctitle>
+  <indextitle>Holger paa Valfartsskibet</indextitle>
+  <firstline>I Mulm over Bølgernes Bjerge jeg foer</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Andersen.</note>
+  </notes>
+  <source>B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</source>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -2719,11 +2665,11 @@ Fløi vor Sjæl med de susende Vinde.
 
 <text id="ingemann1837ha6">
 <head>
-   <title>Østerlide</title>
-   <toctitle>Østerlide</toctitle>
-   <indextitle>Østerlide</indextitle>
-   <firstline>Østerlide! Østerlide!</firstline>
-   <quality>korrektur1</quality>
+  <title>Østerlide</title>
+  <toctitle>Østerlide</toctitle>
+  <indextitle>Østerlide</indextitle>
+  <firstline>Østerlide! Østerlide!</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -2781,15 +2727,15 @@ Sang jeg høit paa Verdens Hav.
 
 <text id="ingemann2002011507">
 <head>
-   <title>Holger i det hellige Land</title>
-   <toctitle>Holger i det hellige Land</toctitle>
-   <indextitle>Holger i det hellige Land</indextitle>
-   <firstline>Jeg stod i de største Underes Land</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</note>
-      <note type="credits">Bidrag fra Svend Andersen.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Holger i det hellige Land</title>
+  <toctitle>Holger i det hellige Land</toctitle>
+  <indextitle>Holger i det hellige Land</indextitle>
+  <firstline>Jeg stod i de største Underes Land</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Andersen.</note>
+  </notes>
+  <source>B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</source>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -2828,14 +2774,12 @@ Jeg red mod Paradiishaven.
 
 <text id="ingemann2002092008">
 <head>
-   <title>Paradishaab</title>
-   <toctitle>Paradishaab</toctitle>
-   <indextitle>Paradishaab</indextitle>
-   <firstline>Det var mig en trøstig Tanke</firstline>
-   <notes>
-      <note>Efter B. S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Det Reitzelske Forlag, Kbh. 1893, s. 76.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Paradishaab</title>
+  <toctitle>Paradishaab</toctitle>
+  <indextitle>Paradishaab</indextitle>
+  <firstline>Det var mig en trøstig Tanke</firstline>
+  <source pages="76">B. S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Det Reitzelske Forlag, Kbh. 1893.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2864,15 +2808,15 @@ Jeg mente, Guds Haves Porte
 
 <text id="ingemann2002011520">
 <head>
-   <title>Reisen til Bamyan</title>
-   <toctitle>Reisen til Bamyan</toctitle>
-   <indextitle>Reisen til Bamyan</indextitle>
-   <firstline>Vi red mod Morgen, red mod Øst</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</note>
-      <note type="credits">Bidrag fra Svend Andersen.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Reisen til Bamyan</title>
+  <toctitle>Reisen til Bamyan</toctitle>
+  <indextitle>Reisen til Bamyan</indextitle>
+  <firstline>Vi red mod Morgen, red mod Øst</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Andersen.</note>
+  </notes>
+  <source>B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</source>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -2971,12 +2915,10 @@ End mindes jeg hin Stund med Lyst:
 
 <text id="ingemann2005051503">
 <head>
-   <title>Holger hos Fyrst Carvel</title>
-   <firstline>Jeg sad i Hedningsfyrstens Hal</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893, pp. 79-80.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Holger hos Fyrst Carvel</title>
+  <firstline>Jeg sad i Hedningsfyrstens Hal</firstline>
+  <source pages="79-80">B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3025,12 +2967,10 @@ De Sjæle, Holger elsked mest,
 
 <text id="ingemann2005051504">
 <head>
-   <title>Felttoget i Orienten</title>
-   <firstline>Før fulgte jeg Carolus ved Elben og ved Rin</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893, pp. 80-81.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Felttoget i Orienten</title>
+  <firstline>Før fulgte jeg Carolus ved Elben og ved Rin</firstline>
+  <source pages="80-81">B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3075,15 +3015,15 @@ Selv tog jeg kun Kransen, skøn Gloriant mig bandt.
 
 <text id="ingemann2002011521">
 <head>
-   <title>Seierskrandsen</title>
-   <toctitle>Seierskrandsen</toctitle>
-   <indextitle>Seierskrandsen</indextitle>
-   <firstline>Krands fra Orientens Skove!</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</note>
-      <note type="credits">Bidrag fra Svend Andersen.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Seierskrandsen</title>
+  <toctitle>Seierskrandsen</toctitle>
+  <indextitle>Seierskrandsen</indextitle>
+  <firstline>Krands fra Orientens Skove!</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Andersen.</note>
+  </notes>
+  <source>B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</source>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -3106,12 +3046,10 @@ Og mit Øie saae mod Ararat.
 
 <text id="ingemann2005051509">
 <head>
-   <title>Afskeden i Bamyan</title>
-   <firstline>Tre Dage var jeg atter i Bamyan Gæst</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893, p. 82-83.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Afskeden i Bamyan</title>
+  <firstline>Tre Dage var jeg atter i Bamyan Gæst</firstline>
+  <source pages="82-83">B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3159,21 +3097,21 @@ De Sjæle, jeg genfavner i Himmerig dog vist.
 
 <section level="1">
 <head>
-   <toctitle>V. Genoplivelsen</toctitle>
+  <toctitle>V. Genoplivelsen</toctitle>
 </head>
 <content>
 
 <text id="ingemann2002011515">
 <head>
-   <title>Holgers Farvel til hans Tid</title>
-   <toctitle>Holgers Farvel til hans Tid</toctitle>
-   <indextitle>Holgers Farvel til hans Tid</indextitle>
-   <firstline>Der klang et Ord fra Holgers Bryst</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</note>
-      <note type="credits">Bidrag fra Svend Andersen.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Holgers Farvel til hans Tid</title>
+  <toctitle>Holgers Farvel til hans Tid</toctitle>
+  <indextitle>Holgers Farvel til hans Tid</indextitle>
+  <firstline>Der klang et Ord fra Holgers Bryst</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Andersen.</note>
+  </notes>
+  <source>B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</source>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -3222,15 +3160,15 @@ Jeg kom en herlig Dag ihu.
 
 <text id="ingemann2001101101">
 <head>
-   <title>Holgers Sang om Livet</title>
-   <toctitle>Holgers Sang om Livet</toctitle>
-   <indextitle>Holgers Sang om Livet</indextitle>
-   <firstline>Jeg saae kun tilbage. Mig Livets Lyst bortklang</firstline>
-   <notes>
-      <note>Ranet fra Brian Bentsens <a href="http://http://users.cybercity.dk/~bcc25317/forside.htm">The Pierian Spring</a>.</note>
-      <note>Kilde er <i>1000 danske digte</i>, ved Thomas Bredsdorff &amp; Anne-Marie Mai, Rosinante 2000, side 565.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Holgers Sang om Livet</title>
+  <toctitle>Holgers Sang om Livet</toctitle>
+  <indextitle>Holgers Sang om Livet</indextitle>
+  <firstline>Jeg saae kun tilbage. Mig Livets Lyst bortklang</firstline>
+  <notes>
+    <note>Ranet fra Brian Bentsens <a href="http://http://users.cybercity.dk/~bcc25317/forside.htm">The Pierian Spring</a>.</note>
+  </notes>
+  <source pages="565"><i>1000 danske digte</i>, ved Thomas Bredsdorff &amp; Anne-Marie Mai, Rosinante 2000.</source>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3274,12 +3212,10 @@ Dog Livets Kilde springer, hvor evig den sprang.
 
 <text id="ingemann2005051902">
 <head>
-   <title>Det lukkede Land</title>
-   <firstline>Vi red i Landet, hvor Sol stod op</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893, pp. 85-86.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Det lukkede Land</title>
+  <firstline>Vi red i Landet, hvor Sol stod op</firstline>
+  <source pages="85-86">B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3333,12 +3269,10 @@ Jeg vaagned ene. Min Hingst laa død.
 
 <text id="ingemann2005052301">
 <head>
-   <title>Rejsen til Vidunderlandet</title>
-   <firstline>Jeg Kroner havde vundet, men gav dem bort igen</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893, pp. 87-90.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Rejsen til Vidunderlandet</title>
+  <firstline>Jeg Kroner havde vundet, men gav dem bort igen</firstline>
+  <source pages="87-90">B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3477,12 +3411,10 @@ Hvor Avalun opstiger af Verdensdybets Sø,
 
 <text id="ingemann2005051506">
 <head>
-   <title>Festen paa Avalun</title>
-   <firstline>I Sommernatsfest paa Morganas Ø</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893, pp. 91-92.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Festen paa Avalun</title>
+  <firstline>I Sommernatsfest paa Morganas Ø</firstline>
+  <source pages="91-92">B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3531,12 +3463,10 @@ Paa dansende Bølger sjunger med Lyst
 
 <text id="ingemann2005052302">
 <head>
-   <title>Alfepoesien</title>
-   <firstline>Oberon svang sig op paa mit Skød</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893, pp. 92-94.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Alfepoesien</title>
+  <firstline>Oberon svang sig op paa mit Skød</firstline>
+  <source pages="92-94">B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3599,12 +3529,10 @@ Den steg fra den skønneste skønnes Bryst -
 
 <text id="ingemann2005051903">
 <head>
-   <title>Alfespøgen</title>
-   <firstline>Dagenes rullende Strøm bortgik</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893, pp. 94-95.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Alfespøgen</title>
+  <firstline>Dagenes rullende Strøm bortgik</firstline>
+  <source pages="94-95">B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3662,12 +3590,10 @@ Hvert Lune blev fromt i Naturens Bryst;
 
 <text id="ingemann2005051505">
 <head>
-   <title>Hvilen paa Morgana</title>
-   <firstline>Sad jeg ved Morganas Side paa den underfulde Ø</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893, pp. 95-96.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Hvilen paa Morgana</title>
+  <firstline>Sad jeg ved Morganas Side paa den underfulde Ø</firstline>
+  <source pages="95-96">B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3699,12 +3625,10 @@ Som udfolder sig til Klarhed i mit Liv og i mit Folk.
 
 <text id="ingemann2005051904">
 <head>
-   <title>Holger ved Mindernes Kilde</title>
-   <firstline>Hvor Oberon lever, hin Hjerterigets Drot</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893, pp. 96-98.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Holger ved Mindernes Kilde</title>
+  <firstline>Hvor Oberon lever, hin Hjerterigets Drot</firstline>
+  <source pages="96-98">B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3712,7 +3636,7 @@ Hvor Oberon lever, hin Hjerterigets Drot,
    Og Titania, Synernes Dronning,
 Jeg mødtes paa Morganas vidunderlige Slot
    Med Arthur, hin herlige Konning.
-  
+
 Vi Daadskraften øved; vi red i mægtig Dyst.
    Hver Dag vandt vi Hæder og Kranse.
 Hver Nat der klinged Harper i Lunden med stor Lyst;
@@ -3763,13 +3687,13 @@ Ud skød jeg min Snække; jeg sejled bort igen -
 
 <text id="ingemann2002011506">
 <head>
-   <title>Holger Danskes Tilbagekomst</title>
-   <firstline>Jeg foer til Idræt; jeg foer til Strid</firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</note>
-      <note type="credits">Bidrag fra Svend Andersen.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Holger Danskes Tilbagekomst</title>
+  <firstline>Jeg foer til Idræt; jeg foer til Strid</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Andersen.</note>
+  </notes>
+  <source>B.S. Ingemann: <i>Holger Danske</i>, Svend Larsen (red.), Flensteds Forlag, 1945.</source>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -3854,23 +3778,23 @@ Paa Dannemarks gamle Dage.
 <!--
 <text id="ingemann2005051701">
 <head>
-   <title></title>
-   <toctitle></toctitle>
-   <indextitle></indextitle>
-   <firstline> </firstline>
-   <notes>
-      <note>Kilde er B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893, p.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title></title>
+  <toctitle></toctitle>
+  <indextitle></indextitle>
+  <firstline> </firstline>
+  <source>B.S. Ingemann: <i>Holger Danske</i>, Kristoffer Nyrop (red.), Dansklærerforeningen, Kbh., 1893, p.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
 </poetry>
 </body>
 </text>
+
 -->
 
 </content>
 </section>
+
 </workbody>
 </kalliopework>

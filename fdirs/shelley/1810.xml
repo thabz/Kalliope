@@ -1,33 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1810" author="shelley" status="incomplete" type="poetry">
 <workhead>
-   <title>Original Poetry by Victor and Cazire</title>
-   <year>1810</year>
-   <notes>
-      <note>Tilføjet af Henrik Nielsen.</note>
-      <note>Efter <i>The Complete Poetical Works of Percy Bysshe Shelley</i> ved Thomas Hutchinson, Oxford University Press, 1952.</note>
-   </notes>
-   <quality>kilde,side</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+  <title>Original Poetry by Victor and Cazire</title>
+  <year>1810</year>
+  <notes>
+    <note>Tilføjet af Henrik Nielsen.</note>
+  </notes>
+  <source><i>The Complete Poetical Works of Percy Bysshe Shelley</i> ved Thomas Hutchinson, Oxford University Press, 1952.</source>
+  <quality>kilde,side</quality>
 </workhead>
 <workbody>
 
 <text id="shelley2001080601">
 <head>
-   <title>Here I sit with my paper, my pen and my ink</title>
-   <subtitle>
-      <line>A Person complained that whenever he began to write,</line>
-      <line>he never could arrange his ideas in grammatical order.</line>
-      <line>Which occasion suggested the idea of the following lines:</line>
-   </subtitle>
-   <toctitle>I. Here I sit with my paper, my pen and my ink</toctitle>
-   <indextitle>Here I sit with my paper, my pen and my ink</indextitle>
-   <firstline>Here I sit with my paper, my pen and my ink</firstline>
-   <notes>
-      <note>s. 843-844</note>
-   </notes>
-   <quality>kilde,side</quality>
+  <title>Here I sit with my paper, my pen and my ink</title>
+  <subtitle>
+    <line>A Person complained that whenever he began to write,</line>
+    <line>he never could arrange his ideas in grammatical order.</line>
+    <line>Which occasion suggested the idea of the following lines:</line>
+  </subtitle>
+  <toctitle>I. Here I sit with my paper, my pen and my ink</toctitle>
+  <indextitle>Here I sit with my paper, my pen and my ink</indextitle>
+  <firstline>Here I sit with my paper, my pen and my ink</firstline>
+  <notes>
+    <note>s. 843-844</note>
+  </notes>
+  <quality>kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -115,14 +113,14 @@ So swift to the post now the letter shall fly.
 
 <text id="shelley2001080602">
 <head>
-   <title>To Miss - [Harriet Grove] From Miss - [Elizabeth Shelley]</title>
-   <toctitle>II. To Miss - [Harriet Grove] From Miss - [Elizabeth Shelley]</toctitle>
-   <indextitle>To Miss - [Harriet Grove] From Miss - [Elizabeth Shelley]</indextitle>
-   <firstline>For your letter, dear</firstline>
-   <notes>
-      <note>s. 844-</note>
-   </notes>
-   <quality>kilde,side</quality>
+  <title>To Miss - [Harriet Grove] From Miss - [Elizabeth Shelley]</title>
+  <toctitle>II. To Miss - [Harriet Grove] From Miss - [Elizabeth Shelley]</toctitle>
+  <indextitle>To Miss - [Harriet Grove] From Miss - [Elizabeth Shelley]</indextitle>
+  <firstline>For your letter, dear</firstline>
+  <notes>
+    <note>s. 844-</note>
+  </notes>
+  <quality>kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -199,5 +197,6 @@ Which brings this nonsensical rhyme to an end.
 </poetry>
 </body>
 </text>
+
 </workbody>
 </kalliopework>

@@ -1,24 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="andre" author="villon" status="incomplete" type="poetry">
 <workhead>
-   <title>Andre digte</title>
-   <year>?</year>
-   <quality>korrektur1</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+  <title>Andre digte</title>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
 <text id="villon2002021701">
 <head>
-   <title>Ballade des Dames du Temps Jadis</title>
-   <toctitle>Ballade des Dames du Temps Jadis</toctitle>
-   <indextitle>Ballade des Dames du Temps Jadis</indextitle>
-   <firstline>Dictes-moy où, n'en quel pays</firstline>
-   <notes>
-      <note type="credits">Bidrag fra Henrik Hjulgaard</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title>Ballade des Dames du Temps Jadis</title>
+  <toctitle>Ballade des Dames du Temps Jadis</toctitle>
+  <indextitle>Ballade des Dames du Temps Jadis</indextitle>
+  <firstline>Dictes-moy où, n'en quel pays</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Henrik Hjulgaard</note>
+  </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -61,9 +58,9 @@ Mais où sont les neiges d'antan!
 
 <text id="villon2017100701">
 <head>
-   <title>Ballade Villon</title>
-   <firstline>Je meurs de soif auprès de la fontaine</firstline>
-   <quality>korrektur1</quality>
+  <title>Ballade Villon</title>
+  <firstline>Je meurs de soif auprès de la fontaine</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -113,11 +110,11 @@ Bien recueilly, debouté de chascun.
 
 <text id="villon2020010401">
 <head>
-    <title>Le Petit Testament</title>
-    <firstline>Mil quatre cens cinquante six</firstline>
-    <notes>
-        <note>Skrevet 1456.</note>
-    </notes>
+  <title>Le Petit Testament</title>
+  <firstline>Mil quatre cens cinquante six</firstline>
+  <notes>
+    <note>Skrevet 1456.</note>
+  </notes>
 </head>
 <body>
 <poetry>
@@ -565,7 +562,6 @@ cy fine le testament Villon.
 </poetry>
 </body>
 </text>
-
 
 </workbody>
 </kalliopework>

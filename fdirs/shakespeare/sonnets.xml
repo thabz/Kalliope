@@ -1,33 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="sonnets" author="shakespeare" status="complete" type="poetry">
 <workhead>
-   <title>Shakespeare's Sonnets</title>
-   <year>1609</year>
-   <notes>
-      <note>Endnu ufærdig.</note>
-      <note>Kalliope bringer Shakespeares sonetter i to forskellige udgaver: under hver digttitel er først en version der nøje følger originalens stavemåde (moderniseret er kun typografiske særheder som langt s ( &#383; ) og ligaturer) og dernæst en moderniseret tekst følgende nutidig engelsk retskrivning; ude i højre side af skærmen kan nysgerrige også se en faksimilie af den pågældende sonet som den tager sig ud i originalen, <i>Shake-speares Sonnets</i> fra 1609. (forkortet <biblio>Q</biblio>)<br/>Den ofte ret vilkårlige tegnsætning er nænsomt og i stilhed blevet rettet lidt til, dog uden at nogen konsekvent modernisering er tilstræbt. Alle ændringer i tekstforlæggets ordlyd (emendationer) er omhyggeligt anført i de enkelte sonetters noter; f.eks. betyder "1 monuments] <biblio>Malone</biblio>; monument <biblio>Q</biblio>" ud for sonnet 55, at i den øverste teksts linie 1 hvor vi har "Monuments", der har <biblio>Q</biblio> "Monument", og at rettelsen skyldes Edmond Malone. - Alt disse noter kan med fordel ignoreres, de ødelægger læseoplevelsen og er kun medtaget for fuldstændighedens skyld.</note>
-   </notes>
-   <pictures>
-      <picture src="sonnets/sonnets-tit.jpg">Faksimile</picture>
-   </pictures>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+  <title>Shakespeare's Sonnets</title>
+  <year>1609</year>
+  <identifiers>
+    <wikidata>Q662550</wikidata>
+  </identifiers>
+  <notes>
+    <note>Endnu ufærdig.</note>
+    <note>Kalliope bringer Shakespeares sonetter i to forskellige udgaver: under hver digttitel er først en version der nøje følger originalens stavemåde (moderniseret er kun typografiske særheder som langt s ( &#383; ) og ligaturer) og dernæst en moderniseret tekst følgende nutidig engelsk retskrivning; ude i højre side af skærmen kan nysgerrige også se en faksimilie af den pågældende sonet som den tager sig ud i originalen, <i>Shake-speares Sonnets</i> fra 1609. (forkortet <biblio>Q</biblio>)<br/>Den ofte ret vilkårlige tegnsætning er nænsomt og i stilhed blevet rettet lidt til, dog uden at nogen konsekvent modernisering er tilstræbt. Alle ændringer i tekstforlæggets ordlyd (emendationer) er omhyggeligt anført i de enkelte sonetters noter; f.eks. betyder "1 monuments] <biblio>Malone</biblio>; monument <biblio>Q</biblio>" ud for sonnet 55, at i den øverste teksts linie 1 hvor vi har "Monuments", der har <biblio>Q</biblio> "Monument", og at rettelsen skyldes Edmond Malone. - Alt disse noter kan med fordel ignoreres, de ødelægger læseoplevelsen og er kun medtaget for fuldstændighedens skyld.</note>
+  </notes>
+  <pictures>
+    <picture src="sonnets/sonnets-tit.jpg">Faksimile</picture>
+  </pictures>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
 </workhead>
 <workbody>
 
 <text id="shakespeare2001060201" skip-index="true">
 <head>
-   <title>[Dedication]</title>
-   <toctitle>[Dedication]</toctitle>
-   <indextitle>[Dedication]</indextitle>
-   <notes>
-      <note>Denne sære dedikation, rimeligvis signeret af udgiveren Thomas Thorpe, forbliver et mysterium trods mange lærde og sindrige udredninger. Hvem er denne Mr. W.H.? Spidskandidaterne er William Herbert, third Earl of Pembroke og Henry Wriothesley, third Earl of Southampton.</note>
-   </notes>
-   <pictures>
-      <picture src="sonnets/sonnets-ded.jpg">Faksimile</picture>
-   </pictures>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <title>[Dedication]</title>
+  <toctitle>[Dedication]</toctitle>
+  <indextitle>[Dedication]</indextitle>
+  <notes>
+    <note>Denne sære dedikation, rimeligvis signeret af udgiveren Thomas Thorpe, forbliver et mysterium trods mange lærde og sindrige udredninger. Hvem er denne Mr. W.H.? Spidskandidaterne er William Herbert, third Earl of Pembroke og Henry Wriothesley, third Earl of Southampton.</note>
+  </notes>
+  <pictures>
+    <picture src="sonnets/sonnets-ded.jpg">Faksimile</picture>
+  </pictures>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
 </head>
 <body>
 <prose>
@@ -50,19 +51,19 @@ FORTH.</center>
 
 <text id="shakespeare0001">
 <head>
-   <title>1</title>
-   <toctitle><num>1</num>From fairest creatures we desire increase</toctitle>
-   <linktitle>Sonnet 1: From fairest creatures we desire increase</linktitle>
-   <indextitle>From fairest creatures we desire increase</indextitle>
-   <firstline>From fairest creatures we desire increase</firstline>
-   <notes>
-      <note>1] <biblio>Benson</biblio>; <sc>Shake-speares, / <i>sonnets.</i></sc> <biblio>Q</biblio></note>
-   </notes>
-   <pictures>
-      <picture src="sonnets/sonnet-001.jpg">Faksimile</picture>
-   </pictures>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>1</title>
+  <toctitle><num>1</num>From fairest creatures we desire increase</toctitle>
+  <linktitle>Sonnet 1: From fairest creatures we desire increase</linktitle>
+  <indextitle>From fairest creatures we desire increase</indextitle>
+  <firstline>From fairest creatures we desire increase</firstline>
+  <notes>
+    <note>1] <biblio>Benson</biblio>; <sc>Shake-speares, / <i>sonnets.</i></sc> <biblio>Q</biblio></note>
+  </notes>
+  <pictures>
+    <picture src="sonnets/sonnet-001.jpg">Faksimile</picture>
+  </pictures>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -103,21 +104,21 @@ And, tender churl, mak'st waste in niggarding:
 
 <text id="shakespeare0002">
 <head>
-   <title>2</title>
-   <toctitle><num>2</num>When fortie Winters shall beseige thy brow</toctitle>
-   <linktitle>Sonnet 2: When fortie Winters shall beseige thy brow</linktitle>
-   <indextitle>When fortie Winters shall beseige thy brow</indextitle>
-   <firstline>When fortie Winters shall beseige thy brow</firstline>
-   <notes>
-      <note>4 totter'd] <biblio>Q</biblio>; tatter'd <biblio>Gildon</biblio> - tottered <i>er en afvigende form af</i> tattered, <i>ikke en fejl.</i></note>
-      <note>Sonnet 2 kendes også fra manuskripter der af skriftkloge skønnes til ikke at være blot afledede af <biblio>Q</biblio> og derfor har selvstændig autoritet. Den her bragte tekst er taget fra manuskriptet kaldet "W" - almindeligt accepteret som den mest pålidelige version - undtagen titlen, som er lånt fra andre manuskripter.<br/>Spes Altera = det andet håb, <i>citerer Vergils Aeneide, XII, l. 168.</i><br/>2 that] y<sup>t</sup><br/>6 the] y<sup>e</sup></note>
-   </notes>
-   <pictures>
-      <picture src="sonnets/sonnet-002.jpg">Faksimile</picture>
-      <picture src="sonnets/sonnet-002b.jpg">Faksimile</picture>
-   </pictures>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>2</title>
+  <toctitle><num>2</num>When fortie Winters shall beseige thy brow</toctitle>
+  <linktitle>Sonnet 2: When fortie Winters shall beseige thy brow</linktitle>
+  <indextitle>When fortie Winters shall beseige thy brow</indextitle>
+  <firstline>When fortie Winters shall beseige thy brow</firstline>
+  <notes>
+    <note>4 totter'd] <biblio>Q</biblio>; tatter'd <biblio>Gildon</biblio> - tottered <i>er en afvigende form af</i> tattered, <i>ikke en fejl.</i></note>
+    <note>Sonnet 2 kendes også fra manuskripter der af skriftkloge skønnes til ikke at være blot afledede af <biblio>Q</biblio> og derfor har selvstændig autoritet. Den her bragte tekst er taget fra manuskriptet kaldet "W" - almindeligt accepteret som den mest pålidelige version - undtagen titlen, som er lånt fra andre manuskripter.<br/>Spes Altera = det andet håb, <i>citerer Vergils Aeneide, XII, l. 168.</i><br/>2 that] y<sup>t</sup><br/>6 the] y<sup>e</sup></note>
+  </notes>
+  <pictures>
+    <picture src="sonnets/sonnet-002.jpg">Faksimile</picture>
+    <picture src="sonnets/sonnet-002b.jpg">Faksimile</picture>
+  </pictures>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -177,16 +178,16 @@ Making his bewty by succession thine
 
 <text id="shakespeare0003">
 <head>
-   <title>3</title>
-   <toctitle><num>3</num>Looke in thy glasse and tell the face thou vewest</toctitle>
-   <linktitle>Sonnet 3: Looke in thy glasse and tell the face thou vewest</linktitle>
-   <indextitle>Looke in thy glasse and tell the face thou vewest</indextitle>
-   <firstline>Looke in thy glasse and tell the face thou vewest</firstline>
-   <pictures>
-      <picture src="sonnets/sonnet-003.jpg">Faksimile</picture>
-   </pictures>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>3</title>
+  <toctitle><num>3</num>Looke in thy glasse and tell the face thou vewest</toctitle>
+  <linktitle>Sonnet 3: Looke in thy glasse and tell the face thou vewest</linktitle>
+  <indextitle>Looke in thy glasse and tell the face thou vewest</indextitle>
+  <firstline>Looke in thy glasse and tell the face thou vewest</firstline>
+  <pictures>
+    <picture src="sonnets/sonnet-003.jpg">Faksimile</picture>
+  </pictures>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -227,16 +228,16 @@ Despite of wrinkles, this thy golden time.
 
 <text id="shakespeare0004">
 <head>
-   <title>4</title>
-   <toctitle><num>4</num>Vnthrifty louelinesse, why dost thou spend</toctitle>
-   <linktitle>Sonnet 4: Vnthrifty louelinesse, why dost thou spend</linktitle>
-   <indextitle>Vnthrifty louelinesse, why dost thou spend</indextitle>
-   <firstline>Vnthrifty louelinesse, why dost thou spend</firstline>
-   <pictures>
-      <picture src="sonnets/sonnet-004.jpg">Faksimile</picture>
-   </pictures>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>4</title>
+  <toctitle><num>4</num>Vnthrifty louelinesse, why dost thou spend</toctitle>
+  <linktitle>Sonnet 4: Vnthrifty louelinesse, why dost thou spend</linktitle>
+  <indextitle>Vnthrifty louelinesse, why dost thou spend</indextitle>
+  <firstline>Vnthrifty louelinesse, why dost thou spend</firstline>
+  <pictures>
+    <picture src="sonnets/sonnet-004.jpg">Faksimile</picture>
+  </pictures>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -277,17 +278,17 @@ What acceptable audit canst thou leave?
 
 <text id="shakespeare0005">
 <head>
-   <title>5</title>
-   <toctitle><num>5</num>Those howers that with gentle worke did frame</toctitle>
-   <linktitle>Sonnet 5: Those howers that with gentle worke did frame</linktitle>
-   <indextitle>Those howers that with gentle worke did frame</indextitle>
-   <firstline>Those howers that with gentle worke did frame</firstline>
-   <pictures>
-      <picture src="sonnets/sonnet-005.jpg">Faksimile</picture>
-      <picture src="sonnets/sonnet-005b.jpg">Faksimile</picture>
-   </pictures>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>5</title>
+  <toctitle><num>5</num>Those howers that with gentle worke did frame</toctitle>
+  <linktitle>Sonnet 5: Those howers that with gentle worke did frame</linktitle>
+  <indextitle>Those howers that with gentle worke did frame</indextitle>
+  <firstline>Those howers that with gentle worke did frame</firstline>
+  <pictures>
+    <picture src="sonnets/sonnet-005.jpg">Faksimile</picture>
+    <picture src="sonnets/sonnet-005b.jpg">Faksimile</picture>
+  </pictures>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -328,16 +329,16 @@ Nor it nor no remembrance what it was.
 
 <text id="shakespeare0006">
 <head>
-   <title>6</title>
-   <toctitle><num>6</num>Then let not winters wragged hand deface</toctitle>
-   <linktitle>Sonnet 6: Then let not winters wragged hand deface</linktitle>
-   <indextitle>Then let not winters wragged hand deface</indextitle>
-   <firstline>Then let not winters wragged hand deface</firstline>
-   <pictures>
-      <picture src="sonnets/sonnet-006.jpg">Faksimile</picture>
-   </pictures>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>6</title>
+  <toctitle><num>6</num>Then let not winters wragged hand deface</toctitle>
+  <linktitle>Sonnet 6: Then let not winters wragged hand deface</linktitle>
+  <indextitle>Then let not winters wragged hand deface</indextitle>
+  <firstline>Then let not winters wragged hand deface</firstline>
+  <pictures>
+    <picture src="sonnets/sonnet-006.jpg">Faksimile</picture>
+  </pictures>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -378,17 +379,17 @@ Leaving thee living in posterity?
 
 <text id="shakespeare0007">
 <head>
-   <title>7</title>
-   <toctitle><num>7</num>Loe in the Orient when the gracious light</toctitle>
-   <linktitle>Sonnet 7: Loe in the Orient when the gracious light</linktitle>
-   <indextitle>Loe in the Orient when the gracious light</indextitle>
-   <firstline>Loe in the Orient when the gracious light</firstline>
-   <pictures>
-      <picture src="sonnets/sonnet-007.jpg">Faksimile</picture>
-      <picture src="sonnets/sonnet-007b.jpg">Faksimile</picture>
-   </pictures>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>7</title>
+  <toctitle><num>7</num>Loe in the Orient when the gracious light</toctitle>
+  <linktitle>Sonnet 7: Loe in the Orient when the gracious light</linktitle>
+  <indextitle>Loe in the Orient when the gracious light</indextitle>
+  <firstline>Loe in the Orient when the gracious light</firstline>
+  <pictures>
+    <picture src="sonnets/sonnet-007.jpg">Faksimile</picture>
+    <picture src="sonnets/sonnet-007b.jpg">Faksimile</picture>
+  </pictures>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -429,19 +430,19 @@ From his low tract and look another way:
 
 <text id="shakespeare0008">
 <head>
-   <title>8</title>
-   <toctitle><num>8</num>Musick to heare, why hear'st thou musick sadly?</toctitle>
-   <linktitle>Sonnet 8: Musick to heare, why hear'st thou musick sadly?</linktitle>
-   <indextitle>Musick to heare, why hear'st thou musick sadly?</indextitle>
-   <firstline>Musick to heare, why hear'st thou musick sadly?</firstline>
-   <notes>
-      <note>Som appendix er tilføjet en version der sandsynligvis stammer fra et manuskript ældre end <biblio>Q</biblio> (og dets tekstforlæg).<br/>In laudem Music[a]e et opprobrium Contemptori[s] eiusdem <i>betyder omtrent</i> Til musikkens lovprisning og forhånelse af dens foragter.</note>
-   </notes>
-   <pictures>
-      <picture src="sonnets/sonnet-008.jpg">Faksimile</picture>
-   </pictures>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>8</title>
+  <toctitle><num>8</num>Musick to heare, why hear'st thou musick sadly?</toctitle>
+  <linktitle>Sonnet 8: Musick to heare, why hear'st thou musick sadly?</linktitle>
+  <indextitle>Musick to heare, why hear'st thou musick sadly?</indextitle>
+  <firstline>Musick to heare, why hear'st thou musick sadly?</firstline>
+  <notes>
+    <note>Som appendix er tilføjet en version der sandsynligvis stammer fra et manuskript ældre end <biblio>Q</biblio> (og dets tekstforlæg).<br/>In laudem Music[a]e et opprobrium Contemptori[s] eiusdem <i>betyder omtrent</i> Til musikkens lovprisning og forhånelse af dens foragter.</note>
+  </notes>
+  <pictures>
+    <picture src="sonnets/sonnet-008.jpg">Faksimile</picture>
+  </pictures>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -509,16 +510,16 @@ Which all in one, this single note dothe singe
 
 <text id="shakespeare0009">
 <head>
-   <title>9</title>
-   <toctitle><num>9</num>Is it for feare to wet a widdowes eye</toctitle>
-   <linktitle>Sonnet 9: Is it for feare to wet a widdowes eye</linktitle>
-   <indextitle>Is it for feare to wet a widdowes eye</indextitle>
-   <firstline>Is it for feare to wet a widdowes eye</firstline>
-   <pictures>
-      <picture src="sonnets/sonnet-009.jpg">Faksimile</picture>
-   </pictures>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>9</title>
+  <toctitle><num>9</num>Is it for feare to wet a widdowes eye</toctitle>
+  <linktitle>Sonnet 9: Is it for feare to wet a widdowes eye</linktitle>
+  <indextitle>Is it for feare to wet a widdowes eye</indextitle>
+  <firstline>Is it for feare to wet a widdowes eye</firstline>
+  <pictures>
+    <picture src="sonnets/sonnet-009.jpg">Faksimile</picture>
+  </pictures>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -559,16 +560,16 @@ And kept unused the user so destroys it:
 
 <text id="shakespeare0010">
 <head>
-   <title>10</title>
-   <toctitle><num>10</num>For shame deny that thou bear'st loue to any</toctitle>
-   <linktitle>Sonnet 10: For shame deny that thou bear'st loue to any</linktitle>
-   <indextitle>For shame deny that thou bear'st loue to any</indextitle>
-   <firstline>For shame deny that thou bear'st loue to any</firstline>
-   <pictures>
-      <picture src="sonnets/sonnet-010.jpg">Faksimile</picture>
-   </pictures>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>10</title>
+  <toctitle><num>10</num>For shame deny that thou bear'st loue to any</toctitle>
+  <linktitle>Sonnet 10: For shame deny that thou bear'st loue to any</linktitle>
+  <indextitle>For shame deny that thou bear'st loue to any</indextitle>
+  <firstline>For shame deny that thou bear'st loue to any</firstline>
+  <pictures>
+    <picture src="sonnets/sonnet-010.jpg">Faksimile</picture>
+  </pictures>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -609,16 +610,16 @@ Or to thyself at least kind-hearted prove,
 
 <text id="shakespeare0011">
 <head>
-   <title>11</title>
-   <toctitle><num>11</num>As fast as thou shalt wane, so fast thou grow'st</toctitle>
-   <linktitle>Sonnet 11: As fast as thou shalt wane, so fast thou grow'st</linktitle>
-   <indextitle>As fast as thou shalt wane, so fast thou grow'st</indextitle>
-   <firstline>As fast as thou shalt wane, so fast thou grow'st</firstline>
-   <pictures>
-      <picture src="sonnets/sonnet-011.jpg">Faksimile</picture>
-   </pictures>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>11</title>
+  <toctitle><num>11</num>As fast as thou shalt wane, so fast thou grow'st</toctitle>
+  <linktitle>Sonnet 11: As fast as thou shalt wane, so fast thou grow'st</linktitle>
+  <indextitle>As fast as thou shalt wane, so fast thou grow'st</indextitle>
+  <firstline>As fast as thou shalt wane, so fast thou grow'st</firstline>
+  <pictures>
+    <picture src="sonnets/sonnet-011.jpg">Faksimile</picture>
+  </pictures>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -659,17 +660,17 @@ Which bounteous gift thou shouldst in bounty cherish.
 
 <text id="shakespeare0012">
 <head>
-   <title>12</title>
-   <toctitle><num>12</num>When I doe count the clock that tels the time</toctitle>
-   <linktitle>Sonnet 12: When I doe count the clock that tels the time</linktitle>
-   <indextitle>When I doe count the clock that tels the time</indextitle>
-   <firstline>When I doe count the clock that tels the time</firstline>
-   <pictures>
-      <picture src="sonnets/sonnet-012.jpg">Faksimile</picture>
-      <picture src="sonnets/sonnet-012b.jpg">Faksimile</picture>
-   </pictures>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>12</title>
+  <toctitle><num>12</num>When I doe count the clock that tels the time</toctitle>
+  <linktitle>Sonnet 12: When I doe count the clock that tels the time</linktitle>
+  <indextitle>When I doe count the clock that tels the time</indextitle>
+  <firstline>When I doe count the clock that tels the time</firstline>
+  <pictures>
+    <picture src="sonnets/sonnet-012.jpg">Faksimile</picture>
+    <picture src="sonnets/sonnet-012b.jpg">Faksimile</picture>
+  </pictures>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -710,16 +711,16 @@ And die as fast as they see others grow,
 
 <text id="shakespeare0013">
 <head>
-   <title>13</title>
-   <toctitle><num>13</num>O that you were your selfe, but, loue, you are</toctitle>
-   <linktitle>Sonnet 13: O that you were your selfe, but, loue, you are</linktitle>
-   <indextitle>O that you were your selfe, but, loue, you are</indextitle>
-   <firstline>O that you were your selfe, but, loue, you are</firstline>
-   <pictures>
-      <picture src="sonnets/sonnet-013.jpg">Faksimile</picture>
-   </pictures>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>13</title>
+  <toctitle><num>13</num>O that you were your selfe, but, loue, you are</toctitle>
+  <linktitle>Sonnet 13: O that you were your selfe, but, loue, you are</linktitle>
+  <indextitle>O that you were your selfe, but, loue, you are</indextitle>
+  <firstline>O that you were your selfe, but, loue, you are</firstline>
+  <pictures>
+    <picture src="sonnets/sonnet-013.jpg">Faksimile</picture>
+  </pictures>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -760,17 +761,17 @@ And barren rage of death's eternal cold?
 
 <text id="shakespeare0014">
 <head>
-   <title>14</title>
-   <toctitle><num>14</num>Not from the stars do I my iudgement plucke</toctitle>
-   <linktitle>Sonnet 14: Not from the stars do I my iudgement plucke</linktitle>
-   <indextitle>Not from the stars do I my iudgement plucke</indextitle>
-   <firstline>Not from the stars do I my iudgement plucke</firstline>
-   <pictures>
-      <picture src="sonnets/sonnet-014.jpg">Faksimile</picture>
-      <picture src="sonnets/sonnet-014b.jpg">Faksimile</picture>
-   </pictures>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>14</title>
+  <toctitle><num>14</num>Not from the stars do I my iudgement plucke</toctitle>
+  <linktitle>Sonnet 14: Not from the stars do I my iudgement plucke</linktitle>
+  <indextitle>Not from the stars do I my iudgement plucke</indextitle>
+  <firstline>Not from the stars do I my iudgement plucke</firstline>
+  <pictures>
+    <picture src="sonnets/sonnet-014.jpg">Faksimile</picture>
+    <picture src="sonnets/sonnet-014b.jpg">Faksimile</picture>
+  </pictures>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -811,16 +812,16 @@ If from thyself to store thou wouldst convert:
 
 <text id="shakespeare0015">
 <head>
-   <title>15</title>
-   <toctitle><num>15</num>When I consider euery thing that growes</toctitle>
-   <linktitle>Sonnet 15: When I consider euery thing that growes</linktitle>
-   <indextitle>When I consider euery thing that growes</indextitle>
-   <firstline>When I consider euery thing that growes</firstline>
-   <pictures>
-      <picture src="sonnets/sonnet-015.jpg">Faksimile</picture>
-   </pictures>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>15</title>
+  <toctitle><num>15</num>When I consider euery thing that growes</toctitle>
+  <linktitle>Sonnet 15: When I consider euery thing that growes</linktitle>
+  <indextitle>When I consider euery thing that growes</indextitle>
+  <firstline>When I consider euery thing that growes</firstline>
+  <pictures>
+    <picture src="sonnets/sonnet-015.jpg">Faksimile</picture>
+  </pictures>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -861,16 +862,16 @@ To change your day of youth to sullied night;
 
 <text id="shakespeare0016">
 <head>
-   <title>16</title>
-   <toctitle><num>16</num>But wherefore do not you a mightier waie</toctitle>
-   <linktitle>Sonnet 16: But wherefore do not you a mightier waie</linktitle>
-   <indextitle>But wherefore do not you a mightier waie</indextitle>
-   <firstline>But wherefore do not you a mightier waie</firstline>
-   <pictures>
-      <picture src="sonnets/sonnet-016.jpg">Faksimile</picture>
-   </pictures>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>16</title>
+  <toctitle><num>16</num>But wherefore do not you a mightier waie</toctitle>
+  <linktitle>Sonnet 16: But wherefore do not you a mightier waie</linktitle>
+  <indextitle>But wherefore do not you a mightier waie</indextitle>
+  <firstline>But wherefore do not you a mightier waie</firstline>
+  <pictures>
+    <picture src="sonnets/sonnet-016.jpg">Faksimile</picture>
+  </pictures>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -911,17 +912,17 @@ Can make you live yourself in eyes of men:
 
 <text id="shakespeare0017">
 <head>
-   <title>17</title>
-   <toctitle><num>17</num>Who will beleeue my verse in time to come</toctitle>
-   <linktitle>Sonnet 17: Who will beleeue my verse in time to come</linktitle>
-   <indextitle>Who will beleeue my verse in time to come</indextitle>
-   <firstline>Who will beleeue my verse in time to come</firstline>
-   <pictures>
-      <picture src="sonnets/sonnet-017.jpg">Faksimile</picture>
-      <picture src="sonnets/sonnet-017b.jpg">Faksimile</picture>
-   </pictures>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>17</title>
+  <toctitle><num>17</num>Who will beleeue my verse in time to come</toctitle>
+  <linktitle>Sonnet 17: Who will beleeue my verse in time to come</linktitle>
+  <indextitle>Who will beleeue my verse in time to come</indextitle>
+  <firstline>Who will beleeue my verse in time to come</firstline>
+  <pictures>
+    <picture src="sonnets/sonnet-017.jpg">Faksimile</picture>
+    <picture src="sonnets/sonnet-017b.jpg">Faksimile</picture>
+  </pictures>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -962,16 +963,16 @@ And stretched metre of an antique song:
 
 <text id="shakespeare0018">
 <head>
-   <title>18</title>
-   <toctitle><num>18</num>Shall I compare thee to a Summers day?</toctitle>
-   <linktitle>Sonnet 18: Shall I compare thee to a Summers day?</linktitle>
-   <indextitle>Shall I compare thee to a Summers day?</indextitle>
-   <firstline>Shall I compare thee to a Summers day?</firstline>
-   <pictures>
-      <picture src="sonnets/sonnet-018.jpg">Faksimile</picture>
-   </pictures>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>18</title>
+  <toctitle><num>18</num>Shall I compare thee to a Summers day?</toctitle>
+  <linktitle>Sonnet 18: Shall I compare thee to a Summers day?</linktitle>
+  <indextitle>Shall I compare thee to a Summers day?</indextitle>
+  <firstline>Shall I compare thee to a Summers day?</firstline>
+  <pictures>
+    <picture src="sonnets/sonnet-018.jpg">Faksimile</picture>
+  </pictures>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1012,24 +1013,24 @@ When in eternal lines to time thou grow'st:
 
 <text id="shakespeare0019">
 <head>
-   <title>19</title>
-   <toctitle><num>19</num>Deuouring time, blunt thou the Lyons pawes</toctitle>
-   <linktitle>Sonnet 19: Deuouring time, blunt thou the Lyons pawes</linktitle>
-   <indextitle>Deuouring time, blunt thou the Lyons pawes</indextitle>
-   <firstline>Deuouring time, blunt thou the Lyons pawes</firstline>
-   <pictures>
-      <picture src="sonnets/sonnet-019.jpg">Faksimile</picture>
-      <picture src="sonnets/sonnet-019b.jpg">Faksimile</picture>
-   </pictures>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>19</title>
+  <toctitle><num>19</num>Deuouring time, blunt thou the Lyons pawes</toctitle>
+  <linktitle>Sonnet 19: Deuouring time, blunt thou the Lyons pawes</linktitle>
+  <indextitle>Deuouring time, blunt thou the Lyons pawes</indextitle>
+  <firstline>Deuouring time, blunt thou the Lyons pawes</firstline>
+  <pictures>
+    <picture src="sonnets/sonnet-019.jpg">Faksimile</picture>
+    <picture src="sonnets/sonnet-019b.jpg">Faksimile</picture>
+  </pictures>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
 Deuouring time, blunt thou the Lyons pawes,
 And make the earth deuoure her owne sweet brood;
 Plucke the keene teeth from the fierce Tygers yawes,
-And burne the long liu'd Ph&aelig;nix in her blood;
+And burne the long liu'd Phænix in her blood;
 Make glad and sorry seasons as thou fleet'st,<note>fleet'st] <biblio>Q</biblio>; fleets <biblio>Dyce</biblio></note>
 And do what ere thou wilt, swift-footed time,
 To the wide world and all her fading sweets:
@@ -1063,16 +1064,16 @@ For beauty's pattern to succeeding men.
 
 <text id="shakespeare0020">
 <head>
-   <title>20</title>
-   <toctitle><num>20</num>A womans face with natures owne hande painted</toctitle>
-   <linktitle>Sonnet 20: A womans face with natures owne hande painted</linktitle>
-   <indextitle>A womans face with natures owne hande painted</indextitle>
-   <firstline>A womans face with natures owne hande painted</firstline>
-   <pictures>
-      <picture src="sonnets/sonnet-020.jpg">Faksimile</picture>
-   </pictures>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>20</title>
+  <toctitle><num>20</num>A womans face with natures owne hande painted</toctitle>
+  <linktitle>Sonnet 20: A womans face with natures owne hande painted</linktitle>
+  <indextitle>A womans face with natures owne hande painted</indextitle>
+  <firstline>A womans face with natures owne hande painted</firstline>
+  <pictures>
+    <picture src="sonnets/sonnet-020.jpg">Faksimile</picture>
+  </pictures>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1113,16 +1114,16 @@ By adding one thing to my purpose nothing.
 
 <text id="shakespeare0021">
 <head>
-   <title>21</title>
-   <toctitle><num>21</num>So is it not with me as with that Muse</toctitle>
-   <linktitle>Sonnet 21: So is it not with me as with that Muse</linktitle>
-   <indextitle>So is it not with me as with that Muse</indextitle>
-   <firstline>So is it not with me as with that Muse</firstline>
-   <pictures>
-      <picture src="sonnets/sonnet-021.jpg">Faksimile</picture>
-   </pictures>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>21</title>
+  <toctitle><num>21</num>So is it not with me as with that Muse</toctitle>
+  <linktitle>Sonnet 21: So is it not with me as with that Muse</linktitle>
+  <indextitle>So is it not with me as with that Muse</indextitle>
+  <firstline>So is it not with me as with that Muse</firstline>
+  <pictures>
+    <picture src="sonnets/sonnet-021.jpg">Faksimile</picture>
+  </pictures>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1163,16 +1164,16 @@ As those gold candles fixed in heaven's air:
 
 <text id="shakespeare0022">
 <head>
-   <title>22</title>
-   <toctitle><num>22</num>My glasse shall not perswade me I am ould</toctitle>
-   <linktitle>Sonnet 22: My glasse shall not perswade me I am ould</linktitle>
-   <indextitle>My glasse shall not perswade me I am ould</indextitle>
-   <firstline>My glasse shall not perswade me I am ould</firstline>
-   <pictures>
-      <picture src="sonnets/sonnet-022.jpg">Faksimile</picture>
-   </pictures>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>22</title>
+  <toctitle><num>22</num>My glasse shall not perswade me I am ould</toctitle>
+  <linktitle>Sonnet 22: My glasse shall not perswade me I am ould</linktitle>
+  <indextitle>My glasse shall not perswade me I am ould</indextitle>
+  <firstline>My glasse shall not perswade me I am ould</firstline>
+  <pictures>
+    <picture src="sonnets/sonnet-022.jpg">Faksimile</picture>
+  </pictures>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1213,16 +1214,16 @@ As tender nurse her babe from faring ill:
 
 <text id="shakespeare0023">
 <head>
-   <title>23</title>
-   <toctitle><num>23</num>As an vnperfect actor on the stage</toctitle>
-   <linktitle>Sonnet 23: As an vnperfect actor on the stage</linktitle>
-   <indextitle>As an vnperfect actor on the stage</indextitle>
-   <firstline>As an vnperfect actor on the stage</firstline>
-   <pictures>
-      <picture src="sonnets/sonnet-023.jpg">Faksimile</picture>
-   </pictures>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>23</title>
+  <toctitle><num>23</num>As an vnperfect actor on the stage</toctitle>
+  <linktitle>Sonnet 23: As an vnperfect actor on the stage</linktitle>
+  <indextitle>As an vnperfect actor on the stage</indextitle>
+  <firstline>As an vnperfect actor on the stage</firstline>
+  <pictures>
+    <picture src="sonnets/sonnet-023.jpg">Faksimile</picture>
+  </pictures>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1263,17 +1264,17 @@ More than that tongue that more hath more expressed.
 
 <text id="shakespeare0024">
 <head>
-   <title>24</title>
-   <toctitle><num>24</num>Mine eye hath play'd the painter and hath stelld</toctitle>
-   <linktitle>Sonnet 24: Mine eye hath play'd the painter and hath stelld</linktitle>
-   <indextitle>Mine eye hath play'd the painter and hath stelld</indextitle>
-   <firstline>Mine eye hath play'd the painter and hath stelld</firstline>
-   <pictures>
-      <picture src="sonnets/sonnet-024.jpg">Faksimile</picture>
-      <picture src="sonnets/sonnet-024b.jpg">Faksimile</picture>
-   </pictures>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>24</title>
+  <toctitle><num>24</num>Mine eye hath play'd the painter and hath stelld</toctitle>
+  <linktitle>Sonnet 24: Mine eye hath play'd the painter and hath stelld</linktitle>
+  <indextitle>Mine eye hath play'd the painter and hath stelld</indextitle>
+  <firstline>Mine eye hath play'd the painter and hath stelld</firstline>
+  <pictures>
+    <picture src="sonnets/sonnet-024.jpg">Faksimile</picture>
+    <picture src="sonnets/sonnet-024b.jpg">Faksimile</picture>
+  </pictures>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1314,16 +1315,16 @@ Delights to peep, to gaze therein on thee;
 
 <text id="shakespeare0025">
 <head>
-   <title>25</title>
-   <toctitle><num>25</num>Let those who are in fauor with their stars</toctitle>
-   <linktitle>Sonnet 25: Let those who are in fauor with their stars</linktitle>
-   <indextitle>Let those who are in fauor with their stars</indextitle>
-   <firstline>Let those who are in fauor with their stars</firstline>
-   <pictures>
-      <picture src="sonnets/sonnet-025.jpg">Faksimile</picture>
-   </pictures>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>25</title>
+  <toctitle><num>25</num>Let those who are in fauor with their stars</toctitle>
+  <linktitle>Sonnet 25: Let those who are in fauor with their stars</linktitle>
+  <indextitle>Let those who are in fauor with their stars</indextitle>
+  <firstline>Let those who are in fauor with their stars</firstline>
+  <pictures>
+    <picture src="sonnets/sonnet-025.jpg">Faksimile</picture>
+  </pictures>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1364,17 +1365,17 @@ And all the rest forgot for which he toiled:
 
 <text id="shakespeare0026">
 <head>
-   <title>26</title>
-   <toctitle><num>26</num>Lord of my loue, to whome in vassalage</toctitle>
-   <linktitle>Sonnet 26: Lord of my loue, to whome in vassalage</linktitle>
-   <indextitle>Lord of my loue, to whome in vassalage</indextitle>
-   <firstline>Lord of my loue, to whome in vassalage</firstline>
-   <pictures>
-      <picture src="sonnets/sonnet-026.jpg">Faksimile</picture>
-      <picture src="sonnets/sonnet-026b.jpg">Faksimile</picture>
-   </pictures>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>26</title>
+  <toctitle><num>26</num>Lord of my loue, to whome in vassalage</toctitle>
+  <linktitle>Sonnet 26: Lord of my loue, to whome in vassalage</linktitle>
+  <indextitle>Lord of my loue, to whome in vassalage</indextitle>
+  <firstline>Lord of my loue, to whome in vassalage</firstline>
+  <pictures>
+    <picture src="sonnets/sonnet-026.jpg">Faksimile</picture>
+    <picture src="sonnets/sonnet-026b.jpg">Faksimile</picture>
+  </pictures>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1415,16 +1416,16 @@ To show me worthy of thy sweet respect;
 
 <text id="shakespeare0027">
 <head>
-   <title>27</title>
-   <toctitle><num>27</num>Weary with toyle, I hast me to my bed</toctitle>
-   <linktitle>Sonnet 27: Weary with toyle, I hast me to my bed</linktitle>
-   <indextitle>Weary with toyle, I hast me to my bed</indextitle>
-   <firstline>Weary with toyle, I hast me to my bed</firstline>
-   <pictures>
-      <picture src="sonnets/sonnet-027.jpg">Faksimile</picture>
-   </pictures>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>27</title>
+  <toctitle><num>27</num>Weary with toyle, I hast me to my bed</toctitle>
+  <linktitle>Sonnet 27: Weary with toyle, I hast me to my bed</linktitle>
+  <indextitle>Weary with toyle, I hast me to my bed</indextitle>
+  <firstline>Weary with toyle, I hast me to my bed</firstline>
+  <pictures>
+    <picture src="sonnets/sonnet-027.jpg">Faksimile</picture>
+  </pictures>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1465,16 +1466,16 @@ Makes black night beauteous, and her old face new.
 
 <text id="shakespeare0028">
 <head>
-   <title>28</title>
-   <toctitle><num>28</num>How can I then returne in happy plight</toctitle>
-   <linktitle>Sonnet 28: How can I then returne in happy plight</linktitle>
-   <indextitle>How can I then returne in happy plight</indextitle>
-   <firstline>How can I then returne in happy plight</firstline>
-   <pictures>
-      <picture src="sonnets/sonnet-028.jpg">Faksimile</picture>
-   </pictures>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>28</title>
+  <toctitle><num>28</num>How can I then returne in happy plight</toctitle>
+  <linktitle>Sonnet 28: How can I then returne in happy plight</linktitle>
+  <indextitle>How can I then returne in happy plight</indextitle>
+  <firstline>How can I then returne in happy plight</firstline>
+  <pictures>
+    <picture src="sonnets/sonnet-028.jpg">Faksimile</picture>
+  </pictures>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1515,17 +1516,17 @@ When sparkling stars twire not thou gild'st the even.
 
 <text id="shakespeare0029">
 <head>
-   <title>29</title>
-   <toctitle><num>29</num>When in disgrace with Fortune and mens eyes</toctitle>
-   <linktitle>Sonnet 29: When in disgrace with Fortune and mens eyes</linktitle>
-   <indextitle>When in disgrace with Fortune and mens eyes</indextitle>
-   <firstline>When in disgrace with Fortune and mens eyes</firstline>
-   <pictures>
-      <picture src="sonnets/sonnet-029.jpg">Faksimile</picture>
-      <picture src="sonnets/sonnet-029b.jpg">Faksimile</picture>
-   </pictures>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>29</title>
+  <toctitle><num>29</num>When in disgrace with Fortune and mens eyes</toctitle>
+  <linktitle>Sonnet 29: When in disgrace with Fortune and mens eyes</linktitle>
+  <indextitle>When in disgrace with Fortune and mens eyes</indextitle>
+  <firstline>When in disgrace with Fortune and mens eyes</firstline>
+  <pictures>
+    <picture src="sonnets/sonnet-029.jpg">Faksimile</picture>
+    <picture src="sonnets/sonnet-029b.jpg">Faksimile</picture>
+  </pictures>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1566,16 +1567,16 @@ From sullen earth, sings hymns at heaven's gate,
 
 <text id="shakespeare0030">
 <head>
-   <title>30</title>
-   <toctitle><num>30</num>When to the Sessions of sweet silent thought</toctitle>
-   <linktitle>Sonnet 30: When to the Sessions of sweet silent thought</linktitle>
-   <indextitle>When to the Sessions of sweet silent thought</indextitle>
-   <firstline>When to the Sessions of sweet silent thought</firstline>
-   <pictures>
-      <picture src="sonnets/sonnet-030.jpg">Faksimile</picture>
-   </pictures>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>30</title>
+  <toctitle><num>30</num>When to the Sessions of sweet silent thought</toctitle>
+  <linktitle>Sonnet 30: When to the Sessions of sweet silent thought</linktitle>
+  <indextitle>When to the Sessions of sweet silent thought</indextitle>
+  <firstline>When to the Sessions of sweet silent thought</firstline>
+  <pictures>
+    <picture src="sonnets/sonnet-030.jpg">Faksimile</picture>
+  </pictures>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1616,17 +1617,17 @@ Which I new pay as if not paid before.
 
 <text id="shakespeare0031">
 <head>
-   <title>31</title>
-   <toctitle><num>31</num>Thy bosome is indeared with all hearts</toctitle>
-   <linktitle>Sonnet 31: Thy bosome is indeared with all hearts</linktitle>
-   <indextitle>Thy bosome is indeared with all hearts</indextitle>
-   <firstline>Thy bosome is indeared with all hearts</firstline>
-   <pictures>
-      <picture src="sonnets/sonnet-031.jpg">Faksimile</picture>
-      <picture src="sonnets/sonnet-031b.jpg">Faksimile</picture>
-   </pictures>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>31</title>
+  <toctitle><num>31</num>Thy bosome is indeared with all hearts</toctitle>
+  <linktitle>Sonnet 31: Thy bosome is indeared with all hearts</linktitle>
+  <indextitle>Thy bosome is indeared with all hearts</indextitle>
+  <firstline>Thy bosome is indeared with all hearts</firstline>
+  <pictures>
+    <picture src="sonnets/sonnet-031.jpg">Faksimile</picture>
+    <picture src="sonnets/sonnet-031b.jpg">Faksimile</picture>
+  </pictures>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1667,16 +1668,16 @@ That due of many, now is thine alone.
 
 <text id="shakespeare0032">
 <head>
-   <title>32</title>
-   <toctitle><num>32</num>If thou suruiue my well contented daie</toctitle>
-   <linktitle>Sonnet 32: If thou suruiue my well contented daie</linktitle>
-   <indextitle>If thou suruiue my well contented daie</indextitle>
-   <firstline>If thou suruiue my well contented daie</firstline>
-   <pictures>
-      <picture src="sonnets/sonnet-032.jpg">Faksimile</picture>
-   </pictures>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>32</title>
+  <toctitle><num>32</num>If thou suruiue my well contented daie</toctitle>
+  <linktitle>Sonnet 32: If thou suruiue my well contented daie</linktitle>
+  <indextitle>If thou suruiue my well contented daie</indextitle>
+  <firstline>If thou suruiue my well contented daie</firstline>
+  <pictures>
+    <picture src="sonnets/sonnet-032.jpg">Faksimile</picture>
+  </pictures>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1717,16 +1718,16 @@ To march in ranks of better equipage:
 
 <text id="shakespeare0033">
 <head>
-   <title>33</title>
-   <toctitle><num>33</num>Full many a glorious morning haue I seene</toctitle>
-   <linktitle>Sonnet 33: Full many a glorious morning haue I seene</linktitle>
-   <indextitle>Full many a glorious morning haue I seene</indextitle>
-   <firstline>Full many a glorious morning haue I seene</firstline>
-   <pictures>
-      <picture src="sonnets/sonnet-033.jpg">Faksimile</picture>
-   </pictures>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>33</title>
+  <toctitle><num>33</num>Full many a glorious morning haue I seene</toctitle>
+  <linktitle>Sonnet 33: Full many a glorious morning haue I seene</linktitle>
+  <indextitle>Full many a glorious morning haue I seene</indextitle>
+  <firstline>Full many a glorious morning haue I seene</firstline>
+  <pictures>
+    <picture src="sonnets/sonnet-033.jpg">Faksimile</picture>
+  </pictures>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1767,16 +1768,16 @@ The region cloud hath masked him from me now.
 
 <text id="shakespeare0034">
 <head>
-   <title>34</title>
-   <toctitle><num>34</num>Why didst thou promise such a beautious day</toctitle>
-   <linktitle>Sonnet 34: Why didst thou promise such a beautious day</linktitle>
-   <indextitle>Why didst thou promise such a beautious day</indextitle>
-   <firstline>Why didst thou promise such a beautious day</firstline>
-   <pictures>
-      <picture src="sonnets/sonnet-034.jpg">Faksimile</picture>
-   </pictures>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>34</title>
+  <toctitle><num>34</num>Why didst thou promise such a beautious day</toctitle>
+  <linktitle>Sonnet 34: Why didst thou promise such a beautious day</linktitle>
+  <indextitle>Why didst thou promise such a beautious day</indextitle>
+  <firstline>Why didst thou promise such a beautious day</firstline>
+  <pictures>
+    <picture src="sonnets/sonnet-034.jpg">Faksimile</picture>
+  </pictures>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1819,19 +1820,19 @@ To him that bears the strong offence's cross.
 
 <text id="shakespeare0035">
 <head>
-   <title>35</title>
-   <toctitle><num>35</num>No more bee greeu'd at that which thou hast done</toctitle>
-   <linktitle>Sonnet 35: No more bee greeu'd at that which thou hast done</linktitle>
-   <indextitle>No more bee greeu'd at that which thou hast done</indextitle>
-   <firstline>No more bee greeu'd at that which thou hast done</firstline>
-   <notes>
-      <note>8 thy ... thy] their ... their - <i>en anden mulig rettelse</i>: these ... these</note>
-   </notes>
-   <pictures>
-      <picture src="sonnets/sonnet-035.jpg">Faksimile</picture>
-   </pictures>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>35</title>
+  <toctitle><num>35</num>No more bee greeu'd at that which thou hast done</toctitle>
+  <linktitle>Sonnet 35: No more bee greeu'd at that which thou hast done</linktitle>
+  <indextitle>No more bee greeu'd at that which thou hast done</indextitle>
+  <firstline>No more bee greeu'd at that which thou hast done</firstline>
+  <notes>
+    <note>8 thy ... thy] their ... their - <i>en anden mulig rettelse</i>: these ... these</note>
+  </notes>
+  <pictures>
+    <picture src="sonnets/sonnet-035.jpg">Faksimile</picture>
+  </pictures>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1872,16 +1873,16 @@ Such civil war is in my love and hate
 
 <text id="shakespeare0036">
 <head>
-   <title>36</title>
-   <toctitle><num>36</num>Let me confesse that we two must be twaine</toctitle>
-   <linktitle>Sonnet 36: Let me confesse that we two must be twaine</linktitle>
-   <indextitle>Let me confesse that we two must be twaine</indextitle>
-   <firstline>Let me confesse that we two must be twaine</firstline>
-   <pictures>
-      <picture src="sonnets/sonnet-036.jpg">Faksimile</picture>
-   </pictures>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>36</title>
+  <toctitle><num>36</num>Let me confesse that we two must be twaine</toctitle>
+  <linktitle>Sonnet 36: Let me confesse that we two must be twaine</linktitle>
+  <indextitle>Let me confesse that we two must be twaine</indextitle>
+  <firstline>Let me confesse that we two must be twaine</firstline>
+  <pictures>
+    <picture src="sonnets/sonnet-036.jpg">Faksimile</picture>
+  </pictures>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1922,16 +1923,16 @@ Unless thou take that honour from thy name:
 
 <text id="shakespeare0037">
 <head>
-   <title>37</title>
-   <toctitle><num>37</num>As a decrepit father takes delight</toctitle>
-   <linktitle>Sonnet 37: As a decrepit father takes delight</linktitle>
-   <indextitle>As a decrepit father takes delight</indextitle>
-   <firstline>As a decrepit father takes delight</firstline>
-   <notes>
-      <note>7 thy] their</note>
-   </notes>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>37</title>
+  <toctitle><num>37</num>As a decrepit father takes delight</toctitle>
+  <linktitle>Sonnet 37: As a decrepit father takes delight</linktitle>
+  <indextitle>As a decrepit father takes delight</indextitle>
+  <firstline>As a decrepit father takes delight</firstline>
+  <notes>
+    <note>7 thy] their</note>
+  </notes>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1972,13 +1973,13 @@ And by a part of all thy glory live:
 
 <text id="shakespeare0038">
 <head>
-   <title>38</title>
-   <toctitle><num>38</num>How can my Muse want subiect to inuent</toctitle>
-   <linktitle>Sonnet 38: How can my Muse want subiect to inuent</linktitle>
-   <indextitle>How can my Muse want subiect to inuent</indextitle>
-   <firstline>How can my Muse want subiect to inuent</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>38</title>
+  <toctitle><num>38</num>How can my Muse want subiect to inuent</toctitle>
+  <linktitle>Sonnet 38: How can my Muse want subiect to inuent</linktitle>
+  <indextitle>How can my Muse want subiect to inuent</indextitle>
+  <firstline>How can my Muse want subiect to inuent</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2019,16 +2020,16 @@ Eternal numbers to outlive long date.
 
 <text id="shakespeare0039">
 <head>
-   <title>39</title>
-   <toctitle><num>39</num>Oh how thy worth with manners may I singe</toctitle>
-   <linktitle>Sonnet 39: Oh how thy worth with manners may I singe</linktitle>
-   <indextitle>Oh how thy worth with manners may I singe</indextitle>
-   <firstline>Oh how thy worth with manners may I singe</firstline>
-   <notes>
-      <note>12 dost <i>skal måske være</i> doth</note>
-   </notes>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>39</title>
+  <toctitle><num>39</num>Oh how thy worth with manners may I singe</toctitle>
+  <linktitle>Sonnet 39: Oh how thy worth with manners may I singe</linktitle>
+  <indextitle>Oh how thy worth with manners may I singe</indextitle>
+  <firstline>Oh how thy worth with manners may I singe</firstline>
+  <notes>
+    <note>12 dost <i>skal måske være</i> doth</note>
+  </notes>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2069,16 +2070,16 @@ Which time and thoughts so sweetly dost deceive,
 
 <text id="shakespeare0040">
 <head>
-   <title>40</title>
-   <toctitle><num>40</num>Take all my loues, my loue, yea take them all</toctitle>
-   <linktitle>Sonnet 40: Take all my loues, my loue, yea take them all</linktitle>
-   <indextitle>Take all my loues, my loue, yea take them all</indextitle>
-   <firstline>Take all my loues, my loue, yea take them all</firstline>
-   <notes>
-      <note>7 thy selfe] this selfe</note>
-   </notes>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>40</title>
+  <toctitle><num>40</num>Take all my loues, my loue, yea take them all</toctitle>
+  <linktitle>Sonnet 40: Take all my loues, my loue, yea take them all</linktitle>
+  <indextitle>Take all my loues, my loue, yea take them all</indextitle>
+  <firstline>Take all my loues, my loue, yea take them all</firstline>
+  <notes>
+    <note>7 thy selfe] this selfe</note>
+  </notes>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2119,13 +2120,13 @@ To bear love's wrong than hate's known injury.
 
 <text id="shakespeare0041">
 <head>
-   <title>41</title>
-   <toctitle><num>41</num>Those pretty wrongs that liberty commits</toctitle>
-   <linktitle>Sonnet 41: Those pretty wrongs that liberty commits</linktitle>
-   <indextitle>Those pretty wrongs that liberty commits</indextitle>
-   <firstline>Those pretty wrongs that liberty commits</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>41</title>
+  <toctitle><num>41</num>Those pretty wrongs that liberty commits</toctitle>
+  <linktitle>Sonnet 41: Those pretty wrongs that liberty commits</linktitle>
+  <indextitle>Those pretty wrongs that liberty commits</indextitle>
+  <firstline>Those pretty wrongs that liberty commits</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2166,13 +2167,13 @@ Where thou art forced to break a twofold truth:
 
 <text id="shakespeare0042">
 <head>
-   <title>42</title>
-   <toctitle><num>42</num>That thou hast her it is not all my griefe</toctitle>
-   <linktitle>Sonnet 42: That thou hast her it is not all my griefe</linktitle>
-   <indextitle>That thou hast her it is not all my griefe</indextitle>
-   <firstline>That thou hast her it is not all my griefe</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>42</title>
+  <toctitle><num>42</num>That thou hast her it is not all my griefe</toctitle>
+  <linktitle>Sonnet 42: That thou hast her it is not all my griefe</linktitle>
+  <indextitle>That thou hast her it is not all my griefe</indextitle>
+  <firstline>That thou hast her it is not all my griefe</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2213,16 +2214,16 @@ And both for my sake lay on me this cross.
 
 <text id="shakespeare0043">
 <head>
-   <title>43</title>
-   <toctitle><num>43</num>When most I winke, then doe mine eyes best see</toctitle>
-   <linktitle>Sonnet 43: When most I winke, then doe mine eyes best see</linktitle>
-   <indextitle>When most I winke, then doe mine eyes best see</indextitle>
-   <firstline>When most I winke, then doe mine eyes best see</firstline>
-   <notes>
-      <note>11 thy] their</note>
-   </notes>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>43</title>
+  <toctitle><num>43</num>When most I winke, then doe mine eyes best see</toctitle>
+  <linktitle>Sonnet 43: When most I winke, then doe mine eyes best see</linktitle>
+  <indextitle>When most I winke, then doe mine eyes best see</indextitle>
+  <firstline>When most I winke, then doe mine eyes best see</firstline>
+  <notes>
+    <note>11 thy] their</note>
+  </notes>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2263,13 +2264,13 @@ Through heavy sleep on sightless eyes doth stay?
 
 <text id="shakespeare0044">
 <head>
-   <title>44</title>
-   <toctitle><num>44</num>If the dull substance of my flesh were thought</toctitle>
-   <linktitle>Sonnet 44: If the dull substance of my flesh were thought</linktitle>
-   <indextitle>If the dull substance of my flesh were thought</indextitle>
-   <firstline>If the dull substance of my flesh were thought</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>44</title>
+  <toctitle><num>44</num>If the dull substance of my flesh were thought</toctitle>
+  <linktitle>Sonnet 44: If the dull substance of my flesh were thought</linktitle>
+  <indextitle>If the dull substance of my flesh were thought</indextitle>
+  <firstline>If the dull substance of my flesh were thought</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2310,16 +2311,16 @@ I must attend time's leisure with my moan.
 
 <text id="shakespeare0045">
 <head>
-   <title>45</title>
-   <toctitle><num>45</num>The other two, slight ayre, and purging fire</toctitle>
-   <linktitle>Sonnet 45: The other two, slight ayre, and purging fire</linktitle>
-   <indextitle>The other two, slight ayre, and purging fire</indextitle>
-   <firstline>The other two, slight ayre, and purging fire</firstline>
-   <notes>
-      <note>12 thy] their</note>
-   </notes>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>45</title>
+  <toctitle><num>45</num>The other two, slight ayre, and purging fire</toctitle>
+  <linktitle>Sonnet 45: The other two, slight ayre, and purging fire</linktitle>
+  <indextitle>The other two, slight ayre, and purging fire</indextitle>
+  <firstline>The other two, slight ayre, and purging fire</firstline>
+  <notes>
+    <note>12 thy] their</note>
+  </notes>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2360,16 +2361,16 @@ Of thy fair health, recounting it to me.
 
 <text id="shakespeare0046">
 <head>
-   <title>46</title>
-   <toctitle><num>46</num>Mine eye and heart are at a mortall warre</toctitle>
-   <linktitle>Sonnet 46: Mine eye and heart are at a mortall warre</linktitle>
-   <indextitle>Mine eye and heart are at a mortall warre</indextitle>
-   <firstline>Mine eye and heart are at a mortall warre</firstline>
-   <notes>
-      <note>3,8,13,14 thy] their</note>
-   </notes>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>46</title>
+  <toctitle><num>46</num>Mine eye and heart are at a mortall warre</toctitle>
+  <linktitle>Sonnet 46: Mine eye and heart are at a mortall warre</linktitle>
+  <indextitle>Mine eye and heart are at a mortall warre</indextitle>
+  <firstline>Mine eye and heart are at a mortall warre</firstline>
+  <notes>
+    <note>3,8,13,14 thy] their</note>
+  </notes>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2410,16 +2411,16 @@ The clear eye's moiety, and the dear heart's part.
 
 <text id="shakespeare0047">
 <head>
-   <title>47</title>
-   <toctitle><num>47</num>Betwixt mine eye and heart a league is tooke</toctitle>
-   <linktitle>Sonnet 47: Betwixt mine eye and heart a league is tooke</linktitle>
-   <indextitle>Betwixt mine eye and heart a league is tooke</indextitle>
-   <firstline>Betwixt mine eye and heart a league is tooke</firstline>
-   <notes>
-      <note>10 Thy selfe ... art] Thy seife ... are<br/>11 noe] nor</note>
-   </notes>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>47</title>
+  <toctitle><num>47</num>Betwixt mine eye and heart a league is tooke</toctitle>
+  <linktitle>Sonnet 47: Betwixt mine eye and heart a league is tooke</linktitle>
+  <indextitle>Betwixt mine eye and heart a league is tooke</indextitle>
+  <firstline>Betwixt mine eye and heart a league is tooke</firstline>
+  <notes>
+    <note>10 Thy selfe ... art] Thy seife ... are<br/>11 noe] nor</note>
+  </notes>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2460,13 +2461,13 @@ And I am still with them and they with thee;
 
 <text id="shakespeare0048">
 <head>
-   <title>48</title>
-   <toctitle><num>48</num>How carefull was I when I tooke my way</toctitle>
-   <linktitle>Sonnet 48: How carefull was I when I tooke my way</linktitle>
-   <indextitle>How carefull was I when I tooke my way</indextitle>
-   <firstline>How carefull was I when I tooke my way</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>48</title>
+  <toctitle><num>48</num>How carefull was I when I tooke my way</toctitle>
+  <linktitle>Sonnet 48: How carefull was I when I tooke my way</linktitle>
+  <indextitle>How carefull was I when I tooke my way</indextitle>
+  <firstline>How carefull was I when I tooke my way</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2507,13 +2508,13 @@ From whence at pleasure thou mayst come and part;
 
 <text id="shakespeare0049">
 <head>
-   <title>49</title>
-   <toctitle><num>49</num>Against that time (if euer that time come)</toctitle>
-   <linktitle>Sonnet 49: Against that time (if euer that time come)</linktitle>
-   <indextitle>Against that time (if euer that time come)</indextitle>
-   <firstline>Against that time (if euer that time come)</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>49</title>
+  <toctitle><num>49</num>Against that time (if euer that time come)</toctitle>
+  <linktitle>Sonnet 49: Against that time (if euer that time come)</linktitle>
+  <indextitle>Against that time (if euer that time come)</indextitle>
+  <firstline>Against that time (if euer that time come)</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2554,16 +2555,16 @@ To guard the lawful reasons on thy part;
 
 <text id="shakespeare0050">
 <head>
-   <title>50</title>
-   <toctitle><num>50</num>How heauie doe I iourney on the way</toctitle>
-   <linktitle>Sonnet 50: How heauie doe I iourney on the way</linktitle>
-   <indextitle>How heauie doe I iourney on the way</indextitle>
-   <firstline>How heauie doe I iourney on the way</firstline>
-   <notes>
-      <note>6 duly <i>er muligvis en fejl for</i> dully, <i>hvis da ikke begge læsemåder er gyldige</i></note>
-   </notes>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>50</title>
+  <toctitle><num>50</num>How heauie doe I iourney on the way</toctitle>
+  <linktitle>Sonnet 50: How heauie doe I iourney on the way</linktitle>
+  <indextitle>How heauie doe I iourney on the way</indextitle>
+  <firstline>How heauie doe I iourney on the way</firstline>
+  <notes>
+    <note>6 duly <i>er muligvis en fejl for</i> dully, <i>hvis da ikke begge læsemåder er gyldige</i></note>
+  </notes>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2604,16 +2605,16 @@ More sharp to me than spurring to his side,
 
 <text id="shakespeare0051">
 <head>
-   <title>51</title>
-   <toctitle><num>51</num>Thus can my loue excuse the slow offence</toctitle>
-   <linktitle>Sonnet 51: Thus can my loue excuse the slow offence</linktitle>
-   <indextitle>Thus can my loue excuse the slow offence</indextitle>
-   <firstline>Thus can my love excuse the slow offence</firstline>
-   <notes>
-      <note>3 should] shoulld<br/>10 perfectst] perfects</note>
-   </notes>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>51</title>
+  <toctitle><num>51</num>Thus can my loue excuse the slow offence</toctitle>
+  <linktitle>Sonnet 51: Thus can my loue excuse the slow offence</linktitle>
+  <indextitle>Thus can my loue excuse the slow offence</indextitle>
+  <firstline>Thus can my love excuse the slow offence</firstline>
+  <notes>
+    <note>3 should] shoulld<br/>10 perfectst] perfects</note>
+  </notes>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2654,13 +2655,13 @@ But love, for love, thus shall excuse my jade:
 
 <text id="shakespeare0052">
 <head>
-   <title>52</title>
-   <toctitle><num>52</num>So am I as the rich whose blessed key</toctitle>
-   <linktitle>Sonnet 52: So am I as the rich whose blessed key</linktitle>
-   <indextitle>So am I as the rich whose blessed key</indextitle>
-   <firstline>So am I as the rich whose blessed key</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>52</title>
+  <toctitle><num>52</num>So am I as the rich whose blessed key</toctitle>
+  <linktitle>Sonnet 52: So am I as the rich whose blessed key</linktitle>
+  <indextitle>So am I as the rich whose blessed key</indextitle>
+  <firstline>So am I as the rich whose blessed key</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2701,13 +2702,13 @@ By new unfolding his imprisoned pride.
 
 <text id="shakespeare0053">
 <head>
-   <title>53</title>
-   <toctitle><num>53</num>What is your substance, whereof are you made</toctitle>
-   <linktitle>Sonnet 53: What is your substance, whereof are you made</linktitle>
-   <indextitle>What is your substance, whereof are you made</indextitle>
-   <firstline>What is your substance, whereof are you made</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>53</title>
+  <toctitle><num>53</num>What is your substance, whereof are you made</toctitle>
+  <linktitle>Sonnet 53: What is your substance, whereof are you made</linktitle>
+  <indextitle>What is your substance, whereof are you made</indextitle>
+  <firstline>What is your substance, whereof are you made</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2748,13 +2749,13 @@ And you in every blessed shape we know.
 
 <text id="shakespeare0054">
 <head>
-   <title>54</title>
-   <toctitle><num>54</num>Oh how much more doth beautie beautious seeme</toctitle>
-   <linktitle>Sonnet 54: Oh how much more doth beautie beautious seeme</linktitle>
-   <indextitle>Oh how much more doth beautie beautious seeme</indextitle>
-   <firstline>Oh how much more doth beautie beautious seeme</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>54</title>
+  <toctitle><num>54</num>Oh how much more doth beautie beautious seeme</toctitle>
+  <linktitle>Sonnet 54: Oh how much more doth beautie beautious seeme</linktitle>
+  <indextitle>Oh how much more doth beautie beautious seeme</indextitle>
+  <firstline>Oh how much more doth beautie beautious seeme</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2795,16 +2796,16 @@ Of their sweet deaths are sweetest odours made;
 
 <text id="shakespeare0055">
 <head>
-   <title>55</title>
-   <toctitle><num>55</num>Not marble, nor the guilded monuments</toctitle>
-   <linktitle>Sonnet 55: Not marble, nor the guilded monuments</linktitle>
-   <indextitle>Not marble, nor the guilded monuments</indextitle>
-   <firstline>Not marble, nor the guilded monuments</firstline>
-   <notes>
-      <note>1 monuments] <biblio>Malone</biblio>; monument <biblio>Q</biblio><br/>9 enmity] emnity</note>
-   </notes>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>55</title>
+  <toctitle><num>55</num>Not marble, nor the guilded monuments</toctitle>
+  <linktitle>Sonnet 55: Not marble, nor the guilded monuments</linktitle>
+  <indextitle>Not marble, nor the guilded monuments</indextitle>
+  <firstline>Not marble, nor the guilded monuments</firstline>
+  <notes>
+    <note>1 monuments] <biblio>Malone</biblio>; monument <biblio>Q</biblio><br/>9 enmity] emnity</note>
+  </notes>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2845,16 +2846,16 @@ That wear this world out to the ending doom.
 
 <text id="shakespeare0056">
 <head>
-   <title>56</title>
-   <toctitle><num>56</num>Sweet loue renew thy force, be it not said</toctitle>
-   <linktitle>Sonnet 56: Sweet loue renew thy force, be it not said</linktitle>
-   <indextitle>Sweet loue renew thy force, be it not said</indextitle>
-   <firstline>Sweet loue renew thy force, be it not said</firstline>
-   <notes>
-      <note>13 Or] As<br/>14 Sommers] Sômers</note>
-   </notes>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>56</title>
+  <toctitle><num>56</num>Sweet loue renew thy force, be it not said</toctitle>
+  <linktitle>Sonnet 56: Sweet loue renew thy force, be it not said</linktitle>
+  <indextitle>Sweet loue renew thy force, be it not said</indextitle>
+  <firstline>Sweet loue renew thy force, be it not said</firstline>
+  <notes>
+    <note>13 Or] As<br/>14 Sommers] Sômers</note>
+  </notes>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2895,13 +2896,13 @@ Return of love, more blessed may be the view;
 
 <text id="shakespeare0057">
 <head>
-   <title>57</title>
-   <toctitle><num>57</num>Being your slaue what should I doe but tend</toctitle>
-   <linktitle>Sonnet 57: Being your slaue what should I doe but tend</linktitle>
-   <indextitle>Being your slaue what should I doe but tend</indextitle>
-   <firstline>Being your slaue what should I doe but tend</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>57</title>
+  <toctitle><num>57</num>Being your slaue what should I doe but tend</toctitle>
+  <linktitle>Sonnet 57: Being your slaue what should I doe but tend</linktitle>
+  <indextitle>Being your slaue what should I doe but tend</indextitle>
+  <firstline>Being your slaue what should I doe but tend</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2942,13 +2943,13 @@ Save, where you are, how happy you make those.
 
 <text id="shakespeare0058">
 <head>
-   <title>58</title>
-   <toctitle><num>58</num>That God forbid, that made me first your slaue</toctitle>
-   <linktitle>Sonnet 58: That God forbid, that made me first your slaue</linktitle>
-   <indextitle>That God forbid, that made me first your slaue</indextitle>
-   <firstline>That God forbid, that made me first your slaue</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>58</title>
+  <toctitle><num>58</num>That God forbid, that made me first your slaue</toctitle>
+  <linktitle>Sonnet 58: That God forbid, that made me first your slaue</linktitle>
+  <indextitle>That God forbid, that made me first your slaue</indextitle>
+  <firstline>That God forbid, that made me first your slaue</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2989,16 +2990,16 @@ Yourself to pardon of self-doing crime.
 
 <text id="shakespeare0059">
 <head>
-   <title>59</title>
-   <toctitle><num>59</num>If there bee nothing new, but that which is</toctitle>
-   <linktitle>Sonnet 59: If there bee nothing new, but that which is</linktitle>
-   <indextitle>If there bee nothing new, but that which is</indextitle>
-   <firstline>If there bee nothing new, but that which is</firstline>
-   <notes>
-      <note>1 there] their</note>
-   </notes>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>59</title>
+  <toctitle><num>59</num>If there bee nothing new, but that which is</toctitle>
+  <linktitle>Sonnet 59: If there bee nothing new, but that which is</linktitle>
+  <indextitle>If there bee nothing new, but that which is</indextitle>
+  <firstline>If there bee nothing new, but that which is</firstline>
+  <notes>
+    <note>1 there] their</note>
+  </notes>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -3039,13 +3040,13 @@ Or whether revolution be the same.
 
 <text id="shakespeare0060">
 <head>
-   <title>60</title>
-   <toctitle><num>60</num>Like as the waues make towards the pibled shore</toctitle>
-   <linktitle>Sonnet 60: Like as the waues make towards the pibled shore</linktitle>
-   <indextitle>Like as the waues make towards the pibled shore</indextitle>
-   <firstline>Like as the waues make towards the pibled shore</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>60</title>
+  <toctitle><num>60</num>Like as the waues make towards the pibled shore</toctitle>
+  <linktitle>Sonnet 60: Like as the waues make towards the pibled shore</linktitle>
+  <indextitle>Like as the waues make towards the pibled shore</indextitle>
+  <firstline>Like as the waues make towards the pibled shore</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -3086,13 +3087,13 @@ And nothing stands but for his scythe to mow.
 
 <text id="shakespeare0061">
 <head>
-   <title>61</title>
-   <toctitle><num>61</num>Is it thy wil, thy Image should keepe open</toctitle>
-   <linktitle>Sonnet 61: Is it thy wil, thy Image should keepe open</linktitle>
-   <indextitle>Is it thy wil, thy Image should keepe open</indextitle>
-   <firstline>Is it thy wil, thy Image should keepe open</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>61</title>
+  <toctitle><num>61</num>Is it thy wil, thy Image should keepe open</toctitle>
+  <linktitle>Sonnet 61: Is it thy wil, thy Image should keepe open</linktitle>
+  <indextitle>Is it thy wil, thy Image should keepe open</indextitle>
+  <firstline>Is it thy wil, thy Image should keepe open</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -3133,16 +3134,16 @@ To play the watchman ever for thy sake.
 
 <text id="shakespeare0062">
 <head>
-   <title>62</title>
-   <toctitle><num>62</num>Sinne of selfe-loue possesseth al mine eie</toctitle>
-   <linktitle>Sonnet 62: Sinne of selfe-loue possesseth al mine eie</linktitle>
-   <indextitle>Sinne of selfe-loue possesseth al mine eie</indextitle>
-   <firstline>Sinne of selfe-loue possesseth al mine eie</firstline>
-   <notes>
-      <note>13 Tis] T'is</note>
-   </notes>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>62</title>
+  <toctitle><num>62</num>Sinne of selfe-loue possesseth al mine eie</toctitle>
+  <linktitle>Sonnet 62: Sinne of selfe-loue possesseth al mine eie</linktitle>
+  <indextitle>Sinne of selfe-loue possesseth al mine eie</indextitle>
+  <firstline>Sinne of selfe-loue possesseth al mine eie</firstline>
+  <notes>
+    <note>13 Tis] T'is</note>
+  </notes>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -3183,13 +3184,13 @@ Self, so self-loving, were iniquity;
 
 <text id="shakespeare0063">
 <head>
-   <title>63</title>
-   <toctitle><num>63</num>Against my loue shall be as I am now</toctitle>
-   <linktitle>Sonnet 63: Against my loue shall be as I am now</linktitle>
-   <indextitle>Against my loue shall be as I am now</indextitle>
-   <firstline>Against my loue shall be as I am now</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>63</title>
+  <toctitle><num>63</num>Against my loue shall be as I am now</toctitle>
+  <linktitle>Sonnet 63: Against my loue shall be as I am now</linktitle>
+  <indextitle>Against my loue shall be as I am now</indextitle>
+  <firstline>Against my loue shall be as I am now</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -3230,13 +3231,13 @@ My sweet love's beauty, though my lover's life.
 
 <text id="shakespeare0064">
 <head>
-   <title>64</title>
-   <toctitle><num>64</num>When I haue seene by times fell hand defaced</toctitle>
-   <linktitle>Sonnet 64: When I haue seene by times fell hand defaced</linktitle>
-   <indextitle>When I haue seene by times fell hand defaced</indextitle>
-   <firstline>When I haue seene by times fell hand defaced</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>64</title>
+  <toctitle><num>64</num>When I haue seene by times fell hand defaced</toctitle>
+  <linktitle>Sonnet 64: When I haue seene by times fell hand defaced</linktitle>
+  <indextitle>When I haue seene by times fell hand defaced</indextitle>
+  <firstline>When I haue seene by times fell hand defaced</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -3277,16 +3278,16 @@ That time will come and take my love away.
 
 <text id="shakespeare0065">
 <head>
-   <title>65</title>
-   <toctitle><num>65</num>Since brasse, nor stone, nor earth, nor boundlesse sea</toctitle>
-   <linktitle>Sonnet 65: Since brasse, nor stone, nor earth, nor boundlesse sea</linktitle>
-   <indextitle>Since brasse, nor stone, nor earth, nor boundlesse sea</indextitle>
-   <firstline>Since brasse, nor stone, nor earth, nor boundlesse sea</firstline>
-   <notes>
-      <note>12 ore] or; of</note>
-   </notes>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>65</title>
+  <toctitle><num>65</num>Since brasse, nor stone, nor earth, nor boundlesse sea</toctitle>
+  <linktitle>Sonnet 65: Since brasse, nor stone, nor earth, nor boundlesse sea</linktitle>
+  <indextitle>Since brasse, nor stone, nor earth, nor boundlesse sea</indextitle>
+  <firstline>Since brasse, nor stone, nor earth, nor boundlesse sea</firstline>
+  <notes>
+    <note>12 ore] or; of</note>
+  </notes>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -3327,13 +3328,13 @@ Or who his spoil o'er beauty can forbid?
 
 <text id="shakespeare0066">
 <head>
-   <title>66</title>
-   <toctitle><num>66</num>Tyr'd with all these for restfull death I cry</toctitle>
-   <linktitle>Sonnet 66: Tyr'd with all these for restfull death I cry</linktitle>
-   <indextitle>Tyr'd with all these for restfull death I cry</indextitle>
-   <firstline>Tyr'd with all these for restfull death I cry</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>66</title>
+  <toctitle><num>66</num>Tyr'd with all these for restfull death I cry</toctitle>
+  <linktitle>Sonnet 66: Tyr'd with all these for restfull death I cry</linktitle>
+  <indextitle>Tyr'd with all these for restfull death I cry</indextitle>
+  <firstline>Tyr'd with all these for restfull death I cry</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -3374,16 +3375,16 @@ And captive good attending captain ill.
 
 <text id="shakespeare0067">
 <head>
-   <title>67</title>
-   <toctitle><num>67</num>Ah, wherefore with infection should he liue</toctitle>
-   <linktitle>Sonnet 67: Ah, wherefore with infection should he liue</linktitle>
-   <indextitle>Ah, wherefore with infection should he liue</indextitle>
-   <firstline>Ah, wherefore with infection should he liue</firstline>
-   <notes>
-      <note>6 seeing] <biblio>Q</biblio>; seeming <biblio>Oxf</biblio> 12 proud] <biblio>Q</biblio>; prov'd <biblio>Capell</biblio>; 'prived <biblio>Kerrigan</biblio></note>
-   </notes>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>67</title>
+  <toctitle><num>67</num>Ah, wherefore with infection should he liue</toctitle>
+  <linktitle>Sonnet 67: Ah, wherefore with infection should he liue</linktitle>
+  <indextitle>Ah, wherefore with infection should he liue</indextitle>
+  <firstline>Ah, wherefore with infection should he liue</firstline>
+  <notes>
+    <note>6 seeing] <biblio>Q</biblio>; seeming <biblio>Oxf</biblio> 12 proud] <biblio>Q</biblio>; prov'd <biblio>Capell</biblio>; 'prived <biblio>Kerrigan</biblio></note>
+  </notes>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -3424,16 +3425,16 @@ And proud of many, lives upon his gains.
 
 <text id="shakespeare0068">
 <head>
-   <title>68</title>
-   <toctitle><num>68</num>Thus is his cheeke the map of daies out-worne</toctitle>
-   <linktitle>Sonnet 68: Thus is his cheeke the map of daies out-worne</linktitle>
-   <indextitle>Thus is his cheeke the map of daies out-worne</indextitle>
-   <firstline>Thus is his cheeke the map of daies out-worne</firstline>
-   <notes>
-      <note>2 dy'd] dy'ed<br/>7 second] scond</note>
-   </notes>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>68</title>
+  <toctitle><num>68</num>Thus is his cheeke the map of daies out-worne</toctitle>
+  <linktitle>Sonnet 68: Thus is his cheeke the map of daies out-worne</linktitle>
+  <indextitle>Thus is his cheeke the map of daies out-worne</indextitle>
+  <firstline>Thus is his cheeke the map of daies out-worne</firstline>
+  <notes>
+    <note>2 dy'd] dy'ed<br/>7 second] scond</note>
+  </notes>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -3474,16 +3475,16 @@ Robbing no old to dress his beauty new;
 
 <text id="shakespeare0069">
 <head>
-   <title>69</title>
-   <toctitle><num>69</num>Those parts of thee that the worlds eye doth view</toctitle>
-   <linktitle>Sonnet 69: Those parts of thee that the worlds eye doth view</linktitle>
-   <indextitle>Those parts of thee that the worlds eye doth view</indextitle>
-   <firstline>Those parts of thee that the worlds eye doth view</firstline>
-   <notes>
-      <note>3 due] end<br/>5 Thy] Their<br/>14 soyle] solye</note>
-   </notes>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>69</title>
+  <toctitle><num>69</num>Those parts of thee that the worlds eye doth view</toctitle>
+  <linktitle>Sonnet 69: Those parts of thee that the worlds eye doth view</linktitle>
+  <indextitle>Those parts of thee that the worlds eye doth view</indextitle>
+  <firstline>Those parts of thee that the worlds eye doth view</firstline>
+  <notes>
+    <note>3 due] end<br/>5 Thy] Their<br/>14 soyle] solye</note>
+  </notes>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -3524,16 +3525,16 @@ To thy fair flower add the rank smell of weeds.
 
 <text id="shakespeare0070">
 <head>
-   <title>70</title>
-   <toctitle><num>70</num>That thou are blam'd shall not be thy defect</toctitle>
-   <linktitle>Sonnet 70: That thou are blam'd shall not be thy defect</linktitle>
-   <indextitle>That thou are blam'd shall not be thy defect</indextitle>
-   <firstline>That thou are blam'd shall not be thy defect</firstline>
-   <notes>
-      <note>6 Thy] <biblio>Capell</biblio>; Their <biblio>Q</biblio></note>
-   </notes>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>70</title>
+  <toctitle><num>70</num>That thou are blam'd shall not be thy defect</toctitle>
+  <linktitle>Sonnet 70: That thou are blam'd shall not be thy defect</linktitle>
+  <indextitle>That thou are blam'd shall not be thy defect</indextitle>
+  <firstline>That thou are blam'd shall not be thy defect</firstline>
+  <notes>
+    <note>6 Thy] <biblio>Capell</biblio>; Their <biblio>Q</biblio></note>
+  </notes>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -3574,13 +3575,13 @@ To tie up envy, evermore enlarged.
 
 <text id="shakespeare0071">
 <head>
-   <title>71</title>
-   <toctitle><num>71</num>Noe Longer mourne for me when I am dead</toctitle>
-   <linktitle>Sonnet 71: Noe Longer mourne for me when I am dead</linktitle>
-   <indextitle>Noe Longer mourne for me when I am dead</indextitle>
-   <firstline>Noe Longer mourne for me when I am dead</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>71</title>
+  <toctitle><num>71</num>Noe Longer mourne for me when I am dead</toctitle>
+  <linktitle>Sonnet 71: Noe Longer mourne for me when I am dead</linktitle>
+  <indextitle>Noe Longer mourne for me when I am dead</indextitle>
+  <firstline>Noe Longer mourne for me when I am dead</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -3621,16 +3622,16 @@ But let your love even with my life decay;
 
 <text id="shakespeare0072">
 <head>
-   <title>72</title>
-   <toctitle><num>72</num>O Least the world should taske you to recite</toctitle>
-   <linktitle>Sonnet 72: O Least the world should taske you to recite</linktitle>
-   <indextitle>O Least the world should taske you to recite</indextitle>
-   <firstline>O Least the world should taske you to recite</firstline>
-   <notes>
-      <note>3 forget] for get</note>
-   </notes>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>72</title>
+  <toctitle><num>72</num>O Least the world should taske you to recite</toctitle>
+  <linktitle>Sonnet 72: O Least the world should taske you to recite</linktitle>
+  <indextitle>O Least the world should taske you to recite</indextitle>
+  <firstline>O Least the world should taske you to recite</firstline>
+  <notes>
+    <note>3 forget] for get</note>
+  </notes>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -3671,16 +3672,16 @@ And live no more to shame nor me, nor you.
 
 <text id="shakespeare0073">
 <head>
-   <title>73</title>
-   <toctitle><num>73</num>That time of yeeare thou maist in me behold</toctitle>
-   <linktitle>Sonnet 73: That time of yeeare thou maist in me behold</linktitle>
-   <indextitle>That time of yeeare thou maist in me behold</indextitle>
-   <firstline>That time of yeeare thou maist in me behold</firstline>
-   <notes>
-      <note>4 ruin'd] <biblio>Benson</biblio>; rn'wd <biblio>Q</biblio>; Barren'd of quires <biblio>Capell</biblio></note>
-   </notes>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>73</title>
+  <toctitle><num>73</num>That time of yeeare thou maist in me behold</toctitle>
+  <linktitle>Sonnet 73: That time of yeeare thou maist in me behold</linktitle>
+  <indextitle>That time of yeeare thou maist in me behold</indextitle>
+  <firstline>That time of yeeare thou maist in me behold</firstline>
+  <notes>
+    <note>4 ruin'd] <biblio>Benson</biblio>; rn'wd <biblio>Q</biblio>; Barren'd of quires <biblio>Capell</biblio></note>
+  </notes>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -3721,19 +3722,19 @@ Consumed with that which it was nourished by.
 
 <text id="shakespeare0074">
 <head>
-   <title>74</title>
-   <toctitle><num>74</num>But be contented when that fell arest</toctitle>
-   <linktitle>Sonnet 74: But be contented when that fell arest</linktitle>
-   <indextitle>But be contented when that fell arest</indextitle>
-   <firstline>But be contented when that fell arest</firstline>
-   <!--
-   <pictures>
-      <picture src="sonnets/sonnet-074.jpg">Faksimile</picture>
-      <picture src="sonnets/sonnet-074b.jpg">Faksimile</picture>
-   </pictures>
-   -->
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>74</title>
+  <toctitle><num>74</num>But be contented when that fell arest</toctitle>
+  <linktitle>Sonnet 74: But be contented when that fell arest</linktitle>
+  <indextitle>But be contented when that fell arest</indextitle>
+  <firstline>But be contented when that fell arest</firstline>
+  <!--
+  <pictures>
+    <picture src="sonnets/sonnet-074.jpg">Faksimile</picture>
+    <picture src="sonnets/sonnet-074b.jpg">Faksimile</picture>
+  </pictures>
+  -->
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -3774,13 +3775,13 @@ Too base of thee to be remembered.
 
 <text id="shakespeare0075">
 <head>
-   <title>75</title>
-   <toctitle><num>75</num>So are you to my thoughts as food to life</toctitle>
-   <linktitle>Sonnet 75: So are you to my thoughts as food to life</linktitle>
-   <indextitle>So are you to my thoughts as food to life</indextitle>
-   <firstline>So are you to my thoughts as food to life</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>75</title>
+  <toctitle><num>75</num>So are you to my thoughts as food to life</toctitle>
+  <linktitle>Sonnet 75: So are you to my thoughts as food to life</linktitle>
+  <indextitle>So are you to my thoughts as food to life</indextitle>
+  <firstline>So are you to my thoughts as food to life</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -3821,13 +3822,13 @@ Save what is had, or must from you be took.
 
 <text id="shakespeare0076">
 <head>
-   <title>76</title>
-   <toctitle><num>76</num>Why is my verse so barren of new pride</toctitle>
-   <linktitle>Sonnet 76: Why is my verse so barren of new pride</linktitle>
-   <indextitle>Why is my verse so barren of new pride</indextitle>
-   <firstline>Why is my verse so barren of new pride</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>76</title>
+  <toctitle><num>76</num>Why is my verse so barren of new pride</toctitle>
+  <linktitle>Sonnet 76: Why is my verse so barren of new pride</linktitle>
+  <indextitle>Why is my verse so barren of new pride</indextitle>
+  <firstline>Why is my verse so barren of new pride</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -3868,13 +3869,13 @@ Spending again what is already spent:
 
 <text id="shakespeare0077">
 <head>
-   <title>77</title>
-   <toctitle><num>77</num>Thy glasse will shew thee how thy beauties were</toctitle>
-   <linktitle>Sonnet 77: Thy glasse will shew thee how thy beauties were</linktitle>
-   <indextitle>Thy glasse will shew thee how thy beauties were</indextitle>
-   <firstline>Thy glasse will shew thee how thy beauties were</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>77</title>
+  <toctitle><num>77</num>Thy glasse will shew thee how thy beauties were</toctitle>
+  <linktitle>Sonnet 77: Thy glasse will shew thee how thy beauties were</linktitle>
+  <indextitle>Thy glasse will shew thee how thy beauties were</indextitle>
+  <firstline>Thy glasse will shew thee how thy beauties were</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -3915,18 +3916,18 @@ To take a new acquaintance of thy mind.
 
 <text id="shakespeare0078">
 <head>
-   <title>78</title>
-   <toctitle><num>78</num>So oft haue I inuok'd thee for my Muse</toctitle>
-   <linktitle>Sonnet 78: So oft haue I inuok'd thee for my Muse</linktitle>
-   <indextitle>So oft haue I inuok'd thee for my Muse</indextitle>
-   <firstline>So oft haue I inuok'd thee for my Muse</firstline>
-   <!--
-   <pictures>
-      <picture src="sonnets/sonnet-078.jpg">Faksimile</picture>
-   </pictures>
-   -->
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>78</title>
+  <toctitle><num>78</num>So oft haue I inuok'd thee for my Muse</toctitle>
+  <linktitle>Sonnet 78: So oft haue I inuok'd thee for my Muse</linktitle>
+  <indextitle>So oft haue I inuok'd thee for my Muse</indextitle>
+  <firstline>So oft haue I inuok'd thee for my Muse</firstline>
+  <!--
+  <pictures>
+    <picture src="sonnets/sonnet-078.jpg">Faksimile</picture>
+  </pictures>
+  -->
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -3967,13 +3968,13 @@ And arts with thy sweet graces graced be.
 
 <text id="shakespeare0079">
 <head>
-   <title>79</title>
-   <toctitle><num>79</num>Whilst I alone did call vpon thy ayde</toctitle>
-   <linktitle>Sonnet 79: Whilst I alone did call vpon thy ayde</linktitle>
-   <indextitle>Whilst I alone did call vpon thy ayde</indextitle>
-   <firstline>Whilst I alone did call vpon thy ayde</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>79</title>
+  <toctitle><num>79</num>Whilst I alone did call vpon thy ayde</toctitle>
+  <linktitle>Sonnet 79: Whilst I alone did call vpon thy ayde</linktitle>
+  <indextitle>Whilst I alone did call vpon thy ayde</indextitle>
+  <firstline>Whilst I alone did call vpon thy ayde</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -4014,13 +4015,13 @@ No praise to thee, but what in thee doth live.
 
 <text id="shakespeare0080">
 <head>
-   <title>80</title>
-   <toctitle><num>80</num>O how I faint when I of you do write</toctitle>
-   <linktitle>Sonnet 80: O how I faint when I of you do write</linktitle>
-   <indextitle>O how I faint when I of you do write</indextitle>
-   <firstline>O how I faint when I of you do write</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>80</title>
+  <toctitle><num>80</num>O how I faint when I of you do write</toctitle>
+  <linktitle>Sonnet 80: O how I faint when I of you do write</linktitle>
+  <indextitle>O how I faint when I of you do write</indextitle>
+  <firstline>O how I faint when I of you do write</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -4061,13 +4062,13 @@ He of tall building, and of goodly pride.
 
 <text id="shakespeare0081">
 <head>
-   <title>81</title>
-   <toctitle><num>81</num>Or I shall live, your epitaph to make</toctitle>
-   <linktitle>Sonnet 81: Or I shall live, your epitaph to make</linktitle>
-   <indextitle>Or I shall live, your epitaph to make</indextitle>
-   <firstline>Or I shall live, your epitaph to make</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>81</title>
+  <toctitle><num>81</num>Or I shall live, your epitaph to make</toctitle>
+  <linktitle>Sonnet 81: Or I shall live, your epitaph to make</linktitle>
+  <indextitle>Or I shall live, your epitaph to make</indextitle>
+  <firstline>Or I shall live, your epitaph to make</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -4093,13 +4094,13 @@ When all the breathers of this world are dead.
 
 <text id="shakespeare0082">
 <head>
-   <title>82</title>
-   <toctitle><num>82</num>I grant thou wert not married to my Muse</toctitle>
-   <linktitle>Sonnet 82: I grant thou wert not married to my Muse</linktitle>
-   <indextitle>I grant thou wert not married to my Muse</indextitle>
-   <firstline>I grant thou wert not married to my Muse</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>82</title>
+  <toctitle><num>82</num>I grant thou wert not married to my Muse</toctitle>
+  <linktitle>Sonnet 82: I grant thou wert not married to my Muse</linktitle>
+  <indextitle>I grant thou wert not married to my Muse</indextitle>
+  <firstline>I grant thou wert not married to my Muse</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -4125,13 +4126,13 @@ In true plain words, by thy true-telling friend;
 
 <text id="shakespeare0083">
 <head>
-   <title>83</title>
-   <toctitle><num>83</num>I never saw that you did painting need</toctitle>
-   <linktitle>Sonnet 83: I never saw that you did painting need</linktitle>
-   <indextitle>I never saw that you did painting need</indextitle>
-   <firstline>I never saw that you did painting need</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>83</title>
+  <toctitle><num>83</num>I never saw that you did painting need</toctitle>
+  <linktitle>Sonnet 83: I never saw that you did painting need</linktitle>
+  <indextitle>I never saw that you did painting need</indextitle>
+  <firstline>I never saw that you did painting need</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -4157,13 +4158,13 @@ When others would give life, and bring a tomb.
 
 <text id="shakespeare0084">
 <head>
-   <title>84</title>
-   <toctitle><num>84</num>Who is it that says most? Which can say more</toctitle>
-   <linktitle>Sonnet 84: Who is it that says most? Which can say more</linktitle>
-   <indextitle>Who is it that says most? Which can say more</indextitle>
-   <firstline>Who is it that says most? Which can say more</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>84</title>
+  <toctitle><num>84</num>Who is it that says most? Which can say more</toctitle>
+  <linktitle>Sonnet 84: Who is it that says most? Which can say more</linktitle>
+  <indextitle>Who is it that says most? Which can say more</indextitle>
+  <firstline>Who is it that says most? Which can say more</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -4189,13 +4190,13 @@ Making his style admired everywhere.
 
 <text id="shakespeare0085">
 <head>
-   <title>85</title>
-   <toctitle><num>85</num>My tongue-tied Muse in manners holds her still</toctitle>
-   <linktitle>Sonnet 85: My tongue-tied Muse in manners holds her still</linktitle>
-   <indextitle>My tongue-tied Muse in manners holds her still</indextitle>
-   <firstline>My tongue-tied Muse in manners holds her still</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>85</title>
+  <toctitle><num>85</num>My tongue-tied Muse in manners holds her still</toctitle>
+  <linktitle>Sonnet 85: My tongue-tied Muse in manners holds her still</linktitle>
+  <indextitle>My tongue-tied Muse in manners holds her still</indextitle>
+  <firstline>My tongue-tied Muse in manners holds her still</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -4221,13 +4222,13 @@ But that is in my thought, whose love to you
 
 <text id="shakespeare0086">
 <head>
-   <title>86</title>
-   <toctitle><num>86</num>Was it the proud full sail of his great verse</toctitle>
-   <linktitle>Sonnet 86: Was it the proud full sail of his great verse</linktitle>
-   <indextitle>Was it the proud full sail of his great verse</indextitle>
-   <firstline>Was it the proud full sail of his great verse</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>86</title>
+  <toctitle><num>86</num>Was it the proud full sail of his great verse</toctitle>
+  <linktitle>Sonnet 86: Was it the proud full sail of his great verse</linktitle>
+  <indextitle>Was it the proud full sail of his great verse</indextitle>
+  <firstline>Was it the proud full sail of his great verse</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -4253,13 +4254,13 @@ I was not sick of any fear from thence.
 
 <text id="shakespeare0087">
 <head>
-   <title>87</title>
-   <toctitle><num>87</num>Farewell, thou art too dear for my possessing</toctitle>
-   <linktitle>Sonnet 87: Farewell, thou art too dear for my possessing</linktitle>
-   <indextitle>Farewell, thou art too dear for my possessing</indextitle>
-   <firstline>Farewell, thou art too dear for my possessing</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>87</title>
+  <toctitle><num>87</num>Farewell, thou art too dear for my possessing</toctitle>
+  <linktitle>Sonnet 87: Farewell, thou art too dear for my possessing</linktitle>
+  <indextitle>Farewell, thou art too dear for my possessing</indextitle>
+  <firstline>Farewell, thou art too dear for my possessing</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -4285,13 +4286,13 @@ Comes home again, on better judgement making.
 
 <text id="shakespeare0088">
 <head>
-   <title>88</title>
-   <toctitle><num>88</num>When thou shalt be disposed to set me light</toctitle>
-   <linktitle>Sonnet 88: When thou shalt be disposed to set me light</linktitle>
-   <indextitle>When thou shalt be disposed to set me light</indextitle>
-   <firstline>When thou shalt be disposed to set me light</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>88</title>
+  <toctitle><num>88</num>When thou shalt be disposed to set me light</toctitle>
+  <linktitle>Sonnet 88: When thou shalt be disposed to set me light</linktitle>
+  <indextitle>When thou shalt be disposed to set me light</indextitle>
+  <firstline>When thou shalt be disposed to set me light</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -4317,13 +4318,13 @@ Doing thee vantage, double vantage me:
 
 <text id="shakespeare0089">
 <head>
-   <title>89</title>
-   <toctitle><num>89</num>Say that thou didst forsake me for some fault</toctitle>
-   <linktitle>Sonnet 89: Say that thou didst forsake me for some fault</linktitle>
-   <indextitle>Say that thou didst forsake me for some fault</indextitle>
-   <firstline>Say that thou didst forsake me for some fault</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>89</title>
+  <toctitle><num>89</num>Say that thou didst forsake me for some fault</toctitle>
+  <linktitle>Sonnet 89: Say that thou didst forsake me for some fault</linktitle>
+  <indextitle>Say that thou didst forsake me for some fault</indextitle>
+  <firstline>Say that thou didst forsake me for some fault</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -4349,13 +4350,13 @@ And haply of our old acquaintance tell.
 
 <text id="shakespeare0090">
 <head>
-   <title>90</title>
-   <toctitle><num>90</num>Then hate me when thou wilt, if ever, now</toctitle>
-   <linktitle>Sonnet 90: Then hate me when thou wilt, if ever, now</linktitle>
-   <indextitle>Then hate me when thou wilt, if ever, now</indextitle>
-   <firstline>Then hate me when thou wilt, if ever, now</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>90</title>
+  <toctitle><num>90</num>Then hate me when thou wilt, if ever, now</toctitle>
+  <linktitle>Sonnet 90: Then hate me when thou wilt, if ever, now</linktitle>
+  <indextitle>Then hate me when thou wilt, if ever, now</indextitle>
+  <firstline>Then hate me when thou wilt, if ever, now</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -4381,13 +4382,13 @@ At first the very worst of fortune's might;
 
 <text id="shakespeare0091">
 <head>
-   <title>91</title>
-   <toctitle><num>91</num>Some glory in their birth, some in their skill</toctitle>
-   <linktitle>Sonnet 91: Some glory in their birth, some in their skill</linktitle>
-   <indextitle>Some glory in their birth, some in their skill</indextitle>
-   <firstline>Some glory in their birth, some in their skill</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>91</title>
+  <toctitle><num>91</num>Some glory in their birth, some in their skill</toctitle>
+  <linktitle>Sonnet 91: Some glory in their birth, some in their skill</linktitle>
+  <indextitle>Some glory in their birth, some in their skill</indextitle>
+  <firstline>Some glory in their birth, some in their skill</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -4413,13 +4414,13 @@ And having thee, of all men's pride I boast -
 
 <text id="shakespeare0092">
 <head>
-   <title>92</title>
-   <toctitle><num>92</num>But do thy worst to steal thyself away</toctitle>
-   <linktitle>Sonnet 92: But do thy worst to steal thyself away</linktitle>
-   <indextitle>But do thy worst to steal thyself away</indextitle>
-   <firstline>But do thy worst to steal thyself away</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>92</title>
+  <toctitle><num>92</num>But do thy worst to steal thyself away</toctitle>
+  <linktitle>Sonnet 92: But do thy worst to steal thyself away</linktitle>
+  <indextitle>But do thy worst to steal thyself away</indextitle>
+  <firstline>But do thy worst to steal thyself away</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -4445,13 +4446,13 @@ Happy to have thy love, happy to die!
 
 <text id="shakespeare0093">
 <head>
-   <title>93</title>
-   <toctitle><num>93</num>So shall I live, supposing thou art true</toctitle>
-   <linktitle>Sonnet 93: So shall I live, supposing thou art true</linktitle>
-   <indextitle>So shall I live, supposing thou art true</indextitle>
-   <firstline>So shall I live, supposing thou art true</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>93</title>
+  <toctitle><num>93</num>So shall I live, supposing thou art true</toctitle>
+  <linktitle>Sonnet 93: So shall I live, supposing thou art true</linktitle>
+  <indextitle>So shall I live, supposing thou art true</indextitle>
+  <firstline>So shall I live, supposing thou art true</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -4477,13 +4478,13 @@ Thy looks should nothing thence but sweetness tell.
 
 <text id="shakespeare0094">
 <head>
-   <title>94</title>
-   <toctitle><num>94</num>They that have power to hurt, and will do none</toctitle>
-   <linktitle>Sonnet 94: They that have power to hurt, and will do none</linktitle>
-   <indextitle>They that have power to hurt, and will do none</indextitle>
-   <firstline>They that have power to hurt, and will do none</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>94</title>
+  <toctitle><num>94</num>They that have power to hurt, and will do none</toctitle>
+  <linktitle>Sonnet 94: They that have power to hurt, and will do none</linktitle>
+  <indextitle>They that have power to hurt, and will do none</indextitle>
+  <firstline>They that have power to hurt, and will do none</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -4509,13 +4510,13 @@ The basest weed outbraves his dignity:
 
 <text id="shakespeare0095">
 <head>
-   <title>95</title>
-   <toctitle><num>95</num>How sweet and lovely dost thou make the shame</toctitle>
-   <linktitle>Sonnet 95: How sweet and lovely dost thou make the shame</linktitle>
-   <indextitle>How sweet and lovely dost thou make the shame</indextitle>
-   <firstline>How sweet and lovely dost thou make the shame</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>95</title>
+  <toctitle><num>95</num>How sweet and lovely dost thou make the shame</toctitle>
+  <linktitle>Sonnet 95: How sweet and lovely dost thou make the shame</linktitle>
+  <indextitle>How sweet and lovely dost thou make the shame</indextitle>
+  <firstline>How sweet and lovely dost thou make the shame</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -4541,13 +4542,13 @@ And all things turn to fair that eyes can see!
 
 <text id="shakespeare0096">
 <head>
-   <title>96</title>
-   <toctitle><num>96</num>Some say thy fault is youth, some wantonness</toctitle>
-   <linktitle>Sonnet 96: Some say thy fault is youth, some wantonness</linktitle>
-   <indextitle>Some say thy fault is youth, some wantonness</indextitle>
-   <firstline>Some say thy fault is youth, some wantonness</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>96</title>
+  <toctitle><num>96</num>Some say thy fault is youth, some wantonness</toctitle>
+  <linktitle>Sonnet 96: Some say thy fault is youth, some wantonness</linktitle>
+  <indextitle>Some say thy fault is youth, some wantonness</indextitle>
+  <firstline>Some say thy fault is youth, some wantonness</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -4573,13 +4574,13 @@ If thou wouldst use the strength of all thy state?
 
 <text id="shakespeare0097">
 <head>
-   <title>97</title>
-   <toctitle><num>97</num>How like a winter hath my absence been</toctitle>
-   <linktitle>Sonnet 97: How like a winter hath my absence been</linktitle>
-   <indextitle>How like a winter hath my absence been</indextitle>
-   <firstline>How like a winter hath my absence been</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>97</title>
+  <toctitle><num>97</num>How like a winter hath my absence been</toctitle>
+  <linktitle>Sonnet 97: How like a winter hath my absence been</linktitle>
+  <indextitle>How like a winter hath my absence been</indextitle>
+  <firstline>How like a winter hath my absence been</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -4605,13 +4606,13 @@ And thou away, the very birds are mute;
 
 <text id="shakespeare0098">
 <head>
-   <title>98</title>
-   <toctitle><num>98</num>From you have I been absent in the spring</toctitle>
-   <linktitle>Sonnet 98: From you have I been absent in the spring</linktitle>
-   <indextitle>From you have I been absent in the spring</indextitle>
-   <firstline>From you have I been absent in the spring</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>98</title>
+  <toctitle><num>98</num>From you have I been absent in the spring</toctitle>
+  <linktitle>Sonnet 98: From you have I been absent in the spring</linktitle>
+  <indextitle>From you have I been absent in the spring</indextitle>
+  <firstline>From you have I been absent in the spring</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -4637,13 +4638,13 @@ Drawn after you, you pattern of all those.
 
 <text id="shakespeare0099">
 <head>
-   <title>99</title>
-   <toctitle><num>99</num>The forward violet thus did I chide</toctitle>
-   <linktitle>Sonnet 99: The forward violet thus did I chide</linktitle>
-   <indextitle>The forward violet thus did I chide</indextitle>
-   <firstline>The forward violet thus did I chide</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>99</title>
+  <toctitle><num>99</num>The forward violet thus did I chide</toctitle>
+  <linktitle>Sonnet 99: The forward violet thus did I chide</linktitle>
+  <indextitle>The forward violet thus did I chide</indextitle>
+  <firstline>The forward violet thus did I chide</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -4670,13 +4671,13 @@ A vengeful canker ate him up to death.
 
 <text id="shakespeare0100">
 <head>
-   <title>100</title>
-   <toctitle><num>100</num>Where art thou, Muse, that thou forget'st so long</toctitle>
-   <linktitle>Sonnet 100: Where art thou, Muse, that thou forget'st so long</linktitle>
-   <indextitle>Where art thou, Muse, that thou forget'st so long</indextitle>
-   <firstline>Where art thou, Muse, that thou forget'st so long</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>100</title>
+  <toctitle><num>100</num>Where art thou, Muse, that thou forget'st so long</toctitle>
+  <linktitle>Sonnet 100: Where art thou, Muse, that thou forget'st so long</linktitle>
+  <indextitle>Where art thou, Muse, that thou forget'st so long</indextitle>
+  <firstline>Where art thou, Muse, that thou forget'st so long</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -4702,13 +4703,13 @@ And make Time's spoils despised everywhere:
 
 <text id="shakespeare0101">
 <head>
-   <title>101</title>
-   <toctitle><num>101</num>O truant Muse, what shall be thy amends</toctitle>
-   <linktitle>Sonnet 101: O truant Muse, what shall be thy amends</linktitle>
-   <indextitle>O truant Muse, what shall be thy amends</indextitle>
-   <firstline>O truant Muse, what shall be thy amends</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>101</title>
+  <toctitle><num>101</num>O truant Muse, what shall be thy amends</toctitle>
+  <linktitle>Sonnet 101: O truant Muse, what shall be thy amends</linktitle>
+  <indextitle>O truant Muse, what shall be thy amends</indextitle>
+  <firstline>O truant Muse, what shall be thy amends</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -4734,13 +4735,13 @@ And to be praised of ages yet to be.
 
 <text id="shakespeare0102">
 <head>
-   <title>102</title>
-   <toctitle><num>102</num>My love is strength'ned, though more weak in seeming</toctitle>
-   <linktitle>Sonnet 102: My love is strength'ned, though more weak in seeming</linktitle>
-   <indextitle>My love is strength'ned, though more weak in seeming</indextitle>
-   <firstline>My love is strength'ned, though more weak in seeming</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>102</title>
+  <toctitle><num>102</num>My love is strength'ned, though more weak in seeming</toctitle>
+  <linktitle>Sonnet 102: My love is strength'ned, though more weak in seeming</linktitle>
+  <indextitle>My love is strength'ned, though more weak in seeming</indextitle>
+  <firstline>My love is strength'ned, though more weak in seeming</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -4766,13 +4767,13 @@ And sweets grown common lose their dear delight:
 
 <text id="shakespeare0103">
 <head>
-   <title>103</title>
-   <toctitle><num>103</num>Alack, what poverty my Muse brings forth</toctitle>
-   <linktitle>Sonnet 103: Alack, what poverty my Muse brings forth</linktitle>
-   <indextitle>Alack, what poverty my Muse brings forth</indextitle>
-   <firstline>Alack, what poverty my Muse brings forth</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>103</title>
+  <toctitle><num>103</num>Alack, what poverty my Muse brings forth</toctitle>
+  <linktitle>Sonnet 103: Alack, what poverty my Muse brings forth</linktitle>
+  <indextitle>Alack, what poverty my Muse brings forth</indextitle>
+  <firstline>Alack, what poverty my Muse brings forth</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -4798,13 +4799,13 @@ Than of your graces and your gifts to tell;
 
 <text id="shakespeare0104">
 <head>
-   <title>104</title>
-   <toctitle><num>104</num>To me, fair friend, you never can be old</toctitle>
-   <linktitle>Sonnet 104: To me, fair friend, you never can be old</linktitle>
-   <indextitle>To me, fair friend, you never can be old</indextitle>
-   <firstline>To me, fair friend, you never can be old</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>104</title>
+  <toctitle><num>104</num>To me, fair friend, you never can be old</toctitle>
+  <linktitle>Sonnet 104: To me, fair friend, you never can be old</linktitle>
+  <indextitle>To me, fair friend, you never can be old</indextitle>
+  <firstline>To me, fair friend, you never can be old</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -4830,13 +4831,13 @@ Hath motion, and mine eye may be deceived;
 
 <text id="shakespeare0105">
 <head>
-   <title>105</title>
-   <toctitle><num>105</num>Let not my love be called idolatry</toctitle>
-   <linktitle>Sonnet 105: Let not my love be called idolatry</linktitle>
-   <indextitle>Let not my love be called idolatry</indextitle>
-   <firstline>Let not my love be called idolatry</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>105</title>
+  <toctitle><num>105</num>Let not my love be called idolatry</toctitle>
+  <linktitle>Sonnet 105: Let not my love be called idolatry</linktitle>
+  <indextitle>Let not my love be called idolatry</indextitle>
+  <firstline>Let not my love be called idolatry</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -4862,13 +4863,13 @@ Three themes in one, which wondrous scope affords.
 
 <text id="shakespeare0106">
 <head>
-   <title>106</title>
-   <toctitle><num>106</num>When in the chronicle of wasted time</toctitle>
-   <linktitle>Sonnet 106: When in the chronicle of wasted time</linktitle>
-   <indextitle>When in the chronicle of wasted time</indextitle>
-   <firstline>When in the chronicle of wasted time</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>106</title>
+  <toctitle><num>106</num>When in the chronicle of wasted time</toctitle>
+  <linktitle>Sonnet 106: When in the chronicle of wasted time</linktitle>
+  <indextitle>When in the chronicle of wasted time</indextitle>
+  <firstline>When in the chronicle of wasted time</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -4894,13 +4895,13 @@ They had not skill enough your worth to sing;
 
 <text id="shakespeare0107">
 <head>
-   <title>107</title>
-   <toctitle><num>107</num>Not mine own fears, nor the prophetic soul</toctitle>
-   <linktitle>Sonnet 107: Not mine own fears, nor the prophetic soul</linktitle>
-   <indextitle>Not mine own fears, nor the prophetic soul</indextitle>
-   <firstline>Not mine own fears, nor the prophetic soul</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>107</title>
+  <toctitle><num>107</num>Not mine own fears, nor the prophetic soul</toctitle>
+  <linktitle>Sonnet 107: Not mine own fears, nor the prophetic soul</linktitle>
+  <indextitle>Not mine own fears, nor the prophetic soul</indextitle>
+  <firstline>Not mine own fears, nor the prophetic soul</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -4926,13 +4927,13 @@ While he insults o'er dull and speechless tribes;
 
 <text id="shakespeare0108">
 <head>
-   <title>108</title>
-   <toctitle><num>108</num>What's in the brain that ink may character</toctitle>
-   <linktitle>Sonnet 108: What's in the brain that ink may character</linktitle>
-   <indextitle>What's in the brain that ink may character</indextitle>
-   <firstline>What's in the brain that ink may character</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>108</title>
+  <toctitle><num>108</num>What's in the brain that ink may character</toctitle>
+  <linktitle>Sonnet 108: What's in the brain that ink may character</linktitle>
+  <indextitle>What's in the brain that ink may character</indextitle>
+  <firstline>What's in the brain that ink may character</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -4958,13 +4959,13 @@ But makes antiquity for aye his page,
 
 <text id="shakespeare0109">
 <head>
-   <title>109</title>
-   <toctitle><num>109</num>O never say that I was false of heart</toctitle>
-   <linktitle>Sonnet 109: O never say that I was false of heart</linktitle>
-   <indextitle>O never say that I was false of heart</indextitle>
-   <firstline>O never say that I was false of heart</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>109</title>
+  <toctitle><num>109</num>O never say that I was false of heart</toctitle>
+  <linktitle>Sonnet 109: O never say that I was false of heart</linktitle>
+  <indextitle>O never say that I was false of heart</indextitle>
+  <firstline>O never say that I was false of heart</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -4990,13 +4991,13 @@ To leave for nothing all thy sum of good:
 
 <text id="shakespeare0110">
 <head>
-   <title>110</title>
-   <toctitle><num>110</num>Alas, 'tis true, I have gone here and there</toctitle>
-   <linktitle>Sonnet 110: Alas, 'tis true, I have gone here and there</linktitle>
-   <indextitle>Alas, 'tis true, I have gone here and there</indextitle>
-   <firstline>Alas, 'tis true, I have gone here and there</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>110</title>
+  <toctitle><num>110</num>Alas, 'tis true, I have gone here and there</toctitle>
+  <linktitle>Sonnet 110: Alas, 'tis true, I have gone here and there</linktitle>
+  <indextitle>Alas, 'tis true, I have gone here and there</indextitle>
+  <firstline>Alas, 'tis true, I have gone here and there</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -5022,13 +5023,13 @@ A god in love, to whom I am confined:
 
 <text id="shakespeare0111">
 <head>
-   <title>111</title>
-   <toctitle><num>111</num>O, for my sake do you with Fortune chide</toctitle>
-   <linktitle>Sonnet 111: O, for my sake do you with Fortune chide</linktitle>
-   <indextitle>O, for my sake do you with Fortune chide</indextitle>
-   <firstline>O, for my sake do you with Fortune chide</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>111</title>
+  <toctitle><num>111</num>O, for my sake do you with Fortune chide</toctitle>
+  <linktitle>Sonnet 111: O, for my sake do you with Fortune chide</linktitle>
+  <indextitle>O, for my sake do you with Fortune chide</indextitle>
+  <firstline>O, for my sake do you with Fortune chide</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -5054,13 +5055,13 @@ Nor double penance to correct correction.
 
 <text id="shakespeare0112">
 <head>
-   <title>112</title>
-   <toctitle><num>112</num>Your love and pity doth th'impression fill</toctitle>
-   <linktitle>Sonnet 112: Your love and pity doth th'impression fill</linktitle>
-   <indextitle>Your love and pity doth th'impression fill</indextitle>
-   <firstline>Your love and pity doth th'impression fill</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>112</title>
+  <toctitle><num>112</num>Your love and pity doth th'impression fill</toctitle>
+  <linktitle>Sonnet 112: Your love and pity doth th'impression fill</linktitle>
+  <indextitle>Your love and pity doth th'impression fill</indextitle>
+  <firstline>Your love and pity doth th'impression fill</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -5086,13 +5087,13 @@ Mark how with my neglect I do dispense:
 
 <text id="shakespeare0113">
 <head>
-   <title>113</title>
-   <toctitle><num>113</num>Since I left you, mine eye is in my mind</toctitle>
-   <linktitle>Sonnet 113: Since I left you, mine eye is in my mind</linktitle>
-   <indextitle>Since I left you, mine eye is in my mind</indextitle>
-   <firstline>Since I left you, mine eye is in my mind</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>113</title>
+  <toctitle><num>113</num>Since I left you, mine eye is in my mind</toctitle>
+  <linktitle>Sonnet 113: Since I left you, mine eye is in my mind</linktitle>
+  <indextitle>Since I left you, mine eye is in my mind</indextitle>
+  <firstline>Since I left you, mine eye is in my mind</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -5118,13 +5119,13 @@ The crow, or dove, it shapes them to your feature.
 
 <text id="shakespeare0114">
 <head>
-   <title>114</title>
-   <toctitle><num>114</num>Or whether doth my mind, being crowned with you</toctitle>
-   <linktitle>Sonnet 114: Or whether doth my mind, being crowned with you</linktitle>
-   <indextitle>Or whether doth my mind, being crowned with you</indextitle>
-   <firstline>Or whether doth my mind, being crowned with you</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>114</title>
+  <toctitle><num>114</num>Or whether doth my mind, being crowned with you</toctitle>
+  <linktitle>Sonnet 114: Or whether doth my mind, being crowned with you</linktitle>
+  <indextitle>Or whether doth my mind, being crowned with you</indextitle>
+  <firstline>Or whether doth my mind, being crowned with you</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -5150,13 +5151,13 @@ And to his palate doth prepare the cup.
 
 <text id="shakespeare0115">
 <head>
-   <title>115</title>
-   <toctitle><num>115</num>Those lines that I before have writ do lie</toctitle>
-   <linktitle>Sonnet 115: Those lines that I before have writ do lie</linktitle>
-   <indextitle>Those lines that I before have writ do lie</indextitle>
-   <firstline>Those lines that I before have writ do lie</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>115</title>
+  <toctitle><num>115</num>Those lines that I before have writ do lie</toctitle>
+  <linktitle>Sonnet 115: Those lines that I before have writ do lie</linktitle>
+  <indextitle>Those lines that I before have writ do lie</indextitle>
+  <firstline>Those lines that I before have writ do lie</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -5182,13 +5183,13 @@ Crowning the present, doubting of the rest?
 
 <text id="shakespeare0116">
 <head>
-   <title>116</title>
-   <toctitle><num>116</num>Let me not to the marriage of true minds</toctitle>
-   <linktitle>Sonnet 116: Let me not to the marriage of true minds</linktitle>
-   <indextitle>Let me not to the marriage of true minds</indextitle>
-   <firstline>Let me not to the marriage of true minds</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>116</title>
+  <toctitle><num>116</num>Let me not to the marriage of true minds</toctitle>
+  <linktitle>Sonnet 116: Let me not to the marriage of true minds</linktitle>
+  <indextitle>Let me not to the marriage of true minds</indextitle>
+  <firstline>Let me not to the marriage of true minds</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -5214,13 +5215,13 @@ But bears it out even to the edge of doom.
 
 <text id="shakespeare0117">
 <head>
-   <title>117</title>
-   <toctitle><num>117</num>Accuse me thus: that I have scanted all</toctitle>
-   <linktitle>Sonnet 117: Accuse me thus: that I have scanted all</linktitle>
-   <indextitle>Accuse me thus: that I have scanted all</indextitle>
-   <firstline>Accuse me thus: that I have scanted all</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>117</title>
+  <toctitle><num>117</num>Accuse me thus: that I have scanted all</toctitle>
+  <linktitle>Sonnet 117: Accuse me thus: that I have scanted all</linktitle>
+  <indextitle>Accuse me thus: that I have scanted all</indextitle>
+  <firstline>Accuse me thus: that I have scanted all</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -5246,13 +5247,13 @@ But shoot not at me in your wakened hate:
 
 <text id="shakespeare0118">
 <head>
-   <title>118</title>
-   <toctitle><num>118</num>Like as, to make our appetites more keen</toctitle>
-   <linktitle>Sonnet 118: Like as, to make our appetites more keen</linktitle>
-   <indextitle>Like as, to make our appetites more keen</indextitle>
-   <firstline>Like as, to make our appetites more keen</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>118</title>
+  <toctitle><num>118</num>Like as, to make our appetites more keen</toctitle>
+  <linktitle>Sonnet 118: Like as, to make our appetites more keen</linktitle>
+  <indextitle>Like as, to make our appetites more keen</indextitle>
+  <firstline>Like as, to make our appetites more keen</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -5278,13 +5279,13 @@ Which, rank of goodness, would by ill be cured;
 
 <text id="shakespeare0119">
 <head>
-   <title>119</title>
-   <toctitle><num>119</num>What potions have I drunk of Siren tears</toctitle>
-   <linktitle>Sonnet 119: What potions have I drunk of Siren tears</linktitle>
-   <indextitle>What potions have I drunk of Siren tears</indextitle>
-   <firstline>What potions have I drunk of Siren tears</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>119</title>
+  <toctitle><num>119</num>What potions have I drunk of Siren tears</toctitle>
+  <linktitle>Sonnet 119: What potions have I drunk of Siren tears</linktitle>
+  <indextitle>What potions have I drunk of Siren tears</indextitle>
+  <firstline>What potions have I drunk of Siren tears</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -5310,13 +5311,13 @@ Grows fairer than at first, more strong, far greater:
 
 <text id="shakespeare0120">
 <head>
-   <title>120</title>
-   <toctitle><num>120</num>That you were once unkind befriends me now</toctitle>
-   <linktitle>Sonnet 120: That you were once unkind befriends me now</linktitle>
-   <indextitle>That you were once unkind befriends me now</indextitle>
-   <firstline>That you were once unkind befriends me now</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>120</title>
+  <toctitle><num>120</num>That you were once unkind befriends me now</toctitle>
+  <linktitle>Sonnet 120: That you were once unkind befriends me now</linktitle>
+  <indextitle>That you were once unkind befriends me now</indextitle>
+  <firstline>That you were once unkind befriends me now</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -5342,13 +5343,13 @@ The humble salve which wounded bosoms fits!
 
 <text id="shakespeare0121">
 <head>
-   <title>121</title>
-   <toctitle><num>121</num>Tis better to be vile than vile esteemed</toctitle>
-   <linktitle>Sonnet 121: Tis better to be vile than vile esteemed</linktitle>
-   <indextitle>Tis better to be vile than vile esteemed</indextitle>
-   <firstline>Tis better to be vile than vile esteemed</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>121</title>
+  <toctitle><num>121</num>Tis better to be vile than vile esteemed</toctitle>
+  <linktitle>Sonnet 121: Tis better to be vile than vile esteemed</linktitle>
+  <indextitle>Tis better to be vile than vile esteemed</indextitle>
+  <firstline>Tis better to be vile than vile esteemed</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -5374,13 +5375,13 @@ By their rank thoughts my deeds must not be shown,
 
 <text id="shakespeare0122">
 <head>
-   <title>122</title>
-   <toctitle><num>122</num>Thy gift, thy tables, are within my brain</toctitle>
-   <linktitle>Sonnet 122: Thy gift, thy tables, are within my brain</linktitle>
-   <indextitle>Thy gift, thy tables, are within my brain</indextitle>
-   <firstline>Thy gift, thy tables, are within my brain</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>122</title>
+  <toctitle><num>122</num>Thy gift, thy tables, are within my brain</toctitle>
+  <linktitle>Sonnet 122: Thy gift, thy tables, are within my brain</linktitle>
+  <indextitle>Thy gift, thy tables, are within my brain</indextitle>
+  <firstline>Thy gift, thy tables, are within my brain</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -5406,13 +5407,13 @@ To trust those tables that receive thee more;
 
 <text id="shakespeare0123">
 <head>
-   <title>123</title>
-   <toctitle><num>123</num>No! Time, thou shalt not boast that I do change</toctitle>
-   <linktitle>Sonnet 123: No! Time, thou shalt not boast that I do change</linktitle>
-   <indextitle>No! Time, thou shalt not boast that I do change</indextitle>
-   <firstline>No! Time, thou shalt not boast that I do change</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>123</title>
+  <toctitle><num>123</num>No! Time, thou shalt not boast that I do change</toctitle>
+  <linktitle>Sonnet 123: No! Time, thou shalt not boast that I do change</linktitle>
+  <indextitle>No! Time, thou shalt not boast that I do change</indextitle>
+  <firstline>No! Time, thou shalt not boast that I do change</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -5438,13 +5439,13 @@ Made more or less by thy continual haste:
 
 <text id="shakespeare0124">
 <head>
-   <title>124</title>
-   <toctitle><num>124</num>If my dear love were but the child of state</toctitle>
-   <linktitle>Sonnet 124: If my dear love were but the child of state</linktitle>
-   <indextitle>If my dear love were but the child of state</indextitle>
-   <firstline>If my dear love were but the child of state</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>124</title>
+  <toctitle><num>124</num>If my dear love were but the child of state</toctitle>
+  <linktitle>Sonnet 124: If my dear love were but the child of state</linktitle>
+  <indextitle>If my dear love were but the child of state</indextitle>
+  <firstline>If my dear love were but the child of state</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -5470,13 +5471,13 @@ That it nor grows with heat, nor drowns with showers.
 
 <text id="shakespeare0125">
 <head>
-   <title>125</title>
-   <toctitle><num>125</num>Were't aught to me I bore the canopy</toctitle>
-   <linktitle>Sonnet 125: Were't aught to me I bore the canopy</linktitle>
-   <indextitle>Were't aught to me I bore the canopy</indextitle>
-   <firstline>Were't aught to me I bore the canopy</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>125</title>
+  <toctitle><num>125</num>Were't aught to me I bore the canopy</toctitle>
+  <linktitle>Sonnet 125: Were't aught to me I bore the canopy</linktitle>
+  <indextitle>Were't aught to me I bore the canopy</indextitle>
+  <firstline>Were't aught to me I bore the canopy</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -5502,13 +5503,13 @@ But mutual render, only me for thee.
 
 <text id="shakespeare0126">
 <head>
-   <title>126</title>
-   <toctitle><num>126</num>O thou my lovely Boy, who in thy power</toctitle>
-   <linktitle>Sonnet 126: O thou my lovely Boy, who in thy power</linktitle>
-   <indextitle>O thou my lovely Boy, who in thy power</indextitle>
-   <firstline>O thou my lovely Boy, who in thy power</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>126</title>
+  <toctitle><num>126</num>O thou my lovely Boy, who in thy power</toctitle>
+  <linktitle>Sonnet 126: O thou my lovely Boy, who in thy power</linktitle>
+  <indextitle>O thou my lovely Boy, who in thy power</indextitle>
+  <firstline>O thou my lovely Boy, who in thy power</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -5526,21 +5527,21 @@ Yet fear her, O thou minion of her pleasure:
 She may detain, but not still keep, her treasure!
 Her audit, though delayed, answered must be,
 And her quietus is to render thee.
-   (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)
-   (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)
+   (&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;)
+   (&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;)
 </poetry>
 </body>
 </text>
 
 <text id="shakespeare0127">
 <head>
-   <title>127</title>
-   <toctitle><num>127</num>In the old age black was not counted fair</toctitle>
-   <linktitle>Sonnet 127: In the old age black was not counted fair</linktitle>
-   <indextitle>In the old age black was not counted fair</indextitle>
-   <firstline>In the old age black was not counted fair</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>127</title>
+  <toctitle><num>127</num>In the old age black was not counted fair</toctitle>
+  <linktitle>Sonnet 127: In the old age black was not counted fair</linktitle>
+  <indextitle>In the old age black was not counted fair</indextitle>
+  <firstline>In the old age black was not counted fair</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -5566,13 +5567,13 @@ Sland'ring creation with a false esteem;
 
 <text id="shakespeare0128">
 <head>
-   <title>128</title>
-   <toctitle><num>128</num>How oft when thou, my music, music play'st</toctitle>
-   <linktitle>Sonnet 128: How oft when thou, my music, music play'st</linktitle>
-   <indextitle>How oft when thou, my music, music play'st</indextitle>
-   <firstline>How oft when thou, my music, music play'st</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>128</title>
+  <toctitle><num>128</num>How oft when thou, my music, music play'st</toctitle>
+  <linktitle>Sonnet 128: How oft when thou, my music, music play'st</linktitle>
+  <indextitle>How oft when thou, my music, music play'st</indextitle>
+  <firstline>How oft when thou, my music, music play'st</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -5598,13 +5599,13 @@ Making dead wood more blessed than living lips.
 
 <text id="shakespeare0129">
 <head>
-   <title>129</title>
-   <toctitle><num>129</num>Th'expense of spirit in a waste of shame</toctitle>
-   <linktitle>Sonnet 129: Th'expense of spirit in a waste of shame</linktitle>
-   <indextitle>Th'expense of spirit in a waste of shame</indextitle>
-   <firstline>Th'expense of spirit in a waste of shame</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>129</title>
+  <toctitle><num>129</num>Th'expense of spirit in a waste of shame</toctitle>
+  <linktitle>Sonnet 129: Th'expense of spirit in a waste of shame</linktitle>
+  <indextitle>Th'expense of spirit in a waste of shame</indextitle>
+  <firstline>Th'expense of spirit in a waste of shame</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -5630,13 +5631,13 @@ Before, a joy proposed; behind, a dream.
 
 <text id="shakespeare0130">
 <head>
-   <title>130</title>
-   <toctitle><num>130</num>My mistress' eyes are nothing like the sun</toctitle>
-   <linktitle>Sonnet 130: My mistress' eyes are nothing like the sun</linktitle>
-   <indextitle>My mistress' eyes are nothing like the sun</indextitle>
-   <firstline>My mistress' eyes are nothing like the sun</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>130</title>
+  <toctitle><num>130</num>My mistress' eyes are nothing like the sun</toctitle>
+  <linktitle>Sonnet 130: My mistress' eyes are nothing like the sun</linktitle>
+  <indextitle>My mistress' eyes are nothing like the sun</indextitle>
+  <firstline>My mistress' eyes are nothing like the sun</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -5662,13 +5663,13 @@ My mistress, when she walks treads on the ground.
 
 <text id="shakespeare0131">
 <head>
-   <title>131</title>
-   <toctitle><num>131</num>Thou art as tyrannous, so as thou art</toctitle>
-   <linktitle>Sonnet 131: Thou art as tyrannous, so as thou art</linktitle>
-   <indextitle>Thou art as tyrannous, so as thou art</indextitle>
-   <firstline>Thou art as tyrannous, so as thou art</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>131</title>
+  <toctitle><num>131</num>Thou art as tyrannous, so as thou art</toctitle>
+  <linktitle>Sonnet 131: Thou art as tyrannous, so as thou art</linktitle>
+  <indextitle>Thou art as tyrannous, so as thou art</indextitle>
+  <firstline>Thou art as tyrannous, so as thou art</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -5694,13 +5695,13 @@ Thy black is fairest in my judgement's place.
 
 <text id="shakespeare0132">
 <head>
-   <title>132</title>
-   <toctitle><num>132</num>Thine eyes I love, and they, as pitying me</toctitle>
-   <linktitle>Sonnet 132: Thine eyes I love, and they, as pitying me</linktitle>
-   <indextitle>Thine eyes I love, and they, as pitying me</indextitle>
-   <firstline>Thine eyes I love, and they, as pitying me</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>132</title>
+  <toctitle><num>132</num>Thine eyes I love, and they, as pitying me</toctitle>
+  <linktitle>Sonnet 132: Thine eyes I love, and they, as pitying me</linktitle>
+  <indextitle>Thine eyes I love, and they, as pitying me</indextitle>
+  <firstline>Thine eyes I love, and they, as pitying me</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -5726,13 +5727,13 @@ And suit thy pity like in every part:
 
 <text id="shakespeare0133">
 <head>
-   <title>133</title>
-   <toctitle><num>133</num>Beshrew that heart that makes my heart to groan</toctitle>
-   <linktitle>Sonnet 133: Beshrew that heart that makes my heart to groan</linktitle>
-   <indextitle>Beshrew that heart that makes my heart to groan</indextitle>
-   <firstline>Beshrew that heart that makes my heart to groan</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>133</title>
+  <toctitle><num>133</num>Beshrew that heart that makes my heart to groan</toctitle>
+  <linktitle>Sonnet 133: Beshrew that heart that makes my heart to groan</linktitle>
+  <indextitle>Beshrew that heart that makes my heart to groan</indextitle>
+  <firstline>Beshrew that heart that makes my heart to groan</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -5758,13 +5759,13 @@ Thou canst not then use rigour in my jail.
 
 <text id="shakespeare0134">
 <head>
-   <title>134</title>
-   <toctitle><num>134</num>So now I have confessed that he is thine</toctitle>
-   <linktitle>Sonnet 134: So now I have confessed that he is thine</linktitle>
-   <indextitle>So now I have confessed that he is thine</indextitle>
-   <firstline>So now I have confessed that he is thine</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>134</title>
+  <toctitle><num>134</num>So now I have confessed that he is thine</toctitle>
+  <linktitle>Sonnet 134: So now I have confessed that he is thine</linktitle>
+  <indextitle>So now I have confessed that he is thine</indextitle>
+  <firstline>So now I have confessed that he is thine</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -5790,13 +5791,13 @@ So him I lose through my unkind abuse.
 
 <text id="shakespeare0135">
 <head>
-   <title>135</title>
-   <toctitle><num>135</num>Whoever hath her wish, thou hast thy Will</toctitle>
-   <linktitle>Sonnet 135: Whoever hath her wish, thou hast thy Will</linktitle>
-   <indextitle>Whoever hath her wish, thou hast thy Will</indextitle>
-   <firstline>Whoever hath her wish, thou hast thy Will</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>135</title>
+  <toctitle><num>135</num>Whoever hath her wish, thou hast thy Will</toctitle>
+  <linktitle>Sonnet 135: Whoever hath her wish, thou hast thy Will</linktitle>
+  <indextitle>Whoever hath her wish, thou hast thy Will</indextitle>
+  <firstline>Whoever hath her wish, thou hast thy Will</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -5822,13 +5823,13 @@ One will of mine, to make thy large Will more:
 
 <text id="shakespeare0136">
 <head>
-   <title>136</title>
-   <toctitle><num>136</num>If thy soul check thee that I come so near</toctitle>
-   <linktitle>Sonnet 136: If thy soul check thee that I come so near</linktitle>
-   <indextitle>If thy soul check thee that I come so near</indextitle>
-   <firstline>If thy soul check thee that I come so near</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>136</title>
+  <toctitle><num>136</num>If thy soul check thee that I come so near</toctitle>
+  <linktitle>Sonnet 136: If thy soul check thee that I come so near</linktitle>
+  <indextitle>If thy soul check thee that I come so near</indextitle>
+  <firstline>If thy soul check thee that I come so near</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -5854,13 +5855,13 @@ That nothing, me a something sweet to thee.
 
 <text id="shakespeare0137">
 <head>
-   <title>137</title>
-   <toctitle><num>137</num>Thou blind fool Love, what dost thou to mine eyes</toctitle>
-   <linktitle>Sonnet 137: Thou blind fool Love, what dost thou to mine eyes</linktitle>
-   <indextitle>Thou blind fool Love, what dost thou to mine eyes</indextitle>
-   <firstline>Thou blind fool Love, what dost thou to mine eyes</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>137</title>
+  <toctitle><num>137</num>Thou blind fool Love, what dost thou to mine eyes</toctitle>
+  <linktitle>Sonnet 137: Thou blind fool Love, what dost thou to mine eyes</linktitle>
+  <indextitle>Thou blind fool Love, what dost thou to mine eyes</indextitle>
+  <firstline>Thou blind fool Love, what dost thou to mine eyes</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -5886,16 +5887,16 @@ To put fair truth upon so foul a face?
 
 <text id="shakespeare0138">
 <head>
-   <title>138</title>
-   <toctitle><num>138</num>When my loue sweares that she is made of truth</toctitle>
-   <linktitle>Sonnet 138: When my loue sweares that she is made of truth</linktitle>
-   <indextitle>When my loue sweares that she is made of truth</indextitle>
-   <firstline>When my loue sweares that she is made of truth</firstline>
-   <notes>
-      <note><i>Sonnet 138 og 144 blev oprindeligt udgivet i 1599 som de to første digte af</i> The Passionate Pilgrime, <i>altså ti år før</i> <biblio>Q</biblio>. <i>Teksten er her nøjagtigt gengivet fra første udgave, mens faksimilen er taget fra anden udgave (også 1599); afvigelserne de to udgaver imellem er ubetydelige, bortset fra l. 11.</i></note>
-   </notes>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>138</title>
+  <toctitle><num>138</num>When my loue sweares that she is made of truth</toctitle>
+  <linktitle>Sonnet 138: When my loue sweares that she is made of truth</linktitle>
+  <indextitle>When my loue sweares that she is made of truth</indextitle>
+  <firstline>When my loue sweares that she is made of truth</firstline>
+  <notes>
+    <note><i>Sonnet 138 og 144 blev oprindeligt udgivet i 1599 som de to første digte af</i> The Passionate Pilgrime, <i>altså ti år før</i> <biblio>Q</biblio>. <i>Teksten er her nøjagtigt gengivet fra første udgave, mens faksimilen er taget fra anden udgave (også 1599); afvigelserne de to udgaver imellem er ubetydelige, bortset fra l. 11.</i></note>
+  </notes>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -5955,13 +5956,13 @@ And Age in Loue, loues not to haue yeares told.
 
 <text id="shakespeare0139">
 <head>
-   <title>139</title>
-   <toctitle><num>139</num>O call not me to justify the wrong</toctitle>
-   <linktitle>Sonnet 139: O call not me to justify the wrong</linktitle>
-   <indextitle>O call not me to justify the wrong</indextitle>
-   <firstline>O call not me to justify the wrong</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>139</title>
+  <toctitle><num>139</num>O call not me to justify the wrong</toctitle>
+  <linktitle>Sonnet 139: O call not me to justify the wrong</linktitle>
+  <indextitle>O call not me to justify the wrong</indextitle>
+  <firstline>O call not me to justify the wrong</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -5987,13 +5988,13 @@ That they elsewhere might dart their injuries.
 
 <text id="shakespeare0140">
 <head>
-   <title>140</title>
-   <toctitle><num>140</num>Be wise as thou art cruel, do not press</toctitle>
-   <linktitle>Sonnet 140: Be wise as thou art cruel, do not press</linktitle>
-   <indextitle>Be wise as thou art cruel, do not press</indextitle>
-   <firstline>Be wise as thou art cruel, do not press</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>140</title>
+  <toctitle><num>140</num>Be wise as thou art cruel, do not press</toctitle>
+  <linktitle>Sonnet 140: Be wise as thou art cruel, do not press</linktitle>
+  <indextitle>Be wise as thou art cruel, do not press</indextitle>
+  <firstline>Be wise as thou art cruel, do not press</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -6019,13 +6020,13 @@ Mad slanderers by mad ears believed be.
 
 <text id="shakespeare0141">
 <head>
-   <title>141</title>
-   <toctitle><num>141</num>In faith, I do not love thee with mine eyes</toctitle>
-   <linktitle>Sonnet 141: In faith, I do not love thee with mine eyes</linktitle>
-   <indextitle>In faith, I do not love thee with mine eyes</indextitle>
-   <firstline>In faith, I do not love thee with mine eyes</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>141</title>
+  <toctitle><num>141</num>In faith, I do not love thee with mine eyes</toctitle>
+  <linktitle>Sonnet 141: In faith, I do not love thee with mine eyes</linktitle>
+  <indextitle>In faith, I do not love thee with mine eyes</indextitle>
+  <firstline>In faith, I do not love thee with mine eyes</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -6051,13 +6052,13 @@ Thy proud heart's slave and vassal wretch to be:
 
 <text id="shakespeare0142">
 <head>
-   <title>142</title>
-   <toctitle><num>142</num>Love is my sin, and thy dear virtue hate</toctitle>
-   <linktitle>Sonnet 142: Love is my sin, and thy dear virtue hate</linktitle>
-   <indextitle>Love is my sin, and thy dear virtue hate</indextitle>
-   <firstline>Love is my sin, and thy dear virtue hate</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>142</title>
+  <toctitle><num>142</num>Love is my sin, and thy dear virtue hate</toctitle>
+  <linktitle>Sonnet 142: Love is my sin, and thy dear virtue hate</linktitle>
+  <indextitle>Love is my sin, and thy dear virtue hate</indextitle>
+  <firstline>Love is my sin, and thy dear virtue hate</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -6083,13 +6084,13 @@ Thy pity may deserve to pitied be.
 
 <text id="shakespeare0143">
 <head>
-   <title>143</title>
-   <toctitle><num>143</num>Lo, as a careful housewife runs to catch</toctitle>
-   <linktitle>Sonnet 143: Lo, as a careful housewife runs to catch</linktitle>
-   <indextitle>Lo, as a careful housewife runs to catch</indextitle>
-   <firstline>Lo, as a careful housewife runs to catch</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>143</title>
+  <toctitle><num>143</num>Lo, as a careful housewife runs to catch</toctitle>
+  <linktitle>Sonnet 143: Lo, as a careful housewife runs to catch</linktitle>
+  <indextitle>Lo, as a careful housewife runs to catch</indextitle>
+  <firstline>Lo, as a careful housewife runs to catch</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -6115,13 +6116,13 @@ And play the mother's part, kiss me, be kind:
 
 <text id="shakespeare0144">
 <head>
-   <title>144</title>
-   <toctitle><num>144</num>Two loves I have, of comfort and despair</toctitle>
-   <linktitle>Sonnet 144: Two loves I have, of comfort and despair</linktitle>
-   <indextitle>Two loues I haue of comfort and dispaire</indextitle>
-   <firstline>Two loves I have, of comfort and despair</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>144</title>
+  <toctitle><num>144</num>Two loves I have, of comfort and despair</toctitle>
+  <linktitle>Sonnet 144: Two loves I have, of comfort and despair</linktitle>
+  <indextitle>Two loues I haue of comfort and dispaire</indextitle>
+  <firstline>Two loves I have, of comfort and despair</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -6181,13 +6182,13 @@ I ghesse one Angell in anothers hell:
 
 <text id="shakespeare0145">
 <head>
-   <title>145</title>
-   <toctitle><num>145</num>Those lips that Love's own hand did make</toctitle>
-   <linktitle>Sonnet 145: Those lips that Love's own hand did make</linktitle>
-   <indextitle>Those lips that Love's own hand did make</indextitle>
-   <firstline>Those lips that Love's own hand did make</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>145</title>
+  <toctitle><num>145</num>Those lips that Love's own hand did make</toctitle>
+  <linktitle>Sonnet 145: Those lips that Love's own hand did make</linktitle>
+  <indextitle>Those lips that Love's own hand did make</indextitle>
+  <firstline>Those lips that Love's own hand did make</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -6213,13 +6214,13 @@ From heaven to hell is flown away.
 
 <text id="shakespeare0146">
 <head>
-   <title>146</title>
-   <toctitle><num>146</num>Poor soul, the centre of my sinful earth</toctitle>
-   <linktitle>Sonnet 146: Poor soul, the centre of my sinful earth</linktitle>
-   <indextitle>Poor soul, the centre of my sinful earth</indextitle>
-   <firstline>Poor soul, the centre of my sinful earth</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>146</title>
+  <toctitle><num>146</num>Poor soul, the centre of my sinful earth</toctitle>
+  <linktitle>Sonnet 146: Poor soul, the centre of my sinful earth</linktitle>
+  <indextitle>Poor soul, the centre of my sinful earth</indextitle>
+  <firstline>Poor soul, the centre of my sinful earth</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -6245,13 +6246,13 @@ Within be fed, without be rich no more:
 
 <text id="shakespeare0147">
 <head>
-   <title>147</title>
-   <toctitle><num>147</num>My love is as a fever, longing still</toctitle>
-   <linktitle>Sonnet 147: My love is as a fever, longing still</linktitle>
-   <indextitle>My love is as a fever, longing still</indextitle>
-   <firstline>My love is as a fever, longing still</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>147</title>
+  <toctitle><num>147</num>My love is as a fever, longing still</toctitle>
+  <linktitle>Sonnet 147: My love is as a fever, longing still</linktitle>
+  <indextitle>My love is as a fever, longing still</indextitle>
+  <firstline>My love is as a fever, longing still</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -6277,13 +6278,13 @@ At random from the truth vainly expressed:
 
 <text id="shakespeare0148">
 <head>
-   <title>148</title>
-   <toctitle><num>148</num>O me! What eyes hath Love put in my head</toctitle>
-   <linktitle>Sonnet 148: O me! What eyes hath Love put in my head</linktitle>
-   <indextitle>O me! What eyes hath Love put in my head</indextitle>
-   <firstline>O me! What eyes hath Love put in my head</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>148</title>
+  <toctitle><num>148</num>O me! What eyes hath Love put in my head</toctitle>
+  <linktitle>Sonnet 148: O me! What eyes hath Love put in my head</linktitle>
+  <indextitle>O me! What eyes hath Love put in my head</indextitle>
+  <firstline>O me! What eyes hath Love put in my head</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -6309,13 +6310,13 @@ The sun itself sees not, till heaven clears.
 
 <text id="shakespeare0149">
 <head>
-   <title>149</title>
-   <toctitle><num>149</num>Canst thou, O cruel, say I love thee not</toctitle>
-   <linktitle>Sonnet 149: Canst thou, O cruel, say I love thee not</linktitle>
-   <indextitle>Canst thou, O cruel, say I love thee not</indextitle>
-   <firstline>Canst thou, O cruel, say I love thee not</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>149</title>
+  <toctitle><num>149</num>Canst thou, O cruel, say I love thee not</toctitle>
+  <linktitle>Sonnet 149: Canst thou, O cruel, say I love thee not</linktitle>
+  <indextitle>Canst thou, O cruel, say I love thee not</indextitle>
+  <firstline>Canst thou, O cruel, say I love thee not</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -6341,13 +6342,13 @@ Commanded by the motion of thine eyes?
 
 <text id="shakespeare0150">
 <head>
-   <title>150</title>
-   <toctitle><num>150</num>O from what power hast thou this powerful might</toctitle>
-   <linktitle>Sonnet 150: O from what power hast thou this powerful might</linktitle>
-   <indextitle>O from what power hast thou this powerful might</indextitle>
-   <firstline>O from what power hast thou this powerful might</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>150</title>
+  <toctitle><num>150</num>O from what power hast thou this powerful might</toctitle>
+  <linktitle>Sonnet 150: O from what power hast thou this powerful might</linktitle>
+  <indextitle>O from what power hast thou this powerful might</indextitle>
+  <firstline>O from what power hast thou this powerful might</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -6373,13 +6374,13 @@ With others thou shouldst not abhor my state:
 
 <text id="shakespeare0151">
 <head>
-   <title>151</title>
-   <toctitle><num>151</num>Love is too young to know what conscience is</toctitle>
-   <linktitle>Sonnet 151: Love is too young to know what conscience is</linktitle>
-   <indextitle>Love is too young to know what conscience is</indextitle>
-   <firstline>Love is too young to know what conscience is</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>151</title>
+  <toctitle><num>151</num>Love is too young to know what conscience is</toctitle>
+  <linktitle>Sonnet 151: Love is too young to know what conscience is</linktitle>
+  <indextitle>Love is too young to know what conscience is</indextitle>
+  <firstline>Love is too young to know what conscience is</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -6405,13 +6406,13 @@ To stand in thy affairs, fall by thy side.
 
 <text id="shakespeare0152">
 <head>
-   <title>152</title>
-   <toctitle><num>152</num>In loving thee thou knowst I am forsworn</toctitle>
-   <linktitle>Sonnet 152: In loving thee thou knowst I am forsworn</linktitle>
-   <indextitle>In loving thee thou knowst I am forsworn</indextitle>
-   <firstline>In loving thee thou knowst I am forsworn</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>152</title>
+  <toctitle><num>152</num>In loving thee thou knowst I am forsworn</toctitle>
+  <linktitle>Sonnet 152: In loving thee thou knowst I am forsworn</linktitle>
+  <indextitle>In loving thee thou knowst I am forsworn</indextitle>
+  <firstline>In loving thee thou knowst I am forsworn</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -6437,13 +6438,13 @@ Or made them swear against the thing they see:
 
 <text id="shakespeare0153">
 <head>
-   <title>153</title>
-   <toctitle><num>153</num>Cupid laid by his brand, and fell asleep</toctitle>
-   <linktitle>Sonnet 153: Cupid laid by his brand, and fell asleep</linktitle>
-   <indextitle>Cupid laid by his brand, and fell asleep</indextitle>
-   <firstline>Cupid laid by his brand, and fell asleep</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>153</title>
+  <toctitle><num>153</num>Cupid laid by his brand, and fell asleep</toctitle>
+  <linktitle>Sonnet 153: Cupid laid by his brand, and fell asleep</linktitle>
+  <indextitle>Cupid laid by his brand, and fell asleep</indextitle>
+  <firstline>Cupid laid by his brand, and fell asleep</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -6469,13 +6470,13 @@ And thither hied, a sad distempered guest,
 
 <text id="shakespeare0154">
 <head>
-   <title>154</title>
-   <toctitle><num>154</num>The little Love-god lying once asleep</toctitle>
-   <linktitle>Sonnet 154: The little Love-god lying once asleep</linktitle>
-   <indextitle>The little Love-god lying once asleep</indextitle>
-   <firstline>The little Love-god lying once asleep</firstline>
-   <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>154</title>
+  <toctitle><num>154</num>The little Love-god lying once asleep</toctitle>
+  <linktitle>Sonnet 154: The little Love-god lying once asleep</linktitle>
+  <indextitle>The little Love-god lying once asleep</indextitle>
+  <firstline>The little Love-god lying once asleep</firstline>
+  <quality>korrektur1,korrektur2,korrektur3,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -6498,5 +6499,6 @@ For men diseased; but I, my mistress' thrall,
 </poetry>
 </body>
 </text>
+
 </workbody>
 </kalliopework>

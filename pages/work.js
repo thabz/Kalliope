@@ -1,55 +1,39 @@
-// @flow
-
-import React from 'react';
-import { Link } from '../routes';
-import Page from '../components/page.js';
-import Main from '../components/main.js';
-import { workCrumbs } from '../components/breadcrumbs.js';
-import SidebarSplit from '../components/sidebarsplit.js';
-import LangSelect from '../components/langselect.js';
-import { poetMenu } from '../components/menu.js';
-import SubHeading from '../components/subheading.js';
-import PoetName from '../components/poetname.js';
-import { poetNameString } from '../components/poetname-helpers.js';
-import WorkName, { workTitleString } from '../components/workname.js';
-import WorkSubtitles from '../components/worksubtitles.js';
-import Note from '../components/note.js';
-import TOC from '../components/toc.js';
-import TextContent from '../components/textcontent.js';
-import SidebarPictures from '../components/sidebarpictures.js';
-import Picture from '../components/picture.js';
-import ErrorPage from './error.js';
-import * as Links from '../components/links';
 import * as Client from '../common/client.js';
 import * as OpenGraph from '../common/opengraph.js';
-import CommonData from '../common/commondata.js';
 import _ from '../common/translations.js';
-import { request } from 'http';
-import WorksList from '../components/workslist';
-import type {
-  Lang,
-  Poet,
-  PoetId,
-  WorkId,
-  Work,
-  TocItem,
-  NoteItem,
-  PictureItem,
-  Error,
-} from '../common/types.js';
+import { workCrumbs } from '../components/breadcrumbs.js';
+import { formattedDate } from '../components/formatteddate.js';
+import * as Links from '../components/links.js';
+import { poetMenu } from '../components/menu.js';
+import Note from '../components/note.js';
+import Page from '../components/page.js';
+import { poetNameString } from '../components/poetname-helpers.js';
+import PoetName from '../components/poetname.js';
+import SidebarPictures from '../components/sidebarpictures.js';
+import SidebarSplit from '../components/sidebarsplit.js';
+import Stack from '../components/stack.js';
+import SubHeading from '../components/subheading.js';
+import TextContent from '../components/textcontent.js';
+import TOC from '../components/toc.js';
+import WorkName, { workTitleString } from '../components/workname.js';
+import WorksList from '../components/workslist.js';
+import WorkSubtitles from '../components/worksubtitles.js';
+import ErrorPage from './error.js';
 
-type WorkProps = {
-  lang: Lang,
-  poet: Poet,
-  work: Work,
-  toc: Array<TocItem>,
-  subworks: Array<Work>,
-  notes: Array<NoteItem>,
-  pictures: Array<PictureItem>,
-  error: ?Error,
-};
-const WorkPage = (props: WorkProps) => {
-  const { lang, poet, work, notes, pictures, toc, subworks, error } = props;
+const WorkPage = (props) => {
+  const {
+    lang,
+    poet,
+    work,
+    notes,
+    pictures,
+    toc,
+    subworks,
+    modified,
+    prev,
+    next,
+    error,
+  } = props;
 
   if (error) {
     return <ErrorPage error={error} lang={lang} message="Ukendt værk" />;
@@ -67,17 +51,7 @@ const WorkPage = (props: WorkProps) => {
     );
   });
 
-  const workPictures = pictures.map((p, i) => {
-    return (
-      <Picture
-        pictures={[p]}
-        key={'picture' + i}
-        contentLang={p.content_lang || 'da'}
-        lang={lang}
-      />
-    );
-  });
-  const renderedPictures = <SidebarPictures>{workPictures}</SidebarPictures>;
+  const renderedPictures = <SidebarPictures pictures={pictures} lang={lang} />;
   const completedStatus =
     work.status === 'incomplete' && work.id !== 'andre' ? (
       <div>
@@ -85,13 +59,27 @@ const WorkPage = (props: WorkProps) => {
         er endnu ikke fuldstændig.
       </div>
     ) : null;
+  const modifiedDate =
+    modified != null ? (
+      <div className="modified">
+        {_('Sidst ændret', lang)} {formattedDate(modified, lang)}.
+      </div>
+    ) : null;
   let sidebar = null;
-  if (pictures.length > 0 || notes.length > 0 || completedStatus != null) {
+  if (
+    pictures.length > 0 ||
+    notes.length > 0 ||
+    completedStatus != null ||
+    modifiedDate != null
+  ) {
     sidebar = (
       <div>
-        {renderedPictures}
-        {renderedNotes}
-        {completedStatus}
+        <Stack spacing="20px">
+          {renderedPictures}
+          {renderedNotes}
+          {completedStatus}
+          {modifiedDate}
+        </Stack>
       </div>
     );
   }
@@ -109,20 +97,37 @@ const WorkPage = (props: WorkProps) => {
   }
   let ogDescription = null;
   if (toc != null && toc.length > 0) {
-    ogDescription = toc.map(part => part.title).join(', ');
+    ogDescription = toc.map((part) => part.title).join(', ');
   } else if (subworks != null && subworks.length > 0) {
-    ogDescription = subworks.map(part => part.toctitle).join(', ');
+    ogDescription = subworks.map((part) => part.toctitle).join(', ');
   }
 
-  let sectixonTitles = null;
+  let paging = {};
+  if (prev != null) {
+    paging.prev = {
+      url: Links.workURL(lang, poet.id, prev.id),
+      title: workTitleString(prev, lang),
+    };
+  }
+  if (next != null) {
+    paging.next = {
+      url: Links.workURL(lang, poet.id, next.id),
+      title: workTitleString(next, lang),
+    };
+  }
 
   return (
     <Page
-      headTitle={`${workTitleString(work)} - ${poetNameString(
-        poet
+      headTitle={`${workTitleString(work, lang)} - ${poetNameString(
+        poet,
+        false,
+        false,
+        lang
       )} - Kalliope`}
       ogTitle={
-        poetNameString(poet, false, false) + ': ' + workTitleString(work)
+        poetNameString(poet, false, false, lang) +
+        ': ' +
+        workTitleString(work, lang)
       }
       ogImage={OpenGraph.poetImage(poet)}
       ogDescription={ogDescription}
@@ -130,6 +135,7 @@ const WorkPage = (props: WorkProps) => {
       crumbs={workCrumbs(lang, poet, work)}
       pageTitle={<PoetName poet={poet} includePeriod />}
       pageSubtitle={_('Værker', lang)}
+      paging={paging}
       menuItems={poetMenu(poet)}
       poet={poet}
       selectedMenuItem="works">
@@ -144,6 +150,10 @@ const WorkPage = (props: WorkProps) => {
             :global(.nodata) {
               padding: 30px 0;
             }
+            .modified {
+              color: #777;
+              font-size: 0.9em;
+            }
           `}</style>
         </div>
       </SidebarSplit>
@@ -151,11 +161,7 @@ const WorkPage = (props: WorkProps) => {
   );
 };
 
-WorkPage.getInitialProps = async ({
-  query: { lang, poetId, workId },
-}: {
-  query: { lang: Lang, poetId: PoetId, workId: WorkId },
-}) => {
+WorkPage.getInitialProps = async ({ query: { lang, poetId, workId } }) => {
   const json = await Client.work(poetId, workId);
   return {
     lang,
@@ -165,6 +171,9 @@ WorkPage.getInitialProps = async ({
     subworks: json.subworks,
     notes: json.notes,
     pictures: json.pictures,
+    modified: json.modified,
+    prev: json.prev,
+    next: json.next,
     error: json.error,
   };
 };

@@ -21,25 +21,43 @@ yarn-error.log*
 
 # Caches used by build-json
 caches
+.cache/kalliope-work-identifiers/
+__pycache__/
+
+# Candidate-register source caches
+/tools/data/indsamling/*/raw/
+/tools/data/indsamling/*/parsed/
+/tools/data/indsamling/register/*.json
+!/tools/data/indsamling/register/manual-decisions.json
+
+# Lokale, genererede Wikidata-resultater og rapporter
+/docs/indsamling/wikidata/observations.json
+/docs/indsamling/wikidata/overlap.json
+/docs/indsamling/rapporter/wikidata-overlap.md
+
+# Lokale rapporter fra identifier-reconciliation
+/reports/identifier-reconciliation/*.csv
 
 # Generated JSON files
-static/api
+public/api
+public/generated
 
 # Generated XML sitemap
-static/sitemap.xml    
-static/sitemaps/*.xml
+public/sitemap.xml
+public/sitemaps/*.xml
 
 # Generated thumbnails
-static/**/*-w????.jpg
-static/**/*-w???.jpg
-static/**/*-w??.jpg
-static/**/*-w????.webp
-static/**/*-w???.webp
-static/**/*-w??.webp
-static/images/*/social
+public/**/*-w????.jpg
+public/**/*-w???.jpg
+public/**/*-w??.jpg
+public/**/*-w????.webp
+public/**/*-w???.webp
+public/**/*-w??.webp
+public/images/*/social
 
 # Facsimiles
-static/facsimiles
+public/facsimiles
+facsimiles
 
 # iCal kalender
-static/Kalliope.ics
+public/Kalliope.ics

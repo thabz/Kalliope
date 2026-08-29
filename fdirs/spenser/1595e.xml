@@ -1,34 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="1595e" author="spenser" status="complete" type="poetry">
 <workhead>
-   <title>Amoretti and Epithalamion</title>
-   <year>1595</year>
-   <notes>
-      <note>Kilde er Edmund Spenser, <i>The Shorter Poems</i>, ed. Richard A. McCabe, Penguin Books 1999.</note>
-      <note>»&amp;« i originalen har McCabe standardiseret til »and« - dette er ikke sket i Kalliope-udgaven.</note>
-      <note type="credits">Bidrag fra Brian Bentsen.</note>
-   </notes>
-   <pictures>
-      <picture src="1595e-p1.jpg">Facsimile af titelbladet</picture>
-   </pictures>
-   <quality>korrektur1,kilde</quality>
-   <cvs-timestamp>$Id$</cvs-timestamp>
+  <title>Amoretti and Epithalamion</title>
+  <year>1595</year>
+  <notes>
+    <note>»&amp;« i originalen har McCabe standardiseret til »and« - dette er ikke sket i Kalliope-udgaven.</note>
+    <note type="credits">Bidrag fra Brian Bentsen.</note>
+  </notes>
+  <source>Edmund Spenser, <i>The Shorter Poems</i>, ed. Richard A. McCabe, Penguin Books 1999.</source>
+  <pictures>
+    <picture src="1595e-p1.jpg">Facsimile af titelbladet</picture>
+  </pictures>
+  <quality>korrektur1,kilde</quality>
 </workhead>
 <workbody>
 
 <section level="1">
 <head>
-   <toctitle>Amoretti</toctitle>
+  <toctitle>Amoretti</toctitle>
 </head>
 <content>
 
 <text id="spenser2002020590a" skip-index="true">
 <head>
-   <title>To the Right Worshipfull Sir Robart Needham Knight</title>
-   <toctitle>To the Right Worshipfull Sir Robart Needham Knight</toctitle>
-   <indextitle>To the Right Worshipfull Sir Robart Needham Knight</indextitle>
-   <quality>korrektur1,kilde</quality>
+  <title>To the Right Worshipfull Sir Robart Needham Knight</title>
+  <toctitle>To the Right Worshipfull Sir Robart Needham Knight</toctitle>
+  <indextitle>To the Right Worshipfull Sir Robart Needham Knight</indextitle>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <prose>
@@ -41,16 +39,16 @@ Sir, to gratulate your safe return from Ireland, I had nothing so readie, nor th
 
 <text id="spenser2002020590">
 <head>
-   <title>G: W. senior, to the Author</title>
-   <toctitle>G: W. senior, to the Author</toctitle>
-   <indextitle>G: W. senior, to the Author</indextitle>
-   <firstline>Darke is the day, when Ph&oelig;bus face is shrowded</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>G: W. senior, to the Author</title>
+  <toctitle>G: W. senior, to the Author</toctitle>
+  <indextitle>G: W. senior, to the Author</indextitle>
+  <firstline>Darke is the day, when Phœbus face is shrowded</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
-Darke is the day, when <i>Ph&oelig;bus</i> face is shrowded,
+Darke is the day, when <i>Phœbus</i> face is shrowded,
     and weaker sights may wander soone astray;
     but when they see his glorious raies vnclowded,
     with steddy steps they keepe the perfect way:
@@ -70,12 +68,12 @@ So we that liue and ages that succeede,
 
 <text id="spenser2002020591">
 <head>
-   <title>To the Author</title>
-   <toctitle>To the Author</toctitle>
-   <indextitle>To the Author</indextitle>
-   <firstline>Ah Colin, whether on the lowly plaine</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>To the Author</title>
+  <toctitle>To the Author</toctitle>
+  <indextitle>To the Author</indextitle>
+  <firstline>Ah Colin, whether on the lowly plaine</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -101,12 +99,12 @@ So we that liue and ages that succeede,
 
 <text id="spenser2002020501">
 <head>
-   <title>Sonnet I</title>
-   <toctitle>Sonnet I (Happy ye leaues when as those lilly hands)</toctitle>
-   <indextitle>Happy ye leaues when as those lilly hands</indextitle>
-   <firstline>Happy ye leaues when as those lilly hands</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet I</title>
+  <toctitle>Sonnet I (Happy ye leaues when as those lilly hands)</toctitle>
+  <indextitle>Happy ye leaues when as those lilly hands</indextitle>
+  <firstline>Happy ye leaues when as those lilly hands</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -130,12 +128,12 @@ Leaues, lines, and rymes, seeke her to please alone,
 
 <text id="spenser2002020502">
 <head>
-   <title>Sonnet II</title>
-   <toctitle>Sonnet II (Vnquiet thought, whom at the first I bred)</toctitle>
-   <indextitle>Vnquiet thought, whom at the first I bred</indextitle>
-   <firstline>Vnquiet thought, whom at the first I bred</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet II</title>
+  <toctitle>Sonnet II (Vnquiet thought, whom at the first I bred)</toctitle>
+  <indextitle>Vnquiet thought, whom at the first I bred</indextitle>
+  <firstline>Vnquiet thought, whom at the first I bred</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -159,12 +157,12 @@ Which if she graunt, then liue and my loue cherish,
 
 <text id="spenser2002020503">
 <head>
-   <title>Sonnet III</title>
-   <toctitle>Sonnet III (The souerayne beauty which I doo admyre)</toctitle>
-   <indextitle>The souerayne beauty which I doo admyre</indextitle>
-   <firstline>The souerayne beauty which I doo admyre</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet III</title>
+  <toctitle>Sonnet III (The souerayne beauty which I doo admyre)</toctitle>
+  <indextitle>The souerayne beauty which I doo admyre</indextitle>
+  <firstline>The souerayne beauty which I doo admyre</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -188,12 +186,12 @@ Yet in my hart I then both speake and write
 
 <text id="spenser2002020504">
 <head>
-   <title>Sonnet IIII</title>
-   <toctitle>Sonnet IIII (New yeare forth looking out of Ianus gate)</toctitle>
-   <indextitle>New yeare forth looking out of Ianus gate</indextitle>
-   <firstline>New yeare forth looking out of Ianus gate</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet IIII</title>
+  <toctitle>Sonnet IIII (New yeare forth looking out of Ianus gate)</toctitle>
+  <indextitle>New yeare forth looking out of Ianus gate</indextitle>
+  <firstline>New yeare forth looking out of Ianus gate</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -217,12 +215,12 @@ Then you faire flowre, in whom fresh youth doth raine,
 
 <text id="spenser2002020505">
 <head>
-   <title>Sonnet V</title>
-   <toctitle>Sonnet V (Rudely thou wrongest my deare harts desire)</toctitle>
-   <indextitle>Rudely thou wrongest my deare harts desire</indextitle>
-   <firstline>Rudely thou wrongest my deare harts desire</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet V</title>
+  <toctitle>Sonnet V (Rudely thou wrongest my deare harts desire)</toctitle>
+  <indextitle>Rudely thou wrongest my deare harts desire</indextitle>
+  <firstline>Rudely thou wrongest my deare harts desire</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -246,12 +244,12 @@ Was neuer in this world ought worthy tride,
 
 <text id="spenser2002020506">
 <head>
-   <title>Sonnet VI</title>
-   <toctitle>Sonnet VI (Be nought dismayd that her vnmoued mind)</toctitle>
-   <indextitle>Be nought dismayd that her vnmoued mind</indextitle>
-   <firstline>Be nought dismayd that her vnmoued mind</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet VI</title>
+  <toctitle>Sonnet VI (Be nought dismayd that her vnmoued mind)</toctitle>
+  <indextitle>Be nought dismayd that her vnmoued mind</indextitle>
+  <firstline>Be nought dismayd that her vnmoued mind</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -275,12 +273,12 @@ Then thinke not long in taking litle paine
 
 <text id="spenser2002020507">
 <head>
-   <title>Sonnet VII</title>
-   <toctitle>Sonnet VII (Fayre eyes, the myrrour of my mazed hart)</toctitle>
-   <indextitle>Fayre eyes, the myrrour of my mazed hart</indextitle>
-   <firstline>Fayre eyes, the myrrour of my mazed hart</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet VII</title>
+  <toctitle>Sonnet VII (Fayre eyes, the myrrour of my mazed hart)</toctitle>
+  <indextitle>Fayre eyes, the myrrour of my mazed hart</indextitle>
+  <firstline>Fayre eyes, the myrrour of my mazed hart</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -304,12 +302,12 @@ Such life should be the honor of your light,
 
 <text id="spenser2002020508">
 <head>
-   <title>Sonnet VIII</title>
-   <toctitle>Sonnet VIII (More then most faire, full of the liuing fire)</toctitle>
-   <indextitle>More then most faire, full of the liuing fire</indextitle>
-   <firstline>More then most faire, full of the liuing fire</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet VIII</title>
+  <toctitle>Sonnet VIII (More then most faire, full of the liuing fire)</toctitle>
+  <indextitle>More then most faire, full of the liuing fire</indextitle>
+  <firstline>More then most faire, full of the liuing fire</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -333,12 +331,12 @@ Dark is the world, where your light shined neuer;
 
 <text id="spenser2002020509">
 <head>
-   <title>Sonnet IX</title>
-   <toctitle>Sonnet IX (Long-while I sought to what I might compare)</toctitle>
-   <indextitle>Long-while I sought to what I might compare</indextitle>
-   <firstline>Long-while I sought to what I might compare</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet IX</title>
+  <toctitle>Sonnet IX (Long-while I sought to what I might compare)</toctitle>
+  <indextitle>Long-while I sought to what I might compare</indextitle>
+  <firstline>Long-while I sought to what I might compare</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -362,12 +360,12 @@ Then to the Maker selfe they likest be,
 
 <text id="spenser2002020510">
 <head>
-   <title>Sonnet X</title>
-   <toctitle>Sonnet X (Vnrighteous Lord of loue what law is this)</toctitle>
-   <indextitle>Vnrighteous Lord of loue what law is this</indextitle>
-   <firstline>Vnrighteous Lord of loue what law is this</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet X</title>
+  <toctitle>Sonnet X (Vnrighteous Lord of loue what law is this)</toctitle>
+  <indextitle>Vnrighteous Lord of loue what law is this</indextitle>
+  <firstline>Vnrighteous Lord of loue what law is this</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -391,12 +389,12 @@ That I may laugh at her in equall sort,
 
 <text id="spenser2002020511">
 <head>
-   <title>Sonnet XI</title>
-   <toctitle>Sonnet XI (Dayly when I do seeke and sew for peace)</toctitle>
-   <indextitle>Dayly when I do seeke and sew for peace</indextitle>
-   <firstline>Dayly when I do seeke and sew for peace</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet XI</title>
+  <toctitle>Sonnet XI (Dayly when I do seeke and sew for peace)</toctitle>
+  <indextitle>Dayly when I do seeke and sew for peace</indextitle>
+  <firstline>Dayly when I do seeke and sew for peace</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -420,12 +418,12 @@ All paine hath end and euery war hath peace,
 
 <text id="spenser2002020512">
 <head>
-   <title>Sonnet XII</title>
-   <toctitle>Sonnet XII (One day I sought with her hart-thrilling eies)</toctitle>
-   <indextitle>One day I sought with her hart-thrilling eies</indextitle>
-   <firstline>One day I sought with her hart-thrilling eies</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet XII</title>
+  <toctitle>Sonnet XII (One day I sought with her hart-thrilling eies)</toctitle>
+  <indextitle>One day I sought with her hart-thrilling eies</indextitle>
+  <firstline>One day I sought with her hart-thrilling eies</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -449,12 +447,12 @@ So Ladie now to you I doo complaine,
 
 <text id="spenser2002020513">
 <head>
-   <title>Sonnet XIII</title>
-   <toctitle>Sonnet XIII (In that proud port, which her so goodly graceth)</toctitle>
-   <indextitle>In that proud port, which her so goodly graceth</indextitle>
-   <firstline>In that proud port, which her so goodly graceth</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet XIII</title>
+  <toctitle>Sonnet XIII (In that proud port, which her so goodly graceth)</toctitle>
+  <indextitle>In that proud port, which her so goodly graceth</indextitle>
+  <firstline>In that proud port, which her so goodly graceth</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -478,12 +476,12 @@ Yet lowly still vouchsafe to looke on me,
 
 <text id="spenser2002020514">
 <head>
-   <title>Sonnet XIIII</title>
-   <toctitle>Sonnet XIIII (Retourne agayne my forces late dismayd)</toctitle>
-   <indextitle>Retourne agayne my forces late dismayd</indextitle>
-   <firstline>Retourne agayne my forces late dismayd</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet XIIII</title>
+  <toctitle>Sonnet XIIII (Retourne agayne my forces late dismayd)</toctitle>
+  <indextitle>Retourne agayne my forces late dismayd</indextitle>
+  <firstline>Retourne agayne my forces late dismayd</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -507,12 +505,12 @@ And if those fayle fall downe and dy before her,
 
 <text id="spenser2002020515">
 <head>
-   <title>Sonnet XV</title>
-   <toctitle>Sonnet XV (Ye tradefull Merchants that with weary toyle)</toctitle>
-   <indextitle>Ye tradefull Merchants that with weary toyle</indextitle>
-   <firstline>Ye tradefull Merchants that with weary toyle</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet XV</title>
+  <toctitle>Sonnet XV (Ye tradefull Merchants that with weary toyle)</toctitle>
+  <indextitle>Ye tradefull Merchants that with weary toyle</indextitle>
+  <firstline>Ye tradefull Merchants that with weary toyle</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -536,12 +534,12 @@ But that which fairest is, but few behold,
 
 <text id="spenser2002020516">
 <head>
-   <title>Sonnet XVI</title>
-   <toctitle>Sonnet XVI (One day as I vnwarily did gaze)</toctitle>
-   <indextitle>One day as I vnwarily did gaze</indextitle>
-   <firstline>One day as I vnwarily did gaze</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet XVI</title>
+  <toctitle>Sonnet XVI (One day as I vnwarily did gaze)</toctitle>
+  <indextitle>One day as I vnwarily did gaze</indextitle>
+  <firstline>One day as I vnwarily did gaze</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -565,12 +563,12 @@ Had she not so doon, sure I had bene slayne,
 
 <text id="spenser2002020517">
 <head>
-   <title>Sonnet XVII</title>
-   <toctitle>Sonnet XVII (The glorious pourtraict of that Angels face)</toctitle>
-   <indextitle>The glorious pourtraict of that Angels face</indextitle>
-   <firstline>The glorious pourtraict of that Angels face</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet XVII</title>
+  <toctitle>Sonnet XVII (The glorious pourtraict of that Angels face)</toctitle>
+  <indextitle>The glorious pourtraict of that Angels face</indextitle>
+  <firstline>The glorious pourtraict of that Angels face</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -594,12 +592,12 @@ A greater craftesmans hand thereto doth neede,
 
 <text id="spenser2002020518">
 <head>
-   <title>Sonnet XVIII</title>
-   <toctitle>Sonnet XVIII (The rolling wheele that runneth often round)</toctitle>
-   <indextitle>The rolling wheele that runneth often round</indextitle>
-   <firstline>The rolling wheele that runneth often round</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet XVIII</title>
+  <toctitle>Sonnet XVIII (The rolling wheele that runneth often round)</toctitle>
+  <indextitle>The rolling wheele that runneth often round</indextitle>
+  <firstline>The rolling wheele that runneth often round</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -623,12 +621,12 @@ So doe I weepe, and wayle, and pleade in vaine,
 
 <text id="spenser2002020519">
 <head>
-   <title>Sonnet XIX</title>
-   <toctitle>Sonnet XIX (The merry Cuckow, messenger of Spring)</toctitle>
-   <indextitle>The merry Cuckow, messenger of Spring</indextitle>
-   <firstline>The merry Cuckow, messenger of Spring</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet XIX</title>
+  <toctitle>Sonnet XIX (The merry Cuckow, messenger of Spring)</toctitle>
+  <indextitle>The merry Cuckow, messenger of Spring</indextitle>
+  <firstline>The merry Cuckow, messenger of Spring</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -652,12 +650,12 @@ Therefore O loue, vnlesse she turne to thee
 
 <text id="spenser2002020520">
 <head>
-   <title>Sonnet XX</title>
-   <toctitle>Sonnet XX (In vaine I seeke and sew to her for grace)</toctitle>
-   <indextitle>In vaine I seeke and sew to her for grace</indextitle>
-   <firstline>In vaine I seeke and sew to her for grace</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet XX</title>
+  <toctitle>Sonnet XX (In vaine I seeke and sew to her for grace)</toctitle>
+  <indextitle>In vaine I seeke and sew to her for grace</indextitle>
+  <firstline>In vaine I seeke and sew to her for grace</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -681,12 +679,12 @@ Fayrer then fayrest let none euer say,
 
 <text id="spenser2002020521">
 <head>
-   <title>Sonnet XXI</title>
-   <toctitle>Sonnet XXI (Was it the worke of nature or of Art)</toctitle>
-   <indextitle>Was it the worke of nature or of Art</indextitle>
-   <firstline>Was it the worke of nature or of Art</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet XXI</title>
+  <toctitle>Sonnet XXI (Was it the worke of nature or of Art)</toctitle>
+  <indextitle>Was it the worke of nature or of Art</indextitle>
+  <firstline>Was it the worke of nature or of Art</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -710,12 +708,12 @@ Thus doth she traine and teach me with her lookes,
 
 <text id="spenser2002020522">
 <head>
-   <title>Sonnet XXII</title>
-   <toctitle>Sonnet XXII (This holy season fit to fast and pray)</toctitle>
-   <indextitle>This holy season fit to fast and pray</indextitle>
-   <firstline>This holy season fit to fast and pray</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet XXII</title>
+  <toctitle>Sonnet XXII (This holy season fit to fast and pray)</toctitle>
+  <indextitle>This holy season fit to fast and pray</indextitle>
+  <firstline>This holy season fit to fast and pray</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -739,12 +737,12 @@ The which vouchsafe O goddesse to accept,
 
 <text id="spenser2002020523">
 <head>
-   <title>Sonnet XXIII</title>
-   <toctitle>Sonnet XXIII (Penelope for her Vlisses sake)</toctitle>
-   <indextitle>Penelope for her Vlisses sake</indextitle>
-   <firstline>Penelope for her Vlisses sake</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet XXIII</title>
+  <toctitle>Sonnet XXIII (Penelope for her Vlisses sake)</toctitle>
+  <indextitle>Penelope for her Vlisses sake</indextitle>
+  <firstline>Penelope for her Vlisses sake</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -768,12 +766,12 @@ Such labour like the Spyders web I fynd,
 
 <text id="spenser2002020524">
 <head>
-   <title>Sonnet XXIIII</title>
-   <toctitle>Sonnet XXIIII (When I behold that beauties wonderment)</toctitle>
-   <indextitle>When I behold that beauties wonderment</indextitle>
-   <firstline>When I behold that beauties wonderment</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet XXIIII</title>
+  <toctitle>Sonnet XXIIII (When I behold that beauties wonderment)</toctitle>
+  <indextitle>When I behold that beauties wonderment</indextitle>
+  <firstline>When I behold that beauties wonderment</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -797,12 +795,12 @@ But since ye are my scourge I will intreat,
 
 <text id="spenser2002020525">
 <head>
-   <title>Sonnet XXV</title>
-   <toctitle>Sonnet XXV (How long shall this lyke dying lyfe endure)</toctitle>
-   <indextitle>How long shall this lyke dying lyfe endure</indextitle>
-   <firstline>How long shall this lyke dying lyfe endure</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet XXV</title>
+  <toctitle>Sonnet XXV (How long shall this lyke dying lyfe endure)</toctitle>
+  <indextitle>How long shall this lyke dying lyfe endure</indextitle>
+  <firstline>How long shall this lyke dying lyfe endure</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -826,12 +824,12 @@ And wish that more and greater they might be,
 
 <text id="spenser2002020526">
 <head>
-   <title>Sonnet XXVI</title>
-   <toctitle>Sonnet XXVI (Sweet is the Rose, but growes vpon a brere)</toctitle>
-   <indextitle>Sweet is the Rose, but growes vpon a brere</indextitle>
-   <firstline>Sweet is the Rose, but growes vpon a brere</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet XXVI</title>
+  <toctitle>Sonnet XXVI (Sweet is the Rose, but growes vpon a brere)</toctitle>
+  <indextitle>Sweet is the Rose, but growes vpon a brere</indextitle>
+  <firstline>Sweet is the Rose, but growes vpon a brere</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -855,12 +853,12 @@ Why then should I accoumpt of little paine,
 
 <text id="spenser2002020527">
 <head>
-   <title>Sonnet XXVII</title>
-   <toctitle>Sonnet XXVII (Faire proud now tell me why should faire be proud)</toctitle>
-   <indextitle>Faire proud now tell me why should faire be proud</indextitle>
-   <firstline>Faire proud now tell me why should faire be proud</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet XXVII</title>
+  <toctitle>Sonnet XXVII (Faire proud now tell me why should faire be proud)</toctitle>
+  <indextitle>Faire proud now tell me why should faire be proud</indextitle>
+  <firstline>Faire proud now tell me why should faire be proud</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -884,12 +882,12 @@ Faire be no lenger proud of that shall perish,
 
 <text id="spenser2002020528">
 <head>
-   <title>Sonnet XXVIII</title>
-   <toctitle>Sonnet XXVIII (The laurell leafe, which you this day doe weare)</toctitle>
-   <indextitle>The laurell leafe, which you this day doe weare</indextitle>
-   <firstline>The laurell leafe, which you this day doe weare</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet XXVIII</title>
+  <toctitle>Sonnet XXVIII (The laurell leafe, which you this day doe weare)</toctitle>
+  <indextitle>The laurell leafe, which you this day doe weare</indextitle>
+  <firstline>The laurell leafe, which you this day doe weare</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -913,12 +911,12 @@ Then fly no more fayre loue from Phebus chace,
 
 <text id="spenser2002020529">
 <head>
-   <title>Sonnet XXIX</title>
-   <toctitle>Sonnet XXIX (See how the stubborne damzell doth depraue)</toctitle>
-   <indextitle>See how the stubborne damzell doth depraue</indextitle>
-   <firstline>See how the stubborne damzell doth depraue</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet XXIX</title>
+  <toctitle>Sonnet XXIX (See how the stubborne damzell doth depraue)</toctitle>
+  <indextitle>See how the stubborne damzell doth depraue</indextitle>
+  <firstline>See how the stubborne damzell doth depraue</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -942,12 +940,12 @@ Then would I decke her head with glorious bayes,
 
 <text id="spenser2002020530">
 <head>
-   <title>Sonnet XXX</title>
-   <toctitle>Sonnet XXX (My loue is lyke to yse, and I to fyre)</toctitle>
-   <indextitle>My loue is lyke to yse, and I to fyre</indextitle>
-   <firstline>My loue is lyke to yse, and I to fyre</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet XXX</title>
+  <toctitle>Sonnet XXX (My loue is lyke to yse, and I to fyre)</toctitle>
+  <indextitle>My loue is lyke to yse, and I to fyre</indextitle>
+  <firstline>My loue is lyke to yse, and I to fyre</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -971,12 +969,12 @@ Such is the powre of loue in gentle mind,
 
 <text id="spenser2002020531">
 <head>
-   <title>Sonnet XXXI</title>
-   <toctitle>Sonnet XXXI (Ah why hath nature to so hard a hart)</toctitle>
-   <indextitle>Ah why hath nature to so hard a hart</indextitle>
-   <firstline>Ah why hath nature to so hard a hart</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet XXXI</title>
+  <toctitle>Sonnet XXXI (Ah why hath nature to so hard a hart)</toctitle>
+  <indextitle>Ah why hath nature to so hard a hart</indextitle>
+  <firstline>Ah why hath nature to so hard a hart</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1000,12 +998,12 @@ But did she know how ill these two accord,
 
 <text id="spenser2002020532">
 <head>
-   <title>Sonnet XXXII</title>
-   <toctitle>Sonnet XXXII (The paynefull smith with force of feruent heat)</toctitle>
-   <indextitle>The paynefull smith with force of feruent heat</indextitle>
-   <firstline>The paynefull smith with force of feruent heat</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet XXXII</title>
+  <toctitle>Sonnet XXXII (The paynefull smith with force of feruent heat)</toctitle>
+  <indextitle>The paynefull smith with force of feruent heat</indextitle>
+  <firstline>The paynefull smith with force of feruent heat</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1029,12 +1027,12 @@ What then remaines but I to ashes burne,
 
 <text id="spenser2002020533">
 <head>
-   <title>Sonnet XXXIII</title>
-   <toctitle>Sonnet XXXIII (Great wrong I doe, I can it not deny)</toctitle>
-   <indextitle>Great wrong I doe, I can it not deny</indextitle>
-   <firstline>Great wrong I doe, I can it not deny</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet XXXIII</title>
+  <toctitle>Sonnet XXXIII (Great wrong I doe, I can it not deny)</toctitle>
+  <indextitle>Great wrong I doe, I can it not deny</indextitle>
+  <firstline>Great wrong I doe, I can it not deny</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1058,12 +1056,12 @@ Ceasse then, till she vouchsafe to grawnt me rest,
 
 <text id="spenser2002020534">
 <head>
-   <title>Sonnet XXXIIII</title>
-   <toctitle>Sonnet XXXIIII (Lyke as a ship that through the Ocean wyde)</toctitle>
-   <indextitle>Lyke as a ship that through the Ocean wyde</indextitle>
-   <firstline>Lyke as a ship that through the Ocean wyde</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet XXXIIII</title>
+  <toctitle>Sonnet XXXIIII (Lyke as a ship that through the Ocean wyde)</toctitle>
+  <indextitle>Lyke as a ship that through the Ocean wyde</indextitle>
+  <firstline>Lyke as a ship that through the Ocean wyde</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1087,12 +1085,12 @@ Till then I wander carefull comfortlesse,
 
 <text id="spenser2002020535">
 <head>
-   <title>Sonnet XXXV</title>
-   <toctitle>Sonnet XXXV (My hungry eyes, through greedy couetize)</toctitle>
-   <indextitle>My hungry eyes through greedy couetize</indextitle>
-   <firstline>My hungry eyes through greedy couetize</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet XXXV</title>
+  <toctitle>Sonnet XXXV (My hungry eyes, through greedy couetize)</toctitle>
+  <indextitle>My hungry eyes through greedy couetize</indextitle>
+  <firstline>My hungry eyes through greedy couetize</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1116,12 +1114,12 @@ All this worlds glory seemeth vayne to me,
 
 <text id="spenser2002020536">
 <head>
-   <title>Sonnet XXXVI</title>
-   <toctitle>Sonnet XXXVI (Tell me when shall these wearie woes haue end)</toctitle>
-   <indextitle>Tell me when shall these wearie woes haue end</indextitle>
-   <firstline>Tell me when shall these wearie woes haue end</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet XXXVI</title>
+  <toctitle>Sonnet XXXVI (Tell me when shall these wearie woes haue end)</toctitle>
+  <indextitle>Tell me when shall these wearie woes haue end</indextitle>
+  <firstline>Tell me when shall these wearie woes haue end</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1145,12 +1143,12 @@ But by his death which some perhaps will mone,
 
 <text id="spenser2002020537">
 <head>
-   <title>Sonnet XXXVII</title>
-   <toctitle>Sonnet XXXVII (What guyle is this, that those her golden tresses)</toctitle>
-   <indextitle>What guyle is this, that those her golden tresses</indextitle>
-   <firstline>What guyle is this, that those her golden tresses</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet XXXVII</title>
+  <toctitle>Sonnet XXXVII (What guyle is this, that those her golden tresses)</toctitle>
+  <indextitle>What guyle is this, that those her golden tresses</indextitle>
+  <firstline>What guyle is this, that those her golden tresses</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1174,12 +1172,12 @@ Fondnesse it were for any being free,
 
 <text id="spenser2002020538">
 <head>
-   <title>Sonnet XXXVIII</title>
-   <toctitle>Sonnet XXXVIII (Arion, when through tempests cruel wracke)</toctitle>
-   <indextitle>Arion, when through tempests cruel wracke</indextitle>
-   <firstline>Arion, when through tempests cruel wracke</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet XXXVIII</title>
+  <toctitle>Sonnet XXXVIII (Arion, when through tempests cruel wracke)</toctitle>
+  <indextitle>Arion, when through tempests cruel wracke</indextitle>
+  <firstline>Arion, when through tempests cruel wracke</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1203,12 +1201,12 @@ Chose rather to be praysd for dooing good,
 
 <text id="spenser2002020539">
 <head>
-   <title>Sonnet XXXIX</title>
-   <toctitle>Sonnet XXXIX (Sweet smile, the daughter of the Queene of loue)</toctitle>
-   <indextitle>Sweet smile, the daughter of the Queene of loue</indextitle>
-   <firstline>Sweet smile, the daughter of the Queene of loue</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet XXXIX</title>
+  <toctitle>Sonnet XXXIX (Sweet smile, the daughter of the Queene of loue)</toctitle>
+  <indextitle>Sweet smile, the daughter of the Queene of loue</indextitle>
+  <firstline>Sweet smile, the daughter of the Queene of loue</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1232,12 +1230,12 @@ More sweet than Nectar or Ambrosiall meat
 
 <text id="spenser2002020540">
 <head>
-   <title>Sonnet XL</title>
-   <toctitle>Sonnet XL (Mark when she smiles with amiable cheare)</toctitle>
-   <indextitle>Mark when she smiles with amiable cheare</indextitle>
-   <firstline>Mark when she smiles with amiable cheare</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet XL</title>
+  <toctitle>Sonnet XL (Mark when she smiles with amiable cheare)</toctitle>
+  <indextitle>Mark when she smiles with amiable cheare</indextitle>
+  <firstline>Mark when she smiles with amiable cheare</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1261,12 +1259,12 @@ So my storme beaten hart likewise is cheared,
 
 <text id="spenser2002020541">
 <head>
-   <title>Sonnet XLI</title>
-   <toctitle>Sonnet XLI (Is it her nature or is it her will)</toctitle>
-   <indextitle>Is it her nature or is it her will</indextitle>
-   <firstline>Is it her nature or is it her will</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet XLI</title>
+  <toctitle>Sonnet XLI (Is it her nature or is it her will)</toctitle>
+  <indextitle>Is it her nature or is it her will</indextitle>
+  <firstline>Is it her nature or is it her will</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1290,12 +1288,12 @@ O fayrest fayre let neuer it be named,
 
 <text id="spenser2002020542">
 <head>
-   <title>Sonnet XLII</title>
-   <toctitle>Sonnet XLII (The loue which me so cruelly tormenteth)</toctitle>
-   <indextitle>The loue which me so cruelly tormenteth</indextitle>
-   <firstline>The loue which me so cruelly tormenteth</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet XLII</title>
+  <toctitle>Sonnet XLII (The loue which me so cruelly tormenteth)</toctitle>
+  <indextitle>The loue which me so cruelly tormenteth</indextitle>
+  <firstline>The loue which me so cruelly tormenteth</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1319,12 +1317,12 @@ Onely let her abstaine from cruelty,
 
 <text id="spenser2002020543">
 <head>
-   <title>Sonnet XLIII</title>
-   <toctitle>Sonnet XLIII (Shall I then silent be or shall I speake?)</toctitle>
-   <indextitle>Shall I then silent be or shall I speake?</indextitle>
-   <firstline>Shall I then silent be or shall I speake?</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet XLIII</title>
+  <toctitle>Sonnet XLIII (Shall I then silent be or shall I speake?)</toctitle>
+  <indextitle>Shall I then silent be or shall I speake?</indextitle>
+  <firstline>Shall I then silent be or shall I speake?</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1348,12 +1346,12 @@ Which her deep wit, that true harts thought can spel,
 
 <text id="spenser2002020544">
 <head>
-   <title>Sonnet XLIIII</title>
-   <toctitle>Sonnet XLIIII (When those renoumed noble Peres of Greece)</toctitle>
-   <indextitle>When those renoumed noble Peres of Greece</indextitle>
-   <firstline>When those renoumed noble Peres of Greece</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet XLIIII</title>
+  <toctitle>Sonnet XLIIII (When those renoumed noble Peres of Greece)</toctitle>
+  <indextitle>When those renoumed noble Peres of Greece</indextitle>
+  <firstline>When those renoumed noble Peres of Greece</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1377,12 +1375,12 @@ Mongst whome the more I seeke to settle peace,
 
 <text id="spenser2002020545">
 <head>
-   <title>Sonnet XLV</title>
-   <toctitle>Sonnet XLV (Leaue lady in your glasse of christall clene)</toctitle>
-   <indextitle>Leaue lady in your glasse of christall clene</indextitle>
-   <firstline>Leaue lady in your glasse of christall clene</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet XLV</title>
+  <toctitle>Sonnet XLV (Leaue lady in your glasse of christall clene)</toctitle>
+  <indextitle>Leaue lady in your glasse of christall clene</indextitle>
+  <firstline>Leaue lady in your glasse of christall clene</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1406,12 +1404,12 @@ But if your selfe in me ye playne will see,
 
 <text id="spenser2002020546">
 <head>
-   <title>Sonnet XLVI</title>
-   <toctitle>Sonnet XLVI (When my abodes prefixed time is spent)</toctitle>
-   <indextitle>When my abodes prefixed time is spent</indextitle>
-   <firstline>When my abodes prefixed time is spent</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet XLVI</title>
+  <toctitle>Sonnet XLVI (When my abodes prefixed time is spent)</toctitle>
+  <indextitle>When my abodes prefixed time is spent</indextitle>
+  <firstline>When my abodes prefixed time is spent</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1435,12 +1433,12 @@ Enough it is for one man to sustaine
 
 <text id="spenser2002020547">
 <head>
-   <title>Sonnet XLVII</title>
-   <toctitle>Sonnet XLVII (Trust not the treason of those smyling lookes)</toctitle>
-   <indextitle>Trust not the treason of those smyling lookes</indextitle>
-   <firstline>Trust not the treason of those smyling lookes</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet XLVII</title>
+  <toctitle>Sonnet XLVII (Trust not the treason of those smyling lookes)</toctitle>
+  <indextitle>Trust not the treason of those smyling lookes</indextitle>
+  <firstline>Trust not the treason of those smyling lookes</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1464,12 +1462,12 @@ O mighty charm which makes men loue theyr bane,
 
 <text id="spenser2002020548">
 <head>
-   <title>Sonnet XLVIII</title>
-   <toctitle>Sonnet XLVIII (Innocent paper whom too cruell hand)</toctitle>
-   <indextitle>Innocent paper whom too cruell hand</indextitle>
-   <firstline>Innocent paper whom too cruell hand</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet XLVIII</title>
+  <toctitle>Sonnet XLVIII (Innocent paper whom too cruell hand)</toctitle>
+  <indextitle>Innocent paper whom too cruell hand</indextitle>
+  <firstline>Innocent paper whom too cruell hand</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1493,12 +1491,12 @@ Yet liue for euer, though against her will,
 
 <text id="spenser2002020549">
 <head>
-   <title>Sonnet XLIX</title>
-   <toctitle>Sonnet XLIX (Fayre cruell, why are ye so fierce and cruell?)</toctitle>
-   <indextitle>Fayre cruell, why are ye so fierce and cruell?</indextitle>
-   <firstline>Fayre cruell, why are ye so fierce and cruell?</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet XLIX</title>
+  <toctitle>Sonnet XLIX (Fayre cruell, why are ye so fierce and cruell?)</toctitle>
+  <indextitle>Fayre cruell, why are ye so fierce and cruell?</indextitle>
+  <firstline>Fayre cruell, why are ye so fierce and cruell?</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1522,12 +1520,12 @@ Such mercy shal you make admyred to be,
 
 <text id="spenser2002020550">
 <head>
-   <title>Sonnet L</title>
-   <toctitle>Sonnet L (Long languishing in double malady)</toctitle>
-   <indextitle>Long languishing in double malady</indextitle>
-   <firstline>Long languishing in double malady</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet L</title>
+  <toctitle>Sonnet L (Long languishing in double malady)</toctitle>
+  <indextitle>Long languishing in double malady</indextitle>
+  <firstline>Long languishing in double malady</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1551,12 +1549,12 @@ Then my lyfes Leach doe you your skill reueale,
 
 <text id="spenser2002020551">
 <head>
-   <title>Sonnet LI</title>
-   <toctitle>Sonnet LI (Doe I not see that fayrest ymages)</toctitle>
-   <indextitle>Doe I not see that fayrest ymages</indextitle>
-   <firstline>Doe I not see that fayrest ymages</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet LI</title>
+  <toctitle>Sonnet LI (Doe I not see that fayrest ymages)</toctitle>
+  <indextitle>Doe I not see that fayrest ymages</indextitle>
+  <firstline>Doe I not see that fayrest ymages</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1580,12 +1578,12 @@ Onely my paines wil be the more to get her,
 
 <text id="spenser2002020552">
 <head>
-   <title>Sonnet LII</title>
-   <toctitle>Sonnet LII (So oft as homeward I from her depart)</toctitle>
-   <indextitle>So oft as homeward I from her depart</indextitle>
-   <firstline>So oft as homeward I from her depart</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet LII</title>
+  <toctitle>Sonnet LII (So oft as homeward I from her depart)</toctitle>
+  <indextitle>So oft as homeward I from her depart</indextitle>
+  <firstline>So oft as homeward I from her depart</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1609,12 +1607,12 @@ So I her absens will my penaunce make,
 
 <text id="spenser2002020553">
 <head>
-   <title>Sonnet LIII</title>
-   <toctitle>Sonnet LIII (The Panther knowing that his spotted hyde)</toctitle>
-   <indextitle>The Panther knowing that his spotted hyde</indextitle>
-   <firstline>The Panther knowing that his spotted hyde</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet LIII</title>
+  <toctitle>Sonnet LIII (The Panther knowing that his spotted hyde)</toctitle>
+  <indextitle>The Panther knowing that his spotted hyde</indextitle>
+  <firstline>The Panther knowing that his spotted hyde</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1638,12 +1636,12 @@ But mercy doth with beautie best agree,
 
 <text id="spenser2002020554">
 <head>
-   <title>Sonnet LIIII</title>
-   <toctitle>Sonnet LIIII (Of this worlds Theatre in which we stay)</toctitle>
-   <indextitle>Of this worlds Theatre in which we stay</indextitle>
-   <firstline>Of this worlds Theatre in which we stay</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet LIIII</title>
+  <toctitle>Sonnet LIIII (Of this worlds Theatre in which we stay)</toctitle>
+  <indextitle>Of this worlds Theatre in which we stay</indextitle>
+  <firstline>Of this worlds Theatre in which we stay</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1667,12 +1665,12 @@ What then can moue her? if nor merth nor mone,
 
 <text id="spenser2002020555">
 <head>
-   <title>Sonnet LV</title>
-   <toctitle>Sonnet LV (So oft as I her beauty doe behold)</toctitle>
-   <indextitle>So oft as I her beauty doe behold</indextitle>
-   <firstline>So oft as I her beauty doe behold</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet LV</title>
+  <toctitle>Sonnet LV (So oft as I her beauty doe behold)</toctitle>
+  <indextitle>So oft as I her beauty doe behold</indextitle>
+  <firstline>So oft as I her beauty doe behold</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1696,12 +1694,12 @@ Then sith to heauen ye lykened are the best,
 
 <text id="spenser2002020556">
 <head>
-   <title>Sonnet LVI</title>
-   <toctitle>Sonnet LVI (Fayre ye be sure, but cruell and vnkind)</toctitle>
-   <indextitle>Fayre ye be sure, but cruell and vnkind</indextitle>
-   <firstline>Fayre ye be sure, but cruell and vnkind</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet LVI</title>
+  <toctitle>Sonnet LVI (Fayre ye be sure, but cruell and vnkind)</toctitle>
+  <indextitle>Fayre ye be sure, but cruell and vnkind</indextitle>
+  <firstline>Fayre ye be sure, but cruell and vnkind</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1725,12 +1723,12 @@ That ship, that tree, and that same beast am I,
 
 <text id="spenser2002020557">
 <head>
-   <title>Sonnet LVII</title>
-   <toctitle>Sonnet LVII (Sweet warriour when shall I haue peace with you?)</toctitle>
-   <indextitle>Sweet warriour when shall I haue peace with you?</indextitle>
-   <firstline>Sweet warriour when shall I haue peace with you?</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet LVII</title>
+  <toctitle>Sonnet LVII (Sweet warriour when shall I haue peace with you?)</toctitle>
+  <indextitle>Sweet warriour when shall I haue peace with you?</indextitle>
+  <firstline>Sweet warriour when shall I haue peace with you?</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1754,13 +1752,13 @@ Make peace therefore, and graunt me timely grace,
 
 <text id="spenser2002020558">
 <head>
-   <title>Sonnet LVIII</title>
-   <subtitle>By her that is most assured to her selfe</subtitle>
-   <toctitle>Sonnet LVIII (Weake is th'assurance that weake flesh reposeth)</toctitle>
-   <indextitle>Weake is th'assurance that weake flesh reposeth</indextitle>
-   <firstline>Weake is th'assurance that weake flesh reposeth</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet LVIII</title>
+  <subtitle>By her that is most assured to her selfe</subtitle>
+  <toctitle>Sonnet LVIII (Weake is th'assurance that weake flesh reposeth)</toctitle>
+  <indextitle>Weake is th'assurance that weake flesh reposeth</indextitle>
+  <firstline>Weake is th'assurance that weake flesh reposeth</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1784,12 +1782,12 @@ Why then doe ye proud fayre, misdeeme so farre,
 
 <text id="spenser2002020559">
 <head>
-   <title>Sonnet LIX</title>
-   <toctitle>Sonnet LIX (Thrise happie she, that is so well assured)</toctitle>
-   <indextitle>Thrise happie she, that is so well assured</indextitle>
-   <firstline>Thrise happie she, that is so well assured</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet LIX</title>
+  <toctitle>Sonnet LIX (Thrise happie she, that is so well assured)</toctitle>
+  <indextitle>Thrise happie she, that is so well assured</indextitle>
+  <firstline>Thrise happie she, that is so well assured</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1813,12 +1811,12 @@ Most happy she that most assured doth rest,
 
 <text id="spenser2002020560">
 <head>
-   <title>Sonnet LX</title>
-   <toctitle>Sonnet LX (They that in course of heauenly spheares are skild)</toctitle>
-   <indextitle>They that in course of heauenly spheares are skild</indextitle>
-   <firstline>They that in course of heauenly spheares are skild</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet LX</title>
+  <toctitle>Sonnet LX (They that in course of heauenly spheares are skild)</toctitle>
+  <indextitle>They that in course of heauenly spheares are skild</indextitle>
+  <firstline>They that in course of heauenly spheares are skild</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1842,12 +1840,12 @@ But let me loues fayre Planet short her wayes
 
 <text id="spenser2002020561">
 <head>
-   <title>Sonnet LXI</title>
-   <toctitle>Sonnet LXI (The glorious image of the makers beautie)</toctitle>
-   <indextitle>The glorious image of the makers beautie</indextitle>
-   <firstline>The glorious image of the makers beautie</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet LXI</title>
+  <toctitle>Sonnet LXI (The glorious image of the makers beautie)</toctitle>
+  <indextitle>The glorious image of the makers beautie</indextitle>
+  <firstline>The glorious image of the makers beautie</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1871,12 +1869,12 @@ Such heauenly formes ought rather worshipt be,
 
 <text id="spenser2002020562">
 <head>
-   <title>Sonnet LXII</title>
-   <toctitle>Sonnet LXII (The weary yeare his race now hauing run)</toctitle>
-   <indextitle>The weary yeare his race now hauing run</indextitle>
-   <firstline>The weary yeare his race now hauing run</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet LXII</title>
+  <toctitle>Sonnet LXII (The weary yeare his race now hauing run)</toctitle>
+  <indextitle>The weary yeare his race now hauing run</indextitle>
+  <firstline>The weary yeare his race now hauing run</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1900,12 +1898,12 @@ So likewise loue cheare you your heauy spright,
 
 <text id="spenser2002020563">
 <head>
-   <title>Sonnet LXIII</title>
-   <toctitle>Sonnet LXIII (After long stormes and tempests sad assay)</toctitle>
-   <indextitle>After long stormes and tempests sad assay</indextitle>
-   <firstline>After long stormes and tempests sad assay</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet LXIII</title>
+  <toctitle>Sonnet LXIII (After long stormes and tempests sad assay)</toctitle>
+  <indextitle>After long stormes and tempests sad assay</indextitle>
+  <firstline>After long stormes and tempests sad assay</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1929,12 +1927,12 @@ All paines are nothing in respect of this,
 
 <text id="spenser2002020564">
 <head>
-   <title>Sonnet LXIIII</title>
-   <toctitle>Sonnet LXIIII (Comming to kisse her lyps, (such grace I found))</toctitle>
-   <indextitle>Comming to kisse her lyps, (such grace I found)</indextitle>
-   <firstline>Comming to kisse her lyps, (such grace I found)</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet LXIIII</title>
+  <toctitle>Sonnet LXIIII (Comming to kisse her lyps, (such grace I found))</toctitle>
+  <indextitle>Comming to kisse her lyps, (such grace I found)</indextitle>
+  <firstline>Comming to kisse her lyps, (such grace I found)</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1958,12 +1956,12 @@ Such fragrant flowres doe giue most odorous smell,
 
 <text id="spenser2002020565">
 <head>
-   <title>Sonnet LXV</title>
-   <toctitle>Sonnet LXV (The doubt which ye misdeeme, fayre loue, is vaine)</toctitle>
-   <indextitle>The doubt which ye misdeeme, fayre loue, is vaine</indextitle>
-   <firstline>The doubt which ye misdeeme, fayre loue, is vaine</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet LXV</title>
+  <toctitle>Sonnet LXV (The doubt which ye misdeeme, fayre loue, is vaine)</toctitle>
+  <indextitle>The doubt which ye misdeeme, fayre loue, is vaine</indextitle>
+  <firstline>The doubt which ye misdeeme, fayre loue, is vaine</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -1987,12 +1985,12 @@ There fayth doth fearlesse dwell in brasen towre,
 
 <text id="spenser2002020566">
 <head>
-   <title>Sonnet LXVI</title>
-   <toctitle>Sonnet LXVI (To all those happy blessings which ye haue)</toctitle>
-   <indextitle>To all those happy blessings which ye haue</indextitle>
-   <firstline>To all those happy blessings which ye haue</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet LXVI</title>
+  <toctitle>Sonnet LXVI (To all those happy blessings which ye haue)</toctitle>
+  <indextitle>To all those happy blessings which ye haue</indextitle>
+  <firstline>To all those happy blessings which ye haue</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2016,12 +2014,12 @@ Yet since your light hath once enlumind me,
 
 <text id="spenser2002020567">
 <head>
-   <title>Sonnet LXVII</title>
-   <toctitle>Sonnet LXVII (Lyke as a huntsman after weary chace)</toctitle>
-   <indextitle>Lyke as a huntsman after weary chace</indextitle>
-   <firstline>Lyke as a huntsman after weary chace</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet LXVII</title>
+  <toctitle>Sonnet LXVII (Lyke as a huntsman after weary chace)</toctitle>
+  <indextitle>Lyke as a huntsman after weary chace</indextitle>
+  <firstline>Lyke as a huntsman after weary chace</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2045,12 +2043,12 @@ Strange thing me seemd to see a beast so wyld,
 
 <text id="spenser2002020568">
 <head>
-   <title>Sonnet LXVIII</title>
-   <toctitle>Sonnet LXVIII (Most glorious Lord of lyfe that on this day)</toctitle>
-   <indextitle>Most glorious Lord of lyfe that on this day</indextitle>
-   <firstline>Most glorious Lord of lyfe that on this day</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet LXVIII</title>
+  <toctitle>Sonnet LXVIII (Most glorious Lord of lyfe that on this day)</toctitle>
+  <indextitle>Most glorious Lord of lyfe that on this day</indextitle>
+  <firstline>Most glorious Lord of lyfe that on this day</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2074,12 +2072,12 @@ So let vs loue, deare loue, lyke as we ought,
 
 <text id="spenser2002020569">
 <head>
-   <title>Sonnet LXIX</title>
-   <toctitle>Sonnet LXIX (The famous warriors of the anticke world)</toctitle>
-   <indextitle>The famous warriors of the anticke world</indextitle>
-   <firstline>The famous warriors of the anticke world</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet LXIX</title>
+  <toctitle>Sonnet LXIX (The famous warriors of the anticke world)</toctitle>
+  <indextitle>The famous warriors of the anticke world</indextitle>
+  <firstline>The famous warriors of the anticke world</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2103,12 +2101,12 @@ The happy purchase of my glorious spoile,
 
 <text id="spenser2002020570">
 <head>
-   <title>Sonnet LXX</title>
-   <toctitle>Sonnet LXX (Fresh spring the herald of loues mighty king)</toctitle>
-   <indextitle>Fresh spring the herald of loues mighty king</indextitle>
-   <firstline>Fresh spring the herald of loues mighty king</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet LXX</title>
+  <toctitle>Sonnet LXX (Fresh spring the herald of loues mighty king)</toctitle>
+  <indextitle>Fresh spring the herald of loues mighty king</indextitle>
+  <firstline>Fresh spring the herald of loues mighty king</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2132,12 +2130,12 @@ Make hast therefore sweet loue, whilest it is prime,
 
 <text id="spenser2002020571">
 <head>
-   <title>Sonnet LXXI</title>
-   <toctitle>Sonnet LXXI (I ioy to see how in your drawen work)</toctitle>
-   <indextitle>I ioy to see how in your drawen work</indextitle>
-   <firstline>I ioy to see how in your drawen work</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet LXXI</title>
+  <toctitle>Sonnet LXXI (I ioy to see how in your drawen work)</toctitle>
+  <indextitle>I ioy to see how in your drawen work</indextitle>
+  <firstline>I ioy to see how in your drawen work</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2161,12 +2159,12 @@ And all thensforth eternall peace shall see,
 
 <text id="spenser2002020572">
 <head>
-   <title>Sonnet LXXII</title>
-   <toctitle>Sonnet LXXII (Oft when my spirit doth spred her bolder winges)</toctitle>
-   <indextitle>Oft when my spirit doth spred her bolder winges</indextitle>
-   <firstline>Oft when my spirit doth spred her bolder winges</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet LXXII</title>
+  <toctitle>Sonnet LXXII (Oft when my spirit doth spred her bolder winges)</toctitle>
+  <indextitle>Oft when my spirit doth spred her bolder winges</indextitle>
+  <firstline>Oft when my spirit doth spred her bolder winges</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2190,12 +2188,12 @@ Hart need not with none other happinesse,
 
 <text id="spenser2002020573">
 <head>
-   <title>Sonnet LXXIII</title>
-   <toctitle>Sonnet LXXIII (Being my selfe captyued here in care)</toctitle>
-   <indextitle>Being my selfe captyued here in care</indextitle>
-   <firstline>Being my selfe captyued here in care</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet LXXIII</title>
+  <toctitle>Sonnet LXXIII (Being my selfe captyued here in care)</toctitle>
+  <indextitle>Being my selfe captyued here in care</indextitle>
+  <firstline>Being my selfe captyued here in care</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2219,12 +2217,12 @@ That it hereafter may you not repent,
 
 <text id="spenser2002020574">
 <head>
-   <title>Sonnet LXXIIII</title>
-   <toctitle>Sonnet LXXIIII (Most happy letters fram'd by skilfull trade)</toctitle>
-   <indextitle>Most happy letters fram'd by skilfull trade</indextitle>
-   <firstline>Most happy letters fram'd by skilfull trade</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet LXXIIII</title>
+  <toctitle>Sonnet LXXIIII (Most happy letters fram'd by skilfull trade)</toctitle>
+  <indextitle>Most happy letters fram'd by skilfull trade</indextitle>
+  <firstline>Most happy letters fram'd by skilfull trade</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2248,12 +2246,12 @@ Ye three Elizabeths for euer liue,
 
 <text id="spenser2002020575">
 <head>
-   <title>Sonnet LXXV</title>
-   <toctitle>Sonnet LXXV (One day I wrote her name vpon the strand)</toctitle>
-   <indextitle>One day I wrote her name vpon the strand</indextitle>
-   <firstline>One day I wrote her name vpon the strand</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet LXXV</title>
+  <toctitle>Sonnet LXXV (One day I wrote her name vpon the strand)</toctitle>
+  <indextitle>One day I wrote her name vpon the strand</indextitle>
+  <firstline>One day I wrote her name vpon the strand</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2277,12 +2275,12 @@ Where whenas death shall all the world subdew,
 
 <text id="spenser2002020576">
 <head>
-   <title>Sonnet LXXVI</title>
-   <toctitle>Sonnet LXXVI (Fayre bosome fraught with vertues richest tresure)</toctitle>
-   <indextitle>Fayre bosome fraught with vertues richest tresure</indextitle>
-   <firstline>Fayre bosome fraught with vertues richest tresure</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet LXXVI</title>
+  <toctitle>Sonnet LXXVI (Fayre bosome fraught with vertues richest tresure)</toctitle>
+  <indextitle>Fayre bosome fraught with vertues richest tresure</indextitle>
+  <firstline>Fayre bosome fraught with vertues richest tresure</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2306,12 +2304,12 @@ Sweet thoughts I enuy your so happy rest,
 
 <text id="spenser2002020577">
 <head>
-   <title>Sonnet LXXVII</title>
-   <toctitle>Sonnet LXXVII (Was it a dreame, or did I see it playne)</toctitle>
-   <indextitle>Was it a dreame, or did I see it playne</indextitle>
-   <firstline>Was it a dreame, or did I see it playne</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet LXXVII</title>
+  <toctitle>Sonnet LXXVII (Was it a dreame, or did I see it playne)</toctitle>
+  <indextitle>Was it a dreame, or did I see it playne</indextitle>
+  <firstline>Was it a dreame, or did I see it playne</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2335,12 +2333,12 @@ Her brest that table was so richly spredd,
 
 <text id="spenser2002020578">
 <head>
-   <title>Sonnet LXXVIII</title>
-   <toctitle>Sonnet LXXVIII (Lackyng my loue I go from place to place)</toctitle>
-   <indextitle>Lackyng my loue I go from place to place</indextitle>
-   <firstline>Lackyng my loue I go from place to place</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet LXXVIII</title>
+  <toctitle>Sonnet LXXVIII (Lackyng my loue I go from place to place)</toctitle>
+  <indextitle>Lackyng my loue I go from place to place</indextitle>
+  <firstline>Lackyng my loue I go from place to place</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2364,12 +2362,12 @@ Ceasse then myne eyes, to seeke her selfe to see,
 
 <text id="spenser2002020579">
 <head>
-   <title>Sonnet LXXIX</title>
-   <toctitle>Sonnet LXXIX (Men call you fayre, and you doe credit it)</toctitle>
-   <indextitle>Men call you fayre, and you doe credit it</indextitle>
-   <firstline>Men call you fayre, and you doe credit it</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet LXXIX</title>
+  <toctitle>Sonnet LXXIX (Men call you fayre, and you doe credit it)</toctitle>
+  <indextitle>Men call you fayre, and you doe credit it</indextitle>
+  <firstline>Men call you fayre, and you doe credit it</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2393,12 +2391,12 @@ He only fayre, and what he fayre hath made,
 
 <text id="spenser2002020580">
 <head>
-   <title>Sonnet LXXX</title>
-   <toctitle>Sonnet LXXX (After so long a race as I haue run)</toctitle>
-   <indextitle>After so long a race as I haue run</indextitle>
-   <firstline>After so long a race as I haue run</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet LXXX</title>
+  <toctitle>Sonnet LXXX (After so long a race as I haue run)</toctitle>
+  <indextitle>After so long a race as I haue run</indextitle>
+  <firstline>After so long a race as I haue run</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2422,12 +2420,12 @@ But let her prayses yet be low and meane,
 
 <text id="spenser2002020581">
 <head>
-   <title>Sonnet LXXXI</title>
-   <toctitle>Sonnet LXXXI (Fayre is my loue, when her fayre golden heares)</toctitle>
-   <indextitle>Fayre is my loue, when her fayre golden heares</indextitle>
-   <firstline>Fayre is my loue, when her fayre golden heares</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet LXXXI</title>
+  <toctitle>Sonnet LXXXI (Fayre is my loue, when her fayre golden heares)</toctitle>
+  <indextitle>Fayre is my loue, when her fayre golden heares</indextitle>
+  <firstline>Fayre is my loue, when her fayre golden heares</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2451,12 +2449,12 @@ The rest be works of natures wonderment,
 
 <text id="spenser2002020582">
 <head>
-   <title>Sonnet LXXXII</title>
-   <toctitle>Sonnet LXXXII (Ioy of my life, full oft for louing you)</toctitle>
-   <indextitle>Ioy of my life, full oft for louing you</indextitle>
-   <firstline>Ioy of my life, full oft for louing you</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet LXXXII</title>
+  <toctitle>Sonnet LXXXII (Ioy of my life, full oft for louing you)</toctitle>
+  <indextitle>Ioy of my life, full oft for louing you</indextitle>
+  <firstline>Ioy of my life, full oft for louing you</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2478,14 +2476,14 @@ Whose lofty argument vplifting me,
 </body>
 </text>
 
-<text id="spenser2002020583">
+<text id="spenser2002020583" variant="spenser2002020535">
 <head>
-   <title>Sonnet LXXXIII</title>
-   <toctitle>Sonnet LXXXIII (My hungry eyes, through greedy couetize)</toctitle>
-   <indextitle>My hungry eyes, through greedy couetize</indextitle>
-   <firstline>My hungry eyes, through greedy couetize</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet LXXXIII</title>
+  <toctitle>Sonnet LXXXIII (My hungry eyes, through greedy couetize)</toctitle>
+  <indextitle>My hungry eyes, through greedy couetize</indextitle>
+  <firstline>My hungry eyes, through greedy couetize</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2509,12 +2507,12 @@ All this worlds glory seemeth vayne to me,
 
 <text id="spenser2002020584">
 <head>
-   <title>Sonnet LXXXIIII</title>
-   <toctitle>Sonnet LXXXIIII (Let not one sparke of filthy lustfull fyre)</toctitle>
-   <indextitle>Let not one sparke of filthy lustfull fyre</indextitle>
-   <firstline>Let not one sparke of filthy lustfull fyre</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet LXXXIIII</title>
+  <toctitle>Sonnet LXXXIIII (Let not one sparke of filthy lustfull fyre)</toctitle>
+  <indextitle>Let not one sparke of filthy lustfull fyre</indextitle>
+  <firstline>Let not one sparke of filthy lustfull fyre</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2538,12 +2536,12 @@ Onely behold her rare perfection,
 
 <text id="spenser2002020585">
 <head>
-   <title>Sonnet LXXXV</title>
-   <toctitle>Sonnet LXXXV (The world that cannot deeme of worthy things)</toctitle>
-   <indextitle>The world that cannot deeme of worthy things</indextitle>
-   <firstline>The world that cannot deeme of worthy things</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet LXXXV</title>
+  <toctitle>Sonnet LXXXV (The world that cannot deeme of worthy things)</toctitle>
+  <indextitle>The world that cannot deeme of worthy things</indextitle>
+  <firstline>The world that cannot deeme of worthy things</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2567,12 +2565,12 @@ Which when as fame in her shrill trump shal thunder,
 
 <text id="spenser2002020586">
 <head>
-   <title>Sonnet LXXXVI</title>
-   <toctitle>Sonnet LXXXVI (Venemous toung tipt with vile adders sting)</toctitle>
-   <indextitle>Venemous toung tipt with vile adders sting</indextitle>
-   <firstline>Venemous toung tipt with vile adders sting</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet LXXXVI</title>
+  <toctitle>Sonnet LXXXVI (Venemous toung tipt with vile adders sting)</toctitle>
+  <indextitle>Venemous toung tipt with vile adders sting</indextitle>
+  <firstline>Venemous toung tipt with vile adders sting</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2596,12 +2594,12 @@ Shame be thy meed, and mischiefe thy reward,
 
 <text id="spenser2002020587">
 <head>
-   <title>Sonnet LXXXVII</title>
-   <toctitle>Sonnet LXXXVII (Since I did leaue the presence of my loue)</toctitle>
-   <indextitle>Since I did leaue the presence of my loue</indextitle>
-   <firstline>Since I did leaue the presence of my loue</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet LXXXVII</title>
+  <toctitle>Sonnet LXXXVII (Since I did leaue the presence of my loue)</toctitle>
+  <indextitle>Since I did leaue the presence of my loue</indextitle>
+  <firstline>Since I did leaue the presence of my loue</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2625,12 +2623,12 @@ So sorrow still doth seeme too long to last,
 
 <text id="spenser2002020588">
 <head>
-   <title>Sonnet LXXXVIII</title>
-   <toctitle>Sonnet LXXXVIII (Since I haue lackt the comfort of that light)</toctitle>
-   <indextitle>Since I haue lackt the comfort of that light</indextitle>
-   <firstline>Since I haue lackt the comfort of that light</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet LXXXVIII</title>
+  <toctitle>Sonnet LXXXVIII (Since I haue lackt the comfort of that light)</toctitle>
+  <indextitle>Since I haue lackt the comfort of that light</indextitle>
+  <firstline>Since I haue lackt the comfort of that light</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2654,12 +2652,12 @@ But with such brightnesse whylest I fill my mind,
 
 <text id="spenser2002020589">
 <head>
-   <title>Sonnet LXXXIX</title>
-   <toctitle>Sonnet LXXXIX (Lyke as the Culuer on the bared bough)</toctitle>
-   <indextitle>Lyke as the Culuer on the bared bough</indextitle>
-   <firstline>Lyke as the Culuer on the bared bough</firstline>
-   <quality>korrektur1,kilde</quality>
-   <keywords>sonnet</keywords>
+  <title>Sonnet LXXXIX</title>
+  <toctitle>Sonnet LXXXIX (Lyke as the Culuer on the bared bough)</toctitle>
+  <indextitle>Lyke as the Culuer on the bared bough</indextitle>
+  <firstline>Lyke as the Culuer on the bared bough</firstline>
+  <quality>korrektur1,kilde</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -2680,22 +2678,23 @@ Dark is my day, whyles her fayre light I mis,
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
 
 <section level="1">
 <head>
-   <toctitle>[Anacreontics]</toctitle>
+  <toctitle>[Anacreontics]</toctitle>
 </head>
 <content>
 
 <text id="spenser2002020592">
 <head>
-   <title>In youth before I waxed old</title>
-   <toctitle>In youth before I waxed old</toctitle>
-   <indextitle>In youth before I waxed old</indextitle>
-   <firstline>In youth before I waxed old</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>In youth before I waxed old</title>
+  <toctitle>In youth before I waxed old</toctitle>
+  <indextitle>In youth before I waxed old</indextitle>
+  <firstline>In youth before I waxed old</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -2711,11 +2710,11 @@ For want of cunning made me bold,
 
 <text id="spenser2002020593">
 <head>
-   <title>As Diane hunted on a day</title>
-   <toctitle>As Diane hunted on a day</toctitle>
-   <indextitle>As Diane hunted on a day</indextitle>
-   <firstline>As Diane hunted on a day</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>As Diane hunted on a day</title>
+  <toctitle>As Diane hunted on a day</toctitle>
+  <indextitle>As Diane hunted on a day</indextitle>
+  <firstline>As Diane hunted on a day</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -2733,11 +2732,11 @@ And one of hers did close conuay,
 
 <text id="spenser2002020594">
 <head>
-   <title>I saw in secret to my Dame</title>
-   <toctitle>I saw in secret to my Dame</toctitle>
-   <indextitle>I saw in secret to my Dame</indextitle>
-   <firstline>I saw in secret to my Dame</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>I saw in secret to my Dame</title>
+  <toctitle>I saw in secret to my Dame</toctitle>
+  <indextitle>I saw in secret to my Dame</indextitle>
+  <firstline>I saw in secret to my Dame</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -2755,11 +2754,11 @@ for many haue err'd in this beauty.
 
 <text id="spenser2002020595">
 <head>
-   <title>Vpon a day as loue lay sweetly slumbring</title>
-   <toctitle>Vpon a day as loue lay sweetly slumbring</toctitle>
-   <indextitle>Vpon a day as loue lay sweetly slumbring</indextitle>
-   <firstline>Vpon a day as loue lay sweetly slumbring</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Vpon a day as loue lay sweetly slumbring</title>
+  <toctitle>Vpon a day as loue lay sweetly slumbring</toctitle>
+  <indextitle>Vpon a day as loue lay sweetly slumbring</indextitle>
+  <firstline>Vpon a day as loue lay sweetly slumbring</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -2831,22 +2830,23 @@ So now I languish till he please
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
 
 <section level="1">
 <head>
-   <toctitle>Epithalamion</toctitle>
+  <toctitle>Epithalamion</toctitle>
 </head>
 <content>
 
 <text id="spenser1999070401">
 <head>
-   <title>Epithalamion</title>
-   <toctitle>Epithalamion</toctitle>
-   <indextitle>Epithalamion</indextitle>
-   <firstline>Ye learned sisters which haue oftentimes</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>Epithalamion</title>
+  <toctitle>Epithalamion</toctitle>
+  <indextitle>Epithalamion</indextitle>
+  <firstline>Ye learned sisters which haue oftentimes</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -2930,7 +2930,7 @@ That all the woods may answer, and your eccho ring.
 Wake, now my loue, awake; for it is time,
 The Rosy Morne long since left Tithones bed,
 All ready to her siluer coche to clyme,
-And Ph&oelig;bus gins to shew his glorious hed.
+And Phœbus gins to shew his glorious hed.
 Hark how the cheerefull birds do chaunt theyr laies
 And carroll of loues praise.
 The merry Larke hir mattins sings aloft,
@@ -2976,7 +2976,7 @@ Faire Sun, shew forth thy fauourable ray,
 let thy lifull heat not feruent be
 For feare of burning her sunshyny face,
 Her beauty to disgrace.
-O fayrest Ph&oelig;bus, father of the Muse,
+O fayrest Phœbus, father of the Muse,
 If euer I did honour thee aright,
 Or sing the thing, that mote thy mind delight,
 Doe not thy seruants simple boone refuse,
@@ -3006,7 +3006,7 @@ And euermore they Hymen Hymen sing,
 That al the woods them answer and theyr eccho ring.
 
 Loe where she comes along with portly pace,
-Lyke Ph&oelig;be from her chamber of the East,
+Lyke Phœbe from her chamber of the East,
 Arysing forth to run her mighty race,
 Clad all in white, that seemes a virgin best.
 So well it her beseemes that ye would weene
@@ -3309,7 +3309,9 @@ And for short time an endlesse moniment.
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
+
 </workbody>
 </kalliopework>
