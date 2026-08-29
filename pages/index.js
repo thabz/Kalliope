@@ -101,7 +101,6 @@ const News = ({ news }) => {
   const lang = useContext(LangContext);
 
   const items = news
-    .filter((_, i) => i < 5)
     .map((item, i) => {
       const { date, content_html, content_lang } = item;
       return (

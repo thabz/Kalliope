@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
   <start>
     <ref name="kalliopework"/>
   </start>
@@ -39,6 +40,11 @@
         <ref name="notes"/>
         <ref name="note"/>
         <ref name="quality"/>
+        <ref name="form"/>
+        <ref name="metre"/>
+        <ref name="syllables"/>
+        <ref name="rhyme"/>
+        <ref name="structure"/>
         <ref name="pagebreaks"/>
         <ref name="pictures"/>
         <ref name="picture"/>
@@ -361,6 +367,98 @@
   <define name="begivenhed"><element name="begivenhed"><ref name="simpleElement"/></element></define>
   <define name="notes"><element name="notes"><ref name="simpleElement"/></element></define>
   <define name="quality"><element name="quality"><ref name="simpleElement"/></element></define>
+  <define name="form">
+    <element name="form">
+      <oneOrMore><ref name="formAnalysis"/></oneOrMore>
+    </element>
+  </define>
+  <define name="formAnalysis">
+    <element name="analysis">
+      <attribute name="pattern">
+        <choice>
+          <value>sonnet</value>
+          <value>petrarchan-sonnet</value>
+          <value>shakespearean-sonnet</value>
+        </choice>
+      </attribute>
+      <attribute name="confidence">
+        <data type="decimal">
+          <param name="minInclusive">0</param>
+          <param name="maxInclusive">1</param>
+        </data>
+      </attribute>
+      <empty/>
+    </element>
+  </define>
+  <define name="metre">
+    <element name="metre">
+      <oneOrMore><ref name="metreAnalysis"/></oneOrMore>
+    </element>
+  </define>
+  <define name="metreAnalysis">
+    <element name="analysis">
+      <attribute name="pattern"><text/></attribute>
+      <attribute name="confidence">
+        <data type="decimal">
+          <param name="minInclusive">0</param>
+          <param name="maxInclusive">1</param>
+        </data>
+      </attribute>
+      <empty/>
+    </element>
+  </define>
+  <define name="rhyme">
+    <element name="rhyme">
+      <oneOrMore><ref name="rhymeAnalysis"/></oneOrMore>
+    </element>
+  </define>
+  <define name="syllables">
+    <element name="syllables">
+      <oneOrMore><ref name="syllablesAnalysis"/></oneOrMore>
+    </element>
+  </define>
+  <define name="syllablesAnalysis">
+    <element name="analysis">
+      <attribute name="pattern"><text/></attribute>
+      <attribute name="confidence">
+        <data type="decimal">
+          <param name="minInclusive">0</param>
+          <param name="maxInclusive">1</param>
+        </data>
+      </attribute>
+      <empty/>
+    </element>
+  </define>
+  <define name="rhymeAnalysis">
+    <element name="analysis">
+      <attribute name="pattern"><text/></attribute>
+      <attribute name="confidence">
+        <data type="decimal">
+          <param name="minInclusive">0</param>
+          <param name="maxInclusive">1</param>
+        </data>
+      </attribute>
+      <empty/>
+    </element>
+  </define>
+  <define name="structure">
+    <element name="structure">
+      <element name="analysis">
+        <attribute name="pattern">
+          <data type="string">
+            <param name="pattern">[1-9][0-9]*(-[1-9][0-9]*)*</param>
+          </data>
+        </attribute>
+        <attribute name="confidence">
+          <data type="decimal">
+            <param name="minInclusive">0</param>
+            <param name="maxInclusive">1</param>
+          </data>
+        </attribute>
+        <empty/>
+      </element>
+    </element>
+  </define>
   <define name="pagebreaks"><element name="pagebreaks"><empty/></element></define>
   <define name="pictures"><element name="pictures"><ref name="simpleElement"/></element></define>
   <define name="inlineWithoutLineMarkers">

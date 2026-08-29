@@ -116,6 +116,7 @@ import {
   mark_ref_destinations_dirty,
 } from './build-static/textrefs.js';
 import { build_anniversaries_ical } from './build-static/ical.js';
+import { buildLatestNews } from './build-static/news.js';
 import {
   buildGlobalTimeline,
   buildPoetTimelineJson,
@@ -1459,26 +1460,12 @@ const build_poet_works_json = (collected) => {
 const build_news = (collected) => {
   supportedLanguages.forEach((lang) => {
     const path = `content/news/${lang}.xml`;
-    if (!isFileModified(path)) {
+    if (!isFileModified(path, 'tools/build-static/news.js')) {
       return;
     }
     const doc = loadXMLDoc(path);
     const items = getChildByTagName(doc, 'items');
-    let list = [];
-    getChildren(items).forEach((item) => {
-      if (tagName(item) !== 'item') {
-        return;
-      }
-      const date = safeGetText(item, 'date');
-      const body = getChildByTagName(item, 'body');
-      const title = safeGetText(item, 'title');
-      list.push({
-        date,
-        title,
-        content_lang: lang,
-        content_html: htmlToXml(safeGetInnerXML(body).trim(), collected),
-      });
-    });
+    const list = buildLatestNews(items, lang, collected);
     const outfile = `public/api/news_${lang}.json`;
     writeJSON(outfile, list);
   });

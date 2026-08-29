@@ -287,6 +287,121 @@ historiske id-formater fortsat kan bevares uændret.
 - `<pictures>`: billeder til teksten.
 - `<source>`: kilde for teksten.
 - `<dates>`: datoer for teksten.
+- `<metre>`: en eller flere automatiske, reproducerbare metriske analyser.
+- `<form>`: en eller flere automatiske, reproducerbare klassifikationer af
+  poetisk form.
+- `<structure>`: den observerede, reproducerbare strofe- og linjestruktur.
+- `<syllables>`: en eller flere automatiske analyser af digtets stavelsesmønster.
+
+### Automatisk formklassifikation
+
+Formklassifikatoren kombinerer de uafhængige analyser af struktur, rim, metrik
+og stavelsesantal. Den genkender sonetter samt petrarcanske og shakespeareske
+undertyper, terza rima, ottava rima, rime royal, balladestrofer, distika,
+quatrains, blankvers og knittelvers:
+
+```xml
+<form>
+  <analysis pattern="sonnet" confidence="0.99"/>
+  <analysis pattern="petrarchan-sonnet" confidence="0.96"/>
+</form>
+```
+
+Fjorten linjer er et stærkt, men ikke tilstrækkeligt signal. Manglende
+strofegrænser sænker sikkerheden uden automatisk at diskvalificere digtet, og
+undertypen udelades, når kun den overordnede form er sikker. Eksisterende
+`<form>` betragtes som manuelt kurateret og overskrives aldrig.
+
+De specifikke rimformer kræver deres karakteristiske lokale rimskema og
+strofestruktur. Distikon og quatrain beskriver derimod først og fremmest den
+observerede strofestruktur og kan derfor foreslås uden enderim. Blankvers kræver
+både jambisk pentameter og fravær af systematisk enderim. Knittelvers kræver
+parrim og et sikkert firefodsmål. Rimanalysen klassificerer hver strofe lokalt;
+et terza-rima-gæt kan derfor genkende `ABA`-terzetterne, men ikke i sig selv
+bevise rimkæden mellem to nabostrofer.
+
+Uden `--form` vurderes og gemmes alle sikre former; en balladestrofe kan derfor
+også få den bredere klassifikation `quatrain`. `--form` begrænser både søgning
+og foreslået XML til det valgte mønster.
+
+De understøttede mønsternavne er `sonnet`, `terza-rima`, `ottava-rima`,
+`rime-royal`, `ballad-stanza`, `distich`, `quatrain`, `blank-verse` og
+`knittelvers`.
+
+En samlet, skrivebeskyttet rapport for ét digt-id viser alle delanalyser og den
+resulterende formklassifikation:
+
+```sh
+npm run poetic-form -- oehlen1999062839
+```
+
+De underliggende værktøjer til at skrive, afgrænse, evaluere og træne
+analyserne køres direkte med Node og er dokumenteret i
+[`tools/poetic-form/README.md`](../tools/poetic-form/README.md).
+
+### Automatisk metrisk analyse
+
+Et kvalificeret automatisk gæt på digtets grundmeter gemmes i tekstens `<head>`:
+
+```xml
+<metre>
+  <analysis pattern="iambic-pentameter" confidence="0.91"/>
+  <analysis pattern="hendecasyllabic" confidence="0.84"/>
+</metre>
+```
+
+`confidence` er et decimaltal mellem 0 og 1, og analyserne står med den højeste
+confidence først. Flere analyser bruges kun, når en rytmisk og en
+stavelsesbaseret beskrivelse er kompatible. Eksisterende `<metre>` betragtes som
+manuelt kurateret og overskrives ikke af analyseværktøjet.
+
+`--only-missing` kan angives eksplicit; værktøjet springer af hensyn til manuelt
+kuraterede oplysninger altid tekster med eksisterende `<metre>` over. Den
+danske trykheuristik springer desuden tekster over, når tekstens eller digterens
+metadata angiver et andet sprog end `da`.
+
+### Automatisk strukturanalyse
+
+Den observerede strofe- og linjestruktur gemmes i tekstens `<head>`:
+
+```xml
+<structure>
+  <analysis pattern="4-4-3-3" confidence="1.0"/>
+</structure>
+```
+
+Tallene er antallet af egentlige verslinjer i hver eksplicit afgrænset strofe.
+Et digt med 14 sammenhængende linjer får derfor mønsteret `14`; værktøjet
+gætter ikke strofegrænser for at få teksten til at passe til en kendt versform.
+Tomme linjer og semantiske speciallinjer som `<nonum>`, `<versenum>`, `<hr>` og
+`<metrik>` afgrænser strofer, men tæller ikke som verslinjer. Inline noter,
+linjenumre og sideskift tæller heller ikke som selvstændige verslinjer.
+
+Analysen er deterministisk for korrekt XML og får derfor `confidence="1.0"`.
+Uden `--only-missing` erstattes en eksisterende strukturanalyse med den aktuelt
+observerede struktur. `--dry-run` viser antallet af foreslåede analyser uden at
+ændre værkfilerne.
+
+### Automatisk stavelsesanalyse
+
+Et gennemgående stavelsestal gemmes uafhængigt af den rytmiske analyse:
+
+```xml
+<syllables>
+  <analysis pattern="decasyllabic" confidence="0.94"/>
+  <analysis pattern="hendecasyllabic" confidence="0.81"/>
+</syllables>
+```
+
+Analysen kombinerer et lille udtaleleksikon med regler for moderne og historisk
+dansk og en fallback for ukendte ord. Confidence afspejler linjernes
+regelmæssighed, udtaleusikkerheden og antallet af analyserede linjer. Naboantal
+kan begge gemmes, når fx maskuline og feminine linjeudgange gør dem plausible.
+
+Værktøjet overskriver aldrig et eksisterende `<syllables>`-element og springer
+tekster over, når tekstens eller digterens metadata angiver et andet sprog end
+`da`. `--debug` viser stavelsestallet for hver linje og markerer ord, der er
+behandlet med de mindre sikre historiske regler eller elisionsregler.
 
 Titel-fallbacks:
 

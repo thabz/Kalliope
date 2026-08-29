@@ -29,17 +29,22 @@ const metadataFields = [
   'breadcrumbtitle',
   'dates',
   'firstline',
+  'form',
   'indextitle',
   'keywords',
   'linktitle',
+  'metre',
   'nofirstline',
   'notes',
   'pagebreaks',
   'pictures',
   'quality',
+  'rhyme',
   'source',
+  'structure',
   'subtitle',
   'suptitle',
+  'syllables',
   'title',
   'toctitle',
   'year',
@@ -85,6 +90,13 @@ const addSectionSpacing = xml =>
 
 const splitAdjacentMetadataFields = xml =>
   xml.replace(adjacentMetadataFieldsPattern, '$1\n');
+
+const splitAnalysisMetadata = xml => xml
+  .replace(
+    /(<(?:form|metre|rhyme|structure|syllables)(?:[ \t][^<>]*)?>)(?!\r?\n)/g,
+    '$1\n',
+  )
+  .replace(/(<analysis\b[^<>]*\/>)(?!\r?\n)/g, '$1\n');
 
 const nonumWrapperNames = [
   'nonum',
@@ -205,7 +217,7 @@ export const formatWorkXml = xml => {
   const withSplitMetadata = splitAdjacentMetadataFields(
     withoutStructuralIndentation,
   );
-  const withPoetryLines = splitPoetryLines(withSplitMetadata);
+  const withPoetryLines = splitPoetryLines(splitAnalysisMetadata(withSplitMetadata));
   const withMetadataIndentation = indentMetadata(withPoetryLines);
   return addSectionSpacing(addTextSpacing(withMetadataIndentation))
     .trimEnd() + '\n';
