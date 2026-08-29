@@ -7,6 +7,7 @@
   <notes>
     <note>Udgaven er et nøjagtigt aftryk af originaludgaven fra 1716 med enkelte rettelser i tegnsætningen.</note>
     <note>Anmærkningerne på facsimilesiderne 085–088 er placeret som fodnoter ved de tekststeder, de forklarer.</note>
+    <note>Titelbladet til originaludgaven lyder: »Nye Helte-Sange, / Om Vores Allernaadigste Herres og Konges, Konning Frideric den Fierdes, Lykkelige Seyer-Vindinger / Til Lands og Vands ved Guds Bistand erholdte Anno 1715. / GUD til Lof og Ære, Kongen til Glæde og Forlystelse, Kongens Tro og Brave Striids-Helte Til Berømmelig Eftermæle, Kongl. Mayst. Kriigsfolk til velmeente Opmuntring, At tiene Kongen Troligen, For Seyer og Ære at vinde. / Kiøbenh. 1716. Trykt hos Joach. Schmidtzgen, boende ved Nicolai Kirke. Og er sammesteds til Kiøbs.«</note>
   </notes>
   <pictures>
     <picture type="titlepage" src="1889-p1.jpg">Titelbladet til <i>Jørgen Sorterups Nye Heltesange</i>, på ny udgivne ved F. Rønning. København, Karl Schønbergs Forlag, trykt hos Nielsen &amp; Lydiche, 1889.</picture>
@@ -249,23 +250,6 @@ Hjærtet higer, Gud det finder.
 </body>
 </text>
 
-<text id="sorterup2026081211">
-<head>
-  <title>Titelblad til originaludgaven</title>
-  <source facsimile-pages="22-22"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
-<prose>
-<center>Nye Helte-Sange,</center>
-<center>Om Vores Allernaadigste Herres og Konges, Konning Frideric den Fierdes, Lykkelige Seyer-Vindinger</center>
-<center>Til Lands og Vands ved Guds Bistand erholdte Anno 1715.</center>
-<center>GUD til Lof og Ære, Kongen til Glæde og Forlystelse, Kongens Tro og Brave Striids-Helte Til Berømmelig Eftermæle, Kongl. Mayst. Kriigsfolk til velmeente Opmuntring, At tiene Kongen Troligen, For Seyer og Ære at vinde.</center>
-<center>Kiøbenh. 1716. Trykt hos Joach. Schmidtzgen, boende ved Nicolai Kirke. Og er sammesteds til Kiøbs.</center>
-</prose>
-</body>
-</text>
-
 <text id="sorterup2026081209">
 <head>
   <title>Mindetavle for året 1715</title>
@@ -322,6 +306,7 @@ FRIDERIC — 602
 <center>Deres Høye EXCELLENCES, og EXCELLENCERS Allerærbødigste og Dyb-ydmygste Tiener</center>
 <right>Jørgen Sorterup.<br/>Provst i Stevens Herred.</right>
 
+</prose>
 <quote lang="la"><pb n="4" facs="026.jpg"/>Inscriptio Chronodictica:<footnote>Inscriptio chronodictica ɔ: En inskription, hvori enkelte udhævede bogstaver betegner et vist årstal. Tager man f. eks. her linjen: FRIDERICO, så er D = 500, C = 100 og I og I = 2, ialt 602. Betydningen af inskriptionen er følgende: »Rygen og Stralsund adløde, underkuede om end uvillige, vor ophöjede, fromme og nådige konge Frederik IV.«</footnote>
 AVGVSTO NOSTRO
 PIO ET PERBENIGNO
@@ -332,19 +317,18 @@ RVGIA ET STRALSVNDIA
 SVBDITÆ VTVT INVITÆ
 PARVERVNT.
 </quote>
-</prose>
 </body>
 </text>
 
 <text id="sorterup2026081208">
 <head>
   <title>Fortale til den oprindelige udgave</title>
-  <source pages="1-14" facsimile-pages="28-41"/>
+  <source pages="1-12" facsimile-pages="28-39"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<prose>
-Høy-ædle Herrer!
+<poetry>
+<nonum>Høy-ædle Herrer!</nonum>
 Om en Lands-by-Mand maae træde
   For Deres Oyne frem med et enfoldigt Digt,
 Og ret paa gammeldags en Kiempe-Vise qvæde,
@@ -429,367 +413,307 @@ Du skulde siunged om, hvor den Tre-forked Herre
   Neptunus har begyndt som Sprude-hval at gloe,
 Da hand sin Bølge-bow ey maatte mægtig være,
   Nu Mars den giorde til sin Magtes Færge-Broe,
-
 <pb n="4" facs="030.jpg"/>Hvor hand med vaade Flab tog til at saget-skumme
-Og fraade, som hand var indsæbet til en Tvæt,
+  Og fraade, som hand var indsæbet til en Tvæt,
 Saa Mars begyndte paa hans Bølge-Loft at trumme,
-Med Torden-slag i slag og Liuned, som hand ret
+  Med Torden-slag i slag og Liuned, som hand ret
 Paa Tiimen vilde ham i Haved inde-brænde,
-Da Swensken maatte for de Danske Helte staa
+  Da Swensken maatte for de Danske Helte staa
 Om Heede ud: thi de ey vidste af at vende<footnote>Thi de ey vidste af at vende, ti de tænkte ikke på at göre omkring.</footnote>
-For De med Seyer-Kranß fra Striiden kunde gaa.
+  For De med Seyer-Kranß fra Striiden kunde gaa.
 Du burde sagt os hvor Nereides begræder,
-At Havedts skryde-Strøm<footnote>Havedts skryde-Strøm, Havets snøftende (brusende) bølger. — At skryde = at snorke, snøfte.</footnote> dem skænkte lutter Bloed,
+  At Havedts skryde-Strøm<footnote>Havedts skryde-Strøm, Havets snøftende (brusende) bølger. — At skryde = at snorke, snøfte.</footnote> dem skænkte lutter Bloed,
 Da Martis Danske Flock med stolte Kiempe-sæder
-Midt paa den vilde Søe de Swensker aare-loed.
+  Midt paa den vilde Søe de Swensker aare-loed.
 Du kunde meldet om hvor Themis bort maa vige,
-Naar Mars i Sverdets Aadd og Spidz har Retten sat,
+  Naar Mars i Sverdets Aadd og Spidz har Retten sat,
 Det arme Rygen og Straalsund deraf skal sige,
-Dem Kriigens Lue kun har lidet efterladt.
+  Dem Kriigens Lue kun har lidet efterladt.
 Du burde stillet frem hvor Jupiter lod skrive
-Danner-Konning selv et deyligt Gave-Brev
+  Danner-Konning selv et deyligt Gave-Brev
 Af Indhold: Vi herved, Dig Dappre Son, vil give
-De Stæder, hvilcke sig din Fiinde for tilskrev.
+  De Stæder, hvilcke sig din Fiinde for tilskrev.
 Du skulde tale — Holdt! nu er det Tiid at tie,
-Saa svarte jeg, og broed hans Svatzen dermed af,
+  Saa svarte jeg, og broed hans Svatzen dermed af,
 Beskrygtendes, at hvis jeg længer vilde bie,
-Da kom hans Riime-snak omsider vel i Lav
+  Da kom hans Riime-snak omsider vel i Lav
 Med Fandens Olde-Moer! hvad haver jeg at giore
-Med saadan Hedenske forvorped Dievelskab?
+  Med saadan Hedenske forvorped Dievelskab?
 Til HErren Zebaoth mit Offer vil jeg fore,
-Ham horer eene til alt, baade Seyr og Tab.
+  Ham horer eene til alt, baade Seyr og Tab.
 Lad Hedningerne gaa og hæge slige Griller,
-At nævne det en Gud, som dog slet intet er.
+  At nævne det en Gud, som dog slet intet er.
 Art at digte paa jeg mig saa forestiller, (a)
-Blomstered der hos sin skiønhed Giften bær.
+  Blomstered der hos sin skiønhed Giften bær.
 <pb n="5" facs="031.jpg"/>Men at forklare for et Lærevilligt Øre,
-Hvi jeg i Sange har forfatted Kiempe-Tog?
+  Hvi jeg i Sange har forfatted Kiempe-Tog?
 Hvi jeg et Omqvæd og hos hvert har villet fore
-Og spendet hver en Sang i liige Tonis Aag?
+  Og spendet hver en Sang i liige Tonis Aag?
 Da er mit Hiertes Fryed den rette Grund til dette.
-Naar Seyer gaar hos Seyer, som Soskende paa rad,
+  Naar Seyer gaar hos Seyer, som Soskende paa rad,
 Naar GUd til Pillere i Kongens Huus vil sette
-Saa Brave Helte; Hvo vil da ey være glad?
+  Saa Brave Helte; Hvo vil da ey være glad?
 At GUd ved hvert et Vers i slutningen tilbeedis,
-Det vil jeg haabe, skal ey kunde synes leedt,
+  Det vil jeg haabe, skal ey kunde synes leedt,
 Thi det, i hvor vi end omfkring i Verden leedis,
-Om GUd har været med, i Enden bliver seet.
+  Om GUd har været med, i Enden bliver seet.
 Her er i Dannemark endnu saa Brave Kiemper,
-At bedre aldrig var i fordum Tiider til;
+  At bedre aldrig var i fordum Tiider til;
 Hvorfore jeg min Sang om Dem saaledis lemper,
-At den kand riime sig med Kiempe-Færd og Spill.
+  At den kand riime sig med Kiempe-Færd og Spill.
 Har gammelt været gæft, da bedre er at folge
-Det gode Gammelt, end det onde gængse Nyt.
+  Det gode Gammelt, end det onde gængse Nyt.
 Og maa jeg, hvis jeg tor min Sandhed ikke dolge,
-Befkiende: at jeg reent vil have om-forbyt
+  Befkiende: at jeg reent vil have om-forbyt
 Nye Noders Gangbarhed, thi er det ey en Syge,
-At voris Øren kloer kun immer efter Nyt?
+  At voris Øren kloer kun immer efter Nyt?
 Det Gamle kastes bort, som det, der vilde ryge
-Os udi Næsen, og af Mullenhed var lydt<footnote>Af Mullenhed var lydt, havde lidt af muggenhed.</footnote>.
+  Os udi Næsen, og af Mullenhed var lydt<footnote>Af Mullenhed var lydt, havde lidt af muggenhed.</footnote>.
 Derfore snagis<footnote>Snagis, rodes.</footnote> om i alle Verdens Kanter
-Om Nyt, og meere Nyt, til at forandre med
+  Om Nyt, og meere Nyt, til at forandre med
 Sit Haar og Huve, Klud, Vest, Kiortel, Hat og Vanter,
-Ja udi Boe og Bord<footnote>Boe og Bord, talemåde, som: dug og disk o. lign.</footnote> har Nyeheds Syge Sted.
+  Ja udi Boe og Bord<footnote>Boe og Bord, talemåde, som: dug og disk o. lign.</footnote> har Nyeheds Syge Sted.
 Skal Haand-verck-Manden ey paa nyest’ Mode famle,
-Da skal den fra Paris forskrives, ja fra Rom,
+  Da skal den fra Paris forskrives, ja fra Rom,
 Og naar den kommer nu, saa er det just det Gamle,
-Som disse Konstener til Nyt har koged om.
-
+  Som disse Konstener til Nyt har koged om.
 <pb n="6" facs="032.jpg"/>Nu Fruentimmeret Kasketter har optaget,
-Og baade for og bag stafferer deres Top.
+  Og baade for og bag stafferer deres Top.
 Er det da ikke Nyt? Ney! thi Sabina<footnote>Sabina Ælii Adriani Kejserinde, levede sidst i det første og først i det andet Seculo efter Christi Fødsel.</footnote> haver
-For meer end tusind Aar, sig just saa nackket op.
+  For meer end tusind Aar, sig just saa nackket op.
 Spor Juvenalem ad, hvor de Latinske Fruer
-Har bygget Panden hoy og ladet Naken lav.
+  Har bygget Panden hoy og ladet Naken lav.
 Er Klæde-slæb og Swantz, hvormed mand feyer Stuer,
-En Moede? Flyder mand i Kruuse-dullers Hav?
+  En Moede? Flyder mand i Kruuse-dullers Hav?
 Det er opkoged Nyt: Vi elsker hoye Speile
-Og rumme Bygninger, som var i Moden for
+  Og rumme Bygninger, som var i Moden for
 Udi Neronis Tiid, men sig mig, hvo vil beile
-Til gammel Helte-Digt?den jagis alt paa Dor.
+  Til gammel Helte-Digt?den jagis alt paa Dor.
 Kand gammel Daarskab til den storste Moede blive,
-Naar vi antager Roms og andres Yppighed;
+  Naar vi antager Roms og andres Yppighed;
 Hvi skal da gammel Dyd os ingen Moede give,
-Er det en Skam, at vi af Kiempe-Viiser veed?
+  Er det en Skam, at vi af Kiempe-Viiser veed?
 Jeg meen det bedre var, vi holdt de gamle Noeder,
-At Kiempe-Sang blev hort i hvert et Gildes-Huus,
+  At Kiempe-Sang blev hort i hvert et Gildes-Huus,
 End Bander horis nu, naar fulde Sviin de roeder
-I Korten-spill, og i Tobak, med Suus og Duus.
+  I Korten-spill, og i Tobak, med Suus og Duus.
 De Gamles Kiempe-Moed er værd at efterfolge,
-Da deres Trofasthed, som gammel Viin var sterck.
+  Da deres Trofasthed, som gammel Viin var sterck.
 Een gammel Vey og Ven Bedrag i sig ey dolge,
-Og saa var Kiempe-Sang ey fordum Borne-Verck.
+  Og saa var Kiempe-Sang ey fordum Borne-Verck.
 Jeg skriver Helte-Sang, saa har de Gamle skreved:
-Troß nogen viser mig, at ældre Sang er till!
+  Troß nogen viser mig, at ældre Sang er till!
 Næst Sange, hvorudi GUds store Navn er bleved
-Høypriiset; thi jeg dem for ældst erkiende vil.
+  Høypriiset; thi jeg dem for ældst erkiende vil.
 Har HErrens egen Aand i noget vildet viise
-En deylig Synge-Kunst, da var det Helte-Sang. (b)
+  En deylig Synge-Kunst, da var det Helte-Sang. (b)
 <pb n="7" facs="033.jpg"/>Naar hiine stiilte paa med Andagt GUd at priise,
-Da stemmed denne paa en yndig Riime-Klang.
+  Da stemmed denne paa en yndig Riime-Klang.
 Gack fra Ebræerne til alle andre Slegter,
-Helte-Sang er alt det ældste, som du faar.
+  Helte-Sang er alt det ældste, som du faar.
 Tidens graadig<footnote>Aadig, grådig.</footnote> Tand var den saa tryg en Vægter,
-Der voldt, at Dyden ey af Alderen tog skaar.
+  Der voldt, at Dyden ey af Alderen tog skaar.
 De gamle Skialdrer har i Norden stedse været,
-Og dette holdt i Priis end og i Konge-Hoff,
+  Og dette holdt i Priis end og i Konge-Hoff,
 De Riime-Mestre har sig udaf Kunsten næred,
-Omsiont os siunes nock, at den var noget grof.
+  Omsiont os siunes nock, at den var noget grof.
 Frode Fredegood endnu i Norden nævnes,
-Odins Minde veed af ingen Undergang,
+  Odins Minde veed af ingen Undergang,
 At os en Eftersagn af Dan og fleere levnes,
-Det voldt den Skialdre-Flock, der smugt om dennem sang.
+  Det voldt den Skialdre-Flock, der smugt om dennem sang.
 Den store Keyser Carl de Gamles Viiser yndte,
-Og loed dem samle som et dyrebart Klenod.
+  Og loed dem samle som et dyrebart Klenod.
 Og Saxo kunde sin Historie udpynte,
-Som Jislands Sange jo velvillig toeg imod.
+  Som Jislands Sange jo velvillig toeg imod.
 Jeg vil om Grækerne og Romere ey tale,
-Som dog omsider fra de andre skeied’ af,
+  Som dog omsider fra de andre skeied’ af,
 I det de Fabel-viis har alting villet male,
-Og Riime-Konsten bort til Glemsomheden gaf.
+  Og Riime-Konsten bort til Glemsomheden gaf.
 Der varer dog en Sang, som Pindarus har reved,
-Og blev betalt derfor end ogsaa dyre nok,
+  Og blev betalt derfor end ogsaa dyre nok,
 Homeri Iliader ud; En Flaccus og er bleved
-Saa hoeyt som Maro elskt, og regnet blant den Flock
+  Saa hoeyt som Maro elskt, og regnet blant den Flock
 Den selv Augustus om sig gierne maatte liide.
-De gamle Barder og de Druider med Lyst
+  De gamle Barder og de Druider med Lyst
 Har muntred Deris op ved Feide-Sang at striide.
-Biærke maal gav Ild i Norske Kiempers Bryst.
+  Biærke maal gav Ild i Norske Kiempers Bryst.
 <pb n="8" facs="034.jpg"/>Hvi skulde vi endnu da ikke Viiser digte,
-For at opmuntres ved til Mandighed og Dyd,
+  For at opmuntres ved til Mandighed og Dyd,
 Nu vi og Kiemper har, som drabelig tor figte
-Og ræddis ikke for de stolte Vaabens Lyd?
+  Og ræddis ikke for de stolte Vaabens Lyd?
 Har fordums Kiemper holdt det for et Manddoms Stykke,
-At ikke blunde ved Jern-bundne Nævers Slag;
+  At ikke blunde ved Jern-bundne Nævers Slag;
 Stoed Kiempe-Moed der i at de sig lode tykke,
-Og Døden Dennem var kun en foragtet Sag;
+  Og Døden Dennem var kun en foragtet Sag;
 Da troer jeg, kom de nu i vore Kiempers Lege,
-Og saae hvad Mord-Gevæhr de Karle laver til,
+  Og saae hvad Mord-Gevæhr de Karle laver til,
 De ved den Torden-Ild vel skulle vorde bleege,
-Og sige: Vores var, mod nu, et Borne-spill,
+  Og sige: Vores var, mod nu, et Borne-spill,
 Hvi synger vi da ey om disse Tiiders Helte,
-Kongen selv og om hans Danske Kiempe-Mænd?
+  Kongen selv og om hans Danske Kiempe-Mænd?
 Om dem, der haver saa med Fiinden spendet Belte,
-At det har knaget i hans baade Ryg og Lænd?
+  At det har knaget i hans baade Ryg og Lænd?
 Her siungis Viiser nock om Phyllis og Chrysillis<footnote>Phyllis og Chrysillis, almindelige navne i den tids hyrdesange.</footnote>,
-Som blodner meere end som skiærper Mande-Moed.
+  Som blodner meere end som skiærper Mande-Moed.
 Saa snart en Syndere paa Retter-stedet stillis,
-Saa er en Viise, om hans synd og straf, paa Foed
+  Saa er en Viise, om hans synd og straf, paa Foed
 At rende Landet om; saa skal de usle Navne,
-Dog andre til en Skræck, ha’ deris lange Spott;
+  Dog andre til en Skræck, ha’ deris lange Spott;
 Men Brave Helte, som kand heele Riger gavne,
-Dem siunges lidet om, kand det og kaldes Got!
+  Dem siunges lidet om, kand det og kaldes Got!
 Det gaar i Verden saa, at efter Got ey sporges,
-Thi beste Gierninger har fleeste Avinds-Mænd.
+  Thi beste Gierninger har fleeste Avinds-Mænd.
 Den Hest, der slæber mest, hand ofte mindst besorges,
-Den lønnis stundom best, som er en Hyckel-svend.
+  Den lønnis stundom best, som er en Hyckel-svend.
 Men vores Kiempe-Flock kand Mayesteten takke,
-Hand er den Herre, som har Lyst at lønne Dyd.
-
+  Hand er den Herre, som har Lyst at lønne Dyd.
 <pb n="9" facs="035.jpg"/>Ham ingen Tunge kand ved Hycklerie besnakke,
-Og ingen skuffe ved en Smiger-Tales Lyd.
+  Og ingen skuffe ved en Smiger-Tales Lyd.
 Hand troer det som hand seer, hand elsker det hand prover,
-Hvo ærlig er og tro, kand haabe Gunst at faae;
+  Hvo ærlig er og tro, kand haabe Gunst at faae;
 Hand lønner Kongeligt enhver, som Dyden over,
-Hand setter Dapperhed sit rette Smykke paa.
+  Hand setter Dapperhed sit rette Smykke paa.
 Hvi skulde vi da ey om begge disse siunge,
-Om Kongens Fromhed og hans brave Kiempers Dyd.
+  Om Kongens Fromhed og hans brave Kiempers Dyd.
 Hvor Møye krones med sin Ære-Løn, hver Tunge,
-Der neppe barer sig, den qvæder jo af Fryd.
+  Der neppe barer sig, den qvæder jo af Fryd.
 Om jeg end sorrigfuld har tænkt til evig Hvile (c)
-At legge ned hos den Høy-Salig Dronnings Grav
+  At legge ned hos den Høy-Salig Dronnings Grav
 Min Digte-Pen; saa maa jeg dog nu til at stiile
-Paa Helte-Sange, nu da Himlens Herre gav
+  Paa Helte-Sange, nu da Himlens Herre gav
 Min Herre Kongen Seyr til Vands og Lands tillige.
-Jeg vil at hver en Mund skal priise GUd derfor,
+  Jeg vil at hver en Mund skal priise GUd derfor,
 Og i den blodig Kriig med Hiertens Glæde sige:
-Vi have sidt i Fred, og haft saa gode Kor!
+  Vi have sidt i Fred, og haft saa gode Kor!
 Jeg vilde Brave Mænds Idretter skulde klinge
-I hvert et Øre, til en god Opmuntrelse.
+  I hvert et Øre, til en god Opmuntrelse.
 Derfore skriver jeg de Sange med saa ringe
-Og simpel Digter-Art; jeg meener det kand skee,
+  Og simpel Digter-Art; jeg meener det kand skee,
 At hvo som for er van at siunge gamle Viiser,
-Skal let til disse Nye selv finde Melodi.
+  Skal let til disse Nye selv finde Melodi.
 Mit Øye-Meed er det: Jeg GUd og Kongen priiser,
-Som os ved Seyer-Haand for Fiinden har holdt fri.
+  Som os ved Seyer-Haand for Fiinden har holdt fri.
 I min Eenfoldighed, nest hellig Sang jeg holder
-Den Helte-Sang, som kand opegge os til Dyd,
+  Den Helte-Sang, som kand opegge os til Dyd,
 For beste Sang: See! det, Høy-ædle Herrer, volder
-At jeg om Kongens Tog og Deres Daad med Fryd
-
+  At jeg om Kongens Tog og Deres Daad med Fryd
 <pb n="10" facs="036.jpg"/>Har vildet siunge: dog det kand sig og vel hænde,
-At jeg om Dennem paa en anden Tiid og Sted
+  At jeg om Dennem paa en anden Tiid og Sted
 Skal give meere, om de ikkun vilde vende
-Til Deris Tienere et naadigt Øye need.
+  Til Deris Tienere et naadigt Øye need.
 Vil de forundre Dem, hvi dette nu bag efter
-Med sine Snegle-Fied frembryder for en Dag,
+  Med sine Snegle-Fied frembryder for en Dag,
 Da, omendskiont ved mig Langdrægtigheden hefter,
-Saa er den Seenhed dog ey gandske uden sag.
+  Saa er den Seenhed dog ey gandske uden sag.
 Mand veed hin Bamse-Biorn, hvor tyk hand er og lodden,
-Gaar dog mod Vinter-Tiid til sovns i Hulen ind,
+  Gaar dog mod Vinter-Tiid til sovns i Hulen ind,
 Mand seer, at Slangerne kand ikke vende Brodden
-Mod Kuldens haarde Tvang, men har det samme Sind
+  Mod Kuldens haarde Tvang, men har det samme Sind
 Som baade Storck og Stær, som Svalen og som Viben,
-De flyver alle bort, min Digter-Geist og droeg
+  De flyver alle bort, min Digter-Geist og droeg
 Med disse væk sin Vey, ved Vinter-Kuldens Kniben,
-Saa jeg bag efter den et Nap-i-Veyret toeg.
+  Saa jeg bag efter den et Nap-i-Veyret toeg.
 Foruden dette kom mig og et Syvn i Sinde,
-Som joeg en hastig Skræck ind i min Digter-Aand,
+  Som joeg en hastig Skræck ind i min Digter-Aand,
 At jeg skar Traaden af, da best jeg skulde spinde,
-Og bandt den om igien kun med en langsom Haand.
+  Og bandt den om igien kun med en langsom Haand.
 Mig siuntis, at jeg kom for et Pallatzis Dørre,
-Hvor Store Heldte saaes, med mine Sange frem,
+  Hvor Store Heldte saaes, med mine Sange frem,
 Strax modte mig det Bud: Du skulde komed forre,
-For sildig nu, gack kun med dine Sager hiem.
+  For sildig nu, gack kun med dine Sager hiem.
 Jeg spurte ad hvorfor? Mig svartes: Taabe-Nakke,
-Kom hid, kiig ind, og see hvad dig til Hinder er!
+  Kom hid, kiig ind, og see hvad dig til Hinder er!
 Jeg havde nesten styrt: hos Pakke saae jeg Pakke
-Af lutter Ære-Vers og lange Titeler.
+  Af lutter Ære-Vers og lange Titeler.
 Her stoede Store Mænd af Myndighed og Ære,
-Hvis lærde Penne-spind har baade Fynd og Klem;
+  Hvis lærde Penne-spind har baade Fynd og Klem;
 Her stoede de, som maa de Floyels Vinger bære
-Paa deres Kiorteler, som ziirlig bragte frem
+  Paa deres Kiorteler, som ziirlig bragte frem
 <pb n="11" facs="037.jpg"/>I kostelige Riim de mandige Bedrifter,
-Som Kongens gæve Mænd mod Fiinden ovede.
+  Som Kongens gæve Mænd mod Fiinden ovede.
 Her stoede andre, som med skienne rare Skriffter
-I allehaande Sprog for Efterkommerne
+  I allehaande Sprog for Efterkommerne
 Opregnede alt det, som er forhen passered,
-Et var som en Romain<footnote>Romain, Roman.</footnote>, et andet en Journal;
+  Et var som en Romain<footnote>Romain, Roman.</footnote>, et andet en Journal;
 Her var vel Tusinde, som havde Vers levered.
-Jeg blev ved dette Siun nu baade heed og sval,
+  Jeg blev ved dette Siun nu baade heed og sval,
 Og drog min Næse strax tilbage, jeg mig vendte,
-Og sagde hos mig selv: hvad vil du giore her?
+  Og sagde hos mig selv: hvad vil du giore her?
 Du i din walmels<footnote>Walmel, vadmel.</footnote> Dragt maa tænke til at hente
-Dig Skam til Takke, om du kommer disse nær.
+  Dig Skam til Takke, om du kommer disse nær.
 Dog prilled<footnote>Prilled, prikkede, æggede.</footnote> Geisten mig, og sagde: Bii til siden,
-Naar alt er giennemlæst, lad dit saa lobe ind;
+  Naar alt er giennemlæst, lad dit saa lobe ind;
 Er end din Digten slett, din Viisdom ikkun liden,
-Det sletteste kand tit fornoye storste Sind.
+  Det sletteste kand tit fornoye storste Sind.
 Er alt end ikke got, der tor dog hittes noget,
-Som mand maa sige, at mand for har ikke seet.
+  Som mand maa sige, at mand for har ikke seet.
 Er det ey udstaffeert, ey bunted eller broged,
-Alt nock, naar det ikkun er ikke stygt og leet.
+  Alt nock, naar det ikkun er ikke stygt og leet.
 Hvi skulde mand endnu ey Viiser turde digte,
-For at opmuntres ved til Mandighed og Dyd;
+  For at opmuntres ved til Mandighed og Dyd;
 Nu vi og Kiemper har, som drabeligt tor figte
-Og ræddes ikke for de stolte Vaabens Lyd?
+  Og ræddes ikke for de stolte Vaabens Lyd?
 Jeg greeb min Penne-Feer, tog til igien at skrive
-For det afbrudte Verck at flikke noget paa,
+  For det afbrudte Verck at flikke noget paa,
 Og da min digter-Geist fik atter lidt til Live,
-Da loed jeg hende af med denne Ordre gaae:
-
+  Da loed jeg hende af med denne Ordre gaae:
 <pb n="12" facs="038.jpg"/>Gack Silde-fæding hen, hor til, hvor du befaldes
-De Store Kiemper, for du bliver klædt i Prent.
+  De Store Kiemper, for du bliver klædt i Prent.
 Vil de dig ey forsmaa, da beed, at du maa kaldes
-De dappre Danske Mænds
-dybydmygste
-Client.
-Anmerkninger.
-Her kunde vel adskillige Notæ og Anmerkninger, deels til Oplysning for de U-
-lærdes skyld, deels til klar Beviisning for des mere Visheds skyld, tillegges:
-Men denne sinde maa det beroe med at forklare og nogenlunde beviise det,
-hvorudi jeg fra mange andre fornemme Lærde Mænds Meeninger og Sædvaner afvii-
-ger, ikke at jeg vil enten lære dem, eller laste dem, det være langt fra, men allene, at jeg
-vil viise, at det er mig ikke mueligt altiid at hænge saaledis af andres Tanker, at jeg jo
-ogsaa for andre maa aabne mine; Naar begge ere betragtede, kand en hver folge dem,
-som hans Skiønsomhed holder for de rigtigste.
-(a) Her falder jeg fra den Maade at digte paa, som adskillige Lærdes Penne har
-giort baade berømmelig og brugelig, at indføre Hedenske Afguder Jupiter, Mars, Ne-
-ptunus, Apollo, Venus, som dem der siges om enten at skulde raade for Vandet eller
-Landet, give Seyren eller Forliisen etc. Og det af den Aarsag, at disse Sprog Deut. 7.
-v. 26. Exod. 25. v. 15. Hos. 2. v. 19. 1 Cor. 8. v. 4. 1 Cor. 10. v. 20. paa den eene
-Siide, og disse 1 Cor. 12. v. 4. 5. 6. 7. etc. etc. paa den anden Siide giver i alle saadan-
-ne inventioner, naar de Hedenske Afguders Navne fremsettes til anden Ende, end at
-bespottes, som de der ere intet, mig en Tvivl i Samvittigheden; Da mig altiid rinder
-disse Ord i Tanker, som Dunte<footnote>Lud. Dunte (1597—1639), præst i Reval, forfatter til Decisiones 600 casuum conscientiæ.</footnote> i hans Casibus Conscientiæ har anfort, det jeg her
-giver paa Danske: De Christne Pöeter skal see til, at de saaledes efterfolger de He-
-
-denske, at deres Christendom ikke vanæres eller besmittes: Tillegger mand (de Heden-
-ske Afguder) nogen Kraft eller Magt, da er det ugudeligt. Hvorved jeg dog ikke vil
-giore mig til en Herre over andres Samvittigheder, langt mindre til Monstrer eller
-Mester over deres inventioner. Skulde det komme til Desput, haaber jeg at for-
-svare denne min Meening saa vel, som andre deres.
-(b) Skulde mand tale om den Striidighed, der falder om den Jodiske Digte-kunst,
-vilde det her blive for vidtløftigt at afhandle, i det nogle med Scaligero<footnote>Joseph Justus Scaliger (1540—1609), professor i Leyden, en meget berömt filolog.</footnote> og de ham fol-
-ger, gior for lidet, andre med Gomaro<footnote>Frans Gomarus (1563—1641), en berömt reformert teolog.</footnote> og hans Anhængere formeget der af. Hvo der
-lyster
-
-<pb n="13" facs="039.jpg"/>lyster at finde, som i en kort Sum samlede baade deres Navne og Meeninger, som ere
-med og imod, kand ickun opslaa Dubia Vexata Augusti Pfeiferi p. 527 og Morhofi<footnote>Augustus Pfeiffer (1640—98), protestantisk teolog og sprogforsker, forfatter til <i>Dubia vexata scripturæ</i>. — Daniel Georg Morhof (1639—91), sprogforsker og literærhistoriker, forfatter til »<i>Unterricht von der deutschen Sprache und Poesie</i>«.</footnote>
-Underretning om det Tydske Sprog Cap. 9. saa finder hand temmelig Fornoyelse;
-Min Meening er kortelig denne: Vi finder i Bibelen Sange, som ere digtede GUD til
-Ære, saa og Sange Brave Mænd og Helte til Ære, i de forste sees meere paa
-Aand og Andagt at love GUD med end paa Versernes og Riimens Rigtighed, saa
-at de synes at have været siunget, ungefær som hos os, O GUd vi love dig,
-Min siæl ophoyer HErren, Vi troe allesammen paa een GUD etc. Men i de-
-res Heldte-Sange, som de sang Høye Herrer til Ære, forholdt det sig anderleedis.
-Vi har i Bibelen ickun Tvende af dette slags, begge har deres rigtige baade Fald og
-Riim, saa reene og fuldkomne, som de kand behof giores til Vers, der skal siunges. Den
-forste Helte-Sang er den som Israels Born sang deres Forster, Ædle og Læremestere
-Ære Num. 21. v. 17. 18. hvor folket stillede sig i tvende Rader eller Choer, som
-Lutherus, Joh. Schmidius og andre af Udtolkerne har forklaret det, og sang saa alter-
-natim om hin anden, som nu i vores Concert-Music, det eene Choer Forsangen
-(<span lang="el">στροφὴν προῳδὸν</span>) det andet Choer sang Verset self (<span lang="el">ἀντιστροφὴν ἐπῳδὸν</span>) For-
-sangen har intet Riim, men dog en Lamdacismum<footnote>Lamdacismum; »Lambdacisme« betyder eg. en for hyppig brug af Bogstavet L.</footnote> eller Lighed i tvende visse Ords
-Begyndelse, som gior den vellydende. Men Sangen i sig self er saa fuldkommet et
-Vers, skikket til en Dantze-Tagt, at jeg kand ikke see, at nogen i vor Tiid skulde i vort
-Maal kunde opsette det bedre. Jeg vil skrive det Hebraiske her med Latinske Bogsta-
-ver, paa det at det des lettere kand sees af alle, og foye min Danske Oversettelse saa,
-at den kand have liige Stavelse-Fald og Riim efter det Hebraiske Verses Gang og
-Fald. At deraf endogsaa kand eragtes, hvad Artighed der stundom stikker i Hoved-
-Sproged, som i Oversettelserne aldrig kand ventes.
-Chorus 1. v. 17.
-Ahhli beer ehhnulah
-Stig op du brond siunger Ham.
-Chorus 2. v. 18.
-Beer chapharua En brond som er grafvet
-Sharim, carua Af Forster, lafvet
-Nedibe haahm Ved de Ædle ok
-Bimchokek bemischahnotam. Mestre, som hver bar
-deris Stok.
-
-<pb n="14" facs="040.jpg"/>Den anden Heldte-Sang er den Qvinderne sang Saul og David til Ære. 1 Sam.
-18. v. 17. hvor det synes, at det snarere har været, som et Omqvæde, hvilket Qvin-
-derne har lagt til en anden da brugelig Dantze-Sang, og saa svaret imod hin anden, det
-eene Choer om Saul, det andet om David, end at den heele Sang skulde bestaae i saa
-Ord, som dog ere gandske rigtige Riim-Vers:
-Schaül baalaphau Saul et tusinde joeg
-Ve David birbebotau men ti tusinde David sloeg.
-Nok er dette, at disse Heldte-Sange ere satte saa rigtige paa Riim, og kand me-
-get vel skikke sig som Vers til at dantze efter, saa at jeg tvifler ikke paa, at Joderne jo
-har haft i fordum Tiid ligesaa god Poesi i Riim og Vers, som andre Folk, ja andre
-at have lærdt af dem, men kand være troligt, at de med Regieringens Undergang, Fol-
-kets Adspreeding, Tungemaalets Forandring ligesaavel er gaaet under, som de gamle
-Sange hos de Romere, hvilke Cato hafde i sin Tiid hort og sect at have været til, men
-Cicero derefter in Bruto beklagede, at de ey meere var at finde.
-(c) Det sidste, som jeg til offentlig Tryck loed befordre, var et sorgeligt Digt over
-Høy-salig Enke Dronningens dødelige Afgang, som i Hendes Liig-begængelse
-blev uddeelt.
-
-</prose>
+  De dappre Danske Mænds
+<nonum><right>dybydmygste</right></nonum>
+<nonum><right>Client.</right></nonum>
+</poetry>
 </body>
 </text>
 
-<text id="sorterup2026081212">
+<text id="sorterup2026082901">
 <head>
-  <title>Titelblad til den første Helte-Sang</title>
-  <source facsimile-pages="43-43"/>
+  <title>Anmerkninger</title>
+  <toctitle>Anmærkninger til fortalen</toctitle>
+  <nofirstline/>
+  <source pages="12-14" facsimile-pages="39-41"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote lang="la">Hypomnesis
-Anni 1715
-TVA MANVS DEBELLAT
-SVECOS.<footnote>Hypomnesis etc., Mindetavle for året 1715: Din hånd underkuer Svenskerne.</footnote>
+<prose>
+Her kunde vel adskillige Notæ og Anmerkninger, deels til Oplysning for de Ulærdes skyld, deels til klar Beviisning for des mere Visheds skyld, tillegges: Men denne sinde maa det beroe med at forklare og nogenlunde beviise det, hvorudi jeg fra mange andre fornemme Lærde Mænds Meeninger og Sædvaner afviiger, ikke at jeg vil enten lære dem, eller laste dem, det være langt fra, men allene, at jeg vil viise, at det er mig ikke mueligt altiid at hænge saaledis af andres Tanker, at jeg jo ogsaa for andre maa aabne mine; Naar begge ere betragtede, kand en hver folge dem, som hans Skiønsomhed holder for de rigtigste.
+  (a) Her falder jeg fra den Maade at digte paa, som adskillige Lærdes Penne har giort baade berømmelig og brugelig, at indføre Hedenske Afguder Jupiter, Mars, Neptunus, Apollo, Venus, som dem der siges om enten at skulde raade for Vandet eller Landet, give Seyren eller Forliisen etc. Og det af den Aarsag, at disse Sprog Deut. 7. v. 26. Exod. 25. v. 15. Hos. 2. v. 19. 1 Cor. 8. v. 4. 1 Cor. 10. v. 20. paa den eene Siide, og disse 1 Cor. 12. v. 4. 5. 6. 7. etc. etc. paa den anden Siide giver i alle saadanne inventioner, naar de Hedenske Afguders Navne fremsettes til anden Ende, end at bespottes, som de der ere intet, mig en Tvivl i Samvittigheden; Da mig altiid rinder disse Ord i Tanker, som Dunte<footnote>Lud. Dunte (1597—1639), præst i Reval, forfatter til Decisiones 600 casuum conscientiæ.</footnote> i hans Casibus Conscientiæ har anfort, det jeg her giver paa Danske: De Christne Pöeter skal see til, at de saaledes efterfolger de Hedenske, at deres Christendom ikke vanæres eller besmittes: Tillegger mand (de Hedenske Afguder) nogen Kraft eller Magt, da er det ugudeligt. Hvorved jeg dog ikke vil giore mig til en Herre over andres Samvittigheder, langt mindre til Monstrer eller Mester over deres inventioner. Skulde det komme til Desput, haaber jeg at forsvare denne min Meening saa vel, som andre deres.
+  (b) Skulde mand tale om den Striidighed, der falder om den Jodiske Digte-kunst, vilde det her blive for vidtløftigt at afhandle, i det nogle med Scaligero<footnote>Joseph Justus Scaliger (1540—1609), professor i Leyden, en meget berömt filolog.</footnote> og de ham folger, gior for lidet, andre med Gomaro<footnote>Frans Gomarus (1563—1641), en berömt reformert teolog.</footnote> og hans Anhængere formeget der af. Hvo der <pb n="13" facs="039.jpg"/>lyster at finde, som i en kort Sum samlede baade deres Navne og Meeninger, som ere med og imod, kand ickun opslaa Dubia Vexata Augusti Pfeiferi p. 527 og Morhofi<footnote>Augustus Pfeiffer (1640—98), protestantisk teolog og sprogforsker, forfatter til <i>Dubia vexata scripturæ</i>. — Daniel Georg Morhof (1639—91), sprogforsker og literærhistoriker, forfatter til »<i>Unterricht von der deutschen Sprache und Poesie</i>«.</footnote> Underretning om det Tydske Sprog Cap. 9. saa finder hand temmelig Fornoyelse; Min Meening er kortelig denne: Vi finder i Bibelen Sange, som ere digtede GUD til Ære, saa og Sange Brave Mænd og Helte til Ære, i de forste sees meere paa Aand og Andagt at love GUD med end paa Versernes og Riimens Rigtighed, saa at de synes at have været siunget, ungefær som hos os, O GUd vi love dig, Min siæl ophoyer HErren, Vi troe allesammen paa een GUD etc. Men i deres Heldte-Sange, som de sang Høye Herrer til Ære, forholdt det sig anderleedis. Vi har i Bibelen ickun Tvende af dette slags, begge har deres rigtige baade Fald og Riim, saa reene og fuldkomne, som de kand behof giores til Vers, der skal siunges. Den forste Helte-Sang er den som Israels Born sang deres Forster, Ædle og Læremestere Ære Num. 21. v. 17. 18. hvor folket stillede sig i tvende Rader eller Choer, som Lutherus, Joh. Schmidius og andre af Udtolkerne har forklaret det, og sang saa alternatim om hin anden, som nu i vores Concert-Music, det eene Choer Forsangen (<span lang="el">στροφὴν προῳδὸν</span>) det andet Choer sang Verset self (<span lang="el">ἀντιστροφὴν ἐπῳδὸν</span>) Forsangen har intet Riim, men dog en Lamdacismum<footnote>Lamdacismum; »Lambdacisme« betyder eg. en for hyppig brug af Bogstavet L.</footnote> eller Lighed i tvende visse Ords Begyndelse, som gior den vellydende. Men Sangen i sig self er saa fuldkommet et Vers, skikket til en Dantze-Tagt, at jeg kand ikke see, at nogen i vor Tiid skulde i vort Maal kunde opsette det bedre. Jeg vil skrive det Hebraiske her med Latinske Bogstaver, paa det at det des lettere kand sees af alle, og foye min Danske Oversettelse saa, at den kand have liige Stavelse-Fald og Riim efter det Hebraiske Verses Gang og Fald. At deraf endogsaa kand eragtes, hvad Artighed der stundom stikker i Hoved-Sproged, som i Oversettelserne aldrig kand ventes.
+</prose>
+<quote max-width="100%">
+<center>Chorus 1. v. 17.</center>
+<span lang="he">Ahhli beer ehhnulah</span>
+Stig op du brond siunger Ham.
+
+<center>Chorus 2. v. 18.</center>
+<span lang="he">Beer chapharua</span> En brond som er grafvet
+<span lang="he">Sharim, carua</span> Af Forster, lafvet
+<span lang="he">Nedibe haahm</span> Ved de Ædle ok
+<span lang="he">Bimchokek bemischahnotam.</span> Mestre, som hver bar deris Stok.
 </quote>
+<prose>
+<pb n="14" facs="040.jpg"/>Den anden Heldte-Sang er den Qvinderne sang Saul og David til Ære. 1 Sam. 18. v. 17. hvor det synes, at det snarere har været, som et Omqvæde, hvilket Qvinderne har lagt til en anden da brugelig Dantze-Sang, og saa svaret imod hin anden, det eene Choer om Saul, det andet om David, end at den heele Sang skulde bestaae i saa Ord, som dog ere gandske rigtige Riim-Vers:
+</prose>
+<quote max-width="100%">
+<span lang="he">Schaül baalaphau</span> Saul et tusinde joeg
+<span lang="he">Ve David birbebotau</span> men ti tusinde David sloeg.
+</quote>
+<prose>
+Nok er dette, at disse Heldte-Sange ere satte saa rigtige paa Riim, og kand meget vel skikke sig som Vers til at dantze efter, saa at jeg tvifler ikke paa, at Joderne jo har haft i fordum Tiid ligesaa god Poesi i Riim og Vers, som andre Folk, ja andre at have lærdt af dem, men kand være troligt, at de med Regieringens Undergang, Folkets Adspreeding, Tungemaalets Forandring ligesaavel er gaaet under, som de gamle Sange hos de Romere, hvilke Cato hafde i sin Tiid hort og sect at have været til, men Cicero derefter in Bruto beklagede, at de ey meere var at finde.
+  (c) Det sidste, som jeg til offentlig Tryck loed befordre, var et sorgeligt Digt over Høy-salig Enke Dronningens dødelige Afgang, som i Hendes Liig-begængelse blev uddeelt.
+</prose>
 </body>
 </text>
 
 <text id="sorterup2026081201">
 <head>
   <title>Den første Helte-Sang</title>
+  <notes>
+    <note>Titelbladet til denne heltesang lyder: »<span lang="la">Hypomnesis / Anni 1715 / TVA MANVS DEBELLAT / SVECOS.</span>« Udgavens forklaring lyder: »Hypomnesis etc., Mindetavle for året 1715: Din hånd underkuer Svenskerne.«</note>
+  </notes>
   <firstline>Kong FRIDERIC sidder paa Axel-hofs Vold</firstline>
-  <source pages="1-4" facsimile-pages="44-47"/>
+  <source pages="1-4" facsimile-pages="43-47"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -906,26 +830,14 @@ GUd være nu vores Behielper.
 </body>
 </text>
 
-<text id="sorterup2026081213">
-<head>
-  <title>Titelblad til den anden Helte-Sang</title>
-  <source facsimile-pages="49-49"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
-<quote lang="la">Gnoma Mnemonica
-Anni 1715.
-CAPTAS TRADO SVECORVM
-NAVES.<footnote>Gnoma etc. Erindrings-tankesprog for året 1715: Jeg overgiver Svenskernes tagne skibe.</footnote>
-</quote>
-</body>
-</text>
-
 <text id="sorterup2026081202">
 <head>
   <title>Den anden Helte-Sang</title>
+  <notes>
+    <note>Titelbladet til denne heltesang lyder: »<span lang="la">Gnoma Mnemonica / Anni 1715. / CAPTAS TRADO SVECORVM / NAVES.</span>« Udgavens forklaring lyder: »Gnoma etc. Erindrings-tankesprog for året 1715: Jeg overgiver Svenskernes tagne skibe.«</note>
+  </notes>
   <firstline>Der farer en drabelig Kiempe om bord</firstline>
-  <source pages="1-6" facsimile-pages="50-55"/>
+  <source pages="1-6" facsimile-pages="49-55"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1073,26 +985,14 @@ GUD give os Seyer og Ære.
 </body>
 </text>
 
-<text id="sorterup2026081214">
-<head>
-  <title>Titelblad til den tredie Helte-Sang</title>
-  <source facsimile-pages="57-57"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
-<quote lang="la">Eteostichon
-Anni 1715.
-CANTABIT DOMITIS IN ÆQVO
-RE SVECIS.<footnote>Eteostichon etc. Mindetavle for året 1715: Den skal synge, efter at Svenskerne ere undertvungne på havet.</footnote>
-</quote>
-</body>
-</text>
-
 <text id="sorterup2026081203" ignore-tests="single-circumflex-a-in-text">
 <head>
   <title>Den tredie Helte-Sang</title>
+  <notes>
+    <note>Titelbladet til denne heltesang lyder: »<span lang="la">Eteostichon / Anni 1715. / CANTABIT DOMITIS IN ÆQVO / RE SVECIS.</span>« Udgavens forklaring lyder: »Eteostichon etc. Mindetavle for året 1715: Den skal synge, efter at Svenskerne ere undertvungne på havet.«</note>
+  </notes>
   <firstline>Det øres til Sverrig et Søeslag er tabt</firstline>
-  <source pages="1-8" facsimile-pages="58-65"/>
+  <source pages="1-8" facsimile-pages="57-65"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1306,27 +1206,14 @@ Vil HErren, saa vinder vi Seyer.
 </body>
 </text>
 
-<text id="sorterup2026081215">
-<head>
-  <title>Titelblad til den fjerde Helte-Sang</title>
-  <source facsimile-pages="67-67"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
-<quote lang="la">Chronostichon
-In memoriam
-Occupatæ RVGIÆ
-Anno 1715.
-ARMATIS CESSIT RVGIA VICTA DANIS.<footnote>Chronostichon etc. Mindetavle til erindring om Rygens erobring i året 1715. Det overvundne Rygen böjer sig for de bevæbnede Danske.</footnote>
-</quote>
-</body>
-</text>
-
 <text id="sorterup2026081204">
 <head>
   <title>Den fjerde Helte-Sang</title>
+  <notes>
+    <note>Titelbladet til denne heltesang lyder: »<span lang="la">Chronostichon / In memoriam / Occupatæ RVGIÆ / Anno 1715. / ARMATIS CESSIT RVGIA VICTA DANIS.</span>« Udgavens forklaring lyder: »Chronostichon etc. Mindetavle til erindring om Rygens erobring i året 1715. Det overvundne Rygen böjer sig for de bevæbnede Danske.«</note>
+  </notes>
   <firstline>Herr SESTED har aulled en Søn under Øe</firstline>
-  <source pages="1-8" facsimile-pages="68-75"/>
+  <source pages="1-8" facsimile-pages="67-75"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1540,27 +1427,14 @@ Af HErren er Seyren alleene.
 </body>
 </text>
 
-<text id="sorterup2026081216">
-<head>
-  <title>Titelblad til den femte Helte-Sang</title>
-  <source facsimile-pages="77-77"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
-<quote lang="la">Eteologicon
-Expugnatæ STRALSVNDIÆ
-Anno 1715.
-ARMIS VICTA LITAT NOSTRO
-STRALSVNDIA REGI.<footnote>Eteologicon etc. Mindetavle over erobringen af Stralsund i året 1715. Det med våben overvundne Stralsund bringer sonofre til vor konge.</footnote>
-</quote>
-</body>
-</text>
-
 <text id="sorterup2026081205">
 <head>
   <title>Den femte Helte-Sang</title>
+  <notes>
+    <note>Titelbladet til denne heltesang lyder: »<span lang="la">Eteologicon / Expugnatæ STRALSVNDIÆ / Anno 1715. / ARMIS VICTA LITAT NOSTRO / STRALSVNDIA REGI.</span>« Udgavens forklaring lyder: »Eteologicon etc. Mindetavle over erobringen af Stralsund i året 1715. Det med våben overvundne Stralsund bringer sonofre til vor konge.«</note>
+  </notes>
   <firstline>Kong FRIDERIC farer til Pommeren ud</firstline>
-  <source pages="1-8" facsimile-pages="78-85"/>
+  <source pages="1-8" facsimile-pages="77-85"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
