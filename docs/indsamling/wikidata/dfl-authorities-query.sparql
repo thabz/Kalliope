@@ -1,0 +1,7 @@
+SELECT ?person ?dflId ?birth ?death ?viaf ?gnd WHERE {
+  ?person wdt:P12386 ?dflId.
+  OPTIONAL { ?person wdt:P569 ?birth. }
+  OPTIONAL { ?person wdt:P570 ?death. }
+  OPTIONAL { ?person wdt:P214 ?viaf. }
+  OPTIONAL { ?person wdt:P227 ?gnd. }
+}

@@ -28,3 +28,22 @@ fødsels- og dødsdata, occupation-/instance-/værkclaims samt VIAF- og DFL-id�
 når de findes. Rå og normaliserede værdier er separate. SPARQL-svaret indeholder
 ikke qualifiers og references; det er dokumenteret som en begrænsning og kræver
 en eksplicit EntityData-berigelse i en senere snapshot-version.
+
+## DFL-autoritets-id'er
+
+`dfl-authorities.json` er et særskilt, normaliseret snapshot for Kalliopes
+skjulte DFL-digtere. Koblingen bygger på et eksakt match mellem digterens
+gemte DFL-id og Wikidata-egenskaben P12386 og er derfor ikke et navnematch.
+Forespørgslen ligger i `dfl-authorities-query.sparql`.
+
+Snapshotet gemmer Wikidata-id samt entydige VIAF- og GND-id'er. Flere værdier
+for samme person bevares som flertydige observationer i snapshotet, men skrives
+ikke vilkårligt i digterens `info.xml`. Digterne opdateres offline med:
+
+```sh
+npm run enrich-hidden-dfl-authorities
+```
+
+Et nyt råt SPARQL-resultat normaliseres eksplicit med
+`--build-snapshot=FIL`; det overskriver det afledte snapshot og bruges derfor
+kun ved en dokumenteret ny hentning.
