@@ -295,7 +295,7 @@ const htmlToXml = (html, collected, isPoetry) => {
       options.displayNum = l.match(/<num>(.*)<\/num>/)[1];
       l = l.replace(/<num>(.*)<\/num>/, '');
     }
-    if (l.indexOf('<margin>') > -1) {
+    if (isPoetry && l.indexOf('<margin>') > -1) {
       options.margin = l.match(/<margin>(.*)<\/margin>/)[1];
       l = l.replace(/<margin>(.*)<\/margin>/, '');
     }
