@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="sonnenfels" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Joseph von</firstname>
+    <lastname>Sonnenfels</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1733</date>
+      <place>Nikolsburg</place>
+    </born>
+    <dead>
+      <date>1817-04-25</date>
+      <place>Wien</place>
+    </dead>
+  </period>
+  <works>1786</works>
+  <identifiers>
+    <wikidata>Q78674</wikidata>
+    <viaf>24609070</viaf>
+    <gnd>118615610</gnd>
+  </identifiers>
+</person>
