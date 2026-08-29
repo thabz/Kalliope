@@ -1,4 +1,14 @@
-import { extractDflTitleUrls, matchRecord, normalizeName, parseDfl, parseDflTitles, yearFromDate } from '../tools/candidate-register.js';
+import {
+  extractDflAuthorIndexUrls,
+  extractDflTitleUrls,
+  matchRecord,
+  normalizeName,
+  parseDanishAuthorIds,
+  parseDfl,
+  parseDflTitles,
+  selectDflPoetryRelations,
+  yearFromDate,
+} from '../tools/candidate-register.js';
 
 describe('candidate register normalization', () => {
   it('normalizes punctuation, whitespace and composed characters without changing source values', () => {
@@ -23,10 +33,63 @@ describe('candidate register normalization', () => {
     ]);
   });
 
+  it('discovers Danish-original author indexes and their stable ids', () => {
+    expect(extractDflAuthorIndexUrls(
+      '<a href="sk1850forfa.htm">A</a><a href="sk1850forfb.htm">B</a>'
+    )).toEqual([
+      'https://danskforfatterleksikon.dk/1850/sk1850forfa.htm',
+      'https://danskforfatterleksikon.dk/1850/sk1850forfb.htm',
+    ]);
+    expect(parseDanishAuthorIds(
+      '<div class="authorelement">A <a href="AAnna.htm"><b>Anna</b></a></div>'
+    )).toEqual(['AAnna']);
+  });
+
   it('extracts Danish poetry works and author provenance from a DFL title page', () => {
     const records = parseDflTitles('Babylon marcherer, (1970, digte, dansk)<br>af <a href="/1850bib/knudsen.htm">Erik Knudsen</a>', 'https://danskforfatterleksikon.dk/1850/sk1850titb.htm');
     expect(records[0]).toMatchObject({ title: 'Babylon marcherer', year: '1970', type: 'digte', language: 'dansk', sourceUrl: 'https://danskforfatterleksikon.dk/1850/sk1850titb.htm' });
     expect(records[0].authors[0]).toMatchObject({ name: 'Erik Knudsen', sourceId: 'knudsen', sourceUrl: 'https://danskforfatterleksikon.dk/1850bib/knudsen.htm' });
+  });
+
+  it('bevarer oversætteren som særskilt rolle', () => {
+    const records = parseDflTitles(
+      'Et digt, (1970, digte, dansk)<br>af <a href="../1850u/u1.htm">Poet</a><br>oversat af <a href="../1850/OOtto.htm">Otto</a>',
+      'https://danskforfatterleksikon.dk/1850/sk1850tite.htm'
+    );
+    expect(records[0].authors.map(author => author.role)).toEqual([
+      'author',
+      'translator',
+    ]);
+  });
+
+  it('vælger danske digtere og oversættere til dansk, men aldrig prosa', () => {
+    const works = selectDflPoetryRelations([
+      {
+        type: 'digte',
+        language: 'dansk',
+        authors: [
+          { sourceId: 'poet', role: 'author' },
+          { sourceId: 'outbound-translator', role: 'translator' },
+        ],
+      },
+      {
+        type: 'digte',
+        language: 'engelsk',
+        authors: [
+          { sourceId: 'foreign-poet', role: 'author' },
+          { sourceId: 'danish-translator', role: 'translator' },
+        ],
+      },
+      {
+        type: 'roman',
+        language: 'dansk',
+        authors: [{ sourceId: 'novelist', role: 'author' }],
+      },
+    ]);
+    expect(works.map(work => work.authors[0].sourceId)).toEqual([
+      'poet',
+      'danish-translator',
+    ]);
   });
 });
 

@@ -23,9 +23,10 @@ const auditAuthors = works => {
     (work.authors ?? []).forEach(author => {
       const key = authorKey(author);
       const existing = byKey.get(key) ?? {
-        key, sourceId: author.sourceId ?? null, names: new Set(), sourceUrls: new Set(), workIndexes: [], matches: [],
+        key, sourceId: author.sourceId ?? null, names: new Set(), roles: new Set(), sourceUrls: new Set(), workIndexes: [], matches: [],
       };
       existing.names.add(author.name);
+      existing.roles.add(author.role);
       if (author.sourceUrl != null) existing.sourceUrls.add(author.sourceUrl);
       existing.workIndexes.push(workIndex);
       existing.matches.push(author.match ?? { status: 'unmatched', confidence: 'none' });
@@ -37,7 +38,7 @@ const auditAuthors = works => {
     const status = statuses.includes('already-in-kalliope') ? 'matched' : statuses.includes('needs-review') ? 'needs-review' : 'unmatched';
     const confidence = statuses.includes('already-in-kalliope') && candidate.matches.every(match => match.status === 'already-in-kalliope') ? 'certain' : status === 'needs-review' ? 'possible' : 'none';
     return {
-      key: candidate.key, sourceId: candidate.sourceId, names: [...candidate.names].sort(), sourceUrls: [...candidate.sourceUrls].sort(),
+      key: candidate.key, sourceId: candidate.sourceId, names: [...candidate.names].sort(), roles: [...candidate.roles].sort(), sourceUrls: [...candidate.sourceUrls].sort(),
       workCount: candidate.workIndexes.length, workIndexes: candidate.workIndexes, status, confidence,
       matchReasons: [...new Set(candidate.matches.map(match => match.reason ?? match.status))],
       matches: candidate.matches,
@@ -57,7 +58,7 @@ const auditAuthors = works => {
 
 const renderAuthorAudit = audit => {
   const review = audit.records.filter(record => record.status !== 'matched').slice(0, 300);
-  return `# DFL-forfatteraudit\n\nGenereret fra DFL-poster med type \`digte\` og sprog \`dansk\`. Ingen personer er importeret.\n\n## Tal\n\n- Unikke DFL-forfatterkandidater: ${audit.counts.uniqueAuthors}\n- Sikkert matchede: ${audit.counts.matched}\n- Mulige match: ${audit.counts.possible}\n- Umatchede: ${audit.counts.unmatched}\n- Berørte værkposter: ${audit.counts.affectedWorks}\n\n## Manuel vurderingskø\n\n| Navneformer | DFL-id | Værkposter | Status | Matchårsag | Kilder |\n| --- | --- | ---: | --- | --- | --- |\n${review.map(record => `| ${record.names.join(', ').replaceAll('|', '\\|')} | ${record.sourceId ?? ''} | ${record.workCount} | ${record.status} | ${record.matchReasons.join(', ')} | ${record.sourceUrls.join('<br>')} |`).join('\n')}\n\n## Fortolkning\n\n- En DFL-forfatter samles kun med andre poster via DFL-id i dette audit.\n- Kalliope-id’er og navneforslag ligger på de enkelte værkrelationer.\n- Mulige match er ikke redaktionelle afgørelser.\n- Umatchede kandidater kan være nye personer, manglende autoritetsdata eller navne-/id-forskelle.\n`;
+  return `# DFL-forfatteraudit\n\nGenereret fra DFL-poster med type \`digte\`: originalforfattere med dansk originalsprog og oversættere af fremmedsprogede digte. Ingen personer er importeret.\n\n## Tal\n\n- Unikke DFL-forfatterkandidater: ${audit.counts.uniqueAuthors}\n- Sikkert matchede: ${audit.counts.matched}\n- Mulige match: ${audit.counts.possible}\n- Umatchede: ${audit.counts.unmatched}\n- Berørte værkposter: ${audit.counts.affectedWorks}\n\n## Manuel vurderingskø\n\n| Navneformer | DFL-id | Værkposter | Status | Matchårsag | Kilder |\n| --- | --- | ---: | --- | --- | --- |\n${review.map(record => `| ${record.names.join(', ').replaceAll('|', '\\|')} | ${record.sourceId ?? ''} | ${record.workCount} | ${record.status} | ${record.matchReasons.join(', ')} | ${record.sourceUrls.join('<br>')} |`).join('\n')}\n\n## Fortolkning\n\n- DFL’s sprogfelt behandles som værkets originalsprog.\n- En DFL-forfatter samles kun med andre poster via DFL-id i dette audit.\n- Kalliope-id’er og navneforslag ligger på de enkelte værkrelationer.\n- Mulige match er ikke redaktionelle afgørelser.\n- Umatchede kandidater kan være nye personer, manglende autoritetsdata eller navne-/id-forskelle.\n`;
 };
 
 export { auditAuthors, authorKey, parseDflAuthorPage, renderAuthorAudit };

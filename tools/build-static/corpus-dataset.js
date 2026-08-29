@@ -240,17 +240,19 @@ dataset is provided without warranty.
 `;
 
 const buildPoetRecords = (collected) => sortById(
-  Array.from(collected.poets.values()).map(poet => compactObject({
-    id: poet.id,
-    name: poetName(poet),
-    country: poet.country,
-    lang: poet.lang,
-    type: poet.type,
-    born: poet.period?.born ?? null,
-    dead: poet.period?.dead ?? null,
-    canonical_url: `${SITE_URL}/da/works/${poet.id}`,
-    identifiers: loadExternalIdentifiers(poet.id),
-  }))
+  Array.from(collected.poets.values())
+    .filter(poet => poet.hidden !== true)
+    .map(poet => compactObject({
+      id: poet.id,
+      name: poetName(poet),
+      country: poet.country,
+      lang: poet.lang,
+      type: poet.type,
+      born: poet.period?.born ?? null,
+      dead: poet.period?.dead ?? null,
+      canonical_url: `${SITE_URL}/da/works/${poet.id}`,
+      identifiers: loadExternalIdentifiers(poet.id),
+    }))
 );
 
 const buildWorkRecords = (collected) => sortById(

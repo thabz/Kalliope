@@ -36,3 +36,28 @@ titel, år, litterær type, sprog og forfatterrelationer.
 DFL dækker dansk skønlitteratur og dramatik til og med 1975, men en DFL-
 forfatterpost er ikke nødvendigvis en verificeret dansk digter. Der kan være
 pseudonymer, varianter, placeholders og poster med ufuldstændige datoer.
+
+## Skjulte personposter
+
+Når hele personopslagsauditten er kørt, kan dokumenterede, manglende DFL-
+digtere oprettes som skjulte redaktionelle personposter:
+
+```sh
+npm run candidate-register -- --fetch --all-author-pages
+npm run import-hidden-dfl-poets -- --dry-run
+npm run import-hidden-dfl-poets
+```
+
+Importen kræver et stabilt DFL-id, bevarer id'et i `info.xml` og udelader
+eksisterende Kalliope-match samt opslag, som auditen klassificerer som roller
+eller placeholders. En person er kun importegnet, når DFL både dokumenterer
+digte og enten placerer personen på listen for dansk originalsprog eller
+registrerer personen som oversætter af fremmedsprogede digte i den danske
+bibliografi. DFL's sprogfelt er værkets originalsprog; oversættere knyttet til
+digte med dansk originalsprog behandles derfor som oversættere ud af dansk og
+importeres ikke alene på det grundlag. Udenlandske
+originalforfattere, som kun optræder via en dansk oversættelse, udelades. Rene
+navnegrupper uden DFL-id importeres ikke, fordi navn alene ikke er
+tilstrækkeligt identitetsbevis. De nye poster bruger
+`country="un"` og `hidden="true"`, indtil landegrupperingen er verificeret,
+og de er redaktionelt beriget og godkendt til offentlig visning.

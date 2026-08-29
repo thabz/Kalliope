@@ -42,6 +42,8 @@ const knownPoetLanguages = new Set([
 
 const isKnownPoetLanguage = lang => knownPoetLanguages.has(lang);
 
+const isVisiblePoet = poet => poet.hidden !== true;
+
 const create_poet_square_thumb = (poetId, square_path) => {
   const path = `public/images/${poetId}/${square_path}`;
   const destFolder = `public/generated/images/${poetId}/social`;
@@ -150,6 +152,15 @@ const build_poets_first_pass = collected => {
     const country = safeGetAttr(p, 'country');
     const lang = safeGetAttr(p, 'lang');
     const type = safeGetAttr(p, 'type');
+    const hiddenAttribute = safeGetAttr(p, 'hidden');
+    if (
+      hiddenAttribute != null &&
+      hiddenAttribute !== 'true' &&
+      hiddenAttribute !== 'false'
+    ) {
+      throw `${id} har ugyldig hidden-attribut: ${hiddenAttribute}`;
+    }
+    const hidden = hiddenAttribute === 'true';
     const nameE = getChildByTagName(p, 'name');
     const periodE = getChildByTagName(p, 'period');
     const works = safeGetText(p, 'works');
@@ -229,6 +240,7 @@ const build_poets_first_pass = collected => {
       country,
       lang,
       type,
+      hidden,
       square_portrait,
       name: {
         firstname,
@@ -308,6 +320,9 @@ const build_poets_by_country_json = collected => {
   let poetsByCountry = new Map();
   let hasChangesByCountry = new Map();
   collected.poets.forEach(poet => {
+    if (isVisiblePoet(poet) === false) {
+      return;
+    }
     let list = poetsByCountry.get(poet.country) || [];
     list.push(poet);
     poetsByCountry.set(poet.country, list);
@@ -353,7 +368,10 @@ const build_literary_periods_json = collected => {
   const periods = literaryPeriods.sorted.map(period => {
     const poets = [];
     collected.poets.forEach(poet => {
-      if ((poet.literary_periods || []).includes(period.id)) {
+      if (
+        isVisiblePoet(poet) &&
+        (poet.literary_periods || []).includes(period.id)
+      ) {
         poets.push(poetListItem(poet));
       }
     });
@@ -377,6 +395,7 @@ export {
   build_poets_by_country_json,
   build_literary_periods_json,
   isKnownPoetLanguage,
+  isVisiblePoet,
   literaryPeriodForApi,
   parseLiteraryPeriods,
 };

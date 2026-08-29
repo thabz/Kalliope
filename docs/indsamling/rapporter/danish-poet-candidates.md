@@ -1,6 +1,6 @@
 # Kandidatregister: første bølge
 
-Genereret: 2026-08-07T13:35:55.354Z
+Genereret: 2026-08-29T17:47:23.249Z
 
 ## Kørsel
 
@@ -8,15 +8,15 @@ Kilder: kalliope, danskforfatterleksikon, wikidata. Dette er et genereret arbejd
 
 ## Tal
 
-- Kalliope-personer: 682
-- Kildeposter i registeret: 1241
-- Poster efter kilde: {"kalliope":682,"danskforfatterleksikon":59,"wikidata":500}
-- DFL-værkposter: 11203
-- DFL-værkposter klassificeret som dansk digtning: 11203
-- Nye eller ikke matchede poster: 548
+- Kalliope-personer: 3113
+- Kildeposter i registeret: 3672
+- Poster efter kilde: {"kalliope":3113,"danskforfatterleksikon":59,"wikidata":500}
+- DFL-værkposter: 11368
+- DFL-værkposter klassificeret som dansk digtning: 10487
+- Nye eller ikke matchede poster: 513
 - Manuel vurdering: 6
-- Poster med ukendt dødsår: 198
-- Sikkert eksisterende Kalliope-match: 670
+- Poster med ukendt dødsår: 2551
+- Sikkert eksisterende Kalliope-match: 3152
 
 ## Manuel vurderingskø
 
@@ -27,7 +27,7 @@ Kilder: kalliope, danskforfatterleksikon, wikidata. Dette er et genereret arbejd
 | kalliope | F. Fiorentini | fiorentini | needs-review | navn/datoer kræver redaktionel vurdering |
 | kalliope | Per Ræv Lille | raev | needs-review | navn/datoer kræver redaktionel vurdering |
 | kalliope | Rode | rode | needs-review | navn/datoer kræver redaktionel vurdering |
-| kalliope | Mads Rasmussen Thrane | thrane | needs-review | navn/datoer kræver redaktionel vurdering |
+| wikidata | Niels Bredal | Q11991360 | needs-review | occupation poet or subclass |
 
 ## Begrænsninger
 

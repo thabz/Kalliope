@@ -8,12 +8,13 @@ describe('DFL author audit', () => {
 
   it('aggregates works and keeps source names and URLs', () => {
     const audit = auditAuthors([
-      { authors: [{ sourceId: 'x', name: 'X', sourceUrl: 'one', match: { status: 'already-in-kalliope', reason: 'dfl-id' } }] },
-      { authors: [{ sourceId: 'x', name: 'X', sourceUrl: 'two', match: { status: 'already-in-kalliope', reason: 'dfl-id' } }] },
-      { authors: [{ sourceId: 'y', name: 'Y', sourceUrl: 'three', match: { status: 'unmatched', reason: 'no-id-or-name-match' } }] },
+      { authors: [{ sourceId: 'x', name: 'X', role: 'author', sourceUrl: 'one', match: { status: 'already-in-kalliope', reason: 'dfl-id' } }] },
+      { authors: [{ sourceId: 'x', name: 'X', role: 'translator', sourceUrl: 'two', match: { status: 'already-in-kalliope', reason: 'dfl-id' } }] },
+      { authors: [{ sourceId: 'y', name: 'Y', role: 'author', sourceUrl: 'three', match: { status: 'unmatched', reason: 'no-id-or-name-match' } }] },
     ]);
     expect(audit.counts).toMatchObject({ uniqueAuthors: 2, matched: 1, unmatched: 1, affectedWorks: 3 });
     expect(audit.records[0]).toMatchObject({ sourceId: 'x', workCount: 2, sourceUrls: ['one', 'two'] });
+    expect(audit.records[0].roles).toEqual(['author', 'translator']);
   });
 
   it('extracts life dates from a DFL person page', () => {

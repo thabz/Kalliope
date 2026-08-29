@@ -10,6 +10,14 @@
       <attribute name="country"><text/></attribute>
       <attribute name="lang"><text/></attribute>
       <attribute name="type"><text/></attribute>
+      <optional>
+        <attribute name="hidden">
+          <choice>
+            <value>true</value>
+            <value>false</value>
+          </choice>
+        </attribute>
+      </optional>
       <ref name="name"/>
       <zeroOrMore>
         <choice>

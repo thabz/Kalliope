@@ -31,7 +31,12 @@ const buildReviewQueue = (resolution, decisions, limit = 100, referenceDate = ne
   validateDecisions(decisions, resolution.records);
   const decisionByKey = new Map(decisions.map(decision => [decision.key, decision]));
   const allReviewRecords = resolution.records
-    .filter(record => record.resolution.status === 'needs-review' || record.resolution.status === 'unresolved')
+    .filter(
+      record =>
+        (record.resolution.status === 'needs-review' ||
+          record.resolution.status === 'unresolved') &&
+        (record.eligibility?.status ?? 'eligible') === 'eligible'
+    )
     .map(record => ({ ...record, publicDomainStatus: publicDomainStatus(record, referenceDate), priorityScore: priorityScore(record), decision: decisionByKey.get(record.key) ?? null }));
   const records = allReviewRecords
     .filter(record => record.publicDomainStatus === 'eligible-for-public-domain-review')

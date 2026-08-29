@@ -50,6 +50,9 @@ const buildElasticsearchTextEntries = collected => {
   const entries = [];
 
   collected.poets.forEach((poet, poetId) => {
+    if (poet.hidden === true) {
+      return;
+    }
     worksForPoet(collected, poetId).forEach(work => {
       const workId = work.id;
       entries.push({
@@ -108,14 +111,16 @@ const getPoetSearchText = poet => {
 };
 
 const buildElasticsearchPoetEntries = collected => {
-  return Array.from(collected.poets.values()).map(poet => ({
-    id: `poet-${poet.id}`,
-    data: {
-      result_type: 'poet',
-      poet,
-      poet_search: getPoetSearchText(poet),
-    },
-  }));
+  return Array.from(collected.poets.values())
+    .filter(poet => poet.hidden !== true)
+    .map(poet => ({
+      id: `poet-${poet.id}`,
+      data: {
+        result_type: 'poet',
+        poet,
+        poet_search: getPoetSearchText(poet),
+      },
+    }));
 };
 
 const buildElasticsearchTextEntryDocuments = (collected, entry) => {

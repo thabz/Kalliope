@@ -6,6 +6,7 @@ import { auditWorks, renderWorkAudit } from './dfl-work-audit.js';
 import { auditAuthors, parseDflAuthorPage, renderAuthorAudit } from './dfl-author-audit.js';
 import { renderResolution, resolveDflAuthors } from './dfl-author-resolution.js';
 import { buildReviewQueue, renderReviewQueue } from './dfl-review-queue.js';
+import { mapLimit } from './build-static/concurrency.js';
 
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const collectionDir = path.join(rootDir, 'tools', 'data', 'indsamling');
@@ -151,12 +152,17 @@ const parseDflTitles = (html, sourceUrl) => {
       return;
     }
     if (current == null) return;
-    const authorMatch = line.match(/^(?:af|digte af)\s+(.+)$/i);
+    const authorMatch = line.match(/^(af|digte af|oversat af)\s+(.+)$/i);
     if (authorMatch != null) {
-      const link = linkValue(authorMatch[1]);
-      const label = link?.label ?? authorMatch[1].trim();
+      const roleLabel = authorMatch[1].toLocaleLowerCase('da-DK');
+      const link = linkValue(authorMatch[2]);
+      const label = link?.label ?? authorMatch[2].trim();
       current.authors.push({
-        role: line.toLocaleLowerCase('da-DK').startsWith('digte af') ? 'poet' : 'author',
+        role: roleLabel === 'oversat af'
+          ? 'translator'
+          : roleLabel === 'digte af'
+            ? 'poet'
+            : 'author',
         name: label, sourceId: link == null ? null : dflSourceId(link.href),
         sourceUrl: link == null ? null : new URL(link.href, sourceUrl).href,
       });
@@ -170,6 +176,14 @@ const extractDflTitleUrls = html => [...html.matchAll(/href="([^"]*sk1850tit[^"#
   .map(match => new URL(match[1], dflTitleIndexUrl).href)
   .filter((url, index, urls) => urls.indexOf(url) === index);
 
+const extractDflAuthorIndexUrls = html => [...html.matchAll(/href="([^"]*sk1850forf[^"#]*\.htm)"/gi)]
+  .map(match => new URL(match[1], dflIndexUrl).href)
+  .filter((url, index, urls) => urls.indexOf(url) === index);
+
+const parseDanishAuthorIds = html => [...html.matchAll(
+  /<div\s+class="authorelement">[\s\S]*?<a\s+href="([^"]+\.htm)"/gi
+)].map(match => dflSourceId(match[1]));
+
 const matchWorkAuthors = (works, kalliope) => works.map(work => ({
   ...work,
   authors: work.authors.map(author => {
@@ -180,6 +194,18 @@ const matchWorkAuthors = (works, kalliope) => works.map(work => ({
     return { ...author, match };
   }),
 }));
+
+const selectDflPoetryRelations = works => works
+  .filter(work => work.type === 'digte')
+  .map(work => ({
+    ...work,
+    authors: work.authors.filter(author =>
+      work.language === 'dansk'
+        ? author.role === 'author' || author.role === 'poet'
+        : author.role === 'translator'
+    ),
+  }))
+  .filter(work => work.authors.length > 0);
 
 const wikidataQuery = `SELECT ?person ?personLabel ?alias ?birth ?death ?language ?dflId ?viaf WHERE {
   ?person wdt:P31 wd:Q5;
@@ -236,21 +262,27 @@ const run = async ({ offline = false, limit = 500, authorPageLimit = 100 } = {})
   const dflCache = path.join(dflRawDir, 'dfl-index.html');
   const dflTitleIndexCache = path.join(dflRawDir, 'dfl-title-index.html');
   const dflTitleDir = path.join(dflRawDir, 'titles');
+  const dflAuthorIndexDir = path.join(dflRawDir, 'author-index');
   const wikidataRawDir = path.join(collectionDir, 'wikidata', 'raw');
   const wikidataCache = path.join(wikidataRawDir, 'wikidata.json');
+  fs.mkdirSync(dflRawDir, { recursive: true });
+  fs.mkdirSync(wikidataRawDir, { recursive: true });
   let dflHtml;
   let dflTitleIndexHtml;
   let dflTitleUrls;
+  let dflAuthorIndexUrls;
   let wikidataJson;
   if (offline) {
     dflHtml = fs.readFileSync(dflCache, 'utf8');
     dflTitleIndexHtml = fs.readFileSync(dflTitleIndexCache, 'utf8');
     dflTitleUrls = extractDflTitleUrls(dflTitleIndexHtml);
+    dflAuthorIndexUrls = extractDflAuthorIndexUrls(dflHtml);
     wikidataJson = JSON.parse(fs.readFileSync(wikidataCache, 'utf8'));
   } else {
     dflHtml = await fetchText(dflIndexUrl, { 'User-Agent': 'Kalliope candidate register (issue 1450)' });
     dflTitleIndexHtml = await fetchText(dflTitleIndexUrl, { 'User-Agent': 'Kalliope candidate register (issue 1450)' });
     dflTitleUrls = extractDflTitleUrls(dflTitleIndexHtml);
+    dflAuthorIndexUrls = extractDflAuthorIndexUrls(dflHtml);
     if (dflTitleUrls.length === 0) throw new Error('DFL titelindekset indeholder ingen alfabetfiler');
     const response = await fetch(`${wikidataEndpoint}?query=${encodeURIComponent(wikidataQuery.replace('LIMIT 500', `LIMIT ${limit}`))}&format=json`, { headers: { Accept: 'application/sparql-results+json', 'User-Agent': 'Kalliope candidate register (issue 1450)' } });
     if (!response.ok) throw new Error(`Wikidata svarede HTTP ${response.status}`);
@@ -261,6 +293,21 @@ const run = async ({ offline = false, limit = 500, authorPageLimit = 100 } = {})
   }
   const dfl = parseDfl(dflHtml);
   fs.mkdirSync(dflTitleDir, { recursive: true });
+  fs.mkdirSync(dflAuthorIndexDir, { recursive: true });
+  const dflAuthorIndexPages = await mapLimit(dflAuthorIndexUrls, async url => {
+    const cacheFile = path.join(dflAuthorIndexDir, path.basename(new URL(url).pathname));
+    if (offline) {
+      return fs.readFileSync(cacheFile, 'utf8');
+    }
+    const html = await fetchText(url, {
+      'User-Agent': 'Kalliope candidate register (Danish author-language audit)',
+    });
+    fs.writeFileSync(cacheFile, html);
+    return html;
+  });
+  const danishAuthorIds = new Set(
+    dflAuthorIndexPages.flatMap(parseDanishAuthorIds)
+  );
   const dflWorks = [];
   for (const url of dflTitleUrls) {
     const cacheFile = path.join(dflTitleDir, path.basename(new URL(url).pathname));
@@ -270,14 +317,24 @@ const run = async ({ offline = false, limit = 500, authorPageLimit = 100 } = {})
   }
   const wikidata = parseWikidata(wikidataJson);
   const records = mergeCandidates([...kalliope, ...dfl, ...wikidata], kalliope);
-  const works = matchWorkAuthors(dflWorks.filter(work => work.type === 'digte' && work.language === 'dansk'), kalliope);
+  const works = selectDflPoetryRelations(
+    matchWorkAuthors(dflWorks, kalliope)
+  );
   const workAudit = auditWorks(works);
   const authorAudit = auditAuthors(works);
   const authorPageDir = path.join(dflRawDir, 'authors');
   fs.mkdirSync(authorPageDir, { recursive: true });
-  const authorPageAudit = [];
-  for (const author of authorAudit.records.filter(record => record.status === 'unmatched' && record.sourceUrls.length > 0).slice(0, authorPageLimit)) {
-    const sourceUrl = author.sourceUrls[0].replace('/1850/', author.sourceId?.startsWith('u') === true ? '/1850u/' : '/1850bib/');
+  const authorsToAudit = authorAudit.records
+    .filter(
+      record =>
+        record.status === 'unmatched' && record.sourceUrls.length > 0
+    )
+    .slice(0, authorPageLimit);
+  const authorPageAudit = await mapLimit(authorsToAudit, async author => {
+    const sourceUrl = author.sourceUrls[0].replace(
+      '/1850/',
+      author.sourceId?.startsWith('u') === true ? '/1850u/' : '/1850bib/'
+    );
     const cacheFile = path.join(authorPageDir, `${author.sourceId}.html`);
     try {
       let html;
@@ -290,12 +347,30 @@ const run = async ({ offline = false, limit = 500, authorPageLimit = 100 } = {})
         html = await fetchText(sourceUrl, { 'User-Agent': 'Kalliope candidate register (issue 1452)' });
         fs.writeFileSync(cacheFile, html);
       }
-      authorPageAudit.push({ key: author.key, sourceId: author.sourceId, workCount: author.workCount, ...parseDflAuthorPage(html, sourceUrl) });
+      return {
+        key: author.key,
+        sourceId: author.sourceId,
+        workCount: author.workCount,
+        ...parseDflAuthorPage(html, sourceUrl),
+      };
     } catch (error) {
-      authorPageAudit.push({ key: author.key, sourceId: author.sourceId, workCount: author.workCount, sourceUrl, pageStatus: offline ? 'not-cached' : 'fetch-error', error: error.message });
+      return {
+        key: author.key,
+        sourceId: author.sourceId,
+        workCount: author.workCount,
+        sourceUrl,
+        pageStatus: offline ? 'not-cached' : 'fetch-error',
+        error: error.message,
+      };
     }
-  }
-  const authorResolution = resolveDflAuthors({ authorAudit, authorPageAudit, kalliope, wikidata: parseWikidata(wikidataJson) });
+  });
+  const authorResolution = resolveDflAuthors({
+    authorAudit,
+    authorPageAudit,
+    kalliope,
+    wikidata: parseWikidata(wikidataJson),
+    danishAuthorIds,
+  });
   const decisionFile = path.join(outputDir, 'manual-decisions.json');
   const decisions = JSON.parse(fs.readFileSync(decisionFile, 'utf8')).decisions;
   const reviewQueue = buildReviewQueue(authorResolution, decisions, 100);
@@ -312,7 +387,7 @@ const run = async ({ offline = false, limit = 500, authorPageLimit = 100 } = {})
   fs.writeFileSync(path.join(rootDir, 'docs', 'indsamling', 'dfl', 'rapporter', 'author-resolution.md'), renderResolution(authorResolution));
   fs.writeFileSync(path.join(rootDir, 'docs', 'indsamling', 'dfl', 'rapporter', 'manual-review-queue.md'), renderReviewQueue(reviewQueue));
   fs.writeFileSync(reportFile, renderReport({ records, works, kalliope, fetchedAt: result.generatedAt, sources: result.sources }));
-  console.log(`Kalliope: ${kalliope.length}; DFL persons: ${dfl.length}; DFL title files: ${dflTitleUrls.length}; DFL Danish poetry works: ${works.length}; Wikidata: ${wikidata.length}; register: ${records.length}; matched authors: ${workAudit.counts.matchedAuthors}; unmatched authors: ${workAudit.counts.unmatchedAuthors}; review: ${workAudit.counts.manualReview}; possible duplicates: ${workAudit.counts.possibleDuplicates}; unique DFL authors: ${authorAudit.counts.uniqueAuthors}; author matched: ${authorAudit.counts.matched}; author possible: ${authorAudit.counts.possible}; author unmatched: ${authorAudit.counts.unmatched}`);
+  console.log(`Kalliope: ${kalliope.length}; DFL persons: ${dfl.length}; DFL title files: ${dflTitleUrls.length}; DFL relevant poetry works: ${works.length}; Wikidata: ${wikidata.length}; register: ${records.length}; matched authors: ${workAudit.counts.matchedAuthors}; unmatched authors: ${workAudit.counts.unmatchedAuthors}; review: ${workAudit.counts.manualReview}; possible duplicates: ${workAudit.counts.possibleDuplicates}; unique DFL authors: ${authorAudit.counts.uniqueAuthors}; author matched: ${authorAudit.counts.matched}; author possible: ${authorAudit.counts.possible}; author unmatched: ${authorAudit.counts.unmatched}`);
   return result;
 };
 
@@ -322,4 +397,16 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   run({ offline, authorPageLimit: process.argv.includes('--all-author-pages') ? Number.POSITIVE_INFINITY : 100 }).catch(error => { console.error(error.message); process.exitCode = 1; });
 }
 
-export { normalizeName, yearFromDate, parseDfl, parseDflTitles, parseWikidata, matchRecord, mergeCandidates, extractDflTitleUrls };
+export {
+  extractDflAuthorIndexUrls,
+  extractDflTitleUrls,
+  matchRecord,
+  mergeCandidates,
+  normalizeName,
+  parseDanishAuthorIds,
+  parseDfl,
+  parseDflTitles,
+  parseWikidata,
+  selectDflPoetryRelations,
+  yearFromDate,
+};

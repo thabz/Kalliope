@@ -39,6 +39,9 @@ const build_anniversaries_ical = collected => {
     }
   };
   collected.poets.forEach((poet, poetId) => {
+    if (poet.hidden === true) {
+      return;
+    }
     if (
       poet.period != null &&
       poet.period.born != null &&

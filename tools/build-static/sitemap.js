@@ -109,6 +109,9 @@ const build_sitemap_xml = (collected) => {
     );
   });
   collected.poets.forEach((poet, poetId) => {
+    if (poet.hidden === true) {
+      return;
+    }
     urls.push(
       ...localizedUrls(`/bio/${poetId}`, poetBioLastmod(poetId, modifiedDates))
     );
@@ -119,6 +122,9 @@ const build_sitemap_xml = (collected) => {
   write_sitemap('public/sitemaps/global.xml', urls);
 
   collected.poets.forEach((poet, poetId) => {
+    if (poet.hidden === true) {
+      return;
+    }
     const poetWorks = worksForPoet(collected, poetId);
     const filenames = Array.from(
       new Set(poetWorks.flatMap(work => work.sourceFiles || []))
@@ -169,7 +175,10 @@ const build_sitemap_xml = (collected) => {
   });
 
   const sitemaps_urls_xml = Array.from(collected.poets.values())
-    .filter((poet) => poet.has_works || poet.has_artwork)
+    .filter(
+      (poet) =>
+        poet.hidden !== true && (poet.has_works || poet.has_artwork)
+    )
     .map((poet) => {
       return sitemap_index_entry(`${poet.id}.xml`);
     });

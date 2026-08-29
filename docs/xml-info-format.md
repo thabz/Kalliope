@@ -53,6 +53,11 @@ så afvigende formatering ikke kan merges.
 - `country`: landekode/grupperingskode. Bruges bl.a. i forfatteroversigter.
 - `lang`: personens standardsprog. Bruges bl.a. til sortering og tekstsprog.
 - `type`: typen af aktør.
+- `hidden`: valgfri boolean (`true` eller `false`). `true` bruges til en
+  dokumenteret personpost, som endnu ikke skal vises i offentlige lister,
+  søgning, statistik, dagsdata, sitemaps eller korpusdatasættet. Posten kan
+  fortsat bruges internt og beriges redaktionelt. Manglende attribut svarer til
+  `false`.
 
 Landekoder, som buildet accepterer i dag:
 
