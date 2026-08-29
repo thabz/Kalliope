@@ -6,14 +6,32 @@ const decodeHtml = value => value.replace(/&nbsp;/gi, ' ').replace(/&amp;/gi, '&
 
 const parseDflAuthorPage = (html, sourceUrl) => {
   const headingMatches = [...html.matchAll(/<h[1-3][^>]*>([\s\S]*?)<\/h[1-3]>/gi)];
-  const headingText = headingMatches.map(match => decodeHtml(match[1].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim())).find(value => /\(\d{4}-\d{4}\)/.test(value));
+  const headingText = headingMatches
+    .map(match => decodeHtml(match[1].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim()))
+    .find(value => /\((?:\d{4}-\d{4}|[fd]\.\s*\d{4})\)/i.test(value));
   const text = decodeHtml(html.replace(/<script[\s\S]*?<\/script>/gi, '').replace(/<style[\s\S]*?<\/style>/gi, '').replace(/<(?:br|\/p|\/div|\/h[1-6])\s*\/?>/gi, '\n').replace(/<[^>]+>/g, ' ')).split(/\r?\n/).map(line => line.replace(/\s+/g, ' ').trim()).filter(Boolean).join('\n');
-  const dateMatch = (headingText ?? text).match(/([^\n]{2,160})\s*\((\d{4})-(\d{4})\)/);
-  const preferredName = dateMatch?.[1]?.trim() ?? null;
+  const lifeText = headingText ?? text;
+  const dateMatch = lifeText.match(/([^\n]{2,160})\s*\((\d{4})-(\d{4})\)/);
+  const bornMatch = dateMatch == null
+    ? lifeText.match(/([^\n]{2,160})\s*\(f\.\s*(\d{4})\)/i)
+    : null;
+  const deadMatch = dateMatch == null && bornMatch == null
+    ? lifeText.match(/([^\n]{2,160})\s*\(d\.\s*(\d{4})\)/i)
+    : null;
+  const preferredName = (dateMatch?.[1] ?? bornMatch?.[1] ?? deadMatch?.[1])?.trim() ?? null;
   const placeholder = /^(?:anonym|ukendt|uidentificeret|pseudonym)|oversat af|redigeret af/i.test(preferredName ?? '');
+  const birthYear = dateMatch?.[2] ?? bornMatch?.[2] ?? null;
+  const deathYear = dateMatch?.[3] ?? deadMatch?.[2] ?? null;
   return {
-    sourceUrl, pageStatus: placeholder ? 'non-person-placeholder' : dateMatch == null ? 'no-life-dates-found' : 'life-dates-found',
-    preferredName, birthYear: placeholder ? null : dateMatch?.[2] ?? null, deathYear: placeholder ? null : dateMatch?.[3] ?? null,
+    sourceUrl,
+    pageStatus: placeholder
+      ? 'non-person-placeholder'
+      : birthYear == null && deathYear == null
+        ? 'no-life-dates-found'
+        : 'life-dates-found',
+    preferredName,
+    birthYear: placeholder ? null : birthYear,
+    deathYear: placeholder ? null : deathYear,
   };
 };
 

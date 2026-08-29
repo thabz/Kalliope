@@ -52,9 +52,17 @@
 
   <define name="period">
     <element name="period">
-      <ref name="born"/>
-      <optional><ref name="coronation"/></optional>
-      <optional><ref name="dead"/></optional>
+      <choice>
+        <group>
+          <ref name="born"/>
+          <optional><ref name="coronation"/></optional>
+          <optional><ref name="dead"/></optional>
+        </group>
+        <group>
+          <optional><ref name="coronation"/></optional>
+          <ref name="dead"/>
+        </group>
+      </choice>
     </element>
   </define>
 

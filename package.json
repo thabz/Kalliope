@@ -35,6 +35,8 @@
     "check-text-quality": "node tools/check-text-quality.js",
     "candidate-register": "node tools/candidate-register.js",
     "import-hidden-dfl-poets": "node tools/import-hidden-dfl-poets.js",
+    "enrich-hidden-dfl-poets": "node tools/import-hidden-dfl-poets.js --existing-only",
+    "merge-hidden-dfl-duplicates": "node tools/merge-hidden-dfl-duplicates.js",
     "collect-wikidata": "node tools/data/indsamling/wikidata/collect.mjs",
     "collect-dbl": "node tools/collect-dbl.js"
   },

@@ -72,6 +72,7 @@ const parseKalliope = () => {
         birthDate: safeGetText(born), deathDate: safeGetText(dead),
         birthYear: yearFromDate(safeGetText(born)), deathYear: yearFromDate(safeGetText(dead)),
         language: safeGetAttr(person, 'lang'), country: safeGetAttr(person, 'country'),
+        hidden: safeGetAttr(person, 'hidden') === 'true',
         identifiers, works,
         evidence: { poetry: fs.existsSync(path.join(rootDir, 'fdirs', id, 'bibliography-primary.xml')) || works.length > 0, language: safeGetAttr(person, 'lang') === 'da' },
       });
@@ -324,10 +325,17 @@ const run = async ({ offline = false, limit = 500, authorPageLimit = 100 } = {})
   const authorAudit = auditAuthors(works);
   const authorPageDir = path.join(dflRawDir, 'authors');
   fs.mkdirSync(authorPageDir, { recursive: true });
+  const generatedHiddenDflIds = new Set(
+    kalliope
+      .filter(person => person.hidden === true && person.sourceId.startsWith('dfl-'))
+      .map(person => person.identifiers?.['danskforfatterleksikon-dk'])
+      .filter(value => value != null)
+  );
   const authorsToAudit = authorAudit.records
     .filter(
       record =>
-        record.status === 'unmatched' && record.sourceUrls.length > 0
+        record.sourceUrls.length > 0 &&
+        (record.status === 'unmatched' || generatedHiddenDflIds.has(record.sourceId))
     )
     .slice(0, authorPageLimit);
   const authorPageAudit = await mapLimit(authorsToAudit, async author => {

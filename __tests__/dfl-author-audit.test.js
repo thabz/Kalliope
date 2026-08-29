@@ -21,6 +21,11 @@ describe('DFL author audit', () => {
     expect(parseDflAuthorPage('<h1>Johannes Jørgensen (1866-1956)</h1>', 'https://danskforfatterleksikon.dk/1850bib/JJohannesJoergensen.htm')).toMatchObject({ pageStatus: 'life-dates-found', preferredName: 'Johannes Jørgensen', birthYear: '1866', deathYear: '1956' });
   });
 
+  it('extracts partial life dates from DFL person pages', () => {
+    expect(parseDflAuthorPage('<h2>Levende Digter (f. 1945)</h2>', 'https://example.test/living.htm')).toMatchObject({ pageStatus: 'life-dates-found', preferredName: 'Levende Digter', birthYear: '1945', deathYear: null });
+    expect(parseDflAuthorPage('<h2>Ældre Digter (d. 1945)</h2>', 'https://example.test/dead.htm')).toMatchObject({ pageStatus: 'life-dates-found', preferredName: 'Ældre Digter', birthYear: null, deathYear: '1945' });
+  });
+
   it('does not treat role or placeholder headings as people', () => {
     expect(parseDflAuthorPage('<h1>Oversat af Otto Bræmer (1806-1883)</h1>', 'https://example.test/u2.htm')).toMatchObject({ pageStatus: 'non-person-placeholder', birthYear: null, deathYear: null });
   });

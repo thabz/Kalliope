@@ -326,8 +326,8 @@ Genereret fra DFL-poster med type `digte`: originalforfattere med dansk original
 
 ## Personopslagsberigelse
 
-- Berigede umatchede kandidater: 146
-- Opslag med fødsels-/dødsår: 45
-- Placeholder-/rolleposter: 76
-- Opslag uden fundne livsdata: 25
-- Ikke cachet eller utilgængeligt: 0
+- Berigede umatchede kandidater: 2556
+- Opslag med fødsels-/dødsår: 2249
+- Placeholder-/rolleposter: 21
+- Opslag uden fundne livsdata: 143
+- Ikke cachet eller utilgængeligt: 143

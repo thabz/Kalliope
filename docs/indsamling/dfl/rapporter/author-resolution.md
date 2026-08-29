@@ -7,9 +7,9 @@ Genereret uden automatisk import.
 - Unikke DFL-forfattere: 3396
 - Sikkert match: 2716
 - Sandsynligt match: 0
-- Manuel vurdering: 45
-- Ikke-person/rolle: 76
-- Uafklaret: 559
+- Manuel vurdering: 104
+- Ikke-person/rolle: 20
+- Uafklaret: 556
 - Dansk digter eller oversætter af danske digte: 2786
 - Kun fremmedsproget originalforfatter: 610
 - Uden digtbelæg: 0
@@ -22,20 +22,48 @@ Genereret uden automatisk import.
 | uidentificeret |  | - | unresolved | eligible | translated-foreign-poetry-into-danish |  |
 | Pseudonym og unders&oslash;ges |  | - | unresolved | eligible | translated-foreign-poetry-into-danish |  |
 | pt. ukendt |  | - | unresolved | eligible | translated-foreign-poetry-into-danish |  |
+| Asger Schnack | SAsgerSchnack | 1949- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/SAsgerSchnack.htm |
+| Ulf Gudmundsen | GUlfGudmundsen | 1937- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/GUlfGudmundsen.htm |
+| Peter Mouritzen | MPeterMouritzen | 1946- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/MPeterMouritzen.htm |
+| Ebbe Jahn-Nielsen | JEbbeJahnNielsen | 1909- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/JEbbeJahnNielsen.htm |
 | [[../1850/SCarlErikSoya.htm\| [Carl Erik] Soya ]] |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
+| Kristen Bj&oslash;rnkj&aelig;r | BKristenBjoernkjaer | 1943- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/BKristenBjoernkjaer.htm |
 | Jens P. M&oslash;ller |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
+| Peer Holme Nielsen | HPeerHolmeNielsen | 1948- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/HPeerHolmeNielsen.htm |
+| Ove J&oslash;rgen Riisberg Jensen | ROveJoergenRiisbergJensen | 1911- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/ROveJoergenRiisbergJensen.htm |
+| Ann Mari Urwald | UAnnMariUrwald | 1939- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/UAnnMariUrwald.htm |
 | [[../1850/HAlfredHolmLaursen.htm\| Alfred Holm[-]Laursen ]] |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
 | A.F. (pseudonym) |  | - | unresolved | eligible | translated-foreign-poetry-into-danish |  |
 | Peter &Oslash;stergaard |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
+| Per Gammelgaard | GPerGammelgaard | 1948- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/GPerGammelgaard.htm |
+| Arne Herl&oslash;v Petersen | HArneHerloevPetersen | 1943- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/HArneHerloevPetersen.htm |
+| Klaus H&oslash;eck | HKlausHoeeck | 1938- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/HKlausHoeeck.htm |
+| Carl V. Jensen, f 1900 | JCarlVJensenf1900 | 1900- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/JCarlVJensenf1900.htm |
+| Viggo J&oslash;rgensen | JViggoJoergensen | 1913- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/JViggoJoergensen.htm |
+| Sten Kaal&oslash; | KStenKaaloe | 1945- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/KStenKaaloe.htm |
+| Asger Pedersen | PAsgerPedersen | 1934- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/PAsgerPedersen.htm |
 | [[../1850/DAndrLundDrosvad.htm\| Andr. Lund[-]Drosvad ]] |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
 | Hans Holck |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
 | Jan Pender Schmidt |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
+| Niels Barfoed | BNielsBarfoed | 1931- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/BNielsBarfoed.htm |
+| Iben Holk | HIbenHolk | 1946- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/HIbenHolk.htm |
+| Kirsten Thorup | TKirstenThorup | 1942- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/TKirstenThorup.htm |
 | antologi svensk | u3848 | 1762-1831 | needs-review | not-danish-language | foreign-original-author-only | https://danskforfatterleksikon.dk/1850u/u3848.htm |
 | [[../1850/BCarlBoeBojesen.htm\| Carl Boe[-]Bojesen ]] |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
 | Carl-Henning Pedersen |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
 | Christoffer Hansen |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
 | Niels Nielsen, o 1870 |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
 | Peter Conradsen, f 1805 |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
+| Hans Chr. B&oslash;gholm | BHansChrBoegholm | 1946- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/BHansChrBoegholm.htm |
+| Bent Dupont | DBentDupont | 1947- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/DBentDupont.htm |
+| Noemi Eskul-Jensen | ENoemiEskulJensen | 1901- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/ENoemiEskulJensen.htm |
+| Ruth Simonsen Foss | FRuthSimonsenFoss | 1908- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/FRuthSimonsenFoss.htm |
+| Holger Iisager | IHolgerIisager | 1915- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/IHolgerIisager.htm |
+| Ingeborg Jerk | JIngeborgJerk | 1896- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/JIngeborgJerk.htm |
+| Niels Lund | LNielsLund | 1948- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/LNielsLund.htm |
+| Mette Madsen | MMetteMadsen | 1924- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/MMetteMadsen.htm |
+| Sigurd Madslund | MSigurdMadslund | 1918- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/MSigurdMadslund.htm |
+| Iboja Wandall-Holm | WIbojaWandallHolm | 1923- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/WIbojaWandallHolm.htm |
 | -n (pseudonym) |  | - | unresolved | eligible | translated-foreign-poetry-into-danish |  |
 | Claudius Kirchsteen |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
 | G. Holst |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
@@ -45,6 +73,18 @@ Genereret uden automatisk import.
 | Iver Wesenberg Kj&aelig;r |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
 | Johannes Magnild |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
 | x. (pseudonym) |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
+| Bent G. Andersen | ABentGAndersen | 1916- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/ABentGAndersen.htm |
+| Aage Borres&oslash; | BAageBorresoe | 1889- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/BAageBorresoe.htm |
+| Poul Thomas Brandt | BPoulThomasBrandt | 1944- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/BPoulThomasBrandt.htm |
+| Ulla Borup | BUllaBorup | 1927- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/BUllaBorup.htm |
+| Hans Due-Boje | DHansDueBoje | 1943- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/DHansDueBoje.htm |
+| Claus Engstr&oslash;m | EClausEngstroem | 1944- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/EClausEngstroem.htm |
+| Gert Gr&oslash;ndahl | GGertGroendahl | 1929- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/GGertGroendahl.htm |
+| Axel V. Jensen, f 1910 | JAxelVJensenf1910 | 1910- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/JAxelVJensenf1910.htm |
+| Bo Nissen | NBoNissen | 1945- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/NBoNissen.htm |
+| Kjeld Nyegaard | NKjeldNyegaard | 1935- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/NKjeldNyegaard.htm |
+| Peter Nordblad-Hansen | NPeterNordbladHansen | 1902- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/NPeterNordbladHansen.htm |
+| Lis Thorbj&oslash;rnsen | TLisThorbjoernsen | 1918- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/TLisThorbjoernsen.htm |
 | Albert Ulrik B&aring;&aring;th | u10736 | 1853-1912 | needs-review | not-danish-language | foreign-original-author-only | https://danskforfatterleksikon.dk/1850u/u10736.htm |
 | [[../1850/GGroenborg.htm\| Andreas Th[&oslash;gersen] Gr&oslash;nborg ]] |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
 | A.F. v. Mengershausen |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
@@ -92,7 +132,22 @@ Genereret uden automatisk import.
 | Uffe Hansen |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
 | Valdemar Holm |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
 | Rasmus Andersen, f 1848 | ARasmusAndersenf1848 | 1848-1930 | needs-review | not-danish-language | foreign-original-author-only | https://danskforfatterleksikon.dk/1850/ARasmusAndersenf1848.htm |
+| Hanne Bengtsson | BHanneBengtsson | 1940- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/BHanneBengtsson.htm |
+| Suzanne Br&oslash;gger | BSuzanneBroegger | 1944- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/BSuzanneBroegger.htm |
+| Flemming Christensen | CFlemmingChristensen | 1944- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/CFlemmingChristensen.htm |
+| Ulla Dahlerup | DUllaDahlerup | 1942- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/DUllaDahlerup.htm |
+| Peter J. Erichsen | EPeterJErichsen | 1941- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/EPeterJErichsen.htm |
+| Nils Fisker | FNilsFisker | 1937- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/FNilsFisker.htm |
 | Thomasine Gyllembourg-Ehrensv&auml;rd | GThomasineGyllembourgEhrensvard | 1773-1856 | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/GThomasineGyllembourgEhrensvard.htm |
+| Ulrik Gr&auml;s | GUlrikGras | 1940- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/GUlrikGras.htm |
+| H.P. Hansen, f 1905 | HHPHansenf1905 | 1905- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/HHPHansenf1905.htm |
+| Christian Jensen | JChristianJensen | 1905- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/JChristianJensen.htm |
+| Ib Michael | MIbMichael | 1945- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/MIbMichael.htm |
+| Lars Peter Munk&oslash;e | MLarsPeterMunkoee | 1949- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/MLarsPeterMunkoee.htm |
+| Preben Major S&oslash;rensen | MPrebenMajorSoerensen | 1937- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/MPrebenMajorSoerensen.htm |
+| Christian Sandfeldt | SChristianSandfeldt | 1915- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/SChristianSandfeldt.htm |
+| S&oslash;ren Ulrik Thomsen | TSoerenUlrikThomsen | 1956- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/TSoerenUlrikThomsen.htm |
+| Wilhelm Adolph Thanch | TWilhelmAdolphThanch | -1809 | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/TWilhelmAdolphThanch.htm |
 | Kimitake Hiraoka | u10218 | 1925-1970 | needs-review | not-danish-language | foreign-original-author-only | https://danskforfatterleksikon.dk/1850u/u10218.htm |
 | L&eacute;on Xanrof | u10308 | 1867-1953 | needs-review | not-danish-language | foreign-original-author-only | https://danskforfatterleksikon.dk/1850u/u10308.htm |
 | Johann Christoph Friedrich Bach | u10671 | 1732-1795 | needs-review | not-danish-language | foreign-original-author-only | https://danskforfatterleksikon.dk/1850u/u10671.htm |
@@ -105,12 +160,11 @@ Genereret uden automatisk import.
 | Oscar 2 (konge af Sverige) | u11003 | 1829-1907 | needs-review | not-danish-language | foreign-original-author-only | https://danskforfatterleksikon.dk/1850u/u11003.htm |
 | Theodor von Tilly | u11005 | - | unresolved | not-danish-language | foreign-original-author-only | https://danskforfatterleksikon.dk/1850u/u11005.htm |
 | anonym norsk | u11019 | 1827-1913 | needs-review | not-danish-language | foreign-original-author-only | https://danskforfatterleksikon.dk/1850u/u11019.htm |
-| Kabir | u11318 | - | unresolved | not-danish-language | foreign-original-author-only | https://danskforfatterleksikon.dk/1850u/u11318.htm |
+| Kabir | u11318 | 1399- | needs-review | not-danish-language | foreign-original-author-only | https://danskforfatterleksikon.dk/1850u/u11318.htm |
 | Krista Bendov&aacute; | u13369 | 1923-1988 | needs-review | not-danish-language | foreign-original-author-only | https://danskforfatterleksikon.dk/1850u/u13369.htm |
 | Jul. Henningsen | u1354 | - | unresolved | not-danish-language | foreign-original-author-only | https://danskforfatterleksikon.dk/1850u/u1354.htm |
-| Scott Emerson Doser | u13687 | - | unresolved | not-danish-language | foreign-original-author-only | https://danskforfatterleksikon.dk/1850u/u13687.htm |
 | Khushhal Khan Khatak | u13853 | 1613-1689 | needs-review | not-danish-language | foreign-original-author-only | https://danskforfatterleksikon.dk/1850u/u13853.htm |
-| Firoze M.P. Kotwal | u14107 | - | unresolved | not-danish-language | foreign-original-author-only | https://danskforfatterleksikon.dk/1850u/u14107.htm |
+| Firoze M.P. Kotwal | u14107 | 1935- | needs-review | not-danish-language | foreign-original-author-only | https://danskforfatterleksikon.dk/1850u/u14107.htm |
 | Jacob | u1501 | - | unresolved | not-danish-language | foreign-original-author-only | https://danskforfatterleksikon.dk/1850u/u1501.htm |
 | James Stephens | u15267 | 1880-1950 | needs-review | not-danish-language | foreign-original-author-only | https://danskforfatterleksikon.dk/1850u/u15267.htm |
 | S. Bartholdy | u160 | - | unresolved | not-danish-language | foreign-original-author-only | https://danskforfatterleksikon.dk/1850u/u160.htm |
@@ -134,6 +188,7 @@ Genereret uden automatisk import.
 | J. K. Wezel | u3202 | - | unresolved | not-danish-language | foreign-original-author-only | https://danskforfatterleksikon.dk/1850u/u3202.htm |
 | S. Winter | u3235 | - | unresolved | not-danish-language | foreign-original-author-only | https://danskforfatterleksikon.dk/1850u/u3235.htm |
 | Daniel Lessmann | u3520 | 1794-1831 | needs-review | not-danish-language | foreign-original-author-only | https://danskforfatterleksikon.dk/1850u/u3520.htm |
+| Christoph Wilhelm L&uuml;deke | u3526 | -1805 | needs-review | not-danish-language | foreign-original-author-only | https://danskforfatterleksikon.dk/1850u/u3526.htm |
 | Lope F&eacute;lix de Vega Carpio | u3666 | 1562-1635 | needs-review | not-danish-language | foreign-original-author-only | https://danskforfatterleksikon.dk/1850u/u3666.htm |
 | C. Brammer | u369 | - | unresolved | not-danish-language | foreign-original-author-only | https://danskforfatterleksikon.dk/1850u/u369.htm |
 | antologi tysk | u3846 | 1728-1798 | needs-review | not-danish-language | foreign-original-author-only | https://danskforfatterleksikon.dk/1850u/u3846.htm |
@@ -162,6 +217,7 @@ Genereret uden automatisk import.
 | Han Suyin | u9232 | 1917-2012 | needs-review | not-danish-language | foreign-original-author-only | https://danskforfatterleksikon.dk/1850u/u9232.htm |
 | Horats Horats | u9289 | 1749-1794 | needs-review | not-danish-language | foreign-original-author-only | https://danskforfatterleksikon.dk/1850u/u9289.htm |
 | Cynthia L. Norris | u9594 | 1908-1963 | needs-review | not-danish-language | foreign-original-author-only | https://danskforfatterleksikon.dk/1850u/u9594.htm |
+| Ole Winther | WOleWinther | 1929- | needs-review | eligible | danish-original-language-and-poetry | https://danskforfatterleksikon.dk/1850/WOleWinther.htm |
 | "53" (pseudonym) |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
 | [[../1850/BAndersKappelBoecker.htm\| [Anders] Kappel B&oslash;cker ]] |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
 | [[../1850/TFTscherningSoerensen.htm\| [F.] Tscherning S&oslash;rensen ]] |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
@@ -262,62 +318,6 @@ Genereret uden automatisk import.
 | Doreen Bo |  | - | unresolved | eligible | translated-foreign-poetry-into-danish |  |
 | Dorte Ussing-Jepsen |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
 | E. H&oslash;st-Madsen |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Ebbe Rode |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Edith Hersom |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Edv. Lehmann |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Eigil Hall |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Eigil J&oslash;rgensen |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Einar Benediktsson |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Einar Christensen |  | - | unresolved | eligible | translated-foreign-poetry-into-danish |  |
-| Ejler Lund |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Ejnar Krenchel |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Ejnar Palk |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Eleonora Christine Tscherning |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Elers Koch |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Eli M&uuml;ller |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Ellen Kj&aelig;r |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Elsebeth Hall |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Emil Nielsen |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Emil Thomsen |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| En ung Pige (pseudonym) |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Erik Buddig Johansen |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Erik Kierkeg&aring;rd |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Erik Skovmand |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Erik Wendelin |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Erna R&oslash;mer |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Ernst [J.] Jensen |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Eske C. Eskesen |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Ester L&aelig;ss&oslash;e M&uuml;ller |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Eugen J&oslash;rgensen |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Eva Moltesen |  | - | unresolved | eligible | translated-foreign-poetry-into-danish |  |
-| F. Andersen |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| F. M&ouml;hl |  | - | unresolved | eligible | translated-foreign-poetry-into-danish |  |
-| F. Rud Larsen |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| F. Walter |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Ferd. Nielsen |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Finn Holm Jensen |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Folmer Bonn&eacute;n |  | - | unresolved | eligible | translated-foreign-poetry-into-danish |  |
-| Fr. Nielsen |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Fr. Reck |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Frank Rubin |  | - | unresolved | eligible | translated-foreign-poetry-into-danish |  |
-| Frede Bertelsen |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Frede L&oslash;kkegaard |  | - | unresolved | eligible | translated-foreign-poetry-into-danish |  |
-| Frede Nielsen |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Frederik Christopher Gundelach |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Frederik J. Geddebro |  | - | unresolved | eligible | translated-foreign-poetry-into-danish |  |
-| Frederikke Lindbu |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Fritz Andersen |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Fritz Bech |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| G. Bern |  | - | unresolved | eligible | translated-foreign-poetry-into-danish |  |
-| G.P. Brammer |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Georg Nicolai Toft |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Gilbert Skole |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Gregorio (pseudonym) |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Greta Waldberg |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Grete Westermann |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Grethe Prom |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Gunnar Nyborg-Jensen |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
-| Gunnar R&oslash;rmand |  | - | unresolved | not-danish-language | foreign-original-author-only |  |
 
 ## Regel
 

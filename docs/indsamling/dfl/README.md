@@ -61,3 +61,15 @@ navnegrupper uden DFL-id importeres ikke, fordi navn alene ikke er
 tilstrækkeligt identitetsbevis. De nye poster bruger
 `country="un"` og `hidden="true"`, indtil landegrupperingen er verificeret,
 og de er redaktionelt beriget og godkendt til offentlig visning.
+
+## Dubletbeslutninger
+
+Dokumenterede fletninger mellem skjulte DFL-poster og eksisterende
+Kalliope-personer ligger i `duplicate-merges.json`. Kør
+`npm run merge-hidden-dfl-duplicates` for at flytte de genererede
+placeholderværker, opdatere målpersonernes DFL-id og fjerne de skjulte
+dubletmapper. Importværktøjet læser samme beslutningsfil og genskaber derfor
+ikke de flettede DFL-poster.
+
+Den seneste gennemgang og dens afgrænsning er beskrevet i
+`rapporter/duplicate-audit.md`.

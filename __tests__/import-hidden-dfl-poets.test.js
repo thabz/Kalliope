@@ -4,6 +4,9 @@ import {
   planHiddenDflSync,
   poetIdForDflId,
   renderInfoXml,
+  renderWorkXml,
+  workIdForDflRecord,
+  workRecordsByDflId,
 } from '../tools/import-hidden-dfl-poets.js';
 
 describe('import af skjulte DFL-digtere', () => {
@@ -27,15 +30,43 @@ describe('import af skjulte DFL-digtere', () => {
 
   it('skriver hidden og kilde-id i metadata', () => {
     const xml = renderInfoXml(
-      { sourceId: 'JFrankJaeger', names: ['Frank J&aelig;ger'] },
+      {
+        sourceId: 'JFrankJaeger',
+        names: ['Frank J&aelig;ger'],
+        page: { birthYear: '1926', deathYear: '1977' },
+      },
       'dfl-jfrankjaeger'
     );
     expect(xml).toContain('hidden="true"');
     expect(xml).toContain('country="un" lang="da"');
     expect(xml).toContain('<fullname>Frank Jæger</fullname>');
+    expect(xml).toContain('<date>1926</date>');
+    expect(xml).toContain('<date>1977</date>');
     expect(xml).toContain(
       '<danskforfatterleksikon-dk>JFrankJaeger</danskforfatterleksikon-dk>'
     );
+  });
+
+  it('danner tomme, stabile DFL-værker med bibliografisk metadata', () => {
+    const work = {
+      sourceId: 'sk1850titd:123',
+      sourceUrl: 'https://danskforfatterleksikon.dk/1850/sk1850titd.htm',
+      title: 'Danske Digte &amp; Sange',
+      year: '1901-02',
+    };
+    expect(workIdForDflRecord(work)).toBe('dfl-sk1850titd-123');
+    expect(renderWorkXml(work, 'dfl-test')).toContain('status="incomplete"');
+    expect(renderWorkXml(work, 'dfl-test')).toContain('<title>Danske Digte &amp; Sange</title>');
+    expect(renderWorkXml(work, 'dfl-test')).toContain('<year>1901-02</year>');
+    expect(renderWorkXml(work, 'dfl-test')).not.toContain('<workbody>');
+  });
+
+  it('deduplikerer samme DFL-værkrelation for en person', () => {
+    const work = {
+      sourceId: 'same-work',
+      authors: [{ sourceId: 'person' }, { sourceId: 'person' }],
+    };
+    expect(workRecordsByDflId([work]).get('person')).toEqual([work]);
   });
 
   it('fjerner en genereret dublet, når en redaktionel person har samme DFL-id', () => {

@@ -164,9 +164,10 @@ Hver af dem kan indeholde:
 - `on` bruges fx ved øer eller steder hvor dansk tekst vil sige "på"
 - `by` findes som sjælden specialcase
 
-Hvis `period` mangler enten `born` eller `dead`, bliver perioden behandlet som ukomplet i
-den statiske data. Biografisiden kan dog stadig findes, hvis der er `bio.xml`, `events.xml`
-eller portrætter.
+`period` kan indeholde kun `born` eller kun `dead`, når kilden dokumenterer den ene
+oplysning, men ikke den anden. Hvis `period` mangler enten `born` eller `dead`, bliver
+perioden behandlet som ukomplet i den statiske data. Biografisiden kan dog stadig findes,
+hvis der er `bio.xml`, `events.xml` eller portrætter.
 
 ## Literary Periods
 
