@@ -33,7 +33,7 @@
     "build-facsimiles": "node tools/build-facsimiles.js",
     "check-facsimiles": "node tools/check-facsimiles.js",
     "check-text-quality": "node tools/check-text-quality.js",
-    "candidate-register": "node tools/candidate-register.js",
+    "sync-literary-registers": "node tools/sync-literary-registers.js",
     "collect-wikidata": "node tools/data/indsamling/wikidata/collect.mjs",
     "collect-dbl": "node tools/collect-dbl.js"
   },
