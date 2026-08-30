@@ -51,6 +51,9 @@ Læs den relevante specialdokumentation før ændringer på området:
 ## Billeder
 
 - Portrætter og kunstgrafik ligger i `public/images/<id>/`.
+- Medtag kun en bogforside som værkbillede, når den har selvstændig grafisk eller
+  kunstnerisk interesse, fx illustration, ornamentik eller markant typografi.
+  Almindelige læderbind og andre rent funktionelle omslag skal ikke medtages.
 - Der må ikke ligge `.jpg`, `.jpeg`, `.png`, `.gif` eller `.webp` under `fdirs/`.
 - Når billedmetadata som `wikidata`, `museum`, `objid` og `invnr` opdateres, skal alle
   kilder med `<picture>` gennemgås: `content/artwork.xml`, `fdirs/<id>/artwork.xml`,
