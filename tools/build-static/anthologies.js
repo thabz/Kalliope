@@ -1,4 +1,5 @@
 import { safeGetAttr } from './xml.js';
+import { sourceWorkKey } from './work-cache.js';
 
 const ANTHOLOGY_WORK_ID = 'antologier';
 const ANTHOLOGY_WORK_TITLE = 'Tekster i andre udgivelser';
@@ -21,36 +22,6 @@ const resolveAuthorId = (node, fallbackAuthorId) => {
   }
   return fallbackAuthorId;
 };
-
-const sourceWorkKey = text =>
-  `${text.sourcePoetId || text.poetId}/${text.sourceWorkId || text.workId}`;
-
-const sourceWorkFilename = text => `fdirs/${sourceWorkKey(text)}.xml`;
-
-const removeTextsFromSourceWorks = (texts, sourceWorkKeys) => {
-  Array.from(texts.entries()).forEach(([textId, text]) => {
-    if (sourceWorkKeys.has(sourceWorkKey(text))) {
-      texts.delete(textId);
-    }
-  });
-};
-
-const obsoleteSourceWorkKeys = (works, currentSourceWorkKeys) =>
-  new Set(
-    Array.from(works.entries())
-      .filter(
-        ([key, work]) =>
-          work.virtualType !== 'anthology' &&
-          !currentSourceWorkKeys.has(key)
-      )
-      .map(([key]) => key)
-  );
-
-const sourceFilesForText = text =>
-  text.sourceFiles || [
-    `fdirs/${text.poetId}/info.xml`,
-    sourceWorkFilename(text),
-  ];
 
 const worksForPoet = (collected, poetId) =>
   Array.from(collected.works.entries())
@@ -146,13 +117,8 @@ export {
   ANTHOLOGY_WORK_TITLE,
   buildVirtualAnthologyWorks,
   isAnthologyText,
-  obsoleteSourceWorkKeys,
   publicationTextId,
-  removeTextsFromSourceWorks,
   resolveAuthorId,
-  sourceFilesForText,
-  sourceWorkFilename,
-  sourceWorkKey,
   textsForWork,
   worksForPoet,
 };

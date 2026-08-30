@@ -125,13 +125,15 @@ import {
   ANTHOLOGY_WORK_ID,
   buildVirtualAnthologyWorks,
   isAnthologyText,
-  obsoleteSourceWorkKeys,
   publicationTextId,
-  removeTextsFromSourceWorks,
   resolveAuthorId,
-  sourceFilesForText,
   worksForPoet,
 } from './build-static/anthologies.js';
+import {
+  obsoleteSourceWorkKeys,
+  removeTextsFromSourceWorks,
+  sourceFilesForText,
+} from './build-static/work-cache.js';
 import { updateSqliteIndex } from './build-static/sqlite-index.js';
 import { buildCorpusDataset } from './build-static/corpus-dataset.js';
 import { findUnlistedWorkFiles } from './build-static/workfiles.js';
