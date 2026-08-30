@@ -125,7 +125,9 @@ import {
   ANTHOLOGY_WORK_ID,
   buildVirtualAnthologyWorks,
   isAnthologyText,
+  obsoleteSourceWorkKeys,
   publicationTextId,
+  removeTextsFromSourceWorks,
   resolveAuthorId,
   sourceFilesForText,
   worksForPoet,
@@ -1041,19 +1043,47 @@ const works_first_pass = (collected) => {
 
   let parentIdsToFillIn = new Map(); // Bruges til nedenstående second-pass som klistrer parent-data på
 
+  const changedWorksByPoet = new Map();
+  const currentSourceWorkKeys = new Set();
+  collected.workids.forEach((workIds, poetId) => {
+    workIds.forEach(workId => {
+      currentSourceWorkKeys.add(`${poetId}/${workId}`);
+    });
+  });
+  const changedSourceWorkKeys = obsoleteSourceWorkKeys(
+    works,
+    currentSourceWorkKeys
+  );
   collected.workids.forEach((workIds, poetId) => {
     const workFilenames = workIds.map(
       (workId) => `fdirs/${poetId}/${workId}.xml`,
     );
     const poetHasChangedWorks =
       isFileModified(...workFilenames) || force_reload;
+    changedWorksByPoet.set(poetId, poetHasChangedWorks);
+    if (poetHasChangedWorks === true) {
+      workIds.forEach(workId => {
+        changedSourceWorkKeys.add(`${poetId}/${workId}`);
+      });
+    }
+  });
+  changedSourceWorkKeys.forEach(key => {
+    const [poetId, workId] = key.split('/');
+    works.delete(key);
+    removeWorkDates(dates, poetId, workId);
+  });
+  removeTextsFromSourceWorks(texts, changedSourceWorkKeys);
+  found_changes = changedSourceWorkKeys.size > 0;
+
+  collected.workids.forEach((workIds, poetId) => {
+    const poetHasChangedWorks = changedWorksByPoet.get(poetId);
 
     workIds.forEach((workId) => {
       const workFilename = `fdirs/${poetId}/${workId}.xml`;
       if (!fileExists(workFilename)) {
         return;
       }
-      if (!poetHasChangedWorks) {
+      if (poetHasChangedWorks === false) {
         return;
       } else {
         found_changes = true;
@@ -1112,16 +1142,6 @@ const works_first_pass = (collected) => {
       if (parentId != null) {
         parentIdsToFillIn.set(fullWorkId, `${poetId}/${parentId}`);
       }
-
-      Array.from(texts.entries()).forEach(([cachedTextId, text]) => {
-        if (
-          (text.sourcePoetId || text.poetId) === poetId &&
-          (text.sourceWorkId || text.workId) === workId
-        ) {
-          texts.delete(cachedTextId);
-        }
-      });
-      removeWorkDates(dates, poetId, workId);
 
       workTexts.forEach((part, sourceOrder) => {
         const textId = safeGetAttr(part, 'id');

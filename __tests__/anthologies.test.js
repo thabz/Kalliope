@@ -3,7 +3,9 @@ import {
   ANTHOLOGY_WORK_ID,
   buildVirtualAnthologyWorks,
   isAnthologyText,
+  obsoleteSourceWorkKeys,
   publicationTextId,
+  removeTextsFromSourceWorks,
   resolveAuthorId,
   sourceWorkFilename,
   worksForPoet,
@@ -105,6 +107,59 @@ describe('antologiplaceringer', () => {
     expect(publicationTextId('antologierdk2026071901')).toBe(
       'antologierdk2026071901a'
     );
+  });
+
+  it('rydder alle cacheplaceringer før tekster flyttes mellem værker', () => {
+    const texts = new Map([
+      [
+        'bruunmc2025090601',
+        {
+          id: 'bruunmc2025090601',
+          poetId: 'bruunmc',
+          workId: 'andre',
+        },
+      ],
+      [
+        'antologitekst',
+        {
+          id: 'antologitekst',
+          poetId: 'digter',
+          workId: ANTHOLOGY_WORK_ID,
+          sourcePoetId: 'antologierdk',
+          sourceWorkId: '1801',
+        },
+      ],
+      [
+        'uændret',
+        {
+          id: 'uændret',
+          poetId: 'anden-digter',
+          workId: 'andre',
+        },
+      ],
+    ]);
+
+    removeTextsFromSourceWorks(
+      texts,
+      new Set(['bruunmc/andre', 'antologierdk/1801'])
+    );
+
+    expect(Array.from(texts.keys())).toEqual(['uændret']);
+  });
+
+  it('finder cachede kildeværker, som er slettet fra den aktuelle værkliste', () => {
+    const works = new Map([
+      ['bruunmc/andre', { id: 'andre' }],
+      ['antologierdk/1801', { id: '1801' }],
+      [
+        `bruunmc/${ANTHOLOGY_WORK_ID}`,
+        { id: ANTHOLOGY_WORK_ID, virtualType: 'anthology' },
+      ],
+    ]);
+
+    expect(
+      obsoleteSourceWorkKeys(works, new Set(['antologierdk/1801']))
+    ).toEqual(new Set(['bruunmc/andre']));
   });
 
   it('opretter et virtuelt værk grupperet efter kildeudgivelsen', () => {

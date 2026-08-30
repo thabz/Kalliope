@@ -27,6 +27,25 @@ const sourceWorkKey = text =>
 
 const sourceWorkFilename = text => `fdirs/${sourceWorkKey(text)}.xml`;
 
+const removeTextsFromSourceWorks = (texts, sourceWorkKeys) => {
+  Array.from(texts.entries()).forEach(([textId, text]) => {
+    if (sourceWorkKeys.has(sourceWorkKey(text))) {
+      texts.delete(textId);
+    }
+  });
+};
+
+const obsoleteSourceWorkKeys = (works, currentSourceWorkKeys) =>
+  new Set(
+    Array.from(works.entries())
+      .filter(
+        ([key, work]) =>
+          work.virtualType !== 'anthology' &&
+          !currentSourceWorkKeys.has(key)
+      )
+      .map(([key]) => key)
+  );
+
 const sourceFilesForText = text =>
   text.sourceFiles || [
     `fdirs/${text.poetId}/info.xml`,
@@ -127,7 +146,9 @@ export {
   ANTHOLOGY_WORK_TITLE,
   buildVirtualAnthologyWorks,
   isAnthologyText,
+  obsoleteSourceWorkKeys,
   publicationTextId,
+  removeTextsFromSourceWorks,
   resolveAuthorId,
   sourceFilesForText,
   sourceWorkFilename,
