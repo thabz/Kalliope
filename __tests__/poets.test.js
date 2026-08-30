@@ -1,7 +1,4 @@
-import {
-  isKnownPoetLanguage,
-  isVisiblePoet,
-} from '../tools/build-static/poets.js';
+import { isKnownPoetLanguage } from '../tools/build-static/poets.js';
 
 describe('poet language validation', () => {
   it('allows Ancient Greek text language', () => {
@@ -14,13 +11,5 @@ describe('poet language validation', () => {
 
   it('rejects unknown language codes', () => {
     expect(isKnownPoetLanguage('zz')).toBe(false);
-  });
-});
-
-describe('hidden poet metadata', () => {
-  it('hides only poets explicitly marked hidden', () => {
-    expect(isVisiblePoet({ hidden: true })).toBe(false);
-    expect(isVisiblePoet({ hidden: false })).toBe(true);
-    expect(isVisiblePoet({})).toBe(true);
   });
 });

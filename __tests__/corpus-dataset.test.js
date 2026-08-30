@@ -4,7 +4,6 @@ import {
   deterministicGzip,
   jsonLines,
   normalizedFullText,
-  buildPoetRecords,
   buildTextAuditFields,
   buildWorkRecords,
   validateRelations,
@@ -38,41 +37,6 @@ describe('versioned corpus dataset', () => {
       'a/work',
       'z/work',
     ]);
-  });
-
-  it('udelader skjulte digteres værker fra korpusdatasættet', () => {
-    const works = new Map([
-      ['visible/work', { id: 'work', title: 'Synligt' }],
-      ['hidden/work', { id: 'work', title: 'Skjult' }],
-    ]);
-    const poets = new Map([
-      ['visible', { hidden: false }],
-      ['hidden', { hidden: true }],
-    ]);
-    expect(buildWorkRecords({ poets, works }).map(work => work.id)).toEqual(['visible/work']);
-  });
-
-  it('udelader skjulte digtere fra korpusdatasættet', () => {
-    const poets = new Map([
-      ['aarestrup', {
-        id: 'aarestrup',
-        name: { fullname: 'Synlig' },
-        country: 'dk',
-        lang: 'da',
-        type: 'poet',
-        hidden: false,
-      }],
-      ['aagaard', {
-        id: 'aagaard',
-        name: { fullname: 'Skjult' },
-        country: 'dk',
-        lang: 'da',
-        type: 'poet',
-        hidden: true,
-      }],
-    ]);
-
-    expect(buildPoetRecords({ poets }).map(poet => poet.id)).toEqual(['aarestrup']);
   });
 
   it('normalizes text blocks without losing line boundaries', () => {

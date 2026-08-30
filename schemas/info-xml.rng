@@ -10,14 +10,6 @@
       <attribute name="country"><text/></attribute>
       <attribute name="lang"><text/></attribute>
       <attribute name="type"><text/></attribute>
-      <optional>
-        <attribute name="hidden">
-          <choice>
-            <value>true</value>
-            <value>false</value>
-          </choice>
-        </attribute>
-      </optional>
       <ref name="name"/>
       <zeroOrMore>
         <choice>
@@ -52,17 +44,9 @@
 
   <define name="period">
     <element name="period">
-      <choice>
-        <group>
-          <ref name="born"/>
-          <optional><ref name="coronation"/></optional>
-          <optional><ref name="dead"/></optional>
-        </group>
-        <group>
-          <optional><ref name="coronation"/></optional>
-          <ref name="dead"/>
-        </group>
-      </choice>
+      <ref name="born"/>
+      <optional><ref name="coronation"/></optional>
+      <optional><ref name="dead"/></optional>
     </element>
   </define>
 

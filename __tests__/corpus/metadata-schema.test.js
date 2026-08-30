@@ -11,10 +11,9 @@ describe('info.xml RELAX NG schema', () => {
     const missingLiteraryPeriods = infoXmlFiles().filter(filename => {
       const xml = fs.readFileSync(filename, 'utf8');
       const isPoet = /<person\b[^>]*\btype=["']poet["']/.test(xml);
-      const isHidden = /<person\b[^>]*\bhidden=["']true["']/.test(xml);
       const literaryPeriods = xml.match(/<literary-periods>([\s\S]*?)<\/literary-periods>/)?.[1]?.trim();
 
-      return isPoet === true && isHidden === false && (literaryPeriods == null || literaryPeriods.length === 0);
+      return isPoet === true && (literaryPeriods == null || literaryPeriods.length === 0);
     });
 
     expect(missingLiteraryPeriods).toEqual([]);

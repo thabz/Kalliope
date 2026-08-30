@@ -240,26 +240,21 @@ dataset is provided without warranty.
 `;
 
 const buildPoetRecords = (collected) => sortById(
-  Array.from(collected.poets.values())
-    .filter(poet => poet.hidden !== true)
-    .map(poet => compactObject({
-      id: poet.id,
-      name: poetName(poet),
-      country: poet.country,
-      lang: poet.lang,
-      type: poet.type,
-      born: poet.period?.born ?? null,
-      dead: poet.period?.dead ?? null,
-      canonical_url: `${SITE_URL}/da/works/${poet.id}`,
-      identifiers: loadExternalIdentifiers(poet.id),
-    }))
+  Array.from(collected.poets.values()).map(poet => compactObject({
+    id: poet.id,
+    name: poetName(poet),
+    country: poet.country,
+    lang: poet.lang,
+    type: poet.type,
+    born: poet.period?.born ?? null,
+    dead: poet.period?.dead ?? null,
+    canonical_url: `${SITE_URL}/da/works/${poet.id}`,
+    identifiers: loadExternalIdentifiers(poet.id),
+  }))
 );
 
 const buildWorkRecords = (collected) => sortById(
-  Array.from(collected.works.entries()).filter(([id]) => {
-    const poet = collected.poets?.get(id.split('/')[0]);
-    return poet == null || poet.hidden !== true;
-  }).map(([id, work]) => {
+  Array.from(collected.works.entries()).map(([id, work]) => {
     const poetId = id.split('/')[0];
     return compactObject({
       id,
@@ -295,7 +290,7 @@ const buildTextAuditFields = (textMeta, textData, source) => ({
 
 const buildTextRecords = (collected) => sortById(
   Array.from(collected.texts.values())
-    .filter(text => text.indexable !== false && collected.poets.get(text.poetId)?.hidden !== true)
+    .filter(text => text.indexable !== false)
     .map(textMeta => {
       const textPath = Paths.textPath(textMeta.id);
       const textData = JSON.parse(fs.readFileSync(textPath, 'utf8'));

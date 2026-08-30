@@ -219,7 +219,6 @@ const build_bio_json = async (collected) => {
     Array.from(collected.poets.entries()),
     async (entry) => {
       const [poetId, poet] = entry;
-      if (poet.hidden === true) return;
       const poetMetadataModified = collected.poetMetadataDirty?.has(poetId);
       const bioSourceModified = isFileModified(
         'content/events.xml',

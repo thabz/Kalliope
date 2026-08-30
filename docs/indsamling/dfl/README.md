@@ -1,106 +1,55 @@
 # Dansk Forfatterleksikon
 
-Dette er det bevarede DFL-arbejdslag. `authors.json` indeholder de høstede
-forfatterobservationer, og `works.json` indeholder titelobservationerne.
+Dansk Forfatterleksikon er grundstammen i Kalliopes interne liste over digtere
+og værker, som kan plukkes ind i korpusset senere. Listen ligger i to kompakte,
+versionsstyrede filer:
 
-DFL’s rå HTML-cache ligger under
-`tools/data/indsamling/dfl/raw/`. Manifestet registrerer disse cachekilder, så
-de ikke skal hentes eller parses igen, før formatet ændrer sig.
+- `tools/data/indsamling/register/kommende-digtere.jsonl`
+- `tools/data/indsamling/register/kommende-vaerker.jsonl`
 
-## Hentning
+Hver linje er et selvstændigt JSON-objekt. Person- og værk-id'er er
+kildeneutrale; DFL-id og URL bevares under `identifiers` og `sources`.
+Livsdata og autoritets-id'er fra Lex, GND, VIAF og Wikidata bevares på
+personposten med feltprovenance og eventuelle konflikter.
 
-DFL’s hovedliste blev hentet fra
-`https://danskforfatterleksikon.dk/1850/sk1850forf.htm`. Titelindexet blev
-hentet fra
-`https://danskforfatterleksikon.dk/1850/sk1850tit.htm`, og de 29 alfabetiske
-titelarkiver blev hentet fra de links, som indexet angiver. Forfatteropslag
-blev hentet fra de konkrete links i forfatterlisten og cachet lokalt.
+DFL's rå HTML-cache ligger lokalt under
+`tools/data/indsamling/dfl/raw/`, så en normal synkronisering kan køres helt
+offline.
 
-Hentningen er begrænset til de kendte indexer og linkede opslag. Den følger
-ikke ukontrolleret links uden for dette afgrænsede sæt. `npm run
-candidate-register` genbruger som standard de lokale caches. Brug `npm run
-candidate-register -- --fetch` for at hente kilderne igen, eventuelt med
-`--all-author-pages` for alle DFL-opslag.
+## Hentning og synkronisering
+
+DFL's hovedliste hentes fra
+`https://danskforfatterleksikon.dk/1850/sk1850forf.htm`. Titelindekset hentes
+fra `https://danskforfatterleksikon.dk/1850/sk1850titel.htm`, og de
+alfabetiske titelarkiver hentes fra dets links. Forfatteropslag hentes for de
+personer, som de udvalgte digtposter henviser til.
+
+Hentningen er afgrænset til disse indekser, titelarkiver og forfatteropslag.
+Den følger ikke ukontrolleret links.
+
+```sh
+npm run sync-upcoming-poets
+npm run sync-upcoming-poets -- --fetch
+```
+
+Den første kommando bruger kun cachen. `--fetch` opdaterer DFL-cachen først.
+En fejl i et enkelt opslag afbryder ikke kørslen, og den tidligere cache
+bevares. Registerfilerne skrives atomisk og deterministisk.
+
+Synkroniseringen fletter nye DFL-oplysninger ind efter bedste evne. Den
+overskriver ikke eksisterende, ikke-tomme værdier og sletter aldrig automatisk
+personer eller værker. Redaktionelle felter og kildemæssig berigelse i JSONL-
+filerne er derfor sikre ved senere kørsler. Ændringer gennemgås med `git diff`.
 
 ## Begrænsning
 
-DFL’s titelposter er bibliografiske observationer. De er ikke i sig selv en
+DFL's titelposter er bibliografiske observationer. De er ikke i sig selv en
 endelig afgørelse af personidentitet, dansk sprog eller rettighedsstatus.
 
-## Felter og problemer
-
-Forfatterobservationer bruger DFL-id/URL, originalt navn, alternative
-navneformer samt fødsels- og dødsdata, når de findes. Titelobservationer bruger
-titel, år, litterær type, sprog og forfatterrelationer.
+Personposterne bruger foretrukket navn, alternative navneformer, livsdata,
+autoritets-id'er, kilder og relationer til værkposterne. Værkposterne bruger
+titel, år, type, sprog, kilder og relationer til en eller flere personer.
 
 DFL dækker dansk skønlitteratur og dramatik til og med 1975, men en DFL-
 forfatterpost er ikke nødvendigvis en verificeret dansk digter. Der kan være
 pseudonymer, varianter, placeholders og poster med ufuldstændige datoer.
-
-## Skjulte personposter
-
-Når hele personopslagsauditten er kørt, kan dokumenterede, manglende DFL-
-digtere oprettes som skjulte redaktionelle personposter:
-
-```sh
-npm run candidate-register -- --fetch --all-author-pages
-npm run import-hidden-dfl-poets -- --dry-run
-npm run import-hidden-dfl-poets
-```
-
-Importen kræver et stabilt DFL-id, bevarer id'et i `info.xml` og udelader
-eksisterende Kalliope-match samt opslag, som auditen klassificerer som roller
-eller placeholders. En person er kun importegnet, når DFL både dokumenterer
-digte og enten placerer personen på listen for dansk originalsprog eller
-registrerer personen som oversætter af fremmedsprogede digte i den danske
-bibliografi. DFL's sprogfelt er værkets originalsprog; oversættere knyttet til
-digte med dansk originalsprog behandles derfor som oversættere ud af dansk og
-importeres ikke alene på det grundlag. Udenlandske
-originalforfattere, som kun optræder via en dansk oversættelse, udelades. Rene
-navnegrupper uden DFL-id importeres ikke, fordi navn alene ikke er
-tilstrækkeligt identitetsbevis. De nye poster bruger
-`country="un"` og `hidden="true"`, indtil landegrupperingen er verificeret,
-og de er redaktionelt beriget og godkendt til offentlig visning.
-
-## Dubletbeslutninger
-
-Dokumenterede fletninger mellem skjulte DFL-poster og eksisterende
-Kalliope-personer ligger i `duplicate-merges.json`. Kør
-`npm run merge-hidden-dfl-duplicates` for at flytte de genererede
-placeholderværker, opdatere målpersonernes DFL-id og fjerne de skjulte
-dubletmapper. Importværktøjet læser samme beslutningsfil og genskaber derfor
-ikke de flettede DFL-poster.
-
-Den seneste gennemgang og dens afgrænsning er beskrevet i
-`rapporter/duplicate-audit.md`.
-
-## Livsdata og autoritetskilder
-
-De 2.387 personposter, som denne import tilføjer, er afgrænset i
-`livsdata/targets.json`. Livsdata beriges felt for felt med prioriteten Lex,
-GND, VIAF, Wikidata og til sidst DFL. Kompatible datoer med forskellig
-præcision samles, så den mest præcise værdi vinder; reelt forskellige værdier
-bevares i auditfilen og som en kort kommentar i `info.xml`.
-
-```sh
-# Henter og cacher rå svar. Dette er den eneste onlinekørsel.
-npm run enrich-hidden-dfl-life-data -- --fetch
-
-# Genbruger cache, gendanner audit og opdaterer info.xml offline.
-npm run enrich-hidden-dfl-life-data
-```
-
-`livsdata/raw/*.json.gz` indeholder URL, hentetid og SHA-256 for hvert råt
-svar. `livsdata/manifest.json` opsummerer cachefilerne og deres checksums,
-`livsdata/resolved.json` er generatorens kompakte offline-input, og
-`livsdata/audit.json` bevarer alle observationer, rå værdier, konflikter og
-feltprovenance. Den menneskelige statusrapport ligger i
-`livsdata/report.md`. VIAF-id'er bevares, selv når VIAF afviser det konkrete
-rådataopslag; fejlen registreres i cache og manifest og erstattes ikke med et
-navnebaseret gæt.
-
-Importgeneratoren anvender automatisk `livsdata/resolved.json`, hvis filen
-findes. En normal offline regeneration overskriver derfor ikke berigede
-datoer, steder, konflikter eller autoritets-id'er. `hidden` forbliver en
-boolean redaktionel status; ophavsretsklassifikation hører til den separate
-ændring i issue #1643.

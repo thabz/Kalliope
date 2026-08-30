@@ -57,7 +57,7 @@ const build_about_pages = async (collected) => {
       .map(t => (t.type === 'text' && t.indexable !== false ? 1 : 0))
       .reduce((sum, v) => sum + v, 0);
     const poetsNum = Array.from(collected.poets.values())
-      .map((t) => (t.type === 'poet' && t.hidden !== true ? 1 : 0))
+      .map((t) => (t.type === 'poet' ? 1 : 0))
       .reduce((sum, v) => sum + v, 0);
     const notes = get_notes(head, collected, {
       poemsNum: poemsNum.toLocaleString(lang),

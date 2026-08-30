@@ -22,10 +22,7 @@ jest.mock('../tools/build-static/xml.js', () => ({
 
 import { writeCachedJSON } from '../tools/libs/caching.js';
 import { fileExists, writeJSON } from '../tools/libs/helpers.js';
-import {
-  build_poets_by_country_json,
-  build_poets_json,
-} from '../tools/build-static/poets.js';
+import { build_poets_json } from '../tools/build-static/poets.js';
 
 describe('beregnede digtermetadata', () => {
   beforeEach(() => {
@@ -88,18 +85,5 @@ describe('beregnede digtermetadata', () => {
       'collected.poets',
       Array.from(collected.poets)
     );
-  });
-
-  it('udelader skjulte digtere fra landelisterne', () => {
-    const visible = { id: 'visible', country: 'dk', hidden: false };
-    const hidden = { id: 'hidden', country: 'dk', hidden: true };
-
-    build_poets_by_country_json({
-      poets: new Map([['visible', visible], ['hidden', hidden]]),
-    });
-
-    expect(writeJSON).toHaveBeenCalledWith('public/api/poets-dk.json', {
-      poets: [visible],
-    });
   });
 });

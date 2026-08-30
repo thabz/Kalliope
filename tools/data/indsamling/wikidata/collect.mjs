@@ -29,6 +29,14 @@ const readJson = async file => JSON.parse(await readFile(file, 'utf8'));
 const readOptionalJson = async file => {
   try { return await readJson(file); } catch (error) { if (error.code === 'ENOENT') return null; throw error; }
 };
+const readOptionalJsonl = async file => {
+  try {
+    return (await readFile(file, 'utf8')).split(/\r?\n/).filter(line => line !== '').map(line => JSON.parse(line));
+  } catch (error) {
+    if (error.code === 'ENOENT') return null;
+    throw error;
+  }
+};
 
 const parseWikidataSnapshot = (snapshot, provenance) => {
   const groups = new Map();
@@ -104,8 +112,8 @@ const parseWikidataSnapshot = (snapshot, provenance) => {
 const recordValues = record => ({
   ids: Object.values(record.identifiers ?? {}).filter(Boolean),
   names: unique([record.normalizedName, record.normalized?.normalizedName, record.name?.preferred, record.original?.name, ...(record.name?.alternatives ?? []), ...(record.normalized?.aliases ?? [])].map(value => normalizeName(value))),
-  birthYear: record.birthYear ?? record.normalized?.birthYear ?? record.normalized?.born ?? record.page?.birthYear ?? null,
-  deathYear: record.deathYear ?? record.normalized?.deathYear ?? record.normalized?.dead ?? record.page?.deathYear ?? null,
+  birthYear: record.birthYear ?? record.normalized?.birthYear ?? record.normalized?.born ?? record.page?.birthYear ?? record.life?.born?.date?.match(/^\d{4}/)?.[0] ?? null,
+  deathYear: record.deathYear ?? record.normalized?.deathYear ?? record.normalized?.dead ?? record.page?.deathYear ?? record.life?.dead?.date?.match(/^\d{4}/)?.[0] ?? null,
 });
 
 const crossReference = (observation, sources) => Object.entries(sources).map(([source, records]) => {
@@ -117,8 +125,8 @@ const crossReference = (observation, sources) => Object.entries(sources).map(([s
     const idMatch = values.ids.some(id => id === observation.sourceId || id === wikidataIds['danskforfatterleksikon-dk'] || id === wikidataIds.viaf);
     const nameMatch = values.names.includes(observation.normalized.normalizedName) || observation.normalized.aliases.some(alias => values.names.includes(alias));
     const dateConflict = (values.birthYear != null && observation.normalized.birthYear != null && values.birthYear !== observation.normalized.birthYear) || (values.deathYear != null && observation.normalized.deathYear != null && values.deathYear !== observation.normalized.deathYear);
-    if (idMatch) matches.push({ sourceId: record.sourceId ?? record.source_id ?? record.observationId ?? null, status: dateConflict ? 'conflict' : 'strong-match', signals: ['stable-identifier', ...(dateConflict ? ['conflicting-life-date'] : [])] });
-    else if (nameMatch) matches.push({ sourceId: record.sourceId ?? record.source_id ?? record.observationId ?? null, status: dateConflict ? 'conflict' : 'possible-name-match', signals: ['name-similarity', ...(dateConflict ? ['conflicting-life-date'] : [])] });
+    if (idMatch) matches.push({ sourceId: record.sourceId ?? record.source_id ?? record.observationId ?? record.id ?? null, status: dateConflict ? 'conflict' : 'strong-match', signals: ['stable-identifier', ...(dateConflict ? ['conflicting-life-date'] : [])] });
+    else if (nameMatch) matches.push({ sourceId: record.sourceId ?? record.source_id ?? record.observationId ?? record.id ?? null, status: dateConflict ? 'conflict' : 'possible-name-match', signals: ['name-similarity', ...(dateConflict ? ['conflicting-life-date'] : [])] });
   }
   return { source, status: records == null ? 'source-not-collected' : matches.length === 0 ? 'no-match' : matches.some(match => match.status === 'strong-match') ? 'strong-match' : matches.some(match => match.status === 'conflict') ? 'conflict' : 'possible-match', matches: matches.slice(0, 20) };
 });
@@ -131,7 +139,7 @@ const renderReport = ({ observations, references, sourceStatus, generatedAt }) =
 const loadSourceRecords = async () => {
   const files = {
     kalliope: join(root, 'docs/indsamling/kalliope/observations.json'),
-    danskforfatterleksikon: join(root, 'docs/indsamling/dfl/authors.json'),
+    danskforfatterleksikon: join(root, 'tools/data/indsamling/register/kommende-digtere.jsonl'),
     'dansk-biografisk-leksikon': join(root, 'docs/indsamling/dbl/observations.json'),
     'nordisk-kvindelitteraturhistorie': join(root, 'tools/data/indsamling/nordisk-kvindelitteraturhistorie/parsed/observations.json'),
     'dansk-kvindebiografisk-leksikon': join(root, 'docs/indsamling/kvindebiografisk/observations.json'),
@@ -139,7 +147,7 @@ const loadSourceRecords = async () => {
   const loaded = {};
   const status = [];
   for (const [source, file] of Object.entries(files)) {
-    const data = await readOptionalJson(file);
+    const data = file.endsWith('.jsonl') ? await readOptionalJsonl(file) : await readOptionalJson(file);
     const records = Array.isArray(data) ? data : data?.observations;
     loaded[source] = records;
     status.push({ source, status: records == null ? 'source-not-collected' : 'loaded', records: records?.length ?? 0 });

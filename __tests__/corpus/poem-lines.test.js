@@ -2,15 +2,9 @@ import {
   collectPoemLineQualityFindings,
   formatPoemLineIssue,
   findPoemLineFindingsInText,
-  hasTextContent,
 } from '../../tools/text-quality-poem-lines.js';
 
 describe('Check workfiles', () => {
-  it('does not treat metadata-only work placeholders as text content', () => {
-    expect(hasTextContent('<kalliopework author="dfl-aaage"><workhead/></kalliopework>')).toBe(false);
-    expect(hasTextContent('<workbody><text id="one"/></workbody>')).toBe(true);
-  });
-
   it('has no poem-line quality issues', () => {
     const issues = collectPoemLineQualityFindings();
     if (issues.length > 0) {

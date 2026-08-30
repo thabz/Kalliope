@@ -73,9 +73,6 @@ const build_todays_events_json = async (collected) => {
   };
 
   collected.poets.forEach((poet, poetId) => {
-    if (poet.hidden === true) {
-      return;
-    }
     if (poet.period != null) {
       const born = poet.period.born;
       const dead = poet.period.dead;

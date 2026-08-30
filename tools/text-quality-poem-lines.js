@@ -51,8 +51,6 @@ const normalizeFileName = filename =>
 
 const stripXmlComments = data => data.replace(/<!--[\s\S]*?-->/g, '');
 
-const hasTextContent = data => /<(?:text|prose)\b/.test(data);
-
 const createTextContext = data => ({
   data,
   lines: data.split('\n'),
@@ -413,9 +411,6 @@ const collectPoemLineQualityFindings = ({
     if (data == null) {
       throw new Error(`Missing file ${relativePath}.`);
     }
-    if (hasTextContent(data) === false) {
-      continue;
-    }
     if (facsimileOnly && !hasPdfFacsimile(data)) {
       continue;
     }
@@ -528,6 +523,5 @@ export {
   collectPoemLineQualityFindings,
   formatPoemLineIssue,
   findPoemLineFindingsInText,
-  hasTextContent,
   parsePoetWorkFiles,
 };
