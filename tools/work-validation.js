@@ -91,11 +91,36 @@ const parseWorkXml = xml =>
   new DOMParser().parseFromString(xml, 'text/xml');
 
 const checksForWorkXml = xml => ({
+  bodyLinks: /<(?:a|xref)\b/.test(xml),
   facsimiles: /<source\b[^>]*\bfacsimile\s*=/.test(xml),
   pageBreaks: /<pagebreaks\b/.test(xml),
   sources: /<source\b[^>]*\bpages\s*=/.test(xml),
   textStructure: /<text\b/.test(xml),
 });
+
+const collectBodyLinkIssues = (filename, document) => {
+  const issues = [];
+
+  ['a', 'xref'].forEach(tagName => {
+    Array.from(document.getElementsByTagName(tagName)).forEach(link => {
+      if (
+        hasAncestor(link, 'body') !== true ||
+        hasAncestor(link, 'note') === true ||
+        hasAncestor(link, 'footnote') === true
+      ) {
+        return;
+      }
+
+      const text = textEntryAncestor(link);
+      const textId = text?.getAttribute('id') ?? '(ukendt tekst)';
+      issues.push(
+        `${filename}: text ${textId} has <${tagName}> directly in <body>; move the link to <note> or <footnote>.`,
+      );
+    });
+  });
+
+  return issues;
+};
 
 const collectTextStructureIssues = (filename, document) => {
   const issues = [];
@@ -305,6 +330,7 @@ const collectPageBreakIssues = (
 
 export {
   checksForWorkXml,
+  collectBodyLinkIssues,
   collectPageBreakIssues,
   collectSourceStructureIssues,
   collectTextStructureIssues,

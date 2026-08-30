@@ -774,26 +774,33 @@ Almindelige inline-tags:
 
 Links:
 
+I værkfiler må links kun bruges i `<note>` og `<footnote>`, ikke direkte i
+digte, prosa eller citatblokke under `<body>`. Bevar omtalen som almindelig
+tekst i brødteksten, og læg en eventuel redaktionel henvisning i en `<note>`.
+Brug `<footnote>` til fodnoter, der stammer fra kilden. Linkmetadata som
+`<source href="...">` er ikke inline-links og er fortsat tilladt.
+
 ```xml
-<a poet="heine">Heine</a>
-<a person="steffens">Steffens</a>
-<a poem="schiller2018011501">Die Goetter Griechenlands</a>
-<a text="...">tekst</a>
-<a keyword="romantikken">romantikken</a>
-<a dict="...">ordbogsopslag</a>
-<a work="goethe/1819">West-oestlicher Divan</a>
-<a href="https://...">eksternt link</a>
-<a bible="bibeljohn03,16">Joh 3,16</a>
+<note>Se <a poet="heine">Heine</a>.</note>
+<note>Se <a person="steffens">Steffens</a>.</note>
+<note>Se <a poem="schiller2018011501">Die Goetter Griechenlands</a>.</note>
+<note>Se <a text="...">teksten</a>.</note>
+<note>Se <a keyword="romantikken">romantikken</a>.</note>
+<note>Se <a dict="...">ordbogsopslaget</a>.</note>
+<note>Se <a work="goethe/1819">West-oestlicher Divan</a>.</note>
+<note>Se <a href="https://...">den eksterne kilde</a>.</note>
+<note>Se <a bible="bibeljohn03,16">Joh 3,16</a>.</note>
 ```
 
-`<xref ...>` er en genvej, der i buildet omskrives til `<a ...>` i noter og tekst:
+`<xref ...>` er en genvej, der i buildet omskrives til `<a ...>`. I værkfiler
+skal den ligesom `<a>` placeres i en note eller fodnote:
 
 ```xml
-<xref poem="schiller2018011501"/>
-<xref type="translation" poem="heine..."/>
-<xref keyword="romantikken"/>
-<xref dict="..."/>
-<xref bible="bibeljohn03,16"/>
+<note>Se <xref poem="schiller2018011501"/>.</note>
+<note>Gendigtning af <xref type="translation" poem="heine..."/>.</note>
+<note>Se <xref keyword="romantikken"/>.</note>
+<note>Se <xref dict="..."/>.</note>
+<note>Se <xref bible="bibeljohn03,16"/>.</note>
 ```
 
 `type="translation"` paa digtlinks bruges til oversaettelsesrelationer.

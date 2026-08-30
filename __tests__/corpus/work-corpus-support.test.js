@@ -4,6 +4,7 @@ import {
 } from '../../tools/libs/work-files.js';
 import {
   checksForWorkXml,
+  collectBodyLinkIssues,
   collectTextStructureIssues,
   parseWorkXml,
 } from '../../tools/work-validation.js';
@@ -38,25 +39,36 @@ describe('work corpus support', () => {
 
   it('only requests DOM parsing for relevant work checks', () => {
     expect(checksForWorkXml('<kalliopework/>')).toEqual({
+      bodyLinks: false,
       facsimiles: false,
       pageBreaks: false,
       sources: false,
       textStructure: false,
     });
     expect(checksForWorkXml('<source\n pages="1-2"/>')).toEqual({
+      bodyLinks: false,
       facsimiles: false,
       pageBreaks: false,
       sources: true,
       textStructure: false,
     });
     expect(checksForWorkXml('<pagebreaks/>')).toEqual({
+      bodyLinks: false,
       facsimiles: false,
       pageBreaks: true,
       sources: false,
       textStructure: false,
     });
     expect(checksForWorkXml('<source facsimile="scan.pdf"/>')).toEqual({
+      bodyLinks: false,
       facsimiles: true,
+      pageBreaks: false,
+      sources: false,
+      textStructure: false,
+    });
+    expect(checksForWorkXml('<a poem="text-id">Tekst</a>')).toEqual({
+      bodyLinks: true,
+      facsimiles: false,
       pageBreaks: false,
       sources: false,
       textStructure: false,
@@ -89,5 +101,31 @@ describe('work corpus support', () => {
     `;
 
     expect(collectTextStructureIssues('work.xml', parseWorkXml(xml))).toEqual([]);
+  });
+
+  it.each([
+    '<poetry>Vers <a poem="target"><i>mål</i></a></poetry>',
+    '<prose>Prosa <w><xref poem="target"/></w></prose>',
+    '<quote>Citat <a work="poet/work">værk</a></quote>',
+  ])('rejects links directly in a text body: %s', bodyContent => {
+    const xml = `
+      <kalliopework>
+        <text id="linked-text"><body>${bodyContent}</body></text>
+      </kalliopework>
+    `;
+
+    expect(collectBodyLinkIssues('work.xml', parseWorkXml(xml))).toHaveLength(1);
+  });
+
+  it.each(['note', 'footnote'])('allows links inside <%s>', noteName => {
+    const xml = `
+      <kalliopework>
+        <text id="linked-text">
+          <body><prose>Prosa <${noteName}><xref poem="target"/></${noteName}></prose></body>
+        </text>
+      </kalliopework>
+    `;
+
+    expect(collectBodyLinkIssues('work.xml', parseWorkXml(xml))).toEqual([]);
   });
 });
