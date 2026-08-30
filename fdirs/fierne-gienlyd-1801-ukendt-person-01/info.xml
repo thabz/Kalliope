@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<person id="fierne-gienlyd-1801-ukendt-person-01" country="un" lang="da" type="poet">
+<person id="fierne-gienlyd-1801-ukendt-person-01" country="dk" lang="da" type="poet">
   <name>
     <lastname>Hagerup</lastname>
   </name>
+  <period>
+    <born>
+      <date>?</date>
+    </born>
+    <dead>
+      <date>?</date>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid,dk-guldalder-og-romantik</literary-periods>
 </person>

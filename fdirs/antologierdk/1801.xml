@@ -6,10 +6,11 @@
   <year>1801</year>
   <pagebreaks/>
   <pictures>
-    <picture type="titlepage" src="1801-p1.jpg" primary="true">Titelbladet til <i>Fierne Gienlyd af Danmarks anden April 1801</i>.</picture>
+    <picture type="titlepage" src="1801-p1.jpg">Titelbladet til <i>Fierne Gienlyd af Danmarks anden April 1801</i>.</picture>
     <picture type="frontpage" src="1801-p2.jpg">Det bevarede eksemplars forside.</picture>
   </pictures>
-  <source href="https://www.kb.dk/e-mat/dod/130001758791-color.pdf" facsimile="130001758791-color.pdf" facsimile-pages-num="21" facsimile-pages-offset="3">Knud Lyne Rahbek (udg.): <i>Fierne Gienlyd af Danmarks anden April 1801 eller svenske, tydske, bataviske og franske Hædersdigte over denne Dag</i>, trykt hos Johan Frederik Schultz, Kiøbenhavn, 1801.</source>
+  <source id="originaler" href="https://www.kb.dk/e-mat/dod/130001758791-color.pdf" facsimile="130001758791-color.pdf" facsimile-pages-num="21" facsimile-pages-offset="3">Originaldigtene i Knud Lyne Rahbek (udg.): <i>Fierne Gienlyd af Danmarks anden April 1801 eller svenske, tydske, bataviske og franske Hædersdigte over denne Dag</i>, trykt hos Johan Frederik Schultz, Kiøbenhavn, 1801.</source>
+  <source id="oversaettelser" href="https://www.kb.dk/e-mat/dod/130001758791-color.pdf" facsimile="130001758791-color.pdf" facsimile-pages-num="21" facsimile-pages-offset="3">Oversættelserne i Knud Lyne Rahbek (udg.): <i>Fierne Gienlyd af Danmarks anden April 1801 eller svenske, tydske, bataviske og franske Hædersdigte over denne Dag</i>, trykt hos Johan Frederik Schultz, Kiøbenhavn, 1801.</source>
   <quality>kilde</quality>
 </workhead>
 <workbody>
@@ -25,7 +26,7 @@
   <notes>
     <note>Signeret ,,Wallmark.'' og stedfæstet ,,Stokholm.'' i trykket.</note>
   </notes>
-  <source pages="3-7"/>
+  <source in="originaler" pages="3-7"/>
 </head>
 <body>
 <poetry>
@@ -134,7 +135,7 @@ Och sen er minnesvård — ert land er Bautasten!
     <note>Oversættelse af Pehr Adam Wallmarks svenske <xref type="translation" poem="wallmarkpa2026083001"/>.</note>
     <note>Oversættelsen er signeret ,,K. R.''.</note>
   </notes>
-  <source pages="3-7"/>
+  <source in="oversaettelser" pages="3-7"/>
 </head>
 <body>
 <poetry>
@@ -242,7 +243,7 @@ Og see din Bautasteen i — frelste Fødeland.
   <notes>
     <note>Signeret ,,J. B. Tilly.'' og stedfæstet ,,Berlin.'' i trykket.</note>
   </notes>
-  <source pages="8-12"/>
+  <source in="originaler" pages="8-12"/>
 </head>
 <body>
 <poetry>
@@ -343,7 +344,7 @@ England, solltest du Triumph noch wähnen,
     <note>Oversættelse af J. B. Tillys tyske <xref type="translation" poem="tillyjb2026083001"/>.</note>
     <note>Oversættelsen er signeret ,,K. R.''.</note>
   </notes>
-  <source pages="8-12"/>
+  <source in="oversaettelser" pages="8-12"/>
 </head>
 <body>
 <poetry>
@@ -443,7 +444,7 @@ Opgav du ei Seierdrømmen ganske,
   <notes>
     <note>Signeret ,,Een Bataaf.'' i trykket.</note>
   </notes>
-  <source pages="12-13"/>
+  <source in="originaler" pages="12-13"/>
 </head>
 <body>
 <poetry>
@@ -485,7 +486,7 @@ Met deeze goude Spreuk: dit is der Britten Perk.
     <note>Oversættelse af det anonyme nederlandske <xref type="translation" poem="anonym1800nl2026083001"/>.</note>
     <note>Trykket anfører: ,,Oversat af Hr. Translateur Hagerup.'' Oversætterens fulde identitet er ikke fastslået.</note>
   </notes>
-  <source pages="12-13"/>
+  <source in="oversaettelser" pages="12-13"/>
 </head>
 <body>
 <poetry>
@@ -527,7 +528,7 @@ Tilraabe Albion: Her dine Skranker staae.
   <notes>
     <note>Signeret ,,M. C. Brun.'' og stedfæstet ,,Paris.'' i trykket.</note>
   </notes>
-  <source pages="14-16"/>
+  <source in="originaler" pages="14-16"/>
 </head>
 <body>
 <poetry>
@@ -596,7 +597,7 @@ Thermopyles! bientôt devenez Salamine!
     <note>Oversættelse af Malthe Conrad Bruuns franske <xref type="translation" poem="bruunmc2025090601"/>.</note>
     <note>Oversættelsen er signeret ,,K. R.''.</note>
   </notes>
-  <source pages="14-16"/>
+  <source in="oversaettelser" pages="14-16"/>
 </head>
 <body>
 <poetry>
