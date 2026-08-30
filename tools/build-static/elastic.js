@@ -13,11 +13,8 @@ import {
 } from './xml.js';
 import elasticSearchClient from '../libs/elasticsearch-client.js';
 import { mapLimit } from './concurrency.js';
-import {
-  sourceWorkFilename,
-  textsForWork,
-  worksForPoet,
-} from './anthologies.js';
+import { textsForWork, worksForPoet } from './anthologies.js';
+import { sourceWorkFilename } from './work-cache.js';
 
 const elasticsearchConcurrency = Math.max(
   1,
