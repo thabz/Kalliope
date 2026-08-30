@@ -11,9 +11,14 @@ import {
   parseWorkXml,
 } from '../../tools/work-validation.js';
 import { loadTrackedWorkFiles } from '../../tools/libs/work-files.js';
+import {
+  getElementByTagName,
+  getElementsByTagNames,
+} from '../../tools/build-static/xml.js';
 
 describe('tracked work corpus', () => {
   let filenames;
+  let emptyAndreFiles;
   let formattingIssues;
   let pageBreakIssues;
   let pageIntervalIssues;
@@ -23,6 +28,7 @@ describe('tracked work corpus', () => {
   beforeAll(() => {
     const works = loadTrackedWorkFiles();
     filenames = works.map(work => work.filename);
+    emptyAndreFiles = [];
     formattingIssues = [];
     pageBreakIssues = [];
     pageIntervalIssues = [];
@@ -30,6 +36,20 @@ describe('tracked work corpus', () => {
     textStructureIssues = [];
 
     works.forEach(({ content: xml, filename }) => {
+      if (filename.endsWith('/andre.xml')) {
+        const document = parseWorkXml(xml);
+        const workBody = getElementByTagName(document, 'workbody');
+        const contents = getElementsByTagNames(workBody, [
+          'text',
+          'prose',
+          'subwork',
+        ]);
+
+        if (contents.length === 0) {
+          emptyAndreFiles.push(filename);
+        }
+      }
+
       if (
         xml !== formatWorkXml(xml) ||
         structuralTagsOutsideColumnZero(xml).length > 0
@@ -67,6 +87,10 @@ describe('tracked work corpus', () => {
 
   it('contains tracked work files', () => {
     expect(filenames.length).toBeGreaterThan(0);
+  });
+
+  it('does not contain empty andre.xml files', () => {
+    expect(emptyAndreFiles).toEqual([]);
   });
 
   it('keeps every work canonically formatted', () => {
