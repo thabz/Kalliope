@@ -283,11 +283,9 @@ const BioPage = (props) => {
             .biography {
               margin-bottom: 40px;
             }
-            @media (max-width: 600px) {
-              .biography {
-                border-bottom: 1px solid #666;
-                padding-bottom: 30px;
-              }
+            .biography + .biography {
+              border-top: 1px solid #666;
+              padding-top: 30px;
             }
           `}</style>
         </div>
