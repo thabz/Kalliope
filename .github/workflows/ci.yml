@@ -43,6 +43,8 @@ jobs:
         run: npm run validate-new-text-ids -- "$BASE_SHA" "$HEAD_SHA"
 
       - name: Check generated and synced facsimiles
+        env:
+          KALLIOPE_FACSIMILE_BASE_URL: https://kalliope.org/facsimiles
         run: npm run check-facsimiles
 
       - name: Run tests (CI)
