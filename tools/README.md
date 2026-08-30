@@ -236,8 +236,11 @@ server, der er angivet i scriptet. Inden synkronisering sættes lokale mapper ti
 webserveren også kan læse nye facsimiler oprettet af Docker.
 
 CI kontrollerer, at hvert facsimile, som et versionsstyret XML-værk angiver i
-en `source`, har en genereret `000.jpg` på Kalliope-serveren. Kontrollen kan
-køres manuelt med:
+en `source`, har både `000.jpg` og den repræsentative thumbnail
+`t/000-w250.jpg` på Kalliope-serveren. Dermed opdages facsimiler, hvor
+originalsiderne er synkroniseret uden den thumbnail-mappe, som visningen bruger,
+uden at CI skal hente alle responsive størrelser. Kontrollen kan køres manuelt
+med:
 
 ```sh
 npm run check-facsimiles
