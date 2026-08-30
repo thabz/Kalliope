@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <person id="tillyjb" country="de" lang="de" type="poet">
   <name>
-    <firstname>J. B.</firstname>
+    <firstname>Johann Baptist</firstname>
     <lastname>Tilly</lastname>
   </name>
   <period>
     <born>
-      <date>?</date>
+      <date>ca. 1754</date>
     </born>
     <dead>
       <date>?</date>
     </dead>
   </period>
   <literary-periods>de-oplysning-og-weimarklassik,de-sturm-und-drang-og-romantik</literary-periods>
+  <identifiers>
+    <gnd>117384313</gnd>
+  </identifiers>
 </person>
