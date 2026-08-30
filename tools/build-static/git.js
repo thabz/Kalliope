@@ -8,6 +8,7 @@ const GIT_MODIFIED_DATE_PATHS = [
   'content/events.xml',
   'content/keywords/*.xml',
 ];
+let memoizedModifiedDates = null;
 
 const parseGitModifiedDatesLog = (log) => {
   const modifiedDates = new Map();
@@ -34,6 +35,7 @@ const parseGitModifiedDatesLog = (log) => {
 };
 
 const collect_git_modified_dates = () => {
+  if (memoizedModifiedDates != null) return memoizedModifiedDates;
   let head;
   let log;
   try {
@@ -42,7 +44,8 @@ const collect_git_modified_dates = () => {
     }).trim();
     const cached = loadJSON(GIT_MODIFIED_DATES_CACHE);
     if (cached?.head === head) {
-      return new Map(cached.dates);
+      memoizedModifiedDates = new Map(cached.dates);
+      return memoizedModifiedDates;
     }
     log = execFileSync(
       'git',
@@ -54,7 +57,7 @@ const collect_git_modified_dates = () => {
         '--',
         ...GIT_MODIFIED_DATE_PATHS.map((path) => `:(glob)${path}`),
       ],
-      { encoding: 'utf8' }
+      { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 }
     );
   } catch (error) {
     if (error.code === 'ENOENT' || error.status === 128) {
@@ -72,7 +75,8 @@ const collect_git_modified_dates = () => {
     head,
     dates: Array.from(modifiedDates),
   });
-  return modifiedDates;
+  memoizedModifiedDates = modifiedDates;
+  return memoizedModifiedDates;
 };
 
 export {

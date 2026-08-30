@@ -5,16 +5,21 @@
   </name>
   <period>
     <born>
-      <date>1775</date>
+      <!-- Konflikt birthPlace: wikidata=Roskilde -->
+      <date>1775-01-24</date>
+      <place>Rerslev</place>
     </born>
     <dead>
-      <date>1855</date>
+      <date>1855-06-25</date>
+      <place>København</place>
     </dead>
   </period>
   <works>dfl-sk1850tits-15046</works>
   <identifiers>
     <wikidata>Q12304945</wikidata>
     <viaf>96337151</viaf>
+    <lex-dk>C.F._Høyer</lex-dk>
+    <biografisk-leksikon-lex-dk>C.F._Høyer</biografisk-leksikon-lex-dk>
     <danskforfatterleksikon-dk>HCFHoeyer</danskforfatterleksikon-dk>
   </identifiers>
 </person>

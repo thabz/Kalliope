@@ -3,11 +3,25 @@
   <name>
     <fullname>Hans Kirk</fullname>
   </name>
+  <period>
+    <born>
+      <date>1898-01-11</date>
+      <place>Hadsund</place>
+    </born>
+    <dead>
+      <!-- Konflikt deathDate: wikidata=1962-06-18 -->
+      <!-- Konflikt deathPlace: wikidata=Brådebæk -->
+      <date>1962-06-16</date>
+      <place>København</place>
+    </dead>
+  </period>
   <works>dfl-sk1850titt-279</works>
   <identifiers>
     <wikidata>Q936792</wikidata>
     <viaf>12327842</viaf>
     <gnd>118562444</gnd>
+    <lex-dk>Hans_Kirk</lex-dk>
+    <biografisk-leksikon-lex-dk>Hans_Kirk</biografisk-leksikon-lex-dk>
     <danskforfatterleksikon-dk>KHansKirk</danskforfatterleksikon-dk>
   </identifiers>
 </person>

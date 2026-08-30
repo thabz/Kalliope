@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <person id="dfl-nkristiannielsenf1873" country="un" lang="da" type="poet" hidden="true">
   <name>
-    <fullname>Kristian Nielsen, f 1873</fullname>
+    <fullname>Kristian Nielsen</fullname>
   </name>
   <period>
     <born>
-      <date>1873</date>
+      <!-- Konflikt birthDate: wikidata=1873-08-01 -->
+      <date>1873-08-13</date>
+      <place>Kotel</place>
     </born>
     <dead>
-      <date>1941</date>
+      <date>1941-09-11</date>
+      <place>Orjol</place>
     </dead>
   </period>
   <works>dfl-sk1850titt-1664</works>

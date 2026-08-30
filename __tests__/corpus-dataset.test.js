@@ -40,6 +40,18 @@ describe('versioned corpus dataset', () => {
     ]);
   });
 
+  it('udelader skjulte digteres værker fra korpusdatasættet', () => {
+    const works = new Map([
+      ['visible/work', { id: 'work', title: 'Synligt' }],
+      ['hidden/work', { id: 'work', title: 'Skjult' }],
+    ]);
+    const poets = new Map([
+      ['visible', { hidden: false }],
+      ['hidden', { hidden: true }],
+    ]);
+    expect(buildWorkRecords({ poets, works }).map(work => work.id)).toEqual(['visible/work']);
+  });
+
   it('udelader skjulte digtere fra korpusdatasættet', () => {
     const poets = new Map([
       ['aarestrup', {

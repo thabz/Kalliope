@@ -5,10 +5,13 @@
   </name>
   <period>
     <born>
-      <date>1935</date>
+      <!-- Konflikt birthPlace: wikidata=Aarhus -->
+      <date>1935-10-20</date>
+      <place>Fødselsanstalten i Jylland</place>
     </born>
     <dead>
-      <date>2009</date>
+      <date>2009-03-22</date>
+      <place>København</place>
     </dead>
   </period>
   <works>dfl-sk1850tito-128,dfl-sk1850titt-3406</works>
@@ -16,6 +19,7 @@
     <wikidata>Q1445456</wikidata>
     <viaf>92028001</viaf>
     <gnd>120890496</gnd>
+    <lex-dk>Frans_Lasson</lex-dk>
     <danskforfatterleksikon-dk>LFransLasson</danskforfatterleksikon-dk>
   </identifiers>
 </person>

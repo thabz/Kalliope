@@ -5,10 +5,13 @@
   </name>
   <period>
     <born>
-      <date>1797</date>
+      <!-- Konflikt birthDate: wikidata=1797-01-14 -->
+      <date>1797-01-08</date>
+      <place>Ribe</place>
     </born>
     <dead>
-      <date>1857</date>
+      <date>1857-12-10</date>
+      <place>Lille Lyngby</place>
     </dead>
   </period>
   <works>dfl-sk1850titr-2883</works>
@@ -16,6 +19,8 @@
     <wikidata>Q5953679</wikidata>
     <viaf>42187960</viaf>
     <gnd>1055207139</gnd>
+    <lex-dk>Jac._Chr._Lindberg</lex-dk>
+    <biografisk-leksikon-lex-dk>J.C._Lindberg</biografisk-leksikon-lex-dk>
     <danskforfatterleksikon-dk>LJCLindberg</danskforfatterleksikon-dk>
   </identifiers>
 </person>

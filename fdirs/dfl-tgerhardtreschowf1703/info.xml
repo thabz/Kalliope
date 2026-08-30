@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <person id="dfl-tgerhardtreschowf1703" country="un" lang="da" type="poet" hidden="true">
   <name>
-    <fullname>Gerhard Treschow, f 1703</fullname>
+    <fullname>Gerhard Treschow</fullname>
   </name>
   <period>
     <born>
-      <date>1703</date>
+      <date>1703-07-05</date>
+      <place>Lesja Kommune</place>
     </born>
     <dead>
-      <date>1765</date>
+      <date>1765-11-20</date>
+      <place>København</place>
     </dead>
   </period>
   <works>dfl-sk1850tito-122</works>
   <identifiers>
     <wikidata>Q104040646</wikidata>
     <viaf>269430626</viaf>
+    <biografisk-leksikon-lex-dk>Gerhard_Treschow</biografisk-leksikon-lex-dk>
     <danskforfatterleksikon-dk>TGerhardTreschowf1703</danskforfatterleksikon-dk>
   </identifiers>
 </person>

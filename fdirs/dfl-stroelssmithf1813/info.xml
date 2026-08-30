@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <person id="dfl-stroelssmithf1813" country="un" lang="da" type="poet" hidden="true">
   <name>
-    <fullname>Troels Smith, f 1813</fullname>
+    <fullname>Troels Smith</fullname>
   </name>
   <period>
     <born>
-      <date>1813</date>
+      <!-- Konflikt birthPlace: wikidata=København -->
+      <date>1813-12-30</date>
+      <place>Fødselsstiftelsen i København</place>
     </born>
     <dead>
-      <date>1880</date>
+      <date>1880-01-24</date>
+      <place>Skælskør</place>
     </dead>
   </period>
   <works>dfl-sk1850titf-10293,dfl-sk1850titu-2678</works>
   <identifiers>
     <wikidata>Q108476205</wikidata>
+    <biografisk-leksikon-lex-dk>Troels_Smith</biografisk-leksikon-lex-dk>
     <danskforfatterleksikon-dk>STroelsSmithf1813</danskforfatterleksikon-dk>
   </identifiers>
 </person>

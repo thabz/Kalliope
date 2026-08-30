@@ -3,11 +3,24 @@
   <name>
     <fullname>Otto Frederik Müller</fullname>
   </name>
+  <period>
+    <born>
+      <!-- Konflikt birthDate: wikidata=1730-03-02 -->
+      <date>1730-03-11</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1784-12-26</date>
+      <place>København</place>
+    </dead>
+  </period>
   <works>dfl-sk1850titr-1127</works>
   <identifiers>
     <wikidata>Q461381</wikidata>
     <viaf>22132538</viaf>
     <gnd>117609331</gnd>
+    <lex-dk>O.F._Müller</lex-dk>
+    <biografisk-leksikon-lex-dk>Otto_Frederik_Müller</biografisk-leksikon-lex-dk>
     <danskforfatterleksikon-dk>MOttoFrederikMuller</danskforfatterleksikon-dk>
   </identifiers>
 </person>

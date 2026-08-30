@@ -5,10 +5,14 @@
   </name>
   <period>
     <born>
-      <date>1747</date>
+      <!-- Konflikt birthPlace: wikidata=Tårupgård -->
+      <date>1747-12-10</date>
+      <place>Viborg, Danmark</place>
     </born>
     <dead>
-      <date>1829</date>
+      <!-- Konflikt deathPlace: wikidata=København -->
+      <date>1829-11-17</date>
+      <place>København, Danmark</place>
     </dead>
   </period>
   <works>dfl-sk1850titp-3159</works>
@@ -16,6 +20,8 @@
     <wikidata>Q5973383</wikidata>
     <viaf>54489286</viaf>
     <gnd>100199038</gnd>
+    <lex-dk>Ove_Malling</lex-dk>
+    <biografisk-leksikon-lex-dk>Ove_Malling</biografisk-leksikon-lex-dk>
     <danskforfatterleksikon-dk>MOveMalling</danskforfatterleksikon-dk>
   </identifiers>
 </person>

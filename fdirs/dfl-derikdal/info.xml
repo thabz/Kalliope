@@ -3,11 +3,23 @@
   <name>
     <fullname>Erik Dal</fullname>
   </name>
+  <period>
+    <born>
+      <!-- Konflikt birthPlace: wikidata=Grenaa -->
+      <date>1922-12-20</date>
+      <place>Grenå</place>
+    </born>
+    <dead>
+      <date>2006-11-02</date>
+      <place>Frederiksberg Kommune</place>
+    </dead>
+  </period>
   <works>dfl-sk1850titd-6139</works>
   <identifiers>
     <wikidata>Q29342008</wikidata>
     <viaf>39391202</viaf>
     <gnd>119230550</gnd>
+    <lex-dk>Erik_Dal</lex-dk>
     <danskforfatterleksikon-dk>DErikDal</danskforfatterleksikon-dk>
   </identifiers>
 </person>

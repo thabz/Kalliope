@@ -73,3 +73,34 @@ ikke de flettede DFL-poster.
 
 Den seneste gennemgang og dens afgrænsning er beskrevet i
 `rapporter/duplicate-audit.md`.
+
+## Livsdata og autoritetskilder
+
+De 2.387 personposter, som denne import tilføjer, er afgrænset i
+`livsdata/targets.json`. Livsdata beriges felt for felt med prioriteten Lex,
+GND, VIAF, Wikidata og til sidst DFL. Kompatible datoer med forskellig
+præcision samles, så den mest præcise værdi vinder; reelt forskellige værdier
+bevares i auditfilen og som en kort kommentar i `info.xml`.
+
+```sh
+# Henter og cacher rå svar. Dette er den eneste onlinekørsel.
+npm run enrich-hidden-dfl-life-data -- --fetch
+
+# Genbruger cache, gendanner audit og opdaterer info.xml offline.
+npm run enrich-hidden-dfl-life-data
+```
+
+`livsdata/raw/*.json.gz` indeholder URL, hentetid og SHA-256 for hvert råt
+svar. `livsdata/manifest.json` opsummerer cachefilerne og deres checksums,
+`livsdata/resolved.json` er generatorens kompakte offline-input, og
+`livsdata/audit.json` bevarer alle observationer, rå værdier, konflikter og
+feltprovenance. Den menneskelige statusrapport ligger i
+`livsdata/report.md`. VIAF-id'er bevares, selv når VIAF afviser det konkrete
+rådataopslag; fejlen registreres i cache og manifest og erstattes ikke med et
+navnebaseret gæt.
+
+Importgeneratoren anvender automatisk `livsdata/resolved.json`, hvis filen
+findes. En normal offline regeneration overskriver derfor ikke berigede
+datoer, steder, konflikter eller autoritets-id'er. `hidden` forbliver en
+boolean redaktionel status; ophavsretsklassifikation hører til den separate
+ændring i issue #1643.

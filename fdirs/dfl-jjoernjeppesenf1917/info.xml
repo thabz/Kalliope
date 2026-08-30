@@ -5,15 +5,20 @@
   </name>
   <period>
     <born>
-      <date>1919</date>
+      <!-- Konflikt birthDate: dfl=1917 -->
+      <date>1919-04-21</date>
+      <place>Frederiksberg</place>
     </born>
     <dead>
-      <date>1964</date>
+      <!-- Konflikt deathDate: wikidata=1964-01-18 -->
+      <date>1964-10-29</date>
     </dead>
   </period>
   <works>dfl-sk1850titu-2824</works>
   <identifiers>
     <wikidata>Q6321625</wikidata>
+    <lex-dk>Jørn_Jeppesen</lex-dk>
+    <biografisk-leksikon-lex-dk>Jørn_Jeppesen</biografisk-leksikon-lex-dk>
     <danskforfatterleksikon-dk>JJoernJeppesenf1917</danskforfatterleksikon-dk>
   </identifiers>
 </person>

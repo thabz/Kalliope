@@ -5,10 +5,13 @@
   </name>
   <period>
     <born>
-      <date>1819</date>
+      <!-- Konflikt birthDate: gnd=1819-11-21; dfl=1819 -->
+      <date>1818-11-27</date>
+      <place>Warszawa</place>
     </born>
     <dead>
-      <date>1881</date>
+      <date>1881-07-11</date>
+      <place>København</place>
     </dead>
   </period>
   <works>dfl-sk1850titt-2008</works>
@@ -16,6 +19,8 @@
     <wikidata>Q463423</wikidata>
     <viaf>46149196474374791698</viaf>
     <gnd>117105554</gnd>
+    <lex-dk>Elisabeth_Jerichau_Baumann</lex-dk>
+    <biografisk-leksikon-lex-dk>Elisabeth_Jerichau_Baumann</biografisk-leksikon-lex-dk>
     <danskforfatterleksikon-dk>JElisabethJerichauBaumann</danskforfatterleksikon-dk>
   </identifiers>
 </person>

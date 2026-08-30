@@ -5,16 +5,21 @@
   </name>
   <period>
     <born>
-      <date>1657</date>
+      <!-- Konflikt birthDate: dfl=1657 -->
+      <date>1150</date>
+      <place>Sjælland</place>
     </born>
     <dead>
-      <date>1731</date>
+      <!-- Konflikt deathDate: wikidata=1206; dfl=1731 -->
+      <date>1220</date>
     </dead>
   </period>
   <works>dfl-sk1850tita-525</works>
   <identifiers>
     <wikidata>Q106837</wikidata>
     <gnd>118642251</gnd>
+    <lex-dk>Saxo</lex-dk>
+    <biografisk-leksikon-lex-dk>Saxo_-_historieskriver</biografisk-leksikon-lex-dk>
     <danskforfatterleksikon-dk>SSaxoGrammaticus</danskforfatterleksikon-dk>
   </identifiers>
 </person>

@@ -5,16 +5,22 @@
   </name>
   <period>
     <born>
-      <date>1891</date>
+      <!-- Konflikt birthDate: wikidata=1891-06-20 -->
+      <!-- Konflikt birthPlace: wikidata=Jelstrup Sogn -->
+      <date>1891-06-30</date>
+      <place>Jelstrup</place>
     </born>
     <dead>
-      <date>1978</date>
+      <date>1978-05-08</date>
+      <place>Holstebro</place>
     </dead>
   </period>
   <works>dfl-sk1850titn-2337</works>
   <identifiers>
     <wikidata>Q20747158</wikidata>
     <gnd>1381158188</gnd>
+    <lex-dk>Jens_Nielsen_-_maler</lex-dk>
+    <biografisk-leksikon-lex-dk>Jens_Nielsen_-_maler</biografisk-leksikon-lex-dk>
     <danskforfatterleksikon-dk>NJensNielsenf1891</danskforfatterleksikon-dk>
   </identifiers>
 </person>

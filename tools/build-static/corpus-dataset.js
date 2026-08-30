@@ -256,7 +256,10 @@ const buildPoetRecords = (collected) => sortById(
 );
 
 const buildWorkRecords = (collected) => sortById(
-  Array.from(collected.works.entries()).map(([id, work]) => {
+  Array.from(collected.works.entries()).filter(([id]) => {
+    const poet = collected.poets?.get(id.split('/')[0]);
+    return poet == null || poet.hidden !== true;
+  }).map(([id, work]) => {
     const poetId = id.split('/')[0];
     return compactObject({
       id,
@@ -292,7 +295,7 @@ const buildTextAuditFields = (textMeta, textData, source) => ({
 
 const buildTextRecords = (collected) => sortById(
   Array.from(collected.texts.values())
-    .filter(text => text.indexable !== false)
+    .filter(text => text.indexable !== false && collected.poets.get(text.poetId)?.hidden !== true)
     .map(textMeta => {
       const textPath = Paths.textPath(textMeta.id);
       const textData = JSON.parse(fs.readFileSync(textPath, 'utf8'));

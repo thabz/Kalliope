@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <person id="dfl-bpoulmatthiasbildsoeef1790" country="un" lang="da" type="poet" hidden="true">
   <name>
-    <fullname>Poul Matthias Bildsøe, f 1790</fullname>
+    <fullname>Poul Matthias Bildsøe</fullname>
   </name>
+  <period>
+    <born>
+      <date>1790</date>
+    </born>
+    <dead>
+      <date>1865</date>
+    </dead>
+  </period>
   <works>dfl-sk1850tith-2996</works>
   <identifiers>
     <danskforfatterleksikon-dk>BPoulMatthiasBildsoeef1790</danskforfatterleksikon-dk>

@@ -3,11 +3,24 @@
   <name>
     <fullname>Matthías Jochumsson</fullname>
   </name>
+  <period>
+    <born>
+      <!-- Konflikt birthPlace: wikidata=Skógar -->
+      <date>1835-11-11</date>
+      <place>Skógar, Island</place>
+    </born>
+    <dead>
+      <!-- Konflikt deathPlace: wikidata=Akureyri -->
+      <date>1920-12-18</date>
+      <place>Akureyri, Island</place>
+    </dead>
+  </period>
   <works>dfl-sk1850titb-5208,dfl-sk1850titf-8563,dfl-sk1850titf-8564,dfl-sk1850titf-8565</works>
   <identifiers>
     <wikidata>Q380925</wikidata>
     <viaf>3384466</viaf>
     <gnd>123612497</gnd>
+    <lex-dk>Matthías_Jochumsson</lex-dk>
     <danskforfatterleksikon-dk>u1559</danskforfatterleksikon-dk>
   </identifiers>
 </person>

@@ -5,10 +5,13 @@
   </name>
   <period>
     <born>
-      <date>1892</date>
+      <!-- Konflikt birthPlace: wikidata=København -->
+      <date>1892-02-16</date>
+      <place>Frederiksberg</place>
     </born>
     <dead>
-      <date>1967</date>
+      <date>1967-02-14</date>
+      <place>Frederiksberg</place>
     </dead>
   </period>
   <works>dfl-sk1850titb-154,dfl-sk1850titd-3266,dfl-sk1850tits-6229</works>
@@ -16,6 +19,8 @@
     <wikidata>Q4242039</wikidata>
     <viaf>121862892</viaf>
     <gnd>141553138</gnd>
+    <lex-dk>Peter_Schindler</lex-dk>
+    <biografisk-leksikon-lex-dk>Peter_Schindler</biografisk-leksikon-lex-dk>
     <danskforfatterleksikon-dk>SPeterSchindler</danskforfatterleksikon-dk>
   </identifiers>
 </person>

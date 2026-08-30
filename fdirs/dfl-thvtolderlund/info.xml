@@ -5,10 +5,13 @@
   </name>
   <period>
     <born>
-      <date>1820</date>
+      <date>1820-12-02</date>
+      <place>Nakskov</place>
     </born>
     <dead>
-      <date>1880</date>
+      <!-- Konflikt deathDate: wikidata=1880-04-10; dfl=1880 -->
+      <date>1888</date>
+      <place>København</place>
     </dead>
   </period>
   <works>dfl-sk1850titl-5903</works>
@@ -16,6 +19,7 @@
     <wikidata>Q20898107</wikidata>
     <viaf>216149066342565600007</viaf>
     <gnd>140608818</gnd>
+    <biografisk-leksikon-lex-dk>Hother_Tolderlund</biografisk-leksikon-lex-dk>
     <danskforfatterleksikon-dk>THVTolderlund</danskforfatterleksikon-dk>
   </identifiers>
 </person>

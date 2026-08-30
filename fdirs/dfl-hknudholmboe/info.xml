@@ -5,16 +5,21 @@
   </name>
   <period>
     <born>
-      <date>1902</date>
+      <date>1902-04-22</date>
+      <place>Horsens</place>
     </born>
     <dead>
-      <date>1931</date>
+      <!-- Konflikt deathDate: wikidata=1931-10-13 -->
+      <!-- Konflikt deathPlace: wikidata=Akaba -->
+      <date>1931-10-12</date>
+      <place>Kongedømmet Hijaz</place>
     </dead>
   </period>
   <works>dfl-sk1850titd-4016</works>
   <identifiers>
     <wikidata>Q3048651</wikidata>
     <viaf>22049260</viaf>
+    <lex-dk>Knud_Holmboe</lex-dk>
     <danskforfatterleksikon-dk>HKnudHolmboe</danskforfatterleksikon-dk>
   </identifiers>
 </person>

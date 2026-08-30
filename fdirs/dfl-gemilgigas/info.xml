@@ -3,11 +3,25 @@
   <name>
     <fullname>Emil Gigas</fullname>
   </name>
+  <period>
+    <born>
+      <!-- Konflikt birthPlace: wikidata=København -->
+      <date>1849-08-23</date>
+      <place>Frederiksberg</place>
+    </born>
+    <dead>
+      <!-- Konflikt deathPlace: wikidata=København -->
+      <date>1931-09-08</date>
+      <place>Frederiksberg</place>
+    </dead>
+  </period>
   <works>dfl-sk1850titu-576</works>
   <identifiers>
     <wikidata>Q5758853</wikidata>
     <viaf>106964516</viaf>
     <gnd>14060703X</gnd>
+    <lex-dk>Emil_Gigas</lex-dk>
+    <biografisk-leksikon-lex-dk>Emil_Gigas</biografisk-leksikon-lex-dk>
     <danskforfatterleksikon-dk>GEmilGigas</danskforfatterleksikon-dk>
   </identifiers>
 </person>

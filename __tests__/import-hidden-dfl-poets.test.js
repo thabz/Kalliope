@@ -13,6 +13,7 @@ describe('import af skjulte DFL-digtere', () => {
   it('danner stabile id-er og afkoder DFL-navne', () => {
     expect(poetIdForDflId('JJohannesJoergensen')).toBe('dfl-jjohannesjoergensen');
     expect(decodeHtml('J&oslash;rgen J&aelig;ger')).toBe('Jørgen Jæger');
+    expect(decodeHtml('&yacute; &agrave; &uacute; &THORN;')).toBe('ý à ú Þ');
   });
 
   it('udelader eksisterende match og ikke-personer', () => {

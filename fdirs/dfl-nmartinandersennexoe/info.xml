@@ -5,10 +5,14 @@
   </name>
   <period>
     <born>
-      <date>1869</date>
+      <!-- Konflikt birthPlace: wikidata=København -->
+      <date>1869-06-26</date>
+      <place>Christianshavn</place>
     </born>
     <dead>
-      <date>1954</date>
+      <!-- Konflikt deathPlace: wikidata=Dresden -->
+      <date>1954-06-01</date>
+      <place>Dresden, det daværende Østtyskland</place>
     </dead>
   </period>
   <works>dfl-sk1850titd-1447,dfl-sk1850titd-3800,dfl-sk1850titd-4171,dfl-sk1850titv-4763</works>
@@ -16,6 +20,8 @@
     <wikidata>Q168569</wikidata>
     <viaf>42041948</viaf>
     <gnd>118502816</gnd>
+    <lex-dk>Martin_Andersen_Nexø</lex-dk>
+    <biografisk-leksikon-lex-dk>Martin_Andersen_Nexø</biografisk-leksikon-lex-dk>
     <danskforfatterleksikon-dk>NMartinAndersenNexoe</danskforfatterleksikon-dk>
   </identifiers>
 </person>

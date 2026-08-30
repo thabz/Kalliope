@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <person id="dfl-ncamillusnyropf1843" country="un" lang="da" type="poet" hidden="true">
   <name>
-    <fullname>Camillus Nyrop, f 1843</fullname>
+    <fullname>Camillus Nyrop</fullname>
   </name>
   <period>
     <born>
-      <date>1843</date>
+      <date>1843-07-31</date>
+      <place>København</place>
     </born>
     <dead>
-      <date>1918</date>
+      <date>1918-08-06</date>
+      <place>Frederiksberg</place>
     </dead>
   </period>
   <works>dfl-sk1850titf-7030</works>
@@ -16,6 +18,8 @@
     <wikidata>Q6020372</wikidata>
     <viaf>89272235</viaf>
     <gnd>1055145389</gnd>
+    <lex-dk>Camillus_Nyrop</lex-dk>
+    <biografisk-leksikon-lex-dk>Camillus_Nyrop_-_industrihistoriker</biografisk-leksikon-lex-dk>
     <danskforfatterleksikon-dk>NCamillusNyropf1843</danskforfatterleksikon-dk>
   </identifiers>
 </person>

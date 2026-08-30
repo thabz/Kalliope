@@ -5,10 +5,13 @@
   </name>
   <period>
     <born>
-      <date>1788</date>
+      <!-- Konflikt birthPlace: wikidata=Frederiks Hospital -->
+      <date>1788-07-27</date>
+      <place>København</place>
     </born>
     <dead>
-      <date>1877</date>
+      <date>1877-10-12</date>
+      <place>København</place>
     </dead>
   </period>
   <works>dfl-sk1850tita-2218,dfl-sk1850titb-5670,dfl-sk1850titb-5671,dfl-sk1850titb-5679,dfl-sk1850titb-6217,dfl-sk1850tite-3149,dfl-sk1850tite-3150,dfl-sk1850titf-2746,dfl-sk1850titf-9252,dfl-sk1850titg-4798,dfl-sk1850titg-6571,dfl-sk1850tith-5024,dfl-sk1850titk-4319,dfl-sk1850titl-3986,dfl-sk1850titl-3987,dfl-sk1850titm-1128,dfl-sk1850titm-5634,dfl-sk1850titm-5635,dfl-sk1850titp-3195,dfl-sk1850titr-1925,dfl-sk1850tits-1365,dfl-sk1850tits-14436,dfl-sk1850tits-6606,dfl-sk1850titt-1999,dfl-sk1850titv-278,dfl-sk1850titv-285,dfl-sk1850titv-3877,dfl-sk1850titz-58</works>
@@ -16,6 +19,8 @@
     <wikidata>Q5565283</wikidata>
     <viaf>32777073</viaf>
     <gnd>117562815</gnd>
+    <lex-dk>Ole_Bang</lex-dk>
+    <biografisk-leksikon-lex-dk>Ole_Bang_-_læge</biografisk-leksikon-lex-dk>
     <danskforfatterleksikon-dk>BOleBangf1788</danskforfatterleksikon-dk>
   </identifiers>
 </person>

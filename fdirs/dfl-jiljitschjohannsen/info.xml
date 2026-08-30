@@ -5,10 +5,15 @@
   </name>
   <period>
     <born>
-      <date>1925</date>
+      <!-- Konflikt birthPlace: wikidata=Paris -->
+      <date>1925-02-19</date>
+      <place>Paris, Frankrig</place>
     </born>
     <dead>
-      <date>1957</date>
+      <!-- Konflikt deathDate: gnd=1957-03-08; wikidata=1957-03-08 -->
+      <!-- Konflikt deathPlace: wikidata=Frankrig -->
+      <date>1957-03-07</date>
+      <place>Aix-en-Provence, Frankrig</place>
     </dead>
   </period>
   <works>dfl-sk1850tith-1251,dfl-sk1850titk-2577,dfl-sk1850titm-6858,dfl-sk1850titm-9641,dfl-sk1850titn-2546,dfl-sk1850titn-597,dfl-sk1850titn-698,dfl-sk1850titr-3523,dfl-sk1850tits-3926,dfl-sk1850tits-4506,dfl-sk1850tity-59</works>
@@ -16,6 +21,8 @@
     <wikidata>Q5884873</wikidata>
     <viaf>226973251</viaf>
     <gnd>1158908245</gnd>
+    <lex-dk>Iljitsch_Johannsen</lex-dk>
+    <biografisk-leksikon-lex-dk>Iljitsch_Johannsen</biografisk-leksikon-lex-dk>
     <danskforfatterleksikon-dk>JIljitschJohannsen</danskforfatterleksikon-dk>
   </identifiers>
 </person>

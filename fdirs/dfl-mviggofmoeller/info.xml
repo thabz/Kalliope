@@ -5,10 +5,13 @@
   </name>
   <period>
     <born>
-      <date>1887</date>
+      <date>1887-04-24</date>
+      <place>Odense</place>
     </born>
     <dead>
-      <date>1955</date>
+      <!-- Konflikt deathDate: gnd=1955-03-24; wikidata=1955-03-24 -->
+      <date>1955-03-25</date>
+      <place>København</place>
     </dead>
   </period>
   <works>dfl-sk1850titi-945,dfl-sk1850titm-6736,dfl-sk1850titv-1627</works>
@@ -16,6 +19,8 @@
     <wikidata>Q4310472</wikidata>
     <viaf>285199182</viaf>
     <gnd>140732586</gnd>
+    <lex-dk>Viggo_F._Møller</lex-dk>
+    <biografisk-leksikon-lex-dk>Viggo_F._Møller</biografisk-leksikon-lex-dk>
     <danskforfatterleksikon-dk>MViggoFMoeller</danskforfatterleksikon-dk>
   </identifiers>
 </person>

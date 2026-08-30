@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <person id="dfl-wpeterwulfff1774" country="un" lang="da" type="poet" hidden="true">
   <name>
-    <fullname>Peter Wulff, f 1774</fullname>
+    <fullname>Peter Wulff</fullname>
   </name>
   <period>
     <born>
-      <date>1774</date>
+      <date>1774-11-26</date>
+      <place>København</place>
     </born>
     <dead>
-      <date>1842</date>
+      <date>1842-02-02</date>
+      <place>København</place>
     </dead>
   </period>
   <works>dfl-sk1850tith-9810,dfl-sk1850titp-3213,dfl-sk1850titp-333,dfl-sk1850titr-1918</works>
   <identifiers>
     <wikidata>Q12331762</wikidata>
     <viaf>305456909</viaf>
+    <biografisk-leksikon-lex-dk>Peter_Wulff,_f._1774</biografisk-leksikon-lex-dk>
     <danskforfatterleksikon-dk>WPeterWulfff1774</danskforfatterleksikon-dk>
   </identifiers>
 </person>

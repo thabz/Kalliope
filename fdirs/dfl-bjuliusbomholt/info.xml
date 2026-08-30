@@ -5,10 +5,13 @@
   </name>
   <period>
     <born>
-      <date>1896</date>
+      <!-- Konflikt birthPlace: wikidata=Alderslyst; wikidata=Danmark -->
+      <date>1896-06-11</date>
+      <place>Alderslyst ved Silkeborg</place>
     </born>
     <dead>
-      <date>1969</date>
+      <date>1969-01-02</date>
+      <place>Esbjerg</place>
     </dead>
   </period>
   <works>dfl-sk1850titk-118,dfl-sk1850tits-9301</works>
@@ -16,6 +19,8 @@
     <wikidata>Q5581432</wikidata>
     <viaf>60346571</viaf>
     <gnd>1053075480</gnd>
+    <lex-dk>Julius_Bomholt</lex-dk>
+    <biografisk-leksikon-lex-dk>Julius_Bomholt</biografisk-leksikon-lex-dk>
     <danskforfatterleksikon-dk>BJuliusBomholt</danskforfatterleksikon-dk>
   </identifiers>
 </person>

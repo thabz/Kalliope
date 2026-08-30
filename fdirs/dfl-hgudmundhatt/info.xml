@@ -5,10 +5,13 @@
   </name>
   <period>
     <born>
-      <date>1884</date>
+      <!-- Konflikt birthDate: wikidata=1884-10-01 -->
+      <date>1884-10-31</date>
+      <place>Vildbjerg</place>
     </born>
     <dead>
-      <date>1960</date>
+      <date>1960-01-27</date>
+      <place>Frederiksberg</place>
     </dead>
   </period>
   <works>dfl-sk1850tite-2693,dfl-sk1850titr-722</works>
@@ -16,6 +19,8 @@
     <wikidata>Q3364967</wikidata>
     <viaf>93547601</viaf>
     <gnd>172128382</gnd>
+    <lex-dk>Gudmund_Hatt</lex-dk>
+    <biografisk-leksikon-lex-dk>Gudmund_Hatt</biografisk-leksikon-lex-dk>
     <danskforfatterleksikon-dk>HGudmundHatt</danskforfatterleksikon-dk>
   </identifiers>
 </person>

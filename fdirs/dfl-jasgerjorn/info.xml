@@ -5,10 +5,14 @@
   </name>
   <period>
     <born>
-      <date>1914</date>
+      <!-- Konflikt birthPlace: wikidata=Vejrum Sogn -->
+      <date>1914-03-03</date>
+      <place>Vejrum</place>
     </born>
     <dead>
-      <date>1973</date>
+      <!-- Konflikt deathPlace: wikidata=Aarhus -->
+      <date>1973-05-01</date>
+      <place>Århus</place>
     </dead>
   </period>
   <works>dfl-sk1850tits-390</works>
@@ -16,6 +20,8 @@
     <wikidata>Q83578</wikidata>
     <viaf>64026325</viaf>
     <gnd>11871306X</gnd>
+    <lex-dk>Asger_Jorn</lex-dk>
+    <biografisk-leksikon-lex-dk>Asger_Jorn</biografisk-leksikon-lex-dk>
     <danskforfatterleksikon-dk>JAsgerJorn</danskforfatterleksikon-dk>
   </identifiers>
 </person>

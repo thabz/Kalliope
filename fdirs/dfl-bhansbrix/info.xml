@@ -5,10 +5,13 @@
   </name>
   <period>
     <born>
-      <date>1870</date>
+      <date>1870-10-24</date>
+      <place>Vejle</place>
     </born>
     <dead>
-      <date>1961</date>
+      <!-- Konflikt deathDate: gnd=1961-01-20; wikidata=1961-01-20 -->
+      <date>1961-11-20</date>
+      <place>Gentofte</place>
     </dead>
   </period>
   <works>dfl-sk1850titd-1711</works>
@@ -16,6 +19,8 @@
     <wikidata>Q5586763</wikidata>
     <viaf>27106518</viaf>
     <gnd>140527419</gnd>
+    <lex-dk>Hans_Brix</lex-dk>
+    <biografisk-leksikon-lex-dk>Hans_Brix</biografisk-leksikon-lex-dk>
     <danskforfatterleksikon-dk>BHansBrix</danskforfatterleksikon-dk>
   </identifiers>
 </person>

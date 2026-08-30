@@ -5,10 +5,14 @@
   </name>
   <period>
     <born>
-      <date>1900</date>
+      <!-- Konflikt birthPlace: wikidata=Thorshavn -->
+      <date>1900-01-15</date>
+      <place>Tórshavn</place>
     </born>
     <dead>
-      <date>1991</date>
+      <!-- Konflikt deathPlace: wikidata=Thorshavn -->
+      <date>1991-03-12</date>
+      <place>Tórshavn</place>
     </dead>
   </period>
   <works>dfl-sk1850tita-3991,dfl-sk1850titd-1397,dfl-sk1850titd-1447,dfl-sk1850tith-8926,dfl-sk1850tith-9391,dfl-sk1850titp-205,dfl-sk1850tits-1572</works>
@@ -16,6 +20,8 @@
     <wikidata>Q331798</wikidata>
     <viaf>113331007</viaf>
     <gnd>11942116X</gnd>
+    <lex-dk>William_Heinesen</lex-dk>
+    <biografisk-leksikon-lex-dk>William_Heinesen</biografisk-leksikon-lex-dk>
     <danskforfatterleksikon-dk>HWilliamHeinesen</danskforfatterleksikon-dk>
   </identifiers>
 </person>

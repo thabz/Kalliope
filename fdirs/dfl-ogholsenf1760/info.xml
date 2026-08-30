@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <person id="dfl-ogholsenf1760" country="un" lang="da" type="poet" hidden="true">
   <name>
-    <fullname>G.H. Olsen, f 1760</fullname>
+    <fullname>G.H. Olsen</fullname>
   </name>
   <period>
     <born>
-      <date>1760</date>
+      <date>1760-09-08</date>
+      <place>Ulriksdal</place>
     </born>
     <dead>
-      <date>1829</date>
+      <date>1829-05-09</date>
+      <place>København</place>
     </dead>
   </period>
   <works>dfl-sk1850titp-3160</works>
@@ -16,6 +18,7 @@
     <wikidata>Q12314174</wikidata>
     <viaf>4931149108466368780000</viaf>
     <gnd>1055211470</gnd>
+    <biografisk-leksikon-lex-dk>G.H._Olsen</biografisk-leksikon-lex-dk>
     <danskforfatterleksikon-dk>OGHOlsenf1760</danskforfatterleksikon-dk>
   </identifiers>
 </person>

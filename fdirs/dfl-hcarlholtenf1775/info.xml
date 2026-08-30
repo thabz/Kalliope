@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <person id="dfl-hcarlholtenf1775" country="un" lang="da" type="poet" hidden="true">
   <name>
-    <fullname>Carl (von) Holten, f 1775</fullname>
+    <fullname>Carl (von) Holten</fullname>
   </name>
   <period>
     <born>
-      <date>1775</date>
+      <date>1775-08-07</date>
+      <place>Køge Kommune</place>
     </born>
     <dead>
-      <date>1862</date>
+      <date>1862-07-05</date>
+      <place>København</place>
     </dead>
   </period>
   <works>dfl-sk1850titr-1909</works>
@@ -16,6 +18,7 @@
     <wikidata>Q16738406</wikidata>
     <viaf>251349618</viaf>
     <gnd>1025550404</gnd>
+    <biografisk-leksikon-lex-dk>Carl_Holten_-_embedsmand</biografisk-leksikon-lex-dk>
     <danskforfatterleksikon-dk>HCarlHoltenf1775</danskforfatterleksikon-dk>
   </identifiers>
 </person>

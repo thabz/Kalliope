@@ -5,10 +5,13 @@
   </name>
   <period>
     <born>
-      <date>1890</date>
+      <!-- Konflikt birthPlace: wikidata=Djursland -->
+      <date>1890-09-11</date>
+      <place>Ørum sogn, Djursland</place>
     </born>
     <dead>
-      <date>1980</date>
+      <date>1980-06-01</date>
+      <place>Nærum</place>
     </dead>
   </period>
   <works>dfl-sk1850titf-9827,dfl-sk1850titg-2091,dfl-sk1850titl-806,dfl-sk1850titm-6736,dfl-sk1850tits-13919,dfl-sk1850tits-1600,dfl-sk1850titt-2965</works>
@@ -16,6 +19,8 @@
     <wikidata>Q151673</wikidata>
     <viaf>85800504</viaf>
     <gnd>142494119</gnd>
+    <lex-dk>Knud_Andersen</lex-dk>
+    <biografisk-leksikon-lex-dk>Knud_Andersen</biografisk-leksikon-lex-dk>
     <danskforfatterleksikon-dk>AKnudAndersen</danskforfatterleksikon-dk>
   </identifiers>
 </person>

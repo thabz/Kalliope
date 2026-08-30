@@ -5,10 +5,13 @@
   </name>
   <period>
     <born>
-      <date>1902</date>
+      <date>1902-12-11</date>
+      <place>Odense</place>
     </born>
     <dead>
-      <date>1981</date>
+      <!-- Konflikt deathPlace: wikidata=Hornbæk -->
+      <date>1981-02-25</date>
+      <place>Humlebæk</place>
     </dead>
   </period>
   <works>dfl-sk1850tits-12399,dfl-sk1850tits-13134</works>
@@ -16,6 +19,8 @@
     <wikidata>Q4587419</wikidata>
     <viaf>107033942</viaf>
     <gnd>121296814</gnd>
+    <lex-dk>Arne_Ungermann</lex-dk>
+    <biografisk-leksikon-lex-dk>Arne_Ungermann</biografisk-leksikon-lex-dk>
     <danskforfatterleksikon-dk>UArneUngermann</danskforfatterleksikon-dk>
   </identifiers>
 </person>

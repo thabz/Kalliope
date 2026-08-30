@@ -5,10 +5,12 @@
   </name>
   <period>
     <born>
-      <date>1927</date>
+      <!-- Konflikt birthDate: wikidata=1927-04-27 -->
+      <date>1927-01-27</date>
+      <place>Silkeborg</place>
     </born>
     <dead>
-      <date>2003</date>
+      <date>2003-08-18</date>
     </dead>
   </period>
   <works>dfl-sk1850titf-8412</works>
@@ -16,6 +18,8 @@
     <wikidata>Q8530167</wikidata>
     <viaf>68992067</viaf>
     <gnd>120064596</gnd>
+    <lex-dk>Poul_Vad</lex-dk>
+    <biografisk-leksikon-lex-dk>Poul_Vad</biografisk-leksikon-lex-dk>
     <danskforfatterleksikon-dk>VPoulVad</danskforfatterleksikon-dk>
   </identifiers>
 </person>

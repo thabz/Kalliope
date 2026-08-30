@@ -5,10 +5,13 @@
   </name>
   <period>
     <born>
-      <date>1922</date>
+      <!-- Konflikt birthPlace: wikidata=Østerbro -->
+      <date>1922-07-06</date>
+      <place>København</place>
     </born>
     <dead>
-      <date>2004</date>
+      <date>2004-05-28</date>
+      <place>Bisserup</place>
     </dead>
   </period>
   <works>dfl-sk1850titf-3209</works>
@@ -16,6 +19,7 @@
     <wikidata>Q12325659</wikidata>
     <viaf>93313659</viaf>
     <gnd>1089277067</gnd>
+    <lex-dk>Mads_Stage</lex-dk>
     <danskforfatterleksikon-dk>SMadsStage</danskforfatterleksikon-dk>
   </identifiers>
 </person>

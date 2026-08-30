@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { loadXMLDoc, getChildByTagName, safeGetText } from './build-static/xml.js';
+import { applyLifeDataToXml } from './enrich-hidden-dfl-life-data.js';
 
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const defaultResolutionFile = path.join(
@@ -27,14 +28,23 @@ const defaultDuplicateMergesFile = path.join(
   'dfl',
   'duplicate-merges.json'
 );
+const defaultLifeDataFile = path.join(
+  rootDir,
+  'docs',
+  'indsamling',
+  'dfl',
+  'livsdata',
+  'resolved.json'
+);
 
 const htmlEntities = new Map([
   ['aacute', 'á'], ['acirc', 'â'], ['aelig', 'æ'], ['auml', 'ä'], ['aring', 'å'],
   ['AElig', 'Æ'], ['Aring', 'Å'], ['eacute', 'é'], ['egrave', 'è'],
   ['ecirc', 'ê'], ['euml', 'ë'], ['eth', 'ð'], ['iacute', 'í'], ['iuml', 'ï'],
-  ['laquo', '«'], ['oacute', 'ó'],
+  ['agrave', 'à'], ['laquo', '«'], ['oacute', 'ó'],
   ['ouml', 'ö'], ['oslash', 'ø'], ['Oacute', 'Ó'], ['Oslash', 'Ø'],
-  ['raquo', '»'], ['szlig', 'ß'], ['ucirc', 'û'], ['uuml', 'ü'],
+  ['raquo', '»'], ['szlig', 'ß'], ['THORN', 'Þ'], ['uacute', 'ú'],
+  ['ucirc', 'û'], ['uuml', 'ü'], ['yacute', 'ý'],
   ['amp', '&'], ['quot', '"'], ['apos', "'"],
   ['lt', '<'], ['gt', '>'], ['nbsp', ' '],
 ]);
@@ -166,7 +176,7 @@ const planHiddenDflSync = (records, existingPeople) => {
   return { desiredRecords, peopleToRemove, recordsToCreate };
 };
 
-const renderInfoXml = (record, id, workIds = []) => {
+const renderInfoXml = (record, id, workIds = [], lifeData = null) => {
   const names = [...new Set(
     record.names
       .map(decodeHtml)
@@ -192,7 +202,8 @@ const renderInfoXml = (record, id, workIds = []) => {
   const worksXml = workIds.length === 0
     ? ''
     : `  <works>${workIds.join(',')}</works>\n`;
-  return `<?xml version="1.0" encoding="UTF-8"?>\n<person id="${id}" country="un" lang="da" type="poet" hidden="true">\n  <name>\n${nameXml}\n  </name>\n${periodXml}${worksXml}  <identifiers>\n    <danskforfatterleksikon-dk>${escapeXml(record.sourceId)}</danskforfatterleksikon-dk>\n  </identifiers>\n</person>\n`;
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<person id="${id}" country="un" lang="da" type="poet" hidden="true">\n  <name>\n${nameXml}\n  </name>\n${periodXml}${worksXml}  <identifiers>\n    <danskforfatterleksikon-dk>${escapeXml(record.sourceId)}</danskforfatterleksikon-dk>\n  </identifiers>\n</person>\n`;
+  return lifeData == null ? xml : applyLifeDataToXml(xml, lifeData);
 };
 
 const importHiddenDflPoets = ({
@@ -200,6 +211,7 @@ const importHiddenDflPoets = ({
   worksFile = defaultWorksFile,
   duplicateMergesFile = defaultDuplicateMergesFile,
   existingOnly = false,
+  lifeDataFile = defaultLifeDataFile,
   dryRun = false,
 } = {}) => {
   if (fs.existsSync(resolutionFile) === false) {
@@ -215,6 +227,9 @@ const importHiddenDflPoets = ({
   const resolution = JSON.parse(fs.readFileSync(resolutionFile, 'utf8'));
   const works = JSON.parse(fs.readFileSync(worksFile, 'utf8')).works;
   const worksByDflId = workRecordsByDflId(works);
+  const lifeDataByPoetId = fs.existsSync(lifeDataFile)
+    ? new Map(JSON.parse(fs.readFileSync(lifeDataFile, 'utf8')).records.map(record => [record.poetId, record]))
+    : new Map();
   const existingPeople = existingDflPeople();
   const mergedDflIds = fs.existsSync(duplicateMergesFile)
     ? JSON.parse(fs.readFileSync(duplicateMergesFile, 'utf8')).merges
@@ -253,7 +268,7 @@ const importHiddenDflPoets = ({
     if (person == null) return;
     const infoFile = path.join(person.directory, 'info.xml');
     const workIds = (worksByDflId.get(record.sourceId) ?? []).map(workIdForDflRecord);
-    const xml = renderInfoXml(record, person.id, workIds);
+    const xml = renderInfoXml(record, person.id, workIds, lifeDataByPoetId.get(person.id));
     if (fs.readFileSync(infoFile, 'utf8') === xml) return;
     updated += 1;
     updatedIds.push(person.id);
@@ -272,7 +287,7 @@ const importHiddenDflPoets = ({
     if (dryRun === false) {
       fs.mkdirSync(directory);
       const workIds = (worksByDflId.get(record.sourceId) ?? []).map(workIdForDflRecord);
-      fs.writeFileSync(path.join(directory, 'info.xml'), renderInfoXml(record, id, workIds));
+      fs.writeFileSync(path.join(directory, 'info.xml'), renderInfoXml(record, id, workIds, lifeDataByPoetId.get(id)));
     }
   });
   let worksCreated = 0;

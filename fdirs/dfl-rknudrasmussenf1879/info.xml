@@ -5,10 +5,14 @@
   </name>
   <period>
     <born>
-      <date>1879</date>
+      <!-- Konflikt birthPlace: wikidata=Ilulissat -->
+      <date>1879-06-07</date>
+      <place>Ilulissat, Grønland</place>
     </born>
     <dead>
-      <date>1933</date>
+      <!-- Konflikt deathPlace: wikidata=Gentofte Hospital -->
+      <date>1933-12-21</date>
+      <place>Gentofte</place>
     </dead>
   </period>
   <works>dfl-sk1850tits-8747</works>
@@ -16,6 +20,8 @@
     <wikidata>Q312769</wikidata>
     <viaf>10112523</viaf>
     <gnd>11859835X</gnd>
+    <lex-dk>Knud_Rasmussen</lex-dk>
+    <biografisk-leksikon-lex-dk>Knud_Rasmussen</biografisk-leksikon-lex-dk>
     <danskforfatterleksikon-dk>RKnudRasmussenf1879</danskforfatterleksikon-dk>
   </identifiers>
 </person>

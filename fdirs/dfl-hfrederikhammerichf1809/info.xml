@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <person id="dfl-hfrederikhammerichf1809" country="un" lang="da" type="poet" hidden="true">
   <name>
-    <fullname>Frederik Hammerich, f 1809</fullname>
+    <fullname>Frederik Hammerich</fullname>
   </name>
   <period>
     <born>
-      <date>1809</date>
+      <date>1809-08-09</date>
+      <place>København</place>
     </born>
     <dead>
-      <date>1877</date>
+      <date>1877-02-09</date>
+      <place>København</place>
     </dead>
   </period>
   <works>dfl-sk1850titb-2862,dfl-sk1850titd-1177,dfl-sk1850titd-1180,dfl-sk1850titg-5886,dfl-sk1850tith-2391,dfl-sk1850tits-7408,dfl-sk1850titt-2972</works>
@@ -16,6 +18,7 @@
     <wikidata>Q4495311</wikidata>
     <viaf>52045055</viaf>
     <gnd>117494135</gnd>
+    <biografisk-leksikon-lex-dk>Frederik_Hammerich_-_teolog</biografisk-leksikon-lex-dk>
     <danskforfatterleksikon-dk>HFrederikHammerichf1809</danskforfatterleksikon-dk>
   </identifiers>
 </person>
