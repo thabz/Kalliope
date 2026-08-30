@@ -5,6 +5,7 @@ import {
 } from '../../tools/format-work-xml.js';
 import {
   checksForWorkXml,
+  collectBodyLinkIssues,
   collectPageBreakIssues,
   collectSourceStructureIssues,
   collectTextStructureIssues,
@@ -18,6 +19,7 @@ import {
 
 describe('tracked work corpus', () => {
   let filenames;
+  let bodyLinkIssues;
   let emptyAndreFiles;
   let formattingIssues;
   let pageBreakIssues;
@@ -28,6 +30,7 @@ describe('tracked work corpus', () => {
   beforeAll(() => {
     const works = loadTrackedWorkFiles();
     filenames = works.map(work => work.filename);
+    bodyLinkIssues = [];
     emptyAndreFiles = [];
     formattingIssues = [];
     pageBreakIssues = [];
@@ -59,6 +62,7 @@ describe('tracked work corpus', () => {
 
       const checks = checksForWorkXml(xml);
       if (
+        checks.bodyLinks !== true &&
         checks.sources !== true &&
         checks.pageBreaks !== true &&
         checks.textStructure !== true
@@ -67,6 +71,9 @@ describe('tracked work corpus', () => {
       }
 
       const document = parseWorkXml(xml);
+      if (checks.bodyLinks === true) {
+        bodyLinkIssues.push(...collectBodyLinkIssues(filename, document));
+      }
       if (checks.textStructure === true) {
         textStructureIssues.push(
           ...collectTextStructureIssues(filename, document),
@@ -95,6 +102,10 @@ describe('tracked work corpus', () => {
 
   it('keeps every work canonically formatted', () => {
     expect(formattingIssues).toEqual([]);
+  });
+
+  it('keeps links out of work body text', () => {
+    expect(bodyLinkIssues).toEqual([]);
   });
 
   it('requires a workhead source for every page-only text source', () => {

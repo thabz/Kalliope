@@ -46,6 +46,10 @@ digtere.
 - Angiv altid `lang` med en ISO 639-1-sprogkode på `<quote>`, når citatet ikke
   er på dansk. Gennemgå korte mottoer og enkeltord manuelt; dansk- og
   norskprægede historiske sprogformer må ikke mærkes uden en sikker vurdering.
+- Brug ikke `<a>` eller `<xref>` i værkernes egentlige brødtekst i `<body>`.
+  Henvisninger fra digte, prosa og citatblokke skal ligge i `<note>` eller
+  `<footnote>`; links i keywordtekster og biografier er fortsat tilladt.
+  Attributlinks som `source/@href` er metadata og berøres ikke af reglen.
 
 ## Git og GitHub
 
