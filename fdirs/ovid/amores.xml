@@ -2,9 +2,74 @@
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="amores" author="ovid" status="incomplete" type="poetry">
 <workhead>
-    <title>Amores</title>
-    <year>ca. -0020</year>
+  <title>Amores</title>
+  <year>ca. -0020</year>
+  <notes>
+    <note>Den latinske tekst følger den angivne Perseus-udgave. Tekstkritiske variantnoter i TEI-kilden er udeladt, mens udgavens versnumre er bevaret.</note>
+    <note type="credits">Digital tekst fra Perseus Digital Library, udgivet under licensen CC BY-SA 3.0 US.</note>
+  </notes>
+  <source href="https://catalog.perseus.tufts.edu/catalog/urn:cts:latinLit:phi0959.phi001">P. Ovidius Naso: <i>Amores, Epistulae, Medicamina faciei femineae, Ars amatoria, Remedia amoris</i>, Rudolf Ehwald og Rudolph Merkel (red.), B. G. Teubner, Leipzig, 1907.</source>
+  <quality>kilde</quality>
 </workhead>
 <workbody>
+
+<text id="ovid2026083016">
+<head>
+  <title>Liber I, Elegia IX</title>
+  <firstline>Militat omnis amans, et habet sua castra Cupido</firstline>
+  <quality>kilde</quality>
+</head>
+<body>
+<poetry>
+Militat omnis amans, et habet sua castra Cupido;
+Attice, crede mihi, militat omnis amans.
+Quae bello est habilis, Veneri quoque convenit aetas.
+Turpe senex miles, turpe senilis amor.
+<num>5</num>Quos petiere duces animos in milite forti,
+Hos petit in socio bella puella viro.
+Pervigilant ambo; terra requiescit uterque —
+Ille fores dominae servat, at ille ducis.
+Militis officium longa est via; mitte puellam,
+<num>10</num>Strenuus exempto fine sequetur amans.
+Ibit in adversos montes duplicataque nimbo
+Flumina, congestas exteret ille nives,
+Nec freta pressurus tumidos causabitur Euros
+Aptaque verrendis sidera quaeret aquis.
+<num>15</num>Quis nisi vel miles vel amans et frigora noctis
+Et denso mixtas perferet imbre nives?
+Mittitur infestos alter speculator in hostes;
+In rivale oculos alter, ut hoste, tenet.
+Ille graves urbes, hic durae limen amicae
+<num>20</num>Obsidet; hic portas frangit, at ille fores.
+Saepe soporatos invadere profuit hostes
+Caedere et armata vulgus inerme manu.
+Sic fera Threicii ceciderunt agmina Rhesi,
+Et dominum capti deseruistis equi.
+<num>25</num>Nempe maritorum somnis utuntur amantes,
+Et sua sopitis hostibus arma movent.
+Custodum transire manus vigilumque catervas
+Militis et miseri semper amantis opus.
+Mars dubius nec certa Venus; victique resurgunt,
+<num>30</num>Quosque neges umquam posse iacere, cadunt.
+Ergo desidiam quicumque vocabat amorem,
+Desinat. ingenii est experientis amor.
+Ardet in abducta Briseide magnus Achilles —
+Dum licet, Argeas frangite, Troes, opes!
+<num>35</num>Hector ab Andromaches conplexibus ibat ad arma,
+Et, galeam capiti quae daret, uxor erat.
+Summa ducum, Atrides, visa Priameide fertur
+Maenadis effusis obstipuisse comis.
+Mars quoque deprensus fabrilia vincula sensit;
+<num>40</num>Notior in caelo fabula nulla fuit.
+Ipse ego segnis eram discinctaque in otia natus;
+Mollierant animos lectus et umbra meos.
+Inpulit ignavum formosae cura puellae
+Iussit et in castris aera merere suis.
+<num>45</num>Inde vides agilem nocturnaque bella gerentem.
+Qui nolet fieri desidiosus, amet!
+</poetry>
+</body>
+</text>
+
 </workbody>
 </kalliopework>

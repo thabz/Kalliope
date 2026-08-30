@@ -2,9 +2,376 @@
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="epistulae" author="ovid" status="incomplete" type="poetry">
 <workhead>
-    <title>Epistulae ex Ponto</title>
-    <year>ca. 0010</year>
+  <title>Epistulae ex Ponto</title>
+  <year>ca. 0010</year>
+  <notes>
+    <note>Den latinske tekst følger den angivne Perseus-udgave. Tekstkritiske variantnoter i TEI-kilden er udeladt, mens udgavens versnumre er bevaret.</note>
+    <note type="credits">Digital tekst fra Perseus Digital Library, udgivet under licensen CC BY-SA 3.0 US.</note>
+  </notes>
+  <source href="https://catalog.perseus.tufts.edu/catalog/urn:cts:latinLit:phi0959.phi009">P. Ovidius Naso: <i>Tristia. Ex Ponto</i>, Arthur Leslie Wheeler (red.), Harvard University Press og William Heinemann, Cambridge, MA og London, 1939.</source>
+  <quality>kilde</quality>
 </workhead>
 <workbody>
+
+<text id="ovid2026083021">
+<head>
+  <title>Liber I, Epistula III</title>
+  <firstline>Hanc tibi Naso tuus mittit, Rufine, salutem</firstline>
+  <quality>kilde</quality>
+</head>
+<body>
+<poetry>
+Hanc tibi Naso tuus mittit, Rufine, salutem,
+qui miser est, ulli si suus esse potest.
+reddita confusae nuper solacia menti
+auxilium nostris spemque tulere malis,
+<num>5</num>utque Machaoniis Poeantius artibus heros
+lenito medicam vulnere sensit opem,
+sic ego mente iacens et acerbo saucius ictu
+admonitu coepi fortior esse tuo,
+et iam deficiens sic ad tua verba revixi,
+<num>10</num>ut solet infuso vena redire mero.
+non tamen exhibuit tantas facundia vires,
+ut mea sint dictis pectora sana tuis.
+ut multum demas nostrae de gurgite curae,
+non minus exhausto quod superabit erit.
+<num>15</num>tempore ducetur longo fortasse cicatrix :
+horrent admotas vulnera cruda manus.
+non est in medico semper relevetur ut aeger:
+interdum docta plus valet arte malum,
+cernis ut e molli sanguis pulmone remissus
+<num>20</num>ad Stygias certo limite ducat aquas,
+afferat ipse licet sacras Epidaurius herbas,
+sanabit nulla vulnera cordis ope.
+tollere nodosam nescit medicina podagram,
+nec formidatis auxiliatur aquis.
+<num>25</num>cura quoque interdum nulla medicabilis arte est—
+aut, ut sit, longa est extenuanda mora.
+cum bene firmarunt animum praecepta iacentem,
+sumptaque sunt nobis pectoris arma tui,
+rursus amor patriae ratione valentior omni,
+<num>30</num>quod tua fecerunt scripta, retexit opus.
+sive pium vis hoc sive hoc muliebre vocari,
+confiteor misero molle cor esse mihi.
+non dubia est Ithaci prudentia, sed tamen optat
+fumum de patriis posse videre focis.
+<num>35</num>nescio qua natale solum dulcedine cunctos
+ducit et inmemores non sinit esse sui.
+quid melius Roma? Scythico quid frigore peius?
+huc tamen ex illa barbarus urbe fugit,
+cum bene sit clausae cavea Pandione natae,
+<num>40</num>nititur in silvas illa redire suas.
+adsuetos tauri saltus, adsueta leones—
+nec feritas illos impedit antra petunt.
+tu tamen exilii morsus e pectore nostro
+fomentis speras cedere posse tuis.
+<num>45</num>effice vos ipsi ne tam mihi sitis amandi,
+talibus ut levius sit caruisse malum,
+at, puto, qua genitus fueram, tellure carenti
+in tamen humano contigit esse loco.
+orbis in extremi iaceo desertus harenis,
+<num>50</num>fert ubi perpetuas obruta terra nives.
+non ager hic pomum, non dulces educat uvas,
+non salices ripa, robora monte virent.
+neve fretum laudes terra magis, aequora semper
+ventorum rabie solibus orba tument.
+<num>55</num>quocumque aspicies, campi cultore carentes
+vastaque, quae nemo vindicat, arva iacent.
+hostis adest dextra laevaque a parte timendus,
+vicinoque metu terret utrumque latus,
+altera Bistonias pars est sensura sarisas,
+<num>60</num>altera Sarmatica spicula missa manu.
+i nunc et veterum nobis exempla virorum
+qui forti casum mente tulere refer,
+et grave magnanimi robur mirare Rutili
+non usi reditus condicione dati.
+<num>65</num>Smyrna virum tenuit, non Pontus et hostica tellus,
+paene minus nullo Smyrna petenda loco.
+non doluit patria cynicus procul esse Sinopeus,
+legit enim sedes, Attica terra, tuas.
+arma Neoclides qui Persica contudit armis,
+<num>70</num>Argolica primam sensit in urbe fugam,
+pulsus Aristides patria Lacedaemona fugit,
+inter quas dubium, quae prior esset, erat.
+caede puer facta Patroclus Opunta reliquit,
+Thessalicamque adiit hospes Achillis humum.
+<num>75</num>exul ab Haemonia Pirenida cessit ad undam,
+quo duce trabs Colcha sacra cucurrit aqua.
+liquit Agenorides Sidonia moenia Cadmus,
+poneret ut muros in meliore loco.
+venit ad Adrastum Tydeus Calydone fugatus,
+<num>80</num>et Teucrum Veneri grata recepit humus.
+quid referam veteres Romanae gentis, apud quos
+exulibus tellus ultima Tibur erat?
+persequar ut cunctos, nulli datus omnibus aevis
+tam procul a patria est horridiorve locus.
+<num>85</num>quo magis ignoscat sapientia vestra dolenti:
+quae facit ex dictis, non ita multa, tuis.
+nec tamen infitior, si possint nostra coire
+vulnera, praeceptis posse coire tuis.
+sed vereor ne me frustra servare labores,
+<num>90</num>neu iuver admota perditus aeger ope.
+nec loquor haec, quia sit maior prudentia nobis,
+sed sum quam medico notior ipse mihi.
+ut tamen hoc ita sit, munus tua grande voluntas
+ad me pervenit consuliturque boni.
+</poetry>
+</body>
+</text>
+
+<text id="ovid2026083022">
+<head>
+  <title>Liber II, Epistula VII</title>
+  <firstline>Esse salutatum vult te mea littera primum</firstline>
+  <quality>kilde</quality>
+</head>
+<body>
+<poetry>
+Esse salutatum vult te mea littera primum
+a male pacatis, Attice, missa Getis.
+proxima subsequitur, quid agas, audire voluntas,
+et si, quidquid agis, sit tibi cura mei.
+<num>5</num>nec dubito quin sit, sed me timor ipse malorum
+saepe supervacuos cogit habere metus,
+da veniam, quaeso, nimioque ignosce timori.
+tranquillas etiam naufragus horret aquas.
+qui semel est laesus fallaci piscis ab hamo,
+<num>10</num>omnibus unca cibis aera subesse putat.
+saepe canem longe visum fugit agna lupumque
+credit, et ipsa suam nescia vitat opem.
+membra reformidant mollem quoque saucia tactum,
+vanaque sollicitis incutit umbra metum.
+<num>15</num>sic ego Fortunae telis confixus iniquis
+pectore concipio nil nisi triste meo.
+iam mihi fata liquet coeptos servantia cursus
+per sibi consuetas semper itura vias :
+observare deos, ne quid mihi cedat amice,
+<num>20</num>verbaque Fortunae vix puto posse dari.
+est illi curae me perdere, quaeque solebat
+esse levis, constans et bene certa nocet,
+crede mihi, si sum veri tibi cognitus oris
+(nec planis nostris casibus esse puter ),
+<num>25</num>Cinyphiae segetis citius numerabis aristas,
+altaque quam multis floreat Hybla thymis,
+et quot aves motis nitantur in aere pinnis,
+quotque natent pisces aequore, certus eris,
+quam tibi nostrorum statuatur summa laborum,
+<num>30</num>quos ego sum terra, quos ego passus aqua.
+nulla Getis toto gens est truculentior orbe;
+sed tamen hi nostris ingemuere malis,
+quae tibi si memori coner perscribere versu.
+Uias est fati longa futura mei.
+<num>35</num>non igitur vereor quo te rear esse verendum,
+cuius amor nobis pignora mille dedit,
+sed quia res timida est omnis miser, et quia longo est
+tempore laetitiae ianua clausa meae.
+iam dolor in morem venit meus, utque Caducis
+<num>40</num>percussu crebro saxa cavantur aquis,
+sic ego continuo Fortunae vulneror ictu,
+vixque habet in nobis iam nova plaga locum.
+nec magis assiduo vomer tenuatur ab usu,
+nec magis est curvis Appia trita rotis,
+<num>45</num>pectora quam mea sunt sene calcata malorum,
+et nihil inveni, quod mihi ferret opem.
+artibus ingenuis quaesita est gloria multis:
+infelix perii dotibus ipse meis.
+vita prior vitio caret et sine labe peracta est :
+<num>50</num>auxilii misero nil tulit illa mihi.
+culpa gravis precibus donatur saepe suorum:
+omnis pro nobis gratia muta fuit.
+adiuvat in duris aliquos praesentia rebus:
+obruit hoc absens vasta procella caput.
+<num>55</num>quis non horruerit tacitam quoque Caesaris iram?
+addita sunt poenis aspera verba meis.
+fit fuga temporibus levior. proiectus in aequor
+Arcturum subii Pleiadumque minas,
+saepe solent hiemen placidam sentire carinae:
+<num>60</num>non Ithacae puppi saevior unda fuit.
+recta fides comitum poterat mala nostra levare:
+ditata est spoliis perfida turba meis.
+mitius exilium faciunt loca: tristior ista
+terra sub ambobus non iacet ulla polis.
+<num>65</num>est aliquid patriis vicinum finibus esse:
+ultima me tellus, ultimus orbis habet.
+praestat et exulibus pacem tua laurea. Caesar:
+Pontica finitimo terra sub hoste iacet.
+tempus in agrorum cultu consumere dulce est:
+<num>70</num>non patitur verti barbarus hostis humum.
+temperie caeli corpusque animusque iuvatur:
+frigore perpetuo Sarmatis ora riget.
+est in aqua dulci non invidiosa voluptas:
+aequoreo bibitur cum sale mixta palus.
+<num>75</num>omnia deficiunt. animus tamen omnia vincit:
+ille etiam vires corpus habere facit,
+sustineas ut onus, nitendum vertice pleno est,
+aut, flecti nervos si patiere,
+cades, spes quoque posse mora mitescere principis iram,
+<num>80</num>vivere ne nolim deficiamque, cavet,
+nec vos parva datis pauci solacia nobis,
+quorum spectata est per mala nostra fides,
+coepta tene, quaeso, neque in aequore desere navem,
+meque simul serva iudiciumque tuum.
+</poetry>
+</body>
+</text>
+
+<text id="ovid2026083023">
+<head>
+  <title>Liber IV, Epistula IV</title>
+  <firstline>Nulla dies adeo est australibus umida nimbis</firstline>
+  <quality>kilde</quality>
+</head>
+<body>
+<poetry>
+Nulla dies adeo est australibus umida nimbis,
+non intermissis ut fluat imber aquis,
+nec sterilis locus ullus ita est, ut non sit in illo
+mixta fere duris utilis herba rubis.
+<num>5</num>nil adeo fortuna gravis miserabile fecit,
+ut minuant nulla gaudia parte malum.
+ecce domo patriaque carens oculisque meorum,
+naufragus in Getici litoris actus aquas,
+qua tamen inveni vultum diffundere causa
+<num>10</num>possim, fortunae nec meminisse meae.
+nam mihi, cum fulva solus spatiarer harena,
+visa est a tergo pinna dedisse sonum.
+respicio, nec erat corpus, quod cernere possem,
+verba tamen sunt haec aure recepta mea:
+<num>15</num>‘en ego laetarum venio tibi nuntia rerum
+Fama, per inmensas aere lapsa vias.
+consule Pompeio, quo non tibi carior alter,
+candidus et felix proximus annus erit.
+dixit, et ut laeto Pontum rumore replevit,
+<num>20</num>ad gentes alias hinc dea vertit iter.
+at mihi dilapsis inter nova gaudia curis
+excidit asperitas huius iniqua loci.
+ergo ubi, Iane biceps, longum reseraveris annum,
+pulsus et a sacro mense December erit,
+<num>25</num>purpura Pompeium summi velabit honoris,
+ne titulis quicquam debeat ille suis.
+cernere iam videor rumpi paene atria turba,
+et populum laedi deficiente loco,
+templaque Tarpeiae primum tibi sedis adiri,
+<num>30</num>et fieri faciles in tua vota deos,
+colla boves niveos certae praebere securi,
+quos aluit campis herba Falisca suis:
+cumque deos omnes, tunc hos inpensius, aequos
+esse tibi cupias, cum Iove Caesar erunt.
+<num>35</num>curia te excipiet, patresque e more vocati
+intendent aures ad tua verba suas.
+hos ubi facundo tua vox hilaraverit ore,
+utque solet, tulerit prospera verba dies,
+egeris et meritas superis cum Caesare grates
+<num>40</num>(qui causam, facias cur ita saepe, dabit),
+inde domum repetes toto comitante senatu,
+officium populi vix capiente domo.
+me miserum, turba quod non ego cernar in illa,
+nec poterunt istis lumina nostra frui!
+<num>45</num>quod licet, absentem qua possum mente videbo:
+aspiciet vultus consulis illa sui,
+di faciant aliquo subeat tibi tempore nostrum
+nomen, et "heu dicas " quid miser ille facit?
+haec tua pertulerit si quis mihi verba, fatebor
+<num>50</num>protinus exilium mollius esse meum.’
+</poetry>
+</body>
+</text>
+
+<text id="ovid2026083024">
+<head>
+  <title>Liber IV, Epistula X</title>
+  <firstline>Haec mihi Cimmerio bis tertia ducitur aestas</firstline>
+  <quality>kilde</quality>
+</head>
+<body>
+<poetry>
+Haec mihi Cimmerio bis tertia ducitur aestas
+litore pellitos inter agenda Getas.
+ecquos tu silices, ecquod, carissime, ferrum
+duritiae confers, Albinovane, meae?
+<num>5</num>gutta cavat lapidem, consumitur anulus usu,
+atteritur pressa vomer aduncus humo.
+tempus edax igitur praeter nos omnia perdit:
+cessat duritia mors quoque victa mea.
+exemplum est animi nimium patientes Ulixes,
+<num>10</num>iactatus dubio per duo lustra mari .
+tempora solliciti sed non tamen omnia fati
+pertulit, et placidae saepe fuere morae,
+an grave sex annis pulchram fovisse Calypso
+aequoreaeque fuit concubuisse deae?
+<num>15</num>excipit Hippotades, qui dat pro munere ventos,
+curvet ut inpulsos utilis aura sinus,
+nec bene cantantes labor est audire puellas:
+nec degustanti lotos amara fuit.
+hos ego, qui patriae faciant oblivia, sucos
+<num>20</num>parte meae vitae, si modo dentur, emam.
+nec tu contuleris urbem Laestrygonos umquam
+gentibus, obliqua quas obit Hister aqua.
+nec vincet Cyclops saevum feritate Piacchen.
+qui quota terroris pars solet esse mei!
+<num>25</num>Scylla feris trunco quod latret ab inguine monstris,
+Heniochae nautis plus nocuere rates,
+nec potes infestis conferre Charybdin Achaeis,
+ter licet epotum ter vomat illa fretum,
+qui quamquam dextra regione licentius errant,
+<num>30</num>securum latus hoc non tamen esse sinunt,
+hic agri infrondes, hic spicula tincta venenis,
+hic freta vel pediti pervia reddit hiems,
+ut, qua remus iter pulsis modo fecerat undis,
+siccus contempta nave viator eat.
+<num>35</num>qui veniunt istinc, vix vos ea credere dicunt,
+quam miser est, qui fert asperiora fide!
+crede tamen; nec te causas nescire sinemus,
+horrida Sarmaticum cur mare duret hiems,
+proxima sunt nobis plaustri praebentia formam
+<num>40</num>et quae praecipuum sidera frigus habent.
+hinc oritur Boreas oraeque domesticus huic est
+et sumit vires a propiore loco.
+at Notus, adverso tepidum qui spirat ab axe,
+est procul et rarus languidiorque venit.
+<num>45</num>adde quod hic clauso miscentur flumina Ponto,
+vimque fretum multo perdit ab amne suam.
+huc Lycus, huc Sugaris Peniusque Hypanisque Calesque
+influit et crebro vertice tortus Halys,
+Partheniusque rapax, et volvens saxa Cynapses
+<num>50</num>labitur, et nullo tardior amne Tyras,
+et tu, femineae Thermodon cognite turmae,
+et quondam Graiis Phasi petite viris,
+cumque Borysthenio liquidissimus amne Dyrapses
+et tacite peragens lene Melanthus iter,
+<num>55</num>quique duas terras, Asiam Cadmique sororem,
+separat et cursus inter utramque facit,
+innumerique alii, quos inter maximus omnes
+cedere Danuvius se tibi, Nile, negat,
+copia tot laticum, quas auget, adulterat undas,
+<num>60</num>nec patitur vires aequor habere suas.
+quin etiam, stagno similis pigraeque paludi,
+caeruleus vix est diluiturque color.
+innatat unda freto dulcis, leviorque marina est,
+quae proprium mixto de sale pondus habet.
+<num>65</num>si roget haec aliquis cur sint narrata Pedoni,
+quidve loqui certis iuverit ista modis,
+detinui dicam curas tempusque fefelli.
+hunc fructum praesens attulit hora mihi.
+afuimus solito, dum scribimus ista, dolore,
+<num>70</num>in mediis nec nos sensimus esse Getis.
+at tu, non dubito, cum Thesea carmine laudes,
+materiae titulos quin tueare tuae,
+quemque refers, imitere virum, vetat ille profecto
+tranquilli comitem temporis esse fidem.
+<num>75</num>qui quamquam est factis ingens et conditur a te
+vir tanto quanto debuit ore cani,
+est tamen ex illo nobis imitabile quiddam,
+inque fide Theseus quilibet esse potest.
+non tibi sunt hostes ferro clavaque domandi,
+<num>80</num>per quos vix ulli pervius Isthmos erat:
+sed praestandus amor, res non operosa volenti.
+quis labor est puram non temerasse fidem?
+haec tibi, qui perstas indeclinatus amico,
+non est quod lingua dicta querente putes.
+</poetry>
+</body>
+</text>
+
 </workbody>
 </kalliopework>
