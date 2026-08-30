@@ -4,19 +4,19 @@ describe('gruppering af digtere efter litterær periode', () => {
   const aarestrup = {
     id: 'aarestrup',
     type: 'poet',
-    country: 'dk',
+    literaryPeriods: ['dk-romantik'],
     name: { lastname: 'Aarestrup' },
   };
   const baggesen = {
     id: 'baggesen',
     type: 'poet',
-    country: 'dk',
+    literaryPeriods: ['dk-oplysningstid', 'dk-romantik'],
     name: { lastname: 'Baggesen' },
   };
   const bellman = {
     id: 'bellman',
     type: 'poet',
-    country: 'se',
+    literaryPeriods: ['se-romantik'],
     name: { lastname: 'Bellman' },
   };
 
@@ -24,16 +24,17 @@ describe('gruppering af digtere efter litterær periode', () => {
     const groups = groupsByLiteraryPeriod(
       [
         {
+          id: 'dk-oplysningstid',
           countries: ['dk'],
           title: { da: 'Oplysningstid', en: 'Enlightenment' },
-          poets: [bellman, baggesen],
         },
         {
+          id: 'dk-romantik',
           countries: ['dk'],
           title: { da: 'Romantik', en: 'Romanticism' },
-          poets: [aarestrup, baggesen],
         },
       ],
+      [aarestrup, baggesen, bellman],
       'en',
       'dk'
     );
@@ -47,9 +48,10 @@ describe('gruppering af digtere efter litterær periode', () => {
   it('udelader tomme perioder og digtere udenfor digteroversigten', () => {
     const groups = groupsByLiteraryPeriod(
       [
-        { countries: ['dk'], title: { da: 'Tom' }, poets: [] },
-        { countries: ['dk'], title: { da: 'Personer' }, poets: [{ ...aarestrup, type: 'person' }] },
+        { id: 'dk-tom', countries: ['dk'], title: { da: 'Tom' } },
+        { id: 'dk-romantik', countries: ['dk'], title: { da: 'Personer' } },
       ],
+      [{ ...aarestrup, type: 'person' }],
       'da',
       'dk'
     );
@@ -58,19 +60,24 @@ describe('gruppering af digtere efter litterær periode', () => {
   });
 
   it('viser globale og landets lokale perioder, men ikke andre landes', () => {
+    const baggesenWithGlobalPeriod = {
+      ...baggesen,
+      literaryPeriods: ['global-romantik', 'dk-romantik'],
+    };
     const groups = groupsByLiteraryPeriod(
       [
-        { countries: ['dk', 'se'], title: { da: 'Romantik' }, poets: [baggesen] },
-        { countries: ['dk'], title: { da: 'Dansk romantik' }, poets: [baggesen] },
-        { countries: ['se'], title: { da: 'Svensk romantik' }, poets: [bellman] },
+        { id: 'global-romantik', countries: ['dk', 'se'], title: { da: 'Romantik' } },
+        { id: 'dk-romantik', countries: ['dk'], title: { da: 'Dansk romantik' } },
+        { id: 'se-romantik', countries: ['se'], title: { da: 'Svensk romantik' } },
       ],
+      [baggesenWithGlobalPeriod, bellman],
       'da',
       'dk'
     );
 
     expect(groups).toEqual([
-      { title: 'Romantik', items: [baggesen] },
-      { title: 'Dansk romantik', items: [baggesen] },
+      { title: 'Romantik', items: [baggesenWithGlobalPeriod] },
+      { title: 'Dansk romantik', items: [baggesenWithGlobalPeriod] },
     ]);
   });
 });
