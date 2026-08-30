@@ -80,14 +80,15 @@ Den første kommando parser de gemte JSON- og HTML-snapshots. `--fetch` henter
 forfatterindexet igen. Output ligger i collectorens `parsed/`-mappe og under
 `tools/data/indsamling/nordisk-kvindelitteraturhistorie/manifest.json`.
 
-### Kommende digtere og værker fra DFL
+### Dækningsregistre for digtere og værker
 
 ```sh
-npm run sync-upcoming-poets
-npm run sync-upcoming-poets -- --fetch
+npm run sync-literary-registers
+npm run sync-literary-registers -- --fetch
 ```
 
-Kørsel uden options opdaterer de to JSONL-registre fra den lokale DFL-cache.
+Kørsel uden options opdaterer de to permanente JSONL-dækningsregistre fra den
+lokale DFL-cache.
 `--fetch` opdaterer først den afgrænsede DFL-cache. Eksisterende berigelse og
 redaktionelle felter bevares; synkroniseringen sletter ikke poster automatisk.
 

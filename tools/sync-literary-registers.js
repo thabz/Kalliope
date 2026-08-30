@@ -10,7 +10,7 @@ const defaultPoetsFile = path.join(
   'data',
   'indsamling',
   'register',
-  'kommende-digtere.jsonl'
+  'digtere.jsonl'
 );
 const defaultWorksFile = path.join(
   rootDir,
@@ -18,7 +18,7 @@ const defaultWorksFile = path.join(
   'data',
   'indsamling',
   'register',
-  'kommende-vaerker.jsonl'
+  'vaerker.jsonl'
 );
 const defaultRawDir = path.join(rootDir, 'tools', 'data', 'indsamling', 'dfl', 'raw');
 const dflBaseUrl = 'https://danskforfatterleksikon.dk/1850/';
@@ -305,18 +305,57 @@ const workId = (work, usedIds) => {
 
 const workObservationKey = (url, value) => `${url ?? ''}:${normalizeText(decodeHtml(value ?? ''))}`;
 
-const existingKalliopeDflIds = root => {
-  const ids = new Set();
+const normalizedWorkTitle = value => normalizeText(decodeHtml(String(value ?? '').replace(/<[^>]+>/g, ' ')))
+  .toLocaleLowerCase('da-DK')
+  .replace(/[.,:;!?]+$/g, '');
+
+const normalizedWorkYear = value => String(value ?? '').match(/\d{4}/)?.[0] ?? null;
+
+const existingKalliope = root => {
+  const poetsByDflId = new Map();
+  const worksByPoetId = new Map();
   fs.readdirSync(path.join(root, 'fdirs'), { withFileTypes: true })
     .filter(entry => entry.isDirectory())
     .forEach(entry => {
       const file = path.join(root, 'fdirs', entry.name, 'info.xml');
       if (fs.existsSync(file) === false) return;
       const xml = fs.readFileSync(file, 'utf8');
-      const id = xml.match(/<danskforfatterleksikon-dk>([^<]+)<\/danskforfatterleksikon-dk>/)?.[1];
-      if (id != null) ids.add(id);
+      const dflId = xml.match(/<danskforfatterleksikon-dk>([^<]+)<\/danskforfatterleksikon-dk>/)?.[1];
+      if (dflId == null) return;
+      poetsByDflId.set(dflId, { id: entry.name });
+      const works = fs.readdirSync(path.join(root, 'fdirs', entry.name))
+        .filter(workFile => workFile.endsWith('.xml') && workFile !== 'info.xml')
+        .flatMap(workFile => {
+          const workXml = fs.readFileSync(path.join(root, 'fdirs', entry.name, workFile), 'utf8');
+          if (/<kalliopework\b/.test(workXml) === false) return [];
+          const workId = workXml.match(/<kalliopework\b[^>]*\bid="([^"]+)"/)?.[1];
+          const title = workXml.match(/<workhead>[\s\S]*?<title>([\s\S]*?)<\/title>/)?.[1];
+          const year = workXml.match(/<workhead>[\s\S]*?<year>([^<]+)<\/year>/)?.[1];
+          return workId == null || title == null || year == null ? [] : [{
+            poetId: entry.name,
+            workId,
+            title: normalizedWorkTitle(title),
+            year: normalizedWorkYear(year),
+          }];
+        });
+      worksByPoetId.set(entry.name, works);
     });
-  return ids;
+  return { poetsByDflId, worksByPoetId };
+};
+
+const uniqueKalliopeWorkMatch = ({ work, poetIds, poets, worksByPoetId }) => {
+  if (poetIds.length !== 1) return null;
+  const poet = poets.find(candidate => candidate.id === poetIds[0]);
+  const kalliopePoetId = poet?.kalliope?.id;
+  if (kalliopePoetId == null) return null;
+  const title = normalizedWorkTitle(work.title);
+  const year = normalizedWorkYear(work.year);
+  if (title === '' || year == null) return null;
+  const matches = (worksByPoetId.get(kalliopePoetId) ?? [])
+    .filter(candidate => candidate.title === title && candidate.year === year);
+  return matches.length === 1
+    ? { poet_id: kalliopePoetId, work_id: matches[0].workId }
+    : null;
 };
 
 const buildRecords = ({ existingPoets, existingWorks, dflWorks, root, rawDir }) => {
@@ -343,7 +382,7 @@ const buildRecords = ({ existingPoets, existingWorks, dflWorks, root, rawDir }) 
     roles.add(author.role);
     rolesByDflId.set(author.sourceId, roles);
   }));
-  const kalliopeDflIds = existingKalliopeDflIds(root);
+  const kalliope = existingKalliope(root);
   const candidateDflIds = new Set(existingByDflId.keys());
   const originalDanishAuthors = danishAuthorIds(rawDir);
   namesByDflId.forEach((names, dflId) => {
@@ -353,7 +392,6 @@ const buildRecords = ({ existingPoets, existingWorks, dflWorks, root, rawDir }) 
     const page = parseDflAuthorPage(rawDir, dflId);
     const placeholder = [...names].some(isPlaceholderName) || page?.pageStatus === 'non-person-placeholder';
     if (
-      kalliopeDflIds.has(dflId) === false &&
       names.size > 0 &&
       eligible &&
       placeholder === false
@@ -365,12 +403,15 @@ const buildRecords = ({ existingPoets, existingWorks, dflWorks, root, rawDir }) 
   const poetsByDflId = new Map();
   [...candidateDflIds].sort().forEach(dflId => {
     const existing = existingByDflId.get(dflId);
+    const existingKalliopePoet = kalliope.poetsByDflId.get(dflId);
     const dflPage = parseDflAuthorPage(rawDir, dflId);
     const names = [...(namesByDflId.get(dflId) ?? [])];
     const preferred = decodeHtml(existing?.name?.preferred ?? dflPage?.preferredName ?? names[0] ?? dflId);
     const life = compact({ born: { date: dflPage?.birthDate }, dead: { date: dflPage?.deathDate } });
+    const preservedId = existing?.id ?? existingKalliopePoet?.id;
+    if (preservedId != null) usedPoetIds.add(preservedId);
     const generated = compact({
-      id: existing?.id ?? allocateCandidateId(preferred, life.born?.date, dflId, usedPoetIds),
+      id: preservedId ?? allocateCandidateId(preferred, life.born?.date, dflId, usedPoetIds),
       status: 'candidate',
       name: {
         preferred,
@@ -379,11 +420,16 @@ const buildRecords = ({ existingPoets, existingWorks, dflWorks, root, rawDir }) 
       life,
       identifiers: { 'danskforfatterleksikon-dk': dflId },
       sources: [sourceForDfl(dflId)],
-      work_ids: [],
     });
     const reserved = reservations.get(dflId) ?? {};
     const merged = mergeNonEmpty(existing, { ...generated, ...reserved });
-    merged.status = existing?.status ?? reserved.status ?? generated.status;
+    delete merged.work_ids;
+    if (existingKalliopePoet != null) {
+      merged.kalliope = mergeNonEmpty(existing?.kalliope, existingKalliopePoet);
+      merged.status = 'included';
+    } else {
+      merged.status = existing?.status ?? reserved.status ?? generated.status;
+    }
     merged.sources = mergeUnique(
       existing?.sources,
       generated.sources,
@@ -426,19 +472,21 @@ const buildRecords = ({ existingPoets, existingWorks, dflWorks, root, rawDir }) 
       generated.sources,
       source => `${source.source}:${source.id ?? source.url}`
     );
+    const automaticKalliopeMatch = uniqueKalliopeWorkMatch({
+      work,
+      poetIds,
+      poets: [...poetsByDflId.values()],
+      worksByPoetId: kalliope.worksByPoetId,
+    });
+    const kalliopeWork = existing?.kalliope ?? automaticKalliopeMatch;
+    merged.status = kalliopeWork == null ? existing?.status ?? 'candidate' : 'included';
+    if (kalliopeWork != null) merged.kalliope = kalliopeWork;
     works.set(id, merged);
   });
   const currentPoetIds = new Set([...poetsByDflId.values()].map(poet => poet.id));
   works.forEach(work => {
     work.poet_ids = work.poet_ids.filter(poetId => currentPoetIds.has(poetId));
   });
-  poetsByDflId.forEach(poet => {
-    poet.work_ids = [];
-  });
-  works.forEach(work => work.poet_ids.forEach(poetId => {
-    const poet = [...poetsByDflId.values()].find(candidate => candidate.id === poetId);
-    if (poet != null) poet.work_ids = [...new Set([...(poet.work_ids ?? []), work.id])].sort();
-  }));
   return { poets: [...poetsByDflId.values()], works: [...works.values()] };
 };
 
@@ -509,7 +557,7 @@ const refreshDflCache = async rawDir => {
   return errors.length;
 };
 
-const syncUpcomingPoets = async ({
+const syncLiteraryRegisters = async ({
   root = rootDir,
   poetsFile = defaultPoetsFile,
   worksFile = defaultWorksFile,
@@ -540,7 +588,7 @@ const syncUpcomingPoets = async ({
 
 const isMainModule = process.argv[1] != null && fileURLToPath(import.meta.url) === process.argv[1];
 if (isMainModule) {
-  syncUpcomingPoets({ fetchSources: process.argv.includes('--fetch') })
+  syncLiteraryRegisters({ fetchSources: process.argv.includes('--fetch') })
     .then(result => {
       console.log(`Digtere: ${result.poets} (${result.newPoets} nye, ${result.changedPoets} ændret); værker: ${result.works} (${result.newWorks} nye, ${result.changedWorks} ændret); kildefejl: ${result.fetchErrors}`);
     })
@@ -559,5 +607,5 @@ export {
   readJsonl,
   selectPoetryRelations,
   slugify,
-  syncUpcomingPoets,
+  syncLiteraryRegisters,
 };

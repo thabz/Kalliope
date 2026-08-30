@@ -139,7 +139,7 @@ const renderReport = ({ observations, references, sourceStatus, generatedAt }) =
 const loadSourceRecords = async () => {
   const files = {
     kalliope: join(root, 'docs/indsamling/kalliope/observations.json'),
-    danskforfatterleksikon: join(root, 'tools/data/indsamling/register/kommende-digtere.jsonl'),
+    danskforfatterleksikon: join(root, 'tools/data/indsamling/register/digtere.jsonl'),
     'dansk-biografisk-leksikon': join(root, 'docs/indsamling/dbl/observations.json'),
     'nordisk-kvindelitteraturhistorie': join(root, 'tools/data/indsamling/nordisk-kvindelitteraturhistorie/parsed/observations.json'),
     'dansk-kvindebiografisk-leksikon': join(root, 'docs/indsamling/kvindebiografisk/observations.json'),
