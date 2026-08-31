@@ -84,7 +84,7 @@ describe('prepare Kalliope title page', () => {
     expect(fs.existsSync(result.transformPath)).toBe(true);
   });
 
-  it('requires visual inspection before promotion', async () => {
+  it('promotes automatically when the machine checks pass', async () => {
     const source = path.join(root, 'source.jpg');
     const candidate = path.join(root, 'candidate.jpg');
     const finalImage = path.join(root, 'public', 'work-p1.jpg');
@@ -94,19 +94,9 @@ describe('prepare Kalliope title page', () => {
       crop: { left: 45, top: 45, width: 830, height: 1130 },
     });
 
-    const firstQa = await qaTitlePage(source, candidate, {
-      comparison: path.join(root, 'compare-before.jpg'),
-      report: path.join(root, 'qa-before.json'),
-    });
-    expect(firstQa.status).toBe('manual-review');
-    expect(firstQa.checks.visualReview).toBe(false);
-    expect(fs.existsSync(finalImage)).toBe(false);
-
     const acceptedQa = await qaTitlePage(source, candidate, {
-      comparison: path.join(root, 'compare-after.jpg'),
       promote: finalImage,
       report: path.join(root, 'qa-after.json'),
-      visualPass: true,
     });
     expect(acceptedQa.status).toBe('pass');
     expect(acceptedQa.promotedTo).toBe(path.resolve(finalImage));
@@ -123,9 +113,7 @@ describe('prepare Kalliope title page', () => {
     });
 
     const qa = await qaTitlePage(source, candidate, {
-      comparison: path.join(root, 'compare.jpg'),
       report: path.join(root, 'qa.json'),
-      visualPass: true,
     });
 
     expect(qa.status).toBe('manual-review');
@@ -145,9 +133,7 @@ describe('prepare Kalliope title page', () => {
     fs.writeFileSync(candidate, changed);
 
     const qa = await qaTitlePage(source, candidate, {
-      comparison: path.join(root, 'compare.jpg'),
       report: path.join(root, 'qa.json'),
-      visualPass: true,
     });
 
     expect(qa.status).toBe('manual-review');
@@ -172,7 +158,6 @@ describe('prepare Kalliope title page', () => {
       jpegOutput: true,
       deterministicTransform: true,
       noUpscaling: true,
-      visualReview: true,
     })).toBe(true);
   });
 

@@ -20,11 +20,9 @@ Create a faithful `p1` image from the actual printed title page. Read
      SOURCE.jpg --out-dir SCRATCH
    ```
 
-3. Inspect `analysis-preview.jpg` at full available detail. Treat the suggested
-   angle and crop as candidates, not source evidence. The page edge and the
-   visual direction of the main text lines are authoritative.
-4. Render a scratch candidate with explicit values from the report, adjusting
-   them when visual inspection requires it:
+3. When `analysis.json` has status `candidate`, render a scratch candidate
+   with the exact suggested angle and crop. Do not ask the user to approve the
+   preview or adjust a trusted candidate interactively:
 
    ```shell
    node .codex/skills/prepare-kalliope-titlepage/scripts/titlepage.js render \
@@ -32,27 +30,19 @@ Create a faithful `p1` image from the actual printed title page. Read
      --crop LEFT,TOP,WIDTH,HEIGHT
    ```
 
-5. Create the comparison and machine-readable QA report without promotion:
+4. Run QA and promote in one operation:
 
    ```shell
    node .codex/skills/prepare-kalliope-titlepage/scripts/titlepage.js qa \
      SOURCE.jpg SCRATCH/candidate.jpg --report SCRATCH/qa.json \
-     --comparison SCRATCH/comparison.jpg
-   ```
-
-6. Inspect the comparison image. If every requirement in
-   `docs/titelbladsbilleder.md` is visibly satisfied, rerun QA with
-   `--visual-pass` and the final destination:
-
-   ```shell
-   node .codex/skills/prepare-kalliope-titlepage/scripts/titlepage.js qa \
-     SOURCE.jpg SCRATCH/candidate.jpg --report SCRATCH/qa.json \
-     --comparison SCRATCH/comparison.jpg --visual-pass \
      --promote public/images/POET/WORK-p1.jpg
    ```
 
-   This may replace the destination only when QA returns `pass`. It is the
-   automatic approval gate; user review is not required for a passing image.
+   This may replace the destination only when the machine checks return
+   `pass`. Continue the surrounding import workflow without showing a preview
+   or comparison to the user. If analysis or QA returns `manual-review`, leave
+   the candidate in scratch and report that it was not promoted; do not turn
+   the failure into an approval request.
 
 `analyze` writes `analysis.json` with the proposed angle, crop and confidence.
 `render` writes `<candidate>.transform.json`, which binds the source and
@@ -63,7 +53,6 @@ rotated canvas. The report lists left, right, top and bottom separately.
 After finding the paper boundary, analysis measures continuous dark bands at
 full resolution and trims only until each band ends. Localized objects such as
 page clips do not count as a dark edge band.
-Visual comparison remains mandatory.
 
 ## Boundaries
 
@@ -78,7 +67,7 @@ Visual comparison remains mandatory.
   baselines. Leave the candidate in scratch and report `manual-review` when a
   single rotation cannot make the text horizontal.
 - Do not use this skill for the optional graphic front cover `p2`.
-- Do not commit analysis reports, comparisons or other scratch files.
+- Do not commit analysis reports or other scratch files.
 
 When changing or forward-testing this skill, read
 [references/evaluation-examples.md](references/evaluation-examples.md) for the

@@ -52,8 +52,9 @@ Titelbladet må ikke:
 
 ## Kvalitetskontrol
 
-Sammenlign altid kilden og kandidaten visuelt i samme størrelse. Et resultat
-kan kun godkendes automatisk, når alle disse forhold er opfyldt:
+Vis ikke en billedsammenligning til brugeren som godkendelsesled. Et resultat
+går automatisk videre, når analysen har status `candidate`, QA har status
+`pass`, og disse forhold er opfyldt:
 
 1. Det er den korrekte titelbladsside.
 2. De bærende tekstlinjer fremstår vandrette.
