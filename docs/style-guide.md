@@ -13,6 +13,8 @@ Læs den relevante specialdokumentation før ændringer på området:
 - `docs/xml-info-format.md` ved ændringer i `fdirs/<id>/info.xml`
 - `docs/xml-portraits-format.md` ved ændringer i `portraits.xml`,
   portrætreferencer eller kvadratiske portrætter
+- `docs/titelbladsbilleder.md` ved udtræk, opretning, beskæring eller
+  kvalitetskontrol af titelbladsbilleder
 - `docs/xml-work-format.md` ved ændringer i XML-værkfiler
 - `docs/xml-biographies-format.md` ved ændringer i `fdirs/<id>/bio.xml`
 - `docs/facsimile-korrektur.md` ved transskription og fuld korrektur af tekst,

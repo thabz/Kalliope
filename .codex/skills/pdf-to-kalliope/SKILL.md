@@ -43,6 +43,7 @@ Before changing files:
 2. Read `docs/style-guide.md`.
 3. Read at least:
    - `docs/xml-work-format.md`
+   - `docs/titelbladsbilleder.md`
    - `docs/facsimile-korrektur.md`
    - `docs/ocr-korrektur-laerebog.md`
    - `docs/kalliope-masterplan.md`
@@ -226,7 +227,7 @@ Use the poet/author ID and work ID used by the Kalliope XML.
 Extract the title page from the PDF page image and save it as a JPEG at:
 
 ```text
-public/<poet-id>/<work-id>-p1.jpg
+public/images/<poet-id>/<work-id>-p1.jpg
 ```
 
 The title page image is required for every imported work unless the source
@@ -235,12 +236,12 @@ genuinely contains no title page. In that exceptional case, add an explicit
 description.
 
 The JPEG must represent the printed title page itself. Do not generate it from
-the PDF's OCR layer.
-
-Preserve the visible page faithfully. Do not crop away printed information,
-ornament or borders. Scanner-bed margins may be removed only when this does not
-alter the printed page. Avoid unnecessary recompression, artificial sharpening
-or colour changes.
+the PDF's OCR layer. Use `$prepare-kalliope-titlepage` and follow
+`docs/titelbladsbilleder.md` to classify the source, straighten the text,
+remove scanner background, preserve the complete physical page and produce the
+QA report. Work on a scratch candidate and promote it to the final `p1` path
+only after the skill reports `pass`. A result marked `manual-review` must not
+overwrite an existing image.
 
 Reference the image from the work header using the current Kalliope image
 format. The established title-page type is `titlepage`; follow
@@ -267,7 +268,7 @@ When a genuine separate graphic front cover exists, extract it as a JPEG and
 save it at:
 
 ```text
-public/<poet-id>/<work-id>-p2.jpg
+public/images/<poet-id>/<work-id>-p2.jpg
 ```
 
 Preserve colour when the source is coloured.
@@ -1091,6 +1092,8 @@ Explicitly verify that:
 - the table of contents is excluded as a text
 - title-page metadata is complete
 - the title page has been saved as `p1`
+- title-page image QA passed according to `docs/titelbladsbilleder.md`, or an
+  unresolved exceptional source problem is explicitly documented
 - a genuine graphic front cover, when present, has been saved as `p2`
 - `p1` and `p2` have not been swapped to match PDF order
 
@@ -1139,6 +1142,7 @@ Also perform targeted checks for:
 - missing mandatory metadata
 - unsupported XML attributes
 - wrong image filenames or paths
+- missing or unsuccessful title-page QA
 - untracked generated files
 
 A candidate report identifies places to inspect; it does not authorize automatic
@@ -1216,6 +1220,7 @@ Report concisely:
 - number of poems
 - number and kinds of prose or paratext entries
 - title-page image created
+- title-page geometry and crop QA status
 - whether a graphic front cover was created
 - referenced persons resolved
 - translations and originals identified
@@ -1256,6 +1261,7 @@ The PR description must state concretely:
 - how fresh OCR and direct proofreading were performed
 - how verse structure and indentation were checked
 - which title-page and cover assets were added
+- how the title-page geometry and crop were checked
 - which persons, translations and originals were resolved
 - which validation and tests were run
 - any remaining `TODO:` notes
@@ -1304,9 +1310,11 @@ The task is complete only when all applicable items are true:
 - [ ] The title page was transcribed into the work header using readable
       capitalization rather than mechanical all-caps.
 - [ ] The title page was extracted as
-      `public/<poet-id>/<work-id>-p1.jpg`.
+      `public/images/<poet-id>/<work-id>-p1.jpg`.
+- [ ] The title-page source was classified, the page was processed with
+      `$prepare-kalliope-titlepage`, and its final QA status is `pass`.
 - [ ] A genuine separate graphic front cover, when present, was extracted as
-      `public/<poet-id>/<work-id>-p2.jpg`.
+      `public/images/<poet-id>/<work-id>-p2.jpg`.
 - [ ] `p1` is the title page and `p2` is the optional front cover regardless of
       their order in the PDF.
 - [ ] The XML references the correct image basenames and current image types.

@@ -1,0 +1,820 @@
+#!/usr/bin/env node
+
+import { execFile } from 'child_process';
+import crypto from 'crypto';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { promisify } from 'util';
+
+import sharp from 'sharp';
+
+const execFileAsync = promisify(execFile);
+const maxAnalysisDimension = 1200;
+const maximumRotation = 3;
+const coarseAngleStep = 0.1;
+const fineAngleStep = 0.02;
+const minimumOcrRecall = 0.75;
+
+const usage = () => {
+  console.error(`Brug:
+  titlepage.js analyze INPUT --out-dir DIR
+  titlepage.js render INPUT OUTPUT --angle GRADER --crop LEFT,TOP,WIDTH,HEIGHT
+  titlepage.js qa INPUT CANDIDATE --report REPORT.json --comparison COMPARE.jpg [--visual-pass] [--promote OUTPUT]`);
+};
+
+const sha256 = filename => {
+  return crypto.createHash('sha256').update(fs.readFileSync(filename)).digest('hex');
+};
+
+const parseOptions = args => {
+  const options = new Map();
+  const positionals = [];
+
+  for (let index = 0; index < args.length; index += 1) {
+    const arg = args[index];
+    if (arg.startsWith('--') === false) {
+      positionals.push(arg);
+      continue;
+    }
+
+    if (arg === '--visual-pass') {
+      options.set('visualPass', true);
+      continue;
+    }
+
+    const value = args[index + 1];
+    if (value == null || value.startsWith('--') === true) {
+      throw new Error(`Mangler værdi efter ${arg}.`);
+    }
+    options.set(arg.slice(2), value);
+    index += 1;
+  }
+
+  return { options, positionals };
+};
+
+const requiredOption = (options, name) => {
+  const value = options.get(name);
+  if (value == null) {
+    throw new Error(`Mangler --${name}.`);
+  }
+  return value;
+};
+
+const parseNumber = (value, label) => {
+  const parsed = Number(value);
+  if (Number.isFinite(parsed) === false) {
+    throw new Error(`${label} skal være et tal.`);
+  }
+  return parsed;
+};
+
+const parseCrop = value => {
+  const values = value.split(',').map((part, index) => {
+    return Math.round(parseNumber(part.trim(), `Crop-værdi ${index + 1}`));
+  });
+  if (values.length !== 4) {
+    throw new Error('--crop skal være LEFT,TOP,WIDTH,HEIGHT.');
+  }
+  const [left, top, width, height] = values;
+  if (left < 0 || top < 0 || width < 1 || height < 1) {
+    throw new Error('Crop-værdier skal have positiv bredde og højde.');
+  }
+  return { left, top, width, height };
+};
+
+const percentile = (values, fraction) => {
+  if (values.length === 0) {
+    return 0;
+  }
+  const sorted = [...values].sort((left, right) => left - right);
+  const index = Math.min(
+    sorted.length - 1,
+    Math.max(0, Math.round((sorted.length - 1) * fraction))
+  );
+  return sorted[index];
+};
+
+const median = values => percentile(values, 0.5);
+
+const luminance = (red, green, blue) => {
+  return Math.round(0.2126 * red + 0.7152 * green + 0.0722 * blue);
+};
+
+const orientedDimensions = metadata => {
+  const orientation = metadata.orientation ?? 1;
+  const swapsAxes = [5, 6, 7, 8].includes(orientation);
+  return {
+    width: swapsAxes ? metadata.height : metadata.width,
+    height: swapsAxes ? metadata.width : metadata.height,
+  };
+};
+
+const rotatedDimensions = (width, height, angle) => {
+  const radians = Math.abs(angle) * Math.PI / 180;
+  return {
+    width: Math.ceil(width * Math.cos(radians) + height * Math.sin(radians)),
+    height: Math.ceil(width * Math.sin(radians) + height * Math.cos(radians)),
+  };
+};
+
+const analysisPixels = async input => {
+  const metadata = await sharp(input).metadata();
+  if (metadata.width == null || metadata.height == null) {
+    throw new Error(`Kan ikke læse billedmål fra ${input}.`);
+  }
+
+  const { data, info } = await sharp(input)
+    .autoOrient()
+    .removeAlpha()
+    .resize({
+      width: maxAnalysisDimension,
+      height: maxAnalysisDimension,
+      fit: 'inside',
+      withoutEnlargement: true,
+    })
+    .raw()
+    .toBuffer({ resolveWithObject: true });
+
+  const gray = new Uint8Array(info.width * info.height);
+  const lightSamples = [];
+  for (let pixel = 0; pixel < gray.length; pixel += 1) {
+    const offset = pixel * info.channels;
+    const value = luminance(data[offset], data[offset + 1], data[offset + 2]);
+    gray[pixel] = value;
+    lightSamples.push(value);
+  }
+
+  const lightThreshold = percentile(lightSamples, 0.7);
+  const reds = [];
+  const greens = [];
+  const blues = [];
+  for (let pixel = 0; pixel < gray.length; pixel += 1) {
+    if (gray[pixel] < lightThreshold) {
+      continue;
+    }
+    const offset = pixel * info.channels;
+    reds.push(data[offset]);
+    greens.push(data[offset + 1]);
+    blues.push(data[offset + 2]);
+  }
+
+  return {
+    colorData: data,
+    gray,
+    height: info.height,
+    metadata,
+    paperColor: {
+      r: median(reds),
+      g: median(greens),
+      b: median(blues),
+    },
+    width: info.width,
+  };
+};
+
+const projectionScore = (points, width, height, angle) => {
+  const radians = angle * Math.PI / 180;
+  const sine = Math.sin(radians);
+  const cosine = Math.cos(radians);
+  const centerX = width / 2;
+  const centerY = height / 2;
+  const bins = new Uint32Array(Math.ceil(Math.hypot(width, height)) + 4);
+  const offset = bins.length / 2;
+
+  for (const [x, y] of points) {
+    const rotatedY = -(x - centerX) * sine + (y - centerY) * cosine;
+    const bin = Math.round(rotatedY + offset);
+    if (bin >= 0 && bin < bins.length) {
+      bins[bin] += 1;
+    }
+  }
+
+  let sumSquares = 0;
+  for (const count of bins) {
+    sumSquares += count * count;
+  }
+  return sumSquares / Math.max(1, points.length);
+};
+
+const angleRange = (from, to, step) => {
+  const values = [];
+  for (let angle = from; angle <= to + step / 2; angle += step) {
+    values.push(Number(angle.toFixed(4)));
+  }
+  return values;
+};
+
+const estimateRotation = ({ gray, height, width }, region = null) => {
+  const bounds = region ?? { left: 0, top: 0, width, height };
+  const insetX = Math.round(bounds.width * 0.06);
+  const insetY = Math.round(bounds.height * 0.06);
+  const fromX = Math.max(0, bounds.left + insetX);
+  const toX = Math.min(width, bounds.left + bounds.width - insetX);
+  const fromY = Math.max(0, bounds.top + insetY);
+  const toY = Math.min(height, bounds.top + bounds.height - insetY);
+  const interior = [];
+  for (let y = fromY; y < toY; y += 3) {
+    for (let x = fromX; x < toX; x += 3) {
+      interior.push(gray[y * width + x]);
+    }
+  }
+  const paper = percentile(interior, 0.7);
+  const inkThreshold = Math.max(25, paper - 45);
+  const points = [];
+  for (let y = fromY + 1; y < toY - 1; y += 1) {
+    for (let x = fromX; x < toX; x += 2) {
+      const value = gray[y * width + x];
+      const above = gray[(y - 1) * width + x];
+      const below = gray[(y + 1) * width + x];
+      const isHorizontalInkEdge =
+        value < inkThreshold &&
+        (above >= inkThreshold || below >= inkThreshold);
+      if (isHorizontalInkEdge) {
+        points.push([x, y]);
+      }
+    }
+  }
+
+  if (points.length < 120) {
+    return {
+      confidence: 0,
+      darkPointCount: points.length,
+      recommendedAngle: 0,
+      status: 'manual-review',
+    };
+  }
+
+  const coarse = angleRange(-maximumRotation, maximumRotation, coarseAngleStep)
+    .map(angle => ({ angle, score: projectionScore(points, width, height, angle) }));
+  coarse.sort((left, right) => right.score - left.score);
+  const coarseBest = coarse[0];
+  const fine = angleRange(
+    Math.max(-maximumRotation, coarseBest.angle - coarseAngleStep),
+    Math.min(maximumRotation, coarseBest.angle + coarseAngleStep),
+    fineAngleStep
+  ).map(angle => ({ angle, score: projectionScore(points, width, height, angle) }));
+  fine.sort((left, right) => right.score - left.score);
+  const best = fine[0];
+  const zeroScore = projectionScore(points, width, height, 0);
+  const medianScore = median(coarse.map(candidate => candidate.score));
+  const confidence = medianScore === 0 ? 0 : best.score / medianScore - 1;
+  const improvementOverZero = zeroScore === 0 ? 0 : best.score / zeroScore - 1;
+  const recommendedAngle =
+    Math.abs(best.angle) < 0.08 || improvementOverZero < 0.005
+      ? 0
+      : Number(best.angle.toFixed(2));
+
+  return {
+    candidates: coarse.slice(0, 5).map(candidate => ({
+      angle: candidate.angle,
+      score: Number(candidate.score.toFixed(4)),
+    })),
+    confidence: Number(confidence.toFixed(4)),
+    darkPointCount: points.length,
+    improvementOverZero: Number(improvementOverZero.toFixed(4)),
+    rawBestAngle: Number(best.angle.toFixed(2)),
+    recommendedAngle,
+    status: confidence >= 0.015 ? 'candidate' : 'manual-review',
+  };
+};
+
+const detectPageCrop = ({ data, height, width }) => {
+  const gray = new Uint8Array(width * height);
+  const centerValues = [];
+  for (let y = 0; y < height; y += 1) {
+    for (let x = 0; x < width; x += 1) {
+      const offset = (y * width + x) * 3;
+      const value = luminance(data[offset], data[offset + 1], data[offset + 2]);
+      gray[y * width + x] = value;
+      if (
+        x >= width * 0.2 && x <= width * 0.8 &&
+        y >= height * 0.2 && y <= height * 0.8
+      ) {
+        centerValues.push(value);
+      }
+    }
+  }
+
+  const paper = percentile(centerValues, 0.65);
+  const pageThreshold = Math.max(45, paper - 70);
+  const columnFractions = [];
+  const rowFractions = [];
+
+  for (let x = 0; x < width; x += 1) {
+    let count = 0;
+    for (let y = 0; y < height; y += 2) {
+      if (gray[y * width + x] > pageThreshold) {
+        count += 1;
+      }
+    }
+    columnFractions.push(count / Math.ceil(height / 2));
+  }
+  for (let y = 0; y < height; y += 1) {
+    let count = 0;
+    for (let x = 0; x < width; x += 2) {
+      if (gray[y * width + x] > pageThreshold) {
+        count += 1;
+      }
+    }
+    rowFractions.push(count / Math.ceil(width / 2));
+  }
+
+  const firstAbove = (values, threshold) => {
+    const index = values.findIndex(value => value >= threshold);
+    return index === -1 ? 0 : index;
+  };
+  const lastAbove = (values, threshold) => {
+    for (let index = values.length - 1; index >= 0; index -= 1) {
+      if (values[index] >= threshold) {
+        return index;
+      }
+    }
+    return values.length - 1;
+  };
+
+  const paddingX = Math.max(2, Math.round(width * 0.002));
+  const paddingY = Math.max(2, Math.round(height * 0.002));
+  const left = Math.max(0, firstAbove(columnFractions, 0.55) - paddingX);
+  const right = Math.min(width - 1, lastAbove(columnFractions, 0.55) + paddingX);
+  const top = Math.max(0, firstAbove(rowFractions, 0.55) - paddingY);
+  const bottom = Math.min(height - 1, lastAbove(rowFractions, 0.55) + paddingY);
+  const crop = {
+    left,
+    top,
+    width: right - left + 1,
+    height: bottom - top + 1,
+  };
+  const removedFraction = 1 - crop.width * crop.height / (width * height);
+  const edgeValues = [
+    ...gray.slice(0, width),
+    ...gray.slice((height - 1) * width),
+  ];
+  for (let y = 0; y < height; y += 1) {
+    edgeValues.push(gray[y * width], gray[y * width + width - 1]);
+  }
+  const contrast = Math.max(0, paper - median(edgeValues));
+  const confidence = Math.min(1, contrast / 90 + removedFraction);
+
+  return {
+    confidence: Number(confidence.toFixed(4)),
+    crop,
+    pageThreshold,
+    removedFraction: Number(removedFraction.toFixed(4)),
+  };
+};
+
+const createAnalysisPreview = async (input, output, angle, crop, paperColor) => {
+  const { data, info } = await sharp(input)
+    .autoOrient()
+    .resize({
+      width: maxAnalysisDimension,
+      height: maxAnalysisDimension,
+      fit: 'inside',
+      withoutEnlargement: true,
+    })
+    .rotate(angle, { background: paperColor })
+    .jpeg({ quality: 90 })
+    .toBuffer({ resolveWithObject: true });
+  const scaleX = info.width / crop.analysisWidth;
+  const scaleY = info.height / crop.analysisHeight;
+  const previewCrop = {
+    left: Math.round(crop.left * scaleX),
+    top: Math.round(crop.top * scaleY),
+    width: Math.round(crop.width * scaleX),
+    height: Math.round(crop.height * scaleY),
+  };
+  const guideLines = [0.2, 0.4, 0.6, 0.8]
+    .map(fraction => {
+      const y = Math.round(info.height * fraction);
+      return `<line x1="0" y1="${y}" x2="${info.width}" y2="${y}" stroke="#ff3344" stroke-width="2" opacity="0.65"/>`;
+    })
+    .join('');
+  const overlay = Buffer.from(`<svg width="${info.width}" height="${info.height}" xmlns="http://www.w3.org/2000/svg">
+    ${guideLines}
+    <rect x="${previewCrop.left}" y="${previewCrop.top}" width="${previewCrop.width}" height="${previewCrop.height}" fill="none" stroke="#00bcd4" stroke-width="5"/>
+  </svg>`);
+
+  await sharp(data)
+    .composite([{ input: overlay }])
+    .jpeg({ quality: 92 })
+    .toFile(output);
+};
+
+const analyzeTitlePage = async (input, outDir) => {
+  if (fs.existsSync(input) === false) {
+    throw new Error(`Input findes ikke: ${input}`);
+  }
+  fs.mkdirSync(outDir, { recursive: true });
+  const pixels = await analysisPixels(input);
+  const roughCrop = detectPageCrop({
+    data: pixels.colorData,
+    height: pixels.height,
+    width: pixels.width,
+  });
+  const rotation = estimateRotation(pixels, roughCrop.crop);
+  const rotated = await sharp(pixels.colorData, {
+    raw: { width: pixels.width, height: pixels.height, channels: 3 },
+  })
+    .rotate(rotation.recommendedAngle, { background: { r: 0, g: 0, b: 0 } })
+    .raw()
+    .toBuffer({ resolveWithObject: true });
+  const cropAnalysis = detectPageCrop({
+    data: rotated.data,
+    height: rotated.info.height,
+    width: rotated.info.width,
+  });
+  const sourceDimensions = orientedDimensions(pixels.metadata);
+  const fullRotated = rotatedDimensions(
+    sourceDimensions.width,
+    sourceDimensions.height,
+    rotation.recommendedAngle
+  );
+  const normalizedCrop = {
+    left: cropAnalysis.crop.left / rotated.info.width,
+    top: cropAnalysis.crop.top / rotated.info.height,
+    width: cropAnalysis.crop.width / rotated.info.width,
+    height: cropAnalysis.crop.height / rotated.info.height,
+  };
+  const recommendedCrop = {
+    left: Math.max(0, Math.round(normalizedCrop.left * fullRotated.width)),
+    top: Math.max(0, Math.round(normalizedCrop.top * fullRotated.height)),
+    width: Math.max(1, Math.round(normalizedCrop.width * fullRotated.width)),
+    height: Math.max(1, Math.round(normalizedCrop.height * fullRotated.height)),
+  };
+  recommendedCrop.width = Math.min(
+    recommendedCrop.width,
+    fullRotated.width - recommendedCrop.left
+  );
+  recommendedCrop.height = Math.min(
+    recommendedCrop.height,
+    fullRotated.height - recommendedCrop.top
+  );
+
+  const report = {
+    command: 'analyze',
+    source: path.resolve(input),
+    sourceSha256: sha256(input),
+    sourceDimensions,
+    paperColor: pixels.paperColor,
+    recommendedAngle: rotation.recommendedAngle,
+    angleConfidence: rotation.confidence,
+    angleCandidates: rotation.candidates ?? [],
+    angleImprovementOverZero: rotation.improvementOverZero ?? 0,
+    angleRawBest: rotation.rawBestAngle ?? 0,
+    angleStatus: rotation.status,
+    darkPointCount: rotation.darkPointCount,
+    recommendedCrop,
+    cropConfidence: cropAnalysis.confidence,
+    cropRemovedFraction: cropAnalysis.removedFraction,
+    status: rotation.status,
+    requiresSourceIdentityCheck: true,
+  };
+  const reportPath = path.join(outDir, 'analysis.json');
+  const previewPath = path.join(outDir, 'analysis-preview.jpg');
+  fs.writeFileSync(reportPath, `${JSON.stringify(report, null, 2)}\n`);
+  await createAnalysisPreview(
+    input,
+    previewPath,
+    rotation.recommendedAngle,
+    {
+      ...cropAnalysis.crop,
+      analysisHeight: rotated.info.height,
+      analysisWidth: rotated.info.width,
+    },
+    pixels.paperColor
+  );
+  return { previewPath, report, reportPath };
+};
+
+const validateCrop = (crop, width, height) => {
+  if (crop.left + crop.width > width || crop.top + crop.height > height) {
+    throw new Error(
+      `Crop ${crop.left},${crop.top},${crop.width},${crop.height} ligger uden for det roterede billede ${width}x${height}.`
+    );
+  }
+};
+
+const renderTitlePage = async (input, output, { angle, crop }) => {
+  if (path.resolve(input) === path.resolve(output)) {
+    throw new Error('Render skal skrive til en scratch-kandidat, ikke overskrive kilden.');
+  }
+  if (Math.abs(angle) > maximumRotation) {
+    throw new Error(
+      `Automatisk titelbladsbehandling er begrænset til ±${maximumRotation} grader.`
+    );
+  }
+  const pixels = await analysisPixels(input);
+  const sourceMetadata = pixels.metadata;
+  const oriented = await sharp(input)
+    .autoOrient()
+    .withMetadata()
+    .png()
+    .toBuffer();
+  const rotated = await sharp(oriented)
+    .rotate(angle, { background: pixels.paperColor })
+    .png()
+    .toBuffer({ resolveWithObject: true });
+  validateCrop(crop, rotated.info.width, rotated.info.height);
+  fs.mkdirSync(path.dirname(output), { recursive: true });
+  await sharp(rotated.data)
+    .extract(crop)
+    .withMetadata({ density: sourceMetadata.density ?? 300 })
+    .jpeg({ quality: 95, chromaSubsampling: '4:4:4', mozjpeg: true })
+    .toFile(output);
+  const outputMetadata = await sharp(output).metadata();
+  const transform = {
+    command: 'render',
+    source: path.resolve(input),
+    sourceSha256: sha256(input),
+    candidate: path.resolve(output),
+    candidateSha256: sha256(output),
+    angle,
+    crop,
+    sourceDimensions: orientedDimensions(sourceMetadata),
+    rotatedDimensions: {
+      width: rotated.info.width,
+      height: rotated.info.height,
+    },
+    outputDimensions: {
+      width: outputMetadata.width,
+      height: outputMetadata.height,
+    },
+    operations: ['autoOrient', 'rotate', 'crop'],
+    scaled: false,
+  };
+  const transformPath = `${output}.transform.json`;
+  fs.writeFileSync(transformPath, `${JSON.stringify(transform, null, 2)}\n`);
+  return { output, transform, transformPath };
+};
+
+const normalizedOcrTokens = text => {
+  return text
+    .normalize('NFC')
+    .toLocaleLowerCase('da-DK')
+    .replace(/[^\p{L}\p{N}\s]/gu, ' ')
+    .split(/\s+/u)
+    .filter(token => token.length >= 2);
+};
+
+const ocrTokens = async filename => {
+  try {
+    const cwd = path.dirname(path.resolve(filename));
+    const basename = path.basename(filename);
+    const { stdout } = await execFileAsync(
+      'tesseract',
+      [basename, 'stdout', '-l', 'dan+eng+frk', '--psm', '11'],
+      { cwd, encoding: 'utf8', maxBuffer: 10 * 1024 * 1024 }
+    );
+    return { available: true, tokens: normalizedOcrTokens(stdout) };
+  } catch (error) {
+    if (error.code === 'ENOENT') {
+      return { available: false, tokens: [] };
+    }
+    return { available: true, error: error.message, tokens: [] };
+  }
+};
+
+const tokenRecall = (sourceTokens, candidateTokens) => {
+  const candidateCounts = new Map();
+  for (const token of candidateTokens) {
+    candidateCounts.set(token, (candidateCounts.get(token) ?? 0) + 1);
+  }
+  let retained = 0;
+  for (const token of sourceTokens) {
+    const count = candidateCounts.get(token) ?? 0;
+    if (count > 0) {
+      retained += 1;
+      candidateCounts.set(token, count - 1);
+    }
+  }
+  return sourceTokens.length === 0 ? null : retained / sourceTokens.length;
+};
+
+const makeComparisonPanel = async (filename, label) => {
+  const width = 700;
+  const height = 900;
+  const image = await sharp(filename)
+    .autoOrient()
+    .resize({ width: 680, height: 840, fit: 'contain', background: '#ffffff' })
+    .flatten({ background: '#ffffff' })
+    .jpeg({ quality: 90 })
+    .toBuffer();
+  const labelSvg = Buffer.from(`<svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">
+    <rect width="${width}" height="48" fill="#ffffff"/>
+    <text x="18" y="32" font-family="sans-serif" font-size="24" fill="#111111">${label}</text>
+  </svg>`);
+  return sharp({
+    create: { width, height, channels: 3, background: '#ffffff' },
+  })
+    .composite([
+      { input: image, left: 10, top: 50 },
+      { input: labelSvg, left: 0, top: 0 },
+    ])
+    .jpeg({ quality: 92 })
+    .toBuffer();
+};
+
+const createComparison = async (source, candidate, output) => {
+  const [sourcePanel, candidatePanel] = await Promise.all([
+    makeComparisonPanel(source, 'Kilde'),
+    makeComparisonPanel(candidate, 'Kandidat'),
+  ]);
+  await sharp({
+    create: { width: 1400, height: 900, channels: 3, background: '#dddddd' },
+  })
+    .composite([
+      { input: sourcePanel, left: 0, top: 0 },
+      { input: candidatePanel, left: 700, top: 0 },
+    ])
+    .jpeg({ quality: 92 })
+    .toFile(output);
+};
+
+const loadTransform = (candidate, source) => {
+  const transformPath = `${candidate}.transform.json`;
+  if (fs.existsSync(transformPath) === false) {
+    return { path: transformPath, valid: false };
+  }
+  const transform = JSON.parse(fs.readFileSync(transformPath, 'utf8'));
+  const valid =
+    transform.sourceSha256 === sha256(source) &&
+    transform.candidateSha256 === sha256(candidate) &&
+    transform.scaled === false &&
+    Array.isArray(transform.operations) === true &&
+    transform.operations.join(',') === 'autoOrient,rotate,crop';
+  return { path: transformPath, transform, valid };
+};
+
+const promoteCandidate = (candidate, destination) => {
+  fs.mkdirSync(path.dirname(destination), { recursive: true });
+  const temporary = path.join(
+    path.dirname(destination),
+    `.${path.basename(destination)}.${process.pid}.tmp`
+  );
+  fs.copyFileSync(candidate, temporary);
+  fs.renameSync(temporary, destination);
+};
+
+const qaTitlePage = async (
+  source,
+  candidate,
+  { comparison, promote = null, report: reportPath, visualPass = false }
+) => {
+  if (fs.existsSync(source) === false || fs.existsSync(candidate) === false) {
+    throw new Error('Kilde og kandidat skal begge findes før QA.');
+  }
+  fs.mkdirSync(path.dirname(reportPath), { recursive: true });
+  fs.mkdirSync(path.dirname(comparison), { recursive: true });
+  const [sourceMetadata, candidateMetadata, sourceOcr, candidateOcr] =
+    await Promise.all([
+      sharp(source).metadata(),
+      sharp(candidate).metadata(),
+      ocrTokens(source),
+      ocrTokens(candidate),
+    ]);
+  const transform = loadTransform(candidate, source);
+  const sourceDimensions = orientedDimensions(sourceMetadata);
+  const candidateDimensions = orientedDimensions(candidateMetadata);
+  const areaRetention =
+    candidateDimensions.width * candidateDimensions.height /
+    (sourceDimensions.width * sourceDimensions.height);
+  const recall =
+    sourceOcr.available === true && candidateOcr.available === true
+      ? tokenRecall(sourceOcr.tokens, candidateOcr.tokens)
+      : null;
+  const ocrRequired = sourceOcr.tokens.length >= 10;
+  const recognitionImproved =
+    candidateOcr.tokens.length >= sourceOcr.tokens.length * 1.5 &&
+    recall != null &&
+    recall >= 0.5;
+  const ocrPassed =
+    ocrRequired === false ||
+    (recall != null && recall >= minimumOcrRecall) ||
+    recognitionImproved;
+  const checks = {
+    jpegOutput: candidateMetadata.format === 'jpeg',
+    deterministicTransform: transform.valid,
+    noUpscaling: transform.valid && transform.transform.scaled === false,
+    reasonablePageRetention: areaRetention >= 0.25,
+    ocrRetention: {
+      available: sourceOcr.available === true && candidateOcr.available === true,
+      candidateTokenCount: candidateOcr.tokens.length,
+      passed: ocrPassed,
+      recognitionImproved,
+      recall: recall == null ? null : Number(recall.toFixed(4)),
+      required: ocrRequired,
+      sourceTokenCount: sourceOcr.tokens.length,
+      threshold: minimumOcrRecall,
+    },
+    visualReview: visualPass,
+  };
+  const hardChecksPassed =
+    checks.jpegOutput === true &&
+    checks.deterministicTransform === true &&
+    checks.noUpscaling === true &&
+    checks.reasonablePageRetention === true &&
+    checks.ocrRetention.passed === true &&
+    checks.visualReview === true;
+  const status = hardChecksPassed ? 'pass' : 'manual-review';
+  const report = {
+    command: 'qa',
+    source: path.resolve(source),
+    sourceSha256: sha256(source),
+    candidate: path.resolve(candidate),
+    candidateSha256: sha256(candidate),
+    sourceDimensions,
+    candidateDimensions,
+    areaRetention: Number(areaRetention.toFixed(4)),
+    transform: transform.transform ?? null,
+    checks,
+    status,
+    promotedTo: null,
+  };
+  await createComparison(source, candidate, comparison);
+  if (promote != null) {
+    if (status !== 'pass') {
+      fs.writeFileSync(reportPath, `${JSON.stringify(report, null, 2)}\n`);
+      throw new Error('Kandidaten kan ikke promoveres, fordi QA kræver manuel vurdering.');
+    }
+    promoteCandidate(candidate, promote);
+    report.promotedTo = path.resolve(promote);
+    report.promotedSha256 = sha256(promote);
+  }
+  fs.writeFileSync(reportPath, `${JSON.stringify(report, null, 2)}\n`);
+  return report;
+};
+
+const runCli = async argv => {
+  const [command, ...args] = argv;
+  if (command == null) {
+    usage();
+    return 1;
+  }
+  const { options, positionals } = parseOptions(args);
+
+  if (command === 'analyze') {
+    if (positionals.length !== 1) {
+      usage();
+      return 1;
+    }
+    const result = await analyzeTitlePage(
+      positionals[0],
+      requiredOption(options, 'out-dir')
+    );
+    console.log(JSON.stringify(result.report, null, 2));
+    return result.report.status === 'candidate' ? 0 : 2;
+  }
+
+  if (command === 'render') {
+    if (positionals.length !== 2) {
+      usage();
+      return 1;
+    }
+    const result = await renderTitlePage(positionals[0], positionals[1], {
+      angle: parseNumber(requiredOption(options, 'angle'), '--angle'),
+      crop: parseCrop(requiredOption(options, 'crop')),
+    });
+    console.log(JSON.stringify(result.transform, null, 2));
+    return 0;
+  }
+
+  if (command === 'qa') {
+    if (positionals.length !== 2) {
+      usage();
+      return 1;
+    }
+    const result = await qaTitlePage(positionals[0], positionals[1], {
+      comparison: requiredOption(options, 'comparison'),
+      promote: options.get('promote') ?? null,
+      report: requiredOption(options, 'report'),
+      visualPass: options.get('visualPass') === true,
+    });
+    console.log(JSON.stringify(result, null, 2));
+    return result.status === 'pass' ? 0 : 2;
+  }
+
+  usage();
+  return 1;
+};
+
+if (fileURLToPath(import.meta.url) === process.argv[1]) {
+  runCli(process.argv.slice(2))
+    .then(exitCode => {
+      process.exitCode = exitCode;
+    })
+    .catch(error => {
+      console.error(error.message ?? error);
+      process.exitCode = 1;
+    });
+}
+
+export {
+  analyzeTitlePage,
+  detectPageCrop,
+  estimateRotation,
+  parseCrop,
+  qaTitlePage,
+  renderTitlePage,
+};
