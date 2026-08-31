@@ -48,7 +48,7 @@ Titelbladet må ikke:
   buet;
 - skarpnes, udglattes, støjreduceres eller farvekorrigeres;
 - retoucheres med Repair-, klonings- eller generative værktøjer;
-- rekonstrueres fra OCR eller på anden måde få nydannede bogstaver.
+- få rekonstrueret eller på anden måde nydannet tekst.
 
 ## Kvalitetskontrol
 
@@ -61,8 +61,8 @@ kan kun godkendes automatisk, når alle disse forhold er opfyldt:
 4. Hele bogsiden og dens naturlige marginer er bevaret.
 5. Ingen tekst, ornamentik eller trykt ramme er beskåret eller ændret.
 6. Farve, tone, slid og papirspor svarer til kilden.
-7. Outputtet er ikke opskaleret, og OCR-sammenligningen viser ikke et
-   uforklaret teksttab.
+7. Outputtet er ikke opskaleret, og højst 5% er beskåret fra hver enkelt kant
+   efter rotationen.
 
 Ved alvorlig perspektivforvrængning, buede tekstlinjer, utydelig papirkant,
 meget lidt genkendelig tekst eller tvivl om indholdstab er status

@@ -1,22 +1,18 @@
 #!/usr/bin/env node
 
-import { execFile } from 'child_process';
 import crypto from 'crypto';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { promisify } from 'util';
 
 import sharp from 'sharp';
 
-const execFileAsync = promisify(execFile);
 const maxAnalysisDimension = 1200;
 const maximumRotation = 3;
+const maximumCropPerEdge = 0.05;
+const cropSafetyInset = 0.005;
 const coarseAngleStep = 0.1;
 const fineAngleStep = 0.02;
-const minimumOcrRecall = 0.75;
-const minimumOcrAgreement = 0.75;
-const minimumOcrTokenRatio = 0.5;
 
 const usage = () => {
   console.error(`Brug:
@@ -453,6 +449,12 @@ const analyzeTitlePage = async (input, outDir) => {
     recommendedCrop.height,
     fullRotated.height - recommendedCrop.top
   );
+  const insetX = Math.round(fullRotated.width * cropSafetyInset);
+  const insetY = Math.round(fullRotated.height * cropSafetyInset);
+  recommendedCrop.left += insetX;
+  recommendedCrop.top += insetY;
+  recommendedCrop.width = Math.max(1, recommendedCrop.width - insetX * 2);
+  recommendedCrop.height = Math.max(1, recommendedCrop.height - insetY * 2);
 
   const report = {
     command: 'analyze',
@@ -551,83 +553,6 @@ const renderTitlePage = async (input, output, { angle, crop }) => {
   return { output, transform, transformPath };
 };
 
-const normalizedOcrTokens = text => {
-  return text
-    .normalize('NFC')
-    .toLocaleLowerCase('da-DK')
-    .replace(/[^\p{L}\p{N}\s]/gu, ' ')
-    .split(/\s+/u)
-    .filter(token => token.length >= 2);
-};
-
-const ocrTokens = async filename => {
-  try {
-    const cwd = path.dirname(path.resolve(filename));
-    const basename = path.basename(filename);
-    const { stdout } = await execFileAsync(
-      'tesseract',
-      [basename, 'stdout', '-l', 'dan+eng+frk', '--psm', '11'],
-      { cwd, encoding: 'utf8', maxBuffer: 10 * 1024 * 1024 }
-    );
-    return { available: true, tokens: normalizedOcrTokens(stdout) };
-  } catch (error) {
-    if (error.code === 'ENOENT') {
-      return { available: false, tokens: [] };
-    }
-    return { available: true, error: error.message, tokens: [] };
-  }
-};
-
-const tokenOverlap = (sourceTokens, candidateTokens) => {
-  const candidateCounts = new Map();
-  for (const token of candidateTokens) {
-    candidateCounts.set(token, (candidateCounts.get(token) ?? 0) + 1);
-  }
-  let retained = 0;
-  for (const token of sourceTokens) {
-    const count = candidateCounts.get(token) ?? 0;
-    if (count > 0) {
-      retained += 1;
-      candidateCounts.set(token, count - 1);
-    }
-  }
-  return retained;
-};
-
-const evaluateOcrRetention = (sourceTokens, candidateTokens) => {
-  const retained = tokenOverlap(sourceTokens, candidateTokens);
-  const recall = sourceTokens.length === 0 ? null : retained / sourceTokens.length;
-  const agreement =
-    candidateTokens.length === 0 ? null : retained / candidateTokens.length;
-  const tokenRatio =
-    sourceTokens.length === 0 ? null : candidateTokens.length / sourceTokens.length;
-  const required = sourceTokens.length >= 10;
-  const recognitionImproved =
-    candidateTokens.length >= sourceTokens.length * 1.5 &&
-    recall != null &&
-    recall >= 0.5;
-  const cleanupAgreement =
-    agreement != null &&
-    agreement >= minimumOcrAgreement &&
-    tokenRatio != null &&
-    tokenRatio >= minimumOcrTokenRatio;
-  const passed =
-    required === false ||
-    (recall != null && recall >= minimumOcrRecall) ||
-    recognitionImproved ||
-    cleanupAgreement;
-  return {
-    agreement,
-    cleanupAgreement,
-    passed,
-    recall,
-    recognitionImproved,
-    required,
-    retained,
-    tokenRatio,
-  };
-};
-
 const makeComparisonPanel = async (filename, label) => {
   const width = 700;
   const height = 900;
@@ -693,6 +618,29 @@ const promoteCandidate = (candidate, destination) => {
   fs.renameSync(temporary, destination);
 };
 
+const titlePageChecksPassed = checks => {
+  return (
+    checks.jpegOutput === true &&
+    checks.deterministicTransform === true &&
+    checks.noUpscaling === true &&
+    checks.conservativeCrop === true &&
+    checks.visualReview === true
+  );
+};
+
+const edgeCropFractions = transform => {
+  if (transform?.crop == null || transform.rotatedDimensions == null) {
+    return null;
+  }
+  const { crop, rotatedDimensions: dimensions } = transform;
+  return {
+    left: crop.left / dimensions.width,
+    right: (dimensions.width - crop.left - crop.width) / dimensions.width,
+    top: crop.top / dimensions.height,
+    bottom: (dimensions.height - crop.top - crop.height) / dimensions.height,
+  };
+};
+
 const qaTitlePage = async (
   source,
   candidate,
@@ -703,59 +651,40 @@ const qaTitlePage = async (
   }
   fs.mkdirSync(path.dirname(reportPath), { recursive: true });
   fs.mkdirSync(path.dirname(comparison), { recursive: true });
-  const [sourceMetadata, candidateMetadata, sourceOcr, candidateOcr] =
-    await Promise.all([
-      sharp(source).metadata(),
-      sharp(candidate).metadata(),
-      ocrTokens(source),
-      ocrTokens(candidate),
-    ]);
+  const [sourceMetadata, candidateMetadata] = await Promise.all([
+    sharp(source).metadata(),
+    sharp(candidate).metadata(),
+  ]);
   const transform = loadTransform(candidate, source);
   const sourceDimensions = orientedDimensions(sourceMetadata);
   const candidateDimensions = orientedDimensions(candidateMetadata);
   const areaRetention =
     candidateDimensions.width * candidateDimensions.height /
     (sourceDimensions.width * sourceDimensions.height);
-  const ocrRetention = evaluateOcrRetention(
-    sourceOcr.tokens,
-    candidateOcr.tokens
-  );
+  const cropFractions = edgeCropFractions(transform.transform);
+  const conservativeCrop =
+    cropFractions != null &&
+    Object.values(cropFractions).every(
+      fraction => fraction >= 0 && fraction <= maximumCropPerEdge
+    );
   const checks = {
+    conservativeCrop,
     jpegOutput: candidateMetadata.format === 'jpeg',
     deterministicTransform: transform.valid,
+    edgeCropFractions:
+      cropFractions == null
+        ? null
+        : Object.fromEntries(
+            Object.entries(cropFractions).map(([edge, fraction]) => [
+              edge,
+              Number(fraction.toFixed(4)),
+            ])
+          ),
+    maximumCropPerEdge,
     noUpscaling: transform.valid && transform.transform.scaled === false,
-    reasonablePageRetention: areaRetention >= 0.25,
-    ocrRetention: {
-      available: sourceOcr.available === true && candidateOcr.available === true,
-      agreement:
-        ocrRetention.agreement == null
-          ? null
-          : Number(ocrRetention.agreement.toFixed(4)),
-      candidateTokenCount: candidateOcr.tokens.length,
-      cleanupAgreement: ocrRetention.cleanupAgreement,
-      passed: ocrRetention.passed,
-      recognitionImproved: ocrRetention.recognitionImproved,
-      recall:
-        ocrRetention.recall == null
-          ? null
-          : Number(ocrRetention.recall.toFixed(4)),
-      required: ocrRetention.required,
-      sourceTokenCount: sourceOcr.tokens.length,
-      threshold: minimumOcrRecall,
-      tokenRatio:
-        ocrRetention.tokenRatio == null
-          ? null
-          : Number(ocrRetention.tokenRatio.toFixed(4)),
-    },
     visualReview: visualPass,
   };
-  const hardChecksPassed =
-    checks.jpegOutput === true &&
-    checks.deterministicTransform === true &&
-    checks.noUpscaling === true &&
-    checks.reasonablePageRetention === true &&
-    checks.ocrRetention.passed === true &&
-    checks.visualReview === true;
+  const hardChecksPassed = titlePageChecksPassed(checks);
   const status = hardChecksPassed ? 'pass' : 'manual-review';
   const report = {
     command: 'qa',
@@ -852,9 +781,10 @@ if (fileURLToPath(import.meta.url) === process.argv[1]) {
 export {
   analyzeTitlePage,
   detectPageCrop,
-  evaluateOcrRetention,
+  edgeCropFractions,
   estimateRotation,
   parseCrop,
   qaTitlePage,
   renderTitlePage,
+  titlePageChecksPassed,
 };

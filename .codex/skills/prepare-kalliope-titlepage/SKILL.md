@@ -58,6 +58,9 @@ Create a faithful `p1` image from the actual printed title page. Read
 `render` writes `<candidate>.transform.json`, which binds the source and
 candidate hashes to the exact geometry. `qa` writes a final status of `pass`
 or `manual-review`; promotion is refused unless the status is `pass`.
+QA rejects a crop that removes more than 5% from any single edge of the
+rotated canvas. The report lists left, right, top and bottom separately.
+Visual comparison remains mandatory.
 
 ## Boundaries
 

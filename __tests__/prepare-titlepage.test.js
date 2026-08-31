@@ -6,10 +6,10 @@ import sharp from 'sharp';
 
 import {
   analyzeTitlePage,
-  evaluateOcrRetention,
   parseCrop,
   qaTitlePage,
   renderTitlePage,
+  titlePageChecksPassed,
 } from '../.codex/skills/prepare-kalliope-titlepage/scripts/titlepage.js';
 
 describe('prepare Kalliope title page', () => {
@@ -90,7 +90,7 @@ describe('prepare Kalliope title page', () => {
     await createSource(source, 0);
     await renderTitlePage(source, candidate, {
       angle: 0,
-      crop: { left: 60, top: 60, width: 800, height: 1100 },
+      crop: { left: 45, top: 45, width: 830, height: 1130 },
     });
 
     const firstQa = await qaTitlePage(source, candidate, {
@@ -128,7 +128,8 @@ describe('prepare Kalliope title page', () => {
     });
 
     expect(qa.status).toBe('manual-review');
-    expect(qa.checks.reasonablePageRetention).toBe(false);
+    expect(qa.checks.conservativeCrop).toBe(false);
+    expect(qa.checks.edgeCropFractions.left).toBeGreaterThan(0.05);
   });
 
   it('rejects a candidate changed after deterministic rendering', async () => {
@@ -137,7 +138,7 @@ describe('prepare Kalliope title page', () => {
     await createSource(source, 0);
     await renderTitlePage(source, candidate, {
       angle: 0,
-      crop: { left: 60, top: 60, width: 800, height: 1100 },
+      crop: { left: 45, top: 45, width: 830, height: 1130 },
     });
     const changed = await sharp(candidate).modulate({ brightness: 1.02 }).toBuffer();
     fs.writeFileSync(candidate, changed);
@@ -164,35 +165,13 @@ describe('prepare Kalliope title page', () => {
     );
   });
 
-  it('accepts retained title text when removed scanner noise inflated source OCR', () => {
-    const sourceTokens = [
-      'erotiske', 'digte', 'rosenberg', 'københavn', 'boghandel',
-      'bogtrykkeri', '1896', 'scanner', 'kant', 'støj', 'plet', 'ramme',
-    ];
-    const candidateTokens = [
-      'erotiske', 'digte', 'rosenberg', 'københavn', 'boghandel',
-      'bogtrykkeri', '1896',
-    ];
-
-    const result = evaluateOcrRetention(sourceTokens, candidateTokens);
-
-    expect(result.recall).toBeLessThan(0.75);
-    expect(result.agreement).toBe(1);
-    expect(result.cleanupAgreement).toBe(true);
-    expect(result.passed).toBe(true);
-  });
-
-  it('rejects a small matching OCR fragment after an aggressive crop', () => {
-    const sourceTokens = [
-      'erotiske', 'digte', 'rosenberg', 'københavn', 'boghandel',
-      'bogtrykkeri', '1896', 'forlag', 'titelblad', 'ornament',
-    ];
-
-    const result = evaluateOcrRetention(sourceTokens, ['erotiske', 'digte']);
-
-    expect(result.agreement).toBe(1);
-    expect(result.tokenRatio).toBe(0.2);
-    expect(result.cleanupAgreement).toBe(false);
-    expect(result.passed).toBe(false);
+  it('accepts a crop within five percent of every edge', () => {
+    expect(titlePageChecksPassed({
+      conservativeCrop: true,
+      jpegOutput: true,
+      deterministicTransform: true,
+      noUpscaling: true,
+      visualReview: true,
+    })).toBe(true);
   });
 });
