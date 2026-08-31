@@ -1,30 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="1837" author="drejer" status="complete" type="poetry">
-  <workhead>
-    <title>Digte</title>
-    <year>1837</year>
-    <subtitle>Udgivne som Manuscript for Venner</subtitle>
-    <pagebreaks/>
-    <pictures>
-      <picture type="titlepage" src="1837-p1.jpg" primary="true">Titelbladet til <i>Digte</i> (1837) lyder „Digte af O. Chr. Drejer. Udgivne som Manuscript for Venner. Kjøbenhavn. Trykt hos Bianco Luno &amp; Schneider. 1837.“.</picture>
-      <picture type="frontpage" src="1837-p2.jpg">Det marmorerede foromslag til <i>Digte</i> (1837).</picture>
-    </pictures>
-    <source facsimile="115308052107_color" facsimile-pages-num="91" facsimile-pages-offset="7">O. Chr. Drejer: <i>Digte</i>, udgivne som Manuscript for Venner, trykt hos Bianco Luno &amp; Schneider, Kjøbenhavn, 1837.</source>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
-  </workhead>
-  <workbody>
-    <text id="drejer2026083101" skip-index="true">
-      <head>
-        <title>[Biographisk Skizze]</title>
-        <firstline>Have vi følt Interesse for en Persons Virken</firstline>
-        <notes>
-          <note>Den biografiske indledning er underskrevet S. Drejer, N. Levinsen og J. Ostermann.</note>
-        </notes>
-        <source pages="1-14"/>
-        <quality>korrektur1,korrektur2,kilde,side</quality>
-      </head>
-      <body>
-        <prose>
+<workhead>
+  <title>Digte</title>
+  <subtitle>Udgivne som Manuscript for Venner</subtitle>
+  <year>1837</year>
+  <pagebreaks/>
+  <pictures>
+    <picture type="titlepage" src="1837-p1.jpg">Titelbladet til <i>Digte</i> (1837) lyder „Digte af O. Chr. Drejer. Udgivne som Manuscript for Venner. Kjøbenhavn. Trykt hos Bianco Luno &amp; Schneider. 1837.“.</picture>
+    <picture type="frontpage" src="1837-p2.jpg">Det marmorerede foromslag til <i>Digte</i> (1837).</picture>
+  </pictures>
+  <source facsimile="115308052107_color" facsimile-pages-num="91" facsimile-pages-offset="7">O. Chr. Drejer: <i>Digte</i>, udgivne som Manuscript for Venner, trykt hos Bianco Luno &amp; Schneider, Kjøbenhavn, 1837.</source>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</workhead>
+<workbody>
+<text id="drejer2026083101" skip-index="true">
+<head>
+  <title>[Biographisk Skizze]</title>
+  <notes>
+    <note>Den biografiske indledning er underskrevet S. Drejer, N. Levinsen og J. Ostermann.</note>
+  </notes>
+  <source pages="1-14"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
 Have vi følt Interesse for en Persons Virken, da ønske vi og gjerne at kjende den eiendommelige Characteer, der var ligesom Kilden, hvoraf hiin Virken udsprang: i Værket vente vi os en Afglands af Alt, hvad Mesteren har levet og lidt. Udgiverne af denne Digtsamling have antaget dette, og vilde derfor, at en biographisk Skizze ledsagede Digtene. Rigtignok er det ei disses Bestemmelse at komme ud blandt et større Publicum: de skulle kun være en Mindeblomst, den Afdødes mange Venner opbevarede, men ogsaa for disse turde maaskee Skildringen af O. Chr. Drejers elskelige Personlighed ei være ukjærkommen, da den, der skriver disse Linier, har staaet i et nøiere Forhold til den Afdøde, end de fleste Andre, og saaledes havt særlig Leilighed til at kjende flere Træk, som Andre ei saa lige bemærkede. Men en saadan biographisk Skizze har ogsaa en anden Interesse: den opbevarer det Uforgængelige af den Person, hvis jordiske Dele alt ere smuldrede. Er Originalen borte, tale vi tit i
 
 <pb n="2" facs="008.jpg"/>stille Timer med de Omrids og Farver, der fængslede de aandelige Træk, og opbevarede disse gjennem synlige Former.
@@ -133,19 +132,20 @@ O.
 
 S. Drejer. N. Levinsen. J. Ostermann.
 </prose>
-      </body>
-    </text>
-    <text id="drejer2026083102">
-      <head>
-        <title>Den 4de August 1828</title>
-        <firstline>O Gud velsigne vor gamle Mo'r</firstline>
-        <dates>
-          <event>1828-08-04</event>
-        </dates>
-        <source pages="15-16"/>
-      </head>
-      <body>
-        <poetry>
+</body>
+</text>
+
+<text id="drejer2026083102">
+<head>
+  <title>Den 4de August 1828</title>
+  <firstline>O Gud velsigne vor gamle Mo'r</firstline>
+  <dates>
+    <event>1828-08-04</event>
+  </dates>
+  <source pages="15-16"/>
+</head>
+<body>
+<poetry>
 O Gud velsigne vor gamle Mo'r,
 Som gaaer i Eveldrup og tulrer!
 Hun sorger for os mens her vi gaaer,
@@ -190,19 +190,20 @@ Dem vil vi nok beholde kjønt i Ro!
 Ja, naar vi har dem begge To,
 Da er det moersomt at leve!
 </poetry>
-      </body>
-    </text>
-    <text id="drejer2026083103">
-      <head>
-        <title>Den 4de August 1831</title>
-        <firstline>Fra den vilde Støi og Strid og Larmen</firstline>
-        <dates>
-          <event>1831-08-04</event>
-        </dates>
-        <source pages="17-18"/>
-      </head>
-      <body>
-        <poetry>
+</body>
+</text>
+
+<text id="drejer2026083103">
+<head>
+  <title>Den 4de August 1831</title>
+  <firstline>Fra den vilde Støi og Strid og Larmen</firstline>
+  <dates>
+    <event>1831-08-04</event>
+  </dates>
+  <source pages="17-18"/>
+</head>
+<body>
+<poetry>
 Fra den vilde Støi og Strid og Larmen
 I det stadselige Kjøbsted-Buur,
 Søge vi den blide Fred ved Barmen
@@ -239,19 +240,20 @@ Og vor Hjerne end et Ord forstaaer,
 Skal vort Hjertes Slag og Hjernens Tanke
 Gjelde Eder, elskede Fa'r og Mo'r!
 </poetry>
-      </body>
-    </text>
-    <text id="drejer2026083104">
-      <head>
-        <title>Den 10de October 1831</title>
-        <firstline>Lille Mos, som bly Dig skjuler</firstline>
-        <dates>
-          <event>1831-10-10</event>
-        </dates>
-        <source pages="18-19"/>
-      </head>
-      <body>
-        <poetry>
+</body>
+</text>
+
+<text id="drejer2026083104">
+<head>
+  <title>Den 10de October 1831</title>
+  <firstline>Lille Mos, som bly Dig skjuler</firstline>
+  <dates>
+    <event>1831-10-10</event>
+  </dates>
+  <source pages="18-19"/>
+</head>
+<body>
+<poetry>
 Lille Mos, som bly Dig skjuler
 I min Hjemstavns Hede-Hav!
 Skjøndt den stolte Sjællandsfar Dig
@@ -284,20 +286,21 @@ Sjællandsfaren til Dig seer,
 Fremfor stoltest Blomme prange
 I min Mindehave her.
 </poetry>
-      </body>
-    </text>
-    <text id="drejer2026083105">
-      <head>
-        <title>Afskeden</title>
-        <subtitle>Til min Søster, ved min Afreise til Kjøbenhavn</subtitle>
-        <firstline>Saa har jeg da maattet Afsked tage</firstline>
-        <notes>
-          <note>Trykt med årstallet 1827.</note>
-        </notes>
-        <source pages="19-23"/>
-      </head>
-      <body>
-        <poetry>
+</body>
+</text>
+
+<text id="drejer2026083105">
+<head>
+  <title>Afskeden</title>
+  <subtitle>Til min Søster, ved min Afreise til Kjøbenhavn</subtitle>
+  <firstline>Saa har jeg da maattet Afsked tage</firstline>
+  <notes>
+    <note>Trykt med årstallet 1827.</note>
+  </notes>
+  <source pages="19-23"/>
+</head>
+<body>
+<poetry>
 Saa har jeg da maattet Afsked tage,
 Afsked for — Gud veed hvormange Aar!
 Afsked med de blide Barndomsdage,
@@ -388,19 +391,20 @@ Hvor jeg gaaer, blidt styrke skal min Sjæl!
 Timen slaaer! Farvel min Barndoms Glæder!
 Snart jeg skuer Axelstad! — Lev vel!
 </poetry>
-      </body>
-    </text>
-    <text id="drejer2026083106">
-      <head>
-        <title>Den 27de Juli 1829</title>
-        <firstline>Tillad, Moerlil! at din ældste Dreng</firstline>
-        <dates>
-          <event>1829-07-27</event>
-        </dates>
-        <source pages="23-24"/>
-      </head>
-      <body>
-        <poetry>
+</body>
+</text>
+
+<text id="drejer2026083106">
+<head>
+  <title>Den 27de Juli 1829</title>
+  <firstline>Tillad, Moerlil! at din ældste Dreng</firstline>
+  <dates>
+    <event>1829-07-27</event>
+  </dates>
+  <source pages="23-24"/>
+</head>
+<body>
+<poetry>
 Tillad, Moerlil! at din ældste Dreng
 Et Stykke stryger Dig paa Fiolen,
 Skjøndt, som Du veed, den kun har een Streng,
@@ -437,19 +441,20 @@ Til Livets Ende
 For Jordens ædleste, bedste Qvinde —
 — Vor Moders Skaal!
 </poetry>
-      </body>
-    </text>
-    <text id="drejer2026083107">
-      <head>
-        <title>Hjemvee</title>
-        <firstline>Underlige gamle Minder!</firstline>
-        <notes>
-          <note>Trykt med årstallet 1834.</note>
-        </notes>
-        <source pages="25-26"/>
-      </head>
-      <body>
-        <poetry>
+</body>
+</text>
+
+<text id="drejer2026083107">
+<head>
+  <title>Hjemvee</title>
+  <firstline>Underlige gamle Minder!</firstline>
+  <notes>
+    <note>Trykt med årstallet 1834.</note>
+  </notes>
+  <source pages="25-26"/>
+</head>
+<body>
+<poetry>
 Underlige gamle Minder!
 Hvorhen vinke I min Hu?
 Er det Barnets friske Kinder,
@@ -495,19 +500,20 @@ Da min Barndoms Eden svandt! —
 Mindet vender nu tilbage,
 Det er Aarsag i min Klage.
 </poetry>
-      </body>
-    </text>
-    <text id="drejer2026083108">
-      <head>
-        <title>Julehilsen til Hjemmet</title>
-        <firstline>Imens min Broder drømmer med Haanden under Kind</firstline>
-        <notes>
-          <note>Trykt med årstallet 1833.</note>
-        </notes>
-        <source pages="27-28"/>
-      </head>
-      <body>
-        <poetry>
+</body>
+</text>
+
+<text id="drejer2026083108">
+<head>
+  <title>Julehilsen til Hjemmet</title>
+  <firstline>Imens min Broder drømmer med Haanden under Kind</firstline>
+  <notes>
+    <note>Trykt med årstallet 1833.</note>
+  </notes>
+  <source pages="27-28"/>
+</head>
+<body>
+<poetry>
 Imens min Broder drømmer med Haanden under Kind,
 Jeg sidder hos de Døde og skjær i deres Skind;
 Imens hans Aand sig maler en Landsbypræsts Idyl,
@@ -533,19 +539,20 @@ Ei kan jeg Eder gjeste paa gode gamle Vis;
 Thi sender jeg min Hilsen, som jeg formaaer det bedst:
 Forældre! Søstre! Brødre! lyksalig Julefest!
 </poetry>
-      </body>
-    </text>
-    <text id="drejer2026083109">
-      <head>
-        <title>Den 27de Juli 1836</title>
-        <firstline>Krandset af lysgrønne, kjølige Skove</firstline>
-        <dates>
-          <event>1836-07-27</event>
-        </dates>
-        <source pages="28-29"/>
-      </head>
-      <body>
-        <poetry>
+</body>
+</text>
+
+<text id="drejer2026083109">
+<head>
+  <title>Den 27de Juli 1836</title>
+  <firstline>Krandset af lysgrønne, kjølige Skove</firstline>
+  <dates>
+    <event>1836-07-27</event>
+  </dates>
+  <source pages="28-29"/>
+</head>
+<body>
+<poetry>
 Krandset af lysgrønne, kjølige Skove,
 Blomstrende, frugtbart, idyllisk og roligt,
 Hviler det yndige Sjælland — fortroligt,
@@ -574,19 +581,20 @@ Himlens Velsignelser paa Dig nedbeder!
 Til Dine Elskedes Glæde og Lykke
 Længe Du endnu Din Præstegaard smykke!
 </poetry>
-      </body>
-    </text>
-    <text id="drejer2026083110">
-      <head>
-        <title>Sødskendenes Levnetsløb i kort Begreb</title>
-        <firstline>Til blodig Kamp Forrideren gik ud</firstline>
-        <notes>
-          <note>Trykt med årstallet 1829.</note>
-        </notes>
-        <source pages="29"/>
-      </head>
-      <body>
-        <poetry>
+</body>
+</text>
+
+<text id="drejer2026083110">
+<head>
+  <title>Sødskendenes Levnetsløb i kort Begreb</title>
+  <firstline>Til blodig Kamp Forrideren gik ud</firstline>
+  <notes>
+    <note>Trykt med årstallet 1829.</note>
+  </notes>
+  <source pages="29"/>
+</head>
+<body>
+<poetry>
 Til blodig Kamp Forrideren gik ud,
 Blev juris velfundert examinatus —
 Med Slid og Slæb blev Skoledrengen Stud —
@@ -596,20 +604,21 @@ Med Bogen end ad steile Skoletrappe;
 Og Jette og Marie -- Hm?!
 Ihnu! de — hines Klæder lappe!
 </poetry>
-      </body>
-    </text>
-    <text id="drejer2026083111">
-      <head>
-        <title>Den danske Jurist</title>
-        <subtitle>Af Vaudevillen: den gamle Mand og hans Søn</subtitle>
-        <firstline>Til blodig Kamp Forrideren gaaer ud</firstline>
-        <notes>
-          <note>Trykt med årstallet 1828.</note>
-        </notes>
-        <source pages="30-31"/>
-      </head>
-      <body>
-        <poetry>
+</body>
+</text>
+
+<text id="drejer2026083111">
+<head>
+  <title>Den danske Jurist</title>
+  <subtitle>Af Vaudevillen: den gamle Mand og hans Søn</subtitle>
+  <firstline>Til blodig Kamp Forrideren gaaer ud</firstline>
+  <notes>
+    <note>Trykt med årstallet 1828.</note>
+  </notes>
+  <source pages="30-31"/>
+</head>
+<body>
+<poetry>
 Til blodig Kamp Forrideren gaaer ud,
 For hæderlige Kudske-Rang at krige;
 Dog først han maa, saa lyder Kongens Bud,
@@ -637,20 +646,21 @@ Han som „Beqvem“ fra Studigaarden iler;
 Strax lader han til Jylland staae,
 Og ved sin Piges Barm han hviler.
 </poetry>
-      </body>
-    </text>
-    <text id="drejer2026083112">
-      <head>
-        <title>Et Par Ord til Ikke-Eveldrupensere</title>
-        <subtitle>Indledning til Vaudevillen: Logikkens Magt</subtitle>
-        <firstline>For dem, som til Eveldrups ei han regner —</firstline>
-        <notes>
-          <note>Trykt med årstallet 1830.</note>
-        </notes>
-        <source pages="31-34"/>
-      </head>
-      <body>
-        <poetry>
+</body>
+</text>
+
+<text id="drejer2026083112">
+<head>
+  <title>Et Par Ord til Ikke-Eveldrupensere</title>
+  <subtitle>Indledning til Vaudevillen: Logikkens Magt</subtitle>
+  <firstline>For dem, som til Eveldrups ei han regner —</firstline>
+  <notes>
+    <note>Trykt med årstallet 1830.</note>
+  </notes>
+  <source pages="31-34"/>
+</head>
+<body>
+<poetry>
 For dem, som til Eveldrups ei han regner —
 <span lang="la">Id est:</span> for dem, der ei Præst eller Degn er,
 Eller Præstekone, eller Degnekone,
@@ -735,20 +745,21 @@ Blot nogenlunde for Autor lykk'des,
 Han — naar han atter gjør Musen Hof —
 Maaskee da vælger et bedre Stof.
 </poetry>
-      </body>
-    </text>
-    <text id="drejer2026083113">
-      <head>
-        <title>Ansøgning</title>
-        <subtitle>Efter Matthison</subtitle>
-        <firstline>Een Gang jeg ønskte, før i Exameners</firstline>
-        <notes>
-          <note>Trykt med årstallet 1831.</note>
-        </notes>
-        <source pages="35-36"/>
-      </head>
-      <body>
-        <poetry>
+</body>
+</text>
+
+<text id="drejer2026083113">
+<head>
+  <title>Ansøgning</title>
+  <subtitle>Efter Matthison</subtitle>
+  <firstline>Een Gang jeg ønskte, før i Exameners</firstline>
+  <notes>
+    <note>Trykt med årstallet 1831.</note>
+  </notes>
+  <source pages="35-36"/>
+</head>
+<body>
+<poetry>
 Een Gang jeg ønskte, før i Exameners
 Skyggeland frydløs Manden begraver sig,
 Den Plet at gjensee, hvor min Barndoms
@@ -779,19 +790,20 @@ Vinke til Prøvens Alvor! jeg iler fro
 Til Callisens og Dødes Viisdom —
 Ja, selv til F—s Practik og Haandgreb!
 </poetry>
-      </body>
-    </text>
-    <text id="drejer2026083114">
-      <head>
-        <title>Den 19de Januar 1831</title>
-        <firstline>Paa vidtstrakte Flade de Lyngtoppe groer</firstline>
-        <dates>
-          <event>1831-01-19</event>
-        </dates>
-        <source pages="36-38"/>
-      </head>
-      <body>
-        <poetry>
+</body>
+</text>
+
+<text id="drejer2026083114">
+<head>
+  <title>Den 19de Januar 1831</title>
+  <firstline>Paa vidtstrakte Flade de Lyngtoppe groer</firstline>
+  <dates>
+    <event>1831-01-19</event>
+  </dates>
+  <source pages="36-38"/>
+</head>
+<body>
+<poetry>
 Paa vidtstrakte Flade de Lyngtoppe groer,
 Paa Bækken de Vandænder svømme:
 Der vanked en Smaadreng og vogtede Faar,
@@ -848,19 +860,20 @@ For Dig vil et Bæger vi tømme!
 Ja! før skal vort Hjerte ophøre at slaae,
 Før Du Randershuser af Minde skal gaae.
 </poetry>
-      </body>
-    </text>
-    <text id="drejer2026083115">
-      <head>
-        <title>Nytaarsaften 1831</title>
-        <firstline>Med sin Bylt af Jordens Fryd og Plage</firstline>
-        <dates>
-          <event>1831-12-31</event>
-        </dates>
-        <source pages="38-39"/>
-      </head>
-      <body>
-        <poetry>
+</body>
+</text>
+
+<text id="drejer2026083115">
+<head>
+  <title>Nytaarsaften 1831</title>
+  <firstline>Med sin Bylt af Jordens Fryd og Plage</firstline>
+  <dates>
+    <event>1831-12-31</event>
+  </dates>
+  <source pages="38-39"/>
+</head>
+<body>
+<poetry>
 Med sin Bylt af Jordens Fryd og Plage,
 Træt og mødig alt ved Oldingsstav,
 Vender Aaret snart igjen tilbage
@@ -888,19 +901,20 @@ Skuende mod Fremtids dunkle Krands,
 Vinke vi Farvel det Aar som daler,
 Hilse fro det unges Morgenglands!
 </poetry>
-      </body>
-    </text>
-    <text id="drejer2026083116">
-      <head>
-        <title>Litteræ pro verbis</title>
-        <firstline>Ved vor Forsamling sidst i Storestræde</firstline>
-        <notes>
-          <note>Trykt med årstallet 1832.</note>
-        </notes>
-        <source pages="39-42"/>
-      </head>
-      <body>
-        <poetry>
+</body>
+</text>
+
+<text id="drejer2026083116">
+<head>
+  <title>Litteræ pro verbis</title>
+  <firstline>Ved vor Forsamling sidst i Storestræde</firstline>
+  <notes>
+    <note>Trykt med årstallet 1832.</note>
+  </notes>
+  <source pages="39-42"/>
+</head>
+<body>
+<poetry>
 Ved vor Forsamling sidst i Storestræde
 En Strid i et, os Begge „fremmed“ Fag;<footnote>*) Theologien.</footnote>
 Udspandt sig mellem os ved Talens Hede —
@@ -981,19 +995,20 @@ At os kun Ordet skilte, ikke Aanden;
 See, derfor byder jeg Dig Fredens Qvist,
 Og rækker her som Ven Dig atter Haanden!
 </poetry>
-      </body>
-    </text>
-    <text id="drejer2026083117">
-      <head>
-        <title>Doctorens Tak til Patienten</title>
-        <firstline>Der gives et Slags Folk, som gaaer</firstline>
-        <notes>
-          <note>Trykt med årstallet 1832.</note>
-        </notes>
-        <source pages="43-46"/>
-      </head>
-      <body>
-        <poetry>
+</body>
+</text>
+
+<text id="drejer2026083117">
+<head>
+  <title>Doctorens Tak til Patienten</title>
+  <firstline>Der gives et Slags Folk, som gaaer</firstline>
+  <notes>
+    <note>Trykt med årstallet 1832.</note>
+  </notes>
+  <source pages="43-46"/>
+</head>
+<body>
+<poetry>
 Der gives et Slags Folk, som gaaer
 Og lapper andre Folks Skavanker,
 Og, skjøndt de grumme Lidt forstaaer,
@@ -1084,20 +1099,21 @@ Paa min husvalte Mosters Vegne!
 Og ligerviis, paa mine egne,
 Ei disse Rimerier vrag!
 </poetry>
-      </body>
-    </text>
-    <text id="drejer2026083118">
-      <head>
-        <title>Impromptu</title>
-        <subtitle>Til L.</subtitle>
-        <firstline>Min hjerte Collega i Plasterbesmørelsen</firstline>
-        <notes>
-          <note>Trykt med årstallet 1832.</note>
-        </notes>
-        <source pages="46-48"/>
-      </head>
-      <body>
-        <poetry>
+</body>
+</text>
+
+<text id="drejer2026083118">
+<head>
+  <title>Impromptu</title>
+  <subtitle>Til L.</subtitle>
+  <firstline>Min hjerte Collega i Plasterbesmørelsen</firstline>
+  <notes>
+    <note>Trykt med årstallet 1832.</note>
+  </notes>
+  <source pages="46-48"/>
+</head>
+<body>
+<poetry>
 Min hjerte Collega i Plasterbesmørelsen,
 I Kjødfleskeri, Expulsivbindomsnørelsen,
 I <span lang="la">ani illustratio</span> efter Afførelsen,
@@ -1135,23 +1151,24 @@ At ikke han give mig skal en Notering.
 Ifald Du mig glæder ved Bønnens Opfyldelse
 Jeg stedse forbliver, med Gjentjenestes Skyldelse,
 </poetry>
-      </body>
-    </text>
-    <text id="drejer2026083119">
-      <head>
-        <title>Lysestøber-Vise Nr. 1</title>
-        <firstline>„Bliv Lys!“ saa raabte Jehovah —</firstline>
-        <notes>
-          <note>Trykt med årstallet 1836.</note>
-        </notes>
-        <source pages="48-49"/>
-      </head>
-      <body>
-        <quote>
+</body>
+</text>
+
+<text id="drejer2026083119">
+<head>
+  <title>Lysestøber-Vise Nr. 1</title>
+  <firstline>„Bliv Lys!“ saa raabte Jehovah —</firstline>
+  <notes>
+    <note>Trykt med årstallet 1836.</note>
+  </notes>
+  <source pages="48-49"/>
+</head>
+<body>
+<quote>
 Peer Degn er meget lærd, kan gode Voxlys støbe.
 <right>Holberg.</right>
-        </quote>
-        <poetry>
+</quote>
+<poetry>
 „Bliv Lys!“ saa raabte Jehovah —
 Og Verden stod, complet og yndig;
 Og Fader Adam blev Papa,
@@ -1188,19 +1205,20 @@ Ei blot „kan gode Voxlys støbe,“
 Men og — sin Præst og Degn til Trøst —
 Snart lade — „Børn døbe!“
 </poetry>
-      </body>
-    </text>
-    <text id="drejer2026083120">
-      <head>
-        <title>Lysestøber-Vise Nr. 2</title>
-        <firstline>Der boer en Lysestøber</firstline>
-        <notes>
-          <note>Trykt med årstallet 1836.</note>
-        </notes>
-        <source pages="50-52"/>
-      </head>
-      <body>
-        <poetry>
+</body>
+</text>
+
+<text id="drejer2026083120">
+<head>
+  <title>Lysestøber-Vise Nr. 2</title>
+  <firstline>Der boer en Lysestøber</firstline>
+  <notes>
+    <note>Trykt med årstallet 1836.</note>
+  </notes>
+  <source pages="50-52"/>
+</head>
+<body>
+<poetry>
 Der boer en Lysestøber
 Ei langt fra Hjorteholm;
 Hvor man hans Bøger kjøber,
@@ -1256,25 +1274,26 @@ Min Vise vover ikke;
 Thi vies denne Gang
 Kun Støberen min Sang!
 </poetry>
-      </body>
-    </text>
-    <text id="drejer2026083121">
-      <head>
-        <title>Æresqvad om den Tykke</title>
-        <subtitle>I Anledning af den absolverede philologicum</subtitle>
-        <firstline>Komme, hvo som komme kan —</firstline>
-        <notes>
-          <note>Trykt med årstallet 1830.</note>
-        </notes>
-        <source pages="52-54"/>
-      </head>
-      <body>
-        <quote>
+</body>
+</text>
+
+<text id="drejer2026083121">
+<head>
+  <title>Æresqvad om den Tykke</title>
+  <subtitle>I Anledning af den absolverede philologicum</subtitle>
+  <firstline>Komme, hvo som komme kan —</firstline>
+  <notes>
+    <note>Trykt med årstallet 1830.</note>
+  </notes>
+  <source pages="52-54"/>
+</head>
+<body>
+<quote>
 Stem op, o Calliope! og syng til Phøbus’s
 Citrinke en evig Sang!
 <right>Horats og Baden.</right>
-        </quote>
-        <poetry>
+</quote>
+<poetry>
 Komme, hvo som komme kan —
 Hvad jeg sige vilde:
 Kommer, alle I, som Man
@@ -1339,20 +1358,21 @@ Jeg har meent, at nok den gled,
 Naar med Punsch den skyldtes ned —
 Drik dog, mine Herrer!
 </poetry>
-      </body>
-    </text>
-    <text id="drejer2026083122">
-      <head>
-        <title>Til Jomfru H. J.</title>
-        <subtitle>Med en endnu ikke udsprungen Heliotrop</subtitle>
-        <firstline>Fra sydlige Varme til Kulden i Norden</firstline>
-        <notes>
-          <note>Trykt med årstallet 1831.</note>
-        </notes>
-        <source pages="55"/>
-      </head>
-      <body>
-        <poetry>
+</body>
+</text>
+
+<text id="drejer2026083122">
+<head>
+  <title>Til Jomfru H. J.</title>
+  <subtitle>Med en endnu ikke udsprungen Heliotrop</subtitle>
+  <firstline>Fra sydlige Varme til Kulden i Norden</firstline>
+  <notes>
+    <note>Trykt med årstallet 1831.</note>
+  </notes>
+  <source pages="55"/>
+</head>
+<body>
+<poetry>
 Fra sydlige Varme til Kulden i Norden
 Omplantet, ak! er min Familie vorden;
 Men barsk er for mig hvad Man her kalder Vaar,
@@ -1363,20 +1383,21 @@ At udfolde trygt i dens Straaler min Flor.
 Ei spreder jeg nogetsteds heller paa Jorden
 Dens Vellugt — hvis, Hulde! blot ei De forsmaaer den!
 </poetry>
-      </body>
-    </text>
-    <text id="drejer2026083123">
-      <head>
-        <title>Til Julie L.</title>
-        <subtitle>Paa hendes 2den Fødselsdag</subtitle>
-        <firstline>Lille, barnlige Veninde!</firstline>
-        <notes>
-          <note>Trykt med årstallet 1836.</note>
-        </notes>
-        <source pages="55-58"/>
-      </head>
-      <body>
-        <poetry>
+</body>
+</text>
+
+<text id="drejer2026083123">
+<head>
+  <title>Til Julie L.</title>
+  <subtitle>Paa hendes 2den Fødselsdag</subtitle>
+  <firstline>Lille, barnlige Veninde!</firstline>
+  <notes>
+    <note>Trykt med årstallet 1836.</note>
+  </notes>
+  <source pages="55-58"/>
+</head>
+<body>
+<poetry>
 Lille, barnlige Veninde!
 Sødt, med Uskylds Smiil, og Kalden
 Under sorgløs, munter Lallen,
@@ -1443,20 +1464,21 @@ Vil til Graven, som den Gamle
 Gjemmer, nogle Blomster samle,
 Glæder hisset sig hans Aand!
 </poetry>
-      </body>
-    </text>
-    <text id="drejer2026083124">
-      <head>
-        <title>Til Mad. L.</title>
-        <subtitle>Paa hendes Bryllupsdag og hendes Mands Fødselsdag</subtitle>
-        <firstline>I Blidheds, Yndes, Uskylds hulde Smykke</firstline>
-        <notes>
-          <note>Trykt med årstallet 1835.</note>
-        </notes>
-        <source pages="58-60"/>
-      </head>
-      <body>
-        <poetry>
+</body>
+</text>
+
+<text id="drejer2026083124">
+<head>
+  <title>Til Mad. L.</title>
+  <subtitle>Paa hendes Bryllupsdag og hendes Mands Fødselsdag</subtitle>
+  <firstline>I Blidheds, Yndes, Uskylds hulde Smykke</firstline>
+  <notes>
+    <note>Trykt med årstallet 1835.</note>
+  </notes>
+  <source pages="58-60"/>
+</head>
+<body>
+<poetry>
 I Blidheds, Yndes, Uskylds hulde Smykke,
 Af hine stille Dyder mildt omgivet,
 Hvis Glorie lyser om den ædle Qvinde,
@@ -1508,19 +1530,20 @@ Den hulde, qvindelige Ynde —
 De, min elskværdige Veninde!
 Paa Deres Festdag ei forsmaae!
 </poetry>
-      </body>
-    </text>
-    <text id="drejer2026083125">
-      <head>
-        <title>Før og Nu</title>
-        <firstline>Før, da uskyldig jeg var, lyksalig og munter og opreemt</firstline>
-        <notes>
-          <note>Trykt med årstallet 1827.</note>
-        </notes>
-        <source pages="60"/>
-      </head>
-      <body>
-        <poetry>
+</body>
+</text>
+
+<text id="drejer2026083125">
+<head>
+  <title>Før og Nu</title>
+  <firstline>Før, da uskyldig jeg var, lyksalig og munter og opreemt</firstline>
+  <notes>
+    <note>Trykt med årstallet 1827.</note>
+  </notes>
+  <source pages="60"/>
+</head>
+<body>
+<poetry>
 Før, da uskyldig jeg var, lyksalig og munter og opreemt,
 Harpen jeg stemte kun til Veemod og Tungsind og Sorg;
 Nu, da jeg brødefuld er, forstemt, mørk, nedsænkt i Kummer,
@@ -1530,19 +1553,20 @@ O, at mig trylled paany Veemodens himmelske Lyst!
 Gjerne bortslængte jeg da min krampagtig-gladstemte Lyra —
 Ægte Glæde jo er stille, vaadøiet og taus.
 </poetry>
-      </body>
-    </text>
-    <text id="drejer2026083126">
-      <head>
-        <title>Til hendes Krands</title>
-        <firstline>Lille Krands, som hendes Hænder</firstline>
-        <notes>
-          <note>Trykt med årstallet 1831.</note>
-        </notes>
-        <source pages="61"/>
-      </head>
-      <body>
-        <poetry>
+</body>
+</text>
+
+<text id="drejer2026083126">
+<head>
+  <title>Til hendes Krands</title>
+  <firstline>Lille Krands, som hendes Hænder</firstline>
+  <notes>
+    <note>Trykt med årstallet 1831.</note>
+  </notes>
+  <source pages="61"/>
+</head>
+<body>
+<poetry>
 Lille Krands, som hendes Hænder
 Bandt af Evighedens Blomst!
 Lover mig Din lyse Friskhed
@@ -1564,19 +1588,20 @@ Om et Land erindre, hvor
 Blomsten atter grønnes huldt, som
 Visned paa den kolde Jord!
 </poetry>
-      </body>
-    </text>
-    <text id="drejer2026083127">
-      <head>
-        <title>Den 15de November 1836</title>
-        <firstline>Hvor saare lidet hør der til</firstline>
-        <dates>
-          <event>1836-11-15</event>
-        </dates>
-        <source pages="62-63"/>
-      </head>
-      <body>
-        <poetry>
+</body>
+</text>
+
+<text id="drejer2026083127">
+<head>
+  <title>Den 15de November 1836</title>
+  <firstline>Hvor saare lidet hør der til</firstline>
+  <dates>
+    <event>1836-11-15</event>
+  </dates>
+  <source pages="62-63"/>
+</head>
+<body>
+<poetry>
 Hvor saare lidet hør der til
 For lykkelig at være!
 En grundet Fjord foruden Sild,
@@ -1631,19 +1656,20 @@ Gaae barnlig Omheds Bønner frem —
 Og Venner stemme i med dem:
 Høit Jubel-Parret leve!
 </poetry>
-      </body>
-    </text>
-    <text id="drejer2026083128">
-      <head>
-        <title>Balvise</title>
-        <firstline>Her, hvor vor Barndoms lyksalige Dage</firstline>
-        <notes>
-          <note>Trykt med årstallet 1830.</note>
-        </notes>
-        <source pages="64-65"/>
-      </head>
-      <body>
-        <poetry>
+</body>
+</text>
+
+<text id="drejer2026083128">
+<head>
+  <title>Balvise</title>
+  <firstline>Her, hvor vor Barndoms lyksalige Dage</firstline>
+  <notes>
+    <note>Trykt med årstallet 1830.</note>
+  </notes>
+  <source pages="64-65"/>
+</head>
+<body>
+<poetry>
 Her, hvor vor Barndoms lyksalige Dage
 Svunde blandt Leg og blandt Læsning saa fage,
 Samles vi atter som Ynglinge nu:
@@ -1679,20 +1705,21 @@ Fylder da, Brødre! til Randen Pocalen
 Og lad det gjenlyde høit gjennem Salen:
 Skaal for det hulde, livsalige Kjøn!
 </poetry>
-      </body>
-    </text>
-    <text id="drejer2026083129">
-      <head>
-        <title>Professor Bangs Skaal</title>
-        <subtitle>den 1ste Juli 1833</subtitle>
-        <firstline>Regentssangen toner bag Muren saa tyst</firstline>
-        <dates>
-          <event>1833-07-01</event>
-        </dates>
-        <source pages="65-67"/>
-      </head>
-      <body>
-        <poetry>
+</body>
+</text>
+
+<text id="drejer2026083129">
+<head>
+  <title>Professor Bangs Skaal</title>
+  <subtitle>den 1ste Juli 1833</subtitle>
+  <firstline>Regentssangen toner bag Muren saa tyst</firstline>
+  <dates>
+    <event>1833-07-01</event>
+  </dates>
+  <source pages="65-67"/>
+</head>
+<body>
+<poetry>
 Regentssangen toner bag Muren saa tyst
 I Ly af de duftende Linde.
 Om Alt, hvad der rører og tryller vort Bryst,
@@ -1742,19 +1769,20 @@ Ei glemmes den Gjæve herinde :
 Thi tredobbelt Hurra ved Glassenes Klang
 For Lægen, Studenten og Digteren Bang!
 </poetry>
-      </body>
-    </text>
-    <text id="drejer2026083130">
-      <head>
-        <title>Til Regentsprovsten</title>
-        <firstline>Studenten gjør ei mange Ord</firstline>
-        <notes>
-          <note>Trykt med årstallet 1832.</note>
-        </notes>
-        <source pages="67-69"/>
-      </head>
-      <body>
-        <poetry>
+</body>
+</text>
+
+<text id="drejer2026083130">
+<head>
+  <title>Til Regentsprovsten</title>
+  <firstline>Studenten gjør ei mange Ord</firstline>
+  <notes>
+    <note>Trykt med årstallet 1832.</note>
+  </notes>
+  <source pages="67-69"/>
+</head>
+<body>
+<poetry>
 Studenten gjør ei mange Ord,
 Ei hykle kan og prale;
 Hans jevne Sind sig lidt forstaaer
@@ -1818,19 +1846,20 @@ Saalidt, som Havets Sønner:
 Et Vivat, som fra Hjertet gaaer,
 Dig tolke Hjertets Bønner.
 </poetry>
-      </body>
-    </text>
-    <text id="drejer2026083131">
-      <head>
-        <title>Forord til Regentsens Visebog</title>
-        <firstline>Naar Vinteren breder sit Taage-Flor</firstline>
-        <notes>
-          <note>Trykt med årstallet 1833.</note>
-        </notes>
-        <source pages="70-72"/>
-      </head>
-      <body>
-        <poetry>
+</body>
+</text>
+
+<text id="drejer2026083131">
+<head>
+  <title>Forord til Regentsens Visebog</title>
+  <firstline>Naar Vinteren breder sit Taage-Flor</firstline>
+  <notes>
+    <note>Trykt med årstallet 1833.</note>
+  </notes>
+  <source pages="70-72"/>
+</head>
+<body>
+<poetry>
 Naar Vinteren breder sit Taage-Flor,
 Vævet af Byluftens stivnede Dunster,
 Over Regentsens ærværdige Gaard,
@@ -1898,19 +1927,20 @@ Og hver Gang vi kaste vort Blik paa den,
 Da blive vi sikkert Studenter igjen,
 Og Philister-Nykken forjage!
 </poetry>
-      </body>
-    </text>
-    <text id="drejer2026083132">
-      <head>
-        <title>Regentsvise</title>
-        <firstline>Udi den lærde Republik —</firstline>
-        <notes>
-          <note>Trykt med årstallet 1833.</note>
-        </notes>
-        <source pages="72-75"/>
-      </head>
-      <body>
-        <poetry>
+</body>
+</text>
+
+<text id="drejer2026083132">
+<head>
+  <title>Regentsvise</title>
+  <firstline>Udi den lærde Republik —</firstline>
+  <notes>
+    <note>Trykt med årstallet 1833.</note>
+  </notes>
+  <source pages="72-75"/>
+</head>
+<body>
+<poetry>
 Udi den lærde Republik —
 Som, i en Tid, hvor Republikker
 Er kommen fast reent ud af Skik,
@@ -2001,19 +2031,20 @@ I Videnskabens store Rige;
 Hvis Hjerte varmt og trofast slaaer
 For Konge, Ven og Pige!
 </poetry>
-      </body>
-    </text>
-    <text id="drejer2026083133">
-      <head>
-        <title>Regentsvise</title>
-        <firstline>Hvi synges evigt af Studenter</firstline>
-        <notes>
-          <note>Trykt med årstallet 1833.</note>
-        </notes>
-        <source pages="76-77"/>
-      </head>
-      <body>
-        <poetry>
+</body>
+</text>
+
+<text id="drejer2026083133">
+<head>
+  <title>Regentsvise</title>
+  <firstline>Hvi synges evigt af Studenter</firstline>
+  <notes>
+    <note>Trykt med årstallet 1833.</note>
+  </notes>
+  <source pages="76-77"/>
+</head>
+<body>
+<poetry>
 Hvi synges evigt af Studenter
 Om Fjerde Christians Bygning blot?
 Hvo grunded Fondet da, hvis Renter
@@ -2050,19 +2081,20 @@ Fra Sjette Fredriks Kongestol!
 Thi, Brødre! — høit Pokalen hæver! —
 Oplysnings ædle Ven en Skaal!
 </poetry>
-      </body>
-    </text>
-    <text id="drejer2026083134">
-      <head>
-        <title>Regentsianernes Skaal</title>
-        <firstline>Der staaer et gammelt rødligt Huus</firstline>
-        <notes>
-          <note>Trykt med årstallet 1833.</note>
-        </notes>
-        <source pages="77-79"/>
-      </head>
-      <body>
-        <poetry>
+</body>
+</text>
+
+<text id="drejer2026083134">
+<head>
+  <title>Regentsianernes Skaal</title>
+  <firstline>Der staaer et gammelt rødligt Huus</firstline>
+  <notes>
+    <note>Trykt med årstallet 1833.</note>
+  </notes>
+  <source pages="77-79"/>
+</head>
+<body>
+<poetry>
 Der staaer et gammelt rødligt Huus
 Propfuldt af unge Studioser.
 Man parviis „paa en Trojeduus“
@@ -2117,19 +2149,20 @@ Dets Spas, dets Glæder og dets Vaner
 Skal Manden mindes tidt med Lyst!
 Skaal hver Regentsianer! —
 </poetry>
-      </body>
-    </text>
-    <text id="drejer2026083135">
-      <head>
-        <title>Den 1ste Juli 1834</title>
-        <firstline>Der er en Gaard, dens Sted er høit i Gaden</firstline>
-        <dates>
-          <event>1834-07-01</event>
-        </dates>
-        <source pages="79-82"/>
-      </head>
-      <body>
-        <poetry>
+</body>
+</text>
+
+<text id="drejer2026083135">
+<head>
+  <title>Den 1ste Juli 1834</title>
+  <firstline>Der er en Gaard, dens Sted er høit i Gaden</firstline>
+  <dates>
+    <event>1834-07-01</event>
+  </dates>
+  <source pages="79-82"/>
+</head>
+<body>
+<poetry>
 Der er en Gaard, dens Sted er høit i Gaden,
 Og Runde-Taarnet kneiser nær dens Stavn;
 Men skjøn som den er ingen Gaard i Staden:
@@ -2203,7 +2236,8 @@ Ved Bægrets Klang paa ægte Burschers Viis,
 Og drikke til de svundne Glæders Minde,
 Til Christians Hæder og Regentsens Priis!
 </poetry>
-      </body>
-    </text>
-  </workbody>
+</body>
+</text>
+
+</workbody>
 </kalliopework>
