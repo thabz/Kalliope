@@ -11,6 +11,7 @@ const maxAnalysisDimension = 1200;
 const maximumRotation = 3;
 const maximumCropPerEdge = 0.05;
 const cropSafetyInset = 0.005;
+const cropAntialiasInset = 2;
 const coarseAngleStep = 0.1;
 const fineAngleStep = 0.02;
 
@@ -449,8 +450,10 @@ const analyzeTitlePage = async (input, outDir) => {
     recommendedCrop.height,
     fullRotated.height - recommendedCrop.top
   );
-  const insetX = Math.round(fullRotated.width * cropSafetyInset);
-  const insetY = Math.round(fullRotated.height * cropSafetyInset);
+  const insetX =
+    Math.round(fullRotated.width * cropSafetyInset) + cropAntialiasInset;
+  const insetY =
+    Math.round(fullRotated.height * cropSafetyInset) + cropAntialiasInset;
   recommendedCrop.left += insetX;
   recommendedCrop.top += insetY;
   recommendedCrop.width = Math.max(1, recommendedCrop.width - insetX * 2);
