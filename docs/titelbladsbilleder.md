@@ -64,6 +64,10 @@ kan kun godkendes automatisk, når alle disse forhold er opfyldt:
 7. Outputtet er ikke opskaleret, og højst 5% er beskåret fra hver enkelt kant
    efter rotationen.
 
+Kantmålingen udføres i fuld opløsning. Sammenhængende mørke scannerstriber
+beskæres, indtil striben ophører; lokale mørke genstande som sideklemmer må
+ikke udløse yderligere beskæring.
+
 Ved alvorlig perspektivforvrængning, buede tekstlinjer, utydelig papirkant,
 meget lidt genkendelig tekst eller tvivl om indholdstab er status
 `manual-review`. I den situation må den eksisterende titelbladsfil ikke

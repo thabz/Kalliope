@@ -11,7 +11,7 @@ const maxAnalysisDimension = 1200;
 const maximumRotation = 3;
 const maximumCropPerEdge = 0.05;
 const cropSafetyInset = 0.005;
-const cropAntialiasInset = 2;
+const maximumDarkEdgeFraction = 0.2;
 const coarseAngleStep = 0.1;
 const fineAngleStep = 0.02;
 
@@ -364,6 +364,85 @@ const detectPageCrop = ({ data, height, width }) => {
   };
 };
 
+const darkFractionAtEdge = (image, crop, edge, threshold) => {
+  const horizontal = edge === 'top' || edge === 'bottom';
+  const length = horizontal ? crop.width : crop.height;
+  const inset = Math.round(length * 0.08);
+  const from = inset;
+  const to = Math.max(from + 1, length - inset);
+  let dark = 0;
+  let sampled = 0;
+  for (let offset = from; offset < to; offset += 1) {
+    const x = horizontal
+      ? crop.left + offset
+      : edge === 'left'
+        ? crop.left
+        : crop.left + crop.width - 1;
+    const y = horizontal
+      ? edge === 'top'
+        ? crop.top
+        : crop.top + crop.height - 1
+      : crop.top + offset;
+    const pixel = (y * image.width + x) * image.channels;
+    const value = luminance(
+      image.data[pixel],
+      image.data[pixel + 1],
+      image.data[pixel + 2]
+    );
+    if (value < threshold) {
+      dark += 1;
+    }
+    sampled += 1;
+  }
+  return sampled === 0 ? 0 : dark / sampled;
+};
+
+const refineDarkCropEdges = (image, initialCrop, paperColor) => {
+  const crop = { ...initialCrop };
+  const trim = { left: 0, right: 0, top: 0, bottom: 0 };
+  const paper = luminance(paperColor.r, paperColor.g, paperColor.b);
+  const threshold = Math.max(25, paper - 40);
+  for (const edge of ['left', 'right', 'top', 'bottom']) {
+    const horizontal = edge === 'top' || edge === 'bottom';
+    const dimension = horizontal ? image.height : image.width;
+    const maximumMargin = Math.floor(dimension * maximumCropPerEdge);
+    const currentMargin =
+      edge === 'left'
+        ? crop.left
+        : edge === 'right'
+          ? image.width - crop.left - crop.width
+          : edge === 'top'
+            ? crop.top
+            : image.height - crop.top - crop.height;
+    const maximumTrim = Math.max(0, maximumMargin - currentMargin);
+    while (
+      trim[edge] < maximumTrim &&
+      crop.width > 1 &&
+      crop.height > 1 &&
+      darkFractionAtEdge(image, crop, edge, threshold) >
+        maximumDarkEdgeFraction
+    ) {
+      if (edge === 'left') {
+        crop.left += 1;
+        crop.width -= 1;
+      } else if (edge === 'right') {
+        crop.width -= 1;
+      } else if (edge === 'top') {
+        crop.top += 1;
+        crop.height -= 1;
+      } else {
+        crop.height -= 1;
+      }
+      trim[edge] += 1;
+    }
+  }
+  return {
+    crop,
+    threshold,
+    trim,
+  };
+};
+
 const createAnalysisPreview = async (input, output, angle, crop, paperColor) => {
   const { data, info } = await sharp(input)
     .autoOrient()
@@ -436,28 +515,43 @@ const analyzeTitlePage = async (input, outDir) => {
     width: cropAnalysis.crop.width / rotated.info.width,
     height: cropAnalysis.crop.height / rotated.info.height,
   };
-  const recommendedCrop = {
+  const detectedCrop = {
     left: Math.max(0, Math.round(normalizedCrop.left * fullRotated.width)),
     top: Math.max(0, Math.round(normalizedCrop.top * fullRotated.height)),
     width: Math.max(1, Math.round(normalizedCrop.width * fullRotated.width)),
     height: Math.max(1, Math.round(normalizedCrop.height * fullRotated.height)),
   };
-  recommendedCrop.width = Math.min(
-    recommendedCrop.width,
-    fullRotated.width - recommendedCrop.left
+  detectedCrop.width = Math.min(
+    detectedCrop.width,
+    fullRotated.width - detectedCrop.left
   );
-  recommendedCrop.height = Math.min(
-    recommendedCrop.height,
-    fullRotated.height - recommendedCrop.top
+  detectedCrop.height = Math.min(
+    detectedCrop.height,
+    fullRotated.height - detectedCrop.top
   );
-  const insetX =
-    Math.round(fullRotated.width * cropSafetyInset) + cropAntialiasInset;
-  const insetY =
-    Math.round(fullRotated.height * cropSafetyInset) + cropAntialiasInset;
-  recommendedCrop.left += insetX;
-  recommendedCrop.top += insetY;
-  recommendedCrop.width = Math.max(1, recommendedCrop.width - insetX * 2);
-  recommendedCrop.height = Math.max(1, recommendedCrop.height - insetY * 2);
+  const insetX = Math.round(fullRotated.width * cropSafetyInset);
+  const insetY = Math.round(fullRotated.height * cropSafetyInset);
+  detectedCrop.left += insetX;
+  detectedCrop.top += insetY;
+  detectedCrop.width = Math.max(1, detectedCrop.width - insetX * 2);
+  detectedCrop.height = Math.max(1, detectedCrop.height - insetY * 2);
+  const fullImage = await sharp(input)
+    .autoOrient()
+    .rotate(rotation.recommendedAngle, { background: pixels.paperColor })
+    .removeAlpha()
+    .raw()
+    .toBuffer({ resolveWithObject: true });
+  const refinedCrop = refineDarkCropEdges(
+    {
+      channels: fullImage.info.channels,
+      data: fullImage.data,
+      height: fullImage.info.height,
+      width: fullImage.info.width,
+    },
+    detectedCrop,
+    pixels.paperColor
+  );
+  const recommendedCrop = refinedCrop.crop;
 
   const report = {
     command: 'analyze',
@@ -473,6 +567,8 @@ const analyzeTitlePage = async (input, outDir) => {
     angleStatus: rotation.status,
     darkPointCount: rotation.darkPointCount,
     recommendedCrop,
+    darkEdgeTrim: refinedCrop.trim,
+    darkEdgeThreshold: refinedCrop.threshold,
     cropConfidence: cropAnalysis.confidence,
     cropRemovedFraction: cropAnalysis.removedFraction,
     status: rotation.status,
@@ -486,9 +582,9 @@ const analyzeTitlePage = async (input, outDir) => {
     previewPath,
     rotation.recommendedAngle,
     {
-      ...cropAnalysis.crop,
-      analysisHeight: rotated.info.height,
-      analysisWidth: rotated.info.width,
+      ...recommendedCrop,
+      analysisHeight: fullImage.info.height,
+      analysisWidth: fullImage.info.width,
     },
     pixels.paperColor
   );
@@ -788,6 +884,7 @@ export {
   estimateRotation,
   parseCrop,
   qaTitlePage,
+  refineDarkCropEdges,
   renderTitlePage,
   titlePageChecksPassed,
 };

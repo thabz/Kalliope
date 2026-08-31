@@ -8,6 +8,7 @@ import {
   analyzeTitlePage,
   parseCrop,
   qaTitlePage,
+  refineDarkCropEdges,
   renderTitlePage,
   titlePageChecksPassed,
 } from '../.codex/skills/prepare-kalliope-titlepage/scripts/titlepage.js';
@@ -173,5 +174,54 @@ describe('prepare Kalliope title page', () => {
       noUpscaling: true,
       visualReview: true,
     })).toBe(true);
+  });
+
+  it('measures and removes continuous dark edge bands', () => {
+    const width = 100;
+    const height = 100;
+    const data = Buffer.alloc(width * height * 3, 220);
+    const darken = (x, y) => {
+      const pixel = (y * width + x) * 3;
+      data[pixel] = 20;
+      data[pixel + 1] = 20;
+      data[pixel + 2] = 20;
+    };
+    for (let y = 0; y < height; y += 1) {
+      for (let x = 0; x < 3; x += 1) darken(x, y);
+      for (let x = width - 4; x < width; x += 1) darken(x, y);
+    }
+    for (let x = 0; x < width; x += 1) {
+      for (let y = 0; y < 2; y += 1) darken(x, y);
+      for (let y = height - 5; y < height; y += 1) darken(x, y);
+    }
+
+    const result = refineDarkCropEdges(
+      { channels: 3, data, height, width },
+      { left: 0, top: 0, width, height },
+      { r: 220, g: 220, b: 220 }
+    );
+
+    expect(result.crop).toEqual({ left: 3, top: 2, width: 93, height: 93 });
+    expect(result.trim).toEqual({ left: 3, right: 4, top: 2, bottom: 5 });
+  });
+
+  it('does not treat a localized dark clip as an edge band', () => {
+    const width = 100;
+    const height = 100;
+    const data = Buffer.alloc(width * height * 3, 220);
+    for (let x = 45; x < 55; x += 1) {
+      const pixel = x * 3;
+      data[pixel] = 20;
+      data[pixel + 1] = 20;
+      data[pixel + 2] = 20;
+    }
+
+    const result = refineDarkCropEdges(
+      { channels: 3, data, height, width },
+      { left: 0, top: 0, width, height },
+      { r: 220, g: 220, b: 220 }
+    );
+
+    expect(result.trim.top).toBe(0);
   });
 });
