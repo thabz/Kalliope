@@ -331,11 +331,13 @@ const existingKalliope = root => {
           const workId = workXml.match(/<kalliopework\b[^>]*\bid="([^"]+)"/)?.[1];
           const title = workXml.match(/<workhead>[\s\S]*?<title>([\s\S]*?)<\/title>/)?.[1];
           const year = workXml.match(/<workhead>[\s\S]*?<year>([^<]+)<\/year>/)?.[1];
+          const workBody = workXml.match(/<workbody>([\s\S]*?)<\/workbody>/)?.[1];
           return workId == null || title == null || year == null ? [] : [{
             poetId: entry.name,
             workId,
             title: normalizedWorkTitle(title),
             year: normalizedWorkYear(year),
+            hasContent: workBody == null || /<(?:text|prose|subwork)\b/.test(workBody),
           }];
         });
       worksByPoetId.set(entry.name, works);
@@ -356,6 +358,12 @@ const uniqueKalliopeWorkMatch = ({ work, poetIds, poets, worksByPoetId }) => {
   return matches.length === 1
     ? { poet_id: kalliopePoetId, work_id: matches[0].workId }
     : null;
+};
+
+const registerStatusForKalliopeWork = (kalliopeWork, worksByPoetId) => {
+  const work = (worksByPoetId.get(kalliopeWork.poet_id) ?? [])
+    .find(candidate => candidate.workId === kalliopeWork.work_id);
+  return work?.hasContent === false ? 'registered' : 'included';
 };
 
 const buildRecords = ({ existingPoets, existingWorks, dflWorks, root, rawDir }) => {
@@ -479,7 +487,9 @@ const buildRecords = ({ existingPoets, existingWorks, dflWorks, root, rawDir }) 
       worksByPoetId: kalliope.worksByPoetId,
     });
     const kalliopeWork = existing?.kalliope ?? automaticKalliopeMatch;
-    merged.status = kalliopeWork == null ? existing?.status ?? 'candidate' : 'included';
+    merged.status = kalliopeWork == null
+      ? existing?.status ?? 'candidate'
+      : registerStatusForKalliopeWork(kalliopeWork, kalliope.worksByPoetId);
     if (kalliopeWork != null) merged.kalliope = kalliopeWork;
     works.set(id, merged);
   });

@@ -867,7 +867,17 @@ A footnote attached to a particular place in the text must be inserted at that
 place using the Kalliope XML structure. Do not collect footnotes at the end
 merely because OCR extracted them there.
 
-Proofread footnotes and note markers directly against the facsimile.
+Transcribe every source footnote verbatim from the facsimile. Preserve its
+wording, historical spelling, capitalization and punctuation. The
+`<footnote>` element contains only the printed footnote text, not the printed
+marker. Never prepend the referenced word, an inferred subject, `betyder` or
+any other editorial clarification. For example, when the source text marks
+`Ajl` and the complete printed footnote reads `andet end Gjæld.`, encode only
+`<footnote>andet end Gjæld.</footnote>`.
+
+Proofread every footnote and note marker directly against the facsimile. Do not
+reuse a paraphrase or expanded wording from OCR, provisional metadata or a
+previous transcription without checking it against the printed note.
 
 Preserve the association between each marker and its note.
 
@@ -1316,6 +1326,8 @@ The task is complete only when all applicable items are true:
 - [ ] Indentation was verified visually and represented with spaces.
 - [ ] Headings, mottoes, numbers and decorations are not ordinary verse lines.
 - [ ] Footnotes are placed at the text locations to which they belong.
+- [ ] Every source footnote is transcribed verbatim from the facsimile without
+      its marker or any added referenced word or editorial explanation.
 - [ ] Notes applying to a whole poem are placed in the text header.
 - [ ] Full dates and other discoverable metadata were extracted according to
       current rules.

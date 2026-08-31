@@ -13,9 +13,10 @@ Livsdata og autoritets-id'er fra Lex, GND, VIAF og Wikidata bevares på
 personposten med feltprovenance og eventuelle konflikter.
 
 Registrene er et permanent dækningskort, ikke kun en kø af ukendte personer.
-`candidate` mangler i Kalliope, `in-progress` er under arbejde, og `included`
-findes allerede i korpusset. Inkluderede poster har en eksplicit `kalliope`-
-kobling til person- eller værk-id'et.
+`candidate` mangler i Kalliope, `registered` findes som en tom værkpost,
+`in-progress` er under arbejde, og `included` har indhold i korpusset.
+Registrerede og inkluderede poster har en eksplicit `kalliope`-kobling til
+person- eller værk-id'et.
 
 DFL's rå HTML-cache ligger lokalt under
 `tools/data/indsamling/dfl/raw/`, så en normal synkronisering kan køres helt
@@ -46,9 +47,10 @@ overskriver ikke eksisterende, ikke-tomme værdier og sletter aldrig automatisk
 personer eller værker. Redaktionelle felter og kildemæssig berigelse i JSONL-
 filerne er derfor sikre ved senere kørsler. Ændringer gennemgås med `git diff`.
 
-Eksisterende Kalliope-personer kobles kun via deres DFL-id. Et værk markeres
-kun automatisk som inkluderet, når samme person samt normaliseret titel og år
-giver ét entydigt match. Tvetydige værker forbliver kandidater.
+Eksisterende Kalliope-personer kobles kun via deres DFL-id. Et værk kobles kun
+automatisk, når samme person samt normaliseret titel og år giver ét entydigt
+match. En tom lokal værkpost får status `registered`; et værk med indhold får
+status `included`. Tvetydige værker forbliver kandidater.
 
 ## Begrænsning
 
