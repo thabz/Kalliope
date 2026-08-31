@@ -200,6 +200,34 @@ describe('dækningsregister-sync', () => {
     fs.rmSync(directory, { recursive: true });
   });
 
+  test('markerer en tom Kalliope-værkpost som registreret', () => {
+    const { directory, root, rawDir } = makeWorkspace();
+    fs.writeFileSync(path.join(rawDir, 'author-index', 'a.htm'), '<div class="authorelement"><a href="../1850bib/AAnna.htm">Anna</a></div>');
+    addKalliopePoet({ root, poetId: 'andersenanna', dflId: 'AAnna' });
+    fs.writeFileSync(
+      path.join(root, 'fdirs', 'andersenanna', '1900.xml'),
+      '<?xml version="1.0"?><kalliopework id="1900" author="andersenanna" status="incomplete"><workhead><title>Digte</title><year>1900</year></workhead><workbody></workbody></kalliopework>'
+    );
+    const dflWorks = [{
+      sourceId: 'titelnr1',
+      sourceUrl: 'https://example.test/a',
+      title: 'Digte',
+      year: '1900',
+      type: 'digte',
+      language: 'dansk',
+      originalValue: 'Digte, (1900, digte, dansk)',
+      authors: [{ role: 'author', name: 'Anna Andersen', sourceId: 'AAnna' }],
+    }];
+
+    const result = buildRecords({ existingPoets: [], existingWorks: [], dflWorks, root, rawDir });
+
+    expect(result.works).toEqual([expect.objectContaining({
+      status: 'registered',
+      kalliope: { poet_id: 'andersenanna', work_id: '1900' },
+    })]);
+    fs.rmSync(directory, { recursive: true });
+  });
+
   test('bevarer et tvetydigt titel- og årsmatch som kandidat', () => {
     const { directory, root, rawDir } = makeWorkspace();
     fs.writeFileSync(path.join(rawDir, 'author-index', 'a.htm'), '<div class="authorelement"><a href="../1850bib/AAnna.htm">Anna</a></div>');
