@@ -266,17 +266,17 @@ const estimateRotation = ({ gray, height, width }, region = null) => {
   const recommendedAngle =
     Math.abs(best.angle) < 0.08 || improvementOverZero < 0.005
       ? 0
-      : Number(best.angle.toFixed(2));
+      : Number((-best.angle).toFixed(2));
 
   return {
     candidates: coarse.slice(0, 5).map(candidate => ({
-      angle: candidate.angle,
+      angle: Number((-candidate.angle).toFixed(2)),
       score: Number(candidate.score.toFixed(4)),
     })),
     confidence: Number(confidence.toFixed(4)),
     darkPointCount: points.length,
     improvementOverZero: Number(improvementOverZero.toFixed(4)),
-    rawBestAngle: Number(best.angle.toFixed(2)),
+    rawBestAngle: Number((-best.angle).toFixed(2)),
     recommendedAngle,
     status: confidence >= 0.015 ? 'candidate' : 'manual-review',
   };

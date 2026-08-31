@@ -54,7 +54,7 @@ describe('prepare Kalliope title page', () => {
 
     const result = await analyzeTitlePage(source, analysisDir);
 
-    expect(result.report.recommendedAngle).toBeCloseTo(1, 1);
+    expect(result.report.recommendedAngle).toBeCloseTo(-1, 1);
     expect(result.report.recommendedCrop.left).toBeGreaterThan(0);
     expect(result.report.recommendedCrop.top).toBeGreaterThan(0);
     expect(result.report.cropRemovedFraction).toBeGreaterThan(0.1);
