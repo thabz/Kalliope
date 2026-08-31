@@ -19,7 +19,7 @@ const usage = () => {
   console.error(`Brug:
   titlepage.js analyze INPUT --out-dir DIR
   titlepage.js render INPUT OUTPUT --angle GRADER --crop LEFT,TOP,WIDTH,HEIGHT
-  titlepage.js qa INPUT CANDIDATE --report REPORT.json --comparison COMPARE.jpg [--visual-pass] [--promote OUTPUT]`);
+  titlepage.js qa INPUT CANDIDATE --report REPORT.json [--promote OUTPUT]`);
 };
 
 const sha256 = filename => {
@@ -34,11 +34,6 @@ const parseOptions = args => {
     const arg = args[index];
     if (arg.startsWith('--') === false) {
       positionals.push(arg);
-      continue;
-    }
-
-    if (arg === '--visual-pass') {
-      options.set('visualPass', true);
       continue;
     }
 
@@ -652,46 +647,6 @@ const renderTitlePage = async (input, output, { angle, crop }) => {
   return { output, transform, transformPath };
 };
 
-const makeComparisonPanel = async (filename, label) => {
-  const width = 700;
-  const height = 900;
-  const image = await sharp(filename)
-    .autoOrient()
-    .resize({ width: 680, height: 840, fit: 'contain', background: '#ffffff' })
-    .flatten({ background: '#ffffff' })
-    .jpeg({ quality: 90 })
-    .toBuffer();
-  const labelSvg = Buffer.from(`<svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">
-    <rect width="${width}" height="48" fill="#ffffff"/>
-    <text x="18" y="32" font-family="sans-serif" font-size="24" fill="#111111">${label}</text>
-  </svg>`);
-  return sharp({
-    create: { width, height, channels: 3, background: '#ffffff' },
-  })
-    .composite([
-      { input: image, left: 10, top: 50 },
-      { input: labelSvg, left: 0, top: 0 },
-    ])
-    .jpeg({ quality: 92 })
-    .toBuffer();
-};
-
-const createComparison = async (source, candidate, output) => {
-  const [sourcePanel, candidatePanel] = await Promise.all([
-    makeComparisonPanel(source, 'Kilde'),
-    makeComparisonPanel(candidate, 'Kandidat'),
-  ]);
-  await sharp({
-    create: { width: 1400, height: 900, channels: 3, background: '#dddddd' },
-  })
-    .composite([
-      { input: sourcePanel, left: 0, top: 0 },
-      { input: candidatePanel, left: 700, top: 0 },
-    ])
-    .jpeg({ quality: 92 })
-    .toFile(output);
-};
-
 const loadTransform = (candidate, source) => {
   const transformPath = `${candidate}.transform.json`;
   if (fs.existsSync(transformPath) === false) {
@@ -722,8 +677,7 @@ const titlePageChecksPassed = checks => {
     checks.jpegOutput === true &&
     checks.deterministicTransform === true &&
     checks.noUpscaling === true &&
-    checks.conservativeCrop === true &&
-    checks.visualReview === true
+    checks.conservativeCrop === true
   );
 };
 
@@ -743,13 +697,12 @@ const edgeCropFractions = transform => {
 const qaTitlePage = async (
   source,
   candidate,
-  { comparison, promote = null, report: reportPath, visualPass = false }
+  { promote = null, report: reportPath }
 ) => {
   if (fs.existsSync(source) === false || fs.existsSync(candidate) === false) {
     throw new Error('Kilde og kandidat skal begge findes før QA.');
   }
   fs.mkdirSync(path.dirname(reportPath), { recursive: true });
-  fs.mkdirSync(path.dirname(comparison), { recursive: true });
   const [sourceMetadata, candidateMetadata] = await Promise.all([
     sharp(source).metadata(),
     sharp(candidate).metadata(),
@@ -781,7 +734,6 @@ const qaTitlePage = async (
           ),
     maximumCropPerEdge,
     noUpscaling: transform.valid && transform.transform.scaled === false,
-    visualReview: visualPass,
   };
   const hardChecksPassed = titlePageChecksPassed(checks);
   const status = hardChecksPassed ? 'pass' : 'manual-review';
@@ -799,7 +751,6 @@ const qaTitlePage = async (
     status,
     promotedTo: null,
   };
-  await createComparison(source, candidate, comparison);
   if (promote != null) {
     if (status !== 'pass') {
       fs.writeFileSync(reportPath, `${JSON.stringify(report, null, 2)}\n`);
@@ -853,10 +804,8 @@ const runCli = async argv => {
       return 1;
     }
     const result = await qaTitlePage(positionals[0], positionals[1], {
-      comparison: requiredOption(options, 'comparison'),
       promote: options.get('promote') ?? null,
       report: requiredOption(options, 'report'),
-      visualPass: options.get('visualPass') === true,
     });
     console.log(JSON.stringify(result, null, 2));
     return result.status === 'pass' ? 0 : 2;
