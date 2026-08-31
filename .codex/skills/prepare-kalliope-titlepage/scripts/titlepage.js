@@ -15,6 +15,8 @@ const maximumRotation = 3;
 const coarseAngleStep = 0.1;
 const fineAngleStep = 0.02;
 const minimumOcrRecall = 0.75;
+const minimumOcrAgreement = 0.75;
+const minimumOcrTokenRatio = 0.5;
 
 const usage = () => {
   console.error(`Brug:
@@ -576,7 +578,7 @@ const ocrTokens = async filename => {
   }
 };
 
-const tokenRecall = (sourceTokens, candidateTokens) => {
+const tokenOverlap = (sourceTokens, candidateTokens) => {
   const candidateCounts = new Map();
   for (const token of candidateTokens) {
     candidateCounts.set(token, (candidateCounts.get(token) ?? 0) + 1);
@@ -589,7 +591,41 @@ const tokenRecall = (sourceTokens, candidateTokens) => {
       candidateCounts.set(token, count - 1);
     }
   }
-  return sourceTokens.length === 0 ? null : retained / sourceTokens.length;
+  return retained;
+};
+
+const evaluateOcrRetention = (sourceTokens, candidateTokens) => {
+  const retained = tokenOverlap(sourceTokens, candidateTokens);
+  const recall = sourceTokens.length === 0 ? null : retained / sourceTokens.length;
+  const agreement =
+    candidateTokens.length === 0 ? null : retained / candidateTokens.length;
+  const tokenRatio =
+    sourceTokens.length === 0 ? null : candidateTokens.length / sourceTokens.length;
+  const required = sourceTokens.length >= 10;
+  const recognitionImproved =
+    candidateTokens.length >= sourceTokens.length * 1.5 &&
+    recall != null &&
+    recall >= 0.5;
+  const cleanupAgreement =
+    agreement != null &&
+    agreement >= minimumOcrAgreement &&
+    tokenRatio != null &&
+    tokenRatio >= minimumOcrTokenRatio;
+  const passed =
+    required === false ||
+    (recall != null && recall >= minimumOcrRecall) ||
+    recognitionImproved ||
+    cleanupAgreement;
+  return {
+    agreement,
+    cleanupAgreement,
+    passed,
+    recall,
+    recognitionImproved,
+    required,
+    retained,
+    tokenRatio,
+  };
 };
 
 const makeComparisonPanel = async (filename, label) => {
@@ -680,19 +716,10 @@ const qaTitlePage = async (
   const areaRetention =
     candidateDimensions.width * candidateDimensions.height /
     (sourceDimensions.width * sourceDimensions.height);
-  const recall =
-    sourceOcr.available === true && candidateOcr.available === true
-      ? tokenRecall(sourceOcr.tokens, candidateOcr.tokens)
-      : null;
-  const ocrRequired = sourceOcr.tokens.length >= 10;
-  const recognitionImproved =
-    candidateOcr.tokens.length >= sourceOcr.tokens.length * 1.5 &&
-    recall != null &&
-    recall >= 0.5;
-  const ocrPassed =
-    ocrRequired === false ||
-    (recall != null && recall >= minimumOcrRecall) ||
-    recognitionImproved;
+  const ocrRetention = evaluateOcrRetention(
+    sourceOcr.tokens,
+    candidateOcr.tokens
+  );
   const checks = {
     jpegOutput: candidateMetadata.format === 'jpeg',
     deterministicTransform: transform.valid,
@@ -700,13 +727,25 @@ const qaTitlePage = async (
     reasonablePageRetention: areaRetention >= 0.25,
     ocrRetention: {
       available: sourceOcr.available === true && candidateOcr.available === true,
+      agreement:
+        ocrRetention.agreement == null
+          ? null
+          : Number(ocrRetention.agreement.toFixed(4)),
       candidateTokenCount: candidateOcr.tokens.length,
-      passed: ocrPassed,
-      recognitionImproved,
-      recall: recall == null ? null : Number(recall.toFixed(4)),
-      required: ocrRequired,
+      cleanupAgreement: ocrRetention.cleanupAgreement,
+      passed: ocrRetention.passed,
+      recognitionImproved: ocrRetention.recognitionImproved,
+      recall:
+        ocrRetention.recall == null
+          ? null
+          : Number(ocrRetention.recall.toFixed(4)),
+      required: ocrRetention.required,
       sourceTokenCount: sourceOcr.tokens.length,
       threshold: minimumOcrRecall,
+      tokenRatio:
+        ocrRetention.tokenRatio == null
+          ? null
+          : Number(ocrRetention.tokenRatio.toFixed(4)),
     },
     visualReview: visualPass,
   };
@@ -813,6 +852,7 @@ if (fileURLToPath(import.meta.url) === process.argv[1]) {
 export {
   analyzeTitlePage,
   detectPageCrop,
+  evaluateOcrRetention,
   estimateRotation,
   parseCrop,
   qaTitlePage,

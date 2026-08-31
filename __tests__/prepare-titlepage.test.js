@@ -6,6 +6,7 @@ import sharp from 'sharp';
 
 import {
   analyzeTitlePage,
+  evaluateOcrRetention,
   parseCrop,
   qaTitlePage,
   renderTitlePage,
@@ -161,5 +162,37 @@ describe('prepare Kalliope title page', () => {
     expect(() => parseCrop('10,20,0,400')).toThrow(
       'Crop-værdier skal have positiv bredde og højde.'
     );
+  });
+
+  it('accepts retained title text when removed scanner noise inflated source OCR', () => {
+    const sourceTokens = [
+      'erotiske', 'digte', 'rosenberg', 'københavn', 'boghandel',
+      'bogtrykkeri', '1896', 'scanner', 'kant', 'støj', 'plet', 'ramme',
+    ];
+    const candidateTokens = [
+      'erotiske', 'digte', 'rosenberg', 'københavn', 'boghandel',
+      'bogtrykkeri', '1896',
+    ];
+
+    const result = evaluateOcrRetention(sourceTokens, candidateTokens);
+
+    expect(result.recall).toBeLessThan(0.75);
+    expect(result.agreement).toBe(1);
+    expect(result.cleanupAgreement).toBe(true);
+    expect(result.passed).toBe(true);
+  });
+
+  it('rejects a small matching OCR fragment after an aggressive crop', () => {
+    const sourceTokens = [
+      'erotiske', 'digte', 'rosenberg', 'københavn', 'boghandel',
+      'bogtrykkeri', '1896', 'forlag', 'titelblad', 'ornament',
+    ];
+
+    const result = evaluateOcrRetention(sourceTokens, ['erotiske', 'digte']);
+
+    expect(result.agreement).toBe(1);
+    expect(result.tokenRatio).toBe(0.2);
+    expect(result.cleanupAgreement).toBe(false);
+    expect(result.passed).toBe(false);
   });
 });
