@@ -17,6 +17,9 @@ Disse regler gælder for AI-agenter og automatiserede assistenter, der arbejder 
   OCR-behandles eller transskriberes. I den arbejdsgang styrer
   `$pdf-to-kalliope` selve PDF-, transskriptions- og korrekturarbejdet, mens
   `$add-kalliope-work` styrer PR-checklisten og overdragelsen til brugeren.
+- Brug `$prepare-kalliope-titlepage`, når et titelblad skal rettes op,
+  beskæres eller kvalitetskontrolleres. `$pdf-to-kalliope` bruger denne skill
+  som sit faste billedbehandlingstrin for `p1`.
 
 ## Kalliopes dækningsmål
 
