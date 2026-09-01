@@ -566,6 +566,10 @@ sideskiftet, står markøren inline på det nøjagtige sted:
 En verslinje som fort<pb n="12" facs="019.jpg"/>sætter
 ```
 
+En indrykning på den nye sides første linje placeres tilsvarende efter
+markøren: `<pb n="12" facs="019.jpg"/>    Indrykket linje`. Mellemrummene må
+ikke stå foran `<pb>`, da de i så fald hører til den foregående kildeside.
+
 En `<pb>` må ikke stå på en selvstændig XML-linje i `<poetry>`, fordi den så kan
 forveksles med en vers- eller strofegrænse. Ved sideskift mellem verslinjer eller
 strofer sættes markøren derfor umiddelbart foran den første tekst på den nye
