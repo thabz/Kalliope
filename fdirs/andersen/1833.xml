@@ -2,15 +2,41 @@
 <kalliopework id="1833" author="andersen" status="complete" type="poetry">
 <workhead>
   <title>Aarets tolv Maaneder</title>
+  <subtitle>Tegnede med Blæk og Pen</subtitle>
   <year>1833</year>
   <pictures>
+    <picture type="frontpage" src="1833-p2.jpg">Det originale foromslag til <i>Aarets tolv Maaneder</i> (1833).</picture>
     <picture type="titlepage" src="1833-p1.jpg">Titelbladet lyder ,,Aarets tolv Maaneder, / Tegnede med Blæk og Pen / af / H. C. Andersen. // Kjøbenhavn, 1833. / Paa Universitets-Boghandler C. A. Reitzels Forlag. / Trykt hos P. N. Jørgensen.''.</picture>
   </pictures>
   <source facsimile="1833.pdf" facsimile-pages-num="142" facsimile-pages-offset="11">H. C. Andersen: <i>Aarets tolv Maaneder</i>, Kjøbenhavn, 1833, paa Universitets-Boghandler C. A. Reitzels Forlag.</source>
   <pagebreaks/>
-  <quality>korrektur1</quality>
+  <quality>korrektur1,kilde,side</quality>
 </workhead>
 <workbody>
+
+<text id="andersen2026090101" ignore-tests="pagebreak-count">
+<head>
+  <title>Til Kongen</title>
+  <firstline>Et fattigt Barn jeg var, mig Ingen kjendte</firstline>
+  <source facsimile-pages="9-12"/>
+  <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+<pb facs="009.jpg"/><pb facs="010.jpg"/>Et fattigt Barn jeg var, mig Ingen kjendte,
+Men i mit Hjerte Digter-Flammen brændte;
+Den drev mig modigt frem i Verdens-Vrimlen,
+Skjøndt kun jeg eied' Den og Gud i Himlen.
+
+<pb facs="011.jpg"/>Til Danmarks Konge ledte de min Fod,
+Jeg følte kun, jeg hos en Fader stod,
+Der gav mit Hjerte Mod, min Tanke Vinger. —
+Og Faderhjertet trygt min Sang jeg bringer;
+Jeg seer ei Thronen, hvor jeg knæler ned,
+Men i Dit Øie: Fader-Kjærlighed.
+</poetry>
+</body>
+</text>
 
 <text id="andersen2026080801">
 <head>
@@ -20,7 +46,7 @@
   <notes>
     <note>* Disse Digte ere skrevne i Sommeren 1832. Begivenhederne, det gamle Aar omtale, gaae saaledes, som man seer, paa Aaret 1831.</note>
   </notes>
-  <quality>korrektur1</quality>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -239,7 +265,7 @@ Og Danmark kan det første Grønt fremvise!
   <title>Februar</title>
   <firstline>Mark og Enge dækkes af den hvide Snee</firstline>
   <source pages="11-22"/>
-  <quality>korrektur1</quality>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -490,7 +516,7 @@ Mit Hjertes blodige Straale?
   <title>Marts</title>
   <firstline>Livets Frihed, Jordens Baand</firstline>
   <source pages="23-34"/>
-  <quality>korrektur1</quality>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -745,7 +771,7 @@ Nei, fra det Indre Kraften sig bevæger!
   <toctitle>Første del</toctitle>
   <firstline>Frihed, synger Du, April!</firstline>
   <source pages="35-44"/>
-  <quality>korrektur1</quality>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -923,7 +949,7 @@ Ak! er min Friheds Sang ei meer?
   <subtitle>(kommer med sin Mappe og sine Tegne-Redskaber).</subtitle>
   <firstline>Den friske grønne Eng med sine Damme</firstline>
   <source pages="44-45"/>
-  <quality>korrektur1</quality>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -962,7 +988,7 @@ Ved Vintrens Snee, hvor mangt et Minde hviler.
     <note>* Det var den 1ste April, (1340) at Niels Ebbesen slog Grev Geert og frelste Danmark fra dets Undertrykkere.</note>
     <note>** Slaget paa Kjøbenhavns Rhed den 2den April 1801.</note>
   </notes>
-  <quality>korrektur1</quality>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -991,6 +1017,7 @@ Mens hun skjænker Danmark Krandsen for April!**
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
 
@@ -999,7 +1026,7 @@ Mens hun skjænker Danmark Krandsen for April!**
   <title>Mai</title>
   <firstline>Du skiønne Mai! af Dig jeg veed</firstline>
   <source pages="47-54"/>
-  <quality>korrektur1</quality>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1138,7 +1165,7 @@ At Poesie er Kjærlighed!
   <title>Juni</title>
   <firstline>Glemt er nu Vaarens Kamp og Vinter-Sorgen</firstline>
   <source pages="55-66"/>
-  <quality>korrektur1</quality>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1428,7 +1455,7 @@ Har dog ingen Mage!
     <note><i>Samlede Skrifter</i> gav senere teksten titlen <i>Sommerflugt og Hvile</i>.</note>
     <note type="credits">Bidrag fra Sven Andersen</note>
   </notes>
-  <quality>korrektur1</quality>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1636,7 +1663,7 @@ Svulme, døe i Kjærlighed!
   <title>August</title>
   <firstline>Ja, Øieblikket ene er det just</firstline>
   <source pages="77-84"/>
-  <quality>korrektur1</quality>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1778,7 +1805,7 @@ Lev og nyd, trara, trara!"
   <title>September</title>
   <firstline>Den skiønne Sommer fra os gaaer</firstline>
   <source pages="85-90"/>
-  <quality>korrektur1</quality>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1906,7 +1933,7 @@ Vor Sjæl til Gud indvier.
   <title>October</title>
   <firstline>Storken er reist til fremmed' Land, Spurven boer i dens Rede</firstline>
   <source pages="91-98"/>
-  <quality>korrektur1</quality>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2047,7 +2074,7 @@ Der ei Barnet græder!
     <note>** Brorson.</note>
     <note>*** Den 21de Novbr. 1286 myrdedes Erik Glipping i Finnerup.</note>
   </notes>
-  <quality>korrektur1</quality>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2430,7 +2457,7 @@ Kold og hvid, som Kommandanten.
   <toctitle>Første del</toctitle>
   <firstline>Dybt i mit Hjerte, hvor hun boer</firstline>
   <source pages="115-119"/>
-  <quality>korrektur1</quality>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2532,7 +2559,7 @@ Og nu - er jeg en gammel Pebersvend.
   <subtitle>(synge)</subtitle>
   <firstline>Barn Jesus i en Krybbe laae</firstline>
   <source pages="120"/>
-  <quality>korrektur1</quality>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2561,7 +2588,7 @@ Halleluja, Barn Jesus!
   <toctitle>Slutning</toctitle>
   <firstline>Nu til Enhver man Julegave skjænker</firstline>
   <source pages="120-126"/>
-  <quality>korrektur1</quality>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2735,6 +2762,7 @@ Og Ingen har den Døde kjendt!"
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
 
