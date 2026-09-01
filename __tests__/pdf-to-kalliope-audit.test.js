@@ -151,6 +151,17 @@ describe('whole-work structure wrapper', () => {
       verse_line_count: 12,
     }));
   });
+
+  it('preserves page starts as verse-line metadata after removing pb elements', () => {
+    const xml = workXml.replace(
+      /<body><poetry>[\s\S]*?<\/poetry><\/body>/,
+      '<body><poetry>Første linje\n\n<pb n="11" facs="011.jpg"/>    Anden linje\nTredje linje</poetry></body>',
+    );
+    const [poem] = analyzeWholeWork(xml).poems;
+
+    expect(poem.page_breaks).toEqual([2]);
+    expect(poem.indentation.indentation_profile).toEqual([0, 4, 0]);
+  });
 });
 
 describe('historical OCR candidate profile', () => {

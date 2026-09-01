@@ -631,6 +631,13 @@ with `<pb>`; never put the marker on an XML line of its own. The marker is
 zero-width semantics. It must not create a verse line, blank line, stanza,
 paragraph or text boundary.
 
+When the first line on the new page is indented, put the indentation after the
+page marker: `<pb n="12" facs="019.jpg"/>    Indented line`. Never encode it as
+`    <pb n="12" facs="019.jpg"/>Indented line`; the indentation belongs to the
+new page's line, while `<pb>` must precede its first rendered whitespace or
+character. Audit this ordering explicitly whenever indentation is corrected at
+a page boundary.
+
 Do not insert `<pb>` merely at the beginning or end of each `<text>` to repeat
 its `<source pages="...">`. A page transition between two separate text entries
 is not internal to either body and therefore does not receive a marker.
