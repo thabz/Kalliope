@@ -55,6 +55,14 @@ const standalonePageBreaks = xml => {
   }));
 };
 
+const indentedPageBreaks = xml => {
+  const pattern = /^[ \t]+(<pb\b[^>]*\/>)/gm;
+  return Array.from(xml.matchAll(pattern)).map(match => ({
+    line: xml.slice(0, match.index).split(/\r?\n/).length,
+    markup: match[1],
+  }));
+};
+
 const textEntries = document => {
   const texts = Array.from(document.getElementsByTagName('text'));
   const proseTexts = Array.from(document.getElementsByTagName('prose')).filter(
@@ -93,7 +101,7 @@ const parseWorkXml = xml =>
 const checksForWorkXml = xml => ({
   bodyLinks: /<(?:a|xref)\b/.test(xml),
   facsimiles: /<source\b[^>]*\bfacsimile\s*=/.test(xml),
-  pageBreaks: /<pagebreaks\b/.test(xml),
+  pageBreaks: /<(?:pagebreaks|pb)\b/.test(xml),
   sources: /<source\b[^>]*\bpages\s*=/.test(xml),
   textStructure: /<text\b/.test(xml),
 });
@@ -205,6 +213,12 @@ const collectPageBreakIssues = (
   const work = document.documentElement;
   const declarations = Array.from(document.getElementsByTagName('pagebreaks'));
   const issues = [];
+
+  indentedPageBreaks(xml).forEach(({ line, markup }) => {
+    issues.push(
+      `${filename}:${line}: indentation before ${markup} belongs after the page break.`,
+    );
+  });
 
   declarations.forEach(declaration => {
     if (declaration.parentNode?.nodeName !== 'workhead') {

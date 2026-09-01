@@ -59,6 +59,13 @@ describe('work corpus support', () => {
       sources: false,
       textStructure: false,
     });
+    expect(checksForWorkXml('<pb n="2"/>Tekst')).toEqual({
+      bodyLinks: false,
+      facsimiles: false,
+      pageBreaks: true,
+      sources: false,
+      textStructure: false,
+    });
     expect(checksForWorkXml('<source facsimile="scan.pdf"/>')).toEqual({
       bodyLinks: false,
       facsimiles: true,
