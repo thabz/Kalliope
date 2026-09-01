@@ -414,6 +414,11 @@ indentation and page coverage remain in `docs/facsimile-korrektur.md` and
 `docs/ocr-korrektur-laerebog.md`; consult those documents instead of duplicating
 their full procedures here.
 
+Plain OCR output is never evidence for horizontal layout. This applies equally
+to Fraktur and Antiqua: fresh OCR may help locate lines, but indentation must be
+determined from the page image. OCR coordinates or bounding boxes may identify
+candidates only and cannot overrule the facsimile.
+
 ## Auditable side and review records
 
 Before editing the transcription, create two machine-readable scratch files:
@@ -728,9 +733,11 @@ structure solely to make the counts regular.
 
 Some poems are intentionally irregular. The facsimile remains authoritative.
 
-After the stanza analysis, you MUST also run the bundled indentation analysis
-on the same body while preserving every leading space and every blank stanza
-separator:
+Resolve every stanza-boundary candidate before using indentation results. A
+missing boundary can hide a repeated indentation profile by combining two
+stanzas. After correcting or explicitly rejecting all stanza candidates, build
+fresh input from that reviewed structure and run the bundled indentation
+analysis while preserving every leading space and every blank stanza separator:
 
 ```shell
 node .codex/skills/pdf-to-kalliope/scripts/analyze-indentation.js /tmp/poem.json
@@ -745,8 +752,15 @@ non-verse lines from the temporary input.
 Inspect every reported indentation candidate against the facsimile. A uniform
 offset at a page break is suspicious, but a new numbered division may
 legitimately use its own indentation profile. Rerun the analysis after changing
-indentation. The report is diagnostic only; a stable profile or no candidates
-does not prove that indentation is correct.
+indentation. For a stanza mismatch, compare every item in `mismatches` with the
+facsimile and record the disposition. The report is diagnostic only; a stable
+profile or no candidates does not prove that indentation is correct.
+
+`no_stable_pattern` is not a passing result for a reviewed poem. First confirm
+that stanza boundaries are correct and rerun the analysis. If the status
+remains, record a finding with the facsimile-based indentation assessment and
+resolve it as a genuine irregularity or a corrected transcription. Never accept
+the status merely because the analyzer emitted no line-level candidates.
 
 Continue structural analysis across page breaks. A page break is not in itself
 a stanza break.
@@ -811,6 +825,10 @@ Third line
 ```
 
 Preserve genuine irregular indentation when it is visibly present.
+
+For repeated same-length stanzas, compare corresponding line positions across
+all stanzas. Inspect isolated disagreements as carefully as multi-line shifts;
+several scattered one-line errors may otherwise evade a run-based analysis.
 
 ## 11. Represent prose correctly
 
@@ -1307,6 +1325,11 @@ The task is complete only when all applicable items are true:
 - [ ] The bundled indentation analysis was run for every poem with leading
       spaces preserved, rerun after indentation changes, and every candidate
       was resolved against the facsimile.
+- [ ] Stanza-boundary candidates were resolved before the final indentation
+      analysis, and the analysis input was regenerated from that reviewed
+      structure.
+- [ ] Every `no_stable_pattern` result was recorded and dispositioned against
+      the facsimile rather than accepted as a pass.
 - [ ] Indentation was verified visually and represented with spaces.
 - [ ] Headings, mottoes, numbers and decorations are not ordinary verse lines.
 - [ ] Footnotes are placed at the text locations to which they belong.

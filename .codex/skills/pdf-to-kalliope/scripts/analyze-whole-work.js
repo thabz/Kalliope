@@ -30,6 +30,8 @@ const analyzeWholeWork = xml => ({
     const longUnbrokenBlock =
       stanza.observed_stanza_lengths.length === 1 &&
       stanza.verse_line_count >= longBlockThreshold;
+    const unresolvedIndentationPattern =
+      indentation.status === 'no_stable_pattern';
     return {
       text_id: poem.text_id,
       pages: poem.pages,
@@ -44,6 +46,15 @@ const analyzeWholeWork = xml => ({
           type: 'very-long-unbroken-block',
           verse_line_count: stanza.verse_line_count,
           reason: `Poesiblokken har ${stanza.verse_line_count} linjer uden strofegrænser.`,
+        }] : []),
+        ...(unresolvedIndentationPattern ? [{
+          source: 'wrapper',
+          type: 'indentation_pattern_unresolved',
+          verse_line_count: indentation.verse_line_count,
+          reason:
+            'Indrykningsanalysen kunne ikke etablere et stabilt mønster. Profilen skal kontrolleres og dispositioneres manuelt mod facsimilet.',
+          action:
+            'Kontrollér først strofegrænserne, kør analysen igen, og registrér derefter den facsimilebaserede vurdering.',
         }] : []),
       ],
     };

@@ -132,6 +132,25 @@ describe('whole-work structure wrapper', () => {
       verse_line_count: 80,
     }));
   });
+
+  it('requires manual disposition when no indentation pattern is stable', () => {
+    const indentations = [0, 7, 2, 11, 4, 1, 9, 3, 12, 5, 8, 2];
+    const lines = indentations
+      .map((indentation, index) => `${' '.repeat(indentation)}Vers ${index + 1}`)
+      .join('\n');
+    const xml = workXml.replace(
+      /<body><poetry>[\s\S]*?<\/poetry><\/body>/,
+      `<body><poetry>${lines}</poetry></body>`,
+    ).replace('pages="10-12"', 'pages="10"');
+    const [poem] = analyzeWholeWork(xml).poems;
+
+    expect(poem.indentation.status).toBe('no_stable_pattern');
+    expect(poem.candidates).toContainEqual(expect.objectContaining({
+      source: 'wrapper',
+      type: 'indentation_pattern_unresolved',
+      verse_line_count: 12,
+    }));
+  });
 });
 
 describe('historical OCR candidate profile', () => {
