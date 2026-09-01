@@ -84,7 +84,7 @@ describe('prepare Kalliope title page', () => {
     expect(fs.existsSync(result.transformPath)).toBe(true);
   });
 
-  it('requires visual inspection before promotion', async () => {
+  it('promotes automatically when the machine checks pass', async () => {
     const source = path.join(root, 'source.jpg');
     const candidate = path.join(root, 'candidate.jpg');
     const finalImage = path.join(root, 'public', 'work-p1.jpg');
@@ -94,19 +94,9 @@ describe('prepare Kalliope title page', () => {
       crop: { left: 45, top: 45, width: 830, height: 1130 },
     });
 
-    const firstQa = await qaTitlePage(source, candidate, {
-      comparison: path.join(root, 'compare-before.jpg'),
-      report: path.join(root, 'qa-before.json'),
-    });
-    expect(firstQa.status).toBe('manual-review');
-    expect(firstQa.checks.visualReview).toBe(false);
-    expect(fs.existsSync(finalImage)).toBe(false);
-
     const acceptedQa = await qaTitlePage(source, candidate, {
-      comparison: path.join(root, 'compare-after.jpg'),
       promote: finalImage,
       report: path.join(root, 'qa-after.json'),
-      visualPass: true,
     });
     expect(acceptedQa.status).toBe('pass');
     expect(acceptedQa.promotedTo).toBe(path.resolve(finalImage));
@@ -123,9 +113,7 @@ describe('prepare Kalliope title page', () => {
     });
 
     const qa = await qaTitlePage(source, candidate, {
-      comparison: path.join(root, 'compare.jpg'),
       report: path.join(root, 'qa.json'),
-      visualPass: true,
     });
 
     expect(qa.status).toBe('manual-review');
@@ -145,9 +133,7 @@ describe('prepare Kalliope title page', () => {
     fs.writeFileSync(candidate, changed);
 
     const qa = await qaTitlePage(source, candidate, {
-      comparison: path.join(root, 'compare.jpg'),
       report: path.join(root, 'qa.json'),
-      visualPass: true,
     });
 
     expect(qa.status).toBe('manual-review');
@@ -172,7 +158,6 @@ describe('prepare Kalliope title page', () => {
       jpegOutput: true,
       deterministicTransform: true,
       noUpscaling: true,
-      visualReview: true,
     })).toBe(true);
   });
 
@@ -223,5 +208,27 @@ describe('prepare Kalliope title page', () => {
     );
 
     expect(result.trim.top).toBe(0);
+  });
+
+  it('removes a dark edge remnant concentrated at a corner', () => {
+    const width = 100;
+    const height = 100;
+    const data = Buffer.alloc(width * height * 3, 220);
+    for (let y = 0; y < 30; y += 1) {
+      for (let x = width - 3; x < width; x += 1) {
+        const pixel = (y * width + x) * 3;
+        data[pixel] = 20;
+        data[pixel + 1] = 20;
+        data[pixel + 2] = 20;
+      }
+    }
+
+    const result = refineDarkCropEdges(
+      { channels: 3, data, height, width },
+      { left: 0, top: 0, width, height },
+      { r: 220, g: 220, b: 220 }
+    );
+
+    expect(result.trim).toEqual({ left: 0, right: 3, top: 0, bottom: 0 });
   });
 });

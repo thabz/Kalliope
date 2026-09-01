@@ -52,8 +52,9 @@ Titelbladet må ikke:
 
 ## Kvalitetskontrol
 
-Sammenlign altid kilden og kandidaten visuelt i samme størrelse. Et resultat
-kan kun godkendes automatisk, når alle disse forhold er opfyldt:
+Vis ikke en billedsammenligning til brugeren som godkendelsesled. Et resultat
+går automatisk videre, når analysen har status `candidate`, QA har status
+`pass`, og disse forhold er opfyldt:
 
 1. Det er den korrekte titelbladsside.
 2. De bærende tekstlinjer fremstår vandrette.
@@ -64,9 +65,10 @@ kan kun godkendes automatisk, når alle disse forhold er opfyldt:
 7. Outputtet er ikke opskaleret, og højst 5% er beskåret fra hver enkelt kant
    efter rotationen.
 
-Kantmålingen udføres i fuld opløsning. Sammenhængende mørke scannerstriber
-beskæres, indtil striben ophører; lokale mørke genstande som sideklemmer må
-ikke udløse yderligere beskæring.
+Kantmålingen udføres i fuld opløsning. Sammenhængende mørke scannerstriber og
+mørke rester, der hænger sammen med et hjørne, beskæres, indtil de ophører.
+Lokale mørke genstande væk fra hjørnerne, som sideklemmer, må ikke udløse
+yderligere beskæring.
 
 Ved alvorlig perspektivforvrængning, buede tekstlinjer, utydelig papirkant,
 meget lidt genkendelig tekst eller tvivl om indholdstab er status
