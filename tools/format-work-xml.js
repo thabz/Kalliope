@@ -38,6 +38,7 @@ const metadataFields = [
   'notes',
   'pagebreaks',
   'pictures',
+  'proofreadings',
   'quality',
   'rhyme',
   'source',
@@ -97,6 +98,10 @@ const splitAnalysisMetadata = xml => xml
     '$1\n',
   )
   .replace(/(<analysis\b[^<>]*\/>)(?!\r?\n)/g, '$1\n');
+
+const splitProofreadings = xml => xml
+  .replace(/(<proofreadings>)(?!\r?\n)/g, '$1\n')
+  .replace(/(<proofreading\b[^<>]*\/>)(?!\r?\n)/g, '$1\n');
 
 const nonumWrapperNames = [
   'nonum',
@@ -217,7 +222,9 @@ export const formatWorkXml = xml => {
   const withSplitMetadata = splitAdjacentMetadataFields(
     withoutStructuralIndentation,
   );
-  const withPoetryLines = splitPoetryLines(splitAnalysisMetadata(withSplitMetadata));
+  const withPoetryLines = splitPoetryLines(
+    splitProofreadings(splitAnalysisMetadata(withSplitMetadata)),
+  );
   const withMetadataIndentation = indentMetadata(withPoetryLines);
   return addSectionSpacing(addTextSpacing(withMetadataIndentation))
     .trimEnd() + '\n';

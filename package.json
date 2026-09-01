@@ -25,6 +25,7 @@
     "new-text-id": "node tools/new-text-id.js",
     "poetic-form": "node tools/poetic-form/poetic-form.js",
     "validate-new-text-ids": "node tools/validate-new-text-ids.js",
+    "validate-facsimile-completions": "node tools/validate-facsimile-completions.js",
     "report-ocr-candidates": "DISABLED_TESTS=\"repeated-adjacent-word\" node tools/report-ocr-candidates.js",
     "report-salmonsen-biographies": "node tools/report-salmonsen-biographies.js",
     "build-static": "node tools/build-static.js",
