@@ -11,6 +11,9 @@
   </pictures>
   <source href="https://www.kb.dk/e-mat/dod/115308041085-color.pdf" facsimile="115308041085_color" facsimile-pages-num="393" facsimile-pages-offset="13">Jens Baggesen: <i>Nye blandede Digte</i>, Frederik Brummers Forlag, trykt hos Z. Breum, Kjøbenhavn, 1807.</source>
   <pagebreaks/>
+  <proofreadings>
+    <proofreading model="gpt-5.4" datetime="2026-09-02T01:04:44+02:00"/>
+  </proofreadings>
 </workhead>
 <workbody>
 
@@ -18,7 +21,7 @@
 <head>
   <title>Fortale</title>
   <source pages="i-ii" facsimile-pages="10-11"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <prose>
@@ -31,16 +34,16 @@ Skrevet i Kiøbenhavn, den 1ste Mai 1807.
 </body>
 </text>
 
-<text id="baggesen2026090102">
+<text id="baggesen2026090102" ignore-tests="pagebreak-count">
 <head>
   <title>Til Frederik, Kronprinds af Dannemark</title>
   <firstline>Naar tvende Rigers Brødrestemmer lyde</firstline>
   <source pages="1-12"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<pb n="2" facs="014.jpg"/><pb n="3" facs="015.jpg"/>Naar tvende Rigers Brødrestemmer lyde,
+<pb n="3" facs="015.jpg"/>Naar tvende Rigers Brødrestemmer lyde,
 Fra Slot og Hytte, henrykt til Din Priis,
 Naar Hiemmets Jubler Tak Dig og Beundring yde,
 Mens Fremmede maa selv, trods Avind, lydt udbryde:
@@ -108,7 +111,7 @@ Henflagre til Dit Alters Fod, og — døe.
   <title>Til Maria, Kronprindsesse af Dannemark</title>
   <firstline>Første, bedste, blideste blandt Qvinder</firstline>
   <source pages="15-18"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -158,13 +161,13 @@ Døden, som han selv tilønsker sig!
 <text id="baggesen2026090104" ignore-tests="repeated-adjacent-word">
 <head>
   <title>De Danskes Priis, af Tasso, eller Svends Død</title>
-  <subtitle>Episode af det befriede Jerusalems ottende Bog</subtitle>
+  <subtitle>(Episode af det befriede Jerusalems ottende Bog.)</subtitle>
   <firstline>Uveiret var forbi; den rædsomste blandt Nætter</firstline>
   <notes>
     <note>Gendigtning af Torquato Tasso: <xref type="translation" poem="tasso2018062208"/>.</note>
   </notes>
   <source pages="19-48"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -175,7 +178,7 @@ Brød Morgnens Hære frem af Østens Sletter,
 Bebudende Naturen Solens Seir.
 
 <pb n="20" facs="032.jpg"/>Den sidste Torden taug; dog Mørkets Sværme giøde
-End Helved - Edder i de svundne Stormes Spor;
+End Helveds-Edder i de svundne Stormes Spor;
 
 Og svævende din Flugt, Alekto, trædsk imøde
 Udbrød den giftigste blandt Aander, Astragor:
@@ -200,43 +203,43 @@ Udbrød den giftigste blandt Aander, Astragor:
 
 "Alekto værdig er en saadan Daad', "
 Saa slutted Astragor, "vor Fyrste vil paaskiønne
-"Din Iver, og med. Edles Blod og Graad
+"Din Iver, og med Ædles Blod og Graad
 "Dens Udfald til hans Thrones Ære lønne."
 Ham hørte Furien, og fulgte Vinket froe.
 Imidlertid var alt hin Ridder tæt ved Skandsen,
-<pb n="22" facs="034.jpg"/>    Og raabte: "viser mig i Hast, og uden Standsen
-    "Til Øverstens Paulun; mit Bud kan ei beroe."
+<pb n="22" facs="034.jpg"/>Og raabte: "viser mig i Hast, og uden Standsen
+"Til Øverstens Paulun; mit Bud kan ei beroe."
 
 Ham Veien viistes strax; og, graadig efter snart
-    At vide, hvad bebuder slig en Fart,
+At vide, hvad bebuder slig en Fart,
 
-    Løb efter ham de studsende Gelidder.
+Løb efter ham de studsende Gelidder.
 
-    Erbødig nærmer sig den danske Ridder,
+Erbødig nærmer sig den danske Ridder,
 
-    Og beiende sig dybt hen over blanke Skiold:
+Og beiende sig dybt hen over blanke Skiold:
 
-    "Fyrste, "brød han ud, hvis Lov alt tusindfold
-    "Fra Syd til Nord paa Christnes Læber klinger!
-    "Med tunge Suk jeg dig et qvalfuldt Budskab bringer.
+"Fyrste, "brød han ud, hvis Lov alt tusindfold
+"Fra Syd til Nord paa Christnes Læber klinger!
+"Med tunge Suk jeg dig et qvalfuldt Budskab bringer.
 
-    "De Danskes Kronprinds, en ærværdig Faders Stav
-    "Og ene Søn, den unge Svend, alt længe
-<pb n="23" facs="035.jpg"/>    "Af ædel Iver brændte, sig at trænge
-    "Trods hver en Hindring over Land og Hav,
+"De Danskes Kronprinds, en ærværdig Faders Stav
+"Og ene Søn, den unge Svend, alt længe
+<pb n="23" facs="035.jpg"/>"Af ædel Iver brændte, sig at trænge
+"Trods hver en Hindring over Land og Hav,
 
-    "Til fælleds Tog med dig mod Christenhedens Fiende.
-    "Den Lod, at kiæmpe her med dig, han fandt saa skiøn,
-    "At Diademets Vink, og selv hans Faders Bøn
+"Til fælleds Tog med dig mod Christenhedens Fiende.
+"Den Lod, at kiæmpe her med dig, han fandt saa skiøn,
+"At Diademets Vink, og selv hans Faders Bøn
 
-    "Ei mægtig var, hans kiække Sind at vende.
+"Ei mægtig var, hans kiække Sind at vende.
 
-    "En i uvirksomt Mag henslumret Løbebane
-    "Hans ærelystne Siæl ei agted Lyset værd;
-    "At lære Kunsten, ret at ordne Ledingsfærd,
-    "Han ilede til Kunstens Mesters Fane.
-    "Hvor rødmed han, at alt Rinaldos Orlogsdands,
-    "Med lige Skridt af Aar, ham led saa langt tilbage!
+"En i uvirksomt Mag henslumret Løbebane
+"Hans ærelystne Siæl ei agted Lyset værd;
+"At lære Kunsten, ret at ordne Ledingsfærd,
+"Han ilede til Kunstens Mesters Fane.
+"Hvor rødmed han, at alt Rinaldos Orlogsdands,
+"Med lige Skridt af Aar, ham led saa langt tilbage!
 <pb n="24" facs="036.jpg"/>"Dog stedse stod hans Hu, selv i hans Barndoms Dage,
 "Langt meer til Himmelens, end Jordens Palmers Glands.
 
@@ -252,19 +255,14 @@ Ham Veien viistes strax; og, graadig efter snart
 "I hvilken Tyrken saae din Orlogs Morgenrøde.
 
 <pb n="25" facs="037.jpg"/>"Og meldte hvor din Hær, trods Fiendens Overmagt,
-
 "Skiøndt Persien brød op med alle sine Skarer,
-
 "Utallige, som Hagl der over Marken farer,
-
 "Gik frem, med snare Skridt, mod Zion uforfagt.
 
 "Beskrev ham Dig, og giorde ham bekiendt
 
 "Med dine Kiæmper, og med alle Korsets Helte,
-
 "Og endelig, med ham, som fleest i Kampen fældte,
-
 "Rinaldo, der forlængst hans Higen havde tændt.
 
 "Tilsidst beretted han, hvorlunde nu dit Bud
@@ -295,31 +293,29 @@ Ham Veien viistes strax; og, graadig efter snart
 "Skiøndt han en Omvei havde kunnet tage;
 "Men, trods hver Hindring, gik han ligefrem,
 
-    "Snart greb os Mangel, snart en Trop af Fiender an;
+"Snart greb os Mangel, snart en Trop af Fiender an;
 "Med nye Farer Skridt for Skridt vi maatte kiempe;
-<pb n="28" facs="040.jpg"/>    "Men ingen sveeg, i Spidsen lynte han';
+<pb n="28" facs="040.jpg"/>"Men ingen sveeg, i Spidsen lynte han';
 
-    "Og vor Begeistring intet kunde dæmpe.
+"Og vor Begeistring intet kunde dæmpe.
 
-    "Rask fulgte vi hans Spor, og vore Barder sang;
-    "Thi Seier kronte vor forvovne Møie,
-    "Indtil en Dag ved Solens Undergang
-    "Vi skued Palestinas nære Høie.
+"Rask fulgte vi hans Spor, og vore Barder sang;
+"Thi Seier kronte vor forvovne Møie,
+"Indtil en Dag ved Solens Undergang
+"Vi skued Palestinas nære Høie.
 
-    "Her fandt vi vore Speidere; men Skræk
+"Her fandt vi vore Speidere; men Skræk
 
-    "Stod malt i deres Blikke; hvad de meldte,
+"Stod malt i deres Blikke; hvad de meldte,
+"De Ældste Heltes Mod i Hæren fældte,
+"Kun Hærens unge Fører end blev kiæk.
 
-    "De Ældste Heltes Mod i Hæren fældte,
+"Han hørte rolig, kold, med Smiil, og uforfærdet,
+"Hvor nær os trued Fiendens største Magt.
 
-    "Kun Hærens unge Fører end blev kiæk.
+"Og medens alle blegnede forsagt,
 
-    "Han hørte rolig, kold, med Smiil, og uforfærdet,
-    "Hvor nær os trued Fiendens største Magt.
-
-    "Og medens alle blegnede forsagt,
-
-    "Fremtreen han, svingende med Seiersmine Sværdet.
+"Fremtreen han, svingende med Seiersmine Sværdet.
 
 <pb n="29" facs="041.jpg"/>"To Kroner," lød hans Ord, "nu straaler os imøde:
 "En Seierskrone hist, og her en Martyrkrands.
@@ -394,7 +390,7 @@ Ham Veien viistes strax; og, graadig efter snart
 "I deres Spor! "saa raabte han: "vort Mod
 "Dem efterligne! Martyrpalmen smiler!"
 
-<pb n="33" facs="045.jpg"/>    "Han smilte; svang med sidste Kraft sit Sværd,
+<pb n="33" facs="045.jpg"/>"Han smilte; svang med sidste Kraft sit Sværd,
 "Og froe, saa syntes det, sig til sit Maal at vende,
 "Foer han imøde Fiendens friske Hær,
 
@@ -402,31 +398,29 @@ Ham Veien viistes strax; og, graadig efter snart
 "Hans ranke Krop, af tusind Skrammer alt
 
 "Eet blodigt Saar, sig styrtede, lig Døden,
-
 "I Hedningernes Midte. Rundtom faldt,
-
 "Hvad ikke flygtede, hans sidste Møden.
 
-    "Din Almagt, høie Dyd, hans Sværd endnu gav Vinger,
+"Din Almagt, høie Dyd, hans Sværd endnu gav Vinger,
 "Og sammenholdt endnu hans sønderhugne Krop.
 "Saa rædsomt er for hvert et Skib, som det omringer,
-<pb n="34" facs="046.jpg"/>    "Et synkefærdigt Vrag, som gaaer i Flammer op.
-    "Dog endelig, omstormt af stedse nye Farer,
-    "Igiennembor't af en uvoren Kiæmpes Spyd,
-    "Han, midt i Fiendens skrækforstenede Skarer,
-    "Sank under Vægten af sin egen Dyd.
+<pb n="34" facs="046.jpg"/>"Et synkefærdigt Vrag, som gaaer i Flammer op.
+"Dog endelig, omstormt af stedse nye Farer,
+"Igiennembor't af en uvoren Kiæmpes Spyd,
+"Han, midt i Fiendens skrækforstenede Skarer,
+"Sank under Vægten af sin egen Dyd.
 
-    "Ei faldt han overvundet; Fienden bæved
-    "End for den segnendes usvækkelige Mod.
+"Ei faldt han overvundet; Fienden bæved
+"End for den segnendes usvækkelige Mod.
 "Hans seierstolte Siæl sig først til Himlen hæved,
-    "Da ned paa Jorden randt hans sidste Draabe Blod.
-    "Den sidste sank han - ingen var tilbage.
-    "Jeg eene - Ak! Forklarede: du veed,
-    "At ei ved egen Skyld mig spartes mine Dage:
-    "Du veed, at jeg med dig til Døden stred!
+"Da ned paa Jorden randt hans sidste Draabe Blod.
+"Den sidste sank han - ingen var tilbage.
+"Jeg eene - Ak! Forklarede: du veed,
+"At ei ved egen Skyld mig spartes mine Dage:
+"Du veed, at jeg med dig til Døden stred!
 
 <pb n="35" facs="047.jpg"/>"Blandt dem, som om min Prinds i Slaget faldt,
-"Laae jeg, i eget Blod, et Vidne til hans Wre;
+"Laae jeg, i eget Blod, et Vidne til hans Ære;
 "Og døende med ham, min Siæl sig drømmed alt
 "I Salighedens Hiem imellem Lysets Hære.
 "Saa laae jeg længe blandt de elskte Lig,
@@ -437,27 +431,25 @@ Ham Veien viistes strax; og, graadig efter snart
 "Jeg vaagned op, som af en bange Drøm,
 "Og skued Lysningen sig Stedet nærme,
 
-<pb n="36" facs="048.jpg"/>    "Hvor jeg udmattet laae, for kraftløs og for øm
+<pb n="36" facs="048.jpg"/>"Hvor jeg udmattet laae, for kraftløs og for øm
 
-    "Til Flugt, end sige til mit Liv at skierme.
+"Til Flugt, end sige til mit Liv at skierme.
 
-    "Og ændsed jeg det lidet; mine Saar
+"Og ændsed jeg det lidet; mine Saar
 
-    "Begyndte, mig saa smertelig at brænde,
+"Begyndte, mig saa smertelig at brænde,
+"At jeg misundte mine Brødres Kaar,
+"Hvis Lidelser med Døden var til Ende.
 
-    "At jeg misundte mine Brødres Kaar,
+"Lidt efter lidt tog denne Lysning til;
+"Og den sig nærmende matblege Flimmer,
+"Som halv jeg tog for min Indbildnings Spil
+"Blev for mit Øie til en Fakkelskimmer;
 
-    "Hvis Lidelser med Døden var til Ende.
-
-    "Lidt efter lidt tog denne Lysning til;
-    "Og den sig nærmende matblege Flimmer,
-    "Som halv jeg tog for min Indbildnings Spil
-    "Blev for mit Øie til en Fakkelskimmer;
-
-    / "To Munke saae jeg nu med tændte Fakler staae
-    "Tæt ved mig: "Reis dig op min Søn," saa talte
-    "Den ene, "du din Lid til din Forløser slaae! "-
-    "Min Smertes Brand den blide Stemme svalte.
+"To Munke saae jeg nu med tændte Fakler staae
+"Tæt ved mig: "Reis dig op min Søn," saa talte
+"Den ene, "du din Lid til din Forløser slaae! "-
+"Min Smertes Brand den blide Stemme svalte.
 
 <pb n="37" facs="049.jpg"/>"Han bøiede sig over mig, og slog
 "Tre høitidsfulde Kors, og paa mit Hierte lagde
@@ -477,7 +469,7 @@ Ham Veien viistes strax; og, graadig efter snart
 "Vi hellige vort Liv til vor Forsoners Ære,
 "Blandt disse Field, i Eensomhedens Arm,
 
-"For dig at redde, førte han, hvis Die
+"For dig at redde, førte han, hvis Øie
 "Fra Pol til Pol bevogter alt, mit Fied
 "Igiennem Nattens Mulm til disse Høie,
 "Og gav sin ringe Træl den Magt, du studser ved.
@@ -487,7 +479,7 @@ Ham Veien viistes strax; og, graadig efter snart
 "Men at det ædle Støv skal nyde hellig Roe,
 
 <pb n="39" facs="051.jpg"/>"Han vil, at Svends det store Lig skal finde
-"Selv her 'i Ørken den fortiente Bautasteen:
+"Selv her i Ørken den fortiente Bautasteen:
 "Et høit, urokkeligt, og evigt Hædersminde,
 "Fortællende hans Daad, skal dække Heltens Been.
 "Blik op mod Himlen! skue blandt hine Straaler
@@ -504,50 +496,50 @@ Ham Veien viistes strax; og, graadig efter snart
 <pb n="40" facs="052.jpg"/>"End skiøn i Dødens Favn! Forklart af Himlens Smile,
 "Hvor herligt straalede hvert blodigt Saar!
 
-    "Han laae, med opad vendet Aasyn, rolig,
+"Han laae, med opad vendet Aasyn, rolig,
 
-    "Et Smil paa Læben, som om end hans Blik
-    "Opstirrede til Lysets høie Bolig,
+"Et Smil paa Læben, som om end hans Blik
+"Opstirrede til Lysets høie Bolig,
 
-    "Hvis Hersker ordnede den Gang, han gik.
+"Hvis Hersker ordnede den Gang, han gik.
 
-    "Hans Høire kramped sig om Fæstet end af Sværdet,
-    "Som i Begreb det sidste Slag at slaae;
+"Hans Høire kramped sig om Fæstet end af Sværdet,
+"Som i Begreb det sidste Slag at slaae;
 
-    "Men andagtsfuld i Liv og Død, som ufors færdet,
-    "Den venstre signende paa Brystet laae,
+"Men andagtsfuld i Liv og Død, som uforsfærdet,
+"Den venstre signende paa Brystet laae,
 
-<pb n="41" facs="053.jpg"/>    "Mens Vallen rundt gienlød af mine Skrig og Sukke,
+<pb n="41" facs="053.jpg"/>"Mens Vallen rundt gienlød af mine Skrig og Sukke,
 "Og jeg i Taarers Blod udstrømmede min Aand,
 "Jeg Eremiten saae sig ned mod Liget bukke,
-    "Og vriste Sværdet af den Faldnes blege Haand:
+"Og vriste Sværdet af den Faldnes blege Haand:
 
-    "Skue dette Sværd, end rødt af Blod af tusind Fiender,
-    "Der faldt, hvor han det svang! ulignelig i Værd
+"Skue dette Sværd, end rødt af Blod af tusind Fiender,
+"Der faldt, hvor han det svang! ulignelig i Værd
 
-    "Er Klingen! Fra dit Hiem til Jordens Ender
+"Er Klingen! Fra dit Hiem til Jordens Ender
 
-    "Ei findes Mage til den danske Fyrstes Sværd!
+"Ei findes Mage til den danske Fyrstes Sværd!
 
-    "Han, som deroppe hersker, vil at samme,
-    "Skiendt Haanden sank, som forte det, endnu
-    "Skal tusind Fiender til hans Riges Ære ramme,
-    "Og længe vorde Hedningernes Gru.
-<pb n="42" facs="054.jpg"/>    "Han binder til dets Fæste Krigens Skiæbne;
-    "Saa lyder over det den Herres Herres Ord:
-    "Den ædle Krigers Haand skal dette Sværd bevæbne,
-    "Som hevner Svends, den danske Fyrstes, Mord.
+"Han, som deroppe hersker, vil at samme,
+"Skiendt Haanden sank, som førte det, endnu
+"Skal tusind Fiender til hans Riges Ære ramme,
+"Og længe vorde Hedningernes Gru.
+<pb n="42" facs="054.jpg"/>"Han binder til dets Fæste Krigens Skiæbne;
+"Saa lyder over det den Herres Herres Ord:
+"Den ædle Krigers Haand skal dette Sværd bevæbne,
+"Som hevner Svends, den danske Fyrstes, Mord.
 
-    "Ham Soliman har dræbt, og Soliman skal segne
-    "For dette Sværd! Modtag det, unge Mand,
-    "Og iil dermed herfra til Zions Egne,
-    "Hvor Gotfreds Leir mod Fienden holder Stand!
-    "Gaae kiæk og uforfærdet, trods hver Møie,
-    "Hver Fare, hver en Fiende, ligefrem!
-    "Dit Liv beskytter han, hvis Forsyns Øie
-    "Bevogter alt! Iil til Jerusalem!
+"Ham Soliman har dræbt, og Soliman skal segne
+"For dette Sværd! Modtag det, unge Mand,
+"Og iil dermed herfra til Zions Egne,
+"Hvor Gotfreds Leir mod Fienden holder Stand!
+"Gaae kiæk og uforfærdet, trods hver Møie,
+"Hver Fare, hver en Fiende, ligefrem!
+"Dit Liv beskytter han, hvis Forsyns Øie
+"Bevogter alt! Iil til Jerusalem!
 
-<pb n="43" facs="055.jpg"/>"Fortæl, hvad du har feet, fortæl i Leiren
+<pb n="43" facs="055.jpg"/>"Fortæl, hvad du har seet, fortæl i Leiren
 "De Danskes Heltedaad, din Fyrstes Død!
 "Lad Melden om det ædle Blod, som flød,
 "Opflamme hvert et Bryst til Kiempen og til Seiren!
@@ -586,7 +578,7 @@ Ham Veien viistes strax; og, graadig efter snart
 
 "Hans Mausolee skal trodse Storm og Torden,
 "Og staae til Tyrkens Skræk, som Helten stod.
-"Omringt af sine. Mænd hans Been her rolig hvile.
+"Omringt af sine Mænd hans Been her rolig hvile.
 "Begræd ei meer den Salige! Følg med
 
 "Og hvil dig ud hos os, for, rask, paa lette Fied
@@ -621,9 +613,9 @@ Den danske Ridder taug; og Gotfred talte:
 
 "Den meest udvalgte, Solen kiæmpe saae!
 "Svend, og de samtlige: som med ham vare,
-"Saa tidlig ind i Evigheden gaae!.
+"Saa tidlig ind i Evigheden gaae!
 
-    "Men ak! kun os, ei Eder jeg begræder,
+"Men ak! kun os, ei Eder jeg begræder,
 "I altforherlige, hvis Palmers Glands
 "Kun Glædens Taarer og Beundringens tilsteder! -
 "Jeg seer dig kront med Evighedens Krands,
@@ -641,7 +633,7 @@ Den danske Ridder taug; og Gotfred talte:
 
 "Dig, eene Rest af dine Brødre, værd
 
-"Det danske Navn! Dig lønne her den Ere,
+"Det danske Navn! Dig lønne her den Ære,
 
 "Mit Togs, de Christnes Skiebne, stolt at bære:
 
@@ -652,93 +644,93 @@ Den danske Ridder taug; og Gotfred talte:
 
 <text id="baggesen2026090105">
 <head>
-  <title>Homers Ilias. Første Rhapsodie</title>
-  <firstline>Syng, Gudinde, den Harm, som tændte Pelidens Achilleus</firstline>
+  <title>Homers Ilias</title>
+  <subtitle>Første Rhapsodie.</subtitle>
+  <firstline>Syng, Gudinde, den Harm, som tændte Peleidens Achilleus</firstline>
   <source pages="49-129"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Syng, Gudinde, den Harm, som tændte Pes lidens Achilleus
+Syng, Gudinde, den Harm, som tændte Peleidens Achilleus
 Hierte til Hævn, og Achaiernes Folk voldt tusinde Qvaler;
-    (
-Da den Kiæmpernes Skygger i talles Mængde til Ais
+Da brat Kiæmpernes Skygger i talløs Mængde til Dis
 <pb n="50" facs="062.jpg"/>Styrtede brat, og dem selv gav Priis tilstimlende Hunde
-Samt Rovfuglenes Sværm. Zeus Raad saa  vordede fuldbragt:
+Samt Rovfuglenes Sværm. Zeus' Raad saa vordede fuldbragt:
 Fra den Dag, da ved Tvist adskilledes først fra hinanden
-Atreus herskende Son, og den herlige Kiæmper Achilleus.
+Atreus herskende Søn, og den herlige Kiæmper Achilleus.
 Hvo blandt Guderne vakte den Splid, som skildte dem fiendtlig? -
-Zeus og Letos Sen. Thi han, mod Herskeren optændt,
+Zeus og Letos Søn. Thi han, mod Herskeren optændt,
 Sendte til Leiren ulægelig Soet; og Folkene hensank,
 <pb n="51" facs="063.jpg"/>Bødende Gudens den yndede Præsts Forhaaning af Drotten
-Atreus Son. Han kom til Achaiernes hurtige Snekker,
+Atreus Søn. Han kom til Achaiernes hurtige Snekker,
 Bringende Skiænk af umaadeligt Værd, for at løse sin Datter,
-Bærende Fobos Apollons, den vidthentam mendes, Laurkrands
-Over den gyldene Stav, og bonfaldt alle Hellener,
+Bærende Fobos Apollons, den vidthenrammendes, Laurkrands
+Over den gyldene Stav, og bønfaldt alle Hellener,
 Dog Atriderne fremmest, de to Hærskarernes Drotter:
-Atreus Sønner og I, sodskimrende Danaer, samtlig!
-Eder forleene de heit i Olympgaard thronende Guder
+Atreus Sønner og I, sølvskimrende Danaer, samtlig!
+Eder forleene de høit i Olympgaard thronende Guder
 <pb n="52" facs="064.jpg"/>Priamos Stads Nedbrud, og den velforønskede Hiemfart!
 Men frigiver mit elskede Barn, og annammer min Løsning,
-Erefrygtende Zeus fiernrammende Son Apollon!
+Erefrygtende Zeus' fiernrammende Søn Apollon!
 Flux bifaldende skingred Hellenernes samtlige Tilraab:
 Præsten at ære med Frygt, og annamme den glimrende Løsning.
-Atreus mægtige Søn, Agamemnon, eene bez streed det:
+Atreus mægtige Søn, Agamemnon, eene bestreed det:
 Vægrende jog han ham bort, og tiltalte ham haanlig med Trudsel:
-<pb n="53" facs="065.jpg"/>    Gamle! jeg raader dig, flye for mit Blik ved de bugede Snekker
-    Flur; og viis dig ei oftereshers! dig lidt vilde nytte,
-    Traf jeg dig atter, din Stav, og Apollons krandsende Laurbær.
-    Hende jeg giver ei frie, før engang, graahærdet af Alder,
-    I min argiviske Borg hun, langt fra fædrene Hiemstavn,
-     Tiener som Væverske mig, og decler mit natlige Leie;
+<pb n="53" facs="065.jpg"/>Gamle! jeg raader dig, flye for mit Blik ved de bugede Snekker
+Flur; og viis dig ei oftere her! dig lidt vilde nytte,
+Traf jeg dig atter, din Stav, og Apollons krandsende Laurbær.
+Hende jeg giver ei frie, før engang, graahærdet af Alder,
+I min argiviske Borg hun, langt fra fædrene Hiemstavn,
+Tiener som Væverske mig, og deler mit natlige Leie;
 Tirr mig ei meere, men gak, hvis ellers du har dit Behold kiært.
     Saa han talte; men Oldingen skialv, og løb hans Befaling.
 <pb n="54" facs="066.jpg"/>Taus tilbage han gik paa det huulthenbruusende Havs Bred,
 Vandrende langt afsides, og bad med sukkende Taarer
 Høit til den herskende Søn af den guldhaarlokkede Leto:
     Hør mig, o mægtige Gud, som med sølverne Bue dit Chrysa,
-Killa, din hellige Stad, og dit Tenedos here skende skærmer,
+Killa, din hellige Stad, og dit Tenedos herskende skærmer,
 Smintheus! Saa du tilforn mig tække dit skinnende Tempel;
 Saae du mig riste tilforn, dig offrende, Tyres og Bukkes
 <pb n="55" facs="067.jpg"/>Flommede Bove med Lyst, opfyld da denne min Siels Bøn:
 Havn paa de Danaers Folk min Graad med rammende Piile!
 Saa han sukkende bad. Ham hørede Fobos Apollon.
 Fra de olympiske Toppe nediilte han, Hiertet af Harm fuldt,
-Buen om Skuldrene hængt, og det ringstildækkede. Kogger.
+Buen om Skuldrene hængt, og det ringstildækkede Kogger.
 Kolvene skungred om Skuldrene lydt, da med Vrede han fremgik
-Svingende sig; hans Die var mørkt som sortnende Natmulm.
-<pb n="56" facs="068.jpg"/>Fiern bag Skibene leiret, afsked han den vingede Dødpiil,
-Og med forfærdelig Klang sprang Strængen tilbage paa Euen.
+Svingende sig; hans Øie var mørkt som sortnende Natmulm.
+<pb n="56" facs="068.jpg"/>Fiern bag Skibene leiret, afskød han den vingede Dødpiil,
+Og med forfærdelig Klang sprang Strængen tilbage paa Buen.
 Muuler i Førstningen faldt for hans Skud, og hurtige Hunde,
 Dog tilsidst mod dem selv henvendende Piilenes Mordflugt,
 Traf han; og Baal nu ved Baal opluede Ligenes Dynger.
 Ni famfældige Dage henfoer i Leiren hans Piile.
 Men paa den tiende kaldte til Thing alt Folket Achilleus,
-<pb n="57" facs="069.jpg"/>    Skyndet i Hiertet dertil af den sneehvidarmede Here,
-    Der, for Achaiernes Folk ømtsørgende, skued dem  hendøe.
-    Som nu forsamled de var, og Forsamlingen leiret i Kreds sad,
-    Reiste sig, talende saa, Fodflyvren i Kampen, Achilleus.
-    Om i Taaget igien, Agamemnon, vende vi hiem da,
-    Sværmende heden som deden, hvis ellers Døden vi undflye.
-- Neppe! da baade nu Pest Achaierne tærer, og Drlog.
+<pb n="57" facs="069.jpg"/>Skyndet i Hiertet dertil af den sneehvidarmede Here,
+Der, for Achaiernes Folk ømtsørgende, skued dem hendøe.
+Som nu forsamled de var, og Forsamlingen leiret i Kreds sad,
+Reiste sig, talende saa, Fodflyvren i Kampen, Achilleus.
+Om i Taaget igien, Agamemnon, vende vi hiem da,
+Sværmende heden som heden, hvis ellers Døden vi undflye.
+- Neppe! da baade nu Pest Achaierne tærer, og Orlog.
 <pb n="58" facs="070.jpg"/>Dog, velan! raadspørger forud en Offrer, en Spaamand,
-    Eller en Drømudtyder, (thi Drømme jo komme fra Zeus og!)
-    Der os beteer, hvi saa saare forbittredes Fobos Apollon:
-    Om ham hellige Løfter forsømmedes? om Hekatombet,
-    Eller en rygende Duft af Lam, og uvanskede Geeder,
-    Maatte formilde hans Barm til end at afvende vor Omkomst?
-    Altsaa talede Helten, og satte sig. Pludselig fremstod
-Kalchas, Thestors Son, blandt Fuglenes Speidre den første,
+Eller en Drømudtyder, (thi Drømme jo komme fra Zeus og!)
+Der os beteer, hvi saa saare forbittredes Fobos Apollon:
+Om ham hellige Løfter forsømmedes? om Hekatombet,
+Eller en rygende Duft af Lam, og uvanskede Geeder,
+Maatte formilde hans Barm til end at afvende vor Omkomst?
+Altsaa talede Helten, og satte sig. Pludselig fremstod
+Kalchas, Thestors Søn, blandt Fuglenes Speidre den første,
 <pb n="59" facs="071.jpg"/>Han, som erkiendte hvad er, hvad tilkommende vorder, og før var;
-Og som de Danaers Snekker til Ilion havde -henveiledt
-Med sandsigende Kynde begavet af Fobos Apol Ion.
+Og som de Danaers Snekker til Ilion havde henveiledt
+Med sandsigende Kynde begavet af Fobos Apollon.
 Velberaadet i Hu han tiltalede Kredsen, og sagde:
-Peleus Son, du mig byder, o herlige, lydt at forkynde
+Peleus Søn, du mig byder, o herlige, lydt at forkynde
 Fobos Apollons Harm, hin vidthenrammende Herskers.
 Altsaa forkynder jeg her; men du tilsværg mig med Eedsagn,
 Trolig med Ord, og med Arm, mig at laane din kraftige Bistand;
 <pb n="60" facs="072.jpg"/>Eftersom vist jeg fortørner en Mand, der mægtig behersker
-Urgos Folk, og hvis Bud Achaierne samtlige lyde.
+Argos Folk, og hvis Bud Achaierne samtlige lyde.
 Stærkere dog er en Fyrste, som vred mod en Ringere fremstaaer;
 Holder han og sin Harms Udbrud tilbage for den Dag,
 Lurer det lønlige Nag dog stedse, til Hevnen er udført,
@@ -746,7 +738,7 @@ Dybt i hans hierte; derfor, sig frem, vil du mig beskærme?
 Ham giensvarte paa Stand, Fodflyvren i Kampen, Achilleus:
 Trøstig forklar du, hvad Tegn dig Himmelen gav, som du veed det!...
 <pb n="61" facs="073.jpg"/>Thi ved Apollon selv, Zeus Yndede, hvilken du Kalchas,
-Bønanraaber, saa tidt Zeus Raad du de Danser kundgiør,
+Bønanraaber, saa tidt Zeus' Raad du de Danaer kundgiør,
 Ingen, imens jeg lever, og end seer Lyset paa Jorden,
 Skal ved de bugede Snekker med voldsom Haand dig berøre,
 Være sig hvilken Achaier, og nævnte du selv Agamemnon,
@@ -755,17 +747,17 @@ Trøstig nu fattende Mod, udbrød den værdige Spaamand:
 <pb n="62" facs="074.jpg"/>Ei Hekatombet han savner med Harm, ei hellige Løfter;
 Men ham angrer hans Præst, som med Haan
     Agamemnon nu bortjog,
-Uden at give ham fris sit Barn, og annamme hans Løsning.
+Uden at give ham fri sit Barn, og annamme hans Løsning.
 Derfor sended os Jammer den Rammende, sender og end meer;
 Thi han afvender ei før sin knuusende Haand fra Fordærven,
-For hin Fader igien det vevertblikkende Møe barn,
-Uden Betaling befriet, man hiem, med et Festhes katombe,
+Før hin Fader igien det vevertblikkende Møebarn,
+Uden Betaling befriet, man hiem, med et Festhekatombe,
 Sender til Chrysa. Kun saa maaskee vi formilde ham mod os.
 <pb n="63" facs="075.jpg"/>Saa han talte med Fynd, og satte sig. See! men nu fremstod
-Atreus herskende Son, Folkshøvdingen, Drot Agamemnon,
-Optændt: Hiertet i Barmen omstrømt af kasgende Galde,
-Evulmede høit; og af Dinene foer vildtflammende Gnister.
-Først paa Kalchas et Blik henlynende, heftig han udbted:
+Atreus herskende Søn, Folkshøvdingen, Drot Agamemnon,
+Optændt: Hiertet i Barmen omstrømt af kogende Galde,
+Svulmede høit; og af Øinene foer vildtflammende Gnister.
+Først paa Kalchas et Blik henlynende, heftig han udbrød:
 "Jammerforkynder! mig stedse du gavst ubehageligt Udsagn;
 Altid finder dit Hierte Behag i ulykkelig Spaadom;
 <pb n="64" facs="076.jpg"/>Aldrig et glædende Sagn du har meldt mig, aldrig og udført!
@@ -773,66 +765,64 @@ Her nu du atter et Himmelens Tegn de Danaer melder,
 Som om derfor Jammer den Rammende Folket bereder,
 Fordi Chryses Datter jeg ei mod den glimrende Løsning
 Villigen gav. Vist nok, jeg beholdt langt hellere hende;
-Da jeg hende, for selv min Ungdoms Viv, Cly
-    . temnestra,
+Da jeg hende, for selv min Ungdoms Viv, Klytemnestra,
 Holder i Agt; som hun og ei ringere findes i noget,
-Hverken i Vært, eller Blik, eller Vid og kosteligt Arbeid.
+Hverken i Væxt, eller Blik, eller Vid og kosteligt Arbeid.
 <pb n="65" facs="077.jpg"/>Dog nu velan, jeg hende vil afstaae, synes det bedre.
-Hellere skuer jeg Folkene frelst, end Folkenes Oms komst.
+Hellere skuer jeg Folkene frelst, end Folkenes Omkomst.
 Men bereder mig skyndig en Skiænk, at ikke jeg eene
-Vorder imellem Achaierne her ubelønnet, med al Etik;
-Thi det seer. I dog samtlig, at min Belønning mig fragaaer,"
+Vorder imellem Achaierne her ubelønnet, med al Ret;
+Thi det seer I dog samtlig, at min Belønning mig fragaaer,"
 Ham nu svarede du, fodflyvende Kiæmper, Achilleus:
-Hovmodbrammende Son af Atreus, Gierriges Monster!
+Hovmodbrammende Søn af Atreus, Gierriges Monster!
 <pb n="66" facs="078.jpg"/>Hvad kan skiænke dig nu til Belønning Achaiernes Heimod?
 Veed jo dog ingen et Sted, hvor er giemt almindelig Forraad,
 Saasom, hvad Bytte vi samled i Stæderne, samtlig er uddeelt.
 Folkene sømmer og ei nu at blande paa nye hvad dem tilfaldt,
 Altsaa giv du til Guden den fordrede; men vi Achaier
-Love dig trefold Erstatning, ja fürsold, naar o engang Zeus
+Love dig trefold Erstatning, ja firfold, naar engang Zeus
 Ilions trindtommuurede Stads Udplyndring forunder.
-    Ham giensvarende talte den herskende Drot, Agas memnon:
-<pb n="67" facs="079.jpg"/>Ikke belister, hvor bold dit og er, og i Skiønhed en Gud lig,
+    Ham giensvarende talte den herskende Drot, Agamemnon:
+<pb n="67" facs="079.jpg"/>Ikke belister, hvor bold dit Mod er, og i Skiønhed en Gud lig,
 Du mig, Achilles! Omsonst du dig snoer, du fanger mig aldrig.
 Altsaa vil du for dig en Belønning; imedens jeg selv skal
-Sidde foruden? og mig befaler du dennes Giena givning?
+Sidde foruden? og mig befaler du dennes Gienagivning?
 Vel! hvis mig vorder en Skiænk tildeelt af Achaiernes Heimod
-Efter mit Sind, som mig fuldt erstatter i lige nende Værd hin -
+Efter mit Sind, som mig fuldt erstatter i lignende Værd hin -
 Ja! men tildeeles den ei, da kommer jeg selv, den at tage,
-Din Belønning maaskee, vel og Ajar, eller Odysseus,<pb n="68" facs="080.jpg"/> (
-Brugende Magten, og knap vil smile den Mand, jeg mig nærmer!
-Dog om desligeste siden vi tales vel ved med hinanden.
+Din Belønning maaskee, vel og Ajax, eller Odysseus,<pb n="68" facs="080.jpg"/>Brugende Magten, og knap vil smile den Mand, jeg mig nærmer!
+Dog om desligeste siden vi tales vel ved med hinanden. —
 Op! nedhaler et glindsende Skib i det hellige Havdyb;
-Samler i samme til Roers fuldt Mandskab; og Hekatombet
-Bringer i Rummet! Hun selv, den rosenfavre Chryseis,
-Føres ombord! og een af Fyrsterne styre, som Bruger,
-Ajar, eller og Helten Idomeneus, eller Odysseus;
-Eller, Achilles, du selv, du rædsomme Kiemperes Kiæmper!
-<pb n="69" facs="081.jpg"/>At os omsider den rammende Gud maa sonet fore mildes.
-Ham nu med truende Braa tiktalede Helten Achilleus:
-Ha! du i ublu Frækhed indhyllede Ponser paa Fordeel!
-Hvi dog adlyder dit Bud een eeneste villig i Solket,
+Samler i samme til Roers fulde Mandskab; og Hekatombet
+Bringer i Rummet! Hun selv, den rosenfavre Chryseïs,
+Føres ombord! og een af Fyrsterne føre, som Brug er,
+Ajax, eller og Helten Idomeneus, eller Odysseus;
+Eller, Achilles, du selv, du rædsomme Kiæmpers Kiæmper!
+<pb n="69" facs="081.jpg"/>At os omsider den rammende Gud maa sonet formildes.
+Ham nu med truende Braa tiltalede Helten Achilleus:
+Ha! du i ublu Frækhed indhyllede Pønser paa Fordeel!
+Hvi dog adlyder dit Bud een eeneste villig i Folket,
 Enten til speidende Gang, eller og til Fiendernes Anfald?
 Drog jeg dog ei for de Troers i Spydkamp kyndige Mænds Skyld
 Hid til standende Strid; thi mig selv de har aldrig fornærmet.
-<pb n="70" facs="082.jpg"/>Aldrigen tog de mig Gangere bort, og aldrigen Hornqvag;
-Heller og aldrig i Ftias af Avlsmænd vrimlende / Klimpegn
+<pb n="70" facs="082.jpg"/>Aldrigen tog de mig Gangere bort, og aldrigen Hornqvæg;
+Heller og aldrig i Ftias af Avlsmænd vrimlende Klimegn
 Skiændte de Frugten; i det os skiller uendeligt Rum ad,
 Skovomskyggede Bierg', og Havets bruusende Bølger.
-Dig, skamloseste Mand, dig fulgte vi, dig at fornøie;
+Dig, skamløseste Mand, dig fulgte vi, dig at fornøie;
 Søgende blot Menelaos, og dig, Uhyre, at hevne
 Her paa de Troer. Men sligt ei rører dig, agtes dig intet.
-Selv og min Belonning du truer nu, bort mig at tage
-<pb n="71" facs="083.jpg"/>    Som jeg tilkiæmpte med Sveed, og mig skiænked Achaiernes Sønner.
-    Har jeg dog aldrig en Skiænk, lig din, naar nogen af Trojas
-    Velbefolkede Stæder i Gruus de Danaer nede brød.
-    Krigens de tungeste Byrder i Slagets vildeste Tummel
-    Stedse fortroes min Arm; men saasnart til Dee ling det kommer,
-: Din er den større Belonning; og jeg, med en lie den begavet,
-    Vender fornsiet til Snekkerne hiem, udmattet af Kampen.
-    Nu jeg drager tilbage til Ftia; baader mig meer bog
-<pb n="72" facs="084.jpg"/>kiem med de snablede Snekker at gaae. Du'neppe dog, troer jeg,
-Mig vanærende her, stort vinder i Gods egi Rigdom!
+Selv og min Belønning du truer nu, bort mig at tage
+<pb n="71" facs="083.jpg"/>Som jeg tilkiæmpte med Sveed, og mig skiænked Achaiernes Sønner.
+Har jeg dog aldrig en Skiænk, lig din, naar nogen af Trojas
+Velbefolkede Stæder i Gruus de Danaer nede brød.
+Krigens de tungeste Byrder i Slagets vildeste Tummel
+Stedse fortroes min Arm; men saasnart til Deeling det kommer,
+Din er den større Belønning; og jeg, med en liden begavet,
+    Vender fornøiet til Snekkerne hiem, udmattet af Kampen.
+    Nu jeg drager tilbage til Ftia; baader mig meer dog
+<pb n="72" facs="084.jpg"/>Hiem med de snablede Snekker at gaae. Du neppe dog, troer jeg,
+Mig vanærende her, stort vinder i Gods eller Rigdom!
 Ham nu svared igien Agamemnon, Folkenes Fyrste:
 Flye kun, lyster dig saa, flye! flye! dig sandelig jeg ei
 Beder, for min Skyld dvæle! jeg har end Kiæmper omkring mig,
@@ -849,10 +839,10 @@ Sende; men jeg, jeg henter den rosenfavre Briseïs,
 <pb n="74" facs="086.jpg"/>Din Skiænk, kommende selv i dit Telt; at fuldt du maa lære
 Hvad din Magt er mod min, og enhver maa, zittre Herefter,
 Sig at maale med mig, og at byde mig Trods for mit Aasyn!
-Saa han talte; men vild blev Peleus Son, og hans Hierte
+Saa han talte; men vild blev Peleus Søn, og hans Hierte
 Under det loddene Bryst, tvefold tvivkbankende, raadslog,
 Om han det hvæssede Sværd løsrivende flux sig fra Hoften,
-Eplittende Hoben omkring, nedboerte paa Stand Agamemnon;
+Splittende Hoben omkring, nedboerte paa Stand Agamemnon;
 <pb n="75" facs="087.jpg"/>Eller nu stillede bedre sin Harm, og tæmte sin Siæls Mod.
 See! som nu dette han vog i sit Sind og Tankernes Omløb,
 Og af Skeden alt drog Storsværdet, svæved fra Himlen
@@ -864,7 +854,7 @@ Studsende skialv Achilleus, og vendte sig; flur han erkiendte
 <pb n="76" facs="088.jpg"/>Pallas Athene, thi Skræk ham lynte den Straalendes Øine.
 Fæstet paa hende hans Blik, udfoldte han Ordenes Vinger:
 Hvi kom, Datter af Zeus, den skyeskioldvæbnede, hid du?
-Mon for at see mig forhaant af Atreus Son Agamemnon?
+Mon for at see mig forhaant af Atreus Søn Agamemnon?
 O! men jeg sværger dig her, og sandelig vorder det fuldbragt:
 Hans hovmodige Frækhed om kort Tid koster ham Livet!
 Derpaa svarede Zeus bliktindrende Datter Athene:
@@ -883,51 +873,51 @@ Den, som Guderne lyder med Skye, bønhøre de naadig.
 Talt, han nu hæmte den vældige Haand i det sølverne Hæfte,
 Heelt indbælgende Sværdet igien; og handled' ei i trodsig,
 Mod Athenæas Bud. Hun selv steg op til Olympgaard.
-<pb n="79" facs="091.jpg"/>Utter, i Skioldforfærderens Borg, til de øvrige Guder.
-See! men Peliden begyndte paa nye med hefs tige Spydord
-Mod - Agamemnon; endnu han ei lod fare sin Vrede:
+<pb n="79" facs="091.jpg"/>Atter, i Skioldforfærderens Borg, til de øvrige Guder.
+See! men Peliden begyndte paa nye med heftige Spydord
+Mod Agamemnon; endnu han ei lod fare sin Vrede:
 Viindunsthelt, med den Gisendes Blik, og den Takkedes Kiækhed!
 Aldrig hverken til Kamp dig med Skarerne selv at bevæbne',
-Eller paa Speiden at gaae med Achaiernes ypperste " Sønner,
+Eller paa Speiden at gaae med Achaiernes ypperste Sønner,
 Understod sig dit Mod; sligt er skinbarnligen Død dig.
 <pb n="80" facs="092.jpg"/>Vist er det mere bequemt, i Achaiernes bredede Krigsleir
-Gaver at rang fra ham, som blot dog taler imod dig,
+Gaver at røve fra ham, som blot dog taler imod dig,
 Folkopslugende Konge! thi Niddinger kun du behersker,
 Eller, Atride, "din Haan i Dag var bleven den sidste!
-Men jeg melder dig her, og bekræfter mit Ord - med et Eedsagn:
-Ja! ved denne min Stav, som ei Lov meer skyder og Dviste,
+Men jeg melder dig her, og bekræfter mit Ord med et Eedsagn:
+Ja! ved denne min Stav, som ei Løv meer skyder og Qviste,
 Siden engang den Bullen forlod i Biergenes Skove;
-Uldrigen knoppes den meer; thi rundt afskavede Jernet
-<pb n="81" facs="093.jpg"/>Løvet og Barken deraf; men nu Hellenernes Sonnet
+Aldrigen knoppes den meer; thi rundt afskavede Jernet
+<pb n="81" facs="093.jpg"/>Løvet og Barken deraf; men nu Hellenernes Sønner
 Bære, som Dommere den i Hænderne, medens de Zeus Ret
-hævde - det være dig her -min Eeds den høie Bekræftning!
+hævde - det være dig her min Eeds den høie Bekræftning!
 Snart vil, savnet engang af Argeierne samtlig, Achilleus
-Ønskes tilbage; men du da søger omsonst i dit Siels Anyst
+Ønskes tilbage; men du da søger omsonst i dit Siels Angst
 Redning, naar styrted' i Skarer af Kampmands draberen Hektor,
-Disse faldende doe da vil dybt i Hiertet dig nage
-Rasende Harm, at i Dag du den tapperste Das naer haante.
-<pb n="82" facs="094.jpg"/>    Altsaa Peliden; og kastede ned paa Jorden sin Domstav
-    Rundt med de gyldene Navler omperit; og satte:  sig atter.
-    Mod ham stirred Atriden, og frysede. Mellem dem opstod
-    Nestor, med Ordenes Sødme, de Pyliers tonende Taler,
-    Fra hvis Læbe hver Lyd med Honningens Olie - henflød.
-    Ham var tvende, med Tale begavede Menneske slægter
-    Svundne forbi, som med ham samtidig vored og leved
-    Hist i det hellige Pylos; og han hersked i tredie Slægt nu.
-<pb n="83" facs="095.jpg"/>Med velmeenende Hu han tiltalede Kredsen, og fagde;
+Disse faldende døe da vil dybt i Hiertet dig nage
+Rasende Harm, at i Dag du den tapperste Dag nær haante.
+<pb n="82" facs="094.jpg"/>Altsaa Peliden; og kastede ned paa Jorden sin Domstav
+Rundt med de gyldene Navler omprydt; og satte sig atter.
+Mod ham stirred Atriden, og frysede. Mellem dem opstod
+Nestor, med Ordenes Sødme, de Pyliers tonende Taler,
+Fra hvis Læbe hver Lyd med Honningens Olie henflød.
+Ham var tvende, med Tale begavede Menneskeslægter
+Svundne forbi, som med ham samtidig vored og leved
+Hist i det hellige Pylos; og han hersked i tredie Slægt nu.
+<pb n="83" facs="095.jpg"/>Med velmeenende Hu han tiltalede Kredsen, og sagde;
 Vee! hvor almindelig Sorg det achaiske Land sig nu nærmer!
 Sikkert vil Priamos glædes derved, og Priamos Sønner,
 Alle de samtlige Troer og inderlig frydes i Hiertet,
 Naar dem berettes engang, hvor I splidagtigen kives,
 I, de Danaers Fyrster i Raad, og Fyrster i Kampen.
 Lyder min Røst! I begge dog Børn kun ere mod Nestor!
-<pb n="84" facs="096.jpg"/>    Gik jeg dog mangen en Gang med stærkere Mand end med eder
-    Fordum, i Ledding; og aldrigen de dog agted mig ringe.
-    Aldrigen skued mit Blik, og skuer vel aldrigen meere
-    Rand, som Perithoos var, og Dryas, Folkenes Hyrde,
-    Keneus, eller og Helten Eradios, og Pos Infemos.
-    Sikkert vare de stærkeste de blandt levende Jordboer,
-    Vare de stærkeste selv, og drege til Kamp mod de sterkste,
+<pb n="84" facs="096.jpg"/>Gik jeg dog mangen en Gang med stærkere Mand end med eder
+Fordum, i Ledding; og aldrigen de dog agted mig ringe.
+Aldrigen skued mit Blik, og skuer vel aldrigen meere
+Mand, som Perithoos var, og Dryas, Folkenes Hyrde,
+Keneus, eller og Helten Exadios, og Polyphemos.
+Sikkert vare de stærkeste de blandt levende Jordboer,
+Vare de stærkeste selv, og drege til Kamp mod de sterkste,
 Mod Biergtroldenes Hær, anrettende gyseligt Blodbad.
 <pb n="85" facs="097.jpg"/>Hines Krigsstalbrødre var jeg, henvandret fra Pylos
 Fiern, fra det apiske Land; thi de selv mig kaldte til Medhielp.
@@ -937,12 +927,12 @@ Og dog hørte de Varsel af mig, og løde mit Ord ad.
 Men adlyder og I; thi, mit Raad at lyde, Jer baader!
 Hverken nu du, hvor mægtig du er, ham tage sin Møe bort;
 Men ham lad, hvad ham gav eengang Achaiernes Sønner;
-<pb n="86" facs="098.jpg"/>Heller ei du, Pelide, dig hav opsætsig mod  Kongen,
+<pb n="86" facs="098.jpg"/>Heller ei du, Pelide, dig hav opsætsig mod Kongen,
 Trodsende ham; da dog aldrig en lignende Herlighed tilfaldt
 Nogen med Domstav herskende Drot, som Værdighed Zeus gav.
 Er og den stærkere du, da til Moder du har en Gudinde,
 Langt dog den mægtigste priser sig han, som flere behersker!
-Atreus Son, lad fare din Harm! jeg og vil Achilleus
+Atreus Søn, lad fare din Harm! jeg og vil Achilleus
 Bede, sin bruusende Barm at berolige; ham, som i Krigens
 Yderste Nød er den vældigste Værn for Achaiernes Skarer.
 <pb n="87" facs="099.jpg"/>Ham giensvarende, talte den herskende Drot, Agamemnon:
@@ -955,27 +945,27 @@ Mon de ham derfor tillod at fornærme med hvert hans Munds Ord -
 Ham, afbrydende Talen, nu svarede Helten Achilleus:
 <pb n="88" facs="100.jpg"/>Sandelig! feig, og en Nidding med Ret jeg burde benævnes,
 Hvis jeg veeg dig i alt, naar med Ord og Mine du truer.
-Andre du sag kan beherske vilkaarligen; mig du kun aldrig
+Andre du saa kan beherske vilkaarligen; mig du kun aldrig
 Vinke dit Bud; jeg torde fra nu dog lidet det lyde!
 Kun eet Ord jeg forkynder dig her, du giem det i Hjertet:
 Ingensinde jeg hæver min Arm til Strid for en Moes Skyld,
 Hverken mod dig eller nogen; I røve, hvad selv I mig gave.
-Men af alt hvad for Resten er mit ved den glinhsende Snekke,
+Men af alt hvad for Resten er mit ved den glindsende Snekke,
 <pb n="89" facs="101.jpg"/>Mod min Villie neppe du tager det ringeste bort mig.
-Eller velan, forsøg det engang; at alle maa Fue
+Eller velan, forsøg det engang; at alle maa skue
 Hvor paa Stand fra mit Spyd skal rinde dit galdede Brystblod!
 Altsaa med Ord mod Ord de streed; og reiste sig begge,
 Derpaa hævedes Thinget ved Argos bredede Strandleir,
 Medens Achilleus til Teltene hen og de svævende Snekker
-Vandrede, fulgt af Mensties Søn, og samtlige Fæller.
-<pb n="90" facs="102.jpg"/>Men Agamemnon nedlod i Havet den hurtige  Snekke; (
+Vandrede, fulgt af Menøties Søn, og samtlige Fæller.
+<pb n="90" facs="102.jpg"/>Men Agamemnon nedlod i Havet den hurtige Snekke;
 Valgte tyve deri til Roers, og lod Hekatombet
 Guden indskibes, og selv han Chryses blomstrende Datter
 Fored ombord; som Styrer besteg Bagstavnen Odysseus.
 Flux lagt ud nu paa Dybet de pløiede Bolgernes Udørk.
-Atreus Son bød Folkenes Hær at rense sig festlig;
+Atreus Søn bød Folkenes Hær at rense sig festlig;
 Og de rensede sig, og udkastede Smitten i Havet.
-Offrede saa til Apollon uvanskede Tyres og Buks Fes
+Offrede saa til Apollon uvanskede Tyres og Bukkes Fedt
 <pb n="91" facs="103.jpg"/>Hellige Bodhekatomber paa Bredden af. Dybenes Udørk;
 Og i den hvirvlende Røg opsvævede Duften mod Himlen
 Saa var Vrimlen i Leiren beskæftiget; men Agamemnon
@@ -988,7 +978,7 @@ Vagrer han sig, saa forkynder, at selv jeg kommer, med flere,
 Hende med Magt mig at hente, som meer skal vorde ham rædsomt!
     Saa han befaled, og sendte dem bort med det truende Budskab.
 Nodigen vandred de hen ved det aldrigdyrkede Havs Bred,
-Nagende Teltenes Leir ved Myrmidonernes Sneks Eer.
+Nagende Teltenes Leir ved Myrmidonernes Snek Eer.
 Ham de siddende fandt, ei langt fra det glindsende Drotskib,
 <pb n="93" facs="105.jpg"/>Foran Teltet; og ei blev froe ved at see dem Achilleus.
 Begge forvirred' af Angst, og ærefrygtende Drotten,
@@ -996,8 +986,8 @@ Standsed, og fored ei frem eet Ord til Sagn eller Spørgsel.
 Men han selv, i sin Aand alt giættende Budet, udbrød saa:
 Fred med eder, Herolder, I Guds og Menne skers Ombud!
 Nærmer eder! I ei er skyldige! kun Agamemnon,
-Der har eder mig sendt om den rosenfavre Bris feïs.
-<pb n="94" facs="106.jpg"/>Altsaa, velan, før Møen herud, min æble Patroklos,
+Der har eder mig sendt om den rosenfavre Briseïs.
+<pb n="94" facs="106.jpg"/>Altsaa, velan, før Møen herud, min ædle Patroklos,
 Og giv hende dem hen. Men selv de være mig Vidner
 For de salige Guder, som for de svindende Fordboer,
 Og for Kongen, den grumme! Hvis nogensinde herefter
@@ -1015,16 +1005,16 @@ Og til den elskede Moder han bad med strækkede Hænder:
 Moder, da dog til et kort her varende Liv du mig fødte,
 <pb n="96" facs="108.jpg"/>Burde dog Hæder mig Zeus, den Olympier, fuldelig yde,
 Hin hoittordnende Gud; men nu slet ingen han seer mig.
-Har jo dog Atreus Son, Storherskeren, Drot Agamemnon,
+Har jo dog Atreus Søn, Storherskeren, Drot Agamemnon,
 Nu mig vanæret, min Skiænk sig egnende, den han mig frateg!
-Saa han talte med Graad; ham hørte den vær Moder,
+Saa han talte med Graad; ham hørte den værdige Moder,
 Som hos den sølvgraa Fader hun sad i Dybenes Afgrund.
-Gilende svang hun sig op af det skummende av, som en Taage;
+Ilende svang hun sig op af det skummende Hav, som en Taage;
 <pb n="97" facs="109.jpg"/>Og, sig sættende hen ved den taarerudgydendes Side,
 Tog hun ham venlig ved Haand, og tiltalte ham kielent, og sagde:
 Kiæreste Barn, hvi græder du saa? hvad tynger dit Hierte?
 Sig mig det, dølg mig det ei, at begge vi to det maa vide!
-Sukkende dybt udbrød Fodflyvren i Kampen, Achile leus:
+Sukkende dybt udbrød Fodflyvren i Kampen, Achilleus:
 Moder! du veed det dog alt; hvortil en unødig Fortælling?
 See! vi droge mod Theben, Eëtions prægtig Taarnstad,
 <pb n="98" facs="110.jpg"/>Ødelagte den reent, og hiddrog alt hvad deri var.
@@ -1038,7 +1028,7 @@ Over den gyldene Stav; og bønfaldt alle-Hellener,
 Dog Atriderne fremmest, de to Hærskarernes Drotter.
 Flux bifaldende lød Achaiernes samtlige Tilraab:
 <pb n="99" facs="111.jpg"/>Præsten at ære med Frygt, og annamme den glimrende Løsning.
-Atreus mægtige Son, Agamemnon, allene det modstred:
+Atreus mægtige Søn, Agamemnon, allene det modstred:
 Haanligen jog han ham bort, og tiltalte ham heftig med Trudsel.
 Harmforbittret tilbage han gik, men Fobos Apollon
 Hørte den Bedendes Raab; thi høit han elskte den Gamle,
@@ -1046,157 +1036,153 @@ Myrdende Piile han skød mod de Danaers Folk; og de Trufne
 Henfaldt, Dynger af Liig paa Liig, da den Rammendes Piile
 Vidt foer giennem Achaiernes Hær. Omsider en Spaamand,
 <pb n="100" facs="112.jpg"/>Kyndig i Tegn, os bebuded den fiernfrarammendes Gudraad.
-Jeg, den første, tilraadede flux, os Guden at
-     sone;
+Jeg, den første, tilraadede flux, os Guden at sone;
 Men Atriden, optændt af Forbittrelse, pludselig opstod,
 Og forkyndte mig, truende lydt, hvad nu mig er udført.
 Hende paa glindsende Stavn sortbrynede Danaers Mandskab
 Føre til Chrysa, med Offerets Skænk til Kongen Apollon.
 Men nys kom i mit Telt Herolder, og toge deraf bort
 Brises blomstrende Datter, som selv mig Achaierne skænkte.
-<pb n="101" facs="113.jpg"/>O! hvis saadant du evner, antag dig din Son nu, og hielp ham!
+<pb n="101" facs="113.jpg"/>O! hvis saadant du evner, antag dig din Søn nu, og hielp ham!
 Stig til Olympos, og bed til Zeus, om før du hans Hierte
 Nogensinde med Ord har glædet ham, eller med Idræt!
 Har jeg dog hiemme dig oftere hørt, i den fædrene Drotborg,
 Rose dig af, hvor engang du den skyemulmdækte Kronion
 Eene blandt Gudernes Hær for skiændig Fornedrelse friede,
 Da ham de andre Olympiers Magt fræk prøved at fængsle.
-Here, med Poseidaon forcent, eg Pallas Athene.
+Here, med Poseidaon fortørnet, og Pallas Athene.
 <pb n="102" facs="114.jpg"/>Dog, o Gudinde, du kom, og løste ham ud, da de bandt ham.
-Hundredarmen opkaldende flur til Olympens Befæst ning,
+Hundredarmen opkaldende flur til Olympens Befæstning,
 Ham, som Briareos nævnes af Guderne; men af de Jordboer
 Samtlig Agæon; som Faderen selv langt viger i Styrke.
-Tas hos Kronion nu han hensatte sig, trodsende kraftfroe;
-See! og fra Fængslingen skiaiv tilbage de salige Guder.
+Tæt hos Kronion nu han hensatte sig, trodsende kraftfroe;
+See! og fra Fængslingen skialv tilbage de salige Guder.
 Sæt dig nu hen, ham erindrende sligt, og omfavn du hans Knæe ham:
 At det ham maatte behage, med Kraft de Troer at bistaae
-<pb n="103" facs="115.jpg"/>    Selv, og til Flaaden og Havet Achaiernes Skarer  at trænge
-    Fald paa Fald; at det Folk eengang faaer nok af sin Hardrot,
-    Og han, Atreus Son, Storherskeren, selv maa erkiende
-    Hvad han forbrød, da han saa den tappreste Danaer haante.
-    Ham nu svarede Thetis igien med cindende Taarer:
-    Vee mig, o Barn, at jeg dig opfostred, ulykkelig fødte!
-    Ak! at ved Snekkerne her du frie for Taarer, og ukrankt
+<pb n="103" facs="115.jpg"/>Selv, og til Flaaden og Havet Achaiernes Skarer at trænge
+Fald paa Fald; at det Folk eengang faaer nok af sin Hærdrot,
+Og han, Atreus Søn, Storherskeren, selv maa erkiende
+Hvad han forbrød, da han saa den tappreste Danaer haante.
+Ham nu svarede Thetis igien med rindende Taarer:
+Vee mig, o Barn, at jeg dig opfostred, ulykkelig fødte!
+Ak! at ved Snekkerne her du frie for Taarer, og ukrankt
 <pb n="104" facs="116.jpg"/>Sad, da dig Skiæbnen et Liv saa kort dog undte, saa reent kort!
 Men afblomstrende tidlig, og ulyksalig for alle
-Blev du tillige! Ia dig jeg bar i Palladset til Uheld!
+Blev du tillige! Ja dig jeg bar i Palladset til Uheld!
 Dette dog Lynildsvingeren Zeus, at berette, hvis Bøn ham
 Rører, opstiger jeg selv til det sneeglandstindrende Gudbierg.
 Du bliv siddende her ved de lethenglidende Snekker,
-Og, paa de Danaer vred, afhold fra Kampen dig  ganske!
+Og, paa de Danaer vred, afhold fra Kampen dig ganske!
 Zeus just vandred i Gaar mod Okeanos hen, til de fromme
-Aethioper, som Giæst; og Guderne fulgte ham  alle.
-<pb n="105" facs="117.jpg"/>Om tolv Dage han vender sig hiem igien til Olymp / gaard.
+Aethioper, som Giæst; og Guderne fulgte ham alle.
+<pb n="105" facs="117.jpg"/>Om tolv Dage han vender sig hiem igien til Olympgaard.
 See! da stiger jeg op til den Herliges hvelvede Malmborg,
-For at omfavne hans Knae, og jeg haaber, hans Barm at bevæge..
+For at omfavne hans Knæ, og jeg haaber, hans Barm at bevæge.
     Saa hun taled, og ilede bort; og lod ham allene
 Harmforbittret i Hu for den skientombeltede Pige,
-Som man havde med Vold ham bortført,  See! men Odysseus,
+Som man havde med Vold ham bortført. See! men Odysseus,
 Bringende hist Hekatombet, det hellige, nærmte sig Chrysa.
 Skyndigen, som de nu der i Bugtens dybnende Fiord kom,
-<pb n="106" facs="118.jpg"/>Sloge de Seilene fra, dem stuvende sammen i Nummet,
+<pb n="106" facs="118.jpg"/>Sloge de Seilene fra, dem stuvende sammen i Rummet,
 Firende Masten ved Stagene ned i den fangende Gaffel,
 Hurtig, og skoddende frem, med Aarer til Landingens Leie.
-Kasted paa Sandet de Dræggene hen, og fortsiede Enekken.
+Kasted paa Sandet de Dræggene hen, og fortsiede Snekken.
 Ud nu stege de selv paa den havbesqvulpede Strandbred;
 Ud blev bragt Hekatombet til Rammeren, Fobos Apollon;
 Ud Chryseis og steeg af den havhenskridende Snekke
 Hende nu førte til Alteret hen Viismanden Odysseus,
-<pb n="107" facs="119.jpg"/>Gav i Faderens Hænder den elskede Datter, og -sagde:
+<pb n="107" facs="119.jpg"/>Gav i Faderens Hænder den elskede Datter, og sagde:
     Chryses, mig sendede hid Hærskarernes Drot Agamemnon,
 Dig at tilbringe din Datter, og Bodhekatombet til Fobos,
 Her, i de Danaers Navn, at ofre, sonende Guden,
 Hvilken Achaiernes Folk vidthylende Jammer beredte.
-    Talt, hau nu Møen hengav i hans Haand; og frydet imodtog
+    Talt, han nu Møen hengav i hans Haand; og frydet imodtog
 Denne det elskede Barn. Flur hine nu Bodhekatombet
 Ordned til Guden i Kreds om Alterets stienne Forhøining;
 <pb n="108" facs="120.jpg"/>Toede saa Hænderne rings, og toge det saltede Bygskraa;
-Medens Chryses foran bad høit med løftede Hans  der:
+Medens Chryses foran bad høit med løftede Hænder:
 Hør mig, o vældige Gud, som med sølverne Bue dit Chrysa,
 Killa, din hellige Stad, og dit Tenedos herskende skiermer!
 Ligerviis som tilforn du mig hørte, da høit jeg dig bonfaldt,
 Som du mig hædrede huld, og Achaierne haardelig angreb;
-Altsaa paa nye du og her opfylde mig denne min Ciels Bøn:
+Altsaa paa nye du og her opfylde mig denne min Siels Bøn:
 <pb n="109" facs="121.jpg"/>Afvend nu fra de Danaers Folk den hevnende Jammer.
-    Saa han sukkende bad; og hans Suk bønhø red Apollon.
+    Saa han sukkende bad; og hans Suk bønhørte Apollon.
 Efter Bønnen nu hine henkastede Bygget, og opad
 Nøddenes Halse de bog, og slagted, og hudede hvert af;
 Udskar Bovene først, og omviklede disse med Flommen
 Dobbelt; og oven paa dem blev lagt det plukkede Smaakiød.
 Oldingen stak nu Veddet i Brand; og Druernes Purpur
-Gisd han derpaa; rundtom stod Ynglinger holdende Femsped.
+Gød han derpaa; rundtom stod Ynglinger holdende Femsped.
 <pb n="110" facs="122.jpg"/>Først da man Bovene havde forbrændt, og Fyldingen forsmagt,
 Ekar man det øvrige Kiød og smaat, og stak det paa Haandsped,
 Ristende varligen det, og trak tilbage det Stegte.
     Saa blev det festlige Værk fuldendt. Da Maden beredt stod,
-Spiste de sammen, og hver sin Bekomst blev runs delig tildeelt.
+Spiste de sammen, og hver sin Bekomst blev rundelig tildeelt.
 Men da nu Hungerens Krav, og Tørstens fuldelig stilt var,
-Fyldte de Unge paa nye Viinkrukkerne samtlig til
-. Randen,
-Og, iskienkende hver, omdeelte de Bægre til alle.<pb n="111" facs="123.jpg"/> III
-Saa den udslagene Dag, med Sang forsonende Guden,
+Fyldte de Unge paa nye Viinkrukkerne samtlige til Randen,
+Og, iskienkende hver, omdeelte de Bægre til alle.<pb n="111" facs="123.jpg"/>Saa den udslagene Dag, med Sang forsonende Guden,
 Tonte den yndige Pean Achaiernes blomstrende Mandskab,
 Høit til den Rammendes Priis; og han hørte den glad i sit Hierte.
 Som ned Solen nu sank, og Mørket brededes rundt om,
 Lagde sig alle til Roe ved den velfortsiede Snekke.
 Men, som af Skumringen Eos med Rosenfingrene frembrød,
 Styred tilbage de hiem til de Danaers bredede Krigsleir.
-Medbør sendte dem blid den vidthenrammende He sler,
+Medbør sendte dem blid den vidthenrammende Hesper,
 <pb n="112" facs="124.jpg"/>Just som de reisede Masten, og sloge de skinnende Seil ud.
 Vinden nu spiilede Seilene stramt; og Dybenes Purpur
-Larmed om Kiølen i fraadende Skum, da det skiærende Skib skisd
+Larmed om Kiølen i fraadende Skum, da det skiærende Skib skød
 Hen med uhemmelig Tilen igiennem de kløvede Bølger.
-Da de nu ankom nær ved Uchaiernes brede Krigsleir,
-Droge den glindsende Snekke de flur heit op paa det Tørre
+Da de nu ankom nær ved Achaiernes brede Krigsleir,
+Droge den glindsende Snekke de flur høit op paa det Tørre
 Over den sandige Bred, og stillede Blokke derunder;
 Gik saa til Teltene hen bag Snekkerne, skildt fra hinanden.
-<pb n="113" facs="125.jpg"/>Vred imedens han sad ved de lethenglidende Snek-
-    / ker,
-Peleus herlige Son, Fodflyvren i Kampen, Achilleus.
+<pb n="113" facs="125.jpg"/>Vred imedens han sad ved de lethenglidende Snekker,
+Peleus herlige Søn, Fodflyvren i Kampen, Achilleus.
 Aldrig meere til Thinge, hvor Mænd forherliges, - gik han,
 Aldrig mere til Strid; men Græmmelse naged hans Hierte,
 Siddende der med sin Lyst til Kamp, og Klirren, og Krigslarm.
 Som nu blandt Morgnernes Grye det tolvte dagnende frembrød,
-Vendte sig hiem til Olympos de altidværende Gus der
+Vendte sig hiem til Olympos de altidværende Guder
 <pb n="114" facs="126.jpg"/>Samtlig igien; Zeus førte; men Thetis den elskede Søns Sag
-Ikke forgiatted. Hun op af Dybet i Dagningens Unbrud
-Ekiød sig, og steg til Olympos, og Himlens frakte Befæstning.
-Der hun afsides, allene, den vidtomskuende Zeus 'fandt
+Ikke forgiatted. Hun op af Dybet i Dagningens Frembrud
+Skød sig, og steg til Olympos, og Himlens stærke Befæstning.
+Der hun afsides, allene, den vidtomskuende Zeus fandt
 Høit paa den øverste Tind af det takkeromtoppede Gudbierg.
-See! og hun satte sig hen for den Herlige. Fave. nende bønlig
-Der med den venstre hans Knee, med den heire berørende Hagen,
-Forte hun frem sin Begiæring til Kongernes Konge Kronion:
+See! og hun satte sig hen for den Herlige. Favnende bønlig
+Der med den venstre hans Knæ, med den høire berørende Hagen,
+Førte hun frem sin Begiæring til Kongernes Konge Kronion:
 <pb n="115" facs="127.jpg"/>    Fader Zeus, om jeg før blandt de samlede Guder til Baade
-    Var dig med Ord eller Daad, opfyld da denne min Siels Bøn:
-    Hædre min elskede Søn, som det korteste Liv iblandt Alle
-    Lever; og hvilken nu dog Hærskarernes Drot, Agamemnon,
-    Fræk har vanært, da hans Skiænk han ham tog, og stedse beholder:
-    Selv du nu hædre ham dobbelt, Olympier, raadende Gud, Zeus!
-     Overmagt du forunde de Troer, indtil de Achaier
-    Hadre min Son, og ham Wre, med Aabod, rundelig yde!
+Var dig med Ord eller Daad, opfyld da denne min Siels Bøn:
+Hædre min elskede Søn, som det korteste Liv iblandt Alle
+Lever; og hvilken nu dog Hærskarernes Drot, Agamemnon,
+Fræk har vanært, da hans Skiænk han ham tog, og stedse beholder:
+Selv du nu hædre ham dobbelt, Olympier, raadende Gud, Zeus!
+Overmagt du forunde de Troer, indtil de Achaier
+    Hædre min Søn, og ham Ære, med Aabod, rundelig yde!
 <pb n="116" facs="128.jpg"/>Talt. Ei svarte derpaa Lynsvingren i Tordenens Mulm, Zeus.
 Lange sad han, og taug. Men Thetis klyngede tæt sig
-Til det omfavnede Knee, og begyndte paa nye ham at bede:
+Til det omfavnede Knæ, og begyndte paa nye ham at bede:
 Lov mig det helligen! giv mig dit Sagn! o skiænk mig et Tilvink!
-Eller slane mig det af, Ubevægede! Ganske jeg veed da,
+Eller slaae mig det af, Ubevægede! Ganske jeg veed da,
 Hvor iblandt alle dog jeg er den meest uærte Gudinde.
-Hende nu svarede mørk Lynsvingren i Tordenens Muim, Zeus:
+Hende nu svarede mørk Lynsvingren i Tordenens Mulm, Zeus:
 <pb n="117" facs="129.jpg"/>    Misdaad sandelig nu du begaaer, at til Strid imod Here
-    Du mig opegger, om fiben med Knurr herfor hun mig tirrer.
-    Kives hun noksom dog alt i Guderforsamlingen med mig,
-    Høit paastaaende stedse, jeg Troerne hielper i Kampen!
-    Dog gaae du nu tilbage med Jil, at ikke dig Here
-    Mærker, tilstillende mig, den Sag at forhandle med Omsorg.
-    Skynd dig! Med Hovedets Nik jeg her tilvinker dig Tillid.
-    Er jo dog dette mit Tegn for de samtlige Guder det største:
-    Aldrig bedrageligt er, og tilbagekaldeligt aldrig,
+Du mig opegger, om siden med Knurr herfor hun mig tirrer.
+Kives hun noksom dog alt i Guderforsamlingen med mig,
+Høit paastaaende stedse, jeg Troerne hielper i Kampen!
+Dog gaae du nu tilbage med Jil, at ikke dig Here
+Mærker, tilstillende mig, den Sag at forhandle med Omsorg.
+Skynd dig! Med Hovedets Nik jeg her tilvinker dig Tillid.
+Er jo dog dette mit Tegn for de samtlige Guder det største:
+Aldrig bedrageligt er, og tilbagekaldeligt aldrig,
 <pb n="118" facs="130.jpg"/>Evig urokkeligt fast, hvad, nikkende saa, jeg forjætter!
-Tait; og, med sortnende Braa tilvinkende, nikte Kronion.
+Talt; og, med sortnende Braa tilvinkende, nikte Kronion.
 Om det ambrosiske Hoved henrullede Herskerens favre,
 Fremadrystede Haar, og Olympens Hvelvinger grundskialv.
 Saa, Raadslagningen endt, de skilledes. Atter hun nedfoer
-Dybt i Dybenes Skiød fra den glandsomskimrede  Gudborg.
-<pb n="119" facs="131.jpg"/>Zeus til. Palladset nu gik, og de Himmelske reiste sig alle,
+Dybt i Dybenes Skiød fra den glandsomskimrede Gudborg.
+<pb n="119" facs="131.jpg"/>Zeus til Palladset nu gik, og de Himmelske reiste sig alle,
 Gudernes Fader imøde: rundt om ved den Kommendes Nærmen
 Ingen i Sædet forblev, men imøde ham treene de samtlig.
 Der han nu Thronen besteg, og satte sig. Medens alt Here
@@ -1204,7 +1190,7 @@ Havde det mærket, hvor nys med ham et hemmeligt Raad holdt
 Havmandoldingens Datter, den sølvfodglindsende Thetis.
 Flux med bebreidende Tunge tiltalte hun Herren, Kronion:
 <pb n="120" facs="132.jpg"/>Hvilken Gud har nu, svigfulde, paa nye dig i Raad havt?
-Stedse dog er det din Lyst, dig at fierne fra mig,  for afsides
+Stedse dog er det din Lyst, dig at fierne fra mig, for afsides
 Lønlige Raad at oplægge, forordnende! Mig du dog aldrig
 Nogensinde har sagt godvilligen nogen din Tanke! -
 Hende nu svarede Menneskens Slægts og Gudernes Fader:
@@ -1215,24 +1201,24 @@ Vel skal aldrig af alt, hvad dig er meddeeleligt, nogen,
 Dog, hvad jeg selv, fra Guderne fiern, allene vil raadslaae,
 Derom spørg du mig aldrig; umueligen forsker du saadant!
 Ham giensvarte derpaa den med Høihed blikkende Here:
-Nadsommægtige Zeus, hvad talte du der for et Ord ud?
-Ingensinde dog før jeg udspurgte dig, aldrig og forfite;
-Men fuldkommen i Roe, hvad helst dig behager, * du raadsleder.
+Naadsommægtige Zeus, hvad talte du der for et Ord ud?
+Ingensinde dog før jeg udspurgte dig, aldrig og forhørte;
+Men fuldkommen i Roe, hvad helst dig behager, du raadsleder.
 <pb n="122" facs="134.jpg"/>Dog nu frygter mit Hierte med Grund, at nys dig besnærte
 Havmandoldingens Datter, den sølvfodglindsende Thetis;
-Thi hun i Dagningen sad, dit Knee tatfavnende, for dig;
+Thi hun i Dagningen sad, dit Knæ tætfavnende, for dig;
 Og jeg formoder, at hende med Nik du loved, Achilleus
 Hæder at tee, ved Achaiernes Fald, nær Snekkernes Strandleir.
 Hende tiltalede nu Lynsvingren i Tordenens Mulm, Zeus:
 Underligaandede! stedse formoder du, lurende paa mig!
 <pb n="123" facs="135.jpg"/>Dog udretter du saa slet intet! mit Hierte kun altid
 Mere fremmed du bliver, hvad meer vil vorde dig rædsomt!
-Hvis og dette nu skeer, saa skeer, hvad mig lyster,  der skee skal.
+Hvis og dette nu skeer, saa skeer, hvad mig lyster, der skee skal.
 Altsaa du bliv siddende taus, og lyd min Befaling!
 Thi dig skiermed omsonst al Gudernes Har i Olympgaard,
 Traadte jeg frem, og udstrakte mod dig de knusende Hænder.
 Saa han talte; da skialv den med Høihed blikkende Here.
-<pb n="124" facs="136.jpg"/>Taus hun siddende blev, og betvang det brusende Spierte;
+<pb n="124" facs="136.jpg"/>Taus hun siddende blev, og betvang det brusende Hierte;
 Men Høisalen gienlod af Uranionernes Sudsuk.
 Mellem dem tog nu til Ords hin haltende Kunstner Hefæstos,
 Om for sin elskede Moder, den sneehvidarmede Here.
@@ -1242,84 +1228,84 @@ Og iblandt Guderne vække Tumult. Fast aldrig et Maaltid
 Nyder man mere med Lyst; thi det blir jo dagligen værre.
 <pb n="125" facs="137.jpg"/>See! jeg raader min Moder, som selv vist skiønner hvad klogt er,
 Fader Kronion at viise sig om; at ikke paa nye han
-Atter man skiænde, vor Fader, og reent forstyrre vort Gilde.
-Thi, hvis det falder ham ind, Lynherren i Himme. lens Skrækmulm,
+Atter maa skiænde, vor Fader, og reent forstyrre vort Gilde.
+Thi, hvis det falder ham ind, Lynherren i Himmelens Skrækmulm,
 Os at styrte fra Thronerne ned, hvad evne vi mod ham?
 Altsaa velan, du med venlige Ord ham røre hans Hierte,
 Snart da vorder, forsont, den Olympier mild mod os alle.
 Talende saa han opstod, og hented det dobbelte Bæger,
 <pb n="126" facs="138.jpg"/>    Gav det sin Moder i Hænderne hen, og sagde fremdeles:
-    Taal, o kiæreste Moder, og fat dig, hvad og du maa lide!
-    At jeg dog ikke med dette mit Blik man skue dig,  elsete,
-    Straffet med Slag! jeg søgte, saa dybt mig og saaredes Hiertet,
-    Redning omsonst; thi hvad Gud kan mod den Olympier fremstaae?
+Taal, o kiæreste Moder, og fat dig, hvad og du maa lide!
+At jeg dog ikke med dette mit Blik maa skue dig, elskte,
+Straffet med Slag! jeg søgte, saa dybt mig og saaredes Hiertet,
+Redning omsonst; thi hvad Gud kan mod den Olympier fremstaae?
 Ak! alt fordum engang, da jeg søgte til hielp dig at komme,
     Greb han ved Foden, og svingte mig ned fra det himmelske Dørtrin,
 <pb n="127" facs="139.jpg"/>Hele Dagen jeg fløi, og da Solen dalede, faldt jeg.
 Ned paa Lemnos, som død; thi jeg aandte kun gispende Livet.
 Der dog de Sintiers Folk optoge mig faldende venlig.
 Saa hans Ord; da smiilte den sneehvidarmede Here;
-Smilende tog hun den elskede Søn nu Bægret af  Haanden;
+Smilende tog hun den elskede Søn nu Bægret af Haanden;
 Og for de samtlige Guder, fra høire begyndende, rundt om,
 Skienkte han, øsende hyppig af Krukken den liflige Nektar.
 <pb n="128" facs="140.jpg"/>    Men uudslukkelig Latter betog de salige Guder
-    Ved at betragte Hefæstos saa vims, og saa flink omkringgaae.
-    Saa den udslagene Dag, til Solens sildige Nedgang,
-    Varede Gildet, og hver sin Bekomst fik rundelig tildeelt,
-    Mens den fortryllende Klang af Apollons tonende Luth led
-    Lydt til de liflige Stemmer i Musernes svarende Sange.
-    Men da nu endelig ned sank Helios lysende Fakkel, ',
-    Ginge til hvile de samtlig, enhver til sit eget Pallads hen,
+Ved at betragte Hefæstos saa vims, og saa flink omkringgaae.
+Saa den udslagene Dag, til Solens sildige Nedgang,
+Varede Gildet, og hver sin Bekomst fik rundelig tildeelt,
+Mens den fortryllende Klang af Apollons tonende Luth led
+Lydt til de liflige Stemmer i Musernes svarende Sange.
+Men da nu endelig ned sank Helios lysende Fakkel,
+Ginge til hvile de samtlig, enhver til sit eget Pallads hen,
 <pb n="129" facs="141.jpg"/>Hvilket Hefæstos selv, den haltende Kunstneres Kunstner,
 Fordum havde dem bygt med sindrig Klygt og Erfaring.
 Selv og til Leiet nu gik Lufthimmelens tordnende Gud, Zeus
 Hvor ham natligen vinkte til Roe den liflige Slummer;
-Derhan til Hvile nu steg med den guldstolthronende Here
+Der han til Hvile nu steg med den guldstolthronende Here
 </poetry>
 </body>
 </text>
 
 <text id="baggesen2026090106" ignore-tests="repeated-adjacent-word">
 <head>
-  <title>Homers Ilias. Anden Rhapsodie</title>
+  <title>Homers Ilias</title>
+  <subtitle>Anden Rhapsodie.</subtitle>
   <firstline>Alle nu, Guderne selv, og de hielmbuskprydede Helte</firstline>
   <source pages="130-191"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Aue nu, Guderne selv, og de hielmbuskprydede Helte,
-Sov den udslagene Nat. Blot Zeus ei lukte sit Die,
+Alle nu, Guderne selv, og de hielmbuskprydede Helte,
+Sov den udslagene Nat. Blot Zeus ei lukte sit Øie,
 Grandskende dybt i urolige Barm, hvordan han Achilleus
-<pb n="131" facs="143.jpg"/>Hadrede bedst, og Achaiernes Har ved Skibene svækked?
+<pb n="131" facs="143.jpg"/>Hadrede bedst, og Achaiernes Hær ved Skibene svækked?
 Denne Beslutning tilsidst udvalgte hans forskende Tvivlraad:
 Hen til Atriden en Drøm at sende med skuffende Varsel.
 Denne fremkaldende, lød fra hans Mund de vingede Toner:
-"Skynd dig, o skuffende Drøm til Uchaiernes hurtige Snekker;
-"Der henssi dig i Teltet til Atreus Son, Agamemnon,
+"Skynd dig, o skuffende Drøm til Achaiernes hurtige Snekker;
+"Der henssi dig i Teltet til Atreus Søn, Agamemnon,
 "Og nøiagtigen meld ham det Ord, jeg her dig forkynder:
-<pb n="132" facs="144.jpg"/>"Byd ham, at tuste til Slag de haarlokfavre Helleners
+<pb n="132" facs="144.jpg"/>"Byd ham, at ruste til Slag de haarlokfavre Helleners
 "Samtlige Magt; og betyd ham, at let nu tages de Troers
 "Vidtudbyggede Stad, da meer ei deelt i Beslutning
 "Pakler Uranionernes Raad; men samtlige Guder
 "Here har rørt, og Fordærv nedsvæver mod Ilions Muure!"
     Saa han befoel; og Drømmen, saasnart var hørt hans Befaling,
 Fiernte sig skyndig, og foer til Achaiernes hurtige Snekker.
-Did nn kom den, og fandt Agamemnon, Sønnen af Atreus,
+Did nu kom den, og fandt Agamemnon, Sønnen af Atreus,
 <pb n="133" facs="145.jpg"/>    Hvilende trygt i sit Telt, omduftet af Slummerens Vinger.
-    Hen til hans Hoved den treen, og, Neleus Søn i
-i Gestalt lig,
-    Nestor, som høiest blandt Oldinger holdt i Agt. Agamemnon,
-    Lalede saa til den slumrende Drot det himmelske Drømbud:
-    Sover, Atride, du, Søn af den vældige Gans gernes Tæmmer?
-    Ingen Drot, den udslagene Nat at slumre, det anstaaer,
-    Der paatog sig Bestyrelsens Last, og Folkenes Forz forg!
+    Hen til hans Hoved den treen, og, Neleus Søn i Gestalt lig,
+Nestor, som høiest blandt Oldinger holdt i Agt. Agamemnon,
+Talede saa til den slumrende Drot det himmelske Drømbud:
+Sover, Atride, du, Søn af den vældige Gangernes Tæmmer?
+Ingen Drot, den udslagene Nat at slumre, det anstaaer,
+Der paatog sig Bestyrelsens Last, og Folkenes Forsorg!
 <pb n="134" facs="146.jpg"/>Op nu! og lyt til mit Ord: jeg kommer et Bud fra Kronion,
-Som og fiern dig beskiærmer med Huld, og betæn ker din Velfærd.
+Som og fiern dig beskiærmer med Huld, og betænker din Velfærd.
 See! han byder dig ruste de haarlokfavre Helleners
 Samtlige Hære til Slag; thi let nu tages de Troers
 Vidtudbyggede Stad; da meer ei deelt i Beslutning
-Vakler Uranionernes Raad; men samtlige Gus der
+Vakler Uranionernes Raad; men samtlige Guder
 Here har rørt, og Fordærv alt svæver mod Ilions Muure
 Ned fra Zeus! Paa dette giv Agt, og bevar i din Aand det,
 <pb n="135" facs="147.jpg"/>At du, opvaagnet af liflige Slum, maae grant det erindre!
@@ -1329,11 +1315,11 @@ Thi han formodede nu, flux Priamos Stad at erobre.
 Daaret i Hu miskiendte han Zeus ham skiulede Gudraad,
 Hvilket beslutted, i varende Kamp at berede, for lang Tid,
 Troer og Danaer, begge, Fordærv, og uendelig Jammer.
-Vaagnet, (ham dirred i Dret endnu den himmelske Stemme)
+Vaagnet, (ham dirred i Øret endnu den himmelske Stemme)
 <pb n="136" facs="148.jpg"/>Reiste han sig, stod op, iførte sig Kiortelens bløde,
-Nye, konstvirkede Nat, og slog om Skuldrene Kappen.
+Nye, konstvirkede Dragt, og slog om Skuldrene Kappen.
 Under de glindsende Fødder han bandt gangheinende Saaler,
-Og, om Urelen hængt det følvbestiftede Storsværd,
+Og, om Skuldren hængt det sølvbestiftede Storsværd,
 Tog han i Haanden den Old til Old slægtarvede Domstav.
 Saa han gik til de malmempandsrede Danaers Snekker.
     Eos, Gudinden, nu hæved sig alt høit op til Olympgaard,
@@ -1349,17 +1335,17 @@ Hører mig, Venner! en Drøm fra Kronion sendtes min Slummer,
 Lig, i Størrelse, Mine, Gestalt, som her I ham selv see;
 Saadan den treen til mit Hoved, og talede til mig, som følger:
 Sover, Atride, du, Søn af den vældige Gangernes Tæmmer?
-Ingen Drot, den udslagene Nat at slumre, det an staaer,
-Der pantog sig Bestyrelsens Last og Folkenes Forforg!
+Ingen Drot, den udslagene Nat at slumre, det anstaaer,
+Der paatog sig Bestyrelsens Last og Folkenes Forsorg!
 Op nu! og lyt til mit Ord: jeg kommer, et Bud fra Kronion,
 Som og fiern dig beskytter med Huld, og betænker din Velfærd:
-<pb n="139" facs="151.jpg"/>See! han byder dig, ruste de haarlokfavre Helles ners
+<pb n="139" facs="151.jpg"/>See! han byder dig, ruste de haarlokfavre Helleners
 Samtlige Hære til Slag; thi let nu tages de Troers
-Vidtudbyggede Stad; da meer ei deelt i Besluts ning
+Vidtudbyggede Stad; da meer ei deelt i Beslutning
 Vakler Uranionernes Raad; men samtlige Guder
 Here har rørt, og Fordærv alt svæver mod Ilions Muure
-Ned fra Zeus; du vare derpaa! Saa talebe Drømmen,
-Og fløi bort, og forsvandt; og den liflige Slummer forlod mig..
+Ned fra Zeus; du vare derpaa! Saa talede Drømmen,
+Og fløi bort, og forsvandt; og den liflige Slummer forlod mig.
 Lader os see nu, hvorlunde til Slag vi de Danaer bringe?
 <pb n="140" facs="152.jpg"/>Selv vil jeg søge med Ord at udforske dem Sindet, som Brug er;
 Raadende Hiemfart flur i de tveradaarede Snekker
@@ -1370,22 +1356,22 @@ Velberaadet i Hu, han lydt i Forsamlingen udbrød:
 Venner, Hellenernes Folks hærførende Hyrder og Drotter!
 Havde fortalt os om saadan en Drøm hver anden Achaier
 <pb n="141" facs="153.jpg"/>Usand havde vi kaldt den, og neppe Fortællingen udhørt;
-Men da den ypperste selv blandt Argos Høvdinger sane den,
-Saa velan, lad os see, hvor til Slag vi de Das naer bringe!
+Men da den ypperste selv blandt Argos Høvdinger saae den,
+Saa velan, lad os see, hvor til Slag vi de Danaer bringe!
 Saa hans Ord, og af Kredsen han flux udtraadde den første.
 Derpaa reiste sig op, adlydende Folkenes Hyrde,
 Hver stavførende Drot. Hid strømte nu Folkenes Skarer,
 Som naar af Bier en Hær i sammenvrimlende Tæthob
 Giennem en Biergkløft mylrer herud, een Sværm paa den anden:
-<pb n="142" facs="154.jpg"/>    Nogle klynge, som Klaser, om Blomstre sig, me  dens i Luften
-    Tusende herhen flagrende fiye, og tusende derhen.
-    Altsaa trængte sig stimlende frem fra Snekker og Telte
-    Folkenes Hære til Thing. I Midten opflammed dem Ossa,
-    Zeus Budstikke, til Jil. Snart var Forsamlingen fuldtrængt:
-    Hsit lød buldrende Larm; og da samtlige skyndte til Plads sig,
-    Gynged under dem Jorden, og dundrede. Dog nu til Lyd slog
-    Ni Herolder med skingrende Røst, og befalede Taushed,
-    For at høre, med Agt, de gudstadfæstede Drotter.
+<pb n="142" facs="154.jpg"/>Nogle klynge, som Klaser, om Blomstre sig, medens i Luften
+Tusende herhen flagrende fiye, og tusende derhen.
+Altsaa trængte sig stimlende frem fra Snekker og Telte
+Folkenes Hære til Thing. I Midten opflammed dem Ossa,
+Zeus Budstikke, til Jil. Snart var Forsamlingen fuldtrængt:
+Høit lød buldrende Larm; og da samtlige skyndte til Plads sig,
+Gynged under dem Jorden, og dundrede. Dog nu til Lyd slog
+Ni Herolder med skingrende Røst, og befalede Taushed,
+For at høre, med Agt, de gudstadfæstede Drotter.
 <pb n="143" facs="155.jpg"/>Neppe var Folkene leiret, og radviis hver paa sin Plads sadt,
 Flur ophørte de buldrende Skrig. Da reiste sig Kongen,
 Atreus Søn, i sin Haand den gudarbeidede Domstav:
@@ -1394,30 +1380,29 @@ Zeus. Han gav den igien til Argosmorderen Hermes;
 Hermes skiænkte den siden til Forspændjageren Pelops;
 Pelops atter den gav til Atreus, Folkenes Hyrde,
 Hvilken den, døende, lod til den hornqvægrige Thyestes;
-<pb n="144" facs="156.jpg"/>    Endelig lod den Thyestes til Broderens Son, Agamemnon,
-    Argos Land at bestyre dermed, og samtlige Holme;
-    Paa den støttende sig, udbrød den vældige Hærbrot:
-    Venner, I Danaerkæmper! I krigerske Sønner
-     af Ares!
-    Ak! i en høistfordærvelig Sag har seus mig for viklet;
-    Han, den grumme! der fordum mig dog saa naas dige Vink gav;
-    Ilions Fald mig forjattende her, og seirende hiemgang.
-    Dog nu bereder han Skiændsel mig kun, og byder mig svigfuld,
+<pb n="144" facs="156.jpg"/>Endelig lod den Thyestes til Broderens Søn, Agamemnon,
+Argos Land at bestyre dermed, og samtlige Holme;
+Paa den støttende sig, udbrød den vældige Hærdrot:
+Venner, I Danaerkæmper! I krigerske Sønner af Ares!
+Ak! i en høistfordærvelig Sag har Zeus mig forviklet;
+Han, den grumme! der fordum mig dog saa naadige Vink gav;
+Ilions Fald mig forjattende her, og seirende hiemgang.
+Dog nu bereder han Skiændsel mig kun, og byder mig svigfuld,
 <pb n="145" facs="157.jpg"/>Efter utallige Krigeres Tab, at vende til Argos.
-Altsaa behager det vel den ophøiede Hersker, Kto nion,
+Altsaa behager det vel den ophøiede Hersker, Kronion,
 Der alt styrted i Gruus mangfoldige kneisende Stæder,
-Og end styrter herefter; thi seirende raader hans Aimagt.
+Og end styrter herefter; thi seirende raader hans Almagt.
 Men dog skiændigt det er, og en Spot for kommende Slægter:
 At en Hær, som Achaiernes Hær, saa vældig og talrig,
-Intet udretted i varende Kamp, og bestandige Feldt flag,
-Her mod en svagete Magt; og at intet end tegner til Udgang!
+Intet udretted i varende Kamp, og bestandige Feldtslag,
+Her mod en svagere Magt; og at intet end tegner til Udgang!
 <pb n="146" facs="158.jpg"/>Thi hvis Achaier og Troer, paa eengang sluttende Fredsbund,
 Lysted, at vide giensidige Magt, ved Folket at tælle;
 Og nu Troerne stilled i Rad een tæt ved den anden,
 Men vi Achaier hver tiende kun; og lode hver enkelt
 Troer saa Bægeret fylde for hver henstillede Timand:
 Sikkert, formoder jeg, stod dog mangen en Tier med tør Mund.
-Saa langt større jeg skatter Achaias Krigeres Untal -
+Saa langt større jeg skatter Achaias Krigeres Antal -
 End de Troers, som Staden beboe. Men disse til Bistand
 Findes utallige væbnede Folk fra Stæderne rundt om,
 <pb n="147" facs="159.jpg"/>Spydkampkyndige Mænd, hvis Magt forhindre mit Anslag,
@@ -1425,54 +1410,52 @@ Ilions stoltoptaarnede Stad i Grund at forstyrre.
 Er nu dog fuldt ni Aaringer alt henrundne for giæves;
 Og alt trøskes os Træet i Skibene; Tougene raadne.
 Vore Hustruer, ak! og end umyndige Sønner
-Vente med Smagten og hiemme, mens vi forgiæves  msie
+Vente med Længten og hiemme, mens vi forgiæves møie
 Her med det uudførlige Værk, for hvilket vi hidkom.
-Dp da, velan! anhører mit Raad, og lyder mit Magtbud!
+Op da, velan! anhører mit Raad, og lyder mit Magtbud!
 Lad os i Snekkerne flye til den elskte fædrene Hiemstavn;
 Aldrig erobre vi dog det vidtudbyggede Troja!
 <pb n="148" facs="160.jpg"/>Saa han talte. Men alle bevægedes heftig i Hiertet,
 Rundt i Mængden, der ei havde hørt Raadslagningen forhen.
 Og i Forsamlingen reiste sig Larm. Lig svulmende Vovers
-Styrtninger i det ikariske Hav, naar Sydens og  / Nordens
+Styrtninger i det ikariske Hav, naar Sydens og Nordens
 Storme sig reise paa Zeus, den tordnendes, mægtige Skevink;
 Eller, som Ax ved Ur henboiet en vaiende Kornmark
-Rasler, i bølgende Strøg, for den stridtfremsusende  Vestvind;
-Saa var Forsamlingen rings i Oprer. Alle med heit Skrig
+Rasler, i bølgende Strøg, for den stridtfremsusende Vestvind;
+Saa var Forsamlingen rings i Oprør. Alle med høit Skrig
 <pb n="149" facs="161.jpg"/>Styrted til Snekkerne hen; og Støvdamp hvirvled mod Himlen
 Under de trampende Fødder; mens een opmuntred den anden:
 Haand at lægge paa Snekkerne flur, og støde fra Landet.
 Dokkene ryddedes skyndig; de hiemad stræbendes Hurrah
 Skingred i Skye, da de Stavrerne rings fra Snekkerne nedrev;
-Og, trods Skiæbnen, var sikkert nu skeet Achaiers nes Hiemfart,
+Og, trods Skiæbnen, var sikkert nu skeet Achaiernes Hiemfart,
 Hard' ei Here sig vendt med følgende Tale til Pallas:
     Vee mig, den skyeskioldvæbnede Zeus ubetvungene Datter!
 <pb n="150" facs="162.jpg"/>Altsaa skal det argiviske Folk hen over det vide
 Hav tilbage nu flye til den elskte fædrene Hiemstavn,
-Ladende Priamos Æren, og Troerne Spiren af Urgos:
+Ladende Priamos Æren, og Troerne Spiren af Argos:
 Helena, for hvis Skyld saa mangfoldige Danaer hensank,
 Her for Ilion, langt fra det elskte fædrene Hiemland?
 Hør mig! begiv til Achaiernes Hær dig uden Forhaling!
 Stands, overtalende, der med din Røst hver Mand; og forbyd dem,
-Ud i Havet at støde de tueradaarede Snekker!
+Ud i Havet at støde de tveradaarede Snekker!
     Saa hun talte; den bydende lød Gudinden Athene.
 <pb n="151" facs="163.jpg"/>Skyndigen svang hun sig ned fra Olympgaards kneisende Fieldtind;
-Og henkom i et Nu til Achaiernes hurtige Sneks
-    : ker.
+Og henkom i et Nu til Achaiernes hurtige Snekker.
 Der nu fandt hun Odysseus, hvis Snedighed trodsed en Guds selv.
 Standende taus, Ei lagde han Haand paa sit prægtige Drotskibs
 Glindsende Stavn; thi Græmmelse dybt ham naged i Hiertet.
 Ham nu nærmte sig, talende saa, Gudinden Athene:
-    Herlige Søn af Laertes, du Mester i Snildhed,  Odysseus!
+    Herlige Søn af Laertes, du Mester i Snildhed, Odysseus!
 Altsaa vil I nu alle, herfra til fædrene Hiemstavn
-<pb n="152" facs="164.jpg"/>Flygtende, stige ombord paa de tveradaarede Enekker,
-Ladende Priamos Wren, og Troerne Spiren af
-    / Argos,
+<pb n="152" facs="164.jpg"/>Flygtende, stige ombord paa de tveradaarede Snekker,
+Ladende Priamos Æren, og Troerne Spiren af Argos,
 Helena, for hvis Skyld saa mange Hellenernes Sønner
-Faldt for Ilion, langt fra det elskte fædrene Hiem. land?
-Hør mig! begiv til Uchaiernes Hær dig uden Forhaling!
-Etands, overtalende, der med din Røst hver Mand, og forbyd dem,
+Faldt for Ilion, langt fra det elskte fædrene Hiemland?
+Hør mig! begiv til Achaiernes Hær dig uden Forhaling!
+Stands, overtalende, der med din Røst hver Mand, og forbyd dem,
 Ud i Havet at støde de tveradaarede Snekker!
-Saa hun talte. Ham Drdenes Klang forraadte Gudinden.
+Saa hun talte. Ham Ordenes Klang forraadte Gudinden.
 <pb n="153" facs="165.jpg"/>Flux afkastende Kappen, heniilte han. Kappen fra Jorden
 Hæved Herolden Eurybates op, som vandrede bag ham.
 Herskeren, Atreus Søn, Agamemnon, som treen ham imøde,
@@ -1480,7 +1463,7 @@ Tog han af Haanden den Old til Old slægtarvede Domstav,
 Og med den han omfoer blandt de væbnede Danaers Snekker,
 Hvem han nu der antraf, en Høvding, eller en Hærdrot,
 Standsede han; og nærmed sig ham med venlig Formaning:
-<pb n="154" facs="166.jpg"/>Salsomme Mand! anstaaer det vel dig, at flye, som en Nidding?
+<pb n="154" facs="166.jpg"/>Sælsomme Mand! anstaaer det vel dig, at flye, som en Nidding?
 Bliv her rolig du selv, og bevæg til at blive de andre! -
 Veed du dog ei, hvad i Sinde vel har Agamemnon med alt det.
 Sætter han Folket paa Prøve maaskee, for siden at straffe?
@@ -1488,67 +1471,63 @@ Hørte vi alle dog ei hans Erklæringer nylig i Raadet.
 Lad os ei tirre hans Harm til fordærvelig Rasen mod Hæren!
 Frygtelig er i sin Vrede den gudstadfæstede Hersker;
 Thi han har Magten af Zeus, hvis Forsyn vaager omkring ham.
-<pb n="155" facs="167.jpg"/>Hvem iblandt Folket han traf, af gemeen Mand, stoiende hiemad,
+<pb n="155" facs="167.jpg"/>Hvem iblandt Folket han traf, af gemeen Mand, støiende hiemad,
 Slog han med Staven, og skiældte ham lydt med truende Tilraab:
 Hasende Karl! staae! stands! og hør, hvad andre befale,
 Som du er Intet imod! Hvad gielder du, Nidding, i Kampen?
-Hvad vel i Raadet? en ussel gemeen Dagdriver,  som du er?
-Troer du maaskee, vi er alle Regentere her, vi
-    ( Achaier?
-Fleeres Regiering er skadelig! Een regiere! den Cene,
-<pb n="156" facs="168.jpg"/>Hvilken, o skiulede Kronos, din Søn gav by. *dende Domstav!
-Saa han foer giennem Hæren, forordnende.
-    : Samtlige Skarer
+Hvad vel i Raadet? en ussel gemeen Dagdriver, som du er?
+Troer du maaskee, vi er alle Regentere her, vi Achaier?
+Fleeres Regiering er skadelig! Een regiere! den Eene,
+<pb n="156" facs="168.jpg"/>Hvilken, o skiulede Kronos, din Søn gav lydende Domstav!
+Saa han foer giennem Hæren, forordnende. Samtlige Skarer
 Styrtede nu til Forsamling igien fra Snekker og Telte,
 Larmende høit, som naar vildt mod det huulthenbruusende Havs Bred
-Bølgernes Døninger sqvulpe med Hulk i brølende y Gienlyd.
+Bølgernes Døninger sqvulpe med Hulk i brølende Gienlyd.
 Alle nu leired sig rolig, og hver sad taus i sit Sæde.
-Cene Thersites hævede fræk sin skraalende Stemme,
+Eene Thersites hævede fræk sin skraalende Stemme,
 <pb n="157" facs="169.jpg"/>Han, som, af Spydighed fuld imod Fyrsterne, stedse med kaad Mund,
 Uden Meed eller Maal ordgydende, søgte kun Uqvem,
-Ved at fordreie for Folket, og latterliggiore, hvad helst ham
+Ved at fordreie for Folket, og latterliggjøre, hvad helst ham
 Leilighed bød. Den hæsligste Mand i Hæren for Troja
 Haltede han, skeelsiet, og rygbepuklet, og brystflad,
 Og med en blussende Tot paa det stygt tilspidsede Hoved.
 Høistmodbydelig var han Peliden især og Odysseus,
-Dem han bestandigen hegled; men nu mod selv Agamemnon (
-Gisd han sin Galde med skrydende Nøst. Achaierne samtlig
+Dem han bestandigen hegled; men nu mod selv Agamemnon
+Gød han sin Galde med skrydende Røst. Achaierne samtlig
 <pb n="158" facs="170.jpg"/>Yttred omsonst Uvillie, hver mod Skumleren opbragt;
 Skraalende dog han blev ved, udskiældende høit Agamemnon:
-Atreus Son! hvad klager dn nu? hvad fattes din Attraa?
+Atreus Søn! hvad klager du nu? hvad fattes din Attraa?
 Propfuldt er jo dit Telt af Malmgods; Qvinder i Mængde
-Har du, de favreste, nogen kan see, som fremmest foralle
+Har du, de favreste, nogen kan see, som fremmest for alle
 Vi Achaier dig skiænke, hvergang en Stad os erobres.
 Mangler endnu dig det Guld, som en hestetæmmende Troer-
 <pb n="159" facs="171.jpg"/>Bringer fra Staden til Leirs, for at løse den elskede Søn med,
 Hvilken til Fange jeg tog, eller og en anden Achaier?
-Mangler endnu dig en blomstrende Møe Al Leflen i Eenrum,
-Som du beholder alleene for dig? O! skam dig, da Hærens:
-Fører du er, kun at bringe Fortred Achaiernes Søn"ner!
-Op!
-    qvindagtige, Danaer ei, men Danaerins der!
+Mangler endnu dig en blomstrende Møe til Leflen i Eenrum,
+Som du beholder alleene for dig? O! skam dig, da Hærens
+Fører du er, kun at bringe Fortred Achaiernes Sønner!
+Op! qvindagtige, Danaer ei, men Danaerinder!
 Lader os ile til Hiemmet ombord! og lader ham eene
 Sluge sig mæt paa Foræringer her! at engang han maa lære,
 <pb n="160" facs="172.jpg"/>Hvad vor mægtige Hielp hans Fordeel til eller fra giør!
 Har han dog nylig Peliden, en Helt, langt meer end han selv værd,
-Skiændigen haant, da hans vundene Skienk han A fræk ham berøved!
-Men ei Galde han har i sit Bryst, den dorne Pelide,
-Elyers den Niddingstreg, Agamemnon, var bleven din sidste!
+Skiændigen haant, da hans vundene Skiænk han saa fræk ham berøved!
+Men ei Galde han har i sit Bryst, den dorske Pelide,
+Ellers den Niddingstreg, Agamemnon, var bleven din sidste!
 Altsaa skiældte Thersites med høi Røst Folkenes Fører,
-Atreus Son. Da nærmed sig ham Drothelten Odysseus,
-<pb n="161" facs="173.jpg"/>    Bister, med truende Blik, og tiltalte med diærvelig Synd ham:
-    Orddumdristige Svadser, Thersites, klingende Bielde,
-    Lie! hold op med dit enkelte Skraal mod Fyrsternes Adfærd!
-(
-    Tvivler jeg dog, at en slettere Mand udfandtes blandt alle,
-    Som med Atriderne hid til Kamp mod Ilion ans kom.
-    Derfor besmit med din Mund i Forsamlingen aldrigen Drots Navn!
-    Tam din utidige Sqvalder; du lurer omsonst dog paa hiemfart.
+Atreus Søn. Da nærmed sig ham Drothelten Odysseus,
+<pb n="161" facs="173.jpg"/>Bister, med truende Blik, og tiltalte med diærvelig Fynd ham:
+Orddumdristige Svadser, Thersites, klingende Bielde,
+Tie! hold op med dit enkelte Skraal mod Fyrsternes Adfærd!
+Tvivler jeg dog, at en slettere Mand udfandtes blandt alle,
+Som med Atriderne hid til Kamp mod Ilion ankom.
+Derfor besmit med din Mund i Forsamlingen aldrigen Drots Navn!
+Tæm din utidige Sqvalder; du lurer omsonst dog paa hiemfart.
 <pb n="162" facs="174.jpg"/>Ingen med Vished end veed, hvorhen sig Sagen vil vende:
 Om til Held hiemdrage de Danaer, eller til Uheld?
-Üblu sidder du, skiældende lydt Mandskarernes Fører,
+Ublu sidder du, skiældende lydt Mandskarernes Fører,
 Atreus Søn, Agamemnon, fordi ham de Danaers Hære
-Rigelig have beskænkt, og giser i Forsamlingen mod ham!
+Rigelig have beskænkt, og gyser i Forsamlingen mod ham!
 Men jeg siger dig her, og sandelig vorder det fuldbragt:
 Finder jeg nok eengang dig skraalende rase, som her nu,
 Skal paa Skuldrene meer Odysseus Hoved ei kneise;
@@ -1559,10 +1538,10 @@ Og dig, hylende, nøgen, i hele Forsamlingens Paasyn,
 Haanligen pidsker til Snekkerne hen, skamskiændet, og hudløs!
 Saa hans Ord; og med Staven et Drag paa Nakken og Puklen
 Gav han ham droit. Da vendte sig hin med hulkende Taarer;
-Thi paa hans Ryg opsvulmed et Spor af den gyle dene Domstav
-<pb n="164" facs="176.jpg"/>Blodigt og blaat. Nu satte han sig, og murred i : Skiægget,
-Zittred, og saae heel uselig ud, da han, Dinene tørred.
-Rundt om maatte man lee, trods Ergretsen, over hans Aasyn.
+Thi paa hans Ryg opsvulmed et Spor af den gyldene Domstav
+<pb n="164" facs="176.jpg"/>Blodigt og blaat. Nu satte han sig, og murred i Skiægget,
+Zittred, og saae heel uselig ud, da han, Øinene tørred.
+Rundt om maatte man lee, trods Ærgrelse, over hans Aasyn.
 Altsaa talte den eene, blandt Mængden, derom til den anden:
 Sandelig! meget Odysseus tilforn har priselig fuldbragt,
 Være sig, ordnende Slag, eller talende klygtig hvad godt var;
@@ -1576,7 +1555,7 @@ Stod; og, Herolden i Skikkelse lig, bed Folkene Taushed;
 Saa at de fierneste selv, som de nærmeste, blandt de Hellener,
 <pb n="166" facs="178.jpg"/>Klarligen hørte hans Røst, og forstode Forhandlingens Indhold.
 Velberaadet i Hu han tiltalede Kredsen, og sagde:
-    Atreus herskende Son! nu bereder Achaiernes Folk dig
+    Atreus herskende Søn! nu bereder Achaiernes Folk dig
 Spot kun og Skiændsel for alle vor Jords sprogskillede Slægter,
 Ei fuldbyrdende Løftet, de gav med eenige Tilfagn,
 Da de dig fulgte herhid fra dit Argos, Gangeres Avlegn:
@@ -1586,26 +1565,26 @@ See, som umyndige Børn, og som mændberøvede Qvinder,
 Sandt! vel stræber enhver, naar Trængseler møde, til Hiemmet;
 Thi selv den, som og blot een Maaned er fiern fra sin Fælle,
 Holder det nødigen ud, ved den tveradaarige Snekke,
-Fængslet af Vinterens Frost, Modvind, og Bols gernes Oprør.
+Fængslet af Vinterens Frost, Modvind, og Bølgernes Oprør.
 Men os ruller alt hen blandt Aarene, siden vor Hidkomst,
 Her det niende - derfor og ei jeg Achaierne dadler,
 At dem Længsel fortærer ved Snekkerne. Men, da saa lang Tid
 <pb n="168" facs="180.jpg"/>Alt vi har udholdt, var det dog Skam, at vende med tom Haand!
-Taaler, o Venner! endnu lidt Ophold, til os be kiendt blir,
-Om os Calchas har fandt forudsagt, eller og usandt!
+Taaler, o Venner! endnu lidt Ophold, til os bekiendt blir,
+Om os Calchas har sandt forudsagt, eller og usandt!
 End vi dog mindes det grant, og I kunne jo vidne det alle,
-Hvilke de grusomme Kerer end ei til Aïs har bortført,
+Hvilke de grusomme Kerer end ei til Dis har bortført,
 Som om det hendtes i Gaar: Da Hellenernes Snekker ved Aulis
 Samledes, bringende Priamos Skræk og de samtlige Troer:
-Rundt om en Kilde vi offred i Kreds paa den krand fede Moossteen
+Rundt om en Kilde vi offred i Kreds paa den krandsede Moossteen
 <pb n="169" facs="181.jpg"/>Under den høie Platan, hvor Vældet piblende fremsprang,
 Festhekatomber i fuldt Antal til samtlige Guder.
 See! men et Under blev seet. En purpurskinnende Hugorm
-Radsom at skue, til Lyset af Zeus, den Olympier fremkaldt,
-Skisd sig bag Alteret op, og klynged sig høit om Platanen.
-Oven i Træet, paa gyngende Green, laae rolig i  Reden
-Sammenklynged en Hob Spurvunger, dakte med Smaalov, i
-Otte; den niende Spurs var de nøgnes rugende Moder.
+Rædsom at skue, til Lyset af Zeus, den Olympier fremkaldt,
+Skød sig bag Alteret op, og klynged sig høit om Platanen.
+Oven i Træet, paa gyngende Green, laae rolig i Reden
+Sammenklynged en Hob Spurvunger, dækte med Smaaløv, i
+Otte; den niende Spurv var de nøgnes rugende Moder.
 <pb n="170" facs="182.jpg"/>Ormen opslugte de smaa spædtqviddrende Sødskende samtlig:
 Moderen fløi kun om Reden endnu med jamrende Klynken;
 Da hin, dreiende Hov'det, den skrigende snapped ved Vingen.
@@ -1620,32 +1599,32 @@ Dette saa mægtige Tegn har sendt Zeus varslende Forsyn
 Seent og sildigt; men bringende seent vedvarende Hæder.
 See! som nu slugte hin Orm Spurvredens quiddrende Spæde,
 Otte; den niende Spurv var de nøgnes rugende Moder;
-Altsas skulle vor Kamp ni Aar vedvare for Troja;
+Altsaa skulle vor Kamp ni Aar vedvare for Troja;
 Men i det tiende styrtes os ned dets taarnede Muure!
 Saa sandsagde han der; og snart fuldkommes han Sandsagn.
-<pb n="172" facs="184.jpg"/>Altsaa forbliver nu her, sodskimrende Danaer alle,
-Til vi har styrtet i Gruus hin Priamos prægtige ( Taarnstad.
+<pb n="172" facs="184.jpg"/>Altsaa forbliver nu her, sølvskimrende Danaer alle,
+Til vi har styrtet i Gruus hin Priamos prægtige Taarnstad.
 Saa han talte; men skingrende lød, med jublende Tilraab,
 Rundt fra Snekkernes Leir Achaiernes stormende Bifald,
 Dig, Odysseus, prisende lydt, og den herlige Tale.
 Derpaa tog nu til Ords den gamle gereniske Nestor:
 Himmel! hvor reent barnagtigt I svadse paa Thinge jer Tid bort,
-Ret, som umyndige Børn, der ei vide hvad Kriger, og Krigsdand!
+Ret, som umyndige Børn, der ei vide hvad Kriger, og Krigsdaad!
 <pb n="173" facs="185.jpg"/>Hvor er nu Løfterne? hvor de med Eed bekræftede Tilsagn? -
-Skal da nu blive til Røg hvert Raad? hver marke dig Beslutning?
+Skal da nu blive til Røg hvert Raad? hver mærkelig Beslutning?
 Hvert Pagtoffer af Viin? hvert tillidfordrende Haandslag?
-Stedse med Ord kun vi stride, mens intet i Gierning til Udgang i
+Stedse med Ord kun vi stride, mens intet i Gierning til Udgang
 Tegner endnu, saa længe vi her og dvæled, dvæle.
-Atreus Son! herefter, som før, med urokkelig Fasthed,
+Atreus Søn! herefter, som før, med urokkelig Fasthed,
 Før du de Danaers Hære til Kamp i standende Feldtslag!
 Agt du for intet de to eller tre, som i Smug med hinanden
 <pb n="174" facs="186.jpg"/>Raadslaae: (hvad dem dog aldrigen blir, trods Længeselen, opfyldt)
 Hiem til Argos at gaae, forinden man veed, om Kronions
 Løfte forjatted os sandt? eller og forjatted os usandt?
 Thi jeg siger, os vinkte den høieste raadende Gud, Zeus,
-Paa den Dag, vi besteg de lethenglidende Snek.
-     ker,
-Alle si Danaer, Død og Fordærd at bringe de Troer.
+Paa den Dag, vi besteg de lethenglidende Snekker.
+
+Alle I Danaer, Død og Fordærd at bringe de Troer.
 See! thi han gav os et lykkeligt Tegn: det lynte til høire.
 Derfor vende sig ingen herfra, sig skyndende hiemad,
 <pb n="175" facs="187.jpg"/>Før han har sovet i Seng med een af Troernes Qvinder,
@@ -1657,27 +1636,27 @@ Altsaa tænk du, o Hersker, paa Raad, og hør dem af andre!
 Ikke dit Hierte forkaste det Ord, jeg taler, som daarligt:
 Opstil, Stamme ved Stamme, ved Slægt Slægt, Folket, Atrides,
 <pb n="176" facs="188.jpg"/>At een Slægt hos den anden, og Stamme hos Stamme maa fremstaae!
-Giør du ny det, og adlyde de Danaer dig, vil du Elart see
+Giør du nu det, og adlyde de Danaer dig, vil du klart see
 Hvilken af Førerne selv der er feigest, og hvilket af hvert Folk
-Tapperst; thi hver da for sig, udmærkt, vil kiempe paa sin Viis.
+Tapperst; thi hver da for sig, udmærkt, vil kæmpe paa sin Viis.
 Og du erfarer, om hindrer vor Seir guddommelig Almagt,
 Eller og Mangel paa Mod i vor Hær og Mangel paa Krigsklygt.
-Ham giensvarende talte den mægtige Drot Uga memnon:
+Ham giensvarende talte den mægtige Drot Agamemnon:
 <pb n="177" facs="189.jpg"/>Sandelig, Olding! i Raad du Hellenerne samtlig beseirer!
 Havde dog, Zeus o Fader! og Pallas Athen'! og Apollon!
 Jeg ti Drotter, som dig, i Krigsraad blandt de Hellener,
-Snart da bsiede sig den herskende. Priamos Taarnstad
+Snart da bøiede sig den herskende Priamos Taarnstad
 Under vor knusende Magt, og sank nedstyrtet i Støvet!
-Ak! men den skyeskioldvæbnede seus tilsendte mig Uheld,
+Ak! men den skyeskioldvæbnede Zeus tilsendte mig Uheld,
 Da han i Kiv forvikled mig her, og forfængelig Tvedragt:
 See! thi jeg og Peliden ueenige blev for en Møes Skyld,
-<pb n="178" facs="190.jpg"/>Veplende Bitterhedsord; og jeg selv begyndte vor Skiendsmaal.
+<pb n="178" facs="190.jpg"/>Vexlende Bitterhedsord; og jeg selv begyndte vor Skiendsmaal.
 Hvis vi engang os igien med hinanden forlige, da sikkert
 Udebliver ei Troernes Fald eet eeneste Dagbøgn.
 Dog nu til Maaltid gaaer, at paa Stand kan rustes til Angreb!
 Hver omhyggelig pudse sit Skiold og skiærpe sit Haandspyd,
 Hver med Omhu fore tilgavns de hurtige Heste,
-Hver og besigtige nsie sin Vogn, og berede til Slag alt,
+Hver og besigtige nøie sin Vogn, og berede til Slag alt,
 At den udslagene Dag vi kan stride den strængeste Stridskamp!
 Thi vi vil før os ei hvile, ja selv ei raste det mindste,
 <pb n="179" facs="191.jpg"/>For, ved sin Ankomst, Natten, os kielende Modet, adskiller!
@@ -1687,98 +1666,96 @@ Strømme vil Sveden af mangen en Hest for den glimrende Stridsvogn!
 Men, hvis fra Kampen sig holdende fiern, jeg finder en Nidding
 Skiult ved de snablede Snekker, omsonst vil en saadan sig omsee,
 Hvor han skal flye Rovfuglenes Sværm og de stimlende Hunde!
-<pb n="180" facs="192.jpg"/>    Saa han talte. Da skreg Achaierne. Som naar en Branding,
-    Hævet af Sydorkanen med Magt, fra det nederste Havdyb
-    Bryder i brusende Brag mod den bratfremskraanende Fieldpynts
-    Stedse besqvulpede Brink, der er udsat Stormenes Anfald.
-    Alle fra Sædet opsprang, og fordeelt i Snekkernes Strandleir,
-    Redte til Maaltid flux. Rundt steg fra Teltene
-    i Røgdamp;
-    Og til de evige Guder de offrede, andre til andre,
-    Bedende: Skiændsel i Kampenes Brag, og Døden, at undflye,
-    Men Agamemnon selv, Hærføreren, offred en Oxe,
+<pb n="180" facs="192.jpg"/>Saa han talte. Da skreg Achaierne. Som naar en Branding,
+Hævet af Sydorkanen med Magt, fra det nederste Havdyb
+Bryder i brusende Brag mod den bratfremskraanende Fieldpynts
+Stedse besqvulpede Brink, der er udsat Stormenes Anfald.
+Alle fra Sædet opsprang, og fordeelt i Snekkernes Strandleir,
+Redte til Maaltid flux. Rundt steg fra Teltene Røgdamp;
+Og til de evige Guder de offrede, andre til andre,
+Bedende: Skiændsel i Kampenes Brag, og Døden, at undflye,
+Men Agamemnon selv, Hærføreren, offred en Oxe,
 <pb n="181" facs="193.jpg"/>Stærk, femaarig, og feed, til den altingraadende Gud Zeus;
 Og lod kalde til Offret Achaiernes Føreres Ældste:
-Nestor fremmest og først, og Idomeneus,  Creternes Hardrot;
-Ajaxbrødrene siden, og Tydeus Son, Diomed;
+Nestor fremmest og først, og Idomeneus, Creternes Hærdrot;
+Ajaxbrødrene siden, og Tydeus Søn, Diomed;
 Endelig og den siette, den Gudernes yndling, Odysseus.
-Ukaldt kom af sig selv Kampraaberen, Drot Me nelaos,
+Ukaldt kom af sig selv Kampraaberen, Drot Menelaos,
 Ahnende Broderens Sorg og Trang til broderlig Medhielp.
-Alle nu stod om Nøddet, og toge det hellige Byge meel;
+Alle nu stod om Nøddet, og toge det hellige Bygmeel;
 <pb n="182" facs="194.jpg"/>Mellem dem hæved sin Røst, bonfaldende, Drot Agamemnon:
 Zeus, du Valde! du Kraft! skyemørknende! Hersker i Høiluft!
 Lad før Solen ei sænke sig ned, end Mulmet ei bredes,
 For fra sin Høide jeg styrter i Gruus ned Priamos Taarnborg;
-Før giennem Portene sees udslamme den tærende Lue;;
-For jeg paa Hektors Bryst med dybt indtrængende Staal har
-Brynien splitted, og rundt om hans Fald henstyrtede nasgruus
+Før giennem Portene sees udslamme den tærende Lue;
+Før jeg paa Hektors Bryst med dybt indtrængende Staal har
+Brynien splitted, og rundt om hans Fald henstyrtede Næsegruus
 <pb n="183" facs="195.jpg"/>Hver af hans Fæller har bidt med skiærende Tænder i Jorden!
-Saa han bad. Dog hans Raab bonhored ei
-     Kongen Kronion;
-Offeret kun han annammed, og sendte ham Trangselers Trængsel.
+Saa han bad. Dog hans Raab bønhørte ei Kongen Kronion;
+Offeret kun han annammed, og sendte ham Trængselers Trængsel.
 Men da nu Bønnen var endt, opkasted de Bygget, og nedad
-Bsiedde Halsen paa Nøddet, og slagted det; trak saa dets Hud af;
+Bøiede Halsen paa Nøddet, og slagted det; trak saa dets Hud af;
 Udskar Bovene først; omvikled dem siden med Flommen,
-Dobbelt; og oven paa dem de lagde det plukkede Smaakiod.
-<pb n="184" facs="196.jpg"/>Dette forbrændte de sammen paa Baal af tørrede -Oviste;
+Dobbelt; og oven paa dem de lagde det plukkede Smaakiød.
+<pb n="184" facs="196.jpg"/>Dette forbrændte de sammen paa Baal af tørrede Qviste;
 Vendte saa, stukne paa Sped, Indvoldene langsomt for Ilden.
 Men da de Bovene havde forbrændt, og Fyldingen forsmagt,
-Skar de det øvrige Kisd og smaat, og stak det paa Haandsped.
-Risted det varlig for Ilden, og trak tilbage det flegte
+Skar de det øvrige Kiød og smaat, og stak det paa Haandsped.
+Risted det varlig for Ilden, og trak tilbage det Stegte
 Da de med alt nu færdige var, og Maden beredt stod,
 Spiiste de sammen; og hver sin Bekomst fik rundelig tildeelt.
 Men da nu Hungerens Krav og Tørstens fuldelig stilt var,
-<pb n="185" facs="197.jpg"/>    Udbrød Gangernes Tammer, den gamle gerenifle Nestor:
-    Atreus herlige Son, Mandskarernes Drot, Agamemnon!
-    Lad os med Snak nu ei spilde vor Tid, og længer ei dvæle
-    Med at begynde det vigtige Værk, Zeus vinked os Held til!
-    Lad nu Herolderne flux med høit Raab kalde tilsammen
-    Alle de kobberomskiærmte Hellener ved Skibenes Strandleir!
-    ' Vi selv vandre da vidt giennem Hæren, nu herhen, nu derhen,
+<pb n="185" facs="197.jpg"/>Udbrød Gangernes Tammer, den gamle ærværdige Nestor:
+Atreus herlige Søn, Mandskarernes Drot, Agamemnon!
+Lad os med Snak nu ei spilde vor Tid, og længer ei dvæle
+Med at begynde det vigtige Værk, Zeus vinked os Held til!
+Lad nu Herolderne flux med høit Raab kalde tilsammen
+Alle de kobberomskiærmte Hellener ved Skibenes Strandleir!
+Vi selv vandre da vidt giennem Hæren, nu herhen, nu derhen,
 <pb n="186" facs="198.jpg"/>Gydende Mod dem i Brystet, og lyst til stormende Feldtslag!
-: Talt; og hans Ord adlød Mandskarernes Drot, Agamemnon:
+Talt; og hans Ord adlød Mandskarernes Drot, Agamemnon:
 Flux, han Herolderne bød, med lydthenskingrende Stemmer
 Kalde tilsammen til Slag de haarlokfavre Hellener.
 Skingrende raabte de lydt, og flux var Mængden forsamlet.
 Rundt om Atriden og stimled de gudstadfæstede Drotter,
 Ordnende Hæren. Foran gik selv Gudinden Athene,
-Høit med Wgiden, det evig i Pragt tidtrodsende Gudskiold:
-<pb n="187" facs="199.jpg"/>Hundred af pureste Guld skisnt virkede flettede Ovaste
-Hang om dets Rand, hver eene for sig er heelt Spe katomb værd.
+Høit med Ægiden, det evig i Pragt tidtrodsende Gudskiold:
+<pb n="187" facs="199.jpg"/>Hundred af pureste Guld skiønt virkede flettede Qvaste
+Hang om dets Rand, hver eene for sig er heelt Hekatomb værd.
 Hermed, rundt om lysnende, foer, bliktindrende selv, hun
 Giennem Achaiernes Hær, og formante til Jil; og i hvert Bryst
 Gydende krigerisk Kraft, opslammed hun alle til Striden.
 Samtlige tyktes nu sødere Kamp og buldrende Krigslarm,
-End i de glindsende Snekker ar vende til elskede Hiemstavn.
+End i de glindsende Snekker at vende til elskede Hiemstavn.
 Som naar fortærende løber en Ild, antændt i en Granskov,
 <pb n="188" facs="200.jpg"/>Opad Fieldenes Ryg mod Skyerne, lysende fiern hen;
 Saa fra den vandrende Hær, da de blinkende Rustninger fremgik,
 Foer en bevægelig Glands, vidtlysende, høit imod Himlen.
-See! men, som vildt Trækfuglenes Sværm i utals lige Skarer:
-Storkenes Hær, Vildgiæs, og en Trop langhalsede Evaner,
+See! men, som vildt Trækfuglenes Sværm i utallige Skarer:
+Storkenes Hær, Vildgiæs, og en Trop langhalsede Svaner,
 Over den Asiske Sump og Caystrios staaende Vande,
 Herhen og derhen flagrende først paa svævende Vinger,
-Sænke den tonende Flugt mod den lydt giensusende Ssekyst;
+Sænke den tonende Flugt mod den lydt giensusende Søekyst;
 <pb n="189" facs="201.jpg"/>Saa de nu styrted fra Snekkerne hen og Teltene, tropviis,
 Til den skamandriske Bred, mens Jorden dundrede rundtom
 Skrækkelig rystet af Føddernes Trin, og Hovenes Trampen.
 Stilte nu stode de der paa Skamandros blomstrende Slette:
-Mange, som Loøv, og som Knoppe paa Træer i blom. strende Foraar.
+Mange, som Løv, og som Knoppe paa Træer i blomstrende Foraar.
 Men, som en talløs Vrimmel af rundtom mylrende Fluer,
 Stimler tilsammen i Hobe til Hyrdernes Hytte, naar Solen
-Smiler i liflige Vaar, og af sød Melk Botterne fyldt staae;
+Smiler i liflige Vaar, og af sød Melk Bøtterne fyldt staae;
 <pb n="190" facs="202.jpg"/>Saa tæt stod hos hinanden de haarlokfavre Hellener,
 Stillede her mod de Troer, med Ødelæggelsens Krigstørst.
-Dog, som erfarene Hyrder man seer, vildtstrei fende Geeder
+Dog, som erfarene Hyrder man seer, vildtstreifende Geeder
 Skille med Mag, skiendt Hiordene mængt hiemvende fra Græsgang;
-Skilled og Førerne hine, dem ordnende, herhen : og derhen,
+Skilled og Førerne hine, dem ordnende, herhen og derhen,
 Alle til Slag. Men i Midten den herskende Drot, Agamemnon
-Hoined især sig, i hoved og Blik den tordnende Gud lig,
-Poseidaoni Bryst, og i vældige Lænder en Ares.
-<pb n="191" facs="203.jpg"/>Ret, som i Hiorden en Tyr heit over det lavere Hornqvæg
+Høined især sig, i Hoved og Blik den tordnende Gud lig,
+Poseidaons Bryst, og i vældige Lænder en Ares.
+<pb n="191" facs="203.jpg"/>Ret, som i Hiorden en Tyr høit over det lavere Hornqvæg
 Hæver sig stolt, og i græssende Flok vidtkiendelig fremgaaer;
 Saa gik den Dag straalende frem i Mængden, Atriden,
-Samtlige Kiæmpre fordunklende rundt, forklart af Kronion.
+Samtlige Kiæmper fordunklende rundt, forklart af Kronion.
 </poetry>
 </body>
 </text>
@@ -1786,13 +1763,13 @@ Samtlige Kiæmpre fordunklende rundt, forklart af Kronion.
 <text id="baggesen2026090107" variant="baggesen2019080316">
 <head>
   <title>Lenardo og Blandine</title>
-  <subtitle>Efter Bürger</subtitle>
+  <subtitle>(Efter Bürger.)</subtitle>
   <firstline>Blandine sad hisset, Lenardo stod her</firstline>
   <notes>
     <note>Gendigtning af Gottfried August Bürger: <xref type="translation" poem="burger2019080301"/>.</note>
   </notes>
   <source pages="192-219"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1836,7 +1813,7 @@ Da tog han, o Himmel! en Seddel her frem!
 Den Seddel i Æblet saa hemmelig stak,
 Derpaa denne søde, fortroelige Snak:
 
-"<pb n="195" facs="207.jpg"/>Du skiønneste Yngling, hvor Øiet seer hen!
+<pb n="195" facs="207.jpg"/>Du skiønneste Yngling, hvor Øiet seer hen!
 "Meer yndig end alle de glimrende Mænd!
 "Meer ædel end disse, høimodig og god,
 "Skiøndt ikke fremblomstret af adelig Rod!
@@ -1911,7 +1888,7 @@ Ham standsed' forgieves den truende Vagt —
 "Nu maae jeg, nu vil jeg til Kongen!" han svor,
 "Ham venter et Oprør, ham truer et Mord!" —
 
-    "<pb n="200" facs="212.jpg"/>Ho! Holla! Vaagn op du Regent i Burgund!
+<pb n="200" facs="212.jpg"/>Ho! Holla! Vaagn op du Regent i Burgund!
 "Din Stamme, din Ære besudler en Hund!
 "<b>Blandine,</b> din dydige Datter, i Seng
 "Fordriver sin Tid med din nedrigste Dreng!"
@@ -1926,7 +1903,7 @@ Vild reiste han derfor af Sengen sig nu:
 "Dit Blod det undgielde! det drikke Burgund,
 "Ifald mig bedrager din giftige Mund!" ...
 
-"<pb n="201" facs="213.jpg"/>Her stiller jeg, Gamle! mig selv dig til Pandt!
+<pb n="201" facs="213.jpg"/>Her stiller jeg, Gamle! mig selv dig til Pandt!
 "Op! skynd dig! saa finder dit Øie det sandt!
 "Mit Blod det undgielde! det drikke Burgund,
 "Hvis Løgn har besmittet min varslende Mund!"
@@ -1941,7 +1918,7 @@ Som nu var af Ælde nedmuldret i Gruus;
 End hvelved' sig Kieldren og Hallen, foran
 Bedækket med Tidsler, med Torn, og med Sand.
 
-    <pb n="202" facs="214.jpg"/>Faa kiendte dens Aabning i Krattet; men hver,
+<pb n="202" facs="214.jpg"/>    Faa kiendte dens Aabning i Krattet; men hver,
 Som kiendte den, fandt uden megen Besvær
 En hemmelig Dør til de Værelser smaae,
 I hvilke Prindsessen om Sommeren laae.
@@ -1956,7 +1933,7 @@ Og stod' der, og lytted' — "Hør, Konge! nu hør!
 "Tys! hør, hvor det hvisker! hør, Konge! hvert Ord!
 "Hør! troer du end ikke, saa aldrig du troer."
 
-"<pb n="203" facs="215.jpg"/>O Elskte! min Elskte! hvi modfalder du
+<pb n="203" facs="215.jpg"/>O Elskte! min Elskte! hvi modfalder du
 "Hos mig, som er evig din Eiendom nu?
 "Om Dagen adlyder jeg kongeligt Bud;
 "Nu lyder jeg Elskovs, nu er jeg din Brud!"-
@@ -1971,7 +1948,7 @@ Og stod' der, og lytted' — "Hør, Konge! nu hør!
 "For Krone og Zepter og gyldene Karm
 "Jeg valgte mig Kierligheds Nok i din Arm." ...
 
-"<pb n="204" facs="216.jpg"/>Og skiønneste Skiønne! ved List eller Tvang
+<pb n="204" facs="216.jpg"/>Og skiønneste Skiønne! ved List eller Tvang
 "Dit kierlige Løvte vil brydes engang!
 "Ved Beilen og Beilen, om langt eller kort,
 "Tilsidst dog en Prinds dig som Brud fører bort!
@@ -1986,7 +1963,7 @@ Og stod' der, og lytted' — "Hør, Konge! nu hør!
 "Min Elskte! min Engel! vær fyrig og froe!
 "Mit Løvte jeg evig skal holde dig troe.
 
-"'<pb n="205" facs="217.jpg"/>Som Vind og som Vand er mit elskende Sind -
+<pb n="205" facs="217.jpg"/>Som Vind og som Vand er mit elskende Sind -
 "Vel bortrinde Vande, vel henvifter Vind;
 "Dog alle bortrinde, henvifte dog ei,
 "Saa evig min brændende Elskov og ei.' ...
@@ -2016,7 +1993,7 @@ De dreve den salige Spøgen saa vidt. —
 Da raste de Vidner, da vilde de frem;
 Men Slaaen og Laasene hindrede dem.
 
-    <pb n="207" facs="219.jpg"/>De bleve, de vented' med fraadende Mund;
+<pb n="207" facs="219.jpg"/>    De bleve, de vented' med fraadende Mund;
 Saa venter paa Haren den lurende Hund.
 Derinde tilsidst, efter mattende Lyst,
 Blev tungt og uroeligt den Elskendes Bryst:
@@ -2031,7 +2008,7 @@ Blev tungt og uroeligt den Elskendes Bryst:
 "O Elskede! bliv! de smaae Stierner dog ei
 "Forraade den Elskendes lønlige Vei." ...
 
-    "<pb n="208" facs="220.jpg"/>Vaagn - elskte Prindsesse! jeg hører en Lyd —
+<pb n="208" facs="220.jpg"/>Vaagn - elskte Prindsesse! jeg hører en Lyd —
 "Ak! Svalen forkynder alt Morgenens Fryd." ...
 "O Sødeste! bliv dog! — du hører ei den;
 "Men klagende Nattergal, Kierligheds Ven." ...
@@ -2046,7 +2023,7 @@ Blev tungt og uroeligt den Elskendes Bryst:
 "Kom viis mig dit Hierte - det banker saa mat!
 "Hold af mig du Sødeste! — kommende Nat!" ...
 
-"<pb n="209" facs="221.jpg"/>Sov rolig! sov sødt!" ... og nu smutted' han væk;
+<pb n="209" facs="221.jpg"/>Sov rolig! sov sødt!" ... og nu smutted' han væk;
 Men kold i hans Aarer krøb dødelig Skræk —
 Rundt om sig han lugtede Liig — og med Nød
 Han raved' til Enden af Gangen, som død —
@@ -2061,22 +2038,22 @@ Da bruste hans Øine — han opgav sin Aand;
 Og uden Beredelse, Trøst, eller Ven
 Hans tvivlende Siæl foer til Evighed hen.
 
-    <pb n="210" facs="222.jpg"/>Forræderen hugged' med fnysende Harm
-    I mange smaae Stykker hans blødende Barm:
-    "Kom! viis mig dit Hierte! der banker saa mat!
-    "Hold af din Tilbedede — kommende Nat!" —
+<pb n="210" facs="222.jpg"/>Forræderen hugged' med fnysende Harm
+I mange smaae Stykker hans blødende Barm:
+"Kom! viis mig dit Hierte! der banker saa mat!
+"Hold af din Tilbedede — kommende Nat!" —
 
-    Og rev ham det ud af det blodige Bryst —
-    Og kiølte sin Rasen i Helvedes Lyst:
-    "Der har jeg dit Hierte! ak! banker saa mat!
-    "Hold af mig, du Sødeste! — kommende Nat!" —
+Og rev ham det ud af det blodige Bryst —
+Og kiølte sin Rasen i Helvedes Lyst:
+"Der har jeg dit Hierte! ak! banker saa mat!
+"Hold af mig, du Sødeste! — kommende Nat!" —
 
-    Prindsessen imens i urolige Blund
-    Sig kasted' i Søvne; fælt drømmede hun:
-    Om blodige Perler i blodige Krands,
-    Om blodige Brudgom, og Spøgelsers Dands.
+Prindsessen imens i urolige Blund
+Sig kasted' i Søvne; fælt drømmede hun:
+Om blodige Perler i blodige Krands,
+Om blodige Brudgom, og Spøgelsers Dands.
 
-    <pb n="211" facs="223.jpg"/>Og vred sig i Sengen, saa mat og saa svag,
+<pb n="211" facs="223.jpg"/>    Og vred sig i Sengen, saa mat og saa svag,
 Koldt svedende hele den følgende Dag:
 "O kom dog, o Midnat! du Kierligheds Ven!
 "Og bring mig, min Engel, Min Vellyst igien!" —
@@ -2121,7 +2098,7 @@ Med frygtelig Kraft fik af Sengen reist op:
 "Nu dandser I Prindser fra fiern og fra nær!
 "Hei lystig! I Fruer og Herrer! — kom her!
 
-"<pb n="214" facs="226.jpg"/>Op! lystig! — ak for var mit Hierte saa sygt —
+<pb n="214" facs="226.jpg"/>Op! lystig! — ak for var mit Hierte saa sygt —
 "I Fruer og Herrer! hvi leer I saa stygt?
 "Min Brudgom, min Brudgom er han—-jeg er Brud!
 "Os Himmelens Engle troloved' — o Gud!
@@ -2136,20 +2113,20 @@ Med frygtelig Kraft fik af Sengen reist op:
 "Min Brudgom er skiøn, og høimodig, og god,
 "Og han kan foragte høiadeligt Blod.
 
-    "<pb n="215" facs="227.jpg"/>Hei! Spillemand! lystig! spil op til en Dands!
-    "Jeg svæver saa let; thi du vinker, min Krands!
-    "Hop! heisa! Trallalla! Hop! heisa! ha! ha!
-    "Min Bryllupsdag er det! Trallalla! Tralla!"
+<pb n="215" facs="227.jpg"/>Hei! Spillemand! lystig! spil op til en Dands!
+"Jeg svæver saa let; thi du vinker, min Krands!
+"Hop! heisa! Trallalla! Hop! heisa! ha! ha!
+"Min Bryllupsdag er det! Trallalla! Tralla!"
 
-    Saa sang hun og hopped, saa sprang hun og sang,
-    Til Dødsduggen iiskold paa Panden udsprang;
-    Dødsduggen paa blegnende Kinder nedflød,
-    Og mat hun paa Gulvet omtumled', som død.
+Saa sang hun og hopped, saa sprang hun og sang,
+Til Dødsduggen iiskold paa Panden udsprang;
+Dødsduggen paa blegnende Kinder nedflød,
+Og mat hun paa Gulvet omtumled', som død.
 
-    End reiste hun sig, før hun udgav sin Aand,
-    Og strakte mod Karret den dødmatte Haand,
-    Og tog det i Skiødet, og stirred' derpaa,
-    Og aabnede Laaget og saae hvad der laae.
+End reiste hun sig, før hun udgav sin Aand,
+Og strakte mod Karret den dødmatte Haand,
+Og tog det i Skiødet, og stirred' derpaa,
+Og aabnede Laaget og saae hvad der laae.
 
 <pb n="216" facs="228.jpg"/>Da damped', da banked' det mod hendes Bryst,
 Som om det end slog imod hendes i Lyst —
@@ -2166,7 +2143,7 @@ Som om det end følte sig nær ved sin Lyst —
 Og stærkere Taarernes strømmende Flod
 Nu styrted' af Øinene ned i dets Blod:
 
-"<pb n="217" facs="229.jpg"/>Jeg leved' for dig, og nu døer jeg med Lyst —
+<pb n="217" facs="229.jpg"/>Jeg leved' for dig, og nu døer jeg med Lyst —
 "O Hierte! du trykker — du knuser mit Bryst!
 "O Jesu Maria! — forbarm dig — og du -
 "Jeg kommer — din Brud — o slaae heftig — endnu."
@@ -2196,7 +2173,7 @@ Da raste den Gamle: "Det skylder jeg dig!
 Rask uddrog den Gamle sit blinkende Sværd,
 Og død for hans Fod laae Forræderen der.
 
-    "<pb n="219" facs="231.jpg"/>Lenardo! — Blandine, min Datter! — o Gud!
+<pb n="219" facs="231.jpg"/>Lenardo! — Blandine, min Datter! — o Gud!
 "Min blodige Synd, o Forbarmer! slet ud!
 "Forklager mig ei, mine Børn! dog, o nei!
 "Jeg er dog jer Fader — forklager mig ei!" —
@@ -2212,22 +2189,22 @@ I hvilken han giemte de Elskendes Muld.
 <text id="baggesen2026090108" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Leiesvendene</title>
-  <firstline>O skiul dit Smiil, fortryllende Seline!</firstline>
+  <firstline>O! skiul dit Smiil, fortryllende Seline!</firstline>
   <source pages="220-231"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-! skiul dit Smiil, fortryllende Seline!
+O! skiul dit Smiil, fortryllende Seline!
 Ekiul det i mørke Blik! at jeg mane skue
 Vor Verden, som den er, og ei, som himmel.
 Byd disse Gratier, som dig omsvæve,
 Lig Cyprens yndigsmilende Gudinde,
-At fiye din Ciskers vellystdrukne Die!
+At fiye din Ciskers vellystdrukne Øie!
 At jeg maae see de Torne, som sig blande
 Blandt Roserne paa Jorden, see de Slanger,
 <pb n="221" facs="233.jpg"/>Som skiule sig blandt Blomsterne; de Skyer,
-Som rædselsvangre mørkne Himlens Die.
+Som rædselsvangre mørkne Himlens Øie.
 Hold op at synge Dyds og Elskovs Glæder
 Saa tryllende, saa sødt! at jeg maae høre
 Fortrængtes Naab blandt Lærkens Morgensange,
@@ -2241,7 +2218,7 @@ Nu logrer ved din Fod, som for for Orpheus
 Den stygiske Bevogter. Tryllerinde!
 Hvo saae den Himmel, som paa dine Læber,
 Med blide Emiil til evig Kyssen lokker:
-Hvo saae den Guddoms Glands, som fra dit Die,
+Hvo saae den Guddoms Glands, som fra dit Øie,
 <pb n="222" facs="234.jpg"/>Lig Solen, Lys og Liv, og Lyst udbreder:
 Og lagde Mærke til, at Ulven sniger
 Sig lumsk i Faareklæder om blandt Hiorden;
@@ -2257,24 +2234,24 @@ Af Støvets usle Sønners Klagestemmer,
 Og hine Ravnes Skrig, og Hundes Bieffen?
 Hvo følte Forsmag af den rene Glæde,
 Som venter Dydens Ven bag hine Sole
-I Evighedens altid grønne Temper -
-<pb n="223" facs="235.jpg"/>    Hvo følte Salighed i dine Haandtryk,
-    I dine Kys: og i sin Ruus bemærkte
-    Et Glimt af Irring i det skiønne Magtsprog,
-    Som prædiker: vor Verden er den beste?
-    Nei! Juvenal, og Persius, og Stolberg
-    Bestraaltes ei af milde Guder's Blikke,
-    Som jeg, ved dine Emile, danske Cypris!
-    Da de Fornuftens, Troens Tyve hængte
-    I Sekler trodsende, fortiente Galger!
-    Vel! at ei Himlen alle Phoebi Sønner
-    Forundte dine Lige! "Bliv Seline,
-    Og døe hver Mishag, hvor Seline smiler! "
-    Saa bød Naturen, da den mild frembragte
-    Sit Mesterstykke. De, for hvem du smilte,
+I Evighedens altid grønne Tempel -
+<pb n="223" facs="235.jpg"/>Hvo følte Salighed i dine Haandtryk,
+I dine Kys: og i sin Ruus bemærkte
+Et Glimt af Irring i det skiønne Magtsprog,
+Som prædiker: vor Verden er den beste?
+Nei! Juvenal, og Persius, og Stolberg
+Bestraaltes ei af milde Guder's Blikke,
+Som jeg, ved dine Emile, danske Cypris!
+Da de Fornuftens, Troens Tyve hængte
+I Sekler trodsende, fortiente Galger!
+Vel! at ei Himlen alle Phoebi Sønner
+Forundte dine Lige! "Bliv Seline,
+Og døe hver Mishag, hvor Seline smiler! "
+Saa bød Naturen, da den mild frembragte
+Sit Mesterstykke. De, for hvem du smilte,
 <pb n="224" facs="236.jpg"/>Blev alle kielen Elskovs glade Tolke.
 Vist aldrig er du bleven seet af Stolberg;
-Og, saae han dig, var Mørkhed i dit Die.
+Og, saae han dig, var Mørkhed i dit Øie.
 O! kunde jeg et Dieblik kun bryde
 Den Kiæde, som til dig og Dyd og Glæde
 Min hele Siæl, mit hele Væsen lænker!
@@ -2285,8 +2262,7 @@ Din Elskovsdigters kielne, bløde Stemme
 Da skulde hæve sig, og stærk og mandig
 Fortolke hans Forbittrelse; de Toner,
 Som lyde nu, fordi han dig besynger,
-Som Zephirs lette Flugt i Rosens Buske,<pb n="225" facs="237.jpg"/> -
-Som Bækkens Rislen giennem Blomsterenge,
+Som Zephirs lette Flugt i Rosens Buske,<pb n="225" facs="237.jpg"/>Som Bækkens Rislen giennem Blomsterenge,
 Og Nattergalens sørgelige Triller
 Itavse Skove - skulde larme da
 Som den oprørte Nordsøes vrede Bølger,
@@ -2331,10 +2307,9 @@ Den Jord, der smiler blot, fordi den byder
 Dem dog, som Grav, engang en sikker Løn;
 Som, langt fra Hovedstaden, sidste Draabe
 Af deres Sved til dens Forlystning yde;
-<pb n="228" facs="240.jpg"/>:
-Naar Borgeren, den sande, gode Borger,
+<pb n="228" facs="240.jpg"/>Naar Borgeren, den sande, gode Borger,
 Som virksom i sin Kreds, til Statens Nytte,
-Til Statens Wre bruger sine Evner,
+Til Statens Ære bruger sine Evner,
 Staaer i Ministrens Forgemak, og venter
 Forgieves Audienz i simple Klæder
 Bag baand- og nøglemærkte Lediggiængre,
@@ -2398,10 +2373,14 @@ Mig kalder atter til en Sang om dig.
 <text id="baggesen2026090109">
 <head>
   <title>Brev til Fredrik den Store</title>
-  <subtitle>Dengang Kronprinds. Af Voltaire. (1786.)</subtitle>
+  <subtitle>
+    <line>dengang Kronprinds.</line>
+    <line>Af Voltaire.</line>
+    <line>(1786.)</line>
+  </subtitle>
   <firstline>Faa Konger, Prinds! til Held for Millioner</firstline>
   <source pages="232-240"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2433,7 +2412,7 @@ Som Himlen dog enhver med Zepter gav?
 Hvo har ei den? Det rette Lys berøvet,
 Seer Mængden paa Despoten op fra Støvet:
 Han taler, man adlyder; han er vred,
-Man skiælver; han er glad, man er det med..
+Man skiælver; han er glad, man er det med.
 Mon styre med et Vink en Hob af Slaver,
 Er stort? det store Pund, enhver ei haver?
 Nei! men at sønderslaae det Smigerspeil,
@@ -2512,11 +2491,11 @@ Hin svage Jacob i Landflygtighed
 Sin Svigersøn omkomme lod. Du veed
 Historien om denne kronte Lærde:
 Ei alle Hoveder ere Kundskab værde.
-Ak! at han havde samlet kick sin Magt,
+Ak! at han havde samlet kiæk sin Magt,
 Og hævnet Staten, som var ødelagt;
 Udfriet af Fiendens Vold indtagne Stæder,
 Og reddet sin og Nationens Hæder,
-<pb n="240" facs="252.jpg"/>Isteden for mod Vorst og Bellarmin
+<pb n="240" facs="252.jpg"/>Isteden for mod Wolff og Bellarmin
 At føre Krig om Troen paa Latin,
 Og dette Kietter - Væv, med andet meere,
 Til Barnet Jesus frækt at dedicere!
@@ -2537,10 +2516,13 @@ Vær Nordens Cæsar uden Cæsars Feil!
 <text id="baggesen2026090110">
 <head>
   <title>Patriotisme</title>
-  <subtitle>Fragment af et Brev fra Syden. 1790.</subtitle>
+  <subtitle>
+    <line>(Fragment af et Brev fra Syden.)</line>
+    <line>1790.</line>
+  </subtitle>
   <firstline>Jeg glemme Danmark! jeg i Sydens Favn</firstline>
   <source pages="241-253"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2593,7 +2575,7 @@ Udrustede blandt mine Brødre, hvis
 Urokkelige Stierne, deres Aands
 <pb n="245" facs="257.jpg"/>Symbol, selv Middags-Solens Sønner leder,
 Saa føler jeg mig deres Broder, Dans
-Om ringeste, dog ægte Son og stolt,
+Om ringeste, dog ægte Søn og stolt,
 Som Danne - Mand, der aldrig slavisk lød,
 Hvis Fædre giennem Sekler aldrig lød
 Udanske Spiir, bør evig føle sig -
@@ -2662,7 +2644,7 @@ Vor Skabers andet Bud, er Viisdoms, er
 Lyksalighedens Kilde: Elsk din Gud!
 Af dette flyder alle andre. Ret
 Du elsker ikke ham, ifald du ei
-Hans Stabning elsker; ei hans Skabning, hvis
+Hans Skabning elsker; ei hans Skabning, hvis
 <pb n="250" facs="262.jpg"/>Du dine Brødre glemme kan, og ei
 Din Broder, hvis du elsker ikke ret
 Dig selv!
@@ -2705,9 +2687,9 @@ Dumstolt, forkaste dem, fordi paa hin
 Og ikke paa hans egen Grund de fandtes?
 Den kloge, gode Fader meener nei
 Forskriver Læreren og Bøgerne,
-Og glæder sig ved Sonnens Fremgang, som
-Om selv han lærte ham; thi Sonnens Fremgang.
-<pb n="253" facs="265.jpg"/>Er det, han vil- og ei den Lyd: "Gud frie mig!
+Og glæder sig ved Sønnens Fremgang, som
+Om selv han lærte ham; thi Sønnens Fremgang.
+<pb n="253" facs="265.jpg"/>Er det, han vil — og ei den Lyd: "Gud frie mig!
 "Alt det har Faren lært ham selv! "en Lyd,
 Der klinger alt for sødt for mange Fædre,
 Og alt for sødt for mangen Patriot!
@@ -2720,7 +2702,7 @@ Og alt for sødt for mangen Patriot!
   <title>Minonas Fraværelse</title>
   <firstline>Fra den sørgende Stund, da Minona forlod dine Bredde</firstline>
   <source pages="254-256"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2747,36 +2729,36 @@ Dagens Gudinde, vor Lyst, Edelstans Elskede, dig.
 <text id="baggesen2026090112">
 <head>
   <title>Eivinds Drøm</title>
-  <firstline>Jeg sad paa en Klippe, ved Verandis Bryst</firstline>
+  <firstline>Jeg sad paa en Klippe ved Verandis Bæk</firstline>
   <source pages="257-263"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Jeg sad paa en Klippe ved Berandis Bæk,
+Jeg sad paa en Klippe ved Verandis Bæk,
     Med Luuren i Haand, og i Ponsen paa Træk,
     Der maled i Runer, hvad Skulda kun saae,
     Og lettede det, som paa Hiertet mig laae.
 
-    Da nærmed en Dverg mellem Klipperne sig:
-    „Prindsessen Alvilde vil tale med dig. "-
-    Op sprang jeg fra Stenen, bortslængte min Luur,
-    Og fløi, meer end gik, til den Yndiges Buur.
+Da nærmed en Dverg mellem Klipperne sig:
+„Prindsessen Alvilde vil tale med dig. "-
+Op sprang jeg fra Stenen, bortslængte min Luur,
+Og fløi, meer end gik, til den Yndiges Buur.
 
-<pb n="258" facs="270.jpg"/>    Paa Veien jeg tænkte med Uroe mig om:
-    Hvorfor vel det himmelske Budskab mig kom?
-    Hvad Norrigs Asyniers Dronning i Ovel
-    Vel maatte befale sin lydige Træl?
+<pb n="258" facs="270.jpg"/>Paa Veien jeg tænkte med Uroe mig om:
+Hvorfor vel det himmelske Budskab mig kom?
+Hvad Norrigs Asyniers Dronning i Qvel
+Vel maatte befale sin lydige Træl?
 
-    Jeg zittred, og iilte, forvirret, og glad,
-    Med Haab, og med Frygt for jeg vidste ei hvad.
-    Og Aftnen omskimred med døende Smiil
-    Min bævende Fods uvilkaarlige Jil.
+Jeg zittred, og iilte, forvirret, og glad,
+Med Haab, og med Frygt for jeg vidste ei hvad.
+Og Aftnen omskimred med døende Smiil
+Min bævende Fods uvilkaarlige Jil.
 
-    Dog seirede Haab; og med Tillid i Sind
-    Jeg treen i det aabnede Jomfruebuur ind -
-    „Det gaae, som det vil, hvor Alvilde gaaer frem,
-    Flye,Helvedes Skygger, og Ungest med dem!"
+Dog seirede Haab; og med Tillid i Sind
+Jeg treen i det aabnede Jomfruebuur ind -
+„Det gaae, som det vil, hvor Alvilde gaaer frem,
+Flye Helvedes Skygger, og Angst med dem!"
 
     Dog var jeg ei fuldelig kiæk; thi jeg skialv,
     Da Dørren sig pludselig aabnede halv -
@@ -2788,7 +2770,7 @@ Knap voved, at hæve sig, da hun fremgik,
 Og, tæt ved sin Terne, mig over for stod
 Dog samled omsider jeg hele mit Mod:
 
-Jeg Diet slog op; men, o Skræk! hvad jeg saae,
+Jeg Øiet slog op; men, o Skræk! hvad jeg saae,
 Mig lod det i Hastighed atter nedslaae -
 Som truffet af Lyn, foer det blendede ned;
 Thi Dysernes yndige Dronning var vred.
@@ -2801,7 +2783,7 @@ Som Barn, dig har seet i den samme Gestalt!"-
     Det traf mig, som Himmelens Styrten. Hvert Ord,
 En Tordenpiil lig, i mit Hierte nedfoer -
 Mig syntes, at Skabningen rullede bort;
-Og alt for mit bristende Die blev sort.
+Og alt for mit bristende Øie blev sort.
 
     Dog stammed jeg i min Fortvivlelse frem:
 „Vel giæsted jeg aldrigen Asernes Hiem -
@@ -2809,10 +2791,8 @@ Vel blendes mit Blik i Asyniers Sal
 Men alt, hvad af Fenris jeg har, er hans Qval."
 
     Jeg nævnte mit Navn, og ved Odin jeg svor,
-„At ingen Alvildes Tilbeder i Nord
-
-I Troskab og ydmyghed lignede mig"-
-    (
+At ingen Alvildes Tilbeder i Nord
+I Troskab og Ydmyghed lignede mig,
 Og bad den smaa Ternelild tale for mig.
 
 <pb n="261" facs="273.jpg"/>    Jeg tale for dig, Usandfærdigheds Aand!
@@ -2823,12 +2803,11 @@ Naar du siger Nei, siger Sandheden Ja!
     „Bort! Pak dig! "- Jeg vendte mig. Dybt i en Vraa
 En indfattet glimrende Plade jeg saae -
 Jeg blikked i Pladen - o Skræk over Skræk! -
-Og skued mig selv med Utgartiloks Trak -
+Og skued mig selv med Utgartiloks Træk -
 
 Jeg skuede Fenris i hvert. Mine Been
 Knap bare mig; Hiertet af Angest blev Steen.
 Jeg Udgangen ravende søgte; men Vee!
-
 Jeg Dørren ei fandt - jeg den ei kunde see.
 
 Af Rædsel og Smerte nu størkned mit Blod -
@@ -2839,7 +2818,7 @@ Mig arme forbandede glubende Ulv.
     O! styrt mig! "saa bad jeg, med iisnende Sveed -
 „Til Nastrond, til Nifleim, til Helvede ned!
 Jeg hellere der vil udsvede mit Blod,
-End giore den Dyse, jeg elsker, imod! "-
+End gjøre den Dyse, jeg elsker, imod! "-
 
 „Nu vel da, Forræder!! Prindsessen brød ud:
 Du staaer imod Stik, og du staaer imod Skud;
@@ -2847,9 +2826,8 @@ Men viid, at jeg har, i mit Giemme, forvart
 Et Spyd, som kan dræbe dig sikkert og snart! "
 
 „Gaae, Ternelild, hent mig den Vidiegreen,
-Som myrdede Salder! "- Hun ikke var seen
-Lob hen til et Giemme med inderlig Fryd,
-
+Som myrdede Balder! "- Hun ikke var seen
+Løb hen til et Giemme med inderlig Fryd,
 Og rakte Prindsessen det dræbende Spyd.
 
 <pb n="263" facs="275.jpg"/>Hun tog det, og svang det, og nærmte sig mig,
@@ -2857,7 +2835,7 @@ En Norne med Asathors Lynstraale lig;
 Med Himmelens Høihed i myrdende Blik
 Guddommelig rædsom Alvilde fremgik.
 
-Henrykkelse nagled min bævende For
+Henrykkelse nagled min bævende Fod
 Urokkelig fast til det Sted, hvor jeg stod;
 Og Himmelens Vellyst fortrylled min Aand
 I Tanken om Død af saa yndig en Haand.
@@ -2878,13 +2856,14 @@ Ei løste mig Livets de fængslende Baand.
 <text id="baggesen2026090113">
 <head>
   <title>Vaftrudnermaal</title>
+  <subtitle>Af Edda.</subtitle>
   <firstline>Raad mig nu, min Frigga!</firstline>
   <source pages="264-289"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<b>Odin.</b>
+<nonum><center><b>Odin.</b></center></nonum>
 Raad mig nu, min Frigga!
 Thi mit Hierte lyster
 Snart at see Vaftrudner
@@ -2892,7 +2871,7 @@ Stedse, Dag og Nat,
 Staaer min Hu til Kamp med den Alvise
 Kiæmpes Klygt, som alle Jotner prise.
 
-<pb n="265" facs="277.jpg"/><b>Frigga.</b>
+<pb n="265" facs="277.jpg"/><nonum><center><b>Frigga.</b></center></nonum>
 Torde jeg dig raade,
 Heriernes Fader!
 Bliv i Guders Samling!
@@ -2900,7 +2879,7 @@ Thi jeg tvivler ei:
 Alle Kiæmper i de Jotners Rige
 hin Vaftrudner langt i Styrke vige.
 
-<b>Odin.</b>
+<nonum><center><b>Odin.</b></center></nonum>
 Meget har jeg vandret,
 Meget alt erfaret,
 Tidt min Guddom prøvet;
@@ -2908,7 +2887,7 @@ Men for intet alt
 Gielder mig, min Barm er ikke rolig
 Før jeg kiender hin Vaftrudners Bolig.
 
-<b>Frigga.</b>
+<nonum><center><b>Frigga.</b></center></nonum>
 Gaae med Held da heden!
 <pb n="266" facs="278.jpg"/>Kom med Held tilbage
 Til Gudinders Glæde!
@@ -2923,7 +2902,7 @@ See! han kom til Halden,
 Hvor de Jotners gamle Hersker dvælte,
 Og treen frem, og nærmed sig, og mælte:
 
-<b>Odin.</b>
+<nonum><center><b>Odin.</b></center></nonum>
 Hil dig, o Vaftrudner!
 Til din Hald jeg ilte,
 Her dig selv at skue.
@@ -2931,7 +2910,7 @@ Gierne vidste jeg,
 <pb n="267" facs="279.jpg"/>Om du er den Mand, som Jotner prise,
 Mellem vise Kiæmper den Alvise?
 
-<b>Vaftrudner.</b>
+<nonum><center><b>Vaftrudner.</b></center></nonum>
 Hvo er du, som triner
 Over Haldets Dørtrin,
 Tagende til Orde?
@@ -2939,7 +2918,7 @@ Ingensinde du
 Vandrer ud igien af mine Sale,
 Hvis ei Viisdom seirer i din Tale!
 
-<b>Odin.</b>
+<nonum><center><b>Odin.</b></center></nonum>
 Gangraad jeg mig kalder;
 Thi, af Gangen mattet,
 Tørstig, hid jeg kommer,
@@ -2947,7 +2926,7 @@ En selvbuden Giæst.
 Lang var Veiens Møie, du modtage
 Giæstfri, som en Kæmpe bør, den svage.
 
-<pb n="268" facs="280.jpg"/><b>Vaftrudner.</b>
+<pb n="268" facs="280.jpg"/><nonum><center><b>Vaftrudner.</b></center></nonum>
 Hvorfor altsaa, Gangraad,
 Staaer du hist paa Gulvet?
 Sæt dig op i Høisal!
@@ -2955,7 +2934,7 @@ Og saa lad os see,
 Hvad hinanden skal i Talen fælde:
 Giæstens Ungdom eller Kæmpens Ælde?
 
-<b>Odin.</b>
+<nonum><center><b>Odin.</b></center></nonum>
 Fattig Mand det egner,
 Som til rig Mand kommer,
 Kloge Ting at mæle,
@@ -2963,7 +2942,7 @@ Eller tie qvær.
 Svadsighed med den, som os vil hilde,
 Tykkes mig, bekommer altid ilde.
 
-<b>Vaftrudner.</b>
+<nonum><center><b>Vaftrudner.</b></center></nonum>
 Nu, da dig behager
 <pb n="269" facs="281.jpg"/>Staaende din Kundskabs
 Prøver mig at vise,
@@ -2971,7 +2950,7 @@ Gangraad! saa velan:
 Sig mig Hestens Navn, som Lysets Dage
 Over Jordbeboerne mon drage!
 
-<b>Odin.</b>
+<nonum><center><b>Odin.</b></center></nonum>
 Skinfax hedder Hesten,
 Som det blide Dagskiær
 Over Jorden drager:
@@ -2979,7 +2958,7 @@ Manken straaler Glands.
 Mellem alle fodbevingte Heste
 Er den langt den favreste, den bedste.
 
-<b>Vaftrudner.</b>
+<nonum><center><b>Vaftrudner.</b></center></nonum>
 Da dig end behager,
 Staaende paa Gulvet
 Mig din Klygt af vise,
@@ -2987,7 +2966,7 @@ Mig din Klygt af vise,
 Sig mig Hestens Navn, som sees at stride
 Med den tause Nat af Østerlide!
 
-<b>Odin.</b>
+<nonum><center><b>Odin.</b></center></nonum>
 Rimfax hedder Hesten,
 som fremdrager Natten
 Over milde Guder.
@@ -2995,7 +2974,7 @@ Draaber dryppe ned
 Af dens Skum, naar aarle Haner gale.
 Deraf kommer Morgendug i Dale.
 
-<b>Vaftrudner.</b>
+<nonum><center><b>Vaftrudner.</b></center></nonum>
 Hør, og svar mig, Gangraad!
 Da dig end behager,
 Staaende din Kyndes
@@ -3003,7 +2982,7 @@ Prøver mig at tee:
 <pb n="271" facs="283.jpg"/>Nævn den Flod, som deler Field og Sletter
 Mellem Guders Slægt og Børn af Jetter!
 
-<b>Odin.</b>
+<nonum><center><b>Odin.</b></center></nonum>
 Ifing hedder Strømmen,
 Som imellem Guder
 Og de Dødelige
@@ -3011,7 +2990,7 @@ Snoer sit dybe Svælg.
 Aldrig frossen, giennem Evigheder
 Den sin altid aabne Bølge leder.
 
-<b>Vaftrudner.</b>
+<nonum><center><b>Vaftrudner.</b></center></nonum>
 Get end sig mig, Gangraad!
 Da du dog saa færdigt
 Paa hvert Spørgsmaal svarer:
@@ -3019,7 +2998,7 @@ Hvad er Vallens Navn,
 Hvor et Slag den sidste Dag bebuder
 Mellem Surtur og de milde Guder?
 
-<pb n="272" facs="284.jpg"/><b>Odin.</b>
+<pb n="272" facs="284.jpg"/><nonum><center><b>Odin.</b></center></nonum>
 Vigrid hedder Vallen,
 Hvor imellem Surtur
 Og de milde Guder
@@ -3027,7 +3006,7 @@ Slaget stande skal.
 Hundred Miil i Længde, som i Bredde,
 Strækker sig den kampbestemte Hede.
 
-<b>Vaftrudner.</b>
+<nonum><center><b>Vaftrudner.</b></center></nonum>
 Giæst! du teer mig Viisdom!
 Trin hid op i Højsal,
 Lad os tale sammen
@@ -3035,7 +3014,7 @@ Siddende! Velan:
 Liv for Liv, og Hoved imod Hoved,
 Lad os kiæmpe Kampen ud, du voved!
 
-<b>Odin.</b>
+<nonum><center><b>Odin.</b></center></nonum>
 Sig mig da, Vaftrudner!
 <pb n="273" facs="285.jpg"/>Dette først og fremmest,
 Hvis dit Vid det evner
@@ -3050,7 +3029,7 @@ Opstode Field.
 Af Kæmpens Blod flød Havets Vande,
 Og Himlen hvelvede hans Pande.
 
-<b>Odin.</b>
+<nonum><center><b>Odin.</b></center></nonum>
 Svar mig end, Vaftrudner,
 Paa min andet Spørgsmaal,
 <pb n="274" facs="286.jpg"/>Hvis dit Vid det evner,
@@ -3058,7 +3037,7 @@ Og du Gaaden veed:
 Hvoraf opstod Lysets Straalers Vrimmel,
 Sol, og Maane, paa den hvalte Himmel?
 
-<b>Vaftrudner.</b>
+<nonum><center><b>Vaftrudner.</b></center></nonum>
 Kredssvinger hedder
 Hin Solens Fader,
 Og Maanens Fader;
@@ -3066,7 +3045,7 @@ I varig Gang
 De vandre daglig rundt om Jorden,
 Og tegne begge Tidens Orden.
 
-<b>Odin.</b>
+<nonum><center><b>Odin.</b></center></nonum>
 Sig mig end det tredde,
 Prisede Vaftrudner!
 Hvis til Rygtet svarer,
@@ -3074,7 +3053,7 @@ Hvad dit Snille veed:
 <pb n="275" facs="287.jpg"/>Hvilke Væsner bør den Kloge hædre,
 Som den mørke Nats og Dagens Fædre?
 
-<b>Vaftrudner.</b>
+<nonum><center><b>Vaftrudner.</b></center></nonum>
 Dellinger hedder
 Dagens Fremavler;
 Nørver er Nattens
@@ -3082,7 +3061,7 @@ Frembringers Navn.
 Ny og Næ, os sendt, af milde Guder,
 Tidens Vexel maanedlig bebuder.
 
-<b>Odin.</b>
+<nonum><center><b>Odin.</b></center></nonum>
 Sig mig end det fierde,
 Klygtige Vaftrudner!
 Hvis din gamle Viisdom
@@ -3090,7 +3069,7 @@ Saadant ogsaa veed:
 Hvorfra Vinter, paa vor Jord, og Sommer,
 Hvorfra Kuld og Varme kommer?
 
-<pb n="276" facs="288.jpg"/><b>Vaftrudner.</b>
+<pb n="276" facs="288.jpg"/><nonum><center><b>Vaftrudner.</b></center></nonum>
 Svafuder kalder
 Jeg Somm’rens Fader;
 Den kolde Vinter
@@ -3098,7 +3077,7 @@ Er Vindsvals Søn.
 De aarlig vexlende regiere
 Til Himlen Magter er ei mere.
 
-<b>Odin.</b>
+<nonum><center><b>Odin.</b></center></nonum>
 Løs mig nu, Vaftrudner,
 Og den femte Gaade
 Hvo var mellem Aser
@@ -3106,7 +3085,7 @@ Jordens første Gud?
 Hvo stod først af Ymers Grøde
 Frem i Verdens Morgenrøde?
 
-<b>Vaftrudner.</b>
+<nonum><center><b>Vaftrudner.</b></center></nonum>
 Talløse Vintre,
 Før Jorden fremgik,
 <pb n="277" facs="289.jpg"/>Blev fød Bergelmer
@@ -3114,7 +3093,7 @@ Trudgelmers Søn;
 Urgelmer, atter dennes Fader,
 Var Jotners ældste Stammefader.
 
-<b>Odin.</b>
+<nonum><center><b>Odin.</b></center></nonum>
 Sig mig end den siette,
 Prisede Vaftrudner,
 Viseste blandt Jætter!
@@ -3122,7 +3101,7 @@ Hvis og det du veed:
 Hvordan blev den anden af de fire
 Alle Kæmpeslægters ældste Spire?
 
-<b>Vaftrudner.</b>
+<nonum><center><b>Vaftrudner.</b></center></nonum>
 Af Elivaga
 Flød Edderdraaber;
 Men Riimfrost størkned
@@ -3130,7 +3109,7 @@ Den rundne Gift,
 <pb n="278" facs="290.jpg"/>Da gnistrede fra Syden Ild, og Livet
 Blev derved den opvarmte Sneeklump givet.
 
-<b>Odin.</b>
+<nonum><center><b>Odin.</b></center></nonum>
 Endnu maae du, Kæmpe!
 Mine kiække Spørgsmaals
 Syvende besvare,
@@ -3138,7 +3117,7 @@ Veed du ellers Alt:
 Hvordan avled Børn i hine Dage
 Kæmpers Stammefader, uden Mage?
 
-<b>Vaftrudner.</b>
+<nonum><center><b>Vaftrudner.</b></center></nonum>
 Hin Kæmpes Fødder,
 Een med den anden,
 En Søn fremavled
@@ -3146,7 +3125,7 @@ I Alt ham lig.
 Men under Armen, andre Vise sige
 Fremsprang et Par, en Yngling og en Pige.
 
-<pb n="279" facs="291.jpg"/><b>Odin.</b>
+<pb n="279" facs="291.jpg"/><nonum><center><b>Odin.</b></center></nonum>
 End, o vise Kæmpe!
 Maae du mine Gaaders
 Ottende mig løse;
@@ -3154,7 +3133,7 @@ Thi du veed dog Alt:
 Sig, saa vidt dig mindes, naar du grunder,
 Hvilket var det ældste Tidens Under?
 
-<b>Vaftrudner.</b>
+<nonum><center><b>Vaftrudner.</b></center></nonum>
 I Svælg af Vintre,
 Før Jorden opstod,
 Var til Bergelmer.
@@ -3162,7 +3141,7 @@ Det ældste Sagn,
 Jeg mindes hos vor Kæmpeslægt i Norden,
 Er, at han af en Baad gik frem paa Jorden.
 
-<b>Odin.</b>
+<nonum><center><b>Odin.</b></center></nonum>
 Endnu viise Jætte,
 Maa du mine Spørgsmaals
 <pb n="280" facs="292.jpg"/>Niende besvare;
@@ -3170,7 +3149,7 @@ Thi du veed dog Alt:
 Hvorfra kommer Vinden, som sig svinger
 Over Hav paa aldrig seete Vinger?
 
-<b>Vaftrudner.</b>
+<nonum><center><b>Vaftrudner.</b></center></nonum>
 Ræsvælger sidder
 Ved Himlens Ende,
 En vældig Kæmpe
@@ -3178,7 +3157,7 @@ I Ørneham.
 Hver Vind, og Vift, og Stormens Brusen,
 Er Lyden af hans slagne Vingers Susen.
 
-<b>Odin.</b>
+<nonum><center><b>Odin.</b></center></nonum>
 End meld mig, o Vaftrudner!
 Det tieende; thi veed du
 Dog alle Guders Udspring:
@@ -3186,7 +3165,7 @@ Hvorledes hidkom Njord,
 <pb n="281" facs="293.jpg"/>Han, som Altre har blandt Aser fundet,
 Skiøndt af Asers Slægt ei selv oprundet?
 
-<b>Vaftrudner.</b>
+<nonum><center><b>Vaftrudner.</b></center></nonum>
 De vise Magter
 i Vanahiemmet
 Frembragte Helten,
@@ -3194,7 +3173,7 @@ Og sendte ham
 Til Aserne, som Gidsel; han skal vende
 Til Vanahiem igien mod Tidens Ende.
 
-<b>Odin.</b>
+<nonum><center><b>Odin.</b></center></nonum>
 End du mine Gaaders
 Ellevte mig løse:
 Hvad bestille Helte,
@@ -3202,7 +3181,7 @@ Som i Striden faldt?
 Hvad er deres Løn i Odins Halde,
 Indtil alle Himlens Magter falde?
 
-<pb n="282" facs="294.jpg"/><b>Vaftrudner.</b>
+<pb n="282" facs="294.jpg"/><nonum><center><b>Vaftrudner.</b></center></nonum>
 Einherierne
 Sig deele Vallen,
 Anstille Sværdslag
@@ -3216,7 +3195,7 @@ I Odins Borg.
 Serimners Kiød de der fortære sammen
 I fredelig fortroelig Fryd og Gammen.
 
-<b>Odin.</b>
+<nonum><center><b>Odin.</b></center></nonum>
 Sig mig end det tolvte:
 Hvordan du, Vaftrudner,
 Lærte Guders Udspring,
@@ -3224,7 +3203,7 @@ Lærte Guders Udspring,
 Viseste blandt klygtige Jotuner!
 Sig mig Jætters, sig mig Guders Runer!
 
-<b>Vaftrudner.</b>
+<nonum><center><b>Vaftrudner.</b></center></nonum>
 Om alle Jætters
 Og Guders Runer
 Jeg sandt kan sige;
@@ -3233,7 +3212,7 @@ Jeg har bereist.
 Ni Verdner under Niffelheim jeg kiender.
 Der boe de helsotdøde, Kampens Fiender.
 
-<b>Odin.</b>
+<nonum><center><b>Odin.</b></center></nonum>
 Meget har jeg vandret,
 Meget alt erfaret,
 Tidt min Guddom prøvet;
@@ -3241,7 +3220,7 @@ Men du sig mig eet:
 <pb n="284" facs="296.jpg"/>Efter Fimbulvintrens mørke Dage,
 Hvilke Væsner blive vel tilbage?
 
-<b>Vaftrudner.</b>
+<nonum><center><b>Vaftrudner.</b></center></nonum>
 Alliv og Livskraft
 Skiøndt begge skiulte
 I Jordens Indkiød,
@@ -3249,7 +3228,7 @@ Endda bestaae.
 Af Morgendug de begge nærte blive,
 Og nye Slægter siden Jorden give.
 
-<b>Odin.</b>
+<nonum><center><b>Odin.</b></center></nonum>
 Meget har jeg vandret,
 Meget alt erfaret,
 Tidt min Guddom prøvet;
@@ -3257,7 +3236,7 @@ Men end eet mig sig:
 Hvordan kommer Solen vel tilbage,
 Slugt af Fenris-Ulv i Fimbuls Dage?
 
-<pb n="285" facs="297.jpg"/><b>Vaftrudner.</b>
+<pb n="285" facs="297.jpg"/><nonum><center><b>Vaftrudner.</b></center></nonum>
 En Datter føder
 Hin Glandsgudinde,
 Før slugt af Fenris,
@@ -3265,7 +3244,7 @@ Hun er ei meer.
 Og over Guders Val skal denne ride
 Paa hendes Moders Vei fra Østerlide.
 
-<b>Odin.</b>
+<nonum><center><b>Odin.</b></center></nonum>
 Meget har jeg vandret,
 Meget alt erfaret,
 Og min Guddom prøvet;
@@ -3273,7 +3252,7 @@ Sig mig dog endnu:
 Hvilke hulde Møer skulle svæve
 Over dem, som da paa nye fremleve?
 
-<b>Vaftrudner.</b>
+<nonum><center><b>Vaftrudner.</b></center></nonum>
 Trende Stammer
 Indtage Jorden
 <pb n="286" facs="298.jpg"/>Og gode Aander
@@ -3281,7 +3260,7 @@ Beskytte dem.
 Lig dem, som, født blandt Kæmperne, regiere,
 Til Himlens Magter er ei mere.
 
-<b>Odin.</b>
+<nonum><center><b>Odin.</b></center></nonum>
 Meget har jeg vandret,
 Meget alt erfaret,
 Og min Guddom prøvet;
@@ -3289,7 +3268,7 @@ Dog, Vaftrudner! sig:
 Hvilke Aser styre Guders Rige,
 Naar for hine Surturs Flammer vige?
 
-<b>Vaftrudner.</b>
+<nonum><center><b>Vaftrudner.</b></center></nonum>
 Vidar og Vale
 Gudernes Vaaning
 Evig indtage
@@ -3298,7 +3277,7 @@ Naar engang Surturs
 Og Mod og Magne Miølner atter tage,
 Naar Thor er død, og Fenris er af Dage.
 
-<b>Odin.</b>
+<nonum><center><b>Odin.</b></center></nonum>
 Meget har jeg vandret,
 Meget alt erfaret,
 Og min Styrke prøvet;
@@ -3306,15 +3285,15 @@ End dog spørger jeg:
 Sig, hvorledes Odin livet ender,
 Naar vor Jord forgaaer, og Himlen brænder?
 
-<b>Vaftrudner.</b>
+<nonum><center><b>Vaftrudner.</b></center></nonum>
 Hin Tidens Fader
 Opsluger Ulven,
 Men Vidar hævner
 Sin Faders Mord:
-<pb n="288" facs="300.jpg"/>I kampen han sit Banesaar den giver,
+<pb n="288" facs="300.jpg"/>I Kampen han sit Banesaar den giver,
 Og Fenris aabne Strube sønderriver.
 
-<b>Odin.</b>
+<nonum><center><b>Odin.</b></center></nonum>
 Meget har jeg vandret,
 Meget alt erfaret,
 Og min Evne prøvet;
@@ -3322,7 +3301,7 @@ Men Vaftrudner! sig:
 Hvad tilhvisked Odin Balder eene,
 Da man lagde ham paa Baalets Greene?
 
-<b>Vaftrudner.</b>
+<nonum><center><b>Vaftrudner.</b></center></nonum>
 Det ingen, ingen
 Blandt Dødelige
 Paa Jorden veed:
@@ -3342,20 +3321,23 @@ Alvise! dig de Viseste maae vige!
 
 <text id="baggesen2026090114">
 <head>
-  <title>Begyndelsen til Digtet Odin, i Jamber</title>
-  <subtitle>Første Sang</subtitle>
+  <title>Begyndelsen af Digtet Odin.</title>
+  <subtitle>
+    <line>(I Jamber.)</line>
+    <line>Første Sang.</line>
+  </subtitle>
   <firstline>Om Fædres Hedenold, og Asers Ankomst</firstline>
   <source pages="290-297"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Om Fædres Hedenold, og Asers Ankomst
-    Fra Morgenland til Nords besneete Fielde,
-    Og til det havgienfødte Herthas Sletter,
-    Mit Qvad fortæller underfulde Hiemsagn:
-    Hvorledes, biergende sig selv, og sine,
-    Samt Jordens Haab, og Efterslægtens Redning,
+Fra Morgenland til Nords besneete Fielde,
+Og til det havgienfødte Herthas Sletter,
+Mit Qvad fortæller underfulde Hiemsagn:
+Hvorledes, biergende sig selv, og sine,
+Samt Jordens Haab, og Efterslægtens Redning,
 <pb n="291" facs="303.jpg"/>Hid Odin kom, den tredie, med Runer,
 Og Tryllesang, og gudindgivne Love;
 Da flygtende (saa bed ham det Alfader)
@@ -3366,17 +3348,16 @@ Talløse Møjer giennemgik, og Farer,
 Og Rædsler uden Lige Godanungen
 Paa dette Tog. Med vilde Dyr, og Horder,
 Afverlede paa Bierges Ryg, paa Havet,
-Og dybt i Nattens Drkner, leede Trolde,
+Og dybt i Nattens Ørkner, leede Trolde,
 Sortalfer, og Uhyrer, hvor han fremgik,
 Indtil ham Jætters Vold, og Dverges Trædskhed
 I naaede Land modtog. Dog, Tak Alfader,
 Og Mimers viise Raad, og Thor, din Mjølner!
-Ved Eders Hielp, og Skiolds, den Wdles, Hsimod,
-<pb n="292" facs="304.jpg"/>Fuldendte han sit Værk: og Danmarks Skiold borg,
+Ved Eders Hielp, og Skiolds, den Ædles, Hærmod,
+<pb n="292" facs="304.jpg"/>Fuldendte han sit Værk: og Danmarks Skioldborg,
 Det gududkaarne Danmarks Borg, blev grundlagt.
 O Edda! ton mig du med Asatoner
 Det underfulde Qvad, du Nordens Sangmøe!
-    (
 Hvis sneefieldskiulte Sanges skingre Gienlyd
 Af Guders Sprog har eene giemt det Ekko,
 Som Slavelænkers Klirren i Barbarers
@@ -3391,11 +3372,11 @@ Og du mod Norden: Mod, og Dyd, og Frihed,
 <pb n="293" facs="305.jpg"/>Og Kunster fulgte Sangen. See, da spired
 De Danaers og Daners Tvillingslægter.
 Dig, o mit Hiemlands Muse, hvor du svæver
-Af Surturs Har, forfulgt i Ragnarockur,
+Af Surturs Hær, forfulgt i Ragnarockur,
 Blandt Jislands Jøkler, fiern bag Heklas Ildarøg,
 Paa Nastronds Grændser, eller dybt i Helas
 Jisdækte Huuler, dig o Edda! kalder
-Din Bragas yngste Son: stig op af Arilds
+Din Bragas yngste Søn: stig op af Arilds
 Nedsiunkne Grave, natlig høi, og herlig,
 Som Urda selv, som Evighedens Gienfærd!
 O! ved Valhalla! ved det lyse Gimle!
@@ -3405,39 +3386,39 @@ Ved alle Bautasteene! jeg besværger
 Dig, høitidsfulde! ja! ved Dan og Fredrik!
 Ved alle Hedenolds de store Skygger!
 Og ved det Blod, som randt dem værd, da nylig
-<pb n="294" facs="306.jpg"/>Mit Zodeland af fredsom Dvale vaktes
+<pb n="294" facs="306.jpg"/>Mit Fødeland af fredsom Dvale vaktes
 Til Forsvarskamp mod Albion! anraaber
 Min høie Røst dig, Edda! Kom tilbage,
 Svøbt i Begeistringernes Storm, fra Thule
 Til Herthadal, med dine Fieldes Ekko,
 Med alle Runer, og med Volas Spaadom,
-Og lær mig, hvad du sene veed! Forgiæves
+Og lær mig, hvad du ene veed! Forgiæves
 Istemmer jeg min Sang, hvis ei en Guddom
 Den hæver over Dødeliges Stammen
 Til Asaqvad om Fædrenes Bedrifter,
-Værd dem og. Evighedens sidste Krandse.
+Værd dem og Evighedens sidste Krandse.
 Hun kommer! Jeg fornam en Lyd af Luurer
 Fra fierne Field, og underfulde Røster:
 En Lyd, som faldne Kampers Suk, som Bølgers
-Vragbrudte Ekvulp i Hyl af Nattens Storme;
+Vragbrudte Skvulp i Hyl af Nattens Storme;
 Som fierne Vaabengny, naar, svøbt i Tordner,
 Valkyrierne svæve ned mod Jorden;
-<pb n="295" facs="307.jpg"/>    I det er hende! Held mig! Edda hørte
-    Mit høie Raab! Vær hilset, Volas Datter,
-    O vær mig hilset, som de høie Norner,
-    Som Bragur selv, som Heimdal, eller Mimer!
-    Du Gudernes Fortrolige! Forkynd mig,
-    Hvad Urda qvad til Verandi; min Sang
-    Først evner at fortælle Lokes Styrtning da, -
-    Og D-dins Seir og Danmarks Held til Skulda.
-    I Favnen af den Bugt, som Vesterhavets
+<pb n="295" facs="307.jpg"/>O det er hende! Held mig! Edda hørte
+Mit høie Raab! Vær hilset, Volas Datter,
+O vær mig hilset, som de høie Norner,
+Som Bragur selv, som Heimdal, eller Mimer!
+Du Gudernes Fortrolige! Forkynd mig,
+Hvad Urda qvad til Verandi; min Sang
+Først evner at fortælle Lokes Styrtning da,
+Og Odins Seir og Danmarks Held til Skulda.
+I Favnen af den Bugt, som Vesterhavets
 Og Østersøens Bølger, lig et Bælte,
-    Tilsammenbinder med det vilde Nordhav,
-    Opstiger mellem mindre Landes Holme,
-    En De, Fortidens Trylleland, et Eden
-    I Norden, Herthas Helligdom og Bolig.
-    Her var Gudindens Vogn, det hvide Forspand
-    Af Pren, her den hemmelige Bøgskov,
+Tilsammenbinder med det vilde Nordhav,
+Opstiger mellem mindre Landes Holme,
+En Øe, Fortidens Trylleland, et Eden
+I Norden, Herthas Helligdom og Bolig.
+Her var Gudindens Vogn, det hvide Forspand
+Af Øren, her den hemmelige Bøgskov,
 <pb n="296" facs="308.jpg"/>Guldringen, og Gudinden selv. Med Rette
 Dens blomsterklædte Hegn, omkrandst af Høie,
 Med fiskerige Søer, og strøete Lunde,
@@ -3446,26 +3427,26 @@ Blev kaldet. Ikke var i Tidens Udspring
 Af Hav det omflydt. Længer hen mod Østen
 Det danned, fast med Skandien, et Forland.
 Til Landenes Behersker kom (saa melder
-Et Oldsagn) Hertha, som en fattig Skaldmse,
+Et Oldsagn) Hertha, som en fattig Skaldmøe,
 Forklædt, og sang, og bad om ringe Gave.
-Fortryllet af den Skiennes Qvad og Klangspil
+Fortryllet af den Skiønnes Qvad og Klangspil
 Han hende, til Belønning, bød at vælge
-Saa meget Land, hun selv med to par Dren
-I een Dag kunde ploje. Gefione,
+Saa meget Land, hun selv med to par Øren
+I een Dag kunde pløje. Gefione,
 (Saa kaldte hun sig) spændte fire Kæmper,
 Forvandlede til Tyre, flux for Ploven;
 Og svingede sin Tryllestav som Svøbe.
 Det Plovjern skar saa skarpt, de Tyre droge
 <pb n="297" facs="309.jpg"/>Saa vældigen, at Dybets Vand i Fuuren
 Frempiblede fra Kyst til Kyst. „Mod Vesten!
-,,Mod Vesten! "raabte Gefione. Losnet
+„Mod Vesten!“ raabte Gefione. Løsnet
 Fra Landet gled i Havet ud det hele
 Jordstykke, til hun bod, mod Solens Nedgang,
 At standse. See! da laae saa langt fra Skaane,
-Som Diet rækker, Plovens De. De fire
+Som Øiet rækker, Plovens Øe. De fire
 Forspændte reiste sig igien, som Kæmper,
-Paa Jordgudindens Vink; men Den kaldte
-Hun Søelund. I dens Midte, hvor en Hava bugt
+Paa Jordgudindens Vink; men Øen kaldte
+Hun Søelund. I dens Midte, hvor en Havbugt
 Fra Norden strømmer ind, hun valgte huldrig
 Sit Jomfrusæde. Derfor kaldes Sletten
 End Herthadal den Dag i Dag; og evig
@@ -3477,44 +3458,42 @@ Dens Navn i danske Skialdes Sang gienlyder.
 <text id="baggesen2026090115">
 <head>
   <title>Ymers Dannelse</title>
-  <subtitle>Af Voluspa</subtitle>
+  <subtitle>Af Voluspa.</subtitle>
   <firstline>Førend Tiderne fødtes, og Evighedernes Oldnat</firstline>
   <source pages="298-302"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Førend Tiderne fødtes, og Evighedernes Oldnat
 Undsik, længe før Guderne blev og Gudernes Afkom;
 Forend Alfer end skiælned, og Norner end varsled, og Vaner
-Samlede Klygt; før Asernes Byrd og Kampers nes Fødsel;
+Samlede Klygt; før Asernes Byrd og Kæmpernes Fødsel;
 Forend Solen begyndte sin Gang, og Maanen sin Bane;
 Førend Jorden, og Vandenes Dyb, og Himlené vare,
 <pb n="299" facs="311.jpg"/>Var Alfader, den Samme, som var, som er, og som bliver,
 Uforanderlig, fast, det Forandredes evige Grundvold.
 Knæler for Gudernes Gud, I Mennesker! knæler I Guder!
-Tier, I Vasner! I store og smag, forstummer og lytter!
+Tier, I Væsner! I store og smaa, forstummer og lytter!
 Tier, I Hellige selv! Jeg, Vola, Datter af Heimdal,
 Aabenbarer det Levendes Rum og Tidernes Fylde!
-Salig er den, som fornemmer mit Qvad, og be  varer dets Viisdom!
+Salig er den, som fornemmer mit Qvad, og bevarer dets Viisdom!
     Under den Evige sank i sig selv en uendelig Afgrund
-<pb n="300" facs="312.jpg"/>Ginnungagap: i dets Drkeners Svælg laae Skabningens Spirer
+<pb n="300" facs="312.jpg"/>Ginnungagap: i dets Ørkeners Svælg laae Skabningens Spirer
 Blanded i Mulm; et Intet af Alt, en Alhed af Intet,
-Uden Bevægelse, Form ag Gestalt. Ei skinnede Lyset,
+Uden Bevægelse, Form og Gestalt. Ei skinnede Lyset,
 Mørket skygged end ei, bundløs var Grunden, og klangløs
 Hulen, og Hvelvingens Tag udækkende. Neden og oven
 Skiælnedes ei; thi Stiernernes Sæd var blandet med Jordens,
 Luften med Gruus, og med Ild Vanddamp, og Lyset med Mørkhed.
-Da var Storknet ei til, ei Flud, og Himmelens Hvelving
-Skuedes ei; rundt om var Nat og Tomhed og
-    ( Dde.
+Da var Størknet ei til, ei Flud, og Himmelens Hvelving
+Skuedes ei; rundt om var Nat og Tomhed og Øde.
 <pb n="301" facs="313.jpg"/>Men Alfaudur blikkede ned i det evige Nats mulm;
 Og det almægtige Blik adskilte den taagede Blanding.
 See! da skialv det uhyrlige Svælg; da (knæler, I Alfer!
 Knæler for Gudernes Gud, I Mennesker! knæler, I Guder!)
 Revnede Ginnungagab; og i to, mod Syden og Norden
 Flaktes Dybenes Eet, adskillende neden og oven:
-    i
 Muspel, Lysenes Hiem, og Niffleim, Mørkenes Rige.
 Mellem de vigende gabede vidt et giærende Bundfald,
 Mindre sort end den evige Nat, dog ikke, som Lysets
@@ -3523,7 +3502,7 @@ Svævende hang det i Midten af Alt paa Grandsen af Nifleims
 Nordlige Dyb, og det høie mod Syd ophævede Muspleim.
 Længe giærede Massen i bølgende Dampe, dog formløs
 Stedse, sig selv i sig selv omhvirvlende; frysende Dampe
-Stege fra Norden, og størkned til Jis dens lufs tige Bølger.
+Stege fra Norden, og størkned til Jis dens luftige Bølger.
 See! men fra Lysenes Hiem nedsvævede smeltende Gnister,
 Frugtbargiørende, svangre med Liv og dannende Kræfter,
 Og af den giærende Klump udvikled sig Avleren Ymer.
@@ -3540,46 +3519,46 @@ Og af den giærende Klump udvikled sig Avleren Ymer.
   </subtitle>
   <firstline>Oldtid toner min Sang, Dans Æt, og Asernes Ankomst</firstline>
   <source pages="303-312"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Didtid toner min Sang, Dans Et, og Asernes Ankomst
-Fiern fra bebyggede Høie til Nords udyrkede Snee field,
-Og det af Havet igien fremblomstrende Cimbekens Sletter;
+Oldtid toner min Sang, Dans Æt, og Asernes Ankomst
+Fiern fra bebyggede Høie til Nords udyrkede Sneefield,
+Og det af Havet igien fremblomstrende Cimbriens Sletter;
 <pb n="304" facs="316.jpg"/>Dengang Odin, den tredie, hid med hellige Runer
 Drog; thi ham bød Alfader, at flye de Romeres Hærmagt,
 Hvilken i Asien alt udbredte sig, truende Jordens
 Frihed, selv i dens skythiske Borg: og, vendende hid sig,
 Lægge til Sydforstyrrerens Fald den nordiske Grundvold.
-Mange Qvaler og Msier, utallige Farer og Rads fler
+Mange Qvaler og Møier, utallige Farer og Rædsler
 Prøvede Helten paa vildsomme Tog. Uhyrer og Trolde
 Vexled med grusomme Horder paa Biergenes Rygg', og i Ørkners
 Uafseelige Strøg, og med Havets natlige Storme;
-Til ham imodtog Sætternes Vold og Dværgenes Trædskhed
+Til ham imodtog Jætternes Vold og Dværgenes Trædskhed
 <pb n="305" facs="317.jpg"/>I det forvildede Nord. Dog, Tak Alfader og Mimers
-Raad, og den vældige Thor, og de Danskes hers lige Helt Skiold,
+Raad, og den vældige Thor, og de Danskes herlige Helt Skiold,
 Odin fuldendte sit Værk; og den nordiske Vælde blev grundlagt.
-Edda! ton mig det hellige Dvad, du, Fædrenes Sangmoe!
+Edda! ton mig det hellige Qvad, du, Fædrenes Sangmøe!
 Du, hvis i Klipperne giemte Begeistringers høiere Gienlyd
 Eene bevarer af Gudernes Sprog det Ekko, Barbarers
-Klingende Bielder med klirrende Niim fra Dalene bortjog.
+Klingende Bielder med klirrende Riim fra Dalene bortjog.
 Edda! Mæonias Syster! dig ammede Sangenes Moder
 <pb n="306" facs="318.jpg"/>Tvillingbaaren med hin, som de Danaërs Helte fortrylled,
 Fordum paa samme pieriske Top; dig hørte den første
 Thrakiske Skiald, Orpheus; din Syster hørte vor Bragur:
-Stammende begge, som Noer, een Moders himmelske Sange.
+Stammende begge, som Møer, een Moders himmelske Sange.
 Ned fra det hellige Bierg I steg: mod Syden din Syster,
 Du mod Norden; og Frihed, og Mod, og dannende Guder
-Fulgte. Da spirede Danaërs Et, og Daniers Stamme.
+Fulgte. Da spirede Danaërs Æt, og Daniers Stamme.
 Dig, o fædrene Muse, hvor og du svæver, af Surturs
-Trælle forfulgt, i Ragnaroks Mulm, blandt taxgede Jøkler,
+Trælle forfulgt, i Ragnaroks Mulm, blandt taagede Jøkler,
 <pb n="307" facs="319.jpg"/>Hist bag Heklas rygende Top, paa Grændsen af Nastrond,
 Eller i Dværgenes ned til Helhiem synkende Huler,
 Dig fremkalder jeg: Stig, stig op af Heltenes Grave
 Hellige, natlige Tryllegestalt! dig kalder, o Edda!
 Bragurs yngste, men frommeste Søn: Ved Valhal og Gimle,
-Ved Beltbølgernes Dands, og ved Dovres sva rende Tordner,
+Ved Beltbølgernes Dands, og ved Dovres svarende Tordner,
 Ved Nordlysenes Susen til Havfruers Sang, og ved alle
 Bautasteene, besværger jeg dig: ved Odin og Fredrik!
 O! ved de hellige Skygger af Dan, af Skiold, og af Frode!
@@ -3591,38 +3570,38 @@ Dig anraaber jeg; nynner ja dog forgiæves min Afmagt,
 Lærer ei du mig hvad eene du veed, og hæver din Guddom
 Ikke mit svulmende Bryst til Danmarks værdige Lovsang!
 See! hun kommer! Jeg hører en Lyd, som faldende Kæmpers
-<pb n="309" facs="321.jpg"/>Sus, som Bølgernes Skvulp blandt Brag, og natlige Stormes
-Hyl om eensomme Field, naar i huultheubuldrende Tordner
+<pb n="309" facs="321.jpg"/>Suk, som Bølgernes Skvulp blandt Vrag, og natlige Stormes
+Hyl om eensomme Field, naar i huulthenbuldrende Tordner
 Svæver mod Jorden en Hær af Valkyrier. O! det er hende!
 Held mig! hun hørte mit Raab. Vær hilset, Datter af Vola!
 Vær mig hilset, som Nornerne selv! Fortæl mig hvad Urda
 Verandi qvad, at min Sang kan igien fortælle det Skulda!
     Midt i Landenes Belte, hvis Omflod Vestens og Østens
 Vande forener, i bugtende Favn, med det brusende Nordhav,
-Ligger en De, Fortiden bekiendt af tryllende Hiemsagn,
+Ligger en Øe, Fortiden bekiendt af tryllende Hiemsagn,
 <pb n="310" facs="322.jpg"/>Herthas elskede Boe. Her var den festlige Bøgeskov;
-Her den Orenbespændede Vogn, og den hellige Guldring;
-Her Gudinden, den badende, selv. Delandenes Kierne
+Her den Ørenbespændede Vogn, og den hellige Guldring;
+Her Gudinden, den badende, selv. Øelandenes Kierne
 Kaldes med Rette dens Dal, den blomstrende, hegnet af Høie,
 Fuld af smilende Søer og af sangfuglvrimlende Lunde.
-Ei var fordum en De den frugtbare. Længer mod Dsten
-Danned den, fast med den øvrige Jord, et grøn nende Forland.
+Ei var fordum en Øe den frugtbare. Længer mod Østen
+Danned den, fast med den øvrige Jord, et grønnende Forland.
 Hertha, forklædt, som en vandrende Møe (fortæller et Oldsagn)
 Kom til Landenes Hersker engang, og bad om en Gave,
 <pb n="311" facs="323.jpg"/>Qvædende liflig til Strængenes Leeg. Fortryllet af Sangen
 Bød han til Løn Gefione (saa' kaldte hun sig) af hans Omland
-Vælge saa meget, hun selv med to Par Dren i een Dag
+Vælge saa meget, hun selv med to Par Øren i een Dag
 Evned at hegne med skierende Plov. Da spændte Gudinden
-Fire rædsomme Kæmper i Ovæggestalter for Ploven,
+Fire rædsomme Kæmper i Qvæggestalter for Ploven,
 Svingende Svøben, den smeldende, selv om det skiærende Plovjern
-Piblede Vandet i Furernes Dyb. „Mod Vesten! mod Vesten! *
+Piblede Vandet i Furernes Dyb. „Mod Vesten! mod Vesten!“
 Bød Gefione. Vidt løsnedes alt mod Aften fra Landet
-Plovens omplsiede Hegn, og, saa vidt et Mennes neskes Blik naaer,
-<pb n="312" facs="324.jpg"/>Gleed det i Søen. Da raabte hun: stands! og Drnene stode,
-Kæmper igien, paa en De; den omskvulpede kaldte hun Sselund.
-Der, hvor det favnende Hav indstrømmer sin est lige Nordbugt,
+Plovens ompløiede Hegn, og, saa vidt et Menneskes Blik naaer,
+<pb n="312" facs="324.jpg"/>Gleed det i Søen. Da raabte hun: stands! og Ørnene stode,
+Kæmper igien, paa en Øe; den omskvulpede kaldte hun Søelund.
+Der, hvor det favnende Hav indstrømmer sin østlige Nordbugt,
 Valgte sit Jomfrusæde den Yndige. Navn af Gudinden
-Bærer og Dalen endnu, trods Oldaarhundredes Verel.
+Bærer og Dalen endnu, trods Oldaarhundredes Vexel.
 </poetry>
 </body>
 </text>
@@ -3630,37 +3609,37 @@ Bærer og Dalen endnu, trods Oldaarhundredes Verel.
 <text id="baggesen2026090117">
 <head>
   <title>Babylons Fald</title>
-  <subtitle>Efter St. Johannis Aabenbarings 16de, 17de, 18de og 19de Kapitel</subtitle>
+  <subtitle>(Efter St. Johannis Aabenbarings 16de, 17de, 18de og 19de Kapitel.)</subtitle>
   <firstline>Skaalen, den syvende Skaal, udøstes af Englen i Luften</firstline>
   <notes>
     <note>Gendigtning af <xref bible="bibelaabenbaringen16,17-20"/>, <xref bible="bibelaabenbaringen17"/>, <xref bible="bibelaabenbaringen18"/> og <xref bible="bibelaabenbaringen19,1-3"/>.</note>
   </notes>
   <source pages="313-328"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Skaalen, den syvende Skaal, udsstes af Englen i Luften;
+Skaalen, den syvende Skaal, udøstes af Englen i Luften;
 Og fra Thronen, og Templet i Himmelen hørtes en høi Røst
 Raabe det Ord: Fuldbragt! og i langthenrullende Tordner
 Knittrede Skyernes Lyn, og Jordens rystede Grundvold
 <pb n="314" facs="326.jpg"/>Skialv, som den aldrig tilforn grundskialv, fra Menneskers Fødsel.
-! Staden, den store, blev knuuset i tre; Støvdyr kernes Stæder
-Faldt; Delandene flygtede bort, og Biergene skiultes
+Staden, den store, blev knuuset i tre; Støvdyrkernes Stæder
+Faldt; Øelandene flygtede bort, og Biergene skiultes
     See! men den syvende Skaals Thronengel nærmed sig til mig,
 Een af de hellige syv, og talede til mig, og sagde:
-    Kom! jeg vil vise dig Skisgens, den altbeherz skendes, Domstraf,
+    Kom! jeg vil vise dig Skiøgens, den altbeherskendes, Domstraf,
 Hendes, som Kongerne bolede med, og som vidt med sin Giftviins
-Vellyfttændende Bæger beruuste de samtlige Jordboer!
-<pb n="315" facs="327.jpg"/>See! og jeg fandt mig med eet i en vind uendelig Udørk,
+Vellysttændende Bæger beruuste de samtlige Jordboer!
+<pb n="315" facs="327.jpg"/>See! og jeg fandt mig med eet i en vid uendelig Udørk,
 Og der saae jeg en Qvinde, som, klædt i kosteligt Purpur,
 Sad paa et blodrødt Dyr, med Gudsbespottelser tegnet,
-Radsomt i Skikkelse, stort, syphoudet, og kronet. med ti Horn.
-Qvinden med Guld var behangt, og med Perler og ædele Steene
+Rædsomt i Skikkelse, stort, syvhovedet, og kronet med ti Horn.
+Qvinden med Guld var behængt, og med Perler og ædele Steene
 Rigelig smykket. I Haanden hun bar et Bæger af puurt Guld,
 Fyldt med beruusende Gift, og Utugtigheds hidsige Druer.
 Paa den udækkede Pande det Navn stod gaadelig skrevet:
-Babel, den store: Fordærvelsers Stad: Udsvævel sers Moder.
+Babel, den store: Fordærvelsers Stad: Udsvævelsers Moder.
 <pb n="316" facs="328.jpg"/>Drukken af Viises Blod og Uskyldiges, sad hun, og Gysen
 Ganske betog mig, hvergang jeg mit Blik mod den ravende vendte.
 See! men da vendte sig til mig paa ny Thronenglen, og sagde:
@@ -3668,12 +3647,12 @@ Ikke betage dig Frygt! jeg vil tolke dig Qvindens Betydning,
 Og det Bolersken bærende Dyrs syv Hoveder og ti Horn.
 Dyret, du saae, har været engang, og kommer, og er ei!
 Op af Helvede stiger dets Magt, og synker til Helved.
-Men med beundrende Studsen de Folk, som Fore den omkring boe,
+Men med beundrende Studsen de Folk, som Jorden omkring boe,
 <pb n="317" facs="329.jpg"/>De, hvis Navne den Evige selv ei skrev i sit Livs Bog,
 Skulle tilbede det Dyr, som har været, som kommer, og er ei.
 Hør mig med Andagt! Gaaden er høi! her gielder det Skarpsind.
 See! syv Bierge betyde de syv tihornede Hoveder;
-Paa dem sidder hun selv, den fordærvende, Skisgernes Skiøge.
+Paa dem sidder hun selv, den fordærvende, Skjøgernes Skiøge.
 Men syv Konger betyde de syv: Fem af dem er faldne;
 Een alt er der; den anden er end ei kommen; naar denne
 Kommer, vil vare kun kort hans let hensvindende Vælde.
@@ -3681,13 +3660,13 @@ Kommer, vil vare kun kort hans let hensvindende Vælde.
 Hint, som af Helvede steg, og forsvindende synker til Helved.
 Men ti Fyrster, som end ei salvedes, ere de ti Horn,
 Hvilke du saae; dem kongelig Magt skal skiænkes af Dyret
-Kun'een Time! den samme Forstand besiæler dem alle;
+Kun een Time! den samme Forstand besiæler dem alle;
 Alle de Dyret og give den Magt, det gav dem, tilbage;
 Alle mod Lyset sig hæve til Strid, men det hellige Lys skal
 Overvinde dem alle; thi det er Kongernes Konge,
 Herskernes Hersker; med det skal seire det ædlere Samfund.
 <pb n="319" facs="331.jpg"/>    Andagtsfuld jeg hørte hans Ord, og Engelen vedblev:
-Hine med Kroner begavede ti, Dyrhovdernes ti Horn,
+Hine med Kroner begavede ti, Dyrhovedernes ti Horn,
 Skulle mod Skiøgen tilsidst opirres, og plyndre den ublu,
 Ja selv æde den Plyndredes Kiød, og brænde til Aske
 Hendes adsplittede Been; thi Han, som styrer usynlig,
@@ -3700,45 +3679,44 @@ Hin, som med Vælde behersker de samtlige Landenes Konger.
 Saa han talte; men see! mens end jeg lyttede, saae jeg
 Fare fra Himmelen ned en anden af Thronernes Engle,
 Herlig og høi; hans Herligheds Glands opfyldede Jorden.
-Og han raabte med Styrke, som Skrald af buldrende. Tordner:
-Falden, falden er Babylon! Bel! dit Babel er falden!
+Og han raabte med Styrke, som Skrald af buldrende Tordner:
+Falden, falden er Babylon! See! dit Babel er falden!
 Styrtet i Gruus er den vældige Stad! Nu Slanger og Øgler,
-<pb n="321" facs="333.jpg"/>Vadslernes vrimlende Kryb, og Forraadnelsens Skyg-
-     ger beboe den.
+
+<pb n="321" facs="333.jpg"/>Aadslernes vrimlende Kryb, og Forraadnelsens Skygger beboe den.
 See! thi dens giftige Viin beruuste de lokkede Jordeboer;
 Selv og Bestyrerne drak af dens Bæger, og bolede med den;
-Og af dens Odselheds Svælg blev Forraadsælgerne rige.
+Og af dens Ødselheds Svælg blev Forraadsælgerne rige.
 See! men en anden basunende Røst fra Himlene raabte:
 Skynder eder, mit Folk! ud fra den faldendes Omkreds,
 At ei deelende Daad med den ublu Straffen I deele!
-Flyer! thi til Himlene naae hin Stads Misgiers! ningers Dynge;
+Flyer! thi til Himlene naae hin Stads Misgierningers Dynge;
 <pb n="322" facs="334.jpg"/>Men og den Evige nu den ihukom efter dens Ondskab.
 Hører, mit Folk! giengielder den Styrtede nu, hvad hun, opreist,
 Eder har giort! Med det Maal, hvormed hun maalede, maaler
 Tvefold hende! den Kalk, hun skiænkede, skiænker nu hende
 Doppelt! og træder nu ned den Stolte, som Eder har nedtrykt,
-Fræk hovmodende sig i sin Vellyst, trodsende magt froe,
+Fræk hovmodende sig i sin Vellyst, trodsende magtstroe,
 Byggende tryg paa sin Lykkes Bestandighed, medens hun udbrød:
 Jeg, jeg throner en Dronning! Mon Enke jeg vorder? og barnløs?
 See! som et pludseligt Lyn kom Faldet med eet, og paa een Dag
 <pb n="323" facs="335.jpg"/>Greb den uventet, Elendigheds Qval, og Hunger, og Helsoet.
-See! og den tændtes af Ild, og i Røg dens Herz
-    : lighed opgik!
+See! og den tændtes af Ild, og i Røg dens Herlighed opgik!
 Dommen er kommen, den Høiestes Dom, som hevner med Almagt.
 Vee! Vee! Babylon! over dig Vee! Snart hyler omkring dig
 Kongernes Jammer, som drak af din Gift, og bolede med dig!
 Fiern, naar nu Røgen de seer af din Brand mod Himmelen opslaae,
-Skulle de staae, for din Straf selv bævende, raas bende Vee! Vee!
+Skulle de staae, for din Straf selv bævende, raabende Vee! Vee!
 Falden er Babylons mægtige Stad, den store, paa een Dag!
 <pb n="324" facs="336.jpg"/>    Vee! Vee! Babylon! over dig Vee! Snart hyler omkring dig
-    Forraadsælgernes Skrig, som berigedes før af din Vellyst:
-    Fiern, af Frygt for at deele din alt forfærdende Domstraf,
-    Skulle de staae, høit raabende Vee! Vee! Babel, den rige,
-    Babel, den alt opslugende Stad, er styrtet paa een Dag!
-    Vee! Bee! Babylon! over dig Vee! Snart hy ter omkring dig
-    Selv Søehandlernes Hob, som berigedes før af din Vellyst;
-    Fiern, naar nu Røgen de seer af din Brand mod Himmelen opslaae,
-<pb n="325" facs="337.jpg"/>Skulle de staae, høit raabende: Vee! Vee! Ba: bel, den store,
+Forraadsælgernes Skrig, som berigedes før af din Vellyst:
+Fiern, af Frygt for at deele din alt forfærdende Domstraf,
+Skulle de staae, høit raabende Vee! Vee! Babel, den rige,
+Babel, den alt opslugende Stad, er styrtet paa een Dag!
+Vee! Vee! Babylon! over dig Vee! Snart hyler omkring dig
+Selv Søehandlernes Hob, som berigedes før af din Vellyst;
+Fiern, naar nu Røgen de seer af din Brand mod Himmelen opslaae,
+<pb n="325" facs="337.jpg"/>Skulle de staae, høit raabende: Vee! Vee! Babel, den store,
 Babel, den rige, den mægtige Stad, er falden paa een Dag!
     Fryd dig, o Himmel! o jubler, I Hellige! Dydens og Lysets
 Fromme Tilhængere! jubler! du Sandheds Meenighed, fryd dig!
@@ -3746,26 +3724,24 @@ Gud! Gud Herren har dømt Hevndommen; og hævdet sit Folks Ret!
 See! Thronengelen hæved med Magt en forfærdelig Fieldsteen,
 Svang den, og kasted den ud i den slugende Hvirvel, og sagde:
 <pb n="326" facs="338.jpg"/>Saa henkastes den vældige Stad, og findes ei mere!
-Ei skal mere nu hores deri Basuners og Harpers,
+Ei skal mere nu høres deri Basuners og Harpers,
 Fløiters og Cymbelers Klang, og ei meer den festlige Kredssang!
 Ei skal mere nu findes deri de tryllende Kunstners
-Skatte! ja Mollernes Lyd skal selv ei hores deri meer!
+Skatte! ja Møllernes Lyd skal selv ei høres deri meer!
 Slukt skal være deri hvert Lys; Brudgommens og Brudens
 Stemmer skal tie deri; og dens Plads ei findes paa Jorden!
-Thi den var fyldt af de Helliges Blod, af Uskyl diges Blod, af
-Alle de Slagtebes Blod, som, dens Offere, faldt for dens Hovmod.
+Thi den var fyldt af de Helliges Blod, af Uskyldiges Blod, af
+Alle de Slagtedes Blod, som, dens Offere, faldt for dens Hovmod.
 <pb n="327" facs="339.jpg"/>Saa han talte; men nu jeg en Lyd, som af tusinde Skarer,
 Hørte, som tusinde svared, i Himlenes Himle, med Gienklang:
 Halleluja! den Evige Priis! Svar, Jord: Halleluja!
-Hans er Frelsen, og Magten, og Wren i Evighed! Amen!
-Helligt er Dommerens Bud! retfærdig den Eviz
-    ges Strafdom!
-See! han har dømt Jordskiøgen, som fræk med
-    Kaadhed og Utugt
-Rundt fordærvede Jorden, og hevnet det Blod, som hun udgisd.
-Atter i Himmelen klang, gienklingende, Skas rernes Lovsang:
-<pb n="328" facs="340.jpg"/>Halleluja!, til Hevneren Priis! Svar, Jord: Halleluja!
-See! nu stiger dens Røg, den Faldnes, i Evig, hed! Amen!
+Hans er Frelsen, og Magten, og Æren i Evighed! Amen!
+Helligt er Dommerens Bud! retfærdig den Eviges Strafdom!
+See! han har dømt Jordskiøgen, som fræk med Kaadhed og Utugt
+Rundt fordærvede Jorden, og hevnet det Blod, som hun udgød.
+Atter i Himmelen klang, gienklingende, Skarernes Lovsang:
+<pb n="328" facs="340.jpg"/>Halleluja! til Hevneren Priis! Svar, Jord: Halleluja!
+See! nu stiger dens Røg, den Faldnes, i Evighed! Amen!
 </poetry>
 </body>
 </text>
@@ -3773,13 +3749,13 @@ See! nu stiger dens Røg, den Faldnes, i Evig, hed! Amen!
 <text id="baggesen2026090118" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Skabelsen</title>
-  <subtitle>Efter Moses</subtitle>
+  <subtitle>(Efter Moses.)</subtitle>
   <firstline>Først i Begyndelsen skabte den Evige Himlen og Jorden</firstline>
   <notes>
-    <note>Gendigtning af <xref bible="bibel1mose01"/> og <xref bible="bibel1mose02,1-3"/>.</note>
+    <note>Gendigtning af <xref bible="bibel1mose1"/> og <xref bible="bibel1mose2,1-3"/>.</note>
   </notes>
   <source pages="329-336"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3849,26 +3825,26 @@ Og han velsignede den, som sin Skabningens hellige Festdag.
 <text id="baggesen2026090119">
 <head>
   <title>Diævelens Aabenbarelse før Christi Tilbagekomst</title>
-  <subtitle>Efter det andet Brev af Paulus til de Thessaloniker</subtitle>
+  <subtitle>(Efter det andet Brev af Paulus til de Thessaloniker.)</subtitle>
   <firstline>Sandelig siger jeg Eder, og visselig vorder det opfyldt</firstline>
   <notes>
     <note>Gendigtning af <xref bible="bibel2tessa02,1-13"/>.</note>
   </notes>
   <source pages="337-342"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Sandelig siger jeg Eder, og visselig vorder det opfyldt:
 Jesus Christus igien, i sin Herlighed, kommer tilbage
 Til den ham elskende Hob, og fornyer de Troendes Samfund.
-<pb n="338" facs="350.jpg"/>Samles skulle vi alle til ham omsider; men Tiz den,
+<pb n="338" facs="350.jpg"/>Samles skulle vi alle til ham omsider; men til den,
 Elskede Brødre, bestemmer kun Een, al Skabningens Styrer!
 Agter om saadant ei Sagn, og Beregninger, truende Varslers
 Tegnforklaring, og Breve derom, udgivne for vore,
 Hvilke, som nær, forkynde hans Dag, og hans ventede Gienkomst;
 Thi den kommer da først, naar det store Slægternes Affald
-Heelt er fuldendt, og Fordærvelsens Son, hin Synderes første,
+Heelt er fuldendt, og Fordærvelsens Søn, hin Synderes første,
 Helvedes Helt, i en Menneskekrop, vidt seirer paa Jorden:
 Han, som imodstaaer alt, og opløfter sig over, hvad alle
 <pb n="339" facs="351.jpg"/>Nævnede høit, guddommeligt, stort, og værdigt, og helligt;
@@ -3877,9 +3853,10 @@ Sætter sig dristigen selv paa den Eviges Throne, med Almagt
 Pralende, fordrende Dyrkelse rundt som eeneste Guddom.
 Kommer ihu, hvad med Eder foreent, jeg sagde tilforn alt!
 End gientager jeg Ordet i Skrift: Hvad Dagen opholder,
-Er hin Morkhedens Aands hvert Lys udslukkende Fremfærd,
+Er hin Mørkhedens Aands hvert Lys udslukkende Fremfærd,
 <pb n="340" facs="352.jpg"/>Hvilken skal aabenbares os først, før Dagen oprinder.
 Alt er i Værk Afgrundens dens Gry forhindrende Forsæt:
+
 Ondskabs Hemmelighed ei er meer tvetydig; og klart sees
 Alt Udrydderens Plan! Fuldt aabenbart er det Onde.
 Selv dets Fyrste sig skiuler ei meer! Dog ryddes af Veien
@@ -3890,10 +3867,10 @@ Og du forsvinder, et Intet, forglemt, ved hans Herligheds Tilkomst!
 <pb n="341" facs="353.jpg"/>    Aabenbaret er nu hin Magts Nærværelse; kundgiort
 Efter den Maade, hvorpaa den Forbandede, Mørkets Behersker,
 Satan virker: ved al Slags Vold, løgnagtige Jertegn,
-Kraftige Gierninger, Undere lig, og ved hemmelig Tradskhed,
+Kraftige Gierninger, Undere lig, og ved hemmelig Trædskhed,
 Og ved bestandig Forføren til Uretfærdigheds Udaad.
 Vee! og de Svage, som ei modtoge den frelsende Sandhed,
-Hvilken dem sendtes fra Gud, slaae Lid til Løg nen, og Løgnens
+Hvilken dem sendtes fra Gud, slaae Lid til Løgnen, og Løgnens
 Helt; sig styrtende selv i Fordærvelse, slagne med Blindhed,
 <pb n="342" facs="354.jpg"/>... Saa vil forgaae den vanartige Slægt, som i Daarskab og Udaad
 Skiændig Behag fandt, hadende Lys, og Sandhed, og Retfærd.
@@ -3907,413 +3884,322 @@ Svinder (det svinder engang!) opgaaer vort evige Haabs Dag.
 
 <text id="baggesen2026090120" ignore-tests="repeated-adjacent-word">
 <head>
-  <title>Leonore. En Ballade</title>
-  <subtitle>Efter Bürger</subtitle>
-  <firstline>Lenore foer, da Dagen brød</firstline>
+  <title>Leonore</title>
+  <subtitle>
+    <line>En Ballade.</line>
+    <line>(Efter Bürger.)</line>
+  </subtitle>
+  <firstline>Lenore foer da Dagen brød</firstline>
   <notes>
     <note>Gendigtning af Gottfried August Bürger: <xref type="translation" poem="burger2018041201"/>.</note>
   </notes>
   <source pages="343-359"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Lenore foer da Dagen brød
-
 Forskrækt af Søvnens Arme:
 Er Vilhelm troeløs eller død,
-
 Hvad forestaaer mig Arme?
 Han dragen var med Fredriks Hær
 Mod Prag forlængst i Ledingsfærd;
 Og havde lovet Breve,
-
 Som altid udebleve.
 
 <pb n="344" facs="356.jpg"/>Af Krigen med hinanden kied,
 Monarken og Czarinden,
 Omsider foredroge Fred
 For blodig Tab og Vinden.
-Og begge Hare nu med Sang
+Og begge Hære nu med Sang
 Og Spil og Dands og Kling og Klang,
 Udmaiede saa fage,
 Til Hiemmet drog tilbage.
 
 Og overalt, hvorhen man saae,
 Mens Glædestaarer fløde,
-
 Drog alt, hvad kunde staae og gaae,
 De Kommende imøde!
-
 Velkommen! Mødrene brød ud,
 Velkommen! raabte mangen Brud.
 Men eene Leonore
-
 Forbi de Favntag foere.
 
-<pb n="345" facs="357.jpg"/>    Hun giennemfloi den hele Rad,
-    Udspurgte, søgte, ledte
+<pb n="345" facs="357.jpg"/>Hun giennemfloi den hele Rad,
+Udspurgte, søgte, ledte
+Om Vilhelm; ingen vidste hvad;
+Omsonst den Arme svedte.
+Da hele Troppen var forbi
+Hun slængte sig i Raserie
+Paa Jorden hen, bedøvet,
+Alt Haab og Trøst berøvet.
 
-    Om Vilhelm; ingen vidste hvad;
-    Omsonst den Arme svedte.
+Den bange Moder nærmed sig:
+„O! det sig Gud forbarme!
+O Barn! o Barn! hvad fattes dig?
+Hvil i din Moders Arme!“ —
+„O Moder! Moder! tabt er tabt!
+For mig er Liv og Alt fortabt!
+Gud vil sig ei forbarme!
+O Vee! o Vee! mig Arme!“ —
 
-: Da hele Troppen var forbi
-
-    Hun slængte sig i Raserie
-
-    Paa Jorden hen, bedøvet,
-
-    Alt Haab og Trøst berøvet
-
-    Den bange Moder nærmed sig:
-    „O! det sig Gud forbarme!
-
-    Barn! a Barn! hvad fattes dig?
-    Hvil i din Moders Arme! "-
-
-    "Moder! Moder! tabt er tabt!
-
-    For mig er Liv og Alt fortabt!
-
-    Gud vil sig ei forbarme!
-
-    Vee! o Vee! mig Arme!"
-
-<pb n="346" facs="358.jpg"/>"„D Barn! o bed dit Fadervor!
+<pb n="346" facs="358.jpg"/>„O Barn! o bed dit Fadervor!
     Gud see til os i Naade!
-
 Hvo kun sin Lid til Herren slaaer,
-    Ham vendes Alt til Baade! "-
+Ham vendes Alt til Baade!“ —
 „Nei, Moder! Moder! nei, mod mig
-
 Han ei har handlet faderlig!
 Hvad nytted al min Beden?
-Fortvivlt jeg vandrer heden."-
+Fortvivlt jeg vandrer heden.“ —
 
 „O! nei! har du til ham dig vendt,
-    Han naadig dig annammer.
+Han naadig dig annammer.
 Vær trøstig, Barn, hans Sakrament
-
-    Vil lindre al din Jammer! "-
-„Moder! Moder! Hiertets Brand
+    Vil lindre al din Jammer!“ —
+„O Moder! Moder! Hiertets Brand
 Ei Sakramentet lindre kan!
-    det har aldrig Livet
-Igien de Døde givet!"-
+    O det har aldrig Livet
+Igien de Døde givet!“ —
 
 <pb n="347" facs="359.jpg"/>„Hør, Barn! og om den falske Mand
     I fierne fremmed Rige
-
-Troelss har givet Mund og Haand
+Troeløs har givet Mund og Haand
     Alt til en anden Pige?
-
 Lad fare, Barn, hans Løfters Vind,
-
 Og slaae den Utroe af dit Sind!
-
 Engang ved Livets Ende
+Hans Meneed ham vil brænde!“
 
-Hans Meneed ham vil brænde!"
-
-,, Moder! Moder! tabt er tabt!
+„O Moder! Moder! tabt er tabt!
     Til Qval, til Brand, til Bløden,
 Blev eene din Lenore skabt!
     Min Redning er kun Døden!
 Vær lukt mit Øie, stedse lukt!
 Vær slukt, mit Lys, for evig slukt!
 Gud vil sig ei forbarme!
+O Vee! o Vee! mig Arme!“ —
 
-    Vee! o Vee! mig Arme! "amado
-<pb n="348" facs="360.jpg"/>    Gud, gane ei i Rette vred
-Med Drmen i sin Vriden!
-
+<pb n="348" facs="360.jpg"/>„O Gud, gaae ei i Rette vred
+Med Ormen i sin Vriden!
 Hun ei, hvad Læben siger, veed,
 Hun synder uden Viden!
-
-Barn! forglem al Verdens Svig!
+O Barn! forglem al Verdens Svig!
 Og tænk paa Gud og Himmerig,
 Den Brudgom der dig venter,
+Dig ved sin Engel henter!“ —
 
-Dig ved sin Engel henter!"
-
-    Moder! hvad er Himmerig?
-    Moder! hvad er Helved?
-
+„O Moder! hvad er Himmerig?
+O Moder! hvad er Helved?
 Hos Vilhelm kun er Himmerig,
 Og uden Vilhelm Helved!
-
 Vær lukt, mit Øie, stedse lukt!
-
 Vær slukt, mit Lys, for evig slukt!
-
 Jeg ene ved hans Side
-
-Af Sglighed vil vide!!
+Af Salighed vil vide!“ —
 
 <pb n="349" facs="361.jpg"/>Saa raste med fortvivlte Skrig
 Afsindigen den Arme;
-
 Og meer og meer formastelig
-Mod Gud udgisd sin Harme;
-
+Mod Gud udgød sin Harme;
 Forslog sit Bryst, og Led fra Led
-
 Vred Fingrene til Sol gik ned,
-
 Og alle Stierner blide
-
 Gik op i Østerlide.
 
 Men uden for nu: trap trap trap!
 Man hørte Slag af Hoven,
-
 En Rytter steg af Hesten rap
 For Dørren ud til Skoven.
-
 Og lyt! lyt! lyt! den Klingelring
-
 Alt klimpred sagte kling! kling! kling!
-
 Da lød tilsidst en Stemme
+Igiennem Dørrens Klemme:
 
-Igiennem Derrens Klemme:
+<pb n="350" facs="362.jpg"/>Holla! Holla! luk op, min Glut!
+Hvad? vaager eller sover
+Min Skat? Er venlig eller mut
+Den Engel, jeg mig lover? —
+„Ak! Vilhelm, du, i Storm og Nat!
+Ak! jeg har grædt mig øm og mat!
+Hvad kunde Vilhelm hilde?
+Hvi kommer du saa silde?“ —
 
-<pb n="350" facs="362.jpg"/>    Holla! Holla! luk op, min Glut!
-    Hvad? vaager eller sover
+„Vi sadle blot om Midienat;
+O! hvis den Vei du kiendte!
+Jeg seent til Hest mig havde sat,
+Seent kom jeg dig at hente.“ —
+„Ak, Vilhelm! først i Hast kom ind!
+Derude suser barske Vind;
+Kom ind, og lad mig varme
+Min Ven i mine Arme!“ —
 
-    Min Skat? Er venlig eller mut
-    Den Engel, jeg mig lover? -
-
-    "„Ak! Vilhelm, du, i Storm og Nat!
-
-    Ak! jeg har grædt mig øm og mat!
-
-    Hvad kunde Vilhelm hilde?
-
-    Hvi kommer du saa silde? "-
-
-    ,,Vi sadle blot om Midienat;
-    O! hvis den Vei du kiendte!
-    Jeg seent til Hest mig havde sat,
-    Seent kom jeg dig at hente."-
-    "„Ak, Vilhelm! først i Hast kom ind!
-    Derude suser barske Vind;
-    Kom ind, og lad mig varme
-    Min Ven i mine Arme!"
-
-<pb n="351" facs="363.jpg"/>"Lad suse Vind i Skov og Krat,
+<pb n="351" facs="363.jpg"/>„Lad suse Vind i Skov og Krat,
     Lad suse, Glut, lad suse!
-
 Min Ganger skraber! det er Nat!
     Jeg her tør ikke huse!
-
 Kom! Kaaben om! og sving dig op
-
-Paa Hesten bag mig! I. Galop
-
+Paa Hesten bag mig! I Galop
 Jeg end maa hundred Mile
-
-Til Brudesengen ile! "-
+Til Brudesengen ile!“ —
 
 „Du vil mig hundred Miil før Dag
     Til Brudeleiet bringe?
-
 Og nylig Kirkeklokkens Slag
-    Alt elleve lod klinge! "-
-
+    Alt elleve lod klinge!“ —
 „Blik om dig! Maanen skinner klart;
 Vi ride med de Dødes Fart;
-
 Jeg end før tolv det ringer
-I Brudeseng dig bringer!"
+I Brudeseng dig bringer!“
 
 <pb n="352" facs="364.jpg"/>„Sig, hvor er da din Brudesal?
-Hvor er dit Sovekammer? "
-
-„Langt, langt herfra - taus, smal, og sval:
-Sex Brædder og to Klammer! "-
-
-„Er Rum for mig? "- „For mig og dig!
-
+Hvor er dit Sovekammer?“ —
+„Langt, langt herfra — taus, smal, og sval:
+Sex Brædder og to Klammer!“ —
+„Er Rum for mig?“ — „For mig og dig!
 Kom, Kaaben om, til Hest med mig!
-
 Skuf ei de Budnes Haaben!
-
-Vor Hoitidssal staaer aaben! "
+Vor Høitidssal staaer aaben!“
 
 Hun kasted Kaaben om sig, svang
 Sig op, og fast sig klynged
-
 Bag Rytteren. Og Hesten sprang,
 Og hele Jorden gynged!
-
 Og Hurrah! Hurrah! hop hop hop!
-
 Det gik i susende Galop,
-
 Saa Hest og Rytter fnyste,
-
 Og Flintestene lyste.
 
-<pb n="353" facs="365.jpg"/>Paa hsire Haand, paa venstre Lie,
-Foer Biergene tilbage -
+<pb n="353" facs="365.jpg"/>Paa høire Haand, paa venstre Lie,
+Foer Biergene tilbage —
 Hvor dundrede hver Vei og Stie!
 Hvor hørtes Broen brage!
 „Hvad bange, Glut, i Maanens Glands?
-Hurral rask er de Dødes Dands!
-Hvad? frygter du de Døde? "
-    „Uk nei! - dog lad de Døde! "
+Hurra! rask er de Dødes Dands!
+Hvad? frygter du de Døde?“ —
+— „Ak nei! — dog lad de Døde!“ —
 
 „Tys! hørte du den Sang og Klang?
     Af Liig jeg aander Lugten.
-
-Hør Klokkeklang, og Dødningsaitg,
-    Og Ravne hist i Flugten!"
-
+Hør Klokkeklang, og Dødningssang,
+    Og Ravne hist i Flugten!“
 Og see! en Skare nærmed sig
-
 Med sorte Kiste sørgelig;
-
 Og hule Stemmer løde:
-
-Vi jorde vil den Døde! "
+„Vi jorde vil den Døde!“
 
 <pb n="354" facs="366.jpg"/>„Ved Midnat Liget Jorden giv,
-
     O Trop, som du mon pleje!
 Jeg bringer først min unge Viv
-
     Med mig til Brudeleje.
 Kom, Klokker, hid med Chor og Klang,
 Og syng mig for min Brudesang!
 Kom, Præst, og vie os begge,
-Før vi til Sengs os lægge!"
+Før vi til Sengs os lægge!“
 
 Det taug; og Baare svandt, og Lig;
     Men lydig fulgte Resten,
-
 Og Hurrah! Hurrah! vendte sig
     Og fulgte tæt bag Hesten.
-
 Og stedse fremad, hop! hop! hop!
-
 Det gik i susende Galop!
-
 Saa Hest og Rytter fnyste,
-
 Og Flintestene lyste.
 
 <pb n="355" facs="367.jpg"/>Hvor foer de Farende forbi
 Nu Hytter, og nu Slotte!
-
-Hvor svandt paa hoir' og venstre Lie
+Hvor svandt paa høir' og venstre Lie
 Skov, Mark og Field og Grotte!
-
-„Du gyser? - Maanen skinner klart!
+„Du gyser? — Maanen skinner klart!
 Hurrah! de Døde ride snart!
-
-Glut! frygter du de Døde?
-
-„Ak! lad i Noe de Døde! "
+Glut! frygter du de Døde?“ —
+„Ak! lad i Roe de Døde!“
 
 Det gik forbi et Rettersted.
 I Maanens Skin om Hiulet
 En Lufttrop dandsed op og ned
 Halv synlig, og halv skiulet.
-Hop, hop, Gespenster! task herhid!
+„Hop, hop, Gespenster! rask herhid!
 Kom, Lufttrop, kom og følg mig did,
 Og fletter Brudekrandsen
-Os hist i Høitidsdandsen! "
+Os hist i Høitidsdandsen!“
 
-<pb n="356" facs="368.jpg"/>Og Hurrah! Hurrah! Vift i Vist
-Den Trop bag Folget bruser,
-
+<pb n="356" facs="368.jpg"/>Og Hurrah! Hurrah! Vift i Vift
+Den Trop bag Følget bruser,
 Som giennem øde Klippers Rift
 Nordhvirvelvinden suser;
-
 Og stedse fremad, hop! hop! hop!
-
 Det gik i stormende Galop,
-
 Saa Hest og Rytter fnyste
-
 Og Flint og Kampe lyste.
 
-Hvor flot, hvad Maanen skinte paa
+Hvor fløi, hvad Maanen skinte paa
     Dybt i det mørke Fierne!
 Selv Himlen syntes at forgaae,
     Saa flygtede hver Stierne!
-„Du gyser? Maanen skinner klart!
+„Du gyser? — Maanen skinner klart!
 Vi ride med de Dødes Fart!
-Glut! frygter du 'de Døde? "
-
-- „D Vee mig! Lad de Døde!"-
+Glut! frygter du de Døde?“ —
+— „O Vee mig! — Lad de Døde!“ —
 
 <pb n="357" facs="369.jpg"/>„Rap! Midnatshanen galer snart!
 Jeg aander Morgenduften;
 Nap! stræk dig! til den sidste Fart
-
 Paa Jorden giennem Luften!
 Fuldendt! fuldendt er vor Galop;
-Vi rede med de Dedes Hop!
+Vi rede med de Dødes Hop!
 Hist Høitidssalen blinker,
-
-Hvor Brudesengen vinker! "-
+Hvor Brudesengen vinker!“ —
 
 Og rask imod et Gitters Værn
-Det gik i Farten lige -
-Et Pidskesnært og Bolt og Jern
-For Slaget sanes at vige;
-Og op sløi Porten, Laasen sprang,
+Det gik i Farten lige —
+Et Pidskesnært — og Bolt og Jern
+For Slaget saaes at vige;
+Og op fløi Porten, Laasen sprang,
 Og Knokler under Jorden klang,
 Paa Veien, mellem Rader
-Af sorte Marmerplader.
+Af sorte Marmorplader.
 
-<pb n="358" facs="370.jpg"/>Der standsed det. - Men Skræk og Gru!
+<pb n="358" facs="370.jpg"/>Der standsede det. — Men Skræk og Gru!
 Den Rytters Hielm og Taske
-
 Faldt af; hans Harnisk gik itu;
 Hans Rustning sank til Aske;
-
 Hans Legem blev en Rad af Been,
-
 Hvorpaa et Dødninghoved green;
-
 En Lee han trak isteden
-
 For Sabelen af Skeden.
 
-Vildt steiled Hesten, vrinsked, fuss;
-Høit hortes Skrald af Torden,
-Lenore svedte, skialv, og giss-
+Vildt steiled Hesten, vrinsked, fnøs;
+Høit hørtes Skrald af Torden,
+Lenore svedte, skialv, og gøs —
 Da sank det alt i Jorden,
-
 Og bange Hyl i Luften lød,
-
-Og Spyl opsteg af Gravens Skiød,
+Og Hyl opsteg af Gravens Skiød,
 Af Angest, Nag og Smerte
-
 Var knust den Armes Hierte.
 
 <pb n="359" facs="371.jpg"/>Nu dandsede ved Maanens Glands
 Hint Følgeskab fra Kulen
 I Kreds en skummel Dødningdands
 Med Hyl i Hyl om Hulen:
-„Trods aldrig fromme Moder Bud!
+„Trods aldrig fromme Moders Bud!
 Træt aldrig, Støv! med Himlens Gud!
-Din Krop er Armes Føde.
-
-Din Siæl see Gud imøde!"
+Din Krop er Ormes Føde.
+Din Siæl see Gud imøde!“
 </poetry>
 </body>
 </text>
 
 <text id="baggesen2002041309">
 <head>
-  <title>Til Digteren Adam Øhlenschläger</title>
-  <subtitle>I Anledning af hans Svar paa mit Riimbrev: Noureddin til Aladdin. 1807.</subtitle>
+  <suptitle>Til Digteren</suptitle>
+  <title>Adam Øhlenschläger</title>
+  <subtitle>
+    <line>(I Anledning af hans Svar paa mit Riimbrev:</line>
+    <line>Noureddin til Aladin).</line>
+  </subtitle>
   <firstline>Parnassets Alliker, og Giøge, Giæs</firstline>
   <source pages="360-374"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4321,7 +4207,7 @@ Din Siæl see Gud imøde!"
 Og Frøer og Ænder, og hvad andet Tamt
 Og Vildt, med hæse Skrig, og falske Fiær,
 Og halve Vinger, eller vingeløst,
-Kukukker, snadrer, qvækker om dets Fod,
+Kukukker, snadre, qvække om dets Fod,
 Jeg, sænkende Camoenens Ørne-Flugt,
 <pb n="361" facs="373.jpg"/>Dem visende den længe skiulte Kloe,
 Har søgt at skrække lidt, og skrækt maaskee.
@@ -4443,7 +4329,7 @@ Natur og Kunst? - Som om bogstavelig
 Jeg troede mig aldeles uden Evne,
 Kald, Genius, Natur?
 
-                         <pb n="368" facs="380.jpg"/>Nei! Melpomene
+<pb n="368" facs="380.jpg"/>                         Nei! Melpomene
 Forstaaer Thalia; Polyhymnia,
 Calliope; og Clio selv Erato -
 Hvis Pieriden fra Parnasset blot
@@ -4453,7 +4339,7 @@ Tilstaae det, Ædle: Vredesbrusen, Harm
 Fremskyndte dig! og naar jeg, rolig, alt
 Hvad mellem dig og mig et Skyggebierg
 Af drømte Grundforskielligheder fast
-Nødvendighen har maattet reise; naar
+Nødvendigen har maattet reise; naar
 Jeg overveier, at det halve kun
 Af Baggesen dig hidindtil sig har,
 Endog i falsk Belysning, aabenbaret,
@@ -4478,7 +4364,7 @@ Fra Smagens Side som en fransk Stilist;
 Og, var jeg det, med Rette da min Roes
 Du burde frygte meer end selv min Dadel.
 
-   <pb n="370" facs="382.jpg"/>Barn har jeg været, Adam, ogsaa mig
+<pb n="370" facs="382.jpg"/>   Barn har jeg været, Adam, ogsaa mig
 Har Ranglen eengang tryllet, og Trompeten
 Med Bladguld om Zinnobermunden, og
 Den lille Hest med Piben i - som Yngling
@@ -4546,7 +4432,7 @@ Opløfter ene Tvillingvingen, som
 I Vuggen alt af Barnets Haand og Fod
 Frempipped i dramatisk Doppeltleeg.
 <pb n="374" facs="386.jpg"/>O lad ham ei miskiende denne Kraft,
-Som brød i Shak'spear ud til Kunstens største Gran
+Som brød i Shak'spear ud til Kunstens største Grad
 Paa sin Tidsalders Dovre! Lad den hellig-høi
 Som hin, og underfuld, men mere rund -
 En Tempelkuppel mod et Kirkespiir -
