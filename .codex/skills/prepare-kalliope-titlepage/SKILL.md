@@ -48,8 +48,9 @@ Create a faithful `p1` image from the actual printed title page. Read
 `render` writes `<candidate>.transform.json`, which binds the source and
 candidate hashes to the exact geometry. `qa` writes a final status of `pass`
 or `manual-review`; promotion is refused unless the status is `pass`.
-QA rejects a crop that removes more than 5% from any single edge of the
-rotated canvas. The report lists left, right, top and bottom separately.
+QA rejects a crop that removes more than 5% from the left, top or bottom edge
+of the rotated canvas, or more than 8% from the right edge. The report lists
+left, right, top and bottom separately.
 After finding the paper boundary, analysis measures continuous dark bands and
 corner-connected dark remnants at full resolution, trimming only until they
 end. Localized objects away from the corners, such as page clips, do not count

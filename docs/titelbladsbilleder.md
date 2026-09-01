@@ -62,8 +62,8 @@ går automatisk videre, når analysen har status `candidate`, QA har status
 4. Hele bogsiden og dens naturlige marginer er bevaret.
 5. Ingen tekst, ornamentik eller trykt ramme er beskåret eller ændret.
 6. Farve, tone, slid og papirspor svarer til kilden.
-7. Outputtet er ikke opskaleret, og højst 5% er beskåret fra hver enkelt kant
-   efter rotationen.
+7. Outputtet er ikke opskaleret, højst 5% er beskåret fra venstre kant, top og
+   bund, og højst 8% er beskåret fra højre kant efter rotationen.
 
 Kantmålingen udføres i fuld opløsning. Sammenhængende mørke scannerstriber og
 mørke rester, der hænger sammen med et hjørne, beskæres, indtil de ophører.
