@@ -9,7 +9,12 @@ import sharp from 'sharp';
 
 const maxAnalysisDimension = 1200;
 const maximumRotation = 3;
-const maximumCropPerEdge = 0.05;
+const maximumCropByEdge = Object.freeze({
+  left: 0.05,
+  right: 0.08,
+  top: 0.05,
+  bottom: 0.05,
+});
 const cropSafetyInset = 0.005;
 const maximumDarkEdgeFraction = 0.2;
 const maximumDarkCornerFraction = 0.1;
@@ -429,7 +434,7 @@ const refineDarkCropEdges = (image, initialCrop, paperColor) => {
   const trimEdgeWhile = (edge, shouldTrim) => {
     const horizontal = edge === 'top' || edge === 'bottom';
     const dimension = horizontal ? image.height : image.width;
-    const maximumMargin = Math.floor(dimension * maximumCropPerEdge);
+    const maximumMargin = Math.floor(dimension * maximumCropByEdge[edge]);
     while (
       marginAtEdge(edge) < maximumMargin &&
       crop.width > 1 &&
@@ -748,8 +753,9 @@ const qaTitlePage = async (
   const cropFractions = edgeCropFractions(transform.transform);
   const conservativeCrop =
     cropFractions != null &&
-    Object.values(cropFractions).every(
-      fraction => fraction >= 0 && fraction <= maximumCropPerEdge
+    Object.entries(cropFractions).every(
+      ([edge, fraction]) =>
+        fraction >= 0 && fraction <= maximumCropByEdge[edge]
     );
   const checks = {
     conservativeCrop,
@@ -764,7 +770,7 @@ const qaTitlePage = async (
               Number(fraction.toFixed(4)),
             ])
           ),
-    maximumCropPerEdge,
+    maximumCropByEdge,
     noUpscaling: transform.valid && transform.transform.scaled === false,
   };
   const hardChecksPassed = titlePageChecksPassed(checks);

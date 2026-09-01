@@ -121,6 +121,52 @@ describe('prepare Kalliope title page', () => {
     expect(qa.checks.edgeCropFractions.left).toBeGreaterThan(0.05);
   });
 
+  it('allows up to eight percent of cropping only on the right edge', async () => {
+    const source = path.join(root, 'source.jpg');
+    const acceptedCandidate = path.join(root, 'accepted.jpg');
+    const excessiveRightCandidate = path.join(root, 'excessive-right.jpg');
+    const excessiveLeftCandidate = path.join(root, 'excessive-left.jpg');
+    await createSource(source, 0);
+
+    await renderTitlePage(source, acceptedCandidate, {
+      angle: 0,
+      crop: { left: 45, top: 45, width: 805, height: 1130 },
+    });
+    const acceptedQa = await qaTitlePage(source, acceptedCandidate, {
+      report: path.join(root, 'accepted-qa.json'),
+    });
+
+    await renderTitlePage(source, excessiveRightCandidate, {
+      angle: 0,
+      crop: { left: 45, top: 45, width: 795, height: 1130 },
+    });
+    const excessiveRightQa = await qaTitlePage(source, excessiveRightCandidate, {
+      report: path.join(root, 'excessive-right-qa.json'),
+    });
+
+    await renderTitlePage(source, excessiveLeftCandidate, {
+      angle: 0,
+      crop: { left: 55, top: 45, width: 820, height: 1130 },
+    });
+    const excessiveLeftQa = await qaTitlePage(source, excessiveLeftCandidate, {
+      report: path.join(root, 'excessive-left-qa.json'),
+    });
+
+    expect(acceptedQa.status).toBe('pass');
+    expect(acceptedQa.checks.edgeCropFractions.right).toBeGreaterThan(0.05);
+    expect(acceptedQa.checks.edgeCropFractions.right).toBeLessThanOrEqual(0.08);
+    expect(acceptedQa.checks.maximumCropByEdge).toEqual({
+      left: 0.05,
+      right: 0.08,
+      top: 0.05,
+      bottom: 0.05,
+    });
+    expect(excessiveRightQa.status).toBe('manual-review');
+    expect(excessiveRightQa.checks.edgeCropFractions.right).toBeGreaterThan(0.08);
+    expect(excessiveLeftQa.status).toBe('manual-review');
+    expect(excessiveLeftQa.checks.edgeCropFractions.left).toBeGreaterThan(0.05);
+  });
+
   it('rejects a candidate changed after deterministic rendering', async () => {
     const source = path.join(root, 'source.jpg');
     const candidate = path.join(root, 'candidate.jpg');
@@ -152,7 +198,7 @@ describe('prepare Kalliope title page', () => {
     );
   });
 
-  it('accepts a crop within five percent of every edge', () => {
+  it('accepts a crop when every geometry check passes', () => {
     expect(titlePageChecksPassed({
       conservativeCrop: true,
       jpegOutput: true,
