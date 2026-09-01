@@ -22,6 +22,8 @@ overdragelse til brugeren.
 Følg altid repositoryets aktuelle `AGENTS.md`. Skillen giver ikke i sig selv
 tilladelse til commit, push eller oprettelse af en PR. Indhent den godkendelse,
 som `AGENTS.md` kræver, efter at brugeren har kunnet gennemgå ændringerne.
+Et nyt værk skal dog altid ende i en oprettet PR; en lokal ændring eller et
+reviewoplæg er kun et mellemtrin og ikke den færdige levering.
 
 ## 1. Undersøg repositoryet før ændringer
 
@@ -102,6 +104,13 @@ Når PR'en må oprettes, læs og brug
 [PR-skabelonen](references/pr-description.md). PR-beskrivelsen skal begynde med
 checklisten og derefter indeholde alle skabelonens obligatoriske afsnit.
 
+Efter PR-oprettelsen skal du vente på GitHub CI og kontrollere det endelige
+resultat. Meld først opgaven løst, når alle krævede CI-checks er grønne. Hvis en
+check fejler, skal fejlen undersøges og relevante fejl rettes og pushes, så CI
+kører igen. Kan CI ikke bringes i mål inden for opgavens rammer, skal opgaven
+meldes som uafsluttet med den konkrete blokering; en oprettet PR alene er ikke
+tilstrækkelig.
+
 Tilpas checklisten til værket: fjern kun punkter, der reelt ikke er relevante,
 og tilføj konkrete værkspecifikke punkter efter behov. Bevar kategorierne
 `Codex` og `Bruger` præcis. Checkboxene er aktuel status:
@@ -114,7 +123,7 @@ Markér aldrig en manuel brugeropgave som færdig på brugerens vegne. Skriv
 heller aldrig, at en validering er OK, hvis den ikke faktisk er kørt og bestået.
 
 En PR er klar fra Codex' side, når alt sikkert automatiserbart arbejde er
-udført, og det resterende menneskelige arbejde er konkret, lokaliseret og
-overskueligt. PR-beskrivelsen skal inden for få sekunder vise, hvad der er
-indsat, kilden, hvad Codex har kontrolleret, hvad der mangler, hvor brugeren
-skal kigge, og hvilke usikkerheder der findes.
+udført, det resterende menneskelige arbejde er konkret, lokaliseret og
+overskueligt, og alle krævede CI-checks er grønne. PR-beskrivelsen skal inden
+for få sekunder vise, hvad der er indsat, kilden, hvad Codex har kontrolleret,
+hvad der mangler, hvor brugeren skal kigge, og hvilke usikkerheder der findes.
