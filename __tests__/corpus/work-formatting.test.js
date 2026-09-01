@@ -6,6 +6,9 @@ import {
 describe('work XML formatting', () => {
   it('puts structural tags in column zero and spaces texts and sections', () => {
     const xml = `<kalliopework>
+  <workhead>
+    <title>Værk</title><proofreadings><proofreading model="gpt-5.6-sol" datetime="2026-09-01T21:00:00+02:00"/></proofreadings>
+  </workhead>
   <workbody>
     <text>
       <head>
@@ -32,6 +35,15 @@ Et citat
 </kalliopework>
 `;
     const formatted = formatWorkXml(xml);
+
+    expect(formatted).toContain(
+      '<workhead>\n' +
+        '  <title>Værk</title>\n' +
+        '  <proofreadings>\n' +
+        '    <proofreading model="gpt-5.6-sol" datetime="2026-09-01T21:00:00+02:00"/>\n' +
+        '  </proofreadings>\n' +
+        '</workhead>',
+    );
 
     expect(formatted).toContain(
       '<prose>\n  Brødtekst med betydningsfuld indrykning\n</prose>',
