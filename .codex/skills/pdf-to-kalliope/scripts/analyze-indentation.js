@@ -334,8 +334,7 @@ const stanzaPatternModel = section => {
     );
     if (
       sameLengthStanzas.length < 4 ||
-      sameLengthStanzas.length !== definition.occurrences + 1 ||
-      definition.occurrences / sameLengthStanzas.length < 0.75
+      definition.occurrences / sameLengthStanzas.length <= 0.5
     ) {
       return;
     }
@@ -351,7 +350,20 @@ const stanzaPatternModel = section => {
       });
       profileMismatches.push({
         expected,
+        mismatches: expected.flatMap((indentation, index) => {
+          const observed = stanza.indentations[index];
+          if (observed === indentation) {
+            return [];
+          }
+          return [{
+            expected: indentation,
+            observed,
+            stanzaPosition: index + 1,
+            verseLine: stanza.verseLineStart + index,
+          }];
+        }),
         observed: stanza.indentations,
+        outlierCount: sameLengthStanzas.length - definition.occurrences,
         stanza,
       });
     });
@@ -506,8 +518,16 @@ const analyzeSection = ({ pageBreaks, section }) => {
         verse_line_end: verseLineEnd,
         expected_profile: mismatch.expected,
         observed_profile: mismatch.observed,
+        mismatches: mismatch.mismatches.map(item => ({
+          verse_line: item.verseLine,
+          stanza_position: item.stanzaPosition,
+          expected: item.expected,
+          observed: item.observed,
+        })),
         at_page_break: atPageBreak,
-        confidence: atPageBreak ? 'strong' : 'likely',
+        confidence: atPageBreak
+          ? mismatch.outlierCount === 1 ? 'strong' : 'likely'
+          : mismatch.outlierCount === 1 ? 'likely' : 'possible',
         reason:
           'Strofens indrykningsprofil afviger fra mindst tre andre strofer med samme linjeantal og fælles profil.',
         action:
