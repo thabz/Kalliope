@@ -12,6 +12,8 @@ const maximumRotation = 3;
 const maximumCropPerEdge = 0.05;
 const cropSafetyInset = 0.005;
 const maximumDarkEdgeFraction = 0.2;
+const maximumDarkCornerFraction = 0.1;
+const cornerSampleFraction = 0.2;
 const coarseAngleStep = 0.1;
 const fineAngleStep = 0.02;
 
@@ -359,15 +361,18 @@ const detectPageCrop = ({ data, height, width }) => {
   };
 };
 
-const darkFractionAtEdge = (image, crop, edge, threshold) => {
+const darkFractionsAtEdge = (image, crop, edge, threshold) => {
   const horizontal = edge === 'top' || edge === 'bottom';
   const length = horizontal ? crop.width : crop.height;
   const inset = Math.round(length * 0.08);
   const from = inset;
   const to = Math.max(from + 1, length - inset);
-  let dark = 0;
-  let sampled = 0;
-  for (let offset = from; offset < to; offset += 1) {
+  const cornerLength = Math.max(1, Math.round(length * cornerSampleFraction));
+  let middleDark = 0;
+  let middleSampled = 0;
+  let firstCornerDark = 0;
+  let lastCornerDark = 0;
+  for (let offset = 0; offset < length; offset += 1) {
     const x = horizontal
       ? crop.left + offset
       : edge === 'left'
@@ -385,11 +390,25 @@ const darkFractionAtEdge = (image, crop, edge, threshold) => {
       image.data[pixel + 2]
     );
     if (value < threshold) {
-      dark += 1;
+      if (offset >= from && offset < to) {
+        middleDark += 1;
+      }
+      if (offset < cornerLength) {
+        firstCornerDark += 1;
+      }
+      if (offset >= length - cornerLength) {
+        lastCornerDark += 1;
+      }
     }
-    sampled += 1;
+    if (offset >= from && offset < to) {
+      middleSampled += 1;
+    }
   }
-  return sampled === 0 ? 0 : dark / sampled;
+  return {
+    firstCorner: firstCornerDark / cornerLength,
+    lastCorner: lastCornerDark / cornerLength,
+    middle: middleSampled === 0 ? 0 : middleDark / middleSampled,
+  };
 };
 
 const refineDarkCropEdges = (image, initialCrop, paperColor) => {
@@ -397,25 +416,25 @@ const refineDarkCropEdges = (image, initialCrop, paperColor) => {
   const trim = { left: 0, right: 0, top: 0, bottom: 0 };
   const paper = luminance(paperColor.r, paperColor.g, paperColor.b);
   const threshold = Math.max(25, paper - 40);
-  for (const edge of ['left', 'right', 'top', 'bottom']) {
+  const edges = ['left', 'right', 'top', 'bottom'];
+  const marginAtEdge = edge => {
+    return edge === 'left'
+      ? crop.left
+      : edge === 'right'
+        ? image.width - crop.left - crop.width
+        : edge === 'top'
+          ? crop.top
+          : image.height - crop.top - crop.height;
+  };
+  const trimEdgeWhile = (edge, shouldTrim) => {
     const horizontal = edge === 'top' || edge === 'bottom';
     const dimension = horizontal ? image.height : image.width;
     const maximumMargin = Math.floor(dimension * maximumCropPerEdge);
-    const currentMargin =
-      edge === 'left'
-        ? crop.left
-        : edge === 'right'
-          ? image.width - crop.left - crop.width
-          : edge === 'top'
-            ? crop.top
-            : image.height - crop.top - crop.height;
-    const maximumTrim = Math.max(0, maximumMargin - currentMargin);
     while (
-      trim[edge] < maximumTrim &&
+      marginAtEdge(edge) < maximumMargin &&
       crop.width > 1 &&
       crop.height > 1 &&
-      darkFractionAtEdge(image, crop, edge, threshold) >
-        maximumDarkEdgeFraction
+      shouldTrim(darkFractionsAtEdge(image, crop, edge, threshold))
     ) {
       if (edge === 'left') {
         crop.left += 1;
@@ -430,6 +449,19 @@ const refineDarkCropEdges = (image, initialCrop, paperColor) => {
       }
       trim[edge] += 1;
     }
+  };
+  for (const edge of edges) {
+    trimEdgeWhile(edge, fractions => {
+      return fractions.middle > maximumDarkEdgeFraction;
+    });
+  }
+  for (const edge of edges) {
+    trimEdgeWhile(edge, fractions => {
+      return (
+        fractions.firstCorner > maximumDarkCornerFraction ||
+        fractions.lastCorner > maximumDarkCornerFraction
+      );
+    });
   }
   return {
     crop,

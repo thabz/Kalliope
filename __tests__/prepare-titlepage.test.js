@@ -209,4 +209,26 @@ describe('prepare Kalliope title page', () => {
 
     expect(result.trim.top).toBe(0);
   });
+
+  it('removes a dark edge remnant concentrated at a corner', () => {
+    const width = 100;
+    const height = 100;
+    const data = Buffer.alloc(width * height * 3, 220);
+    for (let y = 0; y < 30; y += 1) {
+      for (let x = width - 3; x < width; x += 1) {
+        const pixel = (y * width + x) * 3;
+        data[pixel] = 20;
+        data[pixel + 1] = 20;
+        data[pixel + 2] = 20;
+      }
+    }
+
+    const result = refineDarkCropEdges(
+      { channels: 3, data, height, width },
+      { left: 0, top: 0, width, height },
+      { r: 220, g: 220, b: 220 }
+    );
+
+    expect(result.trim).toEqual({ left: 0, right: 3, top: 0, bottom: 0 });
+  });
 });

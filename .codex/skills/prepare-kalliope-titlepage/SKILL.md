@@ -50,9 +50,10 @@ candidate hashes to the exact geometry. `qa` writes a final status of `pass`
 or `manual-review`; promotion is refused unless the status is `pass`.
 QA rejects a crop that removes more than 5% from any single edge of the
 rotated canvas. The report lists left, right, top and bottom separately.
-After finding the paper boundary, analysis measures continuous dark bands at
-full resolution and trims only until each band ends. Localized objects such as
-page clips do not count as a dark edge band.
+After finding the paper boundary, analysis measures continuous dark bands and
+corner-connected dark remnants at full resolution, trimming only until they
+end. Localized objects away from the corners, such as page clips, do not count
+as dark edge artifacts.
 
 ## Boundaries
 
