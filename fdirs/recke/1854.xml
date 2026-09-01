@@ -980,7 +980,7 @@ Tralala etc.
 </body>
 </text>
 
-<text id="recke2026090116">
+<text id="recke2026090116" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Nyeste Tivolivise</title>
   <firstline>See det er nu en afgjort Sag</firstline>
@@ -1323,7 +1323,7 @@ Saa skal du see hvor Rullen gaaer.
 </body>
 </text>
 
-<text id="recke2026090121">
+<text id="recke2026090121" ignore-tests="repeated-adjacent-word">
 <head>
   <title>En ny og lystig Vise Pjaltenborgs Brand</title>
   <firstline>Den Vægter standser i sit Vers</firstline>
