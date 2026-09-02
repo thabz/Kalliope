@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="buchholm" country="no" lang="da" type="poet">
+  <name>
+    <firstname>Magdalene Sophie</firstname>
+    <lastname>Buchholm</lastname>
+    <christened>Magdalene Sophie Bentzen</christened>
+  </name>
+  <period>
+    <born>
+      <date>1758-03-15</date>
+      <place>Skien</place>
+    </born>
+    <dead>
+      <date>1825-08-12</date>
+      <place>Kragerø</place>
+    </dead>
+  </period>
+  <works>1793</works>
+  <identifiers>
+    <wikidata>Q1652727</wikidata>
+  </identifiers>
+</person>
