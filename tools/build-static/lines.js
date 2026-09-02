@@ -6,7 +6,8 @@ import {
 } from '../libs/helpers.js';
 import { primaryTextVariantId } from './variants.js';
 import { poetName, workName } from './formatting.js';
-import { sourceFilesForText } from './anthologies.js';
+import { sourceFilesForText } from './work-cache.js';
+import { createProgressReporter } from './progress.js';
 
 function stripDiacriticsGreek(str) {
   return (
@@ -19,6 +20,24 @@ function stripDiacriticsGreek(str) {
       .normalize('NFC')
   );
 }
+
+const selectPoetLines = (poetTexts, poet, collected) =>
+  poetTexts
+    .filter(text => text.skipIndex !== true)
+    .map(text => {
+      const isPrimary = primaryTextVariantId(text.id, collected) === text.id;
+      return {
+        id: text.id,
+        work_id: text.workId,
+        lang: poet.lang,
+        title: text.indexTitle,
+        firstline: text.firstline,
+        index_title: isPrimary || text.forceTitleIndex === true,
+        index_firstline: isPrimary || text.forceFirstlineIndex === true,
+      };
+    })
+    .filter(pair => pair.index_title || pair.index_firstline);
+
 const build_global_lines_json = (collected) => {
   safeMkdir('public/api/alltexts');
   let changed_langs = {};
@@ -167,10 +186,9 @@ const build_global_lines_json = (collected) => {
 };
 
 const build_poet_lines_json = (collected) => {
+  const progress = createProgressReporter('Skrev texts.json-filer', 100);
   collected.poets.forEach((poet, poetId) => {
-    const poetTexts = Array.from(collected.texts.values()).filter(
-      text => text.poetId === poetId && text.indexable !== false
-    );
+    const poetTexts = collected.textsByPoet.get(poetId) || [];
     const filenames = Array.from(
       new Set(poetTexts.flatMap(sourceFilesForText))
     );
@@ -189,16 +207,7 @@ const build_poet_lines_json = (collected) => {
 
     safeMkdir(`public/api/${poetId}`);
 
-    let collectedLines = poetTexts
-      .filter(text => primaryTextVariantId(text.id, collected) === text.id)
-      .filter(text => !text.skipIndex)
-      .map(text => ({
-        id: text.id,
-        work_id: text.workId,
-        lang: poet.lang,
-        title: text.indexTitle,
-        firstline: text.firstline,
-      }));
+    let collectedLines = selectPoetLines(poetTexts, poet, collected);
     // Detect firstlines and titles that are shared between multiple
     // poems. Mark these with non_unique_firstline and non_unique_indextitle.
     let counts = {
@@ -224,12 +233,14 @@ const build_poet_lines_json = (collected) => {
       lines: collectedLines,
     };
     const linesOutFilename = `public/api/${poetId}/texts.json`;
-    console.log(linesOutFilename);
     writeJSON(linesOutFilename, data);
+    progress.increment();
   });
+  progress.finish();
 };
 
 export {
   build_global_lines_json,
   build_poet_lines_json,
+  selectPoetLines,
 };

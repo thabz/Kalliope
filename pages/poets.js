@@ -10,6 +10,7 @@ import CountryPicker from '../components/countrypicker.js';
 import { formatYearInterval, parseDate } from '../components/formatteddate.js';
 import * as Links from '../components/links.js';
 import Page from '../components/page.js';
+import PageLead from '../components/pagelead.js';
 import PoetName from '../components/poetname.js';
 import SectionedList from '../components/sectionedlist.js';
 import ErrorPage from './error.js';
@@ -32,6 +33,13 @@ const poetListItem = (poet) => {
             born: period.born == null ? null : { date: period.born.date },
             dead: period.dead == null ? null : { date: period.dead.date },
           },
+  };
+};
+
+const periodPoetListItem = (poet) => {
+  return {
+    ...poetListItem(poet),
+    literaryPeriods: poet.literary_periods,
   };
 };
 
@@ -76,6 +84,13 @@ const poetYearIntervalTitle = (year) => {
   return formatYearInterval(intervalStart, intervalEnd);
 };
 
+const countryAdjective = (country, lang) => {
+  const cn = CommonData.countries.filter((c) => {
+    return c.code === country;
+  })[0];
+  return cn.adjective[lang];
+};
+
 const groupsByYear = (poets, lang, country) => {
   let groups = new Map();
   poets
@@ -106,8 +121,26 @@ const groupsByYear = (poets, lang, country) => {
   return sortedGroups.sort(Sorting.poetYearSectionsByTitle);
 };
 
+const groupsByLiteraryPeriod = (periods, poets, lang, country) => {
+  return periods
+    .filter(
+      period => period.countries.includes(country)
+    )
+    .map((period) => {
+      const items = poets
+        .filter((poet) => poet.type === 'poet')
+        .filter((poet) => poet.literaryPeriods.includes(period.id))
+        .sort(Sorting.poetsByLastnameForCountry(country));
+      return {
+        title: period.title[lang] ?? period.title.da,
+        items,
+      };
+    })
+    .filter((period) => period.items.length > 0);
+};
+
 const Poets = (props) => {
-  const { country, poets, groupBy, error } = props;
+  const { country, poets, periods, groupBy, error } = props;
   const lang = useContext(LangContext);
 
   if (error) {
@@ -126,11 +159,18 @@ const Poets = (props) => {
       title: _('Efter år', lang),
       url: Links.poetsURL(lang, 'year', country),
     },
+    {
+      id: 'period',
+      title: _('Efter litterær periode', lang),
+      url: Links.poetsURL(lang, 'period', country),
+    },
   ];
   const groups =
     groupBy === 'name'
       ? groupsByLetter(poets, lang, country)
-      : groupsByYear(poets, lang, country);
+      : groupBy === 'year'
+        ? groupsByYear(poets, lang, country)
+        : groupsByLiteraryPeriod(periods, poets, lang, country);
 
   let sections = [];
 
@@ -162,6 +202,42 @@ const Poets = (props) => {
   const countryCodeToURL = (code) => {
     return Links.poetsURL(lang, groupBy, code);
   };
+  const adjective = countryAdjective(country, lang);
+  const nonDanishNote =
+    country === 'dk'
+      ? null
+      : _(
+          '{Adjective} digtere er kun medtaget i begrænset omfang for at belyse den danske digtning.',
+          lang,
+          { adjective, Adjective: Strings.toTitleCase(adjective) }
+        );
+  const lead =
+    groupBy === 'name' ? (
+      <PageLead>
+        {_(
+          'En alfabetisk oversigt over de {adjective} digtere på Kalliope. Vælg et navn for at se digterens værker, tekster og biografiske oplysninger.',
+          lang,
+          { adjective }
+        )}{' '}
+        {nonDanishNote}
+      </PageLead>
+    ) : groupBy === 'year' ? (
+      <PageLead>
+        {_(
+          'De {adjective} digtere på Kalliope ordnet efter fødselsår. Oversigten giver et kronologisk indblik i samlingens forfattere.',
+          lang,
+          { adjective }
+        )}{' '}
+        {nonDanishNote}
+      </PageLead>
+    ) : (
+      <PageLead>
+        {_('De {adjective} digtere på Kalliope grupperet efter litterær periode.', lang, {
+          adjective,
+        })}{' '}
+        {nonDanishNote}
+      </PageLead>
+    );
   return (
     <Page
       headTitle={_('Digtere', lang) + ' - Kalliope'}
@@ -171,26 +247,50 @@ const Poets = (props) => {
       selectedMenuItem={groupBy}
       country={country}
       pageTitle={pageTitle}>
+      {lead}
       <CountryPicker
         style={{ marginBottom: '60px' }}
         lang={lang}
         countryToURL={countryCodeToURL}
         selectedCountry={country}
       />
-      {renderedGroups}
+      <div className="poets-overview">
+        {renderedGroups}
+      </div>
+      <style jsx>{`
+        :global(.poets-overview a) {
+          text-decoration: none;
+        }
+      `}</style>
     </Page>
   );
 };
 
 Poets.getInitialProps = async ({ query: { lang, country, groupBy } }) => {
-  const json = await Client.poets(country);
+  const [poetsJson, periodsJson] =
+    groupBy === 'period'
+      ? await Promise.all([Client.poets(country), Client.literaryPeriods()])
+      : [await Client.poets(country), null];
   return {
     lang,
     country,
     groupBy,
-    poets: json.poets == null ? null : json.poets.map(poetListItem),
-    error: json.error,
+    poets:
+      poetsJson.poets == null
+        ? null
+        : poetsJson.poets.map(
+            groupBy === 'period' ? periodPoetListItem : poetListItem
+          ),
+    periods:
+      periodsJson == null
+        ? null
+        : periodsJson.periods.filter(period =>
+            period.countries.includes(country)
+          ),
+    error: poetsJson.error ?? periodsJson?.error,
   };
 };
+
+export { groupsByLiteraryPeriod };
 
 export default Poets;

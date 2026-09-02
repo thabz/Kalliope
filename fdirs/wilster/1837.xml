@@ -1,29 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="1837" author="wilster" status="complete" type="poetry">
 <workhead>
-   <title>Homers Odyssee</title>
-   <year>1837</year>
-   <notes>
-       <note>Teksten følger Christian Wilster: <i>Homers Odyssee</i>, C.A. Reitzel, Kbh., 1837.</note>
-   </notes>
-   <pictures>
-       <picture type="titlepage" src="1837-p1.jpg">Titelbladet til første del af <i>Homers Odyssee</i> (1837) lyder ,,Homers Odyssee / oversat / af / Christian Wilster // Første Deel. // Kjøbenhavn 1837 / Forlagt af Universitetsboghandler C. A. Reitzel. // Trykt i det Poppske Offcin.</picture>
-       <picture type="titlepage" src="1837-p2.jpg">Titelbladet til anden del af <i>Homers Odyssee</i> (1837) som forventet ,,Homers Odyssee / oversat / af / Christian Wilster // Anden Deel. // Kjøbenhavn 1837 / Forlagt af Universitetsboghandler C. A. Reitzel. // Trykt i det Poppske Offcin.</picture>
-   </pictures>
-   <source id="bd1" facsimile="130019094112_color" facsimile-pages-num="368" facsimile-pages-offset="16">Christian Wilster: <i>Homers Odyssee</i>, C.A. Reitzel, Kbh., 1837, bd. 1.</source>
-   <source id="bd2" facsimile="130019094112_color" facsimile-pages-num="368" facsimile-pages-offset="196">Christian Wilster: <i>Homers Odyssee</i>, C.A. Reitzel, Kbh., 1837, bd. 2.</source>
+  <title>Homers Odyssee</title>
+  <year>1837</year>
+  <pictures>
+    <picture type="titlepage" src="1837-p1.jpg">Titelbladet til første del af <i>Homers Odyssee</i> (1837) lyder ,,Homers Odyssee / oversat / af / Christian Wilster // Første Deel. // Kjøbenhavn 1837 / Forlagt af Universitetsboghandler C. A. Reitzel. // Trykt i det Poppske Offcin.</picture>
+    <picture type="titlepage" src="1837-p2.jpg">Titelbladet til anden del af <i>Homers Odyssee</i> (1837) som forventet ,,Homers Odyssee / oversat / af / Christian Wilster // Anden Deel. // Kjøbenhavn 1837 / Forlagt af Universitetsboghandler C. A. Reitzel. // Trykt i det Poppske Offcin.</picture>
+  </pictures>
+  <source id="bd1" facsimile="130019094112_color" facsimile-pages-num="368" facsimile-pages-offset="16">Christian Wilster: <i>Homers Odyssee</i>, C.A. Reitzel, Kbh., 1837, bd. 1.</source>
+  <source id="bd2" facsimile="130019094112_color" facsimile-pages-num="368" facsimile-pages-offset="196">Christian Wilster: <i>Homers Odyssee</i>, C.A. Reitzel, Kbh., 1837, bd. 2.</source>
 </workhead>
 <workbody>
 
 <text id="wilster2005050901">
 <head>
-   <title>Første Sang</title>
-   <subtitle>Gudernes Forsamling. Athenes Formaning til Telemachos.</subtitle>
-   <toctitle><num>1. Sang.</num>Gudernes Forsamling. Athenes Formaning til Telemachos.</toctitle>
-   <indextitle>Musa! fortæl mig om Manden, den vidtbefarne, som flakked</indextitle>
-   <firstline>Musa! fortæl mig om Manden, den vidtbefarne, som flakked</firstline>
-   <source pages="3-15" in="bd1"/>
-   <quality>korrektur1</quality>
+  <title>Første Sang</title>
+  <subtitle>Gudernes Forsamling. Athenes Formaning til Telemachos.</subtitle>
+  <toctitle><num>1. Sang.</num>Gudernes Forsamling. Athenes Formaning til Telemachos.</toctitle>
+  <indextitle>Musa! fortæl mig om Manden, den vidtbefarne, som flakked</indextitle>
+  <firstline>Musa! fortæl mig om Manden, den vidtbefarne, som flakked</firstline>
+  <source pages="3-15" in="bd1"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -477,13 +474,14 @@ Tænkende stærkt paa den Fart, hvortil ham Athene formaned.
 
 <text id="wilster2005050902">
 <head>
-   <title>Anden Sang</title>
-   <subtitle>Ithakesernes Forsamling. Telemachos' Bortreise.</subtitle>
-   <toctitle><num>2. Sang.</num>Ithakesernes Forsamling. Telemachos' Bortreise. </toctitle>
-   <indextitle>Men da sig reiste ved Grye den rosenfingrede Dagning</indextitle>
-   <firstline>Men da sig reiste ved Grye den rosenfingrede Dagning</firstline>
-   <source pages="16-27" in="bd1"/>
-   <quality>korrektur1</quality>
+  <title>Anden Sang</title>
+  <subtitle>Ithakesernes Forsamling. Telemachos' Bortreise.</subtitle>
+  <toctitle><num>2. Sang.</num>Ithakesernes Forsamling. Telemachos' Bortreise. </toctitle>
+  <indextitle>Men da sig reiste ved Grye den rosenfingrede Dagning</indextitle>
+  <firstline>Men da sig reiste ved Grye den rosenfingrede Dagning</firstline>
+  <!-- Ikke en variant af wilster2005051002: Homerisk formel gentaget i forskellige sange. -->
+  <source pages="16-27" in="bd1"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -927,13 +925,13 @@ Skibet ad Bølgerne løb baade Nat og dæmrende Morgen.
 
 <text id="wilster2005050903">
 <head>
-   <title>Tredie Sang</title>
-   <subtitle>Besøget i Pylos.</subtitle>
-   <toctitle><num>3. Sang.</num>Besøget i Pylos.</toctitle>
-   <indextitle>Frem af den deilige Søe i en Fart Solguden sig hæved</indextitle>
-   <firstline>Frem af den deilige Søe i en Fart Solguden sig hæved</firstline>
-   <source pages="28-41" in="bd1"/>
-   <quality>korrektur1</quality>
+  <title>Tredie Sang</title>
+  <subtitle>Besøget i Pylos.</subtitle>
+  <toctitle><num>3. Sang.</num>Besøget i Pylos.</toctitle>
+  <indextitle>Frem af den deilige Søe i en Fart Solguden sig hæved</indextitle>
+  <firstline>Frem af den deilige Søe i en Fart Solguden sig hæved</firstline>
+  <source pages="28-41" in="bd1"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1440,13 +1438,13 @@ Just som Solen sig bjerged, og Skumring paa Veiene bredtes.
 
 <text id="wilster2005050904">
 <head>
-   <title>Fjerde Sang</title>
-   <subtitle>Besøget i Lakedaimon.</subtitle>
-   <toctitle><num>4. Sang.</num>Besøget i Lakedaimon.</toctitle>
-   <indextitle>Til Lakedaimon de kom, som ligger i Dal mellem Fjelde</indextitle>
-   <firstline>Til Lakedaimon de kom, som ligger i Dal mellem Fjelde</firstline>
-   <source pages="42-64" in="bd1"/>
-   <quality>korrektur1</quality>
+  <title>Fjerde Sang</title>
+  <subtitle>Besøget i Lakedaimon.</subtitle>
+  <toctitle><num>4. Sang.</num>Besøget i Lakedaimon.</toctitle>
+  <indextitle>Til Lakedaimon de kom, som ligger i Dal mellem Fjelde</indextitle>
+  <firstline>Til Lakedaimon de kom, som ligger i Dal mellem Fjelde</firstline>
+  <source pages="42-64" in="bd1"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -2303,13 +2301,14 @@ Danner en Havn; i denne paa Luur sig Achaierne lagde.
 
 <text id="wilster2005050905">
 <head>
-   <title>Femte Sang</title>
-   <subtitle>Odysses's Fartøi.</subtitle>
-   <toctitle><num>5. Sang.</num>Odysses's Fartøi.</toctitle>
-   <indextitle>Dagningen steg af Seng fra den vidtberømte Tithonos</indextitle>
-   <firstline>Dagningen steg af Seng fra den vidtberømte Tithonos</firstline>
-   <source pages="65-78" in="bd1"/>
-   <quality>korrektur1</quality>
+  <title>Femte Sang</title>
+  <subtitle>Odysses's Fartøi.</subtitle>
+  <toctitle><num>5. Sang.</num>Odysses's Fartøi.</toctitle>
+  <indextitle>Dagningen steg af Seng fra den vidtberømte Tithonos</indextitle>
+  <firstline>Dagningen steg af Seng fra den vidtberømte Tithonos</firstline>
+  <!-- Ikke en variant af wilster2005050811: Homerisk formel gentaget i forskellige sange. -->
+  <source pages="65-78" in="bd1"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -2812,13 +2811,16 @@ Efter det piinlige Slid, naar Øinenes Laag den ham lukked.
 
 <text id="wilster2005050906">
 <head>
-   <title>Sjette Sang</title>
-   <subtitle>Odysses's Ankomst til Phaiakerne.</subtitle>
-   <toctitle><num>6. Sang.</num>Odysses's Ankomst til Phaiakerne.</toctitle>
-   <indextitle>Saaledes der han sov, den hærdede Konning Odysseus</indextitle>
-   <firstline>Saaledes der han sov, den hærdede Konning Odysseus</firstline>
-   <source pages="79-88" in="bd1"/>
-   <quality>korrektur1</quality>
+  <title>Sjette Sang</title>
+  <subtitle>Odysses's Ankomst til Phaiakerne.</subtitle>
+  <toctitle><num>6. Sang.</num>Odysses's Ankomst til Phaiakerne.</toctitle>
+  <indextitle>Saaledes der han sov, den hærdede Konning Odysseus</indextitle>
+  <firstline>Saaledes der han sov, den hærdede Konning Odysseus</firstline>
+  <source pages="79-88" in="bd1"/>
+  <pictures>
+    <picture artwork="marstrand/nausikaa-og-odysseus-1835" />
+  </pictures>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -3159,13 +3161,13 @@ Helten Odysses forfulgte, før hjem til sit Land han var kommen.
 
 <text id="wilster2005051001">
 <head>
-   <title>Syvende Sang</title>
-   <subtitle>Odysses's Indtrædelse til Alkinoos.</subtitle>
-   <toctitle><num>7. Sang.</num>Odysses's Indtrædelse til Alkinoos.</toctitle>
-   <indextitle>Saaledes bad Odysseus, den kjæktudholdende Konning</indextitle>
-   <firstline>Saaledes bad Odysseus, den kjæktudholdende Konning</firstline>
-   <source pages="89-98" in="bd1"/>
-   <quality>korrektur1</quality>
+  <title>Syvende Sang</title>
+  <subtitle>Odysses's Indtrædelse til Alkinoos.</subtitle>
+  <toctitle><num>7. Sang.</num>Odysses's Indtrædelse til Alkinoos.</toctitle>
+  <indextitle>Saaledes bad Odysseus, den kjæktudholdende Konning</indextitle>
+  <firstline>Saaledes bad Odysseus, den kjæktudholdende Konning</firstline>
+  <source pages="89-98" in="bd1"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -3522,13 +3524,14 @@ Og ved hans Side hans Dronning bepryded det natlige Leie.
 
 <text id="wilster2005051002">
 <head>
-   <title>Ottende Sang</title>
-   <subtitle>Odysseus fremstilles for Phaiakerne.</subtitle>
-   <toctitle><num>8. Sang.</num>Odysseus fremstilles for Phaiakerne.</toctitle>
-   <indextitle>Men da sig reiste ved Grye den rosenfingrede Dagning</indextitle>
-   <firstline>Men da sig reiste ved Grye den rosenfingrede Dagning</firstline>
-   <source pages="99-114" in="bd1"/>
-   <quality>korrektur1</quality>
+  <title>Ottende Sang</title>
+  <subtitle>Odysseus fremstilles for Phaiakerne.</subtitle>
+  <toctitle><num>8. Sang.</num>Odysseus fremstilles for Phaiakerne.</toctitle>
+  <indextitle>Men da sig reiste ved Grye den rosenfingrede Dagning</indextitle>
+  <firstline>Men da sig reiste ved Grye den rosenfingrede Dagning</firstline>
+  <!-- Ikke en variant af wilster2005050902: Homerisk formel gentaget i forskellige sange. -->
+  <source pages="99-114" in="bd1"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -4125,13 +4128,13 @@ Sandelig ei tilbage han staaer for en kjødelig Broder.
 
 <text id="wilster2005051003">
 <head>
-   <title>Niende Sang</title>
-   <subtitle>Kikonerne. Lotophagerne. Æventyret hos Kyklopen.</subtitle>
-   <toctitle><num>9. Sang.</num>Kikonerne. Lotophagerne. Æventyret hos Kyklopen.</toctitle>
-   <indextitle>Ham gjensvared Odysseus, den sindrige Konning, og sagde</indextitle>
-   <firstline>Ham gjensvared Odysseus, den sindrige Konning, og sagde</firstline>
-   <source pages="115-130" in="bd1"/>
-   <quality>korrektur1</quality>
+  <title>Niende Sang</title>
+  <subtitle>Kikonerne. Lotophagerne. Æventyret hos Kyklopen.</subtitle>
+  <toctitle><num>9. Sang.</num>Kikonerne. Lotophagerne. Æventyret hos Kyklopen.</toctitle>
+  <indextitle>Ham gjensvared Odysseus, den sindrige Konning, og sagde</indextitle>
+  <firstline>Ham gjensvared Odysseus, den sindrige Konning, og sagde</firstline>
+  <source pages="115-130" in="bd1"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -4706,13 +4709,17 @@ For vore Venner vi misted, dog froe at Døden vi undslap.
 
 <text id="wilster2005051004">
 <head>
-   <title>Tiende Sang</title>
-   <subtitle>Aiolos. Laistrygonerne. Kirke.</subtitle>
-   <toctitle><num>10. Sang.</num>Aiolos. Laistrygonerne. Kirke.</toctitle>
-   <indextitle>Til den Aioliske Øe vi kom nu; denne beboede</indextitle>
-   <firstline>Til den Aioliske Øe vi kom nu; denne beboede</firstline>
-   <source pages="131-146" in="bd1"/>
-   <quality>korrektur1</quality>
+  <title>Tiende Sang</title>
+  <subtitle>Aiolos. Laistrygonerne. Kirke.</subtitle>
+  <toctitle><num>10. Sang.</num>Aiolos. Laistrygonerne. Kirke.</toctitle>
+  <indextitle>Til den Aioliske Øe vi kom nu; denne beboede</indextitle>
+  <firstline>Til den Aioliske Øe vi kom nu; denne beboede</firstline>
+  <pictures>
+    <picture artwork="lauri/kirke-og-odysseus"/>
+    <picture artwork="lauri/odysseus-og-kirke"/>
+  </pictures>
+  <source pages="131-146" in="bd1"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -5296,13 +5303,16 @@ Hvo kan da see ham med Øie, han vandre saa bort eller mod os?
 
 <text id="wilster2005051005">
 <head>
-   <title>Ellevte Sang</title>
-   <subtitle>Sandsagn i de Dødes Rige.</subtitle>
-   <toctitle><num>11. Sang.</num>Sandsagn i de Dødes Rige.</toctitle>
-   <indextitle>Men da til Havet vi ned vare komne, hvor Skibet var qværsat</indextitle>
-   <firstline>Men da til Havet vi ned vare komne, hvor Skibet var qværsat</firstline>
-   <source pages="147-164" in="bd1"/>
-   <quality>korrektur1</quality>
+  <title>Ellevte Sang</title>
+  <subtitle>Sandsagn i de Dødes Rige.</subtitle>
+  <toctitle><num>11. Sang.</num>Sandsagn i de Dødes Rige.</toctitle>
+  <indextitle>Men da til Havet vi ned vare komne, hvor Skibet var qværsat</indextitle>
+  <firstline>Men da til Havet vi ned vare komne, hvor Skibet var qværsat</firstline>
+  <pictures>
+    <picture artwork="abildgaard/1809-odysseus-teiresias"/>
+  </pictures>
+  <source pages="147-164" in="bd1"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -5952,13 +5962,16 @@ Først for Aarer det gik, snart lufted en føielig Medbør.
 
 <text id="wilster2005051006">
 <head>
-   <title>Tolvte Sang</title>
-   <subtitle>Seirenerne. Skylla. Charybdis. Solgudens Oxer.</subtitle>
-   <toctitle><num>12. Sang.</num>Seirenerne. Skylla. Charybdis. Solgudens Oxer.</toctitle>
-   <indextitle>Men da vort Skib var ud af Okeanos' skyllende Strømme</indextitle>
-   <firstline>Men da vort Skib var ud af Okeanos' skyllende Strømme</firstline>
-   <source pages="165-177" in="bd1"/>
-   <quality>korrektur1</quality>
+  <title>Tolvte Sang</title>
+  <subtitle>Seirenerne. Skylla. Charybdis. Solgudens Oxer.</subtitle>
+  <toctitle><num>12. Sang.</num>Seirenerne. Skylla. Charybdis. Solgudens Oxer.</toctitle>
+  <indextitle>Men da vort Skib var ud af Okeanos' skyllende Strømme</indextitle>
+  <firstline>Men da vort Skib var ud af Okeanos' skyllende Strømme</firstline>
+  <pictures>
+    <picture artwork="skovgaardn/1887-odysseus-sirenerne"/>
+  </pictures>
+  <source pages="165-177" in="bd1"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -6421,13 +6434,13 @@ Atter paany at fortælle hvad alt man klart har berettet.
 
 <text id="wilster2005051007">
 <head>
-   <title>Trettende Sang</title>
-   <subtitle>Odysses's Ankomst til Ithaka.</subtitle>
-   <toctitle><num>13. Sang.</num>Odysses's Ankomst til Ithaka. </toctitle>
-   <indextitle>Saa han taled, da taug de qvær, og forstummed tilhobe</indextitle>
-   <firstline>Saa han taled, da taug de qvær, og forstummed tilhobe</firstline>
-   <source pages="5-16" in="bd2"/>
-   <quality>korrektur1</quality>
+  <title>Trettende Sang</title>
+  <subtitle>Odysses's Ankomst til Ithaka.</subtitle>
+  <toctitle><num>13. Sang.</num>Odysses's Ankomst til Ithaka. </toctitle>
+  <indextitle>Saa han taled, da taug de qvær, og forstummed tilhobe</indextitle>
+  <firstline>Saa han taled, da taug de qvær, og forstummed tilhobe</firstline>
+  <source pages="5-16" in="bd2"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -6875,13 +6888,13 @@ Efter Telemachos gik til det hellige Land Lakedaimon.
 
 <text id="wilster2005051008">
 <head>
-   <title>Fjortende Sang</title>
-   <subtitle>Odysses's Sammenkomst med Eumaios.</subtitle>
-   <toctitle><num>14. Sang.</num>Odysses's Sammenkomst med Eumaios.</toctitle>
-   <indextitle>Men ad den knudrede Stie gik strax Odysses fra Havnen</indextitle>
-   <firstline>Men ad den knudrede Stie gik strax Odysses fra Havnen</firstline>
-   <source pages="17-31" in="bd2"/>
-   <quality>korrektur1</quality>
+  <title>Fjortende Sang</title>
+  <subtitle>Odysses's Sammenkomst med Eumaios.</subtitle>
+  <toctitle><num>14. Sang.</num>Odysses's Sammenkomst med Eumaios.</toctitle>
+  <indextitle>Men ad den knudrede Stie gik strax Odysses fra Havnen</indextitle>
+  <firstline>Men ad den knudrede Stie gik strax Odysses fra Havnen</firstline>
+  <source pages="17-31" in="bd2"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -7424,13 +7437,13 @@ Sov under Klippernes Huler i Læe for den bidende Nordvind.
 
 <text id="wilster2005051009">
 <head>
-   <title>Femtende Sang</title>
-   <subtitle>Telemachs Ankomst til Eumaios.</subtitle>
-   <toctitle><num>15. Sang.</num>Telemachs Ankomst til Eumaios.</toctitle>
-   <indextitle>Men til den mægtige Stad Lakedaimon var Pallas Athene</indextitle>
-   <firstline>Men til den mægtige Stad Lakedaimon var Pallas Athene</firstline>
-   <source pages="32-47" in="bd2"/>
-   <quality>korrektur1</quality>
+  <title>Femtende Sang</title>
+  <subtitle>Telemachs Ankomst til Eumaios.</subtitle>
+  <toctitle><num>15. Sang.</num>Telemachs Ankomst til Eumaios.</toctitle>
+  <indextitle>Men til den mægtige Stad Lakedaimon var Pallas Athene</indextitle>
+  <firstline>Men til den mægtige Stad Lakedaimon var Pallas Athene</firstline>
+  <source pages="32-47" in="bd2"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -7996,13 +8009,13 @@ Vogted, den ærlige Mand med det kjærligste Sind mod sit Herskab.
 
 <text id="wilster2005051010">
 <head>
-   <title>Sextende Sang</title>
-   <subtitle>Telemachos gjenkender sin Fader.</subtitle>
-   <toctitle><num>16. Sang.</num>Telemachos gjenkender sin Fader. </toctitle>
-   <indextitle>Konning Odysseus i Hytten imens med den ærlige Hyrde</indextitle>
-   <firstline>Konning Odysseus i Hytten imens med den ærlige Hyrde</firstline>
-   <source pages="48-64" in="bd2"/>
-   <quality>korrektur1</quality>
+  <title>Sextende Sang</title>
+  <subtitle>Telemachos gjenkender sin Fader.</subtitle>
+  <toctitle><num>16. Sang.</num>Telemachos gjenkender sin Fader. </toctitle>
+  <indextitle>Konning Odysseus i Hytten imens med den ærlige Hyrde</indextitle>
+  <firstline>Konning Odysseus i Hytten imens med den ærlige Hyrde</firstline>
+  <source pages="48-64" in="bd2"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -8493,13 +8506,13 @@ Lagde til Roe de sig ned, og nød den styrkende Slummer.
 
 <text id="wilster2005051011">
 <head>
-   <title>Syttende Sang</title>
-   <subtitle>Telemachos drager til Ithaka Bye.</subtitle>
-   <toctitle><num>17. Sang.</num>Telemachos drager til Ithaka Bye.</toctitle>
-   <indextitle>Men da sig viste ved Grye den rosenfingrede Dagning</indextitle>
-   <firstline>Men da sig viste ved Grye den rosenfingrede Dagning</firstline>
-   <source pages="62-78" in="bd2"/>
-   <quality>korrektur1</quality>
+  <title>Syttende Sang</title>
+  <subtitle>Telemachos drager til Ithaka Bye.</subtitle>
+  <toctitle><num>17. Sang.</num>Telemachos drager til Ithaka Bye.</toctitle>
+  <indextitle>Men da sig viste ved Grye den rosenfingrede Dagning</indextitle>
+  <firstline>Men da sig viste ved Grye den rosenfingrede Dagning</firstline>
+  <source pages="62-78" in="bd2"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -9115,13 +9128,13 @@ Baade med Sang og Dands, thi alt det ad Skumringen lakked.
 
 <text id="wilster2005051012">
 <head>
-   <title>Attende Sang</title>
-   <subtitle>Odysseus brydes med Iros.</subtitle>
-   <toctitle><num>18. Sang.</num>Odysseus brydes med Iros.</toctitle>
-   <indextitle>Hid en Tigger nu kom, der paa Ithaka betled hos Hvermand</indextitle>
-   <firstline>Hid en Tigger nu kom, der paa Ithaka betled hos Hvermand</firstline>
-   <source pages="79-90" in="bd2"/>
-   <quality>korrektur1</quality>
+  <title>Attende Sang</title>
+  <subtitle>Odysseus brydes med Iros.</subtitle>
+  <toctitle><num>18. Sang.</num>Odysseus brydes med Iros.</toctitle>
+  <indextitle>Hid en Tigger nu kom, der paa Ithaka betled hos Hvermand</indextitle>
+  <firstline>Hid en Tigger nu kom, der paa Ithaka betled hos Hvermand</firstline>
+  <source pages="79-90" in="bd2"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -9559,16 +9572,16 @@ Gik Enhver til sit Hjem, og lagde sig der til at sove.
 
 <text id="wilster2005051013">
 <head>
-   <title>Nittende Sang</title>
-   <subtitle>Odysses's Sammenkomst med Penelopeia. Eurykleia gjenkender sin Herre. </subtitle>
-   <toctitle><num>19. Sang.</num>Odysses's Sammenkomst med Penelopeia. Eurykleia gjenkender sin Herre. </toctitle>
-   <indextitle>Men i den prunkende Sal blev Helten Odysses tilbage</indextitle>
-   <firstline>Men i den prunkende Sal blev Helten Odysses tilbage</firstline>
-   <source pages="91-107" in="bd2"/>
-   <pictures>
-       <picture artwork="eckersberg/1812-odysseus-hjemkomst" />
-   </pictures>
-   <quality>korrektur1</quality>
+  <title>Nittende Sang</title>
+  <subtitle>Odysses's Sammenkomst med Penelopeia. Eurykleia gjenkender sin Herre. </subtitle>
+  <toctitle><num>19. Sang.</num>Odysses's Sammenkomst med Penelopeia. Eurykleia gjenkender sin Herre. </toctitle>
+  <indextitle>Men i den prunkende Sal blev Helten Odysses tilbage</indextitle>
+  <firstline>Men i den prunkende Sal blev Helten Odysses tilbage</firstline>
+  <source pages="91-107" in="bd2"/>
+  <pictures>
+    <picture artwork="eckersberg/1812-odysseus-hjemkomst" />
+  </pictures>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -10182,13 +10195,13 @@ Lod over Øinenes Laag neddale den liflige Slummer.
 
 <text id="wilster2005051014">
 <head>
-   <title>Tyvende Sang</title>
-   <subtitle>Tildragelserne før Beilernes Drab.</subtitle>
-   <toctitle><num>20. Sang.</num>Tildragelserne før Beilernes Drab.</toctitle>
-   <indextitle>Udenfor Salen paa Gangen sig leirede Konning Odysseus</indextitle>
-   <firstline>Udenfor Salen paa Gangen sig leirede Konning Odysseus</firstline>
-   <source pages="108-118" in="bd2"/>
-   <quality>korrektur1</quality>
+  <title>Tyvende Sang</title>
+  <subtitle>Tildragelserne før Beilernes Drab.</subtitle>
+  <toctitle><num>20. Sang.</num>Tildragelserne før Beilernes Drab.</toctitle>
+  <indextitle>Udenfor Salen paa Gangen sig leirede Konning Odysseus</indextitle>
+  <firstline>Udenfor Salen paa Gangen sig leirede Konning Odysseus</firstline>
+  <source pages="108-118" in="bd2"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -10592,13 +10605,13 @@ Skulde dem laves, da selv de først havde Skjændsel bedrevet.
 
 <text id="wilster2005051015">
 <head>
-   <title>Een og tyvende Sang</title>
-   <subtitle>Bueskydningen. </subtitle>
-   <toctitle><num>21. Sang.</num>Bueskydningen. </toctitle>
-   <indextitle>Drotten Ikarios' Datter, den kløgtige Penelopeia</indextitle>
-   <firstline>Drotten Ikarios' Datter, den kløgtige Penelopeia</firstline>
-   <source pages="119-130" in="bd2"/>
-   <quality>korrektur1</quality>
+  <title>Een og tyvende Sang</title>
+  <subtitle>Bueskydningen. </subtitle>
+  <toctitle><num>21. Sang.</num>Bueskydningen. </toctitle>
+  <indextitle>Drotten Ikarios' Datter, den kløgtige Penelopeia</indextitle>
+  <firstline>Drotten Ikarios' Datter, den kløgtige Penelopeia</firstline>
+  <source pages="119-130" in="bd2"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -11042,13 +11055,13 @@ Hen til Faderens Stol, bevæbnet med funklende Kobber.
 
 <text id="wilster2005051016">
 <head>
-   <title>To og tyvende Sang</title>
-   <subtitle>Beilernes Drab. </subtitle>
-   <toctitle><num>22. Sang.</num>Beilernes Drab. </toctitle>
-   <indextitle>Drotten Odysses, den snilde, rev nu sine Pjalter af Kroppen</indextitle>
-   <firstline>Drotten Odysses, den snilde, rev nu sine Pjalter af Kroppen</firstline>
-   <source pages="131-144" in="bd2"/>
-   <quality>korrektur1</quality>
+  <title>To og tyvende Sang</title>
+  <subtitle>Beilernes Drab. </subtitle>
+  <toctitle><num>22. Sang.</num>Beilernes Drab. </toctitle>
+  <indextitle>Drotten Odysses, den snilde, rev nu sine Pjalter af Kroppen</indextitle>
+  <firstline>Drotten Odysses, den snilde, rev nu sine Pjalter af Kroppen</firstline>
+  <source pages="131-144" in="bd2"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -11559,13 +11572,13 @@ Græd og hulked han lydt, og igjen han kjendte dem Alle.
 
 <text id="wilster2005051017">
 <head>
-   <title>Tre og tyvende Sang</title>
-   <subtitle>Penelopeia gjenkender Odysseus.</subtitle>
-   <toctitle><num>23. Sang.</num>Penelopeia gjenkender Odysseus.</toctitle>
-   <indextitle>Jublende gik Eurykleia nu op til Kamret i Høiloft</indextitle>
-   <firstline>Jublende gik Eurykleia nu op til Kamret i Høiloft</firstline>
-   <source pages="145-155" in="bd2"/>
-   <quality>korrektur1</quality>
+  <title>Tre og tyvende Sang</title>
+  <subtitle>Penelopeia gjenkender Odysseus.</subtitle>
+  <toctitle><num>23. Sang.</num>Penelopeia gjenkender Odysseus.</toctitle>
+  <indextitle>Jublende gik Eurykleia nu op til Kamret i Høiloft</indextitle>
+  <firstline>Jublende gik Eurykleia nu op til Kamret i Høiloft</firstline>
+  <source pages="145-155" in="bd2"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -11947,13 +11960,13 @@ Trindt i Mulm, og hurtig hun ud af Byen dem førte.
 
 <text id="wilster2005051018">
 <head>
-   <title>Fire og tyvende Sang</title>
-   <subtitle>Forliget.</subtitle>
-   <toctitle><num>24. Sang.</num>Forliget.</toctitle>
-   <indextitle>Men den Kylleniske Hermes fremkaldte nu alle de dræbte</indextitle>
-   <firstline>Men den Kylleniske Hermes fremkaldte nu alle de dræbte</firstline>
-   <source pages="156-170" in="bd2"/>
-   <quality>korrektur1</quality>
+  <title>Fire og tyvende Sang</title>
+  <subtitle>Forliget.</subtitle>
+  <toctitle><num>24. Sang.</num>Forliget.</toctitle>
+  <indextitle>Men den Kylleniske Hermes fremkaldte nu alle de dræbte</indextitle>
+  <firstline>Men den Kylleniske Hermes fremkaldte nu alle de dræbte</firstline>
+  <source pages="156-170" in="bd2"/>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>

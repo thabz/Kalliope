@@ -107,11 +107,32 @@ describe('Elasticsearch client', () => {
     await elasticSearchClient.search('kalliope', 'text', 'dk', '', 'aarestrup');
 
     const body = JSON.parse(global.fetch.mock.calls[0][1].body);
-    const resultTypeQuery = body.query.bool.must[0].bool;
+    const searchQuery = body.query.bool.must[0].bool;
+    const resultTypeQuery = searchQuery.should[1].bool;
     const workQuery = resultTypeQuery.should[1].bool.must[0].bool;
     const textQuery = resultTypeQuery.should[2].bool.must[0].bool;
 
     expect(body.query.bool.filter).toEqual([]);
+    expect(searchQuery.minimum_should_match).toBe(1);
+    expect(searchQuery.should[0]).toEqual({
+      bool: {
+        should: [
+          {
+            bool: {
+              filter: [{ term: { result_type: 'poet' } }],
+              must: [{ term: { 'poet.id': 'aarestrup' } }],
+            },
+          },
+          {
+            bool: {
+              filter: [{ term: { result_type: 'text' } }],
+              must: [{ term: { 'text.id': 'aarestrup' } }],
+            },
+          },
+        ],
+        minimum_should_match: 1,
+      },
+    });
     expect(body.highlight.fields).toEqual({
       'work.title': {},
       'text.title': {},
@@ -224,11 +245,27 @@ describe('Elasticsearch client', () => {
     );
 
     const body = JSON.parse(global.fetch.mock.calls[0][1].body);
-    const scopedQuery = body.query.bool.must[0].bool;
+    const searchQuery = body.query.bool.must[0].bool;
+    const scopedQuery = searchQuery.should[1].bool;
     const workQuery = scopedQuery.should[0].bool;
     const textQuery = scopedQuery.should[1].bool;
 
-    expect(body.query.bool.filter).toEqual([
+    expect(body.query.bool.filter).toEqual([]);
+    expect(searchQuery.should[0].bool.should).toEqual([
+      {
+        bool: {
+          filter: [{ term: { result_type: 'poet' } }],
+          must: [{ term: { 'poet.id': 'rose' } }],
+        },
+      },
+      {
+        bool: {
+          filter: [{ term: { result_type: 'text' } }],
+          must: [{ term: { 'text.id': 'rose' } }],
+        },
+      },
+    ]);
+    expect(scopedQuery.filter).toEqual([
       { term: { 'poet.id': 'aarestrup' } },
       { term: { 'poet.country': 'dk' } },
     ]);

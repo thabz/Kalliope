@@ -61,6 +61,18 @@ describe('sharp image helpers', () => {
     expect(metadata.height).toBe(50);
   });
 
+  it('does not enlarge square cover images that are already small enough', async () => {
+    const input = path.join(tmpdir, 'small-square.jpg');
+    const output = path.join(tmpdir, 'small-square-output.jpg');
+
+    await createJpeg(input, 80, 50);
+    await resizeImage(input, output, 100, { fit: 'cover' });
+
+    const metadata = await sharp(output).metadata();
+    expect(metadata.width).toBe(50);
+    expect(metadata.height).toBe(50);
+  });
+
   it('reads image dimensions through the build-static wrapper', async () => {
     const input = path.join(tmpdir, 'metadata.jpg');
 
@@ -70,6 +82,15 @@ describe('sharp image helpers', () => {
       width: 123,
       height: 45,
     });
+  });
+
+  it('explains how to fix a missing image file', async () => {
+    const input = path.join(tmpdir, 'missing.jpg');
+
+    await expect(imageSizeSync(input)).rejects.toThrow(
+      `Billedfilen findes ikke: ${input}\n` +
+        'Tilføj filen, eller ret billedreferencen i XML-kilden.'
+    );
   });
 
   it('keeps existing thumbnails when the source mtime changes without content changes', async () => {

@@ -13,11 +13,8 @@ import {
 } from './xml.js';
 import elasticSearchClient from '../libs/elasticsearch-client.js';
 import { mapLimit } from './concurrency.js';
-import {
-  sourceWorkFilename,
-  textsForWork,
-  worksForPoet,
-} from './anthologies.js';
+import { textsForWork, worksForPoet } from './anthologies.js';
+import { sourceWorkFilename } from './work-cache.js';
 
 const elasticsearchConcurrency = Math.max(
   1,
@@ -286,10 +283,12 @@ const isElasticsearchUnavailable = error => {
     'ENOTFOUND',
     'EHOSTUNREACH',
     'ETIMEDOUT',
+    'EPERM',
   ]);
-  let current = error;
+  const pending = error == null ? [] : [error];
 
-  while (current != null) {
+  while (pending.length > 0) {
+    const current = pending.pop();
     if (
       unavailableCodes.has(current.code) ||
       unavailableCodes.has(current.errno)
@@ -303,7 +302,12 @@ const isElasticsearchUnavailable = error => {
     ) {
       return true;
     }
-    current = current.cause;
+    if (current.cause != null) {
+      pending.push(current.cause);
+    }
+    if (Array.isArray(current.errors)) {
+      pending.push(...current.errors);
+    }
   }
 
   return false;
@@ -318,7 +322,6 @@ const update_elasticsearch = async collected => {
     const documents = [];
 
     entries.forEach(entry => {
-      console.log(`Updating text entry ${entry.textEntryKey} in elasticsearch`);
       const textEntryDocuments = buildElasticsearchTextEntryDocuments(
         collected,
         entry
@@ -387,7 +390,6 @@ const update_elasticsearch = async collected => {
       console.log(
         'Elasticsearch server not available; skipping search index update.'
       );
-      console.log(error.message);
       return;
     }
     console.log('Elasticsearch update failed.');

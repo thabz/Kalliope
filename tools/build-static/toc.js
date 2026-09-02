@@ -8,6 +8,7 @@ import {
 } from '../libs/helpers.js';
 import { collect_git_modified_dates } from './git.js';
 import { mapLimit } from './concurrency.js';
+import { createProgressReporter } from './progress.js';
 import { extractTitle, get_notes, get_pictures } from './parsing.js';
 import { workName } from './formatting.js';
 import { sortWorks } from '../../common/worksort.js';
@@ -29,7 +30,7 @@ import {
 
 // Rekursiv function som bruges til at bygge værkers indholdsfortegnelse,
 // men også del-indholdstegnelser til de linkbare sektioner som har en id.
-const build_section_toc = (section, publicationPoetId = null) => {
+const build_section_toc = (section, workAuthorId = null) => {
   let poems = [];
   let proses = [];
   let toc = [];
@@ -38,9 +39,9 @@ const build_section_toc = (section, publicationPoetId = null) => {
     const partName = tagName(part);
     if (partName === 'text') {
       const sourceTextId = safeGetAttr(part, 'id');
-      const textAuthorId = resolveAuthorId(part, publicationPoetId);
+      const textAuthorId = resolveAuthorId(part, workAuthorId);
       const textId =
-        isAnthologyText(textAuthorId, publicationPoetId) ?
+        isAnthologyText(textAuthorId, workAuthorId) ?
           publicationTextId(sourceTextId)
         : sourceTextId;
       const head = getChildByTagName(part, 'head');
@@ -56,7 +57,7 @@ const build_section_toc = (section, publicationPoetId = null) => {
     } else if (partName === 'section') {
       const subtoc = build_section_toc(
         getChildByTagName(part, 'content'),
-        publicationPoetId
+        workAuthorId
       );
       const head = getChildByTagName(part, 'head');
       const level = parseInt(safeGetAttr(part, 'level') || '1');
@@ -88,7 +89,14 @@ const extract_subworks = (poetId, workbody, collected) => {
 };
 
 const build_works_toc = async (collected) => {
-  const modifiedDates = collect_git_modified_dates();
+  let modifiedDates = null;
+  const getModifiedDates = () => {
+    if (modifiedDates == null) {
+      modifiedDates = collect_git_modified_dates();
+    }
+    return modifiedDates;
+  };
+  const progress = createProgressReporter('Skrev toc.json-filer', 100);
 
   const workFilesForPoet = (poetId) => {
     return Array.from(
@@ -152,13 +160,12 @@ const build_works_toc = async (collected) => {
     safeMkdir(`public/api/${poetId}`);
     const workFilenames = workFilesForPoet(poetId);
     const poetWorksModified =
-      collected.poetMetadataDirty?.has(poetId) ||
       isFileModified(
         'tools/build-static/toc.js',
         'tools/build-static/anthologies.js',
         `fdirs/${poetId}/info.xml`,
         ...workFilenames
-      );
+      ) || collected.poetMetadataDirty?.has(poetId);
     const pageWorks = worksForPaging(poetId, poet);
     poetData.set(poetId, { pageWorks, poet, poetWorksModified });
     worksForPoet(collected, poetId).forEach(work => {
@@ -166,7 +173,7 @@ const build_works_toc = async (collected) => {
     });
   });
 
-  return mapLimit(jobs, async ({ poetId, workId, work: workMeta }) => {
+  const results = await mapLimit(jobs, async ({ poetId, workId, work: workMeta }) => {
     const { pageWorks, poet, poetWorksModified } = poetData.get(poetId);
     if (workMeta.virtualType === 'anthology') {
       if (
@@ -193,12 +200,11 @@ const build_works_toc = async (collected) => {
       }));
       const { prev, next } = resolvePrevNextWork(pageWorks, workId);
       const modified = workMeta.sourceFiles
-        .map(filename => modifiedDates.get(filename))
+        .map(filename => getModifiedDates().get(filename))
         .filter(date => date != null)
         .sort()
         .pop();
       const tocFilename = `public/api/${poetId}/${workId}-toc.json`;
-      console.log(tocFilename);
       writeJSON(tocFilename, {
         poet,
         toc,
@@ -210,6 +216,7 @@ const build_works_toc = async (collected) => {
         prev,
         next,
       });
+      progress.increment();
       return;
     }
     const filename = `fdirs/${poetId}/${workId}.xml`;
@@ -232,16 +239,18 @@ const build_works_toc = async (collected) => {
         work: collected.works.get(`${poetId}/${workId}`),
         notes: work_data.notes || [],
         pictures: work_data.pictures || [],
-        modified: modifiedDates.get(filename),
+        modified: getModifiedDates().get(filename),
         prev,
         next,
       };
       const tocFilename = `public/api/${poetId}/${workId}-toc.json`;
-      console.log(tocFilename);
       writeJSON(tocFilename, toc_file_data);
+      progress.increment();
     }
     doc = null;
   });
+  progress.finish();
+  return results;
 };
 
 export {

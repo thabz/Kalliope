@@ -39,7 +39,7 @@ const CountryPicker = (props) => {
   });
   const joinedItems = joinWithCommaAndOr(items, _('eller', lang));
   return (
-    <div style={style}>
+    <div className="country-picker" style={style}>
       <div>
         {_('Skift mellem', lang)} {joinedItems}
         {_('digtere', lang)}.

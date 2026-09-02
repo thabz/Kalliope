@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="andre" author="shelley" status="incomplete" type="poetry">
 <workhead>
-   <title>Andre digte</title>
+  <title>Andre digte</title>
 </workhead>
 <workbody>
 
 <text id="shelley2001090201">
 <head>
-   <title>Love's Philosophy</title>
-   <toctitle>Love's Philosophy</toctitle>
-   <indextitle>Love's Philosophy</indextitle>
-   <firstline>The fountains mingle with the river</firstline>
-   <notes>
-      <note>Efter <i>The Complete Poetical Works of Percy Bysshe Shelley</i> ved Thomas Hutchinson, Oxford University Press, 1952, s. 583.</note>
-      <note>Trykt første gang i <i>The Indicator</i> ved Leigh Hunt, siden gentrykt i <i>Posthumous Poems</i> i 1824 af Mrs. Shelley.</note>
-   </notes>
-   <quality>kilde,side</quality>
+  <title>Love's Philosophy</title>
+  <toctitle>Love's Philosophy</toctitle>
+  <indextitle>Love's Philosophy</indextitle>
+  <firstline>The fountains mingle with the river</firstline>
+  <notes>
+    <note>Trykt første gang i <i>The Indicator</i> ved Leigh Hunt, siden gentrykt i <i>Posthumous Poems</i> i 1824 af Mrs. Shelley.</note>
+  </notes>
+  <source pages="583"><i>The Complete Poetical Works of Percy Bysshe Shelley</i> ved Thomas Hutchinson, Oxford University Press, 1952.</source>
+  <quality>kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -46,11 +46,11 @@ What is all this sweet work worth
 
 <text id="shelley2003060601">
 <head>
-   <title>The Sensitive Plant</title>
-   <toctitle>The Sensitive Plant</toctitle>
-   <indextitle>The Sensitive Plant</indextitle>
-   <firstline>A Sensitive Plant in a garden grew</firstline>
-   <!-- Fra Gutenberg teksten -->
+  <title>The Sensitive Plant</title>
+  <toctitle>The Sensitive Plant</toctitle>
+  <indextitle>The Sensitive Plant</indextitle>
+  <firstline>A Sensitive Plant in a garden grew</firstline>
+  <!-- Fra Gutenberg teksten -->
 </head>
 <body>
 <poetry>
@@ -456,8 +456,8 @@ No light, being themselves obscure.
 
 <text id="shelley2017100701">
 <head>
-   <title>To Edward Williams</title>
-   <firstline>The serpent is shut out from Paradise</firstline>
+  <title>To Edward Williams</title>
+  <firstline>The serpent is shut out from Paradise</firstline>
 </head>
 <body>
 <poetry>
@@ -504,7 +504,7 @@ Peace thus, and but in you I found it not.
 V
 Full half an hour, to-day, I tried my lot
 With various flowers, and every one still said,
-    ''She loves me—loves me not.''<!-- TODO: Henvisning til Faust iflg. fotnote i kilden. -->
+    ''She loves me—loves me not.''<note>Cf. Goethes <xref poem="goethe2001061614"/>.</note>
 And if this meant a vision long since fled—
 If it meant fortune, fame, or peace of thought—
     If it meant,—but I dread
@@ -536,8 +536,8 @@ Happy yourself, you feel another’s woe.
 
 <text id="shelley2019091001">
 <head>
-    <title>Ode to the West Wind</title>
-    <firstline>O wild West Wind, thou breath of Autumn's being</firstline>
+  <title>Ode to the West Wind</title>
+  <firstline>O wild West Wind, thou breath of Autumn's being</firstline>
 </head>
 <body>
 <poetry>
@@ -655,8 +655,8 @@ If Winter comes, can Spring be far behind?
 
 <text id="shelley2019091002">
 <head>
-    <title>The Cloud</title>
-    <firstline>I bring fresh showers for the thirsting flowers</firstline>
+  <title>The Cloud</title>
+  <firstline>I bring fresh showers for the thirsting flowers</firstline>
 </head>
 <body>
 <poetry>
@@ -755,8 +755,8 @@ I arise and unbuild it again.
 
 <text id="shelley2019090602">
 <head>
-    <title>The Indian Serenade</title>
-    <firstline>I arise from dreams of thee</firstline>
+  <title>The Indian Serenade</title>
+  <firstline>I arise from dreams of thee</firstline>
 </head>
 <body>
 <poetry>
@@ -792,8 +792,8 @@ Where it will break at last.
 
 <text id="shelley2019090603">
 <head>
-    <title>To the Queen of my Heart</title>
-    <firstline>Shall we roam, my love</firstline>
+  <title>To the Queen of my Heart</title>
+  <firstline>Shall we roam, my love</firstline>
 </head>
 <body>
 <poetry>
@@ -844,8 +844,8 @@ What I dare not in broad daylight.
 
 <text id="shelley2019091201">
 <head>
-    <title>To Night</title>
-    <firstline>Swiftly walk over the western wave</firstline>
+  <title>To Night</title>
+  <firstline>Swiftly walk over the western wave</firstline>
 </head>
 <body>
 <poetry>
@@ -894,8 +894,8 @@ Come soon, soon!
 
 <text id="shelley2019091202">
 <head>
-    <title>Stanzas Written in Dejection, near Naples</title>
-    <firstline>The sun is warm, the sky is clear</firstline>
+  <title>Stanzas Written in Dejection, near Naples</title>
+  <firstline>The sun is warm, the sky is clear</firstline>
 </head>
 <body>
 <poetry>
@@ -954,8 +954,8 @@ Will linger, though enjoyed, like joy in memory yet.
 
 <text id="shelley2019091203">
 <head>
-    <title>Death</title>
-    <firstline>They die—the dead return not—Misery</firstline>
+  <title>Death</title>
+  <firstline>They die—the dead return not—Misery</firstline>
 </head>
 <body>
 <poetry>
@@ -982,8 +982,8 @@ These tombs—alone remain.
 
 <text id="shelley2019091204">
 <head>
-    <title>The Two Spirits. An Allegory</title>
-    <firstline>O thou, who plumed with strong desire</firstline>
+  <title>The Two Spirits. An Allegory</title>
+  <firstline>O thou, who plumed with strong desire</firstline>
 </head>
 <body>
 <poetry>
@@ -1059,10 +1059,10 @@ And when he awakes on the fragrant grass,
 
 <text id="shelley2019101701">
 <head>
-    <title>Adonais</title>
-    <subtitle>An Elegy on the Death of John Keats</subtitle>
-    <firstline>I weep for Adonais—he is dead!</firstline>
-    <keywords>keats,sidney</keywords>
+  <title>Adonais</title>
+  <subtitle>An Elegy on the Death of John Keats</subtitle>
+  <firstline>I weep for Adonais—he is dead!</firstline>
+  <keywords>keats,sidney</keywords>
 </head>
 <body>
 <poetry>
@@ -1196,7 +1196,8 @@ And dull the barbed fire against his frozen cheek.
     Quench'd its caress upon his icy lips;
     And, as a dying meteor stains a wreath
     Of moonlight vapour, which the cold night clips,
-<nonum><center>I</center></nonum>t flush'd through his pale limbs, and pass'd to its eclipse.
+<nonum><center>I</center></nonum>
+t flush'd through his pale limbs, and pass'd to its eclipse.
 
 <nonum><center>XIII</center></nonum>
     And others came . . . Desires and Adorations,
@@ -1207,7 +1208,8 @@ And dull the barbed fire against his frozen cheek.
     And Pleasure, blind with tears, led by the gleam
     Of her own dying smile instead of eyes,
     Came in slow pomp; the moving pomp might seem
-<nonum><center>L</center></nonum>ike pageantry of mist on an autumnal stream.
+<nonum><center>L</center></nonum>
+ike pageantry of mist on an autumnal stream.
 
 <nonum><center>XIV</center></nonum>
     All he had lov'd, and moulded into thought,
@@ -1262,7 +1264,8 @@ And scar'd the angel soul that was its earthly guest!
     The amorous birds now pair in every brake,
     And build their mossy homes in field and brere;
     And the green lizard, and the golden snake,
-<nonum><center>L</center></nonum>ike unimprison'd flames, out of their trance awake.
+<nonum><center>L</center></nonum>
+ike unimprison'd flames, out of their trance awake.
 
 <nonum><center>XIX</center></nonum>
     Through wood and stream and field and hill and Ocean
@@ -1383,7 +1386,8 @@ They fawn on the proud feet that spurn them lying low.
     A godlike mind soars forth, in its delight
     Making earth bare and veiling heaven, and when
     It sinks, the swarms that dimm'd or shar'd its light
-<nonum><center>L</center></nonum>eave to its kindred lamps the spirit's awful night."
+<nonum><center>L</center></nonum>
+eave to its kindred lamps the spirit's awful night."
 
 <nonum><center>XXX</center></nonum>
     Thus ceas'd she: and the mountain shepherds came,
@@ -1676,8 +1680,8 @@ Beacons from the abode where the Eternal are.
 
 <text id="shelley2021102001">
 <head>
-    <title>To - - -</title>
-    <firstline>One word is too often profaned</firstline>
+  <title>To - - -</title>
+  <firstline>One word is too often profaned</firstline>
 </head>
 <body>
 <poetry>
@@ -1704,8 +1708,8 @@ From the sphere of our sorrow?
 
 <text id="shelley2021102002">
 <head>
-    <title>To Jane: The Recollection</title>
-    <firstline>Now the last day of many days</firstline>
+  <title>To Jane: The Recollection</title>
+  <firstline>Now the last day of many days</firstline>
 </head>
 <body>
 <poetry>

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="1888" author="moellern" status="complete" type="poetry">
 <workhead>
-   <title>Efteraar</title>
-   <year>1888</year>
-   <notes>
-      <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse. Eksempelvis har å'erne voldet sætteren problemer hvormed en del gamle aa'er har sneget sig ind. Disse er alle rettet i nærværende udgave; digtsamlingens titel har dog fået lov at stå som <i>Efteraar</i>.</note>
-      <note>Noter med en foranstillet asterisk er Niels Møllers egne.</note>
-   </notes>
-   <pictures>
-       <picture type="titlepage" src="1888-p1.jpg">Titelbladet til <i>Efteraar</i> (1888). ,,Niels Møller. / Efteraar. / Digte. // København. / P. G. Philipsens Forlag. / Thieles Bogtrykkeri. / 1888.''.</picture>
-   </pictures>
-   <source facsimile="115308081439_color" facsimile-pages-num="126" facsimile-pages-offset="10">Niels Møller: <i>Efteraar</i>, P. G. Philipsens Forlag, Kbh., 1888.</source>
+  <title>Efteraar</title>
+  <year>1888</year>
+  <notes>
+    <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse. Eksempelvis har å'erne voldet sætteren problemer hvormed en del gamle aa'er har sneget sig ind. Disse er alle rettet i nærværende udgave; digtsamlingens titel har dog fået lov at stå som <i>Efteraar</i>.</note>
+    <note>Noter med en foranstillet asterisk er Niels Møllers egne.</note>
+  </notes>
+  <pictures>
+    <picture type="titlepage" src="1888-p1.jpg">Titelbladet til <i>Efteraar</i> (1888). ,,Niels Møller. / Efteraar. / Digte. // København. / P. G. Philipsens Forlag. / Thieles Bogtrykkeri. / 1888.''.</picture>
+  </pictures>
+  <source facsimile="115308081439_color" facsimile-pages-num="126" facsimile-pages-offset="10">Niels Møller: <i>Efteraar</i>, P. G. Philipsens Forlag, Kbh., 1888.</source>
 </workhead>
 <workbody>
 
@@ -1297,7 +1297,7 @@ så fører vi fred i hus og striden til ende.
     <note>Se også Thomas Thaarups <xref poem="thaarup2001120101"/>.</note>
   </notes>
   <dates>
-      <event>1888-06-20</event>
+    <event>1888-06-20</event>
   </dates>
   <source pages="62-65"/>
   <quality>korrektur1,kilde,side</quality>
@@ -1593,10 +1593,10 @@ O stumme sjæl, som kæmper for at tale!
 </text>
 
 <section>
-  <head>
-    <title>Oversættelser</title>
-  </head>
-  <content>
+<head>
+  <title>Oversættelser</title>
+</head>
+<content>
 
 <text id="moellern2017100625">
 <head>
@@ -1719,9 +1719,9 @@ Så siger Nossis: Den kvinde, der kender ej kærlighed,
   <title>Geoffrey Chaucer</title>
   <toctitle>Geoffrey Chaucer: O, kvalfuld kvide!</toctitle>
   <firstline>O, kvalfuld kvide! Armods bitre plage!</firstline>
-   <notes>
-       <note unknown-original-by="chaucer" />
-   </notes>
+  <notes>
+    <note>Gendigtning af Chaucers <xref type="translation" poem="chaucer2026072601"/>.</note>
+  </notes>
   <source pages="84-85"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2054,9 +2054,9 @@ end du skal mindes mig med tunge tanker.
   <title>Dante Gabriel Rossetti</title>
   <toctitle>Dante Gabriel Rossetti: Sonet</toctitle>
   <firstline>Ej blot at jorden gråner, o min gud!</firstline>
-   <notes>
-       <note unknown-original-by="rossettid" />
-   </notes>
+  <notes>
+    <note>Gendigtning af Dante Gabriel Rossettis <xref type="translation" poem="rossettid2026072601"/>.</note>
+  </notes>
   <source pages="99"/>
   <quality>korrektur1,kilde,side</quality>
   <keywords>sonnet</keywords>

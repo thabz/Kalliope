@@ -4,6 +4,7 @@ import { kalliopeCrumbs } from '../components/breadcrumbs.js';
 import * as Links from '../components/links.js';
 import { kalliopeMenu } from '../components/menu.js';
 import Page from '../components/page.js';
+import PageLead from '../components/pagelead.js';
 import PicturesGrid from '../components/picturesgrid.js';
 import ErrorPage from './error.js';
 
@@ -30,6 +31,13 @@ const MuseumPage = (props) => {
       pageSubtitle={_('Værker', lang)}
       menuItems={kalliopeMenu()}
       selectedMenuItem="works">
+      <PageLead>
+        {_(
+          'Her finder du de kunstværker og portrætter fra {museumName}, som er gengivet på Kalliope.',
+          lang,
+          { museumName: museum.name }
+        )}
+      </PageLead>
       <div className="two-columns" style={{ lineHeight: 1.7 }}>
         <PicturesGrid lang={lang} artwork={artwork} hideMuseum={true} />
       </div>

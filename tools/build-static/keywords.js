@@ -12,6 +12,7 @@ import {
   safeGetText,
   safeGetAttr,
   getChildByTagName,
+  getChildrenByTagName,
 } from './xml.js';
 import { mapLimit } from './concurrency.js';
 
@@ -58,6 +59,12 @@ const build_keywords = async collected => {
           const author = safeGetText(head, 'author');
           const rawBody = safeGetInnerXML(body) || '';
           const content_html = htmlToXml(rawBody, collected);
+          const sources = (getChildrenByTagName(head, 'source') || []).map(
+            source => ({
+              content_html: htmlToXml(safeGetInnerXML(source), collected),
+              href: safeGetAttr(source, 'href'),
+            })
+          );
           const has_footnotes =
             rawBody.indexOf('<footnote') !== -1 ||
             rawBody.indexOf('<note') !== -1;
@@ -65,6 +72,7 @@ const build_keywords = async collected => {
             ...data,
             is_draft,
             author,
+            sources,
             pictures,
             has_footnotes,
             content_lang: 'da',
@@ -80,7 +88,6 @@ const build_keywords = async collected => {
         });
         const outFilename = `${outputFolder}/${id}.json`;
         outputFilenames.add(`${id}.json`);
-        console.log(outFilename);
         writeJSON(outFilename, data);
         collected_keywords.set(id, { id, title });
       }
@@ -88,13 +95,11 @@ const build_keywords = async collected => {
     for (const filename of fs.readdirSync(outputFolder)) {
       if (filename.endsWith('.json') && !outputFilenames.has(filename)) {
         const staleFilename = `${outputFolder}/${filename}`;
-        console.log(`Removing ${staleFilename}`);
         fs.unlinkSync(staleFilename);
       }
     }
     writeCachedJSON('collected.keywords', Array.from(collected_keywords));
     const outFilename = `public/api/keywords.json`;
-    console.log(outFilename);
     writeJSON(outFilename, keywords_toc);
   }
   return collected_keywords;
