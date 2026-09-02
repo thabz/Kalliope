@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="langsted" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Adolf</firstname>
+    <lastname>Langsted</lastname>
+    <fullname>Adolf Christoffer Langsted</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1864-02-04</date>
+      <place>Kbh.</place>
+    </born>
+    <dead>
+      <date>1919-04-07</date>
+    </dead>
+  </period>
+  <literary-periods>dk-det-moderne-gennembrud</literary-periods>
+  <works>1901</works>
+  <identifiers>
+    <wikidata>Q11956932</wikidata>
+    <wikipedia-da>Adolf Langsted</wikipedia-da>
+    <viaf>189632650</viaf>
+    <gnd>128059745</gnd>
+    <gravsted-dk>adolflangsted</gravsted-dk>
+    <danskforfatterleksikon-dk>LAdolfLangsted</danskforfatterleksikon-dk>
+    <runeberg-org>langsado</runeberg-org>
+  </identifiers>
+</person>
