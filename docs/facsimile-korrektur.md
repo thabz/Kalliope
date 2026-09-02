@@ -9,6 +9,25 @@ Målet er ikke blot en tekst uden oplagte OCR-fejl. Resultatet skal bevare
 kildens ordlyd, verslinjer, strofer, overskrifter, tegnsætning og relevante
 typografiske træk og samtidig være gyldigt Kalliope-XML.
 
+## To korrekturgennemgange før færdigstatus
+
+En PDF-import er en kladde med `status="incomplete"`, indtil to fulde,
+side-for-side-gennemgange mod facsimilet er afsluttet. `txt2xml` tildeler aldrig
+kvalitetsmærker. Producentens første gennemgang må tilføje
+`korrektur1,kilde,side`, men værket forbliver `incomplete`.
+
+Den anden gennemgang udføres af en anden model eller session, som læser alle
+relevante sider uden selv at redigere XML. Editoren retter reviewerens fund;
+revieweren genkontrollerer rettelserne, så fund går fra `fixed` til `verified`.
+Et fund, der blot er rettet, er ikke afsluttet.
+
+Slutcheckpointet blokerer, hvis en side er gennemgået af producenten, et fund
+er `open` eller `fixed`, en OCR-, side-, strofe- eller indrykningskandidat ikke
+er vurderet mod facsimilet, eller XML-/repositorytests ikke består. Først når
+checkpointets krav er opfyldt, tilføjes `korrektur2`, værket sættes til
+`complete`, og reviewerens modelattest registreres efter
+`docs/xml-work-format.md`.
+
 ## Grundregel
 
 Facsimilet er facit. OCR, eksisterende transskriptioner, metadata og kendskab
@@ -152,9 +171,11 @@ Sideintervallet skal skrives med fulde endepunkter, fx `102-108`, ikke
 `102-08`, og skal være lukket og ikke-faldende. Inden for hver tekstpost skal
 arabiske `pb/@n` være ikke-faldende. Sidetallet kan begynde forfra ved en ny
 tekstpost, når kilden har selvstændig paginering. De numeriske
-`pb/@facs`-filnavne skal være ikke-faldende gennem hele værket; der må gerne
-være spring mellem markørerne. Romertal i `n` ignoreres af den maskinelle
-rækkefølgekontrol.
+`pb/@facs`-filnavne skal være ikke-faldende inden for samme facsimilekilde; der
+må gerne være spring mellem markørerne. I ældre værkfiler med flere kilder
+begynder en ny rækkefølge, når tekstens `source/@in` skifter. Uden
+`source/@in` gælder én rækkefølge for hele værket. Romertal i `n` ignoreres af
+den maskinelle rækkefølgekontrol.
 
 En konkret tekst med en dokumenteret pagineringsafvigelse kan bruge
 `ignore-tests="pagebreak-count"`, hvis det lovlige sideinterval ikke bestemmer

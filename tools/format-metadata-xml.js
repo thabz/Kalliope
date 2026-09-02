@@ -9,11 +9,13 @@ const formatWithXmllint = xml =>
     input: xml,
   });
 
+const xmlDeclarationPattern = /(?=<\?xml\s)/;
+
 const pictureStructuralTagPattern =
-  /(<\/?(?:pictures|picture|picture-note|description)(?=\s|\/?>)[^>]*>)/g;
+  /(<\/?(?:pictures|picture|picture-note|description|identifiers)(?=\s|\/?\s*>|>)[^>]*>)/g;
 
 const isPictureStructuralTag = part =>
-  /^<\/?(?:pictures|picture|picture-note|description)(?=\s|\/?>)/.test(part);
+  /^<\/?(?:pictures|picture|picture-note|description|identifiers)(?=\s|\/?\s*>|>)/.test(part);
 
 const normalizeTag = tag =>
   tag
@@ -61,6 +63,49 @@ export const formatMetadataXml = xml => {
     return formatPicturesXml(xml);
   }
   throw new Error('Ukendt metadata-XML: forventede <person> eller <pictures>');
+};
+
+const formatFilesWithXmllint = filenames =>
+  execFileSync(
+    'xmllint',
+    ['--format', ...filenames],
+    {
+      encoding: 'utf8',
+      env: { ...process.env, XMLLINT_INDENT: '  ' },
+      maxBuffer: 128 * 1024 * 1024,
+    },
+  );
+
+export const formatMetadataXmlFiles = (
+  files,
+  { formatFiles = formatFilesWithXmllint } = {},
+) => {
+  if (files.length === 0) {
+    return new Map();
+  }
+
+  const output = formatFiles(files.map(file => file.filename));
+  const formattedDocuments = output
+    .split(xmlDeclarationPattern)
+    .filter(document => document.length > 0);
+
+  if (formattedDocuments.length !== files.length) {
+    throw new Error(
+      `xmllint returnerede ${formattedDocuments.length} dokumenter for ${files.length} metadatafiler.`,
+    );
+  }
+
+  return new Map(files.map((file, index) => {
+    if (/<person(?:\s|>)/.test(file.xml)) {
+      return [file.filename, formattedDocuments[index]];
+    }
+    if (/<pictures(?:\s|>)/.test(file.xml)) {
+      return [file.filename, formatPicturesXml(file.xml)];
+    }
+    throw new Error(
+      `${file.filename}: ukendt metadata-XML; forventede <person> eller <pictures>`,
+    );
+  }));
 };
 
 const isMainModule = process.argv[1] != null &&

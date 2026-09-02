@@ -43,6 +43,7 @@ Before changing files:
 2. Read `docs/style-guide.md`.
 3. Read at least:
    - `docs/xml-work-format.md`
+   - `docs/titelbladsbilleder.md`
    - `docs/facsimile-korrektur.md`
    - `docs/ocr-korrektur-laerebog.md`
    - `docs/kalliope-masterplan.md`
@@ -112,6 +113,18 @@ Before processing the PDF:
 4. Read comparable work XML files.
 5. Determine which repository files and image directories will be affected.
 6. Check `git status --short`.
+7. Check required dependencies before OCR or editing begins. At minimum verify
+   the repository's Node dependencies and the PDF/XML commands used by the
+   chosen workflow, for example:
+
+   ```shell
+   npm install
+   command -v node pdfimages pdftoppm xmllint
+   ```
+
+   Also verify every selected OCR engine, such as `tesseract`. Stop and report
+   a missing required dependency immediately; do not discover it after a
+   partial transcription or at the review checkpoint.
 
 If the ordinary worktree contains unrelated changes, use an appropriate
 separate worktree or otherwise ensure that unrelated changes cannot enter the
@@ -214,7 +227,7 @@ Use the poet/author ID and work ID used by the Kalliope XML.
 Extract the title page from the PDF page image and save it as a JPEG at:
 
 ```text
-public/<poet-id>/<work-id>-p1.jpg
+public/images/<poet-id>/<work-id>-p1.jpg
 ```
 
 The title page image is required for every imported work unless the source
@@ -223,12 +236,12 @@ genuinely contains no title page. In that exceptional case, add an explicit
 description.
 
 The JPEG must represent the printed title page itself. Do not generate it from
-the PDF's OCR layer.
-
-Preserve the visible page faithfully. Do not crop away printed information,
-ornament or borders. Scanner-bed margins may be removed only when this does not
-alter the printed page. Avoid unnecessary recompression, artificial sharpening
-or colour changes.
+the PDF's OCR layer. Use `$prepare-kalliope-titlepage` and follow
+`docs/titelbladsbilleder.md` to classify the source, straighten the text,
+remove scanner background, preserve the complete physical page and produce the
+QA report. Work on a scratch candidate and promote it to the final `p1` path
+only after the skill reports `pass`. A result marked `manual-review` must not
+overwrite an existing image.
 
 Reference the image from the work header using the current Kalliope image
 format. The established title-page type is `titlepage`; follow
@@ -255,7 +268,7 @@ When a genuine separate graphic front cover exists, extract it as a JPEG and
 save it at:
 
 ```text
-public/<poet-id>/<work-id>-p2.jpg
+public/images/<poet-id>/<work-id>-p2.jpg
 ```
 
 Preserve colour when the source is coloured.
@@ -315,6 +328,35 @@ This capitalization normalization applies to title-page metadata and its
 bibliographic transcription. It does not authorize modernization of poems,
 prose or quoted source text elsewhere in the work.
 
+## Mandatory draft and proofreading lifecycle
+
+Treat generated XML as a draft. `txt2xml` MUST emit `status="incomplete"` and
+MUST NOT emit `<quality>` or any proofreading flag. Do not mark a PDF import
+complete from transcription, OCR agreement, one proofreading pass or passing
+tests alone.
+
+Use this lifecycle:
+
+1. The producer creates and edits the draft while it remains `incomplete`.
+2. The producer performs the first full page-by-page facsimile proofreading.
+   Afterward each included text may receive `korrektur1,kilde,side`; the work
+   remains `incomplete`.
+3. A different model or session reviews every relevant page read-only. There
+   is exactly one XML editor; the independent reviewer reports findings and
+   does not edit the XML.
+4. The editor fixes findings. The independent reviewer rechecks each fix.
+   `fixed` is unresolved; only `verified`, `rejected` or `withdrawn` is final.
+5. Record that all OCR, page, stanza and indentation candidates were assessed
+   against the facsimile. Run XML and repository tests.
+6. Only after the final review passes, add `korrektur2`, set the work to
+   `complete`, and add the independent reviewer's model attestation to
+   `<workhead>` as documented in `docs/xml-work-format.md`. Rerun tests and
+   create the frozen checkpoint from this final state.
+
+The published attestation contains only `model` and an ISO 8601 `datetime`
+with timezone. Do not add a hash, sidecar reference or automatic invalidation
+metadata to it. Preserve older attestations when a later model adds another.
+
 ## 4. Ignore the PDF's existing OCR layer
 
 The PDF may contain an OCR text layer, but it is known to be unreliable.
@@ -333,6 +375,11 @@ replace fresh OCR from the page images or direct visual proofreading.
 
 Follow `docs/facsimile-korrektur.md` when extracting embedded images or
 rendering PDF pages.
+
+Render the page images used as OCR input at 300 DPI. This requirement applies
+to OCR working images, not to the published facsimile extraction: generate the
+published facsimiles with the repository's ordinary facsimile tool and its
+established extraction policy.
 
 Maintain an explicit mapping between:
 
@@ -372,6 +419,129 @@ does not overrule the facsimile.
 Keep generated page images, OCR outputs, crops and reports in a clearly
 contained scratch location. They must not enter the pull request unless the
 repository explicitly requires a particular generated asset.
+
+### Fraktur-OCR profile
+
+For historical Danish Fraktur, run the side-aware OCR candidate audit in
+addition to the ordinary checks:
+
+```shell
+node .codex/skills/pdf-to-kalliope/scripts/audit-ocr-candidates.js \
+  path/to/work.xml path/to/inventory.jsonl > /tmp/<work>-ocr-candidates.jsonl
+```
+
+Use its Fraktur profile to prioritise visual inspection of likely recognition
+errors, especially long-s and related `f`/`s` readings, `c`/`e`, `æ`/`a`/`e`,
+`ø`/`o`, `oe`/`aa` and `skj`/`sj` confusions, inserted spaces, digits or
+symbols inside words, broken quotation marks and duplicated lines. It also
+flags recurring word-shaped signals such as `forst`/`først` and `gjor`/`gjør`.
+
+The audit produces candidates only. Never apply its readings as global
+substitutions. Historical forms such as `høi`, `skiøn`, `kiær`, `giøre` and
+`maaskee` may be correct in the source, and a modern spelling or dictionary
+cannot overrule the facsimile. Check the complete local context, capitalization,
+word boundary and printed glyph before changing XML. If the facsimile does not
+settle the reading, preserve the uncertainty with a `TODO:` note or finding
+rather than guessing.
+
+The detailed general rules for facsimile proofreading, stanza structure,
+indentation and page coverage remain in `docs/facsimile-korrektur.md` and
+`docs/ocr-korrektur-laerebog.md`; consult those documents instead of duplicating
+their full procedures here.
+
+Plain OCR output is never evidence for horizontal layout. This applies equally
+to Fraktur and Antiqua: fresh OCR may help locate lines, but indentation must be
+determined from the page image. OCR coordinates or bounding boxes may identify
+candidates only and cannot overrule the facsimile.
+
+## Auditable side and review records
+
+Before editing the transcription, create two machine-readable scratch files:
+
+```shell
+node .codex/skills/pdf-to-kalliope/scripts/build-page-inventory.js \
+  fdirs/<poet>/<work>.xml /tmp/<work>-pages.jsonl
+touch /tmp/<work>-findings.jsonl
+```
+
+The inventory contains one JSON object per printed page with the text ID,
+printed page, facsimile filename, first and last transcribed line, expected
+transition (`text-start`, `pb` or `pb-within-word`), review status, reviewer
+and disposition. The generated rows are a starting point, not source evidence:
+compare every row with the facsimile, correct its anchors and facsimile mapping,
+then set `status` to `reviewed`. A page that starts a new `<text>` remains an
+explicit `text-start` exception and must not acquire a synthetic `<pb>`.
+
+These files and commands are process-neutral. They do not depend on Codex,
+CMUX or a particular agent. The producer can use them during the first pass,
+but the completion checkpoint requires every page to be assigned to a reviewer
+whose stable ID differs from the producer ID. Coordination messages are
+outside the data contract. When the surrounding workflow provides a
+coordination channel such as CMUX, report blockers, decisions and review
+milestones there, but do not make any audit command depend on that channel.
+
+During distributed review, designate exactly one XML editor. All other
+reviewers work read-only and add findings to the shared contract through the
+coordinator or another serialized update path. Never allow concurrent XML
+writers.
+
+Record every review finding as one JSONL object. Each object MUST have a stable
+`id`, `batch`, `reviewer`, `text_id`, `printed_page`, `facsimile`, stable
+`anchor`, `severity`, `description`, `status`, `disposition`, `evidence` and
+the commit or diff `snapshot` it concerns. Legal statuses are `open`, `fixed`,
+`rejected`, `withdrawn` and `verified`. Never delete withdrawn findings; retain
+the withdrawal reason and evidence. Validate the register with:
+
+```shell
+node .codex/skills/pdf-to-kalliope/scripts/findings-register.js validate \
+  /tmp/<work>-findings.jsonl
+```
+
+The command exits unsuccessfully for malformed records or any `open` or
+`fixed` finding. A `verified` finding requires `verified_by`.
+Use the `status` subcommand to make an auditable status transition instead of
+rewriting IDs:
+
+```shell
+node .codex/skills/pdf-to-kalliope/scripts/findings-register.js status \
+  /tmp/<work>-findings.jsonl FINDING-ID fixed \
+  'Rettet mod facsimilet' 'facs 019.jpg, før/efter ...' DIFF-SHA
+
+node .codex/skills/pdf-to-kalliope/scripts/findings-register.js status \
+  /tmp/<work>-findings.jsonl FINDING-ID verified \
+  'Genkontrolleret mod facsimilet' 'facs 019.jpg, rettelsen stemmer' \
+  DIFF-SHA REVIEWER-ID
+```
+
+After each editing batch, run the semantic page audit against the independently
+reviewed inventory:
+
+```shell
+node .codex/skills/pdf-to-kalliope/scripts/audit-pagebreaks.js \
+  fdirs/<poet>/<work>.xml /tmp/<work>-pages.jsonl
+```
+
+It checks complete page coverage, exact text-start exceptions, the first and
+last line assigned to each page, marker type, printed page and facsimile. It
+therefore detects a missing or duplicate transition, a marker on the wrong
+page, lines left on the preceding page, and a marker that wrongly splits or
+fails to preserve a word. The inventory is the facsimile-backed semantic
+contract; generating it from the same bad XML and accepting it without visual
+review is not an audit.
+
+Run the side-aware historical OCR profile as a separate candidate pass:
+
+```shell
+node .codex/skills/pdf-to-kalliope/scripts/audit-ocr-candidates.js \
+  fdirs/<poet>/<work>.xml /tmp/<work>-pages.jsonl \
+  > /tmp/<work>-ocr-candidates.jsonl
+```
+
+It reports stable anchors with text ID, printed page and facsimile for OCR
+symbols such as `{ } % $`, an `Image` token, digits inside words, suspicious
+internal spaces, long-s substitutions, adjacent duplicate lines, punctuation
+without spacing and implausible singleton characters. Every candidate still
+requires direct facsimile review.
 
 ## 6. Segment the publication before final transcription
 
@@ -450,6 +620,14 @@ Do not fabricate metadata when no responsible answer exists. Use an explicit
 Titles and first lines must remain free of XML markup when the current format
 requires plain text.
 
+Title metadata must also omit terminal punctuation. Remove a final period,
+comma, colon, semicolon, question mark or exclamation mark from `title` and its
+index, table-of-contents, link and breadcrumb variants even when it appears in
+the printed heading. This normalization does not apply to subtitles,
+supertitles or the diplomatic body transcription, whose source punctuation
+must still be preserved. Follow `docs/xml-work-format.md` for the complete list
+of affected title fields.
+
 ## 8. Encode every internal source-page break
 
 Preserve every physical source-page transition that occurs inside an included
@@ -493,6 +671,13 @@ changes between verse lines or stanzas, prefix the first content on the new page
 with `<pb>`; never put the marker on an XML line of its own. The marker is
 zero-width semantics. It must not create a verse line, blank line, stanza,
 paragraph or text boundary.
+
+When the first line on the new page is indented, put the indentation after the
+page marker: `<pb n="12" facs="019.jpg"/>    Indented line`. Never encode it as
+`    <pb n="12" facs="019.jpg"/>Indented line`; the indentation belongs to the
+new page's line, while `<pb>` must precede its first rendered whitespace or
+character. Audit this ordering explicitly whenever indentation is corrected at
+a page boundary.
 
 Do not insert `<pb>` merely at the beginning or end of each `<text>` to repeat
 its `<source pages="...">`. A page transition between two separate text entries
@@ -596,9 +781,11 @@ structure solely to make the counts regular.
 
 Some poems are intentionally irregular. The facsimile remains authoritative.
 
-After the stanza analysis, you MUST also run the bundled indentation analysis
-on the same body while preserving every leading space and every blank stanza
-separator:
+Resolve every stanza-boundary candidate before using indentation results. A
+missing boundary can hide a repeated indentation profile by combining two
+stanzas. After correcting or explicitly rejecting all stanza candidates, build
+fresh input from that reviewed structure and run the bundled indentation
+analysis while preserving every leading space and every blank stanza separator:
 
 ```shell
 node .codex/skills/pdf-to-kalliope/scripts/analyze-indentation.js /tmp/poem.json
@@ -613,8 +800,15 @@ non-verse lines from the temporary input.
 Inspect every reported indentation candidate against the facsimile. A uniform
 offset at a page break is suspicious, but a new numbered division may
 legitimately use its own indentation profile. Rerun the analysis after changing
-indentation. The report is diagnostic only; a stable profile or no candidates
-does not prove that indentation is correct.
+indentation. For a stanza mismatch, compare every item in `mismatches` with the
+facsimile and record the disposition. The report is diagnostic only; a stable
+profile or no candidates does not prove that indentation is correct.
+
+`no_stable_pattern` is not a passing result for a reviewed poem. First confirm
+that stanza boundaries are correct and rerun the analysis. If the status
+remains, record a finding with the facsimile-based indentation assessment and
+resolve it as a genuine irregularity or a corrected transcription. Never accept
+the status merely because the analyzer emitted no line-level candidates.
 
 Continue structural analysis across page breaks. A page break is not in itself
 a stanza break.
@@ -635,6 +829,19 @@ new final file. Include the final results in the review checkpoint.
 
 Keep headings, stanza numbers and decorative lines separate from numbered verse
 lines using the XML structures documented by the repository.
+
+Use the bundled whole-work wrapper for the final run instead of manually
+omitting poems:
+
+```shell
+node .codex/skills/pdf-to-kalliope/scripts/analyze-whole-work.js \
+  fdirs/<poet>/<work>.xml > /tmp/<work>-structure.json
+```
+
+The wrapper extracts every `<poetry>` block from the final XML, invokes both
+existing analyzers, preserves text ID and page range, aggregates all candidates
+and flags a very long block with no stanza boundaries. Resolve every reported
+candidate in the findings register.
 
 ## 10. Preserve indentation using spaces
 
@@ -666,6 +873,10 @@ Third line
 ```
 
 Preserve genuine irregular indentation when it is visibly present.
+
+For repeated same-length stanzas, compare corresponding line positions across
+all stanzas. Inspect isolated disagreements as carefully as multi-line shifts;
+several scattered one-line errors may otherwise evade a run-based analysis.
 
 ## 11. Represent prose correctly
 
@@ -725,7 +936,17 @@ A footnote attached to a particular place in the text must be inserted at that
 place using the Kalliope XML structure. Do not collect footnotes at the end
 merely because OCR extracted them there.
 
-Proofread footnotes and note markers directly against the facsimile.
+Transcribe every source footnote verbatim from the facsimile. Preserve its
+wording, historical spelling, capitalization and punctuation. The
+`<footnote>` element contains only the printed footnote text, not the printed
+marker. Never prepend the referenced word, an inferred subject, `betyder` or
+any other editorial clarification. For example, when the source text marks
+`Ajl` and the complete printed footnote reads `andet end Gjæld.`, encode only
+`<footnote>andet end Gjæld.</footnote>`.
+
+Proofread every footnote and note marker directly against the facsimile. Do not
+reuse a paraphrase or expanded wording from OCR, provisional metadata or a
+previous transcription without checking it against the printed note.
 
 Preserve the association between each marker and its note.
 
@@ -893,39 +1114,23 @@ relationship.
 
 Do not silently replace an existing occurrence with the new source.
 
-## 19. Perform a separate full proofreading phase
+## 19. Perform two separate full proofreading phases
 
 Generation of plausible XML is not completion.
 
-After the initial XML exists, perform a separate systematic proofreading pass
-following `docs/facsimile-korrektur.md`.
+After the initial XML exists, perform the producer's systematic proofreading
+pass and then the independent review described above, following
+`docs/facsimile-korrektur.md`.
 
-At minimum:
+Use `docs/facsimile-korrektur.md` as the complete proofreading checklist. In
+this skill, the mandatory outcomes are: every relevant page is read directly
+against the XML, every discrepancy is resolved against the facsimile, and the
+side inventory, structural analyses, notes, typography and page-break audit are
+all reconciled with the final file.
 
-1. Compare the transcription with both fresh OCR results.
-2. Create or inspect a discrepancy list.
-3. Resolve every discrepancy against the facsimile.
-4. Inspect suspicious stanza lengths and sequence numbering.
-5. Check every wrapped or unusually short line.
-6. Check all indentation.
-7. Check headings, mottoes, signatures and separators.
-8. Check punctuation, quotation marks, apostrophes and dashes.
-9. Check italics, small capitals, spacing and other supported typography.
-10. Check every footnote and note marker.
-11. Check the first and last visible text on every relevant page.
-12. Read every relevant page directly against the XML.
-13. Verify the beginning and end of every text.
-14. Verify continuations across page boundaries.
-15. Verify every internal page boundary against the page inventory, including
-    each marker's exact position, printed `n` value and required `facs`
-    filename.
-16. Verify that Arabic `pb/@n` values and numeric `pb/@facs` filenames never
-    decrease in document order; gaps are allowed.
-17. Verify that `<workhead>` contains `<pagebreaks/>`, including when no text
-    crosses a page boundary.
-18. Verify that the title page and optional cover images are the correct pages.
-
-The final work must have been checked page by page against the images.
+Both passes must cover the complete relevant page range. The independent pass
+must be read-only, and reviewer findings must be rechecked after the editor's
+changes.
 
 OCR comparison is a supplement to, not a replacement for, direct visual
 proofreading.
@@ -958,6 +1163,8 @@ Explicitly verify that:
 - the table of contents is excluded as a text
 - title-page metadata is complete
 - the title page has been saved as `p1`
+- title-page image QA passed according to `docs/titelbladsbilleder.md`, or an
+  unresolved exceptional source problem is explicitly documented
 - a genuine graphic front cover, when present, has been saved as `p2`
 - `p1` and `p2` have not been swapped to match PDF order
 
@@ -974,6 +1181,10 @@ As a current baseline, include the relevant forms of:
 
 ```shell
 npm run report-ocr-candidates
+node .codex/skills/pdf-to-kalliope/scripts/audit-ocr-candidates.js WORK.xml INVENTORY.jsonl
+node .codex/skills/pdf-to-kalliope/scripts/audit-pagebreaks.js WORK.xml INVENTORY.jsonl
+node .codex/skills/pdf-to-kalliope/scripts/analyze-whole-work.js WORK.xml
+node .codex/skills/pdf-to-kalliope/scripts/findings-register.js validate FINDINGS.jsonl
 xmllint --noout path/to/work.xml
 npm test -- --runInBand __tests__/pagebreaks.test.js
 git diff --check
@@ -1002,6 +1213,7 @@ Also perform targeted checks for:
 - missing mandatory metadata
 - unsupported XML attributes
 - wrong image filenames or paths
+- missing or unsuccessful title-page QA
 - untracked generated files
 
 A candidate report identifies places to inspect; it does not authorize automatic
@@ -1032,6 +1244,50 @@ or ambiguous deletion command.
 
 Follow `AGENTS.md`.
 
+READY requires complete independent inventory coverage, no `open` or `fixed`
+findings, all four candidate-review categories and recorded passing tests. Put
+a small JSON file in scratch space with `producer`, `tests`,
+`candidate_reviews` and `reviewer_ranges`, then create the frozen checkpoint
+outside the worktree.
+Each range has a stable `reviewer`, `facsimile_from` and `facsimile_to`; ranges
+must not overlap, must cover the complete inventory and must agree with each
+inventory row's reviewer. For example:
+
+```json
+{
+  "producer": "producer-model-session",
+  "tests": [{"command": "npm test -- --runInBand", "status": "passed"}],
+  "candidate_reviews": [
+    {"kind": "ocr", "reviewer": "reviewer-model-session", "status": "reviewed", "candidate_count": 12, "reviewed_count": 12},
+    {"kind": "page", "reviewer": "reviewer-model-session", "status": "reviewed", "candidate_count": 4, "reviewed_count": 4},
+    {"kind": "stanza", "reviewer": "reviewer-model-session", "status": "reviewed", "candidate_count": 31, "reviewed_count": 31},
+    {"kind": "indentation", "reviewer": "reviewer-model-session", "status": "reviewed", "candidate_count": 49, "reviewed_count": 49}
+  ],
+  "reviewer_ranges": [
+    {"reviewer": "reviewer-model-session", "facsimile_from": "000.jpg", "facsimile_to": "099.jpg"}
+  ]
+}
+```
+
+Create and verify the checkpoint with:
+
+```shell
+node .codex/skills/pdf-to-kalliope/scripts/review-checkpoint.js create \
+  /tmp/<work>-checkpoint.json /tmp/<work>-findings.jsonl \
+  /tmp/<work>-pages.jsonl /tmp/<work>-review.json
+node .codex/skills/pdf-to-kalliope/scripts/review-checkpoint.js verify \
+  /tmp/<work>-checkpoint.json
+```
+
+The checkpoint records HEAD, a diff hash, changed files and their hashes,
+tests, candidate reviews, finding counts and hash, inventory coverage and hash,
+and reviewer page ranges. Any later file or diff change invalidates this
+scratch checkpoint; rerun the applicable audits and create a new checkpoint.
+This does not invalidate the published XML attestation. The checkpoint refuses
+READY when the producer reviewed a completion page, a finding is `open` or
+`fixed`, a candidate category is incomplete, a page remains unreviewed or a
+recorded test has not passed.
+
 Prepare and validate the complete change, then present it to the user before
 committing or pushing.
 
@@ -1045,6 +1301,7 @@ Report concisely:
 - number of poems
 - number and kinds of prose or paratext entries
 - title-page image created
+- title-page geometry and crop QA status
 - whether a graphic front cover was created
 - referenced persons resolved
 - translations and originals identified
@@ -1059,11 +1316,17 @@ and requested commit/push, as required by `AGENTS.md`.
 
 After explicit user approval:
 
-1. Create or use an appropriate branch following `AGENTS.md`.
-2. Commit the complete intended change.
-3. Push the branch.
-4. Create the GitHub pull request.
-5. Follow all repository conventions for the branch, title and description.
+1. Generate the complete facsimile directory from the source PDF with the
+   repository's facsimile tool.
+2. Synchronize it with `./tools/sync-facsimiler.sh`.
+3. Run `npm run check-facsimiles` and verify that the public `000.jpg` for the
+   new `source/@facsimile` returns successfully. Do this before opening the PR;
+   CI checks the public server, not merely the local PDF or image directory.
+4. Create or use an appropriate branch following `AGENTS.md`.
+5. Commit the complete intended change.
+6. Push the branch.
+7. Create the GitHub pull request.
+8. Follow all repository conventions for the branch, title and description.
 
 The PR title and description must be in Danish.
 
@@ -1079,6 +1342,7 @@ The PR description must state concretely:
 - how fresh OCR and direct proofreading were performed
 - how verse structure and indentation were checked
 - which title-page and cover assets were added
+- how the title-page geometry and crop were checked
 - which persons, translations and originals were resolved
 - which validation and tests were run
 - any remaining `TODO:` notes
@@ -1097,7 +1361,15 @@ The task is complete only when all applicable items are true:
 - [ ] `AGENTS.md`, the style guide and relevant special documentation were read.
 - [ ] The complete PDF was inventoried.
 - [ ] Every PDF page was classified or otherwise accounted for.
+- [ ] The JSONL page inventory covers every relevant printed page and every row
+      is marked reviewed against the facsimile by someone other than the
+      producer.
+- [ ] The findings JSONL register preserves every finding and has no `open` or
+      `fixed` status.
 - [ ] The PDF's existing OCR layer was not trusted as the transcription source.
+- [ ] OCR working images were rendered at 300 DPI.
+- [ ] The generated facsimile was synchronized to the Kalliope server and
+      `npm run check-facsimiles` passed against the public `000.jpg`.
 - [ ] Fresh OCR was produced from page images with at least two meaningfully
       different passes or strategies.
 - [ ] Every relevant page was checked directly against the facsimile.
@@ -1120,9 +1392,11 @@ The task is complete only when all applicable items are true:
 - [ ] The title page was transcribed into the work header using readable
       capitalization rather than mechanical all-caps.
 - [ ] The title page was extracted as
-      `public/<poet-id>/<work-id>-p1.jpg`.
+      `public/images/<poet-id>/<work-id>-p1.jpg`.
+- [ ] The title-page source was classified, the page was processed with
+      `$prepare-kalliope-titlepage`, and its final QA status is `pass`.
 - [ ] A genuine separate graphic front cover, when present, was extracted as
-      `public/<poet-id>/<work-id>-p2.jpg`.
+      `public/images/<poet-id>/<work-id>-p2.jpg`.
 - [ ] `p1` is the title page and `p2` is the optional front cover regardless of
       their order in the PDF.
 - [ ] The XML references the correct image basenames and current image types.
@@ -1139,9 +1413,16 @@ The task is complete only when all applicable items are true:
 - [ ] The bundled indentation analysis was run for every poem with leading
       spaces preserved, rerun after indentation changes, and every candidate
       was resolved against the facsimile.
+- [ ] Stanza-boundary candidates were resolved before the final indentation
+      analysis, and the analysis input was regenerated from that reviewed
+      structure.
+- [ ] Every `no_stable_pattern` result was recorded and dispositioned against
+      the facsimile rather than accepted as a pass.
 - [ ] Indentation was verified visually and represented with spaces.
 - [ ] Headings, mottoes, numbers and decorations are not ordinary verse lines.
 - [ ] Footnotes are placed at the text locations to which they belong.
+- [ ] Every source footnote is transcribed verbatim from the facsimile without
+      its marker or any added referenced word or editorial explanation.
 - [ ] Notes applying to a whole poem are placed in the text header.
 - [ ] Full dates and other discoverable metadata were extracted according to
       current rules.
@@ -1149,6 +1430,15 @@ The task is complete only when all applicable items are true:
       `TODO:`.
 - [ ] The complete XML validates.
 - [ ] OCR candidate checks were reviewed.
+- [ ] OCR, page, stanza and indentation candidate totals equal their reviewed
+      totals, and the reviewer differs from the producer.
+- [ ] The semantic page audit and side-aware historical OCR profile were run on
+      the final XML.
+- [ ] The whole-work wrapper analyzed every poetry block and all candidates
+      were dispositioned.
+- [ ] A frozen review checkpoint was created and still verifies unchanged.
+- [ ] Every included text has `korrektur1,korrektur2,kilde,side`, the work is
+      `complete`, and `<workhead>` contains the independent model attestation.
 - [ ] The complete repository test suite passes.
 - [ ] `git diff --check` passes.
 - [ ] Temporary OCR and scratch files were removed.

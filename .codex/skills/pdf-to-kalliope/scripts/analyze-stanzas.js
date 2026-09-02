@@ -18,6 +18,19 @@ const knownForms = [
 
 const maxKnownFormBoundaryChanges = 2;
 
+const plainText = line =>
+  line
+    .replace(/<[^>]+>/gu, '')
+    .replace(/&nbsp;/gu, ' ')
+    .trim();
+
+const isStanzaDivider = line =>
+  line.trim() === '' ||
+  /<nonum(?:\s|>)/u.test(line) ||
+  /^\s*<wrap(?:\s|>)/u.test(line) ||
+  /^\s*-{3,}\s*$/u.test(line) ||
+  plainText(line) === '';
+
 const cumulativeBoundaries = stanzaLengths => {
   const boundaries = [];
   let line = 0;
@@ -66,7 +79,7 @@ const parseBody = body => {
   };
 
   lines.forEach(line => {
-    if (line.trim() === '') {
+    if (isStanzaDivider(line)) {
       finishStanza();
       return;
     }

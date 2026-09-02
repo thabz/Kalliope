@@ -13,7 +13,10 @@ Læs den relevante specialdokumentation før ændringer på området:
 - `docs/xml-info-format.md` ved ændringer i `fdirs/<id>/info.xml`
 - `docs/xml-portraits-format.md` ved ændringer i `portraits.xml`,
   portrætreferencer eller kvadratiske portrætter
+- `docs/titelbladsbilleder.md` ved udtræk, opretning, beskæring eller
+  kvalitetskontrol af titelbladsbilleder
 - `docs/xml-work-format.md` ved ændringer i XML-værkfiler
+- `docs/xml-biographies-format.md` ved ændringer i `fdirs/<id>/bio.xml`
 - `docs/facsimile-korrektur.md` ved transskription og fuld korrektur af tekst,
   strofer og typografi mod et facsimile
 - `docs/ocr-korrektur-laerebog.md` ved generelle læringsprincipper for redigering
@@ -50,6 +53,9 @@ Læs den relevante specialdokumentation før ændringer på området:
 ## Billeder
 
 - Portrætter og kunstgrafik ligger i `public/images/<id>/`.
+- Medtag kun en bogforside som værkbillede, når den har selvstændig grafisk eller
+  kunstnerisk interesse, fx illustration, ornamentik eller markant typografi.
+  Almindelige læderbind og andre rent funktionelle omslag skal ikke medtages.
 - Der må ikke ligge `.jpg`, `.jpeg`, `.png`, `.gif` eller `.webp` under `fdirs/`.
 - Når billedmetadata som `wikidata`, `museum`, `objid` og `invnr` opdateres, skal alle
   kilder med `<picture>` gennemgås: `content/artwork.xml`, `fdirs/<id>/artwork.xml`,
@@ -78,6 +84,7 @@ Læs den relevante specialdokumentation før ændringer på området:
   ISO 639-1-sprogkode. Sæt fortsat `lang` på `<text>`, når hele teksten har
   samme sprog.
 - Brug eksisterende attributter og formater; ukendte `<picture>`-attributter er build-fejl.
+- Identifikatorer på museum, picture og source valideres særskilt pr. entity-type.
 - Alle tekst- og XML-filer skal være UTF-8 encoded. Konvertér gamle Latin-1/ISO-8859-1-filer i stedet for at videreføre dem.
 - Formatér `info.xml`, `portraits.xml` og `artwork.xml` med
   `node tools/format-metadata-xml.js <fil>`; testpakken håndhæver det kanoniske output.

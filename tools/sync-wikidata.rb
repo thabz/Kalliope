@@ -107,6 +107,7 @@ def buildIdentifiersXml(poetId, wikidataId, doc)
   end
   addIdentifierNode(externalIds, 'P4359', 'gravsted-dk', doc, new_identifiers)
   addIdentifierNode(externalIds, 'P214', 'viaf', doc, new_identifiers)
+  addIdentifierNode(externalIds, 'P227', 'gnd', doc, new_identifiers)
   addIdentifierNode(externalIds, 'P8313', 'lex-dk', doc, new_identifiers)
   addIdentifierNode(externalIds, 'P9466', 'teaterleksikon-lex-dk', doc, new_identifiers)
   addIdentifierNode(externalIds, 'P8341', 'biografisk-leksikon-lex-dk', doc, new_identifiers)
