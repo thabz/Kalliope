@@ -13,7 +13,7 @@ import {
   safeGetAttr,
   safeGetOuterXML,
 } from './xml.js';
-import { sourceWorkFilename } from './anthologies.js';
+import { sourceWorkFilename } from './work-cache.js';
 
 const textRefTagRegexp = /<(?:xref|a)\b[^>]*(?:\bpoem|\bbible)="[^"]*"[^>]*>/g;
 
@@ -94,7 +94,8 @@ const build_textrefs = collected => {
         return;
       }
       knownFiles.add(filename);
-      if (!force_reload && !isFileModified(filename)) {
+      const fileModified = isFileModified(filename);
+      if (!force_reload && !fileModified) {
         return;
       } else {
         found_changes = true;

@@ -3,6 +3,9 @@
 <workhead>
   <title>Smaadigte</title>
   <year>1834</year>
+  <identifiers>
+    <openlibrary-work>OL42958259W</openlibrary-work>
+  </identifiers>
   <pictures>
     <picture type="titlepage" src="1834-p1.jpg">Titelbladet til <i>Smaadigte</i> (1834). ,,Smaadigte / af / Carl Bagger // Kjøbenhavn. / Trykt, paa Forfatterens Forlag, hos C. G. Schiellerup. / 1834.''</picture>
   </pictures>
@@ -2230,6 +2233,7 @@ Tjene til Papillot.
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
 
@@ -2240,7 +2244,9 @@ Tjene til Papillot.
   <source pages="80-85"/>
   <quality>kilde,side,korrektur1</quality>
   <!-- Måske indsæt et portræt af polske Kosciuzko -->
-  <!-- Find Ovid citatet -->
+  <notes>
+    <note>Mottoet er fra Ovids <xref poem="ovid2026083002,327-328"/>.</note>
+  </notes>
 </head>
 <body>
 <poetry>

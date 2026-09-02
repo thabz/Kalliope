@@ -20,6 +20,28 @@ describe('source digital URL helpers', () => {
     );
   });
 
+  it('builds a KB digital permalink from kb-alma when href is absent', () => {
+    const sourceNode = parseSource(
+      '<source><identifiers><kb-alma>99125466878705763</kb-alma></identifiers>Kilde</source>'
+    );
+
+    expect(collectSourceDigitalUrl(sourceNode)).toBe(
+      'https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99125466878705763'
+    );
+    expect(resolveSourceDigitalUrl({ sourceNode })).toBe(
+      'https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99125466878705763'
+    );
+  });
+
+  it('prefers an explicit href over a kb-alma permalink', () => {
+    const sourceNode = parseSource(
+      '<source href="https://example.com"><identifiers><kb-alma>99125466878705763</kb-alma></identifiers>Kilde</source>'
+    );
+
+    expect(collectSourceDigitalUrl(sourceNode)).toBe('https://example.com');
+    expect(resolveSourceDigitalUrl({ sourceNode })).toBe('https://example.com');
+  });
+
   it('uses inherited source-url when source node lacks explicit href', () => {
     const sourceNode = parseSource('<source>Kilde</source>');
 

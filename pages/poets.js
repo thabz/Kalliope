@@ -36,6 +36,13 @@ const poetListItem = (poet) => {
   };
 };
 
+const periodPoetListItem = (poet) => {
+  return {
+    ...poetListItem(poet),
+    literaryPeriods: poet.literary_periods,
+  };
+};
+
 const groupsByLetter = (poets, lang, country) => {
   let groups = new Map();
 
@@ -114,15 +121,15 @@ const groupsByYear = (poets, lang, country) => {
   return sortedGroups.sort(Sorting.poetYearSectionsByTitle);
 };
 
-const groupsByLiteraryPeriod = (periods, lang, country) => {
+const groupsByLiteraryPeriod = (periods, poets, lang, country) => {
   return periods
     .filter(
       period => period.countries.includes(country)
     )
     .map((period) => {
-      const items = period.poets
-        .filter((poet) => poet.country === country)
+      const items = poets
         .filter((poet) => poet.type === 'poet')
+        .filter((poet) => poet.literaryPeriods.includes(period.id))
         .sort(Sorting.poetsByLastnameForCountry(country));
       return {
         title: period.title[lang] ?? period.title.da,
@@ -163,7 +170,7 @@ const Poets = (props) => {
       ? groupsByLetter(poets, lang, country)
       : groupBy === 'year'
         ? groupsByYear(poets, lang, country)
-        : groupsByLiteraryPeriod(periods, lang, country);
+        : groupsByLiteraryPeriod(periods, poets, lang, country);
 
   let sections = [];
 
@@ -260,17 +267,27 @@ const Poets = (props) => {
 };
 
 Poets.getInitialProps = async ({ query: { lang, country, groupBy } }) => {
-  const json =
+  const [poetsJson, periodsJson] =
     groupBy === 'period'
-      ? await Client.literaryPeriods()
-      : await Client.poets(country);
+      ? await Promise.all([Client.poets(country), Client.literaryPeriods()])
+      : [await Client.poets(country), null];
   return {
     lang,
     country,
     groupBy,
-    poets: json.poets == null ? null : json.poets.map(poetListItem),
-    periods: json.periods ?? null,
-    error: json.error,
+    poets:
+      poetsJson.poets == null
+        ? null
+        : poetsJson.poets.map(
+            groupBy === 'period' ? periodPoetListItem : poetListItem
+          ),
+    periods:
+      periodsJson == null
+        ? null
+        : periodsJson.periods.filter(period =>
+            period.countries.includes(country)
+          ),
+    error: poetsJson.error ?? periodsJson?.error,
   };
 };
 

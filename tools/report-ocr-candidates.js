@@ -90,6 +90,7 @@ const removeIgnoredXml = text =>
       preserveLineBreaks
     )
     .replace(/<note\b[\s\S]*?<\/note>/g, preserveLineBreaks)
+    .replace(/<footnote\b[\s\S]*?<\/footnote>/g, preserveLineBreaks)
     .replace(/<picture\b[\s\S]*?<\/picture>/g, preserveLineBreaks);
 
 const removeXmlMarkup = text =>
@@ -437,7 +438,9 @@ const findMojibakeCandidatesInFile = ({ filename, text, minDate = null }) => {
   const seenCandidates = new Map();
   const blocks = textBlocks(text);
   const ignoredForWork = workIgnoredTests(text);
-  const lines = removeXmlMarkup(text).split('\n');
+  const lines = removeXmlMarkup(
+    text.replace(/<footnote\b[\s\S]*?<\/footnote>/g, preserveLineBreaks)
+  ).split('\n');
 
   lines.forEach((lineText, index) => {
     const line = index + 1;

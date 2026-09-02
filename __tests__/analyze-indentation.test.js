@@ -251,6 +251,132 @@ describe('indentation candidate analysis', () => {
     expect(result.candidates).toEqual([]);
   });
 
+  it('checks an opening capital against the profile of later stanzas', () => {
+    const result = analyzeIndentation({
+      body: bodyWithStanzaProfiles([
+        [7, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        Array(12).fill(0),
+        Array(12).fill(0),
+        Array(12).fill(0),
+      ]),
+    });
+
+    expect(result.sections[0]).toMatchObject({
+      analysis_basis: 'stanza',
+      dominant_pattern: Array(12).fill(0),
+    });
+    expect(result.candidates).toEqual([
+      expect.objectContaining({
+        type: 'possible_stanza_indentation_mismatch',
+        verse_line_start: 1,
+        verse_line_end: 12,
+        expected_profile: Array(12).fill(0),
+        observed_profile: [7, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        confidence: 'likely',
+      }),
+    ]);
+  });
+
+  it('finds scattered line mismatches in two minority stanzas', () => {
+    const regular = [0, 4, 0, 4, 0, 0];
+    const result = analyzeIndentation({
+      body: bodyWithStanzaProfiles([
+        [0, 0, 0, 4, 0, 0],
+        [0, 4, 0, 0, 8, 0],
+        regular,
+        regular,
+        regular,
+      ]),
+    });
+
+    expect(result.sections[0]).toMatchObject({
+      analysis_basis: 'stanza',
+      dominant_pattern: regular,
+    });
+    expect(result.candidates).toEqual([
+      expect.objectContaining({
+        type: 'possible_stanza_indentation_mismatch',
+        verse_line_start: 1,
+        verse_line_end: 6,
+        expected_profile: regular,
+        observed_profile: [0, 0, 0, 4, 0, 0],
+        mismatches: [
+          { verse_line: 2, stanza_position: 2, expected: 4, observed: 0 },
+        ],
+        confidence: 'possible',
+      }),
+      expect.objectContaining({
+        type: 'possible_stanza_indentation_mismatch',
+        verse_line_start: 7,
+        verse_line_end: 12,
+        expected_profile: regular,
+        observed_profile: [0, 4, 0, 0, 8, 0],
+        mismatches: [
+          { verse_line: 10, stanza_position: 4, expected: 4, observed: 0 },
+          { verse_line: 11, stanza_position: 5, expected: 0, observed: 8 },
+        ],
+        confidence: 'possible',
+      }),
+    ]);
+  });
+
+  it('flags rare opening capital offsets without a stable stanza pattern', () => {
+    const result = analyzeIndentation({
+      body: bodyWithStanzaProfiles([
+        [7, 0, 8, 0, 2, 0, 0, 0, 0, 0, 0, 2],
+        [0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0],
+        Array(21).fill(0).map((value, index) =>
+          [4, 10, 16].includes(index) ? 2 : value
+        ),
+      ]),
+    });
+
+    expect(result.candidates).toEqual([
+      expect.objectContaining({
+        type: 'possible_opening_capital_indentation',
+        verse_line_start: 1,
+        verse_line_end: 3,
+        expected_profile: [2, 0, 2],
+        observed_profile: [7, 0, 8],
+        confidence: 'likely',
+      }),
+    ]);
+  });
+
+  it('uses a strong zero baseline for an opening capital candidate', () => {
+    const result = analyzeIndentation({
+      body: bodyWithStanzaProfiles([
+        [4, 0, 5, ...Array(12).fill(0)],
+        Array(15).fill(0),
+        Array(15).fill(0),
+      ]),
+    });
+
+    expect(result.candidates).toEqual([
+      expect.objectContaining({
+        type: 'possible_opening_capital_indentation',
+        expected_profile: [0, 0, 0],
+        observed_profile: [4, 0, 5],
+      }),
+    ]);
+  });
+
+  it('does not flag an opening offset repeated later in the poem', () => {
+    const result = analyzeIndentation({
+      body: bodyWithStanzaProfiles([
+        [7, 0, 8, 0, 2, 0, 0, 0],
+        [0, 2, 0, 7, 0, 8, 0, 2],
+        [0, 2, 0, 2, 0, 2, 0, 2],
+      ]),
+    });
+
+    expect(
+      result.candidates.filter(
+        candidate => candidate.type === 'possible_opening_capital_indentation'
+      )
+    ).toEqual([]);
+  });
+
   it('finds an Egelunden-style shift across repeated stanzas', () => {
     const regular = [0, 15, 9, 9];
     const shifted = regular.map(indentation => indentation + 14);
@@ -613,7 +739,7 @@ describe('indentation candidate analysis', () => {
       body => analyzeIndentation({ body }).candidates
     );
 
-    expect(candidates).toHaveLength(4);
+    expect(candidates).toHaveLength(6);
     expect(candidates.every(candidate => candidate.confidence === 'possible')).toBe(
       true
     );

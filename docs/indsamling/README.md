@@ -80,17 +80,17 @@ Den første kommando parser de gemte JSON- og HTML-snapshots. `--fetch` henter
 forfatterindexet igen. Output ligger i collectorens `parsed/`-mappe og under
 `tools/data/indsamling/nordisk-kvindelitteraturhistorie/manifest.json`.
 
-### Samlet kandidatregister
+### Dækningsregistre for digtere og værker
 
 ```sh
-npm run candidate-register
-npm run candidate-register -- --fetch
+npm run sync-literary-registers
+npm run sync-literary-registers -- --fetch
 ```
 
-Kørsel uden options samler de allerede hentede Kalliope-, DFL- og Wikidata-
-snapshots offline. `--fetch` henter DFL- og Wikidata-data igen og opdaterer de
-lokale caches. Hvis begge options angives, vinder `--fetch`. Begge tilstande
-skriver det samlede register samt overlap- og vurderingsrapporter.
+Kørsel uden options opdaterer de to permanente JSONL-dækningsregistre fra den
+lokale DFL-cache.
+`--fetch` opdaterer først den afgrænsede DFL-cache. Eksisterende berigelse og
+redaktionelle felter bevares; synkroniseringen sletter ikke poster automatisk.
 
 Dansk Kvindebiografisk Leksikon er endnu ikke høstet og har derfor ingen
 collector-kommando.
