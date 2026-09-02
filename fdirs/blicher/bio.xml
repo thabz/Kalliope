@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bio>
+  <biographies>
+    <biography hidden="true">
+      <head>
+        <author>Sven Sørensen</author>
+      </head>
+      <body>
+St. St. Blicher er nok mest kendt for sine noveller, men han skrev også lyrik. Dårlig lyrik. Indtil <a work="blicher/1838"><i>Trækfuglene</i> (1838)</a> som indeholder nogle helt fabelagtige digte.
+      </body>
+    </biography>
+    <biography>
   <head>
     <source href="https://www.rosekamp.dk/DBL_All/dansk_biografisk_leksikon.htm">Georg Christensen in: <i>Dansk biografisk Lexikon</i>, Gyldendalske Boghandels Forlag, Kbh., 2. udg., 1932-44, bd. III, pp. 230-244.</source>
   </head>
@@ -34,8 +44,7 @@ Blicher har sin Rod i det 18. Aarh. og ganske særlig i dettes vesteuropæiske A
 
 
 </body>
-</bio>
 
-<!--
-St. St. Blicher er nok mest kendt for sine noveller, men han skrev også lyrik. Dårlig lyrik. Indtil <a work="blicher/1838"><i>Trækfuglene</i> (1838)</a> som indeholder nogle helt fabelagtige digte.
--->
+    </biography>
+  </biographies>
+</bio>

@@ -9,9 +9,39 @@ import Page from '../components/page.js';
 import SidebarPictures from '../components/sidebarpictures.js';
 import SidebarSplit from '../components/sidebarsplit.js';
 import Stack from '../components/stack.js';
+import Source from '../components/source.js';
 import SubHeading from '../components/subheading.js';
 import TextContent from '../components/textcontent.js';
 import ErrorPage from './error.js';
+
+const KeywordSources = ({ sources, lang }) => {
+  if (sources == null || sources.length === 0) {
+    return null;
+  }
+  return (
+    <footer className="keyword-sources" aria-label={_('Kilde', lang)}>
+      {sources.map((source, index) => (
+        <div className="source" key={index}>
+          <Source
+            contentHtml={source.content_html}
+            href={source.href}
+            lang={lang}
+          />
+        </div>
+      ))}
+      <style jsx>{`
+        .keyword-sources {
+          margin-bottom: 40px;
+          font-size: 0.8em;
+          text-align: right;
+        }
+        .source {
+          margin-top: 0.6em;
+        }
+      `}</style>
+    </footer>
+  );
+};
 
 const KeywordPage = (props) => {
   const { lang, keyword, error } = props;
@@ -75,6 +105,7 @@ const KeywordPage = (props) => {
                   lang={lang}
                 />
               </div>
+              <KeywordSources sources={keyword.sources} lang={lang} />
             </article>
           </div>
         </SidebarSplit>

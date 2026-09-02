@@ -1,4 +1,7 @@
-import { safeGetAttr } from './xml.js';
+import { getChildByTagName, safeGetAttr } from './xml.js';
+
+const kbDigitalPermalink = (recordId) =>
+  `https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma${encodeURIComponent(recordId)}`;
 
 const normalizeUrl = (url) => (url == null ? null : url.trim());
 
@@ -61,6 +64,13 @@ const preferPreferredDigitalUrl = (urls) => {
   return digitalUrl;
 };
 
+const getKbAlmaIdentifier = (sourceNode) => {
+  const identifiersNode = getChildByTagName(sourceNode, 'identifiers');
+  const kbAlmaNode = getChildByTagName(identifiersNode, 'kb-alma');
+  const recordId = kbAlmaNode?.textContent?.trim();
+  return recordId == null || recordId.length === 0 ? null : recordId;
+};
+
 export const resolveSourceDigitalUrl = ({
   sourceNode,
   inheritedDigitalUrl,
@@ -70,11 +80,24 @@ export const resolveSourceDigitalUrl = ({
   if (explicitDigitalUrl != null && explicitDigitalUrl.length > 0) {
     return explicitDigitalUrl.trim();
   }
+  const kbAlma = getKbAlmaIdentifier(sourceNode);
+  if (kbAlma != null) {
+    return kbDigitalPermalink(kbAlma);
+  }
   return preferPreferredDigitalUrl(inheritedDigitalUrl);
 };
 
-export const collectSourceDigitalUrl = (sourceNode) =>
-  sourceNode == null ? null : normalizeUrl(safeGetAttr(sourceNode, 'href'));
+export const collectSourceDigitalUrl = (sourceNode) => {
+  if (sourceNode == null) {
+    return null;
+  }
+  const explicitDigitalUrl = normalizeUrl(safeGetAttr(sourceNode, 'href'));
+  if (explicitDigitalUrl != null && explicitDigitalUrl.length > 0) {
+    return explicitDigitalUrl;
+  }
+  const kbAlma = getKbAlmaIdentifier(sourceNode);
+  return kbAlma == null ? null : kbDigitalPermalink(kbAlma);
+};
 
 export const resolveSourceDigitalUrlForText = ({
   sourceNode,

@@ -40,6 +40,7 @@ så afvigende formatering ikke kan merges.
   <identifiers>
     <wikidata>Q5879</wikidata>
     <viaf>24602065</viaf>
+    <gnd>1073490319</gnd>
   </identifiers>
 </person>
 ```
@@ -210,6 +211,7 @@ portrætter, artwork, bio eller mentions.
   <wikipedia-de>Hans Christian Andersen</wikipedia-de>
   <gravsted-dk>hcandersen</gravsted-dk>
   <viaf>4925902</viaf>
+  <gnd>1073490319</gnd>
   <lex-dk>H.C._Andersen</lex-dk>
   <teaterleksikon-lex-dk>H.C._Andersen</teaterleksikon-lex-dk>
   <biografisk-leksikon-lex-dk>H.C._Andersen</biografisk-leksikon-lex-dk>
@@ -228,6 +230,7 @@ Almindelige felter:
 - `<wikidata>`
 - `<wikipedia-da>`, `<wikipedia-en>`, `<wikipedia-fr>` og `<wikipedia-de>`
 - `<viaf>`
+- `<gnd>`
 - `<gravsted-dk>`
 - `<lex-dk>`
 - `<teaterleksikon-lex-dk>`

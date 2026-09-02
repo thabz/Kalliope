@@ -304,6 +304,7 @@ const stanzaPatternModel = section => {
   }
 
   const expectedProfile = Array(section.indentations.length).fill(null);
+  const profileMismatches = [];
   definitions.forEach(definition => {
     definition.stanzas.forEach((stanza, stanzaIndex) => {
       const offset = stanza.verseLineStart - section.verseLineStart;
@@ -313,6 +314,57 @@ const stanzaPatternModel = section => {
         ];
       definition.normalized.forEach((indentation, index) => {
         expectedProfile[offset + index] = indentation + baseline;
+      });
+    });
+  });
+
+  const definitionsByLength = new Map();
+  definitions.forEach(definition => {
+    const matching = definitionsByLength.get(definition.stanzaLength) ?? [];
+    matching.push(definition);
+    definitionsByLength.set(definition.stanzaLength, matching);
+  });
+  definitionsByLength.forEach((matchingDefinitions, stanzaLength) => {
+    if (matchingDefinitions.length !== 1) {
+      return;
+    }
+    const definition = matchingDefinitions[0];
+    const sameLengthStanzas = section.stanzas.filter(
+      stanza => stanza.indentations.length === stanzaLength
+    );
+    if (
+      sameLengthStanzas.length < 4 ||
+      definition.occurrences / sameLengthStanzas.length <= 0.5
+    ) {
+      return;
+    }
+    const knownStanzas = new Set(definition.stanzas);
+    sameLengthStanzas.forEach(stanza => {
+      if (knownStanzas.has(stanza)) {
+        return;
+      }
+      const offset = stanza.verseLineStart - section.verseLineStart;
+      const expected = definition.pattern;
+      expected.forEach((indentation, index) => {
+        expectedProfile[offset + index] = indentation;
+      });
+      profileMismatches.push({
+        expected,
+        mismatches: expected.flatMap((indentation, index) => {
+          const observed = stanza.indentations[index];
+          if (observed === indentation) {
+            return [];
+          }
+          return [{
+            expected: indentation,
+            observed,
+            stanzaPosition: index + 1,
+            verseLine: stanza.verseLineStart + index,
+          }];
+        }),
+        observed: stanza.indentations,
+        outlierCount: sameLengthStanzas.length - definition.occurrences,
+        stanza,
       });
     });
   });
@@ -326,6 +378,7 @@ const stanzaPatternModel = section => {
     expectedProfile,
     pattern: definitions[0].pattern,
     patternLength: definitions[0].stanzaLength,
+    profileMismatches,
     residuals,
     runs: constantRuns(residuals),
   };
@@ -379,6 +432,7 @@ const stanzaPositionPatternModel = section => {
     expectedProfile,
     pattern,
     patternLength: stanzaLength,
+    profileMismatches: [],
     residuals,
     runs: constantRuns(residuals),
   };
@@ -396,6 +450,7 @@ const periodicPatternModel = section => {
     ...model,
     basis: 'periodic',
     definitions: [],
+    profileMismatches: [],
     expectedProfile: section.indentations.map(
       (_, index) => model.pattern[index % model.patternLength]
     ),
@@ -450,6 +505,36 @@ const analyzeSection = ({ pageBreaks, section }) => {
       },
       model,
     };
+  });
+  model.profileMismatches.forEach(mismatch => {
+    const verseLineStart = mismatch.stanza.verseLineStart;
+    const verseLineEnd = mismatch.stanza.verseLineEnd;
+    const atPageBreak = pageBreaks.has(verseLineStart);
+    candidateDetails.push({
+      candidate: {
+        type: 'possible_stanza_indentation_mismatch',
+        section_number: section.number,
+        verse_line_start: verseLineStart,
+        verse_line_end: verseLineEnd,
+        expected_profile: mismatch.expected,
+        observed_profile: mismatch.observed,
+        mismatches: mismatch.mismatches.map(item => ({
+          verse_line: item.verseLine,
+          stanza_position: item.stanzaPosition,
+          expected: item.expected,
+          observed: item.observed,
+        })),
+        at_page_break: atPageBreak,
+        confidence: atPageBreak
+          ? mismatch.outlierCount === 1 ? 'strong' : 'likely'
+          : mismatch.outlierCount === 1 ? 'likely' : 'possible',
+        reason:
+          'Strofens indrykningsprofil afviger fra mindst tre andre strofer med samme linjeantal og fælles profil.',
+        action:
+          'Kontrollér især kapitæler, drop caps og korte linjer mod facsimilet; ret kun indrykningen, hvis trykket bekræfter afvigelsen.',
+      },
+      model,
+    });
   });
 
   return {
@@ -512,6 +597,83 @@ const sectionBoundaryCandidates = sectionAnalyses => {
   return candidates;
 };
 
+const openingCapitalCandidates = parsed => {
+  const section = parsed.sections[0];
+  const stanza = section?.stanzas[0];
+  if (
+    section == null ||
+    stanza == null ||
+    section.verseLineStart !== 1 ||
+    stanza.verseLineStart !== 1 ||
+    parsed.verseLines.length < 20
+  ) {
+    return [];
+  }
+
+  const smallIndentationCounts = new Map();
+  section.indentations.forEach(indentation => {
+    if (indentation > 0 && indentation <= 4) {
+      smallIndentationCounts.set(
+        indentation,
+        (smallIndentationCounts.get(indentation) ?? 0) + 1
+      );
+    }
+  });
+  let [dominantIndentation, dominantCount] = [...smallIndentationCounts]
+    .sort(
+      (left, right) => right[1] - left[1] || left[0] - right[0]
+    )[0] ?? [null, 0];
+  if (dominantCount < 4) {
+    const zeroCount = section.indentations.filter(
+      indentation => indentation === 0
+    ).length;
+    [dominantIndentation, dominantCount] = [0, zeroCount];
+  }
+  if (
+    (dominantIndentation === 0 && dominantCount < 12) ||
+    (dominantIndentation !== 0 && dominantCount < 4)
+  ) {
+    return [];
+  }
+
+  const openingLimit = Math.min(4, stanza.indentations.length);
+  const unusualIndexes = section.indentations
+    .map((indentation, index) => ({ indentation, index }))
+    .filter(item => item.indentation >= dominantIndentation + 4);
+  if (
+    unusualIndexes.length < 1 ||
+    unusualIndexes.length > 2 ||
+    unusualIndexes.some(item => item.index >= openingLimit) ||
+    unusualIndexes[0].index !== 0 ||
+    /^\p{Lu}/u.test(parsed.verseLines[0].text) === false
+  ) {
+    return [];
+  }
+
+  const end = unusualIndexes.at(-1).index + 1;
+  const observedProfile = section.indentations.slice(0, end);
+  const unusual = new Set(unusualIndexes.map(item => item.index));
+  const expectedProfile = observedProfile.map((indentation, index) =>
+    unusual.has(index) ? dominantIndentation : indentation
+  );
+  return [
+    {
+      type: 'possible_opening_capital_indentation',
+      section_number: section.number,
+      verse_line_start: 1,
+      verse_line_end: end,
+      expected_profile: expectedProfile,
+      observed_profile: observedProfile,
+      at_page_break: false,
+      confidence: 'likely',
+      reason:
+        `Kun åbningens kapitællinje${unusualIndexes.length === 1 ? '' : 'r'} bruger markant større indrykninger end tekstens gentagne indrykning på ${dominantIndentation} mellemrum. Det kan skyldes OCR-koordinater omkring en kapitæl eller drop cap.`,
+      action:
+        'Kontrollér åbningen mod facsimilet og de senere strofer; ret kun indrykningen, hvis satsen bekræfter den gentagne profil.',
+    },
+  ];
+};
+
 const analyzeIndentation = input => {
   if (input == null || typeof input !== 'object' || Array.isArray(input)) {
     throw new TypeError(
@@ -538,7 +700,7 @@ const analyzeIndentation = input => {
     ...section,
     ...analyzeSection({ pageBreaks, section }),
   }));
-  const candidates = [
+  let candidates = [
     ...sectionAnalyses.flatMap(section =>
       section.candidateDetails.map(detail => detail.candidate)
     ),
@@ -548,6 +710,9 @@ const analyzeIndentation = input => {
       left.verse_line_start - right.verse_line_start ||
       left.type.localeCompare(right.type)
   );
+  if (candidates.length === 0) {
+    candidates = openingCapitalCandidates(parsed);
+  }
   const stableSectionCount = sectionAnalyses.filter(
     section => section.dominantPattern != null
   ).length;

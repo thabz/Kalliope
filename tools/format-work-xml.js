@@ -25,6 +25,39 @@ const anyStructuralTagPattern = new RegExp(
   'g',
 );
 
+const metadataFields = [
+  'breadcrumbtitle',
+  'dates',
+  'firstline',
+  'form',
+  'indextitle',
+  'keywords',
+  'linktitle',
+  'metre',
+  'nofirstline',
+  'notes',
+  'pagebreaks',
+  'pictures',
+  'proofreadings',
+  'quality',
+  'rhyme',
+  'source',
+  'structure',
+  'subtitle',
+  'suptitle',
+  'syllables',
+  'title',
+  'toctitle',
+  'year',
+];
+
+const metadataFieldPattern = metadataFields.join('|');
+const adjacentMetadataFieldsPattern = new RegExp(
+  `(<(?:${metadataFieldPattern})(?:[ \\t][^<>]*)?\\/>|` +
+    `<\\/(?:${metadataFieldPattern})>)(?=<(?:${metadataFieldPattern})(?:[ \\t>/]))`,
+  'g',
+);
+
 export const structuralTagsOutsideColumnZero = xml => {
   const violations = [];
   let match;
@@ -41,7 +74,7 @@ export const structuralTagsOutsideColumnZero = xml => {
 
 const addTextSpacing = xml =>
   xml.replace(
-    /(<\/text>)\r?\n(?:[ \t]*\r?\n)*(?=<text(?:[ \t>]))/g,
+    /(<\/text>)\r?\n(?:[ \t]*\r?\n)*/g,
     '$1\n\n',
   );
 
@@ -55,6 +88,93 @@ const addSectionSpacing = xml =>
       /(<\/section>)\r?\n(?:[ \t]*\r?\n)*/g,
       '$1\n\n',
     );
+
+const splitAdjacentMetadataFields = xml =>
+  xml.replace(adjacentMetadataFieldsPattern, '$1\n');
+
+const splitAnalysisMetadata = xml => xml
+  .replace(
+    /(<(?:form|metre|rhyme|structure|syllables)(?:[ \t][^<>]*)?>)(?!\r?\n)/g,
+    '$1\n',
+  )
+  .replace(/(<analysis\b[^<>]*\/>)(?!\r?\n)/g, '$1\n');
+
+const splitProofreadings = xml => xml
+  .replace(/(<proofreadings>)(?!\r?\n)/g, '$1\n')
+  .replace(/(<proofreading\b[^<>]*\/>)(?!\r?\n)/g, '$1\n');
+
+const nonumWrapperNames = [
+  'nonum',
+  'center',
+  'right',
+  'wrap',
+  'small',
+  'i',
+  'w',
+  'b',
+  'sc',
+  'span',
+];
+const nonumWrapperAlternation = nonumWrapperNames.join('|');
+
+const normalizeLineWrappers = xml => xml.split(/\r?\n/).map(line => {
+  const pageBreakPrefix = line.match(/^(?:<pb\b[^>]*\/>)+/)?.[0] ?? '';
+  let content = line.slice(pageBreakPrefix.length);
+  const wrappers = [];
+  const openingPattern = new RegExp(
+    `^<(${nonumWrapperAlternation})(?:[ \\t][^<>]*)?>`,
+  );
+
+  while (true) {
+    const opening = content.match(openingPattern);
+    if (opening == null) {
+      break;
+    }
+    const closingMarkup = `</${opening[1]}>`;
+    if (content.endsWith(closingMarkup) !== true) {
+      break;
+    }
+    wrappers.push({ markup: opening[0], name: opening[1] });
+    content = content.slice(opening[0].length, -closingMarkup.length);
+  }
+
+  if (wrappers.length === 0) {
+    return line;
+  }
+
+  const lineMarkers = wrappers.filter(wrapper => wrapper.name === 'nonum');
+  const alignments = wrappers.filter(
+    wrapper => wrapper.name === 'center' || wrapper.name === 'right',
+  );
+  const wraps = wrappers.filter(wrapper => wrapper.name === 'wrap');
+  const appearances = wrappers.filter(
+    wrapper =>
+      wrapper.name !== 'nonum' &&
+      wrapper.name !== 'center' &&
+      wrapper.name !== 'right' &&
+      wrapper.name !== 'wrap',
+  );
+  const canonicalWrappers = [
+    ...lineMarkers,
+    ...alignments,
+    ...wraps,
+    ...appearances,
+  ];
+  const canonicalOpening = canonicalWrappers
+    .map(wrapper => wrapper.markup)
+    .join('');
+  const canonicalClosing = canonicalWrappers
+    .toReversed()
+    .map(wrapper => `</${wrapper.name}>`)
+    .join('');
+
+  return `${pageBreakPrefix}${canonicalOpening}${content}${canonicalClosing}`;
+}).join('\n');
+
+const splitPoetryLines = xml =>
+  normalizeLineWrappers(xml)
+    .replace(/(<poetry(?:[ \t][^<>]*)?>)(?!\r?\n)/g, '$1\n')
+    .replace(/<\/nonum>(?!\r?\n)/g, '</nonum>\n');
 
 const indentMetadata = xml => {
   let metadataDepth = 0;
@@ -99,7 +219,13 @@ const indentMetadata = xml => {
 
 export const formatWorkXml = xml => {
   const withoutStructuralIndentation = xml.replace(structuralTagPattern, '');
-  const withMetadataIndentation = indentMetadata(withoutStructuralIndentation);
+  const withSplitMetadata = splitAdjacentMetadataFields(
+    withoutStructuralIndentation,
+  );
+  const withPoetryLines = splitPoetryLines(
+    splitProofreadings(splitAnalysisMetadata(withSplitMetadata)),
+  );
+  const withMetadataIndentation = indentMetadata(withPoetryLines);
   return addSectionSpacing(addTextSpacing(withMetadataIndentation))
     .trimEnd() + '\n';
 };

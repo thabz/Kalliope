@@ -5,7 +5,6 @@ import {
   isAnthologyText,
   publicationTextId,
   resolveAuthorId,
-  sourceWorkFilename,
   worksForPoet,
 } from '../tools/build-static/anthologies.js';
 import { workName } from '../tools/build-static/formatting.js';
@@ -73,10 +72,35 @@ describe('antologiplaceringer', () => {
     expect(toc[0].content[0].id).toBe('solnedganga');
   });
 
+  it('medtager en prosatekst i værkets indholdsfortegnelse', () => {
+    const doc = new DOMParser().parseFromString(
+      `<kalliopework author="molbech">
+        <workbody>
+          <text id="molbech1851indledning">
+            <head><title>Indledning</title></head>
+            <body><prose>Prosatekst.</prose></body>
+          </text>
+        </workbody>
+      </kalliopework>`,
+      'text/xml'
+    );
+
+    const workbody = doc.getElementsByTagName('workbody')[0];
+    const toc = build_section_toc(workbody, 'molbech');
+
+    expect(toc).toHaveLength(1);
+    expect(toc[0]).toMatchObject({
+      type: 'text',
+      id: 'molbech1851indledning',
+    });
+    expect(toc[0].title[0][0]).toBe('Indledning');
+  });
+
   it('genkender en anden tekstforfatter og danner udgivelses-id', () => {
     expect(isAnthologyText('arnesen-kall', 'antologierdk')).toBe(true);
     expect(isAnthologyText('antologierdk', 'antologierdk')).toBe(false);
     expect(isAnthologyText(null, 'antologierdk')).toBe(false);
+    expect(isAnthologyText('winther', null)).toBe(false);
     expect(publicationTextId('antologierdk2026071901')).toBe(
       'antologierdk2026071901a'
     );
@@ -141,9 +165,6 @@ describe('antologiplaceringer', () => {
       'fdirs/antologierdk/1872.xml',
     ]);
     expect(worksForPoet(collected, 'arnesen-kall')).toEqual([work]);
-    expect(sourceWorkFilename(work.sections[0].texts[0])).toBe(
-      'fdirs/antologierdk/1872.xml'
-    );
     expect(workName(work.sections[0].work)).toBe(
       'Blade fra danske Kvinder (1872)'
     );
