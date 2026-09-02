@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="andre" author="kellgren" status="incomplete" type="poetry">
 <workhead>
-   <title>Andre digte</title>
-   <quality>korrektur1</quality>
+  <title>Andre digte</title>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
 <text id="kellgren2018073101">
 <head>
-   <title>Varning till Zemir</title>
-   <firstline>Zemir! hur länge tror du väl</firstline>
-   <notes>
-       <note>Teksten følger Johan Henric Kellgren: <i>Skrifter</i>, Svenska Akademien, 1995, Bd. I, pp. 231-232.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Varning till Zemir</title>
+  <firstline>Zemir! hur länge tror du väl</firstline>
+  <source pages="231-232">Johan Henric Kellgren: <i>Skrifter</i>, Svenska Akademien, 1995, Bd. I.</source>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -76,12 +74,10 @@ Vi skall du ömt begär, förutan ungdom giva?
 
 <text id="kellgren2018073102">
 <head>
-   <title>Saknaden</title>
-   <firstline>Ensam, i min hyddas famn</firstline>
-   <notes>
-       <note>Teksten følger Johan Henric Kellgren: <i>Skrifter</i>, Svenska Akademien, 1995, Bd. I, p. 108.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Saknaden</title>
+  <firstline>Ensam, i min hyddas famn</firstline>
+  <source pages="108">Johan Henric Kellgren: <i>Skrifter</i>, Svenska Akademien, 1995, Bd. I.</source>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -117,12 +113,10 @@ Vid Serafers salighet.
 
 <text id="kellgren2026072301">
 <head>
-   <title>På musiken av Haydns Roxelane</title>
-   <firstline>Blodet brinner, hjärtat hoppar</firstline>
-   <notes>
-       <note>Teksten følger Johan Henric Kellgren: <i>Skrifter</i>, Svenska Akademien, 1995, Bd. I, pp. 109-110.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>På musiken av Haydns Roxelane</title>
+  <firstline>Blodet brinner, hjärtat hoppar</firstline>
+  <source pages="109-110">Johan Henric Kellgren: <i>Skrifter</i>, Svenska Akademien, 1995, Bd. I.</source>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -177,11 +171,10 @@ I Tartarens öcken, Bröder!
 </body>
 </text>
 
-
 <text id="kellgren2020013001">
 <head>
-    <title>Mina löjen</title>
-    <firstline>Jag ler - o gudar, nöjets gudar!</firstline>
+  <title>Mina löjen</title>
+  <firstline>Jag ler - o gudar, nöjets gudar!</firstline>
 </head>
 <body>
 <poetry>

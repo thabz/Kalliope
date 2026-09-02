@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="andre" author="bering" status="incomplete" type="poetry">
 <workhead>
-   <title>Andre digte</title>
-   <quality>korrektur1</quality>
+  <title>Andre digte</title>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
 <text id="bering2002111401">
 <head>
-   <title>Offver det Ostindiske Skibs lyckelig Hiemkomst</title>
-   <toctitle>Offver det Ostindiske Skibs lyckelig Hiemkomst</toctitle>
-   <indextitle>Offver det Ostindiske Skibs lyckelig Hiemkomst</indextitle>
-   <firstline>Velkommen hiem vort Skib; Velkommen hiem til Lande</firstline>
-   <notes>
-      <note>Trykt 1670.</note>
-      <note>Indtastet efter Viggo J. von Holstein Rathlou: <i>Dansk Renaissance Digtning</i>, Kbh., 1914, pp. 30-31.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Offver det Ostindiske Skibs lyckelig Hiemkomst</title>
+  <toctitle>Offver det Ostindiske Skibs lyckelig Hiemkomst</toctitle>
+  <indextitle>Offver det Ostindiske Skibs lyckelig Hiemkomst</indextitle>
+  <firstline>Velkommen hiem vort Skib; Velkommen hiem til Lande</firstline>
+  <notes>
+    <note>Trykt 1670.</note>
+  </notes>
+  <source pages="30-31">Viggo J. von Holstein Rathlou: <i>Dansk Renaissance Digtning</i>, Kbh., 1914.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -75,17 +75,17 @@ Beklæde mange Aar sit Kongelige Sæde /
 
 <text id="bering2002111601">
 <head>
-   <title>Brudgommen M. Bering Svarer Poëten M. Bording til hans Brøllups-Vers</title>
-   <toctitle>Brudgommen M. Bering Svarer <i>Poëten</i> M. Bording til hans Brøllups-Vers</toctitle>
-   <indextitle>Brudgommen M. Bering Svarer Poëten M. Bording til hans Brøllups-Vers</indextitle>
-   <firstline>Vel an Hr. Bording / lagt var hen</firstline>
-   <notes>
-      <note>Trykt 1663.</note>
-      <note>Dette er Berings svar på Bordings <xref poem="bording2002111601"/>.</note>
-      <note>Der hersker imidlertid tvivl om digtet vitterligt er fra Berings egen hånd, da ,,Alconius Patismus'' ikke er et kendt pseudonym for Bering. En anden kilde angiver en ,,Nic: Stampe'' som forfatter.</note>
-      <note>Indtastet efter Viggo J. von Holstein Rathlou: <i>Dansk Renaissance Digtning</i>, Kbh., 1914, pp. 26-27.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Brudgommen M. Bering Svarer Poëten M. Bording til hans Brøllups-Vers</title>
+  <toctitle>Brudgommen M. Bering Svarer <i>Poëten</i> M. Bording til hans Brøllups-Vers</toctitle>
+  <indextitle>Brudgommen M. Bering Svarer Poëten M. Bording til hans Brøllups-Vers</indextitle>
+  <firstline>Vel an Hr. Bording / lagt var hen</firstline>
+  <notes>
+    <note>Trykt 1663.</note>
+    <note>Dette er Berings svar på Bordings <xref poem="bording2002111601"/>.</note>
+    <note>Der hersker imidlertid tvivl om digtet vitterligt er fra Berings egen hånd, da ,,Alconius Patismus'' ikke er et kendt pseudonym for Bering. En anden kilde angiver en ,,Nic: Stampe'' som forfatter.</note>
+  </notes>
+  <source pages="26-27">Viggo J. von Holstein Rathlou: <i>Dansk Renaissance Digtning</i>, Kbh., 1914.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -141,5 +141,6 @@ Den Hæderlig og Ærbar Roed
 </poetry>
 </body>
 </text>
+
 </workbody>
 </kalliopework>

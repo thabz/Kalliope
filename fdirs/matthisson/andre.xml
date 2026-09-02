@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="andre" author="matthisson" status="incomplete" type="poetry">
 <workhead>
-   <title>Andre digte</title>
-   <quality>korrektur1</quality>
+  <title>Andre digte</title>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
 <text id="matthisson2018072801">
 <head>
-   <title>Lied aus der Ferne</title>
-   <firstline>Wenn, in des Abends letztem Scheine</firstline>
-   <quality>korrektur1</quality>
-   <notes>
-       <note>Skrevet 1792-93 og først trykt i <i>Musen-Almanach für 1794</i>, Joh. Heinr. Voß, Hamburg.</note>
-   </notes>
+  <title>Lied aus der Ferne</title>
+  <firstline>Wenn, in des Abends letztem Scheine</firstline>
+  <quality>korrektur1</quality>
+  <notes>
+    <note>Skrevet 1792-93 og først trykt i <i>Musen-Almanach für 1794</i>, Joh. Heinr. Voß, Hamburg.</note>
+  </notes>
 </head>
 <body>
 <poetry>
@@ -43,13 +43,10 @@ Der Freud’ und Frieden dir verheisst.
 
 <text id="matthisson2019060401">
 <head>
-   <title>Das Kloster</title>
-   <firstline>Der Westgewölke Purpursaum ergraut</firstline>
-   <quality>korrektur1,kilde,side</quality>
-   <notes>
-       <note>Kilde er Friedrich Matthisson: <i>Gedichte</i>, Tübingen 1912, bd., 1, pp. 209-212.</note>
-       <!-- http://www.zeno.org/nid/20005361354 -->
-   </notes>
+  <title>Das Kloster</title>
+  <firstline>Der Westgewölke Purpursaum ergraut</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source href="http://www.zeno.org/nid/20005361354">Friedrich Matthisson: <i>Gedichte</i>, Tübingen 1912, bd., 1, pp. 209-212.</source>
 </head>
 <body>
 <poetry>
@@ -174,12 +171,9 @@ Und jedem Grab' entwallt' ein goldner Duft.
 
 <text id="matthisson2020012301">
 <head>
-    <title>Adelaide</title>
-    <firstline>Einsam wandelt dein Freund im Frühlingsgarten</firstline>
-    <notes>
-        <note>Kilde er Friedrich Matthisson: <i>Gedichte</i>, Tübingen 1912, bd., 1, pp. 135-136.</note>
-        <!-- http://www.zeno.org/nid/20005360730 -->
-    </notes>
+  <title>Adelaide</title>
+  <firstline>Einsam wandelt dein Freund im Frühlingsgarten</firstline>
+  <source href="http://www.zeno.org/nid/20005360730">Friedrich Matthisson: <i>Gedichte</i>, Tübingen 1912, bd., 1, pp. 135-136.</source>
 </head>
 <body>
 <poetry>
@@ -208,12 +202,9 @@ Adelaide.
 
 <text id="matthisson2020012302">
 <head>
-    <title>Andenken</title>
-    <firstline>Ich denke dein</firstline>
-    <notes>
-        <note>Kilde er Friedrich Matthisson: <i>Gedichte</i>, Tübingen 1912, bd., 1, pp. 234-235.</note>
-        <!-- http://www.zeno.org/nid/20005361591 -->
-    </notes>
+  <title>Andenken</title>
+  <firstline>Ich denke dein</firstline>
+  <source href="http://www.zeno.org/nid/20005361591">Friedrich Matthisson: <i>Gedichte</i>, Tübingen 1912, bd., 1, pp. 234-235.</source>
 </head>
 <body>
 <poetry>
@@ -240,6 +231,49 @@ Bis zum Verein
 Auf besserm Sterne!
 In jeder Ferne
 Denk' ich nur dein!
+</poetry>
+</body>
+</text>
+
+<text id="matthisson2026083101">
+<head>
+  <title>Wunsch</title>
+  <subtitle>An Salis</subtitle>
+  <firstline>Noch einmal möcht’ ich, eh’ in die Schattenwelt</firstline>
+  <source href="https://www.lvbeethoven.org/biamonti433/">Friedrich von Matthisson: <i>Wunsch. An Salis</i>, gengivet af Beethoven Music Research Center.</source>
+  <quality>kilde</quality>
+</head>
+<body>
+<poetry>
+Noch einmal möcht’ ich, eh’ in die Schattenwelt
+Elysiums mein seliger Geist sich senkt,
+Die Flur begrüssen, wo der Kindheit
+Himmlische Träume mein Haupt umschwebten.
+
+Der Strauch der Heimath, welcher des Hänflings Nest
+Mit Kühlung deckte, säuselt doch lieblicher,
+O Freund, als alle Lorbeerwälder
+Ueber der Asche der Weltbezwinger.
+
+Der Bach der Blumenwiese, wo ich als Kind
+Violen pflückte, murmelt melodischer,
+Durch Erlen, die mein Vater pflanzte,
+Als die blandusische Silberquelle.
+
+Der Hügel, wo der jauchzende Knabenreihn
+Sich um den Stamm der blühenden Linde schwang,
+Entzückt mich höher als der Alpen
+Blendende Gipfel im Rosenschimmer.
+
+Drum möcht’ ich einmal, eh’ in die Schattenwelt
+Elysiums mein seliger Geist sich senkt,
+Die Flur noch segnen, wo der Kindheit
+Himmlische Träume mein Haupt umschwebten.
+
+Dann mag des Todes lächelnder Genius
+Die Fackel plötzlich löschen; ich eile froh
+Zu Xenophons und Platons Weisheit
+Und zu Anakreons Mirthenlaube.
 </poetry>
 </body>
 </text>

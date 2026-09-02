@@ -245,6 +245,26 @@ class ElasticSearchClient {
   // Returns the raw JSON as (a promise of) text, not as an object.
   search(index, type, country, poetId, query, page = 0) {
     const URL = `${URLPrefix}/${index}/_search`;
+    const normalizedQuery = query.trim();
+    const globalIdSearchQuery = {
+      bool: {
+        should: [
+          {
+            bool: {
+              filter: [{ term: { result_type: 'poet' } }],
+              must: [{ term: { 'poet.id': normalizedQuery } }],
+            },
+          },
+          {
+            bool: {
+              filter: [{ term: { result_type: 'text' } }],
+              must: [{ term: { 'text.id': normalizedQuery } }],
+            },
+          },
+        ],
+        minimum_should_match: 1,
+      },
+    };
     const poetSearchQuery = {
       bool: {
         filter: [{ term: { result_type: 'poet' } }],
@@ -334,25 +354,24 @@ class ElasticSearchClient {
         },
       },
     };
+    let contextualSearchQuery = null;
     if (poetId != null && poetId.length > 0) {
-      body.query.bool.filter.push({
-        term: { 'poet.id': poetId },
-      });
-      body.query.bool.must.push({
+      contextualSearchQuery = {
         bool: {
           should: [workSearchQuery, textSearchQuery],
           minimum_should_match: 1,
+          filter: [
+            { term: { 'poet.id': poetId } },
+            { term: { 'poet.country': country } },
+          ],
         },
-      });
-      body.query.bool.filter.push({
-        term: { 'poet.country': country },
-      });
+      };
     } else {
       // Keep the actual search query in must/query context so Elasticsearch
       // calculates _score. Country/result-type limits belong in filter context;
       // moving the title/text queries there disables title boosts and exact
       // title matches stop rising to the top.
-      body.query.bool.must.push({
+      contextualSearchQuery = {
         bool: {
           should: [
             poetSearchQuery,
@@ -371,8 +390,15 @@ class ElasticSearchClient {
           ],
           minimum_should_match: 1,
         },
-      });
+      };
     }
+
+    body.query.bool.must.push({
+      bool: {
+        should: [globalIdSearchQuery, contextualSearchQuery],
+        minimum_should_match: 1,
+      },
+    });
 
     return fetch(URL, {
       method: 'POST',

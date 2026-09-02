@@ -1,37 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="1976-6" author="aarestrup" status="incomplete" type="poetry" parent="1976">
 <workhead>
-    <title>Samlede Skrifter</title>
-    <subtitle>
-        <line>Sjette Bind. Supplement.</line>
-    </subtitle>
-    <linktitle>Samlede Skrifter, 6. Bind</linktitle>
-    <toctitle><num>Bind 6.</num>Supplement</toctitle>
-    <breadcrumbtitle>Bd. 6</breadcrumbtitle>
-    <year>1976</year>
-    <notes>
-        <note>Teksten følger Emil Aarestrup: <i>Samlede Skrifter</i>, Hans Brix (red.), Dansk Sprog- og Litteraturselskab, C.A. Reitzels Boghandel, Kbh., 1976, bd. 6, supplement.</note>
-    </notes>
-    <!-- Der findes intet titelblad til bind 6. -->
-    <source facsimile="1976-6" facsimile-pages-num="408" facsimile-pages-offset="398">Emil Aarestrup: <i>Samlede Skrifter</i>, Hans Brix (red.), Dansk Sprog- og Litteraturselskab, C.A. Reitzels Boghandel, Kbh., 1976, bd. 6, supplement.</source>
+  <title>Samlede Skrifter</title>
+  <subtitle>
+    <line>Sjette Bind. Supplement.</line>
+  </subtitle>
+  <linktitle>Samlede Skrifter, 6. Bind</linktitle>
+  <toctitle><num>Bind 6.</num>Supplement</toctitle>
+  <breadcrumbtitle>Bd. 6</breadcrumbtitle>
+  <year>1976</year>
+  <!-- Der findes intet titelblad til bind 6. -->
+  <source facsimile="1976-6" facsimile-pages-num="408" facsimile-pages-offset="398">Emil Aarestrup: <i>Samlede Skrifter</i>, Hans Brix (red.), Dansk Sprog- og Litteraturselskab, C.A. Reitzels Boghandel, Kbh., 1976, bd. 6, supplement.</source>
 </workhead>
 <workbody>
 
 <section level="1">
 <head>
-   <toctitle>Digte trykt efter 1920</toctitle>
+  <toctitle>Digte trykt efter 1920</toctitle>
 </head>
 <content>
 
 <text id="aarestrup2002033101">
 <head>
-   <title>Dedikation til Hr. A. Tønder</title>
-   <firstline>Ei slemt nedriiv I lærde Mænd</firstline>
-   <notes>
-      <note>Dateret: den 5te Maii 1814.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
-   <source pages="3"/>
+  <title>Dedikation til Hr. A. Tønder</title>
+  <firstline>Ei slemt nedriiv I lærde Mænd</firstline>
+  <notes>
+    <note>Dateret: den 5te Maii 1814.</note>
+  </notes>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+  <source pages="3"/>
 </head>
 <body>
 <poetry>
@@ -46,15 +43,15 @@ Saa loe I til I sprak ihjel.
 
 <text id="aarestrup2002033102">
 <head>
-   <title>Til Madam M. Zinck</title>
-   <subtitle>Skreven efter Forestillingen af Cendrillon, den 3die April 1818</subtitle>
-   <firstline>Den stærke Tro paa Aanderne er svunden</firstline>
-   <dates>
-       <event>1818-04-03</event>
-   </dates>
-   <quality>korrektur1</quality>
-   <keywords>sonnet</keywords>
-   <source pages="3"/>
+  <title>Til Madam M. Zinck</title>
+  <subtitle>Skreven efter Forestillingen af Cendrillon, den 3die April 1818</subtitle>
+  <firstline>Den stærke Tro paa Aanderne er svunden</firstline>
+  <dates>
+    <event>1818-04-03</event>
+  </dates>
+  <quality>korrektur1,korrektur2</quality>
+  <keywords>sonnet</keywords>
+  <source pages="3"/>
 </head>
 <body>
 <poetry>
@@ -80,13 +77,12 @@ Dig, hulde Genius, Dig har han rakt den!
 </body>
 </text>
 
-
 <text id="aarestrup2002033103">
 <head>
-   <title>Rimbrev til Jomfru Anna Aagaard</title>
-   <firstline>Hvis jeg ei skrev et Brev til min Cousine</firstline>
-   <quality>korrektur1</quality>
-   <source pages="4"/>
+  <title>Rimbrev til Jomfru Anna Aagaard</title>
+  <firstline>Hvis jeg ei skrev et Brev til min Cousine</firstline>
+  <quality>korrektur1,korrektur2</quality>
+  <source pages="4"/>
 </head>
 <body>
 <poetry>
@@ -123,10 +119,10 @@ See, saa nu fik jeg dog et Brev til min Cousine!
 
 <text id="aarestrup2002033104">
 <head>
-   <title>Rimbrev til Anna Aagaard</title>
-   <firstline>Cousine, Legesøster og Veninde!</firstline>
-   <quality>korrektur1</quality>
-   <source pages="5"/>
+  <title>Rimbrev til Anna Aagaard</title>
+  <firstline>Cousine, Legesøster og Veninde!</firstline>
+  <quality>korrektur1,korrektur2</quality>
+  <source pages="5"/>
 </head>
 <body>
 <poetry>
@@ -136,7 +132,7 @@ Lad mig i Hast - tilgiv! -
 Og paa en lille Strimmel
 Lagt inden i det Brev,
 Min Kone for at Ønske Dig til Lykke skrev,
-Lad mig min Fø1else udtrykke,
+Lad mig min Følelse udtrykke,
 Og ønske, søde Anna, Dig et Liv,
 Som du fortjener, fuldt af Himmel,
 Af Kjærlighed og Held!
@@ -149,11 +145,11 @@ Af Kjærlighed og Held!
 
 <text id="aarestrup2002033105" skip-index="true">
 <head>
-   <title>Rimbrev til Sophie Hansen</title>
-   <toctitle>Rimbrev til Sophie Hansen</toctitle>
-   <indextitle>Rimbrev til Sophie Hansen</indextitle>
-   <quality>korrektur1</quality>
-   <source pages="5-6"/>
+  <title>Rimbrev til Sophie Hansen</title>
+  <toctitle>Rimbrev til Sophie Hansen</toctitle>
+  <indextitle>Rimbrev til Sophie Hansen</indextitle>
+  <quality>korrektur1,korrektur2</quality>
+  <source pages="5-6"/>
 </head>
 <body>
 <prose>
@@ -164,10 +160,10 @@ Af Kjærlighed og Held!
 
 <text id="aarestrup2002033106">
 <head>
-   <title>Tilegnelse til Amalie Raben</title>
-   <firstline>Du ser i mine Digte</firstline>
-   <quality>korrektur1</quality>
-   <source pages="7"/>
+  <title>Tilegnelse til Amalie Raben</title>
+  <firstline>Du ser i mine Digte</firstline>
+  <quality>korrektur1,korrektur2</quality>
+  <source pages="7"/>
 </head>
 <body>
 <poetry>
@@ -196,16 +192,16 @@ Conchylie, der koger.
 
 <text id="aarestrup2002033107">
 <head>
-   <title>Sang om Grundloven</title>
-   <subtitle>(Afsungen ved Grundlovsfesten i Næsbyhoveds Skov den 5. Juni 1854)</subtitle>
-   <toctitle>Sang om Grundloven</toctitle>
-   <indextitle>Sang om Grundloven</indextitle>
-   <firstline>Et bredfuldt Bæger er det Tid at løfte</firstline>
-   <dates>
-       <event>1854-06-05</event>
-   </dates>
-   <quality>korrektur1,kilde,side</quality>
-   <source pages="7-8"/>
+  <title>Sang om Grundloven</title>
+  <subtitle>(Afsungen ved Grundlovsfesten i Næsbyhoveds Skov den 5. Juni 1854)</subtitle>
+  <toctitle>Sang om Grundloven</toctitle>
+  <indextitle>Sang om Grundloven</indextitle>
+  <firstline>Et bredfuldt Bæger er det Tid at løfte</firstline>
+  <dates>
+    <event>1854-06-05</event>
+  </dates>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+  <source pages="7-8"/>
 </head>
 <body>
 <poetry>

@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { execFileSync } from 'child_process';
 import { fileURLToPath } from 'url';
+import { hasPdfFacsimile, textIdMatchesMinDate } from './text-quality-filters.js';
 
 const wordChars = 'A-Za-zÆØÅæøåÀ-ÖØ-öø-ÿ';
 const wordRegexp = new RegExp(
@@ -89,6 +90,7 @@ const removeIgnoredXml = text =>
       preserveLineBreaks
     )
     .replace(/<note\b[\s\S]*?<\/note>/g, preserveLineBreaks)
+    .replace(/<footnote\b[\s\S]*?<\/footnote>/g, preserveLineBreaks)
     .replace(/<picture\b[\s\S]*?<\/picture>/g, preserveLineBreaks);
 
 const removeXmlMarkup = text =>
@@ -431,12 +433,14 @@ const findTextBlockCandidates = ({
   return candidates;
 };
 
-const findMojibakeCandidatesInFile = ({ filename, text }) => {
+const findMojibakeCandidatesInFile = ({ filename, text, minDate = null }) => {
   const candidates = [];
   const seenCandidates = new Map();
   const blocks = textBlocks(text);
   const ignoredForWork = workIgnoredTests(text);
-  const lines = removeXmlMarkup(text).split('\n');
+  const lines = removeXmlMarkup(
+    text.replace(/<footnote\b[\s\S]*?<\/footnote>/g, preserveLineBreaks)
+  ).split('\n');
 
   lines.forEach((lineText, index) => {
     const line = index + 1;
@@ -445,6 +449,9 @@ const findMojibakeCandidatesInFile = ({ filename, text }) => {
         line >= candidateBlock.startLine && line <= candidateBlock.endLine
     );
     if (block?.skipIndex) {
+      return;
+    }
+    if (minDate != null && !textIdMatchesMinDate(block?.id ?? '', minDate)) {
       return;
     }
 
@@ -479,10 +486,17 @@ const findOcrCandidatesInFile = ({
   text,
   lang,
   disabledTests = process.env.DISABLED_TESTS ?? '',
+  minDate = null,
 }) => {
   const ignoredForWork = workIgnoredTests(text);
-  const mojibakeCandidates = findMojibakeCandidatesInFile({ filename, text });
-  const blocks = textBlocks(text);
+  const mojibakeCandidates = findMojibakeCandidatesInFile({
+    filename,
+    text,
+    minDate,
+  });
+  const blocks = textBlocks(text).filter(block =>
+    textIdMatchesMinDate(block.id, minDate)
+  );
   const aaRingCount = blocks.reduce((count, block) => {
     const activeLang = block.lang ?? lang;
     if (block.skipIndex) {
@@ -520,16 +534,23 @@ const findOcrCandidates = ({
   rootDir = process.cwd(),
   files = null,
   disabledTests = process.env.DISABLED_TESTS ?? '',
+  minDate = null,
+  facsimileOnly = false,
 } = {}) => {
   const poetLangs = loadPoetLangs(rootDir);
   const filenames = files ?? trackedFiles(rootDir);
   const candidates = filenames.flatMap(filename => {
     const fullFilename = path.join(rootDir, filename);
+    const text = fs.readFileSync(fullFilename, 'utf8');
+    if (facsimileOnly && !hasPdfFacsimile(text)) {
+      return [];
+    }
     return findOcrCandidatesInFile({
       filename,
-      text: fs.readFileSync(fullFilename, 'utf8'),
+      text,
       lang: langForFile(filename, poetLangs),
       disabledTests,
+      minDate,
     });
   });
 

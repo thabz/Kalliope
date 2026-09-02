@@ -87,31 +87,32 @@ def printHeader()
     end
 
     puts %Q|<?xml version="1.0" encoding="UTF-8"?>|
-    puts %Q|<kalliopework id="#{@workid}" author="#{@poetid}" status="complete" type="poetry">|
+    puts %Q|<kalliopework id="#{@workid}" author="#{@poetid}" status="incomplete" type="poetry">|
     puts %Q|<workhead>|
-    puts %Q|    <title>#{title}</title>|
-    puts %Q|    <year>#{year}</year>|
-    puts %Q|    <notes>|
-    @worknotes.each { |noteline|
-      puts "        <note>#{noteline}</note>"
-    }
-    puts %Q|        <note>Teksten følger #{@source}</note>|
-    if @found_corrections
-        puts %Q|        <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>|
+    puts %Q|  <title>#{title}</title>|
+    puts %Q|  <year>#{year}</year>|
+    if @worknotes.length > 0 or @found_corrections or @found_poet_notes
+      puts %Q|  <notes>|
+      @worknotes.each { |noteline|
+        puts "    <note>#{noteline}</note>"
+      }
+      if @found_corrections
+          puts %Q|    <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>|
+      end
+      if @found_poet_notes
+          puts %Q|    <note>Noter med en foranstillet asterisk er digterens egne.</note>|
+      end
+      puts %Q|  </notes>|
     end
-    if @found_poet_notes
-        puts %Q|        <note>Noter med en foranstillet asterisk er digterens egne.</note>|
-    end
-    puts %Q|    </notes>|
-    puts %Q|    <pictures>|
-    puts %Q|        <picture src="#{@workid}-p1.jpg">Titelbladet til <i>#{title}</i> (#{year}) lyder ,,#{@titlepage}''.</picture>|
-    puts %Q|    </pictures>|
+    puts %Q|  <pictures>|
+    puts %Q|    <picture type="titlepage" src="#{@workid}-p1.jpg">Titelbladet til <i>#{title}</i> (#{year}) lyder ,,#{@titlepage}''.</picture>|
+    puts %Q|  </pictures>|
     if @worktodos.length > 0
       @worktodos.each { |todo|
-          puts "    <!-- TODO: #{todo} -->"
+          puts "  <!-- TODO: #{todo} -->"
       }
     end
-    puts %Q|    <source facsimile="#{@facsimile}" facsimile-pages-num="#{@facsimile_pages_num}" facsimile-pages-offset="#{@facsimile_offset}">#{@source}</source>|
+    puts %Q|  <source facsimile="#{@facsimile}" facsimile-pages-num="#{@facsimile_pages_num}" facsimile-pages-offset="#{@facsimile_offset}">#{@source}</source>|
     puts %Q|</workhead>|
     puts %Q|<workbody>|
     puts ""
@@ -158,71 +159,70 @@ def printPoem()
   puts "<text id=\"#{poemid}\"#{author}#{variant}#{lang}>"
   puts "<head>"
   if @title
-      puts "    <title>#{@title}</title>"
+      puts "  <title>#{@title}</title>"
   end
   if @toctitle
-    puts "    <toctitle>#{@toctitle}</toctitle>"
+    puts "  <toctitle>#{@toctitle}</toctitle>"
   end
   if @indextitle
-    puts "    <indextitle>#{@indextitle}</indextitle>"
+    puts "  <indextitle>#{@indextitle}</indextitle>"
   end
   if @linktitle
-    puts "    <linktitle>#{@linktitle}</linktitle>"
+    puts "  <linktitle>#{@linktitle}</linktitle>"
   end
   if @subtitles.length == 1
-    puts "    <subtitle>#{@subtitles[0]}</subtitle>"
+    puts "  <subtitle>#{@subtitles[0]}</subtitle>"
   elsif @subtitles.length > 1
-    puts "    <subtitle>"
+    puts "  <subtitle>"
     @subtitles.each { |line|
-        puts "        <line>#{line}</line>"
+        puts "    <line>#{line}</line>"
     }
-    puts "    </subtitle>"
+    puts "  </subtitle>"
   end
   if not (@firstline.nil? || @firstline.strip.length == 0)
-    puts "    <firstline>#{@firstline}</firstline>"
+    puts "  <firstline>#{@firstline}</firstline>"
   end
   if @notes.length > 0 or @credits
-    puts "    <notes>"
+    puts "  <notes>"
     @notes.each { |noteline|
-      puts "        <note>#{noteline}</note>"
+      puts "    <note>#{noteline}</note>"
     }
     if @credits
-      puts %Q|        <note type="credits">#{@credits}</note>|;
+      puts %Q|    <note type="credits">#{@credits}</note>|;
     end
-    puts "    </notes>"
+    puts "  </notes>"
   end
   if @source and @page
       pages = normalizePages(@page)
       if @facsimile_page
-        puts "    <source pages=\"#{pages}\" facsimile-pages=\"#{@facsimile_page}\" />"
+        puts "  <source pages=\"#{pages}\" facsimile-pages=\"#{@facsimile_page}\"/>"
       elsif @page =~ /[ivx]+/i
-        puts "    <source pages=\"#{pages}\" facsimile-pages=\"10\" />"
+        puts "  <source pages=\"#{pages}\" facsimile-pages=\"10\"/>"
       else
-        puts "    <source pages=\"#{pages}\"/>"
+        puts "  <source pages=\"#{pages}\"/>"
       end
   end
   if @written or @performed or @event
-    puts "    <dates>"
+    puts "  <dates>"
     if @written
-      puts "        <written>#{@written}</written>"
+      puts "    <written>#{@written}</written>"
     end
     if @performed
-      puts "        <performed>#{@performed}</performed>"
+      puts "    <performed>#{@performed}</performed>"
     end
     if @event
-      puts "        <event>#{@event}</event>"
+      puts "    <event>#{@event}</event>"
     end
-    puts "    </dates>"
+    puts "  </dates>"
   end
   if @todos.length > 0
     @todos.each { |todo|
-        puts "    <!-- TODO: #{todo} -->"
+        puts "  <!-- TODO: #{todo} -->"
     }
   end
   if @keywords
-    puts "    <keywords>#{@keywords}</keywords>"
+    puts "  <keywords>#{@keywords}</keywords>"
   end
-  puts "    <quality>korrektur1,kilde,side</quality>"
   puts "</head>"
   puts "<body>"
   puts "<#{@initialtype}>"
@@ -269,7 +269,7 @@ def printStartSektion(title, level, author)
   printHeader()
   puts "<section#{authorAttr}#{levelAttr}>"
   puts "<head>"
-  puts "    <title>#{title}</title>"
+  puts "  <title>#{title}</title>"
   puts "</head>"
   puts "<content>"
   puts ""

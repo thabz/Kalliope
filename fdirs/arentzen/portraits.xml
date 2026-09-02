@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pictures>
-  <picture src="p1.jpg" primary="true" square-src="p1-square.jpg" museum="kb">
-    Budtz Müller &amp; Co. (fotograf): <i>Kristian Arentzen</i>, Det Kongelige Bibliotek.
+  <picture src="p1.jpg" primary="true" square-src="p1-square.jpg" museum="kb" objid="444935">
+    Budtz Müller &amp; Co. (fotograf): <i>Kristian Arentzen</i>.
   </picture>
   <picture src="p2.jpg" museum="kb">
-      <i>Kristian Arentzen</i>, fotografi, ukendt år. Det Kongelige Bibliotek.
+    <i>Kristian Arentzen</i>, fotografi, ukendt år.
+    <!-- Kan ikke verificeres entydigt med nuværende billedtekstkriterier. -->
   </picture>
 </pictures>

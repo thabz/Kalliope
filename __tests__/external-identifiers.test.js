@@ -13,11 +13,12 @@ describe('external identifiers', () => {
       'wikipedia-de': 'Hans Christian Andersen',
       'gravsted-dk': 'hcandersen',
       viaf: '4925902',
+      gnd: '1073490319',
       'lex-dk': 'H.C._Andersen',
       'teaterleksikon-lex-dk': 'H.C._Andersen',
       'biografisk-leksikon-lex-dk': 'H.C._Andersen',
       'kvindebiografisk-leksikon-lex-dk': 'Benedicte_Arnesen_Kall',
-      'litteraturpriser-dk': 'AHCAndersen',
+      'danskforfatterleksikon-dk': 'WErikWaage',
       'runeberg-org': 'andersen',
       'gutenberg-org': '2298',
     };
@@ -28,6 +29,7 @@ describe('external identifiers', () => {
     }))).toEqual([
       { id: 'viaf', href: 'https://viaf.org/viaf/4925902/' },
       { id: 'wikidata', href: 'https://www.wikidata.org/wiki/Q5673' },
+      { id: 'gnd', href: 'https://d-nb.info/gnd/1073490319' },
       { id: 'lex-dk', href: 'https://lex.dk/H.C._Andersen' },
       {
         id: 'biografisk-leksikon-lex-dk',
@@ -39,8 +41,9 @@ describe('external identifiers', () => {
           'https://kvindebiografiskleksikon.lex.dk/Benedicte_Arnesen_Kall',
       },
       {
-        id: 'litteraturpriser-dk',
-        href: 'https://www.litteraturpriser.dk/aut/AHCAndersen.htm',
+        id: 'danskforfatterleksikon-dk',
+        href:
+          'https://danskforfatterleksikon.dk/1850bib/WErikWaage.htm',
       },
       {
         id: 'teaterleksikon-lex-dk',
@@ -71,10 +74,18 @@ describe('external identifiers', () => {
     expect(buildExternalIdentifierLinks(null)).toEqual([]);
   });
 
+  it('routes numeric Dansk Forfatterleksikon ids to foreign authors', () => {
+    expect(
+      buildExternalIdentifierLinks({ 'danskforfatterleksikon-dk': 'u757' })[0]
+        .href,
+    ).toBe('https://danskforfatterleksikon.dk/1850u/u757.htm');
+  });
+
   it('separates authority identifiers from external references', () => {
     const identifiers = {
       wikidata: 'Q5673',
       viaf: '4925902',
+      gnd: '1073490319',
       'lex-dk': 'H.C._Andersen',
       'gutenberg-org': '2298',
     };
@@ -83,7 +94,7 @@ describe('external identifiers', () => {
       buildExternalIdentifierLinks(identifiers, { category: 'authority' }).map(
         ({ id }) => id,
       ),
-    ).toEqual(['viaf', 'wikidata']);
+    ).toEqual(['viaf', 'wikidata', 'gnd']);
     expect(
       buildExternalIdentifierLinks(identifiers, { category: 'reference' }).map(
         ({ id }) => id,
@@ -98,7 +109,7 @@ describe('external identifiers', () => {
       'runeberg-org': 'andersen',
       'teaterleksikon-lex-dk': 'H.C._Andersen',
       'wikipedia-da': 'H.C. Andersen',
-      'litteraturpriser-dk': 'AHCAndersen',
+      'danskforfatterleksikon-dk': 'AHCAndersen',
       'biografisk-leksikon-lex-dk': 'H.C._Andersen',
       'kvindebiografisk-leksikon-lex-dk': 'Benedicte_Arnesen_Kall',
       'lex-dk': 'H.C._Andersen',
@@ -112,7 +123,7 @@ describe('external identifiers', () => {
       'lex-dk',
       'biografisk-leksikon-lex-dk',
       'kvindebiografisk-leksikon-lex-dk',
-      'litteraturpriser-dk',
+      'danskforfatterleksikon-dk',
       'teaterleksikon-lex-dk',
       'wikipedia',
       'runeberg-org',

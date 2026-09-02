@@ -1,30 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="1827" author="wilster" status="complete" type="poetry">
 <workhead>
-    <title>Digtninger</title>
-    <year>1827</year>
-    <notes>
-        <note>Teksten følger Christian Wilster: <i>Digtninger</i>, C.A. Reitzels Forlag, Kbh., 1827.</note>
-        <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
-        <note>Noter med en foranstillet asterisk er digterens egne.</note>
-        <note type="credits">Tilføjet Kalliope med stor hjælp fra Henrik Nielsen.</note>
-    </notes>
-    <pictures>
-        <picture src="1827-p1.jpg">Titelbladet til <i>Digtninger</i> (1827) lyder ,,Digtninger / af / Christian Wilster // Kjöbenhavn. / Paa Boghandler C. A. Reitzels Forlag. / Trykt i Fabritius Tengnagels Officin. / 1827.''.</picture>
-    </pictures>
-    <source facsimile="115408014868_color.pdf" facsimile-pages-num="198" facsimile-pages-offset="12">Christian Wilster: <i>Digtninger</i>, C.A. Reitzels Forlag, Kbh., 1827.</source>
+  <title>Digtninger</title>
+  <year>1827</year>
+  <notes>
+    <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
+    <note>Noter med en foranstillet asterisk er digterens egne.</note>
+    <note type="credits">Tilføjet Kalliope med stor hjælp fra Henrik Nielsen.</note>
+  </notes>
+  <pictures>
+    <picture src="1827-p1.jpg">Titelbladet til <i>Digtninger</i> (1827) lyder ,,Digtninger / af / Christian Wilster // Kjöbenhavn. / Paa Boghandler C. A. Reitzels Forlag. / Trykt i Fabritius Tengnagels Officin. / 1827.''.</picture>
+  </pictures>
+  <source facsimile="115408014868_color.pdf" facsimile-pages-num="198" facsimile-pages-offset="12">Christian Wilster: <i>Digtninger</i>, C.A. Reitzels Forlag, Kbh., 1827.</source>
 </workhead>
 <workbody>
 
 <text id="wilster2020032501">
 <head>
-    <title>Til Charlotte</title>
-    <firstline>Verden har for meget at bestille,</firstline>
-    <source pages="II" facsimile-pages="9-10" />
-    <notes>
-        <note>»Hyttevisens Frender« henviser til <xref poem="wilster2020012401"/> og <xref poem="wilster2020032545"/>.</note>
-    </notes>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Til Charlotte</title>
+  <firstline>Verden har for meget at bestille</firstline>
+  <source pages="II" facsimile-pages="9-10" />
+  <notes>
+    <note>»Hyttevisens Frender« henviser til <xref poem="wilster2020012401"/> og <xref poem="wilster2020032545"/>.</note>
+  </notes>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -68,10 +67,10 @@ Hvor jeg fordum Hyttevisen fandt?
 
 <text id="wilster2020032502">
 <head>
-    <title>Til Sanggudinden</title>
-    <firstline>Hvi omtumles mine Tanker</firstline>
-    <source pages="1-3"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Til Sanggudinden</title>
+  <firstline>Hvi omtumles mine Tanker</firstline>
+  <source pages="1-3"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -136,11 +135,11 @@ Henrykt jeg min Skaber hylder!
 
 <text id="wilster2020032503">
 <head>
-    <title>Gaade</title>
-    <subtitle>1813.</subtitle>
-    <firstline>Hvad egentlig jeg er, er svært at sige</firstline>
-    <source pages="3-4"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Gaade</title>
+  <subtitle>1813.</subtitle>
+  <firstline>Hvad egentlig jeg er, er svært at sige</firstline>
+  <source pages="3-4"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -178,11 +177,11 @@ Dybt i dit Hjerte du mig finde maa.
 
 <text id="wilster2020032504">
 <head>
-    <title>Vaar-Sonett</title>
-    <firstline>Den lune Vaar paa Sommerfuglevinger</firstline>
-    <source pages="5"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Vaar-Sonett</title>
+  <firstline>Den lune Vaar paa Sommerfuglevinger</firstline>
+  <source pages="5"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -209,11 +208,11 @@ O kunde jeg den værdigen udtrykke.
 
 <text id="wilster2020032505">
 <head>
-    <title>Da jeg var stor</title>
-    <firstline>Der var en Tid, da jeg ret herligt leved</firstline>
-    <source pages="6-7"/>
-    <keywords>holberg</keywords>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Da jeg var stor</title>
+  <firstline>Der var en Tid, da jeg ret herligt leved</firstline>
+  <source pages="6-7"/>
+  <keywords>holberg</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -272,13 +271,13 @@ Thi ak jeg føler, jeg var stor engang.
 
 <text id="wilster2020012401">
 <head>
-    <title>Hyttevise</title>
-    <firstline>Jeg har en Hytte, hvor jeg boer</firstline>
-    <notes>
-        <note>* Et af de følgende Digte vil vise, hvorfor denne Ubetydelighed er optaget i nærværende Samling.  Første Vers er fra en fremmed Haand, og Resten skrevet for Melodiens Skyld.</note>
-    </notes>
-    <source pages="8-9"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Hyttevise</title>
+  <firstline>Jeg har en Hytte, hvor jeg boer</firstline>
+  <notes>
+    <note>* Et af de følgende Digte vil vise, hvorfor denne Ubetydelighed er optaget i nærværende Samling.  Første Vers er fra en fremmed Haand, og Resten skrevet for Melodiens Skyld.</note>
+  </notes>
+  <source pages="8-9"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -322,13 +321,13 @@ Mod Kongens Slot min simple Hytte.
 
 <text id="wilster2020032507">
 <head>
-    <title>Nytaarsaften 1816</title>
-    <firstline>Mørk og taagefuld er Aarets sidste Aften</firstline>
-    <source pages="9-11"/>
-    <dates>
-        <event>1816-12-31</event>
-    </dates>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Nytaarsaften 1816</title>
+  <firstline>Mørk og taagefuld er Aarets sidste Aften</firstline>
+  <source pages="9-11"/>
+  <dates>
+    <event>1816-12-31</event>
+  </dates>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -377,10 +376,10 @@ Et kjærligt Billede paa Venskabs Aand.
 
 <text id="wilster2020032508">
 <head>
-    <title>Hvor er du?</title>
-    <firstline>Hvor er du, Pige, som mit Hjerte ahner</firstline>
-    <source pages="11-12"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Hvor er du?</title>
+  <firstline>Hvor er du, Pige, som mit Hjerte ahner</firstline>
+  <source pages="11-12"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -421,10 +420,10 @@ Hvor er du?
 
 <text id="wilster2020032509">
 <head>
-    <title>Drengen med Blomsterkurven</title>
-    <firstline>Kommer hid, I Piger søde!</firstline>
-    <source pages="13-14"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Drengen med Blomsterkurven</title>
+  <firstline>Kommer hid, I Piger søde!</firstline>
+  <source pages="13-14"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -469,10 +468,10 @@ Jeg da atter i dit Skjød!
 
 <text id="wilster2020032510">
 <head>
-    <title>Citharsang</title>
-    <firstline>I kostbart Liin</firstline>
-    <source pages="14-15"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Citharsang</title>
+  <firstline>I kostbart Liin</firstline>
+  <source pages="14-15"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -513,10 +512,10 @@ Sit Jordeliin.
 
 <text id="wilster2020032511">
 <head>
-    <title>Blomsterne</title>
-    <firstline>Smaablomsten bøier</firstline>
-    <source pages="16-18"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Blomsterne</title>
+  <firstline>Smaablomsten bøier</firstline>
+  <source pages="16-18"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -599,10 +598,10 @@ Paa Uskylds Læber.
 
 <text id="wilster2020032512">
 <head>
-    <title>Nanines Sang</title>
-    <firstline>Du, som formastelig og svag</firstline>
-    <source pages="19-20"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Nanines Sang</title>
+  <firstline>Du, som formastelig og svag</firstline>
+  <source pages="19-20"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -638,10 +637,10 @@ Hvor Børn og Engle have hjemme!
 
 <text id="wilster2020032513">
 <head>
-    <title>Digtergraven</title>
-    <firstline>Hvor Vinden kjølig lufter</firstline>
-    <source pages="20-22"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Digtergraven</title>
+  <firstline>Hvor Vinden kjølig lufter</firstline>
+  <source pages="20-22"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -705,10 +704,10 @@ Ved Sangens fromme Lyd.
 
 <text id="wilster2020032514">
 <head>
-    <title>Den Barnløses Bøn</title>
-    <firstline>O du, hvem Solens Purpurskjær</firstline>
-    <source pages="22-23"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Den Barnløses Bøn</title>
+  <firstline>O du, hvem Solens Purpurskjær</firstline>
+  <source pages="22-23"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -753,10 +752,10 @@ Da Faderasken Hvile finder.
 
 <text id="wilster2020032515">
 <head>
-    <title>Fuglesang</title>
-    <firstline>Vandringsmand, som ene</firstline>
-    <source pages="23-25"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Fuglesang</title>
+  <firstline>Vandringsmand, som ene</firstline>
+  <source pages="23-25"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -825,11 +824,11 @@ Dig i Himlen ind!
 
 <text id="wilster2020032516">
 <head>
-    <title>Eleonore Ulfeld</title>
-    <firstline>Tungt Kongedattrens Taare flød</firstline>
-    <source pages="26-29"/>
-    <keywords>leonora</keywords>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Eleonore Ulfeld</title>
+  <firstline>Tungt Kongedattrens Taare flød</firstline>
+  <source pages="26-29"/>
+  <keywords>leonora</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -928,10 +927,10 @@ Hun faaer en salig Ende.
 
 <text id="wilster2020032517">
 <head>
-    <title>Sonett</title>
-    <firstline>Skjøndt Rimerie jeg har paa Hylden lagt</firstline>
-    <source pages="29-30"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Sonett</title>
+  <firstline>Skjøndt Rimerie jeg har paa Hylden lagt</firstline>
+  <source pages="29-30"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -958,10 +957,10 @@ Og kan som Prosaist kun gratulere.
 
 <text id="wilster2020011101">
 <head>
-    <title>Sang for Danske</title>
-    <firstline>Hvor Bølgen larmer høit fra Søe</firstline>
-    <source pages="30-31"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Sang for Danske</title>
+  <firstline>Hvor Bølgen larmer høit fra Søe</firstline>
+  <source pages="30-31"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1010,11 +1009,11 @@ Og skjerme Land og Konge!
 
 <text id="wilster2020032519">
 <head>
-    <title>Terziner</title>
-    <firstline>I Skabningen er Almagts Aand fremstillet</firstline>
-    <source pages="32"/>
-    <keywords>terziner</keywords>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Terziner</title>
+  <firstline>I Skabningen er Almagts Aand fremstillet</firstline>
+  <source pages="32"/>
+  <keywords>terziner</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1043,10 +1042,10 @@ Hvor de som kjære Frænder skulde leve.
 
 <text id="wilster2020032520">
 <head>
-    <title>Jægersang</title>
-    <firstline>Gjennem Krat, over Stub gaaer Jægerens Fod</firstline>
-    <source pages="33"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Jægersang</title>
+  <firstline>Gjennem Krat, over Stub gaaer Jægerens Fod</firstline>
+  <source pages="33"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1067,14 +1066,14 @@ Den Fattige er en Helt i Dyst,
 
 <text id="wilster2020011201">
 <head>
-    <title>Sanct-Hansdagsvise</title>
-    <subtitle>
-        <line>Paa en Fødselsdag.</line>
-        <line>1819.</line>
-    </subtitle>
-    <firstline>Sanct-Hansdag! du smilende Fest!</firstline>
-    <source pages="33-36"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Sanct-Hansdagsvise</title>
+  <subtitle>
+    <line>Paa en Fødselsdag.</line>
+    <line>1819.</line>
+  </subtitle>
+  <firstline>Sanct-Hansdag! du smilende Fest!</firstline>
+  <source pages="33-36"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1146,20 +1145,20 @@ At Dagen blandt andet kan afgjøre dette! —
 
 <text id="wilster2020032522">
 <head>
-    <title>Apologie</title>
-    <firstline>Jeg Lirendreier sang om hollandsk Kagekone</firstline>
-    <notes>
-        <note>Mottoet er fra <a poet="holberg">Holbergs</a> <i>Jacob von Tyboe eller Den stortalende Soldat</i> (1723).</note>
-        <note>* See det <a poem="wilster2020011201">foregaaende Digt</a>.</note>
-    </notes>
-    <source pages="36-37"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Apologie</title>
+  <firstline>Jeg Lirendreier sang om hollandsk Kagekone</firstline>
+  <notes>
+    <note>Mottoet er fra <a poet="holberg">Holbergs</a> <i>Jacob von Tyboe eller Den stortalende Soldat</i> (1723).</note>
+    <note>* See det <a poem="wilster2020011201">foregaaende Digt</a>.</note>
+  </notes>
+  <source pages="36-37"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<nonum><small><right>Jesper Oldfux. Jeg kan troe, man haver spurgt det.</right></small></nonum>
-<nonum><small><right>Skam faae Hollænderen, han haver</right></small></nonum>
-<nonum><small><right>sine Spioner ude allevegne.</right></small></nonum>
+<nonum><right><small>Jesper Oldfux. Jeg kan troe, man haver spurgt det.</small></right></nonum>
+<nonum><right><small>Skam faae Hollænderen, han haver</small></right></nonum>
+<nonum><right><small>sine Spioner ude allevegne.</small></right></nonum>
 
 Jeg Lirendreier sang om hollandsk Kagekone,
 Skjøndt hun ei kommen var, den værdige Matrone.
@@ -1189,10 +1188,10 @@ Har Ingen paa vor Jord saa skjønt som du forstaaet.
 
 <text id="wilster2020032523">
 <head>
-    <title>Studentervise</title>
-    <firstline>De første Prygl, vi i Skolen fik</firstline>
-    <source pages="38-39"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Studentervise</title>
+  <firstline>De første Prygl, vi i Skolen fik</firstline>
+  <source pages="38-39"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1236,11 +1235,11 @@ At vi skal juble i hele Livet,
 
 <text id="wilster2020032524">
 <head>
-    <title>Til en ung Kriger</title>
-    <firstline>Et frodigt Træ maa voxe uden Støtte</firstline>
-    <source pages="39-40"/>
-    <keywords>sonnet</keywords>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Til en ung Kriger</title>
+  <firstline>Et frodigt Træ maa voxe uden Støtte</firstline>
+  <source pages="39-40"/>
+  <keywords>sonnet</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1267,10 +1266,10 @@ Sin egen Hæder, sine Kjæres Glæde.
 
 <text id="wilster2020032525">
 <head>
-    <title>En lille Piges Sang</title>
-    <firstline>Jeg er en ganske vakker lille Pige</firstline>
-    <source pages="40-41"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>En lille Piges Sang</title>
+  <firstline>Jeg er en ganske vakker lille Pige</firstline>
+  <source pages="40-41"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1314,11 +1313,11 @@ Og Somme ikke regne Alt saa nøie.
 
 <text id="wilster2020032526">
 <head>
-    <title>Den Fortvivlende</title>
-    <subtitle>Af en ufuldendt Fortælling</subtitle>
-    <firstline>Før smilte Himlens rene Lyseblaae</firstline>
-    <source pages="42-43"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Den Fortvivlende</title>
+  <subtitle>Af en ufuldendt Fortælling</subtitle>
+  <firstline>Før smilte Himlens rene Lyseblaae</firstline>
+  <source pages="42-43"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1363,16 +1362,16 @@ Maaskee det Sorte turde være Sandt.
 
 <section>
 <head>
-    <title>Confirmationdigte</title>
+  <title>Confirmationdigte</title>
 </head>
 <content>
 
 <text id="wilster2020032527">
 <head>
-    <title><num>1.</num>I Uskylds Hjerte boer en venlig Aand</title>
-    <firstline>I Uskylds Hjerte boer en venlig Aand</firstline>
-    <source pages="43-45"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title><num>1.</num>I Uskylds Hjerte boer en venlig Aand</title>
+  <firstline>I Uskylds Hjerte boer en venlig Aand</firstline>
+  <source pages="43-45"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1418,10 +1417,10 @@ Hvor ikkun Børn til Faderen kan komme.
 
 <text id="wilster2020032528">
 <head>
-    <title><num>2.</num>O græd ei, at den skjønne Barnetid</title>
-    <firstline>O græd ei, at den skjønne Barnetid</firstline>
-    <source pages="45-46"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title><num>2.</num>O græd ei, at den skjønne Barnetid</title>
+  <firstline>O græd ei, at den skjønne Barnetid</firstline>
+  <source pages="45-46"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1463,10 +1462,10 @@ Og uden den er hendes Liv en Nat.
 
 <text id="wilster2020032529">
 <head>
-    <title>Gravminde</title>
-    <firstline>Barnekjærlighedens Blomsterkjæde</firstline>
-    <source pages="46-48"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Gravminde</title>
+  <firstline>Barnekjærlighedens Blomsterkjæde</firstline>
+  <source pages="46-48"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1520,15 +1519,15 @@ Glædens her paa Jorden brustne Baand.
 
 <text id="wilster2020032530">
 <head>
-    <title>Sange fra Sorøe</title>
-    <subtitle>
-        <line>paa</line>
-        <line>Kongens Fødselsdag</line>
-    </subtitle>
-    <firstline>Den vakkre lille Sorøe Bye</firstline>
-    <source pages="48-55"/>
-    <keywords>frederik2,christian4,holberg</keywords>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Sange fra Sorøe</title>
+  <subtitle>
+    <line>paa</line>
+    <line>Kongens Fødselsdag</line>
+  </subtitle>
+  <firstline>Den vakkre lille Sorøe Bye</firstline>
+  <source pages="48-55"/>
+  <keywords>frederik2,christian4,holberg</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1721,11 +1720,11 @@ Som Danmarks Land beskytter.
 
 <text id="wilster2020032531">
 <head>
-    <title>Grev Danneskjold Samsøe</title>
-    <subtitle>1823</subtitle>
-    <firstline>Hvor Fuglen i en blid Natur</firstline>
-    <source pages="56-58"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Grev Danneskjold Samsøe</title>
+  <subtitle>1823</subtitle>
+  <firstline>Hvor Fuglen i en blid Natur</firstline>
+  <source pages="56-58"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1788,10 +1787,10 @@ For dem, han elsked meest hernede! —
 
 <text id="wilster2020032532">
 <head>
-    <title>Riimbrev fra Sorøe</title>
-    <firstline>Du spørger, hvorfor Vers og sligt</firstline>
-    <source pages="58-63"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Riimbrev fra Sorøe</title>
+  <firstline>Du spørger, hvorfor Vers og sligt</firstline>
+  <source pages="58-63"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1935,11 +1934,11 @@ Mig liste bort itide.
 
 <text id="wilster2002042702">
 <head>
-    <title>Ludvig Holberg</title>
-    <firstline>Før var der knap skreven paa dansk en Bog</firstline>
-    <source pages="63-66"/>
-    <keywords>holberg</keywords>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Ludvig Holberg</title>
+  <firstline>Før var der knap skreven paa dansk en Bog</firstline>
+  <source pages="63-66"/>
+  <keywords>holberg</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2018,11 +2017,11 @@ Skal leve vor Holbergs Minde.
 
 <text id="wilster2020032534">
 <head>
-    <title>Novembersang</title>
-    <subtitle>Til Venner og Frender</subtitle>
-    <firstline>I forrige Dage var muntert mit Sind</firstline>
-    <source pages="66-68"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Novembersang</title>
+  <subtitle>Til Venner og Frender</subtitle>
+  <firstline>I forrige Dage var muntert mit Sind</firstline>
+  <source pages="66-68"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2076,11 +2075,11 @@ Jeg elsker Jer derfor ei mindre.<note>mindre.] mindre,</note>
 
 <text id="wilster2020032535">
 <head>
-    <title>Til en Ven</title>
-    <subtitle>Ved Budskabet om hans Forlovelse.</subtitle>
-    <firstline>Hvad styrrer min Roe ved den skimlede Bog</firstline>
-    <source pages="68-70"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Til en Ven</title>
+  <subtitle>Ved Budskabet om hans Forlovelse.</subtitle>
+  <firstline>Hvad styrrer min Roe ved den skimlede Bog</firstline>
+  <source pages="68-70"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2144,11 +2143,11 @@ Kan deilige Farver ei prise.
 
 <text id="wilster2020032536">
 <head>
-    <title>Smaaepigernes Sang</title>
-    <subtitle>Paa Moderens Fødselsdag.</subtitle>
-    <firstline>Der groer vist ei i Nord og Syd</firstline>
-    <source pages="71-72"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Smaaepigernes Sang</title>
+  <subtitle>Paa Moderens Fødselsdag.</subtitle>
+  <firstline>Der groer vist ei i Nord og Syd</firstline>
+  <source pages="71-72"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2197,11 +2196,11 @@ Og ei med tomme Hænder.
 
 <text id="wilster2020012001">
 <head>
-    <title>Til Apollo</title>
-    <firstline>Ei beder jeg, du sende vil</firstline>
-    <source pages="73-78"/>
-    <keywords>holberg</keywords>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Til Apollo</title>
+  <firstline>Ei beder jeg, du sende vil</firstline>
+  <source pages="73-78"/>
+  <keywords>holberg</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2363,14 +2362,14 @@ Kureer det ei med Spindelvæve!
 
 <text id="wilster2020032538">
 <head>
-    <title>Commentar og Apologie</title>
-    <subtitle>Til Carl Frederik Güntelberg</subtitle>
-    <firstline>Det er dog ret en egen Sag</firstline>
-    <notes>
-        <note>* En Mistydning af et Vers i <a poem="wilster2020012001">mit Digt til Apollo</a> gav Anledning til, at Lulu's Forfatter indrykkede følgende Digt i Morgenbladet:<br/>Til Christian Wilster.<br/>Du kan ei lide Spindelvæve?<br/>Javist; — de ere Væv i Grunden,<br/>Som glimre lidt i Morgenstunden,<br/>Naar Duggens Perler paa dem bæve,<br/>Og Solen blinker gjennem Lunden;<br/>Men de er saare let at kyse; —<br/>En Kat dem kan paa Flugten nyse,<br/>Som bedst i laante Glands de svæve;<br/>Der ligger da den høie Herlighed! —<br/>Forstaaer sig ''<w>deres</w>''; Solen, som, du veed,<br/>Duggen straaler som i Stjernekrandsen,<br/>Og som tilfældigviis dem laante Glandsen,<br/>Kan ingen Kat, selv du ei nyse ned!</note>
-    </notes>
-    <source pages="79-84"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Commentar og Apologie</title>
+  <subtitle>Til Carl Frederik Güntelberg</subtitle>
+  <firstline>Det er dog ret en egen Sag</firstline>
+  <notes>
+    <note>* En Mistydning af et Vers i <a poem="wilster2020012001">mit Digt til Apollo</a> gav Anledning til, at Lulu's Forfatter indrykkede følgende Digt i Morgenbladet:<br/>Til Christian Wilster.<br/>Du kan ei lide Spindelvæve?<br/>Javist; — de ere Væv i Grunden,<br/>Som glimre lidt i Morgenstunden,<br/>Naar Duggens Perler paa dem bæve,<br/>Og Solen blinker gjennem Lunden;<br/>Men de er saare let at kyse; —<br/>En Kat dem kan paa Flugten nyse,<br/>Som bedst i laante Glands de svæve;<br/>Der ligger da den høie Herlighed! —<br/>Forstaaer sig ''<w>deres</w>''; Solen, som, du veed,<br/>Duggen straaler som i Stjernekrandsen,<br/>Og som tilfældigviis dem laante Glandsen,<br/>Kan ingen Kat, selv du ei nyse ned!</note>
+  </notes>
+  <source pages="79-84"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2496,14 +2495,14 @@ Som mig tilraabte: Gud velsigne!
 
 <text id="wilster2020032539">
 <head>
-    <title>Til Comtesse Christiane Danneskjold Samsøe</title>
-    <subtitle>
-        <line>Paa hendes Confirmationsdag.</line>
-        <line>1825</line>
-    </subtitle>
-    <firstline>Hist i Braabye det til Kirke ringer</firstline>
-    <source pages="84-87"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Til Comtesse Christiane Danneskjold Samsøe</title>
+  <subtitle>
+    <line>Paa hendes Confirmationsdag.</line>
+    <line>1825</line>
+  </subtitle>
+  <firstline>Hist i Braabye det til Kirke ringer</firstline>
+  <source pages="84-87"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2586,10 +2585,10 @@ Du i Himlen til din Faders Bryst!''
 
 <text id="wilster2020032540">
 <head>
-    <title>Englen</title>
-    <firstline>Englen smiler fra det Fjerne</firstline>
-    <source pages="87-88"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Englen</title>
+  <firstline>Englen smiler fra det Fjerne</firstline>
+  <source pages="87-88"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2634,10 +2633,10 @@ For at lede dine Fjed.
 
 <text id="wilster2020032541">
 <head>
-    <title>Rose og Kjærminde</title>
-    <firstline>Skjøndt knap man være kan bekjendt</firstline>
-    <source pages="89-91"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Rose og Kjærminde</title>
+  <firstline>Skjøndt knap man være kan bekjendt</firstline>
+  <source pages="89-91"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2709,10 +2708,10 @@ Der dulmer dette Hjertes Klage.
 
 <text id="wilster2020032542">
 <head>
-    <title>Sang ved Kjøbstædgilde</title>
-    <firstline>Saa ofte vi samles til Gilde</firstline>
-    <source pages="91-92"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Sang ved Kjøbstædgilde</title>
+  <firstline>Saa ofte vi samles til Gilde</firstline>
+  <source pages="91-92"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2757,10 +2756,10 @@ Da er det af Hjertet din Skaal!
 
 <text id="wilster2020032543">
 <head>
-    <title>De gamle Melodier</title>
-    <firstline>De kjære gamle Melodier</firstline>
-    <source pages="93-95"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>De gamle Melodier</title>
+  <firstline>De kjære gamle Melodier</firstline>
+  <source pages="93-95"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2824,10 +2823,10 @@ Men dog til gammel Melodie!
 
 <text id="wilster2020032544">
 <head>
-    <title>Himlens Gaver</title>
-    <firstline>En Hest at trække Ploven</firstline>
-    <source pages="95-98"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Himlens Gaver</title>
+  <firstline>En Hest at trække Ploven</firstline>
+  <source pages="95-98"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2920,14 +2919,14 @@ Dit Hjerte Kjærlighed.
 
 <text id="wilster2020032545">
 <head>
-    <title>Den genfundne Hyttevise</title>
-    <subtitle>Til Charlotte.</subtitle>
-    <firstline>Hulde! hvad er det, du synger?</firstline>
-    <notes>
-        <note>* <a poem="wilster2020012401">Se Side 8</a>.</note>
-    </notes>
-    <source pages="99-101"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Den genfundne Hyttevise</title>
+  <subtitle>Til Charlotte.</subtitle>
+  <firstline>Hulde! hvad er det, du synger?</firstline>
+  <notes>
+    <note>* <a poem="wilster2020012401">Se Side 8</a>.</note>
+  </notes>
+  <source pages="99-101"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2990,10 +2989,10 @@ Om end Alle glemme dem.
 
 <text id="wilster2020032546">
 <head>
-    <title>Nattergalen</title>
-    <firstline>Fra fjerne Syd</firstline>
-    <source pages="101-102"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Nattergalen</title>
+  <firstline>Fra fjerne Syd</firstline>
+  <source pages="101-102"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3038,10 +3037,10 @@ Da Kærligheden glemme.
 
 <text id="wilster2020032547">
 <head>
-    <title>En Andagsstund</title>
-    <firstline>Fader! du som throner i det Høie!</firstline>
-    <source pages="103-104"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>En Andagsstund</title>
+  <firstline>Fader! du som throner i det Høie!</firstline>
+  <source pages="103-104"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3078,10 +3077,10 @@ Ei for eget, men for hendes Vel.
 
 <text id="wilster2020032548">
 <head>
-    <title>Brudevers</title>
-    <firstline>Pebersvend nyder et maadeligt Held</firstline>
-    <source pages="104-105"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Brudevers</title>
+  <firstline>Pebersvend nyder et maadeligt Held</firstline>
+  <source pages="104-105"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3130,10 +3129,10 @@ Hvor man forinden dens Sang vil forstaae.
 
 <text id="wilster2020032549">
 <head>
-    <title>Barnets Drømme</title>
-    <firstline>Som Barn jeg ofte saae i skjønne Drømme</firstline>
-    <source pages="106-107"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Barnets Drømme</title>
+  <firstline>Som Barn jeg ofte saae i skjønne Drømme</firstline>
+  <source pages="106-107"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3178,10 +3177,10 @@ Og klart udtyde alle Barnets Drømme.
 
 <text id="wilster2020032550">
 <head>
-    <title>Til Aftenstjernen</title>
-    <firstline>Aftenlys i Engles høie Bolig!</firstline>
-    <source pages="107-109"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Til Aftenstjernen</title>
+  <firstline>Aftenlys i Engles høie Bolig!</firstline>
+  <source pages="107-109"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3230,10 +3229,10 @@ Kjærlig Hilsen fra sin Hjertensven.
 
 <text id="wilster2020032551">
 <head>
-    <title>Fuglen og Forpagteren</title>
-    <firstline>Hvad vil saa aarle du i Lund?</firstline>
-    <source pages="109-111"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Fuglen og Forpagteren</title>
+  <firstline>Hvad vil saa aarle du i Lund?</firstline>
+  <source pages="109-111"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3305,10 +3304,10 @@ Og Fryd i Øiet straaler.
 
 <text id="wilster2020032552">
 <head>
-    <title>Barnehaven</title>
-    <firstline>I Barnets lille Have</firstline>
-    <source pages="111-113"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Barnehaven</title>
+  <firstline>I Barnets lille Have</firstline>
+  <source pages="111-113"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3362,10 +3361,10 @@ Hans milde Faderbud.
 
 <text id="wilster2020032553">
 <head>
-    <title>Tiden</title>
-    <firstline>O kast dit Øie hid og did</firstline>
-    <source pages="111-118"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Tiden</title>
+  <firstline>O kast dit Øie hid og did</firstline>
+  <source pages="111-118"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3518,10 +3517,10 @@ Hvad Livets er, maa leve!
 
 <text id="wilster2020032554">
 <head>
-    <title>Poetens Regnskab</title>
-    <firstline>Hvad det har kostet mig at skrive Vers</firstline>
-    <source pages="119-122"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Poetens Regnskab</title>
+  <firstline>Hvad det har kostet mig at skrive Vers</firstline>
+  <source pages="119-122"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3551,7 +3550,7 @@ For Hædersmænd paa Fødselsdage,
 Til Bal med Punsch og Søsterkage,
 Til Drikkelag, til gamle Klubber,
 Paa Pølsepind maa koges Supper.
-Folk er er saa slemme at forlange
+Folk er saa slemme at forlange<note>er] er er </note>
 Til hvert et Gilde nye Sange;
 Man siger, det paa Maden drøier,
 Naar Folk sig lidt ved Sang fornøier.
@@ -3613,13 +3612,13 @@ Og ei saa snart jeg da vil spille Bankerot!
 
 <text id="wilster2020032555">
 <head>
-    <title>Bøgetræet</title>
-    <subtitle>
-        <line>Idyllisk Fortælling.</line>
-        <line>1818.</line>
-    </subtitle>
-    <source pages="123-180"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Bøgetræet</title>
+  <subtitle>
+    <line>Idyllisk Fortælling.</line>
+    <line>1818.</line>
+  </subtitle>
+  <source pages="123-180"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <prose>

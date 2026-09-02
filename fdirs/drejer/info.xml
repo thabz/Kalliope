@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="drejer" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Ove Christian</firstname>
+    <lastname>Drejer</lastname>
+    <fullname>Ove Christian Drejer</fullname>
+    <pseudonym>P. Davieno</pseudonym>
+    <pseudonym>Dr. Wejëero</pseudonym>
+  </name>
+  <period>
+    <born>
+      <date>1806-05-08</date>
+      <place>Eveldrup Præstegaard</place>
+    </born>
+    <dead>
+      <date>1836-12-19</date>
+      <place>Løgstør</place>
+    </dead>
+  </period>
+  <literary-periods>dk-guldalder-og-romantik</literary-periods>
+  <works>1837</works>
+  <identifiers>
+    <danskforfatterleksikon-dk>DOveChristianDrejer</danskforfatterleksikon-dk>
+  </identifiers>
+</person>

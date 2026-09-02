@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="1898" author="egeberg" status="complete" type="poetry">
 <workhead>
-    <title>Min Dreng</title>
-    <year>1898</year>
-    <notes>
-        <note>Teksten følger Edvard Egeberg: <i>Min Dreng</i>, Jydsk Forlags-Forretning, Aarhus, 1898.</note>
-        <note type="credits">Teksten er tilføjet af Henrik Nielsen.</note>
-    </notes>
-    <pictures>
-        <picture src="1898-p2.jpg">Forsiden til <i>Min Dreng</i> (1898).</picture>
-        <picture src="1898-p1.jpg">Titelbladet til <i>Min Dreng</i> (1898) lyder ,,Edv. Egeberg // Min Dreng // Aarhus / Jydsk Forlags-Forretning / 1898''.</picture>
-    </pictures>
-    <source facsimile="115308052563_color" facsimile-pages-num="60" facsimile-pages-offset="6">Edv. Egeberg: <i>Min Dreng</i>, Jydsk Forlags-Forretning, Aarhus, 1898.</source>
+  <title>Min Dreng</title>
+  <year>1898</year>
+  <notes>
+    <note type="credits">Teksten er tilføjet af Henrik Nielsen.</note>
+  </notes>
+  <pictures>
+    <picture src="1898-p2.jpg">Forsiden til <i>Min Dreng</i> (1898).</picture>
+    <picture src="1898-p1.jpg">Titelbladet til <i>Min Dreng</i> (1898) lyder ,,Edv. Egeberg // Min Dreng // Aarhus / Jydsk Forlags-Forretning / 1898''.</picture>
+  </pictures>
+  <source facsimile="115308052563_color" facsimile-pages-num="60" facsimile-pages-offset="6">Edv. Egeberg: <i>Min Dreng</i>, Jydsk Forlags-Forretning, Aarhus, 1898.</source>
 </workhead>
 <workbody>
 
 <text id="egeberg2019080601">
 <head>
-    <title>Hvad er et Hjem?</title>
-    <firstline>Hvad er et Hjem? - Et Sted, hvor Dagen rinder</firstline>
-    <source pages="7"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Hvad er et Hjem?</title>
+  <firstline>Hvad er et Hjem? - Et Sted, hvor Dagen rinder</firstline>
+  <source pages="7"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -44,10 +43,10 @@ hvis klare Vand er alle Dyder milde,
 
 <text id="egeberg2019080602">
 <head>
-    <title>Da han var ganske lille</title>
-    <firstline>Dit Øje flakker uden Maal</firstline>
-    <source pages="8-9"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Da han var ganske lille</title>
+  <firstline>Dit Øje flakker uden Maal</firstline>
+  <source pages="8-9"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -81,10 +80,10 @@ fordi den Dreng er <i>min</i>.
 
 <text id="egeberg2019080603">
 <head>
-    <title>Hvor bløde er dog ikke Barnets Hænder</title>
-    <firstline>Hvor bløde er dog ikke Barnets Hænder</firstline>
-    <source pages="10"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Hvor bløde er dog ikke Barnets Hænder</title>
+  <firstline>Hvor bløde er dog ikke Barnets Hænder</firstline>
+  <source pages="10"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -108,10 +107,10 @@ ej inderligt som min og Moders brænder.
 
 <text id="egeberg2019080604">
 <head>
-    <title>Da du var bleven Kjolen kvit</title>
-    <firstline>Da du var bleven Kjolen kvit</firstline>
-    <source pages="11-12"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Da du var bleven Kjolen kvit</title>
+  <firstline>Da du var bleven Kjolen kvit</firstline>
+  <source pages="11-12"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -150,10 +149,10 @@ som maaler Livets Vækst.
 
 <text id="egeberg2019080605">
 <head>
-    <title>Det, som vi inderst inde tror</title>
-    <firstline>Det, som vi inderst inde tror, vi naar</firstline>
-    <source pages="13-14"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Det, som vi inderst inde tror</title>
+  <firstline>Det, som vi inderst inde tror, vi naar</firstline>
+  <source pages="13-14"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -185,12 +184,12 @@ som fører op mod Lyset, op mod Solen.
 </body>
 </text>
 
-<text id="egeberg2019080606">
+<text id="egeberg2019080606" ignore-tests="repeated-adjacent-word">
 <head>
-    <title>Mangen Gang i Livet det mig hændte -</title>
-    <firstline>Mangen Gang i Livet det mig hændte</firstline>
-    <source pages="15-16"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Mangen Gang i Livet det mig hændte -</title>
+  <firstline>Mangen Gang i Livet det mig hændte</firstline>
+  <source pages="15-16"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -219,10 +218,10 @@ en Gang gavmildt gav, men atter stjæler.
 
 <text id="egeberg2019080607">
 <head>
-    <title>Min lille Dregn, jeg giver dig -</title>
-    <firstline>Min lille Dreng, jeg giver dig</firstline>
-    <source pages="17-18"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Min lille Dregn, jeg giver dig -</title>
+  <firstline>Min lille Dreng, jeg giver dig</firstline>
+  <source pages="17-18"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -251,10 +250,10 @@ han fandt de vises Sten.
 
 <text id="egeberg2019080608">
 <head>
-    <title>Den første Løgn</title>
-    <firstline>Det lille Pumpeværk derinde</firstline>
-    <source pages="19-20"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Den første Løgn</title>
+  <firstline>Det lille Pumpeværk derinde</firstline>
+  <source pages="19-20"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -283,10 +282,10 @@ og sletter Himlens Billed’ ud.
 
 <text id="egeberg2019080609">
 <head>
-    <title>Da han var syg</title>
-    <firstline>Stille laa i Nætter og i Dage</firstline>
-    <source pages="21-22"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Da han var syg</title>
+  <firstline>Stille laa i Nætter og i Dage</firstline>
+  <source pages="21-22"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -327,10 +326,10 @@ Først ved Dødens Port jeg Skatten ejer!«
 
 <text id="egeberg2019080610">
 <head>
-    <title>Der stod en lille Bøg -</title>
-    <firstline>Der stod en lille Bøg paa Bakkehældet</firstline>
-    <source pages="23-24"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Der stod en lille Bøg -</title>
+  <firstline>Der stod en lille Bøg paa Bakkehældet</firstline>
+  <source pages="23-24"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -369,10 +368,10 @@ at han vil fri dig fra den kaade Dreng.
 
 <text id="egeberg2019080611">
 <head>
-    <title>Hans Spørgsmaal</title>
-    <firstline>Hvorfor kan jeg ikke Stjernen naa</firstline>
-    <source pages="25-26"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Hans Spørgsmaal</title>
+  <firstline>Hvorfor kan jeg ikke Stjernen naa</firstline>
+  <source pages="25-26"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -406,10 +405,10 @@ Livets store, underlige Gaade.
 
 <text id="egeberg2019080612">
 <head>
-    <title>Jeg synger ej min egen Lov -</title>
-    <firstline>Jeg synger ej min egen Lov</firstline>
-    <source pages="27-28"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Jeg synger ej min egen Lov -</title>
+  <firstline>Jeg synger ej min egen Lov</firstline>
+  <source pages="27-28"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -448,10 +447,10 @@ hvad jeg har gjort saa smaat.
 
 <text id="egeberg2019080613">
 <head>
-    <title>Da han kom hjem</title>
-    <firstline>Dit Øjes Glans mig minder Gang for Gang</firstline>
-    <source pages="29-30"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Da han kom hjem</title>
+  <firstline>Dit Øjes Glans mig minder Gang for Gang</firstline>
+  <source pages="29-30"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -485,10 +484,10 @@ du gør din Fader atter glad og ung
 
 <text id="egeberg2019080614">
 <head>
-    <title>Du, som mig Gud har sendt til Trøst</title>
-    <firstline>Du, som mig Gud har sendt til Trøst</firstline>
-    <source pages="31-32"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Du, som mig Gud har sendt til Trøst</title>
+  <firstline>Du, som mig Gud har sendt til Trøst</firstline>
+  <source pages="31-32"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -522,10 +521,10 @@ det ene, store Navn.
 
 <text id="egeberg2019080615">
 <head>
-    <title>Ved Aften</title>
-    <firstline>Naar Nattens Skygger sig om Lejet breder</firstline>
-    <source pages="33-34"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Ved Aften</title>
+  <firstline>Naar Nattens Skygger sig om Lejet breder</firstline>
+  <source pages="33-34"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -554,10 +553,10 @@ den Dødens Sti, de vandred’ førend du.
 
 <text id="egeberg2019080616">
 <head>
-    <title>Gid Livet handle mildt med dig -</title>
-    <firstline>Gid Livet handle mildt med dig</firstline>
-    <source pages="35-36"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Gid Livet handle mildt med dig -</title>
+  <firstline>Gid Livet handle mildt med dig</firstline>
+  <source pages="35-36"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -586,10 +585,10 @@ betales af min Søn.
 
 <text id="egeberg2019080617">
 <head>
-    <title>Naar Øjet lukket bli'er -</title>
-    <firstline>Naar Øjet lukket bli'er for sidste Gang</firstline>
-    <source pages="37-38"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Naar Øjet lukket bli'er -</title>
+  <firstline>Naar Øjet lukket bli'er for sidste Gang</firstline>
+  <source pages="37-38"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -628,10 +627,10 @@ vi kunne mod den store Morgen træde.
 
 <text id="egeberg2019080618">
 <head>
-    <title>Der kommer en Tid -</title>
-    <firstline>Der kommer en Tid, da min lille Dreng</firstline>
-    <source pages="39-40"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Der kommer en Tid -</title>
+  <firstline>Der kommer en Tid, da min lille Dreng</firstline>
+  <source pages="39-40"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -660,10 +659,10 @@ af en Tid, jeg venter med Sorg.
 
 <text id="egeberg2019080619">
 <head>
-    <title>Hvor kort er Tiden -</title>
-    <firstline>Hvor kort er Tiden med de røde Kinder</firstline>
-    <source pages="41-42"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Hvor kort er Tiden -</title>
+  <firstline>Hvor kort er Tiden med de røde Kinder</firstline>
+  <source pages="41-42"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -697,10 +696,10 @@ og evigt Liv i nye Slægter flammer.
 
 <text id="egeberg2019080620">
 <head>
-    <title>Saml i dit Bryst -</title>
-    <firstline>Saml i dit Bryst, før du synger</firstline>
-    <source pages="43-44"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Saml i dit Bryst -</title>
+  <firstline>Saml i dit Bryst, før du synger</firstline>
+  <source pages="43-44"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -745,10 +744,10 @@ indtil den Himmelen naar.
 
 <text id="egeberg2019080621">
 <head>
-    <title>I Tidens Løb -</title>
-    <firstline>I Tidens Løb saa meget sammen ramler</firstline>
-    <source pages="45-46"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>I Tidens Løb -</title>
+  <firstline>I Tidens Løb saa meget sammen ramler</firstline>
+  <source pages="45-46"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -784,10 +783,10 @@ men blandt det nye sig det bedste vælge.
 
 <text id="egeberg2019080622">
 <head>
-    <title>Da han rejste bort -</title>
-    <firstline>Vi stod ved Havens Laage, han og jeg</firstline>
-    <source pages="47-48"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Da han rejste bort -</title>
+  <firstline>Vi stod ved Havens Laage, han og jeg</firstline>
+  <source pages="47-48"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>

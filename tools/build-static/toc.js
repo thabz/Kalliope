@@ -30,7 +30,7 @@ import {
 
 // Rekursiv function som bruges til at bygge værkers indholdsfortegnelse,
 // men også del-indholdstegnelser til de linkbare sektioner som har en id.
-const build_section_toc = (section, publicationPoetId = null) => {
+const build_section_toc = (section, workAuthorId = null) => {
   let poems = [];
   let proses = [];
   let toc = [];
@@ -39,9 +39,9 @@ const build_section_toc = (section, publicationPoetId = null) => {
     const partName = tagName(part);
     if (partName === 'text') {
       const sourceTextId = safeGetAttr(part, 'id');
-      const textAuthorId = resolveAuthorId(part, publicationPoetId);
+      const textAuthorId = resolveAuthorId(part, workAuthorId);
       const textId =
-        isAnthologyText(textAuthorId, publicationPoetId) ?
+        isAnthologyText(textAuthorId, workAuthorId) ?
           publicationTextId(sourceTextId)
         : sourceTextId;
       const head = getChildByTagName(part, 'head');
@@ -57,7 +57,7 @@ const build_section_toc = (section, publicationPoetId = null) => {
     } else if (partName === 'section') {
       const subtoc = build_section_toc(
         getChildByTagName(part, 'content'),
-        publicationPoetId
+        workAuthorId
       );
       const head = getChildByTagName(part, 'head');
       const level = parseInt(safeGetAttr(part, 'level') || '1');
@@ -160,13 +160,12 @@ const build_works_toc = async (collected) => {
     safeMkdir(`public/api/${poetId}`);
     const workFilenames = workFilesForPoet(poetId);
     const poetWorksModified =
-      collected.poetMetadataDirty?.has(poetId) ||
       isFileModified(
         'tools/build-static/toc.js',
         'tools/build-static/anthologies.js',
         `fdirs/${poetId}/info.xml`,
         ...workFilenames
-      );
+      ) || collected.poetMetadataDirty?.has(poetId);
     const pageWorks = worksForPaging(poetId, poet);
     poetData.set(poetId, { pageWorks, poet, poetWorksModified });
     worksForPoet(collected, poetId).forEach(work => {
