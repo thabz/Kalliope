@@ -323,50 +323,8 @@ const build_poets_by_country_json = collected => {
   });
 };
 
-const build_literary_periods_json = collected => {
-  const poetListItem = poet => {
-    return {
-      id: poet.id,
-      type: poet.type,
-      country: poet.country,
-      lang: poet.lang,
-      name: {
-        firstname: poet.name.firstname,
-        lastname: poet.name.lastname,
-        sortname: poet.name.sortname,
-      },
-      period:
-        poet.period == null
-          ? null
-          : {
-              born:
-                poet.period.born == null
-                  ? null
-                  : { date: poet.period.born.date },
-              dead:
-                poet.period.dead == null
-                  ? null
-                  : { date: poet.period.dead.date },
-            },
-    };
-  };
-  const periods = literaryPeriods.sorted.map(period => {
-    const poets = [];
-    collected.poets.forEach(poet => {
-      if ((poet.literary_periods || []).includes(period.id)) {
-        poets.push(poetListItem(poet));
-      }
-    });
-    poets.sort((a, b) => {
-      const aName = a.name.sortname || a.name.lastname || a.id;
-      const bName = b.name.sortname || b.name.lastname || b.id;
-      return aName.localeCompare(bName, 'da');
-    });
-    return {
-      ...literaryPeriodForApi(period),
-      poets,
-    };
-  });
+const build_literary_periods_json = () => {
+  const periods = literaryPeriods.sorted.map(literaryPeriodForApi);
   writeJSON('public/api/literary-periods.json', { periods });
 };
 

@@ -87,5 +87,26 @@ describe('helpers', () => {
         lineTexts('&lt;er røde af blodet af mænd, der dræbes,&gt;')
       ).toEqual(['&lt;er røde af blodet af mænd, der dræbes,&gt;']);
     });
+
+    it('preserves inline margin markers in prose', () => {
+      expect(
+        htmlToXml(
+          'Før margin<margin>En margintekst.</margin> efter margin',
+          collected,
+          false,
+        )
+      ).toEqual([
+        [
+          'Før margin<margin>En margintekst.</margin> efter margin',
+          { num: 1, html: true },
+        ],
+      ]);
+    });
+
+    it('continues to extract margin markers from poetry lines', () => {
+      expect(
+        htmlToXml('<margin>Strofe 1.</margin>Første verslinje', collected, true)
+      ).toEqual([['Første verslinje', { num: 1, margin: 'Strofe 1.' }]]);
+    });
   });
 });

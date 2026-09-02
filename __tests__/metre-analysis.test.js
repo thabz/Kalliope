@@ -6,12 +6,12 @@ import {
   analyzePoem,
   countSyllables,
   poetryLinesFromXml,
-} from '../tools/metre-analysis.js';
+} from '../tools/poetic-form/metre-analysis.js';
 import {
   analyzeWorkXml,
   parseArgs,
   run,
-} from '../tools/analyse-metre.js';
+} from '../tools/poetic-form/analyse-metre.js';
 
 const corpus = JSON.parse(
   fs.readFileSync(new URL('./fixtures/metre-corpus.json', import.meta.url), 'utf8'),

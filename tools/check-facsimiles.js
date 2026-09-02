@@ -2,6 +2,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { DOMParser } from '@xmldom/xmldom';
 import plimit from 'p-limit';
+import * as ImagePaths from '../common/imagepaths.js';
 import {
   isWorkFileContent,
   loadTrackedWorkFiles,
@@ -18,6 +19,7 @@ const requestConcurrency =
   configuredRequestConcurrency > 0
     ? configuredRequestConcurrency
     : 12;
+const representativeThumbnailWidth = 250;
 
 const normalizeFacsimileId = facsimile => facsimile.replace(/\.pdf$/i, '');
 
@@ -25,6 +27,16 @@ const facsimilePageUrl = (baseUrl, poetId, facsimile) => {
   const encodedPoetId = encodeURIComponent(poetId);
   const encodedFacsimile = encodeURIComponent(normalizeFacsimileId(facsimile));
   return `${baseUrl.replace(/\/$/, '')}/${encodedPoetId}/${encodedFacsimile}/000.jpg`;
+};
+
+const facsimileAssetUrls = (baseUrl, poetId, facsimile) => {
+  const pageUrl = facsimilePageUrl(baseUrl, poetId, facsimile);
+  const thumbnailUrl = ImagePaths.thumbnailSrc(
+    pageUrl,
+    representativeThumbnailWidth,
+    'jpg',
+  );
+  return [pageUrl, thumbnailUrl];
 };
 
 const findFacsimileReferences = (workFiles, baseUrl = defaultBaseUrl) => {
@@ -42,11 +54,15 @@ const findFacsimileReferences = (workFiles, baseUrl = defaultBaseUrl) => {
           return;
         }
 
-        const url = facsimilePageUrl(baseUrl, poetId, facsimile);
-        if (referencesByUrl.has(url) === false) {
-          referencesByUrl.set(url, { filenames: new Set(), url });
+        const urls = facsimileAssetUrls(baseUrl, poetId, facsimile);
+        const pageUrl = urls[0];
+        if (referencesByUrl.has(pageUrl) === false) {
+          referencesByUrl.set(pageUrl, {
+            filenames: new Set(),
+            urls,
+          });
         }
-        referencesByUrl.get(url).filenames.add(filename);
+        referencesByUrl.get(pageUrl).filenames.add(filename);
       });
     });
 
@@ -62,22 +78,25 @@ const checkFacsimileReferences = async (
 ) => {
   const limit = plimit(requestConcurrency);
   const failures = await Promise.all(
-    references.map(reference =>
-      limit(async () => {
-        try {
-          const response = await fetchMethod(reference.url, {
-            method: 'HEAD',
-            signal: AbortSignal.timeout(timeoutMs),
-          });
-          if (response.ok === true) {
-            return null;
+    references.flatMap(reference =>
+      reference.urls.map(url =>
+        limit(async () => {
+          try {
+            const response = await fetchMethod(url, {
+              method: 'HEAD',
+              signal: AbortSignal.timeout(timeoutMs),
+            });
+            if (response.ok === true) {
+              return null;
+            }
+            return { ...reference, reason: `HTTP ${response.status}`, url };
+          } catch (error) {
+            const reason =
+              error instanceof Error ? error.message : String(error);
+            return { ...reference, reason, url };
           }
-          return { ...reference, reason: `HTTP ${response.status}` };
-        } catch (error) {
-          const reason = error instanceof Error ? error.message : String(error);
-          return { ...reference, reason };
-        }
-      }),
+        }),
+      ),
     ),
   );
 
@@ -99,8 +118,12 @@ const run = async () => {
     return;
   }
 
+  const assetCount = references.reduce(
+    (sum, reference) => sum + reference.urls.length,
+    0,
+  );
   console.log(
-    `Kontrollerede ${references.length} genererede og synkroniserede facsimiler.`,
+    `Kontrollerede ${references.length} facsimiler med ${assetCount} genererede og synkroniserede billedfiler.`,
   );
 };
 
@@ -110,6 +133,7 @@ if (fileURLToPath(import.meta.url) === process.argv[1]) {
 
 export {
   checkFacsimileReferences,
+  facsimileAssetUrls,
   facsimilePageUrl,
   findFacsimileReferences,
   isWorkFileContent,

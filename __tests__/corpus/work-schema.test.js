@@ -105,6 +105,51 @@ describe('kalliopework RELAX NG schema', () => {
     }).not.toThrow();
   });
 
+  it('accepts one or more model proofreading attestations', () => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead>
+          <title>Digte</title><year>1900</year>
+          <proofreadings>
+            <proofreading model="gpt-5.6-sol" datetime="2026-09-01T21:00:00+02:00"/>
+            <proofreading model="future-model" datetime="2027-01-02T03:04:05Z"/>
+          </proofreadings>
+        </workhead>
+      </kalliopework>
+    `;
+
+    expect(() => validate(xml)).not.toThrow();
+  });
+
+  it.each([
+    '',
+    '<proofreading datetime="2026-09-01T21:00:00+02:00"/>',
+    '<proofreading model="gpt-5.6-sol"/>',
+    '<proofreading model="" datetime="2026-09-01T21:00:00+02:00"/>',
+    '<proofreading model="gpt-5.6-sol" datetime="ikke-en-dato"/>',
+    '<proofreading model="gpt-5.6-sol" datetime="2026-09-01T21:00:00+02:00" extra="nej"/>',
+    '<proofreading model="gpt-5.6-sol" datetime="2026-09-01T21:00:00+02:00">tekst</proofreading>',
+  ])('rejects an invalid proofreading attestation: %s', proofreading => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Digte</title><year>1900</year><proofreadings>${proofreading}</proofreadings></workhead>
+      </kalliopework>
+    `;
+
+    expect(() => validate(xml)).toThrow();
+  });
+
+  it('rejects proofreading attestations outside workhead', () => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Digte</title><year>1900</year></workhead>
+        <workbody><proofreadings><proofreading model="gpt-5.6-sol" datetime="2026-09-01T21:00:00+02:00"/></proofreadings></workbody>
+      </kalliopework>
+    `;
+
+    expect(() => validate(xml)).toThrow();
+  });
+
   it('accepts metre analyses with confidence from zero to one', () => {
     const xml = `
       <kalliopework id="1900" author="digter">
@@ -119,6 +164,39 @@ describe('kalliopework RELAX NG schema', () => {
     `;
 
     expect(() => validate(xml)).not.toThrow();
+  });
+
+  it('accepts compatible form analyses with bounded confidence', () => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Digte</title><year>1900</year></workhead>
+        <workbody><text><head><form><analysis pattern="sonnet" confidence="0.99"/><analysis pattern="petrarchan-sonnet" confidence="0.96"/></form></head></text></workbody>
+      </kalliopework>
+    `;
+
+    expect(() => validate(xml)).not.toThrow();
+  });
+
+  it.each(['-0.01', '1.01', 'sikker'])('rejects invalid form confidence %s', confidence => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Digte</title><year>1900</year></workhead>
+        <workbody><text><head><form><analysis pattern="sonnet" confidence="${confidence}"/></form></head></text></workbody>
+      </kalliopework>
+    `;
+
+    expect(() => validate(xml)).toThrow();
+  });
+
+  it('rejects an unknown form analysis pattern', () => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Digte</title><year>1900</year></workhead>
+        <workbody><text><head><form><analysis pattern="fourteen-lines" confidence="0.9"/></form></head></text></workbody>
+      </kalliopework>
+    `;
+
+    expect(() => validate(xml)).toThrow();
   });
 
   it.each(['-0.01', '1.01', 'sikker'])('rejects invalid metre confidence %s', confidence => {

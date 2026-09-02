@@ -9,6 +9,18 @@ Disse regler gælder for AI-agenter og automatiserede assistenter, der arbejder 
 - Læs derefter den specialdokumentation, som stilguiden henviser til for det
   relevante område.
 
+## Repository-skills
+
+- Brug `$add-kalliope-work`, når et nyt værk skal indsættes og afleveres som
+  en pull request.
+- Brug også `$pdf-to-kalliope`, når kilden er en komplet scannet PDF, der skal
+  OCR-behandles eller transskriberes. I den arbejdsgang styrer
+  `$pdf-to-kalliope` selve PDF-, transskriptions- og korrekturarbejdet, mens
+  `$add-kalliope-work` styrer PR-checklisten og overdragelsen til brugeren.
+- Brug `$prepare-kalliope-titlepage`, når et titelblad skal rettes op,
+  beskæres eller kvalitetskontrolleres. `$pdf-to-kalliope` bruger denne skill
+  som sit faste billedbehandlingstrin for `p1`.
+
 ## Kalliopes dækningsmål
 
 Ved arbejde med personer, værker, kilder og import skal
@@ -37,6 +49,10 @@ digtere.
 - Angiv altid `lang` med en ISO 639-1-sprogkode på `<quote>`, når citatet ikke
   er på dansk. Gennemgå korte mottoer og enkeltord manuelt; dansk- og
   norskprægede historiske sprogformer må ikke mærkes uden en sikker vurdering.
+- Brug ikke `<a>` eller `<xref>` i værkernes egentlige brødtekst i `<body>`.
+  Henvisninger fra digte, prosa og citatblokke skal ligge i `<note>` eller
+  `<footnote>`; links i keywordtekster og biografier er fortsat tilladt.
+  Attributlinks som `source/@href` er metadata og berøres ikke af reglen.
 
 ## Git og GitHub
 

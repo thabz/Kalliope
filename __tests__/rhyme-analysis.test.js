@@ -1,6 +1,6 @@
-import { analyzeRhyme } from '../tools/rhyme-analysis.js';
-import { analyzeWorkXml } from '../tools/analyse-rhyme.js';
-import { rhymePairKey, sequenceRuleKey } from '../tools/rhyme-model.js';
+import { analyzeRhyme } from '../tools/poetic-form/rhyme-analysis.js';
+import { analyzeWorkXml } from '../tools/poetic-form/analyse-rhyme.js';
+import { rhymePairKey, sequenceRuleKey } from '../tools/poetic-form/rhyme-model.js';
 
 describe('rhyme analysis', () => {
   test('finds rhyme relations and resets labels for each stanza', () => {

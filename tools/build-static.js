@@ -116,6 +116,7 @@ import {
   mark_ref_destinations_dirty,
 } from './build-static/textrefs.js';
 import { build_anniversaries_ical } from './build-static/ical.js';
+import { buildLatestNews } from './build-static/news.js';
 import {
   buildGlobalTimeline,
   buildPoetTimelineJson,
@@ -126,9 +127,13 @@ import {
   isAnthologyText,
   publicationTextId,
   resolveAuthorId,
-  sourceFilesForText,
   worksForPoet,
 } from './build-static/anthologies.js';
+import {
+  obsoleteSourceWorkKeys,
+  removeTextsFromSourceWorks,
+  sourceFilesForText,
+} from './build-static/work-cache.js';
 import { updateSqliteIndex } from './build-static/sqlite-index.js';
 import { buildCorpusDataset } from './build-static/corpus-dataset.js';
 import { findUnlistedWorkFiles } from './build-static/workfiles.js';
@@ -1040,19 +1045,47 @@ const works_first_pass = (collected) => {
 
   let parentIdsToFillIn = new Map(); // Bruges til nedenstående second-pass som klistrer parent-data på
 
+  const changedWorksByPoet = new Map();
+  const currentSourceWorkKeys = new Set();
+  collected.workids.forEach((workIds, poetId) => {
+    workIds.forEach(workId => {
+      currentSourceWorkKeys.add(`${poetId}/${workId}`);
+    });
+  });
+  const changedSourceWorkKeys = obsoleteSourceWorkKeys(
+    works,
+    currentSourceWorkKeys
+  );
   collected.workids.forEach((workIds, poetId) => {
     const workFilenames = workIds.map(
       (workId) => `fdirs/${poetId}/${workId}.xml`,
     );
     const poetHasChangedWorks =
       isFileModified(...workFilenames) || force_reload;
+    changedWorksByPoet.set(poetId, poetHasChangedWorks);
+    if (poetHasChangedWorks === true) {
+      workIds.forEach(workId => {
+        changedSourceWorkKeys.add(`${poetId}/${workId}`);
+      });
+    }
+  });
+  changedSourceWorkKeys.forEach(key => {
+    const [poetId, workId] = key.split('/');
+    works.delete(key);
+    removeWorkDates(dates, poetId, workId);
+  });
+  removeTextsFromSourceWorks(texts, changedSourceWorkKeys);
+  found_changes = changedSourceWorkKeys.size > 0;
+
+  collected.workids.forEach((workIds, poetId) => {
+    const poetHasChangedWorks = changedWorksByPoet.get(poetId);
 
     workIds.forEach((workId) => {
       const workFilename = `fdirs/${poetId}/${workId}.xml`;
       if (!fileExists(workFilename)) {
         return;
       }
-      if (!poetHasChangedWorks) {
+      if (poetHasChangedWorks === false) {
         return;
       } else {
         found_changes = true;
@@ -1111,16 +1144,6 @@ const works_first_pass = (collected) => {
       if (parentId != null) {
         parentIdsToFillIn.set(fullWorkId, `${poetId}/${parentId}`);
       }
-
-      Array.from(texts.entries()).forEach(([cachedTextId, text]) => {
-        if (
-          (text.sourcePoetId || text.poetId) === poetId &&
-          (text.sourceWorkId || text.workId) === workId
-        ) {
-          texts.delete(cachedTextId);
-        }
-      });
-      removeWorkDates(dates, poetId, workId);
 
       workTexts.forEach((part, sourceOrder) => {
         const textId = safeGetAttr(part, 'id');
@@ -1459,26 +1482,12 @@ const build_poet_works_json = (collected) => {
 const build_news = (collected) => {
   supportedLanguages.forEach((lang) => {
     const path = `content/news/${lang}.xml`;
-    if (!isFileModified(path)) {
+    if (!isFileModified(path, 'tools/build-static/news.js')) {
       return;
     }
     const doc = loadXMLDoc(path);
     const items = getChildByTagName(doc, 'items');
-    let list = [];
-    getChildren(items).forEach((item) => {
-      if (tagName(item) !== 'item') {
-        return;
-      }
-      const date = safeGetText(item, 'date');
-      const body = getChildByTagName(item, 'body');
-      const title = safeGetText(item, 'title');
-      list.push({
-        date,
-        title,
-        content_lang: lang,
-        content_html: htmlToXml(safeGetInnerXML(body).trim(), collected),
-      });
-    });
+    const list = buildLatestNews(items, lang, collected);
     const outfile = `public/api/news_${lang}.json`;
     writeJSON(outfile, list);
   });

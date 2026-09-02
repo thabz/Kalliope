@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="moellerv" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Vilhelm</firstname>
+    <lastname>Møller</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1846-10-06</date>
+      <place>Humlebæk</place>
+    </born>
+    <dead>
+      <date>1904-08-23</date>
+      <place>Hornbæk</place>
+    </dead>
+  </period>
+  <literary-periods>dk-det-moderne-gennembrud</literary-periods>
+  <identifiers>
+    <wikidata>Q12341040</wikidata>
+    <wikipedia-da>Vilhelm Møller</wikipedia-da>
+    <viaf>29158254</viaf>
+    <gnd>1157600549</gnd>
+    <danskforfatterleksikon-dk>MVilhelmMoeller</danskforfatterleksikon-dk>
+  </identifiers>
+</person>

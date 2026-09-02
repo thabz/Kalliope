@@ -132,6 +132,36 @@ describe('whole-work structure wrapper', () => {
       verse_line_count: 80,
     }));
   });
+
+  it('requires manual disposition when no indentation pattern is stable', () => {
+    const indentations = [0, 7, 2, 11, 4, 1, 9, 3, 12, 5, 8, 2];
+    const lines = indentations
+      .map((indentation, index) => `${' '.repeat(indentation)}Vers ${index + 1}`)
+      .join('\n');
+    const xml = workXml.replace(
+      /<body><poetry>[\s\S]*?<\/poetry><\/body>/,
+      `<body><poetry>${lines}</poetry></body>`,
+    ).replace('pages="10-12"', 'pages="10"');
+    const [poem] = analyzeWholeWork(xml).poems;
+
+    expect(poem.indentation.status).toBe('no_stable_pattern');
+    expect(poem.candidates).toContainEqual(expect.objectContaining({
+      source: 'wrapper',
+      type: 'indentation_pattern_unresolved',
+      verse_line_count: 12,
+    }));
+  });
+
+  it('preserves page starts as verse-line metadata after removing pb elements', () => {
+    const xml = workXml.replace(
+      /<body><poetry>[\s\S]*?<\/poetry><\/body>/,
+      '<body><poetry>Første linje\n\n<pb n="11" facs="011.jpg"/>    Anden linje\nTredje linje</poetry></body>',
+    );
+    const [poem] = analyzeWholeWork(xml).poems;
+
+    expect(poem.page_breaks).toEqual([2]);
+    expect(poem.indentation.indentation_profile).toEqual([0, 4, 0]);
+  });
 });
 
 describe('historical OCR candidate profile', () => {
@@ -173,6 +203,13 @@ describe('historical OCR candidate profile', () => {
 });
 
 describe('findings registry and frozen checkpoint', () => {
+  const candidateReviews = ['ocr', 'page', 'stanza', 'indentation'].map(kind => ({
+    kind,
+    reviewer: 'anna',
+    status: 'reviewed',
+    candidate_count: 2,
+    reviewed_count: 2,
+  }));
   const finding = {
     id: 'W2-B1-001',
     batch: 'W2-B1',
@@ -204,6 +241,14 @@ describe('findings registry and frozen checkpoint', () => {
         expect.stringContaining('mangler evidence'),
       ]),
     );
+    expect(validateFindings([{
+      ...finding,
+      status: 'verified',
+      disposition: 'Genkontrolleret.',
+      evidence: 'facs 011.jpg',
+    }])).toEqual(expect.arrayContaining([
+      expect.stringContaining('mangler verified_by'),
+    ]));
   });
 
   it('blocks READY on open findings and detects mutations after a checkpoint', () => {
@@ -213,12 +258,14 @@ describe('findings registry and frozen checkpoint', () => {
       inventory: [{ text_id: 'test', printed_page: '1', status: 'reviewed' }],
       tests: [{ command: 'npm test', status: 'passed' }],
       reviewerRanges: [],
-    })).toThrow('åben finding');
+      producer: 'producer',
+      candidateReviews,
+    })).toThrow('uverificeret finding');
 
     const original = {
       head: 'abc', diff_sha256: 'one', changed_files: ['work.xml'], file_sha256: { 'work.xml': 'hash' },
     };
-    const checkpoint = createCheckpoint({
+    expect(() => createCheckpoint({
       root: process.cwd(),
       findings: [{
         ...finding,
@@ -232,6 +279,28 @@ describe('findings registry and frozen checkpoint', () => {
       }],
       tests: [{ command: 'npm test', status: 'passed' }],
       reviewerRanges: [{ reviewer: 'anna', facsimile_from: '010.jpg', facsimile_to: '010.jpg' }],
+      producer: 'producer',
+      candidateReviews,
+      state: original,
+    })).toThrow('uverificeret finding');
+
+    const checkpoint = createCheckpoint({
+      root: process.cwd(),
+      findings: [{
+        ...finding,
+        status: 'verified',
+        disposition: 'Rettelsen er genkontrolleret mod facsimilet.',
+        evidence: 'før → efter, facs 011.jpg',
+        verified_by: 'anna',
+      }],
+      inventory: [{
+        text_id: 'test', printed_page: '1', facsimile: '010.jpg',
+        status: 'reviewed', reviewer: 'anna', disposition: 'Kontrolleret.',
+      }],
+      tests: [{ command: 'npm test', status: 'passed' }],
+      reviewerRanges: [{ reviewer: 'anna', facsimile_from: '010.jpg', facsimile_to: '010.jpg' }],
+      producer: 'producer',
+      candidateReviews,
       state: original,
     });
     expect(verifyCheckpoint({ root: process.cwd(), checkpoint, state: original }).status).toBe('valid');
@@ -258,5 +327,63 @@ describe('findings registry and frozen checkpoint', () => {
       expect.stringContaining('overlappende reviewer-ranges'),
       expect.stringContaining('dækkes af 2 reviewer-ranges'),
     ]));
+  });
+
+  it('requires a reviewer independent of the producer for pages, ranges and findings', () => {
+    const inventory = [{
+      text_id: 'test', printed_page: '1', facsimile: '010.jpg',
+      status: 'reviewed', reviewer: 'producer', disposition: 'Kontrolleret.',
+    }];
+    expect(() => createCheckpoint({
+      root: process.cwd(),
+      findings: [],
+      inventory,
+      tests: [{ command: 'npm test', status: 'passed' }],
+      reviewerRanges: [{ reviewer: 'producer', facsimile_from: '010.jpg', facsimile_to: '010.jpg' }],
+      producer: 'producer',
+      candidateReviews: candidateReviews.map(review => ({ ...review, reviewer: 'producer' })),
+      state: { head: 'abc', diff_sha256: 'one', changed_files: [], file_sha256: {} },
+    })).toThrow(/producenten/);
+  });
+
+  it('requires all four candidate audits with every candidate reviewed', () => {
+    const common = {
+      root: process.cwd(),
+      findings: [],
+      inventory: [{
+        text_id: 'test', printed_page: '1', facsimile: '010.jpg',
+        status: 'reviewed', reviewer: 'anna', disposition: 'Kontrolleret.',
+      }],
+      tests: [{ command: 'npm test', status: 'passed' }],
+      reviewerRanges: [{ reviewer: 'anna', facsimile_from: '010.jpg', facsimile_to: '010.jpg' }],
+      producer: 'producer',
+      state: { head: 'abc', diff_sha256: 'one', changed_files: [], file_sha256: {} },
+    };
+    expect(() => createCheckpoint({
+      ...common,
+      candidateReviews: candidateReviews.filter(review => review.kind !== 'indentation'),
+    })).toThrow('kandidatkontrollen indentation forekommer 0 gange');
+    expect(() => createCheckpoint({
+      ...common,
+      candidateReviews: candidateReviews.map(review => review.kind === 'ocr'
+        ? { ...review, reviewed_count: 1 }
+        : review),
+    })).toThrow('kandidatkontrollen ocr har uverificerede kandidater');
+    expect(() => createCheckpoint({ ...common, candidateReviews })).not.toThrow();
+  });
+
+  it('blocks READY when no tests are recorded or a test fails', () => {
+    const common = {
+      root: process.cwd(), findings: [],
+      inventory: [{ text_id: 'test', printed_page: '1', facsimile: '010.jpg', status: 'reviewed', reviewer: 'anna', disposition: 'Kontrolleret.' }],
+      reviewerRanges: [{ reviewer: 'anna', facsimile_from: '010.jpg', facsimile_to: '010.jpg' }],
+      producer: 'producer', candidateReviews,
+      state: { head: 'abc', diff_sha256: 'one', changed_files: [], file_sha256: {} },
+    };
+    expect(() => createCheckpoint({ ...common, tests: [] })).toThrow('ingen tests er registreret');
+    expect(() => createCheckpoint({
+      ...common,
+      tests: [{ command: 'xmllint --noout work.xml', status: 'failed' }],
+    })).toThrow('test bestod ikke');
   });
 });

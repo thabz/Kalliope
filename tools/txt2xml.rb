@@ -87,7 +87,7 @@ def printHeader()
     end
 
     puts %Q|<?xml version="1.0" encoding="UTF-8"?>|
-    puts %Q|<kalliopework id="#{@workid}" author="#{@poetid}" status="complete" type="poetry">|
+    puts %Q|<kalliopework id="#{@workid}" author="#{@poetid}" status="incomplete" type="poetry">|
     puts %Q|<workhead>|
     puts %Q|  <title>#{title}</title>|
     puts %Q|  <year>#{year}</year>|
@@ -223,7 +223,6 @@ def printPoem()
   if @keywords
     puts "  <keywords>#{@keywords}</keywords>"
   end
-  puts "  <quality>korrektur1,kilde,side</quality>"
   puts "</head>"
   puts "<body>"
   puts "<#{@initialtype}>"

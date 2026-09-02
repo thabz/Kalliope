@@ -13,7 +13,7 @@ import {
   safeGetAttr,
   safeGetOuterXML,
 } from './xml.js';
-import { sourceWorkFilename } from './anthologies.js';
+import { sourceWorkFilename } from './work-cache.js';
 
 const textRefTagRegexp = /<(?:xref|a)\b[^>]*(?:\bpoem|\bbible)="[^"]*"[^>]*>/g;
 

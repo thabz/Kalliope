@@ -13,6 +13,8 @@ Læs den relevante specialdokumentation før ændringer på området:
 - `docs/xml-info-format.md` ved ændringer i `fdirs/<id>/info.xml`
 - `docs/xml-portraits-format.md` ved ændringer i `portraits.xml`,
   portrætreferencer eller kvadratiske portrætter
+- `docs/titelbladsbilleder.md` ved udtræk, opretning, beskæring eller
+  kvalitetskontrol af titelbladsbilleder
 - `docs/xml-work-format.md` ved ændringer i XML-værkfiler
 - `docs/xml-biographies-format.md` ved ændringer i `fdirs/<id>/bio.xml`
 - `docs/facsimile-korrektur.md` ved transskription og fuld korrektur af tekst,
@@ -51,6 +53,9 @@ Læs den relevante specialdokumentation før ændringer på området:
 ## Billeder
 
 - Portrætter og kunstgrafik ligger i `public/images/<id>/`.
+- Medtag kun en bogforside som værkbillede, når den har selvstændig grafisk eller
+  kunstnerisk interesse, fx illustration, ornamentik eller markant typografi.
+  Almindelige læderbind og andre rent funktionelle omslag skal ikke medtages.
 - Der må ikke ligge `.jpg`, `.jpeg`, `.png`, `.gif` eller `.webp` under `fdirs/`.
 - Når billedmetadata som `wikidata`, `museum`, `objid` og `invnr` opdateres, skal alle
   kilder med `<picture>` gennemgås: `content/artwork.xml`, `fdirs/<id>/artwork.xml`,
