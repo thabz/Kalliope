@@ -1,42 +1,28 @@
-# SQLite-indeks (statisk build)
+# SQLite-indeks (valgfrit lokalt analyseværktøj)
 
-Dette er den foretrukne datakilde for agenter og analyseværktøjer, når en
-forespørgsel kan løses med de indekserede felter. Start med SQL her i stedet
-for at scanne alle XML-filer. Gå til `fdirs/` eller `content/`, hvis et felt
-mangler i databasen, eller hvis den originale XML-kilde skal verificeres.
+Brug normalt de versionsmærkede JSONL-gzipfiler i `public/api/v1/` til opslag,
+optællinger, filtrering og audit. De er små nok til streaming med `gzip` og
+`jq`; se `docs/corpus-dataset.md`. Dette SQLite-indeks er et valgfrit lokalt
+værktøj til forespørgsler, hvor SQL-joins er væsentligt enklere.
 
-Åbn en interaktiv session med `make sqlite`. Databasen skal først være bygget
-med `make build-static` eller `npm run build-static`; `make sqlite` bygger ikke
-automatisk databasen.
+Byg databasen med `make build-sqlite`, og åbn derefter en interaktiv session
+med `make sqlite`. Standardkommandoerne `make build-static` og
+`npm run build-static` bygger ikke databasen.
 
 Bygning:
-- Trigger: `npm run build-static`
-- Output: `public/api/kalliope.sqlite`
+- Trigger: `make build-sqlite` eller `npm run build-sqlite`
+- Output: `caches/kalliope.sqlite`
 - Optionelt SQL-debug: `caches/sqlite-index-build.sql`
-- Bruger `isFileModified` til at springe build over ved uændrede kilder.
-- Inkrementel opdatering:
-  - Ved ændring af kildefiler findes berørte tekst/work/poet rækker via source-mapping.
-  - De berørte rækker slettes først, hvorefter nye rækker indsættes.
-  - Der bygges fuld DB, hvis der mangler kilder/afhængigheder ikke kan matches.
-  - Eksempel:
-    - Ændring: `fdirs/gudmand/work1.xml` (forfatter=`gudmand`, arbejde=`work1`).
-    - Tilsvarende afhængigheder:
-      - `text`-rækker hvor `work_id = 'gudmand/work1'`
-      - `event` for de samme tekster (`text.work_id`).
-      - `source` for de samme tekster.
-      - `poet` rækker for forfatteren (`poet_id = 'gudmand'`) hvis filen er `info.xml`/`bio.xml`/`events.xml`/`portraits.xml`/`artwork.xml`.
-    - Flow:
-      1) Identificér berørte `text_id` via mapping.
-      2) Slet disse rækker fra `text_search_index`, `text_content`, `text`, `source`, `event`.
-      3) Genopbyg kun disse `text_id` + parent `work_id`/`poet_id`.
-      4) Opdater filcache for de ændrede filer.
+- Kommandoen genbruger static-buildets normale indsamling, men springer
+  Elasticsearch og billedthumbnails over, når den køres via `make`.
+- Outputtet ligger under den ignorerede `caches/`-mappe og publiceres ikke.
 
 ## Kendte begrænsninger
 
-- `DELETE`/`INSERT` sker per `poet/work/text`-scope; afhængigheder uden eksplicit source-mapping kan udløse fuld rebuild.
-- Ændringer i ukendte filer (ikke i den indsamlede source-liste) eller ugyldige mapping-regler vælger fuld genopbygning.
+- Indekset er stort, fordi det indeholder både struktureret indhold,
+  søgeflade og renderingsdata. Byg det kun, når SQL er nyttigt for opgaven.
 - FTS5 er ikke bygget i denne version; søgning bruger `text_search_index` med `LIKE`-fallback.
-- Hvis `sqlite3` CLI mangler, springes SQLite-opbygning af over, så `npm run build-static` stadig gennemføres.
+- Hvis `sqlite3` CLI mangler, oprettes indekset ikke.
 
 ## Tabeller
 
@@ -61,9 +47,14 @@ Bygning:
 - `text_search_index`
   - Nøgle: `text_id`
   - Denormaliseret søgeflade med `raw_text`, titler, evt. datoer og nøgleord.
-SQLite-filen er et genereret, internt analyseartefakt; den er ikke en del af
-frontendens API. `caches/sqlite-index-build.sql` er kun en valgfri debug-/
-importcache og skal ikke redigeres som datakilde.
+- `picture`
+  - Nøgle: `picture_id`
+  - Sporer `<picture>`-elementer med kildefil, scope, eventuelt `text_id` samt
+    metadatafelterne `has_href` og `has_objid`.
+SQLite-filen er et genereret, lokalt analyseartefakt og er ikke del af det
+offentlige korpusdatasæt. `caches/sqlite-index-build.sql` er kun en valgfri
+debug-/importcache og skal ikke redigeres som datakilde.
+
 ## Relationer
 
 - `poet` 1:N `work`
@@ -75,12 +66,17 @@ importcache og skal ikke redigeres som datakilde.
 
 ## Arbejdsgang for agenter
 
-1. Afgræns forespørgslen til de felter og relationer, der er beskrevet her.
-2. Kør en SQL-forespørgsel mod `public/api/kalliope.sqlite`.
+1. Forsøg først forespørgslen mod JSONL-gzipfilerne som beskrevet i
+   `docs/corpus-dataset.md`.
+2. Byg kun SQLite-indekset, hvis relationelle joins eller analysefelter gør SQL
+   væsentligt enklere.
 3. Brug XML-filerne som kildecheck eller fallback, ikke som første søgestrategi.
 
-Databasen er et genereret analyseartefakt og må ikke redigeres manuelt. Kør et
-nyt static-build efter ændringer i XML eller buildlogikken.
+Databasen må ikke redigeres manuelt. Kør `make build-sqlite` igen efter
+ændringer i XML eller buildlogikken.
+
+Indekset opdateres inkrementelt, når en arbejdsfil eller en billedmetadatafil
+er ændret. Ved ændringer, der ikke kan afgrænses sikkert, genopbygges det helt.
 
 ## Typiske queries
 
@@ -122,12 +118,24 @@ GROUP BY poet_id, type
 ORDER BY n DESC;
 ```
 
-- Seneste ændrede filer ifølge source hash:
+- Tekster med facsimilekilde:
 
 ```sql
-SELECT source_file, sha1, datetime(updated_at / 1000, 'unixepoch') AS updated_at
-FROM source_file_hash
-ORDER BY updated_at DESC;
+SELECT text_id, source_label, pages_text
+FROM source
+WHERE facsimile IS NOT NULL
+ORDER BY text_id;
+```
+
+- Billeder uden `href` eller museums-`objid`:
+
+```sql
+SELECT
+  COUNT(*) AS total_pictures,
+  SUM(1 - has_href) AS mangler_href,
+  SUM(1 - has_objid) AS mangler_objid,
+  SUM(CASE WHEN has_href = 0 OR has_objid = 0 THEN 1 ELSE 0 END) AS mangler_href_eller_objid
+FROM picture;
 ```
 
 - Tekster uden registreret dato, hvor brødteksten indeholder en mulig dato:

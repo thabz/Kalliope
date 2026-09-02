@@ -70,10 +70,13 @@ const loadJSON = filename => {
 
 const writeJSON = (filename, data) => {
   const json = JSON.stringify(data, null, 2);
-  fs.writeFileSync(filename, json);
+  writeText(filename, json);
 };
 
 const writeText = (filename, text) => {
+  if (fileExists(filename) && loadText(filename) === text) {
+    return;
+  }
   fs.writeFileSync(filename, text);
 };
 
@@ -138,10 +141,22 @@ const splitMultilineLanguageSpans = html =>
     }
   );
 
+const collapseMultilineNotes = html =>
+  html.replace(
+    /<(footnote|note)(\s+[^>]*)?>([\s\S]*?)<\/\1>/g,
+    (_, tagName, attributes = '', content) =>
+      `<${tagName}${attributes}>${content.replace(/\s*\n\s*/g, ' ')}</${tagName}>`
+  );
+
 const htmlToXml = (html, collected, isPoetry) => {
   if (html == null) {
     return null;
   }
+  const escapedLessThanPlaceholder = '\uE000KALLIOPE_LT\uE001';
+  const escapedGreaterThanPlaceholder = '\uE000KALLIOPE_GT\uE001';
+  html = html
+    .replace(/&lt;/g, escapedLessThanPlaceholder)
+    .replace(/&gt;/g, escapedGreaterThanPlaceholder);
   const regexp = /<xref.*?(digt|poem|keyword|work|bibel|dict)=['"]([^'"]*)['"][^>]*>/;
   if (isPoetry) {
     // Marker strofe numre
@@ -160,6 +175,7 @@ const htmlToXml = (html, collected, isPoetry) => {
       return /^[ \t]+<!--.*?-->[ \t]+$/.test(match) ? ' ' : '';
     })
     .replace(/::NEWLINE-PLACEHOLDER::/g, '\n');
+  html = collapseMultilineNotes(html);
   let decoded = splitMultilineLanguageSpans(
     decodeXmlCharacterReferences(
       replaceDashes(
@@ -170,8 +186,8 @@ const htmlToXml = (html, collected, isPoetry) => {
           .replace(/\n *(====*) *\n/g, (match, p1) => {
             return `\n<hr width="${p1.length}" class="double"/>\n`;
           })
-          .replace(/^( +)/gm, (match, p1) => {
-            return '\u00a0'.repeat(2 * p1.length);
+          .replace(/^((?:<pb\b[^>]*\/>)*)( +)/gm, (match, prefix, spaces) => {
+            return prefix + '\u00a0'.repeat(2 * spaces.length);
           })
           .replace(/^( *[_\*\- ]+ *)$/gm, (match, p1) => {
             // <nonum> på afskillerlinjer som f.eks. "* * *" eller "___"
@@ -183,6 +199,9 @@ const htmlToXml = (html, collected, isPoetry) => {
       )
     )
   );
+  decoded = decoded
+    .replaceAll(escapedLessThanPlaceholder, '&lt;')
+    .replaceAll(escapedGreaterThanPlaceholder, '&gt;');
 
   while (decoded.match(regexp)) {
     decoded = decoded.replace(regexp, (_, type, id) => {
@@ -276,7 +295,7 @@ const htmlToXml = (html, collected, isPoetry) => {
       options.displayNum = l.match(/<num>(.*)<\/num>/)[1];
       l = l.replace(/<num>(.*)<\/num>/, '');
     }
-    if (l.indexOf('<margin>') > -1) {
+    if (isPoetry && l.indexOf('<margin>') > -1) {
       options.margin = l.match(/<margin>(.*)<\/margin>/)[1];
       l = l.replace(/<margin>(.*)<\/margin>/, '');
     }

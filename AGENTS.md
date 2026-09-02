@@ -9,6 +9,18 @@ Disse regler gælder for AI-agenter og automatiserede assistenter, der arbejder 
 - Læs derefter den specialdokumentation, som stilguiden henviser til for det
   relevante område.
 
+## Repository-skills
+
+- Brug `$add-kalliope-work`, når et nyt værk skal indsættes og afleveres som
+  en pull request.
+- Brug også `$pdf-to-kalliope`, når kilden er en komplet scannet PDF, der skal
+  OCR-behandles eller transskriberes. I den arbejdsgang styrer
+  `$pdf-to-kalliope` selve PDF-, transskriptions- og korrekturarbejdet, mens
+  `$add-kalliope-work` styrer PR-checklisten og overdragelsen til brugeren.
+- Brug `$prepare-kalliope-titlepage`, når et titelblad skal rettes op,
+  beskæres eller kvalitetskontrolleres. `$pdf-to-kalliope` bruger denne skill
+  som sit faste billedbehandlingstrin for `p1`.
+
 ## Kalliopes dækningsmål
 
 Ved arbejde med personer, værker, kilder og import skal
@@ -20,20 +32,27 @@ digtere.
 
 ## Forespørgsler på korpusdata
 
-- Brug den genererede SQLite-database `public/api/kalliope.sqlite` til opslag,
-  optællinger, filtrering og audit af korpusdata, når forespørgslen kan løses
-  der. Læs `docs/sqlite-index.md` først.
+- Brug de genererede JSONL-gzipfiler i `public/api/v1/` til opslag,
+  optællinger, filtrering og audit af korpusdata. Læs
+  `docs/corpus-dataset.md` først, og brug streaming med `gzip` og `jq` frem for
+  at pakke hele datasættet ud.
 - Scan ikke alle XML-filer i `fdirs/` eller `content/` som førstevalg. Gå kun
-  til XML, når databasen ikke indeholder de nødvendige felter, eller når den
+  til XML, når bulkfilerne ikke indeholder de nødvendige felter, eller når den
   konkrete opgave kræver kilde-XML'en.
-- Databasen bygges med `make build-static` eller `npm run build-static`. Brug
-  `make sqlite` for at åbne en lokal SQLite-session efter et build.
+- Ved komplekse relationelle audits kan et valgfrit lokalt SQLite-indeks bygges
+  med `make build-sqlite` og åbnes med `make sqlite`. Læs
+  `docs/sqlite-index.md` først. Indekset er ikke en del af standard-buildet
+  eller det offentlige datasæt.
 
 ## XML-data
 
 - Angiv altid `lang` med en ISO 639-1-sprogkode på `<quote>`, når citatet ikke
   er på dansk. Gennemgå korte mottoer og enkeltord manuelt; dansk- og
   norskprægede historiske sprogformer må ikke mærkes uden en sikker vurdering.
+- Brug ikke `<a>` eller `<xref>` i værkernes egentlige brødtekst i `<body>`.
+  Henvisninger fra digte, prosa og citatblokke skal ligge i `<note>` eller
+  `<footnote>`; links i keywordtekster og biografier er fortsat tilladt.
+  Attributlinks som `source/@href` er metadata og berøres ikke af reglen.
 
 ## Git og GitHub
 

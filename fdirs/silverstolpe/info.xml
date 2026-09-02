@@ -5,13 +5,21 @@
     <lastname>Silfverstolpe</lastname>
   </name>
   <period>
-    <born><date>1762-08-10</date><place>Stockholm</place></born>
-    <dead><date>1816-09-05</date><place>Stockholm</place></dead>
+    <born>
+      <date>1762-08-10</date>
+      <place>Stockholm</place>
+    </born>
+    <dead>
+      <date>1816-09-05</date>
+      <place>Stockholm</place>
+    </dead>
   </period>
   <literary-periods>se-frihedstid-og-gustaviansk-tid,se-romantik</literary-periods>
   <works>andre</works>
   <identifiers>
     <wikidata>Q6176220</wikidata>
     <viaf>107603782</viaf>
+    <gnd>100621961</gnd>
+    <runeberg-org>silvstag</runeberg-org>
   </identifiers>
 </person>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="hansenm" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Mads</firstname>
+    <lastname>Hansen</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1834-07-23</date>
+      <place>Hundstrup</place>
+    </born>
+    <dead>
+      <date>1880-04-02</date>
+      <place>Hundstrup</place>
+    </dead>
+  </period>
+  <literary-periods>dk-guldalder-og-romantik</literary-periods>
+  <works>1867,1870,1873</works>
+  <identifiers>
+    <wikidata>Q20669452</wikidata>
+    <wikipedia-da>Mads Hansen (digter)</wikipedia-da>
+    <viaf>1891149198211374940004</viaf>
+    <biografisk-leksikon-lex-dk>Mads_Hansen</biografisk-leksikon-lex-dk>
+    <danskforfatterleksikon-dk>HMadsHansen</danskforfatterleksikon-dk>
+  </identifiers>
+</person>

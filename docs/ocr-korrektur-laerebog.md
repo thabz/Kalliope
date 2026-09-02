@@ -116,6 +116,12 @@ Titler og førstelinjer må aldrig indeholde markup. De skal altid være ren tek
 Strukturelle oplysninger, formatering og semantiske elementer skal placeres i
 de relevante XML-elementer uden for `<title>` og `<firstline>`.
 
+Titelfelter normaliseres desuden uden afsluttende tegnsætning. Et punktum,
+komma, kolon, semikolon, spørgsmålstegn eller udråbstegn sidst i den trykte
+overskrift udelades derfor i titelmetadata. Undertitler, overtitler og selve den
+diplomatiske transskription følger fortsat kildens tegnsætning. Se
+`docs/xml-work-format.md` for de omfattede titelfelter.
+
 ### 12. Bevar interne sideskift semantisk
 
 OCR-arbejdet må ikke udviske, hvor en sammenhængende tekst krydser en fysisk
@@ -129,9 +135,10 @@ facsimilefil og trykt sidetal skal hentes fra sideinventaret og må ikke antages
 at være ens.
 
 Skriv `source/@pages` med fulde, lukkede og ikke-faldende intervaller, fx
-`102-108` og ikke `102-08`. Kontrollér desuden, at arabiske `pb/@n` og numeriske
-`pb/@facs`-filnavne aldrig falder i dokumentrækkefølge; spring mellem markører
-er tilladt.
+`102-108` og ikke `102-08`. Kontrollér desuden, at arabiske `pb/@n` aldrig
+falder inden for den enkelte tekstpost; ved selvstændig paginering kan de
+begynde forfra i næste tekstpost. Numeriske `pb/@facs`-filnavne må aldrig falde
+i dokumentrækkefølge. Spring mellem markører er tilladt.
 
 Når alle inkluderede tekstkroppe er kontrolleret, skal `<workhead>` indeholde
 `<pagebreaks/>`. Er alle tekster på én side, findes der ingen `<pb>`, men

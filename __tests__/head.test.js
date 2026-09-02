@@ -91,4 +91,20 @@ describe('side metadata', () => {
       '<meta property="og:description" content="En kort tekst."/>'
     );
   });
+
+  it('announces the corpus discovery manifest', () => {
+    const html = renderToStaticMarkup(<Head />);
+
+    expect(html).toContain(
+      '<link rel="describedby" type="application/json" href="/api/manifest.json"/>'
+    );
+  });
+
+  it('preloads the fonts used above the fold', () => {
+    const html = renderToStaticMarkup(<Head />);
+
+    expect(html).toContain(
+      '<link rel="preload" href="/fonts/alegreya-sans/alegreya-sans-italic-400-latin.woff2" as="font" type="font/woff2" crossorigin=""/>'
+    );
+  });
 });

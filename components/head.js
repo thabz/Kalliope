@@ -7,6 +7,7 @@ const defaultDescription =
 const defaultOGImage = `${urlPrefix}/touch-icon.png`;
 const criticalFonts = [
   '/fonts/alegreya-sans/alegreya-sans-normal-400-latin.woff2',
+  '/fonts/alegreya-sans/alegreya-sans-italic-400-latin.woff2',
   '/fonts/alegreya-sans/alegreya-sans-normal-100-latin.woff2',
 ];
 
@@ -65,6 +66,11 @@ const Head = ({
       <link rel="mask-icon" href="/favicon-mask.svg" color="black" />
       <link rel="icon" href="/favicon.ico" />
       <link rel="manifest" href="/manifest.json" />
+      <link
+        rel="describedby"
+        type="application/json"
+        href="/api/manifest.json"
+      />
       {criticalFonts.map((href) => (
         <link
           rel="preload"
