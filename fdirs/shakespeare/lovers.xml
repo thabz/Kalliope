@@ -1,24 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="lovers" author="shakespeare" status="complete" type="poetry">
 <workhead>
-   <title>A Lover's Complaint</title>
-   <year>1609</year>
-   <notes>
-      <note>Rettet ind efter <i>Shakespeare's Sonnets</i>, ed. Katherine Duncan-Jones, The Arden Shakespeare Third Series, 1998</note>
-      <note>Arden Shakespeare er fulgt i alt på nær deres ophævelse af "apostrof-e" (f.eks. measur'd til measured) og af stort begyndelsesbogstav i personifikationer (Nature, Time osv.), begge dele er unødige moderniseringer der eliminerer den stilfulde, arkaiske patina fra teksten.</note>
-      <note type="credits">Bidrag fra Brian Bentsen.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>A Lover's Complaint</title>
+  <year>1609</year>
+  <identifiers>
+    <openlibrary-work>OL42469648W</openlibrary-work>
+  </identifiers>
+  <notes>
+    <note>Rettet ind efter <i>Shakespeare's Sonnets</i>, ed. Katherine Duncan-Jones, The Arden Shakespeare Third Series, 1998</note>
+    <note>Arden Shakespeare er fulgt i alt på nær deres ophævelse af "apostrof-e" (f.eks. measur'd til measured) og af stort begyndelsesbogstav i personifikationer (Nature, Time osv.), begge dele er unødige moderniseringer der eliminerer den stilfulde, arkaiske patina fra teksten.</note>
+    <note type="credits">Bidrag fra Brian Bentsen.</note>
+  </notes>
+  <quality>korrektur1,kilde</quality>
 </workhead>
 <workbody>
 
 <text id="shakespeare2000030701">
 <head>
-   <title>A Lover's Complaint</title>
-   <toctitle>A Lover's Complaint</toctitle>
-   <indextitle>A Lover's Complaint</indextitle>
-   <firstline>From off a hill whose concave womb reworded</firstline>
-   <quality>korrektur1,kilde</quality>
+  <title>A Lover's Complaint</title>
+  <toctitle>A Lover's Complaint</toctitle>
+  <indextitle>A Lover's Complaint</indextitle>
+  <firstline>From off a hill whose concave womb reworded</firstline>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -401,5 +404,6 @@ And new pervert a reconciled maid."
 </poetry>
 </body>
 </text>
+
 </workbody>
 </kalliopework>

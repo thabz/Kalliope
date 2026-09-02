@@ -1,7 +1,7 @@
 jest.mock('../tools/libs/caching.js', () => ({
-  isFileModified: () => false,
-  loadCachedJSON: () => null,
-  writeCachedJSON: () => {},
+  isFileModified: jest.fn(() => false),
+  loadCachedJSON: jest.fn(() => null),
+  writeCachedJSON: jest.fn(),
   force_reload: false,
 }));
 
@@ -31,6 +31,11 @@ import {
   writeJSON,
 } from '../tools/libs/helpers.js';
 import {
+  loadCachedJSON,
+  writeCachedJSON,
+} from '../tools/libs/caching.js';
+import {
+  build_person_or_keyword_refs,
   build_mentions_data,
   build_mentions_json,
   collectPersonOrKeywordRefs,
@@ -62,6 +67,9 @@ describe('mentions data', () => {
     fileExists.mockReturnValue(false);
     removeFile.mockClear();
     writeJSON.mockClear();
+    loadCachedJSON.mockReset();
+    loadCachedJSON.mockReturnValue(null);
+    writeCachedJSON.mockClear();
   });
 
   const buildCollected = () => {
@@ -146,6 +154,35 @@ describe('mentions data', () => {
     );
 
     expect(refs.has('bango')).toBe(false);
+  });
+
+  it('indsamler refs fra et nyt værk, selv om filen er uændret', () => {
+    loadCachedJSON.mockImplementation((key) => {
+      if (key === 'collected.person_or_keyword_refs') {
+        return [];
+      }
+      if (key === 'collected.person_or_keyword_refs_by_file') {
+        return [['fdirs/aarestrup/1863.xml', []]];
+      }
+      return null;
+    });
+    fileExists.mockReturnValue(true);
+    const collected = {
+      workids: new Map([
+        ['aarestrup', ['1863', 'ny-samling']],
+      ]),
+      texts: new Map(),
+      unlistedWorkFiles: [],
+    };
+
+    build_person_or_keyword_refs(collected);
+
+    expect(writeCachedJSON).toHaveBeenCalledWith(
+      'collected.person_or_keyword_refs_by_file',
+      expect.arrayContaining([
+        ['fdirs/aarestrup/ny-samling.xml', []],
+      ])
+    );
   });
 
   it('viser oversættelser fra den primære variant', () => {

@@ -54,7 +54,7 @@ const collect_git_modified_dates = () => {
         '--',
         ...GIT_MODIFIED_DATE_PATHS.map((path) => `:(glob)${path}`),
       ],
-      { encoding: 'utf8' }
+      { encoding: 'utf8', maxBuffer: 16 * 1024 * 1024 }
     );
   } catch (error) {
     if (error.code === 'ENOENT' || error.status === 128) {

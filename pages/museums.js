@@ -6,6 +6,7 @@ import * as Links from '../components/links.js';
 import Page from '../components/page.js';
 import PageLead from '../components/pagelead.js';
 import SectionedList from '../components/sectionedlist.js';
+import TwoColumns from '../components/twocolumns.js';
 import ErrorPage from './error.js';
 
 const countryNames = {
@@ -121,8 +122,8 @@ const MuseumsPage = (props) => {
       {groupBy === 'country' ? (
         <SectionedList sections={sections} />
       ) : (
-        <div className="two-columns" style={{ lineHeight: 1.7 }}>
-          {items}
+        <div style={{ lineHeight: 1.7 }}>
+          <TwoColumns noLinkUnderline>{items}</TwoColumns>
         </div>
       )}
     </Page>

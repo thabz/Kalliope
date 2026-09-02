@@ -1,0 +1,33 @@
+{
+  "source": "nordisk-kvindelitteraturhistorie",
+  "status": "snapshot",
+  "generatedAt": "2026-08-07T14:31:33.401Z",
+  "method": "bounded fetch of the public Danish writer index and its JSON data endpoint",
+  "indexUrl": "https://nordicwomensliterature.net/da/writers/",
+  "apiUrl": "https://nordicwomensliterature.net/wp-json/nwl/v1/writers/da",
+  "rawSnapshot": [
+    "raw/writers.html",
+    "raw/writers-da.json"
+  ],
+  "parsedSnapshot": "parsed/observations.json",
+  "fields": [
+    "name",
+    "born",
+    "dead",
+    "country",
+    "profile_url",
+    "picture_url"
+  ],
+  "records": {
+    "observations": 819,
+    "missingCountry": 22
+  },
+  "checksums": {
+    "raw/writers.html": "b0a31aa750a5885d36d787cb2891d5a8db90e3562e5671240bed1702c9b4ad85",
+    "raw/writers-da.json": "0bc9949f6df190432a877c688dcd2c4aa9f98e8a15f784cefa5a7639d48da583"
+  },
+  "articleRelations": {
+    "status": "not-in-writer-index",
+    "note": "The writer endpoint exposes no article relation field."
+  }
+}

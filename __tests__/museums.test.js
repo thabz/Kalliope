@@ -1,9 +1,13 @@
 import { DOMParser } from '@xmldom/xmldom';
 
 import { museumsByCountry } from '../pages/museums.js';
-import { build_museum_url } from '../tools/build-static/museums.js';
+import {
+  build_museum_url,
+  validateMuseum,
+} from '../tools/build-static/museums.js';
 import {
   getElementsByTagName,
+  getIdentifiers,
   loadXMLDoc,
   safeGetText,
 } from '../tools/build-static/xml.js';
@@ -51,6 +55,28 @@ describe('museum groups', () => {
     museums.forEach((museum) => {
       expect(safeGetText(museum, 'country')).not.toBeNull();
     });
+  });
+
+  it('stops the static build when country metadata is missing', () => {
+    expect(() =>
+      validateMuseum({ id: 'museum', country: null }),
+    ).toThrow('content/museums.xml: museum museum mangler <country>.');
+  });
+
+  it('allows wikidata as the museum identifier', () => {
+    const doc = new DOMParser().parseFromString(
+      '<museum><country>dk</country><identifiers><wikidata>Q1</wikidata></identifiers></museum>',
+      'text/xml',
+    ).documentElement;
+    expect(getIdentifiers(doc)).toEqual({ wikidata: 'Q1' });
+  });
+
+  it('rejects identifiers not allowed for museums', () => {
+    const doc = new DOMParser().parseFromString(
+      '<museum><identifiers><oclc>1</oclc></identifiers></museum>',
+      'text/xml',
+    ).documentElement;
+    expect(() => getIdentifiers(doc)).toThrow('ikke-tilladt identifikator <oclc>');
   });
 });
 

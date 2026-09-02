@@ -61,6 +61,18 @@ describe('sharp image helpers', () => {
     expect(metadata.height).toBe(50);
   });
 
+  it('does not enlarge square cover images that are already small enough', async () => {
+    const input = path.join(tmpdir, 'small-square.jpg');
+    const output = path.join(tmpdir, 'small-square-output.jpg');
+
+    await createJpeg(input, 80, 50);
+    await resizeImage(input, output, 100, { fit: 'cover' });
+
+    const metadata = await sharp(output).metadata();
+    expect(metadata.width).toBe(50);
+    expect(metadata.height).toBe(50);
+  });
+
   it('reads image dimensions through the build-static wrapper', async () => {
     const input = path.join(tmpdir, 'metadata.jpg');
 

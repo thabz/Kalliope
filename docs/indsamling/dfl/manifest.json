@@ -1,0 +1,16 @@
+{
+  "source": "danskforfatterleksikon",
+  "status": "local-cache-and-versioned-register",
+  "method": "bounded HTML fetch of known index files, title files and referenced author pages",
+  "baseUrl": "https://danskforfatterleksikon.dk/1850/",
+  "rawCache": [
+    "tools/data/indsamling/dfl/raw/dfl-index.html",
+    "tools/data/indsamling/dfl/raw/dfl-title-index.html",
+    "tools/data/indsamling/dfl/raw/titles/",
+    "tools/data/indsamling/dfl/raw/authors/"
+  ],
+  "registers": [
+    "tools/data/indsamling/register/digtere.jsonl",
+    "tools/data/indsamling/register/vaerker.jsonl"
+  ]
+}

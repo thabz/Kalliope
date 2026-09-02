@@ -13,11 +13,24 @@ Læs den relevante specialdokumentation før ændringer på området:
 - `docs/xml-info-format.md` ved ændringer i `fdirs/<id>/info.xml`
 - `docs/xml-portraits-format.md` ved ændringer i `portraits.xml`,
   portrætreferencer eller kvadratiske portrætter
+- `docs/titelbladsbilleder.md` ved udtræk, opretning, beskæring eller
+  kvalitetskontrol af titelbladsbilleder
 - `docs/xml-work-format.md` ved ændringer i XML-værkfiler
+- `docs/xml-biographies-format.md` ved ændringer i `fdirs/<id>/bio.xml`
+- `docs/facsimile-korrektur.md` ved transskription og fuld korrektur af tekst,
+  strofer og typografi mod et facsimile
+- `docs/ocr-korrektur-laerebog.md` ved generelle læringsprincipper for redigering
+  og reparation af OCR-scannede tekster
 - `docs/kalliope-xml-design-v1.1.md` ved ændringer i XML-modellen for
   publikationer, antologier og tekstforekomster
 - `docs/kalliope-masterplan.md` ved arbejde med korpusets afgrænsning,
   kilder, redaktionelle principper eller den langsigtede datastruktur
+- `docs/kb-digital-links.md` ved oprettelse eller audit af digitale kilde- og
+  facsimilelinks til Det Kgl. Bibliotek
+- `docs/sqlite-index.md` ved forespørgsler på det genererede korpusindeks,
+  ændringer i SQLite-buildet eller analyseværktøjer
+- `docs/corpus-dataset.md` ved ændringer i det offentlige, versionsmærkede
+  korpusdatasæt eller dets discovery-endpoint
 
 ## GitHub
 
@@ -40,6 +53,9 @@ Læs den relevante specialdokumentation før ændringer på området:
 ## Billeder
 
 - Portrætter og kunstgrafik ligger i `public/images/<id>/`.
+- Medtag kun en bogforside som værkbillede, når den har selvstændig grafisk eller
+  kunstnerisk interesse, fx illustration, ornamentik eller markant typografi.
+  Almindelige læderbind og andre rent funktionelle omslag skal ikke medtages.
 - Der må ikke ligge `.jpg`, `.jpeg`, `.png`, `.gif` eller `.webp` under `fdirs/`.
 - Når billedmetadata som `wikidata`, `museum`, `objid` og `invnr` opdateres, skal alle
   kilder med `<picture>` gennemgås: `content/artwork.xml`, `fdirs/<id>/artwork.xml`,
@@ -56,11 +72,22 @@ Læs den relevante specialdokumentation før ændringer på området:
 ## XML-data
 
 - Hold XML-beskrivelser korte, kildebaserede og i samme stil som omkringliggende filer.
+- Biografiers kilder angives kun i biografiens `<head>` som
+  `<source href="…">kildeangivelse</source>`. Udelad `href`, når der ikke findes
+  en verificeret digital udgave. URL'en skal som udgangspunkt pege på det konkrete
+  opslag eller den konkrete side, ikke på værkets eller værtens forside. Hvis der
+  kun foreligger en samlet digital udgave, kan kildekilden pege til
+  `https://www.rosekamp.dk/DBL_All/dansk_biografisk_leksikon.htm` eller
+  `https://runeberg.org/dbl/`. Renderingslaget viser kilderne efter
+  biografiteksten og tilføjer selv linktegnet `↗`, tooltip og tilgængeligt navn.
 - Markér fremmedsprog inde i en tekst med `<span lang="sv">...</span>` og en
   ISO 639-1-sprogkode. Sæt fortsat `lang` på `<text>`, når hele teksten har
   samme sprog.
 - Brug eksisterende attributter og formater; ukendte `<picture>`-attributter er build-fejl.
+- Identifikatorer på museum, picture og source valideres særskilt pr. entity-type.
 - Alle tekst- og XML-filer skal være UTF-8 encoded. Konvertér gamle Latin-1/ISO-8859-1-filer i stedet for at videreføre dem.
+- Formatér `info.xml`, `portraits.xml` og `artwork.xml` med
+  `node tools/format-metadata-xml.js <fil>`; testpakken håndhæver det kanoniske output.
 - Følg `docs/xml-info-format.md`, `docs/xml-portraits-format.md` eller
   `docs/xml-work-format.md` for det konkrete filformat.
 - Følg `docs/kalliope-xml-design-v1.1.md` ved ændringer i den overordnede

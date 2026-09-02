@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="1816d" author="baggesen" status="incomplete" type="poetry">
 <workhead>
-   <title>Danfana</title>
-   <year>1816</year>
-   <notes>
-      <note>Digte fra Baggesens månedsskrift <i>Danfana</i>. Digtkredsen <i>Balders Igjenkomst</i> blev først fuldendt tre år senere i <a work="baggesen/1819">Rosenblade med et Par Torne</a>. Digtene er i forlægget ikke samlet, men afbrudt af artikler og andre digte, det samme gælder sangene af <i>Thora</i>.</note>
-      <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
-   </notes>
-   <pictures>
-      <picture src="balder.jpg">Titelbladet til <i>Balders Igienkomst, eller Digte til Nanna</i> fra <i>Danfana</i> 1816, bind II, side 325.<br/>Balders Igienkomst, / eller / Digte til Nanna. / - - Disjecti membra - / Hor. / 1816-1817.</picture>
-   </pictures>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Danfana</title>
+  <year>1816</year>
+  <notes>
+    <note>Digte fra Baggesens månedsskrift <i>Danfana</i>. Digtkredsen <i>Balders Igjenkomst</i> blev først fuldendt tre år senere i <a work="baggesen/1819">Rosenblade med et Par Torne</a>. Digtene er i forlægget ikke samlet, men afbrudt af artikler og andre digte, det samme gælder sangene af <i>Thora</i>.</note>
+    <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
+  </notes>
+  <pictures>
+    <picture src="balder.jpg">Titelbladet til <i>Balders Igienkomst, eller Digte til Nanna</i> fra <i>Danfana</i> 1816, bind II, side 325.<br/>Balders Igienkomst, / eller / Digte til Nanna. / - - Disjecti membra - / Hor. / 1816-1817.</picture>
+  </pictures>
+  <quality>korrektur1,kilde,side</quality>
 </workhead>
 <workbody>
 
 <text id="baggesen2003010901">
 <head>
-   <title>Til Danfanas Døttre</title>
-   <toctitle>Til Danfanas Døttre</toctitle>
-   <indextitle>Til Danfanas Døttre</indextitle>
-   <firstline>Rige Fugl kommer susende</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind I, side 9-11.</note>
-      <note>Første strofe alluderer til Oehlenschlägers <xref poem="oehlenschlaegers-valravnen,81-101"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Danfanas Døttre</title>
+  <toctitle>Til Danfanas Døttre</toctitle>
+  <indextitle>Til Danfanas Døttre</indextitle>
+  <firstline>Rige Fugl kommer susende</firstline>
+  <notes>
+    <note>Første strofe alluderer til Oehlenschlägers <xref poem="oehlenschlaegers-valravnen,81-101"/>.</note>
+  </notes>
+  <source pages="9-11"><i>Danfana</i> 1816, bind I.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -91,17 +91,17 @@ Og dem er det mig om at giøre.
 
 <text id="baggesen2003011201">
 <head>
-   <title>Ode til Sommerfuglene</title>
-   <subtitle>(Ludvig Heiberg helliget)</subtitle>
-   <toctitle>Ode til Sommerfuglene</toctitle>
-   <indextitle>Ode til Sommerfuglene</indextitle>
-   <firstline>I Blomsterengle, som min Aand forynge</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind I, side 12-16.</note>
-      <note>* Efter en min lille Søn tilsendt Foræring af hans Insekt-Samling paa Festdagen den 28de October 1815.</note>
-	  <note>Baggesen havde med sit digt ,,Det evige Sindbillede'' æsket det dannede borgerskab til gådeløsning, hvilket afstedkom en del forsøg på løsninger i form af digte - dette, og flere af de følgende digte, er svar på sådanne forsøg.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Ode til Sommerfuglene</title>
+  <subtitle>(Ludvig Heiberg helliget)</subtitle>
+  <toctitle>Ode til Sommerfuglene</toctitle>
+  <indextitle>Ode til Sommerfuglene</indextitle>
+  <firstline>I Blomsterengle, som min Aand forynge</firstline>
+  <notes>
+    <note>* Efter en min lille Søn tilsendt Foræring af hans Insekt-Samling paa Festdagen den 28de October 1815.</note>
+    <note>Baggesen havde med sit digt ,,Det evige Sindbillede'' æsket det dannede borgerskab til gådeløsning, hvilket afstedkom en del forsøg på løsninger i form af digte - dette, og flere af de følgende digte, er svar på sådanne forsøg.</note>
+  </notes>
+  <source pages="12-16"><i>Danfana</i> 1816, bind I.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -218,19 +218,17 @@ Og fandt en venlig Andagts-Gnist herneden,
 
 <text id="baggesen2003011203">
 <head>
-   <title>Elegie</title>
-   <subtitle>
-      <line>Til <i>Just Thiele</i></line>
-      <line>(Efter Tilsendelsen af hans Forsøg til en Opløsning af min Gaade)</line>
-   </subtitle>
-   <toctitle>Elegie</toctitle>
-   <indextitle>Elegie</indextitle>
-   <firstline>Hvad seer jeg? kan et ungt uvæbnet Øie</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind I, side 60-66.</note>
-   </notes>
-   <keywords>thiele</keywords>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Elegie</title>
+  <subtitle>
+    <line>Til <i>Just Thiele</i></line>
+    <line>(Efter Tilsendelsen af hans Forsøg til en Opløsning af min Gaade)</line>
+  </subtitle>
+  <toctitle>Elegie</toctitle>
+  <indextitle>Elegie</indextitle>
+  <firstline>Hvad seer jeg? kan et ungt uvæbnet Øie</firstline>
+  <source pages="60-66"><i>Danfana</i> 1816, bind I.</source>
+  <keywords>thiele</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -376,14 +374,12 @@ Og Englens Frister see <i>sig selv</i> - og flygte!
 
 <text id="baggesen2003011401">
 <head>
-   <title>Til Dannerkongen, den 28 Januarii 1816</title>
-   <toctitle>Til Dannerkongen, den 28 Januarii 1816</toctitle>
-   <indextitle>Til Dannerkongen, den 28 Januarii 1816</indextitle>
-   <firstline>Konge! Du, som alle Danmarks Sønner</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind I, side 97-102.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Dannerkongen, den 28 Januarii 1816</title>
+  <toctitle>Til Dannerkongen, den 28 Januarii 1816</toctitle>
+  <indextitle>Til Dannerkongen, den 28 Januarii 1816</indextitle>
+  <firstline>Konge! Du, som alle Danmarks Sønner</firstline>
+  <source pages="97-102"><i>Danfana</i> 1816, bind I.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -502,13 +498,11 @@ Ei Dit Øre for min Sang oplader,
 
 <text id="baggesen2003011402">
 <head>
-   <title>Til Frøken J. M. Jessen</title>
-   <subtitle>(Efter Tilsendelsen af ovenstaaende Digt)</subtitle>
-   <firstline>Prisen, ædle Giætterinde</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind I, side 112-16.</note>
-      </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Frøken J. M. Jessen</title>
+  <subtitle>(Efter Tilsendelsen af ovenstaaende Digt)</subtitle>
+  <firstline>Prisen, ædle Giætterinde</firstline>
+  <source pages="112-116"><i>Danfana</i> 1816, bind I.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -604,19 +598,19 @@ Meer end alle Rigsbankdaler,
 
 <text id="baggesen2003020201">
 <head>
-   <title>Valhalla-Legen</title>
-   <subtitle>
-      <line>Første Brev</line>
-      <line>(Til Udgiveren af Nyeste Kiøbenhavns Skilderie)</line>
-   </subtitle>
-   <toctitle>Valhalla-Legen. Første Brev</toctitle>
-   <indextitle>Valhalla-Legen. Første Brev</indextitle>
-   <firstline>I største Hast, ærværdige Herr Ven!</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind I, side 128-47.</note>
-      <note>* Skrevet den 13de Nov. 1815 umiddelbar efter Indtrykket af den flygtige Læsning af <i>,,Rimelige Strøetanker ved Kallundborgs i Livet vel meriterede Stads-Satyrikus Jens Baggesens Grav.''</i></note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Valhalla-Legen</title>
+  <subtitle>
+    <line>Første Brev</line>
+    <line>(Til Udgiveren af Nyeste Kiøbenhavns Skilderie)</line>
+  </subtitle>
+  <toctitle>Valhalla-Legen. Første Brev</toctitle>
+  <indextitle>Valhalla-Legen. Første Brev</indextitle>
+  <firstline>I største Hast, ærværdige Herr Ven!</firstline>
+  <notes>
+    <note>* Skrevet den 13de Nov. 1815 umiddelbar efter Indtrykket af den flygtige Læsning af <i>,,Rimelige Strøetanker ved Kallundborgs i Livet vel meriterede Stads-Satyrikus Jens Baggesens Grav.''</i></note>
+  </notes>
+  <source pages="128-147"><i>Danfana</i> 1816, bind I.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -895,16 +889,14 @@ Med Alvor midt i Skiemten - <i>meinethalben!</i>
 
 <text id="baggesen2003021601">
 <head>
-   <title>Andet Brev</title>
-   <subtitle>Til Udgiveren af Nyeste Kiøbenhavns Skilderie - d. 15 November 1815</subtitle>
-   <toctitle>Valhalla-Legen. Andet Brev</toctitle>
-   <indextitle>Valhalla-Legen. Andet Brev</indextitle>
-   <firstline>Gaarsdagens Skilderie jeg alt har døiet</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind I, side 148-55.</note>
-   </notes>
-   <keywords>grundtvig</keywords>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Andet Brev</title>
+  <subtitle>Til Udgiveren af Nyeste Kiøbenhavns Skilderie - d. 15 November 1815</subtitle>
+  <toctitle>Valhalla-Legen. Andet Brev</toctitle>
+  <indextitle>Valhalla-Legen. Andet Brev</indextitle>
+  <firstline>Gaarsdagens Skilderie jeg alt har døiet</firstline>
+  <source pages="148-155"><i>Danfana</i> 1816, bind I.</source>
+  <keywords>grundtvig</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1040,14 +1032,12 @@ Men Mand mod Mand, med ædle danske Vaaben!
 
 <text id="baggesen2003021602">
 <head>
-   <title>Til den mig ubekiendte Forfatter af ,,Rimelige Strøe-Tanker ved Jens Baggesens Grav''</title>
-   <toctitle>Til den mig ubekiendte Forfatter af ,,Rimelige Strøe-Tanker ved Jens Baggesens Grav''</toctitle>
-   <indextitle>Til den mig ubekiendte Forfatter af ,,Rimelige Strøe-Tanker ved Jens Baggesens Grav''</indextitle>
-   <firstline>Hvem er du Sphinx, der paa mig stirrer</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind I, side 156-67.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til den mig ubekiendte Forfatter af ,,Rimelige Strøe-Tanker ved Jens Baggesens Grav''</title>
+  <toctitle>Til den mig ubekiendte Forfatter af ,,Rimelige Strøe-Tanker ved Jens Baggesens Grav''</toctitle>
+  <indextitle>Til den mig ubekiendte Forfatter af ,,Rimelige Strøe-Tanker ved Jens Baggesens Grav''</indextitle>
+  <firstline>Hvem er du Sphinx, der paa mig stirrer</firstline>
+  <source pages="156-167"><i>Danfana</i> 1816, bind I.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1282,15 +1272,15 @@ Er dog et christent Paradiis.
 
 <text id="baggesen2003021603">
 <head>
-   <title>Til Vali Magni</title>
-   <toctitle>Til Vali Magni</toctitle>
-   <indextitle>Til Vali Magni</indextitle>
-   <firstline>Jeg er mig selv en Gaade</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind I, side 171-82.</note>
-   <note>* Tilsenderen af <i>Gaadegiætningen</i> værdigede ikke at lade dette Svar afhente; i dets Sted lod han sin Gaadegiætning aldeles <i>forandret</i>, og endløs (om ikke uendelig) udført, indrykke i Skilderiet - paa samme Tid, som Fortsættelsen af Strøetankerne - i en ikke blot <i>fiendsk</i>, men mageløs fornærmende, min hele Digten og Tragten fordømmende, og min Gaade med Latter forhaanende Tone.<br/>&#160;&#160;&#160;Svaret paa hans sidste værdige Digt følger i næste Hefte.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Vali Magni</title>
+  <toctitle>Til Vali Magni</toctitle>
+  <indextitle>Til Vali Magni</indextitle>
+  <firstline>Jeg er mig selv en Gaade</firstline>
+  <notes>
+    <note>* Tilsenderen af <i>Gaadegiætningen</i> værdigede ikke at lade dette Svar afhente; i dets Sted lod han sin Gaadegiætning aldeles <i>forandret</i>, og endløs (om ikke uendelig) udført, indrykke i Skilderiet - paa samme Tid, som Fortsættelsen af Strøetankerne - i en ikke blot <i>fiendsk</i>, men mageløs fornærmende, min hele Digten og Tragten fordømmende, og min Gaade med Latter forhaanende Tone.<br/>&#160;&#160;&#160;Svaret paa hans sidste værdige Digt følger i næste Hefte.</note>
+  </notes>
+  <source pages="171-182"><i>Danfana</i> 1816, bind I.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1563,14 +1553,12 @@ Med mig min <i>Hovedbog!</i>
 
 <text id="baggesen2003021604">
 <head>
-   <title>Vildskjalden</title>
-   <toctitle>Vildskjalden</toctitle>
-   <indextitle>Vildskjalden</indextitle>
-   <firstline>At efter Lov og Regler ei du skriver</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind I, side 183.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Vildskjalden</title>
+  <toctitle>Vildskjalden</toctitle>
+  <indextitle>Vildskjalden</indextitle>
+  <firstline>At efter Lov og Regler ei du skriver</firstline>
+  <source pages="183"><i>Danfana</i> 1816, bind I.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1582,16 +1570,13 @@ Men at du selv i Digten <i>ingen giver</i>,
 </body>
 </text>
 
-
 <text id="baggesen2003021605">
 <head>
-   <title>Ingemann og Oehlenschläger</title>
-   <firstline>Hin Schiller, denne Göthe paa vor Scene</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind I, side 183.</note>
-   </notes>
-   <keywords>ingemann,oehlenschlaeger,schiller,goethe,klopstock,ewald</keywords>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Ingemann og Oehlenschläger</title>
+  <firstline>Hin Schiller, denne Göthe paa vor Scene</firstline>
+  <source pages="183"><i>Danfana</i> 1816, bind I.</source>
+  <keywords>ingemann,oehlenschlaeger,schiller,goethe,klopstock,ewald</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1607,18 +1592,17 @@ Hun udentvivl vil Ingemann den skiænke
 </body>
 </text>
 
-
 <text id="baggesen2003021701">
 <head>
-   <title>Gaadebordet</title>
-   <toctitle>Gaadebordet</toctitle>
-   <indextitle>Gaadebordet</indextitle>
-   <firstline>End seer jeg det, det underskiønne Syn</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind I, side 184-92.</note>
-      <note>Mottoet stammer fra <xref poem="horats2026010401"/> og kan oversættes ,,Ordets kraft ligger i forbindelsen og rækken''.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Gaadebordet</title>
+  <toctitle>Gaadebordet</toctitle>
+  <indextitle>Gaadebordet</indextitle>
+  <firstline>End seer jeg det, det underskiønne Syn</firstline>
+  <notes>
+    <note>Mottoet stammer fra <xref poem="horats2026010401"/> og kan oversættes ,,Ordets kraft ligger i forbindelsen og rækken''.</note>
+  </notes>
+  <source pages="184-192"><i>Danfana</i> 1816, bind I.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1864,17 +1848,17 @@ Dens Klang?
 
 <text id="baggesen2003021902">
 <head>
-   <title>Hjerteqvad til Grundtvig</title>
-   <subtitle>Svar paa Qvadet: Til Sphinx</subtitle>
-   <toctitle>Hjerteqvad til Grundtvig</toctitle>
-   <indextitle>Hjerteqvad til Grundtvig</indextitle>
-   <firstline>Jeg veed, at, selv naar Jordgrav-Klokken gaaer</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind I, side 193-96.</note>
-      <note>* See Nyeste Kiøbenhavns Skilderie 1816 No. 6.</note>
-   </notes>
-   <keywords>grundtvig</keywords>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Hjerteqvad til Grundtvig</title>
+  <subtitle>Svar paa Qvadet: Til Sphinx</subtitle>
+  <toctitle>Hjerteqvad til Grundtvig</toctitle>
+  <indextitle>Hjerteqvad til Grundtvig</indextitle>
+  <firstline>Jeg veed, at, selv naar Jordgrav-Klokken gaaer</firstline>
+  <notes>
+    <note>* See Nyeste Kiøbenhavns Skilderie 1816 No. 6.</note>
+  </notes>
+  <source pages="193-196"><i>Danfana</i> 1816, bind I.</source>
+  <keywords>grundtvig</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1974,15 +1958,13 @@ I Død og Liv hinanden Gud befale!
 
 <text id="baggesen2003021903">
 <head>
-   <title>Kong Salomon og Jørgen Hattemager</title>
-   <subtitle>i Læseverdenen</subtitle>
-   <toctitle>Kong Salomon og Jørgen Hattemager i Læseverdenen</toctitle>
-   <indextitle>Kong Salomon og Jørgen Hattemager i Læseverdenen</indextitle>
-   <firstline>For fattig Folk at spare Hovedbrud</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind I, side 197-99.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Kong Salomon og Jørgen Hattemager</title>
+  <subtitle>i Læseverdenen</subtitle>
+  <toctitle>Kong Salomon og Jørgen Hattemager i Læseverdenen</toctitle>
+  <indextitle>Kong Salomon og Jørgen Hattemager i Læseverdenen</indextitle>
+  <firstline>For fattig Folk at spare Hovedbrud</firstline>
+  <source pages="197-199"><i>Danfana</i> 1816, bind I.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2042,15 +2024,15 @@ Og een <i>Kong Salomon</i> er Digtren mere kiær,<note>* <i>Salomon Soldin</i>, 
 
 <text id="baggesen2003021904">
 <head>
-   <title>Rosen og Plukkeren</title>
-   <toctitle>Rosen og Plukkeren</toctitle>
-   <indextitle>Rosen og Plukkeren</indextitle>
-   <firstline>Hvi stikker du, trods søde Lokkesmiil?</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind I, side 199.</note>
-      <note>Sammenlign <xref poem="baggesenandrea1"/>.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Rosen og Plukkeren</title>
+  <toctitle>Rosen og Plukkeren</toctitle>
+  <indextitle>Rosen og Plukkeren</indextitle>
+  <firstline>Hvi stikker du, trods søde Lokkesmiil?</firstline>
+  <notes>
+    <note>Sammenlign <xref poem="baggesenandrea1"/>.</note>
+  </notes>
+  <source pages="199"><i>Danfana</i> 1816, bind I.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2067,15 +2049,13 @@ Hvi <i>griber</i> du mig, som en fiendtlig Piil?
 
 <text id="baggesen2002121011">
 <head>
-   <title>Til min Ven, paa hans Fødselsdag</title>
-   <subtitle>(Med et Exemplar af min Gaade)</subtitle>
-   <toctitle>Til min Ven, paa hans Fødselsdag</toctitle>
-   <indextitle>Til min Ven, paa hans Fødselsdag</indextitle>
-   <firstline>Min ædle Ven! Endskiøndt til Hest</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind I, side 307-10.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til min Ven, paa hans Fødselsdag</title>
+  <subtitle>(Med et Exemplar af min Gaade)</subtitle>
+  <toctitle>Til min Ven, paa hans Fødselsdag</toctitle>
+  <indextitle>Til min Ven, paa hans Fødselsdag</indextitle>
+  <firstline>Min ædle Ven! Endskiøndt til Hest</firstline>
+  <source pages="307-310"><i>Danfana</i> 1816, bind I.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2158,15 +2138,13 @@ For Resten fast til alting trænger.
 
 <text id="baggesen2002121012">
 <head>
-   <title>Til Svoger Pan</title>
-   <subtitle>(Som Overbringer af den i Hast heftede Bog)</subtitle>
-   <toctitle>Til Svoger Pan</toctitle>
-   <indextitle>Til Svoger Pan</indextitle>
-   <firstline>Min store Skovtrold! du, der veed</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind I, side 313-15.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Svoger Pan</title>
+  <subtitle>(Som Overbringer af den i Hast heftede Bog)</subtitle>
+  <toctitle>Til Svoger Pan</toctitle>
+  <indextitle>Til Svoger Pan</indextitle>
+  <firstline>Min store Skovtrold! du, der veed</firstline>
+  <source pages="313-315"><i>Danfana</i> 1816, bind I.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2241,16 +2219,16 @@ Du har desuden selv mig sagt,
 
 <text id="baggesen2002112611">
 <head>
-   <title>De atten Eller</title>
-   <subtitle>Til Frøken <i>Ellina</i> paa Elleskov</subtitle>
-   <toctitle>De atten Eller</toctitle>
-   <indextitle>De atten Eller</indextitle>
-   <firstline>Som Rimsvar paa det søde Prosabrev</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind I, side 560-65.</note>
-      <note>* See Noten i Poetiske Epistler S. 401.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>De atten Eller</title>
+  <subtitle>Til Frøken <i>Ellina</i> paa Elleskov</subtitle>
+  <toctitle>De atten Eller</toctitle>
+  <indextitle>De atten Eller</indextitle>
+  <firstline>Som Rimsvar paa det søde Prosabrev</firstline>
+  <notes>
+    <note>* See Noten i Poetiske Epistler S. 401.</note>
+  </notes>
+  <source pages="560-565"><i>Danfana</i> 1816, bind I.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2376,15 +2354,13 @@ Dandser, I Muser, I Muser i Fællen om Katten!
 
 <text id="baggesen2002112625">
 <head>
-   <title>Riim-Trøstebrev til Herr Conferentsraad Blicherolsen</title>
-   <subtitle>I Anledning af vor fælles poetiske Skiæbne</subtitle>
-   <toctitle>Riim-Trøstebrev til Herr Conferentsraad Blicherolsen</toctitle>
-   <indextitle>Riim-Trøstebrev til Herr Conferentsraad Blicherolsen</indextitle>
-   <firstline>Du, hvem jeg, skiøndt jeg ei den Ære har</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind II, side 91-99.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Riim-Trøstebrev til Herr Conferentsraad Blicherolsen</title>
+  <subtitle>I Anledning af vor fælles poetiske Skiæbne</subtitle>
+  <toctitle>Riim-Trøstebrev til Herr Conferentsraad Blicherolsen</toctitle>
+  <indextitle>Riim-Trøstebrev til Herr Conferentsraad Blicherolsen</indextitle>
+  <firstline>Du, hvem jeg, skiøndt jeg ei den Ære har</firstline>
+  <source pages="91-99"><i>Danfana</i> 1816, bind II.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2595,15 +2571,13 @@ Med Peer og Povl i hines Maskepie.<note>* Man troe ikke, at jeg her taler, som R
 
 <text id="baggesen2002121004">
 <head>
-   <title>Til Antigone Juliane Marie Jessen</title>
-   <toctitle>Til Antigone Juliane Marie Jessen</toctitle>
-   <indextitle>Til Antigone Juliane Marie Jessen</indextitle>
-   <firstline>Veninde! Skiøndt, fra han var liden</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind II, side 111-21 (side 116 er sprunget over i pagineringen).</note>
-   </notes>
-   <keywords>oehlenschlaeger</keywords>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Antigone Juliane Marie Jessen</title>
+  <toctitle>Til Antigone Juliane Marie Jessen</toctitle>
+  <indextitle>Til Antigone Juliane Marie Jessen</indextitle>
+  <firstline>Veninde! Skiøndt, fra han var liden</firstline>
+  <source><i>Danfana</i> 1816, bind II, side 111-21 (side 116 er sprunget over i pagineringen).</source>
+  <keywords>oehlenschlaeger</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2850,15 +2824,15 @@ Han selv deroppe vilde den behøre!
 
 <text id="baggesen2002121005">
 <head>
-   <title>Til Broder Dannemand, hvem han ellers er, i London</title>
-   <toctitle>Til Broder Dannemand, hvem han ellers er, i London</toctitle>
-   <indextitle>Til Broder Dannemand, hvem han ellers er, i London</indextitle>
-   <firstline>Min kiære Landsmand!</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind II, side 129-40.</note>
-      <note>* Aabent Brev med en Ven, der bad mig om en Anbefalingsskrivelse til een af mine Bekiendte i Engelland.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Broder Dannemand, hvem han ellers er, i London</title>
+  <toctitle>Til Broder Dannemand, hvem han ellers er, i London</toctitle>
+  <indextitle>Til Broder Dannemand, hvem han ellers er, i London</indextitle>
+  <firstline>Min kiære Landsmand!</firstline>
+  <notes>
+    <note>* Aabent Brev med en Ven, der bad mig om en Anbefalingsskrivelse til een af mine Bekiendte i Engelland.</note>
+  </notes>
+  <source pages="129-140"><i>Danfana</i> 1816, bind II.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3147,20 +3121,18 @@ Nu lader jeg mig ei det røve,
 
 <section level="1">
 <head>
-   <toctitle>Thora</toctitle>
-   <indextitle>Thora</indextitle>
+  <toctitle>Thora</toctitle>
+  <indextitle>Thora</indextitle>
 </head>
 <content>
 
 <text id="baggesen2003011202">
 <head>
-   <title>Første Sang</title>
-   <toctitle>Første Sang</toctitle>
-   <firstline>Her, i Skyggen af Dans den tusindaarige Kroneeg</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind I, side 384-411.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Første Sang</title>
+  <toctitle>Første Sang</toctitle>
+  <firstline>Her, i Skyggen af Dans den tusindaarige Kroneeg</firstline>
+  <source pages="384-411"><i>Danfana</i> 1816, bind I.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3509,13 +3481,11 @@ Atter!'' med lydelig Klang i et Brøl af elleve Røster.
 
 <text id="baggesen2003011501">
 <head>
-   <title>Anden Sang</title>
-   <toctitle>Anden Sang</toctitle>
-   <firstline>Medens til nærmeste Ret de ti tilsnørede Sække</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind I, side 412-34.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Anden Sang</title>
+  <toctitle>Anden Sang</toctitle>
+  <firstline>Medens til nærmeste Ret de ti tilsnørede Sække</firstline>
+  <source pages="412-434"><i>Danfana</i> 1816, bind I.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3819,26 +3789,25 @@ Bragt for at pudses, og alt giort klart tii Reisen paa Pindsdag.
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
 
 <section level="1">
 <head>
-   <toctitle>Balders Igienkomst, eller Digte til Nanna (1816-17)</toctitle>
-    <indextitle>Balders Igienkomst, eller Digte til Nanna</indextitle>
+  <toctitle>Balders Igienkomst, eller Digte til Nanna (1816-17)</toctitle>
+  <indextitle>Balders Igienkomst, eller Digte til Nanna</indextitle>
 </head>
 <content>
 
 <text id="baggesen2002100801">
 <head>
-   <title>[Motto]</title>
-   <toctitle>[Motto]</toctitle>
-   <indextitle>Motto</indextitle>
-   <nofirstline/>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind II, side 326.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>[Motto]</title>
+  <toctitle>[Motto]</toctitle>
+  <indextitle>Motto</indextitle>
+  <nofirstline/>
+  <source pages="326"><i>Danfana</i> 1816, bind II.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3856,14 +3825,12 @@ En Himmel, som skal koste Laster -
 
 <text id="baggesen2002030401">
 <head>
-   <title>Den elskende Digter</title>
-   <toctitle>Den elskende Digter</toctitle>
-   <indextitle>Den elskende Digter</indextitle>
-   <firstline>Før mit Væsens stille Harmonie</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind II, side 327.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Den elskende Digter</title>
+  <toctitle>Den elskende Digter</toctitle>
+  <indextitle>Den elskende Digter</indextitle>
+  <firstline>Før mit Væsens stille Harmonie</firstline>
+  <source pages="327"><i>Danfana</i> 1816, bind II.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3892,14 +3859,12 @@ Dengang, uden Harpen i mit Hierte -
 
 <text id="baggesen2002100701">
 <head>
-   <title>Flammen</title>
-   <toctitle>Flammen</toctitle>
-   <indextitle>Flammen</indextitle>
-   <firstline>Man siger, Piilen, hvormed Elskov saarer</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind II, side 328-29.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Flammen</title>
+  <toctitle>Flammen</toctitle>
+  <indextitle>Flammen</indextitle>
+  <firstline>Man siger, Piilen, hvormed Elskov saarer</firstline>
+  <source pages="328-329"><i>Danfana</i> 1816, bind II.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3947,14 +3912,12 @@ En trefold Evighed er lagt tilbage.
 
 <text id="baggesen2002100702">
 <head>
-   <title>Lønnen</title>
-   <toctitle>Lønnen</toctitle>
-   <indextitle>Lønnen</indextitle>
-   <firstline>Hvad er Lønnen vel, jeg fik herneden</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind II, side 330.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Lønnen</title>
+  <toctitle>Lønnen</toctitle>
+  <indextitle>Lønnen</indextitle>
+  <firstline>Hvad er Lønnen vel, jeg fik herneden</firstline>
+  <source pages="330"><i>Danfana</i> 1816, bind II.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3983,14 +3946,12 @@ Thi hvert Sting af hendes kolde Mine
 
 <text id="baggesen2002100703">
 <head>
-   <title>Fortielsen</title>
-   <toctitle>Fortielsen</toctitle>
-   <indextitle>Fortielsen</indextitle>
-   <firstline>Du er ikke meer den glade Digter</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind II, side 331-32.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Fortielsen</title>
+  <toctitle>Fortielsen</toctitle>
+  <indextitle>Fortielsen</indextitle>
+  <firstline>Du er ikke meer den glade Digter</firstline>
+  <source pages="331-332"><i>Danfana</i> 1816, bind II.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4036,14 +3997,12 @@ Hvad jeg, ak! <i>dig selv</i> ei sige tør?
 
 <text id="baggesen2001101901">
 <head>
-   <title>Kysset</title>
-   <toctitle>Kysset</toctitle>
-   <indextitle>Kysset</indextitle>
-   <firstline>Nanna! da med Zittren kyst</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind II, side 333.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Kysset</title>
+  <toctitle>Kysset</toctitle>
+  <indextitle>Kysset</indextitle>
+  <firstline>Nanna! da med Zittren kyst</firstline>
+  <source pages="333"><i>Danfana</i> 1816, bind II.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4072,14 +4031,12 @@ Mens jeg flammed i den fulde
 
 <text id="baggesen2002100704">
 <head>
-   <title>Til Stiernerne</title>
-   <toctitle>Til Stiernerne</toctitle>
-   <indextitle>Til Stiernerne</indextitle>
-   <firstline>Nattens funklende Kiærminder</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind II, side 334.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Stiernerne</title>
+  <toctitle>Til Stiernerne</toctitle>
+  <indextitle>Til Stiernerne</indextitle>
+  <firstline>Nattens funklende Kiærminder</firstline>
+  <source pages="334"><i>Danfana</i> 1816, bind II.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4114,14 +4071,12 @@ O! saa vredes I vist ikke.
 
 <text id="baggesen2002030402">
 <head>
-   <title>Til Nanna</title>
-   <toctitle>Til Nanna</toctitle>
-   <indextitle>Til Nanna</indextitle>
-   <firstline>Du, som for Ulykkeliges Vee</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind II, side 335.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Nanna</title>
+  <toctitle>Til Nanna</toctitle>
+  <indextitle>Til Nanna</indextitle>
+  <firstline>Du, som for Ulykkeliges Vee</firstline>
+  <source pages="335"><i>Danfana</i> 1816, bind II.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4153,14 +4108,12 @@ Intet, intet, intet, uden <i>Dig?</i>
 
 <text id="baggesen2002100705">
 <head>
-   <title>Kiærligheds Frygt</title>
-   <toctitle>Kiærligheds Frygt</toctitle>
-   <indextitle>Kiærligheds Frygt</indextitle>
-   <firstline>Ak! omsonst mig selv jeg Usle dølger</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind II, side 336-37.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Kiærligheds Frygt</title>
+  <toctitle>Kiærligheds Frygt</toctitle>
+  <indextitle>Kiærligheds Frygt</indextitle>
+  <firstline>Ak! omsonst mig selv jeg Usle dølger</firstline>
+  <source pages="336-337"><i>Danfana</i> 1816, bind II.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4198,14 +4151,12 @@ Tør jeg intet haabe, svar mig ikke,
 
 <text id="baggesen2002030403">
 <head>
-   <title>Maalet</title>
-   <toctitle>Maalet</toctitle>
-   <indextitle>Maalet</indextitle>
-   <firstline>Svar mig: hvad er vel dit Maal herneden</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind II, side 337.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Maalet</title>
+  <toctitle>Maalet</toctitle>
+  <indextitle>Maalet</indextitle>
+  <firstline>Svar mig: hvad er vel dit Maal herneden</firstline>
+  <source pages="337"><i>Danfana</i> 1816, bind II.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4223,14 +4174,12 @@ Fylder, ak! det glædetomme Hierte,
 
 <text id="baggesen2002100706">
 <head>
-   <title>Selvfornægtelse</title>
-   <toctitle>Selvfornægtelse</toctitle>
-   <indextitle>Selvfornægtelse</indextitle>
-   <firstline>Hvi vil jeg forsætlig aldrig ende</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind II, side 338-39.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Selvfornægtelse</title>
+  <toctitle>Selvfornægtelse</toctitle>
+  <indextitle>Selvfornægtelse</indextitle>
+  <firstline>Hvi vil jeg forsætlig aldrig ende</firstline>
+  <source pages="338-339"><i>Danfana</i> 1816, bind II.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4268,14 +4217,12 @@ Men - med Tab af alle Jordens Glæder -
 
 <text id="baggesen2002100707">
 <head>
-   <title>Aftenstiernen</title>
-   <toctitle>Aftenstiernen</toctitle>
-   <indextitle>Aftenstiernen</indextitle>
-   <firstline>Kiæk jeg vandrer Nattens Mulm imøde</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind II, side 339.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Aftenstiernen</title>
+  <toctitle>Aftenstiernen</toctitle>
+  <indextitle>Aftenstiernen</indextitle>
+  <firstline>Kiæk jeg vandrer Nattens Mulm imøde</firstline>
+  <source pages="339"><i>Danfana</i> 1816, bind II.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4291,14 +4238,12 @@ Venlig da vil tindre - <i>Nannas Stierne.</i>
 
 <text id="baggesen2002100708">
 <head>
-   <title>Perlen</title>
-   <toctitle>Perlen</toctitle>
-   <indextitle>Perlen</indextitle>
-   <firstline>At jeg ikke blot, hvad Mængden hylder</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind II, side 340-41.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Perlen</title>
+  <toctitle>Perlen</toctitle>
+  <indextitle>Perlen</indextitle>
+  <firstline>At jeg ikke blot, hvad Mængden hylder</firstline>
+  <source pages="340-341"><i>Danfana</i> 1816, bind II.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4344,14 +4289,12 @@ Og, som han, jeg nu er lykkelig.
 
 <text id="baggesen2002100709">
 <head>
-   <title>Det eene Fornødne</title>
-   <toctitle>Det eene Fornødne</toctitle>
-   <indextitle>Det eene Fornødne</indextitle>
-   <firstline>Her i Tid, og hist i Evighed</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind II, side 341.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Det eene Fornødne</title>
+  <toctitle>Det eene Fornødne</toctitle>
+  <indextitle>Det eene Fornødne</indextitle>
+  <firstline>Her i Tid, og hist i Evighed</firstline>
+  <source pages="341"><i>Danfana</i> 1816, bind II.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4363,14 +4306,12 @@ Eet er eene nødigt: Kiærlighed.
 
 <text id="baggesen2002100710">
 <head>
-   <title>Nanna</title>
-   <toctitle>Nanna</toctitle>
-   <indextitle>Nanna</indextitle>
-   <firstline>Hvad blandt Himlens Fakler Aftenstiernen</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind II, side 342-43.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Nanna</title>
+  <toctitle>Nanna</toctitle>
+  <indextitle>Nanna</indextitle>
+  <firstline>Hvad blandt Himlens Fakler Aftenstiernen</firstline>
+  <source pages="342-343"><i>Danfana</i> 1816, bind II.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4411,14 +4352,12 @@ Aabne det - før paa den kolde Baare
 
 <text id="baggesen2002030404">
 <head>
-   <title>Suk</title>
-   <toctitle>Suk</toctitle>
-   <indextitle>Suk</indextitle>
-   <firstline>Smerte! hvi forgiæves beder du?</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind II, side 343.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Suk</title>
+  <toctitle>Suk</toctitle>
+  <indextitle>Suk</indextitle>
+  <firstline>Smerte! hvi forgiæves beder du?</firstline>
+  <source pages="343"><i>Danfana</i> 1816, bind II.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4433,17 +4372,15 @@ Ubønhørte selv det vederqvæge.''
 
 <text id="baggesen2002030405">
 <head>
-   <title>Glædens Kilde</title>
-   <toctitle>Glædens Kilde</toctitle>
-   <indextitle>Glædens Kilde</indextitle>
-   <firstline>Dette veed jeg, at fra nu herneden</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind II, side 344-45.</note>
-   </notes>
-   <pictures>
-      <picture src="baggesen2002030405.jpg">Faksimile af digtet.</picture>
-   </pictures>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Glædens Kilde</title>
+  <toctitle>Glædens Kilde</toctitle>
+  <indextitle>Glædens Kilde</indextitle>
+  <firstline>Dette veed jeg, at fra nu herneden</firstline>
+  <source pages="344-345"><i>Danfana</i> 1816, bind II.</source>
+  <pictures>
+    <picture src="baggesen2002030405.jpg">Faksimile af digtet.</picture>
+  </pictures>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4485,14 +4422,12 @@ Og det er Udødeliges Lyst!
 
 <text id="baggesen2002100802">
 <head>
-   <title>Stiernesvælget</title>
-   <toctitle>Stiernesvælget</toctitle>
-   <indextitle>Stiernesvælget</indextitle>
-   <firstline>Hist i Dybet, nær Orions Belte</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind II, side 346.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Stiernesvælget</title>
+  <toctitle>Stiernesvælget</toctitle>
+  <indextitle>Stiernesvælget</indextitle>
+  <firstline>Hist i Dybet, nær Orions Belte</firstline>
+  <source pages="346"><i>Danfana</i> 1816, bind II.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4522,14 +4457,12 @@ Kun <i>det dybe Blaa</i>, som efteraber
 
 <text id="baggesen2002100803">
 <head>
-   <title>Himlen</title>
-   <toctitle>Himlen</toctitle>
-   <indextitle>Himlen</indextitle>
-   <firstline>Venskabs Kjæder, alle Selskabs Stænger</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind II, side 347-48.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Himlen</title>
+  <toctitle>Himlen</toctitle>
+  <indextitle>Himlen</indextitle>
+  <firstline>Venskabs Kjæder, alle Selskabs Stænger</firstline>
+  <source pages="347-348"><i>Danfana</i> 1816, bind II.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4577,14 +4510,12 @@ Elsk mig ei; men o misund mig ikke
 
 <text id="baggesen2002030406">
 <head>
-   <title>Opvaagnen</title>
-   <toctitle>Opvaagnen</toctitle>
-   <indextitle>Opvaagnen</indextitle>
-   <firstline>O! min Kummers Nat er brat forsvunden!</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind II, side 349-50.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Opvaagnen</title>
+  <toctitle>Opvaagnen</toctitle>
+  <indextitle>Opvaagnen</indextitle>
+  <firstline>O! min Kummers Nat er brat forsvunden!</firstline>
+  <source pages="349-350"><i>Danfana</i> 1816, bind II.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4632,14 +4563,12 @@ Blot en Drøm?
 
 <text id="baggesen2002030407">
 <head>
-   <title>Udelukkende Kiærlighed</title>
-   <toctitle>Udelukkende Kiærlighed</toctitle>
-   <indextitle>Udelukkende Kiærlighed</indextitle>
-   <firstline>Lilie, plantet nær mit Nordens Pol</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind II, side 351.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Udelukkende Kiærlighed</title>
+  <toctitle>Udelukkende Kiærlighed</toctitle>
+  <indextitle>Udelukkende Kiærlighed</indextitle>
+  <firstline>Lilie, plantet nær mit Nordens Pol</firstline>
+  <source pages="351"><i>Danfana</i> 1816, bind II.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4663,14 +4592,12 @@ Er mig Tid og Evighed forspilt.
 
 <text id="baggesen2002100804">
 <head>
-   <title>Til Nanna</title>
-   <toctitle>Til Nanna</toctitle>
-   <indextitle>Til Nanna</indextitle>
-   <firstline>Du, kun du, er nu min Trøst paa Jorden</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind II, side 352-53.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Nanna</title>
+  <toctitle>Til Nanna</toctitle>
+  <indextitle>Til Nanna</indextitle>
+  <firstline>Du, kun du, er nu min Trøst paa Jorden</firstline>
+  <source pages="352-353"><i>Danfana</i> 1816, bind II.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4726,14 +4653,12 @@ Ak! og selv, naar Naadens Tid er omme,
 
 <text id="baggesen2002100805">
 <head>
-   <title>Det første Møde</title>
-   <toctitle>Det første Møde</toctitle>
-   <indextitle>Det første Møde</indextitle>
-   <firstline>Det var en Helligdag i Vaaren</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind II, side 354-55.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Det første Møde</title>
+  <toctitle>Det første Møde</toctitle>
+  <indextitle>Det første Møde</indextitle>
+  <firstline>Det var en Helligdag i Vaaren</firstline>
+  <source pages="354-355"><i>Danfana</i> 1816, bind II.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4790,14 +4715,12 @@ Fra hver en Serafs Himmeløie -
 
 <text id="baggesen2002100806">
 <head>
-   <title>Stille</title>
-   <toctitle>Stille</toctitle>
-   <indextitle>Stille</indextitle>
-   <firstline>Luft! hvi saa rolig? hvi standser I Vinde?</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind II, side 356.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Stille</title>
+  <toctitle>Stille</toctitle>
+  <indextitle>Stille</indextitle>
+  <firstline>Luft! hvi saa rolig? hvi standser I Vinde?</firstline>
+  <source pages="356"><i>Danfana</i> 1816, bind II.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4816,14 +4739,12 @@ Hvi du din Dronning ei tonende lover?
 
 <text id="baggesen2001101902">
 <head>
-   <title>Nannas Smil</title>
-   <toctitle>Nannas Smil</toctitle>
-   <indextitle>Nannas Smil</indextitle>
-   <firstline>Vaager jeg - er det mit jordiske Liv</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind II, side 356.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Nannas Smil</title>
+  <toctitle>Nannas Smil</toctitle>
+  <indextitle>Nannas Smil</indextitle>
+  <firstline>Vaager jeg - er det mit jordiske Liv</firstline>
+  <source pages="356"><i>Danfana</i> 1816, bind II.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4837,14 +4758,12 @@ Atter af Intet mig kaldende Bliv.
 
 <text id="baggesen2002100807">
 <head>
-   <title>Tilflugt</title>
-   <toctitle>Tilflugt</toctitle>
-   <indextitle>Tilflugt</indextitle>
-   <firstline>Nattergal, som, fiern fra kiælne Mage</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind II, side 357-59.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Tilflugt</title>
+  <toctitle>Tilflugt</toctitle>
+  <indextitle>Tilflugt</indextitle>
+  <firstline>Nattergal, som, fiern fra kiælne Mage</firstline>
+  <source pages="357-359"><i>Danfana</i> 1816, bind II.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4908,14 +4827,12 @@ Til at synge min Lyksalighed.
 
 <text id="baggesen2001101903">
 <head>
-   <title>Kiærligheds Alt</title>
-   <toctitle>Kiærligheds Alt</toctitle>
-   <indextitle>Kiærligheds Alt</indextitle>
-   <firstline>Nanna! jeg har drømt, at lutter døde</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind II, side 359.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Kiærligheds Alt</title>
+  <toctitle>Kiærligheds Alt</toctitle>
+  <indextitle>Kiærligheds Alt</indextitle>
+  <firstline>Nanna! jeg har drømt, at lutter døde</firstline>
+  <source pages="359"><i>Danfana</i> 1816, bind II.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4933,14 +4850,12 @@ Thi dybt inde, midt i Mørket svæved,
 
 <text id="baggesen2002100808">
 <head>
-   <title>Balders Graad</title>
-   <toctitle>Balders Graad</toctitle>
-   <indextitle>Balders Graad</indextitle>
-   <firstline>Nys, o Nanna! giorde mig saa glad</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind II, side 360-61.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Balders Graad</title>
+  <toctitle>Balders Graad</toctitle>
+  <indextitle>Balders Graad</indextitle>
+  <firstline>Nys, o Nanna! giorde mig saa glad</firstline>
+  <source pages="360-361"><i>Danfana</i> 1816, bind II.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4991,14 +4906,12 @@ Drømmens Blikke for de falske Lyn!
 
 <text id="baggesen2002100809">
 <head>
-   <title>Morgenrøde</title>
-   <toctitle>Morgenrøde</toctitle>
-   <indextitle>Morgenrøde</indextitle>
-   <firstline>Rings i Livets Foraars-Bolig</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind II, side 362-64.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Morgenrøde</title>
+  <toctitle>Morgenrøde</toctitle>
+  <indextitle>Morgenrøde</indextitle>
+  <firstline>Rings i Livets Foraars-Bolig</firstline>
+  <source pages="362-364"><i>Danfana</i> 1816, bind II.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5070,18 +4983,16 @@ Balders Elskovs Svanesang!
 
 <text id="baggesen2002101301">
 <head>
-   <title>Komfremmetlegen</title>
-   <toctitle>Komfremmetlegen</toctitle>
-   <indextitle>Komfremmetlegen</indextitle>
-   <firstline>Du med Lyren om din Skulder</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind II, side 365-66.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Komfremmetlegen</title>
+  <toctitle>Komfremmetlegen</toctitle>
+  <indextitle>Komfremmetlegen</indextitle>
+  <firstline>Du med Lyren om din Skulder</firstline>
+  <source pages="365-366"><i>Danfana</i> 1816, bind II.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<center><nonum><sc>Borgeren</sc></nonum></center>
+<nonum><center><sc>Borgeren</sc></center></nonum>
     Du med Lyren om din Skulder,
 Og den Lille ved din Side,
 Blind for Glimmer, døv for Bulder,
@@ -5094,7 +5005,7 @@ Siig, hvad giør du her i Hiemmet,
 Nat og Dag i Herthalunden,
 Hvor jeg dig saa tidt har funden?
 
-<center><nonum><sc>Digteren</sc></nonum></center>
+<nonum><center><sc>Digteren</sc></center></nonum>
     O! jeg leger kun Komfremmet
 Med min lille Søster Hanne,
 Som for Spøg jeg kalder Nanne,
@@ -5102,10 +5013,10 @@ Mens allene to herneden
 Barnligfroe vi vandre heden
 Til vort rette Hiem i Eden.
 
-<center><nonum><sc>Borgeren</sc></nonum></center>
+<nonum><center><sc>Borgeren</sc></center></nonum>
     Hvad er det vel for en Leeg?
 
-<center><nonum><sc>Digteren</sc></nonum></center>
+<nonum><center><sc>Digteren</sc></center></nonum>
     Englenes til Punkt og Prikke:
 Glemsel af sit eget Jeg
 I hinandens glade Blikke -
@@ -5116,13 +5027,13 @@ Hør os tvende, veed du hvad?
 Vil du være rigtig glad,
 Maa du den for alting lære!
 
-<center><nonum><sc>Borgeren</sc></nonum></center>
+<nonum><center><sc>Borgeren</sc></center></nonum>
     Nei! jeg takker for den Ære -
 Glemme mig, og Land, og Stat,
 Det var alt for desperat!
 Jeg er intet Barn, min Kiære.
 
-<center><nonum><sc>Digteren</sc></nonum></center>
+<nonum><center><sc>Digteren</sc></center></nonum>
     Heller ikke være vil,
 Trods vor store Mesters Lære? -
 Saa forstyr ei meer et Spil<note>Spil] Spil?</note>
@@ -5134,16 +5045,14 @@ Gaae din Vei, og lad os være!
 
 <text id="baggesen2002101302">
 <head>
-   <title>Hvem er Nanna?</title>
-   <subtitle>(Til hulde Vedkommende)</subtitle>
-   <toctitle>Hvem er Nanna?</toctitle>
-   <indextitle>Hvem er Nanna?</indextitle>
-   <firstline>Hvem er Nanna? lyder rundt i Staden</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind III, side 33-39.</note>
-   </notes>
-   <keywords>petrarca,dante,tasso,ariosto</keywords>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Hvem er Nanna?</title>
+  <subtitle>(Til hulde Vedkommende)</subtitle>
+  <toctitle>Hvem er Nanna?</toctitle>
+  <indextitle>Hvem er Nanna?</indextitle>
+  <firstline>Hvem er Nanna? lyder rundt i Staden</firstline>
+  <source pages="33-39"><i>Danfana</i> 1816, bind III.</source>
+  <keywords>petrarca,dante,tasso,ariosto</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5325,15 +5234,13 @@ Flettes kan af <i>Laurer</i> her til Lands,
 
 <text id="baggesen2002101401">
 <head>
-   <title>Naar levede Nanna?</title>
-   <subtitle>Spørgsmaal</subtitle>
-   <toctitle>Naar levede Nanna?</toctitle>
-   <indextitle>Naar levede Nanna?</indextitle>
-   <firstline>At man hvem, og hvor hun er, endnu</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind III, side 55.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Naar levede Nanna?</title>
+  <subtitle>Spørgsmaal</subtitle>
+  <toctitle>Naar levede Nanna?</toctitle>
+  <indextitle>Naar levede Nanna?</indextitle>
+  <firstline>At man hvem, og hvor hun er, endnu</firstline>
+  <source pages="55"><i>Danfana</i> 1816, bind III.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5360,15 +5267,13 @@ O! det er mig, som det var i Gaar!
 
 <text id="baggesen2002101402">
 <head>
-   <title>Naar levede Nanna?</title>
-   <subtitle>Svar</subtitle>
-   <toctitle>Naar levede Nanna?</toctitle>
-   <indextitle>Naar levede Nanna?</indextitle>
-   <firstline>Dengang mellem alle nære, fierne</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind III, side 56.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Naar levede Nanna?</title>
+  <subtitle>Svar</subtitle>
+  <toctitle>Naar levede Nanna?</toctitle>
+  <indextitle>Naar levede Nanna?</indextitle>
+  <firstline>Dengang mellem alle nære, fierne</firstline>
+  <source pages="56"><i>Danfana</i> 1816, bind III.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5395,17 +5300,15 @@ Giennem de fordunklede Pleiader -<note>Giennem] Gienn m</note>
 
 <text id="baggesen2002101403">
 <head>
-   <title>Til Fru F* B*</title>
-   <toctitle>Til Fru F* B*</toctitle>
-   <indextitle>Til Fru F* B*</indextitle>
-   <firstline>Du, hvem jeg, naar kommer Alt til Alt</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind III, side 78-80.</note>
-   </notes>
-   <pictures>
-      <picture src="baggesen2002101403-p1.jpg">Faksimile af side78-79 i Danfana<br/>,,Balders Igienkomst. / (Fortsættelse.) // Non la conobbe il mondo, mentre l'hebbe / Counobbe l'io, ch'a pianger qui rimasi, / E'l ciel che del mio pianto hor si fa bello. / Petrarca.''</picture>
-   </pictures>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Til Fru F* B*</title>
+  <toctitle>Til Fru F* B*</toctitle>
+  <indextitle>Til Fru F* B*</indextitle>
+  <firstline>Du, hvem jeg, naar kommer Alt til Alt</firstline>
+  <source pages="78-80"><i>Danfana</i> 1816, bind III.</source>
+  <pictures>
+    <picture src="baggesen2002101403-p1.jpg">Faksimile af side78-79 i Danfana<br/>,,Balders Igienkomst. / (Fortsættelse.) // Non la conobbe il mondo, mentre l'hebbe / Counobbe l'io, ch'a pianger qui rimasi, / E'l ciel che del mio pianto hor si fa bello. / Petrarca.''</picture>
+  </pictures>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5477,14 +5380,12 @@ Er kun uforanderligt <i>mit Hierte</i>.
 
 <text id="baggesen2002101404">
 <head>
-   <title>Hvor er Nanna?</title>
-   <toctitle>Hvor er Nanna?</toctitle>
-   <indextitle>Hvor er Nanna?</indextitle>
-   <firstline>Man har alt bemærket her og der</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind III, side 81.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Hvor er Nanna?</title>
+  <toctitle>Hvor er Nanna?</toctitle>
+  <indextitle>Hvor er Nanna?</indextitle>
+  <firstline>Man har alt bemærket her og der</firstline>
+  <source pages="81"><i>Danfana</i> 1816, bind III.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5510,15 +5411,13 @@ Nanna boer i <i>Kronprindsessegaden</i> -
 
 <text id="baggesen2002101501">
 <head>
-   <title>Hvem er ikke Nanna?</title>
-   <subtitle>Epistel fra Balder til Hende selv</subtitle>
-   <toctitle>Hvem er ikke Nanna?</toctitle>
-   <indextitle>Hvem er ikke Nanna?</indextitle>
-   <firstline>Nattens Spørgsmaal et Par Øieblikke</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind III, side 82-89.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Hvem er ikke Nanna?</title>
+  <subtitle>Epistel fra Balder til Hende selv</subtitle>
+  <toctitle>Hvem er ikke Nanna?</toctitle>
+  <indextitle>Hvem er ikke Nanna?</indextitle>
+  <firstline>Nattens Spørgsmaal et Par Øieblikke</firstline>
+  <source pages="82-89"><i>Danfana</i> 1816, bind III.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5706,14 +5605,12 @@ For hvert nyere romantisk Digt -
 
 <text id="baggesen2002101502">
 <head>
-   <title>Bekiendelse</title>
-   <toctitle>Bekiendelse</toctitle>
-   <indextitle>Bekiendelse</indextitle>
-   <firstline>Om jeg før har elsket? - Sandt at sige</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind III, side 89.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Bekiendelse</title>
+  <toctitle>Bekiendelse</toctitle>
+  <indextitle>Bekiendelse</indextitle>
+  <firstline>Om jeg før har elsket? - Sandt at sige</firstline>
+  <source pages="89"><i>Danfana</i> 1816, bind III.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5729,15 +5626,13 @@ Digtet, for at øve mig i Sproget,
 
 <text id="baggesen2002101601">
 <head>
-   <title>Elegie</title>
-   <subtitle>Til Nanna</subtitle>
-   <toctitle>Elegie</toctitle>
-   <indextitle>Elegie</indextitle>
-   <firstline>Nanna! du vil altsaa fra mig tage</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind III, side 90-94.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Elegie</title>
+  <subtitle>Til Nanna</subtitle>
+  <toctitle>Elegie</toctitle>
+  <indextitle>Elegie</indextitle>
+  <firstline>Nanna! du vil altsaa fra mig tage</firstline>
+  <source pages="90-94"><i>Danfana</i> 1816, bind III.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5877,14 +5772,12 @@ Der i det Fuldkomneste, jeg kiender,
 
 <text id="baggesen2002101602">
 <head>
-   <title>Trøst til Nanna</title>
-   <toctitle>Trøst til Nanna</toctitle>
-   <indextitle>Trøst til Nanna</indextitle>
-   <firstline>Nanna! skiøndt mig Nastrondspydet dræber</firstline>
-   <notes>
-      <note>Teksten følger <i>Danfana</i> 1816, bind III, side 95-96.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Trøst til Nanna</title>
+  <toctitle>Trøst til Nanna</toctitle>
+  <indextitle>Trøst til Nanna</indextitle>
+  <firstline>Nanna! skiøndt mig Nastrondspydet dræber</firstline>
+  <source pages="95-96"><i>Danfana</i> 1816, bind III.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5930,7 +5823,9 @@ Sikkerlig om fiorten Dage glemt.
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
+
 </workbody>
 </kalliopework>

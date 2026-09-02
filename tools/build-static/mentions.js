@@ -94,7 +94,7 @@ const build_person_or_keyword_refs = (collected) => {
       type: 'text',
     },
     { regexp: /a type="(?<type>[^"]*)" poem="(?<poem>[^"]*)"/g, type: 'text' },
-    { regexp: /xref bibel="(?<poem>[^",]*)/g, type: 'text' },
+    { regexp: /xref bible="(?<poem>[^",]*)/g, type: 'text' },
     { regexp: /a ()person="([^"]*)"/g, type: 'person' },
     { regexp: /a ()poet="([^"]*)"/g, type: 'person' },
     {
@@ -116,7 +116,12 @@ const build_person_or_keyword_refs = (collected) => {
         return;
       }
       knownFiles.add(filename);
-      if (!forced_reload && !isFileModified(filename)) {
+      const fileModified = isFileModified(filename);
+      if (
+        !forced_reload &&
+        refsByFile.has(filename) &&
+        !fileModified
+      ) {
         return;
       } else {
         found_changes = true;

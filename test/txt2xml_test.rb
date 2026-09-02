@@ -8,6 +8,7 @@ require 'tempfile'
 class Txt2XmlTest < Minitest::Test
   ROOT = File.expand_path('..', __dir__)
   CONVERTER = File.join(ROOT, 'tools', 'txt2xml.rb')
+  FORMATTER = File.join(ROOT, 'tools', 'format-work-xml.js')
 
   def test_prints_a_template_without_an_input_file
     output, error, status = Open3.capture3(RbConfig.ruby, CONVERTER)
@@ -62,11 +63,18 @@ class Txt2XmlTest < Minitest::Test
 
     assert_equal 'vaerk', work.attributes['id']
     assert_equal 'vaerkejer', work.attributes['author']
+    assert_equal 'incomplete', work.attributes['status']
+    assert_empty REXML::XPath.match(document, '//quality')
+    refute_includes output_for(document), 'korrektur1'
     assert_equal 'Digte', element_text(workhead, 'title')
     assert_equal '1852', element_text(workhead, 'year')
     assert_equal 'scan.pdf', REXML::XPath.first(workhead, 'source').attributes['facsimile']
     assert_equal '20', REXML::XPath.first(workhead, 'source').attributes['facsimile-pages-num']
     assert_equal '2', REXML::XPath.first(workhead, 'source').attributes['facsimile-pages-offset']
+    work_source = REXML::XPath.first(workhead, 'source')
+    assert_equal 'Digte', REXML::XPath.first(work_source, 'i').text
+    assert_equal ['Værknote'], REXML::XPath.match(workhead, 'notes/note').map(&:text)
+    refute_includes workhead.text, 'Teksten følger'
 
     assert_equal 'solnedgang', text.attributes['id']
     assert_equal 'hansenfj', text.attributes['author']
@@ -91,6 +99,80 @@ class Txt2XmlTest < Minitest::Test
                  REXML::XPath.match(head, 'notes/note').map(&:text)
     assert_equal 'credits', REXML::XPath.match(head, 'notes/note')[1].attributes['type']
     assert_equal %w[i w b], REXML::XPath.match(text, 'body/poetry/*').map(&:name)
+  end
+
+  def test_emits_canonical_work_xml_format
+    output, error, status = convert(<<~TEXT)
+      KILDE:Red.: <i>Digte</i>, København, 1852.
+      DIGTER:digter
+      FACSIMILE:scan.pdf
+      FACSIMILE-SIDER:20
+      FACSIMILE-OFFSET:2
+      TITELBLAD:Digte / 1852
+
+      SEKTION:En afdeling
+
+      T:Solnedgang
+      U:Første undertitel
+      U:Anden undertitel
+      F:Det spredes meer og meer
+      NOTE:Tekstnote
+      SIDE:3
+      FACSIMILE-SIDE:5
+      SKREVET:1851
+
+      Det spredes meer og meer
+      SLUTSEKTION
+      SLUT
+    TEXT
+
+    assert status.success?, error
+    assert_includes output, "<workhead>\n  <title>Digte</title>"
+    assert_includes output, "  <pictures>\n    <picture type=\"titlepage\""
+    assert_includes output, "<section>\n<head>\n  <title>En afdeling</title>"
+    assert_includes output, "  <subtitle>\n    <line>Første undertitel</line>"
+    assert_includes output, "  <notes>\n    <note>Tekstnote</note>\n  </notes>"
+    assert_includes output, '<source pages="3" facsimile-pages="5"/>'
+    assert_includes output, "  <dates>\n    <written>1851</written>\n  </dates>"
+    refute_match(/^[ \t]+<\/?(?:body|content|head|poetry|prose|quote|section|text|workbody|workhead)(?:[ \t>\/])/m, output)
+    refute_includes output, ' />'
+
+    Tempfile.create(['txt2xml-output', '.xml']) do |file|
+      file.write(output)
+      file.flush
+
+      _formatter_output, formatter_error, formatter_status =
+        Open3.capture3('node', FORMATTER, file.path)
+
+      assert formatter_status.success?, formatter_error
+      assert_equal output, File.read(file.path)
+    end
+  end
+
+  def test_always_emits_an_unproofread_draft
+    output, error, status = convert(<<~TEXT)
+      KILDE:<i>Digte</i> 1900
+      DIGTER:digter
+      FACSIMILE:scan.pdf
+
+      T:Første digt
+      F:Første linje
+      SIDE:1
+
+      Første linje
+
+      T:Andet digt
+      F:Anden linje
+      SIDE:2
+
+      Anden linje
+      SLUT
+    TEXT
+
+    assert status.success?, error
+    assert_includes output, 'status="incomplete"'
+    refute_includes output, '<quality'
+    refute_includes output, 'korrektur1'
   end
 
   def test_escapes_bare_ampersands_without_double_escaping_entities
@@ -423,6 +505,12 @@ class Txt2XmlTest < Minitest::Test
     output, error, status = convert(input)
     assert status.success?, error
     REXML::Document.new(output)
+  end
+
+  def output_for(document)
+    output = +''
+    document.write(output)
+    output
   end
 
   def assert_conversion_fails(input, message)

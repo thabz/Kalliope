@@ -15,8 +15,10 @@ import Page from '../components/page.js';
 import Picture from '../components/picture.js';
 import { poetNameString } from '../components/poetname-helpers.js';
 import PoetName from '../components/poetname.js';
+import SidebarMiniHeading from '../components/sidebarminiheading.js';
 import SidebarSplit from '../components/sidebarsplit.js';
 import SplitWhenSmall from '../components/split-when-small.js';
+import Source from '../components/source.js';
 import TextContent from '../components/textcontent.js';
 import TwoColumns from '../components/twocolumns.js';
 import ErrorPage from './error.js';
@@ -47,17 +49,13 @@ const PersonMetaLine = ({ label, value }) => {
     return null;
   }
   const styles = {
-    key: {
-      fontWeight: 'bold',
-      fontSize: '0.8em',
-    },
     item: {
-      marginBottom: '10px',
+      marginBottom: '22px',
     },
   };
   return (
     <div style={styles.item}>
-      <div style={styles.key}>{label}</div>
+      <SidebarMiniHeading>{label}</SidebarMiniHeading>
       <div>{value}</div>
     </div>
   );
@@ -196,13 +194,41 @@ const Timeline = ({ timeline, lang }) => {
   );
 };
 
+const BiographySources = ({ sources, lang }) => {
+  if (sources == null || sources.length === 0) {
+    return null;
+  }
+  return (
+    <footer className="biography-sources" aria-label={_('Kilde', lang)}>
+      {sources.map((source, index) => (
+        <div className="source" key={index}>
+          <Source
+            contentHtml={source.content_html}
+            href={source.href}
+            lang={lang}
+          />
+        </div>
+      ))}
+      <style jsx>{`
+        .biography-sources {
+          margin-bottom: 40px;
+          font-size: 0.8em;
+          text-align: right;
+        }
+        .source {
+          margin-top: 0.6em;
+        }
+      `}</style>
+    </footer>
+  );
+};
+
 const BioPage = (props) => {
   const {
     lang,
     poet,
     portraits,
-    content_html,
-    content_lang,
+    biographies,
     timeline,
     identifiers,
     error,
@@ -230,7 +256,9 @@ const BioPage = (props) => {
       headTitle={`${_('Biografi', lang)} - ${poetNameString(poet)} - Kalliope`}
       ogTitle={poetNameString(poet, false, false) + ' ' + _('biografi', lang)}
       ogImage={OpenGraph.poetImage(poet)}
-      ogDescription={OpenGraph.trimmedDescription(content_html)}
+      ogDescription={OpenGraph.trimmedDescription(
+        biographies[0]?.content_html
+      )}
       requestPath={`/${lang}/bio/${poet.id}`}
       crumbs={poetCrumbsWithTitle(lang, poet, _('Biografi', lang))}
       pageTitle={<PoetName poet={poet} includePeriod />}
@@ -240,21 +268,24 @@ const BioPage = (props) => {
       selectedMenuItem="bio">
       <SidebarSplit sidebar={sidebarItems} sidebarOnTopWhenSplit={true}>
         <div style={{ lineHeight: '1.6' }}>
-          <TextContent
-            contentHtml={content_html}
-            contentLang={content_lang}
-            className="bio-text"
-          />
+          {biographies.map((biography, index) => (
+            <div className="biography" key={index}>
+              <TextContent
+                contentHtml={biography.content_html}
+                contentLang={biography.content_lang}
+                className="bio-text"
+              />
+              <BiographySources sources={biography.sources} lang={lang} />
+            </div>
+          ))}
           <Timeline timeline={timeline} lang={lang} />
           <style jsx>{`
-            :global(.bio-text) {
+            .biography {
               margin-bottom: 40px;
             }
-            @media (max-width: 600px) {
-              :global(.bio-text) {
-                border-bottom: 1px solid #666;
-                padding-bottom: 30px;
-              }
+            .biography + .biography {
+              border-top: 1px solid #666;
+              padding-top: 30px;
             }
           `}</style>
         </div>
@@ -269,8 +300,7 @@ BioPage.getInitialProps = async ({ query: { lang, poetId } }) => {
     lang,
     portraits: json.portraits,
     poet: json.poet,
-    content_html: json.content_html,
-    content_lang: json.content_lang,
+    biographies: json.biographies ?? [],
     timeline: json.timeline,
     identifiers: json.identifiers,
     error: json.error,

@@ -12,11 +12,13 @@ import HelpKalliope from '../components/helpkalliope.js';
 import * as Links from '../components/links.js';
 import { poetMenu } from '../components/menu.js';
 import Note from '../components/note.js';
+import SidebarMiniHeading from '../components/sidebarminiheading.js';
 import Page from '../components/page.js';
 import { poetNameString } from '../components/poetname-helpers.js';
 import PoetName from '../components/poetname.js';
 import SidebarPictures from '../components/sidebarpictures.js';
 import SidebarSplit from '../components/sidebarsplit.js';
+import Source from '../components/source.js';
 import Stack from '../components/stack.js';
 import TextContent from '../components/textcontent.js';
 import TextName, { textLinkTitleString } from '../components/textname.js';
@@ -61,7 +63,7 @@ const Bladrer = (props) => {
   );
 };
 
-const Refs = ({ refs, contentLang, currentPoetId }) => {
+const Refs = ({ refs, contentLang, currentPoetId, spacing = '16px' }) => {
   const lang = useContext(LangContext);
   const renderedRefs = refs.map((ref, i) => {
     if (Array.isArray(ref)) {
@@ -96,14 +98,8 @@ const Refs = ({ refs, contentLang, currentPoetId }) => {
 
   return (
     <div className="refs">
-      {renderedRefs}
+      <Stack spacing={spacing}>{renderedRefs}</Stack>
       <style jsx>{`
-        .reference {
-          margin-bottom: 16px;
-        }
-        .reference:last-child {
-          margin-bottom: 0;
-        }
         :global(a.reference-title) {
           display: inline-block;
           hyphens: none;
@@ -131,7 +127,7 @@ const MetadataGroup = ({ title, children, printHidden = false }) => {
   const className = `metadata-group${printHidden ? ' print-hidden' : ''}`;
   return (
     <section className={className}>
-      <h4>{title}</h4>
+      <SidebarMiniHeading>{title}</SidebarMiniHeading>
       {children}
       <style jsx>{`
         .metadata-group {
@@ -140,18 +136,13 @@ const MetadataGroup = ({ title, children, printHidden = false }) => {
         .metadata-group:last-child {
           margin-bottom: 0;
         }
-        .metadata-group :global(h4) {
-          margin: 0 0 7px;
-          color: #777;
-          font-size: 0.75em;
-          font-weight: 600;
-          letter-spacing: 0.06em;
-          line-height: 1.2;
-          text-transform: uppercase;
-        }
         .metadata-group :global(a) {
           hyphens: none;
           overflow-wrap: break-word;
+        }
+        .metadata-group :global(p.digital-source) {
+          margin-top: 10px;
+          margin-bottom: 0;
         }
         @media print {
           .metadata-group.print-hidden {
@@ -380,14 +371,24 @@ const TextPage = (props) => {
   let renderedSource = null;
   if (text.source != null) {
     const source = text.source;
-    sourceText = source.source.replace(/\.?$/, ', ');
-    sourceText += 's. ' + source.pages + '.';
-    renderedSource = (
-      <TextContent
-        contentHtml={[[sourceText, { html: true }]]}
-        contentLang="da"
-      />
-    );
+    if (source.source != null && source.source.length > 0) {
+      sourceText = source.source;
+      if (source.pages != null) {
+        sourceText = sourceText.replace(/\.?$/, ', ');
+        sourceText += 's. ' + source.pages + '.';
+      }
+      renderedSource = (
+        <Source
+          contentHtml={[[sourceText, { html: true }]]}
+          href={source.digitalUrl}
+          lang={lang}
+        />
+      );
+    } else if (source.digitalUrl != null) {
+      renderedSource = (
+        <Source href={source.digitalUrl} lang={lang} />
+      );
+    }
   }
 
   let textPictures = [...text.pictures];
@@ -433,7 +434,9 @@ const TextPage = (props) => {
     const list = text.keywords.map((k) => {
       return <KeywordLink keyword={k} lang={lang} key={k.id} />;
     });
-    renderedKeywords = <div style={{ marginTop: '30px' }}>{list}</div>;
+    renderedKeywords = (
+      <div style={{ marginTop: '30px', marginBottom: '30px' }}>{list}</div>
+    );
   }
 
   const noteCount = notes.length + (text.footnotes_count || 0);
@@ -488,6 +491,7 @@ const TextPage = (props) => {
             refs={text.refs}
             contentLang={text.content_lang}
             currentPoetId={poet.id}
+            spacing="5px"
           />
         </MetadataGroup>
       ) : null}
@@ -497,6 +501,7 @@ const TextPage = (props) => {
             refs={text.translations}
             contentLang={text.content_lang}
             currentPoetId={poet.id}
+            spacing="5px"
           />
         </MetadataGroup>
       ) : null}
@@ -512,13 +517,13 @@ const TextPage = (props) => {
     textPictures.length > 0
   ) {
     sidebar = (
-      <div>
+      <Stack spacing="20px">
         {renderedNotes}
         {renderedTextMetadata}
         <RelatedDateTexts texts={text.related_date_texts || []} lang={lang} />
         {renderedKeywords}
         {renderedPictures}
-      </div>
+      </Stack>
     );
   }
 
@@ -537,6 +542,14 @@ const TextPage = (props) => {
   }
   let ogDescription = '';
   let shouldIndentTitle = false;
+  const hasMarginNotes = text.blocks.some((block) =>
+    block.lines.some((line) => {
+      const content = line[0];
+      return (
+        typeof content === 'string' && /<margin(?:\s|>)/.test(content)
+      );
+    })
+  );
 
   let body = null;
   if (text.text_type === 'section' && text.toc != null) {
@@ -618,7 +631,9 @@ const TextPage = (props) => {
       poet={poet}
       selectedMenuItem="works">
       <FootnoteContainer key={text.id}>
-        <SidebarSplit sidebar={sidebar}>
+        <SidebarSplit
+          sidebar={sidebar}
+          reserveMarginNotes={hasMarginNotes}>
           <div>
             <article style={{ position: 'relative' }}>
               <Bladrer left target={prev} />
@@ -636,13 +651,14 @@ const TextPage = (props) => {
                   font-family: 'Alegreya', serif;
                   line-height: 1.5;
                   font-size: 1em;
-                  display: inline-block;
+                  display: block;
+                  width: 100%;
                 }
                 :global(.text-content) :global(sc) {
                   font-family: 'Alegreya SC';
                 }
                 @media print {
-                  font-size: 8pt;
+                  font-size: 10pt;
                   line-height: 1.5;
                 }
               `}</style>

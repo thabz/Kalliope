@@ -2,16 +2,37 @@
 <keyword id="heksameter">
   <head>
     <title>Heksameter</title>
-    <author>Henrik Nielsen</author>
+    <source href="https://runeberg.org/salmonsen/2/11/0172.html">K. H. in <i>Salmonsens konversationsleksikon</i>, 2. udg., 1915-1930, Bd. XI, pp. 164-165.</source>
+    <!-- <author>Henrik Nielsen</author> -->
     <pictures>
-        <picture src="homer.jpg" museum="louvre"><i>Portræt af Homer</i>, Romersk kopi af græsk original fra omkring 150 f.Kr. Louvre.</picture>
+        <picture src="homer.jpg" museum="louvre" objid="cl010277994" invnr="MR 530; N 323; Ma 440">
+          <i>Portræt af Homer</i>, romersk kopi af græsk original fra omkring 150 f.Kr. Louvre.
+          <!-- metadata checked: 2026-08-11 -->
+        <identifiers>
+          <wikidata>Q9509393</wikidata>
+        </identifiers>
+        </picture>
     </pictures>
     <related>verseformer</related>
     <related>aleksandrin</related>
   </head>
   <body>
+    <!--
 I heksameteret finder vi litteraturens ældste versemål, hvis levedygtighed og gode anvendelighed til episk digtning gør, at det ikke har mistet sin popularitet siden det første gang så lyset i Homérs <i>Iliade</i>. Dets hyppigste forekomst er i daktyler, og på den måde virker heksameteret meget udstrakt, meget fortællende, rummelig nok til at være meget beskrivende, og derfor har det i alle tider været "eposets versemål".
 
-Et heksameter består, som navnet antyder, af seks versefødder, og som levn fra den mundtlige tradition i græsk heltedigtning, består det af daktyler og/eller spondæer. Den for os mere sprognære udgave af et heksameter kalder man <a keyword="aleksandrin"><i>aleksandrin</i></a>, der erstatter daktylerne og spondæerne med jamber, der imiterer vor sprogtone og dagligtale i højere grad.
+Et heksameter består, som navnet antyder, af seks versefødder, og som levn fra den mundtlige tradition i græsk heltedigtning, består det af daktyler og/eller spondæer. Den for os mere sprognære udgave af et heksameter kalder man <a keyword="alexandriner"><i>aleksandrin</i></a>, der erstatter daktylerne og spondæerne med jamber, der imiterer vor sprogtone og dagligtale i højere grad.
+    -->
+
+    Heksameter (gr.) betegner egl. kun en af 6 Fødder bestaaende Verselinie, men bruges spec. om det af 6 Daktyler (se <a keyword="daktylos"><w>Daktylos</w></a>) dannede Versemaal. Daktylen kan paa de 4 første Pladser ombyttes med en Spondé, sjældnere paa 5., hvorved Verset faar noget slæbende; 6. Fod er altid en Spondé ell. Trokæ. Skemaet er flg.:
+
+    <small>  —        —        —        —       (—)     —</small>
+    <small>— ⏑⏑ | — ⏑⏑ | — ⏑⏑ | — ⏑⏑ | — ⏑⏑ | — ⏒</small>
+
+    Hos Grækerne har Daktylen Overvægten, hos Romerne, hvis Sprog er rigere paa lange Stavelser end det gr., Spondeen; for øvrigt kan Versets daktyliske ell. spondeiske Karakter tjene til at anskueliggøre den skildrede Handlings Hurtighed ell. Langsomhed. Eksempler:
+
+    <small>Løber af Sted til den rullende Bæk, hvor den jævnlig sig baded’.</small>
+    <small>Medens Aaren føres der, hvor nylig man pløjed’.</small>
+
+    I ethvert H. er der normalt et Ophold, <a keyword="caesur"><w>Cæsur</w></a> (s. d.). H. forekommer først i de homeriske Digte; nogle antager, at det har udviklet sig ved en Forbindelse af to treføddede Vers. Det anvendes derefter hos Grækerne i hele den episke og tillige i den bukoliske <a keyword="poesi"><w>Poesi</w></a>, sjælden i <a keyword="drama"><w>Dramaet</w></a>, tillige efterfulgt af Pentametret i <a keyword="elegi"><w>Elegien</w></a> og <a keyword="epigram"><w>Epigrammet</w></a>. I den rom. Poesi indføres H. af Ennius og fortrænger hos Epikerne det nationale Versemaal; ogsaa Lucilius brugte det til Dels i sine <a keyword="satire"><w>Satirer</w></a>, og Horats anvender kun det i sine <a keyword="satire"><w>Satirer</w></a> og Breve. I Middelalderen udvikler sig en særlig Form for H., det saakaldte <a keyword="leoninske-vers">leoninske Vers</a>, hvori Rim anvendes; denne Form er i Danmark benyttet af Anders Arrebo. Den tyske Idyldigtning (Voss) i Slutn. af 18. Aarh., der benyttede H., fremkaldte Efterligninger i Danmark, som dog ikke havde stor Værdi; først af Oehlenschläger, Poul Møller og Wilster blev H. hævet til kunstnerisk Skønhed.
   </body>
 </keyword>

@@ -17,7 +17,7 @@ const SectionedList = ({ sections }) => {
     );
   });
   return (
-    <TwoColumns>
+    <TwoColumns noLinkUnderline>
       {renderedGroups}
       <style jsx>{`
         :global(.list-section) {

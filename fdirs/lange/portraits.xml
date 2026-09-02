@@ -2,7 +2,8 @@
 <pictures>
   <picture src="p1.jpg" primary="true" square-src="p1-square.jpg">
   </picture>
-  <picture src="p2.jpg" museum="fnm">
-      August Tholander: <i>Thor Lange</i>, 1881. Frederiksborg Nationalhistorisk Museum.
+  <picture src="p2.jpg" year="1881" museum="fnm">
+    August Tholander: <i>Thor Lange</i>, 1881.
+    <!-- Museets offentlige site har ingen individuel katalogpost; inventarnummeret er derfor ikke verificeret. -->
   </picture>
 </pictures>

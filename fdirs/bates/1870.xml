@@ -1,24 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="1870" author="bates" status="incomplete" type="poetry">
 <workhead>
-   <title>Poetical Works</title>
-   <year>1870</year>
-   <notes>
-      <note>Udgivet posthumt af David Bates' søn Stockton Bates.</note>
-   </notes>
+  <title>Poetical Works</title>
+  <year>1870</year>
+  <notes>
+    <note>Udgivet posthumt af David Bates' søn Stockton Bates.</note>
+  </notes>
 </workhead>
 <workbody>
 
 <text id="bates2001081401">
 <head>
-   <title>Childhood</title>
-   <toctitle>Childhood</toctitle>
-   <indextitle>Childhood</indextitle>
-   <firstline>Childhood, sweet and sunny childhood</firstline>
-   <notes>
-      <note>Kilde: <i>The Poetical Works of David Bates</i>, ed. Stockton Bates, Philadelphia, 1870, pp. 63-65</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Childhood</title>
+  <toctitle>Childhood</toctitle>
+  <indextitle>Childhood</indextitle>
+  <firstline>Childhood, sweet and sunny childhood</firstline>
+  <source pages="63-65"><i>The Poetical Works of David Bates</i>, ed. Stockton Bates, Philadelphia, 1870.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -77,15 +75,15 @@ Childhood easily is moulded;
 
 <text id="bates2001081402">
 <head>
-   <title>Speak gently</title>
-   <toctitle>Speak gently</toctitle>
-   <indextitle>Speak gently</indextitle>
-   <firstline>Speak gently! - It is better far</firstline>
-   <notes>
-      <note>Kilde: <i>The Poetical Works of David Bates</i>, ed. Stockton Bates, Philadelphia, 1870, pp. 18-19.</note>
-      <note>Parodieret af Lewis Carroll i <i>Alice's Adventures in Wonderland</i>: »Speak roughly to your little boy«.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Speak gently</title>
+  <toctitle>Speak gently</toctitle>
+  <indextitle>Speak gently</indextitle>
+  <firstline>Speak gently! - It is better far</firstline>
+  <notes>
+    <note>Parodieret af Lewis Carroll i <i>Alice's Adventures in Wonderland</i>: »Speak roughly to your little boy«.</note>
+  </notes>
+  <source pages="18-19"><i>The Poetical Works of David Bates</i>, ed. Stockton Bates, Philadelphia, 1870.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -139,14 +137,12 @@ The good, the joy, which it may bring,
 
 <text id="bates2001081403">
 <head>
-   <title>Chiding</title>
-   <toctitle>Chiding</toctitle>
-   <indextitle>Chiding</indextitle>
-   <firstline>Reproach will seldom mend the young</firstline>
-   <notes>
-      <note>Kilde: <i>The Poetical Works of David Bates</i>, ed. Stockton Bates, Philadelphia, 1870, p. 8.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Chiding</title>
+  <toctitle>Chiding</toctitle>
+  <indextitle>Chiding</indextitle>
+  <firstline>Reproach will seldom mend the young</firstline>
+  <source pages="8"><i>The Poetical Works of David Bates</i>, ed. Stockton Bates, Philadelphia, 1870.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -172,5 +168,6 @@ The heart's affection by the head,
 </poetry>
 </body>
 </text>
+
 </workbody>
 </kalliopework>
