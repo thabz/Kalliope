@@ -6,10 +6,13 @@ import {
 describe('work XML formatting', () => {
   it('puts structural tags in column zero and spaces texts and sections', () => {
     const xml = `<kalliopework>
+  <workhead>
+    <title>Værk</title><proofreadings><proofreading model="gpt-5.6-sol" datetime="2026-09-01T21:00:00+02:00"/></proofreadings>
+  </workhead>
   <workbody>
     <text>
       <head>
-        <title>Æbler, øer og åer</title><firstline>Første linje</firstline><source pages="1"/><quality>korrektur1</quality>
+        <title>Æbler, øer og åer</title><firstline>Første linje</firstline><source pages="1"/><quality>korrektur1</quality><metre><analysis pattern="iambic-pentameter" confidence="0.91"/></metre><structure><analysis pattern="4-4-3-3" confidence="1.0"/></structure><syllables><analysis pattern="hendecasyllabic" confidence="0.89"/></syllables>
       </head>
       <body>
         <prose>
@@ -34,6 +37,15 @@ Et citat
     const formatted = formatWorkXml(xml);
 
     expect(formatted).toContain(
+      '<workhead>\n' +
+        '  <title>Værk</title>\n' +
+        '  <proofreadings>\n' +
+        '    <proofreading model="gpt-5.6-sol" datetime="2026-09-01T21:00:00+02:00"/>\n' +
+        '  </proofreadings>\n' +
+        '</workhead>',
+    );
+
+    expect(formatted).toContain(
       '<prose>\n  Brødtekst med betydningsfuld indrykning\n</prose>',
     );
     expect(formatted).toContain(
@@ -42,6 +54,15 @@ Et citat
         '  <firstline>Første linje</firstline>\n' +
         '  <source pages="1"/>\n' +
         '  <quality>korrektur1</quality>\n' +
+        '  <metre>\n' +
+        '    <analysis pattern="iambic-pentameter" confidence="0.91"/>\n' +
+        '  </metre>\n' +
+        '  <structure>\n' +
+        '    <analysis pattern="4-4-3-3" confidence="1.0"/>\n' +
+        '  </structure>\n' +
+        '  <syllables>\n' +
+        '    <analysis pattern="hendecasyllabic" confidence="0.89"/>\n' +
+        '  </syllables>\n' +
         '</head>',
     );
     expect(formatted).toContain('</text>\n\n<text>');

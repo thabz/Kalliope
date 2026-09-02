@@ -84,6 +84,8 @@ Almindelige felter i `<workhead>`:
 - `<dates>`: datoer for vaerket.
 - `<pagebreaks/>`: erklærer, at alle interne sideskift i de inkluderede
   tekstkroppe er registreret med `<pb>`.
+- `<proofreadings>`: modelattester fra afsluttende, uafhængige
+  facsimilekorrekturer.
 
 Et værks metadata kan have typevaliderede eksterne identifikatorer:
 
@@ -130,6 +132,31 @@ tekst er kontrolleret og markeret efter reglerne nedenfor. Elementet betyder
 ikke, at værket nødvendigvis indeholder et `<pb>`: hvis hver tekst står på én
 side, er der ingen interne sideskift at indsætte. Fravær af `<pagebreaks/>` i en
 ældre værkfil betyder derfor »ikke oplyst«, ikke at kilden er uden sideskift.
+
+### Korrekturattester
+
+Et facsimileværk må først sættes til `status="complete"`, når det er gennemgået
+side for side to gange. Anden gennemgang udføres af en anden model eller session
+end producenten. Efter bestået slutkontrol indeholder værkets `<workhead>` én
+beholder med én eller flere attester:
+
+```xml
+<proofreadings>
+  <proofreading model="gpt-5.6-sol"
+                datetime="2026-09-01T21:00:00+02:00"/>
+</proofreadings>
+```
+
+Hver attest indeholder kun det præcise modelnavn og tidspunktet i ISO 8601 med
+tidszone. Der tilføjes ingen hash eller reference til en sidecarfil. En senere,
+bedre model kan tilføje en ny `<proofreading>`; tidligere attester bevares, og
+Git dokumenterer den attesterede version og efterfølgende ændringer.
+
+Ved den første overgang fra manglende eller `incomplete` til `complete` kræver
+CI, at hvert inkluderet teksthoved har kvalitetsflagene
+`korrektur1,korrektur2,kilde,side`, og at værket har mindst én gyldig attest.
+Senere note-, metadata- og tekstændringer udløser ikke automatisk krav om en ny
+attest.
 
 ### Workhead source
 
@@ -287,6 +314,121 @@ historiske id-formater fortsat kan bevares uændret.
 - `<pictures>`: billeder til teksten.
 - `<source>`: kilde for teksten.
 - `<dates>`: datoer for teksten.
+- `<metre>`: en eller flere automatiske, reproducerbare metriske analyser.
+- `<form>`: en eller flere automatiske, reproducerbare klassifikationer af
+  poetisk form.
+- `<structure>`: den observerede, reproducerbare strofe- og linjestruktur.
+- `<syllables>`: en eller flere automatiske analyser af digtets stavelsesmønster.
+
+### Automatisk formklassifikation
+
+Formklassifikatoren kombinerer de uafhængige analyser af struktur, rim, metrik
+og stavelsesantal. Den genkender sonetter samt petrarcanske og shakespeareske
+undertyper, terza rima, ottava rima, rime royal, balladestrofer, distika,
+quatrains, blankvers og knittelvers:
+
+```xml
+<form>
+  <analysis pattern="sonnet" confidence="0.99"/>
+  <analysis pattern="petrarchan-sonnet" confidence="0.96"/>
+</form>
+```
+
+Fjorten linjer er et stærkt, men ikke tilstrækkeligt signal. Manglende
+strofegrænser sænker sikkerheden uden automatisk at diskvalificere digtet, og
+undertypen udelades, når kun den overordnede form er sikker. Eksisterende
+`<form>` betragtes som manuelt kurateret og overskrives aldrig.
+
+De specifikke rimformer kræver deres karakteristiske lokale rimskema og
+strofestruktur. Distikon og quatrain beskriver derimod først og fremmest den
+observerede strofestruktur og kan derfor foreslås uden enderim. Blankvers kræver
+både jambisk pentameter og fravær af systematisk enderim. Knittelvers kræver
+parrim og et sikkert firefodsmål. Rimanalysen klassificerer hver strofe lokalt;
+et terza-rima-gæt kan derfor genkende `ABA`-terzetterne, men ikke i sig selv
+bevise rimkæden mellem to nabostrofer.
+
+Uden `--form` vurderes og gemmes alle sikre former; en balladestrofe kan derfor
+også få den bredere klassifikation `quatrain`. `--form` begrænser både søgning
+og foreslået XML til det valgte mønster.
+
+De understøttede mønsternavne er `sonnet`, `terza-rima`, `ottava-rima`,
+`rime-royal`, `ballad-stanza`, `distich`, `quatrain`, `blank-verse` og
+`knittelvers`.
+
+En samlet, skrivebeskyttet rapport for ét digt-id viser alle delanalyser og den
+resulterende formklassifikation:
+
+```sh
+npm run poetic-form -- oehlen1999062839
+```
+
+De underliggende værktøjer til at skrive, afgrænse, evaluere og træne
+analyserne køres direkte med Node og er dokumenteret i
+[`tools/poetic-form/README.md`](../tools/poetic-form/README.md).
+
+### Automatisk metrisk analyse
+
+Et kvalificeret automatisk gæt på digtets grundmeter gemmes i tekstens `<head>`:
+
+```xml
+<metre>
+  <analysis pattern="iambic-pentameter" confidence="0.91"/>
+  <analysis pattern="hendecasyllabic" confidence="0.84"/>
+</metre>
+```
+
+`confidence` er et decimaltal mellem 0 og 1, og analyserne står med den højeste
+confidence først. Flere analyser bruges kun, når en rytmisk og en
+stavelsesbaseret beskrivelse er kompatible. Eksisterende `<metre>` betragtes som
+manuelt kurateret og overskrives ikke af analyseværktøjet.
+
+`--only-missing` kan angives eksplicit; værktøjet springer af hensyn til manuelt
+kuraterede oplysninger altid tekster med eksisterende `<metre>` over. Den
+danske trykheuristik springer desuden tekster over, når tekstens eller digterens
+metadata angiver et andet sprog end `da`.
+
+### Automatisk strukturanalyse
+
+Den observerede strofe- og linjestruktur gemmes i tekstens `<head>`:
+
+```xml
+<structure>
+  <analysis pattern="4-4-3-3" confidence="1.0"/>
+</structure>
+```
+
+Tallene er antallet af egentlige verslinjer i hver eksplicit afgrænset strofe.
+Et digt med 14 sammenhængende linjer får derfor mønsteret `14`; værktøjet
+gætter ikke strofegrænser for at få teksten til at passe til en kendt versform.
+Tomme linjer og semantiske speciallinjer som `<nonum>`, `<versenum>`, `<hr>` og
+`<metrik>` afgrænser strofer, men tæller ikke som verslinjer. Inline noter,
+linjenumre og sideskift tæller heller ikke som selvstændige verslinjer.
+
+Analysen er deterministisk for korrekt XML og får derfor `confidence="1.0"`.
+Uden `--only-missing` erstattes en eksisterende strukturanalyse med den aktuelt
+observerede struktur. `--dry-run` viser antallet af foreslåede analyser uden at
+ændre værkfilerne.
+
+### Automatisk stavelsesanalyse
+
+Et gennemgående stavelsestal gemmes uafhængigt af den rytmiske analyse:
+
+```xml
+<syllables>
+  <analysis pattern="decasyllabic" confidence="0.94"/>
+  <analysis pattern="hendecasyllabic" confidence="0.81"/>
+</syllables>
+```
+
+Analysen kombinerer et lille udtaleleksikon med regler for moderne og historisk
+dansk og en fallback for ukendte ord. Confidence afspejler linjernes
+regelmæssighed, udtaleusikkerheden og antallet af analyserede linjer. Naboantal
+kan begge gemmes, når fx maskuline og feminine linjeudgange gør dem plausible.
+
+Værktøjet overskriver aldrig et eksisterende `<syllables>`-element og springer
+tekster over, når tekstens eller digterens metadata angiver et andet sprog end
+`da`. `--debug` viser stavelsestallet for hver linje og markerer ord, der er
+behandlet med de mindre sikre historiske regler eller elisionsregler.
 
 Titel-fallbacks:
 
@@ -294,6 +436,13 @@ Titel-fallbacks:
 - `indextitle` falder tilbage til `title`.
 - `linktitle` falder tilbage til `indextitle` og derefter `title`.
 - `toctitle` falder tilbage til `title`.
+
+Titelfelter er redaktionelle metadata og skrives uden afsluttende tegnsætning.
+Fjern derfor punktum, komma, kolon, semikolon, spørgsmålstegn og udråbstegn til
+sidst i `<title>`, `<indextitle>`, `<toctitle>`, `<linktitle>` og
+`<breadcrumbtitle>`, også når tegnet står i den trykte overskrift. Reglen gælder
+ikke `<subtitle>`, `<suptitle>` eller den diplomatiske transskription i
+tekstlegemet, hvor kildens tegnsætning bevares.
 
 ### Keywords
 
@@ -450,6 +599,10 @@ sideskiftet, står markøren inline på det nøjagtige sted:
 ```xml
 En verslinje som fort<pb n="12" facs="019.jpg"/>sætter
 ```
+
+En indrykning på den nye sides første linje placeres tilsvarende efter
+markøren: `<pb n="12" facs="019.jpg"/>    Indrykket linje`. Mellemrummene må
+ikke stå foran `<pb>`, da de i så fald hører til den foregående kildeside.
 
 En `<pb>` må ikke stå på en selvstændig XML-linje i `<poetry>`, fordi den så kan
 forveksles med en vers- eller strofegrænse. Ved sideskift mellem verslinjer eller
@@ -659,26 +812,33 @@ Almindelige inline-tags:
 
 Links:
 
+I værkfiler må links kun bruges i `<note>` og `<footnote>`, ikke direkte i
+digte, prosa eller citatblokke under `<body>`. Bevar omtalen som almindelig
+tekst i brødteksten, og læg en eventuel redaktionel henvisning i en `<note>`.
+Brug `<footnote>` til fodnoter, der stammer fra kilden. Linkmetadata som
+`<source href="...">` er ikke inline-links og er fortsat tilladt.
+
 ```xml
-<a poet="heine">Heine</a>
-<a person="steffens">Steffens</a>
-<a poem="schiller2018011501">Die Goetter Griechenlands</a>
-<a text="...">tekst</a>
-<a keyword="romantikken">romantikken</a>
-<a dict="...">ordbogsopslag</a>
-<a work="goethe/1819">West-oestlicher Divan</a>
-<a href="https://...">eksternt link</a>
-<a bible="bibeljohn03,16">Joh 3,16</a>
+<note>Se <a poet="heine">Heine</a>.</note>
+<note>Se <a person="steffens">Steffens</a>.</note>
+<note>Se <a poem="schiller2018011501">Die Goetter Griechenlands</a>.</note>
+<note>Se <a text="...">teksten</a>.</note>
+<note>Se <a keyword="romantikken">romantikken</a>.</note>
+<note>Se <a dict="...">ordbogsopslaget</a>.</note>
+<note>Se <a work="goethe/1819">West-oestlicher Divan</a>.</note>
+<note>Se <a href="https://...">den eksterne kilde</a>.</note>
+<note>Se <a bible="bibeljohn03,16">Joh 3,16</a>.</note>
 ```
 
-`<xref ...>` er en genvej, der i buildet omskrives til `<a ...>` i noter og tekst:
+`<xref ...>` er en genvej, der i buildet omskrives til `<a ...>`. I værkfiler
+skal den ligesom `<a>` placeres i en note eller fodnote:
 
 ```xml
-<xref poem="schiller2018011501"/>
-<xref type="translation" poem="heine..."/>
-<xref keyword="romantikken"/>
-<xref dict="..."/>
-<xref bible="bibeljohn03,16"/>
+<note>Se <xref poem="schiller2018011501"/>.</note>
+<note>Gendigtning af <xref type="translation" poem="heine..."/>.</note>
+<note>Se <xref keyword="romantikken"/>.</note>
+<note>Se <xref dict="..."/>.</note>
+<note>Se <xref bible="bibeljohn03,16"/>.</note>
 ```
 
 `type="translation"` paa digtlinks bruges til oversaettelsesrelationer.

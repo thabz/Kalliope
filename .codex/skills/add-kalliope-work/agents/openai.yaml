@@ -1,0 +1,4 @@
+interface:
+  display_name: "Indsæt nyt værk på Kalliope"
+  short_description: "Indsæt og validér et nyt Kalliope-værk"
+  default_prompt: "Brug $add-kalliope-work til at indsætte dette værk på Kalliope og forberede en dokumenteret pull request."

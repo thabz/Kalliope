@@ -1,6 +1,24 @@
 import { collectPageBreakIssues } from '../../tools/work-validation.js';
 
 describe('page-break markup', () => {
+  it('requires indentation on a new page to follow the page break', () => {
+    const xml = `<kalliopework><workbody><text><body><poetry>
+    <pb n="2"/>Indrykket linje
+</poetry></body></text></workbody></kalliopework>`;
+
+    expect(collectPageBreakIssues('work.xml', xml)).toEqual([
+      'work.xml:2: indentation before <pb n="2"/> belongs after the page break.',
+    ]);
+  });
+
+  it('allows indentation after a page break', () => {
+    const xml = `<kalliopework><workbody><text><body><poetry>
+<pb n="2"/>    Indrykket linje
+</poetry></body></text></workbody></kalliopework>`;
+
+    expect(collectPageBreakIssues('work.xml', xml)).toEqual([]);
+  });
+
   it('accepts a complete declaration even when the work has no page breaks', () => {
     const xml = `
       <kalliopework id="1900" author="digter">

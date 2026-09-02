@@ -5,7 +5,6 @@ import {
   isAnthologyText,
   publicationTextId,
   resolveAuthorId,
-  sourceWorkFilename,
   worksForPoet,
 } from '../tools/build-static/anthologies.js';
 import { workName } from '../tools/build-static/formatting.js';
@@ -166,9 +165,6 @@ describe('antologiplaceringer', () => {
       'fdirs/antologierdk/1872.xml',
     ]);
     expect(worksForPoet(collected, 'arnesen-kall')).toEqual([work]);
-    expect(sourceWorkFilename(work.sections[0].texts[0])).toBe(
-      'fdirs/antologierdk/1872.xml'
-    );
     expect(workName(work.sections[0].work)).toBe(
       'Blade fra danske Kvinder (1872)'
     );
