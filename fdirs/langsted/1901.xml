@@ -36,7 +36,6 @@
 <text id="lange2026090201" author="lange">
 <head>
   <title>Forord</title>
-  <firstline>Kjære Hr. Adolf Langsted!</firstline>
   <written>1901-08-27</written>
   <source facsimile-pages="12"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -60,7 +59,7 @@ THOR LANGE.
 <head>
   <title>Aandelige Sange og Digte</title>
 </head>
-<body>
+<content>
 
 <text id="langsted2026090202">
 <head>
@@ -1175,14 +1174,14 @@ For trætte Pilgrimssjæl.
 </body>
 </text>
 
-</body>
+</content>
 </section>
 
 <section>
 <head>
   <title>Blandede Digte</title>
 </head>
-<body>
+<content>
 
 <text id="langsted2026090223">
 <head>
@@ -1844,7 +1843,7 @@ Saa ej mer paa Cirkus en Gladiatorleg.
 </body>
 </text>
 
-<text id="langsted2026090235">
+<text id="langsted2026090235" ignore-tests="internal-uppercase">
 <head>
   <title>Englebud</title>
   <subtitle>En Legende.</subtitle>
@@ -2192,14 +2191,14 @@ Der oprinder til Evigheds-Liv.
 </body>
 </text>
 
-</body>
+</content>
 </section>
 
 <section>
 <head>
   <title>Digte om og til Børn</title>
 </head>
-<body>
+<content>
 
 <text id="langsted2026090242">
 <head>
@@ -2904,7 +2903,7 @@ Som kommer i Herrens Navn!
 </body>
 </text>
 
-</body>
+</content>
 </section>
 
 </workbody>
