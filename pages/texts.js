@@ -15,41 +15,44 @@ import ErrorPage from './error.js';
 
 const groupLines = (lines, type, contentLang) => {
   let groups = new Map();
-  lines.forEach((linePair) => {
-    let line, alternative;
-    if (type === 'titles') {
-      line = linePair.title;
-      alternative = linePair.firstline;
-    } else {
-      line = linePair.firstline;
-      alternative = linePair.title;
-    }
-    if (line == null || line.length == 0) {
-      return;
-    }
-    line = line.replace(',', '').replace('!', '');
-    linePair['sortBy'] = line + ' [' + alternative + '[' + linePair.id;
-    let letter = Sorting.lineSectionTitleForLang(line, contentLang);
-    if (line.indexOf('Aa') === 0) {
-      letter = 'Å';
-    }
-    if (line.indexOf('Ö') === 0) {
-      letter = 'Ø';
-    }
-    if (line.indexOf('È') === 0) {
-      letter = 'E';
-    }
-    // Oldgræsk. Nedenstående dog virker ikke lige her, men
-    // er OK i Node-terminalen.
-    letter = letter
-      .normalize('NFD') // splitter prækomponerede tegn
-      .replace(/[\u0300-\u036f]/g, '') // fjern kombinerende diakritika
-      .normalize('NFC');
-    letter = letter.toUpperCase();
-    let array = groups.get(letter) || [];
-    array.push(linePair);
-    groups.set(letter, array);
-  });
+  const lineIndexField = type === 'titles' ? 'index_title' : 'index_firstline';
+  lines
+    .filter((linePair) => linePair[lineIndexField] !== false)
+    .forEach((linePair) => {
+      let line, alternative;
+      if (type === 'titles') {
+        line = linePair.title;
+        alternative = linePair.firstline;
+      } else {
+        line = linePair.firstline;
+        alternative = linePair.title;
+      }
+      if (line == null || line.length == 0) {
+        return;
+      }
+      line = line.replace(',', '').replace('!', '');
+      linePair['sortBy'] = line + ' [' + alternative + '[' + linePair.id;
+      let letter = Sorting.lineSectionTitleForLang(line, contentLang);
+      if (line.indexOf('Aa') === 0) {
+        letter = 'Å';
+      }
+      if (line.indexOf('Ö') === 0) {
+        letter = 'Ø';
+      }
+      if (line.indexOf('È') === 0) {
+        letter = 'E';
+      }
+      // Oldgræsk. Nedenstående dog virker ikke lige her, men
+      // er OK i Node-terminalen.
+      letter = letter
+        .normalize('NFD') // splitter prækomponerede tegn
+        .replace(/[\u0300-\u036f]/g, '') // fjern kombinerende diakritika
+        .normalize('NFC');
+      letter = letter.toUpperCase();
+      let array = groups.get(letter) || [];
+      array.push(linePair);
+      groups.set(letter, array);
+    });
   let sortedGroups = [];
   groups.forEach((group, key) => {
     sortedGroups.push({

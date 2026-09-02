@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="andre" author="stistrup" status="incomplete" type="poetry">
 <workhead>
-   <title>Andre digte</title>
-   <quality>korrektur1</quality>
+  <title>Andre digte</title>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
 <text id="stistrup2002101201">
 <head>
-   <title>In Memoriam P: Lerche</title>
-   <toctitle>In Memoriam P: Lerche</toctitle>
-   <indextitle>In Memoriam P: Lerche</indextitle>
-   <firstline>Den største Snaus i verden var</firstline>
-   <notes>
-      <note>Teksten er forfattet 1699.</note>
-      <note>Peder Lerche (1642-1699) var landsdommer ved Viborg.</note>
-      <note>Efter Niels Simonsen: <i>Verdslig Barok</i>, 1985, pp. 110-111, som igen angiver Nks. 4° 818<sup>b</sup>, s. 72, som tekstgrundlag.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>In Memoriam P: Lerche</title>
+  <toctitle>In Memoriam P: Lerche</toctitle>
+  <indextitle>In Memoriam P: Lerche</indextitle>
+  <firstline>Den største Snaus i verden var</firstline>
+  <notes>
+    <note>Teksten er forfattet 1699.</note>
+    <note>Peder Lerche (1642-1699) var landsdommer ved Viborg.</note>
+  </notes>
+  <source>Niels Simonsen: <i>Verdslig Barok</i>, 1985, pp. 110-111, som igen angiver Nks. 4° 818<sup>b</sup>, s. 72, som tekstgrundlag.</source>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -58,5 +58,6 @@ Vor dødes navn da viid det er
 </poetry>
 </body>
 </text>
+
 </workbody>
 </kalliopework>

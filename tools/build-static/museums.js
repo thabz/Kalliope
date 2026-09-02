@@ -9,8 +9,18 @@ import {
   safeGetAttr,
   safeGetText,
   getElementsByTagName,
+  getIdentifiers,
+  identifierAllowlist,
   loadXMLDoc,
 } from './xml.js';
+
+const validateMuseum = (museum, xmlFilename = 'content/museums.xml') => {
+  if (museum.country == null || museum.country.trim() === '') {
+    throw new Error(
+      `${xmlFilename}: museum ${museum.id ?? '(uden id)'} mangler <country>.`,
+    );
+  }
+};
 
 // Read content/museums.xml and produce collected.museums to be used later.
 const build_museums = () => {
@@ -21,6 +31,7 @@ const build_museums = () => {
     !force_reload &&
     cached_museums.size !== 0
   ) {
+    cached_museums.forEach(museum => validateMuseum(museum, xmlFilename));
     return cached_museums;
   }
 
@@ -33,13 +44,16 @@ const build_museums = () => {
     const sortName = safeGetText(museum, 'sort-name') || name;
     const country = safeGetText(museum, 'country');
     const deepLink = safeGetText(museum, 'deep-link');
+    const identifiers = getIdentifiers(museum, identifierAllowlist.museum);
     const data = {
       id,
       name,
       sortName,
       country,
       deepLink,
+      identifiers,
     };
+    validateMuseum(data, xmlFilename);
     collected_museums.set(id, data);
   });
   writeCachedJSON('collected.museums', Array.from(collected_museums));
@@ -132,4 +146,5 @@ export {
   build_museum_url,
   build_museums,
   build_museum_pages,
+  validateMuseum,
 };

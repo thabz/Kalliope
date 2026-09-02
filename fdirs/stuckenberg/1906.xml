@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="1906" author="stuckenberg" status="complete" type="poetry">
 <workhead>
-    <title>Sidste Digte</title>
-    <year>1906</year>
-    <pictures>
-       <picture type="titlepage" src="1906-p1.jpg">Titelbladet til <i>Sidste Digte</i> (1906) lyder ,,Viggo Stuckenberg / Sidste Digte // Gyldendalske Boghandel / Nordisk Forlag /  København og Kristiania / 1906''</picture>
-    </pictures>
-    <notes>
-        <note>Teksten følger Viggo Stuckenberg: <i>Sidste Digte</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1906.</note>
-        <note>Udgivelsen er besørget af <a poet="nielsenlc">L.C. Nielsen</a>.</note>
-    </notes>
-    <source facsimile="11540800863D_color.pdf" facsimile-pages-num="226" facsimile-pages-offset="16">Viggo Stuckenberg: <i>Sidste Digte</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1906.</source>
-    <!-- TODO: fjærn] fjern overalt? -->
+  <title>Sidste Digte</title>
+  <year>1906</year>
+  <pictures>
+    <picture type="titlepage" src="1906-p1.jpg">Titelbladet til <i>Sidste Digte</i> (1906) lyder ,,Viggo Stuckenberg / Sidste Digte // Gyldendalske Boghandel / Nordisk Forlag /  København og Kristiania / 1906''</picture>
+  </pictures>
+  <notes>
+    <note>Udgivelsen er besørget af <a poet="nielsenlc">L.C. Nielsen</a>.</note>
+  </notes>
+  <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122583725205763" facsimile="11540800863D_color.pdf" facsimile-pages-num="226" facsimile-pages-offset="16">Viggo Stuckenberg: <i>Sidste Digte</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1906.</source>
+  <!-- TODO: fjærn] fjern overalt? -->
 </workhead>
 <workbody>
 
 <text id="stuckenberg20000924114">
 <head>
-    <title>Aftenen kommer</title>
-    <firstline>Aftenen kommer, den sorte Nat!</firstline>
-    <source pages="1-2"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Aftenen kommer</title>
+  <firstline>Aftenen kommer, den sorte Nat!</firstline>
+  <source pages="1-2"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -59,12 +58,12 @@ din Gang mod de fjærne Riger.
 
 <text id="stuckenberg20000924115">
 <head>
-    <title>Foraarsvers</title>
-    <toctitle>Foraarsvers</toctitle>
-    <indextitle>Foraarsvers</indextitle>
-    <firstline>Det var først paa Foraarstiden</firstline>
-    <source pages="2-3"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Foraarsvers</title>
+  <toctitle>Foraarsvers</toctitle>
+  <indextitle>Foraarsvers</indextitle>
+  <firstline>Det var først paa Foraarstiden</firstline>
+  <source pages="2-3"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -109,12 +108,12 @@ over Hjærtet Foraarsskovens
 
 <text id="stuckenberg20000924116">
 <head>
-    <title>Dug</title>
-    <toctitle>Dug</toctitle>
-    <indextitle>Dug</indextitle>
-    <firstline>Hver lys Skærsommernat, naar Jorden sejler</firstline>
-    <source pages="3-4"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Dug</title>
+  <toctitle>Dug</toctitle>
+  <indextitle>Dug</indextitle>
+  <firstline>Hver lys Skærsommernat, naar Jorden sejler</firstline>
+  <source pages="3-4"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -138,12 +137,12 @@ mens Nattens Dug mig rinder gennem Sjælen.
 
 <text id="stuckenberg20000924117">
 <head>
-    <title>Landskab</title>
-    <toctitle>Landskab</toctitle>
-    <indextitle>Landskab</indextitle>
-    <firstline>En Egn med øde Markers milevide</firstline>
-    <source pages="4-5"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Landskab</title>
+  <toctitle>Landskab</toctitle>
+  <indextitle>Landskab</indextitle>
+  <firstline>En Egn med øde Markers milevide</firstline>
+  <source pages="4-5"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -185,13 +184,13 @@ en trælsom Stenhugger ved Vejen slider.
 
 <text id="stuckenberg20000924118">
 <head>
-    <title>Bogtrykkerrim</title>
-    <subtitle>gjorte i Halvsøvne</subtitle>
-    <toctitle>Bogtrykkerrim gjorte i Halvsøvne</toctitle>
-    <indextitle>Bogtrykkerrim</indextitle>
-    <firstline>Jeg sad og saa paa min Plænes Græs</firstline>
-    <source pages="5-6"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Bogtrykkerrim</title>
+  <subtitle>gjorte i Halvsøvne</subtitle>
+  <toctitle>Bogtrykkerrim gjorte i Halvsøvne</toctitle>
+  <indextitle>Bogtrykkerrim</indextitle>
+  <firstline>Jeg sad og saa paa min Plænes Græs</firstline>
+  <source pages="5-6"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -210,12 +209,12 @@ og alting flasked sig lige skidt!
 
 <text id="stuckenberg20000924119">
 <head>
-    <title>Juninat</title>
-    <toctitle>Juninat</toctitle>
-    <indextitle>Juninat</indextitle>
-    <firstline>Hvorfor ikke denne Aften synge?</firstline>
-    <source pages="6-7"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Juninat</title>
+  <toctitle>Juninat</toctitle>
+  <indextitle>Juninat</indextitle>
+  <firstline>Hvorfor ikke denne Aften synge?</firstline>
+  <source pages="6-7"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -249,12 +248,12 @@ Hvorfor ikke denne Aften synge,
 
 <text id="stuckenberg20000924120">
 <head>
-    <title>Min Stue</title>
-    <toctitle>Min Stue</toctitle>
-    <indextitle>Min Stue</indextitle>
-    <firstline>Hvor jeg elsker denne mørke Stue</firstline>
-    <source pages="7"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Min Stue</title>
+  <toctitle>Min Stue</toctitle>
+  <indextitle>Min Stue</indextitle>
+  <firstline>Hvor jeg elsker denne mørke Stue</firstline>
+  <source pages="7"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -283,12 +282,12 @@ flygter fjærnt min aldrig fangne Lykke.
 
 <text id="stuckenberg20000924121">
 <head>
-    <title>Mildt Efteraar</title>
-    <toctitle>Mildt Efteraar</toctitle>
-    <indextitle>Mildt Efteraar</indextitle>
-    <firstline>I Fjor ved denne Tid jog Blæst og Regn</firstline>
-    <source pages="8"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Mildt Efteraar</title>
+  <toctitle>Mildt Efteraar</toctitle>
+  <indextitle>Mildt Efteraar</indextitle>
+  <firstline>I Fjor ved denne Tid jog Blæst og Regn</firstline>
+  <source pages="8"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -318,12 +317,12 @@ for den, der drak sig hed ved Livets Kilde.
 
 <text id="stuckenberg20000924122">
 <head>
-    <title>Paasketid</title>
-    <toctitle>Paasketid</toctitle>
-    <indextitle>Paasketid</indextitle>
-    <firstline>Hver Aftenstund ved Solnedgang</firstline>
-    <source pages="8-10"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Paasketid</title>
+  <toctitle>Paasketid</toctitle>
+  <indextitle>Paasketid</indextitle>
+  <firstline>Hver Aftenstund ved Solnedgang</firstline>
+  <source pages="8-10"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -397,12 +396,12 @@ dit Fløjt, du liden Sanger!
 
 <text id="stuckenberg20000924123">
 <head>
-    <title>Foraarsnat</title>
-    <toctitle>Foraarsnat</toctitle>
-    <indextitle>Foraarsnat</indextitle>
-    <firstline>Naar Solen synker</firstline>
-    <source pages="11"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Foraarsnat</title>
+  <toctitle>Foraarsnat</toctitle>
+  <indextitle>Foraarsnat</indextitle>
+  <firstline>Naar Solen synker</firstline>
+  <source pages="11"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -440,12 +439,12 @@ og bittert fylder dig hver Sorg, hvert Savn.
 
 <text id="stuckenberg20000924124">
 <head>
-    <title>Du store, stille Skov</title>
-    <toctitle>Du store, stille Skov</toctitle>
-    <indextitle>Du store, stille Skov</indextitle>
-    <firstline>Du store, stille Skov</firstline>
-    <source pages="12"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Du store, stille Skov</title>
+  <toctitle>Du store, stille Skov</toctitle>
+  <indextitle>Du store, stille Skov</indextitle>
+  <firstline>Du store, stille Skov</firstline>
+  <source pages="12"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -468,12 +467,12 @@ ak, saa hvid en Fred min Sjæl du bringer.
 
 <text id="stuckenberg20000924125">
 <head>
-    <title>For Vinden danser</title>
-    <toctitle>For Vinden danser</toctitle>
-    <indextitle>For Vinden danser</indextitle>
-    <firstline>For Vinden danser det grønne Støv</firstline>
-    <source pages="12-13"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>For Vinden danser</title>
+  <toctitle>For Vinden danser</toctitle>
+  <indextitle>For Vinden danser</indextitle>
+  <firstline>For Vinden danser det grønne Støv</firstline>
+  <source pages="12-13"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -512,12 +511,12 @@ at signe den grønnende Grøde.
 
 <text id="stuckenberg20000924126">
 <head>
-    <title>I Nat har det regnet</title>
-    <toctitle>I Nat har det regnet</toctitle>
-    <indextitle>I Nat har det regnet</indextitle>
-    <firstline>I Nat har det regnet. Saa lind og klam</firstline>
-    <source pages="13-14"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>I Nat har det regnet</title>
+  <toctitle>I Nat har det regnet</toctitle>
+  <indextitle>I Nat har det regnet</indextitle>
+  <firstline>I Nat har det regnet. Saa lind og klam</firstline>
+  <source pages="13-14"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -554,12 +553,12 @@ en Lykke, som ingen kan fælde!
 
 <text id="stuckenberg20000924127">
 <head>
-    <title>Hvor er det langt</title>
-    <toctitle>Hvor er det langt</toctitle>
-    <indextitle>Hvor er det langt</indextitle>
-    <firstline>Hvor er der langt til Livets Larm</firstline>
-    <source pages="14-15"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Hvor er det langt</title>
+  <toctitle>Hvor er det langt</toctitle>
+  <indextitle>Hvor er det langt</indextitle>
+  <firstline>Hvor er der langt til Livets Larm</firstline>
+  <source pages="14-15"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -589,12 +588,12 @@ du trofaste Natur!
 
 <text id="stuckenberg20000924128">
 <head>
-    <title>Der ligger en Sø og lyser</title>
-    <toctitle>Der ligger en Sø og lyser</toctitle>
-    <indextitle>Der ligger en Sø og lyser</indextitle>
-    <firstline>Der ligger en Sø og lyser</firstline>
-    <source pages="15-16"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Der ligger en Sø og lyser</title>
+  <toctitle>Der ligger en Sø og lyser</toctitle>
+  <indextitle>Der ligger en Sø og lyser</indextitle>
+  <firstline>Der ligger en Sø og lyser</firstline>
+  <source pages="15-16"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -620,12 +619,12 @@ der bæres paa Strømme derinde.
 
 <text id="stuckenberg20000924129">
 <head>
-    <title>Mod den blege Strandbred</title>
-    <toctitle>Mod den blege Strandbred</toctitle>
-    <indextitle>Mod den blege Strandbred</indextitle>
-    <firstline>Mod den blege Strandbred hulker Havet sagte</firstline>
-    <source pages="16-17"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Mod den blege Strandbred</title>
+  <toctitle>Mod den blege Strandbred</toctitle>
+  <indextitle>Mod den blege Strandbred</indextitle>
+  <firstline>Mod den blege Strandbred hulker Havet sagte</firstline>
+  <source pages="16-17"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -669,12 +668,12 @@ for en Blomst at bryde i mine Drømmes Land.
 
 <text id="stuckenberg20000924130">
 <head>
-    <title>Over de skumrende Linde</title>
-    <toctitle>Over de skumrende Linde</toctitle>
-    <indextitle>Over de skumrende Linde</indextitle>
-    <firstline>Over de skumrende Linde</firstline>
-    <source pages="17-18"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Over de skumrende Linde</title>
+  <toctitle>Over de skumrende Linde</toctitle>
+  <indextitle>Over de skumrende Linde</indextitle>
+  <firstline>Over de skumrende Linde</firstline>
+  <source pages="17-18"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -698,12 +697,12 @@ den fjærne Himmelfreds Tegn!
 
 <text id="stuckenberg20000924131">
 <head>
-    <title>Du Zeus, som sidder Solen næst</title>
-    <toctitle>Du Zeus, som sidder Solen næst</toctitle>
-    <indextitle>Du Zeus, som sidder Solen næst</indextitle>
-    <firstline>Du Zeus, som sidder Solen næst!</firstline>
-    <source pages="18-19"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Du Zeus, som sidder Solen næst</title>
+  <toctitle>Du Zeus, som sidder Solen næst</toctitle>
+  <indextitle>Du Zeus, som sidder Solen næst</indextitle>
+  <firstline>Du Zeus, som sidder Solen næst!</firstline>
+  <source pages="18-19"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -732,12 +731,12 @@ som dit af Solens Purpurblod.
 
 <text id="stuckenberg20000924132">
 <head>
-    <title>Vel er Livet bittert</title>
-    <toctitle>Vel er Livet bittert</toctitle>
-    <indextitle>Vel er Livet bittert</indextitle>
-    <firstline>Vel er Livet bittert</firstline>
-    <source pages="19"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Vel er Livet bittert</title>
+  <toctitle>Vel er Livet bittert</toctitle>
+  <indextitle>Vel er Livet bittert</indextitle>
+  <firstline>Vel er Livet bittert</firstline>
+  <source pages="19"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -756,12 +755,12 @@ Gaa igennem Flammer!
 
 <text id="stuckenberg20000924133">
 <head>
-    <title>Ak, hvad er det hele</title>
-    <toctitle>Ak, hvad er det hele</toctitle>
-    <indextitle>Ak, hvad er det hele</indextitle>
-    <firstline>Ak, hvad er det hele?</firstline>
-    <source pages="19-20"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Ak, hvad er det hele</title>
+  <toctitle>Ak, hvad er det hele</toctitle>
+  <indextitle>Ak, hvad er det hele</indextitle>
+  <firstline>Ak, hvad er det hele?</firstline>
+  <source pages="19-20"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -780,12 +779,12 @@ som mig evigt kalder.
 
 <text id="stuckenberg20000924134">
 <head>
-    <title>Bob</title>
-    <toctitle>Bob</toctitle>
-    <indextitle>Bob</indextitle>
-    <firstline>Der sidder i min Stue</firstline>
-    <source pages="20-21"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Bob</title>
+  <toctitle>Bob</toctitle>
+  <indextitle>Bob</indextitle>
+  <firstline>Der sidder i min Stue</firstline>
+  <source pages="20-21"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -839,12 +838,12 @@ ej hvalpeglad tilbage!«
 
 <text id="stuckenberg20000924135">
 <head>
-    <title>I Aften tæt det regner</title>
-    <toctitle>I Aften tæt det regner</toctitle>
-    <indextitle>I Aften tæt det regner</indextitle>
-    <firstline>I Aften tæt det regner</firstline>
-    <source pages="21-22"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>I Aften tæt det regner</title>
+  <toctitle>I Aften tæt det regner</toctitle>
+  <indextitle>I Aften tæt det regner</indextitle>
+  <firstline>I Aften tæt det regner</firstline>
+  <source pages="21-22"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -881,12 +880,12 @@ foruden Land og Rige!
 
 <text id="stuckenberg20000924136">
 <head>
-    <title>Jeg er saa fyldt af gode Raad</title>
-    <toctitle>Jeg er saa fyldt af gode Raad</toctitle>
-    <indextitle>Jeg er saa fyldt af gode Raad</indextitle>
-    <firstline>Jeg er saa fyldt af gode Raad</firstline>
-    <source pages="23-24"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Jeg er saa fyldt af gode Raad</title>
+  <toctitle>Jeg er saa fyldt af gode Raad</toctitle>
+  <indextitle>Jeg er saa fyldt af gode Raad</indextitle>
+  <firstline>Jeg er saa fyldt af gode Raad</firstline>
+  <source pages="23-24"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -935,12 +934,12 @@ min Sjæl maa atter ile!
 
 <text id="stuckenberg20000924137">
 <head>
-    <title>Saa sadler jeg min Hest</title>
-    <toctitle>Saa sadler jeg min Hest</toctitle>
-    <indextitle>Saa sadler jeg min Hest</indextitle>
-    <firstline>Saa sadler jeg min Hest!</firstline>
-    <source pages="24-25"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Saa sadler jeg min Hest</title>
+  <toctitle>Saa sadler jeg min Hest</toctitle>
+  <indextitle>Saa sadler jeg min Hest</indextitle>
+  <firstline>Saa sadler jeg min Hest!</firstline>
+  <source pages="24-25"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -984,12 +983,12 @@ og blev for evigt borte.
 
 <text id="stuckenberg20000924138">
 <head>
-    <title>Der var en Prins</title>
-    <toctitle>Der var en Prins</toctitle>
-    <indextitle>Der var en Prins</indextitle>
-    <firstline>Der var en Prins, og det var mig</firstline>
-    <source pages="26-27"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Der var en Prins</title>
+  <toctitle>Der var en Prins</toctitle>
+  <indextitle>Der var en Prins</indextitle>
+  <firstline>Der var en Prins, og det var mig</firstline>
+  <source pages="26-27"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1028,12 +1027,12 @@ hvor Morgenbrisen solfrisk ler.
 
 <text id="stuckenberg20000924139">
 <head>
-    <title>Nytaarsnat 1895-96</title>
-    <toctitle>Nytaarsnat 1895-96</toctitle>
-    <indextitle>Nytaarsnat 1895-96</indextitle>
-    <firstline>I Nat er Jorden lys af Sne</firstline>
-    <source pages="27"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Nytaarsnat 1895-96</title>
+  <toctitle>Nytaarsnat 1895-96</toctitle>
+  <indextitle>Nytaarsnat 1895-96</indextitle>
+  <firstline>I Nat er Jorden lys af Sne</firstline>
+  <source pages="27"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1056,10 +1055,10 @@ for dem og det, som jeg har kær!
 
 <text id="stuckenberg20000924140">
 <head>
-    <title>Hr. Lasse Fiend</title>
-    <firstline>Der drypper Dug i Skove</firstline>
-    <source pages="27-61"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Hr. Lasse Fiend</title>
+  <firstline>Der drypper Dug i Skove</firstline>
+  <source pages="27-61"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2043,10 +2042,10 @@ halvt saa tæt, som Mø med Elskov binder Mand?
 
 <text id="stuckenberg20000924141">
 <head>
-    <title>Første Maj</title>
-    <firstline>Nu springer Vaaren fra sin Seng</firstline>
-    <source pages="61-63" facsimile-pages="79-81"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Første Maj</title>
+  <firstline>Nu springer Vaaren fra sin Seng</firstline>
+  <source pages="61-63" facsimile-pages="79-81"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2105,12 +2104,12 @@ for den, som Skæbnen Livet gav!
 
 <text id="stuckenberg20000924142">
 <head>
-    <title>Farao</title>
-    <toctitle>Farao</toctitle>
-    <indextitle>Farao</indextitle>
-    <firstline>Vis mig Ægypten, Slaver!</firstline>
-    <source pages="63-66" facsimile-pages="81-84"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Farao</title>
+  <toctitle>Farao</toctitle>
+  <indextitle>Farao</indextitle>
+  <firstline>Vis mig Ægypten, Slaver!</firstline>
+  <source pages="63-66" facsimile-pages="81-84"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2231,16 +2230,16 @@ at den nogensinde leved.
 
 <section level="1">
 <head>
-    <toctitle>Morgen</toctitle>
+  <toctitle>Morgen</toctitle>
 </head>
 <content>
 
 <text id="stuckenberg20000924143A">
 <head>
-    <title><num>I.</num>Se, nu letter Dæmringsdisen</title>
-    <firstline>Se, nu letter Dæmringsdisen</firstline>
-    <source pages="67-68" facsimile-pages="85-86"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title><num>I.</num>Se, nu letter Dæmringsdisen</title>
+  <firstline>Se, nu letter Dæmringsdisen</firstline>
+  <source pages="67-68" facsimile-pages="85-86"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2282,10 +2281,10 @@ som sin Lykke fattig tabte!
 
 <text id="stuckenberg20000924143B">
 <head>
-    <title><num>II.</num>En tidlig Sommermorgen, Rugen funkler</title>
-    <firstline>En tidlig Sommermorgen, Rugen funkler</firstline>
-    <source pages="68" facsimile-pages="86"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title><num>II.</num>En tidlig Sommermorgen, Rugen funkler</title>
+  <firstline>En tidlig Sommermorgen, Rugen funkler</firstline>
+  <source pages="68" facsimile-pages="86"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2309,10 +2308,10 @@ og atter leger Livet med sin Lykke.
 
 <text id="stuckenberg20000924143C">
 <head>
-    <title><num>III.</num>Er du ung og stærk</title>
-    <firstline>Er du ung og stærk</firstline>
-    <source pages="69" facsimile-pages="87"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title><num>III.</num>Er du ung og stærk</title>
+  <firstline>Er du ung og stærk</firstline>
+  <source pages="69" facsimile-pages="87"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2342,10 +2341,10 @@ i dig selv den har sit Kongesæde.
 
 <text id="stuckenberg20000924143D">
 <head>
-    <title><num>IV.</num>Fra min Barndom har jeg elsket Gryet</title>
-    <firstline>Fra min Barndom har jeg elsket Gryet</firstline>
-    <source pages="70" facsimile-pages="88"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title><num>IV.</num>Fra min Barndom har jeg elsket Gryet</title>
+  <firstline>Fra min Barndom har jeg elsket Gryet</firstline>
+  <source pages="70" facsimile-pages="88"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2367,12 +2366,12 @@ Fryd, der funkler over Morgenveje.
 
 <text id="stuckenberg20000924144">
 <head>
-    <title>Til Georg Brandes</title>
-    <subtitle>I et Eksemplar af »Sne«.</subtitle>
-    <firstline>Jeg bringer dig en ringe Bog</firstline>
-    <source pages="70-71" facsimile-pages="88-89"/>
-    <keywords>brandes</keywords>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Til Georg Brandes</title>
+  <subtitle>I et Eksemplar af »Sne«.</subtitle>
+  <firstline>Jeg bringer dig en ringe Bog</firstline>
+  <source pages="70-71" facsimile-pages="88-89"/>
+  <keywords>brandes</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2408,10 +2407,10 @@ den gør mig selv saa rig.
 
 <text id="stuckenberg20000924145">
 <head>
-    <title>Nat</title>
-    <firstline>Over de frosne Marker flyver en Storm</firstline>
-    <source pages="71-74" facsimile-pages="89-92"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Nat</title>
+  <firstline>Over de frosne Marker flyver en Storm</firstline>
+  <source pages="71-74" facsimile-pages="89-92"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2510,10 +2509,10 @@ Og da er du frelst.
 
 <text id="stuckenberg20000924146">
 <head>
-    <title>Sommermod</title>
-    <firstline>Og har jeg bejlet iblandt til din Gunst</firstline>
-    <source pages="75-76" facsimile-pages="93-94"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Sommermod</title>
+  <firstline>Og har jeg bejlet iblandt til din Gunst</firstline>
+  <source pages="75-76" facsimile-pages="93-94"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2567,10 +2566,10 @@ og Hjærtet kvides i Kulde.
 
 <text id="stuckenberg20000924147">
 <head>
-    <title>Sommer</title>
-    <firstline>Brændenælderne dufter</firstline>
-    <source pages="76-77" facsimile-pages="94-95"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Sommer</title>
+  <firstline>Brændenælderne dufter</firstline>
+  <source pages="76-77" facsimile-pages="94-95"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2605,12 +2604,12 @@ hver Jasminblomst er din hvide Kjole,
 
 <text id="stuckenberg20000924148">
 <head>
-    <title>En Ting ved jeg sikker</title>
-    <toctitle>En Ting ved jeg sikker</toctitle>
-    <indextitle>En Ting ved jeg sikker</indextitle>
-    <firstline>En Ting ved jeg sikker!</firstline>
-    <source pages="77-78" facsimile-pages="95-96"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>En Ting ved jeg sikker</title>
+  <toctitle>En Ting ved jeg sikker</toctitle>
+  <indextitle>En Ting ved jeg sikker</indextitle>
+  <firstline>En Ting ved jeg sikker!</firstline>
+  <source pages="77-78" facsimile-pages="95-96"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2629,10 +2628,10 @@ den Mønt, som sidst blev vendt.
 
 <text id="stuckenberg20000924149">
 <head>
-    <title>Grave Guld</title>
-    <firstline>Grave Guld</firstline>
-    <source pages="78-79" facsimile-pages="96-97"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Grave Guld</title>
+  <firstline>Grave Guld</firstline>
+  <source pages="78-79" facsimile-pages="96-97"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2678,10 +2677,10 @@ som kan bide gennem Sten,
 
 <text id="stuckenberg20000924150">
 <head>
-    <title>Hvad er det vel, der kævles om</title>
-    <firstline>Hvad er det vel, der kævles om?</firstline>
-    <source pages="79-80" facsimile-pages="97-98"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Hvad er det vel, der kævles om</title>
+  <firstline>Hvad er det vel, der kævles om?</firstline>
+  <source pages="79-80" facsimile-pages="97-98"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2715,10 +2714,10 @@ de taler begge evig sandt.
 
 <text id="stuckenberg20000924151">
 <head>
-    <title>Krager</title>
-    <firstline>Der flyver omkring mit Hus en Flok Krager</firstline>
-    <source pages="80-81" facsimile-pages="98-99"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Krager</title>
+  <firstline>Der flyver omkring mit Hus en Flok Krager</firstline>
+  <source pages="80-81" facsimile-pages="98-99"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2763,12 +2762,12 @@ Gud Herren, der blot har behov at befale
 
 <text id="stuckenberg20000924152">
 <head>
-    <title>Tre Kærlinger fløj til Bloksbjærg</title>
-    <toctitle>Tre Kærlinger fløj til Bloksbjærg</toctitle>
-    <indextitle>Tre Kærlinger fløj til Bloksbjærg</indextitle>
-    <firstline>Tre Kærlinger fløj til Bloksbjærg en Nat</firstline>
-    <source pages="82-83" facsimile-pages="100-101"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Tre Kærlinger fløj til Bloksbjærg</title>
+  <toctitle>Tre Kærlinger fløj til Bloksbjærg</toctitle>
+  <indextitle>Tre Kærlinger fløj til Bloksbjærg</indextitle>
+  <firstline>Tre Kærlinger fløj til Bloksbjærg en Nat</firstline>
+  <source pages="82-83" facsimile-pages="100-101"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2807,12 +2806,12 @@ maa falde og tappe vort Blod paa de Sten.
 
 <text id="stuckenberg20000924153">
 <head>
-    <title>Snetinder</title>
-    <toctitle>Snetinder</toctitle>
-    <indextitle>Snetinder</indextitle>
-    <firstline>Jeg mindes Jotunfjældenes snehvide Vanvid</firstline>
-    <source pages="83-84" facsimile-pages="101-102"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Snetinder</title>
+  <toctitle>Snetinder</toctitle>
+  <indextitle>Snetinder</indextitle>
+  <firstline>Jeg mindes Jotunfjældenes snehvide Vanvid</firstline>
+  <source pages="83-84" facsimile-pages="101-102"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2848,12 +2847,12 @@ Ak, de blændende Fjældtinders snehvide Vanvid!
 
 <text id="stuckenberg20000924154">
 <head>
-    <title>Vinteraften</title>
-    <toctitle>Vinteraften</toctitle>
-    <indextitle>Vinteraften</indextitle>
-    <firstline>Først en Skov af sorte Stammer</firstline>
-    <source pages="84-85" facsimile-pages="102-103"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Vinteraften</title>
+  <toctitle>Vinteraften</toctitle>
+  <indextitle>Vinteraften</indextitle>
+  <firstline>Først en Skov af sorte Stammer</firstline>
+  <source pages="84-85" facsimile-pages="102-103"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2889,10 +2888,10 @@ hvad du vil, skal frostklart lykkes!
 
 <text id="stuckenberg20000924155">
 <head>
-    <title>Giv mig Lysets Klinge</title>
-    <firstline>Giv mig Lysets Klinge</firstline>
-    <source pages="85-86" facsimile-pages="103-104"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Giv mig Lysets Klinge</title>
+  <firstline>Giv mig Lysets Klinge</firstline>
+  <source pages="85-86" facsimile-pages="103-104"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2921,10 +2920,10 @@ over Længslen kun!
 
 <text id="stuckenberg20000924156">
 <head>
-    <title>Jeg strider ej med Spot</title>
-    <firstline>Jeg strider ej med Spot og Trods</firstline>
-    <source pages="86" facsimile-pages="104"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Jeg strider ej med Spot</title>
+  <firstline>Jeg strider ej med Spot og Trods</firstline>
+  <source pages="86" facsimile-pages="104"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2948,10 +2947,10 @@ af Lykkens rige Klædebon!
 
 <text id="stuckenberg20000924157">
 <head>
-    <title>En Morgen var din Grav</title>
-    <firstline>En Morgen var din Grav</firstline>
-    <source pages="87" facsimile-pages="105"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>En Morgen var din Grav</title>
+  <firstline>En Morgen var din Grav</firstline>
+  <source pages="87" facsimile-pages="105"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2978,10 +2977,10 @@ din Aand!
 
 <text id="stuckenberg20000924158">
 <head>
-    <title>Kun ét jeg ved</title>
-    <firstline>Kun ét jeg ved i denne brune Ørk</firstline>
-    <source pages="87-88" facsimile-pages="105-106"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Kun ét jeg ved</title>
+  <firstline>Kun ét jeg ved i denne brune Ørk</firstline>
+  <source pages="87-88" facsimile-pages="105-106"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3020,12 +3019,12 @@ og hører Skoven sukke under Taagen.
 
 <text id="stuckenberg20000924159">
 <head>
-    <title>Martssol</title>
-    <toctitle>Martssol</toctitle>
-    <indextitle>Martssol</indextitle>
-    <firstline>Jeg rejste mig fra Sengen, da Nabohanen gol</firstline>
-    <source pages="89" facsimile-pages="107"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Martssol</title>
+  <toctitle>Martssol</toctitle>
+  <indextitle>Martssol</indextitle>
+  <firstline>Jeg rejste mig fra Sengen, da Nabohanen gol</firstline>
+  <source pages="89" facsimile-pages="107"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3046,12 +3045,12 @@ stod Foraarsmorgnens luende, ungdomsødsle Sol.
 
 <text id="stuckenberg20000924160">
 <head>
-    <title>Aprilgrøde</title>
-    <toctitle>Aprilgrøde</toctitle>
-    <indextitle>Aprilgrøde</indextitle>
-    <firstline>Jeg saa det, hvor jeg mig vendte</firstline>
-    <source pages="89-90" facsimile-pages="107-108"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Aprilgrøde</title>
+  <toctitle>Aprilgrøde</toctitle>
+  <indextitle>Aprilgrøde</indextitle>
+  <firstline>Jeg saa det, hvor jeg mig vendte</firstline>
+  <source pages="89-90" facsimile-pages="107-108"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3080,12 +3079,12 @@ som ikke løstes i Glæde.
 
 <text id="stuckenberg20000924161">
 <head>
-    <title>Vinter</title>
-    <toctitle>Vinter</toctitle>
-    <indextitle>Vinter</indextitle>
-    <firstline>Hvor Vejen løber for Bakkens Fod</firstline>
-    <source pages="90-92" facsimile-pages="108-110"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Vinter</title>
+  <toctitle>Vinter</toctitle>
+  <indextitle>Vinter</indextitle>
+  <firstline>Hvor Vejen løber for Bakkens Fod</firstline>
+  <source pages="90-92" facsimile-pages="108-110"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3168,10 +3167,10 @@ hvert Skovbryn suser som den sidste Sluse!
 
 <text id="stuckenberg20000924162">
 <head>
-    <title>Sct. Hansvers</title>
-    <firstline>Der dufter Urt, der dufter Muld!</firstline>
-    <source pages="93-96" facsimile-pages="111-114"/>
-<quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Sct. Hansvers</title>
+  <firstline>Der dufter Urt, der dufter Muld!</firstline>
+  <source pages="93-96" facsimile-pages="111-114"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3294,10 +3293,10 @@ jeg tror paa din Æventyrlykke.
 
 <text id="stuckenberg20000924163">
 <head>
-    <title>Resultater</title>
-    <firstline>Jeg er ked af at sværge til Faner</firstline>
-    <source pages="97-98" facsimile-pages="115-116"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Resultater</title>
+  <firstline>Jeg er ked af at sværge til Faner</firstline>
+  <source pages="97-98" facsimile-pages="115-116"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3336,10 +3335,10 @@ sin Krybbe med tamme Kameler!
 
 <text id="stuckenberg20000924164">
 <head>
-    <title>Caracalla</title>
-    <firstline>Min Nat er søvnløs</firstline>
-    <source pages="98-101" facsimile-pages="116-119"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Caracalla</title>
+  <firstline>Min Nat er søvnløs</firstline>
+  <source pages="98-101" facsimile-pages="116-119"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3438,14 +3437,14 @@ Verden jeg slæbe.
 
 <text id="stuckenberg20000924165">
 <head>
-    <title>J. P. E. Hartmann</title>
-    <subtitle>Ved Hundred Aars Festen paa det kgl. Teater.</subtitle>
-    <firstline>Hartmann! - var det dig, som hvisked!</firstline>
-    <source pages="101-104" facsimile-pages="119-122"/>
-    <notes>
-        <note>Komponisten J.P.E. Hartmann (1805-1900).</note>
-    </notes>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>J. P. E. Hartmann</title>
+  <subtitle>Ved Hundred Aars Festen paa det kgl. Teater.</subtitle>
+  <firstline>Hartmann! - var det dig, som hvisked!</firstline>
+  <source pages="101-104" facsimile-pages="119-122"/>
+  <notes>
+    <note>Komponisten J.P.E. Hartmann (1805-1900).</note>
+  </notes>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3539,12 +3538,12 @@ over Danmarks Enge gaar!
 
 <text id="stuckenberg20000924166">
 <head>
-    <title>Tidligt Foraar</title>
-    <toctitle>Tidligt Foraar</toctitle>
-    <indextitle>Tidligt Foraar</indextitle>
-    <firstline>Nu hvirvler Skovens Bronzeløv</firstline>
-    <source pages="104-105" facsimile-pages="122-123"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Tidligt Foraar</title>
+  <toctitle>Tidligt Foraar</toctitle>
+  <indextitle>Tidligt Foraar</indextitle>
+  <firstline>Nu hvirvler Skovens Bronzeløv</firstline>
+  <source pages="104-105" facsimile-pages="122-123"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3595,12 +3594,12 @@ et Kuld af Nattergale!
 
 <text id="stuckenberg20000924167">
 <head>
-    <title>Esbjerg</title>
-    <toctitle>Esbjerg</toctitle>
-    <indextitle>Esbjerg</indextitle>
-    <firstline>Esbjerg, Lykken, Æventyret</firstline>
-    <source pages="106-107" facsimile-pages="124-125"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Esbjerg</title>
+  <toctitle>Esbjerg</toctitle>
+  <indextitle>Esbjerg</indextitle>
+  <firstline>Esbjerg, Lykken, Æventyret</firstline>
+  <source pages="106-107" facsimile-pages="124-125"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3654,10 +3653,10 @@ tving os, bind os Sandet.
 
 <text id="stuckenberg20000924168A">
 <head>
-    <title>Atlas</title>
-    <firstline>Jeg er saa træt</firstline>
-    <source pages="107-114" facsimile-pages="125-132"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Atlas</title>
+  <firstline>Jeg er saa træt</firstline>
+  <source pages="107-114" facsimile-pages="125-132"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3862,10 +3861,10 @@ al min Ungdom kun, som led.
 
 <text id="stuckenberg20000924169">
 <head>
-    <title>Narrevise</title>
-    <firstline>Tre Pigebørn har elsket mig</firstline>
-    <source pages="114-116" facsimile-pages="132-134"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Narrevise</title>
+  <firstline>Tre Pigebørn har elsket mig</firstline>
+  <source pages="114-116" facsimile-pages="132-134"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3930,10 +3929,10 @@ hvorpaa man mig kan kende!
 
 <text id="stuckenberg20000924170">
 <head>
-    <title>Finland</title>
-    <firstline>Tavse Graner, sorte Nætter</firstline>
-    <source pages="116" facsimile-pages="134"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Finland</title>
+  <firstline>Tavse Graner, sorte Nætter</firstline>
+  <source pages="116" facsimile-pages="134"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3950,12 +3949,12 @@ og fra fuglefyldte Strande
 
 <text id="stuckenberg20000924171">
 <head>
-    <title>Kun saaledes</title>
-    <toctitle>Kun saaledes</toctitle>
-    <indextitle>Kun saaledes</indextitle>
-    <firstline>Mon nogen har levet, som bar til det sidste</firstline>
-    <source pages="116-121" facsimile-pages="134-139"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Kun saaledes</title>
+  <toctitle>Kun saaledes</toctitle>
+  <indextitle>Kun saaledes</indextitle>
+  <firstline>Mon nogen har levet, som bar til det sidste</firstline>
+  <source pages="116-121" facsimile-pages="134-139"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4089,12 +4088,12 @@ Og som kun har Værdi for dig.
 
 <text id="stuckenberg20000924172">
 <head>
-    <title>Til min Gudsøn</title>
-    <toctitle>Til min Gudsøn</toctitle>
-    <indextitle>Til min Gudsøn</indextitle>
-    <firstline>Min lille Dreng, du lyse Æbleblomst</firstline>
-    <source pages="121-122" facsimile-pages="139-140"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Til min Gudsøn</title>
+  <toctitle>Til min Gudsøn</toctitle>
+  <indextitle>Til min Gudsøn</indextitle>
+  <firstline>Min lille Dreng, du lyse Æbleblomst</firstline>
+  <source pages="121-122" facsimile-pages="139-140"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4133,10 +4132,10 @@ og aande paa dit Hjærte, til det slaar
 
 <text id="stuckenberg20000924173">
 <head>
-    <title>Ved Aarhundred-Skiftet Nytaarsnat 1900-1901</title>
-    <firstline>Solen sank, og Solen stiger</firstline>
-    <source pages="122-124" facsimile-pages="140-142"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Ved Aarhundred-Skiftet Nytaarsnat 1900-1901</title>
+  <firstline>Solen sank, og Solen stiger</firstline>
+  <source pages="122-124" facsimile-pages="140-142"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4212,12 +4211,12 @@ Stolthed, Storhed, Lykken!
 
 <text id="stuckenberg20000924174">
 <head>
-    <title>Drag ud</title>
-    <toctitle>Drag ud</toctitle>
-    <indextitle>Drag ud</indextitle>
-    <firstline>Nu rider Efteraaret ind</firstline>
-    <source pages="125" facsimile-pages="143"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Drag ud</title>
+  <toctitle>Drag ud</toctitle>
+  <indextitle>Drag ud</indextitle>
+  <firstline>Nu rider Efteraaret ind</firstline>
+  <source pages="125" facsimile-pages="143"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4247,12 +4246,12 @@ jeg tror paa det, som kommer!
 
 <text id="stuckenberg20000924175">
 <head>
-    <title>Den, som har levet</title>
-    <toctitle>Den, som har levet</toctitle>
-    <indextitle>Den, som har levet</indextitle>
-    <firstline>Den, som har levet en Dag i Sorg</firstline>
-    <source pages="126" facsimile-pages="144"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Den, som har levet</title>
+  <toctitle>Den, som har levet</toctitle>
+  <indextitle>Den, som har levet</indextitle>
+  <firstline>Den, som har levet en Dag i Sorg</firstline>
+  <source pages="126" facsimile-pages="144"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4281,13 +4280,13 @@ alene Savnet og Sorgen.
 
 <text id="stuckenberg20000924176A">
 <head>
-    <title>Efteraar</title>
-    <firstline>Nu ligger Markerne øde</firstline>
-    <source pages="127-133" facsimile-pages="145-153"/>
-    <notes>
-        <note>Kilden har fejlagtigt to afsnit »III« hvilket her er korrigeret.</note>
-    </notes>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Efteraar</title>
+  <firstline>Nu ligger Markerne øde</firstline>
+  <source pages="127-133" facsimile-pages="145-153"/>
+  <notes>
+    <note>Kilden har fejlagtigt to afsnit »III« hvilket her er korrigeret.</note>
+  </notes>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4502,16 +4501,16 @@ det blev dog dig selv - alene.
 
 <section level="1">
 <head>
-    <toctitle>Digte fra Paris</toctitle>
+  <toctitle>Digte fra Paris</toctitle>
 </head>
 <content>
 
 <text id="stuckenberg20000924177A">
 <head>
-    <title>Seinen</title>
-    <firstline>Jeg staar hver Morgen ved Pont neuf og ser</firstline>
-    <source pages="134-135" facsimile-pages="152-153"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Seinen</title>
+  <firstline>Jeg staar hver Morgen ved Pont neuf og ser</firstline>
+  <source pages="134-135" facsimile-pages="152-153"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4555,10 +4554,10 @@ og nynner sine morgenstærke Sange.
 
 <text id="stuckenberg20000924177B">
 <head>
-    <title>Paris</title>
-    <firstline>Jeg gaar og gaar</firstline>
-    <source pages="135-136" facsimile-pages="153-154"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Paris</title>
+  <firstline>Jeg gaar og gaar</firstline>
+  <source pages="135-136" facsimile-pages="153-154"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4597,12 +4596,12 @@ hvor Solen som et Væld af Kærtegn glider
 
 <text id="stuckenberg20000924177C">
 <head>
-    <title>Aften i Luxembourg-haven</title>
-    <toctitle>Aften i Luxembourg-haven</toctitle>
-    <indextitle>Aften i Luxembourg-haven</indextitle>
-    <firstline>Hen under Himlen aftengraa Skyer</firstline>
-    <source pages="136-137" facsimile-pages="154-155"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Aften i Luxembourg-haven</title>
+  <toctitle>Aften i Luxembourg-haven</toctitle>
+  <indextitle>Aften i Luxembourg-haven</indextitle>
+  <firstline>Hen under Himlen aftengraa Skyer</firstline>
+  <source pages="136-137" facsimile-pages="154-155"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4646,10 +4645,10 @@ Og al min Længsel mig fylder vildt,
 
 <text id="stuckenberg20000924177D">
 <head>
-    <title>Hvad er den hele Jord -</title>
-    <firstline>Hvad er den hele Jord mig værd</firstline>
-    <source pages="138" facsimile-pages="156"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Hvad er den hele Jord -</title>
+  <firstline>Hvad er den hele Jord mig værd</firstline>
+  <source pages="138" facsimile-pages="156"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4683,13 +4682,13 @@ og vandt dig Lykken for hvert Skridt,
 
 <text id="stuckenberg20000924177E">
 <head>
-    <title>Venus fra Milo</title>
-    <toctitle>Venus fra Milo</toctitle>
-    <indextitle>Venus fra Milo</indextitle>
-    <firstline>Der er graat og mørkt paa Louvre</firstline>
-    <source pages="139-146" facsimile-pages="157-164"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
-    <!-- TODO: Vis statuen -->
+  <title>Venus fra Milo</title>
+  <toctitle>Venus fra Milo</toctitle>
+  <indextitle>Venus fra Milo</indextitle>
+  <firstline>Der er graat og mørkt paa Louvre</firstline>
+  <source pages="139-146" facsimile-pages="157-164"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+  <!-- TODO: Vis statuen -->
 </head>
 <body>
 <poetry>
@@ -4932,11 +4931,11 @@ du dryppende Regndags Minde,
 
 <text id="stuckenberg20000924178A">
 <head>
-    <title>Florentz</title>
-    <firstline>Nu synker Solen bag violblaa Banker</firstline>
-    <source pages="147-149" facsimile-pages="165-167"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
-    <keywords>sonnet</keywords>
+  <title>Florentz</title>
+  <firstline>Nu synker Solen bag violblaa Banker</firstline>
+  <source pages="147-149" facsimile-pages="165-167"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -5021,10 +5020,10 @@ lad det, som hedest jeg tænker paa,
 
 <text id="stuckenberg20000924179">
 <head>
-    <title>Syn</title>
-    <firstline>Jeg ser igennem den duggede Rude</firstline>
-    <source pages="149-150" facsimile-pages="167-168"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Syn</title>
+  <firstline>Jeg ser igennem den duggede Rude</firstline>
+  <source pages="149-150" facsimile-pages="167-168"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5078,12 +5077,12 @@ begge vi bytted kun Fattigdom.
 
 <text id="stuckenberg20000924180">
 <head>
-    <title>Islemark</title>
-    <toctitle>Islemark</toctitle>
-    <indextitle>Islemark</indextitle>
-    <firstline>Jeg gaar ved Dag derude</firstline>
-    <source pages="151-153" facsimile-pages="169-171"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Islemark</title>
+  <toctitle>Islemark</toctitle>
+  <indextitle>Islemark</indextitle>
+  <firstline>Jeg gaar ved Dag derude</firstline>
+  <source pages="151-153" facsimile-pages="169-171"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5157,10 +5156,10 @@ slaar Blodets Blus min Kind.
 
 <text id="stuckenberg20000924181">
 <head>
-    <title>Slotsherrens Bro</title>
-    <firstline>Jeg staar paa Brøndshøj Bakke den første Foraardag</firstline>
-    <source pages="154" facsimile-pages="172"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Slotsherrens Bro</title>
+  <firstline>Jeg staar paa Brøndshøj Bakke den første Foraardag</firstline>
+  <source pages="154" facsimile-pages="172"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5189,13 +5188,13 @@ de Enge er saa brede, din Bro den er saa trang,
 
 <text id="stuckenberg20000924182">
 <head>
-    <title>David</title>
-    <firstline>Herre!</firstline>
-    <source pages="154-157" facsimile-pages="172-175"/>
-    <notes>
-        <note>Cf. <xref bibel="bibel2samuel19"/>.</note>
-    </notes>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>David</title>
+  <firstline>Herre!</firstline>
+  <source pages="154-157" facsimile-pages="172-175"/>
+  <notes>
+    <note>Cf. <xref bible="bibel2samuel19"/>.</note>
+  </notes>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5296,11 +5295,11 @@ Absalon, min Søn!
 
 <text id="stuckenberg20000924183">
 <head>
-    <title>Assistents Kirkegaard</title>
-    <firstline>Naar det suser i de nøgne Grene</firstline>
-    <source pages="158-159" facsimile-pages="176-177"/>
-    <keywords>storm,moellerpm,rask,boedtcher</keywords>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Assistents Kirkegaard</title>
+  <firstline>Naar det suser i de nøgne Grene</firstline>
+  <source pages="158-159" facsimile-pages="176-177"/>
+  <keywords>storm,moellerpm,rask,boedtcher</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5354,12 +5353,12 @@ Og jeg møder, hver Gang her jeg træder,
 
 <text id="stuckenberg20000924184">
 <head>
-    <title>Vestre Kirkegaard</title>
-    <toctitle>Vestre Kirkegaard</toctitle>
-    <indextitle>Vestre Kirkegaard</indextitle>
-    <firstline>Her, hvor Tusinder af døde lagdes ned</firstline>
-    <source pages="159-160" facsimile-pages="177-178"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Vestre Kirkegaard</title>
+  <toctitle>Vestre Kirkegaard</toctitle>
+  <indextitle>Vestre Kirkegaard</indextitle>
+  <firstline>Her, hvor Tusinder af døde lagdes ned</firstline>
+  <source pages="159-160" facsimile-pages="177-178"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5416,16 +5415,16 @@ under Tue - aldrig Vaars og Vinters Vælde;
 
 <section level="1">
 <head>
-    <toctitle>Kærlighedsdigte</toctitle>
+  <toctitle>Kærlighedsdigte</toctitle>
 </head>
 <content>
 
 <text id="stuckenberg20000924185A">
 <head>
-    <title><num>I.</num>Barn, du er mig som den store Skov</title>
-    <firstline>Barn, du er mig som den store Skov</firstline>
-    <source pages="161-162" facsimile-pages="179-180"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title><num>I.</num>Barn, du er mig som den store Skov</title>
+  <firstline>Barn, du er mig som den store Skov</firstline>
+  <source pages="161-162" facsimile-pages="179-180"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5454,10 +5453,10 @@ det er, som om Somren aldrig ender.
 
 <text id="stuckenberg20000924185B">
 <head>
-    <title><num>II.</num>Du kommer som et Syn</title>
-    <firstline>Du kommer som et Syn</firstline>
-    <source pages="162-163" facsimile-pages="180-181"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title><num>II.</num>Du kommer som et Syn</title>
+  <firstline>Du kommer som et Syn</firstline>
+  <source pages="162-163" facsimile-pages="180-181"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5502,11 +5501,11 @@ da skal for Gud
 
 <text id="stuckenberg20000924185C">
 <head>
-    <title><num>III.</num>Før jubled Nattergale, hvor vi gik</title>
-    <firstline>Før jubled Nattergale, hvor vi gik</firstline>
-    <source pages="163-164" facsimile-pages="181-182"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
-    <keywords>sonnet</keywords>
+  <title><num>III.</num>Før jubled Nattergale, hvor vi gik</title>
+  <firstline>Før jubled Nattergale, hvor vi gik</firstline>
+  <source pages="163-164" facsimile-pages="181-182"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -5533,11 +5532,11 @@ om saa vi aldrig skulde mødes mer.
 
 <text id="stuckenberg20000924185D">
 <head>
-    <title><num>IV.</num>Jeg kom til dig med alle mine Klager</title>
-    <firstline>Jeg kom til dig med alle mine Klager</firstline>
-    <source pages="164-165" facsimile-pages="182-183"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
-    <keywords>sonnet</keywords>
+  <title><num>IV.</num>Jeg kom til dig med alle mine Klager</title>
+  <firstline>Jeg kom til dig med alle mine Klager</firstline>
+  <source pages="164-165" facsimile-pages="182-183"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+  <keywords>sonnet</keywords>
 </head>
 <body>
 <poetry>
@@ -5564,10 +5563,10 @@ hvor i dit Solskær jeg tør leve Livet.
 
 <text id="stuckenberg20000924185E">
 <head>
-    <title><num>V.</num>Jeg tænker ej paa dem, som har det bedre</title>
-    <firstline>Jeg tænker ej paa dem, som har det bedre</firstline>
-    <source pages="165" facsimile-pages="183"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title><num>V.</num>Jeg tænker ej paa dem, som har det bedre</title>
+  <firstline>Jeg tænker ej paa dem, som har det bedre</firstline>
+  <source pages="165" facsimile-pages="183"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5591,10 +5590,10 @@ glid lykkelig ind i din Lykkes Havn,
 
 <text id="stuckenberg20000924185F">
 <head>
-    <title><num>VI.</num>Om jeg gav dig denne Sol</title>
-    <firstline>Om jeg gav dig denne Sol</firstline>
-    <source pages="165-166" facsimile-pages="183-184"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title><num>VI.</num>Om jeg gav dig denne Sol</title>
+  <firstline>Om jeg gav dig denne Sol</firstline>
+  <source pages="165-166" facsimile-pages="183-184"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5623,10 +5622,10 @@ ene <i>du</i> dens Morgenpragt
 
 <text id="stuckenberg20000924185G">
 <head>
-    <title><num>VII.</num>Der pipper en Rødkjælk</title>
-    <firstline>Der pipper en Rødkjælk</firstline>
-    <source pages="166" facsimile-pages="184"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title><num>VII.</num>Der pipper en Rødkjælk</title>
+  <firstline>Der pipper en Rødkjælk</firstline>
+  <source pages="166" facsimile-pages="184"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5645,10 +5644,10 @@ Lad Rødkjælken pippe
 
 <text id="stuckenberg20000924185H">
 <head>
-    <title><num>VIII.</num>Se, Elskov lyver</title>
-    <firstline>Se, Elskov lyver</firstline>
-    <source pages="167" facsimile-pages="185"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title><num>VIII.</num>Se, Elskov lyver</title>
+  <firstline>Se, Elskov lyver</firstline>
+  <source pages="167" facsimile-pages="185"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5674,21 +5673,22 @@ Lad Elskov rømme
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
 
 <section level="1">
 <head>
-    <toctitle>Frederiksberg</toctitle>
+  <toctitle>Frederiksberg</toctitle>
 </head>
 <content>
 
 <text id="stuckenberg20000924186A">
 <head>
-    <title>Villaveje</title>
-    <firstline>Hvor skønt et Sted ved første Sommertide</firstline>
-    <source pages="167-168" facsimile-pages="185-186"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Villaveje</title>
+  <firstline>Hvor skønt et Sted ved første Sommertide</firstline>
+  <source pages="167-168" facsimile-pages="185-186"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5723,10 +5723,10 @@ og dig til Lise - du, som gaar bedrøvet.
 
 <text id="stuckenberg20000924186B">
 <head>
-    <title>Slottet</title>
-    <firstline>Det var en Morgenstund i Regn og Graat</firstline>
-    <source pages="168-169" facsimile-pages="186-187"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Slottet</title>
+  <firstline>Det var en Morgenstund i Regn og Graat</firstline>
+  <source pages="168-169" facsimile-pages="186-187"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5760,10 +5760,10 @@ et Syn, der fik mit Hjærte til at smile.
 
 <text id="stuckenberg20000924186C">
 <head>
-    <title>Haven</title>
-    <firstline>Min Dør staar aaben. Det er imod Morgen</firstline>
-    <source pages="169-171" facsimile-pages="187-189"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Haven</title>
+  <firstline>Min Dør staar aaben. Det er imod Morgen</firstline>
+  <source pages="169-171" facsimile-pages="187-189"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5818,10 +5818,10 @@ saar Nattergalen sine Morgensange.
 
 <text id="stuckenberg20000924186D">
 <head>
-    <title>Aften</title>
-    <firstline>Paa Altanen er der ganske stille</firstline>
-    <source pages="171-172" facsimile-pages="189-190"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Aften</title>
+  <firstline>Paa Altanen er der ganske stille</firstline>
+  <source pages="171-172" facsimile-pages="189-190"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5852,16 +5852,17 @@ kysser den velsignende paa Øjet.
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
 
 <text id="stuckenberg20000924187">
 <head>
-    <title>I Anledning af -</title>
-    <subtitle>Til mine Drenge</subtitle>
-    <firstline>Drenge!</firstline>
-    <source pages="172-173" facsimile-pages="190-191"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>I Anledning af -</title>
+  <subtitle>Til mine Drenge</subtitle>
+  <firstline>Drenge!</firstline>
+  <source pages="172-173" facsimile-pages="190-191"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5912,12 +5913,12 @@ Stodderen i alle Gader,
 
 <text id="stuckenberg20000924188">
 <head>
-    <title>Haandværket</title>
-    <toctitle>Haandværket</toctitle>
-    <indextitle>Haandværket</indextitle>
-    <firstline>Der var en Tid, da hvert et Vand</firstline>
-    <source pages="174-175" facsimile-pages="192-193"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Haandværket</title>
+  <toctitle>Haandværket</toctitle>
+  <indextitle>Haandværket</indextitle>
+  <firstline>Der var en Tid, da hvert et Vand</firstline>
+  <source pages="174-175" facsimile-pages="192-193"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5975,14 +5976,14 @@ men som bær' <i>dine</i> Minder.
 
 <text id="stuckenberg20000924189">
 <head>
-    <title>Prolog</title>
-    <subtitle>Ved det kgl. Teaters Forestilling paa Bjørnstjerne Bjørnsons 70-aarige Fødselsdag</subtitle>
-    <toctitle>Prolog</toctitle>
-    <indextitle>Prolog</indextitle>
-    <firstline>Du kom - en tindrende Strøm af Sol</firstline>
-    <source pages="175-179" facsimile-pages="193-197"/>
-    <keywords>bjoernson</keywords>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Prolog</title>
+  <subtitle>Ved det kgl. Teaters Forestilling paa Bjørnstjerne Bjørnsons 70-aarige Fødselsdag</subtitle>
+  <toctitle>Prolog</toctitle>
+  <indextitle>Prolog</indextitle>
+  <firstline>Du kom - en tindrende Strøm af Sol</firstline>
+  <source pages="175-179" facsimile-pages="193-197"/>
+  <keywords>bjoernson</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6092,12 +6093,12 @@ du gjaldende Lur for det eviges Mund.
 
 <text id="stuckenberg20000924190">
 <head>
-    <title>Jonas Lie</title>
-    <firstline>Sorgen den er saa stort et Træ</firstline>
-    <source pages="179-180" facsimile-pages="197-198"/>
-    <keywords>lie</keywords>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
-    <!-- TODO: Find og link til mottoet -->
+  <title>Jonas Lie</title>
+  <firstline>Sorgen den er saa stort et Træ</firstline>
+  <source pages="179-180" facsimile-pages="197-198"/>
+  <keywords>lie</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+  <!-- TODO: Find og link til mottoet -->
 </head>
 <body>
 <poetry>
@@ -6156,17 +6157,17 @@ som fandt, at Visens første Vers det var at slaa til Jorden,
 
 <text id="stuckenberg20000924191">
 <head>
-    <title>Prolog</title>
-    <subtitle>Fremsagt af Forfatteren ved Sommerlyst Koncertsals Aabning 29. April 1905</subtitle>
-    <toctitle>Prolog</toctitle>
-    <indextitle>Prolog</indextitle>
-    <firstline>Atter en Vinter er svunden</firstline>
-    <dates>
-        <event>1905-04-29</event>
-    </dates>
-    <source pages="181-184" facsimile-pages="199-202"/>
-    <keywords>oehlenschlaeger</keywords>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Prolog</title>
+  <subtitle>Fremsagt af Forfatteren ved Sommerlyst Koncertsals Aabning 29. April 1905</subtitle>
+  <toctitle>Prolog</toctitle>
+  <indextitle>Prolog</indextitle>
+  <firstline>Atter en Vinter er svunden</firstline>
+  <dates>
+    <event>1905-04-29</event>
+  </dates>
+  <source pages="181-184" facsimile-pages="199-202"/>
+  <keywords>oehlenschlaeger</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6261,10 +6262,10 @@ Der er saa mangt som Livet slaar i Stykker,
 
 <text id="stuckenberg20000924192">
 <head>
-    <title>Clara</title>
-    <firstline>Naar jeg ser paa dig - hvor hvid du staar</firstline>
-    <source pages="184-185" facsimile-pages="202-203"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Clara</title>
+  <firstline>Naar jeg ser paa dig - hvor hvid du staar</firstline>
+  <source pages="184-185" facsimile-pages="202-203"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6308,10 +6309,10 @@ aabent mig til dig for evigt lænker
 
 <text id="stuckenberg20000924193">
 <head>
-    <title>Aldrig glemmer jeg</title>
-    <firstline>Aldrig glemmer jeg den Morgenstund</firstline>
-    <source pages="185-186" facsimile-pages="203-204"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Aldrig glemmer jeg</title>
+  <firstline>Aldrig glemmer jeg den Morgenstund</firstline>
+  <source pages="185-186" facsimile-pages="203-204"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6341,10 +6342,10 @@ den har dig din fine Rødme skænket.
 
 <text id="stuckenberg20000924194">
 <head>
-    <title>Fontænen</title>
-    <firstline>Jeg saa den lyse Springvandsstraale stige</firstline>
-    <source pages="186" facsimile-pages="204"/>
-    <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Fontænen</title>
+  <firstline>Jeg saa den lyse Springvandsstraale stige</firstline>
+  <source pages="186" facsimile-pages="204"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6363,10 +6364,10 @@ og sænker tyst sin Dug om al min Færd.
 
 <text id="stuckenberg20000924195">
 <head>
-    <title>Bajazet</title>
-    <firstline>Gaa lidt til Side, gode Folk</firstline>
-    <source pages="187-191" facsimile-pages="205-209"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Bajazet</title>
+  <firstline>Gaa lidt til Side, gode Folk</firstline>
+  <source pages="187-191" facsimile-pages="205-209"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6513,10 +6514,10 @@ Jeg sidder her, til mine Dage ender.
 
 <text id="stuckenberg20000924196">
 <head>
-    <title>Erantis</title>
-    <firstline>Nu er det Foraar - løb, min Dreng</firstline>
-    <source pages="192-194" facsimile-pages="210-212"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Erantis</title>
+  <firstline>Nu er det Foraar - løb, min Dreng</firstline>
+  <source pages="192-194" facsimile-pages="210-212"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6586,10 +6587,10 @@ i lykkelig Uvidenhed,
 
 <text id="stuckenberg20000924197">
 <head>
-    <title>Polenzthal</title>
-    <firstline>Det var i Fjor ved Løvfaldstid</firstline>
-    <source pages="194-195" facsimile-pages="212-213"/>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Polenzthal</title>
+  <firstline>Det var i Fjor ved Løvfaldstid</firstline>
+  <source pages="194-195" facsimile-pages="212-213"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6628,13 +6629,13 @@ saa skovfjærnt som fra Paradis -
 
 <text id="stuckenberg20000924198">
 <head>
-    <title>Morgen paa Hospitalet</title>
-    <firstline>Himlen er saa høj derude</firstline>
-    <source pages="195-196" facsimile-pages="213-214"/>
-    <dates>
-        <written>1905-11-06</written>
-    </dates>
-    <quality>korrektur1,kilde,side</quality>
+  <title>Morgen paa Hospitalet</title>
+  <firstline>Himlen er saa høj derude</firstline>
+  <source pages="195-196" facsimile-pages="213-214"/>
+  <dates>
+    <written>1905-11-06</written>
+  </dates>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6667,5 +6668,6 @@ end den gyldne Himmel smile.
 </poetry>
 </body>
 </text>
+
 </workbody>
 </kalliopework>

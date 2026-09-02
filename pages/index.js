@@ -101,7 +101,6 @@ const News = ({ news }) => {
   const lang = useContext(LangContext);
 
   const items = news
-    .filter((_, i) => i < 5)
     .map((item, i) => {
       const { date, content_html, content_lang } = item;
       return (
@@ -174,17 +173,19 @@ let Index = (props) => {
       menuItems={kalliopeMenu()}
       selectedMenuItem="index"
       paging={paging}>
-      <PageLead>
-        {_(
-          'Kalliope er et digitalt bibliotek for poesi og klassisk litteratur. Her finder du digte, oversættelser, forfatterbiografier og litterære noter, frit tilgængeligt og forbundet gennem personer, værker, steder og historiske perioder.',
-          lang
-        )}
-      </PageLead>
-      <SidebarSplit sidebar={sidebar}>
-        <div>
-          <News news={news} lang={lang} />
-        </div>
-      </SidebarSplit>
+      <div className="front-page">
+        <PageLead>
+          {_(
+            'Kalliope er et digitalt bibliotek for poesi og klassisk litteratur. Her finder du digte, oversættelser, forfatterbiografier og litterære noter, frit tilgængeligt og forbundet gennem personer, værker, steder og historiske perioder.',
+            lang
+          )}
+        </PageLead>
+        <SidebarSplit sidebar={sidebar}>
+          <div>
+            <News news={news} lang={lang} />
+          </div>
+        </SidebarSplit>
+      </div>
     </Page>
   );
 };

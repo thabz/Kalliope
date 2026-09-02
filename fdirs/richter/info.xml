@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="richter" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Albert</firstname>
+    <lastname>Richter</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1837-04-16</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1899-03-04</date>
+    </dead>
+  </period>
+  <literary-periods>dk-det-moderne-gennembrud</literary-periods>
+  <identifiers>
+    <wikidata>Q137020396</wikidata>
+    <viaf>316527124</viaf>
+    <danskforfatterleksikon-dk>RAlbertRichter</danskforfatterleksikon-dk>
+  </identifiers>
+</person>

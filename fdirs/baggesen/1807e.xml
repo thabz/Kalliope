@@ -1,23 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="1807e" author="baggesen" status="incomplete" type="poetry">
 <workhead>
-   <title>Eventyrer og comiske Fortællinger</title>
-   <year>1807</year>
-   <quality>korrektur1</quality>
+  <title>Eventyrer og comiske Fortællinger</title>
+  <year>1807</year>
+  <identifiers>
+    <openlibrary-work>OL45580672W</openlibrary-work>
+  </identifiers>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
 <text id="baggesen2002101604" variant="baggesen2001060801a">
 <head>
-   <title>Poesiens Oprindelse</title>
-   <toctitle>Poesiens Oprindelse</toctitle>
-   <indextitle>Poesiens Oprindelse</indextitle>
-   <firstline>Engang i denne Verdens unge Dage</firstline>
-   <notes>
-      <note type="credits">Bidrag fra Henrik Nielsen.</note>
-      <note>Noterne væsentlig på grundlag af "Jens Baggesens Poetiske Skrifter" (se note til værket).</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title>Poesiens Oprindelse</title>
+  <toctitle>Poesiens Oprindelse</toctitle>
+  <indextitle>Poesiens Oprindelse</indextitle>
+  <firstline>Engang i denne Verdens unge Dage</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Henrik Nielsen.</note>
+    <note>Noterne væsentlig på grundlag af "Jens Baggesens Poetiske Skrifter" (se note til værket).</note>
+  </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -961,15 +964,15 @@ Hvor vilde jeg da vis paa Digter-Krandsen være!
 
 <text id="baggesen200111106">
 <head>
-   <title>Katten, eller Kiærligheds Triumph</title>
-   <toctitle>Katten, eller Kiærligheds Triumph</toctitle>
-   <indextitle>Katten, eller Kiærligheds Triumph</indextitle>
-   <firstline>Endskiønt der intet Land i Verden er</firstline>
-   <notes>
-      <note type="credits">Bidrag fra Svend Olav Andersen.</note>
-   </notes>
-   <keywords>luther,klopstock</keywords>
-   <quality>korrektur1</quality>
+  <title>Katten, eller Kiærligheds Triumph</title>
+  <toctitle>Katten, eller Kiærligheds Triumph</toctitle>
+  <indextitle>Katten, eller Kiærligheds Triumph</indextitle>
+  <firstline>Endskiønt der intet Land i Verden er</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <keywords>luther,klopstock</keywords>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1049,7 +1052,7 @@ Og modløs lod jeg ligge, hvad der laae.
     Kun, Elskov! Du kan alting overvinde,
 Din Tryllekraft giør en Orlando gal;
 For Omphale maa selv Alciden spinde;
-En Dalila kan ene Samson binde;<note>Cf. <xref bibel="bibeldommer16"/></note>
+En Dalila kan ene Samson binde;<note>Cf. <xref bible="bibeldommer16"/></note>
 Du tæmmer Kiæmpe, Løve, Grib, og Hval,
 Ja Guder selv. Saturnion nedstiger
 Fra pigeløse Himmel hist og her
@@ -1496,27 +1499,27 @@ Og synge Eventyr om Amor i Triumf.
 
 <section level="3" id="baggesen2020041301" variant="baggesen2018101601">
 <head>
-    <title>Jeppe</title>
-    <subtitle>Et sjællandsk Eventyr i ti Sange</subtitle>
-    <indextitle>Jeppe</indextitle>
-    <linktitle>Jeppe</linktitle>
-    <toctitle>Jeppe - Et sjællandsk Eventyr i ti Sange</toctitle>
+  <title>Jeppe</title>
+  <subtitle>Et sjællandsk Eventyr i ti Sange</subtitle>
+  <indextitle>Jeppe</indextitle>
+  <linktitle>Jeppe</linktitle>
+  <toctitle>Jeppe - Et sjællandsk Eventyr i ti Sange</toctitle>
 </head>
 <content>
 
 <text id="baggesen2001100303" variant="baggesen2002122501">
 <head>
-   <title>Første Sang</title>
-   <firstline>Da følgende Fortælling er saa lang</firstline>
-   <notes>
-      <note>Kilde er Jens Baggesen: <i>Komiske Fortællinger og Æventyr</i>, bd. I, udgivet af E. Rørdam, Wilhelm Priors Hofboghandel, København, 1899.</note>
-      <note type="credits">Bidrag fra Svend Olav Andersen.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Første Sang</title>
+  <firstline>Da følgende Fortælling er saa lang</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <source>Jens Baggesen: <i>Komiske Fortællinger og Æventyr</i>, bd. I, udgivet af E. Rørdam, Wilhelm Priors Hofboghandel, København, 1899.</source>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
-<center><nonum>Indhold</nonum></center>
+<nonum><center>Indhold</center></nonum>
 
     Da følgende Fortælling er saa lang,
         Har man afdelet den i smaa Kapitler,
@@ -1677,18 +1680,18 @@ Af hele dyrebare smukke Kjønnet.
 
 <text id="baggesen2001100304" variant="baggesen2002122502">
 <head>
-   <title>Anden Sang</title>
-   <toctitle>Anden Sang</toctitle>
-   <firstline>Lidt mer om Heltens Tilstand</firstline>
-   <notes>
-      <note>Kilde er Jens Baggesen: <i>Komiske Fortællinger og Æventyr</i>, bd. I, udgivet af E. Rørdam, Wilhelm Priors Hofboghandel, København, 1899.</note>
-      <note type="credits">Bidrag fra Svend Olav Andersen.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Anden Sang</title>
+  <toctitle>Anden Sang</toctitle>
+  <firstline>Lidt mer om Heltens Tilstand</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <source>Jens Baggesen: <i>Komiske Fortællinger og Æventyr</i>, bd. I, udgivet af E. Rørdam, Wilhelm Priors Hofboghandel, København, 1899.</source>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
-<center><nonum>Indhold</nonum></center>
+<nonum><center>Indhold</center></nonum>
 
     Lidt mer om Heltens Tilstand. Et Par Ord
         Om Venskab, og en Pythias blandt Heste;
@@ -1881,18 +1884,18 @@ Der laa vor Jeppe - Grenen knak.
 
 <text id="baggesen2001100305" variant="baggesen2002122601">
 <head>
-   <title>Tredje Sang</title>
-   <toctitle>Tredje Sang</toctitle>
-   <firstline>Skjælv altid, usle, svage Dødelige</firstline>
-   <notes>
-      <note>Kilde er Jens Baggesen: <i>Komiske Fortællinger og Æventyr</i>, bd. I, udgivet af E. Rørdam, Wilhelm Priors Hofboghandel, København, 1899.</note>
-      <note type="credits">Bidrag fra Svend Olav Andersen.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Tredje Sang</title>
+  <toctitle>Tredje Sang</toctitle>
+  <firstline>Skjælv altid, usle, svage Dødelige</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <source>Jens Baggesen: <i>Komiske Fortællinger og Æventyr</i>, bd. I, udgivet af E. Rørdam, Wilhelm Priors Hofboghandel, København, 1899.</source>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
-<center><nonum>Indhold</nonum></center>
+<nonum><center>Indhold</center></nonum>
 
     Skjælv altid, usle, svage Dødelige,
         For i de Ting, den vise Himmel bød
@@ -2092,18 +2095,18 @@ Faar Læseren i næste Sang at vide.
 
 <text id="baggesen2001100306" variant="baggesen2003010701">
 <head>
-   <title>Fjerde Sang</title>
-   <toctitle>Fjerde Sang</toctitle>
-   <firstline>En Herremand og Kudsk fremvise sig</firstline>
-   <notes>
-      <note>Kilde er Jens Baggesen: <i>Komiske Fortællinger og Æventyr</i>, bd. I, udgivet af E. Rørdam, Wilhelm Priors Hofboghandel, København, 1899.</note>
-      <note type="credits">Bidrag fra Svend Olav Andersen.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Fjerde Sang</title>
+  <toctitle>Fjerde Sang</toctitle>
+  <firstline>En Herremand og Kudsk fremvise sig</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <source>Jens Baggesen: <i>Komiske Fortællinger og Æventyr</i>, bd. I, udgivet af E. Rørdam, Wilhelm Priors Hofboghandel, København, 1899.</source>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
-<center><nonum>Indhold</nonum></center>
+<nonum><center>Indhold</center></nonum>
 
     En Herremand og Kudsk fremvise sig;
         Nu Heltens Qval for Alvor først begynder:
@@ -2297,18 +2300,18 @@ Og endelig sov hen, da hun ej kunde mer.
 
 <text id="baggesen2001100307" variant="baggesen2003010801">
 <head>
-   <title>Femte Sang</title>
-   <toctitle>Femte Sang</toctitle>
-   <firstline>Auroras Ankomst gjør en Hoben Vind</firstline>
-   <notes>
-      <note>Kilde er Jens Baggesen: <i>Komiske Fortællinger og Æventyr</i>, bd. I, udgivet af E. Rørdam, Wilhelm Priors Hofboghandel, København, 1899.</note>
-      <note type="credits">Bidrag fra Svend Olav Andersen.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Femte Sang</title>
+  <toctitle>Femte Sang</toctitle>
+  <firstline>Auroras Ankomst gjør en Hoben Vind</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <source>Jens Baggesen: <i>Komiske Fortællinger og Æventyr</i>, bd. I, udgivet af E. Rørdam, Wilhelm Priors Hofboghandel, København, 1899.</source>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
-<center><nonum>Indhold</nonum></center>
+<nonum><center>Indhold</center></nonum>
 
      Auroras Ankomst gjør en Hoben Vind,
          Som man anstændig nok ej kunde sige
@@ -2425,18 +2428,18 @@ Kun Fugle forbeholdt, og Guder, og Poeter.
 
 <text id="baggesen2001100308" variant="baggesen2003011002">
 <head>
-   <title>Sjette Sang</title>
-   <toctitle>Sjette Sang</toctitle>
-   <firstline>Et Billede paa Sejrens stolte Fryd</firstline>
-   <notes>
-      <note>Kilde er Jens Baggesen: <i>Komiske Fortællinger og Æventyr</i>, bd. I, udgivet af E. Rørdam, Wilhelm Priors Hofboghandel, København, 1899.</note>
-      <note type="credits">Bidrag fra Svend Olav Andersen.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Sjette Sang</title>
+  <toctitle>Sjette Sang</toctitle>
+  <firstline>Et Billede paa Sejrens stolte Fryd</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <source>Jens Baggesen: <i>Komiske Fortællinger og Æventyr</i>, bd. I, udgivet af E. Rørdam, Wilhelm Priors Hofboghandel, København, 1899.</source>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
-<center><nonum>Indhold</nonum></center>
+<nonum><center>Indhold</center></nonum>
 
     Et Billede paa Sejrens stolte Fryd;
         Et Sideblik til det, man kalder Lykke;
@@ -2685,18 +2688,18 @@ Men kunde raisonnere, naar det gjeldte.
 
 <text id="baggesen2001100309" variant="baggesen2003011003">
 <head>
-   <title>Syvende Sang</title>
-   <toctitle>Syvende Sang</toctitle>
-   <firstline>Et nyt Spilop, hvoraf man ser med Sorg</firstline>
-   <notes>
-      <note>Kilde er Jens Baggesen: <i>Komiske Fortællinger og Æventyr</i>, bd. I, udgivet af E. Rørdam, Wilhelm Priors Hofboghandel, København, 1899.</note>
-      <note type="credits">Bidrag fra Svend Olav Andersen.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Syvende Sang</title>
+  <toctitle>Syvende Sang</toctitle>
+  <firstline>Et nyt Spilop, hvoraf man ser med Sorg</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <source>Jens Baggesen: <i>Komiske Fortællinger og Æventyr</i>, bd. I, udgivet af E. Rørdam, Wilhelm Priors Hofboghandel, København, 1899.</source>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
-<center><nonum>Indhold</nonum></center>
+<nonum><center>Indhold</center></nonum>
 
     Et nyt Spilop, hvoraf man ser med Sorg
         Hvorledes Satan førte sine Snarer
@@ -2904,18 +2907,18 @@ Og dermed gik han glad fra sin Borgmester væk.
 
 <text id="baggesen2001100310" variant="baggesen2003011101">
 <head>
-   <title>Ottende Sang</title>
-   <toctitle>Ottende Sang</toctitle>
-   <firstline>Vor Helt, trods alle sine tyve Daler</firstline>
-   <notes>
-      <note>Kilde er Jens Baggesen: <i>Komiske Fortællinger og Æventyr</i>, bd. I, udgivet af E. Rørdam, Wilhelm Priors Hofboghandel, København, 1899.</note>
-      <note type="credits">Bidrag fra Svend Olav Andersen.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Ottende Sang</title>
+  <toctitle>Ottende Sang</toctitle>
+  <firstline>Vor Helt, trods alle sine tyve Daler</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <source>Jens Baggesen: <i>Komiske Fortællinger og Æventyr</i>, bd. I, udgivet af E. Rørdam, Wilhelm Priors Hofboghandel, København, 1899.</source>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
-<center><nonum>Indhold</nonum></center>
+<nonum><center>Indhold</center></nonum>
 
     Vor Helt, trods alle sine tyve Daler,
         Fra Kallundborg bekymret rejser væk.
@@ -3108,18 +3111,18 @@ Han for sin Ko - de tyve Daler fik.
 
 <text id="baggesen2001100311" variant="baggesen2003011102">
 <head>
-   <title>Niende Sang</title>
-   <toctitle>Niende Sang</toctitle>
-   <firstline>Man høster ikke altid, hvor man saaede</firstline>
-   <notes>
-      <note>Kilde er Jens Baggesen: <i>Komiske Fortællinger og Æventyr</i>, bd. I, udgivet af E. Rørdam, Wilhelm Priors Hofboghandel, København, 1899.</note>
-      <note type="credits">Bidrag fra Svend Olav Andersen.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Niende Sang</title>
+  <toctitle>Niende Sang</toctitle>
+  <firstline>Man høster ikke altid, hvor man saaede</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <source>Jens Baggesen: <i>Komiske Fortællinger og Æventyr</i>, bd. I, udgivet af E. Rørdam, Wilhelm Priors Hofboghandel, København, 1899.</source>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
-<center><nonum>Indhold</nonum></center>
+<nonum><center>Indhold</center></nonum>
 
     Man høster ikke altid, hvor man saaede,
         Forfatteren opvarter ydmygst her
@@ -3367,18 +3370,18 @@ For at faa fat paa den omtalte Hund.
 
 <text id="baggesen2001100312" variant="baggesen2003011103">
 <head>
-   <title>Tiende Sang</title>
-   <toctitle>Tiende Sang</toctitle>
-   <firstline>Den Læser, som har fulgt mig hidindtil</firstline>
-   <notes>
-      <note>Kilde er Jens Baggesen: <i>Komiske Fortællinger og Æventyr</i>, bd. I, udgivet af E. Rørdam, Wilhelm Priors Hofboghandel, København, 1899.</note>
-      <note type="credits">Bidrag fra Svend Olav Andersen.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Tiende Sang</title>
+  <toctitle>Tiende Sang</toctitle>
+  <firstline>Den Læser, som har fulgt mig hidindtil</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <source>Jens Baggesen: <i>Komiske Fortællinger og Æventyr</i>, bd. I, udgivet af E. Rørdam, Wilhelm Priors Hofboghandel, København, 1899.</source>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
-<center><nonum>Indhold</nonum></center>
+<nonum><center>Indhold</center></nonum>
 
     Den Læser, som har fulgt mig hidindtil,
         Vil, haaber jeg, taalmodigen forsøge,
@@ -3749,20 +3752,21 @@ Og Rosen efter Regn fremblomstrer dobbelt rød.
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
 
 <text id="baggesen2001100313">
 <head>
-   <title>Constance, eller Amors Hævn</title>
-   <toctitle>Constance, eller Amors Hævn</toctitle>
-   <indextitle>Constance, eller Amors Hævn</indextitle>
-   <firstline>Paa Yderdelen bør man ingen tro</firstline>
-   <notes>
-      <note>Kilde er Jens Baggesen: <i>Komiske Fortællinger og Æventyr</i>, bd. I, udgivet af E. Rørdam, Wilhelm Priors Hofboghandel, København, 1899.</note>
-      <note type="credits">Bidrag fra Svend Olav Andersen.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Constance, eller Amors Hævn</title>
+  <toctitle>Constance, eller Amors Hævn</toctitle>
+  <indextitle>Constance, eller Amors Hævn</indextitle>
+  <firstline>Paa Yderdelen bør man ingen tro</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <source>Jens Baggesen: <i>Komiske Fortællinger og Æventyr</i>, bd. I, udgivet af E. Rørdam, Wilhelm Priors Hofboghandel, København, 1899.</source>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -4322,19 +4326,18 @@ Blir Amor vred engang, han grusomt hævner sig!
 </body>
 </text>
 
-
 <text id="baggesen2001102102" variant="baggesen2019080303">
 <head>
-   <title>Kalundborgs Krønike, eller Censurens Oprindelse</title>
-   <toctitle>Kalundborgs Krønike, eller Censurens Oprindelse</toctitle>
-   <indextitle>Kalundborgs Krønike, eller Censurens Oprindelse</indextitle>
-   <firstline>Den hele vide Verden veed</firstline>
-   <notes>
-      <note>Kilde er Jens Baggesen: <i>Udvalgte Værker</i>, fra serien <i>Litteraturens Mesterværker</i>, Kunstforlaget ,,Danmark'', Kbh. 1914.</note>
-      <note type="credits">Bidrag fra Svend Olav Andersen.</note>
-      <note>Først trykt, under pseudonymet Simon Simonsen, med titlen 'En ny og sandfærdig Historie, om Oprindelsen til Bog-Censur', i <i>Minerva</i> for august 1786. Optrykt i Baggesens <i>Ungdomsarbeider,</i> 1791 med titlen »Kallundborgs Krønike«.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Kalundborgs Krønike, eller Censurens Oprindelse</title>
+  <toctitle>Kalundborgs Krønike, eller Censurens Oprindelse</toctitle>
+  <indextitle>Kalundborgs Krønike, eller Censurens Oprindelse</indextitle>
+  <firstline>Den hele vide Verden veed</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+    <note>Først trykt, under pseudonymet Simon Simonsen, med titlen 'En ny og sandfærdig Historie, om Oprindelsen til Bog-Censur', i <i>Minerva</i> for august 1786. Optrykt i Baggesens <i>Ungdomsarbeider,</i> 1791 med titlen »Kallundborgs Krønike«.</note>
+  </notes>
+  <source>Jens Baggesen: <i>Udvalgte Værker</i>, fra serien <i>Litteraturens Mesterværker</i>, Kunstforlaget ,,Danmark'', Kbh. 1914.</source>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -5069,22 +5072,22 @@ Paa den Ruin, hvor Kundskab hungrig græder!
 
 <section level="2" id="baggesen2020041302" variant="baggesen2019080360">
 <head>
-    <title>Emma</title>
-    <subtitle>Et romantisk Eventyr i fem Sange</subtitle>
-    <linktitle>Emma</linktitle>
-    <indextitle>Emma</indextitle>
-    <toctitle>Emma - Et romantisk Eventyr i fem Sange</toctitle>
+  <title>Emma</title>
+  <subtitle>Et romantisk Eventyr i fem Sange</subtitle>
+  <linktitle>Emma</linktitle>
+  <indextitle>Emma</indextitle>
+  <toctitle>Emma - Et romantisk Eventyr i fem Sange</toctitle>
 </head>
 <content>
 
 <text id="baggesen200111101" variant="baggesen2019080308">
 <head>
-   <title><num>Første Sang</num>O! du, mit Haab, min Fryd, min Sang</title>
-   <firstline>O! du, mit Haab, min Fryd, min Sang</firstline>
-   <notes>
-      <note type="credits">Bidrag fra Svend Olav Andersen.</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title><num>Første Sang</num>O! du, mit Haab, min Fryd, min Sang</title>
+  <firstline>O! du, mit Haab, min Fryd, min Sang</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -5394,12 +5397,12 @@ Fortiener for sig selv en Sang.
 
 <text id="baggesen200111102" variant="baggesen2019080309">
 <head>
-   <title><num>Anden Sang</num>Den lyse Dagens Konge gled</title>
-   <firstline>Den lyse Dagens Konge gled</firstline>
-   <notes>
-      <note type="credits">Bidrag fra Svend Olav Andersen.</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title><num>Anden Sang</num>Den lyse Dagens Konge gled</title>
+  <firstline>Den lyse Dagens Konge gled</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -5581,12 +5584,12 @@ Som vover at afsløre den!
 
 <text id="baggesen200111103" variant="baggesen2019080310">
 <head>
-   <title><num>Tredje Sang</num>Du doppelt skiøn, fordi din Ild</title>
-   <firstline>Du doppelt skiøn, fordi din Ild</firstline>
-   <notes>
-      <note type="credits">Bidrag fra Svend Olav Andersen.</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title><num>Tredje Sang</num>Du doppelt skiøn, fordi din Ild</title>
+  <firstline>Du doppelt skiøn, fordi din Ild</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -5791,12 +5794,12 @@ Af Livets alt for bratte Roe.
 
 <text id="baggesen200111104" variant="baggesen2019080311">
 <head>
-   <title><num>Fjerde Sang</num>Mens Vintrens seirende Tyran</title>
-   <firstline>Mens Vintrens seirende Tyran</firstline>
-   <notes>
-      <note type="credits">Bidrag fra Svend Olav Andersen.</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title><num>Fjerde Sang</num>Mens Vintrens seirende Tyran</title>
+  <firstline>Mens Vintrens seirende Tyran</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -6099,12 +6102,12 @@ Og glad hun flyer hiem igien.
 
 <text id="baggesen200111105" variant="baggesen2019080312">
 <head>
-   <title><num>Femte Sang</num>Som Vandreren der mat af Sved</title>
-   <firstline>Som Vandreren der mat af Sved</firstline>
-   <notes>
-      <note type="credits">Bidrag fra Svend Olav Andersen.</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title><num>Femte Sang</num>Som Vandreren der mat af Sved</title>
+  <firstline>Som Vandreren der mat af Sved</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -6313,18 +6316,19 @@ Fra Jorden til Elysium.
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
 
 <text id="baggesen2001121503">
 <head>
-   <title>Døden og Doctoren, eller den sorte Pest</title>
-   <firstline>Engang laae Døden (som sædvanlig bleg)</firstline>
-   <notes>
-      <note>Fra <i>Jens Baggesens udvalgte Værker</i>, Udgivet i Serien ,,Litteraturens Mesterværker'', Kunstforlaget Danmark, København 1914.</note>
-      <note type="credits">Bidrag fra Svend Olav Andersen.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Døden og Doctoren, eller den sorte Pest</title>
+  <firstline>Engang laae Døden (som sædvanlig bleg)</firstline>
+  <notes>
+    <note>Fra <i>Jens Baggesens udvalgte Værker</i>, Udgivet i Serien ,,Litteraturens Mesterværker'', Kunstforlaget Danmark, København 1914.</note>
+    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -6465,7 +6469,7 @@ Mod begge Poler, og, som sluttes let,
 Blev atter træt
 Til Lykke fandt han ved et Gærde - Hesten,
 (Den gamle Blis
-Som tales om i Apocalypsis)<note>Cf. <xref bibel="bibelaabenbaringen06,8"/>.</note>
+Som tales om i Apocalypsis)<note>Cf. <xref bible="bibelaabenbaringen06,8"/>.</note>
 Paa dennes Ryg den endelig kom op
 Og nu, hop! hop!
 I Førstningen i Trav, men siden i Galop,
@@ -6517,13 +6521,13 @@ Og i min Skytsaand jeg genkiendte Dig.
 
 <text id="baggesen2001121510">
 <head>
-   <title>Thomas Moore, eller Venskabs Seier over Kiærlighed</title>
-   <firstline>Vee! tretten Gange vee det Øieblik</firstline>
-   <notes>
-      <note>Fra <i>Jens Baggesens udvalgte Værker</i>, Udgivet i Serien ,,Litteraturens Mesterværker'', Kunstforlaget Danmark, København 1914.</note>
-      <note type="credits">Bidrag fra Svend Olav Andersen.</note>
-   </notes>
-   <quality>korrektur1,kilde</quality>
+  <title>Thomas Moore, eller Venskabs Seier over Kiærlighed</title>
+  <firstline>Vee! tretten Gange vee det Øieblik</firstline>
+  <notes>
+    <note>Fra <i>Jens Baggesens udvalgte Værker</i>, Udgivet i Serien ,,Litteraturens Mesterværker'', Kunstforlaget Danmark, København 1914.</note>
+    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -6864,5 +6868,6 @@ Og Moore til den lykkeligste Mand.
 </poetry>
 </body>
 </text>
+
 </workbody>
 </kalliopework>

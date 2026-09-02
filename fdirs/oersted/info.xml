@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<person id="oersted" country="dk" lang="da" type="person">
+<person id="oersted" country="dk" lang="da" type="poet">
   <name>
     <firstname>H.C.</firstname>
     <lastname>Ørsted</lastname>
@@ -15,6 +15,8 @@
       <place>København</place>
     </dead>
   </period>
+  <literary-periods>dk-guldalder-og-romantik</literary-periods>
+  <works>1836</works>
   <identifiers>
     <wikidata>Q44412</wikidata>
     <wikipedia-da>H.C. Ørsted</wikipedia-da>
@@ -23,9 +25,10 @@
     <wikipedia-de>Hans Christian Ørsted</wikipedia-de>
     <gravsted-dk>hcoersted</gravsted-dk>
     <viaf>39490755</viaf>
+    <gnd>118786784</gnd>
     <lex-dk>H.C._Ørsted</lex-dk>
     <biografisk-leksikon-lex-dk>H.C._Ørsted</biografisk-leksikon-lex-dk>
-    <litteraturpriser-dk>0HCOersted</litteraturpriser-dk>
+    <danskforfatterleksikon-dk>0HCOersted</danskforfatterleksikon-dk>
     <runeberg-org>orstehan</runeberg-org>
   </identifiers>
 </person>

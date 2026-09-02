@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="andre" author="wormw" status="incomplete" type="poetry">
 <workhead>
-   <title>Andre digte</title>
-   <quality>korrektur1</quality>
+  <title>Andre digte</title>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
 <text id="wormw2002101201">
 <head>
-   <title>Til en Pige paa Gierdrup</title>
-   <toctitle>Til en Pige paa Gierdrup</toctitle>
-   <indextitle>Til en Pige paa Gierdrup</indextitle>
-   <firstline>Nei, Maren I er slem, hvi vil I dog saa true</firstline>
-   <notes>
-      <note>Efter Niels Simonsen: <i>Verdslig Barok</i>, 1985, p. 264, som igen angiver W. Worm: <i>Digte</i>, 1972, s. 25, som tekstgrundlag.</note>
-   </notes>
-   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Til en Pige paa Gierdrup</title>
+  <toctitle>Til en Pige paa Gierdrup</toctitle>
+  <indextitle>Til en Pige paa Gierdrup</indextitle>
+  <firstline>Nei, Maren I er slem, hvi vil I dog saa true</firstline>
+  <source>Niels Simonsen: <i>Verdslig Barok</i>, 1985, p. 264, som igen angiver W. Worm: <i>Digte</i>, 1972, s. 25, som tekstgrundlag.</source>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -39,14 +37,12 @@ Den, efter Danske Lov, bør miste sine Varer:
 
 <text id="wormw2002111201">
 <head>
-   <title>Paa En viss Frues Navne-Dag</title>
-   <toctitle>Paa En viss Frues Navne-Dag</toctitle>
-   <indextitle>Paa En viss Frues Navne-Dag</indextitle>
-   <firstline>Hav, smukke Frue, Tak, for Hun saa vel holdt love</firstline>
-   <notes>
-      <note>Efter Willum Worm: <i>Digte</i>, Leif Leifer (red.), 1972, p. 23.</note>
-   </notes>
-   <quality>korrektur1,kilde,side</quality>
+  <title>Paa En viss Frues Navne-Dag</title>
+  <toctitle>Paa En viss Frues Navne-Dag</toctitle>
+  <indextitle>Paa En viss Frues Navne-Dag</indextitle>
+  <firstline>Hav, smukke Frue, Tak, for Hun saa vel holdt love</firstline>
+  <source pages="23">Willum Worm: <i>Digte</i>, Leif Leifer (red.), 1972.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -80,15 +76,16 @@ Din Reise lykkelik; din Hiemkomst hastig være!
 
 <text id="wormw2002111601">
 <head>
-   <title>Til Capitain Judichær</title>
-   <subtitle>Over en Steen, som traf ham i Ansigtet, da hand gik til Kirke.</subtitle>
-   <toctitle>Til Capitain Judichær</toctitle>
-   <indextitle>Til Capitain Judichær</indextitle>
-   <firstline>Forfløyen Steen, som kom vor Judichær i Møde</firstline>
-   <notes>
-      <note>Efter Willum Worm: <i>Digte</i>, Leif Leifer (red.), 1972, p. 24.</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title>Til Capitain Judichær</title>
+  <subtitle>Over en Steen, som traf ham i Ansigtet, da hand gik til Kirke.</subtitle>
+  <toctitle>Til Capitain Judichær</toctitle>
+  <indextitle>Til Capitain Judichær</indextitle>
+  <firstline>Forfløyen Steen, som kom vor Judichær i Møde</firstline>
+  <notes>
+    <note>Sluthenvisningen er til Ovids <xref poem="ovid2026083015"/>.</note>
+  </notes>
+  <source pages="24">Willum Worm: <i>Digte</i>, Leif Leifer (red.), 1972.</source>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -116,14 +113,12 @@ Om heele Verdens Steen med Døden vilde true,
 
 <text id="wormw2002111602">
 <head>
-   <title>Over den grønne Gang paa Mörup</title>
-   <toctitle>Over den grønne Gang paa <i>Mörup</i></toctitle>
-   <indextitle>Over den grønne Gang paa Mörup</indextitle>
-   <firstline>Far vel min Eenlighed, min stille Roe og Glæde</firstline>
-   <notes>
-      <note>Efter Willum Worm: <i>Digte</i>, Leif Leifer (red.), 1972, p. 26.</note>
-   </notes>
-   <quality>korrektur1</quality>
+  <title>Over den grønne Gang paa Mörup</title>
+  <toctitle>Over den grønne Gang paa <i>Mörup</i></toctitle>
+  <indextitle>Over den grønne Gang paa Mörup</indextitle>
+  <firstline>Far vel min Eenlighed, min stille Roe og Glæde</firstline>
+  <source pages="26">Willum Worm: <i>Digte</i>, Leif Leifer (red.), 1972.</source>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -147,14 +142,14 @@ At du, som nu staaer grøn, aflægge skal dit Klæde,
 </body>
 </text>
 
-<text id="wormw2002111603">
+<text id="wormw2002111603" ignore-tests="single-circumflex-a-in-text">
 <head>
-   <title>Til Sr. Nicolai Wesling og Jomfru Antonette Höybye</title>
-   <subtitle>Paa deres Bryllups Dag</subtitle>
-   <toctitle>Til Sr. Nicolai Wesling og Jomfru Antonette Höybye</toctitle>
-   <indextitle>Til Sr. Nicolai Wesling og Jomfru Antonette Höybye</indextitle>
-   <firstline>Da Klokken den var Eet i Natt</firstline>
-   <quality>korrektur1</quality>
+  <title>Til Sr. Nicolai Wesling og Jomfru Antonette Höybye</title>
+  <subtitle>Paa deres Bryllups Dag</subtitle>
+  <toctitle>Til Sr. Nicolai Wesling og Jomfru Antonette Höybye</toctitle>
+  <indextitle>Til Sr. Nicolai Wesling og Jomfru Antonette Höybye</indextitle>
+  <firstline>Da Klokken den var Eet i Natt</firstline>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -225,7 +220,7 @@ At jeg af Brud og Brudgom lod
 Dog slutted jeg, det ikke blev
    Af Bruden slet optaget,
 Om jeg et ærbart Ønske skrev,
-   Som bÔer i Naboe-Laget.
+   Som bôer i Naboe-Laget.
 Velkommen i vor Naboe-Lag
    Dydædle ANTONETTE!
 Gid du fornøyet Dag fra Dag
@@ -253,5 +248,6 @@ Det er: At Gaas og Gasse maae
 </poetry>
 </body>
 </text>
+
 </workbody>
 </kalliopework>

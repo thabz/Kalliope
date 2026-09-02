@@ -6,8 +6,14 @@ import {
   force_reload as globalForceReload,
 } from '../libs/caching.js';
 import { fileExists } from '../libs/helpers.js';
+import {
+  compareNormalizedDate,
+  normalizeTimelineDate,
+} from '../../common/dates.js';
 import { loadXMLDoc, safeGetAttr, getElementsByTagNames } from './xml.js';
-import { sourceWorkFilename, sourceWorkKey } from './anthologies.js';
+import { sourceWorkFilename, sourceWorkKey } from './work-cache.js';
+
+const variantDate = work => normalizeTimelineDate(work.year);
 
 const build_variants = (collected) => {
   let variants_map = globalForceReload
@@ -29,7 +35,8 @@ const build_variants = (collected) => {
       if (!fileExists(filename)) {
         return;
       }
-      if (!force_reload && !isFileModified(filename)) {
+      const fileModified = isFileModified(filename);
+      if (!force_reload && !fileModified) {
         return;
       }
       let doc = loadXMLDoc(filename);
@@ -107,7 +114,19 @@ const resolve_variants = (poemId, collected) => {
     }
     const workA = collected.works.get(sourceWorkKey(metaA));
     const workB = collected.works.get(sourceWorkKey(metaB));
-    return workA.year > workB.year ? 1 : -1;
+    const dateA = variantDate(workA);
+    const dateB = variantDate(workB);
+    if (dateA == null || dateB == null) {
+      if (dateA == null && dateB != null) {
+        return 1;
+      }
+      if (dateA != null && dateB == null) {
+        return -1;
+      }
+      return a.localeCompare(b);
+    }
+    const dateComparison = compareNormalizedDate(dateA, dateB);
+    return dateComparison === 0 ? a.localeCompare(b) : dateComparison;
   });
   resolve_variants_cache[poemId] = result;
   return result;

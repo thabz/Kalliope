@@ -10,6 +10,7 @@ import Page from '../components/page.js';
 import PageLead from '../components/pagelead.js';
 import SidebarPictures from '../components/sidebarpictures.js';
 import SidebarSplit from '../components/sidebarsplit.js';
+import Stack from '../components/stack.js';
 import SubHeading from '../components/subheading.js';
 import TextContent from '../components/textcontent.js';
 import TwoColumns from '../components/twocolumns.js';
@@ -45,15 +46,13 @@ const About = (props) => {
       </Note>
     );
   });
-  let sidebar = [];
-  if (keyword.notes.length > 0 || keyword.pictures.length > 0) {
-    if (keyword.pictures.length > 0) {
-      sidebar = sidebar.concat(renderedPictures);
-    }
-    if (keyword.notes.length > 0) {
-      sidebar = sidebar.concat(renderedNotes);
-    }
-  }
+  const sidebar =
+    keyword.notes.length > 0 || keyword.pictures.length > 0 ? (
+      <Stack spacing="20px">
+        {keyword.pictures.length > 0 ? renderedPictures : null}
+        {renderedNotes}
+      </Stack>
+    ) : null;
   const body = (
     <TextContent
       contentHtml={keyword.content_html}

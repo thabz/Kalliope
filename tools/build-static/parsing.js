@@ -8,6 +8,9 @@ import {
   safeGetText,
   safeGetAttr,
   safeGetInnerXML,
+  safeGetInnerXMLWithout,
+  getIdentifiers,
+  identifierAllowlist,
   safeTrim,
 } from './xml.js';
 import { poetName } from './formatting.js';
@@ -45,8 +48,6 @@ const knownPictureAttrs = new Set([
   'subject',
   // Local picture type/classification.
   'type',
-  // Wikidata entity id for external lookup.
-  'wikidata',
   // Artwork or portrait year.
   'year',
 ]);
@@ -70,7 +71,7 @@ const get_local_picture_content = (pictureNode) => {
     };
   }
   return {
-    description: safeTrim(safeGetInnerXML(pictureNode)),
+    description: safeTrim(safeGetInnerXMLWithout(pictureNode, ['identifiers'])),
     note: null,
   };
 };
@@ -106,6 +107,7 @@ const get_artwork_picture = async (
     content_lang: artwork.content_lang,
     content_html: artwork.content_html,
     note_html: artwork.note_html,
+    identifiers: artwork.identifiers ?? {},
     primary,
   };
 };
@@ -147,11 +149,17 @@ const extractTitle = (head, type) => {
     return null;
   }
   const parts = title.match(/<num>([^<]*)<\/num>(.*)$/);
-  if (parts != null) {
+  if (parts != null && parts[1].trim().length > 0) {
     return {
       prefix: parts[1],
       title: parts[2],
     };
+  } else if (parts != null) {
+    return { title: parts[2] };
+  }
+  const emptyNum = title.match(/<num\s*\/>\s*(.*)$/);
+  if (emptyNum != null) {
+    return { title: emptyNum[1] };
   } else {
     return { title: title };
   }
@@ -183,6 +191,7 @@ const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
   const museumId = safeGetAttr(pictureNode, 'museum');
   const clipPath = safeGetAttr(pictureNode, 'clip-path');
   const remoteUrl = build_museum_url(pictureNode, collected);
+  const identifiers = getIdentifiers(pictureNode, identifierAllowlist.picture);
   if (src != null) {
     const { description, note } = get_local_picture_content(pictureNode);
     const lang = safeGetAttr(pictureNode, 'lang') || 'da';
@@ -200,9 +209,13 @@ const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
       content_lang: 'da',
       content_html: htmlToXml(description, collected),
       note_html: htmlToXml(note, collected),
+      identifiers,
       primary,
     };
   } else if (artworkRef != null) {
+    if (getChildByTagName(pictureNode, 'identifiers') != null) {
+      onError('et picture med artwork må ikke have egne <identifiers>.');
+    }
     return await get_artwork_picture(
       pictureNode,
       artworkRef,
@@ -210,6 +223,9 @@ const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
       onError
     );
   } else if (portraitRef != null) {
+    if (getChildByTagName(pictureNode, 'identifiers') != null) {
+      onError('et picture med portrait må ikke have egne <identifiers>.');
+    }
     return await get_portrait_picture(
       pictureNode,
       portraitRef,

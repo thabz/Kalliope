@@ -1,23 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="1843" author="holst" status="incomplete" type="poetry">
 <workhead>
-   <title>Ude og hjemme</title>
-   <year>1843</year>
-   <pictures>
-       <picture type="titlepage" src="1843-p1.jpg">Titelbladet til <i>Ude og hjemme</i> / Reise-Erindringer / af / H. P. Holst // Kjøbenhavn / Paa Universitetsboghandler C. A. Reitzels Forlag. / Trykt i Bianco Lunos Bogtrykkeri. / 1843.</picture>
-   </pictures>
-   <quality>korrektur1</quality>
+  <title>Ude og hjemme</title>
+  <year>1843</year>
+  <identifiers>
+    <openlibrary-work>OL12540810W</openlibrary-work>
+  </identifiers>
+  <pictures>
+    <picture type="titlepage" src="1843-p1.jpg">Titelbladet til <i>Ude og hjemme</i> / Reise-Erindringer / af / H. P. Holst // Kjøbenhavn / Paa Universitetsboghandler C. A. Reitzels Forlag. / Trykt i Bianco Lunos Bogtrykkeri. / 1843.</picture>
+  </pictures>
+  <quality>korrektur1</quality>
 </workhead>
 <workbody>
 
 <text id="holst2017070101">
 <head>
-   <title>Paa Rhinen</title>
-   <firstline>Vi seilede ned ad Rhinen</firstline>
-   <quality>korrektur1,kilde,side</quality>
-   <notes>
-     <note>pp. 1-4</note>
-   </notes>
+  <title>Paa Rhinen</title>
+  <firstline>Vi seilede ned ad Rhinen</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <notes>
+    <note>pp. 1-4</note>
+  </notes>
 </head>
 <body>
 <poetry>
@@ -109,16 +112,13 @@ Hvormed Du fyldte mit Brygt!
 </body>
 </text>
 
-
 <text id="holst2017102303">
 <head>
-   <title>Runerne</title>
-   <subtitle>München</subtitle>
-   <firstline>Hvad ligger dog tidt for en Trolddomsmagt</firstline>
-   <quality>korrektur1,kilde,side</quality>
-   <notes>
-    <note>Teksten følger H.P. Holst: <i>Ude og Hjemme</i>, C.A. Reitzels Forlag, Kbh., 1843, pp. 48-50.</note>
-   </notes>
+  <title>Runerne</title>
+  <subtitle>München</subtitle>
+  <firstline>Hvad ligger dog tidt for en Trolddomsmagt</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="48-50">H.P. Holst: <i>Ude og Hjemme</i>, C.A. Reitzels Forlag, Kbh., 1843.</source>
 </head>
 <body>
 <poetry>
@@ -187,17 +187,15 @@ Da vil Du forstaae, at i disse Ord
 
 <text id="holst2017102304">
 <head>
-   <title>Til Maleren Marstrand</title>
-   <subtitle>München</subtitle>
-   <firstline>Naar Foraaret kommer med Sisgen og Stær</firstline>
-   <quality>korrektur1,kilde,side</quality>
-   <keywords>marstrand</keywords>
-   <pictures>
-       <picture src="1873-p3.jpg">Holsts portræt som tegnet af Vilhelm Marstrand i München 1840. Senere trykt i <a work="holst/1873"><i>Fra min Ungdom</i> (1873)</a>.</picture>
-   </pictures>
-   <notes>
-    <note>Teksten følger H.P. Holst: <i>Ude og Hjemme</i>, C.A. Reitzels Forlag, Kbh., 1843, pp. 51-52.</note>
-   </notes>
+  <title>Til Maleren Marstrand</title>
+  <subtitle>München</subtitle>
+  <firstline>Naar Foraaret kommer med Sisgen og Stær</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <keywords>marstrand</keywords>
+  <pictures>
+    <picture src="1873-p3.jpg">Holsts portræt som tegnet af Vilhelm Marstrand i München 1840. Senere trykt i <a work="holst/1873"><i>Fra min Ungdom</i> (1873)</a>.</picture>
+  </pictures>
+  <source pages="51-52">H.P. Holst: <i>Ude og Hjemme</i>, C.A. Reitzels Forlag, Kbh., 1843.</source>
 </head>
 <body>
 <poetry>
@@ -241,21 +239,21 @@ Til Rom efter Bryllupsvisen.
 
 <text id="holst2001042501">
 <head>
-   <title>Den døende Fegter</title>
-   <subtitle>Rom.</subtitle>
-   <toctitle>Den døende Fegter</toctitle>
-   <indextitle>Den døende Fegter</indextitle>
-   <firstline>Hører I Bifaldets Storm fra det mægtige Amphitheater?</firstline>
-   <notes>
-      <note>Statue i det capitolinske Museum.</note>
-      <note>Indtastet fra <i>Ude og Hjemme</i>, 1843, side 143-154.</note>
-      <note type="credits">Bidrag fra Sven Sørensen.</note>
-   </notes>
-   <pictures>
-      <picture src="holst2001042501.jpg" museum="capitolini"><i>Il galata morente</i>, Musei Capitolini, Rom.</picture>
-   </pictures>
-   <quality>korrektur1</quality>
-   <keywords>heksameter</keywords>
+  <title>Den døende Fegter</title>
+  <subtitle>Rom.</subtitle>
+  <toctitle>Den døende Fegter</toctitle>
+  <indextitle>Den døende Fegter</indextitle>
+  <firstline>Hører I Bifaldets Storm fra det mægtige Amphitheater?</firstline>
+  <notes>
+    <note>Statue i det capitolinske Museum.</note>
+    <note type="credits">Bidrag fra Sven Sørensen.</note>
+  </notes>
+  <source pages="143-154"><i>Ude og Hjemme</i>, 1843.</source>
+  <pictures>
+    <picture src="holst2001042501.jpg" museum="capitolini"><i>Il galata morente</i>.</picture>
+  </pictures>
+  <quality>korrektur1</quality>
+  <keywords>heksameter</keywords>
 </head>
 <body>
 <poetry>
@@ -387,13 +385,11 @@ Efter Aartusinder end klinge fra Marmorets Steen.
 
 <text id="holst2017102301">
 <head>
-   <title>En Veninde</title>
-   <subtitle>Osteriet i Trient</subtitle>
-   <firstline>Naar i en Postvogn jeg har rumlet</firstline>
-   <quality>korrektur1,kilde,side</quality>
-   <notes>
-    <note>Teksten følger H.P. Holst: <i>Ude og Hjemme</i>, C.A. Reitzels Forlag, Kbh., 1843, pp. 114-116.</note>
-   </notes>
+  <title>En Veninde</title>
+  <subtitle>Osteriet i Trient</subtitle>
+  <firstline>Naar i en Postvogn jeg har rumlet</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="114-116">H.P. Holst: <i>Ude og Hjemme</i>, C.A. Reitzels Forlag, Kbh., 1843.</source>
 </head>
 <body>
 <poetry>
@@ -462,13 +458,11 @@ Mit skjønne, kjære danske Sprog.
 
 <text id="holst2017102302">
 <head>
-   <title>Det farlige Sted</title>
-   <subtitle>Florents</subtitle>
-   <firstline>Du troer, at Farer mig omringe</firstline>
-   <quality>korrektur1,kilde,side</quality>
-   <notes>
-    <note>Teksten følger H.P. Holst: <i>Ude og Hjemme</i>, C.A. Reitzels Forlag, Kbh., 1843, pp. 117-120.</note>
-   </notes>
+  <title>Det farlige Sted</title>
+  <subtitle>Florents</subtitle>
+  <firstline>Du troer, at Farer mig omringe</firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source pages="117-120">H.P. Holst: <i>Ude og Hjemme</i>, C.A. Reitzels Forlag, Kbh., 1843.</source>
 </head>
 <body>
 <poetry>
@@ -576,12 +570,10 @@ Som jeg, itide sig derfra.
 
 <text id="holst2017102301">
 <head>
-   <title></title>
-   <firstline> </firstline>
-   <quality>korrektur1,kilde,side</quality>
-   <notes>
-    <note>Teksten følger H.P. Holst: <i>Ude og Hjemme</i>, C.A. Reitzels Forlag, Kbh., 1843, pp. .</note>
-   </notes>
+  <title></title>
+  <firstline> </firstline>
+  <quality>korrektur1,kilde,side</quality>
+  <source>H.P. Holst: <i>Ude og Hjemme</i>, C.A. Reitzels Forlag, Kbh., 1843, pp. .</source>
 </head>
 <body>
 <poetry>
@@ -589,6 +581,7 @@ Som jeg, itide sig derfra.
 </poetry>
 </body>
 </text>
+
 -->
 </workbody>
 </kalliopework>

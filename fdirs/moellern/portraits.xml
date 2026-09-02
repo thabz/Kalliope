@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pictures>
   <picture src="p1-oval.jpg" primary="true" square-src="p1-square.jpg" museum="kb">
-      Frederik Riise (fotograf): <i>Niels Møller</i>, 1908?. Det Kongelige Bibliotek.
+    Frederik Riise (fotograf): <i>Niels Møller</i>, 1908?.
+    <!-- Manglende entydig KB-katalogmatch; objektet kan ikke verificeres sikkert endnu. -->
   </picture>
   <picture src="p2-oval.jpg" museum="kb">
-      Johannes Olsen (fotograf): <i>Niels Møller</i>, ukendt år. Det Kongelige Bibliotek.
+    Johannes Olsen (fotograf): <i>Niels Møller</i>, ukendt år.
+    <!-- Manglende entydig KB-katalogmatch; objektet kan ikke verificeres sikkert endnu. -->
+  </picture>
+  <picture src="p2-oval.jpg" museum="kb">
+    Johannes Olsen (fotograf): <i>Niels Møller</i>, ukendt år.
+    <picture-note>
+      Manglende entydig KB-katalogmatch; objektet kan ikke verificeres sikkert endnu.
+    </picture-note>
   </picture>
 </pictures>
