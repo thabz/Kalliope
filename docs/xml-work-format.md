@@ -84,6 +84,8 @@ Almindelige felter i `<workhead>`:
 - `<dates>`: datoer for vaerket.
 - `<pagebreaks/>`: erklærer, at alle interne sideskift i de inkluderede
   tekstkroppe er registreret med `<pb>`.
+- `<proofreadings>`: modelattester fra afsluttende, uafhængige
+  facsimilekorrekturer.
 
 Et værks metadata kan have typevaliderede eksterne identifikatorer:
 
@@ -130,6 +132,31 @@ tekst er kontrolleret og markeret efter reglerne nedenfor. Elementet betyder
 ikke, at værket nødvendigvis indeholder et `<pb>`: hvis hver tekst står på én
 side, er der ingen interne sideskift at indsætte. Fravær af `<pagebreaks/>` i en
 ældre værkfil betyder derfor »ikke oplyst«, ikke at kilden er uden sideskift.
+
+### Korrekturattester
+
+Et facsimileværk må først sættes til `status="complete"`, når det er gennemgået
+side for side to gange. Anden gennemgang udføres af en anden model eller session
+end producenten. Efter bestået slutkontrol indeholder værkets `<workhead>` én
+beholder med én eller flere attester:
+
+```xml
+<proofreadings>
+  <proofreading model="gpt-5.6-sol"
+                datetime="2026-09-01T21:00:00+02:00"/>
+</proofreadings>
+```
+
+Hver attest indeholder kun det præcise modelnavn og tidspunktet i ISO 8601 med
+tidszone. Der tilføjes ingen hash eller reference til en sidecarfil. En senere,
+bedre model kan tilføje en ny `<proofreading>`; tidligere attester bevares, og
+Git dokumenterer den attesterede version og efterfølgende ændringer.
+
+Ved den første overgang fra manglende eller `incomplete` til `complete` kræver
+CI, at hvert inkluderet teksthoved har kvalitetsflagene
+`korrektur1,korrektur2,kilde,side`, og at værket har mindst én gyldig attest.
+Senere note-, metadata- og tekstændringer udløser ikke automatisk krav om en ny
+attest.
 
 ### Workhead source
 
@@ -410,6 +437,13 @@ Titel-fallbacks:
 - `linktitle` falder tilbage til `indextitle` og derefter `title`.
 - `toctitle` falder tilbage til `title`.
 
+Titelfelter er redaktionelle metadata og skrives uden afsluttende tegnsætning.
+Fjern derfor punktum, komma, kolon, semikolon, spørgsmålstegn og udråbstegn til
+sidst i `<title>`, `<indextitle>`, `<toctitle>`, `<linktitle>` og
+`<breadcrumbtitle>`, også når tegnet står i den trykte overskrift. Reglen gælder
+ikke `<subtitle>`, `<suptitle>` eller den diplomatiske transskription i
+tekstlegemet, hvor kildens tegnsætning bevares.
+
 ### Keywords
 
 ```xml
@@ -565,6 +599,10 @@ sideskiftet, står markøren inline på det nøjagtige sted:
 ```xml
 En verslinje som fort<pb n="12" facs="019.jpg"/>sætter
 ```
+
+En indrykning på den nye sides første linje placeres tilsvarende efter
+markøren: `<pb n="12" facs="019.jpg"/>    Indrykket linje`. Mellemrummene må
+ikke stå foran `<pb>`, da de i så fald hører til den foregående kildeside.
 
 En `<pb>` må ikke stå på en selvstændig XML-linje i `<poetry>`, fordi den så kan
 forveksles med en vers- eller strofegrænse. Ved sideskift mellem verslinjer eller
@@ -774,26 +812,33 @@ Almindelige inline-tags:
 
 Links:
 
+I værkfiler må links kun bruges i `<note>` og `<footnote>`, ikke direkte i
+digte, prosa eller citatblokke under `<body>`. Bevar omtalen som almindelig
+tekst i brødteksten, og læg en eventuel redaktionel henvisning i en `<note>`.
+Brug `<footnote>` til fodnoter, der stammer fra kilden. Linkmetadata som
+`<source href="...">` er ikke inline-links og er fortsat tilladt.
+
 ```xml
-<a poet="heine">Heine</a>
-<a person="steffens">Steffens</a>
-<a poem="schiller2018011501">Die Goetter Griechenlands</a>
-<a text="...">tekst</a>
-<a keyword="romantikken">romantikken</a>
-<a dict="...">ordbogsopslag</a>
-<a work="goethe/1819">West-oestlicher Divan</a>
-<a href="https://...">eksternt link</a>
-<a bible="bibeljohn03,16">Joh 3,16</a>
+<note>Se <a poet="heine">Heine</a>.</note>
+<note>Se <a person="steffens">Steffens</a>.</note>
+<note>Se <a poem="schiller2018011501">Die Goetter Griechenlands</a>.</note>
+<note>Se <a text="...">teksten</a>.</note>
+<note>Se <a keyword="romantikken">romantikken</a>.</note>
+<note>Se <a dict="...">ordbogsopslaget</a>.</note>
+<note>Se <a work="goethe/1819">West-oestlicher Divan</a>.</note>
+<note>Se <a href="https://...">den eksterne kilde</a>.</note>
+<note>Se <a bible="bibeljohn03,16">Joh 3,16</a>.</note>
 ```
 
-`<xref ...>` er en genvej, der i buildet omskrives til `<a ...>` i noter og tekst:
+`<xref ...>` er en genvej, der i buildet omskrives til `<a ...>`. I værkfiler
+skal den ligesom `<a>` placeres i en note eller fodnote:
 
 ```xml
-<xref poem="schiller2018011501"/>
-<xref type="translation" poem="heine..."/>
-<xref keyword="romantikken"/>
-<xref dict="..."/>
-<xref bible="bibeljohn03,16"/>
+<note>Se <xref poem="schiller2018011501"/>.</note>
+<note>Gendigtning af <xref type="translation" poem="heine..."/>.</note>
+<note>Se <xref keyword="romantikken"/>.</note>
+<note>Se <xref dict="..."/>.</note>
+<note>Se <xref bible="bibeljohn03,16"/>.</note>
 ```
 
 `type="translation"` paa digtlinks bruges til oversaettelsesrelationer.

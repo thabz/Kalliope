@@ -1,11 +1,12 @@
 import {
   checkFacsimileReferences,
+  facsimileAssetUrls,
   facsimilePageUrl,
   findFacsimileReferences,
   isWorkFileContent,
 } from '../../tools/check-facsimiles.js';
 
-describe('facsimile CI check', () => {
+describe('facsimile checker unit logic', () => {
   it('recognizes work XML after an XML declaration', () => {
     expect(
       isWorkFileContent(
@@ -35,7 +36,11 @@ describe('facsimile CI check', () => {
     expect(references).toEqual([
       {
         filenames: ['fdirs/poet/work.xml'],
-        url: 'https://example.org/facsimiles/poet/scan/000.jpg',
+        urls: facsimileAssetUrls(
+          'https://example.org/facsimiles/',
+          'poet',
+          'scan.pdf',
+        ),
       },
     ]);
   });
@@ -52,33 +57,46 @@ describe('facsimile CI check', () => {
     );
   });
 
-  it('reports unavailable facsimiles with their source files', async () => {
-    const references = [
-      {
-        filenames: ['fdirs/poet/work.xml'],
-        url: 'https://example.org/facsimiles/poet/missing/000.jpg',
-      },
-      {
-        filenames: ['fdirs/poet/other.xml'],
-        url: 'https://example.org/facsimiles/poet/available/000.jpg',
-      },
-    ];
+  it('fails when the original exists but a responsive thumbnail is missing', async () => {
+    const references = findFacsimileReferences(
+      [
+        {
+          filename: 'fdirs/poet/work.xml',
+          content: `
+<kalliopework>
+  <workhead>
+    <source facsimile="scan"/>
+  </workhead>
+</kalliopework>`,
+        },
+      ],
+      'https://example.org/facsimiles',
+    );
+    const missingUrl =
+      'https://example.org/facsimiles/poet/scan/t/000-w250.jpg';
     const fetchMethod = jest.fn(async url => ({
-      ok: url.includes('/available/') === true,
-      status: url.includes('/available/') === true ? 200 : 404,
+      ok: url !== missingUrl,
+      status: url === missingUrl ? 404 : 200,
     }));
 
     await expect(
       checkFacsimileReferences(references, { fetchMethod }),
     ).resolves.toEqual([
       {
-        ...references[0],
+        filenames: ['fdirs/poet/work.xml'],
+        urls: facsimileAssetUrls(
+          'https://example.org/facsimiles',
+          'poet',
+          'scan',
+        ),
         reason: 'HTTP 404',
+        url: missingUrl,
       },
     ]);
     expect(fetchMethod).toHaveBeenCalledWith(
-      references[0].url,
+      missingUrl,
       expect.objectContaining({ method: 'HEAD' }),
     );
+    expect(fetchMethod).toHaveBeenCalledTimes(2);
   });
 });

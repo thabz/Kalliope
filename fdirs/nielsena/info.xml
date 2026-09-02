@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="nielsena" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Anton</firstname>
+    <lastname>Nielsen</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1873-08-29</date>
+      <place>Store Heddinge</place>
+    </born>
+    <dead>
+      <date>?</date>
+    </dead>
+  </period>
+  <literary-periods>dk-tidlig-modernisme</literary-periods>
+  <works>1921,1922,1922f,1923m,1923,1924,1924c,1928,1929,1929m,1930,1931</works>
+  <identifiers>
+    <danskforfatterleksikon-dk>NAntonNielsen1873</danskforfatterleksikon-dk>
+  </identifiers>
+</person>
