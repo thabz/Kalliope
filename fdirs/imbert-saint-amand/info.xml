@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="imbert-saint-amand" country="fr" lang="fr" type="poet">
+  <name>
+    <firstname>Arthur-Léon</firstname>
+    <lastname>Imbert de Saint-Amand</lastname>
+    <fullname>Arthur-Léon-Georges Imbert de Saint-Amand</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1834-11-22</date>
+      <place>Paris</place>
+    </born>
+    <dead>
+      <date>1900-06-22</date>
+      <place>Paris</place>
+    </dead>
+  </period>
+  <literary-periods>fr-realisme-og-naturalisme</literary-periods>
+  <works>andre</works>
+  <identifiers>
+    <wikidata>Q18197797</wikidata>
+    <wikipedia-fr>Arthur-Léon Imbert de Saint-Amand</wikipedia-fr>
+    <wikipedia-de>Arthur-Léon-Georges Imbert de Saint-Amand</wikipedia-de>
+    <viaf>41966626</viaf>
+    <gnd>115340920</gnd>
+  </identifiers>
+</person>
