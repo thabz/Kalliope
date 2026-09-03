@@ -68,6 +68,11 @@ De guldhenboelgende Vaenge
 `<workhead>` indeholder metadata for hele vaerket. `<workbody>` indeholder tekster,
 sektioner og eventuelle underværker.
 
+I `andre.xml` må en `<source>` ikke ligge i `<workhead>`; den fulde kilde skal
+angives direkte i hvert berørt digts `<head>`. Se
+`docs/originaltekster-til-oversaettelser.md` for kildevalg og -angivelse ved
+originaltekster til oversættelser.
+
 ## Workhead
 
 Almindelige felter i `<workhead>`:
@@ -504,6 +509,10 @@ Regler:
 `href` arves fra den valgte værkkilde, når teksten ikke selv angiver sin egen `href`.
 Hvis teksten angiver en `href`, tilsidesætter den arvet `href`.
 
+Eksterne links fra en kilde skal ligge i `source/@href`. Et `<source>` må ikke
+indeholde `<a href="...">`; interne Kalliope-links som `<a poet="...">` er
+fortsat tilladt.
+
 Hvis `facsimile-pages` mangler, men `pages` og `facsimile-pages-offset` findes,
 beregnes faksimilesiderne automatisk.
 
@@ -722,6 +731,9 @@ Brug en tom `<note unknown-original-by="..."/>`, naar originalens ophavsmand er
 kendt, men originalteksten ikke findes i Kalliope. Naar originalteksten findes i
 Kalliope, bruges i stedet en `<xref type="translation" poem="..."/>` i en
 almindelig note.
+
+Kildeproveniens skal angives med `<source>`. Brug ikke en `<note>` med
+formuleringen »Teksten følger ...« som erstatning for en struktureret kilde.
 
 Noter i selve teksten kan skrives som `<note>` eller `<footnote>` i tekstblokkene:
 

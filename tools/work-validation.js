@@ -102,6 +102,7 @@ const checksForWorkXml = xml => ({
   bodyLinks: /<(?:a|xref)\b/.test(xml),
   facsimiles: /<source\b[^>]*\bfacsimile\s*=/.test(xml),
   pageBreaks: /<(?:pagebreaks|pb)\b/.test(xml),
+  sourcePolicy: /<(?:note|source)\b/.test(xml),
   sources: /<source\b[^>]*\bpages\s*=/.test(xml),
   textStructure: /<text\b/.test(xml),
 });
@@ -203,6 +204,46 @@ const collectSourceStructureIssues = (filename, document) => {
   });
 
   return { pageIntervals, pageOnlySources };
+};
+
+const collectSourcePolicyIssues = (filename, document) => {
+  const andreWorkheadSources = [];
+  const externalSourceLinks = [];
+  const textFollowsNotes = [];
+  const work = document.documentElement;
+  const workhead = directChild(work, 'workhead');
+
+  if (filename.endsWith('/andre.xml') && workhead != null) {
+    directChildren(workhead, 'source').forEach(() => {
+      andreWorkheadSources.push(
+        `${filename}: <source> must be placed in each text <head>, not in <workhead>, in andre.xml.`,
+      );
+    });
+  }
+
+  Array.from(work.getElementsByTagName('source')).forEach(source => {
+    Array.from(source.getElementsByTagName('a')).forEach(link => {
+      if (link.hasAttribute('href')) {
+        externalSourceLinks.push(
+          `${filename}: use source/@href instead of <a href> inside <source>.`,
+        );
+      }
+    });
+  });
+
+  Array.from(work.getElementsByTagName('note')).forEach(note => {
+    const normalizedText = note.textContent
+      .replace(/\s+/gu, ' ')
+      .trim()
+      .toLocaleLowerCase('da-DK');
+    if (normalizedText.includes('teksten følger')) {
+      textFollowsNotes.push(
+        `${filename}: replace the note phrase "Teksten følger" with a structured <source>.`,
+      );
+    }
+  });
+
+  return { andreWorkheadSources, externalSourceLinks, textFollowsNotes };
 };
 
 const collectPageBreakIssues = (
@@ -346,6 +387,7 @@ export {
   checksForWorkXml,
   collectBodyLinkIssues,
   collectPageBreakIssues,
+  collectSourcePolicyIssues,
   collectSourceStructureIssues,
   collectTextStructureIssues,
   parseWorkXml,
