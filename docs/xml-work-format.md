@@ -721,6 +721,10 @@ Noter paa vaerk- og tekstniveau:
 </notes>
 ```
 
+Paa vaerk- og tekstniveau skal `<note>` altid ligge i en `<notes>`-wrapper.
+En direkte `<note>` under `<workhead>` eller `<head>` er ugyldig. Noter og
+fodnoter i selve brødteksten kan fortsat staa direkte i tekstblokkene.
+
 Attributter paa `<note>`:
 
 - `type`: bruges fx til `credits` og `source`.
