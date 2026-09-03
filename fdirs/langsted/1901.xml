@@ -15,23 +15,6 @@
 </workhead>
 <workbody>
 
-<text id="langsted2026090201">
-<head>
-  <title>Tilegnelse</title>
-  <firstline>LYNG</firstline>
-  <source facsimile-pages="8"/>
-  <keywords>lange</keywords>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
-<poetry>
-<nonum><center>LYNG</center></nonum>
-<nonum><center>Statsraad THOR LANGE</center></nonum>
-<nonum><center>med Tak tilegnet.</center></nonum>
-</poetry>
-</body>
-</text>
-
 <text id="lange2026090201" author="lange">
 <head>
   <title>Forord</title>
@@ -41,15 +24,14 @@
 </head>
 <body>
 <prose>
-Kjære Hr. Adolf Langsted!
+    Kjære Hr. Adolf Langsted!
 
 Tak for Deres Hensigt at tilegne mig Deres nye Digtsamling. De skriver formfuldendte, smukke Vers, lydefri og tonerige, der synge sig selv med en ejendommelig blid Klang. Tro dog ikke, at det væsenligst er Orgelspillet i Deres Kunst, som kjæler for mit Øre. Indholdet tager mig ved Hjærte. Jeg holder af religiøs Digtning og griber efter det bedste, jeg kan fange deraf paa Jord, af Frygt for ingen Sang at komme til at høre der, hvor den store, lykkefyldte Salmesang har hjemme. Tak, fordi De synger ogsaa for mig. Der er Inderlighed i Stemmen; det bærer op at føle Deres Kjærlighed til En, hvem mit eget Sind, saa stridt det er, alligevel aldrig helt kan faa af Tanker og af hvem jeg — uforklarligt, med hvad Ret — ligesom er stolt.
+  Gid nu Deres Sang maa vinde Indgang hos Unge og Gamle, mest da blandt de Unge, thi hos dem er Hjærtet friskt.
 
-Gid nu Deres Sang maa vinde Indgang hos Unge og Gamle, mest da blandt de Unge, thi hos dem er Hjærtet friskt.
+  <small>Moskva, den 27. August 1901.</small>
 
-Moskva, den 27. August 1901.
-
-THOR LANGE.
+<right>THOR LANGE.</right>
 </prose>
 </body>
 </text>
@@ -749,6 +731,9 @@ Allivets tindrende Kjerter.
   <subtitle>Motiv efter Gabriel Max's Maleri.</subtitle>
   <firstline>Herre over Tid og Alder!</firstline>
   <source pages="33-35"/>
+  <pictures>
+    <picture artwork="kunst/gabriel-von-max-christuskopf-veronika-1874"/>
+  </pictures>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1121,6 +1106,7 @@ Den stærke Frelsens Haand.
   <subtitle>En Sonnet.</subtitle>
   <firstline>Min arme Sjæl, Guds Brud! hvor er Du henne?</firstline>
   <source pages="46"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2101,7 +2087,6 @@ Unænsomt kvæler Sangens Fugl
 Og Kilden under Bladeskjul,
 Den muntre, klare Kilde
 Og hver en Lærketrille.
-
 Men — een Gang vil det blive Vaar,
 Og alt, hvad Vintren øded,
 Som ved et Under gjenopstaar
@@ -2110,12 +2095,10 @@ Da springer atter Kilden glad
 Og nynner paa sit Jubelkvad,
 Og Fuglesangen toner
 Lydt under Skovens Kroner; —
-
 Da aander op det frosne Sind,
 Og bly Convaller ringe ind
 For alle Vaarens Spæde
 Det Budskab, som er Glæde.
-
 <pb n="87" facs="093.jpg"/>Men Vaaren lig en Engel stærk,
 Omgjordet Lysets Pansersærk,
 Fremtryller Edens Have
@@ -2124,7 +2107,6 @@ Da smelter Sne, da brister Is,
 Da stiger frem et Paradis,
 Hvor hvert et opladt Øje
 Faar Gjenskin af det høje.
-
 Da myldrer frem et yppigt Flor,
 Hvorhen jeg Blikket vender:
 Et Vidnesbyrd for hver, som tror
@@ -2133,7 +2115,6 @@ Thi som den unge Dag i Gry
 Saa er Guds Naade evig ny
 I hvert et Haab, som gives,
 I hver en Blomst, som trives.
-
 I hvert et Frø, som skyder op,
 I hver en Kvist, som sætter Knop,
 I hver en Barnetanke,
