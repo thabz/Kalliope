@@ -7,6 +7,7 @@ import {
   checksForWorkXml,
   collectBodyLinkIssues,
   collectPageBreakIssues,
+  collectSourcePolicyIssues,
   collectSourceStructureIssues,
   collectTextStructureIssues,
   parseWorkXml,
@@ -25,6 +26,9 @@ describe('tracked work corpus', () => {
   let pageBreakIssues;
   let pageIntervalIssues;
   let pageOnlySourceIssues;
+  let andreWorkheadSourceIssues;
+  let externalSourceLinkIssues;
+  let textFollowsNoteIssues;
   let textStructureIssues;
 
   beforeAll(() => {
@@ -36,6 +40,9 @@ describe('tracked work corpus', () => {
     pageBreakIssues = [];
     pageIntervalIssues = [];
     pageOnlySourceIssues = [];
+    andreWorkheadSourceIssues = [];
+    externalSourceLinkIssues = [];
+    textFollowsNoteIssues = [];
     textStructureIssues = [];
 
     works.forEach(({ content: xml, filename }) => {
@@ -64,6 +71,7 @@ describe('tracked work corpus', () => {
       if (
         checks.bodyLinks !== true &&
         checks.sources !== true &&
+        checks.sourcePolicy !== true &&
         checks.pageBreaks !== true &&
         checks.textStructure !== true
       ) {
@@ -71,6 +79,12 @@ describe('tracked work corpus', () => {
       }
 
       const document = parseWorkXml(xml);
+      const sourcePolicyIssues = collectSourcePolicyIssues(filename, document);
+      andreWorkheadSourceIssues.push(
+        ...sourcePolicyIssues.andreWorkheadSources,
+      );
+      externalSourceLinkIssues.push(...sourcePolicyIssues.externalSourceLinks);
+      textFollowsNoteIssues.push(...sourcePolicyIssues.textFollowsNotes);
       if (checks.bodyLinks === true) {
         bodyLinkIssues.push(...collectBodyLinkIssues(filename, document));
       }
@@ -114,6 +128,18 @@ describe('tracked work corpus', () => {
 
   it('requires legal page intervals on text sources', () => {
     expect(pageIntervalIssues).toEqual([]);
+  });
+
+  it('places sources on individual texts in andre.xml', () => {
+    expect(andreWorkheadSourceIssues).toEqual([]);
+  });
+
+  it('uses source href attributes for external source links', () => {
+    expect(externalSourceLinkIssues).toEqual([]);
+  });
+
+  it('does not describe structured sources with "Teksten følger" notes', () => {
+    expect(textFollowsNoteIssues).toEqual([]);
   });
 
   it('does not assign first lines to prose-only texts', () => {

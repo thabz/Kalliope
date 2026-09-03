@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tilføj originaltekst til oversættelse"
+  short_description: "Find og indsæt en dokumenteret originaltekst"
+  default_prompt: "Brug $add-translation-original til at finde og indsætte den korrekte originaltekst til denne oversættelse."

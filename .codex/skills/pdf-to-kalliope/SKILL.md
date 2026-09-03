@@ -1056,6 +1056,10 @@ source and validation rules.
 
 ## 17. Investigate translations and originals
 
+When the task includes inserting an identified original text for a translation,
+also use `$add-translation-original`; its rules govern version selection,
+source priority and the exact translation relation.
+
 When a text appears to be translated, adapted or based on another work,
 actively investigate:
 
