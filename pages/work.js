@@ -20,6 +20,26 @@ import WorksList from '../components/workslist.js';
 import WorkSubtitles from '../components/worksubtitles.js';
 import ErrorPage from './error.js';
 
+export const selectWorkContent = (toc, subworks) => {
+  if (toc != null && toc.length > 0) {
+    return {
+      type: 'toc',
+      items: toc,
+      ogDescription: toc.map((part) => part.title).join(', '),
+    };
+  } else if (subworks != null && subworks.length > 0) {
+    return {
+      type: 'subworks',
+      items: subworks,
+      ogDescription: subworks
+        .map((part) => part.toctitle.title)
+        .join(', '),
+    };
+  } else {
+    return { type: 'empty', items: [], ogDescription: null };
+  }
+};
+
 const WorkPage = (props) => {
   const {
     lang,
@@ -83,23 +103,24 @@ const WorkPage = (props) => {
       </div>
     );
   }
+  const selectedContent = selectWorkContent(toc, subworks);
   let table = null;
-  if (toc != null && toc.length > 0) {
-    table = <TOC toc={toc} lang={lang} />;
-  } else if (subworks != null && subworks.length > 0) {
-    table = <WorksList lang={lang} poet={poet} works={subworks} />;
+  if (selectedContent.type === 'toc') {
+    table = <TOC toc={selectedContent.items} lang={lang} />;
+  } else if (selectedContent.type === 'subworks') {
+    table = (
+      <WorksList
+        lang={lang}
+        poet={poet}
+        works={selectedContent.items}
+      />
+    );
   } else {
     table = (
       <div className="nodata">
         <i>Kalliope indeholder endnu ingen tekster fra dette værk.</i>
       </div>
     );
-  }
-  let ogDescription = null;
-  if (toc != null && toc.length > 0) {
-    ogDescription = toc.map((part) => part.title).join(', ');
-  } else if (subworks != null && subworks.length > 0) {
-    ogDescription = subworks.map((part) => part.toctitle).join(', ');
   }
 
   let paging = {};
@@ -130,7 +151,7 @@ const WorkPage = (props) => {
         workTitleString(work, lang)
       }
       ogImage={OpenGraph.poetImage(poet)}
-      ogDescription={ogDescription}
+      ogDescription={selectedContent.ogDescription}
       requestPath={`/${lang}/works/${poet.id}`}
       crumbs={workCrumbs(lang, poet, work)}
       pageTitle={<PoetName poet={poet} includePeriod />}
