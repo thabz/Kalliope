@@ -68,6 +68,11 @@ De guldhenboelgende Vaenge
 `<workhead>` indeholder metadata for hele vaerket. `<workbody>` indeholder tekster,
 sektioner og eventuelle underværker.
 
+I `andre.xml` må en `<source>` ikke ligge i `<workhead>`; den fulde kilde skal
+angives direkte i hvert berørt digts `<head>`. Se
+`docs/originaltekster-til-oversaettelser.md` for kildevalg og -angivelse ved
+originaltekster til oversættelser.
+
 ## Workhead
 
 Almindelige felter i `<workhead>`:
@@ -84,6 +89,8 @@ Almindelige felter i `<workhead>`:
 - `<dates>`: datoer for vaerket.
 - `<pagebreaks/>`: erklærer, at alle interne sideskift i de inkluderede
   tekstkroppe er registreret med `<pb>`.
+- `<proofreadings>`: modelattester fra afsluttende, uafhængige
+  facsimilekorrekturer.
 
 Et værks metadata kan have typevaliderede eksterne identifikatorer:
 
@@ -130,6 +137,31 @@ tekst er kontrolleret og markeret efter reglerne nedenfor. Elementet betyder
 ikke, at værket nødvendigvis indeholder et `<pb>`: hvis hver tekst står på én
 side, er der ingen interne sideskift at indsætte. Fravær af `<pagebreaks/>` i en
 ældre værkfil betyder derfor »ikke oplyst«, ikke at kilden er uden sideskift.
+
+### Korrekturattester
+
+Et facsimileværk må først sættes til `status="complete"`, når det er gennemgået
+side for side to gange. Anden gennemgang udføres af en anden model eller session
+end producenten. Efter bestået slutkontrol indeholder værkets `<workhead>` én
+beholder med én eller flere attester:
+
+```xml
+<proofreadings>
+  <proofreading model="gpt-5.6-sol"
+                datetime="2026-09-01T21:00:00+02:00"/>
+</proofreadings>
+```
+
+Hver attest indeholder kun det præcise modelnavn og tidspunktet i ISO 8601 med
+tidszone. Der tilføjes ingen hash eller reference til en sidecarfil. En senere,
+bedre model kan tilføje en ny `<proofreading>`; tidligere attester bevares, og
+Git dokumenterer den attesterede version og efterfølgende ændringer.
+
+Ved den første overgang fra manglende eller `incomplete` til `complete` kræver
+CI, at hvert inkluderet teksthoved har kvalitetsflagene
+`korrektur1,korrektur2,kilde,side`, og at værket har mindst én gyldig attest.
+Senere note-, metadata- og tekstændringer udløser ikke automatisk krav om en ny
+attest.
 
 ### Workhead source
 
@@ -477,6 +509,10 @@ Regler:
 `href` arves fra den valgte værkkilde, når teksten ikke selv angiver sin egen `href`.
 Hvis teksten angiver en `href`, tilsidesætter den arvet `href`.
 
+Eksterne links fra en kilde skal ligge i `source/@href`. Et `<source>` må ikke
+indeholde `<a href="...">`; interne Kalliope-links som `<a poet="...">` er
+fortsat tilladt.
+
 Hvis `facsimile-pages` mangler, men `pages` og `facsimile-pages-offset` findes,
 beregnes faksimilesiderne automatisk.
 
@@ -685,6 +721,10 @@ Noter paa vaerk- og tekstniveau:
 </notes>
 ```
 
+Paa vaerk- og tekstniveau skal `<note>` altid ligge i en `<notes>`-wrapper.
+En direkte `<note>` under `<workhead>` eller `<head>` er ugyldig. Noter og
+fodnoter i selve brødteksten kan fortsat staa direkte i tekstblokkene.
+
 Attributter paa `<note>`:
 
 - `type`: bruges fx til `credits` og `source`.
@@ -695,6 +735,9 @@ Brug en tom `<note unknown-original-by="..."/>`, naar originalens ophavsmand er
 kendt, men originalteksten ikke findes i Kalliope. Naar originalteksten findes i
 Kalliope, bruges i stedet en `<xref type="translation" poem="..."/>` i en
 almindelig note.
+
+Kildeproveniens skal angives med `<source>`. Brug ikke en `<note>` med
+formuleringen »Teksten følger ...« som erstatning for en struktureret kilde.
 
 Noter i selve teksten kan skrives som `<note>` eller `<footnote>` i tekstblokkene:
 

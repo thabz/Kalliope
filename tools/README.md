@@ -147,6 +147,10 @@ skriver resultatet til standard output:
 ruby tools/txt2xml.rb input.txt > output.xml
 ```
 
+Output er altid en kladde med `status="incomplete"`. Generatoren skriver ikke
+`<quality>` eller korrekturflag; de tilføjes kun efter de dokumenterede,
+side-for-side-korrekturer i `docs/facsimile-korrektur.md`.
+
 Køres scriptet uden et filargument, udskriver det en tom skabelon.
 
 ### Ryd Fraktur-OCR

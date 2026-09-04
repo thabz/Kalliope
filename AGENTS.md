@@ -20,6 +20,9 @@ Disse regler gælder for AI-agenter og automatiserede assistenter, der arbejder 
 - Brug `$prepare-kalliope-titlepage`, når et titelblad skal rettes op,
   beskæres eller kvalitetskontrolleres. `$pdf-to-kalliope` bruger denne skill
   som sit faste billedbehandlingstrin for `p1`.
+- Brug `$add-translation-original`, når en originaltekst til en oversættelse
+  skal opspores, udvælges, indsættes eller forbindes med oversættelsen. Brug
+  også `$add-kalliope-work`, når originalen oprettes som et selvstændigt værk.
 
 ## Kalliopes dækningsmål
 

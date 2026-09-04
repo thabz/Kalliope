@@ -84,22 +84,21 @@ const WorkPage = (props) => {
     );
   }
   let table = null;
+  let ogDescription = null;
   if (toc != null && toc.length > 0) {
     table = <TOC toc={toc} lang={lang} />;
+    ogDescription = toc.map((part) => part.title).join(', ');
   } else if (subworks != null && subworks.length > 0) {
     table = <WorksList lang={lang} poet={poet} works={subworks} />;
+    ogDescription = subworks
+      .map((part) => part.toctitle.title)
+      .join(', ');
   } else {
     table = (
       <div className="nodata">
         <i>Kalliope indeholder endnu ingen tekster fra dette værk.</i>
       </div>
     );
-  }
-  let ogDescription = null;
-  if (toc != null && toc.length > 0) {
-    ogDescription = toc.map((part) => part.title).join(', ');
-  } else if (subworks != null && subworks.length > 0) {
-    ogDescription = subworks.map((part) => part.toctitle).join(', ');
   }
 
   let paging = {};
