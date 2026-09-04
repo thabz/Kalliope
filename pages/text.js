@@ -542,7 +542,7 @@ const TextPage = (props) => {
   }
   let ogDescription = '';
   let shouldIndentTitle = false;
-  const hasMarginNotes = text.blocks.some((block) =>
+  const hasMarginNotes = (text.blocks ?? []).some((block) =>
     block.lines.some((line) => {
       const content = line[0];
       return (
