@@ -5,6 +5,9 @@
   <title>Samlede Digte</title>
   <year>1803</year>
   <pagebreaks/>
+  <proofreadings>
+    <proofreading model="gpt-5.6-sol" datetime="2026-09-04T17:56:17+02:00"/>
+  </proofreadings>
   <notes>
     <note>Dedikationen lyder ,,H. W. Ribers / ædle Veninde / og / Velynderinde / Frue Baronesse Lövenskiold / hvis ærefylde Godhed / for ham / end ikke kiölnedes / ved hans Död // i hans Navn / ærbödigen og erkiendtligen / helliget / af hans Venner / og / Udgivere / L. C. Sander. K. L. Rahbek</note>
     <note>Teksten fölger Hans Riber: <i>Samlede Digte</i>, Simon Poulsens Forlag, Kbh., 1803.</note>
@@ -35,7 +38,7 @@
     <line>Sander og Rahbeck</line>
   </subtitle>
   <source in="bd1" pages="I-XLIIII" facsimile-pages="16-59" />
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <prose>
@@ -338,7 +341,7 @@ Fordanskning staaer langt tilbage for Ribers; <pb n="XLI" facs="056.jpg"/>her va
   <toctitle>Vennefölelser paa en Venindes Födselsdag</toctitle>
   <firstline>Venskab! ja dig sendte Godheds Fader</firstline>
   <source in="bd1" pages="3-6"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -405,7 +408,7 @@ Held mig! <w>Hun</w> min hele Glæde fatter;
   <title>Glædens Minde</title>
   <firstline>Iil, o Ven! fra Stadens skumle Mure</firstline>
   <source in="bd1" pages="7-8"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -455,7 +458,7 @@ Kommer du da mörk og barsk tilbage;
   <subtitle>Selskabs-Sang</subtitle>
   <firstline>Guds Vink det öde Mulm fordrev</firstline>
   <source in="bd1" pages="9-12"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -532,7 +535,7 @@ Her vinde vi en Hæders Krands,
   <title>Den gode Landmands Lykke</title>
   <firstline>Du Naturens ægte Sön!</firstline>
   <source in="bd1" pages="13-15"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -589,7 +592,7 @@ Aldrig man din Fryd har smagt.
   <title>Vaar-Sang</title>
   <firstline>Den blide Vaar er kommen!</firstline>
   <source in="bd1" pages="16-17"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -636,7 +639,7 @@ Og Elskov kom med den.
   <title>Mai-Sang</title>
   <firstline>O den skiönne, skiönne Mai!</firstline>
   <source in="bd1" pages="18-20"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -694,7 +697,7 @@ Herlig smiler Pigens Blik!
     <note unknown-original-by="claudius" />
   </notes>
   <source in="bd1" pages="21-26"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -849,7 +852,7 @@ Dig prise vi evindelig.
     <note>. Med Musik af Hr. Etatsraad Ryge.</note>
   </notes>
   <source in="bd1" pages="27-33"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -993,7 +996,7 @@ Adams frelste Slægt tilbeder,
   <toctitle>Jesu Opstandelse, en Psalme</toctitle>
   <firstline>Fuldendt er nu din store Daad</firstline>
   <source in="bd1" pages="34-36"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1049,7 +1052,7 @@ For dig, som Döden undertvang,
   <title>Hymne</title>
   <firstline>Alt hvad som Aande har love vor Gud</firstline>
   <source in="bd1" pages="37-38"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1088,7 +1091,7 @@ Hisset han aftörrer dem.
   <dates>
     <event>1788-01-29</event>
   </dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1177,7 +1180,7 @@ Vei til Held, og den skal prise
   <title><num>I.</num>Den Mand, som Verdners vise Fader</title>
   <firstline>Den Mand, som Verdners vise Fader</firstline>
   <source in="bd1" pages="43-45"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1238,7 +1241,7 @@ En Borg om <sc>Christians</sc> Magt og Ære:
   <title><num>II.</num>Med Friheds Aand vi samles her</title>
   <firstline>Med Friheds Aand vi samles her</firstline>
   <source in="bd1" pages="45-46"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1292,7 +1295,7 @@ Vor elskede <sc>Christian</sc> leve!
     <event>1784-04-04</event>
   </dates>
   <keywords>frederik6</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1357,7 +1360,7 @@ Den Dag, da Iver for dens Ære
     <note>Gendigtning af Friedrich Leopold Graf zu Stolbergs <xref type="translation" poem="stolbergf2026090404"/>.</note>
   </notes>
   <source in="bd1" pages="50-54"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1463,7 +1466,7 @@ Broder! thi een er kun Alles Fader!
     <event>1788-12-07</event>
   </dates>
   <keywords>frederik6</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1516,7 +1519,7 @@ Gud signe vor elskede <sc>Fredrik</sc>!
   <dates>
     <event>1788-12-07</event>
   </dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1614,7 +1617,7 @@ Til Ære for Freden og <sc>Fredrik</sc>.
   <dates>
     <event>1794-12-28</event>
   </dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1702,7 +1705,7 @@ See dig, og evig beundre og prise
   <title>Bernstorffs Minde</title>
   <firstline>Ei Kongers Smiil, som Avind saarer</firstline>
   <source in="bd1" pages="64-67"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1767,7 +1770,7 @@ Selv kronet Böddel ei at ære,
     <note>Gendigtning af Voß: <xref type="translation" poem="voss2020012701"/>.</note>
   </notes>
   <source in="bd1" pages="68-71"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1857,7 +1860,7 @@ Giv dem de Godes Lön!
   <toctitle>Seminaristsang</toctitle>
   <firstline>Hver ærlig Dansk med henrykt Siel</firstline>
   <source in="bd1" pages="72-73"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1910,7 +1913,7 @@ Og engang sikkert vi til Lön
     <note type="credits">Indtastet af Sven Sørensen.</note>
   </notes>
   <source in="bd1" pages="74-76"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1983,7 +1986,7 @@ Han er den frie Mand.
   <firstline>Ei qvæde vi en Minde-Sang</firstline>
   <source in="bd1" pages="77-79"/>
   <keywords>storm</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2050,7 +2053,7 @@ Da hædre vi værdigst dit Minde.
   <dates>
     <event>1789-10-10</event>
   </dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2079,7 +2082,7 @@ Dydens Fader lindre skal din Smerte,
   <subtitle>(For en Ven.)</subtitle>
   <firstline>Glad du löd det Bud, vor fælleds Fader</firstline>
   <source in="bd1" pages="81-82"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2112,7 +2115,7 @@ Men, blandt nye Sysler, nye Glæder,
   <toctitle>P. Gierlövs Minde</toctitle>
   <firstline>I! hvis Hierter nöd den blide Glæde</firstline>
   <source in="bd1" pages="83"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2133,7 +2136,7 @@ Dydens Venner! eders Taarer væde
     <note>Gendigtning af Christian Adolph Overbeck: <xref type="translation" poem="overbeck2019091401"/>.</note>
   </notes>
   <source in="bd1" pages="84-86"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2203,7 +2206,7 @@ Hisset han istemmer
     <note unknown-original-by="claudius"/>
   </notes>
   <source in="bd1" pages="87-89"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2277,7 +2280,7 @@ Bör vi dog ei være rede?
   <title>Afskeedsang</title>
   <firstline>Afskedstimen, Brödre! snart fremtræder</firstline>
   <source in="bd1" pages="90-91"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2314,7 +2317,7 @@ Trofast Venskabs Baand.
   <toctitle>Fra en Elsker, paa et Livbaand</toctitle>
   <firstline>Herlig lönner du din varme Dyrker</firstline>
   <source in="bd1" pages="92"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2348,7 +2351,7 @@ Dette Smiil, hvormed den Ædle tager
   <toctitle>Til en Veninde, ligeledes</toctitle>
   <firstline>Varig Fryd blev ei vort Lod i Livet</firstline>
   <source in="bd1" pages="93-94"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2381,7 +2384,7 @@ Dem maa Baandet sige det, Veninde!
   <toctitle>Til en Söster, ligeledes</toctitle>
   <firstline>Selv i Barndoms Aar, da Naturen tændte</firstline>
   <source in="bd1" pages="95"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2415,7 +2418,7 @@ Og han lönne dig for de sande Glæder,
   <subtitle>(Paa et Livbaand)</subtitle>
   <firstline>Gartneren den spæde Plante freder</firstline>
   <source in="bd1" pages="96-97"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2449,7 +2452,7 @@ Dette Baand forkynde dig, min Datter!
   <subtitle>(Paa et Livbaand.)</subtitle>
   <firstline>Du, som Himlen sendte mig imöde</firstline>
   <source in="bd1" pages="98-99"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2485,7 +2488,7 @@ Dette Baand erindre dig, Mandinde!
     <note>Gendigtning af Matthias Claudius: <xref type="translation" poem="claudius2001102204"/>.</note>
   </notes>
   <source in="bd1" pages="100-102"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2547,7 +2550,7 @@ Slet ikke, - og han flöi afsted;
     <note>Gendigtning af Matthias Claudius: <xref type="translation" poem="claudius2001102204"/>.</note>
   </notes>
   <source in="bd1" pages="103-104"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2593,7 +2596,7 @@ Faaer een afos da Dödens Bud,
     <note>Gendigtning af Matthias Claudius' <xref type="translation" poem="claudius2026090401"/>.</note>
   </notes>
   <source in="bd1" pages="105-107"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2652,7 +2655,7 @@ Du föder Spurven paa mit Tag!
     <note type="credits">Teksten indtastet af Margit Ammentorp.</note>
   </notes>
   <source in="bd1" pages="108-110"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2713,7 +2716,7 @@ Og selv med sölvgraae Isse skal vi frydes
     <note type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
   <source in="bd1" pages="111-112"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2763,7 +2766,7 @@ Det Hædersnavn han til Lön skal bære:
   <title><num>I.</num>Venskab! Venskab! Himlens skiönne Datter</title>
   <firstline>Venskab! Venskab! Himlens skiönne Datter</firstline>
   <source in="bd1" pages="113-115"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2825,7 +2828,7 @@ Byg dig i mit Bryst et varigt Sæde!
   <title><num>II.</num>Venskab! henrykt hörer jeg din Stemme</title>
   <firstline>Venskab! henrykt hörer jeg din Stemme</firstline>
   <source in="bd1" pages="116-117"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2872,7 +2875,7 @@ Og, som Olding, see du glad tilbage
   <title><num>III.</num>Held den Mand, som Guld og borget Hæder</title>
   <firstline>Held den Mand, som Guld og borget Hæder</firstline>
   <source in="bd1" pages="118-119"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2924,7 +2927,7 @@ Og i Dag mit venskabsfulde Hierte
   <title><num>IV.</num>Held den Mand, Gud gav en dydig Qvinde!</title>
   <firstline>Held den Mand, Gud gav en dydig Qvinde!</firstline>
   <source in="bd1" pages="120-121"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2987,7 +2990,7 @@ Da skal Livets Dag saa blidt henflyde,
   <dates>
     <event>1796-05-28</event>
   </dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3041,7 +3044,7 @@ Dette Samfunds Baand!
   <title>Selskabssang</title>
   <firstline>O Venskab! du, hvis hulde Aand</firstline>
   <source in="bd1" pages="125-126"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3079,7 +3082,7 @@ Til Borger-Daad styrk os, o Venskab!
   <title><num>I.</num>O Held os! paa Blaagaard vi leve saa froe</title>
   <firstline>O Held os! paa Blaagaard vi leve saa froe</firstline>
   <source in="bd1" pages="127-128"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3119,7 +3122,7 @@ Al Sandheds og Dydens og Kierlighed Held.
   <title><num>II.</num>Bliv Lys! sagde Herren, og Mulmet adspredtes</title>
   <firstline>Bliv Lys! sagde Herren, og Mulmet adspredtes</firstline>
   <source in="bd1" pages="129"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3163,7 +3166,7 @@ Gid ofte vi glade den hilse igien!
   <dates>
     <event>1789-06-06</event>
   </dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3200,7 +3203,7 @@ Fordi han deelte denne Fryd med dig!
   <dates>
     <event>1789-04-14</event>
   </dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3241,7 +3244,7 @@ Da Gud dig gav din Engel, din <sc>Lovise!</sc>
   <dates>
     <event>1789-04-25</event>
   </dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3333,7 +3336,7 @@ Den Gode herlig lönner;
   <dates>
     <event>1793-01-30</event>
   </dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3389,7 +3392,7 @@ Og <sc>Elisas</sc> Mand! - o föl din Lykke!
   <dates>
     <event>1790-10-31</event>
   </dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3431,7 +3434,7 @@ De Livets Dag, som hidtil, nyde,
     <event>1793-03-26</event>
   </dates>
   <keywords>hoeghguldbergf</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3456,7 +3459,7 @@ Vor Vens, den ædle <sc>Guldbergs</sc>, Skaal.
   <title>Sang</title>
   <firstline>Skaber! Styrer! Herre! Fader!</firstline>
   <source in="bd1" pages="145-146"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3489,7 +3492,7 @@ Vorde deres Idræts Lön!
   <title>Ved Geheimeraadinde Lövenskiolds Grav</title>
   <firstline>I, som attraae Danneqvindens Hæder</firstline>
   <source in="bd1" pages="147-148"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3536,7 +3539,7 @@ Det besiele hver en Danneqvinde,
   <title>Afskedssang</title>
   <firstline>I Viisdoms stille Sæde</firstline>
   <source in="bd1" pages="149-150"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3571,7 +3574,7 @@ Os Brödre her skal signe,
   <subtitle>paa en elsket Moders Födselsdag</subtitle>
   <firstline>Ja Moder! stedse skal dit Navn</firstline>
   <source in="bd1" pages="151-152"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3622,7 +3625,7 @@ Udflyder af Viisdoms og Kierligheds Væld.
   <dates>
     <written>1796-11-10</written>
   </dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3656,7 +3659,7 @@ Fælles være her vor Fryd, vor Smerte!
   <toctitle>En naadig Frökens Foraarssang, efter Voss</toctitle>
   <firstline>Naar skal den Bröndcuur Ende faae</firstline>
   <source in="bd1" pages="155-158"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3750,7 +3753,7 @@ Og hver Dag nye Tilberedere -
   <subtitle>for Dreiers Klub</subtitle>
   <firstline>Fra Arilds Tid har det været Skik</firstline>
   <source in="bd1" pages="159-160"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3799,7 +3802,7 @@ Og Broderhierter vor Barndoms Glæder
     <note type="credits">Teksten indtastet af Margit Ammentorp og oversættelserne af en anonym bidragyder.</note>
   </notes>
   <source in="bd1" pages="161-162"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3867,7 +3870,7 @@ Naar Phyllis er vred,
     <note>Gendigtning af Gottlieb Konrad Pfeffel: <xref type="translation" poem="pfeffel2020012702"/>.</note>
   </notes>
   <source in="bd1" pages="165-180"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4205,7 +4208,7 @@ I min og i min kiere Doris’ Grav! -
     <note>Gendigtning efter George Lytteltons <xref type="translation" poem="lyttelton2026090401"/>. Riber anfører samtidig »efter samme«, dvs. efter Gottlieb Konrad Pfeffel.</note>
   </notes>
   <source in="bd1" pages="181-188"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4369,7 +4372,7 @@ De Regler for at tækkes, som jeg gav dig.
     <note>Gendigtning af Gottlieb Konrad Pfeffels <xref type="translation" poem="pfeffel2026090401"/>.</note>
   </notes>
   <source in="bd1" pages="189-191"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4439,7 +4442,7 @@ Et Blik, som meer end Daab indvied’ ham.
   <notes>
     <note>Gendigtning af Friedrich Leopold Graf zu Stolbergs <xref type="translation" poem="stolbergf2026090403"/>.</note>
   </notes>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4520,7 +4523,7 @@ Thi Moderen har kaldt det Persiflage.
     <note>Mottoet er Horats, <a href="https://texts.alpheios.net/text/urn%3Acts%3AlatinLit%3Aphi0893.phi005.perseus-lat2/passage/1.19.19-1.19.20"><i>Epistler</i> 1,19,19–20</a>: <span lang="la"><i>O imitatores, servum pecus, ut mihi saepe bilem, saepe iocum vestri movere tumultus!</i></span> Det betyder omtrent: »O efterabere, I trælleflok, hvor har jeres spektakel ofte vakt min galde, ofte min latter!« Stolberg og Riber udelader de indledende ord <span lang="la"><i>O imitatores, servum pecus</i></span>; hos begge står desuden <span lang="la"><i>jocum</i></span> for <span lang="la"><i>iocum</i></span>.</note>
   </notes>
   <keywords>lessing,gellert</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <quote max-width="90%">
@@ -4622,7 +4625,7 @@ Ved Nysekrud fordrives denne Galskab.
     <note>Gendigtning af Friedrich Leopold Graf zu Stolberg: <xref type="translation" poem="stolbergf2020012801"/>.</note>
   </notes>
   <source in="bd1" pages="201-206"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <quote max-width="90%">
@@ -4744,7 +4747,7 @@ Höit brusende slaaer op mod sandig Bred.
     <note>Gendigtning af Friedrich Leopold Graf zu Stolbergs <xref type="translation" poem="stolbergf2026090402"/>.</note>
   </notes>
   <source in="bd1" pages="207-214"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4909,7 +4912,7 @@ Med sorte Tærning kaster om dit Liv!
   <subtitle>En Fortælling.</subtitle>
   <firstline>Du Mand, som Himlen skiænkte Kraft og Mod</firstline>
   <source in="bd1" pages="215-219"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5022,7 +5025,7 @@ Og gaaer som lydig Hund, ind i sit eget Huus.
     <note>Gendigtning af Voß: <xref type="translation" poem="voss2020020503"/>.</note>
   </notes>
   <source in="bd2" pages="3-17"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5226,7 +5229,7 @@ Pots! Han prygler os krumme og lamme. Pasop! efter Skimlen!
     <note>Gendigtning af Voß: <xref type="translation" poem="voss2020020504"/>.</note>
   </notes>
   <source in="bd2" pages="18-30"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5463,7 +5466,7 @@ Kom mig ikke, og syng, som vor hæse Degn synger Amen!
     <note>Fri gendigtning af Voß: <xref type="translation" poem="voss2020020501"/>.</note>
   </notes>
   <source in="bd2" pages="31-42"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5629,7 +5632,7 @@ Saae han op, og han hang i hans Börns omfavnende Arme.
   <source in="bd2" pages="45-96"/>
   <note>Originalen er Johann Heinrich Voß' <i>Luise. Ein ländliches Gedicht in drei Idyllen</i>.</note>
   <keywords>ewald,thaarup,pram,storm,baggesen,zetlitz,troiel,holty</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6268,7 +6271,7 @@ Og ved Porten modtog dem Pakan med venlige Logren.
   <subtitle>Besöget</subtitle>
   <firstline>Roselig straaler paa Vindnet Majdags fremblussende Morgen</firstline>
   <source in="bd2" pages="97-126"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6639,7 +6642,7 @@ Sank hun, ak! hen i Favn paa usigelig salige Yngling.
   <subtitle>Bryllupsaftenen</subtitle>
   <firstline>Hvo som nys har besögt vor Præst i Gröndal, han kjender</firstline>
   <source in="bd2" pages="127-202"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -7585,7 +7588,7 @@ Efter de Flygtende löd' nu Fryderaab, Latter og Haandklap.
 <head>
   <title>Til Læseren</title>
   <source in="bd2" pages="205-206"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <prose>
@@ -7606,7 +7609,7 @@ Den Fornöielse, jeg fandt ved dette komiske Helte-Digts Læsning, bevægede mig
     <note>Gendigtning af første sang af Olof Rudbeck den yngres <xref type="translation" poem="rudbeck2026090401"/>.</note>
   </notes>
   <source in="bd2" pages="207-222"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -7820,7 +7823,7 @@ Og Himlen speiler sig i Vandets stille Pragt.
     <note>Gendigtning af anden sang af Olof Rudbeck den yngres <xref type="translation" poem="rudbeck2026090402"/>.</note>
   </notes>
   <source in="bd2" pages="223-236"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -7998,7 +8001,7 @@ Skal dette blot sit Sted blandt Rendsteenskrige faae.
     <note>Gendigtning af tredje sang af Olof Rudbeck den yngres <xref type="translation" poem="rudbeck2026090403"/>.</note>
   </notes>
   <source in="bd2" pages="237-254"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -8231,7 +8234,7 @@ Blant Hiorden bryder ind, nedlægger og fordriver.
     <note>Gendigtning af fjerde sang af Olof Rudbeck den yngres <xref type="translation" poem="rudbeck2026090404"/>.</note>
   </notes>
   <source in="bd2" pages="255-272"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
