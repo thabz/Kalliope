@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="borgaardc" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Carl Peter</firstname>
+    <lastname>Borgaard</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1799-02-09</date>
+    </born>
+    <dead>
+      <date>1868-04-22</date>
+    </dead>
+  </period>
+  <literary-periods>dk-guldalder-og-romantik</literary-periods>
+  <identifiers>
+    <wikidata>Q71397141</wikidata>
+    <viaf>6482149296206780670003</viaf>
+    <biografisk-leksikon-lex-dk>Carl_Borgaard</biografisk-leksikon-lex-dk>
+    <danskforfatterleksikon-dk>BCarlBorgaard</danskforfatterleksikon-dk>
+    <runeberg-org>borgacar</runeberg-org>
+  </identifiers>
+</person>

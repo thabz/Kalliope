@@ -645,6 +645,26 @@
       ]
     },
     {
+      "id": "is-romantik",
+      "tradition": "is",
+      "countries": [
+        "is"
+      ],
+      "title": {
+        "da": "Islandsk romantik",
+        "en": "Icelandic Romanticism",
+        "fr": "Romantisme islandais",
+        "de": "Isländische Romantik"
+      },
+      "sortYear": 1800,
+      "sources": [
+        {
+          "title": "Skáldin þrjú og þjóðin",
+          "url": "https://gripla.arnastofnun.is/index.php/gripla/article/view/344"
+        }
+      ]
+    },
+    {
       "id": "se-romantik",
       "tradition": "se",
       "countries": [
@@ -1833,4 +1853,3 @@
     }
   ]
 }
-
