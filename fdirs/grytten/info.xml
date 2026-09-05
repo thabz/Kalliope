@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="grytten" country="no" lang="da" type="poet">
+  <name>
+    <firstname>Ingeborg Andersdatter</firstname>
+    <lastname>Grytten</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1668 ca.</date>
+      <place>Holmedal, Sunnfjord</place>
+    </born>
+    <dead>
+      <date>1705 efter</date>
+      <place>Holmedal, Sunnfjord</place>
+    </dead>
+  </period>
+  <literary-periods>no-barok</literary-periods>
+  <works>1713</works>
+  <identifiers>
+    <wikidata>Q12715676</wikidata>
+    <wikipedia-en>Ingeborg Grytten</wikipedia-en>
+    <viaf>8123151595790205470001</viaf>
+  </identifiers>
+</person>
