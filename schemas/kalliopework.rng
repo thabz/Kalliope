@@ -8,6 +8,20 @@
   <define name="mixed">
     <zeroOrMore>
       <choice>
+        <ref name="mixedWithoutNote"/>
+        <ref name="note"/>
+      </choice>
+    </zeroOrMore>
+  </define>
+
+  <define name="headMixed">
+    <zeroOrMore>
+      <ref name="mixedWithoutNote"/>
+    </zeroOrMore>
+  </define>
+
+  <define name="mixedWithoutNote">
+      <choice>
         <text/>
         <ref name="workhead"/>
         <ref name="workbody"/>
@@ -38,7 +52,6 @@
         <ref name="event"/>
         <ref name="begivenhed"/>
         <ref name="notes"/>
-        <ref name="note"/>
         <ref name="quality"/>
         <ref name="form"/>
         <ref name="metre"/>
@@ -82,7 +95,6 @@
         <ref name="column"/>
         <ref name="w"/>
       </choice>
-    </zeroOrMore>
   </define>
 
   <define name="kalliopework">
@@ -101,7 +113,8 @@
   <define name="workhead">
     <element name="workhead">
       <interleave>
-        <ref name="mixed"/>
+        <ref name="headMixed"/>
+        <optional><ref name="proofreadings"/></optional>
         <optional><ref name="workheadIdentifiers"/></optional>
       </interleave>
     </element>
@@ -209,6 +222,7 @@
   <define name="picture">
     <element name="picture">
       <optional><attribute name="src"><text/></attribute></optional>
+      <optional><attribute name="href"><text/></attribute></optional>
       <optional><attribute name="type"><text/></attribute></optional>
       <optional><attribute name="year"><text/></attribute></optional>
       <optional><attribute name="artwork"><text/></attribute></optional>
@@ -349,7 +363,7 @@
 
   <define name="prosa"><element name="prosa"><ref name="simpleElement"/></element></define>
   <define name="content"><element name="content"><ref name="simpleElement"/></element></define>
-  <define name="head"><element name="head"><ref name="simpleElement"/></element></define>
+  <define name="head"><element name="head"><ref name="headMixed"/></element></define>
   <define name="year"><element name="year"><ref name="simpleElement"/></element></define>
   <define name="subtitle"><element name="subtitle"><optional><attribute name="lang"><text/></attribute></optional><ref name="simpleElement"/></element></define>
   <define name="suptitle"><element name="suptitle"><ref name="simpleElement"/></element></define>
@@ -367,6 +381,20 @@
   <define name="begivenhed"><element name="begivenhed"><ref name="simpleElement"/></element></define>
   <define name="notes"><element name="notes"><ref name="simpleElement"/></element></define>
   <define name="quality"><element name="quality"><ref name="simpleElement"/></element></define>
+  <define name="proofreadings">
+    <element name="proofreadings">
+      <oneOrMore><ref name="proofreading"/></oneOrMore>
+    </element>
+  </define>
+  <define name="proofreading">
+    <element name="proofreading">
+      <attribute name="model">
+        <data type="string"><param name="minLength">1</param></data>
+      </attribute>
+      <attribute name="datetime"><data type="dateTime"/></attribute>
+      <empty/>
+    </element>
+  </define>
   <define name="form">
     <element name="form">
       <oneOrMore><ref name="formAnalysis"/></oneOrMore>

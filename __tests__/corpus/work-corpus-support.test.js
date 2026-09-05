@@ -42,6 +42,7 @@ describe('work corpus support', () => {
       bodyLinks: false,
       facsimiles: false,
       pageBreaks: false,
+      sourcePolicy: false,
       sources: false,
       textStructure: false,
     });
@@ -49,6 +50,7 @@ describe('work corpus support', () => {
       bodyLinks: false,
       facsimiles: false,
       pageBreaks: false,
+      sourcePolicy: true,
       sources: true,
       textStructure: false,
     });
@@ -56,6 +58,7 @@ describe('work corpus support', () => {
       bodyLinks: false,
       facsimiles: false,
       pageBreaks: true,
+      sourcePolicy: false,
       sources: false,
       textStructure: false,
     });
@@ -63,6 +66,7 @@ describe('work corpus support', () => {
       bodyLinks: false,
       facsimiles: false,
       pageBreaks: true,
+      sourcePolicy: false,
       sources: false,
       textStructure: false,
     });
@@ -70,6 +74,7 @@ describe('work corpus support', () => {
       bodyLinks: false,
       facsimiles: true,
       pageBreaks: false,
+      sourcePolicy: true,
       sources: false,
       textStructure: false,
     });
@@ -77,6 +82,7 @@ describe('work corpus support', () => {
       bodyLinks: true,
       facsimiles: false,
       pageBreaks: false,
+      sourcePolicy: false,
       sources: false,
       textStructure: false,
     });

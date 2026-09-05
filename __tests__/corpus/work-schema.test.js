@@ -19,6 +19,32 @@ describe('kalliopework RELAX NG schema', () => {
     { input: xml, encoding: 'utf8', stdio: ['pipe', 'pipe', 'pipe'] },
   );
 
+  it('requires head notes to use the notes wrapper', () => {
+    const wrappedTextNote = poetryWork(
+      'Første linje',
+    ).replace(
+      '<head><firstline>Første linje</firstline></head>',
+      '<head><firstline>Første linje</firstline><notes><note>Redaktionel note.</note></notes></head>',
+    );
+    const directTextNote = wrappedTextNote.replace(
+      '<notes><note>Redaktionel note.</note></notes>',
+      '<note>Redaktionel note.</note>',
+    );
+    const wrappedWorkNote = wrappedTextNote.replace(
+      '<workhead><title>Digte</title><year>1900</year></workhead>',
+      '<workhead><title>Digte</title><year>1900</year><notes><note>Værknote.</note></notes></workhead>',
+    );
+    const directWorkNote = wrappedWorkNote.replace(
+      '<notes><note>Værknote.</note></notes>',
+      '<note>Værknote.</note>',
+    );
+
+    expect(() => validate(wrappedTextNote)).not.toThrow();
+    expect(() => validate(wrappedWorkNote)).not.toThrow();
+    expect(() => validate(directTextNote)).toThrow();
+    expect(() => validate(directWorkNote)).toThrow();
+  });
+
   it('accepts type-specific identifiers on workhead, source and picture', () => {
     const xml = `
       <kalliopework id="1900" author="digter">
@@ -103,6 +129,51 @@ describe('kalliopework RELAX NG schema', () => {
         { input: xml, encoding: 'utf8', stdio: ['pipe', 'pipe', 'pipe'] }
       );
     }).not.toThrow();
+  });
+
+  it('accepts one or more model proofreading attestations', () => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead>
+          <title>Digte</title><year>1900</year>
+          <proofreadings>
+            <proofreading model="gpt-5.6-sol" datetime="2026-09-01T21:00:00+02:00"/>
+            <proofreading model="future-model" datetime="2027-01-02T03:04:05Z"/>
+          </proofreadings>
+        </workhead>
+      </kalliopework>
+    `;
+
+    expect(() => validate(xml)).not.toThrow();
+  });
+
+  it.each([
+    '',
+    '<proofreading datetime="2026-09-01T21:00:00+02:00"/>',
+    '<proofreading model="gpt-5.6-sol"/>',
+    '<proofreading model="" datetime="2026-09-01T21:00:00+02:00"/>',
+    '<proofreading model="gpt-5.6-sol" datetime="ikke-en-dato"/>',
+    '<proofreading model="gpt-5.6-sol" datetime="2026-09-01T21:00:00+02:00" extra="nej"/>',
+    '<proofreading model="gpt-5.6-sol" datetime="2026-09-01T21:00:00+02:00">tekst</proofreading>',
+  ])('rejects an invalid proofreading attestation: %s', proofreading => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Digte</title><year>1900</year><proofreadings>${proofreading}</proofreadings></workhead>
+      </kalliopework>
+    `;
+
+    expect(() => validate(xml)).toThrow();
+  });
+
+  it('rejects proofreading attestations outside workhead', () => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Digte</title><year>1900</year></workhead>
+        <workbody><proofreadings><proofreading model="gpt-5.6-sol" datetime="2026-09-01T21:00:00+02:00"/></proofreadings></workbody>
+      </kalliopework>
+    `;
+
+    expect(() => validate(xml)).toThrow();
   });
 
   it('accepts metre analyses with confidence from zero to one', () => {
