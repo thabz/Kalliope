@@ -542,14 +542,7 @@ const TextPage = (props) => {
   }
   let ogDescription = '';
   let shouldIndentTitle = false;
-  const hasMarginNotes = (text.blocks ?? []).some((block) =>
-    block.lines.some((line) => {
-      const content = line[0];
-      return (
-        typeof content === 'string' && /<margin(?:\s|>)/.test(content)
-      );
-    })
-  );
+  const hasMarginNotes = blocksHaveMarginNotes(text.blocks);
 
   let body = null;
   if (text.text_type === 'section' && text.toc != null) {
@@ -686,3 +679,11 @@ TextPage.getInitialProps = async ({ query: { lang, textId, highlight } }) => {
 };
 
 export default TextPage;
+
+export const blocksHaveMarginNotes = (blocks) =>
+  (blocks || []).some((block) =>
+    block.lines.some((line) => {
+      const content = line[0];
+      return typeof content === 'string' && /<margin(?:\s|>)/.test(content);
+    })
+  );
