@@ -566,6 +566,26 @@ Identify:
 - notes attached to a complete text
 - footnotes attached to specific passages
 
+For every included text, inspect its first source page directly and make a
+separate heading check before finalizing the segmentation. Account for every
+printed heading line in its original order and classify it by function:
+
+- lines above the principal title as `suptitle`
+- the principal title as `title`
+- lines below it as `subtitle`
+- multiple printed lines in one supertitle or subtitle as separate `line`
+  elements
+
+Follow the source-based title-structure rule in `docs/xml-work-format.md`.
+Preserve wording, historical spelling, inflection, punctuation and line order.
+Never concatenate, reorder, paraphrase or grammatically normalize heading
+lines to produce a clearer, shorter or more distinctive catalogue title. The
+table of contents is supporting evidence only and cannot overrule the heading
+on the text's own first page. A heading for an internal division belongs in the
+body using the documented heading structure rather than being promoted into
+the text metadata. Record a `TODO:` note or finding when the hierarchy cannot
+be established safely; do not resolve uncertainty by inventing a title.
+
 Check both the first and last relevant page directly. A presumed page range or
 table of contents may be wrong.
 
@@ -1136,6 +1156,13 @@ Both passes must cover the complete relevant page range. The independent pass
 must be read-only, and reviewer findings must be rechecked after the editor's
 changes.
 
+As part of that pass, reopen the first source page of every included text and
+compare every `suptitle`, `title`, `subtitle` and nested `line` value with the
+printed heading. Check exact wording, spelling, inflection, punctuation, order
+and division into fields. This is a separate editorial check; XML validation,
+the page inventory and a correct table of contents do not prove that heading
+metadata is source-faithful.
+
 OCR comparison is a supplement to, not a replacement for, direct visual
 proofreading.
 
@@ -1162,6 +1189,10 @@ Explicitly verify that:
   document order, while gaps are allowed
 - `<workhead>` contains `<pagebreaks/>`, even when there are no `<pb>` elements
 - no heading or numbered section has disappeared
+- every printed heading line on each text's first source page is represented
+  without concatenation, reordering, paraphrase or grammatical normalization
+- every `<suptitle>`, `<title>`, `<subtitle>` and nested `<line>` has been
+  checked directly against that source page
 - source order is preserved
 - advertisements are excluded
 - the table of contents is excluded as a text
@@ -1377,6 +1408,11 @@ The task is complete only when all applicable items are true:
 - [ ] Fresh OCR was produced from page images with at least two meaningfully
       different passes or strategies.
 - [ ] Every relevant page was checked directly against the facsimile.
+- [ ] The first source page of every included text was checked separately for
+      its complete printed heading structure.
+- [ ] Every `<suptitle>`, `<title>`, `<subtitle>` and nested `<line>` preserves
+      the source wording, spelling, inflection, punctuation, order and field
+      hierarchy without an invented or normalized catalogue title.
 - [ ] Every internal source-page transition in an included body has exactly one
       precisely placed `<pb>`.
 - [ ] Every `<pb>` has a non-empty `facs` containing the correct facsimile page
