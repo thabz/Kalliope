@@ -121,14 +121,15 @@ const facsimileHtml = (webview, document, result) => {
   <meta charset="UTF-8">
   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src ${cspSource} https:; style-src ${cspSource} 'unsafe-inline';">
   <style>
-    body { margin: 0; font-family: var(--vscode-font-family); color: var(--vscode-foreground); background: var(--vscode-editor-background); }
-    header { position: sticky; top: 0; z-index: 1; padding: 12px 16px; border-bottom: 1px solid var(--vscode-panel-border); background: var(--vscode-editor-background); }
+    html, body { height: 100%; }
+    body { display: flex; flex-direction: column; margin: 0; font-family: var(--vscode-font-family); color: var(--vscode-foreground); background: var(--vscode-editor-background); }
+    header { flex: 0 0 auto; padding: 12px 16px; border-bottom: 1px solid var(--vscode-panel-border); background: var(--vscode-editor-background); }
     h1 { margin: 0; font-size: 15px; line-height: 1.35; font-weight: 600; }
     .meta { margin-top: 4px; font-size: 12px; color: var(--vscode-descriptionForeground); }
-    main { padding: 16px; }
-    figure { margin: 0 0 18px; }
+    main { flex: 1 1 auto; min-height: 0; box-sizing: border-box; overflow: auto; padding: 16px; }
+    figure { display: grid; grid-template-rows: auto minmax(0, 1fr); height: 100%; margin: 0 0 18px; }
     figcaption { margin-bottom: 8px; font-size: 12px; color: var(--vscode-descriptionForeground); }
-    img { display: block; width: 100%; height: auto; background: var(--vscode-editorWidget-background); }
+    img { display: block; width: 100%; height: 100%; min-height: 0; object-fit: contain; object-position: top center; background: var(--vscode-editorWidget-background); }
   </style>
 </head>
 <body>
