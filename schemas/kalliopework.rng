@@ -222,6 +222,7 @@
   <define name="picture">
     <element name="picture">
       <optional><attribute name="src"><text/></attribute></optional>
+      <optional><attribute name="href"><text/></attribute></optional>
       <optional><attribute name="type"><text/></attribute></optional>
       <optional><attribute name="year"><text/></attribute></optional>
       <optional><attribute name="artwork"><text/></attribute></optional>

@@ -26,6 +26,8 @@ const knownPictureAttrs = new Set([
   'clip-path',
   // Local image id, primarily in artwork and portrait registries.
   'id',
+  // Explicit link to the image's source page.
+  'href',
   // Museum inventory number.
   'invnr',
   // Language for image text or description content.

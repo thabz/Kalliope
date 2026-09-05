@@ -775,6 +775,8 @@ Portraet:
 Attributter:
 
 - `src`: lokalt billede. Relative paths slaas op under `/images/<digter>`.
+- `href`: eksplicit link til billedets kildeside. Vises som et linkikon ved billedteksten
+  og har forrang for et link dannet af museumsmetadata.
 - `artwork`: reference til et billede i `content/artwork.xml` eller `fdirs/<kunstner>/artwork.xml`.
 - `portrait`: reference til et portraet i `fdirs/<digter>/portraits.xml`.
 - `primary="true"`: markerer primaert billede.
