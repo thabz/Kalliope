@@ -376,6 +376,13 @@ replace fresh OCR from the page images or direct visual proofreading.
 Follow `docs/facsimile-korrektur.md` when extracting embedded images or
 rendering PDF pages.
 
+For historical Danish Fraktur, use `$prepare-fraktur-ocr` before transcription
+to create a validated scratch bundle with cleaned image variants, distributed
+text-dense benchmark pages and separate Tesseract readings. Consume its TXT and
+TSV files as OCR evidence while retaining the bundle's page IDs and hashes. Do
+not copy its sampling heuristic into this skill, infer layout from its TSV
+coordinates or treat its recommended configuration as source authority.
+
 Render the page images used as OCR input at 300 DPI. This requirement applies
 to OCR working images, not to the published facsimile extraction: generate the
 published facsimiles with the repository's ordinary facsimile tool and its
