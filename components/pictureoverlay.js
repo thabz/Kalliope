@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import CommonData from '../common/commondata.js';
 import * as ImagePaths from '../common/imagepaths.js';
 import { CloseButton, DownArrow, LeftArrow, RightArrow } from './icons.js';
@@ -10,7 +10,32 @@ const filenameFromSrc = (src) => {
   return path.substring(path.lastIndexOf('/') + 1);
 };
 
-const BiggerPicture = ({ picture }) => {
+const iconSize = 30;
+const iconSpacing = 35;
+const ovalIconStart = 0.08;
+
+const isOvalPicture = (picture) => {
+  return picture.src.indexOf('-oval.jpg') > -1;
+};
+
+const calculateOvalIconPositions = (width, height, count) => {
+  const radiusX = width / 2;
+  const radiusY = height / 2;
+
+  return Array.from({ length: count }, (_, index) => {
+    const centerY = height * ovalIconStart + index * iconSpacing;
+    const normalizedY = (centerY - radiusY) / radiusY;
+    const centerX =
+      radiusX + radiusX * Math.sqrt(Math.max(0, 1 - normalizedY ** 2));
+
+    return {
+      left: centerX - iconSize / 2,
+      top: centerY - iconSize / 2,
+    };
+  });
+};
+
+const BiggerPicture = ({ imageRef, picture, controls }) => {
   const src = picture.src;
   const fallbackSrc = ImagePaths.fallbackThumbnailSrc(
     src,
@@ -31,10 +56,9 @@ const BiggerPicture = ({ picture }) => {
     ? '' //Strings.trimHtml(picture.content_html)
     : 'Billede';
 
-  let pictureClassName = 'overlay-picture';
+  const ovalPicture = isOvalPicture(picture);
   let imgClassName = '';
-  if (picture.src.indexOf('-oval.jpg') > -1) {
-    pictureClassName += ' oval-mask';
+  if (ovalPicture === true) {
     imgClassName += ' oval-mask';
   }
 
@@ -51,17 +75,38 @@ const BiggerPicture = ({ picture }) => {
   }
 
   return (
-    <figure className="overlay-figure" style={clipPathDropShadowStyle}>
-      <img
-        src={fallbackSrc}
-        className={imgClassName}
-        alt={alt}
-        style={clipPathStyle}
-      />
+    <figure
+      className={`overlay-figure${
+        ovalPicture === true ? ' oval-picture' : ''
+      }`}>
+      <div className="overlay-image-frame">
+        <div className="overlay-image-shadow" style={clipPathDropShadowStyle}>
+          <img
+            ref={imageRef}
+            src={fallbackSrc}
+            className={imgClassName}
+            alt={alt}
+            style={clipPathStyle}
+          />
+        </div>
+        {controls}
+      </div>
       <FigCaption picture={picture} />
       <style jsx>{`
         figure {
           margin: 0;
+        }
+        figure.oval-picture :global(figcaption) {
+          text-align: center;
+        }
+        .overlay-image-frame {
+          display: inline-block;
+          line-height: 0;
+          position: relative;
+          vertical-align: top;
+        }
+        .overlay-image-shadow {
+          display: block;
         }
         .oval-mask {
           border-radius: 50%;
@@ -79,6 +124,8 @@ const BiggerPicture = ({ picture }) => {
 
 const PictureOverlay = ({ pictures, startIndex, closeCallback }) => {
   const [currentIndex, setCurrentIndex] = useState(startIndex);
+  const [imageSize, setImageSize] = useState(null);
+  const imageRef = useRef(null);
 
   const hideOverlay = (e) => {
     e.preventDefault();
@@ -151,6 +198,54 @@ const PictureOverlay = ({ pictures, startIndex, closeCallback }) => {
     );
   }
   const picture = pictures[currentIndex];
+  const ovalPicture = isOvalPicture(picture);
+
+  useEffect(() => {
+    const image = imageRef.current;
+    if (image == null) {
+      return undefined;
+    }
+
+    const updateImageSize = () => {
+      const width = image.offsetWidth;
+      const height = image.offsetHeight;
+      if (width === 0 || height === 0) {
+        return;
+      }
+      setImageSize((currentSize) => {
+        if (
+          currentSize != null &&
+          currentSize.width === width &&
+          currentSize.height === height
+        ) {
+          return currentSize;
+        }
+        return { width, height };
+      });
+    };
+
+    setImageSize(null);
+    updateImageSize();
+    image.addEventListener('load', updateImageSize);
+    window.addEventListener('resize', updateImageSize);
+
+    const resizeObserver =
+      typeof ResizeObserver === 'undefined'
+        ? null
+        : new ResizeObserver(updateImageSize);
+    if (resizeObserver != null) {
+      resizeObserver.observe(image);
+    }
+
+    return () => {
+      image.removeEventListener('load', updateImageSize);
+      window.removeEventListener('resize', updateImageSize);
+      if (resizeObserver != null) {
+        resizeObserver.disconnect();
+      }
+    };
+  }, [picture.src]);
+
   buttons.push(
     <Tooltip text="Download originalbillede" key="download">
       <a
@@ -162,11 +257,38 @@ const PictureOverlay = ({ pictures, startIndex, closeCallback }) => {
       </a>
     </Tooltip>
   );
+
+  const ovalIconPositions =
+    ovalPicture === true && imageSize != null
+      ? calculateOvalIconPositions(
+          imageSize.width,
+          imageSize.height,
+          buttons.length
+        )
+      : [];
+  const controls = (
+    <div
+      className={`overlay-icon${ovalPicture === true ? ' oval' : ''}${
+        ovalPicture === true && imageSize != null ? ' positioned' : ''
+      }`}>
+      {buttons.map((button, index) => {
+        const style = ovalIconPositions[index] ?? {};
+        return (
+          <div className="overlay-icon-item" style={style} key={button.key}>
+            {button}
+          </div>
+        );
+      })}
+    </div>
+  );
   return (
     <div className="overlay-background" onClick={hideOverlay}>
       <div className="overlay-container" onClick={eatClick}>
-        <div className="overlay-icon">{buttons}</div>
-        <BiggerPicture picture={picture} />
+        <BiggerPicture
+          imageRef={imageRef}
+          picture={picture}
+          controls={controls}
+        />
       </div>
       <style jsx>{`
         .overlay-background {
@@ -206,7 +328,7 @@ const PictureOverlay = ({ pictures, startIndex, closeCallback }) => {
           width: 100px;
         }
 
-        .overlay-container .overlay-icon {
+        .overlay-container :global(.overlay-icon) {
           width: 30px;
           height: 30px;
           position: absolute;
@@ -214,12 +336,37 @@ const PictureOverlay = ({ pictures, startIndex, closeCallback }) => {
           top: -15px;
         }
 
-        .overlay-container .overlay-icon :global(svg),
-        .overlay-container .overlay-icon :global(a.download-icon) {
+        .overlay-container :global(.overlay-icon.oval) {
+          bottom: 0;
+          height: 100%;
+          left: 0;
+          pointer-events: none;
+          right: 0;
+          top: 0;
+          visibility: hidden;
+          width: 100%;
+        }
+
+        .overlay-container :global(.overlay-icon.oval.positioned) {
+          visibility: visible;
+        }
+
+        .overlay-container
+          :global(.overlay-icon.oval)
+          :global(.overlay-icon-item) {
+          pointer-events: auto;
+          position: absolute;
+        }
+
+        .overlay-container :global(.overlay-icon) :global(svg),
+        .overlay-container :global(.overlay-icon) :global(a.download-icon) {
           display: block;
         }
 
-        .overlay-container .overlay-icon :global(> * + *) {
+        .overlay-container
+          :global(.overlay-icon:not(.oval))
+          :global(.overlay-icon-item)
+          + :global(.overlay-icon-item) {
           margin-top: 5px;
         }
 
@@ -239,3 +386,4 @@ const PictureOverlay = ({ pictures, startIndex, closeCallback }) => {
 };
 
 export default PictureOverlay;
+export { calculateOvalIconPositions, isOvalPicture };
