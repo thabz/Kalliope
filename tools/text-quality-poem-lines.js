@@ -85,7 +85,10 @@ const parsePoetWorkFiles = (rootDir = process.cwd()) => {
     }
 
     const lang = firstMatch(person, /\slang="([^"]+)"/);
-    const bornYear = firstYear(firstMatch(infoData, /<born>([\s\S]*?)<\/born>/));
+    const bornOrBaptized =
+      firstMatch(infoData, /<born>([\s\S]*?)<\/born>/) ??
+      firstMatch(infoData, /<baptized>([\s\S]*?)<\/baptized>/);
+    const bornYear = firstYear(bornOrBaptized);
     const workIds = firstMatch(infoData, /<works>([\s\S]*?)<\/works>/);
 
     const works = workIds
@@ -239,11 +242,18 @@ const regexps = [
     whitelist: [/\. \. \./],
   },
   { testName: 'leading-dash', regexp: /^-[a-zæøåA-ZÆØÅ]/m },
-  { testName: 'empty-firstline', regexp: /<firstline><\/firstline>/ },
+  {
+    testName: 'empty-firstline',
+    regexp: /<firstline>[^\S\r\n]*<\/firstline>/,
+  },
   {
     testName: 'firstline-trailing-punctuation',
     regexp: /<firstline>[^<]*[.,;:]\s*<\/firstline>/,
     whitelist: [/<firstline>[^<]*\.\s+\.\s+\.\s*<\/firstline>/],
+  },
+  {
+    testName: 'firstline-leading-punctuation',
+    regexp: /<firstline>[^\S\r\n]*[^\p{L}\p{N}\s<]/u,
   },
   { testName: 'missing-source-pages', regexp: /<source pages=""\/>/ },
   { testName: 'dot-followed-by-lowercase', regexp: /^.*[^\.]\.\s*[a-z;]\s*$/ },
