@@ -8,7 +8,8 @@ filstørrelser, SHA-256-checksummer, antal poster, relationer og genbrugsnoter.
 ## Bulkfiler og stabile felter
 
 - `poets.jsonl.gz`: én `poet` per linje med stabilt `id`, navn, land, sprog,
-  type, livsdata, kanonisk URL og registrerede eksterne identifikatorer.
+  type, livsdata (`born`, eventuelt `baptized`, og `dead`), kanonisk URL og
+  registrerede eksterne identifikatorer.
 - `works.jsonl.gz`: ét `work` per linje med globalt `id` på formen
   `{poet_id}/{local_id}`, `poet_id`, værkmetadata og kanonisk URL.
 - `texts.jsonl.gz`: én indekserbar tekstplacering per linje med stabilt `id`,
