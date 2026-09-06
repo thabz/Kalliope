@@ -61,7 +61,7 @@ const PersonMetaLine = ({ label, value }) => {
   );
 };
 
-const PersonMeta = ({ poet, lang }) => {
+export const PersonMeta = ({ poet, lang }) => {
   if (poet.type === 'collection') {
     return null;
   }
@@ -72,7 +72,9 @@ const PersonMeta = ({ poet, lang }) => {
 
   let born = poet.period == null ? null : dateAndPlace(poet.period.born, lang);
   let baptized =
-    poet.period == null ? null : dateAndPlace(poet.period.baptized, lang);
+    poet.period?.baptized == null
+      ? null
+      : dateAndPlace(poet.period.baptized, lang);
   let dead =
     poet.period == null ? null : dateAndPlace(poet.period.dead, lang, age);
 
