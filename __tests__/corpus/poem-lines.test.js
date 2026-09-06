@@ -1,8 +1,16 @@
 import {
   collectPoemLineQualityFindings,
+  findCommonPoetryIndentationFindings,
   formatPoemLineIssue,
   findPoemLineFindingsInText,
 } from '../../tools/text-quality-poem-lines.js';
+
+const commonIndentationIssues = data =>
+  findCommonPoetryIndentationFindings({
+    file: 'fdirs/test/work.xml',
+    data,
+    context: undefined,
+  });
 
 describe('Check workfiles', () => {
   it('has no poem-line quality issues', () => {
@@ -128,4 +136,77 @@ describe('Check workfiles', () => {
       ).toHaveLength(0);
     }
   );
+
+  it('reports a common removable indentation in a poem', () => {
+    const issues = commonIndentationIssues(
+      '<text id="shifted"><body><poetry>\n  Første\n    Anden\n  Tredje\n</poetry></body></text>',
+    );
+
+    expect(issues).toEqual([
+      expect.objectContaining({
+        rule: 'common-poetry-indentation',
+        textId: 'shifted',
+        line: 2,
+      }),
+    ]);
+    expect(issues[0].description).toContain('2 columns');
+  });
+
+  it('allows one-column relative indentation when a verse line starts at zero', () => {
+    const issues = commonIndentationIssues(
+      '<text id="relative"><body><poetry>\nFørste\n Anden\nFørste igen\n</poetry></body></text>',
+    );
+
+    expect(issues).toEqual([]);
+  });
+
+  it('measures indentation after a page break', () => {
+    const issues = commonIndentationIssues(
+      '<text id="page"><body><poetry>\n  Første\n<pb n="2"/>  Anden\n</poetry></body></text>',
+    );
+
+    expect(issues).toHaveLength(1);
+  });
+
+  it('ignores notes and non-verse lines', () => {
+    const issues = commonIndentationIssues(
+      [
+        '<text id="paratext"><body><poetry>',
+        '<nonum><center>TALER</center></nonum>',
+        '  Første<footnote>En note',
+        'uden versindrykning</footnote>',
+        '<wrap>Sceneanvisning</wrap>',
+        '  Anden',
+        '</poetry></body></text>',
+      ].join('\n'),
+    );
+
+    expect(issues).toHaveLength(1);
+    expect(issues[0].description).toContain('2 verse lines');
+  });
+
+  it('checks each text independently', () => {
+    const issues = commonIndentationIssues(
+      [
+        '<text id="shifted"><body><poetry>',
+        '  Første',
+        '  Anden',
+        '</poetry></body></text>',
+        '<text id="baseline"><body><poetry>',
+        'Første',
+        '  Anden',
+        '</poetry></body></text>',
+      ].join('\n'),
+    );
+
+    expect(issues.map(issue => issue.textId)).toEqual(['shifted']);
+  });
+
+  it('does not infer a common indentation from a single verse line', () => {
+    const issues = commonIndentationIssues(
+      '<text id="single"><body><poetry>\n  Eneste linje\n</poetry></body></text>',
+    );
+
+    expect(issues).toEqual([]);
+  });
 });

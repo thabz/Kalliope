@@ -629,6 +629,12 @@ Et citat
 I `<poetry>` laves linjenummerering automatisk. Hver femte linje faar visningsnummer,
 medmindre teksten bruger egne `<num>` eller `<margin>`.
 
+Verslinjernes indrykning skal være relativ til tekstens venstrekant. Hvis alle
+egentlige verslinjer i en tekst har den samme positive grundindrykning, skal den
+fælles indrykning trækkes fra alle linjerne. Et mønster på eksempelvis `2, 4, 2`
+skrives derfor som `0, 2, 0`. Sideskift, noter, talerangivelser og andre
+ikke-verslinjer indgår ikke i denne vurdering.
+
 ### Sideskift i kilden
 
 Et fysisk sideskift inde i en tekstkrop markeres ved begyndelsen af den nye
