@@ -325,6 +325,50 @@ historiske id-formater fortsat kan bevares uændret.
 - `<structure>`: den observerede, reproducerbare strofe- og linjestruktur.
 - `<syllables>`: en eller flere automatiske analyser af digtets stavelsesmønster.
 
+### Kildebaseret titelstruktur
+
+Titelfelterne skal gengive kildens trykte overskrifter, ikke en redaktionelt
+forbedret eller katalogiseret titel. Kontrollér tekstens første kildeside og
+bevar hver trykt overskriftslinjes ordlyd, historiske stavning, bøjning,
+tegnsætning og indbyrdes rækkefølge.
+
+Brug felterne efter den trykte funktion og placering:
+
+- linjer over hovedtitlen skrives i `<suptitle>`
+- hovedtitlen skrives i `<title>`
+- linjer under hovedtitlen skrives i `<subtitle>`
+- flere trykte linjer i samme over- eller undertitel bevares som særskilte
+  `<line>`-elementer i den oprindelige rækkefølge
+
+Eksempelvis skal de tre trykte linjer i `baggesen2026090116`, »Begyndelse af
+Digtet Odin.«, »(I Hexametre).« og »Første Sang.«, ikke omskrives til en
+konstrueret titel som »Odin. Begyndelsen af første Sang i Hexametrer«. De kan
+repræsenteres sådan:
+
+```xml
+<title>Begyndelse af Digtet Odin.</title>
+<subtitle>
+  <line>(I Hexametre).</line>
+  <line>Første Sang.</line>
+</subtitle>
+```
+
+Et tilsvarende flerlinjet overtitelparti bruger `<suptitle>` med ét `<line>`
+pr. trykt linje. En overskrift, der indleder en intern del af teksten, hører
+derimod til i brødteksten med den relevante eksisterende overskriftsstruktur;
+den må ikke flyttes til tekstens metadata alene på grund af skriftstørrelse
+eller centrering.
+
+Sammenskriv, ombyt eller parafrasér aldrig kildeoverskrifter, og ændr ikke ord,
+præpositioner, bøjninger eller talformer for at gøre titlen tydeligere eller
+entydig i et indeks. `<toctitle>`, `<linktitle>` og `<indextitle>` kan bruges,
+når Kalliopes visning kræver en særskilt dokumenteret titelvariant, men de må
+ikke erstatte eller begrunde en omskrivning af de kildebaserede titelfelter.
+Reglen om læsbar normalisering af versaler på et bibliografisk titelblad gælder
+ikke overskrifterne til værkets enkelte tekster. Hvis hierarkiet ikke kan
+afgøres sikkert fra kilden, bevares de sikre oplysninger, og tvivlen markeres
+med en eksplicit `TODO:`-note i stedet for at blive løst med et gæt.
+
 ### Automatisk formklassifikation
 
 Formklassifikatoren kombinerer de uafhængige analyser af struktur, rim, metrik
