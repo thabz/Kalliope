@@ -1,7 +1,13 @@
-# Salmonsen-biografier for udenlandske digtere
+# Salmonsen-biografier
 
 Denne arbejdsgang bruges til at tilføje biografier i `fdirs/<id>/bio.xml` for
-udenlandske digtere, når Salmonsens Konversationsleksikon er kilden.
+digtere, når Salmonsens Konversationsleksikon er kilden.
+
+Salmonsen er en foretrukken standardkilde til ikke-danske forfattere. For
+danske forfattere bruges <i>Dansk Biografisk Leksikon</i> (DBL) først; Salmonsen
+bruges, hvis DBL ikke har et relevant opslag eller ikke giver en tilstrækkelig
+biografisk fremstilling. En Salmonsen-artikel kan da enten stå alene eller
+supplere en selvstændig DBL-biografi i et separat `<biography>`-element.
 
 ## Kilder og afgrænsning
 
