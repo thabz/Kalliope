@@ -1,14 +1,6 @@
-import {
-  calculateOvalIconPositions,
-  isOvalPicture,
-} from '../components/pictureoverlay.js';
+import { isOvalPicture, ovalIconCenter } from '../components/pictureoverlay.js';
 
-const iconCenter = (position) => {
-  return {
-    x: position.left + 15,
-    y: position.top + 15,
-  };
-};
+const navigationControlCount = 4;
 
 describe('picture overlay controls', () => {
   test('recognizes pictures using the existing oval filename convention', () => {
@@ -21,27 +13,21 @@ describe('picture overlay controls', () => {
   });
 
   test('places every control center on the edge of the ellipse', () => {
-    const width = 600;
-    const height = 800;
-    const positions = calculateOvalIconPositions(width, height, 4);
-
-    positions.forEach((position) => {
-      const center = iconCenter(position);
+    for (let index = 0; index < navigationControlCount; index += 1) {
+      const center = ovalIconCenter(index);
       const ellipseValue =
-        ((center.x - width / 2) / (width / 2)) ** 2 +
-        ((center.y - height / 2) / (height / 2)) ** 2;
+        ((center.left - 50) / 50) ** 2 + ((center.top - 50) / 50) ** 2;
 
-      expect(ellipseValue).toBeCloseTo(1);
-    });
+      expect(ellipseValue).toBeCloseTo(1, 3);
+    }
   });
 
-  test('keeps the controls 35 pixels apart vertically along the curve', () => {
-    const positions = calculateOvalIconPositions(600, 800, 4);
-    const centers = positions.map(iconCenter);
-
-    expect(centers[0].y).toBe(64);
-    expect(centers[1].y - centers[0].y).toBe(35);
-    expect(centers[2].y - centers[1].y).toBe(35);
-    expect(centers[3].y - centers[2].y).toBe(35);
+  test('orders four controls down the upper-right curve', () => {
+    for (let index = 1; index < navigationControlCount; index += 1) {
+      const previousCenter = ovalIconCenter(index - 1);
+      const center = ovalIconCenter(index);
+      expect(center.left).toBeGreaterThan(previousCenter.left);
+      expect(center.top).toBeGreaterThan(previousCenter.top);
+    }
   });
 });

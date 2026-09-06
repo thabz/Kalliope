@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import CommonData from '../common/commondata.js';
 import * as ImagePaths from '../common/imagepaths.js';
 import { CloseButton, DownArrow, LeftArrow, RightArrow } from './icons.js';
@@ -11,31 +11,32 @@ const filenameFromSrc = (src) => {
 };
 
 const iconSize = 30;
-const iconSpacing = 35;
-const ovalIconStart = 0.08;
+const ovalIconStartAngle = 65;
+const ovalIconAngleStep = 9;
+
+// Convert an evenly spaced angle on the upper-right quadrant to percentages.
+const ovalIconCenter = (index) => {
+  const angle =
+    ((ovalIconStartAngle - index * ovalIconAngleStep) * Math.PI) / 180;
+  return {
+    left: 50 + 50 * Math.cos(angle),
+    top: 50 - 50 * Math.sin(angle),
+  };
+};
 
 const isOvalPicture = (picture) => {
   return picture.src.indexOf('-oval.jpg') > -1;
 };
 
-const calculateOvalIconPositions = (width, height, count) => {
-  const radiusX = width / 2;
-  const radiusY = height / 2;
-
-  return Array.from({ length: count }, (_, index) => {
-    const centerY = height * ovalIconStart + index * iconSpacing;
-    const normalizedY = (centerY - radiusY) / radiusY;
-    const centerX =
-      radiusX + radiusX * Math.sqrt(Math.max(0, 1 - normalizedY ** 2));
-
-    return {
-      left: centerX - iconSize / 2,
-      top: centerY - iconSize / 2,
-    };
-  });
+const ovalIconStyle = (index) => {
+  const center = ovalIconCenter(index);
+  return {
+    left: `calc(${center.left}% - ${iconSize / 2}px)`,
+    top: `calc(${center.top}% - ${iconSize / 2}px)`,
+  };
 };
 
-const BiggerPicture = ({ imageRef, picture, controls }) => {
+const BiggerPicture = ({ picture, controls }) => {
   const src = picture.src;
   const fallbackSrc = ImagePaths.fallbackThumbnailSrc(
     src,
@@ -82,7 +83,6 @@ const BiggerPicture = ({ imageRef, picture, controls }) => {
       <div className="overlay-image-frame">
         <div className="overlay-image-shadow" style={clipPathDropShadowStyle}>
           <img
-            ref={imageRef}
             src={fallbackSrc}
             className={imgClassName}
             alt={alt}
@@ -124,8 +124,6 @@ const BiggerPicture = ({ imageRef, picture, controls }) => {
 
 const PictureOverlay = ({ pictures, startIndex, closeCallback }) => {
   const [currentIndex, setCurrentIndex] = useState(startIndex);
-  const [imageSize, setImageSize] = useState(null);
-  const imageRef = useRef(null);
 
   const hideOverlay = (e) => {
     e.preventDefault();
@@ -200,52 +198,6 @@ const PictureOverlay = ({ pictures, startIndex, closeCallback }) => {
   const picture = pictures[currentIndex];
   const ovalPicture = isOvalPicture(picture);
 
-  useEffect(() => {
-    const image = imageRef.current;
-    if (image == null) {
-      return undefined;
-    }
-
-    const updateImageSize = () => {
-      const width = image.offsetWidth;
-      const height = image.offsetHeight;
-      if (width === 0 || height === 0) {
-        return;
-      }
-      setImageSize((currentSize) => {
-        if (
-          currentSize != null &&
-          currentSize.width === width &&
-          currentSize.height === height
-        ) {
-          return currentSize;
-        }
-        return { width, height };
-      });
-    };
-
-    setImageSize(null);
-    updateImageSize();
-    image.addEventListener('load', updateImageSize);
-    window.addEventListener('resize', updateImageSize);
-
-    const resizeObserver =
-      typeof ResizeObserver === 'undefined'
-        ? null
-        : new ResizeObserver(updateImageSize);
-    if (resizeObserver != null) {
-      resizeObserver.observe(image);
-    }
-
-    return () => {
-      image.removeEventListener('load', updateImageSize);
-      window.removeEventListener('resize', updateImageSize);
-      if (resizeObserver != null) {
-        resizeObserver.disconnect();
-      }
-    };
-  }, [picture.src]);
-
   buttons.push(
     <Tooltip text="Download originalbillede" key="download">
       <a
@@ -258,21 +210,10 @@ const PictureOverlay = ({ pictures, startIndex, closeCallback }) => {
     </Tooltip>
   );
 
-  const ovalIconPositions =
-    ovalPicture === true && imageSize != null
-      ? calculateOvalIconPositions(
-          imageSize.width,
-          imageSize.height,
-          buttons.length
-        )
-      : [];
   const controls = (
-    <div
-      className={`overlay-icon${ovalPicture === true ? ' oval' : ''}${
-        ovalPicture === true && imageSize != null ? ' positioned' : ''
-      }`}>
+    <div className={`overlay-icon${ovalPicture === true ? ' oval' : ''}`}>
       {buttons.map((button, index) => {
-        const style = ovalIconPositions[index] ?? {};
+        const style = ovalPicture === true ? ovalIconStyle(index) : {};
         return (
           <div className="overlay-icon-item" style={style} key={button.key}>
             {button}
@@ -284,11 +225,7 @@ const PictureOverlay = ({ pictures, startIndex, closeCallback }) => {
   return (
     <div className="overlay-background" onClick={hideOverlay}>
       <div className="overlay-container" onClick={eatClick}>
-        <BiggerPicture
-          imageRef={imageRef}
-          picture={picture}
-          controls={controls}
-        />
+        <BiggerPicture picture={picture} controls={controls} />
       </div>
       <style jsx>{`
         .overlay-background {
@@ -343,12 +280,7 @@ const PictureOverlay = ({ pictures, startIndex, closeCallback }) => {
           pointer-events: none;
           right: 0;
           top: 0;
-          visibility: hidden;
           width: 100%;
-        }
-
-        .overlay-container :global(.overlay-icon.oval.positioned) {
-          visibility: visible;
         }
 
         .overlay-container
@@ -386,4 +318,4 @@ const PictureOverlay = ({ pictures, startIndex, closeCallback }) => {
 };
 
 export default PictureOverlay;
-export { calculateOvalIconPositions, isOvalPicture };
+export { isOvalPicture, ovalIconCenter };
