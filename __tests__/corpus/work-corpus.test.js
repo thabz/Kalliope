@@ -17,6 +17,7 @@ import {
   getElementByTagName,
   getElementsByTagNames,
 } from '../../tools/build-static/xml.js';
+import { resolveAuthorId } from '../../tools/build-static/anthologies.js';
 
 describe('tracked work corpus', () => {
   let filenames;
@@ -31,10 +32,11 @@ describe('tracked work corpus', () => {
   let externalSourceLinkIssues;
   let textFollowsNoteIssues;
   let textStructureIssues;
+  let unindexedAnthologyTexts;
 
   beforeAll(() => {
     const works = loadTrackedWorkFiles();
-    filenames = works.map(work => work.filename);
+    filenames = works.map((work) => work.filename);
     bodyLinkIssues = [];
     emptyAndreFiles = [];
     formattingIssues = [];
@@ -46,8 +48,25 @@ describe('tracked work corpus', () => {
     externalSourceLinkIssues = [];
     textFollowsNoteIssues = [];
     textStructureIssues = [];
+    unindexedAnthologyTexts = [];
 
     works.forEach(({ content: xml, filename }) => {
+      const anthologyDirectory = filename.match(/^fdirs\/(antologier[^/]+)\//);
+      if (anthologyDirectory != null) {
+        const anthologyId = anthologyDirectory[1];
+        const document = parseWorkXml(xml);
+        getElementsByTagNames(document, ['text']).forEach((text) => {
+          if (
+            resolveAuthorId(text, anthologyId) === anthologyId &&
+            text.getAttribute('skip-index') !== 'true'
+          ) {
+            unindexedAnthologyTexts.push(
+              `${filename}: ${text.getAttribute('id')}`
+            );
+          }
+        });
+      }
+
       if (filename.endsWith('/andre.xml')) {
         const document = parseWorkXml(xml);
         const workBody = getElementByTagName(document, 'workbody');
@@ -90,7 +109,7 @@ describe('tracked work corpus', () => {
       const document = parseWorkXml(xml);
       const sourcePolicyIssues = collectSourcePolicyIssues(filename, document);
       andreWorkheadSourceIssues.push(
-        ...sourcePolicyIssues.andreWorkheadSources,
+        ...sourcePolicyIssues.andreWorkheadSources
       );
       externalSourceLinkIssues.push(...sourcePolicyIssues.externalSourceLinks);
       textFollowsNoteIssues.push(...sourcePolicyIssues.textFollowsNotes);
@@ -99,7 +118,7 @@ describe('tracked work corpus', () => {
       }
       if (checks.textStructure === true) {
         textStructureIssues.push(
-          ...collectTextStructureIssues(filename, document),
+          ...collectTextStructureIssues(filename, document)
         );
       }
       if (checks.sources === true) {
@@ -109,7 +128,7 @@ describe('tracked work corpus', () => {
       }
       if (checks.pageBreaks === true) {
         pageBreakIssues.push(
-          ...collectPageBreakIssues(filename, xml, document),
+          ...collectPageBreakIssues(filename, xml, document)
         );
       }
     });
@@ -129,6 +148,10 @@ describe('tracked work corpus', () => {
 
   it('keeps poetry free of leading and trailing blank lines', () => {
     expect(poetryBoundaryBlankLineIssues).toEqual([]);
+  });
+
+  it('keeps anthology texts without an identified author out of indexes', () => {
+    expect(unindexedAnthologyTexts).toEqual([]);
   });
 
   it('keeps links out of work body text', () => {
@@ -168,7 +191,7 @@ describe('tracked work corpus', () => {
       execFileSync(
         'xmllint',
         ['--noout', '--relaxng', 'schemas/kalliopework.rng', ...filenames],
-        { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] },
+        { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }
       );
     } catch (error) {
       throw new Error(error.stderr || error.message);

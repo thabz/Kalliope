@@ -265,6 +265,8 @@ Buildet udleder en række booleans fra `info.xml` og nabofiler:
 
 - `has_works`: baseret på `<works>`.
 - `has_poems`: sand hvis et værk indeholder `<poetry>`.
+- `has_indexed_poems`: sand hvis mindst ét digt indgår i titel- og
+  førstelinjeindekserne.
 - `has_prose`: sand hvis et værk indeholder `<prose>`.
 - `has_texts`: `has_poems || has_prose`.
 - `has_portraits`: findes `fdirs/<id>/portraits.xml`.

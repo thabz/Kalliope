@@ -1298,6 +1298,9 @@ const works_first_pass = (collected) => {
       (collected.workids.get(poetId) || []).length > 0 ||
       works.has(`${poetId}/${ANTHOLOGY_WORK_ID}`);
     poet.has_poems = poetTexts.some(text => text.hasPoetry);
+    poet.has_indexed_poems = poetTexts.some(
+      text => text.hasPoetry && text.skipIndex !== true
+    );
     poet.has_prose = poetTexts.some(text => text.hasProse);
     poet.has_texts = poet.has_poems || poet.has_prose;
     poet.has_anthology_texts = poetTexts.some(
