@@ -31,6 +31,10 @@ const poetListItem = (poet) => {
         ? null
         : {
             born: period.born == null ? null : { date: period.born.date },
+            baptized:
+              period.baptized == null
+                ? null
+                : { date: period.baptized.date },
             dead: period.dead == null ? null : { date: period.dead.date },
           },
   };
@@ -99,12 +103,12 @@ const groupsByYear = (poets, lang, country) => {
       let key = _('Ukendt fødeår', lang);
       if (
         p.period != null &&
-        p.period.born != null &&
-        p.period.born.date !== '?'
+        (p.period.born != null || p.period.baptized != null) &&
+        (p.period.born ?? p.period.baptized).date !== '?'
       ) {
-        const born = parseDate(p.period.born.date);
-        if (born.year != null) {
-          key = poetYearIntervalTitle(born.year);
+        const start = parseDate((p.period.born ?? p.period.baptized).date);
+        if (start.year != null) {
+          key = poetYearIntervalTitle(start.year);
         }
       }
       let group = groups.get(key) || [];

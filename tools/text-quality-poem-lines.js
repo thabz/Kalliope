@@ -85,7 +85,10 @@ const parsePoetWorkFiles = (rootDir = process.cwd()) => {
     }
 
     const lang = firstMatch(person, /\slang="([^"]+)"/);
-    const bornYear = firstYear(firstMatch(infoData, /<born>([\s\S]*?)<\/born>/));
+    const bornOrBaptized =
+      firstMatch(infoData, /<born>([\s\S]*?)<\/born>/) ??
+      firstMatch(infoData, /<baptized>([\s\S]*?)<\/baptized>/);
+    const bornYear = firstYear(bornOrBaptized);
     const workIds = firstMatch(infoData, /<works>([\s\S]*?)<\/works>/);
 
     const works = workIds

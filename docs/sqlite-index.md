@@ -28,7 +28,8 @@ Bygning:
 
 - `poet`
   - Nøgle: `poet_id`
-  - Indeholder basisinfo om forfattere og booleans for antal-typer.
+  - Indeholder basisinfo om forfattere, fødsels-, dåbs- og dødsdata samt
+    booleans for antal-typer.
 - `work`
   - Nøgle: `work_id`
   - Indeholder værkstamdata, publiceringsdato og relation til parent/work-type.
