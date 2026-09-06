@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="lindgreen" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Ferdinand Ludvig Wilhelm</firstname>
+    <lastname>Lindgreen</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1770</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1842-06-18</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <literary-periods>dk-guldalder-og-romantik</literary-periods>
+  <identifiers>
+    <wikidata>Q12311213</wikidata>
+    <wikipedia-da>Ferdinand Lindgreen</wikipedia-da>
+    <lex-dk>Ferdinand_Lindgreen</lex-dk>
+    <danskforfatterleksikon-dk>lferdinandlindgreen</danskforfatterleksikon-dk>
+  </identifiers>
+</person>

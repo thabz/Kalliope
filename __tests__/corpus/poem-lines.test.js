@@ -45,6 +45,19 @@ describe('Check workfiles', () => {
     expect(issues.filter((issue) => issue.rule === 'm-ellipsis')).toHaveLength(1);
   });
 
+  it.each(['', ' ', '\t'])('reports an empty firstline containing %j', blank => {
+    const issues = findPoemLineFindingsInText({
+      file: 'fdirs/test/firstline.xml',
+      data: `<text id="firstline"><firstline>${blank}</firstline></text>`,
+      lang: 'da',
+      shouldUseModernFrenchPunctuationSpacing: false,
+    });
+
+    expect(issues.filter(issue => issue.rule === 'empty-firstline')).toHaveLength(
+      1
+    );
+  });
+
   it.each([',', ';', ':'])('reports a firstline ending with %s', punctuation => {
     const issues = findPoemLineFindingsInText({
       file: 'fdirs/test/firstline.xml',
@@ -83,4 +96,36 @@ describe('Check workfiles', () => {
       issues.filter(issue => issue.rule === 'firstline-trailing-punctuation')
     ).toHaveLength(0);
   });
+
+  it.each(['„', '»', '"', ',,', '— ', '... ', '(', '¡'])(
+    'reports a firstline beginning with %s',
+    punctuation => {
+      const issues = findPoemLineFindingsInText({
+        file: 'fdirs/test/firstline.xml',
+        data: `<text id="firstline"><firstline>${punctuation}Første linje</firstline></text>`,
+        lang: 'da',
+        shouldUseModernFrenchPunctuationSpacing: false,
+      });
+
+      expect(
+        issues.filter(issue => issue.rule === 'firstline-leading-punctuation')
+      ).toHaveLength(1);
+    }
+  );
+
+  it.each(['Æbler falder', 'Én rose', 'Ἐν ἀρχῇ', '4 Sange'])(
+    'allows a firstline beginning with a Unicode letter or number: %s',
+    firstline => {
+      const issues = findPoemLineFindingsInText({
+        file: 'fdirs/test/firstline.xml',
+        data: `<text id="firstline"><firstline>${firstline}</firstline></text>`,
+        lang: 'da',
+        shouldUseModernFrenchPunctuationSpacing: false,
+      });
+
+      expect(
+        issues.filter(issue => issue.rule === 'firstline-leading-punctuation')
+      ).toHaveLength(0);
+    }
+  );
 });
