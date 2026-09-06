@@ -2,8 +2,6 @@
 <kalliopework id="andre" author="goetzn" status="incomplete" type="poetry">
 <workhead>
   <title>Andre digte</title>
-  <source id="musenalmanach-1784"><i>Hamburger Musenalmanach</i>, 1784.</source>
-  <source id="epigrammen-dichter-1843"><i>Epigrammen-Dichter</i>, 1843.</source>
 </workhead>
 <workbody>
 
@@ -12,7 +10,7 @@
   <title>Hymen und die Truppen Amors</title>
   <firstline>Hymen stand im Hinterhalte</firstline>
   <quality>korrektur1,kilde,side</quality>
-  <source in="musenalmanach-1784" pages="110"/>
+  <source pages="110"><i>Hamburger Musenalmanach</i>, 1784.</source>
 </head>
 <body>
 <poetry>
@@ -39,7 +37,7 @@ Wir verlangen nur den Durchzug!
     <note>En anden version er trykt med titlen <i>Madrigal</i>.</note>
   </notes>
   <quality>korrektur1,kilde,side</quality>
-  <source in="epigrammen-dichter-1843" pages="152"/>
+  <source pages="152"><i>Epigrammen-Dichter</i>, 1843.</source>
 </head>
 <body>
 <poetry>
@@ -56,7 +54,7 @@ Doch Andern nur, doch nur zum allerletzten Male.
   <title>Die Spröde</title>
   <firstline>Auf deinen Wangen blüht die Lieblichkeit des Lenzen</firstline>
   <quality>korrektur1,kilde,side</quality>
-  <source in="epigrammen-dichter-1843" pages="153"/>
+  <source pages="153"><i>Epigrammen-Dichter</i>, 1843.</source>
 </head>
 <body>
 <poetry>

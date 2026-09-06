@@ -81,6 +81,17 @@ describe('museum groups', () => {
 });
 
 describe('museum links', () => {
+  it('prefers an explicit picture source link', () => {
+    expect(
+      build_museum_url(
+        picture(
+          'href="https://source.example/image" museum="museum" objid="work-slug"',
+        ),
+        collected('https://example.com/works/${objId}'),
+      ),
+    ).toBe('https://source.example/image');
+  });
+
   it('builds links from the identifier required by the template', () => {
     expect(
       build_museum_url(

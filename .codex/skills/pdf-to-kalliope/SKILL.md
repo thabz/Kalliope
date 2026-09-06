@@ -328,6 +328,35 @@ This capitalization normalization applies to title-page metadata and its
 bibliographic transcription. It does not authorize modernization of poems,
 prose or quoted source text elsewhere in the work.
 
+## Mandatory draft and proofreading lifecycle
+
+Treat generated XML as a draft. `txt2xml` MUST emit `status="incomplete"` and
+MUST NOT emit `<quality>` or any proofreading flag. Do not mark a PDF import
+complete from transcription, OCR agreement, one proofreading pass or passing
+tests alone.
+
+Use this lifecycle:
+
+1. The producer creates and edits the draft while it remains `incomplete`.
+2. The producer performs the first full page-by-page facsimile proofreading.
+   Afterward each included text may receive `korrektur1,kilde,side`; the work
+   remains `incomplete`.
+3. A different model or session reviews every relevant page read-only. There
+   is exactly one XML editor; the independent reviewer reports findings and
+   does not edit the XML.
+4. The editor fixes findings. The independent reviewer rechecks each fix.
+   `fixed` is unresolved; only `verified`, `rejected` or `withdrawn` is final.
+5. Record that all OCR, page, stanza and indentation candidates were assessed
+   against the facsimile. Run XML and repository tests.
+6. Only after the final review passes, add `korrektur2`, set the work to
+   `complete`, and add the independent reviewer's model attestation to
+   `<workhead>` as documented in `docs/xml-work-format.md`. Rerun tests and
+   create the frozen checkpoint from this final state.
+
+The published attestation contains only `model` and an ISO 8601 `datetime`
+with timezone. Do not add a hash, sidecar reference or automatic invalidation
+metadata to it. Preserve older attestations when a later model adds another.
+
 ## 4. Ignore the PDF's existing OCR layer
 
 The PDF may contain an OCR text layer, but it is known to be unreliable.
@@ -346,6 +375,13 @@ replace fresh OCR from the page images or direct visual proofreading.
 
 Follow `docs/facsimile-korrektur.md` when extracting embedded images or
 rendering PDF pages.
+
+For historical Danish Fraktur, use `$prepare-fraktur-ocr` before transcription
+to create a validated scratch bundle with cleaned image variants, distributed
+text-dense benchmark pages and separate Tesseract readings. Consume its TXT and
+TSV files as OCR evidence while retaining the bundle's page IDs and hashes. Do
+not copy its sampling heuristic into this skill, infer layout from its TSV
+coordinates or treat its recommended configuration as source authority.
 
 Render the page images used as OCR input at 300 DPI. This requirement applies
 to OCR working images, not to the published facsimile extraction: generate the
@@ -444,12 +480,12 @@ then set `status` to `reviewed`. A page that starts a new `<text>` remains an
 explicit `text-start` exception and must not acquire a synthetic `<pb>`.
 
 These files and commands are process-neutral. They do not depend on Codex,
-CMUX, a particular agent, or any number of editors. A single editor can use
-them alone; a distributed review can assign non-overlapping page ranges using
-arbitrary stable reviewer IDs. Coordination messages are outside the data
-contract. When the surrounding workflow provides a coordination channel such
-as CMUX, report blockers, decisions and review milestones there, but do not
-make any audit command depend on that channel.
+CMUX or a particular agent. The producer can use them during the first pass,
+but the completion checkpoint requires every page to be assigned to a reviewer
+whose stable ID differs from the producer ID. Coordination messages are
+outside the data contract. When the surrounding workflow provides a
+coordination channel such as CMUX, report blockers, decisions and review
+milestones there, but do not make any audit command depend on that channel.
 
 During distributed review, designate exactly one XML editor. All other
 reviewers work read-only and add findings to the shared contract through the
@@ -468,7 +504,8 @@ node .codex/skills/pdf-to-kalliope/scripts/findings-register.js validate \
   /tmp/<work>-findings.jsonl
 ```
 
-The command exits unsuccessfully for malformed records or any open finding.
+The command exits unsuccessfully for malformed records or any `open` or
+`fixed` finding. A `verified` finding requires `verified_by`.
 Use the `status` subcommand to make an auditable status transition instead of
 rewriting IDs:
 
@@ -476,6 +513,11 @@ rewriting IDs:
 node .codex/skills/pdf-to-kalliope/scripts/findings-register.js status \
   /tmp/<work>-findings.jsonl FINDING-ID fixed \
   'Rettet mod facsimilet' 'facs 019.jpg, før/efter ...' DIFF-SHA
+
+node .codex/skills/pdf-to-kalliope/scripts/findings-register.js status \
+  /tmp/<work>-findings.jsonl FINDING-ID verified \
+  'Genkontrolleret mod facsimilet' 'facs 019.jpg, rettelsen stemmer' \
+  DIFF-SHA REVIEWER-ID
 ```
 
 After each editing batch, run the semantic page audit against the independently
@@ -530,6 +572,26 @@ Identify:
 - every internal source-page boundary and its facsimile image filename
 - notes attached to a complete text
 - footnotes attached to specific passages
+
+For every included text, inspect its first source page directly and make a
+separate heading check before finalizing the segmentation. Account for every
+printed heading line in its original order and classify it by function:
+
+- lines above the principal title as `suptitle`
+- the principal title as `title`
+- lines below it as `subtitle`
+- multiple printed lines in one supertitle or subtitle as separate `line`
+  elements
+
+Follow the source-based title-structure rule in `docs/xml-work-format.md`.
+Preserve wording, historical spelling, inflection, punctuation and line order.
+Never concatenate, reorder, paraphrase or grammatically normalize heading
+lines to produce a clearer, shorter or more distinctive catalogue title. The
+table of contents is supporting evidence only and cannot overrule the heading
+on the text's own first page. A heading for an internal division belongs in the
+body using the documented heading structure rather than being promoted into
+the text metadata. Record a `TODO:` note or finding when the hierarchy cannot
+be established safely; do not resolve uncertainty by inventing a title.
 
 Check both the first and last relevant page directly. A presumed page range or
 table of contents may be wrong.
@@ -1021,6 +1083,10 @@ source and validation rules.
 
 ## 17. Investigate translations and originals
 
+When the task includes inserting an identified original text for a translation,
+also use `$add-translation-original`; its rules govern version selection,
+source priority and the exact translation relation.
+
 When a text appears to be translated, adapted or based on another work,
 actively investigate:
 
@@ -1079,12 +1145,13 @@ relationship.
 
 Do not silently replace an existing occurrence with the new source.
 
-## 19. Perform a separate full proofreading phase
+## 19. Perform two separate full proofreading phases
 
 Generation of plausible XML is not completion.
 
-After the initial XML exists, perform a separate systematic proofreading pass
-following `docs/facsimile-korrektur.md`.
+After the initial XML exists, perform the producer's systematic proofreading
+pass and then the independent review described above, following
+`docs/facsimile-korrektur.md`.
 
 Use `docs/facsimile-korrektur.md` as the complete proofreading checklist. In
 this skill, the mandatory outcomes are: every relevant page is read directly
@@ -1092,7 +1159,16 @@ against the XML, every discrepancy is resolved against the facsimile, and the
 side inventory, structural analyses, notes, typography and page-break audit are
 all reconciled with the final file.
 
-The final work must have been checked page by page against the images.
+Both passes must cover the complete relevant page range. The independent pass
+must be read-only, and reviewer findings must be rechecked after the editor's
+changes.
+
+As part of that pass, reopen the first source page of every included text and
+compare every `suptitle`, `title`, `subtitle` and nested `line` value with the
+printed heading. Check exact wording, spelling, inflection, punctuation, order
+and division into fields. This is a separate editorial check; XML validation,
+the page inventory and a correct table of contents do not prove that heading
+metadata is source-faithful.
 
 OCR comparison is a supplement to, not a replacement for, direct visual
 proofreading.
@@ -1120,6 +1196,10 @@ Explicitly verify that:
   document order, while gaps are allowed
 - `<workhead>` contains `<pagebreaks/>`, even when there are no `<pb>` elements
 - no heading or numbered section has disappeared
+- every printed heading line on each text's first source page is represented
+  without concatenation, reordering, paraphrase or grammatical normalization
+- every `<suptitle>`, `<title>`, `<subtitle>` and nested `<line>` has been
+  checked directly against that source page
 - source order is preserved
 - advertisements are excluded
 - the table of contents is excluded as a text
@@ -1206,19 +1286,27 @@ or ambiguous deletion command.
 
 Follow `AGENTS.md`.
 
-READY requires complete inventory coverage, no open findings and recorded
-passing tests. Put a small JSON file in scratch space with `tests` and
-`reviewer_ranges`, then create the frozen checkpoint outside the worktree.
+READY requires complete independent inventory coverage, no `open` or `fixed`
+findings, all four candidate-review categories and recorded passing tests. Put
+a small JSON file in scratch space with `producer`, `tests`,
+`candidate_reviews` and `reviewer_ranges`, then create the frozen checkpoint
+outside the worktree.
 Each range has a stable `reviewer`, `facsimile_from` and `facsimile_to`; ranges
 must not overlap, must cover the complete inventory and must agree with each
 inventory row's reviewer. For example:
 
 ```json
 {
+  "producer": "producer-model-session",
   "tests": [{"command": "npm test -- --runInBand", "status": "passed"}],
+  "candidate_reviews": [
+    {"kind": "ocr", "reviewer": "reviewer-model-session", "status": "reviewed", "candidate_count": 12, "reviewed_count": 12},
+    {"kind": "page", "reviewer": "reviewer-model-session", "status": "reviewed", "candidate_count": 4, "reviewed_count": 4},
+    {"kind": "stanza", "reviewer": "reviewer-model-session", "status": "reviewed", "candidate_count": 31, "reviewed_count": 31},
+    {"kind": "indentation", "reviewer": "reviewer-model-session", "status": "reviewed", "candidate_count": 49, "reviewed_count": 49}
+  ],
   "reviewer_ranges": [
-    {"reviewer": "reviewer-a", "facsimile_from": "000.jpg", "facsimile_to": "049.jpg"},
-    {"reviewer": "reviewer-b", "facsimile_from": "050.jpg", "facsimile_to": "099.jpg"}
+    {"reviewer": "reviewer-model-session", "facsimile_from": "000.jpg", "facsimile_to": "099.jpg"}
   ]
 }
 ```
@@ -1234,11 +1322,13 @@ node .codex/skills/pdf-to-kalliope/scripts/review-checkpoint.js verify \
 ```
 
 The checkpoint records HEAD, a diff hash, changed files and their hashes,
-tests, finding counts and hash, inventory coverage and hash, and reviewer page
-ranges. Any later file or diff change invalidates the checkpoint and all prior
-approvals; rerun the applicable audits and create a new checkpoint. The
-checkpoint command refuses READY when a finding remains open, a page remains
-unreviewed or a recorded test has not passed.
+tests, candidate reviews, finding counts and hash, inventory coverage and hash,
+and reviewer page ranges. Any later file or diff change invalidates this
+scratch checkpoint; rerun the applicable audits and create a new checkpoint.
+This does not invalidate the published XML attestation. The checkpoint refuses
+READY when the producer reviewed a completion page, a finding is `open` or
+`fixed`, a candidate category is incomplete, a page remains unreviewed or a
+recorded test has not passed.
 
 Prepare and validate the complete change, then present it to the user before
 committing or pushing.
@@ -1314,9 +1404,10 @@ The task is complete only when all applicable items are true:
 - [ ] The complete PDF was inventoried.
 - [ ] Every PDF page was classified or otherwise accounted for.
 - [ ] The JSONL page inventory covers every relevant printed page and every row
-      is marked reviewed against the facsimile.
-- [ ] The findings JSONL register preserves every finding and has no open
-      status.
+      is marked reviewed against the facsimile by someone other than the
+      producer.
+- [ ] The findings JSONL register preserves every finding and has no `open` or
+      `fixed` status.
 - [ ] The PDF's existing OCR layer was not trusted as the transcription source.
 - [ ] OCR working images were rendered at 300 DPI.
 - [ ] The generated facsimile was synchronized to the Kalliope server and
@@ -1324,6 +1415,11 @@ The task is complete only when all applicable items are true:
 - [ ] Fresh OCR was produced from page images with at least two meaningfully
       different passes or strategies.
 - [ ] Every relevant page was checked directly against the facsimile.
+- [ ] The first source page of every included text was checked separately for
+      its complete printed heading structure.
+- [ ] Every `<suptitle>`, `<title>`, `<subtitle>` and nested `<line>` preserves
+      the source wording, spelling, inflection, punctuation, order and field
+      hierarchy without an invented or normalized catalogue title.
 - [ ] Every internal source-page transition in an included body has exactly one
       precisely placed `<pb>`.
 - [ ] Every `<pb>` has a non-empty `facs` containing the correct facsimile page
@@ -1381,11 +1477,15 @@ The task is complete only when all applicable items are true:
       `TODO:`.
 - [ ] The complete XML validates.
 - [ ] OCR candidate checks were reviewed.
+- [ ] OCR, page, stanza and indentation candidate totals equal their reviewed
+      totals, and the reviewer differs from the producer.
 - [ ] The semantic page audit and side-aware historical OCR profile were run on
       the final XML.
 - [ ] The whole-work wrapper analyzed every poetry block and all candidates
       were dispositioned.
 - [ ] A frozen review checkpoint was created and still verifies unchanged.
+- [ ] Every included text has `korrektur1,korrektur2,kilde,side`, the work is
+      `complete`, and `<workhead>` contains the independent model attestation.
 - [ ] The complete repository test suite passes.
 - [ ] `git diff --check` passes.
 - [ ] Temporary OCR and scratch files were removed.

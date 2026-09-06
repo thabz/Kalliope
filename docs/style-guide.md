@@ -31,6 +31,8 @@ Læs den relevante specialdokumentation før ændringer på området:
   ændringer i SQLite-buildet eller analyseværktøjer
 - `docs/corpus-dataset.md` ved ændringer i det offentlige, versionsmærkede
   korpusdatasæt eller dets discovery-endpoint
+- `docs/originaltekster-til-oversaettelser.md` ved opsporing, udvælgelse,
+  indsættelse eller kildeangivelse af originaltekster til oversættelser
 
 ## GitHub
 

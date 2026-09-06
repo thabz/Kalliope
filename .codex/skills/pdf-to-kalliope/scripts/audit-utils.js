@@ -60,7 +60,11 @@ const parseSimplePages = pages => {
   return to < from ? null : {
     from,
     to,
-    label: number => roman ? toRoman(number) : String(number),
+    label: number => {
+      if (number === from) return match[1];
+      if (number === to && match[2] != null) return match[2];
+      return roman ? toRoman(number) : String(number);
+    },
   };
 };
 
