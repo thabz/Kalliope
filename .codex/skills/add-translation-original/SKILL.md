@@ -5,8 +5,10 @@ description: Opspor, udvælg og indsæt den dokumenterede originaltekst til en o
 
 # Tilføj originaltekst til en oversættelse
 
-Find og indsæt den tekstversion, som den konkrete oversættelse med sikkerhed
-bygger på eller svarer til. Læs og følg
+Find og indsæt en dokumenteret tekstversion, som den konkrete oversættelse med
+sikkerhed bygger på eller svarer til. Et historisk korrekt forlæg foretrækkes,
+men manglen på det må ikke blokere for indsættelsen af en sikkert identificeret
+original i en nyere udgave. Læs og følg
 [`docs/originaltekster-til-oversaettelser.md`](../../../docs/originaltekster-til-oversaettelser.md)
 samt `AGENTS.md`, `docs/style-guide.md`, `docs/alle-danske-digtere.md`,
 `docs/xml-work-format.md` og `docs/kalliope-masterplan.md` før ændringer.
@@ -20,11 +22,13 @@ samt `AGENTS.md`, `docs/style-guide.md`, `docs/alle-danske-digtere.md`,
    titel eller forfatter alene er utilstrækkeligt. Bevar
    `note/@unknown-original-by`, hvis forfatteren kendes, men den konkrete
    original ikke kan identificeres.
-3. Prioritér oversætterens dokumenterede trykte udgave. Ellers vælg den nærmeste
-   samtidige trykte udgave før oversættelsen med samme tekstlige form. Brug kun
-   en troværdig digital udgave som tekstkilde, når dokumenteret søgning ikke
-   finder en egnet trykt kilde. Vælg ikke automatisk den ældste version.
-4. Opret normalt den identificerede trykte publikation som et selvstændigt værk
+3. Foretræk oversætterens dokumenterede trykte udgave eller den nærmeste
+   samtidige trykte udgave med samme tekstlige form. Hvis ingen af dem er
+   tilgængelige, må en troværdig nyere trykt eller digital udgave bruges, når
+   originalteksten stadig kan identificeres sikkert; dokumentér da, at kilden
+   er nyere. Det historisk korrekte forlæg er en prioritet, ikke et adgangskrav.
+   Vælg ikke automatisk den ældste version.
+4. Opret normalt den valgte publikation som et selvstændigt værk
    hos originalforfatteren. Brug samtidig `$add-kalliope-work`; brug også
    `$pdf-to-kalliope` for en komplet scannet PDF. Sæt værket til `incomplete`,
    hvis kun en del af publikationen indføres.
@@ -32,9 +36,10 @@ samt `AGENTS.md`, `docs/style-guide.md`, `docs/alle-danske-digtere.md`,
    `andre.xml` skal den fulde `<source>` stå direkte på hvert digt, aldrig i
    `<workhead>`. Læg eksterne links i `source/@href`, aldrig i et indlejret
    `<a href>`, og skriv ikke »Teksten følger ...« i en note.
-6. Forbind oversættelsen med den præcise originaltekst gennem Kalliopes
-   gældende oversættelsesrelation. Opret ikke en generisk relation til digteren
-   eller et andet tryk af samme værk.
+6. Forbind oversættelsen med den konkrete indsatte tekstversion gennem
+   Kalliopes gældende oversættelsesrelation. Opret ikke en generisk relation til
+   digteren. En nyere udgave må være relationens mål, når teksten matcher
+   sikkert, og det historiske forlæg ikke er tilgængeligt.
 7. Formatér de ændrede XML-filer, kontrollér diffen og kør hele testpakken.
    Dokumentér søgning, udgavevalg, tekstligt belæg og eventuelle åbne spørgsmål
    i overdragelsen og PR-beskrivelsen.
