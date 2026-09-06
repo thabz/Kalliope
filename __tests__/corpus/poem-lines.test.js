@@ -286,7 +286,7 @@ describe('Check workfiles', () => {
     );
 
     expect(
-      issues.filter(issue => issue.rule === 'link-title-boundary-quote'),
+      issues.filter(issue => issue.rule === 'link-title-boundary-guillemet'),
     ).toHaveLength(1);
   });
 
@@ -297,41 +297,51 @@ describe('Check workfiles', () => {
     );
 
     expect(
-      issues.filter(issue => issue.rule === 'link-title-boundary-quote'),
+      issues.filter(issue => issue.rule === 'link-title-boundary-guillemet'),
     ).toHaveLength(0);
   });
 
-  it('reports a quoted firstline when it becomes the effective link title', () => {
+  it('allows ordinary quotation marks when firstline becomes the effective link title', () => {
     const firstline = 'Verbrannt iſt dir dein Haus. „Verbrannt iſt nur das Holz.“';
     const issues = titleMetadataIssues(
       `<text id="rueckert"><head><firstline>${firstline}</firstline></head></text>`,
     );
 
     expect(
-      issues.filter(issue => issue.rule === 'link-title-boundary-quote'),
+      issues.filter(issue => issue.rule === 'link-title-boundary-guillemet'),
+    ).toHaveLength(0);
+  });
+
+  it.each([
+    '«Citeret»',
+    '»Citeret«',
+    '‹Citeret›',
+    '›Citeret‹',
+  ])('reports link-title boundary guillemets: %s', linktitle => {
+    const issues = titleMetadataIssues(
+      `<text id="quoted"><head><linktitle>${linktitle}</linktitle></head></text>`,
+    );
+
+    expect(
+      issues.filter(issue => issue.rule === 'link-title-boundary-guillemet'),
     ).toHaveLength(1);
   });
 
   it.each([
     '„Citeret“',
     '“Citeret”',
-    '«Citeret»',
-    '»Citeret«',
     '"Citeret"',
     ",,Citeret''",
     '‘Citeret’',
     "'Citeret'",
-  ])('reports link-title boundary quotation marks: %s', linktitle => {
-    const issues = titleMetadataIssues(
-      `<text id="quoted"><head><linktitle>${linktitle}</linktitle></head></text>`,
-    );
-
-    expect(
-      issues.filter(issue => issue.rule === 'link-title-boundary-quote'),
-    ).toHaveLength(1);
-  });
-
-  it.each(['† Mindedigt', '[Motto]', '(Til læseren)', 'Hvor er du?', 'Kom!', 'Bort —', "Kaphyw'"])(
+    '† Mindedigt',
+    '[Motto]',
+    '(Til læseren)',
+    'Hvor er du?',
+    'Kom!',
+    'Bort —',
+    "Kaphyw'",
+  ])(
     'allows non-quoting link-title punctuation: %s',
     linktitle => {
       const issues = titleMetadataIssues(

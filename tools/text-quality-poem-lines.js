@@ -164,24 +164,7 @@ const findCommonPoetryIndentationFindings = ({
   return issues;
 };
 
-const quoteAtStart = /^(?:["„“”«»‹›‚‘’]|,,|'')/u;
-const quoteAtEnd = /(?:["„“”«»‹›‚‘]|,,|'')$/u;
-const openingAsciiSingleQuote = /(?:^|[\s([])'(?=[\p{L}\p{N}])/u;
-
-const hasSingleQuoteAtEnd = value => {
-  if (value.endsWith('’')) {
-    return /[‘‚]/u.test(value.slice(0, -1));
-  }
-  if (!value.endsWith("'")) {
-    return false;
-  }
-  return openingAsciiSingleQuote.test(value.slice(0, -1));
-};
-
-const hasBoundaryQuote = value =>
-  quoteAtStart.test(value) ||
-  quoteAtEnd.test(value) ||
-  hasSingleQuoteAtEnd(value);
+const guillemetAtBoundary = /^(?:[«»‹›])|(?:[«»‹›])$/u;
 
 const extractedTitleCandidate = (head, type) => {
   const element = getChildByTagName(head, type);
@@ -264,16 +247,16 @@ const findTitleMetadataFindings = ({
             'The effective link title must not have surrounding whitespace.',
         }),
       );
-    } else if (hasBoundaryQuote(linkCandidate.title)) {
+    } else if (guillemetAtBoundary.test(linkCandidate.title)) {
       issues.push(
         titleIssue({
           file,
           context,
           textId,
           candidate: linkCandidate,
-          rule: 'link-title-boundary-quote',
+          rule: 'link-title-boundary-guillemet',
           description:
-            'The effective link title must not begin or end with quotation marks.',
+            'The effective link title must not begin or end with a guillemet.',
         }),
       );
     }

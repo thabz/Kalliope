@@ -315,9 +315,10 @@ historiske id-formater fortsat kan bevares uændret.
   `force-index="true"` virker som paa `<title>`.
 - `<toctitle>`: titel i vaerkets indholdsfortegnelse.
 - `<linktitle>`: titel i links. Den effektive linktitel må ikke have omgivende
-  blanktegn eller citationstegn ved yderkanterne, fordi visningen selv omgiver
-  titlen med citationstegn. Intern tegnsætning og afsluttende apostroffer i ord
-  er tilladt; et afsluttende spørgsmålstegn eller udråbstegn er også lovligt.
+  blanktegn eller guillemets (`«»` eller `‹›`) ved yderkanterne, fordi visningen
+  selv omgiver titlen med guillemets. Andre citationstegn som `„…“`, `“…”` og
+  `,,…''` er tilladt, ligesom intern tegnsætning og afsluttende spørgsmålstegn,
+  udråbstegn og apostroffer i ord.
 - `<subtitle>`: undertitel. Kan indeholde flere `<line>`.
 - `<suptitle>`: overtitel. Kan indeholde flere `<line>`.
 - `<nofirstline/>`: markerer bevidst manglende foerstelinje.
