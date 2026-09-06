@@ -26,6 +26,7 @@ describe('tracked work corpus', () => {
   let pageBreakIssues;
   let pageIntervalIssues;
   let pageOnlySourceIssues;
+  let poetryBoundaryBlankLineIssues;
   let andreWorkheadSourceIssues;
   let externalSourceLinkIssues;
   let textFollowsNoteIssues;
@@ -40,6 +41,7 @@ describe('tracked work corpus', () => {
     pageBreakIssues = [];
     pageIntervalIssues = [];
     pageOnlySourceIssues = [];
+    poetryBoundaryBlankLineIssues = [];
     andreWorkheadSourceIssues = [];
     externalSourceLinkIssues = [];
     textFollowsNoteIssues = [];
@@ -65,6 +67,13 @@ describe('tracked work corpus', () => {
         structuralTagsOutsideColumnZero(xml).length > 0
       ) {
         formattingIssues.push(filename);
+      }
+
+      if (
+        /<poetry(?:[ \t][^<>]*)?>\r?\n[ \t]*\r?\n/.test(xml) ||
+        /\r?\n[ \t]*\r?\n<\/poetry>/.test(xml)
+      ) {
+        poetryBoundaryBlankLineIssues.push(filename);
       }
 
       const checks = checksForWorkXml(xml);
@@ -116,6 +125,10 @@ describe('tracked work corpus', () => {
 
   it('keeps every work canonically formatted', () => {
     expect(formattingIssues).toEqual([]);
+  });
+
+  it('keeps poetry free of leading and trailing blank lines', () => {
+    expect(poetryBoundaryBlankLineIssues).toEqual([]);
   });
 
   it('keeps links out of work body text', () => {
