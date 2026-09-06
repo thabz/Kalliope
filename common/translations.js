@@ -4,7 +4,7 @@ const translations = {
   'en*Kunstnere': 'Artists',
   'en*Nøgleord': 'Keywords',
   'en*Museer': 'Museums',
-  'en*Se billedet på museets hjemmeside': 'View image on museum website',
+  'en*Se billedet på kildens hjemmeside': 'View image on source website',
   'en*Værker': 'Works',
   'en*Digter': 'Poet',
   'en*Værk': 'Work',
@@ -122,8 +122,8 @@ const translations = {
   'de*Kunstnere': 'Künstler',
   'de*Nøgleord': 'Schlagwörter',
   'de*Museer': 'Museen',
-  'de*Se billedet på museets hjemmeside':
-    'Bild auf der Website des Museums ansehen',
+  'de*Se billedet på kildens hjemmeside':
+    'Bild auf der Website der Quelle ansehen',
   'de*Værker': 'Werke',
   'de*Digter': 'Dichter',
   'de*Værk': 'Werk',
@@ -251,8 +251,8 @@ const translations = {
   'fr*Kunstnere': 'Artistes',
   'fr*Nøgleord': 'Mots-clés',
   'fr*Museer': 'Musées',
-  'fr*Se billedet på museets hjemmeside':
-    'Voir l’image sur le site du musée',
+  'fr*Se billedet på kildens hjemmeside':
+    'Voir l’image sur le site de la source',
   'fr*Værker': 'Œuvres',
   'fr*Digter': 'Poète',
   'fr*Værk': 'Œuvre',

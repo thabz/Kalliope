@@ -69,6 +69,10 @@ const build_museum_url = (picture, collected) => {
   if (picture == null) {
     return null;
   }
+  const href = safeGetAttr(picture, 'href');
+  if (href != null) {
+    return href;
+  }
   const invNr = safeGetAttr(picture, 'invnr');
   const objId = safeGetAttr(picture, 'objid');
   const museumId = safeGetAttr(picture, 'museum');

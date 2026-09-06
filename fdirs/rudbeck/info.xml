@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="rudbeck" country="se" lang="sv" type="poet">
+  <name>
+    <firstname>Olof</firstname>
+    <lastname>Rudbeck</lastname>
+    <fullname>Olof Rudbeck den yngste</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1751-12-08</date>
+    </born>
+    <dead>
+      <date>1777-03-23</date>
+      <place>Stockholm</place>
+    </dead>
+  </period>
+  <literary-periods>se-frihedstid-og-gustaviansk-tid</literary-periods>
+  <works>1776</works>
+  <identifiers>
+    <runeberg-org>rudbolo3</runeberg-org>
+  </identifiers>
+</person>

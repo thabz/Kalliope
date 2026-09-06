@@ -68,6 +68,11 @@ De guldhenboelgende Vaenge
 `<workhead>` indeholder metadata for hele vaerket. `<workbody>` indeholder tekster,
 sektioner og eventuelle underværker.
 
+I `andre.xml` må en `<source>` ikke ligge i `<workhead>`; den fulde kilde skal
+angives direkte i hvert berørt digts `<head>`. Se
+`docs/originaltekster-til-oversaettelser.md` for kildevalg og -angivelse ved
+originaltekster til oversættelser.
+
 ## Workhead
 
 Almindelige felter i `<workhead>`:
@@ -548,6 +553,10 @@ Regler:
 `href` arves fra den valgte værkkilde, når teksten ikke selv angiver sin egen `href`.
 Hvis teksten angiver en `href`, tilsidesætter den arvet `href`.
 
+Eksterne links fra en kilde skal ligge i `source/@href`. Et `<source>` må ikke
+indeholde `<a href="...">`; interne Kalliope-links som `<a poet="...">` er
+fortsat tilladt.
+
 Hvis `facsimile-pages` mangler, men `pages` og `facsimile-pages-offset` findes,
 beregnes faksimilesiderne automatisk.
 
@@ -756,6 +765,10 @@ Noter paa vaerk- og tekstniveau:
 </notes>
 ```
 
+Paa vaerk- og tekstniveau skal `<note>` altid ligge i en `<notes>`-wrapper.
+En direkte `<note>` under `<workhead>` eller `<head>` er ugyldig. Noter og
+fodnoter i selve brødteksten kan fortsat staa direkte i tekstblokkene.
+
 Attributter paa `<note>`:
 
 - `type`: bruges fx til `credits` og `source`.
@@ -766,6 +779,9 @@ Brug en tom `<note unknown-original-by="..."/>`, naar originalens ophavsmand er
 kendt, men originalteksten ikke findes i Kalliope. Naar originalteksten findes i
 Kalliope, bruges i stedet en `<xref type="translation" poem="..."/>` i en
 almindelig note.
+
+Kildeproveniens skal angives med `<source>`. Brug ikke en `<note>` med
+formuleringen »Teksten følger ...« som erstatning for en struktureret kilde.
 
 Noter i selve teksten kan skrives som `<note>` eller `<footnote>` i tekstblokkene:
 
@@ -803,6 +819,8 @@ Portraet:
 Attributter:
 
 - `src`: lokalt billede. Relative paths slaas op under `/images/<digter>`.
+- `href`: eksplicit link til billedets kildeside. Vises som et linkikon ved billedteksten
+  og har forrang for et link dannet af museumsmetadata.
 - `artwork`: reference til et billede i `content/artwork.xml` eller `fdirs/<kunstner>/artwork.xml`.
 - `portrait`: reference til et portraet i `fdirs/<digter>/portraits.xml`.
 - `primary="true"`: markerer primaert billede.

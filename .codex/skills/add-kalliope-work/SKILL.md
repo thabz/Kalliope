@@ -19,6 +19,11 @@ krav styrer PDF-inventar, OCR, transskription, facsimilekontrol og korrektur;
 denne skill styrer den generelle værkindsættelse, PR-checklisten og den tydelige
 overdragelse til brugeren.
 
+Når værket oprettes for at indsætte en konkret originaltekst til en
+oversættelse, skal `$add-translation-original` også bruges. Dens krav styrer
+identifikation, versionsvalg, kildeprioritering og den præcise
+oversættelsesrelation.
+
 Følg altid repositoryets aktuelle `AGENTS.md`. Skillen giver ikke i sig selv
 tilladelse til commit, push eller oprettelse af en PR. Indhent den godkendelse,
 som `AGENTS.md` kræver, efter at brugeren har kunnet gennemgå ændringerne.

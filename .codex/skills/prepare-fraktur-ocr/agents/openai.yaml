@@ -1,0 +1,5 @@
+interface:
+  display_name: "Klargør fraktur-OCR"
+  short_description: "Rens og sammenlign OCR af fraktursider"
+  default_prompt: "Brug $prepare-fraktur-ocr til at klargøre og sammenligne OCR af denne fraktur-PDF."
+

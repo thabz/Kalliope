@@ -104,6 +104,7 @@ import {
 import {
   collectSourceDigitalUrl,
   resolveSourceDigitalUrlForText,
+  resolveSourceFacsimileForText,
 } from './build-static/source.js';
 import { mapLimit } from './build-static/concurrency.js';
 import { createProgressReporter } from './build-static/progress.js';
@@ -488,19 +489,28 @@ const handle_text = async (
         `fdirs/${sourcePoetId}/${sourceWorkId}.xml ${sourceTextId} references undefined source.`,
       );
     }
-    const facsimile =
-      safeGetAttr(sourceNode, 'facsimile') ??
-      (workSource == null ? null : workSource.facsimile);
+    const {
+      facsimile,
+      facsimilePageCount,
+      facsimilePagesOffset,
+    } = resolveSourceFacsimileForText({
+      sourceNode,
+      sourceForText: workSource,
+    });
+    if (facsimile != null && facsimilePageCount == null) {
+      throw new Error(
+        `fdirs/${sourcePoetId}/${sourceWorkId}.xml is missing facsimile-pages-num in source.`
+      );
+    }
     let facsimilePages = safeGetAttr(sourceNode, 'facsimile-pages');
     if (
       facsimilePages == null &&
-      workSource != null &&
-      workSource.facsimilePagesOffset != null &&
+      facsimilePagesOffset != null &&
       pagesAttr != null
     ) {
       // Deduce facsimilePages from pages and facsimilePagesOffset.
       const pagesParts = pagesAttr.split(/-/).map((n) => parseInt(n));
-      const o = workSource.facsimilePagesOffset;
+      const o = facsimilePagesOffset;
       const pFrom = pagesParts[0];
       const pTo = pagesParts[1] || pFrom;
       facsimilePages = [pFrom + o, pTo + o];
@@ -516,9 +526,12 @@ const handle_text = async (
           `fdirs/${sourcePoetId}/${sourceWorkId}.xml ${sourceTextId} sideangivelser har fra > til.`,
         );
       }
-      if (facsimilePages[1] > workSource.facsimilePageCount) {
+      if (
+        facsimilePageCount != null &&
+        facsimilePages[1] > facsimilePageCount
+      ) {
         throw new Error(
-          `fdirs/${sourcePoetId}/${sourceWorkId}.xml ${sourceTextId} sideangivelse ${facsimilePages[1]} rækker over antal facsimile-sider. Er facsimile-pages-offset ${workSource.facsimilePageCount} korrekt?`,
+          `fdirs/${sourcePoetId}/${sourceWorkId}.xml ${sourceTextId} sideangivelse ${facsimilePages[1]} rækker over antal facsimile-sider. Er facsimile-pages-num ${facsimilePageCount} korrekt?`,
         );
       }
     }
@@ -527,8 +540,7 @@ const handle_text = async (
     identifiers: getIdentifiers(sourceNode, identifierAllowlist.source),
       pages: pagesAttr,
       digitalUrl,
-      facsimilePageCount:
-        workSource == null ? null : workSource.facsimilePageCount,
+      facsimilePageCount,
       facsimile,
       facsimilePages,
       facsimilePoetId: sourcePoetId,

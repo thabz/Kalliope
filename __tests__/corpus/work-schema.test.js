@@ -19,6 +19,32 @@ describe('kalliopework RELAX NG schema', () => {
     { input: xml, encoding: 'utf8', stdio: ['pipe', 'pipe', 'pipe'] },
   );
 
+  it('requires head notes to use the notes wrapper', () => {
+    const wrappedTextNote = poetryWork(
+      'Første linje',
+    ).replace(
+      '<head><firstline>Første linje</firstline></head>',
+      '<head><firstline>Første linje</firstline><notes><note>Redaktionel note.</note></notes></head>',
+    );
+    const directTextNote = wrappedTextNote.replace(
+      '<notes><note>Redaktionel note.</note></notes>',
+      '<note>Redaktionel note.</note>',
+    );
+    const wrappedWorkNote = wrappedTextNote.replace(
+      '<workhead><title>Digte</title><year>1900</year></workhead>',
+      '<workhead><title>Digte</title><year>1900</year><notes><note>Værknote.</note></notes></workhead>',
+    );
+    const directWorkNote = wrappedWorkNote.replace(
+      '<notes><note>Værknote.</note></notes>',
+      '<note>Værknote.</note>',
+    );
+
+    expect(() => validate(wrappedTextNote)).not.toThrow();
+    expect(() => validate(wrappedWorkNote)).not.toThrow();
+    expect(() => validate(directTextNote)).toThrow();
+    expect(() => validate(directWorkNote)).toThrow();
+  });
+
   it('accepts type-specific identifiers on workhead, source and picture', () => {
     const xml = `
       <kalliopework id="1900" author="digter">

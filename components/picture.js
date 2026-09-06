@@ -29,7 +29,7 @@ const FigCaption = (props) => {
 
   let remoteLink = null;
   if (picture.remoteUrl != null) {
-    const tooltip = _('Se billedet på museets hjemmeside', lang);
+    const tooltip = _('Se billedet på kildens hjemmeside', lang);
     remoteLink = (
       <>
         {' '}
