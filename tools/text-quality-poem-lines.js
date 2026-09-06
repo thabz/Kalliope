@@ -51,6 +51,109 @@ const normalizeFileName = filename =>
 
 const stripXmlComments = data => data.replace(/<!--[\s\S]*?-->/g, '');
 
+
+const indentationWidth = line => {
+  const prefix = line.match(/^[ \t]*/u)[0];
+  let width = 0;
+  [...prefix].forEach(character => {
+    width += character === '\t' ? 4 - (width % 4) : 1;
+  });
+  return width;
+};
+
+const removeRegionContentKeepingLines = (data, regexp) =>
+  data.replace(regexp, match => match.replace(/[^\n]/gu, ''));
+
+const poetryContentForIndentation = data => {
+  const withoutComments = removeRegionContentKeepingLines(
+    data,
+    /<!--[\s\S]*?-->/gu,
+  );
+  return removeRegionContentKeepingLines(
+    withoutComments,
+    /<(footnote|note)\b[^>]*>[\s\S]*?<\/\1>/gu,
+  );
+};
+
+const poetryLineIndentation = line => {
+  if (
+    /<nonum(?:\s|>)/u.test(line) ||
+    /^\s*<wrap(?:\s|>)/u.test(line) ||
+    /^\s*<hr(?:\s|\/?>)/u.test(line) ||
+    /^\s*-{3,}\s*$/u.test(line)
+  ) {
+    return null;
+  }
+
+  const content = line.replace(
+    /^(?:<pb\b[^>]*\/>|<margin\b[^>]*>[\s\S]*?<\/margin>)+/u,
+    '',
+  );
+  const plainText = content.replace(/<[^>]+>/gu, '').trim();
+  return plainText === '' ? null : indentationWidth(content);
+};
+
+const findCommonPoetryIndentationFindings = ({
+  file,
+  data,
+  context = createTextContext(data),
+}) => {
+  const issues = [];
+  const textRegexp = /<text\b[^>]*>[\s\S]*?<\/text>/gu;
+  let textMatch;
+
+  while ((textMatch = textRegexp.exec(data)) != null) {
+    const text = textMatch[0];
+    const textId = firstMatch(text, /^<text\b[^>]*\sid="([^"]+)"/u);
+    const verseLines = [];
+    const poetryRegexp = /<poetry\b[^>]*>([\s\S]*?)<\/poetry>/gu;
+    let poetryMatch;
+
+    while ((poetryMatch = poetryRegexp.exec(text)) != null) {
+      const poetry = poetryContentForIndentation(poetryMatch[1]);
+      const poetryStart =
+        textMatch.index +
+        poetryMatch.index +
+        poetryMatch[0].indexOf(poetryMatch[1]);
+      const firstLine = lineNumberAt(context.lineStarts, poetryStart);
+
+      poetry.split('\n').forEach((line, lineIndex) => {
+        const indentation = poetryLineIndentation(line);
+        if (indentation != null) {
+          verseLines.push({
+            indentation,
+            line: firstLine + lineIndex,
+            excerpt: line,
+          });
+        }
+      });
+    }
+
+    if (verseLines.length < 2) {
+      continue;
+    }
+
+    const commonIndentation = Math.min(
+      ...verseLines.map(line => line.indentation),
+    );
+    if (commonIndentation === 0) {
+      continue;
+    }
+
+    issues.push({
+      file,
+      line: verseLines[0].line,
+      rule: 'common-poetry-indentation',
+      severity: 'medium',
+      textId,
+      description: `${verseLines.length} verse lines share ${commonIndentation} columns of removable leading indentation.`,
+      excerpt: verseLines[0].excerpt,
+    });
+  }
+
+  return issues;
+};
+
 const createTextContext = data => ({
   data,
   lines: data.split('\n'),
@@ -234,7 +337,6 @@ const ignoredTestsAtLine = context => {
 const regexps = [
   { testName: 'caret', regexp: /\^/ },
   { testName: 'leading-comma', regexp: /^,[a-zæøåA-ZÆØÅ]/m },
-  { testName: 'leading-space', regexp: /^\s[-a-zæøåA-ZÆØÅ]/m },
   { testName: 'leading-period', regexp: /^\.[a-zæøåA-ZÆØÅ]/m },
   {
     testName: 'period-space',
@@ -531,6 +633,7 @@ const collectPoemLineQualityFindings = ({
 
 export {
   collectPoemLineQualityFindings,
+  findCommonPoetryIndentationFindings,
   formatPoemLineIssue,
   findPoemLineFindingsInText,
   parsePoetWorkFiles,
