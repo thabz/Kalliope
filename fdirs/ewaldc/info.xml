@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="ewaldc" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Carl</firstname>
+    <lastname>Ewald</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1856-10-15</date>
+    </born>
+    <dead>
+      <date>1908-02-23</date>
+    </dead>
+  </period>
+  <literary-periods>dk-det-moderne-gennembrud</literary-periods>
+  <identifiers>
+    <danskforfatterleksikon-dk>ECarlEwald</danskforfatterleksikon-dk>
+  </identifiers>
+</person>
