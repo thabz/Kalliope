@@ -258,6 +258,7 @@ const build_poets_first_pass = collected => {
       has_square_portrait,
       has_works: has.has_works,
       has_poems: has.has_poems,
+      has_indexed_poems: has.has_poems,
       has_prose: has.has_prose,
       has_texts: has.has_texts,
       has_artwork: fs.existsSync(`fdirs/${id}/artwork.xml`),

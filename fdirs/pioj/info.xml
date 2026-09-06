@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="pioj" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Jean</firstname>
+    <lastname>Pio</lastname>
+    <fullname>Jean Frédéric Guillaume Emile Pio</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1833-07-01</date>
+      <place>Toksværd</place>
+    </born>
+    <dead>
+      <date>1884-01-12</date>
+      <place>Kbh.</place>
+    </dead>
+  </period>
+  <literary-periods>dk-det-moderne-gennembrud</literary-periods>
+  <works/>
+  <identifiers>
+    <wikidata>Q12319156</wikidata>
+    <wikipedia-da>Jean Pio</wikipedia-da>
+    <viaf>291066747</viaf>
+    <gnd>1227913400</gnd>
+    <biografisk-leksikon-lex-dk>Jean_Pio</biografisk-leksikon-lex-dk>
+    <danskforfatterleksikon-dk>PJeanPio</danskforfatterleksikon-dk>
+  </identifiers>
+</person>

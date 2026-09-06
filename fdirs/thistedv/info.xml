@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="thistedv" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Valdemar Adolph</firstname>
+    <lastname>Thisted</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1815-02-28</date>
+      <place>Aarhus</place>
+    </born>
+    <dead>
+      <date>1887-10-14</date>
+      <place inon="on">Frederiksberg</place>
+    </dead>
+  </period>
+  <literary-periods>dk-guldalder-og-romantik,dk-det-moderne-gennembrud</literary-periods>
+  <works/>
+  <identifiers>
+    <wikidata>Q4992656</wikidata>
+    <wikipedia-da>Valdemar Thisted</wikipedia-da>
+    <wikipedia-en>Valdemar Adolph Thisted</wikipedia-en>
+    <viaf>47766463</viaf>
+    <gnd>126860300</gnd>
+    <biografisk-leksikon-lex-dk>Valdemar_Thisted</biografisk-leksikon-lex-dk>
+    <danskforfatterleksikon-dk>TValdemarThisted</danskforfatterleksikon-dk>
+  </identifiers>
+</person>
