@@ -5,6 +5,16 @@ import {
   filterTextDataByMinDate,
   hasPdfFacsimile,
 } from './text-quality-filters.js';
+import {
+  getChildByTagName,
+  getElementsByTagName,
+  parseXMLFragment,
+  safeGetAttr,
+} from './build-static/xml.js';
+import {
+  effectiveTextTitles,
+  extractTitle,
+} from './build-static/parsing.js';
 
 const flatten = array => [].concat(...array);
 
@@ -150,6 +160,124 @@ const findCommonPoetryIndentationFindings = ({
       excerpt: verseLines[0].excerpt,
     });
   }
+
+  return issues;
+};
+
+const quoteAtStart = /^(?:["„“”«»‹›‚‘’]|,,|'')/u;
+const quoteAtEnd = /(?:["„“”«»‹›‚‘]|,,|'')$/u;
+const openingAsciiSingleQuote = /(?:^|[\s([])'(?=[\p{L}\p{N}])/u;
+
+const hasSingleQuoteAtEnd = value => {
+  if (value.endsWith('’')) {
+    return /[‘‚]/u.test(value.slice(0, -1));
+  }
+  if (!value.endsWith("'")) {
+    return false;
+  }
+  return openingAsciiSingleQuote.test(value.slice(0, -1));
+};
+
+const hasBoundaryQuote = value =>
+  quoteAtStart.test(value) ||
+  quoteAtEnd.test(value) ||
+  hasSingleQuoteAtEnd(value);
+
+const extractedTitleCandidate = (head, type) => {
+  const element = getChildByTagName(head, type);
+  const extracted = extractTitle(head, type);
+  return extracted == null ? null : { ...extracted, element, type };
+};
+
+const titleIssue = ({ file, context, textId, candidate, rule, description }) => {
+  const line = candidate.element.lineNumber;
+  return {
+    file,
+    line,
+    rule,
+    severity: 'medium',
+    textId,
+    description,
+    excerpt: context.lines[line - 1],
+  };
+};
+
+const findTitleMetadataFindings = ({
+  file,
+  data,
+  context = createTextContext(data),
+}) => {
+  const issues = [];
+  const document = parseXMLFragment(data);
+
+  getElementsByTagName(document, 'text').forEach(text => {
+    const head = getChildByTagName(text, 'head');
+    const textId = safeGetAttr(text, 'id');
+    const firstline = extractedTitleCandidate(head, 'firstline');
+    const title = extractedTitleCandidate(head, 'title');
+    const indextitle = extractedTitleCandidate(head, 'indextitle');
+    const linktitle = extractedTitleCandidate(head, 'linktitle');
+    const { indexTitle: indexCandidate, linkTitle: linkCandidate } =
+      effectiveTextTitles({ firstline, title, indextitle, linktitle });
+
+    if (
+      safeGetAttr(text, 'skip-index') == null &&
+      indexCandidate != null &&
+      !/^[\p{L}\p{N}]/u.test(indexCandidate.title)
+    ) {
+      issues.push(
+        titleIssue({
+          file,
+          context,
+          textId,
+          candidate: indexCandidate,
+          rule: 'index-title-leading-character',
+          description:
+            'The effective index title must begin with a Unicode letter or number.',
+        }),
+      );
+    }
+
+    if (linkCandidate == null) {
+      return;
+    }
+    if (linkCandidate.title.trim().length === 0) {
+      issues.push(
+        titleIssue({
+          file,
+          context,
+          textId,
+          candidate: linkCandidate,
+          rule: 'empty-link-title',
+          description: 'The effective link title must not be empty.',
+        }),
+      );
+    } else if (linkCandidate.title !== linkCandidate.title.trim()) {
+      issues.push(
+        titleIssue({
+          file,
+          context,
+          textId,
+          candidate: linkCandidate,
+          rule: 'link-title-surrounding-whitespace',
+          description:
+            'The effective link title must not have surrounding whitespace.',
+        }),
+      );
+    } else if (hasBoundaryQuote(linkCandidate.title)) {
+      issues.push(
+        titleIssue({
+          file,
+          context,
+          textId,
+          candidate: linkCandidate,
+          rule: 'link-title-boundary-quote',
+          description:
+            'The effective link title must not begin or end with quotation marks.',
+        }),
+      );
+    }
+  });
 
   return issues;
 };
@@ -494,6 +622,11 @@ const findPoemLineFindingsInText = ({
     }
   }
 
+  issues.push(
+    ...findCommonPoetryIndentationFindings({ file, data, context }),
+    ...findTitleMetadataFindings({ file, data, context }),
+  );
+
   return issues;
 };
 
@@ -634,6 +767,7 @@ const collectPoemLineQualityFindings = ({
 export {
   collectPoemLineQualityFindings,
   findCommonPoetryIndentationFindings,
+  findTitleMetadataFindings,
   formatPoemLineIssue,
   findPoemLineFindingsInText,
   parsePoetWorkFiles,

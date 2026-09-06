@@ -167,6 +167,11 @@ const extractTitle = (head, type) => {
   }
 };
 
+const effectiveTextTitles = ({ firstline, title, indextitle, linktitle }) => ({
+  indexTitle: indextitle ?? title ?? firstline,
+  linkTitle: linktitle ?? indextitle ?? title ?? firstline,
+});
+
 const extractSubtitles = (head, tag = 'subtitle', collected) => {
   let subtitles = null;
   const subtitle = getElementByTagName(head, tag);
@@ -302,6 +307,7 @@ const extractDates = head => {
 
 export {
   extractTitle,
+  effectiveTextTitles,
   extractSubtitles,
   extractDates,
   getNoteType,
