@@ -305,7 +305,9 @@ historiske id-formater fortsat kan bevares uændret.
 
 - `<title>`: tekstens titel. `force-index="true"` viser en ikke-primaer
   variant i titelindekset.
-- `<firstline>`: foerstelinje. Maa ikke indeholde markup. `force-index="true"`
+- `<firstline>`: foerstelinje. Maa ikke indeholde markup. En ikke-tom
+  førstelinje skal begynde med et Unicode-bogstav eller et tal; indledende
+  citationstegn og anden tegnsætning bevares kun i brødteksten. `force-index="true"`
   viser en ikke-primaer variant i foerstelinjeindekset.
 - `<indextitle>`: titel brugt i titelindekset, hvis den skal afvige.
   `force-index="true"` virker som paa `<title>`.
