@@ -203,6 +203,7 @@ const _sortBySourceOrder = (a, b) => {
 };
 
 export {
+  parseXMLFragment,
   loadXMLDoc,
   safeGetText,
   safeGetAttr,

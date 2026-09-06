@@ -303,8 +303,10 @@ historiske id-formater fortsat kan bevares uændret.
 
 `<head>` paa en tekst kan indeholde:
 
-- `<title>`: tekstens titel. `force-index="true"` viser en ikke-primaer
-  variant i titelindekset.
+- `<title>`: tekstens titel. Den del, der bruges i titelindekset efter et
+  eventuelt `<num>`, skal begynde med et Unicode-bogstav eller et tal, medmindre
+  en lovlig `<indextitle>` bruges i stedet. `force-index="true"` viser en
+  ikke-primaer variant i titelindekset.
 - `<firstline>`: foerstelinje. Maa ikke indeholde markup. En ikke-tom
   førstelinje skal begynde med et Unicode-bogstav eller et tal; indledende
   citationstegn og anden tegnsætning bevares kun i brødteksten. `force-index="true"`
@@ -312,7 +314,11 @@ historiske id-formater fortsat kan bevares uændret.
 - `<indextitle>`: titel brugt i titelindekset, hvis den skal afvige.
   `force-index="true"` virker som paa `<title>`.
 - `<toctitle>`: titel i vaerkets indholdsfortegnelse.
-- `<linktitle>`: titel i links.
+- `<linktitle>`: titel i links. Den effektive linktitel må ikke have omgivende
+  blanktegn eller guillemets (`«»` eller `‹›`) ved yderkanterne, fordi visningen
+  selv omgiver titlen med guillemets. Andre citationstegn som `„…“`, `“…”` og
+  `,,…''` er tilladt, ligesom intern tegnsætning og afsluttende spørgsmålstegn,
+  udråbstegn og apostroffer i ord.
 - `<subtitle>`: undertitel. Kan indeholde flere `<line>`.
 - `<suptitle>`: overtitel. Kan indeholde flere `<line>`.
 - `<nofirstline/>`: markerer bevidst manglende foerstelinje.
@@ -488,12 +494,18 @@ Titel-fallbacks:
 - `linktitle` falder tilbage til `indextitle` og derefter `title`.
 - `toctitle` falder tilbage til `title`.
 
-Titelfelter er redaktionelle metadata og skrives uden afsluttende tegnsætning.
-Fjern derfor punktum, komma, kolon, semikolon, spørgsmålstegn og udråbstegn til
-sidst i `<title>`, `<indextitle>`, `<toctitle>`, `<linktitle>` og
-`<breadcrumbtitle>`, også når tegnet står i den trykte overskrift. Reglen gælder
-ikke `<subtitle>`, `<suptitle>` eller den diplomatiske transskription i
-tekstlegemet, hvor kildens tegnsætning bevares.
+Kontrollerne af indeks- og linktitler gælder de effektive værdier efter disse
+fallbacks. En blank specialtitel tilsidesætter derfor ikke en gyldig fallback.
+Tekster med `skip-index` er undtaget fra kontrollen af indekstitlen, men ikke
+fra kontrollen af linktitlen.
+
+Titelfelter er redaktionelle metadata og skrives normalt uden afsluttende
+tegnsætning. Fjern derfor punktum, komma, kolon, semikolon, spørgsmålstegn og
+udråbstegn til sidst i `<title>`, `<indextitle>`, `<toctitle>` og
+`<breadcrumbtitle>`, også når tegnet står i den trykte overskrift. I
+`<linktitle>` må spørgsmålstegn og udråbstegn bevares, når de er en meningsfuld
+del af linkteksten. Reglen gælder ikke `<subtitle>`, `<suptitle>` eller den
+diplomatiske transskription i tekstlegemet, hvor kildens tegnsætning bevares.
 
 ### Keywords
 
