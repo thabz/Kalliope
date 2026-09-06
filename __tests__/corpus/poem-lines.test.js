@@ -286,7 +286,7 @@ describe('Check workfiles', () => {
     );
 
     expect(
-      issues.filter(issue => issue.rule === 'link-title-boundary-guillemet'),
+      issues.filter(issue => issue.rule === 'link-title-leading-guillemet'),
     ).toHaveLength(1);
   });
 
@@ -297,7 +297,7 @@ describe('Check workfiles', () => {
     );
 
     expect(
-      issues.filter(issue => issue.rule === 'link-title-boundary-guillemet'),
+      issues.filter(issue => issue.rule === 'link-title-leading-guillemet'),
     ).toHaveLength(0);
   });
 
@@ -308,7 +308,7 @@ describe('Check workfiles', () => {
     );
 
     expect(
-      issues.filter(issue => issue.rule === 'link-title-boundary-guillemet'),
+      issues.filter(issue => issue.rule === 'link-title-leading-guillemet'),
     ).toHaveLength(0);
   });
 
@@ -317,13 +317,13 @@ describe('Check workfiles', () => {
     '»Citeret«',
     '‹Citeret›',
     '›Citeret‹',
-  ])('reports link-title boundary guillemets: %s', linktitle => {
+  ])('reports a leading link-title guillemet: %s', linktitle => {
     const issues = titleMetadataIssues(
       `<text id="quoted"><head><linktitle>${linktitle}</linktitle></head></text>`,
     );
 
     expect(
-      issues.filter(issue => issue.rule === 'link-title-boundary-guillemet'),
+      issues.filter(issue => issue.rule === 'link-title-leading-guillemet'),
     ).toHaveLength(1);
   });
 
@@ -334,6 +334,10 @@ describe('Check workfiles', () => {
     ",,Citeret''",
     '‘Citeret’',
     "'Citeret'",
+    'Citeret«',
+    'Citeret»',
+    'Citeret‹',
+    'Citeret›',
     '† Mindedigt',
     '[Motto]',
     '(Til læseren)',

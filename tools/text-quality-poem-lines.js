@@ -164,7 +164,7 @@ const findCommonPoetryIndentationFindings = ({
   return issues;
 };
 
-const guillemetAtBoundary = /^(?:[«»‹›])|(?:[«»‹›])$/u;
+const guillemetAtStart = /^[«»‹›]/u;
 
 const extractedTitleCandidate = (head, type) => {
   const element = getChildByTagName(head, type);
@@ -247,16 +247,16 @@ const findTitleMetadataFindings = ({
             'The effective link title must not have surrounding whitespace.',
         }),
       );
-    } else if (guillemetAtBoundary.test(linkCandidate.title)) {
+    } else if (guillemetAtStart.test(linkCandidate.title)) {
       issues.push(
         titleIssue({
           file,
           context,
           textId,
           candidate: linkCandidate,
-          rule: 'link-title-boundary-guillemet',
+          rule: 'link-title-leading-guillemet',
           description:
-            'The effective link title must not begin or end with a guillemet.',
+            'The effective link title must not begin with a guillemet.',
         }),
       );
     }
