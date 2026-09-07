@@ -373,10 +373,18 @@ præpositioner, bøjninger eller talformer for at gøre titlen tydeligere eller
 entydig i et indeks. `<toctitle>`, `<linktitle>` og `<indextitle>` kan bruges,
 når Kalliopes visning kræver en særskilt dokumenteret titelvariant, men de må
 ikke erstatte eller begrunde en omskrivning af de kildebaserede titelfelter.
-Reglen om læsbar normalisering af versaler på et bibliografisk titelblad gælder
-ikke overskrifterne til værkets enkelte tekster. Hvis hierarkiet ikke kan
-afgøres sikkert fra kilden, bevares de sikre oplysninger, og tvivlen markeres
-med en eksplicit `TODO:`-note i stedet for at blive løst med et gæt.
+
+En overskrift, der typografisk er sat helt med versaler eller kapitæler,
+normaliseres til læsbar brug af store og små bogstaver; den typografiske
+fremhævelse må ikke transskriberes som fulde versaler. Skriv eksempelvis
+`FØRSTE SANG` som `Første Sang` og `TILEGNELSE` som `Tilegnelse`. Bevar derimod
+blandet brug af store og små bogstaver, når den er tekstligt betydningsfuld,
+herunder egennavne og egentlige initialord. Reglen gælder både titelfelter og
+interne overskrifter i brødteksten.
+
+Hvis hierarkiet ikke kan afgøres sikkert fra kilden, bevares de sikre
+oplysninger, og tvivlen markeres med en eksplicit `TODO:`-note i stedet for at
+blive løst med et gæt.
 
 ### Automatisk formklassifikation
 
