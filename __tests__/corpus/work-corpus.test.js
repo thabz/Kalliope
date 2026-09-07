@@ -224,7 +224,7 @@ describe('registered first-edition placeholders', () => {
     ])
   );
 
-  it('keeps every selected publication as an empty, indexed work file', () => {
+  it('keeps every selected publication as an indexed work file', () => {
     const issues = [];
 
     decisions.forEach(({ id, kalliope }) => {
@@ -233,12 +233,14 @@ describe('registered first-edition placeholders', () => {
       const filename = `fdirs/${poetId}/${workId}.xml`;
       const work = registeredWorks.get(id);
 
-      if (
-        work?.status !== 'registered' ||
-        work?.kalliope?.poet_id !== poetId ||
-        work?.kalliope?.work_id !== workId
-      ) {
+      if (work?.kalliope?.poet_id !== poetId || work?.kalliope?.work_id !== workId) {
         issues.push(`${id}: missing or inconsistent work-register link`);
+      }
+      if (work?.status === 'included') {
+        return;
+      }
+      if (work?.status !== 'registered') {
+        issues.push(`${id}: missing or inconsistent work-register status`);
       }
       if (!poetId || !workId || workId === 'andre' || !existsSync(filename)) {
         issues.push(`${id}: invalid or missing placeholder path ${filename}`);
