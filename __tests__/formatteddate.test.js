@@ -117,6 +117,12 @@ it('it formats age', () => {
     })
   ).toEqual(null);
   expect(
+    formattedAge({
+      baptized: { date: '1818-11-29' },
+      dead: { date: '1901-12-23' },
+    })
+  ).toEqual(null);
+  expect(
     formattedAge(
       {
         born: { date: '1818' },

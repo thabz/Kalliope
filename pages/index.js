@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { createURL } from '../common/client.js';
 import LangContext from '../common/LangContext.js';
+import { latestNewsForDate } from '../common/news.js';
 import _ from '../common/translations.js';
 import { formattedDate } from '../components/formatteddate.js';
 import { kalliopeMenu } from '../components/menu.js';
@@ -101,7 +102,6 @@ const News = ({ news }) => {
   const lang = useContext(LangContext);
 
   const items = news
-    .filter((_, i) => i < 5)
     .map((item, i) => {
       const { date, content_html, content_lang } = item;
       return (
@@ -225,7 +225,10 @@ Index.getInitialProps = async ({ query: { lang, date } }) => {
   const todayResponse = await todayPromise;
   const newsResponse = await newsPromise;
   const todaysEvents = await todayResponse.json();
-  const news = await newsResponse.json();
+  const news = latestNewsForDate(
+    await newsResponse.json(),
+    date
+  );
 
   return { lang, country, news, todaysEvents, pagingContext };
 };

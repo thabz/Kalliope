@@ -147,6 +147,10 @@ skriver resultatet til standard output:
 ruby tools/txt2xml.rb input.txt > output.xml
 ```
 
+Output er altid en kladde med `status="incomplete"`. Generatoren skriver ikke
+`<quality>` eller korrekturflag; de tilføjes kun efter de dokumenterede,
+side-for-side-korrekturer i `docs/facsimile-korrektur.md`.
+
 Køres scriptet uden et filargument, udskriver det en tom skabelon.
 
 ### Ryd Fraktur-OCR
@@ -236,8 +240,11 @@ server, der er angivet i scriptet. Inden synkronisering sættes lokale mapper ti
 webserveren også kan læse nye facsimiler oprettet af Docker.
 
 CI kontrollerer, at hvert facsimile, som et versionsstyret XML-værk angiver i
-en `source`, har en genereret `000.jpg` på Kalliope-serveren. Kontrollen kan
-køres manuelt med:
+en `source`, har både `000.jpg` og den repræsentative thumbnail
+`t/000-w250.jpg` på Kalliope-serveren. Dermed opdages facsimiler, hvor
+originalsiderne er synkroniseret uden den thumbnail-mappe, som visningen bruger,
+uden at CI skal hente alle responsive størrelser. Kontrollen kan køres manuelt
+med:
 
 ```sh
 npm run check-facsimiles

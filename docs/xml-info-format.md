@@ -121,7 +121,7 @@ Navnevisningen bruger helperne i `components/poetname-helpers.js` og
 
 ## Period
 
-`<period>` beskriver fødsel, død og i nogle tilfælde kroning:
+`<period>` beskriver fødsel eller dåb, død og i nogle tilfælde kroning:
 
 ```xml
 <period>
@@ -138,7 +138,10 @@ Navnevisningen bruger helperne i `components/poetname-helpers.js` og
 
 Understøttede underfelter:
 
-- `<born>`
+- `<born>`: fødsel.
+- `<baptized>`: dåb. Bruges som startbegivenhed, når fødselsdatoen ikke er
+  dokumenteret; feltet må også stå sammen med `<born>`, når begge begivenheder
+  kendes.
 - `<dead>`
 - `<coronation>`
 
@@ -159,9 +162,14 @@ Hver af dem kan indeholde:
 - `on` bruges fx ved øer eller steder hvor dansk tekst vil sige "på"
 - `by` findes som sjælden specialcase
 
-Hvis `period` mangler enten `born` eller `dead`, bliver perioden behandlet som ukomplet i
-den statiske data. Biografisiden kan dog stadig findes, hvis der er `bio.xml`, `events.xml`
-eller portrætter.
+Hvis `period` mangler både `born` og `baptized`, eller hvis `dead` mangler,
+bliver perioden behandlet som ukomplet i den statiske data. Biografisiden kan
+dog stadig findes, hvis der er `bio.xml`, `events.xml` eller portrætter.
+
+En dåbsdato vises som »Døbt« på biografisiden og som »døbt« i tidslinjen. Den
+bruges som dokumenteret startår i navnenes årsspænd og årssortering, men den
+behandles ikke som fødselsdag i »I dag«, jubilæumskalenderen eller
+aldersberegningen.
 
 ## Literary Periods
 
@@ -265,6 +273,8 @@ Buildet udleder en række booleans fra `info.xml` og nabofiler:
 
 - `has_works`: baseret på `<works>`.
 - `has_poems`: sand hvis et værk indeholder `<poetry>`.
+- `has_indexed_poems`: sand hvis mindst ét digt indgår i titel- og
+  førstelinjeindekserne.
 - `has_prose`: sand hvis et værk indeholder `<prose>`.
 - `has_texts`: `has_poems || has_prose`.
 - `has_portraits`: findes `fdirs/<id>/portraits.xml`.

@@ -542,6 +542,7 @@ const TextPage = (props) => {
   }
   let ogDescription = '';
   let shouldIndentTitle = false;
+  const hasMarginNotes = blocksHaveMarginNotes(text.blocks);
 
   let body = null;
   if (text.text_type === 'section' && text.toc != null) {
@@ -623,7 +624,9 @@ const TextPage = (props) => {
       poet={poet}
       selectedMenuItem="works">
       <FootnoteContainer key={text.id}>
-        <SidebarSplit sidebar={sidebar}>
+        <SidebarSplit
+          sidebar={sidebar}
+          reserveMarginNotes={hasMarginNotes}>
           <div>
             <article style={{ position: 'relative' }}>
               <Bladrer left target={prev} />
@@ -641,7 +644,8 @@ const TextPage = (props) => {
                   font-family: 'Alegreya', serif;
                   line-height: 1.5;
                   font-size: 1em;
-                  display: inline-block;
+                  display: block;
+                  width: 100%;
                 }
                 :global(.text-content) :global(sc) {
                   font-family: 'Alegreya SC';
@@ -675,3 +679,11 @@ TextPage.getInitialProps = async ({ query: { lang, textId, highlight } }) => {
 };
 
 export default TextPage;
+
+export const blocksHaveMarginNotes = (blocks) =>
+  (blocks || []).some((block) =>
+    block.lines.some((line) => {
+      const content = line[0];
+      return typeof content === 'string' && /<margin(?:\s|>)/.test(content);
+    })
+  );

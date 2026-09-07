@@ -8,7 +8,7 @@ COPY tools/sync-wikidata.rb ./tools/sync-wikidata.rb
 
 ENTRYPOINT ["ruby", "tools/sync-wikidata.rb"]
 
-FROM node:20-bullseye-slim AS build
+FROM node:20-bookworm-slim AS build
 
 ENV NPM_CONFIG_UPDATE_NOTIFIER=false
 
@@ -24,7 +24,7 @@ COPY pages ./pages
 COPY public ./public
 COPY tools ./tools
 
-FROM node:20-bullseye-slim AS runtime
+FROM node:20-bookworm-slim AS runtime
 
 ENV NPM_CONFIG_UPDATE_NOTIFIER=false
 ENV NODE_OPTIONS=--max-old-space-size=4096

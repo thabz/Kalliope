@@ -116,6 +116,12 @@ Titler og førstelinjer må aldrig indeholde markup. De skal altid være ren tek
 Strukturelle oplysninger, formatering og semantiske elementer skal placeres i
 de relevante XML-elementer uden for `<title>` og `<firstline>`.
 
+Titelfelter normaliseres desuden uden afsluttende tegnsætning. Et punktum,
+komma, kolon, semikolon, spørgsmålstegn eller udråbstegn sidst i den trykte
+overskrift udelades derfor i titelmetadata. Undertitler, overtitler og selve den
+diplomatiske transskription følger fortsat kildens tegnsætning. Se
+`docs/xml-work-format.md` for de omfattede titelfelter.
+
 ### 12. Bevar interne sideskift semantisk
 
 OCR-arbejdet må ikke udviske, hvor en sammenhængende tekst krydser en fysisk

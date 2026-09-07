@@ -7,6 +7,7 @@ const defaultDescription =
 const defaultOGImage = `${urlPrefix}/touch-icon.png`;
 const criticalFonts = [
   '/fonts/alegreya-sans/alegreya-sans-normal-400-latin.woff2',
+  '/fonts/alegreya-sans/alegreya-sans-italic-400-latin.woff2',
   '/fonts/alegreya-sans/alegreya-sans-normal-100-latin.woff2',
 ];
 

@@ -277,6 +277,49 @@ describe('indentation candidate analysis', () => {
     ]);
   });
 
+  it('finds scattered line mismatches in two minority stanzas', () => {
+    const regular = [0, 4, 0, 4, 0, 0];
+    const result = analyzeIndentation({
+      body: bodyWithStanzaProfiles([
+        [0, 0, 0, 4, 0, 0],
+        [0, 4, 0, 0, 8, 0],
+        regular,
+        regular,
+        regular,
+      ]),
+    });
+
+    expect(result.sections[0]).toMatchObject({
+      analysis_basis: 'stanza',
+      dominant_pattern: regular,
+    });
+    expect(result.candidates).toEqual([
+      expect.objectContaining({
+        type: 'possible_stanza_indentation_mismatch',
+        verse_line_start: 1,
+        verse_line_end: 6,
+        expected_profile: regular,
+        observed_profile: [0, 0, 0, 4, 0, 0],
+        mismatches: [
+          { verse_line: 2, stanza_position: 2, expected: 4, observed: 0 },
+        ],
+        confidence: 'possible',
+      }),
+      expect.objectContaining({
+        type: 'possible_stanza_indentation_mismatch',
+        verse_line_start: 7,
+        verse_line_end: 12,
+        expected_profile: regular,
+        observed_profile: [0, 4, 0, 0, 8, 0],
+        mismatches: [
+          { verse_line: 10, stanza_position: 4, expected: 4, observed: 0 },
+          { verse_line: 11, stanza_position: 5, expected: 0, observed: 8 },
+        ],
+        confidence: 'possible',
+      }),
+    ]);
+  });
+
   it('flags rare opening capital offsets without a stable stanza pattern', () => {
     const result = analyzeIndentation({
       body: bodyWithStanzaProfiles([
@@ -696,7 +739,7 @@ describe('indentation candidate analysis', () => {
       body => analyzeIndentation({ body }).candidates
     );
 
-    expect(candidates).toHaveLength(4);
+    expect(candidates).toHaveLength(6);
     expect(candidates.every(candidate => candidate.confidence === 'possible')).toBe(
       true
     );

@@ -44,7 +44,13 @@
 
   <define name="period">
     <element name="period">
-      <ref name="born"/>
+      <choice>
+        <group>
+          <ref name="born"/>
+          <optional><ref name="baptized"/></optional>
+        </group>
+        <ref name="baptized"/>
+      </choice>
       <optional><ref name="coronation"/></optional>
       <optional><ref name="dead"/></optional>
     </element>
@@ -64,6 +70,18 @@
 
   <define name="dead">
     <element name="dead">
+      <zeroOrMore>
+        <choice>
+          <ref name="date"/>
+          <ref name="place"/>
+          <ref name="note"/>
+        </choice>
+      </zeroOrMore>
+    </element>
+  </define>
+
+  <define name="baptized">
+    <element name="baptized">
       <zeroOrMore>
         <choice>
           <ref name="date"/>

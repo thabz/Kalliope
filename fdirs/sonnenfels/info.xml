@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="sonnenfels" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Joseph von</firstname>
+    <lastname>Sonnenfels</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1733</date>
+      <place>Nikolsburg</place>
+    </born>
+    <dead>
+      <date>1817-04-25</date>
+      <place>Wien</place>
+    </dead>
+  </period>
+  <literary-periods>de-oplysning-og-weimarklassik</literary-periods>
+  <works>1786</works>
+  <identifiers>
+    <wikidata>Q215122</wikidata>
+    <wikipedia-en>Joseph von Sonnenfels</wikipedia-en>
+    <wikipedia-fr>Joseph von Sonnenfels</wikipedia-fr>
+    <wikipedia-de>Joseph von Sonnenfels</wikipedia-de>
+    <viaf>39408735</viaf>
+    <gnd>118615610</gnd>
+  </identifiers>
+</person>

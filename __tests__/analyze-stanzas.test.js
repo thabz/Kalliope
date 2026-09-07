@@ -313,6 +313,22 @@ describe('stanza candidate analysis', () => {
     expect(parsed.stanzaLengths).toEqual([2, 2]);
   });
 
+  it('treats non-numbered headings and wrappers as dividers, not verse lines', () => {
+    const parsed = parseBody([
+      'Første vers',
+      'Andet vers',
+      '<nonum><center><b>Chor.</b></center></nonum>',
+      'Tredje vers',
+      'Fjerde vers',
+      '<wrap>Redaktionel tekst</wrap>',
+      'Femte vers',
+      'Sjette vers',
+    ].join('\n'));
+
+    expect(parsed.verseLineCount).toBe(6);
+    expect(parsed.stanzaLengths).toEqual([2, 2, 2]);
+  });
+
   it('rejects invalid input', () => {
     expect(() => analyzeStanzas(null)).toThrow(
       'Input skal være et JSON-objekt med feltet "body".'

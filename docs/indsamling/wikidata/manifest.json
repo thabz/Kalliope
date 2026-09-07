@@ -5,6 +5,6 @@
   "method": "SPARQL Query Service",
   "endpoint": "https://query.wikidata.org/",
   "rawSnapshot": "wikidata.json",
-  "querySource": "tools/candidate-register.js",
+  "querySource": "docs/indsamling/wikidata/query.sparql",
   "note": "Use the snapshot for offline runs; live results are time-dependent."
 }

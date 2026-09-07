@@ -110,3 +110,27 @@ export const resolveSourceDigitalUrlForText = ({
     inheritedDigitalUrl,
   });
 };
+
+export const resolveSourceFacsimileForText = ({
+  sourceNode,
+  sourceForText,
+}) => {
+  let facsimile =
+    safeGetAttr(sourceNode, 'facsimile') ?? sourceForText?.facsimile ?? null;
+  if (facsimile != null) {
+    facsimile = facsimile.replace(/\.pdf$/, '');
+  }
+  const pageCount = safeGetAttr(sourceNode, 'facsimile-pages-num');
+  const pagesOffset = safeGetAttr(sourceNode, 'facsimile-pages-offset');
+  return {
+    facsimile,
+    facsimilePageCount:
+      pageCount == null
+        ? (sourceForText?.facsimilePageCount ?? null)
+        : parseInt(pageCount, 10),
+    facsimilePagesOffset:
+      pagesOffset == null
+        ? (sourceForText?.facsimilePagesOffset ?? null)
+        : parseInt(pagesOffset, 10),
+  };
+};

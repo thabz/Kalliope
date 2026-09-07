@@ -61,7 +61,7 @@ const PersonMetaLine = ({ label, value }) => {
   );
 };
 
-const PersonMeta = ({ poet, lang }) => {
+export const PersonMeta = ({ poet, lang }) => {
   if (poet.type === 'collection') {
     return null;
   }
@@ -71,6 +71,10 @@ const PersonMeta = ({ poet, lang }) => {
   let age = formattedAge(poet.period, lang);
 
   let born = poet.period == null ? null : dateAndPlace(poet.period.born, lang);
+  let baptized =
+    poet.period?.baptized == null
+      ? null
+      : dateAndPlace(poet.period.baptized, lang);
   let dead =
     poet.period == null ? null : dateAndPlace(poet.period.dead, lang, age);
 
@@ -91,12 +95,13 @@ const PersonMeta = ({ poet, lang }) => {
         value={poet.name.fullname}
         label={_('Fulde navn', lang)}
       />
-      <PersonMetaLine value={christened} label={_('Døbt', lang)} />
+      <PersonMetaLine value={christened} label={_('Døbenavn', lang)} />
       <PersonMetaLine
         value={poet.name.pseudonym}
         label={_('Pseudonym', lang)}
       />
       <PersonMetaLine value={born} label={_('Født', lang)} />
+      <PersonMetaLine value={baptized} label={_('Døbt', lang)} />
       {coronationMetaLine}
       <PersonMetaLine value={dead} label={_('Død', lang)} />
     </div>
@@ -283,11 +288,9 @@ const BioPage = (props) => {
             .biography {
               margin-bottom: 40px;
             }
-            @media (max-width: 600px) {
-              .biography {
-                border-bottom: 1px solid #666;
-                padding-bottom: 30px;
-              }
+            .biography + .biography {
+              border-top: 1px solid #666;
+              padding-top: 30px;
             }
           `}</style>
         </div>

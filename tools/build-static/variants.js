@@ -11,7 +11,7 @@ import {
   normalizeTimelineDate,
 } from '../../common/dates.js';
 import { loadXMLDoc, safeGetAttr, getElementsByTagNames } from './xml.js';
-import { sourceWorkFilename, sourceWorkKey } from './anthologies.js';
+import { sourceWorkFilename, sourceWorkKey } from './work-cache.js';
 
 const variantDate = work => normalizeTimelineDate(work.year);
 

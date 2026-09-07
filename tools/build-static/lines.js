@@ -6,7 +6,7 @@ import {
 } from '../libs/helpers.js';
 import { primaryTextVariantId } from './variants.js';
 import { poetName, workName } from './formatting.js';
-import { sourceFilesForText } from './anthologies.js';
+import { sourceFilesForText } from './work-cache.js';
 import { createProgressReporter } from './progress.js';
 
 function stripDiacriticsGreek(str) {

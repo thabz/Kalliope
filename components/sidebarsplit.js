@@ -2,6 +2,7 @@ const SidebarSplit = ({
   children,
   sidebar,
   sidebarOnTopWhenSplit,
+  reserveMarginNotes = false,
   style = {},
 }) => {
   let className =
@@ -9,6 +10,7 @@ const SidebarSplit = ({
       ? 'sidebar-spl empty'
       : 'sidebar-spl';
   className += sidebarOnTopWhenSplit != null ? ' reverse-split' : '';
+  className += reserveMarginNotes === true ? ' reserve-margin-notes' : '';
   const renderedSidebar = <aside>{sidebar}</aside>;
   return (
     <div className={className} style={style}>
@@ -22,6 +24,9 @@ const SidebarSplit = ({
         div.sidebar-spl > :global(div:first-child) {
           flex-grow: 1;
           padding: 0 40px 0 0;
+        }
+        div.sidebar-spl.reserve-margin-notes > :global(div:first-child) {
+          padding-right: 180px;
         }
         div.sidebar-spl > :global(aside:last-child) {
           flex-shrink: 0;
@@ -50,6 +55,9 @@ const SidebarSplit = ({
             flex-direction: column;
           }
           div.sidebar-spl > :global(div:first-child) {
+            padding: 0;
+          }
+          div.sidebar-spl.reserve-margin-notes > :global(div:first-child) {
             padding: 0;
           }
           div.sidebar-spl > :global(aside:last-child) {

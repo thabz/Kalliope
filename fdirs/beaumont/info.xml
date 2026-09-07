@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="beaumont" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Francis</firstname>
+    <lastname>Beaumont</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1584</date>
+      <place>Grace-Dieu, England</place>
+    </born>
+    <dead>
+      <date>1616-03-06</date>
+      <place>London</place>
+    </dead>
+  </period>
+  <literary-periods>gb-renaessance</literary-periods>
+  <works>andre</works>
+  <identifiers>
+    <wikidata>Q313932</wikidata>
+    <wikipedia-da>Francis Beaumont</wikipedia-da>
+    <wikipedia-en>Francis Beaumont</wikipedia-en>
+    <wikipedia-fr>Francis Beaumont</wikipedia-fr>
+    <wikipedia-de>Francis Beaumont</wikipedia-de>
+    <viaf>49333217</viaf>
+    <gnd>118657771</gnd>
+    <danskforfatterleksikon-dk>u187</danskforfatterleksikon-dk>
+    <gutenberg-org>3603</gutenberg-org>
+  </identifiers>
+</person>

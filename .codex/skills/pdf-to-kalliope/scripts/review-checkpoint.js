@@ -9,8 +9,9 @@ import { validateFindings } from './findings-register.js';
 const git = (root, args) => execFileSync('git', args, { cwd: root, encoding: 'utf8' });
 
 const facsimileNumber = value => Number(/^(\d+)\.jpg$/i.exec(value ?? '')?.[1] ?? NaN);
+const requiredCandidateKinds = ['ocr', 'page', 'stanza', 'indentation'];
 
-const validateReviewerRanges = (ranges, inventory) => {
+const validateReviewerRanges = (ranges, inventory, producer = null) => {
   const errors = [];
   const normalized = ranges.map((range, index) => ({
     ...range,
@@ -19,8 +20,11 @@ const validateReviewerRanges = (ranges, inventory) => {
     to: facsimileNumber(range.facsimile_to),
   }));
   normalized.forEach(range => {
-    if (!range.reviewer || !Number.isFinite(range.from) || !Number.isFinite(range.to) || range.to < range.from) {
+    if (range.reviewer == null || range.reviewer === '' || !Number.isFinite(range.from) || !Number.isFinite(range.to) || range.to < range.from) {
       errors.push(`ugyldigt reviewer-range ${range.index + 1}`);
+    }
+    if (producer != null && range.reviewer === producer) {
+      errors.push(`reviewer-range ${range.index + 1} er tildelt producenten ${producer}`);
     }
   });
   normalized
@@ -38,6 +42,28 @@ const validateReviewerRanges = (ranges, inventory) => {
       errors.push(`facsimileside ${page.facsimile ?? '?'} dækkes af ${matches.length} reviewer-ranges`);
     } else if (page.reviewer !== matches[0].reviewer) {
       errors.push(`facsimileside ${page.facsimile} er gennemgået af ${page.reviewer ?? '?'}, men tildelt ${matches[0].reviewer}`);
+    }
+  });
+  return errors;
+};
+
+const validateCandidateReviews = (reviews, producer) => {
+  const errors = [];
+  requiredCandidateKinds.forEach(kind => {
+    const matches = reviews.filter(review => review.kind === kind);
+    if (matches.length !== 1) {
+      errors.push(`kandidatkontrollen ${kind} forekommer ${matches.length} gange`);
+      return;
+    }
+    const review = matches[0];
+    if (review.reviewer == null || review.reviewer === '') errors.push(`kandidatkontrollen ${kind} mangler reviewer`);
+    if (review.reviewer === producer) errors.push(`kandidatkontrollen ${kind} er udført af producenten ${producer}`);
+    if (review.status !== 'reviewed') errors.push(`kandidatkontrollen ${kind} er ikke gennemgået`);
+    if (!Number.isInteger(review.candidate_count) || review.candidate_count < 0) {
+      errors.push(`kandidatkontrollen ${kind} har ugyldigt candidate_count`);
+    }
+    if (!Number.isInteger(review.reviewed_count) || review.reviewed_count !== review.candidate_count) {
+      errors.push(`kandidatkontrollen ${kind} har uverificerede kandidater`);
     }
   });
   return errors;
@@ -69,18 +95,27 @@ const createCheckpoint = ({
   inventory,
   tests,
   reviewerRanges,
+  producer = null,
+  candidateReviews = [],
   state = null,
   artifactFiles = {},
 }) => {
   const findingErrors = validateFindings(findings);
-  const open = findings.filter(finding => finding.status === 'open');
+  const unresolved = findings.filter(finding => finding.status === 'open' || finding.status === 'fixed');
   const uncovered = inventory.filter(page => page.status !== 'reviewed');
   const failedTests = tests.filter(test => test.status !== 'passed');
   const errors = [
     ...findingErrors,
-    ...validateReviewerRanges(reviewerRanges, inventory),
-    ...open.map(finding => `åben finding: ${finding.id}`),
+    ...(producer != null && producer !== '' ? [] : ['reviewet mangler producent']),
+    ...validateReviewerRanges(reviewerRanges, inventory, producer),
+    ...validateCandidateReviews(candidateReviews, producer),
+    ...unresolved.map(finding => `uverificeret finding: ${finding.id}`),
+    ...findings.filter(finding => finding.reviewer === producer).map(finding => `finding er registreret af producenten: ${finding.id}`),
+    ...findings.filter(finding => finding.verified_by === producer).map(finding => `finding er verificeret af producenten: ${finding.id}`),
     ...uncovered.map(page => `ikke gennemgået side: ${page.text_id}:${page.printed_page}`),
+    ...inventory.filter(page => page.reviewer === producer).map(page => `side er gennemgået af producenten: ${page.text_id}:${page.printed_page}`),
+    ...inventory.filter(page => page.disposition == null || page.disposition === '').map(page => `side mangler disposition: ${page.text_id}:${page.printed_page}`),
+    ...(tests.length > 0 ? [] : ['ingen tests er registreret']),
     ...failedTests.map(test => `test bestod ikke: ${test.command}`),
   ];
   if (errors.length) throw new Error(errors.join('\n'));
@@ -88,7 +123,9 @@ const createCheckpoint = ({
     version: 1,
     created_at: new Date().toISOString(),
     ...(state ?? currentReviewState(root)),
+    producer,
     tests,
+    candidate_reviews: candidateReviews,
     findings: {
       count: findings.length,
       status_counts: Object.fromEntries(
@@ -143,6 +180,8 @@ const main = () => {
         inventory: readJsonLines(inventoryFile),
         tests: review.tests ?? [],
         reviewerRanges: review.reviewer_ranges ?? [],
+        producer: review.producer ?? null,
+        candidateReviews: review.candidate_reviews ?? [],
         artifactFiles: {
           findings: findingsFile,
           inventory: inventoryFile,

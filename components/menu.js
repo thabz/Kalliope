@@ -326,13 +326,13 @@ export const poetMenu = (poet) => {
     {
       id: 'titles',
       title: _('Digttitler', lang),
-      hide: !poet.has_poems,
+      hide: poet.has_indexed_poems !== true,
       url: Links.textsURL(lang, poet.id, 'titles'),
     },
     {
       id: 'first',
       title: _('Førstelinjer', lang),
-      hide: !poet.has_poems,
+      hide: poet.has_indexed_poems !== true,
       url: Links.textsURL(lang, poet.id, 'first'),
     },
     {

@@ -3,6 +3,7 @@ import {
   collectSourceDigitalUrl,
   resolveSourceDigitalUrl,
   resolveSourceDigitalUrlForText,
+  resolveSourceFacsimileForText,
 } from '../tools/build-static/source.js';
 
 describe('source digital URL helpers', () => {
@@ -80,5 +81,36 @@ describe('source digital URL helpers', () => {
     const sourceNode = parseSource('<source>Kilde</source>');
 
     expect(resolveSourceDigitalUrlForText({ sourceNode })).toBeNull();
+  });
+
+  it('reads self-contained facsimile metadata from a text source', () => {
+    const sourceNode = parseSource(
+      '<source facsimile="scan.pdf" facsimile-pages-num="48" facsimile-pages-offset="2">Kilde</source>'
+    );
+
+    expect(resolveSourceFacsimileForText({ sourceNode })).toEqual({
+      facsimile: 'scan',
+      facsimilePageCount: 48,
+      facsimilePagesOffset: 2,
+    });
+  });
+
+  it('inherits facsimile metadata when the text source does not override it', () => {
+    const sourceNode = parseSource('<source pages="7-8"/>');
+
+    expect(
+      resolveSourceFacsimileForText({
+        sourceNode,
+        sourceForText: {
+          facsimile: 'inherited',
+          facsimilePageCount: 60,
+          facsimilePagesOffset: 4,
+        },
+      })
+    ).toEqual({
+      facsimile: 'inherited',
+      facsimilePageCount: 60,
+      facsimilePagesOffset: 4,
+    });
   });
 });

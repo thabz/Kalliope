@@ -55,6 +55,14 @@ const standalonePageBreaks = xml => {
   }));
 };
 
+const indentedPageBreaks = xml => {
+  const pattern = /^[ \t]+(<pb\b[^>]*\/>)/gm;
+  return Array.from(xml.matchAll(pattern)).map(match => ({
+    line: xml.slice(0, match.index).split(/\r?\n/).length,
+    markup: match[1],
+  }));
+};
+
 const textEntries = document => {
   const texts = Array.from(document.getElementsByTagName('text'));
   const proseTexts = Array.from(document.getElementsByTagName('prose')).filter(
@@ -91,11 +99,37 @@ const parseWorkXml = xml =>
   new DOMParser().parseFromString(xml, 'text/xml');
 
 const checksForWorkXml = xml => ({
+  bodyLinks: /<(?:a|xref)\b/.test(xml),
   facsimiles: /<source\b[^>]*\bfacsimile\s*=/.test(xml),
-  pageBreaks: /<pagebreaks\b/.test(xml),
+  pageBreaks: /<(?:pagebreaks|pb)\b/.test(xml),
+  sourcePolicy: /<(?:note|source)\b/.test(xml),
   sources: /<source\b[^>]*\bpages\s*=/.test(xml),
   textStructure: /<text\b/.test(xml),
 });
+
+const collectBodyLinkIssues = (filename, document) => {
+  const issues = [];
+
+  ['a', 'xref'].forEach(tagName => {
+    Array.from(document.getElementsByTagName(tagName)).forEach(link => {
+      if (
+        hasAncestor(link, 'body') !== true ||
+        hasAncestor(link, 'note') === true ||
+        hasAncestor(link, 'footnote') === true
+      ) {
+        return;
+      }
+
+      const text = textEntryAncestor(link);
+      const textId = text?.getAttribute('id') ?? '(ukendt tekst)';
+      issues.push(
+        `${filename}: text ${textId} has <${tagName}> directly in <body>; move the link to <note> or <footnote>.`,
+      );
+    });
+  });
+
+  return issues;
+};
 
 const collectTextStructureIssues = (filename, document) => {
   const issues = [];
@@ -172,6 +206,46 @@ const collectSourceStructureIssues = (filename, document) => {
   return { pageIntervals, pageOnlySources };
 };
 
+const collectSourcePolicyIssues = (filename, document) => {
+  const andreWorkheadSources = [];
+  const externalSourceLinks = [];
+  const textFollowsNotes = [];
+  const work = document.documentElement;
+  const workhead = directChild(work, 'workhead');
+
+  if (filename.endsWith('/andre.xml') && workhead != null) {
+    directChildren(workhead, 'source').forEach(() => {
+      andreWorkheadSources.push(
+        `${filename}: <source> must be placed in each text <head>, not in <workhead>, in andre.xml.`,
+      );
+    });
+  }
+
+  Array.from(work.getElementsByTagName('source')).forEach(source => {
+    Array.from(source.getElementsByTagName('a')).forEach(link => {
+      if (link.hasAttribute('href')) {
+        externalSourceLinks.push(
+          `${filename}: use source/@href instead of <a href> inside <source>.`,
+        );
+      }
+    });
+  });
+
+  Array.from(work.getElementsByTagName('note')).forEach(note => {
+    const normalizedText = note.textContent
+      .replace(/\s+/gu, ' ')
+      .trim()
+      .toLocaleLowerCase('da-DK');
+    if (normalizedText.includes('teksten følger')) {
+      textFollowsNotes.push(
+        `${filename}: replace the note phrase "Teksten følger" with a structured <source>.`,
+      );
+    }
+  });
+
+  return { andreWorkheadSources, externalSourceLinks, textFollowsNotes };
+};
+
 const collectPageBreakIssues = (
   filename,
   xml,
@@ -180,6 +254,12 @@ const collectPageBreakIssues = (
   const work = document.documentElement;
   const declarations = Array.from(document.getElementsByTagName('pagebreaks'));
   const issues = [];
+
+  indentedPageBreaks(xml).forEach(({ line, markup }) => {
+    issues.push(
+      `${filename}:${line}: indentation before ${markup} belongs after the page break.`,
+    );
+  });
 
   declarations.forEach(declaration => {
     if (declaration.parentNode?.nodeName !== 'workhead') {
@@ -305,7 +385,9 @@ const collectPageBreakIssues = (
 
 export {
   checksForWorkXml,
+  collectBodyLinkIssues,
   collectPageBreakIssues,
+  collectSourcePolicyIssues,
   collectSourceStructureIssues,
   collectTextStructureIssues,
   parseWorkXml,

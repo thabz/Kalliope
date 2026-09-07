@@ -62,6 +62,7 @@ import { build_about_pages } from './build-static/about.js';
 import { build_portraits_json } from './build-static/portraits.js';
 import { build_todays_events_json } from './build-static/today.js';
 import {
+  effectiveTextTitles,
   extractDates,
   extractTitle,
   extractSubtitles,
@@ -104,6 +105,7 @@ import {
 import {
   collectSourceDigitalUrl,
   resolveSourceDigitalUrlForText,
+  resolveSourceFacsimileForText,
 } from './build-static/source.js';
 import { mapLimit } from './build-static/concurrency.js';
 import { createProgressReporter } from './build-static/progress.js';
@@ -116,6 +118,7 @@ import {
   mark_ref_destinations_dirty,
 } from './build-static/textrefs.js';
 import { build_anniversaries_ical } from './build-static/ical.js';
+import { buildLatestNews } from './build-static/news.js';
 import {
   buildGlobalTimeline,
   buildPoetTimelineJson,
@@ -126,9 +129,13 @@ import {
   isAnthologyText,
   publicationTextId,
   resolveAuthorId,
-  sourceFilesForText,
   worksForPoet,
 } from './build-static/anthologies.js';
+import {
+  obsoleteSourceWorkKeys,
+  removeTextsFromSourceWorks,
+  sourceFilesForText,
+} from './build-static/work-cache.js';
 import { updateSqliteIndex } from './build-static/sqlite-index.js';
 import { buildCorpusDataset } from './build-static/corpus-dataset.js';
 import { findUnlistedWorkFiles } from './build-static/workfiles.js';
@@ -322,9 +329,15 @@ const handle_text = async (
   const textDates = extractDates(head);
   validateTextDates(textDates, sourcePoetId, sourceWorkId, sourceTextId);
   const firstline = extractTitle(head, 'firstline');
-  let title = extractTitle(head, 'title') || firstline; // {title: xxx, prefix: xxx}
-  let indextitle = extractTitle(head, 'indextitle') || title;
-  let linktitle = extractTitle(head, 'linktitle') || indextitle || title;
+  const title = extractTitle(head, 'title') ?? firstline; // {title: xxx, prefix: xxx}
+  const effectiveTitles = effectiveTextTitles({
+    firstline,
+    title,
+    indextitle: extractTitle(head, 'indextitle'),
+    linktitle: extractTitle(head, 'linktitle'),
+  });
+  const indextitle = effectiveTitles.indexTitle;
+  const linktitle = effectiveTitles.linkTitle;
 
   const keywords = safeGetText(head, 'keywords');
 
@@ -483,19 +496,28 @@ const handle_text = async (
         `fdirs/${sourcePoetId}/${sourceWorkId}.xml ${sourceTextId} references undefined source.`,
       );
     }
-    const facsimile =
-      safeGetAttr(sourceNode, 'facsimile') ??
-      (workSource == null ? null : workSource.facsimile);
+    const {
+      facsimile,
+      facsimilePageCount,
+      facsimilePagesOffset,
+    } = resolveSourceFacsimileForText({
+      sourceNode,
+      sourceForText: workSource,
+    });
+    if (facsimile != null && facsimilePageCount == null) {
+      throw new Error(
+        `fdirs/${sourcePoetId}/${sourceWorkId}.xml is missing facsimile-pages-num in source.`
+      );
+    }
     let facsimilePages = safeGetAttr(sourceNode, 'facsimile-pages');
     if (
       facsimilePages == null &&
-      workSource != null &&
-      workSource.facsimilePagesOffset != null &&
+      facsimilePagesOffset != null &&
       pagesAttr != null
     ) {
       // Deduce facsimilePages from pages and facsimilePagesOffset.
       const pagesParts = pagesAttr.split(/-/).map((n) => parseInt(n));
-      const o = workSource.facsimilePagesOffset;
+      const o = facsimilePagesOffset;
       const pFrom = pagesParts[0];
       const pTo = pagesParts[1] || pFrom;
       facsimilePages = [pFrom + o, pTo + o];
@@ -511,9 +533,12 @@ const handle_text = async (
           `fdirs/${sourcePoetId}/${sourceWorkId}.xml ${sourceTextId} sideangivelser har fra > til.`,
         );
       }
-      if (facsimilePages[1] > workSource.facsimilePageCount) {
+      if (
+        facsimilePageCount != null &&
+        facsimilePages[1] > facsimilePageCount
+      ) {
         throw new Error(
-          `fdirs/${sourcePoetId}/${sourceWorkId}.xml ${sourceTextId} sideangivelse ${facsimilePages[1]} rækker over antal facsimile-sider. Er facsimile-pages-offset ${workSource.facsimilePageCount} korrekt?`,
+          `fdirs/${sourcePoetId}/${sourceWorkId}.xml ${sourceTextId} sideangivelse ${facsimilePages[1]} rækker over antal facsimile-sider. Er facsimile-pages-num ${facsimilePageCount} korrekt?`,
         );
       }
     }
@@ -522,8 +547,7 @@ const handle_text = async (
     identifiers: getIdentifiers(sourceNode, identifierAllowlist.source),
       pages: pagesAttr,
       digitalUrl,
-      facsimilePageCount:
-        workSource == null ? null : workSource.facsimilePageCount,
+      facsimilePageCount,
       facsimile,
       facsimilePages,
       facsimilePoetId: sourcePoetId,
@@ -1040,19 +1064,47 @@ const works_first_pass = (collected) => {
 
   let parentIdsToFillIn = new Map(); // Bruges til nedenstående second-pass som klistrer parent-data på
 
+  const changedWorksByPoet = new Map();
+  const currentSourceWorkKeys = new Set();
+  collected.workids.forEach((workIds, poetId) => {
+    workIds.forEach(workId => {
+      currentSourceWorkKeys.add(`${poetId}/${workId}`);
+    });
+  });
+  const changedSourceWorkKeys = obsoleteSourceWorkKeys(
+    works,
+    currentSourceWorkKeys
+  );
   collected.workids.forEach((workIds, poetId) => {
     const workFilenames = workIds.map(
       (workId) => `fdirs/${poetId}/${workId}.xml`,
     );
     const poetHasChangedWorks =
       isFileModified(...workFilenames) || force_reload;
+    changedWorksByPoet.set(poetId, poetHasChangedWorks);
+    if (poetHasChangedWorks === true) {
+      workIds.forEach(workId => {
+        changedSourceWorkKeys.add(`${poetId}/${workId}`);
+      });
+    }
+  });
+  changedSourceWorkKeys.forEach(key => {
+    const [poetId, workId] = key.split('/');
+    works.delete(key);
+    removeWorkDates(dates, poetId, workId);
+  });
+  removeTextsFromSourceWorks(texts, changedSourceWorkKeys);
+  found_changes = changedSourceWorkKeys.size > 0;
+
+  collected.workids.forEach((workIds, poetId) => {
+    const poetHasChangedWorks = changedWorksByPoet.get(poetId);
 
     workIds.forEach((workId) => {
       const workFilename = `fdirs/${poetId}/${workId}.xml`;
       if (!fileExists(workFilename)) {
         return;
       }
-      if (!poetHasChangedWorks) {
+      if (poetHasChangedWorks === false) {
         return;
       } else {
         found_changes = true;
@@ -1112,16 +1164,6 @@ const works_first_pass = (collected) => {
         parentIdsToFillIn.set(fullWorkId, `${poetId}/${parentId}`);
       }
 
-      Array.from(texts.entries()).forEach(([cachedTextId, text]) => {
-        if (
-          (text.sourcePoetId || text.poetId) === poetId &&
-          (text.sourceWorkId || text.workId) === workId
-        ) {
-          texts.delete(cachedTextId);
-        }
-      });
-      removeWorkDates(dates, poetId, workId);
-
       workTexts.forEach((part, sourceOrder) => {
         const textId = safeGetAttr(part, 'id');
         if (tagName(part) === 'section' && textId == null) {
@@ -1149,8 +1191,12 @@ const works_first_pass = (collected) => {
           );
         }
 
-        const linkTitle = linktitle || title || firstline;
-        const indexTitle = indextitle || title || firstline;
+        const { indexTitle, linkTitle } = effectiveTextTitles({
+          firstline,
+          title,
+          indextitle,
+          linktitle,
+        });
 
         if (linkTitle == null) {
           throw new Error(
@@ -1263,6 +1309,9 @@ const works_first_pass = (collected) => {
       (collected.workids.get(poetId) || []).length > 0 ||
       works.has(`${poetId}/${ANTHOLOGY_WORK_ID}`);
     poet.has_poems = poetTexts.some(text => text.hasPoetry);
+    poet.has_indexed_poems = poetTexts.some(
+      text => text.hasPoetry && text.skipIndex !== true
+    );
     poet.has_prose = poetTexts.some(text => text.hasProse);
     poet.has_texts = poet.has_poems || poet.has_prose;
     poet.has_anthology_texts = poetTexts.some(
@@ -1459,26 +1508,12 @@ const build_poet_works_json = (collected) => {
 const build_news = (collected) => {
   supportedLanguages.forEach((lang) => {
     const path = `content/news/${lang}.xml`;
-    if (!isFileModified(path)) {
+    if (!isFileModified(path, 'tools/build-static/news.js')) {
       return;
     }
     const doc = loadXMLDoc(path);
     const items = getChildByTagName(doc, 'items');
-    let list = [];
-    getChildren(items).forEach((item) => {
-      if (tagName(item) !== 'item') {
-        return;
-      }
-      const date = safeGetText(item, 'date');
-      const body = getChildByTagName(item, 'body');
-      const title = safeGetText(item, 'title');
-      list.push({
-        date,
-        title,
-        content_lang: lang,
-        content_html: htmlToXml(safeGetInnerXML(body).trim(), collected),
-      });
-    });
+    const list = buildLatestNews(items, lang, collected);
     const outfile = `public/api/news_${lang}.json`;
     writeJSON(outfile, list);
   });

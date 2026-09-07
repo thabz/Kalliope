@@ -63,6 +63,9 @@ class Txt2XmlTest < Minitest::Test
 
     assert_equal 'vaerk', work.attributes['id']
     assert_equal 'vaerkejer', work.attributes['author']
+    assert_equal 'incomplete', work.attributes['status']
+    assert_empty REXML::XPath.match(document, '//quality')
+    refute_includes output_for(document), 'korrektur1'
     assert_equal 'Digte', element_text(workhead, 'title')
     assert_equal '1852', element_text(workhead, 'year')
     assert_equal 'scan.pdf', REXML::XPath.first(workhead, 'source').attributes['facsimile']
@@ -144,6 +147,32 @@ class Txt2XmlTest < Minitest::Test
       assert formatter_status.success?, formatter_error
       assert_equal output, File.read(file.path)
     end
+  end
+
+  def test_always_emits_an_unproofread_draft
+    output, error, status = convert(<<~TEXT)
+      KILDE:<i>Digte</i> 1900
+      DIGTER:digter
+      FACSIMILE:scan.pdf
+
+      T:Første digt
+      F:Første linje
+      SIDE:1
+
+      Første linje
+
+      T:Andet digt
+      F:Anden linje
+      SIDE:2
+
+      Anden linje
+      SLUT
+    TEXT
+
+    assert status.success?, error
+    assert_includes output, 'status="incomplete"'
+    refute_includes output, '<quality'
+    refute_includes output, 'korrektur1'
   end
 
   def test_escapes_bare_ampersands_without_double_escaping_entities
@@ -476,6 +505,12 @@ class Txt2XmlTest < Minitest::Test
     output, error, status = convert(input)
     assert status.success?, error
     REXML::Document.new(output)
+  end
+
+  def output_for(document)
+    output = +''
+    document.write(output)
+    output
   end
 
   def assert_conversion_fails(input, message)

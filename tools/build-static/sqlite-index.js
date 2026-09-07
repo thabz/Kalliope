@@ -26,6 +26,8 @@ CREATE TABLE poet (
   name_sortname TEXT,
   born_date TEXT,
   born_place TEXT,
+  baptized_date TEXT,
+  baptized_place TEXT,
   dead_date TEXT,
   dead_place TEXT,
   has_poems INTEGER,
@@ -807,9 +809,10 @@ const buildFallbackSql = (collected) => {
   collected.poets?.forEach((poet) => {
     const period = poet.period || {};
     const born = period.born || {};
+    const baptized = period.baptized || {};
     const dead = period.dead || {};
     insertRows.push(
-      `INSERT INTO poet (poet_id,country,lang,type,square_portrait,name_firstname,name_lastname,name_fullname,name_pseudonym,name_sortname,born_date,born_place,dead_date,dead_place,has_poems,has_prose,has_works,created_at,updated_at) VALUES (${toSqlValue(poet.id)}, ${toSqlValue(poet.country)}, ${toSqlValue(poet.lang)}, ${toSqlValue(poet.type)}, ${toSqlValue(poet.square_portrait)}, ${toSqlValue(poet.name?.firstname)}, ${toSqlValue(poet.name?.lastname)}, ${toSqlValue(poet.name?.fullname)}, ${toSqlValue(poet.name?.pseudonym)}, ${toSqlValue(poet.name?.sortname)}, ${toSqlValue(born.date)}, ${toSqlValue(born.place)}, ${toSqlValue(dead.date)}, ${toSqlValue(dead.place)}, ${toSqlValue(poet.has_poems === true ? 1 : 0)}, ${toSqlValue(poet.has_prose === true ? 1 : 0)}, ${toSqlValue(poet.has_works === true ? 1 : 0)}, ${toSqlValue(now)}, ${toSqlValue(now)})`
+      `INSERT INTO poet (poet_id,country,lang,type,square_portrait,name_firstname,name_lastname,name_fullname,name_pseudonym,name_sortname,born_date,born_place,baptized_date,baptized_place,dead_date,dead_place,has_poems,has_prose,has_works,created_at,updated_at) VALUES (${toSqlValue(poet.id)}, ${toSqlValue(poet.country)}, ${toSqlValue(poet.lang)}, ${toSqlValue(poet.type)}, ${toSqlValue(poet.square_portrait)}, ${toSqlValue(poet.name?.firstname)}, ${toSqlValue(poet.name?.lastname)}, ${toSqlValue(poet.name?.fullname)}, ${toSqlValue(poet.name?.pseudonym)}, ${toSqlValue(poet.name?.sortname)}, ${toSqlValue(born.date)}, ${toSqlValue(born.place)}, ${toSqlValue(baptized.date)}, ${toSqlValue(baptized.place)}, ${toSqlValue(dead.date)}, ${toSqlValue(dead.place)}, ${toSqlValue(poet.has_poems === true ? 1 : 0)}, ${toSqlValue(poet.has_prose === true ? 1 : 0)}, ${toSqlValue(poet.has_works === true ? 1 : 0)}, ${toSqlValue(now)}, ${toSqlValue(now)})`
     );
   });
 

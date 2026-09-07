@@ -192,6 +192,7 @@ const build_poets_first_pass = collected => {
     let period = {};
     if (periodE) {
       const bornE = getChildByTagName(periodE, 'born');
+      const baptizedE = getChildByTagName(periodE, 'baptized');
       const deadE = getChildByTagName(periodE, 'dead');
       const coronationE = getChildByTagName(periodE, 'coronation');
       if (bornE) {
@@ -199,6 +200,15 @@ const build_poets_first_pass = collected => {
           date: safeGetText(bornE, 'date'),
           place: safeGetText(bornE, 'place'),
           inon: safeGetAttr(getChildByTagName(bornE, 'place'), 'inon') || 'in',
+        };
+      }
+      if (baptizedE) {
+        period.baptized = {
+          date: safeGetText(baptizedE, 'date'),
+          place: safeGetText(baptizedE, 'place'),
+          inon:
+            safeGetAttr(getChildByTagName(baptizedE, 'place'), 'inon') ||
+            'in',
         };
       }
       if (deadE) {
@@ -218,7 +228,10 @@ const build_poets_first_pass = collected => {
         };
       }
     }
-    if (period.born == null || period.dead == null) {
+    if (
+      (period.born == null && period.baptized == null) ||
+      period.dead == null
+    ) {
       period = null;
     }
 
@@ -245,6 +258,7 @@ const build_poets_first_pass = collected => {
       has_square_portrait,
       has_works: has.has_works,
       has_poems: has.has_poems,
+      has_indexed_poems: has.has_poems,
       has_prose: has.has_prose,
       has_texts: has.has_texts,
       has_artwork: fs.existsSync(`fdirs/${id}/artwork.xml`),
@@ -252,9 +266,9 @@ const build_poets_first_pass = collected => {
         fs.existsSync(`fdirs/${id}/bio.xml`) ||
         fs.existsSync(`fdirs/${id}/events.xml`) ||
         (period != null &&
-          period.born != null &&
+          (period.born != null || period.baptized != null) &&
           period.dead != null &&
-          period.born.date !== '?' &&
+          (period.born ?? period.baptized).date !== '?' &&
           period.dead.date !== '?'),
     };
     collected_poets.set(id, poet);
@@ -323,50 +337,8 @@ const build_poets_by_country_json = collected => {
   });
 };
 
-const build_literary_periods_json = collected => {
-  const poetListItem = poet => {
-    return {
-      id: poet.id,
-      type: poet.type,
-      country: poet.country,
-      lang: poet.lang,
-      name: {
-        firstname: poet.name.firstname,
-        lastname: poet.name.lastname,
-        sortname: poet.name.sortname,
-      },
-      period:
-        poet.period == null
-          ? null
-          : {
-              born:
-                poet.period.born == null
-                  ? null
-                  : { date: poet.period.born.date },
-              dead:
-                poet.period.dead == null
-                  ? null
-                  : { date: poet.period.dead.date },
-            },
-    };
-  };
-  const periods = literaryPeriods.sorted.map(period => {
-    const poets = [];
-    collected.poets.forEach(poet => {
-      if ((poet.literary_periods || []).includes(period.id)) {
-        poets.push(poetListItem(poet));
-      }
-    });
-    poets.sort((a, b) => {
-      const aName = a.name.sortname || a.name.lastname || a.id;
-      const bName = b.name.sortname || b.name.lastname || b.id;
-      return aName.localeCompare(bName, 'da');
-    });
-    return {
-      ...literaryPeriodForApi(period),
-      poets,
-    };
-  });
+const build_literary_periods_json = () => {
+  const periods = literaryPeriods.sorted.map(literaryPeriodForApi);
   writeJSON('public/api/literary-periods.json', { periods });
 };
 

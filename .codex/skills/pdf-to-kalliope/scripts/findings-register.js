@@ -22,6 +22,9 @@ const validateFindings = rows => {
     if (row.status !== 'open' && !row.evidence) {
       errors.push(`linje ${index + 1}: ${row.id} mangler evidence`);
     }
+    if (row.status === 'verified' && (row.verified_by == null || row.verified_by === '')) {
+      errors.push(`linje ${index + 1}: ${row.id} mangler verified_by`);
+    }
   });
   return errors;
 };
@@ -35,7 +38,7 @@ const updateFinding = (rows, id, patch) => {
 const main = () => {
   const [command, filename, ...args] = process.argv.slice(2);
   if (!command || !filename) {
-    console.error('Brug: node findings-register.js validate|status REGISTER.jsonl [ID STATUS DISPOSITION EVIDENCE SNAPSHOT]');
+    console.error('Brug: node findings-register.js validate|status REGISTER.jsonl [ID STATUS DISPOSITION EVIDENCE SNAPSHOT VERIFIED-BY]');
     process.exitCode = 2;
     return;
   }
@@ -44,14 +47,20 @@ const main = () => {
     if (command === 'validate') {
       const errors = validateFindings(rows);
       errors.forEach(error => console.error(error));
-      const open = rows.filter(row => row.status === 'open');
-      if (open.length) console.error(`${open.length} åbne finding(s).`);
-      if (errors.length || open.length) process.exitCode = 1;
+      const unresolved = rows.filter(row => row.status === 'open' || row.status === 'fixed');
+      if (unresolved.length) console.error(`${unresolved.length} uverificerede finding(s).`);
+      if (errors.length || unresolved.length) process.exitCode = 1;
       return;
     }
     if (command === 'status') {
-      const [id, status, disposition, evidence, snapshot] = args;
-      const updated = updateFinding(rows, id, { status, disposition, evidence, snapshot });
+      const [id, status, disposition, evidence, snapshot, verifiedBy] = args;
+      const updated = updateFinding(rows, id, {
+        status,
+        disposition,
+        evidence,
+        snapshot,
+        ...(verifiedBy == null ? {} : { verified_by: verifiedBy }),
+      });
       const errors = validateFindings(updated);
       if (errors.length) throw new Error(errors.join('\n'));
       writeJsonLines(filename, updated);
