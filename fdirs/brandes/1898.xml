@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
-<kalliopework id="1902" author="brandes" status="complete" type="poetry">
+<kalliopework id="1898" author="brandes" status="complete" type="poetry">
 <workhead>
   <title>Ungdomsvers</title>
-  <year>1902</year>
+  <year>1898</year>
   <pictures>
-    <picture type="titlepage" src="1902-p1.jpg">Titelbladet til <i>Samlede Skrifter</i>, bd. 12 (1902), lyder ,,Georg Brandes' / Samlede Skrifter / Tolvte Bind // Kjøbenhavn / Gyldendalske Boghandels Forlag (F. Hegel &amp; Søn) / Græbes Bogtrykkeri / 1902.''.</picture>
+    <picture type="titlepage" src="1898-p1.jpg">Titelbladet til <i>Ungdomsvers</i> (1898) lyder ,,Ungdomsvers / af / Georg Brandes // Kjøbenhavn / Gyldendalske Boghandels Forlag (F. Hegel &amp; Søn) / Græbes Bogtrykkeri / 1898.''.</picture>
   </pictures>
-  <source href="https://runeberg.org/gbsamskr/12/" facsimile="gbsamskr12" facsimile-pages-num="558" facsimile-pages-offset="6">Georg Brandes: <i>Samlede Skrifter</i>, bd. 12, Gyldendalske Boghandels Forlag (F. Hegel &amp; Søn), Græbes Bogtrykkeri, Kjøbenhavn, 1902. Værket gengiver bindets afsnit <i>Ungdomsvers</i> samt det efterfølgende slutningsord.</source>
+  <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122561708705763" facsimile="115308046617" facsimile-pages-num="163" facsimile-pages-offset="15">Georg Brandes: <i>Ungdomsvers</i>, Gyldendalske Boghandels Forlag (F. Hegel &amp; Søn), Græbes Bogtrykkeri, Kjøbenhavn, 1898.</source>
   <pagebreaks/>
   <proofreadings>
     <proofreading model="gpt-5" datetime="2026-09-07T12:47:00+02:00"/>
@@ -15,19 +15,38 @@
 </workhead>
 <workbody>
 
+<text id="brandes2026090701" type="preface" skip-index="true">
+<head>
+  <title>Forord</title>
+  <source pages="[1]-[2]" facsimile-pages="10-11"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Som de Fleste, der har gaaet i en bedre Skole, har jeg i mine unge Dage, mest i Drenge- og Ynglinge-Aarene, skrevet en Del Vers. Naar jeg nu giver et Udvalg af dem i Trykken, sker det ikke ud fra nogen Overvurdering af min Evne eller Færdighed, men af Uro for, at en eller anden af de Literaturhistorikere, hvis Nydelse og Lykke det er at rode i gamle Papirer, skal udgive disse Vers efter min Død og tumle med dem efter Behag. Under en haard og langvarig Sygdom ifjor blev denne Frygt særligt levende hos mig. Sandt nok, jeg kunde brænde det Hele; men jeg har havt Ulyst dertil, og saa bliver desuden i Regelen en eller anden Afskrift netop af de daarligste Ting opbevaret.
+    Disse Smaadigte er naturligvis ikke alle personlige og intime; det lyriske Jeg er et andet end det private; men der findes ingen versificerede Anekdoter, heller ingen Lejlighedsvers imellem dem, overhovedet ingen Vers, der har været beregnede paa at læses af fremmede Øjne. De er kun blevne til, fordi Forfatteren ikke kunde lade være med at skrive dem ned.
+    De vil maaske forekomme ret gammeldags, og de har i ethvert Tilfælde intetsomhelst Forhold til vore Dages poetiske Produktion. De ældste er skrevne for fulde fyrretyve Aar siden, de yngste er med faa <pb n="[2]" facs="010.jpg"/>Undtagelser ikke mindre end femogtyve Aar gamle. De kommer mig derfor saare lidet ved, som jeg paa mit nærværende Udviklingstrin er; jeg betragter dem, omtrent som Zola betragtede de Ungdomsvers, han i sin Tid overlod Paul Alexis som Bilag til en literær Levnedsbeskrivelse — som en Haandfuld tørrede Blomster, der har ligget gjemte og halvvejs glemte i en Skuffe og kun har Interesse som Illustration til Ejerens Følelsesliv. Eller rettere disse Vers er som Aske og Gløder, det Tiloversblevne, Nedslaget, Residuet efter engang levende Flammer. Gløder i Asken kunde Samlingen hedde.
+    De fleste Prosaforfattere har skrevet Vers i nogle Aar før de begyndte at skrive Prosa. Skjønt det at kunne skrive metrisk og rime nogenlunde eller at have kunnet det, paa ingen Maade er nogen Betingelse for at skrive en god Prosa, er Rimeriet dog uden Tvivl hyppigt en Forskole dertil, som ingenlunde er at foragte.
+
+<nonum><sc>Juli 1898.</sc></nonum>
+<nonum><right><i>G. B.</i></right></nonum>
+</prose>
+</body>
+</text>
+
 <section level="1">
 <head>
-  <toctitle>Første Afdeling (1858–1860)</toctitle>
+  <toctitle>Første Afdeling (1858—1860)</toctitle>
 </head>
 <content>
 
-<text id="brandes200106174">
+<text id="brandes2026090702" variant="brandes200106174">
 <head>
-  <title>Seksten Aar</title>
-  <toctitle>Seksten Aar</toctitle>
-  <indextitle>Seksten Aar</indextitle>
+  <title>Sexten Aar</title>
+  <toctitle>Sexten Aar</toctitle>
+  <indextitle>Sexten Aar</indextitle>
   <firstline>Jeg synger højt det ud: det er min Lyst</firstline>
-  <source pages="301-302"/>
+  <source pages="3-4"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -37,26 +56,26 @@ naar Havets sorte Søer bruse mægtigst,
 naar Bølgen ruller Skummets Flokke prægtigst,
 at styrte mig med Vælde til dens Bryst,
 at føle Strømmens Friskhed nær mit Hjerte,
-dens Fart og Svulmen, som gør kold og varm.
+dens Fart og Svulmen, som gjør kold og varm,
 og kløve Bølgen med min stærke Arm,
-naar den har givet mig, hvad jeg begærte.
+naar den har givet mig, hvad jeg begjærte.
 
 Naar Stormen brøler vildt, det er min Lyst
 at vende kækt mit Fjed mod Nordenvinden,
-at føle mine Lokker slaa mod Kinden,
+at føle mine Lokker slaa om Kinden,
 der rødmer heftigt i den raske Dyst.
 Det kildrer mig, den kraftige, den unge,
 at se Orkanen svag imod min Kraft.
 Jeg drikker Stormens Susen med min Lunge,
 jeg nipper ej til Druens vamle Saft.
 
-<pb n="302" facs="307.jpg"/>Naar Tordnen ruller over Jorden hen
-og Fuglen dør af Skræk paa Træets Grene.
+<pb n="4" facs="018.jpg"/>Naar Tordnen ruller over Jorden hen
+og Fuglen døer af Skræk paa Træets Grene,
 det er min Lyst at staa paa Marken ene
 og med min Røst at overdøve den.
 Og Zeus! naar Lynet knitrer i din Haand,
 da griber jeg det som mit bedste Værge.
-Mod denne Slægt, der blev en Slægt af Dværge,
+Mod denne Slægt, der blev en Slægt af Dværge
 jeg slynger det som Straffens vrede Aand.
 
 1858.
@@ -64,20 +83,20 @@ jeg slynger det som Straffens vrede Aand.
 </body>
 </text>
 
-<text id="brandes200106175">
+<text id="brandes2026090703" variant="brandes200106175">
 <head>
-  <title>Til Foibos Apollon</title>
-  <toctitle>Til Foibos Apollon</toctitle>
-  <indextitle>Til Foibos Apollon</indextitle>
+  <title>Til Foibos Apollo</title>
+  <toctitle>Til Foibos Apollo</toctitle>
+  <indextitle>Til Foibos Apollo</indextitle>
   <firstline>Foibos! du ler, o min himmelske Fader</firstline>
-  <source pages="303-304"/>
+  <source pages="5-7"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Foibos! du ler, o min himmelske Fader,
 Foibos, du ler;
-ser, hvor jeg raser, jeg kæmper og hader,
+ser, hvor jeg raser, kjæmper og hader,
 ser det og ler;
 ser, hvordan Bjerge af Daarskab sig taarne
 rundt om dit Barn,
@@ -87,7 +106,7 @@ ser, at jeg saares og strider og atter
 fanger et Saar,
 ser, hvor jeg segner, og ikkun med Latter
 Fjenden du slaar! —
-Ser du da da ikke Forvirringen sejre,
+<pb n="6" facs="020.jpg"/>Ser du da ikke Forvirringen sejre,
 ser ej min Ve?
 Dumhed og Ondskab omkring mig sig lejre,
 hvor kan du le!
@@ -97,14 +116,14 @@ kvæles i Vrævl,
 bliver hver Galskab saa gal, at den vejres
 hen som en Trævl.
 
-<pb n="304" facs="309.jpg"/>Ja, du har Ret, over Jorden lad bruse
+Ja, du har Ret, over Jorden lad bruse
 Narrenes Skraal,
 lad dem i Sejrens Pokal sig beruse
 naa deres Maal!
 
 Stærkt er de Aandløses Aand i Ekstase
 nu mod dit Hvælv.
-Engang vil selv de Forblindede rase
+Engang vil selv de forblindede rase
 dumt mod sig selv.
 
 Da vil din leende Sol sine Straaler
@@ -115,7 +134,7 @@ Da vil du smilende bruge din Bue,
 bruge din Magt;
 da vil den sprællende Dumhed du kue
 taust, med Foragt.
-Da ville Narrene skrige sig hæse
+<pb n="7" facs="021.jpg"/>Da ville Narrene skrige sig hæse
 over din Glans,
 da vil din Storm fra hverandre dem blæse
 rundt i en Dans.
@@ -129,13 +148,13 @@ det mig endnu.
 </body>
 </text>
 
-<text id="brandes200106176">
+<text id="brandes2026090704" variant="brandes200106176">
 <head>
   <title>Aarets Ran</title>
   <toctitle>Aarets Ran</toctitle>
   <indextitle>Aarets Ran</indextitle>
   <firstline>Hvad? glider Aarets stolte Aand</firstline>
-  <source pages="305-306"/>
+  <source pages="8-9"/>
   <notes>
     <note>Til det 17. Aar bar Drengene i det gamle Rom en Purpurstribe om Nationaldragten, den hvide Toga. Denne saaledes smykkede Barnedragt kaldtes Toga prætexta</note>
   </notes>
@@ -157,19 +176,19 @@ den bærer ej saa tung en Last.
 Fly, fly! O Himmel, Isen brast,
 han synker, han forgaar.
 
-Forgæves jeg ham frelse vil,
+Forgjæves jeg ham frelse vil,
 jeg er for svag dertil.
 Han griber med sin stærke Haand
 fast i mit Friluftsklædebon.
 Brat ned det fra min Skulder gled,
 det sank i Dybet ned.
 
-<pb n="306" facs="311.jpg"/>Hvad har han ranet dig? i Alt
+<pb n="9" facs="023.jpg"/>Hvad har han ranet dig? i Alt
 en bræmmet Toga, Ven!
 en Barnedragt, hvis Purpursøm
 var Tant som Barnets falske Drøm.
-Hvad gør det, at din Toga faldt?
-En ny du faar igen.
+Hvad gjør det, at din Toga faldt?
+En ny du faar igjen.
 
 Ak nej! Langt mer end hvad du ser
 har han berøvet mig.
@@ -178,11 +197,11 @@ kom frem ved Barndomsdrømmens Magt.
 Slig Glans kan jeg ej skabe mer,
 som Mand jeg kan det ej.
 
-O stig af Dybet op igen,
+O stig af Dybet op igjen,
 stig op, stig op til mig!
 Bring Dragten med sin Purpursøm,
 bring mig min Barndoms gyldne Drøm!
-Stig op, stig op, stig op igen!
+Stig op, stig op, stig op igjen!
 Ve mig, han kommer ej.
 
 Januar 1859.
@@ -190,20 +209,20 @@ Januar 1859.
 </body>
 </text>
 
-<text id="brandes200106177">
+<text id="brandes2026090705" variant="brandes200106177">
 <head>
   <title>Vokalfarverne</title>
   <toctitle>Vokalfarverne</toctitle>
   <indextitle>Vokalfarverne</indextitle>
-  <firstline>Ja Digteren er Maler; en Pensel er hans Pen</firstline>
-  <source pages="307-308"/>
+  <firstline>Ja, Digteren er Maler; en Pensel er hans Pen</firstline>
+  <source pages="10-11"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Ja Digteren er Maler; en Pensel er hans Pen
+Ja, Digteren er Maler; en Pensel er hans Pen;
 hans Farver er de brogede Vokaler.
-En Seer lig han stiller sig for sit Lærred hen;
+En Seer lig han stiller sig for sit Lærred hen:
 med Sprogets Paletpragt han maler.
 
 Men Den, hvis Blik er sløvt og hvis Farvesans er kold,
@@ -211,9 +230,9 @@ han ser ej Maleriets Farver flamme;
 imellem ham og Billedet er evig rejst en Vold
 af Taage, saa de tykkes graa og tamme.
 
-Han hører Lyden A, men han skuer intet Rødt;
+Han hører Lyden A, men han skuer intet Rødt:
 E er ej hvidt for slige Sansers Raahed.
-Det gule I, der skinner som Guld, for ham er dødt;
+Det gule I, der skinner som Guld, for ham er dødt:
 han føler ikke U'ets dybe Blaahed.
 
 For ham er Vokalen det døde Ciffer blot,
@@ -221,13 +240,13 @@ det Ord, der maler, Tegn, men aldrig Billed.
 For ham er Regnbuherligheden bare Graat i Graat,
 han fatter ej hvad Kunstneren har villet.
 
-<pb n="308" facs="313.jpg"/>Men Ordet har ej Klang blot, har Lød og Duft dertil,
+<pb n="11" facs="025.jpg"/>Men Ordet har ej Klang blot, har Lød og Duft dertil.
 og friske Sanser fordres, vil man nyde
 den smeltende Ynde, det rige Farvespil,
 hvormed en Kunstners Sprog kan Hjertet fryde.
 
 Har du da ikke Sanser, kan ej betages saa,
-end ikke se det Skær, Vokalen arver,
+end ikke se det Skjær, Vokalen arver,
 saa last ej Maleriet, du ej forstaar dig paa,
 det Maleri, hvorpaa du ej ser Farver.
 
@@ -236,18 +255,18 @@ Januar 1859
 </body>
 </text>
 
-<text id="brandes200106178">
+<text id="brandes2026090706" variant="brandes200106178">
 <head>
   <title>Vinteraften paa St. Annæ Plads</title>
   <toctitle>Vinteraften paa St. Annæ Plads</toctitle>
   <indextitle>Vinteraften paa St. Annæ Plads</indextitle>
-  <firstline>Som Pailletter, spredte paa det blaa</firstline>
-  <source pages="309-309"/>
+  <firstline>Som Pailletter spredte paa det blaa</firstline>
+  <source pages="12-13"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Som Pailletter, spredte paa det blaa
+Som Pailletter spredte paa det blaa
 Himlens Klæde, Stjernerne blege staa.
 Maanen deres Glans fordunkler.
 Se! de sorte Tegl paa Kirkens Tag
@@ -266,25 +285,23 @@ nu og da et lille Isspejl klirrer.
 Skarpt begrænset, mørk og gigantisk stor
 glider min Skygge henad den lyse Jord,
 i hvis Indre ned den stirrer.
-Dér er en evig Ild. Mon Skyggen ser
-gennem den stivnede Skal, det frosne Ler
+<pb n="13" facs="027.jpg"/>Dér er en evig Ild. Mon Skyggen ser
+gjennem den stivnede Skal, det frosne Ler
 ned, hvor de tunge, glødende Bølger vælte?
-Nok saa smukt er dog vist mit skønne Syn:
+Nok saa smukt er dog vist mit skjønne Syn:
 Maanen, der glider langsomt hen over By'n
 og Orion med sit gyldne Bælte.
-
-1859.
 </poetry>
 </body>
 </text>
 
-<text id="brandes200106179">
+<text id="brandes2026090707" variant="brandes200106179">
 <head>
   <title>Morgen paa Langelinie</title>
   <toctitle>Morgen paa Langelinie</toctitle>
   <indextitle>Morgen paa Langelinie</indextitle>
   <firstline>Vaarstærk du er, du Straale, som kommer fra Solen</firstline>
-  <source pages="310-310"/>
+  <source pages="14-14"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -299,18 +316,18 @@ Se og med svagere Slag sig nu Vingerne sænke;
 under den sejrende Sols Straaler de nøle;
 Bølgerne bruse nu ikke mer imod Stranden; de stænke
 Skummet mod Stenene kun, og en mildere Vind
-nu kan jeg føle saa kælende køle min Kind.
+nu kan jeg føle saa kælende kjøle min Kind.
 </poetry>
 </body>
 </text>
 
-<text id="brandes2001061710">
+<text id="brandes2026090708" variant="brandes2001061710">
 <head>
   <title>Klimpreri</title>
   <toctitle>Klimpreri</toctitle>
   <indextitle>Klimpreri</indextitle>
   <firstline>O for et Kys af denne Mund</firstline>
-  <source pages="311-311"/>
+  <source pages="15-15"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -327,18 +344,18 @@ ser til min Nød, I Øjne graa!
 Lad mig dog ej med Sorg i Sind
 af Savnet dræbt før Tiden gaa
 uden et Kys, uden et Ord
-i den kolde Jord!
+i den kolde Jord.
 </poetry>
 </body>
 </text>
 
-<text id="brandes2001061711">
+<text id="brandes2026090709" variant="brandes2001061711">
 <head>
   <title>Ve den, som aldrig saa dig</title>
   <toctitle>Ve den, som aldrig saa dig</toctitle>
   <indextitle>Ve den, som aldrig saa dig</indextitle>
   <firstline>Ve den, som aldrig saa dig</firstline>
-  <source pages="312-312"/>
+  <source pages="16-16"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -357,13 +374,13 @@ som jeg nu.
 </body>
 </text>
 
-<text id="brandes2001061712">
+<text id="brandes2026090710" variant="brandes2001061712">
 <head>
   <title>Nat i det Fri</title>
   <toctitle>Nat i det Fri</toctitle>
   <indextitle>Nat i det Fri</indextitle>
   <firstline>Solen sank. Bølgerne slaa</firstline>
-  <source pages="313-314"/>
+  <source pages="17-18"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -385,22 +402,22 @@ Mørket stiger. Trindt omkring
 Alt i Mulm sig hyller,
 Uglen omkring mig flyver i Ring
 og fast i sin Kres mig tryller.
-Ild i dens Øje glimter.
+<pb n="18" facs="032.jpg"/>Ild i dens Øje glimter.
 Saa synker den ned for en Skikkelses Fod,
 hvis Omrids først nu jeg skimter,
 thi taus den Mægtige stod.
-<pb n="314" facs="319.jpg"/>Visdoms Gudinde sin Mund oplader:
+Visdoms Gudinde sin Mund oplader:
 I Tankernes Nat er den klareste Dag.
-Men Dæmringen sky! Den gør sværmerisk spag.
+Men Dæmringen sky! Den gjør sværmerisk spag.
 Den skaber det Væsen, jeg hader.
 
 Morgenen dæmrer. Hun svinder. Og se,
 de vaagne, de sjungende Fugle,
 og jage paa Flugten med Spot og Spe
 Pallas Athene! din Ugle.
-De prise med Sang det rødmende Skær,
+De prise med Sang det rødmende Skjær,
 for hvilket Stjernerne falme;
-det er som sang de en Salme.
+det er som sang de en Psalme
 til Lindring og Trøst for Enhver.
 Det er, som de Kvalen forstørred,
 kun for at lokke Taarerne frem
@@ -412,13 +429,13 @@ Taarernes Kilde fortørred.
 </body>
 </text>
 
-<text id="brandes2001061713">
+<text id="brandes2026090711" variant="brandes2001061713">
 <head>
   <title>Forbi</title>
   <toctitle>Forbi</toctitle>
   <indextitle>Forbi</indextitle>
   <firstline>Det er forbi</firstline>
-  <source pages="315-315"/>
+  <source pages="19-20"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -440,9 +457,9 @@ og knus min Krop
 mod Klippens Kant
 og stænk mig med
 din Diamant.
-Og kald saa med dit dybe Brum
+<pb n="20" facs="034.jpg"/>Og kald saa med dit dybe Brum
 fra Øst til Vest
-de vilde Fugle rask til Gæst
+de vilde Fugle rask til Gjæst
 og lad dem holde sig en Fest
 paa Aadslet ved
 din stejle Bred —
@@ -451,15 +468,15 @@ saa er det bedst.
 </body>
 </text>
 
-<text id="brandes2001061714">
+<text id="brandes2026090712" variant="brandes2001061714">
 <head>
   <title>Latter</title>
   <toctitle>Latter</toctitle>
   <indextitle>Latter</indextitle>
   <firstline>Du bitre Latter! kom og trøst mig nu!</firstline>
-  <source pages="316-316"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
+  <source pages="21-21"/>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -474,10 +491,10 @@ alene Kampen ud og Sorgen ægted
 og tyede til Taarer uden Blu.
 
 Men at en Flok, jeg væmmes ved og hader,
-paatvinger mig sin vamle Kærlighed,
+paatvinger mig sin vamle Kjærlighed,
 og fordrer Gunst og Tak og milde Lader —
 
-vil kæmpe med om hvad den selv ej véd,
+vil kjæmpe med om hvad den selv ej véd,
 slaa med mig for hvad selv den aldrig fatter —
 derfor du trøste, du min bitre Latter!
 
@@ -486,13 +503,13 @@ derfor du trøste, du min bitre Latter!
 </body>
 </text>
 
-<text id="brandes2001061715">
+<text id="brandes2026090713" variant="brandes2001061715">
 <head>
   <title>Vandrende Ridder</title>
   <toctitle>Vandrende Ridder</toctitle>
   <indextitle>Vandrende Ridder</indextitle>
   <firstline>Saalænge der findes et Bjerg, en Sø</firstline>
-  <source pages="317-317"/>
+  <source pages="22-22"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -502,11 +519,11 @@ et Land, som jeg ikke har skuet;
 saalænge der gives en dejlig Mø,
 for hvem ej mit Hjerte har luet;
 
-Saalænge Uret en Kæmper har,
+Saalænge Uret en Kjæmper har,
 jeg ikke fik overmande;
 saalænge i Danmark som udenlands
 Hæderens mørke Laurbærkrans
-snoer sig om Uslingers Pande.
+snoer sig om Uslingers Pande,
 
 Saa længe har min Sjæl ikke Fred,
 den vandrende Ridder maa vandre.
@@ -518,13 +535,13 @@ April 1859
 </body>
 </text>
 
-<text id="brandes2001061716">
+<text id="brandes2026090714" variant="brandes2001061716">
 <head>
   <title>Stemningsliv</title>
   <toctitle>Stemningsliv</toctitle>
   <indextitle>Stemningsliv</indextitle>
   <firstline>Som Skyer drage</firstline>
-  <source pages="318-319"/>
+  <source pages="23-24"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -532,7 +549,7 @@ April 1859
 Som Skyer drage
 for Vejr og Vind,
 Stemninger jage
-gennem mit Sind.
+gjennem mit Sind.
 
 Synke og klage,
 løftes og sukke,
@@ -546,23 +563,23 @@ Kunde jeg hærde det daarligt svage
 Hjerte mod Alt, hvad der ind sig trænger
 de lange Dage —
 ak det baaded mig ikke længer
-end til, vugget paa Nattens Gænger,
+end til, vugget paa Nattens Gjænger,
 
-<pb n="319" facs="324.jpg"/>Hjertet stemtes,
+<pb n="24" facs="038.jpg"/>Hjertet stemtes,
 Længsler vaktes og ikke stiltes
 før, mens hver Beslutning forglemtes,
-alle Strengene gennemspiltes.
+alle Strengene gjennemspiltes.
 </poetry>
 </body>
 </text>
 
-<text id="brandes2001061717">
+<text id="brandes2026090715" variant="brandes2001061717">
 <head>
   <title>Motto</title>
   <toctitle>Motto</toctitle>
   <indextitle>Motto</indextitle>
   <firstline>Højt op til Lysets og til Kunstens Hjem!</firstline>
-  <source pages="319-319"/>
+  <source pages="24-24"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -581,24 +598,24 @@ Højt op, dybt ned, vidt frem!
 
 <section level="1">
 <head>
-  <toctitle>Anden Afdeling (1861–1865)</toctitle>
+  <toctitle>Anden Afdeling (1861—1865)</toctitle>
 </head>
 <content>
 
-<text id="brandes2001061719">
+<text id="brandes2026090716" variant="brandes2001061719">
 <head>
   <title>Ydun</title>
   <toctitle>Ydun</toctitle>
   <indextitle>Ydun</indextitle>
   <firstline>Højt imod Nord er Fru Yduns Sal</firstline>
-  <source pages="320-322"/>
+  <source pages="27-29"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Højt imod Nord er Fru Yduns Sal.
 Den har Søjler af Is, saa blank som Krystal.
-Gennem Salen jager den kolde Vind
+Gjennem Salen jager den kolde Vind
 ud og ind
 og rødner Yduns den friske Kind.
 
@@ -610,26 +627,26 @@ lad dit Øre ej for min Bøn være lukt!
 
 Med spændte Vinger du flyver afsted.
 Slut mig fast i din Favn, tag mig med, tag mig med!
-Fra Stuelufts Tryk, fra Løgn og fra Pral,
+Fra Stuelufts Tryk, fra Løgn og fra Pral.
 fra kvalmende Kval,
 fra Tankernes Væv og til Yduns Sal!
 
-<pb n="321" facs="326.jpg"/>Gennempisket af Hagl og af sneblandet Regn
+<pb n="28" facs="042.jpg"/>Gjennempisket af Hagl og af sneblandet Regn
 med Stormen og dig til Nordpolens Egn!
 Snart højt over Sky'r under Himlens Blaa
-vi med Ørnen gaa,
+vi med Ørnen gaa.
 snart Havfladens Spejl med Vingerne slaa.
 
-I det isnende Hav, Forglemmelsens Flod,
-vil jeg dykke mit Hoved og køle mit Blod,
-kaste mit Hjertes Sorg overbord,
+I det isnende Hav, Forglemmelsens Flod.
+vil jeg dykke mit Hoved og kjøle mit Blod.
+kaste mit Hjertes Sorg overbord.
 lade Bølgernes Kor
 døve mit Øre for Fristerens Ord.
 
-Har saa jeg dybt fra det kølige Væld
-suget Bølgernes Friskhed ind i min Sjæl,
+Har saa jeg dybt fra det kjølige Væld
+suget Bølgernes Friskhed ind i min Sjæl.
 vi flyve paany mod den dejlige Dis
-over Marker af Is,
+over Marker af Is.
 hvor Stormen synger til Yduns Pris.
 
 I den luftige Hal jeg da træde vil
@@ -640,31 +657,31 @@ Sjælens og Legemets Ungdom mig giv!
 
 Genien bar mig herop fra Syd,
 ham skænker hvert Aar du Ungdommens Pryd,
-smelter hans Hjerte og mørkner hans Haar,
+smelter hans Hjerte og mørkner hans Haar.
 thi du formaar
 at skabe Vinteren om til Vaar.
 
-<pb n="322" facs="327.jpg"/>Mig række du ogsaa Æblets Saft!
+<pb n="29" facs="043.jpg"/>Mig række du ogsaa Æblets Saft!
 Den vil fylde min Sjæl med skabende Kraft.
-Jeg trænger dertil, alt Gammelt og Gemt
+Jeg trænger dertil, alt Gammelt og Gjemt
 har jeg længst forglemt;
 nu er min Sjæl til Begejstring stemt.
 
 Og vi knæle. Da rækker hun Bægeret hen.
-I Ungdomsglans staa vi op igen.
+I Ungdomsglans staa vi op igjen.
 
 Nytaar 1861.
 </poetry>
 </body>
 </text>
 
-<text id="brandes2001061720">
+<text id="brandes2026090717" variant="brandes2001061720">
 <head>
   <title>Livslyset</title>
   <toctitle>Livslyset</toctitle>
   <indextitle>Livslyset</indextitle>
   <firstline>Den vilde Storm og den kolde Regn, de lege</firstline>
-  <source pages="323-323"/>
+  <source pages="30-30"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -676,12 +693,12 @@ det bæver viftende i Nattens Gys.
 Naar vil det ende?
 Vifter det hen?
 Da kan ingen tænde
-Faklen igen.
+Faklen igjen.
 
 Du Genius! Evige Gud, som om Livet værner!
 Grib Faklen, før den gaar ud, med vældig Haand,
 og tænd paany dens Ild ved de flammende Stjerner,
-og spred dens stærke Gnister, hellige Aand!
+og spred dens stærke Gnister, hellige Aand
 Lad ej Storm og Regn faa
 med mit Livslys Bugt!
 Send mig et Tegn paa
@@ -692,20 +709,20 @@ det ej bliver slukt!
 </body>
 </text>
 
-<text id="brandes2001061721">
+<text id="brandes2026090718" variant="brandes2001061721">
 <head>
   <title>Til Muserne</title>
   <toctitle>Til Muserne</toctitle>
   <indextitle>Til Muserne</indextitle>
   <firstline>I hellige Muser, begejstrende Ni!</firstline>
-  <source pages="324-324"/>
+  <source pages="31-32"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 I hellige Muser, begejstrende Ni!
 Hvem i al Verden er grum som I!
-Med dæmpede Toner og lokkende Spil.
+Med dæmpede Toner og lokkende Spil,
 med Ord, der i sangrige Takter falde,
 den unge lyttende Sjæl I kalde
 fra Dvale til Drøm, og i Drømmene til
@@ -716,11 +733,11 @@ Af salig Berusning det Bæger er fuldt,
 af hellige Kilder den Drik er øst,
 som den drikker hos Eder; dens Vunder læges,
 hele dens Liv i Musik bevæges.
-Fra jordiske tyngende Lænker løst
+Fra Jordlivets tyngende Lænke løst
 i henrykt Lykke den kvæges.
 
-I Musens Kys er Forjættelsen dulgt,
-at Kysset paany af et Kys bliver fulgt,
+<pb n="32" facs="046.jpg"/>I Musens Kys er Forjættelsen dulgt
+at Kysset paany af et Kys bliver fulgt
 og Den, som engang har dets Sødme smagt,
 aldrig i Livet at glemme det mægter,
 evigt i higende Længsel smægter.
@@ -732,13 +749,13 @@ Løftet om Kysset, hun nægter.
 </body>
 </text>
 
-<text id="brandes2001061722">
+<text id="brandes2026090719" variant="brandes2001061722">
 <head>
   <title>Novicens Bøn</title>
   <toctitle>Novicens Bøn</toctitle>
   <indextitle>Novicens Bøn</indextitle>
   <firstline>Se ned til mig! Jeg mine Hænder strækker</firstline>
-  <source pages="325-326"/>
+  <source pages="33-34"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -746,8 +763,8 @@ Løftet om Kysset, hun nægter.
 Se ned til mig! Jeg mine Hænder strækker
 mod dig, min Gud!
 Jeg beder inderligt. — Min Afmagt lægger
-paa mine Læber Ord. Du, som den kender,
-o skænk mig Kræfter til det store Brud
+paa mine Læber Ord. Du, som den kjender,
+o skjænk mig Kræfter til det store Brud
 med Alt, hvad Verdens er, Alt, hvad som blænder
 det Blik, der ej i hellig Andagt brænder.
 
@@ -759,10 +776,10 @@ den lindrende, den trøsterige Graad!
 Og naar jeg Kraft har vundet ved at græde,
 skal jeg den smalle Bane trøstigt træde.
 
-Den Herlighed og Glans, jeg tyktes have,
+Den Herlighed og Glans, jeg tyktes have
 bar Tiden tyst
 i Favnen bort, den evigt at begrave.
-<pb n="326" facs="331.jpg"/>Hvad end jeg har, det kan den ikke tage.
+<pb n="34" facs="048.jpg"/>Hvad end jeg har, det kan den ikke tage.
 Hvad jeg har reddet af den haarde Dyst
 er mit. Thi vil jeg ikke daarligt klage;
 nu har jeg Kraft, nu først, til at forsage.
@@ -773,36 +790,36 @@ til Strid mod Mørkets Hær, den Lysets Hader!
 O lad mig slaa i Kampen for dit Rige
 med Mod i Bryst, med Ydmyghed i Sind,
 med Sejr i Skjold! Til Dybet skal de vige,
-de usle Magter, der mod dig tør krige.
+de usle Magter der mod dig tør krige.
 
 1861.
 </poetry>
 </body>
 </text>
 
-<text id="brandes2001061723">
+<text id="brandes2026090720" variant="brandes2001061723">
 <head>
   <title>Tvivlerens Bøn</title>
   <toctitle>Tvivlerens Bøn</toctitle>
   <indextitle>Tvivlerens Bøn</indextitle>
   <firstline>Giv, at det mørknes engang i mit Sind</firstline>
-  <source pages="327-327"/>
+  <source pages="35-35"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Giv, at det mørknes engang i mit Sind,
 giv mig at tro!
-Udsluk Fornuftens Lys, gør mig blind,
+Udsluk Fornuftens Lys, gjør mig blind,
 giv mig Ro!
 Du, hvem Tanken besvor, der af Tanken maa stige
-lutret, som ubevidst Væsen, ved mig dig bevidst kun!
-Har dine Love du sprængt, har du kløftet dit Rige,
+lutret, som ubevidst Væsen, ved mig dig bevidst kun
+Har dine Love du sprængt, har du kløftet dit Rige
 har til Moses du talt, blev du født som et Barn, skal
 Sligt jeg tro, da vær naadig og giv mig en Frist kun!
 
 Frist! hvilket Ord! Hvem er Frist vel forundt?
-Kød er jo Hø.
+Kjød er jo Hø.
 Vist er kun ét: vi skal dø. Hvert Sekund
 kan vi dø.
 Hør da mit Raab, mens jeg lever! (ifald du forstaar det)
@@ -816,13 +833,13 @@ Januar 1862
 </body>
 </text>
 
-<text id="brandes2001061724">
+<text id="brandes2026090721" variant="brandes2001061724">
 <head>
   <title>Opraab</title>
   <toctitle>Opraab</toctitle>
   <indextitle>Opraab</indextitle>
   <firstline>Ungdom i Norden! Rejs dog engang dig med Magt</firstline>
-  <source pages="328-328"/>
+  <source pages="36-36"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -850,13 +867,13 @@ Juli 1862
 </body>
 </text>
 
-<text id="brandes2001061725">
+<text id="brandes2026090722" variant="brandes2001061725">
 <head>
   <title>Efter længere Tids Sløvhed</title>
   <toctitle>Efter længere Tids Sløvhed</toctitle>
   <indextitle>Efter længere Tids Sløvhed</indextitle>
   <firstline>Du Liv, der stærkt i Pulsen slaar</firstline>
-  <source pages="329-329"/>
+  <source pages="37-37"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -866,25 +883,25 @@ og banker lystigt i min Tinding,
 hvorfor er du saa kort en Vinding,
 der sjældent kommer, hurtigt gaar?
 O rul i mine Aarer fuldt!
-O skænk mig i min Ungdom Kræfter!
-Spræng Sjælens Baand, giv hvad jeg higer efter!
+O skjænk mig i min Ungdom Kræfter!
+Spræng Alt hvad binder, Alt hvad hefter!
 Besjæl mig naadigt, styrk mig huldt!
 </poetry>
 </body>
 </text>
 
-<text id="brandes2001061726">
+<text id="brandes2026090723" variant="brandes2001061726">
 <head>
   <title>Til en tysk Pige</title>
   <toctitle>Til en tysk Pige</toctitle>
   <indextitle>Til en tysk Pige</indextitle>
-  <firstline>Forgæves Tone vi med Tone stemmed</firstline>
-  <source pages="330-330"/>
+  <firstline>Forgjæves Tone vi med Tone stemmed</firstline>
+  <source pages="38-39"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Forgæves Tone vi med Tone stemmed,
+Forgjæves Tone vi med Tone stemmed,
 din Røst og min vil ikke klinge sammen.
 Farvel! Dit Tungemaal er mig et fremmed,
 og mit, som først og bedst mit Hjerte nemmed,
@@ -893,19 +910,19 @@ det er mit Et og Alt, mit Liv, min Gammen,
 Pulsslaget i min Aand. Berøvet det
 mit Ord er blodløst og min Tanke slet.
 
-O var du dog i vore Skove hjemme!
+o var du dog i vore Skove hjemme!
 O var dit Øre blot i Tide vænnet
-til Danmarks Fugles, Danmarks Digteres Stemme,
+til Danmarks Fugles. Danmarks Digteres Stemme,
 du havde aldrig kunnet Sligt forglemme,
 aldrig i Verden havde du det nænnet.
 Men fra vort Sprog har man med Kløgt dig gennet:
-det var for jævnt — hvad véd jeg! — og for svært,
+det var for jævnt — hvad véd jeg! — og for svært.
 og Tiden gik, du fik det aldrig lært.
 
-Men hvis du skulde mig en Fremmed være,
+<pb n="39" facs="053.jpg"/>Men hvis du skulde mig en Fremmed være,
 o stammed du da blot fra vore Frænder.
-fra et af Brødrerigerne, de kære,
-da holdt, skønt fremmed, du vort Land i Ære
+fra et af Brødrerigerne, de kjære,
+da holdt, skjønt fremmed, du vort Land i Ære
 og hørte med til vore bedste Venner.
 Men ak! din Vugge stod blandt vore Fjender.
 Der brænder mellem os Nationers Had —
@@ -916,13 +933,13 @@ saa lad os da i Stilhed skilles ad.
 </body>
 </text>
 
-<text id="brandes2001061727">
+<text id="brandes2026090724" variant="brandes2001061727">
 <head>
   <title>Bruden</title>
   <toctitle>Bruden</toctitle>
   <indextitle>Bruden</indextitle>
   <firstline>Nu trykker fast</firstline>
-  <source pages="331-331"/>
+  <source pages="40-41"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -933,46 +950,46 @@ at intet Kast
 den hvirvler bort i Dansen!
 Dog ømt og blidt
 om Panden ned den tvinger!
-Hvor let en Knop fra Myrtekransen springer,
+Hvor let en Knop fra Myrthekransen springer,
 det, unge Piger, véd I lidt.
 
-Det er fuldbragt.
+Nu er det godt.
 For Spejlet Bruden straaler
-i snehvid Dragt.
+i hvidt og blaat.
 Hun med et Blik sig maaler.
 Et flygtigt Smil,
 et spottende, der røber:
-«Jeg var tilfals, saasnart jeg fandt en Køber»,
+«Jeg var tilfals, saasnart jeg fandt en Kjøber»,
 farer ad Læbens Bane hen med Il.
 
-Hvor hun er smuk!
+<pb n="41" facs="055.jpg"/>Hvor hun er smuk!
 Og dog, hvor blege Kinder!
 End blot et Suk
 for Mindet, der forsvinder,
-en Aanden ud,
+en Aanden ud
 i dybe, dybe Tanker,
-af Sjæl og Aand — saa lyt! din Brudgom banker.
+af Sjæl og Aand — saa lyt! din Brudgom banker
 Kom ind, kom frit! og hent din Brud!
 </poetry>
 </body>
 </text>
 
-<text id="brandes2001061728">
+<text id="brandes2026090725" variant="brandes2001061728">
 <head>
   <title>O dit Navn</title>
   <toctitle>O dit Navn</toctitle>
   <indextitle>O dit Navn</indextitle>
   <firstline>O dit Navn, o dit Navn var</firstline>
-  <source pages="332-332"/>
+  <source pages="42-42"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 O dit Navn, o dit Navn var
-i min Ensomhed tit mig en Trøst.
+i min Ensomhed tidt mig en Trøst.
 I mit Savn, i mit Savn har
 jeg det nævnet med hviskende Røst.
-Saa tit som det i Hu mig kom,
+Saa tidt som det i Hu mig kom,
 Minder flokkede sig derom,
 som om en Silkefane klar,
 der Elskovs stærke Farver bar.
@@ -984,20 +1001,20 @@ som jeg elsked og savned dig i.
 Dit Navn, som Ingen mere bær',
 lever ej heller i Hjertet her.
 Den Dag, du blev en Andens Brud,
-rev jeg det Navn af mit Hjerte ud.
+jeg rev det af mit Hjerte ud.
 
 1863.
 </poetry>
 </body>
 </text>
 
-<text id="brandes2001061729">
+<text id="brandes2026090726" variant="brandes2001061729">
 <head>
   <title>Mon virkelig</title>
   <toctitle>Mon virkelig</toctitle>
   <indextitle>Mon virkelig</indextitle>
   <firstline>Mon virkelig der findes</firstline>
-  <source pages="333-333"/>
+  <source pages="43-44"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1008,7 +1025,7 @@ hvor hun, paa hvem jeg haaber,
 lyslevende boer,
 den Jomfru, fin og fager,
 den Kvinde, snild og god,
-der, straks vi tvende mødtes,
+der, strax vi tvende mødtes,
 med Liste mig forstod.
 
 Som det, hvortil jeg fødtes,
@@ -1020,10 +1037,10 @@ og uden Spejderkløgt,
 se, hvad jeg er, og se det
 uden Spot, uden Frygt.
 
-Hil være hun, den Jomfru
+<pb n="44" facs="058.jpg"/>Hil være hun, den Jomfru
 med Sjælen dyb og blød,
-der vilde gemme den Knælendes
-Hoved i sit Skød,
+der vilde gjemme den Knælendes
+Hoved i sit Skjød,
 der vilde ret af Hjertet
 ham kysse paa hans Mund
 og aabne sine Arme —
@@ -1034,24 +1051,24 @@ O priset være hun!
 </body>
 </text>
 
-<text id="brandes2001061730">
+<text id="brandes2026090727" variant="brandes2001061730">
 <head>
   <title>De Faldne</title>
   <toctitle>De Faldne</toctitle>
   <indextitle>De Faldne</indextitle>
   <firstline>Ære være de tapre Mænd</firstline>
-  <source pages="334-334"/>
+  <source pages="45-45"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Ære være de tapre Mænd.
+Ære være de tapre Mænd,
 der blegned for Danmarks Sag:
-Hæder og Pris for hver Ungersvend.
+Hæder og Pris for hver Ungersvend,
 der segned paa Kampens Dag!
 Danske Pige! Hvert ædelt Navn
 staa præget dybt i din Hu!
-Kendte du ikke den Faldne før,
+Kjendte du ikke den Faldne før,
 saa elsk ham nu!
 
 1864.
@@ -1059,22 +1076,22 @@ saa elsk ham nu!
 </body>
 </text>
 
-<text id="brandes2001061731">
+<text id="brandes2026090728" variant="brandes2001061731">
 <head>
   <title>Lyn</title>
   <toctitle>Lyn</toctitle>
   <indextitle>Lyn</indextitle>
   <firstline>Saa mangt et Lyn fra Himlen slaar ned</firstline>
-  <source pages="335-335"/>
+  <source pages="46-46"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Saa mangt et Lyn fra Himlen slaar ned,
-der ingen træffer af Skovens Stammer;
-men ét, der tyst gennem Skyerne gled,
+der ingen træffer af Skovens Stammer,
+men ét, der tyst gjennem Luften gled,
 sætter Himmel og Jord i Flammer.
-Saa mangt et Blik har Hjertet til Maal.
+Saa mangt et Blik har Hjertet til Maal,
 men naaer ej Hjertets lønligste Kammer.
 Da kommer der ét, som rammer,
 ét tænder Alterets Baal.
@@ -1087,19 +1104,19 @@ Ingen kan sligt forstaa.
 </body>
 </text>
 
-<text id="brandes2001061732">
+<text id="brandes2026090729" variant="brandes2001061732">
 <head>
-  <title>Skønhed</title>
-  <toctitle>Skønhed</toctitle>
-  <indextitle>Skønhed</indextitle>
-  <firstline>Hvor rører dog den sande Skønhed Sjælen</firstline>
-  <source pages="336-336"/>
+  <title>Skjønhed</title>
+  <toctitle>Skjønhed</toctitle>
+  <indextitle>Skjønhed</indextitle>
+  <firstline>Hvor rører dog den sande Skjønhed Sjælen</firstline>
+  <source pages="47-47"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Hvor rører dog den sande Skønhed Sjælen
-og gør den let, imens den rent fortryller den,
+Hvor rører dog den sande Skjønhed Sjælen
+og gjør den let, imens den rent fortryller den,
 udvider den, uddyber den, udfylder den!
 Hvad Sneen dulgte med sin tætte Fjælen,
 det ved sit varme Sommerlys fremsmelter den.
@@ -1111,7 +1128,7 @@ et Lys udbredende, en Himmel højnende.
 Min Sjæl var mørk, den havde lukket Øjnene
 og blind den sad, som den, der trodsig vil det.
 Jeg kaldte, men den vaktes ej af Raabene —
-Den stærke Glans har vakt den. Skønt lidt skamfuld,
+Den stærke Glans har vakt den. Skjønt lidt skamfuld,
 den nu paany har rejst sig, frisk og haabende.
 
 1865.
@@ -1119,20 +1136,20 @@ den nu paany har rejst sig, frisk og haabende.
 </body>
 </text>
 
-<text id="brandes2001061733">
+<text id="brandes2026090730" variant="brandes2001061733">
 <head>
   <title>Julie</title>
   <toctitle>Julie 1-3</toctitle>
   <indextitle>Julie 1-3</indextitle>
   <firstline>Hvad det er at elske, det mig lærte</firstline>
-  <source pages="337-342"/>
+  <source pages="48-54"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Hvad det er at elske, det mig lærte
 hun, som her i Graven lagdes ned,
-hendes Hjerte: idel Kærlighed,
+hendes Hjerte: idel Kjærlighed,
 hendes Væsen: lutter Hjerte.
 
 Vandrer! hvis du spørger om,
@@ -1145,24 +1162,24 @@ slet paa Skrømt og slet paa Skjulen.
 Let opskræmt og angst som Fuglen
 ej til Ro den vugge lod sig,
 som paa Vagt for at bevare
-dem, den elsked, mod en Fare.
+dem, den elsked, for en Fare.
 Selv hun haardest var imod sig.
-Følelser og Forsæt stærke,
+<pb n="49" facs="063.jpg"/>Følelser og Forsæt stærke,
 det var hendes Levneds Mærke,
 klar og ildfuld som en Stjerne,
-saa var hendes Væsens Kærne.
+saa var hendes Væsens Kjerne.
 
-<pb n="338" facs="343.jpg"/>Hendes Daad og hendes Ære
+Hendes Daad og hendes Ære
 var, sin Husbonds Fryd at være.
 Derfor er blandt stygge Grave
 hendes Grav en Blomsterhave.
 
 Modernavnet helst hun hørte
 fra den spæde Barnetunge.
-Hendes Ungdom tit os rørte,
+Hendes Ungdom tidt os rørte,
 hun var yngre end de Unge.
 Del vor Sorg, thi den er tung,
-nu, da Alt du kender, Broder:
+nu, da Alt du kjender, Broder:
 hendes Navn — hun var en Moder,
 hendes Alder — hun var ung,
 hendes Minde —
@@ -1179,50 +1196,50 @@ naar Rosens og Violens Knop
 en Udvej Duften brøde;
 naar Hjertet ungt sig lukked op.
 
-Den unge Mand, hvis sunkne Mod
+<pb n="50" facs="064.jpg"/>Den unge Mand, hvis sunkne Mod
 for hendes milde Øje stod,
 ham hendes Ord forfrisked;
-den unge Mø, halvt Barn endnu,
+den unge Mø, halvt Barn endnu.
 i hendes Øre hvisked
 med Jomfrublik og Jomfrublu.
 
-<pb n="339" facs="344.jpg"/>Ja, stor var hendes Venneflok.
+Ja, stor var hendes Venneflok.
 Vist var den sær og uens nok,
 men hende tro fra Grunden.
-Thi ung og gammel, fjern og nær,
+Thi ung og gammel, fjern og nær.
 ældst Ven og nylig vunden,
-hver en hun havde lige kær.
+hver en hun havde lige kjær.
 
 Og om der var et ærligt Skrog,
 en Nar, men Nar med Hjerte dog,
 hun ej ham fra sig stødte;
-en saadan Gæst med Hovmod ej
+en saadan Gjæst med Hovmod ej
 ved hendes Arne mødte;
 han over hende glemte sig.
 
 Og sad der saa paa Spotterbænk,
 en Mand, hvis Vid var Malurtstænk,
 han lod ved hendes Side
-godmodig Skemt og Lunets Ord
+godmodig Skjemt og Lunets Ord
 fra samme Tunge glide,
 hvorfra de fine Pile foer.
 
-Saa gik det til, saa er det hændt,
+<pb n="51" facs="065.jpg"/>Saa gik det til, saa er det hændt,
 at overalt mod hende vendt
 hun saa det Gode smile.
-Hun vidste ej, at fra dets Gem,
-dets Søvn, dets dorske Hvile,
+Hun vidste ej, at fra dets Gjem,
+dets Søvn dets dorske Hvile,
 hun selv, hun først det lokked frem.
 
 Et trofast Ord, et sjælfuldt Blik,
-et mildt Farvel, et Smil, et Nik.
-<pb n="340" facs="345.jpg"/>forstod hun skarpt at tyde.
+et mildt Farvel, et Smil, et Nik,
+forstod hun skarpt at tyde.
 Hvad der laa skjult i Hjertets Vraa
 af Løgn og Last og Lyde —
 det saa hun nødigt, hvis hun saa.
 
 Hvad der var varmt og rent og smukt,
-det greb hun, selv i hurtigst Flugt,
+det greb hun, selv i hurtigst Flugt.
 med det var hun beslægtet.
 Hvad der var karrigt, nidsk og koldt,
 hun ej at hade mægted;
@@ -1232,24 +1249,24 @@ Hun led ret vel den slebne Kløgt.
 og var hun end, naar fint blev spøgt,
 i Ordleg let forvirret,
 hun elsked hvad ej selv hun fik,
-og tit med Undren stirred
-— hun i de Kloges klare Blik.
+og tidt med Undren stirred
+hun i de Kloges klare Blik.
 
-Dog hvad der ramte hendes Sans,
+<pb n="52" facs="066.jpg"/>Dog hvad der ramte hendes Sans.
 det var ej Lysets stærke Glans,
 det var dets milde Varme.
-Det kolde Lys hun lidt forstod,
+Det kolde Lys hun lidt forstod.
 det vakte Sjælens Harme,
 saa stærkt var Kulde den imod.
 
 De Vedtægtsbaand, der smaaligt snoes,
-der snærer mangen Haand tilblods
+der snære mangen Haand tilblods
 og mangt et Hjerte sammen,
 de bandt ej denne frie Aand.
-Den skød med Lethed Hammen
+Den skjød med Lethed Hammen
 som et for snevert Klædebon.
 
-<pb n="341" facs="346.jpg"/>De Jern, der kuer mangen Sjæl
+De Jern, der kue mangen Sjæl
 til grove Pligters sløve Træl,
 hun bar end mere trøstigt.
 Kom du, naar de bandt hende fast,
@@ -1260,20 +1277,20 @@ Men da det lød: Forbi, forbi!
 da løfted hendes Aand sig fri
 for alle Baand og Lænker,
 og steg med Lysets Hast til ham,
-der hende Naade skænker,
+der hende Naade skjænker,
 fordi hun ej har gjort ham Skam.
 
 1866.
 
 ---
 
-Den Frost og Sne, som dækker
+<pb n="53" facs="067.jpg"/>Den Frost og Sne, som dækker
 i Danmark nu By, Land og Hav,
 sig ogsaa stille lægger
 om Blomster paa en Grav.
 
 I Sneen Planten sover;
-snart vakt til Liv i Blomst den staar:
+snart vakt til Liv i Blomst den staar;
 men hun, den blomstrer over,
 Liv kun i Drømme faar.
 
@@ -1282,7 +1299,7 @@ af hendes Mund har hørt de Ord:
 «Jeg lever, falsk I dømme,
 naar I mig mistet troer».
 
-<pb n="342" facs="347.jpg"/>«Tal med mig, glem blot Sorgen,
+«Tal med mig, glem blot Sorgen,
 hvor kan du tro, at jeg er død!»
 Det blev en bitter Morgen,
 thi Drømmen var saa sød.
@@ -1294,12 +1311,12 @@ end noget Tab, jeg led.
 
 Farvel! Farvel! Mildt lyde
 i Stuen steds det Navn, hun bar.
-Paany det altid bryde
+<pb n="54" facs="068.jpg"/>Paany det altid bryde
 den Taushed, Graven har.
 
 O naar et Navn forstummer
 af Frygten for at mindes om
-den Sorg og alskens Kummer,
+den Sorg og alskøns Kummer,
 man helst gaar uden om —
 
 hvor hæsligt! nej, med Glæde
@@ -1312,25 +1329,25 @@ Rom 1871
 </body>
 </text>
 
-<text id="brandes2001061734">
+<text id="brandes2026090731" variant="brandes2001061734">
 <head>
   <title>Den lykkelige Brudgom</title>
-  <toctitle>Den lykkelige Brudgom 1-6</toctitle>
-  <indextitle>Den lykkelige Brudgom 1-6</indextitle>
+  <toctitle>Den lykkelige Brudgom 1-8</toctitle>
+  <indextitle>Den lykkelige Brudgom 1-8</indextitle>
   <firstline>Er for Andres Blik Figuren end lidt flad</firstline>
-  <source pages="343-344"/>
+  <source pages="55-57"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Er for Andres Blik Figuren end lidt flad,
 mig hun fængsler ved et sødt Jeg-véd-ej-hvad,
-ved en Klang af Sølv i hendes Stemme,
-som en lyd hør Elsker ene kan fornemme.
+ved en egen Klang af Sølv i hendes Stemme,
+som en lydhør Elsker ene kan fornemme.
 
 ---
 
-Guldfisk du dorske!
+Guldfisk, du dorske!
 Mat er dit Øje, hvortil kan du bruges?
 Ih! Med saadanne pilker man Torske.
 
@@ -1338,25 +1355,46 @@ Ih! Med saadanne pilker man Torske.
 
 Han elsker hende med stor Besked.
 Et gunstigt Svar han sig henter.
-Thi hun gengælder hans Kærlighed
+Thi hun gjengjælder hans Kjærlighed
 med Renter.
+
+---
+
+Er han i Pigens Yndigheder skudt, o!
+saa kald ham ej brutal — men hav in petto,
+<pb n="56" facs="070.jpg"/>hun var ej kjøn, ifald hun toges netto,
+han elsker hende klogeligen brutto.
+
+---
+
+<nonum>Reguladetri-Opgaver, foranledigede ved Indskriften</nonum>
+<nonum>over en Port:</nonum>
+<nonum><i>Time is money.</i></nonum>
+
+Tid er Penge — hvad er Evigheden?
+Tid er Penge — hvad er Hjertefreden?
+Tid er Penge — hvad er Kjærligheden?
+Svar paa Mark og Skilling! Hvad er Frihedstabet
+vel i Ægteskabet?
+Hvad er Bruden værd? Betænk dig ej forlænge!
+Tid er Penge.
 
 ---
 
 I er altfor adrætte — I tar Hatten i Haanden,
 før I ser Benraden komme.
-Meningen var ikke, vi skulde opgi' Aanden,
+Meningen var ikke, vi skulde opgive Aanden,
 førend Livet var omme.
 
 ---
 
-<pb n="344" facs="349.jpg"/>Ja Fuglen skød vi!
+Pappegøjen skjød vi!
 Thi fint os snød vi
 ved Hymens Alter
-for Livets Fester.
+for Livets Fester,
 for Amors Fakler!
-I sølle Pjalter!
-I arme Bæster!
+<pb n="57" facs="071.jpg"/>I sølle Pjalter!
+I arme Bæster,
 I Skrog, I Stakler!
 
 ---
@@ -1378,28 +1416,28 @@ Bæger rækkes Mosten — lad saa være!
 
 <section level="1">
 <head>
-  <toctitle>Tredie Afdeling (1866–1869)</toctitle>
+  <toctitle>Tredie Afdeling (1866—1869)</toctitle>
 </head>
 <content>
 
-<text id="brandes2001061736">
+<text id="brandes2026090732" variant="brandes2001061736">
 <head>
   <title>Sommernat</title>
   <toctitle>Sommernat</toctitle>
   <indextitle>Sommernat</indextitle>
   <firstline>Alt er tyst, som Fredens Stund før Freden brydes</firstline>
-  <source pages="345-346"/>
+  <source pages="61-62"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Alt er tyst, som Fredens Stund før Freden brydes,
-skønt, men som en Fest, hvis Fryd i Angest nydes.
+skjønt, men som en Fest, hvis Fryd i Angest nydes
 Trindt paa Himlens sommerlyse Bue
-blege Stjener vredt og selsomt true.
+blege Stjerner vredt og sælsomt true.
 Lydløst glide Havets Bølgeskarer. —
 Kornmodslysets ubestemte Lue
-nu og da fra Horisonten farer,
+nu og da fra Horizonten farer,
 Lyn i Lyn det svinger Flammesværdet.
 Stygt ved Flammen
 alle Luftens Aander fare sammen;
@@ -1408,13 +1446,13 @@ Himlen blinker ved dets Slag forfærdet.
 Alle os, som svege Aandens Himmelfane,
 alle os, som vege fra den smalle Bane,
 os, der Gudens Røst i Hjertet kvalte,
-os, hvis Læbe tav, naar Stemmen talte,
+os hvis Læbe tav, naar Stemmen talte,
 os vil Sværdets røde Tunge ramme —
-<pb n="346" facs="351.jpg"/>Lød jeg ej, da Gudens Bud befalte,
+<pb n="62" facs="076.jpg"/>Lød jeg ej, da Gudens Bud befalte,
 stod engang paa Prøvens Dag til Skamme,
 saa min Kind endnu af Skammen gløder —
 nu jeg møder,
-nu jeg villigt kæmper, villigt bløder.
+nu jeg villigt kjæmper, villigt bløder.
 Salig Den, der uden Blinken bøder.
 
 1866.
@@ -1422,13 +1460,13 @@ Salig Den, der uden Blinken bøder.
 </body>
 </text>
 
-<text id="brandes2001061737">
+<text id="brandes2026090733" variant="brandes2001061737">
 <head>
   <title>Ved en Vens Afrejse</title>
   <toctitle>Ved en Vens Afrejse</toctitle>
   <indextitle>Ved en Vens Afrejse</indextitle>
   <firstline>Held paa hans Vej, den Tauses og den Stilles</firstline>
-  <source pages="347-348"/>
+  <source pages="63-65"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1437,26 +1475,26 @@ Held paa hans Vej, den Tauses og den Stilles,
 den Elskeliges Vej fra Ven til Frænde!
 Faa Døgn endnu, og for en Stund vi skilles,
 en kort? en lang? hvem véd, en rig kanhænde;
-thi mangt i Nord du lære skal at kende,
+thi mangt i Nord du lære skal at kjende.
 og op til Sværdedans i Syd der spilles. —
 Vi ses vel atter, Brødre som vi ere:
 dog som de samme ses vi ikke mere.
 
 Og derfor Tak for Tiden, som forløb,
-den Skemtens Tid, vi ødsled med en Smule,
-(gyldne Sekunder, som ved Røverkøb
+den Skjemtens Tid, vi ødsled med en Smule.
+(gyldne Sekunder, som ved Røverkjøb
 vi fik for Timeglassets Sand, det gule,
 hvad eller fra vort Arbejd stjal, det fule),
 den Alvors Tid, hvori vi af sit Svøb
 fik viklet mangen ædel Fremtidstanke,
 som bragte begges Hjerter til at banke.
 
-Den Magt, der daglig drog mig til din Dør,
+<pb n="64" facs="078.jpg"/>Den Magt, der daglig drog mig til din Dør,
 som Afsind ser den ud for lunkne Sjæle;
 men gode Aanders var den. Vid! de dvæle,
 ihvor du er: de rasted aldrig, før
-<pb n="348" facs="353.jpg"/>de fik fordrevet mine Tanker fæle.
-Dem viste jeg af skemtsomt Sind Honnør
+de fik fordrevet mine Tanker fæle.
+Dem viste jeg af skjemtsomt Sind Honnør
 ved Knælen paa et Gulv foruden Tæppe.
 Du selv, Fredsstifter! du forstaar det neppe.
 
@@ -1466,25 +1504,25 @@ og én for én afkasted tyve Dragter,
 og slængte Bjældesnoren om din Hals,
 og skreg: «Ved alle Himlens gode Magter!
 for fire Skilling er mit Liv tilfals»
-og svang min Briks — da lo du og forstod mig.
+og svang min Brix — da lo du og forstod mig.
 Hav Tak, fordi du var saa god imod mig!
 
 Stod saa jeg ved din Dør, til Døden mat,
-af Tungsind gal, af Mismod knust og lammet,
+af Tungsind gal, af Mismod knust og lammet.
 og hulked uden Taarer, en Besat,
 der frem i dybe Suk sin Smerte stammed —
 Du aabned for mig, og hvor vildt det flammed
-her i mit Bryst, min Pande blev dog glat,
+her i mit Bryst, min Pande blev dog glat.
 saasnart din Haand — du led ej, jeg det sagde —
 velsignende du paa mit Hoved lagde.
 
-Se derfor er i mit Farvel en Tak,
+<pb n="65" facs="079.jpg"/>Se derfor er mit Farvel en Tak,
 en Broderømhed, som kan ej beskrives.
 Min Sjæl har endnu aldrig ligget brak,
 den er en Jord, som steds paany oprives
 og pløjes om; hvor intet Fast der gives
 undtagen Et: Troskab mod Venner. Ak,
-En bort er rejst, de andre tidligt døde.
+En bort er rejst, de Andre tidligt døde.
 Nu banker intet Hjerte mit imøde.
 
 1867.
@@ -1492,13 +1530,13 @@ Nu banker intet Hjerte mit imøde.
 </body>
 </text>
 
-<text id="brandes2001061738">
+<text id="brandes2026090734" variant="brandes2001061738">
 <head>
   <title>Hvirvel</title>
   <toctitle>Hvirvel</toctitle>
   <indextitle>Hvirvel</indextitle>
   <firstline>Ja, Hvirvel er det Alt — i dette Ord</firstline>
-  <source pages="349-349"/>
+  <source pages="66-66"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1515,7 +1553,7 @@ Se dette Legem, en fortættet Gas,
 en Kasteboldt for Vejr og Vind og Stemning.
 Min Aand! de evige Blændværks Tumleplads.
 Min Viljes Klinge, sleben stærk og hvas,
-i Striden skør og springende som Glas,
+i Striden skjør og springende som Glas,
 Troskab umulig, kun for Dyr tilpas!
 Mod Smertens sorte Strømme ingen Dæmning.
 
@@ -1524,13 +1562,13 @@ Mod Smertens sorte Strømme ingen Dæmning.
 </body>
 </text>
 
-<text id="brandes2001061739">
+<text id="brandes2026090735" variant="brandes2001061739">
 <head>
   <title>Erklæring</title>
   <toctitle>Erklæring</toctitle>
   <indextitle>Erklæring</indextitle>
   <firstline>Jeg elsker dine brune Øjnes Mørke</firstline>
-  <source pages="350-350"/>
+  <source pages="67-67"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1544,54 +1582,54 @@ din dulgte Lidenskabs forborgne Styrke.
 </body>
 </text>
 
-<text id="brandes2001061740">
+<text id="brandes2026090736" variant="brandes2001061740">
 <head>
   <title>I Forstuen</title>
   <toctitle>I Forstuen</toctitle>
   <indextitle>I Forstuen</indextitle>
   <firstline>De glatte, dejlige Lokker</firstline>
-  <source pages="351-351"/>
+  <source pages="68-69"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 De glatte, dejlige Lokker
-flød som en Strøm, der ruller,
+flød som en Strøm, der ruller
 hvis Bølger tæt sig flokker,
 om hendes Hals og Skulder.
 
 Den bløde, blanke Silke
 om hendes Legem sig svøbte,
 lidet anende, hvilke
-kendte Former den støbte.
+kjendte Former den støbte.
 
 Et kort Sekund hendes søde
 Læber min Mund berørte.
 Kysset, det lette, bløde
 helt bort fra Jorden mig førte.
 
-Et Blik fra det straalende Øje
+<pb n="69" facs="083.jpg"/>Et Blik fra det straalende Øje
 Vandt mig og bandt mig til hende.
 Alt i Verden vil jeg døje,
 onde Dage, Kummer og Møje,
-ifald jeg din Lod kan høje,
-og din tunge Skæbne kan vende.
+ifald jeg din Lod kan bøje,
+og din tunge Skjæbne kan vende.
 </poetry>
 </body>
 </text>
 
-<text id="brandes2001061741">
+<text id="brandes2026090737" variant="brandes2001061741">
 <head>
-  <title>Nu voks</title>
-  <toctitle>Nu voks</toctitle>
-  <indextitle>Nu voks</indextitle>
-  <firstline>Nu voks, min skønne Plante</firstline>
-  <source pages="352-352"/>
+  <title>Nu vox</title>
+  <toctitle>Nu vox</toctitle>
+  <indextitle>Nu vox</indextitle>
+  <firstline>Nu vox, min skjønne Plante</firstline>
+  <source pages="70-70"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Nu voks, min skønne Plante,
+Nu vox, min skjønne Plante,
 skyd Knop og Blomsterblade!
 Rigt Lys og Dugg dig bade,
 saa du maa ikke skrante,
@@ -1608,13 +1646,13 @@ Sig, kan du mærke Trykket?
 </body>
 </text>
 
-<text id="brandes2001061742">
+<text id="brandes2026090738" variant="brandes2001061742">
 <head>
   <title>Tak</title>
   <toctitle>Tak</toctitle>
   <indextitle>Tak</indextitle>
   <firstline>En Tak til Borgens Frue, hvis sværmeriske Sjæl</firstline>
-  <source pages="353-353"/>
+  <source pages="71-71"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1629,20 +1667,20 @@ paa Vejens Sten sin spæde Fod maa støde!
 Jeg fandt ej hendes Lige, saa vidt jeg flakked rundt,
 Hjertets Ild, Blikkets Glans, hin Begejstringens Skat,
 som ikkun Trylleordet kunde hæve.
-Hun trives, hun vokse, hun lide intet Ondt,
+Hun trives, hun voxe, hun lide intet Ondt,
 tage til, vinde Kraft, faa engang Lykken fat
 og takke Gud med Læber, som bæve.
 </poetry>
 </body>
 </text>
 
-<text id="brandes2001061743">
+<text id="brandes2026090739" variant="brandes2001061743">
 <head>
   <title>Ene i fremmed Land</title>
   <toctitle>Ene i fremmed Land</toctitle>
   <indextitle>Ene i fremmed Land</indextitle>
   <firstline>Tungt og trist at længes</firstline>
-  <source pages="354-354"/>
+  <source pages="72-72"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1662,38 +1700,38 @@ naar hun kysser, hun!
 </body>
 </text>
 
-<text id="brandes2001061744">
+<text id="brandes2026090740" variant="brandes2001061744">
 <head>
   <title>Fremtidsfantasier</title>
   <toctitle>Fremtidsfantasier</toctitle>
   <indextitle>Fremtidsfantasier</indextitle>
   <firstline>Min egen Yndling vil, jeg skal blive meget stor</firstline>
-  <source pages="355-355"/>
+  <source pages="73-74"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Min egen Yndling vil, jeg skal blive meget stor,
-vokse højt, vinde Ros, sprede Dag og gøre lyst,
+voxe højt, vinde Ros, sprede Dag og gjøre lyst,
 al Aandens stygge Overlast hævne.
 Den Første skal jeg være her blandt os i vort Nord,
 saa vidt vor Tunge tales, og langs Østersøens Kyst
 skal mit Navn man allevegne nævne.
 
-Ak du kære, min Evne er spæd og saare svag,
+Ak du kjære, min Evne er spæd og saare svag,
 min Kraft er ej af Jern, og min Kundskab er ringe;
 men om Hanen end ej galer, det bliver dog nok Dag,
-og Sandheden farer, skønt den farer tit i Mag,
+og Sandheden farer, skjønt den farer tidt i Mag,
 og Aandens Klokke kalder, selv om en Klokker her
 ej fik sin stakkels Klokke til at ringe.
 
-Men stræbe vil jeg frem; jeg vil lægge min Skærv,
-skønt ringe, paa Aandens store Alter.
+Men stræbe vil jeg frem; jeg vil lægge min Skjærv
+skjønt ringe, paa Aandens store Alter.
 Jeg vil tjene min Fane som en Fanevagt djærv;
 jeg vil ikke raste, jeg fik et ædelt Hverv.
 Maaske jeg dog et fjendtligt Harnisk spalter.
 
-Maaske jeg dog i Ilden erobrer et Kastel,
+<pb n="74" facs="088.jpg"/>Maaske jeg dog i Ilden erobrer et Kastel,
 stormer en Skanse midt i Vaabenbraget —
 da kan, hvis Lykken føjer, det og mig hænde vel,
 at jeg engang til Ridder bliver slaget.
@@ -1703,37 +1741,37 @@ at jeg engang til Ridder bliver slaget.
 </body>
 </text>
 
-<text id="brandes2001061745">
+<text id="brandes2026090741" variant="brandes2001061745">
 <head>
   <title>Hun</title>
   <toctitle>Hun</toctitle>
   <indextitle>Hun</indextitle>
   <firstline>Naar i min egen Sjæl jeg ser og svimmel</firstline>
-  <source pages="356-356"/>
+  <source pages="75-75"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Naar i min egen Sjæl jeg ser og svimmel
-i Modløshedens Dyb jeg nedad stirrer,
+i Modløshedens Dyb jeg nedad stirrer.
 af Jammerkval mit hele Væsen dirrer
 og Blikket søger mod en Himmelstrimmel.
 
-Det Blaa, hvorved da mine Øjne dvæle,
-det er din Aand, som lyser gennem Taager.
+Det Blaa, hvorved da mine Øjne dvæle.
+det er din Aand, som lyser gjennem Taager.
 I den min Kummer sover; Haabet vaager
 i denne Aand for to sorgslagne Sjæle.
 </poetry>
 </body>
 </text>
 
-<text id="brandes2001061746">
+<text id="brandes2026090742" variant="brandes2001061746">
 <head>
   <title>Fortrøstning</title>
   <toctitle>Fortrøstning</toctitle>
   <indextitle>Fortrøstning</indextitle>
   <firstline>De, som engang har sluttet Pagt</firstline>
-  <source pages="357-357"/>
+  <source pages="76-76"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1741,7 +1779,7 @@ i denne Aand for to sorgslagne Sjæle.
 De, som engang har sluttet Pagt
 i alle gode Aanders Kres,
 skal, bør og maa helt uforsagt
-til Afsked som til Gensyn ses;
+til Afsked som til Gjensyn ses;
 skal række Haand og Mund med Ild,
 men uden Klynk eller Klage,
 den flammende Aand er Himlen god,
@@ -1750,13 +1788,13 @@ ikke den drøveligt svage.
 </body>
 </text>
 
-<text id="brandes2001061747">
+<text id="brandes2026090743" variant="brandes2001061747">
 <head>
   <title>Livsregel</title>
   <toctitle>Livsregel</toctitle>
   <indextitle>Livsregel</indextitle>
   <firstline>Se og saml! Det er Livet</firstline>
-  <source pages="358-358"/>
+  <source pages="77-77"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1764,31 +1802,31 @@ ikke den drøveligt svage.
 Se og saml! Det er Livet.
 Elsk og lær! Det er Livets Sum.
 Spørg! Og Svaret er givet.
-Kæmp for Ret! Det er Lykke.
-Handl og hersk! Det er Lykkens Sum,
+Kjæmp for Ret! Det er Lykke.
+Handl og hersk! Det er Lykkens Sum
 Retten med Sejr at smykke.
 Spred din Sjæl i det vide Rum,
-Lad den ej standses af Slaa eller Bom,
-Dristigt sprænge sin Skranke!
+Lad den ej standses af nogen Bom,
+Dristigt sprænge hver Skranke!
 Saml saa din Sjæl i en eneste stum,
-inderlig Kærlighedstanke!
+inderlig Kjærlighedstanke.
 </poetry>
 </body>
 </text>
 
-<text id="brandes2001061748">
+<text id="brandes2026090744" variant="brandes2001061748">
 <head>
   <title>Hun taler</title>
   <toctitle>Hun taler</toctitle>
   <indextitle>Hun taler</indextitle>
   <firstline>Sig, har du følt det, Elskede, at stærkt</firstline>
-  <source pages="359-359"/>
+  <source pages="78-78"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Sig, har du følt det, Elskede, at stærkt
-min Sorg og Nød er traadte nu i Skygge.
+min Sorg og Nød er traadte nu i Skygge
 Alt er som før, men ud af alt det Stygge
 min Sjæl, mit Jeg er gledet uformærkt,
 og uforstyrret, midt i Dagliglivet,
@@ -1797,22 +1835,22 @@ jeg bær' de Skatte, som du mig har givet.
 Hvorfor saa straalende jeg just saa ud,
 forleden spurgte mig en Ven herhjemme.
 Jeg tav. Men i mig raabte højt en Stemme
-en stærk, fordi med mægtigt Gennembrud
+en stærk, fordi med mægtigt Gjennembrud
 jeg fra en Automat er omskabt til
 en Aand, som føler, elsker, véd og vil.
 </poetry>
 </body>
 </text>
 
-<text id="brandes2001061749">
+<text id="brandes2026090745" variant="brandes2001061749">
 <head>
   <title>Sonet</title>
   <toctitle>Sonet</toctitle>
   <indextitle>Sonet</indextitle>
   <firstline>Som en Sonet, du skriver, var hint Møde</firstline>
-  <source pages="360-360"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
+  <source pages="79-79"/>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1824,26 +1862,26 @@ og kort og skarptbegrænset var det, Søde!
 Thi Ord, som smelte, Taarer, Suk, som gløde,
 af Vemod fødte Smil, den salige Drøm,
 hvis Sprog er Kys, der hedt i Purpursøm
-Hals, Bryst og Skuldre farve flammerøde.
+Hals, Bryst og Skuldre farve flammerøde,
 
 Alt dettes svulmende Sigsammenfletten
 til dobbelt Samklang, der i Afskedsstunden
 døer hen i Treklang — det er jo Sonetten.
 
-Hør Rytmen glide skønt i Spænding bunden;
-den knuger, skønt den kommer ej af Pletten,
+Hør Rytmen glide skjønt i Spænding bunden;
+den knuger, skjønt den kommer ej af Pletten,
 Rim imod Rim, som Kys i Kys paa Munden.
 </poetry>
 </body>
 </text>
 
-<text id="brandes2001061750">
+<text id="brandes2026090746" variant="brandes2001061750">
 <head>
   <title>Naar Kraft og Lune synke</title>
   <toctitle>Naar Kraft og Lune synke</toctitle>
   <indextitle>Naar Kraft og Lune synke</indextitle>
   <firstline>Naar Kraft og Lune synke</firstline>
-  <source pages="361-361"/>
+  <source pages="80-80"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1859,19 +1897,19 @@ det lærte mig dog ikke,
 hvad bedst i Modgang læres,
 hvad jeg har lært: at taale,
 mit Tab med Ro at maale
-og føle som de Kække,
+og føle som de Kjække,
 hvem intet Slag kan knække.
 </poetry>
 </body>
 </text>
 
-<text id="brandes2001061751">
+<text id="brandes2026090747" variant="brandes2001061751">
 <head>
   <title>Hendes Vemod</title>
   <toctitle>Hendes Vemod</toctitle>
   <indextitle>Hendes Vemod</indextitle>
   <firstline>De flokkes i Klynger, de svæve i Kres</firstline>
-  <source pages="362-362"/>
+  <source pages="81-81"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1879,7 +1917,7 @@ hvem intet Slag kan knække.
 De flokkes i Klynger, de svæve i Kres
 rundt om dit Hoved,
 Vemodets Alfer, der ikke ses,
-men fornemmes, hvor mildt gennem Taarer les.
+men fornemmes, hvor mildt gjennem Taarer les.
 Paa dit Bryst har de sovet.
 
 De vaagne med dig, de hæve sig mat,
@@ -1891,19 +1929,19 @@ med Summen og Klingen.
 Og ind i Alfernes Kor maa gaa
 hver løsreven Tone
 fra Verden derude, der Øret vil naa,
-Thi Alferne passe omhyggeligt paa,
+thi Alferne passe omhyggeligt paa,
 løse op og forsone.
 </poetry>
 </body>
 </text>
 
-<text id="brandes2001061752">
+<text id="brandes2026090748" variant="brandes2001061752">
 <head>
   <title>Gry</title>
   <toctitle>Gry</toctitle>
   <indextitle>Gry</indextitle>
   <firstline>Det gry'r, det gry'r</firstline>
-  <source pages="363-363"/>
+  <source pages="82-82"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1928,22 +1966,22 @@ Stig, stig!
 
 <section level="1">
 <head>
-  <toctitle>Fjerde Afdeling (1871–1872)</toctitle>
+  <toctitle>Fjerde Afdeling (1871—1872)</toctitle>
 </head>
 <content>
 
-<text id="brandes2001061754">
+<text id="brandes2026090749" variant="brandes2001061754">
 <head>
   <title>Malgré tout</title>
   <toctitle>Malgré tout</toctitle>
   <indextitle>Malgré tout</indextitle>
-  <firstline>Den skønne blonde Lykke</firstline>
-  <source pages="364-365"/>
+  <firstline>Den skjønne blonde Lykke</firstline>
+  <source pages="85-86"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Den skønne blonde Lykke,
+Den skjønne blonde Lykke,
 der aldrig kan staa stille,
 engang mens han var lille,
 blidt tager ved hans Haar
@@ -1955,7 +1993,7 @@ og stod han for en Skranke, hvor om trøstig Trods det gjaldt,
 hans unge Hjerte banked, og han mumlede: Trods Alt!
 
 Hin Tro brast ufortøvet
-i Kampens haarde Skæbne.
+i Kampens haarde Skjæbne.
 Han voved knap sig væbne,
 han ingen Lanse svang,
 saa, hørte dybt bedrøvet
@@ -1965,15 +2003,15 @@ sit Mismod og sin Frygt dog af Sjælen ud han skammed,
 ja saa han Nederlaget som Vished overalt,
 med sammenbidte Tænder han mumlede: Trods Alt!
 
-<pb n="365" facs="370.jpg"/>Det var hint Kys, hvis Lue
-gød Ild i Knægtens Aarer.
+<pb n="86" facs="100.jpg"/>Det var hint Kys, hvis Lue
+gjød Ild i Knegtens Aarer.
 Han følte, de var Daarer,
 som veg fra Kampens Vej,
 selv lod han ej sig kue,
 men vidste Grunden ej.
 Og Lykken blev, blev Ungdom; naar hun selv ham vendte Ryggen,
 var Solen, Skoven, Barnet tusind Bud paa Bud fra Lykken.
-Den muntre Tillid vokste, hver Barrikade faldt.
+Den muntre Tillid voxte, hver Barrikade faldt.
 Med Storm han den tog, og hans Feltraab var: Trods Alt!
 
 Af Trolde smaa belejret
@@ -1987,23 +2025,23 @@ til Klynken og til Tungsind, som snart i Slaphed segned.
 Men i hans Hjerte jubler en Almagt, Manddom kaldt;
 dens Lyst er det at trodse og dens Feltraab er: Trods Alt!
 
-Hospitalet i Rom 1871.
+<nonum><sc>Hospitalet i Rom 1871.</sc></nonum>
 </poetry>
 </body>
 </text>
 
-<text id="brandes2001061755">
+<text id="brandes2026090750" variant="brandes2001061755">
 <head>
   <title>Til Henrik Ibsen</title>
   <toctitle>Til Henrik Ibsen</toctitle>
   <indextitle>Til Henrik Ibsen</indextitle>
-  <firstline>Hvad det gælder er Menneskeaandens Revoltering</firstline>
-  <source pages="366-367"/>
+  <firstline>Hvad det gjælder er Menneskeaandens Revoltering</firstline>
+  <source pages="87-89"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Hvad det gælder er Menneskeaandens Revoltering,
+Hvad det gjælder er Menneskeaandens Revoltering,
 og der skal De være en af dem, som gaar i Spidsen.
 Henrik Ibsen (20. December 1870)
 
@@ -2017,14 +2055,14 @@ Magter der baste
 Forskning og Tanke,
 Magter, der kaste
 for Frihed Skranke,
-dem vil al Løgnens Forbandelse ramme,
+dem vil al Løgnens Forbandelse ramme.
 Sandhed og Frihed er Et og det Samme.
 
-«Alle maa høre det. Tal til Enhver!»
+<pb n="88" facs="102.jpg"/>«Alle maa høre det. Tal til Enhver!»
 Saadan, o henfarne Store! I mane,
 Sandhedens aldrig besejrede Fane,
-straks, blot den løftes, vil samle en Hær. —
-<pb n="367" facs="372.jpg"/>Drøm af et Barn, henvejret itide!
+strax, blot den løftes, vil samle en Hær. —
+Drøm af et Barn, henvejret itide!
 Fordom trues,
 og Masserne flokkes;
 men Sandhed kues —
@@ -2040,15 +2078,15 @@ Fostbroderskab! ak din Tid er forgangen.
 Saa blev jeg hærdet,
 saa blev en Mand jeg.
 Slaa uforfærdet,
-skønt ensom, kan jeg.
+skjønt ensom, kan jeg.
 Ofte jeg spejded dog ud over Vangen;
 efter en Stridsven levede Trangen.
 
-Broder! jeg fandt dig. Hvad gør det mig vel,
+Broder! jeg fandt dig. Hvad gjør det mig vel,
 at du en Høvidsmand er uden Lige,
-mens jeg blev skabt til som Væbner at krige,
+mens jeg blev skabt til som Væbner at krige
 sammen vi høre med hele vor Sjæl.
-Ja, vi til Oprør vil Aanderne kalde!
+<pb n="89" facs="103.jpg"/>Ja, vi til Oprør vil Aanderne kalde!
 Dristigt at rive
 ud dem af Døsen,
 beaande, belive
@@ -2056,18 +2094,19 @@ være vort Løsen.
 Er det end mørkt, det skal lyse for Alle.
 Broder! Engang ville Taagerne falde.
 
-Hospitalet i Rom, Natten mellem 9. og 10. Januar 1871.
+<nonum><sc>Hospitalet i Rom</sc></nonum>
+<nonum>Natten mellem 9. og 10. Januar 1871.</nonum>
 </poetry>
 </body>
 </text>
 
-<text id="brandes2001061756">
+<text id="brandes2026090751" variant="brandes2001061756">
 <head>
   <title>Roser har han knækket</title>
   <toctitle>Roser har han knækket</toctitle>
   <indextitle>Roser har han knækket</indextitle>
   <firstline>Roser har han knækket</firstline>
-  <source pages="368-369"/>
+  <source pages="90-91"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2079,7 +2118,7 @@ Kransen har han kastet, neppe flettet,
 og Duer har han skudt,
 Kvinder har han favnet, flyet, forgættet.
 
-Men En, der er, hvis Billed ham forfølger
+Men En, der er, hvis Billed ham forfølger.
 
 Vel fem hundred Mile
 mellem dem er lagt,
@@ -2090,10 +2129,10 @@ Den, du elsked, saa du kunde glemme.»
 
 Ti, ramte Fugle synge ikke mere!
 
-Salte, stride Taarer!
+<pb n="91" facs="105.jpg"/>Salte, stride Taarer!
 Stumme Poesi!
-Kvindegraad ham i hans Hjerte skærer.
-<pb n="369" facs="374.jpg"/>Trolddom lig den daarer,
+Kvindegraad ham i hans Hjerte skjærer.
+Trolddom lig den daarer,
 lokker taus ham i
 fine Garn, der dybt tilblods ham snærer.
 
@@ -2111,13 +2150,103 @@ Forbi, forbi og frem! Se ej tilbage!
 </body>
 </text>
 
-<text id="brandes2001061757">
+<text id="brandes2026090752">
+<head>
+  <title>Feberdrømme</title>
+  <firstline>Du Preussens Kejsertrone</firstline>
+  <source pages="92-94"/>
+  <dates>
+    <written>1871-01-13</written>
+  </dates>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Du Preussens Kejsertrone,
+frisk malt med ædelt Blod,
+dig gad jeg nok se hugget
+i Splinter for Frankrigs Fod.
+Thi se! den sande Kejser,
+der hist paa Tronen stiger,
+er Middelaldren, Drot
+over alle Rædslens Riger:
+
+En sund Soldatervælde
+skal styre Tysklands Jord,
+gjenstridig Adbyrd tugtes
+som Røveri og Mord.
+For Skriblen mod Gud og Kejser
+Øxen eller Riset —
+Den hellige Treenighed
+for Sejren være priset!
+
+<pb n="93" facs="107.jpg"/>Ja, Frankrig, du var sunket,
+Europa længst det saa;
+et Skammens Brændemærke
+bar du bestandig paa.
+Du havde stræbt, din Voldsmand
+fra Slot og By at jage.
+Det brast — da sank du mat og
+sløvt tvivlende tilbage.
+
+Hans Glanstid kom. Da, Frankrig,
+med hans Held du slutted Pagt,
+og for den Sjæl, du solgte,
+gav han Orden og Magt,
+Du drømte end om Frihed;
+men han — dit Vel han drøfter,
+og spreder over Landet
+de fagre Fremtidsløfter.
+
+Og saa gik Glansen af ham.
+O den Figur, der stod!
+Det udslukte Øje
+til den vaklevorne Fod;
+Voxmasken — til den klæbet
+Moustachen, den friserte —
+Sot og Syge i Vox!
+Var det ham, der triumferte?
+
+<pb n="94" facs="108.jpg"/>Hans Dødstid kom. Da saas det,
+at Jammer er Sløvheds Barn.
+Da fanged Preussen al Frankrigs
+gamle Ry i sit Garn.
+Det stolte Ager- og Vinland
+som Skovisk behandlet,
+til Hjemsted for Mordbrand
+og Hungersnød forvandlet!
+
+Det sank, det sank. Et Halmstraa
+da greb det i sin Nød,
+hvis Bærekraft til Frelse
+plat Ingenting betød.
+Det Halmstraa, det var Frihed,
+den længe glemte Tanke —
+da skete der et Under;
+thi Straaet blev en Planke.
+
+Hør Marseillaisens Toner
+med ny og bedre Klang!
+Se Helteskarer i Bluse
+paany gaa Sejersgang
+trods Sult og Savn og Kugler
+i den bittertkolde Vinter —
+o Preussens Kejsertrone,
+dig gad jeg se i Splinter!
+
+<nonum><right><sc>Hospitalet i Rom</sc></right></nonum>
+<nonum><right>13. Januar 1871</right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="brandes2026090753" variant="brandes2001061757">
 <head>
   <title>Nordboen i Rom</title>
   <toctitle>Nordboen i Rom</toctitle>
   <indextitle>Nordboen i Rom</indextitle>
   <firstline>I vil vide min Elskedes Navn?</firstline>
-  <source pages="370-370"/>
+  <source pages="95-96"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2136,9 +2265,9 @@ Fint blege Damer, Farvel!
 Jeg er ked af de smægtende Suk
 og de meget sigende Blikke,
 hun savned og smægtede ikke,
-nej, jeg kom, jeg var ung, hun var smuk.
+nej jeg kom, jeg var ung, hun var smuk.
 
-De vil vide dit Navn, spørge ud
+<pb n="96" facs="110.jpg"/>De vil vide dit Navn, spørge ud
 om vort Bryllup. For Vidner var ikke der Brug;
 vort Bryllup er holdt, men i Smug.
 Stille Bryllup det var, o min Brud!
@@ -2149,13 +2278,13 @@ og fik Absolutionen forud.
 </body>
 </text>
 
-<text id="brandes2001061758">
+<text id="brandes2026090754" variant="brandes2001061758">
 <head>
   <title>Finis</title>
   <toctitle>Finis</toctitle>
   <indextitle>Finis</indextitle>
-  <firstline>Saa skal jeg da surres til Pælen igen</firstline>
-  <source pages="371-372"/>
+  <firstline>Saa skal jeg da surres til Pælen igjen</firstline>
+  <source pages="97-98"/>
   <dates>
     <written>1871-07-07</written>
   </dates>
@@ -2163,13 +2292,13 @@ og fik Absolutionen forud.
 </head>
 <body>
 <poetry>
-Saa skal jeg da surres til Pælen igen,
+Saa skal jeg da surres til Pælen igjen,
 af en skinhellig Pøbel begloes og betragtes,
 og mit Hjerte skal smides for Hundene hen,
 og mit Navn skal flaas, og min Stolthed skal slagtes.
 Det er endt. Jeg skal hjem. O mit Fristed, Farvel!
 Luft, du klare, hav Tak! Tak, Italiens Kvinder,
-som med Skønhed beriged og fyldte min Sjæl!
+som med Skjønhed beriged og fyldte min Sjæl!
 Og I Marmorpaladser med lysende Tinder!
 Det er endt. Jeg skal rejse. Farvel! Farvel!
 
@@ -2183,28 +2312,28 @@ og et Menneskeliv helt forkrøblet I saa
 i forknyttet Fordummelse sive i Sandet,
 ifald Eders Blikke saa vidt kunde naa.
 
-<pb n="372" facs="377.jpg"/>Et mig trøster, et Forsæt: Jeg giver mig ej.
+<pb n="98" facs="112.jpg"/>Et mig trøster, et Forsæt: Jeg giver mig ej.
 Var en Gabestok sikker — i Trods har jeg levet,
-og Intet af hvad jeg har villet, har skrevet.
+og Intet af hvad jeg har villet, har skrevet,
 har tænkt og har elsket, fornegtede jeg.
 Jeg er svag, lad saa være, jeg véd, hvad jeg vil.
 Jeg er tomhændet, sandt! men jeg har mine Hænder.
 Og bebrejder mig ej, at jeg er lutter Ild!
-Højst nødigt det gøres, at saadan jeg brænder:
+Højst nødigt det gjøres, at saadan jeg brænder:
 Hin Is skal jeg smelte, saa Ild maa der til.
 
-Marcuspladsen, 7. Juli 1871.
+<nonum><sc>Marcuspladsen, 7. Juli 1871.</sc></nonum>
 </poetry>
 </body>
 </text>
 
-<text id="brandes2001061759">
+<text id="brandes2026090755" variant="brandes2001061759">
 <head>
   <title>Til Maria</title>
   <toctitle>Til Maria</toctitle>
   <indextitle>Til Maria</indextitle>
   <firstline>O rene Jomfru, tro ham ikke kold</firstline>
-  <source pages="373-373"/>
+  <source pages="99-99"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2214,12 +2343,12 @@ den tungtalvorlige, hvis mørke Bane
 din Vej, saa lys som Stjerneskuddets, krydsed
 en enkelt Dag. Vi mødtes, og min Sjæl
 bevarer dybt Erindringen om Glimtet.
-Tit har jeg lukket mine Øjne til,
+Tidt har jeg lukket mine Øjne til,
 kaldt Mindet frem og hentet Dagens Lys
 af hin Erindring op. Men vid, mit Hjerte
 er Sorgens mørke Hus, og Storme fare
-igennem Dør og Vindu. Intet Lys
-med sligt et blidt og stille Skær kan brænde
+igjennem Dør og Vindu. Intet Lys
+med sligt et blidt og stille Skjær kan brænde
 ret længe der. Kun Lidenskabens Fakler
 formaa at holde Stormen ud. De vifte,
 de røde Fakler, Viljens, Frihedskampens;
@@ -2230,13 +2359,13 @@ Men, rene Jomfru! tro ham ikke kold!
 </body>
 </text>
 
-<text id="brandes2001061760">
+<text id="brandes2026090756" variant="brandes2001061760">
 <head>
   <title>Den vilde Jagt</title>
   <toctitle>Den vilde Jagt</toctitle>
   <indextitle>Den vilde Jagt</indextitle>
   <firstline>Saa stormfuldt er mit Hjerte, og min Kummer er saa stor</firstline>
-  <source pages="374-374"/>
+  <source pages="100-100"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2255,13 +2384,13 @@ Hold paa mig, Broder, grib mig, grib og bind!
 </body>
 </text>
 
-<text id="brandes2001061761">
+<text id="brandes2026090757" variant="brandes2001061761">
 <head>
   <title>Uvejr</title>
   <toctitle>Uvejr</toctitle>
   <indextitle>Uvejr</indextitle>
   <firstline>Det var i Uvejr, at vi fandt hinanden</firstline>
-  <source pages="375-375"/>
+  <source pages="101-101"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2289,15 +2418,15 @@ og Havet aabner sig, det rædsomtskumle.
 </body>
 </text>
 
-<text id="brandes2001061762">
+<text id="brandes2026090758" variant="brandes2001061762">
 <head>
   <title>Kornmod</title>
   <toctitle>Kornmod</toctitle>
   <indextitle>Kornmod</indextitle>
   <firstline>Du sagde: «Vil den Uro paa din Pande</firstline>
-  <source pages="376-376"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
+  <source pages="102-102"/>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2313,22 +2442,22 @@ Skal Modenhedens bedste Frugt da fattes? —
 
 Sig, Elskte, gik du ud i Aftes silde?
 I Juliklarhed Himlen ren sig hvælved.
-mens uafbrudt med Lyn i Lyn den skælved.
+mens uafbrudt med Lyn i Lyn den skjælved.
 
 Luften var varm og alle Stjerner milde;
-ej Larm, ej Lyd, skønt Lyn omskælved Kloden.
+ej Larm, ej Lyd, skjønt Lyn omskælved Kloden.
 Naar Kornmod glimter, da er Sæden moden.
 </poetry>
 </body>
 </text>
 
-<text id="brandes2001061763">
+<text id="brandes2026090759" variant="brandes2001061763">
 <head>
   <title>Spildt</title>
   <toctitle>Spildt</toctitle>
   <indextitle>Spildt</indextitle>
   <firstline>Spildt da al min Stræben var</firstline>
-  <source pages="377-377"/>
+  <source pages="103-103"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2339,9 +2468,9 @@ Al min Grublen, al min Møje
 Hendes Vilje er et Vrag,
 hendes Hjerne sløv og svag.
 Efter hvert et Skridt den Svage
-atter gør et Skridt tilbage.
+atter gjør et Skridt tilbage.
 
-Nej, o nej! jeg vil det ikke.
+Nej, o nej! Jeg vil det ikke.
 Hun skal vækkes, hun skal styrkes;
 Mod hun Dag for Dag skal drikke.
 Hver en Spire til det Bedre
@@ -2352,42 +2481,42 @@ sejre over dette Mørkes.
 </body>
 </text>
 
-<text id="brandes2001061764">
+<text id="brandes2026090760" variant="brandes2001061764">
 <head>
   <title>Tærningkast</title>
   <toctitle>Tærningkast</toctitle>
   <indextitle>Tærningkast</indextitle>
-  <firstline>Ak! jeg har sat mit Liv paa denne Terning</firstline>
-  <source pages="378-378"/>
+  <firstline>Ak! jeg har sat mit Liv paa denne Tærning</firstline>
+  <source pages="104-104"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Ak! jeg har sat mit Liv paa denne Terning.
+Ak! jeg har sat mit Liv paa denne Tærning.
 I Smægten tæres hen min Kraft; i Savn
 og Sorg forraader jeg min store Gerning,
 min Sag, mit Navn.
 
-Er Spillet tabt? Er hendes Sjæl umyndig?
+Er Spillet tabt? Er hendes Sjæl umyndig
 Er hendes Aand saa tam og kvindeblød,
-som hun er skøn og lokkende og yndig
+som hun er skjøn og lokkende og yndig
 og undersød?
 
-Rul, Terning, rul! Men hvad du end mig melder,
+Rul Tærning, rul! Men hvad du end mig melder,
 en smerteblandet Fryd hvad eller Drab
-af Haab og Lykke, skynd dig! Enten — Eller:
+af Haab og Lykke, skynd dig! Enten — Eller;
 Sejr eller Tab!
 </poetry>
 </body>
 </text>
 
-<text id="brandes2001061765">
+<text id="brandes2026090761" variant="brandes2001061765">
 <head>
   <title>Kala</title>
   <toctitle>Kala</toctitle>
   <indextitle>Kala</indextitle>
   <firstline>Mig fængsled aldrig mild Adagio-Klang</firstline>
-  <source pages="379-380"/>
+  <source pages="105-106"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2395,34 +2524,34 @@ Sejr eller Tab!
 Mig fængsled aldrig mild Adagio-Klang,
 jeg elsker Krigsmusikens heftige Takt
 og Hymnens Kor og Kampsignalets
-Tilraab: Formér Eders Bataljoner!
+Tilraab: Formér Eders Batailloner!
 
 Det korte Ords ubøjeligt faste Bud,
 saa skarpt som Staal, der kløver en Pandebrask,
-den faste Form af Barm og Aasyn
-Legem og Sjæl, det er sligt, jeg elsker.
+den faste Form af Barm og Aasyn,
+Legem og Sjæl, det er det, jeg elsker.
 
 Se rundt omkring os: Flad er den Mark, du ser.
-I Slud og Blæst og Kulde sygner vor Dag;
+I Slud og Blæst og Kulde Sygner vor Dag;
 og daarligt er det Liv, her føres,
 Sumpenes Liv, hvor Frøer kvække.
 
-Ej Glemmigej begærer mit Hjerte da.
-Ved Mosens Rand den vokser i tusindvis.
+Ej Glemmigej begjærer mit Hjerte da.
+Ved Mosens Rand den voxer i tusindvis.
 Men højt jeg elsker Kalaplantens
 ensomme Blomst med dens strenge Alvor.
 
-<pb n="380" facs="385.jpg"/>Eet Blad, een Tanke! ren som en Kvindesjæl,
+<pb n="106" facs="120.jpg"/>Eet Blad, een Tanke! ren som en Kvindesjæl,
 der for mit Øje tegner sig stolt og klar
 mod Livets stygge, mørke Baggrund,
-enfold, fordi den er lutter Skønhed.
+enfold, fordi den er lutter Skjønhed.
 
-En saadan Skønhed — den er et Guddomspant
+En saadan Skjønhed — den er et Guddomspant
 fra Himlen selv. Som den, der i Havsnød stedt
 med Et ser Land, saadan ved Synet
 jubler mit Hjerte: Der gives Lykke.
 
-Der gives Lykke; thi der er Skønhed til.
+Der gives Lykke; thi der er Skjønhed til.
 Kun En, hvis rene Blik med saa fuld Foragt
 paa Krybet falder, at det skamfuldt
 hvisler afsted — og jeg øjner Maalet.
@@ -2442,17 +2571,17 @@ Fremad! Valkyrjer i Luften vinke.
 
 <section level="1">
 <head>
-  <toctitle>Femte Afdeling (1873–1875)</toctitle>
+  <toctitle>Femte Afdeling (1873—1875)</toctitle>
 </head>
 <content>
 
-<text id="brandes2001061767">
+<text id="brandes2026090762" variant="brandes2001061767">
 <head>
   <title>Reconvalescentbesøg</title>
   <toctitle>Reconvalescentbesøg</toctitle>
   <indextitle>Reconvalescentbesøg</indextitle>
   <firstline>April det var, men sommervarm var Luften</firstline>
-  <source pages="381-382"/>
+  <source pages="109-110"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2469,25 +2598,25 @@ og gjorde med sit Aandepust Mirakler.
 Langs Vejen hastigt gik en lystklædt Mand,
 slank, mørk, et Aasyn, i hvis tankefulde
 og melankolske Træk en Længslens Brand
-gløded igennem Kløgt og Kraft og Kulde.
+gløded igjennem Kløgt og Kraft og Kulde.
 Han ser ej Vognene forbi sig rulle;
-men tit paa friske Roser og Konvaller,
+men tidt paa friske Roser og Konvaller,
 som i sin Haand han bær', hans Øje falder,
-som det mod Sol og Støv dem skærme skulde.
+som det mod Sol og Støv dem skjærme skulde.
 
-<pb n="382" facs="387.jpg"/>Hist i den aabne Svale sad en Kvinde,
+<pb n="110" facs="124.jpg"/>Hist i den aabne Svale sad en Kvinde,
 saa bleg som nys opstanden fra de Døde,
 høj, smal og fin — og mat som ingensinde.
-Blikket var Sjæl og Stemmen Fløjl, og bløde.
-skønt lutter Alvor, hendes Træk de søde.
+Blikket var Sjæl og Stemmen Fløjl, og bløde,
+skjønt lutter Alvor, hendes Træk de søde.
 Da lød en Ringning nedefra ved Gitret.
-Hun saa derned, og hendes Hænder sitred.
+Hun saa derned, og hendes Hænder sitred,
 og hendes Kinder bleve næsten røde.
 
-Og vaklende hun traadte ham imøde,
+Og vaklende hun traadte ham imøde.
 som svigted hende Øje, Haand og Fod —
 men kun et kort Minut, og roligt løde
-de Ord, hvormed hun Gæsten tog imod.
+de Ord, hvormed hun Gjæsten tog imod.
 Han lagde sine Blomster, hvor han stod,
 og sagde: «De er bedre — hvilken Glæde!»
 Hun takked ham og bad ham tage Sæde,
@@ -2497,21 +2626,21 @@ Berusende de røde Roser brændte
 imellem dem paa Bordet, hvor de laa.
 De hvide Roser deres Duft opsendte;
 stærkt duftede Konvallerne, de smaa.
-De talte lidt og gik igen istaa
-og nød hinandens Selskab som en Lykke,
+De talte lidt og gik igjen istaa
+og nød hinandens Selskab som en Lykke.
 der vilde Sjælen helt i Vellyst dykke. —
 Saa rejste han sig stille for at gaa.
 </poetry>
 </body>
 </text>
 
-<text id="brandes2001061768">
+<text id="brandes2026090763" variant="brandes2001061768">
 <head>
   <title>Perle, du sprøde</title>
   <toctitle>Perle, du sprøde</toctitle>
   <indextitle>Perle, du sprøde</indextitle>
   <firstline>Perle, du sprøde!</firstline>
-  <source pages="383-383"/>
+  <source pages="111-111"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2521,7 +2650,7 @@ Fra Perlemoderen jeg har dig vristet.
 Da blev du Perle. Tilgiv mig min Brøde!
 
 Perle, du blanke!
-Skøn, pur og glansfuld blev du fattet, favnet
+Skjøn, pur og glansfuld blev du fattet, favnet
 i Guld, der gløder som en Elskovstanke.
 
 Perle, du klare!
@@ -2531,13 +2660,13 @@ en Skat, som ingen Enkelt kan bevare.
 </body>
 </text>
 
-<text id="brandes2001061769">
+<text id="brandes2026090764" variant="brandes2001061769">
 <head>
   <title>Turnering</title>
   <toctitle>Turnering</toctitle>
   <indextitle>Turnering</indextitle>
   <firstline>Hun var Prinsesse, han en simpel Ridder</firstline>
-  <source pages="384-386"/>
+  <source pages="112-114"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2564,8 +2693,8 @@ og hendes Øjne, disse udtryksrige,
 i Lød og Glimt helt ubestemmelige
 og søde Lys snart tyktes blaa, snart brune.
 
-<pb n="385" facs="390.jpg"/>Men dejlig var hun. Mødtes deres Blik,
-hans Hjerte skælved som en Fugleunge
+<pb n="113" facs="127.jpg"/>Men dejlig var hun. Mødtes deres Blik,
+hans Hjerte skjælved som en Fugleunge
 i hendes Haand, dog aldrig, aldrig fik
 han nogen Bøn om Elskov paa sin Tunge.
 Hun var Prinsesse, han bevogtet Fange.
@@ -2573,7 +2702,7 @@ Hans Kval var dyb, hans vaagne Nætter mange.
 
 Hans Saar var lægte, Haanden fast paany,
 og sikkert førte han til Stød sin Lanse.
-Hans Navn var kendt i fremmed Land og By,
+Hans Navn var kjendt i fremmed Land og By,
 og snart til Hirden naaede da hans Ry
 for hundred Sejre, hundred vundne Kranse.
 
@@ -2582,7 +2711,7 @@ han ikke hendes Ynde kunde sanse.
 
 Turnering forberedtes. Dagen kom,
 da der til Dystløb blæstes, og Fyrstinden
-med ædle Lader, Rosenblod i Kinden,
+med ædle Lader, Rosenblod i Kinden
 tog paa en Tronstol Plads at holde Dom.
 Paa hende i den sorte Kniplingsdragt
 med lyse Sløjfer hvert et Blik gav Agt.
@@ -2590,26 +2719,26 @@ med lyse Sløjfer hvert et Blik gav Agt.
 I gyldne Brynjer og med broget Pragt
 drog Landets Hirdmænd hendes Plads forbi.
 Men Fangen, som paa denne Dag var fri
-og paa hvis Ansigt laa et Skær af Lykke,
+og paa hvis Ansigt laa et Skjær af Lykke,
 tren i beskeden Rustning uden Smykke
 hen foran hendes Tronstols Drapperi.
 
-<pb n="386" facs="391.jpg"/>I Haanden vugged Lansen han, den svære;
+<pb n="114" facs="128.jpg"/>I Haanden vugged Lansen han, den svære;
 han blussede af Længsel efter Ære;
 en Mands Beslutning i hans Træk sig malte.
 Med dæmpet Røst for første Gang han talte:
-Prinsesse! Lad mig dine Farver bære!
+Prinsesse! Lad mig dine Farver bære.
 </poetry>
 </body>
 </text>
 
-<text id="brandes2001061770">
+<text id="brandes2026090765" variant="brandes2001061770">
 <head>
   <title>Paa Concerten</title>
   <toctitle>Paa Concerten</toctitle>
   <indextitle>Paa Concerten</indextitle>
   <firstline>Lær dog, Hanna, at væmmes</firstline>
-  <source pages="387-388"/>
+  <source pages="115-116"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2618,7 +2747,7 @@ Lær dog, Hanna, at væmmes
 ved Angsters unødige Kval,
 agt ej paa Tisken og Praten,
 vær som en Stat i Staten —
-det er den Lære, som gemmes,
+det er den Lære, som gjemmes,
 Hanna, for dig i Kantaten,
 som fylder den store Sal.
 
@@ -2627,17 +2756,17 @@ lær — ikke sky for Skrald —
 at følge din indre Stemmes,
 dit tapre Hjertes Kald.
 
-Føl det! Den skaffer kun Vaande,
+Føl det! Den skaffer kun Vaande.
 Angstens Spøgelseluft,
 Du blev jo skabt til at aande
 Elskovens Røgelseduft.
 
-Føl, hvor den mod dig stiger,
+<pb n="116" facs="130.jpg"/>Føl, hvor den mod dig stiger,
 og med Duften en Sang,
 sød som Kys og som Smiger,
 der dulmer din Sjæl med sin Harpeklang.
 
-<pb n="388" facs="393.jpg"/>Kender du Navnet, du kære,
+Kjender du Navnet, du kjære,
 om hvilket Hymnen er lagt?
 Hører du Tonerne bære
 det Navn med stormende Magt?
@@ -2648,27 +2777,27 @@ Tonerne svulme saa bløde:
 Se, som en Morgenrøde
 kommer du, Drømmenes Dronning.
 Fra dine Læber, de søde,
-drypper der Mælk og Honning.
+drypper der Mælk og Honning,
 drypper der himmelsk Manna.
-Tonerne svulme saa bløde:
+Tonerne svulme saa bløde,
 og med et fuldt Hosianna
 bruser det: Hanna, Hanna!
 </poetry>
 </body>
 </text>
 
-<text id="brandes2001061771">
+<text id="brandes2026090766" variant="brandes2001061771">
 <head>
   <title>Hvid, lys</title>
   <toctitle>Hvid, lys</toctitle>
   <indextitle>Hvid, lys</indextitle>
-  <firstline>En Storm foer gennem mit Indre</firstline>
-  <source pages="389-389"/>
+  <firstline>En Storm foer gjennem mit Indre</firstline>
+  <source pages="117-117"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-En Storm foer gennem mit Indre
+En Storm foer gjennem mit Indre
 og den fejede Hvælvingen ren.
 Alt svandt. Jeg kan Intet erindre,
 og nu hersker i Hjertet kun En.
@@ -2684,18 +2813,18 @@ beundret og attraaet hver Dag,
 staar hun, hvem jeg elsker, alene.
 og ud fra min Kval og min Dont
 jeg løfter mit Blik mod den Rene,
-der fylder mit Livs Horisont.
+der fylder mit Livs Horizont.
 </poetry>
 </body>
 </text>
 
-<text id="brandes2001061772">
+<text id="brandes2026090767" variant="brandes2001061772">
 <head>
   <title>Roturen</title>
   <toctitle>Roturen</toctitle>
   <indextitle>Roturen</indextitle>
   <firstline>Sen Aften. Under Skrænten roede de ud</firstline>
-  <source pages="390-390"/>
+  <source pages="118-118"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2703,23 +2832,23 @@ der fylder mit Livs Horisont.
 Sen Aften. Under Skrænten roede de ud
 og laa paa det blanke, purpurfarvede Vand.
 Paa de hvide, stejle Pynter stod Bøgen Brud,
-saa lysende lys, medens Himmel og Jord stod i Brand.
+saa lysende lys, mens Himmel og Jord stod i Brand.
 
 I en Dis af Varme sløret laa Skov og Strand.
-Det var overjordisk, saa skønt som en salig Drøm.
+Det var overjordisk, saa skjønt som en salig Drøm.
 Hans Sjæl var smeltet; hans talende Taushed øm;
 hun svarte klart med en praktisk og tør Forstand.
 </poetry>
 </body>
 </text>
 
-<text id="brandes2001061773">
+<text id="brandes2026090768" variant="brandes2001061773">
 <head>
   <title>Haven</title>
   <toctitle>Haven</toctitle>
   <indextitle>Haven</indextitle>
   <firstline>Hør Fuglesang af hundred Fugletunger!</firstline>
-  <source pages="391-392"/>
+  <source pages="119-120"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2728,13 +2857,13 @@ Hør Fuglesang af hundred Fugletunger!
 Se Æbleblomst og Guldregn og Syrener!
 Aand Duft af Løv og Muld i dine Lunger!
 Her Stedet er, som hun dets Magt forlener,
-hun Havens Skønhed til et Helt forener.
+hun Havens Skjønhed til et Helt forener.
 
 Stjerne ved Stjerne Bellis staar i Græsset.
 Se, Bedet plantes, Gangen skuffes, rives,
 lyt! Lyden af en Le, der bliver hvæsset.
 Til Blomstring, Duft og Sang Naturen drives,
-men intet Skønnere end hun der gives.
+men intet Skjønnere end hun der gives.
 
 En Luftning. Løvet hvisker: se den Kvinde,
 som nu i Haven træder ud fra Huset!
@@ -2742,14 +2871,14 @@ Med lette Skridt, som knirke svagt i Gruset,
 hun gaar og hører taus paa Bladesuset,
 slank som en Raa og stolt som en Gudinde.
 
-<pb n="392" facs="397.jpg"/>Med Hvidtjørnsblomster smykker hun sit Bryst.
+<pb n="120" facs="134.jpg"/>Med Hvidtjørnsblomster smykker hun sit Bryst,
 som af Syreners søde Aande fyldes;
 i Haanden holder hun en Guldregnskvist.
 Af Alt, hvad farves, sølves og forgyldes
 i Sol, hun som sit Hjems Fyrstinde hyldes,
 Naturens Fe og Menneskenes Trøst.
 
-Nu svandt hun. Nej! se did i denne Retning,
+Nu svandt hun. Nej se did i denne Retning,
 se under Træet hist Prinsesse Vaar!
 Se disse Farvers dejlige Sammensætning!
 Hvid staar hun med den yppigt tunge Fletning,
@@ -2759,15 +2888,15 @@ Guldregnens Glorie om det mørke Haar.
 </body>
 </text>
 
-<text id="brandes2001061774">
+<text id="brandes2026090769" variant="brandes2001061774">
 <head>
   <title>Madonna</title>
   <toctitle>Madonna</toctitle>
   <indextitle>Madonna</indextitle>
   <firstline>Af Leonardo mindes jeg et Billed</firstline>
-  <source pages="393-393"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
+  <source pages="121-121"/>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2784,7 +2913,7 @@ Der staar det, stadigt mig for Øjet stillet.
 Er du kun Billed? Svar mig, gaadefulde
 Madonna, svar mig, o du fjerne, nære!
 Har Leonardo anet dig, du hulde?
-beundret, elsket, malet dig; du kære?
+beundret, elsket, malet dig, du kjære?
 
 O nej! du staar der, slank og fin, i Live.
 Und mig, Madonna, Alt hvad du kan give.
@@ -2792,13 +2921,13 @@ Und mig, Madonna, Alt hvad du kan give.
 </body>
 </text>
 
-<text id="brandes2001061775">
+<text id="brandes2026090770" variant="brandes2001061775">
 <head>
   <title>Diana</title>
   <toctitle>Diana</toctitle>
   <indextitle>Diana</indextitle>
   <firstline>Hun stod der nøgen, rank som Sydens Pinie</firstline>
-  <source pages="394-394"/>
+  <source pages="122-122"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2814,18 +2943,18 @@ i stille Lykke lagde han sin Haand.
 </body>
 </text>
 
-<text id="brandes2001061776">
+<text id="brandes2026090771" variant="brandes2001061776">
 <head>
   <title>Jusja</title>
   <toctitle>Jusja</toctitle>
   <indextitle>Jusja</indextitle>
-  <firstline>Ja, kære, du var Drømmen</firstline>
-  <source pages="395-397"/>
+  <firstline>Ja, kjære, du var Drømmen</firstline>
+  <source pages="123-125"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Ja, kære, du var Drømmen,
+Ja, kjære, du var Drømmen,
 den fine Gift,
 den Dulmedrik,
 som til Trøst under Dagenes Strømmen
@@ -2833,27 +2962,27 @@ af Aarets Engel jeg fik.
 Du var den dragende Stjerne,
 som glimted stærkt,
 og vinked huldt
-og lokked mig ud i det Fjerne,
+lokked mig ud i det Fjerne,
 til Brystet af Længsel var fuldt.
 
-Ja, kære, du var mig Polen,
+Ja, kjære, du var mig Polen,
 var Heltenes Land,
 Frihedens Aand
 i Kvindeform, klar som Solen,
 en Sjæl uden Plet, uden Baand.
-Du var en af hine Kvinder
+<pb n="124" facs="138.jpg"/>Du var en af hine Kvinder
 med Sværd ved Lænd,
 med luende Hu,
 som sprængte mod Polens Fjender,
-skønne ved Stolthed og Blu.
+skjønne ved Stolthed og Blu.
 
-<pb n="396" facs="401.jpg"/>Da saa fra din Mund, den søde,
+Da saa fra din Mund, den søde,
 i denne Røst
 med Guldets Klang
 mig tonede mildt imøde
 det Sprog, man om min Vugge sang,
 det Sprog, som over alle
-min Sjæl har kært,
+min Sjæl har kjært,
 det eneste Maal,
 som jeg mit eget kan kalde
 og smedde og svinge som Staal —
@@ -2869,23 +2998,23 @@ man vil nævne mit Navn,
 det Sprog, som er Lærlingens Mester,
 men som slutter min Tanke tæt i sin Favn
 
-det Sprog, hvis Ler bærer Mærke
+<pb n="125" facs="139.jpg"/>det Sprog, hvis Ler bærer Mærke
 af dets Elskers Tryk,
 af hans formende Haand,
 og i hvis Melodier de stærke
 man Aarhundredet ud vil spore min Aand
-da smelted, du kære, mit Hjerte,
+da smelted, du kjære, mit Hjerte,
 da, tyktes mig, flød
 i denne din Røst
 en Strøm af Ømhed, af Smerte,
 og af Folkebefrielsens Fremtidstrøst.
 
-<pb n="397" facs="402.jpg"/>Derfor maa vi ikke os skille,
+Derfor maa vi ikke os skille,
 men enes godt
 og et Gran forstaas,
-saa intet Skønt gaar til Spilde,
+saa intet Skjønt gaar til Spilde,
 som ved os to kunde naaes.
-Blev din Broder en Fører for mange
+Blev din Broder en Fører for mange,
 en Herremand med Svende i Flok,
 Du blev skabt at begejstre til Sange
 og at vie til Daad — det er nok.
@@ -2893,20 +3022,20 @@ og at vie til Daad — det er nok.
 </body>
 </text>
 
-<text id="brandes2001061777">
+<text id="brandes2026090772" variant="brandes2001061777">
 <head>
   <title>Buketten</title>
   <toctitle>Buketten</toctitle>
   <indextitle>Buketten</indextitle>
   <firstline>Se Rosen, mystisk som et Digt i Veda</firstline>
-  <source pages="398-398"/>
+  <source pages="126-126"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Se Rosen, mystisk som et Digt i Veda,
 den helligt gule Rose i min Vase —
-Aakandeblomsten, smægtende som Leda,
+Aakandeblomsten, smægtende som Leda.
 der venter Svanen i en taus Ekstase
 og har du nok af Farvepragten, se da
 hvad her der for mig staar i yndig Fylde,
@@ -2916,20 +3045,20 @@ simpel og frisk den duftende Reseda.
 </body>
 </text>
 
-<text id="brandes2001061778">
+<text id="brandes2026090773" variant="brandes2001061778">
 <head>
   <title>Shelley til Mary Goodwin</title>
   <toctitle>Shelley til Mary Goodwin</toctitle>
   <indextitle>Shelley til Mary Goodwin</indextitle>
   <firstline>Du stolte, som for mig er Ømhed, idel Sødme!</firstline>
-  <source pages="399-399"/>
+  <source pages="127-127"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Du stolte, som for mig er Ømhed, idel Sødme!
 Du ranke, kold af Træk, mod mig saa blød og varm!
-Du blege Du, hvis Kind faar Skær af flygtig Rødme,
+Du blege Du, hvis Kind faar Skjær af flygtig Rødme,
 naar flygtigt blot jeg rører ved din Arm —
 Du, som er lutter Ømhed, lutter Sødme!
 
@@ -2942,23 +3071,23 @@ det alt er dit, kun dit, fordi kun du kan elske.
 </body>
 </text>
 
-<text id="brandes2001061779">
+<text id="brandes2026090774" variant="brandes2001061779">
 <head>
   <title>Til en Søster</title>
   <toctitle>Til en Søster 1-2</toctitle>
   <indextitle>Til en Søster 1-2</indextitle>
-  <firstline>Du ene, du kære</firstline>
-  <source pages="400-401"/>
+  <firstline>Du ene, du kjære</firstline>
+  <source pages="128-130"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Du ene, du kære,
+Du ene, du kjære,
 min Søster i Ømhed og Slægt af min Aand!
-Hvor rene, hvor skære
+Hvor rene, hvor skjære
 de Følelser er, i hvis ledende Baand
-vi søger hinanden, det aner de ikke,
-som sender os dumme, hadfyldte Blikke.
+vi søge hinanden, det ane de ikke,
+som sende os dumme, hadfyldte Blikke.
 
 Thi vidløs og lav
 er den Raahed, som lever i Avind og Had;
@@ -2968,29 +3097,33 @@ Det huer mig, du, jeg er ej for de myge,
 de slatne, de syge;
 jeg lider ret vel den, som trodser en Stad.
 
-Se, jeg er som du,
+<pb n="129" facs="143.jpg"/>Se, jeg er som du,
 fast i Hu,
 stærk ved Foragt
-og vi kræver det samme: en Mand, der er Magt,
+og vi kræve det samme: en Mand, der er Magt,
 uforsagt, uforsagt,
-<pb n="401" facs="406.jpg"/>blød som Voks, haard som Staal,
+blød som Vox, haard som Staal,
 kold som Is og hed som et luende Baal.
-Blødsødne! han røber sig ikke for Jer.
-Du, Clara, kender mig, som jeg er.
-
----
-
+Idealet røber sig ej for Enhver.
+Men ak! det naaes ikke her.
+</poetry>
+<quote lang="en">
+Take, since you bade it should bear
+These of the seed of your sowing
+<right><w>Swinburne.</w></right>
+</quote>
+<poetry>
 Tag, af den Sæd du har saat,
 Daad — som din Udsæds Grøde —
 hilset af Hundemusik.
 Blot dit Bifald blev naat,
-hvad gør det, at Køterne gø'de
+hvad gjør det, at Kjøterne gjø'de
 bag mig ad Vejen, jeg gik.
 
 Hvis idag dit Hjerte var tungt,
 hvis dit Blik var slørt af en Taare,
 fjern Tid tyktes dig mørk —
-husk, at mit Banner er ungt
+<pb n="130" facs="144.jpg"/>husk, at mit Banner er ungt
 og at Blodet er Ild i min Aare,
 Søster, ved Tro dig styrk!
 
@@ -2999,18 +3132,18 @@ om en rigere Tid, om en bedre.
 Se da frem uden Frygt.
 Vist er Ventetid fæl,
 men, o du, jeg vil hylde og hædre,
-Sejr det er Fasthed og Kløgt.
+Sejr er blot Fasthed og Kløgt.
 </poetry>
 </body>
 </text>
 
-<text id="brandes2001061780">
+<text id="brandes2026090775" variant="brandes2001061780">
 <head>
   <title>Harald Haarfager i Finmarken</title>
   <toctitle>Harald Haarfager i Finmarken</toctitle>
   <indextitle>Harald Haarfager i Finmarken</indextitle>
   <firstline>Fin og værdig</firstline>
-  <source pages="402-403"/>
+  <source pages="131-132"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3037,7 +3170,7 @@ sødt mig kryster
 og forlyster»,
 Drotten kvad paa Finmarks Jord.
 
-<pb n="403" facs="408.jpg"/>«Over Vandet
+<pb n="132" facs="146.jpg"/>«Over Vandet
 Hjaltalandet,
 Skotlands Øer,
 Mænd og Møer
@@ -3057,31 +3190,31 @@ Jeg dig savner,
 elsker, favner —»
 Og de hvide
 Hænder glide
-gennem Kongens fagre Haar
+gjennem Kongens fagre Haar
 </poetry>
 </body>
 </text>
 
-<text id="brandes2001061781">
+<text id="brandes2026090776" variant="brandes2001061781">
 <head>
   <title>Den engelske Have i München</title>
   <toctitle>Den engelske Have i München</toctitle>
   <indextitle>Den engelske Have i München</indextitle>
   <firstline>I tunge Tanker, ensom alt i Uger</firstline>
-  <source pages="404-407"/>
+  <source pages="133-137"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 I tunge Tanker, ensom alt i Uger,
-i Kampe stedt, af den Art Skæbner ramt,
+i Kampe stedt, af den Art Skjæbner ramt,
 hvorover Sjælen mørk og kvalfuld ruger,
 i Parken gik jeg. Ja, vel tomt og tamt,
 men fredlyst laa for hine Andre Livet
 i alle Loves Hegn. Mig var det gramt,
 mig blev kun Kamp til Løn for Kampe givet.
 Saa sang det i mit Bryst. Da hørte jeg
-en sagte Lyd, som naar igennem Sivet
+en sagte Lyd, som naar igjennem Sivet
 skarpt hvislende en Strøm sig bryder Vej,
 gik efter Lyden, til med mægtig Kogen
 et Vandfald, bredt og kraftigt, standsed mig.
@@ -3092,7 +3225,7 @@ Men Vandets Brusen mig fra Bogen drog;
 det hvide Skum i Solen sprang og blinked,
 imens Saltomortaler Bølgen slog.
 Da greb det mig: hvor dorsk, hvor sløvt forsinket
-<pb n="405" facs="410.jpg"/>løb Floden ikke nylig i sit Leje,
+<pb n="134" facs="148.jpg"/>løb Floden ikke nylig i sit Leje,
 sin gode Seng! Slet Intet Øjet vinked.
 Den gik sin Gang ad lige, jævne Veje,
 da Grund med Et den svigted under Foden.
@@ -3104,7 +3237,7 @@ Og jeg, som sidder her paa denne Bænk,
 og ser al denne Pragt, jeg skulde klage!
 Alt her omkring mig, raaber jo: Betænk,
 at ogsaa Floden havde gode Dage,
-da den sig vugged rolig paa sin Grund,
+da den sig vugged roligt paa sin Grund,
 og ingen for at se den, saa tilbage.
 
 Nu da den faldt, nu er den uden Mage.
@@ -3115,16 +3248,16 @@ Jeg rejste mig og gik i Parken ind.
 De friske, brede Bøge venligt vifted
 og loved Lægedom det syge Sind.
 De sagde: Er dit Hjerte ej forgiftet.
-og har dit Øje end det Grønne kært.
+og har dit Øje end det Grønne kjært.
 hin Farve, som Naturen aldrig skifted,
 da kom til os, det er vel Møjen værdt.
 Grønt er en Balsam for det syge Øje.
-Fornam du ej en Lindring, var det sært. —
+<pb n="135" facs="149.jpg"/>Fornam du ej en Lindring, var det sært. —
 Jeg gik forbi, saa ned, op mod det Høje,
 ud i det Fjerne. Midt i Skoven da
 et enligt Træ mig fængsled, og med Føje.
 Midt blandt de grønne Bøge stod det rødt
-<pb n="406" facs="411.jpg"/>som en Protest imod Naturens Orden.
+som en Protest imod Naturens Orden.
 Man skulde sige, Bøgen havde blødt.
 Den steg som dryppende af Blod fra Jorden
 og dog dens Løv mod Himlen smilte sødt.
@@ -3133,7 +3266,7 @@ Og trindt om den de andre Havens Træ'r
 med Haansord hvisked om den arme Stakkel.
 De hadede den alle, en og hver:
 «Dens Unatur er næsten et Mirakel.
-«Et Træ, der ej for Øjnene gør godt!
+«Et Træ, der ej for Øjnene gjør godt!
 «Et Træ, der staar og lyser som en Fakkel!
 «Evindelig bengalsk Belysning blot
 «og farvet Glas en Forestilling give
@@ -3147,7 +3280,7 @@ De hadede den alle, en og hver:
 Saaledes hvisled alle disse smukke
 og grønne Bøge. Men jeg hørte grant
 Misundelsen sin Tand i Træet hugge.
-Jeg sagde til mig selv: Saa vist og sandt,
+<pb n="136" facs="150.jpg"/>Jeg sagde til mig selv: Saa vist og sandt,
 som disse Træ'r er som et Træ skal være
 og Reglen i dem alle Sejer vandt;
 saa vist, som det var ikke til at bære,
@@ -3161,7 +3294,7 @@ hvad Havens andre Træer vilde hævne.
 
 ---
 
-<pb n="407" facs="412.jpg"/>Hvad har med Vand og Træer jeg tilfælles!
+Hvad har med Vand og Træer jeg tilfælles!
 Stig op fra Bogens Blade, stolte Sjæl.
 og vis mig dine Træk, som aldrig ældes.
 Jeg véd, dig kalder Mængden ond og fæl,
@@ -3174,12 +3307,12 @@ blandt Tidens Børn du har slet ingen Ven.
 Ej én der er, i hvem din Ild har fænget,
 ej én er af din Slægt blandt Tysklands Mænd.
 Kun dine Fejl, dem kan de, hele Slænget.
-Men se, i mig, en Fremmed, er dig født
+<pb n="137" facs="151.jpg"/>Men se, i mig, en Fremmed, er dig født
 en Slægtning, lutter Trods som du. Den vrænged,
 den usle Hob, af mig som dig. Forødt
 har jeg som du min borgerlige Ære.
-Af hundred Halse har det mod mig gøet,
-det Hundekobbel, som mod dig, du kære,
+Af hundred Halse har det mod mig gjøet,
+det Hundekobbel, som mod dig, du kjære.
 bestandig halsed. Stærk ved min Foragt
 jeg stod for Krigsskrig, rejst af Skrællinghære.
 Du stolte Aand! jeg er dit Mindes Vagt.
@@ -3194,13 +3327,13 @@ en Billedstøtte paa din Grav, du Stærke!
 </body>
 </text>
 
-<text id="brandes2001061782">
+<text id="brandes2026090777" variant="brandes2001061782">
 <head>
   <title>Proteus</title>
   <toctitle>Proteus</toctitle>
   <indextitle>Proteus</indextitle>
   <firstline>Proteus er hverken tør eller kold</firstline>
-  <source pages="408-411"/>
+  <source pages="138-141"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3208,38 +3341,38 @@ en Billedstøtte paa din Grav, du Stærke!
 Proteus er hverken tør eller kold,
 og hans varme Natur bliver aldrig gold.
 
-Han beundrer en Mand — det beriger at dyrke;
+Han beundrer en Mand — det beriger at dyrke:
 han hylder en Kvinde; thi Kulde er Tørke.
 
 Har Manden en Grænse, har Kvinden en Vorte,
-hans fyrige Hyldest blir derfor ej borte.
+hans fyrige Hyldest bli'er derfor ej borte.
 
-Men vil de ham holde, og tror, at de har ham,
+Men vil fast de ham holde, og tror de, de har ham,
 de føler, saa let man ej fanger og ta'er ham.
 
 Tilhænger af Per eller Povl er han ikke,
 er sig selv, i hvad Form end hans Jeg kan stikke.
 
 Det er der Personer, som slet ikke lider:
-han burde ha' mange forskellige Sider.
+han burde ha'e mange forskjellige Sider.
 
 Der er Væsner, hvis Sider har hver sine Ynder.
 Ensidig engang blev han kaldt af en Flynder.
 
-<pb n="409" facs="414.jpg"/>Han lider det Sære, skønt selv uden Særhed,
-han elsker det Store, og søger dets Nærhed.
+<pb n="139" facs="153.jpg"/>Han søger det Sære, er dog ingen Særling,
+vurderer det Store, men aldrig som Lærling.
 
-Han ynder Maistre, den Reaktionære,
-han priser Lassalle, og vrager hans Lære.
+Han priser de Maistre, den Reaktionære,
+han ynder Lassalle, og vrager hans Lære.
 
 Har ingen Kokarde og intet Banner,
-har Frisind kært og vurderer Tyranner.
+har Frisind kjært og elsker Tyranner.
 
-Jert Øjebliksbilled ham overrasker;
-men han har Maske, har hundrede Masker.
+Naar jert Øjebliksbilled ham overrasker,
+kaster han Masken, har hundrede Masker.
 
 Han trænger end ikke til Pseudonymer,
-i eget Navn bær han stadigt Kostymer.
+i eget Navn bær' han stadigt Kostymer.
 
 Agitator kaldes han, Combattant.
 Hvilket tarveligt Ord, selv om det var sandt!
@@ -3250,46 +3383,46 @@ som hvis I kaldte ham Sværmer og Drømmer.
 Historiker vil de ham aldrig kalde,
 der spy ham over med Gift og Galde:
 
-og dog har henfarne Tider han kendt
+og dog har henfarne Tider han kjendt
 vel saa fuldt som de Mænd med historisk Patent,
 
 og dog har med Fortidens Aander han følt
-mer end Den, der blandt støvet Papir har nølt.
+mer end Den, der blandt støvet Papir blot har nølt.
 
-<pb n="410" facs="415.jpg"/>I hans Ord, de siger, en Hensigt lurer,
+<pb n="140" facs="154.jpg"/>I hans Ord, de siger, en Hensigt lurer,
 og dog er han dum som naive Naturer.
 
 Ej Digter, ej Lærd, i Kritiken «Poet»,
-naar har man saadant et Monstrum set?
+har man nogentid saadant et Monstrum set?
 
 En Fjende af Kirke, Samfund og Stat,
 «vild Radikaler» og — Aristokrat,
 
-paa sin Post bestandig mod Mængde og Masse
+paa sin Post bestandig mod Mængde og Masse —
 hvor er den Rubrik, hvori han kan passe?
 
-Saa tit de ret paa hans Hud vil faa Ram,
+Saa tidt de ret paa hans Hud vil faa Ram,
 slangesmidig han da skyder Ham,
 
-er andensteds, mens med Hujen og Tuden
+og er andensteds, mens med Hujen og Tuden
 de stikker og borer i Slangehuden.
 
 Dog i gamle Kvad er hans Væsen beskrevet,
 saa det ses, mindst tre tusind Aar har han levet.
 
-Skønt Proteus af Fag er Sandsiger-Gud,
+Skjønt Proteus af Fag er Sandsiger-Gud,
 han lider ej godt, at man fritter ham ud.
 
 Da Videlystne engang vilde prøve
-at fange ham, blev han en skægget Løve:
+at fange ham, blev han en skjægget Løve;
 
-<pb n="411" facs="416.jpg"/>da Løven forfulgtes, en Salamander,
-og saa et Vildsvin og saa en Panter.
+da Løven forfulgtes, en Salamander,
+og saa et Vildsvin og saa en Panther.
 
-Saa blændede han som en blussende Flamme,
-men var i sin Ildform én og den samme;
+<pb n="141" facs="155.jpg"/>Saa blændede han som en blussende Flamme,
+men var selv i Ildform én og den samme;
 
-blev saa rindende Vand, saa et Træ, der skød Grene;
+blev saa rindende Vand, saa et Træ, der skjød Grene,
 dog Vand, Træ og Dyr — det var Proteus alene.
 
 Ingen enkelt Form, ingen enkelt Gestalt
@@ -3300,116 +3433,6 @@ bandt den, som favned og fattede Alt.
 
 </content>
 </section>
-
-<text id="brandes2001061783">
-<head>
-  <title>Slutningsord</title>
-  <toctitle>Slutningsord (Ved Fuldendelsen af Samlede Skrifter)</toctitle>
-  <indextitle>Slutningsord (Ved Fuldendelsen af Samlede Skrifter)</indextitle>
-  <firstline>Mausoleet er færdigt</firstline>
-  <source pages="413-416"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
-<poetry>
-Mausoleet er færdigt
-hver Sten hidbragt,
-hugget til og ihærdigt
-paa sit Sted lagt.
-Det er højt, det er bredt, Monumentet; for Døren to Sfinkser har Vagt.
-
-Fordeler dets Masser
-sig simpelt og klart,
-saa det stemmer og passer —
-ej Flid blev spart,
-Alt blev vejet og prøvet og bedret, at virke ret efter sin Art.
-
-Undfanget ved Nat og
-udkastet ved Dag,
-i Skynding forladt og
-fint udført i Mag,
-under Stilhed har Arbejdet vokset sig rankt som Samvittigheds-Sag.
-
-<pb n="414" facs="419.jpg"/>Og med Kærlighed randet
-blev hvert Ornament.
-Hvad i Marmor blev dannet,
-hvad Ler blev brændt,
-af hele min Sjæl blev det formet, med Ømhed lagt an og fuldendt.
-
-Ej jeg tror dog, at Værket,
-mit Livsværk, vil staa.
-Vel jeg véd, det er mærket,
-vil tæres, forgaa.
-At skabe udødeligt Værk var jeg ikke af dem, der formaa.
-
-Ry som Havet kan buldre
-og smelter som Is,
-og Værket vil smuldre,
-til Undergang vi's,
-mens af Sten, der blir slæbt fra dets Tomt, Hytter klines i hundredevis.
-
-Dog søg mig ej kløgtigt
-i hvad jeg gav Form!
-Mit Bedste var flygtigt
-som Ild og som Storm.
-Fra mit Værksted elektriske Gnister tog Flugt uden Regel og Norm.
-
-Som en lysende Stribes
-Strejfskær i et Rum,
-der saa lidet kan gribes
-som Havfladens Skum,
-saa blussed mit Væsen. Et lynende Lysblink det var i en Sum.
-
-<pb n="415" facs="420.jpg"/>Og det hørtes som Brusen,
-et vækkende Raab,
-der fandt Genklang hos Tusend
-og fostrede Haab.
-Det var Røsten, der kaldte i Ørknen og døbte med Frihedens Daab.
-
-Denne Røst har befriet,
-den lød, hvor det gjaldt,
-har Elskende viet,
-har Sangere kaldt.
-Lyder Kampgny og Sangkunst i Nord, der er lidt af dens Klang i det Alt.
-
-Ej ved Grav, jeg har bygget,
-ved Frø, jeg har saat,
-er min Fremtid betrygget,
-mit Livsmaal naat.
-Det vil spire og gro mangefold, til mit Øjemed helt blir forstaat.
-
-Naar Arbejdets Sønner
-ej mer lider Nød,
-naar Flid sig lønner
-og Kvinden har Brød,
-o da var af min Sved der en Draabe i den, som for Sejrene flød.
-
-Naar Statskirkemuren
-nedramler en Dag
-for Jericholuren
-med Jordskælvsbrag,
-o da var blandt de stærke Basuner en Lur, som var min, om end svag.
-
-<pb n="416" facs="421.jpg"/>Lyder engang i Øster
-et: Hil, Frihed, hil!
-Varsler russiske Røster
-en Daad stærk og vild,
-flammer Alt — o saa fænged der Ved i det Baal ved en Gnist af min Ild.
-
-Staar engang Polen kranset
-med Rejsning god,
-helt, frit, og forskanset
-ved Fasthed og Mod,
-da var i det Blod, der har Bygningen kittet, et Stænk af mit Blod.
-
-Tro da ej, at jeg skræmmes
-fordi vel jeg véd,
-hvad jeg virked vil glemmes,
-hvad jeg led, hvad jeg hed.
-Liv i Fremtidens ypperste Liv er en Art af Udødelighed.
-</poetry>
-</body>
-</text>
 
 </workbody>
 </kalliopework>
