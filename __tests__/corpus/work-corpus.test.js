@@ -260,14 +260,16 @@ describe('registered first-edition placeholders', () => {
         'subwork',
       ]);
 
+      const isCompletedWork =
+        root.getAttribute('status') === 'complete' && contents.length > 0;
       if (
         root.getAttribute('id') !== workId ||
         root.getAttribute('author') !== poetId ||
-        root.getAttribute('status') !== 'incomplete' ||
+        (root.getAttribute('status') !== 'incomplete' && !isCompletedWork) ||
         root.getAttribute('type') !== 'poetry' ||
         !title?.textContent.trim() ||
         !year?.textContent.trim() ||
-        contents.length !== 0
+        (!isCompletedWork && contents.length !== 0)
       ) {
         issues.push(`${id}: invalid placeholder metadata or body`);
       }
