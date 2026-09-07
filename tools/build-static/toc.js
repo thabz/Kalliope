@@ -9,7 +9,12 @@ import {
 import { collect_git_modified_dates } from './git.js';
 import { mapLimit } from './concurrency.js';
 import { createProgressReporter } from './progress.js';
-import { extractTitle, get_notes, get_pictures } from './parsing.js';
+import {
+  extractTitle,
+  get_notes,
+  get_pictures,
+  stripTitleNotes,
+} from './parsing.js';
 import { workName } from './formatting.js';
 import { sortWorks } from '../../common/worksort.js';
 import {
@@ -51,7 +56,7 @@ const build_section_toc = (section, workAuthorId = null) => {
       toc.push({
         type: 'text',
         id: textId,
-        title: htmlToXml(toctitle.title),
+        title: htmlToXml(stripTitleNotes(toctitle).title),
         prefix: replaceDashes(toctitle.prefix),
       });
     } else if (partName === 'section') {
@@ -68,7 +73,7 @@ const build_section_toc = (section, workAuthorId = null) => {
         type: 'section',
         id: sectionId,
         level: level,
-        title: htmlToXml(toctitle.title),
+        title: htmlToXml(stripTitleNotes(toctitle).title),
         prefix: replaceDashes(toctitle.prefix),
         content: subtoc,
       });
