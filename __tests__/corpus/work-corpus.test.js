@@ -1,4 +1,5 @@
 import { execFileSync } from 'child_process';
+import { existsSync, readFileSync } from 'fs';
 import {
   formatWorkXml,
   structuralTagsOutsideColumnZero,
@@ -18,6 +19,13 @@ import {
   getElementsByTagNames,
 } from '../../tools/build-static/xml.js';
 import { resolveAuthorId } from '../../tools/build-static/anthologies.js';
+
+const loadJsonLines = (filename) =>
+  readFileSync(filename, 'utf8')
+    .trim()
+    .split('\n')
+    .filter(Boolean)
+    .map((line) => JSON.parse(line));
 
 describe('tracked work corpus', () => {
   let filenames;
@@ -196,5 +204,84 @@ describe('tracked work corpus', () => {
     } catch (error) {
       throw new Error(error.stderr || error.message);
     }
+  });
+});
+
+describe('registered first-edition placeholders', () => {
+  const decisions = JSON.parse(
+    readFileSync(
+      'tools/data/indsamling/register/manual-decisions.json',
+      'utf8'
+    )
+  ).decisions.filter(
+    ({ decision, entity }) =>
+      decision === 'register-first-edition' && entity === 'work'
+  );
+  const registeredWorks = new Map(
+    loadJsonLines('tools/data/indsamling/register/vaerker.jsonl').map((work) => [
+      work.id,
+      work,
+    ])
+  );
+
+  it('keeps every selected publication as an empty, indexed work file', () => {
+    const issues = [];
+
+    decisions.forEach(({ id, kalliope }) => {
+      const poetId = kalliope?.poet_id;
+      const workId = kalliope?.work_id;
+      const filename = `fdirs/${poetId}/${workId}.xml`;
+      const work = registeredWorks.get(id);
+
+      if (
+        work?.status !== 'registered' ||
+        work?.kalliope?.poet_id !== poetId ||
+        work?.kalliope?.work_id !== workId
+      ) {
+        issues.push(`${id}: missing or inconsistent work-register link`);
+      }
+      if (!poetId || !workId || workId === 'andre' || !existsSync(filename)) {
+        issues.push(`${id}: invalid or missing placeholder path ${filename}`);
+        return;
+      }
+
+      const xml = readFileSync(filename, 'utf8');
+      const document = parseWorkXml(xml);
+      const root = document.documentElement;
+      const workhead = getElementByTagName(root, 'workhead');
+      const title = getElementByTagName(workhead, 'title');
+      const year = getElementByTagName(workhead, 'year');
+      const contents = getElementsByTagNames(root, [
+        'workbody',
+        'text',
+        'prose',
+        'subwork',
+      ]);
+
+      const isCompletedWork =
+        root.getAttribute('status') === 'complete' && contents.length > 0;
+      if (
+        root.getAttribute('id') !== workId ||
+        root.getAttribute('author') !== poetId ||
+        (root.getAttribute('status') !== 'incomplete' && !isCompletedWork) ||
+        root.getAttribute('type') !== 'poetry' ||
+        !title?.textContent.trim() ||
+        !year?.textContent.trim() ||
+        (!isCompletedWork && contents.length !== 0)
+      ) {
+        issues.push(`${id}: invalid placeholder metadata or body`);
+      }
+
+      const info = readFileSync(`fdirs/${poetId}/info.xml`, 'utf8');
+      const infoDocument = parseWorkXml(info);
+      const listedWorkIds = getElementsByTagNames(infoDocument, ['works'])
+        .flatMap((node) => node.textContent.split(','))
+        .map((workId) => workId.trim());
+      if (!listedWorkIds.includes(workId)) {
+        issues.push(`${id}: ${workId} is missing from ${poetId}/info.xml`);
+      }
+    });
+
+    expect(issues).toEqual([]);
   });
 });
