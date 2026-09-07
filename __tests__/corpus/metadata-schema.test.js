@@ -7,6 +7,16 @@ const infoXmlFiles = () =>
     .filter(filename => filename.length > 0);
 
 describe('info.xml RELAX NG schema', () => {
+  it('does not contain empty works elements', () => {
+    const emptyWorksElements = infoXmlFiles().filter(filename => {
+      const xml = fs.readFileSync(filename, 'utf8');
+
+      return /<works\s*\/>|<works>\s*<\/works>/.test(xml);
+    });
+
+    expect(emptyWorksElements).toEqual([]);
+  });
+
   it('requires literary periods for every poet', () => {
     const missingLiteraryPeriods = infoXmlFiles().filter(filename => {
       const xml = fs.readFileSync(filename, 'utf8');
