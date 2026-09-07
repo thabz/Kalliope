@@ -98,6 +98,16 @@ Et citat
     );
   });
 
+  it('keeps resetnum inline after a nonum line', () => {
+    const xml = '<poetry>\n<nonum><center>2.</center></nonum><resetnum/>\nVerslinje\n</poetry>\n';
+
+    expect(formatWorkXml(xml)).toContain(
+      '<poetry>\n' +
+        '<nonum><center>2.</center></nonum><resetnum/>\n' +
+        'Verslinje',
+    );
+  });
+
   it('puts nonum outside alignment and appearance markup', () => {
     const xml = '<poetry>\n<right><small><i><nonum>Signatur</nonum></i></small></right>\n</poetry>\n';
 

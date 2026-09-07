@@ -174,7 +174,7 @@ const normalizeLineWrappers = xml => xml.split(/\r?\n/).map(line => {
 const splitPoetryLines = xml =>
   normalizeLineWrappers(xml)
     .replace(/(<poetry(?:[ \t][^<>]*)?>)(?!\r?\n)/g, '$1\n')
-    .replace(/<\/nonum>(?!\r?\n)/g, '</nonum>\n');
+    .replace(/<\/nonum>(?!<resetnum\/>)(?!\r?\n)/g, '</nonum>\n');
 
 const indentMetadata = xml => {
   let metadataDepth = 0;
