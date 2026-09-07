@@ -140,6 +140,24 @@ describe('poetsByBirthDate', () => {
     expect(sorted).toEqual(['Blicher', 'Ørsted', 'Aarestrup']);
   });
 
+  it('uses baptism as the start date when birth is unknown', () => {
+    const data = [
+      {
+        name: { lastname: 'Late' },
+        period: { born: { date: '1900-01-01' } },
+      },
+      {
+        name: { lastname: 'Early' },
+        period: { baptized: { date: '1846-05-24' } },
+      },
+    ];
+
+    expect(data.sort(Sorting.poetsByBirthDate).map(x => x.name.lastname)).toEqual([
+      'Early',
+      'Late',
+    ]);
+  });
+
   it('falls back to lastname when period data is missing', () => {
     const data = [
       { name: { lastname: 'Ørsted' } },

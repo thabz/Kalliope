@@ -13,10 +13,9 @@ Sammenhold som minimum titel eller førstelinje, tekstens omfang, strofe- og
 linjestruktur samt karakteristiske formuleringer. Forfatter- og titelmatch alene
 er ikke bevis for, at den rette version er fundet.
 
-Hvis den præcise original ikke kan identificeres, bevares eller oprettes den
+Hvis originalværket ikke kan identificeres sikkert, bevares eller oprettes den
 eksisterende markering med `note/@unknown-original-by`, når originalforfatteren
-er kendt. Opret ikke en omtrentlig relation til en beslægtet, ældre eller mere
-tilgængelig version.
+er kendt. Opret ikke en omtrentlig relation til et beslægtet værk.
 
 ## Valg af tekstversion og kilde
 
@@ -26,12 +25,14 @@ Vælg i denne rækkefølge:
    har benyttet.
 2. Den nærmeste samtidige trykte udgave før oversættelsen, som indeholder samme
    tekstlige form.
-3. En troværdig videnskabelig eller institutionel digital udgave, men kun når en
-   dokumenteret søgning ikke har fundet en egnet trykt kilde.
+3. En troværdig nyere trykt, videnskabelig eller institutionel digital udgave,
+   når en dokumenteret søgning ikke har fundet et egnet historisk forlæg.
 
-Den ældste udgave har ingen automatisk forrang. En senere redaktionel eller
-moderniseret tekst må ikke bruges som erstatning, hvis den afviger fra den
-version, oversættelsen kan bygge på.
+Det historisk korrekte forlæg foretrækkes, men er ikke et adgangskrav: manglen
+på det må ikke blokere for indsættelsen af en original, som kan identificeres
+sikkert i en nyere udgave. Den ældste udgave har ingen automatisk forrang. En
+senere redaktionel eller moderniseret tekst må kun bruges, når forskellene ikke
+skaber tvivl om identifikationen; angiv da tydeligt, at kilden er nyere.
 
 Kontrollér bibliografiske oplysninger mod titelblad, kolofon,
 bibliotekskatalog eller en tilsvarende autoritativ kilde. Hvis valget kræver
@@ -49,7 +50,8 @@ komplet. Brug `$add-kalliope-work` til selve værkindsættelsen og desuden
 Forbind oversættelsen med den konkrete originaltekst gennem den gældende
 oversættelsesrelation, normalt en `<xref type="translation" poem="..."/>` i en
 note. Relationens mål skal være tekst-id'et for den valgte tekstforekomst, ikke
-blot forfatteren eller et vilkårligt tryk af samme digt.
+blot forfatteren. En nyere tekstforekomst kan bruges, når originalværket er
+sikkert identificeret, og et historisk korrekt forlæg ikke er tilgængeligt.
 
 Eksisterende relationer migreres ikke automatisk. Ret dem kun, når opgaven og
 kildegrundlaget giver belæg for en mere præcis relation.
@@ -102,7 +104,8 @@ eller historiske oplysninger som noter.
 Kontrollér før review og PR, at:
 
 - tekst og version er sikkert identificeret mod den valgte kilde;
-- den valgte trykte udgave følger prioriteringen ovenfor;
+- den valgte udgave følger prioriteringen ovenfor, og en nyere kilde er tydeligt
+  dokumenteret som nyere;
 - den fulde citation og sidetallene er kontrolleret;
 - `andre.xml` har kilden på hvert digt og ikke i `<workhead>`;
 - eksterne kildelinks alene bruger `source/@href`;

@@ -151,7 +151,7 @@ const buildPoetTimelineJson = async (poet, collected) => {
       return [];
     });
     items = items.concat([].concat(...workItems));
-    if (poet.period.born.date !== '?') {
+    if (poet.period.born != null && poet.period.born.date !== '?') {
       const place = (
         poet.period.born.place != null
           ? '  ' +
@@ -169,6 +169,26 @@ const buildPoetTimelineJson = async (poet, collected) => {
         content_lang: 'da',
         content_html: [
           [`${poet.name.lastname || poet.name.firstname} født${place}`],
+        ],
+      });
+    }
+    if (poet.period.baptized != null && poet.period.baptized.date !== '?') {
+      const place = (
+        poet.period.baptized.place != null
+          ? '  ' +
+            inonToString(poet.period.baptized.inon, 'da') +
+            ' ' +
+            poet.period.baptized.place
+          : ''
+      ).replace(/\.*$/, '.');
+      items.push({
+        date: poet.period.baptized.date,
+        normalized_date: normalizeTimelineDate(poet.period.baptized.date),
+        type: 'text',
+        is_history_item: false,
+        content_lang: 'da',
+        content_html: [
+          [`${poet.name.lastname || poet.name.firstname} døbt${place}`],
         ],
       });
     }
@@ -205,7 +225,7 @@ const buildPoetTimelineJson = async (poet, collected) => {
   if (items.length >= 2) {
     const startDate = items[0].normalized_date;
     let endDate = items[items.length - 1].normalized_date;
-    if (poet.period.dead.date !== '?') {
+    if (poet.period.dead != null && poet.period.dead.date !== '?') {
       endDate = normalizeTimelineDate(poet.period.dead.date);
     }
     let globalItems = collected.timeline

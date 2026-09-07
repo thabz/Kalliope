@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="saetherberg" country="se" lang="sv" type="poet">
+  <name>
+    <firstname>Carl Herman</firstname>
+    <lastname>Sätherberg</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1812-06-19</date>
+    </born>
+    <dead>
+      <date>1897-01-09</date>
+    </dead>
+  </period>
+  <literary-periods>se-romantik</literary-periods>
+  <identifiers>
+    <wikidata>Q1499968</wikidata>
+    <wikipedia-da>Herman Sätherberg</wikipedia-da>
+    <wikipedia-en>Herman Sätherberg</wikipedia-en>
+    <wikipedia-fr>Herman Sätherberg</wikipedia-fr>
+    <wikipedia-de>Herman Sätherberg</wikipedia-de>
+    <viaf>270366974</viaf>
+    <gnd>117599859</gnd>
+    <runeberg-org>hsather</runeberg-org>
+  </identifiers>
+</person>

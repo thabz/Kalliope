@@ -303,14 +303,23 @@ historiske id-formater fortsat kan bevares uændret.
 
 `<head>` paa en tekst kan indeholde:
 
-- `<title>`: tekstens titel. `force-index="true"` viser en ikke-primaer
-  variant i titelindekset.
-- `<firstline>`: foerstelinje. Maa ikke indeholde markup. `force-index="true"`
+- `<title>`: tekstens titel. Den del, der bruges i titelindekset efter et
+  eventuelt `<num>`, skal begynde med et Unicode-bogstav eller et tal, medmindre
+  en lovlig `<indextitle>` bruges i stedet. `force-index="true"` viser en
+  ikke-primaer variant i titelindekset.
+- `<firstline>`: foerstelinje. Maa ikke indeholde markup. En ikke-tom
+  førstelinje skal begynde med et Unicode-bogstav eller et tal; indledende
+  citationstegn og anden tegnsætning bevares kun i brødteksten. `force-index="true"`
   viser en ikke-primaer variant i foerstelinjeindekset.
 - `<indextitle>`: titel brugt i titelindekset, hvis den skal afvige.
   `force-index="true"` virker som paa `<title>`.
 - `<toctitle>`: titel i vaerkets indholdsfortegnelse.
-- `<linktitle>`: titel i links.
+- `<linktitle>`: titel i links. Den effektive linktitel må ikke have omgivende
+  blanktegn eller begynde med en guillemet (`«`, `»`, `‹` eller `›`), fordi
+  visningen selv indleder titlen med en guillemet. Guillemets må gerne afslutte
+  titlen. Andre citationstegn som `„…“`, `“…”` og `,,…''` er også tilladt,
+  ligesom intern tegnsætning og afsluttende spørgsmålstegn, udråbstegn og
+  apostroffer i ord.
 - `<subtitle>`: undertitel. Kan indeholde flere `<line>`.
 - `<suptitle>`: overtitel. Kan indeholde flere `<line>`.
 - `<nofirstline/>`: markerer bevidst manglende foerstelinje.
@@ -324,6 +333,58 @@ historiske id-formater fortsat kan bevares uændret.
   poetisk form.
 - `<structure>`: den observerede, reproducerbare strofe- og linjestruktur.
 - `<syllables>`: en eller flere automatiske analyser af digtets stavelsesmønster.
+
+### Kildebaseret titelstruktur
+
+Titelfelterne skal gengive kildens trykte overskrifter, ikke en redaktionelt
+forbedret eller katalogiseret titel. Kontrollér tekstens første kildeside og
+bevar hver trykt overskriftslinjes ordlyd, historiske stavning, bøjning,
+tegnsætning og indbyrdes rækkefølge.
+
+Brug felterne efter den trykte funktion og placering:
+
+- linjer over hovedtitlen skrives i `<suptitle>`
+- hovedtitlen skrives i `<title>`
+- linjer under hovedtitlen skrives i `<subtitle>`
+- flere trykte linjer i samme over- eller undertitel bevares som særskilte
+  `<line>`-elementer i den oprindelige rækkefølge
+
+Eksempelvis skal de tre trykte linjer i `baggesen2026090116`, »Begyndelse af
+Digtet Odin.«, »(I Hexametre).« og »Første Sang.«, ikke omskrives til en
+konstrueret titel som »Odin. Begyndelsen af første Sang i Hexametrer«. De kan
+repræsenteres sådan:
+
+```xml
+<title>Begyndelse af Digtet Odin.</title>
+<subtitle>
+  <line>(I Hexametre).</line>
+  <line>Første Sang.</line>
+</subtitle>
+```
+
+Et tilsvarende flerlinjet overtitelparti bruger `<suptitle>` med ét `<line>`
+pr. trykt linje. En overskrift, der indleder en intern del af teksten, hører
+derimod til i brødteksten med den relevante eksisterende overskriftsstruktur;
+den må ikke flyttes til tekstens metadata alene på grund af skriftstørrelse
+eller centrering.
+
+Sammenskriv, ombyt eller parafrasér aldrig kildeoverskrifter, og ændr ikke ord,
+præpositioner, bøjninger eller talformer for at gøre titlen tydeligere eller
+entydig i et indeks. `<toctitle>`, `<linktitle>` og `<indextitle>` kan bruges,
+når Kalliopes visning kræver en særskilt dokumenteret titelvariant, men de må
+ikke erstatte eller begrunde en omskrivning af de kildebaserede titelfelter.
+
+En overskrift, der typografisk er sat helt med versaler eller kapitæler,
+normaliseres til læsbar brug af store og små bogstaver; den typografiske
+fremhævelse må ikke transskriberes som fulde versaler. Skriv eksempelvis
+`FØRSTE SANG` som `Første Sang` og `TILEGNELSE` som `Tilegnelse`. Bevar derimod
+blandet brug af store og små bogstaver, når den er tekstligt betydningsfuld,
+herunder egennavne og egentlige initialord. Reglen gælder både titelfelter og
+interne overskrifter i brødteksten.
+
+Hvis hierarkiet ikke kan afgøres sikkert fra kilden, bevares de sikre
+oplysninger, og tvivlen markeres med en eksplicit `TODO:`-note i stedet for at
+blive løst med et gæt.
 
 ### Automatisk formklassifikation
 
@@ -442,12 +503,18 @@ Titel-fallbacks:
 - `linktitle` falder tilbage til `indextitle` og derefter `title`.
 - `toctitle` falder tilbage til `title`.
 
-Titelfelter er redaktionelle metadata og skrives uden afsluttende tegnsætning.
-Fjern derfor punktum, komma, kolon, semikolon, spørgsmålstegn og udråbstegn til
-sidst i `<title>`, `<indextitle>`, `<toctitle>`, `<linktitle>` og
-`<breadcrumbtitle>`, også når tegnet står i den trykte overskrift. Reglen gælder
-ikke `<subtitle>`, `<suptitle>` eller den diplomatiske transskription i
-tekstlegemet, hvor kildens tegnsætning bevares.
+Kontrollerne af indeks- og linktitler gælder de effektive værdier efter disse
+fallbacks. En blank specialtitel tilsidesætter derfor ikke en gyldig fallback.
+Tekster med `skip-index` er undtaget fra kontrollen af indekstitlen, men ikke
+fra kontrollen af linktitlen.
+
+Titelfelter er redaktionelle metadata og skrives normalt uden afsluttende
+tegnsætning. Fjern derfor punktum, komma, kolon, semikolon, spørgsmålstegn og
+udråbstegn til sidst i `<title>`, `<indextitle>`, `<toctitle>` og
+`<breadcrumbtitle>`, også når tegnet står i den trykte overskrift. I
+`<linktitle>` må spørgsmålstegn og udråbstegn bevares, når de er en meningsfuld
+del af linkteksten. Reglen gælder ikke `<subtitle>`, `<suptitle>` eller den
+diplomatiske transskription i tekstlegemet, hvor kildens tegnsætning bevares.
 
 ### Keywords
 
@@ -582,6 +649,12 @@ Et citat
 
 I `<poetry>` laves linjenummerering automatisk. Hver femte linje faar visningsnummer,
 medmindre teksten bruger egne `<num>` eller `<margin>`.
+
+Verslinjernes indrykning skal være relativ til tekstens venstrekant. Hvis alle
+egentlige verslinjer i en tekst har den samme positive grundindrykning, skal den
+fælles indrykning trækkes fra alle linjerne. Et mønster på eksempelvis `2, 4, 2`
+skrives derfor som `0, 2, 0`. Sideskift, noter, talerangivelser og andre
+ikke-verslinjer indgår ikke i denne vurdering.
 
 ### Sideskift i kilden
 

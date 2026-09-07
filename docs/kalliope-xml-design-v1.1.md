@@ -1903,6 +1903,11 @@ Semantisk validering i JavaScript skal derfor supplere Relax NG-valideringen.
 </person>
 ```
 
+Når fødselsdatoen ikke er dokumenteret, kan `<baptized>` med samme struktur
+bruges i stedet for `<born>`. Hvis både fødsel og dåb kendes, kan begge
+begivenheder angives. Se `docs/xml-info-format.md` for visnings- og
+sorteringsreglerne.
+
 ### Uidentificeret signatur
 
 ```xml

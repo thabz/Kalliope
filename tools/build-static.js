@@ -62,6 +62,7 @@ import { build_about_pages } from './build-static/about.js';
 import { build_portraits_json } from './build-static/portraits.js';
 import { build_todays_events_json } from './build-static/today.js';
 import {
+  effectiveTextTitles,
   extractDates,
   extractTitle,
   extractSubtitles,
@@ -328,9 +329,15 @@ const handle_text = async (
   const textDates = extractDates(head);
   validateTextDates(textDates, sourcePoetId, sourceWorkId, sourceTextId);
   const firstline = extractTitle(head, 'firstline');
-  let title = extractTitle(head, 'title') || firstline; // {title: xxx, prefix: xxx}
-  let indextitle = extractTitle(head, 'indextitle') || title;
-  let linktitle = extractTitle(head, 'linktitle') || indextitle || title;
+  const title = extractTitle(head, 'title') ?? firstline; // {title: xxx, prefix: xxx}
+  const effectiveTitles = effectiveTextTitles({
+    firstline,
+    title,
+    indextitle: extractTitle(head, 'indextitle'),
+    linktitle: extractTitle(head, 'linktitle'),
+  });
+  const indextitle = effectiveTitles.indexTitle;
+  const linktitle = effectiveTitles.linkTitle;
 
   const keywords = safeGetText(head, 'keywords');
 
@@ -1184,8 +1191,12 @@ const works_first_pass = (collected) => {
           );
         }
 
-        const linkTitle = linktitle || title || firstline;
-        const indexTitle = indextitle || title || firstline;
+        const { indexTitle, linkTitle } = effectiveTextTitles({
+          firstline,
+          title,
+          indextitle,
+          linktitle,
+        });
 
         if (linkTitle == null) {
           throw new Error(
@@ -1298,6 +1309,9 @@ const works_first_pass = (collected) => {
       (collected.workids.get(poetId) || []).length > 0 ||
       works.has(`${poetId}/${ANTHOLOGY_WORK_ID}`);
     poet.has_poems = poetTexts.some(text => text.hasPoetry);
+    poet.has_indexed_poems = poetTexts.some(
+      text => text.hasPoetry && text.skipIndex !== true
+    );
     poet.has_prose = poetTexts.some(text => text.hasProse);
     poet.has_texts = poet.has_poems || poet.has_prose;
     poet.has_anthology_texts = poetTexts.some(
