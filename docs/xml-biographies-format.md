@@ -32,6 +32,18 @@ biografikilde. Hvis DBL ikke har et relevant opslag eller ikke giver en
 tilstrækkelig biografisk fremstilling, bruges en artikel fra Salmonsens
 Konversationsleksikon som erstatning eller supplement.
 
+### Ophavsret og DBL-udgaver
+
+Biografitekst fra DBL må kun indsættes eller transskriberes fra 1. udgave
+(1887-1905) og 2. udgave (1932-44). Angiv altid udgave, bind og sidetal i
+`<source>`, og link så vidt muligt til det konkrete digitale facsimile.
+
+Tekst fra DBL's 3. udgave (1979-84) og senere opdateringer på Lex må ikke
+kopieres ind i Kalliope, da den for størstedelens vedkommende fortsat er
+ophavsretligt beskyttet. Disse opslag må kun bruges til at finde eller
+identitetskontrollere et opslag i 1. eller 2. udgave; Kalliopes biografitekst
+skal i så fald kontrolleres mod den ældre udgave og kildeangives til denne.
+
 For ikke-danske forfattere er Salmonsens Konversationsleksikon en foretrukken
 standardkilde, når der findes et sikkert identificeret personopslag. Følg i
 begge tilfælde den særskilte arbejdsgang i
