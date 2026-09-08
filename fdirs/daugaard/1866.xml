@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1866" author="daugaard" status="incomplete" type="poetry">
+<kalliopework id="1866" author="daugaard" status="complete" type="poetry">
 <workhead>
   <title>Aandelige Digte</title>
   <year>1866</year>
   <picture type="titlepage" src="1866-p1.jpg">Titelbladet lyder ,,Aandelige Digte / af / Christine Daugaard. // Kjøbenhavn. — Th. Lind. / 1866.''</picture>
-  <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122125470905763" facsimile="110408054079_color" facsimile-pages-num="87" facsimile-pages-offset="4">Christine Daugaard: <i>Aandelige Digte</i>, Th. Lind, Kjøbenhavn, 1866</source>
+  <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122125470905763" facsimile="110408054079_color" facsimile-pages-num="87" facsimile-pages-offset="5">Christine Daugaard: <i>Aandelige Digte</i>, Th. Lind, Kjøbenhavn, 1866</source>
   <pagebreaks/>
+  <proofreadings>
+    <proofreading model="gpt-5" datetime="2026-09-08T20:29:19+02:00"/>
+  </proofreadings>
 </workhead>
 <workbody>
 
@@ -14,7 +17,7 @@
   <title>Hvor ere de, som sørge? I det Stille —</title>
   <firstline>Hvor ere de, som sørge? I det Stille —</firstline>
   <source facsimile-pages="8"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -44,7 +47,7 @@ Til Sorgen under Korset vorder stille!
   <title><num>1.</num>Mens her min Jesus vandred i det Lave</title>
   <firstline>Mens her min Jesus vandred i det Lave</firstline>
   <source pages="5-6"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -98,7 +101,7 @@ Som Pintseglædens Ild i Hjertet tænder.
   <title><num>2.</num>Min Jesu Lovsang klinger</title>
   <firstline>Min Jesu Lovsang klinger</firstline>
   <source pages="7-9"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <quote>
@@ -183,7 +186,7 @@ Sæt paa min Lidelse din Lovsangs Stempel!
   <title><num>3.</num>Tak, Jesu! for dit Fodspors Straaler klare</title>
   <firstline>Tak, Jesu! for dit Fodspors Straaler klare</firstline>
   <source pages="10-12"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <quote>
@@ -268,7 +271,7 @@ At heelt for Verdens Glands de blive blinde!
   <title><num>4.</num>Gethsemane! dit smerterige Minde</title>
   <firstline>Gethsemane! dit smerterige Minde</firstline>
   <source pages="13-16"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <quote>
@@ -367,7 +370,7 @@ At paa dit Vink og Varsel vi staae rede!
   <title><num>5.</num>Hvis det er muligt, Fader! Jesus sukker</title>
   <firstline>Hvis det er muligt, Fader! Jesus sukker</firstline>
   <source pages="16-17"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -380,6 +383,7 @@ Men Faderen kun Himlens Dor oplukker,
 Og lod en Engel Kraft fra Himlen tage
 Til Jesus ned, som styrket, uden Klage,
 Staaer op og sig i Smertensdybet dukker.
+
 <pb n="17" facs="021.jpg"/>En Engel ned med Kraft til ham maa stige,
 Som selv er Kraftens Væld og Engles Skaber!
 Min Tanke her sig i Forundring taber.
@@ -396,7 +400,7 @@ Og finde ham som Kraftens Væld i Bønnen.
   <title><num>6.</num>I Jesu Fjender, Daarer, som I vare!</title>
   <firstline>I Jesu Fjender, Daarer, som I vare!</firstline>
   <source pages="17-18"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <quote>
@@ -416,6 +420,7 @@ Ifald han er tilsinds sig at forsvare,
 Dog han er kun tilsinds for os at bløde,
 Men at hans Byrd og Magt de skal fornemme,
 Han siger: Det er mig, og ned de bæve:
+
 <pb n="18" facs="022.jpg"/>En Guddomshøjhed toner i hans Stemme,
 Dem straaler Guddomsglorien imøde
 Og viser, at han Knæfald har at kræve.
@@ -428,7 +433,7 @@ Og viser, at han Knæfald har at kræve.
   <title><num>7.</num>Ja, det er dig, den rene</title>
   <firstline>Ja, det er dig, den rene</firstline>
   <source pages="18-21"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -473,6 +478,7 @@ Og Hellighedens Flammer
 Og Naadens Lys mig gjennem Hjertet brænde,
 Lad for din Fod mig falde
 Og dig ved Navn som Gud og Frelser kalde!
+
 <pb n="20" facs="024.jpg"/>Dig er det, som os skabte,
 Som kroned os med Ære,
 Beredte for os Livets Saligheder,
@@ -509,7 +515,7 @@ Dig Christus, Jesus!“ Klang i Klang det toner.
   <title><num>8.</num>Ja! du vil Kalken tomme</title>
   <firstline>Ja! du vil Kalken tomme</firstline>
   <source pages="21-23"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <quote>
@@ -529,6 +535,7 @@ Dig sendte fra din Fader,
 At lyne frem ved Sejrsbasunens Toner;
 Men du vil Kalken drikke,
 Thi Skrifterne fuldkommes ellers ikke.
+
 <pb n="22" facs="026.jpg"/>I Skrifter, forhen dunkle
 Men nu som Dagen klare,
 Der Jesu Kors og Sejr og Død afmale!
@@ -565,7 +572,7 @@ Din Død en Livsens Duft til Livet kalde!
   <title><num>9.</num>Engang endnu den Haand, hvis Saar helbreder</title>
   <firstline>Engang endnu den Haand, hvis Saar helbreder</firstline>
   <source pages="23-24"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <quote>
@@ -622,7 +629,7 @@ Da du vor Sygdom tog, for os har vundet.
   <title><num>10.</num>Du Lys for Sjælens Øje</title>
   <firstline>Du Lys for Sjælens Øje</firstline>
   <source pages="25-28"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <quote>
@@ -735,7 +742,7 @@ Min Sjæl med Gud, min Frelser, at ophøje.
   <title><num>11.</num>Skik dig til Ro, min Sjæl! din Frelser kommer</title>
   <firstline>Skik dig til Ro, min Sjæl! din Frelser kommer</firstline>
   <source pages="29"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -765,7 +772,7 @@ Og Evighedens Herlighed bereder!
   <title><num>12.</num>Hil være dig, o Troløshedens Ord!</title>
   <firstline>Hil være dig, o Troløshedens Ord!</firstline>
   <source pages="29-30"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <quote>
@@ -778,7 +785,7 @@ Hil være dig, sagt med et Kys, som dræber!
 I denne Hilsen Mørkets Mørke boer.
 
 Hil være dig, o du, paa hvem jeg troer!
-Hil være dig er Ordet, som jeg s:ræber
+Hil være dig er Ordet, som jeg stræber
 At stamme frem, skjønt svagt med sanddru Læber,
 Med ærlig Tro, skjønt ej min Tro er stor.
 
@@ -798,7 +805,7 @@ I denne Hilsen Himmerig er lagt.
   <title><num>13.</num>Du Frie af Evigheden</title>
   <firstline>Du Frie af Evigheden</firstline>
   <source pages="30-34"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <quote>
@@ -860,6 +867,7 @@ Paa Himmelflugt mig skynder
 For mig med dig i Frihed at forene:
 Mig Syndens Lænker trykte,
 Tag mig dem af og giv mig Friheds Smykke!
+
 <pb n="33" facs="037.jpg"/>Forløser og Forsoner!
 Løs op, løs op i Naade,
 Løs Lysters Baand og vend til dig min Længsel,
@@ -910,7 +918,7 @@ Hvem Kjærlighed har til vor Frelse bundet.
   <title><num>14.</num>Ja, det er gavnligt, at du doer for Folket!</title>
   <firstline>Ja, det er gavnligt, at du doer for Folket!</firstline>
   <source pages="34-37"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <quote>
@@ -944,6 +952,7 @@ Som Frelsens Gud dem fører
 Vil dem som Eet i Naadens Favntag favne:
 Ja, det var gavnligt, du fik Fred forhvervet,
 At ej det ganske Folk blev let fordærvet.
+
 <pb n="36" facs="040.jpg"/>Det var til Gavn, et Menneske var kaaret,
 En Slægtens Søn, dog mere stærk end Slægten,
 Som tager Byrden, Slægten ej kan bære.
@@ -993,7 +1002,7 @@ Vi din Forsonings Priis skal sjunge sammen.
   <title><num>15.</num>Du frit for Verden lærte</title>
   <firstline>Du frit for Verden lærte</firstline>
   <source pages="37-41"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <quote>
@@ -1027,6 +1036,7 @@ Og om din Lærdom spørge,
 At al min Brost dens Lys kan aabenbare;
 Jeg vil din Glands beskue
 I Lyset af din Lærdoms Sandhedslue.
+
 <pb n="39" facs="043.jpg"/>O Hellighedens Ynde,
 Som lyser mig imøde,
 Naar hvert dit Ord gaaer med min Synd irette!
@@ -1105,7 +1115,7 @@ Dig om din Lærdom spørger hver min Tanke!
   <title><num>16.</num>Ja, du er Christus, den Vidunderlige</title>
   <firstline>Ja, du er Christus, den Vidunderlige</firstline>
   <source pages="42-44"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <quote>
@@ -1190,7 +1200,7 @@ Hans Naade varer Jer at undflye Dommen.
   <title><num>17.</num>Taalmodig Jesus tier, dømt til Døde</title>
   <firstline>Taalmodig Jesus tier, dømt til Døde</firstline>
   <source pages="45"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <quote>
@@ -1223,7 +1233,7 @@ Og skyldige vort Liv i ham at leve.
   <title><num>18.</num>Hvad gjør du, Peder! at du nægter denne?</title>
   <firstline>Hvad gjør du, Peder! at du nægter denne?</firstline>
   <source pages="46"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <quote>
@@ -1256,7 +1266,7 @@ Fra Livets Herre sendt med Bod for Sorgen.
   <title><num>19.</num>Dit Blik, o Jesu! nu mit Øje fængsler</title>
   <firstline>Dit Blik, o Jesu! nu mit Øje fængsler</firstline>
   <source pages="46-48"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1287,6 +1297,7 @@ Han vorder fast i Naaden
 Og fast og tæt med Klippen sig forbinder,
 Indskrænkes som en Steen i Klippegrunden
 Og er i den som Kirkens Grundsteen funden.
+
 <pb n="48" facs="052.jpg"/>En liden Steen er jeg og ingen Klippe,
 En fattig Steen i Templets høje Sider,
 En ringe Steen som tusind andre Stene.
@@ -1309,7 +1320,7 @@ Med Kirkens Klippe deler jeg Naturen.
   <title><num>20.</num>O du, hvis Blik mig gjennem Verden leder!</title>
   <firstline>O du, hvis Blik mig gjennem Verden leder!</firstline>
   <source pages="48-49"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1351,7 +1362,7 @@ Til jeg som Peder seer dig i dit Rige!
   <title><num>21.</num>For hver en Gang, o Peder! af de trende</title>
   <firstline>For hver en Gang, o Peder! af de trende</firstline>
   <source pages="50"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1381,7 +1392,7 @@ Hvor tit sig end min Svaghed fra ham vender.
   <title><num>22.</num>Du Mørkets Barn! saa gik du hen i Natten</title>
   <firstline>Du Mørkets Barn! saa gik du hen i Natten</firstline>
   <source pages="50-52"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <quote>
@@ -1415,6 +1426,7 @@ Du vandrer som i Drømme
 Med torstig Sjæl og Mammons Kald kun ændser:
 Mens Glandsen af Guds Kjærlighed du skuer,
 Fortærer du dig selv i Gridskheds Luer.
+
 <pb n="52" facs="056.jpg"/>Der er en Tørst, som sig fra Kilden vender,
 Som ej ved Livets Vande sig vil kjøle
 Men vildt vil lædskes med sin egen Hede:
@@ -1437,7 +1449,7 @@ Som let sin Død i Luen havde funden!
   <title><num>23.</num>Saa har du ham vurderet</title>
   <firstline>Saa har du ham vurderet</firstline>
   <source pages="52-55"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <quote>
@@ -1519,7 +1531,7 @@ I Troens Lys og Kjærlighedens Lue!
   <title><num>24.</num>Med Reenhed vil de Paaskemaaltid æde</title>
   <firstline>Med Reenhed vil de Paaskemaaltid æde</firstline>
   <source pages="55-56"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <quote>
@@ -1530,13 +1542,16 @@ Med Reenhed vil de Paaskemaaltid æde,
 Tør ej i Hedninghuset sætte Fod,
 Tør ej besmittes, ej udøse Blod,
 Mens til Sabbathens Skjønhed de sig glæde.
+
 <pb n="56" facs="060.jpg"/>De i en Hednings Bryst tør tage Sæde
 Med Villien dog; hans Svaghed de forstod:
 At sig ved ham det Blod udøse lod,
 De tørsted efter, skulde Jorden væde.
+
 Med Syndens Aand de Lovens Bogstav fylde,
 At efter Aanden de sig selv kan lyde
 Men efter Formen Gud og Loven hylde.
+
 Forgjæves dog de Lovens Bogstav tyde:
 I Aand og Sandhed har dem Loven fundet
 Og længst er Israels Sabbathstid udrundet.
@@ -1549,7 +1564,7 @@ Og længst er Israels Sabbathstid udrundet.
   <title><num>25.</num>Nej, ej af denne Verden er dit Rige</title>
   <firstline>Nej, ej af denne Verden er dit Rige</firstline>
   <source pages="56-57"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <quote>
@@ -1560,10 +1575,12 @@ Nej, ej af denne Verden er dit Rige,
 Det viser sig ved første Øjekast:
 Forladt og dømt, du staaer i Baand og Bast,
 Og Ingen førte dine Forsvarskrige.
+
 Nu Lov og Tak vil jeg dig evig sige!
 Saa veed jeg dog et Rige, som staaer fast,
 Om end al Verdens Lykkebobler brast,
 Som aldrig under Foden bort vil vige.
+
 <pb n="57" facs="061.jpg"/>Var det af Verden, vee os! vi, som flygte
 Fra Verdens Riger did med Harm og Smerte
 At finde der et Fristed for vort Hjerte.
@@ -1580,7 +1597,7 @@ Er hævet over Verdens Gang og Døden.
   <title><num>26.</num>Det Rige, du har skabt, er Sandheds Rige</title>
   <firstline>Det Rige, du har skabt, er Sandheds Rige</firstline>
   <source pages="57-58"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <quote>
@@ -1596,6 +1613,7 @@ De høre gjerne, hvad du har at sige,
 Thi kun i dig kan deres Længsel bunde,
 Naar efter Sandhed de mod Lyset stunde
 Og efter Sandhed ned i Hjertet stige.
+
 <pb n="58" facs="062.jpg"/>Naar du har talt, de kjende dig paa Røsten:
 Den har en Klang af Sandhed og af Naade,
 Som saligt løser deres Længsels Gaade.
@@ -1612,7 +1630,7 @@ For Borgerskab hos dig de Alting sælge.
   <title><num>27.</num>Os, skjønt et syndigt Folk, du ej forsmaaede</title>
   <firstline>Os, skjønt et syndigt Folk, du ej forsmaaede</firstline>
   <source pages="58-59"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1629,6 +1647,7 @@ Som os at skjænke du saa stærkt attraaede.
 Ved Støvet end vor Sands og Attraa hæfter,
 Af Angreb ej den gamle Fjende trættes,
 Skjønt vi for dig alene Knæ vil bøje.
+
 <pb n="59" facs="063.jpg"/>Drag os til dig med alle Naadens Kræfter,
 At med vor Salighed din Sjæl kan mættes,
 Naar du seer Frugter hos os af din Møje!
@@ -1641,7 +1660,7 @@ Naar du seer Frugter hos os af din Møje!
   <title><num>28.</num>Mens af en jordisk Dommer du forhøres</title>
   <firstline>Mens af en jordisk Dommer du forhøres</firstline>
   <source pages="59"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1671,7 +1690,7 @@ Hvem Mørket er det velbekjendte Gamle.
   <title><num>29.</num>Tegn vil Herodes. Jesus Intet svarer</title>
   <firstline>Tegn vil Herodes. Jesus Intet svarer</firstline>
   <source pages="60"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <quote>
@@ -1704,7 +1723,7 @@ Som Sejrens Tegn med Kraft mig gjennemluer.
   <title><num>30.</num>I Drømme lød for ham den Romerinde</title>
   <firstline>I Drømme lød for ham den Romerinde</firstline>
   <source pages="61"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <quote>
@@ -1737,7 +1756,7 @@ Som kommer ej i Evighed tilkort.
   <title><num>31.</num>Bort med ham! bort med denne! Bort med hvem?</title>
   <firstline>Bort med ham! bort med denne! Bort med hvem?</firstline>
   <source pages="62"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <quote>
@@ -1770,7 +1789,7 @@ Og den ifølge han er aldrig borte.
   <title><num>32.</num>Om denne Slægt hvad maatte Jesus tænke</title>
   <firstline>Om denne Slægt hvad maatte Jesus tænke</firstline>
   <source pages="63"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <quote>
@@ -1803,7 +1822,7 @@ Hvis denne Slægt til Lyset skulde føres.
   <title><num>33.</num>De knæled ned og tilbad for din Fod</title>
   <firstline>De knæled ned og tilbad for din Fod</firstline>
   <source pages="64"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <quote>
@@ -1836,7 +1855,7 @@ At ved din Fod en evig Plads jeg faaer!
   <title><num>34.</num>See hvilket Menneske, hvem Gud lod slaae!</title>
   <firstline>See hvilket Menneske, hvem Gud lod slaae!</firstline>
   <source pages="65"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <quote>
@@ -1869,7 +1888,7 @@ I dine Smerter evigt vederqvæges.
   <title><num>35.</num>Hvorfra han er? Ak, fra dit Fædreland</title>
   <firstline>Hvorfra han er? Ak, fra dit Fædreland</firstline>
   <source pages="66"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <quote>
@@ -1902,7 +1921,7 @@ Og i sin Hjemgang med os vilde drage.
   <title><num>36.</num>I Jesu Blod uskyldig! arme Mand!</title>
   <firstline>I Jesu Blod uskyldig! arme Mand!</firstline>
   <source pages="67"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <quote>
@@ -1935,7 +1954,7 @@ Gav han dig Magt at lade sig korsfæste.
   <title><num>37.</num>Til Golgatha gaaer Vejen nu, mit Hjerte!</title>
   <firstline>Til Golgatha gaaer Vejen nu, mit Hjerte!</firstline>
   <source pages="68-69"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <quote>
@@ -1992,7 +2011,7 @@ Med Frydetjenesten for Thronen bytter.
   <title><num>38.</num>Din Herlighed, o Jesu! jeg beskuer</title>
   <firstline>Din Herlighed, o Jesu! jeg beskuer</firstline>
   <source pages="70-71"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <quote>
@@ -2012,6 +2031,7 @@ Som der i sine Synder
 Beruset ligger Hævnens Kalk at tømme:
 Dit Stjerneblik endnu paa Staden lyser,
 Men over Jakob Jakobs Stjerne gyser.
+
 Ej Graad for sig den Davids Søn begjerer:
 I Troskab Smertens Vej han jo betræder,
 Og snart han „Fuldbragt“ om sit Værk skal sige;
@@ -2048,7 +2068,7 @@ Men grædt for sig og grædt for Zions Brøde.
   <title><num>39.</num>Nu vinke mig de hellige syv Stjerner</title>
   <firstline>Nu vinke mig de hellige syv Stjerner</firstline>
   <source pages="72-77"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2125,6 +2145,7 @@ Som han i Troskab bærer til det Sidste!
 Nej! Gud, som Hyrdeværket har for Øje,
 Velsigner just i denne Stund hans Møje,
 At Ingen af hans Hjord sin Gud skal miste.
+
 <pb n="75" facs="079.jpg"/>Han tørsted, og fra Himlens Kilder sendte
 Hans Tørst ham ned, hvor Ørkens Sand ham brændte,
 Og Tørstens Ildsvælg sig for ham oplukte,
