@@ -63,11 +63,14 @@ import { build_portraits_json } from './build-static/portraits.js';
 import { build_todays_events_json } from './build-static/today.js';
 import {
   effectiveTextTitles,
+  countHeadingFootnotes,
   extractDates,
   extractTitle,
   extractSubtitles,
   get_notes,
   get_pictures,
+  stripTitleNotes,
+  titleText,
 } from './build-static/parsing.js';
 import {
   build_person_or_keyword_refs,
@@ -343,6 +346,7 @@ const handle_text = async (
 
   let subtitles = extractSubtitles(head, 'subtitle', collected);
   let suptitles = extractSubtitles(head, 'suptitle', collected);
+  const headingFootnoteCount = countHeadingFootnotes(head);
 
   let keywordsArray = [];
   if (keywords) {
@@ -559,8 +563,8 @@ const handle_text = async (
     );
   }
   let blocks = null;
-  let has_footnotes = false;
-  let footnotes_count = 0;
+  let has_footnotes = headingFootnoteCount > 0;
+  let footnotes_count = headingFootnoteCount;
   let toc = null;
   if (textType === 'section') {
     // A linkable section with id
@@ -578,7 +582,8 @@ const handle_text = async (
         const rawBlock = safeGetInnerXML(block);
         footnotes_count += (rawBlock.match(/<footnote\b|<note\b/g) || [])
           .length;
-        has_footnotes |=
+        has_footnotes =
+          has_footnotes === true ||
           rawBlock.indexOf('<footnote') !== -1 ||
           rawBlock.indexOf('<note') !== -1;
         const fontSize = safeGetAttr(block, 'font-size');
@@ -605,9 +610,12 @@ const handle_text = async (
     section_titles,
     text: {
       id: textId,
-      title: replaceDashes(title.title),
+      title: replaceDashes(titleText(title)),
+      ...(title.title.indexOf('<') > -1 ?
+        { title_html: htmlToXml(title.title, collected, true) }
+      : {}),
       title_prefix: title.prefix,
-      linktitle: replaceDashes(linktitle.title),
+      linktitle: replaceDashes(titleText(linktitle)),
       subtitles,
       suptitles,
       text_type: textType,
@@ -699,7 +707,7 @@ const handle_work = async (work) => {
           if (firstline != null && firstline.title.trim().length === 0) {
             throw `${textId} har blank førstelinje i ${poetId}/${workId}.xml`;
           }
-          if (indextitle.title.indexOf('>') > -1) {
+          if (stripTitleNotes(indextitle).title.indexOf('>') > -1) {
             throw `${textId} har markup i titlen i ${poetId}/${workId}.xml`;
           }
           if (toctitle == null) {
@@ -711,15 +719,14 @@ const handle_work = async (work) => {
               id: textId,
               work_id: workId,
               lang: collected.poets.get(poetId).lang,
-              title: replaceDashes(indextitle.title),
-              firstline:
-                firstline == null ? null : replaceDashes(firstline.title),
+              title: replaceDashes(titleText(indextitle)),
+              firstline: replaceDashes(titleText(firstline)),
             });
           }
           toc.push({
             type: 'text',
             id: renderedTextId,
-            title: htmlToXml(toctitle.title),
+            title: htmlToXml(stripTitleNotes(toctitle).title),
             prefix: replaceDashes(toctitle.prefix),
           });
           if (anthologyText) {
@@ -792,7 +799,7 @@ const handle_work = async (work) => {
           }
           const linktitle =
             extractTitle(head, 'linktitle') || title || toctitle;
-          const breadcrumb = { title: linktitle.title, id: sectionId };
+          const breadcrumb = { title: titleText(linktitle), id: sectionId };
           const subtoc = await handle_section(
             getChildByTagName(part, 'content'),
             resolve_prev_next,
@@ -802,7 +809,7 @@ const handle_work = async (work) => {
             type: 'section',
             id: sectionId,
             level: level,
-            title: htmlToXml(toctitle.title),
+            title: htmlToXml(stripTitleNotes(toctitle).title),
             content: subtoc,
           });
           if (sectionId != null) {
@@ -826,7 +833,7 @@ const handle_work = async (work) => {
           toc.push({
             type: 'text',
             id: textId,
-            title: htmlToXml(toctitle.title),
+            title: htmlToXml(stripTitleNotes(toctitle).title),
             prefix: toctitle.prefix,
           });
           await handle_text(
@@ -873,7 +880,7 @@ const handle_work = async (work) => {
             publicationTextId(sourceTextId)
           : sourceTextId;
         const head = getChildByTagName(part, 'head');
-        const title = safeGetText(head, 'title');
+        const title = titleText(extractTitle(head, 'title'));
         return { id: textId, title: title };
       });
     return (textId) => {
@@ -1207,12 +1214,12 @@ const works_first_pass = (collected) => {
         }
         const baseText = {
           id: textId,
-          title: replaceDashes(linkTitle.title),
-          firstline: replaceDashes(firstline == null ? null : firstline.title),
-          indexTitle: replaceDashes(indexTitle.title),
-          linkTitle: replaceDashes(linkTitle.title),
+          title: replaceDashes(titleText(linkTitle)),
+          firstline: replaceDashes(titleText(firstline)),
+          indexTitle: replaceDashes(titleText(indexTitle)),
+          linkTitle: replaceDashes(titleText(linkTitle)),
           tocTitle: replaceDashes(
-            (extractTitle(head, 'toctitle') || linkTitle).title
+            stripTitleNotes(extractTitle(head, 'toctitle') || linkTitle).title
           ),
           tocPrefix: replaceDashes(
             (extractTitle(head, 'toctitle') || linkTitle).prefix

@@ -238,7 +238,7 @@ const TextHeading = ({ text }) => {
       <Stack spacing="15px">
         <WrapNonEmpty>{suptitles}</WrapNonEmpty>
         <h2>
-          <TextName text={text} />
+          <TextName text={text} renderMarkup />
         </h2>
         <WrapNonEmpty>{subtitles}</WrapNonEmpty>
       </Stack>

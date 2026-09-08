@@ -334,6 +334,18 @@ historiske id-formater fortsat kan bevares uændret.
 - `<structure>`: den observerede, reproducerbare strofe- og linjestruktur.
 - `<syllables>`: en eller flere automatiske analyser af digtets stavelsesmønster.
 
+`<title>` og `<subtitle>` samt de enkelte `<line>`-elementer i en undertitel
+kan indeholde `<footnote>`. Fodnoten vises og nummereres sammen med digtet, men
+udelades fra linktitler, indeks og indholdsfortegnelser:
+
+```xml
+<title>Gravsang<footnote>Af Sørge-Cantaten.</footnote></title>
+<subtitle>
+  <line>Første undertitellinje</line>
+  <line>Anden linje<footnote>Kildens note.</footnote></line>
+</subtitle>
+```
+
 ### Kildebaseret titelstruktur
 
 Titelfelterne skal gengive kildens trykte overskrifter, ikke en redaktionelt

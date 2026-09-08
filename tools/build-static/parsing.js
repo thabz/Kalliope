@@ -1,3 +1,4 @@
+import { DOMParser } from '@xmldom/xmldom';
 import { htmlToXml } from '../libs/helpers.js';
 import { build_museum_url } from './museums.js';
 import {
@@ -5,6 +6,7 @@ import {
   getChildrenByTagName,
   getElementByTagName,
   getElementsByTagName,
+  getElementsByTagNames,
   safeGetText,
   safeGetAttr,
   safeGetInnerXML,
@@ -167,6 +169,41 @@ const extractTitle = (head, type) => {
   }
 };
 
+const stripTitleNotes = title => {
+  if (title == null) {
+    return null;
+  }
+  const document = new DOMParser().parseFromString(
+    `<content>${title.title}</content>`,
+    'text/xml'
+  );
+  for (const note of getElementsByTagNames(document, ['footnote', 'note'])) {
+    note.parentNode.removeChild(note);
+  }
+  return {
+    ...title,
+    title: safeGetInnerXML(document.documentElement),
+  };
+};
+
+const titleText = title => {
+  const titleWithoutNotes = stripTitleNotes(title);
+  if (titleWithoutNotes == null) {
+    return null;
+  }
+  const document = new DOMParser().parseFromString(
+    `<content>${titleWithoutNotes.title}</content>`,
+    'text/xml'
+  );
+  return safeGetText(document.documentElement);
+};
+
+const countHeadingFootnotes = head =>
+  ['title', 'subtitle'].reduce((count, tag) => {
+    const heading = getChildByTagName(head, tag);
+    return count + getElementsByTagName(heading, 'footnote').length;
+  }, 0);
+
 const effectiveTextTitles = ({ firstline, title, indextitle, linktitle }) => ({
   indexTitle: indextitle ?? title ?? firstline,
   linkTitle: linktitle ?? indextitle ?? title ?? firstline,
@@ -177,10 +214,10 @@ const extractSubtitles = (head, tag = 'subtitle', collected) => {
   const subtitle = getElementByTagName(head, tag);
   if (subtitle && getElementsByTagName(subtitle, 'line').length > 0) {
     subtitles = getElementsByTagName(subtitle, 'line').map(s => {
-      return htmlToXml(safeGetText(s), collected, true);
+      return htmlToXml(safeGetInnerXML(s), collected, true);
     });
   } else if (subtitle) {
-    const subtitleString = safeGetText(subtitle);
+    const subtitleString = safeGetInnerXML(subtitle);
     subtitles = [htmlToXml(subtitleString, collected, true)];
   }
   return subtitles;
@@ -307,6 +344,9 @@ const extractDates = head => {
 
 export {
   extractTitle,
+  stripTitleNotes,
+  titleText,
+  countHeadingFootnotes,
   effectiveTextTitles,
   extractSubtitles,
   extractDates,

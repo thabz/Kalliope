@@ -1,7 +1,11 @@
 import { DOMParser } from '@xmldom/xmldom';
 import {
+  countHeadingFootnotes,
   effectiveTextTitles,
+  extractSubtitles,
   extractTitle,
+  stripTitleNotes,
+  titleText,
 } from '../tools/build-static/parsing.js';
 
 describe('titeludtrækning', () => {
@@ -40,5 +44,35 @@ describe('titeludtrækning', () => {
         linktitle,
       }).linkTitle
     ).toBe(linktitle);
+  });
+
+  it('bevarer titlens fodnote til digtvisningen, men kan strippe den', () => {
+    const doc = new DOMParser().parseFromString(
+      '<head><title><w>Gravsang</w><footnote>Kildens note.</footnote></title></head>',
+      'text/xml'
+    );
+    const title = extractTitle(doc.documentElement, 'title');
+
+    expect(title.title).toBe(
+      '<w>Gravsang</w><footnote>Kildens note.</footnote>'
+    );
+    expect(stripTitleNotes(title).title).toBe('<w>Gravsang</w>');
+    expect(titleText(title)).toBe('Gravsang');
+  });
+
+  it('bevarer fodnoter i undertitler og deres linjer', () => {
+    const doc = new DOMParser().parseFromString(
+      '<head><title>Titel<footnote>Titelnote.</footnote></title>' +
+        '<subtitle><line>Første<footnote>Linjenote.</footnote></line>' +
+        '<line>Anden</line></subtitle></head>',
+      'text/xml'
+    );
+
+    const subtitles = extractSubtitles(doc.documentElement, 'subtitle', {});
+    expect(subtitles).toHaveLength(2);
+    expect(subtitles[0][0][0]).toContain(
+      'Første<footnote>Linjenote.</footnote>'
+    );
+    expect(countHeadingFootnotes(doc.documentElement)).toBe(2);
   });
 });

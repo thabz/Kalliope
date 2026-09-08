@@ -16,6 +16,11 @@ import { mapLimit } from './concurrency.js';
 import { textsForWork, worksForPoet } from './anthologies.js';
 import { sourceWorkFilename } from './work-cache.js';
 
+const headingText = html =>
+  html
+    .replace(/<(footnote|note)(\s+[^>]*)?>[\s\S]*?<\/\1>/g, '')
+    .replace(/<[^>]+>/g, '');
+
 const elasticsearchConcurrency = Math.max(
   1,
   parseInt(process.env.KALLIOPE_ELASTICSEARCH_CONCURRENCY, 10) || 1
@@ -145,22 +150,23 @@ const buildElasticsearchTextEntryDocuments = (collected, entry) => {
     }
     const head = getChildByTagName(text, 'head');
     const body = getChildByTagName(text, 'body');
-    const title = (
+    const titleXml = (
       safeGetInnerXML(getChildByTagName(head, 'linktitle')) ||
       safeGetInnerXML(getChildByTagName(head, 'title')) ||
       safeGetInnerXML(getChildByTagName(head, 'firstline'))
     ).replace(/<num>.*<\/num>/, '');
+    const title = headingText(titleXml);
     const keywords = safeGetText(head, 'keywords');
     let subtitles = null;
     const subtitle = getChildByTagName(head, 'subtitle');
     if (subtitle && getChildrenByTagName(subtitle, 'line').length > 0) {
       subtitles = getChildrenByTagName(subtitle, 'line').map(s =>
-        replaceDashes(safeGetInnerXML(s))
+        replaceDashes(headingText(safeGetInnerXML(s)))
       );
     } else if (subtitle) {
       const subtitleString = safeGetInnerXML(subtitle);
       if (subtitleString.indexOf('<subtitle/>') === -1) {
-        subtitles = [replaceDashes(subtitleString)];
+        subtitles = [replaceDashes(headingText(subtitleString))];
       }
     }
     let keywordsArray = null;
