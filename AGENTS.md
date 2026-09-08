@@ -8,6 +8,8 @@ Disse regler gælder for AI-agenter og automatiserede assistenter, der arbejder 
   eller opdatering af issues og PRs.
 - Læs derefter den specialdokumentation, som stilguiden henviser til for det
   relevante område.
+- Ved oprettelse af et nyt digt skal tekst-id'et bestå af forfatter-id, dags dato
+  i formen `YYYYMMDD` og et tocifret løbenummer, fx `merrill2026080101`.
 
 ## Repository-skills
 
