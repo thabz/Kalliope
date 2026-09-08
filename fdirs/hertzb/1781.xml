@@ -4,11 +4,11 @@
 <workhead>
   <title>Davids Psalmer i en fri Oversættelse</title>
   <year>1781-1785</year>
+  <pagebreaks/>
   <pictures>
-    <picture type="titlepage" src="1781-p1.jpg" primary="true">Titelbladet til første bog, første hæfte af Birgitte Catharine Boyes <i>Davids Psalmer i en fri Oversættelse</i> (1781).</picture>
+    <picture type="titlepage" src="1781-p1.jpg">Titelbladet til første bog, første hæfte af Birgitte Catharine Boyes <i>Davids Psalmer i en fri Oversættelse</i> (1781).</picture>
     <picture type="titlepage" src="1781-p3.jpg">Titelbladet til anden og tredie bog, andet hæfte af Birgitte Catharine Boyes <i>Davids Psalmer i en fri Oversættelse</i> (1785).</picture>
   </pictures>
-  <pagebreaks/>
   <notes>
     <note>Den ikke-litterære Fortegnelse paa Subskribenterne i første bind er ikke medtaget som tekst.</note>
   </notes>
@@ -41,14 +41,14 @@
   </subtitle>
   <firstline>Naadige Herre!</firstline>
   <dates><written>1781-12-19</written></dates>
-  <source in="bd1" facsimile-pages="10-13"/>
+  <source in="bd1" pages="10-13" facsimile-pages="10-13"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <prose>
-<pb n="[11]" facs="010.jpg"/><pb n="[12]" facs="011.jpg"/>Naadige Herre!
+<pb n="11" facs="010.jpg"/><pb n="12" facs="011.jpg"/>Naadige Herre!
 
-Det var Deres Excellence, som drog mig frem for Lyset, og banede mig Adgang til den beste Prindses besynderlige Naade; det var Dem, som først fandt Behag i mine Sange, og giorde dem til festlige Sange for den danske Kirke; og det er Dem, som vinker mig frem til høie Toner, til den Kongelige Prophets guddommelige Sang; maatte den ei vanhelliges paa mine Læber, maatte den finde Deres Excellences vigtige Bifald; saa skulde den blive lige yndet af alle andre ædle og dybtænkende Mænd, og da var mit <pb n="[13]" facs="012.jpg"/>Arbeide belønnet! Med dette Ønske, og under denne Bestræbelse tilegner jeg Deres Excellence det første Hæfte af Davids Psalmer, og (om det er Guds Villie) de andre tvende Hæfter; men maaskee min svage og daglig aftagende Helbred kan afbryde min Sang; maaskee jeg snart kan slutte den med Youngs Beslutnings-Ord:
+Det var Deres Excellence, som drog mig frem for Lyset, og banede mig Adgang til den beste Prindses besynderlige Naade; det var Dem, som først fandt Behag i mine Sange, og giorde dem til festlige Sange for den danske Kirke; og det er Dem, som vinker mig frem til høie Toner, til den Kongelige Prophets guddommelige Sang; maatte den ei vanhelliges paa mine Læber, maatte den finde Deres Excellences vigtige Bifald; saa skulde den blive lige yndet af alle andre ædle og dybtænkende Mænd, og da var mit <pb n="13" facs="012.jpg"/>Arbeide belønnet! Med dette Ønske, og under denne Bestræbelse tilegner jeg Deres Excellence det første Hæfte af Davids Psalmer, og (om det er Guds Villie) de andre tvende Hæfter; men maaskee min svage og daglig aftagende Helbred kan afbryde min Sang; maaskee jeg snart kan slutte den med Youngs Beslutnings-Ord:
 </prose>
 <quote lang="en">
 „Jeg synger ikke meer, nei! aldrig
@@ -70,13 +70,12 @@ Skee da Guds Villie! Mig er det en Glæde: at i denne forventede ærefulde Udød
 <text id="hertzb2026090802">
 <head>
   <title>Forerindring</title>
-  <firstline>Ved nærværende fri Oversættelse af Davids Psalmer har jeg vel fornemmelig fulgt Göttingens lærde Michaelis, men og benyttet mig af andre berømmelige Forfattere i det tydske, franske og engelske Sprog — jeg har søgt at beholde tillige med Davids Mening Davids Ord og de orientalske Lignelser, hvor de beqvemt kunde udtrykkes; men hvilke der maatte lyde for haardt i det danske Sprog, har jeg givet med andre Ord. — De, som kunde udføre dette Arbeide bedre end jeg, vilde vist bære over med dets Ufuldkommenheder</firstline>
-  <source in="bd1" facsimile-pages="14-15"/>
+  <source in="bd1" pages="14-15" facsimile-pages="14-15"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <prose>
-Ved nærværende fri Oversættelse af Davids Psalmer har jeg vel fornemmelig fulgt Göttingens lærde Michaelis, men og benyttet mig af andre berømmelige Forfattere i det tydske, franske og engelske Sprog — jeg har søgt at beholde tillige med Davids Mening Davids Ord og de orientalske Lignelser, hvor de beqvemt kunde udtrykkes; men hvilke der maatte lyde for haardt i det danske Sprog, har jeg givet med andre Ord. — De, som kunde udføre dette Arbeide bedre end jeg, vilde vist bære over med dets Ufuldkommenheder; <pb n="[15]" facs="014.jpg"/>thi De vide, hvor tungt og vanskeligt det endog vilde være for Dem selv, at udføre Davids Psalmer i danske Vers efter visse Melodier; imidlertid har jeg arbeidet med den Flid, som jeg skylder mine Læsere, Dem især, som ved deres Tillid til mig har opmuntret min Lyst til Arbeidet, og befordret det til Trykken; maatte De nu see Deres Forventning nogenlunde opfyldt, saa er jeg belønnet!
+Ved nærværende fri Oversættelse af Davids Psalmer har jeg vel fornemmelig fulgt Göttingens lærde Michaelis, men og benyttet mig af andre berømmelige Forfattere i det tydske, franske og engelske Sprog — jeg har søgt at beholde tillige med Davids Mening Davids Ord og de orientalske Lignelser, hvor de beqvemt kunde udtrykkes; men hvilke der maatte lyde for haardt i det danske Sprog, har jeg givet med andre Ord. — De, som kunde udføre dette Arbeide bedre end jeg, vilde vist bære over med dets Ufuldkommenheder; <pb n="15" facs="014.jpg"/>thi De vide, hvor tungt og vanskeligt det endog vilde være for Dem selv, at udføre Davids Psalmer i danske Vers efter visse Melodier; imidlertid har jeg arbeidet med den Flid, som jeg skylder mine Læsere, Dem især, som ved deres Tillid til mig har opmuntret min Lyst til Arbeidet, og befordret det til Trykken; maatte De nu see Deres Forventning nogenlunde opfyldt, saa er jeg belønnet!
 
 <right>Forfatterinden.</right>
 </prose>
@@ -1744,8 +1743,7 @@ Som jo kan Himmelens Lærdom forstaae,
 Ingen, til Jordklodens yderste Ende,
 Der, hvor Gud Teltet for Solen udspendte.
 
-<pb n="52" facs="074.jpg"/>
-<nonum><center>4.</center></nonum>
+<pb n="52" facs="074.jpg"/><nonum><center>4.</center></nonum>
 Solen, der, svøbt i sit Purpur, fremtræder,
 Mild, som en Brudgom, fra Brudkamret gaaer,
 Munter, som Helten, naar Striden ham glæder,
@@ -1777,8 +1775,7 @@ O den er meer uskatterlig end Guld!
 Meer end det fineste, Guldgruben yder,
 Søder’ end Honning, som Drue-klar flyder —
 
-<pb n="53" facs="075.jpg"/>
-<nonum><center>8.</center></nonum>
+<pb n="53" facs="075.jpg"/><nonum><center>8.</center></nonum>
 Det er ved dine retfærdige Domme
 At jeg afholdes fra vitterlig Last,
 Alle, som agte derpaa, skal bekomme
@@ -1838,8 +1835,7 @@ Nu veed jeg vist, at Gud sin Salvede bevarer,
 Han fra sin Helligdom, fra Zions Bierg ham svarer —
 Ja ved sin høire Haand endog gjør Under, for
 At gjøre Kongens Hielp i alles Øine stor.
-<pb n="55" facs="077.jpg"/>
-<center>Chor.</center>
+<pb n="55" facs="077.jpg"/><center>Chor.</center>
 
 <nonum><center>5.</center></nonum>
 Lad andre rose sig af Vogne, krigske Heste,
@@ -1900,8 +1896,7 @@ Og han omarmer ham, og som en huldrig Fader
 Ham leder paa et høit og meget slibrigt Sted,
 Saa han ei falder tungt fra Ærens Spidse ned —
 
-<pb n="57" facs="079.jpg"/>
-<nonum><center>6.</center></nonum>
+<pb n="57" facs="079.jpg"/><nonum><center>6.</center></nonum>
 Du Herrens Salvede! din Arm nedslaaer din Fiende,
 Og de, som hade dig, din høire Haand skal finde,
 Naar du dit Øie vredt paa deres Leir nedslaaer,
@@ -1972,8 +1967,7 @@ Og fandt din Hielp; de bade dig,
 Du frelste dem; de troede,
 Og bleve ei beskiæmmede.
 
-<pb n="59" facs="081.jpg"/>
-<nonum><center>5.</center></nonum>
+<pb n="59" facs="081.jpg"/><nonum><center>5.</center></nonum>
 Men mig sig ingen tager an,
 Jeg er en Orm, og ingen Mand;
 Jeg er en Spot for Mændene,
@@ -2003,8 +1997,7 @@ Blev kastet hen, da jeg var fød —
 Jeg er dit store Sendebud;
 Fra Moders Liv var du min Gud —
 
-<pb n="60" facs="082.jpg"/>
-<nonum><center>10.</center></nonum>
+<pb n="60" facs="082.jpg"/><nonum><center>10.</center></nonum>
 Saa vær da og ei langt fra mig
 Nu, Nødens Time nærmer sig,
 Og viser mig med Gruelse,
@@ -2040,8 +2033,7 @@ Ved mine Gummer klæber sig;
 Du lægger mig afsiælet ned
 I Dødens Støv og Usselhed.
 
-<pb n="61" facs="083.jpg"/>
-<nonum><center>16.</center></nonum>
+<pb n="61" facs="083.jpg"/><nonum><center>16.</center></nonum>
 Thi Jægeren har alt anvendt
 Sin hele List, og mig omspændt,
 Og Flokke Overtrædere
@@ -2077,8 +2069,7 @@ Fra Jægerens Forfølgelser;
 Red du i Løvens Svælg mit Liv,
 Fra vilde Ørnes Horn mig riv.
 
-<pb n="62" facs="084.jpg"/>
-<nonum><center>22.</center></nonum>
+<pb n="62" facs="084.jpg"/><nonum><center>22.</center></nonum>
 Min Gud! nu er din Dom udført;
 Det er fuldbragt! du har mig hørt;
 Jeg vil til mine Brødres Gavn
@@ -2114,8 +2105,7 @@ Skal møde med Halleluja!
 Og deres Gud hengivne Aand
 Skal evig leve i hans Haand.
 
-<pb n="63" facs="085.jpg"/>
-<nonum><center>28.</center></nonum>
+<pb n="63" facs="085.jpg"/><nonum><center>28.</center></nonum>
 Al Jorden skal erkiende Gud,
 Og atter høre Herrens Bud;
 Hver hedensk Slægt skal glæde sig,
@@ -2195,8 +2185,7 @@ Hvor skiulte Farer reise sig,
 Jeg gruer ei; du er hos mig,
 Din Hyrde-Stav mig trøster —
 
-<pb n="65" facs="087.jpg"/>
-<nonum><center>4.</center></nonum>
+<pb n="65" facs="087.jpg"/><nonum><center>4.</center></nonum>
 Du — du bereder mig et Bord
 Tvert over for min Fiende,
 Han seer din Miskundhed er stor,
@@ -2256,8 +2245,7 @@ Paa Strømmene, som Almagt lagde bunden
 <nonum><center>4.</center></nonum>
 Stor er vor Gud! hvo tør hans Bierg betræde?
 Hvo knæle ned i Zion og tilbede?
-<pb n="67" facs="089.jpg"/>
-<center>Første Chor.</center>
+<pb n="67" facs="089.jpg"/><center>Første Chor.</center>
 Kun den, hvis Haand er reen, til Hielp er villig,
     Hvis Siel er hellig.
 
@@ -2291,8 +2279,7 @@ At Ærens Konge gjennem Zions Døre
 
 <nonum><center>9.</center></nonum>
 O! hvo er vel den store Ærens Konge?
-<pb n="68" facs="090.jpg"/>
-<center>Andet Chor.</center>
+<pb n="68" facs="090.jpg"/><center>Andet Chor.</center>
 Vor Jehova, den Helt, som vi lovsiunge,
 Den Stærke, som os gjorde seierrige
     I vore Krige —
@@ -2361,8 +2348,7 @@ Lær mig! jeg dig anraaber;
 Thi du er jo min Styrkes Gud!
 Paa dig jeg stedse haaber.
 
-<pb n="70" facs="092.jpg"/>
-<nonum><center>6.</center></nonum>
+<pb n="70" facs="092.jpg"/><nonum><center>6.</center></nonum>
 Tænk dog paa din Barmhiertighed,
 Og paa din store Naade;
 Thi den fra Fædrene hidned
@@ -2398,8 +2384,7 @@ Stort er dit Navn, din Ære;
 Slet derfor mine Synder ud,
 Hvor mange de end ere.
 
-<pb n="71" facs="093.jpg"/>
-<nonum><center>12.</center></nonum>
+<pb n="71" facs="093.jpg"/><nonum><center>12.</center></nonum>
 Hvo er den Mand, som frygter Gud?
 Gud vil ham forelægge
 Den Vei, han sig skal vælge ud,
@@ -2435,8 +2420,7 @@ Ved tunge Suk udvider;
 O! min Forbarmer, red du mig
 Fra al den Nød, jeg lider!
 
-<pb n="72" facs="094.jpg"/>
-<nonum><center>18.</center></nonum>
+<pb n="72" facs="094.jpg"/><nonum><center>18.</center></nonum>
 Ansee du min Elendighed!
 Min Siæle-Qval mig skynder
 Til din grundløse Miskundhed,
@@ -2507,8 +2491,7 @@ Som lumske sammenrotte sig;
 Jeg hader deres Samlinger,
 Og tager aldrig Sæde der.
 
-<pb n="74" facs="096.jpg"/>
-<nonum><center>4.</center></nonum>
+<pb n="74" facs="096.jpg"/><nonum><center>4.</center></nonum>
 O nei! jeg mine Hænder tvætter,
 Og kun Uskyldighed attraaer,
 Min Fod i Helligdommen sætter,
@@ -2540,8 +2523,7 @@ Med min Medbroder redelig;
 Ledsag fremdeles mine Fied
 Af Naade og Barmhiertighed —
 
-<pb n="75" facs="097.jpg"/>
-<nonum><center>8.</center></nonum>
+<pb n="75" facs="097.jpg"/><nonum><center>8.</center></nonum>
 Min Bøn er hørt, og jeg betræder
 Den jevne og den trygge Grund;
 Jeg falder ei, thi Gud mig leder,
@@ -2588,8 +2570,7 @@ Og Kampens Pile rundt om mig
 Som Slange-Hvislen lyder,
 Skal jeg dog være sikker.
 
-<pb n="77" facs="099.jpg"/>
-<nonum><center>3.</center></nonum>
+<pb n="77" facs="099.jpg"/><nonum><center>3.</center></nonum>
 Thi dette bad jeg om, og vil
 Det tit af Gud begiere,
 At jeg, saa længe jeg er til,
@@ -2622,8 +2603,7 @@ Og ofre under Høitids-Sang
 Tak-Ofre, og tilbede
 Den Gud, som mig beskytter.
 
-<pb n="78" facs="100.jpg"/>
-<nonum><center>6.</center></nonum>
+<pb n="78" facs="100.jpg"/><nonum><center>6.</center></nonum>
 Og naar jeg der anraaber dig,
 Naar stille Taarer bede,
 Saa vær mig naadig, svar du mig,
@@ -2656,8 +2636,7 @@ Thi falske Vidner træde frem,
 Og vidne mod min Ære,
 Ja Mord og Død udaande.
 
-<pb n="79" facs="101.jpg"/>
-<nonum><center>9.</center></nonum>
+<pb n="79" facs="101.jpg"/><nonum><center>9.</center></nonum>
 Mig tager Jehova sig an,
 Jeg skal paa Jordens Klode
 Og i mit kiære Fædreland
@@ -2712,8 +2691,7 @@ Men da med eet forstyrres de,
 Ja gaae til Grunde, og vi see
 Dem aldrig meer opreiste —
 
-<pb n="81" facs="103.jpg"/>
-<nonum><center>4.</center></nonum>
+<pb n="81" facs="103.jpg"/><nonum><center>4.</center></nonum>
 Høilovet være Jehova;
 Thi han mig vist bønhører,
 Ham kommer min Undsætning fra,
@@ -2772,8 +2750,7 @@ Guds Stemme, hør! hvor er den ikke prægtig!
 Guds Stemme — o! hvor er den ei almægtig
 Som Skaber-Bud!<footnote>Som det første: Bliv!</footnote>
 
-<pb n="83" facs="105.jpg"/>
-<nonum><center>4.</center></nonum>
+<pb n="83" facs="105.jpg"/><nonum><center>4.</center></nonum>
 Guds Stemme sig mod Ceder-Skoven nærmer,
 Almagten slaaer, og hvo er vel Beskiærmer?
 Hans Torden-Straaler knuse Cederne;
@@ -2805,8 +2782,7 @@ Naturens Alt udraabte: Han er Herre!
 Gienlydene gjentoge: Ære! Ære!
 Alt var een Mund!
 
-<pb n="84" facs="106.jpg"/>
-<nonum><center>8.</center></nonum>
+<pb n="84" facs="106.jpg"/><nonum><center>8.</center></nonum>
 Han satte sig — Er nu Naturen roelig?
 Den tause Jord var mørk som Nattens Bolig,
 Og Luften bugned’ svanger, fæl endnu,
@@ -2863,8 +2839,7 @@ Han er Fortrængtes Hielp, de Redeliges Havn;
 Hans hellige
 Forfærdelige Navn!
 
-<pb n="86" facs="108.jpg"/>
-<nonum><center>4.</center></nonum>
+<pb n="86" facs="108.jpg"/><nonum><center>4.</center></nonum>
 Hans Vrede varer kun for Øieblikke ved,
 Og Livet selv udgaaer fra Herrens Miskundhed,
 Tit gjennem Aften-Graad kan Natten synes lang,
@@ -2896,8 +2871,7 @@ Ja du bandt,
 Mens Taarer randt,
 Min festelige Krands —
 
-<pb n="87" facs="109.jpg"/>
-<nonum><center>8.</center></nonum>
+<pb n="87" facs="109.jpg"/><nonum><center>8.</center></nonum>
 Du mødte mig, og drog mit Sørge-Klæde af,
 Og Høitids Prydelser af Miskundhed mig gav,
 Derfor skal og min Aand, mens den i Støvet boer,
@@ -2949,8 +2923,7 @@ Du er min Hyrde, i din Favn
 Du for dit Navn
 Mig gjennem Farer føre.
 
-<pb n="89" facs="111.jpg"/>
-<nonum><center>4.</center></nonum>
+<pb n="89" facs="111.jpg"/><nonum><center>4.</center></nonum>
 Riv du de skiulte Garn i tu,
 Som man for mig udspænder;
 Thi du min Styrkes Gud! thi du
@@ -2986,8 +2959,7 @@ Min Siel beboer med Ængstelse
 Et Legeme,
 Udtæret, lige en Skygge —
 
-<pb n="90" facs="112.jpg"/>
-<nonum><center>8.</center></nonum>
+<pb n="90" facs="112.jpg"/><nonum><center>8.</center></nonum>
 Min Alder bort i Jammer gaaer,
 Og under bittre Klager
 Bortsvækkes mine korte Aar,
@@ -3023,8 +2995,7 @@ Nys denne Røst som Tord’ner kom:
 „Man raadslaaer om,
 „At ende dine Dage!“ —
 
-<pb n="91" facs="113.jpg"/>
-<nonum><center>12.</center></nonum>
+<pb n="91" facs="113.jpg"/><nonum><center>12.</center></nonum>
 Men talte ere de af dig,
 Paa dig jeg mig forlader,
 Du er min Gud — o nok for mig,
@@ -3060,8 +3031,7 @@ Blant dem dig frygte — endog her
 Al Verden seer
 Hvor trofast du dem hielper —
 
-<pb n="92" facs="114.jpg"/>
-<nonum><center>16.</center></nonum>
+<pb n="92" facs="114.jpg"/><nonum><center>16.</center></nonum>
 Du Allestedsnærværende!
 Dem skiuler i din Skygge
 For Menneskers Forfølgelse,
@@ -3097,8 +3067,7 @@ Men han med fuld Gjengjeldelse
 Hovmodige
 Ved deres Trods nedtrykker.
 
-<pb n="93" facs="115.jpg"/>
-<nonum><center>20.</center></nonum>
+<pb n="93" facs="115.jpg"/><nonum><center>20.</center></nonum>
 Saa værer da udrustede
 Med Styrke fra det Høie,
 Og vandrer frem frimodige,
@@ -3140,8 +3109,7 @@ Thi, Gud! din Haand laae tung og svær paa mig,
 Min Leve-Kraft udtørredes, som Græs,
 Der tørres bort, hvor skarpe Vinde blæs’.
 
-<pb n="95" facs="117.jpg"/>
-<nonum><center>3.</center></nonum>
+<pb n="95" facs="117.jpg"/><nonum><center>3.</center></nonum>
 Gud! da bekiendte jeg mit Fald,
 Og skiulte ei min Synd mod dine Bud;
 Jeg sagde: o! jeg vil og skal
@@ -3173,8 +3141,7 @@ Men maae ved Tømmen tvinges frem til dig,
 I Tænkende! o værer ei som de;
 Thi Straffen bier de Haardnakkede —
 
-<pb n="96" facs="118.jpg"/>
-<nonum><center>7.</center></nonum>
+<pb n="96" facs="118.jpg"/><nonum><center>7.</center></nonum>
 Der er for Uretfærdige
 Saa mange Plager, som de tugtes ved,
 Men Herrens sande Dyrkere
@@ -3223,8 +3190,7 @@ Og lagde Dybet, som en Guddoms Fange, bunden,
 Og styrted’ Floderne som Skatte ned deri,
 Og satte Nødseler om Dødens mørke Stie. —
 
-<pb n="98" facs="120.jpg"/>
-<nonum><center>5.</center></nonum>
+<pb n="98" facs="120.jpg"/><nonum><center>5.</center></nonum>
 Al Jorden frygter ham; saa vidt som Solen lyser,
 Hvert Lands Beboer for hans Magt og Vælde gyser,
 Thi Herren talede, og see, saa skeede det!
@@ -3260,8 +3226,7 @@ Til dem, som frygte ham, og paa hans Godhed haabe,
 For at udrive dem fra øiensynlig Død,
 Og dem opholde, ja endog i Hungers Nød —
 
-<pb n="99" facs="121.jpg"/>
-<nonum><center>11.</center></nonum>
+<pb n="99" facs="121.jpg"/><nonum><center>11.</center></nonum>
 O over Jehova sig vore Hierter fryde!
 I hans høiloved’ Navn vi Tillids Sukke yde;
 Din Naade, Jehova! den være over os,
@@ -3308,8 +3273,7 @@ Om dem, som frygte ham og vældig frier dem;
 O! smager dog og seer, hvor god Gud, Herren er;
 Vel dem! som flye til ham i alle Trængsler —
 
-<pb n="101" facs="123.jpg"/>
-<nonum><center>4.</center></nonum>
+<pb n="101" facs="123.jpg"/><nonum><center>4.</center></nonum>
 Ja frygter Jehova hans Hellige paa Jorden!
 Thi de, som frygte ham, faae, hvad de har behov —
 Lad unge Løver end imod Naturens Orden
@@ -3341,8 +3305,7 @@ Og Herren hører ham, og redder ham som Gud;
 Han er i Naade nær hos de Bedrøvede,
 Og læger med sin Trøst de Hierte-Knusede.
 
-<pb n="102" facs="124.jpg"/>
-<nonum><center>8.</center></nonum>
+<pb n="102" facs="124.jpg"/><nonum><center>8.</center></nonum>
 Og lider end en From, han skal dog overvindes
 Om Herrens Velbehag; thi han udfrier ham;
 Han vogter selv hans Been, de skal ei sønderbrydes;
@@ -3399,8 +3362,7 @@ Thi al Naturen er Engel for Gud,
 Selv i det Bryst, som Guds Redsel fordølges,
 Raaber Guds Sendebud: skielv! jeg forfølger!
 
-<pb n="104" facs="126.jpg"/>
-<nonum><center>4.</center></nonum>
+<pb n="104" facs="126.jpg"/><nonum><center>4.</center></nonum>
 Ja! hvad Beskyttelse kan de vel have;
 Thi ufornærmede legge de ned
 Skiulte Faldstrikker, og hemmelig grave
@@ -3432,8 +3394,7 @@ Som de gjengjelde med Had og Fortræd;
 Jeg er iblandt dem en faderløs Tiener,
 Jeg er forladt af beslægtede Venner —
 
-<pb n="105" facs="127.jpg"/>
-<nonum><center>8.</center></nonum>
+<pb n="105" facs="127.jpg"/><nonum><center>8.</center></nonum>
 Ved deres Sygdom jeg fasted’, og loved’
 Hellige Løfter — min Andagt var varm,
 Hylende bad jeg med nedslaget Hoved,
@@ -3465,8 +3426,7 @@ Vogt du mit Liv mellem Løvernes Kløer;
 Lad mig endnu mellem Israels mange
 Ære din Vælde med festlige Sange!
 
-<pb n="106" facs="128.jpg"/>
-<nonum><center>12.</center></nonum>
+<pb n="106" facs="128.jpg"/><nonum><center>12.</center></nonum>
 Og lad min Fiende, som Løgn har opirret,
 Syndige Glæder ei over mig faae,
 Lad mine Hadere standse forvirred’,
@@ -3498,8 +3458,7 @@ Haver opslugt ham, nu er det forbi —
 Nei, naar de troe deres Ønske opfyldes,
 Lad dem da alle med Haanhed omhylles —
 
-<pb n="107" facs="129.jpg"/>
-<nonum><center>16.</center></nonum>
+<pb n="107" facs="129.jpg"/><nonum><center>16.</center></nonum>
 Lad dem, som ønske min Ret lagt for Dagen,
 Raabe de Strænge, som Glæde har stemt,
 Lad dem udraabe: Gud dømte i Sagen!
@@ -3542,8 +3501,7 @@ Hans Tale er idel Usandhed, og fræk
 Bedrager han Verden og skiuler sin Skræk,
 Sløv er hans Fornuft til det Gode.
 
-<pb n="109" facs="131.jpg"/>
-<nonum><center>3.</center></nonum>
+<pb n="109" facs="131.jpg"/><nonum><center>3.</center></nonum>
 Og sætter han sig i en vennehuld Kreds,
 Han strax paa Usandheder tænker,
 Og raadslaaer fortroelig og hører tilfreds
@@ -3579,8 +3537,7 @@ Hvor god imod Dyret — men dyrebar er
 Din Naade mod dem, som dig frygte især,
 De leve og boe i din Skygge —
 
-<pb n="110" facs="132.jpg"/>
-<nonum><center>7.</center></nonum>
+<pb n="110" facs="132.jpg"/><nonum><center>7.</center></nonum>
 Dit Maaltid, Naturens godgiørende Alt,
 Din underfuld’ Godhed bereder,
 Og dertil indbyder den Skabning, som faldt,
@@ -3633,8 +3590,7 @@ Saa skal du boe med Roe og varig Held i Landet;
 Fornøi dig i din Gud, og beed med reen Attraae,
 Saa veed du ikkun af at bede og at faae —
 
-<pb n="112" facs="134.jpg"/>
-<nonum><center>4.</center></nonum>
+<pb n="112" facs="134.jpg"/><nonum><center>4.</center></nonum>
 Læg Livets Byrder ned for ham, som styrker trætte,
 Fortroe dig ham; thi han vil alt for dig udrette,
 Han din Uskyldighed, som Lyset, viser ud,
@@ -3664,8 +3620,7 @@ Som søge Jehova, og ham alene frygte,
 De skal besidde det forjætted’ Land, og der
 Fornøie sig i Gud ved hans Velgierninger —
 
-<pb n="113" facs="135.jpg"/>
-<nonum><center>9.</center></nonum>
+<pb n="113" facs="135.jpg"/><nonum><center>9.</center></nonum>
 Tit Uretfærdige med Vælde efterjage
 Uskyldige, og dem fra alle Sider plage;
 Og naar de ei kan faae al deres Ondskab frem,
@@ -3695,8 +3650,7 @@ Er den dog bedre end de store Lykkens Gaver,
 Som Uretfærdige har samlet sig — hvorved?
 Maaskee ved List, ved Vold, og ved de Armes Sveed —
 
-<pb n="114" facs="136.jpg"/>
-<nonum><center>14.</center></nonum>
+<pb n="114" facs="136.jpg"/><nonum><center>14.</center></nonum>
 En Uretfærdig kan dog ei sig selv betrygge
 I sine gode Kaar, ja tit beundred’ Lykke;
 Gud bryder selv den Arm, som han forlod sig paa;
@@ -3720,8 +3674,7 @@ De skal fortæres ved hans svare Straffedomme
 Liig en fortørret Marks antændte visne Straae,
 Der med en grusom Pragt i Røg og Damp opgaae<footnote>Naar Østenvind i Syrien og Palæstina om Sommeren nogle Dage har gaaet over Marken, saa visner Græsset, og bliver som Høe, hvilket lettelig kan antændes af den Ild, Hyrderne om Aftenen gemeenligen pleie at giøre, paa Marken.</footnote>
 
-<pb n="115" facs="137.jpg"/>
-<nonum><center>18.</center></nonum>
+<pb n="115" facs="137.jpg"/><nonum><center>18.</center></nonum>
 De Onde borge, og kan ei betale Laanet;
 Men de Retfærdige ei blive saa forhaaned’;
 De skal betale hver, og dele med en Ven,
@@ -3751,8 +3704,7 @@ Og ved et venligt Laan sin Næste til oplive,
 Dog mangle ei hans Børn, og Guds Velsignelser
 Skal hvile over dem i deres Handlinger.
 
-<pb n="116" facs="138.jpg"/>
-<nonum><center>23.</center></nonum>
+<pb n="116" facs="138.jpg"/><nonum><center>23.</center></nonum>
 Afhold dig strængt fra Synd, elsk og udøv det Gode,
 Saa skal du i det Land, hvor dine Fædre boede,
 Og som du efter dem er bleven Borger af,
@@ -3782,8 +3734,7 @@ Saa vil han dig tilsidst af Miskundhed ophøie,
 Du bliver i det Land, han dine Fædre gav,
 Ja en Tilskuer af de Ryggesløses Straf —
 
-<pb n="117" facs="139.jpg"/>
-<nonum><center>28.</center></nonum>
+<pb n="117" facs="139.jpg"/><nonum><center>28.</center></nonum>
 Jeg saae en Mand opstod, som handlede ubilligt,
 Og ligesom et Træe, der grødefuldt og villigt
 Blot ved Naturens Vink opgroer i eget Land,
@@ -3848,8 +3799,7 @@ Anstikkende Sygdomme Kiødet æde
 Fra mine Been; men al min Nød begynder
 Fra mine Synder —
 
-<pb n="119" facs="141.jpg"/>
-<nonum><center>4.</center></nonum>
+<pb n="119" facs="141.jpg"/><nonum><center>4.</center></nonum>
 Thi — o min Synd, hvorfor du Straf beskikker,
 Er som en Last, der paa mit Hoved ligger
 Saa tung og svær, saa at jeg den, desværre
@@ -3879,8 +3829,7 @@ Blot ligger al min Længsel for dit Øie,
 Mit tunge Suk døer ikke under Sorgen
 For dig forborgen.
 
-<pb n="120" facs="142.jpg"/>
-<nonum><center>9.</center></nonum>
+<pb n="120" facs="142.jpg"/><nonum><center>9.</center></nonum>
 Mit Hierte, snart forsmægtet, aander efter
 Nye Leve-Kraft; men alle mine Kræfter
 Forlade mig — ja dunkelt er mit Øie,
@@ -3910,8 +3859,7 @@ Du naadefuld mig høre, naar jeg raaber:
 Ak! lad mig dog ei blive ved din Vrede
 Min Uvens Glæde!
 
-<pb n="121" facs="143.jpg"/>
-<nonum><center>14.</center></nonum>
+<pb n="121" facs="143.jpg"/><nonum><center>14.</center></nonum>
 De bleve vist hovmodige og stolte,
 Og stedse mig nye Lidelser forvoldte,
 Ifald de saae, at mine Fødder skreded’,
@@ -3941,8 +3889,7 @@ Forfølge mig — o Gud! med hvilken Vælde —
 Fordi jeg vil det Gode efterjage,
 Som de forsage —
 
-<pb n="122" facs="144.jpg"/>
-<nonum><center>19.</center></nonum>
+<pb n="122" facs="144.jpg"/><nonum><center>19.</center></nonum>
 Men Jehova, dig over mig forbarme!
 Unddrag dig ei! forlad du ei mig Arme!
 Il mig til Hielp — o red mig for din Ære,
@@ -3983,8 +3930,7 @@ Og Nidkiærhedens Ild igjen i Luer bragte,
 Jeg taled’ atter — men o Herre! var det Ret?
 Thi hvad er Livet vel? lær mig at kiende det!
 
-<pb n="124" facs="146.jpg"/>
-<nonum><center>4.</center></nonum>
+<pb n="124" facs="146.jpg"/><nonum><center>4.</center></nonum>
 Lær mig hvor meget nær mit Endeligt kan være,
 Og mine Dages Maal, hvor kort det er! ja Herre!
 Lad mig erkiende, hvor forgiængelig jeg er,
@@ -4014,8 +3960,7 @@ Giør mig ei til en Spot for lykkelige Daarer,
 Da vil jeg tie plat og ikke klage meer;
 Thi du bestyrer alt — det er ei Hændelser —
 
-<pb n="125" facs="147.jpg"/>
-<nonum><center>9.</center></nonum>
+<pb n="125" facs="147.jpg"/><nonum><center>9.</center></nonum>
 Vend dine Slag fra mig! din strenge Haand opriver
 Samvittighedens Saar, og Smerterne opliver,
 Naar du for Syndens Skyld vil tugte Syndere,
@@ -4073,8 +4018,7 @@ Thi han et nyt Halleluja
 Paa mine Læber lagde,
 En værdig Sang for Jehova —
 Og mange skulde agte
-<pb n="127" facs="149.jpg"/>
-Paa Herrens store Værk — paa det:
+<pb n="127" facs="149.jpg"/>Paa Herrens store Værk — paa det:
 At han har mig med Majestæt
 Af Dødens Svælg udrevet
 Og de skal med Tilbedelse
@@ -4105,8 +4049,7 @@ Endskiønt den er saa Under-stor,
 At ingen Tunge danner Ord,
 Som kan dit Raad beskrive —
 
-<pb n="128" facs="150.jpg"/>
-<nonum><center>5.</center></nonum>
+<pb n="128" facs="150.jpg"/><nonum><center>5.</center></nonum>
 Thi Offer-Dyrets Blod kan ei
 Din Fordring fyldestgiøre;
 Ei Jordens offred’ Frugter — nei!
@@ -4137,8 +4080,7 @@ At Jehova’s Forjættelser
 I mig opfyldte ere;
 Min aabned’ Læbe sluttes ei,
 Nei! Jehova du veed, at jeg
-<pb n="129" facs="151.jpg"/>
-Din Sanddruhed udbreder;
+<pb n="129" facs="151.jpg"/>Din Sanddruhed udbreder;
 Dig lover jeg, din Hielp var vis;
 Din Naade skal forherliges
 I store Menigheder.
@@ -4167,8 +4109,7 @@ Ja de med eet skal overgaae
 Fra Fryd til Skræk, og isned’ staae;
 Som nys beloe mig bittre.
 
-<pb n="130" facs="152.jpg"/>
-<nonum><center>10.</center></nonum>
+<pb n="130" facs="152.jpg"/><nonum><center>10.</center></nonum>
 Men Herre! de, som dyrke dig,
 Som Redning fra dig haabe,
 O de skal alle fryde sig,
@@ -4215,8 +4156,7 @@ Men Gud, hvor er det langt fra dig,
 At du vil overgive ham
 I Fiende-Haand, til Spot og Skam —
 
-<pb n="132" facs="154.jpg"/>
-<nonum><center>4.</center></nonum>
+<pb n="132" facs="154.jpg"/><nonum><center>4.</center></nonum>
 Slager Sygdoms tunge Haand ham ned,
 Saa styrker du hans Skrøbelighed,
 Og giør ham atter karsk igjen —
@@ -4246,8 +4186,7 @@ De møde mig med Smigrerie,
 Og ile hen, hvor man dem troer,
 Og der forvende mine Ord —
 
-<pb n="133" facs="155.jpg"/>
-<nonum><center>9.</center></nonum>
+<pb n="133" facs="155.jpg"/><nonum><center>9.</center></nonum>
 Og alle de, som hade mig,
 Nu imod mig forsamle sig,
 Og kun med Uroe pønse paa,
@@ -4277,8 +4216,7 @@ Og greb mig just, i det jeg gled,
 Og for dit Øie stillet’ mig,
 Nu staaer jeg stedse tryg ved dig —
 
-<pb n="134" facs="156.jpg"/>
-<nonum><center>14.</center></nonum>
+<pb n="134" facs="156.jpg"/><nonum><center>14.</center></nonum>
 Høilovet være Jehova,
 Israels Gud! Halleluja!
 Udfør min Sang Chor efter Chor,
