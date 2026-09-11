@@ -154,6 +154,23 @@ En linje fort<pb n="14" facs="021.jpg"/>sætter</poetry></body>
     expect(collectPageBreakIssues('work.xml', workException)).toEqual([]);
   });
 
+  it('allows the pagebreak-count exception for unnumbered source pages', () => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Digte</title><year>1900</year><pagebreaks/></workhead>
+        <workbody>
+          <text id="digter1900a" ignore-tests="pagebreak-count">
+            <head><title>Forord</title><source facsimile-pages="6-7"/></head>
+            <body><prose>Første side
+<pb facs="006.jpg"/>Anden side</prose></body>
+          </text>
+        </workbody>
+      </kalliopework>
+    `;
+
+    expect(collectPageBreakIssues('work.xml', xml)).toEqual([]);
+  });
+
   it('rejects page breaks in a text whose source covers one page', () => {
     const xml = `
       <kalliopework id="1900" author="digter">
