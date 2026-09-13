@@ -1,7 +1,295 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1817a" author="heibergjl" status="incomplete" type="poetry">
+<kalliopework id="1817a" author="heibergjl" status="complete" type="poetry">
 <workhead>
   <title>Ny A-B-C-Bog</title>
+  <subtitle><line>i en Times Underviisning</line><line>til Ære, Nytte og Fornøielse</line><line>for den unge Grundtvig.</line><line>Et pædagogisk Forsøg</line></subtitle>
   <year>1817</year>
+  <pagebreaks/>
+  <proofreadings>
+    <proofreading model="gpt-6" datetime="2026-09-13T20:26:50.853120+00:00"/>
+  </proofreadings>
+  <source href="https://www.kb.dk/e-mat/dod/11530806043C-color.pdf" facsimile="11530806043C-color" facsimile-pages-num="35" facsimile-pages-offset="5">Johan Ludvig Heiberg: <i>Ny A-B-C-Bog</i>. Kjøbenhavn, 1817. Trykt i Thieles Bogtrykkerie.</source>
+  <pictures>
+    <picture type="titlepage" src="1817a-p1.jpg">Ny A-B-C-Bog i en Times Underviisning til Ære, Nytte og Fornøielse for den unge Grundtvig. Et pædagogisk Forsøg af Johan Ludvig Heiberg. »En Gedebuk er stolt af Skjægget, / Og er til Vrede let opægget.« Den gamle ABC. Kjøbenhavn, 1817. Trykt i Thieles Bogtrykkerie.</picture>
+    <picture type="frontpage" src="1817a-p2.jpg">Den grafiske forside med alfabet og vers.</picture>
+  </pictures>
 </workhead>
+<workbody>
+<text id="heibergjl2026091301">
+<head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+  <firstline>Au au, den slemme Steen!</firstline>
+  <source facsimile-pages="4"/>
+</head>
+<body>
+<poetry>
+Au au, den slemme Steen!
+Jeg faldt, og slog mit Been;
+    Min Næse var i Fare.
+Herefter vil jeg, naar
+Jeg spøger, leger, gaaer,
+    Mig bedre tage vare.
+</poetry>
+</body>
+</text>
+
+<text id="heibergjl2026091302">
+<head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Forberedelse.</title>
+  <nofirstline/>
+  <source pages="3-6"/>
+  <dates><written>1817-03-22</written></dates>
+  <keywords>grundtvig</keywords>
+</head>
+<body>
+<prose>
+Jeg Underskrevne, Johan Ludvig Heiberg, gjør herved vitterligt for alle og enhver, og i Særdeleshed for Dig, N. F. S. Grundtvig, at saasom jeg endelig har taget den Beslutning at give dig en Times høist fornødne Underviisning i Anledning af, jeg behøver ei at sige hvad, thi du veed nok selv, hvad du har gjort: saa, for at ingen medrette skal forundre sig over, at jeg skriftlig vil indlade mig med den, som skjælder mig ud, maa <pb n="4" facs="008.jpg"/>jeg foreløbigen erklære, at jeg i denne min Underviisning samt deri indbegrebne faderlige Irettesættelse intet Hensyn tager paa tvende i dit Synderegisters Pag. 113, Lin. 9 f. n., og Lin. 3 f. n. anbragte pyntelige Talemaader, eftersom disse ere af den Beskaffenhed, at man i det gode Selskab lader som man ikke hører dem, og først, naar man er kommen udenfor Døren, besvarer dem; naturligviis ikke skriftlig, ja ei engang mundtlig, eller paa een for den Fornærmendes Øren allene ved Hørelsen fornemmelig Maade. Uagtet du nu rigtig nok saa meget mere har opfordret mig til at gjøre ligesaa ved dig, i det du har gjort opmærksom paa, hvad man nok med egne Øine kunde see, at du har trukket Præstekjolen af, og derved gjort dig end mere beqvem til den nysomtalte Application, saa maa jeg dog, af Respect for Kjolen, som har beklædt dig, og afsagt Fiende af ge<pb n="5" facs="009.jpg"/>meen Haandgemæng, bede dig at tage Villie for Gjerning, og ansee det, som om jeg virkelig paa din Person havde efterkommet den Skyldighed, hvilken jeg herved opfylder dig <span lang="la">in effigie</span>; ligesom jeg ogsaa, efter denne min Erklæring, beder enhver af de ærede Herrer Pædagoger <span lang="la">ex professo</span>, der maatte gjøre mig den Ære at læse dette mit svar ringe, men dog velmeente Skrift (paa Dilettanternes Mening reflecterer jeg naturligviis ikke), om at betragte dig som den, der har qvitteret for en paa anførte Viis rigtig betalt Regning.
+
+Først efter denne Erklæring kan jeg, uden Præjudits for min Ære, gjøre mig saa gemeen at undervise dig skriftlig, under mit fulde Navn. Og hermed skrider jeg altsaa til Begyndelsen af min Information, thi det Foregaaende hørte ikke med til samme, men var kuns en nødvendig Forberedelse, et Giv Agt, en Sandsekage til Vækkelse <pb n="6" facs="010.jpg"/>af Opmærksomheden; og denne kan ikke noksom skjerpes, naar man sætter sig til at lære Fibelbrettet, hvilket nu øieblikkeligen følger. At jeg begynder med dette, vil man ei finde upassende, hvor det er nødvendigt at begynde Opdragelsen saa aldeles forfra, som i dette Tilfælde.
+
+Kjøbenhavn, den 22de Marts 1817.
+
+<right>J. L. Heiberg,</right>
+<right>25 Aar gammel.</right>
+</prose>
+</body>
+</text>
+
+<text id="heibergjl2026091303" ignore-tests="loose-letters">
+<head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+  <nofirstline/>
+  <toctitle>Fibelbrettet</toctitle>
+  <linktitle>Fibelbrettet</linktitle>
+  <source pages="7-8"/>
+  <notes><note>»Fibelbrettet« er betegnelsen i forberedelsen. Undtagelsen loose-letters gælder kun dette fibelbræt, der bevidst består af enkeltbogstaver. Alfabeternes forskellige bogstavformer er bevaret; langt s er her gengivet som ſ.</note></notes>
+</head>
+<body>
+<prose>
+A
+A a b c d e
+f g h i j k l
+m n o p q r
+ſ s t u v x y z æ ø
+
+A B C D E F G H I
+K L M N O P Q R S
+T U V X Y Z Æ Ø
+
+A B C D E F G H I J K L
+M N O P Q R S T U V W
+X Y Z Æ Ö
+
+a b c d e f g h i j k l
+m n o p q r ſ s t u v w x
+y z æ ö
+
+1 2 3 4 5 6 7 8 9 0
+
+I. V. X. L. C. D. M.
+
+<pb n="8" facs="012.jpg"/>De selvlydende Bogstaver:
+a e i o u y æ ø
+
+De medlydende Bogstaver:
+b c d f g h k l m n p q r ſ t v x z
+
+Ab  eb  ib  ob  ub
+Ba  be  bi  bo  bu
+Ca  ce  ci  co  cu
+Da  de  di  do  du
+Fa  fe  fi  fo  fu
+Ga  ge  gi  go  gu
+Ha  he  hi  ho  hu
+Ka  ke  ki  ko  ku
+La  le  li  lo  lu
+Am  em  im  om  um
+Ma  me  mi  mo  mu
+Na  ne  ni  no  nu
+Pa  pe  pi  po  pu
+Ar  er  ir  or  ur
+Ra  re  ri  ro  ru
+Sa  se  si  so  su
+Ta  te  ti  to  tu
+Va  ve  vi  vo  vu
+</prose>
+</body>
+</text>
+
+<text id="heibergjl2026091304">
+<head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Moralsk Læseøvelse i Prosa,</title>
+  <subtitle><line>hvori alle Bogstaver forekomme:</line><line>Faderlig Irettesættelse til den unge Grundtvig,</line><line>fra Forfatteren til dette Skrift.</line></subtitle>
+  <nofirstline/>
+  <source pages="9-19"/>
+  <keywords>grundtvig,luther</keywords>
+</head>
+<body>
+<prose>
+Unge Menneske! Hvor megen Sorg forvolder du mig ikke paa min gamle Alder! Du havde fortjent en alvorlig Revselse, men det var Synd for Riset at slaae det itu paa saa haard en Bark. Det eneste Middel til endnu at sætte Skik paa dig, vilde være at stikke dig ind under eet af Regi<pb n="10" facs="014.jpg"/>menterne, hvor du kunde lære Subordination. Jeg har intet imod, at du leger, og gjør dig Motion; din Alder har jo dog ingen anden Bestemmelse. Jeg har heller intet imod, at du i alle dine Børnelege giver dig en vis Alvorsmine. Sligt er tvertimod, ifølge mine Grundsætninger for Opdragelsen, særdeles gavnligt for Drengen, da han ved det paatagne Alvor vænner sig til det virkelige, og hurtigere dannes til Yngling og Mand. Der kan saaledes intet være at indvende mod den meget udbredte Leg med Dukker, for hvilke Børnene forestille sig at være Forældre og Foresatte, og snart belønne dem med Sukkergodt, snart give dem af Riset. Man udvider ogsaa denne Leeg saaledes, at man ei behøver Dukker til den. Eet Barn kan nem<pb n="11" facs="015.jpg"/>lig lege, at det er Hovmester for et andet, som leger, at det er uartigt, og det første kan da skjænde paa det andet, naturligviis ikke med grove Talemaader, og banke det, forstaaer sig, saa det ikke har Skade deraf. Men hvad der maa være en ubetinget Regel for alle Børnelege, er, at Børnene ei maa være de voxne Folk til Byrde, eller være impertinente imod dem; men betænk min Søn, om du ogsaa altid iagttager dette. Hovmesterlegen er din kjæreste Leeg, og deri var intet ondt, om du kun legede den med andre Drenge paa din Alder, men nu er du saa ilde opdragen, at du giver dig ikast med voxne Mennesker, som ere myndige, og have bedre Forstand end du, kalder dem for Drenge, og leger Skolemester for dem. Saaledes var du forleden Dag meget uhøflig mod mig, da du i en saadan Leeg tiltalte mig i en Tone, som du <pb n="12" facs="016.jpg"/>maaskee har hørt hos dine Lærere, naar de gave dig Riis i Skolen. Veed du hvad, min Søn? Sligt passer sig ikke mellem dig og mig. Uagtet jeg kuns er et ungt Menneske, er jeg dog en heel Deel ældre end du. Jeg er jo dog confirmeret, Student, indkaldt til anden Examen, uden at tale om begyndende Skribent, hvilket rigtig nok ikke vil sige meget, men dog nok fortjente at respecteres af Dig, der endnu ikke har givet andet end Stiiløvelser, fulde af de groveste ortographiske, etymologiske og syntactiske Bommerter, for hvilke du har faaet de læsterligste Prygl. Kan du dog ikke selv høre, hvor ilde det klæder dig at tale om Sløikjolen og Faldehatten, to Ting, som faa Børn kunne have saa nødig, som du? Man leer af slige Indfald, naar et net lille Pigebarn paa fem Aar siger dem med Mine af en Matrone, men derfor <pb n="13" facs="017.jpg"/>passe de sig ikke strax for enhver opløben Laps midt i Lømmelaarene, med lange Arme i korte Ærmer, blaa Buler i Panden, og Gadestænk op over Ørene. Bedre tager du dig unægtelig ud ved Opløb paa Gaden, naar du stimler til mellem de andre Drenge, men selv her har jeg dog bemærket en stor Mangel paa Mod hos dig. Naar nemlig de andre spænde Krog, kaste Sneeboldte og Stene, saa staaer du med Armene over Kors, og skraaler af fuld Hals: ”Evig forsoren! Jeg skal begegne jer med et Saltmadsfad og en banket Trøie: vil I stikke Piben ind, Drenge, eller jeg skal lære jer at snøre Hoser.” Men det eneste Middel, du bruger for at opnaae alt dette, er kun at vedblive med Skraalet, at du <w>vil</w> gjøre det. Man kan saaledes sige, at du i Feldtslaget paatager dig Trompeterens Rolle. Men derved, min Søn, gjør du dig selv latterlig; <pb n="14" facs="018.jpg"/>thi enhver leer af en blot arrig Trudsel, hvor Evnen til dens Udførelse mangler. Knap en dybt bevæget Vægter stikker derfor Piben ind, og i det høieste en gammel Kjerling snører Hoser. Selv Spurvene sætte sig uden Frygt paa de slet gjorte Fugleskræmmer, og du har vist ogsaa seet, at naar Drengene paa Gaden forfølge den gale Jødepræst, og han vender sig om, og løfter Stokken, saa vige de kun lidet tilbage, lade ham slaae ned i Stenene, og forfølge ham derpaa med fordobblet Hurraaraab. Denne Mangel paa Mod stikker besynderlig af til dine fleste Lege, der just forestille saadanne Ting, til hvilke, naar de skulde udføres i Virkeligheden, et særdeles Mod vilde være nødvendigt, som for Exempel: en nordisk Kjæmpe, en christen Martyr, en Doctor Morten Luther, og nu allersenest en vandrende Ridder, som drager ud og forsvarer den forfulgte qvin<pb n="15" facs="019.jpg"/>delige Uskyldighed. Denne sidste Rolle paatog du dig med slig en Ivrighed, at du derover glemte din Armatur af Landse, Sværd og Skjold, og i Hastværk tog en Tærskepleiel, hvormed du stillede dig paa en Gjødningsbakke i en Bondegaard, altsammen for at haandhæve din uforlignelige Dames Berømmelse, og kjæk forjage enhver, som maatte vove at antaste hendes ophøiede Skjønhed. Men see nu, hvor ubehændigt du bærer dig ad. Uden at tale om, at du jo kun blotter dig selv for ethvert Anfald, ved at tage Kjolen af, og balancere i Vesten, maa jeg gjøre dig opmærksom paa, at din Ginevra, istedenfor at antage dig for Rinaldo, ufeilbarlig, ifølge den Plads, du har valgt dig, maa troe, du er en sjællandsk Hane, tilfreds paa din egen Baggaards-Pindus, en sjællandsk Hane, saa aldeles nationaliseret, at den endog har taget Træskoe paa Fød<pb n="16" facs="020.jpg"/>derne, for ei at komme til at gaae i spanske Skridt; ja en høist besynderlig Under-Hane, naar jeg ret betragter den: en Hane, der siger Sparto til Degnen selv, og svarer: jeg kan gjøre Æg, naar denne siger: jeg kan støbe Voxlys, men ogsaa kun rivaliserer med Degnen, og ei engang med en aftrukken Præstekjole, end sige med den, som har stukket i den. End videre maa jeg spørge dig, om du troer at have sagt din Dulcinea ret en smuk, ridderlig Compliment, naar du forsikkrer al Verden, at hun i Grunden er et Mandfolk, og kun for de halvvoxne Drenge at betragte som Fruentimmer? Og endelig, troer du virkelig at have gjort din Dame en Tjeneste, ved at drage tilfeldts for hende paa saa gemeen og bondestolt en Maade? og hvorfor? fordi hun er bleven saaret af satiriske Pile! Men skulde da hun, der, som qvindelig Troubadour, jo maa være nøie bekjendt med Kjærlighedens Pile, være saa bange for Satirens, ligesaa fine og ikke nær saa smertelige, at hun ei heller skulde ønske disse at blive siddende i Hjertet, end behandles af en plump, uøvet Feldtskjærnæve, der selv bibringer hende det første farlige Saar, idet den vil uddrage de fine <pb n="17" facs="021.jpg"/>Spidser, som den er for klodset til at omgaaes med? Naar jeg tænker paa slig en Mangel paa Evne til at sætte dig ind i en Digters Tankegang, saa kan jeg af denne Plathed og Raahed i Følelsen allerede slutte, at du ei er skabt til at være Digter, maaskee vel prosaisk Skribent, man kan ikke vide det; men dog skulde du have et Par Haandtager, fordi du tør sige, at du har brændt dit Drengeværk, da du, som bekjendt, endnu aldrig har viist, at du var istand til at levere andet. Men om det ogsaa ikke er sunget for din Vugge, at du skal blive stor i Aandens Rige, kan du jo paa andre Maader blive et gavnligt Medlem af Samfundet. Naar jeg seer paa de af dine Evner, som hidtil have udviklet sig, troer jeg, du kan blive en meget anseelig Slagter; og jeg tvivler ikke paa, at du i saa Tilfælde vil kunne faae <span lang="la">Privilegium exclusivum</span> paa at skalte og valte paa Uhlfeldts Plads, at sige: naar du paatager dig at forskjønne Pladsen, deels ved at pryde den med nogle af de Mindestene, som du ved egen Daad har reist dig, deels ved at dække Corfitz Uhlfeldts ikke synderlig smukke Støtte, ved at paahænge den Blade af dine egne Værker. Dog den Tid, den Sorg. Naar du bli<pb n="18" facs="022.jpg"/>ver ældre, skal vi nærmere lægge vore Hoveder iblød, for at udfinde, hvortil du bør bestemme dig. Ak Herre Gud! Jeg gjør Regning uden Vert. Saa lykkelig bliver jeg vist aldrig, at jeg oplever at see dig som et gammelt fornuftigt Menneske; i det mindste er jeg til den Tid en ældgammel Mand, og rimeligviis død og begraven. Nu vil jeg kun til Afsked give dig mit sidste faderlige Raad: Det er en Skam for saa stor en Dreng, som dig, ikke endnu at kunne udtale alle Ord tydeligt og bestemt. Du taler altid, som om du havde Grød i Munden, saa at man kun forstaaer det halve. Saaledes var der i din sidste uarticulerede Tale en Mængde, som ei var til at forstaae. Denne Sluddervorenhed maa du vænne dig af med; ligeledes, naar du herefter har noget at sige mig eller andre, maa du fatte dig kort og bestemt, og ikke vrøvle i en Evighed frem og tilbage, ligesom en gammel Skolemester, der gaaer i Barndom, og ikke veed selv hvad han siger. Og lad mig ogsaa see, at du nu sætter dig smukt stille ned, og lærer denne ABC-Bog, og ikke staaer op, og leger, førend du kan den paa dine Fingre: thi ellers bliver jeg nødt til, saa nødig som jeg vilde, at hænge dig Æselbrættet paa Nakken. <pb n="19" facs="023.jpg"/>Nu Farvel, min Søn! Vær en anden Gang kjøn artig, og leeg ikke om Aftenen silde med Ild og Lys og Satire, som du ikke forstaaer at omgaaes. Din Amme har vist sagt dig, hvad deraf kan flyde.
+</prose>
+</body>
+</text>
+
+<text id="heibergjl2026091305">
+<head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Moralsk Læseøvelse i Vers,</title>
+  <subtitle><line>bestaaende for største Delen i den gamle</line><line>ABC-Bogs Riim, omarbeidede</line><line>og forbedrede.</line></subtitle>
+  <firstline>See her, Barnlille, vises dig</firstline>
+  <source pages="19-23"/>
+  <keywords>grundtvig,luther</keywords>
+</head>
+<body>
+<poetry>
+See her, Barnlille, vises dig,
+Hvorledes Grovhed ofte spydes.
+Lær nu at være skikkelig,
+Og ei af Arrighed forvildes.
+Saa tidt du husker Versene,
+Saa vil du dig anstændig tee.
+
+<nonum>A a</nonum>
+En Abekat blandt Præsterne
+Mindst findes liig Apostlene.
+
+<pb n="20" facs="024.jpg"/><nonum>B b</nonum>
+Af gamle Bibler flaaes det Skind,
+Hvori nyt Galskab bindes ind.
+
+<nonum>C c</nonum>
+Naar Criticus med Skjældsord truer,
+Da, veed man, han paa Lappen suer.
+
+<nonum>D d</nonum>
+Ved Gammelstrand der findes Drager,
+Som mangen megen Skræk indjager.
+
+<nonum>E e</nonum>
+Poetisk Ebbe sees i Landet,
+Den anden finder man i Vandet.
+
+<nonum>F f</nonum>
+Naar Fanden gaaer i Præsteklæder,
+Han allersnarest Folk opæder.
+
+<nonum>G g</nonum>
+Grundtvig er een af de Præste,
+Som Satiren seer tilbedste.
+
+<nonum>H h</nonum>
+En Himmelstud<footnote>See den unge Grundtvigs blaa Stilebog, 2det Binds 2det Hæfte Pag. 111, Linie 3.<br/>”O hvilken Kalv, o hvilken Himmeloxe” &amp;c.</footnote>, en Kirketyr,
+Er et ubændigt, voldsomt Dyr.
+
+<pb n="21" facs="025.jpg"/><nonum>I i j</nonum>
+See Jægeren sigter og skyder,
+Og Julebukken<footnote><span lang="la">l. c.</span> Pag 109, Linie 4 f. o.<br/>”See Julebukken ved det gamle Øg!”<br/>og samme Pagina, Linie 9 f. n.<br/>”— — — paa Iis trygt gaaer Julebukken.”</footnote> sig fryder.
+
+<nonum>K k</nonum>
+En Kapellan kan gammel blive,
+Og holder sig ved Haab ilive.
+
+<nonum>L l</nonum>
+Stort Mod og Styrke har en Luther,
+Men Smaadyr ei og Substituter.
+
+<nonum>M m</nonum>
+En arrig Marekat i Rænker
+Er større, end du mulig tænker.
+
+<nonum>N n</nonum>
+Et Nytaarsvers paa Vandet flyder,
+Og lavest Rang blandt Digte nyder.
+
+<nonum>O o</nonum>
+Orakler findes og hos os,
+Man kalder deres Præst en Klods.
+
+<nonum>P p</nonum>
+Din Poesie har smukke Fjere;
+Dens Been af Saar dog fulde ere.
+
+<pb n="22" facs="026.jpg"/><nonum>Q q</nonum>
+Det meget Qvæg, du har paa Stalde,
+Vi Qvæglinger og Smaaqvæg kalde<footnote><span lang="la">Varietas lectionis:</span> Qvæklinger og Smaaqvæk.</footnote>.
+
+<nonum>R r</nonum>
+En Recensent saa tam kan blive,
+At Folk ham styre kan og drive.
+
+<nonum>S ſ s</nonum>
+Satiren ei omsonst man hader,
+Thi Bondens Vittighed den skader.
+
+<nonum>T t</nonum>
+En Tosse skriver paa hver Side
+En halv Snees Skjældsord, maa I vide.
+
+<nonum>U u</nonum>
+En Ulv paa Luur ved Kirken gaaer,
+Og stjæler Troens Gjæs og Faar.
+
+<nonum>V v</nonum>
+Naar Musen er en Vasserkone<footnote>Og derpaa kan vel ingen tvivle, som har læst den unge Grundtvigs prosaiske Stiiløvelse foran hans <span lang="la">versus fracti, in ordinem redacti.</span></footnote>,
+Man Skjalden bør med Strandløg krone.
+
+<nonum>X x</nonum>
+At skrive Folk et X for U,
+Mit Barn, forgjæves stræber du.
+
+<pb n="23" facs="027.jpg"/><nonum>Y y</nonum>
+Paa Ydmyghed du dig beflitte;
+Du er ei stor, men lillebitte.
+
+<nonum>Z z</nonum>
+Zeloten er af Hundeart,
+Er glubsk, og løber med en Fart.
+
+<nonum>Æ æ</nonum>
+Een Ære er den anden værd.
+Som du har redt, du ligger her.
+
+<nonum>Ø ø</nonum>
+Med Øgenavne skal du kneise,
+Og ud i Verden langt omreise.
+</poetry>
+</body>
+</text>
+
+<text id="heibergjl2026091306">
+<head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Efterskrift.</title>
+  <nofirstline/>
+  <source pages="23-24"/>
+  <keywords>grundtvig</keywords>
+  <notes><note>TODO: På s. 24 er slutningen af ordet efter »lidt efter lidt« bortslidt. »skal« er en mulig læsning, men kun begyndelsen »sk« kan læses sikkert i eksemplaret.</note></notes>
+</head>
+<body>
+<prose>
+Jeg haaber, den unge Grundtvig vil finde, at jeg er en yderst billig Informator, siden denne Time ei engang har kostet ham 3 Mark Sølvværdie, men kun 4 Mark N. V., hvilket er Prisen paa mit pædagogiske Forsøg. Jeg havde næsten tænkt at gjøre det aldeles gratis, og sende ham et Fri-Exemplar; men Frygt for at gjøre ham alt for skamfuld, har afholdt mig derfra. Siden jeg imidlertid er saa me<pb n="24" facs="028.jpg"/>get wohlfeil, haaber jeg, at Mængden af Kjøbere vil holde min Forlægger skadesløs for Bekostningen ved dette Værk; ja jeg nærer endog det underdanige Haab, at denne ABC-Bog lidt efter lidt sk[ulæseligt] istedenfor den ellers brugelige blive indført i alle offentlige og private Skoler og Instituter i Byen og paa Landet. At den egentlig og nærmest er skreven til Ære, Nytte og Fornøielse for den unge Grundtvig, kan ei mere hindre dens almeen brugbare Popularitet, end Ordene <span lang="la">in usum Delphini</span> paa Titelen af gamle Klassikere gjøre slige Udgaver mindre brugbare for hele den øvrige Verden. At jeg i min ABC ikke har indført de ti Bud, Bordbønner og de øvrige i de andre ABC-Bøger befindtlige religiøse Læseøvelser, behøver vel i vore oplyste Tider ingen Undskyldning. Enhver indseer, at sligt ei er den Føde, som tilkommer Børn. Naar den unge Grundtvig bliver ældre, og kan tilstedes Confirmation, skal jeg, hvis ingen andre vil, gjøre mig en Fornøielse af at skrive ham en Catechismus, og deri supplere hvad der i min ABC-Bog kunde mangle.
+</prose>
+</body>
+</text>
+
+<text id="heibergjl2026091307">
+<head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+  <firstline>Naar Hanen glad og munter galer</firstline>
+  <source facsimile-pages="31"/>
+  <pictures><picture src="1817a-p3.jpg">Hanen med vers.</picture></pictures>
+</head>
+<body>
+<poetry>
+Naar Hanen glad og munter galer
+    I Dagningen hver Morgenstund,
+Til Børn han ligesom da taler:
+    Op! tidlig Flid har Guld i Mund.
+</poetry>
+</body>
+</text>
+
+</workbody>
 </kalliopework>
