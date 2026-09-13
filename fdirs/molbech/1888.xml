@@ -8,6 +8,9 @@
   </pictures>
   <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122706731805763" facsimile="115308079031-color" facsimile-pages-num="176">Chr. K. F. Molbech: <i>Efterladte Digte</i>, Gyldendalske Boghandels Forlag (F. Hegel &amp; Søn), Kjøbenhavn, 1888.</source>
   <pagebreaks/>
+  <proofreadings>
+    <proofreading model="gpt-6" datetime="2026-09-13T21:06:56.271513+00:00"/>
+  </proofreadings>
   <notes>
     <note>TODO: Den trykte side 41 med begyndelsen af »Som et Træ« mangler i den benyttede digitalisering. Både farve- og sort-hvid-PDF'en springer fra side 40 til 42. Værket er derfor ikke markeret som fuldstændigt.</note>
   </notes>
@@ -25,7 +28,7 @@
   <firstline>Snart synker Solen bag skovklædt Næs</firstline>
   <source pages="1-4" facsimile-pages="12-15"/>
   <dates><written>1888-01-21</written></dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -126,7 +129,7 @@ Som jeg høsted ved Aftentide.
   <title>Digterlykke</title>
   <firstline>Han sidder eensom i det stille Kammer</firstline>
   <source pages="7-9" facsimile-pages="18-20"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -193,7 +196,7 @@ Han er ei ene, hos ham er hans Tanke.
   <title>Kain og Abel</title>
   <firstline>Da Kerubens Sværd, det blanke</firstline>
   <source pages="10-17" facsimile-pages="21-28"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -213,7 +216,7 @@ Af en jordisk Moders Barm,
 Og et Kys af Syndens Læbe
 Skulde koldt og bittert klæbe
 Ved hver Tanke fuld og varm:
-<pb n="11" facs="021.jpg"/>Da først Kain og Abel fødtes,
+<pb n="11" facs="021.jpg"/>Da først <w>Kain</w> og <w>Abel</w> fødtes,
 Og i deres Sjæle mødtes
 Dette Skjær af Mulm og Gry,
 Der i Adams tunge Hjerte
@@ -231,13 +234,13 @@ Af et Baand, som ei kan brydes,
 Af en Stemme, der maa lydes,
 Af en Haaben uden Trøst.
 
-Abel var en lys Erindring
+<w>Abel</w> var en lys Erindring
 Om det tabte Edens Have,
 Om de gyldne Frugters Gave,
 Om de kjælne Fuglesange,
 Om de duftopfyldte, lange
 Foraarsdages skjønne Drøm.
-Kain var Higen uden Lindring,
+<w>Kain</w> var Higen uden Lindring,
 Hvileløs, som Bjergets Strøm,
 <pb n="12" facs="022.jpg"/>Var Bevidsthed om en Brøde,
 Som til evig Tid skal føde
@@ -395,7 +398,7 @@ Bag et Slør af falmet Lyst.
   <title>Med en Blomsterskaal</title>
   <firstline>Naar den Vase, som med friske</firstline>
   <source pages="18-19" facsimile-pages="29-30"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -440,7 +443,7 @@ Ungdomstiden frem til mig.
   <firstline>Har I det hørt, hvad nys er skeet?</firstline>
   <source pages="20-22" facsimile-pages="31-33"/>
   <dates><event>1843-11-08</event></dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -504,7 +507,7 @@ Lad os tømme det for deres Mester!
   <subtitle>1848.</subtitle>
   <firstline>Fra et Land, hvis Luft er svanger</firstline>
   <source pages="23-25" facsimile-pages="34-36"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -582,7 +585,7 @@ For, at gjemt er ikke glemt?
   <title>Et Morgensyn</title>
   <firstline>Der var saa ensomt og stille</firstline>
   <source pages="26-31" facsimile-pages="37-42"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -721,7 +724,7 @@ Lyder dens Efterklang.
   <subtitle>November 1863.</subtitle>
   <firstline>Den gamle Leo holdt en Støi</firstline>
   <source pages="32-35" facsimile-pages="43-46"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -832,7 +835,7 @@ Lalala osv.
   <firstline>Igjen romantisk! Naar faaer dog engang</firstline>
   <source pages="39-40" facsimile-pages="50-51"/>
   <dates><written>1881-08-23</written></dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -929,7 +932,7 @@ Det er en Egeknast.
   <firstline>Hver Fugl sin Rede bygger, som dens Art er til</firstline>
   <source pages="44-45" facsimile-pages="54-55"/>
   <dates><event>1882-03-11</event></dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -981,7 +984,7 @@ Og lær dem at skue mod Himlen!
   <title>Skiftende Tider</title>
   <firstline>Sylvesternatten er graa som Bly</firstline>
   <source pages="46-53" facsimile-pages="56-63"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1181,7 +1184,7 @@ Frelseren, den Eenbaarne.
   <subtitle>(Albumsblad.)</subtitle>
   <firstline>Halvt moden Kvinde, halvt et Barn</firstline>
   <source pages="54-55" facsimile-pages="64-65"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1235,7 +1238,7 @@ En misanthropisk Ugle.
   <subtitle>d. 17de Juli—20de August 1883.</subtitle>
   <firstline>En Maage strakte Vingen hvid</firstline>
   <source pages="56-57" facsimile-pages="66-67"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1278,7 +1281,7 @@ Og det er dette Blad.
   <firstline>Faldende Blad!</firstline>
   <source pages="58-59" facsimile-pages="68-69"/>
   <dates><written>1883-11-12</written></dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1327,7 +1330,7 @@ Lær mig at skilles fra Lyset og Dagen
   <firstline>Jeg gik en tidlig Foraarsdag</firstline>
   <source pages="60-64" facsimile-pages="70-74"/>
   <dates><written>1883-11-25</written></dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1457,7 +1460,7 @@ Og flagred mig forbi.
   <firstline>Der var en Mand, som eied møntet Guld</firstline>
   <source pages="65-67" facsimile-pages="75-77"/>
   <dates><event>1884-03-27</event></dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1523,7 +1526,7 @@ Nu er den løst, nu priser han Guds Naade.
   <title>Hvad angaaer det dig?</title>
   <firstline>Hvad angaaer det dig, at jeg elsker din Røst</firstline>
   <source pages="68" facsimile-pages="78"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1550,7 +1553,7 @@ Af mit Hjerte, hvad angaaer det dig?
   <title>Spørgsmaal og Svar</title>
   <firstline>Hvad er Kjærlighed? En Morgendraabe</firstline>
   <source pages="69" facsimile-pages="79"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1582,7 +1585,7 @@ Mindes Jordens Blomster med et Suk.
   <firstline>Hvad er det for en stille og dog saa mægtig Klang</firstline>
   <source pages="70-72" facsimile-pages="80-82"/>
   <dates><written>1884-11-18</written></dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1669,7 +1672,7 @@ Al Skabningens Lovsang til Guds Ære.
   <firstline>Alene i den lyse Lund</firstline>
   <source pages="73-74" facsimile-pages="83-84"/>
   <dates><written>1885-08-31</written></dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1724,7 +1727,7 @@ Gudsrøsten i sit Indre.
   <title>Sølvbryllupssang</title>
   <firstline>Det er saa yndigt at følges ad</firstline>
   <source pages="75-76" facsimile-pages="85-86"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1770,7 +1773,7 @@ Derhen, hvor Lyset paany udvælder
   <firstline>Jeg saae et Syn i Drømme</firstline>
   <source pages="77-85" facsimile-pages="87-95"/>
   <dates><written>1886-11-07</written></dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2009,7 +2012,7 @@ Gjennem Midnattens Port.
   <firstline>Paa Sancta Claras Klostergrund</firstline>
   <source pages="86-87" facsimile-pages="96-97"/>
   <dates><event>1887-05-11</event></dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2068,7 +2071,7 @@ Endnu et langt Kapitel!
   <firstline>Der fløi engang et vinget Ord</firstline>
   <source pages="88-89" facsimile-pages="98-99"/>
   <dates><event>1887-05-11</event></dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2125,7 +2128,7 @@ En Skaal for Husets fagre Frue!
   <firstline>Der ligger en Dal i Schweizerland</firstline>
   <source pages="93-98" facsimile-pages="103-108"/>
   <dates><written>1887-12-19</written></dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2274,7 +2277,7 @@ En slig Opstandelses Morgen!
   <firstline>Tyst over Søens blanke Flade</firstline>
   <source pages="99-101" facsimile-pages="109-111"/>
   <dates><written>1888-01-16</written></dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2338,7 +2341,7 @@ Tindrende Stjerner gjæstmildt frem
   <firstline>I Haven sad en Edderkop</firstline>
   <source pages="102-106" facsimile-pages="112-116"/>
   <dates><written>1888-01-25</written></dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2471,7 +2474,7 @@ Saa blev den Recensent.
   <firstline>Fader Holberg, lever du endnu?</firstline>
   <source pages="107-119" facsimile-pages="117-129"/>
   <dates><event>1884-12-03</event><written>1888-02-06</written></dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2811,7 +2814,7 @@ Mens han leer deraf med Guders Latter.
   <firstline>Jeg synger ei, fordi jeg maa</firstline>
   <source pages="120-123" facsimile-pages="130-133"/>
   <dates><written>1888-02-13</written></dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2916,7 +2919,7 @@ Mit og min Mesters Spil.
   <firstline>Jeg sad en Aften ene i min Stue</firstline>
   <source pages="124" facsimile-pages="134"/>
   <dates><written>1888-02-14</written></dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2949,7 +2952,7 @@ Og kastede den frække Tøs paa Døren.
   <firstline>Naar nu jeg vil besøge mine Venner</firstline>
   <source pages="125-131" facsimile-pages="135-141"/>
   <dates><written>1888-02-19</written></dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3144,7 +3147,7 @@ Og see et større Syn, naar Sol er oppe.
   <firstline>Naar en Romantiker, som ofte hænd’s</firstline>
   <source pages="132" facsimile-pages="142"/>
   <dates><written>1888-02-21</written></dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3177,7 +3180,7 @@ Og dunkle Minder om min tabte Hale.
   <firstline>Kom, Børn! skal I see den gamle Hest</firstline>
   <source pages="133-137" facsimile-pages="143-147"/>
   <dates><written>1888-02-22</written></dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3302,7 +3305,7 @@ For Mennesker og Mølleheste.
   <firstline>Jeg stod i Kvæld paa den bratte Kyst</firstline>
   <source pages="138-140" facsimile-pages="148-150"/>
   <dates><written>1888-02-26</written></dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3380,7 +3383,7 @@ Som fødes og døer paa Jorden.
   <firstline>I Ebbetiden sees der tidt paa Sandet</firstline>
   <source pages="141" facsimile-pages="151"/>
   <dates><written>1888-02-26</written></dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3413,7 +3416,7 @@ Men stiger Floden, svinder det i Dybet.
   <firstline>I de moderne Digterconventikler</firstline>
   <source pages="142" facsimile-pages="152"/>
   <dates><written>1888-02-27</written></dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3446,7 +3449,7 @@ Men ikke Bjælder paa en Narrehue.
   <firstline>Mit Modersmaal, du gamle Træ, hvis Krone</firstline>
   <source pages="143" facsimile-pages="153"/>
   <dates><written>1888-02-27</written></dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3479,7 +3482,7 @@ Monstro du derfor bedre Frugt vil bære?
   <firstline>Jeg veed det vel, at man skal elske Næsten</firstline>
   <source pages="144" facsimile-pages="154"/>
   <dates><written>1888-02-28</written></dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3512,7 +3515,7 @@ Det falder mig usigelig besværligt.
   <firstline>Grib ind i Livet, lyder det i Chor</firstline>
   <source pages="145-146" facsimile-pages="155-156"/>
   <dates><written>1888-02-29</written></dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3566,7 +3569,7 @@ En Dragt for Livet — om end ei for dette.
   <firstline>Siig, fagre Jomfrulilie, hvad jeg tør</firstline>
   <source pages="147" facsimile-pages="157"/>
   <dates><written>1888-02-29</written></dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3599,7 +3602,7 @@ Paa Skriftens Ord, at Eet er det Fornødne.
   <firstline>At Skyggen følger Legmet, har man seet</firstline>
   <source pages="148-149" facsimile-pages="158-159"/>
   <dates><written>1888-03-02</written></dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3653,7 +3656,7 @@ Sin Gjernings Sjæl, ei Skyggen af dens Ære.
   <firstline>Forleden paa en sneebedækket Mark</firstline>
   <source pages="150-151" facsimile-pages="160-161"/>
   <dates><written>1888-03-03</written></dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3707,7 +3710,7 @@ Blev Hjertet sommervarmt af Ungdomsminder.
   <firstline>Der staaer en løvrig Eg, ei alderssvag</firstline>
   <source pages="152" facsimile-pages="162"/>
   <dates><written>1888-03-04</written></dates>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3741,7 +3744,7 @@ Forblive ung som du — indtil jeg fældes!
   <keywords>molbech</keywords>
   <title>Efterskrift</title>
   <source pages="I-IV" facsimile-pages="165-168"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <prose>
