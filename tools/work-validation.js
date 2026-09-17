@@ -363,7 +363,7 @@ const collectPageBreakIssues = (
         issues.push(
           `${filename}: text ${textId} has an uninterpretable pages value: ${pages}.`,
         );
-      } else if (pageBreakCount > 0) {
+      } else if (pageBreakCount > 0 && ignorePageBreakCount !== true) {
         issues.push(
           `${filename}: text ${textId} has ${pageBreakCount} <pb> elements, but no simple pages interval.`,
         );
