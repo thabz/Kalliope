@@ -110,17 +110,16 @@ kan vurderes. Mangler dag, måned eller år, registreres datoen ikke som fuld
 metadata-dato; den bliver stående urørt i teksten. Følg formatreglerne i
 `docs/xml-work-format.md`.
 
-### 11. Hold titler og førstelinjer fri for markup
+### 11. Følg feltets regler for titler og førstelinjer
 
-Titler og førstelinjer må aldrig indeholde markup. De skal altid være ren tekst.
-Strukturelle oplysninger, formatering og semantiske elementer skal placeres i
-de relevante XML-elementer uden for `<title>` og `<firstline>`.
+Bevar kildefodnoter i titler og undertitler efter
+[XML-formatguiden](xml-work-format.md#text-head). Førstelinjer og indeksfelter
+følger guidens regler om ren tekst; digtvisning og navigationsfelter har ikke
+samme indhold. Følg også formatguidens regler om titelstruktur og tegnsætning
+frem for at overføre én normaliseringsregel til alle felter.
 
-Titelfelter normaliseres desuden uden afsluttende tegnsætning. Et punktum,
-komma, kolon, semikolon, spørgsmålstegn eller udråbstegn sidst i den trykte
-overskrift udelades derfor i titelmetadata. Undertitler, overtitler og selve den
-diplomatiske transskription følger fortsat kildens tegnsætning. Se
-`docs/xml-work-format.md` for de omfattede titelfelter.
+Det tidligere generelle forbud mod titelmarkup er erstattet; se
+[ERF-005](arbejdserfaringer.md#erf-005-titelfodnoter).
 
 ### 12. Bevar interne sideskift semantisk
 

@@ -33,7 +33,7 @@ The normal deliverables are:
 - a JPEG of a separate graphic front cover when one exists
 - explicit XML `TODO:` notes for genuine unresolved questions
 - a clean, validated repository change
-- a complete GitHub pull request after user approval
+- a complete GitHub pull request once authorized under `AGENTS.md`
 
 ## Authority and required documentation
 
@@ -54,6 +54,12 @@ Before changing files:
 
 This skill defines the workflow. It does not reproduce the complete Kalliope
 XML specification.
+
+Read the relevant examples in
+[arbejdserfaringer](../../../docs/arbejdserfaringer.md) for title pages,
+indentation, OCR ambiguity, completion and title footnotes. They explain
+known failures and their limits; current format documentation remains
+authoritative.
 
 The current repository documentation and build system define the XML format.
 Existing corpus files provide examples, but current documentation takes
@@ -356,6 +362,12 @@ Use this lifecycle:
 The published attestation contains only `model` and an ISO 8601 `datetime`
 with timezone. Do not add a hash, sidecar reference or automatic invalidation
 metadata to it. Preserve older attestations when a later model adds another.
+
+Both proofreading passes are agent responsibilities. Missing proofreading or
+an unavailable independent reviewer is unfinished or blocked agent work, not
+a routine task to assign to the user. Keep the draft incomplete. Ask for
+editorial judgment only on concrete questions that remain after investigating
+the source and applicable rules.
 
 ## 4. Ignore the PDF's existing OCR layer
 
@@ -1453,7 +1465,14 @@ Do not suppress or bypass a failing test simply to obtain a green build.
 
 ## 22. Inspect the final diff and clean the workspace
 
-Before presenting the change:
+Before presenting the change, follow the closing routine in
+[arbejdserfaringer](../../../docs/arbejdserfaringer.md#ved-afslutning): preserve
+relevant decision reasons and a concise review summary in the handoff before
+discarding scratch material. Keep the checkpoint and its inventory, findings
+and review records outside the worktree while they are needed for verification.
+Do not remove those dependencies during the cleanup below.
+
+Then:
 
 - remove temporary OCR outputs
 - remove rendered pages not intended for the repository
@@ -1520,8 +1539,10 @@ READY when the producer reviewed a completion page, a finding is `open` or
 `fixed`, a candidate category is incomplete, a page remains unreviewed or a
 recorded test has not passed.
 
-Prepare and validate the complete change, then present it to the user before
-committing or pushing.
+Prepare and validate the complete change. Follow `AGENTS.md` and existing user
+authorization for commit and push: issue fixes have the documented permission;
+outside that workflow, present the completed change for the user's review and
+explicit commit/push instruction.
 
 Report concisely:
 
@@ -1545,12 +1566,13 @@ Report concisely:
 - remaining `TODO:` notes
 - exact files intended for the commit
 
-Do not commit, amend or push until the user has explicitly reviewed the change
-and requested commit/push, as required by `AGENTS.md`.
+Use the handoff and evaluation sections of the `add-kalliope-work` PR template.
+Routine checks belong to the agent; list only unresolved editorial decisions
+under `Bruger`, or write `Ingen udestående brugerbeslutninger`.
 
-## 24. Create the GitHub pull request after approval
+## 24. Create the GitHub pull request once authorized
 
-After explicit user approval:
+Once authorized under `AGENTS.md` and the user's instructions:
 
 1. Generate the complete facsimile directory from the source PDF with the
    repository's facsimile tool.
@@ -1586,7 +1608,10 @@ The PR description must state concretely:
 Use an English GitHub closing keyword such as `Fixes #123` when the PR must
 close an issue automatically.
 
-Do not wait for GitHub CI unless the user explicitly asks for that.
+Follow `AGENTS.md` for CI: issue fixes require green checks before completion;
+for other PRs, wait only when the user asks. Report the known CI status without
+claiming that pending checks have passed. Further commits and pushes still
+require the authorization applicable to the task.
 
 The complete pull request is the final deliverable.
 
@@ -1691,8 +1716,11 @@ The task is complete only when all applicable items are true:
       `complete`, and `<workhead>` contains the independent model attestation.
 - [ ] The complete repository test suite passes.
 - [ ] `git diff --check` passes.
-- [ ] Temporary OCR and scratch files were removed.
+- [ ] Relevant decision reasons and review results were preserved in the
+      handoff; temporary files were removed except checkpoint dependencies
+      still needed outside the worktree for verification.
 - [ ] The final diff contains only intended files.
-- [ ] The user reviewed the completed change before commit and push.
-- [ ] After approval, the change was committed, pushed and submitted as a
+- [ ] Commit and push were authorized according to `AGENTS.md` and the user's
+      instructions, including prior review when required.
+- [ ] Once authorized, the change was committed, pushed and submitted as a
       complete GitHub pull request.

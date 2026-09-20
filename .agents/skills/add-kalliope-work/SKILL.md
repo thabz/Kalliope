@@ -14,6 +14,11 @@ Løs selv alt, der kan afgøres pålideligt ud fra repositoryets struktur, den
 angivne kilde, klare bibliografiske oplysninger eller maskinel validering.
 Gæt ikke ved redaktionelle eller filologiske tvivlsspørgsmål.
 
+Titelblads-, metadata-, struktur- og facsimilekontrol er agentens ansvar,
+også når kontrollen kræver visuel læsning. Manglende korrektur er uafsluttet
+agentarbejde, ikke en standardopgave til brugeren. Ved PDF-import gælder begge
+fulde korrekturgennemgange, herunder den uafhængige anden gennemgang.
+
 Når kilden er en komplet scannet PDF, skal `$pdf-to-kalliope` også bruges. Dens
 krav styrer PDF-inventar, OCR, transskription, facsimilekontrol og korrektur;
 denne skill styrer den generelle værkindsættelse, PR-checklisten og den tydelige
@@ -50,6 +55,10 @@ Brug de genererede korpusdata efter reglerne i `AGENTS.md` til brede opslag og
 audit. Gå til konkrete XML-filer, når kilde-XML eller sammenlignelig markup er
 nødvendig. Dokumentation og validering har forrang for tilfældig ældre praksis.
 Opfind ikke et nyt format, når repositoryet allerede har en etableret løsning.
+
+Læs de eksempler i [arbejdserfaringerne](../../../docs/arbejdserfaringer.md),
+som er relevante for værket. De forklarer kendte fejl og deres grænser;
+de aktuelle formatregler er fortsat autoritative.
 
 ## 2. Indsæt og kontrollér værket
 
@@ -95,6 +104,12 @@ paginering eller tvivl om kursiv, spatiering og anden typografi.
 Hvis et åbent punkt senere kan løses sikkert af Agent, skal det løses og
 verificeres før overdragelsen i stedet for blot at stå som udestående.
 
+Brug kun kategorien `Bruger` til konkrete redaktionelle beslutninger, der
+fortsat kræver brugerens skøn efter undersøgelse. Angiv placering, undersøgte
+muligheder, belæg og anbefaling. Et teknisk problem eller en manglende reviewer
+meldes som en blokering i agentarbejdet. Når ingen brugerbeslutninger udestår,
+skriv `Ingen udestående brugerbeslutninger`.
+
 ## 4. Forbered review og pull request
 
 Før brugerens review skal du sammenfatte:
@@ -109,12 +124,11 @@ Når PR'en må oprettes, læs og brug
 [PR-skabelonen](references/pr-description.md). PR-beskrivelsen skal begynde med
 checklisten og derefter indeholde alle skabelonens obligatoriske afsnit.
 
-Efter PR-oprettelsen skal du vente på GitHub CI og kontrollere det endelige
-resultat. Meld først opgaven løst, når alle krævede CI-checks er grønne. Hvis en
-check fejler, skal fejlen undersøges og relevante fejl rettes og pushes, så CI
-kører igen. Kan CI ikke bringes i mål inden for opgavens rammer, skal opgaven
-meldes som uafsluttet med den konkrete blokering; en oprettet PR alene er ikke
-tilstrækkelig.
+Følg `AGENTS.md` og brugerens instruktioner om CI: Ved issue-fixes skal krævede
+checks være grønne før færdigmelding; ved øvrige PR'er ventes kun, når brugeren
+beder om det. Oplys den faktisk kendte CI-status. Undersøg fejl inden for
+opgavens rammer; tilladelse til efterfølgende commit og push følger fortsat
+`AGENTS.md` og allerede givne instruktioner.
 
 Tilpas checklisten til værket: fjern kun punkter, der reelt ikke er relevante,
 og tilføj konkrete værkspecifikke punkter efter behov. Bevar kategorierne
@@ -127,8 +141,16 @@ og tilføj konkrete værkspecifikke punkter efter behov. Bevar kategorierne
 Markér aldrig en manuel brugeropgave som færdig på brugerens vegne. Skriv
 heller aldrig, at en validering er OK, hvis den ikke faktisk er kørt og bestået.
 
-En PR er klar fra Agent' side, når alt sikkert automatiserbart arbejde er
-udført, det resterende menneskelige arbejde er konkret, lokaliseret og
-overskueligt, og alle krævede CI-checks er grønne. PR-beskrivelsen skal inden
-for få sekunder vise, hvad der er indsat, kilden, hvad Agent har kontrolleret,
+En PR er klar fra Agent/Codex' side, når alt sikkert automatiserbart arbejde
+inklusive kildekontrol, korrektur og validering er udført, det resterende
+menneskelige arbejde er konkret, lokaliseret og overskueligt, eventuelle
+brugerbeslutninger er konkret beskrevet, og alle krævede CI-checks er grønne.
+PR-beskrivelsen skal inden for få sekunder vise, hvad der er indsat, kilden,
+hvad Agent/Codex har kontrolleret,
 hvad der mangler, hvor brugeren skal kigge, og hvilke usikkerheder der findes.
+
+Ved væsentlige rettelser følges afslutningsrutinen i
+[arbejdserfaringerne](../../../docs/arbejdserfaringer.md#ved-afslutning).
+Bevar relevante begrundelser før scratchoprydning, og udfyld PR-skabelonens
+korte evaluering. Opdater kun erfaringer eller instruktioner, hvor fundet
+underbygger en overførbar forbedring inden for opgavens rammer.

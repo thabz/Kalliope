@@ -21,6 +21,8 @@ Læs den relevante specialdokumentation før ændringer på området:
   strofer og typografi mod et facsimile
 - `docs/ocr-korrektur-laerebog.md` ved generelle læringsprincipper for redigering
   og reparation af OCR-scannede tekster
+- `docs/arbejdserfaringer.md` ved genbrug af erfaringer fra værkimport og
+  korrektur eller forbedring af disse arbejdsgange; læs de relevante eksempler
 - `docs/kalliope-xml-design-v1.1.md` ved ændringer i XML-modellen for
   publikationer, antologier og tekstforekomster
 - `docs/kalliope-masterplan.md` ved arbejde med korpusets afgrænsning,
