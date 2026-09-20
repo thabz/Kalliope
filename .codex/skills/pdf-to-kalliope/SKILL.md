@@ -870,6 +870,70 @@ existing analyzers, preserves text ID and page range, aggregates all candidates
 and flags a very long block with no stanza boundaries. Resolve every reported
 candidate in the findings register.
 
+### Use OCR geometry before visual structure review
+
+Generate positioned OCR for each poetry page. Tesseract TSV is the supported
+raw interchange format:
+
+```shell
+tesseract PAGE.jpg /tmp/page -l dan --psm 6 tsv
+node .codex/skills/pdf-to-kalliope/scripts/analyze-stanza-geometry.js \
+  /tmp/page.tsv > /tmp/page-stanzas.json
+node .codex/skills/pdf-to-kalliope/scripts/analyze-indentation-geometry.js \
+  /tmp/page.tsv > /tmp/page-indentation.json
+```
+
+Raw page TSV may include titles, page numbers, illustrations or more than one
+poem. Its output is an inventory of geometric candidates, not a final poem
+report. For comparison with XML, create normalized scratch JSON containing
+only the ordered verse lines from one poem or continuous printed block:
+
+```json
+{
+  "lines": [
+    {"page": 11, "left": 375, "top": 615, "width": 900, "height": 32,
+     "text": "First verse line"},
+    {"page": 11, "left": 376, "top": 679, "width": 850, "height": 31,
+     "text": "Second verse line"},
+    {"page": 11, "left": 374, "top": 743, "width": 880, "height": 32,
+     "text": "Third verse line"}
+  ],
+  "observed_boundaries": [3, 6, 9],
+  "observed_indentation": [0, 0, 0]
+}
+```
+
+Pass the same `lines` list to both geometry scripts. Pass
+`observed_boundaries` to `analyze-stanza-geometry.js`; each number is the
+one-based verse line after which the XML currently has a blank stanza
+separator. Pass `observed_indentation` to
+`analyze-indentation-geometry.js`; it must contain the XML leading-space count
+for every verse line. These comparison fields make the reports flag both
+missing and unsupported XML markup.
+
+The stanza geometry analyzer estimates normal top-to-top line pitch separately
+on each page, using the work-level median only when a page has fewer than two
+measurable gaps. Distances no greater than `1.25` times normal pitch are treated
+as continuous verse, distances of at least `1.75` times normal pitch are
+proposed as stanza boundaries, and intermediate distances remain explicit
+ambiguous candidates. It never infers a boundary across a page break. The
+output includes all measured gaps, suggested boundaries, suggested stanza
+lengths and XML comparison candidates.
+
+The indentation geometry analyzer estimates a normal left edge and character
+advance separately on each page. Displacements of at most one character are
+aligned; displacements of at least `1.5` characters are indentation candidates;
+intermediate displacements remain explicit ambiguous candidates. It reports
+both printed indents missing from XML and XML indents unsupported by the print.
+It does not automatically choose an exact number of XML spaces.
+
+Thresholds may be overridden in scratch JSON for diagnostic experiments, but
+never tune them merely to make one expected poem pass. Keep the defaults unless
+tests from several visually reviewed pages demonstrate a systematic need.
+Inspect low-confidence OCR boxes, page skew, mixed columns and decorative
+initials before accepting a geometric result. Preserve both JSON reports in
+scratch review data and disposition every candidate before the visual gate.
+
 ### Mandatory visual stanza and indentation gate
 
 Machine analysis is only a candidate generator. Before a PDF work may be
@@ -902,6 +966,23 @@ line's indentation also lost. Compare the horizontal start of every line with
 the other lines in its printed stanza and encode supported indentation with
 leading spaces. A blank line before an indented verse is not a substitute for
 the indentation.
+
+Do not infer indentation from line length, centering, surrounding whitespace
+or visual impression alone. Kalliope verse indentation always represents a
+printed displacement of more than one normal character advance. A displacement
+of one character advance or less is never indentation and must be treated as
+scan, antialiasing, glyph-overhang or measurement noise.
+
+If a line start is even slightly ambiguous, measure its left-edge x-coordinate
+in the page image and compare it with the other verse lines in the same printed
+block. Estimate the normal character advance from several ordinary lowercase
+words on the same page; do not use a narrow punctuation mark, a decorative
+initial or a single glyph as the unit. Encode an indent only when the measured
+displacement clearly exceeds one normal character advance and is confirmed in
+the page image. Record the coordinates, estimated character advance and
+decision in the visual structure record. OCR bounding boxes may assist this
+measurement but must be checked against the image because punctuation and
+decorative initials can distort them.
 
 After this visual pass, run `analyze-whole-work.js` on the complete final XML
 and inspect the report for **all** poems. Never filter the report to one named
