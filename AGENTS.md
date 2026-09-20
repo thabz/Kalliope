@@ -60,6 +60,9 @@ digtere.
 ## Git og GitHub
 
 - Hele testpakken skal køres og bestå, før der oprettes en PR.
+- Opret altid worktrees under
+  `$HOME/src/kalliope-worktrees/<digterid>-<titel>-<årstal>/`, fx
+  `$HOME/src/kalliope-worktrees/blicher-digte-1814/`.
 - Når brugeren beder om at få fikset et issue, skal agenten starte i et nyt
   worktree baseret på `origin/master` og først melde arbejdet klar, når GitHub
   CI er gennemført.
