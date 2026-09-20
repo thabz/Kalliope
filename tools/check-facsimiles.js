@@ -20,6 +20,7 @@ const requestConcurrency =
     ? configuredRequestConcurrency
     : 12;
 const representativeThumbnailWidth = 250;
+const pdfUrlPattern = /https?:\/\/[^\s<>"']+\.pdf(?:[?#][^\s<>"']*)?/iu;
 
 const normalizeFacsimileId = facsimile => facsimile.replace(/\.pdf$/i, '');
 
@@ -38,6 +39,29 @@ const facsimileAssetUrls = (baseUrl, poetId, facsimile) => {
   );
   return [pageUrl, thumbnailUrl];
 };
+
+const sourceReferencesPdf = source => {
+  const href = source.getAttribute('href') ?? '';
+  return pdfUrlPattern.test(href) || pdfUrlPattern.test(source.textContent ?? '');
+};
+
+const findMissingFacsimileDeclarations = workFiles =>
+  workFiles.flatMap(({ content, filename }) => {
+    if (/<pagebreaks\b/.test(content) === false) {
+      return [];
+    }
+
+    const document = new DOMParser().parseFromString(content, 'text/xml');
+    const missingSources = Array.from(
+      document.getElementsByTagName('source'),
+    ).filter(
+      source =>
+        sourceReferencesPdf(source) === true &&
+        (source.getAttribute('facsimile') ?? '') === '',
+    );
+
+    return missingSources.length > 0 ? [filename] : [];
+  });
 
 const findFacsimileReferences = (workFiles, baseUrl = defaultBaseUrl) => {
   const referencesByUrl = new Map();
@@ -106,7 +130,18 @@ const checkFacsimileReferences = async (
 const run = async () => {
   const baseUrl =
     process.env.KALLIOPE_FACSIMILE_BASE_URL ?? defaultBaseUrl;
-  const references = findFacsimileReferences(loadTrackedWorkFiles(), baseUrl);
+  const workFiles = loadTrackedWorkFiles();
+  const missingDeclarations = findMissingFacsimileDeclarations(workFiles);
+  if (missingDeclarations.length > 0) {
+    console.error(
+      'Følgende sideopmærkede PDF-værker mangler facsimilemetadata på kilden:',
+    );
+    missingDeclarations.forEach(filename => console.error(`- ${filename}`));
+    process.exitCode = 1;
+    return;
+  }
+
+  const references = findFacsimileReferences(workFiles, baseUrl);
   const failures = await checkFacsimileReferences(references);
 
   if (failures.length > 0) {
@@ -135,6 +170,7 @@ export {
   checkFacsimileReferences,
   facsimileAssetUrls,
   facsimilePageUrl,
+  findMissingFacsimileDeclarations,
   findFacsimileReferences,
   isWorkFileContent,
 };

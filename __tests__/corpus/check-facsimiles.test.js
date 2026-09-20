@@ -2,6 +2,7 @@ import {
   checkFacsimileReferences,
   facsimileAssetUrls,
   facsimilePageUrl,
+  findMissingFacsimileDeclarations,
   findFacsimileReferences,
   isWorkFileContent,
 } from '../../tools/check-facsimiles.js';
@@ -43,6 +44,40 @@ describe('facsimile checker unit logic', () => {
         ),
       },
     ]);
+  });
+
+  it('requires facsimile metadata when a page-aware work source references a PDF', () => {
+    const filename = 'fdirs/poet/work.xml';
+    expect(
+      findMissingFacsimileDeclarations([
+        {
+          filename,
+          content: `
+<kalliopework>
+  <workhead>
+    <pagebreaks/>
+    <source href="https://example.org/catalogue">Printed source. PDF: https://example.org/scan.pdf.</source>
+  </workhead>
+</kalliopework>`,
+        },
+      ]),
+    ).toEqual([filename]);
+  });
+
+  it('allows PDF references outside complete page-aware facsimile works', () => {
+    expect(
+      findMissingFacsimileDeclarations([
+        {
+          filename: 'fdirs/poet/andre.xml',
+          content: `
+<kalliopework>
+  <workhead>
+    <source href="https://example.org/excerpt.pdf"/>
+  </workhead>
+</kalliopework>`,
+        },
+      ]),
+    ).toEqual([]);
   });
 
   it('builds safe URLs for facsimile ids', () => {
