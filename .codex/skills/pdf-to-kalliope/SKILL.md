@@ -599,6 +599,21 @@ table of contents may be wrong.
 Do not let a new physical page create a false text, stanza or paragraph
 boundary.
 
+For every proposed new `<text>`, record positive source evidence that a new
+logical text begins. A printed title or number is direct evidence. A titleless
+poem needs a corroborating contents entry, an unmistakable printed division or
+other explicit structural evidence; a page break, large top margin or
+capitalized first verse is not enough. When a poetry page begins without a
+printed heading, first test whether it continues the preceding poem: compare
+metre, stanza length, typography, syntax and the preceding page's ending. Do
+not manufacture a catalogue title from the first verse merely because OCR or
+page inventory treated the page as a separate block.
+
+As a final segmentation audit, inspect every `<text>` boundary in source order
+and answer both questions from the facsimile: what visibly ends the preceding
+text, and what positively begins the next one? An unsupported answer on either
+side is an open finding; merge or split only from source evidence.
+
 ## 7. Create the complete Kalliope XML
 
 Create one complete work XML according to `docs/xml-work-format.md` and related
@@ -869,6 +884,146 @@ The wrapper extracts every `<poetry>` block from the final XML, invokes both
 existing analyzers, preserves text ID and page range, aggregates all candidates
 and flags a very long block with no stanza boundaries. Resolve every reported
 candidate in the findings register.
+
+### Use OCR geometry before visual structure review
+
+Generate positioned OCR for each poetry page. Tesseract TSV is the supported
+raw interchange format:
+
+```shell
+tesseract PAGE.jpg /tmp/page -l dan --psm 6 tsv
+node .codex/skills/pdf-to-kalliope/scripts/analyze-stanza-geometry.js \
+  /tmp/page.tsv > /tmp/page-stanzas.json
+node .codex/skills/pdf-to-kalliope/scripts/analyze-indentation-geometry.js \
+  /tmp/page.tsv > /tmp/page-indentation.json
+```
+
+Raw page TSV may include titles, page numbers, illustrations or more than one
+poem. Its output is an inventory of geometric candidates, not a final poem
+report. The TSV parser removes narrow and very short OCR artifacts in the
+outer page margin, but that does not replace selecting the actual poetry
+region. For comparison with XML, create normalized scratch JSON containing only
+the ordered verse lines from one poem or continuous printed block:
+
+```json
+{
+  "lines": [
+    {"page": 11, "left": 375, "top": 615, "width": 900, "height": 32,
+     "text": "First verse line"},
+    {"page": 11, "left": 376, "top": 679, "width": 850, "height": 31,
+     "text": "Second verse line"},
+    {"page": 11, "left": 374, "top": 743, "width": 880, "height": 32,
+     "text": "Third verse line"}
+  ],
+  "observed_boundaries": [3, 6, 9],
+  "observed_indentation": [0, 0, 0]
+}
+```
+
+Pass the same `lines` list to both geometry scripts. Pass
+`observed_boundaries` to `analyze-stanza-geometry.js`; each number is the
+one-based verse line after which the XML currently has a blank stanza
+separator. Pass `observed_indentation` to
+`analyze-indentation-geometry.js`; it must contain the XML leading-space count
+for every verse line. These comparison fields make the reports flag both
+missing and unsupported XML markup.
+
+The stanza geometry analyzer estimates normal top-to-top line pitch separately
+on each page, using the work-level median only when a page has fewer than two
+measurable gaps. Distances no greater than `1.25` times normal pitch are treated
+as continuous verse, distances of at least `1.75` times normal pitch are
+proposed as stanza boundaries, and intermediate distances remain explicit
+ambiguous candidates. It never infers a boundary across a page break. The
+output includes all measured gaps, suggested boundaries, suggested stanza
+lengths and XML comparison candidates.
+
+The indentation geometry analyzer estimates a normal left edge and character
+advance separately on each page. Displacements of at most one character are
+aligned; displacements of at least `1.5` characters are indentation candidates;
+intermediate displacements remain explicit ambiguous candidates. It reports
+both printed indents missing from XML and XML indents unsupported by the print.
+It does not automatically choose an exact number of XML spaces.
+
+Both analyzers estimate page rotation from the within-line OCR word boxes and
+mathematically rotate the coordinates back to a level page before measuring.
+If word geometry is insufficient, they use a robust estimate from line-start
+drift. Rotation is reported per page with its estimation basis. The supported
+automatic range is up to 10 degrees in either direction; larger estimates must
+be treated as a layout or OCR failure and the page must be deskewed or
+reprocessed. Regression tests must cover both positive and negative rotation,
+not only already level pages.
+
+Thresholds may be overridden in scratch JSON for diagnostic experiments, but
+never tune them merely to make one expected poem pass. Keep the defaults unless
+tests from several visually reviewed pages demonstrate a systematic need.
+Inspect low-confidence OCR boxes, page skew, mixed columns and decorative
+initials before accepting a geometric result. Preserve both JSON reports in
+scratch review data and disposition every candidate before the visual gate.
+
+### Mandatory visual stanza and indentation gate
+
+Machine analysis is only a candidate generator. Before a PDF work may be
+called proofread or complete, inspect the page image for **every** poetry block
+in the work at a legible size and compare its complete final XML body with the
+printed layout. This is a whole-work gate, not a spot check and not a review of
+only the poem that most recently failed.
+
+For every poem, record in scratch working data at least:
+
+- `text_id` and all printed/facsimile pages;
+- the visually observed stanza lengths in order;
+- the visually observed leading-space pattern for each stanza or irregular
+  block;
+- the final analyzer status and candidate count;
+- the disposition of every candidate against the page image;
+- the reviewer who performed the visual comparison.
+
+Treat each blank line in `<poetry>` as an editorial claim that the print has a
+visible stanza boundary. Verify every existing XML blank line against the page
+image, and verify conversely that every visible stanza boundary is represented
+in XML. Count the verse lines between boundaries and compare those counts with
+the visual record. Do not infer a boundary from OCR whitespace, OCR text
+blocks, line coordinates, rhyme, metre or a preferred regular form.
+
+Inspect indentation independently of stanza boundaries. OCR commonly turns an
+indented line into a separate text block; a recurring failure pattern is a
+printed three-line stanza becoming XML fragments of `2 + 1`, with the third
+line's indentation also lost. Compare the horizontal start of every line with
+the other lines in its printed stanza and encode supported indentation with
+leading spaces. A blank line before an indented verse is not a substitute for
+the indentation.
+
+Do not infer indentation from line length, centering, surrounding whitespace
+or visual impression alone. Kalliope verse indentation always represents a
+printed displacement of more than one normal character advance. A displacement
+of one character advance or less is never indentation and must be treated as
+scan, antialiasing, glyph-overhang or measurement noise.
+
+If a line start is even slightly ambiguous, measure its left-edge x-coordinate
+in the page image and compare it with the other verse lines in the same printed
+block. Estimate the normal character advance from several ordinary lowercase
+words on the same page; do not use a narrow punctuation mark, a decorative
+initial or a single glyph as the unit. Encode an indent only when the measured
+displacement clearly exceeds one normal character advance and is confirmed in
+the page image. Record the coordinates, estimated character advance and
+decision in the visual structure record. OCR bounding boxes may assist this
+measurement but must be checked against the image because punctuation and
+decorative initials can distort them.
+
+After this visual pass, run `analyze-whole-work.js` on the complete final XML
+and inspect the report for **all** poems. Never filter the report to one named
+text and treat that as a work-level pass. Every stanza, indentation and wrapper
+candidate must be fixed or recorded in the findings register with direct
+facsimile evidence. `no_candidates`, `insufficient_evidence`,
+`no_stable_pattern` and passing repository tests do not replace the visual
+comparison.
+
+Any later change to poetry whitespace, leading spaces, verse lines or page
+markers invalidates the affected poem's visual structure record. Reopen all of
+its pages, regenerate the whole-work report, and confirm that no unresolved
+candidate remains anywhere in the work. Do not add `korrektur2`, a proofreading
+attestation or `status="complete"` until every poem has a completed visual
+record and the complete report has been dispositioned.
 
 ## 10. Preserve indentation using spaces
 
@@ -1287,7 +1442,9 @@ or ambiguous deletion command.
 Follow `AGENTS.md`.
 
 READY requires complete independent inventory coverage, no `open` or `fixed`
-findings, all four candidate-review categories and recorded passing tests. Put
+findings, completed visual structure records for every poetry block, a
+disposition for every candidate in the unfiltered whole-work report, all four
+candidate-review categories and recorded passing tests. Put
 a small JSON file in scratch space with `producer`, `tests`,
 `candidate_reviews` and `reviewer_ranges`, then create the frozen checkpoint
 outside the worktree.
@@ -1342,6 +1499,10 @@ Report concisely:
   presence of `<pagebreaks/>`
 - number of poems
 - number and kinds of prose or paratext entries
+- confirmation that every poem's stanza boundaries and indentation were
+  visually checked against all of its facsimile pages
+- total stanza and indentation candidates from the unfiltered whole-work
+  report and confirmation that all were dispositioned
 - title-page image created
 - title-page geometry and crop QA status
 - whether a graphic front cover was created
@@ -1415,6 +1576,15 @@ The task is complete only when all applicable items are true:
 - [ ] Fresh OCR was produced from page images with at least two meaningfully
       different passes or strategies.
 - [ ] Every relevant page was checked directly against the facsimile.
+- [ ] Every poetry block has a visual structure record covering its complete
+      page range, observed stanza lengths and observed indentation.
+- [ ] Every XML blank line was verified as a visible printed stanza boundary,
+      and every visible printed stanza boundary is represented in XML.
+- [ ] Every verse line's horizontal position was visually checked; indented
+      lines were not converted to stanza breaks or flattened by OCR.
+- [ ] The final whole-work structure report was reviewed without filtering to
+      selected poems, and every stanza, indentation and wrapper candidate was
+      dispositioned against the facsimile.
 - [ ] The first source page of every included text was checked separately for
       its complete printed heading structure.
 - [ ] Every `<suptitle>`, `<title>`, `<subtitle>` and nested `<line>` preserves

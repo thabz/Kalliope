@@ -14,6 +14,10 @@ brugeropgaver forbliver `[ ]`, indtil brugeren selv har udført dem.
 - [ ] Opret værket i korrekt mappe og filstruktur
 - [ ] Indsæt og strukturer værkets tekst
 - [ ] Bevar relevant typografi og strukturel markup
+- [ ] Kontrollér visuelt alle digtes verslinjer, strofegrænser og indryk mod
+      samtlige relevante facsimilesider
+- [ ] Kør helværksanalysen uden tekstfilter og afklar alle stanza- og
+      indrykningskandidater direkte mod facsimilet
 - [ ] Kontrollér XML/TEI-syntaks
 - [ ] Kontrollér at alle interne referencer og id'er er gyldige
 - [ ] Tilføj eller opdater metadata for værket
@@ -71,6 +75,8 @@ Angiv kun kontroller, der faktisk er udført, med deres resultat. Eksempel:
 - repository-tests: OK
 - kontrol af unikke id'er: OK
 - stikprøvekontrol mod facsimile: 12 sider
+- visuel strukturkontrol: alle digte og relevante facsimilesider kontrolleret;
+  alle kandidater fra helværksanalysen afklaret
 - kendte warnings: ingen
 ```
 
