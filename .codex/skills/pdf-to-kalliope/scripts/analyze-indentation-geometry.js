@@ -23,6 +23,76 @@ const lowerQuartileMedian = values => {
   return median(sorted.slice(0, Math.max(1, Math.ceil(sorted.length / 4))));
 };
 
+const baselineClusters = (values, tolerance, minimumCount = 2) => {
+  const sorted = [...values].sort((left, right) => left - right);
+  const clusters = [];
+  sorted.forEach(value => {
+    const cluster = clusters.at(-1);
+    if (cluster == null || value - cluster[0] > tolerance) {
+      clusters.push([value]);
+    } else {
+      cluster.push(value);
+    }
+  });
+  return clusters.filter(cluster => cluster.length >= minimumCount).map(cluster => ({
+    count: cluster.length,
+    left: median(cluster),
+  }));
+};
+
+const selectBaseline = ({
+  alignedMax,
+  comparesWithXml,
+  indentMin,
+  levelledLines,
+  normalCharacterAdvance,
+  observed,
+}) => {
+  const reliableLines = levelledLines.filter(line => line.indentationGeometrySafe);
+  const basisLines = reliableLines.length > 0 ? reliableLines : levelledLines;
+  const values = basisLines.map(line => line.levelledLeft);
+  if (comparesWithXml) {
+    const observedBaselineValues = basisLines
+      .filter(line => Number(observed[line.verseLine - 1]) === 0)
+      .map(line => line.levelledLeft);
+    const clusters = baselineClusters(
+      observedBaselineValues,
+      alignedMax * normalCharacterAdvance,
+      1
+    );
+    if (clusters.length > 0) {
+      return clusters.sort((left, right) =>
+        right.count - left.count || left.left - right.left
+      )[0].left;
+    }
+  }
+  const clusters = baselineClusters(
+    values,
+    alignedMax * normalCharacterAdvance
+  );
+  if (clusters.length === 0) return lowerQuartileMedian(values);
+  if (!comparesWithXml) {
+    const leftmost = clusters[0];
+    if (leftmost.count / values.length >= 0.25) return leftmost.left;
+  }
+  return clusters.map(cluster => {
+    const mismatches = comparesWithXml
+      ? basisLines.filter(line => {
+        const displacement =
+          (line.levelledLeft - cluster.left) / normalCharacterAdvance;
+        const predicted = displacement >= indentMin;
+        const observedIndented = Number(observed[line.verseLine - 1]) > 0;
+        return predicted !== observedIndented;
+      }).length
+      : 0;
+    return { ...cluster, mismatches };
+  }).sort((left, right) =>
+    left.mismatches - right.mismatches ||
+    right.count - left.count ||
+    left.left - right.left
+  )[0].left;
+};
+
 const normalizeLine = (line, index) => {
   if (line == null || typeof line !== 'object' || Array.isArray(line)) {
     throw new TypeError('Hver OCR-linje skal være et objekt.');
@@ -58,6 +128,8 @@ const normalizeLine = (line, index) => {
       ? null
       : Number(line.rotation_slope),
     characterAdvance: measuredAdvance,
+    indentationGeometrySafe: line.indentation_geometry_safe !== false,
+    indentationGeometryIssue: line.indentation_geometry_issue ?? null,
     text,
   };
 };
@@ -94,6 +166,8 @@ const analyzeIndentationGeometry = input => {
     .map((line, index) => ({ ...line, verseLine: index + 1 }));
   const comparesWithXml = input.observed_indentation != null;
   const observed = input.observed_indentation ?? Array(lines.length).fill(0);
+  const indentationSections = input.indentation_sections ??
+    Array(lines.length).fill(1);
   if (
     !Array.isArray(observed) || observed.length !== lines.length ||
     observed.some(value => !Number.isFinite(Number(value)) || Number(value) < 0)
@@ -102,12 +176,42 @@ const analyzeIndentationGeometry = input => {
       'observed_indentation skal have ét ikke-negativt tal for hver OCR-linje.'
     );
   }
+  if (
+    !Array.isArray(indentationSections) ||
+    indentationSections.length !== lines.length ||
+    indentationSections.some(value =>
+      !Number.isInteger(Number(value)) || Number(value) < 1
+    )
+  ) {
+    throw new TypeError(
+      'indentation_sections skal have ét positivt heltal for hver OCR-linje.'
+    );
+  }
+  lines.forEach((line, index) => {
+    line.indentationSection = Number(indentationSections[index]);
+  });
 
   const pages = [];
   const candidates = [];
   const suggestedIndentedLines = [];
-  [...new Set(lines.map(line => line.page))].forEach(page => {
-    const pageLines = lines.filter(line => line.page === page);
+  const pageSections = [...new Set(lines.map(line =>
+    `${line.page}:${line.indentationSection}`
+  ))].map(key => {
+    const [page, indentationSection] = key.split(':').map(Number);
+    return { page, indentationSection };
+  });
+  pageSections.forEach(({ page, indentationSection }) => {
+    const pageLines = lines.filter(line =>
+      line.page === page && line.indentationSection === indentationSection
+    );
+    const hasObservedBaseline = !comparesWithXml || pageLines.some(
+      line => line.indentationGeometrySafe &&
+        Number(observed[line.verseLine - 1]) === 0
+    );
+    const hasObservedIndentation = comparesWithXml && pageLines.some(
+      line => line.indentationGeometrySafe &&
+        Number(observed[line.verseLine - 1]) > 0
+    );
     const rotation = estimatePageRotation(pageLines);
     const levelledLines = pageLines.map(line => ({
       ...line,
@@ -117,14 +221,20 @@ const analyzeIndentationGeometry = input => {
         rotation.angle
       ).x,
     }));
-    const baselineLeft = lowerQuartileMedian(
-      levelledLines.map(line => line.levelledLeft)
-    );
     const normalCharacterAdvance = median(
       pageLines
         .filter(line => line.text.replace(/\s/gu, '').length >= 4)
         .map(line => line.characterAdvance)
     ) ?? median(pageLines.map(line => line.characterAdvance));
+    const baselineLeft = selectBaseline({
+      alignedMax,
+      comparesWithXml:
+        comparesWithXml && hasObservedBaseline && hasObservedIndentation,
+      indentMin,
+      levelledLines,
+      normalCharacterAdvance,
+      observed,
+    });
     const measurements = levelledLines.map(line => {
       const displacement = line.levelledLeft - baselineLeft;
       const characters = displacement / normalCharacterAdvance;
@@ -134,12 +244,29 @@ const analyzeIndentationGeometry = input => {
           ? 'indented'
           : 'ambiguous';
       const observedIndented = Number(observed[line.verseLine - 1]) > 0;
-      if (classification === 'indented') suggestedIndentedLines.push(line.verseLine);
-      if (classification === 'indented' && !comparesWithXml) {
+      if (!line.indentationGeometrySafe) {
+        candidates.push({
+          type: 'unreliable_indentation_geometry',
+          verse_line: line.verseLine,
+          page,
+          indentation_section: indentationSection,
+          confidence: 'possible',
+          reason:
+            'OCR mangler indledende tegn eller bogstaver, så linjestarten kan ikke måles sikkert.',
+          cause: line.indentationGeometryIssue,
+        });
+      } else if (classification === 'indented') {
+        suggestedIndentedLines.push(line.verseLine);
+      }
+      if (!line.indentationGeometrySafe) {
+        // The measurement is retained for diagnostics but must not become a
+        // claim about the source indentation.
+      } else if (classification === 'indented' && !comparesWithXml) {
         candidates.push({
           type: 'possible_indentation',
           verse_line: line.verseLine,
           page,
+          indentation_section: indentationSection,
           confidence: 'strong',
           displacement_characters: Number(characters.toFixed(3)),
           reason: 'Facsimilelinjen er forskudt mere end den sikre indrykningstærskel.',
@@ -149,17 +276,20 @@ const analyzeIndentationGeometry = input => {
           type: 'possible_missing_indentation',
           verse_line: line.verseLine,
           page,
+          indentation_section: indentationSection,
           confidence: 'strong',
           displacement_characters: Number(characters.toFixed(3)),
           reason: 'Facsimilelinjen er forskudt mere end den sikre indrykningstærskel, men XML-linjen er ikke indrykket.',
         });
       } else if (
-        classification === 'aligned' && comparesWithXml && observedIndented
+        classification === 'aligned' && comparesWithXml && observedIndented &&
+        hasObservedBaseline
       ) {
         candidates.push({
           type: 'possible_extra_indentation',
           verse_line: line.verseLine,
           page,
+          indentation_section: indentationSection,
           confidence: 'strong',
           displacement_characters: Number(characters.toFixed(3)),
           reason: 'XML-linjen er indrykket, men facsimilelinjens forskydning er højst én normal tegnbredde.',
@@ -169,6 +299,7 @@ const analyzeIndentationGeometry = input => {
           type: 'ambiguous_indentation_geometry',
           verse_line: line.verseLine,
           page,
+          indentation_section: indentationSection,
           confidence: 'possible',
           displacement_characters: Number(characters.toFixed(3)),
           observed_indentation: Number(observed[line.verseLine - 1]),
@@ -181,16 +312,31 @@ const analyzeIndentationGeometry = input => {
         left: line.left,
         displacement_pixels: Number(displacement.toFixed(3)),
         displacement_characters: Number(characters.toFixed(3)),
-        classification,
+        classification: line.indentationGeometrySafe
+          ? classification
+          : 'unreliable',
       };
     });
+    if (comparesWithXml && !hasObservedBaseline) {
+      candidates.push({
+        type: 'unanchored_page_indentation',
+        page,
+        indentation_section: indentationSection,
+        confidence: 'possible',
+        verse_lines: pageLines.map(line => line.verseLine),
+        reason:
+          'Alle XML-verslinjer på siden er indrykket, så siden mangler en sikker nul-linje til geometrisk sammenligning.',
+      });
+    }
     pages.push({
       page,
+      indentation_section: indentationSection,
       line_count: pageLines.length,
       baseline_left: Number(baselineLeft.toFixed(3)),
       normal_character_advance: Number(normalCharacterAdvance.toFixed(3)),
       rotation_degrees: Number((rotation.angle * 180 / Math.PI).toFixed(4)),
       rotation_basis: rotation.basis,
+      baseline_comparison: hasObservedBaseline ? 'anchored' : 'relative_only',
       measurements,
     });
   });

@@ -112,6 +112,7 @@ describe('indentation profile parsing', () => {
         'Første',
         '<center><nonum><small><i>Går.</i></small></nonum></center>',
         '<wrap><small>Sceneanvisning</small></wrap>',
+        '<right>Forfatter.</right>',
         '---',
         '  Anden',
       ].join('\n')
@@ -223,6 +224,22 @@ describe('indentation candidate analysis', () => {
     expect(result.candidates).toEqual([]);
   });
 
+  it('treats uniform indentation across stanza boundaries as stable', () => {
+    const result = analyzeIndentation({
+      body: bodyWithStanzaProfiles([
+        [3, 3, 3],
+        [3, 3, 3, 3],
+      ]),
+    });
+
+    expect(result.status).toBe('no_candidates');
+    expect(result.sections[0]).toMatchObject({
+      analysis_basis: 'uniform',
+      dominant_pattern: [3],
+    });
+    expect(result.candidates).toEqual([]);
+  });
+
   it('accepts a regular four-line indentation profile', () => {
     const result = analyzeIndentation({
       body: bodyWithProfile([
@@ -249,6 +266,49 @@ describe('indentation candidate analysis', () => {
       dominant_pattern: [0, 6, 2, 4],
     });
     expect(result.candidates).toEqual([]);
+  });
+
+  it('treats two identical stanza profiles as a stable pattern', () => {
+    const profile = [0, 6, 2, 4];
+    const result = analyzeIndentation({
+      body: bodyWithStanzaProfiles([profile, profile]),
+    });
+
+    expect(result.status).toBe('no_candidates');
+    expect(result.sections[0]).toMatchObject({
+      analysis_basis: 'stanza',
+      dominant_pattern: profile,
+    });
+    expect(result.candidates).toEqual([]);
+  });
+
+  it('consolidates a shifted run already covered by a stanza mismatch', () => {
+    const regular = [0, 2, 0, 2, 0];
+    const result = analyzeIndentation({
+      body: bodyWithStanzaProfiles([
+        regular,
+        regular,
+        regular,
+        [4, 6, 4, 6, 8],
+        regular,
+      ]),
+    });
+
+    expect(result.candidates).toEqual([
+      expect.objectContaining({
+        type: 'possible_stanza_indentation_mismatch',
+        verse_line_start: 16,
+        verse_line_end: 20,
+        confidence: 'likely',
+        mismatches: [
+          { verse_line: 16, stanza_position: 1, expected: 0, observed: 4 },
+          { verse_line: 17, stanza_position: 2, expected: 2, observed: 6 },
+          { verse_line: 18, stanza_position: 3, expected: 0, observed: 4 },
+          { verse_line: 19, stanza_position: 4, expected: 2, observed: 6 },
+          { verse_line: 20, stanza_position: 5, expected: 0, observed: 8 },
+        ],
+      }),
+    ]);
   });
 
   it('checks an opening capital against the profile of later stanzas', () => {

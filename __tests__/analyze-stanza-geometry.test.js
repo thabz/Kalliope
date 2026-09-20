@@ -48,17 +48,41 @@ describe('facsimile stanza geometry', () => {
 
   it('keeps borderline distances as explicit manual candidates', () => {
     const result = analyzeStanzaGeometry({
-      lines: linesAt([100, 200, 350, 450, 550]),
+      lines: linesAt([100, 200, 330, 430, 530]),
     });
 
     expect(result.candidates).toEqual([
       expect.objectContaining({
         type: 'ambiguous_boundary_geometry',
         after_verse_line: 2,
-        ratio: 1.5,
+        ratio: 1.3,
         confidence: 'possible',
       }),
     ]);
+  });
+
+  it('keeps a moderately spaced XML boundary manual instead of rejecting it', () => {
+    const result = analyzeStanzaGeometry({
+      lines: linesAt([100, 200, 320, 420, 520]),
+      observed_boundaries: [2],
+    });
+
+    expect(result.candidates).toEqual([
+      expect.objectContaining({
+        type: 'ambiguous_boundary_geometry',
+        after_verse_line: 2,
+        observed_boundary: true,
+        confidence: 'possible',
+      }),
+    ]);
+  });
+
+  it('recognizes the moderate stanza gap used across a reviewed anthology', () => {
+    const result = analyzeStanzaGeometry({
+      lines: linesAt([100, 200, 350, 450, 550]),
+    });
+
+    expect(result.suggested_boundaries).toEqual([2]);
   });
 
   it('does not infer a boundary across facsimile pages', () => {
@@ -71,6 +95,20 @@ describe('facsimile stanza geometry', () => {
     expect(result.suggested_boundaries).toEqual([]);
     expect(result.pages).toHaveLength(2);
     expect(result.pages.every(page => page.normal_line_pitch === 64)).toBe(true);
+  });
+
+  it('does not mistake a physically wrapped verse line for a stanza gap', () => {
+    const lines = linesAt([100, 200, 400, 500]);
+    lines[1].physical_line_span = 2;
+    const result = analyzeStanzaGeometry({ lines });
+
+    expect(result.pages[0].normal_line_pitch).toBe(100);
+    expect(result.pages[0].gaps[1]).toEqual(expect.objectContaining({
+      preceding_physical_line_span: 2,
+      ratio: 1,
+      classification: 'continuous',
+    }));
+    expect(result.suggested_boundaries).toEqual([]);
   });
 
   it('groups Tesseract words into positioned OCR lines', () => {
@@ -137,6 +175,41 @@ describe('facsimile stanza geometry', () => {
         text: 'Første linje',
       },
     ]);
+  });
+
+  it('preserves confident short words at the text edge', () => {
+    const header = 'level\tpage_num\tblock_num\tpar_num\tline_num\tword_num\tleft\ttop\twidth\theight\tconf\ttext';
+    const tsv = [
+      header,
+      '1\t1\t0\t0\t0\t0\t0\t0\t1400\t2200\t-1\t',
+      '5\t1\t1\t1\t1\t1\t7\t200\t38\t30\t92\tI',
+      '5\t1\t1\t1\t1\t2\t60\t200\t130\t30\t96\tDanmark',
+      '5\t1\t1\t1\t2\t1\t29\t260\t48\t30\t96\tog',
+      '5\t1\t1\t1\t2\t2\t90\t260\t180\t30\t96\tPolens',
+    ].join('\n');
+
+    expect(parseTesseractTsv(tsv).map(line => ({
+      left: line.left,
+      text: line.text,
+    }))).toEqual([
+      { left: 7, text: 'I Danmark' },
+      { left: 29, text: 'og Polens' },
+    ]);
+  });
+
+  it('removes an uncertain single-glyph artifact before a verse line', () => {
+    const header = 'level\tpage_num\tblock_num\tpar_num\tline_num\tword_num\tleft\ttop\twidth\theight\tconf\ttext';
+    const tsv = [
+      header,
+      '1\t1\t0\t0\t0\t0\t0\t0\t1400\t2200\t-1\t',
+      '5\t1\t1\t1\t1\t1\t28\t200\t8\t30\t76\ti',
+      '5\t1\t1\t1\t1\t2\t150\t200\t130\t30\t96\tNoget',
+    ].join('\n');
+
+    expect(parseTesseractTsv(tsv)[0]).toEqual(expect.objectContaining({
+      left: 150,
+      text: 'Noget',
+    }));
   });
 
   it.each([7, -7])(
