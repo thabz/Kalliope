@@ -17,6 +17,49 @@ const median = values => {
     : sorted[middle];
 };
 
+const leastSquaresSlope = points => {
+  if (points.length < 3) return null;
+  const meanX = points.reduce((sum, point) => sum + point.x, 0) / points.length;
+  const meanY = points.reduce((sum, point) => sum + point.y, 0) / points.length;
+  const denominator = points.reduce(
+    (sum, point) => sum + (point.x - meanX) ** 2,
+    0
+  );
+  if (denominator === 0) return null;
+  return points.reduce(
+    (sum, point) => sum + (point.x - meanX) * (point.y - meanY),
+    0
+  ) / denominator;
+};
+
+const estimatePageRotation = lines => {
+  const maximumSlope = Math.tan(10 * Math.PI / 180);
+  const wordSlopes = lines
+    .map(line => line.rotationSlope)
+    .filter(slope => Number.isFinite(slope) && Math.abs(slope) <= maximumSlope);
+  if (wordSlopes.length >= 2) {
+    const slope = median(wordSlopes);
+    return { angle: Math.atan(slope), basis: 'ocr_words' };
+  }
+
+  const pairSlopes = [];
+  lines.forEach((left, index) => {
+    lines.slice(index + 1).forEach(right => {
+      const deltaY = right.top - left.top;
+      if (Math.abs(deltaY) < Math.max(left.height, right.height)) return;
+      const slope = -(right.left - left.left) / deltaY;
+      if (Math.abs(slope) <= maximumSlope) pairSlopes.push(slope);
+    });
+  });
+  const slope = median(pairSlopes) ?? 0;
+  return { angle: Math.atan(slope), basis: pairSlopes.length > 0 ? 'line_starts' : 'none' };
+};
+
+const levelPoint = (x, y, angle) => ({
+  x: x * Math.cos(angle) + y * Math.sin(angle),
+  y: -x * Math.sin(angle) + y * Math.cos(angle),
+});
+
 const finiteNumber = (value, field) => {
   const number = Number(value);
   if (!Number.isFinite(number)) {
@@ -38,6 +81,11 @@ const normalizeLine = (line, index) => {
     top: finiteNumber(line.top, 'top'),
     width: finiteNumber(line.width, 'width'),
     height: finiteNumber(line.height, 'height'),
+    centreX: Number(line.centre_x ?? line.left + line.width / 2),
+    centreY: Number(line.centre_y ?? line.top + line.height / 2),
+    rotationSlope: line.rotation_slope == null
+      ? null
+      : finiteNumber(line.rotation_slope, 'rotation_slope'),
     text,
   };
 };
@@ -95,12 +143,17 @@ const parseTesseractTsv = tsv => {
     if (pageBox != null) {
       const centre = word.left + word.width / 2;
       const relativeCentre = (centre - pageBox.left) / pageBox.width;
+      const inOuterTenth = relativeCentre < 0.1 || relativeCentre > 0.9;
       const narrowFringeArtifact =
         word.width / pageBox.width < 0.02 &&
-        (relativeCentre < 0.05 || relativeCentre > 0.95);
+        inOuterTenth;
+      const shortFringeArtifact =
+        text.replace(/[^\p{L}\p{N}]/gu, '').length <= 3 &&
+        word.width / pageBox.width < 0.04 &&
+        inOuterTenth;
       if (
         relativeCentre < 0.02 || relativeCentre > 0.98 ||
-        narrowFringeArtifact
+        narrowFringeArtifact || shortFringeArtifact
       ) {
         return;
       }
@@ -119,12 +172,27 @@ const parseTesseractTsv = tsv => {
     const top = Math.min(...words.map(word => word.top));
     const right = Math.max(...words.map(word => word.left + word.width));
     const bottom = Math.max(...words.map(word => word.top + word.height));
+    const centres = words.map(word => ({
+      x: word.left + word.width / 2,
+      y: word.top + word.height / 2,
+    }));
+    const rotationSlope =
+      Math.max(...centres.map(point => point.x)) -
+        Math.min(...centres.map(point => point.x)) >= 100
+        ? leastSquaresSlope(centres)
+        : null;
+    const firstWord = words[0];
     return {
       page: group.page,
       left,
       top,
       width: right - left,
       height: bottom - top,
+      anchor_left: firstWord.left,
+      anchor_center_y: firstWord.top + firstWord.height / 2,
+      centre_x: (left + right) / 2,
+      centre_y: (top + bottom) / 2,
+      ...(rotationSlope == null ? {} : { rotation_slope: rotationSlope }),
       text: words.map(word => word.text).join(' '),
     };
   });
@@ -199,10 +267,19 @@ const analyzeStanzaGeometry = input => {
   const allGaps = [];
   pageNumbers.forEach(page => {
     const pageLines = pageLineGroups.get(page);
-    const rawGaps = pageLines.slice(0, -1).map((line, index) => ({
+    const rotation = estimatePageRotation(pageLines);
+    const levelledLines = pageLines.map(line => ({
+      ...line,
+      levelledY: levelPoint(
+        line.centreX,
+        line.centreY,
+        rotation.angle
+      ).y,
+    }));
+    const rawGaps = levelledLines.slice(0, -1).map((line, index) => ({
       after: line,
-      before: pageLines[index + 1],
-      delta: pageLines[index + 1].top - line.top,
+      before: levelledLines[index + 1],
+      delta: levelledLines[index + 1].levelledY - line.levelledY,
     })).filter(gap => gap.delta > 0);
     const pagePitch = median(rawGaps.map(gap => gap.delta));
     const usesWorkFallback = rawGaps.length < 2 && pageNumbers.length > 1;
@@ -234,6 +311,8 @@ const analyzeStanzaGeometry = input => {
       line_count: pageLines.length,
       normal_line_pitch: normalPitch,
       pitch_basis: usesWorkFallback ? 'work' : 'page',
+      rotation_degrees: Number((rotation.angle * 180 / Math.PI).toFixed(4)),
+      rotation_basis: rotation.basis,
       gaps,
     });
   });
@@ -320,4 +399,9 @@ const runCli = () => {
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) runCli();
 
-export { analyzeStanzaGeometry, parseTesseractTsv };
+export {
+  analyzeStanzaGeometry,
+  estimatePageRotation,
+  levelPoint,
+  parseTesseractTsv,
+};

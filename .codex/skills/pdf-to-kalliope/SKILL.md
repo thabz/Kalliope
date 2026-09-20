@@ -599,6 +599,21 @@ table of contents may be wrong.
 Do not let a new physical page create a false text, stanza or paragraph
 boundary.
 
+For every proposed new `<text>`, record positive source evidence that a new
+logical text begins. A printed title or number is direct evidence. A titleless
+poem needs a corroborating contents entry, an unmistakable printed division or
+other explicit structural evidence; a page break, large top margin or
+capitalized first verse is not enough. When a poetry page begins without a
+printed heading, first test whether it continues the preceding poem: compare
+metre, stanza length, typography, syntax and the preceding page's ending. Do
+not manufacture a catalogue title from the first verse merely because OCR or
+page inventory treated the page as a separate block.
+
+As a final segmentation audit, inspect every `<text>` boundary in source order
+and answer both questions from the facsimile: what visibly ends the preceding
+text, and what positively begins the next one? An unsupported answer on either
+side is an open finding; merge or split only from source evidence.
+
 ## 7. Create the complete Kalliope XML
 
 Create one complete work XML according to `docs/xml-work-format.md` and related
@@ -885,8 +900,10 @@ node .codex/skills/pdf-to-kalliope/scripts/analyze-indentation-geometry.js \
 
 Raw page TSV may include titles, page numbers, illustrations or more than one
 poem. Its output is an inventory of geometric candidates, not a final poem
-report. For comparison with XML, create normalized scratch JSON containing
-only the ordered verse lines from one poem or continuous printed block:
+report. The TSV parser removes narrow and very short OCR artifacts in the
+outer page margin, but that does not replace selecting the actual poetry
+region. For comparison with XML, create normalized scratch JSON containing only
+the ordered verse lines from one poem or continuous printed block:
 
 ```json
 {
@@ -926,6 +943,15 @@ aligned; displacements of at least `1.5` characters are indentation candidates;
 intermediate displacements remain explicit ambiguous candidates. It reports
 both printed indents missing from XML and XML indents unsupported by the print.
 It does not automatically choose an exact number of XML spaces.
+
+Both analyzers estimate page rotation from the within-line OCR word boxes and
+mathematically rotate the coordinates back to a level page before measuring.
+If word geometry is insufficient, they use a robust estimate from line-start
+drift. Rotation is reported per page with its estimation basis. The supported
+automatic range is up to 10 degrees in either direction; larger estimates must
+be treated as a layout or OCR failure and the page must be deskewed or
+reprocessed. Regression tests must cover both positive and negative rotation,
+not only already level pages.
 
 Thresholds may be overridden in scratch JSON for diagnostic experiments, but
 never tune them merely to make one expected poem pass. Keep the defaults unless

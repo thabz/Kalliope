@@ -69,6 +69,29 @@ describe('facsimile indentation geometry', () => {
     ]);
   });
 
+  it('rejects the false final-line indentation measured on Tempelvers page 10', () => {
+    const starts = [
+      896, 895, 893, 895, 894, 893, 894, 894, 894, 892, 893,
+      893, 891, 892, 893, 892, 890, 889, 891, 889, 890, 890,
+    ];
+    const observedIndentation = Array(starts.length).fill(0);
+    observedIndentation[starts.length - 1] = 4;
+    const result = analyzeIndentationGeometry({
+      lines: linesAt(starts),
+      observed_indentation: observedIndentation,
+    });
+
+    expect(result.suggested_indented_lines).toEqual([]);
+    expect(result.candidates).toEqual([
+      expect.objectContaining({
+        type: 'possible_extra_indentation',
+        verse_line: 22,
+        confidence: 'strong',
+      }),
+    ]);
+    expect(result.candidates[0].displacement_characters).toBeLessThan(1);
+  });
+
   it('reports displacements between one and one-and-a-half characters as ambiguous', () => {
     const result = analyzeIndentationGeometry({
       lines: linesAt([100, 100, 125, 100]),
@@ -97,6 +120,35 @@ describe('facsimile indentation geometry', () => {
     expect(result.pages.map(page => page.baseline_left)).toEqual([100, 300]);
     expect(result.suggested_indented_lines).toEqual([3, 6]);
   });
+
+  it.each([7, -7])(
+    'preserves indentation after correcting a %s degree rotation',
+    angleDegrees => {
+      const angle = angleDegrees * Math.PI / 180;
+      const baseLefts = [100, 100, 140, 100, 100, 140];
+      const lines = baseLefts.map((x, index) => {
+        const y = 100 + index * 64;
+        const screenX = x * Math.cos(angle) - y * Math.sin(angle);
+        const screenY = x * Math.sin(angle) + y * Math.cos(angle);
+        return {
+          page: 1,
+          left: screenX,
+          top: screenY - 16,
+          width: 600,
+          height: 32,
+          anchor_left: screenX,
+          anchor_center_y: screenY,
+          character_advance: 20,
+          rotation_slope: Math.tan(angle),
+          text: `Verslinje ${index + 1}`,
+        };
+      });
+      const result = analyzeIndentationGeometry({ lines });
+
+      expect(result.pages[0].rotation_degrees).toBeCloseTo(angleDegrees, 3);
+      expect(result.suggested_indented_lines).toEqual([3, 6]);
+    }
+  );
 
   it('validates observed indentation and thresholds', () => {
     expect(() => analyzeIndentationGeometry({

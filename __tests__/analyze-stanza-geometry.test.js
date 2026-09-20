@@ -90,6 +90,10 @@ describe('facsimile stanza geometry', () => {
         top: 198,
         width: 80,
         height: 24,
+        anchor_left: 100,
+        anchor_center_y: 210,
+        centre_x: 140,
+        centre_y: 210,
         text: 'Første linje',
       },
       {
@@ -98,6 +102,10 @@ describe('facsimile stanza geometry', () => {
         top: 260,
         width: 50,
         height: 21,
+        anchor_left: 101,
+        anchor_center_y: 270.5,
+        centre_x: 126,
+        centre_y: 270.5,
         text: 'Anden',
       },
     ]);
@@ -109,9 +117,10 @@ describe('facsimile stanza geometry', () => {
       header,
       '1\t1\t0\t0\t0\t0\t0\t0\t2000\t2800\t-1\t',
       '5\t1\t1\t1\t1\t1\t35\t200\t3\t30\t80\t|',
-      '5\t1\t1\t1\t1\t2\t400\t200\t80\t30\t96\tFørste',
-      '5\t1\t1\t1\t1\t3\t490\t200\t60\t30\t96\tlinje',
-      '5\t1\t1\t1\t1\t4\t1930\t200\t4\t30\t80\t|',
+      '5\t1\t1\t1\t1\t2\t60\t200\t61\t30\t30\tAN:',
+      '5\t1\t1\t1\t1\t3\t400\t200\t80\t30\t96\tFørste',
+      '5\t1\t1\t1\t1\t4\t490\t200\t60\t30\t96\tlinje',
+      '5\t1\t1\t1\t1\t5\t1930\t200\t4\t30\t80\t|',
     ].join('\n');
 
     expect(parseTesseractTsv(tsv)).toEqual([
@@ -121,10 +130,43 @@ describe('facsimile stanza geometry', () => {
         top: 200,
         width: 150,
         height: 30,
+        anchor_left: 400,
+        anchor_center_y: 215,
+        centre_x: 475,
+        centre_y: 215,
         text: 'Første linje',
       },
     ]);
   });
+
+  it.each([7, -7])(
+    'preserves stanza gaps after correcting a %s degree rotation',
+    angleDegrees => {
+      const angle = angleDegrees * Math.PI / 180;
+      const tops = [100, 164, 228, 420, 484, 548, 740, 804, 868];
+      const lines = tops.map((y, index) => {
+        const x = 350 + (index % 3) * 140;
+        const screenX = x * Math.cos(angle) - y * Math.sin(angle);
+        const screenY = x * Math.sin(angle) + y * Math.cos(angle);
+        return {
+          page: 1,
+          left: screenX - 250,
+          top: screenY - 16,
+          width: 500,
+          height: 32,
+          centre_x: screenX,
+          centre_y: screenY,
+          rotation_slope: Math.tan(angle),
+          text: `Verslinje ${index + 1}`,
+        };
+      });
+      const result = analyzeStanzaGeometry({ lines });
+
+      expect(result.pages[0].rotation_degrees).toBeCloseTo(angleDegrees, 3);
+      expect(result.suggested_boundaries).toEqual([3, 6]);
+      expect(result.suggested_stanza_lengths).toEqual([3, 3, 3]);
+    }
+  );
 
   it('validates thresholds and observed boundaries', () => {
     expect(() => analyzeStanzaGeometry({ lines: [] })).not.toThrow();

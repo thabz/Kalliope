@@ -2,7 +2,11 @@
 
 import fs from 'fs';
 import { fileURLToPath } from 'url';
-import { parseTesseractTsv } from './analyze-stanza-geometry.js';
+import {
+  estimatePageRotation,
+  levelPoint,
+  parseTesseractTsv,
+} from './analyze-stanza-geometry.js';
 
 const median = values => {
   if (values.length === 0) return null;
@@ -46,6 +50,13 @@ const normalizeLine = (line, index) => {
     top: numeric('top'),
     width: numeric('width'),
     height: numeric('height'),
+    anchorLeft: Number(line.anchor_left ?? line.left),
+    anchorCentreY: Number(
+      line.anchor_center_y ?? numeric('top') + numeric('height') / 2
+    ),
+    rotationSlope: line.rotation_slope == null
+      ? null
+      : Number(line.rotation_slope),
     characterAdvance: measuredAdvance,
     text,
   };
@@ -97,14 +108,25 @@ const analyzeIndentationGeometry = input => {
   const suggestedIndentedLines = [];
   [...new Set(lines.map(line => line.page))].forEach(page => {
     const pageLines = lines.filter(line => line.page === page);
-    const baselineLeft = lowerQuartileMedian(pageLines.map(line => line.left));
+    const rotation = estimatePageRotation(pageLines);
+    const levelledLines = pageLines.map(line => ({
+      ...line,
+      levelledLeft: levelPoint(
+        line.anchorLeft,
+        line.anchorCentreY,
+        rotation.angle
+      ).x,
+    }));
+    const baselineLeft = lowerQuartileMedian(
+      levelledLines.map(line => line.levelledLeft)
+    );
     const normalCharacterAdvance = median(
       pageLines
         .filter(line => line.text.replace(/\s/gu, '').length >= 4)
         .map(line => line.characterAdvance)
     ) ?? median(pageLines.map(line => line.characterAdvance));
-    const measurements = pageLines.map(line => {
-      const displacement = line.left - baselineLeft;
+    const measurements = levelledLines.map(line => {
+      const displacement = line.levelledLeft - baselineLeft;
       const characters = displacement / normalCharacterAdvance;
       const classification = characters <= alignedMax
         ? 'aligned'
@@ -165,8 +187,10 @@ const analyzeIndentationGeometry = input => {
     pages.push({
       page,
       line_count: pageLines.length,
-      baseline_left: baselineLeft,
+      baseline_left: Number(baselineLeft.toFixed(3)),
       normal_character_advance: Number(normalCharacterAdvance.toFixed(3)),
+      rotation_degrees: Number((rotation.angle * 180 / Math.PI).toFixed(4)),
+      rotation_basis: rotation.basis,
       measurements,
     });
   });
