@@ -88,17 +88,6 @@ genkontrol af rettelser og checkpointets resultat. Stikprøver erstatter ikke
 de krævede fulde gennemgange. Angiv CI-status særskilt som bestået, fejlet,
 afventer eller ukendt.
 
-### Erfaringer og evaluering
-
-- Relevante erfarings-id'er: angiv id'er eller ingen relevante.
-- Omfang og kontrol: relevante sider/tekster og faktisk udført kontrol.
-- Gentagne kendte fejl: fejltype, antal fund og hvem der opdagede dem.
-- Nødvendige brugerindgreb: antal og årsag; adskil rettelser, redaktionelle valg og publiceringsgodkendelser.
-- Læring: henvis til en begrundet opdatering, eller skriv at ingen ny overførbar erfaring blev fundet.
-
-Skriv `ukendt`, når oplysninger mangler; brug kun nul ved faktisk observation.
-Genbrug oplysninger fra Validering frem for at gentage dem. Følg
-`docs/arbejdserfaringer.md` for opfølgning på de næste tre relevante opgaver.
 ```
 
 `Udestående` skal altid findes, også når der ikke er noget udestående.

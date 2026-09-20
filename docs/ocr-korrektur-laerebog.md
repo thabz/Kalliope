@@ -118,9 +118,6 @@ følger guidens regler om ren tekst; digtvisning og navigationsfelter har ikke
 samme indhold. Følg også formatguidens regler om titelstruktur og tegnsætning
 frem for at overføre én normaliseringsregel til alle felter.
 
-Det tidligere generelle forbud mod titelmarkup er erstattet; se
-[ERF-005](arbejdserfaringer.md#erf-005-titelfodnoter).
-
 ### 12. Bevar interne sideskift semantisk
 
 OCR-arbejdet må ikke udviske, hvor en sammenhængende tekst krydser en fysisk

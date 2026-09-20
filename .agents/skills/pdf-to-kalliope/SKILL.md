@@ -55,12 +55,6 @@ Before changing files:
 This skill defines the workflow. It does not reproduce the complete Kalliope
 XML specification.
 
-Read the relevant examples in
-[arbejdserfaringer](../../../docs/arbejdserfaringer.md) for title pages,
-indentation, OCR ambiguity, completion and title footnotes. They explain
-known failures and their limits; current format documentation remains
-authoritative.
-
 The current repository documentation and build system define the XML format.
 Existing corpus files provide examples, but current documentation takes
 precedence over accidental legacy practice.
@@ -1465,10 +1459,8 @@ Do not suppress or bypass a failing test simply to obtain a green build.
 
 ## 22. Inspect the final diff and clean the workspace
 
-Before presenting the change, follow the closing routine in
-[arbejdserfaringer](../../../docs/arbejdserfaringer.md#ved-afslutning): preserve
-relevant decision reasons and a concise review summary in the handoff before
-discarding scratch material. Keep the checkpoint and its inventory, findings
+Preserve a concise review summary in the handoff before discarding scratch
+material. Keep the checkpoint and its inventory, findings
 and review records outside the worktree while they are needed for verification.
 Do not remove those dependencies during the cleanup below.
 
@@ -1566,7 +1558,7 @@ Report concisely:
 - remaining `TODO:` notes
 - exact files intended for the commit
 
-Use the handoff and evaluation sections of the `add-kalliope-work` PR template.
+Use the handoff sections of the `add-kalliope-work` PR template.
 Routine checks belong to the agent; list only unresolved editorial decisions
 under `Bruger`, or write `Ingen udestående brugerbeslutninger`.
 

@@ -56,10 +56,6 @@ audit. Gå til konkrete XML-filer, når kilde-XML eller sammenlignelig markup er
 nødvendig. Dokumentation og validering har forrang for tilfældig ældre praksis.
 Opfind ikke et nyt format, når repositoryet allerede har en etableret løsning.
 
-Læs de eksempler i [arbejdserfaringerne](../../../docs/arbejdserfaringer.md),
-som er relevante for værket. De forklarer kendte fejl og deres grænser;
-de aktuelle formatregler er fortsat autoritative.
-
 ## 2. Indsæt og kontrollér værket
 
 Tilpas arbejdet til kilden og værktypen, men gennemfør alt relevant arbejde:
@@ -148,9 +144,3 @@ brugerbeslutninger er konkret beskrevet, og alle krævede CI-checks er grønne.
 PR-beskrivelsen skal inden for få sekunder vise, hvad der er indsat, kilden,
 hvad Agent/Codex har kontrolleret,
 hvad der mangler, hvor brugeren skal kigge, og hvilke usikkerheder der findes.
-
-Ved væsentlige rettelser følges afslutningsrutinen i
-[arbejdserfaringerne](../../../docs/arbejdserfaringer.md#ved-afslutning).
-Bevar relevante begrundelser før scratchoprydning, og udfyld PR-skabelonens
-korte evaluering. Opdater kun erfaringer eller instruktioner, hvor fundet
-underbygger en overførbar forbedring inden for opgavens rammer.
