@@ -126,6 +126,7 @@ const analyzeWholeWork = (xml, options = {}) => {
       ? analyzeIndentationGeometry({
         lines: preparedGeometry.lines,
         observed_indentation: preparedGeometry.observed_indentation,
+        indentation_sections: preparedGeometry.indentation_sections,
       })
       : null;
     const geometry = preparedGeometry == null ? null : {

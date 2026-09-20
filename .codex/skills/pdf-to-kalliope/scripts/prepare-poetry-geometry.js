@@ -119,6 +119,12 @@ const isStructuralDivider = serialized => {
     /^-{3,}$/u.test(trimmed);
 };
 
+const isNumberedSectionDivider = serialized => {
+  const trimmed = serialized.trim();
+  if (!/^<nonum(?:\s|>)/u.test(trimmed)) return false;
+  return /^(?:\d+|[ivxlcdm]+)[.]?$/iu.test(plainText(trimmed).trim());
+};
+
 const countIndentation = serialized => {
   const prefix = /^[ \t]*/u.exec(serialized)?.[0] ?? '';
   return [...prefix].reduce((total, character) =>
@@ -136,6 +142,7 @@ const parsePoetryElement = ({ poetry, startingFacsimile }) => {
   const issues = [];
   let currentFacsimile = startingFacsimile;
   let pendingBoundary = null;
+  let indentationSection = 1;
   serialized.split('\n').forEach(serializedLine => {
     const matches = [...serializedLine.matchAll(pbPattern)];
     const withoutPageBreaks = serializedLine.replace(pbPattern, '');
@@ -165,6 +172,7 @@ const parsePoetryElement = ({ poetry, startingFacsimile }) => {
         source_verse_line: lines.length + 1,
         text: plainText(withoutPageBreaks).trim(),
         indentation: countIndentation(withoutPageBreaks),
+        indentation_section: indentationSection,
         facsimile: currentFacsimile,
       });
     } else if (withoutPageBreaks.trim() === '' ||
@@ -177,6 +185,9 @@ const parsePoetryElement = ({ poetry, startingFacsimile }) => {
           facsimile: currentFacsimile,
           after_source_verse_line: lines.length,
         });
+      }
+      if (isNumberedSectionDivider(withoutPageBreaks) && lines.length > 0) {
+        indentationSection += 1;
       }
     }
     if (matches.length > 0) currentFacsimile = matches.at(-1)[1];
@@ -737,6 +748,9 @@ const preparePoetryGeometry = ({ xml, variantsByFacsimile }) => {
     const indentationBySourceLine = new Map(state.block.lines.map(line =>
       [line.source_verse_line, line.indentation]
     ));
+    const indentationSectionBySourceLine = new Map(state.block.lines.map(line =>
+      [line.source_verse_line, line.indentation_section]
+    ));
     const expectedLineCount = state.block.lines.length;
     const matchedLineCount = state.coveredSourceLines.size;
     const physicallyWrappedCount = sortedMatches.filter(line =>
@@ -768,6 +782,9 @@ const preparePoetryGeometry = ({ xml, variantsByFacsimile }) => {
       observed_boundaries: observedBoundaries,
       observed_indentation: sortedMatches.map(line =>
         indentationBySourceLine.get(line.source_verse_line) ?? 0
+      ),
+      indentation_sections: sortedMatches.map(line =>
+        indentationSectionBySourceLine.get(line.source_verse_line) ?? 1
       ),
       coverage: {
         expected_line_count: expectedLineCount,

@@ -166,6 +166,8 @@ const analyzeIndentationGeometry = input => {
     .map((line, index) => ({ ...line, verseLine: index + 1 }));
   const comparesWithXml = input.observed_indentation != null;
   const observed = input.observed_indentation ?? Array(lines.length).fill(0);
+  const indentationSections = input.indentation_sections ??
+    Array(lines.length).fill(1);
   if (
     !Array.isArray(observed) || observed.length !== lines.length ||
     observed.some(value => !Number.isFinite(Number(value)) || Number(value) < 0)
@@ -174,12 +176,34 @@ const analyzeIndentationGeometry = input => {
       'observed_indentation skal have ét ikke-negativt tal for hver OCR-linje.'
     );
   }
+  if (
+    !Array.isArray(indentationSections) ||
+    indentationSections.length !== lines.length ||
+    indentationSections.some(value =>
+      !Number.isInteger(Number(value)) || Number(value) < 1
+    )
+  ) {
+    throw new TypeError(
+      'indentation_sections skal have ét positivt heltal for hver OCR-linje.'
+    );
+  }
+  lines.forEach((line, index) => {
+    line.indentationSection = Number(indentationSections[index]);
+  });
 
   const pages = [];
   const candidates = [];
   const suggestedIndentedLines = [];
-  [...new Set(lines.map(line => line.page))].forEach(page => {
-    const pageLines = lines.filter(line => line.page === page);
+  const pageSections = [...new Set(lines.map(line =>
+    `${line.page}:${line.indentationSection}`
+  ))].map(key => {
+    const [page, indentationSection] = key.split(':').map(Number);
+    return { page, indentationSection };
+  });
+  pageSections.forEach(({ page, indentationSection }) => {
+    const pageLines = lines.filter(line =>
+      line.page === page && line.indentationSection === indentationSection
+    );
     const hasObservedBaseline = !comparesWithXml || pageLines.some(
       line => line.indentationGeometrySafe &&
         Number(observed[line.verseLine - 1]) === 0
@@ -225,6 +249,7 @@ const analyzeIndentationGeometry = input => {
           type: 'unreliable_indentation_geometry',
           verse_line: line.verseLine,
           page,
+          indentation_section: indentationSection,
           confidence: 'possible',
           reason:
             'OCR mangler indledende tegn eller bogstaver, så linjestarten kan ikke måles sikkert.',
@@ -241,6 +266,7 @@ const analyzeIndentationGeometry = input => {
           type: 'possible_indentation',
           verse_line: line.verseLine,
           page,
+          indentation_section: indentationSection,
           confidence: 'strong',
           displacement_characters: Number(characters.toFixed(3)),
           reason: 'Facsimilelinjen er forskudt mere end den sikre indrykningstærskel.',
@@ -250,6 +276,7 @@ const analyzeIndentationGeometry = input => {
           type: 'possible_missing_indentation',
           verse_line: line.verseLine,
           page,
+          indentation_section: indentationSection,
           confidence: 'strong',
           displacement_characters: Number(characters.toFixed(3)),
           reason: 'Facsimilelinjen er forskudt mere end den sikre indrykningstærskel, men XML-linjen er ikke indrykket.',
@@ -262,6 +289,7 @@ const analyzeIndentationGeometry = input => {
           type: 'possible_extra_indentation',
           verse_line: line.verseLine,
           page,
+          indentation_section: indentationSection,
           confidence: 'strong',
           displacement_characters: Number(characters.toFixed(3)),
           reason: 'XML-linjen er indrykket, men facsimilelinjens forskydning er højst én normal tegnbredde.',
@@ -271,6 +299,7 @@ const analyzeIndentationGeometry = input => {
           type: 'ambiguous_indentation_geometry',
           verse_line: line.verseLine,
           page,
+          indentation_section: indentationSection,
           confidence: 'possible',
           displacement_characters: Number(characters.toFixed(3)),
           observed_indentation: Number(observed[line.verseLine - 1]),
@@ -292,6 +321,7 @@ const analyzeIndentationGeometry = input => {
       candidates.push({
         type: 'unanchored_page_indentation',
         page,
+        indentation_section: indentationSection,
         confidence: 'possible',
         verse_lines: pageLines.map(line => line.verseLine),
         reason:
@@ -300,6 +330,7 @@ const analyzeIndentationGeometry = input => {
     }
     pages.push({
       page,
+      indentation_section: indentationSection,
       line_count: pageLines.length,
       baseline_left: Number(baselineLeft.toFixed(3)),
       normal_character_advance: Number(normalCharacterAdvance.toFixed(3)),

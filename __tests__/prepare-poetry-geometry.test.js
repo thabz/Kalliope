@@ -66,6 +66,7 @@ describe('forberedelse af helværksgeometri', () => {
       }),
     ]);
     expect(block.observedBoundaries).toEqual([2, 3]);
+    expect(block.lines.map(line => line.indentation_section)).toEqual([1, 1, 1, 1]);
     expect(block.equipment).toEqual([
       expect.objectContaining({
         text: 'Forfatter.',
@@ -91,6 +92,7 @@ describe('forberedelse af helværksgeometri', () => {
     const [block] = extractPoetryBlocks(dividedXml);
 
     expect(block.observedBoundaries).toEqual([2, 3]);
+    expect(block.lines.map(line => line.indentation_section)).toEqual([1, 1, 1, 2]);
   });
 
   it('selects the best OCR variant and explicitly excludes page equipment', () => {
@@ -129,6 +131,7 @@ describe('forberedelse af helværksgeometri', () => {
     expect(block.lines).toHaveLength(4);
     expect(block.observed_boundaries).toEqual([2, 3]);
     expect(block.observed_indentation).toEqual([0, 4, 0, 0]);
+    expect(block.indentation_sections).toEqual([1, 1, 1, 1]);
     expect(block.selected_variants).toEqual([
       expect.objectContaining({ facsimile: '012.jpg', variant: '012-psm3.tsv' }),
       expect.objectContaining({ facsimile: '013.jpg', variant: '013-psm6.tsv' }),

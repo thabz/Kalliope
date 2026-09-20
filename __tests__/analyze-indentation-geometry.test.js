@@ -156,6 +156,19 @@ describe('facsimile indentation geometry', () => {
     expect(result.suggested_indented_lines).toEqual([3, 6]);
   });
 
+  it('estimates independent baselines for numbered sections on one page', () => {
+    const result = analyzeIndentationGeometry({
+      lines: linesAt([300, 300, 300, 100, 100, 100]),
+      observed_indentation: [0, 0, 0, 0, 0, 0],
+      indentation_sections: [1, 1, 1, 2, 2, 2],
+    });
+
+    expect(result.pages.map(page => page.baseline_left)).toEqual([300, 100]);
+    expect(result.pages.map(page => page.indentation_section)).toEqual([1, 2]);
+    expect(result.suggested_indented_lines).toEqual([]);
+    expect(result.candidates).toEqual([]);
+  });
+
   it('uses a repeated outdented refrain as the relative baseline', () => {
     const lefts = [40, 40, ...Array(10).fill(140)];
     const result = analyzeIndentationGeometry({
