@@ -870,6 +870,54 @@ existing analyzers, preserves text ID and page range, aggregates all candidates
 and flags a very long block with no stanza boundaries. Resolve every reported
 candidate in the findings register.
 
+### Mandatory visual stanza and indentation gate
+
+Machine analysis is only a candidate generator. Before a PDF work may be
+called proofread or complete, inspect the page image for **every** poetry block
+in the work at a legible size and compare its complete final XML body with the
+printed layout. This is a whole-work gate, not a spot check and not a review of
+only the poem that most recently failed.
+
+For every poem, record in scratch working data at least:
+
+- `text_id` and all printed/facsimile pages;
+- the visually observed stanza lengths in order;
+- the visually observed leading-space pattern for each stanza or irregular
+  block;
+- the final analyzer status and candidate count;
+- the disposition of every candidate against the page image;
+- the reviewer who performed the visual comparison.
+
+Treat each blank line in `<poetry>` as an editorial claim that the print has a
+visible stanza boundary. Verify every existing XML blank line against the page
+image, and verify conversely that every visible stanza boundary is represented
+in XML. Count the verse lines between boundaries and compare those counts with
+the visual record. Do not infer a boundary from OCR whitespace, OCR text
+blocks, line coordinates, rhyme, metre or a preferred regular form.
+
+Inspect indentation independently of stanza boundaries. OCR commonly turns an
+indented line into a separate text block; a recurring failure pattern is a
+printed three-line stanza becoming XML fragments of `2 + 1`, with the third
+line's indentation also lost. Compare the horizontal start of every line with
+the other lines in its printed stanza and encode supported indentation with
+leading spaces. A blank line before an indented verse is not a substitute for
+the indentation.
+
+After this visual pass, run `analyze-whole-work.js` on the complete final XML
+and inspect the report for **all** poems. Never filter the report to one named
+text and treat that as a work-level pass. Every stanza, indentation and wrapper
+candidate must be fixed or recorded in the findings register with direct
+facsimile evidence. `no_candidates`, `insufficient_evidence`,
+`no_stable_pattern` and passing repository tests do not replace the visual
+comparison.
+
+Any later change to poetry whitespace, leading spaces, verse lines or page
+markers invalidates the affected poem's visual structure record. Reopen all of
+its pages, regenerate the whole-work report, and confirm that no unresolved
+candidate remains anywhere in the work. Do not add `korrektur2`, a proofreading
+attestation or `status="complete"` until every poem has a completed visual
+record and the complete report has been dispositioned.
+
 ## 10. Preserve indentation using spaces
 
 Indentation is part of the text's visual and poetic structure.
@@ -1287,7 +1335,9 @@ or ambiguous deletion command.
 Follow `AGENTS.md`.
 
 READY requires complete independent inventory coverage, no `open` or `fixed`
-findings, all four candidate-review categories and recorded passing tests. Put
+findings, completed visual structure records for every poetry block, a
+disposition for every candidate in the unfiltered whole-work report, all four
+candidate-review categories and recorded passing tests. Put
 a small JSON file in scratch space with `producer`, `tests`,
 `candidate_reviews` and `reviewer_ranges`, then create the frozen checkpoint
 outside the worktree.
@@ -1342,6 +1392,10 @@ Report concisely:
   presence of `<pagebreaks/>`
 - number of poems
 - number and kinds of prose or paratext entries
+- confirmation that every poem's stanza boundaries and indentation were
+  visually checked against all of its facsimile pages
+- total stanza and indentation candidates from the unfiltered whole-work
+  report and confirmation that all were dispositioned
 - title-page image created
 - title-page geometry and crop QA status
 - whether a graphic front cover was created
@@ -1415,6 +1469,15 @@ The task is complete only when all applicable items are true:
 - [ ] Fresh OCR was produced from page images with at least two meaningfully
       different passes or strategies.
 - [ ] Every relevant page was checked directly against the facsimile.
+- [ ] Every poetry block has a visual structure record covering its complete
+      page range, observed stanza lengths and observed indentation.
+- [ ] Every XML blank line was verified as a visible printed stanza boundary,
+      and every visible printed stanza boundary is represented in XML.
+- [ ] Every verse line's horizontal position was visually checked; indented
+      lines were not converted to stanza breaks or flattened by OCR.
+- [ ] The final whole-work structure report was reviewed without filtering to
+      selected poems, and every stanza, indentation and wrapper candidate was
+      dispositioned against the facsimile.
 - [ ] The first source page of every included text was checked separately for
       its complete printed heading structure.
 - [ ] Every `<suptitle>`, `<title>`, `<subtitle>` and nested `<line>` preserves
