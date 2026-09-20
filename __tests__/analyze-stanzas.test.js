@@ -73,6 +73,61 @@ describe('stanza candidate analysis', () => {
     ]);
   });
 
+  it('accepts matching refrain frames around shorter dominant stanzas', () => {
+    const result = analyzeStanzas({
+      body: bodyWithStanzas([4, 2, 2, 2, 2, 2, 4]),
+    });
+
+    expect(result.dominant_stanza_length).toBe(2);
+    expect(result.candidates).toEqual([]);
+  });
+
+  it.each([
+    [[5, 5, 10], [15]],
+    [[7, 7, 28], [21, 28, 35]],
+  ])(
+    'finds every missing boundary when a long block repeats a local unit in %j',
+    (stanzaLengths, expectedBoundaries) => {
+      const result = analyzeStanzas({ body: bodyWithStanzas(stanzaLengths) });
+
+      expect(
+        result.candidates.map(candidate => [
+          candidate.type,
+          candidate.after_verse_line,
+        ])
+      ).toEqual(
+        expectedBoundaries.map(boundary => [
+          'possible_missing_boundary',
+          boundary,
+        ])
+      );
+    }
+  );
+
+  it('does not extrapolate a long pattern from one short page fragment', () => {
+    const result = analyzeStanzas({ body: bodyWithStanzas([2, 28]) });
+
+    expect(result.status).toBe('insufficient_evidence');
+    expect(result.candidates).toEqual([]);
+  });
+
+  it('reports a bounded three-stanza split from one observed stanza', () => {
+    const result = analyzeStanzas({ body: bodyWithStanzas([8, 24]) });
+
+    expect(result.candidates).toEqual([
+      expect.objectContaining({
+        type: 'possible_missing_boundary',
+        after_verse_line: 16,
+        confidence: 'possible',
+      }),
+      expect.objectContaining({
+        type: 'possible_missing_boundary',
+        after_verse_line: 24,
+        confidence: 'possible',
+      }),
+    ]);
+  });
+
   it('finds a one-line and three-line split among four-line stanzas', () => {
     const result = analyzeStanzas({ body: bodyWithStanzas([1, 3, 4, 4]) });
 
@@ -185,6 +240,15 @@ describe('stanza candidate analysis', () => {
         confidence: 'likely',
       }),
     ]);
+  });
+
+  it('does not merge many fragments merely to leave two large stanzas', () => {
+    const result = analyzeStanzas({
+      body: bodyWithStanzas([2, 3, 5, 4, 6]),
+    });
+
+    expect(result.status).toBe('no_stable_pattern');
+    expect(result.candidates).toEqual([]);
   });
 
   it('finds two separately fragmented four-line stanzas', () => {
@@ -321,6 +385,7 @@ describe('stanza candidate analysis', () => {
       'Tredje vers',
       'Fjerde vers',
       '<wrap>Redaktionel tekst</wrap>',
+      '<right>Forfatter.</right>',
       'Femte vers',
       'Sjette vers',
     ].join('\n'));

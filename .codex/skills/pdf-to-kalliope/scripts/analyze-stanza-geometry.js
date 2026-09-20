@@ -4,8 +4,9 @@ import fs from 'fs';
 import { fileURLToPath } from 'url';
 
 const defaultThresholds = {
+  extraBoundaryMaxRatio: 1.1,
   alignedMaxRatio: 1.25,
-  boundaryMinRatio: 1.75,
+  boundaryMinRatio: 1.4,
 };
 
 const median = values => {
@@ -86,6 +87,10 @@ const normalizeLine = (line, index) => {
     rotationSlope: line.rotation_slope == null
       ? null
       : finiteNumber(line.rotation_slope, 'rotation_slope'),
+    physicalLineSpan: Math.max(
+      1,
+      Math.round(finiteNumber(line.physical_line_span ?? 1, 'physical_line_span'))
+    ),
     text,
   };
 };
@@ -98,7 +103,7 @@ const parseTesseractTsv = tsv => {
   const header = rows.shift()?.split('\t') ?? [];
   const required = [
     'level', 'page_num', 'block_num', 'par_num', 'line_num', 'word_num',
-    'left', 'top', 'width', 'height', 'text',
+    'left', 'top', 'width', 'height', 'conf', 'text',
   ];
   const indexes = Object.fromEntries(
     required.map(field => [field, header.indexOf(field)])
@@ -136,6 +141,7 @@ const parseTesseractTsv = tsv => {
       top: finiteNumber(fields[indexes.top], 'top'),
       width: finiteNumber(fields[indexes.width], 'width'),
       height: finiteNumber(fields[indexes.height], 'height'),
+      confidence: finiteNumber(fields[indexes.conf], 'conf'),
       text,
     };
     const page = finiteNumber(fields[indexes.page_num], 'page_num');
@@ -144,16 +150,25 @@ const parseTesseractTsv = tsv => {
       const centre = word.left + word.width / 2;
       const relativeCentre = (centre - pageBox.left) / pageBox.width;
       const inOuterTenth = relativeCentre < 0.1 || relativeCentre > 0.9;
+      const lowConfidence = word.confidence < 60;
+      const hasLetterOrNumber = /[\p{L}\p{N}]/u.test(text);
+      const uncertainSingleGlyph =
+        text.replace(/[^\p{L}\p{N}]/gu, '').length <= 1 &&
+        word.confidence < 85;
       const narrowFringeArtifact =
         word.width / pageBox.width < 0.02 &&
-        inOuterTenth;
+        inOuterTenth &&
+        (lowConfidence || uncertainSingleGlyph || !hasLetterOrNumber);
       const shortFringeArtifact =
         text.replace(/[^\p{L}\p{N}]/gu, '').length <= 3 &&
         word.width / pageBox.width < 0.04 &&
-        inOuterTenth;
+        inOuterTenth &&
+        (lowConfidence || !hasLetterOrNumber);
+      const extremeFringeArtifact =
+        (relativeCentre < 0.02 || relativeCentre > 0.98) &&
+        (lowConfidence || !hasLetterOrNumber);
       if (
-        relativeCentre < 0.02 || relativeCentre > 0.98 ||
-        narrowFringeArtifact || shortFringeArtifact
+        extremeFringeArtifact || narrowFringeArtifact || shortFringeArtifact
       ) {
         return;
       }
@@ -217,6 +232,10 @@ const analyzeStanzaGeometry = input => {
   }
 
   const thresholds = {
+    extraBoundaryMaxRatio: Number(
+      input.thresholds?.extra_boundary_max_ratio ??
+        defaultThresholds.extraBoundaryMaxRatio
+    ),
     alignedMaxRatio: Number(
       input.thresholds?.aligned_max_ratio ?? defaultThresholds.alignedMaxRatio
     ),
@@ -225,13 +244,15 @@ const analyzeStanzaGeometry = input => {
     ),
   };
   if (
+    !Number.isFinite(thresholds.extraBoundaryMaxRatio) ||
     !Number.isFinite(thresholds.alignedMaxRatio) ||
     !Number.isFinite(thresholds.boundaryMinRatio) ||
-    thresholds.alignedMaxRatio <= 1 ||
+    thresholds.extraBoundaryMaxRatio <= 1 ||
+    thresholds.alignedMaxRatio < thresholds.extraBoundaryMaxRatio ||
     thresholds.boundaryMinRatio <= thresholds.alignedMaxRatio
   ) {
     throw new RangeError(
-      'Geometritærsklerne skal opfylde 1 < aligned_max_ratio < boundary_min_ratio.'
+      'Geometritærsklerne skal opfylde 1 < extra_boundary_max_ratio <= aligned_max_ratio < boundary_min_ratio.'
     );
   }
 
@@ -259,7 +280,9 @@ const analyzeStanzaGeometry = input => {
   );
   const globalDeltas = [...pageLineGroups.values()].flatMap(pageLines =>
     pageLines.slice(0, -1)
-      .map((line, index) => pageLines[index + 1].top - line.top)
+      .map((line, index) =>
+        (pageLines[index + 1].top - line.top) / line.physicalLineSpan
+      )
       .filter(delta => delta > 0)
   );
   const globalPitch = median(globalDeltas);
@@ -281,11 +304,15 @@ const analyzeStanzaGeometry = input => {
       before: levelledLines[index + 1],
       delta: levelledLines[index + 1].levelledY - line.levelledY,
     })).filter(gap => gap.delta > 0);
-    const pagePitch = median(rawGaps.map(gap => gap.delta));
+    const pagePitch = median(rawGaps.map(gap =>
+      gap.delta / gap.after.physicalLineSpan
+    ));
     const usesWorkFallback = rawGaps.length < 2 && pageNumbers.length > 1;
     const normalPitch = usesWorkFallback ? globalPitch : pagePitch;
     const gaps = rawGaps.map(gap => {
-      const ratio = normalPitch == null ? null : gap.delta / normalPitch;
+      const ratio = normalPitch == null
+        ? null
+        : gap.delta / normalPitch - (gap.after.physicalLineSpan - 1);
       const classification = ratio == null
         ? 'insufficient_evidence'
         : ratio <= thresholds.alignedMaxRatio
@@ -299,6 +326,7 @@ const analyzeStanzaGeometry = input => {
         before_text: gap.after.text,
         after_text: gap.before.text,
         top_delta: gap.delta,
+        preceding_physical_line_span: gap.after.physicalLineSpan,
         normal_line_pitch: normalPitch,
         ratio: ratio == null ? null : Number(ratio.toFixed(3)),
         classification,
@@ -344,13 +372,19 @@ const analyzeStanzaGeometry = input => {
     } else if (
       gap.classification === 'continuous' && comparesWithXml && observed
     ) {
+      const strong = gap.ratio <= thresholds.extraBoundaryMaxRatio;
       candidates.push({
-        type: 'possible_extra_boundary',
+        type: strong
+          ? 'possible_extra_boundary'
+          : 'ambiguous_boundary_geometry',
         after_verse_line: gap.after_verse_line,
         page: gap.page,
-        confidence: 'strong',
+        confidence: strong ? 'strong' : 'possible',
         ratio: gap.ratio,
-        reason: `XML har en strofegrænse, men den målte linjeafstand er kun ${gap.ratio} gange normalen.`,
+        observed_boundary: true,
+        reason: strong
+          ? `XML har en strofegrænse, men den målte linjeafstand er kun ${gap.ratio} gange normalen.`
+          : `XML har en strofegrænse, men afstanden ligger mellem tærsklerne for en sikkert overflødig og en sikker grænse (${thresholds.extraBoundaryMaxRatio}–${thresholds.boundaryMinRatio}).`,
       });
     } else if (gap.classification === 'ambiguous') {
       candidates.push({
@@ -373,6 +407,7 @@ const analyzeStanzaGeometry = input => {
         : 'no_candidates',
     line_count: lines.length,
     thresholds: {
+      extra_boundary_max_ratio: thresholds.extraBoundaryMaxRatio,
       aligned_max_ratio: thresholds.alignedMaxRatio,
       boundary_min_ratio: thresholds.boundaryMinRatio,
     },

@@ -28,6 +28,7 @@ const isStanzaDivider = line =>
   line.trim() === '' ||
   /<nonum(?:\s|>)/u.test(line) ||
   /^\s*<wrap(?:\s|>)/u.test(line) ||
+  /^\s*<right(?:\s|>)/u.test(line) ||
   /^\s*-{3,}\s*$/u.test(line) ||
   plainText(line) === '';
 
@@ -252,6 +253,13 @@ const dominantPatternAnalysis = ({
   }
 
   const candidateCountBefore = candidates.size;
+  const symmetricFrameLength =
+    stanzaLengths.length >= 4 &&
+    stanzaLengths[0] === stanzaLengths.at(-1) &&
+    stanzaLengths[0] !== dominantLength &&
+    stanzaLengths[0] % dominantLength === 0
+      ? stanzaLengths[0]
+      : null;
   let stanzaIndex = 0;
   let verseLinesBeforeRun = 0;
   while (stanzaIndex < stanzaLengths.length) {
@@ -272,7 +280,11 @@ const dominantPatternAnalysis = ({
     }
 
     const runLength = runLengths.reduce((sum, item) => sum + item, 0);
-    if (runLength % dominantLength === 0) {
+    const isSymmetricFrameRun =
+      runLengths.length === 1 &&
+      runLengths[0] === symmetricFrameLength &&
+      (verseLinesBeforeRun === 0 || stanzaIndex === stanzaLengths.length);
+    if (!isSymmetricFrameRun && runLength % dominantLength === 0) {
       const expectedPattern = Array(runLength / dominantLength).fill(
         dominantLength
       );
@@ -320,7 +332,10 @@ const dominantPatternAnalysis = ({
   if (candidates.size === candidateCountBefore) {
     let stanzaStart = 1;
     stanzaLengths.forEach((length, index) => {
-      if (length !== dominantLength) {
+      const isSymmetricFrame =
+        length === symmetricFrameLength &&
+        (index === 0 || index === stanzaLengths.length - 1);
+      if (length !== dominantLength && !isSymmetricFrame) {
         addCandidate(candidates, {
           type: 'possible_irregular_stanza',
           stanza_number: index + 1,
@@ -402,6 +417,7 @@ const localPatternAnalysis = ({ stanzaLengths, candidates }) => {
 
     if (
       removedBoundaryIndexes.length === 0 ||
+      (removedBoundaryIndexes.length > 1 && mergedStanzas.length < 3) ||
       !supportsPattern(mergedStanzas, targetLength)
     ) {
       return;
@@ -415,6 +431,9 @@ const localPatternAnalysis = ({ stanzaLengths, candidates }) => {
       localCandidates.push({
         coherence,
         editCount: removedBoundaryIndexes.length,
+        observedSupport: stanzaLengths.filter(
+          stanzaLength => stanzaLength === targetLength
+        ).length,
         candidate: {
           type: 'possible_extra_boundary',
           after_verse_line: observedBoundaries[boundaryIndex],
@@ -428,33 +447,54 @@ const localPatternAnalysis = ({ stanzaLengths, candidates }) => {
   });
 
   stanzaLengths.forEach((length, index) => {
-    if (length % 2 === 0 && length / 2 >= 2) {
-      const splitLength = length / 2;
+    const splitLengths = [...new Set(stanzaLengths)]
+      .filter(
+        splitLength =>
+          splitLength >= 2 &&
+          splitLength < length &&
+          length % splitLength === 0
+      )
+      .sort((left, right) => left - right);
+    splitLengths.forEach(splitLength => {
+      const observedSupport = stanzaLengths.filter(
+        stanzaLength => stanzaLength === splitLength
+      ).length;
+      const splitCount = length / splitLength;
+      // A single short block can be a page fragment rather than a complete
+      // stanza. Do not let one observation manufacture an arbitrarily long
+      // run of identical stanzas; geometry can supply the missing evidence.
+      if (observedSupport < 2 && splitCount > 3) {
+        return;
+      }
       const splitStanzas = stanzaLengths.toSpliced(
         index,
         1,
-        splitLength,
-        splitLength
+        ...Array(splitCount).fill(splitLength)
       );
-      if (supportsPattern(splitStanzas, splitLength)) {
-        const matchingStanzaCount = splitStanzas.filter(
-          stanzaLength => stanzaLength === splitLength
-        ).length;
-        const coherence = matchingStanzaCount / splitStanzas.length;
+      if (!supportsPattern(splitStanzas, splitLength)) {
+        return;
+      }
+
+      const matchingStanzaCount = splitStanzas.filter(
+        stanzaLength => stanzaLength === splitLength
+      ).length;
+      const coherence = matchingStanzaCount / splitStanzas.length;
+      for (let splitIndex = 1; splitIndex < splitCount; splitIndex += 1) {
         localCandidates.push({
           coherence,
-          editCount: 1,
+          editCount: splitCount - 1,
+          observedSupport,
           candidate: {
             type: 'possible_missing_boundary',
-            after_verse_line: stanzaStart + splitLength,
-            confidence: coherence >= 0.8 ? 2 : 1,
-            reason: `Strofen på ${length} linjer kan deles til et dominerende mønster på ${splitLength} linjer.`,
+            after_verse_line: stanzaStart + splitIndex * splitLength,
+            confidence: observedSupport >= 2 && coherence >= 0.8 ? 2 : 1,
+            reason: `Strofen på ${length} linjer er et heltalsmultiplum af den lokalt observerede strofelængde på ${splitLength} linjer.`,
             action:
               'Kontrollér, om der mangler en strofegrænse efter denne verslinje.',
           },
         });
       }
-    }
+    });
 
     stanzaStart += length;
   });
@@ -463,15 +503,24 @@ const localPatternAnalysis = ({ stanzaLengths, candidates }) => {
     0,
     ...localCandidates.map(item => item.coherence)
   );
+  const bestObservedSupport = Math.max(
+    0,
+    ...localCandidates
+      .filter(item => item.coherence === bestCoherence)
+      .map(item => item.observedSupport)
+  );
   const bestEditCount = Math.min(
     ...localCandidates
       .filter(item => item.coherence === bestCoherence)
+      .filter(item => item.observedSupport === bestObservedSupport)
       .map(item => item.editCount)
   );
   localCandidates
     .filter(
       item =>
-        item.coherence === bestCoherence && item.editCount === bestEditCount
+        item.coherence === bestCoherence &&
+        item.observedSupport === bestObservedSupport &&
+        item.editCount === bestEditCount
     )
     .forEach(item => addCandidate(candidates, item.candidate));
 };

@@ -877,33 +877,58 @@ omitting poems:
 
 ```shell
 node .codex/skills/pdf-to-kalliope/scripts/analyze-whole-work.js \
-  fdirs/<poet>/<work>.xml > /tmp/<work>-structure.json
+  fdirs/<poet>/<work>.xml /tmp/<work>-tsv \
+  > /tmp/<work>-structure.json
 ```
 
 The wrapper extracts every `<poetry>` block from the final XML, invokes both
 existing analyzers, preserves text ID and page range, aggregates all candidates
-and flags a very long block with no stanza boundaries. Resolve every reported
-candidate in the findings register.
+and flags a very long block with no stanza boundaries. When a TSV directory is
+given, it first separates verse lines from page equipment and then also runs
+both geometry analyzers. Resolve every reported candidate in the findings
+register.
 
 ### Use OCR geometry before visual structure review
 
 Generate positioned OCR for each poetry page. Tesseract TSV is the supported
-raw interchange format:
+raw interchange format. Keep at least two meaningfully different variants and put
+them below one directory; each filename must contain its three-digit facsimile
+number, for example `055.psm3.tsv` and `055.psm6.tsv`:
 
 ```shell
-tesseract PAGE.jpg /tmp/page -l dan --psm 6 tsv
-node .codex/skills/pdf-to-kalliope/scripts/analyze-stanza-geometry.js \
-  /tmp/page.tsv > /tmp/page-stanzas.json
-node .codex/skills/pdf-to-kalliope/scripts/analyze-indentation-geometry.js \
-  /tmp/page.tsv > /tmp/page-indentation.json
+tesseract PAGE.jpg stdout -l dan --psm 3 tsv > /tmp/<work>-tsv/055.psm3.tsv
+tesseract PAGE.jpg stdout -l dan --psm 6 tsv > /tmp/<work>-tsv/055.psm6.tsv
+node .codex/skills/pdf-to-kalliope/scripts/prepare-poetry-geometry.js \
+  WORK.xml /tmp/<work>-tsv > /tmp/<work>-geometry-input.json
+node .codex/skills/pdf-to-kalliope/scripts/analyze-whole-work.js \
+  WORK.xml /tmp/<work>-tsv > /tmp/<work>-structure.json
 ```
 
-Raw page TSV may include titles, page numbers, illustrations or more than one
-poem. Its output is an inventory of geometric candidates, not a final poem
-report. The TSV parser removes narrow and very short OCR artifacts in the
-outer page margin, but that does not replace selecting the actual poetry
-region. For comparison with XML, create normalized scratch JSON containing only
-the ordered verse lines from one poem or continuous printed block:
+`prepare-poetry-geometry.js` is the required whole-work preprocessing step. It
+maps XML verse lines to facsimile pages, selects the best OCR variant with a
+monotonic text alignment, joins physical wraps into one logical verse line and
+explicitly excludes page numbers, headings, author signatures, `<right>`
+attributions, ornaments and unmatched page content. It reports all exclusions
+instead of silently treating them as poetry. A missing OCR line, competing
+alignment, split XML line or densely wrapped block remains `manual_review` and
+must not be presented as geometry-ready.
+
+For a focused diagnostic after preprocessing, pass a block's normalized
+`lines`, `observed_boundaries` and `observed_indentation` to the two analyzers:
+
+```shell
+node .codex/skills/pdf-to-kalliope/scripts/analyze-stanza-geometry.js \
+  /tmp/poem-geometry.json > /tmp/page-stanzas.json
+node .codex/skills/pdf-to-kalliope/scripts/analyze-indentation-geometry.js \
+  /tmp/poem-geometry.json > /tmp/page-indentation.json
+```
+
+Raw page TSV may include titles, page numbers, signatures, illustrations or
+more than one poem. Running a geometry analyzer directly on that raw TSV is
+only a low-level inventory, not a poem or whole-work result. Do not use raw
+page geometry as a substitute for `prepare-poetry-geometry.js`. For comparison
+with XML, the normalized scratch JSON contains only the ordered verse lines
+from one poem or continuous printed block:
 
 ```json
 {
@@ -931,18 +956,26 @@ missing and unsupported XML markup.
 The stanza geometry analyzer estimates normal top-to-top line pitch separately
 on each page, using the work-level median only when a page has fewer than two
 measurable gaps. Distances no greater than `1.25` times normal pitch are treated
-as continuous verse, distances of at least `1.75` times normal pitch are
+as continuous verse, distances of at least `1.4` times normal pitch are
 proposed as stanza boundaries, and intermediate distances remain explicit
-ambiguous candidates. It never infers a boundary across a page break. The
-output includes all measured gaps, suggested boundaries, suggested stanza
-lengths and XML comparison candidates.
+ambiguous candidates. An existing XML boundary is called strongly unsupported
+only at `1.1` times normal pitch or less; the range from `1.1` to `1.4` remains
+manual rather than manufacturing certainty. Physical OCR wraps are counted in
+the pitch calculation. The analyzer never infers a boundary across a page
+break. The output includes all measured gaps, suggested boundaries, suggested
+stanza lengths and XML comparison candidates.
 
 The indentation geometry analyzer estimates a normal left edge and character
 advance separately on each page. Displacements of at most one character are
 aligned; displacements of at least `1.5` characters are indentation candidates;
 intermediate displacements remain explicit ambiguous candidates. It reports
 both printed indents missing from XML and XML indents unsupported by the print.
-It does not automatically choose an exact number of XML spaces.
+It does not automatically choose an exact number of XML spaces. If OCR omits
+leading punctuation or letters, the preprocessor marks that line unreliable
+for horizontal measurement; the analyzer must report uncertainty instead of a
+strong indentation claim. A page on which every XML verse line is indented is
+likewise reported as unanchored rather than compared with an invented zero
+baseline.
 
 Both analyzers estimate page rotation from the within-line OCR word boxes and
 mathematically rotate the coordinates back to a level page before measuring.
@@ -1380,7 +1413,7 @@ As a current baseline, include the relevant forms of:
 npm run report-ocr-candidates
 node .codex/skills/pdf-to-kalliope/scripts/audit-ocr-candidates.js WORK.xml INVENTORY.jsonl
 node .codex/skills/pdf-to-kalliope/scripts/audit-pagebreaks.js WORK.xml INVENTORY.jsonl
-node .codex/skills/pdf-to-kalliope/scripts/analyze-whole-work.js WORK.xml
+node .codex/skills/pdf-to-kalliope/scripts/analyze-whole-work.js WORK.xml TSV_DIRECTORY
 node .codex/skills/pdf-to-kalliope/scripts/findings-register.js validate FINDINGS.jsonl
 xmllint --noout path/to/work.xml
 npm test -- --runInBand __tests__/pagebreaks.test.js
