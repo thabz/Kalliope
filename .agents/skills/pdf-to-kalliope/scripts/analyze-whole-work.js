@@ -73,6 +73,12 @@ const geometrySummary = preparation => ({
   manual_review_block_count: preparation.blocks.filter(
     block => !block.geometry_ready
   ).length,
+  stanza_ready_block_count: preparation.blocks.filter(
+    block => block.stanza_geometry_ready ?? block.geometry_ready
+  ).length,
+  indentation_ready_block_count: preparation.blocks.filter(
+    block => block.indentation_geometry_ready ?? block.geometry_ready
+  ).length,
   expected_line_count: preparation.blocks.reduce(
     (sum, block) => sum + block.coverage.expected_line_count,
     0
@@ -116,13 +122,17 @@ const analyzeWholeWork = (xml, options = {}) => {
     const preparedGeometry = geometryByBlock.get(
       `${poem.text_id}:${poem.block_index}`
     ) ?? null;
-    const stanzaGeometry = preparedGeometry?.geometry_ready
+    const stanzaGeometry = (
+      preparedGeometry?.stanza_geometry_ready ?? preparedGeometry?.geometry_ready
+    )
       ? analyzeStanzaGeometry({
         lines: preparedGeometry.lines,
         observed_boundaries: preparedGeometry.observed_boundaries,
       })
       : null;
-    const indentationGeometry = preparedGeometry?.geometry_ready
+    const indentationGeometry = (
+      preparedGeometry?.indentation_geometry_ready ?? preparedGeometry?.geometry_ready
+    )
       ? analyzeIndentationGeometry({
         lines: preparedGeometry.lines,
         observed_indentation: preparedGeometry.observed_indentation,
@@ -131,6 +141,10 @@ const analyzeWholeWork = (xml, options = {}) => {
       : null;
     const geometry = preparedGeometry == null ? null : {
       status: preparedGeometry.status,
+      stanza_geometry_ready:
+        preparedGeometry.stanza_geometry_ready ?? preparedGeometry.geometry_ready,
+      indentation_geometry_ready:
+        preparedGeometry.indentation_geometry_ready ?? preparedGeometry.geometry_ready,
       coverage: preparedGeometry.coverage,
       selected_variants: preparedGeometry.selected_variants,
       excluded_ocr_line_count: preparedGeometry.excluded.length,
@@ -147,7 +161,13 @@ const analyzeWholeWork = (xml, options = {}) => {
       indentation,
       ...(geometry == null ? {} : { geometry }),
       candidates: [
-        ...stanza.candidates.map(candidate => ({ source: 'stanza', ...candidate })),
+        ...stanza.candidates.map(candidate => ({
+          source: 'stanza',
+          ...candidate,
+          at_page_break:
+            Number.isInteger(candidate.after_verse_line) &&
+            poem.page_breaks.includes(candidate.after_verse_line + 1),
+        })),
         ...indentation.candidates.map(candidate => ({ source: 'indentation', ...candidate })),
         ...(longUnbrokenBlock ? [{
           source: 'wrapper',
@@ -177,8 +197,10 @@ const analyzeWholeWork = (xml, options = {}) => {
           type: 'geometry_manual_review',
           coverage: preparedGeometry.coverage,
           issues: preparedGeometry.ambiguous,
-          reason:
-            'OCR og XML kunne ikke forbindes sikkert én-til-én for hele poesiblokken.',
+          reason: preparedGeometry.indentation_geometry_ready &&
+            !preparedGeometry.stanza_geometry_ready
+            ? 'OCR og XML er sikkert forbundet linjevis, men strofegeometrien kræver manuel kontrol.'
+            : 'OCR og XML kunne ikke forbindes sikkert én-til-én for hele poesiblokken.',
         }] : []),
       ],
     };

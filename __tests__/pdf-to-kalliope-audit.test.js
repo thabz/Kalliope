@@ -1,3 +1,4 @@
+import fs from 'fs';
 import {
   auditPageInventory,
   buildPageInventory,
@@ -13,6 +14,11 @@ import {
   validateReviewerRanges,
   verifyCheckpoint,
 } from '../.agents/skills/pdf-to-kalliope/scripts/review-checkpoint.js';
+
+const roerdamOcr = JSON.parse(fs.readFileSync(
+  new URL('./fixtures/roerdam-1906-ocr.json', import.meta.url),
+  'utf8',
+));
 
 const workXml = `<?xml version="1.0"?>
 <kalliopework id="1900" author="test">
@@ -114,6 +120,148 @@ describe('pdf-to-kalliope page inventory and semantic audit', () => {
 });
 
 describe('whole-work structure wrapper', () => {
+  it.each([
+    {
+      textId: 'roerdam2026092001',
+      pageBreakAfter: 8,
+      ocrFacsimiles: ['012.jpg', '013.jpg'],
+      sourcePages: '1-2',
+      body: `Og har du leget din Luth så længe
+for døve Øren på stumme Strænge —
+
+En halv Mils Vej ud i Verdensrummet
+er hele Jordens Musik forstummet.
+
+Ja, selv i Syvstjærnens Søsterklynge
+kan ingen høre de andre synge.
+
+Men alle synger endda. Det trøster:
+Histovre vandrer med Sang min Søster.
+<pb n="2" facs="013.jpg"/>Og Himlens Skaber og Gud fornemmer
+i gylden Samklang de klare Stemmer. —
+
+Hvad vil du, Myg? Når dit eget Indre
+dog hører Tonernes Dråber tindre ...`,
+    },
+    {
+      textId: 'roerdam2026092004',
+      pageBreakAfter: 10,
+      ocrFacsimiles: ['018.jpg', '019.jpg'],
+      sourcePages: '7-8',
+      body: `Jul, Påske, Pinse og Sankt-Hans,
+de svinger omkring dig — Elvernes Dans.
+
+En hvid, en grå, en grøn, en rød;
+de danser, du drømmer — om Liv og Død.
+
+Mer ilsomt hvirvler de År for År,
+og dybere drømmer du, hvor du står.
+
+Nu duver Axet, nu dufter Rugen —
+snart triller et Jordbær rødt henad Dugen.
+
+Nu dufter Rugen. Hvad vil du mer?
+Du tænker på Ting ... på Ting, som sker.
+<pb n="8" facs="019.jpg"/>På Menneskebørn, som lo bedrøvet,
+og bøjede Nakken, og krøb i Støvet.
+
+Dær ligger de nede. Og du står her,
+mens Roserne blomstrer, og Rugen drær.`,
+    },
+  ])('flags the lost stanza boundary at a page break in $textId', ({
+    body,
+    ocrFacsimiles,
+    pageBreakAfter,
+    sourcePages,
+    textId,
+  }) => {
+    const xml = workXml
+      .replace('test1900010101', textId)
+      .replace('facsimile-pages-offset="1"', 'facsimile-pages-offset="12"')
+      .replace('pages="10-12"', `pages="${sourcePages}"`)
+      .replace(
+        /<body><poetry>[\s\S]*?<\/poetry><\/body>/,
+        `<body><poetry>${body}</poetry></body>`,
+      );
+    const variantsByFacsimile = Object.fromEntries(
+      ocrFacsimiles.map(facsimile => [
+        facsimile,
+        [{
+          name: `${facsimile.replace('.jpg', '')}.psm3.tsv`,
+          lines: roerdamOcr.pages[facsimile],
+        }],
+      ]),
+    );
+    const result = analyzeWholeWork(xml, { variantsByFacsimile });
+    const [poem] = result.poems;
+
+    expect(result.geometry_summary.expected_line_count).toBeGreaterThan(0);
+    expect(poem.geometry).toBeDefined();
+    expect(poem.candidates).toContainEqual(expect.objectContaining({
+      source: 'stanza',
+      type: 'possible_missing_boundary',
+      after_verse_line: pageBreakAfter,
+      at_page_break: true,
+    }));
+  });
+
+  it('separates drop-cap clearance and physical wraps from poetic indentation in September', () => {
+    const body = `En Pointer jager forbi os i luftige Spring,
+ det stænker omkring den af Roernes drivvåde Blade.
+Den står; der falder et Skud — og i pilende Sving
+stryger Hønsene lavt langt bort bag om Enggårdens Lade.
+
+De vidtstrakte Stubmarker blinker. Mærk Stakkenes Duft.
+Langs Telefontråden kvidrer de hvilende Svaler,
+og Tærskemaskinerne brummer i solklar Luft.
+Så fik vi September engang. Og Jer, kære kvidrende Svaler,
+<pb n="13" facs="024.jpg"/> Jer sender vi bort med al Sorgen for Somren og Høsten.
+ Vi slæbte os Sjælen af Livet, og tidt var det slemt,
+  men flyv nu kun I til Ægypten med Klagen og Trøsten!
+„Det gik, som det kunde og skulde. Og nu er det glemt.
+
+  Flyv I til Ægypten. Her bliver så frydeligt stille.
+ Jeg tænker mig om, og jeg ser mig om — og jeg hører Cikaderne spille.`;
+    const xml = workXml
+      .replace('test1900010101', 'roerdam2026092007')
+      .replace('facsimile-pages-offset="1"', 'facsimile-pages-offset="12"')
+      .replace('pages="10-12"', 'pages="12-13"')
+      .replace(
+        /<body><poetry>[\s\S]*?<\/poetry><\/body>/,
+        `<body><poetry>${body}</poetry></body>`,
+      );
+    const variantsByFacsimile = Object.fromEntries(
+      ['023.jpg', '024.jpg'].map(facsimile => [
+        facsimile,
+        [{ name: `${facsimile.replace('.jpg', '')}.psm3.tsv`, lines: roerdamOcr.pages[facsimile] }],
+      ]),
+    );
+    const [poem] = analyzeWholeWork(xml, { variantsByFacsimile }).poems;
+
+    expect(poem.geometry).toEqual(expect.objectContaining({
+      stanza_geometry_ready: false,
+      indentation_geometry_ready: true,
+      stanza: null,
+      indentation: expect.any(Object),
+    }));
+    expect(poem.candidates).toContainEqual(expect.objectContaining({
+      source: 'stanza',
+      type: 'possible_missing_boundary',
+      after_verse_line: 8,
+      at_page_break: true,
+    }));
+    expect(poem.candidates).toContainEqual(expect.objectContaining({
+      source: 'indentation_geometry',
+      type: 'unreliable_indentation_geometry',
+      verse_line: 2,
+      cause: 'drop_cap_clearance',
+    }));
+    expect(poem.candidates.filter(candidate =>
+      candidate.source === 'indentation_geometry' &&
+      candidate.type === 'possible_extra_indentation'
+    ).map(candidate => candidate.verse_line)).toEqual([9, 10, 11, 13, 14]);
+  });
+
   it('keeps text id and page range and flags very long unbroken poems', () => {
     const lines = Array.from({ length: 80 }, (_, index) => `Vers ${index + 1}`).join('\n');
     const xml = workXml.replace(

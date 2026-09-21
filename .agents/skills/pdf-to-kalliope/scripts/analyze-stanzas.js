@@ -568,17 +568,28 @@ const analyzeStanzas = input => {
 
   const parsed = parseBody(input.body);
   const candidates = new Map();
-  const recognizedForms = knownFormAnalysis({
+  const knownFormCandidates = new Map();
+  const matchingForms = knownFormAnalysis({
     ...parsed,
-    candidates,
+    candidates: knownFormCandidates,
   });
-  const dominantLength =
-    recognizedForms.length > 0
-      ? null
-      : dominantPatternAnalysis({
-          ...parsed,
-          candidates,
-        });
+  const dominantCandidates = new Map();
+  const inferredDominantLength = dominantPatternAnalysis({
+    ...parsed,
+    candidates: dominantCandidates,
+  });
+  const hasExactKnownForm = matchingForms.some(
+    form => form.boundary_changes === 0
+  );
+  const preferDominantPattern =
+    inferredDominantLength != null && !hasExactKnownForm;
+  const dominantLength = preferDominantPattern
+    ? inferredDominantLength
+    : null;
+  const recognizedForms = preferDominantPattern ? [] : matchingForms;
+
+  (preferDominantPattern ? dominantCandidates : knownFormCandidates)
+    .forEach(candidate => addCandidate(candidates, candidate));
   if (recognizedForms.length === 0 && dominantLength == null) {
     localPatternAnalysis({
       ...parsed,
