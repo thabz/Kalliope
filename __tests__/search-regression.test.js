@@ -52,13 +52,15 @@ const requireElasticsearch = async () => {
   }
 };
 
-const search = async ({ country, poetId = '', query }) => {
+const search = async ({ country, keywordIds = [], poetId = '', query }) => {
   const responseText = await elasticSearchClient.search(
     elasticsearchIndex,
     'text',
     country,
     poetId,
-    query
+    query,
+    0,
+    keywordIds
   );
   return JSON.parse(responseText);
 };
@@ -161,5 +163,34 @@ describeElasticsearch('Elasticsearch search regression', () => {
     });
     expect(hitIds(germanTitle)[0]).toBe('goethe2000010805');
     expect(germanTitle.hits.hits[0]._source.poet.country).toBe('de');
+
+    // Keyword articles and deliberately tagged texts share the broad search.
+    const romanticismKeyword = await search({
+      country: 'dk',
+      query: 'romantikken',
+    });
+    expect(hitIds(romanticismKeyword)).toContain('keyword-romantikken');
+    const romanticismHit = romanticismKeyword.hits.hits.find(
+      hit => hit._id === 'keyword-romantikken'
+    );
+    expect(romanticismHit._source.keyword.title).toBe('Romantikken');
+
+    const sonnetKeyword = await search({ country: 'dk', query: 'sonnet' });
+    expect(hitIds(sonnetKeyword)).toContain('keyword-sonnet');
+
+    // An explicit keyword filter returns texts only and agrees with their ids.
+    const sonnets = await search({
+      country: 'dk',
+      keywordIds: ['sonnet'],
+      query: '',
+    });
+    expect(sonnets.hits.total.value).toBeGreaterThan(0);
+    expect(
+      sonnets.hits.hits.every(
+        hit =>
+          hit._source.result_type === 'text' &&
+          hit._source.text.keyword_ids.includes('sonnet')
+      )
+    ).toBe(true);
   });
 });

@@ -44,6 +44,19 @@ describe('Elasticsearch client', () => {
       type: 'text',
       analyzer: 'kalliope_text',
     });
+    expect(body.mappings.properties.keyword.properties.id).toEqual({
+      type: 'keyword',
+    });
+    expect(body.mappings.properties.keyword.properties.title.analyzer).toBe(
+      'kalliope_text'
+    );
+    expect(body.mappings.properties.text.properties.keyword_ids).toEqual({
+      type: 'keyword',
+    });
+    expect(body.mappings.properties.text.properties.keyword_titles).toEqual({
+      type: 'text',
+      analyzer: 'kalliope_text',
+    });
     expect(body.mappings.properties.text.properties.id).toEqual({
       type: 'keyword',
     });
@@ -109,8 +122,9 @@ describe('Elasticsearch client', () => {
     const body = JSON.parse(global.fetch.mock.calls[0][1].body);
     const searchQuery = body.query.bool.must[0].bool;
     const resultTypeQuery = searchQuery.should[1].bool;
-    const workQuery = resultTypeQuery.should[1].bool.must[0].bool;
-    const textQuery = resultTypeQuery.should[2].bool.must[0].bool;
+    const keywordQuery = resultTypeQuery.should[1].bool;
+    const workQuery = resultTypeQuery.should[2].bool.must[0].bool;
+    const textQuery = resultTypeQuery.should[3].bool.must[0].bool;
 
     expect(body.query.bool.filter).toEqual([]);
     expect(searchQuery.minimum_should_match).toBe(1);
@@ -152,7 +166,10 @@ describe('Elasticsearch client', () => {
         ],
       },
     });
-    expect(resultTypeQuery.should[1].bool.filter).toEqual([
+    expect(keywordQuery.filter).toEqual([
+      { term: { result_type: 'keyword' } },
+    ]);
+    expect(resultTypeQuery.should[2].bool.filter).toEqual([
       { term: { 'poet.country': 'dk' } },
     ]);
     expect(workQuery.filter).toEqual([{ term: { result_type: 'work' } }]);
@@ -190,7 +207,7 @@ describe('Elasticsearch client', () => {
         },
       },
     ]);
-    expect(resultTypeQuery.should[2].bool.filter).toEqual([
+    expect(resultTypeQuery.should[3].bool.filter).toEqual([
       { term: { 'poet.country': 'dk' } },
     ]);
     expect(textQuery.filter).toEqual([{ term: { result_type: 'text' } }]);
@@ -203,6 +220,8 @@ describe('Elasticsearch client', () => {
             'text.title^10',
             'text.subtitles^2',
             'text.content_html',
+            'text.keyword_ids^8',
+            'text.keyword_titles^6',
           ],
         },
       },
@@ -285,6 +304,8 @@ describe('Elasticsearch client', () => {
       'text.title^10',
       'text.subtitles^2',
       'text.content_html',
+      'text.keyword_ids^8',
+      'text.keyword_titles^6',
     ]);
     expect(textQuery.should[0]).toEqual({
       match: {
@@ -294,5 +315,42 @@ describe('Elasticsearch client', () => {
         },
       },
     });
+  });
+
+  test('filters texts by every selected keyword and optional free text', async () => {
+    await elasticSearchClient.search(
+      'kalliope',
+      'text',
+      'dk',
+      '',
+      'kærlighed',
+      0,
+      ['sonnet', 'elegi']
+    );
+
+    const body = JSON.parse(global.fetch.mock.calls[0][1].body);
+    expect(body.query.bool.filter).toEqual([
+      { term: { result_type: 'text' } },
+      { term: { 'poet.country': 'dk' } },
+      { term: { 'text.keyword_ids': 'sonnet' } },
+      { term: { 'text.keyword_ids': 'elegi' } },
+    ]);
+    expect(body.query.bool.must).toHaveLength(1);
+    expect(body.query.bool.must[0].bool.filter).toEqual([
+      { term: { result_type: 'text' } },
+    ]);
+  });
+
+  test('searches all collections without a country filter', async () => {
+    await elasticSearchClient.search('kalliope', 'text', 'all', '', 'rose');
+
+    const body = JSON.parse(global.fetch.mock.calls[0][1].body);
+    const resultTypeQuery = body.query.bool.must[0].bool.should[1].bool;
+    expect(resultTypeQuery.should[2].bool.filter).toEqual([
+      { term: { result_type: 'work' } },
+    ]);
+    expect(resultTypeQuery.should[3].bool.filter).toEqual([
+      { term: { result_type: 'text' } },
+    ]);
   });
 });

@@ -15,8 +15,17 @@ const pathWithoutQuery = url => url.split(/[?#]/, 1)[0];
 const Tabs = (props) => {
   let searchField;
 
-  const { items, selected, poet, lang, query, requestPath } = props;
-  let country = props.country;
+  const {
+    items,
+    selected,
+    poet,
+    lang,
+    query,
+    keywordIds = [],
+    requestPath,
+  } = props;
+  const explicitCountry = props.country;
+  let country = explicitCountry;
   if (country == null) {
     country = lang === 'da' ? 'dk' : 'gb';
   }
@@ -53,9 +62,15 @@ const Tabs = (props) => {
     const q = searchField.value;
     let URL = null;
     if (poet != null && poet.has_texts) {
-      URL = Links.searchURL(lang, q, poet.country, poet.id);
+      URL = Links.searchURL(
+        lang,
+        q,
+        explicitCountry ?? poet.country,
+        poet.id,
+        keywordIds
+      );
     } else {
-      URL = Links.searchURL(lang, q, country);
+      URL = Links.searchURL(lang, q, country, null, keywordIds);
     }
     if (document) {
       searchField.blur();

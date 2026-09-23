@@ -41,6 +41,7 @@ import { isFileModified } from '../tools/libs/caching.js';
 import { htmlToXml } from '../tools/libs/helpers.js';
 import * as xml from '../tools/build-static/xml.js';
 import {
+  buildElasticsearchKeywordEntries,
   buildElasticsearchPoetEntries,
   buildElasticsearchTextEntries,
   buildElasticsearchTextEntryDocuments,
@@ -189,6 +190,74 @@ describe('Elasticsearch build-static step', () => {
     expect(
       buildElasticsearchPoetEntries(collected, new Set(['other']))
     ).toEqual([]);
+  });
+
+  test('builds searchable published keyword entries', () => {
+    expect(
+      buildElasticsearchKeywordEntries({
+        keywords: new Map([
+          [
+            'sonnet',
+            {
+              id: 'sonnet',
+              title: 'Sonet',
+              redirectURL: null,
+              isDraft: false,
+            },
+          ],
+          [
+            'perioder',
+            { id: 'perioder', title: 'Perioder', isDraft: true },
+          ],
+        ]),
+      })
+    ).toEqual([
+      {
+        id: 'keyword-sonnet',
+        data: {
+          result_type: 'keyword',
+          keyword: {
+            id: 'sonnet',
+            title: 'Sonet',
+            redirectURL: null,
+          },
+        },
+      },
+    ]);
+  });
+
+  test('adds keyword ids and titles to text documents', () => {
+    const textNode = { node: 'text' };
+    const collectedWithKeywords = {
+      ...collected,
+      keywords: new Map([
+        ['sonnet', { id: 'sonnet', title: 'Sonet' }],
+      ]),
+    };
+    xml.getElementByTagName.mockImplementation((element, tagName) => tagName);
+    xml.getElementsByTagNames.mockReturnValue([textNode]);
+    xml.safeGetAttr.mockImplementation((element, attrName) =>
+      attrName === 'id' ? 'poet-first-text' : null
+    );
+    xml.safeGetText.mockImplementation((element, tagName) =>
+      tagName === 'keywords' ? 'sonnet' : null
+    );
+    xml.safeGetInnerXML.mockImplementation(element =>
+      element === 'body' ? 'Tekstindhold' : 'Teksttitel'
+    );
+    xml.tagName.mockReturnValue('text');
+    htmlToXml.mockReturnValue([['Tekstindhold']]);
+
+    const entry = buildElasticsearchTextEntries(collectedWithKeywords).find(
+      item => item.workId === 'first'
+    );
+    const textDocument = buildElasticsearchTextEntryDocuments(
+      collectedWithKeywords,
+      entry
+    ).find(document => document.id === 'poet-first-text');
+
+    expect(textDocument.data.text.keyword_ids).toEqual(['sonnet']);
+    expect(textDocument.data.text.keyword_titles).toEqual(['Sonet']);
   });
 
   test('skips Elasticsearch when no works changed and index exists', async () => {

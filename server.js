@@ -294,8 +294,12 @@ app.prepare().then(() => {
           'text',
           query.country,
           query.poetId,
-          query.query,
-          query.page || 0
+          query.query ?? '',
+          query.page ?? 0,
+          (query.keyword ?? '')
+            .split(',')
+            .map(keywordId => keywordId.trim())
+            .filter(keywordId => keywordId.length > 0)
         )
         .then(result => {
           res.writeHead(200, { 'Content-Type': 'application/json' });
