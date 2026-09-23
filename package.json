@@ -21,6 +21,7 @@
     "test": "jest",
     "test-watch": "jest --watch",
     "test-ci": "jest",
+    "test-search-integration": "KALLIOPE_ELASTICSEARCH_INTEGRATION=true jest --runInBand __tests__/search-regression.test.js",
     "test2": "next test",
     "new-text-id": "node tools/new-text-id.js",
     "poetic-form": "node tools/poetic-form/poetic-form.js",
