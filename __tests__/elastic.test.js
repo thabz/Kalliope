@@ -226,6 +226,50 @@ describe('Elasticsearch build-static step', () => {
     ]);
   });
 
+  test('indexes keyword entries in the configured selected-poet index', async () => {
+    const collectedWithKeywords = {
+      ...collected,
+      keywords: new Map([
+        [
+          'sonnet',
+          {
+            id: 'sonnet',
+            title: 'Sonet',
+            redirectURL: null,
+            isDraft: false,
+          },
+        ],
+      ]),
+    };
+
+    await update_elasticsearch(collectedWithKeywords, {
+      forceRebuild: true,
+      index: 'kalliope-ci',
+      poetIds: new Set(['poet']),
+    });
+
+    expect(elasticSearchClient.createIndex).toHaveBeenCalledWith('kalliope-ci');
+    expect(elasticSearchClient.bulkCreate).toHaveBeenCalledWith(
+      'kalliope-ci',
+      [
+        {
+          id: 'keyword-sonnet',
+          data: {
+            result_type: 'keyword',
+            keyword: {
+              id: 'sonnet',
+              title: 'Sonet',
+              redirectURL: null,
+            },
+          },
+        },
+      ]
+    );
+    expect(elasticSearchClient.refreshIndex).toHaveBeenCalledWith(
+      'kalliope-ci'
+    );
+  });
+
   test('adds keyword ids and titles to text documents', () => {
     const textNode = { node: 'text' };
     const collectedWithKeywords = {
