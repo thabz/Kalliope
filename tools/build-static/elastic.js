@@ -48,10 +48,36 @@ const getElasticsearchTextEntrySourceFiles = (poetId, workId, work) =>
     `fdirs/${poetId}/${workId}.xml`,
   ];
 
-const buildElasticsearchTextEntries = collected => {
+const includesPoet = (poetIds, poetId) =>
+  poetIds == null || poetIds.has(poetId);
+
+const selectedPoetIds = (collected, poetIds) => {
+  if (poetIds == null) {
+    return null;
+  }
+
+  const selected = new Set(poetIds);
+  const unknown = Array.from(selected).filter(
+    poetId => collected.poets.has(poetId) === false
+  );
+  if (unknown.length > 0) {
+    throw new Error(
+      `Unknown Elasticsearch poet ids: ${unknown.sort().join(', ')}`
+    );
+  }
+  if (selected.size === 0) {
+    throw new Error('Elasticsearch poet selection cannot be empty.');
+  }
+  return selected;
+};
+
+const buildElasticsearchTextEntries = (collected, poetIds = null) => {
   const entries = [];
 
   collected.poets.forEach((poet, poetId) => {
+    if (includesPoet(poetIds, poetId) === false) {
+      return;
+    }
     worksForPoet(collected, poetId).forEach(work => {
       const workId = work.id;
       entries.push({
@@ -109,15 +135,17 @@ const getPoetSearchText = poet => {
     .join(' ');
 };
 
-const buildElasticsearchPoetEntries = collected => {
-  return Array.from(collected.poets.values()).map(poet => ({
-    id: `poet-${poet.id}`,
-    data: {
-      result_type: 'poet',
-      poet,
-      poet_search: getPoetSearchText(poet),
-    },
-  }));
+const buildElasticsearchPoetEntries = (collected, poetIds = null) => {
+  return Array.from(collected.poets.values())
+    .filter(poet => includesPoet(poetIds, poet.id))
+    .map(poet => ({
+      id: `poet-${poet.id}`,
+      data: {
+        result_type: 'poet',
+        poet,
+        poet_search: getPoetSearchText(poet),
+      },
+    }));
 };
 
 const buildElasticsearchTextEntryDocuments = (collected, entry) => {
@@ -254,7 +282,7 @@ const chunkDocuments = documents => {
   return chunks;
 };
 
-const writeElasticsearchDocuments = async documents => {
+const writeElasticsearchDocuments = async (index, documents) => {
   const chunks = chunkDocuments(documents);
 
   console.log(
@@ -266,7 +294,7 @@ const writeElasticsearchDocuments = async documents => {
   await mapLimit(
     chunks,
     async chunk => {
-      const result = await elasticSearchClient.bulkCreate('kalliope', chunk);
+      const result = await elasticSearchClient.bulkCreate(index, chunk);
       completed += chunk.length;
       if (
         completed % elasticsearchBulkSize === 0 ||
@@ -319,9 +347,13 @@ const isElasticsearchUnavailable = error => {
   return false;
 };
 
-const update_elasticsearch = async collected => {
+const update_elasticsearch = async (collected, options = {}) => {
+  const index = options.index ?? 'kalliope';
+  const poetIds = selectedPoetIds(collected, options.poetIds ?? null);
+  const forceRebuild = options.forceRebuild ?? elasticsearchForceRebuild;
+  const skipUnavailable = options.skipUnavailable ?? true;
   const indexElasticsearchPoetEntries = async entries => {
-    await writeElasticsearchDocuments(entries);
+    await writeElasticsearchDocuments(index, entries);
   };
 
   const indexElasticsearchTextEntries = async entries => {
@@ -335,25 +367,26 @@ const update_elasticsearch = async collected => {
       documents.push(...textEntryDocuments);
     });
 
-    await writeElasticsearchDocuments(documents);
+    await writeElasticsearchDocuments(index, documents);
   };
 
   try {
-    const textEntries = buildElasticsearchTextEntries(collected);
-    const poetEntries = buildElasticsearchPoetEntries(collected);
-    const indexExists = await elasticSearchClient.indexExists('kalliope');
+    const textEntries = buildElasticsearchTextEntries(collected, poetIds);
+    const poetEntries = buildElasticsearchPoetEntries(collected, poetIds);
+    const indexExists = await elasticSearchClient.indexExists(index);
     const codeModified = isFileModified(...elasticsearchCodeSourceFiles);
     const needsFullRebuild =
       force_reload ||
-      elasticsearchForceRebuild ||
+      forceRebuild ||
+      poetIds != null ||
       !indexExists ||
       codeModified;
 
     if (needsFullRebuild) {
-      await elasticSearchClient.createIndex('kalliope');
+      await elasticSearchClient.createIndex(index);
       await indexElasticsearchPoetEntries(poetEntries);
       await indexElasticsearchTextEntries(textEntries);
-      await elasticSearchClient.refreshIndex('kalliope');
+      await elasticSearchClient.refreshIndex(index);
       return;
     }
 
@@ -369,17 +402,13 @@ const update_elasticsearch = async collected => {
 
     await mapLimit(
       Array.from(modifiedPoetIds),
-      poetId => elasticSearchClient.deletePoet('kalliope', poetId),
+      poetId => elasticSearchClient.deletePoet(index, poetId),
       elasticsearchConcurrency
     );
     await mapLimit(
       changedTextEntries.filter(entry => !modifiedPoetIds.has(entry.poetId)),
       entry =>
-        elasticSearchClient.deleteWork(
-          'kalliope',
-          entry.poetId,
-          entry.workId
-        ),
+        elasticSearchClient.deleteWork(index, entry.poetId, entry.workId),
       elasticsearchConcurrency
     );
 
@@ -390,9 +419,9 @@ const update_elasticsearch = async collected => {
       await indexElasticsearchPoetEntries(changedPoetEntries);
     }
     await indexElasticsearchTextEntries(changedTextEntries);
-    await elasticSearchClient.refreshIndex('kalliope');
+    await elasticSearchClient.refreshIndex(index);
   } catch (error) {
-    if (isElasticsearchUnavailable(error)) {
+    if (skipUnavailable && isElasticsearchUnavailable(error)) {
       console.log(
         'Elasticsearch server not available; skipping search index update.'
       );

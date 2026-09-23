@@ -70,6 +70,16 @@ Kør testene før større ændringer eller pull requests:
 npm test
 ```
 
+Søgeregressionstesten kræver en kørende Elasticsearch og data fra et fuldt
+static-build. Den opretter et isoleret `kalliope-ci`-indeks med et mindre udvalg
+af digtere:
+
+```shell
+make elasticsearch
+KALLIOPE_SKIP_ELASTICSEARCH=true KALLIOPE_SKIP_IMAGE_THUMBNAILS=true npm run build-static
+npm run test-search-integration
+```
+
 ## Facsimile-generering
 
 Facsimiler bygges i en separat Docker Compose-service. Læg PDF'er i
