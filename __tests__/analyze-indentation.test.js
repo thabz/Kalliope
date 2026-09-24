@@ -3,7 +3,7 @@ import fs from 'fs';
 import {
   analyzeIndentation,
   parseBody,
-} from '../.codex/skills/pdf-to-kalliope/scripts/analyze-indentation.js';
+} from '../.agents/skills/pdf-to-kalliope/scripts/analyze-indentation.js';
 
 const bodyWithProfile = profile =>
   profile

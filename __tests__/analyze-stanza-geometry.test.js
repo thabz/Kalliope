@@ -1,7 +1,7 @@
 import {
   analyzeStanzaGeometry,
   parseTesseractTsv,
-} from '../.codex/skills/pdf-to-kalliope/scripts/analyze-stanza-geometry.js';
+} from '../.agents/skills/pdf-to-kalliope/scripts/analyze-stanza-geometry.js';
 
 const linesAt = tops => tops.map((top, index) => ({
   page: 1,

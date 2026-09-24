@@ -17,7 +17,7 @@ import {
   selectDensePages,
   verifyBundle,
   wordErrorRate,
-} from '../.codex/skills/prepare-fraktur-ocr/scripts/fraktur-ocr.js';
+} from '../.agents/skills/prepare-fraktur-ocr/scripts/fraktur-ocr.js';
 
 describe('prepare-fraktur-ocr image processing', () => {
   let root;

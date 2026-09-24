@@ -35,7 +35,7 @@ tesseract --list-langs
 The standard end-to-end benchmark is:
 
 ```shell
-node .codex/skills/prepare-fraktur-ocr/scripts/fraktur-ocr.js run SOURCE \
+node .agents/skills/prepare-fraktur-ocr/scripts/fraktur-ocr.js run SOURCE \
   --out-dir SCRATCH
 ```
 
@@ -47,11 +47,11 @@ Fraktur profile, compares the readings and verifies the bundle.
 Use the composable subcommands when a later step must be repeated:
 
 ```shell
-node .codex/skills/prepare-fraktur-ocr/scripts/fraktur-ocr.js prepare SOURCE --out-dir SCRATCH
-node .codex/skills/prepare-fraktur-ocr/scripts/fraktur-ocr.js sample --out-dir SCRATCH
-node .codex/skills/prepare-fraktur-ocr/scripts/fraktur-ocr.js recognize --out-dir SCRATCH
-node .codex/skills/prepare-fraktur-ocr/scripts/fraktur-ocr.js compare --out-dir SCRATCH
-node .codex/skills/prepare-fraktur-ocr/scripts/fraktur-ocr.js verify --out-dir SCRATCH
+node .agents/skills/prepare-fraktur-ocr/scripts/fraktur-ocr.js prepare SOURCE --out-dir SCRATCH
+node .agents/skills/prepare-fraktur-ocr/scripts/fraktur-ocr.js sample --out-dir SCRATCH
+node .agents/skills/prepare-fraktur-ocr/scripts/fraktur-ocr.js recognize --out-dir SCRATCH
+node .agents/skills/prepare-fraktur-ocr/scripts/fraktur-ocr.js compare --out-dir SCRATCH
+node .agents/skills/prepare-fraktur-ocr/scripts/fraktur-ocr.js verify --out-dir SCRATCH
 ```
 
 Pass `--ground-truth DIR` to `compare` or `run` when `DIR` contains corrected

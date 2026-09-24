@@ -3,13 +3,13 @@
 Læs denne reference umiddelbart før reviewcheckpointet og oprettelsen af pull
 requesten. PR-beskrivelsen skal begynde med checklisten nedenfor. Tilpas den til
 det konkrete værk ved at fjerne irrelevante opgaver og tilføje konkrete
-værkspecifikke opgaver, men bevar kategorierne `Codex` og `Bruger` præcis.
+værkspecifikke opgaver, men bevar kategorierne `Agent` og `Bruger` præcis.
 
 Markér kun `[x]`, når opgaven faktisk er udført og kontrolleret. Manuelle
 brugeropgaver forbliver `[ ]`, indtil brugeren selv har udført dem.
 
 ```markdown
-### Codex
+### Agent
 
 - [ ] Opret værket i korrekt mappe og filstruktur
 - [ ] Indsæt og strukturer værkets tekst
@@ -46,7 +46,7 @@ Angiv den præcise kilde til teksten eller facsimilet. Medtag så vidt muligt
 titel, forfatter, udgivelsesår, forlag eller trykkested, bind og en permanent
 URL eller anden stabil reference.
 
-### Arbejde udført af Codex
+### Arbejde udført af Agent
 
 Beskriv kort de vigtigste operationer uden at gentage hele checklisten, fx
 værkstruktur, konvertering eller transskription, markup, metadata, validering

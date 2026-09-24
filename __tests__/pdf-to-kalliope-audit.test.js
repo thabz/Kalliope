@@ -1,18 +1,18 @@
 import {
   auditPageInventory,
   buildPageInventory,
-} from '../.codex/skills/pdf-to-kalliope/scripts/audit-utils.js';
-import { analyzeWholeWork } from '../.codex/skills/pdf-to-kalliope/scripts/analyze-whole-work.js';
-import { historicalOcrCandidates } from '../.codex/skills/pdf-to-kalliope/scripts/audit-ocr-candidates.js';
+} from '../.agents/skills/pdf-to-kalliope/scripts/audit-utils.js';
+import { analyzeWholeWork } from '../.agents/skills/pdf-to-kalliope/scripts/analyze-whole-work.js';
+import { historicalOcrCandidates } from '../.agents/skills/pdf-to-kalliope/scripts/audit-ocr-candidates.js';
 import {
   updateFinding,
   validateFindings,
-} from '../.codex/skills/pdf-to-kalliope/scripts/findings-register.js';
+} from '../.agents/skills/pdf-to-kalliope/scripts/findings-register.js';
 import {
   createCheckpoint,
   validateReviewerRanges,
   verifyCheckpoint,
-} from '../.codex/skills/pdf-to-kalliope/scripts/review-checkpoint.js';
+} from '../.agents/skills/pdf-to-kalliope/scripts/review-checkpoint.js';
 
 const workXml = `<?xml version="1.0"?>
 <kalliopework id="1900" author="test">

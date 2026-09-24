@@ -4,7 +4,7 @@ import {
   facsimileFromTsvFilename,
   normalizeForMatch,
   preparePoetryGeometry,
-} from '../.codex/skills/pdf-to-kalliope/scripts/prepare-poetry-geometry.js';
+} from '../.agents/skills/pdf-to-kalliope/scripts/prepare-poetry-geometry.js';
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="fixture" author="fixture">

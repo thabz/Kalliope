@@ -433,7 +433,7 @@ For historical Danish Fraktur, run the side-aware OCR candidate audit in
 addition to the ordinary checks:
 
 ```shell
-node .codex/skills/pdf-to-kalliope/scripts/audit-ocr-candidates.js \
+node .agents/skills/pdf-to-kalliope/scripts/audit-ocr-candidates.js \
   path/to/work.xml path/to/inventory.jsonl > /tmp/<work>-ocr-candidates.jsonl
 ```
 
@@ -466,7 +466,7 @@ candidates only and cannot overrule the facsimile.
 Before editing the transcription, create two machine-readable scratch files:
 
 ```shell
-node .codex/skills/pdf-to-kalliope/scripts/build-page-inventory.js \
+node .agents/skills/pdf-to-kalliope/scripts/build-page-inventory.js \
   fdirs/<poet>/<work>.xml /tmp/<work>-pages.jsonl
 touch /tmp/<work>-findings.jsonl
 ```
@@ -479,7 +479,7 @@ compare every row with the facsimile, correct its anchors and facsimile mapping,
 then set `status` to `reviewed`. A page that starts a new `<text>` remains an
 explicit `text-start` exception and must not acquire a synthetic `<pb>`.
 
-These files and commands are process-neutral. They do not depend on Codex,
+These files and commands are process-neutral. They do not depend on a specific agent runtime,
 CMUX or a particular agent. The producer can use them during the first pass,
 but the completion checkpoint requires every page to be assigned to a reviewer
 whose stable ID differs from the producer ID. Coordination messages are
@@ -500,7 +500,7 @@ the commit or diff `snapshot` it concerns. Legal statuses are `open`, `fixed`,
 the withdrawal reason and evidence. Validate the register with:
 
 ```shell
-node .codex/skills/pdf-to-kalliope/scripts/findings-register.js validate \
+node .agents/skills/pdf-to-kalliope/scripts/findings-register.js validate \
   /tmp/<work>-findings.jsonl
 ```
 
@@ -510,11 +510,11 @@ Use the `status` subcommand to make an auditable status transition instead of
 rewriting IDs:
 
 ```shell
-node .codex/skills/pdf-to-kalliope/scripts/findings-register.js status \
+node .agents/skills/pdf-to-kalliope/scripts/findings-register.js status \
   /tmp/<work>-findings.jsonl FINDING-ID fixed \
   'Rettet mod facsimilet' 'facs 019.jpg, før/efter ...' DIFF-SHA
 
-node .codex/skills/pdf-to-kalliope/scripts/findings-register.js status \
+node .agents/skills/pdf-to-kalliope/scripts/findings-register.js status \
   /tmp/<work>-findings.jsonl FINDING-ID verified \
   'Genkontrolleret mod facsimilet' 'facs 019.jpg, rettelsen stemmer' \
   DIFF-SHA REVIEWER-ID
@@ -524,7 +524,7 @@ After each editing batch, run the semantic page audit against the independently
 reviewed inventory:
 
 ```shell
-node .codex/skills/pdf-to-kalliope/scripts/audit-pagebreaks.js \
+node .agents/skills/pdf-to-kalliope/scripts/audit-pagebreaks.js \
   fdirs/<poet>/<work>.xml /tmp/<work>-pages.jsonl
 ```
 
@@ -539,7 +539,7 @@ review is not an audit.
 Run the side-aware historical OCR profile as a separate candidate pass:
 
 ```shell
-node .codex/skills/pdf-to-kalliope/scripts/audit-ocr-candidates.js \
+node .agents/skills/pdf-to-kalliope/scripts/audit-ocr-candidates.js \
   fdirs/<poet>/<work>.xml /tmp/<work>-pages.jsonl \
   > /tmp/<work>-ocr-candidates.jsonl
 ```
@@ -802,7 +802,7 @@ with a temporary JSON file containing only that poem's body:
 ```
 
 ```shell
-node .codex/skills/pdf-to-kalliope/scripts/analyze-stanzas.js /tmp/poem.json
+node .agents/skills/pdf-to-kalliope/scripts/analyze-stanzas.js /tmp/poem.json
 ```
 
 Inspect every reported candidate against the facsimile. Run the analysis again
@@ -830,7 +830,7 @@ fresh input from that reviewed structure and run the bundled indentation
 analysis while preserving every leading space and every blank stanza separator:
 
 ```shell
-node .codex/skills/pdf-to-kalliope/scripts/analyze-indentation.js /tmp/poem.json
+node .agents/skills/pdf-to-kalliope/scripts/analyze-indentation.js /tmp/poem.json
 ```
 
 The optional JSON field `page_breaks` contains the one-based verse-line numbers
@@ -876,7 +876,7 @@ Use the bundled whole-work wrapper for the final run instead of manually
 omitting poems:
 
 ```shell
-node .codex/skills/pdf-to-kalliope/scripts/analyze-whole-work.js \
+node .agents/skills/pdf-to-kalliope/scripts/analyze-whole-work.js \
   fdirs/<poet>/<work>.xml /tmp/<work>-tsv \
   > /tmp/<work>-structure.json
 ```
@@ -898,9 +898,9 @@ number, for example `055.psm3.tsv` and `055.psm6.tsv`:
 ```shell
 tesseract PAGE.jpg stdout -l dan --psm 3 tsv > /tmp/<work>-tsv/055.psm3.tsv
 tesseract PAGE.jpg stdout -l dan --psm 6 tsv > /tmp/<work>-tsv/055.psm6.tsv
-node .codex/skills/pdf-to-kalliope/scripts/prepare-poetry-geometry.js \
+node .agents/skills/pdf-to-kalliope/scripts/prepare-poetry-geometry.js \
   WORK.xml /tmp/<work>-tsv > /tmp/<work>-geometry-input.json
-node .codex/skills/pdf-to-kalliope/scripts/analyze-whole-work.js \
+node .agents/skills/pdf-to-kalliope/scripts/analyze-whole-work.js \
   WORK.xml /tmp/<work>-tsv > /tmp/<work>-structure.json
 ```
 
@@ -917,9 +917,9 @@ For a focused diagnostic after preprocessing, pass a block's normalized
 `lines`, `observed_boundaries` and `observed_indentation` to the two analyzers:
 
 ```shell
-node .codex/skills/pdf-to-kalliope/scripts/analyze-stanza-geometry.js \
+node .agents/skills/pdf-to-kalliope/scripts/analyze-stanza-geometry.js \
   /tmp/poem-geometry.json > /tmp/page-stanzas.json
-node .codex/skills/pdf-to-kalliope/scripts/analyze-indentation-geometry.js \
+node .agents/skills/pdf-to-kalliope/scripts/analyze-indentation-geometry.js \
   /tmp/poem-geometry.json > /tmp/page-indentation.json
 ```
 
@@ -1411,10 +1411,10 @@ As a current baseline, include the relevant forms of:
 
 ```shell
 npm run report-ocr-candidates
-node .codex/skills/pdf-to-kalliope/scripts/audit-ocr-candidates.js WORK.xml INVENTORY.jsonl
-node .codex/skills/pdf-to-kalliope/scripts/audit-pagebreaks.js WORK.xml INVENTORY.jsonl
-node .codex/skills/pdf-to-kalliope/scripts/analyze-whole-work.js WORK.xml TSV_DIRECTORY
-node .codex/skills/pdf-to-kalliope/scripts/findings-register.js validate FINDINGS.jsonl
+node .agents/skills/pdf-to-kalliope/scripts/audit-ocr-candidates.js WORK.xml INVENTORY.jsonl
+node .agents/skills/pdf-to-kalliope/scripts/audit-pagebreaks.js WORK.xml INVENTORY.jsonl
+node .agents/skills/pdf-to-kalliope/scripts/analyze-whole-work.js WORK.xml TSV_DIRECTORY
+node .agents/skills/pdf-to-kalliope/scripts/findings-register.js validate FINDINGS.jsonl
 xmllint --noout path/to/work.xml
 npm test -- --runInBand __tests__/pagebreaks.test.js
 git diff --check
@@ -1504,10 +1504,10 @@ inventory row's reviewer. For example:
 Create and verify the checkpoint with:
 
 ```shell
-node .codex/skills/pdf-to-kalliope/scripts/review-checkpoint.js create \
+node .agents/skills/pdf-to-kalliope/scripts/review-checkpoint.js create \
   /tmp/<work>-checkpoint.json /tmp/<work>-findings.jsonl \
   /tmp/<work>-pages.jsonl /tmp/<work>-review.json
-node .codex/skills/pdf-to-kalliope/scripts/review-checkpoint.js verify \
+node .agents/skills/pdf-to-kalliope/scripts/review-checkpoint.js verify \
   /tmp/<work>-checkpoint.json
 ```
 

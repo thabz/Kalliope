@@ -1,4 +1,4 @@
-import { analyzeIndentationGeometry } from '../.codex/skills/pdf-to-kalliope/scripts/analyze-indentation-geometry.js';
+import { analyzeIndentationGeometry } from '../.agents/skills/pdf-to-kalliope/scripts/analyze-indentation-geometry.js';
 
 const linesAt = lefts => lefts.map((left, index) => ({
   page: 1,
