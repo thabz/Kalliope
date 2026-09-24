@@ -84,7 +84,7 @@ og relevante kontroller. Hvis det ikke kan afgøres sikkert:
 2. beskriv spørgsmålet under `Udestående`;
 3. angiv fil og så præcist som muligt digt, afsnit, side eller tekst-id;
 4. angiv plausible muligheder og en foreslået næste handling;
-5. angiv om Codex eller brugeren forventes at løse punktet;
+5. angiv om Agent eller brugeren forventes at løse punktet;
 6. beskriv et foretaget valg under `Usikkerheder og redaktionelle valg`, også
    når én plausibel løsning allerede er valgt.
 
@@ -92,7 +92,7 @@ Skjul aldrig ulæselige ord, OCR-tvivl, usikker tegnsætning, uklare
 overskriftsniveauer eller værkgrænser, mulige fejl i originalen, uregelmæssig
 paginering eller tvivl om kursiv, spatiering og anden typografi.
 
-Hvis et åbent punkt senere kan løses sikkert af Codex, skal det løses og
+Hvis et åbent punkt senere kan løses sikkert af Agent, skal det løses og
 verificeres før overdragelsen i stedet for blot at stå som udestående.
 
 ## 4. Forbered review og pull request
@@ -118,7 +118,7 @@ tilstrækkelig.
 
 Tilpas checklisten til værket: fjern kun punkter, der reelt ikke er relevante,
 og tilføj konkrete værkspecifikke punkter efter behov. Bevar kategorierne
-`Codex` og `Bruger` præcis. Checkboxene er aktuel status:
+`Agent` og `Bruger` præcis. Checkboxene er aktuel status:
 
 - `[x]` betyder udført og kontrolleret;
 - `[ ]` betyder ikke udført, ikke verificeret eller kræver brugerens
@@ -127,8 +127,8 @@ og tilføj konkrete værkspecifikke punkter efter behov. Bevar kategorierne
 Markér aldrig en manuel brugeropgave som færdig på brugerens vegne. Skriv
 heller aldrig, at en validering er OK, hvis den ikke faktisk er kørt og bestået.
 
-En PR er klar fra Codex' side, når alt sikkert automatiserbart arbejde er
+En PR er klar fra Agent' side, når alt sikkert automatiserbart arbejde er
 udført, det resterende menneskelige arbejde er konkret, lokaliseret og
 overskueligt, og alle krævede CI-checks er grønne. PR-beskrivelsen skal inden
-for få sekunder vise, hvad der er indsat, kilden, hvad Codex har kontrolleret,
+for få sekunder vise, hvad der er indsat, kilden, hvad Agent har kontrolleret,
 hvad der mangler, hvor brugeren skal kigge, og hvilke usikkerheder der findes.

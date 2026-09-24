@@ -11,7 +11,7 @@ import {
   refineDarkCropEdges,
   renderTitlePage,
   titlePageChecksPassed,
-} from '../.codex/skills/prepare-kalliope-titlepage/scripts/titlepage.js';
+} from '../.agents/skills/prepare-kalliope-titlepage/scripts/titlepage.js';
 
 describe('prepare Kalliope title page', () => {
   let root;

@@ -1,7 +1,7 @@
 import {
   analyzeStanzas,
   parseBody,
-} from '../.codex/skills/pdf-to-kalliope/scripts/analyze-stanzas.js';
+} from '../.agents/skills/pdf-to-kalliope/scripts/analyze-stanzas.js';
 
 const bodyWithStanzas = stanzaLengths => {
   let verseLine = 0;
