@@ -8,9 +8,13 @@
     <picture type="frontpage" src="1833-p2.jpg">Det originale foromslag til <i>Aarets tolv Maaneder</i> (1833).</picture>
     <picture type="titlepage" src="1833-p1.jpg">Titelbladet lyder ,,Aarets tolv Maaneder, / Tegnede med Blæk og Pen / af / H. C. Andersen. // Kjøbenhavn, 1833. / Paa Universitets-Boghandler C. A. Reitzels Forlag. / Trykt hos P. N. Jørgensen.''.</picture>
   </pictures>
-  <source facsimile="1833.pdf" facsimile-pages-num="142" facsimile-pages-offset="11">H. C. Andersen: <i>Aarets tolv Maaneder</i>, Kjøbenhavn, 1833, paa Universitets-Boghandler C. A. Reitzels Forlag.</source>
+  <source facsimile="1833.pdf" facsimile-pages-num="142" facsimile-pages-offset="12">H. C. Andersen: <i>Aarets tolv Maaneder</i>, Kjøbenhavn, 1833, paa Universitets-Boghandler C. A. Reitzels Forlag.</source>
   <pagebreaks/>
-  <quality>korrektur1,kilde,side</quality>
+  <proofreadings>
+    <proofreading model="gpt-5.6-sol" datetime="2026-09-24T21:42:45+02:00"/>
+    <proofreading model="gpt-5" datetime="2026-09-24T21:42:45+02:00"/>
+  </proofreadings>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </workhead>
 <workbody>
 
@@ -19,7 +23,7 @@
   <title>Til Kongen</title>
   <firstline>Et fattigt Barn jeg var, mig Ingen kjendte</firstline>
   <source facsimile-pages="9-12"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -42,11 +46,8 @@ Men i Dit Øie: Fader-Kjærlighed.
 <head>
   <title>Januar</title>
   <firstline>Nyfødt Aaret er vorden!</firstline>
-  <notes>
-    <note>* Disse Digte ere skrevne i Sommeren 1832. Begivenhederne, det gamle Aar omtale, gaae saaledes, som man seer, paa Aaret 1831.</note>
-  </notes>
   <source pages="1-10"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -108,7 +109,7 @@ See de henrundne Aar, som bevingede Smaae,
 Svæve hen i det Blaae.
 Men det yngste, smukt, med et flagrende Haar,
 Nærmest ved Faderen staaer;
-Verden det nævner: "det gamle Aar".
+Verden det nævner: "det gamle Aar."
 Det stirrer mod Jorden tilbage,
 Hører dets Klage!
 
@@ -120,8 +121,7 @@ Til Frihed, Kraft og Kjærlighed.
 Det yngste Barn vel græder meest,
 Men har det derfor Sorger fleest?
 
-<nonum><center>Det gamle Aar.</center></nonum>
-*
+<nonum><center>Det gamle Aar<footnote>Disse Digte ere skrevne i Sommeren 1832. Begivenhederne, det gamle Aar omtale, gaae saaledes, som man seer, paa Aaret 1831.</footnote>.</center></nonum>
 Hvor mellem Myrter og glødende Frugter
 I Bugter
 Floderne gaae
@@ -265,7 +265,7 @@ Og Danmark kan det første Grønt fremvise!
   <title>Februar</title>
   <firstline>Mark og Enge dækkes af den hvide Snee</firstline>
   <source pages="11-22"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -424,8 +424,7 @@ Først, naar Krattet springer ud,
 Og det nye Grønt vi finde,
 Alt det gamle Løv forsvinde.
 Fast det staaer fra Top til Rod;
-Thi vor Herre er saa god! *
-* et Sagn.
+Thi vor Herre er saa god<footnote>et Sagn.</footnote>!
 
 <pb n="19" facs="030.jpg"/><nonum><center>Postkarlen.</center></nonum>
 Her i denne lille By,
@@ -473,8 +472,7 @@ Gjennem mangt et Hjerte gik.
 Herren selv, som kjender Trangen,
 Havde under Psalmesangen
 Dækket det mod Ild og Landse,
-Bag ved Sneens hvide Skandse. *
-* Et Folkesagn.
+Bag ved Sneens hvide Skandse<footnote>Et Folkesagn.</footnote>.
 
 <pb n="21" facs="032.jpg"/><nonum><center>Fuglene.</center></nonum>
 Smaabørn, kjør kun rask afsted!
@@ -516,7 +514,7 @@ Mit Hjertes blodige Straale?
   <title>Marts</title>
   <firstline>Livets Frihed, Jordens Baand</firstline>
   <source pages="23-34"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -771,12 +769,12 @@ Nei, fra det Indre Kraften sig bevæger!
   <toctitle>Første del</toctitle>
   <firstline>Frihed, synger Du, April!</firstline>
   <source pages="35-44"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 "- Frihed, synger Du, April!
-med nyfødt Grønt og Sommer-Smiil."
+Med nyfødt Grønt og Sommer-Smiil."
 
 <nonum><center>*</center></nonum>
 
@@ -787,7 +785,7 @@ En Champagne-Maaned er Du!
 Gjennem Snee og Vinterkulde
 Du fremsprudler Liv og Varme.
 Sommersol og Vinterhagel,
-Marken Grøn, og dog lidt Snee!
+Marken grøn, og dog lidt Snee!
 Mig i Sind og Skind Du ligner,
 Som en Draabe ligner Draaben.
 Ungdomsglad jeg slynger Armen
@@ -883,7 +881,7 @@ Alt grønnes her den brune Hæk,
 Og Sneen smelter bort paa Vang,
 Mens Fuglen synger Friheds Sang!
 
-<nonum><center>En lille Fugl (paa Grenen).</center></nonum>
+<nonum><center>En lille Fugl<br/>(paa Grenen).</center></nonum>
 Hen over Sø og salten Vand
 Jeg kommer fra et fremmed Land;
 Nær Polens Grændse Landet laae,
@@ -894,10 +892,9 @@ Og Hædersstøtte Galgen blev,
 Thi bøiede sig hver en Fri
 Ærbødigt, mens han gik forbi,
 Og aarle, alt ved Lærkens Slag,
-Den stod bekrandset næste Dag.*
+Den stod bekrandset næste Dag.<footnote>Historisk Sandhed.</footnote>
 Jeg satte mig paa Støtten lidt,
 Og sang mit Friheds Qvirrevit!
-*Historisk Sandhed.
 
 <nonum><center>Eccho.</center></nonum>
 <pb n="42" facs="053.jpg"/>"Qvirrevit!"
@@ -949,7 +946,7 @@ Ak! er min Friheds Sang ei meer?
   <subtitle>(kommer med sin Mappe og sine Tegne-Redskaber).</subtitle>
   <firstline>Den friske grønne Eng med sine Damme</firstline>
   <source pages="44-45"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -983,12 +980,8 @@ Ved Vintrens Snee, hvor mangt et Minde hviler.
   <title>April (Slutning)</title>
   <toctitle>Slutning</toctitle>
   <firstline>Hvor festligt klinger over Bondens Vang</firstline>
-  <notes>
-    <note>* Det var den 1ste April, (1340) at Niels Ebbesen slog Grev Geert og frelste Danmark fra dets Undertrykkere.</note>
-    <note>** Slaget paa Kjøbenhavns Rhed den 2den April 1801.</note>
-  </notes>
   <source pages="45-46"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1011,9 +1004,9 @@ Leger da heroppe med sit lange Haar.
 Hver April hun bringer, under Bølge-Sang,
 Danmark Friheds-Krandsen af sit grønne Tang;
 <pb n="46" facs="057.jpg"/>Og mens Vinter-Kysten blomstrer smukt igjen,
-Synger Danmarks frelse ved Niels Ebbesen;*
+Synger Danmarks Frelse ved Niels Ebbesen;<footnote>Det var den 1ste April, (1340) at Niels Ebbesen slog Grev Geert og frelste Danmark fra dets Undertrykkere.</footnote>
 Synger Brittens Skjændsel og hans fule Smiil,
-Mens hun skjænker Danmark Krandsen for April!**
+Mens hun skjænker Danmark Krandsen for April!<footnote>Slaget paa Kjøbenhavns Rhed den 2den April 1801.</footnote>
 </poetry>
 </body>
 </text>
@@ -1026,7 +1019,7 @@ Mens hun skjænker Danmark Krandsen for April!**
   <title>Mai</title>
   <firstline>Du skiønne Mai! af Dig jeg veed</firstline>
   <source pages="47-54"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1067,7 +1060,7 @@ Saaledes løb den klare Aae,
 Og Linet laae paa Blegen,
 Da Signe Kongeskibet saae
 Fra Stranden, under Egen.
-Saa dufted Skov og Blomst og Blad,
+Saa dufted' Skov og Blomst og Blad,
 Da hun og Hagbarth skiltes ad!
 
 See, lig et Speil staaer Sø og Strand
@@ -1080,8 +1073,8 @@ Agnete dog fandt Kjærlighed.
 Hør, Bølgen nynner Dig sin Drøm:
 "Mod Grønlands Kyst jeg vugged';
 Kajakken gled paa striden Strøm,
-Hvor mangen Sælhund dukked*.
-Der lærete jeg, paa nøgne Bred,
+Hvor mangen Sælhund dukked'.
+Der lærte jeg, paa nøgne Bred,
 Hvor Hjerter slaae, boer Kjærlighed."
 
 "Jeg over Verdens-Havet gik,
@@ -1096,7 +1089,7 @@ Mens Vaarens nye Scene
 Indbyder til en Vandrings-Gang
 Bag Skovens grønne Grene.
 Høit Lærken slaaer paa Mark og Eng,
-Den bygger der sin Brudesend.
+Den bygger der sin Brudeseng.
 
 <pb n="52" facs="063.jpg"/>I Dammen hvide Blomster staae
 Imellem brede Blade,
@@ -1165,11 +1158,11 @@ At Poesie er Kjærlighed!
   <title>Juni</title>
   <firstline>Glemt er nu Vaarens Kamp og Vinter-Sorgen</firstline>
   <source pages="55-66"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-"Glemt er nu Vaarens Kamp og Vinter-Sorgen,
+Glemt er nu Vaarens Kamp og Vinter-Sorgen,
 Til Glæde sig forvandler hvert et Suk.
 Skjøn som en Brud, den anden Bryllups-Morgen,
 Ei længer Barn, og dog saa ung og smuk,
@@ -1355,7 +1348,7 @@ Nei saa lærd, det er jeg ikke.
 <nonum><center>Eduard.</center></nonum>
 Ih jo!
 Vel for mig, men
-(spøgende)
+<nonum><center>(spøgende)</center></nonum>
 Dig? - desværre!
 Giv dog aldrig nogen Herre
 Slige Blomster, Gud bevar' os!
@@ -1383,8 +1376,7 @@ Grenen paa Toupeen slaer.
 Har Du hele Dagen baaret
 Æbleblomster i dit Haar?
 
-<nonum><center>Marie</center></nonum>
-(spøgende).
+<nonum><center>Marie (spøgende).</center></nonum>
 Hjertet faaer kun Spot og Trængsel;
 See, det har man for sin Længsel,
 Nu, han er her, gjør han Nar.
@@ -1422,11 +1414,10 @@ Og dog, som for otte Aar! -
 - Skal vi nu gaae op til Moder? -
 
 <nonum><center>Eduard.</center></nonum>
-(kysser hende paa Panden).
+<nonum><center>(kysser hende paa Panden).</center></nonum>
 Det tør jeg jo nok - som Broder.
 
-<pb n="66" facs="077.jpg"/><nonum><center>En lille Fugl</center></nonum>
-(i Træet).
+<pb n="66" facs="077.jpg"/><nonum><center>En lille Fugl (i Træet).</center></nonum>
 Hjertet maa af Elskov slaae
 Baade Nat og lyse Dage!
 Kjærlighed jeg synge maa,
@@ -1455,14 +1446,14 @@ Har dog ingen Mage!
     <note type="credits">Bidrag fra Sven Andersen</note>
   </notes>
   <source pages="67-76"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-"- Alting svulmer, alting gynger,
+" - Alting svulmer, alting gynger,
 Bølge, Luft og Hierte synger
-Høit din Priis, Du stolte Hav".
-"- Armen jeg om Vennen slynger,
+Høit din Priis, Du stolte Hav."
+" - Armen jeg om Vennen slynger,
 Hiertet sig til Hiertet klynger;
 Hver en Sorg, som Barmen tynger,
 Svinder hen i Blomsterduft!"
@@ -1567,7 +1558,7 @@ Loftet stærkt paa Bjælken tynger,
 Hvor sig en Sanct-Hans-Urt slynger,
 Og den stakkels Flue synger,
 Der paa Spindelvævet gynger;
-Sange snart vist ende vil.
+Sangen snart vist ende vil.
 
 <pb n="73" facs="084.jpg"/>Gubben her jeg hører heller,
 End hvad Cooper selv fortæller.
@@ -1629,7 +1620,7 @@ Hver en Mismods Stemme tier,
 Barnlig' fromme Melodier
 Gjennembæve mig med Lyst.
 
-<nonum><center>*</center></nonum>
+<nonum><center><asterism/></center></nonum>
 
 Havet staaer saa blankt og stille,
 Himlen speiler sig deri,
@@ -1663,7 +1654,7 @@ Svulme, døe i Kjærlighed!
   <title>August</title>
   <firstline>Ja, Øieblikket ene er det just</firstline>
   <source pages="77-84"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1805,12 +1796,13 @@ Lev og nyd, trara, trara!"
   <title>September</title>
   <firstline>Den skiønne Sommer fra os gaaer</firstline>
   <source pages="85-90"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 "Den skiønne Sommer fra os gaaer,
 En Afskedsfest den giver;
+Thi staaer den i sin Farvepragt.
 Saadan, i kongelige Dragt,
 Gik Jephtas Datter smykket
 Did hen, hvor Døden bygged'."
@@ -1933,7 +1925,7 @@ Vor Sjæl til Gud indvier.
   <title>October</title>
   <firstline>Storken er reist til fremmed' Land, Spurven boer i dens Rede</firstline>
   <source pages="91-98"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2068,16 +2060,12 @@ Der ei Barnet græder!
 <head>
   <title>November</title>
   <firstline>Tredje Reeb ind! — Op at beslaae Mersseilet!</firstline>
-  <notes>
-    <note>* Efter en lignende Situation hos Cooper.</note>
-    <note>** Brorson.</note>
-    <note>*** Den 21de Novbr. 1286 myrdedes Erik Glipping i Finnerup.</note>
-  </notes>
   <source pages="99-114"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
+<nonum><center>Kapitainen.</center></nonum>
 "Tredje Reeb ind! - - Op at beslaae Mersseilet! -
 Ha, alle Djævle, hvilken Nat! -"
 
@@ -2128,7 +2116,7 @@ Manden bortskjar alle Touge,
 Undersøgte Alting nøie,
 Haabede, naar Vraget sank,
 Baaden, frelst fra Dybets Hvirvler,
-Let dem bar paa Havets Flade.*
+Let dem bar paa Havets Flade<footnote>Efter en lignende Situation hos Cooper.</footnote>.
 Men eet Toug sig for ham skjulte,
 Livet hang ved dette ene.
 Tause sad de, Alt var stille;
@@ -2158,54 +2146,54 @@ Slaae de hvide Dødningben.
 Intet stort Du der udretted',
 Nei, hør kun, hvad jeg har gjort. -
 Nær ved Genfersøens Bredder,
-<pb n="104" facs="115.jpg"/>Hvor lavinen laa paa fjeldet,
-Purpurfarvet smukt af solen,
+<pb n="104" facs="115.jpg"/>Hvor Lavinen laae paa Fjeldet,
+Purpurfarvet smukt af Solen,
 Svang jeg mig i Aftenskumring.
-Dybt i Dalen alt var Stilhed;
+Dybt i Dalen Alt var Stilhed;
 Ingen Luftning rørte Træet.
-- ved den lille, lave Hytte
+- Ved den lille, lave Hytte
 Sad en tre Aars Dreng og leged'.
 Hæslig var han som en Engel!
-Brune øjne, smil paa Kinden -
-Se, nu kom en mægtig Rovfugl,
+Brune Øine, Smiil paa Kinden -
+See, nu kom en mægtig Rovfugl,
 Der paa sine sorte Vinger
 Rask slog ned og greb den Lille.
-Højt den skreg; han fløj med Byttet.
+Høit den skreg; han fløi med Byttet.
 Moderen kom ud fra Huset.
 Uden Ord og uden Stemme
 Stirred' hun med Dødens Blikke.
 Først den satte sig paa Taget,
-Fløj saa op ad Fjeldets Side;
+Fløi saa op ad Fjeldets Side;
 Hvilte der, til hun var ved ham,
-Atter fløj han da - ha, glæde!
-Længer kunne hun ej følge -
-Mellem Graner, Sne og Skyer,
+Atter fløi han da - ha, Glæde!
+Længer kunde hun ei følge -
+Mellem Graner, Snee og Skyer,
 Sad han i sin stolte Rede;
-Slukked Øiets Stjerne-flamme,
+Slukked' Øiets Stjerne-Flamme,
 Leged' med de gule Lokker,
 Drak de varme, friske Draaber,
-Og istemte højt sin Sang. -
-<pb n="105" facs="116.jpg"/>- under Reden laa et Snelag.
+Da istemte høit sin Sang. -
+<pb n="105" facs="116.jpg"/>- Under Reden laae et Snelag.
 Ved min Aande blev det løsnet,
 Thi jeg bævede af Lyst,
-Og den lette Snebold trilled',
+Da den lette Sneebolt trilled',
 Svulmede til en Lavine,
 Skjulte Hytten dybt i Dalen,
 Hvor den bange Moder drømte,
-Hendes mindste Barn laa trygt.
+Hendes mindste Barn laae trygt.
 
-<nonum><center>Den femte.</center></nonum>
-Dorske vagabonder er i.
-Ikkun ét - ét eventyr?
-Nej, som snogehammen broget,
-Maa det med Bedrifter veksle.
+<nonum><center>Den Femte.</center></nonum>
+Dorske Vagabonder er' I.
+Ikkun eet -! eet Eventyr?
+Nei, som Snogehammen broget,
+Maa det med Bedrifter vexle. -
 Med den blege Maanestraale
 Leged' jeg i Midnatsstunden
 Om hver stærk og saftfuld Urt,
 Suged' Kræfter op af Jorden,
 Lagde Gift i Rod og Blade,
 Krydret med mit Flammekys! -
-Højt imellem Norges Fjelde
+Høit imellem Norges Fjelde
 Traf jeg paa en Trup af Ulve;
 Jeg med Vinterkulden slog dem,
 Drev dem bort med Storm og Hagl,
@@ -2232,8 +2220,8 @@ Barnet grov' vi ned i Mosen -
 Nu er Pigen atter dydig.
 Derpaa gik min Vei til Havet,
 Jeg blev Bølge mellem Bølger.
-Stormen Steg, der kom en Snekke,
-Fire Mand, en niaars Gut,
+Stormen steg, der kom en Snekke,
+Fire Mand, en niaars Gut.
 Var Besætningen derinde,
 Gutten gik just i Kahytten,
 Men de fire Mænd var' oppe.
@@ -2296,7 +2284,7 @@ Thi Roserne voxe i Dale.
 <pb n="109" facs="120.jpg"/>Lad Verden mig Alting betage,
 Lad Tornene rive og nage.
 Lad Hjertet daane og briste,
-Min Rose jeg aldrig vil miste!" **
+Min Rose jeg aldrig vil miste!"<footnote>Brorson.</footnote>
 
 <nonum><center>De onde Aander.</center></nonum>
 Fæle, frygtelige Toner!
@@ -2339,7 +2327,7 @@ Hyler jeg med Natte-Blæsten
 Gjennem Murens dybe Revner.
 "Kongen har ei Ro i Graven!"
 Hvisker da den bange Fisker,
-Og med Eet han bli'er gudfrygtug,
+Og med Eet han bli'er gudfrygtig,
 Mens han seiler over Bugten.
 
 <nonum><center>Den Fjerde og Femte.</center></nonum>
@@ -2395,11 +2383,12 @@ Og I Andre, som vil følge,
 Vorder Taage! kom som Munke,
 Mens bag Kappen Sværdet blinker.
 Saadan vi den glade Blodnat,
-Vor November-Farce spille,***
+Vor November-Farce spille,<footnote>Den 21de Novbr. 1286 myrdedes Erik Glipping i Finnerup.</footnote>
 Mens en Natmand med Familie
 Gaaer i Storm og Blæst paa Heden,
 Og forfærdes, naar han seer os
 Kogle i den vilde Midnat.
+<nonum><right>(De forsvinde).</right></nonum>
 
 <pb n="113" facs="124.jpg"/><nonum><center>(Det oprørte Hav. - Et Skib flyver frem i Stormen).</center></nonum>
 
@@ -2456,7 +2445,7 @@ Kold og hvid, som Kommandanten.
   <toctitle>Første del</toctitle>
   <firstline>Dybt i mit Hjerte, hvor hun boer</firstline>
   <source pages="115-119"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2558,7 +2547,7 @@ Og nu - er jeg en gammel Pebersvend.
   <subtitle>(synge)</subtitle>
   <firstline>Barn Jesus i en Krybbe laae</firstline>
   <source pages="120"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2583,11 +2572,9 @@ Halleluja, Barn Jesus!
 
 <text id="andersen2026080814">
 <head>
-  <title>December (Slutning)</title>
-  <toctitle>Slutning</toctitle>
   <firstline>Nu til Enhver man Julegave skjænker</firstline>
   <source pages="120-126"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2600,7 +2587,7 @@ Min Glædens Palme blev en bladløs Tjørn,
 Da den sig stolt til Solen vilde hæve! -
 Tag mine Digte, det er Hjertets Børn,
 I Kjærlighed de blev, i den de leve;
-<pb n="121" facs="132.jpg"/>De nævne <i>Dig</i>, - de flyve mod din Favn, -
+<pb n="121" facs="132.jpg"/>De nævne <i>Dig</i>, - de flyve mod Din Favn, -
 Men tør ei sige Deres Moders Navn!
 Som <i>Pelikanen</i> for dem hver jeg stod,
 I Kjærlighed jeg følte Hjertet bæve.
@@ -2625,7 +2612,7 @@ Fulgte som Devise.
 <nonum><center>Studenten.</center></nonum>
 Granske, føle, muntert lee,
 Aand og Skjønhed prise,
-Esse non, videri, see,
+<i>Esse non, videri, see,</i>
 Det er min Devise!
 
 <pb n="122" facs="133.jpg"/><nonum><center>En ung Herre.</center></nonum>
@@ -2649,7 +2636,7 @@ Det er hans Devise!
 <nonum><center>En Enke.</center></nonum>
 Livets Held en Mand mig bød,
 Slig Present vi prise.
-Gud skee Lov, min Mander død,
+Gud skee Lov, min Mand er død,
 Det er min Devise!
 
 <pb n="123" facs="134.jpg"/><nonum><center>Allesammen.</center></nonum>
@@ -2679,8 +2666,8 @@ Faaer Alting Liv og Alting Tunge.
 
 <nonum><center>*</center></nonum>
 
-<nonum><center>De Døde.</center></nonum>
-<pb n="124" facs="135.jpg"/><nonum><center>(medens de dandse rundt om Gravene).</center></nonum>
+<pb n="124" facs="135.jpg"/><nonum><center>De Døde.</center></nonum>
+<nonum><center>(medens de dandse rundt om Gravene).</center></nonum>
 Maanen skinner rund og klar,
 Men, at her vi svæve,
 Det er kun en Drøm, vi har,
@@ -2725,7 +2712,7 @@ Gaae vi da igjen, o vee!
 Siig det, Du, som lever.
 Hu, er jeg et Spøgelse?
 Skræk mig gjennembæver.
-<i>(de flygte ned i deres Grave):</i>
+<nonum><right><i>(de flygte ned i deres Grave).</i></right></nonum>
 
 <nonum><center>Elskeren.</center></nonum>
 Kjærlighed forjager kjæk
