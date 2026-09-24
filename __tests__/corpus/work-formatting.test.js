@@ -53,7 +53,6 @@ Et citat
         '  <title>Æbler, øer og åer</title>\n' +
         '  <firstline>Første linje</firstline>\n' +
         '  <source pages="1"/>\n' +
-        '  <quality>korrektur1</quality>\n' +
         '  <metre>\n' +
         '    <analysis pattern="iambic-pentameter" confidence="0.91"/>\n' +
         '  </metre>\n' +
@@ -63,6 +62,7 @@ Et citat
         '  <syllables>\n' +
         '    <analysis pattern="hendecasyllabic" confidence="0.89"/>\n' +
         '  </syllables>\n' +
+        '  <quality>korrektur1</quality>\n' +
         '</head>',
     );
     expect(formatted).toContain('</text>\n\n<text>');
@@ -72,6 +72,192 @@ Et citat
       /^[ \t]+<\/?(?:body|content|head|poetry|prose|quote|section|subwork|text|workbody|workhead)(?:[ \t>/])/m,
     );
     expect(structuralTagsOutsideColumnZero(formatted)).toEqual([]);
+  });
+
+  it('sorts text metadata canonically and keeps quality last', () => {
+    const xml = `<text id="test">
+<head>
+  <quality>korrektur1</quality>
+  <keywords>person</keywords>
+  <metre>
+    <analysis pattern="iambic" confidence="0.9"/>
+  </metre>
+  <source pages="1"/>
+  <firstline>Første linje</firstline>
+  <subtitle>Undertitel</subtitle>
+  <title>Titel</title>
+</head>
+<body><poetry>Linje</poetry></body>
+</text>
+`;
+
+    expect(formatWorkXml(xml)).toContain(
+      '<head>\n' +
+        '  <title>Titel</title>\n' +
+        '  <subtitle>Undertitel</subtitle>\n' +
+        '  <firstline>Første linje</firstline>\n' +
+        '  <source pages="1"/>\n' +
+        '  <keywords>person</keywords>\n' +
+        '  <metre>\n' +
+        '    <analysis pattern="iambic" confidence="0.9"/>\n' +
+        '  </metre>\n' +
+        '  <quality>korrektur1</quality>\n' +
+        '</head>',
+    );
+  });
+
+  it('uses the canonical order for every supported text metadata field', () => {
+    const order = [
+      'suptitle',
+      'title',
+      'subtitle',
+      'toctitle',
+      'indextitle',
+      'linktitle',
+      'breadcrumbtitle',
+      'firstline',
+      'nofirstline',
+      'year',
+      'dates',
+      'written',
+      'performed',
+      'event',
+      'begivenhed',
+      'notes',
+      'pictures',
+      'source',
+      'keywords',
+      'form',
+      'metre',
+      'rhyme',
+      'structure',
+      'syllables',
+      'quality',
+    ];
+    const analysisFields = new Set([
+      'form',
+      'metre',
+      'rhyme',
+      'structure',
+      'syllables',
+    ]);
+    const metadata = order.toReversed().map(name => {
+      if (name === 'nofirstline') {
+        return `  <${name}/>`;
+      }
+      if (analysisFields.has(name)) {
+        return `  <${name}><analysis pattern="x"/></${name}>`;
+      }
+      return `  <${name}>v</${name}>`;
+    }).join('\n');
+    const formatted = formatWorkXml(
+      `<text id="test">\n<head>\n${metadata}\n</head>\n</text>\n`,
+    );
+    const head = formatted.match(/<head>([\s\S]*?)<\/head>/)[1];
+    const actual = [...head.matchAll(/^  <([a-z][a-z0-9-]*)/gm)]
+      .map(match => match[1]);
+
+    expect(actual).toEqual(order);
+  });
+
+  it('does not sort work or section metadata', () => {
+    const xml = `<kalliopework>
+<workhead>
+  <quality>korrektur1</quality>
+  <title>Værk</title>
+</workhead>
+<workbody>
+<section>
+<head>
+  <quality>korrektur1</quality>
+  <title>Afsnit</title>
+</head>
+<content></content>
+</section>
+</workbody>
+</kalliopework>
+`;
+    const formatted = formatWorkXml(xml);
+
+    expect(formatted).toContain(
+      '<workhead>\n' +
+        '  <quality>korrektur1</quality>\n' +
+        '  <title>Værk</title>\n' +
+        '</workhead>',
+    );
+    expect(formatted).toContain(
+      '<section>\n' +
+        '<head>\n' +
+        '  <quality>korrektur1</quality>\n' +
+        '  <title>Afsnit</title>\n' +
+        '</head>',
+    );
+  });
+
+  it('moves leading comments with their metadata and leaves trailing comments', () => {
+    const xml = `<text id="test">
+<head>
+  <quality>korrektur1</quality>
+  <!-- Kildekommentar -->
+  <source pages="1"/>
+  <title>Titel</title>
+  <!-- Afsluttende kommentar -->
+</head>
+<body><poetry>Linje</poetry></body>
+</text>
+`;
+
+    expect(formatWorkXml(xml)).toContain(
+      '<head>\n' +
+        '  <title>Titel</title>\n' +
+        '  <!-- Kildekommentar -->\n' +
+        '  <source pages="1"/>\n' +
+        '  <quality>korrektur1</quality>\n' +
+        '  <!-- Afsluttende kommentar -->\n' +
+        '</head>',
+    );
+  });
+
+  it('keeps an inline comment with the preceding metadata field', () => {
+    const xml = `<text id="test">
+<head>
+  <quality>korrektur1</quality>
+  <title>Titel</title>
+  <source pages="1"/> <!-- Kildekommentar -->
+</head>
+<body><poetry>Linje</poetry></body>
+</text>
+`;
+
+    expect(formatWorkXml(xml)).toContain(
+      '<head>\n' +
+        '  <title>Titel</title>\n' +
+        '  <source pages="1"/> <!-- Kildekommentar -->\n' +
+        '  <quality>korrektur1</quality>\n' +
+        '</head>',
+    );
+  });
+
+  it('keeps repeated fields stable and preserves direct text with its field', () => {
+    const xml = `<text id="test">
+<head>
+  <source pages="1"/>/>
+  <quality>korrektur1</quality>
+  <notes><note>Første</note></notes>
+  <notes><note>Anden</note></notes>
+  <title>Titel</title>
+</head>
+<body><poetry>Linje</poetry></body>
+</text>
+`;
+    const formatted = formatWorkXml(xml);
+
+    expect(formatted).toContain(
+      '<notes><note>Første</note></notes>\n' +
+        '  <notes><note>Anden</note></notes>',
+    );
+    expect(formatted).toContain('<source pages="1"/>/>\n  <quality>');
+    expect(formatWorkXml(formatted)).toBe(formatted);
   });
 
   it('always leaves a blank line after text and section elements', () => {

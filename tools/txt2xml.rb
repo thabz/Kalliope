@@ -182,6 +182,19 @@ def printPoem()
   if not (@firstline.nil? || @firstline.strip.length == 0)
     puts "  <firstline>#{@firstline}</firstline>"
   end
+  if @written or @performed or @event
+    puts "  <dates>"
+    if @written
+      puts "    <written>#{@written}</written>"
+    end
+    if @performed
+      puts "    <performed>#{@performed}</performed>"
+    end
+    if @event
+      puts "    <event>#{@event}</event>"
+    end
+    puts "  </dates>"
+  end
   if @notes.length > 0 or @credits
     puts "  <notes>"
     @notes.each { |noteline|
@@ -201,19 +214,6 @@ def printPoem()
       else
         puts "  <source pages=\"#{pages}\"/>"
       end
-  end
-  if @written or @performed or @event
-    puts "  <dates>"
-    if @written
-      puts "    <written>#{@written}</written>"
-    end
-    if @performed
-      puts "    <performed>#{@performed}</performed>"
-    end
-    if @event
-      puts "    <event>#{@event}</event>"
-    end
-    puts "  </dates>"
   end
   if @todos.length > 0
     @todos.each { |todo|
