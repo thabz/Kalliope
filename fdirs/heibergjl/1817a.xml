@@ -17,9 +17,9 @@
 <workbody>
 <text id="heibergjl2026091301" ignore-tests="repeated-adjacent-word">
 <head>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <firstline>Au au, den slemme Steen!</firstline>
   <source facsimile-pages="4"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -35,12 +35,12 @@ Jeg spøger, leger, gaaer,
 
 <text id="heibergjl2026091302">
 <head>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <title>Forberedelse.</title>
   <nofirstline/>
-  <source pages="3-6"/>
   <dates><written>1817-03-22</written></dates>
+  <source pages="3-6"/>
   <keywords>grundtvig</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <prose>
@@ -58,14 +58,14 @@ Kjøbenhavn, den 22de Marts 1817.
 
 <text id="heibergjl2026091303" ignore-tests="loose-letters">
 <head>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-  <nofirstline/>
   <title>Fibelbrettet</title>
-  <indextitle>Fibelbrettet</indextitle>
   <toctitle>Fibelbrettet</toctitle>
+  <indextitle>Fibelbrettet</indextitle>
   <linktitle>Fibelbrettet</linktitle>
-  <source pages="7-8"/>
+  <nofirstline/>
   <notes><note>»Fibelbrettet« er betegnelsen i forberedelsen. Undtagelsen loose-letters gælder kun dette fibelbræt, der bevidst består af enkeltbogstaver. Alfabeternes forskellige bogstavformer er bevaret; langt s er her gengivet som ſ.</note></notes>
+  <source pages="7-8"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <prose>
@@ -121,12 +121,12 @@ Va  ve  vi  vo  vu
 
 <text id="heibergjl2026091304">
 <head>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <title>Moralsk Læseøvelse i Prosa,</title>
   <subtitle><line>hvori alle Bogstaver forekomme:</line><line>Faderlig Irettesættelse til den unge Grundtvig,</line><line>fra Forfatteren til dette Skrift.</line></subtitle>
   <nofirstline/>
   <source pages="9-19"/>
   <keywords>grundtvig,luther</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <prose>
@@ -137,12 +137,12 @@ Unge Menneske! Hvor megen Sorg forvolder du mig ikke paa min gamle Alder! Du hav
 
 <text id="heibergjl2026091305">
 <head>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <title>Moralsk Læseøvelse i Vers,</title>
   <subtitle><line>bestaaende for største Delen i den gamle</line><line>ABC-Bogs Riim, omarbeidede</line><line>og forbedrede.</line></subtitle>
   <firstline>See her, Barnlille, vises dig</firstline>
   <source pages="19-23"/>
   <keywords>grundtvig,luther</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -262,12 +262,12 @@ Og ud i Verden langt omreise.
 
 <text id="heibergjl2026091306">
 <head>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <title>Efterskrift.</title>
   <nofirstline/>
+  <notes><note>TODO: På s. 24 er slutningen af ordet efter »lidt efter lidt« bortslidt. »skal« er en mulig læsning, men kun begyndelsen »sk« kan læses sikkert i eksemplaret.</note></notes>
   <source pages="23-24"/>
   <keywords>grundtvig</keywords>
-  <notes><note>TODO: På s. 24 er slutningen af ordet efter »lidt efter lidt« bortslidt. »skal« er en mulig læsning, men kun begyndelsen »sk« kan læses sikkert i eksemplaret.</note></notes>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <prose>
@@ -278,10 +278,10 @@ Jeg haaber, den unge Grundtvig vil finde, at jeg er en yderst billig Informator,
 
 <text id="heibergjl2026091307">
 <head>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <firstline>Naar Hanen glad og munter galer</firstline>
-  <source facsimile-pages="31"/>
   <pictures><picture src="1817a-p3.jpg">Hanen med vers.</picture></pictures>
+  <source facsimile-pages="31"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
