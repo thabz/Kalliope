@@ -7,6 +7,9 @@
     <picture type="titlepage" src="1835-p1.jpg">Titelbladet til <i>Poetisk Læsebog for Børn og barnlige Sjæle, til Brug saavel i Skolen som i Huset</i> (1836) lyder ,,Poetisk Læsebog / for / Børn og barnlige Sjæle, / til Brug saavel i Skolen som i Huset. // Samlet, udgivet og forlagt af A. S. // Sælges til Fordeel for det forenede Velgjørenheds-Selskabs Skoler og koster, — hæftet og med Omslag, — 1 Rbdlr. // Kjøbenhavn. / Trykt hos Bianco Luno &amp; Schneider. / 1835 og 1836.''.</picture>
   </pictures>
   <source facsimile="115308007267.pdf" facsimile-pages-num="641" facsimile-pages-offset="10">A. S. [Povl Frederik Barfod]: <i>Poetisk Læsebog for Børn og barnlige Sjæle, til Brug saavel i Skolen som i Huset</i>, Bianco Luno &amp; Schneider, Kjøbenhavn, 1835 og 1836.</source>
+  <proofreadings>
+    <proofreading model="gpt-6" datetime="2026-09-25T13:00:00+02:00"/>
+  </proofreadings>
 </workhead>
 <workbody>
 
@@ -14,7 +17,7 @@
 <head>
   <title>Fortale</title>
   <source pages="V-XVI" facsimile-pages="10"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <prose>
@@ -250,7 +253,7 @@ A. S.
   <title><num>1.</num>Morgenbøn</title>
   <firstline>Se! Natten er forsvunden</firstline>
   <source pages="1"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -276,7 +279,7 @@ Naar mig min Gud og Ven er nær?
   <title><num>2.</num>Aftenbøn</title>
   <firstline>Nu lukker sig mit Øje</firstline>
   <source pages="2"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -298,7 +301,7 @@ Som ledet har min Fod idag!
     <note>formen i dette Vers kunde unægtelig være bedre, men Tanken er visselig god nok, og hvad Formen angaaer, saa kan det vel tjene til en Undskyldning, at Verset er endnu ældre end Tullins Digterperiode. De første Linier ere vistnok en usminket Udtalelse af vel næsten hele Danmarks Følelser for dets femte Frederik. Se forresten Stubs Biografi.</note>
   </notes>
   <source pages="2"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -317,7 +320,7 @@ Ploven gaa, og Kjolen glide!
   <title><num>4.</num>Børns Tak for gode Forældre</title>
   <firstline>O gode Gud, jeg takker dig</firstline>
   <source pages="2-4"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -364,7 +367,7 @@ Til gode Sjæles rette Hjem,
   <title><num>5.</num>Aftensang</title>
   <firstline>Atter jeg en Dag fuldender</firstline>
   <source pages="4-5"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -421,7 +424,7 @@ Frem til Arbejd og til Glæde.
   <title><num>6.</num>Aarstiderne</title>
   <firstline>Vor Herre sagde til Vaaren: Dæk</firstline>
   <source pages="6-7"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -461,7 +464,7 @@ Og strax indflumred' den trætte Jord.
   <title><num>7.</num>Fingrene</title>
   <firstline>Søskende jeg kjender fem</firstline>
   <source pages="7-8"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -508,7 +511,7 @@ Og til Velkomst et igjen.
   <title><num>8.</num>Hunden og Bukken</title>
   <firstline>Jeg bider dig, Buk! forsvar dig nu</firstline>
   <source pages="8-9"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -534,7 +537,7 @@ H.  Nej, Buk! jeg mener det ej saa ilde,
   <title><num>9.</num>Bjørnen</title>
   <firstline>Se her en Dansemester, Børn</firstline>
   <source pages="9"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -563,7 +566,7 @@ Lidt Honning var meer efter hans Behag.
     <note>Opløsningen er: et Brev. Denne Gaade, den eneste i hele Samlingen, havde jeg tilvisse ikke optaget, hvis jeg ikke havde vidst, at den er saa almindelig imellem alle Gaadeflere, uden at Tusindparten af dem kjender dens Oprindelse. Den er nemlig forfattet af den græske, saa almeenberømte Digterinde Safts, som levede omtrent en 600 Aar for Kristi Fødsel.</note>
   </notes>
   <source pages="10"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -582,7 +585,7 @@ Disse tavse Børns den tavse Stemme.
   <title><num>11.</num>Morgenbøn</title>
   <firstline>Min Gud! vær takket for din Ro</firstline>
   <source pages="10"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -609,7 +612,7 @@ Som Blomstens smilte da mit Øje:
   <title><num>12.</num>Fattig Barns Sang</title>
   <firstline>Min Fader død, min Moder død</firstline>
   <source pages="11-12"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -648,7 +651,7 @@ Men giv med venligt Blik!
   <title><num>13.</num>Da jeg var lille</title>
   <firstline>Der var en Tid, da jeg var meget lille</firstline>
   <source pages="12-13"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -708,7 +711,7 @@ Gud! lad mig aldrig, aldrig tabe den!
     <note>Dette Digt er et Brudstykke af en Epilog, fremsagt ved en af Instituttets Elever. Epilogens færlige Dkonomi forbød mig naturligvis at optage den hele.</note>
   </notes>
   <source pages="14-15"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -753,7 +756,7 @@ Jeg er dit Barn; — jeg veed, du elsker mig!
     <note>Ogsaa dette Stykke er et Brudstykke af et noget længere Digt, Bøgetræet", som jeg ikke troede at kunne optage i sin Heelhed.</note>
   </notes>
   <source pages="15"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -787,7 +790,7 @@ De blev kun til Pindebrænde!
     <note>Naar man finder dette Digt noget anderledes aftrykt andre Steder, maa jeg kun gjøre opmærksom paa, at Forfatteren selv har foretaget disse smaa Forandringer i den nyeste Udgave af sit St. Hansaftenspil. Denne Anmærkning maa tillige gjælde med Hensyn til en heel Deel andre Digte af samme og flere Forfattere.</note>
   </notes>
   <source pages="16"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -820,7 +823,7 @@ Jeg er en god lille Jødedreng.
   <title><num>17.</num>Lammet</title>
   <firstline>Hvi skriger du, Lam? du lille Gjæk</firstline>
   <source pages="17"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -849,7 +852,7 @@ L.  Bange? Ak nej, hvorfor? du Kjære!
     <note>„aatte" — ejede; — „han aatte ej Frænde" — han havde ingen Slægt og Venner.</note>
   </notes>
   <source pages="17-18"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -896,7 +899,7 @@ Men der er ingen Mindesteen.
   <title><num>19.</num>Fiskerinderne</title>
   <firstline>Nu til Arbejd atter, hvor den friske</firstline>
   <source pages="19"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -924,7 +927,7 @@ Atter Net og Angel ud fra Land!
     <note>Den eneste Grund, Hvorfor jeg optog dette Stykke, er den, at det virkelig er forfattet af en fjortenaarig Bondedreng paa hans Sygeleje. Se Andersen (N.). Det forekom mig, at denne Situation var saa sjælden, at den vel kunde bode paa Stykkets poetiske Mangler, — og at den nødvendigviis maatte vække og interessere ethvert Barn, der kun var istand til at vækkes.</note>
   </notes>
   <source pages="19-20"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -961,7 +964,7 @@ Samle os i Himlens Fred!
   <title><num>21.</num>Den norske Bondes Sang</title>
   <firstline>Jeg er saa fro, jeg er saa glad</firstline>
   <source pages="20-22"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1027,7 +1030,7 @@ Og vær din egen Herre!
   <title><num>22.</num>Hundemordet</title>
   <firstline>Der var engang en Tømmersvend</firstline>
   <source pages="23-24"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1086,7 +1089,7 @@ Man ej om Bagatel maa med sin Næste kives.
   <title><num>23.</num>Bøn for Kongen</title>
   <firstline>Beskjærm vor Konge, store Gud</firstline>
   <source pages="25"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1111,7 +1114,7 @@ Saa let, som i sin Ungdoms Vaar,
     <note>Den, der kjender dette vakre Digt i sin Heelhed, vil vistnok let indsee, hvorfor jeg her kun har kunnet optage det i Brudstykke.</note>
   </notes>
   <source pages="25"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1132,7 +1135,7 @@ Hvor ofte maa vi høre den gamle Æsels-Vise?
     <note>Det samme er Tilfældet med denne Fabel.</note>
   </notes>
   <source pages="25-26"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1157,7 +1160,7 @@ Er værre end min Fjendes Had!''
   <title><num>26.</num>De to Skaldede</title>
   <firstline>En Dag to Skaldede tilsammen staae</firstline>
   <source pages="26"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1181,7 +1184,7 @@ Til Sejrens Lon og Priis? — En Kam!
     <note>Skjønt jo vel „Vinteren"er et Digt for sig selv, maa man dog egentlig betragte den som et Brudstykke af et større Heelt: Aarstiderne. Afflere Grunde optog jeg disse forbundne Digte helst Vinteren; og at optage dem alle havde jeg saameget mindre Grund til, som de findes samlede i Forfatterens egen Læsebog.</note>
   </notes>
   <source pages="27"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1213,7 +1216,7 @@ Forsilde vil han angre det; —
   <title><num>28.</num>Fuglenes Sang</title>
   <firstline>I Maaneskin titter</firstline>
   <source pages="27-28"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1237,7 +1240,7 @@ Kvirilit! Kvirilit!
   <title><num>29.</num>Søen</title>
   <firstline>Børn! saa taler Mutter</firstline>
   <source pages="28"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1266,7 +1269,7 @@ Thi Sviin de var, og Sviin de blev.
     <note>Nogle Exempler skulle tjene til Opmuntring, og andre til Advarsel; i denne Overbeviisning optog jeg denne Fabel, uden dog at torde optage den i sin Heelhed.</note>
   </notes>
   <source pages="29"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1291,7 +1294,7 @@ Sin Befrier sønderriver.
     <note>Unægtelig have disse Linier tabt Noget ved at blive udrevne af deres Sammenhæng, Men er det Ironiske end gaaet bort, saa er det Friste dog blevet tilbage; og at det vil være kærkomment for ethvert livligt Barn, derom holder jeg mig overbeviist. Kun det gav mig Skrupler, at de to sidste Linier maatte undergaae en Smule Forandring, for at Stykket kunde danne et Heelt for sig; men dertil gav Forfatteren mig sin Tilladelse.</note>
   </notes>
   <source pages="29-30"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1321,7 +1324,7 @@ Hvis idag jeg drog til Kirstens Kilde
   <title><num>32.</num>Venskab</title>
   <firstline>Som Skyggen aarle Morgen</firstline>
   <source pages="30"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1340,7 +1343,7 @@ Til Livets Sol gaaer ned.
   <title><num>33.</num>Fiskersang</title>
   <firstline>Nattens Dunkelhed er svunden</firstline>
   <source pages="30-31"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1371,7 +1374,7 @@ Strømme til den danske Kyst!
   <title><num>34.</num>Edderfuglen</title>
   <firstline>En Edderfugl var haardt i Klemme</firstline>
   <source pages="31"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1396,7 +1399,7 @@ Hvi gav du mig mit Aandedræt?''
   <title><num>35.</num>Snemanden</title>
   <firstline>Snemand! ak, hvor jeg gruer</firstline>
   <source pages="32"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1422,7 +1425,7 @@ Og tilsidst det bare Vand.
   <title><num>36.</num>Den gamle Lirendrejer og Kildemanden</title>
   <firstline>Alt ruger Natten i Skoven</firstline>
   <source pages="32-34"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1479,7 +1482,7 @@ Mens du bortsynger mig Sorgen.''
   <title><num>37.</num>Pigen og Svalen</title>
   <firstline>Lille Svale! du, som Foraar bringer</firstline>
   <source pages="34-35"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1516,7 +1519,7 @@ O hvor skal jeg da velsigne dig!
   <title><num>38.</num>Opmuntring</title>
   <firstline>Nyd hver Glæde, Himlen gav</firstline>
   <source pages="35-36"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1543,7 +1546,7 @@ O forsøm ham ej! —
   <title><num>39.</num>Vuggesang</title>
   <firstline>Stille Søvn du nyder</firstline>
   <source pages="36"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1576,7 +1579,7 @@ Naar man selv er god.
     <note>Med Forfatterens venskabelige Tilladelse, og tildeels efter hans Anviisning, er der i denne Salme foretaget nogle Forandringer af den Form, i hvilken den forhen har været Almeenheden bekjendt.</note>
   </notes>
   <source pages="37"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1609,7 +1612,7 @@ Kan stedse mættes ved dit Bord!
   <title><num>41.</num>Vandringsmanden og Lærken</title>
   <firstline>Lærke, hvor tidlig du løfter din Krop</firstline>
   <source pages="38"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1635,7 +1638,7 @@ L.  Med Sang maa jeg jo Vorherre prise,
   <title><num>42.</num>Blomsterne om Vinteren</title>
   <firstline>Hvor er alle de Blomster smaa?</firstline>
   <source pages="38-39"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1669,7 +1672,7 @@ Aabne de smilende Øjne blaa.
   <title><num>43.</num>Hyttevise</title>
   <firstline>Jeg har en Hytte, hvor jeg boer</firstline>
   <source pages="39-40"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1716,7 +1719,7 @@ Mod Kongens Slot min simple Hytte.
   <title><num>44.</num>Hørrens Levnetsløb</title>
   <firstline>Jeg var en Jomfru saa rank og skjøn</firstline>
   <source pages="41-42"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1768,7 +1771,7 @@ Og saa er mit Levnetsløb tilende.
     <note>Udgiveren kunde ikke nægte. sig den Fornøjelfe, i sin Samling at optage dette ret ægte folkelige Digt, saaledes som det findes i Hr. Skuespiller SOL"„Majgildet". Dets For: fatter er idetmindste mig ubekjendt, ligesom den Tidsalder, fra hvilken det hidrsrer; men om dets Hjem kan der næppe være Spørgsmaal. Den fromme, dybe og inderlige Følelse, der heelt gjennemaander det, er tilvisse saa dan, at det intet Under er, at det i mange Egne af Danmark lever paa enhver Bondes Mund, som i hans Hjerte; — at det snarere var et Under, om der fandtes noget ret dansk Hjerte, der ikke gjennembævedes af de hjemlige Toner saa født, som ved den Sang, der fra Moderens Læber omfvævede hans Vugge. Hvor forskjellig fra, og dog hvor liig er den ikke med, vore Kæmpeviser, med vore herlige fædrelandffe Romanser og Ballader! Det er to Blomster, som den samme Luftning og samme Lys og Varme fremkaldte; — men den ene blev en Rose, den anden en Fiol.</note>
   </notes>
   <source pages="42-44"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1820,7 +1823,7 @@ Vær os Alle o. s. v.
   <title><num>46.</num>Sømandssang</title>
   <firstline>Vi Sømænd gjør ej mange Ord</firstline>
   <source pages="44-45"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1878,7 +1881,7 @@ Hurra! vor Konge leve!
   <subtitle>Foraar.</subtitle>
   <firstline>Kildens Vaarsang risler nu</firstline>
   <source pages="46-47"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1937,7 +1940,7 @@ Med sin Glæde vinker,
   <title><num>48.</num>I Aftensolen</title>
   <firstline>De Smaabørn lege i Aftensol</firstline>
   <source pages="47-48"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1973,7 +1976,7 @@ For Barnets lyksalige Time!
   <title><num>49.</num>De hellige tre Konger</title>
   <firstline>Dejlig er den Himmel blaa</firstline>
   <source pages="48-53"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2102,7 +2105,7 @@ Til at lyse for vor Fod.
     <note>Dette den lunefulde Wessels lunefulde Digt bærer naturligvns baade i Form og Stof tydelig Præget af sin Tidsalder. At det er egentlig skrevet som en Sang for et lystigt Selskab, vil man let indsee, saavelsom at det er skrevet, for de tre Naboerne opslugte det, endog i sin Grav stolte, men desværre endnu ikke gjenopstandne, Polen, — og for fremmed Vold overskar det Baand, som engang saa smukt knyttede Danmark og Norge til hinanden. At ethvert Folk har sine karakteristiske Svagheder saavelsom Fortrin, kan næppe betvivles, og vanskelig vilde disse vel antydes med en mere uskyldig Jovialitet, end som her er cet. At jeg imidlertid troede, i denne Samling at burde udelade et Par af Sangens Vers, vil maaskee billiges. „Tongen" — det franske ton. z: Selskabstone. „Han, som boer lidt under Havet"s- Hollænderen.</note>
   </notes>
   <source pages="53-56"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2211,7 +2214,7 @@ Glæden bo i Kongens Bryst!
   <subtitle>Kirsebærret.</subtitle>
   <firstline>Ti stille, du Jordbær! du smaa, bitte Ting</firstline>
   <source pages="57-58"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2280,7 +2283,7 @@ Hvor Stolthed sig bygger i knejsende Slot!
     <note>Ogsaa dette Digt er et Brudstykke.</note>
   </notes>
   <source pages="58-59"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2316,7 +2319,7 @@ Til evig Fred skal vandre!
     <note>„Miler"Kulmiler; — „radselsfuld"er her brugt mindre rigtig som: betaget af Nædsel, istedenfor: indjagende Rædfel,</note>
   </notes>
   <source pages="59-60"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2355,7 +2358,7 @@ Snart vorder endt!
   <title><num>54.</num>Fuglereden</title>
   <firstline>To Unger sidder</firstline>
   <source pages="61-62"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2420,7 +2423,7 @@ Min Barm blev fuld.
     <note>Begge disse Digte ere Brudstykker, som jeg selv — bemyndiget af Forfatteren — har givet Overskrift, ligesom jeg i det sidste har foretaget mig et Par ubetydelige Forandringer, som gjordes nødvendige, da det reves ud af sin Sammenhæng.</note>
   </notes>
   <source pages="63"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2443,7 +2446,7 @@ Om ej Gud ledsager!
     <note>Begge disse Digte ere Brudstykker, som jeg selv — bemyndiget af Forfatteren — har givet Overskrift, ligesom jeg i det sidste har foretaget mig et Par ubetydelige Forandringer, som gjordes nødvendige, da det reves ud af sin Sammenhæng.</note>
   </notes>
   <source pages="63"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2466,7 +2469,7 @@ For Dunsten, — og de kvæles! —
     <note>El Par i dette Digt foretagne Smaaforandringer ere ligeledes ssete med Forfatterens Billigelse.</note>
   </notes>
   <source pages="63-65"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2532,7 +2535,7 @@ Med varslende Lyd.
   <title><num>58.</num>Efteraarssang</title>
   <firstline>Før barsken Nordenvind vil snart forsvinde</firstline>
   <source pages="66"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2567,7 +2570,7 @@ En skjøn, en evigfrodig Sommerdag.
     <note>At denne Fabel her er forkortet, vil vel Enhver billige, som kjender den.</note>
   </notes>
   <source pages="67-70"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2677,7 +2680,7 @@ Han sagde: „I pakke Jer fra min Dør,
     <note>Tilvisse er den gamle, ærlige Tode mig hellig, — men om jeg har gjørt Uret i, dog at forandre enkelte Ting i denne hans Fabel, vil efter mit Skjøn beroe paa, om disse Forandringer ere foretagne med den fømmelige' Ærbodighed, og ere virkelige Forbedringer; — isaafald vilde vist den liberale Forfatter selv have billiget dem.</note>
   </notes>
   <source pages="70-71"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2710,7 +2713,7 @@ Udtrykte saa sit dumme Vaas:
     <note>TODO: Markeret med note 22. Men den er ikke fundet?</note>
   </notes>
   <source pages="71-73"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2767,7 +2770,7 @@ Sig til sin Søn: „Nu veed jeg, du bekjender,
     <note>Uden at fælde nogen Dom om vor nugældende Salmebog, vil jeg her kun føje min ringe Dom til saamange ældre Forfatteres og udraabe: „Jsandhed! det er en Salme''At Mestersangeren Grundtvig dog nu kunde forbedre Adskilligt ved den gamle Brorsons Salme, — hvor naturligt! Og næppe vil Nogen misbillige, at jeg for en stor Deel har optaget Grundtvigs Rettelser i mit Optryk; — men Salmen, som den her er, er dog Brorsons, og ingenlunde den ny Salmebogs.</note>
   </notes>
   <source pages="73-76"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2857,7 +2860,7 @@ Og Himlen svare: „Amen''
     <note>Et Brudstykke, den ene Halvpart af et heelt Digt.</note>
   </notes>
   <source pages="76"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2882,7 +2885,7 @@ Og med dig i min Kummer jeg græder
   </notes>
   <source pages="77-78"/>
   <!-- TODO: Fix noten. -->
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2933,7 +2936,7 @@ Ellers brister mit fulde Hjerte.
     <note>Den hist og her forskjønnede og forædlede Form, i hvilken dette Digt nu fremtræder, har Laseren Digterens egen smagfulde Omhu at takke for.</note>
   </notes>
   <source pages="78-81"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -3027,7 +3030,7 @@ Da hang der ret altid en Guldskilling paa?
     <note>Dette Digt er et Brudstykke.</note>
   </notes>
   <source pages="81-83"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -3084,7 +3087,7 @@ Og signe den, hvor end jeg gaaer!
   <title><num>67.</num>Efteraarssalme</title>
   <firstline>Dybt hælder Aaret i dets Gang</firstline>
   <source pages="83-84"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -3140,7 +3143,7 @@ Som Kristus gjennembrod.
     <note>Disse Linier ere ligeledes et Brudstykke af et, halvanden Linie længere, Stambogsvers.</note>
   </notes>
   <source pages="85"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -3160,7 +3163,7 @@ Denne Død er smertelig!
   <title><num>69.</num>Frit Mod</title>
   <firstline>Udfold dig, Sjæl! hæv frit din Flugt</firstline>
   <source pages="85"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -3184,7 +3187,7 @@ Naar er du Stovets vorden?
     <note>Ogsaa disse Linier ere et Brudstykke af Forfatterens vakre Digt »Boge".</note>
   </notes>
   <source pages="86"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -3206,7 +3209,7 @@ E Og henter hans Løfter tilbage.
   <title><num>71.</num>Draaben</title>
   <firstline>En Draabe sank i Havet</firstline>
   <source pages="86-87"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -3246,7 +3249,7 @@ Og bli'r en Perle fin.
     <note>Atter et Brudstykke af Indledningsdigtet til Nytaarsgaven „Sneklokken".</note>
   </notes>
   <source pages="87-88"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -3271,7 +3274,7 @@ Og, for de andre vaagne, jeg vender atter hjem.
   <title><num>73.</num>Tillid til Gud</title>
   <firstline>Frisk op, min Sjæl! vær stærk og fri</firstline>
   <source pages="88-89"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -3320,7 +3323,7 @@ I Tillid er kun Baade! —
     <note>„Ur"en Samling af nedstyrtede Fjeldmasser; — „Bamsen"s- Bjørnen; „Bojgd"s: en Samling af Gaarde; osÆyldlose"i Originalen staaer „meenlsse", som man næppe vilde forstaae her; — „Myren"s: Mosen; „Multer", et Slags Bær.</note>
   </notes>
   <source pages="90-92"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -3387,7 +3390,7 @@ Tuen sortner, med Blaabær beftrø't.
     <note>Et Brudstykke af Indledningsdigtet til „Digtninger af F. I. Schaldemose".</note>
   </notes>
   <source pages="92-93"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -3426,7 +3429,7 @@ Som en gammel Ven!
     <note>Et Brudstykke af Tullins herlige og mærkværdige Majdag. (Se Tullin.) Skulde man nn kunne sinde meget at udsætte paa Sproget endog i dette Par Vers, — saa vil man dog med Billighed mindes Tiden, i hvilken de bleve til.</note>
   </notes>
   <source pages="93-94"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -3468,7 +3471,7 @@ Og Ekko svarede: — en Skaber!
     <note>Ogsaa et Brudstykke af Forfatterens „Mine Sysler".</note>
   </notes>
   <source pages="94"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -3491,7 +3494,7 @@ Det lidende Hjerte sin Kval.
     <note>Skulde man faae isinde at kalde dette Digt — saaledes som det her staaer — mit, saa kan jeg virkelig ikke modtage denne Ære, — Vil man selv kaste efter hos Forfatteren, da vil man sinde, at Ideen er heel og holden hans, og at tillige hver eneste Linie næsten uforandret er hans. Hvad jeg har gjørt, indffrænfer sig kun til, af et noget udtværet Digt at sammendrage en, som det synes mig, smuk Trediedeel.</note>
   </notes>
   <source pages="94-95"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -3519,7 +3522,7 @@ Saa fløj han langt fra Jorden op til det Himmelblaa.
     <note>Ogsaa dette Digt har jeg forkortet noget, og et enkelt Sted tilladt mig en næppe mærkelig Forandring.</note>
   </notes>
   <source pages="95-96"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -3569,7 +3572,7 @@ Og frygter ej Krigerens Død.
     <note>Venskabelig Beredvillighed laante mig en Afskrift af samtlige denne Forfatters ældre Digte, i hvilken den ældre Form var forædlet ved senere Filing. Derfor fremtræder dette Digt her med en heel Deel Forandringer fra de tidligere Aftryk. Denne Anmærkning gjælder tillige om samtlige øvrige Digte fra samme Haand.</note>
   </notes>
   <source pages="96-97"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -3604,7 +3607,7 @@ Tilbage til sin Pige.
   <title><num>81.</num>Landsbykirkegaarden</title>
   <firstline>Højt lyder Bedeklokkens Slag</firstline>
   <source pages="97-100"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -3703,7 +3706,7 @@ Til Dommedag i Ro!
     <note>Et Par Brudstykker af det vakre — Digterens jævnaldrende, i faamange Henseender beslægtede Ven, nuværende Professor Sibbern, tilegnede — Digt „Udby-Have", som her med Forfatterens Tilladelse ere samlede til et færftilt Digt.</note>
   </notes>
   <source pages="101-102"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -3761,7 +3764,7 @@ Og fra Ford til Himlen fore.
   <title><num>83.</num>Ædderkoppens Sang for den Ulykkelige</title>
   <firstline>Betragt mit svage Spind</firstline>
   <source pages="103"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -3794,7 +3797,7 @@ Det allermindste Spind.
     <note>Da jeg engang traadte ind i St. Ibs Kirke paa Hven, sang man der just det Vers af den 465de Salme, med hvis Oversættelse jeg har begyndt denne Bøn. Det syntes mig saa smukt, og det greb mig saa dybt, at jeg ved min Hjemkomst maatte give min Følelse Luft.</note>
   </notes>
   <source pages="104-105"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -3840,7 +3843,7 @@ Og jeg skal vandre glad mod Himlens Bo!
   <title><num>85.</num>Fastesalme</title>
   <firstline>O Kjærlighedens Fader</firstline>
   <source pages="105-107"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -3901,7 +3904,7 @@ Den stolte Hevnens Aand!
     <note>Et Brudstykke af Forfatterens dejlige „Hjemve".</note>
   </notes>
   <source pages="107-108"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -3935,7 +3938,7 @@ Blandt mine Fædres lyngbegro'de Grave!
   <title><num>87.</num>Velkomst til Dankongen</title>
   <firstline>Held den Konge, hvem Folket ledsager</firstline>
   <source pages="108-109"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -3973,7 +3976,7 @@ Sildigste Slægter velsigne dit Navn!
     <note>Tidligere har dette Digt været 5 Vers; men paa min Anmodning sammensmeltede Forfatteren selv det 3die og 4de til eet, og med hans Tilladelse udelod jeg det 5te.</note>
   </notes>
   <source pages="109-110"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4020,7 +4023,7 @@ I hvor vi monne være!
     <note>I dette Vers ville vel de Fleste gjenkjende det ene af den saa smukke og almeenyndede Sang: „Hvor saare Lidet hør der til", som jeg dog ikke her kunde optage heel.</note>
   </notes>
   <source pages="110"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4041,7 +4044,7 @@ Og det dig røver Ingen!
   <title><num>90.</num>Livets Sejlads</title>
   <firstline>Hvad vindes paa Verdens vidtløftige Hav</firstline>
   <source pages="111-112"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4089,7 +4092,7 @@ Selv stavne vi mere tilbage end frem.
   <title><num>91.</num>Frygten for Døden</title>
   <firstline>Frygter du? Sjæl! — O nej! — du slukker Lyset</firstline>
   <source pages="112"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4111,7 +4114,7 @@ Svage! tæt bag din Grav staaer jo den smilende Dag!
     <note>Det er af et Ssrgedigt over en af den herlige Digters faa Venner, den tro og Fjærlige Arnsbach, at dette Brudstykke er taget. Mig synes det smukt, maaskee fordi hin Mands Minde er mig saa helligt; — thi man har f. Er. sagt mig, at den tredjesidste Linie var haard; mig er den hartad den kjæreste, — som den synes mig den bervdninasfuldeste.</note>
   </notes>
   <source pages="113"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4137,7 +4140,7 @@ Men Dyd var ene mægtig i hans Sjæl.
   <title><num>93.</num>Vaaren</title>
   <firstline>Jordens kolde Skjød</firstline>
   <source pages="113-115"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4185,7 +4188,7 @@ Evig er den Evigvises Orden!
   <title><num>94.</num>Tillid til Gud</title>
   <firstline>Almagts store Værk kan aldrig standse</firstline>
   <source pages="115-116"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4229,7 +4232,7 @@ See den Sol, som aldrig meer gaaer ned!
     <note>At jeg ogsaa i dette Digts Optryk har taget Hensyn til de smaa grundtvigske Forbedringer, er af det Foranforte i '23 naturligt. At jeg selv har tilladt mig en lill- Forandring, maa jeg tilstaae. „Gat"en By og „Sokfotop"et Bjerg i Jsdeland; — „Hell"istedenfor Helt. Og nu det hele Digt, er det et godt Digt? — Det har vel ikke nogen egentlig Overflodighed af Poesi og kan paa flere Steder synes vor Tid fmagløft; imidlertid har det dog et saadant Liv, som jeg vilde snste, ethvert historis? Digt havde.</note>
   </notes>
   <source pages="116-118"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4296,7 +4299,7 @@ Med os er Immanuel!
   <title><num>96.</num>Laternen og Fyret</title>
   <firstline>Mørk er Natten; Blæsten tuder</firstline>
   <source pages="118-120"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4367,7 +4370,7 @@ Sikkert og snart i den frelsende Havn.
   <title><num>97.</num>Julefesten</title>
   <firstline>Velkommen igjen Guds Engle smaa</firstline>
   <source pages="121-123"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4439,7 +4442,7 @@ Lad Julesorgen slukkes!
     <note>I flere Viseboger har denne Sang en anden Ende; her er den i sin oprindelige Form, som Forfatteren selv har givet mig den.</note>
   </notes>
   <source pages="123-126"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4525,7 +4528,7 @@ Toner dobbelt høj og klar:
   <title><num>99.</num>Solnedgang</title>
   <firstline>Det spredes meer og meer, det dunkle Graa</firstline>
   <source pages="126"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4560,7 +4563,7 @@ O dal ej over nogen Broders Vrede! —
     <note>Det første Vers i dette Digt har Forfatteren paa min Anmodning selv forandret.</note>
   </notes>
   <source pages="127-128"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4601,7 +4604,7 @@ Kærlighedens rode Rosenblad.
   <title><num>101.</num>Vennen</title>
   <firstline>Og ejed' du end Moguls store Rige</firstline>
   <source pages="128"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4622,7 +4625,7 @@ Du var ej værd og aldrig fandt en Ven! —
   <title><num>102.</num>Begejstring for Fædrelandet</title>
   <firstline>Her er mit Hjem, mit kjære Fædreland</firstline>
   <source pages="128-129"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4647,7 +4650,7 @@ Vil visne, som en Blomst i fremmed Jord.
   <title><num>103.</num>Danmarks Skjønhed</title>
   <firstline>Der er et Land; dets Sted er højt mod Norden</firstline>
   <source pages="129-130"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4707,7 +4710,7 @@ Og een, — den danske, — Bøn hvert Hjerte beder
     <note>Af denne Salme har jeg udeladt det sidste Vers.</note>
   </notes>
   <source pages="131-133"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4785,7 +4788,7 @@ Og skyder atter Krone!
     <note>Af denne Fabel har jeg udeladt de 2 sidste Vers.</note>
   </notes>
   <source pages="133-135"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4845,7 +4848,7 @@ Og disse blev Taarnet givet.
     <note>Ogsaa dette Stykke er et Brudstykke, og for at det kunde danne et afrundet Heelt, har jeg maattet foretage mig et Par Smaaforandringer i det.</note>
   </notes>
   <source pages="135-138"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4928,7 +4931,7 @@ Og maa sig i Sfjændfel dslge.
   <title><num>107.</num>Den hvide og den blaa Fiol</title>
   <firstline>I Vaarens varme Sol</firstline>
   <source pages="138"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4958,7 +4961,7 @@ Beskedenhed for vidt.
   <title><num>108.</num>Kraft og Skjønhed</title>
   <firstline>Er Træet ypperst, naar om Vinter</firstline>
   <source pages="139"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4983,7 +4986,7 @@ Naar hendes Skjønhed blander sig med Kraft
   <title><num>109.</num>Haab og Længsel</title>
   <firstline>Der staaer en Rose hist paa Aftens Himmel</firstline>
   <source pages="139-140"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -5015,7 +5018,7 @@ Og minder om et andet bedre Hjem.
   <title><num>110.</num>Til Sorgen</title>
   <firstline>Du, som tavs med sænket Hoved staaer</firstline>
   <source pages="140-141"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -5057,7 +5060,7 @@ Du mit Øje fra dit Mørke hæver.
   <title><num>111.</num>Til Glæden</title>
   <firstline>Hulde Engel! du min Barndoms Ven</firstline>
   <source pages="141-143"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -5116,7 +5119,7 @@ Eller til det ny du snart mig drage!
     <note>Atter tre Brudstykker; — det mellemste af Tullins „Sofarten". Tævnfør om det '33.</note>
   </notes>
   <source pages="143-144"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -5150,7 +5153,7 @@ Den himmelsendte Vej til Sjælens Fred!
     <note>Atter tre Brudstykker; — det mellemste af Tullins „Sofarten". Tævnfør om det '33.</note>
   </notes>
   <source pages="144"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -5185,7 +5188,7 @@ Og see, at du var der, hvor Grumhed tapped' Blod.
     <note>Atter tre Brudstykker; — det mellemste af Tullins „Sofarten". Tævnfør om det '33.</note>
   </notes>
   <source pages="145-146"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -5233,7 +5236,7 @@ Som han saae mig elske her!
   <title><num>115.</num>Salme</title>
   <firstline>Gak ud, min Sjæl, og se dig om</firstline>
   <source pages="146-149"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -5316,7 +5319,7 @@ Mig Bøn og Viisdom lære.
     <note>Er derimod ikke noget Brudstykke. Forfatteren har nemlig erklærct mig, at det Vers, der i Almindelighed gaaer som dette Digts næftfidfte, er en Tilsætning af Rahbek. Der stod rigtignok der engang et Grundbillede til den rahbekffe Tegning; men der Vers har aldrig været trykt, og Forfatteren onsker ej heller, at det nu skeer. Jovrigt er dette herlige Digt, — et levende Udtryk af enhver ædel Dansks helligste Følelser, — skrevet paa Sydhavet, imedens Forfatteren var Skibspræst.</note>
   </notes>
   <source pages="149-151"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -5402,7 +5405,7 @@ Takker Gud, mens fra min Læbe lyder:
   <title><num>117.</num>Bøn for Danmark og dets Konge</title>
   <firstline>Den kolde Nat er flygtet med sin Skygge</firstline>
   <source pages="152"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -5435,7 +5438,7 @@ Skal Kongers Skytsaand til din Trone bringe!
   <title><num>118.</num>Min Engel</title>
   <firstline>Min Engel, bliv hos mig</firstline>
   <source pages="153-154"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -5466,7 +5469,7 @@ Til Himlens Purpurffjær!
   <title><num>119.</num>Den evige Blomst</title>
   <firstline>Venlig smile dine Blomster smaa</firstline>
   <source pages="154"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -5488,7 +5491,7 @@ Evig blomstrer den med evig Rod. —
   <title><num>120.</num>Morgensalme</title>
   <firstline>Rinder Solen op</firstline>
   <source pages="155-159"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -5613,7 +5616,7 @@ Med Englestemme!
     <note>Naar jeg ret kunde sige, hvor inderlig denne Salme af en af vore herligste Salmedigtere er mig kjær, — vilde man maaskee undskylde de Friheder, jeg ved dens Optryk har taget mig. Uagtet jeg har forkortet den ikke ubetydeligt, vil den dog mulig endnu synes Mange for lang. Ved Forkortningen bleve ogsaa enkelte Omsætninger nødvendige; — men det er jeg mig bevidst, at jeg i begge Henseender er gaaet saa omhyggeligt og ærefrygtsfuldt tilværks, som min Ærbodighed for Sangeren og min Kjærlighed til Salmen nedvendigviis maatte paalægge mig. Foer jeg desuagtet vild, da var det ikke Villiens men Evnens Skyld.</note>
   </notes>
   <source pages="159-160"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -5655,7 +5658,7 @@ Af Himmeriges Glæde!
     <note>Ogsaa af dette Digt har jeg udeladt det sidste Vers.</note>
   </notes>
   <source pages="160"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -5681,7 +5684,7 @@ Hvorhen den faa forer, til Liv eller Grav.
   <title><num>123.</num>Troens Lys</title>
   <firstline>Saa lys er mig den hele Jord</firstline>
   <source pages="161-162"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -5721,7 +5724,7 @@ Og skinner i mit Hjerte!
   <title><num>124.</num>Eremittens Sang</title>
   <firstline>Lær mig, o Skov! at visne glad</firstline>
   <source pages="162-163"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -5768,7 +5771,7 @@ Dog kan mit Gravsted sinde.
   <title><num>125.</num>Den Døde</title>
   <firstline>Stirrer ej i Graven ned</firstline>
   <source pages="163-164"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -5811,7 +5814,7 @@ Han kan Døden vel foragte.
   <title><num>126.</num>Tab og Vinding</title>
   <firstline>Imellem Tab og Vinding gaaer paa Jord</firstline>
   <source pages="165-167"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -5881,7 +5884,7 @@ Saa har jeg vist ej tabt, men sikkert vunden!
     <note>I dette Digt har jeg tilladt mig enkelte Forkortninger og Forandringer. Boreas var hos Grækerne Nordenvinden og Fobos Solguden. Saturns Søn, det er Zevs, der nærmest svarer til vort Nordens Thor.</note>
   </notes>
   <source pages="167-169"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -5960,7 +5963,7 @@ Et trodsigt Nej den Stolte maa formode; —
     <note>Ogsaa disse, 2 Digte ere Brudstykker; — i det sidste er dog kun et enkelt Vers udeladt.</note>
   </notes>
   <source pages="170"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -5990,7 +5993,7 @@ Og Himlen modner selv dens Frugt!
   <title><num>129.</num>Tilgiv gjerne</title>
   <firstline>Guds Vilje jeg veed</firstline>
   <source pages="170-172"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -6037,7 +6040,7 @@ Og glemmer mit Nag! —
   <title><num>130.</num>Manden i Brønden</title>
   <firstline>En Pillegrim i Ørken drog</firstline>
   <source pages="172-176"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -6153,7 +6156,7 @@ Der voxer ud af Gravens Sprække! —
     <note>Ogsaa disse, 2 Digte ere Brudstykker; — i det sidste er dog kun et enkelt Vers udeladt.</note>
   </notes>
   <source pages="176-178"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -6235,7 +6238,7 @@ Jeg raver, hælder, falder ned!
   <title><num>132.</num>Haab</title>
   <firstline>Engang skal vi heden vandre</firstline>
   <source pages="179-182"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -6343,7 +6346,7 @@ Stilles hist i Fredens Savn.
     <note>Ere ligeledes forkortede; — dog er af det sidste kun eet, det første Vers udeladt.</note>
   </notes>
   <source pages="182-184"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -6397,7 +6400,7 @@ Indtil jeg kommer tilbage.
     <note>Ere ligeledes forkortede; — dog er af det sidste kun eet, det første Vers udeladt.</note>
   </notes>
   <source pages="184-187"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -6490,7 +6493,7 @@ Og evig lønner den.
     <note>Ere ogsaa Brudstykker; i det sidstes 2den Strofe, 6te Linie, staaer det norske „sin"istedensor det danske, „deres", som vi maaskee gjørde vel i at ombytte med „sin".</note>
   </notes>
   <source pages="187-188"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -6536,7 +6539,7 @@ Af et helligt Frø i Hjertets Vraa.
   <title><num>136.</num>Det døende Barn</title>
   <firstline>Moder! jeg er træt, nu vil jeg sove</firstline>
   <source pages="188-189"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -6575,7 +6578,7 @@ Moder! — se! — nu kysser Englen mig!
   <title><num>137.</num>Dødsøjeblikket</title>
   <firstline>Hvad er det dog, som lyser? det lutres for min Sans</firstline>
   <source pages="190"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -6608,7 +6611,7 @@ Jeg føler Kamp og Stræben og dog en himmelsk Ro.
   <title><num>138.</num>Dødens Vuggevise</title>
   <firstline>Jeg haver en Vugge, saa varm og saa tæt</firstline>
   <source pages="191-192"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -6640,7 +6643,7 @@ Til Salighed.
   <title><num>139.</num>Til de Døde</title>
   <firstline>Sover sødt i hellig Fred</firstline>
   <source pages="192"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -6654,7 +6657,7 @@ Sover sødt i hellig Fred!
   <title><num>140.</num>Haab og Minde</title>
   <firstline>Der flagrer en Fugl gjennem luftklare Blaa</firstline>
   <source pages="193-194"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -6717,7 +6720,7 @@ Hvor Stjerner i Krans sig vinde!
     <note>Ere ogsaa Brudstykker; i det sidstes 2den Strofe, 6te Linie, staaer det norske „sin"istedensor det danske, „deres", som vi maaskee gjørde vel i at ombytte med „sin".</note>
   </notes>
   <source pages="195-196"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -6779,7 +6782,7 @@ Herlige, skjønne, velgjørende Sol!
     <note>Dette Digt er et Brudstykke af Ewalds „til F. og L''Det hele Digt kunde jeg ikke optage, men disse 3 Vers syntes mig saa smukke. Dog tillod jeg mig i det, som her er blevet det andet, en lille Forandring, for at undgaae det „Jordguden", der vel nu vilde stode vore fleste Læsere.</note>
   </notes>
   <source pages="196-197"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -6812,7 +6815,7 @@ Der næppe flaaer.
   <title><num>143.</num>Morgenlovsang</title>
   <firstline>Forsvunden er den mørke Nat</firstline>
   <source pages="197-199"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -6864,7 +6867,7 @@ Kraftig end i Døden briste!
   <title><num>144.</num>Aftenbøn</title>
   <firstline>Se ned i Naade, Himlens Fader</firstline>
   <source pages="199"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -6897,7 +6900,7 @@ Den vaager — jeg vil rolig sove.
     <note>Og er dette Digt nu et Digt, som passer sig for Samlingen!? Jeg skulde mene det! At paapege dets mange Skjønheder, dets dristige og malerisse Billeder, vil være uden Nytte for Enhver, der ej selv henrives af dem. Men Sproget da? — Ja, er det et glat og slebet Sprog, der gjør Digteren, saa er det tilvisse nu, efter at Ewalds, Baggesens, Oehlenschlagers, Grundtvigs og Fleres mægtige Genier i det have tolket deres herligste Følelser og Ideer, — blevet meget let at være Digter! Men — jeg kan ikke her undlade at tilføje de eneste 8 ældre Linier, som jeg kjender i den danske Poesi, i hvilke en beflægtet Lyrik aander, hine 8 af et Brev fra Reenberg til Biskop Gerner (Juni 1694): Helst nu det smukke Sommervær Til Lystighed indbyder, Og Kreaturerne enhver Sig i Naturen fryder; Den grønne Kjortel Skoven bær, Og Engen staaer i Grøde, Ja Marken udståseret er Med gule Baand og rode. Saameget var der gjørt for Stub. Og dette det første Digt, i hvilket den danske Lyre herlig udtonede sig — saa herlig, at det varede længe, inden det blev overgaaet, — det skulde ikke passe sig i en Samling af danske lyriske Digte! — Lad den udsatte paa Sproget, som vil det, — og saa selv dokumentere, hvor højt han efter 100 henrundne Aar har hævet sig over ham, den mere end halv Forglemte, som brød Isen for os. „Kans"o: Lejlighed.</note>
   </notes>
   <source pages="200-203"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -6996,7 +6999,7 @@ Min Winter blive til en Vaar — i Aar!
     <note>Af dette Digt har jeg bortÆaaren de 2 sidste Vers.</note>
   </notes>
   <source pages="203-204"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -7045,7 +7048,7 @@ Som Nød og Ulykker opfpænde!
     <note>Brudstykker; det mellemste „Bernstorffs Vise".</note>
   </notes>
   <source pages="204-206"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -7106,7 +7109,7 @@ Ret aldrig det bedrager!
   <title><num>148.</num>Morgenvandring</title>
   <firstline>Saa huldt til den venlige Bøgeskov</firstline>
   <source pages="206-210"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -7225,7 +7228,7 @@ Og hilse dem.,
   <title><num>149.</num>I Skoven</title>
   <firstline>Hvad er det for en sælsom Lyst</firstline>
   <source pages="211-212"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -7277,7 +7280,7 @@ Jeg strax dem Haanden rakte.
   <title><num>150.</num>Havet</title>
   <firstline>Underlige, dybe Strømme</firstline>
   <source pages="212-214"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -7343,7 +7346,7 @@ Ellers kan han ikke sove! —
   <title><num>151.</num>Tordenvejret</title>
   <firstline>Lynet knitrer</firstline>
   <source pages="215-216"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -7383,7 +7386,7 @@ Der befolke Jord og Luft og Hav. —
   <title><num>152.</num>Sefyr fortæller, hvorledes han knuste et Skib</title>
   <firstline>Jeg over Søen jog og vælted' Bølgerne</firstline>
   <source pages="216-217"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -7436,7 +7439,7 @@ Men tavs sad Døden paa de tavse Vande!
   <title><num>153.</num>Hymne</title>
   <firstline>Gud! du est stor, din Magt og Ære</firstline>
   <source pages="218-220"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -7501,7 +7504,7 @@ Hvo er dig, Gud! blandt Engle liig?
   <title><num>154.</num>Vaarsang</title>
   <firstline>Op! sjung og glæd dig, Danmarks Søn</firstline>
   <source pages="220-221"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -7556,7 +7559,7 @@ Din Himmel høj og stor!
   <title><num>155.</num>Ved en Høstfest</title>
   <firstline>O hulde Datter af den blide Vaar</firstline>
   <source pages="222-223"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -7600,7 +7603,7 @@ Har ogsaa Krav, som du, paa Livets Goder.
     <note>Brudstykker; det mellemste „Bernstorffs Vise".</note>
   </notes>
   <source pages="223"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -7627,7 +7630,7 @@ Og saa bør Hvermand være,
   <title><num>157.</num>Glæden</title>
   <firstline>Hvor er du, o salige Lyst</firstline>
   <source pages="224"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -7667,7 +7670,7 @@ Min søgte, min himmelske Glæde!
     <note>Brudstykker; det mellemste „Bernstorffs Vise".</note>
   </notes>
   <source pages="225"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -7698,7 +7701,7 @@ Prise ham, der har frelst os saa!
     <note>Ogsaa disse 28 Smaastykker ere for en stor Deel Brudstykker, som, jeg maa tilstaae det, næsten mere Tilfælde end Plan her have bragt sammen. Jeg selv anseer dem omtrent for versificerede Tankesprog, men de fleste af dem vilde jeg dog nødig undvære i denne min Samling, og den bedste Maade at faae dem anbragt paa syntes mig da at være den, at samle dem under en Tittel, der visselig ikke berettiger til store Fordringer. Og kunde jeg saa ingen bedre have funden end de valgte? — Meget muligt! Men, som sagt, Tilfælde og et øjeblikkeligt Indfald have maaskee her haft vel megen Indflydelse.</note>
   </notes>
   <source pages="225-231"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -7876,7 +7879,7 @@ Bli'r Mindet Haab og Haabet Minde
   <title><num>160.</num>Vuggevise</title>
   <firstline>Stille nu, Barnlil</firstline>
   <source pages="231-233"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -7929,7 +7932,7 @@ Sov, min lille Glut!
     <note>Af dette herlige Sagn, der er behandlet med en saa original Lethed og Kraft, har jeg af flere end een Grund bortffaaren Slutningen. „Mode"Møje, — „mogle"omeget, — „synes"a: sees, — „runde"randt.</note>
   </notes>
   <source pages="233-238"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -8060,7 +8063,7 @@ Paa Bunden af Sagosuppen.
     <note>Det her optagne Digt er egentlig kun det første af en heel Række af Digte, der vel kunde fortjene at være mere bekjendte, end de hidtil ere. Af flere Grunde har jeg dog troet, her at burde udelade 6 Linier af det optagne, hvilket Forfatteren maaskee ogsaa selv vil billige.</note>
   </notes>
   <source pages="238-241"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -8169,7 +8172,7 @@ Og rige gjørde det lidet Barn, tilmed den lede Kvinde.
   <title><num>163.</num>Fru Martes Kilde</title>
   <firstline>Fru Marte sad paa Karshøjgaard</firstline>
   <source pages="242-244"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -8235,7 +8238,7 @@ Og hører det Sagn saa glad.
   <title><num>164.</num>Fiolerne</title>
   <firstline>Smaa Fioler, o hvor sødt</firstline>
   <source pages="244-245"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -8285,7 +8288,7 @@ Og det sorte Øje!
     <note>Forfatteren T. S. er ukendt.</note>
   </notes>
   <source pages="245-248"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -8376,7 +8379,7 @@ Farvel, nu svandt den sidste Aftenstraale! —
   <title><num>166.</num>Savojarden og Bjørneungen</title>
   <firstline>Hvor Boulevardens Vrimmel tættest bølger</firstline>
   <source pages="248-254"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -8529,7 +8532,7 @@ Den lille Bjørn af barnlig Kjærlighed!
   <title><num>167.</num>Liden Harpepiges Klage</title>
   <firstline>Faderløs og moderløs, af Brødrene forladt, —</firstline>
   <source pages="254-255"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -8560,7 +8563,7 @@ Tungere Taare paa Jorden ej flød:
   <title><num>168.</num>Aftensang</title>
   <firstline>Fred hviler over Land og By</firstline>
   <source pages="255-256"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -8611,7 +8614,7 @@ Vi ham lovprise hist!
   <title><num>169.</num>De fire Ædelstene</title>
   <firstline>Fire Ædelstene mig henrykke</firstline>
   <source pages="256-258"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -8667,7 +8670,7 @@ Huldt førenet,' fra den slebne Kant.
   <title><num>170.</num>Tidens Perspektiv</title>
   <firstline>I den store, snævre Stad</firstline>
   <source pages="258-261"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -8767,7 +8770,7 @@ Gubben, hilsed' ham og gik.
   <title><num>171.</num>Sømandssang</title>
   <firstline>Kong Kristian stod ved højen Mast</firstline>
   <source pages="262-263"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -8818,7 +8821,7 @@ Min Grav!
   <title><num>172.</num>Matrosen</title>
   <firstline>Ved Toldboden steg en Matros i Land</firstline>
   <source pages="263-266"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -8898,7 +8901,7 @@ Hans Hoved laa paa et Anker. —
     <note>Af dette dejlige Digt har jeg ogsaa troet at burde udelade et Vers.</note>
   </notes>
   <source pages="266-268"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -8977,7 +8980,7 @@ Og Danmarks Hjerter døe.
     <note>Denne Salme forskriver sig egentlig fra Katolicismens Tid — et Beviis paa at ogsaa den havde Salmer! — men da for 9 Aar siden — 1826 — det her i Landet var Kristendommens Jubelfest, omskrev Grundtvig den saaledes, at den nu vel idetmiiidste har ligesaamegen Grund til at gaae under hans Navn, som under den ubekjendte Forfatters.</note>
   </notes>
   <source pages="269-272"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -9079,7 +9082,7 @@ Med Venner i Lys vi tale.
   <title><num>175.</num>Fædrelandskjærlighed</title>
   <firstline>Du Plet af Jord, hvor Livets Stemme</firstline>
   <source pages="272-276"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -9188,7 +9191,7 @@ Er Maalet som vi stræbe til.
   <title><num>176.</num>Fædrelandssang</title>
   <firstline>Dybt under Nordens Himmel</firstline>
   <source pages="276-278"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -9245,7 +9248,7 @@ Skal danske Hjerter flade.
   <title><num>177.</num>Fædrelandssang</title>
   <firstline>Blomstrende Enge og kornrige Vange</firstline>
   <source pages="278-279"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -9286,7 +9289,7 @@ Himlen velsigne vor Drot og vort Land!
   <title><num>178.</num>Danmarks Priis</title>
   <firstline>Langt højere Bjerge saa vide paa Jord</firstline>
   <source pages="279-281"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -9353,7 +9356,7 @@ Hans Alder højloves som Fredegods Tid!
   <title><num>179.</num>Hjemve</title>
   <firstline>I inderlige Aftenlufte</firstline>
   <source pages="282-285"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -9449,7 +9452,7 @@ Trykke mig i hendes Arme?
     <note>Men ere Ordsprog o. s. v., da nu ogsaa Poesi!? Jeg flulde mene jo, — ja at de ere en, ifølge den nyere Tidsaand, — der i det Hele vender sig mere og mere fra det Poetiske til det Praktiske i Livet, vel altsormeget forsomt, men derfor ikke mindre dejlig Poesi. Tilvisse ere de et Gjemme saavel for de meest opløftende Ideer, som for det meest spillende Lune; — men deres troflyldige, naive og barnlige Tone maatte naturligviis snarere, end næsten enhver anden Deel af Poesien, vælte vor Tids Afsmag. Men saa er det jo uklogt, at jeg kommer med dem her? — Saamænd, det kan gjerne være! men ondt er det derfor dog ikke, — og maaskee endogsaa godt, med Hensyn til, at Bogen dog nærmest er bestemt for den næste Tidsalder, om hvilken det jo slet ikke er vist, at den vil være et Stereotyp-Aftryk — et »forbedret, kun noget mere opslidt Aftryk — af vor. Om jeg forresten har været heldig i dette lille Valg af Ordsprog o. s. v., — ja det er en ganske anden Sag, — og Folgen deraf kan aldrig være anden, end at Ordsprogene i det Hele og de, jeg har valgt, vel kunne staae sammen, men ikke behøve at falde sammen. „Blygden"o: Blyheden og „Dygden"Dygtigheden, Dyden; — „Filsbeen" s: Elfenbeen; — „Sno"s- Sne; — „Sat"Sæd, Sadvane, Skik i — „Kore"see sig for, lave sig til; — „Varning"o: Verktoj, Haandtering.</note>
   </notes>
   <source pages="285-292"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -9641,7 +9644,7 @@ I S'
     <note>Disse, faa Linier, der ved et Tilfælde ere blevne de eneste af denne Forfatter i nærværende Samling, ere tagne af hans „den anden April".</note>
   </notes>
   <source pages="292"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -9665,7 +9668,7 @@ Og plant det højt paa Heltens Grav!
     <note>Disse 4 Digte ere alle Brudstykker af Nordens Guder, — denne Digtning, som vel enhver Dansk burde eje — idetmindste i sit Hjerte. Da de saa yndigt, saa kraftigt og saa herligt, saa ægte=genialt give os et Indblik i nogle af vore Forfædres helligste Ideer, og da de her ere komne til at staae sammen, ligesom de ere udsprungne fra samme Kilde, har jeg ogsaa forenet dem under een Anmærkning, der skulde udfylde, hvad der maaskee ellers kunde være enkelte Lasere utydeligt; naturligviis vil dog den bedste Fortolkning af Brudstykkerne stedse være der hele Digt selv, men ogsaa da kun, naar det låses med den fromme, livlige, fædrelandske Følelse, den dybe Sjalfuldhed, der gav det sin Tilvær, Den overste af alle vore Forfædres Guder var Alfader, Odin, der fra sit Lidffjalf overskuede Alt, saa at Intet Fortiden og Nutiden var ham hemmeligt, og kunde det end et Øjeblik skjules for ham, saa havde han dog 2 Ravne, der fløj. vidt omkring i de fjerneste Lande og bragte ham Kundskaben tilbage. Man erindre her Sagnet om Hovdingen Odins Kjendskab til Skrivekunsten, der forekom vore Forfædre som en Trolddom. En af hans Sønner var Thor, hvis Borg kaldtes Trudvang, og han var Krigens Gud. Han var ikke ssnderlig rolig af sig, men gad gjerne age; og naar da hans tunge Kjærre, trukken af de to fortræffelige. Bukke, rullede hen over Himlen, da buldrede det svart, og denne Bulder kaldtes Thors Don s: Torden; — men som den beffoede Hestehov ftundum af den haarde Flint lokker lysende Jldglimt, saa stod der en evig Lue om den ras henrullende Kjærre, og den kalde vi Lynild. Med Mjølner, sin Hammer, knuste han Bjergene, naarsomhclst han lystede, at de bleve som dybe Dale; — men dog var det naturligviis ej egentlig mod den livlsse Natur, at han brugte dette herlige Vaaben. Guders og alt det Godes Fjender, de mørke, flumle Jetter var hans Hu især gram, og forløb han sig end tit i sin ærlige men vel rafle Fremfærd, og kunde deres Koglerier end stundum blinde hans Syn og dove hans Kraft, — det var dog aldrig for Intet, at de stedse sitrede for ham, eller at han nævntes med Navnet „Jotunbane"Jetternes Ddelægger. Ved Siden af den stærke Thor staaer næppe en yndigere, fuldere og renere Modfætning end den dejlige, den livsalige Freja, al reen Kærligheds rette og himmelske Moder. Hendes Sal hed Folkvang, og dens og hendes Skjsnhed har tilvisse Digteren tegnet saa fuldendt, som mulig. Til denne himmelske Bolig kalder hun engang hver den, der trofast elskede her paa Jorden, enten de saa have følt Kærlighedens hele Salighed, eller kun dens Længsel har blomstret for dem; medens den kolde Ms, hvis Hjerte aldrig har flaget varmt, ogsaa hisset i den ranke, skjønne, men alvorsfulde Gesions, den evige Ungmøes, høje Sale for evig bliver urørt af de blideste Folelfer. Frejas tvende Dstre, Sjofna og Hnos, vare skjønne som deres Moder; og Sjofna var de salige, smilende Drommes huld: salige Genius, men af Hnos kaldtes alt det, som paa Jorden skjønt var, nysieligt! — Tiderne svandt, og Hjertets friske, varme Banken for det Skjønne svandt, og vor Nutid leger med det Nysselige! Men ikke Alt i Valhal var herligt; — een Indbygger havde det, som man vel kunde tvivle om, enten man skulde henregne ham bedst til Aserne eller Jetterne; — det var den lunefulde, den ustadige, stadse vaklende, men stedse rænkefulde Loke. Hvad Bryderier, hvilke Sorger han voldte Guderne, er Ubeskriveligt, og det var slet ikke det bedste for Thor, at han saa23 tit lod Loke age med sig paa sine 2Eventyr. Med en Jettekvinde havde Loke 3 Børn, som vel baade Guder og Mennesker maatte onffe ufødte, og som kun Jetterne kunde glædes ved. Den ene af dem var „Fenrisulven". Som Lokes Barn blev ogsaa den opfødt i Valhal, men den aabenbarede snart sin Natur. Den gjørde saa meget Ondt og voxte til saa stor og stark, at vel Guderne maatte cengftes for den. De vilde derfor binde den; men to Baand, det ene en Jernlænke, brød den som Halmstraa. Da fik de de kloge Dværge under Sejd og Trolddom til at fmedde et tyndt Baand, som den ikke kunde fønderrive, Men den var for klog, og vilde ikke bindes, for den fik en Gissel for, at den atter skulde vorde lost. Da stak Ærens bolde Guddom, den stolte, kraftige Tyr, med rask Beslutning sin Arm indtil Albuen ind i den mordlystne Strube. Han maatte miste sin Arm, det vidste han, men til kloge Beregninger var hans Selvopofrelse for ædel, — og naar regnede vel den Ædle fra David indtil Luther, fra Leonidas indtil Hvitfeld, fra Skcevola indtil Wilberforce! — Balhal vilde han redde, trods Formaninger og Frygt, og han hengav uden Øjenblink sin Højre! — Ja tilvisse, han var rens Guddom! våyvgetjuge"s: fyrgetyve; — „Asa"s- Gud; — „Dys" s: Disa, Gudinde; — „Avka"s: den agende; — „Hejmdal" Himlens Vogter. Han boede ved Enden af Bifrost, Gudebroen, den syvstribede Regnbue; men efter Farverne vare Jomfruerne syv, som tænktes boe derhos. „Valhal"o: Gudernes Hjem. — „Bolund"den kunstige Smed, der lavede Guderne og Heltene saa mangt et kosteligt Vaaben, og som kan betragtes som Kunstfærdighedens Repræsentant.</note>
   </notes>
   <source pages="292-294"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -9723,7 +9726,7 @@ Det kaldes Tordenskrald.
     <note>Disse 4 Digte ere alle Brudstykker af Nordens Guder, — denne Digtning, som vel enhver Dansk burde eje — idetmindste i sit Hjerte. Da de saa yndigt, saa kraftigt og saa herligt, saa ægte=genialt give os et Indblik i nogle af vore Forfædres helligste Ideer, og da de her ere komne til at staae sammen, ligesom de ere udsprungne fra samme Kilde, har jeg ogsaa forenet dem under een Anmærkning, der skulde udfylde, hvad der maaskee ellers kunde være enkelte Lasere utydeligt; naturligviis vil dog den bedste Fortolkning af Brudstykkerne stedse være der hele Digt selv, men ogsaa da kun, naar det låses med den fromme, livlige, fædrelandske Følelse, den dybe Sjalfuldhed, der gav det sin Tilvær, Den overste af alle vore Forfædres Guder var Alfader, Odin, der fra sit Lidffjalf overskuede Alt, saa at Intet Fortiden og Nutiden var ham hemmeligt, og kunde det end et Øjeblik skjules for ham, saa havde han dog 2 Ravne, der fløj. vidt omkring i de fjerneste Lande og bragte ham Kundskaben tilbage. Man erindre her Sagnet om Hovdingen Odins Kjendskab til Skrivekunsten, der forekom vore Forfædre som en Trolddom. En af hans Sønner var Thor, hvis Borg kaldtes Trudvang, og han var Krigens Gud. Han var ikke ssnderlig rolig af sig, men gad gjerne age; og naar da hans tunge Kjærre, trukken af de to fortræffelige. Bukke, rullede hen over Himlen, da buldrede det svart, og denne Bulder kaldtes Thors Don s: Torden; — men som den beffoede Hestehov ftundum af den haarde Flint lokker lysende Jldglimt, saa stod der en evig Lue om den ras henrullende Kjærre, og den kalde vi Lynild. Med Mjølner, sin Hammer, knuste han Bjergene, naarsomhclst han lystede, at de bleve som dybe Dale; — men dog var det naturligviis ej egentlig mod den livlsse Natur, at han brugte dette herlige Vaaben. Guders og alt det Godes Fjender, de mørke, flumle Jetter var hans Hu især gram, og forløb han sig end tit i sin ærlige men vel rafle Fremfærd, og kunde deres Koglerier end stundum blinde hans Syn og dove hans Kraft, — det var dog aldrig for Intet, at de stedse sitrede for ham, eller at han nævntes med Navnet „Jotunbane"Jetternes Ddelægger. Ved Siden af den stærke Thor staaer næppe en yndigere, fuldere og renere Modfætning end den dejlige, den livsalige Freja, al reen Kærligheds rette og himmelske Moder. Hendes Sal hed Folkvang, og dens og hendes Skjsnhed har tilvisse Digteren tegnet saa fuldendt, som mulig. Til denne himmelske Bolig kalder hun engang hver den, der trofast elskede her paa Jorden, enten de saa have følt Kærlighedens hele Salighed, eller kun dens Længsel har blomstret for dem; medens den kolde Ms, hvis Hjerte aldrig har flaget varmt, ogsaa hisset i den ranke, skjønne, men alvorsfulde Gesions, den evige Ungmøes, høje Sale for evig bliver urørt af de blideste Folelfer. Frejas tvende Dstre, Sjofna og Hnos, vare skjønne som deres Moder; og Sjofna var de salige, smilende Drommes huld: salige Genius, men af Hnos kaldtes alt det, som paa Jorden skjønt var, nysieligt! — Tiderne svandt, og Hjertets friske, varme Banken for det Skjønne svandt, og vor Nutid leger med det Nysselige! Men ikke Alt i Valhal var herligt; — een Indbygger havde det, som man vel kunde tvivle om, enten man skulde henregne ham bedst til Aserne eller Jetterne; — det var den lunefulde, den ustadige, stadse vaklende, men stedse rænkefulde Loke. Hvad Bryderier, hvilke Sorger han voldte Guderne, er Ubeskriveligt, og det var slet ikke det bedste for Thor, at han saa23 tit lod Loke age med sig paa sine 2Eventyr. Med en Jettekvinde havde Loke 3 Børn, som vel baade Guder og Mennesker maatte onffe ufødte, og som kun Jetterne kunde glædes ved. Den ene af dem var „Fenrisulven". Som Lokes Barn blev ogsaa den opfødt i Valhal, men den aabenbarede snart sin Natur. Den gjørde saa meget Ondt og voxte til saa stor og stark, at vel Guderne maatte cengftes for den. De vilde derfor binde den; men to Baand, det ene en Jernlænke, brød den som Halmstraa. Da fik de de kloge Dværge under Sejd og Trolddom til at fmedde et tyndt Baand, som den ikke kunde fønderrive, Men den var for klog, og vilde ikke bindes, for den fik en Gissel for, at den atter skulde vorde lost. Da stak Ærens bolde Guddom, den stolte, kraftige Tyr, med rask Beslutning sin Arm indtil Albuen ind i den mordlystne Strube. Han maatte miste sin Arm, det vidste han, men til kloge Beregninger var hans Selvopofrelse for ædel, — og naar regnede vel den Ædle fra David indtil Luther, fra Leonidas indtil Hvitfeld, fra Skcevola indtil Wilberforce! — Balhal vilde han redde, trods Formaninger og Frygt, og han hengav uden Øjenblink sin Højre! — Ja tilvisse, han var rens Guddom! våyvgetjuge"s: fyrgetyve; — „Asa"s- Gud; — „Dys" s: Disa, Gudinde; — „Avka"s: den agende; — „Hejmdal" Himlens Vogter. Han boede ved Enden af Bifrost, Gudebroen, den syvstribede Regnbue; men efter Farverne vare Jomfruerne syv, som tænktes boe derhos. „Valhal"o: Gudernes Hjem. — „Bolund"den kunstige Smed, der lavede Guderne og Heltene saa mangt et kosteligt Vaaben, og som kan betragtes som Kunstfærdighedens Repræsentant.</note>
   </notes>
   <source pages="294-296"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -9783,7 +9786,7 @@ Er Søvnens milde Dys.
     <note>Disse 4 Digte ere alle Brudstykker af Nordens Guder, — denne Digtning, som vel enhver Dansk burde eje — idetmindste i sit Hjerte. Da de saa yndigt, saa kraftigt og saa herligt, saa ægte=genialt give os et Indblik i nogle af vore Forfædres helligste Ideer, og da de her ere komne til at staae sammen, ligesom de ere udsprungne fra samme Kilde, har jeg ogsaa forenet dem under een Anmærkning, der skulde udfylde, hvad der maaskee ellers kunde være enkelte Lasere utydeligt; naturligviis vil dog den bedste Fortolkning af Brudstykkerne stedse være der hele Digt selv, men ogsaa da kun, naar det låses med den fromme, livlige, fædrelandske Følelse, den dybe Sjalfuldhed, der gav det sin Tilvær, Den overste af alle vore Forfædres Guder var Alfader, Odin, der fra sit Lidffjalf overskuede Alt, saa at Intet Fortiden og Nutiden var ham hemmeligt, og kunde det end et Øjeblik skjules for ham, saa havde han dog 2 Ravne, der fløj. vidt omkring i de fjerneste Lande og bragte ham Kundskaben tilbage. Man erindre her Sagnet om Hovdingen Odins Kjendskab til Skrivekunsten, der forekom vore Forfædre som en Trolddom. En af hans Sønner var Thor, hvis Borg kaldtes Trudvang, og han var Krigens Gud. Han var ikke ssnderlig rolig af sig, men gad gjerne age; og naar da hans tunge Kjærre, trukken af de to fortræffelige. Bukke, rullede hen over Himlen, da buldrede det svart, og denne Bulder kaldtes Thors Don s: Torden; — men som den beffoede Hestehov ftundum af den haarde Flint lokker lysende Jldglimt, saa stod der en evig Lue om den ras henrullende Kjærre, og den kalde vi Lynild. Med Mjølner, sin Hammer, knuste han Bjergene, naarsomhclst han lystede, at de bleve som dybe Dale; — men dog var det naturligviis ej egentlig mod den livlsse Natur, at han brugte dette herlige Vaaben. Guders og alt det Godes Fjender, de mørke, flumle Jetter var hans Hu især gram, og forløb han sig end tit i sin ærlige men vel rafle Fremfærd, og kunde deres Koglerier end stundum blinde hans Syn og dove hans Kraft, — det var dog aldrig for Intet, at de stedse sitrede for ham, eller at han nævntes med Navnet „Jotunbane"Jetternes Ddelægger. Ved Siden af den stærke Thor staaer næppe en yndigere, fuldere og renere Modfætning end den dejlige, den livsalige Freja, al reen Kærligheds rette og himmelske Moder. Hendes Sal hed Folkvang, og dens og hendes Skjsnhed har tilvisse Digteren tegnet saa fuldendt, som mulig. Til denne himmelske Bolig kalder hun engang hver den, der trofast elskede her paa Jorden, enten de saa have følt Kærlighedens hele Salighed, eller kun dens Længsel har blomstret for dem; medens den kolde Ms, hvis Hjerte aldrig har flaget varmt, ogsaa hisset i den ranke, skjønne, men alvorsfulde Gesions, den evige Ungmøes, høje Sale for evig bliver urørt af de blideste Folelfer. Frejas tvende Dstre, Sjofna og Hnos, vare skjønne som deres Moder; og Sjofna var de salige, smilende Drommes huld: salige Genius, men af Hnos kaldtes alt det, som paa Jorden skjønt var, nysieligt! — Tiderne svandt, og Hjertets friske, varme Banken for det Skjønne svandt, og vor Nutid leger med det Nysselige! Men ikke Alt i Valhal var herligt; — een Indbygger havde det, som man vel kunde tvivle om, enten man skulde henregne ham bedst til Aserne eller Jetterne; — det var den lunefulde, den ustadige, stadse vaklende, men stedse rænkefulde Loke. Hvad Bryderier, hvilke Sorger han voldte Guderne, er Ubeskriveligt, og det var slet ikke det bedste for Thor, at han saa23 tit lod Loke age med sig paa sine 2Eventyr. Med en Jettekvinde havde Loke 3 Børn, som vel baade Guder og Mennesker maatte onffe ufødte, og som kun Jetterne kunde glædes ved. Den ene af dem var „Fenrisulven". Som Lokes Barn blev ogsaa den opfødt i Valhal, men den aabenbarede snart sin Natur. Den gjørde saa meget Ondt og voxte til saa stor og stark, at vel Guderne maatte cengftes for den. De vilde derfor binde den; men to Baand, det ene en Jernlænke, brød den som Halmstraa. Da fik de de kloge Dværge under Sejd og Trolddom til at fmedde et tyndt Baand, som den ikke kunde fønderrive, Men den var for klog, og vilde ikke bindes, for den fik en Gissel for, at den atter skulde vorde lost. Da stak Ærens bolde Guddom, den stolte, kraftige Tyr, med rask Beslutning sin Arm indtil Albuen ind i den mordlystne Strube. Han maatte miste sin Arm, det vidste han, men til kloge Beregninger var hans Selvopofrelse for ædel, — og naar regnede vel den Ædle fra David indtil Luther, fra Leonidas indtil Hvitfeld, fra Skcevola indtil Wilberforce! — Balhal vilde han redde, trods Formaninger og Frygt, og han hengav uden Øjenblink sin Højre! — Ja tilvisse, han var rens Guddom! våyvgetjuge"s: fyrgetyve; — „Asa"s- Gud; — „Dys" s: Disa, Gudinde; — „Avka"s: den agende; — „Hejmdal" Himlens Vogter. Han boede ved Enden af Bifrost, Gudebroen, den syvstribede Regnbue; men efter Farverne vare Jomfruerne syv, som tænktes boe derhos. „Valhal"o: Gudernes Hjem. — „Bolund"den kunstige Smed, der lavede Guderne og Heltene saa mangt et kosteligt Vaaben, og som kan betragtes som Kunstfærdighedens Repræsentant.</note>
   </notes>
   <source pages="296-297"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -9843,7 +9846,7 @@ Fordi han saae dem ej.
     <note>Disse 4 Digte ere alle Brudstykker af Nordens Guder, — denne Digtning, som vel enhver Dansk burde eje — idetmindste i sit Hjerte. Da de saa yndigt, saa kraftigt og saa herligt, saa ægte=genialt give os et Indblik i nogle af vore Forfædres helligste Ideer, og da de her ere komne til at staae sammen, ligesom de ere udsprungne fra samme Kilde, har jeg ogsaa forenet dem under een Anmærkning, der skulde udfylde, hvad der maaskee ellers kunde være enkelte Lasere utydeligt; naturligviis vil dog den bedste Fortolkning af Brudstykkerne stedse være der hele Digt selv, men ogsaa da kun, naar det låses med den fromme, livlige, fædrelandske Følelse, den dybe Sjalfuldhed, der gav det sin Tilvær, Den overste af alle vore Forfædres Guder var Alfader, Odin, der fra sit Lidffjalf overskuede Alt, saa at Intet Fortiden og Nutiden var ham hemmeligt, og kunde det end et Øjeblik skjules for ham, saa havde han dog 2 Ravne, der fløj. vidt omkring i de fjerneste Lande og bragte ham Kundskaben tilbage. Man erindre her Sagnet om Hovdingen Odins Kjendskab til Skrivekunsten, der forekom vore Forfædre som en Trolddom. En af hans Sønner var Thor, hvis Borg kaldtes Trudvang, og han var Krigens Gud. Han var ikke ssnderlig rolig af sig, men gad gjerne age; og naar da hans tunge Kjærre, trukken af de to fortræffelige. Bukke, rullede hen over Himlen, da buldrede det svart, og denne Bulder kaldtes Thors Don s: Torden; — men som den beffoede Hestehov ftundum af den haarde Flint lokker lysende Jldglimt, saa stod der en evig Lue om den ras henrullende Kjærre, og den kalde vi Lynild. Med Mjølner, sin Hammer, knuste han Bjergene, naarsomhclst han lystede, at de bleve som dybe Dale; — men dog var det naturligviis ej egentlig mod den livlsse Natur, at han brugte dette herlige Vaaben. Guders og alt det Godes Fjender, de mørke, flumle Jetter var hans Hu især gram, og forløb han sig end tit i sin ærlige men vel rafle Fremfærd, og kunde deres Koglerier end stundum blinde hans Syn og dove hans Kraft, — det var dog aldrig for Intet, at de stedse sitrede for ham, eller at han nævntes med Navnet „Jotunbane"Jetternes Ddelægger. Ved Siden af den stærke Thor staaer næppe en yndigere, fuldere og renere Modfætning end den dejlige, den livsalige Freja, al reen Kærligheds rette og himmelske Moder. Hendes Sal hed Folkvang, og dens og hendes Skjsnhed har tilvisse Digteren tegnet saa fuldendt, som mulig. Til denne himmelske Bolig kalder hun engang hver den, der trofast elskede her paa Jorden, enten de saa have følt Kærlighedens hele Salighed, eller kun dens Længsel har blomstret for dem; medens den kolde Ms, hvis Hjerte aldrig har flaget varmt, ogsaa hisset i den ranke, skjønne, men alvorsfulde Gesions, den evige Ungmøes, høje Sale for evig bliver urørt af de blideste Folelfer. Frejas tvende Dstre, Sjofna og Hnos, vare skjønne som deres Moder; og Sjofna var de salige, smilende Drommes huld: salige Genius, men af Hnos kaldtes alt det, som paa Jorden skjønt var, nysieligt! — Tiderne svandt, og Hjertets friske, varme Banken for det Skjønne svandt, og vor Nutid leger med det Nysselige! Men ikke Alt i Valhal var herligt; — een Indbygger havde det, som man vel kunde tvivle om, enten man skulde henregne ham bedst til Aserne eller Jetterne; — det var den lunefulde, den ustadige, stadse vaklende, men stedse rænkefulde Loke. Hvad Bryderier, hvilke Sorger han voldte Guderne, er Ubeskriveligt, og det var slet ikke det bedste for Thor, at han saa23 tit lod Loke age med sig paa sine 2Eventyr. Med en Jettekvinde havde Loke 3 Børn, som vel baade Guder og Mennesker maatte onffe ufødte, og som kun Jetterne kunde glædes ved. Den ene af dem var „Fenrisulven". Som Lokes Barn blev ogsaa den opfødt i Valhal, men den aabenbarede snart sin Natur. Den gjørde saa meget Ondt og voxte til saa stor og stark, at vel Guderne maatte cengftes for den. De vilde derfor binde den; men to Baand, det ene en Jernlænke, brød den som Halmstraa. Da fik de de kloge Dværge under Sejd og Trolddom til at fmedde et tyndt Baand, som den ikke kunde fønderrive, Men den var for klog, og vilde ikke bindes, for den fik en Gissel for, at den atter skulde vorde lost. Da stak Ærens bolde Guddom, den stolte, kraftige Tyr, med rask Beslutning sin Arm indtil Albuen ind i den mordlystne Strube. Han maatte miste sin Arm, det vidste han, men til kloge Beregninger var hans Selvopofrelse for ædel, — og naar regnede vel den Ædle fra David indtil Luther, fra Leonidas indtil Hvitfeld, fra Skcevola indtil Wilberforce! — Balhal vilde han redde, trods Formaninger og Frygt, og han hengav uden Øjenblink sin Højre! — Ja tilvisse, han var rens Guddom! våyvgetjuge"s: fyrgetyve; — „Asa"s- Gud; — „Dys" s: Disa, Gudinde; — „Avka"s: den agende; — „Hejmdal" Himlens Vogter. Han boede ved Enden af Bifrost, Gudebroen, den syvstribede Regnbue; men efter Farverne vare Jomfruerne syv, som tænktes boe derhos. „Valhal"o: Gudernes Hjem. — „Bolund"den kunstige Smed, der lavede Guderne og Heltene saa mangt et kosteligt Vaaben, og som kan betragtes som Kunstfærdighedens Repræsentant.</note>
   </notes>
   <source pages="298-299"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -9904,7 +9907,7 @@ Da frygter man først Kampens Drot''
     <note>Det er en af de meest indgribende Ideer i det store Hele af vore Forfædres Forestillinger, som er behandlet i dette herlige Digt. Tapperhed var den største Dyd, som Fejghed den største Last. Men skulde et tappert Liv vinde sin Lon hisset, skulde Valhal aabnes for Kampens kjekkeste Søn, maatte hans Liv endes, som det var fort, og Straadod maatte han mindst doe, Derfor lod Odin, da han mærkede Dødens Komme, sine Sønner og Venner stikke sig 9 Huller i. Hovedet, at ikke Sottesengen skulde see ham henvisne. Men hver den, som døde paa Bænkchalm, paa ham lurede Hela i sin skumle Vraa, hvor kun Suk og Sult og Smitsot sad til Huse med hende. Hun var ogsaa en af Lokes Døtre, blaableg, gusten og grusom, og Heltene maatte vel ræddes for hende, saatit de mindedes Valhals Forlystelser, som den herlige Modsætning til det kvalopsyldte Helhejm. Naar man mindes dette, ligger Digtets Jdee vistnok tilstrækkelig klar. „Baldur"var den gode, skjønne, elskelige Guddom, alle Gudernes Lyst, der kun eengang, ved sin bratte Død, bragte dem Sorg, hvis hele Sjæl var Blidhed, og Hvis Aasyn var saa smukt, at den fljsnneste blandt Blomster, Balbersbraaen nævntes efter hans Bryn. — „Frej,, o: Freja. — Som Odin her skildres, lod han sig ofte tilsyne for Heltene og kaldtes da tit med Navnet Nornegjæft, — Odin selv frelser her altsaa Helten fra Hela og gjengiver Valhal ham.</note>
   </notes>
   <source pages="299-302"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -9984,7 +9987,7 @@ Kjæmpen er Valhal værd!
     <note>Som en Modsætning til det forrige Digt staaer nu her dette dejlige af Oehlenschlager, af hvilket dog et Vers er udeladt. Man seer let, at Scenen her er langt nyere, ligesom Romansen er yngre end Epos'et; og for den, som har Dine derfor, vil det vistnok være interessant at kunne sammenligne Tonen i disse to saa forskjellige, og dog saa beslægfede, Digte.</note>
   </notes>
   <source pages="302"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -10006,7 +10009,7 @@ Nedlægger jeg mit Hoved.
   <title><num>188.</num>Kong Frode og Gubben</title>
   <firstline>Kong Frode højt ved Gilde sad</firstline>
   <source pages="303-305"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -10079,7 +10082,7 @@ ej ikke er du uden Daad! —
     <note>Et Brudstykke af den herlige Rolf Krage. Jeg optog det for den livlige og kraftige Skildring af et saa sjælden henrivende Skue som Rolfs Helteflok. Skulde Nogen her savne Viggo, Bsdvar Bjarke osv., da erindre han, at Stenen er lagt, inden disse endnu havde sluttet dem til Flokken. — „Gaffelbænken"s: Højsadet; — „Ejnheriar"de meest udmærkede af de afdøde Kjæmper. — „Frejr"Aarstidernes Gud, udgjorde, i Forening med Odin og Thor, Asernes stolteste og herligste Kloverblad.</note>
   </notes>
   <source pages="305-307"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -10155,7 +10158,7 @@ For Kjæmpen i Hallen; og Dl og Mjød de bar
     <note>Historien her er saa almeenbekjendt — jeg har kun det at anmarke, at jeg har tilladt mig enkelte Friheder og Forandringer i Digtet, hvilket jeg, ihvor ubetydelige de end 28. ere, dog visselig ikke havde vovet, hvis det endnu, som for 30 Aar siden, som Sang havde levet paa Alles Læber,</note>
   </notes>
   <source pages="308-310"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -10239,7 +10242,7 @@ Thi Viggo har hævnet sin Konge!
     <note>Det kunde synes dumdristigt af mig, at jeg her har gjengivet dette Digt efter min egen Behandling, skjønt baade Grundtvig og Petersen tidligere have behandlet det. Men med al min dybe Ærbodighed for begge disse herlige Mænd, savnede jeg dog ved dette Digt Noget hos dem begge, og jeg vovede at vende mig fra dem til selve Originalen, og gjengive denne paa min egen Maade. Hvad jeg vovede, indseer jeg vel, men hvad jeg følte, for jeg vovede det, veed heller Ingen bedre end jeg selv. Hverken Overilelse eller Selvtillid har jeg Grund til at bebrejde mig. „Mejlfarsund"det lille Bælt ved Middelfart; — „Gjcdfør"s: den sydligste Pynt af Falster; — „Dannebod"s: de Danskes Trøst; — „Konning Harald"o: Harald Blaatand; — „Kattegat" — altsaa skulde Østersoen, — thi det er den, der menes, — ogsaa have været henregnet under Benævneljen Kattegat? — „ravest"s: rankest, højest; — „Bure"s: Boerelse, Borg; — „Kure"s: Omsorg.</note>
   </notes>
   <source pages="310-315"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -10374,7 +10377,7 @@ Naar hun er i Dvale!
   <title><num>192.</num>Hakon Adelsteens Vise</title>
   <firstline>Kong Adelsteen paa Tinge stod</firstline>
   <source pages="315-316"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -10417,7 +10420,7 @@ Det gjengjaldt mellem Norges Fjelde;
     <note>Sigurd Syr, Oluf den helliges Stedfader; — „Harald"s: den sener- saa berømte Harald Haarderaade; — „Brog"o: Klædning, her Aandens jordiske Hylster, Legemet.</note>
   </notes>
   <source pages="317-319"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -10484,7 +10487,7 @@ Hans Øjne bleve vande: —
     <note>Ogsaa dette tilvisse dejlige Digt har jeg tilladt mig at forkorte. „Hirdmænd"»: Hofmænd,</note>
   </notes>
   <source pages="319-324"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -10643,7 +10646,7 @@ I Absalon og Valdemar.
     <note>Dette Digts Bestemmelse var næppe at staae i en Samling af historiske Digte, og dog troer jeg, at det gaaer fortræffeligt an, saaledes som jeg her har forkortet det.</note>
   </notes>
   <source pages="325"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -10681,7 +10684,7 @@ Han hedder Saxe Grammatikus.
     <note>Ogsaa dette Digt er forkortet. — „Kastale"de græse Digteres hellige Kilde. — „Sagerne"Sagaerne, vore gamle historiske Digte; — „Svitiod"s: Sverrig; „Davnien"s: Danmark.</note>
   </notes>
   <source pages="326-327"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -10740,7 +10743,7 @@ Det nordiske Hjerte du fryde!
     <note>Ogsaa af dette Digt har jeg troet at burde udelade et Vers. — „Anders-Skov"s: det nuværende Antvorskov, — Og nu, hvem kjender ikke hellig Anders, der ved sin Fromhed skal have formaaet Saameget, at man endog tilskrev ham Mirakler, og hvem nok idetmindste Slagelse endnu skal have at takke for den megen Jord, han sik lagt til Byen?</note>
   </notes>
   <source pages="328-331"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -10855,7 +10858,7 @@ Nattergalen der og flaaer.
     <note>Denne gamle Kjæmpevise har jeg tilladt mig at forkorte betydelig og at andre enkelte Ting i den ovenikjsbet. „Hure"Hvorledes; — „Huen"s: Hu, Sindelag; — da er det vel tilmaade"c>: da er det temmelig faa; — „opsatte Livet"s: vove Livet, satte det paa Spil; — „forre"s: for, forhen; — „Leve"»: Brød. S. 336,5 og 6 L., forstaaer jeg ikke.</note>
   </notes>
   <source pages="332-340"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -11089,7 +11092,7 @@ Vil tjene sit Fædreland!
     <note>„Kong Volmer"den bekjendte, lige snedige og skjemtefulde, Valdemar den 3die med Tilnavnet Atterdag. — Brok, Ræv, Ulv, Gaas, Due, Galt, Hsg og Kalv ere Navnene paa en heel Deel af de dengang blomstrende adelige Slægter. — Rrogen er det nuværende Kronborg.</note>
   </notes>
   <source pages="341-345"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -11219,7 +11222,7 @@ Med stærke Kalve to''
     <note>Ogsaa denne Vise har jeg betydelig forkortet; — „forlove vor Klædefæd"love aldrig at bære Mandsklæder tiere; — „somme"forsomme sig; — „Fromme"o: Gavn; — „stunge"s: stak. Dette Digt vil nu vel Ingen nægte er historisk; men det næste derimod, som jeg har forbundet dermed, er det ogsaa historist? Ærlig talt, faa sagde Dronning Margrete virkelig ikke et eneste af de Ord, som staae i det herlige Digt; men om hun nu følte hver den Tanke, der er udtalt deri, svulme i sit Bryst? — Ja det er en anden Sag! og isaafald bliver dog vistnok Digtet netop faa historisk, som det er muligt, noget Digt kan være det.</note>
   </notes>
   <source pages="345-351"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -11374,7 +11377,7 @@ Den danske Dronning imod.
     <note>Ogsaa denne Vise har jeg betydelig forkortet; — „forlove vor Klædefæd"love aldrig at bære Mandsklæder tiere; — „somme"forsomme sig; — „Fromme"o: Gavn; — „stunge"s: stak. Dette Digt vil nu vel Ingen nægte er historisk; men det næste derimod, som jeg har forbundet dermed, er det ogsaa historist? Ærlig talt, faa sagde Dronning Margrete virkelig ikke et eneste af de Ord, som staae i det herlige Digt; men om hun nu følte hver den Tanke, der er udtalt deri, svulme i sit Bryst? — Ja det er en anden Sag! og isaafald bliver dog vistnok Digtet netop faa historisk, som det er muligt, noget Digt kan være det.</note>
   </notes>
   <source pages="351-353"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -11429,7 +11432,7 @@ Kvinden idag.
     <note>At dette Digt ingen Kjæmpevife er, viser Forfatterens Navn, skjønt Kjæmpevifetonen er vel vedligeholdt. — Man erindre, at dengang, i Kristian den 1stes Tid, hørte Skaane endnu til Danmark, og at det var først en langt senere Tid, Freden til Roskilde 1658, der gjørde det svensk, medens en endnu langt senere Tid, Krigen fra 1709 til 1720, først gjørde det svensksindet. Iver Axelsen er den berømte, rige og mægtige Thott af dette Navn.</note>
   </notes>
   <source pages="353-358"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -11560,7 +11563,7 @@ Vil tjene sit Fædreland,''
     <note>Denne er en af vore Kjæmpevifer, som jeg temmelig frit har bearbejdet, idet jeg har bortskaaren en heel Deel Vers, sammensmeltet andre og fat et Par til; dog fulde jeg ikke troe, at Visens Idee og dens Tone har lidt nogen Forandring. Kristian den anden er paa saamange Maader omtalt og besungen, at man vel hartad skulde troe ham tilstrækkelig bekjendt; dog veed jeg, at denne Kæmpevise hidtil har været temmelig ubekjendt af Folket, og jeg troede derfor, at den nødvendigviis maatte interessere. Om den virkelig er udgaaet fra en Almuesmands Pen, vil det vel være vanskeligt at bevise, og det er vel nævve rimeligt, men saameget er dog ogsaa vist, at skulde den hele danske og norske Almue have skreven, hver sin Vise, om den saa hadede Kristian den 2den, saa vilde i ingen af Viserne Tonen, Randen, havde været anderledes, end den er i denne. Kristian den 2den var ret egentlig Folkets Mand, og var han ikke Adelens, saa var der, fordi ingen retskaffen og kraftig Konge kunde være det, som Sagerne da stod. Frederik den 1ste blev det; — men hvis Regjering monstro har vel i Grunden de meest oprøvende Afskyeligheder at opvise, enten Frederik den 1stes eller Kristian den 2dens? Det er virkelig ingen Paradox jeg her fremfører; — men Kristian den 2den gik paa den smalle Sti langs Klippesiden, — et lykkeligt Skridt, og han havde staaet paa Fjeldtinden ved Siden af Czar Peter, — et ulykkeligt, og han maatte nødvendigviis en Tidlang kravle om i Afgrunden mellem allehaande Dionysier og Karl den 10der, indtil, — og det er da allerede for en Tid siden feet, — en venlig Haand traf ham igjen ud af Dglereden. „sagt med Sandingen"sandt sagt; — „syntes"s: faaes viste sig.</note>
   </notes>
   <source pages="358-360"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -11638,7 +11641,7 @@ Saa ilde ham Adelen sveg.
     <note>En Sang om Morten Luther mellem lutter danske historiske Digte! — Der er visse Karakterer i Storhed og Virkning saa verdensbetydningsfulde, at de tilhøre ethvert — Saavidt som Lutherdommen har adspredt Vildfarelsens Taager, knuust Overtroen og oplyst Aand og Hjerte, saavidt strækker sig ogsaa Luthers Nationalitet, og saavidt er han en nationalhistorisk Helt af den allermærfeligfte Betydning; thi alle hans Disciple ere jo hans aandelige Børn, og han deres Stamfader; — fra ham have de deres Adelsbrev.</note>
   </notes>
   <source pages="360-362"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -11705,7 +11708,7 @@ Kristus selv i Favnen slutter.
   <title><num>205.</num>Kjøbenhavns Universitets Stiftelse</title>
   <firstline>Heel sjælden rørtes Pen og Bog</firstline>
   <source pages="363-365"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -11774,7 +11777,7 @@ Med Hurra hilset blive!
     <note>For dem, der maatte være ubekjcndte med Grækenlands Historie, fortælles det her, at Spartanerne, et Folk i Grækenland, vare bekjendte for deres overordentlige Tapperhed, og at en lille Flok af dem, under deres Konge Leonidas, engang i et Bjergpas forsvarte sig mod flere hundrede tusinde Perser, indtil de, ogsaa anfaldte bagfra, laa Alle paa deres Hæders Balplads. De Svenskes Overmagt over Daniel Ranzau var nu vistnok forholdsviis meget mindre; — der var en 24 til 25,00!) Svenske mod en 4 til 5,000 Danske — men hist var et Bjergpas og her en aaben Hede, — hist faldt enhver Spartaner paa 'Skjold, men her stod enhver Dans? sejerrig bag sit Sværd, og ikke mindre end 6,000 Svenske toges til Fange.</note>
   </notes>
   <source pages="365-366"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -11834,7 +11837,7 @@ Og brugte Sværdet, til han vandt.
     <note>Det var i Kristian den 4des Barndom, Aar 1589, at Magnus Heinesen blev henrettet; men nogle Aar derefter blev Dommens Uretfærdighed erkjendt, hans Navn blev gjørt ærligt, og han fik en 'hæderlig Begravelse. Skulde Nogen troe, at jeg har gjørt Magnus Hejnesen for berømt paa Færøerne, da kan jeg forsikre ham om det Modsatte, og lægge det til, at den Begejstring, med hvilken en ung og vakker faro Fiskergut, med hvem jeg i Efteraaret gjørde et særdeles interessant Bekjendtskab, talte om Helten, har ingen liden Deel i, at dette Digt blev til, og at det blev saaledes, som det er.</note>
   </notes>
   <source pages="367-369"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -11924,7 +11927,7 @@ Hos hvem hans Minde blev koldt!
     <note>Det er historisk, at det kostede ingen ringe Umage for nogle Aar siden, at gjensinde det Sred, hvor Stjerneborgen havde staaet. Et Dige af Kampsteen omkring det, ved Estergravningen tilblevne, vandopfyldte Hul er saagodtsom det Eneste, der nufortiden udmaærker hin engang verdensberømte Plet.</note>
   </notes>
   <source pages="370-371"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -11987,7 +11990,7 @@ Han selv er nok for os, — nok for ham er friste Lov!
     <note>Det var 1612, at de kjekke Guldbrandsdoler, under Fogden Lars Gram, nedhuggede den skotske Oberst Zinklar, med hele hans, til svensk Tjeneste hyrede, Folge, paa den her anførte Fjeldsti Kringlen. — „Grande"s: Nabo; — „Nokken" s: Flodguden.</note>
   </notes>
   <source pages="372-375"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -12091,7 +12094,7 @@ Saa tit hans Øjne den skue!
   <title><num>210.</num>Eleonore Kristine Ulfeld</title>
   <firstline>Tungt Kongedatrens Taare flød</firstline>
   <source pages="375-379"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -12191,7 +12194,7 @@ Hun faaer en salig Ende.
   <title><num>211.</num>Romanse</title>
   <firstline>Ved Sundet en truende Flaade gik</firstline>
   <source pages="379-380"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -12225,7 +12228,7 @@ Endnu er vi vore egne!
     <note>Det Sagn, at den underskjsnne Gefion, som forhen er bleven omtalt, fortryllede Kong Gylfes Sønner saaledes, at de lode sig fpænde: for hendes Plov, og hun paa den Maade plsjede Sjælland ud af Sverrig midt i Østerssen, er saa almindelig bekjendt og et Par Gange saa herlig besjunget af Oehlenschager. — Gsste, der nu atter vilde pløje det til sig, er den svenske Kong Karl den 10de Gustav, og det Træ, i hvilket Kongefuglen Frederik den 3die havde bygget sin Rede, som han ej atter vil flygte fra, er naturligviis Kjobenhavn, der saa heltemodig forsvaredes, ej blot af Garnisonen, men og af dens Borgere og Studenterne.</note>
   </notes>
   <source pages="380-381"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -12286,7 +12289,7 @@ Fredriks troner end i Norden!
     <note>Jeg blev først saa silde opmærffom paa dette smukke Digt, at det var mig umulig at anmode dets Forfatter om en ubetydelig Forandring i Begyndelsen af det. Jeg foretog mig den da paa egen Haand og maa derfor her gjøre Afbigt og anmode om Tilgivelse. Digter staaer egentlig i en nøje Forbindelse med det senere om Bernstorff, som man derfor gjør godt i at henfore til det. Som bekjendt maatte den store, men noget uforsigtige, Griffenfeld paa sin lille, af nedrige Misunderè beførte, Konges Dom tilbringe 19 af sine sidste Leveaar paa Fæstningen Munkholm ved Trondhjem.</note>
   </notes>
   <source pages="382-384"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -12354,7 +12357,7 @@ Griffenfelder ingen mere!
   <title><num>214.</num>Kort Adeler</title>
   <firstline>Kort Adeler var sig en Helt saa stærk</firstline>
   <source pages="384-386"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -12418,7 +12421,7 @@ Hans Navn, hans Eværd og hans Banner.
     <note>Denne herlige Karakterskildring af det stolte Brsdrepar, Jens og Niels Juel, er aldeles historisk. Det er ligeledes bekjendt, at Kristian den 5te fra Kjoge Kirke saae til, hvorledes Slaget gik.</note>
   </notes>
   <source pages="386-388"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -12493,7 +12496,7 @@ Og vandt! —
     <note>Jeg vil her kun anmcrrke, fordi jeg veed, at Vildfarelsen er saa almindelig, at denne Hvitfeld ikke hed Peder men Ivar. Peder Hvitfeld hed derimod den Kommandant, der en anden Gang saa tappert forsvarede sit Halmstad mod de Svenske.</note>
   </notes>
   <source pages="388-390"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -12563,7 +12566,7 @@ Paa raffe Orlogshelte! —
     <note>dette Digt har jeg udeladt et Vers. Som Forsvar for den stakkels Hr. Ramus, Præsten, Anne Kolbjornsens Mand — forresten ikke ubekjendt som Historiker — maa jeg dog anfsre, at han dengang var gammel og svagelig — han døde 2 Aar derefter — og at han just paa samme Tid laa syg, og det virkelig ikke af Kanonfeber.</note>
   </notes>
   <source pages="391-393"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -12644,7 +12647,7 @@ Og stjenker ham bedskere Skaaler.
   <title><num>218.</num>Hans Egede</title>
   <firstline>Et helligt Kors staaer højt i Nord</firstline>
   <source pages="393-396"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -12721,7 +12724,7 @@ Og gjennem Natten lyser.
   <title><num>219.</num>Skjelderup</title>
   <firstline>Stolte Lavrbærtræ! som byder</firstline>
   <source pages="396-399"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -12805,7 +12808,7 @@ Ristes her paa gamle Danmarks Strand.
     <note>Saa simpel som denne Kantate er, saa ædel og saa værdig er den vistnok. Den tredie Slægt lever nu efter 5te Frederiks Død, de to forrige elskede hans Minde, uden at være blinde for hans Svagheder, dem naturligvis den dybtrørte Digter i sine Folelsers Fylde ikke kunde dvæle ved; — den tredie, den nulevende, Slægt syms hartad at glemme alt det Elskelige og Ædle ved ham, medens de med en sønderlig Vellyst dvæle ved der mindre Gode, seet igjennem et hæsligt= fordrejende Forstørrelsesglas. Lad os ikke glemme, at en Konge er et Menneske og som Menneske maa have Svagheder; men tale vi om ham, hvem ikke Smiger, men dybtbegrundet Følelfe, kaldte den Ejegode, lad os da idetmindste først gribe i vor egen Barm og veje vore egne Svagheder, inden vi domme. Om jeg maaskee forresten havde gjørt bedre i, med Digtet ogsaa at optage de bibelske Kor, er en Sag, som jeg endnu ikke ret er enig med mig selv om.</note>
   </notes>
   <source pages="399-400"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -12861,7 +12864,7 @@ Nu bæres Kongen bort til Graven.
     <note>Dette Digt har jeg forkortet en Deel, men dog ikke saaledes, troer jeg, at den originale Fremstilling af Henrik Gerners udødelige Fortjenester af Dokken har lidt derved.</note>
   </notes>
   <source pages="400-404"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -12957,7 +12960,7 @@ Hil være Hr. Henrik!
   <title><num>222.</num>Bernstorff</title>
   <firstline>For din Griffenfeld saa god</firstline>
   <source pages="404-406"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -13023,7 +13026,7 @@ Du tilgive Fædres Brost!
   <title><num>223.</num>Vise om Karl Jessen</title>
   <firstline>Og det var Karl Jessen, den gjæve Mand</firstline>
   <source pages="406-407"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -13059,7 +13062,7 @@ Ej Britten det magted' at tage!
   <title><num>224.</num>Wahl</title>
   <firstline>Dækker Graven, grønne Urter smaa</firstline>
   <source pages="407-409"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -13128,7 +13131,7 @@ Hundredtusind Blomster favne dig!
     <note>Til Historien i dette Digt kan jeg ikke føje Andet, end at den, saavidt jeg veed, virkelig være sand, — endog til den Mærkelighed, at Kaptejnens Navn hidtil er forblevet ubekjendt. Vist nok er det, at dette hele Røvertog var saa langt som mulig fra at være i det engelske Folks Aand, at det kun kan betragtes som en Akt af en afskyelig Regjerings almeenforagtede Politik.</note>
   </notes>
   <source pages="409-413"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -13244,7 +13247,7 @@ Vil bort, vil hjem, vil hist til Steenkulsoen! —
   <title><num>226.</num>Willemoes</title>
   <firstline>Kommer I hid, Piger smaa</firstline>
   <source pages="413-419"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -13418,7 +13421,7 @@ Voven sagte triller!
     <note>Den ædle"Pfingsten er allerede i flere Aar død, men hans Navn er endnu en Velsignelse. Den Kraft, den Kjærlighed, den Opofrelse, med hvilken den ædle Gubbe, hartad til sine Dages Maal, virkede for sit befværlige, men skjønne, store og ædle Øjemed, at være den Doves Øren og den Stummes Tunge, var visselig mageløs, og derfor vare Virkningerne af hans utrættelige Flid saa velsignelsesrige! — Fred med hans Støv, en sod og salig Glæde ved hans Minde!</note>
   </notes>
   <source pages="419-421"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -13481,7 +13484,7 @@ Din rette Daglon skal du vist modtage!
     <note>Dette det sidste Digt, i Samlingen, er et Brudstykke af Forfatterens „RVSMe-Rikm". — Iscmdhed! idet jeg ender Samlingen, og idet jeg snarlig tænfer mig den i de Unges Hænder, har jeg ingen bedre Udtalelse af alle de Tanker og Følelser, der gjennemftrsmme mig, end disse simple og herlige Linker. Jeg vil derfor gjøre dem til mine. O maatte dog den Aand, der taler i dem, finde livlige, letanflaaelige Strenge i de Unges Sjæle! og maatte den hvile over dem indtil Dagenes Ende! —</note>
   </notes>
   <source pages="421-422"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -13516,7 +13519,7 @@ Det er Herrens eget Bud,
 <head>
   <title>Biografiske Smaating om Forfatterne</title>
   <source pages="443-604"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <prose>
