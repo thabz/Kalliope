@@ -17,6 +17,9 @@
   </pictures>
   <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122195694005763" facsimile="110408059927-color" facsimile-pages-num="217" facsimile-pages-offset="13">Michael: <i>Præsten i Odense Herr Michaels tre danske Riimværker fra Aar 1496</i>, efter den kiøbenhavnske Udgave af 1516 paa ny udgivne med Oplysninger af Christian Molbech, trykt hos Andreas Seidelin, Kiøbenhavn, 1836.</source>
   <pagebreaks/>
+  <proofreadings>
+    <proofreading model="gpt-6" datetime="2026-09-25T13:00:00+02:00"/>
+  </proofreadings>
 </workhead>
 <workbody>
 <text id="michael2026083001">
@@ -24,6 +27,7 @@
   <title>Om Jomfru Mariæ Rosenkrands</title>
   <firstline>Meñiſcken er ſkapt for ændelighæ ſag</firstline>
   <source pages="1-124"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <quote lang="la">
@@ -4534,6 +4538,7 @@ Deo gratias.
   <title>Om Skabelsen</title>
   <firstline>Thi thet ſculle alle menniſcke faa at widhæ</firstline>
   <source pages="125-160"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <quote lang="la">
@@ -5801,6 +5806,7 @@ vil ſamaſt.. M. d. kih.
   <title>Om det menneskelige Levnet</title>
   <firstline>Wilt thu haffuæ læcke och ſiælens heyl</firstline>
   <source pages="161-186"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <quote lang="la">
