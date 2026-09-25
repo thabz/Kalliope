@@ -12,6 +12,9 @@
     <picture src="1924-2-p2.jpg">Vignet</picture>
   </pictures>
   <source facsimile="115308073951-color" facsimile-pages-num="61" facsimile-pages-offset="7">Poul Arvid la Cour: <i>Matisse-Bogen</i>, Woel's Boghandel og Antikvariat, Kbh., 1924.</source>
+  <proofreadings>
+    <proofreading model="gpt-6" datetime="2026-09-25T13:00:00+02:00"/>
+  </proofreadings>
 </workhead>
 <workbody>
 
@@ -19,7 +22,7 @@
 <head>
   <title>Indledning</title>
   <source pages="9-11"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <prose>
@@ -42,7 +45,7 @@ Med Hensyn til Matisse som kunstnerisk Personlighed kan man næppe give et paa e
   <title>Først maler du</title>
   <firstline>Først maler du os besynderlige Blomster</firstline>
   <source pages="12-13"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -88,7 +91,7 @@ og fra dets Dyb Fuglene kime os imøde.
   <title>Funklende rejser Havet sig</title>
   <firstline>Funklende rejser Havet sig og iler</firstline>
   <source pages="14-15"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -124,7 +127,7 @@ straaler imod mig klædt i Form og Farve.
   <title>Som du sover</title>
   <firstline>Som du sover bøjet let tilbage</firstline>
   <source pages="16-17"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -156,7 +159,7 @@ tæt omkring dit Hjærtes ømme Varme.
   <title>Jeg mætter Sjælen</title>
   <firstline>Jeg mætter Sjælen ved din Pragt</firstline>
   <source pages="18"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -183,7 +186,7 @@ i Vished om din Evighed.
   <title>Af Dvale vaagner jeg</title>
   <firstline>Af Dvale vaagner jeg langsomt</firstline>
   <source pages="21-22"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -226,7 +229,7 @@ til fortsatte Lyksaligheder.
   <title>Solplettet sidder du</title>
   <firstline>Solplettet sidder du i Løvets Skygger</firstline>
   <source pages="23"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -253,7 +256,7 @@ og som jeg synger ud med Blodets Tunger.
   <title>Hun ligger sval</title>
   <firstline>Hun ligger sval som selve Morgengryet</firstline>
   <source pages="24-25"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -285,7 +288,7 @@ og lamme Døden med sit ingensinde.
   <title>Gardinet svulmer svagt</title>
   <firstline>Gardinet svulmer svagt af Sommervind</firstline>
   <source pages="26-27"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -318,7 +321,7 @@ som rækker os hinsides Døs og Død Allivets Glød.
   <title>De farvestraalende Frugter</title>
   <firstline>De farvestraalende Frugter</firstline>
   <source pages="28"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -340,7 +343,7 @@ Virkelighedens skønne Overflod.
   <title>Langsomt skrider Skyer i et vældigt Følge</title>
   <firstline>Langsomt skrider Skyer</firstline>
   <source pages="31"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -365,7 +368,7 @@ i et Brus af Ynde morgenfagre Kvinder.
   <firstline>Saa godt jeg husker Bølgens salte Smag mod mine Tænder</firstline>
   <source pages="32-33"/>
   <keywords>sonnet</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -396,7 +399,7 @@ og dø med Hjertet søndersledet af din Sol og Varme.
   <firstline>Nu løfter Kørvel</firstline>
   <source pages="34-35"/>
   <keywords>sonnet</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -426,7 +429,7 @@ og i dit Væld af Sødme og Ungdom sig forynge.
   <title>Nu slumrer du tung</title>
   <firstline>Nu slumrer du tung</firstline>
   <source pages="36"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -456,7 +459,7 @@ Dig.
   <title>Jeg taler fortroligt</title>
   <firstline>Jeg taler fortroligt med Tingene</firstline>
   <source pages="37"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -478,7 +481,7 @@ end Alverdens Ømhed.
   <title>Jeg er i Fattigdommen</title>
   <firstline>Jeg er i Fattigdommen</firstline>
   <source pages="38-39"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -510,7 +513,7 @@ udødelig at bo.
   <title>Gennem Ruden ser jeg</title>
   <firstline>Gennem Ruden ser jeg</firstline>
   <source pages="40"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -539,7 +542,7 @@ Jeg elsker.
   <title>Saa klar en Verden</title>
   <firstline>Saa klar en Verden</firstline>
   <source pages="41-42"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
