@@ -67,7 +67,7 @@ kilde-XML'en skal kontrolleres.
 Kør testene før større ændringer eller pull requests:
 
 ```shell
-npm test
+make test
 ```
 
 Søgeregressionstesten kræver en kørende Elasticsearch og data fra et fuldt

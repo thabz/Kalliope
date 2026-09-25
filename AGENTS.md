@@ -59,7 +59,9 @@ digtere.
 
 ## Git og GitHub
 
-- Hele testpakken skal køres og bestå, før der oprettes en PR.
+- Kør `make test`, før der oprettes en PR. Kommandoen skal afslutte med
+  exitkode 0; der kræves ikke andre testkommandoer, medmindre en relevant
+  specialdokumentation udtrykkeligt angiver dem.
 - Opret altid worktrees under
   `$HOME/src/kalliope-worktrees/<digterid>-<titel>-<årstal>/`, fx
   `$HOME/src/kalliope-worktrees/blicher-digte-1814/`.
