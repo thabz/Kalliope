@@ -6,7 +6,10 @@
   <dates><published>1845-12</published></dates>
   <pagebreaks/>
   <source href="https://archive.org/details/gaeaaesthetiskaa00ml" facsimile="gaea1846.pdf" facsimile-pages-num="346" facsimile-pages-offset="12">P. L. Møller (udg.): <i>Gæa. Æsthetisk Aarbog</i>, Udgiverens Forlag, Kjøbenhavn, 1846. Udgivet december 1845. Digitaliseret af Det Kgl. Bibliotek.</source>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
+  <proofreadings>
+    <proofreading model="gpt-6" datetime="2026-09-25T13:00:00+02:00"/>
+  </proofreadings>
 </workhead>
 <workbody>
 
@@ -15,7 +18,7 @@
   <title>De to Røvere</title>
   <firstline>Romanæ af Oeddrenschläger</firstline>
   <source pages="1-5" facsimile-pages="13-17"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -135,7 +138,7 @@ RR,,At meer og meer jeg gammel blev og kroget“ —,,Nu feer jeg over Daunen gl
   <title>Pilen</title>
   <firstline>St. St. Blicher</firstline>
   <source pages="5-6" facsimile-pages="17-18"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -168,7 +171,7 @@ og borte. Han var endda slet ikke saa gammel
   <title>Halv Spansk, halv Dansk</title>
   <firstline>salig Kones Tin; for da hun døbe, begyndte han o</firstline>
   <source pages="6-18" facsimile-pages="18-31"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <prose>
@@ -301,7 +304,7 @@ N. te NNa 48 ZA:
   <title>Ungdom og Løndom</title>
   <firstline>r Udi Løndom</firstline>
   <source pages="19-21" facsimile-pages="31-33"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -373,7 +376,7 @@ Digte af Henrik Hertz.
   <title>Indskrifter</title>
   <firstline>Aarets sidste Aften</firstline>
   <source pages="21-24" facsimile-pages="33-36"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -480,7 +483,7 @@ Aar, forsont i vor Erindring!
   <title>Paa Volden store Bededag</title>
   <firstline>Paa Volden store Bededag</firstline>
   <source pages="24-26" facsimile-pages="36-39"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -605,7 +608,7 @@ Bli'er jeg gift til næste Aar?
   <title>Rakar</title>
   <firstline>poetisk Fortælling</firstline>
   <source pages="27-35" facsimile-pages="39-47"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -863,7 +866,7 @@ ADSER
   <title>Nærighed</title>
   <firstline>Nerighed</firstline>
   <source pages="35-45" facsimile-pages="47-57"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <prose>
@@ -933,7 +936,7 @@ Digte af Emil Aarestrup. I.
   <title>Varselskriften</title>
   <firstline>(til Magister D. G. Monrad.)</firstline>
   <source pages="45-46" facsimile-pages="57-59"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1024,7 +1027,7 @@ II.
   <title>Til en ung Sømand</title>
   <firstline>IFra grønne Bakker - svulmende paa Øen</firstline>
   <source pages="46-48" facsimile-pages="59-61"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1070,7 +1073,7 @@ Farvel, naar Stjernen leder dig om Natten!
   <title>Den Sovende</title>
   <firstline>ILad mig dække dine spæde</firstline>
   <source pages="48" facsimile-pages="61-62"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1117,7 +1120,7 @@ Disse tause, døde Steder.
   <title>Bebreidelsen</title>
   <firstline>Du klager over, at jeg taler</firstline>
   <source pages="49-51" facsimile-pages="62-63"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1161,7 +1164,7 @@ Tragedie af C. Bredayl.
   <title>Fragmenter af Sokrates</title>
   <firstline>Sokrates. Kantippe, hans Hustru. Psyche deres Datter, Anytos. Melitos. Sokrates's Anklagere. Lykon. Menas, en rig Handelsmand. Prokles, hans Søn, Yngling, Billedhugger, Psyches. Elsker. Kryphon, Offerpræft og Augur. Atheniensiste Borgere</firstline>
   <source pages="51-83" facsimile-pages="63-95"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <prose>
@@ -1563,7 +1566,7 @@ I.
   <title>Lidt om Vaaren</title>
   <firstline>Lidt om Vaaren</firstline>
   <source pages="83-85" facsimile-pages="95-96"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1629,7 +1632,7 @@ O var det Vaar bestandig!
   <title>Sonet</title>
   <firstline>Sønet</firstline>
   <source pages="85-86" facsimile-pages="96-97"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1661,7 +1664,7 @@ III.
   <title>Octobervise</title>
   <firstline>Hvor nøgent Alt! — hver Busk og Green</firstline>
   <source pages="86-87" facsimile-pages="97-100"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1731,7 +1734,7 @@ j 75
   <title>Natten</title>
   <firstline>Natten</firstline>
   <source pages="88-90" facsimile-pages="100-101"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1793,7 +1796,7 @@ Følger Evighedens Morgengry. —
   <title>Rens Klage</title>
   <firstline>Renés Klage</firstline>
   <source pages="90-91" facsimile-pages="101-102"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1852,7 +1855,7 @@ Og Ingen planter Blomster paa hans Grav.
   <title>Den Døende</title>
   <firstline>Den Doende</firstline>
   <source pages="91" facsimile-pages="102-103"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1896,7 +1899,7 @@ Bil du dø?
   <title>Ønsker</title>
   <firstline>Onfsker</firstline>
   <source pages="91" facsimile-pages="103-104"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1927,7 +1930,7 @@ Rummet og Alt, hvad der skiller os ad!
   <title>Epigrammer</title>
   <firstline>Epigrammer</firstline>
   <source pages="92-94" facsimile-pages="104-107"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2025,7 +2028,7 @@ Stolen.,, ke den til Bone blivet
   <title>Stoppenaalen</title>
   <firstline>Nyt Eventyr af</firstline>
   <source pages="95-99" facsimile-pages="107-111"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <prose>
@@ -2074,7 +2077,7 @@ ge 2
   <title>I Jenny Linds Album</title>
   <firstline>J Jenny Linds Album</firstline>
   <source pages="99-100" facsimile-pages="111-112"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2103,7 +2106,7 @@ Der er Jubel, hvor man Dig gjenseer!
   <title>I Melbyes Stambog</title>
   <firstline>J Maleren Melbyes Stambog</firstline>
   <source pages="100" facsimile-pages="112-112"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2138,7 +2141,7 @@ S. C. Andersen.
   <title>I Gertners Stambog</title>
   <firstline>J Maleren Gertners Stambog</firstline>
   <source pages="100" facsimile-pages="112-113"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2158,7 +2161,7 @@ S. C. Andersen.
   <title>Sange ved Dr. theol. Engelbrechts Jubilæum</title>
   <firstline>; halvhundredaarige Embeds⸗Jubilœum</firstline>
   <source pages="101-104" facsimile-pages="113-117"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2288,7 +2291,7 @@ Digte af en Dame.
   <title>Gaade</title>
   <firstline>Øiet Drøm og Nat og Stijerneglands</firstline>
   <source pages="105-106" facsimile-pages="117-117"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2310,7 +2313,7 @@ Naar Morgensolen kaster rundt sit Guld,
   <title>Saae Du herover?</title>
   <firstline>Saae Du herover?</firstline>
   <source pages="106" facsimile-pages="117-118"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2363,7 +2366,7 @@ J denne Stund?
   <title>Afskeden</title>
   <firstline>Affskeden</firstline>
   <source pages="106-107" facsimile-pages="118-118"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2397,7 +2400,7 @@ ra VER 2
   <title>Da han var syg</title>
   <firstline>Da han var syg</firstline>
   <source pages="107-108" facsimile-pages="118-119"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2436,7 +2439,7 @@ Og Dig tilhøiske, hvor jeg har Dig fjær!
   <title>Bekjendelse</title>
   <firstline>Bekjendelse</firstline>
   <source pages="108" facsimile-pages="119-120"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2466,7 +2469,7 @@ Jeg skulde jo flhe ham — jeg kunde det ei!
   <title>I Natten</title>
   <firstline>J Natten</firstline>
   <source pages="108" facsimile-pages="120-121"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2506,7 +2509,7 @@ Og faa — forgage i den saligste Lyst!
   <title>Til min Moder</title>
   <firstline>Til min Moder</firstline>
   <source pages="109" facsimile-pages="121-122"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2560,7 +2563,7 @@ b Baue.
   <title>Min Onkels Tømmerplads</title>
   <firstline>Fortælling</firstline>
   <source pages="110-129" facsimile-pages="122-142"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <prose>
@@ -2739,7 +2742,7 @@ Endnu engang glemte min Onkel sin Verdighed, og han sagde til mig:,,Du Gavtyv! j
   <title>Mødet med Bacchus</title>
   <firstline>udv. Bodtcher</firstline>
   <source pages="130-143" facsimile-pages="142-156"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -3196,7 +3199,7 @@ Jeg saae ham aldrig meer. -
   <title>Et Besøg i Sorø</title>
   <firstline>Corpusfeuilleton; 1</firstline>
   <source pages="144-187" facsimile-pages="156-200"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <prose>
@@ -3426,7 +3429,7 @@ Omgang. Men det Allermerkeligste ved samme Hund var, at det var en Hunpudel, og 
   <title>Pigen med Masken</title>
   <firstline>Eventyret — ja den grimme Maffe</firstline>
   <source pages="188-190" facsimile-pages="200-203"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -3506,7 +3509,7 @@ Rige Skjenhed Ansigt tæt til Ansigt.
   <title>Orgelet</title>
   <firstline>Orgelet</firstline>
   <source pages="191-193" facsimile-pages="203-205"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -3588,7 +3591,7 @@ i af 1 |
   <title>Den hellige Helene</title>
   <firstline>Den hellige Helene. |</firstline>
   <source pages="193-199" facsimile-pages="205-211"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -3795,7 +3798,7 @@ Spor — Hvad feer jeg! — i Sandet?!
   <title>Studentersange</title>
   <firstline>Til Forbandelsen stemplet</firstline>
   <source pages="199-203" facsimile-pages="211-215"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -3982,7 +3985,7 @@ At uden Savn er ei paa Jord
   <title>Den Fredløse</title>
   <firstline>Og af Lengsel dreven, fast urolig</firstline>
   <source pages="203-205" facsimile-pages="215-217"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4026,7 +4029,7 @@ Damper sig de vilde Bølgers Larm.,,Hvo er Du, som den Forladte gjester,,,Hulde 
   <title>Glædens Formel</title>
   <firstline>,,J Dit Øies dybe, dunkle Blaa!” —</firstline>
   <source pages="205" facsimile-pages="217-218"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>,,J Dit Øies dybe, dunkle Blaa!” —,,Hulde Mø! og mig Dit Smiil forjetter,,,At som Brudgom jeg paa Jordens Sletter,,Evigt ved Din Side vandre maa!“
@@ -4055,7 +4058,7 @@ FJ. J. Pausen.
   <title>Tre Kapitler af Amors Biographi</title>
   <firstline>Amors Biographi</firstline>
   <source pages="206-213" facsimile-pages="218-226"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <prose>
@@ -4135,7 +4138,7 @@ PV. L. Moder.
   <title>Janus</title>
   <firstline>Fortælling</firstline>
   <source pages="214-239" facsimile-pages="226-251"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <prose>
@@ -4267,7 +4270,7 @@ Sug Digte
   <title>Hexametret</title>
   <firstline>Hexametret af A. W. Schlegel</firstline>
   <source pages="239" facsimile-pages="251-252"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4299,7 +4302,7 @@ Enten til Krigernes Lov med utrattelig Kraft det sig ruster,
   <title>Med Julegaver</title>
   <firstline>1. Under Oehlenschlegers Portret</firstline>
   <source pages="240-243" facsimile-pages="252-255"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4400,7 +4403,7 @@ L. Kvifjær.
   <title>Kleine Leiden</title>
   <firstline>,,Kleine Leiden.“</firstline>
   <source pages="243-244" facsimile-pages="255-257"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>,,Kleine Leiden.“
@@ -4455,7 +4458,7 @@ NR N0 8 —
   <title>Til Ænderne</title>
   <firstline>Til Wenderne</firstline>
   <source pages="245-247" facsimile-pages="257-257"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4505,7 +4508,7 @@ Men kun om Morgenen, J Kjare, lad mig vere!
   <title>Et Billede paa Livet</title>
   <firstline>8 Et Billede pan Livet</firstline>
   <source pages="247-249" facsimile-pages="257-261"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4594,7 +4597,7 @@ For at fane lidt Besked er jeg kommen herned
   <title>Til mine Fiender</title>
   <firstline>Descartes</firstline>
   <source pages="249-250" facsimile-pages="261-262"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4666,7 +4669,7 @@ Yngling. Men siig mig, kjender J Snittet og
   <title>Samtale i Underverdenen</title>
   <firstline>De Fremskridt Videnskaben har gjort</firstline>
   <source pages="250-251" facsimile-pages="262-264"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4703,7 +4706,7 @@ Der har man dog Sandhed — in vino:
   <title>Skizzer fra Norge</title>
   <firstline>I</firstline>
   <source pages="252-287" facsimile-pages="264-300"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <prose>
@@ -4963,7 +4966,7 @@ Engang i Sangens Seiersskjorte Han steg til hine rige Feer, Da aabned Himlen sin
   <title>Nomadeliv</title>
   <firstline>Nomadeliv</firstline>
   <source pages="288-290" facsimile-pages="300-302"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -5048,7 +5051,7 @@ Som et Baal i Steppens Nat.
   <title>Sangfuglen</title>
   <firstline>Sangfuglen</firstline>
   <source pages="290" facsimile-pages="302-303"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -5072,7 +5075,7 @@ At Vaaren Hot, file. derved. DØ 115
   <title>Den hellige Hieronymus</title>
   <firstline>den kan til Himlen naa</firstline>
   <source pages="291-294" facsimile-pages="303-307"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -5196,7 +5199,7 @@ Der holdes Fest! — hør Jubelskrig og Toner!
   <title>Med en Tegning af Simonsen</title>
   <firstline>Et Feepallads er for en Nat opbygget, —</firstline>
   <source pages="294-295" facsimile-pages="307-307"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -5213,7 +5216,7 @@ Af Kandelabrer og af Lysekroner.
   <title>Ved en Fest</title>
   <firstline>Ved en Fest</firstline>
   <source pages="295-297" facsimile-pages="307-309"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -5308,7 +5311,7 @@ Bevinge min til Jorden hundne Sjæl!
   <title>Krandsen</title>
   <firstline>Krandsen</firstline>
   <source pages="297-298" facsimile-pages="309-311"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -5350,7 +5353,7 @@ Du skal prøve nu, om Verden fletter dig en Krands.
   <title>Den første Sanger</title>
   <firstline>Han hørte Nattergalen og Fjeldfossens Fald</firstline>
   <source pages="299" facsimile-pages="311-312"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -5396,7 +5399,7 @@ Og Jorden blev til Himmel, og Himlen blev til Jo
   <title>Leilighedsdigte</title>
   <firstline>Leilighedødigte</firstline>
   <source pages="300-303" facsimile-pages="312-316"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -5565,7 +5568,7 @@ Det stige vil i Prisen!
   <title>Fragmenter af en Roman</title>
   <firstline>Hvad Jomsruen tenkte</firstline>
   <source pages="304-313" facsimile-pages="316-326"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -5949,7 +5952,7 @@ Og af den jeg laaner al min Glands.
   <title>Med en Tegning af E. Meyer</title>
   <firstline>af</firstline>
   <source pages="314" facsimile-pages="326-327"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -5984,7 +5987,7 @@ Har han forblommet maaffee villet sige:,,Det er Sankt Peder, du skuer her,,,Hver
   <title>En Stemning</title>
   <firstline>SENER En Stemning</firstline>
   <source pages="315-317" facsimile-pages="327-329"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -6046,7 +6049,7 @@ NEAlt Ende fager i Verden her,,,Saa gik det og med dette Veir,,,Lidt klarere i �
   <title>En Baadsmands Fortælling</title>
   <firstline>,,Den vaade Søvn. — Het for os ude</firstline>
   <source pages="317-322" facsimile-pages="329-335"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>,,Den vaade Søvn. — Het for os ude,,Stak Skroget af en sunken Skude,,J Bandet frem. Vi lægger bi,,,Strar Jollen ud, syv Mand deri,,,At see, om end der Nogen var,,,Som havde Døden holdt for Var. —,,Nu, da vi Skroget entret har,,,Nei, om Forladelse, det var,,Kun Agterdelen af en Kuf —
@@ -6152,7 +6155,7 @@ Derpaa saa blev han atter ved:,,Ru, vi begav os da afsted,,Fra det forknuste tom
   <title>Arion</title>
   <firstline>5 Da ved Gudernes Gunst det helleniske Folk</firstline>
   <source pages="323-330" facsimile-pages="335-343"/>
-  <quality>korrektur1,kilde, side</quality>
+  <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
 <poetry>
