@@ -15,7 +15,7 @@
   </pictures>
 </workhead>
 <workbody>
-<text id="heibergjl2026091301">
+<text id="heibergjl2026091301" ignore-tests="repeated-adjacent-word">
 <head>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <firstline>Au au, den slemme Steen!</firstline>
@@ -60,6 +60,8 @@ Kjøbenhavn, den 22de Marts 1817.
 <head>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <nofirstline/>
+  <title>Fibelbrettet</title>
+  <indextitle>Fibelbrettet</indextitle>
   <toctitle>Fibelbrettet</toctitle>
   <linktitle>Fibelbrettet</linktitle>
   <source pages="7-8"/>
