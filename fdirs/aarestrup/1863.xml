@@ -7,6 +7,9 @@
     <picture type="titlepage" src="1863-p1.jpg">Titelbladet til <i>Efterladte Digte</i> (1863) lyder ,,Efterladte Digte / af / Emil Aarestrup. // Udgivne / ved / Christian Winther og F. L. Liebenberg. // Kjøbenhavn. / Forlagt af Samfundet til den danske Literaturs Fremme. / Thieles Bogtrykkeri. / 1863.''</picture>
   </pictures>
   <source facsimile="11530803779C" facsimile-pages-num="370" facsimile-pages-offset="18">Emil Aarestrup: <i>Efterladte Digte</i>, Christian Winther og F.L. Liebenberg (red.), Samfundet til den danske Literaturs Fremme, Kbh., 1863.</source>
+  <proofreadings>
+    <proofreading model="gpt-6" datetime="2026-09-25T13:00:00+02:00"/>
+  </proofreadings>
 </workhead>
 <workbody>
 
@@ -4100,7 +4103,7 @@ Haabet leve! Danmarks Skaal!
     <written>1838-02-12</written>
   </dates>
   <notes>
-    <note>Ole Bang er den ansete læge Oluf Lundt Bang (kaldet Ole Bang; 1788-1877), også virksom som skribent. Farfader til <a person="bang">Herman Bang</a>.</note>
+    <note><a person="bango">Ole Bang</a> er den ansete læge Oluf Lundt Bang (kaldet Ole Bang; 1788-1877), også virksom som skribent. Farfader til <a person="bang">Herman Bang</a>.</note>
   </notes>
   <source pages="101-104"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -5209,6 +5212,9 @@ Vi stille mødtes - Mund paa Mund -
   <title>Varselskriften</title>
   <subtitle>(Til Magister D. G. Monrad.)</subtitle>
   <firstline>Nattens Gudinde henad Himlen svæved</firstline>
+  <notes>
+    <note>D. G. Monrad er teologen og politikeren <a person="monrad">Ditlev Gothardt Monrad</a>.</note>
+  </notes>
   <source pages="129-131"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>

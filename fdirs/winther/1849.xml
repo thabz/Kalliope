@@ -11,6 +11,9 @@
   </pictures>
   <source facsimile="11540801531E" facsimile-pages-num="238" facsimile-pages-offset="16">Christian Winther: <i>Lyriske Digte</i>, C. A. Reitzel, Kbh., 1849.</source>
   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <proofreadings>
+    <proofreading model="gpt-6" datetime="2026-09-25T13:00:00+02:00"/>
+  </proofreadings>
 </workhead>
 <workbody>
 
@@ -5240,6 +5243,9 @@ En evig Kjærligbeds Skjærsommer!
   <indextitle>Farvel til D. G. Monrad</indextitle>
   <linktitle>Farvel til D. G. Monrad</linktitle>
   <firstline>Saa Du vil drage fra vor gamle Stad</firstline>
+  <notes>
+    <note>D. G. Monrad er teologen og politikeren <a person="monrad">Ditlev Gothardt Monrad</a>.</note>
+  </notes>
   <pictures>
     <picture artwork="hansenc/monrad-1846" />
   </pictures>

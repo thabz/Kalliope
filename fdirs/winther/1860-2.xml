@@ -13,6 +13,9 @@
     <picture src="1860-2-p1.jpg">Titelbladet til <i>Samlede Digtninger, Andet Bind</i> (1860) lyder ,,Christian Winthers / Samlede Digtninger. // Andet Bind. / Blandede Digte. II. // Kjøbenhavn. / C. A. Reitzels Forlag. / 1860.''</picture>
   </pictures>
   <source facsimile="4135818394_color" facsimile-pages-num="582" facsimile-pages-offset="306">Christian Winther: <i>Samlede Digtninger</i>, bd. 1, C.A. Reitzels Forlag, Kbh., 1860.</source>
+  <proofreadings>
+    <proofreading model="gpt-6" datetime="2026-09-25T13:00:00+02:00"/>
+  </proofreadings>
 </workhead>
 <workbody>
 
@@ -1764,6 +1767,9 @@ En evig Kjærligbeds Skjærsommer!
   <indextitle>Farvel til D. G. Monrad</indextitle>
   <linktitle>Farvel til D. G. Monrad</linktitle>
   <firstline>Saa Du vil drage fra vor gamle Stad</firstline>
+  <notes>
+    <note>D. G. Monrad er teologen og politikeren <a person="monrad">Ditlev Gothardt Monrad</a>.</note>
+  </notes>
   <pictures>
     <picture artwork="hansenc/monrad-1846" />
   </pictures>
@@ -3125,7 +3131,7 @@ I Tide! - Nu det er forsilde! -
   <title>Fragmenter af Reinekes Memoirer</title>
   <firstline>En Dag, da Reinke laae og sov</firstline>
   <source pages="119-145"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4582,7 +4588,7 @@ De ane det, træder den ind ad Døren.
   <subtitle>Marionet-Comedie</subtitle>
   <firstline>God Aften, Godtfolk! - Med største Glæde</firstline>
   <source pages="164-206"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -6962,7 +6968,7 @@ Ved Hanen <w>Kykels</w> Grav.
   <subtitle>Efter Rollenhagen</subtitle>
   <firstline>Engang blev Krummetyv, en Prinds</firstline>
   <source pages="244-251"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -7167,7 +7173,7 @@ Saa lydt det gjennem Skoven klang.
   <subtitle>Efter Rollenhagen</subtitle>
   <firstline>Der var en Mand som var saa klog</firstline>
   <source pages="252-261"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -7434,7 +7440,7 @@ Saaledes, som det her nu findes.
     <note>Oversættelse af Goethes <xref type="translation" poem="goethe2018101101"/>.</note>
   </notes>
   <source pages="262-265"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -7538,7 +7544,7 @@ Trøstende - Haabet!
     <note>Gendigtning af Goethes <xref type="translation" poem="goethe2000010808"/>.</note>
   </notes>
   <source pages="266-268"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>

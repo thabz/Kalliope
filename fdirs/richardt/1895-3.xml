@@ -7,6 +7,9 @@
     <picture type="titlepage" src="1895-p3.jpg">Titelbladet til <i>Samlede Digte</i> (1895) lyder ,,Samlede Digte / af / Chr. Richardt. / Tredje Deel. / Kjøbenhavn. / Gyldendalske Boghandels Forlag (F. Hegel &amp; Søn) / Trykt hos J. Jørgensen &amp; Co (M. A. Hannover) / 1895.''</picture>
   </pictures>
   <source facsimile="1895-3" facsimile-pages-num="274" facsimile-pages-offset="8">Christian Richardt: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, Kbh., 1895, 3. del.</source>
+  <proofreadings>
+    <proofreading model="gpt-6" datetime="2026-09-25T13:00:00+02:00"/>
+  </proofreadings>
 </workhead>
 <workbody>
 
@@ -15,7 +18,7 @@
   <title>Papirer</title>
   <firstline>Der var engang i Fyrrerne en Skomagersvend</firstline>
   <source pages="1-5"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -140,7 +143,7 @@ vil knap forslaa til Charons Færgepenge.
   <title>Bjergluft</title>
   <firstline>Luften paa de svale Lider</firstline>
   <source pages="5-6"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -194,7 +197,7 @@ fra <i>Gethsemane</i> sig Stien vinder.
   <title>Dobbelt Strøm</title>
   <firstline>Hvor frem af via malas Svælg</firstline>
   <source pages="6-8"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -257,7 +260,7 @@ og Spejl for Sol og Himmel!
   <title>Et Enebo</title>
   <firstline>Paa et Fjeld i Rhonedalen</firstline>
   <source pages="8-10"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -332,7 +335,7 @@ Alterlyset atter tændes
   <title>Post-Pigen</title>
   <firstline>Dér har vi Diligencen! med Bjælder og Smæld</firstline>
   <source pages="10-12"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -400,7 +403,7 @@ smilende sit Øje hun bader.
   <title>Overvintring</title>
   <firstline>Hvor er det frydeligt at see</firstline>
   <source pages="12-14"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -457,7 +460,7 @@ de dyre, frelste Roser!
   <title>Gubben i Skoven</title>
   <firstline>Det gaar mod Jul - December-Snee har lagt</firstline>
   <source pages="14-15"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -525,7 +528,7 @@ det siger mig: det gaar mod Jul!
   <toctitle>Ved Blinde-Institutets Jubelfest</toctitle>
   <firstline>Bliv Lys! saa lød det store Skaber-Ord</firstline>
   <source pages="16-22"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -738,7 +741,7 @@ Ja tænder klare Stjerner i Natten saa lang.
   <title><num>I.</num>Bag Helgenskrin og Messepragt</title>
   <firstline>Bag Helgenskrin og Messepragt</firstline>
   <source pages="22-24"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -806,7 +809,7 @@ med Tak til Gud, vor Fader.
   <title><num>II.</num>Herre og Frelser, som kom i det Lave</title>
   <firstline>Herre og Frelser, som kom i det Lave</firstline>
   <source pages="24-25"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -845,7 +848,7 @@ Naadens og Livets og Himmerigs Dør!
   <title><num>III.</num>Svundet er fire Hundred Aar</title>
   <firstline>Svundet er fire Hundred Aar</firstline>
   <source pages="25-26"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -884,7 +887,7 @@ faldt vi til fremmede Guder!
   <title>Den hellige Skrift</title>
   <firstline>Jeg veed en Bog, som vil og kan</firstline>
   <source pages="26-28"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -955,7 +958,7 @@ til Hjertet bliver stille!
   <title>Johannes i Fængslet</title>
   <firstline>Hvor Asfalt-Søen ruller sit tunge</firstline>
   <source pages="28-40"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1344,7 +1347,7 @@ for Stormens Torden, - før Guds Vaar kan komme.
   <firstline>Det var sig Dronning Elisabeth</firstline>
   <source pages="40-53"/>
   <keywords>christian2</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1776,7 +1779,7 @@ og derfor maa hun <i>takke!</i>
   </dates>
   <source pages="54-60"/>
   <keywords>holberg</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -1991,7 +1994,7 @@ dets Sønner skjænker han sit Eje -
   <title>Fædrelandssang</title>
   <firstline>Vaarfriske Danmark</firstline>
   <source pages="60-61"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2035,7 +2038,7 @@ og læge
     <event>1888-04-08</event>
   </dates>
   <source pages="61-63"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2105,7 +2108,7 @@ de Stavnsbaand aldrig løses!
   <title>Danmark</title>
   <firstline>Ud for Verdens Herregaarde</firstline>
   <source pages="63-65"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2180,7 +2183,7 @@ Kjærlighedens Sejre!
   <title>Til Sønderjyderne</title>
   <firstline>Brødre mellem tvende Have</firstline>
   <source pages="65-67"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2227,7 +2230,7 @@ I er Danmarks Formur, I!
   <title>Til de Unge!</title>
   <firstline>Aand og Legem er et Spand</firstline>
   <source pages="67-68"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2276,7 +2279,7 @@ ved en Ungdom sund og karsk!
   <subtitle>(1887).</subtitle>
   <firstline>Klippers Vælde, Mur af Fjelde</firstline>
   <source pages="68-69"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2328,7 +2331,7 @@ Dig, vort Fædreland!
   <title>Prolog til en Forsvarsfest</title>
   <firstline>Krig skal I høre, og Rygter om Krig!</firstline>
   <source pages="70-73"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2451,7 +2454,7 @@ eller Suensons blaa Kammerater?
   <title>Foraar</title>
   <firstline>Lydt gjennem Skovenes Lønkamre gaar</firstline>
   <source pages="73-74"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2493,7 +2496,7 @@ Giftfrøet svulmer, mens Blomsterstøv sneer,
   <title>Jordbund og Væxt</title>
   <firstline>I Syreblomster hvide</firstline>
   <source pages="74-76"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2557,7 +2560,7 @@ hvor <i>Han</i> mig helst vil have.
   <title>Vaad Oktober</title>
   <firstline>En vaad Oktober</firstline>
   <source pages="76-77"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2609,7 +2612,7 @@ kun Juleroserne vi har i Vente.
   <title>Lys Oktober</title>
   <firstline>En lys Oktober</firstline>
   <source pages="78-79"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2653,7 +2656,7 @@ forbi med Leen, mejende sin Trave.
   <title>Prolog ved en Fest til Fordeel for Arbejdsløse</title>
   <firstline>Vi lever i et velsignet Land!</firstline>
   <source pages="79-82"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2767,7 +2770,7 @@ om Danmarks Ære og Danmarks Flag,
   <title>Vilde Heste</title>
   <firstline>Vi er som vilde Heste</firstline>
   <source pages="82-83"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2807,7 +2810,7 @@ at gribes af Guds Naade.
   <title>Skyer</title>
   <firstline>En Hær af Skyer</firstline>
   <source pages="83-84"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2844,7 +2847,7 @@ af et barmhjertigt, evigt Sole-Øje.
   <title>Hede-Gran og Jule-Gran</title>
   <firstline>Granen den grønne er Bebudelsens Træ</firstline>
   <source pages="84-85"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2881,7 +2884,7 @@ der lyser Ham ind i vore Hjerter!
   <title>Ved Juletid</title>
   <firstline>Paa gamle Malerier</firstline>
   <source pages="85-86"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2914,7 +2917,7 @@ og glem ej Jule-Kjærven!
   <title>Paaske</title>
   <firstline>Vor faldne Slægt</firstline>
   <source pages="86-88"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -2993,7 +2996,7 @@ de ringe dog kun ind
     <event>1886-03-05</event>
   </dates>
   <source pages="88-93"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -3136,7 +3139,7 @@ som Lov og Frihed ener!
     <event>1885-05-14</event>
   </dates>
   <source pages="93-94"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -3182,7 +3185,7 @@ følge Dig paa din Aftengang!
     <event>1887-02-22</event>
   </dates>
   <source pages="94-95"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -3229,7 +3232,7 @@ Toner fra Sjælenes Korsfarer-Strand!
     <event>1887-03-10</event>
   </dates>
   <source pages="95-96"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -3276,7 +3279,7 @@ straaler gjennem Døgnets Taagedunst.
   </dates>
   <source pages="96-104"/>
   <keywords>oersted</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -3564,7 +3567,7 @@ sanker os paa Lysets Kyst!
     <event>1888-07-19</event>
   </dates>
   <source pages="105-107"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -3652,7 +3655,7 @@ din Jord, dit Lys har fostret den!
   <subtitle>(1891).</subtitle>
   <firstline>Det var alt i Februar</firstline>
   <source pages="107-109"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -3709,7 +3712,7 @@ grøn og liflig Pintse faae!
   <indextitle>Frejas Hal</indextitle>
   <firstline>Her er saa frisk paa Skrænten</firstline>
   <source pages="109-111"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -3784,7 +3787,7 @@ med Vej fra Kyst til Kyst!
   <title>Vinterbillede</title>
   <firstline>Stormen er oppe, Sneen fyger</firstline>
   <source pages="111-113"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -3845,7 +3848,7 @@ og drøm saa om Hybenrosen!
   <subtitle>(Efter en virkelig Tildragelse)</subtitle>
   <firstline>Paa Isfangst damped en Hvalfanger-Flok</firstline>
   <source pages="113-116"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -3948,7 +3951,7 @@ som aldrig de Sjæle vil glemme.
   </dates>
   <source pages="116-120"/>
   <keywords>hauch</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4084,7 +4087,7 @@ som vil med <i>bortvendt</i> Aasyn Fjenden fælde.
   </notes>
   <source pages="120-122"/>
   <keywords>holberg,ewald</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4186,7 +4189,7 @@ og nok til ham at takke i hans Grav.
   </dates>
   <source pages="123-124"/>
   <keywords>ingemann</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4249,7 +4252,7 @@ faae Blomster og Tak fra Mange!
   </dates>
   <source pages="124-125"/>
   <keywords>hostrup,holberg,heibergjl,hertzh</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4300,7 +4303,7 @@ Du staa med Studenter i Pagt!
   <title>Frederiksborgs Slotsklokker sjunge</title>
   <firstline>Bjergets Løndom var vor Moder</firstline>
   <source pages="126-127"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4369,7 +4372,7 @@ Sang om en Fader! Frelser! Trøster!
   <title>Den ene og samme</title>
   <firstline>Den Vældige, hvis Almagts-Haand</firstline>
   <source pages="127-129"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4421,7 +4424,7 @@ thi han - han er den samme.
   <title>Maria ved Vuggen</title>
   <firstline>Jeg grunder og jeg grunder paa hvad Herren har beredt</firstline>
   <source pages="129-131"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4487,7 +4490,7 @@ med Dig jeg bar til Verden Fred for den arme Jord!
   <title>Ved Nytaar</title>
   <firstline>Som en Viser paa en Korsvej</firstline>
   <source pages="131-132"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4533,7 +4536,7 @@ Han er Vejen vi skal vandre,
     <event>1888-05-30</event>
   </dates>
   <source pages="132-134"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4609,7 +4612,7 @@ stige ydmygt og fuldt mod det Høje!
     <event>1887-05-01</event>
   </dates>
   <source pages="134-140"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4832,7 +4835,7 @@ og fejre Danmarks Sommer!
     <event>1864-06-20</event>
   </dates>
   <source pages="141-142"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4884,7 +4887,7 @@ for Dig vort Glas!
     <event>1886-12-11</event>
   </dates>
   <source pages="142-143"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4926,7 +4929,7 @@ hvor Evigheds-Roserne gløde!
   <indextitle>Theobald Otto</indextitle>
   <firstline>Som en Stuefugl i Bur</firstline>
   <source pages="143-144"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -4978,7 +4981,7 @@ Paaskesol Dig Herren tænde!
   <indextitle>Carl Høgh-Guldberg</indextitle>
   <firstline>Lad Tonerne følge hans Baare</firstline>
   <source pages="144-145"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -5011,7 +5014,7 @@ til din Naades livsalige Kyst!
   <subtitle>1848-1888.</subtitle>
   <firstline>Husker I Dagen, da Artiums-Horden</firstline>
   <source pages="145-148"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -5114,7 +5117,7 @@ dertil egne sig jo Tømmermænd!
   <subtitle>Paa Studenter-Toget 1875</subtitle>
   <firstline>Tak, I Venner, for Jer Fest</firstline>
   <source pages="148-149"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -5163,7 +5166,7 @@ Varmt Goddag! og varmt Farvel!
   <subtitle>En Pose Rim ved Studenter-Sangforeningens Jubilæum.</subtitle>
   <firstline>Venner, vi var lykkelige</firstline>
   <source pages="150-152"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -5264,7 +5267,7 @@ længe den bestaa!
     <event>1888-04-21</event>
   </dates>
   <source pages="153-154"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -5315,7 +5318,7 @@ spil op Musikanter, saa danser vi ud!
     <event>1888-06-04</event>
   </dates>
   <source pages="154-157"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -5426,7 +5429,7 @@ Retten er sat, Dem selv tilhører Dommen!
   <linktitle>Røde Kors</linktitle>
   <firstline>Grumme Krig! Dit Lyn, din Torden</firstline>
   <source pages="157-159"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -5514,7 +5517,7 @@ med Lægedom og Fred!
     <event>1889-11-04</event>
   </dates>
   <source pages="160-161"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -5561,7 +5564,7 @@ og alle gode Spirer fuldmodnes til Høst!
   <title>Hjemløse Børn</title>
   <firstline>Mindes Du, hvor Moders Mund</firstline>
   <source pages="161-163"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -5623,7 +5626,7 @@ gode Mennesker!
   <title>Sang for Danske i Amerika</title>
   <firstline>Kom I, som maatte gynge</firstline>
   <source pages="163-165"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -5707,7 +5710,7 @@ hvor Mindets Kilde springer
   </dates>
   <source pages="165-174"/>
   <keywords>oersted</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -6003,7 +6006,7 @@ og hans Øre Lovsang hører
   <subtitle>(Til Afsløringen af hans Buste.)</subtitle>
   <firstline>Fra Østerhavs-Øen med Klipperne graa</firstline>
   <source pages="174-175"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -6054,8 +6057,11 @@ den har i dit Billed sit Klædemon!
   <dates>
     <event>1887-04-04</event>
   </dates>
+  <notes>
+    <note>Ditlev Gothard Monrad er teologen og politikeren <a person="monrad">Ditlev Gothardt Monrad</a>.</note>
+  </notes>
   <source pages="175-176"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -6102,7 +6108,7 @@ Du i ham lod Kirken have!
     <event>1890-09-15</event>
   </dates>
   <source pages="176-178"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -6160,7 +6166,7 @@ og krans paany hans Minde!
   </dates>
   <source pages="178-179"/>
   <keywords>thorvaldsen,eckersberg</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -6216,7 +6222,7 @@ hvad <i>den</i> har skabt, den Blomst gaar aldrig ud.
   <linktitle>Ancker's Legat</linktitle>
   <firstline>Om Mandens Liv kun lidt jeg har at sige</firstline>
   <source pages="179-181"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -6285,7 +6291,7 @@ da blev jeg flux en rejsende Forfatter!
   <subtitle>En Dag i Hardanger</subtitle>
   <firstline>Forunderligt!</firstline>
   <source pages="181-189"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -6532,7 +6538,7 @@ maa dog lystre Menneske-Tanken.
   <title>Ved Kong Christian den Niende's Regjerings-Jubilæum</title>
   <firstline>Hvem var han, den Prins af Danmark</firstline>
   <source pages="189-192"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -6641,7 +6647,7 @@ hvil i <i>den</i>, til Sol gaar ned!
   <firstline>Da Sankt Elisabeth gav Smaafolk Brød</firstline>
   <!-- TODO: Find billede af relieffen. -->
   <source pages="192-193"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -6665,7 +6671,7 @@ og <i>de</i> har ingen Torne i sit Skjød!
   <subtitle>19. Novbr. 1888</subtitle>
   <firstline>Vær hilsed Danmarks Konge, Danmarks Dronning</firstline>
   <source pages="193-195"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -6745,7 +6751,7 @@ vor Ærefrygt, Hengivenhed, og Tak!
     <event>1890-08-05</event>
   </dates>
   <source pages="195-201"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -6941,7 +6947,7 @@ i Skolehjem paa Klippegrund.
   <title>September-Kveld</title>
   <firstline>Over tømte Markers nøgne Barhed</firstline>
   <source pages="201"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -6974,7 +6980,7 @@ hviske: bag vort Forhæng skal Du naae!
   <title>Et Barns Aftenbøn</title>
   <firstline>Nu lukker Solen sit Øje</firstline>
   <source pages="202"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -7016,7 +7022,7 @@ og sover sundt og trygt.
   <title>En Faders Fortælling</title>
   <firstline>Jeg glemmer aldrig, hvor den Dyst var haard</firstline>
   <source pages="203-204"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -7096,7 +7102,7 @@ fordi han har et evigt Faderhjerte!
     <event>1888-08-09</event>
   </dates>
   <source pages="205-206"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -7170,7 +7176,7 @@ jeg saae Dig under Høstens Krans,
   <linktitle>† Augusta Marie Hall</linktitle>
   <firstline>Nys blev Solen ringet ned</firstline>
   <source pages="207-208"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -7231,7 +7237,7 @@ til det store Paaskegry!
   <title>Bryllups-Psalme</title>
   <firstline>Hold Ja-Ord her i Herrens Hus</firstline>
   <source pages="208-209"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -7283,7 +7289,7 @@ med Luerne de milde.
   <firstline>Hist i Velsklands skjønne Dale</firstline>
   <source pages="210-211"/>
   <keywords>nyblom</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -7341,7 +7347,7 @@ vi har drukket deres Skaal!
   <subtitle>Maj 1873</subtitle>
   <firstline>Udi Roma, i sit Studie</firstline>
   <source pages="211-213"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -7409,7 +7415,7 @@ Højt leve Vitte, højt »Herr Vittemand«!
   <subtitle>Oktober 1887</subtitle>
   <firstline>Til Lykke Brudgom med Bruden din</firstline>
   <source pages="213-215"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -7465,7 +7471,7 @@ og kom igjen med Vaarens Fugle!
   <subtitle>December 1887</subtitle>
   <firstline>Til Lykke, Brud og Brudgom kjær</firstline>
   <source pages="215-216"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -7529,7 +7535,7 @@ i Skjær af Livets Morgenrøde!
     <event>1890-11-17</event>
   </dates>
   <source pages="217-219"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -7605,7 +7611,7 @@ al Kjærligheds Gud!
   <subtitle>Februar 1891.</subtitle>
   <firstline>Det gamle Aar var graanet</firstline>
   <source pages="219-222"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -7704,7 +7710,7 @@ vor store, herlige Mester!
   <title><num>I.</num>Dæggelammet</title>
   <firstline>Hun gaar saa troligt og vogter Flokken</firstline>
   <source pages="222-223"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -7751,7 +7757,7 @@ saa skal Du see, hvor Du har det godt!
   <title><num>II.</num>Forskrækkelse</title>
   <firstline>Hvad er der? Hvad græder Du for, min Skat?</firstline>
   <source pages="224-226"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -7826,7 +7832,7 @@ at faae det i Orden igjen i en Fart
   <title><num>III.</num>Fra Kysthospitalet</title>
   <firstline>Paa Børnenes Sygestue</firstline>
   <source pages="226-228"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -7916,7 +7922,7 @@ heelt op mod Vorherres Trone!
   <subtitle>(Mus med Unger, foran en tildækket Kurv.)</subtitle>
   <firstline>Kom, skynd Jer nu smaa Nussebeen</firstline>
   <source pages="229-230"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -7963,7 +7969,7 @@ Kun en artig Musefælde!
   <title><num>V.</num>I Bedring</title>
   <firstline>Saa, nu kom Inger op igjen</firstline>
   <source pages="230-231"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -8002,7 +8008,7 @@ som næsten slukkes vilde.
   <title><num>VI.</num>Vinde Garn!</title>
   <firstline>Hvis Peter ej som et artigt Barn</firstline>
   <source pages="231"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -8032,7 +8038,7 @@ den mindste Kurre paa Traaden seer.
   <title><num>VII.</num>Ved Stranden</title>
   <firstline>Her Børnenes Leg en høstlig Dag</firstline>
   <source pages="232"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -8073,7 +8079,7 @@ som frier fra de vilde Vande.
     <event>1888-06-04</event>
   </dates>
   <source pages="232-236"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -8195,7 +8201,7 @@ lov Ham, Harper og Strengespil!
   <title>Lov og Evangelium</title>
   <firstline>Hjertet ej sin Gud vil dyrke</firstline>
   <source pages="236-237"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -8234,7 +8240,7 @@ som Guds Kjærlighed gav Liv.
   <title>Perler</title>
   <firstline>En Musling-Perle klar og rund</firstline>
   <source pages="237-238"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -8286,7 +8292,7 @@ thi uden Dig var Alting Tab!
   <title>Korsets Tegn</title>
   <firstline>Det hellige Kors, den Bjælke svar</firstline>
   <source pages="238-239"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -8326,7 +8332,7 @@ mod Verdens vilde Vande.
   <title>Jakobsstigen</title>
   <firstline>Jeg veed en gammel Jakobsstige</firstline>
   <source pages="239-241"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -8387,7 +8393,7 @@ og ender med en Takkesang.
   <title>Niniveh</title>
   <firstline>I Flodlandet, Evfrat og Tigris' Land</firstline>
   <source pages="241-248"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -8603,7 +8609,7 @@ men et Niniveh, der bygges til en Kirke.
   </dates>
   <source pages="248-252"/>
   <keywords>heibergjl</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -8763,7 +8769,7 @@ og Længslerne dybest inde -
     <event>1892-05-28</event>
   </dates>
   <source pages="253-259"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -8984,7 +8990,7 @@ med Lys fra Bethlehems Stjerne!
   <subtitle>(Til Marie, Novbr. 1888.)</subtitle>
   <firstline>Tak for Skjærmen med de ranke Siv</firstline>
   <source pages="260"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -9018,7 +9024,7 @@ Tidt var Skjærmen Du, og jeg kun Sivet
   <subtitle>(Med en Psalmebog. Octbr. 1889.)</subtitle>
   <firstline>Modtag en Psalmebog, en ny</firstline>
   <source pages="260-261"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -9066,7 +9072,7 @@ det gaar dog mod Foryngelsen!
   <title>Bethlehems-Stjernen</title>
   <firstline>Fra Kaldæa i det Fjerne</firstline>
   <source pages="262-263"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -9133,7 +9139,7 @@ vorde Barn og Gubbe <i>vise!</i>
   <title><num>I.</num>Tunge Tider</title>
   <firstline>Lange Dage, lange Nætter</firstline>
   <source pages="263-264"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -9163,7 +9169,7 @@ som en Høstkvelds klamme Spind.
   <title><num>II.</num>Lyse Drømme</title>
   <firstline>Glimt af Sol og Glimt af Haaben</firstline>
   <source pages="264"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -9187,7 +9193,7 @@ skuf mig ej paany!
   <title><num>III.</num>Uden Haab</title>
   <firstline>Ak, den Lysning var kun kort</firstline>
   <source pages="265"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
@@ -9213,7 +9219,7 @@ tag med Verden brat Farvel!
   <title><num>IV.</num>Tak og Jubel</title>
   <firstline>Du som bøjed mig i Støvet</firstline>
   <source pages="265-266"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
 <poetry>
