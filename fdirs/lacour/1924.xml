@@ -11,6 +11,9 @@
     <picture src="1924-p1.jpg">Titelbladet til <i>Arkadisk Morgen</i> (1924) lyder ,,Poul Arvid la Cour / Arkadisk Morgen / Digte // Dagens Forlag - København 1924''.</picture>
   </pictures>
   <source facsimile="115308073946-color.pdf" facsimile-pages-num="91" facsimile-pages-offset="7">Poul Arvid la Cour: <i>Arkadisk Morgen</i>, Dagens Forlag, Kbh., 1924</source>
+  <proofreadings>
+    <proofreading model="gpt-6" datetime="2026-09-25T13:00:00+02:00"/>
+  </proofreadings>
 </workhead>
 <workbody>
 
@@ -19,7 +22,7 @@
   <title>Indgang</title>
   <firstline>Skinnende blaat gaar Havet</firstline>
   <source pages="7"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -44,7 +47,7 @@ toner tilsammen hær.
   <firstline>Endnu staar Taagens Tæpppe paa Væven af Skovens Stammer</firstline>
   <source pages="8-10"/>
   <keywords>jensenjv</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -112,7 +115,7 @@ da Afmagten knuste min Nakke under sin haarde Hæl.
   <title>Sædemand</title>
   <firstline>Som Sodfald Skyggen maler sig mulmsort af mod Mark</firstline>
   <source pages="12-13"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -149,7 +152,7 @@ mod Morgenrummets straalende Oase.
   <title>Solstorm</title>
   <firstline>For Vindens Hænder svajer de gamle Træer og Huse</firstline>
   <source pages="14"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -175,7 +178,7 @@ og lader Altets Floder slaa Kreds omkring mit Hjærte.
   <title>Drømmens Rude</title>
   <firstline>Dybt fortøjet i min Rude lever Skib og Karavel</firstline>
   <source pages="15"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -202,7 +205,7 @@ dersom høje Stjærneskibe Drømmens gyldne Rude fylder.
   <title>Farvernes Eventyr</title>
   <firstline>Saa flygtigt og fint er det Eventyr, Farven fortæller</firstline>
   <source pages="16-19"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -292,7 +295,7 @@ saa streng Menuet træder Farven paa Vej og paa Tilje,
   <title>Maleren</title>
   <firstline>Trænger du et vældigt Lærred</firstline>
   <source pages="20-21"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -334,7 +337,7 @@ døb os i din Latters Floder.
   <title>Fyrrene</title>
   <firstline>Gnistrende begynder Solen sin Dans</firstline>
   <source pages="22"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -361,7 +364,7 @@ fra Tider før Menneskets første Dag.
   <title>Det gyldne Træ</title>
   <firstline>Høduft driver af Engen, hvor Stakkenes Kupler staar</firstline>
   <source pages="23"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -388,7 +391,7 @@ du, som hviler ved Træets Rod, tag dær mod din Sommerlod.
   <title>Dansk Arkadien</title>
   <firstline>Som Brudeslør fra en ung Pigenakke</firstline>
   <source pages="24-25"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -446,7 +449,7 @@ gør mig til en Drabant af Sol og Sommer.
     <picture src="lacour2026012511-p1.jpg" museum="smk" invnr="KMSr85">Henri Matisse: <i>Ung pige, der betragter havet</i>, 1923, olie på lærred, 60,5×73 cm</picture><!-- https://open.smk.dk/artwork/image/KMSr85 -->
   </pictures>
     
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -484,7 +487,7 @@ straaler imod mig klædt i Form og Farve.
   <title>Hestene</title>
   <firstline>Intet er mere herligt end Heste og Kvinder og Elskov</firstline>
   <source pages="28-30"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -529,7 +532,7 @@ og Prisen Hestinde er din i denne trefoldige Lykke!
   <title>Den syngende Pige</title>
   <firstline>Herlig er Sang og Sangens Lykke</firstline>
   <source pages="31"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -549,7 +552,7 @@ ung Kvinde staar du der igen!
   <title>Den dansende Pige</title>
   <firstline>I Rummet klinger Solens klare Latter</firstline>
   <source pages="32-33"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -597,7 +600,7 @@ og Livet sprudler af dit Væsens Kilde.
   <title>Tre Kvinder</title>
   <firstline>Der kom tre skønne Kvinder til mit Leje</firstline>
   <source pages="34-37"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -690,7 +693,7 @@ og Hav og Floder, Skov og Moderleje.
   <title>Under Elskovsstjærnen</title>
   <firstline>I denne Nat staar fæstet paa Himlen Elskovsstjærnen</firstline>
   <source pages="38-39"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -728,7 +731,7 @@ som Liv engang skal springe af dit eget Elskovsliv.
   <firstline>Strakt skøn og nøgen ud paa Brinkens store, grønne Hynde</firstline>
   <source pages="40-41"/>
   <keywords>sonnet</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -758,7 +761,7 @@ og lader i mit Hjærte en større Sol oprinde.
   <title>De store Træer</title>
   <firstline>De store Træer bruser</firstline>
   <source pages="42-44"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -830,7 +833,7 @@ forsvinder og blir borte.
   <title>I Træets Ild</title>
   <firstline>Jeg hvilede mig mod en Stamme</firstline>
   <source pages="45-47"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -887,7 +890,7 @@ og Eenhedens Dag var forbi.
   <title>Morgen</title>
   <firstline>De blaagraa Skyer bølger som et Bjærglandskab i Øst</firstline>
   <source pages="48-49"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -919,7 +922,7 @@ forvandler vore Hjærter hvert Smærtesuk til Fryd.
   <title>Akssamlere</title>
   <firstline>I brandblaa Morgentimer, naar Lyset slaar mod Jord</firstline>
   <source pages="50-52"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -991,7 +994,7 @@ af Fryd og Kamp og Kiv og Korn og Kærner.
   <title>Besværgelse</title>
   <firstline>Nu gaar Spøgelsemaanen frem</firstline>
   <source pages="53-54"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1038,7 +1041,7 @@ sammen knæler vi bange ved Gryet,
   <title>Drømmen</title>
   <firstline>I Sjælens Nat oprejser sig en Brand</firstline>
   <source pages="55-56"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1080,7 +1083,7 @@ for den, en Gud til Vandringsmand har kaldt.
   <title>Angsten for Pan</title>
   <firstline>Hær har Havet grusomt raset</firstline>
   <source pages="57-61"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1200,7 +1203,7 @@ træder Angsten dine Hæle.
   <title>Maanen</title>
   <firstline>Et Aandesyn der gaar bag tavse, mørke Dyner</firstline>
   <source pages="62-63"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1251,7 +1254,7 @@ mens gennem Sølverskæret jeg gaar mod nye Dage.
     <note>Oversættelse af Chamissos <xref type="translation" poem="chamisso2026012301"/></note>
   </notes>
   <source pages="64-66"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1321,7 +1324,7 @@ ingen Dag og igen Stjærne.
   <title>Tanken</title>
   <firstline>Han gik mod Morgenrødens lyse Buer</firstline>
   <source pages="67-69"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1393,7 +1396,7 @@ er Tankens uudslukkelige Kærte!
   <title>Vintersang</title>
   <firstline>Jeg skimter som isnende Blink i min snemørke Rude</firstline>
   <source pages="70-71"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1440,7 +1443,7 @@ Styrken og Sejren og Glæden har bygget Bo i mit Bryst.
   <title>Nattevise</title>
   <firstline>I Dybderne danser Maanen</firstline>
   <source pages="72-73"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1487,7 +1490,7 @@ og føje i Timernes Krans.
   <title>Persefone</title>
   <firstline>Lavt traver Solens vinterslukte Skimmel</firstline>
   <source pages="74-75"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1529,7 +1532,7 @@ springer trods Frosten sprudlende Kastaler.
   <title>Anslag</title>
   <firstline>Nat mørk og grøn som Gift</firstline>
   <source pages="76-77"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1569,7 +1572,7 @@ og slaa dit Bryst med Lyst.
   <title>Samtale</title>
   <firstline>Nøgle Grenes Susen gav mig Ord og Røst</firstline>
   <source pages="78-79"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
