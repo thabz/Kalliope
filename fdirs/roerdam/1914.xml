@@ -333,7 +333,7 @@ mens jeg lytter på.
   <title>1901. Dansk Tunge</title>
 </head>
 <content>
-<text id="roerdam2026091309">
+<text id="roerdam2026091309" ignore-tests="repeated-adjacent-word">
 <head>
   <title>To Canzoner</title>
   <firstline>Ak, husker du, du lille</firstline>
@@ -2158,7 +2158,7 @@ din Gråd falder tungt på min Hu.
 </body>
 </text>
 
-<text id="roerdam2026091340">
+<text id="roerdam2026091340" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Ja, jeg som ifjor —</title>
   <firstline>Ja, jeg som ifjor under Løvspring</firstline>
@@ -2366,7 +2366,7 @@ dem, ak, så hjertens nødigt.
 </body>
 </text>
 
-<text id="roerdam2026091343">
+<text id="roerdam2026091343" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Rullevisen</title>
   <firstline>Hiv til, min Pige! Sådan. Så skulde . . .</firstline>
