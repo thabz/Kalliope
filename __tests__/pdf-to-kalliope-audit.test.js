@@ -186,6 +186,37 @@ describe('whole-work structure wrapper', () => {
     ]));
   });
 
+  it('treats a comma before a page-break stanza boundary as strong continuation evidence', () => {
+    const xml = workXml.replace(
+      /<body><poetry>[\s\S]*?<\/poetry><\/body>/,
+      '<body><poetry>Første linje,\n\n<pb n="11" facs="011.jpg"/>Anden linje\nTredje linje</poetry></body>',
+    );
+    const [poem] = analyzeWholeWork(xml).poems;
+
+    expect(poem.candidates).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        source: 'wrapper',
+        type: 'stanza_boundary_at_page_break',
+        after_verse_line: 1,
+        preceding_text: 'Første linje,',
+        confidence: 'strong',
+      }),
+    ]));
+  });
+
+  it('does not override an explicit section marker at a comma page break', () => {
+    const xml = workXml.replace(
+      /<body><poetry>[\s\S]*?<\/poetry><\/body>/,
+      '<body><poetry>Første linje,\n<pb n="11" facs="011.jpg"/><nonum><center>2.</center></nonum>\nAnden linje\nTredje linje</poetry></body>',
+    );
+    const [poem] = analyzeWholeWork(xml).poems;
+
+    expect(poem.page_break_nonum_starts).toEqual([2]);
+    expect(poem.candidates).not.toEqual(expect.arrayContaining([
+      expect.objectContaining({ type: 'stanza_boundary_at_page_break' }),
+    ]));
+  });
+
   it('runs prepared stanza and indentation geometry for the whole work', () => {
     const xml = workXml.replace(
       /<body><poetry>[\s\S]*?<\/poetry><\/body>/,

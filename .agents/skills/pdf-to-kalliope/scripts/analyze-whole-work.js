@@ -22,6 +22,12 @@ const stanzaBoundaries = stanzaLengths => {
   });
 };
 
+const verseLineTexts = body => body
+  .replace(/\r\n?/gu, '\n')
+  .split('\n')
+  .filter(isVerseLine)
+  .map(plainText);
+
 const plainText = line =>
   line
     .replace(/<[^>]+>/gu, '')
@@ -39,24 +45,38 @@ const isVerseLine = line =>
 const bodyAndPageBreaks = serializedBody => {
   let verseLine = 0;
   let pendingPageBreak = false;
+  let pendingPageBreakHasNonum = false;
   const pageBreaks = [];
+  const pageBreakNonumStarts = [];
   const body = serializedBody
     .replace(/\r\n?/gu, '\n')
     .split('\n')
     .map(line => {
-      if (/<pb\b[^>]*\/>/u.test(line)) pendingPageBreak = true;
+      if (/<pb\b[^>]*\/>/u.test(line)) {
+        pendingPageBreak = true;
+        pendingPageBreakHasNonum = false;
+      }
+      if (pendingPageBreak && /<nonum(?:\s|>)/u.test(line)) {
+        pendingPageBreakHasNonum = true;
+      }
       const withoutPageBreak = line.replace(/<pb\b[^>]*\/>/gu, '');
       if (isVerseLine(withoutPageBreak)) {
         verseLine += 1;
         if (pendingPageBreak) {
           pageBreaks.push(verseLine);
+          if (pendingPageBreakHasNonum) pageBreakNonumStarts.push(verseLine);
           pendingPageBreak = false;
+          pendingPageBreakHasNonum = false;
         }
       }
       return withoutPageBreak;
     })
     .join('\n');
-  return { body, page_breaks: pageBreaks };
+  return {
+    body,
+    page_breaks: pageBreaks,
+    page_break_nonum_starts: pageBreakNonumStarts,
+  };
 };
 
 const poetryBlocks = xml => {
@@ -124,7 +144,11 @@ const analyzeWholeWork = (xml, options = {}) => {
     const pageBreakStanzaBoundaries = stanzaBoundaries(
       stanza.observed_stanza_lengths
     )
-      .filter(boundary => poem.page_breaks.includes(boundary + 1));
+      .filter(boundary =>
+        poem.page_breaks.includes(boundary + 1) &&
+        !poem.page_break_nonum_starts.includes(boundary + 1)
+      );
+    const verseTexts = verseLineTexts(poem.body);
     const preparedGeometry = geometryByBlock.get(
       `${poem.text_id}:${poem.block_index}`
     ) ?? null;
@@ -158,6 +182,7 @@ const analyzeWholeWork = (xml, options = {}) => {
       pages: poem.pages,
       block_index: poem.block_index,
       page_breaks: poem.page_breaks,
+      page_break_nonum_starts: poem.page_break_nonum_starts,
       stanza,
       indentation,
       ...(geometry == null ? {} : { geometry }),
@@ -179,17 +204,23 @@ const analyzeWholeWork = (xml, options = {}) => {
           action:
             'Kontrollér først strofegrænserne, kør analysen igen, og registrér derefter den facsimilebaserede vurdering.',
         }] : []),
-        ...pageBreakStanzaBoundaries.map(boundary => ({
-          source: 'wrapper',
-          type: 'stanza_boundary_at_page_break',
-          after_verse_line: boundary,
-          page_start_verse_line: boundary + 1,
-          confidence: 'possible',
-          reason:
-            'XML har en strofegrænse umiddelbart før et fysisk sideskift; sideskiftet må ikke i sig selv skabe en strofegrænse.',
-          action:
-            'Kontrollér overgangen direkte mod begge facsimilesider og fjern blanklinjen, hvis strofen fortsætter.',
-        })),
+        ...pageBreakStanzaBoundaries.map(boundary => {
+          const precedingText = verseTexts[boundary - 1] ?? '';
+          const endsWithComma = /,\s*$/u.test(precedingText);
+          return {
+            source: 'wrapper',
+            type: 'stanza_boundary_at_page_break',
+            after_verse_line: boundary,
+            page_start_verse_line: boundary + 1,
+            preceding_text: precedingText,
+            confidence: endsWithComma ? 'strong' : 'possible',
+            reason: endsWithComma
+              ? 'XML har en strofegrænse umiddelbart før et fysisk sideskift, men den foregående verslinje ender med komma og peger stærkt på syntaktisk fortsættelse.'
+              : 'XML har en strofegrænse umiddelbart før et fysisk sideskift; sideskiftet må ikke i sig selv skabe en strofegrænse.',
+            action:
+              'Kontrollér overgangen direkte mod begge facsimilesider og fjern blanklinjen, hvis strofen fortsætter.',
+          };
+        }),
         ...(preparation == null ? [{
           source: 'geometry_preparation',
           type: 'facsimile_geometry_not_run',
