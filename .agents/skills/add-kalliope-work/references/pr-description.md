@@ -8,6 +8,11 @@ værkspecifikke opgaver, men bevar kategorierne `Agent` og `Bruger` præcis.
 Markér kun `[x]`, når opgaven faktisk er udført og kontrolleret. Manuelle
 brugeropgaver forbliver `[ ]`, indtil brugeren selv har udført dem.
 
+Under `Bruger` står kun konkrete, undersøgte redaktionelle beslutninger med
+placering, muligheder, belæg og anbefaling. Er der ingen, behold sætningen
+nedenfor. Udfyldte rutinekontroller står under `Codex`; manglende korrektur
+eller tekniske blokeringer står som uafsluttet agentarbejde under `Udestående`.
+
 ```markdown
 ### Agent
 
@@ -22,6 +27,9 @@ brugeropgaver forbliver `[ ]`, indtil brugeren selv har udført dem.
 - [ ] Kontrollér at alle interne referencer og id'er er gyldige
 - [ ] Tilføj eller opdater metadata for værket
 - [ ] Kontrollér titel, forfatter, udgivelsesår og øvrige bibliografiske oplysninger mod kilden
+- [ ] Kontrollér titelbladet visuelt mod kilden og gennemfør relevant billed-QA
+- [ ] Kontrollér samlingsstruktur, tekststruktur og typografi mod kilden
+- [ ] Gennemfør den krævede facsimilekorrektur; ved PDF-import begge fulde gennemgange med uafhængig anden gennemgang og genkontrol af rettelser
 - [ ] Tilføj kildehenvisning til den anvendte digitalisering/faksimile
 - [ ] Kontrollér eksisterende Kalliope-konventioner i sammenlignelige værker
 - [ ] Kør relevante tests eller valideringsværktøjer
@@ -30,11 +38,7 @@ brugeropgaver forbliver `[ ]`, indtil brugeren selv har udført dem.
 
 ### Bruger
 
-- [ ] Kontrollér titelblad og bibliografiske oplysninger visuelt
-- [ ] Vurdér tvivlsomme tekststeder, som ikke sikkert kan afgøres automatisk
-- [ ] Vurdér eventuelle redaktionelle valg
-- [ ] Kontrollér særlige digt-, drama- eller samlingsstrukturer
-- [ ] Foretag afsluttende stikprøvekontrol mod faksimilen
+Ingen udestående brugerbeslutninger.
 
 ### Resumé
 
@@ -78,6 +82,12 @@ Angiv kun kontroller, der faktisk er udført, med deres resultat. Eksempel:
 - visuel strukturkontrol: alle digte og relevante facsimilesider kontrolleret;
   alle kandidater fra helværksanalysen afklaret
 - kendte warnings: ingen
+
+Ved PDF-import angives sideomfang for hver korrekturgennemgang, reviewer,
+genkontrol af rettelser og checkpointets resultat. Stikprøver erstatter ikke
+de krævede fulde gennemgange. Angiv CI-status særskilt som bestået, fejlet,
+afventer eller ukendt.
+
 ```
 
 `Udestående` skal altid findes, også når der ikke er noget udestående.
