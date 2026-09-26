@@ -788,6 +788,15 @@ Pay particular attention to:
 - ornamental separators
 - dropped or duplicated OCR lines
 
+Transcribe an ornamental separator only when it separates content inside a
+poem. Never transcribe an ornament printed after the poem's final verse; in
+particular, do not add `---` or other ornament markup immediately before
+`</poetry>`.
+
+Always encode a printed row of separated asterisks as the centered non-verse
+line `<nonum><center>* * *</center></nonum>`, with a blank line on both sides.
+Never preserve OCR-dependent spacing between the asterisks.
+
 ### Use stanza structure as a diagnostic
 
 Determine the dominant stanza pattern when the poem has one.
@@ -1476,8 +1485,16 @@ Follow `AGENTS.md`.
 
 READY requires complete independent inventory coverage, no `open` or `fixed`
 findings, completed visual structure records for every poetry block, a
-disposition for every candidate in the unfiltered whole-work report, all four
-candidate-review categories and recorded passing tests. Put
+disposition for every candidate in the unfiltered whole-work report, all five
+candidate-review categories and recorded passing tests. The typography review
+must inspect every relevant facsimile page for italics, letterspacing and other
+source emphasis, and compare each occurrence with `<i>`, `<w>` or the other
+appropriate XML markup. A zero-candidate typography review is valid only after
+that page-by-page visual pass; plain OCR is not evidence that no emphasis is
+present. Every page-inventory row must therefore have
+`"typography_status":"reviewed"` and a non-empty `typography_disposition`
+that records the observed and encoded emphasis, or explicitly records that the
+page contains none. Put
 a small JSON file in scratch space with `producer`, `tests`,
 `candidate_reviews` and `reviewer_ranges`, then create the frozen checkpoint
 outside the worktree.
@@ -1493,7 +1510,8 @@ inventory row's reviewer. For example:
     {"kind": "ocr", "reviewer": "reviewer-model-session", "status": "reviewed", "candidate_count": 12, "reviewed_count": 12},
     {"kind": "page", "reviewer": "reviewer-model-session", "status": "reviewed", "candidate_count": 4, "reviewed_count": 4},
     {"kind": "stanza", "reviewer": "reviewer-model-session", "status": "reviewed", "candidate_count": 31, "reviewed_count": 31},
-    {"kind": "indentation", "reviewer": "reviewer-model-session", "status": "reviewed", "candidate_count": 49, "reviewed_count": 49}
+    {"kind": "indentation", "reviewer": "reviewer-model-session", "status": "reviewed", "candidate_count": 49, "reviewed_count": 49},
+    {"kind": "typography", "reviewer": "reviewer-model-session", "status": "reviewed", "candidate_count": 18, "reviewed_count": 18}
   ],
   "reviewer_ranges": [
     {"reviewer": "reviewer-model-session", "facsimile_from": "000.jpg", "facsimile_to": "099.jpg"}
@@ -1536,6 +1554,8 @@ Report concisely:
   visually checked against all of its facsimile pages
 - total stanza and indentation candidates from the unfiltered whole-work
   report and confirmation that all were dispositioned
+- total typography findings, including italics and letterspacing, and
+  confirmation that every relevant page was visually checked
 - title-page image created
 - title-page geometry and crop QA status
 - whether a graphic front cover was created
@@ -1615,6 +1635,9 @@ The task is complete only when all applicable items are true:
       and every visible printed stanza boundary is represented in XML.
 - [ ] Every verse line's horizontal position was visually checked; indented
       lines were not converted to stanza breaks or flattened by OCR.
+- [ ] Every relevant page was visually checked for italic, letterspaced and
+      otherwise emphasized text, and each occurrence is represented with
+      `<i>`, `<w>` or the appropriate XML markup.
 - [ ] The final whole-work structure report was reviewed without filtering to
       selected poems, and every stanza, indentation and wrapper candidate was
       dispositioned against the facsimile.
@@ -1680,8 +1703,8 @@ The task is complete only when all applicable items are true:
       `TODO:`.
 - [ ] The complete XML validates.
 - [ ] OCR candidate checks were reviewed.
-- [ ] OCR, page, stanza and indentation candidate totals equal their reviewed
-      totals, and the reviewer differs from the producer.
+- [ ] OCR, page, stanza, indentation and typography candidate totals equal
+      their reviewed totals, and the reviewer differs from the producer.
 - [ ] The semantic page audit and side-aware historical OCR profile were run on
       the final XML.
 - [ ] The whole-work wrapper analyzed every poetry block and all candidates

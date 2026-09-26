@@ -9,7 +9,7 @@ import { validateFindings } from './findings-register.js';
 const git = (root, args) => execFileSync('git', args, { cwd: root, encoding: 'utf8' });
 
 const facsimileNumber = value => Number(/^(\d+)\.jpg$/i.exec(value ?? '')?.[1] ?? NaN);
-const requiredCandidateKinds = ['ocr', 'page', 'stanza', 'indentation'];
+const requiredCandidateKinds = ['ocr', 'page', 'stanza', 'indentation', 'typography'];
 
 const validateReviewerRanges = (ranges, inventory, producer = null) => {
   const errors = [];
@@ -115,6 +115,8 @@ const createCheckpoint = ({
     ...uncovered.map(page => `ikke gennemgået side: ${page.text_id}:${page.printed_page}`),
     ...inventory.filter(page => page.reviewer === producer).map(page => `side er gennemgået af producenten: ${page.text_id}:${page.printed_page}`),
     ...inventory.filter(page => page.disposition == null || page.disposition === '').map(page => `side mangler disposition: ${page.text_id}:${page.printed_page}`),
+    ...inventory.filter(page => page.typography_status !== 'reviewed').map(page => `sidens typografi er ikke gennemgået: ${page.text_id}:${page.printed_page}`),
+    ...inventory.filter(page => page.typography_disposition == null || page.typography_disposition === '').map(page => `side mangler typografidisposition: ${page.text_id}:${page.printed_page}`),
     ...(tests.length > 0 ? [] : ['ingen tests er registreret']),
     ...failedTests.map(test => `test bestod ikke: ${test.command}`),
   ];

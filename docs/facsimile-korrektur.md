@@ -132,6 +132,14 @@ Kontrollér maskinelt:
 Linjetælling finder strukturfejl, som en almindelig OCR-sammenligning ikke ser.
 En korrekt tekst kan stadig være opdelt forkert.
 
+Strofeanalysen afprøver desuden plausible ensartede strofelængder mod hele
+digtet. Hver hypotese vurderes efter, om alle verslinjer dækkes uden rest, hvor
+mange eksisterende grænser der bevares, hvor mange grænser der skal fjernes
+eller tilføjes, og hvor mange intakte strofer der allerede støtter mønstret.
+Resultatets `uniform_pattern_hypotheses` viser de bedst rangerede forslag og de
+konkrete grænseændringer. En global hypotese bruges kun, når den har tydelig
+afstand til næstbedste forslag; kandidaterne skal stadig kontrolleres visuelt.
+
 Ved sideskift skal optællingen fortsætte på tværs af siden. Afgør ud fra
 facsimilet, strofeformen og den løbende tekst, om den første linje på den nye
 side fortsætter en strofe eller begynder en ny. En ny fysisk side er ikke i sig
@@ -210,9 +218,20 @@ Strofeoverskrifter og andre trykte linjer, som ikke er vers, skal markeres efter
 <nonum><center>XLII.</center></nonum>
 ```
 
-En trykt skillelinje kan tilsvarende være en centreret `<nonum>`-linje eller et
-eksisterende, passende skilleelement. Følg mønstret i repositoryet; lad ikke en
-overskrift eller dekoration stå som en almindelig verslinje.
+En trykt, centreret vandret skillelinje skrives som `---` på en selvstændig
+linje med en tom linje både før og efter. `build-static` omsætter denne notation
+til det korrekte skilleelement. Denne notation gælder kun en intern skillelinje:
+Et ornament efter digtets sidste vers transskriberes aldrig og må derfor ikke
+stå som `---` eller som anden markup umiddelbart før `</poetry>`. Andre trykte
+dekorationer kan være en centreret
+`<nonum>`-linje eller et eksisterende, passende skilleelement. Følg mønstret i
+repositoryet; lad ikke en overskrift eller dekoration stå som en almindelig
+verslinje.
+
+Et ornament af adskilte stjerner skal altid normaliseres til den centrerede
+ikke-verslinje `<nonum><center>* * *</center></nonum>`, uanset hvor mange
+mellemrum OCR'en har indsat mellem stjernerne. Der skal være en tom linje både
+før og efter markøren.
 
 ## 4. Brug flere OCR-pass som kontrol
 
@@ -296,6 +315,16 @@ Kontrollér særskilt:
 Tegnfejl er ofte sværere for OCR end ordfejl. Et pass kan gengive alle bogstaver
 rigtigt og stadig miste en tankestreg, vende et anførselstegn eller forveksle
 spatiering med almindelige mellemrum.
+
+Typografikontrollen skal registreres som sin egen kandidatkontrol i det frosne
+review-checkpoint. Den udføres side for side direkte på facsimilet: kursiv
+afmærkes med `<i>`, og spatieret tekst med `<w>`. OCR uden typografiske fund er
+ikke i sig selv et bestået resultat, fordi almindelig OCR typisk flader begge
+dele ud. Checkpointet må derfor ikke oprettes uden en afsluttet
+`typography`-kontrol, heller ikke når kontrollen ender med nul fund.
+Hver side i JSONL-inventaret skal desuden have
+`"typography_status":"reviewed"` og en konkret `typography_disposition`, så én
+samlet afkrydsning ikke kan stå i stedet for sidevis kontrol.
 
 Zoom ind på tvivlsomme steder. Afgør dem ikke ud fra moderne sprogbrug. En
 mærkelig, men tydeligt trykt læsning skal bevares.
