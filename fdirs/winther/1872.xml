@@ -1163,8 +1163,8 @@ Til Trøst og Glæde for os Andre!
 
 <text id="winther2018082614">
 <head>
-  <title><num>13.</num>December 1866.</title>
-  <indextitle>December 1866.</indextitle>
+  <title><num>13.</num>December 1866</title>
+  <indextitle>December 1866</indextitle>
   <linktitle>December 1866.</linktitle>
   <firstline>I Blindhed famled jeg paa hine Strænge</firstline>
   <source pages="48-50"/>
@@ -2553,7 +2553,7 @@ Aarets rige, varme Hjerte!
 </body>
 </text>
 
-<text id="winther2018082640">
+<text id="winther2018082640" ignore-tests="title-trailing-punctuation">
 <head>
   <title>Af Reinekes Memoirer</title>
   <subtitle>Tredie Fragment</subtitle>
@@ -4190,7 +4190,7 @@ Det skal han faae, - <i>parole d'honneur!</i>''
 </body>
 </text>
 
-<text id="winther2018082652">
+<text id="winther2018082652" ignore-tests="title-trailing-punctuation">
 <head>
   <title>C. A. Lang &amp; Co.</title>
   <firstline>Den rige Sommersol bestraalte</firstline>

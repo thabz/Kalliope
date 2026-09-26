@@ -165,6 +165,29 @@ const findCommonPoetryIndentationFindings = ({
 };
 
 const guillemetAtStart = /^[«»‹›]/u;
+const titleTrailingPunctuationRule = 'title-trailing-punctuation';
+const titleFieldsWithoutTrailingPunctuation = [
+  'title',
+  'indextitle',
+  'toctitle',
+  'breadcrumbtitle',
+];
+
+const ignoredTests = element =>
+  (safeGetAttr(element, 'ignore-tests') ?? '')
+    .split(',')
+    .map(testName => testName.trim())
+    .filter(testName => testName.length > 0);
+
+const titleTextWithoutNotes = candidate => {
+  const document = parseXMLFragment(`<content>${candidate.title}</content>`);
+  ['footnote', 'note'].forEach(tagName => {
+    getElementsByTagName(document, tagName).forEach(note => {
+      note.parentNode.removeChild(note);
+    });
+  });
+  return document.documentElement.textContent.trim();
+};
 
 const extractedTitleCandidate = (head, type) => {
   const element = getChildByTagName(head, type);
@@ -192,10 +215,49 @@ const findTitleMetadataFindings = ({
 }) => {
   const issues = [];
   const document = parseXMLFragment(data);
+  const work = document.documentElement;
+  const workhead = getChildByTagName(work, 'workhead');
+
+  const checkTrailingPunctuation = ({ head, owner, textId }) => {
+    if (
+      head == null ||
+      ignoredTests(owner).includes(titleTrailingPunctuationRule)
+    ) {
+      return;
+    }
+
+    titleFieldsWithoutTrailingPunctuation.forEach(type => {
+      const candidate = extractedTitleCandidate(head, type);
+      if (candidate == null) {
+        return;
+      }
+      const title = titleTextWithoutNotes(candidate);
+      const endsWithAllowedEllipsis = /(?:\.\s*){3,}$/u.test(title);
+      if (/[.:;]$/u.test(title) && endsWithAllowedEllipsis === false) {
+        issues.push(
+          titleIssue({
+            file,
+            context,
+            textId,
+            candidate,
+            rule: titleTrailingPunctuationRule,
+            description: `${type} must not end with a period, colon, or semicolon.`,
+          }),
+        );
+      }
+    });
+  };
+
+  checkTrailingPunctuation({
+    head: workhead,
+    owner: work,
+    textId: 'workhead',
+  });
 
   getElementsByTagName(document, 'text').forEach(text => {
     const head = getChildByTagName(text, 'head');
     const textId = safeGetAttr(text, 'id');
+    checkTrailingPunctuation({ head, owner: text, textId });
     const firstline = extractedTitleCandidate(head, 'firstline');
     const title = extractedTitleCandidate(head, 'title');
     const indextitle = extractedTitleCandidate(head, 'indextitle');
