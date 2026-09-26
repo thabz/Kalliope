@@ -56,7 +56,7 @@ const possiblePhysicalWraps = body => {
         reason:
           'En meget kort linje begynder med lille bogstav efter en syntaktisk uafsluttet verslinje og kan være en fysisk ombrydning.',
         action:
-          'Kontrollér facsimilet; kod fortsættelsen med <wrap>, hvis begge trykte linjer udgør ét vers.',
+          'Kontrollér facsimilet; saml linjerne til én XML-verslinje, hvis de to trykte linjer udgør ét vers.',
       });
     }
     previousVerse = { verseLine, text: currentText };
