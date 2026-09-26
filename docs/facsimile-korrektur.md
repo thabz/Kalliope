@@ -228,6 +228,11 @@ dekorationer kan være en centreret
 repositoryet; lad ikke en overskrift eller dekoration stå som en almindelig
 verslinje.
 
+Et ornament af adskilte stjerner skal altid normaliseres til den centrerede
+ikke-verslinje `<nonum><center>* * *</center></nonum>`, uanset hvor mange
+mellemrum OCR'en har indsat mellem stjernerne. Der skal være en tom linje både
+før og efter markøren.
+
 ## 4. Brug flere OCR-pass som kontrol
 
 Undersøg først PDF'en med `pdfimages -list`. Udtræk de indlejrede sidebilleder,

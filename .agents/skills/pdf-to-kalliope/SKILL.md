@@ -793,6 +793,10 @@ poem. Never transcribe an ornament printed after the poem's final verse; in
 particular, do not add `---` or other ornament markup immediately before
 `</poetry>`.
 
+Always encode a printed row of separated asterisks as the centered non-verse
+line `<nonum><center>* * *</center></nonum>`, with a blank line on both sides.
+Never preserve OCR-dependent spacing between the asterisks.
+
 ### Use stanza structure as a diagnostic
 
 Determine the dominant stanza pattern when the poem has one.
