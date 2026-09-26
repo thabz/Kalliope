@@ -102,11 +102,11 @@ describe('klassifikation af sonetter', () => {
 });
 
 describe('keywordforslag fra formanalyse', () => {
-  it('bevarer både den specifikke og den brede strofeform', () => {
+  it('foreslår kun karakteristiske former som keywords', () => {
     expect(formKeywords([
       { pattern: 'ballad-stanza', confidence: 0.96 },
       { pattern: 'quatrain', confidence: 0.99 },
-    ])).toEqual(['balladestrofe', 'firelinjet-strofe']);
+    ])).toEqual(['balladestrofe']);
   });
 
   it('udelader analyser under sikkerhedsgrænsen', () => {

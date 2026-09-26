@@ -1,11 +1,9 @@
 const keywordMappings = new Map([
   ['alexandrine', ['alexandriner']],
-  ['ballad-stanza', ['balladestrofe', 'firelinjet-strofe']],
+  ['ballad-stanza', ['balladestrofe']],
   ['blank-verse', ['blankvers']],
-  ['distich', ['tolinjet-strofe']],
   ['knittelvers', ['knittelvers']],
   ['ottava-rima', ['ottave-rime']],
-  ['quatrain', ['firelinjet-strofe']],
   ['rime-royal', ['rime-royal']],
   ['sonnet', ['sonnet']],
   ['terza-rima', ['terziner']],
