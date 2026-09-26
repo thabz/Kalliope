@@ -14,6 +14,14 @@ import {
 
 const longBlockThreshold = 80;
 
+const stanzaBoundaries = stanzaLengths => {
+  let verseLine = 0;
+  return stanzaLengths.slice(0, -1).map(length => {
+    verseLine += length;
+    return verseLine;
+  });
+};
+
 const plainText = line =>
   line
     .replace(/<[^>]+>/gu, '')
@@ -113,6 +121,10 @@ const analyzeWholeWork = (xml, options = {}) => {
       stanza.verse_line_count >= longBlockThreshold;
     const unresolvedIndentationPattern =
       indentation.status === 'no_stable_pattern';
+    const pageBreakStanzaBoundaries = stanzaBoundaries(
+      stanza.observed_stanza_lengths
+    )
+      .filter(boundary => poem.page_breaks.includes(boundary + 1));
     const preparedGeometry = geometryByBlock.get(
       `${poem.text_id}:${poem.block_index}`
     ) ?? null;
@@ -163,6 +175,26 @@ const analyzeWholeWork = (xml, options = {}) => {
             'Indrykningsanalysen kunne ikke etablere et stabilt mønster. Profilen skal kontrolleres og dispositioneres manuelt mod facsimilet.',
           action:
             'Kontrollér først strofegrænserne, kør analysen igen, og registrér derefter den facsimilebaserede vurdering.',
+        }] : []),
+        ...pageBreakStanzaBoundaries.map(boundary => ({
+          source: 'wrapper',
+          type: 'stanza_boundary_at_page_break',
+          after_verse_line: boundary,
+          page_start_verse_line: boundary + 1,
+          confidence: 'possible',
+          reason:
+            'XML har en strofegrænse umiddelbart før et fysisk sideskift; sideskiftet må ikke i sig selv skabe en strofegrænse.',
+          action:
+            'Kontrollér overgangen direkte mod begge facsimilesider og fjern blanklinjen, hvis strofen fortsætter.',
+        })),
+        ...(preparation == null ? [{
+          source: 'geometry_preparation',
+          type: 'facsimile_geometry_not_run',
+          confidence: 'required',
+          reason:
+            'Facsimilegeometri blev ikke leveret, så manglende trykte indryk og vertikale strofeafstande kan ikke kontrolleres.',
+          action:
+            'Kør hele værksanalysen med TSV_DIRECTORY og disponér alle geometri-kandidater mod facsimilet.',
         }] : []),
         ...(stanzaGeometry?.candidates ?? []).map(candidate => ({
           source: 'stanza_geometry',

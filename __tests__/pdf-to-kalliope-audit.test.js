@@ -161,6 +161,29 @@ describe('whole-work structure wrapper', () => {
 
     expect(poem.page_breaks).toEqual([2]);
     expect(poem.indentation.indentation_profile).toEqual([0, 4, 0]);
+    expect(poem.candidates).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        source: 'wrapper',
+        type: 'stanza_boundary_at_page_break',
+        after_verse_line: 1,
+      }),
+      expect.objectContaining({
+        source: 'geometry_preparation',
+        type: 'facsimile_geometry_not_run',
+      }),
+    ]));
+  });
+
+  it('does not report a stanza boundary when a stanza continues over a page', () => {
+    const xml = workXml.replace(
+      /<body><poetry>[\s\S]*?<\/poetry><\/body>/,
+      '<body><poetry>Første linje\n<pb n="11" facs="011.jpg"/>Anden linje\nTredje linje</poetry></body>',
+    );
+    const [poem] = analyzeWholeWork(xml).poems;
+
+    expect(poem.candidates).not.toEqual(expect.arrayContaining([
+      expect.objectContaining({ type: 'stanza_boundary_at_page_break' }),
+    ]));
   });
 
   it('runs prepared stanza and indentation geometry for the whole work', () => {
