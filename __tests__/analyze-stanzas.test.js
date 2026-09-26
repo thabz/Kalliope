@@ -151,12 +151,12 @@ describe('stanza candidate analysis', () => {
       expect.objectContaining({
         type: 'possible_extra_boundary',
         after_verse_line: 36,
-        confidence: 'likely',
+        confidence: 'strong',
       }),
       expect.objectContaining({
         type: 'possible_extra_boundary',
         after_verse_line: 68,
-        confidence: 'likely',
+        confidence: 'strong',
       }),
     ]);
   });
@@ -171,7 +171,31 @@ describe('stanza candidate analysis', () => {
       expect.objectContaining({
         type: 'possible_extra_boundary',
         after_verse_line: 38,
-        confidence: 'likely',
+        confidence: 'strong',
+      }),
+    ]);
+  });
+
+  it('tests merging four-line fragments even when they form the majority', () => {
+    const result = analyzeStanzas({
+      body: bodyWithStanzas([4, 4, 4, 4, 8, 8, 8, 4, 4]),
+    });
+
+    expect(result.uniform_pattern_hypotheses[0]).toEqual(
+      expect.objectContaining({ stanza_length: 8, preferred: true }),
+    );
+    expect(result.candidates).toEqual([
+      expect.objectContaining({
+        type: 'possible_extra_boundary',
+        after_verse_line: 4,
+      }),
+      expect.objectContaining({
+        type: 'possible_extra_boundary',
+        after_verse_line: 12,
+      }),
+      expect.objectContaining({
+        type: 'possible_extra_boundary',
+        after_verse_line: 44,
       }),
     ]);
   });

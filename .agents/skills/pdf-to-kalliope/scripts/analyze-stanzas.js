@@ -702,15 +702,34 @@ const analyzeStanzas = input => {
           ...parsed,
           candidates,
         });
-  const globalPattern =
-    recognizedForms.length === 0 && observedDominantLength == null
-      ? globalUniformPatternAnalysis({
-          ...parsed,
-          candidates,
-        })
-      : { hypotheses: [], targetLength: null };
+  const globalPattern = recognizedForms.length === 0
+    ? globalUniformPatternAnalysis({
+        ...parsed,
+        candidates,
+      })
+    : { hypotheses: [], targetLength: null };
   const dominantLength =
     observedDominantLength ?? globalPattern.targetLength;
+  if (
+    globalPattern.targetLength != null &&
+    globalPattern.targetLength !== observedDominantLength
+  ) {
+    const globallyExpectedBoundaries = new Set(
+      cumulativeBoundaries(
+        Array(parsed.verseLineCount / globalPattern.targetLength)
+          .fill(globalPattern.targetLength)
+      )
+    );
+    [...candidates.entries()].forEach(([key, candidate]) => {
+      const boundary = candidate.after_verse_line;
+      const contradictsGlobalPattern =
+        (candidate.type === 'possible_missing_boundary' &&
+          !globallyExpectedBoundaries.has(boundary)) ||
+        (candidate.type === 'possible_extra_boundary' &&
+          globallyExpectedBoundaries.has(boundary));
+      if (contradictsGlobalPattern) candidates.delete(key);
+    });
+  }
   if (
     recognizedForms.length === 0 &&
     observedDominantLength == null &&

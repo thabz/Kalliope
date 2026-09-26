@@ -128,13 +128,16 @@ const analyzeWholeWork = (xml, options = {}) => {
     const preparedGeometry = geometryByBlock.get(
       `${poem.text_id}:${poem.block_index}`
     ) ?? null;
-    const stanzaGeometry = preparedGeometry?.geometry_ready
+    const geometryAnalysisReady = preparedGeometry != null &&
+      preparedGeometry.lines.length ===
+        preparedGeometry.coverage.expected_line_count;
+    const stanzaGeometry = geometryAnalysisReady
       ? analyzeStanzaGeometry({
         lines: preparedGeometry.lines,
         observed_boundaries: preparedGeometry.observed_boundaries,
       })
       : null;
-    const indentationGeometry = preparedGeometry?.geometry_ready
+    const indentationGeometry = geometryAnalysisReady
       ? analyzeIndentationGeometry({
         lines: preparedGeometry.lines,
         observed_indentation: preparedGeometry.observed_indentation,

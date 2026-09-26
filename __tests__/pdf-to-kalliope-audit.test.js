@@ -221,6 +221,38 @@ describe('whole-work structure wrapper', () => {
       }),
     ]));
   });
+
+  it('keeps geometry analysis available when every XML line is safely matched', () => {
+    const xml = workXml.replace(
+      /<body><poetry>[\s\S]*?<\/poetry><\/body>/,
+      '<body><poetry>Første linje\nAnden linje\n\nTredje linje\nFjerde linje</poetry></body>',
+    ).replace('pages="10-12"', 'pages="10"');
+    const lines = [
+      { top: 100, text: 'Første linje' },
+      { top: 160, text: 'Anden linje' },
+      { top: 200, text: 'OCR-støj' },
+      { top: 280, text: 'Tredje linje' },
+      { top: 340, text: 'Fjerde linje' },
+    ].map(line => ({
+      page: 1,
+      left: 100,
+      width: 500,
+      height: 30,
+      ...line,
+    }));
+    const [poem] = analyzeWholeWork(xml, {
+      variantsByFacsimile: {
+        '010.jpg': [{ name: '010.tsv', lines }],
+      },
+    }).poems;
+
+    expect(poem.geometry.status).toBe('manual_review');
+    expect(poem.geometry.stanza).not.toBeNull();
+    expect(poem.geometry.indentation).not.toBeNull();
+    expect(poem.candidates).toEqual(expect.arrayContaining([
+      expect.objectContaining({ type: 'geometry_manual_review' }),
+    ]));
+  });
 });
 
 describe('historical OCR candidate profile', () => {
