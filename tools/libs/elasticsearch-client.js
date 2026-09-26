@@ -279,7 +279,16 @@ class ElasticSearchClient {
           {
             bool: {
               filter: [{ term: { result_type: 'poet' } }],
-              must: [{ term: { 'poet.id': normalizedQuery } }],
+              must: [
+                {
+                  term: {
+                    'poet.id': {
+                      value: normalizedQuery,
+                      boost: 1000,
+                    },
+                  },
+                },
+              ],
             },
           },
           {

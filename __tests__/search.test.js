@@ -2,6 +2,7 @@ import { renderToStaticMarkup } from 'react-dom/server';
 import {
   parseKeywordIds,
   SearchFilters,
+  SearchResultCount,
   singleMatchingTextIdResultURL,
   totalHitsValue,
 } from '../pages/search.js';
@@ -40,6 +41,15 @@ describe('search page', () => {
 
   test('gets total hits from Elasticsearch 7 response format', () => {
     expect(totalHitsValue({ total: { value: 7, relation: 'eq' } })).toBe(7);
+  });
+
+  test('does not render a zero count before search results arrive', () => {
+    expect(
+      renderToStaticMarkup(<SearchResultCount lang="da" totalHits={null} />)
+    ).toBe('');
+    expect(
+      renderToStaticMarkup(<SearchResultCount lang="da" totalHits={0} />)
+    ).toContain('0 resultater fundet');
   });
 
   test('redirects to the text when the only result exactly matches the searched id', () => {

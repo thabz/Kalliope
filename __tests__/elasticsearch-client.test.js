@@ -134,7 +134,16 @@ describe('Elasticsearch client', () => {
           {
             bool: {
               filter: [{ term: { result_type: 'poet' } }],
-              must: [{ term: { 'poet.id': 'aarestrup' } }],
+          must: [
+            {
+              term: {
+                'poet.id': {
+                  value: 'aarestrup',
+                  boost: 1000,
+                },
+              },
+            },
+          ],
             },
           },
           {
@@ -274,7 +283,16 @@ describe('Elasticsearch client', () => {
       {
         bool: {
           filter: [{ term: { result_type: 'poet' } }],
-          must: [{ term: { 'poet.id': 'rose' } }],
+          must: [
+            {
+              term: {
+                'poet.id': {
+                  value: 'rose',
+                  boost: 1000,
+                },
+              },
+            },
+          ],
         },
       },
       {

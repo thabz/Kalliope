@@ -335,18 +335,34 @@ export const SearchFilters = ({ country, keywordFilters, lang, poet, query }) =>
   );
 };
 
+export const SearchResultCount = ({ lang, totalHits }) => {
+  if (totalHits == null) {
+    return null;
+  }
+  const description = _(
+    totalHits === 1 ? '{count} resultat fundet' : '{count} resultater fundet',
+    lang,
+    { count: totalHits }
+  );
+  return <div className="result-count">{description}</div>;
+};
+
 const SearchPage = (props) => {
   const { lang, poet, country, query, keywordFilters } = props;
   const keywordIds = keywordFilters.map(keyword => keyword.id);
   const [error, setError] = useState(null);
   const [hits, setHits] = useState([]);
   const [isFetchingMore, setFetchingMore] = useState(false);
-  const [totalHits, setTotalHits] = useState(0);
+  const [totalHits, setTotalHits] = useState(null);
   const [resultPage, setResultPage] = useState(0);
   const [redirectURL, setRedirectURL] = useState(null);
 
   const fetchMoreItems = async () => {
-    if (isFetchingMore || hits.length >= totalHits) {
+    if (
+      isFetchingMore ||
+      totalHits == null ||
+      hits.length >= totalHits
+    ) {
       return;
     }
     setFetchingMore(true);
@@ -449,11 +465,6 @@ const SearchPage = (props) => {
     return null;
   }
 
-  const resultaterBeskrivelse = _(
-    totalHits === 1 ? '{count} resultat fundet' : '{count} resultater fundet',
-    lang,
-    { count: totalHits }
-  );
   const henterFlere = isFetchingMore ? (
     <div style={{ marginBottom: '500px' }}>Henter flere...</div>
   ) : null;
@@ -503,9 +514,7 @@ const SearchPage = (props) => {
           poet={poet}
           query={query}
         />
-        <div className="result-count">
-          {resultaterBeskrivelse}
-        </div>
+        <SearchResultCount lang={lang} totalHits={totalHits} />
         <RenderedHits hits={hits} />
         <style jsx>{`
           .result-count {
