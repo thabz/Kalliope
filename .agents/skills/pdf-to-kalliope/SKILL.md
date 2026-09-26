@@ -788,6 +788,11 @@ Pay particular attention to:
 - ornamental separators
 - dropped or duplicated OCR lines
 
+Transcribe an ornamental separator only when it separates content inside a
+poem. Never transcribe an ornament printed after the poem's final verse; in
+particular, do not add `---` or other ornament markup immediately before
+`</poetry>`.
+
 ### Use stanza structure as a diagnostic
 
 Determine the dominant stanza pattern when the poem has one.
