@@ -62,6 +62,8 @@ describe('pdf-to-kalliope page inventory and semantic audit', () => {
       status: 'reviewed',
       reviewer: 'worker-2',
       disposition: 'Kontrolleret direkte mod facsimilet.',
+      typography_status: 'reviewed',
+      typography_disposition: 'Kursiv og spatiering kontrolleret.',
     }));
     inventory[1].first_line = 'Forkert sidebegyndelse';
     inventory[2].status = 'pending';
@@ -93,6 +95,8 @@ describe('pdf-to-kalliope page inventory and semantic audit', () => {
       status: 'reviewed',
       reviewer: 'worker-2',
       disposition: 'Kontrolleret direkte mod facsimilet.',
+      typography_status: 'reviewed',
+      typography_disposition: 'Kursiv og spatiering kontrolleret.',
       first_line: index === 1 ? 'Facsimilets sidestart' : row.first_line,
     }));
     expect(auditPageInventory({ xml: brokenXml, inventory: reviewed }).issues).toEqual(
@@ -344,7 +348,7 @@ describe('historical OCR candidate profile', () => {
 });
 
 describe('findings registry and frozen checkpoint', () => {
-  const candidateReviews = ['ocr', 'page', 'stanza', 'indentation'].map(kind => ({
+  const candidateReviews = ['ocr', 'page', 'stanza', 'indentation', 'typography'].map(kind => ({
     kind,
     reviewer: 'anna',
     status: 'reviewed',
@@ -417,6 +421,7 @@ describe('findings registry and frozen checkpoint', () => {
       inventory: [{
         text_id: 'test', printed_page: '1', facsimile: '010.jpg',
         status: 'reviewed', reviewer: 'anna', disposition: 'Kontrolleret.',
+        typography_status: 'reviewed', typography_disposition: 'Ingen fremhævelse.',
       }],
       tests: [{ command: 'npm test', status: 'passed' }],
       reviewerRanges: [{ reviewer: 'anna', facsimile_from: '010.jpg', facsimile_to: '010.jpg' }],
@@ -437,6 +442,7 @@ describe('findings registry and frozen checkpoint', () => {
       inventory: [{
         text_id: 'test', printed_page: '1', facsimile: '010.jpg',
         status: 'reviewed', reviewer: 'anna', disposition: 'Kontrolleret.',
+        typography_status: 'reviewed', typography_disposition: 'Ingen fremhævelse.',
       }],
       tests: [{ command: 'npm test', status: 'passed' }],
       reviewerRanges: [{ reviewer: 'anna', facsimile_from: '010.jpg', facsimile_to: '010.jpg' }],
@@ -474,6 +480,7 @@ describe('findings registry and frozen checkpoint', () => {
     const inventory = [{
       text_id: 'test', printed_page: '1', facsimile: '010.jpg',
       status: 'reviewed', reviewer: 'producer', disposition: 'Kontrolleret.',
+      typography_status: 'reviewed', typography_disposition: 'Ingen fremhævelse.',
     }];
     expect(() => createCheckpoint({
       root: process.cwd(),
@@ -487,13 +494,14 @@ describe('findings registry and frozen checkpoint', () => {
     })).toThrow(/producenten/);
   });
 
-  it('requires all four candidate audits with every candidate reviewed', () => {
+  it('requires all five candidate audits with every candidate reviewed', () => {
     const common = {
       root: process.cwd(),
       findings: [],
       inventory: [{
         text_id: 'test', printed_page: '1', facsimile: '010.jpg',
         status: 'reviewed', reviewer: 'anna', disposition: 'Kontrolleret.',
+        typography_status: 'reviewed', typography_disposition: 'Ingen fremhævelse.',
       }],
       tests: [{ command: 'npm test', status: 'passed' }],
       reviewerRanges: [{ reviewer: 'anna', facsimile_from: '010.jpg', facsimile_to: '010.jpg' }],
@@ -506,17 +514,33 @@ describe('findings registry and frozen checkpoint', () => {
     })).toThrow('kandidatkontrollen indentation forekommer 0 gange');
     expect(() => createCheckpoint({
       ...common,
+      candidateReviews: candidateReviews.filter(review => review.kind !== 'typography'),
+    })).toThrow('kandidatkontrollen typography forekommer 0 gange');
+    expect(() => createCheckpoint({
+      ...common,
       candidateReviews: candidateReviews.map(review => review.kind === 'ocr'
         ? { ...review, reviewed_count: 1 }
         : review),
     })).toThrow('kandidatkontrollen ocr har uverificerede kandidater');
+    expect(() => createCheckpoint({
+      ...common,
+      inventory: common.inventory.map(({ typography_status, ...page }) => page),
+    })).toThrow('sidens typografi er ikke gennemgået');
+    expect(() => createCheckpoint({
+      ...common,
+      inventory: common.inventory.map(page => ({ ...page, typography_disposition: null })),
+    })).toThrow('side mangler typografidisposition');
     expect(() => createCheckpoint({ ...common, candidateReviews })).not.toThrow();
   });
 
   it('blocks READY when no tests are recorded or a test fails', () => {
     const common = {
       root: process.cwd(), findings: [],
-      inventory: [{ text_id: 'test', printed_page: '1', facsimile: '010.jpg', status: 'reviewed', reviewer: 'anna', disposition: 'Kontrolleret.' }],
+      inventory: [{
+        text_id: 'test', printed_page: '1', facsimile: '010.jpg',
+        status: 'reviewed', reviewer: 'anna', disposition: 'Kontrolleret.',
+        typography_status: 'reviewed', typography_disposition: 'Ingen fremhævelse.',
+      }],
       reviewerRanges: [{ reviewer: 'anna', facsimile_from: '010.jpg', facsimile_to: '010.jpg' }],
       producer: 'producer', candidateReviews,
       state: { head: 'abc', diff_sha256: 'one', changed_files: [], file_sha256: {} },

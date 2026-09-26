@@ -316,6 +316,16 @@ Tegnfejl er ofte sværere for OCR end ordfejl. Et pass kan gengive alle bogstave
 rigtigt og stadig miste en tankestreg, vende et anførselstegn eller forveksle
 spatiering med almindelige mellemrum.
 
+Typografikontrollen skal registreres som sin egen kandidatkontrol i det frosne
+review-checkpoint. Den udføres side for side direkte på facsimilet: kursiv
+afmærkes med `<i>`, og spatieret tekst med `<w>`. OCR uden typografiske fund er
+ikke i sig selv et bestået resultat, fordi almindelig OCR typisk flader begge
+dele ud. Checkpointet må derfor ikke oprettes uden en afsluttet
+`typography`-kontrol, heller ikke når kontrollen ender med nul fund.
+Hver side i JSONL-inventaret skal desuden have
+`"typography_status":"reviewed"` og en konkret `typography_disposition`, så én
+samlet afkrydsning ikke kan stå i stedet for sidevis kontrol.
+
 Zoom ind på tvivlsomme steder. Afgør dem ikke ud fra moderne sprogbrug. En
 mærkelig, men tydeligt trykt læsning skal bevares.
 
