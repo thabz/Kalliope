@@ -199,6 +199,25 @@ describe('whole-work structure wrapper', () => {
         type: 'stanza_boundary_at_page_break',
         after_verse_line: 1,
         preceding_text: 'Første linje,',
+        continuation_signal: 'comma',
+        confidence: 'strong',
+      }),
+    ]));
+  });
+
+  it('treats any line without terminal punctuation as continuation evidence', () => {
+    const xml = workXml.replace(
+      /<body><poetry>[\s\S]*?<\/poetry><\/body>/,
+      '<body><poetry>(Fast høitidelig er Minen)\n\n<pb n="11" facs="011.jpg"/>Herren bukker\nDamen neier</poetry></body>',
+    );
+    const [poem] = analyzeWholeWork(xml).poems;
+
+    expect(poem.candidates).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        source: 'wrapper',
+        type: 'stanza_boundary_at_page_break',
+        after_verse_line: 1,
+        continuation_signal: 'missing_terminal_punctuation',
         confidence: 'strong',
       }),
     ]));

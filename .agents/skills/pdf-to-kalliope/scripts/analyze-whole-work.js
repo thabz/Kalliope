@@ -207,15 +207,24 @@ const analyzeWholeWork = (xml, options = {}) => {
         ...pageBreakStanzaBoundaries.map(boundary => {
           const precedingText = verseTexts[boundary - 1] ?? '';
           const endsWithComma = /,\s*$/u.test(precedingText);
+          const lacksTerminalPunctuation =
+            !/[.!?…][”"'»’)]*\s*$/u.test(precedingText);
+          const strongContinuation =
+            endsWithComma || lacksTerminalPunctuation;
           return {
             source: 'wrapper',
             type: 'stanza_boundary_at_page_break',
             after_verse_line: boundary,
             page_start_verse_line: boundary + 1,
             preceding_text: precedingText,
-            confidence: endsWithComma ? 'strong' : 'possible',
-            reason: endsWithComma
-              ? 'XML har en strofegrænse umiddelbart før et fysisk sideskift, men den foregående verslinje ender med komma og peger stærkt på syntaktisk fortsættelse.'
+            continuation_signal: endsWithComma
+              ? 'comma'
+              : lacksTerminalPunctuation
+                ? 'missing_terminal_punctuation'
+                : null,
+            confidence: strongContinuation ? 'strong' : 'possible',
+            reason: strongContinuation
+              ? `XML har en strofegrænse umiddelbart før et fysisk sideskift, men den foregående verslinje ${endsWithComma ? 'ender med komma' : 'mangler afsluttende sætningspunktuation'} og peger stærkt på syntaktisk fortsættelse.`
               : 'XML har en strofegrænse umiddelbart før et fysisk sideskift; sideskiftet må ikke i sig selv skabe en strofegrænse.',
             action:
               'Kontrollér overgangen direkte mod begge facsimilesider og fjern blanklinjen, hvis strofen fortsætter.',
