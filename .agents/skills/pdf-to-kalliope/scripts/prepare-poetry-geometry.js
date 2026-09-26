@@ -160,7 +160,10 @@ const parsePoetryElement = ({ poetry, startingFacsimile }) => {
           to_facsimile: firstPb[1],
         });
       } else if (!hasVisibleBefore) {
-        currentFacsimile = firstPb[1];
+        // Flere tomme kildesider kan stå som fortløbende pb-elementer før
+        // den første synlige verslinje. Linjen hører da til siden i den
+        // sidste markør, ikke den første.
+        currentFacsimile = matches.at(-1)[1];
       }
     }
     if (isVerseLine(withoutPageBreaks)) {

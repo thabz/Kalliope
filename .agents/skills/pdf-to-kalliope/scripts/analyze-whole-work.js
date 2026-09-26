@@ -46,6 +46,7 @@ const bodyAndPageBreaks = serializedBody => {
   let verseLine = 0;
   let pendingPageBreak = false;
   let pendingPageBreakHasNonum = false;
+  let nonumSinceLastVerse = false;
   const pageBreaks = [];
   const pageBreakNonumStarts = [];
   const body = serializedBody
@@ -54,11 +55,12 @@ const bodyAndPageBreaks = serializedBody => {
     .map(line => {
       if (/<pb\b[^>]*\/>/u.test(line)) {
         pendingPageBreak = true;
-        pendingPageBreakHasNonum = false;
+        pendingPageBreakHasNonum = nonumSinceLastVerse;
       }
       if (pendingPageBreak && /<nonum(?:\s|>)/u.test(line)) {
         pendingPageBreakHasNonum = true;
       }
+      if (/<nonum(?:\s|>)/u.test(line)) nonumSinceLastVerse = true;
       const withoutPageBreak = line.replace(/<pb\b[^>]*\/>/gu, '');
       if (isVerseLine(withoutPageBreak)) {
         verseLine += 1;
@@ -68,6 +70,7 @@ const bodyAndPageBreaks = serializedBody => {
           pendingPageBreak = false;
           pendingPageBreakHasNonum = false;
         }
+        nonumSinceLastVerse = false;
       }
       return withoutPageBreak;
     })

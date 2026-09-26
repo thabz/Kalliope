@@ -240,6 +240,19 @@ describe('whole-work structure wrapper', () => {
     ]));
   });
 
+  it('does not report a boundary when an ornament precedes the page break', () => {
+    const xml = workXml.replace(
+      /<body><poetry>[\s\S]*?<\/poetry><\/body>/,
+      '<body><poetry>Første linje.\n\n<nonum><center>* * *</center></nonum>\n\n<pb n="11" facs="011.jpg"/>Anden linje</poetry></body>',
+    );
+    const [poem] = analyzeWholeWork(xml).poems;
+
+    expect(poem.page_break_nonum_starts).toEqual([2]);
+    expect(poem.candidates).not.toEqual(expect.arrayContaining([
+      expect.objectContaining({ type: 'stanza_boundary_at_page_break' }),
+    ]));
+  });
+
   it('runs prepared stanza and indentation geometry for the whole work', () => {
     const xml = workXml.replace(
       /<body><poetry>[\s\S]*?<\/poetry><\/body>/,
@@ -274,6 +287,30 @@ describe('whole-work structure wrapper', () => {
         verse_line: 4,
       }),
     ]));
+  });
+
+  it('assigns text after consecutive page breaks to the last facsimile', () => {
+    const xml = workXml.replace(
+      /<body><poetry>[\s\S]*?<\/poetry><\/body>/,
+      '<body><poetry><pb n="10" facs="010.jpg"/><pb n="11" facs="011.jpg"/>Første linje</poetry></body>',
+    ).replace('pages="10-12"', 'pages="10-11"');
+    const result = analyzeWholeWork(xml, {
+      variantsByFacsimile: {
+        '011.jpg': [{
+          name: '011.tsv',
+          lines: [{ page: 11, left: 100, top: 100, width: 500, height: 30, text: 'Første linje' }],
+        }],
+      },
+    });
+
+    expect(result.poems[0].geometry.coverage).toEqual(expect.objectContaining({
+      expected_line_count: 1,
+      matched_line_count: 1,
+      ratio: 1,
+    }));
+    expect(result.poems[0].geometry.selected_variants).toEqual([
+      expect.objectContaining({ facsimile: '011.jpg' }),
+    ]);
   });
 
   it('keeps geometry analysis available when every XML line is safely matched', () => {
