@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="merrill" country="us" lang="fr" type="poet">
+  <name>
+    <fullname>Stuart Fitzrandolph Merrill</fullname>
+    <firstname>Stuart</firstname>
+    <lastname>Merrill</lastname>
+    <sortname>Merrill, Stuart</sortname>
+  </name>
+  <period>
+    <born>
+      <date>1863-08-01</date>
+      <place>Hempstead</place>
+    </born>
+    <dead>
+      <date>1915-12-01</date>
+      <place>Versailles</place>
+    </dead>
+  </period>
+  <literary-periods>symbolisme-og-fin-de-siecle</literary-periods>
+  <works>1887</works>
+  <identifiers>
+    <wikidata>Q3087491</wikidata>
+    <wikipedia-en>Stuart Merrill</wikipedia-en>
+    <wikipedia-fr>Stuart Merrill</wikipedia-fr>
+    <viaf>17356017</viaf>
+    <gutenberg-org>32109</gutenberg-org>
+  </identifiers>
+</person>
