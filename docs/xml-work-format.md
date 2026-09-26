@@ -15,6 +15,9 @@ Strukturtags står i kolonne 0, også når de er indlejret. Det gælder
 Metadatafelter inde i `<head>` og `<workhead>` indrykkes med to mellemrum for
 hvert niveau.
 
+Indholdet i `<notes>` og `<pictures>` står altid på egne linjer. `<note>` og
+`<picture>` indrykkes ét niveau i forhold til deres beholder.
+
 Der skal være én blank linje mellem to `<text>`-elementer og én blank linje før
 og efter et `<section>`-element. Mellemrum og blanke linjer i selve brødteksten
 ændres ikke, fordi de har betydning for tekstens layout og strofestruktur.

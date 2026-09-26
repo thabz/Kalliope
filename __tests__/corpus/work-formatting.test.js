@@ -253,10 +253,48 @@ Et citat
     const formatted = formatWorkXml(xml);
 
     expect(formatted).toContain(
-      '<notes><note>Første</note></notes>\n' +
-        '  <notes><note>Anden</note></notes>',
+      '<notes>\n' +
+        '    <note>Første</note>\n' +
+        '  </notes>\n' +
+        '  <notes>\n' +
+        '    <note>Anden</note>\n' +
+        '  </notes>',
     );
     expect(formatted).toContain('<source pages="1"/>/>\n  <quality>');
+    expect(formatWorkXml(formatted)).toBe(formatted);
+  });
+
+  it('puts notes and pictures on indented lines inside metadata containers', () => {
+    const xml = `<kalliopework>
+<workhead>
+  <pictures><picture type="titlepage" src="p1.jpg">Titelblad</picture></pictures>
+</workhead>
+<workbody>
+<text>
+<head>
+  <notes><note>Første note</note><note>Anden note</note></notes>
+</head>
+<body><prose>Brødtekst<note>Inline note</note></prose></body>
+</text>
+</workbody>
+</kalliopework>
+`;
+    const formatted = formatWorkXml(xml);
+
+    expect(formatted).toContain(
+      '<pictures>\n' +
+        '    <picture type="titlepage" src="p1.jpg">Titelblad</picture>\n' +
+        '  </pictures>',
+    );
+    expect(formatted).toContain(
+      '<notes>\n' +
+        '    <note>Første note</note>\n' +
+        '    <note>Anden note</note>\n' +
+        '  </notes>',
+    );
+    expect(formatted).toContain(
+      '<body><prose>Brødtekst<note>Inline note</note></prose></body>',
+    );
     expect(formatWorkXml(formatted)).toBe(formatted);
   });
 
