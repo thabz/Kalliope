@@ -370,4 +370,113 @@ describe('Check workfiles', () => {
       ).toHaveLength(1);
     },
   );
+
+  it.each(['title', 'indextitle', 'toctitle', 'breadcrumbtitle'])(
+    'reports trailing punctuation in %s',
+    titleType => {
+      const issues = titleMetadataIssues(
+        `<text id="punctuated"><head><${titleType}>Titel.</${titleType}></head></text>`,
+      );
+
+      expect(
+        issues.filter(issue => issue.rule === 'title-trailing-punctuation'),
+      ).toHaveLength(1);
+    },
+  );
+
+  it.each(['.', ':', ';'])(
+    'reports a title ending with %s',
+    punctuation => {
+      const issues = titleMetadataIssues(
+        `<text id="punctuated"><head><title>Titel${punctuation}</title></head></text>`,
+      );
+
+      expect(
+        issues.filter(issue => issue.rule === 'title-trailing-punctuation'),
+      ).toHaveLength(1);
+    },
+  );
+
+  it.each([',', '?', '!'])(
+    'allows a title ending with %s',
+    punctuation => {
+      const issues = titleMetadataIssues(
+        `<text id="allowed"><head><title>Titel${punctuation}</title></head></text>`,
+      );
+
+      expect(
+        issues.filter(issue => issue.rule === 'title-trailing-punctuation'),
+      ).toHaveLength(0);
+    },
+  );
+
+  it('checks a work title', () => {
+    const issues = titleMetadataIssues(
+      '<kalliopework><workhead><title>Værktitel.</title></workhead></kalliopework>',
+    );
+
+    expect(
+      issues.filter(issue => issue.rule === 'title-trailing-punctuation'),
+    ).toEqual([expect.objectContaining({ textId: 'workhead' })]);
+  });
+
+  it('checks the title after a num prefix', () => {
+    const issues = titleMetadataIssues(
+      '<text id="numbered"><head><title><num>III.</num>Titel.</title></head></text>',
+    );
+
+    expect(
+      issues.filter(issue => issue.rule === 'title-trailing-punctuation'),
+    ).toHaveLength(1);
+  });
+
+  it('allows punctuation in a num-only title', () => {
+    const issues = titleMetadataIssues(
+      '<text id="numbered"><head><title><num>III.</num></title></head></text>',
+    );
+
+    expect(
+      issues.filter(issue => issue.rule === 'title-trailing-punctuation'),
+    ).toHaveLength(0);
+  });
+
+  it('ignores a trailing punctuation mark inside a footnote', () => {
+    const issues = titleMetadataIssues(
+      '<text id="noted"><head><title>Titel<footnote>Kildens titel.</footnote></title></head></text>',
+    );
+
+    expect(
+      issues.filter(issue => issue.rule === 'title-trailing-punctuation'),
+    ).toHaveLength(0);
+  });
+
+  it('reports punctuation before a trailing footnote', () => {
+    const issues = titleMetadataIssues(
+      '<text id="noted"><head><title>Titel.<footnote>Note</footnote></title></head></text>',
+    );
+
+    expect(
+      issues.filter(issue => issue.rule === 'title-trailing-punctuation'),
+    ).toHaveLength(1);
+  });
+
+  it('allows a text-local title punctuation exception', () => {
+    const issues = titleMetadataIssues(
+      '<kalliopework><workhead><title>Værk</title></workhead><workbody><text id="excepted" ignore-tests="title-trailing-punctuation"><head><title>Til C. R.</title></head></text><text id="sibling"><head><title>Søskende.</title></head></text></workbody></kalliopework>',
+    );
+
+    expect(
+      issues.filter(issue => issue.rule === 'title-trailing-punctuation'),
+    ).toEqual([expect.objectContaining({ textId: 'sibling' })]);
+  });
+
+  it('limits a work exception to the workhead', () => {
+    const issues = titleMetadataIssues(
+      '<kalliopework ignore-tests="title-trailing-punctuation"><workhead><title>Værk.</title></workhead><workbody><text id="child"><head><title>Tekst.</title></head></text></workbody></kalliopework>',
+    );
+
+    expect(
+      issues.filter(issue => issue.rule === 'title-trailing-punctuation'),
+    ).toEqual([expect.objectContaining({ textId: 'child' })]);
+  });
 });

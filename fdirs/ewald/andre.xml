@@ -1384,7 +1384,7 @@ Til De tilsidst med andre fleere
 </head>
 <content>
 
-<text id="ewald2000070102">
+<text id="ewald2000070102" ignore-tests="title-trailing-punctuation">
 <head>
   <title>Tanker i Anledning af Hr. Hans Ebbesen...</title>
   <subtitle>Hørkræmmer her i Staden, og Jomfrue Christiane Benedicte Huulegaards Mariage.</subtitle>
@@ -4030,9 +4030,9 @@ Og han velsigner det med Varighed! -
 
 <text id="ewaldandrea4">
 <head>
-  <title>Rungsteds Lyksaligheder. En Ode.</title>
-  <toctitle>Rungsteds Lyksaligheder. En Ode.</toctitle>
-  <indextitle>Rungsteds Lyksaligheder. En Ode.</indextitle>
+  <title>Rungsteds Lyksaligheder. En Ode</title>
+  <toctitle>Rungsteds Lyksaligheder. En Ode</toctitle>
+  <indextitle>Rungsteds Lyksaligheder. En Ode</indextitle>
   <firstline>I kiølende Skygger</firstline>
   <notes>
     <note>Første gang trykt i <i>Kiøbenhavns Adresse-Contoirs Efterretninger</i>, 17de Aargang, Nr. 102, 28. juni <year>1775</year>.</note>

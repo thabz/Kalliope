@@ -419,7 +419,7 @@ mit Hjærte lytter til.
 </content>
 </section> <!-- Hospitalet -->
 
-<text id="juelaxel2019052109">
+<text id="juelaxel2019052109" ignore-tests="title-trailing-punctuation">
 <head>
   <title>Stille, mit Hjærte ...</title>
   <firstline>Stille, mit Hjærte, stille</firstline>
@@ -466,7 +466,7 @@ græder vi begge to.
 </body>
 </text>
 
-<text id="juelaxel2019052110">
+<text id="juelaxel2019052110" ignore-tests="title-trailing-punctuation">
 <head>
   <title>Der er kun eet ...</title>
   <firstline>Der er kun eet, jeg elsker som en Hund</firstline>
@@ -1113,7 +1113,7 @@ ak, men aldrig mine Guder.
 </body>
 </text>
 
-<text id="juelaxel2019052124">
+<text id="juelaxel2019052124" ignore-tests="title-trailing-punctuation">
 <head>
   <title>Saa kys mig ...</title>
   <firstline>Saa kys mig da, Tøs med den dejlige Mund</firstline>
