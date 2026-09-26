@@ -27,6 +27,27 @@ const loadJsonLines = (filename) =>
     .filter(Boolean)
     .map((line) => JSON.parse(line));
 
+const legacyRawAsteriskOrnamentFiles = new Set([
+  'fdirs/baggesen/andre.xml',
+  'fdirs/bellman/1790.xml',
+  'fdirs/ewald/andre.xml',
+  'fdirs/gay/andre.xml',
+  'fdirs/gjellerup/1889.xml',
+  'fdirs/gjellerup/1895.xml',
+  'fdirs/herder/1792.xml',
+  'fdirs/hertzh/1862a.xml',
+  'fdirs/kaalund/1898.xml',
+  'fdirs/keats/1817.xml',
+  'fdirs/keats/1820.xml',
+  'fdirs/larsent/1912.xml',
+  'fdirs/larsent/rubai.xml',
+  'fdirs/michaelis/1893.xml',
+  'fdirs/moellerpm/andre.xml',
+  'fdirs/poe/1827.xml',
+  'fdirs/rodeh/1928.xml',
+  'fdirs/schaldemose/1824.xml',
+]);
+
 describe('tracked work corpus', () => {
   let filenames;
   let bodyLinkIssues;
@@ -37,6 +58,7 @@ describe('tracked work corpus', () => {
   let pageOnlySourceIssues;
   let poetryBoundaryBlankLineIssues;
   let asteriskOrnamentSpacingIssues;
+  let rawAsteriskOrnamentIssues;
   let andreWorkheadSourceIssues;
   let externalSourceLinkIssues;
   let textFollowsNoteIssues;
@@ -54,6 +76,7 @@ describe('tracked work corpus', () => {
     pageOnlySourceIssues = [];
     poetryBoundaryBlankLineIssues = [];
     asteriskOrnamentSpacingIssues = [];
+    rawAsteriskOrnamentIssues = [];
     andreWorkheadSourceIssues = [];
     externalSourceLinkIssues = [];
     textFollowsNoteIssues = [];
@@ -117,6 +140,13 @@ describe('tracked work corpus', () => {
         }
       });
 
+      if (
+        !legacyRawAsteriskOrnamentFiles.has(filename) &&
+        /^[ \t]*\*(?:[ \t]+\*){2,}[ \t]*$/m.test(xml)
+      ) {
+        rawAsteriskOrnamentIssues.push(filename);
+      }
+
       const checks = checksForWorkXml(xml);
       if (
         checks.bodyLinks !== true &&
@@ -174,6 +204,10 @@ describe('tracked work corpus', () => {
 
   it('keeps a blank line around centered asterisk ornaments', () => {
     expect(asteriskOrnamentSpacingIssues).toEqual([]);
+  });
+
+  it('requires centered nonum markup for asterisk ornaments', () => {
+    expect(rawAsteriskOrnamentIssues).toEqual([]);
   });
 
   it('keeps anthology texts without an identified author out of indexes', () => {
