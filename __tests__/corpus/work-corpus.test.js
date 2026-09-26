@@ -60,6 +60,8 @@ describe('tracked work corpus', () => {
   let pageIntervalIssues;
   let pageOnlySourceIssues;
   let poetryBoundaryBlankLineIssues;
+  let asteriskOrnamentSpacingIssues;
+  let rawAsteriskOrnamentIssues;
   let andreWorkheadSourceIssues;
   let externalSourceLinkIssues;
   let textFollowsNoteIssues;
@@ -85,6 +87,8 @@ describe('tracked work corpus', () => {
     pageIntervalIssues = [];
     pageOnlySourceIssues = [];
     poetryBoundaryBlankLineIssues = [];
+    asteriskOrnamentSpacingIssues = [];
+    rawAsteriskOrnamentIssues = [];
     andreWorkheadSourceIssues = [];
     externalSourceLinkIssues = [];
     textFollowsNoteIssues = [];
@@ -130,9 +134,20 @@ describe('tracked work corpus', () => {
         formattingIssues.push(filename);
       }
 
+      const xmlWithoutOrnamentBoundarySpacing = xml
+        .replace(
+          /(<poetry(?:[ \t][^<>]*)?>\r?\n)[ \t]*\r?\n(?=<nonum><center>\*(?: \*){2,}<\/center><\/nonum>)/gu,
+          '$1'
+        )
+        .replace(
+          /(<nonum><center>\*(?: \*){2,}<\/center><\/nonum>\r?\n)[ \t]*\r?\n(?=<\/poetry>)/gu,
+          '$1'
+        );
       if (
-        /<poetry(?:[ \t][^<>]*)?>\r?\n[ \t]*\r?\n/.test(xml) ||
-        /\r?\n[ \t]*\r?\n<\/poetry>/.test(xml)
+        /<poetry(?:[ \t][^<>]*)?>\r?\n[ \t]*\r?\n/.test(
+          xmlWithoutOrnamentBoundarySpacing
+        ) ||
+        /\r?\n[ \t]*\r?\n<\/poetry>/.test(xmlWithoutOrnamentBoundarySpacing)
       ) {
         poetryBoundaryBlankLineIssues.push(filename);
       }
@@ -146,6 +161,22 @@ describe('tracked work corpus', () => {
         ) {
           proseWordDivisionIssues.push(`${filename}: ${match[0]}`);
         }
+      }
+
+      const xmlLines = xml.replace(/\r\n?/g, '\n').split('\n');
+      xmlLines.forEach((line, index) => {
+        if (
+          !/^<nonum><center>\*(?: \*){2,}<\/center><\/nonum>$/.test(
+            line.trim()
+          )
+        ) return;
+        if (xmlLines[index - 1] !== '' || xmlLines[index + 1] !== '') {
+          asteriskOrnamentSpacingIssues.push(`${filename}:${index + 1}`);
+        }
+      });
+
+      if (/^[ \t]*\*(?:[ \t]+\*){2,}[ \t]*$/m.test(xml)) {
+        rawAsteriskOrnamentIssues.push(filename);
       }
 
       const checks = checksForWorkXml(xml);
@@ -208,6 +239,14 @@ describe('tracked work corpus', () => {
 
   it('does not preserve probable print-line word divisions in prose', () => {
     expect(proseWordDivisionIssues).toEqual([]);
+  });
+
+  it('keeps a blank line around centered asterisk ornaments', () => {
+    expect(asteriskOrnamentSpacingIssues).toEqual([]);
+  });
+
+  it('requires centered nonum markup for asterisk ornaments', () => {
+    expect(rawAsteriskOrnamentIssues).toEqual([]);
   });
 
   it('keeps anthology texts without an identified author out of indexes', () => {
