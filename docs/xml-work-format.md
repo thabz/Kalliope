@@ -420,8 +420,8 @@ blive løst med et gæt.
 
 Formklassifikatoren kombinerer de uafhængige analyser af struktur, rim, metrik
 og stavelsesantal. Den genkender sonetter samt petrarcanske og shakespeareske
-undertyper, terza rima, ottava rima, rime royal, balladestrofer, distika,
-quatrains, blankvers og knittelvers:
+undertyper, terza rima, ottava rima, rime royal, balladestrofer,
+alexandriner, distika, quatrains, blankvers og knittelvers:
 
 ```xml
 <form>
@@ -448,8 +448,10 @@ også få den bredere klassifikation `quatrain`. `--form` begrænser både søgn
 og foreslået XML til det valgte mønster.
 
 De understøttede mønsternavne er `sonnet`, `terza-rima`, `ottava-rima`,
-`rime-royal`, `ballad-stanza`, `distich`, `quatrain`, `blank-verse` og
-`knittelvers`.
+`alexandrine`, `rime-royal`, `ballad-stanza`, `distich`, `quatrain`,
+`blank-verse` og `knittelvers`. Alexandriner kræver både seks jambiske fødder
+og et sikkert tolvstavelsesmønster; formen tildeles ikke alene ud fra
+linjelængden.
 
 En samlet, skrivebeskyttet rapport for ét digt-id viser alle delanalyser og den
 resulterende formklassifikation:

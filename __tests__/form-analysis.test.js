@@ -3,6 +3,7 @@ import os from 'os';
 import path from 'path';
 import { analyzeWorkXml, parseArgs, run } from '../tools/poetic-form/analyse-form.js';
 import { classifyPoeticForm } from '../tools/poetic-form/form-analysis.js';
+import { formKeywords } from '../tools/poetic-form/form-keywords.js';
 import { run as runPoeticForm } from '../tools/poetic-form/poetic-form.js';
 
 const signals = ({
@@ -100,6 +101,26 @@ describe('klassifikation af sonetter', () => {
   });
 });
 
+describe('keywordforslag fra formanalyse', () => {
+  it('bevarer både den specifikke og den brede strofeform', () => {
+    expect(formKeywords([
+      { pattern: 'ballad-stanza', confidence: 0.96 },
+      { pattern: 'quatrain', confidence: 0.99 },
+    ])).toEqual(['balladestrofe', 'firelinjet-strofe']);
+  });
+
+  it('udelader analyser under sikkerhedsgrænsen', () => {
+    expect(formKeywords([{ pattern: 'sonnet', confidence: 0.89 }])).toEqual([]);
+  });
+
+  it('indsætter afledte keywords uden at fjerne eksisterende metadata', () => {
+    const result = analyzeWorkXml(workXml(), { keywords: true, minConfidence: 0.9 });
+
+    expect(result.xml).toContain('<keywords>sonnet</keywords>');
+    expect(result.xml).not.toContain('<form>');
+  });
+});
+
 describe('klassifikation af andre poetiske former', () => {
   const confidence = (result, pattern) => result.analyses
     .find(analysis => analysis.pattern === pattern).confidence;
@@ -122,6 +143,17 @@ describe('klassifikation af andre poetiske former', () => {
       expect(confidence(result, pattern)).toBeGreaterThanOrEqual(0.9);
       expect(result.formSignals[pattern].length).toBeGreaterThan(0);
     });
+
+  it('kræver seks jamber og tolv stavelser for at foreslå alexandriner', () => {
+    const result = classifyPoeticForm(signals({
+      metre: [{ pattern: 'iambic-hexameter', confidence: 0.96 }],
+      rhyme: { pattern: 'AABBCCDD', confidence: 0.96 },
+      structure: { pattern: '8', confidence: 1 },
+      syllables: [{ pattern: 'alexandrine', confidence: 0.95 }],
+    }));
+
+    expect(confidence(result, 'alexandrine')).toBeGreaterThanOrEqual(0.95);
+  });
 
   it('identificerer distika ud fra gentagne tolinjede strofer', () => {
     const result = classifyPoeticForm(signals({
@@ -214,6 +246,7 @@ describe('formanalyse i XML og CLI', () => {
       dryRun: true,
       find: 'sonnet',
       form: 'sonnet',
+      keywords: false,
       minConfidence: 0.85,
       onlyMissing: true,
       poet: 'digter',
@@ -225,6 +258,7 @@ describe('formanalyse i XML og CLI', () => {
     expect(parseArgs(['--find', 'terza-rima']).form).toBe('terza-rima');
     expect(parseArgs(['--form', 'blank-verse']).form).toBe('blank-verse');
     expect(parseArgs(['--form', 'knittelvers']).form).toBe('knittelvers');
+    expect(parseArgs(['--form', 'alexandrine']).form).toBe('alexandrine');
   });
 
   it('viser find-resultater sorteret og ændrer ikke XML', () => {
