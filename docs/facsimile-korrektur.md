@@ -210,9 +210,12 @@ Strofeoverskrifter og andre trykte linjer, som ikke er vers, skal markeres efter
 <nonum><center>XLII.</center></nonum>
 ```
 
-En trykt skillelinje kan tilsvarende være en centreret `<nonum>`-linje eller et
-eksisterende, passende skilleelement. Følg mønstret i repositoryet; lad ikke en
-overskrift eller dekoration stå som en almindelig verslinje.
+En trykt, centreret vandret skillelinje skrives som `---` på en selvstændig
+linje med en tom linje både før og efter. `build-static` omsætter denne notation
+til det korrekte skilleelement. Andre trykte dekorationer kan være en centreret
+`<nonum>`-linje eller et eksisterende, passende skilleelement. Følg mønstret i
+repositoryet; lad ikke en overskrift eller dekoration stå som en almindelig
+verslinje.
 
 ## 4. Brug flere OCR-pass som kontrol
 
