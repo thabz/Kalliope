@@ -410,6 +410,19 @@ describe('Check workfiles', () => {
     },
   );
 
+  it.each(['Titel...', 'Titel.....', 'Titel . . .'])(
+    'allows a title ending with an ellipsis: %s',
+    title => {
+      const issues = titleMetadataIssues(
+        `<text id="ellipsis"><head><title>${title}</title></head></text>`,
+      );
+
+      expect(
+        issues.filter(issue => issue.rule === 'title-trailing-punctuation'),
+      ).toHaveLength(0);
+    },
+  );
+
   it('checks a work title', () => {
     const issues = titleMetadataIssues(
       '<kalliopework><workhead><title>Værktitel.</title></workhead></kalliopework>',

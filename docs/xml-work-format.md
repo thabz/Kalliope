@@ -543,12 +543,13 @@ Titelfelter er redaktionelle metadata og skrives normalt uden afsluttende
 punktum, kolon eller semikolon. Fjern derfor disse tegn til sidst i `<title>`,
 `<indextitle>`, `<toctitle>` og `<breadcrumbtitle>`, også når tegnet står i den
 trykte overskrift. Et nødvendigt tegn, eksempelvis punktummet i en afsluttende
-forkortelse eller en meningsbærende ellipse, bevares med den lokale undtagelse
+forkortelse, bevares med den lokale undtagelse
 `ignore-tests="title-trailing-punctuation"` på det relevante `<text>`-element
-eller, for et felt i `<workhead>`, på `<kalliopework>`. Undtagelsen på
-`<kalliopework>` gælder kun værkhovedet. Reglen gælder ikke `<linktitle>`,
-`<subtitle>`, `<suptitle>` eller den diplomatiske transskription i tekstlegemet,
-hvor kildens tegnsætning bevares.
+eller, for et felt i `<workhead>`, på `<kalliopework>`. En afsluttende ellipse
+med mindst tre punktummer, herunder formen `. . .`, er tilladt uden undtagelse.
+Undtagelsen på `<kalliopework>` gælder kun værkhovedet. Reglen gælder ikke
+`<linktitle>`, `<subtitle>`, `<suptitle>` eller den diplomatiske transskription i
+tekstlegemet, hvor kildens tegnsætning bevares.
 
 ### Keywords
 

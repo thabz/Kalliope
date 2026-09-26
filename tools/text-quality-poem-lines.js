@@ -232,7 +232,8 @@ const findTitleMetadataFindings = ({
         return;
       }
       const title = titleTextWithoutNotes(candidate);
-      if (/[.:;]$/u.test(title)) {
+      const endsWithAllowedEllipsis = /(?:\.\s*){3,}$/u.test(title);
+      if (/[.:;]$/u.test(title) && endsWithAllowedEllipsis === false) {
         issues.push(
           titleIssue({
             file,

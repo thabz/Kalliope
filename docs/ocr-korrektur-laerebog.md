@@ -118,11 +118,11 @@ de relevante XML-elementer uden for `<title>` og `<firstline>`.
 
 Titelfelter normaliseres desuden uden afsluttende punktum, kolon eller
 semikolon. Disse tegn udelades derfor normalt i titelmetadata. Nødvendige tegn,
-eksempelvis i en afsluttende forkortelse eller en meningsbærende ellipse,
-bevares med den dokumenterede `title-trailing-punctuation`-undtagelse.
-Undertitler, overtitler, linktitler og selve den diplomatiske transskription
-følger fortsat kildens tegnsætning. Se `docs/xml-work-format.md` for de
-omfattede titelfelter.
+eksempelvis i en afsluttende forkortelse, bevares med den dokumenterede
+`title-trailing-punctuation`-undtagelse. En ellipse med mindst tre punktummer,
+også skrevet `. . .`, er tilladt uden undtagelse. Undertitler, overtitler,
+linktitler og selve den diplomatiske transskription følger fortsat kildens
+tegnsætning. Se `docs/xml-work-format.md` for de omfattede titelfelter.
 
 ### 12. Bevar interne sideskift semantisk
 
