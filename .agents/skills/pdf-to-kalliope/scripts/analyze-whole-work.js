@@ -66,6 +66,7 @@ const possiblePhysicalWraps = body => {
 
 const plainText = line =>
   line
+    .replace(/<(?:note|footnote)\b[^>]*>[\s\S]*?<\/(?:note|footnote)>/gu, '')
     .replace(/<[^>]+>/gu, '')
     .replace(/&nbsp;/gu, ' ')
     .trim();

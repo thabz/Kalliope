@@ -27,7 +27,9 @@ const decodeEntities = value => value
     String.fromCodePoint(Number.parseInt(number, 16))
   );
 
-const plainText = value => decodeEntities(value.replace(/<[^>]+>/gu, ''));
+const plainText = value => decodeEntities(value
+  .replace(/<(?:note|footnote)\b[^>]*>[\s\S]*?<\/(?:note|footnote)>/gu, '')
+  .replace(/<[^>]+>/gu, ''));
 
 const normalizeForMatch = value => plainText(String(value ?? ''))
   .normalize('NFKD')
