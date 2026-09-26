@@ -233,6 +233,51 @@ describe('forberedelse af helværksgeometri', () => {
     ]);
   });
 
+  it('marks a line displaced around a tall drop capital as unsafe indentation geometry', () => {
+    const dropCapXml = xml.replace(
+      /<poetry>[\s\S]*?<\/poetry>/u,
+      '<poetry>En første linje\nanden linje\ntredje linje</poetry>',
+    ).replace('pages="8-9"', 'pages="8"');
+    const result = preparePoetryGeometry({
+      xml: dropCapXml,
+      variantsByFacsimile: {
+        '012.jpg': [{
+          name: '012-psm3.tsv',
+          lines: [
+            { ...ocrLine('En første linje', 200, 300), height: 82 },
+            ocrLine('anden linje', 264, 385),
+            ocrLine('tredje linje', 330, 300),
+          ],
+        }],
+      },
+    });
+
+    expect(result.blocks[0].lines[1]).toEqual(expect.objectContaining({
+      indentation_geometry_safe: false,
+      indentation_geometry_issue: 'drop_cap_clearance',
+    }));
+  });
+
+  it('measures indentation from the letter after hanging opening punctuation', () => {
+    const quotedXml = xml.replace(
+      /<poetry>[\s\S]*?<\/poetry>/u,
+      '<poetry>„Det er en citeret linje</poetry>',
+    ).replace('pages="8-9"', 'pages="8"');
+    const result = preparePoetryGeometry({
+      xml: quotedXml,
+      variantsByFacsimile: {
+        '012.jpg': [{
+          name: '012-psm3.tsv',
+          lines: [ocrLine('»Det er en citeret linje', 200, 100)],
+        }],
+      },
+    });
+    const [line] = result.blocks[0].lines;
+
+    expect(line.indentation_anchor_adjustment).toBe('hanging_punctuation');
+    expect(line.anchor_left).toBeGreaterThan(line.left);
+  });
+
   it.each([
     {
       name: 'missing',
@@ -337,6 +382,8 @@ describe('forberedelse af helværksgeometri', () => {
     });
 
     expect(result.status).toBe('manual_review');
+    expect(result.blocks[0].stanza_geometry_ready).toBe(false);
+    expect(result.blocks[0].indentation_geometry_ready).toBe(true);
     expect(result.blocks[0].ambiguous).toEqual([
       expect.objectContaining({
         type: 'dense_physical_wrapping',
