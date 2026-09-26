@@ -102,11 +102,11 @@ describe('tracked work corpus', () => {
 
       const xmlWithoutOrnamentBoundarySpacing = xml
         .replace(
-          /(<poetry(?:[ \t][^<>]*)?>\r?\n)[ \t]*\r?\n(?=<nonum><center>\* \* \*<\/center><\/nonum>)/gu,
+          /(<poetry(?:[ \t][^<>]*)?>\r?\n)[ \t]*\r?\n(?=<nonum><center>\*(?: \*){2,}<\/center><\/nonum>)/gu,
           '$1'
         )
         .replace(
-          /(<nonum><center>\* \* \*<\/center><\/nonum>\r?\n)[ \t]*\r?\n(?=<\/poetry>)/gu,
+          /(<nonum><center>\*(?: \*){2,}<\/center><\/nonum>\r?\n)[ \t]*\r?\n(?=<\/poetry>)/gu,
           '$1'
         );
       if (
@@ -120,7 +120,11 @@ describe('tracked work corpus', () => {
 
       const xmlLines = xml.replace(/\r\n?/g, '\n').split('\n');
       xmlLines.forEach((line, index) => {
-        if (line.trim() !== '<nonum><center>* * *</center></nonum>') return;
+        if (
+          !/^<nonum><center>\*(?: \*){2,}<\/center><\/nonum>$/.test(
+            line.trim()
+          )
+        ) return;
         if (xmlLines[index - 1] !== '' || xmlLines[index + 1] !== '') {
           asteriskOrnamentSpacingIssues.push(`${filename}:${index + 1}`);
         }
