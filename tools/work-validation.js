@@ -4,6 +4,7 @@ import {
   pageOnlySourceError,
   parsePageInterval,
 } from './build-static/source-validation.js';
+import { safeGetInnerXML } from './build-static/xml.js';
 
 const directChildren = (element, name) =>
   Array.from(element.childNodes).filter(
@@ -153,6 +154,34 @@ const collectTextStructureIssues = (filename, document) => {
         `${filename}: text ${textId} has only <prose> in <body> and must not have <firstline> in <head>.`,
       );
     }
+  });
+
+  return issues;
+};
+
+const collectRedundantTextTitleMetadataIssues = (filename, document) => {
+  const issues = [];
+
+  Array.from(document.getElementsByTagName('text')).forEach(text => {
+    const head = directChild(text, 'head');
+    const title = head == null ? null : directChild(head, 'title');
+    if (title == null) {
+      return;
+    }
+
+    const titleContent = safeGetInnerXML(title);
+    ['toctitle', 'indextitle', 'linktitle'].forEach(field => {
+      const fieldElement = directChild(head, field);
+      if (
+        fieldElement != null &&
+        safeGetInnerXML(fieldElement) === titleContent
+      ) {
+        const textId = text.getAttribute('id') ?? '(missing id)';
+        issues.push(
+          `${filename}: text ${textId} has a redundant <${field}> identical to <title>.`,
+        );
+      }
+    });
   });
 
   return issues;
@@ -389,6 +418,7 @@ export {
   collectPageBreakIssues,
   collectSourcePolicyIssues,
   collectSourceStructureIssues,
+  collectRedundantTextTitleMetadataIssues,
   collectTextStructureIssues,
   parseWorkXml,
 };

@@ -8,6 +8,7 @@ import {
   checksForWorkXml,
   collectBodyLinkIssues,
   collectPageBreakIssues,
+  collectRedundantTextTitleMetadataIssues,
   collectSourcePolicyIssues,
   collectSourceStructureIssues,
   collectTextStructureIssues,
@@ -27,11 +28,34 @@ const loadJsonLines = (filename) =>
     .filter(Boolean)
     .map((line) => JSON.parse(line));
 
+const proseXml = (xml) =>
+  xml.replace(/<poetry\b[^>]*>([\s\S]*?)<\/poetry>/gu, (_match, poetry) =>
+    [...poetry.matchAll(
+      /<(?:note|footnote)\b[^>]*>[\s\S]*?<\/(?:note|footnote)>/gu
+    )]
+      .map(([note]) => note)
+      .join('\n')
+  );
+
+const proseWordDivisionPattern = /\b([\p{L}]{3,})- ([\p{L}]{3,})\b/gu;
+const hyphenatedCoordinationWords = new Set([
+  'and',
+  'eller',
+  'et',
+  'och',
+  'oder',
+  'og',
+  'or',
+  'ou',
+  'und',
+]);
+
 describe('tracked work corpus', () => {
   let filenames;
   let bodyLinkIssues;
   let emptyAndreFiles;
   let formattingIssues;
+  let proseWordDivisionIssues;
   let pageBreakIssues;
   let pageIntervalIssues;
   let pageOnlySourceIssues;
@@ -40,14 +64,23 @@ describe('tracked work corpus', () => {
   let externalSourceLinkIssues;
   let textFollowsNoteIssues;
   let textStructureIssues;
+  let redundantTextTitleMetadataIssues;
   let unindexedAnthologyTexts;
 
   beforeAll(() => {
     const works = loadTrackedWorkFiles();
+    const corpusWords = new Set(
+      works.flatMap(({ content: xml }) =>
+        [...xml.replace(/<[^>]+>/gu, ' ').matchAll(/[\p{L}]+/gu)].map(
+          ([word]) => word.toLocaleLowerCase('da')
+        )
+      )
+    );
     filenames = works.map((work) => work.filename);
     bodyLinkIssues = [];
     emptyAndreFiles = [];
     formattingIssues = [];
+    proseWordDivisionIssues = [];
     pageBreakIssues = [];
     pageIntervalIssues = [];
     pageOnlySourceIssues = [];
@@ -56,6 +89,7 @@ describe('tracked work corpus', () => {
     externalSourceLinkIssues = [];
     textFollowsNoteIssues = [];
     textStructureIssues = [];
+    redundantTextTitleMetadataIssues = [];
     unindexedAnthologyTexts = [];
 
     works.forEach(({ content: xml, filename }) => {
@@ -103,7 +137,21 @@ describe('tracked work corpus', () => {
         poetryBoundaryBlankLineIssues.push(filename);
       }
 
+      for (const match of proseXml(xml).matchAll(proseWordDivisionPattern)) {
+        const secondPart = match[2].toLocaleLowerCase('da');
+        const joinedWord = `${match[1]}${match[2]}`.toLocaleLowerCase('da');
+        if (
+          corpusWords.has(joinedWord) &&
+          !hyphenatedCoordinationWords.has(secondPart)
+        ) {
+          proseWordDivisionIssues.push(`${filename}: ${match[0]}`);
+        }
+      }
+
       const checks = checksForWorkXml(xml);
+      redundantTextTitleMetadataIssues.push(
+        ...collectRedundantTextTitleMetadataIssues(filename, parseWorkXml(xml)),
+      );
       if (
         checks.bodyLinks !== true &&
         checks.sources !== true &&
@@ -158,6 +206,10 @@ describe('tracked work corpus', () => {
     expect(poetryBoundaryBlankLineIssues).toEqual([]);
   });
 
+  it('does not preserve probable print-line word divisions in prose', () => {
+    expect(proseWordDivisionIssues).toEqual([]);
+  });
+
   it('keeps anthology texts without an identified author out of indexes', () => {
     expect(unindexedAnthologyTexts).toEqual([]);
   });
@@ -188,6 +240,10 @@ describe('tracked work corpus', () => {
 
   it('does not assign first lines to prose-only texts', () => {
     expect(textStructureIssues).toEqual([]);
+  });
+
+  it('does not retain text title metadata identical to the title', () => {
+    expect(redundantTextTitleMetadataIssues).toEqual([]);
   });
 
   it('keeps declared page-break markup consistent', () => {

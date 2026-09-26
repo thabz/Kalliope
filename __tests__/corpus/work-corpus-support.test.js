@@ -5,6 +5,7 @@ import {
 import {
   checksForWorkXml,
   collectBodyLinkIssues,
+  collectRedundantTextTitleMetadataIssues,
   collectTextStructureIssues,
   parseWorkXml,
 } from '../../tools/work-validation.js';
@@ -114,6 +115,48 @@ describe('work corpus support', () => {
     `;
 
     expect(collectTextStructureIssues('work.xml', parseWorkXml(xml))).toEqual([]);
+  });
+
+  it('rejects redundant text title metadata', () => {
+    const xml = `
+      <kalliopework>
+        <text id="duplicate-title">
+          <head>
+            <title>Titel</title>
+            <toctitle>Titel</toctitle>
+            <indextitle>Titel</indextitle>
+            <linktitle>Titel</linktitle>
+          </head>
+        </text>
+      </kalliopework>
+    `;
+
+    expect(
+      collectRedundantTextTitleMetadataIssues('work.xml', parseWorkXml(xml)),
+    ).toEqual([
+      'work.xml: text duplicate-title has a redundant <toctitle> identical to <title>.',
+      'work.xml: text duplicate-title has a redundant <indextitle> identical to <title>.',
+      'work.xml: text duplicate-title has a redundant <linktitle> identical to <title>.',
+    ]);
+  });
+
+  it('allows text title metadata that differs from the title', () => {
+    const xml = `
+      <kalliopework>
+        <text id="distinct-title">
+          <head>
+            <title>Trykt titel</title>
+            <toctitle>Kort titel</toctitle>
+            <indextitle>Indekstitel</indextitle>
+            <linktitle>Linktitel</linktitle>
+          </head>
+        </text>
+      </kalliopework>
+    `;
+
+    expect(
+      collectRedundantTextTitleMetadataIssues('work.xml', parseWorkXml(xml)),
+    ).toEqual([]);
   });
 
   it.each([
