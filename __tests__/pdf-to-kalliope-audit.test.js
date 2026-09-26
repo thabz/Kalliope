@@ -253,6 +253,24 @@ describe('whole-work structure wrapper', () => {
     ]));
   });
 
+  it('reports a short lowercase continuation as a possible physical wrap', () => {
+    const xml = workXml.replace(
+      /<body><poetry>[\s\S]*?<\/poetry><\/body>/,
+      '<body><poetry>Her står en meget lang verslinje\nstaaer,\nNæste verslinje.</poetry></body>',
+    );
+    const [poem] = analyzeWholeWork(xml).poems;
+
+    expect(poem.candidates).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        source: 'wrapper',
+        type: 'possible_physical_wrap',
+        verse_line: 2,
+        preceding_verse_line: 1,
+        text: 'staaer,',
+      }),
+    ]));
+  });
+
   it('runs prepared stanza and indentation geometry for the whole work', () => {
     const xml = workXml.replace(
       /<body><poetry>[\s\S]*?<\/poetry><\/body>/,

@@ -28,6 +28,42 @@ const verseLineTexts = body => body
   .filter(isVerseLine)
   .map(plainText);
 
+const possiblePhysicalWraps = body => {
+  let verseLine = 0;
+  let previousVerse = null;
+  const candidates = [];
+  body.replace(/\r\n?/gu, '\n').split('\n').forEach(line => {
+    if (!isVerseLine(line)) {
+      previousVerse = null;
+      return;
+    }
+    verseLine += 1;
+    const currentText = plainText(line);
+    const words = currentText.split(/\s+/u).filter(Boolean);
+    if (
+      previousVerse != null &&
+      /^\p{Ll}/u.test(currentText) &&
+      words.length <= 3 &&
+      !/[.!?…:;—–\-”»)]\s*$/u.test(previousVerse.text)
+    ) {
+      candidates.push({
+        source: 'wrapper',
+        type: 'possible_physical_wrap',
+        verse_line: verseLine,
+        preceding_verse_line: previousVerse.verseLine,
+        text: currentText,
+        confidence: 'strong',
+        reason:
+          'En meget kort linje begynder med lille bogstav efter en syntaktisk uafsluttet verslinje og kan være en fysisk ombrydning.',
+        action:
+          'Kontrollér facsimilet; kod fortsættelsen med <wrap>, hvis begge trykte linjer udgør ét vers.',
+      });
+    }
+    previousVerse = { verseLine, text: currentText };
+  });
+  return candidates;
+};
+
 const plainText = line =>
   line
     .replace(/<[^>]+>/gu, '')
@@ -192,6 +228,7 @@ const analyzeWholeWork = (xml, options = {}) => {
       candidates: [
         ...stanza.candidates.map(candidate => ({ source: 'stanza', ...candidate })),
         ...indentation.candidates.map(candidate => ({ source: 'indentation', ...candidate })),
+        ...possiblePhysicalWraps(poem.body),
         ...(longUnbrokenBlock ? [{
           source: 'wrapper',
           type: 'very-long-unbroken-block',
