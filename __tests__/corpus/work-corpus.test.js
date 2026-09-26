@@ -100,9 +100,20 @@ describe('tracked work corpus', () => {
         formattingIssues.push(filename);
       }
 
+      const xmlWithoutOrnamentBoundarySpacing = xml
+        .replace(
+          /(<poetry(?:[ \t][^<>]*)?>\r?\n)[ \t]*\r?\n(?=<nonum><center>\* \* \*<\/center><\/nonum>)/gu,
+          '$1'
+        )
+        .replace(
+          /(<nonum><center>\* \* \*<\/center><\/nonum>\r?\n)[ \t]*\r?\n(?=<\/poetry>)/gu,
+          '$1'
+        );
       if (
-        /<poetry(?:[ \t][^<>]*)?>\r?\n[ \t]*\r?\n/.test(xml) ||
-        /\r?\n[ \t]*\r?\n<\/poetry>/.test(xml)
+        /<poetry(?:[ \t][^<>]*)?>\r?\n[ \t]*\r?\n/.test(
+          xmlWithoutOrnamentBoundarySpacing
+        ) ||
+        /\r?\n[ \t]*\r?\n<\/poetry>/.test(xmlWithoutOrnamentBoundarySpacing)
       ) {
         poetryBoundaryBlankLineIssues.push(filename);
       }
@@ -110,16 +121,12 @@ describe('tracked work corpus', () => {
       const xmlLines = xml.replace(/\r\n?/g, '\n').split('\n');
       xmlLines.forEach((line, index) => {
         if (line.trim() !== '<nonum><center>* * *</center></nonum>') return;
-        const atPoetryStart = xmlLines[index - 1]?.trim().startsWith('<poetry');
-        if (
-          (!atPoetryStart && xmlLines[index - 1] !== '') ||
-          xmlLines[index + 1] !== ''
-        ) {
+        if (xmlLines[index - 1] !== '' || xmlLines[index + 1] !== '') {
           asteriskOrnamentSpacingIssues.push(`${filename}:${index + 1}`);
         }
       });
 
-      if (/^[ \t]*\*[ \t]+\*[ \t]+\*[ \t]*$/m.test(xml)) {
+      if (/^[ \t]*\*(?:[ \t]+\*){2,}[ \t]*$/m.test(xml)) {
         rawAsteriskOrnamentIssues.push(filename);
       }
 
