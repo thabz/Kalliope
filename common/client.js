@@ -85,10 +85,22 @@ export const text = async (textId) => {
   return json;
 };
 
-export const search = async (poetId, country, query, page = 0) => {
-  let URL = `/search?country=${country}&query=${query}&page=${page}`;
+export const search = async (
+  poetId,
+  country,
+  query = '',
+  page = 0,
+  keywordIds = []
+) => {
+  let URL =
+    `/search?country=${encodeURIComponent(country)}` +
+    `&query=${encodeURIComponent(query)}` +
+    `&page=${encodeURIComponent(page)}`;
   if (poetId != null) {
-    URL += `&poetId=${poetId}`;
+    URL += `&poetId=${encodeURIComponent(poetId)}`;
+  }
+  if (keywordIds.length > 0) {
+    URL += `&keyword=${encodeURIComponent(keywordIds.join(','))}`;
   }
   const res = await fetch(createURL(URL));
   return await res.json();

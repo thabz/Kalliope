@@ -155,6 +155,7 @@ const Page = (props) => {
     menuItems,
     selectedMenuItem,
     query,
+    keywordIds = [],
   } = props;
   const lang = useContext(LangContext);
 
@@ -185,6 +186,7 @@ const Page = (props) => {
           selected={selectedMenuItem}
           country={country}
           query={query}
+          keywordIds={keywordIds}
           poet={poet}
           lang={lang}
           requestPath={requestPath}

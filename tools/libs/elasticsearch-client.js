@@ -95,6 +95,23 @@ class ElasticSearchClient {
               type: 'text',
               analyzer: 'kalliope_text',
             },
+            keyword: {
+              properties: {
+                id: {
+                  type: 'keyword',
+                },
+                title: {
+                  type: 'text',
+                  analyzer: 'kalliope_text',
+                  fields: {
+                    exact: {
+                      type: 'keyword',
+                      normalizer: 'kalliope_keyword',
+                    },
+                  },
+                },
+              },
+            },
             text: {
               properties: {
                 id: {
@@ -115,6 +132,13 @@ class ElasticSearchClient {
                   analyzer: 'kalliope_text',
                 },
                 subtitles: {
+                  type: 'text',
+                  analyzer: 'kalliope_text',
+                },
+                keyword_ids: {
+                  type: 'keyword',
+                },
+                keyword_titles: {
                   type: 'text',
                   analyzer: 'kalliope_text',
                 },
@@ -243,16 +267,28 @@ class ElasticSearchClient {
   }
 
   // Returns the raw JSON as (a promise of) text, not as an object.
-  search(index, type, country, poetId, query, page = 0) {
+  search(index, type, country, poetId, query, page = 0, keywordIds = []) {
     const URL = `${URLPrefix}/${index}/_search`;
-    const normalizedQuery = query.trim();
+    const normalizedQuery = (query ?? '').trim();
+    const normalizedKeywordIds = keywordIds
+      .map(keywordId => keywordId.trim())
+      .filter(keywordId => keywordId.length > 0);
     const globalIdSearchQuery = {
       bool: {
         should: [
           {
             bool: {
               filter: [{ term: { result_type: 'poet' } }],
-              must: [{ term: { 'poet.id': normalizedQuery } }],
+              must: [
+                {
+                  term: {
+                    'poet.id': {
+                      value: normalizedQuery,
+                      boost: 1000,
+                    },
+                  },
+                },
+              ],
             },
           },
           {
@@ -271,7 +307,7 @@ class ElasticSearchClient {
         must: [
           {
             multi_match: {
-              query,
+              query: normalizedQuery,
               fields: ['poet.id^8', 'poet_search^4'],
             },
           },
@@ -282,7 +318,7 @@ class ElasticSearchClient {
       {
         match: {
           [`${field}.exact`]: {
-            query,
+            query: normalizedQuery,
             boost: exactBoost,
           },
         },
@@ -290,7 +326,7 @@ class ElasticSearchClient {
       {
         match_phrase: {
           [field]: {
-            query,
+            query: normalizedQuery,
             boost: exactBoost / 2,
           },
         },
@@ -298,19 +334,49 @@ class ElasticSearchClient {
       {
         match_phrase_prefix: {
           [field]: {
-            query,
+            query: normalizedQuery,
             boost: exactBoost / 4,
           },
         },
       },
     ];
+    const keywordSearchQuery = {
+      bool: {
+        filter: [{ term: { result_type: 'keyword' } }],
+        must: [
+          {
+            bool: {
+              should: [
+                {
+                  term: {
+                    'keyword.id': {
+                      value: normalizedQuery,
+                      boost: 80,
+                    },
+                  },
+                },
+                {
+                  match: {
+                    'keyword.title': {
+                      query: normalizedQuery,
+                    },
+                  },
+                },
+              ],
+              minimum_should_match: 1,
+            },
+          },
+        ],
+        should: titleBoostQueries('keyword.title', 60),
+      },
+    };
     const workSearchQuery = {
       bool: {
         filter: [{ term: { result_type: 'work' } }],
         must: [
           {
             multi_match: {
-              query,
+              query: normalizedQuery,
               fields: ['work.title^8'],
             },
           },
@@ -324,12 +390,14 @@ class ElasticSearchClient {
         must: [
           {
             multi_match: {
-              query,
+              query: normalizedQuery,
               fields: [
                 'text.id^5',
                 'text.title^10',
                 'text.subtitles^2',
                 'text.content_html',
+                'text.keyword_ids^8',
+                'text.keyword_titles^6',
               ],
             },
           },
@@ -354,16 +422,61 @@ class ElasticSearchClient {
         },
       },
     };
+    const countryFilter =
+      country === 'all' ? [] : [{ term: { 'poet.country': country } }];
+    const inSelectedCountry = searchQuery => {
+      if (countryFilter.length === 0) {
+        return searchQuery;
+      }
+      return {
+        bool: {
+          must: [searchQuery],
+          filter: countryFilter,
+        },
+      };
+    };
+
+    if (normalizedKeywordIds.length > 0) {
+      body.query.bool.filter.push({ term: { result_type: 'text' } });
+      body.query.bool.filter.push(...countryFilter);
+      if (poetId != null && poetId.length > 0) {
+        body.query.bool.filter.push({ term: { 'poet.id': poetId } });
+      }
+      normalizedKeywordIds.forEach(keywordId => {
+        body.query.bool.filter.push({ term: { 'text.keyword_ids': keywordId } });
+      });
+      if (normalizedQuery.length > 0) {
+        body.query.bool.must.push(textSearchQuery);
+      }
+      return fetch(URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(body),
+      }).then(res => res.text());
+    }
+
+    if (normalizedQuery.length === 0) {
+      body.query = { match_none: {} };
+      return fetch(URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(body),
+      }).then(res => res.text());
+    }
+
     let contextualSearchQuery = null;
     if (poetId != null && poetId.length > 0) {
       contextualSearchQuery = {
         bool: {
           should: [workSearchQuery, textSearchQuery],
           minimum_should_match: 1,
-          filter: [
-            { term: { 'poet.id': poetId } },
-            { term: { 'poet.country': country } },
-          ],
+          filter: [{ term: { 'poet.id': poetId } }, ...countryFilter],
         },
       };
     } else {
@@ -375,18 +488,9 @@ class ElasticSearchClient {
         bool: {
           should: [
             poetSearchQuery,
-            {
-              bool: {
-                must: [workSearchQuery],
-                filter: [{ term: { 'poet.country': country } }],
-              },
-            },
-            {
-              bool: {
-                must: [textSearchQuery],
-                filter: [{ term: { 'poet.country': country } }],
-              },
-            },
+            keywordSearchQuery,
+            inSelectedCountry(workSearchQuery),
+            inSelectedCountry(textSearchQuery),
           ],
           minimum_should_match: 1,
         },
