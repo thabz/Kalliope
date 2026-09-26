@@ -88,6 +88,26 @@ describe('helpers', () => {
       ).toEqual(['&lt;er røde af blodet af mænd, der dræbes,&gt;']);
     });
 
+    it('renders Bible xrefs as links', () => {
+      expect(
+        lineTexts('Se <xref bible="bibelmatt13,45-46"/>.')
+      ).toEqual([
+        'Se <a bible="bibelmatt13,45-46">Matt13,45-46</a>.',
+      ]);
+    });
+
+    it('keeps numbered Bible book names separate from chapter numbers', () => {
+      expect(
+        lineTexts(
+          '<xref bible="bibel1mose1"/>; ' +
+          '<xref bible="bibel2korint05,17"/>'
+        )
+      ).toEqual([
+        '<a bible="bibel1mose1">1 Mos1</a>; ' +
+          '<a bible="bibel2korint05,17">2 Kor5,17</a>',
+      ]);
+    });
+
     it('preserves inline margin markers in prose', () => {
       expect(
         htmlToXml(
