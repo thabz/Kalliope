@@ -36,6 +36,7 @@ describe('tracked work corpus', () => {
   let pageIntervalIssues;
   let pageOnlySourceIssues;
   let poetryBoundaryBlankLineIssues;
+  let asteriskOrnamentSpacingIssues;
   let andreWorkheadSourceIssues;
   let externalSourceLinkIssues;
   let textFollowsNoteIssues;
@@ -52,6 +53,7 @@ describe('tracked work corpus', () => {
     pageIntervalIssues = [];
     pageOnlySourceIssues = [];
     poetryBoundaryBlankLineIssues = [];
+    asteriskOrnamentSpacingIssues = [];
     andreWorkheadSourceIssues = [];
     externalSourceLinkIssues = [];
     textFollowsNoteIssues = [];
@@ -102,6 +104,18 @@ describe('tracked work corpus', () => {
       ) {
         poetryBoundaryBlankLineIssues.push(filename);
       }
+
+      const xmlLines = xml.replace(/\r\n?/g, '\n').split('\n');
+      xmlLines.forEach((line, index) => {
+        if (line.trim() !== '<nonum><center>* * *</center></nonum>') return;
+        const atPoetryStart = xmlLines[index - 1]?.trim().startsWith('<poetry');
+        if (
+          (!atPoetryStart && xmlLines[index - 1] !== '') ||
+          xmlLines[index + 1] !== ''
+        ) {
+          asteriskOrnamentSpacingIssues.push(`${filename}:${index + 1}`);
+        }
+      });
 
       const checks = checksForWorkXml(xml);
       if (
@@ -156,6 +170,10 @@ describe('tracked work corpus', () => {
 
   it('keeps poetry free of leading and trailing blank lines', () => {
     expect(poetryBoundaryBlankLineIssues).toEqual([]);
+  });
+
+  it('keeps a blank line around centered asterisk ornaments', () => {
+    expect(asteriskOrnamentSpacingIssues).toEqual([]);
   });
 
   it('keeps anthology texts without an identified author out of indexes', () => {
