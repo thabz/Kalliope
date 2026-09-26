@@ -3,16 +3,16 @@ import fs from 'fs';
 const catalogFilename = 'content/literary-periods.json';
 const requiredTitleLanguages = ['da', 'en', 'fr', 'de'];
 const knownCountries = new Set([
-  'dk', 'se', 'no', 'gb', 'de', 'fr', 'us', 'it', 'un',
+  'dk', 'se', 'no', 'is', 'gb', 'de', 'fr', 'us', 'it', 'un',
 ]);
 const knownTraditions = new Set([
   'dk', 'se', 'no', 'gb', 'de', 'fr', 'us', 'it',
-  'es', 'fa', 'grc', 'la', 'nl', 'sv-fi',
+  'es', 'fa', 'grc', 'la', 'nl', 'is', 'sv-fi',
 ]);
 const traditionCountries = {
   dk: ['dk'], se: ['se'], no: ['no'], gb: ['gb'], de: ['de', 'un'],
   fr: ['fr'], us: ['us'], it: ['it'], es: ['un'], fa: ['un'],
-  grc: ['un'], la: ['un'], nl: ['un'], 'sv-fi': ['un'],
+  grc: ['un'], la: ['un'], nl: ['un'], is: ['is'], 'sv-fi': ['un'],
 };
 
 const validateLiteraryPeriods = catalog => {
