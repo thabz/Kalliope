@@ -58,6 +58,7 @@ describe('tracked work corpus', () => {
   let pageOnlySourceIssues;
   let poetryBoundaryBlankLineIssues;
   let rawAsteriskOrnamentIssues;
+  let asteriskOrnamentSpacingIssues;
   let andreWorkheadSourceIssues;
   let externalSourceLinkIssues;
   let textFollowsNoteIssues;
@@ -75,6 +76,7 @@ describe('tracked work corpus', () => {
     pageOnlySourceIssues = [];
     poetryBoundaryBlankLineIssues = [];
     rawAsteriskOrnamentIssues = [];
+    asteriskOrnamentSpacingIssues = [];
     andreWorkheadSourceIssues = [];
     externalSourceLinkIssues = [];
     textFollowsNoteIssues = [];
@@ -133,6 +135,15 @@ describe('tracked work corpus', () => {
         rawAsteriskOrnamentIssues.push(filename);
       }
 
+      const xmlLines = xml.replace(/\r\n?/g, '\n').split('\n');
+      xmlLines.forEach((line, index) => {
+        if (line.trim() !== '<nonum><center>* * *</center></nonum>') return;
+        const atPoetryStart = xmlLines[index - 1]?.trim().startsWith('<poetry');
+        if ((!atPoetryStart && xmlLines[index - 1] !== '') || xmlLines[index + 1] !== '') {
+          asteriskOrnamentSpacingIssues.push(`${filename}:${index + 1}`);
+        }
+      });
+
       const checks = checksForWorkXml(xml);
       if (
         checks.bodyLinks !== true &&
@@ -190,6 +201,10 @@ describe('tracked work corpus', () => {
 
   it('requires centered nonum markup for asterisk ornaments', () => {
     expect(rawAsteriskOrnamentIssues).toEqual([]);
+  });
+
+  it('keeps a blank line around centered asterisk ornaments', () => {
+    expect(asteriskOrnamentSpacingIssues).toEqual([]);
   });
 
   it('keeps anthology texts without an identified author out of indexes', () => {
