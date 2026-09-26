@@ -132,6 +132,14 @@ Kontrollér maskinelt:
 Linjetælling finder strukturfejl, som en almindelig OCR-sammenligning ikke ser.
 En korrekt tekst kan stadig være opdelt forkert.
 
+Strofeanalysen afprøver desuden plausible ensartede strofelængder mod hele
+digtet. Hver hypotese vurderes efter, om alle verslinjer dækkes uden rest, hvor
+mange eksisterende grænser der bevares, hvor mange grænser der skal fjernes
+eller tilføjes, og hvor mange intakte strofer der allerede støtter mønstret.
+Resultatets `uniform_pattern_hypotheses` viser de bedst rangerede forslag og de
+konkrete grænseændringer. En global hypotese bruges kun, når den har tydelig
+afstand til næstbedste forslag; kandidaterne skal stadig kontrolleres visuelt.
+
 Ved sideskift skal optællingen fortsætte på tværs af siden. Afgør ud fra
 facsimilet, strofeformen og den løbende tekst, om den første linje på den nye
 side fortsætter en strofe eller begynder en ny. En ny fysisk side er ikke i sig
