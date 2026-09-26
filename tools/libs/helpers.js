@@ -157,7 +157,7 @@ const htmlToXml = (html, collected, isPoetry) => {
   html = html
     .replace(/&lt;/g, escapedLessThanPlaceholder)
     .replace(/&gt;/g, escapedGreaterThanPlaceholder);
-  const regexp = /<xref.*?(digt|poem|keyword|work|bible|dict)=['"]([^'"]*)['"][^>]*>/;
+  const regexp = /<xref.*?(digt|poem|keyword|work|bibel|dict)=['"]([^'"]*)['"][^>]*>/;
   if (isPoetry) {
     // Marker strofe numre
     html = html
@@ -234,7 +234,7 @@ const htmlToXml = (html, collected, isPoetry) => {
         } else {
           return `<a dict="${id}">${meta.title}</a>`;
         }
-      } else if (type === 'bible') {
+      } else if (type === 'bibel') {
         const originalAttribute = `${id}`;
         id = id.replace(/^bibel/, '');
         let verses = id.match(/,(.*)$/);
@@ -242,11 +242,10 @@ const htmlToXml = (html, collected, isPoetry) => {
           id = id.replace(',' + verses[1], '');
           verses = verses[1];
         }
-        let chapter = id.match(/(\d+)$/);
+        let chapter = id.match(/(\d*)$/);
         if (chapter != null) {
-          const chapterDigits = chapter[1];
-          id = id.slice(0, -chapterDigits.length);
-          chapter = chapterDigits.replace(/^0*/, '');
+          id = id.replace(chapter[1], '');
+          chapter = chapter[1].replace(/^0*/, '');
         } else {
           const error = `xref dead bible link: ${originalAttribute}`;
           throw error;
