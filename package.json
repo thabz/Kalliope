@@ -21,6 +21,7 @@
     "test": "jest",
     "test-watch": "jest --watch",
     "test-ci": "jest",
+    "test-search-integration": "KALLIOPE_ELASTICSEARCH_INTEGRATION=true jest --runInBand __tests__/search-regression.test.js",
     "test2": "next test",
     "new-text-id": "node tools/new-text-id.js",
     "poetic-form": "node tools/poetic-form/poetic-form.js",
@@ -42,11 +43,11 @@
     "@xmldom/xmldom": "^0.9.12",
     "ics": "^2.4.1",
     "mkdirp": "^0.5.1",
-    "next": "^16.3.0",
+    "next": "^16.3.3",
     "p-limit": "^2.2.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "sharp": "^0.35.0"
+    "sharp": "^0.35.4"
   },
   "devDependencies": {
     "jest": "^30.4.2"

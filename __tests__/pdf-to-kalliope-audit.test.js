@@ -1,18 +1,18 @@
 import {
   auditPageInventory,
   buildPageInventory,
-} from '../.codex/skills/pdf-to-kalliope/scripts/audit-utils.js';
-import { analyzeWholeWork } from '../.codex/skills/pdf-to-kalliope/scripts/analyze-whole-work.js';
-import { historicalOcrCandidates } from '../.codex/skills/pdf-to-kalliope/scripts/audit-ocr-candidates.js';
+} from '../.agents/skills/pdf-to-kalliope/scripts/audit-utils.js';
+import { analyzeWholeWork } from '../.agents/skills/pdf-to-kalliope/scripts/analyze-whole-work.js';
+import { historicalOcrCandidates } from '../.agents/skills/pdf-to-kalliope/scripts/audit-ocr-candidates.js';
 import {
   updateFinding,
   validateFindings,
-} from '../.codex/skills/pdf-to-kalliope/scripts/findings-register.js';
+} from '../.agents/skills/pdf-to-kalliope/scripts/findings-register.js';
 import {
   createCheckpoint,
   validateReviewerRanges,
   verifyCheckpoint,
-} from '../.codex/skills/pdf-to-kalliope/scripts/review-checkpoint.js';
+} from '../.agents/skills/pdf-to-kalliope/scripts/review-checkpoint.js';
 
 const workXml = `<?xml version="1.0"?>
 <kalliopework id="1900" author="test">
@@ -161,6 +161,42 @@ describe('whole-work structure wrapper', () => {
 
     expect(poem.page_breaks).toEqual([2]);
     expect(poem.indentation.indentation_profile).toEqual([0, 4, 0]);
+  });
+
+  it('runs prepared stanza and indentation geometry for the whole work', () => {
+    const xml = workXml.replace(
+      /<body><poetry>[\s\S]*?<\/poetry><\/body>/,
+      '<body><poetry>Første linje\nAnden linje\n\nTredje linje\nFjerde linje</poetry></body>',
+    ).replace('pages="10-12"', 'pages="10"');
+    const lines = [100, 160, 280, 340].map((top, index) => ({
+      page: 1,
+      left: index === 3 ? 200 : 100,
+      top,
+      width: 500,
+      height: 30,
+      text: `${['Første', 'Anden', 'Tredje', 'Fjerde'][index]} linje`,
+    }));
+    const result = analyzeWholeWork(xml, {
+      variantsByFacsimile: {
+        '010.jpg': [{ name: '010.psm6.tsv', lines }],
+      },
+    });
+    const [poem] = result.poems;
+
+    expect(result.geometry_summary).toEqual(expect.objectContaining({
+      ready_block_count: 1,
+      manual_review_block_count: 0,
+      safe_geometry_line_count: 4,
+    }));
+    expect(poem.geometry.status).toBe('ready');
+    expect(poem.geometry.stanza.suggested_boundaries).toEqual([2]);
+    expect(poem.candidates).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        source: 'indentation_geometry',
+        type: 'possible_missing_indentation',
+        verse_line: 4,
+      }),
+    ]));
   });
 });
 

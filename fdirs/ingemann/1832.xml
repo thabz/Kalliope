@@ -868,10 +868,10 @@ Med Seierssang jeg vilde døe
   <title>Den barnlige Konstner</title>
   <subtitle>(Efter et Malerie af Du Jardin i den Kongl. Samling).</subtitle>
   <firstline>Sort Bølgen under Stormens Vinger strømmer</firstline>
-  <source pages="38"/>
   <pictures>
     <picture src="ingemann2017100413-p1.jpg" invnr="KMSsp561" museum="smk" year="1663">Karel Dujardin (1622-1678): <i>Dreng, der blæser sæbebobler. Allegori på forgængeligheden</i>, 1663, olie på lærred, 116×96,5cm.</picture>
   </pictures>
+  <source pages="38"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1978,8 +1978,8 @@ Salig Livets Seierssang du sjunger.
   <subtitle>(Da han reiste til Rom. 1817).</subtitle>
   <firstline>Drag hen, hvor Skjønheds Genier dig vinke</firstline>
   <source pages="84"/>
-  <quality>korrektur1,kilde,side</quality>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2638,7 +2638,6 @@ Regner det atter idag? fort da mod Solskin og Vaar!
 <head>
   <title>De Pontinske Sumper</title>
   <firstline>Dødsblund, kom os ei nær! her er de berygtede Sumper</firstline>
-  <source pages="112"/>
   <pictures>
     <picture src="ingemann2017100436-p2.jpg">H.C. Andersen: <i>Landeveien over de Pontinske Sumpe; man seer Circes Ø; nu Circello</i>, tegning, 22. marts 1834. Odense Bys Museer. <!-- http://www.hcandersen-homepage.dk/?page_id=59773 --></picture>
     <picture src="ingemann2017100436-p1.jpg" objid="958670" museum="smb">August Kopisch (1799-1853): <i>Die Pontinischen Sümpfe bei Sonnenuntergang</i>, 1848, olie på lærred, 62 × 111 cm. Alte Nationalgalerie, Berlin. <!-- Berlin, Staatliche Museen zu Berlin - Preußischer Kulturbesitz, Nationalgalerie, Inventar-Nr. W.S. 118, Zugang: Zusammenführung, 1991 -->
@@ -2647,6 +2646,7 @@ Regner det atter idag? fort da mod Solskin og Vaar!
       </identifiers>
     </picture>
   </pictures>
+  <source pages="112"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4360,15 +4360,15 @@ Sig blander tungt Farvel med Afskedssangen.
   <toctitle>Afskeden</toctitle>
   <indextitle>Afskeden</indextitle>
   <firstline>Ved Tiberbroen paa romersk Vei</firstline>
+  <dates>
+    <written>1819-04-21</written>
+  </dates>
   <notes>
     <note>Ingemanns note: »Til Familien <i>Bügel</i>, Moderen og de fire Døtre, i hvis Selskab jeg havde foretaget Reisen fra Rom til Neapel og tilbage til Rom.«</note>
   </notes>
   <source pages="192-194"/>
-  <dates>
-    <written>1819-04-21</written>
-  </dates>
-  <quality>korrektur1,kilde,side</quality>
   <keywords>rom</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4429,8 +4429,8 @@ En Taare jeg i deres Øine saae -
 <head>
   <firstline>Forladt af Vennerne fra Norden nu</firstline>
   <source pages="194-195"/>
-  <quality>korrektur1,kilde,side</quality>
   <keywords>schmidtf</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4465,10 +4465,10 @@ Dets Farveglands mig skal til Norgen følge.
   <title>Afskedsfest i Storta</title>
   <subtitle>(Den 27de April 1819)</subtitle>
   <firstline>End er Dansken stærk i Roma</firstline>
-  <source pages="196-199"/>
   <dates>
     <written>1819-04-27</written>
   </dates>
+  <source pages="196-199"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5090,11 +5090,11 @@ Saligt, til vi see den hist.
 <head>
   <title>Paa Veien fra Rom</title>
   <firstline>Med dine Blomster følg mig, du fromme Barneaand!</firstline>
-  <source pages="219-222"/>
   <pictures>
     <picture artwork="jensenca/jensenca-1836" />
     <picture src="ingemann2017100459-p2.jpg">Rafael Sanzio: <i>Messa di Bolsena</i>, 1512, fresko. Vatikanmuseet.</picture>
   </pictures>
+  <source pages="219-222"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5173,8 +5173,8 @@ Der atter Hjemmets Toner i fremmed Land mig naaer.
     <note>* En Villa ved Pisa, tilhørende den norske kjøbmand Stub i Liverno.</note>
   </notes>
   <source pages="222-223"/>
-  <quality>korrektur1,kilde,side</quality>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5521,10 +5521,10 @@ Flygted i hvirvlende Sky og blinked i Lynglands.
   <title>Afsked med Italien</title>
   <subtitle>(Triest den 15de Juli 1819).</subtitle>
   <firstline>Farvel, du Land med Trylleluft</firstline>
-  <source pages="235-237"/>
   <dates>
     <written>1819-07-15</written>
   </dates>
+  <source pages="235-237"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

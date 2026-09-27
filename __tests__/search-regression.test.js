@@ -1,7 +1,22 @@
+import fs from 'fs';
 import elasticSearchClient from '../tools/libs/elasticsearch-client.js';
 
 const elasticsearchURL =
   process.env.ELASTICSEARCH_URL || 'http://localhost:9200';
+const elasticsearchIndex = 'kalliope-ci';
+const integrationEnabled =
+  process.env.KALLIOPE_ELASTICSEARCH_INTEGRATION === 'true';
+const regressionPoetIds = new Set([
+  'blake',
+  'claussen',
+  'goethe',
+  'ingemann',
+  'luetken',
+  'mallarme',
+  'reenberg',
+]);
+
+jest.setTimeout(180000);
 
 const fetchWithTimeout = (url, options = {}) => {
   return fetch(url, {
@@ -10,20 +25,36 @@ const fetchWithTimeout = (url, options = {}) => {
   });
 };
 
-const hasSearchIndex = async () => {
-  try {
-    const res = await fetchWithTimeout(`${elasticsearchURL}/kalliope`, {
-      method: 'HEAD',
-    });
-    return res.ok;
-  } catch (error) {
-    return false;
+const loadCollectedMap = name => {
+  const entries = JSON.parse(
+    fs.readFileSync(`caches/collected.${name}.json`, 'utf8')
+  );
+  return new Map(entries);
+};
+
+const loadCollected = () => ({
+  poets: loadCollectedMap('poets'),
+  works: loadCollectedMap('works'),
+  texts: loadCollectedMap('texts'),
+  keywords: loadCollectedMap('keywords'),
+  dict: loadCollectedMap('dict'),
+});
+
+const requireElasticsearch = async () => {
+  const res = await fetchWithTimeout(
+    `${elasticsearchURL}/_cluster/health?wait_for_status=yellow&timeout=30s`,
+    { signal: AbortSignal.timeout(35000) }
+  );
+  if (res.ok === false) {
+    throw new Error(
+      `Elasticsearch health check failed with status ${res.status}.`
+    );
   }
 };
 
 const search = async ({ country, poetId = '', query }) => {
   const responseText = await elasticSearchClient.search(
-    'kalliope',
+    elasticsearchIndex,
     'text',
     country,
     poetId,
@@ -34,12 +65,23 @@ const search = async ({ country, poetId = '', query }) => {
 
 const hitIds = result => result.hits.hits.map(hit => hit._id);
 
-describe('Elasticsearch search regression', () => {
-  test('covers merged search fixes when Elasticsearch is available', async () => {
-    if (!(await hasSearchIndex())) {
-      return;
-    }
+const describeElasticsearch = integrationEnabled ? describe : describe.skip;
 
+describeElasticsearch('Elasticsearch search regression', () => {
+  beforeAll(async () => {
+    await requireElasticsearch();
+    const { update_elasticsearch } = await import(
+      '../tools/build-static/elastic.js'
+    );
+    await update_elasticsearch(loadCollected(), {
+      index: elasticsearchIndex,
+      poetIds: regressionPoetIds,
+      forceRebuild: true,
+      skipUnavailable: false,
+    });
+  });
+
+  test('covers merged search fixes against Elasticsearch', async () => {
     // PR #1248: exact text-id searches should find the single poem directly.
     const singleTextId = await search({
       country: 'dk',

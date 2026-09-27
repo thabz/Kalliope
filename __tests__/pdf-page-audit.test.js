@@ -1,4 +1,4 @@
-import { parseSimplePages } from '../.codex/skills/pdf-to-kalliope/scripts/audit-utils.js';
+import { parseSimplePages } from '../.agents/skills/pdf-to-kalliope/scripts/audit-utils.js';
 
 describe('PDF page audit helpers', () => {
   it('preserves a non-canonical printed Roman endpoint', () => {

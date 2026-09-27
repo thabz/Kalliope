@@ -59,7 +59,12 @@ digtere.
 
 ## Git og GitHub
 
-- Hele testpakken skal køres og bestå, før der oprettes en PR.
+- Kør `make test`, før der oprettes en PR. Kommandoen skal afslutte med
+  exitkode 0; der kræves ikke andre testkommandoer, medmindre en relevant
+  specialdokumentation udtrykkeligt angiver dem.
+- Opret altid worktrees under
+  `$HOME/src/kalliope-worktrees/<digterid>-<titel>-<årstal>/`, fx
+  `$HOME/src/kalliope-worktrees/blicher-digte-1814/`.
 - Når brugeren beder om at få fikset et issue, skal agenten starte i et nyt
   worktree baseret på `origin/master` og først melde arbejdet klar, når GitHub
   CI er gennemført.
@@ -77,3 +82,4 @@ digtere.
 - Når du opretter eller opdaterer en PR, behøver du ikke vente på GitHubs CI, medmindre brugeren eksplicit beder om det.
 - Når brugeren beder dig merge en PR, skal det ske som squash merge.
 - Ved `gh pr create`, `gh issue create`, `gh pr comment` og `gh issue comment` skal brødteksten skrives til en midlertidig fil og sendes med `--body-file`. Skriv ikke markdown direkte i shell-argumenter, fordi backticks og anden shell-syntaks kan blive evalueret som kommandoer.
+- Avoid commands that dump large amounts of text into context. Use grep -l, head, targeted searches, counts, or write large intermediate output to a temporary file and inspect only relevant portions.

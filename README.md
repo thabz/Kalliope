@@ -67,7 +67,17 @@ kilde-XML'en skal kontrolleres.
 Kør testene før større ændringer eller pull requests:
 
 ```shell
-npm test
+make test
+```
+
+Søgeregressionstesten kræver en kørende Elasticsearch og data fra et fuldt
+static-build. Den opretter et isoleret `kalliope-ci`-indeks med et mindre udvalg
+af digtere:
+
+```shell
+make elasticsearch
+KALLIOPE_SKIP_ELASTICSEARCH=true KALLIOPE_SKIP_IMAGE_THUMBNAILS=true npm run build-static
+npm run test-search-integration
 ```
 
 ## Facsimile-generering

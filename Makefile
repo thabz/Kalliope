@@ -3,12 +3,13 @@
 COMPOSE ?= docker compose
 POETS ?=
 
-.PHONY: help elasticsearch build-static build-static-force-reload build-sqlite sqlite \
+.PHONY: help test elasticsearch build-static build-static-force-reload build-sqlite sqlite \
 	build-facsimiles extract-facsimiles reextract-facsimiles \
 	sync-facsimiles sync-wikidata app status
 
 help:
 	@printf '%s\n' \
+		'make test                       Kør hele testsuiten' \
 		'make elasticsearch              Start Elasticsearch' \
 		'make build-static              Byg statiske data' \
 		'make build-static-force-reload Byg statiske data uden cachede build-data' \
@@ -21,6 +22,9 @@ help:
 		'make sync-wikidata             Synkroniser metadata fra Wikidata' \
 		'make app                       Byg og start appen' \
 		'make status                    Vis status for Docker Compose-services'
+
+test:
+	npm test
 
 elasticsearch:
 	$(COMPOSE) up -d --wait elasticsearch
