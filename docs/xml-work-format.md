@@ -745,7 +745,9 @@ facsimilekilde. I ældre værkfiler med flere kilder begynder en ny rækkefølge
 når tekstens `source/@in` skifter. Uden `source/@in` gælder én rækkefølge for
 hele værket. Spring er gyldige, fordi sideskift mellem to tekstposter ikke får
 en markør. Romertalsværdier i `n` indgår ikke i den maskinelle
-rækkefølgekontrol.
+rækkefølgekontrol. Sideskift inde i hver note kontrolleres i deres egen
+rækkefølge, fordi en slutnote kan være trykt senere end det vers, dens
+notemarkør er knyttet til.
 
 Hvis et lovligt sideinterval undtagelsesvis ikke kan omsættes til
 `slutside - startside` interne markører, kan den konkrete tekst bruge
@@ -858,6 +860,11 @@ Noter i selve teksten kan skrives som `<note>` eller `<footnote>` i tekstblokken
 Linje med note<note>Tekstkritisk note.</note>
 Prosatekst<footnote>Fodnote.</footnote>
 ```
+
+I `<poetry>` skal noten stå på samme linje som det ord, vers eller den
+overskrift, den henviser til. En note må ikke stå alene på en linje, heller
+ikke når den er trykt nederst på en side i kilden: det giver en løsrevet
+notemarkør. Renderingen placerer selv noteteksten under digtet.
 
 Links i noter og fodnoter indgaar i referenceopsamlingen.
 
