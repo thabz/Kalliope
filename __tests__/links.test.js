@@ -41,6 +41,9 @@ describe('link builders', () => {
     expect(bibleURL('da', 'bibelMatt5,1-3')).toBe(
       '/da/text/bibelMatt5?highlight=1-3#h',
     );
+    expect(bibleURL('da', 'bibeljakob01,1,2,5-6')).toBe(
+      '/da/text/bibeljakob01?highlight=1,2,5-6#h',
+    );
     expect(searchURL('da', 'blomstrende mark', 'dk')).toBe(
       '/da/search/dk?query=blomstrende+mark',
     );

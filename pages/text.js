@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Router from 'next/router';
 import { useContext, useEffect } from 'react';
 import * as Client from '../common/client.js';
+import { parseHighlightIntervals } from '../common/highlights.js';
 import LangContext from '../common/LangContext.js';
 import * as OpenGraph from '../common/opengraph.js';
 import { pluralize } from '../common/strings.js';
@@ -548,28 +549,12 @@ const TextPage = (props) => {
   if (text.text_type === 'section' && text.toc != null) {
     body = <TOC toc={text.toc} lang={lang} indent={1} />;
   } else {
-    let highlightInterval;
-    if (highlight != null) {
-      let m = null;
-      let from = -1,
-        to = -1;
-      if ((m = highlight.match(/(\d+)-(\d+)/))) {
-        from = parseInt(m[1]);
-        to = parseInt(m[2]);
-      } else if ((m = highlight.match(/(\d+)ff/))) {
-        from = parseInt(m[1]);
-        to = Number.MAX_VALUE;
-      } else if ((m = highlight.match(/(\d+)/))) {
-        from = parseInt(m[1]);
-        to = parseInt(m[1]);
-      }
-      highlightInterval = { from, to };
-    }
+    const highlightIntervals = parseHighlightIntervals(highlight);
     const renderedBlocks = text.blocks.map((block, i) => {
       const { type, lines, options } = block;
       const blockOptions = {
         isPoetry: type === 'poetry',
-        highlight: highlightInterval,
+        highlightIntervals,
         ...options,
       };
       return (

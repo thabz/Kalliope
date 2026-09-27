@@ -413,8 +413,8 @@ const TextContent = (props) => {
       return lineOptions.displayNum != null || lineOptions.margin != null;
     }) != null;
 
-  if (options.highlight != null) {
-    const highlight = options.highlight;
+  let highlightIntervals = [];
+  if (options.highlightIntervals != null) {
     const lastLineNum = contentHtml
       .map((l) => {
         const lineOptions = l.length > 1 ? l[1] : {};
@@ -425,31 +425,44 @@ const TextContent = (props) => {
       .reduce((maxLineNum, lineNum) => {
         return Math.max(lineNum, maxLineNum);
       }, -1);
-    // Bound the values
-    highlight.from = Math.max(1, highlight.from);
-    highlight.to = Math.min(lastLineNum, highlight.to);
+    highlightIntervals = options.highlightIntervals
+      .map(highlight => ({
+        from: Math.max(1, highlight.from),
+        to: Math.min(lastLineNum, highlight.to),
+      }))
+      .filter(highlight => highlight.from <= highlight.to);
   }
 
-  let isHighlighting = false;
+  let activeHighlight = null;
+  const firstHighlight = highlightIntervals.at(0) ?? null;
   const lines = contentHtml.map((l, i) => {
     const lineOptions = l.length > 1 ? l[1] : {};
     const lineNum = lineOptions.num != null ? parseInt(lineOptions.num) : null;
     let className = '';
     let anchor = null;
     let rendered = null;
-    if (options.highlight != null) {
-      if (lineNum != null && lineNum === options.highlight.from) {
-        isHighlighting = true;
+    if (highlightIntervals.length > 0) {
+      const startingHighlight = highlightIntervals.find(
+        highlight => lineNum != null && lineNum === highlight.from,
+      );
+      if (startingHighlight != null) {
+        activeHighlight = startingHighlight;
         className += ' highlighted-line first-highlighted-line';
       }
-      if (lineNum != null && lineNum === options.highlight.to) {
-        isHighlighting = false;
+      if (
+        activeHighlight != null &&
+        lineNum != null &&
+        lineNum === activeHighlight.to
+      ) {
         className += ' highlighted-line last-highlighted-line';
       }
-      if (isHighlighting) {
+      if (activeHighlight != null) {
         className += ' highlighted-line';
       }
-      if (lineNum === options.highlight.from - 4) {
+      if (activeHighlight != null && lineNum === activeHighlight.to) {
+        activeHighlight = null;
+      }
+      if (firstHighlight != null && lineNum === firstHighlight.from - 4) {
         anchor = <a id="h" name="h" />;
       }
     }

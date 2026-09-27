@@ -966,7 +966,12 @@ Brug `<footnote>` til fodnoter, der stammer fra kilden. Linkmetadata som
 <note>Se <a work="goethe/1819">West-oestlicher Divan</a>.</note>
 <note>Se <a href="https://...">den eksterne kilde</a>.</note>
 <note>Se <a bible="bibeljohn03,16">Joh 3,16</a>.</note>
+<note>Se <a bible="bibeljakob01,1,2,5-6">Jak 1,1, 1,2 og 1,5-6</a>.</note>
 ```
+
+Efter kommaet i `bible`-attributten kan flere vers og versintervaller angives
+som en kommasepareret liste inden for samme kapitel. `ff` kan bruges om resten
+af kapitlet, fx `bibeljakob01,9ff`, men kun i listens sidste led.
 
 `<xref ...>` er en genvej, der i buildet omskrives til `<a ...>`. I værkfiler
 skal den ligesom `<a>` placeres i en note eller fodnote:
