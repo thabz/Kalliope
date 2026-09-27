@@ -7,6 +7,7 @@ import {
 import {
   checksForWorkXml,
   collectBodyLinkIssues,
+  collectStandaloneFootnoteIssues,
   collectPageBreakIssues,
   collectSourcePolicyIssues,
   collectSourceStructureIssues,
@@ -30,6 +31,7 @@ const loadJsonLines = (filename) =>
 describe('tracked work corpus', () => {
   let filenames;
   let bodyLinkIssues;
+  let standaloneFootnoteIssues;
   let emptyAndreFiles;
   let formattingIssues;
   let pageBreakIssues;
@@ -46,6 +48,7 @@ describe('tracked work corpus', () => {
     const works = loadTrackedWorkFiles();
     filenames = works.map((work) => work.filename);
     bodyLinkIssues = [];
+    standaloneFootnoteIssues = [];
     emptyAndreFiles = [];
     formattingIssues = [];
     pageBreakIssues = [];
@@ -103,8 +106,10 @@ describe('tracked work corpus', () => {
         poetryBoundaryBlankLineIssues.push(filename);
       }
 
+      const checkFootnotes = /<(?:note|footnote)\b/.test(xml);
       const checks = checksForWorkXml(xml);
       if (
+        checkFootnotes !== true &&
         checks.bodyLinks !== true &&
         checks.sources !== true &&
         checks.sourcePolicy !== true &&
@@ -115,6 +120,11 @@ describe('tracked work corpus', () => {
       }
 
       const document = parseWorkXml(xml);
+      if (checkFootnotes === true) {
+        standaloneFootnoteIssues.push(
+          ...collectStandaloneFootnoteIssues(filename, document)
+        );
+      }
       const sourcePolicyIssues = collectSourcePolicyIssues(filename, document);
       andreWorkheadSourceIssues.push(
         ...sourcePolicyIssues.andreWorkheadSources
@@ -160,6 +170,10 @@ describe('tracked work corpus', () => {
 
   it('keeps anthology texts without an identified author out of indexes', () => {
     expect(unindexedAnthologyTexts).toEqual([]);
+  });
+
+  it('attaches poetry footnotes to text or headings', () => {
+    expect(standaloneFootnoteIssues).toEqual([]);
   });
 
   it('keeps links out of work body text', () => {

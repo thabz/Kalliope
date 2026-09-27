@@ -149,6 +149,10 @@ const redirects = [
     to: '/api/$1/$2.xml',
   },
   {
+    from: /^(\/[a-z]{2}\/(?:works|work|bio|texts|mentions|portraits))\/hertzb(?=\/|$)(.*)/,
+    to: '$1/boye$2',
+  },
+  {
     from: /(.*)\/winter(.*)/,
     to: '$1/winther$2',
   },
@@ -259,6 +263,7 @@ app.prepare().then(() => {
       pathname.indexOf('.pl') > -1 ||
       pathname.indexOf('/bibliography/') > -1 ||
       pathname.indexOf('/winter') > -1 ||
+      /\/hertzb(?:\/|$)/.test(pathname) ||
       (pathname.indexOf('.xml') > -1 && pathname.indexOf('/work/') > -1)
     ) {
       let done = false;

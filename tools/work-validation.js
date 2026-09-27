@@ -24,6 +24,18 @@ const hasAncestor = (node, name) => {
   return false;
 };
 
+// Notes can be printed as endnotes, later than the verse containing their marker.
+const noteAncestor = node => {
+  let current = node.parentNode;
+  while (current != null) {
+    if (current.nodeName === 'note' || current.nodeName === 'footnote') {
+      return current;
+    }
+    current = current.parentNode;
+  }
+  return null;
+};
+
 const ignoresTest = (node, testName) =>
   (node.getAttribute('ignore-tests') ?? '')
     .split(',')
@@ -128,6 +140,44 @@ const collectBodyLinkIssues = (filename, document) => {
     });
   });
 
+  return issues;
+};
+
+const collectStandaloneFootnoteIssues = (filename, document) => {
+  const issues = [];
+  Array.from(document.getElementsByTagName('poetry')).forEach(poetry => {
+    const notes = [];
+    const visibleContent = node => {
+      if (node.nodeType === 3) return node.nodeValue ?? '';
+      if (node.nodeType !== 1) return '';
+      if (node.nodeName === 'footnote' || node.nodeName === 'note') {
+        notes.push(node);
+        return `\uE000${notes.length - 1}\uE001`;
+      }
+      if (['pb', 'num', 'margin', 'resetnum'].includes(node.nodeName)) {
+        return '';
+      }
+      if (node.nodeName === 'br') return '\n';
+      return Array.from(node.childNodes).map(visibleContent).join('');
+    };
+    const textId = textEntryAncestor(poetry)?.getAttribute('id') ?? '(ukendt tekst)';
+    visibleContent(poetry).split(/\r?\n/).forEach(line => {
+      const markers = Array.from(line.matchAll(/\uE000(\d+)\uE001/g));
+      if (
+        markers.length === 0 ||
+        line.replace(/\uE000\d+\uE001/g, '').trim().length > 0
+      ) {
+        return;
+      }
+      markers.forEach(marker => {
+        const note = notes[Number(marker[1])];
+        const preview = note.textContent.replace(/\s+/g, ' ').trim().slice(0, 80);
+        issues.push(
+          `${filename}: text ${textId} has a standalone <${note.nodeName}> (${preview}); attach it to its text or heading.`,
+        );
+      });
+    });
+  });
   return issues;
 };
 
@@ -305,7 +355,7 @@ const collectPageBreakIssues = (
   pageBreaks.forEach(pageBreak => {
     const facs = pageBreak.getAttribute('facs');
     const facsimilePage = facs == null ? null : parseFacsimilePageNumber(facs);
-    const sourceId = facsimileSourceId(pageBreak);
+    const sourceId = noteAncestor(pageBreak) ?? facsimileSourceId(pageBreak);
     const previousFacsimilePage = previousFacsimilePages.get(sourceId) ?? null;
     if (
       facsimilePage != null &&
@@ -325,8 +375,10 @@ const collectPageBreakIssues = (
   });
 
   textEntries(document).forEach(text => {
-    let previousPrintedPage = null;
+    const previousPrintedPages = new Map();
     Array.from(text.getElementsByTagName('pb')).forEach(pageBreak => {
+      const stream = noteAncestor(pageBreak) ?? text;
+      const previousPrintedPage = previousPrintedPages.get(stream) ?? null;
       const printedLabel = pageBreak.getAttribute('n');
       const printedPage =
         printedLabel == null ? null : parseArabicPageNumber(printedLabel);
@@ -340,7 +392,7 @@ const collectPageBreakIssues = (
         );
       }
       if (printedPage != null) {
-        previousPrintedPage = { label: printedLabel, number: printedPage };
+        previousPrintedPages.set(stream, { label: printedLabel, number: printedPage });
       }
     });
   });
@@ -386,6 +438,7 @@ const collectPageBreakIssues = (
 export {
   checksForWorkXml,
   collectBodyLinkIssues,
+  collectStandaloneFootnoteIssues,
   collectPageBreakIssues,
   collectSourcePolicyIssues,
   collectSourceStructureIssues,

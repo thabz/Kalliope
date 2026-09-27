@@ -5,6 +5,7 @@ import {
 import {
   checksForWorkXml,
   collectBodyLinkIssues,
+  collectStandaloneFootnoteIssues,
   collectTextStructureIssues,
   parseWorkXml,
 } from '../../tools/work-validation.js';
@@ -140,5 +141,42 @@ describe('work corpus support', () => {
     `;
 
     expect(collectBodyLinkIssues('work.xml', parseWorkXml(xml))).toEqual([]);
+  });
+});
+
+
+describe('standalone poetry footnotes', () => {
+  const issuesFor = poetry => collectStandaloneFootnoteIssues(
+    'work.xml',
+    parseWorkXml(`<kalliopework><text id="poem"><body><poetry>${poetry}</poetry></body></text></kalliopework>`),
+  );
+
+  it.each(['note', 'footnote'])('detects a standalone <%s> despite layout markup', tag => {
+    const issues = issuesFor(`Verslinje
+<pb n="2"/><num>11</num><i><${tag}>En lang
+note.</${tag}></i>
+Næste verslinje`);
+    expect(issues).toHaveLength(1);
+    expect(issues[0]).toContain(`work.xml: text poem has a standalone <${tag}>`);
+  });
+
+  it('detects multiple markers on an otherwise empty line', () => {
+    expect(issuesFor('Vers<br/><note>A</note> <footnote>B</footnote>')).toHaveLength(2);
+  });
+
+  it('allows attached notes with multiline contents and heading notes', () => {
+    expect(issuesFor(`Et ord<footnote>En lang
+note.</footnote> i verset.
+<nonum><center>Overskrift<note>Forklaring</note></center></nonum>`)).toEqual([]);
+  });
+
+  it('detects a marker alone in a heading wrapper', () => {
+    expect(issuesFor('<nonum><center><note>Forklaring</note></center></nonum>')).toHaveLength(1);
+  });
+
+  it('ignores metadata notes and comments', () => {
+    const document = parseWorkXml(`<text id="poem"><head><notes><note>Metadata</note></notes></head><body><poetry>Vers
+<!-- <footnote>Kommentar</footnote> --></poetry></body></text>`);
+    expect(collectStandaloneFootnoteIssues('work.xml', document)).toEqual([]);
   });
 });

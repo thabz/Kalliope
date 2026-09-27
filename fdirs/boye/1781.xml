@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
-<kalliopework id="1781" author="hertzb" status="complete" type="poetry">
+<kalliopework id="1781" author="boye" status="complete" type="poetry">
 <workhead>
   <title>Davids Psalmer i en fri Oversættelse</title>
   <year>1781-1785</year>
@@ -10,6 +10,8 @@
     <picture type="titlepage" src="1781-p3.jpg">Titelbladet til anden og tredie bog, andet hæfte af Birgitte Catharine Boyes <i>Davids Psalmer i en fri Oversættelse</i> (1785).</picture>
   </pictures>
   <notes>
+    <note>Noter med foranstillet * er Birgitte Boyes egne.</note>
+    <note>Salmerne er frie oversættelser af Salmernes Bog. I forerindringen oplyser Boye, at hun især har fulgt Michaelis og desuden benyttet tyske, franske og engelske forfattere. Bibelhenvisningerne i oversættelsesnoterne fører til Kalliopes danske bibeltekst til sammenligning.</note>
     <note>Den ikke-litterære Fortegnelse paa Subskribenterne i første bind er ikke medtaget som tekst.</note>
   </notes>
   <source id="bd1" href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122434840605763" facsimile="110108019526" facsimile-pages-num="163" facsimile-pages-offset="23">Birgitte Catharine Boye: <i>Davids Psalmer i en fri Oversættelse</i>, første bog, første hæfte, trykt hos Friderich Wilhelm Thiele, Kiøbenhavn, 1781.<identifiers><kb-alma>99122434840605763</kb-alma></identifiers></source>
@@ -25,7 +27,7 @@
   <title>Første Bog. Første Hefte</title>
 </head>
 <content>
-<text id="hertzb2026090801">
+<text id="boye2026090801" aliases="hertzb2026090801">
 <head>
   <suptitle>
     <line>Til</line>
@@ -67,7 +69,7 @@ Skee da Guds Villie! Mig er det en Glæde: at i denne forventede ærefulde Udød
 </body>
 </text>
 
-<text id="hertzb2026090802">
+<text id="boye2026090802" aliases="hertzb2026090802">
 <head>
   <title>Forerindring</title>
   <source in="bd1" pages="14-15" facsimile-pages="14-15"/>
@@ -82,13 +84,14 @@ Ved nærværende fri Oversættelse af Davids Psalmer har jeg vel fornemmelig ful
 </body>
 </text>
 
-<text id="hertzb2026090803">
+<text id="boye2026090803" aliases="hertzb2026090803">
 <head>
   <title>Den 1. Psalme</title>
   <subtitle>Mel. (af Kingo) Ret nys gik Solens Klarhed hen.</subtitle>
   <firstline>Vel den, der ikke gaaer i Raad</firstline>
   <notes>
-    <note>Denne Psalme kan ansees som en Fortale til de øvrige. — De Ugudelige og Fromme modsættes hinanden; Guds Forbandelser true de første, og de sidste forsikkres om Guds Velsignelse.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme1">Salmernes Bog 1</a>.</note>
+    <note>* Denne Psalme kan ansees som en Fortale til de øvrige. — De Ugudelige og Fromme modsættes hinanden; Guds Forbandelser true de første, og de sidste forsikkres om Guds Velsignelse.</note>
   </notes>
   <source in="bd1" pages="1-2"/>
   <keywords>salme</keywords>
@@ -131,13 +134,14 @@ Paa egne Veie til Fordærvelse. —
 </body>
 </text>
 
-<text id="hertzb2026090804">
+<text id="boye2026090804" aliases="hertzb2026090804">
 <head>
   <title>Den 2. Psalme</title>
   <subtitle>Forrige Melodie.</subtitle>
   <firstline>Hvorfore fnyse Hedninge?</firstline>
   <notes>
-    <note>Folket sammenrotte sig imod Guds Søn, den af Gud indsatte Konge, og vil forstyrre hans Rige; men alle deres Anslag ere frugtesløse.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme2">Salmernes Bog 2</a>.</note>
+    <note>* Folket sammenrotte sig imod Guds Søn, den af Gud indsatte Konge, og vil forstyrre hans Rige; men alle deres Anslag ere frugtesløse.</note>
   </notes>
   <source in="bd1" pages="3-4"/>
   <keywords>salme</keywords>
@@ -204,13 +208,14 @@ O! vel da dem, som ved hans Arm bestaae!
 </body>
 </text>
 
-<text id="hertzb2026090805">
+<text id="boye2026090805" aliases="hertzb2026090805">
 <head>
   <title>Den 3. Psalme</title>
   <subtitle>Mel. (af Kingo) Vaag op og slaae paa dine Strenge.</subtitle>
   <firstline>Hvor mange ere mine Fiender!</firstline>
   <notes>
-    <note>Denne Psalme synes egentlig at henhøre til den Deel af Davids Historie, som er beskreven i 2den Samuels 17. Cap. fra 1ste til 23de Vers.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme3">Salmernes Bog 3</a>.</note>
+    <note>* Denne Psalme synes egentlig at henhøre til den Deel af Davids Historie, som er beskreven i <a bible="bibel2samuel17,1-23">2den Samuels 17. Cap. fra 1ste til 23de Vers</a>.</note>
   </notes>
   <source in="bd1" pages="5-6"/>
   <keywords>salme</keywords>
@@ -253,13 +258,14 @@ Velsign dit Folk, o Jehova!
 </body>
 </text>
 
-<text id="hertzb2026090806">
+<text id="boye2026090806" aliases="hertzb2026090806">
 <head>
   <title>Den 4. Psalme</title>
   <subtitle>Mel. (af Kingo) Den prægtig Soel, som hele Verden glæder.</subtitle>
   <firstline>Gud! naar mit Raab fortrængt af Angst stræber</firstline>
   <notes>
-    <note>Denne Psalme synes, ligesom den foregaaende, at være forfærdiget af David i den Tid han flyede for Absalon.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme4">Salmernes Bog 4</a>.</note>
+    <note>* Denne Psalme synes, ligesom den foregaaende, at være forfærdiget af David i den Tid han flyede for Absalon.</note>
   </notes>
   <source in="bd1" pages="7-8"/>
   <keywords>salme</keywords>
@@ -310,13 +316,14 @@ Og sover trygt; du giør min Boelig sikker;
 </body>
 </text>
 
-<text id="hertzb2026090807">
+<text id="boye2026090807" aliases="hertzb2026090807">
 <head>
   <title>Den 5. Psalme</title>
   <subtitle>Mel. Vreden din afvend.</subtitle>
   <firstline>O Jehova! agt hvad jeg vil fremføre!</firstline>
   <notes>
-    <note>En Takke- og Lovsang, som synes at være siungen ved Morgen-Offere, da David efter sin langvarige Flugt for Saul var kommen tilbage igien til sit Fædreneland. — Her bliver blant andet afhandlet: at man med reene Hierter skal komme i Helligdommen, og at de Ugudelige, som der fremkomme, ere i Guds Øine uværdige Tilbedere.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme5">Salmernes Bog 5</a>.</note>
+    <note>* En Takke- og Lovsang, som synes at være siungen ved Morgen-Offere, da David efter sin langvarige Flugt for Saul var kommen tilbage igien til sit Fædreneland. — Her bliver blant andet afhandlet: at man med reene Hierter skal komme i Helligdommen, og at de Ugudelige, som der fremkomme, ere i Guds Øine uværdige Tilbedere.</note>
   </notes>
   <source in="bd1" pages="9-11"/>
   <keywords>salme</keywords>
@@ -405,13 +412,14 @@ Frimodig, tryg; thi giennem alle Farer
 </body>
 </text>
 
-<text id="hertzb2026090808">
+<text id="boye2026090808" aliases="hertzb2026090808">
 <head>
   <title>Den 6. Psalme</title>
   <subtitle>Mel. Lad andre hen i Trældom gaae.</subtitle>
   <firstline>O Jehova! — o straf mig ei</firstline>
   <notes>
-    <note>Davids Bøn mod hans Fiender; han erkiender i samme, at have fortient alle sine Gienvordigheder med sine Synder mod Gud; han beder om Syndsforladelse, og fatter nyt Mod; troer og, at hans Fiender skal ikke blive ham overlegne.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme6">Salmernes Bog 6</a>.</note>
+    <note>* Davids Bøn mod hans Fiender; han erkiender i samme, at have fortient alle sine Gienvordigheder med sine Synder mod Gud; han beder om Syndsforladelse, og fatter nyt Mod; troer og, at hans Fiender skal ikke blive ham overlegne.</note>
   </notes>
   <source in="bd1" pages="12-13"/>
   <keywords>salme</keywords>
@@ -476,13 +484,14 @@ Beskæmmede tilbage. —
 </body>
 </text>
 
-<text id="hertzb2026090809">
+<text id="boye2026090809" aliases="hertzb2026090809">
 <head>
   <title>Den 7. Psalme</title>
   <subtitle>Mel. O kiere Siel! frygt aldrig meer.</subtitle>
   <firstline>Jeg flyver til dig, o Jehova!</firstline>
   <notes>
-    <note>En i Historien os ikke videre end af Navn bekiendt Cusch af Benjamins Stamme havde bagtalt David hos Saul; David kalder den alvidende Gud til Vidne, som kiendte hans Uskyldighed, og ønsker over sig selv Guds svare Straf, hvis han var skyldig i det, han blev beskyldt for, eller hvis han havde giengieldet sine Fienders Ondskab med Ondt, og anraaber Gud om Hielp, om han er uskyldig.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme7">Salmernes Bog 7</a>.</note>
+    <note>* En i Historien os ikke videre end af Navn bekiendt Cusch af Benjamins Stamme havde bagtalt David hos Saul; David kalder den alvidende Gud til Vidne, som kiendte hans Uskyldighed, og ønsker over sig selv Guds svare Straf, hvis han var skyldig i det, han blev beskyldt for, eller hvis han havde giengieldet sine Fienders Ondskab med Ondt, og anraaber Gud om Hielp, om han er uskyldig.</note>
   </notes>
   <source in="bd1" pages="14-16"/>
   <keywords>salme</keywords>
@@ -494,7 +503,7 @@ Beskæmmede tilbage. —
 Jeg flyver til dig, o Jehova!
 Udræk din Haand og riv mig fra
 Den Hob, som mig forfølger,
-At Han <footnote>Formodentlig Saul.</footnote>, den grumme Løve liig,
+At Han <footnote>* Formodentlig Saul.</footnote>, den grumme Løve liig,
 Skal ikke sønderrive mig
 Og jeg i Dødens Farer
 Ei have en Forsvarer.
@@ -583,13 +592,14 @@ Og lyde høit og længe. —
 </body>
 </text>
 
-<text id="hertzb2026090810">
+<text id="boye2026090810" aliases="hertzb2026090810">
 <head>
   <title>Den 8. Psalme</title>
   <subtitle>Mel. Store Prophete med himmelske Lære.</subtitle>
   <firstline>Jehova! som over Verdener troner!</firstline>
   <notes>
-    <note>En Betragtning over Skabelsen, og Guds Almagt og Majestæt, som deraf fremlyser, men i Besynderlighed over Menneskets herlige Fortrin og det Herredømme, Skaberen haver givet ham over den ganske Jord.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme8">Salmernes Bog 8</a>.</note>
+    <note>* En Betragtning over Skabelsen, og Guds Almagt og Majestæt, som deraf fremlyser, men i Besynderlighed over Menneskets herlige Fortrin og det Herredømme, Skaberen haver givet ham over den ganske Jord.</note>
   </notes>
   <source in="bd1" pages="17-18"/>
   <keywords>salme</keywords>
@@ -656,13 +666,14 @@ Hvor er dit Navn ei om Jordkredsen prægtigt!
 </body>
 </text>
 
-<text id="hertzb2026090811">
+<text id="boye2026090811" aliases="hertzb2026090811">
 <head>
   <title>Den 9. Psalme</title>
   <subtitle>Mel. (af Kingo) Vaag op og slaae paa dine Strenge.</subtitle>
   <firstline>O du, som al min Sang besieler</firstline>
   <notes>
-    <note>En Seier-Sang over det Israelitiske Folks Fiender, i Anledning af en Seier, som blev indlagt den Tid David var Konge over det ganske Israel, og da Pagtens Ark allerede var bragt til Zion.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme9">Salmernes Bog 9</a>.</note>
+    <note>* En Seier-Sang over det Israelitiske Folks Fiender, i Anledning af en Seier, som blev indlagt den Tid David var Konge over det ganske Israel, og da Pagtens Ark allerede var bragt til Zion.</note>
   </notes>
   <source in="bd1" pages="19-22"/>
   <keywords>salme</keywords>
@@ -793,13 +804,14 @@ Kun dødelige Mennesker!
 </body>
 </text>
 
-<text id="hertzb2026090812">
+<text id="boye2026090812" aliases="hertzb2026090812">
 <head>
   <title>Den 10. Psalme</title>
   <subtitle>Mel. O kiere Siel! frygt aldrig meer.</subtitle>
   <firstline>O Jehova! vor Kraft, vor Roes!</firstline>
   <notes>
-    <note>Denne Psalme synes ikke at være skreven længe før eller efter den 9de Psalme, og at sigte til en anden ligedan Krig, hvilken Israeliterne har havt med et Folk, som havde brudt det Forbund, de stode i med dem. Forskellen imellem disse tvende Psalmer er ikkun denne: at her bliver tillige de Ulykker, som Israeliterne har udstaaet i Krigen, klageligen andragne for Gud, som anraabes om Hielp, og ved sin begyndte Hielp prises.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme10">Salmernes Bog 10</a>.</note>
+    <note>* Denne Psalme synes ikke at være skreven længe før eller efter den <a bible="bibelsalme9">9de Psalme</a>, og at sigte til en anden ligedan Krig, hvilken Israeliterne har havt med et Folk, som havde brudt det Forbund, de stode i med dem. Forskellen imellem disse tvende Psalmer er ikkun denne: at her bliver tillige de Ulykker, som Israeliterne har udstaaet i Krigen, klageligen andragne for Gud, som anraabes om Hielp, og ved sin begyndte Hielp prises.</note>
   </notes>
   <source in="bd1" pages="23-26"/>
   <keywords>salme</keywords>
@@ -918,13 +930,14 @@ Og blindt sit Støv forgiette —
 </body>
 </text>
 
-<text id="hertzb2026090813">
+<text id="boye2026090813" aliases="hertzb2026090813">
 <head>
   <title>Den 11. Psalme</title>
   <subtitle>Mel. (af Kingo) Ret nys gik Solens Klarhed hen.</subtitle>
   <firstline>Selv Jehova min Tilflugt er</firstline>
   <notes>
-    <note>David var udsat for en stor Fare, og blev raadet at befrie sig atter med Landflygtighed, ligesom da han i sin Flugt for Saul maatte søge Sikkerhed blant steile og øde Klipper; men han sætter sit Haab paa Gud.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme11">Salmernes Bog 11</a>.</note>
+    <note>* David var udsat for en stor Fare, og blev raadet at befrie sig atter med Landflygtighed, ligesom da han i sin Flugt for Saul maatte søge Sikkerhed blant steile og øde Klipper; men han sætter sit Haab paa Gud.</note>
   </notes>
   <source in="bd1" pages="27-28"/>
   <keywords>salme</keywords>
@@ -968,7 +981,7 @@ Som Hevnens Gud, som den Retfærdige.
 Thi Luften selv skal hvisle ved
 Den Slange-formet Lynilds skarpe Fart,
 Og Svovlet regne antændt ned,
-Og giftig Østen-Vind <footnote>En brændende og giftig Vind, som undertiden i Julii og August indfinder sig for nogle Minuter i Arabien og Palæstina, og dræber enhver, som ikke hurtig nok skiuler sig for den.</footnote>, som dræber snart,
+Og giftig Østen-Vind <footnote>* En brændende og giftig Vind, som undertiden i Julii og August indfinder sig for nogle Minuter i Arabien og Palæstina, og dræber enhver, som ikke hurtig nok skiuler sig for den.</footnote>, som dræber snart,
 Skal bruse frem med Ødelæggelse,
 Og de skal drikke Vredens Bægere.
 
@@ -983,13 +996,14 @@ Og trænger til de Redelige ned.
 </body>
 </text>
 
-<text id="hertzb2026090814">
+<text id="boye2026090814" aliases="hertzb2026090814">
 <head>
   <title>Den 12. Psalme</title>
   <subtitle>Mel. Hielp Gud, at jeg nu kunde.</subtitle>
   <firstline>O lær os dine Domme</firstline>
   <notes>
-    <note>David seer imod tilstundende slette Tider, da de Redelige uddøe, og der opstaaer i deres Sted en ond og bedragelig Slægt; men han sætter sit Haab til Gud.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme12">Salmernes Bog 12</a>.</note>
+    <note>* David seer imod tilstundende slette Tider, da de Redelige uddøe, og der opstaaer i deres Sted en ond og bedragelig Slægt; men han sætter sit Haab til Gud.</note>
   </notes>
   <source in="bd1" pages="29-30"/>
   <keywords>salme</keywords>
@@ -1054,13 +1068,14 @@ Der sig formeerer snart.
 </body>
 </text>
 
-<text id="hertzb2026090815">
+<text id="boye2026090815" aliases="hertzb2026090815">
 <head>
   <title>Den 13. Psalme</title>
   <subtitle>Mel. Lad andre hen i Trældom gaae.</subtitle>
   <firstline>Hvor længe vil du glemme mig</firstline>
   <notes>
-    <note>En Bøn om Hielp mod sine Fiender.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme13">Salmernes Bog 13</a>.</note>
+    <note>* En Bøn om Hielp mod sine Fiender.</note>
   </notes>
   <source in="bd1" pages="31-32"/>
   <keywords>salme</keywords>
@@ -1107,13 +1122,14 @@ Han vil min Tillid krone!
 </body>
 </text>
 
-<text id="hertzb2026090816">
+<text id="boye2026090816" aliases="hertzb2026090816">
 <head>
   <title>Den 14. Psalme</title>
   <subtitle>Mel. Store Prophete med himmelske Lære.</subtitle>
   <firstline>Daaren sin dyriske Siel vil indbilde</firstline>
   <notes>
-    <note>En Klage over Guds Folkes ugudelige Undertrykkere, som David ikke kunde styre, omendskiønt han var Konge, efterdi de havde alt for megen Magt og Anseelse; han finder Kilden til alle deres Laster og Uretfærdigheder i en hemmelig Gudsfornægtelse og Vantro, og ønsker: at der i Fremtiden maatte opstaae en Regent i Zion, som kunde forekomme dette Onde, hvilket nu ikke var ham mueligt at forhindre.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme14">Salmernes Bog 14</a>.</note>
+    <note>* En Klage over Guds Folkes ugudelige Undertrykkere, som David ikke kunde styre, omendskiønt han var Konge, efterdi de havde alt for megen Magt og Anseelse; han finder Kilden til alle deres Laster og Uretfærdigheder i en hemmelig Gudsfornægtelse og Vantro, og ønsker: at der i Fremtiden maatte opstaae en Regent i Zion, som kunde forekomme dette Onde, hvilket nu ikke var ham mueligt at forhindre.</note>
   </notes>
   <source in="bd1" pages="33-34"/>
   <keywords>salme</keywords>
@@ -1164,13 +1180,14 @@ Og alle Israels Stammer tilbede —
 </body>
 </text>
 
-<text id="hertzb2026090817">
+<text id="boye2026090817" aliases="hertzb2026090817">
 <head>
   <title>Den 15. Psalme</title>
   <subtitle>Mel. Herren han er min Hyrde god.</subtitle>
   <firstline>Hvo tør sit Vaanings Telt udslaae</firstline>
   <notes>
-    <note>Da Pagtens Ark var bragt til Zion, beskrev David Indvaanernes Pligter i denne Stad; disse, der fremfor andre boede under Guds Beskyttelse, og i hans besynderlige Nærværelse.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme15">Salmernes Bog 15</a>.</note>
+    <note>* Da Pagtens Ark var bragt til Zion, beskrev David Indvaanernes Pligter i denne Stad; disse, der fremfor andre boede under Guds Beskyttelse, og i hans besynderlige Nærværelse.</note>
   </notes>
   <source in="bd1" pages="35-36"/>
   <keywords>salme</keywords>
@@ -1226,13 +1243,14 @@ Og de skal ei bortstødes.
 </body>
 </text>
 
-<text id="hertzb2026090818">
+<text id="boye2026090818" aliases="hertzb2026090818">
 <head>
   <title>Den 16. Psalme</title>
   <subtitle>Mel. Ret nys gik Solens Klarhed hen.</subtitle>
   <firstline>Du stærke Gud! bevar du mig</firstline>
   <notes>
-    <note>En Spaadom om Christi Opstandelse fra de Døde. — En ubekendt Person, der bliver beskreven som den Høiestes Præst, taler om sig selv, og siger blant andet, at hans Legem skal ikke forraadne i Graven, efterdi Gud vil opvække ham fra de Døde, førend Forraadnelsen kunde tage sin Begyndelse.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme16">Salmernes Bog 16</a>.</note>
+    <note>* En Spaadom om Christi Opstandelse fra de Døde. — En ubekendt Person, der bliver beskreven som den Høiestes Præst, taler om sig selv, og siger blant andet, at hans Legem skal ikke forraadne i Graven, efterdi Gud vil opvække ham fra de Døde, førend Forraadnelsen kunde tage sin Begyndelse.</note>
   </notes>
   <source in="bd1" pages="37-38"/>
   <keywords>salme</keywords>
@@ -1299,13 +1317,14 @@ Du, eene nok for en forklaret Aand!
 </body>
 </text>
 
-<text id="hertzb2026090819">
+<text id="boye2026090819" aliases="hertzb2026090819">
 <head>
   <title>Den 17. Psalme</title>
   <subtitle>Mel. Vreden din afvend.</subtitle>
   <firstline>Gud! du dig en retfærdig Sag antage!</firstline>
   <notes>
-    <note>En Bøn mod mægtige Fiender, som David slutter med disse Tanker: at Gud lader dem ofte være lykkelige i denne Verden, som har intet at haabe i en tilkommende; men derimod haaber David, at naar han opvaagner af Dødens Søvn, han da i den tilkommende Verden skal mætte sig i Guds Beskuelse.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme17">Salmernes Bog 17</a>.</note>
+    <note>* En Bøn mod mægtige Fiender, som David slutter med disse Tanker: at Gud lader dem ofte være lykkelige i denne Verden, som har intet at haabe i en tilkommende; men derimod haaber David, at naar han opvaagner af Dødens Søvn, han da i den tilkommende Verden skal mætte sig i Guds Beskuelse.</note>
   </notes>
   <source in="bd1" pages="39-42"/>
   <keywords>salme</keywords>
@@ -1418,13 +1437,14 @@ Men jeg skal see, saasnart mit Øie lettes,
 </body>
 </text>
 
-<text id="hertzb2026090820">
+<text id="boye2026090820" aliases="hertzb2026090820">
 <head>
   <title>Den 18. Psalme</title>
   <subtitle>Mel. O kiere Siel! frygt aldrig meer.</subtitle>
   <firstline>O Jehova! jeg elsker dig</firstline>
   <notes>
-    <note>Davids sædvanlige Lovsang, naar han havde erholdt Seir over sine Fiender, eller naar Gud havde reddet ham af stor Fare.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme18">Salmernes Bog 18</a>.</note>
+    <note>* Davids sædvanlige Lovsang, naar han havde erholdt Seir over sine Fiender, eller naar Gud havde reddet ham af stor Fare.</note>
   </notes>
   <source in="bd1" pages="43-50"/>
   <keywords>salme</keywords>
@@ -1705,13 +1725,14 @@ Du evig er den samme —
 </body>
 </text>
 
-<text id="hertzb2026090821">
+<text id="boye2026090821" aliases="hertzb2026090821">
 <head>
   <title>Den 19. Psalme</title>
   <subtitle>Mel. Store Prophete med himmelske Lære.</subtitle>
   <firstline>Himlen fortæller os Jehova’s Ære</firstline>
   <notes>
-    <note>En Betragtning over den naturlige og aabenbarede Religion; hiins Almindelighed, og dennes Ypperlighed bliver priset.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme19">Salmernes Bog 19</a>.</note>
+    <note>* En Betragtning over den naturlige og aabenbarede Religion; hiins Almindelighed, og dennes Ypperlighed bliver priset.</note>
   </notes>
   <source in="bd1" pages="51-53"/>
   <keywords>salme</keywords>
@@ -1794,13 +1815,14 @@ Jehova! Herre, min Klippe, min Styrke!
 </body>
 </text>
 
-<text id="hertzb2026090822">
+<text id="boye2026090822" aliases="hertzb2026090822">
 <head>
   <title>Den 20. Psalme</title>
   <subtitle>Mel. O Gud! du fromme Gud!</subtitle>
   <firstline>Den store Jehova i Nødens Tid dig svare!</firstline>
   <notes>
-    <note>En offentlig Bøn, forfattet af David selv, til Brug for Israeliterne, ved adskillige af deres Feldttoge.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme20">Salmernes Bog 20</a>.</note>
+    <note>* En offentlig Bøn, forfattet af David selv, til Brug for Israeliterne, ved adskillige af deres Feldttoge.</note>
   </notes>
   <source in="bd1" pages="54-55"/>
   <keywords>salme</keywords>
@@ -1852,13 +1874,14 @@ Naar vi anraabe dig, vor Konge, svar os da!
 </body>
 </text>
 
-<text id="hertzb2026090823">
+<text id="boye2026090823" aliases="hertzb2026090823">
 <head>
   <title>Den 21. Psalme</title>
   <subtitle>Mel. O Gud! du fromme Gud.</subtitle>
   <firstline>Paa dig, o Jehova! en Konge sig fortrøster</firstline>
   <notes>
-    <note>En Takke-Sang for erholdt Seier.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme21">Salmernes Bog 21</a>.</note>
+    <note>* En Takke-Sang for erholdt Seier.</note>
   </notes>
   <source in="bd1" pages="56-57"/>
   <keywords>salme</keywords>
@@ -1929,13 +1952,14 @@ Lovsynge dine Raad og Undergjerninger.
 </body>
 </text>
 
-<text id="hertzb2026090824">
+<text id="boye2026090824" aliases="hertzb2026090824">
 <head>
   <title>Den 22. Psalme</title>
   <subtitle>Mel. Jesu søde Hukommelse.</subtitle>
   <firstline>Min Gud! min Gud! hvi haver du</firstline>
   <notes>
-    <note>Denne Psalme indeholder en Spaadom om Christo, og blev formodentlig afsiungen ved Morgen-Offeret. — Den Person, som her taler, beskriver sig selv som en Guds Yndling, der var forladt af Gud, og overgivet til sine grumme Fiender; han beder Gud om Hielp, og forjætter den. Frugten af hans Bønhørelse skulde blive Hedningernes Omvendelse til den sande Gud.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme22">Salmernes Bog 22</a>.</note>
+    <note>* Denne Psalme indeholder en Spaadom om Christo, og blev formodentlig afsiungen ved Morgen-Offeret. — Den Person, som her taler, beskriver sig selv som en Guds Yndling, der var forladt af Gud, og overgivet til sine grumme Fiender; han beder Gud om Hielp, og forjætter den. Frugten af hans Bønhørelse skulde blive Hedningernes Omvendelse til den sande Gud.</note>
   </notes>
   <source in="bd1" pages="58-63"/>
   <keywords>salme</keywords>
@@ -1992,7 +2016,7 @@ Du satte mig, skiønt diende,
 I Sikkerhed for Mægtige.
 
 <nonum><center>9.</center></nonum>
-Jeg paa dit faderlige Skiød<footnote>Hos det Israelitiske Folk var det en Skik, at Faderen tog sit Barn paa Skiødet strax efter dets Fødsel. — Den talende Person vil altsaa hermed sige: at han er Guds Søn. —</footnote>
+Jeg paa dit faderlige Skiød<footnote>* Hos det Israelitiske Folk var det en Skik, at Faderen tog sit Barn paa Skiødet strax efter dets Fødsel. — Den talende Person vil altsaa hermed sige: at han er Guds Søn. —</footnote>
 Blev kastet hen, da jeg var fød —
 Jeg er dit store Sendebud;
 Fra Moders Liv var du min Gud —
@@ -2144,13 +2168,14 @@ Hvad her er sagt, det er nu skeet!
 </body>
 </text>
 
-<text id="hertzb2026090825">
+<text id="boye2026090825" aliases="hertzb2026090825">
 <head>
   <title>Den 23. Psalme</title>
   <subtitle>Mel. Herren han er min Hyrde god.</subtitle>
   <firstline>Selv Jehova min Hyrde er</firstline>
   <notes>
-    <note>En Takke-Sang for de Velgjerninger, som Gud havde beviist David imens han flygtede og var langt borte fra Helligdommen.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme23">Salmernes Bog 23</a>.</note>
+    <note>* En Takke-Sang for de Velgjerninger, som Gud havde beviist David imens han flygtede og var langt borte fra Helligdommen.</note>
   </notes>
   <source in="bd1" pages="64-65"/>
   <keywords>salme</keywords>
@@ -2206,13 +2231,14 @@ Og Jehova tilbeder. —
 </body>
 </text>
 
-<text id="hertzb2026090826">
+<text id="boye2026090826" aliases="hertzb2026090826">
 <head>
   <title>Den 24. Psalme</title>
   <subtitle>Mel. Vreden din afvend.</subtitle>
   <firstline>Ja Jehova tilhører Jordens Ender</firstline>
   <notes>
-    <note>En Sang, som synes at være siungen, da Pagtens Ark første Gang blev ført til Zion.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme24">Salmernes Bog 24</a>.</note>
+    <note>* En Sang, som synes at være siungen, da Pagtens Ark første Gang blev ført til Zion.</note>
   </notes>
   <source in="bd1" pages="66-68"/>
   <keywords>salme</keywords>
@@ -2257,7 +2283,7 @@ Men sanddrue og med hellig Frygt fremkommer
 
 <nonum><center>6.</center></nonum>
 Ham Jehova Velsignelsen tilvender,
-Og for sin Dom beskytter og frikiender<footnote>1. Kong. 8. Cap. 31 og 32 Vers.</footnote>;
+Og for sin Dom beskytter og frikiender<footnote>* <a bible="bibel1konge08,31-32">1. Kong. 8. Cap. 31 og 32 Vers.</a></footnote>;
 Saa er den Slægt, som tør for Gud fremtræde,
     Som tør tilbede.
 
@@ -2304,13 +2330,14 @@ Han, Guders Gud, som Himlene lovsiunge,
 </body>
 </text>
 
-<text id="hertzb2026090827">
+<text id="boye2026090827" aliases="hertzb2026090827">
 <head>
   <title>Den 25. Psalme</title>
   <subtitle>Mel. O Siele-Hyrde! Gud og Mand.</subtitle>
   <firstline>Til dig — o store Jehova!</firstline>
   <notes>
-    <note>En Bøn af forskjellig Indhold, hvori Versene i Grundsproget begynde efter en alphabetisk Orden.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme25">Salmernes Bog 25</a>.</note>
+    <note>* En Bøn af forskjellig Indhold, hvori Versene i Grundsproget begynde efter en alphabetisk Orden.</note>
   </notes>
   <source in="bd1" pages="69-72"/>
   <keywords>salme</keywords>
@@ -2453,13 +2480,14 @@ Af al sin Nød og Jammer!
 </body>
 </text>
 
-<text id="hertzb2026090828">
+<text id="boye2026090828" aliases="hertzb2026090828">
 <head>
   <title>Den 26. Psalme</title>
   <subtitle>Mel. (af Kingo) Vaag op og slaae paa dine Strenge.</subtitle>
   <firstline>O Jehova! vær du min Dommer</firstline>
   <notes>
-    <note>David beraaber sig paa Gud imod sine Fienders uretfærdige Beskyldninger, som han maae lide under — han stiller sig frem med Bøn, at Gud vil prøve hans Hierte.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme26">Salmernes Bog 26</a>.</note>
+    <note>* David beraaber sig paa Gud imod sine Fienders uretfærdige Beskyldninger, som han maae lide under — han stiller sig frem med Bøn, at Gud vil prøve hans Hierte.</note>
   </notes>
   <source in="bd1" pages="73-75"/>
   <keywords>salme</keywords>
@@ -2534,13 +2562,14 @@ I hellige Forsamlinger!
 </body>
 </text>
 
-<text id="hertzb2026090829">
+<text id="boye2026090829" aliases="hertzb2026090829">
 <head>
   <title>Den 27. Psalme</title>
   <subtitle>Mel. Christus kom selv til Jordans Flod.</subtitle>
   <firstline>Mit Lys, min Hielp er Jehova</firstline>
   <notes>
-    <note>Denne Psalme synes at henhøre til den Handel, som er beskreven i 1. Sam. 21. — da David i sin Flugt for Saul vendte sig til Tabernaklet, og tog imod Skuebrødene af den ypperste Præst; han takker Gud, som annammede, bespiste og beskyttede ham, og sætter for det Tilkommende al sin Tillid til Gud.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme27">Salmernes Bog 27</a>.</note>
+    <note>* Denne Psalme synes at henhøre til den Handel, som er beskreven i <a bible="bibel1samuel21">1. Sam. 21.</a> — da David i sin Flugt for Saul vendte sig til Tabernaklet, og tog imod Skuebrødene af den ypperste Præst; han takker Gud, som annammede, bespiste og beskyttede ham, og sætter for det Tilkommende al sin Tillid til Gud.</note>
   </notes>
   <source in="bd1" pages="76-79"/>
   <keywords>salme</keywords>
@@ -2650,13 +2679,14 @@ Min Siel! haab du paa Herren.
 </body>
 </text>
 
-<text id="hertzb2026090830">
+<text id="boye2026090830" aliases="hertzb2026090830">
 <head>
   <title>Den 28. Psalme</title>
   <subtitle>Mel. Af dybeste Nød lader os til Gud.</subtitle>
   <firstline>Jeg raaber, Jehova! til dig</firstline>
   <notes>
-    <note>Davids Bøn, naar han truedes med øiensynlige Farer og Ulykker. Forfattet af ham, da han allerede var Konge.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme28">Salmernes Bog 28</a>.</note>
+    <note>* Davids Bøn, naar han truedes med øiensynlige Farer og Ulykker. Forfattet af ham, da han allerede var Konge.</note>
   </notes>
   <source in="bd1" pages="80-81"/>
   <keywords>salme</keywords>
@@ -2712,13 +2742,14 @@ Led, og ophold os stedse. —
 </body>
 </text>
 
-<text id="hertzb2026090831">
+<text id="boye2026090831" aliases="hertzb2026090831">
 <head>
   <title>Den 29. Psalme</title>
   <subtitle>Mel. (af Kingo) Den prægtig’ Soel, som hele Verden glæder.</subtitle>
   <firstline>Det er hans Fest! han kommer svøbt i Torden</firstline>
   <notes>
-    <note>En Beskrivelse over et Uveir, hvoraf Guds Ære og Majestæt kiendes.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme29">Salmernes Bog 29</a>.</note>
+    <note>* En Beskrivelse over et Uveir, hvoraf Guds Ære og Majestæt kiendes.</note>
   </notes>
   <source in="bd1" pages="82-84"/>
   <keywords>salme</keywords>
@@ -2748,7 +2779,7 @@ Det fæle Dyb, i evig Nat udgravet,
 Gientager Almagts-Røst, høit som en Gud —
 Guds Stemme, hør! hvor er den ikke prægtig!
 Guds Stemme — o! hvor er den ei almægtig
-Som Skaber-Bud!<footnote>Som det første: Bliv!</footnote>
+Som Skaber-Bud!<footnote>* Som det første: Bliv!</footnote>
 
 <pb n="83" facs="105.jpg"/><nonum><center>4.</center></nonum>
 Guds Stemme sig mod Ceder-Skoven nærmer,
@@ -2801,13 +2832,14 @@ Han er vor Gud!
 </body>
 </text>
 
-<text id="hertzb2026090832">
+<text id="boye2026090832" aliases="hertzb2026090832">
 <head>
   <title>Den 30. Psalme</title>
   <subtitle>Mel. (af Kingo) Gud vær mig naadig og.</subtitle>
   <firstline>Dig Herre priser jeg! du mig ei overgav</firstline>
   <notes>
-    <note>I Davids sidste Regieringsaar, da han med Seir havde endt mange udenlands Krige, og lykkelig overstaaet det store Oprør, hans Søn, Absalon, havde stiftet, byggede han sig i Zion et Kongeligt Palais, og ved sammes Indvielse blev denne Psalme sungen, i hvilken han fortæller de Farer, han havde udstaaet, og takker Gud, som nu paa nye havde befæstet Davids Rige.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme30">Salmernes Bog 30</a>.</note>
+    <note>* I Davids sidste Regieringsaar, da han med Seir havde endt mange udenlands Krige, og lykkelig overstaaet det store Oprør, hans Søn, Absalon, havde stiftet, byggede han sig i Zion et Kongeligt Palais, og ved sammes Indvielse blev denne Psalme sungen, i hvilken han fortæller de Farer, han havde udstaaet, og takker Gud, som nu paa nye havde befæstet Davids Rige.</note>
   </notes>
   <source in="bd1" pages="85-87"/>
   <keywords>salme</keywords>
@@ -2882,13 +2914,14 @@ Min Styrkes Gud, er stor!
 </body>
 </text>
 
-<text id="hertzb2026090833">
+<text id="boye2026090833" aliases="hertzb2026090833">
 <head>
   <title>Den 31. Psalme</title>
   <subtitle>Mel. Lad andre hen i Trældom gaae.</subtitle>
   <firstline>Min Tilflugts Gud! hos dig kan ei</firstline>
   <notes>
-    <note>David vidner om sin Tillid til Guds Hielp, til hvilken han med Paakaldelse havde taget sin Tilflugt i de største Gienvordigheder og Farer, og derved var bleven frelst.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme31">Salmernes Bog 31</a>.</note>
+    <note>* David vidner om sin Tillid til Guds Hielp, til hvilken han med Paakaldelse havde taget sin Tilflugt i de største Gienvordigheder og Farer, og derved var bleven frelst.</note>
   </notes>
   <source in="bd1" pages="88-93"/>
   <keywords>salme</keywords>
@@ -3079,13 +3112,14 @@ Som trygt paa Herren haabe —
 </body>
 </text>
 
-<text id="hertzb2026090834">
+<text id="boye2026090834" aliases="hertzb2026090834">
 <head>
   <title>Den 32. Psalme</title>
   <subtitle>Mel. (af Kingo) Ret nys gik Solens Klarhed hen.</subtitle>
   <firstline>Hvor ere de lyksalige</firstline>
   <notes>
-    <note>En Lovsang af David over den Syndsforladelse, som han erholdte hos Gud, da han med Oprigtighed bekiendte sine Synder; han beskriver sin bedrøvelige Tilstand i den Tid, han i sine Bønner ikke vilde tilstaae sin Synd, saadan som den var, og priser sig derimod lykkelig, saasnart han bekiendte sine Forbrydelser i deres Afskyelighed. — Denne Psalme synes at henhøre til det, som er sagt i 2. Sam. 12. Den kan deles i tvende Deele; i de første 7 Vers taler David, i de øvrige taler Gud, og kræver for Eftertiden Lydighed.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme32">Salmernes Bog 32</a>.</note>
+    <note>* En Lovsang af David over den Syndsforladelse, som han erholdte hos Gud, da han med Oprigtighed bekiendte sine Synder; han beskriver sin bedrøvelige Tilstand i den Tid, han i sine Bønner ikke vilde tilstaae sin Synd, saadan som den var, og priser sig derimod lykkelig, saasnart han bekiendte sine Forbrydelser i deres Afskyelighed. — Denne Psalme synes at henhøre til det, som er sagt i <a bible="bibel2samuel12">2. Sam. 12.</a> Den kan deles i tvende Deele; i de første 7 Vers taler David, i de øvrige taler Gud, og kræver for Eftertiden Lydighed.</note>
   </notes>
   <source in="bd1" pages="94-96"/>
   <keywords>salme</keywords>
@@ -3152,13 +3186,14 @@ Som from og redelig af Hiertet er —
 </body>
 </text>
 
-<text id="hertzb2026090835">
+<text id="boye2026090835" aliases="hertzb2026090835">
 <head>
   <title>Den 33. Psalme</title>
   <subtitle>Mel. O Gud! du fromme Gud!</subtitle>
   <firstline>Lovsynger Jehova, I, som retskaffent leve!</firstline>
   <notes>
-    <note>En Lovsang, hvori Gud bliver besjungen, som den, der har skabt og regierer Verden, men i Synderlighed, som den, der hielper sit Folk imod offentlige Fiender.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme33">Salmernes Bog 33</a>.</note>
+    <note>* En Lovsang, hvori Gud bliver besjungen, som den, der har skabt og regierer Verden, men i Synderlighed, som den, der hielper sit Folk imod offentlige Fiender.</note>
   </notes>
   <source in="bd1" pages="97-99"/>
   <keywords>salme</keywords>
@@ -3235,13 +3270,14 @@ Som vores Tillid er til dig vor Kraft, vor Roes!
 </body>
 </text>
 
-<text id="hertzb2026090836">
+<text id="boye2026090836" aliases="hertzb2026090836">
 <head>
   <title>Den 34. Psalme</title>
   <subtitle>Mel. Kom stærke Frelser snart.</subtitle>
   <firstline>Til alle Tider vil jeg Jehova tilbede</firstline>
   <notes>
-    <note>En alphabetisk Sang, i hvilken David besynger den ham af Gud beskikkede Hielp, samt Guds Naade i at bønhøre ham, og af sit eget Exempel lærer andre: at den sikkerste Vei til Lyksalighed er at holde Guds Bud, og heller lide end giøre Uret.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme34">Salmernes Bog 34</a>.</note>
+    <note>* En alphabetisk Sang, i hvilken David besynger den ham af Gud beskikkede Hielp, samt Guds Naade i at bønhøre ham, og af sit eget Exempel lærer andre: at den sikkerste Vei til Lyksalighed er at holde Guds Bud, og heller lide end giøre Uret.</note>
   </notes>
   <source in="bd1" pages="100-102"/>
   <keywords>salme</keywords>
@@ -3324,13 +3360,14 @@ Vel den, som han sig saa fortrolig tager an!
 </body>
 </text>
 
-<text id="hertzb2026090837">
+<text id="boye2026090837" aliases="hertzb2026090837">
 <head>
   <title>Den 35. Psalme</title>
   <subtitle>Mel. Store Prophete med himmelske Lære.</subtitle>
   <firstline>Jehova! strid du mod den, mig bestrider</firstline>
   <notes>
-    <note>Davids Bøn imod Bagtalere og falske Tunger, hvormed han synes at sigte til den Tid, han endnu var ved Sauls Hof. — Det synes her, som han engang tilforn var flygtet, fordi Saul havde sat ham efter Livet; men var nu igjen kommen tilbage; og befandt, at hans Efterstræbere paa nye søgte ved Bagtalelse at sværte ham hos Kongen.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme35">Salmernes Bog 35</a>.</note>
+    <note>* Davids Bøn imod Bagtalere og falske Tunger, hvormed han synes at sigte til den Tid, han endnu var ved Sauls Hof. — Det synes her, som han engang tilforn var flygtet, fordi Saul havde sat ham efter Livet; men var nu igjen kommen tilbage; og befandt, at hans Efterstræbere paa nye søgte ved Bagtalelse at sværte ham hos Kongen.</note>
   </notes>
   <source in="bd1" pages="103-107"/>
   <keywords>salme</keywords>
@@ -3469,13 +3506,14 @@ Dine retfærdige Domme besjunge.
 </body>
 </text>
 
-<text id="hertzb2026090838">
+<text id="boye2026090838" aliases="hertzb2026090838">
 <head>
   <title>Den 36. Psalme</title>
   <subtitle>Mel. O Herre! frels mig og døm min Sag.</subtitle>
   <firstline>Oprøriske Vantro! din Trone er bygt</firstline>
   <notes>
-    <note>En Betragtning over de ugudelige Menneskers afskyelige Grundsætning, som enten ganske fornægte Gud, eller om ikke, dog vove midt i deres Ondskab at bedrage ham ved at iagttage den udvortes Gudstieneste alene; samt videre Betragtning over Guds Forsyn, som overøser os med Naade og Velgierninger, og dog nægtes af disse Ugudelige.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme36">Salmernes Bog 36</a>.</note>
+    <note>* En Betragtning over de ugudelige Menneskers afskyelige Grundsætning, som enten ganske fornægte Gud, eller om ikke, dog vove midt i deres Ondskab at bedrage ham ved at iagttage den udvortes Gudstieneste alene; samt videre Betragtning over Guds Forsyn, som overøser os med Naade og Velgierninger, og dog nægtes af disse Ugudelige.</note>
   </notes>
   <source in="bd1" pages="108-110"/>
   <keywords>salme</keywords>
@@ -3558,13 +3596,14 @@ Og kan sig ei mere opreise —
 </body>
 </text>
 
-<text id="hertzb2026090839">
+<text id="boye2026090839" aliases="hertzb2026090839">
 <head>
   <title>Den 37. Psalme</title>
   <subtitle>Mel. O Gud! du fromme Gud.</subtitle>
   <firstline>Stolt prunker Ondskabs Børn: lad det dig ei forlede</firstline>
   <notes>
-    <note>En Advarsel, at man ikke maae lade sig bevæge af onde og lastefulde Menneskers timelige Lykke til Fortvivlelse imod Forsynet, eller til Lyst at efterfølge dem i deres Ondskab; disses Lykke er ubestandig, og varer gemeenlig ikkun kort, da derimod Lydighed imod Guds Bud pleier at medbringe en vedvarende Lykke. Denne Lærdom bliver fremsat i en alphabetisk Sang.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme37">Salmernes Bog 37</a>.</note>
+    <note>* En Advarsel, at man ikke maae lade sig bevæge af onde og lastefulde Menneskers timelige Lykke til Fortvivlelse imod Forsynet, eller til Lyst at efterfølge dem i deres Ondskab; disses Lykke er ubestandig, og varer gemeenlig ikkun kort, da derimod Lydighed imod Guds Bud pleier at medbringe en vedvarende Lykke. Denne Lærdom bliver fremsat i en alphabetisk Sang.</note>
   </notes>
   <source in="bd1" pages="111-117"/>
   <keywords>salme</keywords>
@@ -3672,7 +3711,7 @@ Guds elskelige Børn skal dog ei mangle Brød.
 Men Herrens Fiender skal da pludselig omkomme,
 De skal fortæres ved hans svare Straffedomme
 Liig en fortørret Marks antændte visne Straae,
-Der med en grusom Pragt i Røg og Damp opgaae<footnote>Naar Østenvind i Syrien og Palæstina om Sommeren nogle Dage har gaaet over Marken, saa visner Græsset, og bliver som Høe, hvilket lettelig kan antændes af den Ild, Hyrderne om Aftenen gemeenligen pleie at giøre, paa Marken.</footnote>
+Der med en grusom Pragt i Røg og Damp opgaae<footnote>* Naar Østenvind i Syrien og Palæstina om Sommeren nogle Dage har gaaet over Marken, saa visner Græsset, og bliver som Høe, hvilket lettelig kan antændes af den Ild, Hyrderne om Aftenen gemeenligen pleie at giøre, paa Marken.</footnote>
 
 <pb n="115" facs="137.jpg"/><nonum><center>18.</center></nonum>
 De Onde borge, og kan ei betale Laanet;
@@ -3767,13 +3806,14 @@ Fordi de søgte kun hos ham Beskyttelse —
 </body>
 </text>
 
-<text id="hertzb2026090840">
+<text id="boye2026090840" aliases="hertzb2026090840">
 <head>
   <title>Den 38. Psalme</title>
   <subtitle>Mel. Vreden din afvend.</subtitle>
   <firstline>Vær Jehova til Miskundheder rede!</firstline>
   <notes>
-    <note>En Bods-Psalme, hvori David erkiender sine timelige Lidelser og sine Fienders Forfølgelser for en Guds Straf, som han med sine Synder har fortient, og beder tillige om Syndernes Forladelse, og at deres Straf fra ham maatte borttages.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme38">Salmernes Bog 38</a>.</note>
+    <note>* En Bods-Psalme, hvori David erkiender sine timelige Lidelser og sine Fienders Forfølgelser for en Guds Straf, som han med sine Synder har fortient, og beder tillige om Syndernes Forladelse, og at deres Straf fra ham maatte borttages.</note>
   </notes>
   <source in="bd1" pages="118-122"/>
   <keywords>salme</keywords>
@@ -3898,13 +3938,14 @@ Min Gud, min Herre!
 </body>
 </text>
 
-<text id="hertzb2026090841">
+<text id="boye2026090841" aliases="hertzb2026090841">
 <head>
   <title>Den 39. Psalme</title>
   <subtitle>Mel. O Gud! du fromme Gud.</subtitle>
   <firstline>Jeg sagde, da jeg saae Ugudeliges Lykke</firstline>
   <notes>
-    <note>David beskriver de Fristelser, han fandt ved Ugudeliges Lykke — han havde foresat sig, ikke at knurre derover, og dog kunde han ei tilbageholde sine utaalmodige Klager; han fornyer sit Forsæt, herefter ikke at blive misfornøiet derover, og trøster sig ved, at dette Liv varer ikkun kort; men beder, at Gud dog vil lade ham smage nogen Glæde endog i dette korte Liv.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme39">Salmernes Bog 39</a>.</note>
+    <note>* David beskriver de Fristelser, han fandt ved Ugudeliges Lykke — han havde foresat sig, ikke at knurre derover, og dog kunde han ei tilbageholde sine utaalmodige Klager; han fornyer sit Forsæt, herefter ikke at blive misfornøiet derover, og trøster sig ved, at dette Liv varer ikkun kort; men beder, at Gud dog vil lade ham smage nogen Glæde endog i dette korte Liv.</note>
   </notes>
   <source in="bd1" pages="123-125"/>
   <keywords>salme</keywords>
@@ -3987,13 +4028,14 @@ Hvor Tid og Glemsomhed udsletter Mennesker.
 </body>
 </text>
 
-<text id="hertzb2026090842">
+<text id="boye2026090842" aliases="hertzb2026090842">
 <head>
   <title>Den 40. Psalme</title>
   <subtitle>Mel. Et lidet Barn saa lystelig.</subtitle>
   <firstline>Jeg raabte med standhaftigt Haab</firstline>
   <notes>
-    <note>En høi Person, der beskriver sig som det eneste Gud velbehagelige Offer, og hvortil Moses haver sigtet med sine Offer-Love, beder til Gud i sine Lidelser, venter hans Hielp, og lover at forherlige hans Navn. Denne talende Person er altsaa ikke David, men en langt høiere, nemlig Christus, det store Offer for det menneskelige Kiøn.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme40">Salmernes Bog 40</a>.</note>
+    <note>* En høi Person, der beskriver sig som det eneste Gud velbehagelige Offer, og hvortil Moses haver sigtet med sine Offer-Love, beder til Gud i sine Lidelser, venter hans Hielp, og lover at forherlige hans Navn. Denne talende Person er altsaa ikke David, men en langt høiere, nemlig Christus, det store Offer for det menneskelige Kiøn.</note>
   </notes>
   <source in="bd1" pages="126-130"/>
   <keywords>salme</keywords>
@@ -4124,13 +4166,14 @@ Mig snart med Hielp husvale!
 </body>
 </text>
 
-<text id="hertzb2026090843">
+<text id="boye2026090843" aliases="hertzb2026090843">
 <head>
   <title>Den 41. Psalme</title>
   <subtitle>Mel. Fra Himmelen høit komme vi nu her.</subtitle>
   <firstline>Vel den, der ædelt agter paa</firstline>
   <notes>
-    <note>Denne Psalme henhører til den Tid, da David flyede for Absalon, og i Særdeleshed til den Deel af Davids Historie, som beskrives i 2. Sam. 17de Cap. 27 til 29 V. da nogle bemidlede Undersaatter antoge sig deres retmæssige Konges nødlidende Krigshær, og forsynede den med Spise. — Psalmen kan deles i tre Deele: 1) Velsignelses Ønske over dem, som i Nødens Tid havde beviist ham Velgierninger. 2) Klage over sine Fienders Utroskab, iblandt hvilke Achitophel i Særdeleshed bliver beskreven. 3) En Bøn om Guds Hielp.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme41">Salmernes Bog 41</a>.</note>
+    <note>* Denne Psalme henhører til den Tid, da David flyede for Absalon, og i Særdeleshed til den Deel af Davids Historie, som beskrives i <a bible="bibel2samuel17,27-29">2. Sam. 17de Cap. 27 til 29 V.</a> da nogle bemidlede Undersaatter antoge sig deres retmæssige Konges nødlidende Krigshær, og forsynede den med Spise. — Psalmen kan deles i tre Deele: 1) Velsignelses Ønske over dem, som i Nødens Tid havde beviist ham Velgierninger. 2) Klage over sine Fienders Utroskab, iblandt hvilke Achitophel i Særdeleshed bliver beskreven. 3) En Bøn om Guds Hielp.</note>
   </notes>
   <source in="bd1" pages="131-134"/>
   <keywords>salme</keywords>
@@ -4233,14 +4276,15 @@ Mit Amen, Amen, Gud er stor!
   <title>Anden Bog. Andet Hefte</title>
 </head>
 <content>
-<text id="hertzb2026090844">
+<text id="boye2026090844" aliases="hertzb2026090844">
 <head>
   <suptitle>Den anden Bog.</suptitle>
   <title>Den 42. og 43. Psalme</title>
   <subtitle>Mel. Vaag op og slaae paa dine Strenge.</subtitle>
   <firstline>Som Hiorten smægtende opstiger</firstline>
   <notes>
-    <note>Begge disse Psalmer ere ikkun Een, og ere ved Forseelse adskildte. Det synes som David har forfærdiget dem paa sin Flugt for Absalon, i den Tid, han havde sin Leyr under Libanon, der, hvor Floden Jordan har sit Udspring. — David udtrykker sin Tillid til Guds Hielp, og sin Længsel efter Guds synlige Tempel, hvorfra han i denne sin Forfatning var udelukket.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme42">Salmernes Bog 42</a> og <a bible="bibelsalme43">Salmernes Bog 43</a>.</note>
+    <note>* Begge disse Psalmer ere ikkun Een, og ere ved Forseelse adskildte. Det synes som David har forfærdiget dem paa sin Flugt for Absalon, i den Tid, han havde sin Leyr under Libanon, der, hvor Floden Jordan har sit Udspring. — David udtrykker sin Tillid til Guds Hielp, og sin Længsel efter Guds synlige Tempel, hvorfra han i denne sin Forfatning var udelukket.</note>
   </notes>
   <source in="bd2" pages="3-7"/>
   <keywords>salme</keywords>
@@ -4381,13 +4425,14 @@ I Zion tone Lovsang ud!
 </body>
 </text>
 
-<text id="hertzb2026090845">
+<text id="boye2026090845" aliases="hertzb2026090845">
 <head>
   <title>Den 44. Psalme</title>
   <subtitle>Mel. Af dybeste Nød lader os til Gud.</subtitle>
   <firstline>Vi have hørt, hvor meget stort</firstline>
   <notes>
-    <note>Denne Psalme synes at være forfattet paa en Tid, da Israeliterne længe havde været uhældige mod deres Fiender, de erindre sig Guds Hielp, som i gamle Dage blev beviist deres Forfædre, og beder Gud om en lige Hielp.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme44">Salmernes Bog 44</a>.</note>
+    <note>* Denne Psalme synes at være forfattet paa en Tid, da Israeliterne længe havde været uhældige mod deres Fiender, de erindre sig Guds Hielp, som i gamle Dage blev beviist deres Forfædre, og beder Gud om en lige Hielp.</note>
   </notes>
   <source in="bd2" pages="8-11"/>
   <keywords>salme</keywords>
@@ -4524,13 +4569,14 @@ Og red os for din Naade!
 </body>
 </text>
 
-<text id="hertzb2026090846">
+<text id="boye2026090846" aliases="hertzb2026090846">
 <head>
   <title>Den 45. Psalme</title>
   <subtitle>Mel. Et lidet Barn saa lysteligt.</subtitle>
   <firstline>Fryd hæver mine Aandedræt</firstline>
   <notes>
-    <note>En Lovsang til en Konge — de Folk som tiene ham afbildes under et østerlandsk Serail, hvori der foruden den rette Dronning ere adskillige Medhustruer; Kongen, som her bliver besiungen er, efter det nye Testamentes Vidnesbyrd, Messias.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme45">Salmernes Bog 45</a>.</note>
+    <note>* En Lovsang til en Konge — de Folk som tiene ham afbildes under et østerlandsk Serail, hvori der foruden den rette Dronning ere adskillige Medhustruer; Kongen, som her bliver besiungen er, efter det nye Testamentes Vidnesbyrd, Messias.</note>
   </notes>
   <source in="bd2" pages="12-15"/>
   <keywords>salme</keywords>
@@ -4594,7 +4640,6 @@ En Duft fra dine Klæder,
 Palladser i Armenien,
 (Hvor Konsten har i Elfenbeen
 Foreviget sin Ære,)
-
 <pb n="14" facs="020.jpg"/>Som Helligdomme aabne sig,
 Og deilig’ Konge-Døttre dig
 Til Fryd og Pragt forære.
@@ -4627,7 +4672,6 @@ Skal dig med Gaver ære.
     Fuldkommen skiøn og herlig er
 Den store Konges Datter
 Ved sit indvortes høie Værd,
-
 <pb n="15" facs="021.jpg"/>Og Guldet, som indfatter
 En Ædelsteen, kun skinner svagt
 Mod hendes rige Brude-Dragt;
@@ -4663,13 +4707,14 @@ Evindelig besiunge.
 </body>
 </text>
 
-<text id="hertzb2026090847">
+<text id="boye2026090847" aliases="hertzb2026090847">
 <head>
   <title>Den 46. Psalme</title>
   <subtitle>Mel. Af Høiheden oprunden er.</subtitle>
   <firstline>Gud er vor Borg, vort Tilflugssted</firstline>
   <notes>
-    <note>Denne Psalme synes at være forfattet i Anledning af et Jordskielv, som haver rystet Palæstina og de tilgrændsende Lande, med den Forskiel, at det i Jerusalem ingen Skade giorde, men forvandlede Steder i fremmede Lande til Steenhobe.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme46">Salmernes Bog 46</a>.</note>
+    <note>* Denne Psalme synes at være forfattet i Anledning af et Jordskielv, som haver rystet Palæstina og de tilgrændsende Lande, med den Forskiel, at det i Jerusalem ingen Skade giorde, men forvandlede Steder i fremmede Lande til Steenhobe.</note>
   </notes>
   <source in="bd2" pages="16-19"/>
   <keywords>salme</keywords>
@@ -4700,9 +4745,7 @@ Om Havet spottede sin Bred,
 Og sig fra Dyndet hæved’,
         Saa de
         Høie
-
-<pb n="17" facs="023.jpg"/>        Evig
-        sterke
+<pb n="17" facs="023.jpg"/>        Evig sterke
         Jordens Bierge
         Endog raved’
 Oversvømmede af Havet.
@@ -4767,7 +4810,6 @@ Og som Guddoms Fange bunden.
     Han bød til Jordens Ender Fred,
 Og Sværdet sank afmægtigt ned;
 Han brød de fiendtlig’ Buer,
-
 <pb n="19" facs="025.jpg"/>Og sønderknuste Spydene,
 Og overgav Krigs-Vognene
 Til underjordisk’ Luer; —
@@ -4795,13 +4837,14 @@ Jacobs Gud er vor Befæstning.
 </body>
 </text>
 
-<text id="hertzb2026090848">
+<text id="boye2026090848" aliases="hertzb2026090848">
 <head>
   <title>Den 47. Psalme</title>
   <subtitle>Mel. Den prægtig’ Soel &amp;c.</subtitle>
   <firstline>Slaaer Haand i Haand og Jubel-Fryd udbreder</firstline>
   <notes>
-    <note>En Seier-Sang, som synes at være forfattet i Davids Regieringstiid, da de i Jødeland tilbageblevne Cananiter vare gandske overvundne, og der i den tilsidst erobrede Stad Zion blev holdet et høitideligt Indtog.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme47">Salmernes Bog 47</a>.</note>
+    <note>* En Seier-Sang, som synes at være forfattet i Davids Regieringstiid, da de i Jødeland tilbageblevne Cananiter vare gandske overvundne, og der i den tilsidst erobrede Stad Zion blev holdet et høitideligt Indtog.</note>
   </notes>
   <source in="bd2" pages="20-21"/>
   <keywords>salme</keywords>
@@ -4852,13 +4895,14 @@ Kun denne Gud — o! han er Landets Styrke;
 </body>
 </text>
 
-<text id="hertzb2026090849">
+<text id="boye2026090849" aliases="hertzb2026090849">
 <head>
   <title>Den 48. Psalme</title>
   <subtitle>Mel. I Jesu Navn skal al vor Gierning skee.</subtitle>
   <firstline>Stor er vor Gud, og priselig, og sterk! —</firstline>
   <notes>
-    <note>Denne Psalme indeholder: at adskillige mægtige Kongers Forbund mod det Israelitiske Folk blev ved Guds Forsyn tilintetgiort — maaskee sigter denne Psalme med den 46de til een og samme Tid.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme48">Salmernes Bog 48</a>.</note>
+    <note>* Denne Psalme indeholder: at adskillige mægtige Kongers Forbund mod det Israelitiske Folk blev ved Guds Forsyn tilintetgiort — maaskee sigter denne Psalme med den <a bible="bibelsalme46">46de</a> til een og samme Tid.</note>
   </notes>
   <source in="bd2" pages="22-24"/>
   <keywords>salme</keywords>
@@ -4887,7 +4931,6 @@ Konger fnysende fremfoer,
         Stolt traadde de
         Hær ved Hær
         Staden nær;
-
 <pb n="23" facs="029.jpg"/>    Men saae og frygtede,
     Og hastig flyede;
         Snart angreb dem Bævelse,
@@ -4936,13 +4979,14 @@ Gaae paa Luur!
 </body>
 </text>
 
-<text id="hertzb2026090850">
+<text id="boye2026090850" aliases="hertzb2026090850">
 <head>
   <title>Den 49. Psalme</title>
   <subtitle>Mel. Af dybeste Nød lader os til Gud.</subtitle>
   <firstline>Bliv vidt udstrakte Jorderig</firstline>
   <notes>
-    <note>En Betragtning over den ringe Betydenhed, der er ved Lykke og Ulykke i dette Liv; synes man at være ulykkelig, skal man ei derover for meget bedrøves, og er man lykkelig, maae man ei derved for meget glædes; thi Døden kan snart giøre Ende, saavel paa det ene, som paa det andet, og derefter følger en nye Verden, hvor alle Ting vil faae et andet Udseende.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme49">Salmernes Bog 49</a>.</note>
+    <note>* En Betragtning over den ringe Betydenhed, der er ved Lykke og Ulykke i dette Liv; synes man at være ulykkelig, skal man ei derover for meget bedrøves, og er man lykkelig, maae man ei derved for meget glædes; thi Døden kan snart giøre Ende, saavel paa det ene, som paa det andet, og derefter følger en nye Verden, hvor alle Ting vil faae et andet Udseende.</note>
   </notes>
   <source in="bd2" pages="25-28"/>
   <keywords>salme</keywords>
@@ -4973,7 +5017,6 @@ Fortiene mine Synder.
 Som tillidsfuld betragte
 Den Overflod, I svømme i,
 Og eders Rigdom agte
-
 <pb n="26" facs="032.jpg"/>For klippefast Lyksalighed;
 I bygge dog paa Gravens Bred,
 Og boe i Dødens Skygge.
@@ -5010,7 +5053,6 @@ Gaaer arveligt til andre.
 Og boe som Tidens Herrer,
 Den skumle Grav, et evigt Huus,
 Dem dog tilsidst indspærrer.
-
 <pb n="27" facs="033.jpg"/>Fra Slægt til Slægt de sluttes der,
 Og deres Navn og Gravskrift er
 Alt, hvad de Verden skienke.
@@ -5028,7 +5070,7 @@ Og leve just som disse.
     De for en gridsk og graadig Grav,
 Som Faar udseete ere
 Til Døden, som de vogtes af
-Dem der vil aflevere, *)
+Dem der vil aflevere,<footnote>* De Ugudelige ansees her, som Slagte-Faar, Døden som en Hyrde, der vogter dem, indtil han vil aflevere dem til Graven, der forestilles som et kiød-ædende og umætteligt Dyr. —</footnote>
 Og naar en Morgen bryder frem
 Til evig Dag — da over dem
 Skal Redelige seire.
@@ -5041,8 +5083,6 @@ Men Gud mig leder troelig,
 Og da, endskiønt jeg klædes af,
 Forløser Gud mig af min Grav,
 Thi han mig til sig tager.
-
-<footnote>*) De Ugudelige ansees her, som Slagte-Faar, Døden som en Hyrde, der vogter dem, indtil han vil aflevere dem til Graven, der forestilles som et kiød-ædende og umætteligt Dyr. —</footnote>
 
 <pb n="28" facs="034.jpg"/><nonum><center>11.</center></nonum>
     Du fromme vær da ei forsagt,
@@ -5074,13 +5114,14 @@ Hvor ligne de hverandre!
 </body>
 </text>
 
-<text id="hertzb2026090851">
+<text id="boye2026090851" aliases="hertzb2026090851">
 <head>
   <title>Den 50. Psalme</title>
   <subtitle>Mel. Den prægtig’ Soel &amp;c.</subtitle>
   <firstline>Selv Guders Gud sin høie Stemme hæver</firstline>
   <notes>
-    <note>Gud bliver forestillet, som om han atter kom med lige Høitidelighed, som da Loven blev givet for at undersøge om hans Folk holdt Buddene; han erklærer tillige: at han med de udvortes Offringer allene ikke er tilfreds.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme50">Salmernes Bog 50</a>.</note>
+    <note>* Gud bliver forestillet, som om han atter kom med lige Høitidelighed, som da Loven blev givet for at undersøge om hans Folk holdt Buddene; han erklærer tillige: at han med de udvortes Offringer allene ikke er tilfreds.</note>
   </notes>
   <source in="bd2" pages="29-31"/>
   <keywords>salme</keywords>
@@ -5179,13 +5220,14 @@ Gud holder Dom! — og taus og agtsom hører
 </body>
 </text>
 
-<text id="hertzb2026090852">
+<text id="boye2026090852" aliases="hertzb2026090852">
 <head>
   <title>Den 51. Psalme</title>
   <subtitle>Mel. O Gud du fromme Gud.</subtitle>
   <firstline>O Herre skaan mig for din ufortiente Naade —</firstline>
   <notes>
-    <note>En Bod-Psalme i Anledning af Davids Synd med Bathseba, og den derefter af Propheten Nathan ham forkyndte Straf.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme51">Salmernes Bog 51</a>.</note>
+    <note>* En Bod-Psalme i Anledning af Davids Synd med Bathseba, og den derefter af Propheten Nathan ham forkyndte Straf.</note>
   </notes>
   <source in="bd2" pages="32-34"/>
   <keywords>salme</keywords>
@@ -5220,7 +5262,6 @@ Da jeg derunder laae, en ond vanartig Lyst.
 <nonum><center>5.</center></nonum>
     Paa Korsets Renselse du ei din Fordring grunder,
 Den Sandhed er din Lyst, som ligger skiult derunder,
-
 <pb n="33" facs="039.jpg"/>Den Viisdoms Hemm’lighed, du for min Aand oplod,
 Jeg seer et rensende, et sandt Forsonings Blod.
 
@@ -5287,13 +5328,14 @@ Med naadig Velbehag paa dine Altere.
 </body>
 </text>
 
-<text id="hertzb2026090853">
+<text id="boye2026090853" aliases="hertzb2026090853">
 <head>
   <title>Den 52. Psalme</title>
   <subtitle>Mel. Hjertelig mig nu længes.</subtitle>
   <firstline>Hvi roser du dig Morder!</firstline>
   <notes>
-    <note>David beskriver Doeg den Edomiters Forræderie og Grumhed, hvilken aabenbarede Saul, at David i sin Flugt havde været hos Præsten Achimelech, og som siden, da ingen anden vilde efterkomme Sauls Ordre, anfaldt og dræbte Achimelech med sin gandske Familie, ja ødelagde tillige alt det Levende, som fandtes i deres Stad.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme52">Salmernes Bog 52</a>.</note>
+    <note>* David beskriver Doeg den Edomiters Forræderie og Grumhed, hvilken aabenbarede Saul, at David i sin Flugt havde været hos Præsten Achimelech, og som siden, da ingen anden vilde efterkomme Sauls Ordre, anfaldt og dræbte Achimelech med sin gandske Familie, ja ødelagde tillige alt det Levende, som fandtes i deres Stad.</note>
   </notes>
   <source in="bd2" pages="35-36"/>
   <keywords>salme</keywords>
@@ -5326,7 +5368,6 @@ Beskytter du især,
 Indtil Forglemmelse,
 Han griber dig du tørre
 Forvisned’ Olie-Træe,
-
 <pb n="36" facs="042.jpg"/>Og dig med et afbryder
 I Hyttens Skiul og Hegn,
 Og reent din Rod udrydder
@@ -5365,13 +5406,14 @@ Thi han er evig god.
 </body>
 </text>
 
-<text id="hertzb2026090854">
+<text id="boye2026090854" aliases="hertzb2026090854">
 <head>
   <title>Den 53. Psalme</title>
   <subtitle>Mel. Store Prophete med himmelske Lære.</subtitle>
   <firstline>Daaren sin dyriske Siel vil indbilde</firstline>
   <notes>
-    <note>Denne Psalme er næsten af samme Indhold som den 14de, med den Forskiel, at den synes at være skrevet, da Guds Folkes Fiender og Undertrykkere virkelig havde grebet til Vaaben, og maaskee paa samme Tid, da Absalons Oprør tillige indtraf.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme53">Salmernes Bog 53</a>.</note>
+    <note>* Denne Psalme er næsten af samme Indhold som den <a bible="bibelsalme14">14de</a>, med den Forskiel, at den synes at være skrevet, da Guds Folkes Fiender og Undertrykkere virkelig havde grebet til Vaaben, og maaskee paa samme Tid, da Absalons Oprør tillige indtraf.</note>
   </notes>
   <source in="bd2" pages="37-38"/>
   <keywords>salme</keywords>
@@ -5406,10 +5448,10 @@ I en afsindig og vellystig Glæde.
 <pb n="38" facs="044.jpg"/><nonum><center>4.</center></nonum>
     Herren anraabe og dyrke de ikke,
 Snart skal de zittre, som frygtede ei;
-Dem, som mod dig *) i Forskandsninger ligge,
+Dem, som mod dig<footnote>* Kongen.</footnote> i Forskandsninger ligge,
 Skal Gud forfølge paa Flygtningers Vei,
 Og deres Been mellem Rovdyr adsprede;
-Let du *) beskiemmer dem, Gud ei vil redde.
+Let du<footnote>* Kongen.</footnote> beskiemmer dem, Gud ei vil redde.
 
 <nonum><center>5.</center></nonum>
     Maatte — o! maatte fra Zion dog komme
@@ -5418,19 +5460,18 @@ Naar du, o Gud! har udført dine Domme,
 Og naar dit Folk er af Fængselet løst,
 O! da vil Jacob udbrede sin Glæde,
 Og alle Israels Stammer tilbede.
-
-<footnote>*) Kongen.</footnote>
 </poetry>
 </body>
 </text>
 
-<text id="hertzb2026090855">
+<text id="boye2026090855" aliases="hertzb2026090855">
 <head>
   <title>Den 54. Psalme</title>
   <subtitle>Mel. Naar min Tid og Stund er for Haand.</subtitle>
   <firstline>O Herre! for din Majestæt</firstline>
   <notes>
-    <note>Siphiterne havde tilkiendegivet Saul, at David var skiult i Ørken Siph, hvor Saul strax eftersatte ham med 3000 Mand — David beder Gud om Hielp mod sine uretfærdige Fiender, og ender med Takkesang for Guds mægtige Bistand.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme54">Salmernes Bog 54</a>.</note>
+    <note>* Siphiterne havde tilkiendegivet Saul, at David var skiult i Ørken Siph, hvor Saul strax eftersatte ham med 3000 Mand — David beder Gud om Hielp mod sine uretfærdige Fiender, og ender med Takkesang for Guds mægtige Bistand.</note>
   </notes>
   <source in="bd2" pages="39-40"/>
   <keywords>salme</keywords>
@@ -5461,7 +5502,6 @@ Som deres Forhold skuer.
 Ja han mit Liv opholder,
 Og mine Fiender selv tilsidst
 Sig deres Fald forvolder;
-
 <pb n="40" facs="046.jpg"/>Ja! Herre for din Troefasthed
 Paalæg du dem Stiltiendhed,
 Som bittre mig bagtale.
@@ -5478,13 +5518,14 @@ Beskiemmet og afstraffet.
 </body>
 </text>
 
-<text id="hertzb2026090856">
+<text id="boye2026090856" aliases="hertzb2026090856">
 <head>
   <title>Den 55. Psalme</title>
   <subtitle>Mel. O Gud, du fromme Gud!</subtitle>
   <firstline>O! Herre hør min Bøn! o! drag dig ei tilbage</firstline>
   <notes>
-    <note>Denne Psalme henhører til den Tid David flyede for Absalon — fra det 14de Vers af skildres kiendelig Oprørets Stifter Achitophel — Psalmen er formodentlig skrevet, efterat David havde faaet Efterretning om Achitophels ulykkelige Endeligt, thi fra det 16 Vers sigtes (som det synes) dertil.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme55">Salmernes Bog 55</a>.</note>
+    <note>* Denne Psalme henhører til den Tid David flyede for Absalon — fra det 14de Vers af skildres kiendelig Oprørets Stifter Achitophel — Psalmen er formodentlig skrevet, efterat David havde faaet Efterretning om Achitophels ulykkelige Endeligt, thi fra det 16 Vers sigtes (som det synes) dertil.</note>
   </notes>
   <source in="bd2" pages="41-44"/>
   <keywords>salme</keywords>
@@ -5591,13 +5632,14 @@ Men jeg — her er mit Haab! — jeg veed du staaer mig bi.
 </body>
 </text>
 
-<text id="hertzb2026090857">
+<text id="boye2026090857" aliases="hertzb2026090857">
 <head>
   <title>Den 56. Psalme</title>
   <subtitle>Mel. Vreden din afvend.</subtitle>
   <firstline>Skaans Evige om mig med Miskundheder</firstline>
   <notes>
-    <note>David beder tillidsfuld om Guds Hielp, og erindrer sig med Taknemmelighed Guds Frelse, da han forfulgt af Saul faldt i Philisternes Hænder i Gath.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme56">Salmernes Bog 56</a>.</note>
+    <note>* David beder tillidsfuld om Guds Hielp, og erindrer sig med Taknemmelighed Guds Frelse, da han forfulgt af Saul faldt i Philisternes Hænder i Gath.</note>
   </notes>
   <source in="bd2" pages="45-47"/>
   <keywords>salme</keywords>
@@ -5674,13 +5716,14 @@ Fast stod min Fod — jeg kan i Livet være
 </body>
 </text>
 
-<text id="hertzb2026090858">
+<text id="boye2026090858" aliases="hertzb2026090858">
 <head>
   <title>Den 57. Psalme</title>
   <subtitle>Mel. Ret nys gik Solens Klarhed hen.</subtitle>
   <firstline>Forbarm dig Gud! Forbarm du dig!</firstline>
   <notes>
-    <note>En Lovsang forfattet af David, da han forfulgt af Saul maatte skiule sig i Huulen, og ved Guds besynderlige Varetægt blev frelst af største Livs Fare.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme57">Salmernes Bog 57</a>.</note>
+    <note>* En Lovsang forfattet af David, da han forfulgt af Saul maatte skiule sig i Huulen, og ved Guds besynderlige Varetægt blev frelst af største Livs Fare.</note>
   </notes>
   <source in="bd2" pages="48-49"/>
   <keywords>salme</keywords>
@@ -5747,13 +5790,14 @@ Din Ære være Sang for al vor Jord.
 </body>
 </text>
 
-<text id="hertzb2026090859">
+<text id="boye2026090859" aliases="hertzb2026090859">
 <head>
   <title>Den 58. Psalme</title>
   <subtitle>Mel. Vor Gud han er saa fast en Borg.</subtitle>
   <firstline>I Jordens Guder! vil I og</firstline>
   <notes>
-    <note>En Straffe-Sang imod uretfærdig Øvrighed,</note>
+    <note>Fri oversættelse af <a bible="bibelsalme58">Salmernes Bog 58</a>.</note>
+    <note>* En Straffe-Sang imod uretfærdig Øvrighed,</note>
   </notes>
   <source in="bd2" pages="50-52"/>
   <keywords>salme</keywords>
@@ -5786,7 +5830,6 @@ Og stride mod Formaning.
 <nonum><center>3.</center></nonum>
     De lukke deres Øren til,
 Ret som den tredske Slange,
-
 <pb n="51" facs="057.jpg"/>Der stopper Ørene, og vil
 Ei høre Maner-Sange,
 Hvor færdig Maneren
@@ -5831,13 +5874,14 @@ I Herrens Sted paa Jorden.
 </body>
 </text>
 
-<text id="hertzb2026090860">
+<text id="boye2026090860" aliases="hertzb2026090860">
 <head>
   <title>Den 59. Psalme</title>
   <subtitle>Mel. Kom sterke Frelser snart.</subtitle>
   <firstline>Min Gud! o red du mig af mine Fienders Hænder</firstline>
   <notes>
-    <note>En Bøn til Gud om Beskiermelse imod ondskabsfulde og blodgierrige Fiender — David fryder sig, og takker Gud, at han undkom med Livet ved sin Hustrue Michols Hielp, da Saul vilde ladet ham hente fra sit Huus, for at dræbe ham.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme59">Salmernes Bog 59</a>.</note>
+    <note>* En Bøn til Gud om Beskiermelse imod ondskabsfulde og blodgierrige Fiender — David fryder sig, og takker Gud, at han undkom med Livet ved sin Hustrue Michols Hielp, da Saul vilde ladet ham hente fra sit Huus, for at dræbe ham.</note>
   </notes>
   <source in="bd2" pages="53-55"/>
   <keywords>salme</keywords>
@@ -5920,13 +5964,14 @@ Thi Herren er min Borg, min naadefulde Gud.
 </body>
 </text>
 
-<text id="hertzb2026090861">
+<text id="boye2026090861" aliases="hertzb2026090861">
 <head>
   <title>Den 60. Psalme</title>
   <subtitle>Mel. Ach vidste du, som gaaer i Syndens Lænke.</subtitle>
   <firstline>Du havde os forskudt og sønderrevet</firstline>
   <notes>
-    <note>En Takke-Sang, fordi Gud havde reddet Israels Børn af særdeles farlige Omstændigheder, og efter mange Nederlage givet dem en stor og afgiørende Seier over Edomiterne.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme60">Salmernes Bog 60</a>.</note>
+    <note>* En Takke-Sang, fordi Gud havde reddet Israels Børn af særdeles farlige Omstændigheder, og efter mange Nederlage givet dem en stor og afgiørende Seier over Edomiterne.</note>
   </notes>
   <source in="bd2" pages="56-58"/>
   <keywords>salme</keywords>
@@ -5978,8 +6023,8 @@ Som understøtte trygt Lovgiveren.
     Mens Israel mig Seiers-Krandse fletter,
 Saa vader jeg i slagne Fienders Blod
 Til Moabs Dal og mine Fødder tvætter,
-Og sætter mig ved Fredens Giestebud; —<footnote>— Efter erholdet Seier anrettedes gemeenlig Giestebud, og førend Hebræerne gik til Bords løste de deres Skoe af og vadskede deres Fødder.</footnote>
-Til Edom kaster jeg min Skoe; —<footnote>Det er: Edom er min Tiener; thi naar en Hebræer kiøbte en Tiener, saa maatte samme strax løse sin nye Herres Skoe og bære dem nogle Skridt efter ham.</footnote>
+Og sætter mig ved Fredens Giestebud; —<footnote>* — Efter erholdet Seier anrettedes gemeenlig Giestebud, og førend Hebræerne gik til Bords løste de deres Skoe af og vadskede deres Fødder.</footnote>
+Til Edom kaster jeg min Skoe; —<footnote>* Det er: Edom er min Tiener; thi naar en Hebræer kiøbte en Tiener, saa maatte samme strax løse sin nye Herres Skoe og bære dem nogle Skridt efter ham.</footnote>
 Vær Seier-Sang du Land Philistrene beboe!
 
 <pb n="58" facs="064.jpg"/><nonum><center>7.</center></nonum>
@@ -6001,13 +6046,14 @@ Hver uforsonlig Magt, som imod os opstaaer.
 </body>
 </text>
 
-<text id="hertzb2026090862">
+<text id="boye2026090862" aliases="hertzb2026090862">
 <head>
   <title>Den 61. Psalme</title>
   <subtitle>Mel. Hiertelig mig nu længes.</subtitle>
   <firstline>Hvor klager ei min Harpe!</firstline>
   <notes>
-    <note>Denne Psalme, hvilken David har forfattet som Konge, men tillige som een til Landets yderste Kant fordreven Mand, synes at henhøre til den Tid, han flyede for Absalon:</note>
+    <note>Fri oversættelse af <a bible="bibelsalme61">Salmernes Bog 61</a>.</note>
+    <note>* Denne Psalme, hvilken David har forfattet som Konge, men tillige som een til Landets yderste Kant fordreven Mand, synes at henhøre til den Tid, han flyede for Absalon:</note>
   </notes>
   <source in="bd2" pages="59-61"/>
   <keywords>salme</keywords>
@@ -6078,13 +6124,14 @@ Som jeg har lovet dig.
 </body>
 </text>
 
-<text id="hertzb2026090863">
+<text id="boye2026090863" aliases="hertzb2026090863">
 <head>
   <title>Den 62. Psalme</title>
   <subtitle>Mel. O kiere Siel frygt aldrig meer.</subtitle>
   <firstline>Min Siel er vendt stiltiende</firstline>
   <notes>
-    <note>Under de Forfølgelser, David maatte udstaae af sine Fiender, sætter han sin Tilliid til Gud, og giør tillige almindelige Anmærkninger over den menneskelige Magts Ubetydelighed og Lykkens Ubestandighed.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme62">Salmernes Bog 62</a>.</note>
+    <note>* Under de Forfølgelser, David maatte udstaae af sine Fiender, sætter han sin Tilliid til Gud, og giør tillige almindelige Anmærkninger over den menneskelige Magts Ubetydelighed og Lykkens Ubestandighed.</note>
   </notes>
   <source in="bd2" pages="62-64"/>
   <keywords>salme</keywords>
@@ -6114,7 +6161,6 @@ Saa kiempe I — hvad Ære?
     De raadslaae alle om: Hvordan
 De kunde en ophøiet Mand
 Fra Ærens Top nedstyrte;
-
 <pb n="63" facs="069.jpg"/>De ynde sort Bagvadskelse,
 Velsigne vel; men Hierterne
 Med Læberne ei sande;
@@ -6168,13 +6214,14 @@ Og straffer Jordens Sønner.
 </body>
 </text>
 
-<text id="hertzb2026090864">
+<text id="boye2026090864" aliases="hertzb2026090864">
 <head>
   <title>Den 63. Psalme</title>
   <subtitle>Mel. Vaag op og slaae paa dine Strenge.</subtitle>
   <firstline>Mens Jorden i sin Slummer ligger</firstline>
   <notes>
-    <note>I sin Flugt for Absalon har David formodentlig forfattet denne Psalme, hvori han udtrykker sin Længsel efter Gud, og sin Glæde i Gud, ved hvis Naade endog hans da værende Opholdssted, den tørre Ørk, forekom ham som en herlig Egn, der er riig og overflødig paa alting.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme63">Salmernes Bog 63</a>.</note>
+    <note>* I sin Flugt for Absalon har David formodentlig forfattet denne Psalme, hvori han udtrykker sin Længsel efter Gud, og sin Glæde i Gud, ved hvis Naade endog hans da værende Opholdssted, den tørre Ørk, forekom ham som en herlig Egn, der er riig og overflødig paa alting.</note>
   </notes>
   <source in="bd2" pages="65-67"/>
   <keywords>salme</keywords>
@@ -6241,23 +6288,22 @@ I Graven, Ræds’lers Boelig ned.
 <pb n="67" facs="073.jpg"/><nonum><center>8.</center></nonum>
     De faldt ved Sværd igiennembored’,
 Og Rovdyr søgte deres Liig,
-Men, hvo ved Kongens Liv har svoret, *)
+Men, hvo ved Kongens Liv har svoret,<footnote>* Det er sædvanligt i Morgenlandene at sværge ved Kongen, <a bible="bibel1mose42,15">1 Mose Bogs 42, 15.</a></footnote>
 Ved Kongens Held skal rose sig;
 Den reene Sandhed seirer kun,
 Tilstoppet er hver Løgner-Mund.
-
-<footnote>*) Det er sædvanligt i Morgenlandene at sværge ved Kongen, 1 Mose Bogs 42, 15.</footnote>
 </poetry>
 </body>
 </text>
 
-<text id="hertzb2026090865">
+<text id="boye2026090865" aliases="hertzb2026090865">
 <head>
   <title>Den 64. Psalme</title>
   <subtitle>Mel. Ret nys gik Solens Klarhed hen.</subtitle>
   <firstline>Gud! mens jeg raaber, svar du mig!</firstline>
   <notes>
-    <note>Under uretfærdige og ubillige Bagvadskelser sætter David sin Tillid til Gud — Psalmen synes at henhøre til den Tid, han endnu var ved Sauls Hof, og hos denne Konge blev sværtet af sine bagtaleriske Fiender.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme64">Salmernes Bog 64</a>.</note>
+    <note>* Under uretfærdige og ubillige Bagvadskelser sætter David sin Tillid til Gud — Psalmen synes at henhøre til den Tid, han endnu var ved Sauls Hof, og hos denne Konge blev sværtet af sine bagtaleriske Fiender.</note>
   </notes>
   <source in="bd2" pages="68-69"/>
   <keywords>salme</keywords>
@@ -6308,13 +6354,14 @@ Og han er Haab for hver en Redelig.
 </body>
 </text>
 
-<text id="hertzb2026090866">
+<text id="boye2026090866" aliases="hertzb2026090866">
 <head>
   <title>Den 65. Psalme</title>
   <subtitle>Mel. Den prægtig’ Soel &amp;c.</subtitle>
   <firstline>Det stille Haab er dig lovfulde Toner</firstline>
   <notes>
-    <note>En Lovsang i Anledning af en særdeles velsignet Høst efter foregaaende svære Landeplager, som synes at have bestaaet i Misvæxt og Hungers Nød.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme65">Salmernes Bog 65</a>.</note>
+    <note>* En Lovsang i Anledning af en særdeles velsignet Høst efter foregaaende svære Landeplager, som synes at have bestaaet i Misvæxt og Hungers Nød.</note>
   </notes>
   <source in="bd2" pages="70-72"/>
   <keywords>salme</keywords>
@@ -6366,7 +6413,7 @@ Hvor Aftenen paa sorte Skyer hviler,
     Vor tørstig’ Jord anraaber dig om Vædsker,
 Du skuer ned, og den af Medynk lædsker,
 Og giør den meget rig — o Held os nu!
-Guds Strøm *) er fuld, mørk, som en svanger Torden;
+Guds Strøm<footnote>* Skyerne.</footnote> er fuld, mørk, som en svanger Torden;
 Den Sæd, som døer, befrugter du, og Jorden,
         Den jevner du.
 
@@ -6377,8 +6424,6 @@ Ved din godgiørende og milde Regn;
 Lad Jordens Sæd inddrikke signet Grøde,
 Og spire frem, og modne Frugter føde
         Fra Egn til Egn!
-
-<footnote>*) Skyerne.</footnote>
 
 <pb n="72" facs="078.jpg"/><nonum><center>8.</center></nonum>
     Ja Jehova! dit gode Aar du kroner,
@@ -6399,13 +6444,14 @@ I dine Fied opvoxe høie Glæder,
 </body>
 </text>
 
-<text id="hertzb2026090867">
+<text id="boye2026090867" aliases="hertzb2026090867">
 <head>
   <title>Den 66. Psalme</title>
   <subtitle>Mel. Store Prophete med himmelske Lære.</subtitle>
   <firstline>Landenes mange og glade Indvaaner’</firstline>
   <notes>
-    <note>En Lovsang, hvori Guds Velgierninger imod det Israelitiske Folk blive besiungne.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme66">Salmernes Bog 66</a>.</note>
+    <note>* En Lovsang, hvori Guds Velgierninger imod det Israelitiske Folk blive besiungne.</note>
   </notes>
   <source in="bd2" pages="73-75"/>
   <keywords>salme</keywords>
@@ -6496,13 +6542,14 @@ Og som fra mig ei bortvendte sin Naade!
 </body>
 </text>
 
-<text id="hertzb2026090868">
+<text id="boye2026090868" aliases="hertzb2026090868">
 <head>
   <title>Den 67. Psalme</title>
   <subtitle>Mel. O Gud du fromme Gud.</subtitle>
   <firstline>Gud vær os naadig, og os Gud, vor Gud, velsigne!</firstline>
   <notes>
-    <note>En Lovsang, der synes at være afsiunget paa en Fest, der indfaldt i Efteraaret, og var formodentlig et Giensvar paa den ypperste Præstes Velsignelse, som sluttes deraf, at der 3de Gange nemlig i det 2, 7. og 8. Vers forekommer disse Ord: velsign os Gud.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme67">Salmernes Bog 67</a>.</note>
+    <note>* En Lovsang, der synes at være afsiunget paa en Fest, der indfaldt i Efteraaret, og var formodentlig et Giensvar paa den ypperste Præstes Velsignelse, som sluttes deraf, at der 3de Gange nemlig i det 2, 7. og 8. Vers forekommer disse Ord: velsign os Gud.</note>
   </notes>
   <source in="bd2" pages="76"/>
   <keywords>salme</keywords>
@@ -6531,13 +6578,14 @@ Velsign os Gud, vor Gud! — og Jorden frygte ham!
 </body>
 </text>
 
-<text id="hertzb2026090869">
+<text id="boye2026090869" aliases="hertzb2026090869">
 <head>
   <title>Den 68. Psalme</title>
   <subtitle>Mel. Ach vidste du, som gaaer i Syndens Lænke.</subtitle>
   <firstline>Gud reiser sig — hans Fiender maa adspredes</firstline>
   <notes>
-    <note>Guds Helligdomme eller hellige Tempel, Boeliger og Bierge Sinai, Zion og hans sande Tempel i Himmelen blive besiungne; dernæst det Israelitiske Folks Førelse igiennem Arabien, dets Indtog i Palæstina, samt de Seiervindinger, Gud gav dem over Cananiterne — Slutningen af Psalmen er dunkel, maaskee formedelst Mangel paa historiske Efterretninger.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme68">Salmernes Bog 68</a>.</note>
+    <note>* Guds Helligdomme eller hellige Tempel, Boeliger og Bierge Sinai, Zion og hans sande Tempel i Himmelen blive besiungne; dernæst det Israelitiske Folks Førelse igiennem Arabien, dets Indtog i Palæstina, samt de Seiervindinger, Gud gav dem over Cananiterne — Slutningen af Psalmen er dunkel, maaskee formedelst Mangel paa historiske Efterretninger.</note>
   </notes>
   <source in="bd2" pages="77-82"/>
   <keywords>salme</keywords>
@@ -6566,7 +6614,6 @@ Du holder Høitid for den store Jehova —
 Bered hans Vei og giør hans Bane viid,
 Hans, som staaer op og drager giennem Ørken,
 Og kommer, o! hvor majestætisk, hid,
-
 <pb n="78" facs="084.jpg"/>Hans store Navn er Jehova,
 Hans Navn er Trøst og Fryd, saa fryder eder da!
 
@@ -6599,7 +6646,6 @@ Det længe Opholdssted for de elendige.
 Men Jehova dem sendte Seiers-Bud;
 „Held Israel!“ (sang Kampens Sangerinder)
 „Sig Kongerne til Striden rusted’ ud,“
-
 <pb n="79" facs="085.jpg"/>„Men flygte bort med modløs Hær,“
 „Og Kampens Bytte alt et Rov for Qvinder er!“
 
@@ -6632,7 +6678,6 @@ Gud intet andet Bierg til Boelig vælger sig.
 Skal dyrke Gud i Himlers Helligste) —
 Gud stiger op til hine Helligdomme,
 Til Englenes talløse Tusinde;
-
 <pb n="80" facs="086.jpg"/>Imellem dem er Herren, som
 Nedsteeg til Sinai, og til sit Tempel kom.
 
@@ -6657,19 +6702,16 @@ Og veed Udgange fra en øiensynlig Død.
 Som hade ham, og gaae i Synden frem,
 Jeg, siger han, fra Basans Bierg dem kalder,
 Og Havet skal for mig ei skiule dem —
-Vadsk du *) i deres Blod din Fod! —
+Vadsk du<footnote>* Israel.</footnote> i deres Blod din Fod! —
 Ja, Gud! lad Hundene opslikke Fienders Blod!
 
 <nonum><center>15.</center></nonum>
     Din Fest er nu, o Gud, min Gud og Konge!
 Dit Indtog i din Helligdom vi see;
-
-<footnote>*) Israel.</footnote>
-
 <pb n="81" facs="087.jpg"/>Alt Sangerne gaae foran dig, og siunge
 Og slutte Chor med Cithar-Spillere,
 Og Festens Sangerinder gaae
-For dig i Høitids-Dragt, og deres Trommer slaae. *)
+For dig i Høitids-Dragt, og deres Trommer slaae.<footnote>* Ikke det, vi kalde Trommer; men et morgenlandsk Instrument (som var en Cirkel af Metal med et overstrammet Skind, hvorved hængte adskillige Bielder) hvilket Fruentimmerne holdt i Haanden, og af og til slog paa.</footnote>
 
 <nonum><center>16.</center></nonum>
     Syng Chor mod Chor, tilbeder ham, den Største!
@@ -6690,17 +6732,13 @@ Ved Gaver ære dig, du eene Vældige.
 <nonum><center>18.</center></nonum>
     Ægypti Land, den trædske Crocodile,
 Som boer blandt Rør — straf den, og Tyrene,
-Som barske sig fra kaade Kalve skille, **)
+Som barske sig fra kaade Kalve skille,<footnote>* De Mægtigste blandt det Folk lignes ved Tyre eller Øxne, og de mindre Formaaende ved unge Kalve.</footnote>
 Og straf du og den Overmodige,
-
-<footnote>*) Ikke det, vi kalde Trommer; men et morgenlandsk Instrument (som var en Cirkel af Metal med et overstrammet Skind, hvorved hængte adskillige Bielder) hvilket Fruentimmerne holdt i Haanden, og af og til slog paa.</footnote>
-<footnote>**) De Mægtigste blandt det Folk lignes ved Tyre eller Øxne, og de mindre Formaaende ved unge Kalve.</footnote>
-
 <pb n="82" facs="088.jpg"/>Som paa Sølv-Thronen hæver sig;
 Slaae og adspred de Folk, som elske Vold og Krig!
 
 <nonum><center>19.</center></nonum>
-    Og Chaschmanæer *) skal fra Ægypten komme,
+    Og Chaschmanæer<footnote>* Formodentlig et Folk fra det Yderste i Ægypten.</footnote> skal fra Ægypten komme,
 Og ilende skal Ethiopien
 Kun søge dig, de skal blandt dine Fromme
 Kun vende sig med Bøn til Himmelen —
@@ -6722,19 +6760,18 @@ Og Israel! — den Gud, som du tilbeder
 Han giver dig Kraft og Velsignelse; —
 Stor er vor Gud! Halleluja!
 Tilbedelse og Tak tilhøre Jehova!
-
-<footnote>*) Formodentlig et Folk fra det Yderste i Ægypten.</footnote>
 </poetry>
 </body>
 </text>
 
-<text id="hertzb2026090870">
+<text id="boye2026090870" aliases="hertzb2026090870">
 <head>
   <title>Den 69. Psalme</title>
   <subtitle>Mel. O Gud, du fromme Gud!</subtitle>
   <firstline>Gud, red mig! red mig snart — thi Strømmene mig dræbe</firstline>
   <notes>
-    <note>En Bøn under særdeles haarde Lidelser, som i det nye Testamente henegnes paa Christo.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme69">Salmernes Bog 69</a>.</note>
+    <note>* En Bøn under særdeles haarde Lidelser, som i det nye Testamente henegnes paa Christo.</note>
   </notes>
   <source in="bd2" pages="83-87"/>
   <keywords>salme</keywords>
@@ -6799,7 +6836,6 @@ Og for din Troefasthed mig sende Redning ned.
 <nonum><center>10.</center></nonum>
     O drag mig af det Dynd, hvori jeg er nedgravet!
 Red mig fra Fiendens Magt, af Svælgene i Havet!
-
 <pb n="85" facs="091.jpg"/>Mig Strømme ei nedslaae, ei Dybet aabne sig!
 Og lad ei Grubens Gab tilsluttes over mig.
 
@@ -6825,7 +6861,7 @@ Paa Trøst jeg vented’, men forgæves vented’ jeg.
     De Gift, en bitter Gift, mig i min Afmagt række,
 Og give i min Tørst mig Edike at drikke,
 O! skal ei deres Bord (til en Giengieldelse)
-En Snare blive for dem selv, de Mordere —<footnote>Paa Jøderne, som havde giort sig skyldige i Christi Lidelse og Død, er dette meget egentlig opfyldt; thi da næsten en Million Mennesker var forsamlet i Jerusalem for at æde Paaskelammet, bleve de uformodentlig indsluttede af den Romerske Krigshær under Keiser Tito Vespasiano, og 900000 omkomme i den beleirede Stad.</footnote>
+En Snare blive for dem selv, de Mordere —<footnote>* Paa Jøderne, som havde giort sig skyldige i Christi Lidelse og Død, er dette meget egentlig opfyldt; thi da næsten en Million Mennesker var forsamlet i Jerusalem for at æde Paaskelammet, bleve de uformodentlig indsluttede af den Romerske Krigshær under Keiser Tito Vespasiano, og 900000 omkomme i den beleirede Stad.</footnote>
 
 <pb n="86" facs="092.jpg"/><nonum><center>15.</center></nonum>
     Jo — dem skal Blindhed slaae; thi Hevnen bier disse —
@@ -6860,7 +6896,6 @@ Og han forkaster ei dem, som han revsede!
 <nonum><center>20.</center></nonum>
     Ham love Himle og den Jord, som for ham bæver!
 Ham love Verdens Hav, og hvad i Havet lever!
-
 <pb n="87" facs="093.jpg"/>Thi Gud er Zions Hielp, han bygger Stæderne
 I Juda Rige op trindt om Indvaanerne.
 
@@ -6873,13 +6908,14 @@ Skal eie Stæderne, og boe i dem med Fred.
 </body>
 </text>
 
-<text id="hertzb2026090871">
+<text id="boye2026090871" aliases="hertzb2026090871">
 <head>
   <title>Den 70. Psalme</title>
   <subtitle>Mel. Et lidet Barn saa lysteligt.</subtitle>
   <firstline>Iil mig til Hielp, o Jehova!</firstline>
   <notes>
-    <note>En Bøn om Hielp imod sine Fiender, som er taget af den 40de Psalme, hvor den staaer næsten med samme Ord.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme70">Salmernes Bog 70</a>.</note>
+    <note>* En Bøn om Hielp imod sine Fiender, som er taget af den <a bible="bibelsalme40">40de Psalme</a>, hvor den staaer næsten med samme Ord.</note>
   </notes>
   <source in="bd2" pages="88"/>
   <keywords>salme</keywords>
@@ -6914,13 +6950,14 @@ Mig snart med Hielp husvale!
 </body>
 </text>
 
-<text id="hertzb2026090872">
+<text id="boye2026090872" aliases="hertzb2026090872">
 <head>
   <title>Den 71. Psalme</title>
   <subtitle>Mel. Gud vær mig naadig og</subtitle>
   <firstline>O Jehova! jeg flyer i stadig Flugt til dig</firstline>
   <notes>
-    <note>Ved tiltagende Aar besiunger David taknemmelig de Velgierninger, Gud har beviist ham fra hans Ungdom af, og beder: at Gud ei vil forlade ham i hans Alderdom, men fremdeles beskytte ham imod hans Efterstræbere.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme71">Salmernes Bog 71</a>.</note>
+    <note>* Ved tiltagende Aar besiunger David taknemmelig de Velgierninger, Gud har beviist ham fra hans Ungdom af, og beder: at Gud ei vil forlade ham i hans Alderdom, men fremdeles beskytte ham imod hans Efterstræbere.</note>
   </notes>
   <source in="bd2" pages="89-92"/>
   <keywords>salme</keywords>
@@ -7043,13 +7080,14 @@ Om din Retfærdighed jeg daglig vidne skal,
 </body>
 </text>
 
-<text id="hertzb2026090873">
+<text id="boye2026090873" aliases="hertzb2026090873">
 <head>
   <title>Den 72. Psalme</title>
   <subtitle>Mel. Den prægtig’ Soel 2c.</subtitle>
   <firstline>Gud overgiv til Kongen dine Domme!</firstline>
   <notes>
-    <note>En Sang til en særdeles forønsket Konge, der skal udøve Retfærdighed, være til største Velsignelse for sit Folk, og regiere saalænge der er Sol og Maane paa Himmelen. Denne Konge kan ikke være nogen anden end Messias.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme72">Salmernes Bog 72</a>.</note>
+    <note>* En Sang til en særdeles forønsket Konge, der skal udøve Retfærdighed, være til største Velsignelse for sit Folk, og regiere saalænge der er Sol og Maane paa Himmelen. Denne Konge kan ikke være nogen anden end Messias.</note>
   </notes>
   <source in="bd2" pages="93-95"/>
   <keywords>salme</keywords>
@@ -7063,7 +7101,7 @@ Den Konge-Søn med Konge-Vælde komme,
 Med din Retfærdighed og Zepteret!
 Hvor billig skal han dømme dem, dig frygte,
 Og skue ned paa dine Undertrykte,
-Og dømme ret.
+        Og dømme ret.
 
 <nonum><center>2.</center></nonum>
     Sig glade Bud fra Bierg og Høi skal skynde,
@@ -7071,7 +7109,7 @@ Og Folkene den Salighed forkynde:
 Han tager sig de Undertrykte an!
 Fortrængtes Børn han ved sin Vælde redder,
 Og alle, som udøve Voldsomheder,
-Dem knuser han.
+        Dem knuser han.
 
 <nonum><center>3.</center></nonum>
     Og sande Gud! og du skal frygtet være
@@ -7079,7 +7117,7 @@ Fra Slægt til Slægt, mens Soel og Maane ere —
 Og Han skal være, som en Sommer-Regn
 For Marken, som Græshopperne afpiller,
 Som Dug, der ned i tusind’ Taare triller,
-I tørket Egn.
+        I tørket Egn.
 
 <pb n="94" facs="100.jpg"/><nonum><center>4.</center></nonum>
     Retfærdige skal under ham tiltage,
@@ -7087,7 +7125,7 @@ Og megen Fred skal være i hans Dage —
 Til Maanen slettes ud hans Throne staaer,
 Hans Arve-Land gaaer fra et Hav til andet,
 Fra Euphrat til den sidste Kant i Landet
-Hans Zepter naaer.
+        Hans Zepter naaer.
 
 <nonum><center>5.</center></nonum>
     De vilde Folk skal for hans Fødder ligge,
@@ -7095,7 +7133,7 @@ Nedstyrted’ skal hans Fiender Støvet slikke,
 Ham ydes Æreskiænk fra Spanien,
 Og hver en Stat, som ned fra Japhat stiger,
 Og Kongerne fra begge Saba-Riger
-Skal yde den.
+        Skal yde den.
 
 <nonum><center>6.</center></nonum>
     Med Knæfald skal ham alle Konger ære
@@ -7103,7 +7141,7 @@ Og alle Folk erkiende ham for Herre;
 Thi han erobrer ei med Sværd og Brand;
 Men Arme, som til ham om Retten raabe,
 Og hver Fortrængt, som ingen Hielp kan haabe,
-Udfrier han.
+        Udfrier han.
 
 <nonum><center>7.</center></nonum>
     Hans Miskundhed skal alle Arme glæde!
@@ -7111,7 +7149,7 @@ Nødlidende skal han fra Døden redde;
 Og den, som Aagreren er grum imod,
 Den skal hans Arm fra Dom og Vold udrive,
 Thi Armes Blod skal for hans Øine blive
-Et kostbart Blod.
+        Et kostbart Blod.
 
 <pb n="95" facs="101.jpg"/><nonum><center>8.</center></nonum>
     De leve skal — ja de skal ydermeere
@@ -7119,7 +7157,7 @@ Ham Gaver af arabisk Guld forære,
 Ham, som saa vældig fremmer deres Sag,
 Og disse skal ham uophørlig ære,
 De skal ham Lov paa glade Læber bære
-Fra Dag til Dag.
+        Fra Dag til Dag.
 
 <nonum><center>9.</center></nonum>
     En Fure Jord paa Biergets Top skal blive
@@ -7127,7 +7165,7 @@ Besaaed’ med Sæd, og den skal Frugter give,
 Og groe saa tryg, som Ceder-Skoven groer,
 Og Stæderne skal overalt florere,
 Som Markerne, naar alle Vexter ere
-I beste Flor.
+        I beste Flor.
 
 <nonum><center>10.</center></nonum>
     Og Kongens Navn skal stort og evigt være,
@@ -7135,7 +7173,7 @@ Det skal bestaae mens Soel og Himmel ere,
 I ham skal alle Folk paa Jorderig
 Fra Slægt til Slægt sig for velsigned’ agte,
 De skal den Helt i al sin Magt betragte,
-Og fryde sig.
+        Og fryde sig.
 
 <nonum><center>11.</center></nonum>
     Vor Jehova, vor Gud, høilovet være,
@@ -7143,7 +7181,7 @@ Som eene kan forherlige sin Ære,
 Kun han er stor, og stærk, og god, og viis,
 Hans store Navn en Salighed er vorden,
 Hans Gierninger opfylde heele Jorden
-Med Almagts Priis.
+        Med Almagts Priis.
 </poetry>
 </body>
 </text>
@@ -7156,14 +7194,15 @@ Med Almagts Priis.
   <title>Tredie Bog. Andet Hefte</title>
 </head>
 <content>
-<text id="hertzb2026090874">
+<text id="boye2026090874" aliases="hertzb2026090874">
 <head>
   <suptitle>Den tredie Bog.</suptitle>
   <title>Den 73. Psalme</title>
   <subtitle>Mel. Vor Gud han er saa fast en Borg.</subtitle>
   <firstline>Gud er endnu for Israel</firstline>
   <notes>
-    <note>Asaph beskriver, hvorledes han, ved at bemærke den Lykke nogle Uretfærdige og Lastefulde nød i Verden, var bleven uvis i Henseende til Guds Forsyn, og hvorledes mange aldeles deraf vilde slutte: at Gud ikke bekymrede sig om det, som gik for sig i Verden; men denne de Ugudeliges Lykke hørte op at være ham mærkværdig og anstødelig, saasnart han tænkte paa deres Endeligt; thi han saae, at Gud straffer dem dog tilsidst, naar derimod de, som frygte Gud, blive ufeilbarligen belønnede.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme73">Salmernes Bog 73</a>.</note>
+    <note>* Asaph beskriver, hvorledes han, ved at bemærke den Lykke nogle Uretfærdige og Lastefulde nød i Verden, var bleven uvis i Henseende til Guds Forsyn, og hvorledes mange aldeles deraf vilde slutte: at Gud ikke bekymrede sig om det, som gik for sig i Verden; men denne de Ugudeliges Lykke hørte op at være ham mærkværdig og anstødelig, saasnart han tænkte paa deres Endeligt; thi han saae, at Gud straffer dem dog tilsidst, naar derimod de, som frygte Gud, blive ufeilbarligen belønnede.</note>
   </notes>
   <source in="bd2" pages="96-100"/>
   <keywords>salme</keywords>
@@ -7261,7 +7300,7 @@ Nu ere de ei meere.
 
 <nonum><center>9.</center></nonum>
     Som Vaagne kun af Drømmen lee,
-Saa giør du deres Skygge<footnote>Dem efter Døden.</footnote>
+Saa giør du deres Skygge<footnote>* Dem efter Døden.</footnote>
 Til Latter over Stæderne;
 O Gud! da disses Lykke
 Mig indtil Sielen skar,
@@ -7278,7 +7317,6 @@ Og mig dit Raad ledsager;
 Tilsidst du fører mig
 Til Herlighed, til dig,
 Thi — o min Lod er stor! —
-
 <pb n="100" facs="106.jpg"/>Du, som i Lyset boer,
 Mig henter til din Boelig.
 
@@ -7307,13 +7345,14 @@ Vox, mens jeg Gud besynger!
 </body>
 </text>
 
-<text id="hertzb2026090875">
+<text id="boye2026090875" aliases="hertzb2026090875">
 <head>
   <title>Den 74. Psalme</title>
   <subtitle>Mel. Hiertelig mig nu længes.</subtitle>
   <firstline>Saa vil du os ei redde</firstline>
   <notes>
-    <note>En Klagesang over, at Gud tillod sine Helligdomme at ødelægges.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme74">Salmernes Bog 74</a>.</note>
+    <note>* En Klagesang over, at Gud tillod sine Helligdomme at ødelægges.</note>
   </notes>
   <source in="bd2" pages="101-105"/>
   <keywords>salme</keywords>
@@ -7346,11 +7385,10 @@ I Helligdommen alt.
 Og med uskyldigt Blod
 Den reene Egn besøle,
 Hvor dine Feste stod’;
-
 <pb n="102" facs="108.jpg"/>Ja deres Varsler gielder:
 Den Øxen hæver, og
 Den tætte Skov nedfælder,
-Ham kiender man nu nok.<footnote>Det synes, som Kong Nebucadnezar havde adspurgt sine Afguds Præster om Feldtogets Udfald, og disse da havde foregivet i en Drøm eller et Syn at have seet Een, der omhuggede og udryddede en stor og stærk Skov — det Israelitiske Folk, som desuden ved Proph. Esaias Cap. 10, v. 33. 34. Ezech. 21, v. 26. 27. 28. havde lige Spaadomme, klage især over, at Gud undte deres Fiender den Glæde, at see deres Drøm indtræffe, og at de i Nebucadnezar, deres Overvinder, skulle see alt dette opfyldt.</footnote>
+Ham kiender man nu nok.<footnote>* Det synes, som Kong Nebucadnezar havde adspurgt sine Afguds Præster om Feldtogets Udfald, og disse da havde foregivet i en Drøm eller et Syn at have seet Een, der omhuggede og udryddede en stor og stærk Skov — det Israelitiske Folk, som desuden ved <a bible="bibelesajas10,33-34">Proph. Esaias Cap. 10, v. 33. 34.</a> <a bible="bibelezekiel21,26-28">Ezech. 21, v. 26. 27. 28.</a> havde lige Spaadomme, klage især over, at Gud undte deres Fiender den Glæde, at see deres Drøm indtræffe, og at de i Nebucadnezar, deres Overvinder, skulle see alt dette opfyldt.</footnote>
 
 <nonum><center>4.</center></nonum>
     De Konstens Mindes-Mærker
@@ -7369,7 +7407,6 @@ Dem alle undertrykke —
 Og Herrens Arm til Trods
 De Festene udrydde
 I Zions blide Egn;
-
 <pb n="103" facs="109.jpg"/>Høit vore Klager lyde:
 Vi see ei vore Tegn!
 
@@ -7404,7 +7441,7 @@ De stolte Strømme knused’
 Uhyrers Hoveder.
 
 <pb n="104" facs="110.jpg"/><nonum><center>9.</center></nonum>
-Du slog den Crocodile —<footnote>Crocodilen var hos de Gamle et Sindbillede paa Egypten.</footnote>
+Du slog den Crocodile —<footnote>* Crocodilen var hos de Gamle et Sindbillede paa Egypten.</footnote>
 Ved Havet hæve op
 Til Ørkens mange Vilde
 Dens sønderknuste Krop;
@@ -7466,13 +7503,14 @@ Af deres frække Larm!
 </body>
 </text>
 
-<text id="hertzb2026090876">
+<text id="boye2026090876" aliases="hertzb2026090876">
 <head>
   <title>Den 75. Psalme</title>
   <subtitle>Mel. Vreden din afvend.</subtitle>
   <firstline>Vi takke dig — vi takke dig, o Herre!</firstline>
   <notes>
-    <note>Gud lover sit Folk, at han vil vise sig som Hedningernes Dommer, og ydmyge Israeliternes uretfærdige Fiender.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme75">Salmernes Bog 75</a>.</note>
+    <note>* Gud lover sit Folk, at han vil vise sig som Hedningernes Dommer, og ydmyge Israeliternes uretfærdige Fiender.</note>
   </notes>
   <source in="bd2" pages="106-107"/>
   <keywords>salme</keywords>
@@ -7537,13 +7575,14 @@ Voldsmandens Horn — en Redelig skal være
 </body>
 </text>
 
-<text id="hertzb2026090877">
+<text id="boye2026090877" aliases="hertzb2026090877">
 <head>
   <title>Den 76. Psalme</title>
   <subtitle>Mel. O kiere Siel frygt aldrig meer.</subtitle>
   <firstline>Gud er bekiendt ved Judæ Held</firstline>
   <notes>
-    <note>En Lovsang over Guds Hielp mod mægtige Fiender.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme76">Salmernes Bog 76</a>.</note>
+    <note>* En Lovsang over Guds Hielp mod mægtige Fiender.</note>
   </notes>
   <source in="bd2" pages="108-109"/>
   <keywords>salme</keywords>
@@ -7608,13 +7647,14 @@ Han Konger Skræk indgyder.
 </body>
 </text>
 
-<text id="hertzb2026090878">
+<text id="boye2026090878" aliases="hertzb2026090878">
 <head>
   <title>Den 77. Psalme</title>
   <subtitle>Mel. Et Barn er fød i Bethlehem.</subtitle>
   <firstline>Min Stemme er til Gud henvendt</firstline>
   <notes>
-    <note>Ved en stor Gienvordighed og Ulykke, som traf Guds Folk, erindrer Digteren sig Guds Underværk i fordum Tid, da han udførte Israels Børn af Egypten, og derved trøster sig og fatter Mod.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme77">Salmernes Bog 77</a>.</note>
+    <note>* Ved en stor Gienvordighed og Ulykke, som traf Guds Folk, erindrer Digteren sig Guds Underværk i fordum Tid, da han udførte Israels Børn af Egypten, og derved trøster sig og fatter Mod.</note>
   </notes>
   <source in="bd2" pages="110-114"/>
   <keywords>salme</keywords>
@@ -7751,13 +7791,14 @@ Ved Mosis og ved Aarons Haand!
 </body>
 </text>
 
-<text id="hertzb2026090879">
+<text id="boye2026090879" aliases="hertzb2026090879">
 <head>
   <title>Den 78. Psalme</title>
   <subtitle>Mel. O kiere Siel frygt aldrig meer.</subtitle>
   <firstline>Mit Folk! mit Ord er lærerigt</firstline>
   <notes>
-    <note>En Sang over det Israelitiske Folks Begivenheder indtil Davids Tid; den forestiller især deres Forbrydelser, deres uovervindelige Vantroe, og den derpaa følgende guddommelige Straf — Digteren formaner sit Folk, at de ei skal ligne disse Vantroende, og fremfører denne Anmærkning: at Gud havde forkastet Ephraims Stamme, som var fordum Hoved-Stammen, og havde Pagtens-Ark inden sine Grændser; og at han havde udvalgt Jude Stamme, giort den til en Hoved-Stamme, og opvakt en Konge af samme.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme78">Salmernes Bog 78</a>.</note>
+    <note>* En Sang over det Israelitiske Folks Begivenheder indtil Davids Tid; den forestiller især deres Forbrydelser, deres uovervindelige Vantroe, og den derpaa følgende guddommelige Straf — Digteren formaner sit Folk, at de ei skal ligne disse Vantroende, og fremfører denne Anmærkning: at Gud havde forkastet Ephraims Stamme, som var fordum Hoved-Stammen, og havde Pagtens-Ark inden sine Grændser; og at han havde udvalgt Jude Stamme, giort den til en Hoved-Stamme, og opvakt en Konge af samme.</note>
   </notes>
   <source in="bd2" pages="115-125"/>
   <keywords>salme</keywords>
@@ -7814,7 +7855,6 @@ I Pagt med den Algode.
 De brød Guds Pagt og søgte ei
 At vandre meer paa Herrens Vei,
 De havde glemt Guds Gierning.
-
 <pb n="117" facs="123.jpg"/>De Under, som de havde seet,
 Og hvad blandt Fædrene var skeet,
 Da hver i Zoans Egne
@@ -7878,7 +7918,6 @@ De grant Guds Forsyn kiendte.
 Han bød — og Østen-Vind foer ud,
 Og Sønden-Vind adlød hans Bud,
 Og fra de lette Skyer
-
 <pb n="119" facs="125.jpg"/>Blev Kiød nedkastet overalt,
 Som Sand bevinged’ Fugle faldt,
 Han dem i Leiren strø’de,
@@ -7942,7 +7981,6 @@ Der vende ei tilbage.
 Hvor tit i Ørken vare de
 Ei onde og opsætsige;
 Og i de øde Stæder
-
 <pb n="121" facs="127.jpg"/>De fordred’ tit Guds Almagt ud,
 O! Israels selvstændig’ Gud,
 Hans evig’ Almagts Strømme,
@@ -8006,7 +8044,6 @@ Igiennem Ørken førte.
 Hvor ledte han dem ikke trygt,
 De kunde gaae foruden Frygt,
 De frygtede og ikke;
-
 <pb n="123" facs="129.jpg"/>Thi see! det nys adskildte Hav
 Laae, som en sammenkastet Grav,
 Paa Fienderne nedstyrtet,
@@ -8064,16 +8101,13 @@ Ild unge Mænd fortærede,
 Jomfruer sang ei Brude-Sang,
 Og Præster faldt — og ei engang
 Var Enkerne tilstede
-For Manden at begræde. — *)
+For Manden at begræde. —<footnote>* Det var Skik, at Morgenlandske Koner skulle offentlig græde ved Mandens Grav.</footnote>
 
 <nonum><center>34.</center></nonum>
     Dog, som en Helt til Kamp opvakt,
 Af Mod beruuset og opbragt
-
-<footnote>*) Det var Skik, at Morgenlandske Koner skulle offentlig græde ved Mandens Grav.</footnote>
-
-<pb n="125" facs="131.jpg"/>Slog Herren sine Fiender — *)
-Han deres Rygge revsede **)
+<pb n="125" facs="131.jpg"/>Slog Herren sine Fiender —<footnote>* Philisterne.</footnote>
+Han deres Rygge revsede<footnote>* <a bible="bibel1samuel05,9-12">1 Samuels 5. Cap. 9-12. v.</a></footnote>
 Dem satte til Beskiemmelse —
 Men vilde dog ei flytte
 Igien til Josephs Hytte,
@@ -8094,22 +8128,19 @@ Fra Melke-Lam ham satte
 Til Hyrde for sin Arvedeel,
 Han vogtede og Israel
 Med et oprigtigt Hierte,
-Og klogelig regierte. ***)
-
-<footnote>*) Philisterne.</footnote>
-<footnote>**) 1 Samuels 5. Cap. 9-12. v.</footnote>
-<footnote>***) Psalmen er forfattet af Asaph.</footnote>
+Og klogelig regierte.<footnote>* Psalmen er forfattet af Asaph.</footnote>
 </poetry>
 </body>
 </text>
 
-<text id="hertzb2026090880">
+<text id="boye2026090880" aliases="hertzb2026090880">
 <head>
   <title>Den 79. Psalme</title>
   <subtitle>Mel. Ach vidste du, som gaaer i Syndens Lænke.</subtitle>
   <firstline>Gud! Hedninger har nu en Hær formeeret</firstline>
   <notes>
-    <note>En Bøn mod en fiendtlig Magt, (formodentlig de Babylonier,) som havde forstyrret Jerusalem, opbrændt Templet og derved bespottet den sande Gud, hvilken de forestillede sig overvunden og afmægtig, som Afguderne.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme79">Salmernes Bog 79</a>.</note>
+    <note>* En Bøn mod en fiendtlig Magt, (formodentlig de Babylonier,) som havde forstyrret Jerusalem, opbrændt Templet og derved bespottet den sande Gud, hvilken de forestillede sig overvunden og afmægtig, som Afguderne.</note>
   </notes>
   <source in="bd2" pages="126-127"/>
   <keywords>salme</keywords>
@@ -8176,13 +8207,14 @@ Og vidne om din Magt for sildig Efterslægt.
 </body>
 </text>
 
-<text id="hertzb2026090881">
+<text id="boye2026090881" aliases="hertzb2026090881">
 <head>
   <title>Den 80. Psalme</title>
   <subtitle>Mel. Ret nys gik Solens Klarhed hen.</subtitle>
   <firstline>Du Hyrde over Israel</firstline>
   <notes>
-    <note>En Bøn, at Gud vilde opholde det Israelitiske Folk i Trængsler — Gud bliver med Ydmyghed og Tillid erindret om de Forjættelser, han med eedelig Bekræftelse havde tilsagt sin Tiener David.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme80">Salmernes Bog 80</a>.</note>
+    <note>* En Bøn, at Gud vilde opholde det Israelitiske Folk i Trængsler — Gud bliver med Ydmyghed og Tillid erindret om de Forjættelser, han med eedelig Bekræftelse havde tilsagt sin Tiener David.</note>
   </notes>
   <source in="bd2" pages="128-130"/>
   <keywords>salme</keywords>
@@ -8195,13 +8227,13 @@ Du Hyrde over Israel,
 Som førte Joseph som en kiælen Hiord,
 Forglem dog ei din Arvedeel,
 Du Lynende! hvor Mørket traurigt staaer,
-Som sidder over Cherub*) — viis din Pragt!
+Som sidder over Cherub<footnote>* Over Pagtens Ark.</footnote> — viis din Pragt!
 Lad Hedningerne see din Guddoms Magt!
 
 <nonum><center>2.</center></nonum>
     Gaae frem for os i Lyset klædt,
 Som før for Ephraim Benjamin, og
-Manassa! **) — kom med Majestæt
+Manassa!<footnote>* De vare Hovedstammerne i Sauls Tid, og i Ørken havde disse tre Stammer deres Leir bag ved Tabernaklet, og naar Leiren brød op, drog Pagtens Ark foran dem.</footnote> — kom med Majestæt
 Til Redning for dit Folk! og bryd vort Aag,
 Vort Suk er tungt! ophæv vort Slaverie!
 Dit Ansigt lyse ned! — saa seire vi.
@@ -8209,10 +8241,6 @@ Dit Ansigt lyse ned! — saa seire vi.
 <nonum><center>3.</center></nonum>
     O Jehova! Gud Zebaoth!
 Hvorlænge skal din Vrede ryge ved
-
-<footnote>*) Over Pagtens Ark.</footnote>
-<footnote>**) De vare Hovedstammerne i Sauls Tid, og i Ørken havde disse tre Stammer deres Leir bag ved Tabernaklet, og naar Leiren brød op, drog Pagtens Ark foran dem.</footnote>
-
 <pb n="129" facs="135.jpg"/>Dit Folkes-Bøn, som stiger blot
 For ubønhørt igien at falde ned,
 Du mætter dem med Taare-dugget Brød,
@@ -8245,7 +8273,6 @@ Til Havet og til Euphrat spirede.
 <nonum><center>7.</center></nonum>
     Men hvi nedbryder du den Muur,
 Som var saa tæt omkring din Viingaard bygt?
-
 <pb n="130" facs="136.jpg"/>Nu kan den Hob, som gik paa Luur,
 Afbryde Frugterne og rane trygt —
 Det vilde Sviin nu sætte dybe Spoer,
@@ -8278,13 +8305,14 @@ Dit Ansigt lyse ned! saa seire vi!
 </body>
 </text>
 
-<text id="hertzb2026090882">
+<text id="boye2026090882" aliases="hertzb2026090882">
 <head>
   <title>Den 81. Psalme</title>
   <subtitle>Mel. Den prægtig’ Soel &amp;c.</subtitle>
   <firstline>I Levi Børn! ophøier Gud vor Styrke!</firstline>
   <notes>
-    <note>Gud lover det Israelitiske Folk timelige Velgierninger og Seier over deres Fiender, naar de ville følge hans Bud; men han klager over deres Ulydighed — det synes som denne Psalme sædvanlig blev afsiungen ved Israeliternes Nye-Aar (som indfaldt den 1ste October) efter fuldendt Korn- og Viinhøst, og ved Løvhytternes Fest, som og indfalder i bemeldte Maaned.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme81">Salmernes Bog 81</a>.</note>
+    <note>* Gud lover det Israelitiske Folk timelige Velgierninger og Seier over deres Fiender, naar de ville følge hans Bud; men han klager over deres Ulydighed — det synes som denne Psalme sædvanlig blev afsiungen ved Israeliternes Nye-Aar (som indfaldt den 1ste October) efter fuldendt Korn- og Viinhøst, og ved Løvhytternes Fest, som og indfalder i bemeldte Maaned.</note>
   </notes>
   <source in="bd2" pages="131-133"/>
   <keywords>salme</keywords>
@@ -8301,14 +8329,12 @@ Slaaer Harperne, saa Zion svarer længe,
         Udbreder Fryd!
 
 <nonum><center>2.</center></nonum>
-    Nyemaaneds Fest tredobbelt stor fremtræder; *)
+    Nyemaaneds Fest tredobbelt stor fremtræder;<footnote>* Den første Dag i den Maaned Tisri var Trompeternes Fest eller Nye-Aar, den 10. den store Forsonings-Dag, og den 15. i samme Maaned Løvhytternes Fest.</footnote>
 Basuner og udbreder Jubel-Glæder!
 „Du skal Løvhytters Fest basune ud,“
 Det er en Lov for Israel, Guds Egne,
 Det er et Bud for Jacob allevegne
         Af Jacobs Gud.
-
-<footnote>*) Den første Dag i den Maaned Tisri var Trompeternes Fest eller Nye-Aar, den 10. den store Forsonings-Dag, og den 15. i samme Maaned Løvhytternes Fest.</footnote>
 
 <pb n="132" facs="138.jpg"/><nonum><center>3.</center></nonum>
     Og denne Lov os evig hellig vorde! —
@@ -8369,13 +8395,14 @@ En Stemme, Guds ukiendte Røst, jeg hørte,
 </body>
 </text>
 
-<text id="hertzb2026090883">
+<text id="boye2026090883" aliases="hertzb2026090883">
 <head>
   <title>Den 82. Psalme</title>
   <subtitle>Mel. Vreden din afvend.</subtitle>
   <firstline>Han træder frem blandt Dommerne paa Jorden</firstline>
   <notes>
-    <note>En Straffe-Sang mod uretfærdig Øvrighed.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme82">Salmernes Bog 82</a>.</note>
+    <note>* En Straffe-Sang mod uretfærdig Øvrighed.</note>
   </notes>
   <source in="bd2" pages="134-135"/>
   <keywords>salme</keywords>
@@ -8408,7 +8435,7 @@ Hans Herlighed paa Guderne indstrømmer,
         „Maa Landet bæve.“
 
 <pb n="135" facs="141.jpg"/><nonum><center>5.</center></nonum>
-    „Jeg haver sagt: *) I alle Guder ere!“
+    „Jeg haver sagt:<footnote>* <a bible="bibel2mose22">2. Mose Bog 22. Cap.</a></footnote> I alle Guder ere!“
 „I Sønner er’ af alle Herrers Herre,“
 „Men I skal døe — I Fyrster skal med andre“
         „Til Graven vandre.“
@@ -8418,19 +8445,18 @@ Hans Herlighed paa Guderne indstrømmer,
 Dig, Evige! kun Ret og Dom tilkommer;
 Thi alle Folk tilhøre dig — ja Herre!
         Din Arv de ere.
-
-<footnote>*) 2. Mose Bog 22. Cap.</footnote>
 </poetry>
 </body>
 </text>
 
-<text id="hertzb2026090884">
+<text id="boye2026090884" aliases="hertzb2026090884">
 <head>
   <title>Den 83. Psalme</title>
   <subtitle>Mel. Ach vidste du, som gaaer i Syndens Lænke.</subtitle>
   <firstline>Urettelig paakalder jeg dig, Herre!</firstline>
   <notes>
-    <note>En Bøn om guddommelig Hielp, da mange og mægtige Fiender havde sluttet Forbund imod Israeliterne.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme83">Salmernes Bog 83</a>.</note>
+    <note>* En Bøn om guddommelig Hielp, da mange og mægtige Fiender havde sluttet Forbund imod Israeliterne.</note>
   </notes>
   <source in="bd2" pages="136-138"/>
   <keywords>salme</keywords>
@@ -8513,13 +8539,14 @@ At Jordbeherskeren er Jehova — er Du.
 </body>
 </text>
 
-<text id="hertzb2026090885">
+<text id="boye2026090885" aliases="hertzb2026090885">
 <head>
   <title>Den 84. Psalme</title>
   <subtitle>Mel. Vreden din afvend.</subtitle>
   <firstline>Guds Boeliger — hvor de Elskværdig’ ere</firstline>
   <notes>
-    <note>David udtrykker sin Længsel efter Gud og hans Tempel, og beskriver deres Lykke, som har Adgang til Gud og høre ham til.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme84">Salmernes Bog 84</a>.</note>
+    <note>* David udtrykker sin Længsel efter Gud og hans Tempel, og beskriver deres Lykke, som har Adgang til Gud og høre ham til.</note>
   </notes>
   <source in="bd2" pages="139-141"/>
   <keywords>salme</keywords>
@@ -8602,13 +8629,14 @@ Lyksalig den, som ikkun dig anraaber,
 </body>
 </text>
 
-<text id="hertzb2026090886">
+<text id="boye2026090886" aliases="hertzb2026090886">
 <head>
   <title>Den 85. Psalme</title>
   <subtitle>Mel. Hielp Gud at jeg nu kunde.</subtitle>
   <firstline>O Gud! i hine Dage</firstline>
   <notes>
-    <note>De iblandt deres Fiender adspredte og i Slaverie henførte Israeliter haabe, at Gud atter skal bringe dem tilbage til deres Land, og overøse dem med Velsignelse; de styrke sig i dette Haab ved at erindre sig den Hielp, Gud fordum har beviist deres Forfædre.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme85">Salmernes Bog 85</a>.</note>
+    <note>* De iblandt deres Fiender adspredte og i Slaverie henførte Israeliter haabe, at Gud atter skal bringe dem tilbage til deres Land, og overøse dem med Velsignelse; de styrke sig i dette Haab ved at erindre sig den Hielp, Gud fordum har beviist deres Forfædre.</note>
   </notes>
   <source in="bd2" pages="142-144"/>
   <keywords>salme</keywords>
@@ -8637,7 +8665,6 @@ Og den skal falde af.
 <nonum><center>3.</center></nonum>
     Lad ei din Huld ophøre,
 Din Vrede tage af!
-
 <pb n="143" facs="149.jpg"/>Vil du din Dom udføre,
 Og skal din Guddoms Straf
 Med uforsonlig Nidkierhed
@@ -8692,13 +8719,14 @@ Hans Miskundhed er stor!
 </body>
 </text>
 
-<text id="hertzb2026090887">
+<text id="boye2026090887" aliases="hertzb2026090887">
 <head>
   <title>Den 86. Psalme</title>
   <subtitle>Mel. Jesu du min Glæde.</subtitle>
   <firstline>Med nedbøiet Øre</firstline>
   <notes>
-    <note>En Bøn af forskiellig Indhold.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme86">Salmernes Bog 86</a>.</note>
+    <note>* En Bøn af forskiellig Indhold.</note>
   </notes>
   <source in="bd2" pages="145-147"/>
   <keywords>salme</keywords>
@@ -8731,7 +8759,6 @@ Naar de dig anraabe.
 <nonum><center>3.</center></nonum>
     Skabningernes Herre!
 Lad mit Suk dog være
-
 <pb n="146" facs="152.jpg"/>Høie Raab for dig!
 Hæftet til det Høie
 Er mit bange Øie;
@@ -8779,7 +8806,7 @@ Troefast og langmodig,
 Vend dig til min Bøn!
 O! din Kraft er megen!
 Styrk, beskyt din egen
-Tienerindes Søn;<footnote>Din Livegen, din fødte Tiener.</footnote>
+Tienerindes Søn;<footnote>* Din Livegen, din fødte Tiener.</footnote>
 Til mit Vel giør Underværk,
 Og lad min forhaaned’ Fiende,
 Dig, min Hielper! kiende.
@@ -8787,13 +8814,14 @@ Dig, min Hielper! kiende.
 </body>
 </text>
 
-<text id="hertzb2026090888">
+<text id="boye2026090888" aliases="hertzb2026090888">
 <head>
   <title>Den 87. Psalme</title>
   <subtitle>Mel. Vaag op og slaae paa dine Strenge.</subtitle>
   <firstline>Den Stad, som Jehova har grundet</firstline>
   <notes>
-    <note>Hedningenes Omvendelse til den sande Gud bliver forestillet paa saadan Maade: som om Gud i den Fortegnelse, han holder over sine Undersaatter, vil forandre Hedningenes Navn, tælle dem med iblandt, og agte dem lige med Zions Indfødte — Michaelis vover ikke at bestemme, om denne Psalme gaaer til det nye Testamentes Tider eller er allerede opfyldt i det Gamle, da Kundskab om den sande Gud var til visse Tider vidt udbredt.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme87">Salmernes Bog 87</a>.</note>
+    <note>* Hedningenes Omvendelse til den sande Gud bliver forestillet paa saadan Maade: som om Gud i den Fortegnelse, han holder over sine Undersaatter, vil forandre Hedningenes Navn, tælle dem med iblandt, og agte dem lige med Zions Indfødte — Michaelis vover ikke at bestemme, om denne Psalme gaaer til det nye Testamentes Tider eller er allerede opfyldt i det Gamle, da Kundskab om den sande Gud var til visse Tider vidt udbredt.</note>
   </notes>
   <source in="bd2" pages="148-149"/>
   <keywords>salme</keywords>
@@ -8820,7 +8848,6 @@ Skal en beundret Lykke see.
 <nonum><center>3.</center></nonum>
     Saa sagde Gud: jeg vil antegne
 Egypter, Babylonier,
-
 <pb n="149" facs="155.jpg"/>Og tælle dem blandt Zions egne;
 Jeg vil Philistre, Tyrier,
 Og Ethiopier ansee
@@ -8845,13 +8872,14 @@ Er’ mine Kilder ei i dig!
 </body>
 </text>
 
-<text id="hertzb2026090889">
+<text id="boye2026090889" aliases="hertzb2026090889">
 <head>
   <title>Den 88. Psalme</title>
   <subtitle>Mel. Vor Gud er idel Kierlighed.</subtitle>
   <firstline>Min Hielper! Jehova, min Gud!</firstline>
   <notes>
-    <note>En Bøn i den største Livsfare — Digteren forekommer sig og andre, som om han var virkelig død, og skulde Gud hielpe ham, saa syntes det ham ligesaa overordentligt, som om Gud opvakte Døde; han spørger: om man vel kan formode dette af Gud; men han drister sig dog til at bede om guddommelig Hielp.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme88">Salmernes Bog 88</a>.</note>
+    <note>* En Bøn i den største Livsfare — Digteren forekommer sig og andre, som om han var virkelig død, og skulde Gud hielpe ham, saa syntes det ham ligesaa overordentligt, som om Gud opvakte Døde; han spørger: om man vel kan formode dette af Gud; men han drister sig dog til at bede om guddommelig Hielp.</note>
   </notes>
   <source in="bd2" pages="150-153"/>
   <keywords>salme</keywords>
@@ -8880,7 +8908,6 @@ Ja man mig næsten tæller
         Man Graven seer
 Alt over mig at falde;
         Jeg er en Mand,
-
 <pb n="151" facs="157.jpg"/>        Der ikke kan
 Min Kraft tilbagekalde.
 
@@ -8913,7 +8940,6 @@ Paa Haab om Frihed falde.
 Og mine Sukke raabe
 Til dig om Hielp, hvert Aandedræt;
 Men — o! hvad kan jeg haabe!
-
 <pb n="152" facs="158.jpg"/>        Skal vel en død
         I Gravens Skiød
 Dit Naades Under være?
@@ -8972,13 +8998,14 @@ Har du mig og frarøven!
 </body>
 </text>
 
-<text id="hertzb2026090890">
+<text id="boye2026090890" aliases="hertzb2026090890">
 <head>
   <title>Den 89. Psalme</title>
   <subtitle>Mel. Et lidet Barn saa lysteligt.</subtitle>
   <firstline>Saa vorde da Guds Miskundhed</firstline>
   <notes>
-    <note>Denne Psalme beskriver saadan Tid, som den Historien fortæller, der indtraf i Ezechiæ 14. Regierings-Aar, da en overmægtig Fiende var i Landet, Kongen endnu uden Arving laae syg af en grasserende Pest, og bekom ved Propheten Esaias det sørgelige Budskab, at han skulde døe, saa det syntes, at det nu var ude med Davids Huus, og at de Forjættelser, Gud havde givet David og hans Efterkommere om et evigt Kongerige, skulde blive uopfyldte — Ved dette frygtelige Anseende forlader Digteren sig paa Guds Forjættelser og Eed, og yttrer sit faste Haab til Guds Løfters Opfyldelse med den største Troes Frimodighed og Glæde.</note>
+    <note>Fri oversættelse af <a bible="bibelsalme89">Salmernes Bog 89</a>.</note>
+    <note>* Denne Psalme beskriver saadan Tid, som den Historien fortæller, der indtraf i Ezechiæ 14. Regierings-Aar, da en overmægtig Fiende var i Landet, Kongen endnu uden Arving laae syg af en grasserende Pest, og bekom ved Propheten Esaias det sørgelige Budskab, at han skulde døe, saa det syntes, at det nu var ude med Davids Huus, og at de Forjættelser, Gud havde givet David og hans Efterkommere om et evigt Kongerige, skulde blive uopfyldte — Ved dette frygtelige Anseende forlader Digteren sig paa Guds Forjættelser og Eed, og yttrer sit faste Haab til Guds Løfters Opfyldelse med den største Troes Frimodighed og Glæde.</note>
   </notes>
   <source in="bd2" pages="154-161"/>
   <keywords>salme</keywords>
@@ -9001,7 +9028,6 @@ Skal hæve mine Toner.
 <nonum><center>2.</center></nonum>
     Jeg synger om din Naade — den,
 Som du har os forjættet,
-
 <pb n="155" facs="161.jpg"/>Stadfæsted’ du i Himmelen:
 Du sagde: „jeg opretted’“
 „En Pagt, og min Udvalgte svor;“
@@ -9066,7 +9092,6 @@ Din Naade og din Troefasthed
 Fra al din Gierning smiler;
 Lyksaligt Folk, som nærme sig
 Ved festelig Basun til dig!
-
 <pb n="157" facs="163.jpg"/>De vandre jo, o Herre!
 Bestraalet af dit Ansigt frem,
 Dit Navn er daglig Fryd for dem,
@@ -9099,7 +9124,6 @@ Den Pagt, han har oprettet.
 <nonum><center>10.</center></nonum>
     „Hans Fiender skal jeg knuse smaa,“
 „Og alle de, ham hade,“
-
 <pb n="158" facs="164.jpg"/>„Dem skal jeg i min Vrede slaae,“
 „Min Huld skal ei aflade,“
 „Og ei min Troefasthed, min Pagt;“
@@ -9164,7 +9188,6 @@ Men, Gud! du dog din Salvede
 Bortstøder og foragter,
 Og bryder, synes os, din Eed,
 Og kaster selv hans Krone ned,
-
 <pb n="160" facs="166.jpg"/>Vanhelliget, til Jorden;
 Hans Muure og hans Fæstninger
 Nedbryder du — et Rov han er,
@@ -9197,7 +9220,6 @@ Fra Graven sig unddrage?
 <nonum><center>18.</center></nonum>
     Gud! uforanderlig og stor,
 Hvor er’ de Miskundheder,
-
 <pb n="161" facs="167.jpg"/>Du David ved din Sandhed svor!
 Hukom dog din Tilbeder!
 Tænk paa den Spot, den bittre Skam,
