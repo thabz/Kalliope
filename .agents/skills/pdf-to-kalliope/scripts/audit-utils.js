@@ -191,6 +191,8 @@ const buildPageInventory = ({ xml, workFile = null, includeExpectedPages = true 
         status: 'pending',
         reviewer: null,
         disposition: null,
+        typography_status: 'pending',
+        typography_disposition: null,
       });
     });
   }
@@ -257,6 +259,15 @@ const auditPageInventory = ({ xml, inventory }) => {
     } else {
       if (!expected.reviewer) issues.push({ rule: 'missing-page-reviewer', key });
       if (!expected.disposition) issues.push({ rule: 'missing-page-disposition', key });
+    }
+    if (expected.typography_status !== 'reviewed') {
+      issues.push({
+        rule: 'typography-not-reviewed',
+        key,
+        status: expected.typography_status ?? null,
+      });
+    } else if (!expected.typography_disposition) {
+      issues.push({ rule: 'missing-typography-disposition', key });
     }
     if (expected.order_exception && !expected.disposition) {
       issues.push({ rule: 'undocumented-order-exception', key });

@@ -65,16 +65,20 @@ Understøttede valg: `--poet`, `--work`, `--min-confidence`, `--debug`,
 node tools/poetic-form/analyse-form.js --dry-run --debug
 node tools/poetic-form/analyse-form.js --form ottava-rima --min-confidence 0.80
 node tools/poetic-form/analyse-form.js --find blank-verse
+node tools/poetic-form/analyse-form.js --keywords --min-confidence 0.95
 node tools/poetic-form/analyse-form.js --only-missing
 ```
 
-Understøttede valg: `--poet`, `--work`, `--form`, `--find`,
+Understøttede valg: `--poet`, `--work`, `--form`, `--find`, `--keywords`,
 `--min-confidence`, `--debug`, `--dry-run` og `--only-missing`. Uden `--form`
-gemmes alle sikre former. `--find` er altid skrivebeskyttet. Eksisterende
-`<form>` overskrives ikke.
+gemmes alle sikre former. `--find` er altid skrivebeskyttet. `--keywords`
+føjer kun keyword-id'er til former, der opfylder den valgte sikkerhedsgrænse,
+ og bevarer eksisterende keywords. Flaget skriver ikke `<form>`-metadata;
+ brug den almindelige formanalyse, når analyserne også skal gemmes.
+ Eksisterende `<form>` overskrives ikke.
 
 De understøttede former er `sonnet`, `terza-rima`, `ottava-rima`,
-`rime-royal`, `ballad-stanza`, `distich`, `quatrain`, `blank-verse` og
+`alexandrine`, `rime-royal`, `ballad-stanza`, `distich`, `quatrain`, `blank-verse` og
 `knittelvers`. Sonetter kan desuden få undertyperne `petrarchan-sonnet` og
 `shakespearean-sonnet`.
 
