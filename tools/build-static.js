@@ -58,6 +58,7 @@ import {
 import { build_sitemap_xml } from './build-static/sitemap.js';
 import { buildBiographies } from './build-static/biographies.js';
 import { build_keywords } from './build-static/keywords.js';
+import { canonicalKeywordId } from './build-static/keyword-taxonomy.js';
 import { build_about_pages } from './build-static/about.js';
 import { build_portraits_json } from './build-static/portraits.js';
 import { build_todays_events_json } from './build-static/today.js';
@@ -349,8 +350,15 @@ const handle_text = async (
   const headingFootnoteCount = countHeadingFootnotes(head);
 
   let keywordsArray = [];
-  if (keywords) {
-    keywordsArray = keywords.split(',').map((k) => {
+  if (keywords != null && keywords.length > 0) {
+    const seenKeywordIds = new Set();
+    keywordsArray = keywords.split(',').map(rawKeywordId => {
+      const inputId = rawKeywordId.trim();
+      const k =
+        collected.poets.has(inputId) === false &&
+        collected.keywords.has(inputId) === true
+          ? canonicalKeywordId(inputId, collected.keywords)
+          : inputId;
       let type = null;
       let title = null;
       if (collected.poets.get(k) != null) {
@@ -368,6 +376,12 @@ const handle_text = async (
         type,
         title,
       };
+    }).filter(keyword => {
+      if (seenKeywordIds.has(keyword.id)) {
+        return false;
+      }
+      seenKeywordIds.add(keyword.id);
+      return true;
     });
   }
 
@@ -1529,6 +1543,14 @@ const build_news = (collected) => {
 const build_redirects_json = (collected) => {
   let redirects = {};
   buildTextAliasRedirects(redirects, collected.texts);
+  collected.keywords.forEach((keyword, keywordId) => {
+    if (keyword.canonicalId != null) {
+      supportedLanguages.forEach(lang => {
+        redirects[`/${lang}/keyword/${keywordId}`] =
+          `/${lang}/keyword/${keyword.canonicalId}`;
+      });
+    }
+  });
   collected.poets.forEach((poet, poetId) => {
     if (!poet.has_works && !poet.has_artwork) {
       supportedLanguages.forEach((lang) => {

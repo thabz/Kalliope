@@ -1,0 +1,78 @@
+{
+  "aliases": {
+    "aleksandrin": "alexandriner",
+    "blankvers": "blank-verse",
+    "ionicus": "ionisk-vers",
+    "kretikus": "amfimacer",
+    "proceleusmaticus": "prokeleusmatikos",
+    "stavrim": "alliteration",
+    "tesis": "thesis"
+  },
+  "category_keywords": ["genrer", "perioder", "verseformer"],
+  "categories": [
+    {
+      "id": "genrer",
+      "title": "Genrer og digtarter",
+      "members": [
+        "aforisme", "akrostikon", "allegori", "ballade", "biografi", "bukolisk",
+        "dithyrambe", "drama", "drikkevise", "ekloge", "elegi", "epigram", "epos",
+        "essay", "eventyr", "fabel", "fabliau", "farce", "feuilleton", "folkeminder",
+        "folkevise", "fortaelling", "genre", "gravskrift", "heltedigt", "heroide",
+        "hymne", "hyrdedigtning", "idyl", "kaempevise", "komedie", "kronik", "kuplet",
+        "lai", "laeredigt", "legende", "lejlighedsdigtning", "libretto", "lyrik",
+        "madrigal", "melodrama", "moralitet", "myte", "novelle", "ode", "operette",
+        "pastoraldigtning", "poesi", "prosa", "ritornel", "roman", "romance", "saga",
+        "salme", "satire", "sekvens", "skuespil", "sonnet", "tragedie", "tragikomedie",
+        "vaudeville", "vise"
+      ]
+    },
+    {
+      "id": "perioder",
+      "title": "Perioder og retninger",
+      "members": [
+        "barokken", "biedermeier", "dekadenter", "efterromantik", "ekspressionisme",
+        "futurismen", "humanisme", "impressionister", "klassicismen", "klassiker",
+        "naturalisme", "parnassiens", "rationalisme", "realismen", "reformation",
+        "renaessance", "rokoko", "romantikken", "romantismen", "sturm-und-drang",
+        "symbolismen"
+      ]
+    },
+    {
+      "id": "verslaere",
+      "title": "Verslære og former",
+      "members": [
+        "accent", "accentuation", "adonisk-vers", "akatalektisk-vers", "alexandriner",
+        "alkaeisk-strofe", "alliteration", "amfibrachys", "amfimacer", "anakreontisk-vers",
+        "anakrusis", "anapaest", "antibacchius", "antispast", "antistrofe",
+        "asklepiadeisk-vers", "assonans", "bacchius", "balladestrofe", "blank-verse",
+        "caesur", "choriambe", "diaeresis", "dijambe", "dimeter", "dipodi", "distichon",
+        "dochmius", "enderim", "enjambement", "epitrit", "epodos",
+        "glykonisk-vers", "helrim", "hendekasyllabisk-vers", "heptameter", "heksameter",
+        "hiatus", "hyperkatalektisk-vers", "hypermeter", "iambos", "ictus", "ionisk-vers",
+        "katalektisk-vers", "katalexis", "knittelvers", "kolometri", "kretiske-vers",
+        "kvantitet", "logaoediske-vers", "metrik", "molossos", "monometer", "monopodi",
+        "ottave-rime", "pentameter", "poetik", "prokeleusmatikos", "prosodi",
+        "pyrrhichios", "pythiambisk-strofe", "rime-royal", "rim", "rondeau", "rytme",
+        "sapphisk-strofe", "sapphisk-vers", "saturnisk-vers", "senar", "sestine",
+        "skandere", "sonnet", "spondeus", "strofe", "terziner", "tetrameter", "thesis",
+        "tribrachys", "trimeter", "triolet", "trochaeus", "vers", "verseformer",
+        "versi-sciolti", "vers-libres", "vers-mesures", "villanelle"
+      ]
+    },
+    {
+      "id": "miljoeer",
+      "title": "Selskaber og litterære miljøer",
+      "members": [
+        "bakkehuset", "borgerdydsselskabet", "det-danske-litteraturselskab",
+        "det-smagende-selskab", "efterslaegten", "kjoebenhavnsposten", "museer",
+        "norskeselskab", "selskaber", "stambog", "tidsskrifter"
+      ]
+    },
+    {
+      "id": "begreber",
+      "title": "Øvrige begreber",
+      "default": true,
+      "members": []
+    }
+  ]
+}

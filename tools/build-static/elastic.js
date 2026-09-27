@@ -15,6 +15,7 @@ import elasticSearchClient from '../libs/elasticsearch-client.js';
 import { mapLimit } from './concurrency.js';
 import { textsForWork, worksForPoet } from './anthologies.js';
 import { sourceWorkFilename } from './work-cache.js';
+import { canonicalKeywordId } from './keyword-taxonomy.js';
 
 const headingText = html =>
   html
@@ -214,8 +215,18 @@ const buildElasticsearchTextEntryDocuments = (collected, entry) => {
       }
     }
     let keywordsArray = null;
-    if (keywords) {
-      keywordsArray = keywords.split(',');
+    if (keywords != null && keywords.length > 0) {
+      keywordsArray = Array.from(
+        new Set(
+          keywords.split(',').map(rawKeywordId => {
+            const keywordId = rawKeywordId.trim();
+            return collected.poets.has(keywordId) === false &&
+              collected.keywords?.has(keywordId) === true
+              ? canonicalKeywordId(keywordId, collected.keywords)
+              : keywordId;
+          })
+        )
+      );
     }
     const keywordTitles = (keywordsArray ?? [])
       .map(keywordId => collected.keywords?.get(keywordId)?.title)

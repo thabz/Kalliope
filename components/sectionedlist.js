@@ -10,7 +10,7 @@ const SectionedList = ({ sections }) => {
       return <div key={item.id}>{content}</div>;
     });
     return (
-      <div className="list-section" key={i + title}>
+      <div className="list-section" id={group.id} key={i + title}>
         <h3>{title}</h3>
         {list}
       </div>

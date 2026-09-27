@@ -94,6 +94,64 @@ const RelatedKeywords = ({ related, lang }) => {
   );
 };
 
+const KeywordCategories = ({ categories, lang }) => {
+  if (categories.length === 0) {
+    return null;
+  }
+  return (
+    <section>
+      <SidebarMiniHeading>{_('Emneområder', lang)}</SidebarMiniHeading>
+      {categories.map(category => (
+        <div key={category.id}>
+          <Link
+            href={`${Links.keywordsURL(lang)}#keyword-category-${category.id}`}>
+            {category.title}
+          </Link>
+        </div>
+      ))}
+    </section>
+  );
+};
+
+const KeywordExamples = ({ examples, lang }) => {
+  if (examples.length === 0) {
+    return null;
+  }
+  return (
+    <section>
+      <SidebarMiniHeading>{_('Eksempler i Kalliope', lang)}</SidebarMiniHeading>
+      {examples.map(example => (
+        <div className="keyword-example" key={example.id}>
+          <Link href={Links.textURL(lang, example.id)}>
+            <i>{example.title}</i>
+          </Link>
+          <br />
+          <span>{example.poet}</span>
+        </div>
+      ))}
+      <style jsx>{`
+        .keyword-example + .keyword-example {
+          margin-top: 0.7em;
+        }
+      `}</style>
+    </section>
+  );
+};
+
+const KeywordAliases = ({ aliases, lang }) => {
+  if (aliases.length === 0) {
+    return null;
+  }
+  return (
+    <section>
+      <SidebarMiniHeading>{_('Andre betegnelser', lang)}</SidebarMiniHeading>
+      {aliases.map(alias => (
+        <div key={alias.id}>{alias.title}</div>
+      ))}
+    </section>
+  );
+};
+
 const KeywordPage = (props) => {
   const { lang, keyword, error } = props;
 
@@ -109,10 +167,16 @@ const KeywordPage = (props) => {
 
   const danishTextCount = keyword.danish_text_count ?? 0;
   const related = keyword.related ?? [];
+  const categories = keyword.categories ?? [];
+  const examples = keyword.examples ?? [];
+  const aliases = keyword.aliases ?? [];
 
   const sidebar =
     danishTextCount > 0 ||
     related.length > 0 ||
+    categories.length > 0 ||
+    examples.length > 0 ||
+    aliases.length > 0 ||
     keyword.has_footnotes ||
     keyword.pictures.length > 0 ? (
       <Stack spacing="20px">
@@ -121,6 +185,9 @@ const KeywordPage = (props) => {
           keyword={keyword}
           lang={lang}
         />
+        <KeywordCategories categories={categories} lang={lang} />
+        <KeywordExamples examples={examples} lang={lang} />
+        <KeywordAliases aliases={aliases} lang={lang} />
         <RelatedKeywords related={related} lang={lang} />
         {keyword.has_footnotes ? <FootnoteList /> : null}
         {keyword.pictures.length > 0 ? renderedPictures : null}

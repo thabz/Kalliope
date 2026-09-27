@@ -10,6 +10,7 @@ import { kalliopeMenu } from '../components/menu.js';
 import Page from '../components/page.js';
 import PageLead from '../components/pagelead.js';
 import SectionedList from '../components/sectionedlist.js';
+import SubHeading from '../components/subheading.js';
 
 const groupsByLetter = (keywords) => {
   let groups = new Map();
@@ -29,32 +30,43 @@ const groupsByLetter = (keywords) => {
   return sortedGroups.sort(Sorting.sectionsByTitle);
 };
 
+const keywordListItem = (keyword, lang) => {
+  const url =
+    keyword.redirectURL != null
+      ? keyword.redirectURL.replace('${lang}', lang)
+      : Links.keywordURL(lang, keyword.id);
+  return {
+    id: keyword.id,
+    url,
+    html: keyword.title,
+  };
+};
+
 const Keywords = (props) => {
-  const { keywords } = props;
+  const { keywords, categories } = props;
   const lang = useContext(LangContext);
 
   const requestPath = `/${lang}/keywords`;
 
   const nonDrafts = keywords.filter((k) => !k.is_draft);
   const groups = groupsByLetter(nonDrafts);
-  let sections = [];
+  const sections = [];
 
   groups.forEach((group) => {
-    const items = group.items.map((keyword) => {
-      const url =
-        keyword.redirectURL != null
-          ? keyword.redirectURL.replace('${lang}', lang)
-          : Links.keywordURL(lang, keyword.id);
-      return {
-        id: keyword.id,
-        url,
-        html: keyword.title,
-      };
-    });
+    const items = group.items.map(keyword => keywordListItem(keyword, lang));
     sections.push({ title: group.title, items });
   });
 
-  let renderedGroups = <SectionedList sections={sections} />;
+  const categorySections = categories.map(category => ({
+    id: `keyword-category-${category.id}`,
+    title: category.title,
+    items: nonDrafts
+      .filter(keyword =>
+        (keyword.categories ?? []).some(item => item.id === category.id)
+      )
+      .sort(Sorting.keywordsByTitle)
+      .map(keyword => keywordListItem(keyword, lang)),
+  })).filter(section => section.items.length > 0);
 
   return (
     <Page
@@ -70,16 +82,29 @@ const Keywords = (props) => {
           lang
         )}
       </PageLead>
-      {renderedGroups}
+      {categorySections.length > 0 ? (
+        <>
+          <SubHeading>{_('Efter emne', lang)}</SubHeading>
+          <SectionedList sections={categorySections} />
+        </>
+      ) : null}
+      <SubHeading>{_('Alfabetisk', lang)}</SubHeading>
+      <SectionedList sections={sections} />
       <LangSelect path={requestPath} />
     </Page>
   );
 };
 
 Keywords.getInitialProps = async ({ query: { lang } }) => {
-  const res = await fetch(createURL('/api/keywords.json'));
-  const keywords = await res.json();
-  return { lang, keywords };
+  const [keywordsResponse, categoriesResponse] = await Promise.all([
+    fetch(createURL('/api/keywords.json')),
+    fetch(createURL('/api/keyword-categories.json')),
+  ]);
+  const [keywords, categories] = await Promise.all([
+    keywordsResponse.json(),
+    categoriesResponse.json(),
+  ]);
+  return { lang, keywords, categories };
 };
 
 export default Keywords;
