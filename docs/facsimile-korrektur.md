@@ -214,6 +214,11 @@ En trykt skillelinje kan tilsvarende være en centreret `<nonum>`-linje eller et
 eksisterende, passende skilleelement. Følg mønstret i repositoryet; lad ikke en
 overskrift eller dekoration stå som en almindelig verslinje.
 
+Ved dramatiske tekster følges også
+[vejledningen om talere, regi og rollelister](xml-work-format.md#dramatiske-tekster-talere-regi-og-rollelister).
+Kontrollér særskilt talernavnenes spatiering, sceneintroduktionernes lille
+skrift og ombrydning samt korte regibemærkninger og interne skillelinjer.
+
 ## 4. Brug flere OCR-pass som kontrol
 
 Undersøg først PDF'en med `pdfimages -list`. Udtræk de indlejrede sidebilleder,
