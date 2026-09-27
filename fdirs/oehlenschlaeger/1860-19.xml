@@ -119,13 +119,13 @@ O, ton bestandig Dyd i Svages Barm!
 <text id="oehlenschlaeger2019020302">
 <head>
   <title>Paa min Moders Grav,</title>
-  <toctitle>Paa min Moders Grav. Mai 1800</toctitle>
-  <indextitle>Paa min Moders Grav</indextitle>
-  <linktitle>Paa min Moders Grav</linktitle>
   <subtitle>
     <line>da hun nylig var jordet.</line>
     <line>Mai 1800.</line>
   </subtitle>
+  <toctitle>Paa min Moders Grav. Mai 1800</toctitle>
+  <indextitle>Paa min Moders Grav</indextitle>
+  <linktitle>Paa min Moders Grav</linktitle>
   <firstline>Det er forbi!</firstline>
   <source pages="4-5"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -322,11 +322,11 @@ At signes i dit Aftenskiær.
 <head>
   <title>Drikkevise</title>
   <firstline>At opmuntre Folk til at drikke</firstline>
-  <source pages="9-11"/>
   <notes>
     <note>Særskilt tryk: <i>Drikkevise. af A. Øhlenschlæger, Litteratus. Kbhn. Trykt hos K. H. Seidelin.</i></note>
     <note type="credits">Bidrag fra Henrik Nielsen.</note>
   </notes>
+  <source pages="9-11"/>
   <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -391,11 +391,11 @@ Med Mod i den fældende Kamp.
 <text id="oehlenschlaeger2019020306">
 <head>
   <title>Afskedssang</title>
-  <toctitle>Afskedssang til Digteren Baggesen. Sept. 1800</toctitle>
   <subtitle>
     <line>til Digteren Jens Baggesen</line>
     <line>September 1800</line>
   </subtitle>
+  <toctitle>Afskedssang til Digteren Baggesen. Sept. 1800</toctitle>
   <firstline>Den, som med Snillets hvasse Pile</firstline>
   <source pages="11-12"/>
   <keywords>baggesen</keywords>
@@ -454,13 +454,12 @@ Din <w>sieldne</w> Sang de Danske gav!''
 <text id="oehlen2000010506" variant="oehlenschlaeger2001071002">
 <head>
   <title>Drikkevise</title>
-  <toctitle>Drikkevise. Nov. 1800</toctitle>
   <subtitle>
     <line>for Dreiers Klub paa dens femogtyvende Aarsdag,</line>
     <line>den 26de November 1800.</line>
   </subtitle>
+  <toctitle>Drikkevise. Nov. 1800</toctitle>
   <firstline>O, Bacchus! rul til Jorden paa din Tønde</firstline>
-  <source pages="13-15"/>
   <dates>
     <event>1800-11-26</event>
   </dates>
@@ -468,6 +467,7 @@ Din <w>sieldne</w> Sang de Danske gav!''
     <note>Særskilt tryk: <i>Drikke-Vise for Dreiers Klub, i Anledning af den 26de November 1800. Kbhn. 1800. Trykt hos K. H. Seidelin. Paa Klubbens Bekostning.</i></note>
     <note type="credits">Bidrag fra Henrik Nielsen.</note>
   </notes>
+  <source pages="13-15"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -827,8 +827,8 @@ Men meer endnu med din Poesie.
 <text id="oehlen2000010507">
 <head>
   <title>Hymne til Glæden</title>
-  <toctitle>Hymne til Glæden. (Efter Schiller.)</toctitle>
   <subtitle>(Efter Schiller.)</subtitle>
+  <toctitle>Hymne til Glæden. (Efter Schiller.)</toctitle>
   <firstline>Glæde, Lynglimt fra det Høie!</firstline>
   <notes>
     <note>Gendigtning af Schillers <xref type="translation" poem="schiller2001101701"/>.</note>
@@ -980,16 +980,16 @@ Hist, naar Dommersværdet blinker.
 <text id="oehlenschlaeger2019020312">
 <head>
   <title>Høitidssang</title>
-  <toctitle>Høitidssang i Anledning af den 2den April 1802</toctitle>
   <subtitle>
     <line>for Kronprindsens Livcorps i Anledning af</line>
     <line>den 2den April 1802.</line>
   </subtitle>
+  <toctitle>Høitidssang i Anledning af den 2den April 1802</toctitle>
   <firstline>Tving dig, glade Sang! fra Jorden</firstline>
-  <source pages="27-28"/>
   <dates>
     <event>1802-04-02</event>
   </dates>
+  <source pages="27-28"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1045,13 +1045,13 @@ Evig uforglemmelig.
 <text id="oehlenschlaeger2019020313" variant="oehlenschlaeger2001053001">
 <head>
   <title>Cantate</title>
-  <toctitle>Cantate, den 2den April 1802</toctitle>
   <subtitle>den 2den April 1802.</subtitle>
+  <toctitle>Cantate, den 2den April 1802</toctitle>
   <firstline>Det er Danmarks Høitidsdag</firstline>
-  <source pages="29-33"/>
   <dates>
     <event>1802-04-02</event>
   </dates>
+  <source pages="29-33"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1705,8 +1705,8 @@ Hvis Lyren du ei sønderriver.
 <text id="oehlenschlaeger2019020320">
 <head>
   <title>Min barnlige Dannelse</title>
-  <toctitle>Min barnlige Dannelse. Helliget min Ven og Lærer Dichman</toctitle>
   <subtitle>Helliget min Ven og Lærer Carl Frederik Dichman.</subtitle>
+  <toctitle>Min barnlige Dannelse. Helliget min Ven og Lærer Dichman</toctitle>
   <firstline>Instinctets Bud, vor Ven paa Dydens Vei</firstline>
   <source pages="47-53"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2136,11 +2136,11 @@ Blidelig os samle.
 <head>
   <title>Den frembrydende Vaar</title>
   <firstline>Engene grønnes, og Skovenes Kroner</firstline>
-  <source pages="59-61"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <notes>
     <note>Digteren som hyldes i de sidste to strofer er <a person="ewald">Johannes Ewald</a>.</note>
   </notes>
+  <source pages="59-61"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2315,13 +2315,13 @@ Snart synker jeg i eders Favn.
 <text id="oehlenschlaeger2019020324" variant="oehlenschlaeger2001052912">
 <head>
   <title>Den Tillidsfulde</title>
-  <toctitle>Den Tillidsfulde. (Efter Horats.)</toctitle>
   <subtitle>(Efter Horats.)</subtitle>
+  <toctitle>Den Tillidsfulde. (Efter Horats.)</toctitle>
   <firstline>Den, som er uden Synd og Last</firstline>
-  <source pages="64-66"/>
   <notes>
     <note>Variation over Horats' <xref type="translation" poem="horats2026010314"/>.</note>
   </notes>
+  <source pages="64-66"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2550,10 +2550,10 @@ Fordi jeg eengang har drømt om Dagen.
 <head>
   <title>Til Rimer</title>
   <firstline>Rimer! du maa takke mig</firstline>
-  <source pages="70-71"/>
   <notes>
     <note type="credits">Bidrag fra Henrik Nielsen.</note>
   </notes>
+  <source pages="70-71"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2816,8 +2816,8 @@ Og takked Gud, fordi jeg var saa stum.
 <text id="oehlenschlaeger2019020332" variant="oehlenschlaeger2001053003">
 <head>
   <title>Biergmands-Liv</title>
-  <toctitle>Biergmands-Liv. (Efter Novalis.)</toctitle>
   <subtitle>(Efter Novalis.)</subtitle>
+  <toctitle>Biergmands-Liv. (Efter Novalis.)</toctitle>
   <firstline>Den over Jorden byder</firstline>
   <notes>
     <note>Gendigtning af Novalis' <xref type="translation" poem="novalis2005060502"/>.</note>
@@ -2888,12 +2888,12 @@ Den glade Jordens Drot.
 <text id="oehlenschlaeger2019020333">
 <head>
   <title>Landlivets Glæder</title>
-  <toctitle>Landlivets Glæder. (Efter Horats.)</toctitle>
   <subtitle>(Efter Horats.)</subtitle>
+  <toctitle>Landlivets Glæder. (Efter Horats.)</toctitle>
+  <firstline>Lyksalig den, som til det Bedre</firstline>
   <notes>
     <note>Gendigtning af Horats' <xref type="translation" poem="horats2026010315"/>.</note>
   </notes>
-  <firstline>Lyksalig den, som til det Bedre</firstline>
   <source pages="80-82"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -3086,13 +3086,13 @@ Og i disse Lindekroner bygge
 <head>
   <title>Wiedewelt</title>
   <firstline>Natten blinker</firstline>
-  <source pages="85-88"/>
   <notes>
     <note><i>Johannes Wiedewelt</i> (1731-1802) var en dansk billedhugger og forfatter. Han udførte bla. statuen ,,Troskab'' på Frihedsstøtten.</note>
   </notes>
   <pictures>
     <picture src="oehlen1999062833-p1.jpg" museum="fnm">Peder Als: <i>Portræt af Johannes Wiedewelt</i>, 1766, olie på lærred.</picture>
   </pictures>
+  <source pages="85-88"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3188,10 +3188,10 @@ Stirrer hun hen paa den sorte Sø.
 <head>
   <title>Den poetiske Billedjæger</title>
   <firstline>Mangen Aftenstund</firstline>
-  <source pages="88-89"/>
   <notes>
     <note type="credits">Bidrag fra Henrik Nielsen.</note>
   </notes>
+  <source pages="88-89"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3314,13 +3314,13 @@ Elvens fortvivlede Brag, Hornets vildthylende Klang!
 <text id="oehlenschlaeger2019020338" variant="oehlen2002101108">
 <head>
   <title>Til Hanna Steffens,</title>
-  <toctitle>Til Hanna Steffens</toctitle>
-  <indextitle>Til Hanna Steffens</indextitle>
-  <linktitle>Til Hanna Steffens</linktitle>
   <subtitle>
     <line>født Reichardt.</line>
     <line>I et Exemplar af mine Digte, paa hendes Fødselsdag.</line>
   </subtitle>
+  <toctitle>Til Hanna Steffens</toctitle>
+  <indextitle>Til Hanna Steffens</indextitle>
+  <linktitle>Til Hanna Steffens</linktitle>
   <firstline>November stod saa kold og øde</firstline>
   <source pages="92-93"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3379,13 +3379,13 @@ Her disse smaae Forgietmigei.
 <head>
   <suptitle>I Anledning af vor kiære Moder</suptitle>
   <title>E. C. Møllers Fødselsdag</title>
-  <toctitle>I Anledning af vor kiære Moder E. C. Møllers Fødselsdag. April 1804</toctitle>
   <subtitle>den 27de April 1804.</subtitle>
+  <toctitle>I Anledning af vor kiære Moder E. C. Møllers Fødselsdag. April 1804</toctitle>
   <firstline>Den Kreds, hvor nu du har dit Sæde</firstline>
-  <source pages="94"/>
   <dates>
     <event>1804-04-27</event>
   </dates>
+  <source pages="94"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3426,8 +3426,8 @@ Vi drikke som i Dag din Skaal!
   <title>Vaaren</title>
   <firstline>Hvilket oplivende Haab trænger ind i det bankende Hierte?</firstline>
   <source pages="95-96"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <keywords>shakespeare,calderone,petrarca,ariosto</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3703,13 +3703,13 @@ Koldt spotter Elskovs Navn.
 <text id="oehlenschlaeger2019020344" variant="oehlen2002101110">
 <head>
   <title>Viinguden</title>
-  <toctitle>Viinguden. (Efter Novalis)</toctitle>
   <subtitle>(Efter Novalis.)</subtitle>
+  <toctitle>Viinguden. (Efter Novalis)</toctitle>
   <firstline>Paa grønne, varme Bierge fødes</firstline>
-  <source pages="103-104"/>
   <notes>
     <note>Gendigtning af Novalis' <xref type="translation" poem="novalis2005060501"/>.</note>
   </notes>
+  <source pages="103-104"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4411,8 +4411,8 @@ Siunger og dufter i Sky! Eos vor Dronning har meldt.
   <title>Sorø</title>
   <firstline>Venligt, Sorø! dit Aasyn leer, blyfærdig du titter</firstline>
   <source pages="122-123"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <keywords>holberg</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4589,8 +4589,8 @@ Selv nu i Slagels man seer rundtom Forædlingens Skridt.
   <title>Korsør</title>
   <firstline>Her er altsaa den By, hvor Jens Baggesen fødtes? Hvor liden</firstline>
   <source pages="127-128"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <keywords>baggesen</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4689,8 +4689,8 @@ Stundom krydse du maa, ret som paa Bæltet din Ven.
   <title>Reisen over Bæltet</title>
   <firstline>Med smukke, lange Vers jeg agter at afmale</firstline>
   <source pages="129-136"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <keywords>aleksandrin</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5351,8 +5351,8 @@ Ogsaa Luften giennembryde.
   <title>Faareveile</title>
   <firstline>Hvor Bøgeskoven slipper</firstline>
   <source pages="149-154"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <keywords>novalis</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5553,8 +5553,8 @@ Jeg rører Harpens Stræng.
   <title>Faareveile Skov</title>
   <firstline>Tykke, veldædige Bøge! mosdækkede Stene!</firstline>
   <source pages="155-156"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <keywords>lessing</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5611,8 +5611,8 @@ Høit blandt de evige Lys paa den evige Himmel
   <title>Gibsbilledet</title>
   <firstline>Men hvo er da den Mand, som staaer</firstline>
   <source pages="156-158"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <keywords>voltaire,ewald</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6145,8 +6145,8 @@ Hvad er selv den bedste Dag?
   <title>Samliv</title>
   <firstline>Naar i Naturens muntre Favn</firstline>
   <source pages="171-175"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <keywords>salis,matthisson</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6647,8 +6647,8 @@ Nære, dæmrende Strand giennem det lyskrusede Bølgeskiær.
   <title>Catastrophe</title>
   <firstline>Saaledes nu i vexlet Sommerlyst</firstline>
   <source pages="188-194"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <keywords>steffens</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -8666,8 +8666,8 @@ Forened med den hellige Natur.
 <text id="oehlenschlaeger20190203110" variant="oehlen2002022403">
 <head>
   <title>Fortrøstning</title>
-  <toctitle>Fortrøstning. Til Henrik Steffens</toctitle>
   <subtitle>Til Henrik Steffens</subtitle>
+  <toctitle>Fortrøstning. Til Henrik Steffens</toctitle>
   <firstline>Naar eensom og alene</firstline>
   <source pages="245-246"/>
   <keywords>steffens</keywords>
@@ -8729,13 +8729,13 @@ Omringe mig paa ny.
   <subtitle>Paa hendes Fødselsdag, den 19de October 1804, i et Exemplar af Schlegels <w>Spanisches Theater</w>.</subtitle>
   <toctitle>Til Camma Rahbek. Oct. 1804</toctitle>
   <firstline>At det er gaaet dig, som mig, Veninde!</firstline>
-  <source pages="246-247"/>
-  <notes>
-    <note><a poet="rahbekk">Kamma Rahbek</a> (1775-1829) var søster til Oehlenschlägers senere hustru Christiane.</note>
-  </notes>
   <dates>
     <event>1804-10-19</event>
   </dates>
+  <notes>
+    <note><a poet="rahbekk">Kamma Rahbek</a> (1775-1829) var søster til Oehlenschlägers senere hustru Christiane.</note>
+  </notes>
+  <source pages="246-247"/>
   <keywords>rahbekk,dante,petrarca,cervantes,calderone</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -9006,16 +9006,16 @@ Og ydmygt sig i dine Laurbær vinde!
 <text id="oehlenschlaeger20190203115">
 <head>
   <title>Til Callisen</title>
-  <toctitle>Til Callisen. Marts 1805</toctitle>
   <subtitle>
     <line>Siunget af hans Lærlinge, da han fratraadte Embedet.</line>
     <line>Den 29de Marts 1805.</line>
   </subtitle>
+  <toctitle>Til Callisen. Marts 1805</toctitle>
   <firstline>Asklepios sad i Olympen, og saae</firstline>
-  <source pages="254-256"/>
   <dates>
     <event>1805-03-29</event>
   </dates>
+  <source pages="254-256"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9111,8 +9111,8 @@ Og aldrig dit Minde at glemme.
     <line>Juli 1805.</line>
   </subtitle>
   <toctitle>I Anledning af M. E. Thuras Død. Juli 1805</toctitle>
-  <linktitle>I Anledning af M. E. Thuras Død</linktitle>
   <indextitle>I Anledning af M. E. Thuras Død</indextitle>
+  <linktitle>I Anledning af M. E. Thuras Død</linktitle>
   <firstline>Udmærket som en stille Blomst du stod</firstline>
   <source pages="257-258" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -9361,8 +9361,8 @@ Trykke mig i hendes Arme?
 <text id="oehlenschlaeger20190203119">
 <head>
   <title>Vaar-Elegie</title>
-  <toctitle>Vaar-Elegie. Min Veninde K. M. Rahbek tilskrevet</toctitle>
   <subtitle>Min Veninde Karen Margareta Rahbek tilskrevet.</subtitle>
+  <toctitle>Vaar-Elegie. Min Veninde K. M. Rahbek tilskrevet</toctitle>
   <firstline>Lad under Lyrens venlige Klang mig spørge dig, Camma!</firstline>
   <source pages="264-266"/>
   <keywords>rahbekk,rahbek</keywords>
@@ -9439,8 +9439,8 @@ Ei sin Gang, før den seer Hytten i velkiendte Hiem.
   <title>Bakkehuset</title>
   <firstline>Du kiære Høi, saa nær ved den</firstline>
   <source pages="266-267"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <keywords>rahbekk,rabbek</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -9590,13 +9590,13 @@ Til i dit Spor at gaae.
 <text id="oehlenschlaeger20190203122">
 <head>
   <title>Til Hanna Steffens, født Reichardt</title>
-  <toctitle>Til Hanna Steffens. Nov. 1806</toctitle>
   <subtitle>Den 21de November 1806.</subtitle>
+  <toctitle>Til Hanna Steffens. Nov. 1806</toctitle>
   <firstline>Kiære Hanna! iblandt kiære Dage</firstline>
-  <source pages="270-272"/>
   <dates>
     <event>1806-11-21</event>
   </dates>
+  <source pages="270-272"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9681,8 +9681,8 @@ Og forenet nævne som en Engel
   <title>Dichman</title>
   <firstline>Sludfuld, taaget og kold skyller med Storm Regnen mod Klippens Grund</firstline>
   <source pages="272-276"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <keywords>holberg</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -9756,13 +9756,13 @@ Flyder let nu paa Styx, venlig befriet, til et lyksaligt Hiem.
 <text id="oehlenschlaeger20190203124">
 <head>
   <title>Sang paa Kongens Fødselsdag,</title>
-  <toctitle>Sang paa Kongens Fødselsdag. Jan. 1807</toctitle>
-  <indextitle>Sang paa Kongens Fødselsdag</indextitle>
-  <linktitle>Sang paa Kongens Fødselsdag</linktitle>
   <subtitle>
     <line>den 29de Januar 1807.</line>
     <line>(Siunget af Landsmandskabet i Paris.)</line>
   </subtitle>
+  <toctitle>Sang paa Kongens Fødselsdag. Jan. 1807</toctitle>
+  <indextitle>Sang paa Kongens Fødselsdag</indextitle>
+  <linktitle>Sang paa Kongens Fødselsdag</linktitle>
   <firstline>Paa gammel nordisk Viis og Sæd</firstline>
   <source pages="276-278"/>
   <keywords>frederik6</keywords>
@@ -9830,8 +9830,8 @@ Maria Danebod!
 <text id="oehlen2000010511">
 <head>
   <title>Med en Guldhalskiæde</title>
-  <toctitle>Med en Guldhalskiæde. (Efter Goethe)</toctitle>
   <subtitle>(Efter Goethe.)</subtitle>
+  <toctitle>Med en Guldhalskiæde. (Efter Goethe)</toctitle>
   <firstline>Maa jeg med dette Blad dig byde</firstline>
   <notes>
     <note>Gendigtning af Goethes <xref type="translation" poem="goethe2019021501"/>.</note>
@@ -9863,8 +9863,8 @@ Om du en Slags Betænkning har.
 <text id="oehlen2000010512">
 <head>
   <title>Blindebuk</title>
-  <toctitle>Blindebuk. (Efter Goethe)</toctitle>
   <subtitle>(Efter Goethe.)</subtitle>
+  <toctitle>Blindebuk. (Efter Goethe)</toctitle>
   <firstline>Livsalige Belinde!</firstline>
   <notes>
     <note>Gendigtning af Goethes <xref type="translation" poem="goethe2019020301"/>.</note>
@@ -10024,8 +10024,8 @@ Og viis dem, at jeg borte var tilstæde.
   <title><num>1.</num>Til Rahbek</title>
   <firstline>Omtrent et Aar, min Ven! er svundet</firstline>
   <source pages="283-285"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <keywords>rahbek</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>

@@ -52,6 +52,7 @@ const isStanzaDivider = line =>
   line.trim() === '' ||
   /<nonum(?:\s|>)/u.test(line) ||
   /^\s*<wrap(?:\s|>)/u.test(line) ||
+  /^\s*<right(?:\s|>)/u.test(line) ||
   /^\s*-{3,}\s*$/u.test(line) ||
   plainText(line) === '';
 
@@ -253,6 +254,29 @@ const normalizedProfile = profile => {
   return profile.map(indentation => indentation - baseline);
 };
 
+const uniformIndentationModel = section => {
+  if (
+    section.indentations.length < 2 ||
+    section.indentations.some(
+      indentation => indentation !== section.indentations[0]
+    )
+  ) {
+    return null;
+  }
+
+  const indentation = section.indentations[0];
+  return {
+    basis: 'uniform',
+    definitions: [],
+    expectedProfile: Array(section.indentations.length).fill(indentation),
+    pattern: [indentation],
+    patternLength: 1,
+    profileMismatches: [],
+    residuals: Array(section.indentations.length).fill(0),
+    runs: [],
+  };
+};
+
 const repeatedSequence = values => {
   const maximumLength = Math.floor(values.length / 2);
   for (let length = 1; length <= maximumLength; length += 1) {
@@ -273,7 +297,16 @@ const stanzaPatternModel = section => {
     byShape.set(key, matching);
   });
   const definitions = [...byShape.values()]
-    .filter(stanzas => stanzas.length >= 3)
+    .filter(
+      stanzas =>
+        stanzas.length >= 3 ||
+        (section.stanzas.length === 2 &&
+          stanzas.length === 2 &&
+          stanzas[0].indentations.every(
+            (indentation, index) =>
+              indentation === stanzas[1].indentations[index]
+          ))
+    )
     .map(stanzas => {
       const stanzaLength = stanzas[0].indentations.length;
       const normalized = normalizedProfile(stanzas[0].indentations);
@@ -459,6 +492,7 @@ const periodicPatternModel = section => {
 
 const analyzeSection = ({ pageBreaks, section }) => {
   const model =
+    uniformIndentationModel(section) ??
     stanzaPatternModel(section) ??
     stanzaPositionPatternModel(section) ??
     periodicPatternModel(section);
@@ -674,6 +708,58 @@ const openingCapitalCandidates = parsed => {
   ];
 };
 
+const confidenceRank = confidence =>
+  ['possible', 'likely', 'strong'].indexOf(confidence);
+
+const consolidateOverlappingCandidates = candidates => {
+  const stanzaMismatches = candidates.filter(
+    candidate => candidate.type === 'possible_stanza_indentation_mismatch'
+  );
+
+  return candidates.filter(candidate => {
+    if (candidate.type !== 'possible_indentation_shift') {
+      return true;
+    }
+
+    const redundantWith = stanzaMismatches.find(mismatch => {
+      if (mismatch.section_number !== candidate.section_number) {
+        return false;
+      }
+      const mismatchesByLine = new Map(
+        mismatch.mismatches.map(item => [item.verse_line, item])
+      );
+      for (
+        let verseLine = candidate.verse_line_start;
+        verseLine <= candidate.verse_line_end;
+        verseLine += 1
+      ) {
+        const mismatchLine = mismatchesByLine.get(verseLine);
+        if (
+          mismatchLine == null ||
+          mismatchLine.observed - mismatchLine.expected !==
+            candidate.observed_offset
+        ) {
+          return false;
+        }
+      }
+      return true;
+    });
+    if (redundantWith == null) {
+      return true;
+    }
+
+    if (
+      confidenceRank(candidate.confidence) >
+      confidenceRank(redundantWith.confidence)
+    ) {
+      redundantWith.confidence = candidate.confidence;
+    }
+    redundantWith.at_page_break =
+      redundantWith.at_page_break || candidate.at_page_break;
+    return false;
+  });
+};
+
 const analyzeIndentation = input => {
   if (input == null || typeof input !== 'object' || Array.isArray(input)) {
     throw new TypeError(
@@ -700,12 +786,12 @@ const analyzeIndentation = input => {
     ...section,
     ...analyzeSection({ pageBreaks, section }),
   }));
-  let candidates = [
+  let candidates = consolidateOverlappingCandidates([
     ...sectionAnalyses.flatMap(section =>
       section.candidateDetails.map(detail => detail.candidate)
     ),
     ...sectionBoundaryCandidates(sectionAnalyses),
-  ].sort(
+  ]).sort(
     (left, right) =>
       left.verse_line_start - right.verse_line_start ||
       left.type.localeCompare(right.type)

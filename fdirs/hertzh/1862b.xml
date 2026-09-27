@@ -350,10 +350,10 @@ Til Tak vi har kun Taarer ved hans Grav.
   <title>Til Adam Oehlenschläger</title>
   <subtitle>(Skrevet i et Album, der ved hans Optagelse som Æresmedlem i Studenter-Foreningen den 20. Novbr. 1841, blev ham overrakt)</subtitle>
   <firstline>Herligt er Digterens Kald. Han er en Midler imellem</firstline>
-  <source pages="17-19"/>
   <dates>
     <event>1841-11-20</event>
   </dates>
+  <source pages="17-19"/>
   <keywords>oehlenschlaeger</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -399,16 +399,16 @@ I det beundrende Chor, der idag Dig bringer sin Hylding.
 <text id="hertzh2018030307">
 <head>
   <title>Under hans Fraværelse</title>
-  <toctitle><num>I.</num>Under hans Fraværelse</toctitle>
   <subtitle>Afsungen i det her i Byen stiftede ,,<w>romerske Selskab</w>'', den 8de Marts 1836.</subtitle>
+  <toctitle><num>I.</num>Under hans Fraværelse</toctitle>
   <firstline>Vel har vi til en munter Fest</firstline>
+  <dates>
+    <performed>1836-03-08</performed>
+  </dates>
   <notes>
     <note>* Det her omtalte <w>romerske Selskab</w>, der blev stiftet i Kjøbenhavn af nogle Kunstnere og Andre til Erindring om deres Ophold i Italien, havde til sine Sammenkomster valgt den 8de Marts, paa hvilken Dag Thorvaldsen var ankommen til Rom.</note>
   </notes>
   <source pages="20-21"/>
-  <dates>
-    <performed>1836-03-08</performed>
-  </dates>
   <keywords>thorvaldsen</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -465,13 +465,13 @@ Og ingen Draabe levnes!
 <text id="hertzh2018030308">
 <head>
   <title>Hjemvee</title>
-  <toctitle><num>II.</num>Hjemvee</toctitle>
   <subtitle>Afsjungen til Melodie af en Romance af Boyeldieu ved Festen i Hôtel d'Angleterre den 7de October 1838</subtitle>
+  <toctitle><num>II.</num>Hjemvee</toctitle>
   <firstline>Fædreneland! i fjerne, skjønne Lande</firstline>
-  <source pages="22-23"/>
   <dates>
     <performed>1838-10-07</performed>
   </dates>
+  <source pages="22-23"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -509,16 +509,16 @@ Den Kjærlighed, du skjænker til din Søn.
 <text id="hertzh2018030309">
 <head>
   <title>Tempel og Museum</title>
-  <toctitle><num>III.</num>Tempel og Museum</toctitle>
   <subtitle>Fremsagt paa det kongelige Theater af Fru Nielsen den 27de Marts 1837</subtitle>
+  <toctitle><num>III.</num>Tempel og Museum</toctitle>
   <firstline>I Syracusa stod</firstline>
+  <dates>
+    <performed>1838-03-27</performed>
+  </dates>
   <notes>
     <note>* Digtet <w>Tempel og Museum</w> blev skrevet og fremsagt paa den Tid, da Ønsket om et offentligt Museum for de Thorvaldsenske Arbejder fra flere Sider var blevet udtalt.</note>
   </notes>
   <source pages="23-28"/>
-  <dates>
-    <performed>1838-03-27</performed>
-  </dates>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -636,13 +636,13 @@ Hvad der er herligt tænkt, gid det maa herligt lykkes!
 <text id="hertzh2018030310">
 <head>
   <title>Ved hans Ankomst</title>
-  <toctitle><num>IV.</num>Ved hans Ankomst</toctitle>
   <subtitle>Bordsang ved Festen i Hôtel d'Angleterre d. 7de Octbr. 1838</subtitle>
+  <toctitle><num>IV.</num>Ved hans Ankomst</toctitle>
   <firstline>Vi hilse Dig, der atter Danmark gjæster</firstline>
-  <source pages="29-31"/>
   <dates>
     <performed>1838-10-07</performed>
   </dates>
+  <source pages="29-31"/>
   <keywords>thorvaldsen</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -1137,8 +1137,8 @@ Og naae tilsidst det flygtende Rov
 <text id="hertzh2018030324">
 <head>
   <title>Valravnen</title>
-  <toctitle><num>X.</num>Valravnen</toctitle>
   <subtitle>(Efter et Motiv i Visen om Germand Gladensvend)</subtitle>
+  <toctitle><num>X.</num>Valravnen</toctitle>
   <firstline>Den vilde Ravn er fløiet bort</firstline>
   <notes>
     <note>Cf. folkevisen <xref poem="folke2000012904"/>.</note>
@@ -1204,8 +1204,8 @@ Hun sank i Bølgerne svale.
 <text id="hertzh2018030325">
 <head>
   <title>Tydskerne</title>
-  <toctitle><num>XI.</num>Tydskerne</toctitle>
   <subtitle>1848</subtitle>
+  <toctitle><num>XI.</num>Tydskerne</toctitle>
   <firstline>Der høres et Bulder, der lyder et Raab</firstline>
   <source pages="48-50"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1283,10 +1283,10 @@ Naar de Danske først blive vrede.
   <title>Canzonet</title>
   <subtitle>(Skrevet for at afsynges af Conservatoriets Elever i Sorgenfri for Prinds Christian Frederik paa hans Fødselsdag d. 18de Septbr. 1839.</subtitle>
   <firstline>Mens Dagens Høitid samler her</firstline>
-  <source pages="51-52"/>
   <dates>
     <event>1839-09-18</event>
   </dates>
+  <source pages="51-52"/>
   <keywords>christian8</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -1339,10 +1339,10 @@ Asylet, Fyrsteparret smykker,
     <line>Anledning af H. k. H. Kronprinds Frederik Carl Christians og Hds. k. H. Caroline Charlotte Marianes Formæling</line>
   </subtitle>
   <firstline>Her, hvor om Vinteren Muserne bygge</firstline>
-  <source pages="53-54"/>
   <dates>
     <performed>1841-06-24</performed>
   </dates>
+  <source pages="53-54"/>
   <keywords>frederik7</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -1394,10 +1394,10 @@ Himlen beskjærme den kjærlige Pagt!
     <line>Afsjungen af et Antal Studerende, den 22de Novbr. 1842</line>
   </subtitle>
   <firstline>Naar af det travle Liv forladt</firstline>
-  <source pages="55-57"/>
   <dates>
     <performed>1842-11-22</performed>
   </dates>
+  <source pages="55-57"/>
   <keywords>heibergjohanne</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -1459,10 +1459,10 @@ Hengivne Hjerters Slag Dig bringer.
     <line>d. 8de Februar 1851</line>
   </subtitle>
   <firstline>Saa langt over Sletten lyder der et Døn</firstline>
-  <source pages="58-59"/>
   <dates>
     <performed>1851-02-08</performed>
   </dates>
+  <source pages="58-59"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1738,13 +1738,13 @@ Lig du kun rolig, min Kjæreste lille!
 <text id="hertzh2018030334">
 <head>
   <title>Komettræf</title>
-  <toctitle><num>I.</num>Komettræf</toctitle>
   <subtitle>Riimbrev til Fru M. B * * i Sorø, den 13de Juni 1856</subtitle>
+  <toctitle><num>I.</num>Komettræf</toctitle>
   <firstline>Blandt Tidens Spørgsmaal er der eet</firstline>
-  <source pages="69-74"/>
   <dates>
     <written>1856-06-13</written>
   </dates>
+  <source pages="69-74"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2158,8 +2158,8 @@ Og lukker Brevet, fromt og fast.
 <text id="hertzh2018030344">
 <head>
   <title>Med nogle Æsker Oblater, 2</title>
-  <toctitle><num>VIII.</num>Med nogle Æsker Oblater</toctitle>
   <subtitle>(Med nogle franske, figurerede Oblater til at klæbe udenpaa Brevet).</subtitle>
+  <toctitle><num>VIII.</num>Med nogle Æsker Oblater</toctitle>
   <firstline>Som Skildvagt staaer jeg paa min Post</firstline>
   <source pages="83-84"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2765,13 +2765,13 @@ Held os, om Eders Naade værd den fandtes!
   <title>Cantate</title>
   <subtitle>ved Studenterforeningens Mindefest for <w>Thorvaldsen</w> den 24de Mai 1844.</subtitle>
   <firstline>Der drog et Bud igjennem Landet</firstline>
+  <dates>
+    <performed>1844-05-24</performed>
+  </dates>
   <notes>
     <note>* Cantaten over Thorvaldsen [o.a.] ere componerede af <w>J. P. E. Hartmann</w>.</note>
   </notes>
   <source pages="110-112"/>
-  <dates>
-    <performed>1844-05-24</performed>
-  </dates>
   <keywords>thorvaldsen</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -2873,10 +2873,10 @@ Stat op til Liv fra Død!
   <title>Til Kongen</title>
   <subtitle>Den 6te Oktober 1858.</subtitle>
   <firstline>Fra Thronens Nærhed og fra fjernest By</firstline>
-  <source pages="114"/>
   <dates>
     <event>1858-10-06</event>
   </dates>
+  <source pages="114"/>
   <keywords>frederik7</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -2910,10 +2910,10 @@ Og lade Riget blomstre Aar for Aar!
     <line><w>Mel.</w> Der vanker en Ridder mellem grønne Træer. (Elverhøi.)</line>
   </subtitle>
   <firstline>Naar Søvinden lufter sommerlig og varm</firstline>
-  <source pages="115-117"/>
   <dates>
     <performed>1844-07-04</performed>
   </dates>
+  <source pages="115-117"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2984,13 +2984,13 @@ Et Bæger for Dig med den klareste Viin!
     <line><w>Mel:</w> Lad den skrantende Magister</line>
   </subtitle>
   <firstline>Ei omsonst blev sjeldne Kræfter</firstline>
-  <source pages="118-120"/>
   <dates>
     <performed>1845-03-04</performed>
   </dates>
   <pictures>
     <picture artwork="eckersberg/nathanson-1819" />
   </pictures>
+  <source pages="118-120"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3272,16 +3272,16 @@ Det Forsyn, der ene har Fred i sin Favn,
 <text id="hertzh2018030362">
 <head>
   <title>Bordsang</title>
-  <toctitle><num>I.</num>Selskabet Efterslægtens 1836</toctitle>
   <subtitle>
     <line>ved Selskabet ,,Efterslægtens'' Jubelfest den 4de Marts 1836.</line>
     <line><w>Mel:</w> Mit fulde Glas og Sangens raste Toner.</line>
   </subtitle>
+  <toctitle><num>I.</num>Selskabet Efterslægtens 1836</toctitle>
   <firstline>Vel stedes vi med Føie her til Gilde</firstline>
-  <source pages="131-132"/>
   <dates>
     <performed>1836-03-04</performed>
   </dates>
+  <source pages="131-132"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3334,16 +3334,16 @@ Op, Venner! <w>Efterslægtens</w> Skaal!
 <text id="hertzh2018030363">
 <head>
   <title>Til C. E. F. Weyse</title>
-  <toctitle><num>II.</num>C. E. F. Weyse 1842</toctitle>
   <subtitle>(Afsjungen i Anledning af hans Jubilæum ved Musik-Foreningens Concert den 6te April 1842)</subtitle>
+  <toctitle><num>II.</num>C. E. F. Weyse 1842</toctitle>
   <firstline>Det suser helligt i den Lund</firstline>
+  <dates>
+    <performed>1842-04-06</performed>
+  </dates>
   <notes>
     <note>* Sangen ved Weyses Jubilæum [o.a.] ere componerede af <w>J. P. E. Hartmann</w>.</note>
   </notes>
   <source pages="133-136"/>
-  <dates>
-    <performed>1842-04-06</performed>
-  </dates>
   <keywords>weyse</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -3395,8 +3395,8 @@ Vor Hyldest bringe Dig i Sangens Stanzer.
 <text id="hertzh2018030364">
 <head>
   <title>Ved Geheimeraad Collins Embeds-Jubilæum Februar 1851</title>
-  <toctitle><num>III.</num>J. Collins 1851</toctitle>
   <subtitle>(Afsjungen i hans Familiekreds)</subtitle>
+  <toctitle><num>III.</num>J. Collins 1851</toctitle>
   <firstline>Mens et halvt Aarhundred endes</firstline>
   <source pages="135-136"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3445,11 +3445,11 @@ I vor Kjærlighed et Ly!
 <text id="hertzh2018030365">
 <head>
   <title>Sang</title>
-  <toctitle><num>IV.</num>Kunstacademiets 1854</toctitle>
   <subtitle>
     <line>afjjungen i Academiet for de skjønne Kunster ved Højtideligholdelsen af dets Jubilæum</line>
     <line><w>Mel:</w> Hr. Peder kasted' Runer over Spange</line>
   </subtitle>
+  <toctitle><num>IV.</num>Kunstacademiets 1854</toctitle>
   <firstline>Genius, der hæves let af Vinger</firstline>
   <source pages="137-138"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3507,16 +3507,16 @@ Skjønheds Hal her forenet bygge
 <text id="hertzh2018030366">
 <head>
   <title>Carolineskolens Halvhundredaars-Fest,</title>
-  <toctitle><num>V.</num>Carolineskolens 1860</toctitle>
   <subtitle>
     <line><w>Mel:</w> Hr. Peder kasted' Runer over Spange</line>
     <line>den 24de Juni 1860.</line>
   </subtitle>
+  <toctitle><num>V.</num>Carolineskolens 1860</toctitle>
   <firstline>Til Øieblikkets Liv vort Liv er hundet</firstline>
-  <source pages="139-140"/>
   <dates>
     <event>1860-06-24</event>
   </dates>
+  <source pages="139-140"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3963,13 +3963,13 @@ Et Haab om en evig, udødelig Vaar.
 <text id="hertzh2018030371" skip-index="true">
 <head>
   <title>Forerindring</title>
+  <dates>
+    <performed>1849-02-12</performed>
+  </dates>
   <notes>
     <note>* Første Afdeling af ,,Tyrfing'' er componeret af <w>H. Rung</w> og opført ved det skandinaviske Selskabs Concert i Casino den 12te Februar 1849.</note>
   </notes>
   <source pages="161-166"/>
-  <dates>
-    <performed>1849-02-12</performed>
-  </dates>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

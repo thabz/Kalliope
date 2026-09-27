@@ -331,8 +331,26 @@ historiske id-formater fortsat kan bevares uændret.
 - `<metre>`: en eller flere automatiske, reproducerbare metriske analyser.
 - `<form>`: en eller flere automatiske, reproducerbare klassifikationer af
   poetisk form.
+- `<rhyme>`: en eller flere automatiske, reproducerbare analyser af rimskema.
 - `<structure>`: den observerede, reproducerbare strofe- og linjestruktur.
 - `<syllables>`: en eller flere automatiske analyser af digtets stavelsesmønster.
+- `<quality>`: redaktionelle kvalitetsflag. Feltet står altid sidst i tekstens
+  metadata.
+
+Formatteren ordner de direkte metadatafelter i denne kanoniske rækkefølge:
+
+```text
+suptitle, title, subtitle, toctitle, indextitle, linktitle, breadcrumbtitle,
+firstline, nofirstline, year, dates, written, performed, event, begivenhed,
+notes, pictures, source, keywords, form, metre, rhyme, structure, syllables,
+quality
+```
+
+Gentagne felter beholder deres indbyrdes rækkefølge. En XML-kommentar på sin
+egen linje foran et metadatafelt følger feltet ved sortering; en kommentar på
+samme linje som et felt følger dette felt. Afsluttende kommentarer bliver
+stående efter det sidste metadatafelt. Rækkefølgen gælder kun teksternes
+`<head>`, ikke `<workhead>` eller sektionshoveder.
 
 `<title>` og `<subtitle>` samt de enkelte `<line>`-elementer i en undertitel
 kan indeholde `<footnote>`. Fodnoten vises og nummereres sammen med digtet, men

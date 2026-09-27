@@ -177,6 +177,20 @@ describe('Elasticsearch build-static step', () => {
     ]);
   });
 
+  test('builds entries only for selected poets', () => {
+    expect(
+      buildElasticsearchTextEntries(collected, new Set(['poet'])).map(
+        entry => entry.textEntryKey
+      )
+    ).toEqual(['poet-first', 'poet-second']);
+    expect(
+      buildElasticsearchTextEntries(collected, new Set(['other']))
+    ).toEqual([]);
+    expect(
+      buildElasticsearchPoetEntries(collected, new Set(['other']))
+    ).toEqual([]);
+  });
+
   test('skips Elasticsearch when no works changed and index exists', async () => {
     await update_elasticsearch(collected);
 
@@ -199,6 +213,20 @@ describe('Elasticsearch build-static step', () => {
     expect(elasticSearchClient.deleteWork).not.toHaveBeenCalled();
     expect(elasticSearchClient.create).not.toHaveBeenCalled();
     expect(consoleLog).toHaveBeenCalledWith(
+      'Elasticsearch server not available; skipping search index update.'
+    );
+  });
+
+  test('fails when Elasticsearch is required but unavailable', async () => {
+    const error = new Error('connect ECONNREFUSED 127.0.0.1:9200');
+    error.code = 'ECONNREFUSED';
+    elasticSearchClient.indexExists.mockRejectedValue(error);
+
+    await expect(
+      update_elasticsearch(collected, { skipUnavailable: false })
+    ).rejects.toThrow('connect ECONNREFUSED 127.0.0.1:9200');
+
+    expect(consoleLog).not.toHaveBeenCalledWith(
       'Elasticsearch server not available; skipping search index update.'
     );
   });
@@ -408,5 +436,35 @@ describe('Elasticsearch build-static step', () => {
       )
     ).toBe(false);
     expect(elasticSearchClient.refreshIndex).toHaveBeenCalledWith('kalliope');
+  });
+
+  test('rebuilds a selected subset in a separate index', async () => {
+    await update_elasticsearch(collected, {
+      index: 'kalliope-ci',
+      poetIds: new Set(['poet']),
+      forceRebuild: true,
+      skipUnavailable: false,
+    });
+
+    expect(elasticSearchClient.indexExists).toHaveBeenCalledWith('kalliope-ci');
+    expect(elasticSearchClient.createIndex).toHaveBeenCalledWith('kalliope-ci');
+    expect(elasticSearchClient.bulkCreate).toHaveBeenCalledWith(
+      'kalliope-ci',
+      expect.any(Array)
+    );
+    expect(elasticSearchClient.refreshIndex).toHaveBeenCalledWith(
+      'kalliope-ci'
+    );
+  });
+
+  test('rejects unknown selected poet ids', async () => {
+    await expect(
+      update_elasticsearch(collected, {
+        poetIds: new Set(['unknown']),
+        forceRebuild: true,
+      })
+    ).rejects.toThrow('Unknown Elasticsearch poet ids: unknown');
+
+    expect(elasticSearchClient.indexExists).not.toHaveBeenCalled();
   });
 });
