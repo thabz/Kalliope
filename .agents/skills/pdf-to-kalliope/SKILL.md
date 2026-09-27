@@ -15,9 +15,9 @@ complete, source-backed and validated Kalliope edition.
 
 The input is always a PDF representing a complete physical publication.
 
-The output is always a complete Kalliope work XML. Do not deliver isolated poems
-or a partial transcription unless the source itself is incomplete and that
-limitation is explicitly documented.
+The normal output is a complete Kalliope work XML. If facsimile pages are
+missing, stop the import immediately and deliver a blocked-import PR as
+specified below. Documenting the gap does not permit continued transcription.
 
 The normal deliverables are:
 
@@ -95,12 +95,51 @@ Do not silently:
 - modernize spelling or punctuation
 - improve awkward wording
 - regularize an unusual form
-- reconstruct an uncertain reading without marking it
 - merge distinct editions or versions
 - omit prose because the work is primarily poetry
 - trust OCR merely because it looks plausible
 
 An unusual printed form is not an error merely because it looks strange.
+
+**Never reconstruct text.** Do not supply missing or unreadable text from
+another edition, an existing transcription, memory, inference, metre or model
+generation. Marking a reconstruction in a note does not make it permissible.
+Record uncertainty without inventing a reading.
+
+### Missing facsimile pages: stop the import and deliver a PR
+
+As soon as a missing facsimile page or spread is discovered, stop all further
+OCR, transcription and proofreading for the import. This applies at every
+stage, including the initial inventory and final review. Do not continue with
+the remaining pages, fill the gap from another edition or declare the work
+complete. Resume only after the source gap has been resolved.
+
+Preserve the work already done as incomplete and document:
+
+- the source PDF or facsimile and its identifier or URL
+- the missing printed pages or spread, with adjacent PDF page numbers and
+  facsimile filenames where known
+- the evidence for the gap and the affected texts
+- the pages processed before stopping and the checks actually completed
+- what source material is needed to resume
+
+Still create a **draft PR** in Danish, clearly labelled as a stopped import
+with missing facsimile pages. The PR is required for tracking the agent's
+work; a chat status message is not a substitute. Use an existing import PR
+when there is one. Keep unfinished checklist items unchecked and do not claim
+READY, complete proofreading or a complete import.
+
+If no usable XML change exists yet, add a concise Markdown report under
+`docs/import-status/<poet-id>-<work-id>.md` so the PR has a reviewable change.
+Do not fabricate XML or commit scratch OCR files just to create a PR.
+
+This blocked handoff replaces the normal completion requirements in sections
+19–24 and the definition of done below. Run the full repository test suite
+before creating the PR, report its actual result, and retain the repository's
+commit/push approval rules. Where approval is still needed, present the
+prepared incomplete change and report for approval, then create the PR after
+approval. Do not continue importing while waiting. Do not publish incomplete
+facsimile assets merely to satisfy the normal completion workflow.
 
 ## 1. Establish the repository context
 
@@ -135,6 +174,9 @@ Do not invent a new person or work ID before searching the corpus.
 ## 2. Inventory the complete PDF
 
 Inspect the entire publication before transcription.
+
+Check for missing pages and spreads. If any are discovered, immediately use
+the blocked-import handoff above instead of continuing the inventory or import.
 
 Create a temporary page inventory covering every PDF page. Record at least:
 
@@ -1208,7 +1250,8 @@ Use the note placement and syntax supported by current Kalliope XML.
 
 Continue processing the rest of the publication after recording a local
 uncertainty. Do not stop the entire import for an isolated doubt that can be
-reviewed manually later.
+reviewed manually later. Missing facsimile pages are not a local uncertainty;
+apply the immediate stop and blocked-import PR procedure above.
 
 Do not use `TODO:` as a substitute for ordinary research or proofreading.
 
@@ -1612,7 +1655,11 @@ The complete pull request is the final deliverable.
 
 ## Definition of done
 
-The task is complete only when all applicable items are true:
+For a stopped import with missing facsimile pages, completion of the handoff
+means a draft PR documenting the gap and the preserved incomplete work, as
+specified above. The import itself remains blocked.
+
+For a complete import, all applicable items below must be true:
 
 - [ ] `AGENTS.md`, the style guide and relevant special documentation were read.
 - [ ] The complete PDF was inventoried.
