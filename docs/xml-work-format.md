@@ -1029,6 +1029,58 @@ En linje må højst have én linjejustering og må derfor aldrig indeholde både
 Hvis en linje indeholder `<num>` eller `<margin>`, regnes teksten for at have egne
 visningsnumre, og automatisk visning af hver femte linje slaas fra.
 
+### Dramatiske tekster: talere, regi og rollelister
+
+Ved skuespil, versdramaer og dramatiske samtaler skal replikker,
+talerangivelser, sceneintroduktioner og korte regibemærkninger skelnes fra
+hinanden. Kontrollér hver types opsætning i facsimilet; en fælles betegnelse
+som »regi« betyder ikke, at alle linjerne skal have samme formatering.
+
+- **Talerangivelser:** Brug `<nonum>`, så navnet ikke tælles som vers.
+  Gengiv kildens centrering med `<center>` og spatiering med `<w>`; bevar
+  anden dokumenteret fremhævelse. Sæt en blank linje over den næste
+  talerangivelse, men ingen indledende blank linje lige efter `<poetry>`.
+- **Sceneintroduktioner:** Brug `<wrap>` til den sammenhængende prosatekst,
+  når den skal kunne ombrydes naturligt. Tilføj `<small>` og centrering,
+  når facsimilet viser det. Overfør ikke automatisk denne opsætning til
+  alle regibemærkninger.
+- **Korte regibemærkninger mellem repliklinjer:** Gengiv lille skrift med
+  inline-tagget `<small>`. På en selvstændig linje i `<poetry>` omgives
+  bemærkningen også af `<nonum>`. Tilføj ikke automatisk centrering,
+  `<wrap>` eller en blank linje over den.
+- **Skillelinjer:** Gengiv kildens centrerede, korte streg som `---` på
+  en selvstændig linje; den bliver til en centreret vandret streg ved
+  rendering. Kontrollér både overgange ved samtale- og sceneoverskrifter
+  og afsnitsskift inde i teksten uden overskrift. Indsæt kun streger med
+  belæg i facsimilet. Sideskift alene er ikke afsnitsskift.
+
+Eksempler på de forskellige markeringer (ikke et sammenhængende tekstuddrag):
+
+```xml
+<nonum><center><w>Palnatoke.</w></center></nonum>
+<nonum><center><wrap><small>(Palnatoke sad med de ypperste Høvdinge i Salen.)</small></wrap></center></nonum>
+<nonum><small>(Længe grublede han, før han igien kom til Orde.)</small></nonum>
+```
+
+**Rollelister og fortaler** er paratekst. Registrér dem som `<text
+skip-index="true">` med deres sædvanlige `id`, så de bevares i værkets
+indholdsfortegnelse uden at optræde i titel- og førstelinjeindekset.
+Rollelisten »De Talende« har brødtekst i `<prose>`; dette tag udelukker
+ikke i sig selv teksten fra indeks. Formatér listen med ét rolleled pr.
+linje, `<br/>` mellem leddene og fremhævede navne efter kilden, fx:
+
+```xml
+<prose>
+<b>Gorm hin Gamle,</b> Leirekonge.<br/>
+<b>Thyra Danebod,</b> hans Dronning.
+</prose>
+```
+
+En fælles klamme kan gengives med `}` ved den fælles beskrivelse efter
+det sidste navn, som i `grundtvig2026091320` i `fdirs/grundtvig/1861.xml`.
+Arbejdsmarkører som `[shared brace: ...]` må aldrig stå i den færdige tekst.
+En fortale med indlagte vers kan fortsat have både `<prose>` og `<poetry>`.
+
 ## Typiske valideringer og faldgruber
 
 Buildet tjekker blandt andet:
