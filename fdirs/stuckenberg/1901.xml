@@ -444,8 +444,8 @@ ser, hvor Livet er stort og rigt,
   <indextitle>Vilde Kørvel</indextitle>
   <firstline>Vilde Kørvel, Grøftens Brudeslør</firstline>
   <source pages="25"/>
-  <quality>korrektur1,kilde,side</quality>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1734,16 +1734,16 @@ skælvende mit Hjærte dit sig nærmer.
 <head>
   <title>Emil Poulsen</title>
   <firstline>Nu synker Solen bag de røde Skove</firstline>
-  <source pages="71"/>
+  <dates>
+    <event>1900-11-04</event>
+  </dates>
   <notes>
     <note>Kongelig skuespiller Emil Poulsen (1842-1911) tog sin afsked med teatret i 1900.</note>
   </notes>
   <pictures>
     <picture artwork="kroyer/1885-emil-poulsen"/>
   </pictures>
-  <dates>
-    <event>1900-11-04</event>
-  </dates>
+  <source pages="71"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2800,10 +2800,10 @@ som over Danmark staar!
 <head>
   <title>Ernst Bojesen</title>
   <firstline>Mange sære Ting staar skrevne</firstline>
-  <source pages="107-109"/>
   <dates>
     <event>1897-11-06</event>
   </dates>
+  <source pages="107-109"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

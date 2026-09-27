@@ -24,8 +24,8 @@
   <title>Thorvaldsens Skaal</title>
   <firstline>Hæver nu Stemmen fro til Sang</firstline>
   <source pages="1-3"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <keywords>thorvaldsen</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -97,8 +97,8 @@ De ved dig vorde Fremtiden kiære.
   <title>I et Venneselskab med Thorvaldsen og Weyse</title>
   <firstline>Sculptur og Tonekunst og Poesie</firstline>
   <source pages="3-4"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <keywords>thorvaldsen,weyse</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -229,10 +229,10 @@ Fordunkles af - ,,Fata Morgana''?
     <line>Universitetsfesten den 26de Juni 1841 i Anledning af Kronprindsens Formæling.</line>
   </subtitle>
   <firstline>Muser! I hellige Møer, som høit fra Tinden af Bierget</firstline>
-  <source pages="6-10"/>
   <dates>
     <event>1841-06-26</event>
   </dates>
+  <source pages="6-10"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -559,8 +559,8 @@ Salige! bring mig til Naadens Throne.
   <title>Den høiere Hiemvee</title>
   <firstline>I Ungdoms Blomsterdage</firstline>
   <source pages="15-17"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <keywords>goethe,shakespeare,schiller,aeschylos</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -649,10 +649,10 @@ Lyksaligheden hisset i det Fierne.
     <line>Den 3die September 1841.</line>
   </subtitle>
   <firstline>Saa har vi da paa store Sorg igien en ægte Glæde!</firstline>
-  <source pages="18"/>
   <dates>
     <event>1841-09-03</event>
   </dates>
+  <source pages="18"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -687,10 +687,10 @@ En Moderskaal, en Sønneskaal, de passe vel tilsammen.
     <line>den 23de September 1841.</line>
   </subtitle>
   <firstline>Kong Christian stod i Kongehal</firstline>
-  <source pages="18-20"/>
   <dates>
     <event>1841-09-23</event>
   </dates>
+  <source pages="18-20"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -747,10 +747,10 @@ Her signe vi, vor høie Giest!
   <title>Til Jakob Peter Mynster</title>
   <subtitle>Den 8de November 1841.</subtitle>
   <firstline>To Blomster stande paa Livets Vei</firstline>
-  <source pages="20-22"/>
   <dates>
     <event>1841-11-08</event>
   </dates>
+  <source pages="20-22"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -825,8 +825,8 @@ Med trofaste Venner din Glæde!
     <picture artwork="thorvaldsen/1803-jason"/>
   </pictures>
   <source pages="22-23"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <keywords>goethe,koes,thorvaldsen</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1013,12 +1013,12 @@ Saa hvid som Skum - men evig som en Stierne,
   <title>Weyses Jubelfest</title>
   <subtitle>Den 4de April 1842.</subtitle>
   <firstline>Lyd, vort Qvad, ved Høitidsbrag!</firstline>
-  <source pages="27-29"/>
-  <keywords>weyse</keywords>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <dates>
     <event>1842-04-04</event>
   </dates>
+  <source pages="27-29"/>
+  <keywords>weyse</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1205,10 +1205,10 @@ I Børneflokken du!
 <text id="oehlenschlaeger2019022117">
 <head>
   <title>Til Gertner,</title>
+  <subtitle>da han havde malet mig.</subtitle>
   <toctitle>Til Gertner</toctitle>
   <indextitle>Til Gertner</indextitle>
   <linktitle>Til Gertner</linktitle>
-  <subtitle>da han havde malet mig.</subtitle>
   <firstline>En Digter skriver sine Riim</firstline>
   <pictures>
     <picture artwork="gertner/1842-thorvaldsen"/>
@@ -1263,11 +1263,11 @@ Ved store Thorvalds Form i Leer.
   <title>Peter Oluf Brøndsteds Jordefærd</title>
   <subtitle>Den 2den Juli 1842.</subtitle>
   <firstline>Hvo veed hvor nær mig er min Ende?</firstline>
-  <!-- Ikke en variant af oehlenschlaeger2019021885: Forskellige tekster med fælles indledning. -->
-  <source pages="33-35"/>
   <dates>
     <event>1842-07-02</event>
   </dates>
+  <!-- Ikke en variant af oehlenschlaeger2019021885: Forskellige tekster med fælles indledning. -->
+  <source pages="33-35"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1387,12 +1387,12 @@ Derfor kan Tanken intet Udtryk finde.
   <title>Det kiøbenhavnske Skydeselskabs Trehundredaars-Fest</title>
   <subtitle>Den 30te Juni 1842.</subtitle>
   <firstline>Nu Lurerne tone med Høitidsbrag</firstline>
-  <source pages="37-38"/>
   <dates>
     <event>1842-06-30</event>
   </dates>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
+  <source pages="37-38"/>
   <keywords>christian3,frederik2,christian4,frederik3</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1544,10 +1544,10 @@ Det lille Skialdeqvad forsmaae.
   <title>Til min Maria Louise</title>
   <subtitle>Paa hendes Fødselsdag, den 3die September 1842.</subtitle>
   <firstline>For første Gang i fiir og tyve Aar</firstline>
-  <source pages="41-42"/>
   <dates>
     <event>1842-09-03</event>
   </dates>
+  <source pages="41-42"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1606,10 +1606,10 @@ Og dem, som tidligst hendes Hierte vandt.
     <line>Afsiungen i Skydeselskabet den 22de September 1842.</line>
   </subtitle>
   <firstline>Da sidst vi sad ved dette Bord</firstline>
-  <source pages="42-43"/>
   <dates>
     <event>1842-09-22</event>
   </dates>
+  <source pages="42-43"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1658,10 +1658,10 @@ Glem ei det gamle Gilde!
   <title>For Konge og Land</title>
   <subtitle>Af en Tale, holden i Anledning af Kongens Fødselsdag ved Universitetsfesten den 28de September 1842.</subtitle>
   <firstline>Almægtige Gud! skienk Danerkongen Lykke</firstline>
-  <source pages="44-45"/>
   <dates>
     <event>1842-09-28</event>
   </dates>
+  <source pages="44-45"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1729,10 +1729,10 @@ Deel med Skioldungen stedse Held og Gammen,
   <title>Ved C. E. F. Weyses Jordefærd</title>
   <subtitle>Den 13de October 1842.</subtitle>
   <firstline>Kunsten sørger. Sløret Harpen hænger</firstline>
-  <source pages="45-47"/>
   <dates>
     <event>1842-10-13</event>
   </dates>
+  <source pages="45-47"/>
   <keywords>weyse</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -1813,10 +1813,10 @@ Men Venskab, ak! har tabt en Ven.
     <line>Den 14de October 1842.</line>
   </subtitle>
   <firstline>Paa gamle Selskabs Fødselsdag</firstline>
-  <source pages="47-50"/>
   <dates>
     <event>1842-10-14</event>
   </dates>
+  <source pages="47-50"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2094,10 +2094,10 @@ Hosianna de til Jesu Ære synge.
     <line>Den 16de Juni 1843.</line>
   </subtitle>
   <firstline>O Kiærlighed! dig skabte Gud</firstline>
-  <source pages="55-57"/>
   <dates>
     <event>1843-06-16</event>
   </dates>
+  <source pages="55-57"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2169,10 +2169,10 @@ Maa pryde deres sølvgraae Lokker!
   <title>Vennerne i Bergen</title>
   <subtitle>Den 16de Juli 1843.</subtitle>
   <firstline>Først vinkte Normænd mig til Norge</firstline>
-  <source pages="57-58"/>
   <dates>
     <event>1843-07-16</event>
   </dates>
+  <source pages="57-58"/>
   <keywords>holberg,bull</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -2235,10 +2235,10 @@ Men I forsmaaer ei denne Tak.
     <line>Afsiungen i Skydeselskabet den 22de September 1843.</line>
   </subtitle>
   <firstline>I Oldtid, selv blandt Kæmper vilde</firstline>
-  <source pages="58-59"/>
   <dates>
     <event>1843-09-22</event>
   </dates>
+  <source pages="58-59"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2282,10 +2282,10 @@ Som skienker Danmark Kraft og Held.
     <line>Den 10de December 1843.</line>
   </subtitle>
   <firstline>Ærværdig Fæstning staaer</firstline>
-  <source pages="60-61"/>
   <dates>
     <event>1843-12-10</event>
   </dates>
+  <source pages="60-61"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2340,10 +2340,10 @@ Ton med dit Kæmpebryst.
   <title>Til min Søn Johannes</title>
   <subtitle>Den 7de Februar 1844.</subtitle>
   <firstline>Dit hidtils Liv, min halve Levetid</firstline>
-  <source pages="61-62"/>
   <dates>
     <event>1844-02-07</event>
   </dates>
+  <source pages="61-62"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2507,10 +2507,10 @@ Det er den Ædelsteen, som i din Krone funkler.
   <title>Thorvaldsens Jordefærd</title>
   <subtitle>Den 30te Marts 1844.</subtitle>
   <firstline>Folket samler sig i store Rækker</firstline>
-  <source pages="65-68"/>
   <dates>
     <event>1844-03-30</event>
   </dates>
+  <source pages="65-68"/>
   <keywords>thorvaldsen</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -2613,8 +2613,8 @@ Vor <w>Kiærlighed!</w> Du seer den hist fra dit Himmerig.
   <title>Studenterne ved Thorvaldsens Grav</title>
   <firstline>Med Ære, som en Jordens Søn</firstline>
   <source pages="68-70"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <keywords>weyse,homer</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2697,12 +2697,12 @@ Og skienker moden Frugt i Høst.
 <head>
   <title>Sidste Farvel til Thorvaldsen</title>
   <firstline>Alvorsfuld er vor Sorg, smertelig ei</firstline>
-  <source pages="70-73"/>
   <pictures>
     <picture artwork="thorvaldsen/1803-jason"/>
     <picture artwork="thorvaldsen/1823-gratierne-og-amor"/>
     <picture artwork="thorvaldsen/1812-alexander-triumfvognen"/>
   </pictures>
+  <source pages="70-73"/>
   <keywords>thorvaldsen</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -2806,13 +2806,13 @@ Vær da skiønnest du selv Kunstnerens Minde!
   <title>Farvel til F. C. Olsen</title>
   <subtitle>Den 22de April 1844.</subtitle>
   <firstline>Boer jeg paa det høie Field</firstline>
-  <source pages="73-75"/>
   <dates>
     <event>1844-04-22</event>
   </dates>
   <notes>
     <note>Frederik Christian Olsen (1802-1874), skolemand og litteraturhistoriker, som i 1844 udnævntes til rektor for Viborg Katedralskole.</note>
   </notes>
+  <source pages="73-75"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2984,8 +2984,8 @@ Den giekker ei, thi den forsvinder ei.
   <title>Frands Drake</title>
   <firstline>Forleden fik jeg en Tome fat</firstline>
   <source pages="78-80"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <keywords>baggesen</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3091,8 +3091,8 @@ Thi - <w>har ei Krabberne just ædt ham,</w>
   </subtitle>
   <firstline>Hvor saare Meget vil der til</firstline>
   <source pages="81-83"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <keywords>zetlitz</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3318,10 +3318,10 @@ Dig paa din Bautasteen.
   <title>Til min Francisca</title>
   <subtitle>Den 21de Februar 1845.</subtitle>
   <firstline>I Dag for første Gang maaskee</firstline>
-  <source pages="87-89"/>
   <dates>
     <event>1845-02-21</event>
   </dates>
+  <source pages="87-89"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3702,10 +3702,10 @@ Saa kommer jeg atter tilbage.
     <line>Den 10de Juli 1845.</line>
   </subtitle>
   <firstline>I Jordbærfrugtens skiønne Tid</firstline>
-  <source pages="97-99"/>
   <dates>
     <event>1845-07-10</event>
   </dates>
+  <source pages="97-99"/>
   <keywords>christian8</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -3764,10 +3764,10 @@ Vor Fader og vor Broder!
   <title>Paa min Marias Fødselsdag</title>
   <subtitle>Den 3die September 1845.</subtitle>
   <firstline>Din Fødselsdag, min elskte Datter!</firstline>
-  <source pages="99-100"/>
   <dates>
     <event>1845-09-03</event>
   </dates>
+  <source pages="99-100"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3832,10 +3832,10 @@ For Bøgeskoven vil hans Hierte slaae.
     <line>Afsungen i Skydeselskabet den 25de September 1845.</line>
   </subtitle>
   <firstline>Nys tømte vi det fulde Maal</firstline>
-  <source pages="101-102"/>
   <dates>
     <event>1845-09-25</event>
   </dates>
+  <source pages="101-102"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4010,12 +4010,12 @@ Ei Melpomene synger Svanesang.
   <title>Johannes Reinhardt</title>
   <subtitle>Den 6te November 1845.</subtitle>
   <firstline>Igien en Ædling os forlader</firstline>
-  <notes>
-    <note>Johannes Reinhardt (1776-1845), norskfødt zoolog.</note>
-  </notes>
   <dates>
     <event>1845-11-06</event>
   </dates>
+  <notes>
+    <note>Johannes Reinhardt (1776-1845), norskfødt zoolog.</note>
+  </notes>
   <source pages="105-106"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -4401,10 +4401,10 @@ Det Sande boer i Aandens Rige.
     <line>Den 29de Marts 1846.</line>
   </subtitle>
   <firstline>Nu, Brødre! siunger høit en Sang</firstline>
-  <source pages="115-117"/>
   <dates>
     <event>1846-03-29</event>
   </dates>
+  <source pages="115-117"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4466,10 +4466,10 @@ Du Kæmper for det Skiønne!
   <title>Til Madame Rosing</title>
   <subtitle>Den 2den Juni 1846.</subtitle>
   <firstline>Snel er Tiden, kort er Livet</firstline>
-  <source pages="117-118"/>
   <dates>
     <event>1846-06-02</event>
   </dates>
+  <source pages="117-118"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4628,10 +4628,10 @@ For Falsen og hans Rosenkrantz.
     <line>Afsiungen i Skydeselskabet den 24de September 1846.</line>
   </subtitle>
   <firstline>Da Axel havde Byen grundet</firstline>
-  <source pages="121-122"/>
   <dates>
     <event>1846-09-24</event>
   </dates>
+  <source pages="121-122"/>
   <keywords>christian8</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -4780,10 +4780,10 @@ Vor Stolthed og vor Lyst!
     <line>Den 26de April 1847.</line>
   </subtitle>
   <firstline>En gammel Bog fra mine Ungdomsdage</firstline>
-  <source pages="125"/>
   <dates>
     <written>1847-04-26</written>
   </dates>
+  <source pages="125"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4864,10 +4864,10 @@ Du forsmaaer ei vor Forgietmigei.
   <title>Til Kong Oscar den Første</title>
   <subtitle>Stockholm, den 9de Juli 1847.</subtitle>
   <firstline>Du elskte Sverrig, af Natur forbundet</firstline>
-  <source pages="127-129"/>
   <dates>
     <written>1847-07-09</written>
   </dates>
+  <source pages="127-129"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5033,10 +5033,10 @@ Jeg veed, det hænger i jert Kammer.
   <title lang="sv">Ved Festen i Diurgården ved Stockholm</title>
   <subtitle>den 17de Juli 1847.</subtitle>
   <firstline>Naar Skialden seer Naturens Vexelsyner</firstline>
-  <source pages="131-132"/>
   <dates>
     <event>1847-07-17</event>
   </dates>
+  <source pages="131-132"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5094,10 +5094,10 @@ Imellem Mælarstrand og Axelstad.
   <title>Ved Festen i Upsala</title>
   <subtitle>den 19de Juli 1847.</subtitle>
   <firstline>Saa staaer jeg, hvor i unge Dage</firstline>
-  <source pages="133"/>
   <dates>
     <event>1847-07-19</event>
   </dates>
+  <source pages="133"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5137,10 +5137,10 @@ I ældste Nordens Helligdom.
   <title>I det stockholmske Kunstnergildes Album</title>
   <subtitle>Den 27de Juli 1847.</subtitle>
   <firstline>Du skiønne Stockholm, skiønneste blandt Stæder</firstline>
-  <source pages="134-135"/>
   <dates>
     <event>1847-07-27</event>
   </dates>
+  <source pages="134-135"/>
   <keywords>thorvaldsen</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -5298,10 +5298,10 @@ Gienfinder du i Fædrelandet.
   <title>Moltkes Fødselsdag paa Bregentved</title>
   <subtitle>Den 25de August 1847.</subtitle>
   <firstline>Saa seer jeg dig i dit Jarlesæde</firstline>
-  <source pages="138-139"/>
   <dates>
     <event>1847-08-25</event>
   </dates>
+  <source pages="138-139"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5359,10 +5359,10 @@ Mod Himlen heise det danske Flag!
   <title>Til min Datter i Norge</title>
   <subtitle>Den 3die September 1847.</subtitle>
   <firstline>Elskte Barn! saa smiler atter i September Fødselsdagen</firstline>
-  <source pages="139-141"/>
   <dates>
     <event>1847-09-03</event>
   </dates>
+  <source pages="139-141"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5439,10 +5439,10 @@ At jeg standser midt i Præknen, som den fulde tydske Præst.<!-- TODO: Henvisni
     <line>i Anledning af Kongens Fødselsdag.</line>
   </subtitle>
   <firstline>Hiemkommen fra en Reise, skiøn og glædelig</firstline>
-  <source pages="141-155"/>
   <dates>
     <event>1847-09-23</event>
   </dates>
+  <source pages="141-155"/>
   <keywords>oersted,vedel</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -5912,10 +5912,10 @@ Fordi den fremmer Aandens Tarv: det Høieste.
     <line>Afsiungen i Skydeselskaber den 23de September 1847.</line>
   </subtitle>
   <firstline>I gamle danske Skyttelag</firstline>
-  <source pages="156-157"/>
   <dates>
     <event>1847-09-23</event>
   </dates>
+  <source pages="156-157"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6021,10 +6021,10 @@ Min Sang til din Dryade!
 <head>
   <title>Skandinavernes Juleaften i Rom, 1847</title>
   <firstline>I Kunstens sydligskiønne Land</firstline>
-  <source pages="158-160"/>
   <begivenhed>
     <event>1847-12-24</event>
   </begivenhed>
+  <source pages="158-160"/>
   <keywords>rom,thorvaldsen</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -6778,8 +6778,8 @@ Den bedste Seir, det er dog Ærens Seir.
   <title>Til min ældste Veninde Fru C. D. Drewsen</title>
   <firstline>Jeg kom tilbage fra en landlig Borg</firstline>
   <source pages="179"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <keywords>schiller</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6826,8 +6826,8 @@ Min Stolthed er at kalde mig din Ven.
   <title>Forord</title>
   <firstline>I et Halvhundredaar jeg Harpen rørte</firstline>
   <source pages="180-182"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <keywords>horats,lessing</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -7270,8 +7270,8 @@ Men lange Søvn - den kosted Broderblodet.
   <title>Digteren national</title>
   <firstline>Som Fædreland sin Kunst, saa elsker atter</firstline>
   <source pages="191-192"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <keywords>shakespeare,caldaron,corneille,racine,goethe,schiller</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -8096,8 +8096,8 @@ En Kunstner Phantasiens Honning suger.
   <title>Vittigheden. Det Humoristiske</title>
   <firstline>Som Loke, mellem Jetter, mellem Guder</firstline>
   <source pages="211-213"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <keywords>holberg,moliere,cervantes,shakespeare</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -8831,8 +8831,8 @@ Ungdommens Fryd skal Alderdom ei vrage.
 <head>
   <title>Den poetiske Prosa</title>
   <firstline>Romanen er i Prosa. Der er Mange</firstline>
-  <keywords>goethe,shakespeare</keywords>
   <source pages="229-232"/>
+  <keywords>goethe,shakespeare</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9775,10 +9775,10 @@ Mit Liv, min Kunst indviet, og min Ære!
     <line>Den 28de December 1848.</line>
   </subtitle>
   <firstline>Du, min Yduns gamle Ven</firstline>
-  <source pages="253-254"/>
   <dates>
     <event>1848-12-28</event>
   </dates>
+  <source pages="253-254"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9888,10 +9888,10 @@ Du Søn af Einar Tambeskiælver!
   <title>Til Bernhard von Beskow</title>
   <subtitle>Den 9de September 1849.</subtitle>
   <firstline>Han er en god, udmærket Skiald</firstline>
-  <source pages="256-257"/>
   <dates>
     <event>1849-09-09</event>
   </dates>
+  <source pages="256-257"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9932,10 +9932,10 @@ Min Bernhard blev min Broder.
   <title>Til Malin von Beskow</title>
   <subtitle>Den 9de September 1849.</subtitle>
   <firstline>Jeg vilde saa gierne til Svithiod engang</firstline>
-  <source pages="257-258"/>
   <dates>
     <event>1849-09-09</event>
   </dates>
+  <source pages="257-258"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9994,10 +9994,10 @@ Til Hiertet atter jer trykke.
     <line>Afsiungen i Skydeselskabet den 11te October 1849.</line>
   </subtitle>
   <firstline>Med Høitid, Brødre! samle</firstline>
-  <source pages="259-260"/>
   <dates>
     <event>1849-10-11</event>
   </dates>
+  <source pages="259-260"/>
   <keywords>frederik7</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -10046,10 +10046,10 @@ Blev Kronens Diamant.
 <head>
   <title>Ved Festen den 14de November 1849</title>
   <firstline>Naar Ydun rækker Ungersvenden Frugt</firstline>
-  <source pages="260-263"/>
   <dates>
     <event>1849-11-14</event>
   </dates>
+  <source pages="260-263"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -10348,10 +10348,10 @@ Hun lever! hun lever! hun lever!
   <title>Til Madame Johannsen, født Knudtzon</title>
   <subtitle>Paris, den 6te Juni 1808.</subtitle>
   <firstline>Vidt fiernet fra mit Fædreland</firstline>
-  <source pages="272-273"/>
   <dates>
     <written>1808-06-06</written>
   </dates>
+  <source pages="272-273"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -10420,10 +10420,10 @@ Vi eengang tænke i det <w>store</w>.
   <title>Til Madame Labouchere, født Knudtzon</title>
   <subtitle>Paris, den 11te Juni 1808.</subtitle>
   <firstline>Græd ei, fordi du maa dit Hiem forlade</firstline>
-  <source pages="274-275"/>
   <dates>
     <written>1808-06-11</written>
   </dates>
+  <source pages="274-275"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -10476,10 +10476,10 @@ Hist findes de, og stilles aldrig meer.
     <line>Den 28de Januar 1813.</line>
   </subtitle>
   <firstline>Glade, Brødre! samles vi</firstline>
-  <source pages="275-277"/>
   <dates>
     <event>1813-01-28</event>
   </dates>
+  <source pages="275-277"/>
   <keywords>frederik6</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -10550,10 +10550,10 @@ Frederik betyder Freden -
     <line>Med Moritz' Götterlehre.</line>
   </subtitle>
   <firstline>En Kunstnerinde, om end nok saa christen</firstline>
-  <source pages="277"/>
   <dates>
     <event>1826-09-04</event>
   </dates>
+  <source pages="277"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -10578,10 +10578,10 @@ Naar du betræder den.
     <line>Med Goethes' Gedichte.</line>
   </subtitle>
   <firstline>Dig, hvem Naturen gav et indre Øre</firstline>
-  <source pages="277-278"/>
   <dates>
     <event>1827-09-04</event>
   </dates>
+  <source pages="277-278"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

@@ -16,7 +16,7 @@ Create a faithful `p1` image from the actual printed title page. Read
 2. Work in a dedicated scratch directory outside the repository. Run:
 
    ```shell
-   node .codex/skills/prepare-kalliope-titlepage/scripts/titlepage.js analyze \
+   node .agents/skills/prepare-kalliope-titlepage/scripts/titlepage.js analyze \
      SOURCE.jpg --out-dir SCRATCH
    ```
 
@@ -25,7 +25,7 @@ Create a faithful `p1` image from the actual printed title page. Read
    preview or adjust a trusted candidate interactively:
 
    ```shell
-   node .codex/skills/prepare-kalliope-titlepage/scripts/titlepage.js render \
+   node .agents/skills/prepare-kalliope-titlepage/scripts/titlepage.js render \
      SOURCE.jpg SCRATCH/candidate.jpg --angle DEGREES \
      --crop LEFT,TOP,WIDTH,HEIGHT
    ```
@@ -33,7 +33,7 @@ Create a faithful `p1` image from the actual printed title page. Read
 4. Run QA and promote in one operation:
 
    ```shell
-   node .codex/skills/prepare-kalliope-titlepage/scripts/titlepage.js qa \
+   node .agents/skills/prepare-kalliope-titlepage/scripts/titlepage.js qa \
      SOURCE.jpg SCRATCH/candidate.jpg --report SCRATCH/qa.json \
      --promote public/images/POET/WORK-p1.jpg
    ```
