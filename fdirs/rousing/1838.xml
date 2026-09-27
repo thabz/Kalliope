@@ -4,6 +4,9 @@
   <title>Alvors-Digte</title>
   <subtitle>Poetiske Forsøg</subtitle>
   <year>1838</year>
+  <notes>
+    <note>Noter med foranstillet * er forfatterens egne.</note>
+  </notes>
   <pagebreaks/>
   <proofreadings>
     <proofreading model="gpt-5.4" datetime="2026-09-02T11:02:26+02:00"/>
@@ -4061,6 +4064,9 @@ Til nære Frænder.
     <line>et Digt, uddraget af Lafontaines</line>
     <line>Aristomenes og Gorges.</line>
   </subtitle>
+  <notes>
+    <note>Forlægget er August Lafontaines historiske roman <i lang="de">Aristomenes und Gorgus, oder Rache und Menschlichkeit</i> (1796). Rousing betegner digtet som et uddrag af romanen; det må derfor opfattes som en versbearbejdelse.</note>
+  </notes>
   <source pages="121-144"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -4204,7 +4210,7 @@ Med Hevnens Ild de forfulgtes.
 
 Otriades Viv med Ynglingen var
 I vildeste Kamp tilstede.
-Skjøndt han, som Barn, ikkun Buen<footnote>Bueskytterne udgjorde altid de bagerste Rækker i Kampen.</footnote> bar,
+Skjøndt han, som Barn, ikkun Buen<footnote>* Bueskytterne udgjorde altid de bagerste Rækker i Kampen.</footnote> bar,
 Man dristig ham seer fremtræde.
 Messeniens Helt ham imøde kom;
 Da fælded’ Skjebnen den haarde Dom:
@@ -4496,7 +4502,7 @@ Og Folket dømte: „den Helt som stred,
 Tyrea os at tilkjæmpe,
 Hans Liv vi ham ville skjenke her,
 Men Qvinden, Barnet, han haver kjær,
-Skal i Ceaden<footnote>En Hule udenfor Sparta i hvilken de groveste Forbrydere bleve nedstyrtede.</footnote> nedstyrtes.
+Skal i Ceaden<footnote>* En Hule udenfor Sparta i hvilken de groveste Forbrydere bleve nedstyrtede.</footnote> nedstyrtes.
 
 Ei i Laconien maa han boe,
 Thi han har elsket vor Fjende;
@@ -4757,8 +4763,10 @@ Som han for Uskyld beredte.
 
 <text id="rousing2026090209">
 <head>
-  <title>[En ulykkelig Hændelse, indtruffen den 31 Juli 1718]</title>
-  <indextitle>En ulykkelig Hændelse, indtruffen den 31 Juli 1718</indextitle>
+  <firstline>I Brudehuset, med forskende Øie</firstline>
+  <notes>
+    <note>Digtet handler om John Hewet og Sarah Drew, som blev dræbt af lynet den 31. juli 1718. Samme hændelse ligger bag Alexander Popes <a poem="pope2026092701">On Two Lovers Struck Dead by Lightning</a> og den tilhørende gravskrift. Rousings slutning genoptager gravskriftens tanke om, at døden ikke var en straf. Hendes indledning henviser til en beretning i Popes værker; digtet er ikke en direkte oversættelse af hans epigram.</note>
+  </notes>
   <source pages="147-149"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
