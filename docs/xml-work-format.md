@@ -15,6 +15,9 @@ Strukturtags står i kolonne 0, også når de er indlejret. Det gælder
 Metadatafelter inde i `<head>` og `<workhead>` indrykkes med to mellemrum for
 hvert niveau.
 
+Indholdet i `<notes>` og `<pictures>` står altid på egne linjer. `<note>` og
+`<picture>` indrykkes ét niveau i forhold til deres beholder.
+
 Der skal være én blank linje mellem to `<text>`-elementer og én blank linje før
 og efter et `<section>`-element. Mellemrum og blanke linjer i selve brødteksten
 ændres ikke, fordi de har betydning for tekstens layout og strofestruktur.
@@ -368,8 +371,9 @@ udelades fra linktitler, indeks og indholdsfortegnelser:
 
 Titelfelterne skal gengive kildens trykte overskrifter, ikke en redaktionelt
 forbedret eller katalogiseret titel. Kontrollér tekstens første kildeside og
-bevar hver trykt overskriftslinjes ordlyd, historiske stavning, bøjning,
-tegnsætning og indbyrdes rækkefølge.
+bevar hver trykt overskriftslinjes ordlyd, historiske stavning, bøjning, interne
+tegnsætning og indbyrdes rækkefølge. Afsluttende tegnsætning normaliseres efter
+reglen nedenfor.
 
 Brug felterne efter den trykte funktion og placering:
 
@@ -385,7 +389,7 @@ konstrueret titel som »Odin. Begyndelsen af første Sang i Hexametrer«. De kan
 repræsenteres sådan:
 
 ```xml
-<title>Begyndelse af Digtet Odin.</title>
+<title>Begyndelse af Digtet Odin</title>
 <subtitle>
   <line>(I Hexametre).</line>
   <line>Første Sang.</line>
@@ -420,8 +424,8 @@ blive løst med et gæt.
 
 Formklassifikatoren kombinerer de uafhængige analyser af struktur, rim, metrik
 og stavelsesantal. Den genkender sonetter samt petrarcanske og shakespeareske
-undertyper, terza rima, ottava rima, rime royal, balladestrofer, distika,
-quatrains, blankvers og knittelvers:
+undertyper, terza rima, ottava rima, rime royal, balladestrofer,
+alexandriner, distika, quatrains, blankvers og knittelvers:
 
 ```xml
 <form>
@@ -448,8 +452,10 @@ også få den bredere klassifikation `quatrain`. `--form` begrænser både søgn
 og foreslået XML til det valgte mønster.
 
 De understøttede mønsternavne er `sonnet`, `terza-rima`, `ottava-rima`,
-`rime-royal`, `ballad-stanza`, `distich`, `quatrain`, `blank-verse` og
-`knittelvers`.
+`alexandrine`, `rime-royal`, `ballad-stanza`, `distich`, `quatrain`,
+`blank-verse` og `knittelvers`. Alexandriner kræver både seks jambiske fødder
+og et sikkert tolvstavelsesmønster; formen tildeles ikke alene ud fra
+linjelængden.
 
 En samlet, skrivebeskyttet rapport for ét digt-id viser alle delanalyser og den
 resulterende formklassifikation:
@@ -539,12 +545,16 @@ Tekster med `skip-index` er undtaget fra kontrollen af indekstitlen, men ikke
 fra kontrollen af linktitlen.
 
 Titelfelter er redaktionelle metadata og skrives normalt uden afsluttende
-tegnsætning. Fjern derfor punktum, komma, kolon, semikolon, spørgsmålstegn og
-udråbstegn til sidst i `<title>`, `<indextitle>`, `<toctitle>` og
-`<breadcrumbtitle>`, også når tegnet står i den trykte overskrift. I
-`<linktitle>` må spørgsmålstegn og udråbstegn bevares, når de er en meningsfuld
-del af linkteksten. Reglen gælder ikke `<subtitle>`, `<suptitle>` eller den
-diplomatiske transskription i tekstlegemet, hvor kildens tegnsætning bevares.
+punktum, kolon eller semikolon. Fjern derfor disse tegn til sidst i `<title>`,
+`<indextitle>`, `<toctitle>` og `<breadcrumbtitle>`, også når tegnet står i den
+trykte overskrift. Et nødvendigt tegn, eksempelvis punktummet i en afsluttende
+forkortelse, bevares med den lokale undtagelse
+`ignore-tests="title-trailing-punctuation"` på det relevante `<text>`-element
+eller, for et felt i `<workhead>`, på `<kalliopework>`. En afsluttende ellipse
+med mindst tre punktummer, herunder formen `. . .`, er tilladt uden undtagelse.
+Undtagelsen på `<kalliopework>` gælder kun værkhovedet. Reglen gælder ikke
+`<linktitle>`, `<subtitle>`, `<suptitle>` eller den diplomatiske transskription i
+tekstlegemet, hvor kildens tegnsætning bevares.
 
 ### Keywords
 

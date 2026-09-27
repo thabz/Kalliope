@@ -112,8 +112,6 @@ Nu hos en anden halvt mit Hjerte bygger.
 <text id="aarestrup2001052501">
 <head>
   <title>Jeg var saa tidt saa sværmerisk allene</title>
-  <toctitle>Jeg var saa tidt saa sværmerisk allene</toctitle>
-  <indextitle>Jeg var saa tidt saa sværmerisk allene</indextitle>
   <firstline>Jeg var saa tidt saa sværmerisk allene</firstline>
   <notes>
     <note type="credits">Bidrag fra Brian Bentsen.</note>
@@ -317,8 +315,6 @@ Venskab ham ofrer og længe skal offre ham hædrende Veemod.
 <text id="aarestrup1825-37a3">
 <head>
   <title>Døer jeg - nuvel! jeg frygter ei</title>
-  <toctitle>Døer jeg - nuvel! jeg frygter ei</toctitle>
-  <indextitle>Døer jeg - nuvel! jeg frygter ei</indextitle>
   <firstline>Døer jeg - nuvel! jeg frygter ei</firstline>
   <source pages="11"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2218,6 +2214,7 @@ Levvel! Din mest hengivne blandt Emiler.
   <title>Din Følelse er Aske</title>
   <firstline>Din Følelse er Aske</firstline>
   <source pages="75"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3009,7 +3006,7 @@ Jeg hørte Taffeluhret pikke
 </body>
 </text>
 
-<text id="aarestrup2019020969">
+<text id="aarestrup2019020969" ignore-tests="title-trailing-punctuation">
 <head>
   <title>Til C. R.</title>
   <subtitle>der havde foræret mig en himmelblaa, med Guld og Perler broderet Pung</subtitle>

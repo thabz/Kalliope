@@ -27,7 +27,9 @@ const decodeEntities = value => value
     String.fromCodePoint(Number.parseInt(number, 16))
   );
 
-const plainText = value => decodeEntities(value.replace(/<[^>]+>/gu, ''));
+const plainText = value => decodeEntities(value
+  .replace(/<(?:note|footnote)\b[^>]*>[\s\S]*?<\/(?:note|footnote)>/gu, '')
+  .replace(/<[^>]+>/gu, ''));
 
 const normalizeForMatch = value => plainText(String(value ?? ''))
   .normalize('NFKD')
@@ -160,7 +162,10 @@ const parsePoetryElement = ({ poetry, startingFacsimile }) => {
           to_facsimile: firstPb[1],
         });
       } else if (!hasVisibleBefore) {
-        currentFacsimile = firstPb[1];
+        // Flere tomme kildesider kan stå som fortløbende pb-elementer før
+        // den første synlige verslinje. Linjen hører da til siden i den
+        // sidste markør, ikke den første.
+        currentFacsimile = matches.at(-1)[1];
       }
     }
     if (isVerseLine(withoutPageBreaks)) {
