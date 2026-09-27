@@ -493,11 +493,15 @@ const buildRecords = ({ existingPoets, existingWorks, dflWorks, root, rawDir }) 
     if (kalliopeWork != null) merged.kalliope = kalliopeWork;
     works.set(id, merged);
   });
-  const currentPoetIds = new Set([...poetsByDflId.values()].map(poet => poet.id));
+  // DFL is one source, not the complete register. Preserve records from other
+  // sources and duplicate source identities until an editorial merge is made.
+  const poets = new Map(existingPoets.map(poet => [poet.id, poet]));
+  poetsByDflId.forEach(poet => poets.set(poet.id, poet));
+  const currentPoetIds = new Set(poets.keys());
   works.forEach(work => {
     work.poet_ids = work.poet_ids.filter(poetId => currentPoetIds.has(poetId));
   });
-  return { poets: [...poetsByDflId.values()], works: [...works.values()] };
+  return { poets: [...poets.values()], works: [...works.values()] };
 };
 
 const fetchToCache = async (url, file) => {
