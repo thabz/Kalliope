@@ -525,6 +525,129 @@ const localPatternAnalysis = ({ stanzaLengths, candidates }) => {
     .forEach(item => addCandidate(candidates, item.candidate));
 };
 
+const globalUniformPatternAnalysis = ({
+  observedBoundaries,
+  stanzaLengths,
+  verseLineCount,
+  candidates,
+}) => {
+  if (stanzaLengths.length < 8 || verseLineCount < 12) {
+    return { hypotheses: [], targetLength: null };
+  }
+
+  const observedSet = new Set(observedBoundaries);
+  const maxLength = Math.min(24, Math.floor(verseLineCount / 3));
+  const hypotheses = [];
+
+  for (let targetLength = 2; targetLength <= maxLength; targetLength += 1) {
+    if (verseLineCount % targetLength !== 0) continue;
+
+    const stanzaCount = verseLineCount / targetLength;
+    const expectedBoundaries = Array.from(
+      { length: stanzaCount - 1 },
+      (_, index) => (index + 1) * targetLength
+    );
+    const expectedSet = new Set(expectedBoundaries);
+    const removedBoundaries = observedBoundaries.filter(
+      boundary => !expectedSet.has(boundary)
+    );
+    const addedBoundaries = expectedBoundaries.filter(
+      boundary => !observedSet.has(boundary)
+    );
+    const alignedBoundaryCount =
+      expectedBoundaries.length - addedBoundaries.length;
+    const alignedBoundaryRatio =
+      expectedBoundaries.length === 0
+        ? 0
+        : alignedBoundaryCount / expectedBoundaries.length;
+    const intactStanzaCount = stanzaLengths.filter(
+      length => length === targetLength
+    ).length;
+
+    // En global hypotese skal have selvstændig støtte i den observerede tekst.
+    // Ellers vil tilfældige divisorer af det samlede linjetal ligne versformer.
+    if (intactStanzaCount < 3 || alignedBoundaryRatio < 0.5) continue;
+
+    // Manglende grænser er dyrere end ekstra grænser: OCR og sideopdeling
+    // indsætter ofte falske blanklinjer, mens en helt usynlig trykt grænse er
+    // mindre sandsynlig. Det skelner bl.a. 16 × 14 fra 32 × 7 i lange digte.
+    const editCost =
+      removedBoundaries.length + 3 * addedBoundaries.length;
+    const boundaryPopulation =
+      observedBoundaries.length + expectedBoundaries.length;
+    const intactLineCoverage =
+      (intactStanzaCount * targetLength) / verseLineCount;
+    const score =
+      4 * alignedBoundaryRatio +
+      2 * intactLineCoverage -
+      2 * (editCost / boundaryPopulation);
+
+    hypotheses.push({
+      targetLength,
+      stanzaCount,
+      score,
+      alignedBoundaryCount,
+      alignedBoundaryRatio,
+      intactStanzaCount,
+      removedBoundaries,
+      addedBoundaries,
+      editCost,
+    });
+  }
+
+  hypotheses.sort(
+    (left, right) =>
+      right.score - left.score ||
+      left.editCost - right.editCost ||
+      right.targetLength - left.targetLength
+  );
+
+  const publicHypotheses = hypotheses.slice(0, 3).map((hypothesis, index) => ({
+    stanza_length: hypothesis.targetLength,
+    stanza_count: hypothesis.stanzaCount,
+    score: Number(hypothesis.score.toFixed(3)),
+    intact_stanza_count: hypothesis.intactStanzaCount,
+    aligned_boundary_count: hypothesis.alignedBoundaryCount,
+    expected_boundary_count: hypothesis.stanzaCount - 1,
+    boundaries_to_remove: hypothesis.removedBoundaries,
+    boundaries_to_add: hypothesis.addedBoundaries,
+    preferred: index === 0,
+  }));
+
+  const best = hypotheses[0];
+  const runnerUp = hypotheses[1];
+  const scoreMargin =
+    best == null ? 0 : runnerUp == null ? best.score : best.score - runnerUp.score;
+  if (best == null || best.score < 1.25 || scoreMargin < 0.2) {
+    return { hypotheses: publicHypotheses, targetLength: null };
+  }
+
+  const reason = `En global afprøvning af hele digtet foretrækker ${best.stanzaCount} strofer på ${best.targetLength} linjer uden rest.`;
+  best.removedBoundaries.forEach(boundary => {
+    addCandidate(candidates, {
+      type: 'possible_extra_boundary',
+      after_verse_line: boundary,
+      confidence: scoreMargin >= 0.4 ? 3 : 2,
+      reason,
+      action: 'Kontrollér, om strofegrænsen efter denne verslinje er overflødig.',
+    });
+  });
+  best.addedBoundaries.forEach(boundary => {
+    addCandidate(candidates, {
+      type: 'possible_missing_boundary',
+      after_verse_line: boundary,
+      confidence: scoreMargin >= 0.4 ? 3 : 2,
+      reason,
+      action: 'Kontrollér, om der mangler en strofegrænse efter denne verslinje.',
+    });
+  });
+
+  return {
+    hypotheses: publicHypotheses,
+    targetLength: best.targetLength,
+  };
+};
+
 const punctuationAnalysis = ({ stanzas, candidates }) => {
   stanzas.forEach((stanza, index) => {
     if (index === 0 || index === stanzas.length - 1 || stanza.lines.length !== 1) {
@@ -572,14 +695,46 @@ const analyzeStanzas = input => {
     ...parsed,
     candidates,
   });
-  const dominantLength =
+  const observedDominantLength =
     recognizedForms.length > 0
       ? null
       : dominantPatternAnalysis({
           ...parsed,
           candidates,
         });
-  if (recognizedForms.length === 0 && dominantLength == null) {
+  const globalPattern = recognizedForms.length === 0
+    ? globalUniformPatternAnalysis({
+        ...parsed,
+        candidates,
+      })
+    : { hypotheses: [], targetLength: null };
+  const dominantLength =
+    observedDominantLength ?? globalPattern.targetLength;
+  if (
+    globalPattern.targetLength != null &&
+    globalPattern.targetLength !== observedDominantLength
+  ) {
+    const globallyExpectedBoundaries = new Set(
+      cumulativeBoundaries(
+        Array(parsed.verseLineCount / globalPattern.targetLength)
+          .fill(globalPattern.targetLength)
+      )
+    );
+    [...candidates.entries()].forEach(([key, candidate]) => {
+      const boundary = candidate.after_verse_line;
+      const contradictsGlobalPattern =
+        (candidate.type === 'possible_missing_boundary' &&
+          !globallyExpectedBoundaries.has(boundary)) ||
+        (candidate.type === 'possible_extra_boundary' &&
+          globallyExpectedBoundaries.has(boundary));
+      if (contradictsGlobalPattern) candidates.delete(key);
+    });
+  }
+  if (
+    recognizedForms.length === 0 &&
+    observedDominantLength == null &&
+    globalPattern.targetLength == null
+  ) {
     localPatternAnalysis({
       ...parsed,
       candidates,
@@ -614,6 +769,7 @@ const analyzeStanzas = input => {
     observed_stanza_lengths: parsed.stanzaLengths,
     dominant_stanza_length: dominantLength,
     recognized_forms: recognizedForms,
+    uniform_pattern_hypotheses: globalPattern.hypotheses,
     candidates: publicCandidates,
   };
 };

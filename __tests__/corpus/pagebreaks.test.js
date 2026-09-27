@@ -291,3 +291,22 @@ En linje fort<pb n="14" facs="021.jpg"/>sætter</poetry></body>
   });
 
 });
+
+
+describe('page breaks inside attached endnotes', () => {
+  const xmlWith = notePages => `<kalliopework><workhead><pagebreaks/></workhead><workbody><text id="poem"><head><source pages="1-5"/></head><body><poetry>Vers<footnote>Slutnote${notePages}</footnote>
+<pb n="2" facs="002.jpg"/>Næste vers
+<pb n="3" facs="003.jpg"/>Sidste vers</poetry></body></text></workbody></kalliopework>`;
+
+  it('checks a note independently of the main text pagination', () => {
+    expect(collectPageBreakIssues('work.xml', xmlWith('<pb n="4" facs="004.jpg"/>Fortsat note<pb n="5" facs="005.jpg"/>Mere note'))).toEqual([]);
+  });
+
+  it('still rejects decreasing pages within a note', () => {
+    const issues = collectPageBreakIssues('work.xml', xmlWith('<pb n="5" facs="005.jpg"/>Fortsat note<pb n="4" facs="004.jpg"/>Mere note'));
+    expect(issues).toEqual([
+      'work.xml: pb/@facs must not decrease within one source: 005.jpg before 004.jpg.',
+      'work.xml: pb/@n must not decrease within a text: 5 before 4.',
+    ]);
+  });
+});
