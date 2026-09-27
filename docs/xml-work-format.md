@@ -763,6 +763,29 @@ Særlige linjeformer:
 - Indledende mellemrum bliver til non-breaking spaces.
 - Linjer med kun `***`, `___` eller lignende pakkes i `<nonum>`.
 
+### Enkeltstående dobbelt blanklinje i poesi
+
+Korpustesten afviser en `<poetry>`-blok med mindst fire adskillelser på én
+blanklinje og præcis én adskillelse på to blanklinjer, når passagen efter den
+dobbelte afstand har mere end én linje. Reglen hedder
+`isolated-double-poetry-gap` og fejler `make test`.
+
+En enkeltstående linje efter den dobbelte afstand er tilladt, hvis den følges
+af en blanklinje eller blokslutningen. Det gælder også overskrifter som
+»Moral«, talerangivelser, afsnitsnumre, ornamenter og afsluttende krediteringer.
+En overskrift direkte efterfulgt af vers uden en mellemliggende blanklinje
+fritager derimod ikke afstanden.
+
+Hver poesiblok vurderes for sig. Linjer med kun mellemrum eller tabulatorer
+regnes som blanke; afstand ved blokgrænser samt blanklinjer i noter,
+fodnoter og XML-kommentarer tælles ikke med. Linjer tælles i kilde-XML'en,
+inklusive inline-markup. Der gættes ikke på strofegrænser eller strofelængde.
+
+Reglen håndhæver kun det beskrevne mønster: flere dobbelte adskillelser
+udløser den ikke, og en afstand på tre eller flere blanklinjer tæller hverken
+som en enkelt eller dobbelt adskillelse. En anden større afstand i samme blok
+fritager ikke den enkeltstående dobbelte afstand.
+
 ## Sections
 
 Sektioner grupperer tekster og kan nestes:
