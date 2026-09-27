@@ -135,6 +135,26 @@ const splitProofreadings = xml => xml
   .replace(/(<proofreadings>)(?!\r?\n)/g, '$1\n')
   .replace(/(<proofreading\b[^<>]*\/>)(?!\r?\n)/g, '$1\n');
 
+const splitMetadataCollections = xml => xml.replace(
+  /<(notes|pictures)(?:[ \t][^<>]*)?>[\s\S]*?<\/\1>/g,
+  collection => {
+    if (/<(?:note|picture)\b/.test(collection) !== true) {
+      return collection;
+    }
+    return collection
+      .replace(/(<(?:notes|pictures)(?:[ \t][^<>]*)?>)(?!\r?\n)/, '$1\n')
+      .replace(
+        /(<\/(?:note|picture)>)(?=[ \t]*<(?:note|picture)\b)/g,
+        '$1\n',
+      )
+      .replace(
+        /(<(?:note|picture)\b[^<>]*\/>)(?=[ \t]*<(?:note|picture)\b)/g,
+        '$1\n',
+      )
+      .replace(/([^ \t\r\n])[ \t]*(?=<\/(?:notes|pictures)>)/g, '$1\n');
+  },
+);
+
 const nonumWrapperNames = [
   'nonum',
   'center',
@@ -412,7 +432,9 @@ export const formatWorkXml = xml => {
     withoutStructuralIndentation,
   );
   const withPoetryLines = splitPoetryLines(
-    splitProofreadings(splitAnalysisMetadata(withSplitMetadata)),
+    splitMetadataCollections(
+      splitProofreadings(splitAnalysisMetadata(withSplitMetadata)),
+    ),
   );
   const withMetadataIndentation = indentMetadata(withPoetryLines);
   const withSortedTextHeadMetadata = sortTextHeadMetadata(

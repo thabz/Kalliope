@@ -151,12 +151,12 @@ describe('stanza candidate analysis', () => {
       expect.objectContaining({
         type: 'possible_extra_boundary',
         after_verse_line: 36,
-        confidence: 'likely',
+        confidence: 'strong',
       }),
       expect.objectContaining({
         type: 'possible_extra_boundary',
         after_verse_line: 68,
-        confidence: 'likely',
+        confidence: 'strong',
       }),
     ]);
   });
@@ -171,7 +171,31 @@ describe('stanza candidate analysis', () => {
       expect.objectContaining({
         type: 'possible_extra_boundary',
         after_verse_line: 38,
-        confidence: 'likely',
+        confidence: 'strong',
+      }),
+    ]);
+  });
+
+  it('tests merging four-line fragments even when they form the majority', () => {
+    const result = analyzeStanzas({
+      body: bodyWithStanzas([4, 4, 4, 4, 8, 8, 8, 4, 4]),
+    });
+
+    expect(result.uniform_pattern_hypotheses[0]).toEqual(
+      expect.objectContaining({ stanza_length: 8, preferred: true }),
+    );
+    expect(result.candidates).toEqual([
+      expect.objectContaining({
+        type: 'possible_extra_boundary',
+        after_verse_line: 4,
+      }),
+      expect.objectContaining({
+        type: 'possible_extra_boundary',
+        after_verse_line: 12,
+      }),
+      expect.objectContaining({
+        type: 'possible_extra_boundary',
+        after_verse_line: 44,
       }),
     ]);
   });
@@ -264,6 +288,54 @@ describe('stanza candidate analysis', () => {
     ).toEqual([
       ['possible_extra_boundary', 2],
       ['possible_extra_boundary', 11],
+    ]);
+  });
+
+  it('globally reconstructs repeated fourteen-line stanzas from mixed fragments', () => {
+    const observed = [
+      14, 14, 7, 7, 7, 7, 14, 7, 7, 14, 14, 7, 8, 8, 5, 5, 8, 8, 7, 7,
+      7, 5, 8, 8, 2, 7, 5, 7,
+    ];
+    const result = analyzeStanzas({ body: bodyWithStanzas(observed) });
+
+    expect(result.verse_line_count).toBe(224);
+    expect(result.dominant_stanza_length).toBe(14);
+    expect(result.uniform_pattern_hypotheses[0]).toMatchObject({
+      stanza_length: 14,
+      stanza_count: 16,
+      boundaries_to_remove: [
+        35, 49, 77, 119, 127, 135, 145, 153, 161, 175, 187, 195, 203, 205,
+        212, 217,
+      ],
+      boundaries_to_add: [126, 154, 196, 210],
+      preferred: true,
+    });
+    expect(
+      result.candidates.map(candidate => [
+        candidate.type,
+        candidate.after_verse_line,
+      ])
+    ).toEqual([
+      ['possible_extra_boundary', 35],
+      ['possible_extra_boundary', 49],
+      ['possible_extra_boundary', 77],
+      ['possible_extra_boundary', 119],
+      ['possible_missing_boundary', 126],
+      ['possible_extra_boundary', 127],
+      ['possible_extra_boundary', 135],
+      ['possible_extra_boundary', 145],
+      ['possible_extra_boundary', 153],
+      ['possible_missing_boundary', 154],
+      ['possible_extra_boundary', 161],
+      ['possible_extra_boundary', 175],
+      ['possible_extra_boundary', 187],
+      ['possible_extra_boundary', 195],
+      ['possible_missing_boundary', 196],
+      ['possible_extra_boundary', 203],
+      ['possible_extra_boundary', 205],
+      ['possible_missing_boundary', 210],
+      ['possible_extra_boundary', 212],
+      ['possible_extra_boundary', 217],
     ]);
   });
 
