@@ -479,7 +479,7 @@ Så fik vi September engang. Og Jer, kære kvidrende Svaler,
     ]);
   });
 
-  it('keeps geometry analysis available when every XML line is safely matched', () => {
+  it('does not expose geometry analysis when matched lines still have unsafe geometry', () => {
     const xml = workXml.replace(
       /<body><poetry>[\s\S]*?<\/poetry><\/body>/,
       '<body><poetry>Første linje\nAnden linje\n\nTredje linje\nFjerde linje</poetry></body>',
@@ -504,8 +504,8 @@ Så fik vi September engang. Og Jer, kære kvidrende Svaler,
     }).poems;
 
     expect(poem.geometry.status).toBe('manual_review');
-    expect(poem.geometry.stanza).not.toBeNull();
-    expect(poem.geometry.indentation).not.toBeNull();
+    expect(poem.geometry.stanza).toBeNull();
+    expect(poem.geometry.indentation).toBeNull();
     expect(poem.candidates).toEqual(expect.arrayContaining([
       expect.objectContaining({ type: 'geometry_manual_review' }),
     ]));
