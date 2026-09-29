@@ -38,6 +38,7 @@ const metadataFields = [
   'notes',
   'pagebreaks',
   'pictures',
+  'places',
   'proofreadings',
   'quality',
   'rhyme',
@@ -71,6 +72,7 @@ const textHeadMetadataOrder = [
   'pictures',
   'source',
   'keywords',
+  'places',
   'form',
   'metre',
   'rhyme',
@@ -136,22 +138,22 @@ const splitProofreadings = xml => xml
   .replace(/(<proofreading\b[^<>]*\/>)(?!\r?\n)/g, '$1\n');
 
 const splitMetadataCollections = xml => xml.replace(
-  /<(notes|pictures)(?:[ \t][^<>]*)?>[\s\S]*?<\/\1>/g,
+  /<(notes|pictures|places)(?:[ \t][^<>]*)?>[\s\S]*?<\/\1>/g,
   collection => {
-    if (/<(?:note|picture)\b/.test(collection) !== true) {
+    if (/<(?:note|picture|place)\b/.test(collection) !== true) {
       return collection;
     }
     return collection
-      .replace(/(<(?:notes|pictures)(?:[ \t][^<>]*)?>)(?!\r?\n)/, '$1\n')
+      .replace(/(<(?:notes|pictures|places)(?:[ \t][^<>]*)?>)(?!\r?\n)/, '$1\n')
       .replace(
-        /(<\/(?:note|picture)>)(?=[ \t]*<(?:note|picture)\b)/g,
+        /(<\/(?:note|picture|place)>)(?=[ \t]*<(?:note|picture|place)\b)/g,
         '$1\n',
       )
       .replace(
-        /(<(?:note|picture)\b[^<>]*\/>)(?=[ \t]*<(?:note|picture)\b)/g,
+        /(<(?:note|picture|place)\b[^<>]*\/>)(?=[ \t]*<(?:note|picture|place)\b)/g,
         '$1\n',
       )
-      .replace(/([^ \t\r\n])[ \t]*(?=<\/(?:notes|pictures)>)/g, '$1\n');
+      .replace(/([^ \t\r\n])[ \t]*(?=<\/(?:notes|pictures|places)>)/g, '$1\n');
   },
 );
 

@@ -297,6 +297,9 @@ Hvad jeg har kjærest paa Jord forsvandt i Vinter og Mulm.
   <title>Kiel</title>
   <firstline>Er jeg i Danmark end? nei fremmed germanisk Tunge</firstline>
   <source in="bd1" pages="14-16"/>
+  <places>
+    <place ref="kiel" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -335,6 +338,9 @@ Og jeg gjenfinder mig selv, og Verden - bringe jeg med!
   <title>Neumünster</title>
   <firstline>Seer jeg i fremmed Stad et Billed fra forrige Dage?</firstline>
   <source in="bd1" pages="17-20"/>
+  <places>
+    <place ref="neumuenster" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -386,6 +392,10 @@ Hil dig lyksalige Viv! - fort Vandrer fra fremmede Stad!
   <title>Hamborg</title>
   <firstline>Stort jeg glædes ei her; et Bistade trangt mig indslutter</firstline>
   <source in="bd1" pages="21-23"/>
+  <places>
+    <place ref="hamburg" relation="subject" primary="true"/>
+    <place ref="ottensen" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -429,6 +439,9 @@ Hvad jeg saa flygtig saae - ak, Kjærlighed boer dog og der.
   <title>Haarburg</title>
   <firstline>Fremmed er Luften alt, Smaabjerge fjernt jeg alt skimter</firstline>
   <source in="bd1" pages="24-25"/>
+  <places>
+    <place ref="harburg-hamburg" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -454,6 +467,9 @@ Livets skjønneste Glimt fra fjerne Ahnelsers Land.
   <title>Paa Lyneborg Hede</title>
   <firstline>Gold vorder sandig Vei, og seent gaaer Reisen paa Heden</firstline>
   <source in="bd1" pages="26"/>
+  <places>
+    <place ref="lueneburg-heath" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -477,6 +493,9 @@ See fra Heden og haab! bag Ørknen grønnes det hist.
   <title>Celle</title>
   <firstline>Hilsende fremmed Bye inat med Bylten i Haanden</firstline>
   <source in="bd1" pages="27-28"/>
+  <places>
+    <place ref="celle" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -514,6 +533,9 @@ Naar af dens Krampefavn dig løser Frelserens Haand.
   <title>Hannover</title>
   <firstline>Flygtning fra Feers Land, du Himmelmøe fra det Fjerne</firstline>
   <source in="bd1" pages="29-30"/>
+  <places>
+    <place ref="hannover" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -550,6 +572,9 @@ Hvor du vandred igaar, jeg ruller hen i dit Spor.
   <title>Paa Veien til Gøttingen</title>
   <firstline>Rigdom regner fra Skye, om Biergets Kanter det lyner</firstline>
   <source in="bd1" pages="31-32"/>
+  <places>
+    <place ref="goettingen" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -582,6 +607,9 @@ Har I endnu ei lært, at skjælne Mølle fra Helt?
   <title>Gøttingen</title>
   <firstline>Underlig boglærde Stad, du tydske Regents i det Store!</firstline>
   <source in="bd1" pages="33-36"/>
+  <places>
+    <place ref="goettingen" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -679,6 +707,9 @@ Til Danmark flyv - sjung om min Kjærlighed!
   <title>Frankfurt am Mayn</title>
   <firstline>I Diligensens Grav tre Marterdøgn jeg har vaaget</firstline>
   <source in="bd1" pages="39-40"/>
+  <places>
+    <place ref="frankfurt-am-main" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -713,6 +744,9 @@ Først dog med nordisk Sang jeg priser fremmede Bye.
   <title>Kroningsstaden</title>
   <firstline>Vær hilset du gamle fribaarne Stad</firstline>
   <source in="bd1" pages="41-45"/>
+  <places>
+    <place ref="frankfurt-am-main" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -830,6 +864,9 @@ Over Stjerner søg den forklart igjen!
   <title>Mainz</title>
   <firstline>Det var en lystelig Fart, man let kan her tillands seile</firstline>
   <source in="bd1" pages="46-50"/>
+  <places>
+    <place ref="mainz" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -904,6 +941,9 @@ Oplyst Verden nu er: ei Djævlen længer man frygter,
   <title>Ingelheim</title>
   <firstline>Skal det saa gange fort, vi ei vor Lykke skal prise</firstline>
   <source in="bd1" pages="51-57"/>
+  <places>
+    <place ref="ingelheim-am-rhein" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -993,6 +1033,9 @@ Fort liig vexlende Strøm henruller den Reisendes Lyst.
   <firstline>I Morgenrøde vi gange</firstline>
   <source in="bd1" pages="58-59"/>
   <keywords>balladestrofe</keywords>
+  <places>
+    <place ref="rhine" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1045,6 +1088,9 @@ Paa Flugten den Reisende synger,
   <title>Winkeln</title>
   <firstline>Toner paa morgenlys Vei fra Kirken os Messen imøde</firstline>
   <source in="bd1" pages="60-61"/>
+  <places>
+    <place ref="winkel-rheingau" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1080,6 +1126,9 @@ Skjønnest glæder os nu de Bromsers herlige Bye.
   <title>Rüdesheim</title>
   <firstline>Livlig, munter og let, af fyrig Bjergaand opløftet</firstline>
   <source in="bd1" pages="62-64"/>
+  <places>
+    <place ref="ruedesheim-am-rhein" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1393,6 +1442,9 @@ Udslukt er de mægtige Luer,
   <title>Coblenz</title>
   <firstline>Hvormed fortørned vi dig, du viinløvkrandsede Flodmand</firstline>
   <source in="bd1" pages="79-84"/>
+  <places>
+    <place ref="koblenz" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1479,6 +1531,9 @@ Lyser hver Julenat end og vækker den slumrende Aand.
   <title>Neuwied</title>
   <firstline>Travle, hamrende Bye, til dig har Rhinen os vugget</firstline>
   <source in="bd1" pages="85-87"/>
+  <places>
+    <place ref="neuwied" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1517,6 +1572,9 @@ Vel, at Verden end ei er blevet en ordentlig Stad!
   <subtitle>(ved Schwalbach).</subtitle>
   <firstline>Fort fra Dal over Bjerg, fra Flod til Flod vi har vandret</firstline>
   <source in="bd1" pages="88-89"/>
+  <places>
+    <place ref="burg-hohenstein-taunus" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1554,6 +1612,9 @@ Mægtig knejser dog end paa Fjeldet tause Ruin.
   <title>Adolphseck</title>
   <firstline>Her, hvor styrtede Muur kun Borgens Grændse betegner</firstline>
   <source in="bd1" pages="90-91"/>
+  <places>
+    <place ref="burg-adolfseck" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1591,6 +1652,9 @@ Tager en Blomst han dog med fra Marken i Ridderens Hal.
   <title>Wisbaden</title>
   <firstline>Snart er Valfarten endt iblandt de herlige Borge</firstline>
   <source in="bd1" pages="92-95"/>
+  <places>
+    <place ref="wiesbaden" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1652,6 +1716,9 @@ Velskland venter os jo, det skjønne poetiske Land.
   <title>Darmstadt</title>
   <firstline>Rhinfodreisen er endt. Fra Stad til Stad vi nu rulle</firstline>
   <source in="bd1" pages="96-97"/>
+  <places>
+    <place ref="darmstadt" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1697,6 +1764,9 @@ Følg usynlig os kun i Sang til Drømmenes Land!
     <picture artwork="kunst/carl-rottmann-heidelberger-schloss-1815" />
   </pictures>
   <source in="bd1" pages="98-101"/>
+  <places>
+    <place ref="heidelberg" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1811,6 +1881,10 @@ Livet og Aanden ei døer. —
     <note type="credits">Bidrag fra Nicolas Reinecke.</note>
   </notes>
   <source in="bd1" pages="104"/>
+  <places>
+    <place ref="heidelberg-tun" relation="subject" primary="true"/>
+    <place ref="heidelberg" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1885,6 +1959,9 @@ Han har Faderen seet<footnote>See <a bible="bibeljohannes14">Joh. C. 14.</a></fo
   <title>Manheim</title>
   <firstline>Snorretbyggede Stad, du brostenprydede Schakbræt</firstline>
   <source in="bd1" pages="108-109"/>
+  <places>
+    <place ref="mannheim" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1916,6 +1993,9 @@ Folket jubler: Esslair! og Tydsklands Talma jeg saae. -
   <title>Worms</title>
   <firstline>Gamle trofaste Worms! til dig har Rhinen os baaret</firstline>
   <source in="bd1" pages="110-111"/>
+  <places>
+    <place ref="worms" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1950,6 +2030,9 @@ Høit da toner: vor <w>Gud</w>, vor Gud er saa fast en Borg.
   <title>Carlsruhe</title>
   <firstline>Her vi hvile en Stund og see paa Markedets Tummel!</firstline>
   <source in="bd1" pages="112"/>
+  <places>
+    <place ref="karlsruhe" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1973,6 +2056,9 @@ Velbesindig og klog forlades venneløs Bye.
   <title>Stuttsgard</title>
   <firstline>Ei det prægtige Slot, med Kostbarheder opdynget</firstline>
   <source in="bd1" pages="113-114"/>
+  <places>
+    <place ref="stuttgart" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2009,6 +2095,9 @@ Harpens rastløse Søn, som søger det Fjerne med Sang.
   <indextitle>Knibis</indextitle>
   <firstline>Stolt gaaer Veien mod Skye, i Schwartzwald svimler mit Øie</firstline>
   <source in="bd1" pages="115-116"/>
+  <places>
+    <place ref="kniebis" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2040,6 +2129,9 @@ Spinkel Pindeværksleeg mig tykkes mægtige Dom.
   <title>Strasborg</title>
   <firstline>Nærved studser jeg nu og Kæmpetaarnet beundrer</firstline>
   <source in="bd1" pages="117-119"/>
+  <places>
+    <place ref="strasbourg" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2090,6 +2182,9 @@ Reis dig en Bautasteen, hvor intet Helligt er nær!
   <title>Afstikkerfart</title>
   <firstline>Hvor gaaer nu Reisen hen? - til Sveitzerlandets Fjelde</firstline>
   <source in="bd1" pages="120"/>
+  <places>
+    <place ref="paris" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2111,6 +2206,9 @@ Velan, jeg flyver strax - jeg er der - det er skeet.
   <title>Paris</title>
   <firstline>Som Vognen var en Sky, som Hestene var Vinde</firstline>
   <source in="bd1" pages="121-127"/>
+  <places>
+    <place ref="paris" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2532,6 +2630,9 @@ Hjertet briste engang - seer Sjælen aldrig sin Brud.
   <indextitle>Basel</indextitle>
   <firstline>Har Paris du alt seet? - een Maaned hist jeg beundred</firstline>
   <source in="bd1" pages="144-146"/>
+  <places>
+    <place ref="basel" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2651,6 +2752,9 @@ Stærk er Tonernes Magt og mægtig Aandernes Kamp.
   <subtitle>(ved Rhinfaldet)</subtitle>
   <firstline>Siig, hvi staaer du saa taus, fremmede Vandrer, her</firstline>
   <source in="bd1" pages="151-154"/>
+  <places>
+    <place ref="rhine-falls" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2785,6 +2889,9 @@ Nu har Himmelens Lys mig omstraalet.
     <picture artwork="kunst/j-m-w-turner-fall-rhine-schaffhausen-1805-1806" />
   </pictures>
   <source in="bd1" pages="157-158"/>
+  <places>
+    <place ref="schaffhausen" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3194,6 +3301,10 @@ Af Kæmpens stille Have en Blomst vi plukke maae.
   <title>Ufnau</title>
   <firstline>Hvo nævner os den Riddersmand</firstline>
   <source in="bd1" pages="180-183"/>
+  <places>
+    <place ref="ufenau" relation="subject" primary="true"/>
+    <place ref="lake-zurich" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3386,6 +3497,9 @@ O, følg du mig i Dal, paa Bjerg og gjennem Nat og Grav!
     <picture artwork="kunst/gabriel-lory-marquard-wocher-einsiedeln-1788-1798" />
   </pictures>
   <source in="bd1" pages="192-193"/>
+  <places>
+    <place ref="einsiedeln" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3554,6 +3668,11 @@ I Baaden alt Roerkarlen sjunger.
     <picture artwork="kunst/franz-xaver-triner-gabriel-lory-fils-goldau-schwanau-1806" />
   </pictures>
   <source in="bd1" pages="201-206"/>
+  <places>
+    <place ref="goldau" relation="subject" primary="true"/>
+    <place ref="schwanau" relation="subject"/>
+    <place ref="lake-lauerz" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4024,6 +4143,9 @@ I Dalen gaae de Reisende saa glad i Solens Skin.
     <picture artwork="kunst/j-m-w-turner-blue-rigi-sunrise-1842" />
   </pictures>
   <source in="bd1" pages="227-228"/>
+  <places>
+    <place ref="rigi" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4104,6 +4226,9 @@ Der lever Helten evig.
     <picture artwork="kunst/j-m-w-turner-lake-lucerne-bay-uri-1844" />
   </pictures>
   <source in="bd1" pages="231-233"/>
+  <places>
+    <place ref="lake-lucerne" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4164,6 +4289,10 @@ Den himmelske Møe.
   <title>Aften i Lucern</title>
   <firstline>Guldstraaler spille</firstline>
   <source in="bd1" pages="234-238"/>
+  <places>
+    <place ref="lucerne" relation="subject" primary="true"/>
+    <place ref="lake-lucerne" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4589,6 +4718,10 @@ Men Gaaden i Menneskets mørke Sjæl
   <title>Rütly</title>
   <firstline>Fra Gersau svømmer Baaden mod Rütlys Klippestrand</firstline>
   <source in="bd1" pages="254-259"/>
+  <places>
+    <place ref="ruetli" relation="subject" primary="true"/>
+    <place ref="lake-lucerne" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4869,6 +5002,9 @@ Det Sjælen gjennemstrømmer -
   <title>Grimsel</title>
   <firstline>Vilde er dine Fjelde og golde</firstline>
   <source in="bd1" pages="268"/>
+  <places>
+    <place ref="grimsel-pass" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5022,6 +5158,11 @@ Dæmoners Hær er svundet -
     <picture artwork="kunst/alexandre-calame-at-handeck-1860" />
   </pictures>
   <source in="bd1" pages="274-276"/>
+  <places>
+    <place ref="handegg-falls" relation="subject" primary="true"/>
+    <place ref="meiringen" relation="mentioned"/>
+    <place ref="grindelwald" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5133,6 +5274,10 @@ Og sjunger, mens vi vandre det stolte Syn forbi:
   <title>Munken og Jomfruen</title>
   <firstline>Kæmpen ganger i Verden om</firstline>
   <source in="bd1" pages="280-283"/>
+  <places>
+    <place ref="moench" relation="subject" primary="true"/>
+    <place ref="jungfrau" relation="subject"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5542,6 +5687,11 @@ Brune Øine tindre under nikkende Hat.''
   </subtitle>
   <firstline>Velskland, er du alt nær? jeg hører alt dine Toner</firstline>
   <source in="bd2" pages="5-11"/>
+  <places>
+    <place ref="gex" relation="setting"/>
+    <place ref="simplon-pass" relation="subject" primary="true"/>
+    <place ref="milan" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5671,6 +5821,10 @@ Derpaa stole vi tryg, og glad Milano vi see.
     <picture artwork="kunst/giovanni-migliara-duomo-milano-1819-1828" />
   </pictures>
   <source in="bd2" pages="12"/>
+  <places>
+    <place ref="milan-cathedral" relation="subject" primary="true"/>
+    <place ref="milan" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5698,6 +5852,9 @@ Bøied den stolte Sjæl, og føled Herren var nær.
   <firstline>Forlad mig ei du store Aand, hvis Vinge</firstline>
   <source in="bd2" pages="13-14"/>
   <keywords>ottave-rime</keywords>
+  <places>
+    <place ref="milan" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5750,6 +5907,9 @@ Hvor Døde kun begrave deres Døde.
     <note>* Napoleons.</note>
   </notes>
   <source in="bd2" pages="15-16"/>
+  <places>
+    <place ref="milan" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5777,6 +5937,10 @@ Taus den Fremmede staaer, og Synet ryster hans Sjæl. -
   <title>Millandske Scener</title>
   <firstline>Kommer et Liigtog hist? den store Karmenes Række</firstline>
   <source in="bd2" pages="17-19"/>
+  <places>
+    <place ref="milan" relation="subject" primary="true"/>
+    <place ref="la-scala" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5829,6 +5993,9 @@ Lungen ryster dem nu den brave Trøster Bajaz.
   <title>Sidste Aften i Milano</title>
   <firstline>Lette, sydlige Liv, ei her du Nordboen fængsler</firstline>
   <source in="bd2" pages="20-24"/>
+  <places>
+    <place ref="milan" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5941,6 +6108,9 @@ Drøm nu om Himlens Ro, og fro du vaagner til Liv.
   <title>Parma</title>
   <firstline>Her seer jeg førstegang i Farveglød</firstline>
   <source in="bd2" pages="25-26"/>
+  <places>
+    <place ref="parma" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5994,6 +6164,9 @@ End kolde Steen dit Aasyn her afbilded.
   <title>Reggio</title>
   <firstline>Rig er Velskland paa Konst, og ei en Stad er saa liden</firstline>
   <source in="bd2" pages="27-28"/>
+  <places>
+    <place ref="reggio-emilia" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6030,6 +6203,9 @@ Vist han knæler nu der, hvor høit du svæver i Glands.
     <picture src="ingemann20190123102-p1.jpg" type="illustration" year="1514">Rafael (1483-1520): <i>Den hellige Cecilias ekstase</i>, ca. 1514. Pinacoteca Nazionale di Bologna.</picture>
   </pictures>
   <source in="bd2" pages="29-32"/>
+  <places>
+    <place ref="bologna" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6123,6 +6299,9 @@ Og lærer Jorden høie Engles Sang.
   <title>Livorno</title>
   <firstline>St. Cecilias Stad, i dig var meget at skue</firstline>
   <source in="bd2" pages="33"/>
+  <places>
+    <place ref="livorno" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6147,6 +6326,9 @@ Toner paa fremmed Kyst, og Sjælen svulmer i Sang.
   <subtitle>[Seet i Livorno.]</subtitle>
   <firstline>Hvad hvidsker, hvad suser</firstline>
   <source in="bd2" pages="34-38"/>
+  <places>
+    <place ref="mediterranean-sea" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6252,6 +6434,10 @@ Hvor Stjernernes Herre kun kjender min Røst.
     <picture src="ingemann20190123105-p1.jpg" museum="uffizi" objid="venere-dei-medici"><i>Venus de' Medici</i>, græsk, 1. årh. fvt., marmor.</picture>
   </pictures>
   <source in="bd2" pages="39-52"/>
+  <places>
+    <place ref="florence" relation="subject" primary="true"/>
+    <place ref="florence-baptistery" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6534,6 +6720,9 @@ Hæv dem forklaret, forent evig, i evige Lys!
   <firstline>Nu gaaer Reisen til Rom, paa Veien stakket vi dvæle</firstline>
   <source in="bd2" pages="53-54"/>
   <keywords>petrarca</keywords>
+  <places>
+    <place ref="arezzo" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6574,6 +6763,9 @@ Den skjønneste paa Himlen evig pranger.
   <title>Peruggia</title>
   <firstline>Tit Viinhøstglæder nu Valfarten standse</firstline>
   <source in="bd2" pages="55-56"/>
+  <places>
+    <place ref="perugia" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6623,6 +6815,9 @@ Og Roma var deres store Amme.
   <title>Spoletto</title>
   <firstline>Tre Dage endnu saa er jeg i Rom</firstline>
   <source in="bd2" pages="57-60"/>
+  <places>
+    <place ref="spoleto" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6719,6 +6914,10 @@ Gaaer op og ned som Hjulets Ring.
     <picture artwork="kunst/giambattista-bassi-cascata-delle-marmore-1820" />
   </pictures>
   <source in="bd2" pages="61-64"/>
+  <places>
+    <place ref="terni" relation="setting"/>
+    <place ref="marmore-falls" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6868,6 +7067,9 @@ Du gamle Tider igjen.
     <picture artwork="kunst/daniel-dupre-civita-castellana-1792-1809" />
   </pictures>
   <source in="bd2" pages="68-69"/>
+  <places>
+    <place ref="civita-castellana" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6999,6 +7201,9 @@ Hvordan Alting saa er - saa gaaer du dog nu i Rom.
     <picture artwork="eckersberg/christoffer-wilhelm-eckersberg-forum-rome-1814" />
   </pictures>
   <source in="bd2" pages="75-76"/>
+  <places>
+    <place ref="rome" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -7050,6 +7255,9 @@ Men tit jeg gaaer fra Høi til Høi, og seer og veed ei hvad.
   </subtitle>
   <firstline>O Verdensdronning, Roma, hvor stander du?</firstline>
   <source in="bd2" pages="77-84"/>
+  <places>
+    <place ref="rome" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -7229,6 +7437,9 @@ Med Konstens underfulde Billedkrone.
   <title>Dagligt Romerliv</title>
   <firstline>Her boe vi nu i Huset, med skrøbelig Altan</firstline>
   <source in="bd2" pages="85-89"/>
+  <places>
+    <place ref="rome" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -7336,6 +7547,9 @@ Og fulgte kun som Mester Guds evige Natur.
   </pictures>
   <source in="bd2" pages="90-98"/>
   <keywords>thorvaldsen</keywords>
+  <places>
+    <place ref="rome" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -7537,6 +7751,9 @@ Drømmer sødt om Evigheden.
   <title>Søndag i Rom</title>
   <firstline>Sund paa Havernes Høi er Luften, eensomt og stille</firstline>
   <source in="bd2" pages="99-101"/>
+  <places>
+    <place ref="rome" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -7589,6 +7806,10 @@ Størst dog tykkes mig det, som skjønnest glæder min Sjæl.
     <picture artwork="eckersberg/christoffer-wilhelm-eckersberg-andagt-peterskirken-1814" />
   </pictures>
   <source in="bd2" pages="102-103"/>
+  <places>
+    <place ref="st-peters-basilica" relation="subject" primary="true"/>
+    <place ref="vatican-city" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -7633,6 +7854,10 @@ Større over dit Gruus skal Verdenskirken opstaae.
     <picture src="ingemann20190123119-p1.jpg" type="illustration" year="1505-1525" museum="vatican" invnr="MV.40359.0.0">Giulio Romano (ca. 1499-1546) og Giovan Francesco Penni (ca. 1488-1528), efter forarbejder af Rafael (1483-1520): <i>Incoronazione della Vergine (Madonna di Monteluce)</i>, 1505-1525, olie på træ, 354 × 232 cm. Pinacoteca Vaticana.</picture>
   </pictures>
   <source in="bd2" pages="104-115"/>
+  <places>
+    <place ref="vatican-museums" relation="subject" primary="true"/>
+    <place ref="vatican-city" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -7872,6 +8097,9 @@ Og forgjæves ei blev den længste Pillegrimsfart.
   <title>De Cæsaris</title>
   <firstline>Er Dagen skjønt henrullet paa billedrige Sti</firstline>
   <source in="bd2" pages="116-121"/>
+  <places>
+    <place ref="rome" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -8011,6 +8239,9 @@ Vist grumt hans Bande hævner ham nu paa Neapels Vei.
   <title>Romerske Feste</title>
   <firstline>Hellig er hver Dag her, hver Martyr her har sit Alter</firstline>
   <source in="bd2" pages="122-124"/>
+  <places>
+    <place ref="rome" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -8061,6 +8292,10 @@ Det jeg skuer end her, om Jorden sprænges i Luft.
   <subtitle>[Alle Sjæles Fest.]</subtitle>
   <firstline>Monte Mario snart, og snart Treenighedsbjerget</firstline>
   <source in="bd2" pages="125-126"/>
+  <places>
+    <place ref="san-pietro-in-montorio" relation="subject" primary="true"/>
+    <place ref="rome" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -8238,6 +8473,9 @@ Saa sjunger Nordens Søn i Laurens Skygger,
   <title>Nonneindvielsen</title>
   <firstline>Nær ved Klostret jeg boer, hvor sig bag Sløret og Gittret</firstline>
   <source in="bd2" pages="133-139"/>
+  <places>
+    <place ref="rome" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -8362,6 +8600,9 @@ Bebuder Glæden, som er nær, med kjærlig Lov og Priis.
   <title>Pifferari</title>
   <firstline>Naar den glade Juul er nær</firstline>
   <source in="bd2" pages="140-143"/>
+  <places>
+    <place ref="rome" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -8445,6 +8686,9 @@ Juleglæde! Julesang!
   <title>Juul i Rom</title>
   <firstline>Sig barnligt Folket glæder til Skjønne Juletid</firstline>
   <source in="bd2" pages="144-149"/>
+  <places>
+    <place ref="rome" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -8579,6 +8823,9 @@ Hil være dig, Danmark, vor Moder!
   <title>Julemorgen</title>
   <firstline>Aarle, før Sol opstaaer, til St. Maria Maggiore</firstline>
   <source in="bd2" pages="150"/>
+  <places>
+    <place ref="rome" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -8610,6 +8857,9 @@ Dagens Konge er fød, vi har hans Herlighed seet.
   <title>Dansk Juleglæde</title>
   <firstline>Vel ei den danske Kirke i Rom sig hæve kan</firstline>
   <source in="bd2" pages="151"/>
+  <places>
+    <place ref="rome" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -8640,6 +8890,9 @@ Til Ven og Møe i Norden flyer glade Juleqvad.
   <subtitle>[Fra Rom til mine Elskede hjemme.]</subtitle>
   <firstline>Med Palmens Blad</firstline>
   <source in="bd2" pages="152-156"/>
+  <places>
+    <place ref="rome" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -8747,6 +9000,9 @@ Al Verden til Trøst og Glæde.
     <event>1819-01-06</event>
   </dates>
   <source in="bd2" pages="157-158"/>
+  <places>
+    <place ref="rome" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -8792,6 +9048,9 @@ Paa det barnlige Folk, som ei forarges derved.
     <event>1819-01-17</event>
   </dates>
   <source in="bd2" pages="159"/>
+  <places>
+    <place ref="rome" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -8826,6 +9085,9 @@ Bad om Lod han og Deel i Alforløserens Liv.
     <picture artwork="eckersberg/christoffer-wilhelm-eckersberg-sant-agnese-1815" />
   </pictures>
   <source in="bd2" pages="160-161"/>
+  <places>
+    <place ref="rome" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -8857,6 +9119,9 @@ Santa Agneses Aand bevare Sjælenes Fred.
   <title>Spansk Sørgehøitid i Rom</title>
   <firstline>Til Paladset Folket strømmer</firstline>
   <source in="bd2" pages="162-167"/>
+  <places>
+    <place ref="rome" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -8995,6 +9260,9 @@ Hvad begraves, skal opstaae.
   <title>Romersk Musik</title>
   <firstline>Trykker hellig Stad dog Verdenssorgen mig stundom</firstline>
   <source in="bd2" pages="168-169"/>
+  <places>
+    <place ref="rome" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -9043,6 +9311,9 @@ Svinge blandt Stjerner sig paa Tonevinger - til Liv.
   <subtitle>[Prima Communione.]</subtitle>
   <firstline>Hellige Børnefest idag mig venlig opbygger</firstline>
   <source in="bd2" pages="170-171"/>
+  <places>
+    <place ref="rome" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -9077,6 +9348,9 @@ Medens paa Kirkegulv nu beder knælende Folk.
     <event>1819-01-28</event>
   </dates>
   <source in="bd2" pages="172-174"/>
+  <places>
+    <place ref="rome" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -9148,6 +9422,14 @@ Vort Dannemark skal leve, Kong Fredrik leve skal!
   <title>Udvandringer fra Rom</title>
   <firstline>Er det Vinter end her, dog grønt er Bjerget som Dalen</firstline>
   <source in="bd2" pages="175-184"/>
+  <places>
+    <place ref="rome" relation="setting" primary="true"/>
+    <place ref="albano-laziale" relation="subject"/>
+    <place ref="ariccia" relation="subject"/>
+    <place ref="lake-nemi" relation="subject"/>
+    <place ref="monte-cavo" relation="mentioned"/>
+    <place ref="tivoli" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -9340,6 +9622,9 @@ Hvor Sorg og Glæde leger Skjul i barnlige Natur.
   <title>Carnevallet i Rom</title>
   <firstline>I blonde Signorer, som har hid Jer umaget</firstline>
   <source in="bd2" pages="187-245"/>
+  <places>
+    <place ref="rome" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
