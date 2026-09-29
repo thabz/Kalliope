@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="nielsencarl" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Carl</firstname>
+    <lastname>Nielsen</lastname>
+    <sortname>Nielsen, Carl</sortname>
+  </name>
+  <period>
+    <born>
+      <date>1813</date>
+    </born>
+    <dead>
+      <date>?</date>
+    </dead>
+  </period>
+  <literary-periods>dk-guldalder-og-romantik</literary-periods>
+  <identifiers>
+    <danskforfatterleksikon-dk>NCarlNielsenf1813</danskforfatterleksikon-dk>
+  </identifiers>
+</person>
