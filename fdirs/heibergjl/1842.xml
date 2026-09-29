@@ -26,6 +26,9 @@
   <title>Danmark</title>
   <firstline>Hvor Bögeskoven svæver</firstline>
   <source in="1842a" pages="1-6"/>
+  <places>
+    <place ref="denmark" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -133,6 +136,9 @@ Et Billed og en Sang.
     .
   </pictures>
   <source in="1842a" pages="7-9" facsimile-pages="21-23"/>
+  <places>
+    <place ref="second-christiansborg-palace" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -195,6 +201,9 @@ Medens Tusinder af Hjerter
     .
   </pictures>
   <source in="1842a" pages="10-12" facsimile-pages="24-30"/>
+  <places>
+    <place ref="frederiksberg-palace" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -258,6 +267,9 @@ Ved Mindet om Kong Frederik
   </pictures>
   <source in="1842a" pages="13-16" facsimile-pages="35-38"/>
   <keywords>brahe,christian4</keywords>
+  <places>
+    <place ref="round-tower-copenhagen" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -411,6 +423,9 @@ Flyttet ind til os fra Sundet.
     .
   </pictures>
   <source in="1842a" pages="17-37" facsimile-pages="43-63"/>
+  <places>
+    <place ref="frederiksborg-palace" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -982,6 +997,9 @@ För her jeg kommer atter.
     .
   </pictures>
   <source in="1842a" pages="38-39" facsimile-pages="64-65"/>
+  <places>
+    <place ref="church-of-our-lady-copenhagen" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1025,6 +1043,9 @@ Viid, en Genius har - og det gjör en Genius altid -
     .
   </pictures>
   <source in="1842a" pages="40-52" facsimile-pages="70-82"/>
+  <places>
+    <place ref="royal-danish-theatre" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1403,6 +1424,9 @@ Farvel, du Slöve! betænk mit Ord!
     .
   </pictures>
   <source in="1842a" pages="53-56" facsimile-pages="91-94"/>
+  <places>
+    <place ref="copenhagen" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1520,6 +1544,9 @@ Som drömmer i Menneskets Bryst.
   </pictures>
   <source in="1842a" pages="57-59" facsimile-pages="99-101"/>
   <keywords>homer,weyze</keywords>
+  <places>
+    <place ref="roskilde-cathedral" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1608,6 +1635,9 @@ Og hævder Aandens Værk.
   </pictures>
   <source in="1842a" pages="60-64" facsimile-pages="102-110"/>
   <keywords>christian4</keywords>
+  <places>
+    <place ref="borsen-copenhagen" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1740,6 +1770,9 @@ Paa den sorte Tavle ridsed han ind:
     .
   </pictures>
   <source in="1842a" pages="65-68" facsimile-pages="115-118"/>
+  <places>
+    <place ref="kronborg-castle" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1867,6 +1900,9 @@ Danmark har et godt Hotel.
     .
   </pictures>
   <source in="1842a" pages="69" facsimile-pages="123"/>
+  <places>
+    <place ref="amalienborg" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1902,6 +1938,9 @@ Men ved Stjernernes Lys i Kongernes sövnlöse Nætter
   </pictures>
   <source in="1842a" pages="70-72" facsimile-pages="124-130"/>
   <keywords>christian4</keywords>
+  <places>
+    <place ref="rosenborg-castle" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1996,6 +2035,9 @@ Jeg fortælle kan om Meget, om Meget jeg tie vil.
     .
   </pictures>
   <source in="1842a" pages="73-74" facsimile-pages="135-136"/>
+  <places>
+    <place ref="toldboden-copenhagen" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2052,6 +2094,9 @@ Hvor melodisk i Qveld flöiter en Nattergal.
     .
   </pictures>
   <source in="1842a" pages="75-88" facsimile-pages="141-154"/>
+  <places>
+    <place ref="charlottenlund-palace" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2443,6 +2488,9 @@ O Mennskebörn, som foragte min Skat!
     .
   </pictures>
   <source in="1842a" pages="89-92" facsimile-pages="159-162"/>
+  <places>
+    <place ref="sorgenfri-palace" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2558,6 +2606,9 @@ Naar <i>Amalia</i> hos jer fornemmer
     .
   </pictures>
   <source in="1842a" pages="93-97" facsimile-pages="167-171"/>
+  <places>
+    <place ref="vallo-castle" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2693,6 +2744,9 @@ Mig og min Mand.
   </pictures>
   <!-- TODO:Tjek at `` bliver til det rigtige regn. Og at '' også bliver passende. -->
   <source in="1842a" pages="98-101" facsimile-pages="172-179"/>
+  <places>
+    <place ref="mons-klint" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2797,6 +2851,9 @@ Om Issen krandset af Jetten <i>Grön</i>.
   </pictures>
   <source in="1842a" pages="102-104" facsimile-pages="180-188"/>
   <keywords>balladestrofe</keywords>
+  <places>
+    <place ref="goose-tower" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2908,6 +2965,9 @@ Som Pant paa Kong Volmers Ord.
     .
   </pictures>
   <source in="1842b" pages="1-4" facsimile-pages="193-196"/>
+  <places>
+    <place ref="nikolaj-church" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3016,6 +3076,9 @@ Sanct Nicolai!
     .
   </pictures>
   <source in="1842b" pages="5-8" facsimile-pages="201-204"/>
+  <places>
+    <place ref="thorvaldsen-museum" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3113,6 +3176,9 @@ Nu, saa pröv den at forstaae!
     .
   </pictures>
   <source in="1842b" pages="9-12" facsimile-pages="209-212"/>
+  <places>
+    <place ref="bredgade-copenhagen" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

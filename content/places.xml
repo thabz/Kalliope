@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <places>
+  <place id="aarhus">
+    <name>Aarhus</name>
+    <wikidata>Q25319</wikidata>
+    <type>city</type>
+    <alias>Århus</alias>
+    <alias>Aarhuus</alias>
+    <parent ref="jutland"/>
+  </place>
   <place id="adriatic-sea">
     <name>Adriaterhavet</name>
     <canonical-name>Adriatic Sea</canonical-name>
@@ -7,6 +15,12 @@
     <type>sea</type>
     <alias>Adria</alias>
     <alias>Mare Adriatico</alias>
+  </place>
+  <place id="africa">
+    <name>Afrika</name>
+    <canonical-name>Africa</canonical-name>
+    <wikidata>Q15</wikidata>
+    <type>continent</type>
   </place>
   <place id="albano-laziale">
     <name>Albano Laziale</name>
@@ -30,6 +44,13 @@
     <wikidata>Q80563</wikidata>
     <type>town/comune</type>
     <parent ref="italy"/>
+  </place>
+  <place id="amalienborg">
+    <name>Amalienborg</name>
+    <wikidata>Q211053</wikidata>
+    <type>palace complex</type>
+    <alias>Kongens Palais</alias>
+    <parent ref="copenhagen"/>
   </place>
   <place id="apennines">
     <name>Apenninerne</name>
@@ -92,6 +113,12 @@
     <wikidata>Q70</wikidata>
     <type>city</type>
   </place>
+  <place id="biarritz">
+    <name>Biarritz</name>
+    <wikidata>Q132790</wikidata>
+    <type>city</type>
+    <alias>Biarrits</alias>
+  </place>
   <place id="bologna">
     <name>Bologna</name>
     <wikidata>Q1891</wikidata>
@@ -103,6 +130,19 @@
     <wikidata>Q159685</wikidata>
     <type>town/comune</type>
     <parent ref="italy"/>
+  </place>
+  <place id="borsen-copenhagen">
+    <name>Børsen</name>
+    <wikidata>Q326528</wikidata>
+    <type>building</type>
+    <alias>Börsen</alias>
+    <parent ref="copenhagen"/>
+  </place>
+  <place id="bredgade-copenhagen">
+    <name>Bredgade</name>
+    <wikidata>Q3432537</wikidata>
+    <type>street</type>
+    <parent ref="copenhagen"/>
   </place>
   <place id="brenta-river">
     <name>Brenta</name>
@@ -124,6 +164,19 @@
     <type>castle</type>
     <alias>Hohenstein</alias>
   </place>
+  <place id="burgos">
+    <name>Burgos</name>
+    <wikidata>Q9580</wikidata>
+    <type>city</type>
+    <parent ref="spain"/>
+  </place>
+  <place id="cadiz">
+    <name>Cádiz</name>
+    <wikidata>Q15682</wikidata>
+    <type>city</type>
+    <alias>Cadiz</alias>
+    <parent ref="spain"/>
+  </place>
   <place id="capri">
     <name>Capri</name>
     <wikidata>Q173292</wikidata>
@@ -135,6 +188,13 @@
     <wikidata>Q58477</wikidata>
     <type>town/comune</type>
     <parent ref="italy"/>
+  </place>
+  <place id="cartagena">
+    <name>Cartagena</name>
+    <wikidata>Q162615</wikidata>
+    <type>city</type>
+    <parent ref="spain"/>
+    <note>Cartagena, Murcia, Spain.</note>
   </place>
   <place id="castel-gandolfo">
     <name>Castel Gandolfo</name>
@@ -155,6 +215,14 @@
     <wikidata>Q3933</wikidata>
     <type>city</type>
   </place>
+  <place id="charlottenlund-palace">
+    <name>Charlottenlund Slot</name>
+    <canonical-name>Charlottenlund Palace</canonical-name>
+    <wikidata>Q1066641</wikidata>
+    <type>palace</type>
+    <alias>Charlottenlund</alias>
+    <parent ref="denmark"/>
+  </place>
   <place id="christiansdal">
     <name>Christiansdal</name>
     <canonical-name>Dalum Abbey</canonical-name>
@@ -164,6 +232,15 @@
     <alias>Christiansdal</alias>
     <parent ref="odense"/>
     <note>Christiansdal er et historisk navn knyttet til Dalum.</note>
+  </place>
+  <place id="church-of-our-lady-copenhagen">
+    <name>Vor Frue Kirke</name>
+    <canonical-name>Church of Our Lady</canonical-name>
+    <wikidata>Q1451811</wikidata>
+    <type>cathedral/church</type>
+    <alias>Frue-Kirke</alias>
+    <alias>Københavns Domkirke</alias>
+    <parent ref="copenhagen"/>
   </place>
   <place id="cicero-tomb">
     <name>Ciceros grav</name>
@@ -185,6 +262,15 @@
     <wikidata>Q1748</wikidata>
     <type>city</type>
     <alias>Kiøbenhavn</alias>
+    <alias>Kjöbenhavn</alias>
+    <parent ref="denmark"/>
+  </place>
+  <place id="cordoba">
+    <name>Córdoba</name>
+    <wikidata>Q5818</wikidata>
+    <type>city</type>
+    <alias>Cordoba</alias>
+    <parent ref="spain"/>
   </place>
   <place id="cumae">
     <name>Cumae</name>
@@ -198,6 +284,19 @@
     <name>Darmstadt</name>
     <wikidata>Q2973</wikidata>
     <type>city</type>
+  </place>
+  <place id="denmark">
+    <name>Danmark</name>
+    <canonical-name>Denmark</canonical-name>
+    <wikidata>Q35</wikidata>
+    <type>country</type>
+  </place>
+  <place id="djurgarden">
+    <name>Djurgården</name>
+    <wikidata>Q831527</wikidata>
+    <type>island/urban district</type>
+    <alias>Diurgaarden</alias>
+    <parent ref="stockholm"/>
   </place>
   <place id="drammen">
     <name>Drammen</name>
@@ -278,6 +377,22 @@
     <wikidata>Q12312236</wikidata>
     <type>church</type>
   </place>
+  <place id="frederiksberg-palace">
+    <name>Frederiksberg Slot</name>
+    <canonical-name>Frederiksberg Palace</canonical-name>
+    <wikidata>Q665954</wikidata>
+    <type>palace</type>
+    <alias>Fredriksberg</alias>
+    <parent ref="copenhagen"/>
+  </place>
+  <place id="frederiksborg-palace">
+    <name>Frederiksborg Slot</name>
+    <canonical-name>Frederiksborg Palace</canonical-name>
+    <wikidata>Q226103</wikidata>
+    <type>palace</type>
+    <alias>Frederiksborg</alias>
+    <parent ref="denmark"/>
+  </place>
   <place id="funen">
     <name>Fyn</name>
     <canonical-name>Funen</canonical-name>
@@ -323,12 +438,22 @@
     <wikidata>Q474619</wikidata>
     <type>village</type>
   </place>
+  <place id="goose-tower">
+    <name>Gåsetårnet</name>
+    <canonical-name>Goose Tower</canonical-name>
+    <wikidata>Q12314777</wikidata>
+    <type>tower</type>
+    <alias>Valdemars Taarn</alias>
+    <parent ref="denmark"/>
+  </place>
   <place id="gothenburg">
     <name>Göteborg</name>
     <canonical-name>Gothenburg</canonical-name>
     <wikidata>Q25287</wikidata>
     <type>city</type>
     <alias>Gothenborg</alias>
+    <alias>Gøtheborg</alias>
+    <parent ref="sweden"/>
   </place>
   <place id="gotthard-pass">
     <name>Sankt Gotthard-passet</name>
@@ -337,6 +462,28 @@
     <type>mountain pass</type>
     <alias>St. Gottard</alias>
     <alias>St. Gotthard</alias>
+  </place>
+  <place id="grafsnas-castle">
+    <name>Gräfsnäs slot</name>
+    <canonical-name>Gräfsnäs Castle</canonical-name>
+    <wikidata>Q10509704</wikidata>
+    <type>castle ruin</type>
+    <alias>Gräfsnäs</alias>
+    <parent ref="sweden"/>
+  </place>
+  <place id="granada">
+    <name>Granada</name>
+    <wikidata>Q8810</wikidata>
+    <type>city</type>
+    <parent ref="spain"/>
+  </place>
+  <place id="grathe-heath">
+    <name>Grathe Hede</name>
+    <canonical-name>Grathe Heath</canonical-name>
+    <wikidata>Q74443959</wikidata>
+    <type>heath/historic site</type>
+    <alias>Grathehede</alias>
+    <parent ref="jutland"/>
   </place>
   <place id="great-belt">
     <name>Storebælt</name>
@@ -354,6 +501,13 @@
     <alias>Groenland</alias>
     <alias>Kalaallit Nunaat</alias>
   </place>
+  <place id="grenaa">
+    <name>Grenaa</name>
+    <wikidata>Q3619316</wikidata>
+    <type>town</type>
+    <alias>Grennaae</alias>
+    <parent ref="jutland"/>
+  </place>
   <place id="grimsel-pass">
     <name>Grimselpasset</name>
     <canonical-name>Grimsel Pass</canonical-name>
@@ -365,6 +519,22 @@
     <name>Grindelwald</name>
     <wikidata>Q64004</wikidata>
     <type>municipality</type>
+  </place>
+  <place id="gudenaa">
+    <name>Gudenå</name>
+    <wikidata>Q739513</wikidata>
+    <type>river</type>
+    <alias>Gudenaae</alias>
+    <alias>Gudenåen</alias>
+    <parent ref="jutland"/>
+  </place>
+  <place id="haga-park">
+    <name>Hagaparken</name>
+    <canonical-name>Haga Park</canonical-name>
+    <wikidata>Q653726</wikidata>
+    <type>park</type>
+    <alias>Haga</alias>
+    <parent ref="stockholm"/>
   </place>
   <place id="hamburg">
     <name>Hamborg</name>
@@ -430,6 +600,12 @@
     <alias>Großes Fass</alias>
     <parent ref="heidelberg"/>
   </place>
+  <place id="helsingborg">
+    <name>Helsingborg</name>
+    <wikidata>Q25411</wikidata>
+    <type>city</type>
+    <parent ref="sweden"/>
+  </place>
   <place id="hindsgavl">
     <name>Hindsgavl</name>
     <wikidata>Q10524238</wikidata>
@@ -481,6 +657,22 @@
     <type>mountain</type>
     <alias>Jomfruen</alias>
   </place>
+  <place id="jutland">
+    <name>Jylland</name>
+    <canonical-name>Jutland</canonical-name>
+    <wikidata>Q25389</wikidata>
+    <type>peninsula/region</type>
+    <parent ref="denmark"/>
+  </place>
+  <place id="kalo-castle">
+    <name>Kalø Slot</name>
+    <canonical-name>Kalø Castle</canonical-name>
+    <wikidata>Q753714</wikidata>
+    <type>castle ruin</type>
+    <alias>Kaløe Slot</alias>
+    <alias>Kalø Slotsruin</alias>
+    <parent ref="jutland"/>
+  </place>
   <place id="karlsruhe">
     <name>Karlsruhe</name>
     <wikidata>Q1040</wikidata>
@@ -496,6 +688,12 @@
     <name>Kiel</name>
     <wikidata>Q1707</wikidata>
     <type>city</type>
+  </place>
+  <place id="kinnekulle">
+    <name>Kinnekulle</name>
+    <wikidata>Q1355999</wikidata>
+    <type>plateau/mountain</type>
+    <parent ref="sweden"/>
   </place>
   <place id="kniebis">
     <name>Kniebis</name>
@@ -531,6 +729,14 @@
     <canonical-name>Kronborg Castle</canonical-name>
     <wikidata>Q189358</wikidata>
     <type>castle</type>
+    <parent ref="denmark"/>
+  </place>
+  <place id="kullaberg">
+    <name>Kullaberg</name>
+    <wikidata>Q1791521</wikidata>
+    <type>peninsula/nature reserve</type>
+    <alias>Kullen</alias>
+    <parent ref="sweden"/>
   </place>
   <place id="la-scala">
     <name>Teatro alla Scala</name>
@@ -546,6 +752,15 @@
     <type>suburb/settlement</type>
     <alias>Storta</alias>
     <parent ref="rome"/>
+  </place>
+  <place id="lacko-castle">
+    <name>Läckö Slot</name>
+    <canonical-name>Läckö Castle</canonical-name>
+    <wikidata>Q935973</wikidata>
+    <type>castle</type>
+    <alias>Leckø</alias>
+    <alias>Läckö</alias>
+    <parent ref="sweden"/>
   </place>
   <place id="lake-albano">
     <name>Albanersøen</name>
@@ -625,6 +840,15 @@
     <wikidata>Q6761</wikidata>
     <type>city</type>
   </place>
+  <place id="loeberoed-castle">
+    <name>Löberöds slott</name>
+    <canonical-name>Löberöd Castle</canonical-name>
+    <wikidata>Q6711332</wikidata>
+    <type>castle/manor</type>
+    <alias>Løberod</alias>
+    <alias>Löberöd</alias>
+    <parent ref="sweden"/>
+  </place>
   <place id="loevenborg">
     <name>Løvenborg</name>
     <wikidata>Q12325428</wikidata>
@@ -660,6 +884,12 @@
     <wikidata>Q3920</wikidata>
     <type>city</type>
   </place>
+  <place id="madrid">
+    <name>Madrid</name>
+    <wikidata>Q2807</wikidata>
+    <type>city</type>
+    <parent ref="spain"/>
+  </place>
   <place id="main-river">
     <name>Main</name>
     <wikidata>Q1670</wikidata>
@@ -669,6 +899,13 @@
     <name>Mainz</name>
     <wikidata>Q1720</wikidata>
     <type>city</type>
+  </place>
+  <place id="malaga">
+    <name>Málaga</name>
+    <wikidata>Q8851</wikidata>
+    <type>city</type>
+    <alias>Malaga</alias>
+    <parent ref="spain"/>
   </place>
   <place id="mannheim">
     <name>Mannheim</name>
@@ -733,11 +970,26 @@
     <type>mountain</type>
     <alias>Munken</alias>
   </place>
+  <place id="mons-klint">
+    <name>Møns Klint</name>
+    <wikidata>Q1517331</wikidata>
+    <type>cliff</type>
+    <alias>Möens Klint</alias>
+    <parent ref="denmark"/>
+  </place>
   <place id="monte-cavo">
     <name>Monte Cavo</name>
     <wikidata>Q1729630</wikidata>
     <type>mountain</type>
     <alias>Albanerbjerg</alias>
+  </place>
+  <place id="morocco">
+    <name>Marokko</name>
+    <canonical-name>Morocco</canonical-name>
+    <wikidata>Q1028</wikidata>
+    <type>country</type>
+    <alias>Morocco</alias>
+    <parent ref="africa"/>
   </place>
   <place id="mount-circeo">
     <name>Monte Circeo</name>
@@ -746,6 +998,12 @@
     <alias>Circes Tryllebjerg</alias>
     <alias>Circello</alias>
     <parent ref="italy"/>
+  </place>
+  <place id="murcia">
+    <name>Murcia</name>
+    <wikidata>Q12225</wikidata>
+    <type>city</type>
+    <parent ref="spain"/>
   </place>
   <place id="naesbyholm">
     <name>Næsbyholm</name>
@@ -771,6 +1029,15 @@
     <name>Neuwied</name>
     <wikidata>Q3967</wikidata>
     <type>city</type>
+  </place>
+  <place id="nikolaj-church">
+    <name>Sankt Nikolaj Kirke</name>
+    <canonical-name>Nikolaj, Copenhagen Contemporary Art Center</canonical-name>
+    <wikidata>Q747844</wikidata>
+    <type>former church/tower</type>
+    <alias>Nicolai-Taarn</alias>
+    <alias>Nikolaj Tårn</alias>
+    <parent ref="copenhagen"/>
   </place>
   <place id="norderhov">
     <name>Norderhov</name>
@@ -812,6 +1079,14 @@
     <type>fjord</type>
     <alias>Christianiafiord</alias>
     <alias>Christianiafjorden</alias>
+  </place>
+  <place id="ostra-karup">
+    <name>Östra Karup</name>
+    <wikidata>Q2056831</wikidata>
+    <type>locality</type>
+    <alias>Karup</alias>
+    <parent ref="sweden"/>
+    <note>Blichers Karup på Sverigesrejsen.</note>
   </place>
   <place id="ottensen">
     <name>Ottensen</name>
@@ -941,11 +1216,26 @@
     <alias>Roma</alias>
     <parent ref="italy"/>
   </place>
+  <place id="romeleklint">
+    <name>Romeleklint</name>
+    <wikidata>Q10656546</wikidata>
+    <type>peak</type>
+    <alias>Rommeliklint</alias>
+    <parent ref="sweden"/>
+  </place>
   <place id="ronciglione">
     <name>Ronciglione</name>
     <wikidata>Q177695</wikidata>
     <type>town/comune</type>
     <parent ref="italy"/>
+  </place>
+  <place id="rosenborg-castle">
+    <name>Rosenborg Slot</name>
+    <canonical-name>Rosenborg Castle</canonical-name>
+    <wikidata>Q206101</wikidata>
+    <type>castle</type>
+    <alias>Rosenborg</alias>
+    <parent ref="copenhagen"/>
   </place>
   <place id="roskilde">
     <name>Roskilde</name>
@@ -959,7 +1249,25 @@
     <wikidata>Q209705</wikidata>
     <type>cathedral</type>
     <alias>Roeskilde Domkirke</alias>
+    <alias>Roeskilde-Domkirke</alias>
     <parent ref="roskilde"/>
+  </place>
+  <place id="round-tower-copenhagen">
+    <name>Rundetårn</name>
+    <canonical-name>Rundetaarn</canonical-name>
+    <wikidata>Q1140534</wikidata>
+    <type>tower/observatory</type>
+    <alias>Rundetaarn</alias>
+    <parent ref="copenhagen"/>
+  </place>
+  <place id="royal-danish-theatre">
+    <name>Det Kongelige Teater</name>
+    <canonical-name>Royal Danish Theatre</canonical-name>
+    <wikidata>Q607681</wikidata>
+    <type>theatre</type>
+    <alias>Skuespilhuset</alias>
+    <parent ref="copenhagen"/>
+    <note>Authority for the theatre named in Heiberg's 1842 vignette.</note>
   </place>
   <place id="rubicon">
     <name>Rubicon</name>
@@ -992,6 +1300,13 @@
     <type>city</type>
     <parent ref="italy"/>
   </place>
+  <place id="samso">
+    <name>Samsø</name>
+    <wikidata>Q216422</wikidata>
+    <type>island</type>
+    <alias>Samsøe</alias>
+    <parent ref="denmark"/>
+  </place>
   <place id="san-pietro-in-montorio">
     <name>San Pietro in Montorio</name>
     <wikidata>Q1258576</wikidata>
@@ -1011,6 +1326,23 @@
     <type>island</type>
     <parent ref="lake-lauerz"/>
   </place>
+  <place id="second-christiansborg-palace">
+    <name>Det andet Christiansborg</name>
+    <canonical-name>Christiansborg Palace (2nd)</canonical-name>
+    <wikidata>Q5110635</wikidata>
+    <type>palace/building</type>
+    <alias>Christiansborg</alias>
+    <parent ref="copenhagen"/>
+    <note>Den bygning der eksisterede i 1842; brændte 1884.</note>
+  </place>
+  <place id="seville">
+    <name>Sevilla</name>
+    <canonical-name>Seville</canonical-name>
+    <wikidata>Q8717</wikidata>
+    <type>city</type>
+    <alias>Seville</alias>
+    <parent ref="spain"/>
+  </place>
   <place id="siena">
     <name>Siena</name>
     <wikidata>Q2751</wikidata>
@@ -1024,12 +1356,26 @@
     <type>parish</type>
     <note>Sognet bruges som stabil entitet for digtets Sigersted.</note>
   </place>
+  <place id="sigtuna">
+    <name>Sigtuna</name>
+    <wikidata>Q3183470</wikidata>
+    <type>town</type>
+    <parent ref="sweden"/>
+  </place>
   <place id="simplon-pass">
     <name>Simplonpasset</name>
     <canonical-name>Simplon Pass</canonical-name>
     <wikidata>Q471166</wikidata>
     <type>mountain pass</type>
     <alias>Simplon</alias>
+  </place>
+  <place id="skokloster-castle">
+    <name>Skokloster Slot</name>
+    <canonical-name>Skokloster Castle</canonical-name>
+    <wikidata>Q1891413</wikidata>
+    <type>castle</type>
+    <alias>Skogkloster</alias>
+    <parent ref="sweden"/>
   </place>
   <place id="slagelse">
     <name>Slagelse</name>
@@ -1048,6 +1394,14 @@
     <wikidata>Q473434</wikidata>
     <type>castle</type>
     <parent ref="als"/>
+  </place>
+  <place id="sorgenfri-palace">
+    <name>Sorgenfri Slot</name>
+    <canonical-name>Sorgenfri Palace</canonical-name>
+    <wikidata>Q1968159</wikidata>
+    <type>palace</type>
+    <alias>Sorgenfri</alias>
+    <parent ref="denmark"/>
   </place>
   <place id="soro">
     <name>Sorø</name>
@@ -1069,6 +1423,13 @@
     <type>town/comune</type>
     <alias>Sorrent</alias>
     <parent ref="italy"/>
+  </place>
+  <place id="spain">
+    <name>Spanien</name>
+    <canonical-name>Spain</canonical-name>
+    <wikidata>Q29</wikidata>
+    <type>country</type>
+    <alias>España</alias>
   </place>
   <place id="spoleto">
     <name>Spoleto</name>
@@ -1093,6 +1454,12 @@
     <alias>San Pietro in Vaticano</alias>
     <parent ref="vatican-city"/>
   </place>
+  <place id="stockholm">
+    <name>Stockholm</name>
+    <wikidata>Q1754</wikidata>
+    <type>city</type>
+    <parent ref="sweden"/>
+  </place>
   <place id="strasbourg">
     <name>Strasbourg</name>
     <wikidata>Q6602</wikidata>
@@ -1112,11 +1479,27 @@
     <type>city</type>
     <alias>Sviinborg</alias>
   </place>
+  <place id="sweden">
+    <name>Sverige</name>
+    <canonical-name>Sweden</canonical-name>
+    <wikidata>Q34</wikidata>
+    <type>country</type>
+    <alias>Sverrig</alias>
+    <alias>Svithiod</alias>
+  </place>
   <place id="taasinge">
     <name>Tåsinge</name>
     <wikidata>Q402692</wikidata>
     <type>island</type>
     <alias>Thorsing</alias>
+  </place>
+  <place id="tangier">
+    <name>Tanger</name>
+    <canonical-name>Tangier</canonical-name>
+    <wikidata>Q126148</wikidata>
+    <type>city</type>
+    <alias>Tangier</alias>
+    <parent ref="morocco"/>
   </place>
   <place id="terni">
     <name>Terni</name>
@@ -1130,10 +1513,32 @@
     <alias>Teracina</alias>
     <parent ref="italy"/>
   </place>
+  <place id="thorvaldsen-museum">
+    <name>Thorvaldsens Museum</name>
+    <canonical-name>Thorvaldsen Museum</canonical-name>
+    <wikidata>Q1992413</wikidata>
+    <type>museum</type>
+    <parent ref="copenhagen"/>
+  </place>
   <place id="tivoli">
     <name>Tivoli</name>
     <wikidata>Q159605</wikidata>
     <type>town</type>
+  </place>
+  <place id="toldboden-copenhagen">
+    <name>Københavns Toldbod</name>
+    <canonical-name>Toldboden</canonical-name>
+    <wikidata>Q12323412</wikidata>
+    <type>former customs area/neighborhood</type>
+    <alias>Toldboden</alias>
+    <alias>Kjöbenhavns Toldbod</alias>
+    <parent ref="copenhagen"/>
+  </place>
+  <place id="toledo">
+    <name>Toledo</name>
+    <wikidata>Q5836</wikidata>
+    <type>city</type>
+    <parent ref="spain"/>
   </place>
   <place id="trieste">
     <name>Trieste</name>
@@ -1141,6 +1546,13 @@
     <type>city</type>
     <alias>Triest</alias>
     <parent ref="italy"/>
+  </place>
+  <place id="trollhattan">
+    <name>Trollhättan</name>
+    <wikidata>Q54339</wikidata>
+    <type>city</type>
+    <alias>Trolhättan</alias>
+    <parent ref="sweden"/>
   </place>
   <place id="tusculum">
     <name>Tusculum</name>
@@ -1155,16 +1567,40 @@
     <alias>Ufnau</alias>
     <parent ref="lake-zurich"/>
   </place>
+  <place id="ulriksdal-palace">
+    <name>Ulriksdal Slot</name>
+    <canonical-name>Ulriksdal Palace</canonical-name>
+    <wikidata>Q176860</wikidata>
+    <type>palace</type>
+    <alias>Ulriksdal</alias>
+    <parent ref="stockholm"/>
+  </place>
   <place id="unterwalden">
     <name>Unterwalden</name>
     <wikidata>Q214069</wikidata>
     <type>historical region</type>
+  </place>
+  <place id="uppsala">
+    <name>Uppsala</name>
+    <wikidata>Q25286</wikidata>
+    <type>city</type>
+    <alias>Upsala</alias>
+    <parent ref="sweden"/>
   </place>
   <place id="uri">
     <name>Uri</name>
     <canonical-name>Canton of Uri</canonical-name>
     <wikidata>Q12404</wikidata>
     <type>canton</type>
+  </place>
+  <place id="vallo-castle">
+    <name>Vallø Slot</name>
+    <canonical-name>Vallø Castle</canonical-name>
+    <wikidata>Q1486211</wikidata>
+    <type>castle</type>
+    <alias>Vallö-Kloster</alias>
+    <alias>Vallø Stift</alias>
+    <parent ref="denmark"/>
   </place>
   <place id="vatican-city">
     <name>Vatikanstaten</name>
@@ -1182,12 +1618,26 @@
     <alias>Musei Vaticani</alias>
     <parent ref="vatican-city"/>
   </place>
+  <place id="vattern">
+    <name>Vättern</name>
+    <wikidata>Q188195</wikidata>
+    <type>lake</type>
+    <alias>Vetteren</alias>
+    <parent ref="sweden"/>
+  </place>
   <place id="velletri">
     <name>Velletri</name>
     <wikidata>Q189236</wikidata>
     <type>town/comune</type>
     <alias>Veletri</alias>
     <parent ref="italy"/>
+  </place>
+  <place id="ven">
+    <name>Ven</name>
+    <wikidata>Q509682</wikidata>
+    <type>island</type>
+    <alias>Hven</alias>
+    <alias>Hveen</alias>
   </place>
   <place id="venice">
     <name>Venedig</name>
@@ -1205,6 +1655,12 @@
     <alias>Vesuvio</alias>
     <alias>Vesuvius</alias>
     <parent ref="italy"/>
+  </place>
+  <place id="viborg">
+    <name>Viborg</name>
+    <wikidata>Q21176</wikidata>
+    <type>city</type>
+    <parent ref="jutland"/>
   </place>
   <place id="vierlande">
     <name>Vierlande</name>
@@ -1234,6 +1690,14 @@
     <wikidata>Q572191</wikidata>
     <type>river</type>
     <parent ref="italy"/>
+  </place>
+  <place id="vreta-abbey">
+    <name>Vreta kloster</name>
+    <canonical-name>Vreta Abbey</canonical-name>
+    <wikidata>Q860536</wikidata>
+    <type>abbey ruin</type>
+    <alias>Wreta</alias>
+    <parent ref="sweden"/>
   </place>
   <place id="wiesbaden">
     <name>Wiesbaden</name>
