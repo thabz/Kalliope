@@ -639,7 +639,11 @@ const regexps = [
     regexp: /\s;\s*$/m,
     ignorelangs: ['fr'],
   },
-  { testName: 'lll', regexp: /lll/, whitelist: [/Allliebe/] },
+  {
+    testName: 'lll',
+    regexp: /lll/,
+    whitelist: [/allliebe/i, /chrystalllabyrinth/i],
+  },
   { testName: 'comma-semicolon', regexp: /,;/ },
   { testName: 'comma-period', regexp: /,\./ },
   {
