@@ -287,6 +287,9 @@ Det skal vel stande stærkt og helt
   <subtitle>(1847.)</subtitle>
   <firstline>Vintren svøber nu sin Sølvmors Kappe</firstline>
   <source pages="10-11"/>
+  <places>
+    <place ref="paris" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -333,6 +336,9 @@ Dem derhjemme Hilsen fra Paris.
   <subtitle>(1847.)</subtitle>
   <firstline>Velkomne, Præster fra Naturens Kirke</firstline>
   <source pages="11-12"/>
+  <places>
+    <place ref="roskilde-cathedral" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -508,6 +514,9 @@ Paa tvende Piller: Lund og Kjøbenhavn?
   <subtitle>(1851.)</subtitle>
   <firstline>Kom, de første Toner vil vi skikke</firstline>
   <source pages="17"/>
+  <places>
+    <place ref="charlottenlund" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -538,6 +547,9 @@ Binder os til Brødrene i Lund.
   <title><num>2.</num>Hvor Nordhavet bruser om stensat Kyst</title>
   <firstline>Hvor Nordhavet bruser om stensat Kyst</firstline>
   <source pages="18"/>
+  <places>
+    <place ref="charlottenlund" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -571,6 +583,9 @@ Det trofaste Folk paa Norges Kyst!
   <title><num>3.</num>Men over disse Brødre, imod hvis Favn vi gaae</title>
   <firstline>Men over disse Brødre, imod hvis Favn vi gaae</firstline>
   <source pages="19"/>
+  <places>
+    <place ref="charlottenlund" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -649,6 +664,9 @@ Og vi har Liv og Blod.
   <title><num>2.</num>Hilsen til Norge</title>
   <firstline>Hil Dig paa egen Odelsgrund</firstline>
   <source pages="21-22"/>
+  <places>
+    <place ref="norway" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -691,6 +709,13 @@ Gaae mod Fremtidens Skæbner vi kjække!
   <title><num>3.</num>En Reise</title>
   <firstline>Fra Livets Toldbod nu rask ombord</firstline>
   <source pages="23-26"/>
+  <places>
+    <place ref="gothenburg" relation="setting"/>
+    <place ref="oslo" relation="setting" primary="true"/>
+    <place ref="oscarshall" relation="setting"/>
+    <place ref="krokkleiva" relation="setting"/>
+    <place ref="ringerike" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -896,6 +921,9 @@ End: Gud velsign Kong Fredrik og hans Folk!
   <title><num>1.</num>Der er et Land — imellem tvende Have</title>
   <firstline>Der er et Land — imellem tvende Have</firstline>
   <source pages="29-30"/>
+  <places>
+    <place ref="duchy-schleswig" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2132,6 +2160,9 @@ Med ham det Liv, hvis Glæde aldrig falmer!
   <title>Slaget ved Slesvig</title>
   <firstline>Paaskeklokken kimed mildt</firstline>
   <source pages="71-72"/>
+  <places>
+    <place ref="schleswig" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2456,6 +2487,9 @@ Pege mod Morgenrøden.
   <title>Slaget ved Fredericia</title>
   <firstline>Følg med! Der nærme Toner sig, I fatte</firstline>
   <source pages="83-111"/>
+  <places>
+    <place ref="fredericia" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3806,6 +3840,9 @@ Naar Nødens Time slaaer, vil Aanden komme!
   <title>Oscarshal</title>
   <firstline>Hvor Klipperammen fatter om Frognerkilens Speil</firstline>
   <source pages="133-134"/>
+  <places>
+    <place ref="oscarshall" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
