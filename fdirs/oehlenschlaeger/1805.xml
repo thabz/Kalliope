@@ -6093,6 +6093,9 @@ At sig Oldtid kan blande med Nutid og Nutid med Oldtid,
   <title>Roeskilde Landevey</title>
   <firstline>Langsomt, strengt og lige den brede Kongevey fremgaaer</firstline>
   <source pages="277"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <places>
+    <place ref="roskilde" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6112,6 +6115,9 @@ Helligt, i Midnattens Stund, først beskygger den lampede Hvælving,
   <title>Issefiorden</title>
   <firstline>Du gamle, sølvblaa, stille, klare</firstline>
   <source pages="278-280"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <places>
+    <place ref="isefjord" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6171,6 +6177,9 @@ Du gamle, sølvblaa, stille, klare
   <firstline>Alt rasler Nøglen i de tunge Døre</firstline>
   <source pages="281-288"><i>Poetiske Skrifter</i> (1805), I.</source>
   <keywords>terziner</keywords>
+  <places>
+    <place ref="roskilde-cathedral" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6429,6 +6438,9 @@ Havde Chinesernes Thee ey fortrængt dig, vort straalende Miødhorn!
   <title>Ringsted</title>
   <firstline>Sildig kom vi med Slud til Ringsted; i dæmrende Kammer</firstline>
   <source pages="292-293"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <places>
+    <place ref="ringsted" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6452,6 +6464,9 @@ Ak men den grusomme Vært! naar af Kradsningen kied han er bleven
   <title>Sigersted</title>
   <firstline>Uafladelig føg for Vinden den taagede Støvregn</firstline>
   <source pages="294-296"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <places>
+    <place ref="sigersted" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6545,6 +6560,9 @@ Eos vor Dronning har meldt! Vil I vaagne, Smaablomster og Fugle!
   <title>Sorøe</title>
   <firstline>Venligt, Sorøe! dit Aasyn leer, blyfærdig du titter</firstline>
   <source pages="300-301"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <places>
+    <place ref="soro" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6707,6 +6725,9 @@ Hvergang Blomsten Engen spætter,
   <title>Slagelse</title>
   <firstline>Hungrige kom vi til Slagelse Bye; hvor nu er et Herberg</firstline>
   <source pages="307"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <places>
+    <place ref="slagelse" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6726,6 +6747,9 @@ Viis var Indretningen giort, jeg Vertindens Sindrighed priste.
   <title>Corsøer</title>
   <firstline>Her er altsaa den Bye hvor Jens Baggesen fødtes? Hvor liden!</firstline>
   <source pages="308-309"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <places>
+    <place ref="korsor" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6751,6 +6775,9 @@ Underlig blandede Bye, uagtet din Svaghed og Brusen
   <title>Corsøers Fæstning</title>
   <firstline>Bygningen hist, hvor Kanoner er lagt, var fordum et Kloster</firstline>
   <source pages="310"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <places>
+    <place ref="korsor" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6768,6 +6795,9 @@ Saadan gaaer Humaniteten frem! I barbariske Tider
   <title>Corsøers Kirke</title>
   <firstline>Ind i Kirken jeg treen med Forundring, thi Loftet foroven</firstline>
   <source pages="311"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <places>
+    <place ref="korsor" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6829,6 +6859,9 @@ Derefter Farten maa rettes; thi Læser! forlad hvis i Digtet
   <title>Reisen over Beltet</title>
   <firstline>Med smukke, lange Vers jeg agter at afmale</firstline>
   <source pages="314-323"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <places>
+    <place ref="great-belt" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -7079,6 +7112,10 @@ Til næste christne Land, og dette Land var Fyen.
   <title>Reisen fra Nyborg til Svendborg</title>
   <firstline>Som nu i smukke Rime-Vers</firstline>
   <source pages="324-328"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <places>
+    <place ref="nyborg" relation="setting" primary="true"/>
+    <place ref="svendborg" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -7202,6 +7239,9 @@ Som nu i smukke Rime-Vers,
   <title>Svendborg Sund</title>
   <firstline>Saa venlig er Luften, mildt Skyerne staae</firstline>
   <source pages="329-330"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <places>
+    <place ref="svendborg" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -7259,6 +7299,9 @@ Hurah! der er Land, nu er Faren forbi.
   <title>Thorsing</title>
   <firstline>Venligen vinkte paa grønnen Strand de knudrede Bøge</firstline>
   <source pages="331-335"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <places>
+    <place ref="taasinge" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -7322,6 +7365,10 @@ Hang den saa rundt om Heltens Hals; og det blomstrende Thorsing
   <title>Overfarten fra Vemmenæs til Rudkiøbing</title>
   <firstline>Aldrig krysted mig Søen saa fast i sin svulmende Favn</firstline>
   <source pages="336-338"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <places>
+    <place ref="taasinge" relation="setting" primary="true"/>
+    <place ref="rudkobing" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -7359,6 +7406,9 @@ Slukøret skyndte jeg mig i Læe: men hvad Guden mig sagde,
   <title>Apotheket</title>
   <firstline>Nylig i Rusk og Slud, paa Dybet, af gyngende Bræt slængt</firstline>
   <source pages="339-343"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <places>
+    <place ref="rudkobing" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -7491,6 +7541,9 @@ I den gamle Bøgeskov,
   <firstline>Hvor Bøgeskoven slipper</firstline>
   <source pages="347-354"><i>Poetiske Skrifter</i> (1805), I.</source>
   <keywords>novalis</keywords>
+  <places>
+    <place ref="faarevejle-langeland" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -7695,6 +7748,9 @@ Farvel, du stille Have!
   <title>Faareveile Skov</title>
   <firstline>Tykke, veldædige Bøge! Mosdækkede Stene!</firstline>
   <source pages="355-357"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <places>
+    <place ref="faarevejle-langeland" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8476,6 +8532,9 @@ O bad mig da i dine Flammer!
   <firstline>Syng om det hellige Tog, Gudinde!</firstline>
   <source pages="389-408"><i>Poetiske Skrifter</i> (1805), I.</source>
   <keywords>heksameter</keywords>
+  <places>
+    <place ref="taasinge" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

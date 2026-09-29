@@ -127,6 +127,7 @@ Et citat
       'pictures',
       'source',
       'keywords',
+      'places',
       'form',
       'metre',
       'rhyme',

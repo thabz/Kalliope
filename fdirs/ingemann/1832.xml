@@ -596,6 +596,9 @@ Barnet lad blunde ved Moderens Barm!
   <title>Hans Egede</title>
   <firstline>Et helligt Kors staaer høit i Nord</firstline>
   <source pages="28-30"/>
+  <places>
+    <place ref="greenland" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -956,6 +959,9 @@ Husvaler Stjernens evige Glands. <!-- Stjernens] Sjernens er Ingemanns rettelse.
   <title>Absalon</title>
   <firstline>I Danmark toner Kæmpesang</firstline>
   <source pages="41-43"/>
+  <places>
+    <place ref="soro-abbey-church" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1271,6 +1277,9 @@ Ved Ellestubkrattet med Løv i Haar
   <!-- Rettelsen 1827] 1827 er Ingemanns egen -->
   <firstline>Løft dig, vor Høisang, paa Vinger af Toner!</firstline>
   <source pages="54-59"/>
+  <places>
+    <place ref="soro" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1419,6 +1428,9 @@ Blandt Minder om Fædrenes Fard!
   <firstline>Marmormindet staaer ved Graven</firstline>
   <source pages="60-63"/>
   <keywords>kingo</keywords>
+  <places>
+    <place ref="fraugde-church" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2413,6 +2425,15 @@ O, før du flygter igien — i Sang lad Drømmen opleve!
   <firstline>Stille Rom! fra dine Høie</firstline>
   <source pages="103-110"/>
   <keywords>schmidtf</keywords>
+  <places>
+    <place ref="rome" relation="setting"/>
+    <place ref="naples" relation="setting" primary="true"/>
+    <place ref="albano-laziale" relation="setting"/>
+    <place ref="lake-albano" relation="setting"/>
+    <place ref="rocca-di-papa" relation="mentioned"/>
+    <place ref="ariccia" relation="setting"/>
+    <place ref="velletri" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2586,6 +2607,9 @@ Alvor og hvad der forresten blandt Mennesker kaldes fornuftigt.
   <title>Aftensang i Herberget</title>
   <firstline>Reiseliv! Rejselyst!</firstline>
   <source pages="110-111"/>
+  <places>
+    <place ref="velletri" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2612,6 +2636,9 @@ Hvile den glade Gjest!
 <head>
   <firstline>Bjergblaae Taage forsvandt med Aftenens Gloriestraaler</firstline>
   <source pages="111"/>
+  <places>
+    <place ref="velletri" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2648,6 +2675,10 @@ Regner det atter idag? fort da mod Solskin og Vaar!
     </picture>
   </pictures>
   <source pages="112"/>
+  <places>
+    <place ref="pontine-marshes" relation="subject" primary="true"/>
+    <place ref="mount-circeo" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2671,6 +2702,9 @@ Trudsler bortskræmmer os ei. Men hør nu — det toner fra Bjerget!
   <title>Circes Tryllebjerg</title>
   <firstline>Hvad lokker, hvad drager</firstline>
   <source pages="112-113"/>
+  <places>
+    <place ref="mount-circeo" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2704,6 +2738,9 @@ Al Længsel og Savn.
   <subtitle>(Ved Teracina)</subtitle>
   <firstline>Vogt for Hexen dig hist, og fly Forglemmelsens Rige!</firstline>
   <source pages="113-116"/>
+  <places>
+    <place ref="terracina" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2762,6 +2799,9 @@ Sært dog tryller endnu fra Dybet den Mægtiges Stormrøst.
   <title>Theodoriks Borg ved Teracina</title>
   <firstline>Natuglen hyler i Hallen</firstline>
   <source pages="116-118"/>
+  <places>
+    <place ref="terracina" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2824,6 +2864,11 @@ Mindet end drømmer veemodig om Sang fra Borgen ved Stranden.
   <title>Strand-Borgen</title>
   <firstline>Paa Borg ved Stranden lød Hymneklang</firstline>
   <source pages="118-121"/>
+  <places>
+    <place ref="terracina" relation="setting"/>
+    <place ref="fondi" relation="setting" primary="true"/>
+    <place ref="itri" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2902,6 +2947,9 @@ Gridsk med halvt dæmonisk Blik.
   <title>Ciceros Grav</title>
   <firstline>Atter en Alderdomslevning, et Gravsted! — ja, her blev du jordet</firstline>
   <source pages="121-122"/>
+  <places>
+    <place ref="cicero-tomb" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2922,6 +2970,9 @@ Tænker paa Oldtid og Nutid — og ønsker sig lønlig din Malmrøst.
   <firstline>Høit paa Klippen din Gravhøi vi see, Fostmoder Carjeta</firstline>
   <source pages="122-123"/>
   <keywords>abrahamson</keywords>
+  <places>
+    <place ref="formia" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2954,6 +3005,12 @@ Hørte det i hendes Hjem. Endnu vil ei Mindet bortflyve.
   <title>Nina</title>
   <firstline>I Paris sig Folket glæder</firstline>
   <source pages="123-130"/>
+  <places>
+    <place ref="paris" relation="setting"/>
+    <place ref="garigliano-river" relation="setting"/>
+    <place ref="minturnae" relation="setting" primary="true"/>
+    <place ref="capua" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3142,6 +3199,11 @@ Sig i Livslyst Livet bortsvinger.
 <head>
   <firstline>Er ved Neapel vi alt? Endnu jeg Vesuv dog ei øined</firstline>
   <source pages="131"/>
+  <places>
+    <place ref="naples" relation="setting" primary="true"/>
+    <place ref="volturno" relation="setting"/>
+    <place ref="aversa" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3159,6 +3221,9 @@ Der i dit Fodspor jeg vandred idag, stormægtige Tancred!
   <title>Feelandet</title>
   <firstline>End fjernt dit Billed tryller</firstline>
   <source pages="132-135"/>
+  <places>
+    <place ref="vesuvius" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3241,6 +3306,9 @@ Stormer med vilde gigantiske Kraft mod Himmelens Porte.
   <title>Neapel</title>
   <firstline>Standser os plagende Toldvæsens-Trold? Nei, kun høflig han krummer</firstline>
   <source pages="135-136"/>
+  <places>
+    <place ref="naples" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3263,6 +3331,10 @@ Ei Pulcinellernes By er liig Petitmaitrernes Verden.
   <subtitle>(fra Fjælleboden)</subtitle>
   <firstline>Heisa! der kommer en støvet Veturin</firstline>
   <source pages="136-138"/>
+  <places>
+    <place ref="naples" relation="setting" primary="true"/>
+    <place ref="vesuvius" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3357,6 +3429,9 @@ Lytter sortøiet Signora i Skjul til de fremmede Sange.
     <note>Skrevet under opholdet på Capri sammen med fru Bürgel og hendes fire halvvoksne døtre i marts 1819.  Melodi af Heise.</note>
   </notes>
   <source pages="140-141"/>
+  <places>
+    <place ref="capri" relation="writtenAt" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2</quality>
 </head>
 <body>
@@ -3393,6 +3468,9 @@ Fryd, jeg drømte om i Nord!
 <head>
   <firstline>Sælsomt er Livet dog her. Naar Daglarmen buldrer omkring os</firstline>
   <source pages="141-142"/>
+  <places>
+    <place ref="naples" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3423,6 +3501,10 @@ Englen hans Aasyn har skjult; men hans Røst kan al Verden fornemme.
   <firstline>Hvor Livsfarver spille</firstline>
   <source pages="143-154"/>
   <keywords>balladestrofe</keywords>
+  <places>
+    <place ref="vesuvius" relation="subject" primary="true"/>
+    <place ref="naples" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3454,6 +3536,11 @@ Den jublende By.
 <head>
   <firstline>Ud at bestige Vesuv! — Velkommen vor troe Cicerone!</firstline>
   <source pages="143-154"/>
+  <places>
+    <place ref="vesuvius" relation="subject" primary="true"/>
+    <place ref="naples" relation="setting"/>
+    <place ref="portici" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3712,6 +3799,23 @@ Liden Fugl mig til Palmerne bringer.
 <head>
   <firstline>Prægtig er Udsigten hist fra Camaldolensernes Kloster</firstline>
   <source pages="157-184"/>
+  <places>
+    <place ref="naples" relation="setting" primary="true"/>
+    <place ref="ischia" relation="setting"/>
+    <place ref="baiae" relation="setting"/>
+    <place ref="cumae" relation="setting"/>
+    <place ref="lake-avernus" relation="setting"/>
+    <place ref="solfatara" relation="setting"/>
+    <place ref="arco-felice-arch" relation="setting"/>
+    <place ref="pozzuoli" relation="setting"/>
+    <place ref="virgil-tomb" relation="setting"/>
+    <place ref="salerno" relation="setting"/>
+    <place ref="paestum" relation="setting"/>
+    <place ref="amalfi" relation="setting"/>
+    <place ref="castellammare-di-stabia" relation="setting"/>
+    <place ref="sorrento" relation="setting"/>
+    <place ref="capri" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4138,6 +4242,9 @@ Stille den minded om Glæden, som flyer, om Glæden som bliver.
   <subtitle>(paa Capri)</subtitle>
   <firstline>Paa Fjeld Somaren fremskrider</firstline>
   <source pages="184-185"/>
+  <places>
+    <place ref="capri" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4189,6 +4296,9 @@ Med Blomster fra fremmed Øe.
 <head>
   <firstline>Herlige Capri, farvel!</firstline>
   <source pages="186-189"/>
+  <places>
+    <place ref="capri" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4273,6 +4383,11 @@ Synger om forjættet Land.
   <subtitle>(Rom i April 1819)</subtitle>
   <firstline>Saa er det virkelig vort stille Roma</firstline>
   <source pages="189-192"/>
+  <places>
+    <place ref="rome" relation="writtenAt" primary="true"/>
+    <place ref="naples" relation="mentioned"/>
+    <place ref="vesuvius" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4366,6 +4481,10 @@ Sig blander tungt Farvel med Afskedssangen.
   </notes>
   <source pages="192-194"/>
   <keywords>rom,balladestrofe</keywords>
+  <places>
+    <place ref="ponte-milvio" relation="subject" primary="true"/>
+    <place ref="rome" relation="writtenAt"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4428,6 +4547,9 @@ En Taare jeg i deres Øine saae -
   <firstline>Forladt af Vennerne fra Norden nu</firstline>
   <source pages="194-195"/>
   <keywords>schmidtf</keywords>
+  <places>
+    <place ref="rome" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4467,6 +4589,9 @@ Dets Farveglands mig skal til Norgen følge.
     <written>1819-04-27</written>
   </dates>
   <source pages="196-199"/>
+  <places>
+    <place ref="la-storta" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4557,6 +4682,10 @@ Hurra for dem, som fra os gaae!
   <subtitle>(i Frascati)</subtitle>
   <firstline>Fjorten Dage gaaer jeg ene</firstline>
   <source pages="199-207"/>
+  <places>
+    <place ref="frascati" relation="setting" primary="true"/>
+    <place ref="tusculum" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4763,6 +4892,12 @@ Overalt i fremmed Land.
   <indextitle>Vicolo di St. Lucia</indextitle>
   <firstline>Staaer paa Hjørnet af mit Stræde</firstline>
   <source pages="207-212"/>
+  <places>
+    <place ref="frascati" relation="setting" primary="true"/>
+    <place ref="naples" relation="mentioned"/>
+    <place ref="amalfi" relation="mentioned"/>
+    <place ref="florence" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4911,6 +5046,14 @@ Og higed stedse fremmed hid tilbage.
   <title>De sidste Dage i Rom og dens Omegn</title>
   <firstline>Farvel, Marino! og Castel Gondolfo!</firstline>
   <source pages="213-215"/>
+  <places>
+    <place ref="rome" relation="subject" primary="true"/>
+    <place ref="marino" relation="mentioned"/>
+    <place ref="castel-gandolfo" relation="mentioned"/>
+    <place ref="albano-laziale" relation="mentioned"/>
+    <place ref="ariccia" relation="mentioned"/>
+    <place ref="tivoli" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4982,6 +5125,9 @@ Du skjønne Festers Land med dine Krandse!
   <title>Blomsterfesten i Gensano</title>
   <firstline>Til Gensano Blomsterfesten</firstline>
   <source pages="215-219"/>
+  <places>
+    <place ref="genzano-di-roma" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5093,6 +5239,13 @@ Saligt, til vi see den hist.
     <picture src="ingemann2017100459-p2.jpg">Rafael Sanzio: <i>Messa di Bolsena</i>, 1512, fresko. Vatikanmuseet.</picture>
   </pictures>
   <source pages="219-222"/>
+  <places>
+    <place ref="rome" relation="setting"/>
+    <place ref="ronciglione" relation="setting" primary="true"/>
+    <place ref="bolsena" relation="setting"/>
+    <place ref="siena" relation="setting"/>
+    <place ref="pisa" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5172,6 +5325,9 @@ Der atter Hjemmets Toner i fremmed Land mig naaer.
   </notes>
   <source pages="222-223"/>
   <keywords>sonnet</keywords>
+  <places>
+    <place ref="pisa" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5201,6 +5357,10 @@ Men i det Fjerne mine Stjerner smile!
 <head>
   <firstline>Paa ny konstrige Florents henriver nordisk Sjæl</firstline>
   <source pages="223-224"/>
+  <places>
+    <place ref="florence" relation="subject" primary="true"/>
+    <place ref="bologna" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5233,6 +5393,9 @@ Slig Ven fra Barndomshjemmet og Hjertets Drømmeland.
   <subtitle>(Paa Apenninerne)</subtitle>
   <firstline>Stjerneblomst! du kan mig sige</firstline>
   <source pages="224-226"/>
+  <places>
+    <place ref="apennines" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5287,6 +5450,12 @@ Møder mig med med hellig Ro.
   <title>Paa Veien fra Bologna til Padua og Venedig</title>
   <firstline>Med hvem jeg nu bortfarer, mig snarlig bliver klart</firstline>
   <source pages="226-227"/>
+  <places>
+    <place ref="bologna" relation="setting"/>
+    <place ref="padua" relation="setting"/>
+    <place ref="brenta-river" relation="setting"/>
+    <place ref="venice" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5333,6 +5502,9 @@ Indroede i Venedig, den underfulde Stad.
   <title>Venedig</title>
   <firstline>Jeg Marmorstaden skuer</firstline>
   <source pages="228-230"/>
+  <places>
+    <place ref="venice" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5400,6 +5572,9 @@ Hvor vinget Løve knuust for Ørnen bæver.
 <head>
   <firstline>Pludselig ved Herbergtrappen</firstline>
   <source pages="230-233"/>
+  <places>
+    <place ref="venice" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5472,6 +5647,9 @@ Særsynsstad! farvel imorgen!
   <title>Adria</title>
   <firstline>Møe med svanehvid Barm, med himmelblaat Bælte!</firstline>
   <source pages="233-234"/>
+  <places>
+    <place ref="adriatic-sea" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5523,6 +5701,11 @@ Flygted i hvirvlende Sky og blinked i Lynglands.
     <written>1819-07-15</written>
   </dates>
   <source pages="235-237"/>
+  <places>
+    <place ref="italy" relation="subject" primary="true"/>
+    <place ref="trieste" relation="writtenAt"/>
+    <place ref="adriatic-sea" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

@@ -675,6 +675,14 @@ Og flyttes af en Himmel i en anden.
   <subtitle>Til Samme</subtitle>
   <firstline>Jeg i mit forrige hastfulde Brev</firstline>
   <source pages="44-56"/>
+  <places>
+    <place ref="copenhagen" relation="setting"/>
+    <place ref="loevenborg" relation="setting"/>
+    <place ref="soro" relation="setting"/>
+    <place ref="slagelse" relation="setting"/>
+    <place ref="korsor" relation="subject" primary="true"/>
+    <place ref="roskilde" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1002,6 +1010,9 @@ Mod Dem skal intet standse førend Døden.
   </subtitle>
   <firstline>Fred, Sundhed, Fryd fra nu til Aarets Ende</firstline>
   <source pages="66-76"/>
+  <places>
+    <place ref="lolland" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1216,6 +1227,10 @@ Og froe med fiorten Been betræde den.
   <firstline>Saa kom jeg da til Schweiz? - Saa lod mig Skiæbnen stige</firstline>
   <source pages="81-90"/>
   <keywords>pram</keywords>
+  <places>
+    <place ref="alps" relation="subject" primary="true"/>
+    <place ref="bern" relation="writtenAt"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3020,6 +3035,9 @@ Og kysser Deres Frues skiønne Haand.
   </subtitle>
   <firstline>Elskværdigste blandt alle danske Koner</firstline>
   <source pages="202-222"/>
+  <places>
+    <place ref="paris" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3363,6 +3381,10 @@ Den Lov, jeg gav mig selv, den Lov, som frelste mig:
     <note>Teksten citerer flittigt <xref poem="19990208005"/> fra Wessels <i>Kierlighed uden Strømper</i>s Første Optog.</note>
   </notes>
   <source pages="227-236"/>
+  <places>
+    <place ref="rome" relation="subject" primary="true"/>
+    <place ref="paris" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3519,6 +3541,11 @@ Er tilsidst <i>det sande Rom!</i>
   </subtitle>
   <firstline>Sex hele søgne Dage siden</firstline>
   <source pages="237-256"/>
+  <places>
+    <place ref="rubicon" relation="subject" primary="true"/>
+    <place ref="rome" relation="setting"/>
+    <place ref="paris" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3801,6 +3828,10 @@ I Tanker til vort Bryst vi trykke.
     <note>Se <a person="gierlew">Andreas Chr. Gierlew</a>.</note>
   </notes>
   <source pages="257-282"/>
+  <places>
+    <place ref="rome" relation="subject" primary="true"/>
+    <place ref="paris" relation="writtenAt"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

@@ -327,6 +327,7 @@ historiske id-formater fortsat kan bevares uændret.
 - `<suptitle>`: overtitel. Kan indeholde flere `<line>`.
 - `<nofirstline/>`: markerer bevidst manglende foerstelinje.
 - `<keywords>`: komma-separerede ids for keywords eller personer/digtere.
+- `<places>`: stedrelationer, der peger på lokale id'er i `content/places.xml`.
 - `<notes>`: noter til teksten.
 - `<pictures>`: billeder til teksten.
 - `<source>`: kilde for teksten.
@@ -345,8 +346,21 @@ Formatteren ordner de direkte metadatafelter i denne kanoniske rækkefølge:
 ```text
 suptitle, title, subtitle, toctitle, indextitle, linktitle, breadcrumbtitle,
 firstline, nofirstline, year, dates, written, performed, event, begivenhed,
-notes, pictures, source, keywords, form, metre, rhyme, structure, syllables,
-quality
+notes, pictures, source, keywords, places, form, metre, rhyme, structure,
+syllables, quality
+```
+
+Stedrelationer står i tekstens `<head>`. `ref` er stedets stabile Kalliope-id;
+Wikidata-id'et står kun i det centrale stedregister. `relation` kan være
+`subject` (centralt emne), `setting` (sted for scenen eller rejsen),
+`mentioned` (omtalt sted) eller `writtenAt` (sted hvor digtet er skrevet eller
+stedfæstet). Brug `primary="true"`, når stedet er markeret som primært:
+
+```xml
+<places>
+  <place ref="rome" relation="subject" primary="true"/>
+  <place ref="capri" relation="writtenAt"/>
+</places>
 ```
 
 Gentagne felter beholder deres indbyrdes rækkefølge. En XML-kommentar på sin

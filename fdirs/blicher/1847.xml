@@ -8026,6 +8026,9 @@ Gud Signe din Slægt og din Eftermand!
   <subtitle>(En kjer Frænde helliget)</subtitle>
   <firstline>Eensom jeg laae paa min lynggro'de Bakke</firstline>
   <source in="bd2" pages="1-5"/>
+  <places>
+    <place ref="jutland" relation="subject" primary="true"/>
+  </places>
 </head>
 <body>
 <poetry>
@@ -8162,6 +8165,11 @@ Lærken blandt Gravene bygger sit Rede,
   <title>Første Døgn</title>
   <firstline>Farvel, farvel da, du røgindhyllede Tue!</firstline>
   <source in="bd2" pages="5-16"/>
+  <places>
+    <place ref="copenhagen" relation="setting"/>
+    <place ref="ven" relation="setting"/>
+    <place ref="kullaberg" relation="setting" primary="true"/>
+  </places>
 </head>
 <body>
 <poetry>
@@ -8512,6 +8520,11 @@ Saa staaer dit Rede trygt og fast.
   <title>Andet Døgn</title>
   <firstline>Saa tidlig paa Dækket? - Hvi bæver Smilet ustadigt</firstline>
   <source in="bd2" pages="16-28"/>
+  <places>
+    <place ref="samso" relation="setting"/>
+    <place ref="aarhus" relation="setting" primary="true"/>
+    <place ref="grenaa" relation="setting"/>
+  </places>
 </head>
 <body>
 <poetry>
@@ -8929,6 +8942,11 @@ Paa Landevejen, der løber fra Aarhuus til Grennaae!
   <title>Tredie Døgn</title>
   <firstline>Borte er Søvnens Børn, - ufuldendte Gestalter</firstline>
   <source in="bd2" pages="28-37"/>
+  <places>
+    <place ref="kalo-castle" relation="setting" primary="true"/>
+    <place ref="grenaa" relation="setting"/>
+    <place ref="gudenaa" relation="subject"/>
+  </places>
 </head>
 <body>
 <poetry>
@@ -9218,6 +9236,9 @@ Frihed og Ære og Skjaldesange skal vindes! <note>* See <a poem="blicher20190104
   <title>Fjerde Døgn</title>
   <firstline>Hvi raaber den Sanger saa højt paa ensomme Hede?</firstline>
   <source in="bd2" pages="37-51"/>
+  <places>
+    <place ref="viborg" relation="setting" primary="true"/>
+  </places>
 </head>
 <body>
 <poetry>
@@ -9673,6 +9694,9 @@ Blicher.
   <subtitle>(Viborg Snapsthing)</subtitle>
   <firstline>O! I Poeternes Tjenestepiger!</firstline>
   <source in="bd2" pages="51-77"/>
+  <places>
+    <place ref="viborg" relation="subject" primary="true"/>
+  </places>
 </head>
 <body>
 <poetry>
@@ -10498,6 +10522,9 @@ Hjemad til Nibe! - Nu Snapsting! Adio!
   <title>Sjette Døgn</title>
   <firstline>Hil dig mit Fødeland, Fædrenes mørkbrune Gravmark</firstline>
   <source in="bd2" pages="77-87"/>
+  <places>
+    <place ref="grathe-heath" relation="subject" primary="true"/>
+  </places>
 </head>
 <body>
 <poetry>
