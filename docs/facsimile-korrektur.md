@@ -33,6 +33,13 @@ checkpointets krav er opfyldt, tilføjes `korrektur2`, værket sættes til
 Facsimilet er facit. OCR, eksisterende transskriptioner, metadata og kendskab
 til en strofeform er hjælpemidler, ikke selvstændige tekstvidner.
 
+En ny tekstforekomst må ikke oprettes ved at kopiere brødteksten fra en anden
+udgave eller variant. Opret først et kildebaseret udkast fra det aktuelle
+facsimile og frisk OCR. Brug derefter eksisterende transskriptioner til
+sammenligning og relationsfinding. Ordlyd, tegnsætning, linje- og
+strofegrænser, indrykning, overskrifter, noter, sideskift og typografi må aldrig
+overføres fra varianten uden selvstændig kontrol mod det aktuelle facsimile.
+
 En usædvanlig form eller stavemåde må ikke rettes, blot fordi den ser
 mistænkelig ud. Hvis facsimilet tydeligt har formen, skal den bevares. Hvis
 læsningen ikke kan afgøres forsvarligt, skal usikkerheden synliggøres i stedet

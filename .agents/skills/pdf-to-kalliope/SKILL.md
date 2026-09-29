@@ -74,6 +74,14 @@ Do not renumber them according to their physical order in the PDF.
 The PDF's page images are the source of truth. OCR, existing transcriptions,
 metadata, dictionaries, metre and expected stanza forms are aids only.
 
+Create the new occurrence from the current facsimile and its fresh OCR. Do not
+seed or initialize its body by copying another edition or variant. An existing
+transcription may be consulted only after the source-based draft exists, for
+comparison and relation detection. Never transfer its wording, punctuation,
+line or stanza boundaries, leading whitespace, headings, notes, page breaks or
+typography into the new occurrence without independently verifying each item
+against the current facsimile.
+
 Preserve:
 
 - the source's wording
@@ -1369,6 +1377,12 @@ Compare each imported text with the existing corpus using, as appropriate:
 Use normalization only for searching and comparison. Do not normalize the
 published transcription.
 
+Perform this comparison against the source-based draft; do not create that
+draft by copying the matched occurrence. When a match is found, treat every
+shared structural feature—including indentation—as a candidate requiring
+independent confirmation in the current facsimile, not as evidence that the
+feature belongs to both occurrences.
+
 Determine whether the new occurrence is:
 
 - a distinct text
@@ -1675,6 +1689,9 @@ For a complete import, all applicable items below must be true:
       `npm run check-facsimiles` passed against the public `000.jpg`.
 - [ ] Fresh OCR was produced from page images with at least two meaningfully
       different passes or strategies.
+- [ ] No text body was seeded from another edition or variant; existing
+      occurrences were used only after the source-based draft existed, for
+      comparison and relation detection.
 - [ ] Every relevant page was checked directly against the facsimile.
 - [ ] Every poetry block has a visual structure record covering its complete
       page range, observed stanza lengths and observed indentation.
