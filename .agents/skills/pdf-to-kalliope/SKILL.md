@@ -798,7 +798,7 @@ and physical line wrapping.
 After the final XML has been assembled, run the targeted page-break test:
 
 ```shell
-npm test -- --runInBand __tests__/pagebreaks.test.js
+npm test -- --runInBand --runTestsByPath __tests__/corpus/pagebreaks.test.js
 ```
 
 This test reads the serialized XML and rejects a `<pb>` that ends an XML line.
@@ -1482,7 +1482,7 @@ node .agents/skills/pdf-to-kalliope/scripts/audit-pagebreaks.js WORK.xml INVENTO
 node .agents/skills/pdf-to-kalliope/scripts/analyze-whole-work.js WORK.xml TSV_DIRECTORY
 node .agents/skills/pdf-to-kalliope/scripts/findings-register.js validate FINDINGS.jsonl
 xmllint --noout path/to/work.xml
-npm test -- --runInBand __tests__/pagebreaks.test.js
+npm test -- --runInBand --runTestsByPath __tests__/corpus/pagebreaks.test.js
 git diff --check
 npm test -- --runInBand
 ```

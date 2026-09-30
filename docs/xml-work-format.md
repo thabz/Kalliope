@@ -28,7 +28,7 @@ En eller flere værkfiler kan formateres uden at ændre brødteksten med:
 node tools/format-work-xml.js fdirs/<digter>/<vaerk>.xml
 ```
 
-Testen i `__tests__/work-xml-formatting.test.js` kontrollerer den strukturelle
+Testen i `__tests__/corpus/work-corpus.test.js` kontrollerer den strukturelle
 formatering i alle sporede værkfiler.
 
 ## Grundstruktur
