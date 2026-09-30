@@ -1,6 +1,8 @@
 import {
   auditPageInventory,
   buildPageInventory,
+  normalizeLine,
+  visibleLines,
 } from '../.agents/skills/pdf-to-kalliope/scripts/audit-utils.js';
 import { analyzeWholeWork } from '../.agents/skills/pdf-to-kalliope/scripts/analyze-whole-work.js';
 import { historicalOcrCandidates } from '../.agents/skills/pdf-to-kalliope/scripts/audit-ocr-candidates.js';
@@ -30,6 +32,40 @@ Sidste linje</poetry></body>
 </kalliopework>`;
 
 describe('pdf-to-kalliope page inventory and semantic audit', () => {
+  it('keeps body anchors stable when notes change', () => {
+    const cases = [
+      ['Første<note>gammel</note> linje', 'Første linje'],
+      ['<footnote>gammel</footnote>Første linje', 'Første linje'],
+      ['Sidste linje<footnote>gammel</footnote>', 'Sidste linje'],
+      ['Første<note>flere\nlinjer<pb n="2" facs="002.jpg"/> i noten</note> linje', 'Første linje'],
+    ];
+    cases.forEach(([input, expected]) => {
+      expect(visibleLines(input)).toEqual([expected]);
+      expect(visibleLines(input.replace('gammel', 'ny tekst'))).toEqual([expected]);
+    });
+    expect(normalizeLine('Første<note>indsat</note> linje')).toBe('Første linje');
+  });
+
+  it('keeps reviewed page anchors when a footnote is added', () => {
+    const changedXml = workXml.replace('Første linje',
+      'Første<footnote>redaktionel rettelse</footnote> linje');
+    expect(buildPageInventory({ xml: changedXml })[0].first_line).toBe('Første linje');
+    const inventory = buildPageInventory({ xml: workXml }).map(row => ({
+      ...row, status: 'reviewed', reviewer: 'worker-2', disposition: 'Gennemgået',
+      typography_status: 'reviewed', typography_disposition: 'Gennemgået',
+    }));
+    expect(auditPageInventory({ xml: changedXml, inventory }).issues).toEqual([]);
+  });
+
+  it('removes note text across a page break without inventing body lines', () => {
+    const xml = workXml.replace(
+      '<pb n="11" facs="011.jpg"/>',
+      '<footnote>første notelinje\n<pb n="11" facs="011.jpg"/>anden notelinje</footnote>',
+    );
+    const [firstPage, secondPage] = buildPageInventory({ xml, includeExpectedPages: false });
+    expect(firstPage.last_line).toBe('Sidste paa ti');
+    expect(secondPage.first_line).toBe('Første paa elleve');
+  });
   it('builds one side-aware JSON row per printed page', () => {
     expect(buildPageInventory({ xml: workXml })).toEqual([
       expect.objectContaining({

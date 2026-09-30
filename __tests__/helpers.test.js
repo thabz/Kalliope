@@ -57,6 +57,32 @@ describe('helpers', () => {
       ]);
     });
 
+    it.each(['center', 'right', 'wrap', 'w'])('balances a multi-line <%s> before it reaches the client', tag => {
+      const xml = `<${tag}><w>Første linje</w><br/>\n<w>Anden linje</w></${tag}>`;
+      const lines = htmlToXml(xml, collected, true, {
+        workId: '1807', textId: 'test180701', blockType: 'poetry',
+      });
+      expect(lines.map(([fragment]) => fragment)).toEqual(tag === 'w' ? [
+        '<w><w>Første linje</w><br/></w>',
+        '<w><w>Anden linje</w></w>',
+      ] : [
+        '<w>Første linje</w><br/>',
+        '<w>Anden linje</w>',
+      ]);
+    });
+
+    it('validates prose, quotations, headings, notes and footnotes', () => {
+      const contexts = ['prose', 'quote', 'heading', 'note', 'footnote'];
+      contexts.forEach(blockType => {
+        expect(() => htmlToXml('<broken>Første</other>', collected, false, {
+          workId: '1807', textId: 'test180701', blockType,
+        })).toThrow(new RegExp(`værk=1807, tekst=test180701, blok=${blockType}, linje=0:`));
+      });
+      expect(lineTexts('Tekst<note>Første\nAnden</note>')).toEqual([
+        'Tekst<note>Første Anden</note>',
+      ]);
+    });
+
     it('keeps a multi-line footnote valid as one rendered line', () => {
       expect(
         lineTexts(
@@ -86,6 +112,10 @@ describe('helpers', () => {
       expect(
         lineTexts('&lt;er røde af blodet af mænd, der dræbes,&gt;')
       ).toEqual(['&lt;er røde af blodet af mænd, der dræbes,&gt;']);
+    });
+
+    it('keeps ampersands escaped in generated XML fragments', () => {
+      expect(lineTexts('A &amp; B')).toEqual(['A &amp; B']);
     });
 
     it('renders Bible xrefs as links', () => {
