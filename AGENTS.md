@@ -24,6 +24,19 @@ Disse regler gælder for AI-agenter og automatiserede assistenter, der arbejder 
   skal opspores, udvælges, indsættes eller forbindes med oversættelsen. Brug
   også `$add-kalliope-work`, når originalen oprettes som et selvstændigt værk.
 
+## OCR and PDF tooling
+
+- Kør `tools/ocr-environment` som første trin ved OCR- og PDF-opgaver. Kontrollér
+  eksisterende værktøjer, før et nyt systemværktøj installeres.
+- Kraken er den foretrukne OCR-motor til historiske tryk og fraktur. Brug den
+  eksisterende installation; geninstallér den ikke, og læg ikke
+  projektdependencies i Krakens pipx-miljø. Brug projektets eget venv/uv-miljø
+  til projektkode.
+- Brug `pdftoppm` til PDF-sider som billeder og `pdftotext` til eksisterende
+  PDF-tekst. Brug ImageMagick (`magick`) til billedbehandling. `ocrmypdf` kan
+  bruges til almindelige PDF/OCR-workflows. Tesseract er et hjælpeværktøj og
+  ikke nødvendigvis førstevalg til historisk fraktur.
+
 ## Kalliopes dækningsmål
 
 Ved arbejde med personer, værker, kilder og import skal
