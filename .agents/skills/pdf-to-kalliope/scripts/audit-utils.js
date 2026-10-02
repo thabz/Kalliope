@@ -206,7 +206,7 @@ const buildPageInventory = ({ xml, workFile = null, includeExpectedPages = true 
   return rows;
 };
 
-const inventoryKey = row => `${row.text_id}:${row.printed_page}`;
+const inventoryKey = row => `${row.text_id}:${row.printed_page ?? row.facsimile}`;
 
 const auditPageInventory = ({ xml, inventory }) => {
   const actual = buildPageInventory({ xml, includeExpectedPages: false });

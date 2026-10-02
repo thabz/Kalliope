@@ -303,6 +303,15 @@ const findTitleMetadataFindings = ({
         return;
       }
       const title = titleTextWithoutNotes(candidate);
+      const indexTitle = type === 'title'
+        ? extractedTitleCandidate(head, 'indextitle')
+        : null;
+      // Keep source punctuation when the index title is the same heading
+      // without its final mark.
+      if (indexTitle != null &&
+          titleTextWithoutNotes(indexTitle) === title.replace(/[.:;]$/u, '')) {
+        return;
+      }
       const endsWithAllowedEllipsis = /(?:\.\s*){3,}$/u.test(title);
       if (/[.:;]$/u.test(title) && endsWithAllowedEllipsis === false) {
         issues.push(

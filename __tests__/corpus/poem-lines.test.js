@@ -397,6 +397,23 @@ describe('Check workfiles', () => {
     },
   );
 
+  it('preserves printed heading punctuation beside a clean index title', () => {
+    const issues = titleMetadataIssues(
+      '<text id="printed"><head><title><w>Forsang.</w></title><indextitle>Forsang</indextitle></head></text>',
+    );
+
+    expect(issues.filter(issue => issue.rule === 'title-trailing-punctuation')).toHaveLength(0);
+    expect(issues.filter(issue => issue.rule === 'index-title-leading-character')).toHaveLength(0);
+  });
+
+  it('still reports punctuation when the index title is unrelated', () => {
+    const issues = titleMetadataIssues(
+      '<text id="printed"><head><title>Forsang.</title><indextitle>Anden titel</indextitle></head></text>',
+    );
+
+    expect(issues.filter(issue => issue.rule === 'title-trailing-punctuation')).toHaveLength(1);
+  });
+
   it.each([',', '?', '!'])(
     'allows a title ending with %s',
     punctuation => {
