@@ -139,6 +139,15 @@ Kontrollér maskinelt:
 Linjetælling finder strukturfejl, som en almindelig OCR-sammenligning ikke ser.
 En korrekt tekst kan stadig være opdelt forkert.
 
+Slutkontrollen skal bruge helværksanalysen fra den endelige XML og OCR-geometri
+fra facsimilesiderne. Hver kandidat i rapporten skal forbindes med en særskilt
+afsluttet registrering, som beskriver afgørelsen og angiver den kontrollerede
+facsimileside. Et samlet antal »gennemgåede kandidater« er ikke tilstrækkeligt.
+Der skal også være en selvstændig visuel registrering af strofelængderne for
+hvert digt, inklusive digte uden maskinelle kandidater.
+Ændres XML efter analysen, skal rapporten og registreringerne opdateres før
+værket kan godkendes.
+
 Strofeanalysen afprøver desuden plausible ensartede strofelængder mod hele
 digtet. Hver hypotese vurderes efter, om alle verslinjer dækkes uden rest, hvor
 mange eksisterende grænser der bevares, hvor mange grænser der skal fjernes

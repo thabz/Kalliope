@@ -10,7 +10,7 @@
   <notes>
     <note>De med * betegnede Stykker findes ikke i <i>Digte</i> eller <i>Phantasier og Skizzer</i>; ere enten ikke tilforn trykte eller staae aftrykte i Blade og Tidsskrifter.</note>
   </notes>
-  <source href="https://www.kb.dk/e-mat/dod/115308039480-color.pdf" facsimile="115308039480_color" facsimile-pages-num="385" facsimile-pages-offset="19">H. C. Andersen: <i>Samlede Digte</i>. Kjøbenhavn: Forlagt af Universitets-Boghandler C. A. Reitzel; trykt hos Fabritius de Tengnagel, 1833.</source>
+  <source href="https://www.kb.dk/e-mat/dod/115308039480-color.pdf" facsimile="115308039480_color" facsimile-pages-num="385" facsimile-pages-offset="19">H. C. Andersen: <i>Samlede Digte</i>, C. A. Reitzel, Kbh., 1833.</source>
   <proofreadings>
     <proofreading model="gpt-6-astra" datetime="2026-10-01T21:28:48+02:00"/>
   </proofreadings>
@@ -19,7 +19,7 @@
 <text id="andersen2026100101">
 <head>
   <title>Dedikation</title>
-  <source pages="iii" facsimile-pages="11"/>
+  <source pages="iii" facsimile-pages="12"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -47,11 +47,11 @@ Forfatteren.</right>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote lang="de">Ein stiller Friede kommt auf mich,
 Weiß nicht, wie mir geschehn.
 <w>Göthe.</w>
 </quote>
+<poetry>
 See, Aftnen er saa stille, og Himlen er saa blaa!
 Nu sove alle Blomster og alle Fugle smaa;
 De nikke og de drømme, forstyr ei deres Lyst!
@@ -98,6 +98,7 @@ Men een var i Duft og Farveskjær
   Den smukkeste, maatte man sande,
 Paa hende jeg saae, for hende jeg sang,
   Og glemte de fremmede Lande.
+
 <pb n="5" facs="023.jpg"/>Hos hende jeg vilde bygge og boe,
   Jeg vilde Vingerne miste,
 Jeg vilde qviddre min bedste Sang,
@@ -122,6 +123,7 @@ En Dugdraabe faldt fra Blomstens Blad,
   Jeg troede, det var en Taare,
 Da sang jeg og tænkte, saa skyder han mig!
   Jeg ønskede Døden saa saare.
+
 <pb n="6" facs="024.jpg"/>End dufter Blomsten saa smuk som før,
   Den føler i Frakken sig hjemme!
 Jeg flyver afsted fra By til By,
@@ -143,10 +145,10 @@ Saa kommer der vel en Jæger en Gang,
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote lang="de">Warum wurde auf den schmutzigen Erdenkloß ein Geschöpf mit unnützen Lichtflügeln geklebt, wenn es in die Geburtscholle zurückfaulen sollte, ohne sich je mit den ätherischen Flügeln los zu winden.
 <w>Jean Paul.</w>
 </quote>
+<poetry>
 Om Aft'nen i det lille, snevre Kammer,
 Naar Alt er stille, i mit Bryst det flammer!
 En mægtig Længsel fylder al min Tanke,
@@ -309,13 +311,13 @@ O, jeg er saa træt! — maa Øiet lukke —
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote lang="de">Himmelhoch jauchzend,
 Zum Tode betrübt,
 Glücklich allein
 Ist die Seele, die liebt.
 <w>Göthe.</w>
 </quote>
+<poetry>
 <nonum><center>I.</center></nonum>
 
 To brune Øine jeg nylig saae,
@@ -414,12 +416,12 @@ Og Perlen koster Livet.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote lang="de">  — Der Mensch —
 Träumt sein ganzes Seyn und Thun,
 Bis zuletzt die Träum' entschweben.
 <w>Calderon</w> (übersetzt von <w>Gries.</w>)
 </quote>
+<poetry>
 <nonum><center>Til Vennen.</center></nonum>
 
 Du kjender Grunden til min dybe Smerte,
@@ -475,6 +477,7 @@ Svæve de elskende Aander gjennem det Høie.
 Som Toner flyde Drømmen fra Læben,
 Drømmen om Jordlivet her,
 Den vi drømme enhver:
+
     „Underligt jeg nylig drømte,
       og jeg var — jeg veed ei hvor!
     Jeg var i et Legem fængslet,
@@ -590,6 +593,9 @@ Kun Dødens Iis kan Hjertets Flamme dæmpe! —
   <title>De tvende Grave</title>
   <subtitle>(Efter <w>Klopstock.</w>)</subtitle>
   <firstline>Hvis er denne Grav?</firstline>
+  <notes>
+    <note>Gendigtning af Klopstock: <xref type="translation" poem="klopstock2026100201"/>.</note>
+  </notes>
   <source pages="26-27"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -614,6 +620,7 @@ Thi de ere faldne for Fædrenelandet.
 (Vandrer,
 Vi see i dit Blik,
 Nu kan Du det ikke.)
+
 <pb n="27" facs="045.jpg"/>Kom da til Gravene her
 Og græd,
 Men græd blodige Taarer,
@@ -655,6 +662,7 @@ Jeg en smuk Historie Dig lover,
 Følg nu Moder til din lille Seng!
 Synge vil jeg for Dig, til Du sover,
 Lille <w>Viggo</w>, Moders bedste Dreng!
+
 <pb n="29" facs="047.jpg"/>Du maaskee for mig, som ældre, synger,
 Naar jeg skal til Ro den sidste Gang;
 Ja, naar Jorden paa min Kiste tynger,
@@ -676,13 +684,13 @@ Mon Du glemme vil min Kjærlighed?
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote>Det vilde Bryst maa saares, mens det saarer;
 Den kiække Ørn maa over Fieldet gaae.
 Sig Hiertet øve maa i Fryd og Taarer.
 Hvo skildred', hvad hans Øie aldrig saae?
 <w>Oehlenschläger.</w>
 </quote>
+<poetry>
 Jeg elsker Havet, naar det stormer vildt!
 Jeg elsker det, naar Fladen ligger mildt,
 Og Maanen speiler sig i Dybets Blaa.
@@ -738,6 +746,7 @@ Saa vil Du glædes, Fryd vil Dig forynge,
 Da skal din Søn i Aft'nen for Dig synge,
 Du sang jo før for ham i Barndoms Tid,
 Skjøndt ei saa stærk, men from, enfoldig, blid.
+
 <pb n="33" facs="051.jpg"/>Jeg veed det Moder, hvad mig Gud forlener,
 Min hele Lykke ene skyldes Dig,
 Thi ikke jeg mit store Held fortjener,
@@ -758,12 +767,12 @@ Og Godheds Gud opfylder Fromheds Bøn!
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote>— — — Skibet
 Med matte Vinger,
 En Spurv i Hvirvelvind.
 <w>Oehlenschläger.</w>
 </quote>
+<poetry>
 Som i en Søvn ligger Luften og Havet,
 Ingen Bølge man seer,
 Kun døsigt svulmer Fladen og synker igjen;
@@ -836,6 +845,7 @@ Hvad Hjertets Brændinger tone?
     Det knuste Barnets Lyst;
     Jeg ene stod i Verden,
     Med Smerten i mit Bryst.
+
 <pb n="37" facs="055.jpg"/>    I Dalen var saa snevert,
     Jeg stræbte modigt frem,
     Men oppe høit paa Bjerget
@@ -894,6 +904,7 @@ Og dog den Ældres tillige!
 Hver Tanke saa klart i Øiet stod, —
 For hende han gav sit Ungdoms-Blod,
 Og hver en flammende Tanke.
+
 <pb n="39" facs="057.jpg"/>Han gav hende Hjertet i sit Bryst,
 Det var et kosteligt Smykke,
 Sin dybe Længsel, sin høie Lyst,
@@ -918,6 +929,9 @@ Vildt Stormen over hans Hoved gaaer;
   <title>Den femte Mai (1821)</title>
   <subtitle>(Efter <w>Beranger.</w>)</subtitle>
   <firstline>De Spanske lod' mig deres Skib bestige</firstline>
+  <notes>
+    <note>Gendigtning af Béranger: <xref type="translation" poem="beranger2026100201"/>.</note>
+  </notes>
   <source pages="40-42"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -1040,11 +1054,11 @@ Og meer jeg elsker hende nu!
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote>— — hiin store Fader gav
 Blomsten Dug og Øiet Taarer.
 <w>F. H. Guldberg.</w>
 </quote>
+<poetry>
 Mit Hjerte er en Himmel graa,
 Hvor Sorgerne som Kloder staae;
 Saa underlig er deres Gang,
@@ -1071,6 +1085,9 @@ At han en <w>Verden</w> glemme vil?
   <title>Vugge-Vise</title>
   <subtitle>(Efter <w>Bellmann.</w>)</subtitle>
   <firstline>Sov og drøm Du Engel blid</firstline>
+  <notes>
+    <note>Gendigtning af Bellman: <xref type="translation" poem="bellman2026100201"/>.</note>
+  </notes>
   <source pages="46-47"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -1099,6 +1116,7 @@ Lægges man i Kiste!
 Ja Barnlille, tænk derpaa!
 Naar Du seer de Blomster smaae
 Smykke Mark og Enge.
+
 <pb n="47" facs="065.jpg"/>Visse lulle! — hør Du mig!
 Giv' Dig Gud det Bedste!
 Naar Du vaagner, jeg til Dig
@@ -1187,10 +1205,10 @@ Naar der jeg sover, hvor man ei kan — drømme!
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote lang="de">„Wenn die unbekannte Hand den letzten Pfeil an das Haupt des Menschen sendet, so bückt er vorher das Haupt, und der Pfeil hebt bloß die Dornenkrone von seinen Wunden ab.”
 <w>Jean Paul.</w>
 </quote>
+<poetry>
 Hvad er det dog, som lyser? det luttres for min Sands;
 Jeg føler Øiet briste i denne Straaleglands.
 Mit Hoved mat sig bøier for Kraften i min Aand,
@@ -1295,10 +1313,10 @@ Mit unge Hjerte sprænges
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote lang="de">„Unschuld, nur wenn du dich nicht kennest, wie die kindliche, dann bist du eine; aber dein Bewußtseyn ist dein Tod.”
 <w>Jean Paul.</w>
 </quote>
+<poetry>
 Tæt ved Huset Brønden staaer,
 Lille Lise til den gaaer,
 Stirrer tankefuld derned,
@@ -1344,11 +1362,11 @@ Stivt hun ned i Brønden seer:
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote>— — — en Skjæbne, som end hænger
 I Stjernerne, begynde skal i Nat.
 <w>Shakspear's</w> Romeo og Julie.
 </quote>
+<poetry>
 <nonum><center>I.</center></nonum>
 
 Klart skinner Maanen paa den nøgne Kyst.
@@ -1365,6 +1383,7 @@ Alt ryster Porten ved de stærke Slag;
 Selv Spurven vækkes under Husets Tag
 Og flagrer, bange, fra sin lille Rede,
 Til Lyngen paa den sorte Hede.
+
 <pb n="58" facs="076.jpg"/><nonum><center>II.</center></nonum>
 
 Med Fader-Blik og sølvgraat Haar,
@@ -1514,6 +1533,7 @@ Den selv forraader min Kjærlighed,
 Der flygtede bly for Læben.
 Den synger sin dybe Sorg og Lyst;
 Men Svar har ei Fuglen i hendes Bryst.
+
 <pb n="64" facs="082.jpg"/>Den seer saa taus gjennem Rudens Glar,
 Og det gjør mig sorgfuld og bange.
 Fortjener ei Fuglen det mindste Svar,
@@ -1537,7 +1557,7 @@ Nu, døer den ene, hvad er saa tabt!
   <subtitle>(Efter <w>Byron.</w>)</subtitle>
   <firstline>Jeg drømte — dog en Drøm var det ei ganske!</firstline>
   <notes>
-    <note>Originalen „<i>Darkness</i>” har samme riimfrie Versemaal.</note>
+    <note>Gendigtning af Byron: <xref type="translation" poem="byron2026100201"/>.</note>
   </notes>
   <source pages="65-68"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1793,7 +1813,7 @@ I Dybet ligger han et blodigt Liig.
 <pb n="75" facs="093.jpg"/>„Dit Liig jeg kun kan trykke op til mit hvide Bryst,
 „Din stolte Sjæl har svunget sig høit til Himlens Kyst!”
 
-<nonum><hr/></nonum>
+---
 
 I Kirkens stille Have
 Høit bølger Græsset paa de glemte Grave,
@@ -1950,6 +1970,7 @@ Saa græd hun meget mere.”
 „ — Nei Barn! Dig intet Ondt vil skee!
 Men Haanden bløder! lad mig see!
 Er’ ingen hos Dig flere?”
+
 <pb n="81" facs="099.jpg"/>„O gamle Mand! jeg ret har grædt!
 Men der var Intet uden det —
 Det, som jeg ei tør sige!
@@ -1977,6 +1998,7 @@ Naar bare han kun vilde.
 Men ingen Hjælp vi fra ham fik,
 Og derfor jeg til Kirken gik
 Nu, da det er saa silde.”
+
 <pb n="82" facs="100.jpg"/>„For at faae Blod, min Haand jeg skar —
 Til Gud jeg mig forskrevet har,
 Men ikke til den <w>Slemme</w>.
@@ -2073,6 +2095,7 @@ Afsted! — dog holdt! — Du lidt maa vente,
 En Luntepind jeg først vil hente;
 Skjør er den gamle, den let kan knække,
 Hold Barnet, lad Dig ikke forskrække!
+
 <pb n="86" facs="104.jpg"/>En Stund hun sidder saa ene her;
 Det rasler i Busken — „hvem er der?”
 En kulsort Hund — hun Varulven kjender,
@@ -2241,6 +2264,9 @@ Som Bautasteen staaer Templet paa hans Grav.
   <title>De to Ravne</title>
   <subtitle>(Skotsk Ballade.)</subtitle>
   <firstline>Der sidde to Ravne paa Træet hist</firstline>
+  <notes>
+    <note>Gendigtning af anonym skotsk folkevise: <xref type="translation" poem="anonymsco2026100201"/>.</note>
+  </notes>
   <source pages="93-94"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -2265,6 +2291,7 @@ Men vi faae et kosteligt Maaltid her!”
 Og hakker ham ud hans Øine to,
 Og med hans Haar vil jeg flyve afsted,
 Og flikke min gamle Rede dermed!”
+
 <pb n="94" facs="112.jpg"/>„Saa mangt et Øie vil svømme i Vand,
 Dog finder Ingen den Riddersmand;
 Det blæser koldt over Busk og Green,
@@ -2302,6 +2329,7 @@ Og Havfruen aner et bedre Liv.
 Hun hæver sig op fra de grønne Siv,
 Og seer ham i Øiet en eneste Gang,
 Da forstummer hans Sang.
+
 <pb n="96" facs="114.jpg"/>Selv bliver hun bleg og atter rød,
 I Øiet tændes Kjærligheds Glød.
 Hun trykker hans Haand — hvor bæver hans Bryst.
@@ -2350,6 +2378,7 @@ Men Danmark stoler paa Herren.
 Den danske Konge paa Volden staaer,
 De gloende Kugler omkring ham slaaer,
 Men Danmark stoler paa Herren.
+
 <pb n="98" facs="116.jpg"/>Alt eier Fjenden den hele Ø;
 Men <w>Frederik</w> svoer i sin Rede at døe;
 Og Danmark stoler paa Herren.
@@ -2385,11 +2414,11 @@ For Seiren takke de Herren.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote>Kjærlighed er stærk som Døden, —
 — Skjøn som Morgenrøden.
 <w>Oehlenschläger.</w>
 </quote>
+<poetry>
 See Solen blusser saa elskovsrød!
 Den lægger sit Hoved i Bølgens Skjød.
 Dog, hvem kan skildre det ret med Ord!
@@ -2422,10 +2451,10 @@ Og Hjerter troer paa sin Skaber.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote lang="fr">„Lui, lui, et toujours lui.”
 <i>Victor Hugo.</i>
 </quote>
+<poetry>
 Aft’nen er taaget — døsigt Lygterne brænde;
 Kun paa sin Støi og sin Larm kan man kjende
 Det store Paris.
@@ -2572,6 +2601,7 @@ Men hun gjorde Nar af min Kjærlighed,
 Hun var som de andre af Evas Slægt,
 Jeg blev da igjen en Tyveknægt,
 Og det skal jo nogen være!
+
 <pb n="107" facs="125.jpg"/><w>Den tredie Dag</w> — ih nu, lad gaae!
 Jeg maa vel slægte min Fader paa.
 Af Sult min Moder forlængst gik bort,
@@ -2593,11 +2623,11 @@ At see, hvor Tyven kan dingle!
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote lang="sv">Sundets vågor
 Sofva kring den frosna kust.
 <i>E. Tegnér.</i>
 </quote>
+<poetry>
 Høit ligger paa Marken den hvide Snee,
 Dog kan man Lyset i Hytten see;
 Der venter Pigen ved Lampens Skjær
@@ -2617,6 +2647,7 @@ Over Mark og By.
 „Jeg kaarer Dig til min Hjertenskjær,
 „Kom, følg mig høit paa min svømmende Ø,
 „Over Bjerg og Sø!”
+
 <pb n="109" facs="127.jpg"/>Snee-Flokkene falde saa tykt, saa tæt.
 „Jeg fanger Dig vist i mit Blomster-Næt!
 „Hvor Snee-Dyngen reiser sig høit paa Eng,
@@ -2734,13 +2765,13 @@ Nu vil han hævne sig med sine Pile.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote>Fra Eid’rens Strøm til Skagens nøgne Banker
 Den jydske Halvø krummer sig mod Nord; —
 — Den fede Hjord i Kløverengen vanker,
 Og Stimer myldre i den dybe Fjord.
 Sørgespillet <w>Svend Grathe.</w>
 </quote>
+<poetry>
 Da Oldtid kun var nyfødt Skum paa Tidens stolte Vove,
 Laae <w>Jylland</w> som et Vildnis stort, med dybe, sorte Skove;
 Een Skov det hele Land kun var, hvor stolte Ege groede,
@@ -2790,10 +2821,10 @@ Mens Fredens Blomster voxe smukt om Heltens Bautastene.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote lang="de">Die Meerfrau steigt aus den Wellen —
 <w>H. Heine.</w>
 </quote>
+<poetry>
 Det er sildigt alt paa Aft’nen, Stormen stiger meer og meer,
 Bølgen vælter sig mod Kysten, hvor man Fiskerhytten seer.
 O, der er saa lunt derinde, gamle Mutter sidder her,
@@ -2823,26 +2854,32 @@ Vandrer saa afsted fra Hytten, frygter ikke Storm og Nat;
 Men han skotter sky til Stranden, — aldrig Veien var saa lang —
 Havfruen i Dybet dukker; Stormen synger nu sin Sang.
 
-<nonum>2.</nonum>
+---
+
+<nonum><center>2.</center></nonum>
 I Røg og Damp staaer Bugt og Sø,
 Paa Bølgen glider Havets Mø;
 Sin Helt hun seer paa Dækket staae;
 Høit om hans Daad vil Harpen slaae:
-<quote>„Kong <w>Christian</w> stod ved høien Mast
-    I Røg og Damp.
-Hans Værge hamrede saa fast,
-At Gothens Hjelm og Hierne brast;
-Da sank hvert fiendtligt Speil og Mast
-    I Røg og Damp.
-Fly, skreg de, fly, hvad flygte kan!
-Hvo staaer mod Danmarks Christian,
-    I Kamp?!”
-</quote>
+
+<small>„Kong <w>Christian</w> stod ved høien Mast</small>
+    <small>I Røg og Damp.</small>
+<small>Hans Værge hamrede saa fast,</small>
+<small>At Gothens Hjelm og Hierne brast;</small>
+<small>Da sank hvert fiendtligt Speil og Mast</small>
+    <small>I Røg og Damp.</small>
+<small>Fly, skreg de, fly, hvad flygte kan!</small>
+<small>Hvo staaer mod Danmarks Christian,</small>
+    <small>I Kamp?!”</small>
+
 Fra Fader-Øiet strømmer det røde Helteblod,
 Men han har Seiren vundet og hævet Danmarks Mod.
 See, Fjendens Skare flygter — og gjennem Sund og Belt
 Den glade Havfrue synger om Seiren og sin Helt.
-<pb n="120" facs="138.jpg"/><nonum>3.</nonum>
+
+---
+
+<pb n="120" facs="138.jpg"/><nonum><center>3.</center></nonum>
 Aarhundreder forsvinde i Tidens dybe Grav.
 See, Natten er saa stille, speilklar er Fjord og Hav;
 Dampskibet glider hurtigt, langs <w>Samsøes</w> grønne Kyst,
@@ -2867,6 +2904,8 @@ Og mat, som Bølgens Skvulpen er hendes sidste Sang.
 <pb n="121" facs="139.jpg"/>De Passagerer vaagne. — Det kuler stærkt fra Nord.
 — Havfruen er forsvunden, forstummet hendes Sang,
 Men Skum der sees paa Bølgen og paa det brune Tang.
+
+---
 </poetry>
 </body>
 </text>
@@ -2998,11 +3037,11 @@ Mens Bølgen skumhvid vælter sig gjennem Øresund.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote>Tanker i vingede Flugt, jeg skimter lig svømmende Lande,
 Og som de svæve forbi, tegner jeg dristig dem ned!
 <w>C. Hauch.</w>
 </quote>
+<poetry>
 Et Syn jeg saae paa Tankens stærke Strøm,
 Det var saa klart, det var ei nogen Drøm!
 Det var et Syn, der males ei ved Ord,
@@ -3074,6 +3113,9 @@ Og Himlen sang: „<w>Halleluja, vor Fader!</w>”
   <title>Tiggeren og hans Hund</title>
   <subtitle>(Efter <w>Adalbert von Chamisso</w>.)</subtitle>
   <firstline>Erlægge tre Daler i Skat for min Hund</firstline>
+  <notes>
+    <note>Gendigtning af Chamisso: <xref type="translation" poem="chamisso2026100201"/>.</note>
+  </notes>
   <source pages="130-132"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -3098,6 +3140,7 @@ Hvo elskede mig vel tro og huld,
 Hvo varmed’ mig mod Vinterens Kuld,
 Hvo fulgte mig min tunge Vei,
 Og hungred’ med, men knurred’ ei?
+
 <pb n="131" facs="149.jpg"/>Det gaaer til agters med os to,
 Du er nu syg og gammel jo,
 Du stakkels Dyr! — trods Vee og Ak,
@@ -3122,6 +3165,7 @@ Han gjorde en Eed — det var en Gru!
 Sin sidste Kraft han samled’ nu,
 Og styrtede sig i Floden ned,
 Den skjulte ham med hvad han leed.
+
 <pb n="132" facs="150.jpg"/>Og Hunden sprang ud — den frelse vil!
 Den hyled’ om Hjælp; snart Folk kom til;
 Den logred’, den greb den gamle Mand,
@@ -3143,11 +3187,11 @@ Den lagde sig paa Graven her,
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote lang="de">Soll ich dir die Gegend zeigen,
 Mußt du erst das Dach besteigen.
 <w>Göthe.</w>
 </quote>
+<poetry>
 Seer Du Huset med de røde Bjelker i den hvide Muur?
 Rundt om kneise stolte Bøge i den store, frie Natur.
 Seer Du hist, bag Brombærhækken, Drengen med det aabne Blik?
@@ -3258,11 +3302,11 @@ Og de store, hvide Vinger voxne er’ fra Skuldren frem.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote>Det Grønne, Blaae og Røde var kun Tant, —
 Maaskee det Sorte turde være Sandt.
 <w>C. Wilster.</w>
 </quote>
+<poetry>
 O siig mig dog, kjær’ Moder, hvad aldrig Du har sagt,
 Naar skal jeg see min Fader? Er han i Jorden lagt?
 Ei før Du mig fortalte, hvem dog min Fader var,
@@ -3382,6 +3426,7 @@ Det er saa tungt, saa knusende tungt,
 At døe mens Hjertet endnu er ungt!
 Jeg mægter ei længer at see derpaa!
 Jeg føler det gjennem mit Hoved gaae.
+
 <pb n="146" facs="164.jpg"/>See Mændene holde ham fast i Favn —
 — Men hvorfor nævne I mig ved Navn?
 <w>Vor Herre</w> bevare Enhvers Forstand!
@@ -3406,11 +3451,11 @@ Jeg selv er en fattig Spillemand.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote>Herlige Hav!
 Ved din svulmende Barm har jeg hjemme.
 <w>Ingemann.</w>
 </quote>
+<poetry>
 Er’ disse høie, sorte Masser Fjelde?
 Nei! fremad styrte de med Vælde,
 Og Sneens Dynger paa den høie Tinde,
@@ -3461,10 +3506,10 @@ Med Dig og Stormen jeg min Gud vil love!
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote>— „Der er godt at være.”
 <w>Wilster.</w>
 </quote>
+<poetry>
 Ved Tanken om min Føde-Ø,
 Forsvinder hver en Smerte!
 Den favnes af den stolte Sø,
@@ -3556,11 +3601,11 @@ For Gud jeg kun kan tolke Ønsket ret:
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote>„Herrer vi ere i Aandernes Rige,
 Vi er den Stamme, som evigt vil staae.”
 <w>C. Winther.</w>
 </quote>
+<poetry>
     Herskere i Aandens Rige
     Er’ Studenterne for vist!
     Aander maae fra Graven stige
@@ -3663,11 +3708,11 @@ Vi er den Stamme, som evigt vil staae.”
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote>„Lad Fovlen flyv’,
 Lad Taagen dryv” —
 <w>Sallingboe Hyrdesang.</w>
 </quote>
+<poetry>
 Hist hvor man kun seer Lyngen groe,
 Der laves Jydepotter jo,
 Der laves store, laves smaae,
@@ -3816,11 +3861,11 @@ Sjælen alt om Freia drømmer,
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote lang="el"><i>Ἴδε, πῶς κῦμα θαλάσσης
 ἀπαλύνεται γαλήνη.</i>
-<w>Anacreon.</w>
+<w>Anacreon.</w><footnote>Mottoet er fra <xref poem="anakreontika2025122837"/> i <i>Anakreontika</i>.</footnote>
 </quote>
+<poetry>
 Har Du seet Havet i en klar og stille Nat,
 Naar Fladen ligger som et Speil saa glat,
 Hvor Himlens halve Kugle, stjerneklar,
@@ -3885,6 +3930,7 @@ Med Kornet Kraften styrkes,
 Som blev i Dansken lagt.
 Her Videnskaben dyrkes
 Med Sandheds Lyst i Pagt.
+
 <pb n="168" facs="186.jpg"/>En Drot vi fik tillige,
 For ham er Hjertet Tolk,
 En Konge for sit Rige,
@@ -3914,12 +3960,12 @@ Som Kongen signer dem
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote lang="de">Ich singe mit schwerem Herzen.
 Sieh doch einmal die Kerzen,
 Sie leuchten in dem sie vergehn.
 <w>Göthe.</w>
 </quote>
+<poetry>
 Mellem det Dybe og Høie
 Blev en Luftaand født. Med funklende Øie
 Saae han det store Univers sig hvælve.
@@ -3992,11 +4038,11 @@ Faae dog alene fra denne sin Glands.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote>Her i Tid, og hist i Evighed
 Eet er ene nødigt: Kjærlighed.
 <w>Baggesen.</w>
 </quote>
+<poetry>
 Hvor Bølgen høit mod Kysten slaaer,
 En ganske lille Hytte staaer;
 Men rundt om paa det hele Næs,
@@ -4026,11 +4072,11 @@ Her svulmer Hjerte kun mod Hjerte.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote lang="de">„Unendlichkeit kann nur das Wesen ahnen,
 Das zur Unendlichkeit erkoren ist.”
 <w>Urania von Tiedge.</w>
 </quote>
+<poetry>
 Kraft, som i vort Indre lever,
 Men ei tolkes kan med Ord;
 Du, som os til Himlen hæver,
@@ -4096,6 +4142,7 @@ Hvorfor mon da Herren tænde
 Anelse om Evighed?
 „<w>Lev og nyd,</w>” blev da, o Gud,
 Livets store, sande Bud.
+
 <pb n="176" facs="194.jpg"/>Nei, o Aand! Du lever! <w>lever!</w>
 Ellers var jo Gud ei Gud;
 Til en Salighed Du svæver,
@@ -4151,13 +4198,16 @@ Thi Danmark har beholdt sin Glæde.
 <head>
   <title>Pauli 1 Cor. 15, 42-44</title>
   <firstline>Naar Jordelarver briste</firstline>
+  <notes>
+    <note>Titlen og mottoet henviser til <xref bible="bibel1korint15,42-44"/>.</note>
+  </notes>
   <source pages="178-180"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote>Legemet, som døer — “det saaes i Forkrænkelighed, det opstaaer i uforkrænkelighed; det saaes i Skrøbelighed, det opstaaer i Kraft; <w>det saaes et naturligt Legeme, det opstaaer et aandeligt Legeme.</w>
 </quote>
+<poetry>
 Naar Jordelarver briste
   med sine skjøre Baand,
 Et aandigt Legem slutter
@@ -4290,7 +4340,7 @@ De finde, Jord og Himmel har mange smukke Ting.
 Det fyenske Land de prise, og det af Hjertets Lyst,
 Det maa jo ret begeistre hver ærlig Fyenboes Bryst.
 
-  — Ja, <w>Fyen</w> er ret et herligt Land!
+  — Ja, <w>Fyen</w> er ret et herligt Land!<footnote>Andersen citerer her første del af sin egen sang »Fyen«; fortsættelsen står som <xref poem="andersen2026100157"/> i dette bind.</footnote>
   Det kan dog ingen nægte,
   Der vexle Skov og Mark og Strand,
   Og Hjertet der er ægte.
@@ -4349,10 +4399,10 @@ Thi Glæden er en kort, men deilig Drøm.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote lang="de">— O! Wer nicht zuweilen zu viel und zu weich empfindet, der empfindet gewiß immer zu wenig.
 <w>Jean Paul.</w>
 </quote>
+<poetry>
 Vidt i det Uendelige
   Strækker sig det stolte Hav;
 Lystigt glide Skib og Baade
@@ -4370,6 +4420,7 @@ Og hver Skipper har en Kone,
   Hun er ham hans bedste Last;
 Vuggen med den lille Unge
   Surret er til Skibets Mast.
+
 <pb n="188" facs="206.jpg"/>Hør! De synge, hør! De snakke,
   Andre sove nok saa trygt;
 Men et Skib mod Strømmen seiler,
@@ -4396,6 +4447,7 @@ Han tør Fortids Kyst beseile,
   Alt oplives der paa ny.
 Fremtid selv staaer som en Stjerne,
   Bag den lette Morgensky.
+
 <pb n="189" facs="207.jpg"/>Høit han i Begeistring synger
   Himlens Fred og Jordens Lyst;
 Thi det store Heles Billed’
@@ -4422,6 +4474,7 @@ Ene er han i sin Himmel,
   Intet Hjerte mod ham slaaer;
 Ene er han i sin Smerte,
   Ene han i Døden staaer!
+
 <pb n="190" facs="208.jpg"/>Hjertet vil et Hjerte møde —
   Nu han klart sin Længsel veed,
 Og han styrter sig i Vrimlen,
@@ -4443,88 +4496,119 @@ Men fra Himlen funkler Stjernen
 </head>
 <body>
 <poetry>
-<nonum>I.</nonum>
+<nonum><center>I.</center></nonum>
 Jeg slutter snildt af min Natur,
 Vil den ei svigte:
 Jeg bliver selv Maculatur
 Før mine Digte!
 
-<nonum>II.</nonum>
+---
+
+<nonum><center>II.</center></nonum>
 Ei Roes, ei Dadel standser Skjaldens Flugt,
 — Ved Storm og Solskin bliver Blomsten Frugt.
 
-<nonum>III.</nonum>
+---
+
+<nonum><center>III.</center></nonum>
 Hvad er vort Liv fra Vuggen til vor Baare?
 Et Sandkorn, under Tidens Bølgehav.
 Men husk: til Perler bliver hver vor Taare,
 Naar Græsset bølger paa den glemte Grav.
 
-<nonum>IV.</nonum>
+---
+
+<nonum><center>IV.</center></nonum>
 Derud i Verden Hjertet maa,
 Lad Storm og Regn kun ruske.
 Guldbjerge har den ikkun faae,
 Men flere Tornebuske.
-<pb n="192" facs="210.jpg"/><nonum>V.</nonum>
-<nonum>(Med et Exemplar af “<w>Fodreisen</w>”.)</nonum>
+
+---
+
+<pb n="192" facs="210.jpg"/><nonum><center>V.</center></nonum>
+<nonum><center>(Med et Exemplar af “<w>Fodreisen</w>”.)</center></nonum>
 Du, som saa ofte læste i mit Hjerte,
 Hvad galt og klogt det kunde falde paa,
 Som deelte søsterligt min Glæde og min Smerte,
 Vil ogsaa her mig allerbedst forstaae.
 
-<nonum>VI.</nonum>
-<nonum>(Med <w>Digtene</w>).</nonum>
+---
+
+<nonum><center>VI.</center></nonum>
+<nonum><center>(Med <w>Digtene</w>).</center></nonum>
 Hvad Hjertet drømte, hvad Øiet saae,
 Det voxer her som Blomster smaae.
 
-<nonum>VII.</nonum>
-<nonum>(Med: “<w>Phantasier og Skizzer</w>”.)</nonum>
+---
+
+<nonum><center>VII.</center></nonum>
+<nonum><center>(Med: “<w>Phantasier og Skizzer</w>”.)</center></nonum>
 Skjaldens dybe Sorg og Lyst
 Bliver Toner i hans Bryst,
 Og mens Sjælen bange længes,
 Synger han, til Hjertet sprænges.
 
-<nonum>VII.</nonum>
-<nonum>(Med et Exemplar af <w>Bruden fra Lammermoor.</w>)</nonum>
+---
+
+<nonum><center>VII.</center></nonum>
+<nonum><center>(Med et Exemplar af <w>Bruden fra Lammermoor.</w>)</center></nonum>
 Lad ei vort Venskabs skjønne Drømmeland
 Som <w>Edgar</w> synke døe i Flyvesand.
-<pb n="193" facs="211.jpg"/><nonum>IX.</nonum>
-<nonum>(Med ”<w>Aarets tolv Maaneder</w>”.)</nonum>
+
+---
+
+<pb n="193" facs="211.jpg"/><nonum><center>IX.</center></nonum>
+<nonum><center>(Med ”<w>Aarets tolv Maaneder</w>”.)</center></nonum>
 Jeg drømmer stolt, vil De min Bog modtage:
 Jeg lægger Maaneder til Deres Dage.
 
-<nonum>X.</nonum>
-<nonum>(Med samme Bog.)</nonum>
+---
+
+<nonum><center>X.</center></nonum>
+<nonum><center>(Med samme Bog.)</center></nonum>
 Skjøn paa det, mens Du har mig!
 Vær ogsaa god, som klog!
 Naar siden Døden ta’er mig,
 Saa har Du kun min Bog.
 
-<nonum>XI.</nonum>
-<nonum>(I en Stambog.)</nonum>
+---
+
+<nonum><center>XI.</center></nonum>
+<nonum><center>(I en Stambog.)</center></nonum>
 Lad Tidens Ege kaste dunkle Skygger.
 Erindrings-Fuglen høit i Træet bygger,
 Den synger os sin Smerte og sin Lyst,
 Og kjære Minder stige i vort Bryst.
 
-<nonum>XII.</nonum>
+---
+
+<nonum><center>XII.</center></nonum>
 Min Tankes Tanke ene Du er vorden,
 Du er mit Hjertes første Kjærlighed,
 Jeg elsker Dig som ingen her paa Jorden,
 Jeg elsker Dig i Tid og Evighed!
-<pb n="194" facs="212.jpg"/><nonum>XIII.</nonum>
-<nonum>(I en Stambog.)</nonum>
+
+---
+
+<pb n="194" facs="212.jpg"/><nonum><center>XIII.</center></nonum>
+<nonum><center>(I en Stambog.)</center></nonum>
 Lad Hav og Søe os skille ad,
 See Mindets Bro er dette Blad,
 Og maa engang selv det forgaae,
 Saa har dog Tanken Vinger smaae.
 
-<nonum>XIV.</nonum>
+---
+
+<nonum><center>XIV.</center></nonum>
 Af <w>Faae</w> et velmeent Raad jeg fik,
 Af <w>Mange</w> en vel stræng Critik,
 Af <w>Flere</w> Bitterhed og Vee —
 Hvad kan jeg svare alle tre?
 Min nye Bog er hvad jeg har,
 Tør jeg vel bringe den — som Svar?
+
+---
 </poetry>
 </body>
 </text>
@@ -4546,12 +4630,12 @@ Tør jeg vel bringe den — som Svar?
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote lang="de">”Wandl’ im Grünen;
 ”Willst Du die Blumen verstehn,
 ”Mußt Du erst den Wald durchgehn.”
 <w>Tieck.</w>
 </quote>
+<poetry>
 Det hele Liv, ret som det staaer
 Og gaaer,
 Kan findes paa en simpel Promenade
@@ -4717,13 +4801,13 @@ For saa begynde Ballerne igjen!
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote lang="de">Und wenn Du schilst und wenn Du tobst,
 Ich werd’ es geduldig leiden;
 Doch wenn Du meine Verse’ nicht lobst,
 Laß ich mich von dir scheiden.
 <w>H. Heine.</w>
 </quote>
+<poetry>
 Jeg savner noget! — skal jeg Navnet sige?
 Det er just ikke af en sjelden Slags;
 Jeg savner — ja, — en lille, bitte Pige —
@@ -4741,6 +4825,7 @@ Men endnu har jeg Ingen ret i Sigte,
 At jeg kan blive for min Længsel qvit;
 Gud veed, jeg sværmer nok for mine Digte,
 Men Herre Gud, det er mig dog for lidt!
+
 <pb n="205" facs="223.jpg"/>Nei, jeg maa eie — hvad jeg nu vil sige —
 En Kjæreste, saa faaer vist Hjertet Ro;
 En lille, kun en ganske lille Pige,
@@ -4870,10 +4955,10 @@ Der seer man ”<w>Formens evige Magie.</w>”
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote lang="de">”Liebe kann einen Satan bekehren.”
 <w>Hofmann.</w>
 </quote>
+<poetry>
 Om mine Digte
     Man sige vil,
 At her det neppe
@@ -4901,13 +4986,13 @@ Gud <w>Amor</w> ene
 </head>
 <body>
 <poetry>
-<nonum><w>Datteren.</w></nonum>
+<nonum><center><w>Datteren.</w></center></nonum>
 Moder, nær de Fiirs I er,
 Og I vil — jeg gyste.
 Nys fra Præd’kestolen her
 Præsten for Jer lyste.
 
-<nonum><w>Moderen.</w></nonum>
+<nonum><center><w>Moderen.</w></center></nonum>
 Barn! Alt falder hen i Gruus,
 Tiderne omskiftes.
 Hvo skal tække mig mit Huus?
@@ -4924,11 +5009,11 @@ Jeg er nødt, jeg giftes.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote lang="de">— — <w>leicht</w> ging er aus dem Leben —
 Sein Bischen Geist, das war <w>leicht</w> aufzugeben.
 <w>Richard Roos.</w>
 </quote>
+<poetry>
 Forleden Aften — saadan Klokken ni —
 Var det forbi.
 Alt længe følte vi, det Enden blev,
@@ -4952,13 +5037,13 @@ Vee, tretten Gange Vee de yngere Poeter!!!
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote lang="de">Das Menschenvolk verachtet dich vergebens,
 Der weise Epikur
 Verspricht uns ja das höchste Glück des Lebens,
 Wenn wir dir gleichen nur.
 <w>A. Blumauer.</w>
 </quote>
+<poetry>
 For mangt et Sviin paa To der spilledes paa Lire,
 Thi vil i Dag nu jeg besynge det paa Fire.
 Om hvem er mere talt? Om hvem gik flere Ord?
@@ -5017,9 +5102,9 @@ Jeg kan for Graad ei meer paa Violinen spille.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote lang="de">”Träume sind Schäume.”
 </quote>
+<poetry>
 Hist staaer et Bøgetræ paa Høien ene;
 Afhugget har man jo dets bedste Grene.
 Sært ryster Toppen paa den stakkels Fyr;
@@ -5057,11 +5142,11 @@ Hør kun! — forstod’ vi bare Sproget.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote lang="de">— — — Liebe
 Kennt der allein, der ohne Hoffnung liebt.
 <w>Schiller.</w>
 </quote>
+<poetry>
 Hulde Maane, stig fra Skyen frem!
 Solen hviler alt bag Laas og Lukke.
 Ak Madam, Madam! jeg elsker Dem,
@@ -5207,10 +5292,10 @@ At falde fra Himlen til <w>Vesterbroe!</w>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote lang="it">„Anch’ io son pittore!”
 <i>Correggio.</i>
 </quote>
+<poetry>
 En Aften deilig, som i en Roman!
 (For Rimets Skyld, som een i <w>Hindostan.</w>)
 O Alnaturen til mit Hjerte taler,
@@ -5360,11 +5445,11 @@ Nu gaaer det først som en Kjæp i et Hjul:
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote lang="de">Ehret die Frauen! Sie flechten und weben
 Himmlische Rosen ins irdische Leben.
 <w>Schiller.</w>
 </quote>
+<poetry>
 Alverden mig belærer, man mener det saa godt;
 Ja selv i <w>Morgenposten</w> besynges jeg saa smaat.
 Een er jeg altfor barnlig, en anden altfor rask;
@@ -5752,10 +5837,10 @@ Du er ei bedre Mand, end jeg er Kone.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote>Leporello — „Jeg er frygtelig til Mode!”
 <w>(Operaen: Don Juan).</w>
 </quote>
+<poetry>
 Engang — men det er nu længe siden,
 I en deilig Sommeraften-Stund,
 Da det saadan var omtrent paa Tiden,
@@ -5975,6 +6060,7 @@ Men gjennem Taarer hvert Øie leer,
 <poetry>
 <nonum><center>Trykt i dette Aar.
 Mel.: „Kom lieber Mai.”</center></nonum>
+</poetry>
 <quote>Op til Dands! til Dands!
 eller:
 Der er’ saa mange smukke Piger,
@@ -5984,6 +6070,7 @@ Smukke Pige, vend Dig om.
 Dandse og trampe,
 Saa Skosaalerne falder-af.
 </quote>
+<poetry>
 <nonum><center><i>(con expressione.)</i></center></nonum>
 Spil lystigt paa Violen,
 Alt dandser, tro mit Ord!
@@ -6056,13 +6143,13 @@ Og vore Dandse-Skoe! :,:
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote lang="sv">Der dö väl månnga bubblor bort,
 Som glänste för min syn;
 Men nya växa innan kort
 Med lika bild af skyn.
 <w>Franzén.</w>
 </quote>
+<poetry>
 I Hjertet sidder en lille Person,
     Han gestikulerer saa saare;
 Men det er ækelt, hvor følsom han er,
@@ -6318,11 +6405,11 @@ At ride Fastelavn! :,:
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote>Saa rædsom en Historie
 Jeg aldrig har oplevet.
 <w>Ingemann.</w>
 </quote>
+<poetry>
 Lad Verden tee sig nok saa lærd, foruden som forinden,
 Naar først Cometen viser sig, den ryger dog af Pinden.
 Saa seer man, den er ei solid, men saa er det for silde;
@@ -6491,9 +6578,9 @@ Hvor det dog er en nydelig Mand.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote lang="fr">„Les plaisirs sont divers.”
 </quote>
+<poetry>
 En Sprøite har vi faaet nu,
 Der sprøiter, saa det er en Gru!
 Vor hele By er sjæleglad,
@@ -6536,11 +6623,11 @@ Thi al min Tanke er i Sprøiten.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote lang="la">— minuentur atræ
 carmine curæ.
 <w>Horatius.</w>
 </quote>
+<poetry>
 Du er ei meer!
 Din Digter græder ved Dit brudte Leer.
 Det blev Din Lod at taale Røg og Flamme,
@@ -6748,11 +6835,11 @@ Mod den sørgende Fange.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote lang="de">Röslein, Röslein, Röslein roth,
 Röslein auf der Heide.
 <w>Göthe.</w>
 </quote>
+<poetry>
 Ak, Himlen staaer med Graat i Graat,
 Og Regnen rusker nu saa smaat.
 See, Heden hist og her sig høiner,
@@ -6799,11 +6886,11 @@ Mon hun er alt i Hullet sat?
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote>— — — den nøgne Hede,
 Som er sin egen Grændse — —
 <w>Grundtvig.</w>
 </quote>
+<poetry>
 Sørgened, stor ligger foran os
 Den sortbrune Hede;
 En enkelt Enebærbusk hæver sig lysegrøn
@@ -6883,12 +6970,12 @@ Og viser os Marmor paa Heden.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote lang="sv">Den hela jorden ligner här ett lik,
 Och himlen står liksom en mördere,
 I blodig skrud, betragtande sit offer.
 <w>Atterbom.</w>
 </quote>
+<poetry>
 Man seer ei Træ, ei Busk, selv Lyngen vil ei groe,
 Fra Sandet pipper frem et Græsstraae eller to;
 Sandklitter reise sig, de vexle Dag for Dag,
@@ -6992,11 +7079,11 @@ Med Eet det bliver stille — man hører Øxens Klang.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote lang="de">Die Mühle dreht ihre Flügel,
 Der Sturm, der sauset darin.
 <w>Adalbert von Chamisso.</w>
 </quote>
+<poetry>
 Vort Landskab her er næsten fladt;
 Men Maanen skinner jo i Nat.
 Dog, hvad vi ved dens Lys har seet,
@@ -7303,13 +7390,13 @@ O lad dem ha’ Ro! —
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote lang="de">Fände sich ein Nederländer hier,
 Er nähme wahrlich gleich Quartier,
 Und was er sieht, und was er mahlt,
 Wird hundert Jahre nachgezahlt.
 <w>Göthe.</w>
 </quote>
+<poetry>
 Solen skinner i Naboens Gaard, Husene ere saa lave,
 Gaarden har Plads til en Møding kun og en trealens Have.
 Haven er i sin egen Maneer, den har slet ingen Gange;
@@ -7341,11 +7428,11 @@ Gaardhanen stikker sit Hoved frem, bryster sig stolt og galer.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote><span lang="de">— Man schreibet von <w>Paris</w>, es habe kein Gefahr, —</span>
 — Til <w>Paradiis</w> fra os er nu fast ingen Fart. —
 <w>Holbergs „Peder Paars.”</w>
 </quote>
+<poetry>
 Der var engang en Enke —
 Dog nei! — — jeg maa mig først betænke; —
 Hun havde været det, men var nu gift paany,
@@ -7526,13 +7613,13 @@ Men, <w>de kan bedre tie stille!</w>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote lang="de">Es giebt so bange Zeiten,
 Es giebt so trüben Muth,
 Wo alles sich vom weiten
 Gespenstisch zeigen thut.
 <w>Novalis.</w>
 </quote>
+<poetry>
 Kom ei Rundetaarn for nær, er det Midnatstide;
 Hvad mig nylig hændte der, skal I faae at vide.
 Paa Bibliotheket hist er ei rart saa silde,
@@ -7980,11 +8067,11 @@ Ved dette Syn hun raaber høit og græder:
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote>Man sætte Hjerte for, man sætte Hjerte bag,
 En Tyv er dog en Tyv, det er en afgjort Sag.
 <w>Wessel.</w>
 </quote>
+<poetry>
 Bekjendt er Amor jo, det slemme Skarn!
 Man ham afmaler som et deiligt Barn
 Med Piil og Bue, samt med store Vinger;
@@ -8075,9 +8162,9 @@ Thi hjerteløs, det kan jeg ikke være!
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
 <quote lang="el">„Μὴ εἰσενεγκης ἡμᾶς εἰς πειρασμον.”
 </quote>
+<poetry>
 Før jeg med Blæk Papiret vil bemale,
 En lille Tale:
 Troer, Læser, Du paa Aander, eller ei?

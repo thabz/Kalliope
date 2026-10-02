@@ -774,8 +774,9 @@ Særlige linjeformer:
 
 - En blank linje bevares.
 - En linje med kun tal eller romertal bliver `<versenum>`.
-- En linje med `----` bliver `<hr width="4"/>`.
-- En linje med `====` bliver `<hr width="4" class="double"/>`.
+- En linje med `---` eller `----` bliver til en vandret streg under rendering.
+- En linje med `====` bliver til en dobbelt vandret streg under rendering.
+- Skriv ikke `<hr/>` direkte i værkfilen; brug en skillelinje på sin egen linje.
 - Indledende mellemrum bliver til non-breaking spaces.
 - Linjer med kun `***`, `___` eller lignende pakkes i `<nonum>`.
 

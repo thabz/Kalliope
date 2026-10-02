@@ -1553,8 +1553,21 @@ present. Every page-inventory row must therefore have
 that records the observed and encoded emphasis, or explicitly records that the
 page contains none. Put
 a small JSON file in scratch space with `producer`, `tests`,
-`candidate_reviews` and `reviewer_ranges`, then create the frozen checkpoint
+`candidate_reviews`, `visual_structure_reviews` and `reviewer_ranges`, then create the frozen checkpoint
 outside the worktree.
+The category counts are summaries, not proof that individual candidates were
+reviewed. Run `analyze-whole-work.js` on the final XML with the TSV directory and
+save its complete JSON output. For every `poems[*].candidates[*].candidate_id`
+in that report, add exactly one finding with the same `candidate_id`, a final
+status, a concrete disposition and direct facsimile evidence. Record a rejected
+false positive too; do not omit it. After any XML change, rerun the analysis and
+reconcile the new candidate IDs. The checkpoint checks the report against the
+current XML and refuses missing OCR geometry or unaccounted candidates.
+Add one `visual_structure_reviews` record per poetry block, including the text
+ID, one-based block index, stanza lengths read from the facsimile, all facsimile
+pages inspected, the independent reviewer and a specific disposition. The
+checkpoint compares the visually confirmed lengths with the final XML even
+when the analyzers emitted no candidates.
 Each range has a stable `reviewer`, `facsimile_from` and `facsimile_to`; ranges
 must not overlap, must cover the complete inventory and must agree with each
 inventory row's reviewer. For example:
@@ -1570,6 +1583,9 @@ inventory row's reviewer. For example:
     {"kind": "indentation", "reviewer": "reviewer-model-session", "status": "reviewed", "candidate_count": 49, "reviewed_count": 49},
     {"kind": "typography", "reviewer": "reviewer-model-session", "status": "reviewed", "candidate_count": 18, "reviewed_count": 18}
   ],
+  "visual_structure_reviews": [
+    {"text_id": "example1900010101", "block_index": 1, "status": "reviewed", "reviewer": "reviewer-model-session", "visual_stanza_lengths": [4, 4], "facsimiles": ["055.jpg"], "disposition": "Begge firelinjede strofer og mellemrummet er kontrolleret på facsimilet."}
+  ],
   "reviewer_ranges": [
     {"reviewer": "reviewer-model-session", "facsimile_from": "000.jpg", "facsimile_to": "099.jpg"}
   ]
@@ -1581,7 +1597,8 @@ Create and verify the checkpoint with:
 ```shell
 node .agents/skills/pdf-to-kalliope/scripts/review-checkpoint.js create \
   /tmp/<work>-checkpoint.json /tmp/<work>-findings.jsonl \
-  /tmp/<work>-pages.jsonl /tmp/<work>-review.json
+  /tmp/<work>-pages.jsonl /tmp/<work>-review.json \
+  fdirs/<poet>/<work>.xml /tmp/<work>-structure.json
 node .agents/skills/pdf-to-kalliope/scripts/review-checkpoint.js verify \
   /tmp/<work>-checkpoint.json
 ```

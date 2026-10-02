@@ -62,6 +62,8 @@ describe('tracked work corpus', () => {
   let pageIntervalIssues;
   let pageOnlySourceIssues;
   let poetryBoundaryBlankLineIssues;
+  let nestedBodyBlockIssues;
+  let sourceHrIssues;
   let asteriskOrnamentSpacingIssues;
   let rawAsteriskOrnamentIssues;
   let andreWorkheadSourceIssues;
@@ -90,6 +92,8 @@ describe('tracked work corpus', () => {
     pageIntervalIssues = [];
     pageOnlySourceIssues = [];
     poetryBoundaryBlankLineIssues = [];
+    nestedBodyBlockIssues = [];
+    sourceHrIssues = [];
     asteriskOrnamentSpacingIssues = [];
     rawAsteriskOrnamentIssues = [];
     andreWorkheadSourceIssues = [];
@@ -135,6 +139,24 @@ describe('tracked work corpus', () => {
         structuralTagsOutsideColumnZero(xml).length > 0
       ) {
         formattingIssues.push(filename);
+      }
+
+      const workDocument = parseWorkXml(xml);
+      if (/<hr\b/u.test(xml)) {
+        sourceHrIssues.push(filename);
+      }
+      for (const body of getElementsByTagNames(workDocument, ['body'])) {
+        for (const block of getElementsByTagNames(body, [
+          'poetry',
+          'prose',
+          'quote',
+        ])) {
+          if (block.parentNode?.tagName !== 'body') {
+            nestedBodyBlockIssues.push(
+              `${filename}: <${block.tagName}> inside <${block.parentNode?.tagName}>`
+            );
+          }
+        }
       }
 
       const xmlWithoutOrnamentBoundarySpacing = xml
@@ -245,6 +267,14 @@ describe('tracked work corpus', () => {
 
   it('keeps poetry free of leading and trailing blank lines', () => {
     expect(poetryBoundaryBlankLineIssues).toEqual([]);
+  });
+
+  it('keeps poetry, prose, and quote as sibling body blocks', () => {
+    expect(nestedBodyBlockIssues).toEqual([]);
+  });
+
+  it('uses source separator lines instead of hr elements', () => {
+    expect(sourceHrIssues).toEqual([]);
   });
 
   it('does not preserve probable print-line word divisions in prose', () => {
