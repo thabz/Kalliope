@@ -84,7 +84,6 @@
         <ref name="wrap"/>
         <ref name="line"/>
         <ref name="br"/>
-        <ref name="hr"/>
         <ref name="pb"/>
         <ref name="img"/>
         <ref name="colored"/>
@@ -327,13 +326,6 @@
     </element>
   </define>
 
-  <define name="hr">
-    <element name="hr">
-      <optional><attribute name="width"><text/></attribute></optional>
-      <ref name="mixed"/>
-    </element>
-  </define>
-
   <define name="pb">
     <element name="pb">
       <optional><attribute name="n"><text/></attribute></optional>
@@ -530,7 +522,6 @@
         <ref name="metrik"/>
         <ref name="line"/>
         <ref name="br"/>
-        <ref name="hr"/>
         <ref name="pb"/>
         <ref name="img"/>
         <ref name="colored"/>

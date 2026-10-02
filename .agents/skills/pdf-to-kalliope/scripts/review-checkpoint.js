@@ -4,6 +4,7 @@ import fs from 'fs';
 import { execFileSync } from 'child_process';
 import { fileURLToPath } from 'url';
 import { readJsonLines, sha256 } from './audit-utils.js';
+import { analyzeWholeWork } from './analyze-whole-work.js';
 import { validateFindings } from './findings-register.js';
 
 const git = (root, args) => execFileSync('git', args, { cwd: root, encoding: 'utf8' });
@@ -69,6 +70,139 @@ const validateCandidateReviews = (reviews, producer) => {
   return errors;
 };
 
+const validateWholeWorkCandidates = ({ analysis, workXml, findings }) => {
+  if (analysis == null || workXml == null) {
+    return ['helværksanalyse og aktuel XML mangler'];
+  }
+  const errors = [];
+  if (analysis.source_xml_sha256 !== sha256(workXml)) {
+    errors.push('helværksanalysen hører ikke til den aktuelle XML');
+  }
+  if (!Array.isArray(analysis.poems)) {
+    return [...errors, 'helværksanalysen mangler digtlisten'];
+  }
+  const baseline = analyzeWholeWork(workXml);
+  const expectedPoems = new Map(baseline.poems.map(poem => [
+    `${poem.text_id}:${poem.block_index}`,
+    poem,
+  ]));
+  if (analysis.poems.length !== baseline.poems.length) {
+    errors.push('helværksanalysen dækker ikke alle digte i XML');
+  }
+  if (analysis.candidate_inventory_sha256 !== sha256(JSON.stringify(
+    analysis.poems.map(poem => [poem.text_id, poem.block_index, poem.candidates])
+  ))) {
+    errors.push('helværksanalysens kandidatliste stemmer ikke med dens hash');
+  }
+  if (analysis.poems.length > 0 &&
+      analysis.geometry_summary?.poetry_block_count !== analysis.poems.length) {
+    errors.push('helværksanalysen mangler OCR-geometri for digtene');
+  }
+  const candidateIds = new Set();
+  analysis.poems.forEach(poem => {
+    const poemKey = `${poem.text_id}:${poem.block_index}`;
+    const expected = expectedPoems.get(poemKey);
+    expectedPoems.delete(poemKey);
+    if (expected == null ||
+        JSON.stringify(poem.stanza) !== JSON.stringify(expected.stanza) ||
+        JSON.stringify(poem.page_breaks) !== JSON.stringify(expected.page_breaks)) {
+      errors.push(`digtet ${poem.text_id ?? '?'} svarer ikke til aktuel XML`);
+    }
+    if (poem.geometry == null) {
+      errors.push(`digtet ${poem.text_id ?? '?'} mangler OCR-geometri`);
+    }
+    if (!Array.isArray(poem.candidates)) {
+      errors.push(`digtet ${poem.text_id ?? '?'} mangler kandidatlisten`);
+      return;
+    }
+    const coreSources = new Set(['stanza', 'indentation', 'wrapper']);
+    const actualCore = poem.candidates
+      .filter(candidate => coreSources.has(candidate.source))
+      .map(({ candidate_id, ...candidate }) => candidate);
+    const expectedCore = expected?.candidates.filter(candidate =>
+      coreSources.has(candidate.source)
+    ).map(({ candidate_id, ...candidate }) => candidate) ?? [];
+    if (JSON.stringify(actualCore) !== JSON.stringify(expectedCore)) {
+      errors.push(`digtet ${poem.text_id ?? '?'} mangler strukturelle kandidater fra aktuel XML`);
+    }
+    poem.candidates.forEach((candidate, index) => {
+      const id = candidate.candidate_id;
+      if (typeof id !== 'string' || id === '') {
+        errors.push(`kandidat i ${poem.text_id ?? '?'} mangler candidate_id`);
+        return;
+      }
+      const { candidate_id, ...candidateContent } = candidate;
+      if (id !== sha256(JSON.stringify([
+        poem.text_id,
+        poem.block_index,
+        index,
+        candidateContent,
+      ]))) {
+        errors.push(`kandidat ${poem.text_id}:${candidate.type} har ugyldigt candidate_id`);
+      }
+      if (candidateIds.has(id)) errors.push(`duplikeret candidate_id: ${id}`);
+      candidateIds.add(id);
+      const matches = findings.filter(finding => finding.candidate_id === id);
+      if (matches.length !== 1) {
+        errors.push(`kandidat ${poem.text_id}:${candidate.type} (${id}) har ${matches.length} dispositioner`);
+      } else if (!['verified', 'rejected', 'withdrawn'].includes(matches[0].status)) {
+        errors.push(`kandidat ${poem.text_id}:${candidate.type} (${id}) er ikke afsluttet`);
+      }
+    });
+  });
+  if (expectedPoems.size > 0) errors.push('helværksanalysen mangler digte fra aktuel XML');
+  return errors;
+};
+
+const validateVisualStructureReviews = ({ analysis, reviews, producer }) => {
+  if (!Array.isArray(analysis?.poems)) return [];
+  const errors = [];
+  const expectedKeys = new Set(analysis.poems.map(poem =>
+    `${poem.text_id}:${poem.block_index}`
+  ));
+  analysis.poems.forEach(poem => {
+    const matches = reviews.filter(review =>
+      review.text_id === poem.text_id &&
+      review.block_index === poem.block_index
+    );
+    if (matches.length !== 1) {
+      errors.push(`digtet ${poem.text_id}, blok ${poem.block_index}, har ${matches.length} visuelle strofekontroller`);
+      return;
+    }
+    const review = matches[0];
+    if (review.status !== 'reviewed' ||
+        review.reviewer == null || review.reviewer === '' ||
+        review.reviewer === producer) {
+      errors.push(`digtet ${poem.text_id}, blok ${poem.block_index}, mangler uafhængig visuel kontrol`);
+    }
+    if (JSON.stringify(review.visual_stanza_lengths) !==
+        JSON.stringify(poem.stanza.observed_stanza_lengths)) {
+      errors.push(`digtet ${poem.text_id}, blok ${poem.block_index}, har strofelængder som ikke stemmer med facsimilekontrollen`);
+    }
+    if (!Array.isArray(review.facsimiles) || review.facsimiles.length === 0 ||
+        review.facsimiles.some(facsimile => !Number.isFinite(facsimileNumber(facsimile)))) {
+      errors.push(`digtet ${poem.text_id}, blok ${poem.block_index}, mangler facsimilesider i kontrollen`);
+    } else {
+      const expectedFacsimiles = (poem.geometry?.selected_variants ?? [])
+        .map(variant => variant.facsimile)
+        .sort();
+      if (expectedFacsimiles.length > 0 &&
+          JSON.stringify([...review.facsimiles].sort()) !== JSON.stringify(expectedFacsimiles)) {
+        errors.push(`digtet ${poem.text_id}, blok ${poem.block_index}, har ikke kontrolleret alle facsimilesider`);
+      }
+    }
+    if (typeof review.disposition !== 'string' || review.disposition.trim() === '') {
+      errors.push(`digtet ${poem.text_id}, blok ${poem.block_index}, mangler visuel disposition`);
+    }
+  });
+  reviews.forEach(review => {
+    if (!expectedKeys.has(`${review.text_id}:${review.block_index}`)) {
+      errors.push(`visuel strofekontrol peger på ukendt digt ${review.text_id}:${review.block_index}`);
+    }
+  });
+  return errors;
+};
+
 const currentReviewState = root => {
   const trackedChanges = git(root, ['diff', '--name-only', '-z', 'HEAD'])
     .split('\0')
@@ -97,6 +231,9 @@ const createCheckpoint = ({
   reviewerRanges,
   producer = null,
   candidateReviews = [],
+  visualStructureReviews = [],
+  analysis = null,
+  workXml = null,
   state = null,
   artifactFiles = {},
 }) => {
@@ -109,6 +246,8 @@ const createCheckpoint = ({
     ...(producer != null && producer !== '' ? [] : ['reviewet mangler producent']),
     ...validateReviewerRanges(reviewerRanges, inventory, producer),
     ...validateCandidateReviews(candidateReviews, producer),
+    ...validateWholeWorkCandidates({ analysis, workXml, findings }),
+    ...validateVisualStructureReviews({ analysis, reviews: visualStructureReviews, producer }),
     ...unresolved.map(finding => `uverificeret finding: ${finding.id}`),
     ...findings.filter(finding => finding.reviewer === producer).map(finding => `finding er registreret af producenten: ${finding.id}`),
     ...findings.filter(finding => finding.verified_by === producer).map(finding => `finding er verificeret af producenten: ${finding.id}`),
@@ -128,6 +267,7 @@ const createCheckpoint = ({
     producer,
     tests,
     candidate_reviews: candidateReviews,
+    visual_structure_reviews: visualStructureReviews,
     findings: {
       count: findings.length,
       status_counts: Object.fromEntries(
@@ -170,11 +310,11 @@ const verifyCheckpoint = ({ root, checkpoint, state = null }) => {
 };
 
 const main = () => {
-  const [command, checkpointFile, findingsFile, inventoryFile, reviewFile] = process.argv.slice(2);
+  const [command, checkpointFile, findingsFile, inventoryFile, reviewFile, workFile, analysisFile] = process.argv.slice(2);
   const root = process.cwd();
   try {
     if (command === 'create') {
-      if (!checkpointFile || !findingsFile || !inventoryFile || !reviewFile) throw new Error('Brug: review-checkpoint.js create CHECKPOINT.json FINDINGS.jsonl INVENTORY.jsonl REVIEW.json');
+      if (!checkpointFile || !findingsFile || !inventoryFile || !reviewFile || !workFile || !analysisFile) throw new Error('Brug: review-checkpoint.js create CHECKPOINT.json FINDINGS.jsonl INVENTORY.jsonl REVIEW.json WORK.xml ANALYSIS.json');
       const review = JSON.parse(fs.readFileSync(reviewFile, 'utf8'));
       const checkpoint = createCheckpoint({
         root,
@@ -184,10 +324,15 @@ const main = () => {
         reviewerRanges: review.reviewer_ranges ?? [],
         producer: review.producer ?? null,
         candidateReviews: review.candidate_reviews ?? [],
+        visualStructureReviews: review.visual_structure_reviews ?? [],
+        analysis: JSON.parse(fs.readFileSync(analysisFile, 'utf8')),
+        workXml: fs.readFileSync(workFile, 'utf8'),
         artifactFiles: {
           findings: findingsFile,
           inventory: inventoryFile,
           review: reviewFile,
+          work: workFile,
+          analysis: analysisFile,
         },
       });
       fs.writeFileSync(checkpointFile, `${JSON.stringify(checkpoint, null, 2)}\n`);
@@ -209,4 +354,4 @@ const main = () => {
 
 if (fileURLToPath(import.meta.url) === process.argv[1]) main();
 
-export { createCheckpoint, currentReviewState, validateReviewerRanges, verifyCheckpoint };
+export { createCheckpoint, currentReviewState, validateReviewerRanges, validateVisualStructureReviews, validateWholeWorkCandidates, verifyCheckpoint };

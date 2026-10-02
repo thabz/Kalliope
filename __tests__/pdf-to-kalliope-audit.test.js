@@ -13,6 +13,8 @@ import {
 import {
   createCheckpoint,
   validateReviewerRanges,
+  validateVisualStructureReviews,
+  validateWholeWorkCandidates,
   verifyCheckpoint,
 } from '../.agents/skills/pdf-to-kalliope/scripts/review-checkpoint.js';
 
@@ -439,6 +441,8 @@ describe('historical OCR candidate profile', () => {
 });
 
 describe('findings registry and frozen checkpoint', () => {
+  const checkpointWorkXml = '<kalliopework><workbody/></kalliopework>';
+  const checkpointAnalysis = analyzeWholeWork(checkpointWorkXml);
   const candidateReviews = ['ocr', 'page', 'stanza', 'indentation', 'typography'].map(kind => ({
     kind,
     reviewer: 'anna',
@@ -461,6 +465,148 @@ describe('findings registry and frozen checkpoint', () => {
     evidence: null,
     snapshot: 'abc123',
   };
+
+  it('requires a disposition for every candidate from the current XML and OCR geometry', () => {
+    const xml = workXml.replace(
+      /<body><poetry>[\s\S]*?<\/poetry><\/body>/,
+      '<body><poetry>Første linje\nAnden linje\nTredje linje\nFjerde linje</poetry></body>',
+    ).replace('pages="10-12"', 'pages="10"');
+    const lines = [100, 160, 280, 340].map((top, index) => ({
+      page: 1,
+      left: 100,
+      top,
+      width: 500,
+      height: 30,
+      text: `${['Første', 'Anden', 'Tredje', 'Fjerde'][index]} linje`,
+    }));
+    const analysis = analyzeWholeWork(xml, {
+      variantsByFacsimile: {
+        '010.jpg': [{ name: '010.psm6.tsv', lines }],
+      },
+    });
+    const candidates = analysis.poems.flatMap(poem => poem.candidates);
+    expect(candidates.length).toBeGreaterThan(0);
+    expect(validateWholeWorkCandidates({ analysis, workXml: xml, findings: [] }))
+      .toEqual(expect.arrayContaining([expect.stringContaining('0 dispositioner')]));
+
+    const checkpointArgs = {
+      root: process.cwd(),
+      analysis,
+      workXml: xml,
+      findings: [],
+      inventory: [{
+        text_id: 'test1900010101', printed_page: '10', facsimile: '010.jpg',
+        status: 'reviewed', reviewer: 'anna', disposition: 'Kontrolleret.',
+        typography_status: 'reviewed', typography_disposition: 'Ingen fremhævelse.',
+      }],
+      tests: [{ command: 'make test', status: 'passed' }],
+      reviewerRanges: [{ reviewer: 'anna', facsimile_from: '010.jpg', facsimile_to: '010.jpg' }],
+      producer: 'producer',
+      candidateReviews,
+      visualStructureReviews: analysis.poems.map(poem => ({
+        text_id: poem.text_id,
+        block_index: poem.block_index,
+        status: 'reviewed',
+        reviewer: 'anna',
+        visual_stanza_lengths: poem.stanza.observed_stanza_lengths,
+        facsimiles: ['010.jpg'],
+        disposition: 'Alle strofegrænser sammenholdt med facsimilet.',
+      })),
+      state: { head: 'abc', diff_sha256: 'one', changed_files: [], file_sha256: {} },
+    };
+    expect(() => createCheckpoint(checkpointArgs)).toThrow('0 dispositioner');
+    expect(validateVisualStructureReviews({
+      analysis,
+      reviews: [],
+      producer: 'producer',
+    })).toEqual(expect.arrayContaining([
+      expect.stringContaining('0 visuelle strofekontroller'),
+    ]));
+    expect(validateVisualStructureReviews({
+      analysis,
+      reviews: checkpointArgs.visualStructureReviews.map(review => ({
+        ...review,
+        visual_stanza_lengths: [2, 2],
+      })),
+      producer: 'producer',
+    })).toEqual(expect.arrayContaining([
+      expect.stringContaining('strofelængder som ikke stemmer'),
+    ]));
+    expect(validateVisualStructureReviews({
+      analysis,
+      reviews: checkpointArgs.visualStructureReviews.map(review => ({
+        ...review,
+        facsimiles: ['011.jpg'],
+      })),
+      producer: 'producer',
+    })).toEqual(expect.arrayContaining([
+      expect.stringContaining('ikke kontrolleret alle facsimilesider'),
+    ]));
+
+    const findings = candidates.map(candidate => ({
+      candidate_id: candidate.candidate_id,
+      status: 'rejected',
+    }));
+    expect(validateWholeWorkCandidates({ analysis, workXml: xml, findings }))
+      .toEqual([]);
+    const registeredFindings = candidates.map((candidate, index) => ({
+      ...finding,
+      id: `W2-B1-${String(index + 1).padStart(3, '0')}`,
+      candidate_id: candidate.candidate_id,
+      reviewer: 'anna',
+      status: 'rejected',
+      disposition: 'Kontrolleret som falsk positiv.',
+      evidence: 'facs 010.jpg',
+    }));
+    expect(() => createCheckpoint({ ...checkpointArgs, findings: registeredFindings }))
+      .not.toThrow();
+    expect(validateWholeWorkCandidates({
+      analysis,
+      workXml: xml.replace('Første linje', 'Ændret linje'),
+      findings,
+    })).toEqual(expect.arrayContaining([
+      expect.stringContaining('hører ikke til den aktuelle XML'),
+    ]));
+    const withoutCandidate = {
+      ...analysis,
+      poems: analysis.poems.map(poem => ({
+        ...poem,
+        candidates: poem.candidates.slice(1),
+      })),
+    };
+    expect(validateWholeWorkCandidates({
+      analysis: withoutCandidate,
+      workXml: xml,
+      findings,
+    })).toEqual(expect.arrayContaining([
+      expect.stringContaining('kandidatliste stemmer ikke'),
+    ]));
+    expect(validateWholeWorkCandidates({
+      analysis: analyzeWholeWork(xml),
+      workXml: xml,
+      findings: [],
+    })).toEqual(expect.arrayContaining([
+      expect.stringContaining('mangler OCR-geometri'),
+    ]));
+  });
+
+  it('requires visual stanza review even when an analyzer reports no candidates', () => {
+    const analysis = {
+      poems: [{
+        text_id: 'quiet1900010101',
+        block_index: 1,
+        stanza: { observed_stanza_lengths: [4, 4] },
+        candidates: [],
+      }],
+    };
+    expect(validateVisualStructureReviews({
+      analysis,
+      reviews: [],
+      producer: 'producer',
+    })).toEqual(expect.arrayContaining([
+      expect.stringContaining('0 visuelle strofekontroller'),
+    ]));
+  });
 
   it('preserves stable ids and requires dispositions/evidence', () => {
     expect(validateFindings([finding])).toEqual([]);
@@ -523,6 +669,8 @@ describe('findings registry and frozen checkpoint', () => {
 
     const checkpoint = createCheckpoint({
       root: process.cwd(),
+      analysis: checkpointAnalysis,
+      workXml: checkpointWorkXml,
       findings: [{
         ...finding,
         status: 'verified',
@@ -598,6 +746,8 @@ describe('findings registry and frozen checkpoint', () => {
       reviewerRanges: [{ reviewer: 'anna', facsimile_from: '010.jpg', facsimile_to: '010.jpg' }],
       producer: 'producer',
       state: { head: 'abc', diff_sha256: 'one', changed_files: [], file_sha256: {} },
+      analysis: checkpointAnalysis,
+      workXml: checkpointWorkXml,
     };
     expect(() => createCheckpoint({
       ...common,
@@ -635,6 +785,8 @@ describe('findings registry and frozen checkpoint', () => {
       reviewerRanges: [{ reviewer: 'anna', facsimile_from: '010.jpg', facsimile_to: '010.jpg' }],
       producer: 'producer', candidateReviews,
       state: { head: 'abc', diff_sha256: 'one', changed_files: [], file_sha256: {} },
+      analysis: checkpointAnalysis,
+      workXml: checkpointWorkXml,
     };
     expect(() => createCheckpoint({ ...common, tests: [] })).toThrow('ingen tests er registreret');
     expect(() => createCheckpoint({
