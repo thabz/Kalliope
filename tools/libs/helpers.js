@@ -405,6 +405,7 @@ const buildThumbnails = async (
   options = {}
 ) => {
   const tasks = [];
+  const sourceFiles = [];
   const progress = createProgressReporter(
     `Genererede thumbnails i ${topFolder}`,
     100
@@ -435,40 +436,49 @@ const buildThumbnails = async (
         filename.endsWith('.jpg') &&
         !skipRegExps.test(filename)
       ) {
-        const hasModificationCache = isFileModifiedMethod != null;
-        const sourceModified =
-          hasModificationCache && isFileModifiedMethod(fullFilename);
-        const sourceMtime = fileModifiedTime(fullFilename);
-        CommonData.availableImageFormats.forEach((ext, i) => {
-          CommonData.availableImageWidths.forEach(width => {
-            const outputfile = thumbnailOutputPath(fullFilename, width, ext);
-            safeMkdir(outputfile.replace(/\/[^\/]+?$/, ''));
-            const outputMtime = fileModifiedTime(outputfile);
-            if (
-              outputMtime == null ||
-              (hasModificationCache
-                ? sourceModified
-                : sourceMtime > outputMtime)
-            ) {
-              tasks.push(
-                limit(async () => {
-                  const result = await resizeImage(
-                    fullFilename,
-                    outputfile,
-                    width
-                  );
-                  progress.increment();
-                  return result;
-                })
-              );
-            }
-          });
-        });
+        sourceFiles.push({ fullFilename, mtimeMs: stats.mtimeMs });
       }
     });
   };
 
   handleDirRecursive(topFolder);
+  sourceFiles.sort((left, right) => {
+    const mtimeDifference = right.mtimeMs - left.mtimeMs;
+    return mtimeDifference !== 0
+      ? mtimeDifference
+      : left.fullFilename.localeCompare(right.fullFilename);
+  });
+
+  sourceFiles.forEach(({ fullFilename, mtimeMs: sourceMtime }) => {
+    const hasModificationCache = isFileModifiedMethod != null;
+    const sourceModified =
+      hasModificationCache && isFileModifiedMethod(fullFilename);
+    CommonData.availableImageFormats.forEach(ext => {
+      CommonData.availableImageWidths.forEach(width => {
+        const outputfile = thumbnailOutputPath(fullFilename, width, ext);
+        safeMkdir(outputfile.replace(/\/[^\/]+?$/, ''));
+        const outputMtime = fileModifiedTime(outputfile);
+        if (
+          outputMtime == null ||
+          (hasModificationCache
+            ? sourceModified
+            : sourceMtime > outputMtime)
+        ) {
+          tasks.push(
+            limit(async () => {
+              const result = await resizeImage(
+                fullFilename,
+                outputfile,
+                width
+              );
+              progress.increment();
+              return result;
+            })
+          );
+        }
+      });
+    });
+  });
 
   await Promise.all(tasks);
   progress.finish();
