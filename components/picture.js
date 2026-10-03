@@ -69,8 +69,9 @@ const FigCaption = (props) => {
     );
   }
 
-  const hasCaption = artistRendered != null ||
-    (picture.content_html != null && picture.content_html.trim().length > 0) ||
+  const hasCaptionContent = picture.content_html != null &&
+    picture.content_html.some(([content]) => content.trim().length > 0);
+  const hasCaption = artistRendered != null || hasCaptionContent ||
     museumRendered != null || remoteLink != null;
   const hasTranscription = picture.transcription != null &&
     picture.transcription.length > 0;
@@ -89,7 +90,7 @@ const FigCaption = (props) => {
       <Stack>
         {hasCaption === true ? <div>
           {artistRendered}
-          {picture.content_html != null && picture.content_html.trim().length > 0 ? <TextInline
+          {hasCaptionContent === true ? <TextInline
             inline={true}
             contentHtml={picture.content_html}
             contentLang={picture.content_lang || 'da'}

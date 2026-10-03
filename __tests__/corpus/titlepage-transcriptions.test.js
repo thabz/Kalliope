@@ -74,16 +74,21 @@ describe('titelbladstransskriptioner', () => {
       .documentElement;
     expect(get_local_picture_content(withCaption).description).toBe('Forklaring.');
     const html = renderToStaticMarkup(<FigCaption picture={{
-      content_html: '',
+      content_html: [['']],
       transcription: 'Titel / Forfatter',
     }} />);
     expect(html).toContain('Titel / Forfatter');
     expect(html).not.toContain('<div></div>');
+    const withCaptionHtml = renderToStaticMarkup(<FigCaption picture={{
+      content_html: [['Forklaring.']],
+      transcription: 'Titel / Forfatter',
+    }} />);
+    expect(withCaptionHtml).toContain('Forklaring.');
   });
 
   it('renders the work title, year, and title-page wording as one sentence', () => {
     const [picture] = titlepagePictures([{
-      content_html: '',
+      content_html: [['']],
       transcription: 'Torquato Tasso: / Det befriede Jerusalem. // Paa Dansk / ved / Christine Daugaard. // Kjøbenhavn. / Karl Schønbergs Forlag. / Trykt hos Nielsen & Lydiche. / 1884.',
     }], { title: 'Det befriede Jerusalem', year: '1884' });
     const caption = parse(renderToStaticMarkup(<FigCaption picture={picture} />));
