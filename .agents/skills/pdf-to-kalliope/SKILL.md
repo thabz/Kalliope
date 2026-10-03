@@ -301,12 +301,15 @@ The XML normally references the basename:
 
 ```xml
 <picture type="titlepage" src="<work-id>-p1.jpg">
-  ...
+  <transcription>Den trykte ordlyd / linje for linje.</transcription>
 </picture>
 ```
 
 Use current repository conventions for `primary`, captions and other
 attributes.
+Transcribe the complete readable title-page text in `<transcription>` using
+`/` and `//` as described in `docs/xml-work-format.md`. The picture caption
+is optional and must not repeat the transcription.
 
 ### Graphic front cover: optional `p2`
 

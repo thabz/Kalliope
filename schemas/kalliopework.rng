@@ -62,6 +62,7 @@
         <ref name="pagebreaks"/>
         <ref name="pictures"/>
         <ref name="picture"/>
+        <ref name="transcription"/>
         <ref name="poetry"/>
         <ref name="quote"/>
         <ref name="a"/>
@@ -233,6 +234,7 @@
       <optional><ref name="pictureIdentifiers"/></optional>
     </element>
   </define>
+  <define name="transcription"><element name="transcription"><text/></element></define>
 
   <define name="sourceIdentifiers">
     <element name="identifiers">

@@ -917,9 +917,7 @@ Links i noter og fodnoter indgaar i referenceopsamlingen.
 Lokalt billede:
 
 ```xml
-<picture src="1856-p1.jpg" type="titlepage" primary="true">
-  Titelbladet til <i>Lyngblomster</i>.
-</picture>
+<picture src="1856-p1.jpg" type="titlepage" primary="true"><transcription>Lyngblomster / af / Erica. // Kjøbenhavn. / Boghandler G. E. C. Gad. / Thieles Bogtrykkeri. / 1856.</transcription></picture>
 ```
 
 Fælles artwork:
@@ -947,6 +945,16 @@ Attributter:
 - `clip-path`: bruges til visuel beskæring.
 - `type`: fri type, fx `titlepage`, `frontpage`, `illustration`.
 - `lang`: sprog for lokal billedtekst; default er `da`.
+
+Hvert billede med `type="titlepage"` i et værk skal have præcis én ikke-tom
+`<transcription>` med den trykte ordlyd. Brug `/` mellem trykte linjer og `//`
+mellem større afsnit. Bevar stavning, store og små bogstaver samt tegnsætning.
+Hold transskriptionen på én XML-linje uden tabulatorer, linjeskift eller
+indledende og afsluttende whitespace.
+Skriv kun ordlyden i feltet, ikke en indledning som »Titelbladet lyder«.
+En billedtekst er valgfri og bruges kun til oplysninger, som transskriptionen
+ikke allerede giver. Korpustesten håndhæver feltets tilstedeværelse; korrekt
+ordlyd skal kontrolleres mod billedet.
 
 For lokale billeder kan billedteksten enten vaere direkte indhold:
 

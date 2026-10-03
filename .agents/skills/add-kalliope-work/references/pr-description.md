@@ -21,6 +21,7 @@ brugeropgaver forbliver `[ ]`, indtil brugeren selv har udført dem.
 - [ ] Kontrollér XML/TEI-syntaks
 - [ ] Kontrollér at alle interne referencer og id'er er gyldige
 - [ ] Tilføj eller opdater metadata for værket
+- [ ] Transskriber og kontrollér titelbladets trykte tekst mod billedet
 - [ ] Kontrollér titel, forfatter, udgivelsesår og øvrige bibliografiske oplysninger mod kilden
 - [ ] Tilføj kildehenvisning til den anvendte digitalisering/faksimile
 - [ ] Kontrollér eksisterende Kalliope-konventioner i sammenlignelige værker

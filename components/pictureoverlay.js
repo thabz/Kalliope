@@ -53,7 +53,7 @@ const BiggerPicture = ({ picture, controls }) => {
     })
     .join(', ');
 
-  const alt = picture.content_html
+  const alt = picture.content_html != null || picture.transcription != null
     ? '' //Strings.trimHtml(picture.content_html)
     : 'Billede';
 
