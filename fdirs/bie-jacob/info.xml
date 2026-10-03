@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="bie-jacob" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Jacob Christian</firstname>
+    <lastname>Bie</lastname>
+    <pseudonym>Philopatreias</pseudonym>
+  </name>
+  <period>
+    <born>
+      <date>1738-07-11</date>
+      <place>Trondhjem</place>
+    </born>
+    <dead>
+      <date>1804</date>
+      <place>Bengalen</place>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid</literary-periods>
+  <works>1765,1766</works>
+  <identifiers>
+    <wikidata>Q3434148</wikidata>
+    <wikipedia-da>Jacob Christian Bie</wikipedia-da>
+  </identifiers>
+</person>
