@@ -92,6 +92,7 @@ Almindelige felter i `<workhead>`:
 - `<dates>`: datoer for vaerket.
 - `<pagebreaks/>`: erklærer, at alle interne sideskift i de inkluderede
   tekstkroppe er registreret med `<pb>`.
+- `<errata>`: eksplicit sidekontrol og eventuelle indførte trykte rettelsesark.
 - `<proofreadings>`: modelattester fra afsluttende, uafhængige
   facsimilekorrekturer.
 
@@ -140,6 +141,34 @@ tekst er kontrolleret og markeret efter reglerne nedenfor. Elementet betyder
 ikke, at værket nødvendigvis indeholder et `<pb>`: hvis hver tekst står på én
 side, er der ingen interne sideskift at indsætte. Fravær af `<pagebreaks/>` i en
 ældre værkfil betyder derfor »ikke oplyst«, ikke at kilden er uden sideskift.
+
+### Trykte rettelsesark
+
+Kontrollér hele kilden for rettelsesark. Et fundet ark skal indføres; det er en
+fejl at springe det over, og arket må aldrig blive en selvstændig `<text>`.
+Registrér gennemgangen i `<workhead>`:
+
+```xml
+<errata status="none"/>
+<errata status="applied" pages="[392]" facsimile-pages="415"/>
+```
+
+Brug kun `none`, når der ikke findes et rettelsesark. Ved fund angives ét
+`applied`-element pr. ark. `pages` følger trykkets sideangivelse, også når den
+er redaktionelt sat i kantede parenteser; `facsimile-pages` er et enbaseret
+sideinterval. Ved flere kilder peger `in` på et `<source id="…">` i samme
+`<workhead>`. Rettelserne indføres i de berørte tekster med en fodnote på
+samme linje:
+
+```xml
+Med magisk Kunst<footnote type="errata">Kunst] Kraft</footnote> jeg ved din Side staar.
+```
+
+Venstre side af `]` er Kalliopes rettede læsemåde, højre side er trykkets
+oprindelige læsemåde. Brug `∅` for en manglende læsemåde ved tilføjelse eller
+sletning. Alle `type="errata"`-fodnoter skal have begge sider af `]` udfyldt.
+Værknoten med facsimilelink bygges automatisk af `<errata>`; skriv den ikke
+også manuelt.
 
 ### Korrekturattester
 
@@ -1003,7 +1032,8 @@ Links:
 I værkfiler må links kun bruges i `<note>` og `<footnote>`, ikke direkte i
 digte, prosa eller citatblokke under `<body>`. Bevar omtalen som almindelig
 tekst i brødteksten, og læg en eventuel redaktionel henvisning i en `<note>`.
-Brug `<footnote>` til fodnoter, der stammer fra kilden. Linkmetadata som
+Brug `<footnote>` til fodnoter, der stammer fra kilden, samt til de særskilt
+typemærkede rettelser fra trykte rettelsesark. Linkmetadata som
 `<source href="...">` er ikke inline-links og er fortsat tilladt.
 
 ```xml

@@ -60,6 +60,7 @@
         <ref name="rhyme"/>
         <ref name="structure"/>
         <ref name="pagebreaks"/>
+        <ref name="errata"/>
         <ref name="pictures"/>
         <ref name="picture"/>
         <ref name="transcription"/>
@@ -121,6 +122,16 @@
     </element>
   </define>
   <define name="workbody"><element name="workbody"><ref name="mixed"/></element></define>
+
+  <define name="errata">
+    <element name="errata">
+      <attribute name="status"><choice><value>none</value><value>applied</value></choice></attribute>
+      <optional><attribute name="in"><text/></attribute></optional>
+      <optional><attribute name="pages"><text/></attribute></optional>
+      <optional><attribute name="facsimile-pages"><text/></attribute></optional>
+      <empty/>
+    </element>
+  </define>
 
   <define name="textElement">
     <element name="text">
@@ -591,7 +602,7 @@
     </element>
   </define>
   <define name="br"><element name="br"><ref name="simpleElement"/></element></define>
-  <define name="footnote"><element name="footnote"><ref name="simpleElement"/></element></define>
+  <define name="footnote"><element name="footnote"><optional><attribute name="type"><value>errata</value></attribute></optional><ref name="simpleElement"/></element></define>
   <define name="biblio"><element name="biblio"><ref name="simpleElement"/></element></define>
   <define name="asterism"><element name="asterism"><ref name="simpleElement"/></element></define>
   <define name="block-center"><element name="block-center"><ref name="simpleElement"/></element></define>

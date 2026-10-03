@@ -12,11 +12,35 @@ import {
 } from '../.agents/skills/pdf-to-kalliope/scripts/findings-register.js';
 import {
   createCheckpoint,
+  validateErrataInventory,
   validateReviewerRanges,
   validateVisualStructureReviews,
   validateWholeWorkCandidates,
   verifyCheckpoint,
 } from '../.agents/skills/pdf-to-kalliope/scripts/review-checkpoint.js';
+
+describe('rettelsesark i sideinventaret', () => {
+  const xml = '<kalliopework><workhead><errata status="applied" pages="[392]" facsimile-pages="415"/></workhead></kalliopework>';
+
+  it('requires every discovered sheet to be registered', () => {
+    const rows = [{ page_type: 'errata', facsimile: '414.jpg' }];
+    expect(validateErrataInventory(rows, '<kalliopework><workhead><errata status="none"/></workhead></kalliopework>'))
+      .toEqual(expect.arrayContaining([expect.stringContaining('mangler indført')]));
+  });
+
+  it('requires every applied sheet to appear in the reviewed inventory', () => {
+    expect(validateErrataInventory([], xml))
+      .toEqual(expect.arrayContaining([expect.stringContaining('mangler i sideinventaret')]));
+    expect(validateErrataInventory([{ page_type: 'errata', facsimile: '414.jpg' }], xml))
+      .toEqual([]);
+  });
+
+  it('requires both pages of a two-page correction sheet', () => {
+    const twoPages = xml.replace('facsimile-pages="415"', 'facsimile-pages="415-416"');
+    expect(validateErrataInventory([{ page_type: 'errata', facsimile: '414.jpg' }], twoPages))
+      .toEqual(expect.arrayContaining([expect.stringContaining('facsimileside 416 mangler')]));
+  });
+});
 
 const workXml = `<?xml version="1.0"?>
 <kalliopework id="1900" author="test">

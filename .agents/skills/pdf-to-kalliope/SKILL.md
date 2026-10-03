@@ -215,6 +215,7 @@ Useful page classifications include:
 - poem
 - prose
 - notes
+- correction sheet (`errata` in the review inventory)
 - afterword
 - advertisement
 - blank page
@@ -222,6 +223,15 @@ Useful page classifications include:
 
 No relevant page may disappear unnoticed between PDF analysis, OCR,
 transcription and XML generation.
+
+Inspect every page for a printed correction sheet. Record each sheet as a
+separate `page_type: "errata"` row in the reviewed inventory, including its
+facsimile filename, even though the sheet is never a standalone Kalliope text.
+Apply every relevant correction to the affected text and attach a
+`<footnote type="errata">corrected] printed</footnote>` at the correction.
+Register the sheet in `<workhead>` as documented in `docs/xml-work-format.md`.
+If no sheet exists, register `<errata status="none"/>`. A discovered sheet that
+has not been applied blocks completion and the review checkpoint.
 
 The page inventory is working material and should normally not be committed.
 
@@ -1698,6 +1708,10 @@ For a complete import, all applicable items below must be true:
 - [ ] `AGENTS.md`, the style guide and relevant special documentation were read.
 - [ ] The complete PDF was inventoried.
 - [ ] Every PDF page was classified or otherwise accounted for.
+- [ ] Every correction sheet was identified in the reviewed page inventory,
+      registered in `<workhead>`, applied in the text and accompanied by typed
+      footnotes; no sheet was created as a text entry. If none exists,
+      `<workhead>` explicitly records `status="none"`.
 - [ ] The JSONL page inventory covers every relevant printed page and every row
       is marked reviewed against the facsimile by someone other than the
       producer.
