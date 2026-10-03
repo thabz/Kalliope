@@ -51,7 +51,7 @@ const WorkPage = (props) => {
     );
   });
 
-  const renderedPictures = <SidebarPictures pictures={pictures} lang={lang} />;
+  const renderedPictures = <SidebarPictures pictures={pictures} lang={lang} work={work} />;
   const completedStatus =
     work.status === 'incomplete' && work.id !== 'andre' ? (
       <div>

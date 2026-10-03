@@ -2,6 +2,7 @@ import React from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { DOMParser } from '@xmldom/xmldom';
 import { FigCaption } from '../../components/picture.js';
+import { titlepagePictures } from '../../components/sidebarpictures.js';
 import { get_local_picture_content } from '../../tools/build-static/parsing.js';
 import { loadTrackedWorkFiles } from '../../tools/libs/work-files.js';
 
@@ -78,6 +79,34 @@ describe('titelbladstransskriptioner', () => {
     }} />);
     expect(html).toContain('Titel / Forfatter');
     expect(html).not.toContain('<div></div>');
+  });
+
+  it('renders the work title, year, and title-page wording as one sentence', () => {
+    const [picture] = titlepagePictures([{
+      content_html: '',
+      transcription: 'Torquato Tasso: / Det befriede Jerusalem. // Paa Dansk / ved / Christine Daugaard. // Kjøbenhavn. / Karl Schønbergs Forlag. / Trykt hos Nielsen & Lydiche. / 1884.',
+    }], { title: 'Det befriede Jerusalem', year: '1884' });
+    const caption = parse(renderToStaticMarkup(<FigCaption picture={picture} />));
+    expect(caption.documentElement.textContent).toBe(
+      "Titelbladet til Det befriede Jerusalem (1884) lyder ,,Torquato Tasso: / Det befriede Jerusalem. // Paa Dansk / ved / Christine Daugaard. // Kjøbenhavn. / Karl Schønbergs Forlag. / Trykt hos Nielsen & Lydiche. / 1884.''."
+    );
+    expect(caption.getElementsByTagName('i')[0].textContent)
+      .toBe('Det befriede Jerusalem');
+  });
+
+  it('numbers multiple title pages while ignoring other pictures', () => {
+    const pictures = titlepagePictures([
+      { transcription: 'Første del' },
+      { content_html: 'Dedikation' },
+      { transcription: 'Anden del' },
+    ], { title: 'Reiselyren', year: '1820' });
+    expect(pictures[1].titlepageOrdinal).toBeUndefined();
+    expect(parse(renderToStaticMarkup(<FigCaption picture={pictures[0]} />))
+      .documentElement.textContent)
+      .toBe("Første titelblad til Reiselyren (1820) lyder ,,Første del''.");
+    expect(parse(renderToStaticMarkup(<FigCaption picture={pictures[2]} />))
+      .documentElement.textContent)
+      .toBe("Andet titelblad til Reiselyren (1820) lyder ,,Anden del''.");
   });
 
   it('checks every tracked work with a title-page picture', () => {

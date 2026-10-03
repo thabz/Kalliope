@@ -74,6 +74,12 @@ const FigCaption = (props) => {
     museumRendered != null || remoteLink != null;
   const hasTranscription = picture.transcription != null &&
     picture.transcription.length > 0;
+  const titlepageOrdinals = ['Første', 'Andet', 'Tredje'];
+  const titlepageLabel = picture.titlepageOrdinal == null
+    ? 'Titelbladet'
+    : titlepageOrdinals[picture.titlepageOrdinal - 1] == null
+      ? `Titelblad nr. ${picture.titlepageOrdinal}`
+      : `${titlepageOrdinals[picture.titlepageOrdinal - 1]} titelblad`;
   if (hasCaption !== true && noteRendered == null && hasTranscription !== true) {
     return null;
   }
@@ -92,7 +98,10 @@ const FigCaption = (props) => {
           {remoteLink}
         </div> : null}
         {hasTranscription === true ? <div className="titlepage-transcription">
-          {picture.transcription}
+          {titlepageLabel}
+          {picture.titlepageWorkTitle != null ? <> til <i>{picture.titlepageWorkTitle}</i></> : null}
+          {picture.titlepageWorkYear != null ? ` (${picture.titlepageWorkYear})` : null}
+          {' lyder ,,'}{picture.transcription}{"''."}
         </div> : null}
         {noteRendered}
       </Stack>
