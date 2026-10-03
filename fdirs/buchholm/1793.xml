@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
-<kalliopework id="1793" author="buchholm" status="incomplete" type="poetry">
+<kalliopework id="1793" author="buchholm" status="complete" type="poetry">
 <workhead>
   <title>Poesier</title>
   <year>1793</year>
   <notes>
-    <note>Titelbladskandidaten fra det indlejrede 300-DPI-billede blev ikke publiceret, fordi den automatiske beskæringskontrol kræver manuel vurdering.</note>
-    <note>To udfoldelige nodetavler følger efter tryksiderne 134 og 138. Sangordene gentages i samlingens brødtekst; nodesatsen er ikke transskriberet.</note>
+    <note>Teksten følger Magdalene Sophie Buchholms <i>Poesier</i> (1793).</note>
   </notes>
   <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122018099105763" facsimile="11530804821F-color" facsimile-pages-num="179" facsimile-pages-offset="10">Magdalene Sophie Buchholm: <i>Poesier</i>, trykt hos Hofbogtrykkerne N. Møller og Søn, Kiøbenhavn, 1793.</source>
   <pagebreaks/>
+  <pictures>
+    <picture src="1793-p1.jpg" type="titlepage">Titelbladet til <i>Poesier</i> (1793).</picture>
+  </pictures>
   <proofreadings>
     <proofreading model="gpt-5" datetime="2026-09-21T00:13:59+02:00"/>
   </proofreadings>
@@ -187,7 +189,8 @@ For Evighedens høie Ret.
 
 <text id="buchholm2026092004">
 <head>
-  <title>Ved Frøken Bülows Grav</title>
+  <suptitle>Ved</suptitle>
+  <title>Frøken Bülows Grav</title>
   <firstline>Salig Fred den Grav omsmiler</firstline>
   <source pages="9-13" facsimile-pages="20-24"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -459,7 +462,8 @@ Skal spire op igien.
 
 <text id="buchholm2026092007">
 <head>
-  <title>Elegie, skreven paa en Foraars-Reise</title>
+  <title>Elegie</title>
+  <subtitle>skreven paa en Foraars-Reise</subtitle>
   <firstline>Den korte Søvn fra Øiet gleed</firstline>
   <source pages="23-28" facsimile-pages="34-39"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -559,7 +563,8 @@ Seer let til Jordens Møie.
 
 <text id="buchholm2026092008">
 <head>
-  <title>Til det Skib, som bragte Kronprindsen til Norge 1788</title>
+  <title>Til det Skib,</title>
+  <subtitle>som bragte Kronprindsen til Norge 1788</subtitle>
   <firstline>Iil, lykkelige Kiøl, paa jevne Bølger!</firstline>
   <source pages="29-33" facsimile-pages="40-44"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -925,7 +930,11 @@ O vee mig, Adeluds, naar denne Drøm forgaaer.
 
 <text id="buchholm2026092011">
 <head>
-  <title>Til min Mand i Anledning af Secretair Vibes Død</title>
+  <suptitle>
+    <line>Til min Mand</line>
+    <line>i Anledning af</line>
+  </suptitle>
+  <title>Secretair Vibes Død</title>
   <firstline>Med Dig, o Ven! i stille Aftenskygger</firstline>
   <source pages="54-61" facsimile-pages="65-72"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1066,7 +1075,8 @@ O elskte Ven, udødeligt som Du.
 
 <text id="buchholm2026092012">
 <head>
-  <title>Laura til Selim i hans lange Fraværelse</title>
+  <title>Laura til Selim</title>
+  <subtitle>i hans lange Fraværelse</subtitle>
   <firstline>Hvor er Du nu? ak Elskte! hvor betræder</firstline>
   <source pages="62-71" facsimile-pages="73-82"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1293,7 +1303,8 @@ Søster! o hvor skiøn er den!
 
 <text id="buchholm2026092014">
 <head>
-  <title>Ode til Indbildningen</title>
+  <title>Ode</title>
+  <subtitle>til Indbildningen</subtitle>
   <firstline>O, som med alt dit Tryllerie</firstline>
   <source pages="75-76" facsimile-pages="86-87"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1340,7 +1351,8 @@ Indbildning, kom med indbildt Held!
 
 <text id="buchholm2026092015">
 <head>
-  <title>Til min Moder efter en Sygdom</title>
+  <title>Til min Moder</title>
+  <subtitle>efter en Sygdom</subtitle>
   <firstline>Meer kiert for mig var Glædens Bud</firstline>
   <source pages="77-78" facsimile-pages="88-89"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1894,7 +1906,8 @@ Og bedre hver en Dag.
 
 <text id="buchholm2026092022">
 <head>
-  <title>Paa min Broders Lyststed Sans Souci</title>
+  <title>Paa min Broders Lyststed</title>
+  <subtitle>Sans Souci</subtitle>
   <firstline>Fred hvile over disse Enge!</firstline>
   <source pages="105-107" facsimile-pages="116-118"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2206,7 +2219,8 @@ Af yngre Knop opspire.
 
 <text id="buchholm2026092025">
 <head>
-  <title>Bryllupsvers til en Ven i Nordlandet</title>
+  <title>Bryllupsvers</title>
+  <subtitle>til en Ven i Nordlandet</subtitle>
   <firstline>Glæden ei sit Tempel bygger</firstline>
   <source pages="122-125" facsimile-pages="133-136"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2281,7 +2295,11 @@ Dunkle Dine Glæders Hegn!
 
 <text id="buchholm2026092026">
 <head>
-  <title>Afskedssang til min Føde-Egn efter et Besøg</title>
+  <title>Afskedssang</title>
+  <subtitle>
+    <line>til min Føde-Egn</line>
+    <line>efter et Besøg</line>
+  </subtitle>
   <firstline>Skiønne Egn! hvor først jeg skued'</firstline>
   <source pages="126-128" facsimile-pages="137-139"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2638,7 +2656,11 @@ Naar Du skuer evig Vaar.
 
 <text id="buchholm2026092031">
 <head>
-  <title>Elegie over Cancellieraad Atke</title>
+  <title>Elegie</title>
+  <subtitle>
+    <line>over</line>
+    <line>Cancellieraad Atke</line>
+  </subtitle>
   <firstline>Du ogsaa nu i Fred hensover!</firstline>
   <source pages="146-149" facsimile-pages="161-164"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>

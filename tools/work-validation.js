@@ -236,7 +236,11 @@ const collectSourcePolicyIssues = (filename, document) => {
       .replace(/\s+/gu, ' ')
       .trim()
       .toLocaleLowerCase('da-DK');
-    if (normalizedText.includes('teksten følger')) {
+    const isSourcedWorkNote =
+      note.parentNode?.nodeName === 'notes' &&
+      note.parentNode.parentNode === workhead &&
+      directChildren(workhead, 'source').length > 0;
+    if (normalizedText.includes('teksten følger') && !isSourcedWorkNote) {
       textFollowsNotes.push(
         `${filename}: replace the note phrase "Teksten følger" with a structured <source>.`,
       );
