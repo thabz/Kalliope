@@ -315,11 +315,7 @@ const collectSourcePolicyIssues = (filename, document) => {
       .replace(/\s+/gu, ' ')
       .trim()
       .toLocaleLowerCase('da-DK');
-    const isSourcedWorkNote =
-      note.parentNode?.nodeName === 'notes' &&
-      note.parentNode.parentNode === workhead &&
-      directChildren(workhead, 'source').length > 0;
-    if (normalizedText.includes('teksten følger') && !isSourcedWorkNote) {
+    if (normalizedText.includes('teksten følger')) {
       textFollowsNotes.push(
         `${filename}: replace the note phrase "Teksten følger" with a structured <source>.`,
       );
@@ -439,8 +435,7 @@ const collectPageBreakIssues = (
     const body = directChild(text, 'body');
     const pageBreakCount =
       body == null ? 0 : body.getElementsByTagName('pb').length;
-    const intervalSource =
-      pages == null || pages.trim() === '' ? facsimilePages : pages;
+    const intervalSource = pages ?? facsimilePages;
     const expected = expectedPageBreakCount(intervalSource);
     const ignorePageBreakCount =
       ignoresTest(work, 'pagebreak-count') ||
@@ -451,7 +446,7 @@ const collectPageBreakIssues = (
         issues.push(
           `${filename}: text ${textId} has an uninterpretable pages value: ${pages}.`,
         );
-      } else if (pageBreakCount > 0 && ignorePageBreakCount !== true) {
+      } else if (pageBreakCount > 0) {
         issues.push(
           `${filename}: text ${textId} has ${pageBreakCount} <pb> elements, but no simple pages interval.`,
         );
@@ -462,8 +457,7 @@ const collectPageBreakIssues = (
       return;
     }
     if (pageBreakCount !== expected) {
-      const intervalLabel =
-        pages == null || pages.trim() === '' ? 'facsimile-pages' : 'pages';
+      const intervalLabel = pages == null ? 'facsimile-pages' : 'pages';
       issues.push(
         `${filename}: text ${textId} with ${intervalLabel}="${intervalSource}" requires ${expected} <pb> elements, but found ${pageBreakCount}.`,
       );

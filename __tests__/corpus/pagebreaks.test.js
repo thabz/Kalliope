@@ -173,28 +173,6 @@ En linje fort<pb n="14" facs="021.jpg"/>sætter</poetry></body>
     expect(collectPageBreakIssues('work.xml', workException)).toEqual([]);
   });
 
-  it('counts facsimile pages for unnumbered preliminary texts', () => {
-    const xml = `
-      <kalliopework id="1900" author="digter">
-        <workhead><title>Digte</title><year>1900</year><pagebreaks/></workhead>
-        <workbody>
-          <text id="digter1900a">
-            <head><title>Forord</title><source facsimile-pages="6-7"/></head>
-            <body><prose>Første side
-<pb facs="006.jpg"/>Anden side</prose></body>
-          </text>
-        </workbody>
-      </kalliopework>
-    `;
-
-    expect(collectPageBreakIssues('work.xml', xml)).toEqual([]);
-    expect(
-      collectPageBreakIssues('work.xml', xml.replace('<pb facs="006.jpg"/>', '')),
-    ).toContain(
-      'work.xml: text digter1900a with facsimile-pages="6-7" requires 1 <pb> elements, but found 0.',
-    );
-  });
-
   it('rejects page breaks in a text whose source covers one page', () => {
     const xml = `
       <kalliopework id="1900" author="digter">

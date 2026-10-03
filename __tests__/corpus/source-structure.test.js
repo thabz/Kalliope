@@ -81,19 +81,4 @@ describe('work source structure', () => {
       textFollowsNotes: [],
     });
   });
-
-  it('allows a work note about a structured work source', () => {
-    const document = parseWorkXml(`
-      <kalliopework>
-        <workhead>
-          <source>Førsteudgaven</source>
-          <notes><note>Teksten følger førsteudgaven.</note></notes>
-        </workhead>
-      </kalliopework>
-    `);
-
-    expect(
-      collectSourcePolicyIssues('fdirs/poet/1793.xml', document).textFollowsNotes,
-    ).toEqual([]);
-  });
 });
