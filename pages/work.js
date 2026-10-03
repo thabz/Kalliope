@@ -54,14 +54,15 @@ const WorkPage = (props) => {
   });
   const renderedErrata = errata.map((entry, index) => (
     <Note key={`errata-${index}`} type="errata">
-      Trykkets rettelsesliste på s. {entry.pages} er indført.{' '}
+      Trykkets{' '}
       <FacsimileLink
         poetId={poet.id}
         facsimile={entry.facsimile}
         pageCount={entry.facsimilePageCount}
         firstPage={entry.facsimilePages[0]}>
-        Se rettelseslisten.
-      </FacsimileLink>
+        <i>rettelsesliste</i>
+      </FacsimileLink>{' '}
+      på s. {entry.pages} er indført.
     </Note>
   ));
 
