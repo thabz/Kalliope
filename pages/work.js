@@ -60,7 +60,7 @@ const WorkPage = (props) => {
         facsimile={entry.facsimile}
         pageCount={entry.facsimilePageCount}
         firstPage={entry.facsimilePages[0]}>
-        <i>rettelsesliste</i>
+        rettelsesliste
       </FacsimileLink>{' '}
       på s. {entry.pages} er indført.
     </Note>
