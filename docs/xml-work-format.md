@@ -582,6 +582,11 @@ Hvert id kan vaere:
 - en digter/person i `fdirs/<id>/info.xml`
 - et frit subject-id, hvis ingen af de to findes
 
+Brug det kanoniske keyword-id fra `content/keyword-taxonomy.json` i nye
+registreringer. Ældre aliaser omskrives af buildet, men skal ikke kopieres til
+ny XML. Se `docs/keyword-system.md` for afgrænsning, kategorier og redaktionel
+kontrol.
+
 Hvis en tekst allerede linker til en digter via et digtlink i noter, maa samme digter ikke
 ogsaa sta som keyword. Buildet fejler med `Overfloedig keyword-reference`.
 
