@@ -770,6 +770,10 @@ Hvis et lovligt sideinterval undtagelsesvis ikke kan omsættes til
 placering eller rækkefølge over. Sæt kun undtagelsen på `<kalliopework>`, hvis
 den dokumenterede pagineringsafvigelse gælder hele værket.
 
+Når en tekst står på unummererede sider uden `source/@pages`, kontrolleres
+antallet af interne sideskift i stedet mod `source/@facsimile-pages`, hvis det
+angiver et almindeligt numerisk interval.
+
 Særlige linjeformer:
 
 - En blank linje bevares.
