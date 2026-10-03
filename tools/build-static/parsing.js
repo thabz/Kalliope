@@ -75,7 +75,7 @@ const get_local_picture_content = (pictureNode) => {
     };
   }
   return {
-    description: safeTrim(safeGetInnerXMLWithout(pictureNode, ['identifiers'])),
+    description: safeTrim(safeGetInnerXMLWithout(pictureNode, ['identifiers', 'transcription'])),
     note: null,
   };
 };
@@ -242,6 +242,10 @@ const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
   const identifiers = getIdentifiers(pictureNode, identifierAllowlist.picture);
   if (src != null) {
     const { description, note } = get_local_picture_content(pictureNode);
+    const transcriptionNode = getChildByTagName(pictureNode, 'transcription');
+    const transcription = transcriptionNode == null
+      ? null
+      : transcriptionNode.textContent.trim();
     const lang = safeGetAttr(pictureNode, 'lang') || 'da';
     if (src.charAt(0) !== '/') {
       src = srcPrefix + '/' + src;
@@ -257,6 +261,7 @@ const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
       content_lang: 'da',
       content_html: htmlToXml(description, collected),
       note_html: htmlToXml(note, collected),
+      transcription,
       identifiers,
       primary,
     };
@@ -360,5 +365,6 @@ export {
   get_notes,
   get_pictures,
   get_picture,
+  get_local_picture_content,
   validate_picture_attrs,
 };

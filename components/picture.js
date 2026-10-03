@@ -69,19 +69,31 @@ const FigCaption = (props) => {
     );
   }
 
+  const hasCaption = artistRendered != null ||
+    (picture.content_html != null && picture.content_html.trim().length > 0) ||
+    museumRendered != null || remoteLink != null;
+  const hasTranscription = picture.transcription != null &&
+    picture.transcription.length > 0;
+  if (hasCaption !== true && noteRendered == null && hasTranscription !== true) {
+    return null;
+  }
+
   return (
     <figcaption>
       <Stack>
-        <div>
+        {hasCaption === true ? <div>
           {artistRendered}
-          <TextInline
+          {picture.content_html != null && picture.content_html.trim().length > 0 ? <TextInline
             inline={true}
             contentHtml={picture.content_html}
             contentLang={picture.content_lang || 'da'}
-          />
+          /> : null}
           {museumRendered}
           {remoteLink}
-        </div>
+        </div> : null}
+        {hasTranscription === true ? <div className="titlepage-transcription">
+          {picture.transcription}
+        </div> : null}
         {noteRendered}
       </Stack>
       <style jsx>{`
@@ -95,6 +107,9 @@ const FigCaption = (props) => {
         }
         figcaption :global(a.remote-picture-link) {
           text-decoration: none !important;
+        }
+        .titlepage-transcription {
+          white-space: pre-wrap;
         }
       `}</style>
     </figcaption>
