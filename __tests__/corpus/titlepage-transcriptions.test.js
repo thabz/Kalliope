@@ -20,6 +20,14 @@ const titlepageIssues = (filename, document) => {
       if (transcriptions.length !== 1 ||
           transcriptions[0].textContent.trim().length === 0) {
         issues.push(`${filename}: ${label}: kræver én ikke-tom <transcription>`);
+        return;
+      }
+      const value = transcriptions[0].textContent;
+      if (/[\t\n]/.test(value)) {
+        issues.push(`${filename}: ${label}: <transcription> må ikke indeholde tabulatorer eller linjeskift`);
+      }
+      if (value !== value.trim()) {
+        issues.push(`${filename}: ${label}: <transcription> må ikke have indledende eller afsluttende whitespace`);
       }
     });
   return issues;
@@ -38,6 +46,21 @@ describe('titelbladstransskriptioner', () => {
     expect(titlepageIssues('work.xml', document)).toEqual([
       'work.xml: empty.jpg: kræver én ikke-tom <transcription>',
       'work.xml: blank.jpg: kræver én ikke-tom <transcription>',
+    ]);
+  });
+
+  it('rejects tabs, newlines, and surrounding whitespace', () => {
+    const document = parse('<workhead><pictures>' +
+      '<picture type="titlepage" src="tab.jpg"><transcription>Titel\t/ Forfatter</transcription></picture>' +
+      '<picture type="titlepage" src="newline.jpg"><transcription>Titel\n/ Forfatter</transcription></picture>' +
+      '<picture type="titlepage" src="leading.jpg"><transcription> Titel / Forfatter</transcription></picture>' +
+      '<picture type="titlepage" src="trailing.jpg"><transcription>Titel / Forfatter </transcription></picture>' +
+      '</pictures></workhead>');
+    expect(titlepageIssues('work.xml', document)).toEqual([
+      'work.xml: tab.jpg: <transcription> må ikke indeholde tabulatorer eller linjeskift',
+      'work.xml: newline.jpg: <transcription> må ikke indeholde tabulatorer eller linjeskift',
+      'work.xml: leading.jpg: <transcription> må ikke have indledende eller afsluttende whitespace',
+      'work.xml: trailing.jpg: <transcription> må ikke have indledende eller afsluttende whitespace',
     ]);
   });
 

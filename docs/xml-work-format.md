@@ -949,6 +949,8 @@ Attributter:
 Hvert billede med `type="titlepage"` i et værk skal have præcis én ikke-tom
 `<transcription>` med den trykte ordlyd. Brug `/` mellem trykte linjer og `//`
 mellem større afsnit. Bevar stavning, store og små bogstaver samt tegnsætning.
+Hold transskriptionen på én XML-linje uden tabulatorer, linjeskift eller
+indledende og afsluttende whitespace.
 Skriv kun ordlyden i feltet, ikke en indledning som »Titelbladet lyder«.
 En billedtekst er valgfri og bruges kun til oplysninger, som transskriptionen
 ikke allerede giver. Korpustesten håndhæver feltets tilstedeværelse; korrekt
