@@ -105,6 +105,25 @@ En linje fort<pb n="14" facs="021.jpg"/>sætter</poetry></body>
     );
   });
 
+  it('counts boundaries on unnumbered facsimile pages', () => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Digte</title><year>1900</year><pagebreaks/></workhead>
+        <workbody>
+          <text id="digter1900a">
+            <head><firstline>Første linje</firstline><source facsimile-pages="6-8"/></head>
+            <body><poetry>Første linje
+<pb facs="006.jpg"/>Anden linje</poetry></body>
+          </text>
+        </workbody>
+      </kalliopework>
+    `;
+
+    expect(collectPageBreakIssues('work.xml', xml)).toContain(
+      'work.xml: text digter1900a with facsimile-pages="6-8" requires 2 <pb> elements, but found 1.'
+    );
+  });
+
   it('rejects abbreviated and otherwise uninterpretable page intervals', () => {
     const xml = `
       <kalliopework id="1900" author="digter">

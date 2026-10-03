@@ -153,6 +153,24 @@ describe('pdf-to-kalliope page inventory and semantic audit', () => {
       'iii', 'iv', 'v',
     ]);
   });
+
+  it('distinguishes unnumbered source pages by facsimile', () => {
+    const xml = workXml
+      .replace('pages="10-12"', 'facsimile-pages="10-12"')
+      .replace(' n="11"', '')
+      .replace(' n="12"', '');
+    const inventory = buildPageInventory({ xml }).map(row => ({
+      ...row,
+      status: 'reviewed',
+      reviewer: 'worker-2',
+      disposition: 'Kontrolleret direkte mod facsimilet.',
+      typography_status: 'reviewed',
+      typography_disposition: 'Typografien kontrolleret.',
+    }));
+
+    expect(inventory.map(row => row.printed_page)).toEqual([null, null, null]);
+    expect(auditPageInventory({ xml, inventory }).issues).toEqual([]);
+  });
 });
 
 describe('whole-work structure wrapper', () => {
@@ -403,6 +421,20 @@ describe('whole-work structure wrapper', () => {
 });
 
 describe('historical OCR candidate profile', () => {
+  it('attributes candidates on unnumbered pages to their own facsimile', () => {
+    const xml = workXml
+      .replace('pages="10-12"', 'facsimile-pages="10-12"')
+      .replace(' n="11"', '')
+      .replace(' n="12"', '')
+      .replace('Første linje', 'Image linje')
+      .replace('Første paa elleve', 'Image paa elleve');
+    const candidates = historicalOcrCandidates({ xml, inventory: buildPageInventory({ xml }) })
+      .filter(candidate => candidate.rule === 'image-token');
+
+    expect(candidates.map(candidate => candidate.facsimile)).toEqual(['009.jpg', '011.jpg']);
+    expect(new Set(candidates.map(candidate => candidate.id)).size).toBe(2);
+  });
+
   it('reports side, facsimile and stable anchor for historical OCR patterns', () => {
     const xml = workXml.replace('Første paa elleve', 'Image {kildrer soc1o.ikke Ordxxx');
     const inventory = buildPageInventory({ xml });
