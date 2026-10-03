@@ -16,6 +16,7 @@ import {
   parseWorkXml,
 } from '../../tools/work-validation.js';
 import { loadTrackedWorkFiles } from '../../tools/libs/work-files.js';
+import { validateErrata } from '../../tools/errata.js';
 import {
   getElementByTagName,
   getElementsByTagNames,
@@ -71,6 +72,7 @@ describe('tracked work corpus', () => {
   let textFollowsNoteIssues;
   let textStructureIssues;
   let redundantTextTitleMetadataIssues;
+  let errataIssues;
   let unindexedAnthologyTexts;
 
   beforeAll(() => {
@@ -101,6 +103,7 @@ describe('tracked work corpus', () => {
     textFollowsNoteIssues = [];
     textStructureIssues = [];
     redundantTextTitleMetadataIssues = [];
+    errataIssues = [];
     unindexedAnthologyTexts = [];
 
     works.forEach(({ content: xml, filename }) => {
@@ -206,6 +209,9 @@ describe('tracked work corpus', () => {
       }
 
       const checks = checksForWorkXml(xml);
+      if (/<(?:errata\b|footnote\b[^>]*\btype="errata")/.test(xml)) {
+        errataIssues.push(...validateErrata(parseWorkXml(xml).documentElement, filename));
+      }
       redundantTextTitleMetadataIssues.push(
         ...collectRedundantTextTitleMetadataIssues(filename, parseWorkXml(xml)),
       );
@@ -331,6 +337,10 @@ describe('tracked work corpus', () => {
 
   it('keeps declared page-break markup consistent', () => {
     expect(pageBreakIssues).toEqual([]);
+  });
+
+  it('requires applied errata and well-formed errata footnotes', () => {
+    expect(errataIssues).toEqual([]);
   });
 
   it('conforms to the Kalliope work schema', () => {

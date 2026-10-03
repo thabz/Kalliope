@@ -5,12 +5,41 @@ import { execFileSync } from 'child_process';
 import { fileURLToPath } from 'url';
 import { readJsonLines, sha256 } from './audit-utils.js';
 import { analyzeWholeWork } from './analyze-whole-work.js';
+import { DOMParser } from '@xmldom/xmldom';
+import { child, children, facsimileInterval } from '../../../../tools/errata.js';
 import { validateFindings } from './findings-register.js';
 
 const git = (root, args) => execFileSync('git', args, { cwd: root, encoding: 'utf8' });
 
 const facsimileNumber = value => Number(/^(\d+)\.jpg$/i.exec(value ?? '')?.[1] ?? NaN);
 const requiredCandidateKinds = ['ocr', 'page', 'stanza', 'indentation', 'typography'];
+
+const validateErrataInventory = (inventory, workXml) => {
+  if (workXml == null) return [];
+  const work = new DOMParser().parseFromString(workXml, 'text/xml').documentElement;
+  const declarations = children(child(work, 'workhead'), 'errata');
+  const applied = declarations.filter(node => node.getAttribute('status') === 'applied');
+  const errataPages = inventory.filter(page => page.page_type === 'errata');
+  const issues = [];
+  errataPages.forEach(page => {
+    const number = facsimileNumber(page.facsimile) + 1;
+    if (!applied.some(node => {
+      const range = facsimileInterval(node.getAttribute('facsimile-pages'));
+      return range != null && number >= range[0] && number <= range[1];
+    })) issues.push(`rettelsesark på ${page.facsimile} mangler indført <errata>`);
+  });
+  applied.forEach(node => {
+    const range = facsimileInterval(node.getAttribute('facsimile-pages'));
+    if (range != null) {
+      for (let number = range[0]; number <= range[1]; number += 1) {
+        if (!errataPages.some(page => facsimileNumber(page.facsimile) + 1 === number)) {
+          issues.push(`indført <errata> på facsimileside ${number} mangler i sideinventaret`);
+        }
+      }
+    }
+  });
+  return issues;
+};
 
 const validateReviewerRanges = (ranges, inventory, producer = null) => {
   const errors = [];
@@ -248,6 +277,7 @@ const createCheckpoint = ({
     ...validateCandidateReviews(candidateReviews, producer),
     ...validateWholeWorkCandidates({ analysis, workXml, findings }),
     ...validateVisualStructureReviews({ analysis, reviews: visualStructureReviews, producer }),
+    ...validateErrataInventory(inventory, workXml),
     ...unresolved.map(finding => `uverificeret finding: ${finding.id}`),
     ...findings.filter(finding => finding.reviewer === producer).map(finding => `finding er registreret af producenten: ${finding.id}`),
     ...findings.filter(finding => finding.verified_by === producer).map(finding => `finding er verificeret af producenten: ${finding.id}`),
@@ -354,4 +384,4 @@ const main = () => {
 
 if (fileURLToPath(import.meta.url) === process.argv[1]) main();
 
-export { createCheckpoint, currentReviewState, validateReviewerRanges, validateVisualStructureReviews, validateWholeWorkCandidates, verifyCheckpoint };
+export { createCheckpoint, currentReviewState, validateErrataInventory, validateReviewerRanges, validateVisualStructureReviews, validateWholeWorkCandidates, verifyCheckpoint };

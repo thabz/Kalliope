@@ -33,6 +33,11 @@ checkpointets krav er opfyldt, tilføjes `korrektur2`, værket sættes til
 Facsimilet er facit. OCR, eksisterende transskriptioner, metadata og kendskab
 til en strofeform er hjælpemidler, ikke selvstændige tekstvidner.
 
+Kontrollér også hele trykket for rettelsesark. Et fundet ark skal registreres i
+`<workhead>`, og alle relevante rettelser skal indføres med
+`<footnote type="errata">rettet] trykt</footnote>` ved tekststedet. Arket må
+ikke oprettes som en selvstændig tekstpost. Se `docs/xml-work-format.md`.
+
 En ny tekstforekomst må ikke oprettes ved at kopiere brødteksten fra en anden
 udgave eller variant. Opret først et kildebaseret udkast fra det aktuelle
 facsimile og frisk OCR. Brug derefter eksisterende transskriptioner til

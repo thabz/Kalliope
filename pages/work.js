@@ -3,6 +3,7 @@ import * as OpenGraph from '../common/opengraph.js';
 import _ from '../common/translations.js';
 import { workCrumbs } from '../components/breadcrumbs.js';
 import { formattedDate } from '../components/formatteddate.js';
+import FacsimileLink from '../components/facsimilelink.js';
 import * as Links from '../components/links.js';
 import { poetMenu } from '../components/menu.js';
 import Note from '../components/note.js';
@@ -26,6 +27,7 @@ const WorkPage = (props) => {
     poet,
     work,
     notes,
+    errata = [],
     pictures,
     toc,
     subworks,
@@ -50,6 +52,18 @@ const WorkPage = (props) => {
       </Note>
     );
   });
+  const renderedErrata = errata.map((entry, index) => (
+    <Note key={`errata-${index}`} type="errata">
+      Trykkets rettelsesliste på s. {entry.pages} er indført.{' '}
+      <FacsimileLink
+        poetId={poet.id}
+        facsimile={entry.facsimile}
+        pageCount={entry.facsimilePageCount}
+        firstPage={entry.facsimilePages[0]}>
+        Se rettelseslisten.
+      </FacsimileLink>
+    </Note>
+  ));
 
   const renderedPictures = <SidebarPictures pictures={pictures} lang={lang} work={work} />;
   const completedStatus =
@@ -69,6 +83,7 @@ const WorkPage = (props) => {
   if (
     pictures.length > 0 ||
     notes.length > 0 ||
+    errata.length > 0 ||
     completedStatus != null ||
     modifiedDate != null
   ) {
@@ -77,6 +92,7 @@ const WorkPage = (props) => {
         <Stack spacing="20px">
           {renderedPictures}
           {renderedNotes}
+          {renderedErrata}
           {completedStatus}
           {modifiedDate}
         </Stack>
@@ -169,6 +185,7 @@ WorkPage.getInitialProps = async ({ query: { lang, poetId, workId } }) => {
     toc: json.toc,
     subworks: json.subworks,
     notes: json.notes,
+    errata: json.errata,
     pictures: json.pictures,
     modified: json.modified,
     prev: json.prev,
