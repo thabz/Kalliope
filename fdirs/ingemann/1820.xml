@@ -193,7 +193,6 @@ Tie Smerte, stille min Sjæl!
 Ved Bolværket vinkende Venner staae,
             Farvel!
 Maaskee jeg dem sidstegang nu saae -
-
             Farvel!
 ,,Hr. Landsmand, kjender du Armen,
 Som vifter med Slør fra Karmen?''
@@ -297,6 +296,9 @@ Hvad jeg har kjærest paa Jord forsvandt i Vinter og Mulm.
   <title>Kiel</title>
   <firstline>Er jeg i Danmark end? nei fremmed germanisk Tunge</firstline>
   <source in="bd1" pages="14-16"/>
+  <places>
+    <place ref="kiel" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -335,6 +337,9 @@ Og jeg gjenfinder mig selv, og Verden - bringe jeg med!
   <title>Neumünster</title>
   <firstline>Seer jeg i fremmed Stad et Billed fra forrige Dage?</firstline>
   <source in="bd1" pages="17-20"/>
+  <places>
+    <place ref="neumuenster" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -386,6 +391,10 @@ Hil dig lyksalige Viv! - fort Vandrer fra fremmede Stad!
   <title>Hamborg</title>
   <firstline>Stort jeg glædes ei her; et Bistade trangt mig indslutter</firstline>
   <source in="bd1" pages="21-23"/>
+  <places>
+    <place ref="hamburg" relation="subject" primary="true"/>
+    <place ref="ottensen" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -429,6 +438,9 @@ Hvad jeg saa flygtig saae - ak, Kjærlighed boer dog og der.
   <title>Haarburg</title>
   <firstline>Fremmed er Luften alt, Smaabjerge fjernt jeg alt skimter</firstline>
   <source in="bd1" pages="24-25"/>
+  <places>
+    <place ref="harburg-hamburg" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -454,6 +466,9 @@ Livets skjønneste Glimt fra fjerne Ahnelsers Land.
   <title>Paa Lyneborg Hede</title>
   <firstline>Gold vorder sandig Vei, og seent gaaer Reisen paa Heden</firstline>
   <source in="bd1" pages="26"/>
+  <places>
+    <place ref="lueneburg-heath" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -477,6 +492,9 @@ See fra Heden og haab! bag Ørknen grønnes det hist.
   <title>Celle</title>
   <firstline>Hilsende fremmed Bye inat med Bylten i Haanden</firstline>
   <source in="bd1" pages="27-28"/>
+  <places>
+    <place ref="celle" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -495,9 +513,9 @@ Lød i Hallen et Suk, henfoer en sørgende Aand?
 Fred henflygtede Sjæl! du Diademet har fundet.
 Som ei Jorden har Magt, at hylle i Sørgeflor meer.
 
-<nonum><center>* * *</center></nonum>
+<pb n="28" facs="043.jpg"/><nonum><center>* * *</center></nonum>
 
-<pb n="28" facs="043.jpg"/>Vandrer hvad vil du her? har ei i Verden du skuet
+Vandrer hvad vil du her? har ei i Verden du skuet
 Nok Afsindighed end, hvi søger Rædsler du selv?
 Har af Velsignelse du saa meget med dig paa Veien,
 At af Besattes Mund du flyer Forbandelsen ei.
@@ -514,6 +532,9 @@ Naar af dens Krampefavn dig løser Frelserens Haand.
   <title>Hannover</title>
   <firstline>Flygtning fra Feers Land, du Himmelmøe fra det Fjerne</firstline>
   <source in="bd1" pages="29-30"/>
+  <places>
+    <place ref="hannover" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -550,6 +571,9 @@ Hvor du vandred igaar, jeg ruller hen i dit Spor.
   <title>Paa Veien til Gøttingen</title>
   <firstline>Rigdom regner fra Skye, om Biergets Kanter det lyner</firstline>
   <source in="bd1" pages="31-32"/>
+  <places>
+    <place ref="goettingen" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -567,7 +591,6 @@ Glad udsones med Sang og skjuler blodige Arm .
 Giv dem Æresord paa, at ingen Fux du er mere.
 Har I Philistere ei, men Philistranter kun med -
 ,,Kjære Karle'' dem kald, imorgen kan du dem spørge:
-
 Hvordan Spøgen var meent? og svares: ,,alt som du vil,''
 ,,Dumme Unger'' dem kald, og lær os praktisk at kjende
 Æreskrigen, du nys har theoretisk afmalt.
@@ -582,6 +605,9 @@ Har I endnu ei lært, at skjælne Mølle fra Helt?
   <title>Gøttingen</title>
   <firstline>Underlig boglærde Stad, du tydske Regents i det Store!</firstline>
   <source in="bd1" pages="33-36"/>
+  <places>
+    <place ref="goettingen" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -639,7 +665,6 @@ Forlad mig ei, du Trøster i min Sjæl,
 Du Himmelblink fra Livets Solevæld!
 Du Glimt af Gud og af hans Herlighed,
 Som lyste over mig og gav mig Fred -
-
 Forlad mig ei, du Aand fra Gud!
 Død, evig Død, hvor du er slukket ud.
 
@@ -679,6 +704,9 @@ Til Danmark flyv - sjung om min Kjærlighed!
   <title>Frankfurt am Mayn</title>
   <firstline>I Diligensens Grav tre Marterdøgn jeg har vaaget</firstline>
   <source in="bd1" pages="39-40"/>
+  <places>
+    <place ref="frankfurt-am-main" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -700,7 +728,6 @@ Stevned varslende Aand og rysted Sjælen og svandt —
 Billeder som ei forgaae, paa Reisen maae I mig følge:
 Kom Ariadne<footnote>Tannekers.</footnote> kom, drag med paa Tigerens Ryg!
 Saa har Konstneren kun og Guden fordum dig skuet,
-
 Men ei Helten, som vild dig i sin Blindhed forlod.
 Har alt Stav jeg i Haand, er Randslen alt paa min Skulder,
 Først dog med nordisk Sang jeg priser fremmede Bye.
@@ -713,6 +740,9 @@ Først dog med nordisk Sang jeg priser fremmede Bye.
   <title>Kroningsstaden</title>
   <firstline>Vær hilset du gamle fribaarne Stad</firstline>
   <source in="bd1" pages="41-45"/>
+  <places>
+    <place ref="frankfurt-am-main" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -830,6 +860,9 @@ Over Stjerner søg den forklart igjen!
   <title>Mainz</title>
   <firstline>Det var en lystelig Fart, man let kan her tillands seile</firstline>
   <source in="bd1" pages="46-50"/>
+  <places>
+    <place ref="mainz" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -904,6 +937,9 @@ Oplyst Verden nu er: ei Djævlen længer man frygter,
   <title>Ingelheim</title>
   <firstline>Skal det saa gange fort, vi ei vor Lykke skal prise</firstline>
   <source in="bd1" pages="51-57"/>
+  <places>
+    <place ref="ingelheim-am-rhein" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -992,6 +1028,10 @@ Fort liig vexlende Strøm henruller den Reisendes Lyst.
   <title>Rhinfart fra Weinheim</title>
   <firstline>I Morgenrøde vi gange</firstline>
   <source in="bd1" pages="58-59"/>
+  <keywords>balladestrofe</keywords>
+  <places>
+    <place ref="rhine" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1044,6 +1084,9 @@ Paa Flugten den Reisende synger,
   <title>Winkeln</title>
   <firstline>Toner paa morgenlys Vei fra Kirken os Messen imøde</firstline>
   <source in="bd1" pages="60-61"/>
+  <places>
+    <place ref="winkel-rheingau" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1079,6 +1122,9 @@ Skjønnest glæder os nu de Bromsers herlige Bye.
   <title>Rüdesheim</title>
   <firstline>Livlig, munter og let, af fyrig Bjergaand opløftet</firstline>
   <source in="bd1" pages="62-64"/>
+  <places>
+    <place ref="ruedesheim-am-rhein" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1284,9 +1330,9 @@ Kapellet end stander paa Bjerget hist,
 Og karsk han kommer til Hjemmet forvist,
     Hvor fro ham Bruden gjensmiler.
 
-<nonum><center>* * *</center></nonum>
+<pb n="73" facs="088.jpg"/><nonum><center>* * *</center></nonum>
 
-<pb n="73" facs="088.jpg"/>Flinke Roerkarl, hav Tak! St. Rocus gjerne vi prise,
+Flinke Roerkarl, hav Tak! St. Rocus gjerne vi prise,
 Bringer han karsk os hjem til Ven og elskende Brud,
 Karsk paa Arme og Been, og karsk i Hoved og Hjerte;
 Tit i sundeste Ham mig skranter rastløse Sjæl.
@@ -1392,6 +1438,9 @@ Udslukt er de mægtige Luer,
   <title>Coblenz</title>
   <firstline>Hvormed fortørned vi dig, du viinløvkrandsede Flodmand</firstline>
   <source in="bd1" pages="79-84"/>
+  <places>
+    <place ref="koblenz" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1416,7 +1465,6 @@ Du har oplevet det Alt, du gamle brusende Flodmand,
 Ei det forlyster dig nu, at mindes det Alt er forbi;
 Derfor du ryster dit Skjæg og slaaer din fraadende Bølge,
 Naar fra Riddernes Borg sig hæver Forgangenheds Røst.
-
 Sused nu ogsaa den hen, dog ei forgjæves var Farten;
 Gamle brusende Rhin, du var i din Vildhed ei stum.
 <pb n="81" facs="096.jpg"/>Hvergang Hvirvelen slog mod Snekken, tordned din Stemme,
@@ -1437,16 +1485,13 @@ Bærer formildet dog nu til Land den Fremmede rolig;
 Venlig i Aftenens Glands mig hilser glindsende Stad.
 Glad paa Svalen jeg staaer, og seer den Flydebro glide
 Stille tilbage og frem, fra Stad til klippehøi Bred.
-
 Hist staaer Ehrenbreitstein, der dundrer den tømrende Hammer;
 Snart sig hæver igjen paa Klippen trofaste Borg.
 Rust til Kampen dig kun, Germania, byg dig kun Borge!
 Byg dem paa Klippernes Pynt, staa selv som Fjeldroden fast!
-
 Frugtbart er Tidernes Skjød, er end med Drager det svanger,
 Engang kommer den Tid, da Dragers Yngel forgaaer.
 <pb n="83" facs="098.jpg"/>— Hisset Mosel og Rhin, som Brødre, favnes fortroligt,
-
 Rulle foreenede hen, og dobbel er Brødrenes Kraft;
 Naar skal Germaniens Liv saalunde forenet henrulle?
 Samler først Evigheds Hav den smaalig udstykkede Strøm?
@@ -1456,7 +1501,6 @@ Stridig er Strømmenes Gang, og Havet det store er fjernt.
 Ve! sig skjuler paa Jord endnu den stillere Sjæl.
 Fred har det Hellige ei, før knust er Bespottelsens Pande,
 Varslende stander end her paa Bjerget sælsomme Kors:
-
 ,,Der vanhellige Haand afsindig Frelseren trued,
 Spottende Gallier hist svang seiersstolt Sværd mod hans Bryst;
 <pb n="84" facs="099.jpg"/>Men for den Helliges Blik nedstyrted knust paa Fjeldgrund
@@ -1478,6 +1522,9 @@ Lyser hver Julenat end og vækker den slumrende Aand.
   <title>Neuwied</title>
   <firstline>Travle, hamrende Bye, til dig har Rhinen os vugget</firstline>
   <source in="bd1" pages="85-87"/>
+  <places>
+    <place ref="neuwied" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1487,9 +1534,7 @@ Floddiligensen er flink, den ruller videre alt.
 Cølnerdomen skal da ei stolt vort Hoved omhvælve!
 Aldrig kom vi saa langt, dog Sjælen længer hensaae.
 Rask gaaer rullende Strøm, kan ei vi fra den løsrives,
-
 Snart i fraadende Hav den styrter tumlende Gjæst.
-
 Herlig bar den os hid, den gjerne med sig os løfted;
 Stærkere ruller dog nu dit Kæmpehjul, flygtende Tid!
 Ei med standsende Haand i susende Ring vi kan gribe;
@@ -1516,6 +1561,9 @@ Vel, at Verden end ei er blevet en ordentlig Stad!
   <subtitle>(ved Schwalbach).</subtitle>
   <firstline>Fort fra Dal over Bjerg, fra Flod til Flod vi har vandret</firstline>
   <source in="bd1" pages="88-89"/>
+  <places>
+    <place ref="burg-hohenstein-taunus" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1553,6 +1601,9 @@ Mægtig knejser dog end paa Fjeldet tause Ruin.
   <title>Adolphseck</title>
   <firstline>Her, hvor styrtede Muur kun Borgens Grændse betegner</firstline>
   <source in="bd1" pages="90-91"/>
+  <places>
+    <place ref="burg-adolfseck" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1590,6 +1641,9 @@ Tager en Blomst han dog med fra Marken i Ridderens Hal.
   <title>Wisbaden</title>
   <firstline>Snart er Valfarten endt iblandt de herlige Borge</firstline>
   <source in="bd1" pages="92-95"/>
+  <places>
+    <place ref="wiesbaden" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1620,12 +1674,9 @@ Buntet Brøndgjæstesværm — her gaaer det lysteligt til.
 Lokker Spillet os ei, nu vel saa kan vi see til.
 Saae vi paa Sværmen os træt, i Stilhed hist vi os hvile,
 Hvor af Sønnenbergs Borg end staaer den grønne Ruin.
-
 Stien er eensom og skjøn; mon Jægeren skyder i Skoven?
 - Nei bag Skiven vi gaae, og høre rammende Skud.
-
 Atter vi maae der forbi; dog Faren Veien forskjønner,
-
 Skjød man end paa os tilmaals, et Centrum rammes saa let.
 Mange Eventyr ei endnu paa Reisen os mødte,
 Nøies maae vi med Sligt, er end det noget modernt:
@@ -1639,7 +1690,6 @@ Elskeren see vi ei meer sin Skjønne fra Borgen at føre.
 Sligt kun i Bøger nu skeer, og hvor der er slet Politie;
 Ei engang Røveren meer os møder i Skoven og piber,
 Kalder sin skjæggede Hær, og fordrer Liv eller Pung;
-
 Dog han kan komme endnu, derover vi ei os beklage!
 Velskland venter os jo, det skjønne poetiske Land.
 </poetry>
@@ -1651,6 +1701,9 @@ Velskland venter os jo, det skjønne poetiske Land.
   <title>Darmstadt</title>
   <firstline>Rhinfodreisen er endt. Fra Stad til Stad vi nu rulle</firstline>
   <source in="bd1" pages="96-97"/>
+  <places>
+    <place ref="darmstadt" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1692,7 +1745,13 @@ Følg usynlig os kun i Sang til Drømmenes Land!
 <head>
   <title>Heidelberg</title>
   <firstline>Fører til Himlen du os, du frugttræblomstrende Bjergvei!</firstline>
+  <pictures>
+    <picture artwork="kunst/carl-rottmann-heidelberger-schloss-1815" />
+  </pictures>
   <source in="bd1" pages="98-101"/>
+  <places>
+    <place ref="heidelberg" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1701,7 +1760,6 @@ Fører til Himlen du os, du frugttræblomstrende Bjergvei!
 Stolt over duftende Stie staaer Melibocus i Skye;
 Odenwald vi ei see; men høre med Studsen om Varslet,
 Som for kommende Krig end toner i sælsomme Skov.
-
 Kampens Bulder tit der de varslende Aander bebude,
 Naar paa Bjergveien tryg Germanen i Blomsterduft gaaer.
 Tie, du varslende Skov, lad Blomstret Frugten udfolde!
@@ -1724,7 +1782,6 @@ Steene røre den vil, som fordum Thracerens Harpe,
 At de sig løfte kan til Muur og trofaste Borg,
 Fængselsmure dog ei, og Herreborge det vorde;
 <pb n="100" facs="115.jpg"/>Domen, mægtig og stor, jeg seer paa Længslernes Kyst;
-
 Gothisk hæver den sig med tusind Taarne mod Himlen,
 Heelt som Skovenes Tag sig runder hvælvede Hal;
 Fred udganger derfra, og Tro og hellige Frihed,
@@ -1762,38 +1819,39 @@ Hviler med Ørnen tryg paa Fjeldets evige Tind.
 </head>
 <body>
 <poetry>
-Borge sig reise
-Straale og kneise
+    Borge sig reise
+    Straale og kneise
 Mægtig mod Skye;
-Herrer der gange,
-Glindse og prange
+    Herrer der gange,
+    Glindse og prange
 Stolt med de Mægtiges Ry.
-Fort rulle Tider —
-Rolig henglider
+
+    Fort rulle Tider —
+    Rolig henglider
 Stjernen bag Skye;
-Synes saa lille,
-Smiler dog stille,
+    Synes saa lille,
+    Smiler dog stille,
 Medens Aarhundreder flye.
-Glandsen er omme,
-Hallerne tomme —
+
+    Glandsen er omme,
+    Hallerne tomme —
 Herrerne gaae der ei meer;
-Stjernen, saa rolig,
-Blinker fortrolig,
+    Stjernen, saa rolig,
+    Blinker fortrolig,
 <pb n="103" facs="118.jpg"/>Og paa Ruinen nedseer.
 
-Borgen er falden,
-Aaben staaer Hallen,
+    Borgen er falden,
+    Aaben staaer Hallen,
 Luftig og grøn;
-Blomsteromslynget,
-Vedbendomklynget,
+    Blomsteromslynget,
+    Vedbendomklynget,
 Smiler dog Løvsalen skjøn.
 
-Evig gjenkommer
-
-Blomstrende Sommer,
+    Evig gjenkommer
+    Blomstrende Sommer,
 Gløder som før;
-Rolig end blinker
-Stjernen og vinker:
+    Rolig end blinker
+    Stjernen og vinker:
 Livet og Aanden ei døer. —
 </poetry>
 </body>
@@ -1807,6 +1865,10 @@ Livet og Aanden ei døer. —
     <note type="credits">Bidrag fra Nicolas Reinecke.</note>
   </notes>
   <source in="bd1" pages="104"/>
+  <places>
+    <place ref="heidelberg-tun" relation="subject" primary="true"/>
+    <place ref="heidelberg" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1847,7 +1909,6 @@ Stille gjennem den drog til Lyset Aandernes Tog.
 Ei med blodige Sværd du Himmelporten opstødte,
 Konstens seirende Helt! — Med Palmegrenen i Haand,
 Saae du i Himlen ind, og Palmen vorded en Pensel,
-
 <pb n="106" facs="121.jpg"/>Som med Farver af Lys dit Syn afbilded paa Jord.
 Fremmerst skuer jeg dig blandt Konstens hellige Fædre,
 Gamle trofaste Eyck, som Mester følge de dig
@@ -1866,12 +1927,11 @@ Veiet med Naaden høi al Verdens Slethed og Synd;
 <pb n="107" facs="122.jpg"/>Ei gik jordiske Qval forstyrrende over det Aasyn,
 Ei krampagtig gik her i Latter Glæden forbi.
 Ei som en Smertens Søn du vil af Mennesker ynkes, —
-
 Gud og Menneske dog, du samler Himmel og Jord:
 Saadan har de dig seet, de Vidner, som dig forkynded,
 Og paa din Guddom tryg de sværge kunde og døe;
 Nu har jeg dig og seet — og hvo dig skued og kjendte,
-Han har Faderen seet<footnote>See Joh. C. 14.</footnote> — forsvind ei himmelske Syn!
+Han har Faderen seet<footnote>See <a bible="bibeljohannes14">Joh. C. 14.</a></footnote> — forsvind ei himmelske Syn!
 </poetry>
 </body>
 </text>
@@ -1881,6 +1941,9 @@ Han har Faderen seet<footnote>See Joh. C. 14.</footnote> — forsvind ei himmels
   <title>Manheim</title>
   <firstline>Snorretbyggede Stad, du brostenprydede Schakbræt</firstline>
   <source in="bd1" pages="108-109"/>
+  <places>
+    <place ref="mannheim" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1912,6 +1975,9 @@ Folket jubler: Esslair! og Tydsklands Talma jeg saae. -
   <title>Worms</title>
   <firstline>Gamle trofaste Worms! til dig har Rhinen os baaret</firstline>
   <source in="bd1" pages="110-111"/>
+  <places>
+    <place ref="worms" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1946,6 +2012,9 @@ Høit da toner: vor <w>Gud</w>, vor Gud er saa fast en Borg.
   <title>Carlsruhe</title>
   <firstline>Her vi hvile en Stund og see paa Markedets Tummel!</firstline>
   <source in="bd1" pages="112"/>
+  <places>
+    <place ref="karlsruhe" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1969,6 +2038,9 @@ Velbesindig og klog forlades venneløs Bye.
   <title>Stuttsgard</title>
   <firstline>Ei det prægtige Slot, med Kostbarheder opdynget</firstline>
   <source in="bd1" pages="113-114"/>
+  <places>
+    <place ref="stuttgart" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2005,21 +2077,20 @@ Harpens rastløse Søn, som søger det Fjerne med Sang.
   <indextitle>Knibis</indextitle>
   <firstline>Stolt gaaer Veien mod Skye, i Schwartzwald svimler mit Øie</firstline>
   <source in="bd1" pages="115-116"/>
+  <places>
+    <place ref="kniebis" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Stolt gaaer Veien mod Skye, i Schwartzwald svimler mit Øie,
 Høit paa Knibis jeg staaer og seer en Verdens Ruin:
-
 Steg fra Afgrunden her engang Titanernes Gjenfærd,
-
 Hævnende dybe Fald fra Himmelstormen - paa Jord?
 Slynged de Fjeld mod Fjeld og knuste Jordklodens Knokler?
-
 Raved' Bjergene alt, og aabned Chaos paany
 Over Jorden sit Svælg, men standsede brat og forstened
-
 Ødelæggelsens Værk ved Tordenbudet fra Skye?
 - Over chaotisk Dyb paa Granestammer hensvimler
 <pb n="116" facs="131.jpg"/>Studsende Vandrer her, og Rædslen hæver hans Sjæl.
@@ -2036,6 +2107,9 @@ Spinkel Pindeværksleeg mig tykkes mægtige Dom.
   <title>Strasborg</title>
   <firstline>Nærved studser jeg nu og Kæmpetaarnet beundrer</firstline>
   <source in="bd1" pages="117-119"/>
+  <places>
+    <place ref="strasbourg" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2050,11 +2124,8 @@ Hil dig, trofaste Old, som tryg det Store begyndte,
 Ubekymret, om ei fuldendt dit Øie det saae!
 Hvad der Stort skal opstaae, maa paa Aarhundreder bygges.
 <pb n="118" facs="133.jpg"/>Og hvad Sekler har bygt, er Stort selv naar det forgaaer,
-
 — Strasborgs Mynster end staaer; men Gaaseleverposteien
-
 Nu fordunkler dens Priis og glæder Verden langt meer.
-
 Var kun Kirken opbygt af Bagværk eller Posteier,
 Vist man med dens Rival den nu forskrev til Paris.
 Blandet er Tonen alt her, og høflig her alt Germanen
@@ -2086,6 +2157,9 @@ Reis dig en Bautasteen, hvor intet Helligt er nær!
   <title>Afstikkerfart</title>
   <firstline>Hvor gaaer nu Reisen hen? - til Sveitzerlandets Fjelde</firstline>
   <source in="bd1" pages="120"/>
+  <places>
+    <place ref="paris" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2107,6 +2181,9 @@ Velan, jeg flyver strax - jeg er der - det er skeet.
   <title>Paris</title>
   <firstline>Som Vognen var en Sky, som Hestene var Vinde</firstline>
   <source in="bd1" pages="121-127"/>
+  <places>
+    <place ref="paris" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2125,7 +2202,6 @@ Med patriotisk Sind iblandt saa meget Fransk
 Jeg aldrig hjemme bli'er, hvis Hjemmet ei er dansk.
 — Paa Boulevarderne Pariserlivet støier.
 <pb n="122" facs="137.jpg"/>Den hele Bye har travlt; hvormed? man sig fornøier.
-
 Nu mærker jeg det, ja det er en stor Idee:
 En Verden samlet — tænk, og samlet for at lee.
 Een glindsende Boutik, med Væggene af Speile,
@@ -2157,6 +2233,8 @@ Saadan man tale bør, og saadan see og høre —
 Kom Wien, kom Berlin, kom Kjøbenhavn og Thye!
 See Idealet her for en moderne Bye!
 
+<nonum><center>* * *</center></nonum>
+
 — Hvo ledsager os her? vær hilset, grandskende Landsmand<footnote>Dr. Lemming.</footnote>!
 Du som i Natten fro mod Morgenstjernen henseer —
 Stille i Sværmens Larm mod Sandhedslyset du stirrer;
@@ -2187,6 +2265,8 @@ Stolt af classiske Rang blandt Konstens evige Mødre,
 Seer paa Kothurnen hun i Riimtakt ziirlige Helt,
 Seer ham tale og døe og raaber henrykt: dacapo!
 Og i opstandne Helt hun sig udødelig seer.
+
+<nonum><center>* * *</center></nonum>
 
 ,,Tør Taaren af, Madam, hvis I for Alvor græder!
 (Er dette Talmas Røst? nei see, en Gud fremtræder;
@@ -2226,7 +2306,6 @@ Vise Hedningers Ord her trøster os paa Latin.
 Mens begravne Paris sig classisk drømmer i Døden,
 Over den store Grav Bajaz gaaer spøgende hen.
 Sælsomt rystes jeg tit, naar Sværmen lysteligt jubler:
-
 Smykket som Verdens Brud jeg Hamlets Moder gjenseer,
 Blomsterdækkede Jord er Kistelaaget det store,
 Derpaa dandser paany Enken evig som Brud.
@@ -2255,13 +2334,17 @@ Du øined rolig over Hobens Stimmel,
 I Morgenæther gyldne Øer svømme,
 Du kunde stille midt i Larmen drømme,
 Om Tryllestjernerne paa Østens Himmel.
+
 <pb n="129" facs="144.jpg"/>O, gid de dig, som Østens Vise, lede
 Paa vildsom Vei til Himmelbarnets Vugge,
 At du kan Livets lukte Bog oplukke —
 Først trolig, Ven! jeg sjunge vil og bede,
 At vi paa adskilt Vei eet Lys maae møde,
 Og evig i dets Straaler sammengløde.
-<pb n="130" facs="145.jpg"/>Fransk jeg vorded vel ei, blev og jeg graa mellem Franske,
+
+<pb n="130" facs="145.jpg"/><nonum><center>* * *</center></nonum>
+
+Fransk jeg vorded vel ei, blev og jeg graa mellem Franske,
 Kom med Fordom jeg hid, og gaaer med Fordom jeg bort?
 Muligt skuer jeg skjævt, hvad aldrig lige mig tyktes;
 Antipoder i Aand kan aldrig samles i Tid.
@@ -2324,25 +2407,29 @@ Og hvor den Skjønne aander,
     Der flygter Nød og Sorg.
 
 Hun fangen Pilgrim løser
-Af Sarazenens Lænke ud,
+    Af Sarazenens Lænke ud,
 <pb n="133" facs="148.jpg"/>Og saaret Fjende pleier hun,
-Alt for den kjære Gud.
+    Alt for den kjære Gud.
+
 I hendes høie Sale
-Der toner hellig Sang;
+    Der toner hellig Sang;
 I hendes Rosenhaver
-Det lufter sødt som Harpeklang.
+    Det lufter sødt som Harpeklang.
+
 Der svæver hen den Fromme,
-Heelt underfuld at see,
+    Heelt underfuld at see,
 Reen som en Himlens Engel,
-Livsalig som en Luftens Fee.
+    Livsalig som en Luftens Fee.
+
 De gyldne Lokker flagre
-Om morgenrode Kind;
+    Om morgenrode Kind;
 Og Ætherøiet skuer
-Som i Guds Himmel ind.
+    Som i Guds Himmel ind.
+
 Den Fremmede staaer stille,
-Og seer den høie Møe,
+    Og seer den høie Møe,
 Og glemmer hende aldrig,
-Paa Land og vilden Søe.''
+    Paa Land og vilden Søe.''
 
 <pb n="134" facs="149.jpg"/>Saa lød om Melisende
     De Pillegrimmes høie Priis;
@@ -2375,13 +2462,13 @@ Naar Fugl fløi imod Østen,
     Han sukkede og sang:
 
 ,,Jeg elsker den Møe, mit Øie aldrig saae,
-Som jeg aldrig kunde min Kjærlighed sige,
+    Som jeg aldrig kunde min Kjærlighed sige,
 Aldrig mit Hjertes Længsel tilstaae,
-Og aldrig spørge: elsker du mig tillige?
+    Og aldrig spørge: elsker du mig tillige?
 Men jeg veed det - Ingen kan ligne hende
-Af alle Skjønne paa Verdens Øe,
+    Af alle Skjønne paa Verdens Øe,
 Det være sig Christenmøe eller sortøiet Jødinde,
-Eller dig Sarazenens blussende Møe.
+    Eller dig Sarazenens blussende Møe.
 
 Hver Nat jeg indblunder med hendes Billed for Øie,
     I Hjerte og Sjæl jeg hende kun seer;
@@ -2415,6 +2502,7 @@ Nær ved de Steder, hvor hun er fra,
 Til hine Sale, hvor nu hun gaaer!
 Lad mig see hende, før de mit Støv begraver,
 Før mit Hjerte ei mere slaaer!
+
 Velan! jeg gaaer - jeg ei engang kan døe,
 Før hun veed hvortil min Elskov mig tvang.
 Min Sang skal dig sige det, fjerne Møe!
@@ -2423,14 +2511,16 @@ Og røres da ei dit Hjerte derved,
 O! da maa jeg troe, at ved min Vugge
 Jeg viet blev til Elendighed,
 Og fordømt til evig at sukke.''
+
 Saa sang nu Troubadouren,
-Og gik med Pilgrimsstav
+    Og gik med Pilgrimsstav
 Til Snekken med sin Harpe,
-Foer over vilden Hav;
+    Foer over vilden Hav;
+
 Saae alle Verdens Riger
-Og Herligheder flye.
+    Og Herligheder flye.
 <pb n="138" facs="153.jpg"/>Og sang om Melisende,
-Og saae i vilden Skye.
+    Og saae i vilden Skye.
 
 Hver Nat han stod paa Dækket
     Med Harpen i sin Arm,
@@ -2502,7 +2592,9 @@ Den skjønne Melisende
 Sad til sin sidste Time,
     En stille Himmelbrud.
 
-<pb n="142" facs="157.jpg"/>Kommer aldrig den Tid, da Troubadouren gjenfødes,
+<pb n="142" facs="157.jpg"/><nonum><center>* * *</center></nonum>
+
+Kommer aldrig den Tid, da Troubadouren gjenfødes,
 Da i letsindigt Folk hans Aand sig rører igjen?
 Stirrer aldrig den meer mod Melisende med Længsel?
 Om hendes Herlighed dog stundom Pilgrimmen sang.
@@ -2528,6 +2620,9 @@ Hjertet briste engang - seer Sjælen aldrig sin Brud.
   <indextitle>Basel</indextitle>
   <firstline>Har Paris du alt seet? - een Maaned hist jeg beundred</firstline>
   <source in="bd1" pages="144-146"/>
+  <places>
+    <place ref="basel" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2612,18 +2707,18 @@ Lad græde Brud paa eenlig Stie!
     Som ei kan overvindes,
 Ad Aare er den Graad forbi.
 
-Min Brud laae bleg paa Baare,
-Jeg stod med hede Taare
+    Min Brud laae bleg paa Baare,
+    Jeg stod med hede Taare
 Og ønsked mig i Jordens Skjød;
-<pb n="149" facs="164.jpg"/>Før Vinteren var svunden.
-Gik Jægeren i Lunden,
+<pb n="149" facs="164.jpg"/>    Før Vinteren var svunden.
+    Gik Jægeren i Lunden,
 Og sang om Kinden, som var rød.
-Den Jæger vild bortflyede,
-Den Skjønne Lunden skyede,
 
+    Den Jæger vild bortflyede,
+    Den Skjønne Lunden skyede,
 Hun græd fra Gry til Sol gik ned.
-Mod Vaar hun gik til Dandsen,
-Fro bar hun Brudekrandsen;
+    Mod Vaar hun gik til Dandsen,
+    Fro bar hun Brudekrandsen;
 Men der var ingen Jæger med.
 
     End synger gamle Jæger
@@ -2633,7 +2728,9 @@ Men nu ad Sorg og Fryd han leer.
     Udslukkes maa dog Flammen,
 Og hvad der svandt, kom aldrig meer.
 
-<pb n="150" facs="165.jpg"/>Hjertehaanende Klang, dæmonisk du mig forfølger,
+<pb n="150" facs="165.jpg"/><nonum><center>* * *</center></nonum>
+
+Hjertehaanende Klang, dæmonisk du mig forfølger,
 Vildt krampagtigt du leer og dræber barnlige Fryd:
 Paa livsalige Vei mig Tungsindsravnen omsuser;
 Stærk er Tonernes Magt og mægtig Aandernes Kamp.
@@ -2647,6 +2744,9 @@ Stærk er Tonernes Magt og mægtig Aandernes Kamp.
   <subtitle>(ved Rhinfaldet)</subtitle>
   <firstline>Siig, hvi staaer du saa taus, fremmede Vandrer, her</firstline>
   <source in="bd1" pages="151-154"/>
+  <places>
+    <place ref="rhine-falls" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2740,32 +2840,32 @@ Qval er bedre, end evig Død.
 <body>
 <poetry>
 Himmel! du har mig bønhørt:
-Englen sendte du mig,
-Som Forstenelsen smelted,
+    Englen sendte du mig,
+    Som Forstenelsen smelted,
 Løsned Forbandelsens Troldomsbaand,
 Og Dæmonernes Muur om mit Hjerte.
-Himmel! dit Sendebud kom,
 
-Kom dog ei, som jeg bad,
-Med det flammende Glavind,
+Himmel! dit Sendebud kom,
+    Kom dog ei, som jeg bad,
+    Med det flammende Glavind,
 Og med Forfærdelsens Lyn i Haand,
 For at vække med Qval mig til Livet.
-Stille den Himmelske kom,
 
-Kom med Vemod og Fred,
-Kom med Længselens Taarer,
+Stille den Himmelske kom,
+    Kom med Vemod og Fred,
+    Kom med Længselens Taarer,
 Med Forbarmelsens Serafsmiil,
 <pb n="156" facs="171.jpg"/>Og med Palmen fra Paradiishaven.
 
 Venligt, som Svanernes Sang,
-Suser over mig høit
-Englens viftende Vinge;
+    Suser over mig høit
+    Englens viftende Vinge;
 Palmen berører det kolde Bryst -
 Og den evige Kjærlighed luer.
 
 Taaren nedruller paa Kind,
-Hjertet glødende slaaer,
-Og den Himmelske lyser.
+    Hjertet glødende slaaer,
+    Og den Himmelske lyser.
 Flyer nu for evig, Dæmoner, flyer! -
 Nu har Himmelens Lys mig omstraalet.
 </poetry>
@@ -2777,7 +2877,13 @@ Nu har Himmelens Lys mig omstraalet.
   <title><w>Schafhausen</w></title>
   <indextitle>Schafhausen</indextitle>
   <firstline>End engang vi udgaae, det store Rhinfald at skue!</firstline>
+  <pictures>
+    <picture artwork="kunst/j-m-w-turner-fall-rhine-schaffhausen-1805-1806" />
+  </pictures>
   <source in="bd1" pages="157-158"/>
+  <places>
+    <place ref="schaffhausen" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2934,7 +3040,7 @@ Og af bedst Bonitet en Prøve tager jeg med.
   <subtitle>(efter den hollandske Digter Bellamy)</subtitle>
   <firstline>Vi haver en Søster paa Jorderig fundet!</firstline>
   <notes>
-    <note>Jacob (Jacobus) Bellamy (1757-1786)</note>
+    <note>Gendigtning af Jacobus Bellamys <xref type="translation" poem="bellamy2026092901"/>.</note>
   </notes>
   <source in="bd1" pages="165-166"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2986,22 +3092,22 @@ Og bar for Guds Throne den bedende Møe.
 <body>
 <poetry>
 Alpevandrer, afsted, afsted!
-Bjergskoen paa din Fod!
+    Bjergskoen paa din Fod!
 Tangen ruller i Dalen ned,
-Morgenstunden er god.
+    Morgenstunden er god.
 Morgenrøden har Guld paa Kind,
-Gløder paa Bjergetoppe;
+    Gløder paa Bjergetoppe;
 Hyrden alt staaer paa Albis Tind,
-Sjunger bag Skye deroppe.
+    Sjunger bag Skye deroppe.
 
 Caravanen er rustet alt.
-Forud Bærerne gaae;
+    Forud Bærerne gaae;
 Føreren har de Reisende kaldt.
-Snart vil Solen opstaae.
+    Snart vil Solen opstaae.
 Alpestaven i Haanden nu!
-Langs med Søen vi gange,
+    Langs med Søen vi gange,
 Sjunge Alle med freidig Hu
-Lystige Alpesange:
+    Lystige Alpesange:
 </poetry>
 </body>
 </text>
@@ -3016,49 +3122,49 @@ Lystige Alpesange:
 <body>
 <poetry>
 Sveitzerlandet, ja der er et Liv:
-I Dalen staaer Hytten saa stille,
+    I Dalen staaer Hytten saa stille,
 I Søen vifter det grønne Siv,
-Under Klippen Bølgerne trille.
+    Under Klippen Bølgerne trille.
 Paa grønne Bred ligger Bye hos Bye,
-Imellem dem Baadene svømme;
+    Imellem dem Baadene svømme;
 Paa Bjerget hænger den hvide Skye,
-Der bruse de stærke Strømme.
+    Der bruse de stærke Strømme.
 
 Og Bjergluften hæver det frie Bryst,
-Det vifter fra fjerne Skove:
+    Det vifter fra fjerne Skove:
 Histoppe er Liv, histoppe er Lyst,
-Over Dal og spillende Vove.
+    Over Dal og spillende Vove.
 Den Fremmede vandrer saa reisefro,
-Høit Alpestokken han svinger:
+    Høit Alpestokken han svinger:
 Histop, histop, hvor Hyrderne boe.
-Hvor Hjorden med Klokkerne ringer.
+    Hvor Hjorden med Klokkerne ringer.
 
 <pb n="171" facs="186.jpg"/>Hvad sjunger den Hyrde paa høie Fjeld?
-Hvad sjunger vel Pigen i Dalen?
+    Hvad sjunger vel Pigen i Dalen?
 De sjunge om deres stærke Tell,
-Saa det runger i Klippesalen.
+    Saa det runger i Klippesalen.
 Det klinger fra Bjerg, fra Dal og fra Søe;
-Høit Gemsen paa Gletsjeren<footnote>Iisbræen.</footnote> springer,
+    Høit Gemsen paa Gletsjeren<footnote>Iisbræen.</footnote> springer,
 Der ,,jodler''<footnote>Den tyrolske Strubesang.</footnote> den Jæger og hilser sin Møe,
-Og sig rask over Iiskløften svinger.
+    Og sig rask over Iiskløften svinger.
 
 Lavinen nedtordner under hans Fod,
-Og ruller med Strømmen fra Fjeldet,
+    Og ruller med Strømmen fra Fjeldet,
 I Afgrunden styrter den vilde Flod;
-Det ringer fra Bjergkapellet.
+    Det ringer fra Bjergkapellet.
 Den Fremmede sætter paa Steen sig ned,
-Under Foden brænder ham Saalen;
+    Under Foden brænder ham Saalen;
 Den Smaadreng kommer med hoppende Ged
-Og rækker ham Nidliskaalen<footnote>Melkebøtten.</footnote>.
+    Og rækker ham Nidliskaalen<footnote>Melkebøtten.</footnote>.
 
 <pb n="172" facs="187.jpg"/>Og rask det ganger mod Bjergetop,
-I Dybet den Svindeltrold vinker -
+    I Dybet den Svindeltrold vinker -
 Den venlige Bjergalf hvisker: herop!
-Det suser hvor Alpsneen blinker.
+    Det suser hvor Alpsneen blinker.
 Ved Seenhytten<footnote>Sæteren.</footnote> rødkindet Bjergmøe staaer,
-Hun Alperoserne bringer;
+    Hun Alperoserne bringer;
 Med fremmede Blomst den Reisende gaaer,
-Og Hatten paa Bjergtoppen svinger.
+    Og Hatten paa Bjergtoppen svinger.
 </poetry>
 </body>
 </text>
@@ -3174,6 +3280,8 @@ Men drømmer om de Kæmper og om den gamle Tid.''
 Ved Søen under Fjeldet de sprang fra kjøle Bad.
 Farvel, du brave Gamle! nu maae vi skilles ad.
 
+<nonum><center>* * *</center></nonum>
+
 En liden Øe hist ligger i stille Zürichsøe,
 Der hviler jo en Riddersmand, forladt paa grønne Øe.
 En Gravhøi, Ufnau hæver sig med de Blomster smaa,
@@ -3187,6 +3295,10 @@ Af Kæmpens stille Have en Blomst vi plukke maae.
   <title>Ufnau</title>
   <firstline>Hvo nævner os den Riddersmand</firstline>
   <source in="bd1" pages="180-183"/>
+  <places>
+    <place ref="ufenau" relation="subject" primary="true"/>
+    <place ref="lake-zurich" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3222,14 +3334,18 @@ Den gamle Ulrich Huttens Been
         Kan Ingen mere finde.
 
 Dog paa den stille Zürichsøe
-Den Fremmede ham mindes,
+        Den Fremmede ham mindes,
 Og skuer dog den liden Øe,
-Hvor Helten meer ei findes.
+        Hvor Helten meer ei findes.
+
 <pb n="182" facs="197.jpg"/>Den liden Blomst paa Øen staaer
-Og Vandringsmanden minder,
+        Og Vandringsmanden minder,
 Om Eftermælet, som forgaaer,
-Og Seiren, som forsvinder.
-<pb n="183" facs="198.jpg"/>Nu heiser atter Seilet, og sjunger fro igjen!
+        Og Seiren, som forsvinder.
+
+<pb n="183" facs="198.jpg"/><nonum><center>* * *</center></nonum>
+
+Nu heiser atter Seilet, og sjunger fro igjen!
 Henover grønne Grave gaaer Livet lystig hen.
 Hvi sidder taus i Baaden den liden Harpemøe?
 Hvi ruller Taaren stille ned i den dybe Søe?
@@ -3259,7 +3375,6 @@ Smile med Kummer og sjunge for Brød -
 Tungere Taare paa Jorden ei flød.
 
 Harpeklang og Glædessang ved fremmed Dør -
-
 Ingen, som hører de bævende Ord -
 Ingen, som veed hvorfor Kinden er rød -
 Tungere Taare paa Jorden ei flød.
@@ -3268,7 +3383,10 @@ Tungere Taare paa Jorden ei flød.
 Klappes af fremmede Herre paa Kind -
 Betle om Livet og ønske sig død -
 Tungere Taare paa Jorden ei flød.
-<pb n="186" facs="201.jpg"/>Gud i Himlen trøste, hvem vi ei trøste kan!
+
+<pb n="186" facs="201.jpg"/><nonum><center>* * *</center></nonum>
+
+Gud i Himlen trøste, hvem vi ei trøste kan!
 Paa Søe valfarter Sorgen med Glæden som paa Land.
 Gak fort, du blege Billed, gak Huus og Slot forbi!
 I Qvel vi vil dig følge paa stille Pilgrimsstie.
@@ -3346,7 +3464,9 @@ Jeg bringer hendes Billed med.
 Hist aabner hun mig, reen og from,
 Engang den store Helligdom.
 
-<pb n="190" facs="205.jpg"/>I Skoven gaaer jeg eene og Natten falder paa,
+<pb n="190" facs="205.jpg"/><nonum><center>* * *</center></nonum>
+
+I Skoven gaaer jeg eene og Natten falder paa,
 I Maaneskinnet hvide de Birkestammer staae;
 Den Pilgrim er forsvundet paa ubekjendte Stie,
 Kun Flaggermusen surrer mig viftende forbi.
@@ -3364,7 +3484,6 @@ Dog det er ogsaa Drømme: mig kjender Ingen her,
 
 <pb n="191" facs="206.jpg"/>Og de, som paa mig kalde, veed neppe Hvo jeg er;
 Men det veed Gud i Himlen, og Englen, han mig gav,
-
 O, følg du mig i Dal, paa Bjerg og gjennem Nat og Grav!
 </poetry>
 </body>
@@ -3375,32 +3494,38 @@ O, følg du mig i Dal, paa Bjerg og gjennem Nat og Grav!
   <title>Nedgang i Alpdalen</title>
   <subtitle>(fra Maria Einsideln)</subtitle>
   <firstline>Med Pillegrimsbrev</firstline>
+  <pictures>
+    <picture artwork="kunst/gabriel-lory-marquard-wocher-einsiedeln-1788-1798" />
+  </pictures>
   <source in="bd1" pages="192-193"/>
+  <places>
+    <place ref="einsiedeln" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Med Pillegrimsbrev,
-Som de Fromme skrev,
+    Som de Fromme skrev,
 Med Kors og med Baand,
-Og med Stav i Haand -
+    Og med Stav i Haand -
 Fra Klostret afsted,
-Gjennem Alpdalen ned
+    Gjennem Alpdalen ned
 Ganger aarle den fremmede Skare.
 
 Og Kapellet forbi
-Løber krumme Stie;
+    Løber krumme Stie;
 Mellem Fjeld og Fjeld
-Ruller Bakken snel.
+    Ruller Bakken snel.
 Over Skrænten brat,
-Over Bro, mellem Krat
+    Over Bro, mellem Krat
 Gaaer i Bjergskyggen fremmede Skare.
 <pb n="193" facs="208.jpg"/>Er det Børn de Smaa,
-Som histoppe gaae?
+    Som histoppe gaae?
 Paa det steile Bjerg
-Synes Hyrden Dværg.
+    Synes Hyrden Dværg.
 Bær med Sang ham op!
-Lad fra Alpetop
+    Lad fra Alpetop
 Tone høit de tidlige Sange!
 </poetry>
 </body>
@@ -3417,28 +3542,30 @@ Tone høit de tidlige Sange!
 <body>
 <poetry>
 Paa Alperne vore de Roser røde,
-Og dem har liden Babli kjær;
+    Og dem har liden Babli kjær;
 Men om jeg og for de Roser døde,
-Liden Babli — kom dog ei Hyrden nær.
+    Liden Babli — kom dog ei Hyrden nær.
 Hver Løverdag Aften, naar Klokken ringer,
-Jeg til Bablis Kammer de Roser bringer.
+    Jeg til Bablis Kammer de Roser bringer.
 Til Alpeblomsten saa sødt hun smiler;
-Men seer ei Hyrden, som taus bortiler.
+    Men seer ei Hyrden, som taus bortiler.
 Paa Alperne vore de Roser røde,
-Og dem har liden Babli kjær.
+    Og dem har liden Babli kjær.
 
 Paa Alperne vore de Roser hvide,
-Og dem har eensom Hyrde kjær,
+    Og dem har eensom Hyrde kjær,
 Naar liden Babli mig ei kan lide,
-Dog de hvide Roser er Hjertet nær.
+    Dog de hvide Roser er Hjertet nær.
 <pb n="195" facs="210.jpg"/>Hver Søndag Morgen, naar Klokken ringer,
-Jeg til Herrens Moder de Roser bringer;
+    Jeg til Herrens Moder de Roser bringer;
 Til Alpeblomsten saa fromt hun smiler,
-Og let om Hjertet til Fjelde jeg iler.
+    Og let om Hjertet til Fjelde jeg iler.
 Paa Alperne vore de Roser hvide,
-Og dem har eensom Hyrde kjær.
+    Og dem har eensom Hyrde kjær.
 
-<pb n="196" facs="211.jpg"/>Med Tyrolerklang,
+<pb n="196" facs="211.jpg"/><nonum><center>* * *</center></nonum>
+
+Med Tyrolerklang,
 Toner Alpesang -
 Sjunger fremmed Hyrde histoppe?
 Er det Flygtnings Røst,
@@ -3468,24 +3595,24 @@ Toner Hornet fra Klippesalen.
 Første Hyrde.
 Min Alp er min Lyst, paa Bjerget er Glæde,
 Det klinger fra Fjeld, det svarer dernede.
-Hør Bjerget har Tunge,
-Den Tunge har Røst,
-Og Malmen kan sjunge
-Fra Fjeldebryst.
+    Hør Bjerget har Tunge,
+    Den Tunge har Røst,
+    Og Malmen kan sjunge
+    Fra Fjeldebryst.
 
 Med Sangklokker ringer til Messe min Hjord,
 Og Hyrden lovpriser i Sangfuglchør,
-Fra Kapellet af Fjelde,
-I Skyernes Favn,
-Den himmelske Hyrdes
-Velsignede Navn.
-
+    Fra Kapellet af Fjelde,
+    I Skyernes Favn,
+    Den himmelske Hyrdes
+    Velsignede Navn.
 
 <pb n="198" facs="213.jpg"/>Anden Hyrde.
 Bag Skye over Jord,
 Paa Alpernes Toppe,
 En Konge heroppe
 Hos Ørnen jeg boer.
+
 Blandt Hjorden jeg høit mit Septer svinger,
 Mig adlyder en Hær, naar min Alpeluur klinger;
 See min Throne er Klippen, den staaer i Ro,
@@ -3499,17 +3626,20 @@ Hos Ørnen jeg boer.
 Tredie Hyrde.
 Lad Sneeskredet tordne i Alpdalen ned,
 Lad Bjergtrolden rase, jeg sjunger i Fred.
-Vildt Strømmen nedknuser
-De Graner fra Fjeld;
-Naar Bjergstrømmen bruser,
-Forlystes min Sjæl.
+    Vildt Strømmen nedknuser
+    De Graner fra Fjeld;
+    Naar Bjergstrømmen bruser,
+    Forlystes min Sjæl.
 <pb n="199" facs="214.jpg"/>Dernede forsvinder den smilende Jord,
 Histoppe udvides den Himmel saa stor.
-Der af Himle er mange.
-Hvert Hjerte har sin:
-Min Hjord er min Herres,
-Hyrdinden er min.
-<pb n="200" facs="215.jpg"/>Men fort gjennem Skoven!
+    Der af Himle er mange.
+    Hvert Hjerte har sin:
+    Min Hjord er min Herres,
+    Hyrdinden er min.
+
+<pb n="200" facs="215.jpg"/><nonum><center>* * *</center></nonum>
+
+Men fort gjennem Skoven!
 Lad klinge foroven!
 Lad klinge de Sange!
 Lad Hyrderne gange!
@@ -3540,7 +3670,16 @@ I Baaden alt Roerkarlen sjunger.
 <head>
   <title>Sang om Goldau og Eremitten paa Schwanau</title>
   <firstline>Hist i den liden Lauerzerøse</firstline>
+  <pictures>
+    <picture artwork="kunst/david-alois-schmid-lauerzersee-schwanau-after-1806" />
+    <picture artwork="kunst/franz-xaver-triner-gabriel-lory-fils-goldau-schwanau-1806" />
+  </pictures>
   <source in="bd1" pages="201-206"/>
+  <places>
+    <place ref="goldau" relation="subject" primary="true"/>
+    <place ref="schwanau" relation="subject"/>
+    <place ref="lake-lauerz" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3605,7 +3744,9 @@ Men fjernt stod Gubben med Pilgrimsstav,
 Fra Rossbjerg han sang over Goldaus Grav:
 Fred være med alle de Døde!
 
-<pb n="204" facs="219.jpg"/>Ved Eremittens Hytte paa liden Klippeø
+<pb n="204" facs="219.jpg"/><nonum><center>* * *</center></nonum>
+
+Ved Eremittens Hytte paa liden Klippeø
 Staaer nu i Aftensolen en venlig Sveitzermøe;
 At Mennesket er eene, hun mener ei er godt.
 Det siger just ei Læben, det mener Øiet blot.
@@ -3755,7 +3896,10 @@ Skjøn er Blomsten i det Høie,
 Skjønnere dog vide Fjerne -
 Over Bjerg og Skye og Stjerne
 Sving dig Sjæl, og sviml o Øie!
-<pb n="213" facs="228.jpg"/>Tit trættes dog den Vandrer paa Rigis høie Sti,
+
+<pb n="213" facs="228.jpg"/><nonum><center>* * *</center></nonum>
+
+Tit trættes dog den Vandrer paa Rigis høie Sti,
 Da standser ham et helligt Syn, han gaaer det ei forbi:
 Smaa Billeder han skuer, af fromme Haand hensat,
 Hvor Stien til Kapellet sig hæver steil og brat.
@@ -3844,10 +3988,13 @@ Men nu hun havde ingen Ro,
     Hun intet Øie lukked.
 
 Hun føled sig saa luevarm
-Fra Foden og til Panden:
+    Fra Foden og til Panden:
 En Flamme sad i Marlys Barm,
-Og det var - Lygtemanden.
-<pb n="218" facs="233.jpg"/>Saa sjungende Hr. Feuerlein sprang om i Kjolen graa.
+    Og det var - Lygtemanden.
+
+<pb n="218" facs="233.jpg"/><nonum><center>* * *</center></nonum>
+
+Saa sjungende Hr. Feuerlein sprang om i Kjolen graa.
 Det var som man en Bjergtrold i Taagen dandse saae.
 I Staffels Huus modtager skjøn Marly os saa mild,
 Det var som hendes Kind var rød af Lygtemandens Ild.
@@ -3884,7 +4031,10 @@ Jordsuk, hensmelt
 I Havet af salige Taarer!
 Din Længsel i Barmen henvælt,
 Som til sin Sjæl dig udkaarer.
-<pb n="220" facs="235.jpg"/>Med ubekjendte Skjønne vi steeg af Kulmen ned,
+
+<pb n="220" facs="235.jpg"/><nonum><center>* * *</center></nonum>
+
+Med ubekjendte Skjønne vi steeg af Kulmen ned,
 Og holdt dem under Armen, naar de paa Skrænten gled;
 Ved Staffel vi adskiltes og aldrig meer dem saae.
 Hr. Peregrinus Feuerlein i Græsset sorgfuld laae.
@@ -3917,7 +4067,10 @@ Med tusind jeg gantes; men Ingen jeg troer,
 Kun stakket Smaablomsten mig qvæger;
 En sukkende Hyrde det var jeg ifjor;
 Men nu er jeg saa lystig en Jæger.“
-<pb n="222" facs="237.jpg"/>Den Lystighed mig tykkes meer sorrigfuld end glad,
+
+<pb n="222" facs="237.jpg"/><nonum><center>* * *</center></nonum>
+
+Den Lystighed mig tykkes meer sorrigfuld end glad,
 Den Galning drog saa dybt et Suk, idet han loe og qvad.
 Hr. Schil til Nadver kalder de Herrer uden Spas,
 Paa Rigis Sundhed tømmer hver Alpemand sit Glas.
@@ -3992,7 +4145,9 @@ Udaf mit Bryst,
 Og smelt i Livets
 Og Lysets Lyst.
 
-<pb n="226" facs="241.jpg"/>End blinker Sø dernede, end rødmer Dal og Bye;
+<pb n="226" facs="241.jpg"/><nonum><center>* * *</center></nonum>
+
+End blinker Sø dernede, end rødmer Dal og Bye;
 Med Taagehatten kneiser Pilatus i sin Skye.
 Der Troldomssyner spøge, naar Natten falder paa,
 Ved Grye maa Troldomsbjerget om Lys og Glæde spaae;
@@ -4007,39 +4162,45 @@ I Dalen gaae de Reisende saa glad i Solens Skin.
   <title>Nedgang fra Rigi</title>
   <subtitle>(gjennem ,,Hohle Gassen'' forbi Tells Kapel til Küsnacht)</subtitle>
   <firstline>Fra Rigi nedstiger</firstline>
+  <pictures>
+    <picture artwork="kunst/j-m-w-turner-blue-rigi-sunrise-1842" />
+  </pictures>
   <source in="bd1" pages="227-228"/>
+  <places>
+    <place ref="rigi" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Fra Rigi nedstiger
-Den Alpemand,
+    Den Alpemand,
 Tit Foden glider
-Ved Styrtnings - Rand.
+    Ved Styrtnings - Rand.
 Med Alpestaven,
-Fra Klippegraven
+    Fra Klippegraven
 Han leer og springer,
-Og rask sig svinger
+    Og rask sig svinger
 Til Skyggen i Heltenes Land.
 
 Ved Küsnacht sig slynger
-Den hule Sti,
+    Den hule Sti,
 Der Hyrden synger
-Saa stolt saa fri:
+    Saa stolt saa fri:
 <pb n="228" facs="243.jpg"/>Hist ved Kapellet
-Er Gesler fældet;
+    Er Gesler fældet;
 Hvor Dødspilen runged,
-Er Livet udsprunget -
+    Er Livet udsprunget -
 Vort Frihedstræ gaaer du forbi.
 
 Og see, der stander
-Den gamle Skrift<note>,,Hier ist Griesler's (Geßler's) Hochmuth vom Thal erschossen, / Und der Schweitzer edle Freiheit entsprossen. / Wie lang wird aber solche währen? / Noch lang - wenn wir die Alten wären.''</note>
+    Den gamle Skrift<note>,,Hier ist Griesler's (Geßler's) Hochmuth vom Thal erschossen, / Und der Schweitzer edle Freiheit entsprossen. / Wie lang wird aber solche währen? / Noch lang - wenn wir die Alten wären.''</note>
 Og vidner og sander
-Hiin Storbedrift.
+    Hiin Storbedrift.
 Her Friheden vinker,
-Her Livssaften blinker -
+    Her Livssaften blinker -
 I Skyggen vi tømme
-De luende Strømme!
+    De luende Strømme!
 For Trællen hver Draabe bliv Gift!
 </poetry>
 </body>
@@ -4069,6 +4230,7 @@ End Ord og Sang tillige.
 De vinke ham med Rankens Saft,
 Han reiser sig med Ungdomskraft,
 Og fulde Bæger tømmer.
+
 <pb n="230" facs="245.jpg"/>Høit leve Bjergets djærve Mand,
 Hvem ingen Lænke tvinger!
 Høit leve stolte Sweitzerland,
@@ -4084,7 +4246,13 @@ Der lever Helten evig.
 <head>
   <title>Vierwaldstädtersøen</title>
   <firstline>I Sol, paa Bjerg, i Dale</firstline>
+  <pictures>
+    <picture artwork="kunst/j-m-w-turner-lake-lucerne-bay-uri-1844" />
+  </pictures>
   <source in="bd1" pages="231-233"/>
+  <places>
+    <place ref="lake-lucerne" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4124,6 +4292,8 @@ Og tæmme med et Ord;
 Med den hun fast har bundet
     Til Himlen mørke Jord.
 
+<nonum><center>* * *</center></nonum>
+
 - Lad Dybet da true.
 Lad Føhn sig kun hæve!
 Lad bruse, lad bæve,
@@ -4145,6 +4315,10 @@ Den himmelske Møe.
   <title>Aften i Lucern</title>
   <firstline>Guldstraaler spille</firstline>
   <source in="bd1" pages="234-238"/>
+  <places>
+    <place ref="lucerne" relation="subject" primary="true"/>
+    <place ref="lake-lucerne" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4359,7 +4533,9 @@ Maa Alt her end svinde
 Vi Hjemmet vel finde.
     Og der er dog bedst.
 
-<pb n="243" facs="258.jpg"/>Hurra! saa gaaer det muntert igjennem fremmed Land;
+<pb n="243" facs="258.jpg"/><nonum><center>* * *</center></nonum>
+
+Hurra! saa gaaer det muntert igjennem fremmed Land;
 Hvor lysteligst os tykkes, en Stund vi dvæle kan.
 Fra Winkel over Søen til Rosloch fare vi;
 Der bruser stærke Meelbach paa vilde Klippesti.
@@ -4469,18 +4645,25 @@ Og Kæmpen hæver den gamle Skat.
 
 <pb n="248" facs="263.jpg"/>Det er ei Sølv og det er ei Guld,
 En Jernlandse er det, saa underfuld.
+
 Med Landsen ganger den Kæmpe stærk;
 Fuldendt saa har han det Manddomsværk.
+
 Og lovet være den Riddersmand!
 Nu har han befriet det ganske Land.
+
 Hvor Landsen slynges med frie Haand,
 Der knuses Lænke, der brister Baand.
+
 I Arv den ganger fra Søn til Søn,
 Og tit den runger i Ledingsdrøn.
+
 Den runget har gjennem fjerne Tid,
 Ved Sempach svang den en Winkelried.
+
 Og der han favned i blodig Dyst
 De hundred Spyd i sit Heltebryst -
+
 I Broderhaanden end Landsen klang,
 Og Friheden over hans Liig sig svang.
 
@@ -4490,7 +4673,9 @@ Og Friheden over hans Liig sig svang.
 Ret aldrig den brister og synker i Jord,
 Mens Kraft og Frihed paa Klippen boer.
 
-<pb n="250" facs="265.jpg"/>Fra Dragehulen gaae vi mod Stanz og Ruock frem —
+<pb n="250" facs="265.jpg"/><nonum><center>* * *</center></nonum>
+
+Fra Dragehulen gaae vi mod Stanz og Ruock frem —
 Træhuset hist med Svalen var Winkelrieders Hjem.
 Kapellet her i Skoven afbilder barnlig from
 Marias liden Bolig, som til Loretto kom:
@@ -4522,6 +4707,7 @@ Til fjerne Kyst det toner fra vilde Klippestrand.
   <title>De trende Gaader</title>
   <firstline>Den Fader gaaer under Fjeldet hen</firstline>
   <source in="bd1" pages="252-253"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4569,6 +4755,10 @@ Men Gaaden i Menneskets mørke Sjæl
   <title>Rütly</title>
   <firstline>Fra Gersau svømmer Baaden mod Rütlys Klippestrand</firstline>
   <source in="bd1" pages="254-259"/>
+  <places>
+    <place ref="ruetli" relation="subject" primary="true"/>
+    <place ref="lake-lucerne" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4641,7 +4831,10 @@ Kan her i Drøm kun gaae.
 Drøm til du vaagner hist!
 Husk Blomster kun at samle!
 Og glem hvad du har vidst!
-<pb n="259" facs="274.jpg"/>Fjeldskred hist er styrtet, her trende Kors jeg seer,
+
+<pb n="259" facs="274.jpg"/><nonum><center>* * *</center></nonum>
+
+Fjeldskred hist er styrtet, her trende Kors jeg seer,
 Der en Tyran er fældet, hans Navn ei nævnes meer;
 Men Stenen hist ved Kysten end nævnes stolt og fro,
 Saalænge frie Hyrder i Klippelandet boe,
@@ -4664,6 +4857,9 @@ Og drømme om de Billeder, som komme og som flye!
   <title>Dagvandring</title>
   <subtitle>(fra Altdorph til Urserenthal ved St. Gothard)</subtitle>
   <firstline>Stille Morgengang paa Fjeldet!</firstline>
+  <pictures>
+    <picture artwork="kunst/peter-birmann-devils-bridge-schoellenen-before-1805" />
+  </pictures>
   <source in="bd1" pages="260-262"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -4749,6 +4945,9 @@ Gjennem Iisbjerget Himlene lue.
   <title>Iishimlen</title>
   <subtitle>(ved Rhone-Gletscher)</subtitle>
   <firstline>Hvor Rhonens Væld udstrømmer</firstline>
+  <pictures>
+    <picture artwork="kunst/caspar-wolf-rhonegletscher-gletsch-1778" />
+  </pictures>
   <source in="bd1" pages="264-267"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -4843,6 +5042,9 @@ Det Sjælen gjennemstrømmer -
   <title>Grimsel</title>
   <firstline>Vilde er dine Fjelde og golde</firstline>
   <source in="bd1" pages="268"/>
+  <places>
+    <place ref="grimsel-pass" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4875,41 +5077,44 @@ Der er taus mellem Dødens Fjelde.
 <body>
 <poetry>
 See du hist den Kløft saa stor
-I krystallne Fjeld?
+    I krystallne Fjeld?
 Adskilt fra den vide Jord,
-Flygted hist en Sjæl. Dristig Gemsejæger stod
-Paa sin Gletscher fast.
+    Flygted hist en Sjæl.
+
+Dristig Gemsejæger stod
+    Paa sin Gletscher fast.
 Bjerget revned ved hans Fod,
-Fjeldets Panser brast.
+    Fjeldets Panser brast.
 
 Her er Liv, og hist er Død,
-Knust er Livets Bro;
+    Knust er Livets Bro;
 Paa den djærve Jægers Nød
-Seer den Ven saa tro.
+    Seer den Ven saa tro.
+
 <pb n="270" facs="285.jpg"/>Gemsen knust i Kløften foer —
-Styrtestrømmen leer:
+    Styrtestrømmen leer:
 Paa den hele vide Jord
-Er ei Frelse meer.
+    Er ei Frelse meer.
 
 Røsten flyver hid og did:
-See, saa høit jeg kom;
+    See, saa høit jeg kom;
 Bring den Sjælesørger hid,
-Lad ham bede from!
+    Lad ham bede from!
 
 See, jeg staaer, hvor Ingen stod.
-Sprang fra Verden bort,
+    Sprang fra Verden bort,
 Springet koster Liv og Blod,
-Her jeg tover kort.
+    Her jeg tover kort.
 
 Dybet ei mig favne skal,
-Ei den gustne Søe;
+    Ei den gustne Søe;
 Frisk med lystig Jægerknald,
-Gaaer jeg fra mit Slot.
+    Gaaer jeg fra mit Slot.
 
 Jægeren staaer høit paa Fjeld,
-Hører Fredens Røst;
+    Hører Fredens Røst;
 Riflen knalder, og hans Sjæl
-Flyer fra frie Bryst.
+    Flyer fra frie Bryst.
 </poetry>
 </body>
 </text>
@@ -4919,6 +5124,7 @@ Flyer fra frie Bryst.
   <title>Skytsaanden</title>
   <firstline>Usynlig om mig svæver</firstline>
   <source in="bd1" pages="271-273"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4991,44 +5197,55 @@ Dæmoners Hær er svundet -
   <title>Aarfaldet</title>
   <subtitle>(ved Handeck)</subtitle>
   <firstline>Over Kæmpefjeldet</firstline>
+  <pictures>
+    <picture artwork="kunst/alexandre-calame-at-handeck-1860" />
+  </pictures>
   <source in="bd1" pages="274-276"/>
+  <places>
+    <place ref="handegg-falls" relation="subject" primary="true"/>
+    <place ref="meiringen" relation="mentioned"/>
+    <place ref="grindelwald" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Over Kæmpefjeldet
-Til Flammevældet,
+    Til Flammevældet,
 Hvor fra Afgrundens Sluse
-De Regnbuelve frembruse!
+    De Regnbuelve frembruse!
 Hvor Ilddrager svømme
-I kjæmpende Strømme,
+    I kjæmpende Strømme,
 Og rase og gløde.
-Og hvisle og suse.
+    Og hvisle og suse.
 Mens mod Klippen de knuse
-De fraadende Struber og bløde!
+    De fraadende Struber og bløde!
 
 Er det Dybets Magter,
-Hvis Kamp jeg betragter
+    Hvis Kamp jeg betragter
 Med Lysets straalende Hære?
-De bruse, de gjære,
+    De bruse, de gjære,
 <pb n="275" facs="290.jpg"/>De gløde, de syde
-I Hjertet, hvorfra de udflyde:
+    I Hjertet, hvorfra de udflyde:
 Fra det Hjertekammer,
-Hvælvet af Fjelde,
+    Hvælvet af Fjelde,
 Fra Jordklodens Pulse fremvælde
-Til Kamp de strømmende Flammer?
+    Til Kamp de strømmende Flammer?
 
 Det svimlende Øie
-Stirrer ned i sælsomme Drømme;
+    Stirrer ned i sælsomme Drømme;
 Hvor de Ilddrager svømme
-I kjæmpende Strømme,
+    I kjæmpende Strømme,
 Kommer Lys og Glands fra det Høie.
-Over Dybet jeg skuer
+    Over Dybet jeg skuer
 En Seierskrone for Kampen:
-Over Afgrunden Solstraalen luer,
+    Over Afgrunden Solstraalen luer,
 Og i Støvregndampen
-Glindse Pagtens evige Buer.
-<pb n="276" facs="291.jpg"/>I Meyringen udhvile de Reisende en Dag;
+    Glindse Pagtens evige Buer.
+
+<pb n="276" facs="291.jpg"/><nonum><center>* * *</center></nonum>
+
+I Meyringen udhvile de Reisende en Dag;
 Ved Grindelwald vi høre Lavinens Tordenbrag.
 Paa Fjeldet Maanen skinner i dybe Klippedal,
 I Natten toner Sangen dybt - mod høie Stjernehal.
@@ -5052,45 +5269,50 @@ Og mindes Bjerget, hvor de stod, og Klippedalens Lyst.
 <body>
 <poetry>
 Alperose, skjøn og rød!
-Høit du staaer paa Bjergetinde,
+    Høit du staaer paa Bjergetinde,
 Blusser glad i Morgenglod,
-Leger med de muntre Vinde,
+    Leger med de muntre Vinde,
 Seer saa frisk, saa livsfro ned
-Til al Verdens Herlighed.
+    Til al Verdens Herlighed.
+
 Alperose, rød og skjøn!
-Følg i Verden mig saa vide!
+    Følg i Verden mig saa vide!
 Følg med Glæde Dalens Søn!
-Fro med Strømmen hist vi glide!
+    Fro med Strømmen hist vi glide!
 Herligheden, som du saae.
-Skal vi der tilsammen naae.
+    Skal vi der tilsammen naae.
 
 Alperose, hellig hvid!
-Høiest du paa Bjerget stander;
+    Høiest du paa Bjerget stander;
 Fra dit Fjeld du seer ei did,
-Hvor sig Farvevrimlen blander:
+    Hvor sig Farvevrimlen blander:
 <pb n="278" facs="293.jpg"/>Mellem Blomster himmelblaa.
-Seer du kun Guds Stjerner smaa.
+    Seer du kun Guds Stjerner smaa.
 
 Sjælden dig en Vandrer naaer,
-Fjernt din glade Søster luer;
+    Fjernt din glade Søster luer;
 Over høiest Skye du staaer,
-Dag og Nat du Stjerner skuer.
+    Dag og Nat du Stjerner skuer.
 Blegner Jordens Glands dig hist.
-Salig er din Himmel vist.
+    Salig er din Himmel vist.
 
 Alperose, hellig hvid!
-Blege Engel i det Høie!
+    Blege Engel i det Høie!
 Følg mig stille salig did.
-Hvor ei blændes meer mit Øie!
+    Hvor ei blændes meer mit Øie!
 Hvor blandt Søstre himmelblaa
-Stjerner Dag og Nat du saae!
+    Stjerner Dag og Nat du saae!
+
 Himmelrose, bleg men skjøn!
-Ei du mig paa Jord forlade,
+    Ei du mig paa Jord forlade,
 Selv naar gladest Dalens Søn
-Gaaer med Søsteren den glade!
+    Gaaer med Søsteren den glade!
 Rose hvid, og Rose <w>rød</w>!
-Følg mig gjennem Liv og Død!
-<pb n="279" facs="294.jpg"/>See hist staaer Jomfrubjerget saa høit saa hvidt i Skye,
+    Følg mig gjennem Liv og Død!
+
+<pb n="279" facs="294.jpg"/><nonum><center>* * *</center></nonum>
+
+See hist staaer Jomfrubjerget saa høit saa hvidt i Skye,
 Vil stolt fra Munkefjeldet mod Himlens Stjerner flye;
 Paa Bjergene henpeger den Fører fra sin Sti
 Og sjunger, mens vi vandre det stolte Syn forbi:
@@ -5103,6 +5325,10 @@ Og sjunger, mens vi vandre det stolte Syn forbi:
   <title>Munken og Jomfruen</title>
   <firstline>Kæmpen ganger i Verden om</firstline>
   <source in="bd1" pages="280-283"/>
+  <places>
+    <place ref="moench" relation="subject" primary="true"/>
+    <place ref="jungfrau" relation="subject"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5118,13 +5344,14 @@ Heltene æsker han ud til Strid,
     Heltene døe eller flye.
 
 Kampen er ham en Børneleeg,
-Seiren glæder ham ei,
+    Seiren glæder ham ei,
 Fjeldet, som høit over Skyen steeg,
-Er ham en Tue paa Vel.
+    Er ham en Tue paa Vel.
+
 <pb n="281" facs="296.jpg"/>Verden vil han ei mere see.
-Ganger i Kløstret ind,
+    Ganger i Kløstret ind,
 Lærer at bede uden at lee,
-Dæmper det vilde Sind.
+    Dæmper det vilde Sind.
 
 — I Kløstret sidder den Munk saa stor
     Og stirrer paa Bibelblad;
@@ -5142,13 +5369,14 @@ Munken sværger saa dyr en Eed
     Alt i sin Elskovsild.
 
 Fanger jeg ikke den Jomfru hvid
-Og trykker til Kæmpebarm,
+    Og trykker til Kæmpebarm,
 Saa vil jeg stande til evig Tid
-Førstenet med udbredt Arm.
+    Førstenet med udbredt Arm.
+
 <pb n="282" facs="297.jpg"/>Fører den Jordens Skat jeg ei bort,
-For hvem jeg med Himlen brød,
+    For hvem jeg med Himlen brød,
 Gid her jeg stande som Fjeldet sort
-Kold, som den evige Død!
+    Kold, som den evige Død!
 
 Jomfruen ganger i Bjerget ind /
     Bjerget var hvidt som Snee,
@@ -5166,10 +5394,13 @@ Vandreren seer paa Munken med Gru,
     Jomfruen glæder hans Sjæl.
 
 Jomfruen stander saa høi saa hvid,
-Skyen er om hendes Barm,
+    Skyen er om hendes Barm,
 Sort staaer Munken til evig Tid,
-Forstenet med udbredt Arm.
-<pb n="283" facs="298.jpg"/>Ved Lauterbrunnen hænger fra Fjeldet hvide Skyer
+    Forstenet med udbredt Arm.
+
+<pb n="283" facs="298.jpg"/><nonum><center>* * *</center></nonum>
+
+Ved Lauterbrunnen hænger fra Fjeldet hvide Skyer
 Støvbækken<footnote>Staubbach.</footnote> der nedstraaler i høie Graners Lye.
 Den Fremmede henvandrer, tit standse maa hans Gang,
 Paa Stien hist ved Stenen der toner Pigesang;
@@ -5193,42 +5424,44 @@ Fra Pigelæber toner nu saa underlig i Sang.
 <body>
 <poetry>
 Mooset voxer paa Stenen endnu,
-Og Bækken ruller fra Fjeld;
+    Og Bækken ruller fra Fjeld;
 Her stod Friherren af Rothenlu
-Engang saa eene ved Qvel.
+    Engang saa eene ved Qvel.
 
 I Stenen risted han Rutlys Navn,
-I Bækken faldt Dugperler smaa;
+    I Bækken faldt Dugperler smaa;
 Fra Klippen varsled den hæse Ravn,
-Mod Grindenwald Ridderen saae.
+    Mod Grindenwald Ridderen saae.
+
 „Og kommer skjøn Rütly igjen i Qvel,
-Jnat hun vorder min Viv,
+    Jnat hun vorder min Viv,
 Skal saa jeg sige al Verden Farvel
-Og skal det saa koste mit Liv.
+    Og skal det saa koste mit Liv.
 
 For Gods og Guld har jeg ingen Sorg,
-Fri gaaer jeg af Landet ud.
+    Fri gaaer jeg af Landet ud.
 Lad Broderen eie min Klippeborg,
-Jeg eier den skjønne Brud.“
+    Jeg eier den skjønne Brud.“
+
 <pb n="285" facs="300.jpg"/>„Ret aldrig her du favner min Brud,
-I denne Stund hun er død:''
+    I denne Stund hun er død:''
 Den Broder triner af Busken ud
-Med Daggerten blank og rød.
+    Med Daggerten blank og rød.
 
 ,, I Helved venter dig Bruden nu,
-Saa nødig hun dig forlod“ -
+    Saa nødig hun dig forlod“ -
 Den unge Herre af Rothenlu
-Laae bleg paa Stenen i Blod.
+    Laae bleg paa Stenen i Blod.
 
 Den Morder haver ei Fred paa Jord,
-Under Tag han ei Aande drog,
+    Under Tag han ei Aande drog,
 Paa Sjælen brænder det Brodermord
-Og Bannets Straale ham slog.
+    Og Bannets Straale ham slog.
 
 De stolte Herrer af Rothenlu
-Ei meer her gange ved Qvel;
+    Ei meer her gange ved Qvel;
 Paa Stenen stander det Navn endnu
-Og Bækken ruller fra Fjeld<footnote>Paa Stenen lyder Indskriften saaledes:
+    Og Bækken ruller fra Fjeld<footnote>Paa Stenen lyder Indskriften saaledes:
 <span lang="de">„Hier ward der Freiherr von Rothenlu von seinem Bruder erschlagen. Der heimathlose Mörder, in Bann, Acht und Verzweifelung, schloß in fernem Auslande seinen einst mächtigen Stamm.“</span></footnote>.
 
 <pb n="286" facs="301.jpg"/><nonum><center>* * *</center></nonum>
@@ -5245,7 +5478,10 @@ I Bern vi atter skue det travle Kjøbstadsliv;
 Ved Murthen vente Heltene paa Dommedagens Bliv!
 De under Valen slumre mens over dem henflyer
 Det muntre Liv med Fuglene i Aftenrødens Skyer.
-<pb n="287" facs="302.jpg"/>Adskilt er Caravanen, ei huier Felix meer
+
+<pb n="287" facs="302.jpg"/><nonum><center>* * *</center></nonum>
+
+Adskilt er Caravanen, ei huier Felix meer
 Ved stærke Peters Side, og efter Møen seer;
 Med Føreren de ginge saa taus i Dalen ned,
 Saae efter os tilbage og vinkede og græd;
@@ -5302,10 +5538,13 @@ De Svende nu om i Verden gaae,
     Vil gange til Verdens Ende.
 
 Der finde de dog det Slot maaskee.
-Dog ofte det Plads har byttet,
+    Dog ofte det Plads har byttet,
 Og der maatte de Jomfruer tre.
-Ifald de kun ei er styrtet.
-<pb n="290" facs="305.jpg"/>Ved Genfersøens Bredder Lausanne smiler fro.
+    Ifald de kun ei er styrtet.
+
+<pb n="290" facs="305.jpg"/><nonum><center>* * *</center></nonum>
+
+Ved Genfersøens Bredder Lausanne smiler fro.
 Lyksalig Hvo nu kunde sig hvile her i Ro,
 Og lade Livet stille med Kjærlighed og Lyst
 Udfylde Verdenen, vi saae, og Savnet i vort Bryst!
@@ -5342,15 +5581,16 @@ Paa støvet Vei den Vandrer staaer vemodsfuld igjen.
 <text id="ingemann2019012390">
 <head>
   <title>Den fremmede Blomst</title>
-  <firstline>Blomst jeg søger i fremmed Land</firstline>
+  <firstline>En Blomst jeg søger i fremmed Land</firstline>
   <source in="bd1" pages="292-295"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Blomst jeg søger i fremmed Land paa Bjerg og vildene Fjeld;
+En Blomst jeg søger i fremmed Land
+    paa Bjerg og vildene Fjeld;
 Ak, hvis jeg den Blomst ei finde kan,
-Jeg faaer ei Ro i min Sjæl.
+    Jeg faaer ei Ro i min Sjæl.
 
 Der lever Ingen i Verden her,
     Som kan mig sige dens Navn;
@@ -5392,7 +5632,9 @@ Men finde vi ei den Blomst paa Jord,
 Saa søge vi den i Stjernernes Spor
     I Himmelhangen hos Gud.
 
-<pb n="295" facs="310.jpg"/>Henover Genfersøen foer vemodsfulde Sang,
+<pb n="295" facs="310.jpg"/><nonum><center>* * *</center></nonum>
+
+Henover Genfersøen foer vemodsfulde Sang,
 Da toned det fra Bjergene som Æolsharpers Klang,
 Og fra det Fjerne vifted saa underfuld en Luft,
 Med ubekjendte Luftning kom fremmed Blomsterduft.
@@ -5512,6 +5754,11 @@ Brune Øine tindre under nikkende Hat.''
   </subtitle>
   <firstline>Velskland, er du alt nær? jeg hører alt dine Toner</firstline>
   <source in="bd2" pages="5-11"/>
+  <places>
+    <place ref="gex" relation="setting"/>
+    <place ref="simplon-pass" relation="subject" primary="true"/>
+    <place ref="milan" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5560,9 +5807,9 @@ Talen klinger som Sang, og Blikket glindser som Ild.
 Domo d'Ossola alt omsmiler studsende Nordboe,
 Henrykt seer han sig om, og aander fremmede Luft.
 
-<nonum><center>* * *</center></nonum>
+<pb n="8" facs="321.jpg"/><nonum><center>* * *</center></nonum>
 
-<pb n="8" facs="321.jpg"/>        I Luftninger milde!
+        I Luftninger milde!
     I Dufte, som svømme,
         Husvalende stille,
     Paa Lysets de bævende Strømme!
@@ -5637,7 +5884,14 @@ Derpaa stole vi tryg, og glad Milano vi see.
 <head>
   <title>Domkirken i Milano</title>
   <firstline>Hellige Marmorbjerg, til Herrens Tempel udhvælvet!</firstline>
+  <pictures>
+    <picture artwork="kunst/giovanni-migliara-duomo-milano-1819-1828" />
+  </pictures>
   <source in="bd2" pages="12"/>
+  <places>
+    <place ref="milan-cathedral" relation="subject" primary="true"/>
+    <place ref="milan" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5664,6 +5918,10 @@ Bøied den stolte Sjæl, og føled Herren var nær.
   <subtitle>[Milano.]</subtitle>
   <firstline>Forlad mig ei du store Aand, hvis Vinge</firstline>
   <source in="bd2" pages="13-14"/>
+  <keywords>ottave-rime</keywords>
+  <places>
+    <place ref="milan" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5716,6 +5974,9 @@ Hvor Døde kun begrave deres Døde.
     <note>* Napoleons.</note>
   </notes>
   <source in="bd2" pages="15-16"/>
+  <places>
+    <place ref="milan" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5743,6 +6004,10 @@ Taus den Fremmede staaer, og Synet ryster hans Sjæl. -
   <title>Millandske Scener</title>
   <firstline>Kommer et Liigtog hist? den store Karmenes Række</firstline>
   <source in="bd2" pages="17-19"/>
+  <places>
+    <place ref="milan" relation="subject" primary="true"/>
+    <place ref="la-scala" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5795,6 +6060,9 @@ Lungen ryster dem nu den brave Trøster Bajaz.
   <title>Sidste Aften i Milano</title>
   <firstline>Lette, sydlige Liv, ei her du Nordboen fængsler</firstline>
   <source in="bd2" pages="20-24"/>
+  <places>
+    <place ref="milan" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5907,6 +6175,9 @@ Drøm nu om Himlens Ro, og fro du vaagner til Liv.
   <title>Parma</title>
   <firstline>Her seer jeg førstegang i Farveglød</firstline>
   <source in="bd2" pages="25-26"/>
+  <places>
+    <place ref="parma" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5960,6 +6231,9 @@ End kolde Steen dit Aasyn her afbilded.
   <title>Reggio</title>
   <firstline>Rig er Velskland paa Konst, og ei en Stad er saa liden</firstline>
   <source in="bd2" pages="27-28"/>
+  <places>
+    <place ref="reggio-emilia" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5996,6 +6270,9 @@ Vist han knæler nu der, hvor høit du svæver i Glands.
     <picture src="ingemann20190123102-p1.jpg" type="illustration" year="1514">Rafael (1483-1520): <i>Den hellige Cecilias ekstase</i>, ca. 1514. Pinacoteca Nazionale di Bologna.</picture>
   </pictures>
   <source in="bd2" pages="29-32"/>
+  <places>
+    <place ref="bologna" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6089,6 +6366,9 @@ Og lærer Jorden høie Engles Sang.
   <title>Livorno</title>
   <firstline>St. Cecilias Stad, i dig var meget at skue</firstline>
   <source in="bd2" pages="33"/>
+  <places>
+    <place ref="livorno" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6113,6 +6393,9 @@ Toner paa fremmed Kyst, og Sjælen svulmer i Sang.
   <subtitle>[Seet i Livorno.]</subtitle>
   <firstline>Hvad hvidsker, hvad suser</firstline>
   <source in="bd2" pages="34-38"/>
+  <places>
+    <place ref="mediterranean-sea" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6218,6 +6501,10 @@ Hvor Stjernernes Herre kun kjender min Røst.
     <picture src="ingemann20190123105-p1.jpg" museum="uffizi" objid="venere-dei-medici"><i>Venus de' Medici</i>, græsk, 1. årh. fvt., marmor.</picture>
   </pictures>
   <source in="bd2" pages="39-52"/>
+  <places>
+    <place ref="florence" relation="subject" primary="true"/>
+    <place ref="florence-baptistery" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6312,9 +6599,9 @@ Grusom Konst har igjen dig vakt til marterfuldt Liv;
 Saa i Sekler du stod, skal saa til Dommedag stande,
 Hvo ei Frelseren saae, forstener evig som du.
 
-<nonum><center>* * *</center></nonum>
+<pb n="44" facs="357.jpg"/><nonum><center>* * *</center></nonum>
 
-<pb n="44" facs="357.jpg"/>Rig paa evige Konst, og rig paa vexlende Ynde,
+Rig paa evige Konst, og rig paa vexlende Ynde,
 Blomstrer i yppig Flor Toscanas herligste Stad.
 Blomster-dronningen her paa Møens Kinder og gløder;
 Men som Lillien bleg, her skjønnest Qvinde dog staaer:
@@ -6355,9 +6642,9 @@ Men evig slumrer Aanden ingenlunde:
 Den vaagner vist,, naar Livets Herre kalder,
 Og staaer for Gud, naar Domsbasunen gjalder.
 
-<nonum><center>* * *</center></nonum>
+<pb n="46" facs="359.jpg"/><nonum><center>* * *</center></nonum>
 
-<pb n="46" facs="359.jpg"/>Stander for førstegang her fremmed Vandrer fra Norden
+Stander for førstegang her fremmed Vandrer fra Norden
 Hos de Værker, som længst forbaused studsende Jord,
 Standser i Kirken han, og seer paa Graven de Navne,
 Som gjennem Verden klang fra Konstheroernes Old,
@@ -6500,6 +6787,9 @@ Hæv dem forklaret, forent evig, i evige Lys!
   <firstline>Nu gaaer Reisen til Rom, paa Veien stakket vi dvæle</firstline>
   <source in="bd2" pages="53-54"/>
   <keywords>petrarca</keywords>
+  <places>
+    <place ref="arezzo" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6515,7 +6805,7 @@ Gav for Elskov og Sang dig Jorden Taarer og Savn,
 Gjerne roser den sig nu af din Grav og din Vugge,
 Krandsed din Smerte med Lyst, og pryded sig med dit Navn.
 
-<nonum><center>* * * </center></nonum>
+<nonum><center>* * *</center></nonum>
 
 Dog under Himlens lykkeligste Stjerne
 Det Øie Lyset saae, som stille svømmed
@@ -6540,6 +6830,9 @@ Den skjønneste paa Himlen evig pranger.
   <title>Peruggia</title>
   <firstline>Tit Viinhøstglæder nu Valfarten standse</firstline>
   <source in="bd2" pages="55-56"/>
+  <places>
+    <place ref="perugia" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6589,6 +6882,9 @@ Og Roma var deres store Amme.
   <title>Spoletto</title>
   <firstline>Tre Dage endnu saa er jeg i Rom</firstline>
   <source in="bd2" pages="57-60"/>
+  <places>
+    <place ref="spoleto" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6681,7 +6977,14 @@ Gaaer op og ned som Hjulets Ring.
 <head>
   <title>Terni</title>
   <firstline>Her, hvor til mægtig Strøm i Vuggen Tacitus lytted</firstline>
+  <pictures>
+    <picture artwork="kunst/giambattista-bassi-cascata-delle-marmore-1820" />
+  </pictures>
   <source in="bd2" pages="61-64"/>
+  <places>
+    <place ref="terni" relation="setting"/>
+    <place ref="marmore-falls" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6701,7 +7004,7 @@ Vandrer, kom ei for nær - eet Skridt, saa ruller du selv
 <pb n="62" facs="375.jpg"/>Knust fra Fjeld og til Fjeld, som nys den fremmede Skjønne,
 Som efter Blomster greb, og sang imens hun henfoer
 
-<nonum><center>* * * </center></nonum>
+<nonum><center>* * *</center></nonum>
 
         Endnu din Sang jeg hører,
         Du Møe fra fjerne Lande!
@@ -6745,9 +7048,9 @@ Som efter Blomster greb, og sang imens hun henfoer
 Fjernt staaer dog Nordens Stjerne,
 Og de, jeg drømmer om, er i det Fjerne.
 
-<nonum><center>* * * </center></nonum>
+<pb n="64" facs="377.jpg"/><nonum><center>* * *</center></nonum>
 
-<pb n="64" facs="377.jpg"/>''Men Signoren er vaad; det alt en Time har regnet.''
+''Men Signoren er vaad; det alt en Time har regnet.''
 Heftigt som velske Sind er Veirets Luner og her,
 Har eet Vandfald vi søgt, et andet nu os ledsager;
 Posthuusporten vi naae, og see! her mangle vi ei
@@ -6827,7 +7130,13 @@ Du gamle Tider igjen.
 <head>
   <title>Civita Caskellana</title>
   <firstline>Skjøn var malerisk Gang ved Flod og buskede Klipper</firstline>
+  <pictures>
+    <picture artwork="kunst/daniel-dupre-civita-castellana-1792-1809" />
+  </pictures>
   <source in="bd2" pages="68-69"/>
+  <places>
+    <place ref="civita-castellana" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6891,7 +7200,6 @@ Og Cardinaler selv, med røde Strømper, tilfods,
 Bagved Tjenernes Hær; men lystig dandser paa Veien
 Viinhøstpigerne hjem med Sang og Cymblernes Klang.
 
-
 <nonum><center><w>Viinhøsttoget.</w></center></nonum>
 <nonum><center><w>[National Folkedands.]</w></center></nonum>
 
@@ -6922,7 +7230,7 @@ Gaaer Viinbjergets Drot,
     I Rankernes Høst,
     Med Lyst, med Lyst.
 
-<nonum><center>* * * </center></nonum>
+<nonum><center>* * *</center></nonum>
 
 Snart baccantiske Tog i store Forstad forsvinder;
 Popolo-Porten alt mig aabner hellige Stad.
@@ -6956,7 +7264,13 @@ Hvordan Alting saa er - saa gaaer du dog nu i Rom.
 <head>
   <title>De første Dage i Rom</title>
   <firstline>Tit Vandreren gik hjemløs henover Mark og Eng</firstline>
+  <pictures>
+    <picture artwork="eckersberg/christoffer-wilhelm-eckersberg-forum-rome-1814" />
+  </pictures>
   <source in="bd2" pages="75-76"/>
+  <places>
+    <place ref="rome" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -7008,6 +7322,9 @@ Men tit jeg gaaer fra Høi til Høi, og seer og veed ei hvad.
   </subtitle>
   <firstline>O Verdensdronning, Roma, hvor stander du?</firstline>
   <source in="bd2" pages="77-84"/>
+  <places>
+    <place ref="rome" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -7117,9 +7434,9 @@ Er det din Aand, som rører mig sælsomt her?
 Roma! ja jeg har dig fornummet,
 Spørger ei mere: Roma, hvor er du?
 
-<nonum><center>* * * </center></nonum>
+<pb n="82" facs="395.jpg"/><nonum><center>* * *</center></nonum>
 
-<pb n="82" facs="395.jpg"/>  Med Verdenskronen over blege Pande,
+  Med Verdenskronen over blege Pande,
 Den høie Skioldmøe sig af Gruset hæver;
 Mod Skyen Ørnen fra sit Banner svæver,
   Trindt knæle Fyrsterne i fjerne Lande.
@@ -7187,6 +7504,9 @@ Med Konstens underfulde Billedkrone.
   <title>Dagligt Romerliv</title>
   <firstline>Her boe vi nu i Huset, med skrøbelig Altan</firstline>
   <source in="bd2" pages="85-89"/>
+  <places>
+    <place ref="rome" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -7288,8 +7608,15 @@ Og fulgte kun som Mester Guds evige Natur.
   <title>Thorvaldsens Værksted</title>
   <subtitle>[Alexanders Triumftog - Venus med Æblet - Gratierne - Amor og Mars - Jason. Mercur, som overlister Argus - Minerva, som fatter Sommerfuglen paa Prometeus's Billedstøtte - de legende Børn - Scener af Homer - christelige Basrelief - Dagen og Natten.]</subtitle>
   <firstline>I Triumf fremtræder</firstline>
+  <pictures>
+    <picture artwork="thorvaldsen/1815-natten" />
+    <picture artwork="thorvaldsen/1815-dagen" />
+  </pictures>
   <source in="bd2" pages="90-98"/>
   <keywords>thorvaldsen</keywords>
+  <places>
+    <place ref="rome" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -7326,7 +7653,7 @@ I Haanden rolig Seirens Æble hviler.
 
 Hist Huldgudinderne staae armslynged.
   Olympisk Guddomsro hver Qvinde fornemmer.
-<pb n="92" facs="405.jpg"/> Til deres Fod har Genien sig klynget,
+<pb n="92" facs="405.jpg"/>  Til deres Fod har Genien sig klynget,
 Og Barnehaanden Elskovslyren stemmer.
 
     Hvorhen jeg Blikket vender.
@@ -7491,6 +7818,9 @@ Drømmer sødt om Evigheden.
   <title>Søndag i Rom</title>
   <firstline>Sund paa Havernes Høi er Luften, eensomt og stille</firstline>
   <source in="bd2" pages="99-101"/>
+  <places>
+    <place ref="rome" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -7539,7 +7869,14 @@ Størst dog tykkes mig det, som skjønnest glæder min Sjæl.
 <head>
   <title>St. Peters-Kirken</title>
   <firstline>Løfted Konstkæmpens Haand end Pantheon, som en Kugle</firstline>
+  <pictures>
+    <picture artwork="eckersberg/christoffer-wilhelm-eckersberg-andagt-peterskirken-1814" />
+  </pictures>
   <source in="bd2" pages="102-103"/>
+  <places>
+    <place ref="st-peters-basilica" relation="subject" primary="true"/>
+    <place ref="vatican-city" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -7584,6 +7921,10 @@ Større over dit Gruus skal Verdenskirken opstaae.
     <picture src="ingemann20190123119-p1.jpg" type="illustration" year="1505-1525" museum="vatican" invnr="MV.40359.0.0">Giulio Romano (ca. 1499-1546) og Giovan Francesco Penni (ca. 1488-1528), efter forarbejder af Rafael (1483-1520): <i>Incoronazione della Vergine (Madonna di Monteluce)</i>, 1505-1525, olie på træ, 354 × 232 cm. Pinacoteca Vaticana.</picture>
   </pictures>
   <source in="bd2" pages="104-115"/>
+  <places>
+    <place ref="vatican-museums" relation="subject" primary="true"/>
+    <place ref="vatican-city" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -7732,6 +8073,9 @@ Høit paa Tabor i Lys sig hæver Aandernes Herre,
 Medens ved Bjergets Fod forladt Disciplene staae;
 <pb n="111" facs="424.jpg"/>Kan Dæmonen de ei af Barnets Bryst nu bortjage?
 Ak, er Mesteren fjern, Hvo tvinger Afgrundens Aand?
+
+----
+
 - Fjern var Mesteren ei; i sin Forklarelse glemte
 Lysets Herre ei dem, som haabed mens det var <w>Nat</w>;
 Aandefyrsten nedsteg i Glands fra Aandernes Samfund,
@@ -7823,6 +8167,9 @@ Og forgjæves ei blev den længste Pillegrimsfart.
   <title>De Cæsaris</title>
   <firstline>Er Dagen skjønt henrullet paa billedrige Sti</firstline>
   <source in="bd2" pages="116-121"/>
+  <places>
+    <place ref="rome" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -7962,6 +8309,9 @@ Vist grumt hans Bande hævner ham nu paa Neapels Vei.
   <title>Romerske Feste</title>
   <firstline>Hellig er hver Dag her, hver Martyr her har sit Alter</firstline>
   <source in="bd2" pages="122-124"/>
+  <places>
+    <place ref="rome" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -8012,6 +8362,10 @@ Det jeg skuer end her, om Jorden sprænges i Luft.
   <subtitle>[Alle Sjæles Fest.]</subtitle>
   <firstline>Monte Mario snart, og snart Treenighedsbjerget</firstline>
   <source in="bd2" pages="125-126"/>
+  <places>
+    <place ref="san-pietro-in-montorio" relation="subject" primary="true"/>
+    <place ref="rome" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -8189,6 +8543,9 @@ Saa sjunger Nordens Søn i Laurens Skygger,
   <title>Nonneindvielsen</title>
   <firstline>Nær ved Klostret jeg boer, hvor sig bag Sløret og Gittret</firstline>
   <source in="bd2" pages="133-139"/>
+  <places>
+    <place ref="rome" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -8259,7 +8616,10 @@ Og kaster Verdens gyldne Glimmerklæde.
 For evig nu sin Frelser hun tilhører;
 Paa Jordens Pragt den rene Fod kan træde -
 Til større Glands en Engel hende fører.
-<pb n="137" facs="450.jpg"/>Til Klosteret staaer ikke Signora Nannas Hu,
+
+<pb n="137" facs="450.jpg"/><nonum><center>* * *</center></nonum>
+
+Til Klosteret staaer ikke Signora Nannas Hu,
 Maaskee naar hun blier gammel og graa, men ei endnu.
 Den deilige Francesca, som nylig Sløret tog,
 Hun kaldte „Poveretta“, og Guitarstrængen slog,
@@ -8273,7 +8633,10 @@ Der nedenfor Altanen det standser mangengang;
 Men ei Signora Nanna har hørt den mindste Klang.
 Hun som en Steen maa sove, men kjender Sangen vist:
 Nys nynned hun i Tanker den ved Vinduet jo hist. -
-<pb n="138" facs="451.jpg"/>Sig Romerinden glæder til Carnevallet alt;
+
+<pb n="138" facs="451.jpg"/><nonum><center>* * *</center></nonum>
+
+Sig Romerinden glæder til Carnevallet alt;
 Hvor Fremmede da gjækkes, man har os glad fortalt.
 I Masken tit da mødes, Hvo hele Aaret kun
 Fjernt til hinanden blinked i ubevogtet Stund.
@@ -8313,6 +8676,9 @@ Bebuder Glæden, som er nær, med kjærlig Lov og Priis.
   <title>Pifferari</title>
   <firstline>Naar den glade Juul er nær</firstline>
   <source in="bd2" pages="140-143"/>
+  <places>
+    <place ref="rome" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -8364,6 +8730,7 @@ Til den Moder, from og tro,
 Skal de Vuggesange trænge;
 Hende de bebude vil
 Glade Stund med Klang og Spil.
+
 Om de Mænd fra Solens Hjem,
 Stjernen fra de Morgenzoner,
 Hyrderne ved Bethlehem,
@@ -8396,6 +8763,9 @@ Juleglæde! Julesang!
   <title>Juul i Rom</title>
   <firstline>Sig barnligt Folket glæder til Skjønne Juletid</firstline>
   <source in="bd2" pages="144-149"/>
+  <places>
+    <place ref="rome" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -8464,62 +8834,63 @@ Vi Fødelandet mindes med danske Brodersang.
 <w>Danskes Sang i Syden.</w>
 
 I vide Verden gaaer freidig ud
-Den danske Mand;
+    Den danske Mand;
 Men aldrig glemmer han Ven og Brud,
-Og Fædreland.
+    Og Fædreland.
 Og mødes Danske paa fremmed Kyst,
-Er Glæden stor;
+    Er Glæden stor;
 Høit toner Sangen fra Broderbryst
-Mod høien Nord:
+    Mod høien Nord:
 Hil være dig, Danmark, vor Moder!
 
 Det milde Syden har Bjerg og Flod,
-Og klare Luft;
+    Og klare Luft;
 Her ruller fyrigt det muntre Blod,
-I Blomsterduft.
+    I Blomsterduft.
 Det strenge Norden har dybe Hav,
-Saga stolt at see,
+    Saga stolt at see,
 <pb n="148" facs="461.jpg"/>Der funkle Stjerner paa Kæmpens Grav
-I Vintersnee.
+    I Vintersnee.
 Hil være dig, Danmark, vor Moder!
 
 I Velskland slynger sig Ranken fro
-Om Træets Arm;
+    Om Træets Arm;
 I Norden klynger sig Møen tro
-Til Vennens Barm.
+    Til Vennens Barm.
 Her Livet gløder i freidig Lyst,
-Her Myrthen groer;
+    Her Myrthen groer;
 Men dybt staaer Hjertet i stille Bryst
-Mod høien Nord.
+    Mod høien Nord.
 Hil være dig, Danmark, vor Moder!
 
 Her Lauren fletter sin grønne Krands
-Om Konstens Hal,
+    Om Konstens Hal,
 Her stande Guder med Oldtidsglands
-I Marmorsal;
+    I Marmorsal;
 Men hist hvor Solen bag Skye nedgaaer
-Ved Vintertid,
+    Ved Vintertid,
 Ved Arnen Barden Guldharpen slaaer
-Om Fædres Tid.
+    Om Fædres Tid.
 Hil være dig, Danmark, vor Moder!
+
 <pb n="149" facs="462.jpg"/>Til Sydens Himmel, til lyse Luft
-Vi vandred fro,
+    Vi vandred fro,
 I Rankens Lye, i Orangens Duft
-Blev Hjertet tro.
+    Blev Hjertet tro.
 Tit længselsfuld mod det fjerne Hav
-Vi stirred frem:
+    Vi stirred frem:
 Hvor Stjerner funkle paa Fædres Grav,
-Der er vort Hjem.
+    Der er vort Hjem.
 Hil være dig, Danmark, vor Moder!
 
 Og Hil dig, Broder, og Ven og Moe!
-Ved danske Strand!
+    Ved danske Strand!
 Fornem vor Sang over Bjerg og Soe
-Fra fremmed Land!
+    Fra fremmed Land!
 Hvor Livet gløder i freidig Lyst,
-Hvor Myrthen groer,
+    Hvor Myrthen groer,
 Slaaer Hjertet dybt i det danske Bryst
-Mod høien Nord.
+    Mod høien Nord.
 Hil være dig, Danmark, vor Moder!
 </poetry>
 </body>
@@ -8530,6 +8901,9 @@ Hil være dig, Danmark, vor Moder!
   <title>Julemorgen</title>
   <firstline>Aarle, før Sol opstaaer, til St. Maria Maggiore</firstline>
   <source in="bd2" pages="150"/>
+  <places>
+    <place ref="rome" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -8561,6 +8935,9 @@ Dagens Konge er fød, vi har hans Herlighed seet.
   <title>Dansk Juleglæde</title>
   <firstline>Vel ei den danske Kirke i Rom sig hæve kan</firstline>
   <source in="bd2" pages="151"/>
+  <places>
+    <place ref="rome" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -8591,6 +8968,9 @@ Til Ven og Møe i Norden flyer glade Juleqvad.
   <subtitle>[Fra Rom til mine Elskede hjemme.]</subtitle>
   <firstline>Med Palmens Blad</firstline>
   <source in="bd2" pages="152-156"/>
+  <places>
+    <place ref="rome" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -8698,6 +9078,9 @@ Al Verden til Trøst og Glæde.
     <event>1819-01-06</event>
   </dates>
   <source in="bd2" pages="157-158"/>
+  <places>
+    <place ref="rome" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -8743,6 +9126,9 @@ Paa det barnlige Folk, som ei forarges derved.
     <event>1819-01-17</event>
   </dates>
   <source in="bd2" pages="159"/>
+  <places>
+    <place ref="rome" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -8773,7 +9159,13 @@ Bad om Lod han og Deel i Alforløserens Liv.
   <dates>
     <event>1819-01-21</event>
   </dates>
+  <pictures>
+    <picture artwork="eckersberg/christoffer-wilhelm-eckersberg-sant-agnese-1815" />
+  </pictures>
   <source in="bd2" pages="160-161"/>
+  <places>
+    <place ref="rome" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -8805,6 +9197,9 @@ Santa Agneses Aand bevare Sjælenes Fred.
   <title>Spansk Sørgehøitid i Rom</title>
   <firstline>Til Paladset Folket strømmer</firstline>
   <source in="bd2" pages="162-167"/>
+  <places>
+    <place ref="rome" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -8943,6 +9338,9 @@ Hvad begraves, skal opstaae.
   <title>Romersk Musik</title>
   <firstline>Trykker hellig Stad dog Verdenssorgen mig stundom</firstline>
   <source in="bd2" pages="168-169"/>
+  <places>
+    <place ref="rome" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -8991,6 +9389,9 @@ Svinge blandt Stjerner sig paa Tonevinger - til Liv.
   <subtitle>[Prima Communione.]</subtitle>
   <firstline>Hellige Børnefest idag mig venlig opbygger</firstline>
   <source in="bd2" pages="170-171"/>
+  <places>
+    <place ref="rome" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -9025,37 +9426,42 @@ Medens paa Kirkegulv nu beder knælende Folk.
     <event>1819-01-28</event>
   </dates>
   <source in="bd2" pages="172-174"/>
+  <places>
+    <place ref="rome" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Hvad toner i Syden liig Stemmer fra Nord?
-I Roma de Toner gjenrunge —
+    I Roma de Toner gjenrunge —
 Udsvinger fra Graven sig Ørnen saa stor,
-Og hører Normannerne sjunge?
+    Og hører Normannerne sjunge?
 Normannen er kommen; men Sang er hans Sværd,
 Fred er hans Løsen, Fryd er hans Færd.
 
 Hvad tyder, hvad toner den fremmede Røst?
-Hvi runge de nordiske Sange?
+    Hvi runge de nordiske Sange?
 Maa fremmede Vandrer fra balthiske Kyst
-Her eensom og stille ei gange?
+    Her eensom og stille ei gange?
 De Trækfugle komme, de Trækfugle flye,
 Samlet de sjunge, juble i Skye.
 
 Fra Dannemarks Lunde, fra Bøgenes Strand
-I Verden adskilt vi omfare;
+    I Verden adskilt vi omfare;
 Men samlet gjenfinde vi Fædreneland,
-Høit jubler den reisende Skare:
+    Høit jubler den reisende Skare:
 <pb n="173" facs="486.jpg"/>Velsignet Hvo kommer fra Bøgenes Strand!
 Fred om vor Arne, Fred om vort Land!
 
 Og Fred om vor Konge! og Fred om hans Huus!
-Og Fred om de Skjoldungers Stamme!
+    Og Fred om de Skjoldungers Stamme!
 Neronernes Throne er sjunken i Gruus,
-De Skjoldungers Stjerner end flamme.
+    De Skjoldungers Stjerner end flamme.
 Velsignet Hvo freder om Bøgenes Strand!
 Fred om vor Konge! Fred om hans Land!
+
+<nonum><center>* * *</center></nonum>
 
 Saa Kongefestens Jubel til Glassets muntre Klang
 Fra Ermelino<footnote>Hotellet.</footnote> runger i skandinavisk Sang.
@@ -9096,6 +9502,14 @@ Vort Dannemark skal leve, Kong Fredrik leve skal!
   <title>Udvandringer fra Rom</title>
   <firstline>Er det Vinter end her, dog grønt er Bjerget som Dalen</firstline>
   <source in="bd2" pages="175-184"/>
+  <places>
+    <place ref="rome" relation="setting" primary="true"/>
+    <place ref="albano-laziale" relation="subject"/>
+    <place ref="ariccia" relation="subject"/>
+    <place ref="lake-nemi" relation="subject"/>
+    <place ref="monte-cavo" relation="mentioned"/>
+    <place ref="tivoli" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -9150,7 +9564,10 @@ Lynet blandt Fjeldespiir, og Helligaftenens Klokke,
 Fra Ariccias Taarn — Alt stemmer underligt her.
 Taus vemodige Ven gaaer ved min Side, og langsomt
 Fører Bjergveien os til Hvilen i fremmede Bye.
-<pb n="178" facs="491.jpg"/>Tydske og Danske her hos Mariana er hjemme,
+
+<pb n="178" facs="491.jpg"/><nonum><center>* * *</center></nonum>
+
+Tydske og Danske her hos Mariana er hjemme,
 Mangent velbekjendt Navn med Maal paa Stolpen vi see.
 Hvad fra Ældgammel Tid end Byens Krønike melder.
 Veed Vertinden heelt vel, saa ganger Sagnet om Land.
@@ -9288,6 +9705,9 @@ Hvor Sorg og Glæde leger Skjul i barnlige Natur.
   <title>Carnevallet i Rom</title>
   <firstline>I blonde Signorer, som har hid Jer umaget</firstline>
   <source in="bd2" pages="187-245"/>
+  <places>
+    <place ref="rome" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -9500,6 +9920,9 @@ Og kan ved Bedrifter sig qvæge.
 Og kæmper med Steen og med Knive.
 Ei meer her kroner den romerske Keiser sig;
 Men den romerske Aand er ilive.
+
+----
+
 <w>Romersk Borger.</w>
 Den Improvisator jeg lider ikke.
 <w>Konstdommer.</w>
@@ -9892,6 +10315,7 @@ Han løber, naar han mig seer,
 Deler Vagten Byttet og leer;
 Men paa Maven den Reisende ligger,
 Sit Liv af min Haand han tigger.
+
 Paa mit Bjerg jeg selv er en Potentat:
 Med Verden fører jeg Krig,
 Kan slutte med Paverne Concordat,
@@ -9904,6 +10328,9 @@ Den Maske mig synes en Smule grov.
 Har han Lyst, har han Lov
 Til at gjøre sig gal -
 Her er Maskefrihed og Carneval.
+
+----
+
 <w>Gartnermasken</w> (afsides).
 Hun har kjendt mig: see, hun bærer
 Rosen under høie Barm.
@@ -10484,6 +10911,9 @@ Snart er Maskespillet endt,
 Jeg med Narrene forsvundet,
 Er som før en Phantasie —
 Bort — her er min Tid forbi.
+
+----
+
 <pb n="242" facs="555.jpg"/><w>Arlechino</w> paa Corso blandt Maskerne med
 Smaalys (
 <span lang="it">Moccoletti</span>).

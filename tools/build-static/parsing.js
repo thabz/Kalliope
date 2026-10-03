@@ -209,16 +209,20 @@ const effectiveTextTitles = ({ firstline, title, indextitle, linktitle }) => ({
   linkTitle: linktitle ?? indextitle ?? title ?? firstline,
 });
 
-const extractSubtitles = (head, tag = 'subtitle', collected) => {
+const extractSubtitles = (head, tag = 'subtitle', collected, fragmentContext = {}) => {
   let subtitles = null;
   const subtitle = getElementByTagName(head, tag);
   if (subtitle && getElementsByTagName(subtitle, 'line').length > 0) {
     subtitles = getElementsByTagName(subtitle, 'line').map(s => {
-      return htmlToXml(safeGetInnerXML(s), collected, true);
+      return htmlToXml(safeGetInnerXML(s), collected, true, {
+        ...fragmentContext, blockType: tag,
+      });
     });
   } else if (subtitle) {
     const subtitleString = safeGetInnerXML(subtitle);
-    subtitles = [htmlToXml(subtitleString, collected, true)];
+    subtitles = [htmlToXml(subtitleString, collected, true, {
+      ...fragmentContext, blockType: tag,
+    })];
   }
   return subtitles;
 };
@@ -288,7 +292,7 @@ const getNoteType = note => {
 };
 
 // context contains keys for any `${var}` that's to be replaced in the note texts.
-const get_notes = (head, collected, context = {}) => {
+const get_notes = (head, collected, context = {}, fragmentContext = {}) => {
   const notes = getChildByTagName(head, 'notes');
   if (notes == null) {
     return [];
@@ -307,7 +311,9 @@ const get_notes = (head, collected, context = {}) => {
       content_lang: lang,
       content_html: htmlToXml(
         replaceContextPlaceholders(safeGetInnerXML(note)),
-        collected
+        collected,
+        false,
+        { ...fragmentContext, blockType: 'note' },
       ),
     };
     if (unknownOriginalByPoetId != null) {

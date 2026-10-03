@@ -18,8 +18,11 @@ const serializeChildren = node => {
     .join('');
 };
 
+const stripNotes = text =>
+  text.replace(/<(note|footnote)\b[^>]*>[\s\S]*?<\/\1>/g, '');
+
 const normalizeLine = line =>
-  line
+  stripNotes(line)
     .replace(/<pb\b[^>]*\/>/g, '')
     .replace(/<[^>]+>/g, '')
     .replace(/&amp;/g, '&')
@@ -31,7 +34,7 @@ const normalizeLine = line =>
     .trim();
 
 const visibleLines = text =>
-  text
+  stripNotes(text)
     .replace(/\r\n?/g, '\n')
     .split('\n')
     .map(normalizeLine)
@@ -104,8 +107,12 @@ const facsimileBeforeFirstPb = (source, workSource, firstPb, printedPage) => {
   return `${String(Number(match[1]) - 1).padStart(match[1].length, '0')}.jpg`;
 };
 
-const splitBodyPages = body => {
-  const serialized = serializeChildren(body);
+const splitBodyPages = (body, { noteNeutral = false } = {}) => {
+  const raw = serializeChildren(body);
+  const serialized = noteNeutral ? raw.replace(
+    /<(note|footnote)\b[^>]*>[\s\S]*?<\/\1>/g,
+    note => (note.match(/<pb\b[^>]*\/>/g) ?? []).join(''),
+  ) : raw;
   const pattern = /<pb\b([^>]*)\/>/g;
   const pages = [];
   let cursor = 0;
@@ -143,7 +150,7 @@ const buildPageInventory = ({ xml, workFile = null, includeExpectedPages = true 
     const interval = parseSimplePages(pages);
     const body = directChild(entry, 'body');
     if (body == null) continue;
-    const bodyPages = splitBodyPages(body);
+    const bodyPages = splitBodyPages(body, { noteNeutral: true });
     const pbs = Array.from(body.getElementsByTagName('pb'));
     const firstPrintedPage = interval?.label(interval.from) ?? (pages || null);
     const firstFacsimile = facsimileBeforeFirstPb(
@@ -191,13 +198,15 @@ const buildPageInventory = ({ xml, workFile = null, includeExpectedPages = true 
         status: 'pending',
         reviewer: null,
         disposition: null,
+        typography_status: 'pending',
+        typography_disposition: null,
       });
     });
   }
   return rows;
 };
 
-const inventoryKey = row => `${row.text_id}:${row.printed_page}`;
+const inventoryKey = row => `${row.text_id}:${row.printed_page ?? row.facsimile}`;
 
 const auditPageInventory = ({ xml, inventory }) => {
   const actual = buildPageInventory({ xml, includeExpectedPages: false });
@@ -257,6 +266,15 @@ const auditPageInventory = ({ xml, inventory }) => {
     } else {
       if (!expected.reviewer) issues.push({ rule: 'missing-page-reviewer', key });
       if (!expected.disposition) issues.push({ rule: 'missing-page-disposition', key });
+    }
+    if (expected.typography_status !== 'reviewed') {
+      issues.push({
+        rule: 'typography-not-reviewed',
+        key,
+        status: expected.typography_status ?? null,
+      });
+    } else if (!expected.typography_disposition) {
+      issues.push({ rule: 'missing-typography-disposition', key });
     }
     if (expected.order_exception && !expected.disposition) {
       issues.push({ rule: 'undocumented-order-exception', key });

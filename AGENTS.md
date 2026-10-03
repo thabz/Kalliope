@@ -24,6 +24,19 @@ Disse regler gælder for AI-agenter og automatiserede assistenter, der arbejder 
   skal opspores, udvælges, indsættes eller forbindes med oversættelsen. Brug
   også `$add-kalliope-work`, når originalen oprettes som et selvstændigt værk.
 
+## OCR and PDF tooling
+
+- Kør `tools/ocr-environment` som første trin ved OCR- og PDF-opgaver. Kontrollér
+  eksisterende værktøjer, før et nyt systemværktøj installeres.
+- Kraken er den foretrukne OCR-motor til historiske tryk og fraktur. Brug den
+  eksisterende installation; geninstallér den ikke, og læg ikke
+  projektdependencies i Krakens pipx-miljø. Brug projektets eget venv/uv-miljø
+  til projektkode.
+- Brug `pdftoppm` til PDF-sider som billeder og `pdftotext` til eksisterende
+  PDF-tekst. Brug ImageMagick (`magick`) til billedbehandling. `ocrmypdf` kan
+  bruges til almindelige PDF/OCR-workflows. Tesseract er et hjælpeværktøj og
+  ikke nødvendigvis førstevalg til historisk fraktur.
+
 ## Kalliopes dækningsmål
 
 Ved arbejde med personer, værker, kilder og import skal
@@ -77,6 +90,11 @@ digtere.
 - Uden for arbejdsgangen for GitHub issue-fixes må agenten aldrig committe, pushe
   eller amende kodeændringer, før brugeren eksplicit har læst ændringen og bedt om
   commit/push. Det gælder også opdateringer til eksisterende PR-branches.
+- Agenten må aldrig oprette en commit med Codex, OpenAI eller en anden agent som
+  author eller committer. Før hver commit skal agenten kontrollere den effektive
+  Git-identitet og bruge repositoryejerens allerede konfigurerede navn og
+  e-mailadresse; agenten må ikke erstatte dem med en agentidentitet via Git-config
+  eller `GIT_AUTHOR_*`-/`GIT_COMMITTER_*`-miljøvariable.
 - Ved `gh issue view ... --comments` kan GitHub CLI i non-TTY give tomt tekstoutput for issues uden kommentarer. Brug enten `--json number,title,state,body,comments` eller kør kommandoen med TTY, når issue-indholdet skal læses.
 - Hvis `gh auth status` melder et ugyldigt token, samtidig med at `gh api` melder en forbindelsesfejl, skal GitHub-forbindelsen testes uden sandboxens netværksbegrænsning, før brugeren bedes logge ind igen. En blokeret API-forbindelse kan ellers fejlagtigt ligne et udløbet token.
 - Når du opretter eller opdaterer en PR, behøver du ikke vente på GitHubs CI, medmindre brugeren eksplicit beder om det.

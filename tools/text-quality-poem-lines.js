@@ -164,7 +164,101 @@ const findCommonPoetryIndentationFindings = ({
   return issues;
 };
 
+// Keep source offsets intact, but hide comments and notes from block discovery.
+const findPoetrySpacingFindings = ({
+  file,
+  data,
+  context = createTextContext(data),
+}) => {
+  const excludedRegions = [];
+  const maskedData = data.replace(
+    /<!--[\s\S]*?-->|<(note|footnote)\b[^>]*>[\s\S]*?<\/\1>/gu,
+    (region, _tag, index) => {
+      excludedRegions.push({ start: index, end: index + region.length });
+      return region.replace(/[^\n]/g, '#');
+    },
+  );
+  const issues = [];
+
+  for (const text of maskedData.matchAll(/<text\b[^>]*>[\s\S]*?<\/text>/gu)) {
+    const textId = firstMatch(text[0], /^<text\b[^>]*\sid="([^"]+)"/u);
+    for (const block of text[0].matchAll(/<poetry\b[^>]*>([\s\S]*?)<\/poetry>/gu)) {
+      const body = block[1];
+      const bodyStart = text.index + block.index + block[0].indexOf('>') + 1;
+      const gaps = [];
+
+      for (const gap of body.matchAll(/(?<=\n)(?:[ \t\r]*\n)+/gu)) {
+        const start = bodyStart + gap.index;
+        const end = start + gap[0].length;
+        if (
+          excludedRegions.some(region => region.start < end && region.end > start) ||
+          body.slice(0, gap.index).trim() === '' ||
+          body.slice(gap.index + gap[0].length).trim() === ''
+        ) {
+          continue;
+        }
+        gaps.push({
+          start,
+          end,
+          blankLines: gap[0].split('\n').length - 1,
+          following: body.slice(gap.index + gap[0].length),
+        });
+      }
+
+      const singleGaps = gaps.filter(gap => gap.blankLines === 1).length;
+      const doubleGaps = gaps.filter(gap => gap.blankLines === 2);
+      if (singleGaps < 4 || doubleGaps.length !== 1) {
+        continue;
+      }
+
+      const gap = doubleGaps[0];
+      // A standalone heading, speaker, ornament or final credit is allowed.
+      const followingLines = gap.following.split('\n');
+      const nextBlank = followingLines.findIndex(line => line.trim() === '');
+      const segmentLength = nextBlank === -1 ? followingLines.length : nextBlank;
+      if (segmentLength <= 1) {
+        continue;
+      }
+
+      issues.push({
+        file,
+        line: lineNumberAt(context.lineStarts, gap.start),
+        rule: 'isolated-double-poetry-gap',
+        severity: 'medium',
+        textId,
+        description: `One double blank-line gap among ${singleGaps} single gaps in poetry; the following passage has more than one line.`,
+        excerpt: context.lines[lineNumberAt(context.lineStarts, gap.end) - 1],
+      });
+    }
+  }
+
+  return issues;
+};
+
 const guillemetAtStart = /^[«»‹›]/u;
+const titleTrailingPunctuationRule = 'title-trailing-punctuation';
+const titleFieldsWithoutTrailingPunctuation = [
+  'title',
+  'indextitle',
+  'toctitle',
+  'breadcrumbtitle',
+];
+
+const ignoredTests = element =>
+  (safeGetAttr(element, 'ignore-tests') ?? '')
+    .split(',')
+    .map(testName => testName.trim())
+    .filter(testName => testName.length > 0);
+
+const titleTextWithoutNotes = candidate => {
+  const document = parseXMLFragment(`<content>${candidate.title}</content>`);
+  ['footnote', 'note'].forEach(tagName => {
+    getElementsByTagName(document, tagName).forEach(note => {
+      note.parentNode.removeChild(note);
+    });
+  });
+  return document.documentElement.textContent.trim();
+};
 
 const extractedTitleCandidate = (head, type) => {
   const element = getChildByTagName(head, type);
@@ -192,10 +286,49 @@ const findTitleMetadataFindings = ({
 }) => {
   const issues = [];
   const document = parseXMLFragment(data);
+  const work = document.documentElement;
+  const workhead = getChildByTagName(work, 'workhead');
+
+  const checkTrailingPunctuation = ({ head, owner, textId }) => {
+    if (
+      head == null ||
+      ignoredTests(owner).includes(titleTrailingPunctuationRule)
+    ) {
+      return;
+    }
+
+    titleFieldsWithoutTrailingPunctuation.forEach(type => {
+      const candidate = extractedTitleCandidate(head, type);
+      if (candidate == null) {
+        return;
+      }
+      const title = titleTextWithoutNotes(candidate);
+      const endsWithAllowedEllipsis = /(?:\.\s*){3,}$/u.test(title);
+      if (/[.:;]$/u.test(title) && endsWithAllowedEllipsis === false) {
+        issues.push(
+          titleIssue({
+            file,
+            context,
+            textId,
+            candidate,
+            rule: titleTrailingPunctuationRule,
+            description: `${type} must not end with a period, colon, or semicolon.`,
+          }),
+        );
+      }
+    });
+  };
+
+  checkTrailingPunctuation({
+    head: workhead,
+    owner: work,
+    textId: 'workhead',
+  });
 
   getElementsByTagName(document, 'text').forEach(text => {
     const head = getChildByTagName(text, 'head');
     const textId = safeGetAttr(text, 'id');
+    checkTrailingPunctuation({ head, owner: text, textId });
     const firstline = extractedTitleCandidate(head, 'firstline');
     const title = extractedTitleCandidate(head, 'title');
     const indextitle = extractedTitleCandidate(head, 'indextitle');
@@ -506,7 +639,11 @@ const regexps = [
     regexp: /\s;\s*$/m,
     ignorelangs: ['fr'],
   },
-  { testName: 'lll', regexp: /lll/, whitelist: [/Allliebe/] },
+  {
+    testName: 'lll',
+    regexp: /lll/,
+    whitelist: [/allliebe/i, /chrystalllabyrinth/i],
+  },
   { testName: 'comma-semicolon', regexp: /,;/ },
   { testName: 'comma-period', regexp: /,\./ },
   {
@@ -607,6 +744,7 @@ const findPoemLineFindingsInText = ({
 
   issues.push(
     ...findCommonPoetryIndentationFindings({ file, data, context }),
+    ...findPoetrySpacingFindings({ file, data, context }),
     ...findTitleMetadataFindings({ file, data, context }),
   );
 
@@ -750,6 +888,7 @@ const collectPoemLineQualityFindings = ({
 export {
   collectPoemLineQualityFindings,
   findCommonPoetryIndentationFindings,
+  findPoetrySpacingFindings,
   findTitleMetadataFindings,
   formatPoemLineIssue,
   findPoemLineFindingsInText,

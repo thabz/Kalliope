@@ -44,6 +44,7 @@
         <ref name="breadcrumbtitle"/>
         <ref name="nofirstline"/>
         <ref name="keywords"/>
+        <ref name="places"/>
         <ref name="source"/>
         <ref name="dates"/>
         <ref name="published"/>
@@ -83,7 +84,6 @@
         <ref name="wrap"/>
         <ref name="line"/>
         <ref name="br"/>
-        <ref name="hr"/>
         <ref name="pb"/>
         <ref name="img"/>
         <ref name="colored"/>
@@ -326,13 +326,6 @@
     </element>
   </define>
 
-  <define name="hr">
-    <element name="hr">
-      <optional><attribute name="width"><text/></attribute></optional>
-      <ref name="mixed"/>
-    </element>
-  </define>
-
   <define name="pb">
     <element name="pb">
       <optional><attribute name="n"><text/></attribute></optional>
@@ -373,6 +366,26 @@
   <define name="breadcrumbtitle"><element name="breadcrumbtitle"><ref name="simpleElement"/></element></define>
   <define name="nofirstline"><element name="nofirstline"><ref name="simpleElement"/></element></define>
   <define name="keywords"><element name="keywords"><ref name="simpleElement"/></element></define>
+  <define name="places">
+    <element name="places">
+      <oneOrMore><ref name="place"/></oneOrMore>
+    </element>
+  </define>
+  <define name="place">
+    <element name="place">
+      <attribute name="ref"><text/></attribute>
+      <attribute name="relation">
+        <choice>
+          <value>subject</value>
+          <value>setting</value>
+          <value>mentioned</value>
+          <value>writtenAt</value>
+        </choice>
+      </attribute>
+      <optional><attribute name="primary"><value>true</value></attribute></optional>
+      <empty/>
+    </element>
+  </define>
   <define name="dates"><element name="dates"><ref name="simpleElement"/></element></define>
   <define name="published"><element name="published"><ref name="simpleElement"/></element></define>
   <define name="written"><element name="written"><ref name="simpleElement"/></element></define>
@@ -509,7 +522,6 @@
         <ref name="metrik"/>
         <ref name="line"/>
         <ref name="br"/>
-        <ref name="hr"/>
         <ref name="pb"/>
         <ref name="img"/>
         <ref name="colored"/>

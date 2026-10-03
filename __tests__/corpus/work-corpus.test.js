@@ -7,7 +7,9 @@ import {
 import {
   checksForWorkXml,
   collectBodyLinkIssues,
+  collectStandaloneFootnoteIssues,
   collectPageBreakIssues,
+  collectRedundantTextTitleMetadataIssues,
   collectSourcePolicyIssues,
   collectSourceStructureIssues,
   collectTextStructureIssues,
@@ -27,35 +29,78 @@ const loadJsonLines = (filename) =>
     .filter(Boolean)
     .map((line) => JSON.parse(line));
 
+const proseXml = (xml) =>
+  xml.replace(/<poetry\b[^>]*>([\s\S]*?)<\/poetry>/gu, (_match, poetry) =>
+    [...poetry.matchAll(
+      /<(?:note|footnote)\b[^>]*>[\s\S]*?<\/(?:note|footnote)>/gu
+    )]
+      .map(([note]) => note)
+      .join('\n')
+  );
+
+const proseWordDivisionPattern = /\b([\p{L}]{3,})- ([\p{L}]{3,})\b/gu;
+const hyphenatedCoordinationWords = new Set([
+  'and',
+  'eller',
+  'et',
+  'och',
+  'oder',
+  'og',
+  'or',
+  'ou',
+  'und',
+]);
+
 describe('tracked work corpus', () => {
   let filenames;
   let bodyLinkIssues;
+  let standaloneFootnoteIssues;
   let emptyAndreFiles;
   let formattingIssues;
+  let proseWordDivisionIssues;
   let pageBreakIssues;
   let pageIntervalIssues;
   let pageOnlySourceIssues;
   let poetryBoundaryBlankLineIssues;
+  let nestedBodyBlockIssues;
+  let sourceHrIssues;
+  let asteriskOrnamentSpacingIssues;
+  let rawAsteriskOrnamentIssues;
   let andreWorkheadSourceIssues;
   let externalSourceLinkIssues;
   let textFollowsNoteIssues;
   let textStructureIssues;
+  let redundantTextTitleMetadataIssues;
   let unindexedAnthologyTexts;
 
   beforeAll(() => {
     const works = loadTrackedWorkFiles();
+    const corpusWords = new Set(
+      works.flatMap(({ content: xml }) =>
+        [...xml.replace(/<[^>]+>/gu, ' ').matchAll(/[\p{L}]+/gu)].map(
+          ([word]) => word.toLocaleLowerCase('da')
+        )
+      )
+    );
     filenames = works.map((work) => work.filename);
     bodyLinkIssues = [];
+    standaloneFootnoteIssues = [];
     emptyAndreFiles = [];
     formattingIssues = [];
+    proseWordDivisionIssues = [];
     pageBreakIssues = [];
     pageIntervalIssues = [];
     pageOnlySourceIssues = [];
     poetryBoundaryBlankLineIssues = [];
+    nestedBodyBlockIssues = [];
+    sourceHrIssues = [];
+    asteriskOrnamentSpacingIssues = [];
+    rawAsteriskOrnamentIssues = [];
     andreWorkheadSourceIssues = [];
     externalSourceLinkIssues = [];
     textFollowsNoteIssues = [];
     textStructureIssues = [];
+    redundantTextTitleMetadataIssues = [];
     unindexedAnthologyTexts = [];
 
     works.forEach(({ content: xml, filename }) => {
@@ -96,15 +141,76 @@ describe('tracked work corpus', () => {
         formattingIssues.push(filename);
       }
 
+      const workDocument = parseWorkXml(xml);
+      if (/<hr\b/u.test(xml)) {
+        sourceHrIssues.push(filename);
+      }
+      for (const body of getElementsByTagNames(workDocument, ['body'])) {
+        for (const block of getElementsByTagNames(body, [
+          'poetry',
+          'prose',
+          'quote',
+        ])) {
+          if (block.parentNode?.tagName !== 'body') {
+            nestedBodyBlockIssues.push(
+              `${filename}: <${block.tagName}> inside <${block.parentNode?.tagName}>`
+            );
+          }
+        }
+      }
+
+      const xmlWithoutOrnamentBoundarySpacing = xml
+        .replace(
+          /(<poetry(?:[ \t][^<>]*)?>\r?\n)[ \t]*\r?\n(?=<nonum><center>\*(?: \*){2,}<\/center><\/nonum>)/gu,
+          '$1'
+        )
+        .replace(
+          /(<nonum><center>\*(?: \*){2,}<\/center><\/nonum>\r?\n)[ \t]*\r?\n(?=<\/poetry>)/gu,
+          '$1'
+        );
       if (
-        /<poetry(?:[ \t][^<>]*)?>\r?\n[ \t]*\r?\n/.test(xml) ||
-        /\r?\n[ \t]*\r?\n<\/poetry>/.test(xml)
+        /<poetry(?:[ \t][^<>]*)?>\r?\n[ \t]*\r?\n/.test(
+          xmlWithoutOrnamentBoundarySpacing
+        ) ||
+        /\r?\n[ \t]*\r?\n<\/poetry>/.test(xmlWithoutOrnamentBoundarySpacing)
       ) {
         poetryBoundaryBlankLineIssues.push(filename);
       }
 
+      const checkFootnotes = /<(?:note|footnote)\b/.test(xml);
+      for (const match of proseXml(xml).matchAll(proseWordDivisionPattern)) {
+        const secondPart = match[2].toLocaleLowerCase('da');
+        const joinedWord = `${match[1]}${match[2]}`.toLocaleLowerCase('da');
+        if (
+          corpusWords.has(joinedWord) &&
+          !hyphenatedCoordinationWords.has(secondPart)
+        ) {
+          proseWordDivisionIssues.push(`${filename}: ${match[0]}`);
+        }
+      }
+
+      const xmlLines = xml.replace(/\r\n?/g, '\n').split('\n');
+      xmlLines.forEach((line, index) => {
+        if (
+          !/^<nonum><center>\*(?: \*){2,}<\/center><\/nonum>$/.test(
+            line.trim()
+          )
+        ) return;
+        if (xmlLines[index - 1] !== '' || xmlLines[index + 1] !== '') {
+          asteriskOrnamentSpacingIssues.push(`${filename}:${index + 1}`);
+        }
+      });
+
+      if (/^[ \t]*\*(?:[ \t]+\*){2,}[ \t]*$/m.test(xml)) {
+        rawAsteriskOrnamentIssues.push(filename);
+      }
+
       const checks = checksForWorkXml(xml);
+      redundantTextTitleMetadataIssues.push(
+        ...collectRedundantTextTitleMetadataIssues(filename, parseWorkXml(xml)),
+      );
       if (
+        checkFootnotes !== true &&
         checks.bodyLinks !== true &&
         checks.sources !== true &&
         checks.sourcePolicy !== true &&
@@ -115,6 +221,11 @@ describe('tracked work corpus', () => {
       }
 
       const document = parseWorkXml(xml);
+      if (checkFootnotes === true) {
+        standaloneFootnoteIssues.push(
+          ...collectStandaloneFootnoteIssues(filename, document)
+        );
+      }
       const sourcePolicyIssues = collectSourcePolicyIssues(filename, document);
       andreWorkheadSourceIssues.push(
         ...sourcePolicyIssues.andreWorkheadSources
@@ -158,8 +269,32 @@ describe('tracked work corpus', () => {
     expect(poetryBoundaryBlankLineIssues).toEqual([]);
   });
 
+  it('keeps poetry, prose, and quote as sibling body blocks', () => {
+    expect(nestedBodyBlockIssues).toEqual([]);
+  });
+
+  it('uses source separator lines instead of hr elements', () => {
+    expect(sourceHrIssues).toEqual([]);
+  });
+
+  it('does not preserve probable print-line word divisions in prose', () => {
+    expect(proseWordDivisionIssues).toEqual([]);
+  });
+
+  it('keeps a blank line around centered asterisk ornaments', () => {
+    expect(asteriskOrnamentSpacingIssues).toEqual([]);
+  });
+
+  it('requires centered nonum markup for asterisk ornaments', () => {
+    expect(rawAsteriskOrnamentIssues).toEqual([]);
+  });
+
   it('keeps anthology texts without an identified author out of indexes', () => {
     expect(unindexedAnthologyTexts).toEqual([]);
+  });
+
+  it('attaches poetry footnotes to text or headings', () => {
+    expect(standaloneFootnoteIssues).toEqual([]);
   });
 
   it('keeps links out of work body text', () => {
@@ -188,6 +323,10 @@ describe('tracked work corpus', () => {
 
   it('does not assign first lines to prose-only texts', () => {
     expect(textStructureIssues).toEqual([]);
+  });
+
+  it('does not retain text title metadata identical to the title', () => {
+    expect(redundantTextTitleMetadataIssues).toEqual([]);
   });
 
   it('keeps declared page-break markup consistent', () => {
