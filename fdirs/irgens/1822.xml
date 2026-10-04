@@ -4,9 +4,10 @@
   <title>Orfanina</title>
   <year>1822</year>
   <pictures>
-    <picture type="titlepage" src="1822-p1.jpg">Faksimile af titelbladet til <i>Orfanina</i> (1822).</picture>
+    <picture type="titlepage" src="1822-p1.jpg"><transcription>Orfanina. // Digtninger / af / Hanna Irgens, / Forfatterinde / til / Familien v. Heidenforsth. // Kiøbenhavn. / Forlagt af Bog- og Papirhandler C. Steen. / Trykt hos B. J. Bendixen. / 1822.</transcription></picture>
   </pictures>
   <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122030612905763" facsimile="130023569605_color" facsimile-pages-num="166" facsimile-pages-offset="12">Hanna Irgens: <i>Orfanina. Digtninger</i>, C. Steen, Kiøbenhavn, 1822.</source>
+  <errata status="applied" pages="150" facsimile-pages="162"/>
   <dates><published>1822</published></dates>
   <pagebreaks/>
 </workhead>
@@ -15,7 +16,7 @@
 <text id="irgens2026090801">
 <head>
   <suptitle>Til</suptitle>
-  <title>Danmarks Digtere.</title>
+  <title>Danmarks Digtere</title>
   <toctitle>Til Danmarks Digtere</toctitle>
   <indextitle>Til Danmarks Digtere</indextitle>
   <firstline>Sønner af den høie Sanggudinde!</firstline>
@@ -70,8 +71,6 @@ Dommer Tanken — o men ei dens Dragt.
 <text id="irgens2001062401" ignore-tests="caret,leading-comma,leading-period,period-space,leading-dash,firstline-trailing-punctuation,firstline-leading-punctuation,dot-followed-by-lowercase,loose-letters,comma-missing-space,m-ellipsis,space-before-comma,space-before-exclamation,space-before-question,space-before-semicolon,lll,comma-semicolon,comma-period,comma-comma,smaa,sss,space-before-comma-with-markup">
 <head>
   <title>Livet er altid skjønt</title>
-  <toctitle>Livet er altid skjønt</toctitle>
-  <indextitle>Livet er altid skjønt</indextitle>
   <firstline>Livet er altid skjønt</firstline>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -107,9 +106,7 @@ for Livets Farvespil.
 
 <text id="irgens2026090802">
 <head>
-  <title>Havfruen.</title>
-  <toctitle>Havfruen</toctitle>
-  <indextitle>Havfruen</indextitle>
+  <title>Havfruen</title>
   <firstline>De Bølger sig boltre saa krusede smaa</firstline>
   <source in="default" pages="1-9" facsimile-pages="13-21"/>
   <quality>korrektur1,kilde,side</quality>
@@ -303,7 +300,7 @@ Og Fiskerne tyer imod Landet.
 
 <text id="irgens2026090803">
 <head>
-  <title>Til min Søster.</title>
+  <title>Til min Søster</title>
   <subtitle>Den 29 August 1812.</subtitle>
   <toctitle>Til min Søster (den 29 August 1812)</toctitle>
   <indextitle>Til min Søster (den 29 August 1812)</indextitle>
@@ -398,9 +395,7 @@ Vædet af min Taare den dig sige:
 
 <text id="irgens2026090804">
 <head>
-  <title>Maja.</title>
-  <toctitle>Maja</toctitle>
-  <indextitle>Maja</indextitle>
+  <title>Maja</title>
   <firstline>Paa lille Majas blege Kind</firstline>
   <source in="default" pages="13-16" facsimile-pages="25-28"/>
   <quality>korrektur1,kilde,side</quality>
@@ -484,9 +479,7 @@ Igientog denne Sang:
 
 <text id="irgens2026090805">
 <head>
-  <title>Til unge og gamle Jomfruer.</title>
-  <toctitle>Til unge og gamle Jomfruer</toctitle>
-  <indextitle>Til unge og gamle Jomfruer</indextitle>
+  <title>Til unge og gamle Jomfruer</title>
   <firstline>O Du, som blev forglemt af Hymens Gud</firstline>
   <source in="default" pages="16-23" facsimile-pages="28-35"/>
   <quality>korrektur1,kilde,side</quality>
@@ -683,7 +676,7 @@ Som Godheds vise Fader os bestemte.
 
 <text id="irgens2026090806">
 <head>
-  <title>Til min Søster.</title>
+  <title>Til min Søster</title>
   <subtitle>Paa hendes Fødselsdag. 1814.</subtitle>
   <toctitle>Til min Søster (paa hendes Fødselsdag 1814)</toctitle>
   <indextitle>Til min Søster (paa hendes Fødselsdag 1814)</indextitle>
@@ -773,9 +766,7 @@ Med Tanken vendt mod Gud og Evighed.
 
 <text id="irgens2026090807">
 <head>
-  <title>Gaade.</title>
-  <toctitle>Gaade</toctitle>
-  <indextitle>Gaade</indextitle>
+  <title>Gaade</title>
   <firstline>Jeg et Privattheater er</firstline>
   <source in="default" pages="27-30" facsimile-pages="39-42"/>
   <quality>korrektur1,kilde,side</quality>
@@ -867,9 +858,7 @@ Dog jeg har alt for meget sagt,
 
 <text id="irgens2026090808">
 <head>
-  <title>Forklaring over en Tegning, som forestillede det menneskelige Liv.</title>
-  <toctitle>Forklaring over en Tegning, som forestillede det menneskelige Liv</toctitle>
-  <indextitle>Forklaring over en Tegning, som forestillede det menneskelige Liv</indextitle>
+  <title>Forklaring over en Tegning, som forestillede det menneskelige Liv</title>
   <firstline>En yndig Lund er Barndoms grønne Vaar</firstline>
   <source in="default" pages="30-34" facsimile-pages="42-46"/>
   <quality>korrektur1,kilde,side</quality>
@@ -1827,7 +1816,7 @@ Forbande vil den Hielp jeg rakte Dem.
 
 <text id="irgens2026090814">
 <head>
-  <title>Til min Søster.</title>
+  <title>Til min Søster</title>
   <subtitle>Den 31 Marts 1821.</subtitle>
   <toctitle>Til min Søster (den 31 Marts 1821)</toctitle>
   <indextitle>Til min Søster (den 31 Marts 1821)</indextitle>
@@ -1955,7 +1944,7 @@ Forvandlet den som Sølverlilie groer.
 
 <text id="irgens2026090816">
 <head>
-  <title>Held og Vee.</title>
+  <title>Held og Vee</title>
   <firstline>Held den! som ei ved Phantasie</firstline>
   <source in="default" pages="73-74" facsimile-pages="85-86"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2033,7 +2022,7 @@ Og hine Ord: „Han smilte og var død.“
 
 <text id="irgens2026090818">
 <head>
-  <title>Fuglereden.</title>
+  <title>Fuglereden</title>
   <firstline>Hvor skal jeg faae min Moder fat?</firstline>
   <source in="default" pages="75-77" facsimile-pages="87-89"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2094,7 +2083,7 @@ Den lille Dreng udbrød:
 
 <text id="irgens2026090819">
 <head>
-  <title>En Scene fra Krigens Skueplads.</title>
+  <title>En Scene fra Krigens Skueplads</title>
   <subtitle>(Skreven i Aaret 1812.)</subtitle>
   <toctitle>En Scene fra Krigens Skueplads (Skreven i Aaret 1812)</toctitle>
   <indextitle>En Scene fra Krigens Skueplads (Skreven i Aaret 1812)</indextitle>
@@ -2249,7 +2238,7 @@ Ak! paa Ruiner af sin fordums Lykke.
 
 <text id="irgens2026090820">
 <head>
-  <title>Mercurius.</title>
+  <title>Mercurius</title>
   <firstline>Fra Olymp kom Mercur engang’</firstline>
   <source in="default" pages="84-86" facsimile-pages="96-98"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2315,7 +2304,7 @@ Vist laaner begge hver et Øre.
 
 <text id="irgens2026090821">
 <head>
-  <title>Til to unge Veninder.</title>
+  <title>Til to unge Veninder</title>
   <subtitle>(Da de bleve confirmerede.)</subtitle>
   <toctitle>Til to unge Veninder (da de bleve confirmerede)</toctitle>
   <indextitle>Til to unge Veninder (da de bleve confirmerede)</indextitle>
@@ -2410,7 +2399,7 @@ Smaa Violer paa Jert Hvilested!
 
 <text id="irgens2026090822">
 <head>
-  <title>Døden.</title>
+  <title>Døden</title>
   <firstline>Dødeliges Trøst: „I Jordens Skiød</firstline>
   <source in="default" pages="89-93" facsimile-pages="101-105"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2521,14 +2510,15 @@ Ingen Lidelser hans Siæl nedtynger.
 
 <text id="irgens2026090823">
 <head>
-  <title>Den Faldne.</title>
+  <title>Den Faldne</title>
   <firstline>Lys er min Vei, mit Scepter byder Fred</firstline>
   <source in="default" pages="94-100" facsimile-pages="106-112"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<nonum><center>Dyden til Lasten.</center></nonum>
+<nonum><center><w>Dyden til Lasten.</w></center></nonum>
+
 Lys er min Vei, mit Scepter byder Fred,
 Selv naar jeg nærmer mig til Lastens Rige;
 Der spirer frem en Lilie i mit Fied,
@@ -2554,13 +2544,15 @@ At jeg kan lede ham hen til mit Tempel.
 O! lad mig sønderrive dine Garn,
 Der brændemærke ham med Lastens Stempel!
 
-<nonum><center>Lasten.</center></nonum>
+<nonum><center><w>Lasten.</w></center></nonum>
+
 Du Lysets Mø! som nærmer dig til mig,
 Omstraalt af Glansen fra min tabte Himmel!
 Gaae! søg ham selv, jeg skienker ham til dig,
 Hvis du kan kiende ham blandt Faldnes Vrimmel.
 
-<nonum><center>Dyden.</center></nonum>
+<nonum><center><w>Dyden.</w></center></nonum>
+
 Oplad dig, Nat! Lad mig den Afgrund see,
 Hvor Lastens Blændværk mine Børn besnærer.
 O Rædsel! — Det er jo et Helvede,
@@ -2614,7 +2606,8 @@ O! hører Du ei Røsten fra det Høie?
 Kom, Lastens Fyrste! kom og viis mig Vei!
 Jeg kan ei finde ham i denne Hule.
 
-<nonum><center>Lasten.</center></nonum>
+<nonum><center><w>Lasten.</w></center></nonum>
+
 Der staaer han — kiender Du hans Aasyn ei?
 Han længe søgte sig bag Dig at skiule.
 
@@ -2623,7 +2616,8 @@ Og Rosen guul er vorden paa hans Kinder,
 <pb n="98" facs="109.jpg"/>Ei længer han et Billed’ er af Gud;
 Det Rene her blandt det Urene svinder.
 
-<nonum><center>Dyden.</center></nonum>
+<nonum><center><w>Dyden.</w></center></nonum>
+
 Er Du den samme, som jeg engang saae?
 Hvad Blændværk har da dengang mig bedaaret?
 Mig syntes Uskyld i Dit Øie laae,
@@ -2649,13 +2643,15 @@ Naar Du med ureen Læbe mig lovpriste?
 Var Dine Dyder intet uden Sviig?
 Var det en Maske kun, som Du mig viste?
 
-<nonum><center>Den Faldne.</center></nonum>
+<nonum><center><w>Den Faldne.</w></center></nonum>
+
 Ja vist! — ja vist! — tal ikke meer derom.
 Jeg vil ei dølge Dig, at Du mig kieder.
 Hvad bryder jeg mig vel om Verdens Dom?
 Den skal ei hindre mig i mine Glæder.
 
-<nonum><center>Dyden.</center></nonum>
+<nonum><center><w>Dyden.</w></center></nonum>
+
 Du! engang Dydens Stolthed, nu dens Skræk!
 Hvor bringer Du mit Hierte til at bløde!
 Hvor maae Du være siunken dybt, da fræk,
@@ -2666,13 +2662,15 @@ Jeg skulde drage Tornen af Dit Hierte;
 Du skulde midt i Anger finde Trøst,
 Og Lindring, selv i en retfærdig Smerte.
 
-<pb n="100" facs="111.jpg"/><nonum><center>Den Faldne.</center></nonum>
+<pb n="100" facs="111.jpg"/><nonum><center><w>Den Faldne.</w></center></nonum>
+
 Det er forsildigt! ak! det kan jeg ei;
 Thi Diævle boe alt længe i mit Hierte.
 Gaae, stolte Dyd! forskrækkelig er vor Vei.
 Gaae! triumpheer! og spot den Faldnes Smerte.
 
-<nonum><center>Dyden.</center></nonum>
+<nonum><center><w>Dyden.</w></center></nonum>
+
 Hvad siger Du?! — jeg skulde spotte Dig?
 Nei, faldne Søn! mit Hierte Dig begræder.
 Saa bliv da — hvis Du kan — bliv lykkelig,
@@ -2719,7 +2717,7 @@ Hvad er da Dyd?! — O Gud! hvad er da Brøde?!
 
 <text id="irgens2026090826">
 <head>
-  <title>Til mit Fødeland.</title>
+  <title>Til mit Fødeland</title>
   <firstline>O Danmark! Du elskede Fædreneland!</firstline>
   <source in="default" pages="101-104" facsimile-pages="113-116"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2803,7 +2801,7 @@ Og døer med en Bøn for dets Hæder.
 
 <text id="irgens2026090827">
 <head>
-  <title>Morderens Qval.</title>
+  <title>Morderens Qval</title>
   <firstline>Ak! det er Nat! — i tause Dunkelhed</firstline>
   <source in="default" pages="105-109" facsimile-pages="117-121"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2979,7 +2977,7 @@ Luk op for den lille Pietro!
 
 <text id="irgens2026090829">
 <head>
-  <title>Opfyldt Løfte efter Døden.</title>
+  <title>Opfyldt Løfte efter Døden</title>
   <subtitle>(Bidrag til Troen paa Aandeverdenen.)</subtitle>
   <toctitle>Opfyldt Løfte efter Døden (Bidrag til Troen paa Aandeverdenen)</toctitle>
   <indextitle>Opfyldt Løfte efter Døden (Bidrag til Troen paa Aandeverdenen)</indextitle>
@@ -3052,8 +3050,7 @@ Ulla forlod ikke mere sit Leie, og en Maaned derefter lagdes hun paa Baaren.
 
 Jeg beder Dem at være forsikkret om, at jeg begræd hendes Tab med uhykklede Taarer. En Kone, som Ulla var, efterlader sig ved sit Savn en Tomhed, der ikke saa let lader sig udfylde. Overalt savnedes jeg hende ved mine Børns Opdragelse, ved mit Huusvæsens Bestyrelse, selv ved Besørgelsen af mine Fornødenheder. Skinsyge havde været hendes eneste<pb n="133" facs="144.jpg"/> Feil. Forresten havde hun besiddet alle de Dyder, der give Mandens Ledsagerske paa Livets Bane sit sande Værd. Hun havde elsket mig med en kun altfor øm Kierlighed; hun var vore Børns hulde og omhyggelige Moder; mit Huus havde hun bestyret med Orden og Duelighed; mod sine Tienestefolk var hun god og blid, og, i de første Aar af vort Ægteskab, førend Vanen havde svækket Virkningen deraf, svandt Timer som Minutter for mig, i hendes aandrige Omgang.
 
-Dog forjog Tiden efterhaanden hendes Minde. Da Eensomheden i mit Huus begyndte at blive mig byrdefuld, og jeg atter søgte Verden og dens Glæder, var jeg, som fri Mand, det smukke Kiøn dobbelt velkommen. Jeg saae igien den deilige Witha K... og hendes stedse mere udviklende Skiønhed, gav hende med fuld Kraft tilbage, det Herredømme hun i hiin ulykkelige Nat havde havt over mit Hierte. Da jeg om Aftenen var kommen hiem, stod hendes Billed overalt for mine Øine, og den Tanke blev levende i mit Hierte: at mit eenlige Kammer vilde atter blive lyse
-<pb n="134" facs="145.jpg"/> og hyggeligt, naar hun deelte det med mig. Pludselig fornam jeg en iiskold Bevægelse paa min Næse. Det frapperede mig vel, men jeg tænkte dog intet videre derved, førend jeg den næste Dag under Paaklædningen saae mig i Speilet og opdagede to Dødningkneb. Da randt hiint Løfte mig i Tankerne, som Ulla spøgende gav paa sin Sotteseng, og som hun nu havde bragt i Opfyldelse efter Døden.
+Dog forjog Tiden efterhaanden hendes Minde. Da Eensomheden i mit Huus begyndte at blive mig byrdefuld, og jeg atter søgte Verden og dens Glæder, var jeg, som fri Mand, det smukke Kiøn dobbelt velkommen. Jeg saae igien den deilige Witha K... og hendes stedse mere udviklende Skiønhed, gav hende med fuld Kraft tilbage, det Herredømme hun i hiin ulykkelige Nat havde havt over mit Hierte. Da jeg om Aftenen var kommen hiem, stod hendes Billed overalt for mine Øine, og den Tanke blev levende i mit Hierte: at mit eenlige Kammer vilde atter blive lyse<pb n="134" facs="145.jpg"/> og hyggeligt, naar hun deelte det med mig. Pludselig fornam jeg en iiskold Bevægelse paa min Næse. Det frapperede mig vel, men jeg tænkte dog intet videre derved, førend jeg den næste Dag under Paaklædningen saae mig i Speilet og opdagede to Dødningkneb. Da randt hiint Løfte mig i Tankerne, som Ulla spøgende gav paa sin Sotteseng, og som hun nu havde bragt i Opfyldelse efter Døden.
 
 Fra den Stund af, saasnart et qvindeligt Væsen interesserede mit Hierte, og Ønsket vaagnede i mit Bryst: om en Forandring af min Stilling; undgik jeg aldrig en Renkelse af min foregivne Ægtafærske, hvis Kierlighed og hvis Skinsyge var fulgt hende hiin Side Graven. Saaledes henlevede jeg i flere Aar, da jeg endelig fik den Tanke: at jeg muligen ved at unddrage mig vort Arnes Enemærke, kunde befrie mig fra et Kogleri, der for mig forstyrrede enhver Udsigt til oftere i dette Liv at nyde Kierligheds Lykke. Jeg erfarede at denne Post var ledig; og for i et fremmed Land, at have en fast og behagelig Fod at leve paa, ansøgte jeg om den. Jeg fik den, overgav mine<pb n="135" facs="146.jpg"/> Børn til deres Moders Søster, og reiste herhid; men jeg havde ikke været her længe, før jeg modtog Beviser paa: at ingen Flugt, over Bjerg eller Dal, over Land eller Bølge, formaaer at unddrage os det usynlige Væsen, som iagttager vore Handlinger.
 
@@ -3070,7 +3067,7 @@ Siden har jeg ikke kunnet indhente nogen Efterretning om ham; men jeg tvivler ik
 
 <text id="irgens2026090830">
 <head>
-  <title>I Anledning af en Samtale om Elskov eller Kierlighed mellem Mand og Qvinde.</title>
+  <title>I Anledning af en Samtale om Elskov eller Kierlighed mellem Mand og Qvinde</title>
   <subtitle>(Skiemtebrev til en Ven.)</subtitle>
   <toctitle>I Anledning af en Samtale om Elskov eller Kierlighed mellem Mand og Qvinde (Skiemtebrev til en Ven)</toctitle>
   <indextitle>I Anledning af en Samtale om Elskov eller Kierlighed mellem Mand og Qvinde (Skiemtebrev til en Ven)</indextitle>
@@ -3083,7 +3080,7 @@ Siden har jeg ikke kunnet indhente nogen Efterretning om ham; men jeg tvivler ik
 Lidt dristig rigtignok, jeg stundom voved’
 At tale om den dumme Kierlighed;
 Og endnu meer: — jeg Underretning loved
-Om det, hvorom De selv veed bedst Besked.
+Om det, hvorom De selv<footnote type="errata">hvorom De selv] hvorom De De selv</footnote> veed bedst Besked.
 
 Dog jeg er vant mit Løfte ei at svige;
 Dristig jeg derfor nedskriver Dem:
@@ -3263,6 +3260,7 @@ Naar Manden ikke meer for Tabet gruer,
 Der syntes ham saa saare rædsomt nys,
 Naar dagligdags den smukke Mund han skuer;
 Den ikke meer indbyder ham til Kys.
+
 <pb n="144" facs="155.jpg"/>Naar ikke meer omsorg mod ham der sukkes —
 Naar han sin Engel have kan i Fred,
 Da har man ofte seet den Baand at slukkes,
@@ -3367,6 +3365,7 @@ Naar hun skal Formiddags Visitter giøre;
 Hvor skal hun da faae Tid at eftersee
 De Spædes Tarv — hun smiler ved at røre
 De Grise smaae — sin hvide Negligee.
+
 <pb n="147" facs="158.jpg"/>Naar hun en Times Tidsfordriv skal hente
 Paa Promenaden, ved en Huusbonds Arm;
 Hvor skulde hun saa Stunder til at prente
@@ -3491,19 +3490,6 @@ Vil jeg paa Timen slutte Brev,
 Og om den femte Thefs vil jeg bede,
 De ikke troer et Ord af hvad jeg skrev.
 </poetry>
-</body>
-</text>
-
-<text id="irgens2026090832">
-<head>
-  <title>Rettelse.</title>
-  <source in="default" pages="150" facsimile-pages="162"/>
-  <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
-<prose>
-Side 138, Lin. 8, læs: hvorom De selv ofte
-</prose>
 </body>
 </text>
 
