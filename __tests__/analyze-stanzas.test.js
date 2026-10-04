@@ -73,6 +73,22 @@ describe('stanza candidate analysis', () => {
     ]);
   });
 
+  it('prefers a dominant couplet pattern over a coincidental 14-line sonnet match', () => {
+    const result = analyzeStanzas({
+      body: bodyWithStanzas([2, 2, 2, 2, 4, 2]),
+    });
+
+    expect(result.dominant_stanza_length).toBe(2);
+    expect(result.recognized_forms).toEqual([]);
+    expect(result.candidates).toEqual([
+      expect.objectContaining({
+        type: 'possible_missing_boundary',
+        after_verse_line: 10,
+        confidence: 'likely',
+      }),
+    ]);
+  });
+
   it('accepts matching refrain frames around shorter dominant stanzas', () => {
     const result = analyzeStanzas({
       body: bodyWithStanzas([4, 2, 2, 2, 2, 2, 4]),
