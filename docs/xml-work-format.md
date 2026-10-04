@@ -118,7 +118,7 @@ For værker er `wikidata`, `dbc-work`, `openlibrary-work`,
 Titelfelter kan bruge `<num>` som prefix:
 
 ```xml
-<title><num>III.</num> Digtets titel</title>
+<title><num>III.</num>Digtets titel</title>
 ```
 
 Det bliver splittet i `prefix` og egentlig titel i indholdsfortegnelsen.
