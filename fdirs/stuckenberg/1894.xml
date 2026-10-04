@@ -2079,7 +2079,8 @@ din Vilje tæt til min — —
 </body>
 </text>
 
-<text id="stuckenberg2026100405">
+<!-- Gentagelsen »det det« i »Ak, er det det, der tynger jer saa meget!« er kontrolleret mod trykt side 67. -->
+<text id="stuckenberg2026100405" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Tredje Akt</title>
   <firstline>Ak ja!</firstline>
