@@ -1122,6 +1122,7 @@ lad Stormen bort mit Navn, mit Minde bære!
   <title>Hvor underligt Sjælen kan synke</title>
   <firstline>Hvor underligt Sjælen kan synke</firstline>
   <source pages="46-47"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1274,6 +1275,7 @@ staae Dig bi til Livets sidste Dag.
   <title>Privatbilletter</title>
   <firstline>Du er jo end saa frisk og smuk</firstline>
   <source pages="52-54"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1393,6 +1395,7 @@ altid godt at bevare.
   <title>Reiseindtryk</title>
   <firstline>Her seer man kun saa lidt, saa lidt</firstline>
   <source pages="57"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1875,6 +1878,7 @@ hold saa Grenene stille;
   <title>Fornægtelse og Bekræftelse</title>
   <firstline>Man kalder dig Fornægter</firstline>
   <source pages="77-78"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1939,7 +1943,7 @@ paa Badekassens Bund.
   <title>De te fabula narratur</title>
   <firstline>Ad aabne Vinduer toner en ædel Melodi</firstline>
   <source pages="80"/>
-  <keywords>,,De te fabula narratur'' stammer fra Horats og betyder iflg. Meyers Fremmedordbog: ,,om Dig handler Fortællingen; Du er Manden.''</keywords>
+  <keywords>De te fabula narratur'' stammer fra Horats og betyder iflg. Meyers Fremmedordbog:,om Dig handler Fortællingen; Du er Manden.''</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2545,6 +2549,7 @@ og der lever En, som hører Aandens Suk om Lys og Fred.
   <title>Et Par Epigrammer</title>
   <firstline>Aben er dog et pudserligt Dyr</firstline>
   <source pages="107"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3127,7 +3132,6 @@ i sin Tid Moralens Tugt.''
 <text id="schandorph2004011101">
 <head>
   <title><num>1.</num>For Maalets, Grændsens Lov du vil dig spare</title>
-  <toctitle><num>1.</num>For Maalets, Grændsens Lov du vil dig spare</toctitle>
   <indextitle>For Maalets, Grændsens Lov du vil dig spare</indextitle>
   <linktitle>For Maalets, Grændsens Lov du vil dig spare</linktitle>
   <firstline>For Maalets, Grændsens Lov du vil dig spare</firstline>
@@ -3164,7 +3168,6 @@ de har jo fælles bæstiske Tendentser.
 <text id="schandorph2004011102">
 <head>
   <title><num>2.</num>Nei - jeg af Folkets egen Aand vil sjunge!</title>
-  <toctitle><num>2.</num>Nei - jeg af Folkets egen Aand vil sjunge!</toctitle>
   <indextitle>Nei - jeg af Folkets egen Aand vil sjunge!</indextitle>
   <linktitle>Nei - jeg af Folkets egen Aand vil sjunge!</linktitle>
   <firstline>Nei - jeg af Folkets egen Aand vil sjunge!</firstline>
@@ -3899,7 +3902,7 @@ bør ogsaa Afskedshilsnen til Dig klinge.
 </body>
 </text>
 
-<text id="schandorph2018080550">
+<text id="schandorph2018080550" ignore-tests="title-trailing-punctuation">
 <head>
   <title>Til Fru F. W.</title>
   <firstline>Nu da det stærke Raab er blevet stille</firstline>
@@ -4017,6 +4020,7 @@ ud i den dybe Nat.
     <note>Gendigtning af Ludwig Uhland: <xref type="translation" poem="uhland2018080401"/>.</note>
   </notes>
   <source pages="163-164"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4122,7 +4126,7 @@ fly bort fra Italien, du fremmede Mand!
     <written>1872-09-14</written>
   </dates>
   <source pages="167-169"/>
-  <keywords>oehlenschlaeger</keywords>
+  <keywords>oehlenschlaeger,ottave-rime</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4604,7 +4608,6 @@ det er usaligt at eie kun
 <text id="schandorph2018080559">
 <head>
   <title><num>1.</num>Paa Komponistens 72-aarige Fødselsdag</title>
-  <toctitle><num>1.</num>Paa Komponistens 72-aarige Fødselsdag</toctitle>
   <indextitle>Paa Komponistens 72-aarige Fødselsdag</indextitle>
   <linktitle>Paa Komponistens 72-aarige Fødselsdag</linktitle>
   <firstline>Ungdomsliv med Sol og Sommer</firstline>
@@ -4641,7 +4644,6 @@ dandsende Glimt over Bøgenes Blade:
 <text id="schandorph2018080560">
 <head>
   <title><num>2.</num>Til en Veninde</title>
-  <toctitle><num>2.</num>Til en Veninde</toctitle>
   <indextitle>Til en Veninde</indextitle>
   <linktitle>Til en Veninde</linktitle>
   <firstline>Høit straaler Solen paa Himlens Blaa</firstline>
