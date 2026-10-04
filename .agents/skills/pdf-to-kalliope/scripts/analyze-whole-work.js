@@ -6,7 +6,7 @@ import { analyzeIndentation } from './analyze-indentation.js';
 import { analyzeIndentationGeometry } from './analyze-indentation-geometry.js';
 import { analyzeStanzaGeometry } from './analyze-stanza-geometry.js';
 import { analyzeStanzas } from './analyze-stanzas.js';
-import { directChild, parseXml, serializeChildren, textEntries } from './audit-utils.js';
+import { directChild, parseXml, serializeChildren, sha256, textEntries } from './audit-utils.js';
 import {
   loadTsvVariants,
   preparePoetryGeometry,
@@ -318,8 +318,26 @@ const analyzeWholeWork = (xml, options = {}) => {
       ],
     };
   });
+  const numberedPoems = poems.map(poem => ({
+    ...poem,
+    candidates: poem.candidates.map((candidate, index) => ({
+      ...candidate,
+      candidate_id: sha256(JSON.stringify([
+        poem.text_id,
+        poem.block_index,
+        index,
+        candidate,
+      ])),
+    })),
+  }));
   return {
-    poems,
+    source_xml_sha256: sha256(xml),
+    candidate_inventory_sha256: sha256(JSON.stringify(numberedPoems.map(poem => [
+      poem.text_id,
+      poem.block_index,
+      poem.candidates,
+    ]))),
+    poems: numberedPoems,
     ...(preparation == null ? {} : {
       geometry_summary: geometrySummary(preparation),
     }),

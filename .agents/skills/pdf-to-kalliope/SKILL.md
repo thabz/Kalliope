@@ -74,6 +74,14 @@ Do not renumber them according to their physical order in the PDF.
 The PDF's page images are the source of truth. OCR, existing transcriptions,
 metadata, dictionaries, metre and expected stanza forms are aids only.
 
+Create the new occurrence from the current facsimile and its fresh OCR. Do not
+seed or initialize its body by copying another edition or variant. An existing
+transcription may be consulted only after the source-based draft exists, for
+comparison and relation detection. Never transfer its wording, punctuation,
+line or stanza boundaries, leading whitespace, headings, notes, page breaks or
+typography into the new occurrence without independently verifying each item
+against the current facsimile.
+
 Preserve:
 
 - the source's wording
@@ -207,6 +215,7 @@ Useful page classifications include:
 - poem
 - prose
 - notes
+- correction sheet (`errata` in the review inventory)
 - afterword
 - advertisement
 - blank page
@@ -214,6 +223,15 @@ Useful page classifications include:
 
 No relevant page may disappear unnoticed between PDF analysis, OCR,
 transcription and XML generation.
+
+Inspect every page for a printed correction sheet. Record each sheet as a
+separate `page_type: "errata"` row in the reviewed inventory, including its
+facsimile filename, even though the sheet is never a standalone Kalliope text.
+Apply every relevant correction to the affected text and attach a
+`<footnote type="errata">corrected] printed</footnote>` at the correction.
+Register the sheet in `<workhead>` as documented in `docs/xml-work-format.md`.
+If no sheet exists, register `<errata status="none"/>`. A discovered sheet that
+has not been applied blocks completion and the review checkpoint.
 
 The page inventory is working material and should normally not be committed.
 
@@ -293,12 +311,15 @@ The XML normally references the basename:
 
 ```xml
 <picture type="titlepage" src="<work-id>-p1.jpg">
-  ...
+  <transcription>Den trykte ordlyd / linje for linje.</transcription>
 </picture>
 ```
 
 Use current repository conventions for `primary`, captions and other
 attributes.
+Transcribe the complete readable title-page text in `<transcription>` using
+`/` and `//` as described in `docs/xml-work-format.md`. The picture caption
+is optional and must not repeat the transcription.
 
 ### Graphic front cover: optional `p2`
 
@@ -790,7 +811,7 @@ and physical line wrapping.
 After the final XML has been assembled, run the targeted page-break test:
 
 ```shell
-npm test -- --runInBand __tests__/pagebreaks.test.js
+npm test -- --runInBand --runTestsByPath __tests__/corpus/pagebreaks.test.js
 ```
 
 This test reads the serialized XML and rejects a `<pb>` that ends an XML line.
@@ -1369,6 +1390,12 @@ Compare each imported text with the existing corpus using, as appropriate:
 Use normalization only for searching and comparison. Do not normalize the
 published transcription.
 
+Perform this comparison against the source-based draft; do not create that
+draft by copying the matched occurrence. When a match is found, treat every
+shared structural feature—including indentation—as a candidate requiring
+independent confirmation in the current facsimile, not as evidence that the
+feature belongs to both occurrences.
+
 Determine whether the new occurrence is:
 
 - a distinct text
@@ -1468,7 +1495,7 @@ node .agents/skills/pdf-to-kalliope/scripts/audit-pagebreaks.js WORK.xml INVENTO
 node .agents/skills/pdf-to-kalliope/scripts/analyze-whole-work.js WORK.xml TSV_DIRECTORY
 node .agents/skills/pdf-to-kalliope/scripts/findings-register.js validate FINDINGS.jsonl
 xmllint --noout path/to/work.xml
-npm test -- --runInBand __tests__/pagebreaks.test.js
+npm test -- --runInBand --runTestsByPath __tests__/corpus/pagebreaks.test.js
 git diff --check
 npm test -- --runInBand
 ```
@@ -1539,8 +1566,21 @@ present. Every page-inventory row must therefore have
 that records the observed and encoded emphasis, or explicitly records that the
 page contains none. Put
 a small JSON file in scratch space with `producer`, `tests`,
-`candidate_reviews` and `reviewer_ranges`, then create the frozen checkpoint
+`candidate_reviews`, `visual_structure_reviews` and `reviewer_ranges`, then create the frozen checkpoint
 outside the worktree.
+The category counts are summaries, not proof that individual candidates were
+reviewed. Run `analyze-whole-work.js` on the final XML with the TSV directory and
+save its complete JSON output. For every `poems[*].candidates[*].candidate_id`
+in that report, add exactly one finding with the same `candidate_id`, a final
+status, a concrete disposition and direct facsimile evidence. Record a rejected
+false positive too; do not omit it. After any XML change, rerun the analysis and
+reconcile the new candidate IDs. The checkpoint checks the report against the
+current XML and refuses missing OCR geometry or unaccounted candidates.
+Add one `visual_structure_reviews` record per poetry block, including the text
+ID, one-based block index, stanza lengths read from the facsimile, all facsimile
+pages inspected, the independent reviewer and a specific disposition. The
+checkpoint compares the visually confirmed lengths with the final XML even
+when the analyzers emitted no candidates.
 Each range has a stable `reviewer`, `facsimile_from` and `facsimile_to`; ranges
 must not overlap, must cover the complete inventory and must agree with each
 inventory row's reviewer. For example:
@@ -1556,6 +1596,9 @@ inventory row's reviewer. For example:
     {"kind": "indentation", "reviewer": "reviewer-model-session", "status": "reviewed", "candidate_count": 49, "reviewed_count": 49},
     {"kind": "typography", "reviewer": "reviewer-model-session", "status": "reviewed", "candidate_count": 18, "reviewed_count": 18}
   ],
+  "visual_structure_reviews": [
+    {"text_id": "example1900010101", "block_index": 1, "status": "reviewed", "reviewer": "reviewer-model-session", "visual_stanza_lengths": [4, 4], "facsimiles": ["055.jpg"], "disposition": "Begge firelinjede strofer og mellemrummet er kontrolleret på facsimilet."}
+  ],
   "reviewer_ranges": [
     {"reviewer": "reviewer-model-session", "facsimile_from": "000.jpg", "facsimile_to": "099.jpg"}
   ]
@@ -1567,7 +1610,8 @@ Create and verify the checkpoint with:
 ```shell
 node .agents/skills/pdf-to-kalliope/scripts/review-checkpoint.js create \
   /tmp/<work>-checkpoint.json /tmp/<work>-findings.jsonl \
-  /tmp/<work>-pages.jsonl /tmp/<work>-review.json
+  /tmp/<work>-pages.jsonl /tmp/<work>-review.json \
+  fdirs/<poet>/<work>.xml /tmp/<work>-structure.json
 node .agents/skills/pdf-to-kalliope/scripts/review-checkpoint.js verify \
   /tmp/<work>-checkpoint.json
 ```
@@ -1664,6 +1708,10 @@ For a complete import, all applicable items below must be true:
 - [ ] `AGENTS.md`, the style guide and relevant special documentation were read.
 - [ ] The complete PDF was inventoried.
 - [ ] Every PDF page was classified or otherwise accounted for.
+- [ ] Every correction sheet was identified in the reviewed page inventory,
+      registered in `<workhead>`, applied in the text and accompanied by typed
+      footnotes; no sheet was created as a text entry. If none exists,
+      `<workhead>` explicitly records `status="none"`.
 - [ ] The JSONL page inventory covers every relevant printed page and every row
       is marked reviewed against the facsimile by someone other than the
       producer.
@@ -1675,6 +1723,9 @@ For a complete import, all applicable items below must be true:
       `npm run check-facsimiles` passed against the public `000.jpg`.
 - [ ] Fresh OCR was produced from page images with at least two meaningfully
       different passes or strategies.
+- [ ] No text body was seeded from another edition or variant; existing
+      occurrences were used only after the source-based draft existed, for
+      comparison and relation detection.
 - [ ] Every relevant page was checked directly against the facsimile.
 - [ ] Every poetry block has a visual structure record covering its complete
       page range, observed stanza lengths and observed indentation.

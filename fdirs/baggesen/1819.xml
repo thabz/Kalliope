@@ -10,7 +10,7 @@
     <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun direkte meningsforstyrrende fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en foreslået læsemåde.</note>
   </notes>
   <pictures>
-    <picture type="titlepage" src="1819-p1.jpg">Titelbladet til <i>Rosenblade med et Par Torne</i> (1819) lyder ,,Rosenblade / med / Et Par Torne. / Af / J. J. Baggesen. / 1819. / Kiøbenhavn. / Trykt paa Forfatterens Forlag, / hos H. F. Popp.''</picture>
+    <picture type="titlepage" src="1819-p1.jpg"><transcription>Rosenblade / med / Et Par Torne. / Af / J. J. Baggesen. / 1819. / Kiøbenhavn. / Trykt paa Forfatterens Forlag, / hos H. F. Popp.</transcription></picture>
   </pictures>
   <source facsimile="115308041263_color" facsimile-pages-num="162" facsimile-pages-offset="12">Jens Baggesen: <i>Rosenblade med et Par Torne</i>, Forfatterens Forlag, Kbh., 1819.</source>
 </workhead>
@@ -2047,6 +2047,33 @@ O! for deres Skyld bønhøre du,
     <note>Noter med foranstillet asterisk er forfatterens egne.</note>
   </notes>
   <source pages="90-98"/>
+  <places>
+    <place ref="copenhagen" relation="setting"/>
+    <place ref="kiel" relation="setting"/>
+    <place ref="lubeck" relation="setting"/>
+    <place ref="hamburg" relation="setting"/>
+    <place ref="vierlande" relation="setting"/>
+    <place ref="luneburg" relation="setting"/>
+    <place ref="celle" relation="setting"/>
+    <place ref="hanover" relation="setting"/>
+    <place ref="main-river" relation="setting"/>
+    <place ref="mainz" relation="setting"/>
+    <place ref="rhine" relation="setting"/>
+    <place ref="heidelberg" relation="setting"/>
+    <place ref="strasbourg" relation="setting"/>
+    <place ref="schaffhausen" relation="setting"/>
+    <place ref="rhine-falls" relation="setting"/>
+    <place ref="zurich" relation="setting"/>
+    <place ref="uri" relation="setting"/>
+    <place ref="unterwalden" relation="setting"/>
+    <place ref="zug" relation="setting"/>
+    <place ref="glarus" relation="setting"/>
+    <place ref="haslital" relation="setting"/>
+    <place ref="meiringen" relation="setting"/>
+    <place ref="lake-thun" relation="setting"/>
+    <place ref="paris" relation="setting"/>
+    <place ref="hamelin" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

@@ -19,6 +19,14 @@ describe('kalliopework RELAX NG schema', () => {
     { input: xml, encoding: 'utf8', stdio: ['pipe', 'pipe', 'pipe'] },
   );
 
+  it('rejects hr elements in source poetry and prose', () => {
+    expect(() => validate(poetryWork('<hr/>Første linje'))).toThrow();
+    expect(() => validate(poetryWork('Første linje').replace(
+      '<poetry>Første linje</poetry>',
+      '<prose><hr/>Første linje</prose>',
+    ))).toThrow();
+  });
+
   it('requires head notes to use the notes wrapper', () => {
     const wrappedTextNote = poetryWork(
       'Første linje',

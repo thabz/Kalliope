@@ -18,8 +18,11 @@ const serializeChildren = node => {
     .join('');
 };
 
+const stripNotes = text =>
+  text.replace(/<(note|footnote)\b[^>]*>[\s\S]*?<\/\1>/g, '');
+
 const normalizeLine = line =>
-  line
+  stripNotes(line)
     .replace(/<pb\b[^>]*\/>/g, '')
     .replace(/<[^>]+>/g, '')
     .replace(/&amp;/g, '&')
@@ -31,7 +34,7 @@ const normalizeLine = line =>
     .trim();
 
 const visibleLines = text =>
-  text
+  stripNotes(text)
     .replace(/\r\n?/g, '\n')
     .split('\n')
     .map(normalizeLine)
@@ -104,8 +107,12 @@ const facsimileBeforeFirstPb = (source, workSource, firstPb, printedPage) => {
   return `${String(Number(match[1]) - 1).padStart(match[1].length, '0')}.jpg`;
 };
 
-const splitBodyPages = body => {
-  const serialized = serializeChildren(body);
+const splitBodyPages = (body, { noteNeutral = false } = {}) => {
+  const raw = serializeChildren(body);
+  const serialized = noteNeutral ? raw.replace(
+    /<(note|footnote)\b[^>]*>[\s\S]*?<\/\1>/g,
+    note => (note.match(/<pb\b[^>]*\/>/g) ?? []).join(''),
+  ) : raw;
   const pattern = /<pb\b([^>]*)\/>/g;
   const pages = [];
   let cursor = 0;
@@ -143,7 +150,7 @@ const buildPageInventory = ({ xml, workFile = null, includeExpectedPages = true 
     const interval = parseSimplePages(pages);
     const body = directChild(entry, 'body');
     if (body == null) continue;
-    const bodyPages = splitBodyPages(body);
+    const bodyPages = splitBodyPages(body, { noteNeutral: true });
     const pbs = Array.from(body.getElementsByTagName('pb'));
     const firstPrintedPage = interval?.label(interval.from) ?? (pages || null);
     const firstFacsimile = facsimileBeforeFirstPb(
@@ -199,7 +206,7 @@ const buildPageInventory = ({ xml, workFile = null, includeExpectedPages = true 
   return rows;
 };
 
-const inventoryKey = row => `${row.text_id}:${row.printed_page}`;
+const inventoryKey = row => `${row.text_id}:${row.printed_page ?? row.facsimile}`;
 
 const auditPageInventory = ({ xml, inventory }) => {
   const actual = buildPageInventory({ xml, includeExpectedPages: false });

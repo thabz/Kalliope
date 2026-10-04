@@ -33,6 +33,18 @@ checkpointets krav er opfyldt, tilføjes `korrektur2`, værket sættes til
 Facsimilet er facit. OCR, eksisterende transskriptioner, metadata og kendskab
 til en strofeform er hjælpemidler, ikke selvstændige tekstvidner.
 
+Kontrollér også hele trykket for rettelsesark. Et fundet ark skal registreres i
+`<workhead>`, og alle relevante rettelser skal indføres med
+`<footnote type="errata">rettet] trykt</footnote>` ved tekststedet. Arket må
+ikke oprettes som en selvstændig tekstpost. Se `docs/xml-work-format.md`.
+
+En ny tekstforekomst må ikke oprettes ved at kopiere brødteksten fra en anden
+udgave eller variant. Opret først et kildebaseret udkast fra det aktuelle
+facsimile og frisk OCR. Brug derefter eksisterende transskriptioner til
+sammenligning og relationsfinding. Ordlyd, tegnsætning, linje- og
+strofegrænser, indrykning, overskrifter, noter, sideskift og typografi må aldrig
+overføres fra varianten uden selvstændig kontrol mod det aktuelle facsimile.
+
 En usædvanlig form eller stavemåde må ikke rettes, blot fordi den ser
 mistænkelig ud. Hvis facsimilet tydeligt har formen, skal den bevares. Hvis
 læsningen ikke kan afgøres forsvarligt, skal usikkerheden synliggøres i stedet
@@ -131,6 +143,15 @@ Kontrollér maskinelt:
 
 Linjetælling finder strukturfejl, som en almindelig OCR-sammenligning ikke ser.
 En korrekt tekst kan stadig være opdelt forkert.
+
+Slutkontrollen skal bruge helværksanalysen fra den endelige XML og OCR-geometri
+fra facsimilesiderne. Hver kandidat i rapporten skal forbindes med en særskilt
+afsluttet registrering, som beskriver afgørelsen og angiver den kontrollerede
+facsimileside. Et samlet antal »gennemgåede kandidater« er ikke tilstrækkeligt.
+Der skal også være en selvstændig visuel registrering af strofelængderne for
+hvert digt, inklusive digte uden maskinelle kandidater.
+Ændres XML efter analysen, skal rapporten og registreringerne opdateres før
+værket kan godkendes.
 
 Strofeanalysen afprøver desuden plausible ensartede strofelængder mod hele
 digtet. Hver hypotese vurderes efter, om alle verslinjer dækkes uden rest, hvor

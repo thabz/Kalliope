@@ -16,6 +16,7 @@ import {
   parseWorkXml,
 } from '../../tools/work-validation.js';
 import { loadTrackedWorkFiles } from '../../tools/libs/work-files.js';
+import { validateErrata } from '../../tools/errata.js';
 import {
   getElementByTagName,
   getElementsByTagNames,
@@ -62,6 +63,8 @@ describe('tracked work corpus', () => {
   let pageIntervalIssues;
   let pageOnlySourceIssues;
   let poetryBoundaryBlankLineIssues;
+  let nestedBodyBlockIssues;
+  let sourceHrIssues;
   let asteriskOrnamentSpacingIssues;
   let rawAsteriskOrnamentIssues;
   let andreWorkheadSourceIssues;
@@ -69,6 +72,7 @@ describe('tracked work corpus', () => {
   let textFollowsNoteIssues;
   let textStructureIssues;
   let redundantTextTitleMetadataIssues;
+  let errataIssues;
   let unindexedAnthologyTexts;
 
   beforeAll(() => {
@@ -90,6 +94,8 @@ describe('tracked work corpus', () => {
     pageIntervalIssues = [];
     pageOnlySourceIssues = [];
     poetryBoundaryBlankLineIssues = [];
+    nestedBodyBlockIssues = [];
+    sourceHrIssues = [];
     asteriskOrnamentSpacingIssues = [];
     rawAsteriskOrnamentIssues = [];
     andreWorkheadSourceIssues = [];
@@ -97,6 +103,7 @@ describe('tracked work corpus', () => {
     textFollowsNoteIssues = [];
     textStructureIssues = [];
     redundantTextTitleMetadataIssues = [];
+    errataIssues = [];
     unindexedAnthologyTexts = [];
 
     works.forEach(({ content: xml, filename }) => {
@@ -135,6 +142,24 @@ describe('tracked work corpus', () => {
         structuralTagsOutsideColumnZero(xml).length > 0
       ) {
         formattingIssues.push(filename);
+      }
+
+      const workDocument = parseWorkXml(xml);
+      if (/<hr\b/u.test(xml)) {
+        sourceHrIssues.push(filename);
+      }
+      for (const body of getElementsByTagNames(workDocument, ['body'])) {
+        for (const block of getElementsByTagNames(body, [
+          'poetry',
+          'prose',
+          'quote',
+        ])) {
+          if (block.parentNode?.tagName !== 'body') {
+            nestedBodyBlockIssues.push(
+              `${filename}: <${block.tagName}> inside <${block.parentNode?.tagName}>`
+            );
+          }
+        }
       }
 
       const xmlWithoutOrnamentBoundarySpacing = xml
@@ -184,6 +209,9 @@ describe('tracked work corpus', () => {
       }
 
       const checks = checksForWorkXml(xml);
+      if (/<(?:errata\b|footnote\b[^>]*\btype="errata")/.test(xml)) {
+        errataIssues.push(...validateErrata(parseWorkXml(xml).documentElement, filename));
+      }
       redundantTextTitleMetadataIssues.push(
         ...collectRedundantTextTitleMetadataIssues(filename, parseWorkXml(xml)),
       );
@@ -247,6 +275,14 @@ describe('tracked work corpus', () => {
     expect(poetryBoundaryBlankLineIssues).toEqual([]);
   });
 
+  it('keeps poetry, prose, and quote as sibling body blocks', () => {
+    expect(nestedBodyBlockIssues).toEqual([]);
+  });
+
+  it('uses source separator lines instead of hr elements', () => {
+    expect(sourceHrIssues).toEqual([]);
+  });
+
   it('does not preserve probable print-line word divisions in prose', () => {
     expect(proseWordDivisionIssues).toEqual([]);
   });
@@ -301,6 +337,10 @@ describe('tracked work corpus', () => {
 
   it('keeps declared page-break markup consistent', () => {
     expect(pageBreakIssues).toEqual([]);
+  });
+
+  it('requires applied errata and well-formed errata footnotes', () => {
+    expect(errataIssues).toEqual([]);
   });
 
   it('conforms to the Kalliope work schema', () => {

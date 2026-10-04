@@ -12,8 +12,8 @@
     <note>Anden del har mottoet ,,Længe er det siden jeg var ung; / Haaret graaner, Gangen vorder tung. / Vaar og Sommer ere længst forbi; / Vinterklædt er Resten af min Sti. / St. St. Blicher ,,Min Svanesang.''''</note>
   </notes>
   <pictures>
-    <picture type="titlepage" src="1847-p1.jpg">Titelbladet til første del af <i>Digte</i> (1847) lyder ,,Digte / af / St. St. Blicher. // Første Deel. // Kjøbenhavn. / Forlagt af Universitetsboghandler C. A. Reitzel. / Trykt i Bianco Lunos Bogtrykkeri. / 1847.''</picture>
-    <picture type="titlepage" src="1847-p2.jpg">Titelbladet til anden del af <i>Digte</i> (1847) lyder ,,Digte / af / St. St. Blicher. // Anden Deel. // Kjøbenhavn. / Forlagt af Universitetsboghandler C. A. Reitzel. / Trykt i Bianco Lunos Bogtrykkeri. / 1847.''</picture>
+    <picture type="titlepage" src="1847-p1.jpg"><transcription>Digte / af / St. St. Blicher. // Første Deel. // Kjøbenhavn. / Forlagt af Universitetsboghandler C. A. Reitzel. / Trykt i Bianco Lunos Bogtrykkeri. / 1847.</transcription></picture>
+    <picture type="titlepage" src="1847-p2.jpg"><transcription>Digte / af / St. St. Blicher. // Anden Deel. // Kjøbenhavn. / Forlagt af Universitetsboghandler C. A. Reitzel. / Trykt i Bianco Lunos Bogtrykkeri. / 1847.</transcription></picture>
   </pictures>
   <source id="bd1" facsimile="115308045460_color" facsimile-pages-num="528" facsimile-pages-offset="14">St. St. Blicher: <i>Digte</i>, P.L. Møller (red.), C.A. Reitzel, 1847, Bd. I.</source>
   <source id="bd2" facsimile="115308045460_color" facsimile-pages-num="528" facsimile-pages-offset="256">St. St. Blicher: <i>Digte</i>, P.L. Møller (red.), C.A. Reitzel, 1847, Bd. II.</source>
@@ -8026,6 +8026,9 @@ Gud Signe din Slægt og din Eftermand!
   <subtitle>(En kjer Frænde helliget)</subtitle>
   <firstline>Eensom jeg laae paa min lynggro'de Bakke</firstline>
   <source in="bd2" pages="1-5"/>
+  <places>
+    <place ref="jutland" relation="subject" primary="true"/>
+  </places>
 </head>
 <body>
 <poetry>
@@ -8162,6 +8165,11 @@ Lærken blandt Gravene bygger sit Rede,
   <title>Første Døgn</title>
   <firstline>Farvel, farvel da, du røgindhyllede Tue!</firstline>
   <source in="bd2" pages="5-16"/>
+  <places>
+    <place ref="copenhagen" relation="setting"/>
+    <place ref="ven" relation="setting"/>
+    <place ref="kullaberg" relation="setting" primary="true"/>
+  </places>
 </head>
 <body>
 <poetry>
@@ -8512,6 +8520,11 @@ Saa staaer dit Rede trygt og fast.
   <title>Andet Døgn</title>
   <firstline>Saa tidlig paa Dækket? - Hvi bæver Smilet ustadigt</firstline>
   <source in="bd2" pages="16-28"/>
+  <places>
+    <place ref="samso" relation="setting"/>
+    <place ref="aarhus" relation="setting" primary="true"/>
+    <place ref="grenaa" relation="setting"/>
+  </places>
 </head>
 <body>
 <poetry>
@@ -8929,6 +8942,11 @@ Paa Landevejen, der løber fra Aarhuus til Grennaae!
   <title>Tredie Døgn</title>
   <firstline>Borte er Søvnens Børn, - ufuldendte Gestalter</firstline>
   <source in="bd2" pages="28-37"/>
+  <places>
+    <place ref="kalo-castle" relation="setting" primary="true"/>
+    <place ref="grenaa" relation="setting"/>
+    <place ref="gudenaa" relation="subject"/>
+  </places>
 </head>
 <body>
 <poetry>
@@ -9218,6 +9236,9 @@ Frihed og Ære og Skjaldesange skal vindes! <note>* See <a poem="blicher20190104
   <title>Fjerde Døgn</title>
   <firstline>Hvi raaber den Sanger saa højt paa ensomme Hede?</firstline>
   <source in="bd2" pages="37-51"/>
+  <places>
+    <place ref="viborg" relation="setting" primary="true"/>
+  </places>
 </head>
 <body>
 <poetry>
@@ -9673,6 +9694,9 @@ Blicher.
   <subtitle>(Viborg Snapsthing)</subtitle>
   <firstline>O! I Poeternes Tjenestepiger!</firstline>
   <source in="bd2" pages="51-77"/>
+  <places>
+    <place ref="viborg" relation="subject" primary="true"/>
+  </places>
 </head>
 <body>
 <poetry>
@@ -10498,6 +10522,9 @@ Hjemad til Nibe! - Nu Snapsting! Adio!
   <title>Sjette Døgn</title>
   <firstline>Hil dig mit Fødeland, Fædrenes mørkbrune Gravmark</firstline>
   <source in="bd2" pages="77-87"/>
+  <places>
+    <place ref="grathe-heath" relation="subject" primary="true"/>
+  </places>
 </head>
 <body>
 <poetry>

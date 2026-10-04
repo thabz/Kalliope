@@ -28,7 +28,7 @@ En eller flere værkfiler kan formateres uden at ændre brødteksten med:
 node tools/format-work-xml.js fdirs/<digter>/<vaerk>.xml
 ```
 
-Testen i `__tests__/work-xml-formatting.test.js` kontrollerer den strukturelle
+Testen i `__tests__/corpus/work-corpus.test.js` kontrollerer den strukturelle
 formatering i alle sporede værkfiler.
 
 ## Grundstruktur
@@ -92,6 +92,7 @@ Almindelige felter i `<workhead>`:
 - `<dates>`: datoer for vaerket.
 - `<pagebreaks/>`: erklærer, at alle interne sideskift i de inkluderede
   tekstkroppe er registreret med `<pb>`.
+- `<errata>`: eksplicit sidekontrol og eventuelle indførte trykte rettelsesark.
 - `<proofreadings>`: modelattester fra afsluttende, uafhængige
   facsimilekorrekturer.
 
@@ -117,7 +118,7 @@ For værker er `wikidata`, `dbc-work`, `openlibrary-work`,
 Titelfelter kan bruge `<num>` som prefix:
 
 ```xml
-<title><num>III.</num> Digtets titel</title>
+<title><num>III.</num>Digtets titel</title>
 ```
 
 Det bliver splittet i `prefix` og egentlig titel i indholdsfortegnelsen.
@@ -140,6 +141,34 @@ tekst er kontrolleret og markeret efter reglerne nedenfor. Elementet betyder
 ikke, at værket nødvendigvis indeholder et `<pb>`: hvis hver tekst står på én
 side, er der ingen interne sideskift at indsætte. Fravær af `<pagebreaks/>` i en
 ældre værkfil betyder derfor »ikke oplyst«, ikke at kilden er uden sideskift.
+
+### Trykte rettelsesark
+
+Kontrollér hele kilden for rettelsesark. Et fundet ark skal indføres; det er en
+fejl at springe det over, og arket må aldrig blive en selvstændig `<text>`.
+Registrér gennemgangen i `<workhead>`:
+
+```xml
+<errata status="none"/>
+<errata status="applied" pages="[392]" facsimile-pages="415"/>
+```
+
+Brug kun `none`, når der ikke findes et rettelsesark. Ved fund angives ét
+`applied`-element pr. ark. `pages` følger trykkets sideangivelse, også når den
+er redaktionelt sat i kantede parenteser; `facsimile-pages` er et enbaseret
+sideinterval. Ved flere kilder peger `in` på et `<source id="…">` i samme
+`<workhead>`. Rettelserne indføres i de berørte tekster med en fodnote på
+samme linje:
+
+```xml
+Med magisk Kunst<footnote type="errata">Kunst] Kraft</footnote> jeg ved din Side staar.
+```
+
+Venstre side af `]` er Kalliopes rettede læsemåde, højre side er trykkets
+oprindelige læsemåde. Brug `∅` for en manglende læsemåde ved tilføjelse eller
+sletning. Alle `type="errata"`-fodnoter skal have begge sider af `]` udfyldt.
+Værknoten med facsimilelink bygges automatisk af `<errata>`; skriv den ikke
+også manuelt.
 
 ### Korrekturattester
 
@@ -327,6 +356,7 @@ historiske id-formater fortsat kan bevares uændret.
 - `<suptitle>`: overtitel. Kan indeholde flere `<line>`.
 - `<nofirstline/>`: markerer bevidst manglende foerstelinje.
 - `<keywords>`: komma-separerede ids for keywords eller personer/digtere.
+- `<places>`: stedrelationer, der peger på lokale id'er i `content/places.xml`.
 - `<notes>`: noter til teksten.
 - `<pictures>`: billeder til teksten.
 - `<source>`: kilde for teksten.
@@ -345,8 +375,21 @@ Formatteren ordner de direkte metadatafelter i denne kanoniske rækkefølge:
 ```text
 suptitle, title, subtitle, toctitle, indextitle, linktitle, breadcrumbtitle,
 firstline, nofirstline, year, dates, written, performed, event, begivenhed,
-notes, pictures, source, keywords, form, metre, rhyme, structure, syllables,
-quality
+notes, pictures, source, keywords, places, form, metre, rhyme, structure,
+syllables, quality
+```
+
+Stedrelationer står i tekstens `<head>`. `ref` er stedets stabile Kalliope-id;
+Wikidata-id'et står kun i det centrale stedregister. `relation` kan være
+`subject` (centralt emne), `setting` (sted for scenen eller rejsen),
+`mentioned` (omtalt sted) eller `writtenAt` (sted hvor digtet er skrevet eller
+stedfæstet). Brug `primary="true"`, når stedet er markeret som primært:
+
+```xml
+<places>
+  <place ref="rome" relation="subject" primary="true"/>
+  <place ref="capri" relation="writtenAt"/>
+</places>
 ```
 
 Gentagne felter beholder deres indbyrdes rækkefølge. En XML-kommentar på sin
@@ -756,12 +799,17 @@ Hvis et lovligt sideinterval undtagelsesvis ikke kan omsættes til
 placering eller rækkefølge over. Sæt kun undtagelsen på `<kalliopework>`, hvis
 den dokumenterede pagineringsafvigelse gælder hele værket.
 
+Når en tekst står på unummererede sider uden `source/@pages`, kontrolleres
+antallet af interne sideskift i stedet mod `source/@facsimile-pages`, hvis det
+angiver et almindeligt numerisk interval.
+
 Særlige linjeformer:
 
 - En blank linje bevares.
 - En linje med kun tal eller romertal bliver `<versenum>`.
-- En linje med `----` bliver `<hr width="4"/>`.
-- En linje med `====` bliver `<hr width="4" class="double"/>`.
+- En linje med `---` eller `----` bliver til en vandret streg under rendering.
+- En linje med `====` bliver til en dobbelt vandret streg under rendering.
+- Skriv ikke `<hr/>` direkte i værkfilen; brug en skillelinje på sin egen linje.
 - Indledende mellemrum bliver til non-breaking spaces.
 - Linjer med kun `***`, `___` eller lignende pakkes i `<nonum>`.
 
@@ -898,9 +946,7 @@ Links i noter og fodnoter indgaar i referenceopsamlingen.
 Lokalt billede:
 
 ```xml
-<picture src="1856-p1.jpg" type="titlepage" primary="true">
-  Titelbladet til <i>Lyngblomster</i>.
-</picture>
+<picture src="1856-p1.jpg" type="titlepage" primary="true"><transcription>Lyngblomster / af / Erica. // Kjøbenhavn. / Boghandler G. E. C. Gad. / Thieles Bogtrykkeri. / 1856.</transcription></picture>
 ```
 
 Fælles artwork:
@@ -928,6 +974,16 @@ Attributter:
 - `clip-path`: bruges til visuel beskæring.
 - `type`: fri type, fx `titlepage`, `frontpage`, `illustration`.
 - `lang`: sprog for lokal billedtekst; default er `da`.
+
+Hvert billede med `type="titlepage"` i et værk skal have præcis én ikke-tom
+`<transcription>` med den trykte ordlyd. Brug `/` mellem trykte linjer og `//`
+mellem større afsnit. Bevar stavning, store og små bogstaver samt tegnsætning.
+Hold transskriptionen på én XML-linje uden tabulatorer, linjeskift eller
+indledende og afsluttende whitespace.
+Skriv kun ordlyden i feltet, ikke en indledning som »Titelbladet lyder«.
+En billedtekst er valgfri og bruges kun til oplysninger, som transskriptionen
+ikke allerede giver. Korpustesten håndhæver feltets tilstedeværelse; korrekt
+ordlyd skal kontrolleres mod billedet.
 
 For lokale billeder kan billedteksten enten vaere direkte indhold:
 
@@ -976,7 +1032,8 @@ Links:
 I værkfiler må links kun bruges i `<note>` og `<footnote>`, ikke direkte i
 digte, prosa eller citatblokke under `<body>`. Bevar omtalen som almindelig
 tekst i brødteksten, og læg en eventuel redaktionel henvisning i en `<note>`.
-Brug `<footnote>` til fodnoter, der stammer fra kilden. Linkmetadata som
+Brug `<footnote>` til fodnoter, der stammer fra kilden, samt til de særskilt
+typemærkede rettelser fra trykte rettelsesark. Linkmetadata som
 `<source href="...">` er ikke inline-links og er fortsat tilladt.
 
 ```xml

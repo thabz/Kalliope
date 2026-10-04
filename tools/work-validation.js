@@ -431,10 +431,12 @@ const collectPageBreakIssues = (
     const head = directChild(text, 'head');
     const source = head == null ? null : directChild(head, 'source');
     const pages = source?.getAttribute('pages') ?? null;
+    const facsimilePages = source?.getAttribute('facsimile-pages') ?? null;
     const body = directChild(text, 'body');
     const pageBreakCount =
       body == null ? 0 : body.getElementsByTagName('pb').length;
-    const expected = expectedPageBreakCount(pages);
+    const intervalSource = pages ?? facsimilePages;
+    const expected = expectedPageBreakCount(intervalSource);
     const ignorePageBreakCount =
       ignoresTest(work, 'pagebreak-count') ||
       ignoresTest(text, 'pagebreak-count');
@@ -455,8 +457,9 @@ const collectPageBreakIssues = (
       return;
     }
     if (pageBreakCount !== expected) {
+      const intervalLabel = pages == null ? 'facsimile-pages' : 'pages';
       issues.push(
-        `${filename}: text ${textId} with pages="${pages}" requires ${expected} <pb> elements, but found ${pageBreakCount}.`,
+        `${filename}: text ${textId} with ${intervalLabel}="${intervalSource}" requires ${expected} <pb> elements, but found ${pageBreakCount}.`,
       );
     }
   });

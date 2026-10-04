@@ -9042,6 +9042,9 @@ Hvor i et fremmed forunderligt Land sig Staden os aabner.
   <firstline>Aftenen stunder til. Det var sludfuldt nylig og skyfuldt</firstline>
   <source pages="236-238"/>
   <keywords>shakespeare,luther,melanchton,saxo</keywords>
+  <places>
+    <place ref="kronborg-castle" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9101,6 +9104,9 @@ Nordens ærværdige Kraft, hvis Glands ei Graven fordunkler.
   <title>Kattegat</title>
   <firstline>Besynderlige Skifte!</firstline>
   <source pages="238-240"/>
+  <places>
+    <place ref="kattegat" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9224,6 +9230,9 @@ Med Graner.
   <title>Christianiafiord</title>
   <firstline>Nu Kattegattets Bølger</firstline>
   <source pages="241-243"/>
+  <places>
+    <place ref="oslo-fjord" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9307,6 +9316,9 @@ Og ønske med min Reise mig til Lykke.
   <title>Modtagelsen i Christiania</title>
   <firstline>Du vil, jeg skal beskrive dig Klippen, Himlens Brud</firstline>
   <source pages="244-250"/>
+  <places>
+    <place ref="oslo" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9624,6 +9636,9 @@ Ved Nordhav og ved Bælte!
   <title>Omegnen</title>
   <firstline>Deiligt ligger Hovedstaden, det maa Sandheden tilstaae</firstline>
   <source pages="253-255"/>
+  <places>
+    <place ref="oslo" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9810,6 +9825,9 @@ Og Bakken ved Bærum alt Vognen sig nærmer.
   <title>Bærum</title>
   <firstline>Hvor smiler det deiligt bag Fieldet!</firstline>
   <source pages="258-259"/>
+  <places>
+    <place ref="baerum" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9876,6 +9894,9 @@ Alt smelter den seneste Stund.
   <title>Krogkleven</title>
   <firstline>Du skiønne Kløft! og vil jeg dig</firstline>
   <source pages="260-262"/>
+  <places>
+    <place ref="krokkleiva" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -10016,6 +10037,9 @@ Og hvad ei Digterens Ord, Malerens Pensel formaaer.
   <title>Halfdan Svartes Grav</title>
   <firstline>Forunderlige Kiærlighed</firstline>
   <source pages="263-264"/>
+  <places>
+    <place ref="ringerike" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -10064,6 +10088,9 @@ Med Bondekofte paa.
   <title>Norderhougs Præstegaard</title>
   <firstline>I Norderhoug sig hæved en Gaard</firstline>
   <source pages="265-267"/>
+  <places>
+    <place ref="norderhov" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -10312,6 +10339,10 @@ Larmen af Elvens fortryllende Sang.
   <title>Ringerige og Modum</title>
   <firstline>Hvordan skal jeg kraftigt dig beskrive</firstline>
   <source pages="271-275"/>
+  <places>
+    <place ref="ringerike" relation="subject" primary="true"/>
+    <place ref="modum" relation="subject"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -10623,6 +10654,9 @@ Fra de forsteente Jetter.
   <title>De tydske Studenter i Vigersund</title>
   <firstline>Hvor man allermindst det venter</firstline>
   <source pages="280-281"/>
+  <places>
+    <place ref="vikersund" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -10670,6 +10704,9 @@ Med den lune Kappe paa.
   <title>Kongsberg</title>
   <firstline>Nu mere mørkt sig Fieldet sammendrager</firstline>
   <source pages="281-286"/>
+  <places>
+    <place ref="kongsberg" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -10852,6 +10889,9 @@ Naar paa hans blege Kind en Straale falder.
   <title>Faldet i Hougsund</title>
   <firstline>Hist syv og tredve Stiger ned</firstline>
   <source pages="287-288"/>
+  <places>
+    <place ref="hokksund" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -10977,6 +11017,9 @@ Den gyser for sin egen Ild.
   <firstline>Nu da vi Drammen besøge? - Ja vist! og her du fra Fieldet</firstline>
   <source pages="290-291"/>
   <keywords>rahbekk</keywords>
+  <places>
+    <place ref="drammen" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -11036,6 +11079,9 @@ Og ved din Velkomst-Qvad Veemodens Taare nedrandt.
   <title>Kirken i Drammen</title>
   <firstline>Selsom rørt jeg blev til Mode</firstline>
   <source pages="292-293"/>
+  <places>
+    <place ref="drammen" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -11093,6 +11139,9 @@ Hvor min Fryd dig vilde glæde!
   <title>Paradiisbakken</title>
   <firstline>Nu skal vi reise tilbage. Vi komme til Paradiisbakken</firstline>
   <source pages="293"/>
+  <places>
+    <place ref="drammen" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -11176,6 +11225,9 @@ Til Bergen og til Throndelag.
   <title>Den sidste Morgenstund i Christiania</title>
   <firstline>I aarle Morgenstund, før Solen smukt</firstline>
   <source pages="295"/>
+  <places>
+    <place ref="oslo" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -11203,6 +11255,9 @@ Det kiære Minde visner ingensinde.
   <title>Gothenborg</title>
   <firstline>Da første Gang vi seiled forbi</firstline>
   <source pages="296-297"/>
+  <places>
+    <place ref="gothenburg" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

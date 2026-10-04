@@ -940,6 +940,9 @@ maa tage sin Lod med et skønsomt Sind.
   <title>Paa Kysten ved Helsingør</title>
   <firstline>Der græsser en Ged</firstline>
   <source pages="42-43"/>
+  <places>
+    <place ref="helsingor" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1692,6 +1695,9 @@ Ak hvilken Dansk forstaar vel friske Sjæle?
   <firstline>Nu larmer Østersøen. Flad - flad - flad</firstline>
   <source pages="75"/>
   <keywords>sonnet</keywords>
+  <places>
+    <place ref="baltic-sea" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1723,6 +1729,10 @@ som jeg i Naade bød til mine Fester.
   <firstline>Den skumle Kathedral, den skidne Rhin</firstline>
   <source pages="76"/>
   <keywords>sonnet,heine</keywords>
+  <places>
+    <place ref="cologne" relation="subject" primary="true"/>
+    <place ref="rhine" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1754,6 +1764,10 @@ som i saa klam en Verden kræver Næring!
   <firstline>Hun pegte paa sin Rygrad med en Gestus</firstline>
   <source pages="76-77"/>
   <keywords>sonnet,heine</keywords>
+  <places>
+    <place ref="cologne" relation="subject" primary="true"/>
+    <place ref="rhine" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2037,6 +2051,9 @@ der gad jeg bygge flot som Alexander.
   <firstline>Se Skyens vilde Jagt med Horn og Hunde</firstline>
   <source pages="82-83"/>
   <keywords>sonnet</keywords>
+  <places>
+    <place ref="baltic-sea" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2407,6 +2424,10 @@ men den, som har Bryllupsklædningen paa.«
   <firstline>I det vildeste Bjærgpas i Spanien</firstline>
   <!-- Ikke en variant af claussen2001031964: Selvstændige dele af samme digtkreds. -->
   <source pages="100"/>
+  <places>
+    <place ref="spain" relation="setting" primary="true"/>
+    <place ref="seville" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2726,6 +2747,10 @@ at de ikke har Tilhold i Paradis.
   claussen2001031956: Selvstændige dele af samme digtkreds.
   -->
   <source pages="113"/>
+  <places>
+    <place ref="spain" relation="setting" primary="true"/>
+    <place ref="seville" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2843,6 +2868,9 @@ som to Hjærter kærest kobler.
   <title>Mens jeg rejser mod nord</title>
   <firstline>Alt, hvad jeg længes efter</firstline>
   <source pages="118"/>
+  <places>
+    <place ref="venice" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3008,6 +3036,9 @@ Skønt jeg er ingen Stridsmand,
   <title>Aften paa Kullen</title>
   <firstline>Det gamle Nord med sine Graastens-Kyster</firstline>
   <source pages="124-125"/>
+  <places>
+    <place ref="kullaberg" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
