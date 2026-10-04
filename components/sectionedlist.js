@@ -3,7 +3,7 @@ import TwoColumns from './twocolumns.js';
 
 const SectionedList = ({ sections }) => {
   let renderedGroups = sections.map((group, i) => {
-    const { title, items } = group;
+    const { title, items, headingId } = group;
     const list = items.map((item) => {
       const content =
         item.url != null ? <Link href={item.url}>{item.html}</Link> : item.html;
@@ -11,7 +11,7 @@ const SectionedList = ({ sections }) => {
     });
     return (
       <div className="list-section" key={i + title}>
-        <h3>{title}</h3>
+        <h3 id={headingId}>{title}</h3>
         {list}
       </div>
     );

@@ -15,7 +15,7 @@
     <note>Noter med en foranstillet asterisk er digterens egne.</note>
   </notes>
   <pictures>
-    <picture src="1803-p1.jpg" type="titlepage">Titelbladet til første del af Hans Wilhelm Ribers <i>Samlede Digte</i> (1803).</picture>
+    <picture src="1803-p1.jpg" type="titlepage"><transcription>Hans Wilhelm Ribers / samlede Digte. // Förste Deel. // (med Digterens Portrait) // Kjöbenhavn, 1803. / Paa Hofboghandler Simon Poulsens Forlag, / trykt hos Bogtrykker og Skriftstöber K. H. Seidelin.</transcription></picture>
     <picture src="1803-p4.jpg">Dedikationen lyder ,,H. W. Ribers / ædle Veninde / og / Velynderinde / Frue Baronesse LÖVENSKIOLD, / hvis ærefulde Godhed / for ham / end ikke kiölnedes / ved hans Död // i hans Navn / ærbödigen og erkiendtligen / helliget / af hans Venner / og / Udgivere / L. C. Sander K. L. Rahbek.</picture>
     <picture src="1803-p3.jpg" type="illustration">Ribers gravmæle på Assistens Kirkegård.</picture>
   </pictures>
@@ -2488,6 +2488,7 @@ Dette Baand erindre dig, Mandinde!
     <note>Gendigtning af Matthias Claudius: <xref type="translation" poem="claudius2001102204"/>.</note>
   </notes>
   <source in="bd1" pages="100-102"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2550,6 +2551,7 @@ Slet ikke, - og han flöi afsted;
     <note>Gendigtning af Matthias Claudius: <xref type="translation" poem="claudius2001102204"/>.</note>
   </notes>
   <source in="bd1" pages="103-104"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5427,7 +5429,6 @@ Vor Fader og hans kiere Slægt
 Tag, Himmel, i din Varetægt!
 Giv dem de Godes Lön!
 
-
 <nonum><center><sc>Katrine.</sc></center></nonum>
 Det gik jo prægtig, din lille Skielm! O længe, ja længe
 Leve den naadige Herre! O tænk nu kun, lille <sc>Anders</sc>!
@@ -5974,7 +5975,7 @@ Sover, og vaagner styrket og mere forstandige Börn lille!
 Alle glædes vi da, naar Herrens Morgen har vakt os.
 Da erfare vi og, at Gud ei seer paa Personer.
 Men at hvo ham frygter og giör hvad Ret er, ham tækkes
-Iblandt alle Folk<note>* Petri Ord: <a poem="bibelapostlene10,34-35">Ap. G. 10, 34. 35.</a></note>. O Gud! da glædes vi alle,
+Iblandt alle Folk<note>* Petri Ord: <a bible="bibelapostlene10,34-35">Ap. G. 10, 34. 35.</a></note>. O Gud! da glædes vi alle,
 Alle, som giorde Godt i Enfoldighed; glædes med <sc>Petrus</sc>,
 <sc>Moses</sc>, <sc>Confuts</sc>, og <sc>Homer</sc>, den elskende, og <sc>Zoroaster</sc>,
 Og ham der döde for Sandhed, med <sc>Sokrates</sc>, og med den ædle

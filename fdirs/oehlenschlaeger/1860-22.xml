@@ -1211,6 +1211,9 @@ Ak! og — en Phønix i Sang — brændte sig Sangeren selv.
   <firstline>Naar Tiden ændres, maa man efter Tiden rettes</firstline>
   <source pages="32-39"/>
   <keywords>holberg,oersted</keywords>
+  <places>
+    <place ref="great-belt" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1434,6 +1437,7 @@ Og viste Æolus et høist fortørnet Blik.
   oehl1999050101: Uddrag eller genbrug i en anden tekst, ikke en selvstændig variant.
   -->
   <source pages="39-41"/>
+  <keywords>ottave-rime</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1500,6 +1504,9 @@ Og from-taalmodig visked jeg min Pande.
   <title>Ankomsten til Odense</title>
   <firstline>Overstaaet er den stærke</firstline>
   <source pages="41-43"/>
+  <places>
+    <place ref="odense" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1572,6 +1579,9 @@ Jager den i visne Blade.
   <title>Livet paa Slottet</title>
   <firstline>Borgen er en venlig Bolig</firstline>
   <source pages="43-45"/>
+  <places>
+    <place ref="odense-palace" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1671,6 +1681,9 @@ Ved et stumt og skrevet Ord.
   <title>Pindsefesten</title>
   <firstline>Hvad lyder høit paa første Pindsemorgen?</firstline>
   <source pages="45-48"/>
+  <places>
+    <place ref="odense" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1765,6 +1778,9 @@ Hvor Kirken er og Graven — der er Hiemmet.
   <title>Sanct Knuds Kirken</title>
   <firstline>Her, hvor den gothiske Kirke staaer</firstline>
   <source pages="48-53"/>
+  <places>
+    <place ref="st-canutes-cathedral" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1962,6 +1978,9 @@ Og viser dem sidste Ære.
   <title>Barndomsveninden</title>
   <firstline>Ak, Gud! jeg er fem alt og femti Aar</firstline>
   <source pages="54-55"/>
+  <places>
+    <place ref="odense" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2037,6 +2056,9 @@ Da nu om min første Thalie?
   <title>Fiskerhuset</title>
   <firstline>Her er deiligt, min Prinds! En Udsigt yndig, og Skoven</firstline>
   <source pages="56"/>
+  <places>
+    <place ref="odense" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2060,6 +2082,9 @@ Siden min Landbrug jeg lærte paa Frederiksberg.
   <title>Det litteraire Selskab</title>
   <firstline>Hædrende vorder det mig, i et Selskab næsten af Præster</firstline>
   <source pages="56"/>
+  <places>
+    <place ref="odense" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2085,6 +2110,9 @@ Ikke jeg finder dig selv, hilser dig dog i din Søn.
   <title>Skydeselskabet</title>
   <firstline>Et Skydeselskab er ogsaa her</firstline>
   <source pages="57-58"/>
+  <places>
+    <place ref="odense" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2157,6 +2185,9 @@ Salpetret, Kullet og Dampen.
   <title>Borgeren</title>
   <firstline>Hvor smuk er Borgerens Velstand ei</firstline>
   <source pages="59-60"/>
+  <places>
+    <place ref="odense" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2235,6 +2266,9 @@ Blandt de forsamlede Stænder!
   <firstline>Den gamle Sømand efter døde Broder</firstline>
   <source pages="61-62"/>
   <keywords>rahbek,rahbekk</keywords>
+  <places>
+    <place ref="langesoe" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2307,6 +2341,9 @@ At høre Alfernes Musik.
   <title>Christiansdal</title>
   <firstline>Her er jeg hos en kraftig Æt</firstline>
   <source pages="63-65"/>
+  <places>
+    <place ref="christiansdal" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2644,6 +2681,9 @@ Kostbar — Taknemlighedstaaren.
   <title>Ved det lille Bælt</title>
   <firstline>Danmark har ingen Flod; Floden ei vælter</firstline>
   <source pages="72-74"/>
+  <places>
+    <place ref="little-belt" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2722,6 +2762,9 @@ Bælterne tro.
   <firstline>Et Eventyr jeg fortælle vil</firstline>
   <source pages="74-76"/>
   <keywords>christian7</keywords>
+  <places>
+    <place ref="hindsgavl" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2811,6 +2854,9 @@ Er Hændelsen ei utrolig?
   <title>Caroline-Kilden</title>
   <firstline>Kilden er en herlig Ting</firstline>
   <source pages="76-79"/>
+  <places>
+    <place ref="hindsgavl" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2937,6 +2983,9 @@ Deiligt. At skue den ret, Alfen bestiger sit Træ.
   <title>Overfarten til Langeland</title>
   <firstline>Nu indskibe vi os til Langeland. Herlige Svendborg</firstline>
   <source pages="80-81"/>
+  <places>
+    <place ref="langeland" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3066,6 +3115,9 @@ Den sorte Snekke forsvinder.
   <title>Apotheket i Rudkiøbing</title>
   <firstline>Ak, jeg kan neppe hitt'et</firstline>
   <source pages="83-85"/>
+  <places>
+    <place ref="rudkobing" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3132,6 +3184,9 @@ Som Rankens bedste Viin.
   <title>Modtagelsen</title>
   <firstline>Hvis ikke vi kiendte Langeland</firstline>
   <source pages="85-87"/>
+  <places>
+    <place ref="rudkobing" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3207,6 +3262,9 @@ Til Herren med Folket Søndagmorgen.
   <title>Sangeren ved Æreporten</title>
   <firstline>Og der var ogsaa paa Veien giort</firstline>
   <source pages="87-89"/>
+  <places>
+    <place ref="rudkobing" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3291,6 +3349,9 @@ Og der kom Ingen til Skade.
   <title>Tilbagefarten til Svendborg</title>
   <firstline>Vi maae paa Tilbageveien lavere</firstline>
   <source pages="89-91"/>
+  <places>
+    <place ref="svendborg" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3349,6 +3410,9 @@ Fyenboen giver mig neppe Ret.
   <title>Posthuset</title>
   <firstline>Thomsen! du var min Vert; hav Tak for hyggeligt Herberg!</firstline>
   <source pages="91"/>
+  <places>
+    <place ref="svendborg" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3368,6 +3432,9 @@ Saaret hun lægte, som tidt slog mig det skrattende Horn.
   <title>Bondehytten i Fyen</title>
   <firstline>Nu Adam med Holten og Adler og Heger</firstline>
   <source pages="91-93"/>
+  <places>
+    <place ref="funen" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3446,6 +3513,10 @@ Forvandled en Hytte til prægtige Slot.
   <title>Reisen til Als</title>
   <firstline>Altsaa længer endnu skal jeg følge den elskede Fyrste?</firstline>
   <source pages="93-94"/>
+  <places>
+    <place ref="als" relation="subject" primary="true"/>
+    <place ref="augustenborg-palace" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3503,6 +3574,9 @@ Og et fyrsteligt Barns? Stem da nu Harpen, o Skiald!
     <note>Første strofe stammer fra Thomas Thaarups <xref poem="thaarup2019021901"/>.</note>
   </notes>
   <source pages="95-97"/>
+  <places>
+    <place ref="augustenborg-palace" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3590,6 +3664,9 @@ Lød første Gang fra spæde Bryst''.<note>Cf. Thomas Thaarups <xref poem="thaar
     <picture artwork="juel/1787-louise-augusta"/>
   </pictures>
   <source pages="97-98"/>
+  <places>
+    <place ref="augustenborg-palace" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3632,6 +3709,9 @@ Maae svare til din Sommer og din Vaar!
   <title>Den lille Prinds</title>
   <firstline>Hans Fødselsdag vi helligholdt</firstline>
   <source pages="98-100"/>
+  <places>
+    <place ref="augustenborg-palace" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3699,6 +3779,9 @@ For Fader, Bedstemoder.
   <title>Tilhørerinderne</title>
   <firstline>Digteren synger for Mænd og for Qvinder</firstline>
   <source pages="100-101"/>
+  <places>
+    <place ref="augustenborg-palace" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3738,6 +3821,9 @@ Laurbær er Intet mod saadan en Stund.
   <title>Sangeren</title>
   <firstline>Hvilket Dyr er saa skiønt og saa rask, som en Hest?</firstline>
   <source pages="101-103"/>
+  <places>
+    <place ref="augustenborg-palace" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3822,6 +3908,9 @@ Som forædlede Gangerens herlige Blod.
   <title>Tobaksrøgningen</title>
   <firstline>Jeg røger ikke selv Tobak</firstline>
   <source pages="103-105"/>
+  <places>
+    <place ref="augustenborg-palace" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3898,6 +3987,9 @@ Her faaer Tobakken først Magie.
   <firstline>En Billedhugger paa Øen boer</firstline>
   <source pages="105-108"/>
   <keywords>thorvaldsen</keywords>
+  <places>
+    <place ref="augustenborg-palace" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3995,6 +4087,9 @@ Blier hyggeligt velopdraget og pleiet.
   <toctitle>Fædreland og Fødeland. I Slesvig</toctitle>
   <firstline>Det er just ei det Samme</firstline>
   <source pages="108-111"/>
+  <places>
+    <place ref="duchy-schleswig" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4109,6 +4204,10 @@ Tilbringe Sommer-Liv.
     <picture artwork="bloch/christian2-1871"/>
   </pictures>
   <source pages="111-116"/>
+  <keywords>knittelvers</keywords>
+  <places>
+    <place ref="sonderborg-castle" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4343,7 +4442,10 @@ Vognen i Sorø-By holder alt, Hauch! ved din Dør.
   <title>Til Carsten Hauch</title>
   <firstline>Du adle Ørn, som med et stækket Been</firstline>
   <source pages="117-119"/>
-  <keywords>hauch</keywords>
+  <keywords>hauch,ottave-rime</keywords>
+  <places>
+    <place ref="soro" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4423,12 +4525,14 @@ Saa har et Paradiis du i din Hytte.
 <text id="oehlenschlaeger2019021856">
 <head>
   <title><num>1.</num>Ved Holbergs Grav</title>
-  <toctitle><num>1.</num>Ved Holbergs Grav</toctitle>
   <indextitle>Ved Holbergs Grav</indextitle>
   <linktitle>Ved Holbergs Grav</linktitle>
   <firstline>Hvor ligger Holberg? Første Gang jeg Kirken her betræder</firstline>
   <source pages="120-121"/>
   <keywords>holberg,moliere</keywords>
+  <places>
+    <place ref="soro-abbey-church" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4479,12 +4583,14 @@ Nu hilser den forklarte Siæl dig hist i hine Lunde.
 <text id="oehlenschlaeger2019021857">
 <head>
   <title><num>2.</num>Ved Absalons Grav</title>
-  <toctitle><num>2.</num>Ved Absalons Grav</toctitle>
   <indextitle>Ved Absalons Grav</indextitle>
   <linktitle>Ved Absalons Grav</linktitle>
   <firstline>Sex hundred og tredive Aar vi troede</firstline>
   <source pages="121-123"/>
   <keywords>frederik6,thorvaldsen</keywords>
+  <places>
+    <place ref="soro-abbey-church" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4575,11 +4681,13 @@ Høit over Vesterport ham sætte.
 <text id="oehlenschlaeger2019021858">
 <head>
   <title><num>3.</num>Ved Christopher den Andens Grav</title>
-  <toctitle><num>3.</num>Ved Christopher den Andens Grav</toctitle>
   <indextitle>Ved Christopher den Andens Grav</indextitle>
   <linktitle>Ved Christopher den Andens Grav</linktitle>
   <firstline>Den største Pantsætter, Norden har kiendt</firstline>
   <source pages="124"/>
+  <places>
+    <place ref="soro-abbey-church" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4602,11 +4710,13 @@ Thi Valdemar arved hans Krone.
 <text id="oehlenschlaeger2019021859">
 <head>
   <title><num>4.</num>Valdemar Atterdags Grav</title>
-  <toctitle><num>4.</num>Valdemar Atterdags Grav</toctitle>
   <indextitle>Valdemar Atterdags Grav</indextitle>
   <linktitle>Valdemar Atterdags Grav</linktitle>
   <firstline>Jeg vender mig fra Graven med Malmkongen paa</firstline>
   <source pages="124-128"/>
+  <places>
+    <place ref="soro-abbey-church" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4752,7 +4862,6 @@ Og seer, om endnu Danmark er sine Fædre værd.
 <text id="oehlenschlaeger2019021860">
 <head>
   <title><num>5.</num>Det store Crucifix</title>
-  <toctitle><num>5.</num>Det store Crucifix</toctitle>
   <indextitle>Det store Crucifix</indextitle>
   <linktitle>Det store Crucifix</linktitle>
   <firstline>I en forfænglig Sommeralder</firstline>
@@ -4761,6 +4870,9 @@ Og seer, om endnu Danmark er sine Fædre værd.
   </notes>
   <source pages="128-131"/>
   <keywords>schiller,goethe</keywords>
+  <places>
+    <place ref="soro-abbey-church" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4864,6 +4976,9 @@ Til Heltemod og til Bedrift.
   <firstline>I Tusind og den ene Nat</firstline>
   <source pages="131-133"/>
   <keywords>hauch,wilster,homer</keywords>
+  <places>
+    <place ref="naesbyholm" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4954,6 +5069,9 @@ Os ind i Krandsen sætter.''
   <firstline>Her boer Ingemann rolig idyllisk lige ved Søen</firstline>
   <source pages="133"/>
   <keywords>ingemann</keywords>
+  <places>
+    <place ref="soro" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4971,6 +5089,9 @@ Nær ved Skoven. Hans Liv rækker mig venlig en Blomst.
   <title>Roeskilde Domkirke</title>
   <firstline>Jeg atter træder</firstline>
   <source pages="134-140"/>
+  <places>
+    <place ref="roskilde-cathedral" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5206,6 +5327,9 @@ Der lyder til Orgelklangen.
   <title>Gravhøiene</title>
   <firstline>I Markens gamle siunkne Høie</firstline>
   <source pages="141-143"/>
+  <places>
+    <place ref="roskilde" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6757,7 +6881,6 @@ Usynligt i den Frommes Bryst.
   Guds Rige vi ei miste.
 
 ---
-
 
 <nonum><center><w>Før den theologiske Promotion.</w></center></nonum>
 Glem ei, du fromme Herrens Præst!
@@ -8864,6 +8987,7 @@ O Fader! i vor <w>Daad</w>.
   <title>Smaapigerne paa Nysø</title>
   <firstline>Skialden sad i sin stille Ro</firstline>
   <source pages="235-236"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

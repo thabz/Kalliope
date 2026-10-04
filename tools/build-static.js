@@ -344,8 +344,9 @@ const handle_text = async (
 
   const keywords = safeGetText(head, 'keywords');
 
-  let subtitles = extractSubtitles(head, 'subtitle', collected);
-  let suptitles = extractSubtitles(head, 'suptitle', collected);
+  const fragmentContext = { workId: sourceWorkId, textId: sourceTextId };
+  let subtitles = extractSubtitles(head, 'subtitle', collected, fragmentContext);
+  let suptitles = extractSubtitles(head, 'suptitle', collected, fragmentContext);
   const headingFootnoteCount = countHeadingFootnotes(head);
 
   let keywordsArray = [];
@@ -591,14 +592,18 @@ const handle_text = async (
         const options = { fontSize, maxWidth };
         return {
           type,
-          lines: htmlToXml(rawBlock, collected, type === 'poetry'),
+          lines: htmlToXml(rawBlock, collected, type === 'poetry', {
+            workId: sourceWorkId,
+            textId,
+            blockType: type,
+          }),
           options,
         };
       },
     );
   }
   mkdirp.sync(foldername);
-  const notes = get_notes(head, collected);
+  const notes = get_notes(head, collected, {}, fragmentContext);
   if (placement.systemNote != null) {
     notes.push(placement.systemNote);
   }
@@ -612,7 +617,9 @@ const handle_text = async (
       id: textId,
       title: replaceDashes(titleText(title)),
       ...(title.title.indexOf('<') > -1 ?
-        { title_html: htmlToXml(title.title, collected, true) }
+        { title_html: htmlToXml(title.title, collected, true, {
+          ...fragmentContext, blockType: 'title',
+        }) }
       : {}),
       title_prefix: title.prefix,
       linktitle: replaceDashes(titleText(linktitle)),

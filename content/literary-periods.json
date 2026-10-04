@@ -1027,6 +1027,30 @@
       ]
     },
     {
+      "id": "nl-verlichting",
+      "tradition": "nl",
+      "countries": [
+        "un"
+      ],
+      "title": {
+        "da": "Nederlandsk oplysningstid",
+        "en": "Dutch Enlightenment",
+        "fr": "Les Lumières néerlandaises",
+        "de": "Niederländische Aufklärung"
+      },
+      "sortYear": 1660,
+      "sources": [
+        {
+          "title": "Verlichting (1660-1800)",
+          "url": "https://www.literatuurgeschiedenis.org/stromingen/de-verlichting-1660-1800"
+        },
+        {
+          "title": "Worm en donder: Geschiedenis van de Nederlandse literatuur 1700-1800",
+          "url": "https://www.dbnl.org/tekst/leem012worm02_01/leem012worm02_01_0004.php"
+        }
+      ]
+    },
+    {
       "id": "nl-tachtigers",
       "tradition": "nl",
       "countries": [
@@ -1833,4 +1857,3 @@
     }
   ]
 }
-

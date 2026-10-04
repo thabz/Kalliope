@@ -39,10 +39,8 @@ const historicalOcrCandidates = ({ xml, inventory = null }) => {
     const pages = splitBodyPages(directChild(entry, 'body'));
     pages.forEach((page, pageIndex) => {
       const inventoryRows = byText.get(textId) ?? [];
-      const printedPage = pageIndex === 0
-        ? inventoryRows[0]?.printed_page
-        : page.transition?.printed_page;
-      const metadata = inventoryRows.find(row => row.printed_page === printedPage) ?? {};
+      const metadata = inventoryRows[pageIndex] ?? {};
+      const pageKey = metadata.printed_page ?? metadata.facsimile ?? '?';
       const lines = page.content.replace(/<[^>]+>/g, ' ').split(/\r?\n/);
       lines.forEach((rawLine, lineIndex) => {
         const line = normalizeLine(rawLine);
@@ -51,7 +49,7 @@ const historicalOcrCandidates = ({ xml, inventory = null }) => {
           pattern.lastIndex = 0;
           for (const match of line.matchAll(pattern)) {
             candidates.push({
-              id: `${textId}:${metadata.printed_page ?? '?'}:${rule}:${lineIndex + 1}:${match.index + 1}`,
+              id: `${textId}:${pageKey}:${rule}:${lineIndex + 1}:${match.index + 1}`,
               rule,
               reason,
               text_id: textId,
@@ -68,7 +66,7 @@ const historicalOcrCandidates = ({ xml, inventory = null }) => {
       const normalized = lines.map(normalizeLine).filter(Boolean);
       normalized.forEach((line, index) => {
         if (line === normalized[index - 1]) candidates.push({
-          id: `${textId}:${metadata.printed_page ?? '?'}:duplicate-adjacent-line:${index + 1}`,
+          id: `${textId}:${pageKey}:duplicate-adjacent-line:${index + 1}`,
           rule: 'duplicate-adjacent-line',
           reason: 'Identiske nabolinjer',
           text_id: textId,

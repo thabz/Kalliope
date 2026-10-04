@@ -69,19 +69,41 @@ const FigCaption = (props) => {
     );
   }
 
+  const hasCaptionContent = picture.content_html != null &&
+    picture.content_html.some(([content]) => content.trim().length > 0);
+  const hasCaption = artistRendered != null || hasCaptionContent ||
+    museumRendered != null || remoteLink != null;
+  const hasTranscription = picture.transcription != null &&
+    picture.transcription.length > 0;
+  const titlepageOrdinals = ['Første', 'Andet', 'Tredje'];
+  const titlepageLabel = picture.titlepageOrdinal == null
+    ? 'Titelbladet'
+    : titlepageOrdinals[picture.titlepageOrdinal - 1] == null
+      ? `Titelblad nr. ${picture.titlepageOrdinal}`
+      : `${titlepageOrdinals[picture.titlepageOrdinal - 1]} titelblad`;
+  if (hasCaption !== true && noteRendered == null && hasTranscription !== true) {
+    return null;
+  }
+
   return (
     <figcaption>
       <Stack>
-        <div>
+        {hasCaption === true ? <div>
           {artistRendered}
-          <TextInline
+          {hasCaptionContent === true ? <TextInline
             inline={true}
             contentHtml={picture.content_html}
             contentLang={picture.content_lang || 'da'}
-          />
+          /> : null}
           {museumRendered}
           {remoteLink}
-        </div>
+        </div> : null}
+        {hasTranscription === true ? <div className="titlepage-transcription">
+          {titlepageLabel}
+          {picture.titlepageWorkTitle != null ? <> til <i>{picture.titlepageWorkTitle}</i></> : null}
+          {picture.titlepageWorkYear != null ? ` (${picture.titlepageWorkYear})` : null}
+          {' lyder ,,'}{picture.transcription}{"''."}
+        </div> : null}
         {noteRendered}
       </Stack>
       <style jsx>{`
@@ -95,6 +117,9 @@ const FigCaption = (props) => {
         }
         figcaption :global(a.remote-picture-link) {
           text-decoration: none !important;
+        }
+        .titlepage-transcription {
+          white-space: pre-wrap;
         }
       `}</style>
     </figcaption>

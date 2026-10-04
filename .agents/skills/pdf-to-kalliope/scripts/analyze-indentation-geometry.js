@@ -40,6 +40,10 @@ const baselineClusters = (values, tolerance, minimumCount = 2) => {
   }));
 };
 
+const unreliableReason = issue => issue === 'drop_cap_clearance'
+  ? 'En stor begyndelseskapitæl forskyder den efterfølgende linjes fysiske start, så den ikke kan bruges som poetisk indrykning.'
+  : 'OCR mangler indledende tegn eller bogstaver, så linjestarten kan ikke måles sikkert.';
+
 const selectBaseline = ({
   alignedMax,
   comparesWithXml,
@@ -251,8 +255,7 @@ const analyzeIndentationGeometry = input => {
           page,
           indentation_section: indentationSection,
           confidence: 'possible',
-          reason:
-            'OCR mangler indledende tegn eller bogstaver, så linjestarten kan ikke måles sikkert.',
+          reason: unreliableReason(line.indentationGeometryIssue),
           cause: line.indentationGeometryIssue,
         });
       } else if (classification === 'indented') {

@@ -5,9 +5,10 @@ const work = ({
   facsimile = true,
   proofreadings = '<proofreadings><proofreading model="gpt-5.6-sol" datetime="2026-09-01T21:00:00+02:00"/></proofreadings>',
   qualities = ['korrektur1,korrektur2,kilde,side', 'side, kilde, korrektur2, korrektur1'],
+  errata = '<errata status="none"/>',
 } = {}) => `<?xml version="1.0"?>
 <kalliopework id="1900" author="test" status="${status}">
-<workhead><title>Test</title>${proofreadings}${facsimile ? '<source facsimile="scan"/>' : '<source>Trykt kilde</source>'}</workhead>
+<workhead><title>Test</title>${proofreadings}${errata}${facsimile ? '<source facsimile="scan"/>' : '<source>Trykt kilde</source>'}</workhead>
 <workbody>${qualities.map((quality, index) => `<text id="test${index + 1}"><head><quality>${quality}</quality></head><body><poetry>Linje</poetry></body></text>`).join('')}</workbody>
 </kalliopework>`;
 
@@ -35,6 +36,16 @@ describe('first transition to complete for facsimile works', () => {
       expect.stringContaining('<proofreadings>'),
       expect.stringContaining('test1 mangler kvalitetsmærkerne korrektur2'),
       expect.stringContaining('test2 mangler kvalitetsmærkerne side'),
+    ]));
+  });
+
+  it('requires an explicit errata review on first completion', () => {
+    const errors = validateFacsimileCompletion({
+      baseXml: null,
+      headXml: work({ errata: '' }),
+    });
+    expect(errors).toEqual(expect.arrayContaining([
+      expect.stringContaining('mangler <errata>'),
     ]));
   });
 

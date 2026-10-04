@@ -59,6 +59,10 @@ Læs den relevante specialdokumentation før ændringer på området:
   kunstnerisk interesse, fx illustration, ornamentik eller markant typografi.
   Almindelige læderbind og andre rent funktionelle omslag skal ikke medtages.
 - Der må ikke ligge `.jpg`, `.jpeg`, `.png`, `.gif` eller `.webp` under `fdirs/`.
+- Skriv ikke museets navn, `objid` eller `invnr` i en billedtekst, når de allerede er
+  angivet som metadata på samme `<picture>`; visningen tilføjer museets navn og
+  bruger numrene til links. En værktitel må dog bevares, selv om museet også
+  bruger titlen som `objid`.
 - Når billedmetadata som `wikidata`, `museum`, `objid` og `invnr` opdateres, skal alle
   kilder med `<picture>` gennemgås: `content/artwork.xml`, `fdirs/<id>/artwork.xml`,
   `content/events.xml`, `fdirs/<id>/events.xml`, værkernes XML-filer,

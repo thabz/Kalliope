@@ -4,7 +4,7 @@
   <title>Smaadigte</title>
   <year>1815</year>
   <pictures>
-    <picture type="titlepage" src="1815-p1.jpg">Titelbladet lyder ,,Smaadigte / af / Frederik Schaldemose. // Kiøbenhavn, 1815. / Trykt og forlagt hos Andreas Seidelin.''.</picture>
+    <picture type="titlepage" src="1815-p1.jpg"><transcription>Smaadigte / af / Frederik Schaldemose. // Kiøbenhavn, 1815. / Trykt og forlagt hos Andreas Seidelin.</transcription></picture>
   </pictures>
   <source facsimile="115408004853-color.pdf" facsimile-pages-num="251" facsimile-pages-offset="15">Frederik Schaldemose: <i>Smaadigte</i>, Andreas Seidelin, Kiøbenhavn, 1815.</source>
   <pagebreaks/>
@@ -617,7 +617,9 @@ og hans Sjæl i Frejas lyse Sal.
   <title>Hans Bygkorn</title>
   <subtitle>(Efter en gammel engelsk Ballade.)</subtitle>
   <firstline>Med trende Konger i Østerland</firstline>
-  <notes><note>Gendigtning af Robert Burns’ <xref type="translation" poem="burns2019090715"/>.</note></notes>
+  <notes>
+    <note>Gendigtning af Robert Burns’ <xref type="translation" poem="burns2019090715"/>.</note>
+  </notes>
   <source pages="33-36"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -2741,8 +2743,6 @@ og Sang og Evighed.
 <text id="schaldemose2026090546">
 <head>
   <title>Bjørnen</title>
-  <toctitle>Bjørnen</toctitle>
-  <indextitle>Bjørnen</indextitle>
   <firstline>En Bjørn, som en Mester fra Polen</firstline>
   <notes>
     <note>Emnet til dette, saavelsom til de fleste af de følgende Digte i denne Samling, er laant af andre Nationers Digtere.</note>
