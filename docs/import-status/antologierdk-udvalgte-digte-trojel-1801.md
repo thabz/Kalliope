@@ -24,7 +24,16 @@ indholdsfortegnelse placerer »Hymne efter Kleist« på side 34 og »Lovsang af 
 som ikke er, Vorned« på side 39. Hele eller dele af begge tekster er dermed
 berørt. Den præcise tekstgrænse må kontrolleres mod de manglende sider.
 
-## Kontroller udført før stoppet
+En efterfølgende gennemgang af sidetallene i begge PDF'er fandt **ingen andre
+huller i den trykte paginering**. Første binds romertal VII–XXII og arabertal
+1–190 følger uden spring; de forudgående romertal I–VI svarer til titel-,
+indholds- og mellemsider uden påtrykte romertal. Andet binds romertal I–CXXVI
+og arabertal 1–33 samt 40–127 følger uden yderligere spring. I andet bind er
+de trykte sider 90–91 skannet **to gange** (PDF-sider 223–226); gentagelsen er
+ikke manglende tekst. Sidernes placering er således entydig, når Det Kgl.
+Bibliotek skal finde de seks manglende sider i andet bind.
+
+## Kontroller udført
 
 - Begge PDF-filer blev hentet, og sidetallene samt de almindelige titelblade
   blev kontrolleret direkte.
@@ -36,14 +45,16 @@ berørt. Den præcise tekstgrænse må kontrolleres mod de manglende sider.
 - En søgning i Det Kgl. Biblioteks katalog fandt ikke en anden digital post
   med de manglende sider. De øvrige match var fysiske katalogposter uden
   digitale links.
+- Den efterfølgende sidegennemgang kontrollerede begge binds trykte
+sidefølger og fandt den dobbelte skanning af andet binds sider 90–91.
 
-Den fulde sidegennemgang, eftersøgning af rettelsesark, transskription,
-facsimilekorrektur, sammenligning med 1773- og 1835-udgaverne samt XML- og
-renderingskontrol er ikke udført.
+En fuld gennemgang af sidernes indhold og eventuelle rettelsesark,
+transskription, facsimilekorrektur, sammenligning med 1773- og 1835-udgaverne
+samt XML- og renderingskontrol er ikke udført.
 
 ## Forudsætning for genoptagelse
 
 Find en komplet skanning af **samme 1801-udgave**, især andet binds trykte
-sider **34–39**, eller få de seks sider skannet fra et fysisk eksemplar. Kontrollér
-derefter hele bindets sidetal og paratekst for eventuelle yderligere huller,
-før OCR, transskription og korrektur fortsætter.
+sider **34–39**, eller få de seks sider skannet fra et fysisk eksemplar.
+Kontrollér derpå sidernes indhold og paratekst, før transskription og korrektur
+fortsætter.
