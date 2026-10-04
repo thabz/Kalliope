@@ -542,13 +542,13 @@ compare every row with the facsimile, correct its anchors and facsimile mapping,
 then set `status` to `reviewed`. A page that starts a new `<text>` remains an
 explicit `text-start` exception and must not acquire a synthetic `<pb>`.
 
-These files and commands are process-neutral. They do not depend on a specific agent runtime,
-CMUX or a particular agent. The producer can use them during the first pass,
+These files and commands are process-neutral. They do not depend on a specific
+agent runtime or a particular agent. The producer can use them during the first pass,
 but the completion checkpoint requires every page to be assigned to a reviewer
 whose stable ID differs from the producer ID. Coordination messages are
-outside the data contract. When the surrounding workflow provides a
-coordination channel such as CMUX, report blockers, decisions and review
-milestones there, but do not make any audit command depend on that channel.
+outside the data contract. When the session provides agent tools for
+coordination, use them to report blockers, decisions and review milestones to
+the coordinator, but do not make any audit command depend on those tools.
 
 During distributed review, designate exactly one XML editor. All other
 reviewers work read-only and add findings to the shared contract through the
