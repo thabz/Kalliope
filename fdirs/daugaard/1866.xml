@@ -17,6 +17,9 @@
   <title>Hvor ere de, som sørge? I det Stille —</title>
   <firstline>Hvor ere de, som sørge? I det Stille —</firstline>
   <source facsimile-pages="8"/>
+  <form>
+    <analysis pattern="sonnet" confidence="0.93"/>
+  </form>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -370,6 +373,9 @@ At paa dit Vink og Varsel vi staae rede!
   <title><num>5.</num>Hvis det er muligt, Fader! Jesus sukker</title>
   <firstline>Hvis det er muligt, Fader! Jesus sukker</firstline>
   <source pages="16-17"/>
+  <form>
+    <analysis pattern="sonnet" confidence="0.93"/>
+  </form>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -400,6 +406,9 @@ Og finde ham som Kraftens Væld i Bønnen.
   <title><num>6.</num>I Jesu Fjender, Daarer, som I vare!</title>
   <firstline>I Jesu Fjender, Daarer, som I vare!</firstline>
   <source pages="17-18"/>
+  <form>
+    <analysis pattern="sonnet" confidence="0.78"/>
+  </form>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -742,6 +751,9 @@ Min Sjæl med Gud, min Frelser, at ophøje.
   <title><num>11.</num>Skik dig til Ro, min Sjæl! din Frelser kommer</title>
   <firstline>Skik dig til Ro, min Sjæl! din Frelser kommer</firstline>
   <source pages="29"/>
+  <form>
+    <analysis pattern="sonnet" confidence="0.93"/>
+  </form>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -772,6 +784,9 @@ Og Evighedens Herlighed bereder!
   <title><num>12.</num>Hil være dig, o Troløshedens Ord!</title>
   <firstline>Hil være dig, o Troløshedens Ord!</firstline>
   <source pages="29-30"/>
+  <form>
+    <analysis pattern="sonnet" confidence="0.92"/>
+  </form>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1200,6 +1215,9 @@ Hans Naade varer Jer at undflye Dommen.
   <title><num>17.</num>Taalmodig Jesus tier, dømt til Døde</title>
   <firstline>Taalmodig Jesus tier, dømt til Døde</firstline>
   <source pages="45"/>
+  <form>
+    <analysis pattern="sonnet" confidence="0.91"/>
+  </form>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1233,6 +1251,9 @@ Og skyldige vort Liv i ham at leve.
   <title><num>18.</num>Hvad gjør du, Peder! at du nægter denne?</title>
   <firstline>Hvad gjør du, Peder! at du nægter denne?</firstline>
   <source pages="46"/>
+  <form>
+    <analysis pattern="sonnet" confidence="0.91"/>
+  </form>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1362,6 +1383,9 @@ Til jeg som Peder seer dig i dit Rige!
   <title><num>21.</num>For hver en Gang, o Peder! af de trende</title>
   <firstline>For hver en Gang, o Peder! af de trende</firstline>
   <source pages="50"/>
+  <form>
+    <analysis pattern="sonnet" confidence="0.79"/>
+  </form>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1461,7 +1485,8 @@ Den Jakobs klare Stjerne,
 O, Israel, som du har ventet længe,
 Han, som var propheteret
 For dig fra Tider fjerne,
-<pb n="53" facs="057.jpg"/>I kjøbte ham for Penge
+<pb n="53" facs="057.jpg"/>Besjunget til Psalmisters Harpestrænge.
+I kjøbte ham for Penge
 For frit med ham at handle,
 I Døden ham udslukke,
 I Graven indelukke
@@ -1496,6 +1521,7 @@ Hvorfor jeg Alting giver,
 Den Perle skjær, som ene kan forlyste,
 Min straalerige Stjerne,
 Mit Liv, mit Lys, mit Hjertes Kraft og Kjerne.
+
 Ja, lær ham at vurdere,
 I, som hans Værd ej agte,
 Thi Livets Værd af hans Vurdering hænger!
@@ -1509,6 +1535,7 @@ Sig selv til ingen Baade,
 Paa Korsets Træ de fæsted den Guds Gave:
 Fra Korset Jakobs Stjerne
 Til Himlen steg sit nye Folk at værne.
+
 <pb n="55" facs="059.jpg"/>Ak, lad dog os betænke
 Guds kostelige Gave,
 At med dens Værd vi fylde vore Dage!
@@ -1531,6 +1558,9 @@ I Troens Lys og Kjærlighedens Lue!
   <title><num>24.</num>Med Reenhed vil de Paaskemaaltid æde</title>
   <firstline>Med Reenhed vil de Paaskemaaltid æde</firstline>
   <source pages="55-56"/>
+  <form>
+    <analysis pattern="sonnet" confidence="0.92"/>
+  </form>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1564,6 +1594,9 @@ Og længst er Israels Sabbathstid udrundet.
   <title><num>25.</num>Nej, ej af denne Verden er dit Rige</title>
   <firstline>Nej, ej af denne Verden er dit Rige</firstline>
   <source pages="56-57"/>
+  <form>
+    <analysis pattern="sonnet" confidence="0.93"/>
+  </form>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1597,6 +1630,9 @@ Er hævet over Verdens Gang og Døden.
   <title><num>26.</num>Det Rige, du har skabt, er Sandheds Rige</title>
   <firstline>Det Rige, du har skabt, er Sandheds Rige</firstline>
   <source pages="57-58"/>
+  <form>
+    <analysis pattern="sonnet" confidence="0.93"/>
+  </form>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1630,6 +1666,9 @@ For Borgerskab hos dig de Alting sælge.
   <title><num>27.</num>Os, skjønt et syndigt Folk, du ej forsmaaede</title>
   <firstline>Os, skjønt et syndigt Folk, du ej forsmaaede</firstline>
   <source pages="58-59"/>
+  <form>
+    <analysis pattern="sonnet" confidence="0.79"/>
+  </form>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1660,6 +1699,9 @@ Naar du seer Frugter hos os af din Møje!
   <title><num>28.</num>Mens af en jordisk Dommer du forhøres</title>
   <firstline>Mens af en jordisk Dommer du forhøres</firstline>
   <source pages="59"/>
+  <form>
+    <analysis pattern="sonnet" confidence="0.93"/>
+  </form>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1690,6 +1732,9 @@ Hvem Mørket er det velbekjendte Gamle.
   <title><num>29.</num>Tegn vil Herodes. Jesus Intet svarer</title>
   <firstline>Tegn vil Herodes. Jesus Intet svarer</firstline>
   <source pages="60"/>
+  <form>
+    <analysis pattern="sonnet" confidence="0.78"/>
+  </form>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1723,6 +1768,9 @@ Som Sejrens Tegn med Kraft mig gjennemluer.
   <title><num>30.</num>I Drømme lød for ham den Romerinde</title>
   <firstline>I Drømme lød for ham den Romerinde</firstline>
   <source pages="61"/>
+  <form>
+    <analysis pattern="sonnet" confidence="0.93"/>
+  </form>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1756,6 +1804,9 @@ Som kommer ej i Evighed tilkort.
   <title><num>31.</num>Bort med ham! bort med denne! Bort med hvem?</title>
   <firstline>Bort med ham! bort med denne! Bort med hvem?</firstline>
   <source pages="62"/>
+  <form>
+    <analysis pattern="sonnet" confidence="0.78"/>
+  </form>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1789,6 +1840,9 @@ Og den ifølge han er aldrig borte.
   <title><num>32.</num>Om denne Slægt hvad maatte Jesus tænke</title>
   <firstline>Om denne Slægt hvad maatte Jesus tænke</firstline>
   <source pages="63"/>
+  <form>
+    <analysis pattern="sonnet" confidence="0.92"/>
+  </form>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1822,6 +1876,9 @@ Hvis denne Slægt til Lyset skulde føres.
   <title><num>33.</num>De knæled ned og tilbad for din Fod</title>
   <firstline>De knæled ned og tilbad for din Fod</firstline>
   <source pages="64"/>
+  <form>
+    <analysis pattern="sonnet" confidence="0.78"/>
+  </form>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1855,6 +1912,9 @@ At ved din Fod en evig Plads jeg faaer!
   <title><num>34.</num>See hvilket Menneske, hvem Gud lod slaae!</title>
   <firstline>See hvilket Menneske, hvem Gud lod slaae!</firstline>
   <source pages="65"/>
+  <form>
+    <analysis pattern="sonnet" confidence="0.93"/>
+  </form>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1888,6 +1948,9 @@ I dine Smerter evigt vederqvæges.
   <title><num>35.</num>Hvorfra han er? Ak, fra dit Fædreland</title>
   <firstline>Hvorfra han er? Ak, fra dit Fædreland</firstline>
   <source pages="66"/>
+  <form>
+    <analysis pattern="sonnet" confidence="0.92"/>
+  </form>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1921,6 +1984,9 @@ Og i sin Hjemgang med os vilde drage.
   <title><num>36.</num>I Jesu Blod uskyldig! arme Mand!</title>
   <firstline>I Jesu Blod uskyldig! arme Mand!</firstline>
   <source pages="67"/>
+  <form>
+    <analysis pattern="sonnet" confidence="0.92"/>
+  </form>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
