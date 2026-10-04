@@ -1,4 +1,5 @@
 import { isFileModified } from '../libs/caching.js';
+import { facsimileInterval } from '../errata.js';
 import {
   safeMkdir,
   writeJSON,
@@ -138,6 +139,19 @@ const build_works_toc = async (collected) => {
 
     const workhead = getChildByTagName(work, 'workhead');
     const notes = get_notes(workhead, collected);
+    const sources = getChildrenByTagName(workhead, 'source');
+    const errata = getChildrenByTagName(workhead, 'errata')
+      .filter(node => safeGetAttr(node, 'status') === 'applied')
+      .map(node => {
+        const sourceId = safeGetAttr(node, 'in') ?? 'default';
+        const source = sources.find(item => (safeGetAttr(item, 'id') ?? 'default') === sourceId);
+        return {
+          pages: safeGetAttr(node, 'pages'),
+          facsimilePages: facsimileInterval(safeGetAttr(node, 'facsimile-pages')),
+          facsimile: safeGetAttr(source, 'facsimile')?.replace(/\.pdf$/, ''),
+          facsimilePageCount: Number(safeGetAttr(source, 'facsimile-pages-num')),
+        };
+      });
     const pictures = await get_pictures(
       workhead,
       `/images/${poetId}`,
@@ -151,12 +165,13 @@ const build_works_toc = async (collected) => {
         lines: [],
         toc: [],
         notes: [],
+        errata,
         pictures: [],
       };
     }
     let toc = build_section_toc(workbody, poetId);
     let subworks = extract_subworks(poetId, workbody, collected);
-    return { lines, toc, subworks, notes, pictures };
+    return { lines, toc, subworks, notes, pictures, errata };
   };
 
   const poetData = new Map();
@@ -167,6 +182,7 @@ const build_works_toc = async (collected) => {
     const poetWorksModified =
       isFileModified(
         'tools/build-static/toc.js',
+        'tools/errata.js',
         'tools/build-static/anthologies.js',
         `fdirs/${poetId}/info.xml`,
         ...workFilenames
@@ -185,6 +201,7 @@ const build_works_toc = async (collected) => {
         !poetWorksModified &&
         !isFileModified(
           'tools/build-static/toc.js',
+          'tools/errata.js',
           'tools/build-static/anthologies.js',
           ...workMeta.sourceFiles
         )
@@ -243,6 +260,7 @@ const build_works_toc = async (collected) => {
         subworks: work_data.subworks,
         work: collected.works.get(`${poetId}/${workId}`),
         notes: work_data.notes || [],
+        errata: work_data.errata || [],
         pictures: work_data.pictures || [],
         modified: getModifiedDates().get(filename),
         prev,

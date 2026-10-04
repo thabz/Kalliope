@@ -44,6 +44,7 @@
         <ref name="breadcrumbtitle"/>
         <ref name="nofirstline"/>
         <ref name="keywords"/>
+        <ref name="places"/>
         <ref name="source"/>
         <ref name="dates"/>
         <ref name="published"/>
@@ -59,8 +60,10 @@
         <ref name="rhyme"/>
         <ref name="structure"/>
         <ref name="pagebreaks"/>
+        <ref name="errata"/>
         <ref name="pictures"/>
         <ref name="picture"/>
+        <ref name="transcription"/>
         <ref name="poetry"/>
         <ref name="quote"/>
         <ref name="a"/>
@@ -83,7 +86,6 @@
         <ref name="wrap"/>
         <ref name="line"/>
         <ref name="br"/>
-        <ref name="hr"/>
         <ref name="pb"/>
         <ref name="img"/>
         <ref name="colored"/>
@@ -120,6 +122,16 @@
     </element>
   </define>
   <define name="workbody"><element name="workbody"><ref name="mixed"/></element></define>
+
+  <define name="errata">
+    <element name="errata">
+      <attribute name="status"><choice><value>none</value><value>applied</value></choice></attribute>
+      <optional><attribute name="in"><text/></attribute></optional>
+      <optional><attribute name="pages"><text/></attribute></optional>
+      <optional><attribute name="facsimile-pages"><text/></attribute></optional>
+      <empty/>
+    </element>
+  </define>
 
   <define name="textElement">
     <element name="text">
@@ -233,6 +245,7 @@
       <optional><ref name="pictureIdentifiers"/></optional>
     </element>
   </define>
+  <define name="transcription"><element name="transcription"><text/></element></define>
 
   <define name="sourceIdentifiers">
     <element name="identifiers">
@@ -326,13 +339,6 @@
     </element>
   </define>
 
-  <define name="hr">
-    <element name="hr">
-      <optional><attribute name="width"><text/></attribute></optional>
-      <ref name="mixed"/>
-    </element>
-  </define>
-
   <define name="pb">
     <element name="pb">
       <optional><attribute name="n"><text/></attribute></optional>
@@ -373,6 +379,26 @@
   <define name="breadcrumbtitle"><element name="breadcrumbtitle"><ref name="simpleElement"/></element></define>
   <define name="nofirstline"><element name="nofirstline"><ref name="simpleElement"/></element></define>
   <define name="keywords"><element name="keywords"><ref name="simpleElement"/></element></define>
+  <define name="places">
+    <element name="places">
+      <oneOrMore><ref name="place"/></oneOrMore>
+    </element>
+  </define>
+  <define name="place">
+    <element name="place">
+      <attribute name="ref"><text/></attribute>
+      <attribute name="relation">
+        <choice>
+          <value>subject</value>
+          <value>setting</value>
+          <value>mentioned</value>
+          <value>writtenAt</value>
+        </choice>
+      </attribute>
+      <optional><attribute name="primary"><value>true</value></attribute></optional>
+      <empty/>
+    </element>
+  </define>
   <define name="dates"><element name="dates"><ref name="simpleElement"/></element></define>
   <define name="published"><element name="published"><ref name="simpleElement"/></element></define>
   <define name="written"><element name="written"><ref name="simpleElement"/></element></define>
@@ -509,7 +535,6 @@
         <ref name="metrik"/>
         <ref name="line"/>
         <ref name="br"/>
-        <ref name="hr"/>
         <ref name="pb"/>
         <ref name="img"/>
         <ref name="colored"/>
@@ -577,7 +602,7 @@
     </element>
   </define>
   <define name="br"><element name="br"><ref name="simpleElement"/></element></define>
-  <define name="footnote"><element name="footnote"><ref name="simpleElement"/></element></define>
+  <define name="footnote"><element name="footnote"><optional><attribute name="type"><value>errata</value></attribute></optional><ref name="simpleElement"/></element></define>
   <define name="biblio"><element name="biblio"><ref name="simpleElement"/></element></define>
   <define name="asterism"><element name="asterism"><ref name="simpleElement"/></element></define>
   <define name="block-center"><element name="block-center"><ref name="simpleElement"/></element></define>

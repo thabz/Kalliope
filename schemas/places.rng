@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <start><ref name="places"/></start>
+  <define name="places">
+    <element name="places">
+      <zeroOrMore><ref name="place"/></zeroOrMore>
+    </element>
+  </define>
+  <define name="place">
+    <element name="place">
+      <attribute name="id"><text/></attribute>
+      <element name="name"><text/></element>
+      <optional><element name="canonical-name"><text/></element></optional>
+      <optional><element name="wikidata"><text/></element></optional>
+      <optional><element name="type"><text/></element></optional>
+      <zeroOrMore><element name="alias"><text/></element></zeroOrMore>
+      <optional><element name="parent"><attribute name="ref"><text/></attribute><empty/></element></optional>
+      <optional><element name="note"><text/></element></optional>
+    </element>
+  </define>
+</grammar>

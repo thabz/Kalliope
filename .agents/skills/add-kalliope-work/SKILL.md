@@ -62,6 +62,8 @@ Tilpas arbejdet til kilden og værktypen, men gennemfør alt relevant arbejde:
 - opret eller opdatér værkmetadata og nødvendige personmetadata;
 - kontrollér titel, forfatter, udgivelsesår, forlag eller trykkested, bind og
   andre bibliografiske oplysninger mod kilden;
+- transskriber titelbladets trykte ordlyd i `<transcription>` på hvert
+  `type="titlepage"`-billede efter `docs/xml-work-format.md`;
 - tilføj en præcis kildehenvisning og om muligt et stabilt link til den
   anvendte digitalisering eller det anvendte facsimile;
 - kontrollér alle interne referencer og id'er, herunder varianter, personer,
